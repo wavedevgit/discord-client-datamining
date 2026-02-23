@@ -1,4 +1,5 @@
 /** chunk id: 281783, original params: e,t,n (module,exports,require) **/
+"use strict";
 e.exports = {
     zr: "root__92958",
     Ci: "activityList__92958",

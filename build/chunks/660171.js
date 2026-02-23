@@ -1,38 +1,19 @@
 /** chunk id: 660171, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => v
+    A: () => E
 });
 var r = n(64700),
     l = n(771253),
-    o = n(731738),
-    i = n(311907),
-    s = n(831062),
-    a = n(544180),
-    c = n(18437),
-    u = n(753386),
+    i = n(731738),
+    s = n(311907),
+    a = n(831062),
+    o = n(544180),
+    u = n(18437),
+    c = n(753386),
     d = n(261331),
-    p = n(652215);
+    m = n(652215);
 
-function f(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = r
-        })
-    }
-    return e
-}
-
-function m(e) {
+function p(e) {
     return null == e.current || e.current.currentLevel < 0 || e.current.levels.length <= e.current.currentLevel ? {
         hls_level_index: -100,
         hls_segment_res_width: -100,
@@ -44,190 +25,189 @@ function m(e) {
     }
 }
 
-function v(e) {
+function E(e) {
     let {
         videoRef: t,
         hlsRef: n,
-        videoSessionId: v,
-        videoAssetId: b,
-        sourceQuestContent: E,
-        logger: g,
-        questId: h,
-        isQuestCompleted: y,
-        isFullEpisodeVideoQuest: O
-    } = e, S = (0, c.u0)(), _ = (0, c.Ut)(), C = (0, i.bG)([a.A], () => a.A.getEffectiveConnectionSpeed()), x = (0, r.useRef)(-1), A = r.useCallback(e => {
-        null != t.current && S({
-            questId: h,
-            event: p.HAw.QUEST_VIDEO_LOADING_STARTED,
-            properties: f({
-                video_asset_id: b,
+        videoSessionId: E,
+        videoAssetId: f,
+        sourceQuestContent: v,
+        logger: h,
+        questId: g,
+        isQuestCompleted: S,
+        isFullEpisodeVideoQuest: C
+    } = e, A = (0, u.u0)(), x = (0, u.Ut)(), _ = (0, s.bG)([o.A], () => o.A.getEffectiveConnectionSpeed()), b = (0, r.useRef)(-1), T = r.useCallback(e => {
+        null != t.current && A({
+            questId: g,
+            event: m.HAw.QUEST_VIDEO_LOADING_STARTED,
+            properties: {
+                video_asset_id: f,
                 network_connection_speed: e,
-                video_session_id: v,
-                is_hls_supported: l.Ay.isSupported()
-            }, m(n)),
-            sourceQuestContent: E
+                video_session_id: E,
+                is_hls_supported: l.Ay.isSupported(),
+                ...p(n)
+            },
+            sourceQuestContent: v
         })
-    }, [h, t, b, v, n, S, E]), j = r.useCallback(e => {
-        null != t.current && null != e && S({
-            questId: h,
-            event: p.HAw.QUEST_VIDEO_LOADING_ENDED,
-            properties: f({
-                video_asset_id: b,
-                network_connection_speed: C,
+    }, [g, t, f, E, n, A, v]), y = r.useCallback(e => {
+        null != t.current && null != e && A({
+            questId: g,
+            event: m.HAw.QUEST_VIDEO_LOADING_ENDED,
+            properties: {
+                video_asset_id: f,
+                network_connection_speed: _,
                 duration: e,
-                video_session_id: v
-            }, m(n)),
-            sourceQuestContent: E
+                video_session_id: E,
+                ...p(n)
+            },
+            sourceQuestContent: v
         })
-    }, [h, t, b, v, n, S, E, C]), T = r.useCallback(e => {
-        null != t.current && S({
-            questId: h,
-            event: p.HAw.QUEST_VIDEO_TIME_TO_FIRST_FRAME,
-            properties: f({
+    }, [g, t, f, E, n, A, v, _]), N = r.useCallback(e => {
+        null != t.current && A({
+            questId: g,
+            event: m.HAw.QUEST_VIDEO_TIME_TO_FIRST_FRAME,
+            properties: {
                 duration_ms: e,
-                video_session_id: v,
-                video_asset_id: b
-            }, m(n)),
-            sourceQuestContent: E
+                video_session_id: E,
+                video_asset_id: f,
+                ...p(n)
+            },
+            sourceQuestContent: v
         })
-    }, [h, t, b, v, n, S, E]), D = r.useCallback(() => {
-        null != t.current && S({
-            questId: h,
-            event: p.HAw.QUEST_VIDEO_PROGRESSED,
-            properties: f({
-                progress: (0, u.zh)(t.current.currentTime, t.current.duration),
+    }, [g, t, f, E, n, A, v]), D = r.useCallback(() => {
+        null != t.current && A({
+            questId: g,
+            event: m.HAw.QUEST_VIDEO_PROGRESSED,
+            properties: {
+                progress: (0, c.zh)(t.current.currentTime, t.current.duration),
                 video_timestamp_seconds: t.current.currentTime,
-                video_session_id: v,
-                video_asset_id: b
-            }, m(n)),
-            sourceQuestContent: E
+                video_session_id: E,
+                video_asset_id: f,
+                ...p(n)
+            },
+            sourceQuestContent: v
         })
-    }, [h, t, v, n, S, b, E]), w = r.useCallback(e => {
-        null != t.current && S({
-            questId: h,
-            event: p.HAw.QUEST_VIDEO_RESUMED,
-            properties: f({
+    }, [g, t, E, n, A, f, v]), L = r.useCallback(e => {
+        null != t.current && A({
+            questId: g,
+            event: m.HAw.QUEST_VIDEO_RESUMED,
+            properties: {
                 video_timestamp_seconds: t.current.currentTime,
                 pause_reason: e,
-                video_session_id: v,
-                video_asset_id: b
-            }, m(n)),
-            sourceQuestContent: E
+                video_session_id: E,
+                video_asset_id: f,
+                ...p(n)
+            },
+            sourceQuestContent: v
         })
-    }, [h, t, v, n, S, b, E]), N = r.useCallback(e => {
-        null != t.current && null != e && S({
-            questId: h,
-            event: p.HAw.QUEST_VIDEO_PAUSED,
-            properties: f({
+    }, [g, t, E, n, A, f, v]), I = r.useCallback(e => {
+        null != t.current && null != e && A({
+            questId: g,
+            event: m.HAw.QUEST_VIDEO_PAUSED,
+            properties: {
                 video_timestamp_seconds: t.current.currentTime,
                 reason: e,
-                video_session_id: v,
-                video_asset_id: b
-            }, m(n)),
-            sourceQuestContent: E
+                video_session_id: E,
+                video_asset_id: f,
+                ...p(n)
+            },
+            sourceQuestContent: v
         })
-    }, [h, t, v, n, S, b, E]), P = r.useCallback((e, n) => {
-        null != t.current && S({
-            questId: h,
-            event: e ? p.HAw.QUEST_VIDEO_APP_FOCUSED : p.HAw.QUEST_VIDEO_APP_UNFOCUSED,
+    }, [g, t, E, n, A, f, v]), j = r.useCallback((e, n) => {
+        null != t.current && A({
+            questId: g,
+            event: e ? m.HAw.QUEST_VIDEO_APP_FOCUSED : m.HAw.QUEST_VIDEO_APP_UNFOCUSED,
             properties: {
                 video_timestamp_seconds: t.current.currentTime,
                 video_state: n,
-                video_session_id: v,
-                video_asset_id: b
+                video_session_id: E,
+                video_asset_id: f
             },
-            sourceQuestContent: E
+            sourceQuestContent: v
         })
-    }, [h, t, v, S, b, E]), I = r.useCallback(() => {
-        null != t.current && (x.current += 1, S({
-            questId: h,
-            event: p.HAw.QUEST_VIDEO_BUFFERING_STARTED,
-            properties: f({
-                video_asset_id: b,
-                network_connection_speed: C,
-                buffer_index: x.current,
-                video_session_id: v
-            }, m(n)),
-            sourceQuestContent: E
+    }, [g, t, E, A, f, v]), R = r.useCallback(() => {
+        null != t.current && (b.current += 1, A({
+            questId: g,
+            event: m.HAw.QUEST_VIDEO_BUFFERING_STARTED,
+            properties: {
+                video_asset_id: f,
+                network_connection_speed: _,
+                buffer_index: b.current,
+                video_session_id: E,
+                ...p(n)
+            },
+            sourceQuestContent: v
         }))
-    }, [h, t, b, v, n, S, E, C]), L = r.useCallback(e => {
-        null != t.current && (x.current += 1, S({
-            questId: h,
-            event: p.HAw.QUEST_VIDEO_BUFFERING_ENDED,
-            properties: f({
-                video_asset_id: b,
-                network_connection_speed: C,
+    }, [g, t, f, E, n, A, v, _]), k = r.useCallback(e => {
+        null != t.current && (b.current += 1, A({
+            questId: g,
+            event: m.HAw.QUEST_VIDEO_BUFFERING_ENDED,
+            properties: {
+                video_asset_id: f,
+                network_connection_speed: _,
                 duration: e,
-                buffer_index: x.current,
-                video_session_id: v
-            }, m(n)),
-            sourceQuestContent: E
+                buffer_index: b.current,
+                video_session_id: E,
+                ...p(n)
+            },
+            sourceQuestContent: v
         }))
-    }, [h, t, b, v, n, S, E, C]), R = r.useCallback((e, t) => {
-        _({
-            questId: h,
+    }, [g, t, f, E, n, A, v, _]), w = r.useCallback((e, t) => {
+        x({
+            questId: g,
             questContent: e,
             questContentCTA: t,
-            sourceQuestContent: E
+            sourceQuestContent: v
         })
-    }, [h, E, _]), k = r.useCallback(e => {
-        if (null != t.current) {
-            var r, l;
-            S({
-                questId: h,
-                event: p.HAw.QUEST_VIDEO_SEGMENT_WATCHED,
-                properties: f((r = f({}, e), l = l = {
-                    video_asset_id: b,
-                    quest_completed: y,
-                    video_duration_sec: t.current.duration,
-                    video_progress: (0, u.zh)(e.segment_end_sec, t.current.duration),
-                    video_session_id: v
-                }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
-                    var n = Object.keys(e);
-                    if (Object.getOwnPropertySymbols) {
-                        var r = Object.getOwnPropertySymbols(e);
-                        n.push.apply(n, r)
-                    }
-                    return n
-                })(Object(l)).forEach(function(e) {
-                    Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(l, e))
-                }), r), m(n)),
-                sourceQuestContent: E
-            })
-        }
-    }, [S, h, b, y, v, n, t, E]), M = r.useCallback((e, r) => {
-        var i, a;
+    }, [g, v, x]), M = r.useCallback(e => {
+        null != t.current && A({
+            questId: g,
+            event: m.HAw.QUEST_VIDEO_SEGMENT_WATCHED,
+            properties: {
+                ...e,
+                video_asset_id: f,
+                quest_completed: S,
+                video_duration_sec: t.current.duration,
+                video_progress: (0, c.zh)(e.segment_end_sec, t.current.duration),
+                video_session_id: E,
+                ...p(n)
+            },
+            sourceQuestContent: v
+        })
+    }, [A, g, f, S, E, n, t, v]), O = r.useCallback((e, r) => {
         if (null == t.current) return;
-        let c = null == (i = t.current) ? void 0 : i.error,
-            g = null == (a = t.current) ? void 0 : a.networkState,
-            y = null != t.current ? (0, u.zh)(t.current.currentTime, t.current.duration) : void 0,
-            _ = null != r ? {
+        let s = t.current?.error,
+            o = t.current?.networkState,
+            u = null != t.current ? (0, c.zh)(t.current.currentTime, t.current.duration) : void 0,
+            h = null != r ? {
                 hls_error_subtype: r.errorDetails,
                 hls_error_fatal: r.fatal
             } : {};
-        S({
-            questId: h,
-            event: p.HAw.QUEST_VIDEO_ERROR,
-            properties: f({
-                video_progress: y,
+        A({
+            questId: g,
+            event: m.HAw.QUEST_VIDEO_ERROR,
+            properties: {
+                video_progress: u,
                 video_error_type: e,
-                video_asset_id: b,
-                network_connection_speed: C,
-                video_session_id: v,
-                video_error_code: null == c ? void 0 : c.code,
-                video_error_message: null == c ? void 0 : c.message,
-                video_network_state: g,
-                is_full_episode_video_quest: O,
-                is_hls_supported: l.Ay.isSupported()
-            }, m(n), _),
-            sourceQuestContent: E
-        }), (e === d.SB.SOURCE_ERROR || e === d.SB.NO_VALID_SOURCE) && s.A.increment({
-            name: o.K.QUEST_VIDEO_ERROR,
-            tags: ["quest_id:".concat(h), "error_type:".concat(e)]
+                video_asset_id: f,
+                network_connection_speed: _,
+                video_session_id: E,
+                video_error_code: s?.code,
+                video_error_message: s?.message,
+                video_network_state: o,
+                is_full_episode_video_quest: C,
+                is_hls_supported: l.Ay.isSupported(),
+                ...p(n),
+                ...h
+            },
+            sourceQuestContent: v
+        }), (e === d.SB.SOURCE_ERROR || e === d.SB.NO_VALID_SOURCE) && a.A.increment({
+            name: i.K.QUEST_VIDEO_ERROR,
+            tags: [`quest_id:${g}`, `error_type:${e}`]
         })
-    }, [h, t, b, v, n, S, E, C, O]), V = r.useCallback((e, t) => {
+    }, [g, t, f, E, n, A, v, _, C]), P = r.useCallback((e, t) => {
         let n;
-        switch (g.info("[QV] | HLS Error: type=".concat(t.type, ", details=").concat(t.details, ", fatal=").concat(t.fatal)), t.type) {
+        switch (h.info(`[QV] | HLS Error: type=${t.type}, details=${t.details}, fatal=${t.fatal}`), t.type) {
             case l.Ay.ErrorTypes.NETWORK_ERROR:
                 n = d.SB.HLS_NETWORK_ERROR;
                 break;
@@ -243,55 +223,57 @@ function v(e) {
             default:
                 n = d.SB.HLS_OTHER_ERROR
         }
-        M(n, {
+        O(n, {
             errorDetails: t.details,
             fatal: t.fatal
         })
-    }, [g, M]);
+    }, [h, O]);
     r.useEffect(() => {
         if (null == n.current) return;
         let e = n.current;
-        return e.on(l.Ay.Events.ERROR, V), () => {
-            e.off(l.Ay.Events.ERROR, V)
+        return e.on(l.Ay.Events.ERROR, P), () => {
+            e.off(l.Ay.Events.ERROR, P)
         }
-    }, [n, V]);
-    let Q = r.useCallback(e => {
-            null != t.current && S({
-                questId: h,
-                event: e ? p.HAw.QUEST_VIDEO_FULLSCREEN_ENTERED : p.HAw.QUEST_VIDEO_FULLSCREEN_EXITED,
-                properties: f({
-                    video_session_id: v,
-                    video_asset_id: b
-                }, m(n)),
-                sourceQuestContent: E
+    }, [n, P]);
+    let V = r.useCallback(e => {
+            null != t.current && A({
+                questId: g,
+                event: e ? m.HAw.QUEST_VIDEO_FULLSCREEN_ENTERED : m.HAw.QUEST_VIDEO_FULLSCREEN_EXITED,
+                properties: {
+                    video_session_id: E,
+                    video_asset_id: f,
+                    ...p(n)
+                },
+                sourceQuestContent: v
             })
-        }, [h, t, v, n, S, b, E]),
-        U = r.useCallback(e => {
-            null != t.current && S({
-                questId: h,
-                event: p.HAw.QUEST_VIDEO_VOLUME_CHANGED,
-                properties: f({
+        }, [g, t, E, n, A, f, v]),
+        Q = r.useCallback(e => {
+            null != t.current && A({
+                questId: g,
+                event: m.HAw.QUEST_VIDEO_VOLUME_CHANGED,
+                properties: {
                     volume_threshold: e > 0 && e < 1 ? .5 : e,
-                    video_session_id: v,
-                    video_asset_id: b
-                }, m(n)),
-                sourceQuestContent: E
+                    video_session_id: E,
+                    video_asset_id: f,
+                    ...p(n)
+                },
+                sourceQuestContent: v
             })
-        }, [h, t, b, v, n, S, E]);
+        }, [g, t, f, E, n, A, v]);
     return {
-        trackQuestVideoLoadingStarted: A,
-        trackQuestVideoLoadingEnded: j,
-        trackQuestVideoTimeToFirstFrame: T,
+        trackQuestVideoLoadingStarted: T,
+        trackQuestVideoLoadingEnded: y,
+        trackQuestVideoTimeToFirstFrame: N,
         trackQuestVideoProgressed: D,
-        trackQuestVideoResumed: w,
-        trackQuestVideoPaused: N,
-        trackQuestVideoFocusChange: P,
-        trackQuestContentClick: R,
-        trackQuestVideoBufferingStarted: I,
-        trackQuestVideoBufferingEnded: L,
-        trackWatchTimeAnalytics: k,
-        trackQuestVideoFullscreenChanged: Q,
-        trackQuestVideoError: M,
-        trackQuestVideoVolumeChanged: U
+        trackQuestVideoResumed: L,
+        trackQuestVideoPaused: I,
+        trackQuestVideoFocusChange: j,
+        trackQuestContentClick: w,
+        trackQuestVideoBufferingStarted: R,
+        trackQuestVideoBufferingEnded: k,
+        trackWatchTimeAnalytics: M,
+        trackQuestVideoFullscreenChanged: V,
+        trackQuestVideoError: O,
+        trackQuestVideoVolumeChanged: Q
     }
 }

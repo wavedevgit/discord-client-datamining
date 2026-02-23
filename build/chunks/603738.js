@@ -1,98 +1,93 @@
-/** chunk id: 603738, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => N
-}), n(896048), n(228524);
-var a = n(627968),
-    i = n(64700),
-    l = n(284009),
-    s = n.n(l),
-    r = n(311907),
-    o = n(827734),
-    c = n(421380),
-    d = n(397927),
-    _ = n(955437),
-    u = n(201505),
-    p = n(287809),
-    m = n(975571),
-    f = n(652215),
-    b = n(204925),
-    E = n(985018),
-    h = n(216344);
+/** chunk id: 603738, original params: e,t,a (module,exports,require) **/
+a.d(t, {
+    A: () => h
+});
+var n = a(627968),
+    s = a(64700),
+    i = a(284009),
+    l = a.n(i),
+    r = a(311907),
+    o = a(827734),
+    c = a(421380),
+    _ = a(397927),
+    d = a(955437),
+    u = a(201505),
+    m = a(287809),
+    p = a(975571),
+    f = a(652215),
+    E = a(204925),
+    N = a(985018),
+    A = a(216344);
 
-function N(e) {
+function h(e) {
     let {
         onComplete: t,
-        onClose: n
-    } = e, [l, N] = i.useState(null), [A, x] = i.useState(null), [T, y] = i.useState(!1), j = (0, r.bG)([p.default], () => p.default.getCurrentUser()), g = i.useRef(null);
-    async function O(e) {
-        e.preventDefault(), s()(null != l, "Cannot submit null birthday."), y(!0);
+        onClose: a
+    } = e, [i, h] = s.useState(null), [b, x] = s.useState(null), [T, C] = s.useState(!1), I = (0, r.bG)([m.default], () => m.default.getCurrentUser()), j = s.useRef(null);
+    async function D(e) {
+        e.preventDefault(), l()(null != i, "Cannot submit null birthday."), C(!0);
         try {
-            await _.n7(l, b.w_.NEW_USER_FLOW), t()
+            await d.n7(i, E.w_.NEW_USER_FLOW), t()
         } catch (e) {
-            if (null != e.body && null != e.body.date_of_birth) _.Xv(b.w_.NEW_USER_FLOW), _.$2(b.w_.NEW_USER_FLOW), n();
-            else {
-                var a;
-                (null == e || null == (a = e.body) ? void 0 : a.username) != null ? x(E.intl.string(E.t["TGg/2k"])) : x(null == e ? void 0 : e.body.message)
-            }
+            null != e.body && null != e.body.date_of_birth ? (d.Xv(E.w_.NEW_USER_FLOW), d.$2(E.w_.NEW_USER_FLOW), a()) : e?.body?.username != null ? x(N.intl.string(N.t["TGg/2k"])) : x(e?.body.message)
         }
-        y(!1)
+        C(!1)
     }
-    i.useEffect(() => {
-        null != j && null != j.nsfwAllowed && t()
-    }, [j, t]);
-    let v = i.useCallback(e => {
-            N(e)
-        }, [N]),
-        C = i.useCallback(() => {
-            var e;
-            null == (e = g.current) || e.focus()
-        }, [g]);
-    return null == j ? null : (0, a.jsxs)("form", {
-        className: h.Qs,
-        onSubmit: O,
-        children: [(0, a.jsx)(d.pVd, {
+    s.useEffect(() => {
+        null != I && null != I.nsfwAllowed && t()
+    }, [I, t]);
+    let g = s.useCallback(e => {
+            h(e)
+        }, [h]),
+        y = s.useCallback(() => {
+            j.current?.focus()
+        }, [j]);
+    return null == I ? null : (0, n.jsxs)("form", {
+        className: A.Qs,
+        onSubmit: D,
+        children: [(0, n.jsx)(_.pVd, {
             size: "custom",
             width: 56,
             height: 40,
-            className: h.wm,
+            className: A.wm,
             color: o.A.unsafe_rawColors.BRAND_500.css
-        }), (0, a.jsx)(d.Heading, {
-            className: h.DD,
+        }), (0, n.jsx)(_.Heading, {
+            className: A.DD,
             variant: "heading-xl/semibold",
-            children: E.intl.string(E.t.n7i7sv)
-        }), (0, a.jsx)(d.Text, {
+            children: N.intl.string(N.t.n7i7sv)
+        }), (0, n.jsx)(_.Text, {
             color: "text-default",
-            className: h.h_,
+            className: A.h_,
             variant: "text-md/normal",
-            children: E.intl.format(E.t.fa8kW1, {
-                helpURL: m.A.getArticleURL(f.MVz.AGE_GATE)
+            children: N.intl.format(N.t.fa8kW1, {
+                helpURL: p.A.getArticleURL(f.MVz.AGE_GATE)
             })
-        }), (0, a.jsx)(d.wXn, {
+        }), (0, n.jsx)(_.wXn, {
             theme: f.NJ8.LIGHT,
-            children: (0, a.jsx)(u.A, {
+            children: (0, n.jsx)(u.A, {
                 required: !0,
                 autoFocus: !0,
-                wrapperClassName: h.kz,
-                label: E.intl.string(E.t.rhBeKe),
+                wrapperClassName: A.kz,
+                label: N.intl.string(N.t.rhBeKe),
                 name: "birthday",
-                onChange: v,
-                onPopulated: C,
-                error: A,
-                value: l
+                onChange: g,
+                onPopulated: y,
+                error: b,
+                value: i
             })
-        }), (0, a.jsx)("div", {
-            className: h.qr,
-            children: (0, a.jsx)("div", {
-                className: h._o,
-                children: (0, a.jsx)(c.$n, {
+        }), (0, n.jsx)("div", {
+            className: A.qr,
+            children: (0, n.jsx)("div", {
+                className: A._o,
+                children: (0, n.jsx)(c.$n, {
                     "data-migration-pending": !0,
-                    buttonRef: g,
+                    buttonRef: j,
                     type: "submit",
                     size: c.$n.Sizes.LARGE,
                     submitting: T,
-                    disabled: null == l,
+                    disabled: null == i,
                     fullWidth: !0,
-                    children: E.intl.string(E.t.PDTjLN)
+                    children: N.intl.string(N.t.PDTjLN)
                 })
             })
         })]

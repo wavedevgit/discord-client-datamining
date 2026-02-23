@@ -1,72 +1,42 @@
-/** chunk id: 179690, original params: e,t,r (module,exports,require) **/
-r.d(t, {
-    Ay: () => s,
-    sy: () => a
-}), r(65821);
-var n = r(627968);
-r(64700);
-var i = r(397927),
-    l = r(652215);
+/** chunk id: 179690, original params: e,i,l (module,exports,require) **/
+l.d(i, {
+    Ay: () => c,
+    sy: () => s
+});
+var t = l(627968);
+l(64700);
+var n = l(397927),
+    a = l(652215);
 
-function c(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var r = null != arguments[t] ? arguments[t] : {},
-            n = Object.keys(r);
-        "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(r, e).enumerable
-        }))), n.forEach(function(t) {
-            var n;
-            n = r[t], t in e ? Object.defineProperty(e, t, {
-                value: n,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = n
-        })
-    }
-    return e
-}
-
-function o(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-        var r = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var n = Object.getOwnPropertySymbols(e);
-            r.push.apply(r, n)
-        }
-        return r
-    })(Object(t)).forEach(function(r) {
-        Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r))
-    }), e
-}
-
-function a() {
+function s() {
     let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
-    return new Promise(t => {
-        (0, i.mMO)(async () => {
+    return new Promise(i => {
+        (0, n.mMO)(async () => {
             let {
-                default: t
-            } = await r.e("28429").then(r.bind(r, 549404));
-            return r => (0, n.jsx)(t, o(c({}, r), {
+                default: i
+            } = await l.e("28429").then(l.bind(l, 549404));
+            return l => (0, t.jsx)(i, {
+                ...l,
                 isTotp: e
-            }))
+            })
         }, {
-            onCloseCallback: t,
-            onCloseRequest: l.FXj
+            onCloseCallback: i,
+            onCloseRequest: a.FXj
         })
     })
 }
-let s = {
+let c = {
     enableMFA: async function() {
         await new Promise(e => {
-            (0, i.mMO)(async () => {
+            (0, n.mMO)(async () => {
                 let {
-                    default: t
-                } = await Promise.all([r.e("50906"), r.e("78811")]).then(r.bind(r, 333737));
-                return r => (0, n.jsx)(t, o(c({}, r), {
+                    default: i
+                } = await Promise.all([l.e("97484"), l.e("78811")]).then(l.bind(l, 333737));
+                return l => (0, t.jsx)(i, {
+                    ...l,
                     handleEnableMFASuccess: e
-                }))
+                })
             })
-        }), await a()
+        }), await s()
     }
 }

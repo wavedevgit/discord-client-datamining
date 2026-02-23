@@ -1,262 +1,226 @@
 /** chunk id: 360619, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    AC: () => M,
-    Lu: () => G,
+    AC: () => G,
+    Lu: () => M,
     NI: () => k,
-    PH: () => w
-}), n(560197), n(864466), n(443073), n(896048), n(446912), n(321073);
-var r = n(64700),
-    i = n(311907),
-    l = n(361739),
-    s = n(406360),
-    a = n(86379),
+    PH: () => D
+}), n(560197), n(321073);
+var i = n(64700),
+    s = n(311907),
+    a = n(361739),
+    r = n(406360),
+    l = n(86379),
     o = n(968011),
     c = n(643015),
     d = n(945276),
     u = n(834981),
     _ = n(155984),
-    p = n(35587),
-    m = n(677402),
+    m = n(35587),
+    A = n(677402),
     g = n(207560),
-    A = n(818143),
-    f = n(639555),
-    b = n(617641),
-    h = n(961350),
-    E = n(540999),
-    O = n(189081),
-    x = n(994500),
-    C = n(628965),
-    S = n(287809),
-    T = n(80422),
-    I = n(64313),
-    N = n(897358),
-    y = n(253932),
-    j = n(368631),
-    v = n(682262),
-    P = n(987281),
-    R = n(531525),
-    D = n(654487),
+    h = n(818143),
+    x = n(639555),
+    p = n(617641),
+    E = n(961350),
+    C = n(540999),
+    T = n(189081),
+    S = n(994500),
+    I = n(628965),
+    f = n(287809),
+    N = n(80422),
+    b = n(64313),
+    j = n(253932),
+    v = n(368631),
+    O = n(682262),
+    R = n(987281),
+    y = n(531525),
+    P = n(654487),
     L = n(985018);
 
-function w() {
-    var e, t, n, l;
-    let E = (0, p.IO)().length,
-        N = (0, _.l)(),
-        P = (0, i.bG)([C.A], () => C.A.getSearchParams()),
-        R = (0, u.VT)(),
-        L = (0, v.b_)(),
+function D() {
+    let e = (0, m.IO)().length,
+        t = (0, _.l)(),
+        n = (0, s.bG)([I.A], () => I.A.getSearchParams()),
+        a = (0, u.VT)(),
+        C = (0, O.b_)(),
         {
-            shouldMergeGameSettings: w
-        } = T.X.useExperiment({
+            shouldMergeGameSettings: R
+        } = N.X.useExperiment({
             location: "settings"
         }),
-        M = null != (e = null == (n = S.default.getCurrentUser()) ? void 0 : n.isStaff()) && e,
-        G = (0, b.Lc)({
+        y = f.default.getCurrentUser()?.isStaff() ?? !1,
+        L = (0, p.Lc)({
             location: "settings"
         }),
-        U = (0, f.Rv)({
+        D = (0, x.Rv)({
             location: "settings"
         }),
-        k = (0, a.H)(),
-        B = (0, m.H)({
-            location: D.rE.USER_SETTINGS_SEARCH_GIFT_INVENTORY
+        G = (0, l.H)(),
+        M = (0, A.H)({
+            location: P.rE.USER_SETTINGS_SEARCH_GIFT_INVENTORY
         }),
-        H = (0, i.bG)([O.A], () => O.A.hasLibraryApplication()),
-        V = (0, i.bG)([h.default], () => h.default.hasTOTPEnabled()),
-        F = y.Q_.useSetting(),
-        Y = (0, c.A)(),
-        W = null == (t = (0, d.A)()) || t,
-        K = (null == (l = (0, A.G)()) ? void 0 : l.length) > 0,
+        U = (0, s.bG)([T.A], () => T.A.hasLibraryApplication()),
+        k = (0, s.bG)([E.default], () => E.default.hasTOTPEnabled()),
+        V = j.Q_.useSetting(),
+        w = (0, c.A)(),
+        H = (0, d.A)() ?? !0,
+        B = (0, h.G)()?.length > 0,
         {
-            hasBlockedUsers: z,
-            hasIgnoredUsers: Z
-        } = (0, i.cf)([x.A], () => ({
-            hasBlockedUsers: x.A.getBlockedIDs().length > 0,
-            hasIgnoredUsers: x.A.getIgnoredIDs().length > 0
+            hasBlockedUsers: Y,
+            hasIgnoredUsers: F
+        } = (0, s.cf)([S.A], () => ({
+            hasBlockedUsers: S.A.getBlockedIDs().length > 0,
+            hasIgnoredUsers: S.A.getIgnoredIDs().length > 0
         })),
-        X = (0, g.fk)(),
-        q = (0, I.j)("SettingRendererUtils"),
-        J = X || q,
+        z = (0, g.fk)(),
+        W = (0, b.j)("SettingRendererUtils"),
+        K = z || W,
         {
-            enabled: Q
+            enabled: Z
         } = (0, o.us)("useGenerateUserSettingsSections", {
             autoTrackExposure: !1
         }),
-        $ = (0, s.i)("useGenerateUserSettingsSections");
-    return r.useMemo(() => (0, j.zj)({
-        unseenGiftCount: E,
-        showPrepaidPaymentPastDueWarning: N,
-        searchParams: P,
-        numOfPendingFamilyRequests: R,
-        isOverlaySupported: L,
-        shouldMergeGameSettings: w,
-        isStaff: M,
-        isInappropriateConversationWarningEnabled: G,
-        isInapproprateConversationsDefaultOn: U,
-        paymentsBlocked: k,
-        isEligibleForQuests: B,
-        isStricterMessageRequestsEnabled: Y,
-        hasLibraryApplication: H,
-        hasTOTPEnabled: V,
-        developerMode: F,
-        isAdultUser: W,
-        hasSecureFramesVerifiedUserIds: K,
-        hasIgnoredUsers: Z,
-        hasBlockedUsers: z,
-        hasAgeGatedFeature: J,
-        isChatMentionSuggestionsSettingEnabled: Q,
-        isHDRAccessibilitySettingExperimentEnabled: $
-    }), [F, z, Z, H, K, V, P, W, B, U, G, L, M, Y, R, k, w, N, E, J, Q, $])
+        q = (0, r.i)("useGenerateUserSettingsSections");
+    return i.useMemo(() => (0, v.zj)({
+        unseenGiftCount: e,
+        showPrepaidPaymentPastDueWarning: t,
+        searchParams: n,
+        numOfPendingFamilyRequests: a,
+        isOverlaySupported: C,
+        shouldMergeGameSettings: R,
+        isStaff: y,
+        isInappropriateConversationWarningEnabled: L,
+        isInapproprateConversationsDefaultOn: D,
+        paymentsBlocked: G,
+        isEligibleForQuests: M,
+        isStricterMessageRequestsEnabled: w,
+        hasLibraryApplication: U,
+        hasTOTPEnabled: k,
+        developerMode: V,
+        isAdultUser: H,
+        hasSecureFramesVerifiedUserIds: B,
+        hasIgnoredUsers: F,
+        hasBlockedUsers: Y,
+        hasAgeGatedFeature: K,
+        isChatMentionSuggestionsSettingEnabled: Z,
+        isHDRAccessibilitySettingExperimentEnabled: q
+    }), [V, Y, F, U, B, k, n, H, M, D, L, C, y, w, a, G, R, t, e, K, Z, q])
 }
 
-function M(e) {
-    let t = P.a.useField("searchResults"),
-        n = w(),
-        r = n[e],
-        i = Object.fromEntries(Object.entries(n).filter(e => {
+function G(e) {
+    let t = R.a.useField("searchResults"),
+        n = D(),
+        i = n[e],
+        s = Object.fromEntries(Object.entries(n).filter(e => {
             let [t, n] = e;
-            return n.section === r.section
+            return n.section === i.section
         })),
-        l = Object.fromEntries(Object.entries(i).filter(e => {
+        a = Object.fromEntries(Object.entries(s).filter(e => {
             let [t, {
                 parent: n,
-                section: i
+                section: s
             }] = e;
-            return null != n && i === r.section
+            return null != n && s === i.section
         }).map(e => {
             let [t, {
                 parent: n
             }] = e;
             return [t, n]
         })),
-        s = new Set,
-        a = e => {
-            let t = i[e];
+        r = new Set,
+        l = e => {
+            let t = s[e];
             if (null == t) return;
-            s.add(e);
+            r.add(e);
             let n = t.parent;
-            null != n && a(n)
+            null != n && l(n)
         },
         o = e => {
-            for (let t of (s.add(e), Object.entries(l).filter(t => {
-                    let [n, r] = t;
-                    return r === e
+            for (let t of (r.add(e), Object.entries(a).filter(t => {
+                    let [n, i] = t;
+                    return i === e
                 }).map(e => {
                     let [t] = e;
                     return t
                 }))) o(t)
         };
-    for (let e of t.filter(e => e in i))
-        if (!s.has(e)) {
-            if (null != i[e].element && null == i[e].parent) {
-                s.clear();
+    for (let e of t.filter(e => e in s))
+        if (!r.has(e)) {
+            if (null != s[e].element && null == s[e].parent) {
+                r.clear();
                 break
             }
-            Object.values(l).includes(e) && o(e), a(e)
-        } return s
+            Object.values(a).includes(e) && o(e), l(e)
+        } return r
 }
 
-function G() {
-    let e = w(),
+function M() {
+    let e = D(),
         {
             shouldMergeGameSettings: t
-        } = T.X.useExperiment({
-            location: "settings"
-        }),
-        {
-            showRedesign: n
         } = N.X.useExperiment({
             location: "settings"
         }),
-        i = r.useMemo(() => (function(e) {
+        n = i.useMemo(() => (function(e) {
             let {
-                shouldMergeGameSettings: t,
-                showRedesignedThirdPartyAccessSettings: n
-            } = e, r = E.A.isDeveloper, i = [{
+                shouldMergeGameSettings: t
+            } = e, n = C.A.isDeveloper, i = [{
                 header: L.intl.string(L.t.cduTBL),
-                settings: n ? [R.H.ACCOUNT, R.H.GAMES, R.H.PROFILE_CUSTOMIZATION, R.H.CONTENT_SOCIAL, R.H.DATA_PRIVACY, R.H.PRIVACY_FAMILY_CENTER, R.H.THIRD_PARTY_ACCESS, R.H.SESSIONS] : [R.H.ACCOUNT, R.H.GAMES, R.H.PROFILE_CUSTOMIZATION, R.H.CONTENT_SOCIAL, R.H.DATA_PRIVACY, R.H.PRIVACY_FAMILY_CENTER, R.H.AUTHORIZED_APPS, R.H.SESSIONS, R.H.CONNECTIONS, R.H.PRIVATE_BROWSING_PERK]
+                settings: [y.H.ACCOUNT, y.H.GAMES, y.H.PROFILE_CUSTOMIZATION, y.H.CONTENT_SOCIAL, y.H.DATA_PRIVACY, y.H.PRIVACY_FAMILY_CENTER, y.H.AUTHORIZED_APPS, y.H.SESSIONS, y.H.CONNECTIONS, y.H.PRIVATE_BROWSING_PERK]
             }, {
                 header: L.intl.string(L.t["4uOdGr"]),
                 divider: !0,
-                settings: [R.H.PREMIUM, R.H.GUILD_BOOSTING, R.H.SUBSCRIPTIONS, R.H.GIFT_INVENTORY, R.H.BILLING]
+                settings: [y.H.PREMIUM, y.H.GUILD_BOOSTING, y.H.SUBSCRIPTIONS, y.H.GIFT_INVENTORY, y.H.BILLING]
             }, {
                 header: L.intl.string(L.t.f2n1TP),
                 divider: !0,
-                settings: [R.H.APPEARANCE, R.H.ACCESSIBILITY, R.H.POGGERMODE, R.H.CHAT, R.H.KEYBINDS, R.H.LANGUAGE, R.H.WINDOW_SETTINGS, R.H.LINUX_SETTINGS, R.H.SETTINGS_ADVANCED]
+                settings: [y.H.APPEARANCE, y.H.ACCESSIBILITY, y.H.POGGERMODE, y.H.CHAT, y.H.KEYBINDS, y.H.LANGUAGE, y.H.WINDOW_SETTINGS, y.H.LINUX_SETTINGS, y.H.SETTINGS_ADVANCED]
             }, {
                 divider: !0,
-                settings: [R.H.CHANGELOG, R.H.MERCHANDISE]
+                settings: [y.H.CHANGELOG, y.H.MERCHANDISE]
             }, {
                 header: "Developer Only",
                 divider: !0,
-                settings: r ? [R.H.EXPERIMENTS, R.H.DEVELOPER_OPTIONS] : []
+                settings: n ? [y.H.EXPERIMENTS, y.H.DEVELOPER_OPTIONS] : []
             }, {
                 divider: !0,
-                settings: [R.H.LOGOUT]
+                settings: [y.H.LOGOUT]
             }, {
                 divider: !0,
-                settings: [R.H.SOCIAL_LINKS, R.H.CLIENT_DEBUG_INFO]
-            }], l = {
+                settings: [y.H.SOCIAL_LINKS, y.H.CLIENT_DEBUG_INFO]
+            }], s = {
                 header: L.intl.string(L.t.SmHCFf),
                 divider: !0,
-                settings: [R.H.ACTIVITY_PRIVACY, R.H.REGISTERED_GAMES, R.H.OVERLAY]
+                settings: [y.H.ACTIVITY_PRIVACY, y.H.REGISTERED_GAMES, y.H.OVERLAY]
             };
-            return t ? i : i.toSpliced(3, 0, l)
+            return t ? i : i.toSpliced(3, 0, s)
         })({
-            shouldMergeGameSettings: t,
-            showRedesignedThirdPartyAccessSettings: n
-        }), [t, n]);
-    return r.useMemo(() => {
-        var t, n;
-        let r, s, a;
-        return r = [], s = U(e), t = e, n = new Set(Array.from([]).filter(e => s.has(e))), a = new Map, null != n && n.forEach(e => {
+            shouldMergeGameSettings: t
+        }), [t]);
+    return i.useMemo(() => {
+        var t, i;
+        let s, r, l;
+        return s = [], r = U(e), t = e, i = new Set(Array.from((void 0) ?? []).filter(e => r.has(e))), l = new Map, null != i && i.forEach(e => {
             let n = t[e].parent;
             for (; null != n && null != t[n].parent;) n = t[n].parent;
             if (null != n) {
-                var r;
-                let e = null != (r = a.get(n)) ? r : 0;
-                a.set(n, e + 1)
+                let e = l.get(n) ?? 0;
+                l.set(n, e + 1)
             }
-        }), i.forEach(t => {
-            0 !== t.settings.length && (!0 === t.divider && r.push({
-                section: l.Fq.DIVIDER
-            }), null != t.header && r.push({
-                section: l.Fq.HEADER,
+        }), n.forEach(t => {
+            0 !== t.settings.length && (!0 === t.divider && s.push({
+                section: a.Fq.DIVIDER
+            }), null != t.header && s.push({
+                section: a.Fq.HEADER,
                 label: t.header
             }), t.settings.forEach(t => {
-                var n, i;
-                r.push((n = function(e) {
-                    for (var t = 1; t < arguments.length; t++) {
-                        var n = null != arguments[t] ? arguments[t] : {},
-                            r = Object.keys(n);
-                        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                            return Object.getOwnPropertyDescriptor(n, e).enumerable
-                        }))), r.forEach(function(t) {
-                            var r;
-                            r = n[t], t in e ? Object.defineProperty(e, t, {
-                                value: r,
-                                enumerable: !0,
-                                configurable: !0,
-                                writable: !0
-                            }) : e[t] = r
-                        })
-                    }
-                    return e
-                }({}, e[t]), i = i = {
+                s.push({
+                    ...e[t],
                     tabPredicate: () => !0
-                }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
-                    var n = Object.keys(e);
-                    if (Object.getOwnPropertySymbols) {
-                        var r = Object.getOwnPropertySymbols(e);
-                        n.push.apply(n, r)
-                    }
-                    return n
-                })(Object(i)).forEach(function(e) {
-                    Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
-                }), n))
+                })
             }))
-        }), r
-    }, [i, e])
+        }), s
+    }, [n, e])
 }
 
 function U(e) {

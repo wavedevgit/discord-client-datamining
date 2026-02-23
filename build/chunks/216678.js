@@ -1,123 +1,65 @@
-/** chunk id: 216678, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    A: () => m
+/** chunk id: 216678, original params: t,e,i (module,exports,require) **/
+i.d(e, {
+    A: () => c
 });
-var r = n(627968);
-n(64700);
-var i = n(835245),
-    a = n(397927),
-    o = n(391048),
-    s = n(636099),
-    l = n(954571),
-    c = n(652215);
+var n = i(627968);
+i(64700);
+var l = i(835245),
+    s = i(397927),
+    r = i(391048),
+    a = i(636099),
+    u = i(954571),
+    o = i(652215);
 
-function u(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-
-function d(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            u(e, t, n[t])
-        })
-    }
-    return e
-}
-
-function f(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-        var r = Object.getOwnPropertySymbols(e);
-        t && (r = r.filter(function(t) {
-            return Object.getOwnPropertyDescriptor(e, t).enumerable
-        })), n.push.apply(n, r)
-    }
-    return n
-}
-
-function p(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-
-function _(e, t) {
-    if (null == e) return {};
-    var n, r, i, a = {};
-    if ("u" > typeof Reflect && Reflect.ownKeys) {
-        for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
-        return a
-    }
-    if (a = h(e, t), Object.getOwnPropertySymbols)
-        for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
-    return a
-}
-
-function h(e, t) {
-    if (null == e) return {};
-    var n, r, i = {},
-        a = Object.getOwnPropertyNames(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
-    return i
-}
-
-function m(e) {
+function c(t) {
     let {
-        applicationId: t,
-        skuId: u,
-        onClose: f,
-        onComplete: h,
-        analyticsLocations: m,
-        analyticsLocationObject: g,
-        contextKey: E,
-        isGift: y = !1
-    } = e, b = !1, O = (0, i.A)();
-    (0, a.mMO)(async () => {
+        applicationId: e,
+        skuId: c,
+        onClose: d,
+        onComplete: p,
+        analyticsLocations: S,
+        analyticsLocationObject: I,
+        contextKey: A,
+        isGift: _ = !1
+    } = t, T = !1, E = (0, l.A)();
+    (0, s.mMO)(async () => {
         let {
-            default: e
-        } = await n.e("53068").then(n.bind(n, 226151));
-        return n => {
+            default: t
+        } = await i.e("53068").then(i.bind(i, 226151));
+        return i => {
             let {
-                onClose: i
-            } = n, a = _(n, ["onClose"]);
-            return (0, r.jsx)(e, p(d({}, a), {
-                loadId: O,
-                applicationId: t,
-                skuId: u,
-                analyticsLocations: m,
-                analyticsLocationObject: g,
-                isGift: y,
-                onClose: e => {
-                    i(), null == f || f(e)
+                onClose: l,
+                ...s
+            } = i;
+            return (0, n.jsx)(t, {
+                ...s,
+                loadId: E,
+                applicationId: e,
+                skuId: c,
+                analyticsLocations: S,
+                analyticsLocationObject: I,
+                isGift: _,
+                onClose: t => {
+                    l(), d?.(t)
                 },
-                onComplete: e => {
-                    b = !0, null == h || h(e)
+                onComplete: t => {
+                    T = !0, p?.(t)
                 }
-            }))
+            })
         }
     }, {
-        contextKey: E,
+        contextKey: A,
         onCloseCallback: () => {
-            b || l.default.track(c.HAw.PAYMENT_FLOW_CANCELED, {
-                load_id: O,
-                payment_type: c.frM[c.VVm.ONE_TIME],
-                location: g,
-                is_gift: y,
-                sku_id: u,
-                application_id: t,
-                location_stack: m
-            }), (0, o.ET)(), (0, s.z)(), null == f || f(b)
+            T || u.default.track(o.HAw.PAYMENT_FLOW_CANCELED, {
+                load_id: E,
+                payment_type: o.frM[o.VVm.ONE_TIME],
+                location: I,
+                is_gift: _,
+                sku_id: c,
+                application_id: e,
+                location_stack: S
+            }), (0, r.ET)(), (0, a.z)(), d?.(T)
         },
-        onCloseRequest: c.tEg
+        onCloseRequest: o.tEg
     })
 }

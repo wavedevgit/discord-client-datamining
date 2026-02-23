@@ -1,43 +1,43 @@
 /** chunk id: 957300, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => s
+    A: () => r
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(397927),
+var s = n(397927),
     l = n(801358);
 
-function s(e) {
+function r(e) {
     let {
         step: t,
         header: n,
-        children: s
+        children: r
     } = e;
-    return (0, r.jsxs)("div", {
+    return (0, i.jsxs)("div", {
         className: l.eX,
-        children: [(0, r.jsx)("div", {
+        children: [(0, i.jsx)("div", {
             className: l.A1,
-            children: (0, r.jsx)("div", {
+            children: (0, i.jsx)("div", {
                 className: l.xR,
-                children: (0, r.jsx)(i.Text, {
+                children: (0, i.jsx)(s.Text, {
                     className: l.qZ,
                     variant: "text-sm/bold",
                     children: t
                 })
             })
-        }), (0, r.jsxs)("div", {
+        }), (0, i.jsxs)("div", {
             className: l.H7,
-            children: [(0, r.jsx)("div", {
+            children: [(0, i.jsx)("div", {
                 className: l.__invalid_triggerHeaderContainer,
-                children: (0, r.jsx)(i.Text, {
+                children: (0, i.jsx)(s.Text, {
                     className: l.wy,
                     variant: "text-sm/normal",
                     children: n
                 })
-            }), null != s && (0, r.jsx)("div", {
+            }), null != r && (0, i.jsx)("div", {
                 className: l.Dx,
-                children: s
+                children: r
             })]
         })]
     })

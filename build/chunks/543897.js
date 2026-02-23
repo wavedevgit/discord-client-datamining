@@ -1,39 +1,36 @@
 /** chunk id: 543897, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => c
+    A: () => a
 }), n(321073);
-var r, l, i = n(311907),
+var i = n(311907),
     s = n(73153);
-let a = [];
-class o extends(r = i.Ay.Store) {
+let l = [];
+class r extends i.Ay.Store {
+    static displayName = "GeoRestrictedGuildStore";
     getGeoRestrictedGuilds() {
-        return a
+        return l
     }
-}(l = "displayName") in o ? Object.defineProperty(o, l, {
-    value: "GeoRestrictedGuildStore",
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
-}) : o[l] = "GeoRestrictedGuildStore";
-let c = new o(s.h, {
+}
+let a = new r(s.h, {
     CONNECTION_OPEN: function(e) {
-        a = e.geoRestrictedGuilds
+        l = e.geoRestrictedGuilds
     },
     GUILD_DELETE: function(e) {
         let {
             guild: t
         } = e;
-        if (-1 === a.findIndex(e => e.id === t.id)) return !1;
-        a = a.filter(e => e.id !== t.id)
+        if (-1 === l.findIndex(e => e.id === t.id)) return !1;
+        l = l.filter(e => e.id !== t.id)
     },
     GUILD_GEO_RESTRICTED: function(e) {
-        let t = a.filter(t => t.id !== e.guildId);
+        let t = l.filter(t => t.id !== e.guildId);
         t.push({
             id: e.guildId,
             name: e.name,
             icon: e.icon,
             unavailable: !0,
             geo_restricted: !0
-        }), a = t
+        }), l = t
     }
 })

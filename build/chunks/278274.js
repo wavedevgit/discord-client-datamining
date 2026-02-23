@@ -1,36 +1,36 @@
 /** chunk id: 278274, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    q: () => i
+    q: () => l
 });
 var a = n(627968);
 n(64700);
-var l = n(397927),
-    r = n(520657);
+var i = n(397927),
+    s = n(520657);
 
-function i(e) {
+function l(e) {
     let {
         isUploading: t,
         isSuccess: n,
-        errorMessage: i,
-        onClick: s,
+        errorMessage: l,
+        onClick: r,
         title: o
     } = e;
     return (0, a.jsxs)(a.Fragment, {
-        children: [(0, a.jsx)(l.Button, {
+        children: [(0, a.jsx)(i.Button, {
             variant: "primary",
-            onClick: s,
+            onClick: r,
             loading: t,
             disabled: t,
             text: t ? "Uploading…" : o
-        }), null != i && (0, a.jsx)(l.Text, {
+        }), null != l && (0, a.jsx)(i.Text, {
             variant: "text-sm/normal",
             color: "text-feedback-critical",
-            className: r.qS,
-            children: i
-        }), n && (0, a.jsx)(l.Text, {
+            className: s.qS,
+            children: l
+        }), n && (0, a.jsx)(i.Text, {
             variant: "text-sm/normal",
             color: "text-feedback-positive",
-            className: r.qS,
+            className: s.qS,
             children: "Logs uploaded successfully"
         })]
     })

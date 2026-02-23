@@ -1,76 +1,72 @@
-/** chunk id: 185438, original params: t,e,n (module,exports,require) **/
-n.d(e, {
-    A: () => m
-}), n(114821), n(339614), n(938796);
-var l = n(64700),
-    r = n(284009),
-    i = n.n(r),
-    u = n(311907),
-    o = n(73153),
-    s = n(73825),
-    a = n(688810),
-    c = n(376374),
-    d = n(627363),
-    p = n(897100),
-    f = n(97352),
-    S = n(67480),
-    A = n(328968),
-    b = n(915043),
-    O = n(607940),
-    g = n(163437),
-    I = n(638643);
+/** chunk id: 185438, original params: t,e,i (module,exports,require) **/
+i.d(e, {
+    A: () => C
+}), i(938796);
+var n = i(64700),
+    l = i(284009),
+    s = i.n(l),
+    r = i(311907),
+    a = i(73153),
+    u = i(73825),
+    o = i(688810),
+    c = i(376374),
+    d = i(627363),
+    p = i(897100),
+    S = i(97352),
+    I = i(67480),
+    A = i(328968),
+    _ = i(915043),
+    T = i(607940),
+    E = i(163437),
+    f = i(638643);
 
-function m(t) {
-    var e, n;
+function C(t) {
     let {
-        initialSubscribeForGuild: r,
-        analyticsLocation: m,
-        skuId: v,
-        onComplete: E,
-        disableGuildSelector: P
-    } = t, h = (0, u.bG)([S.A], () => null != v ? S.A.get(v) : void 0, [v]), T = (0, u.bG)([A.A], () => null != v ? A.A.getForSKU(v) : void 0, [v]), y = null == (n = (0, u.yK)([f.A], () => null != v ? f.A.getForSKU(v) : [], [v])[0]) ? void 0 : n.id, _ = (0, u.bG)([S.A], () => null != v ? S.A.getParentSKU(v) : void 0, [v]), N = null == _ ? void 0 : _.bundledSkuIds, j = (0, u.yK)([f.A], () => {
-        var t;
-        return null != (t = null == N ? void 0 : N.flatMap(f.A.getForSKU)) ? t : []
-    }, [N]), L = l.useMemo(() => j.map(t => t.id), [j]), C = (0, g.PJ)(null != (e = null == h ? void 0 : h.flags) ? e : 0), F = (0, u.bG)([O.A], () => null != r && !1 !== C && O.A.getEntitlementsForGuild(r, !0).some(t => t.skuId === v), [C, v, r]), w = null == h ? void 0 : h.applicationId, x = (null == T ? void 0 : T.published) === !0 && (null == h ? void 0 : h.isAvailable()) === !0, {
-        app: R
-    } = (0, d.NP)(w), {
-        analyticsLocations: D
-    } = (0, a.Ay)(), G = (0, b.GD)(_, null != r ? r : void 0), k = null == G ? void 0 : G.subscription, U = null == G ? void 0 : G.subscriptionPlan, B = (0, b.Ko)(_, null != r ? r : void 0), K = null == B ? void 0 : B.subscriptionPlan, {
+        initialSubscribeForGuild: e,
+        analyticsLocation: i,
+        skuId: l,
+        onComplete: C,
+        disableGuildSelector: N
+    } = t, h = (0, r.bG)([I.A], () => null != l ? I.A.get(l) : void 0, [l]), g = (0, r.bG)([A.A], () => null != l ? A.A.getForSKU(l) : void 0, [l]), m = (0, r.yK)([S.A], () => null != l ? S.A.getForSKU(l) : [], [l]), P = m[0]?.id, L = (0, r.bG)([I.A], () => null != l ? I.A.getParentSKU(l) : void 0, [l]), O = L?.bundledSkuIds, F = (0, r.yK)([S.A], () => O?.flatMap(S.A.getForSKU) ?? [], [O]), b = n.useMemo(() => F.map(t => t.id), [F]), v = (0, E.PJ)(h?.flags ?? 0), U = (0, r.bG)([T.A], () => null != e && !1 !== v && T.A.getEntitlementsForGuild(e, !0).some(t => t.skuId === l), [v, l, e]), R = h?.applicationId, y = g?.published === !0 && h?.isAvailable() === !0, {
+        app: x
+    } = (0, d.NP)(R), {
+        analyticsLocations: G
+    } = (0, o.Ay)(), w = (0, _.GD)(L, e ?? void 0), k = w?.subscription, j = w?.subscriptionPlan, D = (0, _.Ko)(L, e ?? void 0), B = D?.subscriptionPlan, {
         entitlementsLoaded: M
-    } = (0, b.CZ)({
-        guildId: r
+    } = (0, _.CZ)({
+        guildId: e
     });
-    null == r && (M = !0);
+    null == e && (M = !0);
     let H = (0, p.A)(),
-        Y = null != k && (0, g.Uo)(k, h),
-        V = l.useMemo(() => {
-            if (!M || null == R || null == v) return c.wF.LOADING;
-            if (!x) return c.wF.UNAVAILABLE;
-            if (!C) {
-                if ((null == U ? void 0 : U.skuId) === v) return c.wF.SUBSCRIBED;
-                if ((null == K ? void 0 : K.skuId) === v && !1 === Y) return c.wF.UPCOMING_PLAN
+        K = null != k && (0, E.Uo)(k, h),
+        Y = n.useMemo(() => {
+            if (!M || null == x || null == l) return c.wF.LOADING;
+            if (!y) return c.wF.UNAVAILABLE;
+            if (!v) {
+                if (j?.skuId === l) return c.wF.SUBSCRIBED;
+                if (B?.skuId === l && !1 === K) return c.wF.UPCOMING_PLAN
             }
             return c.wF.AVAILABLE
-        }, [null == U ? void 0 : U.skuId, x, R, M, Y, C, null == K ? void 0 : K.skuId, v]);
-    return l.useEffect(() => {
-        x && null != v && H && (f.A.isFetchingForSKU(v) || f.A.isLoadedForSKU(v) || o.h.wait(() => {
-            (0, s.ur)(v)
+        }, [j?.skuId, y, x, M, K, v, B?.skuId, l]);
+    return n.useEffect(() => {
+        y && null != l && H && (S.A.isFetchingForSKU(l) || S.A.isLoadedForSKU(l) || a.h.wait(() => {
+            (0, u.ur)(l)
         }))
-    }, [x, v, H]), {
-        openModal: l.useCallback(() => {
-            i()(null != R, "No application"), i()(null != v, "No SKU ID"), i()(x, "Cannot purchase this unpublished plan"), (0, I.w)({
-                subscriptionPlanId: y,
+    }, [y, l, H]), {
+        openModal: n.useCallback(() => {
+            s()(null != x, "No application"), s()(null != l, "No SKU ID"), s()(y, "Cannot purchase this unpublished plan"), (0, f.w)({
+                subscriptionPlanId: P,
                 sku: h,
-                subscriptionGroupPlanIds: L,
-                initialSubscribeForGuild: r,
-                disableGuildSelector: P,
-                analyticsLocations: D,
-                analyticsLocation: m
+                subscriptionGroupPlanIds: b,
+                initialSubscribeForGuild: e,
+                disableGuildSelector: N,
+                analyticsLocations: G,
+                analyticsLocation: i
             }).then(() => {
-                null == E || E()
+                C?.()
             })
-        }, [R, v, x, y, h, L, r, P, D, m, E]),
-        subscriptionPurchaseButtonState: V,
-        isGuildSubscribed: F
+        }, [x, l, y, P, h, b, e, N, G, i, C]),
+        subscriptionPurchaseButtonState: Y,
+        isGuildSubscribed: U
     }
 }

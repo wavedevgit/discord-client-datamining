@@ -1,22 +1,22 @@
-/** chunk id: 481859, original params: e,t,n (module,exports,require) **/
+/** chunk id: 481859, original params: e,t,r (module,exports,require) **/
 "use strict";
-n.d(t, {
-    A: () => s
+r.d(t, {
+    A: () => i
 });
-var r = n(627968);
-n(64700);
-var i = n(503698),
-    a = n.n(i),
-    o = n(813287);
+var n = r(627968);
+r(64700);
+var a = r(503698),
+    s = r.n(a),
+    l = r(813287);
 
-function s(e) {
+function i(e) {
     let {
         children: t,
-        tag: n,
-        className: i
+        tag: r,
+        className: a
     } = e;
-    return n = null != n ? n : "h3", (0, r.jsx)(n, {
-        className: a()(o.D, i),
+    return r = null != r ? r : "h3", (0, n.jsx)(r, {
+        className: s()(l.D, a),
         children: t
     })
 }

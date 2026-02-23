@@ -1,11 +1,11 @@
 /** chunk id: 662558, original params: e,t,a (module,exports,require) **/
 a.d(t, {
     default: () => m
-}), a(896048);
+});
 var n = a(627968),
-    i = a(64700),
-    l = a(503698),
-    s = a.n(l),
+    s = a(64700),
+    i = a(503698),
+    l = a.n(i),
     r = a(397927),
     o = a(393033),
     c = a(36149),
@@ -18,34 +18,31 @@ let m = function(e) {
     let {
         onClose: t,
         onComplete: a,
-        transitionState: l,
+        transitionState: i,
         webviewUrl: m
-    } = e, _ = (0, o.W$)(), [x, b] = i.useState(0), g = i.useCallback(() => {
+    } = e, _ = (0, o.W$)(), [x, b] = s.useState(0), g = s.useCallback(() => {
         a(), t()
-    }, [a, t]), C = i.useCallback(() => {
+    }, [a, t]), C = s.useCallback(() => {
         (0, r.kBI)(d.SW) && g()
     }, [g]);
     (0, c.dZ)(C);
-    let k = i.useCallback(e => {
-            if (_ && "" !== m) {
-                var t;
-                (null == e || null == (t = e.data) ? void 0 : t.eventType) === "Verification.Result" && g()
-            }
+    let k = s.useCallback(e => {
+            _ && "" !== m && e?.data?.eventType === "Verification.Result" && g()
         }, [m, g, _]),
-        v = i.useCallback(() => {
+        j = s.useCallback(() => {
             b(x + 1)
         }, [x]);
-    return i.useEffect(() => (window.addEventListener("message", k), () => {
+    return s.useEffect(() => (window.addEventListener("message", k), () => {
         window.removeEventListener("message", k)
     }), [k]), (0, n.jsxs)(r.EOs, {
         "data-migration-pending": !0,
-        transitionState: l,
-        className: s()(h.zr, f.rh),
+        transitionState: i,
+        className: l()(h.zr, f.rh),
         parentComponent: "AgeVerificationExpressiveModal",
         size: r.rIJ.MEDIUM,
         children: [(0, n.jsx)(r.$mQ, {
             "data-migration-pending": !0,
-            className: s()(h.Qs, h.WM),
+            className: l()(h.Qs, h.WM),
             scrollbarType: "none",
             children: (0, n.jsx)("iframe", {
                 id: "frame",
@@ -68,7 +65,7 @@ let m = function(e) {
                     variant: "secondary",
                     icon: r.fNY,
                     text: p.intl.string(u.default["0vTx7j"]),
-                    onClick: v
+                    onClick: j
                 })]
             })
         })]

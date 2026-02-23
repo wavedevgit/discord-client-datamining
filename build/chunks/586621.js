@@ -1,47 +1,47 @@
 /** chunk id: 586621, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => g
+    A: () => m
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(397927),
+var s = n(397927),
     l = n(196827),
-    s = n(580630),
+    r = n(580630),
     a = n(18743),
     o = n(233089),
-    c = n(652215),
-    d = n(985018),
+    d = n(652215),
+    c = n(985018),
     u = n(796416);
 
-function g(e) {
+function m(e) {
     let {
         children: t,
         revenue: n,
-        revenueTrend: g,
-        summaryMetricLabel: m,
-        summaryMetricValue: p,
-        summaryMetricTrend: f,
-        summaryMetricTrendIsPercent: h
+        revenueTrend: m,
+        summaryMetricLabel: g,
+        summaryMetricValue: x,
+        summaryMetricTrend: h,
+        summaryMetricTrendIsPercent: _
     } = e;
-    return (0, r.jsx)(i.nVY, {
-        label: d.intl.string(d.t.ofmOzb),
-        children: (0, r.jsxs)("div", {
+    return (0, i.jsx)(s.nVY, {
+        label: c.intl.string(c.t.ofmOzb),
+        children: (0, i.jsxs)("div", {
             className: u.E7,
-            children: [(0, r.jsxs)(o.t, {
-                children: [(0, r.jsx)(a.A, {
-                    label: d.intl.string(d.t.iY1jW3),
-                    value: (0, s.$g)(null != n ? n : 0, c.Yri.USD),
-                    additionalContent: (0, r.jsx)(l.u, {
-                        value: g,
+            children: [(0, i.jsxs)(o.t, {
+                children: [(0, i.jsx)(a.A, {
+                    label: c.intl.string(c.t.iY1jW3),
+                    value: (0, r.$g)(n ?? 0, d.Yri.USD),
+                    additionalContent: (0, i.jsx)(l.u, {
+                        value: m,
                         isPercent: !0
                     })
-                }), (0, r.jsx)(a.A, {
-                    label: m,
-                    value: p,
-                    additionalContent: (0, r.jsx)(l.u, {
-                        value: f,
-                        isPercent: h
+                }), (0, i.jsx)(a.A, {
+                    label: g,
+                    value: x,
+                    additionalContent: (0, i.jsx)(l.u, {
+                        value: h,
+                        isPercent: _
                     })
                 })]
             }), t]

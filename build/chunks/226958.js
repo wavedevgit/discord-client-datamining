@@ -1,53 +1,37 @@
-/** chunk id: 226958, original params: e,n,t (module,exports,require) **/
-t.d(n, {
+/** chunk id: 226958, original params: e,i,n (module,exports,require) **/
+n.d(i, {
     A: () => u
 });
-var i = t(627968);
-t(64700);
-var r = t(735438),
-    l = t.n(r),
-    a = t(311907),
-    c = t(397927),
-    o = t(970278),
-    d = t(406704),
-    s = t(985018);
+var t = n(627968);
+n(64700);
+var l = n(735438),
+    a = n.n(l),
+    r = n(311907),
+    d = n(397927),
+    s = n(970278),
+    c = n(406704),
+    o = n(985018);
 
 function u(e) {
-    let n = (0, d.H_)(e),
-        r = (0, a.bG)([o.A], () => !l().isEmpty(o.A.getThreadsForGuild(e.id)));
-    return n && r ? (0, i.jsx)(c.Drp, {
+    let i = (0, c.H_)(e),
+        l = (0, r.bG)([s.A], () => !a().isEmpty(s.A.getThreadsForGuild(e.id)));
+    return i && l ? (0, t.jsx)(d.Drp, {
         id: "active-threads",
-        label: s.intl.string(s.t.TM6err),
-        icon: c.oyn,
+        label: o.intl.string(o.t.TM6err),
+        icon: d.oyn,
         leadingAccessory: {
             type: "icon",
-            icon: c.oyn
+            icon: d.oyn
         },
         action: () => {
-            (0, c.mMO)(async () => {
+            (0, d.mMO)(async () => {
                 let {
-                    default: n
-                } = await t.e("70215").then(t.bind(t, 400954));
-                return t => (0, i.jsx)(n, function(e) {
-                    for (var n = 1; n < arguments.length; n++) {
-                        var t = null != arguments[n] ? arguments[n] : {},
-                            i = Object.keys(t);
-                        "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
-                            return Object.getOwnPropertyDescriptor(t, e).enumerable
-                        }))), i.forEach(function(n) {
-                            var i;
-                            i = t[n], n in e ? Object.defineProperty(e, n, {
-                                value: i,
-                                enumerable: !0,
-                                configurable: !0,
-                                writable: !0
-                            }) : e[n] = i
-                        })
-                    }
-                    return e
-                }({
-                    guildId: e.id
-                }, t))
+                    default: i
+                } = await n.e("70215").then(n.bind(n, 400954));
+                return n => (0, t.jsx)(i, {
+                    guildId: e.id,
+                    ...n
+                })
             })
         }
     }) : null

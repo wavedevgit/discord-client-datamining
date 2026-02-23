@@ -1,59 +1,57 @@
-/** chunk id: 450481, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    p: () => f
-}), n(896048);
-var r = n(64700),
-    i = n(575593),
-    a = n(631670),
-    o = n(587600),
-    s = n(207803),
-    l = n(993408),
-    c = n(442759),
-    u = n(985018);
-let d = 6e3,
-    f = e => {
-        let {
-            product: t,
-            onSuccess: f,
-            onError: p
-        } = e, [_, h] = r.useState(!1), {
-            firstAvatarDecoration: m,
-            firstProfileEffect: g,
-            firstNameplate: E
-        } = (0, c.f5)(t), y = (0, l.aw)(t) ? u.intl.string(u.t.tf1ZZ4) : t.type === i.R.AVATAR_DECORATION ? u.intl.string(u.t.zOA4ax) : t.type === i.R.NAMEPLATE ? u.intl.string(u.t.gOzMvx) : u.intl.string(u.t.SWm2ai);
-        return {
-            handleUseNow: r.useCallback(async () => {
-                h(!0);
-                let e = {};
-                try {
-                    if (null != m && (e.avatarDecoration = m), null != g) {
-                        let e = (0, o.yX)({
-                            pendingProfileEffect: g
-                        });
-                        await (0, s.gi)(e)
-                    }
-                    null != E && (e.nameplate = E), Object.keys(e).length > 0 && await (0, a.yu)(e);
-                    {
-                        let {
-                            ToastPosition: e,
-                            ToastType: t,
-                            createToast: r,
-                            popToast: i,
-                            showToast: a
-                        } = await Promise.resolve().then(n.bind(n, 397927));
-                        i(), a(r(y, t.MESSAGE, {
-                            duration: d,
-                            position: e.TOP
-                        }))
-                    }
-                    null == f || f()
-                } catch (e) {
-                    null == p || p(e)
-                } finally {
-                    h(!1)
+/** chunk id: 450481, original params: t,e,a (module,exports,require) **/
+a.d(e, {
+    p: () => d
+});
+var n = a(64700),
+    l = a(575593),
+    r = a(631670),
+    s = a(587600),
+    i = a(207803),
+    o = a(993408),
+    u = a(442759),
+    c = a(985018);
+let d = t => {
+    let {
+        product: e,
+        onSuccess: d,
+        onError: h
+    } = t, [p, v] = n.useState(!1), {
+        firstAvatarDecoration: g,
+        firstProfileEffect: A,
+        firstNameplate: C
+    } = (0, u.f5)(e), k = (0, o.aw)(e) ? c.intl.string(c.t.tf1ZZ4) : e.type === l.R.AVATAR_DECORATION ? c.intl.string(c.t.zOA4ax) : e.type === l.R.NAMEPLATE ? c.intl.string(c.t.gOzMvx) : c.intl.string(c.t.SWm2ai);
+    return {
+        handleUseNow: n.useCallback(async () => {
+            v(!0);
+            let t = {};
+            try {
+                if (null != g && (t.avatarDecoration = g), null != A) {
+                    let t = (0, s.yX)({
+                        pendingProfileEffect: A
+                    });
+                    await (0, i.gi)(t)
                 }
-            }, [m, g, E, f, y, p]),
-            isApplying: _
-        }
+                null != C && (t.nameplate = C), Object.keys(t).length > 0 && await (0, r._L)(t);
+                {
+                    let {
+                        ToastPosition: t,
+                        ToastType: e,
+                        createToast: n,
+                        popToast: l,
+                        showToast: r
+                    } = await Promise.resolve().then(a.bind(a, 397927));
+                    l(), r(n(k, e.MESSAGE, {
+                        duration: 6e3,
+                        position: t.TOP
+                    }))
+                }
+                d?.()
+            } catch (t) {
+                h?.(t)
+            } finally {
+                v(!1)
+            }
+        }, [g, A, C, d, k, h]),
+        isApplying: p
     }
+}

@@ -2,11 +2,11 @@
 n.d(t, {
     A: () => c
 });
-var l = n(627968),
-    r = n(64700),
-    i = n(607399),
+var i = n(627968),
+    l = n(64700),
+    s = n(607399),
     a = n(397927),
-    s = n(194085),
+    r = n(194085),
     o = n(985018);
 
 function c(e) {
@@ -14,24 +14,24 @@ function c(e) {
         channel: t,
         message: n,
         togglePopout: c,
-        renderEmojiPicker: u,
-        shouldShow: d
-    } = e, h = r.useRef(null);
-    return (0, l.jsx)(a.YNO, {
+        renderEmojiPicker: d,
+        shouldShow: u
+    } = e, h = l.useRef(null);
+    return (0, i.jsx)(a.YNO, {
         targetElementRef: h,
         animation: a.YNO.Animation.FADE,
         renderPopout: e => {
             let {
-                closePopout: l
+                closePopout: i
             } = e;
-            return u(t, n, l, !1)
+            return d(t, n, i, !1)
         },
-        shouldShow: d,
+        shouldShow: u,
         onRequestClose: c,
-        position: i.Fr ? "top" : "left",
-        align: i.Fr ? "center" : "top",
+        position: s.Fr ? "top" : "left",
+        align: s.Fr ? "center" : "top",
         clickTrap: !0,
-        children: () => (0, l.jsx)(s.qv, {
+        children: () => (0, i.jsx)(r.qv, {
             ref: h,
             label: o.intl.string(o.t.lfIHs4),
             icon: a.nm2,

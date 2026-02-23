@@ -1,8 +1,9 @@
 /** chunk id: 599677, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => r
+    A: () => i
 });
-let r = (0, n(600975).C)({
+let i = (0, n(600975).C)({
     kind: "user",
     id: "2021-02_staff_qc_debugging",
     label: "Display QS scores in results. Not a real experiment",

@@ -1,26 +1,26 @@
 /** chunk id: 347606, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => p
-}), n(896048);
-var r = n(627968),
-    i = n(64700),
-    l = n(503698),
-    s = n.n(l),
-    a = n(172218),
+    A: () => m
+});
+var i = n(627968),
+    s = n(64700),
+    a = n(503698),
+    r = n.n(a),
+    l = n(172218),
     o = n(775602),
     c = n(963935),
     d = n(894858),
     u = n(397274),
     _ = n(270952);
 
-function p(e) {
+function m(e) {
     let {
         node: t,
         children: n
-    } = e, l = i.useRef(!1), [p, m] = i.useState(!1), g = (0, a.K)(e => {
-        l.current = e, e && m(!1)
-    }, .5), A = i.useCallback(async e => {
-        null == g.current || null == e || e.targetKey !== t.key || null != e.targetAccordionKey || (e.animateScroll && !o.A.useReducedMotion || t.type === c.Z6.CATEGORY || m(!0), l.current && m(!1), d.A.setState({
+    } = e, a = s.useRef(!1), [m, A] = s.useState(!1), g = (0, l.K)(e => {
+        a.current = e, e && A(!1)
+    }, .5), h = s.useCallback(async e => {
+        null == g.current || null == e || e.targetKey !== t.key || null != e.targetAccordionKey || (e.animateScroll && !o.A.useReducedMotion || t.type === c.Z6.CATEGORY || A(!0), a.current && A(!1), d.A.setState({
             disableSidebarCategoryAutoSelect: !0
         }), u.A.clearInitialScrollListener(), await u.A.scrollIntoView(g.current, {
             animate: e.animateScroll,
@@ -33,23 +33,23 @@ function p(e) {
             navTransition: void 0
         }))
     }, [t.key, t.type, g]);
-    return i.useEffect(() => {
+    return s.useEffect(() => {
         let e = d.A.subscribe(e => {
             let {
                 navTransition: t
             } = e;
             return t
-        }, A, {
+        }, h, {
             equalityFn: (e, t) => e === t,
             fireImmediately: !0
         });
         return () => {
             e(), u.A.clearInitialScrollListener()
         }
-    }, [A]), (0, r.jsx)("div", {
+    }, [h]), (0, i.jsx)("div", {
         ref: g,
         "data-debug-key": t.key,
-        className: s()(_.k, p && _.j),
+        className: r()(_.k, m && _.j),
         children: n
     })
 }

@@ -2,17 +2,17 @@
 n.d(t, {
     $: () => s
 });
-var r = n(397927),
-    i = n(272613),
-    l = n(819638);
+var i = n(397927),
+    r = n(272613),
+    a = n(819638);
 let s = {
     binds: ["mod+shift+n"],
     comboKeysBindGlobal: !0,
     action() {
-        (0, r.kBI)(l.fc) ? i.A.updateCreateGuildModal({
-            slide: l.oS.JOIN_GUILD,
+        (0, i.kBI)(a.fc) ? r.A.updateCreateGuildModal({
+            slide: a.oS.JOIN_GUILD,
             location: "Keyboard Shortcut"
-        }): i.A.openCreateGuildModal({
+        }): r.A.openCreateGuildModal({
             location: "Keyboard Shortcut"
         })
     }

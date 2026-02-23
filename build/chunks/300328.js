@@ -1,6 +1,5 @@
-/** chunk id: 300328, original params: e,t,n (module,exports,require) **/
-"use strict";
-e.exports = {
+/** chunk id: 300328, original params: t,e,n (module,exports,require) **/
+t.exports = {
     Ik: "actionContainer_bc4513",
     TV: "actionIconContainer_bc4513",
     gE: "actionIcon_bc4513",

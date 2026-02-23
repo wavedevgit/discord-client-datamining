@@ -1,65 +1,65 @@
 /** chunk id: 249202, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    E: () => p
+    E: () => x
 });
-var r = n(627968),
-    i = n(64700),
+var i = n(627968),
+    s = n(64700),
     l = n(732955),
-    s = n(688810),
+    r = n(688810),
     a = n(342490),
     o = n(695800),
-    c = n(652215),
-    d = n(874864),
+    d = n(652215),
+    c = n(874864),
     u = n(339984),
-    g = n(478644),
-    m = n(985018);
+    m = n(478644),
+    g = n(985018);
 
-function p(e) {
+function x(e) {
     let {
         guild: t,
         canManageGuild: n,
-        buttonClassName: p
+        buttonClassName: x
     } = e, {
-        analyticsLocations: f
-    } = (0, s.Ay)(), h = t.features.has(c.GuildFeatures.BANNER), b = i.useCallback(e => {
+        analyticsLocations: h
+    } = (0, r.Ay)(), _ = t.features.has(d.GuildFeatures.BANNER), A = s.useCallback(e => {
         let {
             imageUri: n,
-            file: r
+            file: i
         } = e;
-        (0, o.fI)(t, f, n, r)
-    }, [f, t]), x = i.useCallback(e => {
+        (0, o.fI)(t, h, n, i)
+    }, [h, t]), p = s.useCallback(e => {
         e.preventDefault(), e.stopPropagation(), (0, o.p_)({
             guild: t,
-            analyticsLocations: f,
-            analyticsSection: c.JJy.GUILD_BANNER,
-            analyticsObject: c.ZSU.BUTTON_CTA,
-            perks: (0, d.QR)()
+            analyticsLocations: h,
+            analyticsSection: d.JJy.GUILD_BANNER,
+            analyticsObject: d.ZSU.BUTTON_CTA,
+            perks: (0, c.QR)()
         })
-    }, [f, t]), j = i.useCallback(() => {
+    }, [h, t]), f = s.useCallback(() => {
         (0, o.Nn)({
             uploadType: u.HL.GUILD_BANNER,
-            maxFileSizeBytes: g.j,
-            onComplete: b,
+            maxFileSizeBytes: m.j,
+            onComplete: A,
             analyticsLocation: {
-                page: c.liQ.GUILD_SETTINGS,
-                section: c.JJy.GUILD_BANNER
+                page: d.liQ.GUILD_SETTINGS,
+                section: d.JJy.GUILD_BANNER
             },
-            analyticsLocations: f
+            analyticsLocations: h
         })
-    }, [f, b]);
-    return h ? (0, r.jsx)("div", {
-        className: p,
-        children: (0, r.jsx)(l.$nd, {
-            disabled: !(h && n),
+    }, [h, A]);
+    return _ ? (0, i.jsx)("div", {
+        className: x,
+        children: (0, i.jsx)(l.$nd, {
+            disabled: !(_ && n),
             variant: "primary",
-            text: m.intl.string(m.t.yG2pUi),
-            onClick: j
+            text: g.intl.string(g.t.yG2pUi),
+            onClick: f
         })
-    }) : (0, r.jsx)("div", {
-        className: p,
-        children: (0, r.jsx)(a.u, {
-            onClick: x
+    }) : (0, i.jsx)("div", {
+        className: x,
+        children: (0, i.jsx)(a.u, {
+            onClick: p
         })
     })
 }

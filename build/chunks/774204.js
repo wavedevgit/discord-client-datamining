@@ -1,39 +1,39 @@
 /** chunk id: 774204, original params: t,e,i (module,exports,require) **/
 i.d(e, {
     q: () => I
-}), i(896048);
+});
 var n = i(627968),
     l = i(64700),
     s = i(311907),
     r = i(212245),
-    u = i(419954),
-    a = i(329551),
+    a = i(419954),
+    u = i(329551),
     o = i(987384),
     d = i(413339),
-    T = i(952572),
-    A = i(520999),
+    A = i(952572),
+    T = i(520999),
     S = i(430452),
-    c = i(287809),
-    E = i(780964),
-    g = i(652215),
-    _ = i(985018);
-let I = (0, u.E2)(E.X.CAMERA_BACKGROUND_SETTING, {
-    useSearchTerms: () => [_.intl.string(_.t.lZTUPs)],
-    usePredicate: T.A,
+    E = i(287809),
+    g = i(780964),
+    _ = i(652215),
+    c = i(985018);
+let I = (0, a.E2)(g.X.CAMERA_BACKGROUND_SETTING, {
+    useSearchTerms: () => [c.intl.string(c.t.lZTUPs)],
+    usePredicate: A.A,
     Component: function() {
         let t = (0, r.p)(),
             e = l.useRef(!1),
-            i = (0, s.bG)([S.A], () => S.A.getVideoDeviceId()),
-            [u, T] = l.useState((0, a.i)(c.default.getCurrentUser())),
-            E = l.useRef(u);
+            i = (0, s.bG)([S.Ay], () => S.Ay.getVideoDeviceId()),
+            [a, A] = l.useState((0, u.i)(E.default.getCurrentUser())),
+            g = l.useRef(a);
         return l.useEffect(() => () => {
-            e.current && (0, o._C)(E.current)
-        }, []), (0, n.jsx)(A.A, {
-            selectedBackgroundOption: u,
+            e.current && (0, o._C)(g.current)
+        }, []), (0, n.jsx)(T.A, {
+            selectedBackgroundOption: a,
             onSelectBackgroundOption: i => {
-                e.current = !0, E.current = i, T(i), (0, d.gB)(i, {
+                e.current = !0, g.current = i, A(i), (0, d.gB)(i, {
                     location: t.location
-                }).catch(g.tEg)
+                }).catch(_.tEg)
             },
             currentDeviceId: i
         })

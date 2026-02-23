@@ -1,22 +1,22 @@
 /** chunk id: 493108, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    D: () => o
+    D: () => r
 });
-var r = n(257537),
-    i = n(825913),
-    a = n(64700);
-let o = (0, a.forwardRef)(function(e, t) {
-    [e, t] = (0, i.JT)(e, t, r.A3);
+var i = n(257537),
+    s = n(825913),
+    l = n(64700);
+let r = (0, l.forwardRef)(function(e, t) {
+    [e, t] = (0, s.JT)(e, t, i.A3);
     let {
         children: n,
-        level: o = 3,
-        className: s,
-        ...l
-    } = e, c = `h${o}`;
-    return a.createElement(c, {
-        ...l,
+        level: r = 3,
+        className: a,
+        ...o
+    } = e, d = `h${r}`;
+    return l.createElement(d, {
+        ...o,
         ref: t,
-        className: null != s ? s : "react-aria-Heading"
+        className: null != a ? a : "react-aria-Heading"
     }, n)
 })

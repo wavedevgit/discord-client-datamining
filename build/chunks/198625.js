@@ -1,111 +1,109 @@
-/** chunk id: 198625, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => f
-}), n(228524), n(896048);
-var r = n(627968),
-    l = n(64700),
-    i = n(503698),
-    a = n.n(i),
-    s = n(791332),
-    o = n.n(s),
-    c = n(397927),
-    d = n(558179),
-    u = n(151890),
-    p = n(985018),
-    h = n(191817);
-let m = o().parserFor(u.A),
-    g = o().reactFor(o().ruleOutput(u.A, "react"));
+/** chunk id: 198625, original params: e,t,a (module,exports,require) **/
+a.d(t, {
+    A: () => A
+});
+var n = a(627968),
+    i = a(64700),
+    s = a(503698),
+    l = a.n(s),
+    r = a(791332),
+    o = a.n(r),
+    c = a(397927),
+    d = a(558179),
+    u = a(151890),
+    h = a(985018),
+    m = a(191817);
+let p = o().parserFor(u.A),
+    _ = o().reactFor(o().ruleOutput(u.A, "react"));
 
-function _(e) {
+function g(e) {
     let {
         description: t,
-        supportsMarkdown: n
-    } = e, [i, s] = l.useState(!1), o = l.useRef(null);
-    l.useEffect(() => {
+        supportsMarkdown: a
+    } = e, [s, r] = i.useState(!1), o = i.useRef(null);
+    i.useEffect(() => {
         if (null == o.current) return;
         let e = new ResizeObserver(() => {
-            var e, t, n, r;
-            s((null != (e = null == (n = o.current) ? void 0 : n.scrollHeight) ? e : 0) - (null != (t = null == (r = o.current) ? void 0 : r.clientHeight) ? t : 0) > 1)
+            r((o.current?.scrollHeight ?? 0) - (o.current?.clientHeight ?? 0) > 1)
         });
         return e.observe(o.current), () => e.disconnect()
     }, []);
-    let [u, p] = l.useState(!1), _ = l.useCallback(() => {
-        p(e => !e)
+    let [u, h] = i.useState(!1), g = i.useCallback(() => {
+        h(e => !e)
     }, []);
-    return (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)("div", {
+    return (0, n.jsxs)(n.Fragment, {
+        children: [(0, n.jsx)("div", {
             ref: o,
-            className: a()({
-                [h.mA]: !u,
-                [h.ii]: !u && "Safari" === platform.name
+            className: l()({
+                [m.mA]: !u,
+                [m.ii]: !u && "Safari" === platform.name
             }),
-            children: n ? (0, r.jsx)(d.A, {
-                className: h.R4,
-                parser: m,
-                output: g,
+            children: a ? (0, n.jsx)(d.A, {
+                className: m.R4,
+                parser: p,
+                output: _,
                 state: {
                     allowLinks: !0
                 },
                 children: t
-            }) : (0, r.jsx)(c.Text, {
+            }) : (0, n.jsx)(c.Text, {
                 variant: "text-md/normal",
                 color: "text-default",
                 children: t
             })
-        }), i || u ? (0, r.jsx)(b, {
+        }), s || u ? (0, n.jsx)(x, {
             isShowingMore: u,
-            onToggle: _
+            onToggle: g
         }) : null]
     })
 }
 
-function b(e) {
+function x(e) {
     let {
         onToggle: t,
-        isShowingMore: n
-    } = e, i = l.useMemo(() => (0, r.jsxs)("div", {
-        className: h.eR,
-        children: [(0, r.jsx)(c.Text, {
+        isShowingMore: a
+    } = e, s = i.useMemo(() => (0, n.jsxs)("div", {
+        className: m.eR,
+        children: [(0, n.jsx)(c.Text, {
             variant: "text-md/semibold",
             color: "interactive-text-default",
-            children: n ? p.intl.string(p.t["vtfc4+"]) : p.intl.string(p.t.ZDRyuq)
-        }), n ? (0, r.jsx)(c.tN5, {
+            children: a ? h.intl.string(h.t["vtfc4+"]) : h.intl.string(h.t.ZDRyuq)
+        }), a ? (0, n.jsx)(c.tN5, {
             size: "md",
             color: "currentColor",
-            className: h.ys
-        }) : (0, r.jsx)(c.abt, {
+            className: m.ys
+        }) : (0, n.jsx)(c.abt, {
             size: "md",
             color: "currentColor",
-            className: h.ys
+            className: m.ys
         })]
-    }), [n]);
-    return (0, r.jsxs)(c.DUT, {
-        className: h.dO,
+    }), [a]);
+    return (0, n.jsxs)(c.DUT, {
+        className: m.dO,
         onClick: t,
-        children: [(0, r.jsx)("div", {
-            className: h.yF
-        }), i, (0, r.jsx)("div", {
-            className: h.yF
+        children: [(0, n.jsx)("div", {
+            className: m.yF
+        }), s, (0, n.jsx)("div", {
+            className: m.yF
         })]
     })
 }
-let f = function(e) {
-    var t, n;
+let A = function(e) {
     let {
-        application: i
-    } = e, a = null == (t = i.directory_entry) ? void 0 : t.detailed_description, s = null == (n = i.directory_entry) ? void 0 : n.short_description, o = l.useMemo(() => null != a && a.length > 0 ? (0, r.jsx)(_, {
+        application: t
+    } = e, a = t.directory_entry?.detailed_description, s = t.directory_entry?.short_description, l = i.useMemo(() => null != a && a.length > 0 ? (0, n.jsx)(g, {
         description: a,
         supportsMarkdown: !0
-    }) : null != s && s.length > 0 ? (0, r.jsx)(_, {
+    }) : null != s && s.length > 0 ? (0, n.jsx)(g, {
         description: s,
         supportsMarkdown: !1
     }) : null, [a, s]);
-    return null == o ? null : (0, r.jsxs)("div", {
-        className: h.l4,
-        children: [(0, r.jsx)(c.Heading, {
+    return null == l ? null : (0, n.jsxs)("div", {
+        className: m.l4,
+        children: [(0, n.jsx)(c.Heading, {
             variant: "heading-lg/semibold",
             color: "text-strong",
-            children: p.intl.string(p.t.txraKS)
-        }), o]
+            children: h.intl.string(h.t.txraKS)
+        }), l]
     })
 }

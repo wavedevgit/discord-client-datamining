@@ -1,264 +1,257 @@
 /** chunk id: 424913, original params: e,t,r (module,exports,require) **/
 r.d(t, {
-    A: () => b
-}), r(321073), r(896048), r(733351);
-var n = r(627968),
-    l = r(64700),
-    s = r(397927),
-    a = r(309010),
-    i = r(203982),
-    o = r(822382),
-    c = r(771650),
-    u = r(753806),
-    d = r(272444),
-    h = r(806595),
-    f = r(949759),
-    p = r(65600),
-    g = r(145331),
-    S = r(835121),
-    E = r(443486),
-    _ = r(768570),
-    A = r(652215),
-    y = r(985018),
-    m = r(935606);
+    A: () => L
+}), r(321073);
+var s = r(627968),
+    n = r(64700),
+    l = r(311907),
+    a = r(397927),
+    i = r(309010),
+    o = r(351906),
+    u = r(203982),
+    c = r(822382),
+    d = r(771650),
+    h = r(753806),
+    _ = r(272444),
+    E = r(806595),
+    S = r(949759),
+    f = r(842716),
+    g = r(65600),
+    A = r(145331),
+    p = r(835121),
+    R = r(443486),
+    m = r(768570),
+    y = r(652215),
+    T = r(985018),
+    I = r(935606);
+let x = [];
 
-function b(e) {
+function L(e) {
     let {
         resultsState: t,
         searchContext: r,
-        selectedChannel: b,
-        setSearchQuery: R
+        selectedChannel: L,
+        setSearchQuery: b
     } = e, {
-        autocompletes: v,
-        mode: O
-    } = t, T = (0, S.A)({
-        autocompletes: v,
-        mode: O
-    }), x = (0, E.A)({
-        setSearchQuery: R,
+        autocompletes: N,
+        mode: C
+    } = t, v = (0, p.A)({
+        autocompletes: N,
+        mode: C
+    }), F = (0, R.A)({
+        setSearchQuery: b,
         searchContext: r,
-        mode: O
-    }), I = e => {
+        mode: C
+    }), O = (0, l.yK)([o.A, i.A, f.A], () => {
+        if (o.A.hidePersonalInformation) return x;
+        let e = (0, c.Jl)(r, i.A);
+        if (null == e) return x;
+        let t = f.A.getHistory(e);
+        if (null == t) return x;
+        let s = new Set,
+            n = [];
+        return t.forEach(e => {
+            let t = r.type === y.I4_.CHANNEL ? (0, c.EH)(e) : e;
+            "" === t || s.has(t) || (s.add(t), n.push(t))
+        }), n
+    }), j = e => {
         let {
             searchEverywhere: t
         } = e;
-        i._.dispatch(A.jej.PERFORM_SEARCH, {
+        u._.dispatch(y.jej.PERFORM_SEARCH, {
             searchEverywhere: t,
-            searchQuerySource: _.Q_.SEARCH_POPOUT
+            searchQuerySource: m.Q_.SEARCH_POPOUT
         })
-    }, L = e => {
-        var t;
+    }, k = e => {
         let {
-            autocompleteCount: n,
-            selectedIndex: l,
-            searchAutocompleteSelectAction: s,
-            selectedAutocomplete: i,
-            selectedAutocompleteGroup: d
-        } = e, h = O.type, f = O.filter, {
-            token: S,
+            autocompleteCount: t,
+            selectedIndex: s,
+            searchAutocompleteSelectAction: n,
+            selectedAutocomplete: l,
+            selectedAutocompleteGroup: a
+        } = e, o = C.type, u = C.filter, {
+            token: _,
             group: E
-        } = i, _ = null != E && (0, c.If)(E) ? E : null, y = null != (t = null != S ? S : f) ? t : _, m = i.channel, b = y === A.LWr.FILTER_IN && null != m && m.id === a.A.getChannelId(), R = (0, o.bS)(r);
-        (0, g.kc)({
+        } = l, S = null != E && (0, d.If)(E) ? E : null, f = _ ?? u ?? S, p = l.channel, R = f === y.LWr.FILTER_IN && null != p && p.id === i.A.getChannelId(), m = (0, c.bS)(r);
+        (0, A.kc)({
             searchContext: r,
-            searchQuery: p.A.getSearchResultsQuery(R),
-            searchQueryString: u.A.getSearchInputText(r),
-            searchTokenType: y,
-            searchAutocompleteGroup: d,
-            searchAutocompleteMode: O,
-            searchAutocompleteResultIndex: l,
-            searchAutocompleteTotalResults: n,
-            isSearchFilterPrefix: h === A.o$q.EMPTY,
-            isSearchFilterAnswer: h === A.o$q.FILTER,
-            isSearchFilterComplete: h === A.o$q.FILTER_ALL,
-            isInFilterForSelectedChannel: b,
-            searchAutocompleteSelectAction: s
+            searchQuery: g.A.getSearchResultsQuery(m),
+            searchQueryString: h.A.getSearchInputText(r),
+            searchTokenType: f,
+            searchAutocompleteGroup: a,
+            searchAutocompleteMode: C,
+            searchAutocompleteResultIndex: s,
+            searchAutocompleteTotalResults: t,
+            isSearchFilterPrefix: o === y.o$q.EMPTY,
+            isSearchFilterAnswer: o === y.o$q.FILTER,
+            isSearchFilterComplete: o === y.o$q.FILTER_ALL,
+            isInFilterForSelectedChannel: R,
+            searchAutocompleteSelectAction: n
         })
-    }, j = l.useCallback(e => {
+    }, W = n.useCallback(e => {
         let {
             hasOtherSearchFiltersVisible: t
-        } = e, l = t ? y.intl.string(y.t.diOL4i) : y.intl.string(y.t["M1tf+7"]);
-        return (0, f.wE)(h.$.ROW, {
-            icon: (0, n.jsx)(s.RgP, {
+        } = e, n = t ? T.intl.string(T.t.diOL4i) : T.intl.string(T.t["M1tf+7"]);
+        return (0, S.wE)(E.$.ROW, {
+            icon: (0, s.jsx)(a.RgP, {
                 size: "custom",
                 color: "currentColor",
                 width: 20,
                 height: 20,
-                className: m.Fx
+                className: I.Fx
             }),
-            label: (0, n.jsx)(d.bg, {
-                label: l
+            label: (0, s.jsx)(_.bg, {
+                label: n
             }),
-            sublabel: t ? (0, n.jsx)(s.Text, {
+            sublabel: t ? (0, s.jsx)(a.Text, {
                 variant: "text-sm/medium",
                 color: "text-muted",
-                children: y.intl.string(y.t["1axf1T"])
+                children: T.intl.string(T.t["1axf1T"])
             }) : void 0,
-            onSelect: () => u.A.openSearchFiltersModal(r)
+            onSelect: () => h.A.openSearchFiltersModal(r)
         })
     }, [r]), {
-        items: N
+        items: M
     } = (0, ({
-        [A.o$q.EMPTY]: () => {
+        [y.o$q.EMPTY]: () => {
             let e = [];
-            if (null != b && (0, o.Wg)(r) && r.type === A.I4_.DMS) {
-                let t = (0, d.lF)(b),
-                    l = (0, f.wE)(h.$.ROW, {
-                        icon: (0, n.jsx)(s.$p$, {
+            if (null != L && (0, c.Wg)(r) && r.type === y.I4_.DMS) {
+                let t = (0, _.lF)(L),
+                    n = (0, S.wE)(E.$.ROW, {
+                        icon: (0, s.jsx)(a.$p$, {
                             size: "sm",
                             color: "currentColor",
-                            className: m.Fx
+                            className: I.Fx
                         }),
-                        label: (0, n.jsx)(d.bg, {
-                            label: y.intl.format(y.t["VGEH/0"], {
+                        label: (0, s.jsx)(_.bg, {
+                            label: T.intl.format(T.t["VGEH/0"], {
                                 channelName: t
                             }),
-                            className: m.YL
+                            className: I.YL
                         }),
                         onSelect: e => {
                             let {
                                 searchAutocompleteSelectAction: t
                             } = e;
                             return (e => {
-                                var t;
                                 let {
-                                    selectedChannel: n,
-                                    searchAutocompleteSelectAction: l
+                                    selectedChannel: t,
+                                    searchAutocompleteSelectAction: s
                                 } = e;
-                                (0, g.rE)({
+                                (0, A.rE)({
                                     searchContext: r,
-                                    searchAutocompleteSelectAction: l
+                                    searchAutocompleteSelectAction: s
                                 });
-                                let s = A.LWr.FILTER_IN,
-                                    a = c.Ay[s],
-                                    i = (0, o.Rt)(n);
-                                R({
-                                    query: "".concat(null != (t = null == a ? void 0 : a.key) ? t : s.toString(), " ").concat(i),
+                                let n = y.LWr.FILTER_IN,
+                                    l = d.Ay[n],
+                                    a = (0, c.Rt)(t);
+                                b({
+                                    query: `${l?.key??n.toString()} ${a}`,
                                     performSearch: !0,
                                     replace: !1
                                 })
                             })({
-                                selectedChannel: b,
+                                selectedChannel: L,
                                 searchAutocompleteSelectAction: t
                             })
                         }
                     });
-                e.push(l)
+                e.push(n)
             }
-            let t = [...x, j({
+            let t = [...F, W({
                 hasOtherSearchFiltersVisible: !0
             })];
-            e.push((0, f.wE)(h.$.GROUP, {
-                rows: t,
-                title: y.intl.string(y.t.UdhTtk)
-            }));
-            let l = e.length + x.length,
-                {
-                    autocompleteCount: a,
-                    autocompleteGroups: i
-                } = T({
-                    filterFn: e => e.group === A.x2k.HISTORY && e.results.length > 0,
-                    getAutocompleteRowItem: e => {
+            if (e.push((0, S.wE)(E.$.GROUP, {
+                    rows: t,
+                    title: T.intl.string(T.t.UdhTtk)
+                })), O.length > 0) {
+                let t = O.map((e, t) => {
                         let {
-                            result: t,
-                            modeType: n,
-                            group: i
-                        } = e, o = (0, f.pu)({
-                            modeType: n,
-                            result: t,
-                            group: i
-                        }), c = (0, d.ge)({
-                            result: t,
-                            group: i
-                        }), {
-                            label: u,
-                            ariaLabel: p
-                        } = (0, d.AX)({
-                            value: t.text,
-                            avatarSize: s._3J.SIZE_16,
+                            label: n,
+                            ariaLabel: l
+                        } = (0, _.AX)({
+                            value: e,
+                            avatarSize: a._3J.SIZE_16,
                             iconSize: "xs"
                         });
-                        return (0, f.wE)(h.$.ROW, {
-                            icon: c,
-                            label: u,
-                            ariaLabel: y.intl.formatToPlainString(y.t.WoiGrV, {
-                                suggestion: p
+                        return (0, S.wE)(E.$.ROW, {
+                            icon: (0, s.jsx)(a.$p$, {
+                                size: "sm",
+                                color: "currentColor",
+                                className: I.Fx
                             }),
-                            resultText: o,
-                            onSelect: e => {
-                                let {
-                                    selectedIndex: t
-                                } = e;
-                                (0, g.oR)({
+                            label: n,
+                            ariaLabel: T.intl.formatToPlainString(T.t.WoiGrV, {
+                                suggestion: l
+                            }),
+                            resultText: e,
+                            onSelect: () => {
+                                (0, A.oR)({
                                     searchContext: r,
-                                    searchHistoryIndex: t - l,
-                                    searchHistoryTotalResults: a
-                                }), R({
-                                    query: o,
+                                    searchHistoryIndex: t,
+                                    searchHistoryTotalResults: O.length
+                                }), b({
+                                    query: e,
                                     performSearch: !0,
                                     replace: !1
                                 })
                             }
                         })
-                    },
-                    getAutocompleteGroupItem: e => {
-                        let {
-                            group: t,
-                            rows: l
-                        } = e, s = (0, f.JU)(t), a = t === A.x2k.HISTORY ? (0, n.jsx)(d.k8, {
+                    }),
+                    n = (0, S.wE)(E.$.GROUP, {
+                        rows: t,
+                        trailingIcon: (0, s.jsx)(_.k8, {
                             searchContext: r
-                        }) : null;
-                        return (0, f.wE)(h.$.GROUP, {
-                            rows: l,
-                            title: s,
-                            trailingIcon: a
-                        })
-                    }
-                });
-            return a > 0 && e.push(...i), {
+                        }),
+                        title: (0, S.JU)(y.x2k.HISTORY)
+                    });
+                e.push(n)
+            }
+            return {
                 items: e
             }
         },
-        [A.o$q.FILTER_ALL]: () => {
+        [y.o$q.FILTER_ALL]: () => {
             let e = [];
             if ("" !== t.query.trim()) {
                 let {
-                    label: l
-                } = (0, d.AX)({
+                    label: n
+                } = (0, _.AX)({
                     value: t.query,
-                    avatarSize: s._3J.SIZE_16,
+                    avatarSize: a._3J.SIZE_16,
                     iconSize: "xs"
-                }), a = (0, f.wE)(h.$.ROW, {
-                    icon: (0, n.jsx)(s.$p$, {
+                }), l = (0, S.wE)(E.$.ROW, {
+                    icon: (0, s.jsx)(a.$p$, {
                         size: "sm",
                         color: "currentColor",
-                        className: m.Fx
+                        className: I.Fx
                     }),
-                    label: r.type === A.I4_.FAVORITES && (0, o.Eq)() ? (0, n.jsx)(d.bg, {
-                        label: y.intl.string(y.t["6RVtLA"])
-                    }) : (0, n.jsx)(d.bg, {
-                        label: y.intl.format(y.t.rCnaoo, {
-                            value: l
+                    label: r.type === y.I4_.FAVORITES && (0, c.Eq)() ? (0, s.jsx)(_.bg, {
+                        label: T.intl.string(T.t["6RVtLA"])
+                    }) : (0, s.jsx)(_.bg, {
+                        label: T.intl.format(T.t.rCnaoo, {
+                            value: n
                         }),
-                        className: m.YL
+                        className: I.YL
                     }),
-                    ariaLabel: y.intl.formatToPlainString(y.t.rCnaoo, {
+                    ariaLabel: T.intl.formatToPlainString(T.t.rCnaoo, {
                         value: t.query
                     }),
-                    onSelect: () => I({
+                    onSelect: () => j({
                         searchEverywhere: !1
                     })
                 });
-                if (e.push(a), r.type === A.I4_.FAVORITES && (0, o.Eq)()) {
-                    let t = (0, f.wE)(h.$.ROW, {
-                        icon: (0, n.jsx)(s.$p$, {
+                if (e.push(l), r.type === y.I4_.FAVORITES && (0, c.Eq)()) {
+                    let t = (0, S.wE)(E.$.ROW, {
+                        icon: (0, s.jsx)(a.$p$, {
                             size: "sm",
                             color: "currentColor",
-                            className: m.Fx
+                            className: I.Fx
                         }),
-                        label: (0, n.jsx)(d.bg, {
-                            label: y.intl.string(y.t.FtSUxc)
+                        label: (0, s.jsx)(_.bg, {
+                            label: T.intl.string(T.t.FtSUxc)
                         }),
-                        onSelect: () => I({
+                        onSelect: () => j({
                             searchEverywhere: !0
                         })
                     });
@@ -266,49 +259,48 @@ function b(e) {
                 }
             }
             let {
-                autocompleteCount: l,
-                autocompleteGroups: a
-            } = T({
-                filterFn: e => e.group !== A.x2k.DATES && e.group !== A.x2k.SEARCH_OPTIONS && e.group !== A.LWr.FILTER_HAS && e.results.length > 0,
+                autocompleteCount: n,
+                autocompleteGroups: l
+            } = v({
+                filterFn: e => e.group !== y.x2k.DATES && e.group !== y.x2k.SEARCH_OPTIONS && e.group !== y.LWr.FILTER_HAS && e.results.length > 0,
                 getAutocompleteRowItem: e => {
-                    var t;
                     let {
-                        result: r,
-                        modeType: s,
-                        group: a
-                    } = e, i = (0, f.pu)({
-                        modeType: s,
-                        result: r,
-                        group: a
-                    }), o = (0, d.ge)({
-                        result: r,
-                        group: a
+                        result: t,
+                        modeType: r,
+                        group: l
+                    } = e, a = (0, S.pu)({
+                        modeType: r,
+                        result: t,
+                        group: l
+                    }), i = (0, _.ge)({
+                        result: t,
+                        group: l
                     }), {
-                        label: c,
+                        label: o,
                         ariaLabel: u
-                    } = (0, d.c$)(r), p = a === A.LWr.FILTER_FROM || a === A.LWr.FILTER_MENTIONS ? (0, n.jsx)(d.bj, {
-                        searchTokenType: a,
-                        answer: null == (t = r.user) ? void 0 : t.username
+                    } = (0, _.c$)(t), c = l === y.LWr.FILTER_FROM || l === y.LWr.FILTER_MENTIONS ? (0, s.jsx)(_.bj, {
+                        searchTokenType: l,
+                        answer: t.user?.username
                     }) : void 0;
-                    return (0, f.wE)(h.$.ROW, {
-                        icon: o,
-                        label: c,
-                        sublabel: p,
+                    return (0, S.wE)(E.$.ROW, {
+                        icon: i,
+                        label: o,
+                        sublabel: c,
                         ariaLabel: u,
-                        resultText: i,
+                        resultText: a,
                         onSelect: e => {
                             let {
-                                selectedIndex: t,
-                                searchAutocompleteSelectAction: n
+                                selectedIndex: r,
+                                searchAutocompleteSelectAction: s
                             } = e;
-                            L({
-                                selectedIndex: t,
-                                searchAutocompleteSelectAction: n,
-                                selectedAutocomplete: r,
-                                selectedAutocompleteGroup: a,
-                                autocompleteCount: l
-                            }), R({
-                                query: i,
+                            k({
+                                selectedIndex: r,
+                                searchAutocompleteSelectAction: s,
+                                selectedAutocomplete: t,
+                                selectedAutocompleteGroup: l,
+                                autocompleteCount: n
+                            }), b({
+                                query: a,
                                 performSearch: !1,
                                 replace: !1
                             })
@@ -319,71 +311,71 @@ function b(e) {
                     let {
                         group: t,
                         rows: r
-                    } = e, n = (0, f.JU)(t);
-                    return (0, f.wE)(h.$.GROUP, {
+                    } = e, s = (0, S.JU)(t);
+                    return (0, S.wE)(E.$.GROUP, {
                         rows: r,
-                        title: n
+                        title: s
                     })
                 }
             });
-            if (0 === l) {
-                let t = [...x, j({
+            if (0 === n) {
+                let t = [...F, W({
                     hasOtherSearchFiltersVisible: !0
                 })];
-                e.push((0, f.wE)(h.$.GROUP, {
+                e.push((0, S.wE)(E.$.GROUP, {
                     rows: t,
-                    title: y.intl.string(y.t.UdhTtk)
+                    title: T.intl.string(T.t.UdhTtk)
                 }))
             } else {
-                let t = j({
+                let t = W({
                     hasOtherSearchFiltersVisible: !1
                 });
                 e.push(t)
             }
-            return l > 0 && e.push(...a), {
+            return n > 0 && e.push(...l), {
                 items: e
             }
         },
-        [A.o$q.FILTER]: () => {
+        [y.o$q.FILTER]: () => {
             let {
                 autocompleteCount: e,
                 autocompleteGroups: t
-            } = T({
+            } = v({
                 filterFn: e => e.results.length > 0,
                 getAutocompleteRowItem: t => {
                     let {
                         result: r,
-                        modeType: n,
-                        group: l
-                    } = t, s = (0, f.pu)({
-                        modeType: n,
+                        modeType: s,
+                        group: n
+                    } = t, l = (0, S.pu)({
+                        modeType: s,
                         result: r,
-                        group: l
-                    }), a = (0, d._h)({
+                        group: n
+                    }), a = (0, _._h)({
                         result: r,
-                        group: l
+                        group: n
                     }), {
                         label: i,
                         ariaLabel: o
-                    } = (0, d.JK)(r);
-                    return (0, f.wE)(h.$.ROW, {
+                    } = (0, _.JK)(r);
+                    return (0, S.wE)(E.$.ROW, {
                         icon: a,
                         label: i,
                         ariaLabel: o,
-                        resultText: s,
+                        resultText: l,
                         onSelect: t => {
                             let {
-                                selectedIndex: n,
+                                selectedIndex: s,
                                 searchAutocompleteSelectAction: a
                             } = t;
-                            L({
-                                selectedIndex: n,
+                            k({
+                                selectedIndex: s,
                                 searchAutocompleteSelectAction: a,
                                 selectedAutocomplete: r,
-                                selectedAutocompleteGroup: l,
+                                selectedAutocompleteGroup: n,
                                 autocompleteCount: e
-                            }), R({
-                                query: s,
+                            }), b({
+                                query: l,
                                 performSearch: !0,
                                 replace: !1
                             })
@@ -394,10 +386,10 @@ function b(e) {
                     let {
                         group: t,
                         rows: r
-                    } = e, n = (0, f.JU)(t);
-                    return (0, f.wE)(h.$.GROUP, {
+                    } = e, s = (0, S.JU)(t);
+                    return (0, S.wE)(E.$.GROUP, {
                         rows: r,
-                        title: n
+                        title: s
                     })
                 }
             });
@@ -405,20 +397,20 @@ function b(e) {
                 items: [...t]
             }
         }
-    })[O.type])(), C = l.useMemo(() => {
+    })[C.type])(), w = n.useMemo(() => {
         let e = [];
-        return N.forEach(t => {
+        return M.forEach(t => {
             switch (t.type) {
-                case h.$.ROW:
+                case E.$.ROW:
                     e.push(t);
                     break;
-                case h.$.GROUP:
+                case E.$.GROUP:
                     t.data.rows.forEach(t => e.push(t))
             }
         }), e
-    }, [N]);
+    }, [M]);
     return {
-        items: N,
-        itemsData: C
+        items: M,
+        itemsData: w
     }
 }

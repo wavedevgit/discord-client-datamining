@@ -1,28 +1,27 @@
-/** chunk id: 304973, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    A: () => s
+/** chunk id: 304973, original params: e,t,r (module,exports,require) **/
+r.d(t, {
+    A: () => n
 });
-var r = n(627968),
-    i = n(397927),
-    a = n(653793),
-    o = n(494213);
-let s = e => {
+var l = r(627968),
+    d = r(397927),
+    c = r(653793),
+    a = r(494213);
+let n = e => {
     let {
         backgroundImage: t,
-        href: n,
-        ctaText: s
+        href: r,
+        ctaText: n
     } = e;
-    return (0, r.jsx)(a.A, {
-        children: (0, r.jsx)("div", {
-            className: o.j,
+    return (0, l.jsx)(c.A, {
+        children: (0, l.jsx)("div", {
+            className: a.j,
             style: {
-                backgroundImage: "url(".concat(t, ")")
+                backgroundImage: `url(${t})`
             },
-            children: (0, r.jsx)(i.Text, {
+            children: (0, l.jsx)(d.Text, {
                 variant: "text-lg/bold",
                 color: "always-white",
-                children: s
+                children: n
             })
         })
     })

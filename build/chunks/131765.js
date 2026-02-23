@@ -1,25 +1,25 @@
 /** chunk id: 131765, original params: e,n,t (module,exports,require) **/
 t.d(n, {
-    D: () => l,
-    O: () => c
+    D: () => r,
+    O: () => a
 });
-var r = t(627968);
+var l = t(627968);
 
-function l(e) {
+function r(e) {
     let {
         level: n,
         children: t
-    } = e;
-    return (0, r.jsx)("h".concat(n), {
+    } = e, r = `h${n}`;
+    return (0, l.jsx)(r, {
         children: t
     })
 }
 
-function c(e) {
+function a(e) {
     let {
         children: n
     } = e;
-    return (0, r.jsx)("small", {
+    return (0, l.jsx)("small", {
         children: n
     })
 }

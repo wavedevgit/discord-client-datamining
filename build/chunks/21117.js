@@ -1,16 +1,16 @@
 /** chunk id: 21117, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    b: () => T
+    b: () => A
 });
 var n = i(64700),
     l = i(311907),
     s = i(955572),
     r = i(406360),
-    u = i(419954),
-    a = i(964404),
+    a = i(419954),
+    u = i(964404),
     o = i(780964),
     d = i(985018);
-let T = (0, u.Qx)(o.X.HIGH_DYNAMIC_RANGE, {
+let A = (0, a.Qx)(o.X.HIGH_DYNAMIC_RANGE, {
     useTitle: () => d.intl.string(d.t.nemtgW),
     useSubtitle: () => d.intl.string(d.t["O/Gjvn"]),
     useBadge: () => "beta",
@@ -32,7 +32,7 @@ let T = (0, u.Qx)(o.X.HIGH_DYNAMIC_RANGE, {
         (0, s.FU)(t)
     },
     useValue: function() {
-        return (0, l.bG)([a.Ay], () => a.Ay.hdrDynamicRange)
+        return (0, l.bG)([u.Ay], () => u.Ay.hdrDynamicRange)
     },
     useSearchTerms: () => ["HDR", d.intl.string(d.t["O/Gjvn"])]
 })

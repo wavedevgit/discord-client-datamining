@@ -1,57 +1,57 @@
-/** chunk id: 738759, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => p
+/** chunk id: 738759, original params: e,n,t (module,exports,require) **/
+t.d(n, {
+    A: () => A
 });
-var l = n(627968);
-n(64700);
-var i = n(397927),
-    r = n(398590),
-    s = n(345942),
-    o = n(183555),
-    a = n(913453),
-    d = n(51943),
-    c = n(985018),
-    u = n(781425);
+var i = t(627968);
+t(64700);
+var s = t(397927),
+    l = t(398590),
+    a = t(345942),
+    r = t(183555),
+    d = t(913453),
+    c = t(51943),
+    o = t(985018),
+    u = t(781425);
 
-function p(e) {
+function A(e) {
     let {
-        user: t,
-        onClose: n
+        user: n,
+        onClose: t
     } = e, {
-        trackUserProfileAction: p
-    } = (0, o.NJ)(), {
-        mutualGuilds: f,
+        trackUserProfileAction: A
+    } = (0, r.NJ)(), {
+        mutualGuilds: x,
         isFetching: m
-    } = (0, a.A)(t);
-    return (0, l.jsx)(i.IpV, {
+    } = (0, d.A)(n);
+    return (0, i.jsx)(s.IpV, {
         className: u.DK,
         fade: !0,
-        children: null == f && m ? (0, l.jsx)("div", {
+        children: null == x && m ? (0, i.jsx)("div", {
             className: u.Ie,
-            children: (0, l.jsx)(i.y$y, {})
-        }) : (null != f || m) && (null == f ? void 0 : f.length) !== 0 ? null == f ? void 0 : f.map(e => {
+            children: (0, i.jsx)(s.y$y, {})
+        }) : (null != x || m) && x?.length !== 0 ? x?.map(e => {
             let {
-                guild: i,
-                nick: o
+                guild: s,
+                nick: r
             } = e;
-            return (0, l.jsx)(d.A, {
-                user: t,
-                guild: i,
-                nick: o,
+            return (0, i.jsx)(c.A, {
+                user: n,
+                guild: s,
+                nick: r,
                 onSelect: () => {
                     var e;
-                    p({
+                    A({
                         action: "PRESS_MUTUAL_GUILD"
-                    }), e = i.id, (0, s.u)(e), n(), (0, r.jH)()
+                    }), e = s.id, (0, a.u)(e), t(), (0, l.jH)()
                 }
-            }, i.id)
-        }) : (0, l.jsxs)("div", {
+            }, s.id)
+        }) : (0, i.jsxs)("div", {
             className: u.Ie,
-            children: [(0, l.jsx)("div", {
+            children: [(0, i.jsx)("div", {
                 className: u.vC
-            }), (0, l.jsx)("div", {
+            }), (0, i.jsx)("div", {
                 className: u.BI,
-                children: c.intl.string(c.t.zjVh8h)
+                children: o.intl.string(o.t.zjVh8h)
             })]
         })
     })

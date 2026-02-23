@@ -1,47 +1,50 @@
 /** chunk id: 546350, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     w: () => o
-}), n(896048);
+});
 var a = n(64700),
-    l = n(311907),
-    r = n(397927),
-    i = n(775602),
-    s = n(654487);
+    i = n(311907),
+    s = n(397927),
+    l = n(775602),
+    r = n(654487);
 
 function o(e) {
     let {
         isQuestAccepted: t,
         isQuestCompleted: n,
-        isQuestBarVisible: o
-    } = e, c = (0, l.bG)([i.A], () => i.A.useReducedMotion), [d, u] = a.useState(!1), [m, p] = a.useState(!0), [h, x] = a.useState(!0), g = a.useRef(o), f = a.useCallback(e => {
-        n || (p(!1), u(e))
-    }, [n]), b = a.useCallback(() => {
-        f(!0)
-    }, [f]), v = a.useCallback(() => {
-        f(!1)
-    }, [f]), j = t ? s.ZV : s.Ko, [{
-        expansionSpring: _
-    }, y] = (0, r.zhh)(() => ({
+        isQuestBarVisible: o,
+        unfurlEnabled: d,
+        hasSeenUnfurl: c,
+        onUnfurlDismissed: u
+    } = e, m = d && !t && !c, [h, x] = a.useState(m ? "unfurledWithTimeout" : "none"), p = (0, i.bG)([l.A], () => l.A.useReducedMotion), [g, _] = a.useState(m), [f, b] = a.useState(!g), [v, j] = a.useState(!0), C = a.useRef(o), A = a.useCallback(e => {
+        n || (b(!1), _(e))
+    }, [n]), T = a.useCallback(() => {
+        A(!0)
+    }, [A]), S = a.useCallback(() => {
+        A(!1)
+    }, [A]), y = t ? r.ZV : r.Ko, [{
+        expansionSpring: E
+    }, N] = (0, s.zhh)(() => ({
         from: {
             expansionSpring: 0
         },
-        config: j,
-        onRest: () => {
-            p(!0)
+        config: y,
+        onRest: e => {
+            b(!0), 0 === e.value && x("none")
         },
         onStart: () => {
-            p(!1)
+            b(!1)
         }
     }));
     a.useEffect(() => {
-        y({
-            expansionSpring: +!!d,
-            immediate: c
+        N({
+            expansionSpring: +!!g,
+            immediate: p
         })
-    }, [d, y, c]);
+    }, [g, N, p]);
     let {
-        visibilitySpring: A
-    } = (0, r.zhh)({
+        visibilitySpring: I
+    } = (0, s.zhh)({
         from: {
             visibilitySpring: 0
         },
@@ -54,23 +57,35 @@ function o(e) {
             clamp: !0
         },
         onRest: () => {
-            x(!0)
+            j(!0)
         },
         onStart: () => {
-            x(!1)
+            j(!1)
         }
     });
-    return a.useLayoutEffect(() => {
-        o !== g.current && x(!1), g.current = o
-    }, [o]), {
-        isExpanded: d,
-        setIsExpanded: f,
-        expandQuestBar: b,
-        collapseQuestBar: v,
-        isExpansionAnimationComplete: m,
-        isVisibilityAnimationAtRest: h,
-        expansionSpring: _,
-        visibilitySpring: A,
-        springConfig: j
+    a.useLayoutEffect(() => {
+        o !== C.current && j(!1), C.current = o
+    }, [o]);
+    let k = a.useCallback(() => {
+            "unfurledWithTimeout" === h && (x("unfurledWithTimeoutCanceled"), u())
+        }, [u, h]),
+        R = a.useCallback(() => {
+            A(!1), u()
+        }, [A, u]);
+    return {
+        isExpanded: g,
+        setIsExpanded: A,
+        expandQuestBar: T,
+        collapseQuestBar: S,
+        isExpansionAnimationComplete: f,
+        isVisibilityAnimationAtRest: v,
+        expansionSpring: E,
+        visibilitySpring: I,
+        springConfig: y,
+        onQuestBarFocus: k,
+        onUnfurlTimeoutComplete: R,
+        isUnfurl: "none" !== h,
+        isUnfurlTimeoutActive: "unfurledWithTimeout" === h
     }
 }
+n(272111)

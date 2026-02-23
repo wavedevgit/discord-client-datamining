@@ -1,60 +1,36 @@
-/** chunk id: 121623, original params: e,t,r (module,exports,require) **/
-r.d(t, {
-    A: () => b
+/** chunk id: 121623, original params: e,t,n (module,exports,require) **/
+"use strict";
+n.d(t, {
+    A: () => h
 });
-var n, o, l = r(400253),
-    c = r(49485),
-    u = r(80703),
-    i = r(197111),
-    a = r(954571),
-    p = r(877062),
-    f = r(292572),
-    s = r(652215);
-let O = "template",
-    b = (n = function(e) {
-        for (var t = 1; t < arguments.length; t++) {
-            var r = null != arguments[t] ? arguments[t] : {},
-                n = Object.keys(r);
-            "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-                return Object.getOwnPropertyDescriptor(r, e).enumerable
-            }))), n.forEach(function(t) {
-                var n;
-                n = r[t], t in e ? Object.defineProperty(e, t, {
-                    value: n,
-                    enumerable: !0,
-                    configurable: !0,
-                    writable: !0
-                }) : e[t] = n
-            })
-        }
-        return e
-    }({}, f.A), o = o = {
+var i = n(400253),
+    s = n(49485),
+    r = n(80703),
+    l = n(197111),
+    a = n(954571),
+    o = n(877062),
+    d = n(292572),
+    c = n(652215);
+let u = "template",
+    h = {
+        ...d.A,
         openNativeAppModal(e) {
-            i.A.openNativeAppModal(e, s.e$_.GUILD_TEMPLATE_BROWSER)
+            l.A.openNativeAppModal(e, c.e$_.GUILD_TEMPLATE_BROWSER)
         },
         openMobileApp(e, t) {
             if (null != platform.ua && platform.ua.toLowerCase().indexOf("googlebot") > -1) return;
-            let r = null != e ? (0, l.FH)(e) : (0, l.BH)(),
-                n = (0, c.I_)(),
-                o = (0, c.Ay)(r, {
-                    utmSource: O,
+            let n = null != e ? (0, i.FH)(e) : (0, i.BH)(),
+                l = (0, s.I_)(),
+                d = (0, s.Ay)(n, {
+                    utmSource: u,
                     fingerprint: t,
-                    attemptId: n
+                    attemptId: l
                 });
-            a.default.track(s.HAw.DEEP_LINK_CLICKED, {
-                fingerprint: (0, u.v)(t),
-                attempt_id: n,
-                source: O,
+            a.default.track(c.HAw.DEEP_LINK_CLICKED, {
+                fingerprint: (0, r.v)(t),
+                attempt_id: l,
+                source: u,
                 guild_template_code: e
-            }), p.A.launch(o, () => {})
+            }), o.A.launch(d, () => {})
         }
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
-        var r = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var n = Object.getOwnPropertySymbols(e);
-            r.push.apply(r, n)
-        }
-        return r
-    })(Object(o)).forEach(function(e) {
-        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(o, e))
-    }), n)
+    }

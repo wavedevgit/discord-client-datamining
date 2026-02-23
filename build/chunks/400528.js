@@ -1,98 +1,83 @@
 /** chunk id: 400528, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => p
-}), n(896048), n(446912);
-var r, i = n(311907),
+    A: () => u
+});
+var i = n(311907),
     l = n(73153),
     a = n(967198);
-
-function o(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-let c = null,
+let r = null,
     s = null,
-    d = {
+    o = {
         reportedMessages: {}
     };
 
-function u() {
+function d() {
     let e = a.A.getLastSelectedGuildId();
-    e !== c && (s = null, c = null != e ? e : null)
+    e !== r && (s = null, r = e ?? null)
 }
-class g extends(r = i.Ay.PersistedStore) {
+class c extends i.Ay.PersistedStore {
+    static displayName = "ReportToModStore";
+    static persistKey = "ReportToModStore";
+    static migrations = [e => ({
+        reportedMessages: e?.reportedMessages ?? {}
+    })];
     initialize(e) {
-        null != e && (d.reportedMessages = Object.fromEntries(Object.entries(e.reportedMessages).map(e => {
+        null != e && (o.reportedMessages = Object.fromEntries(Object.entries(e.reportedMessages).map(e => {
             let [t, n] = e;
             return [t, new Set(n)]
-        }))), this.syncWith([a.A], u)
+        }))), this.syncWith([a.A], d)
     }
     getState() {
-        return d
+        return o
     }
     isUserBanned(e) {
-        var t;
-        return null != (t = null == s ? void 0 : s.get(e)) ? t : null
+        return s?.get(e) ?? null
     }
     getReportedMessages() {
-        return d.reportedMessages
+        return o.reportedMessages
     }
     hasReportedMessage(e, t) {
-        var n, r;
-        return null != (n = null == (r = d.reportedMessages[e]) ? void 0 : r.has(t)) && n
+        return o.reportedMessages[e]?.has(t) ?? !1
     }
 }
-o(g, "displayName", "ReportToModStore"), o(g, "persistKey", "ReportToModStore"), o(g, "migrations", [e => {
-    var t;
-    return {
-        reportedMessages: null != (t = null == e ? void 0 : e.reportedMessages) ? t : {}
-    }
-}]);
-let p = new g(l.h, {
+let u = new c(l.h, {
     REPORT_TO_MOD_REPORT_MESSAGE_SUCCESS: function(e) {
         let {
             channelId: t,
             messageId: n
         } = e;
-        null == d.reportedMessages[t] && (d.reportedMessages[t] = new Set), d.reportedMessages[t].add(n)
+        null == o.reportedMessages[t] && (o.reportedMessages[t] = new Set), o.reportedMessages[t].add(n)
     },
     GUILD_BAN_ADD: function(e) {
         let {
             user: t,
             guildId: n
         } = e;
-        n !== c || null != s && s.set(t.id, !0)
+        n !== r || null != s && s.set(t.id, !0)
     },
     GUILD_BAN_REMOVE: function(e) {
         let {
             user: t,
             guildId: n
         } = e;
-        n !== c || null != s && s.set(t.id, !1)
+        n !== r || null != s && s.set(t.id, !1)
     },
     GUILD_SETTINGS_LOADED_BANS_BATCH: function(e) {
         let {
             bans: t,
             guildId: n,
-            userIds: r
+            userIds: i
         } = e;
-        if (n !== c) return;
-        let i = new Set(t.map(e => {
-                var t;
-                return null == (t = e.user) ? void 0 : t.id
-            })),
-            l = Array.from(new Set(null != r ? r : [])).filter(e => !i.has(e));
-        null == s && (s = new Map), i.forEach(e => {
-            null == s || s.set(e, !0)
-        }), l.forEach(e => {
-            null == s || s.set(e, !1)
+        if (n !== r) return;
+        let l = new Set(t.map(e => e.user?.id)),
+            a = Array.from(new Set(i ?? [])).filter(e => !l.has(e));
+        null == s && (s = new Map), l.forEach(e => {
+            s?.set(e, !0)
+        }), a.forEach(e => {
+            s?.set(e, !1)
         })
     },
     LOGOUT: function() {
-        c = null, s = null, d.reportedMessages = {}
+        r = null, s = null, o.reportedMessages = {}
     }
 })

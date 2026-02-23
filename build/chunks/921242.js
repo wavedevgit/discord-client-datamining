@@ -1,7 +1,7 @@
 /** chunk id: 921242, original params: e,t,r (module,exports,require) **/
 r.d(t, {
-    b: () => l,
-    z: () => n
+    b: () => n,
+    z: () => s
 });
-let n = r(652215).BBH.NEWEST,
-    l = "search-filters-modal"
+let s = r(652215).BBH.NEWEST,
+    n = "search-filters-modal"

@@ -1,34 +1,31 @@
 /** chunk id: 961022, original params: e,n,t (module,exports,require) **/
 t.d(n, {
-    A: () => s
+    A: () => o
 });
-var l = t(311907),
-    r = t(113783),
-    i = t(69407),
-    a = t(446600),
-    o = t(734057),
+var i = t(311907),
+    l = t(113783),
+    a = t(69407),
+    r = t(446600),
+    s = t(734057),
     c = t(71393);
 
-function s(e) {
+function o(e) {
     let {
         id: n,
         data: {
             guild: t,
-            instance: s,
-            speakers: u,
-            participantCount: d
+            instance: o,
+            speakers: d,
+            participantCount: u
         },
         context: g
-    } = e, p = (0, l.bG)([c.A, o.A], () => {
-        var e;
-        return c.A.getGuild(null == (e = o.A.getChannel(n)) ? void 0 : e.getGuildId())
-    }, [n]), m = (0, l.bG)([a.A], () => a.A.getStageInstanceByChannel(n), [n]), v = (0, r.E5)(n, i.ip.SPEAKER), f = (0, r.zy)(n), h = null != m ? v : u, b = (null != m ? f : d) - h.length;
+    } = e, A = (0, i.bG)([c.A, s.A], () => c.A.getGuild(s.A.getChannel(n)?.getGuildId()), [n]), h = (0, i.bG)([r.A], () => r.A.getStageInstanceByChannel(n), [n]), m = (0, l.E5)(n, a.ip.SPEAKER), x = (0, l.zy)(n), C = null != h ? m : d, v = (null != h ? x : u) - C.length;
     return {
         channelId: n,
-        guild: null != p ? p : t,
-        stage: null != m ? m : s,
-        speakers: h,
-        audienceCount: b,
+        guild: A ?? t,
+        stage: h ?? o,
+        speakers: C,
+        audienceCount: v,
         context: g
     }
 }

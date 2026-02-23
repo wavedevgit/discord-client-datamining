@@ -1,29 +1,29 @@
-/** chunk id: 412477, original params: e,t,n (module,exports,require) **/
-n.d(t, {
+/** chunk id: 412477, original params: e,t,i (module,exports,require) **/
+i.d(t, {
     g: () => u
 });
-var r = n(627968),
-    l = n(64700),
-    i = n(503698),
-    a = n.n(i),
-    s = n(990078),
-    o = n(397927),
-    c = n(167509);
-let u = l.memo(function(e) {
+var n = i(627968),
+    s = i(64700),
+    l = i(503698),
+    r = i.n(l),
+    a = i(990078),
+    d = i(397927),
+    o = i(167509);
+let u = s.memo(function(e) {
     let {
         emptyText: t,
-        icon: n,
-        absolute: l = !1
+        icon: i,
+        absolute: s = !1
     } = e;
-    return (0, r.jsx)("div", {
-        className: a()(c.TP, l && c.ys),
-        children: (0, r.jsx)(s.m, {
+    return (0, n.jsx)("div", {
+        className: r()(o.TP, s && o.ys),
+        children: (0, n.jsx)(a.m, {
             text: t,
-            children: (0, r.jsx)("div", {
-                children: (0, r.jsx)(n, {
+            children: (0, n.jsx)("div", {
+                children: (0, n.jsx)(i, {
                     size: "md",
-                    color: o.LU0.colors.WHITE,
-                    className: c.dx
+                    color: d.LU0.colors.WHITE,
+                    className: o.dx
                 })
             })
         })

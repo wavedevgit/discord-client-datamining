@@ -1,53 +1,55 @@
 /** chunk id: 266069, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    u: () => f
-}), n(896048);
-var r = n(627968),
-    l = n(64700),
-    i = n(503698),
-    s = n.n(i),
+    u: () => g
+});
+var i = n(627968),
+    s = n(64700),
+    l = n(503698),
+    r = n.n(l),
     a = n(311907),
     o = n(827734),
     c = n(435371),
-    u = n(397927),
-    d = n(242919),
-    p = n(985018),
-    h = n(519501),
-    g = n(658122);
+    d = n(397927),
+    u = n(242919),
+    h = n(985018),
+    A = n(519501),
+    p = n(658122);
 
-function f(e) {
+function g(e) {
     let {
         label: t,
         icon: n,
-        setStatus: i,
-        isFavorited: f,
+        setStatus: l,
+        isFavorited: g,
         onFavoriteClick: m
-    } = e, [b, A] = l.useState(!1), y = (0, a.bG)([d.A], () => d.A.getFavoritedStatuses().length >= d.x), O = null != m, j = l.useCallback(e => {
-        e.stopPropagation(), null == m || m()
-    }, [m]), x = f ? u.Gg5 : u.yA2;
-    return (0, r.jsxs)(u.DUT, {
-        onClick: i,
+    } = e, [_, f] = s.useState(!1), x = (0, a.bG)([u.A], () => u.A.getFavoritedStatuses().length >= u.x), C = null != m, E = s.useCallback(e => {
+        e.stopPropagation(), m?.()
+    }, [m]), I = g ? d.Gg5 : d.yA2;
+    return (0, i.jsxs)(d.DUT, {
+        onClick: l,
         onMouseEnter: () => {
-            A(!0)
+            f(!0)
         },
         onMouseLeave: () => {
-            A(!1)
+            f(!1)
         },
-        className: s()(g.item, g.labelContainer, h.kL),
-        children: [(0, r.jsx)("div", {
+        className: r()(p.item, p.labelContainer, A.kL),
+        children: [(0, i.jsx)("div", {
+            className: A.P0,
             children: n
-        }), (0, r.jsx)(u.Text, {
+        }), (0, i.jsx)(d.Text, {
             variant: "text-md/normal",
-            className: h.rv,
+            className: A.rv,
             children: t
-        }), b && O && (0, r.jsx)(c.m_, {
-            text: y && !f ? p.intl.string(p.t.YSDH9n) : void 0,
-            children: (0, r.jsx)(u.DUT, {
-                className: s()(h.ff, h.wB),
-                onClick: j,
-                children: (0, r.jsx)(x, {
-                    className: h.ut,
-                    color: f ? o.A.colors.ICON_FEEDBACK_WARNING : "currentColor"
+        }), _ && C && (0, i.jsx)(c.m_, {
+            text: x && !g ? h.intl.string(h.t.YSDH9n) : void 0,
+            children: (0, i.jsx)(d.DUT, {
+                className: r()(A.ff, A.wB),
+                onClick: E,
+                children: (0, i.jsx)(I, {
+                    className: A.ut,
+                    color: g ? o.A.colors.ICON_FEEDBACK_WARNING : "currentColor"
                 })
             })
         })]

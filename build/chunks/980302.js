@@ -1,32 +1,32 @@
 /** chunk id: 980302, original params: e,t,a (module,exports,require) **/
 a.d(t, {
-    r: () => u
+    r: () => _
 });
-var r = a(627968);
+var s = a(627968);
 a(64700);
-var s = a(134402),
-    l = a(877227),
-    n = a(489569),
-    i = a(137540),
+var l = a(134402),
+    i = a(877227),
+    r = a(489569),
+    n = a(137540),
     o = a(818348),
     c = a(705492);
 let d = o.sE.MAIN_NAVIGATION_MENU;
 
-function u(e) {
+function _(e) {
     let {
         isOpen: t,
         dropdownLinks: a,
-        TrackClick: u,
-        avoidRouter: _,
-        id: N,
-        "aria-label": A
-    } = e, p = (0, l.dI)({
-        history: (0, s.W6)()
-    }), h = a.map((e, t) => e.divider ? (0, r.jsx)("hr", {
+        TrackClick: _,
+        avoidRouter: N,
+        id: A,
+        "aria-label": u
+    } = e, I = (0, i.dI)({
+        history: (0, l.W6)()
+    }), k = a.map((e, t) => e.divider ? (0, s.jsx)("hr", {
         className: c.divider
-    }, "divider-".concat(t)) : e.external ? (0, r.jsx)("li", {
+    }, `divider-${t}`) : e.external ? (0, s.jsx)("li", {
         className: c.moreListItemInactive,
-        children: (0, r.jsx)(u, {
+        children: (0, s.jsx)(_, {
             className: c.moreListLink,
             eventName: d,
             data: {
@@ -34,20 +34,20 @@ function u(e) {
             },
             href: e.route,
             rel: "me",
-            children: (0, r.jsx)("span", {
+            children: (0, s.jsx)("span", {
                 className: c.moreListLinkCopy,
                 children: e.title
             })
         })
-    }, e.route) : (0, r.jsx)("li", {
-        className: (0, n.t)(c, "moreListItem", p(e.route) ? "Active" : "Inactive"),
-        children: (0, r.jsx)(i.A, {
-            avoidRouter: _,
+    }, e.route) : (0, s.jsx)("li", {
+        className: (0, r.t)(c, "moreListItem", I(e.route) ? "Active" : "Inactive"),
+        children: (0, s.jsx)(n.A, {
+            avoidRouter: N,
             className: c.moreListLink,
             to: e.route,
             from: o.sE.MAIN_NAVIGATION_MENU,
             role: "menuitem",
-            children: (0, r.jsx)(u, {
+            children: (0, s.jsx)(_, {
                 tag: "span",
                 className: c.moreListLinkCopy,
                 eventName: d,
@@ -58,10 +58,10 @@ function u(e) {
             })
         })
     }, e.route));
-    return (0, r.jsx)("ul", {
-        id: N,
-        className: (0, n.t)(c, "moreList", t ? "Open" : "Closed"),
-        "aria-label": A,
-        children: h
+    return (0, s.jsx)("ul", {
+        id: A,
+        className: (0, r.t)(c, "moreList", t ? "Open" : "Closed"),
+        "aria-label": u,
+        children: k
     })
 }

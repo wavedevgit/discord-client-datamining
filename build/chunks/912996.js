@@ -1,33 +1,25 @@
 /** chunk id: 912996, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => c
+    A: () => s
 });
-var i, r = n(311907),
-    l = n(73153);
-
-function o(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-let s = {};
-class a extends(i = r.Ay.PersistedStore) {
+var a = n(311907),
+    i = n(73153);
+let r = {};
+class l extends a.Ay.PersistedStore {
+    static displayName = "ActivityInviteEducationStore";
+    static persistKey = "ActivityInviteEducationExperimentStore";
     initialize(e) {
-        Object.assign(s, e)
+        Object.assign(r, e)
     }
     getState() {
-        return s
+        return r
     }
     shouldShowEducation(e) {
-        return !0 !== s[e]
+        return !0 !== r[e]
     }
 }
-o(a, "displayName", "ActivityInviteEducationStore"), o(a, "persistKey", "ActivityInviteEducationExperimentStore");
-let c = new a(l.h, {
+let s = new l(i.h, {
     ACTIVITY_INVITE_EDUCATION_DISMISS: function(e) {
-        return s[e.key] = e.value, !0
+        return r[e.key] = e.value, !0
     }
 })

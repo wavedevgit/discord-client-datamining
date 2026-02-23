@@ -1,42 +1,39 @@
 /** chunk id: 553103, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => g
+    A: () => p
 });
-var r = n(512750),
-    l = n(311907),
-    i = n(71393),
-    s = n(645619),
+var i = n(512750),
+    s = n(311907),
+    l = n(71393),
+    r = n(645619),
     a = n(840120),
     o = n(162362),
     c = n(998418),
-    u = n(568065),
-    d = n(652215),
-    p = n(333354),
-    h = n(985018);
+    d = n(568065),
+    u = n(652215),
+    h = n(333354),
+    A = n(985018);
 
-function g(e, t) {
-    var n;
-    let g = (0, l.bG)([i.A], () => {
-            var t;
-            return null == (t = i.A.getGuild(e)) ? void 0 : t.features
-        }),
-        f = (0, l.bG)([s.A], () => s.A.getStateForGuild(e)),
-        m = null == f ? void 0 : f.allPowerups[r.FB],
-        b = (0, c.Ay)(e, m),
-        A = (0, a.j$)(e, t),
-        y = null == m ? void 0 : m.storeRemovalDate,
-        O = null != (n = null == g ? void 0 : g.has(d.GuildFeatures.PARTNERED)) && n,
-        j = A && null != y && !O && b.type === u.b_.POWERUP_ACTIVATED,
-        x = j ? {
-            title: h.intl.formatToPlainString(p.default.mgoPkU, {
-                perkName: null == m ? void 0 : m.title
+function p(e, t) {
+    let n = (0, s.bG)([l.A], () => l.A.getGuild(e)?.features),
+        p = (0, s.bG)([r.A], () => r.A.getStateForGuild(e)),
+        g = p?.allPowerups[i.FB],
+        m = (0, c.Ay)(e, g),
+        _ = (0, a.j$)(e, t),
+        f = g?.storeRemovalDate,
+        x = n?.has(u.GuildFeatures.PARTNERED) ?? !1,
+        C = _ && null != f && !x && m.type === d.b_.POWERUP_ACTIVATED,
+        E = C ? {
+            title: A.intl.formatToPlainString(h.default.mgoPkU, {
+                perkName: g?.title
             }),
-            description: h.intl.formatToPlainString(p.default.UT9pkI, {
-                dateString: (0, o.A)(y)
+            description: A.intl.formatToPlainString(h.default.UT9pkI, {
+                dateString: (0, o.A)(f)
             })
         } : null;
     return {
-        shouldShow: j,
-        notificationConfig: x
+        shouldShow: C,
+        notificationConfig: E
     }
 }

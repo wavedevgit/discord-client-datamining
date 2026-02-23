@@ -37,7 +37,7 @@ function o(t) {
                     variant: "text-sm/medium",
                     children: t
                 })]
-            }, "safety-tips-".concat(e)))
+            }, `safety-tips-${e}`))
         })]
     })
 }

@@ -1,19 +1,19 @@
 /** chunk id: 225419, original params: t,i,n (module,exports,require) **/
 n.d(i, {
-    BK: () => _,
-    LZ: () => a,
-    Nk: () => d,
+    BK: () => g,
+    LZ: () => A,
+    Nk: () => p,
     Si: () => x,
     eD: () => o,
     iG: () => N,
     k6: () => B,
-    m6: () => g,
-    mL: () => A,
+    m6: () => _,
+    mL: () => a,
     od: () => T,
-    qI: () => c,
-    x3: () => M,
-    xd: () => p
-}), n(321073), n(733351);
+    qI: () => d,
+    x3: () => D,
+    xd: () => M
+}), n(321073);
 var e = n(403362),
     r = n(937161),
     E = n(818348),
@@ -34,7 +34,6 @@ function S(t, i) {
 }
 
 function o(t) {
-    var i, n;
     return {
         [E.xB.VIEW_CHANNEL.toString()]: {
             title: s.intl.string(s.t.uV83yi),
@@ -218,7 +217,7 @@ function o(t) {
         },
         [E.xB.USE_SOUNDBOARD.toString()]: {
             title: s.intl.string(s.t.Bco7NG),
-            description: null != (i = null == t ? void 0 : t.SOUNDBOARD_DESCRIPTION) ? i : s.t["+8p+fc"],
+            description: t?.SOUNDBOARD_DESCRIPTION ?? s.t["+8p+fc"],
             flag: E.xB.USE_SOUNDBOARD
         },
         [E.xB.USE_EXTERNAL_SOUNDS.toString()]: {
@@ -233,7 +232,7 @@ function o(t) {
         },
         [E.xB.PRIORITY_SPEAKER.toString()]: {
             title: s.intl.string(s.t.BVK71i),
-            description: null != (n = null == t ? void 0 : t.PRIORITY_SPEAKER_DESCRIPTION) ? n : s.t.OJkrro,
+            description: t?.PRIORITY_SPEAKER_DESCRIPTION ?? s.t.OJkrro,
             flag: E.xB.PRIORITY_SPEAKER
         },
         [E.xB.MUTE_MEMBERS.toString()]: {
@@ -300,54 +299,54 @@ function o(t) {
     }
 }
 
-function a(t) {
-    let i, n, e, r, a, A = o(t),
-        g = [(i = [E.xB.VIEW_CHANNEL, E.xB.MANAGE_CHANNELS, E.xB.MANAGE_ROLES, E.xB.CREATE_GUILD_EXPRESSIONS, E.xB.MANAGE_GUILD_EXPRESSIONS, E.xB.VIEW_AUDIT_LOG, E.xB.VIEW_GUILD_ANALYTICS], t.showCreatorMonetizationAnalyticsPermission && i.push(E.xB.VIEW_CREATOR_MONETIZATION_ANALYTICS), i.push(E.xB.MANAGE_WEBHOOKS), i.push(E.xB.MANAGE_GUILD), l({
+function A(t) {
+    let i, n, e, r, A, a = o(t),
+        _ = [(i = [E.xB.VIEW_CHANNEL, E.xB.MANAGE_CHANNELS, E.xB.MANAGE_ROLES, E.xB.CREATE_GUILD_EXPRESSIONS, E.xB.MANAGE_GUILD_EXPRESSIONS, E.xB.VIEW_AUDIT_LOG, E.xB.VIEW_GUILD_ANALYTICS], t.showCreatorMonetizationAnalyticsPermission && i.push(E.xB.VIEW_CREATOR_MONETIZATION_ANALYTICS), i.push(E.xB.MANAGE_WEBHOOKS), i.push(E.xB.MANAGE_GUILD), l({
             title: s.intl.string(s.t["mYck+B"]),
-            permissions: S(i, A)
+            permissions: S(i, a)
         })), (n = [E.xB.CREATE_INSTANT_INVITE, E.xB.CHANGE_NICKNAME, E.xB.MANAGE_NICKNAMES, E.xB.KICK_MEMBERS, E.xB.BAN_MEMBERS, E.xB.MODERATE_MEMBERS], l({
             title: s.intl.string(s.t.Ny49TN),
-            permissions: S(n, A)
+            permissions: S(n, a)
         })), (e = [E.xB.SEND_MESSAGES, E.xB.SEND_MESSAGES_IN_THREADS, E.xB.CREATE_PUBLIC_THREADS, E.xB.CREATE_PRIVATE_THREADS, E.xB.EMBED_LINKS, E.xB.ATTACH_FILES, E.xB.ADD_REACTIONS, E.xB.USE_EXTERNAL_EMOJIS, E.xB.USE_EXTERNAL_STICKERS, E.xB.USE_EXTERNAL_SOUNDS, E.xB.MENTION_EVERYONE, E.xB.MANAGE_MESSAGES, E.xB.PIN_MESSAGES, E.xB.BYPASS_SLOWMODE, E.xB.MANAGE_THREADS, E.xB.READ_MESSAGE_HISTORY, E.xB.SEND_TTS_MESSAGES, E.xB.SEND_VOICE_MESSAGES, E.xB.SEND_POLLS], t.inSoundmojiExperiment || (e = e.filter(t => t !== E.xB.USE_EXTERNAL_SOUNDS)), l({
             title: s.intl.string(s.t.cKobO5),
-            permissions: S(e, A)
+            permissions: S(e, a)
         })), (r = [E.xB.CONNECT, E.xB.SPEAK, E.xB.STREAM, E.xB.USE_SOUNDBOARD, E.xB.USE_EXTERNAL_SOUNDS, E.xB.USE_VAD, E.xB.PRIORITY_SPEAKER, E.xB.MUTE_MEMBERS, E.xB.DEAFEN_MEMBERS, E.xB.MOVE_MEMBERS, E.xB.SET_VOICE_CHANNEL_STATUS], l({
             title: s.intl.string(s.t["46Ra1b"]),
-            permissions: S(r, A)
-        })), (a = [E.xB.USE_APPLICATION_COMMANDS, E.xB.USE_EMBEDDED_ACTIVITIES, E.xB.USE_EXTERNAL_APPS], l({
+            permissions: S(r, a)
+        })), (A = [E.xB.USE_APPLICATION_COMMANDS, E.xB.USE_EMBEDDED_ACTIVITIES, E.xB.USE_EXTERNAL_APPS], l({
             title: s.intl.string(s.t["rrh/W6"]),
-            permissions: S(a, A)
+            permissions: S(A, a)
         }))];
-    return t.showStageChannelPermissions && g.push(l({
+    return t.showStageChannelPermissions && _.push(l({
         title: s.intl.string(s.t.yniauk),
-        permissions: S([E.xB.REQUEST_TO_SPEAK], A)
-    }, t.showExperimental)), g.push(l({
+        permissions: S([E.xB.REQUEST_TO_SPEAK], a)
+    }, t.showExperimental)), _.push(l({
         title: s.intl.string(s.t.b8lplT),
-        permissions: S([E.xB.CREATE_EVENTS, E.xB.MANAGE_EVENTS], A)
-    }, t.showExperimental)), g.push(l({
+        permissions: S([E.xB.CREATE_EVENTS, E.xB.MANAGE_EVENTS], a)
+    }, t.showExperimental)), _.push(l({
         title: s.intl.string(s.t["3uI5CX"]),
-        permissions: S([E.xB.ADMINISTRATOR], A)
-    })), g
+        permissions: S([E.xB.ADMINISTRATOR], a)
+    })), _
 }
 
-function A(t, i) {
+function a(t, i) {
     let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {
         showManageWebhooks: !0
     };
     return {
         title: i,
-        permissions: S((null == n ? void 0 : n.showManageWebhooks) ? [E.xB.VIEW_CHANNEL, E.xB.MANAGE_CHANNELS, E.xB.MANAGE_ROLES, E.xB.MANAGE_WEBHOOKS] : [E.xB.VIEW_CHANNEL, E.xB.MANAGE_CHANNELS, E.xB.MANAGE_ROLES], t)
+        permissions: S(n?.showManageWebhooks ? [E.xB.VIEW_CHANNEL, E.xB.MANAGE_CHANNELS, E.xB.MANAGE_ROLES, E.xB.MANAGE_WEBHOOKS] : [E.xB.VIEW_CHANNEL, E.xB.MANAGE_CHANNELS, E.xB.MANAGE_ROLES], t)
     }
 }
 
-function g(t, i) {
+function _(t, i) {
     return {
         title: i,
         permissions: S([E.xB.CREATE_INSTANT_INVITE], t)
     }
 }
 
-function _(t, i, n) {
+function g(t, i, n) {
     let e = [E.xB.SEND_MESSAGES, E.xB.SEND_MESSAGES_IN_THREADS, E.xB.CREATE_PUBLIC_THREADS, E.xB.CREATE_PRIVATE_THREADS, E.xB.EMBED_LINKS, E.xB.ATTACH_FILES, E.xB.ADD_REACTIONS, E.xB.USE_EXTERNAL_EMOJIS, E.xB.USE_EXTERNAL_STICKERS, E.xB.USE_EXTERNAL_SOUNDS, E.xB.MENTION_EVERYONE, E.xB.MANAGE_MESSAGES, E.xB.PIN_MESSAGES, E.xB.BYPASS_SLOWMODE, E.xB.MANAGE_THREADS, E.xB.READ_MESSAGE_HISTORY, E.xB.SEND_TTS_MESSAGES, E.xB.SEND_VOICE_MESSAGES, E.xB.SEND_POLLS];
     return n.inSoundmojiExperiment || (e = e.filter(t => t !== E.xB.USE_EXTERNAL_SOUNDS)), n.showPrivateThreads && n.showCreateThreads || (e = e.filter(t => t !== E.xB.CREATE_PRIVATE_THREADS)), n.showCreateThreads || (e = e.filter(t => t !== E.xB.CREATE_PUBLIC_THREADS)), {
         title: i,
@@ -389,25 +388,25 @@ function T(t, i, n) {
     }
 }
 
-function c(t, i) {
+function d(t, i) {
     return {
         title: i,
         permissions: S([E.xB.REQUEST_TO_SPEAK, E.xB.MENTION_EVERYONE], t)
     }
 }
 
-function p(t, i) {
+function M(t, i) {
     return {
         title: i,
         permissions: S([E.xB.CREATE_EVENTS, E.xB.MANAGE_EVENTS], t)
     }
 }
 
-function d(t) {
+function p(t) {
     return null == t ? t : "string" == typeof t ? t.trim() : "function" == typeof t ? s.intl.format(t, {}) : t
 }
 
-function M(t, i) {
+function D(t, i) {
     return r.A.getCurrentConfig({
         guildId: i,
         location: "getMigrationWarning"

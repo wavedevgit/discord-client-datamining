@@ -1,18 +1,18 @@
 /** chunk id: 978551, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => s
+    A: () => r
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(397927),
-    l = n(985018);
+var s = n(397927),
+    a = n(985018);
 
-function s() {
-    return (0, r.jsx)(i.D0$, {
-        label: l.intl.string(l.t.EPVq00),
-        children: (0, r.jsx)(i.po8, {
-            messageType: i.YCn.INFO,
-            children: l.intl.string(l.t.PhHhsj)
+function r() {
+    return (0, i.jsx)(s.D0$, {
+        label: a.intl.string(a.t.EPVq00),
+        children: (0, i.jsx)(s.po8, {
+            messageType: s.YCn.INFO,
+            children: a.intl.string(a.t.PhHhsj)
         })
     })
 }

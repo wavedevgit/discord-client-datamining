@@ -1,12 +1,12 @@
-/** chunk id: 348, original params: e,t,r (module,exports,require) **/
-r.d(t, {
-    b: () => a
+/** chunk id: 348, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    b: () => s
 });
-var n = r(311907),
-    l = r(218727);
+var a = n(311907),
+    l = n(218727);
 
-function a() {
-    return (0, n.cf)([l.A], () => ({
+function s() {
+    return (0, a.cf)([l.A], () => ({
         avatars: l.A.getAvatars(),
         loading: l.A.isFetching,
         error: l.A.fetchError

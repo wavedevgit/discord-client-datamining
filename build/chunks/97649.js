@@ -1,47 +1,47 @@
-/** chunk id: 97649, original params: e,t,n (module,exports,require) **/
-n.r(t), n.d(t, {
+/** chunk id: 97649, original params: e,t,r (module,exports,require) **/
+r.r(t), r.d(t, {
     default: () => f
-}), n(747238), n(812715);
-var r = n(627968),
-    l = n(64700),
-    c = n(492462),
-    a = n(960488),
-    o = n(13202),
-    i = n(77468),
-    s = n(556074),
-    u = n(652215);
+});
+var n = r(627968),
+    l = r(64700),
+    a = r(492462),
+    i = r(873263),
+    c = r(13202),
+    s = r(77468),
+    o = r(556074),
+    u = r(652215);
 
 function d(e) {
     let {
         platformType: t
-    } = e, n = (0, a.W6)();
+    } = e, r = (0, i.W6)();
     return l.useEffect(() => {
         let {
             code: e,
-            state: r
-        } = c.parse(window.location.search), l = "".concat(u.BVt.CONNECTIONS_ERROR(t)).concat(window.location.search);
-        null == e || null == r ? n.replace(l) : i.A.linkDispatchAuthCallback(t, {
+            state: n
+        } = a.parse(window.location.search), l = `${u.BVt.CONNECTIONS_ERROR(t)}${window.location.search}`;
+        null == e || null == n ? r.replace(l) : s.A.linkDispatchAuthCallback(t, {
             code: e,
-            state: r
+            state: n
         }).then(e => {
             let {
-                status: r
+                status: n
             } = e;
-            204 === r ? n.replace(u.BVt.CONNECTIONS_SUCCESS(t)) : n.replace(l)
+            204 === n ? r.replace(u.BVt.CONNECTIONS_SUCCESS(t)) : r.replace(l)
         }, () => {
-            n.replace(l)
+            r.replace(l)
         })
-    }, [n, t]), (0, r.jsx)(s.VerifyAccountLoading, {
+    }, [r, t]), (0, n.jsx)(o.VerifyAccountLoading, {
         platformType: t
     })
 }
 let f = function(e) {
     let {
         match: t
-    } = e, n = t.params.type, {
+    } = e, r = t.params.type, {
         two_way_link_type: l
-    } = c.parse(window.location.search);
-    return [u.fg2.XBOX, u.fg2.PLAYSTATION_STAGING, u.fg2.PLAYSTATION, u.fg2.CRUNCHYROLL].includes(n) && l === o.I.DESKTOP ? (0, r.jsx)(d, {
-        platformType: n
+    } = a.parse(window.location.search);
+    return [u.fg2.XBOX, u.fg2.PLAYSTATION_STAGING, u.fg2.PLAYSTATION, u.fg2.CRUNCHYROLL].includes(r) && l === c.I.DESKTOP ? (0, n.jsx)(d, {
+        platformType: r
     }) : null
 }

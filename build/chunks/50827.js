@@ -1,40 +1,31 @@
 /** chunk id: 50827, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => d
-}), n(896048);
-var i, s = n(311907),
-    r = n(73153);
-
-function l(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-let o = new Set;
-class a extends(i = s.Ay.PersistedStore) {
+    A: () => a
+});
+var i = n(311907),
+    s = n(73153);
+let l = new Set;
+class r extends i.Ay.PersistedStore {
+    static displayName = "RecentlyActiveCollapseStore";
+    static persistKey = "RecentlyActiveCollapseStore";
     initialize(e) {
-        o.clear(), null == e || e.guilds.forEach(e => o.add(e))
+        l.clear(), e?.guilds.forEach(e => l.add(e))
     }
     isCollapsed(e) {
-        return o.has(e)
+        return l.has(e)
     }
     getState() {
         return {
-            guilds: o
+            guilds: l
         }
     }
 }
-l(a, "displayName", "RecentlyActiveCollapseStore"), l(a, "persistKey", "RecentlyActiveCollapseStore");
-let d = new a(r.h, {
+let a = new r(s.h, {
     SET_RECENTLY_ACTIVE_COLLAPSED: function(e) {
         let {
             guildId: t,
             collapsed: n
         } = e;
-        n ? o.add(t) : o.delete(t)
+        n ? l.add(t) : l.delete(t)
     }
 })

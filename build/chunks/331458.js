@@ -1,37 +1,37 @@
-/** chunk id: 331458, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    default: () => O
+/** chunk id: 331458, original params: t,e,n (module,exports,require) **/
+n.d(e, {
+    default: () => _
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(397927),
-    l = n(442433),
-    a = n(847767),
-    u = n(358367),
-    o = n(793574),
-    c = n(687392),
-    d = n(762353),
-    s = n(884790),
-    b = n(652215),
-    f = n(985018);
-let O = (0, u.A)((0, a.A)(function(e) {
+var l = n(397927),
+    a = n(442433),
+    d = n(847767),
+    r = n(358367),
+    u = n(793574),
+    s = n(687392),
+    c = n(762353),
+    o = n(884790),
+    D = n(652215),
+    A = n(985018);
+let _ = (0, r.A)((0, d.A)(function(t) {
     let {
-        guildId: t,
+        guildId: e,
         context: n,
-        onSelect: a
-    } = e, u = (0, d.A)(t, n), o = (0, s.A)(t, n), b = (0, c.A)(t, n);
-    return (0, r.jsxs)(i.W1t, {
+        onSelect: d
+    } = t, r = (0, c.A)(e, n), u = (0, o.A)(e, n), D = (0, s.A)(e, n);
+    return (0, i.jsxs)(l.W1t, {
         "data-menu-migrated-auto": !0,
         navId: "moderation-raid-context",
-        onClose: l.Z_,
-        "aria-label": f.intl.string(f.t.liqwPJ),
-        onSelect: a,
-        children: [(0, r.jsx)(i.rXV, {
-            children: o
-        }), (0, r.jsxs)(i.rXV, {
-            children: [b, u]
+        onClose: a.Z_,
+        "aria-label": A.intl.string(A.t.liqwPJ),
+        onSelect: d,
+        children: [(0, i.jsx)(l.rXV, {
+            children: u
+        }), (0, i.jsxs)(l.rXV, {
+            children: [D, r]
         })]
     })
 }, {
-    object: b.ZSU.CONTEXT_MENU
-}), [o.A.CONTEXT_MENU, o.A.GUILD_MODERATION_RAID_MENU])
+    object: D.ZSU.CONTEXT_MENU
+}), [u.A.CONTEXT_MENU, u.A.GUILD_MODERATION_RAID_MENU])

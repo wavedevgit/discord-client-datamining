@@ -1,19 +1,19 @@
 /** chunk id: 857069, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => u,
+    A: () => d,
     l: () => c
 });
-var l = n(405269),
-    r = n(927813),
-    i = n(661191),
+var i = n(405269),
+    l = n(927813),
+    s = n(661191),
     a = n(143413),
-    s = n(652215);
-let o = 7 * r.A.Millis.MINUTE;
+    r = n(652215);
+let o = 7 * l.A.Millis.MINUTE;
 
 function c(e, t, n) {
-    return null == t || t.type === s.TZK.MESSAGE && t.content.id === t.content.channel_id || t.type !== s.TZK.MESSAGE && t.type !== s.TZK.THREAD_STARTER_MESSAGE || u(e, t.content, n)
+    return null == t || t.type === r.TZK.MESSAGE && t.content.id === t.content.channel_id || t.type !== r.TZK.MESSAGE && t.type !== r.TZK.THREAD_STARTER_MESSAGE || d(e, t.content, n)
 }
 
-function u(e, t, n) {
-    return !!(n.hasFlag(s.pr7.HAS_THREAD) || n.isCommandType()) || (n.type > s.lAJ.DEFAULT ? !(0, a.A)(t) || n.type === s.lAJ.REPLY : !!((0, a.A)(t) || t.author.id !== n.author.id || t.hasFlag(s.pr7.EPHEMERAL) !== n.hasFlag(s.pr7.EPHEMERAL) || null != n.webhookId && t.author.username !== n.author.username || (null == e ? void 0 : e.isForumPost()) && t.id === i.default.castChannelIdAsMessageId(e.id) || !(0, l.ro)(t.timestamp, n.timestamp) || !(0, l.v0)(t.timestamp, n.timestamp, o) || n.hasFlag(s.pr7.SUPPRESS_NOTIFICATIONS) && !t.hasFlag(s.pr7.SUPPRESS_NOTIFICATIONS) || t.hasFlag(s.pr7.SUPPRESS_NOTIFICATIONS) && !n.hasFlag(s.pr7.SUPPRESS_NOTIFICATIONS) && (n.mentions.length > 0 || n.mentionRoles.length > 0 || n.mentionEveryone)) || n.applicationId !== t.applicationId)
+function d(e, t, n) {
+    return !!(n.hasFlag(r.pr7.HAS_THREAD) || n.isCommandType()) || (n.type > r.lAJ.DEFAULT ? !(0, a.A)(t) || n.type === r.lAJ.REPLY : !!((0, a.A)(t) || t.author.id !== n.author.id || t.hasFlag(r.pr7.EPHEMERAL) !== n.hasFlag(r.pr7.EPHEMERAL) || null != n.webhookId && t.author.username !== n.author.username || e?.isForumPost() && t.id === s.default.castChannelIdAsMessageId(e.id) || !(0, i.ro)(t.timestamp, n.timestamp) || !(0, i.v0)(t.timestamp, n.timestamp, o) || n.hasFlag(r.pr7.SUPPRESS_NOTIFICATIONS) && !t.hasFlag(r.pr7.SUPPRESS_NOTIFICATIONS) || t.hasFlag(r.pr7.SUPPRESS_NOTIFICATIONS) && !n.hasFlag(r.pr7.SUPPRESS_NOTIFICATIONS) && (n.mentions.length > 0 || n.mentionRoles.length > 0 || n.mentionEveryone)) || n.applicationId !== t.applicationId)
 }

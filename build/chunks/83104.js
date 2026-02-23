@@ -1,25 +1,25 @@
 /** chunk id: 83104, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    N: () => c
+    N: () => d
 });
 var a = n(627968);
 n(64700);
-var l = n(311907),
-    r = n(397927),
-    i = n(979286),
-    s = n(590180),
+var i = n(311907),
+    s = n(397927),
+    l = n(979286),
+    r = n(590180),
     o = n(117942);
-let c = () => {
-    let e = (0, l.bG)([s.A], () => s.A.skipNumCategories);
+let d = () => {
+    let e = (0, i.bG)([r.A], () => r.A.skipNumCategories);
     return (0, a.jsxs)("div", {
         className: o.k,
-        children: [(0, a.jsx)(r.Text, {
+        children: [(0, a.jsx)(s.Text, {
             variant: "text-md/normal",
             children: "Hide first # of categories"
-        }), (0, a.jsx)(r.lw3, {
+        }), (0, a.jsx)(s.lw3, {
             value: e,
             onChange: e => {
-                (0, i.ue)(e)
+                (0, l.ue)(e)
             },
             minValue: 0,
             maxValue: 100

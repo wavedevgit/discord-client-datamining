@@ -1,12 +1,12 @@
 /** chunk id: 203498, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    K: () => i
+    K: () => s
 });
-var r = n(73153);
+var i = n(73153);
 
-function i(e) {
-    r.h.dispatch({
+function s(e) {
+    i.h.dispatch({
         type: "GUILD_SETTINGS_SAFETY_PAGE",
         page: e
     })

@@ -1,29 +1,29 @@
 /** chunk id: 734495, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => s
+    A: () => d
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(397927),
-    l = n(814890),
-    a = n(383233),
-    o = n(957565),
-    c = n(985018);
+var l = n(397927),
+    a = n(814890),
+    r = n(383233),
+    s = n(957565),
+    o = n(985018);
 
-function s(e) {
-    if (!o.p5) return null;
+function d(e) {
+    if (!s.p5) return null;
     let t = e.getContentMessage(),
-        n = (0, a._c)(t) ? (0, l.kC)(t.components) : t.content;
-    return null == n || 0 === n.length ? null : (0, r.jsx)(i.Drp, {
+        n = (0, r._c)(t) ? (0, a.kC)(t.components) : t.content;
+    return null == n || 0 === n.length ? null : (0, i.jsx)(l.Drp, {
         id: "copy-text",
-        label: c.intl.string(c.t.JrGD7E),
+        label: o.intl.string(o.t.JrGD7E),
         leadingAccessory: {
             type: "icon",
-            icon: i.TdU
+            icon: l.TdU
         },
-        icon: i.TdU,
+        icon: l.TdU,
         action: () => {
-            (0, o.C)(n)
+            (0, s.C)(n)
         }
     })
 }

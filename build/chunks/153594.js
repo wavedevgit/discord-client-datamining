@@ -1,26 +1,26 @@
-/** chunk id: 153594, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => c
+/** chunk id: 153594, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    A: () => o
 });
-var i = n(627968);
-n(64700);
-var r = n(311907),
-    s = n(397927),
-    l = n(686449),
-    a = n(543465),
-    o = n(985018);
+var n = i(627968);
+i(64700);
+var l = i(311907),
+    s = i(397927),
+    r = i(686449),
+    a = i(543465),
+    d = i(985018);
 
-function c(e) {
+function o(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
-        n = (0, r.bG)([a.Ay], () => a.Ay.isGuildCollapsed(e), [e]);
-    return (0, i.jsx)(s.sLh, {
+        i = (0, l.bG)([a.Ay], () => a.Ay.isGuildCollapsed(e), [e]);
+    return (0, n.jsx)(s.sLh, {
         id: "hide-muted-channels",
-        label: o.intl.string(o.t.UwOLJO),
+        label: d.intl.string(d.t.UwOLJO),
         leadingAccessory: t ? {
             type: "icon",
             icon: s.G3N
         } : void 0,
-        action: () => l.A.toggleCollapseGuild(e),
-        checked: n
+        action: () => r.A.toggleCollapseGuild(e),
+        checked: i
     })
 }

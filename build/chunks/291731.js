@@ -1,115 +1,93 @@
 /** chunk id: 291731, original params: e,t,n (module,exports,require) **/
-let r, i, l;
+let i, r, l;
 n.d(t, {
-    A: () => P
-}), n(321073), n(896048);
-var a, s = n(735438),
-    o = n.n(s),
-    c = n(311907),
-    u = n(73153),
-    d = n(824953),
-    p = n(863036),
-    h = n(71393),
-    f = n(576705),
-    g = n(718116),
+    A: () => b
+}), n(321073);
+var a = n(735438),
+    s = n.n(a),
+    o = n(311907),
+    d = n(73153),
+    c = n(824953),
+    u = n(863036),
+    A = n(71393),
+    h = n(576705),
+    _ = n(718116),
     m = n(652215);
+let p = [],
+    g = null,
+    E = !1,
+    I = m.XlH.CLOSED,
+    f = {},
+    C = !1,
+    T = null;
 
-function A(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-
-function _(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            A(e, t, n[t])
-        })
+function N() {
+    if (i = null != (r = u.A.getChannel()) ? A.A.getGuild(r.guild_id) : null, p = null != r && null != i && h.A.can(m.xBc.MANAGE_WEBHOOKS, r) ? _.A.getWebhooksForChannel(i.id, r.id) : [], null != g) {
+        let e = x(g.id);
+        null != e && (g = e)
     }
-    return e
+    I = m.XlH.OPEN, f = {}, C = !1
 }
-let b = [],
-    E = null,
-    O = !1,
-    y = m.XlH.CLOSED,
-    I = {},
-    v = !1,
-    S = null;
-
-function C() {
-    if (r = null != (i = p.A.getChannel()) ? h.A.getGuild(i.guild_id) : null, b = null != i && null != r && f.A.can(m.xBc.MANAGE_WEBHOOKS, i) ? g.A.getWebhooksForChannel(r.id, i.id) : [], null != E) {
-        let e = T(E.id);
-        null != e && (E = e)
-    }
-    y = m.XlH.OPEN, I = {}, v = !1
-}
-let N = o().debounce(() => {
-    v && ((null == E || o().isEqual(E, T(E.id))) && (v = !1), v || x.emitChange())
+let S = s().debounce(() => {
+    C && ((null == g || s().isEqual(g, x(g.id))) && (C = !1), C || y.emitChange())
 }, 500);
 
-function T(e) {
-    return b.find(t => {
+function x(e) {
+    return p.find(t => {
         let {
             id: n
         } = t;
         return n === e
     })
 }
-class j extends(a = c.Ay.Store) {
+class v extends o.Ay.Store {
+    static displayName = "ChannelSettingsIntegrationsStore";
     initialize() {
-        this.waitFor(p.A, h.A, g.A, f.A)
+        this.waitFor(u.A, A.A, _.A, h.A)
     }
     hasChanges() {
-        return v
+        return C
     }
     get webhooks() {
-        return b
+        return p
     }
     get editedWebhook() {
-        return E
+        return g
     }
     get formState() {
-        return y
+        return I
     }
     getWebhook(e) {
-        return T(e)
+        return x(e)
     }
     showNotice() {
         return this.hasChanges()
     }
     getProps() {
         return {
-            submitting: y === m.XlH.SUBMITTING,
-            webhooks: b,
-            editedWebhook: E,
+            submitting: I === m.XlH.SUBMITTING,
+            webhooks: p,
+            editedWebhook: g,
             section: l,
-            sectionId: S,
+            sectionId: T,
             hasChanges: this.hasChanges(),
-            isFetching: O,
-            errors: I
+            isFetching: E,
+            errors: f
         }
     }
 }
-A(j, "displayName", "ChannelSettingsIntegrationsStore");
-let x = new j(u.h, __OVERLAY__ ? {} : {
-        INTEGRATION_SETTINGS_INIT: C,
-        INTEGRATION_SETTINGS_SAVE_SUCCESS: C,
+let y = new v(d.h, __OVERLAY__ ? {} : {
+        INTEGRATION_SETTINGS_INIT: N,
+        INTEGRATION_SETTINGS_SAVE_SUCCESS: N,
         CHANNEL_SETTINGS_SET_SECTION: function(e) {
             let {
                 section: t
             } = e;
             if (t !== m.p_A.INTEGRATIONS) return !1;
-            if (l = m.wLn.OVERVIEW, null == r) {
-                let e = p.A.getChannel(),
-                    t = null == e ? void 0 : e.getGuildId();
-                null != e && null != t && (d.A.fetchForChannel(t, e.id), O = !0), C()
+            if (l = m.wLn.OVERVIEW, null == i) {
+                let e = u.A.getChannel(),
+                    t = e?.getGuildId();
+                null != e && null != t && (c.A.fetchForChannel(t, e.id), E = !0), N()
             }
         },
         INTEGRATION_SETTINGS_SET_SECTION: function(e) {
@@ -117,27 +95,29 @@ let x = new j(u.h, __OVERLAY__ ? {} : {
                 section: t,
                 sectionId: n
             } = e;
-            l = t, S = n
+            l = t, T = n
         },
         INTEGRATION_SETTINGS_START_EDITING_WEBHOOK: function(e) {
             let {
                 webhookId: t
-            } = e, n = T(t);
+            } = e, n = x(t);
             if (null == n) return !1;
-            E = n, I = {}, v = !1
+            g = n, f = {}, C = !1
         },
         INTEGRATION_SETTINGS_STOP_EDITING_WEBHOOK: function() {
-            E = null, I = {}, v = !1
+            g = null, f = {}, C = !1
         },
         INTEGRATION_SETTINGS_UPDATE_WEBHOOK: function(e) {
             let {
                 settings: t
             } = e;
-            if (null == E) return !1;
-            E = _({}, E), null != t.name && E.name !== t.name && (E.name = t.name, v = !0), void 0 !== t.avatar && E.avatar !== t.avatar && (E.avatar = t.avatar, v = !0), null != t.channelId && E.channel_id !== t.channelId && (E.channel_id = t.channelId, v = !0), v && N()
+            if (null == g) return !1;
+            g = {
+                ...g
+            }, null != t.name && g.name !== t.name && (g.name = t.name, C = !0), void 0 !== t.avatar && g.avatar !== t.avatar && (g.avatar = t.avatar, C = !0), null != t.channelId && g.channel_id !== t.channelId && (g.channel_id = t.channelId, C = !0), C && S()
         },
         CHANNEL_SETTINGS_CLOSE: function() {
-            i = null, r = null, b = [], E = null, y = m.XlH.CLOSED
+            r = null, i = null, p = [], g = null, I = m.XlH.CLOSED
         },
         WEBHOOKS_UPDATE: function(e) {
             let {
@@ -145,37 +125,39 @@ let x = new j(u.h, __OVERLAY__ ? {} : {
                 channelId: n,
                 webhooks: l
             } = e;
-            if (O = !1, null != r && t === r.id && null != i && n === i.id && null != l && y !== m.XlH.SUBMITTING) {
-                for (let e = b.length - 1; e >= 0; e--) {
-                    let t = b[e];
-                    if (null != n && (null == t ? void 0 : t.channel_id) !== n) continue;
-                    let r = l.find(e => {
+            if (E = !1, null != i && t === i.id && null != r && n === r.id && null != l && I !== m.XlH.SUBMITTING) {
+                for (let e = p.length - 1; e >= 0; e--) {
+                    let t = p[e];
+                    if (null != n && t?.channel_id !== n) continue;
+                    let i = l.find(e => {
                         let {
                             id: n
                         } = e;
                         if (n === t.id) return !0
                     });
-                    if (null != r) {
-                        let n = _({}, t, r);
-                        b[e] = n, v || (null == E ? void 0 : E.id) !== n.id || (E = n)
-                    } else(null == E ? void 0 : E.id) === t.id && (E = null), b.splice(e, 1)
+                    if (null != i) {
+                        let n = {
+                            ...t,
+                            ...i
+                        };
+                        p[e] = n, C || g?.id !== n.id || (g = n)
+                    } else g?.id === t.id && (g = null), p.splice(e, 1)
                 }
-                for (let e of l) null == b.find(t => {
+                for (let e of l) null == p.find(t => {
                     let {
                         id: n
                     } = t;
                     if (n === e.id) return !0
-                }) && b.push(e);
-                b = [...b], N()
+                }) && p.push(e);
+                p = [...p], S()
             }
         },
         INTEGRATION_SETTINGS_SUBMITTING: function() {
-            y = m.XlH.SUBMITTING, I = {}
+            I = m.XlH.SUBMITTING, f = {}
         },
         INTEGRATION_SETTINGS_SAVE_FAILURE: function(e) {
-            var t;
-            if (y !== m.XlH.SUBMITTING) return !1;
-            y = m.XlH.OPEN, I = null != (t = e.errors) ? t : {}
+            if (I !== m.XlH.SUBMITTING) return !1;
+            I = m.XlH.OPEN, f = e.errors ?? {}
         }
     }),
-    P = x
+    b = y

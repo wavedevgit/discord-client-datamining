@@ -2,14 +2,13 @@
 n.d(t, {
     V: () => a
 });
-var r = n(624265),
-    i = n(734057),
+var i = n(624265),
+    r = n(734057),
     l = n(508654);
 
 function a(e) {
-    var t;
-    let n = (0, l.r2)(e),
-        a = (0, r.Ay)(e),
-        s = i.A.getChannel(null == (t = a[0]) ? void 0 : t.id);
-    return null != n ? n : s
+    let t = (0, l.r2)(e),
+        n = (0, i.Ay)(e),
+        a = r.A.getChannel(n[0]?.id);
+    return t ?? a
 }

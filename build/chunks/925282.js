@@ -1,108 +1,80 @@
-/** chunk id: 925282, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => f
+/** chunk id: 925282, original params: e,t,l (module,exports,require) **/
+l.d(t, {
+    A: () => m
 });
-var r = n(627968);
-n(64700);
-var l = n(33851),
-    i = n.n(l),
-    o = n(989349),
-    a = n.n(o),
-    s = n(417597),
-    c = n(266047),
-    u = n(221950),
-    d = n(487518),
-    C = n(985018);
+var n = l(627968);
+l(64700);
+var i = l(33851),
+    a = l.n(i),
+    s = l(989349),
+    r = l.n(s),
+    o = l(417597),
+    C = l(266047),
+    d = l(221950),
+    c = l(487518),
+    u = l(985018);
 
 function m(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = r
-        })
-    }
-    return e
-}
-
-function p(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
-        }
-        return n
-    })(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-
-function f(e) {
     let {
         guildId: t,
-        onClose: n
-    } = e, l = (0, s.bG)([c.A], () => c.A.getSearchStateByGuildId(t), [t], i()), {
-        selectedJoinDateOption: o
-    } = l, {
-        afterDate: f,
-        beforeDate: b,
-        optionId: j
-    } = o, g = j === d.H_.CUSTOM, h = g && null != f ? a()(f).format(d.Ti) : null, x = g && null != b ? a()(b).format(d.Ti) : null;
-    return (0, r.jsx)(d.Ay, {
-        startDateLabel: h,
-        endDateLabel: x,
-        afterDate: f,
-        beforeDate: b,
-        selectedOption: j,
+        onClose: l
+    } = e, i = (0, o.bG)([C.A], () => C.A.getSearchStateByGuildId(t), [t], a()), {
+        selectedJoinDateOption: s
+    } = i, {
+        afterDate: m,
+        beforeDate: x,
+        optionId: h
+    } = s, g = h === c.H_.CUSTOM, _ = g && null != m ? r()(m).format(c.Ti) : null, H = g && null != x ? r()(x).format(c.Ti) : null;
+    return (0, n.jsx)(c.Ay, {
+        startDateLabel: _,
+        endDateLabel: H,
+        afterDate: m,
+        beforeDate: x,
+        selectedOption: h,
         isCustomDateRange: g,
         menuName: "joined-date",
-        accessibilityLabel: C.intl.string(C.t.XMVinX),
-        onClose: n,
-        onSelectDateOption: function(e, n) {
-            let r = null != n ? a()().subtract(n.input, n.unit).valueOf() : null;
-            (0, u.Ld)(t, p(m({}, l), {
+        accessibilityLabel: u.intl.string(u.t.XMVinX),
+        onClose: l,
+        onSelectDateOption: function(e, l) {
+            let n = null != l ? r()().subtract(l.input, l.unit).valueOf() : null;
+            (0, d.Ld)(t, {
+                ...i,
                 selectedJoinDateOption: {
                     optionId: e,
-                    afterDate: r,
+                    afterDate: n,
                     beforeDate: null
                 }
-            }))
+            })
         },
         onToggleCustomDateRange: function() {
-            (0, u.Ld)(t, p(m({}, l), {
+            (0, d.Ld)(t, {
+                ...i,
                 selectedJoinDateOption: {
-                    optionId: d.H_.CUSTOM,
-                    afterDate: g ? f : null,
-                    beforeDate: g ? b : null
+                    optionId: c.H_.CUSTOM,
+                    afterDate: g ? m : null,
+                    beforeDate: g ? x : null
                 }
-            }))
+            })
         },
         onSelectStartDate: function(e) {
-            (0, u.Ld)(t, p(m({}, l), {
+            (0, d.Ld)(t, {
+                ...i,
                 selectedJoinDateOption: {
-                    optionId: d.H_.CUSTOM,
+                    optionId: c.H_.CUSTOM,
                     afterDate: e.valueOf(),
-                    beforeDate: b
+                    beforeDate: x
                 }
-            }))
+            })
         },
         onSelectEndDate: function(e) {
-            (0, u.Ld)(t, p(m({}, l), {
+            (0, d.Ld)(t, {
+                ...i,
                 selectedJoinDateOption: {
-                    optionId: d.H_.CUSTOM,
-                    afterDate: f,
+                    optionId: c.H_.CUSTOM,
+                    afterDate: m,
                     beforeDate: e.valueOf()
                 }
-            }))
+            })
         }
     })
 }

@@ -2,16 +2,16 @@
 n.d(t, {
     A: () => o
 });
-var r = n(627968),
-    i = n(503698),
-    l = n.n(i),
-    s = n(158954),
-    a = n(430085);
+var i = n(627968),
+    s = n(503698),
+    a = n.n(s),
+    r = n(158954),
+    l = n(430085);
 let o = e => {
     let {
         className: t
     } = e;
-    return (0, r.jsx)(s.cGx, {
-        className: l()(a.y, t)
+    return (0, i.jsx)(r.cGx, {
+        className: a()(l.y, t)
     })
 }

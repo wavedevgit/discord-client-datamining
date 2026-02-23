@@ -1,96 +1,64 @@
 /** chunk id: 970244, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    CI: () => v,
-    Re: () => A,
-    c_: () => f,
-    e0: () => y,
-    kM: () => b,
+    CI: () => E,
+    Re: () => g,
+    c_: () => h,
+    e0: () => _,
+    kM: () => p,
     kb: () => m,
-    s: () => _,
-    xP: () => g
+    s: () => f,
+    xP: () => A
 }), n(321073);
-var l = n(627968),
-    r = n(989349),
-    i = n.n(r),
+var i = n(627968),
+    l = n(989349),
+    s = n.n(l),
     a = n(397927),
-    s = n(626584),
+    r = n(626584),
     o = n(151282),
     c = n(896455),
-    u = n(23395),
-    d = n(985018);
+    d = n(23395),
+    u = n(985018);
 
 function h(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            l = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), l.forEach(function(t) {
-            var l;
-            l = n[t], t in e ? Object.defineProperty(e, t, {
-                value: l,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = l
-        })
-    }
-    return e
-}
-
-function p(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var l = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, l)
-        }
-        return n
-    })(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-
-function f(e) {
-    let t = d.intl.formatToPlainString(d.t["CvHu/j"], {
+    let t = u.intl.formatToPlainString(u.t["CvHu/j"], {
         timestamp: new Date(e).valueOf()
     });
     (0, a.showToast)((0, a.createToast)(t, a.ToastType.SUCCESS))
 }
 
 function m() {
-    (0, a.showToast)((0, a.createToast)(d.intl.string(d.t.MXsMRk), a.ToastType.SUCCESS))
+    (0, a.showToast)((0, a.createToast)(u.intl.string(u.t.MXsMRk), a.ToastType.SUCCESS))
 }
 
-function g(e) {
-    (0, a.showToast)((0, a.createToast)(d.intl.formatToPlainString(d.t.slM6In, {
+function A(e) {
+    (0, a.showToast)((0, a.createToast)(u.intl.formatToPlainString(u.t.slM6In, {
         error: e
     }), a.ToastType.FAILURE))
 }
 
-function A() {
-    (0, a.showToast)((0, a.createToast)(d.intl.string(d.t["JF/LWn"]), a.ToastType.SUCCESS))
+function g() {
+    (0, a.showToast)((0, a.createToast)(u.intl.string(u.t["JF/LWn"]), a.ToastType.SUCCESS))
 }
 
-function b(e) {
-    (0, a.showToast)((0, a.createToast)(d.intl.formatToPlainString(d.t.sUvyW3, {
+function p(e) {
+    (0, a.showToast)((0, a.createToast)(u.intl.formatToPlainString(u.t.sUvyW3, {
         error: e
     }), a.ToastType.FAILURE))
 }
 
-function _(e) {
+function f(e) {
     let {
         channel: t
-    } = e, n = i()().add(1, "day").startOf("day").set("hours", 9), r = i()().add(1, "day").startOf("day").set("hours", 13), s = i()().startOf("isoWeek").add(1, "week").set("hours", 9), c = [{
-        display: d.intl.string(d.t.tjIn9i),
+    } = e, n = s()().add(1, "day").startOf("day").set("hours", 9), l = s()().add(1, "day").startOf("day").set("hours", 13), r = s()().startOf("isoWeek").add(1, "week").set("hours", 9), c = [{
+        display: u.intl.string(u.t.tjIn9i),
         value: n
     }, {
-        display: d.intl.string(d.t.EMRZyS),
-        value: r
+        display: u.intl.string(u.t.EMRZyS),
+        value: l
     }, {
-        display: d.intl.string(d.t["+P5MmK"]),
-        value: s
-    }].map(e => (0, l.jsx)(a.Drp, {
+        display: u.intl.string(u.t["+P5MmK"]),
+        value: r
+    }].map(e => (0, i.jsx)(a.Drp, {
         id: e.display,
         label: e.display,
         action: () => (0, o.yF)({
@@ -98,36 +66,37 @@ function _(e) {
             scheduledTimestamp: e.value.toISOString()
         })
     }, e.display));
-    return c.push((0, l.jsxs)(l.Fragment, {
-        children: [(0, l.jsx)(a.bXX, {}), (0, l.jsx)(a.Drp, {
+    return c.push((0, i.jsxs)(i.Fragment, {
+        children: [(0, i.jsx)(a.bXX, {}), (0, i.jsx)(a.Drp, {
             id: "custom-time",
-            label: d.intl.string(d.t.stHooC),
-            action: () => y({
+            label: u.intl.string(u.t.stHooC),
+            action: () => _({
                 channel: t
             })
         }, "custom-time")]
     })), c
 }
 
-function y(e) {
+function _(e) {
     let {
         channel: t,
-        defaultValue: r = i()().startOf("hour").add(1, "hour")
+        defaultValue: l = s()().startOf("hour").add(1, "hour")
     } = e;
     (0, a.mMO)(async () => {
         let {
             default: e
         } = await Promise.resolve().then(n.bind(n, 896455));
-        return n => (0, l.jsx)(e, p(h({}, n), {
+        return n => (0, i.jsx)(e, {
+            ...n,
             channel: t,
-            defaultValue: r
-        }))
+            defaultValue: l
+        })
     }, {
         modalKey: c.t
     })
 }
 
-function v(e) {
+function E(e) {
     let {
         scheduledMessage: t
     } = e;
@@ -135,11 +104,12 @@ function v(e) {
         let {
             default: e
         } = await Promise.resolve().then(n.bind(n, 23395));
-        return n => (0, l.jsx)(e, p(h({}, n), {
+        return n => (0, i.jsx)(e, {
+            ...n,
             scheduledMessage: t
-        }))
+        })
     }, {
-        modalKey: u.B
+        modalKey: d.B
     })
 }
-new s.A("Scheduled Messages")
+new r.A("Scheduled Messages")

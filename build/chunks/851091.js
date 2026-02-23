@@ -1,62 +1,62 @@
-/** chunk id: 851091, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => m
+/** chunk id: 851091, original params: e,t,l (module,exports,require) **/
+l.d(t, {
+    A: () => x
 });
-var l = n(627968);
-n(64700);
-var i = n(284009),
-    s = n.n(i),
-    r = n(158954),
-    a = n(397927),
-    c = n(263063),
-    o = n(976860),
-    d = n(985018),
-    u = n(100135);
+var i = l(627968);
+l(64700);
+var s = l(284009),
+    a = l.n(s),
+    n = l(158954),
+    r = l(397927),
+    c = l(263063),
+    d = l(976860),
+    o = l(985018),
+    u = l(100135);
 
-function m(e) {
+function x(e) {
     let {
         directoryGuildName: t,
-        guildToAdd: n,
-        isExistingGuildFlow: i,
-        onClose: m
+        guildToAdd: l,
+        isExistingGuildFlow: s,
+        onClose: x
     } = e;
-    return s()(null != n, "Missing guild in Hub add guild confirmation"), (0, l.jsxs)(l.Fragment, {
-        children: [(0, l.jsx)(r.cwr, {
-            children: (0, l.jsxs)("div", {
+    return a()(null != l, "Missing guild in Hub add guild confirmation"), (0, i.jsxs)(i.Fragment, {
+        children: [(0, i.jsx)(n.cwr, {
+            children: (0, i.jsxs)("div", {
                 className: u.Qs,
-                children: [(0, l.jsx)(c.A, {
-                    guild: n,
+                children: [(0, i.jsx)(c.A, {
+                    guild: l,
                     size: c.A.Sizes.XLARGE,
                     active: !0
-                }), (0, l.jsx)(a.Heading, {
+                }), (0, i.jsx)(r.Heading, {
                     className: u.DD,
                     variant: "heading-xl/semibold",
-                    children: d.intl.string(d.t.CueiPY)
-                }), (0, l.jsx)(a.Text, {
+                    children: o.intl.string(o.t.CueiPY)
+                }), (0, i.jsx)(r.Text, {
                     color: "text-default",
                     variant: "text-md/normal",
-                    children: i ? d.intl.formatToPlainString(d.t.R7Pqn5, {
+                    children: s ? o.intl.formatToPlainString(o.t.R7Pqn5, {
                         guildName: t
-                    }) : d.intl.formatToPlainString(d.t.eIxPSv, {
+                    }) : o.intl.formatToPlainString(o.t.eIxPSv, {
                         guildName: t
                     })
                 })]
             })
-        }), (0, l.jsx)(r.H7u, {
+        }), (0, i.jsx)(n.H7u, {
             actionsFullWidth: !0,
-            actions: i ? [{
-                text: d.intl.string(d.t["X0WK+6"]),
+            actions: s ? [{
+                text: o.intl.string(o.t["X0WK+6"]),
                 variant: "primary",
-                onClick: m
+                onClick: x
             }] : [{
-                text: d.intl.string(d.t["X/VABv"]),
+                text: o.intl.string(o.t["X/VABv"]),
                 variant: "secondary",
-                onClick: m
+                onClick: x
             }, {
-                text: d.intl.string(d.t.DymAQt),
+                text: o.intl.string(o.t.DymAQt),
                 variant: "primary",
                 onClick: () => {
-                    (0, o.uh)(n.id), null == m || m()
+                    (0, d.uh)(l.id), x?.()
                 }
             }]
         })]

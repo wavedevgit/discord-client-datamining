@@ -1,56 +1,56 @@
 /** chunk id: 986294, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => P
-}), n(896048);
+    A: () => w
+});
 var a = n(627968),
-    l = n(64700),
-    r = n(503698),
-    i = n.n(r),
-    s = n(735438),
-    o = n.n(s),
-    c = n(681154),
-    d = n(306264),
+    i = n(64700),
+    s = n(503698),
+    l = n.n(s),
+    r = n(735438),
+    o = n.n(r),
+    d = n(681154),
+    c = n(306264),
     u = n(311907),
     m = n(506774),
-    p = n(397927),
-    h = n(73153),
-    x = n(587895),
+    h = n(397927),
+    x = n(73153),
+    p = n(587895),
     g = n(429913),
-    f = n(303054),
-    b = n(409626),
-    v = n(692969),
-    j = n(760751),
-    _ = n(403362),
-    y = n(603047),
+    _ = n(303054),
+    f = n(409626),
+    b = n(692969),
+    v = n(760751),
+    j = n(403362),
+    C = n(603047),
     A = n(435738),
-    C = n(99753),
+    T = n(99753),
     S = n(868068),
-    O = n(476398),
-    T = n(405311),
-    E = n(424994),
-    N = n(750100),
-    w = n(661251);
-let I = [{
+    y = n(476398),
+    E = n(405311),
+    N = n(424994),
+    I = n(750100),
+    k = n(661251);
+let R = [{
     key: "type",
-    cellClassName: i()(N.Hn, N.T$),
+    cellClassName: l()(I.Hn, I.T$),
     render(e) {
         let {
             type: t
         } = e;
-        return (0, a.jsx)(p.Text, {
+        return (0, a.jsx)(h.Text, {
             variant: "text-md/semibold",
-            children: c.ContentInventoryEntryType[t]
+            children: d.ContentInventoryEntryType[t]
         })
     }
 }, {
     key: "count",
-    cellClassName: i()(N.Hn, N.MX),
+    cellClassName: l()(I.Hn, I.MX),
     render(e) {
         let {
             entries: t
         } = e;
         return (0, a.jsx)("div", {
-            children: (0, a.jsx)(p.Text, {
+            children: (0, a.jsx)(h.Text, {
                 variant: "text-md/normal",
                 children: t.length
             })
@@ -58,176 +58,169 @@ let I = [{
     }
 }, {
     key: "only?",
-    cellClassName: N.Hn,
+    cellClassName: I.Hn,
     render(e) {
         let {
             type: t
         } = e;
-        return (0, a.jsx)(k, {
+        return (0, a.jsx)(O, {
             type: t
         })
     }
 }];
 
-function k(e) {
-    var t, n;
+function O(e) {
     let {
-        type: l
-    } = e, r = (0, u.bG)([C.A], () => C.A.getFilters()), i = null != (t = null == r || null == (n = r.types) ? void 0 : n.has(l)) && t;
-    return (0, a.jsx)(p.dOG, {
+        type: t
+    } = e, n = (0, u.bG)([T.A], () => T.A.getFilters()), i = n?.types?.has(t) ?? !1;
+    return (0, a.jsx)(h.dOG, {
         checked: i,
         onChange: function() {
-            i ? h.h.dispatch({
+            i ? x.h.dispatch({
                 type: "CONTENT_INVENTORY_SET_FILTERS",
                 filters: void 0
-            }) : h.h.dispatch({
+            }) : x.h.dispatch({
                 type: "CONTENT_INVENTORY_SET_FILTERS",
                 filters: {
-                    types: new Set([l])
+                    types: new Set([t])
                 }
             })
         }
     })
 }
 
-function P() {
-    var e, t, n;
-    let r, i = (0, u.bG)([C.A], () => C.A.getFeed(E.X1.GLOBAL_FEED)),
-        s = (0, u.bG)([C.A], () => C.A.getDebugImpressionCappingDisabled()),
-        c = (0, u.bG)([A.A], () => A.A.getDebugFastImpressionCappingEnabled()),
-        k = (n = null == i || null == (t = i.entries) ? void 0 : t.map(e => e.content), Object.keys(r = o().groupBy(n, e => e.content_type)).map(e => {
-            let t = r[e];
+function w() {
+    var e;
+    let t, n = (0, u.bG)([T.A], () => T.A.getFeed(N.X1.GLOBAL_FEED)),
+        s = (0, u.bG)([T.A], () => T.A.getDebugImpressionCappingDisabled()),
+        l = (0, u.bG)([A.A], () => A.A.getDebugFastImpressionCappingEnabled()),
+        r = (e = n?.entries?.map(e => e.content), Object.keys(t = o().groupBy(e, e => e.content_type)).map(e => {
+            let n = t[e];
             return {
-                key: "".concat(e),
-                type: t[0].content_type,
-                entries: t
+                key: `${e}`,
+                type: n[0].content_type,
+                entries: n
             }
         })),
-        P = (0, u.bG)([C.A], () => {
-            var e;
-            return (null == (e = C.A.getFeedState(E.X1.GLOBAL_FEED)) ? void 0 : e.loading) === !0
-        }),
-        [D, M] = l.useState(""),
-        L = (0, u.bG)([j.A, x.A], () => {
-            var e, t, n;
-            return parseInt(D) > 0 ? D : null != (e = null == (t = j.A.getGameByName(D)) ? void 0 : t.id) ? e : null == (n = x.A.getApplicationByName(D)) ? void 0 : n.id
-        }, [D]),
-        U = (0, v.A)({
-            applicationId: L,
+        d = (0, u.bG)([T.A], () => T.A.getFeedState(N.X1.GLOBAL_FEED)?.loading === !0),
+        [O, w] = i.useState(""),
+        M = (0, u.bG)([v.A, p.A], () => parseInt(O) > 0 ? O : v.A.getGameByName_DEPRECATED_DO_NOT_USE(O)?.id ?? p.A.getApplicationByName(O)?.id, [O]),
+        P = (0, b.A)({
+            applicationId: M,
             location: "DevToolsContentInventory",
-            source: b.Ob.DevTools
+            source: f.Ob.DevTools
         }),
-        B = Object.entries(null != (e = m.w.get("GameProfileModal")) ? e : {}).filter(e => {
+        L = Object.entries(m.w.get("GameProfileModal") ?? {}).filter(e => {
             let [t, n] = e;
             return n
         }).map(e => {
             let [t] = e;
             return t
         }),
-        G = (0, g.A)(B).filter(_.Vq),
-        F = (0, u.bG)([y.A], () => y.A.getFakeGameToShow());
+        U = (0, g.A)(L).filter(j.Vq),
+        B = (0, u.bG)([C.A], () => C.A.getFakeGameToShow());
     return (0, a.jsx)("div", {
-        className: w.nd,
-        children: (0, a.jsxs)(p.IpV, {
-            className: N.Qs,
-            children: [(0, a.jsxs)(p.BJc, {
+        className: k.nd,
+        children: (0, a.jsxs)(h.IpV, {
+            className: I.Qs,
+            children: [(0, a.jsxs)(h.BJc, {
                 gap: 8,
-                children: [(0, a.jsx)(p.Text, {
+                children: [(0, a.jsx)(h.Text, {
                     variant: "text-md/semibold",
                     children: "Inventory"
-                }), k.length > 0 && (0, a.jsx)(f.A, {
-                    columns: I,
-                    data: k
-                }), (0, a.jsx)(T.A, {}), (0, a.jsx)(p.Button, {
+                }), r.length > 0 && (0, a.jsx)(_.A, {
+                    columns: R,
+                    data: r
+                }), (0, a.jsx)(E.A, {}), (0, a.jsx)(h.Button, {
                     variant: "primary",
                     text: "Refresh Now",
                     fullWidth: !0,
                     onClick: function() {
-                        h.h.dispatch({
+                        x.h.dispatch({
                             type: "CONTENT_INVENTORY_MANUAL_REFRESH",
-                            feedId: E.X1.GLOBAL_FEED,
-                            feature: d.M.INBOX
+                            feedId: N.X1.GLOBAL_FEED,
+                            feature: c.M.INBOX
                         })
                     },
-                    loading: P
+                    loading: d
                 })]
-            }), (0, a.jsxs)(p.BJc, {
+            }), (0, a.jsxs)(h.BJc, {
                 gap: 8,
-                children: [(0, a.jsx)(p.Text, {
+                children: [(0, a.jsx)(h.Text, {
                     variant: "text-md/semibold",
                     children: "Impression Capping"
-                }), (0, a.jsx)(p.Button, {
+                }), (0, a.jsx)(h.Button, {
                     variant: "primary",
                     text: "Clear Impressions",
                     fullWidth: !0,
                     onClick: function() {
-                        h.h.dispatch({
+                        x.h.dispatch({
                             type: "CONTENT_INVENTORY_DEBUG_CLEAR_IMPRESSIONS"
                         })
                     }
-                }), (0, a.jsx)(p.Button, {
+                }), (0, a.jsx)(h.Button, {
                     variant: "primary",
                     text: "Log Impressions",
                     fullWidth: !0,
                     onClick: function() {
-                        h.h.dispatch({
+                        x.h.dispatch({
                             type: "CONTENT_INVENTORY_DEBUG_LOG_IMPRESSIONS"
                         })
                     }
-                }), (0, a.jsx)(p.Button, {
+                }), (0, a.jsx)(h.Button, {
                     variant: "primary",
                     text: s ? "Enable Impression Capping" : "Disable Impression Capping",
                     fullWidth: !0,
                     onClick: function() {
-                        h.h.dispatch({
+                        x.h.dispatch({
                             type: "CONTENT_INVENTORY_DEBUG_TOGGLE_IMPRESSION_CAPPING"
                         })
                     }
-                }), (0, a.jsx)(p.Button, {
+                }), (0, a.jsx)(h.Button, {
                     variant: "primary",
-                    text: c ? "Disable Fast Impression Capping" : "Enable Fast Impression Capping",
+                    text: l ? "Disable Fast Impression Capping" : "Enable Fast Impression Capping",
                     fullWidth: !0,
                     onClick: function() {
-                        h.h.dispatch({
+                        x.h.dispatch({
                             type: "CONTENT_INVENTORY_DEBUG_TOGGLE_FAST_IMPRESSION_CAPPING"
                         })
                     }
                 })]
-            }), !1, (0, a.jsx)(O.A, {}), (0, a.jsxs)(p.BJc, {
+            }), !1, (0, a.jsx)(y.A, {}), (0, a.jsxs)(h.BJc, {
                 gap: 8,
-                children: [(0, a.jsx)(p.Text, {
+                children: [(0, a.jsx)(h.Text, {
                     variant: "text-md/semibold",
                     children: "Game Profile"
-                }), (0, a.jsx)(p.ksK, {
+                }), (0, a.jsx)(h.ksK, {
                     placeholder: "App ID or full name",
-                    onChange: e => (0 === e.length || e.length >= 18) && M(e),
+                    onChange: e => (0 === e.length || e.length >= 18) && w(e),
                     onKeyDown: e => {
-                        "Enter" === e.key && (D === e.currentTarget.value ? null == U || U(e) : M(e.currentTarget.value))
+                        "Enter" === e.key && (O === e.currentTarget.value ? P?.(e) : w(e.currentTarget.value))
                     },
-                    error: D.length > 0 && null == U ? "No game profile for ".concat(null != L ? L : D + " - try by id", ".") : void 0,
-                    helperText: null != U ? "Game profile found" : void 0
+                    error: O.length > 0 && null == P ? `No game profile for ${M??O+" - try by id"}.` : void 0,
+                    helperText: null != P ? "Game profile found" : void 0
                 }), (0, a.jsx)("ul", {
-                    children: G.map(e => (0, a.jsx)("li", {
-                        children: (0, a.jsx)(R, {
+                    children: U.map(e => (0, a.jsx)("li", {
+                        children: (0, a.jsx)(D, {
                             application: e
                         })
-                    }, "follow-game-".concat(e.id)))
+                    }, `follow-game-${e.id}`))
                 })]
-            }), (0, a.jsxs)(p.BJc, {
+            }), (0, a.jsxs)(h.BJc, {
                 gap: 8,
-                children: [(0, a.jsx)(p.Text, {
+                children: [(0, a.jsx)(h.Text, {
                     variant: "text-md/semibold",
                     children: "Activity Sharing"
-                }), (0, a.jsx)(p.l6P, {
+                }), (0, a.jsx)(h.l6P, {
                     label: "Force show game",
                     options: S.K.map(e => ({
                         label: e,
                         value: e,
                         id: e
                     })),
-                    value: F,
+                    value: B,
                     onSelectionChange: function(e) {
-                        h.h.dispatch({
+                        x.h.dispatch({
                             type: "CONTENT_INVENTORY_FORCE_SHOW_GAME_SHARING",
                             gameToShow: e
                         })
@@ -239,17 +232,17 @@ function P() {
         })
     })
 }
-let R = e => {
+let D = e => {
     let {
         application: t
-    } = e, n = (0, v.A)({
+    } = e, n = (0, b.A)({
         applicationId: t.id,
         location: "DevToolsContentInventory",
-        source: b.Ob.DevTools
+        source: f.Ob.DevTools
     });
-    return (0, a.jsx)(p.DUT, {
+    return (0, a.jsx)(h.DUT, {
         onClick: n,
-        children: (0, a.jsx)(p.Text, {
+        children: (0, a.jsx)(h.Text, {
             variant: "text-xs/normal",
             color: "text-muted",
             children: t.name

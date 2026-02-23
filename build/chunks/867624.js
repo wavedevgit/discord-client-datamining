@@ -1,35 +1,36 @@
 /** chunk id: 867624, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => h
+    A: () => A
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var l = n(311907),
-    i = n(397927),
-    s = n(863922),
+var s = n(311907),
+    l = n(397927),
+    r = n(863922),
     a = n(513272),
     o = n(954571),
     c = n(58736),
-    u = n(652215),
-    d = n(521732),
-    p = n(985018);
+    d = n(652215),
+    u = n(521732),
+    h = n(985018);
 
-function h(e) {
+function A(e) {
     let {
         channel: t
-    } = e, n = (0, l.bG)([a.A], () => a.A.shouldShowTopicsBar());
-    return (0, r.jsx)(c.Ay.Icon, {
-        icon: i.Kck,
+    } = e, n = (0, s.bG)([a.A], () => a.A.shouldShowTopicsBar());
+    return (0, i.jsx)(c.Ay.Icon, {
+        icon: l.Kck,
         onClick: () => {
-            o.default.track(u.HAw.SUMMARIES_SIDEBAR_TOGGLED, {
+            o.default.track(d.HAw.SUMMARIES_SIDEBAR_TOGGLED, {
                 summaries_sidebar_open: !n,
-                source: d.er.TOOLBAR_BUTTON,
+                source: u.er.TOOLBAR_BUTTON,
                 guild_id: t.guild_id,
                 channel_id: t.id,
                 channel_type: t.type
-            }), (0, s.Oz)()
+            }), (0, r.Oz)()
         },
-        tooltip: n ? p.intl.string(p.t.nGs3kO) : p.intl.string(p.t.bIm2sF),
+        tooltip: n ? h.intl.string(h.t.nGs3kO) : h.intl.string(h.t.bIm2sF),
         selected: n,
         "aria-expanded": n
     })

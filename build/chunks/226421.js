@@ -2,20 +2,20 @@
 n.d(t, {
     A: () => o
 });
-var l = n(627968);
+var i = n(627968);
 n(64700);
-var r = n(503698),
-    i = n.n(r),
+var l = n(503698),
+    s = n.n(l),
     a = n(397927),
-    s = n(793109);
+    r = n(793109);
 
 function o(e) {
     let {
         className: t
     } = e;
-    return (0, l.jsx)("div", {
-        className: i()(s.L, t),
-        children: (0, l.jsx)(a.LK_, {
+    return (0, i.jsx)("div", {
+        className: s()(r.L, t),
+        children: (0, i.jsx)(a.LK_, {
             size: "lg",
             color: "currentColor"
         })

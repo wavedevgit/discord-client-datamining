@@ -1,10 +1,10 @@
 /** chunk id: 150639, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    v: () => _
-}), n(446912), n(896048);
+    v: () => E
+});
 var l = n(627968),
-    r = n(64700),
-    i = n(158954),
+    i = n(64700),
+    r = n(158954),
     a = n(311907),
     s = n(508675),
     u = n(263063),
@@ -14,78 +14,76 @@ var l = n(627968),
     m = n(711014),
     h = n(403362),
     g = n(473145),
-    b = n(80569),
-    f = n(652215),
-    j = n(985018);
-let v = e => ({
+    x = n(80569),
+    j = n(652215),
+    f = n(985018);
+let _ = e => ({
         label: e.name,
         value: e.id
     }),
-    x = e => d.A.can(f.xBc.CREATE_GUILD_EXPRESSIONS, e),
-    _ = e => {
+    b = e => d.A.can(j.xBc.CREATE_GUILD_EXPRESSIONS, e),
+    E = e => {
         let {
             onChange: t,
             selected: n,
             onError: d,
-            labelledBy: _,
-            isEmojiAnimated: E,
-            label: O,
-            required: p,
-            errorMessage: y
-        } = e, S = (0, a.cf)([c.A, m.Ay], () => Object.fromEntries(m.Ay.getFlattenedGuildIds().map(e => c.A.getGuild(e)).filter(h.Vq).map(e => [e.id, e]))), I = (0, a.cf)([s.Ay], () => Object.fromEntries(Object.entries(S).map(e => {
+            labelledBy: E,
+            isEmojiAnimated: v,
+            label: I,
+            required: A,
+            errorMessage: S
+        } = e, N = (0, a.cf)([c.A, m.Ay], () => Object.fromEntries(m.Ay.getFlattenedGuildIds().map(e => c.A.getGuild(e)).filter(h.Vq).map(e => [e.id, e]))), p = (0, a.cf)([s.Ay], () => Object.fromEntries(Object.entries(N).map(e => {
             let [t, n] = e;
             return [t, function(e) {
-                var t;
                 let {
-                    guild: n,
-                    emojis: l,
-                    isEmojiAnimated: r
-                } = e, i = null != (t = l.filter(e => e.animated === r && !(0, o.Eg)(e, n.id)).length) ? t : 0;
-                return (0, g.sN)(n) - i
+                    guild: t,
+                    emojis: n,
+                    isEmojiAnimated: l
+                } = e, i = n.filter(e => e.animated === l && !(0, o.Eg)(e, t.id)).length ?? 0;
+                return (0, g.sN)(t) - i
             }({
                 guild: n,
                 emojis: s.Ay.getGuildEmoji(t),
-                isEmojiAnimated: E
+                isEmojiAnimated: v
             })]
-        })), [S, E]), A = r.useMemo(() => Object.values(S).filter(x).map(v), [S]), N = r.useCallback(e => {
+        })), [N, v]), O = i.useMemo(() => Object.values(N).filter(b).map(_), [N]), C = i.useCallback(e => {
             let {
                 value: t,
                 label: n,
-                disabled: r
+                disabled: i
             } = e;
             return {
                 id: String(t),
                 value: t,
                 label: n,
-                disabled: r,
+                disabled: i,
                 leading: (e => {
                     if (null == e.value) return null;
-                    let t = S[e.value];
+                    let t = N[e.value];
                     return null == t ? null : (0, l.jsx)(u.A, {
                         guild: t,
                         size: u.A.Sizes.SMALLER,
                         active: !0
                     })
                 })(e),
-                trailing: null == e.value ? null : j.intl.formatToPlainString(j.t.WkK72v, {
-                    count: I[e.value]
+                trailing: null == e.value ? null : f.intl.formatToPlainString(f.t.WkK72v, {
+                    count: p[e.value]
                 })
             }
-        }, [I, S]);
-        return r.useEffect(() => {
-            var e;
-            A.length < 1 ? d(b.j.NO_PERMISSIONS) : null != n && (null != (e = null == I ? void 0 : I[n]) ? e : 0) < 1 ? d(f.t02.TOO_MANY_EMOJI) : d(null)
-        }, [A, t, d, n, I]), (0, l.jsx)(i.l6P, {
-            label: O,
-            required: p,
+        }, [p, N]);
+        return i.useEffect(() => {
+            O.length < 1 ? d(x.j.NO_PERMISSIONS) : null != n && (p?.[n] ?? 0) < 1 ? d(j.t02.TOO_MANY_EMOJI) : d(null)
+        }, [O, t, d, n, p]), (0, l.jsx)(r.l6P, {
+            label: I,
+            required: A,
             selectionMode: "single",
-            errorMessage: y,
+            errorMessage: S,
             onSelectionChange: t,
-            options: A,
-            formatOption: N,
+            options: O,
+            formatOption: C,
             value: n,
-            "aria-labelledby": _,
-            placeholder: A.length < 1 ? j.intl.string(j.t.jHpxwo) : j.intl.string(j.t["4mqeQO"]),
-            disabled: A.length < 1
+            "aria-labelledby": E,
+            placeholder: O.length < 1 ? f.intl.string(f.t.jHpxwo) : f.intl.string(f.t["4mqeQO"]),
+            disabled: O.length < 1
         })
     }

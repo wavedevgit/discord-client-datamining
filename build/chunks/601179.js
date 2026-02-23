@@ -1,38 +1,38 @@
 /** chunk id: 601179, original params: e,t,r (module,exports,require) **/
 r.d(t, {
     A: () => i
-}), r(896048), r(321073);
-var n = r(64700),
-    l = r(85109),
-    s = r(470654);
+}), r(321073);
+var s = r(64700),
+    n = r(85109),
+    l = r(470654);
 
 function a() {
-    return l.A.getSavedMessages().map(e => e.saveData)
+    return n.A.getSavedMessages().map(e => e.saveData)
 }
 
 function i() {
-    let [e, t] = n.useState(a), r = n.useRef(l.A.getIsStale());
-    return n.useEffect(() => {
-        let e = l.A.getLastChanged();
+    let [e, t] = s.useState(a), r = s.useRef(n.A.getIsStale());
+    return s.useEffect(() => {
+        let e = n.A.getLastChanged();
 
-        function n() {
-            let n = l.A.getLastChanged();
-            if (e !== n) {
-                if (e = n, r.current && !l.A.getIsStale()) {
+        function s() {
+            let s = n.A.getLastChanged();
+            if (e !== s) {
+                if (e = s, r.current && !n.A.getIsStale()) {
                     r.current = !1, t(a());
                     return
                 }
                 t(e => {
                     let t = [...e],
-                        r = new Map(l.A.getSavedMessages().map(e => [e.saveData.messageId, e]));
-                    for (let n of e) r.has(n.messageId) ? r.delete(n.messageId) : t.splice(t.indexOf(n), 1);
+                        r = new Map(n.A.getSavedMessages().map(e => [e.saveData.messageId, e]));
+                    for (let s of e) r.has(s.messageId) ? r.delete(s.messageId) : t.splice(t.indexOf(s), 1);
                     for (let e of r.values()) t.push(e.saveData);
                     return t
                 })
             }
         }
-        return l.A.addChangeListener(n), () => {
-            l.A.removeChangeListener(n)
+        return n.A.addChangeListener(s), () => {
+            n.A.removeChangeListener(s)
         }
-    }, []), (0, s.A)(), e
+    }, []), (0, l.A)(), e
 }

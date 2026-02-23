@@ -1,116 +1,91 @@
 /** chunk id: 179242, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => y
+    A: () => x
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var l = n(163126),
-    i = n(688810),
-    s = n(114212),
+var s = n(163126),
+    l = n(688810),
+    r = n(114212),
     a = n(345942),
     o = n(183555),
     c = n(913453),
-    u = n(229187),
-    d = n(657331),
-    p = n(21241),
-    h = n(503062),
-    g = n(51943),
-    f = n(946356),
+    d = n(229187),
+    u = n(657331),
+    h = n(21241),
+    A = n(503062),
+    p = n(51943),
+    g = n(946356),
     m = n(359656),
-    b = n(985018),
-    A = n(576968);
+    _ = n(985018),
+    f = n(576968);
 
-function y(e) {
+function x(e) {
     let {
         user: t,
         channelId: n
     } = e, {
-        analyticsLocations: y
-    } = (0, i.Ay)(), {
-        context: O
-    } = (0, o.NJ)(), j = (0, l.A)(), {
-        mutualFriendsCount: x,
-        mutualFriends: _,
-        mutualGuilds: v
-    } = (0, c.A)(t), E = !t.bot && null != x && x > 0, C = null != v && v.length > 0;
-    return E || C ? (0, r.jsxs)(f.A.Overlay, {
-        className: A.Lw,
-        children: [C && (0, r.jsx)(m.A, {
+        analyticsLocations: x
+    } = (0, l.Ay)(), {
+        context: C
+    } = (0, o.NJ)(), E = (0, s.A)(), {
+        mutualFriendsCount: I,
+        mutualFriends: b,
+        mutualGuilds: N
+    } = (0, c.A)(t), S = !t.bot && null != I && I > 0, T = null != N && N.length > 0;
+    return S || T ? (0, i.jsxs)(g.A.Overlay, {
+        className: f.Lw,
+        children: [T && (0, i.jsx)(m.A, {
             section: "MUTUAL_GUILDS",
-            header: b.intl.string(b.t["4lTDZq"]),
-            listClassName: A.p_,
-            items: v.map(e => {
+            header: _.intl.string(_.t["4lTDZq"]),
+            listClassName: f.p_,
+            items: N.map(e => {
                 let {
                     guild: n,
-                    nick: l
+                    nick: s
                 } = e;
-                return (0, r.jsx)(g.A, {
+                return (0, i.jsx)(p.A, {
                     user: t,
                     guild: n,
-                    nick: l,
+                    nick: s,
                     onSelect: () => (0, a.u)(n.id)
                 }, n.id)
             })
-        }), C && E && (0, r.jsx)(p.A, {
-            className: A.yF
-        }), E && (0, r.jsx)(m.A, {
+        }), T && S && (0, i.jsx)(h.A, {
+            className: f.yF
+        }), S && (0, i.jsx)(m.A, {
             section: "MUTUAL_FRIENDS",
-            header: b.intl.string(b.t["0mTJ3j"]),
-            listClassName: A.p_,
-            onExpand: () => (0, u.A)(t.id, j),
-            items: null == _ ? Array.from({
-                length: x
-            }).map((e, t) => (0, r.jsxs)("div", {
-                className: A.nC,
-                children: [(0, r.jsx)(s.FQ, {
+            header: _.intl.string(_.t["0mTJ3j"]),
+            listClassName: f.p_,
+            onExpand: () => (0, d.A)(t.id, E),
+            items: null == b ? Array.from({
+                length: I
+            }).map((e, t) => (0, i.jsxs)("div", {
+                className: f.nC,
+                children: [(0, i.jsx)(r.FQ, {
                     width: 40,
                     opacity: .08
-                }), (0, r.jsx)(s.FQ, {
+                }), (0, i.jsx)(r.FQ, {
                     width: 135,
                     opacity: .08
                 })]
-            }, t)) : _.map(e => {
+            }, t)) : b.map(e => {
                 let {
                     key: t,
-                    user: l,
-                    status: i
+                    user: s,
+                    status: l
                 } = e;
-                return (0, r.jsx)(h.A, {
-                    user: l,
-                    status: i,
+                return (0, i.jsx)(A.A, {
+                    user: s,
+                    status: l,
                     channelId: n,
                     onSelect: () => {
-                        var e, t;
-                        (0, d.openUserProfileModal)((e = function(e) {
-                            for (var t = 1; t < arguments.length; t++) {
-                                var n = null != arguments[t] ? arguments[t] : {},
-                                    r = Object.keys(n);
-                                "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                                    return Object.getOwnPropertyDescriptor(n, e).enumerable
-                                }))), r.forEach(function(t) {
-                                    var r;
-                                    r = n[t], t in e ? Object.defineProperty(e, t, {
-                                        value: r,
-                                        enumerable: !0,
-                                        configurable: !0,
-                                        writable: !0
-                                    }) : e[t] = r
-                                })
-                            }
-                            return e
-                        }({}, O), t = t = {
-                            userId: l.id,
-                            sourceAnalyticsLocations: y
-                        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-                            var n = Object.keys(e);
-                            if (Object.getOwnPropertySymbols) {
-                                var r = Object.getOwnPropertySymbols(e);
-                                n.push.apply(n, r)
-                            }
-                            return n
-                        })(Object(t)).forEach(function(n) {
-                            Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-                        }), e))
+                        (0, u.openUserProfileModal)({
+                            ...C,
+                            userId: s.id,
+                            sourceAnalyticsLocations: x
+                        })
                     }
                 }, t)
             })

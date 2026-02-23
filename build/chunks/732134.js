@@ -1,21 +1,14 @@
-/** chunk id: 732134, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => r
-}), n(896048);
+/** chunk id: 732134, original params: t,e,n (module,exports,require) **/
+n.d(e, {
+    A: () => i
+});
 class l extends Map {
-    set(e, t) {
-        return this.size >= this.maxSize && this.delete(this.keys().next().value), super.set(e, t)
+    maxSize;
+    constructor(t) {
+        super(), this.maxSize = t
     }
-    constructor(e) {
-        super(),
-            function(e, t, n) {
-                t in e ? Object.defineProperty(e, t, {
-                    value: n,
-                    enumerable: !0,
-                    configurable: !0,
-                    writable: !0
-                }) : e[t] = n
-            }(this, "maxSize", void 0), this.maxSize = e
+    set(t, e) {
+        return this.size >= this.maxSize && this.delete(this.keys().next().value), super.set(t, e)
     }
 }
-let r = l
+let i = l

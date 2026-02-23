@@ -1,27 +1,27 @@
 /** chunk id: 942234, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => m
-}), n(65821), n(228524);
+    A: () => g
+});
 var i = n(627968),
-    r = n(64700),
-    l = n(136722),
+    l = n(64700),
+    s = n(136722),
     a = n(435371),
-    s = n(397927),
+    r = n(397927),
     o = n(225419),
-    c = n(268199),
-    d = n(90430),
+    d = n(268199),
+    c = n(90430),
     u = n(644020);
-class p extends r.PureComponent {
+class m extends l.PureComponent {
     getOverwriteValue(e) {
         let {
             allow: t,
             deny: n
         } = this.props;
         if (null == t || null == n) throw Error("PermissionsForm.getOverwriteValue: Invalid allow or deny props");
-        return l.zy(t, e) ? c.A.ALLOW : l.zy(n, e) ? c.A.DENY : c.A.PASSTHROUGH
+        return s.zy(t, e) ? d.A.ALLOW : s.zy(n, e) ? d.A.DENY : d.A.PASSTHROUGH
     }
     getPermissionValue(e, t) {
-        return l.zy(t, e)
+        return s.zy(t, e)
     }
     handleChange(e, t) {
         let {
@@ -34,7 +34,7 @@ class p extends r.PureComponent {
             text: e,
             position: "top",
             children: (0, i.jsx)("span", {
-                children: (0, i.jsx)(s.KTN, {
+                children: (0, i.jsx)(r.KTN, {
                     size: "sm",
                     color: "currentColor",
                     className: u.Kk
@@ -45,56 +45,55 @@ class p extends r.PureComponent {
     renderComponent(e, t) {
         let {
             title: n,
-            description: r,
-            flag: l
+            description: l,
+            flag: s
         } = e, {
             permissions: a,
-            locked: c,
+            locked: d,
             permissionRender: u,
-            guildId: p
-        } = this.props, m = null == u ? void 0 : u(l), g = !!(c || m), b = "string" == typeof m && "" !== m ? s.KTN : void 0, f = null == a ? (0, i.jsx)(d.A, {
+            guildId: m
+        } = this.props, g = u?.(s), x = !!(d || g), h = "string" == typeof g && "" !== g ? r.KTN : void 0, p = null == a ? (0, i.jsx)(c.A, {
             label: n,
-            description: (0, o.Nk)(r),
-            icon: b,
-            disabled: g,
-            value: this.getOverwriteValue(l),
-            onChange: e => this.handleChange(l, e)
-        }, String(l)) : (0, i.jsx)(s.dOG, {
+            description: (0, o.Nk)(l),
+            icon: h,
+            disabled: x,
+            value: this.getOverwriteValue(s),
+            onChange: e => this.handleChange(s, e)
+        }, String(s)) : (0, i.jsx)(r.dOG, {
             label: n,
-            description: (0, o.Nk)(r),
-            icon: b,
-            disabled: g,
-            checked: this.getPermissionValue(l, a),
-            onChange: e => this.handleChange(l, e)
-        }, String(l)), h = (0, o.x3)(l, p);
+            description: (0, o.Nk)(l),
+            icon: h,
+            disabled: x,
+            checked: this.getPermissionValue(s, a),
+            onChange: e => this.handleChange(s, e)
+        }, String(s)), A = (0, o.x3)(s, m);
         return (0, i.jsxs)(i.Fragment, {
-            children: [t > 0 && (0, i.jsx)(s.cGx, {}), (0, i.jsxs)(s.BJc, {
+            children: [t > 0 && (0, i.jsx)(r.cGx, {}), (0, i.jsxs)(r.BJc, {
                 gap: 8,
-                children: [f, null != h && (0, i.jsx)(s.po8, {
-                    messageType: s.YCn.WARNING,
-                    children: h
-                }), "string" == typeof m && "" !== m && (0, i.jsx)(s.Text, {
+                children: [p, null != A && (0, i.jsx)(r.po8, {
+                    messageType: r.YCn.WARNING,
+                    children: A
+                }), "string" == typeof g && "" !== g && (0, i.jsx)(r.Text, {
                     variant: "text-xs/medium",
                     color: "text-feedback-critical",
-                    children: m
+                    children: g
                 })]
             })]
         })
     }
     render() {
-        var e;
         let {
-            spec: t,
-            className: n
+            spec: e,
+            className: t
         } = this.props;
         return (0, i.jsx)("div", {
-            className: n,
-            children: (0, i.jsx)(s.nVY, {
-                label: t.title,
-                description: null != (e = (0, o.Nk)(t.description)) ? e : void 0,
-                children: t.permissions.map(this.renderComponent, this)
+            className: t,
+            children: (0, i.jsx)(r.nVY, {
+                label: e.title,
+                description: (0, o.Nk)(e.description) ?? void 0,
+                children: e.permissions.map(this.renderComponent, this)
             })
         })
     }
 }
-let m = p
+let g = m

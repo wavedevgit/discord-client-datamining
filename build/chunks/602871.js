@@ -1,36 +1,36 @@
 /** chunk id: 602871, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => u
+    A: () => c
 });
 var r = n(627968),
     l = n(349941),
-    o = n(158954),
-    i = n(311907),
-    s = n(544028),
-    a = n(651892),
-    c = n(438655);
-let u = function(e) {
+    i = n(158954),
+    s = n(311907),
+    a = n(544028),
+    o = n(651892),
+    u = n(681636);
+let c = function(e) {
     let {
         hasVideoAsset: t,
         playerState: n,
-        pauseReason: u
-    } = e, d = (0, i.bG)([s.A], () => s.A.getState().theme), p = (0, a.oK)({
+        pauseReason: c
+    } = e, d = (0, s.bG)([a.A], () => a.A.getState().theme), m = (0, o.oK)({
         hasVideoAsset: t,
         playerState: n,
-        pauseReason: u
+        pauseReason: c
     });
-    return null == p ? null : (0, r.jsxs)(r.Fragment, {
+    return null == m ? null : (0, r.jsxs)(r.Fragment, {
         children: [!t && (0, r.jsx)("div", {
-            className: c.MM
+            className: u.MM
         }), (0, r.jsx)("div", {
-            className: c.b9,
+            className: u.b9,
             style: {
                 background: (0, l.Mw)(d) ? "rgba(0, 0, 0, 0.65)" : "rgba(255, 255, 255, 0.65)"
             },
-            children: (0, r.jsx)(o.EYj, {
+            children: (0, r.jsx)(i.EYj, {
                 variant: "text-sm/normal",
                 color: "text-default",
-                children: p
+                children: m
             })
         })]
     })

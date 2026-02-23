@@ -1,40 +1,40 @@
-/** chunk id: 740024, original params: t,n,a (module,exports,require) **/
-a.d(n, {
+/** chunk id: 740024, original params: t,a,n (module,exports,require) **/
+n.d(a, {
     default: () => o
 });
-var i = a(627968);
-a(64700);
-var l = a(397927),
-    e = a(442433),
-    c = a(202803),
-    s = a(957565),
-    r = a(985018);
+var i = n(627968);
+n(64700);
+var e = n(397927),
+    l = n(442433),
+    c = n(202803),
+    s = n(957565),
+    r = n(985018);
 
 function o(t) {
     let {
-        attachmentUrl: n,
-        attachmentName: a,
+        attachmentUrl: a,
+        attachmentName: n,
         onSelect: o
     } = t;
-    return (0, i.jsx)(l.W1t, {
+    return (0, i.jsx)(e.W1t, {
         "data-menu-migrated-auto": !0,
         navId: "attachment-link-context",
-        onClose: e.Z_,
+        onClose: l.Z_,
         onSelect: o,
         "aria-label": r.intl.string(r.t["5oIOLX"]),
-        children: (0, i.jsxs)(l.rXV, {
-            children: [(0, i.jsx)(l.Drp, {
+        children: (0, i.jsxs)(e.rXV, {
+            children: [(0, i.jsx)(e.Drp, {
                 id: "attachment-link-copy-link",
                 label: r.intl.string(r.t.WqhZss),
                 action: async () => {
-                    let t = await (0, c.AN)(n);
-                    (0, s.C)(null != t ? t : "")
+                    let t = await (0, c.AN)(a);
+                    (0, s.C)(t ?? "")
                 }
-            }), (0, i.jsx)(l.Drp, {
+            }), (0, i.jsx)(e.Drp, {
                 id: "attachment-link-copy-name",
                 label: r.intl.string(r.t.JrGD7E),
                 action: () => {
-                    (0, s.C)(null != a ? a : "")
+                    (0, s.C)(n ?? "")
                 }
             })]
         }, "attachment-link-actions")

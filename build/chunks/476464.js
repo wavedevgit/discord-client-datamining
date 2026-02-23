@@ -1,8 +1,8 @@
-/** chunk id: 476464, original params: e,t,l (module,exports,require) **/
-l.d(t, {
-    z: () => n
+/** chunk id: 476464, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    z: () => l
 });
-let n = (0, l(945810).mj)({
+let l = (0, i(945810).mj)({
     name: "2025-12-game-profiles-v2",
     kind: "user",
     defaultConfig: {

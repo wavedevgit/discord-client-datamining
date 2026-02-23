@@ -1,9 +1,9 @@
 /** chunk id: 837197, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    G: () => i
+    G: () => l
 });
-var r = n(652215);
+var i = n(652215);
 
-function i(e, t) {
-    return !t.hasAnyAfter(e, e => null != e.activity && e.activity.type === r.xL.JOIN, 25)
+function l(e, t) {
+    return !t.hasAnyAfter(e, e => null != e.activity && e.activity.type === i.xL.JOIN, 25)
 }

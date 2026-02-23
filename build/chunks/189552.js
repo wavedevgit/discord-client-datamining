@@ -3,8 +3,8 @@ n.d(t, {
     Cy: () => d,
     IY: () => T,
     Ko: () => _,
-    UY: () => g,
-    YH: () => A,
+    UY: () => A,
+    YH: () => g,
     ii: () => I
 });
 var l, r = n(64700),
@@ -12,9 +12,9 @@ var l, r = n(64700),
     i = n(688810),
     s = n(657331),
     o = n(317525),
-    u = n(71393),
-    c = n(287809),
-    E = n(841549);
+    E = n(71393),
+    u = n(287809),
+    c = n(841549);
 let _ = (e, t) => {
     let {
         guildId: n,
@@ -35,8 +35,8 @@ function d(e, t, n, l) {
     } = (0, i.Ay)();
     return r.useCallback(r => {
         if (null == e) return;
-        let i = c.default.getUser(e.userId);
-        null != i && (r.stopPropagation(), (0, E.Mg)(r, {
+        let i = u.default.getUser(e.userId);
+        null != i && (r.stopPropagation(), (0, c.Mg)(r, {
             user: i,
             guildId: e.guildId,
             analyticsLocations: null != n ? [n] : a,
@@ -46,14 +46,14 @@ function d(e, t, n, l) {
     }, [e, a, l, n, t])
 }
 
-function g(e, t, n) {
+function A(e, t, n) {
     let {
         analyticsLocations: l
     } = (0, i.Ay)();
     return r.useCallback(r => {
         if (null == e) return;
-        let a = c.default.getUser(e.userId);
-        null != a && (r.stopPropagation(), (0, E.B8)(r, {
+        let a = u.default.getUser(e.userId);
+        null != a && (r.stopPropagation(), (0, c.B8)(r, {
             user: a,
             guildId: e.guildId,
             analyticsLocations: null != t ? [t] : l,
@@ -63,12 +63,11 @@ function g(e, t, n) {
     }, [e, n, l, t])
 }
 
-function A(e) {
-    return (0, a.bG)([u.A, o.A], () => {
-        var t;
+function g(e) {
+    return (0, a.bG)([E.A, o.A], () => {
         if (null == e) return null;
-        let n = u.A.getGuild(e.guildId);
-        return null == n || null == e.highestRoleId ? null : null != (t = o.A.getRole(n.id, e.highestRoleId)) ? t : null
+        let t = E.A.getGuild(e.guildId);
+        return null == t || null == e.highestRoleId ? null : o.A.getRole(t.id, e.highestRoleId) ?? null
     }, [e])
 }
 var T = ((l = {})[l.LOADING = 0] = "LOADING", l[l.SUCCESS_STILL_INDEXING = 1] = "SUCCESS_STILL_INDEXING", l[l.SUCCESS_EMPTY = 2] = "SUCCESS_EMPTY", l[l.SUCCESS_FULL = 3] = "SUCCESS_FULL", l);

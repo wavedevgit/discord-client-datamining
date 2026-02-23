@@ -1,56 +1,67 @@
 /** chunk id: 67173, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => C
-}), n(896048);
-var r = n(627968),
-    i = n(64700),
+    A: () => R
+});
+var i = n(627968),
+    r = n(64700),
     l = n(503698),
     a = n.n(l),
-    s = n(92674),
+    s = n(475539),
     o = n(837381),
-    c = n(554146),
-    u = n(192308),
-    d = n(397927),
-    p = n(701363),
-    h = n(770178),
-    f = n(826673),
-    g = n(379848),
-    m = n(954571),
-    A = n(325087),
-    _ = n(398025),
-    b = n(419818),
-    E = n(652215),
-    O = n(49999),
+    d = n(158954),
+    c = n(311907),
+    u = n(554146),
+    A = n(192308),
+    h = n(435371),
+    _ = n(397927),
+    m = n(701363),
+    p = n(770178),
+    g = n(826673),
+    E = n(379848),
+    I = n(859703),
+    f = n(18437),
+    C = n(7832),
+    T = n(325087),
+    N = n(398025),
+    S = n(419818),
+    x = n(652215),
+    v = n(49999),
     y = n(985018),
-    I = n(106417);
-let v = Math.ceil(Math.sqrt(115200)),
-    S = (v - 240) / 2,
-    C = function(e) {
-        var t, n;
+    b = n(106417);
+let O = Math.ceil(Math.sqrt(115200)),
+    L = (O - 240) / 2,
+    R = function(e) {
         let {
-            selected: l
-        } = e, C = (0, o.rm)("quests"), N = i.useRef(null), {
-            shouldShowPopover: T,
-            shouldShowGradientAndBadge: j,
-            dismissContent: x
+            selected: t
+        } = e, n = (0, o.rm)("quests"), l = r.useRef(null), {
+            shouldShowPopover: R,
+            shouldShowGradientAndBadge: P,
+            dismissOnboardingContent: j
         } = function() {
-            let e = (0, u.useHasAnyModalOpen)(),
-                [t, n] = (0, g.kn)(e ? [] : [c.M.QUEST_HOME_ENTRYPOINT_ONBOARDING], O.m.PRIVATE_CHANNELS_LIST, !0),
-                r = i.useCallback(() => {
-                    n(O.i.TAKE_ACTION)
-                }, [n]);
+            let e = (0, A.useHasAnyModalOpen)(),
+                t = (0, c.bG)([I.A], () => I.A.quests.size > 0),
+                [n, i] = (0, E.kn)(!e && t ? [u.M.QUEST_HOME_ENTRYPOINT_ONBOARDING] : [], v.m.PRIVATE_CHANNELS_LIST, !0),
+                l = r.useCallback(() => {
+                    i(v.i.TAKE_ACTION)
+                }, [i]),
+                a = n === u.M.QUEST_HOME_ENTRYPOINT_ONBOARDING,
+                s = (0, g.JZ)(u.M.QUEST_HOME_ENTRYPOINT_ONBOARDING);
             return {
-                shouldShowPopover: t === c.M.QUEST_HOME_ENTRYPOINT_ONBOARDING,
-                shouldShowGradientAndBadge: !(0, f.JZ)(c.M.QUEST_HOME_ENTRYPOINT_ONBOARDING),
-                dismissContent: r
+                shouldShowPopover: a,
+                shouldShowGradientAndBadge: t && !s,
+                dismissOnboardingContent: l
             }
-        }(), P = i.useCallback(() => {
-            b.A.getState().setUtmCurrentContext({
+        }(), {
+            shouldShowQuestHomeHeroContent: D,
+            dismissQuestHomeHeroContent: M,
+            questHomeHeroConfig: w
+        } = (0, C.I)(), U = r.useCallback(() => {
+            S.A.getState().setUtmCurrentContext({
                 utmContentCurrent: "PRIMARY_QUEST_HOME"
-            })
-        }, []), [{
-            glowSpring: w
-        }, L] = (0, d.zhh)(() => ({
+            }), D && M()
+        }, [D, M]), [{
+            glowSpring: G
+        }, k] = (0, _.zhh)(() => ({
             from: {
                 glowSpring: 0
             },
@@ -61,8 +72,8 @@ let v = Math.ceil(Math.sqrt(115200)),
                 friction: 12
             }
         })), [{
-            shineSpring: R
-        }, D] = (0, d.zhh)(() => ({
+            shineSpring: V
+        }, B] = (0, _.zhh)(() => ({
             from: {
                 shineSpring: 0
             },
@@ -72,109 +83,131 @@ let v = Math.ceil(Math.sqrt(115200)),
                 tension: 170,
                 friction: 38
             }
-        })), M = i.useCallback(() => {
-            D({
+        })), H = (0, f.cR)({
+            questHomeHeroConfig: w,
+            shouldShowQuestHomeHeroContent: D
+        }), F = r.useCallback(() => {
+            B({
                 shineSpring: 1
-            }), L({
+            }), k({
                 glowSpring: 1,
                 delay: 200
-            })
-        }, [D, L]), k = i.useCallback(() => {
-            D({
+            }), H.handleMouseEnter()
+        }, [B, k, H]), Y = r.useCallback(() => {
+            B({
                 shineSpring: 0,
                 immediate: !0
-            }), L({
+            }), k({
                 glowSpring: 0,
                 delay: 0
-            })
-        }, [D, L]), U = i.useCallback(() => {
-            D({
+            }), H.handleMouseLeave()
+        }, [B, k, H]), W = r.useCallback(() => {
+            B({
                 shineSpring: 1,
                 delay: 500
-            }), L({
+            }), k({
                 glowSpring: 1,
                 delay: 700
-            }), m.default.track(E.HAw.QUEST_HOME_ONBOARDING_POPOVER_RENDERED)
-        }, [D, L]), [G, V] = i.useState(-1), B = i.useCallback(e => {
-            V(e.contentRect.width)
-        }, []), H = (0, h.w)(B, [], {
+            }), H.handleOnboardingPopoutRender()
+        }, [B, k, H]), [q, z] = r.useState(-1), K = r.useCallback(e => {
+            z(e.contentRect.width)
+        }, []), $ = (0, p.w)(K, [], {
             fireOnMount: !0
-        });
-        return (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsx)("div", {
-                className: I.iE,
-                onMouseEnter: M,
-                onMouseLeave: k,
-                onFocus: M,
-                onBlur: k,
-                ref: H,
-                style: {
-                    "--custom-shine-dimensions": "".concat(240, "px"),
-                    "--custom-shine-rotated-dimensions-delta": "".concat(S, "px")
+        }), Q = !D && P, X = !D && R, Z = D && w?.questHomeEntrypoint?.tooltipTitle != null, {
+            inlineCssProperties: J,
+            shouldShowQuestHomeHeroGradient: ee
+        } = r.useMemo(() => {
+            let e = {
+                    "--custom-shine-dimensions": "240px",
+                    "--custom-shine-rotated-dimensions-delta": `${L}px`
                 },
-                children: (0, r.jsx)(p.z9, (t = function(e) {
-                    for (var t = 1; t < arguments.length; t++) {
-                        var n = null != arguments[t] ? arguments[t] : {},
-                            r = Object.keys(n);
-                        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                            return Object.getOwnPropertyDescriptor(n, e).enumerable
-                        }))), r.forEach(function(t) {
-                            var r;
-                            r = n[t], t in e ? Object.defineProperty(e, t, {
-                                value: r,
-                                enumerable: !0,
-                                configurable: !0,
-                                writable: !0
-                            }) : e[t] = r
+                t = w?.questHomeEntrypoint?.linearGradientStart,
+                n = w?.questHomeEntrypoint?.linearGradientEnd,
+                i = w?.questHomeEntrypoint?.radialGradientStart,
+                r = w?.questHomeEntrypoint?.radialGradientEnd;
+            D && (null != t && null != n && (e["--custom-quest-home-hero-linear-gradient-start"] = t, e["--custom-quest-home-hero-linear-gradient-end"] = n), null != i && null != r && (e["--custom-quest-home-hero-radial-gradient-start"] = i, e["--custom-quest-home-hero-radial-gradient-end"] = r));
+            let l = null != i && null != r,
+                a = null != t && null != n;
+            return {
+                inlineCssProperties: e,
+                shouldShowQuestHomeHeroGradient: D && (l || a)
+            }
+        }, [D, w]), et = (0, i.jsx)("div", {
+            className: b.iE,
+            onMouseEnter: F,
+            onMouseLeave: Y,
+            onFocus: F,
+            onBlur: Y,
+            ref: $,
+            style: J,
+            children: (0, i.jsxs)(m.z9, {
+                className: a()({
+                    [b.VU]: Q || ee,
+                    [b.jR]: Q,
+                    [b.XO]: D
+                }),
+                icon: _.r2v,
+                listItemRef: l,
+                onClick: U,
+                route: x.BVt.QUEST_HOME_V2,
+                selected: t,
+                text: y.intl.string(y.t.JALI2K),
+                ...n,
+                children: [D && (0, i.jsxs)(i.Fragment, {
+                    children: [(0, i.jsx)("div", {
+                        className: b.qS,
+                        children: (0, i.jsx)(d.Exy, {
+                            type: {
+                                text: y.intl.string(y.t.y2b7CA)
+                            },
+                            variant: "expressive"
                         })
-                    }
-                    return e
-                }({
-                    className: a()({
-                        [I.h6]: j
-                    }),
-                    icon: d.r2v,
-                    listItemRef: N,
-                    onClick: P,
-                    route: E.BVt.QUEST_HOME_V2,
-                    selected: l,
-                    text: y.intl.string(y.t.JALI2K)
-                }, C), n = n = {
-                    children: j && (0, r.jsxs)(r.Fragment, {
-                        children: [(0, r.jsx)(s.animated.div, {
-                            className: I.q2,
-                            style: {
-                                transform: R.to(e => "translateX(calc(".concat(e * G, "px + ").concat(e * v, "px)) translateY(-50%) rotate(45deg)"))
-                            }
-                        }), (0, r.jsx)(s.animated.div, {
-                            className: I.ys,
-                            style: {
-                                opacity: (0, _.a)(w.to({
-                                    range: [0, 1],
-                                    output: [0, .5]
-                                }))
-                            }
-                        }), (0, r.jsx)(d.LpS, {
-                            className: I.qS,
-                            text: y.intl.string(y.t.y2b7CA),
-                            color: d.LU0.colors.BACKGROUND_BRAND.css
-                        })]
-                    })
-                }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
-                    var n = Object.keys(e);
-                    if (Object.getOwnPropertySymbols) {
-                        var r = Object.getOwnPropertySymbols(e);
-                        n.push.apply(n, r)
-                    }
-                    return n
-                })(Object(n)).forEach(function(e) {
-                    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-                }), t))
-            }), T && (0, r.jsx)(A.A, {
-                targetElementRef: N,
-                onNavigateToQuestHome: P,
-                onRender: U,
-                onRequestClose: x
+                    }), w?.questHomeEntrypoint?.entrypointAssetImageUrl != null && (0, i.jsx)("img", {
+                        src: w?.questHomeEntrypoint?.entrypointAssetImageUrl,
+                        className: b.Nd,
+                        alt: ""
+                    })]
+                }), Q && (0, i.jsxs)(i.Fragment, {
+                    children: [(0, i.jsx)(s.animated.div, {
+                        className: b.q2,
+                        style: {
+                            transform: V.to(e => `translateX(calc(${e*q}px + ${e*O}px)) translateY(-50%) rotate(45deg)`)
+                        }
+                    }), (0, i.jsx)(s.animated.div, {
+                        className: b.ys,
+                        style: {
+                            opacity: (0, N.a)(G.to({
+                                range: [0, 1],
+                                output: [0, .5]
+                            }))
+                        }
+                    }), (0, i.jsx)(_.LpS, {
+                        className: b.qS,
+                        text: y.intl.string(y.t.y2b7CA),
+                        color: _.LU0.colors.BACKGROUND_BRAND.css
+                    })]
+                })]
+            })
+        });
+        return (0, i.jsxs)(i.Fragment, {
+            children: [Z ? (0, i.jsx)(h.un, {
+                title: w?.questHomeEntrypoint?.tooltipTitle,
+                body: w?.questHomeEntrypoint?.tooltipSubtitle ?? "",
+                asset: w?.questHomeEntrypoint?.tooltipAssetImageUrl != null ? (0, i.jsx)("img", {
+                    src: w.questHomeEntrypoint.tooltipAssetImageUrl,
+                    alt: "",
+                    className: b.ut
+                }) : void 0,
+                assetSize: 48,
+                position: "right",
+                align: "center",
+                asContainer: !0,
+                children: et
+            }) : et, X && (0, i.jsx)(T.A, {
+                targetElementRef: l,
+                onNavigateToQuestHome: U,
+                onRender: W,
+                onRequestClose: j
             })]
         })
     }

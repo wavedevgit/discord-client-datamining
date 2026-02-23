@@ -1,137 +1,135 @@
 /** chunk id: 282224, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => b
+    A: () => g
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(448761),
-    l = n(311907),
-    a = n(397927),
+var l = n(448761),
+    a = n(311907),
+    r = n(397927),
     s = n(763754),
     o = n(447215),
     c = n(888675),
-    u = n(287809),
-    d = n(641131),
-    p = n(985018);
-let m = {
-        [i.l.REPORT_TO_MOD_BAN_USER]: () => d.default.komFTv,
-        [i.l.REPORT_TO_MOD_KICK_USER]: () => d.default.FAJmJV,
-        [i.l.REPORT_TO_MOD_TIMEOUT_USER]: () => d.default["90r/sR"]
+    d = n(287809),
+    u = n(641131),
+    m = n(985018);
+let _ = {
+        [l.l.REPORT_TO_MOD_BAN_USER]: () => u.default.komFTv,
+        [l.l.REPORT_TO_MOD_KICK_USER]: () => u.default.FAJmJV,
+        [l.l.REPORT_TO_MOD_TIMEOUT_USER]: () => u.default["90r/sR"]
     },
-    f = {
-        [i.l.REPORT_TO_MOD_DELETED_MESSAGE]: () => d.default["4023i8"],
-        [i.l.REPORT_TO_MOD_CLOSED_REPORT]: () => d.default.UE81zV
+    A = {
+        [l.l.REPORT_TO_MOD_DELETED_MESSAGE]: () => u.default["4023i8"],
+        [l.l.REPORT_TO_MOD_CLOSED_REPORT]: () => u.default.UE81zV
     };
 
-function g(e) {
+function h(e) {
     let {
         type: t
     } = e, n = null;
     switch (t) {
-        case i.l.REPORT_TO_MOD_BAN_USER:
-            n = a.wI0;
+        case l.l.REPORT_TO_MOD_BAN_USER:
+            n = r.wI0;
             break;
-        case i.l.REPORT_TO_MOD_KICK_USER:
-            n = a.Nxw;
+        case l.l.REPORT_TO_MOD_KICK_USER:
+            n = r.Nxw;
             break;
-        case i.l.REPORT_TO_MOD_TIMEOUT_USER:
-            n = a.gQi;
+        case l.l.REPORT_TO_MOD_TIMEOUT_USER:
+            n = r.gQi;
             break;
-        case i.l.REPORT_TO_MOD_DELETED_MESSAGE:
-            n = a.ucK;
+        case l.l.REPORT_TO_MOD_DELETED_MESSAGE:
+            n = r.ucK;
             break;
-        case i.l.REPORT_TO_MOD_CLOSED_REPORT:
-            n = a.Uzd
+        case l.l.REPORT_TO_MOD_CLOSED_REPORT:
+            n = r.Uzd
     }
-    return null != n ? (0, r.jsx)(n, {
+    return null != n ? (0, i.jsx)(n, {
         size: "refresh_sm",
         color: "currentColor"
     }) : null
 }
 
-function _(e) {
-    var t;
+function f(e) {
     let {
-        message: n,
-        channel: i,
-        compact: a
+        message: t,
+        channel: n,
+        compact: l
     } = e, {
-        author: d,
-        mentions: f,
-        type: _
-    } = n, h = (0, s.Ay)(n), b = n.getChannelId(), y = (0, l.bG)([u.default], () => u.default.getUser(f[0]), [f]), A = (0, s.m2)(d, i), v = (0, o.P)({
-        user: d,
-        channelId: b,
-        guildId: i.guild_id,
-        messageId: n.id
-    })(A), O = (0, s.d8)(y, i), x = (0, o.P)({
-        user: y,
-        channelId: b,
-        guildId: i.guild_id,
-        messageId: n.id
-    })(O), E = null != (t = m[_]) ? t : null;
-    if (null == E) return null;
-    let j = p.intl.format(E(), {
-        actorName: h.nick,
-        actorHook: v,
-        targetName: null == O ? void 0 : O.nick,
-        targetHook: x
+        author: r,
+        mentions: u,
+        type: A
+    } = t, f = (0, s.Ay)(t), E = t.getChannelId(), g = (0, a.bG)([d.default], () => d.default.getUser(u[0]), [u]), p = (0, s.m2)(r, n), x = (0, o.P)({
+        user: r,
+        channelId: E,
+        guildId: n.guild_id,
+        messageId: t.id
+    })(p), C = (0, s.d8)(g, n), I = (0, o.P)({
+        user: g,
+        channelId: E,
+        guildId: n.guild_id,
+        messageId: t.id
+    })(C), T = _[A] ?? null;
+    if (null == T) return null;
+    let N = m.intl.format(T(), {
+        actorName: f.nick,
+        actorHook: x,
+        targetName: C?.nick,
+        targetHook: I
     });
-    return (0, r.jsx)(c.A, {
-        iconNode: (0, r.jsx)(g, {
-            type: _
+    return (0, i.jsx)(c.A, {
+        iconNode: (0, i.jsx)(h, {
+            type: A
         }),
-        timestamp: n.timestamp,
-        compact: a,
-        children: j
+        timestamp: t.timestamp,
+        compact: l,
+        children: N
     })
 }
 
-function h(e) {
-    var t;
+function E(e) {
     let {
-        message: n,
-        channel: i,
+        message: t,
+        channel: n,
         compact: l
     } = e, {
         author: a,
-        type: u
-    } = n, d = (0, s.Ay)(n), m = n.getChannelId(), _ = (0, s.m2)(a, i), h = (0, o.P)({
+        type: r
+    } = t, d = (0, s.Ay)(t), u = t.getChannelId(), _ = (0, s.m2)(a, n), f = (0, o.P)({
         user: a,
-        channelId: m,
-        guildId: i.guild_id,
-        messageId: n.id
-    })(_), b = null != (t = f[u]) ? t : null;
-    if (null == b) return null;
-    let y = p.intl.format(b(), {
+        channelId: u,
+        guildId: n.guild_id,
+        messageId: t.id
+    })(_), E = A[r] ?? null;
+    if (null == E) return null;
+    let g = m.intl.format(E(), {
         actorName: d.nick,
-        actorHook: h
+        actorHook: f
     });
-    return (0, r.jsx)(c.A, {
-        iconNode: (0, r.jsx)(g, {
-            type: u
+    return (0, i.jsx)(c.A, {
+        iconNode: (0, i.jsx)(h, {
+            type: r
         }),
-        timestamp: n.timestamp,
+        timestamp: t.timestamp,
         compact: l,
-        children: y
+        children: g
     })
 }
 
-function b(e) {
+function g(e) {
     let {
         message: t,
         channel: n,
-        compact: l
+        compact: a
     } = e, {
-        type: a
+        type: r
     } = t;
-    return a === i.l.REPORT_TO_MOD_BAN_USER || a === i.l.REPORT_TO_MOD_KICK_USER || a === i.l.REPORT_TO_MOD_TIMEOUT_USER ? (0, r.jsx)(_, {
+    return r === l.l.REPORT_TO_MOD_BAN_USER || r === l.l.REPORT_TO_MOD_KICK_USER || r === l.l.REPORT_TO_MOD_TIMEOUT_USER ? (0, i.jsx)(f, {
         message: t,
         channel: n,
-        compact: l
-    }) : (0, r.jsx)(h, {
+        compact: a
+    }) : (0, i.jsx)(E, {
         message: t,
         channel: n,
-        compact: l
+        compact: a
     })
 }

@@ -1,118 +1,96 @@
 /** chunk id: 722523, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    Ay: () => j,
-    GU: () => A
+    Ay: () => x,
+    GU: () => m
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var l = n(503698),
-    i = n.n(l),
-    s = n(732955),
+var s = n(503698),
+    l = n.n(s),
+    r = n(732955),
     a = n(438874),
     o = n(363487),
     c = n(439156),
-    u = n(689906),
-    d = n(224331),
-    p = n(568065),
-    h = n(333354),
-    g = n(985018),
-    f = n(993747);
+    d = n(689906),
+    u = n(224331),
+    h = n(568065),
+    A = n(333354),
+    p = n(985018),
+    g = n(993747);
 
-function m() {
-    return (m = Object.assign || function(e) {
-        for (var t = 1; t < arguments.length; t++) {
-            var n = arguments[t];
-            for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
-        }
-        return e
-    }).apply(this, arguments)
-}
-
-function b(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = r
-        })
-    }
-    return e
-}
-
-function A(e) {
+function m(e) {
     let {
         className: t,
         guildId: n,
-        powerup: l,
+        powerup: s,
         onClick: a
-    } = e, o = (0, u.A)(n, l), c = (0, d.A)(n, l), m = p.HO.has(l.skuId);
-    return (0, r.jsx)("div", {
-        className: i()(f.FS, t),
-        children: (0, r.jsx)(s.$nd, {
+    } = e, o = (0, d.A)(n, s), c = (0, u.A)(n, s), m = h.HO.has(s.skuId);
+    return (0, i.jsx)("div", {
+        className: l()(g.FS, t),
+        children: (0, i.jsx)(r.$nd, {
             variant: "primary",
             fullWidth: !0,
-            text: m ? g.intl.string(h.default.g5Ds69) : g.intl.string(g.t["0Q61kF"]),
+            text: m ? p.intl.string(A.default.g5Ds69) : p.intl.string(p.t["0Q61kF"]),
             onClick: e => {
-                null == a || a(e), m ? null == o || o(e) : null == c || c()
+                a?.(e), m ? o?.(e) : c?.()
             }
         })
     })
 }
 
-function y(e) {
+function _(e) {
     let {
         className: t,
         guildId: n,
-        powerup: l
-    } = e, a = (0, d.A)(n, l);
-    return (0, r.jsx)("div", {
-        className: i()(f.kL, t),
-        children: (0, r.jsx)("div", {
-            className: f.FS,
-            children: (0, r.jsx)(s.$nd, {
+        powerup: s
+    } = e, a = (0, u.A)(n, s);
+    return (0, i.jsx)("div", {
+        className: l()(g.kL, t),
+        children: (0, i.jsx)("div", {
+            className: g.FS,
+            children: (0, i.jsx)(r.$nd, {
                 variant: "primary",
                 fullWidth: !0,
-                text: l.type === p.o9.LEVEL ? g.intl.string(g.t["0Q61kF"]) : g.intl.string(g.t.Xa11Ep),
+                text: s.type === h.o9.LEVEL ? p.intl.string(p.t["0Q61kF"]) : p.intl.string(p.t.Xa11Ep),
                 onClick: a
             })
         })
     })
 }
 
-function O(e) {
+function f(e) {
     let {
         className: t,
         guildId: n,
-        powerup: l,
-        onError: s
+        powerup: s,
+        onError: r
     } = e, {
         showToggleButton: o,
-        isPowerupActive: u
-    } = (0, a.A)(n, l), d = !u;
-    return (0, r.jsxs)("div", {
-        className: i()(f.kL, t),
-        children: [o && (0, r.jsx)(c.A, {
+        isPowerupActive: d
+    } = (0, a.A)(n, s), u = !d;
+    return (0, i.jsxs)("div", {
+        className: l()(g.kL, t),
+        children: [o && (0, i.jsx)(c.A, {
             guildId: n,
-            powerup: l,
-            onError: s,
-            grow: d,
-            compact: !d
-        }), u && (0, r.jsx)(A, {
+            powerup: s,
+            onError: r,
+            grow: u,
+            compact: !u
+        }), d && (0, i.jsx)(m, {
             guildId: n,
-            powerup: l
+            powerup: s
         })]
     })
 }
 
-function j(e) {
-    let {} = e, t = m({}, e);
-    return (0, o.A)(t.guildId) ? (0, r.jsx)(O, b({}, t)) : (0, r.jsx)(y, b({}, t))
+function x(e) {
+    let {
+        ...t
+    } = e;
+    return (0, o.A)(t.guildId) ? (0, i.jsx)(f, {
+        ...t
+    }) : (0, i.jsx)(_, {
+        ...t
+    })
 }

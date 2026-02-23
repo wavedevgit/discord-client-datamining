@@ -1,15 +1,15 @@
 /** chunk id: 132841, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => h
-}), n(896048);
+    A: () => u
+});
 var i = n(627968),
-    r = n(64700),
-    l = n(311907),
-    s = n(397927),
+    l = n(64700),
+    s = n(311907),
+    r = n(397927),
     a = n(830382),
     o = n(67480),
-    u = n(985018);
-class c extends r.Component {
+    d = n(985018);
+class h extends l.Component {
     componentDidMount() {
         let {
             applicationId: e,
@@ -27,13 +27,16 @@ class c extends r.Component {
         } = this.props;
         null != e && 1 === e.length && null == t && n(e[0].id)
     }
+    handleChange = e => {
+        this.props.onChange(e)
+    };
     render() {
         let {
             skus: e,
             selectedSkuId: t,
             label: n
-        } = this.props, r = null != e && 0 === e.length;
-        return (0, i.jsx)(s.l6P, {
+        } = this.props, l = null != e && 0 === e.length;
+        return (0, i.jsx)(r.l6P, {
             selectionMode: "single",
             label: n,
             options: null != e ? e.map(e => ({
@@ -41,31 +44,18 @@ class c extends r.Component {
                 label: e.name,
                 value: e.id
             })) : [],
-            placeholder: r ? u.intl.string(u.t.hKcgP5) : u.intl.string(u.t.QV60Uq),
+            placeholder: l ? d.intl.string(d.t.hKcgP5) : d.intl.string(d.t.QV60Uq),
             value: t,
             onSelectionChange: this.handleChange,
-            disabled: r
+            disabled: l
         })
     }
-    constructor(...e) {
-        super(...e),
-            function(e, t, n) {
-                t in e ? Object.defineProperty(e, t, {
-                    value: n,
-                    enumerable: !0,
-                    configurable: !0,
-                    writable: !0
-                }) : e[t] = n
-            }(this, "handleChange", e => {
-                this.props.onChange(e)
-            })
-    }
 }
-let h = l.Ay.connectStores([o.A], e => {
+let u = s.Ay.connectStores([o.A], e => {
     let {
         applicationId: t
     } = e;
     return {
         skus: o.A.getForApplication(t)
     }
-})(c)
+})(h)

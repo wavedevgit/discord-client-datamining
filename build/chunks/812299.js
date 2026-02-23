@@ -1,50 +1,49 @@
 /** chunk id: 812299, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    k: () => l,
+    k: () => o,
     y: () => c
 });
-var r = n(627968);
+var a = n(627968);
 n(64700);
 var i = n(709066),
-    a = n(455207),
-    o = n(943667),
+    r = n(455207),
+    l = n(943667),
     s = n(679740);
 
-function l(e) {
+function o(e) {
     let t, {
         message: n,
-        channel: r,
+        channel: a,
         user: s,
-        isRepliedMessage: l
+        isRepliedMessage: o
     } = e;
-    return (null == n ? void 0 : n.isSystemDM()) ? t = i.A.Types.SYSTEM_DM : null != n && (0, o.A)(n) ? t = (0, a.MZ)(n) ? i.A.Types.OFFICIAL : i.A.Types.SERVER : (null == s ? void 0 : s.bot) ? t = i.A.Types.BOT : null != r && r.isForumPost() && r.ownerId === (null == s ? void 0 : s.id) && !l && (t = i.A.Types.ORIGINAL_POSTER), t
+    return n?.isSystemDM() ? t = i.A.Types.SYSTEM_DM : null != n && (0, l.A)(n) ? t = (0, r.MZ)(n) ? i.A.Types.OFFICIAL : i.A.Types.SERVER : s?.bot ? t = i.A.Types.BOT : null != a && a.isForumPost() && a.ownerId === s?.id && !o && (t = i.A.Types.ORIGINAL_POSTER), t
 }
 
 function c(e) {
     let {
         message: t,
         channel: n,
-        user: a,
-        compact: o,
+        user: r,
+        compact: l,
         isRepliedMessage: c,
-        hideIcon: u = !1,
-        children: d
-    } = e, f = l({
+        hideIcon: d = !1,
+        children: u
+    } = e, _ = o({
         message: t,
         channel: n,
-        user: a,
-        compact: o,
+        user: r,
+        compact: l,
         isRepliedMessage: c,
-        hideIcon: u,
-        children: d
+        hideIcon: d,
+        children: u
     });
-    return null == f ? null : (0, r.jsx)(i.A, {
-        className: o ? s.jW : s.RQ,
-        type: f,
-        verified: null == a ? void 0 : a.isVerifiedBot(),
-        hideIcon: u,
+    return null == _ ? null : (0, a.jsx)(i.A, {
+        className: l ? s.jW : s.RQ,
+        type: _,
+        verified: r?.isVerifiedBot(),
+        hideIcon: d,
         useRemSizes: !0,
-        children: d
+        children: u
     })
 }

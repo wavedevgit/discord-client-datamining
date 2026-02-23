@@ -1,20 +1,19 @@
 /** chunk id: 950762, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => a
+    A: () => r
 });
 var l = n(315069),
-    r = n(427157);
-
-function i(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-class a extends l.A {
+    i = n(427157);
+class r extends l.A {
+    id;
+    name;
+    managed;
+    roles;
+    requiredColons;
+    user;
+    animated;
+    available;
     constructor(e) {
-        super(), i(this, "id", void 0), i(this, "name", void 0), i(this, "managed", void 0), i(this, "roles", void 0), i(this, "requiredColons", void 0), i(this, "user", void 0), i(this, "animated", void 0), i(this, "available", void 0), this.id = e.id, this.name = e.name, this.managed = e.managed, this.roles = e.roles, this.requiredColons = e.requiredColons, this.user = new r.A(e.user), this.animated = e.animated, this.available = e.available
+        super(), this.id = e.id, this.name = e.name, this.managed = e.managed, this.roles = e.roles, this.requiredColons = e.requiredColons, this.user = new i.A(e.user), this.animated = e.animated, this.available = e.available
     }
 }

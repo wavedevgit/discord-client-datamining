@@ -1,37 +1,37 @@
 /** chunk id: 608699, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => m
 });
-var r = n(627968),
-    i = n(607399),
-    l = n(732955),
-    s = n(397927),
-    a = n(9113),
+var i = n(627968),
+    s = n(607399),
+    a = n(732955),
+    r = n(397927),
+    l = n(9113),
     o = n(599941),
     c = n(590632),
     d = n(146528),
     u = n(985018),
     _ = n(405564);
-let p = e => {
+let m = e => {
     let {
         onGoBack: t
     } = e, n = (0, c.A)(), {
-        loading: p
+        loading: m
     } = (0, o.eb)(n);
-    return ((0, a.A)(i.Fr ? "role-subscriptions-user-setting" : void 0), p) ? (0, r.jsx)(s.y$y, {}) : 0 === n.length ? null : (0, r.jsxs)("div", {
-        children: [(0, r.jsx)(l.$nd, {
+    return ((0, l.A)(s.Fr ? "role-subscriptions-user-setting" : void 0), m) ? (0, i.jsx)(r.y$y, {}) : 0 === n.length ? null : (0, i.jsxs)("div", {
+        children: [(0, i.jsx)(a.$nd, {
             text: u.intl.string(u.t.hqyhKQ),
-            icon: s.z$m,
+            icon: r.z$m,
             variant: "secondary",
             onClick: t
-        }), (0, r.jsx)(s.hKd, {
+        }), (0, i.jsx)(r.hKd, {
             size: 10
-        }), (0, r.jsx)(s.nVY, {
+        }), (0, i.jsx)(r.nVY, {
             label: u.intl.string(u.t["KzCF/6"]),
             description: u.intl.string(u.t["Y+ucR7"]),
-            children: (0, r.jsx)("div", {
+            children: (0, i.jsx)("div", {
                 className: _.A,
-                children: n.map(e => (0, r.jsx)(d.A, {
+                children: n.map(e => (0, i.jsx)(d.A, {
                     subscription: e
                 }, e.id))
             })

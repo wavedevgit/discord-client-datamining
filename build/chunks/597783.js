@@ -1,51 +1,49 @@
-/** chunk id: 597783, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    Z: () => p
+/** chunk id: 597783, original params: t,e,r (module,exports,require) **/
+r.d(e, {
+    Z: () => m
 });
-var r = n(64700),
-    i = n(311907),
-    a = n(954571),
-    o = n(927578),
-    s = n(440938),
-    l = n(590180),
-    c = n(993408),
-    u = n(331884),
-    d = n(652215);
-let f = 1e3;
+var i = r(64700),
+    l = r(311907),
+    n = r(954571),
+    s = r(927578),
+    a = r(440938),
+    u = r(590180),
+    o = r(993408),
+    d = r(331884),
+    c = r(652215);
 
-function p(e, t) {
-    let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "product",
-        p = (0, s.uM)(),
-        _ = (0, i.bG)([l.A], () => l.A.getProduct(e)),
-        h = (0, u.i)(),
-        m = o.Ay.canUseCollectibles(h),
-        g = r.useRef(null),
-        E = r.useCallback(() => {
-            let r = null != _ ? (0, c.Br)(_, m, !1) : null,
-                i = null != _ ? (0, c.c7)(_, m, !1) : void 0;
-            a.default.track(d.HAw.COLLECTIBLES_TILE_IMPRESSION, {
-                collectibles_shop_session_id: null == p ? void 0 : p.sessionId,
-                sku_id: e,
-                display_price: null == r ? void 0 : r.amount,
-                display_price_currency: null == r ? void 0 : r.currency.toString(),
-                display_price_strikethrough: i,
-                position: null == p ? void 0 : p.tilePosition,
-                page_type: t,
-                page_category: null == p ? void 0 : p.pageCategory,
-                page_section: null == p ? void 0 : p.pageSection,
-                type: n,
-                category_position: null == p ? void 0 : p.categoryPosition
+function m(t, e) {
+    let r = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "product",
+        m = (0, a.uM)(),
+        x = (0, l.bG)([u.A], () => u.A.getProduct(t)),
+        p = (0, d.i)(),
+        g = s.Ay.canUseCollectibles(p),
+        h = i.useRef(null),
+        C = i.useCallback(() => {
+            let i = null != x ? (0, o.Br)(x, g, !1) : null,
+                l = null != x ? (0, o.c7)(x, g, !1) : void 0;
+            n.default.track(c.HAw.COLLECTIBLES_TILE_IMPRESSION, {
+                collectibles_shop_session_id: m?.sessionId,
+                sku_id: t,
+                display_price: i?.amount,
+                display_price_currency: i?.currency.toString(),
+                display_price_strikethrough: l,
+                position: m?.tilePosition,
+                page_type: e,
+                page_category: m?.pageCategory,
+                page_section: m?.pageSection,
+                type: r,
+                category_position: m?.categoryPosition
             })
-        }, [null == p ? void 0 : p.sessionId, null == p ? void 0 : p.categoryPosition, null == p ? void 0 : p.pageCategory, null == p ? void 0 : p.pageSection, null == p ? void 0 : p.tilePosition, m, t, _, e, n]),
-        y = r.useCallback(e => {
-            e ? null === g.current && (g.current = setTimeout(() => {
-                E(), g.current = null
-            }, f)) : null !== g.current && (clearTimeout(g.current), g.current = null)
-        }, [E]);
-    return r.useEffect(() => () => {
-        null !== g.current && (clearTimeout(g.current), g.current = null)
+        }, [m?.sessionId, m?.categoryPosition, m?.pageCategory, m?.pageSection, m?.tilePosition, g, e, x, t, r]),
+        A = i.useCallback(t => {
+            t ? null === h.current && (h.current = setTimeout(() => {
+                C(), h.current = null
+            }, 1e3)) : null !== h.current && (clearTimeout(h.current), h.current = null)
+        }, [C]);
+    return i.useEffect(() => () => {
+        null !== h.current && (clearTimeout(h.current), h.current = null)
     }, []), {
-        handleCardVisibilityChange: y
+        handleCardVisibilityChange: A
     }
 }

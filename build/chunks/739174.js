@@ -1,107 +1,76 @@
 /** chunk id: 739174, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => w
+    A: () => E
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(503698),
-    a = n.n(l),
-    s = n(284009),
-    o = n.n(s),
-    c = n(311907),
-    d = n(990078),
+    l = n(64700),
+    s = n(503698),
+    a = n.n(s),
+    r = n(284009),
+    o = n.n(r),
+    d = n(311907),
+    c = n(990078),
     u = n(397927),
-    p = n(442433),
-    m = n(392054),
-    g = n(168186),
-    b = n(713654),
-    f = n(201275),
-    h = n(657048),
-    x = n(734057),
-    j = n(696451),
-    O = n(317525),
-    y = n(351906),
-    A = n(287809),
-    v = n(427262),
-    _ = n(652215),
-    N = n(985018),
-    E = n(393800);
+    m = n(442433),
+    g = n(392054),
+    x = n(168186),
+    h = n(713654),
+    p = n(201275),
+    A = n(657048),
+    b = n(734057),
+    _ = n(696451),
+    f = n(317525),
+    N = n(351906),
+    j = n(287809),
+    T = n(427262),
+    v = n(652215),
+    C = n(985018),
+    I = n(393800);
 
-function T(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            i = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), i.forEach(function(t) {
-            var i;
-            i = n[t], t in e ? Object.defineProperty(e, t, {
-                value: i,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = i
-        })
-    }
-    return e
-}
-
-function C(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var i = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, i)
-        }
-        return n
-    })(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-
-function w(e) {
+function E(e) {
     let {
         guild: t,
-        id: l,
+        id: s,
         type: a,
-        isLocked: s,
-        lockTooltipText: c
-    } = e, d = !s || null != c;
-    o()(d, "No lockTooltipText provided while isLocked=true");
-    let u = r.useCallback(e => {
-        (0, p.L3)(e, async () => {
+        isLocked: r,
+        lockTooltipText: d
+    } = e, c = !r || null != d;
+    o()(c, "No lockTooltipText provided while isLocked=true");
+    let u = l.useCallback(e => {
+        (0, m.L3)(e, async () => {
             let {
                 default: e
             } = await n.e("15687").then(n.bind(n, 646938));
-            return t => (0, i.jsx)(e, C(T({}, t), {
-                id: l,
-                label: N.intl.string(N.t.oJ1Muw)
-            }))
+            return t => (0, i.jsx)(e, {
+                ...t,
+                id: s,
+                label: C.intl.string(C.t.oJ1Muw)
+            })
         })
-    }, [l]);
+    }, [s]);
     switch (a) {
-        case m.RA.CHANNEL:
+        case g.RA.CHANNEL:
             return (0, i.jsx)(S, {
                 guild: t,
-                id: l,
-                isLocked: s,
-                lockTooltipText: c,
+                id: s,
+                isLocked: r,
+                lockTooltipText: d,
                 openEntryContextMenu: u
             });
-        case m.RA.ROLE:
-            return (0, i.jsx)(I, {
+        case g.RA.ROLE:
+            return (0, i.jsx)(y, {
                 guild: t,
-                id: l,
-                isLocked: s,
-                lockTooltipText: c,
+                id: s,
+                isLocked: r,
+                lockTooltipText: d,
                 openEntryContextMenu: u
             });
-        case m.RA.USER:
-            return (0, i.jsx)(P, {
+        case g.RA.USER:
+            return (0, i.jsx)(O, {
                 guild: t,
-                id: l,
-                isLocked: s,
-                lockTooltipText: c,
+                id: s,
+                isLocked: r,
+                lockTooltipText: d,
                 openEntryContextMenu: u
             })
     }
@@ -111,138 +80,136 @@ function S(e) {
     let {
         guild: t,
         id: n,
-        isLocked: l,
-        lockTooltipText: s,
+        isLocked: s,
+        lockTooltipText: r,
         openEntryContextMenu: o
-    } = e, d = (0, g.Ap)(t.id), {
-        icon: p,
-        name: m,
-        categoryName: f
-    } = (0, c.cf)([x.A], () => {
-        if (d === n) return {
-            name: N.intl.string(N.t["7YqSGx"]),
+    } = e, c = (0, x.Ap)(t.id), {
+        icon: m,
+        name: g,
+        categoryName: p
+    } = (0, d.cf)([b.A], () => {
+        if (c === n) return {
+            name: C.intl.string(C.t["7YqSGx"]),
             icon: u.N$i
         };
-        let e = x.A.getChannel(n),
-            i = (null == e ? void 0 : e.parent_id) != null ? x.A.getChannel(e.parent_id) : null;
+        let e = b.A.getChannel(n),
+            i = e?.parent_id != null ? b.A.getChannel(e.parent_id) : null;
         return {
-            icon: null != e ? (0, b.gU)(e, t) : null,
-            name: null == e ? void 0 : e.name,
-            categoryName: null == i ? void 0 : i.name
+            icon: null != e ? (0, h.gU)(e, t) : null,
+            name: e?.name,
+            categoryName: i?.name
         }
-    }, [d, t, n]), h = r.useCallback(e => {
-        n !== d && o(e)
-    }, [d, n, o]);
-    return null == p || null == m ? null : (0, i.jsxs)("div", {
-        onContextMenu: h,
-        className: E.Cv,
-        children: [(0, i.jsx)(p, {
+    }, [c, t, n]), A = l.useCallback(e => {
+        n !== c && o(e)
+    }, [c, n, o]);
+    return null == m || null == g ? null : (0, i.jsxs)("div", {
+        onContextMenu: A,
+        className: I.Cv,
+        children: [(0, i.jsx)(m, {
             size: "custom",
             width: 20,
             height: 20,
             color: "currentColor",
-            className: a()(E.p, E.Sl)
+            className: a()(I.p, I.Sl)
         }), (0, i.jsx)(u.Text, {
-            className: E.S3,
+            className: I.S3,
             color: "text-strong",
             variant: "text-md/normal",
-            children: m
-        }), null != f ? (0, i.jsxs)(u.Text, {
-            className: E.Tc,
+            children: g
+        }), null != p ? (0, i.jsxs)(u.Text, {
+            className: I.Tc,
             variant: "text-sm/normal",
-            children: ["(", f, ")"]
-        }) : null, l ? (0, i.jsx)(k, {
+            children: ["(", p, ")"]
+        }) : null, s ? (0, i.jsx)(w, {
+            tooltipText: r
+        }) : null]
+    })
+}
+
+function y(e) {
+    let {
+        guild: t,
+        id: s,
+        isLocked: r,
+        lockTooltipText: o
+    } = e, c = (0, d.bG)([f.A], () => f.A.getRole(t.id, s)), g = (0, p.$7)({
+        guildId: t.id,
+        roleId: s,
+        size: 24
+    }), x = l.useCallback(e => {
+        null != t && null != c && (0, m.L3)(e, async () => {
+            let {
+                default: e
+            } = await n.e("41072").then(n.bind(n, 165747));
+            return n => (0, i.jsx)(e, {
+                ...n,
+                guild: t,
+                role: c
+            })
+        })
+    }, [t, c]);
+    return c?.name == null ? null : (0, i.jsxs)("div", {
+        onContextMenu: x,
+        className: I.Cv,
+        children: [null != g ? (0, i.jsx)(A.A, {
+            className: a()(I.__invalid_icon, I.Sl),
+            ...g
+        }) : (0, i.jsx)(u.iTF, {
+            size: "custom",
+            width: 23,
+            height: 23,
+            className: a()(I.a, I.Sl),
+            color: c.colorString ?? v.TpD
+        }), (0, i.jsx)(u.Text, {
+            className: I.S3,
+            color: "text-strong",
+            variant: "text-md/normal",
+            children: c.name
+        }), r ? (0, i.jsx)(w, {
+            tooltipText: o
+        }) : null]
+    })
+}
+
+function O(e) {
+    let {
+        guild: t,
+        id: n,
+        isLocked: l,
+        lockTooltipText: s,
+        openEntryContextMenu: a
+    } = e, r = (0, d.bG)([j.default], () => j.default.getUser(n)), o = (0, d.bG)([_.Ay], () => _.Ay.getMember(t.id, n)?.nick, [t.id, n]), c = (0, d.bG)([N.A], () => N.A.hidePersonalInformation);
+    return null == r ? null : (0, i.jsxs)("div", {
+        onContextMenu: a,
+        className: I.Cv,
+        children: [(0, i.jsx)(u.euF, {
+            className: I.Sl,
+            src: r.getAvatarURL(t.id, 24),
+            "aria-label": r.username,
+            size: u._3J.SIZE_24
+        }), (0, i.jsx)(u.Text, {
+            className: I.S3,
+            color: "text-strong",
+            variant: "text-md/normal",
+            children: o ?? r.username
+        }), c ? null : (0, i.jsx)(u.Text, {
+            className: I.Tc,
+            variant: "text-sm/normal",
+            children: T.Ay.getUserTag(r)
+        }), l ? (0, i.jsx)(w, {
             tooltipText: s
         }) : null]
     })
 }
 
-function I(e) {
-    var t;
-    let {
-        guild: l,
-        id: s,
-        isLocked: o,
-        lockTooltipText: d
-    } = e, m = (0, c.bG)([O.A], () => O.A.getRole(l.id, s)), g = (0, f.$7)({
-        guildId: l.id,
-        roleId: s,
-        size: 24
-    }), b = r.useCallback(e => {
-        null != l && null != m && (0, p.L3)(e, async () => {
-            let {
-                default: e
-            } = await n.e("41072").then(n.bind(n, 165747));
-            return t => (0, i.jsx)(e, C(T({}, t), {
-                guild: l,
-                role: m
-            }))
-        })
-    }, [l, m]);
-    return (null == m ? void 0 : m.name) == null ? null : (0, i.jsxs)("div", {
-        onContextMenu: b,
-        className: E.Cv,
-        children: [null != g ? (0, i.jsx)(h.A, T({
-            className: a()(E.__invalid_icon, E.Sl)
-        }, g)) : (0, i.jsx)(u.iTF, {
-            size: "custom",
-            width: 23,
-            height: 23,
-            className: a()(E.a, E.Sl),
-            color: null != (t = m.colorString) ? t : _.TpD
-        }), (0, i.jsx)(u.Text, {
-            className: E.S3,
-            color: "text-strong",
-            variant: "text-md/normal",
-            children: m.name
-        }), o ? (0, i.jsx)(k, {
-            tooltipText: d
-        }) : null]
-    })
-}
-
-function P(e) {
-    let {
-        guild: t,
-        id: n,
-        isLocked: r,
-        lockTooltipText: l,
-        openEntryContextMenu: a
-    } = e, s = (0, c.bG)([A.default], () => A.default.getUser(n)), o = (0, c.bG)([j.Ay], () => {
-        var e;
-        return null == (e = j.Ay.getMember(t.id, n)) ? void 0 : e.nick
-    }, [t.id, n]), d = (0, c.bG)([y.A], () => y.A.hidePersonalInformation);
-    return null == s ? null : (0, i.jsxs)("div", {
-        onContextMenu: a,
-        className: E.Cv,
-        children: [(0, i.jsx)(u.euF, {
-            className: E.Sl,
-            src: s.getAvatarURL(t.id, 24),
-            "aria-label": s.username,
-            size: u._3J.SIZE_24
-        }), (0, i.jsx)(u.Text, {
-            className: E.S3,
-            color: "text-strong",
-            variant: "text-md/normal",
-            children: null != o ? o : s.username
-        }), d ? null : (0, i.jsx)(u.Text, {
-            className: E.Tc,
-            variant: "text-sm/normal",
-            children: v.Ay.getUserTag(s)
-        }), r ? (0, i.jsx)(k, {
-            tooltipText: l
-        }) : null]
-    })
-}
-
-function k(e) {
+function w(e) {
     let {
         tooltipText: t
     } = e;
-    return (0, i.jsx)(d.m, {
+    return (0, i.jsx)(c.m, {
         text: t,
         children: (0, i.jsx)("div", {
-            className: E.hz,
+            className: I.hz,
             children: (0, i.jsx)(u.XAi, {
                 size: "xs",
                 color: "currentColor"

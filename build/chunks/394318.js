@@ -1,13 +1,13 @@
 /** chunk id: 394318, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    X: () => a
+    X: () => l
 });
-var r = n(265422),
-    i = n(967198),
-    l = n(203982),
+var i = n(265422),
+    r = n(967198),
+    a = n(203982),
     s = n(652215);
-let a = {
+let l = {
     binds: ["mod+shift+t"],
     comboKeysBindGlobal: !0,
-    action: () => (null != i.A.getGuildId() && (0, r.i)(s.ME), l._.safeDispatch(s.jej.TOGGLE_DM_CREATE), !1)
+    action: () => (null != r.A.getGuildId() && (0, i.i)(s.ME), a._.safeDispatch(s.jej.TOGGLE_DM_CREATE), !1)
 }

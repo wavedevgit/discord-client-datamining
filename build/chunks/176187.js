@@ -1,4 +1,5 @@
 /** chunk id: 176187, original params: e,t,n (module,exports,require) **/
+"use strict";
 e.exports = {
     kL: "container__9fa5a",
     gn: "titleContainer__9fa5a",

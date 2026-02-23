@@ -1,59 +1,59 @@
 /** chunk id: 659195, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => A
+    A: () => f
 });
-var l = n(627968),
-    r = n(64700),
-    i = n(417597),
+var i = n(627968),
+    l = n(64700),
+    s = n(417597),
     a = n(397927),
-    s = n(58149),
+    r = n(58149),
     o = n(734057),
     c = n(147036),
-    u = n(957565),
-    d = n(975571),
+    d = n(957565),
+    u = n(975571),
     h = n(36491),
-    p = n(209100),
-    f = n(652215),
-    m = n(985018),
-    g = n(179783);
+    m = n(209100),
+    A = n(652215),
+    g = n(985018),
+    p = n(179783);
 
-function A(e) {
+function f(e) {
     let {
         threadId: t
-    } = e, n = (0, i.bG)([o.A], () => o.A.getChannel(t)), A = (0, i.bG)([o.A], () => o.A.getChannel(null == n ? void 0 : n.parent_id)), b = r.useCallback(() => {
-        null != n && null != A && ((0, s.zV)(f.HAw.MEDIA_POST_SHARE_PROMPT_CLICKED, {
+    } = e, n = (0, s.bG)([o.A], () => o.A.getChannel(t)), f = (0, s.bG)([o.A], () => o.A.getChannel(n?.parent_id)), _ = l.useCallback(() => {
+        null != n && null != f && ((0, r.zV)(A.HAw.MEDIA_POST_SHARE_PROMPT_CLICKED, {
             media_post_id: n.id
-        }), (0, u.C)((0, c.af)(n, A)))
-    }, [n, A]);
-    return (0, l.jsxs)("div", {
-        className: g.BQ,
-        children: [(0, l.jsx)(p.A, {}), (0, l.jsxs)("div", {
-            className: g.BB,
-            children: [(0, l.jsx)(a.Text, {
+        }), (0, d.C)((0, c.af)(n, f)))
+    }, [n, f]);
+    return (0, i.jsxs)("div", {
+        className: p.BQ,
+        children: [(0, i.jsx)(m.A, {}), (0, i.jsxs)("div", {
+            className: p.BB,
+            children: [(0, i.jsx)(a.Text, {
                 variant: "text-md/semibold",
                 color: "text-strong",
-                children: m.intl.string(m.t["5uAO7d"])
-            }), (0, l.jsx)(a.Text, {
+                children: g.intl.string(g.t["5uAO7d"])
+            }), (0, i.jsx)(a.Text, {
                 variant: "text-sm/medium",
                 color: "text-default",
-                children: m.intl.format(m.t.WnfPV3, {
-                    helpArticleUrl: d.A.getCreatorSupportArticleURL(f.MVz.MEDIA_CHANNEL)
+                children: g.intl.format(g.t.WnfPV3, {
+                    helpArticleUrl: u.A.getCreatorSupportArticleURL(A.MVz.MEDIA_CHANNEL)
                 })
-            }), (0, l.jsx)(a.hKd, {
+            }), (0, i.jsx)(a.hKd, {
                 size: 4
-            }), (0, l.jsx)(a.Button, {
-                text: m.intl.string(m.t.C5UQC9),
+            }), (0, i.jsx)(a.Button, {
+                text: g.intl.string(g.t.C5UQC9),
                 variant: "primary",
                 icon: a.qYV,
-                onClick: b
+                onClick: _
             })]
-        }), (0, l.jsx)(a.DUT, {
-            className: g.b,
+        }), (0, i.jsx)(a.DUT, {
+            className: p.b,
             onClick: () => {
                 (0, h.sF)(t)
             },
-            "aria-label": m.intl.string(m.t["0+xZH0"]),
-            children: (0, l.jsx)(a.PGe, {
+            "aria-label": g.intl.string(g.t["0+xZH0"]),
+            children: (0, i.jsx)(a.PGe, {
                 color: "currentColor",
                 size: "xs"
             })

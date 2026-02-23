@@ -1,16 +1,16 @@
 /** chunk id: 939034, original params: e,a,i (module,exports,require) **/
 i.r(a), i.d(a, {
-    default: () => t
+    default: () => f
 });
 var s = i(627968),
-    r = i(7946);
+    t = i(7946);
 
-function t(e) {
+function f(e) {
     let {
         asset: a
     } = e;
     return (0, s.jsx)("div", {
-        className: r.ZS,
+        className: t.ZS,
         children: a
     })
 }

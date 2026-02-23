@@ -1,8 +1,8 @@
 /** chunk id: 563853, original params: e,t,a (module,exports,require) **/
 a.d(t, {
-    T: () => r
+    T: () => s
 });
-let r = {
+let s = {
     ASSET_SOCIAL_TWITTER: a(412126),
     ASSET_SOCIAL_FACEBOOK: a(681713),
     ASSET_SOCIAL_INSTAGRAM: a(368531),

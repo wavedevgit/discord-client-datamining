@@ -1,14 +1,14 @@
 /** chunk id: 614740, original params: e,n,t (module,exports,require) **/
 t.d(n, {
-    C: () => l
+    C: () => r
 });
-var r = t(627968);
+var l = t(627968);
 
-function l(e) {
+function r(e) {
     let {
         children: n
     } = e;
-    return (0, r.jsx)("code", {
+    return (0, l.jsx)("code", {
         className: "inline",
         children: n
     })

@@ -1,21 +1,21 @@
 /** chunk id: 530912, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     Jf: () => _,
-    TA: () => u,
-    VF: () => b,
+    TA: () => c,
+    VF: () => m,
     hH: () => d,
-    nL: () => m,
-    pp: () => c
+    nL: () => h,
+    pp: () => u
 });
-var r = n(64700),
-    l = n(735438),
-    a = n(58149),
-    i = n(734057),
-    o = n(954571),
-    s = n(652215);
+var a = n(64700),
+    s = n(735438),
+    i = n(58149),
+    r = n(734057),
+    l = n(954571),
+    o = n(652215);
 
-function c(e, t, n) {
-    o.default.track(s.HAw.FORWARD_MESSAGE_STARTED, {
+function u(e, t, n) {
+    l.default.track(o.HAw.FORWARD_MESSAGE_STARTED, {
         channel_id: e,
         message_id: t,
         source: n
@@ -26,67 +26,52 @@ function d(e) {
     let {
         channelId: t,
         messageId: n,
-        numDestinationChanges: r,
-        numQueryChanges: l
+        numDestinationChanges: a,
+        numQueryChanges: s
     } = e;
-    o.default.track(s.HAw.FORWARD_MESSAGE_CANCELLED, {
+    l.default.track(o.HAw.FORWARD_MESSAGE_CANCELLED, {
         channel_id: t,
         message_id: n,
-        num_destination_changes: r,
-        num_query_changes: l
+        num_destination_changes: a,
+        num_query_changes: s
     })
 }
 
-function u(e) {
+function c(e) {
     let {
         channelId: t,
         messageId: n,
-        hasError: r,
-        hasContextMessage: l,
-        numDestinations: c,
+        hasError: a,
+        hasContextMessage: s,
+        numDestinations: u,
         numDestinationChanges: d,
-        numQueryChanges: u,
+        numQueryChanges: c,
         anyDestinationHasSlowmode: _,
-        source: m
+        source: h
     } = e;
-    if (o.default.track(s.HAw.FORWARD_MESSAGE_SENT, {
+    if (l.default.track(o.HAw.FORWARD_MESSAGE_SENT, {
             channel_id: t,
             message_id: n,
-            has_error: r,
-            has_context_message: l,
-            num_destinations: c,
+            has_error: a,
+            has_context_message: s,
+            num_destinations: u,
             num_destination_changes: d,
-            num_query_changes: u,
+            num_query_changes: c,
             any_destination_has_slowmode: _
-        }), "message-shortcut" === m) {
-        let e = i.A.getChannel(t);
-        o.default.track(s.HAw.MESSAGE_SHORTCUT_ACTION_SENT, function(e) {
-            for (var t = 1; t < arguments.length; t++) {
-                var n = null != arguments[t] ? arguments[t] : {},
-                    r = Object.keys(n);
-                "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                    return Object.getOwnPropertyDescriptor(n, e).enumerable
-                }))), r.forEach(function(t) {
-                    var r;
-                    r = n[t], t in e ? Object.defineProperty(e, t, {
-                        value: r,
-                        enumerable: !0,
-                        configurable: !0,
-                        writable: !0
-                    }) : e[t] = r
-                })
-            }
-            return e
-        }({
+        }), "message-shortcut" === h) {
+        let e = r.A.getChannel(t);
+        l.default.track(o.HAw.MESSAGE_SHORTCUT_ACTION_SENT, {
             action: "forward",
-            original_message_id: n
-        }, (0, a.H$)(null == e ? void 0 : e.guild_id), (0, a.dI)(e)))
+            original_message_id: n,
+            ...(0, i.H$)(e?.guild_id),
+            ...(0, i.dI)(e)
+        })
     }
 }
 
 function _() {
-    return r.useMemo(() => (0, l.once)((e, t, n) => {
-        o.default.track(s.HAw.FORWARD_ADD_RECIPIENT, {
+    return a.useMemo(() => (0, s.once)((e, t, n) => {
+        l.default.track(o.HAw.FORWARD_ADD_RECIPIENT, {
             channel_id: e,
             message_id: t,
             has_query: n
@@ -94,18 +79,18 @@ function _() {
     }), [])
 }
 
-function m() {
-    return r.useMemo(() => (0, l.once)((e, t) => {
-        o.default.track(s.HAw.FORWARD_EDIT_SEARCH, {
+function h() {
+    return a.useMemo(() => (0, s.once)((e, t) => {
+        l.default.track(o.HAw.FORWARD_EDIT_SEARCH, {
             channel_id: e,
             message_id: t
         })
     }), [])
 }
 
-function b() {
-    return r.useMemo(() => (0, l.once)((e, t) => {
-        o.default.track(s.HAw.FORWARD_EDIT_CONTEXT_MESSAGE, {
+function m() {
+    return a.useMemo(() => (0, s.once)((e, t) => {
+        l.default.track(o.HAw.FORWARD_EDIT_CONTEXT_MESSAGE, {
             channel_id: e,
             message_id: t
         })

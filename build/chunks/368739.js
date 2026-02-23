@@ -1,7 +1,7 @@
 /** chunk id: 368739, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     D4: () => o,
-    LD: () => d,
+    LD: () => u,
     pS: () => c
 });
 var l = n(417597),
@@ -10,7 +10,7 @@ var l = n(417597),
     a = n(735547),
     r = n(652215);
 let o = a.Ay.INVITE_OPTIONS_7_DAYS.value,
-    u = (0, i.C)({
+    d = (0, i.C)({
         kind: "guild",
         id: "2025-08_default_invite_expiration_guild",
         label: "Default Invite Expiration Guild",
@@ -38,30 +38,29 @@ let o = a.Ay.INVITE_OPTIONS_7_DAYS.value,
         }]
     });
 
-function d(e) {
+function u(e) {
     let {
         guildId: t,
         location: n
-    } = e, i = u.useExperiment({
-        guildId: null != t ? t : r.dJq,
+    } = e, i = d.useExperiment({
+        guildId: t ?? r.dJq,
         location: n
-    }), d = (0, l.bG)([s.A], () => s.A.getGuild(t));
+    }), u = (0, l.bG)([s.A], () => s.A.getGuild(t));
     return null == t ? null : function(e) {
-        var t;
         let {
-            guild: n,
-            experimentConfig: l
+            guild: t,
+            experimentConfig: n
         } = e;
-        if (null == n ? void 0 : n.features.has(r.GuildFeatures.HUB)) return a.Ay.INVITE_OPTIONS_FOREVER.value;
+        if (t?.features.has(r.GuildFeatures.HUB)) return a.Ay.INVITE_OPTIONS_FOREVER.value;
         let {
-            defaultMaxAge: i
-        } = null != l ? l : u.getCurrentConfig({
-            guildId: null != (t = null == n ? void 0 : n.id) ? t : r.dJq,
+            defaultMaxAge: l
+        } = n ?? d.getCurrentConfig({
+            guildId: t?.id ?? r.dJq,
             location: "getDefaultInviteExpiration"
         });
-        return null != i ? i : o
+        return l ?? o
     }({
-        guild: d,
+        guild: u,
         experimentConfig: i
     })
 }
@@ -70,11 +69,11 @@ function c(e) {
     let {
         guildId: t,
         location: n
-    } = e, l = u.useExperiment({
-        guildId: null != t ? t : r.dJq,
+    } = e, l = d.useExperiment({
+        guildId: t ?? r.dJq,
         location: n
     });
     return a.Ay.getMaxAgeOptions({
-        includeExperimentalValues: [null == l ? void 0 : l.defaultMaxAge]
+        includeExperimentalValues: [l?.defaultMaxAge]
     })
 }

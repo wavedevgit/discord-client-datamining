@@ -1,31 +1,27 @@
 /** chunk id: 755439, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => d
 });
-var r, i, l = n(311907),
-    a = n(73153),
-    s = n(613057);
-let o = null,
-    c = [s.Hi.REDISTRIBUTABLE_INSTALL_FAILED, s.Hi.POST_INSTALL_FAILED, s.Hi.POST_INSTALL_CANCELLED],
-    u = [s.Hi.APPLICATION_NOT_FOUND, s.Hi.APPLICATION_LOAD_FAILED, s.Hi.INTERRUPTED, s.Hi.DESERIALIZATION_FAILED];
-class d extends(i = l.Ay.Store) {
+var i = n(311907),
+    l = n(73153),
+    a = n(613057);
+let r = null,
+    s = [a.Hi.REDISTRIBUTABLE_INSTALL_FAILED, a.Hi.POST_INSTALL_FAILED, a.Hi.POST_INSTALL_CANCELLED],
+    o = [a.Hi.APPLICATION_NOT_FOUND, a.Hi.APPLICATION_LOAD_FAILED, a.Hi.INTERRUPTED, a.Hi.DESERIALIZATION_FAILED];
+class c extends i.Ay.Store {
+    static displayName = "DispatchApplicationErrorStore";
     getLastError() {
-        return o
+        return r
     }
-}(r = "displayName") in d ? Object.defineProperty(d, r, {
-    value: "DispatchApplicationErrorStore",
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
-}) : d[r] = "DispatchApplicationErrorStore";
-let p = new d(a.h, {
+}
+let d = new c(l.h, {
     DISPATCH_APPLICATION_LAUNCH_SETUP_START: function() {
-        null != o && null != o.code && c.includes(o.code) && (o = null)
+        null != r && null != r.code && s.includes(r.code) && (r = null)
     },
     DISPATCH_APPLICATION_ERROR: function(e) {
         let {
             error: t
         } = e;
-        o = null != t.code && u.includes(t.code) ? null : t
+        r = null != t.code && o.includes(t.code) ? null : t
     }
 })

@@ -1,71 +1,70 @@
 /** chunk id: 899894, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    V: () => d
+    V: () => u
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(989349),
-    l = n.n(i),
+var l = n(989349),
+    r = n.n(l),
     a = n(827734),
     s = n(397927),
     o = n(239093),
-    c = n(985018),
-    u = n(153400);
+    d = n(985018),
+    c = n(153400);
 
-function d(e) {
-    var t, i, d, p, m;
+function u(e) {
     if (null == e.message.embeds || null == e.message.embeds[0].fields) return null;
-    let f = e.message.embeds[0],
-        g = null != (t = null == (p = f.fields) ? void 0 : p.find(e => e.rawName === o.AT.CLASSIFICATION_ID)) ? t : void 0,
-        _ = null != (i = null == g ? void 0 : g.rawValue) ? i : void 0,
-        h = null != (d = null == (m = f.fields) ? void 0 : m.find(e => e.rawName === o.AT.INCIDENT_TIMESTAMP)) ? d : void 0,
-        b = null == h || null == h.rawValue ? void 0 : parseFloat(h.rawValue);
-    return null == _ || null == b ? null : (0, r.jsxs)(s.DUT, {
+    let t = e.message.embeds[0],
+        l = t.fields?.find(e => e.rawName === o.AT.CLASSIFICATION_ID) ?? void 0,
+        u = l?.rawValue ?? void 0,
+        _ = t.fields?.find(e => e.rawName === o.AT.INCIDENT_TIMESTAMP) ?? void 0,
+        m = null == _ || null == _.rawValue ? void 0 : parseFloat(_.rawValue);
+    return null == u || null == m ? null : (0, i.jsxs)(s.DUT, {
         onClick: () => {
             (0, s.mMO)(async () => {
                 let {
                     default: e
                 } = await Promise.all([n.e("83518"), n.e("9407"), n.e("1708")]).then(n.bind(n, 956450));
-                return t => (0, r.jsx)(e, {
-                    classificationId: _,
+                return t => (0, i.jsx)(e, {
+                    classificationId: u,
                     source: o.XN.SystemDM,
                     transitionState: t.transitionState,
                     onClose: t.onClose
                 })
             })
         },
-        className: u.o3,
-        children: [(0, r.jsxs)("div", {
-            className: u.qZ,
-            children: [(0, r.jsxs)("div", {
-                className: u.U1,
-                children: [(0, r.jsx)(s.id, {
-                    className: u.QW,
+        className: c.o3,
+        children: [(0, i.jsxs)("div", {
+            className: c.qZ,
+            children: [(0, i.jsxs)("div", {
+                className: c.U1,
+                children: [(0, i.jsx)(s.id, {
+                    className: c.QW,
                     color: a.A.colors.ICON_FEEDBACK_CRITICAL
-                }), (0, r.jsx)(s.Text, {
+                }), (0, i.jsx)(s.Text, {
                     variant: "text-md/semibold",
-                    children: c.intl.string(c.t["4CxGXi"])
+                    children: d.intl.string(d.t["4CxGXi"])
                 })]
-            }), (0, r.jsx)("div", {
-                className: u.VU,
-                children: (0, r.jsx)(s.Text, {
+            }), (0, i.jsx)("div", {
+                className: c.VU,
+                children: (0, i.jsx)(s.Text, {
                     variant: "text-xs/medium",
-                    children: c.intl.format(c.t.eevFb6, {
-                        daysAgo: l()().diff(l().unix(b), "days")
+                    children: d.intl.format(d.t.eevFb6, {
+                        daysAgo: r()().diff(r().unix(m), "days")
                     })
                 })
-            }), (0, r.jsx)("div", {
-                className: u.vv,
-                children: (0, r.jsx)(s.Text, {
+            }), (0, i.jsx)("div", {
+                className: c.vv,
+                children: (0, i.jsx)(s.Text, {
                     variant: "text-md/normal",
                     color: "text-muted",
-                    children: c.intl.string(c.t["5CLb0A"])
+                    children: d.intl.string(d.t["5CLb0A"])
                 })
             })]
-        }), (0, r.jsx)("div", {
-            className: u.xQ,
-            children: (0, r.jsx)(s.QWc, {
-                text: c.intl.string(c.t.zKnzwm),
+        }), (0, i.jsx)("div", {
+            className: c.xQ,
+            children: (0, i.jsx)(s.QWc, {
+                text: d.intl.string(d.t.zKnzwm),
                 variant: "secondary"
             })
         })]

@@ -1,93 +1,92 @@
-/** chunk id: 720341, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    V: () => _
-}), n(896048);
-var r = n(627968),
-    i = n(64700),
-    a = n(503698),
-    o = n.n(a),
-    s = n(968172),
-    l = n(493108),
-    c = n(408278),
-    u = n(934551),
-    d = n(460890),
-    f = n(834730),
-    p = n(730909);
+/** chunk id: 720341, original params: e,l,a (module,exports,require) **/
+a.d(l, {
+    V: () => m
+});
+var t = a(627968),
+    o = a(64700),
+    n = a(503698),
+    i = a.n(n),
+    s = a(968172),
+    r = a(493108),
+    d = a(408278),
+    u = a(934551),
+    c = a(460890),
+    b = a(834730),
+    p = a(730909);
 
-function _(e) {
+function m(e) {
     let {
-        value: t,
-        onChange: n,
-        minValue: a,
-        maxValue: _,
-        disabled: h = !1,
-        readOnly: m = !1,
-        className: g,
-        "aria-label": E
+        value: l,
+        onChange: a,
+        minValue: n,
+        maxValue: m,
+        disabled: x = !1,
+        readOnly: v = !1,
+        className: h,
+        "aria-label": y
     } = e, {
-        i18n: y
-    } = (0, d.G9)(), [b, O] = i.useState(t);
-    return i.useEffect(() => {
-        O(t)
-    }, [t]), (0, r.jsx)(s.Vv, {
-        value: t,
-        focusedValue: b,
-        onFocusChange: O,
-        onChange: n,
-        minValue: a,
-        maxValue: _,
-        isDisabled: h,
-        isReadOnly: m,
-        "aria-label": E,
+        i18n: f
+    } = (0, c.G9)(), [g, V] = o.useState(l);
+    return o.useEffect(() => {
+        V(l)
+    }, [l]), (0, t.jsx)(s.Vv, {
+        value: l,
+        focusedValue: g,
+        onFocusChange: V,
+        onChange: a,
+        minValue: n,
+        maxValue: m,
+        isDisabled: x,
+        isReadOnly: v,
+        "aria-label": y,
         "data-mana-component": "calendar",
-        className: o()(p.BJ, g),
-        children: e => (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsxs)("header", {
+        className: i()(p.BJ, h),
+        children: e => (0, t.jsxs)(t.Fragment, {
+            children: [(0, t.jsxs)("header", {
                 className: p.I4,
-                children: [(0, r.jsx)(c.K, {
+                children: [(0, t.jsx)(d.K, {
                     variant: "icon-only",
                     size: "sm",
                     icon: u.ChevronSmallLeftIcon,
-                    "aria-label": y.CALENDAR_PREVIOUS_MONTH_LABEL,
+                    "aria-label": f.CALENDAR_PREVIOUS_MONTH_LABEL,
                     onClick: () => e.state.focusPreviousPage(),
                     slot: "previous"
-                }), (0, r.jsx)(f.E, {
+                }), (0, t.jsx)(b.E, {
                     variant: "text-md/semibold",
                     color: "text-strong",
-                    children: (0, r.jsx)(l.D, {})
-                }), (0, r.jsx)(c.K, {
+                    children: (0, t.jsx)(r.D, {})
+                }), (0, t.jsx)(d.K, {
                     variant: "icon-only",
                     size: "sm",
                     icon: u.ChevronSmallRightIcon,
                     onClick: () => e.state.focusNextPage(),
-                    "aria-label": y.CALENDAR_NEXT_MONTH_LABEL,
+                    "aria-label": f.CALENDAR_NEXT_MONTH_LABEL,
                     slot: "next"
                 })]
-            }), (0, r.jsxs)(s.r8, {
+            }), (0, t.jsxs)(s.r8, {
                 className: p.ZP,
                 weekdayStyle: "short",
-                children: [(0, r.jsx)(s.co, {
-                    children: e => (0, r.jsx)(s.W$, {
+                children: [(0, t.jsx)(s.co, {
+                    children: e => (0, t.jsx)(s.W$, {
                         className: p.e4,
-                        children: (0, r.jsx)(f.E, {
+                        children: (0, t.jsx)(b.E, {
                             variant: "text-sm/normal",
                             color: "text-muted",
                             children: e
                         })
                     })
-                }), (0, r.jsx)(s.Xq, {
-                    children: e => (0, r.jsx)(s.Zr, {
+                }), (0, t.jsx)(s.Xq, {
+                    children: e => (0, t.jsx)(s.Zr, {
                         date: e,
                         className: p.Hn,
                         children: e => {
                             let {
-                                formattedDate: t
+                                formattedDate: l
                             } = e;
-                            return (0, r.jsx)(f.E, {
+                            return (0, t.jsx)(b.E, {
                                 variant: "text-md/normal",
                                 color: "currentColor",
-                                children: t
+                                children: l
                             })
                         }
                     })

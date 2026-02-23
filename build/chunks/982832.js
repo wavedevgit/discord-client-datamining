@@ -1,62 +1,58 @@
 /** chunk id: 982832, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => p
+    A: () => m
 });
-var r, i, l = n(311907),
+var i = n(311907),
     s = n(73153),
-    a = n(555337),
-    o = n(660496),
-    c = n(652215);
-let d = o.C.OVERVIEW,
-    u = null;
+    l = n(555337),
+    r = n(660496),
+    a = n(652215);
+let o = r.C.OVERVIEW,
+    d = null;
 
-function g(e) {
+function c(e) {
     let {
         subsection: t
     } = e;
     switch (t) {
-        case c.nd0.SAFETY_AUTOMOD:
-            d = o.C.AUTOMOD;
+        case a.nd0.SAFETY_AUTOMOD:
+            o = r.C.AUTOMOD;
             break;
-        case c.nd0.SAFETY_DM_AND_SPAM_PROTECTION:
-            d = o.C.DM_AND_SPAM_PROTECTION;
+        case a.nd0.SAFETY_DM_AND_SPAM_PROTECTION:
+            o = r.C.DM_AND_SPAM_PROTECTION;
             break;
-        case c.nd0.SAFETY_CAPTCHA_AND_RAID_PROTECTION:
-            d = o.C.CAPTCHA_AND_RAID_PROTECTION;
+        case a.nd0.SAFETY_CAPTCHA_AND_RAID_PROTECTION:
+            o = r.C.CAPTCHA_AND_RAID_PROTECTION;
             break;
-        case c.nd0.SAFETY_PERMISSIONS:
-            d = o.C.PERMISSIONS;
+        case a.nd0.SAFETY_PERMISSIONS:
+            o = r.C.PERMISSIONS;
             break;
-        case c.nd0.SAFETY_OVERVIEW:
+        case a.nd0.SAFETY_OVERVIEW:
         default:
-            d = o.C.OVERVIEW
+            o = r.C.OVERVIEW
     }
 }
-class m extends(i = l.Ay.Store) {
+class u extends i.Ay.Store {
     initialize() {
-        this.waitFor(a.A)
+        this.waitFor(l.A)
     }
+    static displayName = "GuildSettingsSafetyStore";
     getCurrentPage() {
-        return d
+        return o
     }
-}(r = "displayName") in m ? Object.defineProperty(m, r, {
-    value: "GuildSettingsSafetyStore",
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
-}) : m[r] = "GuildSettingsSafetyStore";
-let p = new m(s.h, {
+}
+let m = new u(s.h, {
     GUILD_SETTINGS_INIT: function() {
-        if (a.A.getGuildId() === u) return !1;
-        u = a.A.getGuildId()
+        if (l.A.getGuildId() === d) return !1;
+        d = l.A.getGuildId()
     },
-    GUILD_SETTINGS_SET_SECTION: g,
-    GUILD_SETTINGS_SAFETY_SET_SUBSECTION: g,
+    GUILD_SETTINGS_SET_SECTION: c,
+    GUILD_SETTINGS_SAFETY_SET_SUBSECTION: c,
     GUILD_SETTINGS_SAFETY_PAGE: function(e) {
         let {
             page: t
         } = e;
-        d = t
+        o = t
     }
 })

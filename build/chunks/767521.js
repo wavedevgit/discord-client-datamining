@@ -1,74 +1,74 @@
 /** chunk id: 767521, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => m
 });
-var r = n(627968),
-    i = n(64700),
+var i = n(627968),
+    r = n(64700),
     l = n(311907),
     a = n(827734),
     s = n(397927),
     o = n(817281),
-    c = n(688810),
-    u = n(692798),
-    d = n(544028),
-    p = n(652215),
+    d = n(688810),
+    c = n(692798),
+    u = n(544028),
+    A = n(652215),
     h = n(985018),
-    f = n(882773);
-let g = function() {
+    _ = n(882773);
+let m = function() {
     let {
         analyticsLocations: e
-    } = (0, c.Ay)(), t = (0, l.bG)([d.A], () => d.A.theme), n = i.useRef(null);
-    i.useEffect(() => {
+    } = (0, d.Ay)(), t = (0, l.bG)([u.A], () => u.A.theme), n = r.useRef(null);
+    r.useEffect(() => {
         null == n.current && (n.current = t)
     }, [t]);
-    let g = (0, s.rdh)(a.A.colors.BACKGROUND_BASE_LOW, p.NJ8.LIGHT),
-        m = (0, s.rdh)(a.A.colors.BACKGROUND_BASE_LOW, p.NJ8.DARKER),
-        A = (0, s.rdh)(a.A.colors.BACKGROUND_BASE_LOW, p.NJ8.MIDNIGHT),
-        _ = i.useMemo(() => [{
-            theme: p.NJ8.LIGHT,
+    let m = (0, s.rdh)(a.A.colors.BACKGROUND_BASE_LOW, A.NJ8.LIGHT),
+        p = (0, s.rdh)(a.A.colors.BACKGROUND_BASE_LOW, A.NJ8.DARKER),
+        g = (0, s.rdh)(a.A.colors.BACKGROUND_BASE_LOW, A.NJ8.MIDNIGHT),
+        E = r.useMemo(() => [{
+            theme: A.NJ8.LIGHT,
             label: h.t.K2sFfo,
-            color: g.hex()
-        }, {
-            theme: p.NJ8.DARKER,
-            label: h.t.b8Cei3,
             color: m.hex()
         }, {
-            theme: p.NJ8.MIDNIGHT,
+            theme: A.NJ8.DARKER,
+            label: h.t.b8Cei3,
+            color: p.hex()
+        }, {
+            theme: A.NJ8.MIDNIGHT,
             label: h.t.Do4ZJx,
-            color: A.hex()
-        }], [g, m, A]),
-        b = i.useCallback(t => {
-            (0, u.X8)({
+            color: g.hex()
+        }], [m, p, g]),
+        I = r.useCallback(t => {
+            (0, c.X8)({
                 isPersisted: !0,
                 analyticsLocations: e,
-                themeName: "default ".concat(t)
+                themeName: `default ${t}`
             }), (0, o.u_)({
                 theme: t
             })
         }, [e]),
-        E = i.useCallback(() => {
-            null != n.current && b(n.current)
-        }, [b]);
-    return (0, r.jsx)("div", {
-        className: f.N,
-        children: (0, r.jsxs)("div", {
-            className: f.t7,
-            children: [_.map(e => (0, r.jsxs)("button", {
+        f = r.useCallback(() => {
+            null != n.current && I(n.current)
+        }, [I]);
+    return (0, i.jsx)("div", {
+        className: _.N,
+        children: (0, i.jsxs)("div", {
+            className: _.t7,
+            children: [E.map(e => (0, i.jsxs)("button", {
                 type: "button",
-                className: f.Du,
-                onClick: () => b(e.theme),
+                className: _.Du,
+                onClick: () => I(e.theme),
                 "aria-label": h.intl.string(e.label),
-                children: [(0, r.jsx)("div", {
-                    className: "".concat(f.WT, " ").concat(t === e.theme ? f.TA : ""),
+                children: [(0, i.jsx)("div", {
+                    className: `${_.WT} ${t===e.theme?_.TA:""}`,
                     style: {
                         backgroundColor: e.color
                     }
-                }), (0, r.jsx)("span", {
-                    className: f.i,
+                }), (0, i.jsx)("span", {
+                    className: _.i,
                     children: h.intl.string(e.label)
                 })]
-            }, e.theme)), (0, r.jsx)(s.K0, {
-                onClick: E,
+            }, e.theme)), (0, i.jsx)(s.K0, {
+                onClick: f,
                 "aria-label": h.intl.string(h.t.yBZMsQ),
                 icon: s.fNY,
                 variant: "secondary"

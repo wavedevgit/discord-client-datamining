@@ -1,37 +1,38 @@
 /** chunk id: 859894, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => d
+    A: () => u
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var l = n(827734),
-    i = n(397927),
-    s = n(267102),
+var s = n(827734),
+    l = n(397927),
+    r = n(267102),
     a = n(993838),
     o = n(418208),
     c = n(47868),
-    u = n(985018);
+    d = n(985018);
 
-function d(e) {
+function u(e) {
     let {
         className: t,
         channel: n,
-        highlight: d
-    } = e, p = (0, s.Us)();
-    return (0, o.zU)() ? null : (0, r.jsx)(c.A, {
-        highlight: null != d && d,
+        highlight: u
+    } = e, h = (0, r.Us)();
+    return (0, o.zU)() ? null : (0, i.jsx)(c.A, {
+        highlight: u ?? !1,
         className: t,
-        icon: (0, r.jsx)(i.qux, {
+        icon: (0, i.jsx)(l.qux, {
             size: "custom",
             color: "currentColor",
             height: 20,
             width: 20
         }),
-        color: l.A.unsafe_rawColors.GREEN_360.css,
-        title: u.intl.string(u.t.OYbHfv),
-        description: u.intl.string(u.t.yXwLMQ),
+        color: s.A.unsafe_rawColors.GREEN_360.css,
+        title: d.intl.string(d.t.OYbHfv),
+        description: d.intl.string(d.t.yXwLMQ),
         onClick: function() {
-            (0, a.tQ)(n, p)
+            (0, a.tQ)(n, h)
         }
     })
 }

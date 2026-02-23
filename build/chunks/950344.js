@@ -1,57 +1,38 @@
 /** chunk id: 950344, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => h
+    A: () => A
 });
-var r = n(64700),
-    l = n(311907),
-    i = n(58149),
-    s = n(688810),
+var i = n(64700),
+    s = n(311907),
+    l = n(58149),
+    r = n(688810),
     a = n(976860),
     o = n(954571),
     c = n(300233),
-    u = n(636194),
-    d = n(700206),
-    p = n(652215);
+    d = n(636194),
+    u = n(700206),
+    h = n(652215);
 
-function h(e) {
-    var t;
+function A(e) {
     let {
-        guildId: n,
-        groupListingId: h,
-        location: g,
-        relevantSubscriptionListingIds: f
-    } = e, m = (0, c.X)("useTrackRoleSubscriptionUpsellAnalytics"), {
-        activeSubscription: b
-    } = (0, d.A)(h), A = null != b, y = (0, l.yK)([u.A], () => (null != f ? f : []).filter(e => {
-        var t;
-        return (null == (t = u.A.getSubscriptionListing(e)) ? void 0 : t.published) === !0
-    }), [f]), {
-        analyticsLocations: O
-    } = (0, s.Ay)(null != (t = (0, a.UC)()) ? t : []), j = r.useRef(!1);
-    r.useEffect(() => {
-        m && null != h && null != y && !j.current && (j.current = !0, o.default.track(p.HAw.ROLE_SUBSCRIPTION_LISTING_UPSELL_PAGE_VIEWED, function(e) {
-            for (var t = 1; t < arguments.length; t++) {
-                var n = null != arguments[t] ? arguments[t] : {},
-                    r = Object.keys(n);
-                "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                    return Object.getOwnPropertyDescriptor(n, e).enumerable
-                }))), r.forEach(function(t) {
-                    var r;
-                    r = n[t], t in e ? Object.defineProperty(e, t, {
-                        value: r,
-                        enumerable: !0,
-                        configurable: !0,
-                        writable: !0
-                    }) : e[t] = r
-                })
-            }
-            return e
-        }({
-            role_subscription_group_listing_id: h,
-            role_subscription_listing_ids: y,
-            is_premium_member: A,
-            location_stack: O,
-            location: g
-        }, (0, i.H$)(n))))
-    }, [n, h, m, g, y, A, O])
+        guildId: t,
+        groupListingId: n,
+        location: A,
+        relevantSubscriptionListingIds: p
+    } = e, g = (0, c.X)("useTrackRoleSubscriptionUpsellAnalytics"), {
+        activeSubscription: m
+    } = (0, u.A)(n), _ = null != m, f = (0, s.yK)([d.A], () => (p ?? []).filter(e => d.A.getSubscriptionListing(e)?.published === !0), [p]), {
+        analyticsLocations: x
+    } = (0, r.Ay)((0, a.UC)() ?? []), C = i.useRef(!1);
+    i.useEffect(() => {
+        g && null != n && null != f && !C.current && (C.current = !0, o.default.track(h.HAw.ROLE_SUBSCRIPTION_LISTING_UPSELL_PAGE_VIEWED, {
+            role_subscription_group_listing_id: n,
+            role_subscription_listing_ids: f,
+            is_premium_member: _,
+            location_stack: x,
+            location: A,
+            ...(0, l.H$)(t)
+        }))
+    }, [t, n, g, A, f, _, x])
 }

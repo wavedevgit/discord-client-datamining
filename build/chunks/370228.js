@@ -1,11 +1,12 @@
 /** chunk id: 370228, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    L: () => s
+    L: () => r
 });
-var r = n(311907),
-    l = n(576705),
-    i = n(818348);
+var i = n(311907),
+    s = n(576705),
+    l = n(818348);
 
-function s(e) {
-    return (0, r.bG)([l.A], () => l.A.can(i.xB.REQUEST_TO_SPEAK, e))
+function r(e) {
+    return (0, i.bG)([s.A], () => s.A.can(l.xB.REQUEST_TO_SPEAK, e))
 }

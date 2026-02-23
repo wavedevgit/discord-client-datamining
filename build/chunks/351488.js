@@ -2,14 +2,14 @@
 n.d(t, {
     _: () => a
 });
-var l = n(397927),
-    r = n(734057),
-    i = n(985018);
+var i = n(397927),
+    l = n(734057),
+    s = n(985018);
 
 function a(e) {
-    let t = r.A.getChannel(e),
-        n = (null == t ? void 0 : t.name) == null ? i.intl.string(i.t.gi2swM) : i.intl.formatToPlainString(i.t.IFPJ6J, {
+    let t = l.A.getChannel(e),
+        n = t?.name == null ? s.intl.string(s.t.gi2swM) : s.intl.formatToPlainString(s.t.IFPJ6J, {
             channelName: t.name
         });
-    (0, l.showToast)((0, l.createToast)(n, l.ToastType.SUCCESS))
+    (0, i.showToast)((0, i.createToast)(n, i.ToastType.SUCCESS))
 }

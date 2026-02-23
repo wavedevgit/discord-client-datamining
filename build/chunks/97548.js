@@ -1,155 +1,154 @@
 /** chunk id: 97548, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => I
-}), n(896048), n(638769);
+    A: () => y
+});
 var i = n(627968),
-    r = n(64700),
+    s = n(64700),
     l = n(311907),
-    a = n(397927),
-    o = n(684013),
-    s = n(964486),
-    u = n(313961),
-    c = n(652896),
-    d = n(87001),
+    r = n(397927),
+    a = n(684013),
+    o = n(964486),
+    d = n(313961),
+    u = n(652896),
+    c = n(87001),
     h = n(616356),
-    p = n(961350),
-    f = n(734057),
-    g = n(555528),
-    m = n(309010),
-    A = n(41984),
-    y = n(412477),
-    O = n(75280),
-    v = n(433560),
-    b = n(324093),
-    E = n(897720),
-    _ = n(392164),
-    S = n(985018),
-    x = n(780682);
+    g = n(961350),
+    m = n(734057),
+    p = n(555528),
+    A = n(309010),
+    x = n(41984),
+    E = n(412477),
+    f = n(75280),
+    S = n(433560),
+    I = n(324093),
+    T = n(897720),
+    v = n(392164),
+    C = n(985018),
+    j = n(780682);
 
-function I(e) {
-    var t, n, I, j;
-    let C, T, w, {
-            id: N,
-            widget: P,
-            size: D,
+function y(e) {
+    var t, n;
+    let y, w, O, {
+            id: _,
+            widget: N,
+            size: b,
             locked: R,
-            padding: L,
-            borderWidth: k,
-            opacity: M,
-            horizontal: z,
-            pinned: V,
-            anchorTop: U,
+            padding: M,
+            borderWidth: L,
+            opacity: z,
+            horizontal: D,
+            pinned: k,
+            anchorTop: P,
             anchorLeft: G,
-            showEmpty: H = !0
+            showEmpty: V = !0
         } = e,
-        Y = z ? E.IV.HORIZONTAL : E.IV.VERTICAL,
-        F = Y === E.IV.VERTICAL,
-        W = (0, l.bG)([g.A], () => {
-            var e;
-            let t = g.A.getWidget(N);
-            return !!(0, E.dO)(t) && !R && (null == (e = t.meta.showAllStreams) || e)
-        }, [N, R]),
-        K = (0, l.bG)([m.A], () => m.A.getVoiceChannelId()),
-        Z = (0, l.bG)([f.A], () => f.A.getChannel(K)),
-        B = (0, l.bG)([p.default], () => p.default.getId()),
+        U = D ? T.IV.HORIZONTAL : T.IV.VERTICAL,
+        H = U === T.IV.VERTICAL,
+        Y = (0, l.bG)([p.A], () => {
+            let e = p.A.getWidget(_);
+            return !!(0, T.dO)(e) && !R && (e.meta.showAllStreams ?? !0)
+        }, [_, R]),
+        Z = (0, l.bG)([A.A], () => A.A.getVoiceChannelId()),
+        W = (0, l.bG)([m.A], () => m.A.getChannel(Z)),
+        X = (0, l.bG)([g.default], () => g.default.getId()),
         {
-            streamParticipants: X,
-            activeStreams: J,
-            participantsVersion: Q
-        } = (I = U && F || G && z, j = !U && F || !G && z, C = (0, l.yK)([h.A], () => null == K ? [] : h.A.getAllActiveStreamsForChannel(K)), T = r.useMemo(() => new Set(C.map(e => (0, c._z)(e))), [C]), w = (0, l.bG)([u.A], () => null == K ? -1 : u.A.getParticipantsVersion(K)), {
-            streamParticipants: (0, l.yK)([u.A, h.A], () => {
-                if (null == K) return [];
+            streamParticipants: F,
+            activeStreams: K,
+            participantsVersion: B
+        } = (t = P && H || G && D, n = !P && H || !G && D, y = (0, l.yK)([h.A], () => null == Z ? [] : h.A.getAllActiveStreamsForChannel(Z)), w = s.useMemo(() => new Set(y.map(e => (0, u._z)(e))), [y]), O = (0, l.bG)([d.A], () => null == Z ? -1 : d.A.getParticipantsVersion(Z)), {
+            streamParticipants: (0, l.yK)([d.A, h.A], () => {
+                if (null == Z) return [];
 
                 function e(e) {
-                    return T.has((0, c._z)(e.stream))
+                    return w.has((0, u._z)(e.stream))
                 }
-                let t = u.A.getStreamParticipants(K).filter(t => {
-                    if (t.user.id === B) return !1;
+                let i = d.A.getStreamParticipants(Z).filter(t => {
+                    if (t.user.id === X) return !1;
                     let n = h.A.getActiveStreamForUser(t.user.id, t.stream.guildId);
-                    return !(null != n && v.O.has(n.state)) && (!!W || e(t))
+                    return !(null != n && S.O.has(n.state)) && (!!Y || e(t))
                 });
-                return t.sort((t, n) => {
-                    if (I) {
-                        if (e(t) && !e(n)) return -1;
-                        if (!e(t) && e(n)) return 1
-                    } else if (j) {
-                        if (e(t) && !e(n)) return 1;
-                        if (!e(t) && e(n)) return -1
+                return i.sort((i, s) => {
+                    if (t) {
+                        if (e(i) && !e(s)) return -1;
+                        if (!e(i) && e(s)) return 1
+                    } else if (n) {
+                        if (e(i) && !e(s)) return 1;
+                        if (!e(i) && e(s)) return -1
                     }
-                    return t.user.username.localeCompare(n.user.username)
-                }), t
-            }, [K, T, B, W, I, j]),
-            activeStreams: T,
-            participantsVersion: w
+                    return i.user.username.localeCompare(s.user.username)
+                }), i
+            }, [Z, w, X, Y, t, n]),
+            activeStreams: w,
+            participantsVersion: O
         }),
-        q = X.length,
-        $ = (0, l.bG)([d.A], () => d.A.getWindowState(_.f), []),
+        q = F.length,
+        Q = (0, l.bG)([c.A], () => c.A.getWindowState(v.f), []),
         {
-            tileWidth: ee,
-            tileHeight: et,
-            widgetWidth: en,
-            widgetHeight: ei,
-            containerRef: er,
-            containerMinMaxSizes: el
-        } = (0, b.K2)({
+            tileWidth: J,
+            tileHeight: $,
+            widgetWidth: ee,
+            widgetHeight: et,
+            containerRef: en,
+            containerMinMaxSizes: ei
+        } = (0, I.K2)({
             tileCount: q,
-            padding: L,
-            borderWidth: k,
-            isVertical: F,
-            widgetSize: D
+            padding: M,
+            borderWidth: L,
+            isVertical: H,
+            widgetSize: b
         }),
-        ea = {
-            id: N,
-            widget: P,
-            layout: Y,
-            participants: X.length,
-            padding: L,
-            borderWidth: k,
-            widgetMinMaxSizes: el,
+        es = {
+            id: _,
+            widget: N,
+            layout: U,
+            participants: F.length,
+            padding: M,
+            borderWidth: L,
+            widgetMinMaxSizes: ei,
             containerSize: {
-                width: en,
-                height: ei
+                width: ee,
+                height: et
             },
             orientedPosition: {
                 top: 0,
                 left: 0,
-                bottom: null != (t = null == $ ? void 0 : $.height) ? t : ei,
-                right: null != (n = null == $ ? void 0 : $.width) ? n : en
+                bottom: Q?.height ?? et,
+                right: Q?.width ?? ee
             },
             locked: R
         };
-    (0, b.k1)({
-        id: N,
-        streamParticipants: X,
-        layout: Y,
-        widgetLayoutSpecs: ea
+    (0, I.k1)({
+        id: _,
+        streamParticipants: F,
+        layout: U,
+        widgetLayoutSpecs: es
     });
-    let eo = null == Z || 0 === J.size && R || 0 === q && !R;
-    return (r.useEffect(() => {
-        o.A.setGpuBoostRequested(A.y7.OVERLAY_VIDEO_STREAM_RENDERING, !eo)
-    }, [eo]), (0, s.Ay)(() => () => {
-        o.A.setGpuBoostRequested(A.y7.OVERLAY_VIDEO_STREAM_RENDERING, !1)
-    }), (eo || !V) && R) ? null : eo && !R ? H ? R ? null : (0, i.jsx)(y.g, {
-        emptyText: S.intl.string(S.t["T6+rXy"]),
-        icon: a.Fzq,
+    let el = null == W || 0 === K.size && R || 0 === q && !R;
+    return (s.useEffect(() => {
+        a.A.setGpuBoostRequested(x.y7.OVERLAY_VIDEO_STREAM_RENDERING, !el)
+    }, [el]), (0, o.Ay)(() => () => {
+        a.A.setGpuBoostRequested(x.y7.OVERLAY_VIDEO_STREAM_RENDERING, !1)
+    }), (el || !k) && R) ? null : el && !R ? V ? R ? null : (0, i.jsx)(E.g, {
+        emptyText: C.intl.string(C.t["T6+rXy"]),
+        icon: r.Fzq,
         absolute: !0
     }) : null : (0, i.jsx)("div", {
-        className: x.u,
+        className: j.u,
         style: {
-            opacity: M
+            opacity: z
         },
-        ref: er,
-        children: (0, i.jsx)(O.A, {
-            widgetId: N,
-            tileWidth: ee,
-            tileHeight: et,
+        ref: en,
+        children: (0, i.jsx)(f.A, {
+            widgetId: _,
+            tileWidth: J,
+            tileHeight: $,
             locked: R,
-            layout: Y,
-            activeStreams: J,
-            streamParticipants: X,
-            participantsVersion: Q,
-            pinned: V,
-            padding: L
+            layout: U,
+            activeStreams: K,
+            streamParticipants: F,
+            participantsVersion: B,
+            pinned: k,
+            padding: M
         })
     })
 }

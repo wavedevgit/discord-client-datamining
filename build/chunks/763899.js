@@ -1,31 +1,30 @@
 /** chunk id: 763899, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => d
+    A: () => u
 });
-var r = n(627968),
-    i = n(351405),
-    l = n(793574),
+var i = n(627968),
+    l = n(351405),
+    r = n(793574),
     a = n(688810),
     s = n(627363),
     o = n(611010),
-    c = n(443795),
-    u = n(272984);
-let d = e => {
-    var t;
+    d = n(443795),
+    c = n(272984);
+let u = e => {
     let {
-        channel: n,
-        message: d,
-        hideParty: p
+        channel: t,
+        message: n,
+        hideParty: u
     } = e, {
-        analyticsLocations: m
-    } = (0, a.Ay)(l.A.INVITE_EMBED), f = null != d.application ? o.Ay.createFromServer(d.application) : null != d.activity && null != d.activity.party_id && (0, u.pH)(d.activity.party_id) ? c.HT : void 0, {
-        data: g
-    } = (0, s.YY)(null == (t = d.application) ? void 0 : t.id), _ = null != g ? g : f;
-    return null == _ ? null : (0, r.jsx)(i.P, {
-        app: _,
-        channel: n,
-        message: d,
-        hideParty: p,
-        analyticsLocations: m
+        analyticsLocations: _
+    } = (0, a.Ay)(r.A.INVITE_EMBED), m = null != n.application ? o.Ay.createFromServer(n.application) : null != n.activity && null != n.activity.party_id && (0, c.pH)(n.activity.party_id) ? d.HT : void 0, {
+        data: h
+    } = (0, s.YY)(n.application?.id), p = h ?? m;
+    return null == p ? null : (0, i.jsx)(l.P, {
+        app: p,
+        channel: t,
+        message: n,
+        hideParty: u,
+        analyticsLocations: _
     })
 }

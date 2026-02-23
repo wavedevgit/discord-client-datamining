@@ -1,133 +1,105 @@
 /** chunk id: 38198, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => j
-}), n(591487), n(727858), n(747238);
-var l = n(627968),
-    r = n(64700),
-    i = n(311907),
+    A: () => v
+});
+var i = n(627968),
+    l = n(64700),
+    s = n(311907),
     a = n(554146),
-    s = n(397927),
+    r = n(397927),
     o = n(308368),
     c = n(688810),
-    u = n(826673),
-    d = n(970244),
+    d = n(826673),
+    u = n(970244),
     h = n(867455),
-    p = n(780057),
-    f = n(747926),
-    m = n(954571),
-    g = n(203982),
-    A = n(453771),
-    b = n(518960),
-    _ = n(408018),
-    y = n(447155),
-    v = n(652215),
-    E = n(49999),
-    O = n(412136),
-    C = n(985018),
-    S = n(545156);
-let x = RegExp("(.*)```(\\w+)\\n(.*)```(.*)", "s");
+    m = n(780057),
+    A = n(747926),
+    g = n(954571),
+    p = n(203982),
+    f = n(453771),
+    _ = n(518960),
+    E = n(408018),
+    x = n(447155),
+    C = n(652215),
+    S = n(49999),
+    I = n(412136),
+    T = n(985018),
+    N = n(545156);
+let y = /(.*)```(\w+)\n(.*)```(.*)/s;
 
-function j(e) {
+function v(e) {
     let {
         channel: t,
-        options: j,
-        onFileUpload: I,
-        onClose: T,
-        onSelect: N,
-        draftType: P,
-        editorTextContent: w,
-        setValue: R,
-        openClips: D
+        options: v,
+        onFileUpload: b,
+        onClose: j,
+        onSelect: R,
+        draftType: M,
+        editorTextContent: D,
+        setValue: O,
+        openClips: L
     } = e, {
-        analyticsLocations: M
-    } = (0, c.Ay)(), k = (0, d.s)({
+        analyticsLocations: P
+    } = (0, c.Ay)(), k = (0, u.s)({
         channel: t
-    }), L = (0, i.bG)([p.A], () => p.A.isInProgress());
+    }), w = (0, s.bG)([m.A], () => m.A.isInProgress());
 
     function U() {
-        (0, f.Tv)(t, void 0, "Plus Button")
+        (0, A.Tv)(t, void 0, "Plus Button")
     }
 
     function G() {
-        m.default.track(v.HAw.CHANNEL_ATTACH_MENU_USE_APPS_CLICKED), R("/", (0, _.x7)("/"))
+        g.default.track(C.HAw.CHANNEL_ATTACH_MENU_USE_APPS_CLICKED), O("/", (0, E.x7)("/"))
     }
 
     function F() {
-        D()
+        L()
     }
 
     function H() {
-        (0, u.Dr)(a.M.POLLS_CHAT_INPUT_COACHMARK, {
-            dismissAction: E.i.TAKE_ACTION
-        }), (0, s.mMO)(async () => {
+        (0, d.Dr)(a.M.POLLS_CHAT_INPUT_COACHMARK, {
+            dismissAction: S.i.TAKE_ACTION
+        }), (0, r.mMO)(async () => {
             let {
                 default: e
             } = await n.e("52786").then(n.bind(n, 489449));
-            return n => {
-                var r, i;
-                return (0, l.jsx)(e, (r = function(e) {
-                    for (var t = 1; t < arguments.length; t++) {
-                        var n = null != arguments[t] ? arguments[t] : {},
-                            l = Object.keys(n);
-                        "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                            return Object.getOwnPropertyDescriptor(n, e).enumerable
-                        }))), l.forEach(function(t) {
-                            var l;
-                            l = n[t], t in e ? Object.defineProperty(e, t, {
-                                value: l,
-                                enumerable: !0,
-                                configurable: !0,
-                                writable: !0
-                            }) : e[t] = l
-                        })
-                    }
-                    return e
-                }({}, n), i = i = {
-                    channel: t
-                }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
-                    var n = Object.keys(e);
-                    if (Object.getOwnPropertySymbols) {
-                        var l = Object.getOwnPropertySymbols(e);
-                        n.push.apply(n, l)
-                    }
-                    return n
-                })(Object(i)).forEach(function(e) {
-                    Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
-                }), r))
-            }
+            return n => (0, i.jsx)(e, {
+                ...n,
+                channel: t
+            })
         }, {
-            modalKey: O.sm
+            modalKey: I.sm
         })
     }
 
     function B() {
-        let e = w,
+        let e = D,
             n = "txt",
-            l = "",
-            r = w.match(x);
-        null != r && (l = r[1], n = r[2], e = r[3], l += r[4]), (0, b.R)([(0, A.VE)(new Blob([e], {
+            i = "",
+            l = D.match(y);
+        null != l && (i = l[1], n = l[2], e = l[3], i += l[4]), (0, _.R)([(0, f.VE)(new Blob([e], {
             type: "text/plain"
-        }), "message.".concat(n), "text/plain")], t, P), g._.dispatchToLastSubscribed(v.jej.CLEAR_TEXT), "" !== l && g._.dispatchToLastSubscribed(v.jej.INSERT_TEXT, {
-            plainText: l
+        }), `message.${n}`, "text/plain")], t, M), p._.dispatchToLastSubscribed(C.jej.CLEAR_TEXT), "" !== i && p._.dispatchToLastSubscribed(C.jej.INSERT_TEXT, {
+            plainText: i
         })
     }
-    return r.useEffect(() => {
-        m.default.track(v.HAw.OPEN_POPOUT, {
+    return l.useEffect(() => {
+        g.default.track(C.HAw.OPEN_POPOUT, {
             type: "Send Attachment",
             channel_id: t.id,
             guild_id: t.guild_id
         })
-    }, [t.guild_id, t.id]), (0, l.jsx)(s.W1t, {
+    }, [t.guild_id, t.id]), (0, i.jsx)(r.W1t, {
         "data-menu-needs-migration": !0,
-        onSelect: N,
+        onSelect: R,
         navId: "channel-attach",
-        onClose: T,
-        "aria-label": C.intl.string(C.t.Xm41aV),
-        className: S.MK,
-        children: j.map(function(e) {
+        onClose: j,
+        "aria-label": T.intl.string(T.t.Xm41aV),
+        className: N.MK,
+        children: v.map(function(e) {
             switch (e.type) {
-                case y.v.UPLOAD_A_FILE:
-                    return (0, l.jsx)(s.Drp, {
+                case x.v.UPLOAD_A_FILE:
+                    return (0, i.jsx)(r.Drp, {
                         id: "upload-file",
                         label: e.display,
                         iconLeft: e.icon,
@@ -135,11 +107,11 @@ function j(e) {
                             type: "icon",
                             icon: e.icon
                         },
-                        action: I
+                        action: b
                     }, "upload-file");
-                case y.v.UPLOAD_TEXT_AS_FILE:
-                    if ("" === w) return null;
-                    return (0, l.jsx)(s.Drp, {
+                case x.v.UPLOAD_TEXT_AS_FILE:
+                    if ("" === D) return null;
+                    return (0, i.jsx)(r.Drp, {
                         id: "upload-text-as-file",
                         label: e.display,
                         iconLeft: e.icon,
@@ -149,8 +121,8 @@ function j(e) {
                         },
                         action: B
                     }, "upload-text-as-file");
-                case y.v.CLIPS:
-                    return (0, l.jsx)(s.Drp, {
+                case x.v.CLIPS:
+                    return (0, i.jsx)(r.Drp, {
                         id: "clips",
                         label: e.display,
                         iconLeft: e.icon,
@@ -163,8 +135,8 @@ function j(e) {
                         } : void 0,
                         action: F
                     }, "clips");
-                case y.v.POLL:
-                    return (0, l.jsx)(s.Drp, {
+                case x.v.POLL:
+                    return (0, i.jsx)(r.Drp, {
                         id: "poll",
                         label: e.display,
                         iconLeft: e.icon,
@@ -174,8 +146,8 @@ function j(e) {
                         },
                         action: H
                     }, "poll");
-                case y.v.INVITE_TO_PLAY_GAME:
-                    return (0, l.jsx)(s.Drp, {
+                case x.v.INVITE_TO_PLAY_GAME:
+                    return (0, i.jsx)(r.Drp, {
                         id: "play",
                         label: e.display,
                         iconLeft: e.icon,
@@ -187,14 +159,14 @@ function j(e) {
                             var n;
                             return n = e.activity, void o.A.sendActivityInvite({
                                 channelId: t.id,
-                                type: v.xL.JOIN,
+                                type: C.xL.JOIN,
                                 activity: n,
-                                location: M[M.length - 1]
+                                location: P[P.length - 1]
                             })
                         }
                     }, "play");
-                case y.v.INVITE_TO_LISTEN:
-                    return (0, l.jsx)(s.Drp, {
+                case x.v.INVITE_TO_LISTEN:
+                    return (0, i.jsx)(r.Drp, {
                         id: "listen",
                         label: e.display,
                         iconLeft: e.icon,
@@ -206,14 +178,14 @@ function j(e) {
                             var n;
                             return n = e.activity, void o.A.sendActivityInvite({
                                 channelId: t.id,
-                                type: v.xL.LISTEN,
+                                type: C.xL.LISTEN,
                                 activity: n,
-                                location: M[M.length - 1]
+                                location: P[P.length - 1]
                             })
                         }
                     }, "listen");
-                case y.v.INVITE_TO_WATCH:
-                    return (0, l.jsx)(s.Drp, {
+                case x.v.INVITE_TO_WATCH:
+                    return (0, i.jsx)(r.Drp, {
                         id: "watch",
                         label: e.display,
                         iconLeft: e.icon,
@@ -225,14 +197,14 @@ function j(e) {
                             var n;
                             return n = e.activity, void o.A.sendActivityInvite({
                                 channelId: t.id,
-                                type: v.xL.WATCH,
+                                type: C.xL.WATCH,
                                 activity: n,
-                                location: M[M.length - 1]
+                                location: P[P.length - 1]
                             })
                         }
                     }, "watch");
-                case y.v.CREATE_THREAD:
-                    return (0, l.jsx)(s.Drp, {
+                case x.v.CREATE_THREAD:
+                    return (0, i.jsx)(r.Drp, {
                         id: "THREAD",
                         label: e.display,
                         iconLeft: e.icon,
@@ -242,8 +214,8 @@ function j(e) {
                         },
                         action: U
                     }, "THREAD");
-                case y.v.SLASH_COMMAND:
-                    return (0, l.jsx)(s.Drp, {
+                case x.v.SLASH_COMMAND:
+                    return (0, i.jsx)(r.Drp, {
                         id: "SLASH_COMMAND",
                         label: e.display,
                         iconLeft: e.icon,
@@ -253,8 +225,8 @@ function j(e) {
                         },
                         action: G
                     }, "SLASH_COMMAND");
-                case y.v.SCHEDULED_MESSAGE:
-                    return (0, l.jsx)(s.Drp, {
+                case x.v.SCHEDULED_MESSAGE:
+                    return (0, i.jsx)(r.Drp, {
                         id: "scheduled_message",
                         label: e.display,
                         iconLeft: e.icon,
@@ -262,13 +234,13 @@ function j(e) {
                             type: "icon",
                             icon: e.icon
                         },
-                        action: () => (0, d.e0)({
+                        action: () => (0, u.e0)({
                             channel: t
                         }),
                         children: k
                     }, "scheduled_message");
-                case y.v.SUMMARIZE_THREAD:
-                    return (0, l.jsx)(s.Drp, {
+                case x.v.SUMMARIZE_THREAD:
+                    return (0, i.jsx)(r.Drp, {
                         id: "summarize_thread",
                         label: e.display,
                         iconLeft: e.icon,
@@ -277,25 +249,25 @@ function j(e) {
                             icon: e.icon
                         },
                         action: () => h.A.summarizeThread(t),
-                        loading: L,
-                        disabled: L,
-                        children: L ? null : (0, l.jsxs)(l.Fragment, {
-                            children: [(0, l.jsx)(s.Drp, {
+                        loading: w,
+                        disabled: w,
+                        children: w ? null : (0, i.jsxs)(i.Fragment, {
+                            children: [(0, i.jsx)(r.Drp, {
                                 id: "summarize_thread_for_everyone",
-                                label: C.intl.string(C.t.eCzSdd),
-                                iconLeft: s.nFg,
+                                label: T.intl.string(T.t.eCzSdd),
+                                iconLeft: r.nFg,
                                 leadingAccessory: {
                                     type: "icon",
-                                    icon: s.nFg
+                                    icon: r.nFg
                                 },
                                 action: () => h.A.summarizeThread(t, !1)
-                            }, "summarize_thread_for_everyone"), (0, l.jsx)(s.Drp, {
+                            }, "summarize_thread_for_everyone"), (0, i.jsx)(r.Drp, {
                                 id: "summarize_thread_for_me",
-                                label: C.intl.string(C.t["HOe+Hq"]),
-                                iconLeft: s.nys,
+                                label: T.intl.string(T.t["HOe+Hq"]),
+                                iconLeft: r.nys,
                                 leadingAccessory: {
                                     type: "icon",
-                                    icon: s.nys
+                                    icon: r.nys
                                 },
                                 action: () => h.A.summarizeThread(t)
                             }, "summarize_thread_for_me")]

@@ -1,27 +1,27 @@
-/** chunk id: 217563, original params: n,t,e (module,exports,require) **/
-e.d(t, {
-    A: () => b
+/** chunk id: 217563, original params: n,t,i (module,exports,require) **/
+i.d(t, {
+    A: () => h
 });
-var i = e(627968);
-e(64700);
-var l = e(311907),
-    r = e(477782),
-    a = e(956793),
-    s = e(796774),
-    c = e(984813),
-    o = e(576705),
-    d = e(309010),
-    u = e(652215),
-    A = e(985018);
+var e = i(627968);
+i(64700);
+var l = i(311907),
+    r = i(477782),
+    a = i(956793),
+    s = i(796774),
+    d = i(984813),
+    c = i(576705),
+    o = i(309010),
+    A = i(652215),
+    u = i(985018);
 
-function b(n, t) {
-    let e = (0, l.bG)([o.A], () => o.A.can(u.xBc.CONNECT, n), [n]),
-        b = (0, l.bG)([d.A], () => d.A.getVoiceChannelId()),
-        g = (0, c.mz)(t),
-        h = b === n.id;
-    return n.isGuildVocal() && e && null != g && !h ? (0, i.jsx)(r.Dr, {
+function h(n, t) {
+    let i = (0, l.bG)([c.A], () => c.A.can(A.xBc.CONNECT, n), [n]),
+        h = (0, l.bG)([o.A], () => o.A.getVoiceChannelId()),
+        g = (0, d.mz)(t),
+        x = h === n.id;
+    return n.isGuildVocal() && i && null != g && !x ? (0, e.jsx)(r.Dr, {
         id: "join-muted-custom-join-sound",
-        label: A.intl.string(A.t.saLMWc),
+        label: u.intl.string(u.t.saLMWc),
         action: () => {
             (0, s.CX)(n.id), a.default.selectVoiceChannel(n.id)
         }

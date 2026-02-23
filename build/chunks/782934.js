@@ -1,8 +1,8 @@
 /** chunk id: 782934, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => l
+    A: () => i
 });
-let l = (0, n(600975).C)({
+let i = (0, n(600975).C)({
     kind: "user",
     id: "2024-12_app_dm_report_button",
     label: "App DMs Report Button Experiment",

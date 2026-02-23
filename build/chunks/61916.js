@@ -1,277 +1,233 @@
-/** chunk id: 61916, original params: e,t,r (module,exports,require) **/
-r.d(t, {
-    s: () => k
+/** chunk id: 61916, original params: e,t,s (module,exports,require) **/
+s.d(t, {
+    s: () => j
 });
-var n = r(627968),
-    l = r(64700),
-    s = r(503698),
-    i = r.n(s),
-    a = r(989349),
-    u = r.n(a),
-    o = r(837381),
-    c = r(311907),
-    A = r(397927),
-    f = r(966327),
-    h = r(629357),
-    b = r(47167),
-    d = r(598104),
-    _ = r(255266),
-    p = r(72563),
-    y = r(223863),
-    O = r(734057),
-    E = r(71393),
-    I = r(290863),
-    L = r(222823),
-    g = r(994500),
-    m = r(287809),
-    P = r(405269),
-    N = r(403362),
-    j = r(427262),
-    C = r(513480),
-    x = r(790782),
-    S = r(967789);
+var l = s(627968),
+    i = s(64700),
+    a = s(503698),
+    n = s.n(a),
+    r = s(989349),
+    A = s.n(r),
+    u = s(837381),
+    _ = s(311907),
+    c = s(397927),
+    h = s(966327),
+    d = s(629357),
+    I = s(47167),
+    o = s(598104),
+    L = s(255266),
+    E = s(72563),
+    N = s(223863),
+    C = s(734057),
+    f = s(71393),
+    g = s(290863),
+    b = s(222823),
+    P = s(994500),
+    m = s(287809),
+    x = s(405269),
+    G = s(403362),
+    D = s(427262),
+    T = s(513480),
+    S = s(790782),
+    p = s(967789);
 
-function v(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var r = null != arguments[t] ? arguments[t] : {},
-            n = Object.keys(r);
-        "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(r, e).enumerable
-        }))), n.forEach(function(t) {
-            var n;
-            n = r[t], t in e ? Object.defineProperty(e, t, {
-                value: n,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = n
-        })
-    }
-    return e
-}
-
-function D(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-        var r = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var n = Object.getOwnPropertySymbols(e);
-            r.push.apply(r, n)
-        }
-        return r
-    })(Object(t)).forEach(function(r) {
-        Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r))
-    }), e
-}
-
-function G(e, t) {
-    if (null == e) return {};
-    var r, n, l, s = {};
-    if ("u" > typeof Reflect && Reflect.ownKeys) {
-        for (l = 0, r = Reflect.ownKeys(e); l < r.length; l++) n = r[l], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (s[n] = e[n]);
-        return s
-    }
-    if (s = function(e, t) {
-            if (null == e) return {};
-            var r, n, l = {},
-                s = Object.getOwnPropertyNames(e);
-            for (n = 0; n < s.length; n++) r = s[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
-            return l
-        }(e, t), Object.getOwnPropertySymbols)
-        for (l = 0, r = Object.getOwnPropertySymbols(e); l < r.length; l++) n = r[l], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (s[n] = e[n]);
-    return s
-}
-
-function T(e) {
+function y(e) {
     let {
         destination: t,
-        icon: r,
-        label: s,
-        subLabel: a,
-        selected: u,
-        disabled: c,
-        onPressDestination: f,
-        "aria-setsize": h,
-        "aria-posinset": b,
-        className: d
-    } = e, _ = (0, o.rm)(t.id), p = l.useCallback(() => {
-        null == f || f(t)
-    }, [f, t]);
-    return (0, n.jsxs)(A.DUT, D(v({
-        className: i()(S.HP, d, {
-            [S.r9]: c
+        icon: s,
+        label: a,
+        subLabel: r,
+        selected: A,
+        disabled: _,
+        onPressDestination: h,
+        "aria-setsize": d,
+        "aria-posinset": I,
+        className: o
+    } = e, L = (0, u.rm)(t.id), E = i.useCallback(() => {
+        h?.(t)
+    }, [h, t]);
+    return (0, l.jsxs)(c.DUT, {
+        className: n()(p.HP, o, {
+            [p.r9]: _
         }),
-        onClick: c ? void 0 : p,
-        "aria-selected": u,
-        "aria-setsize": h,
-        "aria-posinset": b
-    }, _), {
-        children: [(0, n.jsxs)("div", {
-            className: S.D_,
-            children: [(0, n.jsx)("div", {
-                className: S.P0,
-                children: r
-            }), (0, n.jsxs)("div", {
-                className: S.WD,
-                children: [(0, n.jsx)(A.Text, {
+        onClick: _ ? void 0 : E,
+        "aria-selected": A,
+        "aria-setsize": d,
+        "aria-posinset": I,
+        ...L,
+        children: [(0, l.jsxs)("div", {
+            className: p.D_,
+            children: [(0, l.jsx)("div", {
+                className: p.P0,
+                children: s
+            }), (0, l.jsxs)("div", {
+                className: p.WD,
+                children: [(0, l.jsx)(c.Text, {
                     tag: "strong",
-                    color: c ? "text-muted" : void 0,
+                    color: _ ? "text-muted" : void 0,
                     variant: "text-md/semibold",
                     lineClamp: 1,
-                    children: s
-                }), (0, n.jsx)(A.Text, {
+                    children: a
+                }), (0, l.jsx)(c.Text, {
                     variant: "text-xs/normal",
                     color: "text-muted",
-                    children: a
+                    children: r
                 })]
             })]
-        }), (0, n.jsx)("div", {
-            className: S.kv,
-            children: (0, n.jsx)(A.P7L, {
-                checked: !!u,
-                disabled: c
+        }), (0, l.jsx)("div", {
+            className: p.kv,
+            children: (0, l.jsx)(c.P7L, {
+                checked: !!A,
+                disabled: _
             })
         })]
-    }))
+    })
 }
 
 function F(e) {
     let {
         user: t,
-        subLabel: r
-    } = e, l = G(e, ["user", "subLabel"]), s = j.Ay.useName(t), i = j.Ay.useUserTag(t, {
+        subLabel: s,
+        ...i
+    } = e, a = D.Ay.useName(t), n = D.Ay.useUserTag(t, {
         decoration: "never"
-    }), a = (0, c.bG)([g.A], () => g.A.getNickname(t.id)), u = (0, c.bG)([I.A], () => I.A.getStatus(t.id));
-    return (0, n.jsx)(T, D(v({}, l), {
-        icon: (0, n.jsx)(f.A, {
+    }), r = (0, _.bG)([P.A], () => P.A.getNickname(t.id)), A = (0, _.bG)([g.A], () => g.A.getStatus(t.id));
+    return (0, l.jsx)(y, {
+        ...i,
+        icon: (0, l.jsx)(h.A, {
             "aria-hidden": !0,
-            size: A._3J.SIZE_32,
+            size: c._3J.SIZE_32,
             user: t,
-            status: u
+            status: A
         }),
-        label: null != a ? a : s,
-        subLabel: null != r ? r : i
-    }))
+        label: r ?? a,
+        subLabel: s ?? n
+    })
 }
 
-function w(e) {
+function O(e) {
     let {
         channel: t,
-        subLabel: r
-    } = e, l = G(e, ["channel", "subLabel"]), s = (0, b.Ay)(t), i = (0, p.i)(t);
-    return (0, n.jsx)(T, D(v({}, l), {
-        icon: (0, n.jsx)(d.A, {
+        subLabel: s,
+        ...i
+    } = e, a = (0, I.Ay)(t), n = (0, E.i)(t);
+    return (0, l.jsx)(y, {
+        ...i,
+        icon: (0, l.jsx)(o.A, {
             "aria-hidden": !0,
-            size: A._3J.SIZE_32,
+            size: c._3J.SIZE_32,
             channel: t
         }),
-        label: s,
-        subLabel: null != r ? r : i
-    }))
+        label: a,
+        subLabel: s ?? n
+    })
 }
 
 function W(e) {
     let {
         channel: t,
-        subLabel: r
-    } = e, l = G(e, ["channel", "subLabel"]), s = (0, c.bG)([E.A], () => E.A.getGuild(null == t ? void 0 : t.guild_id)), i = (0, b.Ay)(t), a = (0, c.bG)([O.A, m.default, g.A], () => {
-        let e = O.A.getChannel(t.parent_id);
-        return null == e ? null : (0, b.m1)(e, m.default, g.A, !1)
-    }), o = (0, c.bG)([L.Ay], () => L.Ay.lastMessageTimestamp(t.id, x.P.CHANNEL)), f = null == s ? void 0 : s.name;
+        subLabel: s,
+        ...i
+    } = e, a = (0, _.bG)([f.A], () => f.A.getGuild(t?.guild_id)), n = (0, I.Ay)(t), r = (0, _.bG)([C.A, m.default, P.A], () => {
+        let e = C.A.getChannel(t.parent_id);
+        return null == e ? null : (0, I.m1)(e, m.default, P.A, !1)
+    }), u = (0, _.bG)([b.Ay], () => b.Ay.lastMessageTimestamp(t.id, S.P.CHANNEL)), h = a?.name;
     if (t.isThread() || t.isForumPost()) {
-        let e = t.isForumPost() ? A.bSJ : A.N$i;
-        f = (0, n.jsxs)("div", {
-            className: S.vr,
-            children: [(0, n.jsx)(e, {
-                color: A.LU0.colors.TEXT_SUBTLE,
-                className: S.Q9
-            }), (0, n.jsx)(A.Text, {
+        let e = t.isForumPost() ? c.bSJ : c.N$i;
+        h = (0, l.jsxs)("div", {
+            className: p.vr,
+            children: [(0, l.jsx)(e, {
+                color: c.LU0.colors.TEXT_SUBTLE,
+                className: p.Q9
+            }), (0, l.jsx)(c.Text, {
                 variant: "text-xs/medium",
                 color: "text-subtle",
                 lineClamp: 1,
-                children: a
-            }), null != o ? (0, n.jsxs)(n.Fragment, {
-                children: [(0, n.jsx)(A.Text, {
-                    className: S.Ql,
+                children: r
+            }), null != u ? (0, l.jsxs)(l.Fragment, {
+                children: [(0, l.jsx)(c.Text, {
+                    className: p.Ql,
                     variant: "text-xs/medium",
                     color: "text-subtle",
                     children: "•"
-                }), (0, n.jsx)(A.Text, {
+                }), (0, l.jsx)(c.Text, {
                     variant: "text-xs/medium",
                     color: "text-subtle",
-                    children: (0, P.Fe)(u()(o))
+                    children: (0, x.Fe)(A()(u))
                 })]
             }) : null]
         })
     }
-    return (0, n.jsx)(T, D(v({}, l), {
-        icon: (0, n.jsx)(_.A, {
-            size: _.q.SMALL_32,
-            guild: s,
+    return (0, l.jsx)(y, {
+        ...i,
+        icon: (0, l.jsx)(L.A, {
+            size: L.q.SMALL_32,
+            guild: a,
             channel: t
         }),
-        label: i,
-        subLabel: null != r ? r : f
-    }))
+        label: n,
+        subLabel: s ?? h
+    })
 }
 
-function k(e) {
+function j(e) {
     let {
         rowData: t,
-        message: r,
-        originChannel: s,
-        selectedDestinations: i,
-        handleToggleDestination: a,
-        disableSelection: u,
-        rowClassName: o,
-        validateDestination: c
-    } = e, A = l.useMemo(() => {
-        var e;
-        return null != (e = null == i ? void 0 : i.map(y.I)) ? e : []
-    }, [i]), f = l.useCallback(e => {
+        message: s,
+        originChannel: a,
+        selectedDestinations: n,
+        handleToggleDestination: r,
+        disableSelection: A,
+        rowClassName: u,
+        validateDestination: _
+    } = e, c = i.useMemo(() => n?.map(N.I) ?? [], [n]), h = i.useCallback(e => {
         let {
-            section: l,
-            row: i
+            section: i,
+            row: n
         } = e;
-        if (l > 0) return;
+        if (i > 0) return;
         let {
-            type: f,
-            record: b
-        } = t[i];
-        if (f === h.rD.HEADER) return;
-        let d = f === h.rD.USER ? {
+            type: h,
+            record: I
+        } = t[n];
+        if (h === d.rD.HEADER) return;
+        let o = h === d.rD.USER ? {
                 type: "user",
-                id: b.id
+                id: I.id
             } : {
                 type: "channel",
-                id: b.id
+                id: I.id
             },
-            _ = (0, y.I)(d),
-            p = (0, C.pE)(r, s, b, c),
-            O = A.includes(_),
-            E = {
-                key: _,
-                message: r,
-                destination: d,
-                subLabel: null != p ? p.label : void 0,
-                disabled: u && !O || null != p,
-                selected: O,
-                onPressDestination: a,
-                "aria-posinset": i + 1,
+            L = (0, N.I)(o),
+            E = (0, T.pE)(s, a, I, _),
+            C = c.includes(L),
+            f = {
+                key: L,
+                message: s,
+                destination: o,
+                subLabel: null != E ? E.label : void 0,
+                disabled: A && !C || null != E,
+                selected: C,
+                onPressDestination: r,
+                "aria-posinset": n + 1,
                 "aria-setsize": t.length,
-                className: o
+                className: u
             };
-        return f === h.rD.USER ? (0, n.jsx)(F, v({
-            user: b
-        }, E)) : f === h.rD.GROUP_DM ? (0, n.jsx)(w, v({
-            channel: b
-        }, E)) : f === h.rD.TEXT_CHANNEL || f === h.rD.VOICE_CHANNEL ? (0, n.jsx)(W, v({
-            channel: b
-        }, E)) : void(0, N.xb)(f)
-    }, [u, a, r, s, t, A, o, c]);
+        return h === d.rD.USER ? (0, l.jsx)(F, {
+            user: I,
+            ...f
+        }) : h === d.rD.GROUP_DM ? (0, l.jsx)(O, {
+            channel: I,
+            ...f
+        }) : h === d.rD.TEXT_CHANNEL || h === d.rD.VOICE_CHANNEL ? (0, l.jsx)(W, {
+            channel: I,
+            ...f
+        }) : void(0, G.xb)(h)
+    }, [A, r, s, a, t, c, u, _]);
     return {
         sections: [t.length],
         sectionHeight: 0,
         rowHeight: 48,
-        renderRow: f
+        renderRow: h
     }
 }

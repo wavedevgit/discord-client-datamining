@@ -5,8 +5,8 @@ n.d(e, {
 var i = n(627968);
 n(64700);
 var a = n(397927),
-    l = n(932104),
-    r = n(906471);
+    r = n(932104),
+    l = n(906471);
 
 function s(t) {
     let {
@@ -17,21 +17,21 @@ function s(t) {
     } = t;
     return (0, i.jsx)(a.vN3, {
         children: (0, i.jsxs)("button", {
-            className: l.kL,
+            className: r.kL,
             onClick: s,
             autoFocus: d,
             children: [(0, i.jsx)("img", {
-                className: l.Kk,
+                className: r.Kk,
                 alt: "",
                 src: e
             }), (0, i.jsx)(a.Text, {
-                className: l.Qq,
+                className: r.Qq,
                 variant: "text-md/bold",
                 children: n
             }), (0, i.jsx)("img", {
-                className: l.UE,
+                className: r.UE,
                 alt: "",
-                src: r
+                src: l
             })]
         })
     })

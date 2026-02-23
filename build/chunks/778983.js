@@ -1,46 +1,43 @@
 /** chunk id: 778983, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => g
 });
-var l = n(627968),
-    r = n(311907),
-    i = n(421380),
+var i = n(627968),
+    l = n(311907),
+    s = n(421380),
     a = n(397927),
-    s = n(351001),
+    r = n(351001),
     o = n(145530),
     c = n(734057),
-    u = n(320501),
-    d = n(576705),
+    d = n(320501),
+    u = n(576705),
     h = n(102817),
-    p = n(641131),
-    f = n(985018);
+    m = n(641131),
+    A = n(985018);
 
-function m(e) {
+function g(e) {
     let {
         message: t,
         user: n,
-        guild: m,
-        channel: g
-    } = e, A = (0, r.bG)([d.A], () => null != n && null != m && (0, s.Kd)(n, m, [d.A])), {
-        messageReference: b
-    } = t, _ = (0, r.bG)([u.A], () => null != b ? u.A.getMessage(b.channel_id, b.message_id) : null), y = (0, r.bG)([c.A], () => null != _ ? c.A.getChannel(_.channel_id) : null), v = (0, r.bG)([c.A], () => {
-        var e, t;
-        return null != (e = null == (t = c.A.getChannel(g.id)) ? void 0 : t.isArchivedThread()) && e
-    });
-    if (!A) return null;
-    let E = null == _ ? f.intl.string(p.default["0IZbwC"]) : f.intl.string(p.default.Uj6oD4),
-        O = null == _,
-        C = "delete-message-".concat(t.id);
-    return (0, l.jsx)(h.A, {
-        text: E,
+        guild: g,
+        channel: p
+    } = e, f = (0, l.bG)([u.A], () => null != n && null != g && (0, r.Kd)(n, g, [u.A])), {
+        messageReference: _
+    } = t, E = (0, l.bG)([d.A], () => null != _ ? d.A.getMessage(_.channel_id, _.message_id) : null), x = (0, l.bG)([c.A], () => null != E ? c.A.getChannel(E.channel_id) : null), C = (0, l.bG)([c.A], () => c.A.getChannel(p.id)?.isArchivedThread() ?? !1);
+    if (!f) return null;
+    let S = null == E ? A.intl.string(m.default["0IZbwC"]) : A.intl.string(m.default.Uj6oD4),
+        I = null == E,
+        T = `delete-message-${t.id}`;
+    return (0, i.jsx)(h.A, {
+        text: S,
         icon: a.ucK,
         onClick: () => {
-            null != y && null != _ && o.A.confirmDelete(y, _, !1, {
-                isFlagResolved: v,
-                moderatorReportChannelId: g.id
+            null != x && null != E && o.A.confirmDelete(x, E, !1, {
+                isFlagResolved: C,
+                moderatorReportChannelId: p.id
             })
         },
-        disabled: O,
-        color: i.$n.Colors.RED
-    }, C)
+        disabled: I,
+        color: s.$n.Colors.RED
+    }, T)
 }

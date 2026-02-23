@@ -1,74 +1,68 @@
 /** chunk id: 316862, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => x
-}), n(896048);
+    A: () => h
+});
 var l = n(627968),
-    r = n(64700),
+    a = n(64700),
     i = n(311907),
-    a = n(157559),
+    r = n(157559),
     s = n(58149),
-    o = n(997509),
-    d = n(794967),
+    d = n(997509),
+    o = n(794967),
     c = n(632738),
     u = n(734057),
-    m = n(71393),
-    p = n(576705),
-    b = n(309010),
-    _ = n(652215),
+    _ = n(71393),
+    m = n(576705),
+    x = n(309010),
+    p = n(652215),
     g = n(985018);
-let x = e => {
+let h = e => {
     let {
         application: t,
         reportId: n
-    } = e, [x, h] = r.useState(!1), [v, f] = r.useState(!1), j = (0, i.bG)([b.A, u.A], () => {
-        var e;
-        return null == (e = u.A.getChannel(b.A.getChannelId())) ? void 0 : e.guild_id
-    }), [A, y] = r.useState(null);
-    r.useEffect(() => {
-        null != A && (h(!0), f(!0))
-    }, [A]), r.useEffect(() => {
-        if (null == j) return;
+    } = e, [h, A] = a.useState(!1), [b, v] = a.useState(!1), f = (0, i.bG)([x.A, u.A], () => u.A.getChannel(x.A.getChannelId())?.guild_id), [T, j] = a.useState(null);
+    a.useEffect(() => {
+        null != T && (A(!0), v(!0))
+    }, [T]), a.useEffect(() => {
+        if (null == f) return;
         let e = !1;
         return (async () => {
             let n = null;
             try {
-                n = await (0, d.c)(j)
-            } catch (e) {}
+                n = await (0, o.c)(f)
+            } catch {}
             if (e || null == n) return;
-            let l = n.find(e => {
-                var n;
-                return (null == (n = e.application) ? void 0 : n.id) === t.id
-            });
-            null != l && y(l)
+            let l = n.find(e => e.application?.id === t.id);
+            null != l && j(l)
         })(), () => {
             e = !0
         }
-    }, [j, t.id]);
-    let O = r.useCallback(() => {
-            f(!1), s.Ay.trackWithMetadata(_.HAw.IAR_REMOVE_APP_BUTTON_CLICKED, {
-                guild_id: j,
+    }, [f, t.id]);
+    let C = a.useCallback(() => {
+            v(!1), s.Ay.trackWithMetadata(p.HAw.IAR_REMOVE_APP_BUTTON_CLICKED, {
+                guild_id: f,
                 application_id: t.id,
                 report_id: n
-            }), null != j && null != A && o.A.disableIntegration(j, A.id).catch(() => {
-                a.A.show({
+            }), null != f && null != T && d.A.disableIntegration(f, T.id).catch(() => {
+                r.A.show({
                     title: g.intl.string(g.t.wYqMmI),
                     body: g.intl.string(g.t.A4Mnst)
                 })
             })
-        }, [t.id, j, A, n]),
-        S = (0, i.bG)([p.A, m.A], () => {
-            let e = m.A.getGuild(j);
+        }, [t.id, f, T, n]),
+        I = (0, i.bG)([m.A, _.A], () => {
+            let e = _.A.getGuild(f);
             if (null == e) return !1;
-            let n = p.A.can(_.xBc.MANAGE_GUILD, e),
-                l = null == t.bot || p.A.canManageUser(_.xBc.MANAGE_GUILD, t.bot.id, e);
+            let n = m.A.can(p.xBc.MANAGE_GUILD, e),
+                l = null == t.bot || m.A.canManageUser(p.xBc.MANAGE_GUILD, t.bot.id, e);
             return n && l
         });
-    return null != t && null != j && x && S ? (0, l.jsx)(c.PQ, {
+    return null != t && null != f && h && I ? (0, l.jsx)(c.PQ, {
         title: g.intl.string(g.t["WV/CsH"]),
         description: g.intl.string(g.t["FlcC+3"]),
-        buttonText: v ? g.intl.string(g.t.aCJlq4) : g.intl.string(g.t["6I1F3i"]),
-        buttonDisabled: !v,
-        onButtonPress: O,
-        buttonVariant: v ? "critical-primary" : "secondary"
+        buttonText: b ? g.intl.string(g.t.aCJlq4) : g.intl.string(g.t["6I1F3i"]),
+        buttonDisabled: !b,
+        onButtonPress: C,
+        buttonVariant: b ? "critical-primary" : "secondary"
     }) : null
 }

@@ -1,11 +1,11 @@
 /** chunk id: 10584, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    z: () => i
+    z: () => r
 });
-var r = n(73153);
+var i = n(73153);
 
-function i(e, t) {
-    r.h.dispatch({
+function r(e, t) {
+    i.h.dispatch({
         type: "CERTIFIED_DEVICES_SET",
         applicationId: e,
         devices: t

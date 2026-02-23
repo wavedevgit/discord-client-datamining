@@ -1,30 +1,31 @@
 /** chunk id: 534963, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => s
+    A: () => r
 });
-var r = n(562465),
-    l = n(73153),
-    i = n(652215);
-let s = {
+var i = n(562465),
+    s = n(73153),
+    l = n(652215);
+let r = {
     fetchRegions(e) {
-        r.Bo.get({
-            url: i.Rsh.REGIONS(e),
+        i.Bo.get({
+            url: l.Rsh.REGIONS(e),
             retries: 1,
             oldFormErrors: !0,
             rejectWithError: !0
-        }).then(t => l.h.dispatch({
+        }).then(t => s.h.dispatch({
             type: "LOAD_REGIONS",
             regions: t.body,
             guildId: e
-        }), () => l.h.dispatch({
+        }), () => s.h.dispatch({
             type: "LOAD_REGIONS",
             regions: [],
             guildId: e
         }))
     },
     changeCallRegion(e, t) {
-        r.Bo.patch({
-            url: i.Rsh.CALL(e),
+        i.Bo.patch({
+            url: l.Rsh.CALL(e),
             body: {
                 region: t
             },

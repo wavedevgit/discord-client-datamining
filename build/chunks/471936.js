@@ -1,112 +1,31 @@
-/** chunk id: 471936, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    t: () => S
-}), n(747238), n(321073), n(65821), n(896048), n(733351);
-var r = n(627968),
-    i = n(64700),
-    a = n(18051),
-    o = n(158954),
-    s = n(116833),
-    l = n(521489),
-    c = n(397927),
-    u = n(314116),
-    d = n(67576),
-    f = n(293804);
+/** chunk id: 471936, original params: e,l,a (module,exports,require) **/
+a.d(l, {
+    t: () => h
+}), a(321073);
+var t = a(627968),
+    o = a(64700),
+    n = a(18051),
+    i = a(158954),
+    s = a(116833),
+    r = a(521489),
+    d = a(397927),
+    u = a(314116),
+    c = a(67576),
+    b = a(293804);
 
-function p(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-
-function _() {
-    return (_ = Object.assign || function(e) {
-        for (var t = 1; t < arguments.length; t++) {
-            var n = arguments[t];
-            for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
-        }
-        return e
-    }).apply(this, arguments)
-}
-
-function h(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            p(e, t, n[t])
-        })
-    }
-    return e
-}
-
-function m(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-        var r = Object.getOwnPropertySymbols(e);
-        t && (r = r.filter(function(t) {
-            return Object.getOwnPropertyDescriptor(e, t).enumerable
-        })), n.push.apply(n, r)
-    }
-    return n
-}
-
-function g(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-
-function E(e, t) {
-    if (null == e) return {};
-    var n, r, i, a = {};
-    if ("u" > typeof Reflect && Reflect.ownKeys) {
-        for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
-        return a
-    }
-    if (a = y(e, t), Object.getOwnPropertySymbols)
-        for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
-    return a
-}
-
-function y(e, t) {
-    if (null == e) return {};
-    var n, r, i = {},
-        a = Object.getOwnPropertyNames(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
-    return i
-}
-
-function b(e) {
-    let t, n = [],
-        i = 0,
-        a = /\*\*(.+?)\*\*/g,
-        o = 0;
-    for (; null !== (t = a.exec(e));) t.index > i && n.push(e.substring(i, t.index)), n.push((0, r.jsx)("strong", {
-        children: t[1]
-    }, o++)), i = a.lastIndex;
-    return i < e.length && n.push(e.substring(i)), n.length > 0 ? n : e
-}
-
-function O() {
-    return (0, r.jsx)(c.Text, {
+function p() {
+    return (0, t.jsx)(d.Text, {
         variant: "text-sm/normal",
         color: "text-subtle",
         children: "Lost access to your radness? Talk to your radness provider to refresh your aura."
     })
 }
 
-function v(e) {
+function m(e) {
     let {
-        setIsSafetyAccepted: t,
-        setIsHelmetSelected: n
-    } = e, [a, s] = i.useState([]), l = [{
+        setIsSafetyAccepted: l,
+        setIsHelmetSelected: a
+    } = e, [n, s] = o.useState([]), r = [{
         label: "I am wearing a helmet",
         value: "helmet"
     }, {
@@ -116,56 +35,57 @@ function v(e) {
         label: "I completed the safety training",
         value: "training"
     }];
-    return i.useEffect(() => {
-        t(a.length === l.length), n(a.includes("helmet"))
-    }, [a, l.length, t, n]), (0, r.jsx)(o.$QX, {
+    return o.useEffect(() => {
+        l(n.length === r.length), a(n.includes("helmet"))
+    }, [n, r.length, l, a]), (0, t.jsx)(i.$QX, {
         label: "Safety checklist",
-        options: l,
-        selectedValues: a,
+        options: r,
+        selectedValues: n,
         onChange: s
     })
 }
 
-function A(e) {
+function x(e) {
     let {
-        setIsPasscodeValid: t
-    } = e, [n, a] = i.useState(""), o = e => {
-        a(e), t(e.length > 0)
-    };
-    return (0, r.jsx)(c.ksK, {
+        setIsPasscodeValid: l
+    } = e, [a, n] = o.useState("");
+    return (0, t.jsx)(d.ksK, {
         placeholder: "Enter your passcode...",
-        value: n,
-        onChange: o
+        value: a,
+        onChange: e => {
+            n(e), l(e.length > 0)
+        }
     })
 }
 
-function I(e) {
+function v(e) {
     let {
-        callbackDelay: t,
-        failOnNext: n,
-        failOnComplete: a,
+        callbackDelay: l,
+        failOnNext: a,
+        failOnComplete: n,
         onCompleteAlert: s,
-        onNextAlert: l,
-        customErrorNotice: c,
-        errorNoticeType: u
-    } = e, d = E(e, ["callbackDelay", "failOnNext", "failOnComplete", "onCompleteAlert", "onNextAlert", "customErrorNotice", "errorNoticeType"]), [f, p] = i.useState("intro"), [_, m] = i.useState(!1), [g, y] = i.useState(!1), [b, I] = i.useState(!1), [S, T] = i.useState(null), C = i.useCallback(async () => {
-        if (T(null), t > 0 && await new Promise(e => setTimeout(e, 1e3 * t)), l && alert("onNext callback fired"), n) {
-            if ("" !== c.trim()) return T({
-                message: c,
+        onNextAlert: r,
+        customErrorNotice: d,
+        errorNoticeType: u,
+        ...c
+    } = e, [b, v] = o.useState("intro"), [h, y] = o.useState(!1), [f, g] = o.useState(!1), [V, C] = o.useState(!1), [S, j] = o.useState(null), k = o.useCallback(async () => {
+        if (j(null), l > 0 && await new Promise(e => setTimeout(e, 1e3 * l)), r && alert("onNext callback fired"), a) {
+            if ("" !== d.trim()) return j({
+                message: d,
                 type: u
             }), !1;
             throw Error("onNext failed")
         }
         return !0
-    }, [t, n, l, c, u]), N = i.useCallback(async () => {
-        if (T(null), t > 0 && await new Promise(e => setTimeout(e, 1e3 * t)), s && alert("onComplete callback fired"), a) {
-            if ("" !== c.trim()) throw T({
-                message: c,
+    }, [l, a, r, d, u]), w = o.useCallback(async () => {
+        if (j(null), l > 0 && await new Promise(e => setTimeout(e, 1e3 * l)), s && alert("onComplete callback fired"), n) {
+            if ("" !== d.trim()) throw j({
+                message: d,
                 type: u
             }), Error("Custom error");
             throw Error("onComplete failed")
         }
-    }, [t, a, s, c, u]), w = [{
+    }, [l, n, s, d, u]), T = [{
         stepKey: "intro",
         modalProps: {
             title: "Verify radness",
@@ -175,11 +95,11 @@ function I(e) {
                 type: S.type
             } : void 0
         },
-        body: (0, r.jsx)(O, {}),
+        body: (0, t.jsx)(p, {}),
         nextButtonProps: {
             text: "Verify"
         },
-        onNext: C
+        onNext: k
     }, {
         stepKey: "safety",
         modalProps: {
@@ -188,17 +108,17 @@ function I(e) {
             notice: null != S ? {
                 message: S.message,
                 type: S.type
-            } : b ? {
+            } : V ? {
                 message: "Great job, helmets are important for protecting your brain!",
                 type: "warning"
             } : void 0
         },
-        body: (0, r.jsx)(v, {
-            setIsSafetyAccepted: m,
-            setIsHelmetSelected: I
+        body: (0, t.jsx)(m, {
+            setIsSafetyAccepted: y,
+            setIsHelmetSelected: C
         }),
-        nextEnabled: _,
-        onNext: C
+        nextEnabled: h,
+        onNext: k
     }, {
         stepKey: "passcode",
         modalProps: {
@@ -209,61 +129,64 @@ function I(e) {
                 type: S.type
             } : void 0
         },
-        body: (0, r.jsx)(A, {
-            setIsPasscodeValid: y
+        body: (0, t.jsx)(x, {
+            setIsPasscodeValid: g
         }),
         nextButtonProps: {
             text: "Verify passcode"
         },
-        nextEnabled: g
-    }], R = w.slice(1).map(e => e.stepKey);
-    return (0, r.jsx)(o.t04, h({
-        steps: w,
-        currentStepKey: f,
-        numberedSteps: R,
-        onStepChange: p,
-        onComplete: N
-    }, d))
+        nextEnabled: f
+    }], M = T.slice(1).map(e => e.stepKey);
+    return (0, t.jsx)(i.t04, {
+        steps: T,
+        currentStepKey: b,
+        numberedSteps: M,
+        onStepChange: v,
+        onComplete: w,
+        ...c
+    })
 }
-let S = {
+let h = {
     title: "Modal",
     stories: [{
         name: "Modal",
         id: "modal",
         docs: "https://design.discord.tools/components/web/modals/modal",
         component: function(e) {
-            var t;
             let {
-                showPreview: n,
-                showInput: i,
-                subtitleIcon: a
-            } = e, s = E(e, ["showPreview", "showInput", "subtitleIcon"]), l = a ? {
-                text: null != (t = s.subtitle) ? t : "Default subtitle",
-                leadingIcon: o.N$i
-            } : s.subtitle;
-            return (0, r.jsxs)(c.BJc, {
+                showPreview: l,
+                showInput: a,
+                subtitleIcon: o,
+                ...n
+            } = e, s = o ? {
+                text: n.subtitle ?? "Default subtitle",
+                leadingIcon: i.N$i
+            } : n.subtitle;
+            return (0, t.jsxs)(d.BJc, {
                 gap: 16,
                 align: "center",
-                children: [(0, r.jsx)(c.Text, {
+                children: [(0, t.jsx)(d.Text, {
                     variant: "text-md/normal",
                     children: "Click the button below to open the modal"
-                }), (0, r.jsx)(c.Button, {
+                }), (0, t.jsx)(d.Button, {
                     variant: "primary",
                     text: "Open Modal",
-                    onClick: () => (0, c.qfG)(e => (0, r.jsx)(o.Modal, g(h({}, e, s), {
-                        title: s.title,
-                        subtitle: l,
-                        input: i ? (0, r.jsx)(c.IWV, {
+                    onClick: () => (0, d.qfG)(e => (0, t.jsx)(i.Modal, {
+                        ...e,
+                        ...n,
+                        title: n.title,
+                        subtitle: s,
+                        input: a ? (0, t.jsx)(d.IWV, {
                             placeholder: "Search...",
                             onChange: () => {},
                             query: ""
                         }) : void 0,
-                        preview: n ? (0, r.jsxs)(c.BJc, {
+                        preview: l ? (0, t.jsxs)(d.BJc, {
                             gap: 8,
-                            children: [(0, r.jsx)(c.Text, {
+                            children: [(0, t.jsx)(d.Text, {
                                 variant: "text-lg/semibold",
                                 children: "Preview Content"
-                            }), (0, r.jsx)(c.Text, {
+                            }), (0, t.jsx)(d.Text, {
                                 variant: "text-md/normal",
                                 color: "text-subtle",
                                 children: "This is preview content that appears in the modal footer."
@@ -278,9 +201,9 @@ let S = {
                             text: "Submit",
                             onClick: e.onClose
                         }],
-                        children: (0, r.jsxs)(c.BJc, {
+                        children: (0, t.jsxs)(d.BJc, {
                             gap: 16,
-                            children: [(0, r.jsx)(c.ZiE, {
+                            children: [(0, t.jsx)(d.ZiE, {
                                 maxOptionsVisible: 10,
                                 label: "Example Select",
                                 selectionMode: "multiple",
@@ -318,16 +241,16 @@ let S = {
                                     id: "option8"
                                 }],
                                 onSelectionChange: () => {}
-                            }), (0, r.jsx)(c.ksK, {
+                            }), (0, t.jsx)(d.ksK, {
                                 label: "Example Input",
                                 placeholder: "Enter some text..."
-                            }), (0, r.jsx)(c.Text, {
+                            }), (0, t.jsx)(d.Text, {
                                 variant: "text-md/normal",
                                 children: "This is the main content area of the modal. You can place any content here."
                             })]
                         })
-                    })), {
-                        dismissable: s.dismissable
+                    }), {
+                        dismissable: n.dismissable
                     })
                 })]
             })
@@ -381,32 +304,43 @@ let S = {
         id: "confirm-modal",
         component: function(e) {
             let {
-                cancelText: t,
-                confirmDelay: n,
-                confirmError: a,
-                subtitle: o,
-                formatSubtitle: s
-            } = e, l = E(e, ["cancelText", "confirmDelay", "confirmError", "subtitle", "formatSubtitle"]), d = i.useMemo(() => s ? b(o) : o, [o, s]);
-            return (0, r.jsxs)(c.BJc, {
+                cancelText: l,
+                confirmDelay: a,
+                confirmError: n,
+                subtitle: i,
+                formatSubtitle: s,
+                ...r
+            } = e, c = o.useMemo(() => s ? function(e) {
+                let l, a = [],
+                    o = 0,
+                    n = /\*\*(.+?)\*\*/g,
+                    i = 0;
+                for (; null !== (l = n.exec(e));) l.index > o && a.push(e.substring(o, l.index)), a.push((0, t.jsx)("strong", {
+                    children: l[1]
+                }, i++)), o = n.lastIndex;
+                return o < e.length && a.push(e.substring(o)), a.length > 0 ? a : e
+            }(i) : i, [i, s]);
+            return (0, t.jsxs)(d.BJc, {
                 gap: 16,
                 align: "center",
-                children: [(0, r.jsx)(c.Text, {
+                children: [(0, t.jsx)(d.Text, {
                     variant: "text-md/normal",
                     children: "Click the button below to open the confirm modal"
-                }), (0, r.jsx)(c.Button, {
+                }), (0, t.jsx)(d.Button, {
                     variant: "primary",
                     text: "Open Confirm Modal",
-                    onClick: () => (0, u.A)(g(h({}, l), {
-                        subtitle: d,
-                        cancelText: "" === t ? void 0 : t,
+                    onClick: () => (0, u.A)({
+                        ...r,
+                        subtitle: c,
+                        cancelText: "" === l ? void 0 : l,
                         onConfirm: async e => {
                             try {
-                                if (await new Promise(e => setTimeout(e, 1e3 * n)), a) throw Error("Confirm error")
-                            } catch (t) {
-                                throw e("Something went wrong reticulating splines. Please try again later."), t
+                                if (await new Promise(e => setTimeout(e, 1e3 * a)), n) throw Error("Confirm error")
+                            } catch (l) {
+                                throw e("Something went wrong reticulating splines. Please try again later."), l
                             }
                         }
-                    }))
+                    })
                 })]
             })
         },
@@ -464,27 +398,27 @@ let S = {
         id: "expressive-modal",
         docs: "https://design.discord.tools/components/web/modals/expressive-modal",
         component: function(e) {
-            var t;
             let {
                 graphic: l,
-                subtitleIcon: u
-            } = e, p = E(e, ["graphic", "subtitleIcon"]), _ = u ? {
-                text: null != (t = p.subtitle) ? t : "Default subtitle",
-                leadingIcon: o.N$i
-            } : p.subtitle, m = i.useMemo(() => 0 === l ? {
+                subtitleIcon: r,
+                ...u
+            } = e, p = r ? {
+                text: u.subtitle ?? "Default subtitle",
+                leadingIcon: i.N$i
+            } : u.subtitle, m = o.useMemo(() => 0 === l ? {
                 type: "image",
-                src: d
+                src: c
             } : 1 === l ? {
                 type: "lottie",
-                lottie: () => n.e("95947").then(n.t.bind(n, 604902, 19)),
+                lottie: () => a.e("95947").then(a.t.bind(a, 604902, 19)),
                 aspectRatio: "6/4"
             } : 2 === l ? {
                 type: "rive",
-                rive: a.PerfTestRive
+                rive: n.PerfTestRive
             } : 3 === l ? {
                 type: "video",
-                src: f.A,
-                fallbackImageSrc: d,
+                src: b.A,
+                fallbackImageSrc: c,
                 loop: !0,
                 loopAt: 2.5
             } : 4 === l ? {
@@ -495,18 +429,20 @@ let S = {
                     text: "Dynamic Content"
                 }
             } : void 0, [l]);
-            return (0, r.jsxs)(c.BJc, {
+            return (0, t.jsxs)(d.BJc, {
                 gap: 16,
                 align: "center",
-                children: [(0, r.jsx)(c.Text, {
+                children: [(0, t.jsx)(d.Text, {
                     variant: "text-md/normal",
                     children: "Click the button below to open the expressive modal"
-                }), (0, r.jsx)(c.Button, {
+                }), (0, t.jsx)(d.Button, {
                     variant: "primary",
                     text: "Open ExpressiveModal",
-                    onClick: () => (0, c.qfG)(e => (0, r.jsx)(o.ExpressiveModal, g(h({}, e, p), {
-                        title: p.title,
-                        subtitle: _,
+                    onClick: () => (0, d.qfG)(e => (0, t.jsx)(i.ExpressiveModal, {
+                        ...e,
+                        ...u,
+                        title: u.title,
+                        subtitle: p,
                         graphic: m,
                         actions: [{
                             variant: "secondary",
@@ -517,15 +453,15 @@ let S = {
                             text: "Submit",
                             onClick: e.onClose
                         }],
-                        children: (0, r.jsx)(c.BJc, {
+                        children: (0, t.jsx)(d.BJc, {
                             gap: 16,
-                            children: (0, r.jsx)(c.Text, {
+                            children: (0, t.jsx)(d.Text, {
                                 variant: "text-md/normal",
                                 children: "This is an expressive modal with a gradient background and optional badge."
                             })
                         })
-                    })), {
-                        dismissable: p.dismissable
+                    }), {
+                        dismissable: u.dismissable
                     })
                 })]
             })
@@ -611,51 +547,54 @@ let S = {
         id: "dynamic-graphic-modal",
         component: function(e) {
             let {
-                dynamicText: t
-            } = e, i = E(e, ["dynamicText"]), a = {
+                dynamicText: l,
+                ...o
+            } = e, n = {
                 type: "dynamic",
                 component: s.DynamicGraphicComponent.DEMO,
                 aspectRatio: "6/4",
                 props: {
-                    text: t
+                    text: l
                 }
             };
-            return (0, r.jsxs)(c.BJc, {
+            return (0, t.jsxs)(d.BJc, {
                 gap: 16,
                 align: "center",
-                children: [(0, r.jsx)(c.Text, {
+                children: [(0, t.jsx)(d.Text, {
                     variant: "text-md/normal",
                     children: "This example demonstrates the DynamicGraphic component rendering a React component inside the modal header."
-                }), (0, r.jsx)(c.Button, {
+                }), (0, t.jsx)(d.Button, {
                     variant: "primary",
                     text: "Open Dynamic Graphic Modal",
-                    onClick: () => (0, c.mMO)(async () => {
+                    onClick: () => (0, d.mMO)(async () => {
                         let {
                             ExpressiveModal: e
-                        } = await Promise.resolve().then(n.bind(n, 158954));
-                        return t => (0, r.jsx)(e, g(h({}, t, i), {
-                            title: i.title,
-                            subtitle: i.subtitle,
-                            graphic: a,
+                        } = await Promise.resolve().then(a.bind(a, 158954));
+                        return l => (0, t.jsx)(e, {
+                            ...l,
+                            ...o,
+                            title: o.title,
+                            subtitle: o.subtitle,
+                            graphic: n,
                             actions: [{
                                 variant: "secondary",
                                 text: "Cancel",
-                                onClick: t.onClose
+                                onClick: l.onClose
                             }, {
                                 variant: "primary",
                                 text: "Submit",
-                                onClick: t.onClose
+                                onClick: l.onClose
                             }],
-                            children: (0, r.jsx)(c.BJc, {
+                            children: (0, t.jsx)(d.BJc, {
                                 gap: 16,
-                                children: (0, r.jsx)(c.Text, {
+                                children: (0, t.jsx)(d.Text, {
                                     variant: "text-md/normal",
                                     children: "The header above is rendered using a React component via DynamicGraphic, allowing for dynamic, interactive content in the modal header."
                                 })
                             })
-                        }))
+                        })
                     }, {
-                        dismissable: i.dismissable
+                        dismissable: o.dismissable
                     })
                 })]
             })
@@ -719,25 +658,29 @@ let S = {
         name: "LayerModal",
         id: "layer-modal",
         component: function(e) {
-            let {} = e, t = _({}, e);
-            return (0, r.jsxs)(c.BJc, {
+            let {
+                ...l
+            } = e;
+            return (0, t.jsxs)(d.BJc, {
                 gap: 16,
                 align: "center",
-                children: [(0, r.jsx)(c.Text, {
+                children: [(0, t.jsx)(d.Text, {
                     variant: "text-md/normal",
                     children: "Click the button below to open the layer modal"
-                }), (0, r.jsx)(c.Button, {
+                }), (0, t.jsx)(d.Button, {
                     variant: "primary",
                     text: "Open Layer Modal",
-                    onClick: () => (0, c.qfG)(e => (0, r.jsx)(l.N, g(h({}, e, t), {
-                        children: (0, r.jsx)(c.BJc, {
+                    onClick: () => (0, d.qfG)(e => (0, t.jsx)(r.N, {
+                        ...e,
+                        ...l,
+                        children: (0, t.jsx)(d.BJc, {
                             gap: 16,
-                            children: (0, r.jsx)(c.Text, {
+                            children: (0, t.jsx)(d.Text, {
                                 variant: "text-md/normal",
                                 children: "This is the layer modal content"
                             })
                         })
-                    })))
+                    }))
                 })]
             })
         }
@@ -746,32 +689,33 @@ let S = {
         id: "multi-step-modal",
         component: function(e) {
             let {
-                callbackDelay: t,
-                failOnNext: n,
-                failOnComplete: i,
-                onCompleteAlert: a,
-                onNextAlert: o,
+                callbackDelay: l,
+                failOnNext: a,
+                failOnComplete: o,
+                onCompleteAlert: n,
+                onNextAlert: i,
                 customErrorNotice: s,
-                errorNoticeType: l
+                errorNoticeType: r
             } = e;
-            return (0, r.jsxs)(c.BJc, {
+            return (0, t.jsxs)(d.BJc, {
                 gap: 16,
                 align: "center",
-                children: [(0, r.jsx)(c.Text, {
+                children: [(0, t.jsx)(d.Text, {
                     variant: "text-md/normal",
                     children: "Click the button below to open the multi-step modal"
-                }), (0, r.jsx)(c.Button, {
+                }), (0, t.jsx)(d.Button, {
                     variant: "primary",
                     text: "Open MultiStepModal",
-                    onClick: () => (0, c.qfG)(e => (0, r.jsx)(I, g(h({}, e), {
-                        callbackDelay: t,
-                        failOnNext: n,
-                        failOnComplete: i,
-                        onCompleteAlert: a,
-                        onNextAlert: o,
+                    onClick: () => (0, d.qfG)(e => (0, t.jsx)(v, {
+                        ...e,
+                        callbackDelay: l,
+                        failOnNext: a,
+                        failOnComplete: o,
+                        onCompleteAlert: n,
+                        onNextAlert: i,
                         customErrorNotice: s,
-                        errorNoticeType: l
-                    })))
+                        errorNoticeType: r
+                    }))
                 })]
             })
         },
@@ -823,6 +767,137 @@ let S = {
                     label: "Success",
                     value: "success"
                 }]
+            }
+        }
+    }, {
+        name: "BaseModal",
+        id: "base-modal",
+        component: function(e) {
+            let {
+                dismissable: l,
+                tallContent: a,
+                ...o
+            } = e;
+            return (0, t.jsxs)(d.BJc, {
+                gap: 16,
+                align: "center",
+                children: [(0, t.jsx)(d.Text, {
+                    variant: "text-md/normal",
+                    children: "Click the button below to open the base modal"
+                }), (0, t.jsx)(d.Button, {
+                    variant: "primary",
+                    text: "Open BaseModal",
+                    onClick: () => (0, d.qfG)(e => (0, t.jsx)(i.dWK, {
+                        ...e,
+                        ...o,
+                        "aria-label": "Base Modal Example",
+                        children: (0, t.jsx)(i.cwr, {
+                            children: (0, t.jsxs)(d.BJc, {
+                                gap: 16,
+                                children: [(0, t.jsx)(d.Text, {
+                                    variant: "text-lg/semibold",
+                                    children: "BaseModal Content"
+                                }), (0, t.jsx)(d.Text, {
+                                    variant: "text-md/normal",
+                                    children: "This is the raw BaseModal container. It provides the modal chrome (animation, sizing, padding, focus management) without any opinionated header, body, or action bar layout."
+                                }), a ? Array.from({
+                                    length: 20
+                                }, (e, l) => (0, t.jsxs)(d.Text, {
+                                    variant: "text-md/normal",
+                                    children: ["Item ", l + 1, " — This is filler content to demonstrate overflow and scrolling behavior."]
+                                }, l)) : null]
+                            })
+                        })
+                    }), {
+                        dismissable: l
+                    })
+                })]
+            })
+        },
+        controls: {
+            size: {
+                label: "Size",
+                type: "select",
+                defaultValue: "md",
+                options: [{
+                    label: "Small",
+                    value: "sm"
+                }, {
+                    label: "Medium",
+                    value: "md"
+                }, {
+                    label: "Large",
+                    value: "lg"
+                }, {
+                    label: "Extra Large",
+                    value: "xl"
+                }, {
+                    label: "Extra Extra Large",
+                    value: "xxl"
+                }]
+            },
+            paddingSize: {
+                label: "Padding Size",
+                type: "select",
+                defaultValue: "sm",
+                options: [{
+                    label: "Small (24px)",
+                    value: "sm"
+                }, {
+                    label: "Large (32px)",
+                    value: "lg"
+                }]
+            },
+            animationVariant: {
+                label: "Animation Variant",
+                type: "select",
+                defaultValue: "default",
+                options: [{
+                    label: "Default",
+                    value: "default"
+                }, {
+                    label: "Subtle",
+                    value: "subtle"
+                }]
+            },
+            fullScreenOnMobile: {
+                label: "Full Screen on Mobile",
+                type: "boolean",
+                defaultValue: !0
+            },
+            role: {
+                label: "Role",
+                type: "select",
+                defaultValue: "dialog",
+                options: [{
+                    label: "Dialog",
+                    value: "dialog"
+                }, {
+                    label: "Alert Dialog",
+                    value: "alertdialog"
+                }]
+            },
+            maxHeight: {
+                label: "Max Height",
+                type: "select",
+                defaultValue: "default",
+                options: [{
+                    label: "Default",
+                    value: "default"
+                }, {
+                    label: "Viewport",
+                    value: "viewport"
+                }]
+            },
+            dismissable: {
+                label: "Dismissable",
+                type: "boolean",
+                defaultValue: !0
+            },
+            tallContent: {
+                label: "Tall Content",
+                type: "boolean",
+                defaultValue: !1
             }
         }
     }]

@@ -1,9 +1,9 @@
 /** chunk id: 676594, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    l: () => r
+    l: () => s
 });
 var a = n(840251),
-    l = n(688151);
-let r = new a.E([], l.$G.QUEST_BAR_RENDERED, {
+    i = n(688151);
+let s = new a.E([], i.$G.QUEST_BAR_RENDERED, {
     location: "quest bar rendered"
 })

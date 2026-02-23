@@ -1,33 +1,33 @@
 /** chunk id: 636153, original params: e,t,r (module,exports,require) **/
 r.d(t, {
-    q: () => s
-}), r(896048);
+    q: () => i
+});
 var n = r(64700),
     l = r(311907),
     u = r(383501),
-    i = r(814278);
+    s = r(814278);
 
-function s(e) {
+function i(e) {
     let {
         userId: t
-    } = e, r = (0, l.bG)([u.A], () => u.A.getSecureFramesRosterMapEntry(t)), [s, a] = n.useState(!0), [c, o] = n.useState(!1), [f, d] = n.useState(!1), E = n.useCallback(async (e, t) => {
+    } = e, r = (0, l.bG)([u.A], () => u.A.getSecureFramesRosterMapEntry(t)), [i, a] = n.useState(!0), [c, o] = n.useState(!1), [d, E] = n.useState(!1), f = n.useCallback(async (e, t) => {
         a(!0);
         try {
-            let r = await (0, i.A5)(1),
-                n = await (0, i.iO)(e, t, 1);
-            o(r), d(n)
+            let r = await (0, s.A5)(1),
+                n = await (0, s.iO)(e, t, 1);
+            o(r), E(n)
         } catch (e) {
-            o(!1), d(!1)
+            o(!1), E(!1)
         } finally {
             a(!1)
         }
     }, []);
     return n.useEffect(() => {
-        null == r ? (o(!1), d(!1), a(!1)) : E(t, r)
-    }, [r, E, t]), {
-        loading: s,
+        null == r ? (o(!1), E(!1), a(!1)) : f(t, r)
+    }, [r, f, t]), {
+        loading: i,
         isCurrentUserKeyPersistent: c,
-        isOtherUserKeyPersistent: f
+        isOtherUserKeyPersistent: d
     }
 }
 r(603266)

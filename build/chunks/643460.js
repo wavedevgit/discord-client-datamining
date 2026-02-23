@@ -83,7 +83,7 @@ function u(t) {
                     color: "text-muted",
                     children: i
                 })]
-            }, "memberlist-learn-more-note-".concat(e))
+            }, `memberlist-learn-more-note-${e}`)
         })]
     })
 }

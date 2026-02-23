@@ -1,28 +1,66 @@
 /** chunk id: 953701, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    I: () => d
+    I: () => g
 });
-var n = i(64700),
-    l = i(873298),
-    s = i(419954),
-    r = i(253932),
-    u = i(780964),
-    a = i(985018),
-    o = i(536482);
-let d = (0, s.Qx)(u.X.ACTIVITY_PRIVACY_PER_GUILD_DEFAULT_SETTING, {
-    useTitle: () => a.intl.string(o.default["/LHVbt"]),
-    useOptions: function() {
-        return n.useMemo(() => [{
-            value: l.Qd.ACTIVITY_STATUS_ON,
-            name: a.intl.string(a.t.UzGMH9)
-        }, {
-            value: l.Qd.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS,
-            name: a.intl.string(o.default["/sAeRY"])
-        }, {
-            value: l.Qd.ACTIVITY_STATUS_OFF,
-            name: a.intl.string(o.default.m3oL7Q)
-        }], [])
+var n = i(627968),
+    l = i(64700),
+    s = i(873298),
+    r = i(397927),
+    a = i(334726),
+    u = i(546351),
+    o = i(419954),
+    d = i(253932),
+    A = i(780964),
+    T = i(985018),
+    S = i(536482);
+let E = {
+        [s.Qd.ACTIVITY_STATUS_OFF]: () => T.intl.string(T.t.FzgQna).toLowerCase(),
+        [s.Qd.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS]: () => T.intl.string(T.t["1hvuGH"]).toLowerCase(),
+        [s.Qd.ACTIVITY_STATUS_ON]: () => T.intl.string(T.t.fQc5la).toLowerCase()
     },
-    useValue: r._Z.useSetting,
-    setValue: r._Z.updateSetting
-})
+    g = (0, o.Qx)(A.X.ACTIVITY_PRIVACY_PER_GUILD_DEFAULT_SETTING, {
+        useTitle: () => (0, a.m)("GuildActivitySharingDefaultSetting") ? T.intl.string(T.t.vpgck1) : T.intl.string(S.default["/LHVbt"]),
+        useOptions: function() {
+            let t = (0, a.m)("GuildActivitySharingDefaultSetting");
+            return l.useMemo(() => t ? [{
+                value: s.Qd.ACTIVITY_STATUS_OFF,
+                name: T.intl.string(T.t.FzgQna),
+                desc: T.intl.string(T.t.SQxoyc)
+            }, {
+                value: s.Qd.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS,
+                name: T.intl.string(T.t["1hvuGH"]),
+                desc: T.intl.string(T.t.odUCPE)
+            }, {
+                value: s.Qd.ACTIVITY_STATUS_ON,
+                name: T.intl.string(T.t.fQc5la)
+            }] : [{
+                value: s.Qd.ACTIVITY_STATUS_ON,
+                name: T.intl.string(T.t.UzGMH9)
+            }, {
+                value: s.Qd.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS,
+                name: T.intl.string(S.default["/sAeRY"])
+            }, {
+                value: s.Qd.ACTIVITY_STATUS_OFF,
+                name: T.intl.string(S.default.m3oL7Q)
+            }], [t])
+        },
+        useValue: d._Z.useSetting,
+        setValue: function(t) {
+            let e = d._Z.getSetting();
+            if (d._Z.updateSetting(t), !(0, a.r)("GuildActivitySharingDefaultSetting")) return;
+            let l = (0, u.g8)(e, t);
+            if (null == l) return;
+            let s = E[t]?.() ?? "";
+            (0, r.mMO)(async () => {
+                let {
+                    default: t
+                } = await i.e("41996").then(i.bind(i, 32167));
+                return e => (0, n.jsx)(t, {
+                    ...e,
+                    direction: l.direction,
+                    affectedGuildIds: l.affectedGuildIds,
+                    settingName: s
+                })
+            })
+        }
+    })

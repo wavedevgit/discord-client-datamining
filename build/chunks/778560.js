@@ -1,4 +1,5 @@
 /** chunk id: 778560, original params: t,a,i (module,exports,require) **/
 t.exports = {
-    j: "modalBodyText__44fbb"
+    j: "modalBodyText__44fbb",
+    I: "rewardNotice__44fbb"
 }

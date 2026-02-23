@@ -1,59 +1,59 @@
 /** chunk id: 667587, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.r(t), n.d(t, {
-    default: () => B
+    default: () => P
 });
 var l = n(627968),
     i = n(64700),
-    r = n(311907),
-    s = n(397927),
-    a = n(73153),
+    s = n(311907),
+    a = n(397927),
+    r = n(73153),
     o = n(435183),
-    c = n(398590),
-    u = n(83257),
-    d = n(361739),
+    d = n(398590),
+    c = n(83257),
+    u = n(361739),
     h = n(58149),
     g = n(47167),
     m = n(713654),
-    p = n(414618),
-    f = n(526132),
-    b = n(97469),
-    x = n(406704),
-    j = n(544028),
-    A = n(95701),
-    y = n(291731),
-    v = n(176360),
-    O = n(863036),
-    C = n(734057),
-    N = n(576705),
-    S = n(994500),
+    x = n(414618),
+    A = n(526132),
+    p = n(97469),
+    f = n(406704),
+    b = n(544028),
+    C = n(95701),
+    j = n(291731),
+    N = n(176360),
+    v = n(863036),
+    _ = n(734057),
+    S = n(576705),
+    y = n(994500),
     E = n(287809),
-    _ = n(203982),
-    T = n(608226),
-    w = n(654030),
-    M = n(955941),
-    R = n(865678),
-    I = n(159495),
-    L = n(652215),
-    P = n(985018),
-    D = n(175107);
+    T = n(203982),
+    M = n(608226),
+    I = n(654030),
+    R = n(955941),
+    L = n(865678),
+    w = n(159495),
+    O = n(652215),
+    G = n(985018),
+    k = n(175107);
 
-function k(e) {
+function D(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null,
         n = arguments.length > 2 ? arguments[2] : void 0;
-    h.Ay.trackWithMetadata(L.HAw.SETTINGS_PANE_VIEWED, {
+    h.Ay.trackWithMetadata(O.HAw.SETTINGS_PANE_VIEWED, {
         settings_type: "channel",
         origin_pane: t,
         destination_pane: e,
         location: n
     })
 }
-class G extends i.PureComponent {
+class B extends i.PureComponent {
     componentDidMount() {
-        k(this.props.section, null, this.props.analyticsLocation)
+        D(this.props.section, null, this.props.analyticsLocation)
     }
     componentWillUnmount() {
-        a.h.wait(() => (0, o.VN)())
+        r.h.wait(() => (0, o.VN)())
     }
     componentDidUpdate(e) {
         let {
@@ -62,12 +62,12 @@ class G extends i.PureComponent {
         } = e, {
             formState: l,
             section: i,
-            canManageRoles: r,
-            canManageChannels: s,
-            canManageWebhooks: a,
+            canManageRoles: s,
+            canManageChannels: a,
+            canManageWebhooks: r,
             canUnlinkChannel: o
         } = this.props;
-        (s || r || a || o) && (l !== L.XlH.CLOSED || l === t) && (r || i !== L.p_A.PERMISSIONS) && (a || o || i !== L.p_A.INTEGRATIONS) ? i !== n && k(i, n): (0, c.jH)()
+        (a || s || r || o) && (l !== O.XlH.CLOSED || l === t) && (s || i !== O.p_A.PERMISSIONS) && (r || o || i !== O.p_A.INTEGRATIONS) ? i !== n && D(i, n): (0, d.jH)()
     }
     render() {
         let {
@@ -75,141 +75,141 @@ class G extends i.PureComponent {
             sidebarTheme: t,
             section: n,
             channel: i,
-            category: r,
-            canManageRoles: a,
+            category: s,
+            canManageRoles: r,
             canManageChannels: h,
-            canDeleteChannels: f,
-            canManageWebhooks: b,
-            canUnlinkChannel: x
+            canDeleteChannels: A,
+            canManageWebhooks: p,
+            canUnlinkChannel: f
         } = this.props;
-        return null == i ? null : (0, l.jsx)(u.Ay, {
+        return null == i ? null : (0, l.jsx)(c.Ay, {
             theme: e,
             sidebarTheme: t,
-            section: null != n ? n : L.p_A.OVERVIEW,
+            section: n ?? O.p_A.OVERVIEW,
             onSetSection: o.c4,
-            onClose: c.jH,
+            onClose: d.jH,
             sections: function(e) {
                 let {
                     channel: t,
                     category: n,
                     canManageRoles: i,
-                    canManageChannels: r,
-                    canDeleteChannels: a,
-                    canManageWebhooks: u,
+                    canManageChannels: s,
+                    canDeleteChannels: r,
+                    canManageWebhooks: c,
                     canUnlinkChannel: h
-                } = e, f = (0, m.gU)(t), {
-                    GUILD_CATEGORY: b
-                } = L.rbe, x = A.Le.has(t.type), j = t.type === b ? P.intl.string(P.t.ifbXnL) : x ? t.isForumPost() ? P.intl.string(P.t.nEOg1N) : P.intl.string(P.t.H7vTe2) : P.intl.string(P.t["8D8Rsb"]);
+                } = e, A = (0, m.gU)(t), {
+                    GUILD_CATEGORY: p
+                } = O.rbe, f = C.Le.has(t.type), b = t.type === p ? G.intl.string(G.t.ifbXnL) : f ? t.isForumPost() ? G.intl.string(G.t.nEOg1N) : G.intl.string(G.t.H7vTe2) : G.intl.string(G.t["8D8Rsb"]);
                 return [{
-                    section: d.Fq.HEADER,
+                    section: u.Fq.HEADER,
                     label: null != t ? (0, l.jsxs)(l.Fragment, {
-                        children: [null != f ? (0, l.jsx)(f, {
+                        children: [null != A ? (0, l.jsx)(A, {
                             size: "xxs",
                             color: "currentColor",
-                            className: D.p
-                        }) : null, (0, g.m1)(t, E.default, S.A), null != n ? (0, l.jsx)(s.Text, {
+                            className: k.p
+                        }) : null, (0, g.m1)(t, E.default, y.A), null != n ? (0, l.jsx)(a.Text, {
                             tag: "span",
                             variant: "text-xs/semibold",
                             color: "text-default",
                             lineClamp: 1,
-                            className: D.L,
-                            children: (0, g.m1)(n, E.default, S.A)
+                            className: k.L,
+                            children: (0, g.m1)(n, E.default, y.A)
                         }) : null]
-                    }) : P.intl.string(P.t.XPDhcc)
+                    }) : G.intl.string(G.t.XPDhcc)
                 }, {
-                    section: L.p_A.OVERVIEW,
-                    label: P.intl.string(P.t["/dp6yY"]),
-                    ariaLabel: P.intl.string(P.t["/dp6yY"]),
-                    element: R.A,
+                    section: O.p_A.OVERVIEW,
+                    label: G.intl.string(G.t["/dp6yY"]),
+                    ariaLabel: G.intl.string(G.t["/dp6yY"]),
+                    element: L.A,
                     notice: {
-                        element: R.w,
-                        stores: [O.A]
+                        element: L.w,
+                        stores: [v.A]
                     },
                     predicate: () => !t.isModeratorReportChannel()
                 }, {
-                    section: L.p_A.PERMISSIONS,
-                    label: P.intl.string(P.t.xrmhRX),
-                    element: p.A,
+                    section: O.p_A.PERMISSIONS,
+                    label: G.intl.string(G.t.xrmhRX),
+                    element: x.A,
                     notice: {
-                        element: I.$,
-                        stores: [v.A]
+                        element: w.$,
+                        stores: [N.A]
                     },
-                    predicate: () => i && !x
+                    predicate: () => i && !f
                 }, {
-                    section: L.p_A.INSTANT_INVITES,
-                    label: P.intl.string(P.t["9F90ic"]),
-                    element: M.A,
-                    type: d.Py.CUSTOM,
-                    predicate: () => t.type !== b && r && !x && !t.isModeratorReportChannel()
+                    section: O.p_A.INSTANT_INVITES,
+                    label: G.intl.string(G.t["9F90ic"]),
+                    element: R.A,
+                    type: u.Py.CUSTOM,
+                    predicate: () => t.type !== p && s && !f && !t.isModeratorReportChannel()
                 }, {
-                    section: L.p_A.INTEGRATIONS,
-                    label: P.intl.string(P.t.s69NLF),
-                    ariaLabel: P.intl.string(P.t.s69NLF),
-                    element: w.A,
+                    section: O.p_A.INTEGRATIONS,
+                    label: G.intl.string(G.t.s69NLF),
+                    ariaLabel: G.intl.string(G.t.s69NLF),
+                    element: I.A,
                     notice: {
-                        stores: [y.A],
-                        element: w.q
+                        stores: [j.A],
+                        element: I.q
                     },
-                    predicate: () => !(!u && !h || t.isModeratorReportChannel()) && A.oH.has(t.type)
+                    predicate: () => !(!c && !h || t.isModeratorReportChannel()) && C.oH.has(t.type)
                 }, {
-                    section: d.Fq.DIVIDER
+                    section: u.Fq.DIVIDER
                 }, {
-                    section: L.p_A.DELETE,
+                    section: O.p_A.DELETE,
                     onClick() {
-                        (0, T.O)(t, function() {
-                            _._.subscribeOnce(L.jej.LAYER_POP_COMPLETE, () => {
+                        (0, M.O)(t, function() {
+                            T._.subscribeOnce(O.jej.LAYER_POP_COMPLETE, () => {
                                 (0, o.D3)(t.id)
-                            }), (0, c.jH)()
+                            }), (0, d.jH)()
                         })
                     },
-                    label: j,
-                    ariaLabel: j,
-                    icon: (0, l.jsx)(s.ucK, {
+                    label: b,
+                    ariaLabel: b,
+                    icon: (0, l.jsx)(a.ucK, {
                         size: "xs",
                         color: "currentColor"
                     }),
                     variant: "destructive",
-                    predicate: () => a && !t.isModeratorReportChannel()
+                    predicate: () => r && !t.isModeratorReportChannel()
                 }]
             }({
                 channel: i,
-                category: r,
-                canManageRoles: a,
+                category: s,
+                canManageRoles: r,
                 canManageChannels: h,
-                canDeleteChannels: f,
-                canManageWebhooks: b,
-                canUnlinkChannel: x
+                canDeleteChannels: A,
+                canManageWebhooks: p,
+                canUnlinkChannel: f
             })
         })
     }
 }
 
-function B() {
+function P() {
     let {
         channel: e,
         analyticsLocation: t
-    } = (0, r.cf)([O.A], () => O.A.getProps()), n = (0, r.bG)([O.A], () => O.A.getFormState()), i = (0, r.bG)([O.A], () => O.A.getSection()), s = (0, r.bG)([j.A], () => j.A.theme), a = (0, b.NC)(), o = (0, x.NI)(e), c = (0, x.H_)(e), {
-        canManageChannels: u,
-        canManageRoles: d,
+    } = (0, s.cf)([v.A], () => v.A.getProps()), n = (0, s.bG)([v.A], () => v.A.getFormState()), i = (0, s.bG)([v.A], () => v.A.getSection()), a = (0, s.bG)([b.A], () => b.A.theme), r = (0, p.NC)(), o = (0, f.NI)(e), d = (0, f.H_)(e), {
+        canManageChannels: c,
+        canManageRoles: u,
         canManageWebhooks: h,
         canUnlinkChannel: g
-    } = (0, r.cf)([N.A], () => ({
-        canManageChannels: N.A.can(L.xBc.MANAGE_CHANNELS, e),
-        canManageRoles: null != e && N.A.can(L.xBc.MANAGE_ROLES, e),
-        canManageWebhooks: null != e && N.A.can(L.xBc.MANAGE_WEBHOOKS, e),
-        canUnlinkChannel: (0, f.n)(e, N.A)
-    })), m = (0, r.bG)([C.A], () => C.A.getChannel(null == e ? void 0 : e.parent_id));
-    return (0, l.jsx)(G, {
+    } = (0, s.cf)([S.A], () => ({
+        canManageChannels: S.A.can(O.xBc.MANAGE_CHANNELS, e),
+        canManageRoles: null != e && S.A.can(O.xBc.MANAGE_ROLES, e),
+        canManageWebhooks: null != e && S.A.can(O.xBc.MANAGE_WEBHOOKS, e),
+        canUnlinkChannel: (0, A.n)(e, S.A)
+    })), m = (0, s.bG)([_.A], () => _.A.getChannel(e?.parent_id));
+    return (0, l.jsx)(B, {
         channel: e,
         category: m,
-        canManageChannels: (null == e ? void 0 : e.isThread()) ? o : u,
-        canDeleteChannels: (null == e ? void 0 : e.isThread()) ? c : u,
-        canManageRoles: d,
+        canManageChannels: e?.isThread() ? o : c,
+        canDeleteChannels: e?.isThread() ? d : c,
+        canManageRoles: u,
         canManageWebhooks: h,
         canUnlinkChannel: g,
         formState: n,
-        theme: s,
-        sidebarTheme: a,
+        theme: a,
+        sidebarTheme: r,
         section: i,
         analyticsLocation: t
     })

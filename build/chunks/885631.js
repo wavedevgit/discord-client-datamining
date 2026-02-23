@@ -1,9 +1,10 @@
 /** chunk id: 885631, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => l
+    A: () => s
 });
-var r = n(652215);
+var i = n(652215);
 
-function l(e) {
-    return e.features.has(r.GuildFeatures.COMMUNITY) && e.features.has(r.GuildFeatures.DISCOVERABLE)
+function s(e) {
+    return e.features.has(i.GuildFeatures.COMMUNITY) && e.features.has(i.GuildFeatures.DISCOVERABLE)
 }

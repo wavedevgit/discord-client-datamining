@@ -1,83 +1,83 @@
 /** chunk id: 563218, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => v
-}), n(228524), n(896048);
+    A: () => b
+});
 var l = n(627968),
-    r = n(64700),
+    a = n(64700),
     i = n(311907),
-    a = n(397927),
+    r = n(397927),
     s = n(964486),
-    o = n(58149),
-    d = n(632738),
+    d = n(58149),
+    o = n(632738),
     c = n(780964),
     u = n(840065),
-    m = n(734057),
-    p = n(319582),
-    b = n(369053),
-    _ = n(652215),
+    _ = n(734057),
+    m = n(319582),
+    x = n(369053),
+    p = n(652215),
     g = n(985018),
-    x = n(71561);
+    h = n(71561);
 
-function h(e) {
+function A(e) {
     let {
         title: t,
         description: n,
         onButtonClick: i,
-        trackSettingsUpsellsAction: a
-    } = e, [o, c] = r.useState(!1);
+        trackSettingsUpsellsAction: r
+    } = e, [d, c] = a.useState(!1);
     return (0, s.Ay)(() => {
-        a(b.lJ.SETTINGS_UPSELLS_VIEWED)
-    }), (0, l.jsx)(d.PQ, {
+        r(x.lJ.SETTINGS_UPSELLS_VIEWED)
+    }), (0, l.jsx)(o.PQ, {
         title: t,
         description: n,
-        buttonText: o ? g.intl.string(g.t["h+WsPb"]) : g.intl.string(g.t.A8t4Nf),
-        buttonDisabled: o,
+        buttonText: d ? g.intl.string(g.t["h+WsPb"]) : g.intl.string(g.t.A8t4Nf),
+        buttonDisabled: d,
         onButtonPress: () => {
-            i(), c(!0), a(b.lJ.SETTINGS_UPSELLS_APPLY_CLICKED)
+            i(), c(!0), r(x.lJ.SETTINGS_UPSELLS_APPLY_CLICKED)
         }
     })
 }
 
-function v(e) {
+function b(e) {
     let {
         settingsUpsells: t,
         channelId: n,
-        onModalClose: r,
+        onModalClose: a,
         reportId: s,
-        reportType: d,
-        reportSubType: v
-    } = e, f = (0, i.bG)([m.A], () => m.A.getChannel(n)), j = (0, p.MR)(t, null == f ? void 0 : f.type), A = (0, b.Mw)(d, v, s);
-    return 0 === j.length ? null : (0, l.jsxs)("div", {
-        className: x.kL,
-        children: [(0, l.jsx)(a.Heading, {
+        reportType: o,
+        reportSubType: b
+    } = e, v = (0, i.bG)([_.A], () => _.A.getChannel(n)), f = (0, m.MR)(t, v?.type), T = (0, x.Mw)(o, b, s);
+    return 0 === f.length ? null : (0, l.jsxs)("div", {
+        className: h.kL,
+        children: [(0, l.jsx)(r.Heading, {
             variant: "text-sm/semibold",
-            className: x.wx,
+            className: h.wx,
             children: g.intl.string(g.t["1yxTIJ"])
         }), (0, l.jsx)("div", {
-            className: x.uk,
-            children: j.map((e, n) => {
+            className: h.uk,
+            children: f.map((e, n) => {
                 let {
-                    getTitle: r,
+                    getTitle: a,
                     getDescription: i,
-                    onApply: a
+                    onApply: r
                 } = e;
-                return (0, l.jsx)(h, {
-                    title: r(),
+                return (0, l.jsx)(A, {
+                    title: a(),
                     description: i(),
-                    onButtonClick: a,
-                    trackSettingsUpsellsAction: A(t[n])
+                    onButtonClick: r,
+                    trackSettingsUpsellsAction: T(t[n])
                 }, n)
             })
-        }), (0, l.jsx)(a.QWc, {
+        }), (0, l.jsx)(r.QWc, {
             text: g.intl.string(g.t.olebGx),
             onClick: () => {
                 (0, u.openUserSettings)(c.X.CONTENT_AND_SOCIAL_PANEL, {
-                    section: _.nc_.CONTENT_AND_SOCIAL
-                }), r(), o.Ay.trackWithMetadata(_.HAw.IAR_SETTINGS_UPSELLS_ACTION, {
+                    section: p.nc_.CONTENT_AND_SOCIAL
+                }), a(), d.Ay.trackWithMetadata(p.HAw.IAR_SETTINGS_UPSELLS_ACTION, {
                     report_id: s,
-                    report_type: d.name,
-                    report_subtype: v,
-                    action: b.lJ.SETTINGS_UPSELLS_GO_TO_SETTINGS_LINK_CLICKED
+                    report_type: o.name,
+                    report_subtype: b,
+                    action: x.lJ.SETTINGS_UPSELLS_GO_TO_SETTINGS_LINK_CLICKED
                 })
             }
         })]

@@ -1,147 +1,144 @@
-/** chunk id: 143154, original params: e,l,a (module,exports,require) **/
-a.d(l, {
+/** chunk id: 143154, original params: e,a,l (module,exports,require) **/
+l.d(a, {
     default: () => w
-}), a(228524), a(321073);
-var i = a(627968),
-    n = a(64700),
-    t = a(158954),
-    s = a(311907),
-    o = a(397927),
-    r = a(565645),
-    c = a(713654),
-    d = a(573435),
-    u = a(915089),
-    m = a(508675),
-    _ = a(7584),
-    h = a(263063),
-    x = a(714991),
-    j = a(976860),
-    p = a(734057),
-    N = a(71393),
-    g = a(576705),
-    b = a(147925),
-    A = a(954571),
-    C = a(447696),
-    E = a(684407),
-    f = a(547716),
-    v = a(652215),
-    y = a(818348),
-    I = a(985018),
-    k = a(486856);
+}), l(321073);
+var i = l(627968),
+    n = l(64700),
+    t = l(158954),
+    s = l(311907),
+    o = l(397927),
+    r = l(565645),
+    c = l(713654),
+    d = l(573435),
+    m = l(915089),
+    _ = l(508675),
+    u = l(7584),
+    h = l(263063),
+    x = l(714991),
+    j = l(976860),
+    p = l(734057),
+    N = l(71393),
+    g = l(576705),
+    b = l(147925),
+    A = l(954571),
+    C = l(447696),
+    E = l(684407),
+    f = l(547716),
+    y = l(652215),
+    I = l(818348),
+    k = l(985018),
+    v = l(486856);
 let T = e => {
-        var l;
         let {
             channelData: a,
-            onClose: n,
-            trackOptionClick: t
-        } = e, d = (0, s.bG)([p.A], () => p.A.getChannel(a.channel_id)), u = (0, s.bG)([g.A], () => null != d && g.A.can(y.xB.VIEW_CHANNEL, d)), h = (0, s.bG)([m.Ay], () => null != a.emoji_id ? m.Ay.getCustomEmojiById(a.emoji_id) : null, [a.emoji_id]), x = null != a.emoji_name ? _.Ay.getByName(_.Ay.convertSurrogateToName(a.emoji_name, !1)) : null, N = null != (l = (0, c.gU)(d)) ? l : o.N$i;
-        return null != d && u ? (0, i.jsxs)(o.DUT, {
-            className: k.NV,
+            onClose: l,
+            trackOptionClick: n
+        } = e, t = (0, s.bG)([p.A], () => p.A.getChannel(a.channel_id)), d = (0, s.bG)([g.A], () => null != t && g.A.can(I.xB.VIEW_CHANNEL, t)), m = (0, s.bG)([_.Ay], () => null != a.emoji_id ? _.Ay.getCustomEmojiById(a.emoji_id) : null, [a.emoji_id]), h = null != a.emoji_name ? u.Ay.getByName(u.Ay.convertSurrogateToName(a.emoji_name, !1)) : null, x = (0, c.gU)(t) ?? o.N$i;
+        return null != t && d ? (0, i.jsxs)(o.DUT, {
+            className: v.NV,
             onClick: () => {
-                t(), n(), (0, j.uh)(d.guild_id, d.id)
+                n(), l(), (0, j.uh)(t.guild_id, t.id)
             },
-            children: [null != h || null != x ? (0, i.jsx)(r.A, {
-                emojiName: null != a.emoji_id ? null == h ? void 0 : h.name : a.emoji_name,
-                animated: null != h && h.animated,
-                emojiId: null == h ? void 0 : h.id,
+            children: [null != m || null != h ? (0, i.jsx)(r.A, {
+                emojiName: null != a.emoji_id ? m?.name : a.emoji_name,
+                animated: null != m && m.animated,
+                emojiId: m?.id,
                 autoplay: !0,
-                className: k.oK
-            }) : (0, i.jsx)(N, {
-                className: k.p
+                className: v.oK
+            }) : (0, i.jsx)(x, {
+                className: v.p
             }), (0, i.jsxs)("div", {
-                className: k.uP,
+                className: v.uP,
                 children: [(0, i.jsx)(o.Text, {
                     variant: "text-md/normal",
-                    className: k.I0,
+                    className: v.I0,
                     children: a.description
                 }), (0, i.jsxs)(o.Text, {
                     variant: "text-xs/normal",
                     color: "text-default",
-                    children: [(0, i.jsx)(N, {
-                        className: k.nO,
+                    children: [(0, i.jsx)(x, {
+                        className: v.nO,
                         size: "xxs",
                         color: "currentColor"
                     }), (0, i.jsx)("span", {
-                        children: d.name
+                        children: t.name
                     })]
                 })]
             }), (0, i.jsx)(b.A, {
                 direction: b.A.Directions.RIGHT,
-                className: k.R_
+                className: v.R_
             })]
         }) : null
     },
     w = e => {
-        var l;
         let {
             onClose: a,
-            transitionState: r,
-            guildId: c,
-            isPreview: m
-        } = e, _ = (0, s.bG)([N.A], () => N.A.getGuild(c)), {
-            welcomeScreen: j,
-            fetching: p,
-            hasError: g
+            transitionState: l,
+            guildId: r,
+            isPreview: c
+        } = e, _ = (0, s.bG)([N.A], () => N.A.getGuild(r)), {
+            welcomeScreen: u,
+            fetching: j,
+            hasError: p
         } = (0, s.cf)([E.A], () => ({
-            welcomeScreen: E.A.get(c),
+            welcomeScreen: E.A.get(r),
             fetching: E.A.isFetching(),
             hasError: E.A.hasError()
-        })), b = (0, u.GV)();
+        })), g = (0, m.GV)();
         n.useEffect(() => {
-            null == j && (0, C.Fy)(c)
-        }, [c, j]), n.useEffect(() => {
-            !1 === p && !0 === g && null == j && a()
-        }, [p, g, a, j]), n.useEffect(() => {
-            j === E.E && !1 === p && a()
-        }, [a, j, p]), n.useEffect(() => {
-            !0 !== m && A.default.track(v.HAw.OPEN_MODAL, {
+            null == u && (0, C.Fy)(r)
+        }, [r, u]), n.useEffect(() => {
+            !1 === j && !0 === p && null == u && a()
+        }, [j, p, a, u]), n.useEffect(() => {
+            u === E.E && !1 === j && a()
+        }, [a, u, j]), n.useEffect(() => {
+            !0 !== c && A.default.track(y.HAw.OPEN_MODAL, {
                 type: f.H,
-                guild_id: c
+                guild_id: r
             })
-        }, [c, m]);
-        let y = n.useCallback(e => {
-            var l;
-            if (null == j || !0 === m) return;
+        }, [r, c]);
+        let b = n.useCallback(e => {
+            if (null == u || !0 === c) return;
             let a = [],
-                i = [],
-                n = !1;
-            null == (l = j.welcome_channels) || l.forEach(e => {
-                a.push(e.description), i.push(e.channel_id), null != e.emoji_id && (n = !0)
-            }), A.default.track(v.HAw.GUILD_WELCOME_SCREEN_OPTION_SELECTED, {
+                l = [],
+                i = !1;
+            u.welcome_channels?.forEach(e => {
+                a.push(e.description), l.push(e.channel_id), null != e.emoji_id && (i = !0)
+            }), A.default.track(y.HAw.GUILD_WELCOME_SCREEN_OPTION_SELECTED, {
                 index: e,
-                guild_id: c,
+                guild_id: r,
                 options: a,
-                options_channel_ids: i,
-                guild_description: j.description,
-                has_custom_emojis: n
+                options_channel_ids: l,
+                guild_description: u.description,
+                has_custom_emojis: i
             })
-        }, [c, m, j]);
-        return null == _ ? null : null == j ? (0, i.jsx)(t.Modal, {
-            transitionState: r,
-            "aria-label": I.intl.string(I.t.ZTNur7),
-            title: I.intl.string(I.t.ZTNur7),
+        }, [r, c, u]);
+        return null == _ ? null : null == u ? (0, i.jsx)(t.Modal, {
+            transitionState: l,
+            "aria-label": k.intl.string(k.t.ZTNur7),
+            title: k.intl.string(k.t.ZTNur7),
             onClose: () => Promise.resolve(a()),
             actions: [],
             children: (0, i.jsx)(o.y$y, {
                 type: o.y$y.Type.SPINNING_CIRCLE
             })
         }) : (0, i.jsx)(t.Modal, {
-            transitionState: r,
-            "aria-labelledby": b,
+            transitionState: l,
+            "aria-labelledby": g,
             actions: [{
-                text: I.intl.string(I.t.jizr82),
+                text: k.intl.string(k.t.jizr82),
                 onClick: a,
                 variant: "secondary"
             }],
-            title: I.intl.string(I.t["3iCBUn"]),
+            title: k.intl.string(k.t["3iCBUn"]),
             onClose: () => Promise.resolve(a()),
             children: (0, i.jsxs)("div", {
-                className: k.jE,
+                className: v.jE,
                 children: [(0, i.jsx)(d.Ay, {
                     mask: d.Ay.Masks.SQUIRCLE,
                     width: 64,
                     height: 64,
-                    className: k.$f,
+                    className: v.$f,
                     children: (0, i.jsx)(h.A, {
                         size: h.A.Sizes.LARGER,
                         guild: _,
@@ -151,38 +148,38 @@ let T = e => {
                     })
                 }), (0, i.jsx)(o.Heading, {
                     variant: "heading-xl/semibold",
-                    className: k.wx,
-                    id: b,
-                    children: I.intl.format(I.t["0aydCN"], {
+                    className: v.wx,
+                    id: g,
+                    children: k.intl.format(k.t["0aydCN"], {
                         guildName: _.name,
-                        guildNameHook: (e, l) => (0, i.jsxs)("span", {
+                        guildNameHook: (e, a) => (0, i.jsxs)("span", {
                             children: [(0, i.jsx)(x.A, {
                                 guild: _,
-                                className: k.eZ,
-                                flowerStarClassName: k.mP,
+                                className: v.eZ,
+                                flowerStarClassName: v.mP,
                                 tooltipColor: o.STz.Colors.PRIMARY
                             }), (0, i.jsx)("strong", {
-                                className: k.aC,
+                                className: v.aC,
                                 children: e
                             })]
-                        }, l)
+                        }, a)
                     })
-                }), null != j.description ? (0, i.jsx)(o.Text, {
+                }), null != u.description ? (0, i.jsx)(o.Text, {
                     variant: "text-sm/normal",
                     color: "text-default",
-                    className: k.eF,
-                    children: j.description
+                    className: v.eF,
+                    children: u.description
                 }) : null, (0, i.jsx)(o.Heading, {
                     variant: "heading-sm/semibold",
-                    className: k.XU,
-                    children: I.intl.string(I.t["haj5+i"])
+                    className: v.XU,
+                    children: k.intl.string(k.t["haj5+i"])
                 }), (0, i.jsx)("div", {
-                    className: k.fF,
-                    children: null == (l = j.welcome_channels) ? void 0 : l.map((e, l) => (0, i.jsx)(T, {
+                    className: v.fF,
+                    children: u.welcome_channels?.map((e, l) => (0, i.jsx)(T, {
                         channelData: e,
-                        trackOptionClick: () => y(l),
+                        trackOptionClick: () => b(l),
                         onClose: a
-                    }, "".concat(e.channel_id, "-").concat(l)))
+                    }, `${e.channel_id}-${l}`))
                 })]
             })
         })

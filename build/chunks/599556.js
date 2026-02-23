@@ -1,6 +1,5 @@
 /** chunk id: 599556, original params: e,t,n (module,exports,require) **/
-"use strict";
-var r = {
+n.r(e.exports = {
     progressContainer: "progressContainer__9258b",
     blue: "blue__9258b",
     orange: "orange__9258b",
@@ -10,5 +9,4 @@ var r = {
     glow: "glow__9258b",
     empty: "empty__9258b",
     bar: "bar__9258b"
-};
-n.r(e.exports = r)
+})

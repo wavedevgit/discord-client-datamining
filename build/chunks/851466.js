@@ -1,29 +1,25 @@
 /** chunk id: 851466, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => c
+    A: () => s
 });
-var r, i, l = n(311907),
-    a = n(73153);
-let s = {};
-class o extends(i = l.Ay.Store) {
+var i = n(311907),
+    r = n(73153);
+let l = {};
+class a extends i.Ay.Store {
+    static displayName = "ChannelSKUStore";
     getSkuIdForChannel(e) {
-        return s[e]
+        return l[e]
     }
-}(r = "displayName") in o ? Object.defineProperty(o, r, {
-    value: "ChannelSKUStore",
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
-}) : o[r] = "ChannelSKUStore";
-let c = new o(a.h, {
+}
+let s = new a(r.h, {
     CONNECTION_OPEN: function() {
-        s = {}
+        l = {}
     },
     STORE_LISTING_FETCH_SUCCESS: function(e) {
         let {
             channelId: t,
             storeListing: n
         } = e;
-        null != t && (s[t] = n.sku.id)
+        null != t && (l[t] = n.sku.id)
     }
 })

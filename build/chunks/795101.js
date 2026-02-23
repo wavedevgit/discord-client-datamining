@@ -1,48 +1,48 @@
 /** chunk id: 795101, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    u: () => c
+    u: () => d
 });
-var r = n(627968),
-    i = n(64700),
-    s = n(397927),
+var i = n(627968),
+    s = n(64700),
+    r = n(397927),
     l = n(565287),
     a = n(985018),
     o = n(714093);
-let c = e => {
+let d = e => {
     let {
         onNavigate: t
-    } = e, n = i.useCallback(() => {
+    } = e, n = s.useCallback(() => {
         t(l.rP.DSA)
-    }, [t]), c = i.useCallback(() => {
+    }, [t]), d = s.useCallback(() => {
         t(l.rP.TIDA)
     }, [t]);
-    return (0, r.jsxs)(s.BJc, {
+    return (0, i.jsxs)(r.BJc, {
         gap: 8,
-        children: [(0, r.jsx)(s.Heading, {
+        children: [(0, i.jsx)(r.Heading, {
             variant: "heading-xl/semibold",
             children: a.intl.string(a.t.Z11w18)
-        }), (0, r.jsx)(s.Text, {
+        }), (0, i.jsx)(r.Text, {
             variant: "text-md/normal",
             children: a.intl.string(a.t.bd1h5T)
-        }), (0, r.jsxs)("div", {
+        }), (0, i.jsxs)("div", {
             className: o.k,
-            children: [(0, r.jsxs)(s.DUT, {
+            children: [(0, i.jsxs)(r.DUT, {
                 className: o.b,
                 onClick: n,
-                children: [(0, r.jsx)(s.Text, {
+                children: [(0, i.jsx)(r.Text, {
                     variant: "text-md/medium",
                     children: a.intl.string(a.t["AszWL/"])
-                }), (0, r.jsx)(s.uhT, {
+                }), (0, i.jsx)(r.uhT, {
                     size: "sm"
                 })]
-            }), (0, r.jsxs)(s.DUT, {
+            }), (0, i.jsxs)(r.DUT, {
                 className: o.b,
-                onClick: c,
-                children: [(0, r.jsx)(s.Text, {
+                onClick: d,
+                children: [(0, i.jsx)(r.Text, {
                     variant: "text-md/medium",
                     children: a.intl.string(a.t.jMSjZL)
-                }), (0, r.jsx)(s.uhT, {
+                }), (0, i.jsx)(r.uhT, {
                     size: "sm"
                 })]
             })]

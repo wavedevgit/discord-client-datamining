@@ -1,104 +1,74 @@
 /** chunk id: 585632, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => p
-}), n(896048), n(228524), n(321073);
-var r = n(627968);
+    A: () => m
+}), n(321073);
+var i = n(627968);
 n(64700);
-var i = n(397927),
+var s = n(397927),
     l = n(11351),
-    s = n(306444),
+    r = n(306444),
     a = n(922975),
     o = n(626083),
-    c = n(79143),
-    d = n(2242),
+    d = n(79143),
+    c = n(2242),
     u = n(985018);
 
-function g(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = r
-        })
-    }
-    return e
-}
-
-function m(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
-        }
-        return n
-    })(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-
-function p() {
+function m() {
     let {
         editStateId: e,
         guildId: t
-    } = (0, s.O)(), [n, p] = a.$O(e);
+    } = (0, r.O)(), [n, m] = a.$O(e);
 
-    function f(e, t) {
+    function g(e, t) {
         let {
-            name: r,
-            description: i,
+            name: i,
+            description: s,
             emojiId: l,
-            emojiName: s
+            emojiName: r
         } = e, a = [...n], o = {
-            name: r,
-            description: i,
+            name: i,
+            description: s,
             emoji_id: l,
-            emoji_name: s,
-            ref_type: d.bN.INTANGIBLE,
+            emoji_name: r,
+            ref_type: c.bN.INTANGIBLE,
             ref_id: void 0
         };
-        null != t ? a[t] = o : a.push(o), p(a)
+        null != t ? a[t] = o : a.push(o), m(a)
     }
-    let h = (0, l.gN)();
-    return (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(c.$, {
+    let x = (0, l.gN)();
+    return (0, i.jsxs)(i.Fragment, {
+        children: [(0, i.jsx)(d.$, {
             benefits: n,
             onEdit: function(e) {
-                (0, i.qfG)(i => (0, r.jsx)(o.aP, m(g({}, i), {
+                (0, s.qfG)(s => (0, i.jsx)(o.aP, {
+                    ...s,
                     guildId: t,
                     initialData: n[e],
-                    onSave: t => f(t, e),
+                    onSave: t => g(t, e),
                     onDelete: () => {
                         let t;
-                        (t = [...n]).splice(e, 1), p(t)
+                        (t = [...n]).splice(e, 1), m(t)
                     }
-                })))
+                }))
             },
             onMove: function(e, t) {
-                let r = [...n],
-                    [i] = r.splice(e, 1);
-                r.splice(t, 0, i), p(r)
+                let i = [...n],
+                    [s] = i.splice(e, 1);
+                i.splice(t, 0, s), m(i)
             },
             guildId: t
-        }), n.length > 0 ? (0, r.jsx)(i.hKd, {
+        }), n.length > 0 ? (0, i.jsx)(s.hKd, {
             size: 8
-        }) : null, (0, r.jsx)(c.n, {
+        }) : null, (0, i.jsx)(d.n, {
             onClick: function() {
-                (0, i.qfG)(e => (0, r.jsx)(o.aP, m(g({}, e), {
+                (0, s.qfG)(e => (0, i.jsx)(o.aP, {
+                    ...e,
                     guildId: t,
-                    onSave: e => f(e)
-                })))
+                    onSave: e => g(e)
+                }))
             },
-            disabled: h,
+            disabled: x,
             children: u.intl.string(u.t["6dwqo0"])
         })]
     })

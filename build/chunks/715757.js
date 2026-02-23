@@ -1,55 +1,53 @@
-/** chunk id: 715757, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    Qo: () => d,
-    V: () => g,
-    W1: () => f,
-    ml: () => b,
-    vb: () => h
+/** chunk id: 715757, original params: e,n,t (module,exports,require) **/
+t.d(n, {
+    Qo: () => A,
+    V: () => f,
+    W1: () => h,
+    ml: () => v,
+    vb: () => g
 });
-var s = n(64700),
-    r = n(311907),
-    a = n(843472),
-    i = n(803306),
-    l = n(71393),
-    c = n(320501),
-    o = n(376708),
-    u = n(272720),
-    p = n(56595);
+var r = t(64700),
+    i = t(311907),
+    l = t(843472),
+    a = t(803306),
+    d = t(71393),
+    s = t(320501),
+    u = t(376708),
+    o = t(272720),
+    c = t(56595);
 
-function d(e) {
-    return (0, r.bG)([l.A], () => {
+function A(e) {
+    return (0, i.bG)([d.A], () => {
         if (null == e) return !1;
-        let t = l.A.getGuild(e);
-        return null != t && (0, p.A)(t) && null != (0, u.A)(t)
+        let n = d.A.getGuild(e);
+        return null != n && (0, c.A)(n) && null != (0, o.A)(n)
     })
 }
 
-function g(e) {
-    return (0, o.uW)(e)
-}
-
 function f(e) {
-    return (0, o.xJ)(e)
-}
-
-function b(e) {
-    let {
-        messageReference: t
-    } = e, n = (0, r.bG)([c.A], () => null != t ? c.A.getMessage(t.channel_id, t.message_id) : null);
-    (0, s.useEffect)(() => {
-        null == n && null != t && a.A.fetchMessages({
-            channelId: t.channel_id,
-            jump: {
-                messageId: t.message_id
-            },
-            limit: 10
-        })
-    }, [n, t])
+    return (0, u.uW)(e)
 }
 
 function h(e) {
-    var t, n;
-    let s = null == e || null == (n = e.messageSnapshots[0]) || null == (t = n.moderatorReport) ? void 0 : t.reported_user_id;
-    null != s && (0, i.wz)(s)
+    return (0, u.xJ)(e)
+}
+
+function v(e) {
+    let {
+        messageReference: n
+    } = e, t = (0, i.bG)([s.A], () => null != n ? s.A.getMessage(n.channel_id, n.message_id) : null);
+    (0, r.useEffect)(() => {
+        null == t && null != n && l.A.fetchMessages({
+            channelId: n.channel_id,
+            jump: {
+                messageId: n.message_id
+            },
+            limit: 10
+        })
+    }, [t, n])
+}
+
+function g(e) {
+    let n = e?.messageSnapshots[0]?.moderatorReport?.reported_user_id;
+    null != n && (0, a.wz)(n)
 }

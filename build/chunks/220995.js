@@ -1,212 +1,213 @@
 /** chunk id: 220995, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    p: () => C
-}), n(896048);
-var r = n(627968),
-    l = n(64700),
-    i = n(503698),
-    s = n.n(i),
-    a = n(92674),
+    p: () => y
+});
+var i = n(627968),
+    s = n(64700),
+    l = n(503698),
+    r = n.n(l),
+    a = n(475539),
     o = n(110259),
     c = n(311907),
-    u = n(435371),
-    d = n(397927),
-    p = n(964486),
-    h = n(793574),
-    g = n(688810),
-    f = n(139286),
-    m = n(576705),
-    b = n(954571),
-    A = n(778768),
-    y = n(582904),
-    O = n(652215),
-    j = n(985018),
-    x = n(430023),
-    _ = n(77615);
+    d = n(435371),
+    u = n(397927),
+    h = n(964486),
+    A = n(793574),
+    p = n(688810),
+    g = n(139286),
+    m = n(713517),
+    _ = n(644836),
+    f = n(71393),
+    x = n(576705),
+    C = n(954571),
+    E = n(778768),
+    I = n(652215),
+    b = n(985018),
+    N = n(430023),
+    S = n(77615);
+let T = e => 1 - Math.pow(1 - e, 4);
 
-function v(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = r
-        })
-    }
-    return e
-}
-let E = e => 1 - Math.pow(1 - e, 4);
-
-function C(e) {
+function y(e) {
     let {
         channel: t,
-        onClose: n
-    } = e, i = l.useRef(null), [C, S] = l.useState(!1), I = l.useRef(null), N = l.useRef(null), [T, P] = l.useState(0), {
-        analyticsLocations: w
-    } = (0, g.Ay)(h.A.VOICE_INVITE_SUGGESTIONS);
-    (0, f.A)({
+        onClose: l
+    } = e, y = s.useRef(null), [v, j] = s.useState(!1), R = s.useRef(null), O = s.useRef(null), [L, M] = s.useState(0), {
+        analyticsLocations: D
+    } = (0, p.Ay)(A.A.VOICE_INVITE_SUGGESTIONS);
+    (0, g.A)({
         name: o.ImpressionNames.VOICE_INVITE_SUGGESTIONS_ENTRYPOINT,
         type: o.ImpressionTypes.VIEW,
         properties: {
             voice_channel_id: t.id,
             voice_guild_id: t.guild_id,
-            location_stack: w
+            location_stack: D
         }
     });
-    let R = (0, c.bG)([m.A], () => m.A.can(O.xBc.CREATE_INSTANT_INVITE, t), [t]),
-        [D, L] = l.useState(!1),
-        [M, G] = l.useState("unknown"),
-        k = l.useRef(null),
+    let G = (0, c.bG)([x.A], () => x.A.can(I.xBc.CREATE_INSTANT_INVITE, t), [t]),
         {
-            isHoveringOrFocusing: U
-        } = (0, y.L7)(R ? i : k),
-        [V, B] = l.useState(!1),
-        H = U || V,
-        F = l.useCallback(function() {
+            standardPopoverGap: U
+        } = (0, _.FS)({
+            guildId: t.guild_id,
+            location: "VoiceInviteSuggestionsButton"
+        }),
+        P = (0, c.bG)([f.A], () => f.A.getGuild(t.guild_id)),
+        [w, k] = s.useState(!1),
+        V = s.useRef(null),
+        {
+            isHoveringOrFocusing: B
+        } = (0, m.A)(G ? y : V),
+        [H, F] = s.useState(!1),
+        K = B || H,
+        W = s.useCallback(function() {
             let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "unknown";
-            b.default.track(O.HAw.VOICE_INVITE_SUGGESTIONS_ENTRYPOINT_CLOSED, {
+            C.default.track(I.HAw.VOICE_INVITE_SUGGESTIONS_ENTRYPOINT_CLOSED, {
                 reason: e,
                 channel_id: t.id,
                 guild_id: t.guild_id,
-                location_stack: w
-            }), S(!1), null == n || n()
-        }, [t, n, w]),
-        Y = (0, d.zhh)({
+                location_stack: D
+            }), j(!1), l?.()
+        }, [t, l, D]),
+        Y = s.useCallback(() => {
+            null != P && (0, u.mMO)(async () => {
+                let {
+                    default: e
+                } = await Promise.all([n.e("43600"), n.e("28136"), n.e("74918")]).then(n.bind(n, 234355));
+                return n => (0, i.jsx)(e, {
+                    ...n,
+                    guild: P,
+                    channel: t,
+                    source: I.PE1.VOICE_INVITE_SUGGESTIONS
+                })
+            })
+        }, [P, t]),
+        [z, X] = (0, u.zhh)(() => ({
             from: {
                 height: "0px"
             },
             to: {
-                height: "".concat(32, "px")
+                height: "32px"
             },
-            reverse: D,
             config: {
                 duration: 200,
-                easing: E,
+                easing: T,
                 clamp: !0
-            },
-            onRest: () => {
-                D && F(M)
             }
-        }),
-        K = l.useCallback(function() {
-            let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "unknown";
-            L(!0), G(e)
-        }, []),
-        W = l.useCallback(() => (null != I.current && clearTimeout(I.current), I.current = setTimeout(() => K("timeout"), 1e4), P(e => e + 1), () => {
-            null != I.current && clearTimeout(I.current)
-        }), [K]),
-        z = l.useCallback(() => (null != N.current && clearTimeout(N.current), N.current = setTimeout(() => {
-            S(!1)
+        })),
+        q = s.useCallback(e => {
+            k(!0), X({
+                to: {
+                    height: "0px"
+                },
+                onRest: () => W(e)
+            })
+        }, [X, W]),
+        J = s.useCallback(() => (null != R.current && clearTimeout(R.current), R.current = setTimeout(() => q("timeout"), 1e4), M(e => e + 1), () => {
+            null != R.current && clearTimeout(R.current)
+        }), [q]),
+        Q = s.useCallback(() => (null != O.current && clearTimeout(O.current), O.current = setTimeout(() => {
+            j(!1)
         }, 150), () => {
-            null != N.current && clearTimeout(N.current)
+            null != O.current && clearTimeout(O.current)
         }), []);
-    (0, p.Ay)(W), l.useEffect(() => {
-        if (!H) {
-            W(), z();
+    (0, h.Ay)(J), s.useEffect(() => {
+        if (!K) {
+            J(), Q();
             return
         }
-        null != I.current && clearTimeout(I.current), null != N.current && clearTimeout(N.current), S(!0)
-    }, [H, W, z]);
-    let X = l.useCallback(() => {
-            S(!0)
+        null != R.current && clearTimeout(R.current), null != O.current && clearTimeout(O.current), j(!0)
+    }, [K, J, Q]);
+    let $ = s.useCallback(() => {
+            j(!0)
         }, []),
-        q = l.useCallback(() => {
-            S(!1), B(!1)
+        Z = s.useCallback(() => {
+            j(!1), F(!1)
         }, []);
-    return R ? (0, r.jsx)(d.YNO, {
-        targetElementRef: i,
-        shouldShow: C,
+    return G ? (0, i.jsx)(u.YNO, {
+        targetElementRef: y,
+        shouldShow: v,
         position: "right",
         align: "top",
-        spacing: 8,
+        spacing: U ?? 8,
         popoutKey: "voice-invite-suggestions-button",
-        renderPopout: e => (0, r.jsx)(A.w, v({
+        renderPopout: e => (0, i.jsx)(E.w, {
             channel: t,
-            onHoverOrFocus: B
-        }, e)),
-        onRequestOpen: X,
-        onRequestClose: q,
+            onHoverOrFocus: F,
+            ...e
+        }),
+        onRequestOpen: $,
+        onRequestClose: Z,
         children: e => {
-            var t, n;
-            return (0, r.jsx)(a.animated.div, {
-                className: x.lY,
-                style: Y,
-                children: (0, r.jsx)(d.DUT, (t = v({
-                    innerRef: i,
-                    className: s()({
-                        [x.vk]: !D
-                    }, _.q7, _.L9, _.vk),
-                    "aria-disabled": D,
-                    "aria-label": j.intl.string(j.t.F3qiJr)
-                }, e), n = n = {
-                    children: (0, r.jsxs)("div", {
-                        className: s()(x.Qs, _.Qs),
-                        children: [(0, r.jsxs)("div", {
-                            className: x.R4,
+            let {
+                onClick: t,
+                ...n
+            } = e;
+            return (0, i.jsx)(a.animated.div, {
+                className: N.lY,
+                style: z,
+                children: (0, i.jsx)(u.DUT, {
+                    innerRef: y,
+                    className: r()({
+                        [N.vk]: !w
+                    }, S.q7, S.L9, S.vk),
+                    "aria-disabled": w,
+                    "aria-label": b.intl.string(b.t.F3qiJr),
+                    onClick: Y,
+                    ...n,
+                    children: (0, i.jsxs)("div", {
+                        className: r()(N.Qs, S.Qs),
+                        children: [(0, i.jsxs)("div", {
+                            className: N.R4,
                             style: {
                                 "--custom-voice-invite-suggestions-timer-size": 24
                             },
-                            children: [(0, r.jsxs)("svg", {
-                                className: s()(x.O1, {
-                                    [x.Ft]: H
+                            children: [(0, i.jsxs)("svg", {
+                                className: r()(N.O1, {
+                                    [N.Ft]: K
                                 }),
-                                viewBox: "0 0 ".concat(24, " ").concat(24),
+                                viewBox: "0 0 24 24",
                                 style: {
                                     "--custom-voice-invite-suggestions-timer-duration": 1e4
                                 },
-                                children: [(0, r.jsx)("circle", {
-                                    className: x.qB
-                                }), (0, r.jsx)("circle", {
-                                    className: x.hN
+                                children: [(0, i.jsx)("circle", {
+                                    className: N.qB
+                                }), (0, i.jsx)("circle", {
+                                    className: N.hN
                                 })]
-                            }, "voice-invite-suggestions-timer-".concat(T)), (0, r.jsx)(d.Rvf, {
+                            }, `voice-invite-suggestions-timer-${L}`), (0, i.jsx)(u.Rvf, {
                                 size: "custom",
                                 width: 14,
                                 height: 14,
                                 color: "currentColor",
-                                className: s()(x.Hk, x.Kk)
+                                className: r()(N.Hk, N.Kk)
                             })]
-                        }), (0, r.jsx)(u.m_, {
-                            text: j.intl.string(j.t["EE+P0H"]),
+                        }), (0, i.jsx)(d.m_, {
+                            text: b.intl.string(b.t["EE+P0H"]),
                             overflowOnly: !0,
-                            children: (0, r.jsx)(d.Text, {
+                            children: (0, i.jsx)(u.Text, {
                                 variant: "text-sm/medium",
-                                className: x.Pf,
+                                className: N.Pf,
                                 lineClamp: 1,
-                                children: j.intl.string(j.t["EE+P0H"])
+                                children: b.intl.string(b.t["EE+P0H"])
                             })
-                        }), U ? (0, r.jsx)(d.DUT, {
-                            className: x.VN,
-                            onClick: () => K("user_explicit"),
-                            "aria-label": j.intl.string(j.t.cpT0Cq),
-                            children: (0, r.jsx)(d.PGe, {
+                        }), B ? (0, i.jsx)(u.DUT, {
+                            className: N.VN,
+                            onClick: e => {
+                                e.stopPropagation(), q("user_explicit")
+                            },
+                            "aria-label": b.intl.string(b.t.cpT0Cq),
+                            children: (0, i.jsx)(u.PGe, {
                                 size: "xs",
                                 color: "currentColor",
-                                className: x.Kk
+                                className: N.Kk
                             })
-                        }) : (0, r.jsx)(d._BQ, {
+                        }) : (0, i.jsx)(u._BQ, {
                             size: "xs",
                             color: "currentColor",
-                            className: x.Kk
+                            className: N.Kk
                         })]
                     })
-                }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
-                    var n = Object.keys(e);
-                    if (Object.getOwnPropertySymbols) {
-                        var r = Object.getOwnPropertySymbols(e);
-                        n.push.apply(n, r)
-                    }
-                    return n
-                })(Object(n)).forEach(function(e) {
-                    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-                }), t))
+                })
             })
         }
     }) : null

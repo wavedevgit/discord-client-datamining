@@ -1,27 +1,27 @@
 /** chunk id: 542678, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => d
+    A: () => u
 });
-var r = n(627968),
-    i = n(64700),
-    l = n(92674),
+var i = n(627968),
+    r = n(64700),
+    l = n(475539),
     a = n(311907),
     s = n(397927),
     o = n(775602),
-    c = n(330640);
-let u = {
+    d = n(330640);
+let c = {
         mass: 1,
         tension: 600,
         friction: 60,
         clamp: !0
     },
-    d = function(e) {
+    u = function(e) {
         let {
             animate: t,
             state: n,
-            cleanUp: d,
-            children: p
-        } = e, h = (0, a.bG)([o.A], () => o.A.useReducedMotion), f = i.useMemo(() => !1 === t || h ? {
+            cleanUp: u,
+            children: A
+        } = e, h = (0, a.bG)([o.A], () => o.A.useReducedMotion), _ = r.useMemo(() => !1 === t || h ? {
             opacity: 1
         } : n === s.wLy.ENTERED || n === s.wLy.MOUNTED ? {
             from: {
@@ -30,7 +30,7 @@ let u = {
             to: {
                 opacity: 1
             },
-            config: u
+            config: c
         } : {
             from: {
                 opacity: 1
@@ -38,14 +38,14 @@ let u = {
             to: {
                 opacity: 0
             },
-            config: u,
+            config: c,
             onRest: () => {
-                d()
+                u()
             }
-        }, [t, d, h, n]), g = (0, s.zhh)(f);
-        return (0, r.jsx)(l.animated.div, {
-            style: g,
-            className: c.Hp,
-            children: p
+        }, [t, u, h, n]), m = (0, s.zhh)(_);
+        return (0, i.jsx)(l.animated.div, {
+            style: m,
+            className: d.Hp,
+            children: A
         })
     }

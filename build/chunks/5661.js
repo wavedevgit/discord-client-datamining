@@ -1,17 +1,17 @@
 /** chunk id: 5661, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    G: () => s
+    G: () => r
 });
-var r = n(627968),
-    i = n(470025),
-    l = n(174872);
-let s = () => (0, r.jsx)("div", {
-    className: i.k,
-    children: (0, r.jsx)("div", {
-        children: (0, r.jsx)("img", {
-            src: l.A,
+var i = n(627968),
+    s = n(470025),
+    a = n(174872);
+let r = () => (0, i.jsx)("div", {
+    className: s.k,
+    children: (0, i.jsx)("div", {
+        children: (0, i.jsx)("img", {
+            src: a.A,
             alt: "",
-            className: i.S
+            className: s.S
         })
     })
 })

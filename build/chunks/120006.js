@@ -1,72 +1,56 @@
 /** chunk id: 120006, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => A
 });
-var r = n(627968),
-    i = n(64700),
+var i = n(627968),
+    r = n(64700),
     l = n(397927),
     a = n(976860),
-    s = n(345942),
-    o = n(71393),
-    c = n(954571),
-    u = n(486020),
-    d = n(396415),
-    p = n(652215),
-    h = n(985018),
-    f = n(605540);
+    s = n(954571),
+    o = n(396415),
+    d = n(652215),
+    c = n(985018),
+    u = n(605540);
 
-function g(e, t, n) {
-    return (0, r.jsxs)("button", {
-        className: f.kL,
-        onClick: n,
-        children: ["function" == typeof e ? (0, r.jsx)("div", {
-            className: f.Kk,
-            children: (0, r.jsx)(e, {
-                className: f.__invalid_iconInner,
-                color: l.LU0.colors.WHITE.css
-            })
-        }) : (0, r.jsx)("img", {
-            className: f.Kk,
-            alt: "",
-            src: e
-        }), (0, r.jsx)(l.Text, {
-            className: f.Qq,
-            variant: "text-md/medium",
-            children: t
-        }), (0, r.jsx)(d.A, {
-            className: f.UE
-        })]
-    }, t)
-}
-
-function m() {
-    let e = o.A.getGuildsArray().filter(e => e.features.has(p.GuildFeatures.HUB));
-    return (0, r.jsxs)(i.Fragment, {
-        children: [(0, r.jsxs)("header", {
-            className: f.wx,
-            children: [(0, r.jsx)(l.Heading, {
+function A() {
+    var e, t, n;
+    return (0, i.jsxs)(r.Fragment, {
+        children: [(0, i.jsxs)("header", {
+            className: u.wx,
+            children: [(0, i.jsx)(l.Heading, {
                 variant: "heading-lg/semibold",
                 color: "text-strong",
-                children: h.intl.string(h.t.IuMx1Y)
-            }), (0, r.jsx)(l.Text, {
+                children: c.intl.string(c.t.IuMx1Y)
+            }), (0, i.jsx)(l.Text, {
                 tag: "div",
                 variant: "heading-md/normal",
-                children: h.intl.string(h.t.DwevPs)
+                children: c.intl.string(c.t.DwevPs)
             })]
-        }), (0, r.jsxs)("div", {
-            className: f.Vg,
-            children: [e.map(e => g(u.Ay.getGuildIconURL({
-                id: e.id,
-                icon: e.icon,
-                size: 240
-            }), e.name, () => {
-                var t;
-                t = e.id, c.default.track(p.HAw.ADD_FRIEND_OTHER_PLACES_HUB_CLICKED, {
-                    guild_id: t
-                }), (0, s.u)(t)
-            })), g(l.QGJ, h.intl.string(h.t.AhKnz4), () => {
-                c.default.track(p.HAw.ADD_FRIEND_OTHER_PLACES_DISCOVERY_CLICKED), (0, a.pX)(p.BVt.GUILD_DISCOVERY)
-            })]
+        }), (0, i.jsx)("div", {
+            className: u.Vg,
+            children: (e = l.QGJ, t = c.intl.string(c.t.AhKnz4), n = () => {
+                s.default.track(d.HAw.ADD_FRIEND_OTHER_PLACES_DISCOVERY_CLICKED), (0, a.pX)(d.BVt.GUILD_DISCOVERY)
+            }, (0, i.jsxs)("button", {
+                className: u.kL,
+                onClick: n,
+                children: ["function" == typeof e ? (0, i.jsx)("div", {
+                    className: u.Kk,
+                    children: (0, i.jsx)(e, {
+                        className: u.__invalid_iconInner,
+                        color: l.LU0.colors.WHITE.css
+                    })
+                }) : (0, i.jsx)("img", {
+                    className: u.Kk,
+                    alt: "",
+                    src: e
+                }), (0, i.jsx)(l.Text, {
+                    className: u.Qq,
+                    variant: "text-md/medium",
+                    children: t
+                }), (0, i.jsx)(o.A, {
+                    className: u.UE
+                })]
+            }, t))
         })]
     })
 }

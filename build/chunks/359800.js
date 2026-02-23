@@ -1,58 +1,43 @@
 /** chunk id: 359800, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    z: () => d
-}), n(896048);
-var r = n(627968),
-    i = n(64700),
-    l = n(397927),
+    z: () => u
+});
+var i = n(627968),
+    l = n(64700),
+    r = n(397927),
     a = n(475743),
     s = n(362490),
     o = n(271469),
-    c = n(985018);
-let u = "in-game-auth-check-modal";
+    d = n(985018);
+let c = "in-game-auth-check-modal";
 
-function d(e, t) {
+function u(e, t) {
     let {
-        showInGameModal: d = !0,
-        showToastOnSuccess: p = !0
-    } = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {}, [m, f] = i.useState(!1), g = i.useCallback(function() {
-        for (var t = arguments.length, i = Array(t), a = 0; a < t; a++) i[a] = arguments[a];
-        f(!0);
-        let o = e(...i);
-        return o === s._M.RPC && d && (0, l.mMO)(async () => {
+        showInGameModal: u = !0,
+        showToastOnSuccess: _ = !0
+    } = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {}, [m, h] = l.useState(!1), p = l.useCallback(function() {
+        for (var t = arguments.length, l = Array(t), a = 0; a < t; a++) l[a] = arguments[a];
+        h(!0);
+        let o = e(...l);
+        return o === s._M.RPC && u && (0, r.mMO)(async () => {
             let {
                 default: e
             } = await n.e("30724").then(n.bind(n, 272047));
-            return t => (0, r.jsx)(e, function(e) {
-                for (var t = 1; t < arguments.length; t++) {
-                    var n = null != arguments[t] ? arguments[t] : {},
-                        r = Object.keys(n);
-                    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                        return Object.getOwnPropertyDescriptor(n, e).enumerable
-                    }))), r.forEach(function(t) {
-                        var r;
-                        r = n[t], t in e ? Object.defineProperty(e, t, {
-                            value: r,
-                            enumerable: !0,
-                            configurable: !0,
-                            writable: !0
-                        }) : e[t] = r
-                    })
-                }
-                return e
-            }({}, t))
+            return t => (0, i.jsx)(e, {
+                ...t
+            })
         }, {
-            modalKey: u
+            modalKey: c
         }), o
-    }, [e, f, d]), _ = (0, a.A)(t);
-    return i.useEffect(() => {
-        if (m && !1 === _ && !0 === t) {
-            if ((0, l.OoC)(u), f(!1), !p) return;
+    }, [e, h, u]), g = (0, a.A)(t);
+    return l.useEffect(() => {
+        if (m && !1 === g && !0 === t) {
+            if ((0, r.OoC)(c), h(!1), !_) return;
             let e = () => {
-                (0, l.showToast)({
+                (0, r.showToast)({
                     id: "account-linked-toast",
-                    message: c.intl.string(o.default.uG6teD),
-                    type: l.ToastType.SUCCESS
+                    message: d.intl.string(o.default.uG6teD),
+                    type: r.ToastType.SUCCESS
                 })
             };
             if ("visible" === document.visibilityState) e();
@@ -63,5 +48,5 @@ function d(e, t) {
                 document.addEventListener("visibilitychange", t)
             }
         }
-    }, [m, t, _, p]), g
+    }, [m, t, g, _]), p
 }

@@ -1,95 +1,95 @@
 /** chunk id: 224360, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => O
+    A: () => _
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
 var l = n(503698),
-    i = n.n(l),
-    a = n(311907),
-    o = n(990078),
-    s = n(397927),
+    a = n.n(l),
+    s = n(311907),
+    r = n(990078),
+    o = n(397927),
     c = n(915089),
+    d = n(152621),
     u = n(61881),
-    d = n(788593),
-    f = n(507247),
-    p = n(973397),
-    g = n(985018),
-    m = n(461349),
-    b = n(105778);
+    g = n(788593),
+    m = n(507247),
+    x = n(985018),
+    f = n(461349),
+    p = n(105778);
 
-function y(e) {
+function h(e) {
     let {
         applicationId: t,
         userId: n,
         onClick: l
     } = e, {
-        coverImageUrl: i,
+        coverImageUrl: a,
         gameName: c,
-        isLoading: f
-    } = (0, p.A)(t), y = (0, a.bG)([u.A], () => u.A.suggestedFetchIsLoading), O = g.intl.formatToPlainString(g.t["3mb1s5"], {
+        isLoading: m
+    } = (0, d.A)(t), h = (0, s.bG)([u.A], () => u.A.suggestedFetchIsLoading), _ = x.intl.formatToPlainString(x.t["3mb1s5"], {
         game: c
     });
-    return f || y ? (0, r.jsx)("div", {
-        className: m.mD
-    }) : (0, r.jsx)(o.m, {
-        text: O,
+    return m || h ? (0, i.jsx)("div", {
+        className: f.mD
+    }) : (0, i.jsx)(r.m, {
+        text: _,
         ariaHidden: !0,
-        children: (0, r.jsxs)(s.DUT, {
-            className: b.c9,
+        children: (0, i.jsxs)(o.DUT, {
+            className: p.c9,
             onClick: l,
-            "aria-label": O,
-            children: [(0, r.jsx)(d.A, {
-                className: b.Iv,
-                imageSrc: i,
+            "aria-label": _,
+            children: [(0, i.jsx)(g.A, {
+                className: p.Iv,
+                imageSrc: a,
                 gameName: c,
                 applicationId: t,
                 userId: n,
                 disableInteraction: !0
-            }), (0, r.jsx)(s.pa$, {
+            }), (0, i.jsx)(o.pa$, {
                 size: "md",
-                className: b.Xv,
-                color: s.LU0.colors.WHITE
+                className: p.Xv,
+                color: o.LU0.colors.WHITE
             })]
         })
     })
 }
 
-function O(e) {
+function _(e) {
     let {
         userId: t,
         games: n,
         onDismiss: l,
-        onClick: a,
-        className: o
-    } = e, u = (0, c.GV)();
-    return (0, r.jsxs)("aside", {
-        className: i()(b.kL, o),
-        "aria-labelledby": u,
-        children: [(0, r.jsxs)("div", {
-            className: b.wx,
-            children: [(0, r.jsx)(s.DUT, {
-                className: b.r,
-                "aria-label": g.intl.string(g.t["pUR+3g"]),
+        onClick: s,
+        className: r
+    } = e, d = (0, c.GV)();
+    return (0, i.jsxs)("aside", {
+        className: a()(p.kL, r),
+        "aria-labelledby": d,
+        children: [(0, i.jsxs)("div", {
+            className: p.wx,
+            children: [(0, i.jsx)(o.DUT, {
+                className: p.r,
+                "aria-label": x.intl.string(x.t["pUR+3g"]),
                 onClick: l,
-                children: (0, r.jsx)(s.PGe, {
+                children: (0, i.jsx)(o.PGe, {
                     size: "sm",
                     color: "currentColor"
                 })
-            }), (0, r.jsx)(s.Heading, {
-                id: u,
+            }), (0, i.jsx)(o.Heading, {
+                id: d,
                 variant: "text-xs/medium",
                 color: "text-subtle",
-                children: g.intl.string(g.t.zMUr6Z)
+                children: x.intl.string(x.t.zMUr6Z)
             })]
-        }), (0, r.jsx)(f.A, {
+        }), (0, i.jsx)(m.A, {
             games: n,
             renderGame: e => {
                 let {
                     applicationId: n
                 } = e;
-                return (0, r.jsx)(y, {
-                    onClick: () => a(n),
+                return (0, i.jsx)(h, {
+                    onClick: () => s(n),
                     userId: t,
                     applicationId: n
                 })

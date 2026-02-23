@@ -1,30 +1,30 @@
 /** chunk id: 328717, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => m
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(43105),
+var r = n(265486),
     l = n(397927),
     a = n(793574),
     s = n(688810),
     o = n(927578),
-    c = n(511484),
-    u = n(473702),
-    d = n(788868),
-    p = n(49999),
+    d = n(511484),
+    c = n(473702),
+    u = n(788868),
+    A = n(49999),
     h = n(985018),
-    f = n(398932);
-let g = e => {
+    _ = n(398932);
+let m = e => {
     let {
         targetElementRef: t,
-        discountOffer: g,
-        premiumSubscription: m,
-        dismissCoachmark: A,
-        children: _
+        discountOffer: m,
+        premiumSubscription: p,
+        dismissCoachmark: g,
+        children: E
     } = e, {
-        analyticsLocations: b
-    } = (0, s.Ay)(a.A.CHURN_DISCOUNT_POPOVER), E = (0, c.iU)(d.gD.PREMIUM_MONTH_TIER_2, g, m), O = (0, r.jsx)(i.h, {
+        analyticsLocations: I
+    } = (0, s.Ay)(a.A.CHURN_DISCOUNT_POPOVER), f = (0, d.iU)(u.gD.PREMIUM_MONTH_TIER_2, m, p), C = (0, i.jsx)(r.h, {
         targetElementRef: t,
         position: "right",
         align: "top",
@@ -33,71 +33,43 @@ let g = e => {
             align: "start"
         },
         title: h.intl.format(h.t["3yZP0G"], {
-            percent: g.discount.amount
+            percent: m.discount.amount
         }).toString(),
         body: h.intl.format(h.t["3Q4wCy"], {
-            discountedPrice: E,
-            billingPeriod: (0, o.Ke)(g.discount.user_usage_limit_interval),
-            numMonths: g.discount.user_usage_limit
+            discountedPrice: f,
+            billingPeriod: (0, o.Ke)(m.discount.user_usage_limit_interval),
+            numMonths: m.discount.user_usage_limit
         }),
         graphic: {
             type: "image",
-            src: f.A
+            src: _.A
         },
         gradientColor: "nitro-pink",
         actions: [{
             text: h.intl.string(h.t.zrCzVB),
             variant: "expressive",
             onClick: () => {
-                A(p.i.TAKE_ACTION), (0, l.mMO)(async () => {
+                g(A.i.TAKE_ACTION), (0, l.mMO)(async () => {
                     let {
                         PremiumBrandRefreshSubscriptionCancellationModal: e
                     } = await n.e("72820").then(n.bind(n, 281439));
-                    return t => {
-                        var n, i;
-                        return (0, r.jsx)(e, (n = function(e) {
-                            for (var t = 1; t < arguments.length; t++) {
-                                var n = null != arguments[t] ? arguments[t] : {},
-                                    r = Object.keys(n);
-                                "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                                    return Object.getOwnPropertyDescriptor(n, e).enumerable
-                                }))), r.forEach(function(t) {
-                                    var r;
-                                    r = n[t], t in e ? Object.defineProperty(e, t, {
-                                        value: r,
-                                        enumerable: !0,
-                                        configurable: !0,
-                                        writable: !0
-                                    }) : e[t] = r
-                                })
-                            }
-                            return e
-                        }({}, t), i = i = {
-                            premiumSubscription: m,
-                            analyticsLocations: b,
-                            initialStep: u.g.CONFIRM_DISCOUNT
-                        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
-                            var n = Object.keys(e);
-                            if (Object.getOwnPropertySymbols) {
-                                var r = Object.getOwnPropertySymbols(e);
-                                n.push.apply(n, r)
-                            }
-                            return n
-                        })(Object(i)).forEach(function(e) {
-                            Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
-                        }), n))
-                    }
+                    return t => (0, i.jsx)(e, {
+                        ...t,
+                        premiumSubscription: p,
+                        analyticsLocations: I,
+                        initialStep: c.g.CONFIRM_DISCOUNT
+                    })
                 })
             },
             icon: l.tvc
         }],
         onRequestClose: () => {
-            A(p.i.USER_DISMISS)
+            g(A.i.USER_DISMISS)
         }
     });
-    return (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)("div", {
-            children: _
-        }), O]
+    return (0, i.jsxs)(i.Fragment, {
+        children: [(0, i.jsx)("div", {
+            children: E
+        }), C]
     })
 }

@@ -1,9 +1,10 @@
 /** chunk id: 286035, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    Zp: () => r,
-    k: () => l,
-    l0: () => i
+    Zp: () => i,
+    k: () => s,
+    l0: () => l
 });
-let r = "#83DDC5",
-    l = "#F47FFF",
-    i = "#FFDE4D"
+let i = "#83DDC5",
+    s = "#F47FFF",
+    l = "#FFDE4D"

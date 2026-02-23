@@ -1,98 +1,76 @@
-/** chunk id: 610136, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => g
-}), n(896048);
-var r, i = n(311907),
+/** chunk id: 610136, original params: t,e,n (module,exports,require) **/
+n.d(e, {
+    A: () => E
+});
+var i = n(311907),
     l = n(73153),
     a = n(49463),
-    u = n(617617),
-    o = n(71393),
-    c = n(576705),
-    d = n(903093);
+    d = n(617617),
+    r = n(71393),
+    u = n(576705),
+    s = n(903093);
+let c = {},
+    o = {};
 
-function s(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-let b = {},
-    f = {};
-
-function O() {
-    var e;
-    let t = null != (e = u.A.getGuildsProto()) ? e : {},
-        n = o.A.getGuildsArray();
-    for (let e of (f = {}, n)) f[e.id] = function(e) {
-        for (var t = 1; t < arguments.length; t++) {
-            var n = null != arguments[t] ? arguments[t] : {},
-                r = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                return Object.getOwnPropertyDescriptor(n, e).enumerable
-            }))), r.forEach(function(t) {
-                s(e, t, n[t])
-            })
-        }
-        return e
-    }({
-        guildId: e.id,
-        guildName: e.name
-    }, t[e.id])
+function D() {
+    let t = d.A.getGuildsProto() ?? {},
+        e = r.A.getGuildsArray();
+    for (let n of (o = {}, e)) o[n.id] = {
+        guildId: n.id,
+        guildName: n.name,
+        ...t[n.id]
+    }
 }
 
-function p(e) {
-    return null != e && Object.keys(e).length > 0 ? {
-        raidDetectedAt: e.raid_detected_at,
-        dmSpamDetectedAt: e.dm_spam_detected_at,
-        dmsDisabledUntil: e.dms_disabled_until,
-        invitesDisabledUntil: e.invites_disabled_until
+function A(t) {
+    return null != t && Object.keys(t).length > 0 ? {
+        raidDetectedAt: t.raid_detected_at,
+        dmSpamDetectedAt: t.dm_spam_detected_at,
+        dmsDisabledUntil: t.dms_disabled_until,
+        invitesDisabledUntil: t.invites_disabled_until
     } : null
 }
-class D extends(r = i.Ay.Store) {
+class _ extends i.Ay.Store {
+    static displayName = "GuildIncidentsStore";
     initialize() {
-        this.waitFor(u.A, o.A, c.A, a.A), this.syncWith([u.A, o.A, c.A, a.A], O)
+        this.waitFor(d.A, r.A, u.A, a.A), this.syncWith([d.A, r.A, u.A, a.A], D)
     }
-    getGuildIncident(e) {
-        return b[e]
+    getGuildIncident(t) {
+        return c[t]
     }
     getIncidentsByGuild() {
-        return b
+        return c
     }
     getGuildAlertSettings() {
-        return f
+        return o
     }
 }
-s(D, "displayName", "GuildIncidentsStore");
-let g = new D(l.h, {
-    CONNECTION_OPEN: function(e) {
-        for (let n of (b = {}, e.guilds)) {
-            var t;
-            let e = p(null == (t = n.properties) ? void 0 : t.incidents_data);
-            null != e && ((0, d.k$)(e) || (0, d._J)(e)) && (b[n.id] = e)
+let E = new _(l.h, {
+    CONNECTION_OPEN: function(t) {
+        for (let e of (c = {}, t.guilds)) {
+            let t = A(e.properties?.incidents_data);
+            null != t && ((0, s.k$)(t) || (0, s._J)(t)) && (c[e.id] = t)
         }
     },
-    GUILD_CREATE: function(e) {
-        var t;
+    GUILD_CREATE: function(t) {
         let {
-            guild: n
-        } = e, r = p(null == (t = n.properties) ? void 0 : t.incidents_data);
-        null != r && ((0, d.k$)(r) || (0, d._J)(r)) && (b[n.id] = r)
+            guild: e
+        } = t, n = A(e.properties?.incidents_data);
+        null != n && ((0, s.k$)(n) || (0, s._J)(n)) && (c[e.id] = n)
     },
-    GUILD_UPDATE: function(e) {
+    GUILD_UPDATE: function(t) {
         let {
-            guild: t
-        } = e, n = p(t.incidents_data);
-        null != n && ((0, d.k$)(n) || (0, d._J)(n)) ? b[t.id] = n : delete b[t.id]
+            guild: e
+        } = t, n = A(e.incidents_data);
+        null != n && ((0, s.k$)(n) || (0, s._J)(n)) ? c[e.id] = n : delete c[e.id]
     },
-    GUILD_DELETE: function(e) {
+    GUILD_DELETE: function(t) {
         let {
-            guild: t
-        } = e;
-        delete b[t.id]
+            guild: e
+        } = t;
+        delete c[e.id]
     },
-    LOGOUT: function(e) {
-        b = {}
+    LOGOUT: function(t) {
+        c = {}
     }
 })

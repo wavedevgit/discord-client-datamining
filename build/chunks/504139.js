@@ -1,30 +1,30 @@
 /** chunk id: 504139, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => d
+    A: () => c
 });
 var i = n(544420),
-    r = n(684013),
-    s = n(742984),
-    l = n(471024),
-    o = n(684748),
-    a = n(672396),
-    c = n(985018);
+    s = n(684013),
+    l = n(742984),
+    a = n(471024),
+    r = n(684748),
+    o = n(672396),
+    d = n(985018);
 
-function d(e, t, n, d, u) {
+function c(e, t, n, c, u) {
     if (null == t.activity) return null;
     let h = t.activity.type,
         p = u.session_id;
     if (null == p) return null;
     let {
-        icon: f,
-        title: g,
-        body: y
-    } = (0, s.TB)(e, t, n), {
-        trackView: A,
+        icon: A,
+        title: f,
+        body: g
+    } = (0, l.TB)(e, t, n), {
+        trackView: _,
         trackClick: m
-    } = (0, o.Y)(a.KS.ActivityInvite, {
-        notif_type: a.KS.ActivityInvite,
+    } = (0, r.Y)(o.KS.ActivityInvite, {
+        notif_type: o.KS.ActivityInvite,
         notif_user_id: n.id,
         message_id: t.id,
         message_type: t.type,
@@ -35,22 +35,22 @@ function d(e, t, n, d, u) {
         activity_name: u.name
     });
     return {
-        icon: f,
-        title: g,
-        body: y,
-        hint: e => (0, l.sI)(e, (0, o.J)(), c.t.aB5xLy),
+        icon: A,
+        title: f,
+        body: g,
+        hint: e => (0, a.sI)(e, (0, r.J)(), d.t.aB5xLy),
         onNotificationShow: () => {
-            A()
+            _()
         },
-        confirmText: c.intl.string(c.t.VJlc0S),
-        onConfirmClick: (s, l) => {
+        confirmText: d.intl.string(d.t.VJlc0S),
+        onConfirmClick: (l, a) => {
             i.A.join({
                 userId: n.id,
                 sessionId: p,
-                applicationId: d.id,
+                applicationId: c.id,
                 channelId: e.id,
                 messageId: t.id
-            }), r.A.updateNotificationStatus(l), m("join")
+            }), s.A.updateNotificationStatus(a), m("join")
         },
         onDismissClick: () => {
             m("dismiss")

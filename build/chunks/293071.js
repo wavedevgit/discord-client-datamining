@@ -1,57 +1,30 @@
-/** chunk id: 293071, original params: e,t,n (module,exports,require) **/
-n.r(t), n.d(t, {
+/** chunk id: 293071, original params: e,n,t (module,exports,require) **/
+t.r(n), t.d(n, {
     default: () => c
-}), n(896048);
-var l = n(627968);
-n(64700);
-var i = n(215530),
-    r = n(976270),
-    s = n(916217),
-    o = n(417021),
-    a = n(239606);
-
-function d(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            l = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), l.forEach(function(t) {
-            var l;
-            l = n[t], t in e ? Object.defineProperty(e, t, {
-                value: l,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = l
-        })
-    }
-    return e
-}
+});
+var i = t(627968);
+t(64700);
+var s = t(215530),
+    l = t(976270),
+    a = t(916217),
+    r = t(417021),
+    d = t(239606);
 
 function c(e) {
     let {
-        hideRestrictedProfile: t
-    } = e, n = function(e, t) {
-        if (null == e) return {};
-        var n, l, i, r = {};
-        if ("u" > typeof Reflect && Reflect.ownKeys) {
-            for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) l = n[i], !(t.indexOf(l) >= 0) && Object.prototype.propertyIsEnumerable.call(e, l) && (r[l] = e[l]);
-            return r
-        }
-        if (r = function(e, t) {
-                if (null == e) return {};
-                var n, l, i = {},
-                    r = Object.getOwnPropertyNames(e);
-                for (l = 0; l < r.length; l++) n = r[l], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
-                return i
-            }(e, t), Object.getOwnPropertySymbols)
-            for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) l = n[i], !(t.indexOf(l) >= 0) && Object.prototype.propertyIsEnumerable.call(e, l) && (r[l] = e[l]);
-        return r
-    }(e, ["hideRestrictedProfile"]), {
+        hideRestrictedProfile: n,
+        ...t
+    } = e, {
         user: c
-    } = n, [u, p] = (0, i.A)(c.id);
-    return u && !t ? (0, l.jsx)(o.A, d({
-        onHide: p
-    }, n)) : c.isNonUserBot() ? (0, l.jsx)(s.A, d({}, n)) : c.bot ? (0, l.jsx)(r.A, d({}, n)) : (0, l.jsx)(a.A, d({}, n))
+    } = t, [o, u] = (0, s.A)(c.id);
+    return o && !n ? (0, i.jsx)(r.A, {
+        onHide: u,
+        ...t
+    }) : c.isNonUserBot() ? (0, i.jsx)(a.A, {
+        ...t
+    }) : c.bot ? (0, i.jsx)(l.A, {
+        ...t
+    }) : (0, i.jsx)(d.A, {
+        ...t
+    })
 }

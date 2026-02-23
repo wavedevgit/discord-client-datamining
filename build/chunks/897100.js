@@ -1,10 +1,10 @@
-/** chunk id: 897100, original params: t,e,n (module,exports,require) **/
-n.d(e, {
-    A: () => i
+/** chunk id: 897100, original params: t,e,i (module,exports,require) **/
+i.d(e, {
+    A: () => s
 });
-var l = n(417597),
-    r = n(961350);
+var n = i(417597),
+    l = i(961350);
 
-function i() {
-    return (0, l.bG)([r.default], () => r.default.isAuthenticated())
+function s() {
+    return (0, n.bG)([l.default], () => l.default.isAuthenticated())
 }

@@ -1,51 +1,51 @@
-/** chunk id: 86944, original params: e,t,l (module,exports,require) **/
-l.d(t, {
-    K: () => g
-}), l(733351), l(591487), l(727858), l(747238);
-var n = l(64700),
-    r = l(311907),
-    a = l(39255),
-    s = l(696451),
-    o = l(317525),
-    i = l(695184),
-    u = l(257120),
-    c = l(495273),
-    h = l(737045);
+/** chunk id: 86944, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    K: () => m
+});
+var l = n(64700),
+    r = n(311907),
+    s = n(39255),
+    o = n(696451),
+    i = n(317525),
+    a = n(695184),
+    c = n(257120),
+    u = n(495273),
+    d = n(737045);
 
-function p(e) {
+function x(e) {
     let t = e.trim();
     return "@" === t[0] ? t.slice(1) : t
 }
 
-function d(e, t) {
-    let l = p(e);
-    return RegExp("".concat(u.A.escape(l)), "i").test(t)
+function h(e, t) {
+    let n = x(e);
+    return RegExp(`${c.A.escape(n)}`, "i").test(t)
 }
 
-function g(e, t, l, u) {
-    let g = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : null != t && t.isGuildStageVoice(),
-        f = (0, r.bG)([o.A], () => null != e ? o.A.getSortedRoles(e.id) : []),
-        _ = (0, r.yK)([s.Ay], () => null != e ? s.Ay.getMemberIds(e.id) : []),
-        b = n.useMemo(() => {
-            if (null == e || "@" === u[0]) return [];
-            if (g) return c.M2(e, f, null != t ? t : null, l, e => d(u, e));
-            let n = c.rT(e, f, null != t ? t : null, l, e => d(u, e));
-            return 0 === n.length && "" === u.trim() && 1 === f.length && (n = c.Vl()), n
-        }, [f, u, e, t, l, g]),
-        v = n.useMemo(() => null == e ? [] : c.Lq(_, null != t ? t : null, e, l, e => d(u, e)), [_, u, e, t, l]);
-    return n.useEffect(() => {
-        null != e && i.A.requestMembers(e.id, p(u), h.$N)
-    }, [u, e]), {
-        roles: b,
-        members: v,
-        getRichTag: n.useCallback(e => {
+function m(e, t, n, c) {
+    let m = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : null != t && t.isGuildStageVoice(),
+        w = (0, r.bG)([i.A], () => null != e ? i.A.getSortedRoles(e.id) : []),
+        g = (0, r.yK)([o.Ay], () => null != e ? o.Ay.getMemberIds(e.id) : []),
+        R = l.useMemo(() => {
+            if (null == e || "@" === c[0]) return [];
+            if (m) return u.M2(e, w, t ?? null, n, e => h(c, e));
+            let l = u.rT(e, w, t ?? null, n, e => h(c, e));
+            return 0 === l.length && "" === c.trim() && 1 === w.length && (l = u.Vl()), l
+        }, [w, c, e, t, n, m]),
+        S = l.useMemo(() => null == e ? [] : u.Lq(g, t ?? null, e, n, e => h(c, e)), [g, c, e, t, n]);
+    return l.useEffect(() => {
+        null != e && a.A.requestMembers(e.id, x(c), d.$N)
+    }, [c, e]), {
+        roles: R,
+        members: S,
+        getRichTag: l.useCallback(e => {
             let t = null;
-            return e.rowType === h.T6.ROLE || e.rowType === h.T6.ADMINISTRATOR ? t = {
-                type: a._.ROLE,
+            return e.rowType === d.T6.ROLE || e.rowType === d.T6.ADMINISTRATOR ? t = {
+                type: s._.ROLE,
                 label: e.name,
                 color: e.colorString
-            } : (e.rowType === h.T6.MEMBER || e.rowType === h.T6.OWNER) && (t = {
-                type: a._.MEMBER,
+            } : (e.rowType === d.T6.MEMBER || e.rowType === d.T6.OWNER) && (t = {
+                type: s._.MEMBER,
                 label: e.name,
                 avatar: e.avatarURL
             }), t

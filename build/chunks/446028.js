@@ -1,39 +1,39 @@
 /** chunk id: 446028, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => u
+    A: () => d
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(397927),
-    l = n(763754),
-    a = n(447215),
+var l = n(397927),
+    a = n(763754),
+    r = n(447215),
     s = n(888675),
     o = n(345981),
     c = n(657678);
 
-function u(e) {
+function d(e) {
     let {
         message: t,
         channel: n,
-        compact: u
-    } = e, d = (0, l.Ay)(t), p = t.application, m = (0, a.P)({
+        compact: d
+    } = e, u = (0, a.Ay)(t), m = t.application, _ = (0, r.P)({
         user: t.author,
         channelId: n.id,
         guildId: n.guild_id,
         messageId: t.id
     });
-    return (0, r.jsx)(s.A, {
-        iconNode: (0, r.jsx)(i.qyI, {
+    return (0, i.jsx)(s.A, {
+        iconNode: (0, i.jsx)(l.qyI, {
             size: "md",
             color: "currentColor",
             className: c.C
         }),
         timestamp: t.timestamp,
-        compact: u,
+        compact: d,
         children: (0, o.X)({
-            application: p,
-            username: d.nick,
-            usernameHook: m(d)
+            application: m,
+            username: u.nick,
+            usernameHook: _(u)
         })
     })
 }

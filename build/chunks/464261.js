@@ -1,128 +1,142 @@
 /** chunk id: 464261, original params: e,t,a (module,exports,require) **/
 a.d(t, {
-    C: () => N
-}), a(896048);
-var r, s = a(627968),
+    C: () => _
+});
+var s = a(627968),
     l = a(64700),
-    n = a(877227),
-    i = a(137540),
-    o = a(112895),
-    c = a(818348),
-    d = a(855522);
-
-function u(e, t, a) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: a,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = a, e
-}
-let _ = c.sE.MAIN_NAVIGATION_MENU;
-class N extends(r = l.PureComponent) {
+    i = a(877227),
+    r = a(137540),
+    n = a(112895),
+    o = a(818348),
+    c = a(855522);
+let d = o.sE.MAIN_NAVIGATION_MENU;
+class _ extends l.PureComponent {
+    static defaultProps = {
+        isMobile: !1,
+        isVisible: !0
+    };
+    state = {
+        sectionShown: null
+    };
+    closeSubNav = () => {
+        let {
+            sectionShown: e
+        } = this.state;
+        null !== e && this.setState({
+            sectionShown: null
+        })
+    };
+    openSubNav = e => {
+        let {
+            sectionShown: t
+        } = this.state;
+        t !== e && this.setState({
+            sectionShown: e
+        })
+    };
     render() {
-        let e, t = (0, n.dI)(this.context.router),
+        let e, t = (0, i.dI)(this.context.router),
             {
                 isMobile: a,
-                isVisible: r,
-                styles: l,
-                TrackClick: u,
-                avoidRouter: N
+                isVisible: l,
+                styles: _,
+                TrackClick: N,
+                avoidRouter: A
             } = this.props,
             {
-                sectionShown: A
+                sectionShown: u
             } = this.state;
-        return (e = null != d.A ? d.A.getLocale().toLowerCase() : "", [{
-            route: c.Tk.DOWNLOAD,
+        return (e = null != c.A ? c.A.getLocale().toLowerCase() : "", [{
+            route: o.Tk.DOWNLOAD,
             linkClicked: "download",
-            title: d.A.Messages.NAVIGATION_DOWNLOAD
+            title: c.A.Messages.NAVIGATION_DOWNLOAD
         }, {
-            route: c.Tk.NITRO,
+            route: o.Tk.NITRO,
             linkClicked: "nitro",
-            title: d.A.Messages.NAVIGATION_NITRO,
+            title: c.A.Messages.NAVIGATION_NITRO,
             external: !0
         }, {
-            route: c.Tk.JOBS,
+            route: o.Tk.JOBS,
             linkClicked: "jobs",
-            title: d.A.Messages.NAVIGATION_JOBS,
+            title: c.A.Messages.NAVIGATION_JOBS,
             external: !0
         }, {
-            title: d.A.Messages.NAVIGATION_DEVELOPERS,
+            title: c.A.Messages.NAVIGATION_DEVELOPERS,
             links: [{
-                route: c.Tk.RICH_PRESENCE,
+                route: o.Tk.RICH_PRESENCE,
                 linkClicked: "rich_presence",
-                title: d.A.Messages.NAVIGATION_RICH_PRESENCE
+                title: c.A.Messages.NAVIGATION_RICH_PRESENCE
             }, {
-                route: c.Tk.VERIFICATION,
+                route: o.Tk.VERIFICATION,
                 linkClicked: "verification",
-                title: d.A.Messages.NAVIGATION_VERIFICATION,
+                title: c.A.Messages.NAVIGATION_VERIFICATION,
                 external: !0
             }, {
-                route: c.qF.DEV_PORTAL,
+                route: o.qF.DEV_PORTAL,
                 linkClicked: "developers",
-                title: d.A.Messages.NAVIGATION_DEVELOPER_PORTAL,
+                title: c.A.Messages.NAVIGATION_DEVELOPER_PORTAL,
                 external: !0
             }, {
-                route: c.qF.DEV_PORTAL_DOCUMENTATION,
+                route: o.qF.DEV_PORTAL_DOCUMENTATION,
                 linkClicked: "documentation",
-                title: d.A.Messages.NAVIGATION_DOCUMENTATION,
+                title: c.A.Messages.NAVIGATION_DOCUMENTATION,
                 external: !0
             }]
         }, {
-            title: d.A.Messages.NAVIGATION_COMMUNITY,
+            title: c.A.Messages.NAVIGATION_COMMUNITY,
             links: [{
-                route: c.Tk.OPEN_SOURCE,
+                route: o.Tk.OPEN_SOURCE,
                 linkClicked: "open_source",
-                title: d.A.Messages.NAVIGATION_OPEN_SOURCE
+                title: c.A.Messages.NAVIGATION_OPEN_SOURCE
             }, {
-                route: c.Tk.PARTNERS,
+                route: o.Tk.PARTNERS,
                 linkClicked: "partners",
-                title: d.A.Messages.NAVIGATION_PARTNERS,
+                title: c.A.Messages.NAVIGATION_PARTNERS,
                 external: !0
             }, {
-                route: c.Tk.HYPESQUAD,
+                route: o.Tk.HYPESQUAD,
                 linkClicked: "hypesquad",
-                title: d.A.Messages.NAVIGATION_HYPESQUAD,
+                title: c.A.Messages.NAVIGATION_HYPESQUAD,
                 external: !0
             }, {
-                route: c.Tk.GUIDELINES,
+                route: o.Tk.GUIDELINES,
                 linkClicked: "guidelines",
-                title: d.A.Messages.NAVIGATION_GUIDELINES,
+                title: c.A.Messages.NAVIGATION_GUIDELINES,
                 external: !0
             }]
         }, {
-            title: d.A.Messages.NAVIGATION_SUPPORT,
+            title: c.A.Messages.NAVIGATION_SUPPORT,
             links: [{
-                route: "//support.discord.com/hc/".concat(e),
+                route: `//support.discord.com/hc/${e}`,
                 linkClicked: "helpandsupport",
-                title: d.A.Messages.NAVIGATION_HELP_AND_SUPPORT,
+                title: c.A.Messages.NAVIGATION_HELP_AND_SUPPORT,
                 external: !0
             }, {
-                route: c.qF.STATUS,
+                route: o.qF.STATUS,
                 linkClicked: "status",
-                title: d.A.Messages.NAVIGATION_STATUS,
+                title: c.A.Messages.NAVIGATION_STATUS,
                 external: !0
             }, {
-                route: c.Tk.SAFETY_LANDING,
+                route: o.Tk.SAFETY_LANDING,
                 linkClicked: "safetycenter",
-                title: d.A.Messages.NAVIGATION_SAFETY_CENTER,
+                title: c.A.Messages.NAVIGATION_SAFETY_CENTER,
                 external: !0
             }]
-        }]).map(e => null != e.links ? (0, s.jsx)(o.A, {
+        }]).map(e => null != e.links ? (0, s.jsx)(n.A, {
             title: e.title,
             links: e.links,
-            isOpen: A === e.title,
+            isOpen: u === e.title,
             isMobile: a,
-            avoidRouter: N,
-            TrackClick: u,
+            avoidRouter: A,
+            TrackClick: N,
             onClose: this.closeSubNav,
             onOpen: this.openSubNav
         }, e.title) : e.external && null != e.route ? (0, s.jsx)("li", {
-            className: l.listItemInactive,
+            className: _.listItemInactive,
             role: "none",
-            children: (0, s.jsx)(u, {
-                className: l.mainNavLink,
-                eventName: _,
+            children: (0, s.jsx)(N, {
+                className: _.mainNavLink,
+                eventName: d,
                 data: e.linkClicked ? {
                     linkClicked: e.linkClicked
                 } : {},
@@ -130,48 +144,25 @@ class N extends(r = l.PureComponent) {
                 rel: "me",
                 children: e.title
             })
-        }, "external_link_".concat(e.route)) : null != e.route ? (0, s.jsx)("li", {
-            className: t(e.route) ? l.listItemActive : l.listItemInactive,
+        }, `external_link_${e.route}`) : null != e.route ? (0, s.jsx)("li", {
+            className: t(e.route) ? _.listItemActive : _.listItemInactive,
             role: "none",
-            children: (0, s.jsx)(i.A, {
-                avoidRouter: N,
+            children: (0, s.jsx)(r.A, {
+                avoidRouter: A,
                 to: e.route,
-                from: c.sE.MAIN_NAVIGATION_MENU,
-                tabIndex: r ? 0 : -1,
+                from: o.sE.MAIN_NAVIGATION_MENU,
+                tabIndex: l ? 0 : -1,
                 role: "menuitem",
-                children: (0, s.jsx)(u, {
+                children: (0, s.jsx)(N, {
                     tag: "span",
-                    className: l.mainNavLink,
-                    eventName: _,
+                    className: _.mainNavLink,
+                    eventName: d,
                     data: {
                         linkClicked: e.linkClicked
                     },
                     children: e.title
                 })
             })
-        }, "link_".concat(e.route)) : [])
-    }
-    constructor(...e) {
-        super(...e), u(this, "state", {
-            sectionShown: null
-        }), u(this, "closeSubNav", () => {
-            let {
-                sectionShown: e
-            } = this.state;
-            null !== e && this.setState({
-                sectionShown: null
-            })
-        }), u(this, "openSubNav", e => {
-            let {
-                sectionShown: t
-            } = this.state;
-            t !== e && this.setState({
-                sectionShown: e
-            })
-        })
+        }, `link_${e.route}`) : [])
     }
 }
-u(N, "defaultProps", {
-    isMobile: !1,
-    isVisible: !0
-})

@@ -2,11 +2,11 @@
 n.d(t, {
     A: () => c
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(397927),
-    l = n(763754),
-    a = n(888675),
+var l = n(397927),
+    a = n(763754),
+    r = n(888675),
     s = n(985018),
     o = n(355200);
 
@@ -15,20 +15,20 @@ function c(e) {
         message: t,
         compact: n,
         usernameHook: c
-    } = e, u = (0, l.Ay)(t), d = c(u), p = s.intl.format(s.t.Yy6vLs, {
-        username: u.nick,
-        usernameHook: d,
+    } = e, d = (0, a.Ay)(t), u = c(d), m = s.intl.format(s.t.Yy6vLs, {
+        username: d.nick,
+        usernameHook: u,
         topic: t.content
     });
-    return (0, r.jsx)(a.A, {
+    return (0, i.jsx)(r.A, {
         className: o.d,
-        iconNode: (0, r.jsx)(i.qux, {
+        iconNode: (0, i.jsx)(l.qux, {
             size: "md",
             color: "currentColor"
         }),
         iconContainerClassName: o.z,
         timestamp: t.timestamp,
         compact: n,
-        children: p
+        children: m
     })
 }

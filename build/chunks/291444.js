@@ -1,215 +1,215 @@
 /** chunk id: 291444, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => G
+    A: () => M
 });
-var r = n(627968),
-    i = n(64700),
+var i = n(627968),
+    s = n(64700),
     l = n(503698),
-    s = n.n(l),
+    r = n.n(l),
     a = n(311907),
     o = n(554146),
-    c = n(421380),
-    d = n(397927),
+    d = n(421380),
+    c = n(397927),
     u = n(83257),
-    g = n(826673),
-    m = n(532197),
-    p = n(203982),
-    f = n(555337),
-    h = n(155008),
-    b = n(418448),
-    x = n(527678),
-    j = n(923121),
-    _ = n(199940),
-    O = n(107795),
-    v = n(655943),
-    y = n(287479),
-    A = n(400812),
-    E = n(72533),
-    N = n(729984),
-    S = n(193477),
-    I = n(692453),
-    C = n(307209),
-    T = n(360827),
-    P = n(307879),
-    w = n(652215),
-    R = n(985018),
+    m = n(826673),
+    g = n(532197),
+    x = n(203982),
+    h = n(555337),
+    _ = n(155008),
+    A = n(418448),
+    p = n(527678),
+    f = n(923121),
+    j = n(199940),
+    N = n(107795),
+    E = n(655943),
+    b = n(287479),
+    T = n(400812),
+    C = n(72533),
+    I = n(729984),
+    v = n(193477),
+    S = n(692453),
+    y = n(307209),
+    R = n(360827),
+    O = n(307879),
+    G = n(652215),
+    L = n(985018),
     D = n(361870);
 
-function G() {
-    let e = (0, a.bG)([f.A], () => f.A.getGuildId());
-    return null == e ? null : (0, r.jsx)(L, {
+function M() {
+    let e = (0, a.bG)([h.A], () => h.A.getGuildId());
+    return null == e ? null : (0, i.jsx)(k, {
         guildId: e
     })
 }
 
-function L(e) {
+function k(e) {
     let t, {
             guildId: n
         } = e,
-        l = (0, a.bG)([y.A], () => y.A.getCurrentPage()),
-        f = (0, a.bG)([y.A], () => {
-            let e = (0, A.ql)(l);
-            return null != e && !y.A.isEducationUpsellDismissed(e)
+        l = (0, a.bG)([b.A], () => b.A.getCurrentPage()),
+        h = (0, a.bG)([b.A], () => {
+            let e = (0, T.ql)(l);
+            return null != e && !b.A.isEducationUpsellDismissed(e)
         }),
-        v = (0, E.A)(n),
-        G = !v && f;
-    switch (i.useEffect(() => {
-            (0, g.Dr)(o.M.COMMUNITY_ONBOARDING_NEW_BADGE)
+        E = (0, C.A)(n),
+        M = !E && h;
+    switch (s.useEffect(() => {
+            (0, m.Dr)(o.M.COMMUNITY_ONBOARDING_NEW_BADGE)
         }, []), l) {
-        case A.Hy.LANDING:
-            t = v ? (0, r.jsx)(C.A, {
+        case T.Hy.LANDING:
+            t = E ? (0, i.jsx)(y.A, {
                 completed: !0,
                 guildId: n
-            }) : (0, r.jsx)(P.A, {});
+            }) : (0, i.jsx)(O.A, {});
             break;
-        case A.Hy.SAFETY_CHECK:
-            t = (0, r.jsx)(h.A, {});
+        case T.Hy.SAFETY_CHECK:
+            t = (0, i.jsx)(_.A, {});
             break;
-        case A.Hy.DEFAULT_CHANNELS:
-            t = (0, r.jsx)(N.A, {
-                saveOnClose: !v
+        case T.Hy.DEFAULT_CHANNELS:
+            t = (0, i.jsx)(I.A, {
+                saveOnClose: !E
             });
             break;
-        case A.Hy.CUSTOMIZATION_QUESTIONS:
-            t = (0, r.jsx)(T.Ay, {
-                saveOnClose: !v
+        case T.Hy.CUSTOMIZATION_QUESTIONS:
+            t = (0, i.jsx)(R.Ay, {
+                saveOnClose: !E
             });
             break;
-        case A.Hy.HOME_SETTINGS:
-            t = (0, r.jsx)(S.A, {
-                saveOnClose: !v
+        case T.Hy.HOME_SETTINGS:
+            t = (0, i.jsx)(v.A, {
+                saveOnClose: !E
             });
             break;
-        case A.Hy.CONNECTIONS:
-            t = (0, r.jsx)(I.A, {
-                saveOnClose: !v
+        case T.Hy.CONNECTIONS:
+            t = (0, i.jsx)(S.A, {
+                saveOnClose: !E
             });
             break;
-        case A.Hy.REVIEW:
-            t = (0, r.jsx)(C.A, {
-                completed: v,
+        case T.Hy.REVIEW:
+            t = (0, i.jsx)(y.A, {
+                completed: E,
                 guildId: n
             })
     }
-    return (0, r.jsxs)("div", {
-        className: s()(D.Jp, {
-            [D.Q3]: G
+    return (0, i.jsxs)("div", {
+        className: r()(D.Jp, {
+            [D.Q3]: M
         }),
-        children: [!v && l !== A.Hy.LANDING && (0, r.jsx)(k, {
-            setOnboardingStep: x.e_,
+        children: [!E && l !== T.Hy.LANDING && (0, i.jsx)(U, {
+            setOnboardingStep: p.e_,
             page: l,
             homeSettingsEnabled: !0
-        }), v && l !== A.Hy.LANDING && (0, r.jsx)("div", {
-            children: (0, r.jsxs)(c.$n, {
+        }), E && l !== T.Hy.LANDING && (0, i.jsx)("div", {
+            children: (0, i.jsxs)(d.$n, {
                 innerClassName: D.Gv,
-                look: c.$n.Looks.BLANK,
-                size: c.$n.Sizes.MIN,
+                look: d.$n.Looks.BLANK,
+                size: d.$n.Sizes.MIN,
                 onClick: () => {
-                    if (y.A.hasChanges() && !y.A.canCloseEarly()) {
-                        p._.dispatch(w.jej.SHAKE_APP, {
+                    if (b.A.hasChanges() && !b.A.canCloseEarly()) {
+                        x._.dispatch(G.jej.SHAKE_APP, {
                             duration: 300,
                             intensity: u.n3
-                        }), p._.dispatch(w.jej.EMPHASIZE_NOTICE);
+                        }), x._.dispatch(G.jej.EMPHASIZE_NOTICE);
                         return
-                    }(0, O.P3)(), (0, b.nx)(), (0, _.sk)(), (0, j.p2)(), (0, x.e_)(A.Hy.LANDING)
+                    }(0, N.P3)(), (0, A.nx)(), (0, j.sk)(), (0, f.p2)(), (0, p.e_)(T.Hy.LANDING)
                 },
-                children: [(0, r.jsx)(m.A, {
+                children: [(0, i.jsx)(g.A, {
                     className: D.UE,
-                    direction: m.A.Directions.LEFT
-                }), (0, r.jsx)(d.Text, {
+                    direction: g.A.Directions.LEFT
+                }), (0, i.jsx)(c.Text, {
                     variant: "text-sm/semibold",
                     color: "interactive-text-default",
-                    children: R.intl.string(R.t["13/7kX"])
+                    children: L.intl.string(L.t["13/7kX"])
                 })]
             })
-        }), (0, r.jsx)("div", {
+        }), (0, i.jsx)("div", {
             children: t
         })]
     })
 }
 
-function k(e) {
+function U(e) {
     let {
         page: t,
         setOnboardingStep: n,
-        homeSettingsEnabled: i
-    } = e, l = (0, a.bG)([y.A], () => y.A.hasErrors()), o = e => {
+        homeSettingsEnabled: s
+    } = e, l = (0, a.bG)([b.A], () => b.A.hasErrors()), o = e => {
         if (!l) return () => n(e)
-    }, c = (0, a.bG)([v.A], () => v.A.advancedMode);
-    return (0, r.jsxs)("div", {
+    }, d = (0, a.bG)([E.A], () => E.A.advancedMode);
+    return (0, i.jsxs)("div", {
         className: D.L$,
-        children: [(0, r.jsxs)(d.DUT, {
-            className: s()(D.G9, D.zp),
-            onClick: o(A.Hy.SAFETY_CHECK),
-            children: [(0, r.jsx)("div", {
-                className: s()(D.hr, {
-                    [D.Ou]: t === A.Hy.SAFETY_CHECK
+        children: [(0, i.jsxs)(c.DUT, {
+            className: r()(D.G9, D.zp),
+            onClick: o(T.Hy.SAFETY_CHECK),
+            children: [(0, i.jsx)("div", {
+                className: r()(D.hr, {
+                    [D.Ou]: t === T.Hy.SAFETY_CHECK
                 })
-            }), (0, r.jsx)(d.Text, {
-                color: t === A.Hy.SAFETY_CHECK ? "text-brand" : "text-muted",
+            }), (0, i.jsx)(c.Text, {
+                color: t === T.Hy.SAFETY_CHECK ? "text-brand" : "text-muted",
                 variant: "text-xs/medium",
-                children: R.intl.format(R.t.Me5Mma, {
+                children: L.intl.format(L.t.Me5Mma, {
                     stepNumber: 1
                 })
             })]
-        }), (0, r.jsxs)(d.DUT, {
-            className: s()(D.G9, D.zp),
-            onClick: o(A.Hy.DEFAULT_CHANNELS),
-            children: [(0, r.jsx)("div", {
-                className: s()(D.hr, {
-                    [D.Ou]: t === A.Hy.DEFAULT_CHANNELS
+        }), (0, i.jsxs)(c.DUT, {
+            className: r()(D.G9, D.zp),
+            onClick: o(T.Hy.DEFAULT_CHANNELS),
+            children: [(0, i.jsx)("div", {
+                className: r()(D.hr, {
+                    [D.Ou]: t === T.Hy.DEFAULT_CHANNELS
                 })
-            }), (0, r.jsx)(d.Text, {
-                color: t === A.Hy.DEFAULT_CHANNELS ? "text-brand" : "text-muted",
+            }), (0, i.jsx)(c.Text, {
+                color: t === T.Hy.DEFAULT_CHANNELS ? "text-brand" : "text-muted",
                 variant: "text-xs/medium",
-                children: c ? R.intl.formatToPlainString(R.t["8mGhOy"], {
+                children: d ? L.intl.formatToPlainString(L.t["8mGhOy"], {
                     stepNumber: 2
-                }) : R.intl.formatToPlainString(R.t.vxpuTd, {
+                }) : L.intl.formatToPlainString(L.t.vxpuTd, {
                     stepNumber: 2
                 })
             })]
-        }), (0, r.jsxs)(d.DUT, {
-            className: s()(D.G9, D.zp),
-            onClick: o(A.Hy.CUSTOMIZATION_QUESTIONS),
-            children: [(0, r.jsx)("div", {
-                className: s()(D.hr, {
-                    [D.Ou]: t === A.Hy.CUSTOMIZATION_QUESTIONS
+        }), (0, i.jsxs)(c.DUT, {
+            className: r()(D.G9, D.zp),
+            onClick: o(T.Hy.CUSTOMIZATION_QUESTIONS),
+            children: [(0, i.jsx)("div", {
+                className: r()(D.hr, {
+                    [D.Ou]: t === T.Hy.CUSTOMIZATION_QUESTIONS
                 })
-            }), (0, r.jsx)(d.Text, {
-                color: t === A.Hy.CUSTOMIZATION_QUESTIONS ? "text-brand" : "text-muted",
+            }), (0, i.jsx)(c.Text, {
+                color: t === T.Hy.CUSTOMIZATION_QUESTIONS ? "text-brand" : "text-muted",
                 variant: "text-xs/medium",
-                children: c ? R.intl.formatToPlainString(R.t.vb6J5g, {
+                children: d ? L.intl.formatToPlainString(L.t.vb6J5g, {
                     stepNumber: 3
-                }) : R.intl.formatToPlainString(R.t.ZpdQqK, {
+                }) : L.intl.formatToPlainString(L.t.ZpdQqK, {
                     stepNumber: 3
                 })
             })]
-        }), i && (0, r.jsxs)(d.DUT, {
-            className: s()(D.G9, D.zp),
-            onClick: o(A.Hy.HOME_SETTINGS),
-            children: [(0, r.jsx)("div", {
-                className: s()(D.hr, {
-                    [D.Ou]: t === A.Hy.HOME_SETTINGS
+        }), s && (0, i.jsxs)(c.DUT, {
+            className: r()(D.G9, D.zp),
+            onClick: o(T.Hy.HOME_SETTINGS),
+            children: [(0, i.jsx)("div", {
+                className: r()(D.hr, {
+                    [D.Ou]: t === T.Hy.HOME_SETTINGS
                 })
-            }), (0, r.jsx)(d.Text, {
-                color: t === A.Hy.HOME_SETTINGS ? "text-brand" : "text-muted",
+            }), (0, i.jsx)(c.Text, {
+                color: t === T.Hy.HOME_SETTINGS ? "text-brand" : "text-muted",
                 variant: "text-xs/medium",
-                children: R.intl.format(R.t.KVOukh, {
+                children: L.intl.format(L.t.KVOukh, {
                     stepNumber: 4
                 })
             })]
-        }), (0, r.jsxs)("div", {
+        }), (0, i.jsxs)("div", {
             className: D.G9,
-            children: [(0, r.jsx)("div", {
-                className: s()(D.hr, {
-                    [D.Ou]: t === A.Hy.REVIEW
+            children: [(0, i.jsx)("div", {
+                className: r()(D.hr, {
+                    [D.Ou]: t === T.Hy.REVIEW
                 })
-            }), (0, r.jsx)(d.Text, {
-                color: t === A.Hy.REVIEW ? "text-brand" : "text-muted",
+            }), (0, i.jsx)(c.Text, {
+                color: t === T.Hy.REVIEW ? "text-brand" : "text-muted",
                 variant: "text-xs/medium",
-                children: R.intl.format(R.t.oVzkiA, {
-                    stepNumber: 3 + +!!i + 1
+                children: L.intl.format(L.t.oVzkiA, {
+                    stepNumber: 3 + +!!s + 1
                 })
             })]
         })]

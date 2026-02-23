@@ -1,29 +1,29 @@
 /** chunk id: 790743, original params: t,a,i (module,exports,require) **/
 i.d(a, {
-    default: () => r
-}), i(896048), i(321073);
+    default: () => l
+}), i(321073);
 var n = i(627968),
-    l = i(64700),
-    s = i(158954),
-    e = i(985018);
+    s = i(64700),
+    e = i(158954),
+    r = i(985018);
 
-function r(t) {
+function l(t) {
     let {
         transitionState: a,
         onClose: i,
-        title: r,
+        title: l,
         body: c,
         cta: o,
         closeLabel: u,
         onConfirm: d
-    } = t, [p, h] = l.useState(!1), k = async () => {
+    } = t, [p, h] = s.useState(!1), k = async () => {
         h(!0);
         try {
             await d(), i()
         } finally {
             h(!1)
         }
-    }, y = null != r ? r : e.intl.string(e.t.D94rwS), C = [];
+    }, y = l ?? r.intl.string(r.t.D94rwS), C = [];
     return null != u && C.push({
         variant: "secondary",
         text: u,
@@ -33,7 +33,7 @@ function r(t) {
         text: o,
         onClick: k,
         loading: p
-    }), (0, n.jsx)(s.Modal, {
+    }), (0, n.jsx)(e.Modal, {
         title: y,
         actions: C,
         transitionState: a,

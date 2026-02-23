@@ -1,7 +1,7 @@
 /** chunk id: 347951, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     Fi: () => s,
-    Ig: () => u,
+    Ig: () => E,
     Wr: () => o
 });
 var l = n(311907),
@@ -15,10 +15,10 @@ function s(e) {
 
 function o(e) {
     let t = (0, l.bG)([r.A], () => null != e ? r.A.getGuildIncident(e.id) : null);
-    return (null == e ? void 0 : e.features.has(i.GuildFeatures.INVITES_DISABLED)) || (null == t ? void 0 : t.invitesDisabledUntil) != null && new Date(t.invitesDisabledUntil) > new Date
+    return e?.features.has(i.GuildFeatures.INVITES_DISABLED) || t?.invitesDisabledUntil != null && new Date(t.invitesDisabledUntil) > new Date
 }
 
-function u(e) {
+function E(e) {
     let t = s(e),
         n = o(e);
     return t && n

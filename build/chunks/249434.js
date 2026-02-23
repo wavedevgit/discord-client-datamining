@@ -1,49 +1,32 @@
 /** chunk id: 249434, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => m
+    A: () => g
 });
-var r = n(627968),
-    i = n(64700),
+var i = n(627968),
+    s = n(64700),
     l = n(311907),
-    s = n(397927),
+    r = n(397927),
     a = n(946274),
     o = n(555337),
-    c = n(339984),
-    d = n(985018),
+    d = n(339984),
+    c = n(985018),
     u = n(577332);
 
-function g(e) {
+function m(e) {
     let {
         profile: t,
         handleIconChange: l,
         canManageGuild: o
-    } = e, g = i.useCallback(() => {
+    } = e, m = s.useCallback(() => {
         l(null)
-    }, [l]), m = i.useCallback((e, t) => {
-        (0, s.mMO)(async () => {
+    }, [l]), g = s.useCallback((e, t) => {
+        (0, r.mMO)(async () => {
             let {
-                default: i
-            } = await Promise.all([n.e("35929"), n.e("79149"), n.e("74571"), n.e("1580")]).then(n.bind(n, 142630));
-            return n => (0, r.jsx)(i, function(e) {
-                for (var t = 1; t < arguments.length; t++) {
-                    var n = null != arguments[t] ? arguments[t] : {},
-                        r = Object.keys(n);
-                    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                        return Object.getOwnPropertyDescriptor(n, e).enumerable
-                    }))), r.forEach(function(t) {
-                        var r;
-                        r = n[t], t in e ? Object.defineProperty(e, t, {
-                            value: r,
-                            enumerable: !0,
-                            configurable: !0,
-                            writable: !0
-                        }) : e[t] = r
-                    })
-                }
-                return e
-            }({
-                uploadType: c.HL.GUILD_ICON,
+                default: s
+            } = await Promise.all([n.e("59701"), n.e("35929"), n.e("74571"), n.e("94073")]).then(n.bind(n, 142630));
+            return n => (0, i.jsx)(s, {
+                uploadType: d.HL.GUILD_ICON,
                 imageUri: e,
                 file: t,
                 onCrop: e => {
@@ -51,54 +34,55 @@ function g(e) {
                         imageUri: t
                     } = e;
                     return l(t)
-                }
-            }, n))
+                },
+                ...n
+            })
         }, {})
     }, [l]);
-    return (0, r.jsxs)("div", {
+    return (0, i.jsxs)("div", {
         className: u.Uo,
-        children: [(0, r.jsx)(s.vN3, {
+        children: [(0, i.jsx)(r.vN3, {
             within: !0,
-            children: (0, r.jsxs)("div", {
+            children: (0, i.jsxs)("div", {
                 className: u.UD,
-                children: [(0, r.jsx)(s.Button, {
+                children: [(0, i.jsx)(r.Button, {
                     tabIndex: -1,
                     size: "sm",
                     variant: "primary",
                     disabled: !o,
-                    text: d.intl.string(d.t.r3JdsT)
-                }), (0, r.jsx)(a.Ay, {
+                    text: c.intl.string(c.t.r3JdsT)
+                }), (0, i.jsx)(a.Ay, {
                     tabIndex: 0,
-                    onChange: m,
+                    onChange: g,
                     disabled: !o
                 })]
             })
-        }), null != t.icon ? (0, r.jsx)(s.Button, {
+        }), null != t.icon ? (0, i.jsx)(r.Button, {
             variant: "critical-secondary",
             size: "sm",
-            text: d.intl.string(d.t.x8AlTm),
-            onClick: g,
+            text: c.intl.string(c.t.x8AlTm),
+            onClick: m,
             disabled: !o
         }) : null]
     })
 }
 
-function m(e) {
+function g(e) {
     let {
         profile: t,
         canManageGuild: n,
-        onIconChange: i
+        onIconChange: s
     } = e, a = (0, l.bG)([o.A], () => o.A.getError("icon"));
-    return (0, r.jsx)("section", {
+    return (0, i.jsx)("section", {
         className: u.kL,
-        children: (0, r.jsx)(s.D0$, {
-            label: d.intl.string(d.t.FkQnxJ),
-            description: d.intl.string(d.t.KjkA0W),
+        children: (0, i.jsx)(r.D0$, {
+            label: c.intl.string(c.t.FkQnxJ),
+            description: c.intl.string(c.t.KjkA0W),
             errorMessage: a,
-            children: (0, r.jsx)(g, {
+            children: (0, i.jsx)(m, {
                 profile: t,
                 canManageGuild: n,
-                handleIconChange: i
+                handleIconChange: s
             })
         })
     })

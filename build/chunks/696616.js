@@ -2,29 +2,28 @@
 n.d(t, {
     A: () => _
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(93857),
-    l = n(871930),
-    s = n(578746),
-    a = n(975571),
+var s = n(93857),
+    a = n(871930),
+    r = n(578746),
+    l = n(975571),
     o = n(500470),
     c = n(652215),
     d = n(842130),
     u = n(985018);
 
 function _() {
-    var e;
-    let t = null != (e = (0, o.k)()) ? e : void 0,
-        n = i.kf.useControlledSetting(t);
-    return (0, r.jsx)(l.h, {
-        children: (0, r.jsx)(s.Ay, {
+    let e = (0, o.k)() ?? void 0,
+        t = s.kf.useControlledSetting(e);
+    return (0, i.jsx)(a.h, {
+        children: (0, i.jsx)(r.Ay, {
             title: u.intl.string(d.default.ZhaNu8),
             note: u.intl.format(d.default.cnCK6b, {
-                helpdeskArticle: a.A.getArticleURL(c.MVz.QUESTS_PRIVACY_CONTROLS)
+                helpdeskArticle: l.A.getArticleURL(c.MVz.QUESTS_PRIVACY_CONTROLS)
             }),
-            value: !n,
-            onChange: e => i.kf.updateControlledSetting(t, !e)
+            value: !t,
+            onChange: t => s.kf.updateControlledSetting(e, !t)
         })
     })
 }

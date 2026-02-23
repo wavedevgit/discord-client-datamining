@@ -1,88 +1,84 @@
 /** chunk id: 997590, original params: e,t,r (module,exports,require) **/
 r.d(t, {
     A: () => h
-}), r(638769), r(321073), r(896048), r(735438);
-var i, n, o = r(311907),
+}), r(321073), r(735438);
+var i = r(311907),
     a = r(73153),
     s = r(403362),
-    l = r(324580),
-    c = r(985018);
-let d = null,
+    n = r(324580),
+    o = r(985018);
+let l = null,
+    c = [],
     _ = [],
-    u = [],
-    p = {};
-class E extends(i = o.Ay.Store) {
+    d = {};
+class E extends i.Ay.Store {
+    static displayName = "GuildDiscoveryCategoryStore";
     getPrimaryCategories() {
-        return _
+        return c
     }
     getDiscoveryCategories() {
-        let e = l.FZ.map(e => u.find(t => t.categoryId === e)).filter(s.Vq);
+        let e = n.FZ.map(e => _.find(t => t.categoryId === e)).filter(s.Vq);
         return [{
-            categoryId: l.Iq,
-            name: c.intl.string(c.t.Ym2Ri6)
+            categoryId: n.Iq,
+            name: o.intl.string(o.t.Ym2Ri6)
         }, ...e]
     }
     getClanDiscoveryCategories() {
-        let e = l.FZ.map(e => u.find(t => t.categoryId === e)).filter(s.Vq);
+        let e = n.FZ.map(e => _.find(t => t.categoryId === e)).filter(s.Vq);
         return [{
-            categoryId: l.Iq,
-            name: c.intl.string(c.t.QToH29)
+            categoryId: n.Iq,
+            name: o.intl.string(o.t.QToH29)
         }, ...e]
     }
     getAllCategories() {
-        return u
+        return _
     }
     getFetchedLocale() {
-        return d
+        return l
     }
     getCategoryName(e) {
-        return e === l.Iq ? c.intl.string(c.t.Ym2Ri6) : p[e]
+        return e === n.Iq ? o.intl.string(o.t.Ym2Ri6) : d[e]
     }
-}(n = "displayName") in E ? Object.defineProperty(E, n, {
-    value: "GuildDiscoveryCategoryStore",
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
-}) : E[n] = "GuildDiscoveryCategoryStore";
+}
 let h = new E(a.h, {
     GUILD_DISCOVERY_CATEGORY_FETCH_SUCCESS: function(e) {
         let t, {
                 categories: r,
                 locale: i
             } = e,
-            n = [],
-            o = [];
+            a = [],
+            s = [];
         if (r.sort((e, t) => e.name < t.name ? -1 : 1).forEach(e => {
                 let {
                     id: r,
                     name: i,
-                    is_primary: a
+                    is_primary: o
                 } = e;
-                if (r !== l.ig) {
-                    if (r === l.v) {
+                if (r !== n.ig) {
+                    if (r === n.v) {
                         t = {
                             categoryId: r,
                             name: i
                         };
                         return
-                    }!0 === a && n.push({
+                    }!0 === o && a.push({
                         categoryId: r,
                         name: i
-                    }), o.push({
+                    }), s.push({
                         categoryId: r,
                         name: i
-                    }), p[r] = i
+                    }), d[r] = i
                 }
             }), null != t) {
             let {
                 categoryId: e,
                 name: r
             } = t;
-            n.push({
+            a.push({
                 categoryId: e,
                 name: r
-            }), p[e] = r
+            }), d[e] = r
         }
-        d = i, _ = n, u = o
+        l = i, c = a, _ = s
     }
 })

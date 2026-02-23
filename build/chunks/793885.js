@@ -17,7 +17,7 @@ function d(e) {
         children: null != d ? (0, n.jsx)("div", {
             className: i.i,
             style: {
-                backgroundImage: "url(".concat(d, ")")
+                backgroundImage: `url(${d})`
             }
         }) : null
     })

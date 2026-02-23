@@ -6,29 +6,29 @@ var n = i(311907),
     l = i(290595),
     s = i(171316),
     r = i(419954),
-    u = i(153488),
-    a = i(975571),
+    a = i(153488),
+    u = i(975571),
     o = i(780964),
     d = i(997913),
-    T = i(652215),
-    A = i(985018);
+    A = i(652215),
+    T = i(985018);
 let S = (0, r.zD)(o.X.DATA_USAGE_PERSONALIZATION_SETTING, {
-    useTitle: () => A.intl.string(A.t.MNKzyg),
-    useSubtitle: () => A.intl.format(A.t["eQL/Mr"], {
-        helpdeskArticle: a.A.getArticleURL(T.MVz.DATA_USED_FOR_RECOMMENDED)
+    useTitle: () => T.intl.string(T.t.MNKzyg),
+    useSubtitle: () => T.intl.format(T.t["eQL/Mr"], {
+        helpdeskArticle: u.A.getArticleURL(A.MVz.DATA_USED_FOR_RECOMMENDED)
     }),
     useValue: function() {
-        return (0, n.bG)([u.A], () => u.A.hasConsented(T.YAq.PERSONALIZATION))
+        return (0, n.bG)([a.A], () => a.A.hasConsented(A.YAq.PERSONALIZATION))
     },
     setValue: function(t) {
-        t ? (0, l.U)([T.YAq.PERSONALIZATION], []).catch(d.i) : (0, d.O)({
-            header: A.intl.string(A.t["9SNpzv"]),
-            confirmText: A.intl.string(A.t["9g5UGw"]),
-            cancelText: A.intl.string(A.t["+ZLPw9"]),
+        t ? (0, l.U)([A.YAq.PERSONALIZATION], []).catch(d.i) : (0, d.O)({
+            header: T.intl.string(T.t["9SNpzv"]),
+            confirmText: T.intl.string(T.t["9g5UGw"]),
+            cancelText: T.intl.string(T.t["+ZLPw9"]),
             onConfirm: () => {
-                (0, l.U)([], [T.YAq.PERSONALIZATION]).catch(d.i)
+                (0, l.U)([], [A.YAq.PERSONALIZATION]).catch(d.i)
             },
-            body: A.intl.string(A.t.gJvDDh)
+            body: T.intl.string(T.t.gJvDDh)
         })
     },
     useDisabled: s.uM

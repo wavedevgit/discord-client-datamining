@@ -1,4 +1,5 @@
 /** chunk id: 357976, original params: e,t,n (module,exports,require) **/
+"use strict";
 e.exports = {
     u: "forumPost__7d15e",
     k: "container__7d15e"

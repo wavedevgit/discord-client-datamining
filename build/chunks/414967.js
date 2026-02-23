@@ -1,130 +1,115 @@
 /** chunk id: 414967, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => L
-}), n(896048);
-var r = n(627968);
+    A: () => b
+});
+var i = n(627968);
 n(64700);
-var i = n(607399),
-    l = n(877624),
-    a = n(554146),
-    s = n(397927),
-    o = n(73153),
-    c = n(272355),
-    u = n(826673),
-    d = n(579364),
-    p = n(835095),
-    h = n(287809),
-    f = n(816733),
-    g = n(927578),
+var r = n(877624),
+    l = n(554146),
+    a = n(397927),
+    s = n(73153),
+    o = n(272355),
+    d = n(826673),
+    c = n(579364),
+    u = n(835095),
+    A = n(287809),
+    h = n(816733),
+    _ = n(927578),
     m = n(536194),
-    A = n(661191),
-    _ = n(40185),
-    b = n(89366),
+    p = n(40185),
+    g = n(89366),
     E = n(637073),
-    O = n(91435),
-    y = n(89465),
-    I = n(50283),
-    v = n(412260),
-    S = n(852218),
-    C = n(231265),
+    I = n(89465),
+    f = n(412260),
+    C = n(852218),
+    T = n(231265),
     N = n(93751),
-    T = n(979080),
-    j = n(788868);
-
-function x(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-let P = "PremiumServerDriveAnnouncementModal";
-class w extends c.A {
+    S = n(979080),
+    x = n(788868);
+let v = "PremiumServerDriveAnnouncementModal";
+class y extends o.A {
     _initialize() {
-        o.h.subscribe("PREMIUM_MARKETING_DATA_READY", this.mayShowAnnouncementModal), o.h.subscribe("PREMIUM_MARKETING_PREVIEW", this.handlePreview), o.h.subscribe("ACTIVE_PROMOTIONS_FETCH_SUCCESS", this.handleActivePromotionsFetchSuccess), o.h.subscribe("BILLING_USER_OFFER_FETCH_SUCCESS", this.handleUserOfferFetchSuccess)
+        s.h.subscribe("PREMIUM_MARKETING_DATA_READY", this.mayShowAnnouncementModal), s.h.subscribe("PREMIUM_MARKETING_PREVIEW", this.handlePreview), s.h.subscribe("ACTIVE_PROMOTIONS_FETCH_SUCCESS", this.handleActivePromotionsFetchSuccess), s.h.subscribe("BILLING_USER_OFFER_FETCH_SUCCESS", this.handleUserOfferFetchSuccess)
     }
     _terminate() {
-        o.h.unsubscribe("PREMIUM_MARKETING_DATA_READY", this.mayShowAnnouncementModal), o.h.unsubscribe("PREMIUM_MARKETING_PREVIEW", this.handlePreview), o.h.unsubscribe("ACTIVE_PROMOTIONS_FETCH_SUCCESS", this.handleActivePromotionsFetchSuccess), o.h.unsubscribe("BILLING_USER_OFFER_FETCH_SUCCESS", this.handleUserOfferFetchSuccess)
+        s.h.unsubscribe("PREMIUM_MARKETING_DATA_READY", this.mayShowAnnouncementModal), s.h.unsubscribe("PREMIUM_MARKETING_PREVIEW", this.handlePreview), s.h.unsubscribe("ACTIVE_PROMOTIONS_FETCH_SUCCESS", this.handleActivePromotionsFetchSuccess), s.h.unsubscribe("BILLING_USER_OFFER_FETCH_SUCCESS", this.handleUserOfferFetchSuccess)
     }
-    constructor(...e) {
-        super(...e), x(this, "maybeShowAnnouncementModalFromPromotions", e => {
-            for (let t of e)
-                if (null != t.marketingComponents) {
-                    if (null != t.trialId) {
-                        let e = f.A.getUserTrialOffer(t.trialId);
-                        if (null == e || null != e.expires_at && Date.parse(e.expires_at) < Date.now()) continue
-                    }
-                    for (let e of t.marketingComponents)
-                        if (e.component_type === l.C.ANNOUNCEMENT_MODAL) return void this.maybeOpenServerDriveAnnouncementModal(e.id, e.promotion_id, e.properties, !1)
+    maybeShowAnnouncementModalFromPromotions = e => {
+        for (let t of e)
+            if (null != t.marketingComponents) {
+                if (null != t.trialId) {
+                    let e = h.A.getUserTrialOffer(t.trialId);
+                    if (null == e || null != e.expires_at && Date.parse(e.expires_at) < Date.now()) continue
                 }
-        }), x(this, "handleActivePromotionsFetchSuccess", e => {
-            let {
-                promotions: t
-            } = e;
-            this.maybeShowAnnouncementModalFromPromotions(t.map(e => p.A.createFromServer(e)))
-        }), x(this, "handleUserOfferFetchSuccess", e => {
-            let {
-                userTrialOffer: t
-            } = e;
-            null != t && this.maybeShowAnnouncementModalFromPromotions(Object.values(v.A.promotionsByType[S.pt.MARKETING_MOMENT]))
-        }), x(this, "maybeOpenServerDriveAnnouncementModal", async (e, t, i, l) => {
-            if ((0, s.kBI)(P)) return !1;
-            let a = (0, T.H)({
-                promotionId: t,
-                content: i,
-                isPreview: l
-            });
-            if (null != a) return (!1 !== l || (null == a ? void 0 : a.contentIdentifier) !== "summer_bogo_content" || !!await (0, C.C)()) && ((0, s.mMO)(async () => {
-                let {
-                    default: i
-                } = await Promise.resolve().then(n.bind(n, 979080));
-                return n => (0, r.jsx)(i, {
-                    renderModalProps: n,
-                    componentId: e,
-                    promotionId: t,
-                    properties: a
-                })
-            }, {
-                modalKey: P
-            }), !0);
-            return !1
-        }), x(this, "handlePreview", e => {
-            let {
-                data: t
-            } = e;
-            this.maybeOpenServerDriveAnnouncementModal(t.id, t.promotion_id, t.properties, !0)
-        }), x(this, "getOfferFromStore", () => {
-            let e = h.default.getCurrentUser();
-            if ((0, g.TW)(e)) return {};
-            let t = [j.TU, j.KG, j.lj, j.HF].map(e => f.A.getUserDiscountOffer(e)).filter(e => null != e && !(0, d.w)(e)).shift();
-            if (null != t) return {
-                userDiscountOffer: t
-            };
-            let n = (0, b.qD)();
-            return null != n ? {
-                userTrialOffer: n
-            } : {}
-        }), x(this, "mayShowAnnouncementModal", async () => {
-            if (await (0, _.hb)(), m.P.isDisallowPopupsSet()) return;
-            let e = this.getOfferFromStore(),
-                t = y.A.getCurrentConfig({
-                    location: "announcementManager"
-                }, {
-                    autoTrackExposure: !1
-                }).enabled,
-                n = (0, O.r)({
-                    location: "mayShowAnnouncementModal"
-                }),
-                r = (0, u.k8)(a.M.Q2_2025_MARKETING_MOMENT_FOLLOW_UP_MODAL),
-                l = h.default.getCurrentUser();
-            if (!t || r || (0, s.ueM)() || (0, g.TW)(l) || await (0, E.m)(e.userTrialOffer) && (0, N.A)({
-                    upsellType: j.e.REVERSE_TRIAL_FOLLOWUP_UPSELL
-                }), (null == l || l.verified) && !(0, s.ueM)() && !i.Fr && !n) {
-                for (let t of (await (0, I._)(e)))
-                    if (await this.maybeOpenServerDriveAnnouncementModal("", A.default.fromTimestamp(Date.now()), t, !1)) break
+                for (let e of t.marketingComponents)
+                    if (e.component_type === r.C.ANNOUNCEMENT_MODAL) return void this.maybeOpenServerDriveAnnouncementModal(e.id, e.promotion_id, e.properties, !1)
             }
-        })
+    };
+    handleActivePromotionsFetchSuccess = e => {
+        let {
+            promotions: t
+        } = e;
+        this.maybeShowAnnouncementModalFromPromotions(t.map(e => u.A.createFromServer(e)))
+    };
+    handleUserOfferFetchSuccess = e => {
+        let {
+            userTrialOffer: t
+        } = e;
+        null != t && this.maybeShowAnnouncementModalFromPromotions(Object.values(f.A.promotionsByType[C.pt.MARKETING_MOMENT]))
+    };
+    maybeOpenServerDriveAnnouncementModal = async (e, t, r, l) => {
+        if ((0, a.kBI)(v)) return !1;
+        let s = (0, S.H)({
+            promotionId: t,
+            content: r,
+            isPreview: l
+        });
+        if (null != s) return (!1 !== l || s?.contentIdentifier !== "summer_bogo_content" || !!await (0, T.C)()) && ((0, a.mMO)(async () => {
+            let {
+                default: r
+            } = await Promise.resolve().then(n.bind(n, 979080));
+            return n => (0, i.jsx)(r, {
+                renderModalProps: n,
+                componentId: e,
+                promotionId: t,
+                properties: s
+            })
+        }, {
+            modalKey: v
+        }), !0);
+        return !1
+    };
+    handlePreview = e => {
+        let {
+            data: t
+        } = e;
+        this.maybeOpenServerDriveAnnouncementModal(t.id, t.promotion_id, t.properties, !0)
+    };
+    getOfferFromStore = () => {
+        let e = A.default.getCurrentUser();
+        if ((0, _.TW)(e)) return {};
+        let t = [x.TU, x.KG, x.lj, x.HF].map(e => h.A.getUserDiscountOffer(e)).filter(e => null != e && !(0, c.w)(e)).shift();
+        if (null != t) return {
+            userDiscountOffer: t
+        };
+        let n = (0, g.qD)();
+        return null != n ? {
+            userTrialOffer: n
+        } : {}
+    };
+    mayShowAnnouncementModal = async () => {
+        if (await (0, p.hb)(), m.P.isDisallowPopupsSet()) return;
+        let e = this.getOfferFromStore(),
+            t = I.A.getCurrentConfig({
+                location: "announcementManager"
+            }, {
+                autoTrackExposure: !1
+            }).enabled,
+            n = (0, d.k8)(l.M.Q2_2025_MARKETING_MOMENT_FOLLOW_UP_MODAL),
+            i = A.default.getCurrentUser();
+        if (!t || n || (0, a.ueM)() || (0, _.TW)(i) || await (0, E.m)(e.userTrialOffer) && (0, N.A)({
+                upsellType: x.e.REVERSE_TRIAL_FOLLOWUP_UPSELL
+            }), null != i && !i.verified) return
     }
 }
-let L = new w
+let b = new y

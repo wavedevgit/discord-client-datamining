@@ -1,45 +1,45 @@
 /** chunk id: 110434, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => m
-}), n(65821);
-var r, i = n(627968);
+    A: () => p
+});
+var i, r = n(627968);
 n(64700);
 var l = n(503698),
     a = n.n(l),
     s = n(311907),
     o = n(397927),
-    c = n(966327),
-    u = n(531685),
-    d = n(985018),
-    p = n(208744),
-    h = ((r = h || {})[r.STAFF_NOTES = 1] = "STAFF_NOTES", r);
-let f = s.Ay.connectStores([u.A], () => ({
-        animate: u.A.isFocused()
+    d = n(966327),
+    c = n(531685),
+    u = n(985018),
+    A = n(208744),
+    h = ((i = h || {})[i.STAFF_NOTES = 1] = "STAFF_NOTES", i);
+let _ = s.Ay.connectStores([c.A], () => ({
+        animate: c.A.isFocused()
     }))(e => {
         let {
             user: t,
             className: n,
-            animate: r
+            animate: i
         } = e;
-        return (0, i.jsxs)("div", {
-            className: a()(p.g7, n),
-            children: [(0, i.jsx)(c.A, {
+        return (0, r.jsxs)("div", {
+            className: a()(A.g7, n),
+            children: [(0, r.jsx)(d.A, {
                 size: o._3J.SIZE_32,
                 user: t,
-                animate: r
-            }), (0, i.jsxs)("div", {
-                className: p.TK,
-                children: [(0, i.jsx)("div", {
-                    className: p.Pf,
-                    children: d.intl.string(d.t.vmzMZC)
-                }), (0, i.jsx)("div", {
-                    className: p.Xh,
+                animate: i
+            }), (0, r.jsxs)("div", {
+                className: A.TK,
+                children: [(0, r.jsx)("div", {
+                    className: A.Pf,
+                    children: u.intl.string(u.t.vmzMZC)
+                }), (0, r.jsx)("div", {
+                    className: A.Xh,
                     children: t.username
                 })]
             })]
         })
     }),
-    g = e => {
+    m = e => {
         let {
             data: t,
             className: n
@@ -48,20 +48,20 @@ let f = s.Ay.connectStores([u.A], () => ({
             if (null == t.staffNotes) return null;
             let {
                 user: e,
-                content: r
+                content: i
             } = t.staffNotes;
-            return null == e ? null : (0, i.jsxs)("div", {
+            return null == e ? null : (0, r.jsxs)("div", {
                 className: n,
-                children: [(0, i.jsx)(f, {
+                children: [(0, r.jsx)(_, {
                     user: e,
-                    className: p.wx
-                }), (0, i.jsx)("div", {
-                    className: p.Q2,
-                    children: r
+                    className: A.wx
+                }), (0, r.jsx)("div", {
+                    className: A.Q2,
+                    children: i
                 })]
             })
         }
         throw Error("Unknown type")
     };
-g.Types = h;
-let m = g
+m.Types = h;
+let p = m

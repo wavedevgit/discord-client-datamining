@@ -1,41 +1,41 @@
 /** chunk id: 332921, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => m
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(311907),
-    l = n(397927),
-    s = n(670470),
-    a = n(253932),
+var s = n(311907),
+    a = n(397927),
+    r = n(670470),
+    l = n(253932),
     o = n(430452),
     c = n(274372),
     d = n(915618),
     u = n(399925),
     _ = n(985018);
 
-function p() {
-    let e = a.Q$.useSetting(),
+function m() {
+    let e = l.Q$.useSetting(),
         {
             enableViewerClipping: t
-        } = s.A.useExperiment({
+        } = r.A.useExperiment({
             location: "Clips Settings"
         }, {
             autoTrackExposure: !1
         }),
         {
             viewerClipsEnabled: n
-        } = (0, i.cf)([c.A], () => c.A.getSettings()),
-        p = (0, d.A)(o.A);
-    return (0, r.jsxs)(l.lVW, {
-        children: [(0, r.jsx)(l.dOG, {
+        } = (0, s.cf)([c.A], () => c.A.getSettings()),
+        m = (0, d.A)(o.Ay);
+    return (0, i.jsxs)(a.lVW, {
+        children: [(0, i.jsx)(a.dOG, {
             label: _.intl.string(_.t.AGDDkH),
             description: _.intl.string(_.t["wW9/zQ"]),
             checked: e,
             onChange: e => u.eQ({
                 allowVoiceRecording: e
             })
-        }), t && p && (0, r.jsx)(l.dOG, {
+        }), t && m && (0, i.jsx)(a.dOG, {
             label: _.intl.string(_.t.NWw7kY),
             description: _.intl.string(_.t["0vjy8N"]),
             checked: n,

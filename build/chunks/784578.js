@@ -28,7 +28,7 @@ function g(t) {
         onClose: p,
         title: c.intl.string(c.t["NR/zrG"]),
         subtitle: c.intl.format(c.t.ukclM1, {
-            underageMessage: null != e ? e : c.intl.string(c.t.WqEH4D),
+            underageMessage: e ?? c.intl.string(c.t.WqEH4D),
             days: 30
         }),
         actions: [{

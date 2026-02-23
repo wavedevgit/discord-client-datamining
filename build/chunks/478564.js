@@ -1,31 +1,32 @@
 /** chunk id: 478564, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => h
-}), n(896048);
-var r = n(64700),
-    l = n(735438),
-    i = n.n(l),
-    s = n(311907),
+    A: () => A
+});
+var i = n(64700),
+    s = n(735438),
+    l = n.n(s),
+    r = n(311907),
     a = n(568598),
     o = n(313961),
     c = n(916023),
-    u = n(501838),
-    d = n(188275),
-    p = n(806931);
+    d = n(501838),
+    u = n(188275),
+    h = n(806931);
 
-function h(e) {
+function A(e) {
     let {
         location: t,
         channelId: n
-    } = e, l = (0, c.kt)({
+    } = e, s = (0, c.kt)({
         location: t
-    }), [h] = (0, s.bG)([o.A], () => null != n ? [o.A.getParticipants(n), o.A.getParticipantsVersion(n)] : [
+    }), [A] = (0, r.bG)([o.A], () => null != n ? [o.A.getParticipants(n), o.A.getParticipantsVersion(n)] : [
         [], 0
-    ], [n], a.hS), g = r.useMemo(() => i().uniq(h.filter(e => (0, p.Xw)(e) || (0, p.Ay)(e)).map(e => e.user.id)), [h]), f = (0, u.gT)({
-        gameIds: d.sQ,
-        userIds: g
-    }), m = (0, u.hJ)({
-        gameIds: d.sQ
+    ], [n], a.hS), p = i.useMemo(() => l().uniq(A.filter(e => (0, h.Xw)(e) || (0, h.Ay)(e)).map(e => e.user.id)), [A]), g = (0, d.gT)({
+        gameIds: u.sQ,
+        userIds: p
+    }), m = (0, d.hJ)({
+        gameIds: u.sQ
     });
-    return l && (m || f)
+    return s && (m || g)
 }

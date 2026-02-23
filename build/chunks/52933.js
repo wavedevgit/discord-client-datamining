@@ -1,35 +1,35 @@
 /** chunk id: 52933, original params: e,t,s (module,exports,require) **/
 s.d(t, {
     Ay: () => f,
-    BA: () => p
+    BA: () => A
 });
-var i = s(627968);
+var n = s(627968);
 s(64700);
-var n = s(503698),
-    r = s.n(n),
-    l = s(827734),
-    a = s(990078),
+var l = s(503698),
+    a = s.n(l),
+    i = s(827734),
+    r = s(990078),
     o = s(397927),
     d = s(422844),
-    h = s(435470),
-    c = s(376310),
-    u = s(746080),
-    g = s(985018),
-    m = s(558997),
-    v = s(902049);
+    c = s(435470),
+    u = s(376310),
+    h = s(746080),
+    m = s(985018),
+    g = s(558997),
+    x = s(902049);
 
-function p(e) {
+function A(e) {
     let {
         channel: t,
         isNew: s
-    } = e, i = (0, h.kt)(t), n = i.slice(void 0, 3), r = i.slice(3), l = i.length > 3 ? i.length - 3 : 0, a = t.hasFlag(u.lx.PINNED), o = n.length > 0 || a || s;
+    } = e, n = (0, c.kt)(t), l = n.slice(void 0, 3), a = n.slice(3), i = n.length > 3 ? n.length - 3 : 0, r = t.hasFlag(h.lx.PINNED), o = l.length > 0 || r || s;
     return {
-        shownTags: n,
-        remainingTags: r,
-        moreTagsCount: l,
-        isPinned: a,
+        shownTags: l,
+        remainingTags: a,
+        moreTagsCount: i,
+        isPinned: r,
         shouldRenderTagsRow: o,
-        forumPostContainsTags: i.length > 0
+        forumPostContainsTags: n.length > 0
     }
 }
 
@@ -37,47 +37,47 @@ function f(e) {
     let {
         channel: t,
         isNew: s,
-        tagsClassName: n,
-        className: h
+        tagsClassName: l,
+        className: c
     } = e, {
-        shownTags: u,
+        shownTags: h,
         remainingTags: f,
-        moreTagsCount: x,
-        isPinned: A,
-        shouldRenderTagsRow: b
-    } = p({
+        moreTagsCount: p,
+        isPinned: C,
+        shouldRenderTagsRow: S
+    } = A({
         channel: t,
         isNew: s
     }), {
-        tagFilter: j
+        tagFilter: v
     } = (0, d.R)(t.id);
-    return b ? (0, i.jsxs)("div", {
-        className: r()(v._A, h),
-        children: [s ? (0, i.jsx)(o.LpS, {
-            className: r()(m.Ad, m.PP),
-            color: l.A.unsafe_rawColors.BRAND_260.css,
-            text: g.intl.string(g.t.y2b7CA)
-        }) : null, A && (0, i.jsx)("div", {
-            className: v.Ne,
-            children: (0, i.jsx)(a.m, {
-                text: g.intl.string(g.t["1QLRYb"]),
-                children: (0, i.jsx)(o.tsw, {
+    return S ? (0, n.jsxs)("div", {
+        className: a()(x._A, c),
+        children: [s ? (0, n.jsx)(o.LpS, {
+            className: a()(g.Ad, g.PP),
+            color: i.A.unsafe_rawColors.BRAND_260.css,
+            text: m.intl.string(m.t.y2b7CA)
+        }) : null, C && (0, n.jsx)("div", {
+            className: x.Ne,
+            children: (0, n.jsx)(r.m, {
+                text: m.intl.string(m.t["1QLRYb"]),
+                children: (0, n.jsx)(o.tsw, {
                     size: "custom",
                     width: 16,
                     height: 16,
                     color: "white"
                 })
             })
-        }), u.map(e => (0, i.jsx)(c.A, {
+        }), h.map(e => (0, n.jsx)(u.A, {
             tag: e,
-            size: c.A.Sizes.SMALL,
-            className: r()(n, {
-                [v.At]: j.has(e.id)
+            size: u.A.Sizes.SMALL,
+            className: a()(l, {
+                [x.At]: v.has(e.id)
             })
-        }, e.id)), x > 0 ? (0, i.jsx)(c.q, {
+        }, e.id)), p > 0 ? (0, n.jsx)(u.q, {
             tags: f,
-            count: x,
-            size: c.A.Sizes.SMALL
+            count: p,
+            size: u.A.Sizes.SMALL
         }) : null]
     }) : null
 }

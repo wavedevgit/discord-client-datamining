@@ -1,7 +1,7 @@
 /** chunk id: 847722, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    default: () => y7
+    default: () => y9
 });
 var r, a, o = n(664326),
     i = n(762951),
@@ -111,12 +111,12 @@ var r, a, o = n(664326),
     e2 = n.n(e1),
     e4 = n(207110),
     e8 = n.n(e4),
-    e3 = n(582617),
+    e3 = n(804998),
     e6 = n.n(e3),
     e5 = n(954785),
-    e9 = n.n(e5),
-    e7 = n(291056),
-    te = n.n(e7),
+    e7 = n.n(e5),
+    e9 = n(291056),
+    te = n.n(e9),
     tt = n(431700),
     tn = n.n(tt),
     tr = n(290845),
@@ -1019,7 +1019,7 @@ function t6(e) {
 function t5() {
     for (var e; e = tz.shift();)
         if (e.__P && e.__H) try {
-            e.__H.__h.forEach(t7), e.__H.__h.forEach(ne), e.__H.__h = []
+            e.__H.__h.forEach(t9), e.__H.__h.forEach(ne), e.__H.__h = []
         } catch (t) {
             e.__H.__h = [], el.fF.__e(t, e.__v)
         }
@@ -1031,23 +1031,23 @@ el.fF.__b = function(e) {
     var t = (tj = e.__c).__H;
     t && (tU === tj ? (t.__h = [], tj.__h = [], t.__.forEach(function(e) {
         e.__N && (e.__ = e.__N), e.__V = tW, e.__N = e.i = void 0
-    })) : (t.__h.forEach(t7), t.__h.forEach(ne), t.__h = [])), tU = tj
+    })) : (t.__h.forEach(t9), t.__h.forEach(ne), t.__h = [])), tU = tj
 }, el.fF.diffed = function(e) {
     tY && tY(e);
     var t = e.__c;
     t && t.__H && (t.__H.__h.length && (1 !== tz.push(t) && tq === el.fF.requestAnimationFrame || ((tq = el.fF.requestAnimationFrame) || function(e) {
         var t, n = function() {
-                clearTimeout(r), t9 && cancelAnimationFrame(t), setTimeout(e)
+                clearTimeout(r), t7 && cancelAnimationFrame(t), setTimeout(e)
             },
             r = setTimeout(n, 100);
-        t9 && (t = requestAnimationFrame(n))
+        t7 && (t = requestAnimationFrame(n))
     })(t5)), t.__H.__.forEach(function(e) {
         e.i && (e.__H = e.i), e.__V !== tW && (e.__ = e.__V), e.i = void 0, e.__V = tW
     })), tU = tj = null
 }, el.fF.__c = function(e, t) {
     t.some(function(e) {
         try {
-            e.__h.forEach(t7), e.__h = e.__h.filter(function(e) {
+            e.__h.forEach(t9), e.__h = e.__h.filter(function(e) {
                 return !e.__ || ne(e)
             })
         } catch (n) {
@@ -1061,15 +1061,15 @@ el.fF.__b = function(e) {
     var t, n = e.__c;
     n && n.__H && (n.__H.__.forEach(function(e) {
         try {
-            t7(e)
+            t9(e)
         } catch (e) {
             t = e
         }
     }), n.__H = void 0, t && el.fF.__e(t, n.__v))
 };
-var t9 = "function" == typeof requestAnimationFrame;
+var t7 = "function" == typeof requestAnimationFrame;
 
-function t7(e) {
+function t9(e) {
     var t = tj,
         n = e.__c;
     "function" == typeof n && (e.__c = void 0, n()), tj = t
@@ -2026,8 +2026,8 @@ var nX, n0, n1 = ["bcmc"],
     n3 = "data-cse",
     n6 = "data-info",
     n5 = "data-uid",
-    n9 = ["accel", "pulse", "star", "nyce"],
-    n7 = {
+    n7 = ["accel", "pulse", "star", "nyce"],
+    n9 = {
         visa: "VISA",
         mc: "MasterCard",
         amex: "American Express",
@@ -3127,13 +3127,13 @@ function r5(e) {
     }))
 }
 
-function r9(e) {
+function r7(e) {
     return (0, el.h)(rK, (0, er.A)({}, e, {
         type: "tel"
     }))
 }
 
-function r7(e, t) {
+function r9(e, t) {
     var n = c()(e);
     if (d()) {
         var r = d()(e);
@@ -3147,9 +3147,9 @@ function r7(e, t) {
 function ae(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n, r, a = null != arguments[t] ? arguments[t] : {};
-        t % 2 ? N()(n = r7(Object(a), !0)).call(n, function(t) {
+        t % 2 ? N()(n = r9(Object(a), !0)).call(n, function(t) {
             (0, w.A)(e, t, a[t])
-        }) : m() ? v()(e, m()(a)) : N()(r = r7(Object(a))).call(r, function(t) {
+        }) : m() ? v()(e, m()(a)) : N()(r = r9(Object(a))).call(r, function(t) {
             b()(e, t, h()(a, t))
         })
     }
@@ -3296,7 +3296,7 @@ function ai(e) {
         dir: "ltr",
         name: "telephoneNumber",
         i18n: s
-    }, (0, el.h)(r9, {
+    }, (0, el.h)(r7, {
         name: b("telephoneNumber"),
         value: f.telephoneNumber,
         classNameModifiers: ["telephoneNumber"],
@@ -4207,12 +4207,12 @@ function a5(e) {
         }
     }))
 }
-var a9 = ["filterable", "toggleButtonRef"];
+var a7 = ["filterable", "toggleButtonRef"];
 
-function a7(e) {
+function a9(e) {
     var t = e.filterable,
         n = e.toggleButtonRef,
-        r = (0, _.A)(e, a9);
+        r = (0, _.A)(e, a7);
     return t ? (0, el.h)("div", (0, er.A)({}, r, {
         ref: n
     })) : (0, el.h)("button", (0, er.A)({
@@ -4237,7 +4237,7 @@ function oe(e) {
             t.preventDefault(), document.activeElement === e.filterInputRef.current ? e.showList || e.toggleList(t) : e.filterInputRef.current && e.filterInputRef.current.focus()
         } : e.toggleList,
         d = i ? null : e.onFocus;
-    return (0, el.h)(a7, {
+    return (0, el.h)(a9, {
         className: ep()((t = {
             "adyen-checkout__dropdown__button": !0
         }, (0, w.A)(t, "Select-module_adyen-checkout__dropdown__button__yTyqq", !0), (0, w.A)(t, "adyen-checkout__dropdown__button--readonly", i), (0, w.A)(t, "adyen-checkout__dropdown__button--active", s), (0, w.A)(t, "Select-module_adyen-checkout__dropdown__button--active__Ej-JR", s), (0, w.A)(t, "adyen-checkout__dropdown__button--invalid", e.isInvalid), (0, w.A)(t, "adyen-checkout__dropdown__button--valid", e.isValid), (0, w.A)(t, "adyen-checkout__dropdown__button--disabled", a.disabled), t)),
@@ -6042,7 +6042,7 @@ var o5 = {
     error: "consent.checkbox.invalid"
 };
 
-function o9(e) {
+function o7(e) {
     var t, n, r = e.countryCode,
         a = e.visibility,
         o = nc().i18n,
@@ -6257,7 +6257,7 @@ function o9(e) {
         label: o.get("confirmPurchase")
     }))
 }
-var o7 = function(e) {
+var o9 = function(e) {
         (0, eo.A)(r, el.uA);
         var t, n = (t = function() {
             if ("u" < typeof Reflect || !en() || en().sham) return !1;
@@ -6458,13 +6458,13 @@ var iu = function(e) {
     }, {
         key: "render",
         value: function() {
-            return (0, el.h)(o7, {
+            return (0, el.h)(o9, {
                 i18n: this.props.i18n,
                 loadingContext: this.props.loadingContext,
                 resources: this.resources
             }, (0, el.h)(is, {
                 srPanel: this.props.modules.srPanel
-            }, (0, el.h)(o9, (0, er.A)({
+            }, (0, el.h)(o7, (0, er.A)({
                 setComponentRef: this.setComponentRef
             }, this.props, this.state, {
                 onChange: this.setState,
@@ -7098,7 +7098,7 @@ var iL = function(e) {
         key: "render",
         value: function() {
             var e = this;
-            return (0, el.h)(o7, {
+            return (0, el.h)(o9, {
                 i18n: this.props.i18n,
                 loadingContext: this.props.loadingContext,
                 resources: this.resources
@@ -7719,7 +7719,7 @@ function i3(e) {
 var i6 = function(e) {
     var t, n = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
     try {
-        t = new(e9())(e)
+        t = new(e7())(e)
     } catch (e) {
         return !1
     }
@@ -7746,9 +7746,9 @@ function i5(e) {
         }
     }))) : null
 }
-var i9 = ["items", "placeholder", "issuer", "highlightedIds"];
+var i7 = ["items", "placeholder", "issuer", "highlightedIds"];
 
-function i7(e, t) {
+function i9(e, t) {
     var n = c()(e);
     if (d()) {
         var r = d()(e);
@@ -7784,7 +7784,7 @@ function sa(e) {
         o = e.issuer,
         i = e.highlightedIds,
         s = void 0 === i ? [] : i,
-        l = (0, _.A)(e, i9),
+        l = (0, _.A)(e, i7),
         c = nc().i18n,
         u = rj({
             schema: st,
@@ -7838,9 +7838,9 @@ function sa(e) {
         return E()(s).call(s, t.id) && e.highlightedItems.push(function(e) {
             for (var t = 1; t < arguments.length; t++) {
                 var n, r, a = null != arguments[t] ? arguments[t] : {};
-                t % 2 ? N()(n = i7(Object(a), !0)).call(n, function(t) {
+                t % 2 ? N()(n = i9(Object(a), !0)).call(n, function(t) {
                     (0, w.A)(e, t, a[t])
-                }) : m() ? v()(e, m()(a)) : N()(r = i7(Object(a))).call(r, function(t) {
+                }) : m() ? v()(e, m()(a)) : N()(r = i9(Object(a))).call(r, function(t) {
                     b()(e, t, h()(a, t))
                 })
             }
@@ -8060,7 +8060,7 @@ var sh = function(e) {
         key: "render",
         value: function() {
             var e = this;
-            return (0, el.h)(o7, {
+            return (0, el.h)(o9, {
                 i18n: this.props.i18n,
                 loadingContext: this.props.loadingContext,
                 resources: this.resources
@@ -9117,7 +9117,7 @@ function s5(e, t, n) {
         r.state.securedFields[i] = s
     })
 }
-var s9 = {
+var s7 = {
         __IS_ANDROID: "u" > typeof navigator && /(android)/i.test(navigator.userAgent),
         __IS_IE: "u" > typeof navigator && function() {
             var e = navigator.userAgent,
@@ -9134,7 +9134,7 @@ var s9 = {
         __IS_FIREFOX: "u" > typeof navigator && /(firefox)/i.test(navigator.userAgent),
         __IS_SAFARI: "u" > typeof navigator && /(safari)/i.test(navigator.userAgent) && !/(chrome)/i.test(navigator.userAgent)
     },
-    s7 = function(e) {
+    s9 = function(e) {
         var t = e.target;
         if (t instanceof HTMLInputElement || HTMLTextAreaElement && t instanceof HTMLTextAreaElement) {
             var n = t.value,
@@ -9176,13 +9176,13 @@ var s9 = {
         e.style.cursor = "pointer", oJ(e, "touchend", this.touchendListener), this.state.registerFieldForIos = !0
     },
     ln = function() {
-        if (s9.__IS_IOS) {
+        if (s7.__IS_IOS) {
             var e = oQ(document, "body");
             e.style.cursor = "auto", oX(e, "touchend", this.touchendListener)
         }
     },
     lr = function() {
-        s9.__IS_IOS && oX(document, "touchstart", this.touchstartListener)
+        s7.__IS_IOS && oX(document, "touchstart", this.touchstartListener)
     },
     la = function(e, t, n) {
         return function(e) {
@@ -9283,7 +9283,7 @@ var s9 = {
         a ? this.setFocusOnFrame(a, !1) : o && (r = o) && (r.focus(), r.blur(), r.focus())
     },
     li = function(e) {
-        (s9.__IS_FIREFOX || s9.__IS_IE && s9.__IS_IE <= 11) && this.handleShiftTab(e)
+        (s7.__IS_FIREFOX || s7.__IS_IE && s7.__IS_IE <= 11) && this.handleShiftTab(e)
     };
 
 function ls(e, t) {
@@ -9516,7 +9516,7 @@ function lg(e, t) {
         }({}, t);
     delete o.numKey, o.rootNode = r.rootNode, o.type = n.type;
     var i = o.fieldType;
-    o.focus ? n.currentFocusObject !== i && (n.currentFocusObject = i, s9.__IS_IOS && !n.registerFieldForIos && this.handleIOSTouchEvents()) : n.currentFocusObject === i && (n.currentFocusObject = null), o.currentFocusObject = n.currentFocusObject, a.onFocus(o)
+    o.focus ? n.currentFocusObject !== i && (n.currentFocusObject = i, s7.__IS_IOS && !n.registerFieldForIos && this.handleIOSTouchEvents()) : n.currentFocusObject === i && (n.currentFocusObject = null), o.currentFocusObject = n.currentFocusObject, a.onFocus(o)
 }
 
 function lb(e, t, n) {
@@ -9645,14 +9645,14 @@ var lw = function() {
                 csfProps: t.props,
                 csfCallbacks: t.callbacks
             };
-            return t.configHandler = sF, t.callbacksHandler = sE, t.validateForm = ii(l_, a), t.isConfigured = ii(lA, a, t.validateForm), t.handleIframeConfigFeedback = ii(lb, a, t.isConfigured), t.processBrand = ii(lf, a), t.handleValidation = sT, t.handleEncryption = sL, t.createSecuredFields = s2, t.createNonCardSecuredFields = s4, t.createCardSecuredFields = s3, t.setupSecuredField = s5, t.postMessageToAllIframes = ii(lh, a), t.setFocusOnFrame = ii(lp, a), t.handleFocus = ii(lg, a), t.handleIOSTouchEvents = lt, t.touchendListener = F()(s7).call(s7, (0, ea.A)(t)), t.destroyTouchendListener = ln, t.touchstartListener = F()(le).call(le, (0, ea.A)(t)), t.destroyTouchstartListener = lr, t.handleSFShiftTab = li, t.handleShiftTab = lo, t.destroySecuredFields = lC, t.processAutoComplete = ii(ly, a), t.handleBinValue = ii(lk, a), t.handleBrandFromBinLookup = ld, t.sendBrandToCardSF = lc, t.sendExpiryDatePolicyToSF = lu, t.init(), t
+            return t.configHandler = sF, t.callbacksHandler = sE, t.validateForm = ii(l_, a), t.isConfigured = ii(lA, a, t.validateForm), t.handleIframeConfigFeedback = ii(lb, a, t.isConfigured), t.processBrand = ii(lf, a), t.handleValidation = sT, t.handleEncryption = sL, t.createSecuredFields = s2, t.createNonCardSecuredFields = s4, t.createCardSecuredFields = s3, t.setupSecuredField = s5, t.postMessageToAllIframes = ii(lh, a), t.setFocusOnFrame = ii(lp, a), t.handleFocus = ii(lg, a), t.handleIOSTouchEvents = lt, t.touchendListener = F()(s9).call(s9, (0, ea.A)(t)), t.destroyTouchendListener = ln, t.touchstartListener = F()(le).call(le, (0, ea.A)(t)), t.destroyTouchstartListener = lr, t.handleSFShiftTab = li, t.handleShiftTab = lo, t.destroySecuredFields = lC, t.processAutoComplete = ii(ly, a), t.handleBinValue = ii(lk, a), t.handleBrandFromBinLookup = ld, t.sendBrandToCardSF = lc, t.sendExpiryDatePolicyToSF = lu, t.init(), t
         }
         return (0, C.A)(r, [{
             key: "init",
             value: function() {
                 this.configHandler(this.props), this.callbacksHandler(this.props.callbacks);
                 var e = this.createSecuredFields();
-                this.state.numIframes = this.state.originalNumIframes = e, this.state.isKCP = !!this.props.isKCP, s9.__IS_IOS && this.config.shouldDisableIOSArrowKeys && (this.hasGenuineTouchEvents = !1, oJ(document, "touchstart", this.touchstartListener))
+                this.state.numIframes = this.state.originalNumIframes = e, this.state.isKCP = !!this.props.isKCP, s7.__IS_IOS && this.config.shouldDisableIOSArrowKeys && (this.hasGenuineTouchEvents = !1, oJ(document, "touchstart", this.touchstartListener))
             }
         }, {
             key: "createReturnObject",
@@ -10333,7 +10333,7 @@ function l2(e, t, n) {
             }), void(r.current = 0);
             if (null != (n = e.supportedBrands) && n.length) {
                 var f, m = (f = e.supportedBrands, $()(f).call(f, function(e, t) {
-                        return e || E()(n9).call(n9, t.brand)
+                        return e || E()(n7).call(n7, t.brand)
                     }, !1)),
                     y = m ? l1(e.supportedBrands) : l0(e.supportedBrands);
                 if (y.length > 1) {
@@ -10379,10 +10379,10 @@ var l4 = "holderName",
     l3 = [nL, nV, nq],
     l6 = [l4, nL, nV, nq],
     l5 = [nL, nV, nq, l4],
-    l9 = ["taxNumber", nK],
-    l7 = M()(l3).call(l3, l9),
-    ce = M()(l6).call(l6, l9),
-    ct = M()(l5).call(l5, l9),
+    l7 = ["taxNumber", nK],
+    l9 = M()(l3).call(l3, l7),
+    ce = M()(l6).call(l6, l7),
+    ct = M()(l5).call(l5, l7),
     cn = M()(l3).call(l3, [l8]),
     cr = M()(l6).call(l6, [l8]),
     ca = M()(l5).call(l5, [l8]),
@@ -10410,7 +10410,7 @@ var l4 = "holderName",
 
 function cs(e) {
     var t;
-    return null != (t = n7[e]) ? t : e
+    return null != (t = n9[e]) ? t : e
 }
 var cl = function(e) {
     var t, n = e.children,
@@ -10988,7 +10988,7 @@ function cw(e) {
             return e[t] ? y.get(e[t]) : null
         },
         g = null == n ? void 0 : P()(n).call(n, function(e) {
-            return !(null != n9 && E()(n9).call(n9, e.name))
+            return !(null != n7 && E()(n7).call(n7, e.name))
         });
     return (0, el.h)("div", {
         className: "adyen-checkout__card__form"
@@ -11048,7 +11048,7 @@ function cS(e) {
         isValid: e.isValid,
         dir: "ltr",
         name: "kcpTaxNumberOrDOB"
-    }, (0, el.h)(r9, {
+    }, (0, el.h)(r7, {
         name: "kcpTaxNumberOrDOB",
         className: "adyen-checkout__card__kcp-taxNumber__input ".concat(cu["adyen-checkout__input"]),
         placeholder: n.get("creditCard.taxNumber.placeholder"),
@@ -11427,22 +11427,22 @@ var cB = function(e) {
         e3 = tX(null),
         e6 = (0, K.A)(e3, 2),
         e5 = e6[0],
-        e9 = e6[1],
-        e7 = rj({
+        e7 = e6[1],
+        e9 = rj({
             schema: [],
             defaultData: e.data,
             formatters: lZ,
             rules: lJ
         }),
-        te = e7.handleChangeFor,
-        tt = e7.triggerValidation,
-        tr = e7.data,
-        to = e7.valid,
-        ti = e7.errors,
-        ts = e7.setSchema,
-        tl = e7.setData,
-        tc = e7.setValid,
-        tu = e7.setErrors,
+        te = e9.handleChangeFor,
+        tt = e9.triggerValidation,
+        tr = e9.data,
+        to = e9.valid,
+        ti = e9.errors,
+        ts = e9.setSchema,
+        tl = e9.setData,
+        tc = e9.setValid,
+        tu = e9.setErrors,
         td = !!c()(e.installmentOptions).length && "debit" !== e.fundingSource,
         tp = null == (i = e.showInstallmentAmounts) || i,
         th = "kr" === (null != e_ ? e_ : e.countryCode),
@@ -11462,7 +11462,7 @@ var cB = function(e) {
                     s = void 0 === i ? null : i,
                     l = l3,
                     c = t.hasHolderName && t.holderNameRequired;
-                if (c && (l = t.positionHolderNameOnTop ? l6 : l5), n && (l = l7, c && (l = t.positionHolderNameOnTop ? ce : ct)), r && (l = cn, c && (l = t.positionHolderNameOnTop ? cr : ca)), o) {
+                if (c && (l = t.positionHolderNameOnTop ? l6 : l5), n && (l = l9, c && (l = t.positionHolderNameOnTop ? ce : ct)), r && (l = cn, c && (l = t.positionHolderNameOnTop ? cr : ca)), o) {
                     var u, d = P()(u = eJ()(o).call(o, 2)).call(u, function(e) {
                             return "number" != typeof e
                         }),
@@ -11482,7 +11482,7 @@ var cB = function(e) {
             }))
         },
         tg = t3(function(e) {
-            e9("webInternalElement" !== e.fieldType ? e.fieldType : e.name)
+            e7("webInternalElement" !== e.fieldType ? e.fieldType : e.name)
         }, []),
         tb = function(e) {
             tl("billingAddress", e.data), tc("billingAddress", e.isValid), tu("billingAddress", e.errors)
@@ -12478,7 +12478,7 @@ function c5(e, t) {
     return n
 }
 
-function c9(e) {
+function c7(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n, r, a = null != arguments[t] ? arguments[t] : {};
         t % 2 ? N()(n = c5(Object(a), !0)).call(n, function(t) {
@@ -12489,7 +12489,7 @@ function c9(e) {
     }
     return e
 }
-var c7 = ((pf = {}).Idle = "Idle", pf.Loading = "Loading", pf.ShopperIdentified = "ShopperIdentified", pf.OneTimePassword = "OneTimePassword", pf.Ready = "Ready", pf.Login = "Login", pf.NotAvailable = "NotAvailable", pf);
+var c9 = ((pf = {}).Idle = "Idle", pf.Loading = "Loading", pf.ShopperIdentified = "ShopperIdentified", pf.OneTimePassword = "OneTimePassword", pf.Ready = "Ready", pf.Login = "Login", pf.NotAvailable = "NotAvailable", pf);
 
 function ue(e, t, n) {
     var r = new(B())(function(e, r) {
@@ -12503,13 +12503,13 @@ var ut = function() {
     var e, t, n, r, a, i, l, c, u;
 
     function d(e, t, n, r, a) {
-        (0, k.A)(this, d), (0, w.A)(this, "sdkLoader", void 0), (0, w.A)(this, "schemesConfig", void 0), (0, w.A)(this, "shopperIdentity", void 0), (0, w.A)(this, "environment", void 0), (0, w.A)(this, "onTimeout", void 0), (0, w.A)(this, "srciTransactionId", tM()), (0, w.A)(this, "sdks", void 0), (0, w.A)(this, "validationSchemeSdk", null), (0, w.A)(this, "stateSubscriber", void 0), (0, w.A)(this, "state", c7.Idle), (0, w.A)(this, "shopperCards", null), (0, w.A)(this, "identityValidationData", null), this.sdkLoader = t, this.schemesConfig = e, this.shopperIdentity = r, this.environment = n, this.onTimeout = a
+        (0, k.A)(this, d), (0, w.A)(this, "sdkLoader", void 0), (0, w.A)(this, "schemesConfig", void 0), (0, w.A)(this, "shopperIdentity", void 0), (0, w.A)(this, "environment", void 0), (0, w.A)(this, "onTimeout", void 0), (0, w.A)(this, "srciTransactionId", tM()), (0, w.A)(this, "sdks", void 0), (0, w.A)(this, "validationSchemeSdk", null), (0, w.A)(this, "stateSubscriber", void 0), (0, w.A)(this, "state", c9.Idle), (0, w.A)(this, "shopperCards", null), (0, w.A)(this, "identityValidationData", null), this.sdkLoader = t, this.schemesConfig = e, this.shopperIdentity = r, this.environment = n, this.onTimeout = a
     }
     return (0, C.A)(d, [{
         key: "shopperAccountFound",
         get: function() {
             var e;
-            return E()(e = [c7.Ready, c7.ShopperIdentified]).call(e, this.state)
+            return E()(e = [c9.Ready, c9.ShopperIdentified]).call(e, this.state)
         }
     }, {
         key: "schemes",
@@ -12523,7 +12523,7 @@ var ut = function() {
             return s().wrap(function(e) {
                 for (;;) switch (e.prev = e.next) {
                     case 0:
-                        return this.setState(c7.Loading), e.prev = 1, e.next = 4, this.sdkLoader.load(this.environment);
+                        return this.setState(c9.Loading), e.prev = 1, e.next = 4, this.sdkLoader.load(this.environment);
                     case 4:
                         return this.sdks = e.sent, e.next = 7, this.initiateSdks();
                     case 7:
@@ -12535,13 +12535,13 @@ var ut = function() {
                         }
                         return e.next = 17, this.getShopperProfile(o);
                     case 17:
-                        return this.setState(c7.Ready), e.abrupt("return");
+                        return this.setState(c9.Ready), e.abrupt("return");
                     case 19:
                         if (this.shopperIdentity) {
                             e.next = 22;
                             break
                         }
-                        return this.setState(c7.NotAvailable), e.abrupt("return");
+                        return this.setState(c9.NotAvailable), e.abrupt("return");
                     case 22:
                         return e.next = 24, this.verifyIfShopperIsEnrolled(this.shopperIdentity);
                     case 24:
@@ -12549,12 +12549,12 @@ var ut = function() {
                             e.next = 29;
                             break
                         }
-                        return this.setState(c7.ShopperIdentified), e.abrupt("return");
+                        return this.setState(c9.ShopperIdentified), e.abrupt("return");
                     case 29:
-                        this.setState(c7.NotAvailable), e.next = 37;
+                        this.setState(c9.NotAvailable), e.next = 37;
                         break;
                     case 32:
-                        e.prev = 32, e.t0 = e.catch(1), e.t0 instanceof cV && console.warn("Error at ClickToPayService # init: ".concat(e.t0.toString())), e.t0 instanceof c6 ? (console.warn(e.t0.toString()), null == (i = this.onTimeout) || i.call(this, e.t0)) : console.warn(e.t0), this.setState(c7.NotAvailable);
+                        e.prev = 32, e.t0 = e.catch(1), e.t0 instanceof cV && console.warn("Error at ClickToPayService # init: ".concat(e.t0.toString())), e.t0 instanceof c6 ? (console.warn(e.t0.toString()), null == (i = this.onTimeout) || i.call(this, e.t0)) : console.warn(e.t0), this.setState(c9.NotAvailable);
                     case 37:
                     case "end":
                         return e.stop()
@@ -12588,7 +12588,7 @@ var ut = function() {
                         t = e.sent.maskedValidationChannel, this.identityValidationData = {
                             maskedShopperContact: t.replace(/\*/g, "•"),
                             selectedNetwork: c0[this.validationSchemeSdk.schemeName]
-                        }, this.setState(c7.OneTimePassword);
+                        }, this.setState(c9.OneTimePassword);
                     case 8:
                     case "end":
                         return e.stop()
@@ -12614,7 +12614,7 @@ var ut = function() {
                     case 4:
                         return n = e.sent, e.next = 7, this.getShopperProfile([n.idToken]);
                     case 7:
-                        this.setState(c7.Ready), this.validationSchemeSdk = null;
+                        this.setState(c9.Ready), this.validationSchemeSdk = null;
                     case 9:
                     case "end":
                         return e.stop()
@@ -12638,7 +12638,7 @@ var ut = function() {
                     case 2:
                         return r = L()(n = this.sdks).call(n, function(e) {
                             return e.schemeName === t.scheme
-                        }), e.next = 5, r.checkout(c9({
+                        }), e.next = 5, r.checkout(c7({
                             srcDigitalCardId: t.srcDigitalCardId,
                             srcCorrelationId: t.srcCorrelationId
                         }, t.isDcfPopupEmbedded && {
@@ -12700,7 +12700,7 @@ var ut = function() {
                     case 8:
                         e.prev = 8, e.t0 = e.catch(2), e.t0 instanceof cV ? console.warn("Error at ClickToPayService # logout: ".concat(e.t0.toString())) : console.warn(e.t0);
                     case 11:
-                        this.shopperCards = null, this.identityValidationData = null, this.validationSchemeSdk = null, this.setState(c7.Login);
+                        this.shopperCards = null, this.identityValidationData = null, this.validationSchemeSdk = null, this.setState(c9.Login);
                     case 15:
                     case "end":
                         return e.stop()
@@ -12773,7 +12773,7 @@ var ut = function() {
                             B().allSettled(o).then(function(t) {
                                 eg()(t).call(t, cQ) && r(t[0].reason);
                                 var a, o, i, s, l, c, u = P()(a = J()(t).call(t, function(e, t) {
-                                    return cY(e) && c9(c9({}, e.value), {}, {
+                                    return cY(e) && c7(c7({}, e.value), {}, {
                                         scheme: n.sdks[t].schemeName
                                     })
                                 })).call(a, function(e) {
@@ -12941,7 +12941,7 @@ var uo = function(e, t) {
             y = e.onError,
             v = tX(c),
             g = (0, K.A)(v, 1)[0],
-            b = tX((null == c ? void 0 : c.state) || c7.NotAvailable),
+            b = tX((null == c ? void 0 : c.state) || c9.NotAvailable),
             A = (0, K.A)(b, 2),
             _ = A[0],
             k = A[1],
@@ -13442,9 +13442,9 @@ var ub = function(e) {
             a = t.status,
             o = t.cards,
             i = nc().i18n;
-        if (!1 === E()(e = [c7.Ready, c7.OneTimePassword]).call(e, n)) return null;
+        if (!1 === E()(e = [c9.Ready, c9.OneTimePassword]).call(e, n)) return null;
         var s = t8(function() {
-            return n === c7.Ready && o.length > 1 ? i.get("ctp.logout.notYourCards") : n === c7.Ready && 1 === o.length ? i.get("ctp.logout.notYourCard") : n === c7.Ready && 0 === o.length ? i.get("ctp.logout.notYourProfile") : i.get("ctp.logout.notYou")
+            return n === c9.Ready && o.length > 1 ? i.get("ctp.logout.notYourCards") : n === c9.Ready && 1 === o.length ? i.get("ctp.logout.notYourCard") : n === c9.Ready && 0 === o.length ? i.get("ctp.logout.notYourProfile") : i.get("ctp.logout.notYou")
         }, [i, n]);
         return (0, el.h)("span", {
             role: "button",
@@ -13929,7 +13929,7 @@ var uR = function(e) {
             c = r.logoutShopper;
         return t1(function() {
             var e;
-            E()(e = [c7.OneTimePassword, c7.Login, c7.Ready]).call(e, a) && i()
+            E()(e = [c9.OneTimePassword, c9.Login, c9.Ready]).call(e, a) && i()
         }, [a, i]), t1(function() {
             function e() {
                 return (e = (0, o.A)(s().mark(function e() {
@@ -13951,14 +13951,14 @@ var uR = function(e) {
                     ])
                 }))).apply(this, arguments)
             }
-            a === c7.ShopperIdentified && function() {
+            a === c9.ShopperIdentified && function() {
                 e.apply(this, arguments)
             }()
-        }, [a]), a === c7.NotAvailable ? null : (0, el.h)(uk, null, E()(t = [c7.Loading, c7.ShopperIdentified]).call(t, a) && (0, el.h)(uF, null), a === c7.OneTimePassword && (0, el.h)(uC, {
+        }, [a]), a === c9.NotAvailable ? null : (0, el.h)(uk, null, E()(t = [c9.Loading, c9.ShopperIdentified]).call(t, a) && (0, el.h)(uF, null), a === c9.OneTimePassword && (0, el.h)(uC, {
             onDisplayCardComponent: n
-        }), a === c7.Ready && (0, el.h)(uR, {
+        }), a === c9.Ready && (0, el.h)(uR, {
             onDisplayCardComponent: n
-        }), a === c7.Login && (0, el.h)(uI, null))
+        }), a === c9.Login && (0, el.h)(uI, null))
     },
     uT = function(e) {
         var t = e.children,
@@ -13975,14 +13975,14 @@ var uR = function(e) {
             p = null === o && null === c;
         t1(function() {
             if (p) {
-                if (l === c7.ShopperIdentified || l === c7.Ready) return i(!1), void u(!0);
-                l === c7.NotAvailable && (i(!0), u(!1))
+                if (l === c9.ShopperIdentified || l === c9.Ready) return i(!1), void u(!0);
+                l === c9.NotAvailable && (i(!0), u(!1))
             }
         }, [l, p]);
         var h = t3(function() {
             i(!0), u(!1)
         }, []);
-        return l === c7.NotAvailable ? t() : l === c7.Loading || l === c7.ShopperIdentified ? (0, el.h)(uM, null) : (0, el.h)(el.FK, null, (0, el.h)(uM, {
+        return l === c9.NotAvailable ? t() : l === c9.Loading || l === c9.ShopperIdentified ? (0, el.h)(uM, null) : (0, el.h)(el.FK, null, (0, el.h)(uM, {
             onDisplayCardComponent: h
         }), (0, el.h)(i3, {
             classNames: ["adyen-checkout-ctp__separator"],
@@ -14234,7 +14234,7 @@ var uj = function(e) {
         key: "render",
         value: function() {
             var e = this;
-            return (0, el.h)(o7, {
+            return (0, el.h)(o9, {
                 i18n: this.props.i18n,
                 loadingContext: this.props.loadingContext,
                 resources: this.resources
@@ -14736,7 +14736,7 @@ var uZ = function(e) {
         key: "render",
         value: function() {
             var e, t = this;
-            return (0, el.h)(o7, {
+            return (0, el.h)(o9, {
                 i18n: this.props.i18n,
                 resources: this.resources,
                 loadingContext: this.props.loadingContext
@@ -14906,7 +14906,7 @@ var u0 = function(e) {
                     case 4:
                         return e.abrupt("return", new(B())(function(e, n) {
                             t.clickToPayService.subscribeOnStateChange(function(r) {
-                                t.clickToPayService.shopperAccountFound && e(), r !== c7.NotAvailable && r !== c7.Login && r !== c7.Idle || n()
+                                t.clickToPayService.shopperAccountFound && e(), r !== c9.NotAvailable && r !== c9.Login && r !== c9.Idle || n()
                             })
                         }));
                     case 5:
@@ -14920,7 +14920,7 @@ var u0 = function(e) {
     }, {
         key: "render",
         value: function() {
-            return (0, el.h)(o7, {
+            return (0, el.h)(o9, {
                 i18n: this.props.i18n,
                 loadingContext: this.props.loadingContext,
                 resources: this.resources
@@ -15090,7 +15090,7 @@ function u5(e, t) {
     return n
 }
 
-function u9(e) {
+function u7(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n, r, a = null != arguments[t] ? arguments[t] : {};
         t % 2 ? N()(n = u5(Object(a), !0)).call(n, function(t) {
@@ -15102,7 +15102,7 @@ function u9(e) {
     return e
 }
 
-function u7(e) {
+function u9(e) {
     var t, n = e.amounts,
         r = e.onCancel,
         a = e.onDonate,
@@ -15179,7 +15179,7 @@ function u7(e) {
             var t = e.target,
                 n = ee()(t.value, 10);
             v(!0), _(function(e) {
-                return u9(u9({}, e), {}, {
+                return u7(u7({}, e), {}, {
                     value: n
                 })
             })
@@ -15237,7 +15237,7 @@ function dt(e) {
     }
     return e
 }
-u7.defaultProps = {
+u9.defaultProps = {
     onCancel: function() {},
     onChange: function() {},
     onDonate: function() {},
@@ -15297,11 +15297,11 @@ var dn = function(e) {
     }, {
         key: "render",
         value: function() {
-            return (0, el.h)(o7, {
+            return (0, el.h)(o9, {
                 i18n: this.props.i18n,
                 loadingContext: this.props.loadingContext,
                 resources: this.resources
-            }, (0, el.h)(u7, (0, er.A)({}, this.props, {
+            }, (0, el.h)(u9, (0, er.A)({}, this.props, {
                 ref: this.handleRef,
                 onChange: this.setState,
                 onDonate: this.donate
@@ -15488,7 +15488,7 @@ var dc = function(e) {
         key: "render",
         value: function() {
             var e = this;
-            return this.props.url && this.props.method ? (0, el.h)(di, this.props) : this.props.showButton ? (0, el.h)(o7, {
+            return this.props.url && this.props.method ? (0, el.h)(di, this.props) : this.props.showButton ? (0, el.h)(o9, {
                 i18n: this.props.i18n,
                 loadingContext: this.props.loadingContext,
                 resources: this.resources
@@ -15576,7 +15576,7 @@ var dp = function(e) {
         key: "render",
         value: function() {
             var e = this;
-            return this.props.showPayButton ? (0, el.h)(o7, {
+            return this.props.showPayButton ? (0, el.h)(o9, {
                 i18n: this.props.i18n,
                 loadingContext: this.props.loadingContext,
                 resources: this.resources
@@ -16294,7 +16294,7 @@ var dM = function(e) {
         key: "render",
         value: function() {
             var e = this;
-            return (0, el.h)(o7, {
+            return (0, el.h)(o9, {
                 i18n: this.props.i18n,
                 loadingContext: this.props.loadingContext,
                 resources: this.resources
@@ -16776,9 +16776,9 @@ function d5(e) {
         inline: !0
     }), " ", h.get("paypal.processingPayment"))))
 }
-var d9 = ["onApprove", "onCancel", "onChange", "onError", "onSubmit"];
+var d7 = ["onApprove", "onCancel", "onChange", "onError", "onSubmit"];
 
-function d7(e, t) {
+function d9(e, t) {
     var n = c()(e);
     if (d()) {
         var r = d()(e);
@@ -16792,9 +16792,9 @@ function d7(e, t) {
 function pe(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n, r, a = null != arguments[t] ? arguments[t] : {};
-        t % 2 ? N()(n = d7(Object(a), !0)).call(n, function(t) {
+        t % 2 ? N()(n = d9(Object(a), !0)).call(n, function(t) {
             (0, w.A)(e, t, a[t])
-        }) : m() ? v()(e, m()(a)) : N()(r = d7(Object(a))).call(r, function(t) {
+        }) : m() ? v()(e, m()(a)) : N()(r = d9(Object(a))).call(r, function(t) {
             b()(e, t, h()(a, t))
         })
     }
@@ -16807,7 +16807,7 @@ function pt(e) {
         r = e.onChange,
         a = e.onError,
         o = e.onSubmit,
-        i = (0, _.A)(e, d9),
+        i = (0, _.A)(e, d7),
         s = tX("pending"),
         l = (0, K.A)(s, 2),
         u = l[0],
@@ -17058,7 +17058,7 @@ var pl = function(e) {
         key: "render",
         value: function() {
             var e = this;
-            return this.props.showPayButton ? (0, el.h)(o7, {
+            return this.props.showPayButton ? (0, el.h)(o9, {
                 i18n: this.props.i18n,
                 loadingContext: this.props.loadingContext,
                 resources: this.resources
@@ -17415,7 +17415,7 @@ var p_ = function(e) {
         key: "render",
         value: function() {
             var e = this;
-            return (0, el.h)(o7, {
+            return (0, el.h)(o9, {
                 i18n: this.props.i18n,
                 loadingContext: this.props.loadingContext,
                 resources: this.resources
@@ -17704,7 +17704,7 @@ var pP = function(e) {
         key: "render",
         value: function() {
             var e = this;
-            return (0, el.h)(o7, {
+            return (0, el.h)(o9, {
                 i18n: this.props.i18n,
                 loadingContext: this.props.loadingContext,
                 resources: this.resources
@@ -17795,7 +17795,7 @@ var pF = function(e) {
         key: "render",
         value: function() {
             var e = this;
-            return (0, el.h)(o7, {
+            return (0, el.h)(o9, {
                 i18n: this.props.i18n,
                 loadingContext: this.props.loadingContext,
                 resources: this.resources
@@ -18678,7 +18678,7 @@ function p5(e, t) {
     return n
 }
 
-function p9(e) {
+function p7(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n, r, a = null != arguments[t] ? arguments[t] : {};
         t % 2 ? N()(n = p5(Object(a), !0)).call(n, function(t) {
@@ -18689,19 +18689,19 @@ function p9(e) {
     }
     return e
 }
-var p7 = function(e) {
+var p9 = function(e) {
         switch (e.resultCode.toLowerCase()) {
             case "refused":
             case "error":
             case "cancelled":
                 return {
-                    type: "error", props: p9(p9({}, e), {}, {
+                    type: "error", props: p7(p7({}, e), {}, {
                         message: "error.subtitle.refused"
                     })
                 };
             case "unknown":
                 return {
-                    type: "error", props: p9(p9({}, e), {}, {
+                    type: "error", props: p7(p7({}, e), {}, {
                         message: "error.message.unknown"
                     })
                 };
@@ -18717,7 +18717,7 @@ var p7 = function(e) {
         }
     },
     he = function(e) {
-        if (!e.type && e.resultCode) return p7(e);
+        if (!e.type && e.resultCode) return p9(e);
         if (!e.type) return {
             type: "error",
             props: e
@@ -18728,7 +18728,7 @@ var p7 = function(e) {
                     type: "pending", props: e
                 };
             case "complete":
-                return p7(e);
+                return p9(e);
             default:
                 return {
                     type: "error", props: e
@@ -19045,7 +19045,7 @@ var ha = function(e) {
         key: "renderQRCode",
         value: function() {
             var e = this;
-            return (0, el.h)(o7, {
+            return (0, el.h)(o9, {
                 i18n: this.props.i18n,
                 loadingContext: this.props.loadingContext,
                 resources: this.resources
@@ -19070,7 +19070,7 @@ var ha = function(e) {
         key: "render",
         value: function() {
             var e = this;
-            return this.props.paymentData ? this.renderQRCode() : this.props.showPayButton ? (0, el.h)(o7, {
+            return this.props.paymentData ? this.renderQRCode() : this.props.showPayButton ? (0, el.h)(o9, {
                 i18n: this.props.i18n,
                 loadingContext: this.props.loadingContext,
                 resources: this.resources
@@ -19544,7 +19544,7 @@ var hA = function(e) {
         key: "render",
         value: function() {
             var e = this;
-            return (0, el.h)(o7, {
+            return (0, el.h)(o9, {
                 i18n: this.props.i18n,
                 loadingContext: this.props.loadingContext,
                 resources: this.resources
@@ -19691,7 +19691,7 @@ var hS = function(e) {
         key: "render",
         value: function() {
             var e = this;
-            return (0, el.h)(o7, {
+            return (0, el.h)(o9, {
                 i18n: this.props.i18n,
                 loadingContext: this.props.loadingContext,
                 resources: this.resources
@@ -20056,7 +20056,7 @@ var hB = function(e) {
     }, {
         key: "render",
         value: function() {
-            return (0, el.h)(o7, {
+            return (0, el.h)(o9, {
                 i18n: this.props.i18n,
                 loadingContext: this.props.loadingContext,
                 resources: this.resources
@@ -20177,7 +20177,7 @@ var hj = function(e) {
         key: "render",
         value: function() {
             var e;
-            return (0, el.h)(o7, {
+            return (0, el.h)(o9, {
                 i18n: this.props.i18n,
                 loadingContext: this.props.loadingContext,
                 resources: this.resources
@@ -20302,13 +20302,13 @@ var hH = function(e) {
         key: "render",
         value: function() {
             var e = this;
-            return this.props.reference ? (0, el.h)(o7, {
+            return this.props.reference ? (0, el.h)(o9, {
                 i18n: this.props.i18n,
                 loadingContext: this.props.loadingContext,
                 resources: this.resources
             }, (0, el.h)(hU, (0, er.A)({
                 ref: this.handleRef
-            }, this.props))) : this.props.showPayButton ? (0, el.h)(o7, {
+            }, this.props))) : this.props.showPayButton ? (0, el.h)(o9, {
                 i18n: this.props.i18n,
                 loadingContext: this.props.loadingContext,
                 resources: this.resources
@@ -20785,7 +20785,7 @@ var h4 = function(e) {
         key: "render",
         value: function() {
             var e = this;
-            return (0, el.h)(o7, {
+            return (0, el.h)(o9, {
                 i18n: this.props.i18n,
                 loadingContext: this.props.loadingContext,
                 resources: this.resources
@@ -20888,7 +20888,7 @@ var h5 = function(e) {
     }]), r
 }();
 
-function h9(e, t) {
+function h7(e, t) {
     var n = c()(e);
     if (d()) {
         var r = d()(e);
@@ -20899,12 +20899,12 @@ function h9(e, t) {
     return n
 }
 
-function h7(e) {
+function h9(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n, r, a = null != arguments[t] ? arguments[t] : {};
-        t % 2 ? N()(n = h9(Object(a), !0)).call(n, function(t) {
+        t % 2 ? N()(n = h7(Object(a), !0)).call(n, function(t) {
             (0, w.A)(e, t, a[t])
-        }) : m() ? v()(e, m()(a)) : N()(r = h9(Object(a))).call(r, function(t) {
+        }) : m() ? v()(e, m()(a)) : N()(r = h7(Object(a))).call(r, function(t) {
             b()(e, t, h()(a, t))
         })
     }
@@ -20935,7 +20935,7 @@ var fe = function(e) {
     return (0, C.A)(r, [{
         key: "formatProps",
         value: function(e) {
-            return h7(h7({}, (0, ey.A)((0, es.A)(r.prototype), "formatProps", this).call(this, e)), {}, {
+            return h9(h9({}, (0, ey.A)((0, es.A)(r.prototype), "formatProps", this).call(this, e)), {}, {
                 showImage: !1
             })
         }
@@ -21290,7 +21290,7 @@ var fs = function(e) {
                 }, d.get("storedPaymentMethod.disable.button")), v && (0, el.h)(fh, {
                     activeBrand: u,
                     brands: a.brands,
-                    excludedUIBrands: n9,
+                    excludedUIBrands: n7,
                     isPaymentMethodSelected: o,
                     isCompactView: a.props.showBrandsUnderCardNumber
                 })), (0, el.h)("div", {
@@ -21981,7 +21981,7 @@ var fD = ["paywithgoogle", "googlepay", "applepay"],
             key: "render",
             value: function() {
                 var e = this;
-                return (0, el.h)(o7, {
+                return (0, el.h)(o9, {
                     i18n: this.props.i18n,
                     loadingContext: this.props.loadingContext,
                     resources: this.resources
@@ -22410,7 +22410,7 @@ var fQ = function(e) {
         key: "render",
         value: function() {
             var e = this;
-            return (0, el.h)(o7, {
+            return (0, el.h)(o9, {
                 i18n: this.props.i18n,
                 loadingContext: this.props.loadingContext,
                 resources: this.resources
@@ -22691,7 +22691,7 @@ function f5(e) {
     return e
 }
 
-function f9(e) {
+function f7(e) {
     var t, n = this,
         r = nc(),
         a = r.i18n,
@@ -22877,7 +22877,7 @@ function f9(e) {
     })))
 }
 
-function f7(e, t) {
+function f9(e, t) {
     var n = c()(e);
     if (d()) {
         var r = d()(e);
@@ -22891,15 +22891,15 @@ function f7(e, t) {
 function me(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n, r, a = null != arguments[t] ? arguments[t] : {};
-        t % 2 ? N()(n = f7(Object(a), !0)).call(n, function(t) {
+        t % 2 ? N()(n = f9(Object(a), !0)).call(n, function(t) {
             (0, w.A)(e, t, a[t])
-        }) : m() ? v()(e, m()(a)) : N()(r = f7(Object(a))).call(r, function(t) {
+        }) : m() ? v()(e, m()(a)) : N()(r = f9(Object(a))).call(r, function(t) {
             b()(e, t, h()(a, t))
         })
     }
     return e
 }
-f9.defaultProps = {
+f7.defaultProps = {
     countdownTime: 15,
     onError: function() {},
     onComplete: function() {},
@@ -22976,13 +22976,13 @@ var mt = function(e) {
         key: "render",
         value: function() {
             var e = this;
-            return this.props.paymentData ? (0, el.h)(o7, {
+            return this.props.paymentData ? (0, el.h)(o9, {
                 i18n: this.props.i18n,
                 loadingContext: this.props.loadingContext,
                 resources: this.resources
             }, (0, el.h)(is, {
                 srPanel: this.props.modules.srPanel
-            }, (0, el.h)(f9, {
+            }, (0, el.h)(f7, {
                 ref: function(t) {
                     e.componentRef = t
                 },
@@ -23000,7 +23000,7 @@ var mt = function(e) {
                 throttleTime: 6e4,
                 throttleInterval: 1e4,
                 onActionHandled: this.props.onActionHandled
-            }))) : (0, el.h)(o7, {
+            }))) : (0, el.h)(o9, {
                 i18n: this.props.i18n,
                 loadingContext: this.props.loadingContext,
                 resources: this.resources
@@ -23161,13 +23161,13 @@ var mi = function(e) {
         key: "render",
         value: function() {
             var e = this;
-            return this.props.paymentData ? (0, el.h)(o7, {
+            return this.props.paymentData ? (0, el.h)(o9, {
                 i18n: this.props.i18n,
                 loadingContext: this.props.loadingContext,
                 resources: this.resources
             }, (0, el.h)(is, {
                 srPanel: this.props.modules.srPanel
-            }, (0, el.h)(f9, {
+            }, (0, el.h)(f7, {
                 ref: function(t) {
                     e.componentRef = t
                 },
@@ -23185,7 +23185,7 @@ var mi = function(e) {
                 throttleTime: 6e4,
                 throttleInterval: 1e4,
                 onActionHandled: this.props.onActionHandled
-            }))) : (0, el.h)(o7, {
+            }))) : (0, el.h)(o9, {
                 i18n: this.props.i18n,
                 loadingContext: this.props.loadingContext,
                 resources: this.resources
@@ -23352,13 +23352,13 @@ var mu = function(e) {
     }, {
         key: "render",
         value: function() {
-            return this.props.reference ? (0, el.h)(o7, {
+            return this.props.reference ? (0, el.h)(o9, {
                 i18n: this.props.i18n,
                 loadingContext: this.props.loadingContext,
                 resources: this.resources
             }, (0, el.h)(ms, (0, er.A)({
                 ref: this.handleRef
-            }, this.props))) : (0, el.h)(o7, {
+            }, this.props))) : (0, el.h)(o9, {
                 i18n: this.props.i18n,
                 loadingContext: this.props.loadingContext,
                 resources: this.resources
@@ -23598,7 +23598,7 @@ var mA = function(e) {
         key: "render",
         value: function() {
             var e = this;
-            return this.props.paymentData ? this.renderQRCode() : (0, el.h)(o7, {
+            return this.props.paymentData ? this.renderQRCode() : (0, el.h)(o9, {
                 i18n: this.props.i18n,
                 loadingContext: this.props.loadingContext,
                 resources: this.resources
@@ -23933,7 +23933,7 @@ var mO = function(e) {
         key: "render",
         value: function() {
             var e = this;
-            return (0, el.h)(o7, {
+            return (0, el.h)(o9, {
                 i18n: this.props.i18n,
                 loadingContext: this.props.loadingContext,
                 resources: this.resources
@@ -23994,7 +23994,7 @@ var mE = function(e) {
         }, {
             key: "render",
             value: function() {
-                return (0, el.h)(o7, {
+                return (0, el.h)(o9, {
                     i18n: this.props.i18n,
                     loadingContext: this.props.loadingContext,
                     resources: this.resources
@@ -24041,7 +24041,7 @@ var mE = function(e) {
         }, {
             key: "render",
             value: function() {
-                return (0, el.h)(o7, {
+                return (0, el.h)(o9, {
                     i18n: this.props.i18n,
                     loadingContext: this.props.loadingContext,
                     resources: this.resources
@@ -24252,7 +24252,7 @@ var mj = function(e) {
         key: "render",
         value: function() {
             var e = this;
-            return (0, el.h)(o7, {
+            return (0, el.h)(o9, {
                 i18n: this.props.i18n,
                 loadingContext: this.props.loadingContext,
                 resources: this.resources
@@ -24735,7 +24735,7 @@ function m6(e) {
     })) : null
 }
 var m5 = ((r = {}).Vpa = "vpa", r.QrCode = "qrCode", r),
-    m9 = {
+    m7 = {
         ButtonId: {
             VPA: "upi-button-".concat(m5.Vpa),
             QR: "upi-button-".concat(m5.QrCode)
@@ -24746,7 +24746,7 @@ var m5 = ((r = {}).Vpa = "vpa", r.QrCode = "qrCode", r),
         }
     };
 
-function m7(e) {
+function m9(e) {
     var t = e.defaultMode,
         n = e.onChange,
         r = e.onUpdateMode,
@@ -24788,22 +24788,22 @@ function m7(e) {
             label: uS() ? "VPA" : "Virtual Payment Address",
             value: m5.Vpa,
             htmlProps: {
-                id: m9.ButtonId.VPA,
+                id: m7.ButtonId.VPA,
                 "aria-expanded": g === m5.Vpa,
-                "aria-controls": m9.AreaId.VPA
+                "aria-controls": m7.AreaId.VPA
             }
         }, {
             label: "QR Code",
             value: m5.QrCode,
             htmlProps: {
-                id: m9.ButtonId.QR,
+                id: m7.ButtonId.QR,
                 "aria-expanded": g === m5.QrCode,
-                "aria-controls": m9.AreaId.QR
+                "aria-controls": m7.AreaId.QR
             }
         }]
     }), g === m5.Vpa ? (0, el.h)("div", {
-        id: m9.AreaId.VPA,
-        "aria-labelledby": m9.ButtonId.VPA,
+        id: m7.AreaId.VPA,
+        "aria-labelledby": m7.ButtonId.VPA,
         role: "region"
     }, (0, el.h)(m3, {
         disabled: "loading" === f,
@@ -24813,8 +24813,8 @@ function m7(e) {
         label: i.get("continue"),
         status: f
     })) : (0, el.h)("div", {
-        id: m9.AreaId.QR,
-        "aria-labelledby": m9.ButtonId.QR,
+        id: m7.AreaId.QR,
+        "aria-labelledby": m7.ButtonId.QR,
         role: "region"
     }, o && a({
         label: i.get("generateQRCode"),
@@ -24915,7 +24915,7 @@ var yt = ((a = yt || {}).UpiCollect = "upi_collect", a.UpiQr = "upi_qr", a),
                             onActionHandled: this.props.onActionHandled
                         }));
                     case "await":
-                        return (0, el.h)(f9, {
+                        return (0, el.h)(f7, {
                             ref: function(e) {
                                 t.componentRef = e
                             },
@@ -24932,7 +24932,7 @@ var yt = ((a = yt || {}).UpiCollect = "upi_collect", a.UpiQr = "upi_qr", a),
                             onActionHandled: this.props.onActionHandled
                         });
                     default:
-                        return (0, el.h)(m7, {
+                        return (0, el.h)(m9, {
                             ref: function(e) {
                                 t.componentRef = e
                             },
@@ -24948,7 +24948,7 @@ var yt = ((a = yt || {}).UpiCollect = "upi_collect", a.UpiQr = "upi_qr", a),
             key: "render",
             value: function() {
                 var e = this.props.type;
-                return (0, el.h)(o7, {
+                return (0, el.h)(o9, {
                     i18n: this.props.i18n,
                     loadingContext: this.props.loadingContext,
                     resources: this.resources
@@ -25341,7 +25341,7 @@ var yb = function(e) {
         key: "render",
         value: function() {
             var e = this;
-            return (0, el.h)(o7, {
+            return (0, el.h)(o9, {
                 i18n: this.props.i18n,
                 loadingContext: this.props.loadingContext,
                 resources: this.resources
@@ -26376,7 +26376,7 @@ function y5(e) {
     }
     return e
 }
-var y9 = function() {
+var y7 = function() {
     function e(t) {
         var n, r, a, o, i, s, l = this;
         (0, k.A)(this, e), (0, w.A)(this, "session", void 0), (0, w.A)(this, "paymentMethodsResponse", void 0), (0, w.A)(this, "modules", void 0), (0, w.A)(this, "options", void 0), (0, w.A)(this, "components", []), (0, w.A)(this, "loadingContext", void 0), (0, w.A)(this, "cdnContext", void 0), (0, w.A)(this, "update", function() {
@@ -26547,7 +26547,7 @@ var y9 = function() {
     }]), e
 }();
 
-function y7(e) {
+function y9(e) {
     return ve.apply(this, arguments)
 }
 
@@ -26557,7 +26557,7 @@ function ve() {
         return s().wrap(function(e) {
             for (;;) switch (e.prev = e.next) {
                 case 0:
-                    return n = new y9(t), e.next = 3, n.initialize();
+                    return n = new y7(t), e.next = 3, n.initialize();
                 case 3:
                     return e.abrupt("return", e.sent);
                 case 4:
@@ -26566,7 +26566,7 @@ function ve() {
             }
         }, e)
     }))).apply(this, arguments)
-}(0, w.A)(y9, "version", {
+}(0, w.A)(y7, "version", {
     version: "5.51.0",
     revision: "7d67e7b",
     branch: "HEAD",

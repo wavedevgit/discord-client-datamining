@@ -1,10 +1,10 @@
 /** chunk id: 201700, original params: t,e,a (module,exports,require) **/
 a.d(e, {
     default: () => g
-}), a(896048), a(228524);
+});
 var i = a(627968),
-    l = a(64700),
-    n = a(158954),
+    n = a(64700),
+    l = a(158954),
     r = a(397927),
     s = a(181658),
     o = a(208882),
@@ -13,52 +13,51 @@ var i = a(627968),
     u = a(550886);
 
 function g(t) {
-    var e, a;
     let {
-        transitionState: g,
-        onClose: p,
-        entry: b
-    } = t, [h, m] = l.useState(null != (e = b.description) ? e : ""), [C, x] = l.useState(null != (a = b.primaryCategoryId) ? a : c.mU.UNCATEGORIZED), [_, v] = l.useState(!1), [y, I] = l.useState(null), k = async () => {
-        if (I(null), h !== b.description || C !== b.primaryCategoryId) {
-            v(!0);
+        transitionState: e,
+        onClose: a,
+        entry: g
+    } = t, [p, b] = n.useState(g.description ?? ""), [h, m] = n.useState(g.primaryCategoryId ?? c.mU.UNCATEGORIZED), [C, x] = n.useState(!1), [_, y] = n.useState(null), I = async () => {
+        if (y(null), p !== g.description || h !== g.primaryCategoryId) {
+            x(!0);
             try {
-                await (0, o.FA)(b.channelId, b.guildId, h, C), v(!1), p()
+                await (0, o.FA)(g.channelId, g.guildId, p, h), x(!1), a()
             } catch (t) {
-                v(!1), I(new s.A(t))
+                x(!1), y(new s.A(t))
             }
         }
     };
-    return (0, i.jsx)(n.Modal, {
-        transitionState: g,
+    return (0, i.jsx)(l.Modal, {
+        transitionState: e,
         "aria-label": d.intl.string(d.t.eQ2bLp),
-        onClose: p,
+        onClose: a,
         title: d.intl.formatToPlainString(d.t.w9tsNk, {
-            guildName: b.name
+            guildName: g.name
         }),
         subtitle: d.intl.string(d.t["vEkX/8"]),
         actions: [{
             variant: "primary",
             text: d.intl.string(d.t["R3BPH+"]),
-            onClick: k,
-            loading: _
+            onClick: I,
+            loading: C
         }],
         children: (0, i.jsxs)("div", {
             className: u.iW,
             children: [(0, i.jsx)(r.fs1, {
                 label: d.intl.string(d.t.FFFAGt),
-                value: h,
+                value: p,
                 maxLength: 200,
                 placeholder: d.intl.string(d.t.VzuITC),
-                onChange: m,
-                error: null == y ? void 0 : y.getAnyErrorMessage()
+                onChange: b,
+                error: _?.getAnyErrorMessage()
             }), (0, i.jsx)(r.l6P, {
                 selectionMode: "single",
                 label: d.intl.string(d.t.Olo8FB),
                 placeholder: d.intl.string(d.t.XqMe3N),
-                options: (0, c.g2)(b.channelId),
+                options: (0, c.g2)(g.channelId),
                 clearable: !1,
-                value: C,
-                onSelectionChange: x,
+                value: h,
+                onSelectionChange: m,
                 maxOptionsVisible: 4
             })]
         })

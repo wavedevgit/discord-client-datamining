@@ -1,202 +1,174 @@
 /** chunk id: 599907, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    Ay: () => x,
-    jO: () => j,
-    nO: () => N
-}), n(896048), n(228524);
-var r = n(627968),
-    i = n(64700),
+    Ay: () => L,
+    jO: () => O,
+    nO: () => y
+});
+var i = n(627968),
+    r = n(64700),
     l = n(503698),
     a = n.n(l),
     s = n(311907),
     o = n(230109),
-    c = n(397927),
-    u = n(442433),
-    d = n(736653),
-    p = n(573435),
+    d = n(397927),
+    c = n(442433),
+    u = n(736653),
+    A = n(573435),
     h = n(635350),
-    f = n(726187),
-    g = n(542678),
-    m = n(714991),
-    A = n(776231),
-    _ = n(486020),
-    b = n(351022),
-    E = n(244229),
-    O = n(652215),
-    y = n(985018),
-    I = n(156323),
-    v = n(937495),
-    S = n(517061),
-    C = n(970890);
+    _ = n(726187),
+    m = n(542678),
+    p = n(714991),
+    g = n(776231),
+    E = n(486020),
+    I = n(351022),
+    f = n(244229),
+    C = n(652215),
+    T = n(985018),
+    N = n(156323),
+    S = n(937495),
+    x = n(517061),
+    v = n(970890);
 
-function N(e) {
+function y(e) {
     let {
         guild: t,
         onClick: l,
         onView: s
-    } = e, [f, g] = i.useState(!1), [b, N] = i.useState(!1), [T, j] = i.useState(!1), x = i.useRef(null), P = i.useCallback(async () => {
-        N(!0);
+    } = e, [_, m] = r.useState(!1), [I, y] = r.useState(!1), [b, O] = r.useState(!1), L = r.useRef(null), R = r.useCallback(async () => {
+        y(!0);
         try {
             await l(t.id)
         } finally {
-            N(!1)
+            y(!1)
         }
-    }, [t.id, l]), w = i.useCallback(e => {
-        e && !f && (g(!0), null == s || s(t.id))
-    }, [t.id, f, s]), L = i.useCallback(e => {
-        (0, u.L3)(e, async () => {
+    }, [t.id, l]), P = r.useCallback(e => {
+        e && !_ && (m(!0), s?.(t.id))
+    }, [t.id, _, s]), j = r.useCallback(e => {
+        (0, c.L3)(e, async () => {
             let {
                 default: e
             } = await n.e("39572").then(n.bind(n, 235327));
-            return n => {
-                var i, l;
-                return (0, r.jsx)(e, (i = function(e) {
-                    for (var t = 1; t < arguments.length; t++) {
-                        var n = null != arguments[t] ? arguments[t] : {},
-                            r = Object.keys(n);
-                        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                            return Object.getOwnPropertyDescriptor(n, e).enumerable
-                        }))), r.forEach(function(t) {
-                            var r;
-                            r = n[t], t in e ? Object.defineProperty(e, t, {
-                                value: r,
-                                enumerable: !0,
-                                configurable: !0,
-                                writable: !0
-                            }) : e[t] = r
-                        })
-                    }
-                    return e
-                }({}, n), l = l = {
-                    guild: t
-                }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
-                    var n = Object.keys(e);
-                    if (Object.getOwnPropertySymbols) {
-                        var r = Object.getOwnPropertySymbols(e);
-                        n.push.apply(n, r)
-                    }
-                    return n
-                })(Object(l)).forEach(function(e) {
-                    Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
-                }), i))
-            }
+            return n => (0, i.jsx)(e, {
+                ...n,
+                guild: t
+            })
         })
-    }, [t]), R = (0, d.Ay)(), D = t.features.has(O.GuildFeatures.HUB), M = i.useMemo(() => {
-        let e = _.Ay.getGuildDiscoverySplashURL({
+    }, [t]), D = (0, u.Ay)(), M = t.features.has(C.GuildFeatures.HUB), w = r.useMemo(() => {
+        let e = E.Ay.getGuildDiscoverySplashURL({
             id: t.id,
             splash: t.discoverySplash,
-            size: 300 * (0, A.mZ)()
+            size: 300 * (0, g.mZ)()
         });
         if (null != e) return e;
-        if (D) return C;
-        switch (R) {
-            case O.NJ8.DARK:
-                return v;
-            case O.NJ8.LIGHT:
-                return S
+        if (M) return v;
+        switch (D) {
+            case C.NJ8.DARK:
+                return S;
+            case C.NJ8.LIGHT:
+                return x
         }
-    }, [t.discoverySplash, t.id, D, R]), k = i.useMemo(() => _.Ay.getGuildIconURL({
+    }, [t.discoverySplash, t.id, M, D]), U = r.useMemo(() => E.Ay.getGuildIconURL({
         id: t.id,
         icon: t.icon,
         size: 48
     }), [t.icon, t.id]);
-    return (0, r.jsxs)("div", {
-        className: I.kL,
-        children: [b && (0, r.jsx)("div", {
-            className: I.dc,
-            children: (0, r.jsx)(c.y$y, {
-                type: c.y$y.Type.PULSING_ELLIPSIS,
-                className: I.u1
+    return (0, i.jsxs)("div", {
+        className: N.kL,
+        children: [I && (0, i.jsx)("div", {
+            className: N.dc,
+            children: (0, i.jsx)(d.y$y, {
+                type: d.y$y.Type.PULSING_ELLIPSIS,
+                className: N.u1
             })
-        }), (0, r.jsx)(o.L, {
-            innerRef: x,
-            onChange: w,
-            active: !f,
+        }), (0, i.jsx)(o.L, {
+            innerRef: L,
+            onChange: P,
+            active: !_,
             threshold: .55,
-            children: (0, r.jsxs)(h.A, {
-                ref: x,
-                className: I.Nr,
-                onClick: P,
-                disabled: b,
-                onContextMenu: L,
-                "aria-label": y.intl.string(y.t["M9wQ+f"]),
-                children: [(0, r.jsxs)("div", {
-                    className: I.wx,
-                    children: [(0, r.jsx)("div", {
-                        className: a()(I.vK, {
-                            [I.Kc]: T
+            children: (0, i.jsxs)(h.A, {
+                ref: L,
+                className: N.Nr,
+                onClick: R,
+                disabled: I,
+                onContextMenu: j,
+                "aria-label": T.intl.string(T.t["M9wQ+f"]),
+                children: [(0, i.jsxs)("div", {
+                    className: N.wx,
+                    children: [(0, i.jsx)("div", {
+                        className: a()(N.vK, {
+                            [N.Kc]: b
                         }),
-                        children: (0, r.jsx)("img", {
-                            src: M,
+                        children: (0, i.jsx)("img", {
+                            src: w,
                             alt: "",
-                            className: I._e,
-                            onLoad: () => j(!0)
+                            className: N._e,
+                            onLoad: () => O(!0)
                         })
-                    }), (0, r.jsx)(E.A, {
-                        className: I.gw,
+                    }), (0, i.jsx)(f.A, {
+                        className: N.gw,
                         guildId: t.id
-                    }), (0, r.jsx)("div", {
-                        className: I.Kk,
-                        children: (0, r.jsx)(p.Ay, {
-                            mask: p.Ay.Masks.SQUIRCLE,
+                    }), (0, i.jsx)("div", {
+                        className: N.Kk,
+                        children: (0, i.jsx)(A.Ay, {
+                            mask: A.Ay.Masks.SQUIRCLE,
                             width: 56,
                             height: 56,
-                            children: (0, r.jsx)("div", {
-                                className: I.SA,
-                                children: (0, r.jsx)(p.Ay, {
-                                    mask: p.Ay.Masks.SQUIRCLE,
+                            children: (0, i.jsx)("div", {
+                                className: N.SA,
+                                children: (0, i.jsx)(A.Ay, {
+                                    mask: A.Ay.Masks.SQUIRCLE,
                                     width: 48,
                                     height: 48,
-                                    children: (0, r.jsx)("img", {
-                                        src: k,
+                                    children: (0, i.jsx)("img", {
+                                        src: U,
                                         alt: "",
-                                        className: I.my
+                                        className: N.my
                                     })
                                 })
                             })
                         })
                     })]
-                }), (0, r.jsxs)("div", {
-                    className: I.gI,
-                    children: [(0, r.jsxs)("div", {
-                        className: I.DD,
-                        children: [(0, r.jsx)(m.A, {
-                            className: I.n2,
+                }), (0, i.jsxs)("div", {
+                    className: N.gI,
+                    children: [(0, i.jsxs)("div", {
+                        className: N.DD,
+                        children: [(0, i.jsx)(p.A, {
+                            className: N.n2,
                             guild: t,
-                            tooltipColor: c.STz.Colors.PRIMARY
-                        }), (0, r.jsx)(c.Heading, {
+                            tooltipColor: d.STz.Colors.PRIMARY
+                        }), (0, i.jsx)(d.Heading, {
                             variant: "heading-md/semibold",
-                            className: I.J5,
+                            className: N.J5,
                             children: t.name
                         })]
-                    }), (0, r.jsx)(c.Text, {
-                        className: I.h_,
+                    }), (0, i.jsx)(d.Text, {
+                        className: N.h_,
                         variant: "text-sm/normal",
                         color: "text-default",
                         children: t.description
-                    }), (0, r.jsxs)("div", {
-                        className: I.bu,
-                        children: [null != t.presenceCount && (0, r.jsxs)("div", {
-                            className: I.CV,
-                            children: [(0, r.jsx)("div", {
-                                className: I.SP
-                            }), (0, r.jsx)(c.Text, {
-                                className: I.ac,
+                    }), (0, i.jsxs)("div", {
+                        className: N.bu,
+                        children: [null != t.presenceCount && (0, i.jsxs)("div", {
+                            className: N.CV,
+                            children: [(0, i.jsx)("div", {
+                                className: N.SP
+                            }), (0, i.jsx)(d.Text, {
+                                className: N.ac,
                                 variant: "text-xs/normal",
                                 color: "text-default",
-                                children: y.intl.format(y.t["LC+S+m"], {
+                                children: T.intl.format(T.t["LC+S+m"], {
                                     membersOnline: t.presenceCount
                                 })
                             })]
-                        }), null != t.memberCount && (0, r.jsxs)("div", {
-                            className: I.CV,
-                            children: [(0, r.jsx)("div", {
-                                className: I.PB
-                            }), (0, r.jsx)(c.Text, {
-                                className: I.ac,
+                        }), null != t.memberCount && (0, i.jsxs)("div", {
+                            className: N.CV,
+                            children: [(0, i.jsx)("div", {
+                                className: N.PB
+                            }), (0, i.jsx)(d.Text, {
+                                className: N.ac,
                                 variant: "text-xs/normal",
                                 color: "text-default",
-                                children: y.intl.format(y.t.zRl6XR, {
+                                children: T.intl.format(T.t.zRl6XR, {
                                     count: t.memberCount
                                 })
                             })]
@@ -208,54 +180,51 @@ function N(e) {
     })
 }
 
-function T(e) {
+function b(e) {
     let {
         guildId: t,
         onClick: n,
-        onView: i
-    } = e, l = (0, s.bG)([b.A], () => b.A.getGuild(t));
-    return null == l ? null : (0, r.jsx)(N, {
+        onView: r
+    } = e, l = (0, s.bG)([I.A], () => I.A.getGuild(t));
+    return null == l ? null : (0, i.jsx)(y, {
         guild: l,
         onClick: n,
-        onView: i
+        onView: r
     })
 }
 
-function j(e) {
+function O(e) {
     let {
         guildId: t,
         index: n,
         onClick: l,
         onView: a
-    } = e, s = i.useRef(null == t), o = i.useCallback((e, t, n, i) => null == t.guildId ? (0, r.jsx)(g.A, {
+    } = e, s = r.useRef(null == t), o = r.useCallback((e, t, n, r) => null == t.guildId ? (0, i.jsx)(m.A, {
         state: n,
-        cleanUp: i,
-        children: (0, r.jsx)(f.A, {
-            className: I.qf
+        cleanUp: r,
+        children: (0, i.jsx)(_.A, {
+            className: N.qf
         })
-    }, e) : (0, r.jsx)(g.A, {
+    }, e) : (0, i.jsx)(m.A, {
         state: n,
-        cleanUp: i,
+        cleanUp: r,
         animate: s.current,
-        children: (0, r.jsx)(T, {
+        children: (0, i.jsx)(b, {
             guildId: t.guildId,
             onClick: l,
             onView: a
         })
-    }, e), [l, a]), u = i.useCallback(e => {
-        var t;
-        return null != (t = e.guildId) ? t : "".concat(e.index)
-    }, []), d = i.useMemo(() => [{
+    }, e), [l, a]), c = r.useCallback(e => e.guildId ?? `${e.index}`, []), u = r.useMemo(() => [{
         guildId: t,
         index: n
     }], [t, n]);
-    return (0, r.jsx)("div", {
-        className: I.NK,
-        children: (0, r.jsx)(c.Fai, {
-            items: d,
+    return (0, i.jsx)("div", {
+        className: N.NK,
+        children: (0, i.jsx)(d.Fai, {
+            items: u,
             renderItem: o,
-            getItemKey: u
+            getItemKey: c
         })
     })
 }
-let x = i.memo(T)
+let L = r.memo(b)

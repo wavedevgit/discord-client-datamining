@@ -1,49 +1,72 @@
 /** chunk id: 848752, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
     Ay: () => h,
-    Oj: () => p,
-    Q8: () => b
-}), n(896048);
-var r, l = n(627968),
-    a = n(64700),
-    i = n(503698),
-    o = n.n(i),
-    s = n(397927),
-    c = n(532197),
+    Oj: () => m,
+    Q8: () => _
+});
+var a = n(627968),
+    l = n(64700),
+    r = n(503698),
+    s = n.n(r),
+    i = n(397927),
+    o = n(532197),
     d = n(331026);
-
-function u(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-let _ = {
+let c = {
     CENTER: d.Hu,
     LEFT: d.Vl
 };
-class m extends(r = a.PureComponent) {
+class u extends l.PureComponent {
+    static Align = c;
+    static defaultProps = {
+        scrollToPadding: {
+            top: 0,
+            left: 0,
+            bottom: 0,
+            right: 0
+        },
+        align: c.CENTER
+    };
+    _scrollerRef = null;
+    _paginationItemRefs = [];
     componentDidUpdate(e) {
         let {
             selectedIndex: t
         } = this.props;
         e.selectedIndex !== t && this.handleSelectedIndexChange(t)
     }
+    handleSetScrollerRef = e => {
+        this._scrollerRef = e
+    };
+    handleSelectedIndexChange = e => {
+        let t = this._scrollerRef;
+        if (null == t) return;
+        let n = this._paginationItemRefs[e];
+        null != n && t.scrollIntoViewNode({
+            node: n,
+            animate: !0,
+            padding: this.props.scrollToPadding
+        })
+    };
+    handlePageClick = e => {
+        let {
+            onSetItem: t
+        } = this.props;
+        t(e)
+    };
     render() {
         let {
             renderItem: e,
             items: t,
             vertical: n,
             paginationContainerClass: r,
-            align: i
+            align: o
         } = this.props, c = n ? d.XA : d.BU;
-        return (0, l.jsx)(s.GtU, {
+        return (0, a.jsx)(i.GtU, {
             orientation: n ? "vertical" : "horizontal",
-            className: o()(c, r, i),
+            className: s()(c, r, o),
             ref: this.handleSetScrollerRef,
-            children: t.map((t, n) => a.cloneElement(e(t, n), {
+            children: t.map((t, n) => l.cloneElement(e(t, n), {
                 onClick: () => this.handlePageClick(n),
                 key: n,
                 ref: e => {
@@ -52,81 +75,49 @@ class m extends(r = a.PureComponent) {
             }))
         })
     }
-    constructor(...e) {
-        super(...e), u(this, "_scrollerRef", null), u(this, "_paginationItemRefs", []), u(this, "handleSetScrollerRef", e => {
-            this._scrollerRef = e
-        }), u(this, "handleSelectedIndexChange", e => {
-            let t = this._scrollerRef;
-            if (null == t) return;
-            let n = this._paginationItemRefs[e];
-            null != n && t.scrollIntoViewNode({
-                node: n,
-                animate: !0,
-                padding: this.props.scrollToPadding
-            })
-        }), u(this, "handlePageClick", e => {
-            let {
-                onSetItem: t
-            } = this.props;
-            t(e)
-        })
-    }
 }
-u(m, "Align", _), u(m, "defaultProps", {
-    scrollToPadding: {
-        top: 0,
-        left: 0,
-        bottom: 0,
-        right: 0
-    },
-    align: _.CENTER
-});
-class b extends a.PureComponent {
+class _ extends l.PureComponent {
+    handlePrevClick = e => {
+        e.stopPropagation(), e.preventDefault();
+        let {
+            onClick: t
+        } = this.props;
+        t?.(e)
+    };
     render() {
         let {
             className: e
         } = this.props;
-        return (0, l.jsx)(s.DUT, {
-            className: o()(d.t1, e),
+        return (0, a.jsx)(i.DUT, {
+            className: s()(d.t1, e),
             onClick: this.handlePrevClick,
-            children: (0, l.jsx)(c.A, {
+            children: (0, a.jsx)(o.A, {
                 className: d.UE,
-                direction: c.A.Directions.LEFT
+                direction: o.A.Directions.LEFT
             })
         })
     }
-    constructor(...e) {
-        super(...e), u(this, "handlePrevClick", e => {
-            e.stopPropagation(), e.preventDefault();
-            let {
-                onClick: t
-            } = this.props;
-            null == t || t(e)
-        })
-    }
 }
-class p extends a.PureComponent {
+class m extends l.PureComponent {
+    handleNextClick = e => {
+        e.stopPropagation(), e.preventDefault();
+        let {
+            onClick: t
+        } = this.props;
+        t?.(e)
+    };
     render() {
         let {
             className: e
         } = this.props;
-        return (0, l.jsx)(s.DUT, {
-            className: o()(d.XS, e),
+        return (0, a.jsx)(i.DUT, {
+            className: s()(d.XS, e),
             onClick: this.handleNextClick,
-            children: (0, l.jsx)(c.A, {
+            children: (0, a.jsx)(o.A, {
                 className: d.UE,
-                direction: c.A.Directions.RIGHT
+                direction: o.A.Directions.RIGHT
             })
         })
     }
-    constructor(...e) {
-        super(...e), u(this, "handleNextClick", e => {
-            e.stopPropagation(), e.preventDefault();
-            let {
-                onClick: t
-            } = this.props;
-            null == t || t(e)
-        })
-    }
 }
-let h = m
+let h = u

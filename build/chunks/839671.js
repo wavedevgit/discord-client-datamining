@@ -1,146 +1,146 @@
-/** chunk id: 839671, original params: e,t,l (module,exports,require) **/
-l.d(t, {
-    A: () => h,
-    R: () => j
-}), l(65821), l(638769);
-var n = l(627968);
-l(64700);
-var i = l(503698),
-    a = l.n(i),
-    r = l(798236),
-    s = l(990078),
-    o = l(397927),
-    c = l(409626),
-    d = l(985018),
-    u = l(851822),
-    m = l(307291);
-let x = [r.w.OFFICIAL, r.w.TWITTER, r.w.YOUTUBE];
+/** chunk id: 839671, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    A: () => f,
+    R: () => p
+});
+var l = i(627968);
+i(64700);
+var a = i(503698),
+    n = i.n(a),
+    s = i(505779),
+    r = i(990078),
+    c = i(397927),
+    o = i(409626),
+    d = i(985018),
+    u = i(851822),
+    m = i(307291);
+let x = [s.V.OFFICIAL, s.V.TWITTER, s.V.YOUTUBE];
 
-function f(e) {
+function g(e) {
     switch (e.category) {
-        case r.w.OFFICIAL:
+        case s.V.OFFICIAL:
             return {
-                icon: (0, n.jsx)(o.L_e, {
+                icon: (0, l.jsx)(c.L_e, {
                     colorClass: m.wP
-                }), action: c.Ws.WebsiteLink, title: d.intl.string(d.t.fOUKvg)
+                }), action: o.Ws.WebsiteLink, title: d.intl.string(d.t.fOUKvg)
             };
-        case r.w.TWITTER:
+        case s.V.TWITTER:
             return {
-                icon: (0, n.jsx)(o.p3p, {
+                icon: (0, l.jsx)(c.p3p, {
                     colorClass: m.wP
-                }), action: c.Ws.XLink, title: d.intl.string(d.t.INic4y)
+                }), action: o.Ws.XLink, title: d.intl.string(d.t.INic4y)
             };
-        case r.w.YOUTUBE:
+        case s.V.YOUTUBE:
             return {
-                action: c.Ws.YouTubeLink, icon: (0, n.jsx)(o.CiD, {
+                action: o.Ws.YouTubeLink, icon: (0, l.jsx)(c.CiD, {
                     colorClass: m.wP
                 }), title: d.intl.string(d.t.lNmxbE)
             };
         default:
-            throw Error("Unknown IGDB website category")
+            throw Error("Unknown website category")
     }
 }
 
-function g(e) {
+function h(e) {
     let {
         website: t,
-        trackClick: l
+        trackClick: i
     } = e, {
-        action: i,
-        icon: a,
-        title: r
-    } = f(t);
-    return (0, n.jsx)(s.m, {
-        __unsupportedReactNodeAsText: t.url,
-        children: (0, n.jsx)(o.MzZ, {
+        action: a,
+        icon: n,
+        title: s
+    } = g(t);
+    return (0, l.jsx)(r.m, {
+        text: s,
+        children: (0, l.jsx)(c.MzZ, {
             onClick: () => {
-                l(i)
+                i(a)
             },
             className: m.yO,
-            title: r,
             href: t.url,
             target: "_blank",
-            children: a
+            "aria-label": s,
+            children: n
         })
     })
 }
-let h = function(e) {
+let f = function(e) {
     let {
         detectedGame: t,
-        trackClick: l
+        trackClick: i
     } = e;
     if (null == t.websites) return null;
-    let i = t.websites.filter(e => {
+    let a = t.websites.filter(e => {
         let {
             category: t
         } = e;
         return x.includes(t)
     }).sort((e, t) => e.category - t.category);
-    return 0 === i.length ? null : (0, n.jsxs)("div", {
-        children: [(0, n.jsx)(o.Heading, {
+    return 0 === a.length ? null : (0, l.jsxs)("div", {
+        children: [(0, l.jsx)(c.Heading, {
             className: u.bV,
             variant: "text-xs/semibold",
             color: "text-default",
             children: d.intl.string(d.t["Oj3o1/"])
-        }), (0, n.jsx)("div", {
-            className: a()(u.nM, u.mX),
-            children: i.map(e => (0, n.jsx)(g, {
+        }), (0, l.jsx)("div", {
+            className: n()(u.nM, u.mX),
+            children: a.map(e => (0, l.jsx)(h, {
                 website: e,
-                trackClick: l
+                trackClick: i
             }, e.url))
         })]
     })
 };
 
-function p(e) {
+function j(e) {
     let {
         website: t,
-        trackClick: l
+        trackClick: i
     } = e, {
-        action: i,
-        icon: a,
-        title: r
-    } = f(t);
-    return (0, n.jsx)(s.m, {
+        action: a,
+        icon: n,
+        title: s
+    } = g(t);
+    return (0, l.jsx)(r.m, {
         __unsupportedReactNodeAsText: t.url,
-        children: (0, n.jsx)(o.DUT, {
+        children: (0, l.jsx)(c.DUT, {
             tag: "a",
             onClick: () => {
-                l(i)
+                i(a)
             },
             className: m.yO,
-            title: r,
+            title: s,
             href: t.url,
             target: "_blank",
             rel: "noreferrer noopener",
-            children: a
+            children: n
         })
     })
 }
 
-function j(e) {
+function p(e) {
     let {
         detectedGame: t,
-        trackClick: l
+        trackClick: i
     } = e;
     if (null == t.websites) return null;
-    let i = t.websites.filter(e => {
+    let a = t.websites.filter(e => {
         let {
             category: t
         } = e;
         return x.includes(t)
     }).sort((e, t) => e.category - t.category);
-    return 0 === i.length ? null : (0, n.jsxs)("div", {
-        children: [(0, n.jsx)(o.Heading, {
+    return 0 === a.length ? null : (0, l.jsxs)("div", {
+        children: [(0, l.jsx)(c.Heading, {
             className: u.bV,
             variant: "text-xs/semibold",
             color: "text-default",
             children: d.intl.string(d.t["Oj3o1/"])
-        }), (0, n.jsx)("div", {
-            className: a()(u.nM, u.mX),
-            children: i.map(e => (0, n.jsx)(p, {
+        }), (0, l.jsx)("div", {
+            className: n()(u.nM, u.mX),
+            children: a.map(e => (0, l.jsx)(j, {
                 website: e,
-                trackClick: l
+                trackClick: i
             }, e.url))
         })]
     })

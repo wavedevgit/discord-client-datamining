@@ -1,46 +1,45 @@
 /** chunk id: 536189, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => u
+    A: () => c
 });
-var r = n(627968),
-    i = n(64700),
-    l = n(172710),
+var i = n(627968),
+    l = n(64700),
+    r = n(172710),
     a = n(456060),
     s = n(659051),
     o = n(798899),
-    c = n(829963);
+    d = n(829963);
 
-function u(e) {
-    var t;
+function c(e) {
     let {
-        application: n,
-        currentUserPresenceActivity: u,
-        hideParty: d,
-        message: p,
-        onView: m,
-        partyStatusElement: f,
-        presenceActivity: g,
-        guildId: _
-    } = e, h = !(0, s.A)(g, p, n.id), b = (0, a.n$)(n.name, null == (t = p.activity) ? void 0 : t.type, h), y = i.useMemo(() => {
-        if (null != g) return () => (0, l.Mp)(g)
-    }, [g]);
-    return h ? (0, r.jsx)(o.A, {
-        application: n,
-        message: p,
-        header: b,
-        onClickContent: y,
-        onView: m,
-        guildId: _
-    }) : (0, r.jsx)(c.A, {
-        application: n,
-        message: p,
-        header: b,
-        presenceActivity: g,
-        hideParty: d,
-        partyStatusElement: f,
-        currentUserPresenceActivity: u,
-        onClickContent: y,
-        onView: m,
-        guildId: _
+        application: t,
+        currentUserPresenceActivity: n,
+        hideParty: c,
+        message: u,
+        onView: _,
+        partyStatusElement: m,
+        presenceActivity: h,
+        guildId: p
+    } = e, g = !(0, s.A)(h, u, t.id), A = (0, a.n$)(t.name, u.activity?.type, g), x = l.useMemo(() => {
+        if (null != h) return () => (0, r.Mp)(h)
+    }, [h]);
+    return g ? (0, i.jsx)(o.A, {
+        application: t,
+        message: u,
+        header: A,
+        onClickContent: x,
+        onView: _,
+        guildId: p
+    }) : (0, i.jsx)(d.A, {
+        application: t,
+        message: u,
+        header: A,
+        presenceActivity: h,
+        hideParty: c,
+        partyStatusElement: m,
+        currentUserPresenceActivity: n,
+        onClickContent: x,
+        onView: _,
+        guildId: p
     })
 }

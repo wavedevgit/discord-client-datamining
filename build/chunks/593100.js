@@ -1,32 +1,14 @@
 /** chunk id: 593100, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => g
-}), n(896048);
-var r, i, l = n(615300);
-
-function s(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-
-function a(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            s(e, t, n[t])
-        })
+    A: () => o
+});
+var i = n(615300);
+class s {
+    animation;
+    constructor(e) {
+        this.animation = e
     }
-    return e
-}
-class o {
     start() {
         return new Promise(e => {
             this.animation.start(() => {
@@ -37,11 +19,12 @@ class o {
     stop() {
         this.animation.stop()
     }
-    constructor(e) {
-        s(this, "animation", void 0), this.animation = e
-    }
 }
-class c {
+class l {
+    animations;
+    constructor(e) {
+        this.animations = e
+    }
     _map(e) {
         return this.animations.map(e)
     }
@@ -51,11 +34,13 @@ class c {
     stop() {
         this._map(e => e.stop())
     }
-    constructor(e) {
-        s(this, "animations", void 0), this.animations = e
-    }
 }
-class d {
+class r {
+    animations;
+    stopped = !1;
+    constructor(e) {
+        this.animations = e
+    }
     async start() {
         for (let e of (this.stopped = !1, this.animations)) {
             if (this.stopped) return;
@@ -65,34 +50,25 @@ class d {
     stop() {
         this.stopped = !0, this.animations.map(e => e.stop())
     }
-    constructor(e) {
-        s(this, "animations", void 0), s(this, "stopped", !1), this.animations = e
-    }
 }
 
-function u(e, t, n) {
-    return new o(n(e, a({}, t)))
+function a(e, t, n) {
+    return new s(n(e, {
+        ...t
+    }))
 }
-let g = (r = a({}, l.A), i = i = {
+let o = {
+    ...i.A,
     timing: function(e, t) {
-        return u(e, t, l.A.timing)
+        return a(e, t, i.A.timing)
     },
     spring: function(e, t) {
-        return u(e, t, l.A.spring)
+        return a(e, t, i.A.spring)
     },
     parallel: function(e) {
-        return new c(e)
+        return new l(e)
     },
     sequence: function(e) {
-        return new d(e)
+        return new r(e)
     }
-}, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-        var r = Object.getOwnPropertySymbols(e);
-        n.push.apply(n, r)
-    }
-    return n
-})(Object(i)).forEach(function(e) {
-    Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
-}), r)
+}

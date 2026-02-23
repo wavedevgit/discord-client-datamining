@@ -1,24 +1,23 @@
 /** chunk id: 810181, original params: e,t,s (module,exports,require) **/
 s.d(t, {
-    m: () => a
+    m: () => r
 }), s(321073);
-var i = s(311907),
-    n = s(994500),
-    r = s(741961),
-    l = s(287809);
+var n = s(311907),
+    l = s(994500),
+    a = s(741961),
+    i = s(287809);
 
-function a(e) {
+function r(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : Number.MAX_SAFE_INTEGER;
-    return (0, i.yK)([l.default, r.A, n.A], () => {
-        var s;
-        let i = null == (s = l.default.getCurrentUser()) ? void 0 : s.id,
-            a = r.A.getTypingUsers(e),
-            o = [];
-        for (let e in a) {
-            if (o.length >= t) break;
-            let s = l.default.getUser(e);
-            null != s && s.id !== i && (n.A.isBlockedOrIgnored(s.id) || o.push(s.id))
+    return (0, n.yK)([i.default, a.A, l.A], () => {
+        let s = i.default.getCurrentUser()?.id,
+            n = a.A.getTypingUsers(e),
+            r = [];
+        for (let e in n) {
+            if (r.length >= t) break;
+            let n = i.default.getUser(e);
+            null != n && n.id !== s && (l.A.isBlockedOrIgnored(n.id) || r.push(n.id))
         }
-        return o
+        return r
     }, [e, t])
 }

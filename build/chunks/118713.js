@@ -1,5 +1,72 @@
-/** chunk id: 118713, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => a
+/** chunk id: 118713, original params: e,t,r (module,exports,require) **/
+r.d(t, {
+    A: () => s
 });
-let a = "https://cdn.discordapp.com/assets/content/333650072ffe3aa581594ad0a78d525ce57e9e34bd236acb81db8b75aa25df7c.webm"
+var l = r(627968),
+    d = r(64700),
+    c = r(503698),
+    a = r.n(c),
+    n = r(713517),
+    o = r(949317);
+let u = e => {
+        let {
+            position: t,
+            children: r
+        } = e;
+        return (0, l.jsx)("div", {
+            className: a()(o.child, o[t]),
+            children: r
+        })
+    },
+    s = e => {
+        let {
+            children: t,
+            paused: r = !1,
+            slideDuration: c = 5e3
+        } = e, [a, s] = d.useState(0), i = d.useRef(null), h = (0, n.M)(i), m = d.useRef(void 0), p = d.useMemo(() => d.Children.map(t, e => d.isValidElement(e) ? null != e && "object" == typeof e && e.$$typeof === Symbol.for("react.portal") ? e : d.cloneElement(e, {
+            tabIndex: -1
+        }) : e), [t]);
+        d.useEffect(() => {
+            Array.isArray(p) ? s(a >= p?.length ? Math.max(p?.length - 1, 0) : a) : s(0)
+        }, [p, a]);
+        let k = r || h;
+        return (d.useEffect(() => {
+            if (k) {
+                null != m.current && (window.clearTimeout(m.current), m.current = void 0);
+                return
+            }
+            let e = () => {
+                s(e => {
+                    let t = e + 1;
+                    return t >= (p?.length ?? 1) ? 0 : t
+                }), m.current = window.setTimeout(e, c)
+            };
+            window.clearTimeout(m.current), m.current = window.setTimeout(e, c)
+        }, [k, c, p]), d.useEffect(() => () => {
+            window.clearTimeout(m.current)
+        }, []), null == p) ? null : Array.isArray(p) ? (0, l.jsx)("div", {
+            ref: i,
+            className: o.carousel,
+            children: (0, l.jsx)("div", {
+                className: o.children,
+                children: p?.map((e, t) => {
+                    var r, d, c;
+                    let n = (r = t, d = a, c = p.length, r === d ? "center" : r < d ? d === c - 1 && 0 === r ? "right" : "left" : 0 === d && r === c - 1 ? "left" : "right");
+                    return (0, l.jsx)(u, {
+                        position: n,
+                        children: e
+                    }, t)
+                })
+            })
+        }) : (0, l.jsx)("div", {
+            ref: i,
+            className: o.carousel,
+            children: (0, l.jsx)("div", {
+                className: o.children,
+                children: (0, l.jsx)(u, {
+                    position: "center",
+                    children: t
+                })
+            })
+        })
+    }

@@ -2,11 +2,11 @@
 n.d(t, {
     G: () => c
 });
-var r = n(311907),
-    i = n(166403),
-    l = n(927578),
-    s = n(422936),
-    a = n(234419),
+var i = n(311907),
+    s = n(166403),
+    a = n(927578),
+    r = n(422936),
+    l = n(234419),
     o = n(788868);
 
 function c(e) {
@@ -17,14 +17,14 @@ function c(e) {
         onTier0TrialOffer: d,
         onTier2TrialOffer: u,
         onTier0TrialPeriod: _,
-        onTier2TrialPeriod: p,
-        onNonTier2Subscriber: m,
+        onTier2TrialPeriod: m,
+        onNonTier2Subscriber: A,
         onTier2Subscriber: g,
-        onCustomCriteria: A
-    } = e, f = (0, a.V)(), b = (0, s.O)(), h = (0, r.bG)([i.A], () => i.A.getPremiumTypeSubscription()), E = l.Ay.getPremiumTypeFromSubscription(h);
-    if (null != A) {
-        let e = A();
+        onCustomCriteria: h
+    } = e, x = (0, l.V)(), p = (0, r.O)(), E = (0, i.bG)([s.A], () => s.A.getPremiumTypeSubscription()), C = a.Ay.getPremiumTypeFromSubscription(E);
+    if (null != h) {
+        let e = h();
         if (null != e) return e
     }
-    return null != f && o.TP[f.trial_id].skus.includes(o.pe.TIER_0) ? null != d ? d : t : null != f && o.TP[f.trial_id].skus.includes(o.pe.TIER_2) ? null != u ? u : t : null != h && h.hasActiveTrial && E === o.PremiumTypes.TIER_0 ? null != _ ? _ : t : null != h && h.hasActiveTrial && E === o.PremiumTypes.TIER_2 ? null != p ? p : t : null != b ? null != n ? n : t : null == E ? null != c ? c : t : E === o.PremiumTypes.TIER_0 || E === o.PremiumTypes.TIER_1 ? null != m ? m : t : E === o.PremiumTypes.TIER_2 && null != g ? g : t
+    return null != x && o.TP[x.trial_id].skus.includes(o.pe.TIER_0) ? d ?? t : null != x && o.TP[x.trial_id].skus.includes(o.pe.TIER_2) ? u ?? t : null != E && E.hasActiveTrial && C === o.PremiumTypes.TIER_0 ? _ ?? t : null != E && E.hasActiveTrial && C === o.PremiumTypes.TIER_2 ? m ?? t : null != p ? n ?? t : null == C ? c ?? t : C === o.PremiumTypes.TIER_0 || C === o.PremiumTypes.TIER_1 ? A ?? t : C === o.PremiumTypes.TIER_2 ? g ?? t : t
 }

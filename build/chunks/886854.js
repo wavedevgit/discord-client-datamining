@@ -1,43 +1,44 @@
 /** chunk id: 886854, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    yj: () => C
+    yj: () => O
 });
 var n = i(934551),
     l = i(920603),
     s = i(419954),
     r = i(933297),
-    u = i(780964),
-    a = i(358776),
+    a = i(780964),
+    u = i(358776),
     o = i(368631),
     d = i(614651),
-    T = i(859669),
-    A = i(662802),
+    A = i(859669),
+    T = i(662802),
     S = i(988208),
-    c = i(819070),
-    E = i(352694),
-    g = i(136451),
-    _ = i(531525),
+    E = i(819070),
+    g = i(352694),
+    _ = i(136451),
+    c = i(531525),
     I = i(985018);
-let O = (0, s.t_)(u.X.APPEARANCE_PANEL, {
+let N = (0, s.t_)(a.X.APPEARANCE_PANEL, {
         useTitle: () => I.intl.string(I.t["iHH+ky"]),
         initialize: () => {
             (0, l.v)()
         },
-        buildLayout: () => [E.S, A._, g.b, S.U, c.M, T.d]
+        buildLayout: () => [g.S, T._, _.u, S.U, E.M, A.d]
     }),
-    N = (0, s.t_)(u.X.APPEARANCE_PANEL, {
+    C = (0, s.t_)(a.X.APPEARANCE_PANEL, {
         useTitle: () => I.intl.string(I.t["iHH+ky"]),
         StronglyDiscouragedCustomComponent: d.Ay,
         buildLayout: () => []
     }),
-    C = (0, s.i4)(u.X.APPEARANCE_SIDEBAR_ITEM, {
+    O = (0, s.i4)(a.X.APPEARANCE_SIDEBAR_ITEM, {
         useTitle: () => I.intl.string(I.t["iHH+ky"]),
-        getLegacySearchKey: () => (0, a.WJ)("AppearanceSidebarItem") ? void 0 : _.H.APPEARANCE,
+        getLegacySearchKey: () => (0, u.WJ)("AppearanceSidebarItem") ? void 0 : c.H.APPEARANCE,
         icon: n.PaintPaletteIcon,
         trailing: {
-            type: r.S.BADGE_NEW,
+            type: r.Si.BADGE_NEW,
             getDismissibleContentTypes: o.p_,
             stronglyDiscouragedBadgeComponent: o.AW
         },
-        buildLayout: () => (0, a.WJ)("AppearanceSidebarItem") ? [O] : [N]
+        usePredicate: () => !(0, u.bp)("AppearanceSidebarItem"),
+        buildLayout: () => (0, u.WJ)("AppearanceSidebarItem") ? [N] : [C]
     })

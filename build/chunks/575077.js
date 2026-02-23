@@ -1,45 +1,29 @@
-/** chunk id: 575077, original params: e,A,t (module,exports,require) **/
-t.d(A, {
-    p: () => i
+/** chunk id: 575077, original params: A,e,t (module,exports,require) **/
+t.d(e, {
+    p: () => l
 });
-var r = t(627968);
+var n = t(627968);
 t(64700);
-var n = t(397927),
-    l = t(426043),
-    a = t(985018);
+var a = t(397927),
+    r = t(426043),
+    i = t(985018);
 
-function i(e, A) {
+function l(A, e) {
     let t = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {};
-    (0, l.A)({
-        title: e,
-        body: "string" == typeof A ? A : a.intl.format(A, function(e) {
-            for (var A = 1; A < arguments.length; A++) {
-                var t = null != arguments[A] ? arguments[A] : {},
-                    r = Object.keys(t);
-                "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
-                    return Object.getOwnPropertyDescriptor(t, e).enumerable
-                }))), r.forEach(function(A) {
-                    var r;
-                    r = t[A], A in e ? Object.defineProperty(e, A, {
-                        value: r,
-                        enumerable: !0,
-                        configurable: !0,
-                        writable: !0
-                    }) : e[A] = r
-                })
-            }
-            return e
-        }({
-            highlightHook: e => (0, r.jsx)(n.Text, {
+    (0, r.A)({
+        title: A,
+        body: "string" == typeof e ? e : i.intl.format(e, {
+            highlightHook: A => (0, n.jsx)(a.Text, {
                 variant: "text-md/normal",
                 color: "text-default",
                 style: {
                     display: "inline"
                 },
-                children: e
-            })
-        }, t)),
-        cta: a.intl.string(a.t["NX+WJN"]),
+                children: A
+            }),
+            ...t
+        }),
+        cta: i.intl.string(i.t["NX+WJN"]),
         onConfirm: () => {}
     })
 }

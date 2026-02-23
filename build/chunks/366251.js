@@ -1,47 +1,43 @@
 /** chunk id: 366251, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => g
+    A: () => h
 });
-var r, l, i = n(311907),
+var i = n(311907),
     s = n(73153),
-    a = n(383501);
-let o = {},
-    c = !1,
-    u = null;
+    l = n(383501);
+let r = {},
+    a = !1,
+    o = null;
 
-function d(e) {
-    e in o && delete o[e]
+function c(e) {
+    e in r && delete r[e]
 }
 
-function p() {
-    if (!c && a.A.isConnected()) {
-        let e = a.A.getChannelId();
-        if (null != e) return d(e), u = e, c = !0, !0
-    } else if (c && !a.A.isConnected() && null != u) return d(u), u = null, c = !1, !0;
+function d() {
+    if (!a && l.A.isConnected()) {
+        let e = l.A.getChannelId();
+        if (null != e) return c(e), o = e, a = !0, !0
+    } else if (a && !l.A.isConnected() && null != o) return c(o), o = null, a = !1, !0;
     return !1
 }
-class h extends(l = i.Ay.Store) {
+class u extends i.Ay.Store {
+    static displayName = "VoiceInvitesuggestionsStore ";
     initialize() {
-        this.waitFor(a.A), this.syncWith([a.A], p)
+        this.waitFor(l.A), this.syncWith([l.A], d)
     }
     getIsPopoverDismissed(e) {
-        var t;
-        return null != e && null != (t = o[e]) && t
+        return null != e && (r[e] ?? !1)
     }
     getShouldShowPopover(e) {
-        return null != e && a.A.isConnected() && a.A.getChannelId() === e && !this.getIsPopoverDismissed(e)
+        return null != e && l.A.isConnected() && l.A.getChannelId() === e && !this.getIsPopoverDismissed(e)
     }
-}(r = "displayName") in h ? Object.defineProperty(h, r, {
-    value: "VoiceInvitesuggestionsStore ",
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
-}) : h[r] = "VoiceInvitesuggestionsStore ";
-let g = new h(s.h, {
+}
+let h = new u(s.h, {
     VOICE_INVITE_SUGGESTIONS_DISMISS_POPOVER: function(e) {
         let {
             channelId: t
         } = e;
-        return !o[t] && (o[t] = !0, !0)
+        return !r[t] && (r[t] = !0, !0)
     }
 })

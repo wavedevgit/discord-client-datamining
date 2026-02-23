@@ -1,22 +1,22 @@
-/** chunk id: 884569, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    B: () => u
+/** chunk id: 884569, original params: n,e,t (module,exports,require) **/
+t.d(e, {
+    B: () => c
 });
-var i = n(627968);
-n(64700);
-var r = n(311907),
-    l = n(397927),
-    a = n(367130),
-    s = n(486227),
-    o = n(287809),
-    d = n(985018);
+var i = t(627968);
+t(64700);
+var r = t(311907),
+    l = t(397927),
+    a = t(367130),
+    d = t(486227),
+    s = t(287809),
+    u = t(985018);
 
-function u(e) {
-    let t = (0, r.bG)([o.default], () => o.default.getCurrentUser()),
-        n = (0, s.E)(e.id);
-    return (null == t ? void 0 : t.isStaff()) === !0 && e.isDM() && null == n ? (0, i.jsx)(l.Drp, {
+function c(n) {
+    let e = (0, r.bG)([s.default], () => s.default.getCurrentUser()),
+        t = (0, d.E)(n.id);
+    return e?.isStaff() === !0 && n.isDM() && null == t ? (0, i.jsx)(l.Drp, {
         id: "mark-as-likely-ato",
-        label: d.intl.string(d.t.AWKKgc),
-        action: () => (0, a.a)(e.id)
+        label: u.intl.string(u.t.AWKKgc),
+        action: () => (0, a.a)(n.id)
     }) : null
 }

@@ -1,15 +1,15 @@
 /** chunk id: 336496, original params: e,t,l (module,exports,require) **/
 l.d(t, {
     default: () => x
-}), l(896048);
+});
 var n = l(627968),
-    r = l(64700),
+    s = l(64700),
     i = l(158954),
-    s = l(397927),
-    a = l(58149),
-    o = l(615550),
+    a = l(397927),
+    r = l(58149),
+    d = l(615550),
     c = l(652215),
-    d = l(985018),
+    o = l(985018),
     u = l(48854);
 
 function x(e) {
@@ -17,58 +17,58 @@ function x(e) {
         guildId: t,
         transitionState: l,
         onClose: x
-    } = e, [m, j] = r.useState([]), [b, h] = r.useState(), f = [{
-        label: d.intl.string(d.t["//3pvi"]),
-        value: o.n7.DM_SPAM
+    } = e, [m, h] = s.useState([]), [j, _] = s.useState(), A = [{
+        label: o.intl.string(o.t["//3pvi"]),
+        value: d.n7.DM_SPAM
     }, {
-        label: d.intl.string(d.t.SdVsip),
-        value: o.n7.MENTION_SPAM
+        label: o.intl.string(o.t.SdVsip),
+        value: d.n7.MENTION_SPAM
     }, {
-        label: d.intl.string(d.t.uTiSVL),
-        value: o.n7.CHANNEL_SPAM
+        label: o.intl.string(o.t.uTiSVL),
+        value: d.n7.CHANNEL_SPAM
     }, {
-        label: d.intl.string(d.t.GQczU8),
-        value: o.n7.SUS_NEW_MEMBERS
+        label: o.intl.string(o.t.GQczU8),
+        value: d.n7.SUS_NEW_MEMBERS
     }, {
-        label: d.intl.string(d.t.AAgqy3),
-        value: o.n7.CHANGING_SETTINGS
+        label: o.intl.string(o.t.AAgqy3),
+        value: d.n7.CHANGING_SETTINGS
     }, {
-        label: d.intl.string(d.t.ryPKb7),
-        value: o.n7.OTHER
-    }], g = r.useCallback(e => {
-        j(e)
+        label: o.intl.string(o.t.ryPKb7),
+        value: d.n7.OTHER
+    }], g = s.useCallback(e => {
+        h(e)
     }, []);
     return null == t ? (x(), null) : (0, n.jsx)(i.Modal, {
         transitionState: l,
-        title: d.intl.string(d.t.f5hd9P),
+        title: o.intl.string(o.t.f5hd9P),
         actions: [{
-            text: d.intl.string(d.t["ETE/oC"]),
+            text: o.intl.string(o.t["ETE/oC"]),
             onClick: x,
             variant: "secondary"
         }, {
-            text: d.intl.string(d.t.nAt0rE),
+            text: o.intl.string(o.t.nAt0rE),
             onClick: function() {
-                (0, a.zV)(c.HAw.GUILD_RAID_LOCKDOWN_FEEDBACK, {
+                (0, r.zV)(c.HAw.GUILD_RAID_LOCKDOWN_FEEDBACK, {
                     raid_lockdown_feedback_type: m,
-                    raid_lockdown_feedback_other_reason: b,
+                    raid_lockdown_feedback_other_reason: j,
                     guild_id: t
                 }), x()
             },
             disabled: 0 === m.length
         }],
         onClose: x,
-        children: (0, n.jsxs)(s.BJc, {
+        children: (0, n.jsxs)(a.BJc, {
             gap: 8,
-            children: [(0, n.jsx)(s.$QX, {
+            children: [(0, n.jsx)(a.$QX, {
                 selectedValues: m,
                 onChange: g,
-                options: f
-            }), m.includes(o.n7.OTHER) && (0, n.jsx)("div", {
+                options: A
+            }), m.includes(d.n7.OTHER) && (0, n.jsx)("div", {
                 className: u.Q8,
-                children: (0, n.jsx)(s.fs1, {
-                    placeholder: d.intl.string(d.t["PAM+JR"]),
-                    onChange: h,
-                    value: b,
+                children: (0, n.jsx)(a.fs1, {
+                    placeholder: o.intl.string(o.t["PAM+JR"]),
+                    onChange: _,
+                    value: j,
                     autoFocus: !0
                 })
             })]

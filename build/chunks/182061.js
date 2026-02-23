@@ -1,27 +1,26 @@
-/** chunk id: 182061, original params: t,e,n (module,exports,require) **/
-n.d(e, {
-    A: () => d
+/** chunk id: 182061, original params: t,n,e (module,exports,require) **/
+e.d(n, {
+    A: () => o
 });
-var i = n(627968);
-n(64700);
-var r = n(397927),
-    l = n(715757),
-    a = n(867455),
-    o = n(406704),
-    s = n(985018);
+var i = e(627968);
+e(64700);
+var a = e(397927),
+    l = e(715757),
+    r = e(867455),
+    s = e(406704),
+    d = e(985018);
 
-function d(t) {
-    var e;
+function o(t) {
     let n = (0, l.V)(t),
-        d = (0, o.NI)(t),
-        u = (0, o.lK)(t);
-    if ((t.isArchivedThread() ? u : d) && !n) return (null == (e = t.threadMetadata) ? void 0 : e.archived) ? (0, i.jsx)(r.Drp, {
+        e = (0, s.NI)(t),
+        o = (0, s.lK)(t);
+    if ((t.isArchivedThread() ? o : e) && !n) return t.threadMetadata?.archived ? (0, i.jsx)(a.Drp, {
         id: "unarchive-thread",
-        label: t.isForumPost() ? s.intl.string(s.t.cnRubV) : s.intl.string(s.t.S9E4G7),
-        action: () => a.A.unarchiveThread(t, !1)
-    }) : (0, i.jsx)(r.Drp, {
+        label: t.isForumPost() ? d.intl.string(d.t.cnRubV) : d.intl.string(d.t.S9E4G7),
+        action: () => r.A.unarchiveThread(t, !1)
+    }) : (0, i.jsx)(a.Drp, {
         id: "archive-thread",
-        label: t.isForumPost() ? s.intl.string(s.t.BTs4Kb) : s.intl.string(s.t.wiIevd),
-        action: () => a.A.archiveThread(t, !1)
+        label: t.isForumPost() ? d.intl.string(d.t.BTs4Kb) : d.intl.string(d.t.wiIevd),
+        action: () => r.A.archiveThread(t, !1)
     })
 }

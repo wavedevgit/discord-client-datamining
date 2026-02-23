@@ -1,51 +1,51 @@
 /** chunk id: 564152, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => a
+    A: () => l
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(397927),
-    l = n(985018),
-    s = n(87078);
-let a = function(e) {
+var s = n(397927),
+    a = n(985018),
+    r = n(87078);
+let l = function(e) {
     let {
         hasGuildBoostSlots: t,
-        hasAppliedGuildBoosts: a,
+        hasAppliedGuildBoosts: l,
         hasBoostPerk: o,
         canAddBoosts: c
     } = e;
-    return (0, r.jsxs)("div", {
-        className: s.iE,
-        children: [(0, r.jsx)("div", {
-            className: s.bj,
-            children: (0, r.jsx)("img", {
+    return (0, i.jsxs)("div", {
+        className: r.iE,
+        children: [(0, i.jsx)("div", {
+            className: r.bj,
+            children: (0, i.jsx)("img", {
                 alt: "",
-                className: s.KV,
+                className: r.KV,
                 src: n(960954)
             })
-        }), (0, r.jsxs)("div", {
-            className: s.D7,
-            children: [(0, r.jsx)(i.Heading, {
+        }), (0, i.jsxs)("div", {
+            className: r.D7,
+            children: [(0, i.jsx)(s.Heading, {
                 variant: "display-md",
-                className: s.R_,
+                className: r.R_,
                 children: function(e) {
                     let {
                         hasGuildBoostSlots: t,
                         hasAppliedGuildBoosts: n,
-                        hasBoostPerk: r,
-                        canAddBoosts: i
+                        hasBoostPerk: i,
+                        canAddBoosts: s
                     } = e;
-                    return i ? t ? r && !n ? l.intl.format(l.t.s9zQyG, {}) : l.intl.format(l.t.Rb8Jhs, {}) : l.intl.string(l.t["2rh0by"]) : l.intl.format(l.t.Rb8Jhs, {})
+                    return s ? t ? i && !n ? a.intl.format(a.t.s9zQyG, {}) : a.intl.format(a.t.Rb8Jhs, {}) : a.intl.string(a.t["2rh0by"]) : a.intl.format(a.t.Rb8Jhs, {})
                 }({
                     hasGuildBoostSlots: t,
                     hasBoostPerk: o,
-                    hasAppliedGuildBoosts: a,
+                    hasAppliedGuildBoosts: l,
                     canAddBoosts: c
                 })
-            }), (0, r.jsx)("svg", {
+            }), (0, i.jsx)("svg", {
                 viewBox: "0 0 660 210",
-                className: s.Mz,
-                children: (0, r.jsx)("path", {
+                className: r.Mz,
+                children: (0, i.jsx)("path", {
                     d: "M101.3,45.5C57.5,45.9,15.9,82.2,0,99.5V210h660V53.5c-164-137-265.2,32.4-385.8,33.6  C177.7,88.1,158.1,45,101.3,45.5z"
                 })
             })]

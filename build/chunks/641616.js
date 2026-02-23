@@ -1,377 +1,389 @@
 /** chunk id: 641616, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    x: () => ec
+    x: () => eu
 }), n(321073);
 var a = n(627968),
-    l = n(64700),
-    r = n(806235),
-    i = n(264461),
-    s = n(986294),
+    i = n(64700),
+    s = n(806235),
+    l = n(264461),
+    r = n(986294),
     o = n(502128),
-    c = n(807876),
-    d = n(215e3),
-    u = n(540999),
-    m = n(865116);
+    d = n(807876),
+    c = n(215e3),
+    u = n(24268),
+    m = n(540999),
+    h = n(865116);
 n(283030);
-var p = n(173628),
-    h = n(378230),
-    x = n(374058),
-    g = n(974857),
+var x = n(173628),
+    p = n(378230),
+    g = n(374058),
+    _ = n(974857),
     f = n(358622),
     b = n(568834),
     v = n(19767),
     j = n(866001),
-    _ = n(855936),
-    y = n(489967),
-    A = n(2915),
-    C = n(986789),
-    S = n(821306),
-    O = n(226936),
-    T = n(27126),
-    E = n(498336),
-    N = n(615112),
-    w = n(501379),
-    I = n(517538),
-    k = n(211162),
-    P = n(436102),
-    R = n(435459),
-    D = n(68738),
-    M = n(912878),
-    L = n(477102),
-    U = n(465895),
-    B = n(484762),
-    G = n(231207),
-    F = n(12171),
-    V = n(706712),
-    W = n(4807),
-    H = n(329482),
-    K = n(189244),
-    z = n(547798),
-    q = n(253804),
-    Q = n(515124),
-    Y = n(661652),
-    J = n(953414),
-    X = n(344673),
-    $ = n(491982),
-    Z = n(573121),
-    ee = n(851828),
-    et = n(375582),
-    en = n(263758),
-    ea = n(229244),
+    C = n(855936),
+    A = n(489967),
+    T = n(2915),
+    S = n(986789),
+    y = n(821306),
+    E = n(226936),
+    N = n(27126),
+    I = n(498336),
+    k = n(615112),
+    R = n(501379),
+    O = n(517538),
+    w = n(211162),
+    D = n(436102),
+    M = n(435459),
+    P = n(68738),
+    L = n(912878),
+    U = n(477102),
+    B = n(465895),
+    G = n(484762),
+    F = n(231207),
+    V = n(12171),
+    W = n(706712),
+    H = n(4807),
+    K = n(329482),
+    z = n(189244),
+    $ = n(982078),
+    q = n(547798),
+    Q = n(253804),
+    Y = n(515124),
+    J = n(661652),
+    X = n(953414),
+    Z = n(344673),
+    ee = n(491982),
+    et = n(573121),
+    en = n(851828),
+    ea = n(375582),
+    ei = n(263758),
+    es = n(229244),
     el = n(76037),
     er = n(922316),
-    ei = n(231643),
-    es = n(935460),
-    eo = n(654487);
+    eo = n(231643),
+    ed = n(935460),
+    ec = n(654487);
 
-function ec() {
-    return l.useMemo(() => {
+function eu() {
+    return i.useMemo(() => {
         let e = [{
             id: "analytics",
             name: "Analytics",
-            group: ei.fu.EXPERIMENTS,
+            group: eo.fu.EXPERIMENTS,
             tags: ["events", "impressions", "tracking"],
-            render: () => (0, a.jsx)(x.A, {})
+            render: () => (0, a.jsx)(g.A, {})
         }, {
             id: "triggers",
             name: "Triggers",
-            group: ei.fu.EXPERIMENTS,
+            group: eo.fu.EXPERIMENTS,
             tags: ["experiments", "exposure", "buckets"],
-            render: () => (0, a.jsx)(X.A, {})
+            render: () => (0, a.jsx)(Z.A, {})
         }, {
             id: "stores",
             name: "Stores",
-            group: ei.fu.EVENTS,
+            group: eo.fu.EVENTS,
             tags: ["flux", "state"],
-            render: () => (0, a.jsx)(J.A, {})
+            render: () => (0, a.jsx)(X.A, {})
         }, {
             id: "dispatcher",
             name: "Dispatcher",
-            group: ei.fu.EVENTS,
+            group: eo.fu.EVENTS,
             tags: ["flux", "actions"],
             render: () => (0, a.jsx)(j.A, {})
         }];
-        return u.A.isDeveloper && (e.push({
+        return m.A.isDeveloper && (e.push({
             id: "shop",
             name: "Shop",
-            group: ei.fu.BILLING,
-            render: () => (0, a.jsx)(Q.h, {})
+            group: eo.fu.BILLING,
+            render: () => (0, a.jsx)(Y.h, {})
         }), e.push({
             id: "payment_flow_modals",
             name: "Payment Flow Modals",
-            group: ei.fu.BILLING,
+            group: eo.fu.BILLING,
             tags: ["gifts", "nitro", "boost", "sku", "collectibles"],
-            render: () => (0, a.jsx)(G.A, {})
+            render: () => (0, a.jsx)(F.A, {})
         }), e.push({
             id: "shop_collectibles",
             name: "Shop Collectibles",
-            group: ei.fu.BILLING,
-            render: () => (0, a.jsx)(i.A, {})
+            group: eo.fu.BILLING,
+            render: () => (0, a.jsx)(l.A, {})
         }), e.push({
             id: "quick_actions",
             name: "Quick Actions",
-            group: ei.fu.DEVELOPMENT,
+            group: eo.fu.DEVELOPMENT,
             tags: ["captcha", "safety", "vibe", "vibing", "override", "premium type"],
-            render: () => (0, a.jsx)(z.A, {})
+            render: () => (0, a.jsx)(q.A, {})
         }), e.push({
             id: "end_to_end_encryption",
             name: "E2EE",
-            group: ei.fu.DEVELOPMENT,
+            group: eo.fu.DEVELOPMENT,
             tags: ["secure frames", "encryption"],
-            render: () => (0, a.jsx)(_.A, {})
+            render: () => (0, a.jsx)(C.A, {})
         }), e.push({
             id: "performance",
             name: "Performance",
-            group: ei.fu.DEVELOPMENT,
+            group: eo.fu.DEVELOPMENT,
             tags: ["fps", "frames", "gateway", "telemetry"],
-            render: () => (0, a.jsx)(V.Ay, {})
+            render: () => (0, a.jsx)(W.Ay, {})
         }), e.push({
             id: "age_verification",
             name: "Age Verification",
-            group: ei.fu.DEVELOPMENT,
-            render: () => (0, a.jsx)(h.A, {})
+            group: eo.fu.DEVELOPMENT,
+            render: () => (0, a.jsx)(p.A, {})
         }), e.push({
             id: "feedback",
             name: "Feedback",
-            group: ei.fu.USERS,
+            group: eo.fu.USERS,
             tags: ["surveys"],
-            render: () => (0, a.jsx)(y.A, {})
+            render: () => (0, a.jsx)(A.A, {})
         }), e.push({
             id: "overlay",
             name: "Overlay v3",
-            group: ei.fu.GAMES,
-            render: () => (0, a.jsx)(B.A, {})
+            group: eo.fu.GAMES,
+            render: () => (0, a.jsx)(G.A, {})
         }), e.push({
             id: "generated_test_user",
             name: "Generated Test Users",
-            group: ei.fu.DEVELOPMENT,
-            render: () => (0, a.jsx)(O.A, {})
+            group: eo.fu.DEVELOPMENT,
+            render: () => (0, a.jsx)(E.A, {})
         }), e.push({
             id: "slayer_sdk",
             name: "Slayer SDK",
-            group: ei.fu.GAMES,
-            render: () => (0, a.jsx)(Y.A, {})
+            group: eo.fu.GAMES,
+            render: () => (0, a.jsx)(J.A, {})
+        }), e.push({
+            id: "slayer_storefront",
+            name: "Slayer Storefront",
+            group: eo.fu.GAMES,
+            render: () => (0, a.jsx)(u.A, {})
         }), e.push({
             id: "quick_switcher",
             name: "Quick Switcher",
-            group: ei.fu.USERS,
+            group: eo.fu.USERS,
             render: () => (0, a.jsx)(el.A, {})
         }), e.push({
             id: "clips",
             name: "Clips",
-            group: ei.fu.AUDIO_VIDEO,
-            render: () => (0, a.jsx)(r.A, {})
+            group: eo.fu.AUDIO_VIDEO,
+            render: () => (0, a.jsx)(s.A, {})
         })), e.push({
             id: "rive",
             name: "Rive",
-            group: ei.fu.UI,
+            group: eo.fu.UI,
             tags: ["animation"],
-            render: () => (0, a.jsx)(q.A, {})
+            render: () => (0, a.jsx)(Q.A, {})
         }), e.push({
             id: "lottie",
             name: "Lottie",
-            group: ei.fu.UI,
+            group: eo.fu.UI,
             tags: ["animation"],
-            render: () => (0, a.jsx)(R.A, {})
+            render: () => (0, a.jsx)(M.A, {})
         }), e.push({
             id: "intl",
             name: "Intl",
-            group: ei.fu.UI,
+            group: eo.fu.UI,
             tags: ["i18n", "localization", "messages"],
-            render: () => (0, a.jsx)(w.A, {})
+            render: () => (0, a.jsx)(R.A, {})
         }), e.push({
             id: "colors",
             name: "Colors",
-            group: ei.fu.UI,
+            group: eo.fu.UI,
             tags: ["tokens", "themes", "palette"],
-            render: () => (0, a.jsx)(g.A, {})
+            render: () => (0, a.jsx)(_.A, {})
         }), e.push({
             id: "design_toggles",
             name: "Design Toggles",
-            group: ei.fu.UI,
+            group: eo.fu.UI,
             render: () => (0, a.jsx)(v.A, {})
         }), e.push({
             id: "appearance_randomizer",
             name: "Appearance Randomizer",
-            group: ei.fu.UI,
-            render: () => (0, a.jsx)(K.A, {})
+            group: eo.fu.UI,
+            render: () => (0, a.jsx)(z.A, {})
         }), e.push({
             id: "overlays",
             name: "Dev Overlays",
-            group: ei.fu.DEVELOPMENT,
-            render: () => (0, a.jsx)(S.A, {
-                devSettingsCategory: m.xW.OVERLAYS
+            group: eo.fu.DEVELOPMENT,
+            render: () => (0, a.jsx)(y.A, {
+                devSettingsCategory: h.xW.OVERLAYS
             })
         }), e.push({
             id: "messaging",
             name: "Messaging",
-            group: ei.fu.USERS,
+            group: eo.fu.USERS,
             tags: ["dm", "nux", "system dm"],
-            render: () => (0, a.jsx)(M.A, {})
+            render: () => (0, a.jsx)(L.A, {})
         }), e.push({
             id: "reporting",
             name: "Reporting",
-            group: ei.fu.EXPERIMENTS,
-            render: () => (0, a.jsx)(S.A, {
-                devSettingsCategory: m.xW.REPORTING
+            group: eo.fu.EXPERIMENTS,
+            render: () => (0, a.jsx)(y.A, {
+                devSettingsCategory: h.xW.REPORTING
             })
         }), e.push({
             id: "permissions",
             name: "Permissions",
-            group: ei.fu.USERS,
-            render: () => (0, a.jsx)(H.A, {})
+            group: eo.fu.USERS,
+            render: () => (0, a.jsx)(K.A, {})
         }), e.push({
             id: "modals",
             name: "Modals",
-            group: ei.fu.UI,
+            group: eo.fu.UI,
             tags: ["dialogs", "popups"],
-            render: () => (0, a.jsx)(L.A, {})
+            render: () => (0, a.jsx)(U.A, {})
         }), e.push({
             id: "menus",
             name: "Menus",
-            group: ei.fu.UI,
+            group: eo.fu.UI,
             tags: ["contextmenus", "popout"],
-            render: () => (0, a.jsx)(D.A, {})
+            render: () => (0, a.jsx)(P.A, {})
         }), e.push({
             id: "layers",
             name: "Layers",
-            group: ei.fu.UI,
+            group: eo.fu.UI,
             tags: ["verification", "safety flow"],
-            render: () => (0, a.jsx)(P.A, {})
+            render: () => (0, a.jsx)(D.A, {})
         }), e.push({
             id: "affinity",
             name: "Affinity",
-            group: ei.fu.USERS,
+            group: eo.fu.USERS,
             tags: ["friends"],
-            render: () => (0, a.jsx)(p.A, {})
-        }), u.A.isDeveloper && (e.push({
+            render: () => (0, a.jsx)(x.A, {})
+        }), m.A.isDeveloper && (e.push({
             id: "content_inventory",
             name: "Content Inventory",
-            group: ei.fu.USERS,
-            render: () => (0, a.jsx)(s.A, {})
+            group: eo.fu.USERS,
+            render: () => (0, a.jsx)(r.A, {})
         }), e.push({
             id: "notifications_inbox",
             name: "Notifications Inbox",
-            group: ei.fu.USERS,
+            group: eo.fu.USERS,
             render: () => (0, a.jsx)(o.A, {})
         })), e.push({
             id: "dcf_overrides",
             name: "DCF Overrides",
-            group: ei.fu.DCF,
+            group: eo.fu.DCF,
             render: () => (0, a.jsx)(b.A, {})
         }), e.push({
             id: "dcf_events",
             name: "DCF Events",
-            group: ei.fu.DCF,
+            group: eo.fu.DCF,
             render: () => (0, a.jsx)(f.A, {})
         }), e.push({
             id: "hotspots",
             name: "Hotspots",
-            group: ei.fu.EXPERIMENTS,
+            group: eo.fu.EXPERIMENTS,
             tags: ["coachmarks", "nux", "onboarding"],
-            render: () => (0, a.jsx)(N.A, {})
+            render: () => (0, a.jsx)(k.A, {})
         }), e.push({
             id: "perks",
             name: "Perks",
-            group: ei.fu.PREMIUM,
+            group: eo.fu.PREMIUM,
             tags: ["nitro", "tenure", "badges", "level up"],
-            render: () => (0, a.jsx)(W.A, {})
+            render: () => (0, a.jsx)(H.A, {})
         }), window.GLOBAL_ENV.RELEASE_CHANNEL.startsWith("staging") && (e.push({
             id: "offers",
             name: "Offers",
-            group: ei.fu.PREMIUM,
+            group: eo.fu.PREMIUM,
             tags: ["discounts", "trials", "reverse trials", "churn"],
-            render: () => (0, a.jsx)(U.A, {})
+            render: () => (0, a.jsx)(B.A, {})
         }), e.push({
             id: "payments",
             name: "Payments",
-            group: ei.fu.BILLING,
+            group: eo.fu.BILLING,
             tags: ["stripe", "cards", "test cards"],
-            render: () => (0, a.jsx)(F.A, {})
+            render: () => (0, a.jsx)(V.A, {})
         }), e.push({
             id: "subscriptions",
             name: "Subscriptions",
-            group: ei.fu.PREMIUM,
+            group: eo.fu.PREMIUM,
             tags: ["nitro", "reverse trial"],
-            render: () => (0, a.jsx)(en.A, {})
+            render: () => (0, a.jsx)(ei.A, {})
         }), e.push({
             id: "fractional_nitro",
             name: "Fractional Nitro",
-            group: ei.fu.PREMIUM,
+            group: eo.fu.PREMIUM,
             tags: ["entitlements", "quests"],
-            render: () => (0, a.jsx)(A.A, {})
+            render: () => (0, a.jsx)(T.A, {})
         }), e.push({
             id: "nitro_storybook",
             name: "Nitro Storybook",
-            group: ei.fu.PREMIUM,
-            render: () => (0, a.jsx)(et.v, {})
+            group: eo.fu.PREMIUM,
+            render: () => (0, a.jsx)(ea.v, {})
         })), e.push({
             id: "gifting_intent",
             name: "Gifting Intent",
-            group: ei.fu.PREMIUM,
+            group: eo.fu.PREMIUM,
             tags: ["friends", "anniversary"],
-            render: () => (0, a.jsx)(T.A, {})
+            render: () => (0, a.jsx)(N.A, {})
         }), e.push({
             id: "voice_filters",
             name: "Voice Filters",
-            group: ei.fu.AUDIO_VIDEO,
+            group: eo.fu.AUDIO_VIDEO,
             tags: ["soundboard", "effects"],
-            render: () => (0, a.jsx)(Z.A, {})
+            render: () => (0, a.jsx)(et.A, {})
         }), e.push({
             id: "krisp_tester",
             name: "Krisp Tester",
-            group: ei.fu.AUDIO_VIDEO,
+            group: eo.fu.AUDIO_VIDEO,
             tags: ["noise cancellation", "audio", "vad"],
-            render: () => (0, a.jsx)(I.A, {})
+            render: () => (0, a.jsx)(O.A, {})
         }), e.push({
             id: "skill_trees",
             name: "Skill Trees",
-            group: ei.fu.BOOSTING,
+            group: eo.fu.BOOSTING,
             tags: ["boosting", "powerups", "server tag"],
-            render: () => (0, a.jsx)(E.A, {})
+            render: () => (0, a.jsx)(I.A, {})
         }), e.push({
             id: "game_server",
             name: "Game Server",
-            group: ei.fu.BOOSTING,
-            render: () => (0, a.jsx)(C.A, {})
+            group: eo.fu.BOOSTING,
+            render: () => (0, a.jsx)(S.A, {})
         }), e.push({
             id: "language",
             name: "Language",
-            group: ei.fu.UI,
+            group: eo.fu.UI,
             tags: ["locale"],
-            render: () => (0, a.jsx)(k.A, {})
+            render: () => (0, a.jsx)(w.A, {})
         }), e.push({
             id: "word_frequency",
             name: "Word Frequency",
-            group: ei.fu.DEVELOPMENT,
-            render: () => (0, a.jsx)(ee.A, {})
+            group: eo.fu.DEVELOPMENT,
+            render: () => (0, a.jsx)(en.A, {})
         }), e.push({
             id: "user_settings",
             name: "User Settings",
-            group: ei.fu.DEVELOPMENT,
-            render: () => (0, a.jsx)(es.A, {})
+            group: eo.fu.DEVELOPMENT,
+            render: () => (0, a.jsx)(ed.A, {})
         }), e.push({
             id: "quest_minor_reward_capping_config",
             name: "Minor Reward Capping",
-            group: ei.fu.QUESTS,
-            render: () => (0, a.jsx)(d.A, {})
+            group: eo.fu.QUESTS,
+            render: () => (0, a.jsx)(c.A, {})
         }), e.push({
             id: "virtual_currency_config",
             name: "Virtual Currency Config",
-            group: ei.fu.QUESTS,
-            render: () => (0, a.jsx)($.A, {})
+            group: eo.fu.QUESTS,
+            render: () => (0, a.jsx)(ee.A, {})
         }), e.push({
             id: "Revenue Storybook",
             name: "Revenue Storybook",
-            group: ei.fu.BILLING,
+            group: eo.fu.BILLING,
             render: () => (0, a.jsx)(er.A, {})
-        }), (0, c.Q)({
-            location: eo.rE.QUEST_PREVIEW_TOOL
+        }), (0, d.Q)({
+            location: ec.rE.QUEST_PREVIEW_TOOL
         }) && e.push({
             id: "quest_preview",
             name: "Quest Preview",
-            group: ei.fu.QUESTS,
-            render: () => (0, a.jsx)(ea.A, {})
+            group: eo.fu.QUESTS,
+            render: () => (0, a.jsx)(es.A, {})
+        }), e.push({
+            id: "profile_theme_override",
+            name: "Profile Theme Override",
+            group: eo.fu.USERS,
+            render: () => (0, a.jsx)($.A, {})
         }), e
     }, [])
 }

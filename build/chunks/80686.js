@@ -1,43 +1,43 @@
 /** chunk id: 80686, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => a
-}), n(228524);
+    A: () => r
+});
 var l = n(627968);
 n(64700);
 var i = n(397927),
-    r = n(235986),
-    s = n(461132);
+    s = n(235986),
+    a = n(461132);
 
-function a(e) {
+function r(e) {
     let {
         description: t,
         icon: n,
-        id: a,
+        id: r,
         label: o,
-        onChange: c,
-        value: u
+        onChange: d,
+        value: c
     } = e;
     return (0, l.jsxs)("div", {
-        className: s.U,
-        children: [(0, l.jsxs)(r.A, {
-            justify: r.A.Justify.BETWEEN,
-            align: r.A.Align.CENTER,
-            children: [n, (0, l.jsx)(r.A.Child, {
+        className: a.U,
+        children: [(0, l.jsxs)(s.A, {
+            justify: s.A.Justify.BETWEEN,
+            align: s.A.Align.CENTER,
+            children: [n, (0, l.jsx)(s.A.Child, {
                 grow: 1,
                 children: (0, l.jsx)(i.Text, {
                     variant: "text-md/semibold",
                     children: o
                 })
-            }), null != c && null != u && (0, l.jsx)(i.dOG, {
-                id: a,
-                checked: u,
-                onChange: c
+            }), null != d && null != c && (0, l.jsx)(i.dOG, {
+                id: r,
+                checked: c,
+                onChange: d
             })]
         }), (0, l.jsx)(i.Text, {
             variant: "text-xs/normal",
             color: "text-default",
-            className: s.L,
+            className: a.L,
             children: t
         })]
     })

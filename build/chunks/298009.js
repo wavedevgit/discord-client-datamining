@@ -3,19 +3,19 @@ n.d(t, {
     A: () => o,
     u: () => d
 });
-var r = n(64700),
-    l = n(27023),
-    i = n(294726),
-    s = n(985018);
-let a = ["/", "\\\\"];
+var l = n(64700),
+    r = n(27023),
+    a = n(294726),
+    i = n(985018);
+let s = ["/", "\\\\"];
 
 function d(e) {
-    let t = r.useMemo(() => a.some(t => (null != e ? e : "").includes(t)), [e]);
+    let t = l.useMemo(() => s.some(t => (e ?? "").includes(t)), [e]);
     return {
         isValid: !t,
         errors: {
-            name: t ? s.intl.formatToPlainString(i.default.jYZD44, {
-                forbiddenCharacters: a.join(", ")
+            name: t ? i.intl.formatToPlainString(a.default.jYZD44, {
+                forbiddenCharacters: s.join(", ")
             }) : void 0
         }
     }
@@ -26,7 +26,7 @@ function o() {
         regionId: e,
         gameServerInstance: t,
         name: n,
-        planId: r
-    } = (0, l.bv)(), i = "" !== n && "" !== e && void 0 !== r;
-    return null != t ? i && (t.name !== n || t.regionId !== e || t.planId !== r) : i
+        planId: l
+    } = (0, r.bv)(), a = "" !== n && "" !== e && void 0 !== l;
+    return null != t ? a && (t.name !== n || t.regionId !== e || t.planId !== l) : a
 }

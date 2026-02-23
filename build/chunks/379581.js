@@ -1,97 +1,95 @@
-/** chunk id: 379581, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => m
+/** chunk id: 379581, original params: e,t,a (module,exports,require) **/
+a.d(t, {
+    A: () => p
 });
-var r = n(627968);
-n(64700);
-var l = n(503698),
-    i = n.n(l),
-    a = n(582754),
-    s = n(397927),
-    o = n(9578),
-    c = n(736653),
-    d = n(573648),
-    u = n(412461),
-    p = n(985018),
-    h = n(125257);
+var n = a(627968);
+a(64700);
+var i = a(503698),
+    s = a.n(i),
+    l = a(582754),
+    r = a(397927),
+    o = a(9578),
+    c = a(736653),
+    d = a(573648),
+    u = a(412461),
+    h = a(985018),
+    m = a(125257);
 
-function m(e) {
-    var t, n;
+function p(e) {
     let {
-        application: l,
+        application: t,
         className: a,
-        innerClassName: o
-    } = e, c = null != (t = null == (n = l.directory_entry) ? void 0 : n.external_urls) ? t : [];
-    return null != l.terms_of_service_url || null != l.privacy_policy_url || c.length > 0 ? (0, r.jsxs)("div", {
-        className: i()(h.kL, a),
-        children: [(0, r.jsx)(s.Heading, {
+        innerClassName: i
+    } = e, l = t.directory_entry?.external_urls ?? [];
+    return null != t.terms_of_service_url || null != t.privacy_policy_url || l.length > 0 ? (0, n.jsxs)("div", {
+        className: s()(m.kL, a),
+        children: [(0, n.jsx)(r.Heading, {
             variant: "heading-sm/semibold",
             color: "text-strong",
-            children: p.intl.string(p.t.l6DP2n)
-        }), (0, r.jsxs)("div", {
-            className: i()(h.p_, o),
-            children: [c.map((e, t) => (0, r.jsx)(g, {
+            children: h.intl.string(h.t.l6DP2n)
+        }), (0, n.jsxs)("div", {
+            className: s()(m.p_, i),
+            children: [l.map((e, t) => (0, n.jsx)(_, {
                 url: e.url,
                 children: e.name
-            }, t)), null != l.terms_of_service_url ? (0, r.jsx)(_, {
-                icon: s.oSV,
-                url: l.terms_of_service_url,
-                children: p.intl.string(p.t.s7STcY)
-            }) : null, null != l.privacy_policy_url ? (0, r.jsx)(_, {
-                icon: s.XAi,
-                url: l.privacy_policy_url,
-                children: p.intl.string(p.t.kH3JR5)
+            }, t)), null != t.terms_of_service_url ? (0, n.jsx)(g, {
+                icon: r.oSV,
+                url: t.terms_of_service_url,
+                children: h.intl.string(h.t.s7STcY)
+            }) : null, null != t.privacy_policy_url ? (0, n.jsx)(g, {
+                icon: r.XAi,
+                url: t.privacy_policy_url,
+                children: h.intl.string(h.t.kH3JR5)
             }) : null]
         })]
     }) : null
 }
 
-function g(e) {
-    var t, n;
+function _(e) {
     let {
-        url: l,
-        children: i
-    } = e, o = (0, c.Ay)(), u = d.A.getByUrl(l), p = (0, a.Mw)(o) ? null == u || null == (t = u.icon) ? void 0 : t.darkSVG : null == u || null == (n = u.icon) ? void 0 : n.lightSVG;
-    return (0, r.jsx)(_, {
-        icon: void 0 === p ? s.qYV : void 0,
-        imageSrc: p,
-        url: l,
-        children: i
+        url: t,
+        children: a
+    } = e, i = (0, c.Ay)(), s = d.A.getByUrl(t), o = (0, l.Mw)(i) ? s?.icon?.darkSVG : s?.icon?.lightSVG;
+    return (0, n.jsx)(g, {
+        icon: void 0 === o ? r.qYV : void 0,
+        imageSrc: o,
+        url: t,
+        children: a
     })
 }
 
-function _(e) {
+function g(e) {
     let {
         icon: t,
-        imageSrc: n,
-        iconColor: l,
-        url: a,
+        imageSrc: a,
+        iconColor: i,
+        url: l,
         children: c
-    } = e, d = (0, u.DB)(), p = null;
-    null != t ? p = (0, r.jsx)(t, {
-        className: h.GU,
-        color: null != l ? l : "currentColor",
+    } = e, d = (0, u.DB)(), h = null;
+    null != t ? h = (0, n.jsx)(t, {
+        className: m.GU,
+        color: i ?? "currentColor",
         width: 20,
         height: 20,
         size: "custom"
-    }) : null != n && (p = (0, r.jsx)("img", {
-        className: h.GR,
-        src: n,
+    }) : null != a && (h = (0, n.jsx)("img", {
+        className: m.GR,
+        src: a,
         alt: ""
     }));
-    let m = (0, r.jsxs)(r.Fragment, {
-        children: [p, (0, r.jsx)(s.Text, {
-            className: h.so,
+    let p = (0, n.jsxs)(n.Fragment, {
+        children: [h, (0, n.jsx)(r.Text, {
+            className: m.so,
             variant: "text-sm/medium",
             selectable: !0,
             children: c
         })]
     });
-    return (0, r.jsx)(o.A, {
-        href: a,
-        className: i()(h.Aw, h.SF),
+    return (0, n.jsx)(o.A, {
+        href: l,
+        className: s()(m.Aw, m.SF),
         trusted: !d,
         useDefaultUnderlineStyles: !1,
-        children: m
+        children: p
     })
 }

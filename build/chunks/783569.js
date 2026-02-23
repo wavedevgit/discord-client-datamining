@@ -1,23 +1,23 @@
 /** chunk id: 783569, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     R: () => m,
-    T: () => p
-}), n(896048);
+    T: () => h
+});
 var a = n(627968),
-    l = n(64700),
-    r = n(92674),
-    i = n(311907),
-    s = n(397927),
+    i = n(64700),
+    s = n(475539),
+    l = n(311907),
+    r = n(397927),
     o = n(765671),
-    c = n(475743),
-    d = n(775602);
-let u = l.createContext({
+    d = n(475743),
+    c = n(775602);
+let u = i.createContext({
     springConfig: {},
     isExpanded: !1
 });
 
 function m(e) {
-    let t = l.useMemo(() => ({
+    let t = i.useMemo(() => ({
         springConfig: e.springConfig,
         isExpanded: e.isExpanded
     }), [e.springConfig, e.isExpanded]);
@@ -27,32 +27,31 @@ function m(e) {
     })
 }
 
-function p(e) {
-    var t;
+function h(e) {
     let {
-        children: n
+        children: t
     } = e, {
-        springConfig: m,
-        isExpanded: p
-    } = l.useContext(u), h = (0, i.bG)([d.A], () => d.A.useReducedMotion), {
+        springConfig: n,
+        isExpanded: m
+    } = i.useContext(u), h = (0, l.bG)([c.A], () => c.A.useReducedMotion), {
         ref: x,
-        height: g = null
-    } = (0, o.Ay)(), f = null != (t = (0, c.A)(g)) ? t : null, [{
-        height: b
-    }, v] = (0, s.zhh)(() => ({
+        height: p = null
+    } = (0, o.Ay)(), g = (0, d.A)(p) ?? null, [{
+        height: _
+    }, f] = (0, r.zhh)(() => ({
         from: {
             height: 0
         },
-        config: m
+        config: n
     }));
-    return l.useLayoutEffect(() => {
-        null !== g && v({
-            height: g,
-            immediate: !p || h || null === f
+    return i.useLayoutEffect(() => {
+        null !== p && f({
+            height: p,
+            immediate: !m || h || null === g
         })
-    }, [g, v, p, h, f]), (0, a.jsx)(r.animated.div, {
+    }, [p, f, m, h, g]), (0, a.jsx)(s.animated.div, {
         style: {
-            height: null === f ? "auto" : b,
+            height: null === g ? "auto" : _,
             overflow: "hidden"
         },
         children: (0, a.jsx)("div", {
@@ -60,7 +59,7 @@ function p(e) {
                 overflow: "hidden"
             },
             ref: x,
-            children: n
+            children: t
         })
     })
 }

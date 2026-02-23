@@ -1,11 +1,10 @@
 /** chunk id: 516917, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    K: () => a
+    K: () => r
 });
-var r = n(9865),
-    i = n(652215);
-let a = (0, r.np)({
+var i = n(9865),
+    l = n(652215);
+let r = (0, i.np)({
     id: "0",
     guildId: "0",
     name: "",
@@ -13,7 +12,7 @@ let a = (0, r.np)({
     managed: !1,
     position: 0,
     hoist: !1,
-    permissions: i.xBc.SEND_MESSAGES,
+    permissions: l.xBc.SEND_MESSAGES,
     color: 0,
     colors: {
         primary_color: 0,

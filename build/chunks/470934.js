@@ -1,36 +1,33 @@
 /** chunk id: 470934, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => u
+    A: () => d
 });
-var r = n(64700),
-    l = n(311907),
-    i = n(985018),
-    s = n(645619),
+var i = n(64700),
+    s = n(311907),
+    l = n(985018),
+    r = n(645619),
     a = n(998418),
     o = n(568065),
     c = n(333354);
 
-function u(e, t, n) {
-    let u = (0, l.bG)([s.A], () => s.A.getStateForGuild(e)),
-        d = (0, a.Ay)(e, t);
-    return r.useMemo(() => {
-        var e, r;
-        if (null == u || d.type === o.b_.LEVEL_ACTIVATED) return {
+function d(e, t, n) {
+    let d = (0, s.bG)([r.A], () => r.A.getStateForGuild(e)),
+        u = (0, a.Ay)(e, t);
+    return i.useMemo(() => {
+        if (null == d || u.type === o.b_.LEVEL_ACTIVATED) return {
             disabled: !0,
             reason: void 0
         };
         let {
-            allPowerups: l,
-            unlockedPowerups: s
-        } = u, a = n ? null == (e = Object.values(s).find(e => {
-            var n;
-            return (null == (n = e.sku) ? void 0 : n.dependent_sku_id) === t.skuId
-        })) ? void 0 : e.sku_id : t.dependencies.find(e => null == s[e]);
+            allPowerups: e,
+            unlockedPowerups: i
+        } = d, s = n ? Object.values(i).find(e => e.sku?.dependent_sku_id === t.skuId)?.sku_id : t.dependencies.find(e => null == i[e]);
         return {
-            disabled: null != a,
-            reason: null != a && null != l[a] ? i.intl.formatToPlainString(n ? c.default.vCEBiS : c.default["1B8AZr"], {
-                perk: null == (r = l[a]) ? void 0 : r.title
+            disabled: null != s,
+            reason: null != s && null != e[s] ? l.intl.formatToPlainString(n ? c.default.vCEBiS : c.default["1B8AZr"], {
+                perk: e[s]?.title
             }) : void 0
         }
-    }, [u, t.skuId, t.dependencies, n, d.type])
+    }, [d, t.skuId, t.dependencies, n, u.type])
 }

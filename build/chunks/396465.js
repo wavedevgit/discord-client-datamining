@@ -10,14 +10,14 @@ function i(e) {
         width: t = 18,
         height: n = 18,
         color: i = "currentColor",
-        foreground: r,
-        background: s,
-        className: a
+        foreground: s,
+        background: a,
+        className: r
     } = e;
     return (0, l.jsx)("svg", {
         width: t,
         height: n,
-        className: a,
+        className: r,
         viewBox: "0 0 18 18",
         children: (0, l.jsxs)("g", {
             stroke: "none",
@@ -31,11 +31,11 @@ function i(e) {
                 fillOpacity: "0.3",
                 fill: i,
                 fillRule: "nonzero",
-                className: s
+                className: a
             }), (0, l.jsx)("path", {
                 d: "M8.25,12.75 L8.25,11.25 L9.75,11.25 L9.75,12.75 L8.25,12.75 Z M8.25,9.75 L8.25,5.25 L9.75,5.25 L9.75,9.75 L8.25,9.75 Z",
                 fill: i,
-                className: r
+                className: s
             })]
         })
     })

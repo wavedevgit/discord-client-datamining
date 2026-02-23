@@ -1,23 +1,24 @@
 /** chunk id: 928039, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => o
+    A: () => l
 });
-var r = n(64700),
+var a = n(64700),
     i = n(884362),
-    l = n(311907),
-    a = n(775602);
+    r = n(311907),
+    o = n(775602);
 
-function o(e, t, n) {
-    let o = (0, l.bG)([a.A], () => a.A.keyboardModeEnabled),
-        s = r.useCallback(e => {
+function l(e, t, n) {
+    let l = (0, r.bG)([o.A], () => o.A.keyboardModeEnabled),
+        c = a.useCallback(e => {
             let n = document.querySelector(e),
-                r = t.current;
-            null != n && null != r && (n.focus(), r.scrollIntoViewNode({
+                a = t.current;
+            null != n && null != a && (n.focus(), a.scrollIntoViewNode({
                 node: n,
                 padding: 80
             }))
         }, [t]),
-        c = r.useCallback(() => new Promise(e => {
+        s = a.useCallback(() => new Promise(e => {
             let n = t.current;
             if (null == n) return e();
             n.scrollTo({
@@ -25,7 +26,7 @@ function o(e, t, n) {
                 callback: () => requestAnimationFrame(() => e())
             })
         }), [t]),
-        u = r.useCallback(() => new Promise(e => {
+        _ = a.useCallback(() => new Promise(e => {
             let n = t.current;
             if (null == n) return e();
             n.scrollTo({
@@ -35,10 +36,10 @@ function o(e, t, n) {
         }), [t]);
     return (0, i.Ay)({
         id: e,
-        isEnabled: o,
-        setFocus: s,
-        scrollToStart: c,
-        scrollToEnd: u,
-        orientation: null == n ? void 0 : n.orientation
+        isEnabled: l,
+        setFocus: c,
+        scrollToStart: s,
+        scrollToEnd: _,
+        orientation: n?.orientation
     })
 }

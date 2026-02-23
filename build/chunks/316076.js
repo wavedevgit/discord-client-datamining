@@ -1,6 +1,6 @@
 /** chunk id: 316076, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => A
 });
 var l = n(627968),
     r = n(64700),
@@ -8,86 +8,46 @@ var l = n(627968),
     i = n(397927),
     s = n(761640),
     o = n(706752),
-    u = n(744432),
-    c = n(829887),
-    E = n(486974),
+    E = n(744432),
+    u = n(829887),
+    c = n(486974),
     _ = n(985018),
     d = n(438536);
 
-function g(e) {
+function A(e) {
     let {
         userId: t,
         guildId: n
-    } = e, g = (0, a.bG)([s.Ay], () => s.Ay.getGuildSidebarState(n), [n]), {
-        messagesCount: A,
+    } = e, A = (0, a.bG)([s.Ay], () => s.Ay.getGuildSidebarState(n), [n]), {
+        messagesCount: g,
         linksCount: T,
         mediaCount: I
-    } = (0, u.u5)(t, n), O = new Intl.NumberFormat(_.intl.currentLocale).format(A), h = new Intl.NumberFormat(_.intl.currentLocale).format(T), N = new Intl.NumberFormat(_.intl.currentLocale).format(I), m = r.useCallback(async e => {
-        if (null == g) return;
-        let l = (0, u.ry)(t, e, {
+    } = (0, E.u5)(t, n), N = new Intl.NumberFormat(_.intl.currentLocale).format(g), h = new Intl.NumberFormat(_.intl.currentLocale).format(T), m = new Intl.NumberFormat(_.intl.currentLocale).format(I), S = r.useCallback(async e => {
+        if (null == A) return;
+        let l = (0, E.ry)(t, e, {
             include_nsfw: !0
         });
-        await (0, o.z)(n, t, g.baseChannelId, {
-            modViewPanel: E.g.MESSAGE_HISTORY,
+        await (0, o.z)(n, t, A.baseChannelId, {
+            modViewPanel: c.g.MESSAGE_HISTORY,
             additionalSearchQuery: l
         })
-    }, [n, g, t]);
+    }, [n, A, t]);
     return (0, l.jsx)(i.D0$, {
         label: _.intl.string(_.t.vCn2Tn),
-        children: (0, l.jsxs)(c.SQ, {
-            children: [(0, l.jsx)(c.RU, {
+        children: (0, l.jsxs)(u.SQ, {
+            children: [(0, l.jsx)(u.RU, {
                 icon: (0, l.jsx)(i.oyn, {
                     size: "custom",
                     color: "currentColor",
-                    width: c.mb,
-                    height: c.mb
+                    width: u.mb,
+                    height: u.mb
                 }),
                 name: (0, l.jsx)(i.Text, {
                     variant: "text-sm/semibold",
                     color: "text-default",
                     children: _.intl.string(_.t.OIgYlQ)
                 }),
-                description: A === u.zu ? (0, l.jsx)(i.y$y, {
-                    type: i.tVU.SPINNING_CIRCLE,
-                    className: d.S
-                }) : (0, l.jsx)(i.Text, {
-                    variant: "text-sm/semibold",
-                    color: "interactive-text-default",
-                    children: O
-                }),
-                onNavigate: A > 0 ? () => m(u.SA.MESSAGES) : void 0
-            }), (0, l.jsx)(c.RU, {
-                icon: (0, l.jsx)(i.qYV, {
-                    size: "custom",
-                    width: c.mb,
-                    height: c.mb
-                }),
-                name: (0, l.jsx)(i.Text, {
-                    variant: "text-sm/semibold",
-                    color: "text-default",
-                    children: _.intl.string(_.t.DFSvTt)
-                }),
-                description: T === u.zu ? (0, l.jsx)(i.y$y, {
-                    type: i.tVU.SPINNING_CIRCLE,
-                    className: d.S
-                }) : (0, l.jsx)(i.Text, {
-                    variant: "text-sm/semibold",
-                    color: "interactive-text-default",
-                    children: h
-                }),
-                onNavigate: T > 0 ? () => m(u.SA.LINKS) : void 0
-            }), (0, l.jsx)(c.RU, {
-                icon: (0, l.jsx)(i.sYc, {
-                    size: "custom",
-                    width: c.mb,
-                    height: c.mb
-                }),
-                name: (0, l.jsx)(i.Text, {
-                    variant: "text-sm/semibold",
-                    color: "text-default",
-                    children: _.intl.string(_.t["Aw9+/M"])
-                }),
-                description: I === u.zu ? (0, l.jsx)(i.y$y, {
+                description: g === E.zu ? (0, l.jsx)(i.y$y, {
                     type: i.tVU.SPINNING_CIRCLE,
                     className: d.S
                 }) : (0, l.jsx)(i.Text, {
@@ -95,7 +55,47 @@ function g(e) {
                     color: "interactive-text-default",
                     children: N
                 }),
-                onNavigate: I > 0 ? () => m(u.SA.MEDIA) : void 0
+                onNavigate: g > 0 ? () => S(E.SA.MESSAGES) : void 0
+            }), (0, l.jsx)(u.RU, {
+                icon: (0, l.jsx)(i.qYV, {
+                    size: "custom",
+                    width: u.mb,
+                    height: u.mb
+                }),
+                name: (0, l.jsx)(i.Text, {
+                    variant: "text-sm/semibold",
+                    color: "text-default",
+                    children: _.intl.string(_.t.DFSvTt)
+                }),
+                description: T === E.zu ? (0, l.jsx)(i.y$y, {
+                    type: i.tVU.SPINNING_CIRCLE,
+                    className: d.S
+                }) : (0, l.jsx)(i.Text, {
+                    variant: "text-sm/semibold",
+                    color: "interactive-text-default",
+                    children: h
+                }),
+                onNavigate: T > 0 ? () => S(E.SA.LINKS) : void 0
+            }), (0, l.jsx)(u.RU, {
+                icon: (0, l.jsx)(i.sYc, {
+                    size: "custom",
+                    width: u.mb,
+                    height: u.mb
+                }),
+                name: (0, l.jsx)(i.Text, {
+                    variant: "text-sm/semibold",
+                    color: "text-default",
+                    children: _.intl.string(_.t["Aw9+/M"])
+                }),
+                description: I === E.zu ? (0, l.jsx)(i.y$y, {
+                    type: i.tVU.SPINNING_CIRCLE,
+                    className: d.S
+                }) : (0, l.jsx)(i.Text, {
+                    variant: "text-sm/semibold",
+                    color: "interactive-text-default",
+                    children: m
+                }),
+                onNavigate: I > 0 ? () => S(E.SA.MEDIA) : void 0
             })]
         })
     })

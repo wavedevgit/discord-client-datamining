@@ -1,35 +1,35 @@
 /** chunk id: 269802, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => u
+    A: () => d
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(827734),
-    l = n(397927),
-    a = n(763754),
+var l = n(827734),
+    a = n(397927),
+    r = n(763754),
     s = n(888675),
     o = n(985018),
     c = n(355200);
 
-function u(e) {
+function d(e) {
     let {
         message: t,
         compact: n,
-        usernameHook: u
-    } = e, d = (0, a.Ay)(t), p = u(d), m = o.intl.format(o.t["Rv+TSM"], {
-        username: d.nick,
-        usernameHook: p,
+        usernameHook: d
+    } = e, u = (0, r.Ay)(t), m = d(u), _ = o.intl.format(o.t["Rv+TSM"], {
+        username: u.nick,
+        usernameHook: m,
         topic: t.content
     });
-    return (0, r.jsx)(s.A, {
+    return (0, i.jsx)(s.A, {
         className: c.d,
-        iconNode: (0, r.jsx)(l.qux, {
+        iconNode: (0, i.jsx)(a.qux, {
             size: "md",
-            color: i.A.unsafe_rawColors.GREEN_360.css
+            color: l.A.unsafe_rawColors.GREEN_360.css
         }),
         iconContainerClassName: c.z,
         timestamp: t.timestamp,
         compact: n,
-        children: m
+        children: _
     })
 }

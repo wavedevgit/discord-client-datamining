@@ -1,77 +1,77 @@
 /** chunk id: 746706, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => E
 });
-var r = n(627968),
-    i = n(64700),
-    l = n(421380),
-    s = n(397927),
-    a = n(736653),
+var i = n(627968),
+    s = n(64700),
+    a = n(421380),
+    r = n(397927),
+    l = n(736653),
     o = n(793574),
     c = n(688810),
     d = n(465794),
     u = n(954571),
     _ = n(927578),
-    p = n(652215),
-    m = n(788868),
+    m = n(652215),
+    A = n(788868),
     g = n(985018),
-    A = n(547568),
-    f = n(896237),
-    b = n(448085);
+    h = n(547568),
+    x = n(896237),
+    p = n(448085);
 
-function h(e) {
+function E(e) {
     let {
         user: t,
         showOverlay: n,
-        children: h
-    } = e, E = (0, a.Ay)(), {
-        analyticsLocations: O
+        children: E
+    } = e, C = (0, l.Ay)(), {
+        analyticsLocations: T
     } = (0, c.Ay)(o.A.PREMIUM_UPSELL_OVERLAY);
-    return (i.useEffect(() => {
-        n && u.default.track(p.HAw.PREMIUM_UPSELL_VIEWED, {
-            location_stack: O,
-            type: m.e.PREMIUM_GUILD_MEMBER_PROFILE_UPSELL_INLINE
+    return (s.useEffect(() => {
+        n && u.default.track(m.HAw.PREMIUM_UPSELL_VIEWED, {
+            location_stack: T,
+            type: A.e.PREMIUM_GUILD_MEMBER_PROFILE_UPSELL_INLINE
         })
-    }, [n, O]), n) ? (0, r.jsxs)("div", {
-        className: A.ry,
-        children: [(0, r.jsx)("div", {
-            children: h
-        }), (0, r.jsxs)("div", {
-            className: A.Wc,
-            children: [(0, r.jsx)("img", {
-                className: A.Tn,
+    }, [n, T]), n) ? (0, i.jsxs)("div", {
+        className: h.ry,
+        children: [(0, i.jsx)("div", {
+            children: E
+        }), (0, i.jsxs)("div", {
+            className: h.Wc,
+            children: [(0, i.jsx)("img", {
+                className: h.Tn,
                 alt: g.intl.string(g.t.LHFZQy),
                 src: function(e) {
                     switch (e) {
-                        case p.NJ8.DARK:
-                        case p.NJ8.DARKER:
-                        case p.NJ8.MIDNIGHT:
-                            return f;
-                        case p.NJ8.LIGHT:
-                            return b;
+                        case m.NJ8.DARK:
+                        case m.NJ8.DARKER:
+                        case m.NJ8.MIDNIGHT:
+                            return x;
+                        case m.NJ8.LIGHT:
+                            return p;
                         default:
-                            return f
+                            return x
                     }
-                }(E)
-            }), (0, r.jsxs)("div", {
-                className: A._9,
-                children: [(0, r.jsx)(s.Text, {
+                }(C)
+            }), (0, i.jsxs)("div", {
+                className: h._9,
+                children: [(0, i.jsx)(r.Text, {
                     variant: "text-lg/semibold",
                     color: "always-white",
                     children: g.intl.string(g.t.dMaDFX)
-                }), (0, r.jsx)(s.Text, {
+                }), (0, i.jsx)(r.Text, {
                     variant: "text-sm/normal",
                     color: "always-white",
                     children: g.intl.string(g.t.F7sgFH)
                 })]
-            }), (0, r.jsx)(d.A, {
-                size: l.$n.Sizes.LARGE,
-                color: l.$n.Colors.GREEN,
+            }), (0, i.jsx)(d.A, {
+                size: a.$n.Sizes.LARGE,
+                color: a.$n.Colors.GREEN,
                 textOptions: {
                     textOverride: _.Ay.isPremium(t) ? g.intl.string(g.t.AfRWI8) : g.intl.string(g.t.nkdUym)
                 },
-                subscriptionTier: m.pe.TIER_2
+                subscriptionTier: A.pe.TIER_2
             })]
         })]
-    }) : h
+    }) : E
 }

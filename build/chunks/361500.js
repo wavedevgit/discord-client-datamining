@@ -1,75 +1,15 @@
-/** chunk id: 361500, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    t: () => m
-}), n(896048);
-var r = n(627968),
-    i = n(64700),
-    a = n(397927),
-    o = n(342494),
-    s = n(217838),
-    l = n(972687),
-    c = n(89608);
-
-function u(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-
-function d(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            u(e, t, n[t])
-        })
-    }
-    return e
-}
-
-function f(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-        var r = Object.getOwnPropertySymbols(e);
-        t && (r = r.filter(function(t) {
-            return Object.getOwnPropertyDescriptor(e, t).enumerable
-        })), n.push.apply(n, r)
-    }
-    return n
-}
-
-function p(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-
-function _(e, t) {
-    if (null == e) return {};
-    var n, r, i, a = {};
-    if ("u" > typeof Reflect && Reflect.ownKeys) {
-        for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
-        return a
-    }
-    if (a = h(e, t), Object.getOwnPropertySymbols)
-        for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
-    return a
-}
-
-function h(e, t) {
-    if (null == e) return {};
-    var n, r, i = {},
-        a = Object.getOwnPropertyNames(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
-    return i
-}
-let m = {
+/** chunk id: 361500, original params: e,l,a (module,exports,require) **/
+a.d(l, {
+    t: () => u
+});
+var t = a(627968),
+    o = a(64700),
+    n = a(397927),
+    i = a(342494),
+    s = a(217838),
+    r = a(972687),
+    d = a(89608);
+let u = {
     title: "Popover",
     stories: [{
         name: "Popover",
@@ -77,51 +17,53 @@ let m = {
         docs: "https://design.discord.tools/components/web/popover",
         component: function(e) {
             let {
-                showAsset: t,
-                showActions: n,
-                showTextLink: c,
+                showAsset: l,
+                showActions: a,
+                showTextLink: d,
                 caretAlign: u,
-                alignmentStrategy: f,
-                align: h,
-                size: m,
-                position: g
-            } = e, E = _(e, ["showAsset", "showActions", "showTextLink", "caretAlign", "alignmentStrategy", "align", "size", "position"]), [y, b] = i.useState(!1), O = i.useRef(null);
-            return (0, r.jsxs)("div", {
+                alignmentStrategy: c,
+                align: b,
+                size: p,
+                position: m,
+                ...x
+            } = e, [v, h] = o.useState(!1), y = o.useRef(null);
+            return (0, t.jsxs)("div", {
                 style: {
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
                     minHeight: "400px"
                 },
-                children: [(0, r.jsx)(o.AM, p(d({}, E), {
-                    position: g,
-                    size: m,
-                    align: h,
-                    alignmentStrategy: f,
-                    targetElementRef: O,
-                    shouldShow: y,
-                    onRequestClose: () => b(!1),
-                    graphic: t ? {
+                children: [(0, t.jsx)(i.AM, {
+                    ...x,
+                    position: m,
+                    size: p,
+                    align: b,
+                    alignmentStrategy: c,
+                    targetElementRef: y,
+                    shouldShow: v,
+                    onRequestClose: () => h(!1),
+                    graphic: l ? {
                         type: "image",
-                        src: "sm" === m ? l.A : s.A
+                        src: "sm" === p ? r.A : s.A
                     } : void 0,
                     caretConfig: {
                         align: u
                     },
-                    actions: n ? [{
+                    actions: a ? [{
                         text: "Close",
-                        onClick: () => b(!1)
+                        onClick: () => h(!1)
                     }] : void 0,
-                    textLink: c ? {
+                    textLink: d ? {
                         text: "Learn More",
                         link: "https://discord.com",
                         external: !0
                     } : void 0
-                }), g), (0, r.jsx)(a.Button, {
+                }, m), (0, t.jsx)(n.Button, {
                     variant: "primary",
                     text: "Toggle Popover",
-                    buttonRef: O,
-                    onClick: () => b(!y)
+                    buttonRef: y,
+                    onClick: () => h(!v)
                 })]
             })
         },
@@ -275,26 +217,28 @@ let m = {
         docs: "https://design.discord.tools/components/web/popover",
         component: function(e) {
             let {
-                showActions: t
-            } = e, n = _(e, ["showActions"]), [s, l] = i.useState(!1), c = i.useRef(null);
-            return (0, r.jsxs)("div", {
-                children: [(0, r.jsx)(o.HZ, p(d({}, n), {
-                    targetElementRef: c,
+                showActions: l,
+                ...a
+            } = e, [s, r] = o.useState(!1), d = o.useRef(null);
+            return (0, t.jsxs)("div", {
+                children: [(0, t.jsx)(i.HZ, {
+                    ...a,
+                    targetElementRef: d,
                     shouldShow: s,
-                    onRequestClose: () => l(!1),
+                    onRequestClose: () => r(!1),
                     title: "Video Popover Demo",
                     body: "Click the video to view it in the media viewer!",
                     assetUrl: "https://cdn.discordapp.com/assets/server-subscription-tier-template/upsell.mov",
                     badge: "new",
-                    action: t ? {
+                    action: l ? {
                         text: "Learn More",
-                        onClick: () => l(!1)
+                        onClick: () => r(!1)
                     } : void 0
-                }), n.position), (0, r.jsx)(a.Button, {
+                }, a.position), (0, t.jsx)(n.Button, {
                     variant: "primary",
                     text: "Show Video Popover",
-                    buttonRef: c,
-                    onClick: () => l(!s)
+                    buttonRef: d,
+                    onClick: () => r(!s)
                 })]
             })
         },
@@ -311,11 +255,12 @@ let m = {
         docs: "https://design.discord.tools/components/web/popover",
         component: function(e) {
             let {
-                showExpressive: t
-            } = e, n = _(e, ["showExpressive"]), [l, u] = i.useState(!1), f = i.useRef(null), h = [{
+                showExpressive: l,
+                ...a
+            } = e, [r, u] = o.useState(!1), c = o.useRef(null), b = [{
                 title: "Welcome to the Feature!",
                 body: "This is the first step of our multi-step introduction.",
-                asset: (0, r.jsx)("img", {
+                asset: (0, t.jsx)("img", {
                     src: s.A,
                     alt: "Step 1"
                 }),
@@ -327,8 +272,8 @@ let m = {
             }, {
                 title: "Learn the Benefits",
                 body: "Here are the amazing benefits you can enjoy with this feature.",
-                asset: (0, r.jsx)("img", {
-                    src: c.A,
+                asset: (0, t.jsx)("img", {
+                    src: d.A,
                     alt: "Step 2"
                 }),
                 action: {
@@ -338,13 +283,13 @@ let m = {
             }, {
                 title: "Get Started!",
                 body: "You're all set to begin using this awesome feature.",
-                asset: (0, r.jsx)("img", {
+                asset: (0, t.jsx)("img", {
                     src: s.A,
                     alt: "Step 3"
                 }),
                 action: {
                     text: "Get Started",
-                    variant: t ? "expressive" : void 0
+                    variant: l ? "expressive" : void 0
                 },
                 gradientColor: "nitro-pink",
                 textLink: {
@@ -353,21 +298,22 @@ let m = {
                     external: !0
                 }
             }];
-            return (0, r.jsxs)("div", {
-                children: [(0, r.jsx)(o.pu, p(d({}, n), {
-                    targetElementRef: f,
-                    shouldShow: l,
+            return (0, t.jsxs)("div", {
+                children: [(0, t.jsx)(i.pu, {
+                    ...a,
+                    targetElementRef: c,
+                    shouldShow: r,
                     onRequestClose: () => u(!1),
-                    steps: h,
+                    steps: b,
                     caretConfig: {
                         align: "center"
                     },
                     onStepChange: () => {}
-                }), n.position), (0, r.jsx)(a.Button, {
+                }, a.position), (0, t.jsx)(n.Button, {
                     variant: "primary",
                     text: "Show Multi-Step",
-                    buttonRef: f,
-                    onClick: () => u(!l)
+                    buttonRef: c,
+                    onClick: () => u(!r)
                 })]
             })
         },

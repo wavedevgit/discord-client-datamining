@@ -1,110 +1,94 @@
-/** chunk id: 750343, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    $: () => m
-}), n(896048);
-var r = n(627968),
-    i = n(64700),
-    a = n(397927),
-    o = n(405139),
-    s = n(156312),
-    l = n(19311),
-    c = n(869177),
-    u = n(252561),
-    d = n(985018);
-
-function f(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
+/** chunk id: 750343, original params: e,t,l (module,exports,require) **/
+l.d(t, {
+    $: () => h
+});
+var a = l(627968),
+    n = l(64700),
+    r = l(397927),
+    i = l(405139),
+    s = l(156312),
+    o = l(19311),
+    u = l(869177),
+    c = l(252561),
+    d = l(985018);
 
 function p(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            f(e, t, n[t])
-        })
-    }
-    return e
-}
-
-function _(e) {
-    let t = i.useRef(null),
-        n = {
+    let t = n.useRef(null),
+        l = {
             paymentLabel: d.intl.string(d.t.ZURqX0),
             paymentRequestRef: t,
             onStripePaymentMethodReceived: () => {},
             onPaymentRequestFailure: () => {},
             onValidPaymentRequest: () => {},
             onChooseType: () => {},
-            loadingComponent: (0, r.jsx)(a.y$y, {
+            loadingComponent: (0, a.jsx)(r.y$y, {
                 style: {
                     marginTop: 16
                 },
-                type: a.tVU.PULSING_ELLIPSIS
+                type: r.tVU.PULSING_ELLIPSIS
             })
         };
-    return e.renderStepBody ? (0, r.jsx)(c.V, p({}, n, e)) : "applePay" === e.paymentRequestWallet ? (0, r.jsx)(o.Mv, p({}, n, e)) : (0, r.jsx)(o.dP, p({}, n, e))
+    return e.renderStepBody ? (0, a.jsx)(u.V, {
+        ...l,
+        ...e
+    }) : "applePay" === e.paymentRequestWallet ? (0, a.jsx)(i.Mv, {
+        ...l,
+        ...e
+    }) : (0, a.jsx)(i.dP, {
+        ...l,
+        ...e
+    })
 }
 
-function h(e) {
+function m(e) {
     let {
         paymentRequestWallet: t
-    } = e, n = i.useRef(null), [a, o] = i.useState(!1), s = () => {
-        null != n.current && n.current.show()
-    };
-    return (0, r.jsx)(u.e_, {
-        footer: (0, r.jsx)(l.A, {
-            primaryCTA: l.A.CTAType.CONTINUE,
+    } = e, l = n.useRef(null), [r, i] = n.useState(!1);
+    return (0, a.jsx)(c.e_, {
+        footer: (0, a.jsx)(o.Ay, {
+            primaryCTA: o.Ay.CTAType.CONTINUE,
             primaryText: d.intl.string("applePay" === t ? d.t.WoXvJL : d.t.wnVVr0),
-            primaryDisabled: !a,
-            onPrimary: () => s(),
+            primaryDisabled: !r,
+            onPrimary: () => void(null != l.current && l.current.show()),
             onBack: () => {}
         }),
-        children: (0, r.jsx)(_, {
+        children: (0, a.jsx)(p, {
             renderConnectorView: !0,
             renderStepBody: !0,
             paymentRequestWallet: t,
-            paymentRequestRef: n,
-            onValidPaymentRequest: () => o(!0)
+            paymentRequestRef: l,
+            onValidPaymentRequest: () => i(!0)
         })
     })
 }
-let m = {
+let h = {
     name: "Payment Request",
     component: function(e) {
         let {
             paymentRequestWallet: t
         } = e;
-        return (0, r.jsx)(s.PaymentContextProvider, {
+        return (0, a.jsx)(s.PaymentContextProvider, {
             stepConfigs: [],
             skuIDs: [],
             activeSubscription: null,
-            children: (0, r.jsxs)(u.wn, {
-                children: [(0, r.jsx)(a.Heading, {
+            children: (0, a.jsxs)(c.wn, {
+                children: [(0, a.jsx)(r.Heading, {
                     variant: "heading-xl/semibold",
                     children: "Payment Request"
-                }), (0, r.jsx)(u.Hq, {
+                }), (0, a.jsx)(c.Hq, {
                     label: "Default View",
-                    children: (0, r.jsx)(_, {
+                    children: (0, a.jsx)(p, {
                         paymentRequestWallet: t
                     })
-                }), (0, r.jsx)(u.Hq, {
+                }), (0, a.jsx)(c.Hq, {
                     label: "Connector View",
-                    children: (0, r.jsx)(_, {
+                    children: (0, a.jsx)(p, {
                         paymentRequestWallet: t,
                         renderConnectorView: !0
                     })
-                }), (0, r.jsx)(u.Hq, {
+                }), (0, a.jsx)(c.Hq, {
                     label: "Add Payment Step Body Connector View",
-                    children: (0, r.jsx)(h, {
+                    children: (0, a.jsx)(m, {
                         paymentRequestWallet: t
                     })
                 })]

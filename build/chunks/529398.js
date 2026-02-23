@@ -1,11 +1,11 @@
 /** chunk id: 529398, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     default: () => h
-}), n(896048);
+});
 var s = n(627968),
     i = n(64700),
-    r = n(397927),
-    a = n(829219),
+    a = n(397927),
+    r = n(829219),
     l = n(890687),
     o = n(92246),
     c = n(646764),
@@ -13,42 +13,42 @@ var s = n(627968),
     u = n(524728),
     m = n(654487),
     x = n(985018),
-    f = n(322956);
+    _ = n(322956);
 
-function _(e) {
+function f(e) {
     let {
         quest: t,
         rewardName: n,
         location: i,
-        sourceQuestContent: a
+        sourceQuestContent: r
     } = e;
     return (0, s.jsxs)("div", {
-        className: f.hQ,
+        className: _.hQ,
         children: [(0, s.jsx)("div", {
-            className: f.tE,
+            className: _.tE,
             children: (0, s.jsx)(c.A, {
                 autoplay: !0,
-                className: f.Qq,
+                className: _.Qq,
                 learnMoreStyle: null,
                 quest: t,
                 questContent: i,
-                sourceQuestContent: a
+                sourceQuestContent: r
             })
         }), (0, s.jsxs)("div", {
-            className: f.dD,
-            children: [(0, s.jsx)(r.Heading, {
+            className: _.dD,
+            children: [(0, s.jsx)(a.Heading, {
                 variant: "heading-xl/semibold",
                 color: "text-strong",
-                className: f.R_,
+                className: _.R_,
                 children: x.intl.string(x.t["0/Yz+Y"])
-            }), (0, s.jsx)(r.Text, {
+            }), (0, s.jsx)(a.Text, {
                 variant: "text-sm/medium",
                 color: "text-subtle",
                 children: x.intl.format(x.t["v1u/zq"], {
                     rewardName: n
                 })
             })]
-        }), (0, s.jsx)(r.Button, {
+        }), (0, s.jsx)(a.Button, {
             variant: "secondary",
             size: "sm",
             text: x.intl.string(x.t.OD6Tvf),
@@ -59,36 +59,35 @@ function _(e) {
 }
 
 function h(e) {
-    var t, n;
     let {
-        initialQuest: r,
-        onClose: c,
-        transitionState: x,
-        location: f,
-        sourceQuestContent: h
-    } = e, g = null != (t = (0, l.C5)(r.id)) ? t : r, j = i.useMemo(() => (0, o.f)(g.config), [g]), v = (null == (n = g.userStatus) ? void 0 : n.claimedAt) != null, p = !g.preview && !v, [C, N] = i.useState(p ? "loading" : "claimed");
+        initialQuest: t,
+        onClose: n,
+        transitionState: a,
+        location: c,
+        sourceQuestContent: x
+    } = e, _ = (0, l.C5)(t.id) ?? t, h = i.useMemo(() => (0, o.f)(_.config), [_]), g = _.userStatus?.claimedAt != null, j = !_.preview && !g, [C, v] = i.useState(j ? "loading" : "claimed");
     i.useEffect(() => {
-        if (p) {
-            let e = (0, o.$s)(g.config);
-            (0, a.Oq)(g.id, e, f).then(() => N("claimed")).catch(() => N("error"))
+        if (j) {
+            let e = (0, o.$s)(_.config);
+            (0, r.Oq)(_.id, e, c).then(() => v("claimed")).catch(() => v("error"))
         }
-    }, [g, f, p]);
-    let y = "error" === C || null == j;
+    }, [_, c, j]);
+    let N = "error" === C || null == h;
     return (0, s.jsx)(u.A, {
-        onClose: c,
-        transitionState: x,
-        quest: g,
-        sourceQuestContent: h,
+        onClose: n,
+        transitionState: a,
+        quest: _,
+        sourceQuestContent: x,
         location: m.rE.INGAME_REWARD_MODAL,
         isRewardContentLoading: "loading" === C,
-        rewardContentHasError: y,
-        rewardContent: y ? null : (0, s.jsx)(d.A, {
-            rewardName: j.messages.name,
-            children: (0, s.jsx)(_, {
-                quest: g,
-                rewardName: j.messages.name,
-                location: f,
-                sourceQuestContent: h
+        rewardContentHasError: N,
+        rewardContent: N ? null : (0, s.jsx)(d.A, {
+            rewardName: h.messages.name,
+            children: (0, s.jsx)(f, {
+                quest: _,
+                rewardName: h.messages.name,
+                location: c,
+                sourceQuestContent: x
             })
         })
     })

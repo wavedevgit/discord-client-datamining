@@ -1,28 +1,29 @@
 /** chunk id: 717518, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => h
+    A: () => u
 });
-var r, l, i = n(735438),
+var i = n(735438),
     s = n.n(i),
-    a = n(311907),
-    o = n(73153),
-    c = n(71393);
-let u = null,
-    d = {};
-class p extends(l = a.Ay.Store) {
+    l = n(311907),
+    r = n(73153),
+    a = n(71393);
+let o = null,
+    c = {};
+class d extends l.Ay.Store {
+    static displayName = "RegionStore";
     initialize() {
-        this.waitFor(c.A)
+        this.waitFor(a.A)
     }
     getOptimalRegion() {
-        var e;
-        let t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
-            n = this.getRegions(t);
-        return null != n ? null != (e = n.find(e => {
+        let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
+            t = this.getRegions(e);
+        return null != t ? t.find(e => {
             let {
                 optimal: t
             } = e;
             return t
-        })) ? e : s().sample(n) : null
+        }) ?? s().sample(t) : null
     }
     getOptimalRegionId() {
         let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
@@ -40,20 +41,15 @@ class p extends(l = a.Ay.Store) {
         return null != t ? t.id : null
     }
     getRegions(e) {
-        return null != e ? d[e] : u
+        return null != e ? c[e] : o
     }
-}(r = "displayName") in p ? Object.defineProperty(p, r, {
-    value: "RegionStore",
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
-}) : p[r] = "RegionStore";
-let h = new p(o.h, {
+}
+let u = new d(r.h, {
     LOAD_REGIONS: function(e) {
         let t = s().sortBy(e.regions, e => e.name);
-        null != e.guildId ? d[e.guildId] = t : u = t
+        null != e.guildId ? c[e.guildId] = t : o = t
     },
     GUILD_DELETE: function(e) {
-        delete d[e.guild.id]
+        delete c[e.guild.id]
     }
 })

@@ -1,98 +1,80 @@
 /** chunk id: 50400, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => G
-}), n(65821), n(896048);
-var r, l = n(627968),
-    i = n(64700),
-    s = n(92674),
-    a = n(837381),
-    o = n(311907),
-    c = n(397927),
-    u = n(442433),
+    A: () => O
+});
+var i = n(627968),
+    s = n(64700),
+    l = n(475539),
+    r = n(837381),
+    a = n(311907),
+    o = n(397927),
+    c = n(442433),
     d = n(313961),
-    p = n(571694),
+    u = n(571694),
     h = n(47167),
-    g = n(598104),
-    f = n(616356),
-    m = n(383501),
-    b = n(222823),
-    A = n(309010),
-    y = n(287809),
-    O = n(607567),
-    j = n(531685),
-    x = n(967978),
-    _ = n(941971),
-    v = n(375855),
-    E = n(900848),
-    C = n(550591),
-    S = n(65611),
-    I = n(652215),
-    N = n(985018),
-    T = n(308294);
-
-function P(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-
-function w(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            P(e, t, n[t])
-        })
-    }
-    return e
-}
-
-function R(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
-        }
-        return n
-    })(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-let D = {
+    A = n(598104),
+    p = n(616356),
+    g = n(383501),
+    m = n(222823),
+    _ = n(309010),
+    f = n(287809),
+    x = n(607567),
+    C = n(531685),
+    E = n(941971),
+    I = n(375855),
+    b = n(900848),
+    N = n(65611),
+    S = n(652215),
+    T = n(985018),
+    y = n(308294);
+let v = {
     friction: 28,
     tension: 600
 };
 
-function L(e) {
+function j(e) {
     switch (e) {
         case "height":
         case "opacity":
-            return w({
-                duration: 150
-            }, D);
+            return {
+                duration: 150, ...v
+            };
         case "scale":
-            return w({}, D);
+            return {
+                ...v
+            };
         default:
-            throw Error("DirectMessage: getSpringConfigs() - Invalid spring ".concat(String(e)))
+            throw Error(`DirectMessage: getSpringConfigs() - Invalid spring ${String(e)}`)
     }
 }
-class M extends(r = i.PureComponent) {
+class R extends s.PureComponent {
+    static defaultProps = {
+        badge: 0,
+        audio: !1,
+        video: !1,
+        isCurrentUserInThisDMCall: !1
+    };
+    state = {
+        hovered: !1,
+        animating: !0,
+        controller: new l.Controller({
+            scale: 0,
+            height: 0,
+            opacity: 0,
+            config: j
+        })
+    };
     componentWillEnter(e) {
         let {
             controller: t
         } = this.state;
         e(), t.update({
-            immediate: !j.A.isFocused(),
+            immediate: !C.A.isFocused(),
             height: 1,
             opacity: 1,
             scale: 1,
-            config: L
+            config: j
         }).start().then(() => this.setState({
             animating: !1
         }))
@@ -106,7 +88,7 @@ class M extends(r = i.PureComponent) {
             scale: 1,
             opacity: 1,
             height: 1,
-            config: L
+            config: j
         }).start().then(e)
     }
     componentWillLeave(e) {
@@ -116,11 +98,11 @@ class M extends(r = i.PureComponent) {
         this.setState({
             animating: !0
         }, () => t.update({
-            immediate: !j.A.isFocused(),
+            immediate: !C.A.isFocused(),
             height: 0,
             opacity: 0,
             scale: 0,
-            config: L
+            config: j
         }).start().then(e))
     }
     componentWillUnmount() {
@@ -133,165 +115,141 @@ class M extends(r = i.PureComponent) {
             controller: t
         } = this.state, {
             opacity: n,
-            height: r,
-            scale: l
+            height: i,
+            scale: s
         } = t.springs;
         return {
             opacity: n,
-            height: r.to([0, 1], [0, e]),
-            transform: l.to([0, 1], [.5, 1]).to(e => "scale(".concat(e, ")"))
+            height: i.to([0, 1], [0, e]),
+            transform: s.to([0, 1], [.5, 1]).to(e => `scale(${e})`)
         }
     }
     getChannelIcon() {
         let {
             channel: e
-        } = this.props, t = e.type === I.rbe.DM ? y.default.getUser(e.getRecipientId()) : null;
-        return null != t ? t.getAvatarURL(void 0, 48, !1) : (0, p.Y)(e)
+        } = this.props, t = e.type === S.rbe.DM ? f.default.getUser(e.getRecipientId()) : null;
+        return null != t ? t.getAvatarURL(void 0, 48, !1) : (0, u.Y)(e)
     }
+    handleContextMenu = e => {
+        let {
+            channel: t
+        } = this.props, s = t.type === S.rbe.DM ? f.default.getUser(t.getRecipientId()) : null;
+        null != s ? (0, c.L3)(e, async () => {
+            let {
+                default: e
+            } = await Promise.all([n.e("97262"), n.e("42128"), n.e("39778"), n.e("31885")]).then(n.bind(n, 385913));
+            return n => (0, i.jsx)(e, {
+                ...n,
+                channel: t,
+                user: s
+            })
+        }) : (0, c.L3)(e, async () => {
+            let {
+                default: e
+            } = await Promise.all([n.e("97262"), n.e("15438")]).then(n.bind(n, 4027));
+            return n => (0, i.jsx)(e, {
+                ...n,
+                channel: t,
+                selected: !1
+            })
+        })
+    };
     render() {
         let {
             channel: e,
             channelName: t,
             selected: n,
-            badge: r,
-            audio: i,
+            badge: s,
+            audio: r,
             video: a,
-            stream: o,
-            isCurrentUserInThisDMCall: u,
-            unread: d,
-            treeItemProps: p,
-            statusIndicatorsEnabled: h
+            stream: c,
+            isCurrentUserInThisDMCall: d,
+            unread: u,
+            treeItemProps: h
         } = this.props, {
-            hovered: f,
-            animating: m
-        } = this.state, b = e.isMultiUserDM() && null == e.icon, A = () => (0, l.jsx)(c.jlP, w({
-            to: I.BVt.CHANNEL(I.ME, e.id),
+            hovered: p,
+            animating: g
+        } = this.state, m = e.isMultiUserDM() && null == e.icon, _ = () => (0, i.jsx)(o.jlP, {
+            to: S.BVt.CHANNEL(S.ME, e.id),
             onMouseEnter: () => this.setState({
                 hovered: !0
             }),
             onMouseLeave: () => this.setState({
                 hovered: !1
             }),
-            selected: n || f,
-            ariaLabel: null != t ? N.intl.formatToPlainString(N.t.hKarnZ, {
-                mentions: r,
+            selected: n || p,
+            ariaLabel: null != t ? T.intl.formatToPlainString(T.t.hKarnZ, {
+                mentions: s,
                 name: t
             }) : "",
             onContextMenu: this.handleContextMenu,
-            icon: b ? void 0 : this.getChannelIcon(),
-            backgroundStyle: b ? "on-hover" : "always",
-            children: b ? (0, l.jsx)(g.A, {
+            icon: m ? void 0 : this.getChannelIcon(),
+            backgroundStyle: m ? "on-hover" : "always",
+            children: m ? (0, i.jsx)(A.A, {
                 channel: e,
-                size: c._3J.SIZE_40,
-                facepileSizeOverride: c._3J.SIZE_32,
+                size: o._3J.SIZE_40,
+                facepileSizeOverride: o._3J.SIZE_32,
                 "aria-hidden": !0
-            }) : void 0
-        }, p)), y = (0, l.jsx)(c.Qk9, {
-            rounded: !0,
-            selected: !1,
-            lowerBadge: r > 0 ? (0, S.wN)(r, void 0, !0) : null,
-            upperBadge: (0, S.oi)({
-                audio: i,
-                video: a,
-                screenshare: o,
-                isCurrentUserConnected: u
-            }),
-            lowerBadgeSize: {
-                width: (0, c.o6S)(r)
-            },
-            children: A()
-        }), O = h ? (0, l.jsx)(v.A, {
-            channel: e,
-            children: y
-        }) : (0, l.jsx)(C.A, {
-            text: null != t ? t : "",
-            selected: n,
-            children: y
+            }) : void 0,
+            ...h
         });
-        return (0, l.jsx)(s.animated.div, {
+        return (0, i.jsx)(l.animated.div, {
             style: this.getAnimatedStyle(),
-            children: (0, l.jsxs)(E.c, {
-                children: [(0, l.jsx)(_.A, {
-                    hovered: !m && f,
-                    selected: !m && n,
-                    unread: !m && d,
-                    className: T.I
-                }), O]
-            })
-        })
-    }
-    constructor(...e) {
-        super(...e), P(this, "state", {
-            hovered: !1,
-            animating: !0,
-            controller: new s.Controller({
-                scale: 0,
-                height: 0,
-                opacity: 0,
-                config: L
-            })
-        }), P(this, "handleContextMenu", e => {
-            let {
-                channel: t
-            } = this.props, r = t.type === I.rbe.DM ? y.default.getUser(t.getRecipientId()) : null;
-            null != r ? (0, u.L3)(e, async () => {
-                let {
-                    default: e
-                } = await Promise.all([n.e("97262"), n.e("29534"), n.e("93169"), n.e("39778"), n.e("54266")]).then(n.bind(n, 385913));
-                return n => (0, l.jsx)(e, R(w({}, n), {
-                    channel: t,
-                    user: r
-                }))
-            }) : (0, u.L3)(e, async () => {
-                let {
-                    default: e
-                } = await Promise.all([n.e("97262"), n.e("60200")]).then(n.bind(n, 4027));
-                return n => (0, l.jsx)(e, R(w({}, n), {
-                    channel: t,
-                    selected: !1
-                }))
+            children: (0, i.jsxs)(b.c, {
+                children: [(0, i.jsx)(E.A, {
+                    hovered: !g && p,
+                    selected: !g && n,
+                    unread: !g && u,
+                    className: y.I
+                }), (0, i.jsx)(I.A, {
+                    channel: e,
+                    children: (0, i.jsx)(o.Qk9, {
+                        rounded: !0,
+                        selected: !1,
+                        lowerBadge: s > 0 ? (0, N.wN)(s, void 0, !0) : null,
+                        upperBadge: (0, N.oi)({
+                            audio: r,
+                            video: a,
+                            screenshare: c,
+                            isCurrentUserConnected: d
+                        }),
+                        lowerBadgeSize: {
+                            width: (0, o.o6S)(s)
+                        },
+                        children: _()
+                    })
+                })]
             })
         })
     }
 }
-P(M, "defaultProps", {
-    badge: 0,
-    audio: !1,
-    video: !1,
-    isCurrentUserInThisDMCall: !1
-});
-let G = i.forwardRef(function(e, t) {
+let O = s.forwardRef(function(e, t) {
     let n = e.channel.id,
-        r = (0, h.Ay)(e.channel),
-        i = (0, a.Vd)(n, 2),
-        s = (0, o.bG)([m.A], () => m.A.getChannelId(), []),
-        u = (0, o.bG)([d.A], () => d.A.getMode(n), [n]),
-        p = (0, o.bG)([f.A], () => f.A.getAllApplicationStreamsForChannel(n).length > 0),
-        g = (0, o.bG)([O.Ay], () => O.Ay.getVoiceStatesForChannel(e.channel).length > 0, [e.channel]),
-        y = (0, o.bG)([A.A], () => A.A.getChannelId(), []),
-        j = (0, o.bG)([b.Ay], () => b.Ay.getMentionCount(n), [n]),
-        {
-            enabled: _
-        } = (0, x.r)({
-            location: "DirectMessage"
-        }),
-        v = s === n,
-        E = !1,
-        C = !1;
-    (v || _ && g) && (E = u === I._Of.VOICE, C = u === I._Of.VIDEO);
-    let S = (0, c.rdh)(c.LU0.modules.guildbar.AVATAR_SIZE);
-    return (0, l.jsx)(M, R(w({}, e), {
+        s = (0, h.Ay)(e.channel),
+        l = (0, r.Vd)(n, 2),
+        c = (0, a.bG)([g.A], () => g.A.getChannelId(), []),
+        u = (0, a.bG)([d.A], () => d.A.getMode(n), [n]),
+        A = (0, a.bG)([p.A], () => p.A.getAllApplicationStreamsForChannel(n).length > 0),
+        f = (0, a.bG)([x.Ay], () => x.Ay.getVoiceStatesForChannel(e.channel).length > 0, [e.channel]),
+        C = (0, a.bG)([_.A], () => _.A.getChannelId(), []),
+        E = (0, a.bG)([m.Ay], () => m.Ay.getMentionCount(n), [n]),
+        I = c === n,
+        b = !1,
+        N = !1;
+    (I || f) && (b = u === S._Of.VOICE, N = u === S._Of.VIDEO);
+    let T = (0, o.rdh)(o.LU0.modules.guildbar.AVATAR_SIZE);
+    return (0, i.jsx)(R, {
+        ...e,
         ref: t,
-        channelName: r,
-        unread: j > 0,
-        selected: y === n,
-        badge: j,
-        audio: E,
-        video: C,
-        stream: p,
-        isCurrentUserInThisDMCall: v,
-        size: S,
-        treeItemProps: i,
-        statusIndicatorsEnabled: _
-    }))
+        channelName: s,
+        unread: E > 0,
+        selected: C === n,
+        badge: E,
+        audio: b,
+        video: N,
+        stream: A,
+        isCurrentUserInThisDMCall: I,
+        size: T,
+        treeItemProps: l
+    })
 })

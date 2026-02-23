@@ -1,24 +1,24 @@
 /** chunk id: 723278, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    L: () => g,
+    L: () => m,
     N: () => u
 });
-var r = n(627968),
-    i = n(397927),
+var i = n(627968),
+    s = n(397927),
     l = n(398590),
-    s = n(837057),
+    r = n(837057),
     a = n(310419),
     o = n(488995),
-    c = n(985018),
-    d = n(885680);
+    d = n(985018),
+    c = n(885680);
 
 function u(e) {
     let {
         guildId: t,
         section: n
     } = e;
-    (0, s.transitionToGlobalDiscovery)({
+    (0, r.transitionToGlobalDiscovery)({
         tab: o.GlobalDiscoveryTab.APPS,
         newSessionState: {
             guildId: t,
@@ -30,15 +30,15 @@ function u(e) {
     }), (0, l.jH)()
 }
 
-function g() {
-    return (0, r.jsxs)("div", {
-        className: d.q,
-        children: [(0, r.jsx)("div", {
-            children: c.intl.string(c.t.AKcFUj)
-        }), (0, r.jsx)(i.tfB, {
+function m() {
+    return (0, i.jsxs)("div", {
+        className: c.q,
+        children: [(0, i.jsx)("div", {
+            children: d.intl.string(d.t.AKcFUj)
+        }), (0, i.jsx)(s.tfB, {
             size: "xs",
             color: "currentColor",
-            className: d.w
+            className: c.w
         })]
     })
 }

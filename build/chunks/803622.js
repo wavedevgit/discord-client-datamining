@@ -1,261 +1,260 @@
 /** chunk id: 803622, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => R
+    A: () => O
 });
-var l = n(627968),
-    r = n(64700),
-    i = n(503698),
-    a = n.n(i),
-    s = n(607399),
+var i = n(627968),
+    l = n(64700),
+    s = n(503698),
+    a = n.n(s),
+    r = n(607399),
     o = n(311907),
     c = n(397927),
-    u = n(49229),
-    d = n(793574),
+    d = n(49229),
+    u = n(793574),
     h = n(573435),
-    p = n(327166),
-    f = n(157550),
-    m = n(471271),
-    g = n(957283),
-    A = n(772659),
-    b = n(138298),
-    _ = n(622543),
-    y = n(657331),
-    v = n(761640),
-    E = n(994500),
-    O = n(287809),
-    C = n(486020),
-    S = n(302975),
-    x = n(652215),
-    j = n(518477),
-    I = n(985018),
-    T = n(228288);
-let N = e => {
+    m = n(327166),
+    A = n(157550),
+    g = n(471271),
+    p = n(957283),
+    f = n(772659),
+    _ = n(138298),
+    E = n(622543),
+    x = n(657331),
+    C = n(761640),
+    S = n(994500),
+    I = n(287809),
+    T = n(486020),
+    N = n(302975),
+    y = n(652215),
+    v = n(518477),
+    b = n(985018),
+    j = n(228288);
+let R = e => {
         let {
             userId: t,
             channelId: n
-        } = e, i = (0, o.bG)([_.A], () => _.A.getMutualGuilds(t), [t]), a = r.useMemo(() => null != i ? i.slice(0, 3).map((e, t) => {
+        } = e, s = (0, o.bG)([E.A], () => E.A.getMutualGuilds(t), [t]), a = l.useMemo(() => null != s ? s.slice(0, 3).map((e, t) => {
             let {
                 guild: n
-            } = e, r = null != n ? C.Ay.getGuildIconURL({
+            } = e, l = null != n ? T.Ay.getGuildIconURL({
                 id: n.id,
                 icon: n.icon,
                 size: 24
             }) : null;
-            if (null == r) return null;
-            let a = t === (i.length > 3 ? 3 : i.length) - 1,
-                s = (0, l.jsx)("img", {
-                    src: r,
+            if (null == l) return null;
+            let a = t === (s.length > 3 ? 3 : s.length) - 1,
+                r = (0, i.jsx)("img", {
+                    src: l,
                     alt: "",
-                    className: T.my
+                    className: j.my
                 }, t);
-            return a ? s : (0, l.jsx)(h.Ay, {
-                className: T.cp,
+            return a ? r : (0, i.jsx)(h.Ay, {
+                className: j.cp,
                 mask: h.Ay.Masks.VOICE_USER_SUMMARY_ITEM,
                 width: 24,
                 height: 24,
-                children: s
+                children: r
             }, t)
-        }).filter(e => null != e) : [], [i]);
-        return null == i || 0 === i.length ? (0, l.jsx)(c.Text, {
+        }).filter(e => null != e) : [], [s]);
+        return null == s || 0 === s.length ? (0, i.jsx)(c.Text, {
             color: "text-default",
             variant: "text-sm/normal",
-            children: I.intl.string(I.t.zjVh8h)
-        }) : (0, l.jsxs)(l.Fragment, {
-            children: [(0, l.jsx)("div", {
-                className: T.H,
+            children: b.intl.string(b.t.zjVh8h)
+        }) : (0, i.jsxs)(i.Fragment, {
+            children: [(0, i.jsx)("div", {
+                className: j.H,
                 children: a
-            }), (0, l.jsx)(c.DUT, {
+            }), (0, i.jsx)(c.DUT, {
                 onClick: () => {
-                    (0, y.openUserProfileModal)({
+                    (0, x.openUserProfileModal)({
                         userId: t,
                         channelId: n,
-                        tabSection: j.RP.MUTUAL_GUILDS,
-                        sourceAnalyticsLocations: [d.A.DM_CHANNEL]
+                        tabSection: v.RP.MUTUAL_GUILDS,
+                        sourceAnalyticsLocations: [u.A.DM_CHANNEL]
                     })
                 },
-                children: (0, l.jsx)(c.Text, {
-                    className: T.tE,
+                children: (0, i.jsx)(c.Text, {
+                    className: j.tE,
                     variant: "text-sm/normal",
-                    children: I.intl.format(I.t.eE3oep, {
-                        count: i.length
+                    children: b.intl.format(b.t.eE3oep, {
+                        count: s.length
                     })
                 })
             })]
         })
     },
-    P = e => {
-        var t;
+    M = e => {
         let {
-            relationshipType: n,
-            userId: r,
-            showingBanner: i
-        } = e, a = null == (t = O.default.getUser(r)) ? void 0 : t.bot, s = () => {
-            u.A.addRelationship({
-                userId: r,
+            relationshipType: t,
+            userId: n,
+            showingBanner: l
+        } = e, s = I.default.getUser(n)?.bot, a = () => {
+            d.A.addRelationship({
+                userId: n,
                 context: {
-                    location: x.liQ.DM_CHANNEL
+                    location: y.liQ.DM_CHANNEL
                 }
             })
-        }, o = (0, l.jsx)(c.Button, {
+        }, r = (0, i.jsx)(c.Button, {
             size: "sm",
             variant: "secondary",
             onClick: () => {
-                u.A.blockUser(r, {
-                    location: x.liQ.DM_CHANNEL
+                d.A.blockUser(n, {
+                    location: y.liQ.DM_CHANNEL
                 })
             },
-            text: I.intl.string(I.t.l4Emac)
-        }), d = (0, p.D)(r);
-        switch (n) {
-            case x.eA$.NONE:
-                return (0, l.jsxs)(l.Fragment, {
-                    children: [!a && !i && (0, l.jsx)(c.Button, {
+            text: b.intl.string(b.t.l4Emac)
+        }), o = (0, m.D)(n);
+        switch (t) {
+            case y.eA$.NONE:
+                return (0, i.jsxs)(i.Fragment, {
+                    children: [!s && !l && (0, i.jsx)(c.Button, {
                         size: "sm",
                         variant: "primary",
-                        onClick: s,
-                        text: d
-                    }), o]
+                        onClick: a,
+                        text: o
+                    }), r]
                 });
-            case x.eA$.FRIEND:
-                return (0, l.jsxs)(l.Fragment, {
-                    children: [(0, l.jsx)(c.Button, {
+            case y.eA$.FRIEND:
+                return (0, i.jsxs)(i.Fragment, {
+                    children: [(0, i.jsx)(c.Button, {
                         size: "sm",
                         variant: "secondary",
                         onClick: () => {
-                            u.A.removeFriend(r, {
-                                location: x.liQ.DM_CHANNEL
+                            d.A.removeFriend(n, {
+                                location: y.liQ.DM_CHANNEL
                             })
                         },
-                        text: I.intl.string(I.t.cvSt1J)
-                    }), o]
+                        text: b.intl.string(b.t.cvSt1J)
+                    }), r]
                 });
-            case x.eA$.BLOCKED:
-                return (0, l.jsx)(c.Button, {
+            case y.eA$.BLOCKED:
+                return (0, i.jsx)(c.Button, {
                     size: "sm",
                     variant: "secondary",
                     onClick: () => {
-                        u.A.unblockUser(r, {
-                            location: x.liQ.DM_CHANNEL
+                        d.A.unblockUser(n, {
+                            location: y.liQ.DM_CHANNEL
                         })
                     },
-                    text: I.intl.string(I.t.XyHpKH)
+                    text: b.intl.string(b.t.XyHpKH)
                 });
-            case x.eA$.PENDING_INCOMING:
-                return (0, l.jsxs)(l.Fragment, {
-                    children: [(0, l.jsx)(c.Button, {
+            case y.eA$.PENDING_INCOMING:
+                return (0, i.jsxs)(i.Fragment, {
+                    children: [(0, i.jsx)(c.Button, {
                         size: "sm",
                         variant: "primary",
-                        onClick: s,
-                        text: I.intl.string(I.t["+WbSn5"])
-                    }), (0, l.jsx)(c.Button, {
+                        onClick: a,
+                        text: b.intl.string(b.t["+WbSn5"])
+                    }), (0, i.jsx)(c.Button, {
                         size: "sm",
                         variant: "secondary",
                         onClick: () => {
-                            u.A.cancelFriendRequest(r, {
-                                location: x.liQ.DM_CHANNEL
+                            d.A.cancelFriendRequest(n, {
+                                location: y.liQ.DM_CHANNEL
                             })
                         },
-                        text: I.intl.string(I.t.rQSndv)
-                    }), o]
+                        text: b.intl.string(b.t.rQSndv)
+                    }), r]
                 });
-            case x.eA$.PENDING_OUTGOING:
-                return (0, l.jsxs)(l.Fragment, {
-                    children: [(0, l.jsx)(c.Button, {
+            case y.eA$.PENDING_OUTGOING:
+                return (0, i.jsxs)(i.Fragment, {
+                    children: [(0, i.jsx)(c.Button, {
                         size: "sm",
                         variant: "primary",
                         disabled: !0,
-                        text: I.intl.string(I.t.xMH6vD)
-                    }), o]
+                        text: b.intl.string(b.t.xMH6vD)
+                    }), r]
                 });
             default:
                 return null
         }
     },
-    w = e => {
+    D = e => {
         let {
             channelId: t,
             otherUserId: n
-        } = e, i = r.useCallback(() => {
-            (0, c.showToast)((0, c.createToast)(I.intl.string(I.t.a2j0hv), c.ToastType.FAILURE))
-        }, []), a = r.useCallback(() => {
-            b.A.closeChannelSidebar(v.fe)
-        }, []), s = r.useCallback(() => {
-            b.A.closeChannelSidebar(v.fe)
+        } = e, s = l.useCallback(() => {
+            (0, c.showToast)((0, c.createToast)(b.intl.string(b.t.a2j0hv), c.ToastType.FAILURE))
+        }, []), a = l.useCallback(() => {
+            _.A.closeChannelSidebar(C.fe)
+        }, []), r = l.useCallback(() => {
+            _.A.closeChannelSidebar(C.fe)
         }, []), {
             acceptMessageRequest: o,
-            rejectMessageRequest: u,
-            isAcceptLoading: d,
+            rejectMessageRequest: d,
+            isAcceptLoading: u,
             isRejectLoading: h,
-            isOptimisticAccepted: p,
-            isOptimisticRejected: f
-        } = (0, m.t)({
-            user: O.default.getUser(n),
-            onError: i,
-            onAcceptSuccess: s,
+            isOptimisticAccepted: m,
+            isOptimisticRejected: A
+        } = (0, g.t)({
+            user: I.default.getUser(n),
+            onError: s,
+            onAcceptSuccess: r,
             onRejectSuccess: a
-        }), g = d || h || p || f;
-        return (0, l.jsxs)(l.Fragment, {
-            children: [(0, l.jsx)(c.Button, {
+        }), p = u || h || m || A;
+        return (0, i.jsxs)(i.Fragment, {
+            children: [(0, i.jsx)(c.Button, {
                 variant: "primary",
                 size: "sm",
-                disabled: g,
+                disabled: p,
                 onClick: () => o(t),
-                loading: d,
-                text: I.intl.string(I.t.Kz8Pwr)
-            }), (0, l.jsx)(c.Button, {
+                loading: u,
+                text: b.intl.string(b.t.Kz8Pwr)
+            }), (0, i.jsx)(c.Button, {
                 variant: "secondary",
                 size: "sm",
-                disabled: g,
-                onClick: () => u(t),
+                disabled: p,
+                onClick: () => d(t),
                 loading: h,
-                text: I.intl.string(I.t.B2nygW)
+                text: b.intl.string(b.t.B2nygW)
             })]
         })
     },
-    R = e => {
+    O = e => {
         let {
             userId: t,
             channel: n,
-            showingBanner: r
+            showingBanner: l
         } = e, {
-            channelId: i
-        } = (0, g.N)(), u = (0, o.bG)([f.A], () => null != i && f.A.isSpam(i), [i]), d = (0, o.bG)([E.A], () => E.A.getRelationshipType(t), [t]), h = n.id === i, p = !s.Fr && !h, m = !!s.Fr || h || u, b = u || h ? (0, l.jsxs)("div", {
-            className: T.mG,
-            children: [(0, l.jsx)(w, {
+            channelId: s
+        } = (0, p.N)(), d = (0, o.bG)([A.A], () => null != s && A.A.isSpam(s), [s]), u = (0, o.bG)([S.A], () => S.A.getRelationshipType(t), [t]), h = n.id === s, m = !r.Fr && !h, g = !!r.Fr || h || d, _ = d || h ? (0, i.jsxs)("div", {
+            className: j.mG,
+            children: [(0, i.jsx)(D, {
                 channelId: n.id,
                 otherUserId: t
-            }), (0, l.jsx)(A.A, {
+            }), (0, i.jsx)(f.A, {
                 channel: n
             })]
-        }) : (0, l.jsxs)("div", {
-            className: T.mG,
-            children: [(0, l.jsx)(P, {
-                relationshipType: d,
+        }) : (0, i.jsxs)("div", {
+            className: j.mG,
+            children: [(0, i.jsx)(M, {
+                relationshipType: u,
                 userId: t,
-                showingBanner: r
-            }), !r && (0, l.jsx)(S.A, {
+                showingBanner: l
+            }), !l && (0, i.jsx)(N.A, {
                 otherUserId: t,
                 channel: n,
-                navigateAwayOnReportSuccess: p
+                navigateAwayOnReportSuccess: m
             })]
-        }), _ = d !== x.eA$.PENDING_INCOMING || u || h ? null : (0, l.jsx)(c.Text, {
+        }), E = u !== y.eA$.PENDING_INCOMING || d || h ? null : (0, i.jsx)(c.Text, {
             color: "text-default",
             variant: "text-sm/normal",
-            children: I.intl.string(I.t.c2v5nO)
+            children: b.intl.string(b.t.c2v5nO)
         });
-        return (0, l.jsxs)("div", {
-            className: m ? T.AA : T.kL,
-            children: [(0, l.jsx)("div", {
-                className: T.mG,
-                children: (0, l.jsx)(N, {
+        return (0, i.jsxs)("div", {
+            className: g ? j.AA : j.kL,
+            children: [(0, i.jsx)("div", {
+                className: j.mG,
+                children: (0, i.jsx)(R, {
                     userId: t,
                     channelId: n.id
                 })
-            }), !m && (0, l.jsx)("div", {
-                className: T.yF
-            }), (0, l.jsxs)("div", {
-                className: a()(T.mG, T.LV),
-                children: [_, b]
+            }), !g && (0, i.jsx)("div", {
+                className: j.yF
+            }), (0, i.jsxs)("div", {
+                className: a()(j.mG, j.LV),
+                children: [E, _]
             })]
         })
     }

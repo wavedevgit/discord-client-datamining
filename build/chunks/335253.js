@@ -1,65 +1,65 @@
 /** chunk id: 335253, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    default: () => O
-}), n(896048);
-var r = n(627968);
+    default: () => x
+});
+var i = n(627968);
 n(64700);
-var i = n(397927),
-    l = n(442433),
-    o = n(847767),
-    a = n(358367),
-    u = n(793574),
-    c = n(50268),
-    d = n(235052),
-    s = n(222311),
+var l = n(397927),
+    a = n(442433),
+    r = n(847767),
+    d = n(358367),
+    s = n(793574),
+    o = n(50268),
+    u = n(235052),
+    c = n(222311),
     A = n(237749),
-    _ = n(961350),
-    f = n(661455),
-    b = n(291247),
+    g = n(961350),
+    b = n(661455),
+    f = n(291247),
     E = n(652215),
-    g = n(985018);
-let O = (0, a.A)((0, o.A)(function(e) {
+    m = n(985018);
+let x = (0, d.A)((0, r.A)(function(e) {
     let {
         user: t,
         channel: n,
-        guildId: o,
-        onSelect: a,
-        onInteraction: u,
+        guildId: r,
+        onSelect: d,
+        onInteraction: s,
         context: E
-    } = e, O = n.id, j = t.isNonUserBot(), v = t.id === _.default.getId(), p = (0, s.A)(t), y = (0, A.A)(t, o, O), S = (0, f.n)({
-        isOwnSettings: v,
+    } = e, x = n.id, h = t.isNonUserBot(), C = t.id === g.default.getId(), S = (0, c.A)(t), v = (0, A.A)(t, r, x), j = (0, b.n)({
+        isOwnSettings: C,
         userId: t.id,
-        channelId: O,
-        guildId: o,
+        channelId: x,
+        guildId: r,
         context: E
-    }), [C, h] = (0, f.O)(t, O, o), I = (0, b.A)(t, o, O), m = (0, c.A)({
+    }), [I, p] = (0, b.O)(t, x, r), _ = (0, f.A)(t, r, x), M = (0, o.A)({
         id: t.id,
-        label: g.intl.string(g.t["/AXYnE"])
-    }), T = (0, d.A)(t.id, n);
-    return (0, r.jsx)(i.W1t, {
+        label: m.intl.string(m.t["/AXYnE"])
+    }), y = (0, u.A)(t.id, n);
+    return (0, i.jsx)(l.W1t, {
         "data-menu-migrated-auto": !0,
         navId: "user-context",
-        onClose: l.Z_,
-        "aria-label": g.intl.string(g.t.liqwPJ),
-        onSelect: a,
-        onInteraction: u,
+        onClose: a.Z_,
+        "aria-label": m.intl.string(m.t.liqwPJ),
+        onSelect: d,
+        onInteraction: s,
         variant: "fixed",
-        children: !j && (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsxs)(i.rXV, {
-                children: [p, y]
-            }), T, S, !v && (0, r.jsx)(i.rXV, {
-                children: (0, r.jsxs)(i.Drp, {
+        children: !h && (0, i.jsxs)(i.Fragment, {
+            children: [(0, i.jsxs)(l.rXV, {
+                children: [S, v]
+            }), y, j, !C && (0, i.jsx)(l.rXV, {
+                children: (0, i.jsxs)(l.Drp, {
                     id: "more-options",
-                    label: g.intl.string(g.t.PdRCRg),
-                    children: [C, (0, r.jsx)(i.rXV, {
-                        children: I
-                    }), h]
+                    label: m.intl.string(m.t.PdRCRg),
+                    children: [I, (0, i.jsx)(l.rXV, {
+                        children: _
+                    }), p]
                 })
-            }), v && (0, r.jsx)(i.rXV, {
-                children: m
+            }), C && (0, i.jsx)(l.rXV, {
+                children: M
             })]
         })
     })
 }, {
     object: E.ZSU.CONTEXT_MENU
-}), [u.A.VOICE_USER])
+}), [s.A.VOICE_USER])

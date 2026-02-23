@@ -1,156 +1,139 @@
 /** chunk id: 10635, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => R
+    A: () => L
 });
-var r = n(627968),
-    l = n(64700),
-    i = n(158954),
-    s = n(397927),
+var i = n(627968),
+    s = n(64700),
+    l = n(158954),
+    r = n(397927),
     a = n(736653),
     o = n(793574),
     c = n(688810),
-    u = n(311016),
-    d = n(713517),
-    p = n(182592),
-    h = n(562153),
-    g = n(183555),
-    f = n(672385),
+    d = n(311016),
+    u = n(713517),
+    h = n(182592),
+    A = n(562153),
+    p = n(183555),
+    g = n(672385),
     m = n(950191),
-    b = n(657331),
-    A = n(718019),
-    y = n(31432),
-    O = n(915614),
-    j = n(389996),
-    x = n(743987),
-    _ = n(900179),
-    v = n(946356),
-    E = n(810396),
-    C = n(35241),
-    S = n(587168),
-    I = n(996988),
-    N = n(985018),
-    T = n(743789),
-    P = n(673721);
+    _ = n(657331),
+    f = n(718019),
+    x = n(31432),
+    C = n(915614),
+    E = n(389996),
+    I = n(743987),
+    b = n(900179),
+    N = n(946356),
+    S = n(810396),
+    T = n(35241),
+    y = n(587168),
+    v = n(996988),
+    j = n(985018),
+    R = n(743789),
+    O = n(673721);
 
-function w(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = r
-        })
-    }
-    return e
-}
-
-function R(e) {
-    var t;
+function L(e) {
     let {
-        user: n,
-        channel: R
-    } = e, D = __OVERLAY__ || !(0, u.A)(n.id), L = (0, m.Ay)(n.id), M = (0, a.Ay)(), G = l.useRef(Date.now()), {
-        analyticsLocations: k
-    } = (0, c.Ay)(o.A.USER_PROFILE_SIDEBAR), U = (0, g.pb)({
+        user: t,
+        channel: n
+    } = e, L = __OVERLAY__ || !(0, d.A)(t.id), M = (0, m.Ay)(t.id), D = (0, a.Ay)(), G = s.useRef(Date.now()), {
+        analyticsLocations: U
+    } = (0, c.Ay)(o.A.USER_PROFILE_SIDEBAR), P = (0, p.pb)({
         layout: "SIDEBAR",
-        userId: n.id,
-        channelId: R.id
-    }), V = l.useRef(null), {
-        isHoveringOrFocusing: B,
-        isHovering: H
-    } = (0, d.A)(V), F = () => {
-        (0, b.openUserProfileModal)(w({
-            sourceAnalyticsLocations: k,
-            hideRestrictedProfile: !0
-        }, U))
+        userId: t.id,
+        channelId: n.id
+    }), w = s.useRef(null), {
+        isHoveringOrFocusing: k,
+        isHovering: V
+    } = (0, u.A)(w), B = () => {
+        (0, _.openUserProfileModal)({
+            sourceAnalyticsLocations: U,
+            hideRestrictedProfile: !0,
+            ...P
+        })
     };
-    return (0, r.jsx)(c.f5, {
-        value: k,
-        children: (0, r.jsx)(g.of, {
-            value: U,
+    return (0, i.jsx)(c.f5, {
+        value: U,
+        children: (0, i.jsx)(p.of, {
+            value: P,
             openedAt: G.current,
-            fetchStartedAt: null == L ? void 0 : L.fetchStartedAt,
-            fetchEndedAt: null == L ? void 0 : L.fetchEndedAt,
-            isLoaded: null == L ? void 0 : L.isLoaded,
-            children: (0, r.jsxs)(v.A, {
-                ref: V,
-                user: n,
-                displayProfile: L,
-                themeType: I.d.SIDEBAR,
-                themeOverride: M,
-                children: [(0, r.jsxs)(i.d_W, {
-                    children: [(0, r.jsx)(S.A, {
-                        children: (0, r.jsx)(C.A, {
-                            user: n
+            fetchStartedAt: M?.fetchStartedAt,
+            fetchEndedAt: M?.fetchEndedAt,
+            isLoaded: M?.isLoaded,
+            children: (0, i.jsxs)(N.A, {
+                ref: w,
+                user: t,
+                displayProfile: M,
+                themeType: v.d.SIDEBAR,
+                themeOverride: D,
+                children: [(0, i.jsxs)(l.d_W, {
+                    children: [(0, i.jsx)(y.A, {
+                        children: (0, i.jsx)(T.A, {
+                            user: t
                         })
-                    }), (0, r.jsxs)("div", {
-                        className: T.wx,
-                        children: [(0, r.jsx)(O.A, {
-                            user: n,
-                            displayProfile: L,
-                            themeType: I.d.SIDEBAR,
-                            animateOnHoverOrFocusOnly: !B
-                        }), (0, r.jsx)(A.A, {
-                            user: n,
-                            displayProfile: L,
-                            channelId: R.id,
-                            themeType: I.d.SIDEBAR,
-                            onOpenProfile: D ? void 0 : F
+                    }), (0, i.jsxs)("div", {
+                        className: R.wx,
+                        children: [(0, i.jsx)(C.A, {
+                            user: t,
+                            displayProfile: M,
+                            themeType: v.d.SIDEBAR,
+                            animateOnHoverOrFocusOnly: !k
+                        }), (0, i.jsx)(f.A, {
+                            user: t,
+                            displayProfile: M,
+                            channelId: n.id,
+                            themeType: v.d.SIDEBAR,
+                            onOpenProfile: L ? void 0 : B
                         })]
-                    }), (0, r.jsxs)("div", {
-                        className: P.rf,
-                        children: [(0, r.jsx)(E.A, {
-                            user: n,
-                            guildId: R.guild_id,
-                            nickname: h.Ay.getName(null, R.id, n),
-                            pronouns: null == L ? void 0 : L.pronouns,
-                            onOpenProfile: D ? void 0 : F,
-                            tags: (0, r.jsx)(y.A, {
-                                displayProfile: L,
-                                themeType: I.d.SIDEBAR
+                    }), (0, i.jsxs)("div", {
+                        className: O.rf,
+                        children: [(0, i.jsx)(S.A, {
+                            user: t,
+                            guildId: n.guild_id,
+                            nickname: A.Ay.getName(null, n.id, t),
+                            pronouns: M?.pronouns,
+                            onOpenProfile: L ? void 0 : B,
+                            tags: (0, i.jsx)(x.A, {
+                                displayProfile: M,
+                                themeType: v.d.SIDEBAR
                             })
-                        }), (0, r.jsxs)(v.A.Overlay, {
-                            className: P.Lw,
-                            children: [(0, r.jsx)(_.A, {
-                                heading: N.intl.string(N.t["61W33d"]),
+                        }), (0, i.jsxs)(N.A.Overlay, {
+                            className: O.Lw,
+                            children: [(0, i.jsx)(b.A, {
+                                heading: j.intl.string(j.t.ZzAR2Y),
                                 headingColor: "text-strong",
-                                children: (0, r.jsx)(j.A, {
-                                    userBio: null == L ? void 0 : L.bio,
-                                    userId: n.id,
+                                children: (0, i.jsx)(E.A, {
+                                    userBio: M?.bio,
+                                    userId: t.id,
                                     animateOnHoverOrFocusOnly: !0,
-                                    isHoveringOrFocusing: B
+                                    isHoveringOrFocusing: k
                                 })
-                            }), (0, r.jsx)(_.A, {
-                                heading: N.intl.string(N.t["A//N4k"]),
+                            }), (0, i.jsx)(b.A, {
+                                heading: j.intl.string(j.t["A//N4k"]),
                                 headingColor: "text-strong",
-                                children: (0, r.jsx)(x.A, {
-                                    userId: n.id
+                                children: (0, i.jsx)(I.A, {
+                                    userId: t.id
                                 })
                             })]
                         })]
                     })]
-                }), !D && (0, r.jsx)("div", {
-                    className: T.qr,
-                    children: (0, r.jsx)(s.DUT, {
+                }), !L && (0, i.jsx)("div", {
+                    className: R.qr,
+                    children: (0, i.jsx)(r.DUT, {
                         onClick: () => {
-                            F(), (0, f.Wn)(w({
+                            B(), (0, g.Wn)({
                                 action: "PRESS_VIEW_PROFILE",
-                                analyticsLocations: k
-                            }, U))
+                                analyticsLocations: U,
+                                ...P
+                            })
                         },
-                        className: T.wC,
-                        children: N.intl.string(N.t["+Xp3hq"])
+                        className: R.wC,
+                        children: j.intl.string(j.t["+Xp3hq"])
                     })
-                }), (null == L ? void 0 : L.profileEffect) != null && (0, r.jsx)(p.A, {
-                    skuId: null == L || null == (t = L.profileEffect) ? void 0 : t.skuId,
-                    isHovering: H
+                }), M?.profileEffect != null && (0, i.jsx)(h.A, {
+                    skuId: M?.profileEffect?.skuId,
+                    isHovering: V
                 })]
             })
         })

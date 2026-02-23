@@ -1,48 +1,43 @@
-/** chunk id: 12351, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    A: () => f
+/** chunk id: 12351, original params: t,e,n (module,exports,require) **/
+n.d(e, {
+    A: () => g
 });
-var s, r, a = n(627968),
-    i = n(64700),
-    l = n(503698),
-    c = n.n(l),
-    o = n(397927),
-    u = n(985018),
-    p = n(228763);
+var i = n(627968),
+    a = n(64700),
+    r = n(503698),
+    s = n.n(r),
+    l = n(397927),
+    o = n(985018),
+    c = n(228763);
 let d = {
-    BLOCK: p.om,
-    INLINE: p.mG
+    BLOCK: c.om,
+    INLINE: c.mG
 };
-class g extends(r = i.PureComponent) {
+class _ extends a.PureComponent {
+    static Types = d;
     render() {
         let {
-            children: e,
-            className: t,
+            children: t,
+            className: e,
             textClassName: n,
-            type: s = d.BLOCK,
+            type: a = d.BLOCK,
             style: r
         } = this.props;
-        return (0, a.jsxs)("div", {
-            className: c()(t, s),
+        return (0, i.jsxs)("div", {
+            className: s()(e, a),
             style: r,
-            children: [(0, a.jsxs)(o.Text, {
+            children: [(0, i.jsxs)(l.Text, {
                 variant: "text-sm/bold",
                 tag: "div",
                 color: "text-feedback-positive",
-                className: p.AD,
-                children: [u.intl.string(u.t["8tvIiN"]), ":"]
-            }), (0, a.jsx)(o.Text, {
-                className: c()(p.uN, n),
+                className: c.AD,
+                children: [o.intl.string(o.t["8tvIiN"]), ":"]
+            }), (0, i.jsx)(l.Text, {
+                className: s()(c.uN, n),
                 variant: "text-sm/normal",
-                children: e
+                children: t
             })]
         })
     }
-}(s = "Types") in g ? Object.defineProperty(g, s, {
-    value: d,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
-}) : g[s] = d;
-let f = g
+}
+let g = _

@@ -1,32 +1,32 @@
 /** chunk id: 296216, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    F: () => p,
-    J: () => h
+    F: () => h,
+    J: () => A
 });
-var r = n(205369),
-    l = n(22174),
-    i = n(686956),
-    s = n(71393),
+var i = n(205369),
+    s = n(22174),
+    l = n(686956),
+    r = n(71393),
     a = n(576705),
     o = n(977997),
     c = n(607567),
-    u = n(652215);
-let d = "DRAGGABLE_USER";
+    d = n(652215);
+let u = "DRAGGABLE_USER";
 
-function p(e) {
-    return (0, r.T)(d, {
+function h(e) {
+    return (0, i.T)(u, {
         canDrop(e) {
-            var t, n;
             let {
-                channel: r
-            } = e, l = r.getGuildId(), i = null != (t = null == (n = s.A.getGuild(l)) ? void 0 : n.maxVideoChannelUsers) ? t : -1, d = c.Ay.countVoiceStatesForChannel(r.id), p = null != l && o.A.hasVideo(r.id) && i > 0 && d >= i + 1;
-            return a.A.can(u.xBc.MOVE_MEMBERS, r) && a.A.can(u.xBc.CONNECT, r) && !p
+                channel: t
+            } = e, n = t.getGuildId(), i = r.A.getGuild(n)?.maxVideoChannelUsers ?? -1, s = c.Ay.countVoiceStatesForChannel(t.id), l = null != n && o.A.hasVideo(t.id) && i > 0 && s >= i + 1;
+            return a.A.can(d.xBc.MOVE_MEMBERS, t) && a.A.can(d.xBc.CONNECT, t) && !l
         },
         drop(e, t) {
             let {
                 channel: n
-            } = e, r = o.A.getVoiceStateForUser(t.getItem().user.id);
-            (null == r ? void 0 : r.channelId) !== n.id && i.A.setChannel(n.getGuildId(), t.getItem().user.id, n.id)
+            } = e, i = o.A.getVoiceStateForUser(t.getItem().user.id);
+            i?.channelId !== n.id && l.A.setChannel(n.getGuildId(), t.getItem().user.id, n.id)
         }
     }, (e, t) => ({
         connectUserDropTarget: e.dropTarget(),
@@ -34,14 +34,14 @@ function p(e) {
     }))(e)
 }
 
-function h(e) {
-    return (0, l.I)(d, {
+function A(e) {
+    return (0, s.I)(u, {
         canDrag(e) {
             let {
                 user: t,
                 canDrag: n
             } = e;
-            return null != n && n
+            return n ?? !1
         },
         beginDrag(e) {
             let {

@@ -1,73 +1,13 @@
-/** chunk id: 11645, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    S: () => g
-}), n(228524), n(896048);
-var r = n(627968),
-    i = n(64700),
-    a = n(397927),
-    o = n(444550),
-    s = n(843282);
-
-function l(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-
-function c(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            l(e, t, n[t])
-        })
-    }
-    return e
-}
-
-function u(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-        var r = Object.getOwnPropertySymbols(e);
-        t && (r = r.filter(function(t) {
-            return Object.getOwnPropertyDescriptor(e, t).enumerable
-        })), n.push.apply(n, r)
-    }
-    return n
-}
-
-function d(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : u(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-
-function f(e, t) {
-    if (null == e) return {};
-    var n, r, i, a = {};
-    if ("u" > typeof Reflect && Reflect.ownKeys) {
-        for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
-        return a
-    }
-    if (a = p(e, t), Object.getOwnPropertySymbols)
-        for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
-    return a
-}
-
-function p(e, t) {
-    if (null == e) return {};
-    var n, r, i = {},
-        a = Object.getOwnPropertyNames(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
-    return i
-}
-let _ = [{
+/** chunk id: 11645, original params: e,l,a (module,exports,require) **/
+a.d(l, {
+    S: () => c
+});
+var t = a(627968),
+    o = a(64700),
+    n = a(397927),
+    i = a(444550),
+    s = a(843282);
+let r = [{
         value: "red",
         label: "Red"
     }, {
@@ -92,36 +32,36 @@ let _ = [{
         value: "brown",
         label: "Brown"
     }],
-    h = {
+    d = {
         id: "select",
         name: "Select",
         component: function(e) {
             let {
-                label: t,
-                description: n,
-                isDisabled: a,
-                isProcessing: o,
-                placeholder: l,
-                maxVisibleItems: c,
-                clearable: u,
-                closeOnSelect: d,
-                popoutPosition: f,
-                variant: p
-            } = e, [h, m] = i.useState("blue");
-            return (0, r.jsx)(s.Te, {
-                variant: p,
-                label: t,
-                description: n,
-                value: h,
-                onChange: m,
-                options: _,
-                placeholder: l,
-                isDisabled: a,
-                isProcessing: o,
-                maxVisibleItems: c,
-                clearable: u,
-                closeOnSelect: d,
-                popoutPosition: f
+                label: l,
+                description: a,
+                isDisabled: n,
+                isProcessing: i,
+                placeholder: d,
+                maxVisibleItems: u,
+                clearable: c,
+                closeOnSelect: b,
+                popoutPosition: p,
+                variant: m
+            } = e, [x, v] = o.useState("blue");
+            return (0, t.jsx)(s.Te, {
+                variant: m,
+                label: l,
+                description: a,
+                value: x,
+                onChange: v,
+                options: r,
+                placeholder: d,
+                isDisabled: n,
+                isProcessing: i,
+                maxVisibleItems: u,
+                clearable: c,
+                closeOnSelect: b,
+                popoutPosition: p
             })
         },
         controls: {
@@ -203,47 +143,51 @@ let _ = [{
             }
         }
     },
-    m = {
+    u = {
         id: "searchable-select",
         name: "Searchable Select",
         component: function(e) {
             let {
-                placeholder: t,
-                isDisabled: n,
+                placeholder: l,
+                isDisabled: a,
                 isProcessing: s,
-                clearable: l,
+                clearable: d,
                 closeOnSelect: u,
-                clearQueryOnSelect: p,
-                filter: h
-            } = e, m = f(e, ["placeholder", "isDisabled", "isProcessing", "clearable", "closeOnSelect", "clearQueryOnSelect", "filter"]), [g, E] = i.useState("blue"), [y, b] = i.useState(["blue"]);
-            return (0, r.jsxs)(a.BJc, {
+                clearQueryOnSelect: c,
+                filter: b,
+                ...p
+            } = e, [m, x] = o.useState("blue"), [v, h] = o.useState(["blue"]);
+            return (0, t.jsxs)(n.BJc, {
                 gap: 24,
-                children: [(0, r.jsx)(o.p, d(c({}, m), {
-                    value: g,
-                    onChange: E,
-                    options: _,
-                    placeholder: t,
-                    isDisabled: n,
+                children: [(0, t.jsx)(i.p, {
+                    ...p,
+                    value: m,
+                    onChange: x,
+                    options: r,
+                    placeholder: l,
+                    isDisabled: a,
                     isProcessing: s,
-                    clearable: l,
-                    clearQueryOnSelect: p,
-                    filter: h
-                })), (0, r.jsx)(o.p, d(c({}, m), {
+                    clearable: d,
+                    clearQueryOnSelect: c,
+                    filter: b
+                }), (0, t.jsx)(i.p, {
+                    ...p,
                     multi: !0,
-                    value: y,
-                    onChange: b,
-                    options: _,
-                    placeholder: t,
-                    isDisabled: n,
+                    value: v,
+                    onChange: h,
+                    options: r,
+                    placeholder: l,
+                    isDisabled: a,
                     isProcessing: s,
-                    clearable: l,
+                    clearable: d,
                     closeOnSelect: u,
-                    clearQueryOnSelect: p,
-                    filter: h
-                }))]
+                    clearQueryOnSelect: c,
+                    filter: b
+                })]
             })
         },
-        controls: d(c({}, h.controls), {
+        controls: {
+            ...d.controls,
             placeholder: {
                 type: "text",
                 label: "Placeholder",
@@ -279,9 +223,9 @@ let _ = [{
                 label: "Filter",
                 defaultValue: !0
             }
-        })
+        }
     },
-    g = {
+    c = {
         title: "Select",
-        stories: [h, m]
+        stories: [d, u]
     }

@@ -1,20 +1,21 @@
 /** chunk id: 220144, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => i
+    A: () => l
 });
-var r = n(64700),
-    l = n(724442);
+var i = n(64700),
+    s = n(724442);
 
-function i(e, t) {
-    let n = (0, r.useRef)(!1),
-        i = (0, r.useRef)(e);
-    (0, r.useEffect)(() => {
-        n.current = e !== i.current, i.current = e
-    }, [e]), (0, r.useEffect)(() => {
+function l(e, t) {
+    let n = (0, i.useRef)(!1),
+        l = (0, i.useRef)(e);
+    (0, i.useEffect)(() => {
+        n.current = e !== l.current, l.current = e
+    }, [e]), (0, i.useEffect)(() => {
         let e = setTimeout(() => n.current = !1, t);
         return () => clearTimeout(e)
     }, [e, t]);
-    let s = e !== (0, l.A)(i),
-        a = (0, l.A)(n);
-    return s || a
+    let r = e !== (0, s.A)(l),
+        a = (0, s.A)(n);
+    return r || a
 }

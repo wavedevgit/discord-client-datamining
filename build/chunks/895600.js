@@ -1,11 +1,11 @@
 /** chunk id: 895600, original params: e,t,r (module,exports,require) **/
 r.d(t, {
     A: () => u
-}), r(228524);
+});
 var s = r(627968);
 r(64700);
-var l = r(854378),
-    n = r(651539),
+var n = r(854378),
+    l = r(651539),
     i = r(768397),
     a = r(401755),
     d = r(125986);
@@ -28,27 +28,26 @@ function u(e) {
         guildTemplate: r
     } = e, u = r.code, o = c[u];
     if (null != o) {
-        var C;
         let {
             header: e,
             description: c,
-            author: m
-        } = (0, n.A)(u);
+            author: C
+        } = (0, l.A)(u);
         return (0, s.jsxs)("div", {
             children: [(0, s.jsx)("img", {
                 className: d.Sl,
                 src: o,
                 alt: ""
-            }), (0, s.jsx)(l.hE, {
+            }), (0, s.jsx)(n.hE, {
                 className: d.wx,
                 id: t,
                 children: e
-            }), (0, s.jsx)(l.tK, {
+            }), (0, s.jsx)(n.tK, {
                 children: c
             }), r.state === a.QB.RESOLVED ? (0, s.jsx)(i.F, {
                 className: d.t5,
-                count: null != (C = r.usageCount) ? C : 0,
-                verifiedName: m
+                count: r.usageCount ?? 0,
+                verifiedName: C
             }) : null]
         })
     }

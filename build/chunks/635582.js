@@ -2,39 +2,39 @@
 "use strict";
 n.d(t, {
     A: () => u
-}), n(896048);
-var r = n(64700),
-    i = n(311907),
+});
+var i = n(64700),
+    s = n(311907),
     l = n(181658),
-    s = n(260509),
+    r = n(260509),
     a = n(71393),
     o = n(287809),
-    c = n(493540),
-    d = n(469993);
+    d = n(493540),
+    c = n(469993);
 
 function u(e, t) {
-    let n = (0, i.bG)([a.A], () => a.A.getGuild(e)),
-        [u, g] = r.useState(),
-        [m, p] = r.useState(!1),
-        f = (0, d.ME)(n);
+    let n = (0, s.bG)([a.A], () => a.A.getGuild(e)),
+        [u, m] = i.useState(),
+        [g, x] = i.useState(!1),
+        h = (0, c.ME)(n);
     return {
-        canSubmitAcceptance: (0, i.bG)([o.default], () => {
+        canSubmitAcceptance: (0, s.bG)([o.default], () => {
             let e = o.default.getCurrentUser();
-            return null != n && (0, s.bM)(n, e)
+            return null != n && (0, r.bM)(n, e)
         }, [n]),
         error: u,
-        loading: m,
-        submitAcceptTermsRequest: r.useCallback(async () => {
-            if (null != e && (f || null != t)) {
-                p(!0), g(void 0);
+        loading: g,
+        submitAcceptTermsRequest: i.useCallback(async () => {
+            if (null != e && (h || null != t)) {
+                x(!0), m(void 0);
                 try {
-                    null != t ? await c.DP(e, t) : await c.Bo(e)
+                    null != t ? await d.DP(e, t) : await d.Bo(e)
                 } catch (e) {
-                    g(new l.A(e))
+                    m(new l.A(e))
                 } finally {
-                    p(!1)
+                    x(!1)
                 }
             }
-        }, [e, t, f])
+        }, [e, t, h])
     }
 }

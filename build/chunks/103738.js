@@ -1,14 +1,15 @@
 /** chunk id: 103738, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => o
+    A: () => c
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var l = n(311907),
-    i = n(833336),
-    s = n(412820),
-    a = n(645789);
+var s = n(311907),
+    a = n(412820),
+    r = n(645789),
+    l = n(628965),
+    o = n(355097);
 
-function o() {
-    return (0, l.bG)([i.A], () => i.A.showNotice()) ? (0, r.jsx)(s.A, {}) : (0, r.jsx)(a.A, {})
+function c() {
+    return (0, s.bG)([l.A], () => l.A.getSubsection()) === o.Eq.GUILD ? (0, i.jsx)(a.A, {}) : (0, i.jsx)(r.A, {})
 }

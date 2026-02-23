@@ -1,28 +1,19 @@
 /** chunk id: 648427, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => m
-}), n(896048), n(667532);
-var l, r = n(311907),
+    A: () => A
+}), n(667532);
+var l = n(311907),
     i = n(73153),
-    s = n(95701),
-    a = n(734057),
-    o = n(696451),
+    r = n(95701),
+    s = n(734057),
+    a = n(696451),
     u = n(71393);
+let o = [],
+    d = new Set,
+    c = [],
+    h = new Set;
 
-function c(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-let d = [],
-    h = new Set,
-    g = [],
-    f = new Set;
-
-function p(e) {
+function g(e) {
     let {
         channelId: t,
         history: n,
@@ -36,75 +27,72 @@ function p(e) {
             historySet: new Set([...e])
         }
     }
-    let r = [t, ...n],
-        i = new Set(l);
-    return (i.add(t), r.length > 10) ? (r.length = 10, {
+    let i = [t, ...n],
+        r = new Set(l);
+    return (r.add(t), i.length > 10) ? (i.length = 10, {
         didChange: !0,
-        history: r,
-        historySet: new Set([...r])
+        history: i,
+        historySet: new Set([...i])
     }) : {
         didChange: !0,
-        history: r,
-        historySet: i
+        history: i,
+        historySet: r
     }
 }
-class I extends(l = r.Ay.PersistedStore) {
-    initialize(e) {
-        var t, n;
-        this.waitFor(o.Ay, u.A, a.A), d = null != (t = null == e ? void 0 : e.voiceChannelHistory) ? t : [], g = null != (n = null == e ? void 0 : e.textChannelHistory) ? n : [], h = new Set([...d]), f = new Set([...g])
-    }
-    getState() {
-        return {
-            voiceChannelHistory: d,
-            textChannelHistory: g
-        }
-    }
-    getVoiceChannelHistory() {
-        return d
-    }
-    getTextChannelHistory() {
-        return g
-    }
-}
-c(I, "displayName", "RecentVoiceChannelStore"), c(I, "persistKey", "RecentVoiceChannelStore"), c(I, "migrations", [e => {
-    var t, n, l;
-    return null == e || "object" != typeof e ? {
+class I extends l.Ay.PersistedStore {
+    static displayName = "RecentVoiceChannelStore";
+    static persistKey = "RecentVoiceChannelStore";
+    static migrations = [e => null == e || "object" != typeof e ? {
         voiceChannelHistory: [],
         textChannelHistory: []
     } : {
-        voiceChannelHistory: null != (t = null != (n = e.voiceChannelHistory) ? n : e.channelHistory) ? t : [],
-        textChannelHistory: null != (l = e.textChannelHistory) ? l : []
+        voiceChannelHistory: e.voiceChannelHistory ?? e.channelHistory ?? [],
+        textChannelHistory: e.textChannelHistory ?? []
+    }];
+    initialize(e) {
+        this.waitFor(a.Ay, u.A, s.A), o = e?.voiceChannelHistory ?? [], c = e?.textChannelHistory ?? [], d = new Set([...o]), h = new Set([...c])
     }
-}]);
-let m = new I(i.h, {
+    getState() {
+        return {
+            voiceChannelHistory: o,
+            textChannelHistory: c
+        }
+    }
+    getVoiceChannelHistory() {
+        return o
+    }
+    getTextChannelHistory() {
+        return c
+    }
+}
+let A = new I(i.h, {
     POST_CONNECTION_OPEN: function() {
-        h = new Set([...d]), f = new Set([...g])
+        d = new Set([...o]), h = new Set([...c])
     },
     VOICE_CHANNEL_SELECT: function(e) {
-        var t, n;
         let {
-            channelId: l
+            channelId: t
         } = e;
-        if (null == l || !(null != (t = null == (n = a.A.getChannel(l)) ? void 0 : n.isVocal()) && t)) return !1;
-        let r = p({
-            channelId: l,
-            history: d,
-            historySet: h
+        if (null == t || !s.A.getChannel(t)?.isVocal()) return !1;
+        let n = g({
+            channelId: t,
+            history: o,
+            historySet: d
         });
-        return d = r.history, h = r.historySet, r.didChange
+        return o = n.history, d = n.historySet, n.didChange
     },
     CHANNEL_SELECT: function(e) {
         let {
             channelId: t
         } = e;
         if (null == t) return !1;
-        let n = a.A.getChannel(t);
-        if (null == n || n.isVocal() || n.isPrivate() || !(0, s.ke)(n.type)) return !1;
-        let l = p({
+        let n = s.A.getChannel(t);
+        if (null == n || n.isVocal() || n.isPrivate() || !(0, r.ke)(n.type)) return !1;
+        let l = g({
             channelId: t,
-            history: g,
-            historySet: f
+            history: c,
+            historySet: h
         });
-        return g = l.history, f = l.historySet, l.didChange
+        return c = l.history, h = l.historySet, l.didChange
     }
 })

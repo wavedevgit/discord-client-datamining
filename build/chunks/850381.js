@@ -1,58 +1,58 @@
 /** chunk id: 850381, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => _
-}), n(896048);
-var r = n(627968),
-    i = n(64700),
-    s = n(311907),
+    A: () => m
+});
+var i = n(627968),
+    s = n(64700),
+    r = n(311907),
     l = n(492917),
     a = n(154672),
     o = n(396681),
-    c = n(317940),
-    u = n(976860),
-    d = n(210714),
+    d = n(317940),
+    c = n(976860),
+    u = n(210714),
     h = n(341371),
-    p = n(714505),
-    g = n(652215),
-    f = n(985018);
+    _ = n(714505),
+    p = n(652215),
+    g = n(985018);
 
-function _(e) {
+function m(e) {
     let {
         location: t
-    } = e, [n, _] = i.useState(!1), {
-        verifySuccess: m,
+    } = e, [n, m] = s.useState(!1), {
+        verifySuccess: f,
         verifyErrors: A,
-        redirectGuildId: x
-    } = (0, s.bG)([h.A], () => h.A.getState());
-    i.useEffect(() => {
+        redirectGuildId: E
+    } = (0, r.bG)([h.A], () => h.A.getState());
+    s.useEffect(() => {
         let e = (0, o.A)(t);
-        a.A.verify(e), (0, d.d)("verify_hub_email")
+        a.A.verify(e), (0, u.d)("verify_hub_email")
     }, [t]);
-    let E = () => {
-        (0, p.A)(x), _(!0)
+    let x = () => {
+        (0, _.A)(E), m(!0)
     };
-    return n ? (0, r.jsx)(c.A, {
-        title: f.intl.string(f.t.csrAMJ),
-        subtitle: f.intl.string(f.t["m1+IBn"]),
-        buttonText: f.intl.string(f.t.fIv16B),
-        onButtonClick: () => (0, u.pX)(g.BVt.CHANNEL(x))
-    }) : m ? (0, r.jsx)(c.A, {
-        title: f.intl.string(f.t["dAfGb+"]),
-        buttonText: f.intl.string(f.t["uJWIj/"]),
-        onButtonClick: E,
-        image: (0, r.jsx)(l.bqQ, {
-            alt: f.intl.string(f.t["dAfGb+"])
+    return n ? (0, i.jsx)(d.A, {
+        title: g.intl.string(g.t.csrAMJ),
+        subtitle: g.intl.string(g.t["m1+IBn"]),
+        buttonText: g.intl.string(g.t.fIv16B),
+        onButtonClick: () => (0, c.pX)(p.BVt.CHANNEL(E))
+    }) : f ? (0, i.jsx)(d.A, {
+        title: g.intl.string(g.t["dAfGb+"]),
+        buttonText: g.intl.string(g.t["uJWIj/"]),
+        onButtonClick: x,
+        image: (0, i.jsx)(l.bqQ, {
+            alt: g.intl.string(g.t["dAfGb+"])
         })
-    }) : null != A ? (0, r.jsx)(c.A, {
-        title: f.intl.string(f.t["PCgG3+"]),
-        subtitle: f.intl.string(f.t.tQpeA3),
-        buttonText: f.intl.string(f.t["uJWIj/"]),
-        onButtonClick: E
-    }) : (0, r.jsx)(c.A, {
-        title: f.intl.string(f.t["0c8+5n"]),
-        subtitle: f.intl.string(f.t.ULTCBE),
+    }) : null != A ? (0, i.jsx)(d.A, {
+        title: g.intl.string(g.t["PCgG3+"]),
+        subtitle: g.intl.string(g.t.tQpeA3),
+        buttonText: g.intl.string(g.t["uJWIj/"]),
+        onButtonClick: x
+    }) : (0, i.jsx)(d.A, {
+        title: g.intl.string(g.t["0c8+5n"]),
+        subtitle: g.intl.string(g.t.ULTCBE),
         loading: !0
     })
 }
-s.Ay.initialize()
+r.Ay.initialize()

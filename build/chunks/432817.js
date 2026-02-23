@@ -1,60 +1,43 @@
 /** chunk id: 432817, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    L: () => p
+    L: () => m
 });
-var l = n(627968),
-    r = n(311907),
-    i = n(732955),
+var i = n(627968),
+    l = n(311907),
+    s = n(732955),
     a = n(397927),
-    s = n(824552),
+    r = n(824552),
     o = n(933958),
     c = n(869003),
-    u = n(954571),
-    d = n(652215),
+    d = n(954571),
+    u = n(652215),
     h = n(985018);
-let p = e => {
+let m = e => {
     let {
         channel: t,
         user: n,
-        application: p,
-        oauth2Token: f
-    } = e, m = (0, r.bG)([o.Ay], () => o.Ay.getSelfEmbeddedActivities());
-    if (!n.bot || null == p) return null;
+        application: m,
+        oauth2Token: A
+    } = e, g = (0, l.bG)([o.Ay], () => o.Ay.getSelfEmbeddedActivities());
+    if (!n.bot || null == m) return null;
 
-    function g() {
-        s.A.delete(f.id);
-        let e = m.get(p.id);
+    function p() {
+        r.A.delete(A.id);
+        let e = g.get(m.id);
         null != e && c.A.leaveActivity({
             location: e.location,
-            applicationId: p.id
+            applicationId: m.id
         })
     }
-    return (0, l.jsx)(a.Button, {
+    return (0, i.jsx)(a.Button, {
         variant: "secondary",
         size: "sm",
         text: h.intl.string(h.t["5S3sQF"]),
         onClick: () => {
-            (0, a.qfG)(e => (0, l.jsx)(i.aFV, function(e) {
-                for (var t = 1; t < arguments.length; t++) {
-                    var n = null != arguments[t] ? arguments[t] : {},
-                        l = Object.keys(n);
-                    "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                        return Object.getOwnPropertyDescriptor(n, e).enumerable
-                    }))), l.forEach(function(t) {
-                        var l;
-                        l = n[t], t in e ? Object.defineProperty(e, t, {
-                            value: l,
-                            enumerable: !0,
-                            configurable: !0,
-                            writable: !0
-                        }) : e[t] = l
-                    })
-                }
-                return e
-            }({
+            (0, a.qfG)(e => (0, i.jsx)(s.aFV, {
                 title: h.intl.string(h.t["DT39A+"]),
                 subtitle: h.intl.formatToPlainString(h.t.QWGvxA, {
-                    applicationName: p.name
+                    applicationName: m.name
                 }),
                 actions: [{
                     text: h.intl.string(h.t["ETE/oC"]),
@@ -64,11 +47,12 @@ let p = e => {
                     text: h.intl.string(h.t.xUqheM),
                     variant: "critical-primary",
                     onClick: () => {
-                        g(), e.onClose()
+                        p(), e.onClose()
                     }
-                }]
-            }, e))), u.default.track(d.HAw.APP_MANAGE_CTA_CLICKED, {
-                application_id: p.id,
+                }],
+                ...e
+            })), d.default.track(u.HAw.APP_MANAGE_CTA_CLICKED, {
+                application_id: m.id,
                 channel_id: t.id,
                 channel_type: t.type
             })

@@ -1,10 +1,10 @@
-/** chunk id: 963555, original params: e,n,t (module,exports,require) **/
-t.d(n, {
-    F: () => i
+/** chunk id: 963555, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    F: () => l
 });
-var l = t(311907),
-    r = t(349435);
+var i = n(311907),
+    r = n(349435);
 
-function i(e, n) {
-    return (0, l.bG)([r.Ay], () => r.Ay.getChannelSafetyWarnings(e), [e]).filter(e => e.type === n).find(e => null == e.dismiss_timestamp && ((null == e ? void 0 : e.expiry) == null || Date.parse(e.expiry) > Date.now()))
+function l(e, t) {
+    return (0, i.bG)([r.Ay], () => r.Ay.getChannelSafetyWarnings(e), [e]).filter(e => e.type === t).find(e => null == e.dismiss_timestamp && (e?.expiry == null || Date.parse(e.expiry) > Date.now()))
 }

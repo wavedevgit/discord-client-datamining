@@ -1,166 +1,134 @@
 /** chunk id: 809465, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => A
-}), n(896048), n(747238), n(812715), n(321073);
-var r = n(627968);
+    A: () => h
+}), n(321073);
+var i = n(627968);
 n(64700);
-var l = n(503698),
-    i = n.n(l),
-    s = n(481613),
+var s = n(503698),
     a = n.n(s),
+    r = n(481613),
+    l = n.n(r),
     o = n(397927),
     c = n(77729),
-    u = n(521502),
-    d = n(915089),
-    p = n(206845),
-    h = n(837921),
-    g = n(985018),
-    f = n(355893);
+    d = n(521502),
+    u = n(915089),
+    _ = n(206845),
+    m = n(837921),
+    A = n(985018),
+    g = n(355893);
 
-function m(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = r
-        })
-    }
-    return e
-}
-
-function b(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
-        }
-        return n
-    })(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-
-function A(e) {
-    var t, n, l, s, A;
+function h(e) {
     let {
-        compact: y = !1
-    } = e, O = (0, d.GV)(), j = window.GLOBAL_ENV.RELEASE_CHANNEL, x = "493077", _ = "9ca02b84af13c52e300dee71b2d630ed08ccbf83".substring(0, 7), v = null === c.A || void 0 === c.A ? void 0 : c.A.remoteApp.getVersion(), E = null === c.A || void 0 === c.A || null == (t = (n = c.A.remoteApp).getBuildNumber) ? void 0 : t.call(n), C = null === c.A || void 0 === c.A || null == (l = (s = c.A.remoteApp).getAppArch) ? void 0 : l.call(s), S = null == (A = u.A.getCurrentBuildOverride().overrides) ? void 0 : A.discord_web, I = function() {
-        var e;
-        let t = null === a() || void 0 === a() || null == (e = a().os) ? void 0 : e.toString();
-        if (null == t || null == c.A) return null;
-        let n = c.A.os.release,
-            [r, l, i] = h.Ay.parsedOSRelease;
-        return t.includes("Windows 10") && void 0 !== i && i >= 22e3 && (t = t.replace("Windows 10", "Windows 11")), t.includes("OS X 10.15.7") && void 0 !== r && r >= 20 && (t = "macOS ".concat(r >= 25 ? r + 1 : r - 9)), "".concat(t, " (").concat(n, ")")
-    }(), N = [j, x, "(".concat(_, ")")];
-    return (null != v && (N.push("Host ".concat(v)), null != C && N.push(C.toLowerCase()), null != E && N.push("(".concat(E, ")"))), N.push("Build Override: ".concat(null != S ? S.id : "N/A")), null != I && N.push(I), y) ? (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(p.A, {
-            copyValue: N.join(" "),
-            text: g.intl.string(g.t["9Al4Qd"]),
+        compact: t = !1
+    } = e, n = (0, u.GV)(), s = window.GLOBAL_ENV.RELEASE_CHANNEL, r = "500595", h = "3717b148697db58a11a612d7319270a819213e96".substring(0, 7), x = c.A?.remoteApp.getVersion(), p = c.A?.remoteApp.getBuildNumber?.(), E = c.A?.remoteApp.getAppArch?.(), C = d.A.getCurrentBuildOverride().overrides?.discord_web, T = function() {
+        let e = l()?.os?.toString();
+        if (null == e || null == c.A) return null;
+        let t = c.A.os.release,
+            [n, i, s] = m.Ay.parsedOSRelease;
+        return e.includes("Windows 10") && void 0 !== s && s >= 22e3 && (e = e.replace("Windows 10", "Windows 11")), e.includes("OS X 10.15.7") && void 0 !== n && n >= 20 && (e = `macOS ${n>=25?n+1:n-9}`), `${e} (${t})`
+    }(), S = [s, r, `(${h})`];
+    return (null != x && (S.push(`Host ${x}`), null != E && S.push(E.toLowerCase()), null != p && S.push(`(${p})`)), S.push(`Build Override: ${null!=C?C.id:"N/A"}`), null != T && S.push(T), t) ? (0, i.jsxs)(i.Fragment, {
+        children: [(0, i.jsx)(_.A, {
+            copyValue: S.join(" "),
+            text: A.intl.string(A.t["9Al4Qd"]),
             "aria-label": !1,
             dataMeticulousIgnore: "true",
-            children: e => (0, r.jsxs)(o.DUT, b(m({}, e), {
-                "aria-describedby": O,
-                className: i()(f.vk, f.oE),
-                children: [(0, r.jsxs)("div", {
-                    className: f.Cr,
+            children: e => (0, i.jsxs)(o.DUT, {
+                ...e,
+                "aria-describedby": n,
+                className: a()(g.vk, g.oE),
+                children: [(0, i.jsxs)("div", {
+                    className: g.Cr,
                     "data-mtctest-ignore": "true",
-                    children: [(0, r.jsxs)(o.Text, {
+                    children: [(0, i.jsxs)(o.Text, {
                         tag: "span",
                         variant: "text-xxs/normal",
                         color: "text-muted",
-                        children: [j, " ", x, " ", (0, r.jsxs)("span", {
-                            className: f.Pc,
-                            children: ["(", _, ")"]
+                        children: [s, " ", r, " ", (0, i.jsxs)("span", {
+                            className: g.Pc,
+                            children: ["(", h, ")"]
                         })]
-                    }), null != v && (0, r.jsxs)(o.Text, {
+                    }), null != x && (0, i.jsxs)(o.Text, {
                         tag: "span",
                         variant: "text-xxs/normal",
                         color: "text-muted",
-                        children: [v, null != C && (0, r.jsxs)("span", {
-                            className: f.GI,
-                            children: [" ", C.toLowerCase()]
-                        }), null != E && (0, r.jsxs)("span", {
-                            children: [" (", E, ")"]
+                        children: [x, null != E && (0, i.jsxs)("span", {
+                            className: g.GI,
+                            children: [" ", E.toLowerCase()]
+                        }), null != p && (0, i.jsxs)("span", {
+                            children: [" (", p, ")"]
                         })]
                     })]
-                }), null != S && (0, r.jsx)(o.Text, {
+                }), null != C && (0, i.jsx)(o.Text, {
                     tag: "span",
                     variant: "text-xxs/normal",
                     color: "text-muted",
-                    children: (0, r.jsxs)("span", {
-                        className: f.Pc,
-                        children: ["Build Override: ", S.id]
+                    children: (0, i.jsxs)("span", {
+                        className: g.Pc,
+                        children: ["Build Override: ", C.id]
                     })
                 })]
-            }))
-        }), (0, r.jsx)(o.AC4, {
-            id: O,
-            children: g.intl.string(g.t["9Al4Qd"])
+            })
+        }), (0, i.jsx)(o.AC4, {
+            id: n,
+            children: A.intl.string(A.t["9Al4Qd"])
         })]
-    }) : (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(p.A, {
-            copyValue: N.join(" "),
-            text: g.intl.string(g.t["9Al4Qd"]),
+    }) : (0, i.jsxs)(i.Fragment, {
+        children: [(0, i.jsx)(_.A, {
+            copyValue: S.join(" "),
+            text: A.intl.string(A.t["9Al4Qd"]),
             "aria-label": !1,
             dataMeticulousIgnore: "true",
-            children: e => (0, r.jsx)(o.DUT, b(m({}, e), {
-                "aria-describedby": O,
-                className: i()(f.vk, f.oE),
-                children: (0, r.jsxs)("div", {
-                    className: f.pq,
+            children: e => (0, i.jsx)(o.DUT, {
+                ...e,
+                "aria-describedby": n,
+                className: a()(g.vk, g.oE),
+                children: (0, i.jsxs)("div", {
+                    className: g.pq,
                     "data-mtctest-ignore": "true",
-                    children: [(0, r.jsxs)(o.Text, {
+                    children: [(0, i.jsxs)(o.Text, {
                         tag: "span",
-                        className: f.n8,
+                        className: g.n8,
                         variant: "text-xs/normal",
                         color: "text-muted",
-                        children: [j, " ", x, " ", (0, r.jsxs)("span", {
-                            className: f.Pc,
-                            children: ["(", _, ")"]
+                        children: [s, " ", r, " ", (0, i.jsxs)("span", {
+                            className: g.Pc,
+                            children: ["(", h, ")"]
                         })]
-                    }), " ", null != S && (0, r.jsx)(o.Text, {
+                    }), " ", null != C && (0, i.jsx)(o.Text, {
                         tag: "span",
-                        className: f.n8,
+                        className: g.n8,
                         variant: "text-xs/normal",
                         color: "text-muted",
-                        children: (0, r.jsxs)("span", {
-                            className: f.Pc,
-                            children: ["Build Override: ", S.id]
+                        children: (0, i.jsxs)("span", {
+                            className: g.Pc,
+                            children: ["Build Override: ", C.id]
                         })
-                    }), null != v ? (0, r.jsxs)(r.Fragment, {
-                        children: [(0, r.jsxs)(o.Text, {
+                    }), null != x ? (0, i.jsxs)(i.Fragment, {
+                        children: [(0, i.jsxs)(o.Text, {
                             tag: "span",
-                            className: f.n8,
+                            className: g.n8,
                             variant: "text-xs/normal",
                             color: "text-muted",
-                            children: ["Host ", v, " ", null != C ? (0, r.jsxs)("span", {
-                                className: f.GI,
-                                children: [C.toLowerCase(), " "]
-                            }) : null, null != E ? (0, r.jsxs)("span", {
-                                children: ["(", E, ")"]
+                            children: ["Host ", x, " ", null != E ? (0, i.jsxs)("span", {
+                                className: g.GI,
+                                children: [E.toLowerCase(), " "]
+                            }) : null, null != p ? (0, i.jsxs)("span", {
+                                children: ["(", p, ")"]
                             }) : null]
                         }), " "]
-                    }) : null, null != I ? (0, r.jsx)(o.Text, {
+                    }) : null, null != T ? (0, i.jsx)(o.Text, {
                         tag: "span",
-                        className: i()(f.n8, f.os),
+                        className: a()(g.n8, g.os),
                         variant: "text-xs/normal",
                         color: "text-muted",
-                        children: I
+                        children: T
                     }) : null]
                 })
-            }))
-        }), (0, r.jsx)(o.AC4, {
-            id: O,
-            children: g.intl.string(g.t["9Al4Qd"])
+            })
+        }), (0, i.jsx)(o.AC4, {
+            id: n,
+            children: A.intl.string(A.t["9Al4Qd"])
         })]
     })
 }

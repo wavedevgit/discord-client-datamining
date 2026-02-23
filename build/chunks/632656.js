@@ -1,48 +1,48 @@
 /** chunk id: 632656, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    m: () => f
+    m: () => A
 });
-var r = n(627968),
-    l = n(64700),
-    a = n(503698),
-    i = n.n(a),
-    o = n(673698),
-    s = n(990078),
+var l = n(627968),
+    a = n(64700),
+    r = n(503698),
+    s = n.n(r),
+    i = n(673698),
+    o = n(990078),
     c = n(155718),
-    u = n(891694),
-    d = n(652215),
-    p = n(985018),
-    m = n(724870);
+    d = n(891694),
+    u = n(652215),
+    m = n(985018),
+    p = n(724870);
 
-function f(e) {
-    let t = l.useRef(null),
+function A(e) {
+    let t = a.useRef(null),
         n = e.media;
-    if (n.loadingState === c.TD.LOADED_NOT_FOUND) return (0, r.jsx)(s.m, {
-        text: p.intl.string(p.t.UvDfMz),
+    if (n.loadingState === c.TD.LOADED_NOT_FOUND) return (0, l.jsx)(o.m, {
+        text: m.intl.string(m.t.UvDfMz),
         position: "bottom",
         align: "center",
         targetElementRef: t,
-        children: (0, r.jsx)("div", {
-            className: i()(e.className, m.FN, {
-                [m.gS]: e.hiddenSpoilers
+        children: (0, l.jsx)("div", {
+            className: s()(e.className, p.FN, {
+                [p.gS]: e.hiddenSpoilers
             }),
             style: {
                 width: e.placeholderWidth,
                 height: e.placeholderHeight
             },
             role: "img",
-            children: (0, r.jsx)(u.A, {
+            children: (0, l.jsx)(d.A, {
                 ref: t,
-                className: m.i4
+                className: p.i4
             })
         })
     });
-    let a = n.loadingState === c.TD.LOADING ? d.Rv1.LOADING : d.Rv1.ERROR;
-    return (0, r.jsx)(o._, {
-        className: i()(e.className, {
-            [m.gS]: e.hiddenSpoilers
+    let r = n.loadingState === c.TD.LOADING ? u.Rv1.LOADING : u.Rv1.ERROR;
+    return (0, l.jsx)(i._, {
+        className: s()(e.className, {
+            [p.gS]: e.hiddenSpoilers
         }),
-        readyState: a,
+        readyState: r,
         src: "",
         width: e.placeholderWidth,
         height: e.placeholderHeight,

@@ -1,46 +1,45 @@
 /** chunk id: 375907, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => i
+    A: () => s
 });
-var r = n(64700),
-    l = n(884362);
+var l = n(64700),
+    i = n(884362);
 
-function i(e) {
+function s(e) {
     let {
         listRef: t,
         padding: n,
-        channel: i,
+        channel: s,
         isEnabled: a
-    } = e, s = r.useCallback(e => {
-        let r = t.current,
-            l = document.querySelector(e);
-        null != l && (null == r || r.scrollIntoViewNode({
-            node: l,
+    } = e, r = l.useCallback(e => {
+        let l = t.current,
+            i = document.querySelector(e);
+        null != i && l?.scrollIntoViewNode({
+            node: i,
             padding: n,
             callback: () => {
-                var t;
-                null == (t = document.querySelector(e)) || t.focus({
+                document.querySelector(e)?.focus({
                     preventScroll: !0
                 })
             }
-        }))
-    }, [n, t]), o = r.useCallback(() => new Promise(e => {
+        })
+    }, [n, t]), o = l.useCallback(() => new Promise(e => {
         let n = t.current;
-        null == n || n.scrollToTop({
+        n?.scrollToTop({
             callback: () => requestAnimationFrame(e)
         })
-    }), [t]), c = r.useCallback(() => new Promise(e => {
+    }), [t]), d = l.useCallback(() => new Promise(e => {
         let n = t.current;
-        null == n || n.scrollToBottom({
+        n?.scrollToBottom({
             callback: () => requestAnimationFrame(e)
         })
     }), [t]);
-    return (0, l.Ay)({
-        id: "forum-channel-list-".concat(i.id),
+    return (0, i.Ay)({
+        id: `forum-channel-list-${s.id}`,
         isEnabled: a,
         scrollToStart: o,
-        scrollToEnd: c,
-        setFocus: s
+        scrollToEnd: d,
+        setFocus: r
     })
 }

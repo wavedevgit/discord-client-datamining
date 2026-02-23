@@ -1,140 +1,140 @@
 /** chunk id: 342744, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    default: () => S
-}), n(896048), n(65821);
-var r = n(627968),
-    i = n(64700),
-    l = n(284009),
-    s = n.n(l),
-    a = n(158954),
+    default: () => f
+});
+var i = n(627968),
+    s = n(64700),
+    a = n(284009),
+    r = n.n(a),
+    l = n(158954),
     o = n(311907),
     c = n(397927),
     d = n(384904),
     u = n(923408),
     _ = n(198982),
-    p = n(136857),
-    m = n(793574),
+    m = n(136857),
+    A = n(793574),
     g = n(688810),
-    A = n(253390),
-    f = n(166403),
-    b = n(927578),
-    h = n(985018),
-    E = n(359294);
-async function O(e, t, n, r) {
-    let i = (0, b.aE)(e, t);
+    h = n(253390),
+    x = n(166403),
+    p = n(927578),
+    E = n(985018),
+    C = n(359294);
+async function T(e, t, n, i) {
+    let s = (0, p.aE)(e, t);
     await (0, u.Ey)(n), await (0, d.nV)(e, {
-        items: i
+        items: s
     }, {
         amount: 0,
         currency: e.currency
-    }, (0, b.UC)(i, e.currency, e.paymentSourceId), r)
-}
-
-function x(e) {
-    let {
-        errorMsg: t
-    } = e;
-    return (0, r.jsxs)("div", {
-        className: E.rf,
-        children: [null !== t && (0, r.jsx)("div", {
-            className: E.z3,
-            children: (0, r.jsx)(c.wx6, {
-                type: "critical",
-                children: t
-            })
-        }), (0, r.jsx)("div", {
-            children: h.intl.string(h.t.DY2CXs)
-        })]
-    })
-}
-
-function C() {
-    return (0, r.jsxs)("div", {
-        className: E.rf,
-        children: [(0, r.jsx)("div", {
-            className: E.dk
-        }), (0, r.jsx)("div", {
-            children: h.intl.string(h.t.G27uHe)
-        })]
-    })
+    }, (0, p.UC)(s, e.currency, e.paymentSourceId), i)
 }
 
 function S(e) {
     let {
+        errorMsg: t
+    } = e;
+    return (0, i.jsxs)("div", {
+        className: C.rf,
+        children: [null !== t && (0, i.jsx)("div", {
+            className: C.z3,
+            children: (0, i.jsx)(c.wx6, {
+                type: "critical",
+                children: t
+            })
+        }), (0, i.jsx)("div", {
+            children: E.intl.string(E.t.DY2CXs)
+        })]
+    })
+}
+
+function I() {
+    return (0, i.jsxs)("div", {
+        className: C.rf,
+        children: [(0, i.jsx)("div", {
+            className: C.dk
+        }), (0, i.jsx)("div", {
+            children: E.intl.string(E.t.G27uHe)
+        })]
+    })
+}
+
+function f(e) {
+    let {
         guildBoostSlotId: t,
         transitionState: n,
-        onClose: l
+        onClose: a
     } = e, {
         analyticsLocations: u
-    } = (0, g.Ay)(m.A.GUILD_BOOST_UNCANCELLATION_MODAL);
-    i.useEffect(() => {
-        f.A.hasFetchedSubscriptions() || (0, d.hP)()
+    } = (0, g.Ay)(A.A.GUILD_BOOST_UNCANCELLATION_MODAL);
+    s.useEffect(() => {
+        x.A.hasFetchedSubscriptions() || (0, d.hP)()
     }, []);
-    let E = (0, o.bG)([f.A], () => f.A.getPremiumTypeSubscription()),
-        [S, T] = i.useState(1),
-        [I, N] = i.useState(!1),
-        [y, j] = i.useState(null),
-        v = i.useCallback(async () => {
-            if (null != E) try {
-                N(!0), j(null);
-                let e = (0, A.v)(E, 1);
-                s()((0, b.bx)(e) <= (0, b.bx)(E.additionalPlans), "Uncanceling should not increase the number of guild subscriptions"), await O(E, e, t, u), T(2)
+    let C = (0, o.bG)([x.A], () => x.A.getPremiumTypeSubscription()),
+        [f, N] = s.useState(1),
+        [b, j] = s.useState(!1),
+        [v, O] = s.useState(null),
+        R = s.useCallback(async () => {
+            if (null != C) try {
+                j(!0), O(null);
+                let e = (0, h.v)(C, 1);
+                r()((0, p.bx)(e) <= (0, p.bx)(C.additionalPlans), "Uncanceling should not increase the number of guild subscriptions"), await T(C, e, t, u), N(2)
             } catch (t) {
                 let e = t instanceof _.Ey ? t : new _.Ey(t, t.code);
-                j(h.intl.string(e.code === p.tG.BILLING_PAUSE_INVALID_UPDATE ? h.t.dq4vq7 : h.t["5mlOCW"])), N(!1)
+                O(E.intl.string(e.code === m.tG.BILLING_PAUSE_INVALID_UPDATE ? E.t.dq4vq7 : E.t["5mlOCW"])), j(!1)
             }
-        }, [E, t, u]);
-    return (0, r.jsx)(g.f5, {
+        }, [C, t, u]);
+    return (0, i.jsx)(g.f5, {
         value: u,
-        children: (0, r.jsx)(a.Modal, {
+        children: (0, i.jsx)(l.Modal, {
             transitionState: n,
-            onClose: async () => await l(),
+            onClose: async () => await a(),
             size: "sm",
             title: (() => {
-                switch (S) {
+                switch (f) {
                     case 1:
-                        return h.intl.string(h.t.l52ih2);
+                        return E.intl.string(E.t.l52ih2);
                     case 2:
-                        return h.intl.string(h.t.H9QUAB);
+                        return E.intl.string(E.t.H9QUAB);
                     default:
                         return ""
                 }
             })(),
             actions: (() => {
-                switch (S) {
+                switch (f) {
                     case 1:
                         return [{
                             variant: "secondary",
-                            text: h.intl.string(h.t.oEAioF),
-                            disabled: I,
-                            onClick: l
+                            text: E.intl.string(E.t.oEAioF),
+                            disabled: b,
+                            onClick: a
                         }, {
                             variant: "primary",
-                            text: h.intl.string(h.t.etZP4B),
-                            loading: I,
-                            onClick: v
+                            text: E.intl.string(E.t.etZP4B),
+                            loading: b,
+                            onClick: R
                         }];
                     case 2:
                         return [{
                             variant: "primary",
-                            text: h.intl.string(h.t.BddRzS),
-                            onClick: l
+                            text: E.intl.string(E.t.BddRzS),
+                            onClick: a
                         }];
                     default:
                         return []
                 }
             })(),
             children: (() => {
-                if (null == E) return (0, r.jsx)(c.y$y, {});
-                switch (S) {
+                if (null == C) return (0, i.jsx)(c.y$y, {});
+                switch (f) {
                     case 1:
-                        return (0, r.jsx)(x, {
-                            errorMsg: y
+                        return (0, i.jsx)(S, {
+                            errorMsg: v
                         });
                     case 2:
-                        return (0, r.jsx)(C, {});
+                        return (0, i.jsx)(I, {});
                     default:
-                        throw Error("Unexpected step: ".concat(S))
+                        throw Error(`Unexpected step: ${f}`)
                 }
             })()
         })

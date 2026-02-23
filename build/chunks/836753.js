@@ -1,58 +1,44 @@
 /** chunk id: 836753, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => g
+    A: () => p
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var l = n(397927),
-    i = n(73153),
-    s = n(272355),
+var s = n(397927),
+    l = n(73153),
+    r = n(272355),
     a = n(960736),
     o = n(954571),
     c = n(972387),
-    u = n(539895),
-    d = n(652215);
-let p = "INVITE_MODAL_KEY";
-class h extends s.A {
+    d = n(539895),
+    u = n(652215);
+let h = "INVITE_MODAL_KEY";
+class A extends r.A {
     _initialize() {
-        i.h.subscribe("INVITE_MODAL_OPEN", this.handleOpenModal), i.h.subscribe("INVITE_MODAL_CLOSE", this.handleCloseModal)
+        l.h.subscribe("INVITE_MODAL_OPEN", this.handleOpenModal), l.h.subscribe("INVITE_MODAL_CLOSE", this.handleCloseModal)
     }
     _terminate() {
-        (0, l.OoC)(p), i.h.unsubscribe("INVITE_MODAL_OPEN", this.handleOpenModal), i.h.unsubscribe("INVITE_MODAL_CLOSE", this.handleCloseModal)
+        (0, s.OoC)(h), l.h.unsubscribe("INVITE_MODAL_OPEN", this.handleOpenModal), l.h.unsubscribe("INVITE_MODAL_CLOSE", this.handleCloseModal)
     }
     handleOpenModal(e) {
         let {
             context: t
         } = e;
-        u.A.isOpen() && !(0, l.kBI)(p) && (0, l.mMO)(async () => {
+        d.A.isOpen() && !(0, s.kBI)(h) && (0, s.mMO)(async () => {
             let {
                 default: e
-            } = await Promise.all([n.e("83155"), n.e("57506")]).then(n.bind(n, 563038));
-            return t => (0, r.jsx)(e, function(e) {
-                for (var t = 1; t < arguments.length; t++) {
-                    var n = null != arguments[t] ? arguments[t] : {},
-                        r = Object.keys(n);
-                    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                        return Object.getOwnPropertyDescriptor(n, e).enumerable
-                    }))), r.forEach(function(t) {
-                        var r;
-                        r = n[t], t in e ? Object.defineProperty(e, t, {
-                            value: r,
-                            enumerable: !0,
-                            configurable: !0,
-                            writable: !0
-                        }) : e[t] = r
-                    })
-                }
-                return e
-            }({}, t))
+            } = await Promise.all([n.e("83155"), n.e("28453")]).then(n.bind(n, 563038));
+            return t => (0, i.jsx)(e, {
+                ...t
+            })
         }, {
-            modalKey: p,
-            contextKey: (0, l.TId)(t),
+            modalKey: h,
+            contextKey: (0, s.TId)(t),
             onCloseRequest: () => {
                 let e = (0, a.p9)(),
                     t = (0, a.xD)();
-                o.default.track(d.HAw.INVITE_ACCEPT_DISMISSED, {
+                o.default.track(u.HAw.INVITE_ACCEPT_DISMISSED, {
                     invite_code: e,
                     guild_id: t
                 }), c.A.close()
@@ -60,7 +46,7 @@ class h extends s.A {
         })
     }
     handleCloseModal() {
-        (0, l.OoC)(p)
+        (0, s.OoC)(h)
     }
 }
-let g = new h
+let p = new A

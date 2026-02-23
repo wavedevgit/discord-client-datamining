@@ -1,12 +1,11 @@
-/** chunk id: 859287, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
+/** chunk id: 859287, original params: e,l,a (module,exports,require) **/
+a.d(l, {
     N: () => s
-}), n(896048);
-var r = n(627968),
-    i = n(64700),
-    a = n(421380),
-    o = n(397927);
+});
+var t = a(627968),
+    o = a(64700),
+    n = a(421380),
+    i = a(397927);
 let s = {
     title: "Checkbox",
     stories: [{
@@ -14,65 +13,65 @@ let s = {
         name: "Checkbox",
         component: function(e) {
             let {
-                disabled: t,
-                readOnly: n,
+                disabled: l,
+                readOnly: a,
                 displayOnly: s,
-                type: l,
-                size: c,
+                type: r,
+                size: d,
                 align: u,
-                shape: d,
-                label: f
-            } = e, [p, _] = i.useState(!1), h = i.useCallback((e, t) => {
-                _(t)
-            }, []), m = i.useCallback(() => {
-                _(!0)
-            }, []), g = i.useCallback(() => {
-                _(!1)
-            }, []), E = i.useCallback(() => {
-                _(e => !e)
+                shape: c,
+                label: b
+            } = e, [p, m] = o.useState(!1), x = o.useCallback((e, l) => {
+                m(l)
+            }, []), v = o.useCallback(() => {
+                m(!0)
+            }, []), h = o.useCallback(() => {
+                m(!1)
+            }, []), y = o.useCallback(() => {
+                m(e => !e)
             }, []);
-            return (0, r.jsxs)(o.BJc, {
+            return (0, t.jsxs)(i.BJc, {
                 direction: "vertical",
                 gap: "md",
-                children: [(0, r.jsx)(a.Kj, {
+                children: [(0, t.jsx)(n.Kj, {
                     "data-migration-pending": !0,
                     value: p,
-                    onChange: h,
-                    disabled: t,
-                    readOnly: n,
+                    onChange: x,
+                    disabled: l,
+                    readOnly: a,
                     displayOnly: s,
-                    type: l,
-                    size: c,
+                    type: r,
+                    size: d,
                     align: u,
-                    shape: d,
-                    children: (0, r.jsx)(o.Text, {
+                    shape: c,
+                    children: (0, t.jsx)(i.Text, {
                         variant: "text-md/normal",
-                        children: f
+                        children: b
                     })
-                }), (0, r.jsxs)(o.Text, {
+                }), (0, t.jsxs)(i.Text, {
                     variant: "text-sm/normal",
                     children: ["Current state: ", p ? "Checked" : "Unchecked"]
-                }), (0, r.jsxs)(o.BJc, {
+                }), (0, t.jsxs)(i.BJc, {
                     direction: "horizontal",
                     gap: "sm",
-                    children: [(0, r.jsx)(o.Button, {
+                    children: [(0, t.jsx)(i.Button, {
                         variant: "secondary",
                         size: "sm",
                         text: "Check",
-                        onClick: m,
-                        disabled: t || n
-                    }), (0, r.jsx)(o.Button, {
+                        onClick: v,
+                        disabled: l || a
+                    }), (0, t.jsx)(i.Button, {
                         variant: "secondary",
                         size: "sm",
                         text: "Uncheck",
-                        onClick: g,
-                        disabled: t || n
-                    }), (0, r.jsx)(o.Button, {
+                        onClick: h,
+                        disabled: l || a
+                    }), (0, t.jsx)(i.Button, {
                         variant: "primary",
                         size: "sm",
                         text: "Toggle",
-                        onClick: E,
-                        disabled: t || n
+                        onClick: y,
+                        disabled: l || a
                     })]
                 })]
             })
@@ -101,19 +100,19 @@ let s = {
             type: {
                 type: "select",
                 label: "Type",
-                defaultValue: a.Xo.DEFAULT,
+                defaultValue: n.Xo.DEFAULT,
                 options: [{
                     label: "Default",
-                    value: a.Xo.DEFAULT
+                    value: n.Xo.DEFAULT
                 }, {
                     label: "Inverted",
-                    value: a.Xo.INVERTED
+                    value: n.Xo.INVERTED
                 }, {
                     label: "Ghost",
-                    value: a.Xo.GHOST
+                    value: n.Xo.GHOST
                 }, {
                     label: "Row",
-                    value: a.Xo.ROW
+                    value: n.Xo.ROW
                 }]
             },
             size: {
@@ -124,28 +123,28 @@ let s = {
             align: {
                 type: "select",
                 label: "Alignment",
-                defaultValue: a.ov.CENTER,
+                defaultValue: n.ov.CENTER,
                 options: [{
                     label: "Center",
-                    value: a.ov.CENTER
+                    value: n.ov.CENTER
                 }, {
                     label: "Top",
-                    value: a.ov.TOP
+                    value: n.ov.TOP
                 }]
             },
             shape: {
                 type: "select",
                 label: "Shape",
-                defaultValue: a.Ib.BOX,
+                defaultValue: n.Ib.BOX,
                 options: [{
                     label: "Box",
-                    value: a.Ib.BOX
+                    value: n.Ib.BOX
                 }, {
                     label: "Small Box",
-                    value: a.Ib.SMALL_BOX
+                    value: n.Ib.SMALL_BOX
                 }, {
                     label: "Round",
-                    value: a.Ib.ROUND
+                    value: n.Ib.ROUND
                 }]
             }
         }

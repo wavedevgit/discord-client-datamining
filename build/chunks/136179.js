@@ -1,44 +1,45 @@
 /** chunk id: 136179, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => u
+    A: () => d
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var l = n(503698),
-    i = n.n(l),
-    s = n(607399),
+var s = n(503698),
+    l = n.n(s),
+    r = n(607399),
     a = n(397927),
     o = n(772577),
     c = n(216042);
 
-function u(e) {
+function d(e) {
     let {
         guildId: t,
         children: n,
-        className: l
+        className: s
     } = e, {
-        horizontalScrollNotice: u,
-        handleScroll: d,
-        handleSetScrollerRef: p,
-        handleSetContainerRef: h
-    } = (0, o.A)(t), g = (0, r.jsx)("div", {
+        horizontalScrollNotice: d,
+        handleScroll: u,
+        handleSetScrollerRef: h,
+        handleSetContainerRef: A
+    } = (0, o.A)(t), p = (0, i.jsx)("div", {
         className: c.vi,
-        children: (0, r.jsx)("div", {
-            className: i()(c._s, l),
+        children: (0, i.jsx)("div", {
+            className: l()(c._s, s),
             children: n
         })
     });
-    return s.Fr || (g = (0, r.jsxs)(r.Fragment, {
-        children: [u, (0, r.jsx)(a.T7Y, {
+    return r.Fr || (p = (0, i.jsxs)(i.Fragment, {
+        children: [d, (0, i.jsx)(a.T7Y, {
             className: c.XG,
             orientation: "horizontal",
-            ref: p,
-            onScroll: d,
-            children: g
+            ref: h,
+            onScroll: u,
+            children: p
         })]
-    })), (0, r.jsx)("div", {
+    })), (0, i.jsx)("div", {
         className: c.Rc,
-        ref: h,
-        children: g
+        ref: A,
+        children: p
     })
 }

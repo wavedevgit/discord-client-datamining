@@ -1,41 +1,41 @@
-/** chunk id: 770472, original params: e,t,n (module,exports,require) **/
-n.d(t, {
+/** chunk id: 770472, original params: e,t,a (module,exports,require) **/
+a.d(t, {
     p: () => o
 });
-var r = n(64700),
-    l = n(488995),
-    i = n(982339);
-let a = 20 + l.GLOBAL_DISCOVERY_SEARCH_BAR_WIDTH_PX - l.GLOBAL_DISCOVERY_SEARCH_BAR_ICON_WIDTH_PX,
-    s = 20 + l.GLOBAL_DISCOVERY_SEARCH_BAR_WIDTH_PX + l.GLOBAL_DISCOVERY_SEARCH_BAR_ICON_WIDTH_PX;
+var n = a(64700),
+    i = a(488995),
+    s = a(982339);
+let l = 20 + i.GLOBAL_DISCOVERY_SEARCH_BAR_WIDTH_PX - i.GLOBAL_DISCOVERY_SEARCH_BAR_ICON_WIDTH_PX,
+    r = 20 + i.GLOBAL_DISCOVERY_SEARCH_BAR_WIDTH_PX + i.GLOBAL_DISCOVERY_SEARCH_BAR_ICON_WIDTH_PX;
 
 function o(e) {
     let {
         isSearchBarVisible: t,
-        isSearchBarEmpty: n,
+        isSearchBarEmpty: a,
         searchBarState: o,
         setSearchBarState: c
-    } = e, d = r.useCallback(e => {
+    } = e, d = n.useCallback(e => {
         if (!t) return;
-        let r = Math.round(e);
+        let n = Math.round(e);
         switch (o) {
-            case l.GlobalDiscoverySearchBarState.DEFAULT:
-                r < 20 && c(n ? l.GlobalDiscoverySearchBarState.COLLAPSED : l.GlobalDiscoverySearchBarState.FLOATING);
+            case i.GlobalDiscoverySearchBarState.DEFAULT:
+                n < 20 && c(a ? i.GlobalDiscoverySearchBarState.COLLAPSED : i.GlobalDiscoverySearchBarState.FLOATING);
                 break;
-            case l.GlobalDiscoverySearchBarState.COLLAPSED:
-                r > a && c(l.GlobalDiscoverySearchBarState.DEFAULT);
+            case i.GlobalDiscoverySearchBarState.COLLAPSED:
+                n > l && c(i.GlobalDiscoverySearchBarState.DEFAULT);
                 break;
-            case l.GlobalDiscoverySearchBarState.FLOATING:
-                r > s && c(l.GlobalDiscoverySearchBarState.DEFAULT)
+            case i.GlobalDiscoverySearchBarState.FLOATING:
+                n > r && c(i.GlobalDiscoverySearchBarState.DEFAULT)
         }
-    }, [n, t, o, c]), u = r.useCallback(() => {
-        c(l.GlobalDiscoverySearchBarState.FLOATING)
-    }, [c]), p = r.useCallback(() => {
-        o === l.GlobalDiscoverySearchBarState.FLOATING && n && c(l.GlobalDiscoverySearchBarState.COLLAPSED)
-    }, [n, o, c]);
+    }, [a, t, o, c]), u = n.useCallback(() => {
+        c(i.GlobalDiscoverySearchBarState.FLOATING)
+    }, [c]), h = n.useCallback(() => {
+        o === i.GlobalDiscoverySearchBarState.FLOATING && a && c(i.GlobalDiscoverySearchBarState.COLLAPSED)
+    }, [a, o, c]);
     return {
         onTabsAvailableWidthChange: d,
-        tabsClassName: o === l.GlobalDiscoverySearchBarState.FLOATING ? i.b6 : void 0,
+        tabsClassName: o === i.GlobalDiscoverySearchBarState.FLOATING ? s.b6 : void 0,
         onCollapsedSearchBarClick: u,
-        onSearchBarBlur: p
+        onSearchBarBlur: h
     }
 }

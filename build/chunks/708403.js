@@ -1,24 +1,24 @@
 /** chunk id: 708403, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     HY: () => m,
-    OA: () => d,
+    OA: () => c,
     mA: () => u
-}), n(896048);
+});
 var a = n(627968),
-    l = n(64700),
-    r = n(503698),
-    i = n.n(r),
-    s = n(397927),
+    i = n(64700),
+    s = n(503698),
+    l = n.n(s),
+    r = n(397927),
     o = n(957565),
-    c = n(661251);
+    d = n(661251);
 
-function d(e) {
+function c(e) {
     let {
         className: t,
         children: n
     } = e;
     return (0, a.jsx)("dl", {
-        className: i()(c.qo, t),
+        className: l()(d.qo, t),
         children: n
     })
 }
@@ -26,27 +26,27 @@ let u = e => {
     let {
         name: t,
         children: n,
-        copyValue: r
-    } = e, [i, d] = l.useState(!1);
-    return l.useEffect(() => {
-        if (i) {
-            let e = setTimeout(() => d(!1), 1e3);
+        copyValue: s
+    } = e, [l, c] = i.useState(!1);
+    return i.useEffect(() => {
+        if (l) {
+            let e = setTimeout(() => c(!1), 1e3);
             return () => clearTimeout(e)
         }
-    }, [i]), (0, a.jsxs)(a.Fragment, {
+    }, [l]), (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)("dt", {
-            className: c.Bz,
+            className: d.Bz,
             children: t
         }), (0, a.jsxs)("dd", {
-            className: c.Nw,
-            children: [n, null != r ? (0, a.jsx)(s.DUT, {
+            className: d.Nw,
+            children: [n, null != s ? (0, a.jsx)(r.DUT, {
                 tag: "span",
-                className: c.nH,
-                onClick: () => (0, o.C)(r, () => d(!0)),
-                children: i ? (0, a.jsx)(s.Uzd, {
+                className: d.nH,
+                onClick: () => (0, o.C)(s, () => c(!0)),
+                children: l ? (0, a.jsx)(r.Uzd, {
                     color: "currentColor",
                     size: "sm"
-                }) : (0, a.jsx)(s.TdU, {
+                }) : (0, a.jsx)(r.TdU, {
                     color: "currentColor",
                     size: "sm"
                 })
@@ -59,7 +59,7 @@ function m(e) {
     let {
         value: t
     } = e;
-    return (0, a.jsx)(s.P7L, {
+    return (0, a.jsx)(r.P7L, {
         checked: t
     })
 }

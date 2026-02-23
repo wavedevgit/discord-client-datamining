@@ -1,64 +1,64 @@
 /** chunk id: 645745, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => j
-}), n(896048);
-var r = n(627968);
+    A: () => m
+});
+var i = n(627968);
 n(64700);
-var i = n(503698),
-    l = n.n(i),
-    o = n(827734),
-    c = n(397927),
-    s = n(147925),
-    a = n(273926),
-    d = n(243056),
+var s = n(503698),
+    l = n.n(s),
+    r = n(827734),
+    a = n(397927),
+    c = n(147925),
+    d = n(273926),
+    o = n(243056),
     u = n(985018),
-    f = n(592454);
-let j = function(e) {
+    x = n(592454);
+let m = function(e) {
     let {
         channelId: t,
         formField: n,
-        index: i,
-        isDragEnabled: j,
-        isDropHovered: p,
-        onDrop: b,
-        onEdit: y,
-        onRemove: m,
-        canRemove: O,
-        title: v,
-        actionsLocation: x,
-        fieldStyle: h
-    } = e, g = n.values, P = g.slice(0, 1), w = g.length - P.length;
-    return (0, r.jsxs)(d.A, {
+        index: s,
+        isDragEnabled: m,
+        isDropHovered: h,
+        onDrop: v,
+        onEdit: j,
+        onRemove: f,
+        canRemove: g,
+        title: p,
+        actionsLocation: A,
+        fieldStyle: T
+    } = e, C = n.values, E = C.slice(0, 1), w = C.length - E.length;
+    return (0, i.jsxs)(o.A, {
         field: n,
-        index: i,
-        isDragEnabled: j,
-        isDropHovered: p,
-        onDrop: b,
-        onEdit: y,
-        onRemove: m,
-        title: v,
-        canRemove: O,
-        actionsLocation: x,
-        fieldStyle: h,
-        children: [(0, r.jsx)(a.IJ, {
-            terms: P,
+        index: s,
+        isDragEnabled: m,
+        isDropHovered: h,
+        onDrop: v,
+        onEdit: j,
+        onRemove: f,
+        title: p,
+        canRemove: g,
+        actionsLocation: A,
+        fieldStyle: T,
+        children: [(0, i.jsx)(d.IJ, {
+            terms: E,
             channelId: t
-        }), 0 !== w && (0, r.jsxs)(c.DUT, {
-            className: l()(f.vs, f.vk),
-            onClick: y,
-            children: [(0, r.jsx)(c.Text, {
+        }), 0 !== w && (0, i.jsxs)(a.DUT, {
+            className: l()(x.vs, x.vk),
+            onClick: j,
+            children: [(0, i.jsx)(a.Text, {
                 variant: "text-md/normal",
-                className: f.vk,
+                className: x.vk,
                 children: u.intl.format(u.t.jnhD0S, {
                     count: w
                 })
-            }), (0, r.jsx)(s.A, {
-                className: f.IC,
+            }), (0, i.jsx)(c.A, {
+                className: x.IC,
                 height: 14,
                 width: 14,
-                color: o.A.unsafe_rawColors.WHITE.css
+                color: r.A.unsafe_rawColors.WHITE.css
             })]
-        }), (0, r.jsx)(a.xs, {
+        }), (0, i.jsx)(d.xs, {
             disabled: !0,
             checked: !1
         })]

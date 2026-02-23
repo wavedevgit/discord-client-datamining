@@ -1,36 +1,36 @@
 /** chunk id: 599119, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => a
-}), n(896048);
+});
 var i = n(64700),
-    r = n(131346),
-    l = n(522437);
+    l = n(131346),
+    s = n(522437);
 
 function a(e) {
     let {
         type: t,
         index: n,
         optionId: a,
-        onDragStart: s,
+        onDragStart: r,
         onDragComplete: o,
-        onDragReset: c
-    } = e, [d, u] = i.useState(!1), [, p] = (0, r.i)({
+        onDragReset: d
+    } = e, [c, u] = i.useState(!1), [, m] = (0, l.i)({
         type: t,
-        item: () => (s(a), {
+        item: () => (r(a), {
             id: a,
             position: n
         }),
-        canDrag: () => d,
+        canDrag: () => c,
         collect: e => ({
             isDragging: e.isDragging()
         }),
         end: (e, t) => {
             let n = t.getDropResult();
-            null == n ? c() : o(n.optionId)
+            null == n ? d() : o(n.optionId)
         }
     }), [{
-        dragSourcePosition: m
-    }, g] = (0, l.H)({
+        dragSourcePosition: g
+    }, x] = (0, s.H)({
         accept: t,
         canDrop: () => !0,
         collect: e => {
@@ -46,9 +46,9 @@ function a(e) {
         })
     });
     return {
-        drag: p,
-        dragSourcePosition: m,
-        drop: g,
+        drag: m,
+        dragSourcePosition: g,
+        drop: x,
         setIsDraggable: u
     }
 }

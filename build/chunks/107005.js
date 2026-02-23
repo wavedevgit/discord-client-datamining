@@ -2,18 +2,18 @@
 n.d(t, {
     Z: () => u
 });
-var r = n(627968),
-    i = n(64700),
-    l = n(397927),
-    s = n(379848),
-    a = n(49999),
+var i = n(627968),
+    s = n(64700),
+    a = n(397927),
+    r = n(379848),
+    l = n(49999),
     o = n(985018),
     c = n(784001);
 let d = e => {
         let {
             markAsDismissed: t
         } = e;
-        return i.useEffect(() => t(a.i.UNKNOWN), [t]), (0, r.jsx)(l.LpS, {
+        return s.useEffect(() => t(l.i.UNKNOWN), [t]), (0, i.jsx)(a.LpS, {
             className: c.Ad,
             text: o.intl.string(o.t.y2b7CA)
         })
@@ -22,36 +22,36 @@ let d = e => {
         let {
             title: t,
             body: n,
-            img: i,
-            newIndicatorDismissibleContent: a,
+            img: s,
+            newIndicatorDismissibleContent: l,
             onClick: u
         } = e;
-        return (0, r.jsxs)("div", {
+        return (0, i.jsxs)("div", {
             className: c.kL,
-            children: [i, (0, r.jsxs)("div", {
+            children: [s, (0, i.jsxs)("div", {
                 className: c.FS,
-                children: [(0, r.jsxs)("div", {
+                children: [(0, i.jsxs)("div", {
                     className: c.TK,
-                    children: [(0, r.jsx)(s.Ay, {
-                        contentTypes: [a],
+                    children: [(0, i.jsx)(r.Ay, {
+                        contentTypes: [l],
                         children: e => {
                             let {
                                 visibleContent: t,
                                 markAsDismissed: n
                             } = e;
-                            return t === a ? (0, r.jsx)(d, {
+                            return t === l ? (0, i.jsx)(d, {
                                 markAsDismissed: n
                             }) : null
                         }
-                    }), (0, r.jsx)(l.Text, {
+                    }), (0, i.jsx)(a.Text, {
                         variant: "text-md/semibold",
                         children: t
                     })]
-                }), (0, r.jsx)(l.Text, {
+                }), (0, i.jsx)(a.Text, {
                     variant: "text-xs/normal",
                     children: n
                 })]
-            }), (0, r.jsx)(l.Button, {
+            }), (0, i.jsx)(a.Button, {
                 text: o.intl.string(o.t.vD60Pv),
                 onClick: u
             })]

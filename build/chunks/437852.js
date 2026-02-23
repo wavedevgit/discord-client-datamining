@@ -1,14 +1,14 @@
 /** chunk id: 437852, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    Ay: () => l,
-    Fq: () => o,
-    qe: () => s
+    Ay: () => o,
+    Fq: () => s,
+    qe: () => a
 });
-var r = n(600975),
-    i = n(945810),
-    a = n(688151);
-let o = (0, i.mj)({
+var i = n(600975),
+    r = n(945810),
+    l = n(688151);
+let s = (0, r.mj)({
         name: "2025-10-seasonal-gifting-2025",
         kind: "user",
         defaultConfig: {
@@ -23,14 +23,14 @@ let o = (0, i.mj)({
             }
         }
     }),
-    s = (0, r.C)({
+    a = (0, i.C)({
         id: "2025-11_seasonal_gifting_2025_reminder",
         label: "Seasonal Gifting 2025 Reminder",
         kind: "user",
         defaultConfig: {
             enabled: !1
         },
-        commonTriggerPoint: a.$G.CONNECTION_OPEN,
+        commonTriggerPoint: l.$G.CONNECTION_OPEN,
         treatments: [{
             id: 1,
             label: "Enabled",
@@ -39,4 +39,4 @@ let o = (0, i.mj)({
             }
         }]
     }),
-    l = o
+    o = s

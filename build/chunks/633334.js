@@ -1,21 +1,21 @@
 /** chunk id: 633334, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    I: () => l
-}), n(321073), n(896048);
+    I: () => s
+}), n(321073);
 var i = n(91871),
-    r = n.n(i);
+    l = n.n(i);
 
-function l(e, t, n) {
+function s(e, t, n) {
     if ("" === n) return e;
     let i = n.toLowerCase(),
-        l = [];
+        s = [];
     for (let a of e) {
         let {
             id: e,
-            names: s
+            names: r
         } = t(a);
         if (e === n) return [a];
-        s.some(e => r()(i, e.toLowerCase())) && l.push(a)
+        r.some(e => l()(i, e.toLowerCase())) && s.push(a)
     }
-    return l
+    return s
 }

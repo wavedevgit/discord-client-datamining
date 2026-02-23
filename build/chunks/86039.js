@@ -1,32 +1,32 @@
 /** chunk id: 86039, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    A: () => a
+    A: () => l
 });
 var n = i(954571),
-    l = i(652215);
+    a = i(652215);
 
-function a(t) {
+function l(t) {
     let {
         problem: e,
         channel: i,
-        embeddedActivityLocation: a,
-        feedback: o,
+        embeddedActivityLocation: l,
+        feedback: _,
         activityApplication: c,
-        analyticsData: r = {},
-        location: _,
+        analyticsData: o = {},
+        location: r,
         rating: d = null
     } = t;
-    n.default.track(l.HAw.ACTIVITY_REPORT_PROBLEM, {
+    n.default.track(a.HAw.ACTIVITY_REPORT_PROBLEM, {
         reason: e,
-        guild_id: null == i ? void 0 : i.getGuildId(),
-        channel_id: null == i ? void 0 : i.id,
-        application_id: null == c ? void 0 : c.id,
-        application_name: null == c ? void 0 : c.name,
-        location: _,
+        guild_id: i?.getGuildId(),
+        channel_id: i?.id,
+        application_id: c?.id,
+        application_name: c?.name,
+        location: r,
         rating: d,
-        feedback: o,
-        embedded_activity_location_kind: a.kind,
-        rtc_connection_id: r.rtc_connection_id,
-        media_session_id: r.media_session_id
+        feedback: _,
+        embedded_activity_location_kind: l.kind,
+        rtc_connection_id: o.rtc_connection_id,
+        media_session_id: o.media_session_id
     })
 }

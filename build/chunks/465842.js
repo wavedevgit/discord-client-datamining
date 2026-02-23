@@ -3,17 +3,17 @@ s.d(e, {
     K: () => r
 });
 var l = s(562465),
-    n = s(73153),
-    a = s(568004),
+    a = s(73153),
+    n = s(568004),
     i = s(652215);
 async function r(t, e, s, r) {
-    if (a.A.needsToFetchBuildSize(s)) {
-        n.h.dispatch({
+    if (n.A.needsToFetchBuildSize(s)) {
+        a.h.dispatch({
             type: "APPLICATION_BUILD_SIZE_FETCH_START",
             buildId: s
         });
         try {
-            let a = await l.Bo.post({
+            let n = await l.Bo.post({
                 url: i.Rsh.APPLICATION_BUILD_SIZE(t, e, s),
                 body: {
                     manifest_ids: r
@@ -21,13 +21,13 @@ async function r(t, e, s, r) {
                 oldFormErrors: !0,
                 rejectWithError: !0
             });
-            n.h.dispatch({
+            a.h.dispatch({
                 type: "APPLICATION_BUILD_SIZE_FETCH_SUCCESS",
                 buildId: s,
-                sizeKB: a.body.size_kb
+                sizeKB: n.body.size_kb
             })
         } catch (t) {
-            n.h.dispatch({
+            a.h.dispatch({
                 type: "APPLICATION_BUILD_SIZE_FETCH_FAIL",
                 buildId: s
             })

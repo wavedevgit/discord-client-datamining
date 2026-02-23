@@ -1,9 +1,9 @@
 /** chunk id: 819638, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    IR: () => o,
-    fc: () => a,
-    oS: () => i
+    IR: () => s,
+    fc: () => l,
+    oS: () => a
 });
-var r, l, i = ((r = {}).GUILD_TEMPLATES = "guild-templates", r.CUSTOMIZE_GUILD = "customize-guild", r.CHANNEL_PROMPT = "channel-prompt", r.JOIN_GUILD = "join-guild", r.CREATION_INTENT = "creation-intent", r),
-    o = ((l = {}).FRIENDS = "FRIENDS", l.COMMUNITY = "COMMUNITY", l.CLAN = "CLAN", l);
-let a = "create-guild"
+var i, r, a = ((i = {}).GUILD_TEMPLATES = "guild-templates", i.CUSTOMIZE_GUILD = "customize-guild", i.CHANNEL_PROMPT = "channel-prompt", i.JOIN_GUILD = "join-guild", i.CREATION_INTENT = "creation-intent", i),
+    s = ((r = {}).FRIENDS = "FRIENDS", r.COMMUNITY = "COMMUNITY", r.CLAN = "CLAN", r);
+let l = "create-guild"

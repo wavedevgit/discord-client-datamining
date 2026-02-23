@@ -1,102 +1,101 @@
 /** chunk id: 754513, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => b
-}), n(896048), n(228524);
-var r = n(627968),
-    i = n(64700),
+    A: () => A
+});
+var i = n(627968),
+    s = n(64700),
     l = n(503698),
-    s = n.n(l),
+    r = n.n(l),
     a = n(397927),
     o = n(975571),
-    c = n(546457),
-    d = n(897295),
+    d = n(546457),
+    c = n(897295),
     u = n(411335),
-    g = n(652215),
-    m = n(985018),
-    p = n(256893);
-let f = o.A.getArticleURL(g.MVz.GUILD_AUTOMOD_REGEX);
+    m = n(652215),
+    g = n(985018),
+    x = n(256893);
+let h = o.A.getArticleURL(m.MVz.GUILD_AUTOMOD_REGEX);
 
-function h(e) {
+function _(e) {
     let {
         hasErrors: t,
         text: n,
-        errorText: i
+        errorText: s
     } = e;
-    return t ? (0, r.jsx)("div", {
-        className: p.W$,
-        children: (0, r.jsx)(a.Text, {
-            className: p.F,
+    return t ? (0, i.jsx)("div", {
+        className: x.W$,
+        children: (0, i.jsx)(a.Text, {
+            className: x.F,
             variant: "text-xs/medium",
             color: "text-feedback-critical",
-            children: null != i ? i : m.intl.format(m.t.jKYAPu, {
-                helpArticle: f
+            children: s ?? g.intl.format(g.t.jKYAPu, {
+                helpArticle: h
             })
         })
-    }) : (0, r.jsx)(a.Text, {
-        className: p.W$,
+    }) : (0, i.jsx)(a.Text, {
+        className: x.W$,
         variant: "text-xs/medium",
         color: "text-muted",
         children: n
     })
 }
 
-function b(e) {
-    var t, n;
+function A(e) {
     let {
-        rule: l,
-        onChangeText: a,
-        className: o
+        rule: t,
+        onChangeText: n,
+        className: l
     } = e, {
-        patterns: g,
-        valueError: b,
-        errors: x,
-        validatePatternsChanged: j,
-        validateEditingValueChanged: _
-    } = (0, d.A)(l, a), [O] = i.useState(() => ({
-        tags: g,
+        patterns: a,
+        valueError: o,
+        errors: m,
+        validatePatternsChanged: A,
+        validateEditingValueChanged: p
+    } = (0, c.A)(t, n), [f] = s.useState(() => ({
+        tags: a,
         value: "",
         selections: [],
         isSelecting: !1
-    })), v = i.useMemo(() => x.reduce((e, t) => {
+    })), j = s.useMemo(() => m.reduce((e, t) => {
         let {
             pattern: n,
-            message: r,
-            description: i,
+            message: i,
+            description: s,
             erroringCharacterLength: l = n.length,
-            erroringCharacterOffset: s = 0
+            erroringCharacterOffset: r = 0
         } = t;
-        return null == g.find(e => e === n) || (e[n] = {
+        return null == a.find(e => e === n) || (e[n] = {
             value: n,
-            message: null != i ? i : r,
+            message: s ?? i,
             erroringCharacterLength: l,
-            erroringCharacterOffset: s
+            erroringCharacterOffset: r
         }), e
-    }, {}), [x, g]), y = i.useCallback(e => {
-        j(e, g)
-    }, [j, g]), A = i.useCallback(e => {
-        _(e)
-    }, [_]);
-    return (0, r.jsxs)("div", {
-        className: s()(p.Qn, o),
-        children: [(0, r.jsx)(c.A, {
+    }, {}), [m, a]), N = s.useCallback(e => {
+        A(e, a)
+    }, [A, a]), E = s.useCallback(e => {
+        p(e)
+    }, [p]);
+    return (0, i.jsxs)("div", {
+        className: r()(x.Qn, l),
+        children: [(0, i.jsx)(d.A, {
             placeholder: "^b(a|@)d$\nw(o|0)rd(s|$)",
-            initialValue: O,
-            onChangeTags: y,
-            onChangeNewTagValue: A,
-            tagErrors: v,
+            initialValue: f,
+            onChangeTags: N,
+            onChangeNewTagValue: E,
+            tagErrors: j,
             maxTags: u.qm
-        }), (0, r.jsx)(h, {
-            text: m.intl.format(m.t["PGC/AJ"], {
-                helpArticle: f
+        }), (0, i.jsx)(_, {
+            text: g.intl.format(g.t["PGC/AJ"], {
+                helpArticle: h
             }),
-            hasErrors: x.length > 0 || null != b,
-            errorText: null != (t = null == (n = x.find(e => {
+            hasErrors: m.length > 0 || null != o,
+            errorText: m.find(e => {
                 let {
                     pattern: t
                 } = e;
-                return t === d.B
-            })) ? void 0 : n.message) ? t : null == b ? void 0 : b.message
+                return t === c.B
+            })?.message ?? o?.message
         })]
     })
 }

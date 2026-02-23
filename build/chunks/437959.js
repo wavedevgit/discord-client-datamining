@@ -1,43 +1,39 @@
 /** chunk id: 437959, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => m
 });
-var r, i, l = n(311907),
-    a = n(506774),
-    s = n(73153),
-    o = n(785796);
-let c = "MaintenanceStore",
-    u = null,
-    d = null,
-    p = null;
-class m extends(i = l.Ay.Store) {
+var i = n(311907),
+    l = n(506774),
+    a = n(73153),
+    r = n(785796);
+let s = "MaintenanceStore",
+    o = null,
+    c = null,
+    d = null;
+class u extends i.Ay.Store {
+    static displayName = "MaintenanceStore";
     initialize() {
-        p = a.w.get(c)
+        d = l.w.get(s)
     }
     getIncident() {
-        return u
+        return o
     }
     getScheduledMaintenance() {
-        return null != d && d.id !== p ? d : null
+        return null != c && c.id !== d ? c : null
     }
-}(r = "displayName") in m ? Object.defineProperty(m, r, {
-    value: "MaintenanceStore",
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
-}) : m[r] = "MaintenanceStore";
-let f = new m(s.h, {
+}
+let m = new u(a.h, {
     CONNECTION_OPEN: function() {
-        u = null, o.A.checkScheduledMaintenances()
+        o = null, r.A.checkScheduledMaintenances()
     },
     STATUS_PAGE_INCIDENT: function(e) {
-        u = e.incident
+        o = e.incident
     },
     STATUS_PAGE_SCHEDULED_MAINTENANCE: function(e) {
-        d = e.maintenance
+        c = e.maintenance
     },
     STATUS_PAGE_SCHEDULED_MAINTENANCE_ACK: function() {
-        if (null == d) return !1;
-        p = d.id, a.w.set(c, p)
+        if (null == c) return !1;
+        d = c.id, l.w.set(s, d)
     }
 })

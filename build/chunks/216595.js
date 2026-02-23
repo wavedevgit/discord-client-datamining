@@ -1,81 +1,81 @@
 /** chunk id: 216595, original params: e,t,r (module,exports,require) **/
 r.d(t, {
-    A: () => _
+    A: () => A
 });
-var n = r(627968),
-    l = r(503698),
-    s = r.n(l),
+var s = r(627968),
+    n = r(503698),
+    l = r.n(n),
     a = r(934551),
     i = r(158954),
     o = r(311907),
-    c = r(397927),
-    u = r(47167),
+    u = r(397927),
+    c = r(47167),
     d = r(713654),
     h = r(598104),
-    f = r(263063),
-    p = r(71393),
-    g = r(985018),
-    S = r(348635);
-let E = {
+    _ = r(263063),
+    E = r(71393),
+    S = r(985018),
+    f = r(348635);
+let g = {
     top: 8,
     bottom: 8,
     left: -4,
     right: -4
 };
 
-function _(e) {
+function A(e) {
     let {
         channel: t,
         children: r
     } = e;
-    return (0, n.jsx)(i.vN3, {
-        offset: E,
-        children: (0, n.jsxs)("div", {
-            className: S.ZO,
+    return (0, s.jsx)(i.vN3, {
+        offset: g,
+        children: (0, s.jsxs)("div", {
+            className: f.ZO,
             "data-recents-channel": t.id,
-            children: [(0, n.jsx)(A, {
+            children: [(0, s.jsx)(p, {
                 channel: t
-            }), t.isPrivate() ? null : (0, n.jsx)(a.ChevronSmallRightIcon, {
+            }), t.isPrivate() ? null : (0, s.jsx)(a.ChevronSmallRightIcon, {
                 size: "xxs"
-            }), (0, n.jsx)(y, {
+            }), (0, s.jsx)(R, {
                 channel: t
             }), r]
         })
     })
 }
 
-function A(e) {
+function p(e) {
     let {
         channel: t
-    } = e, r = (0, o.bG)([p.A], () => p.A.getGuild(t.guild_id));
-    return null != r ? (0, n.jsx)(f.A, {
-        className: S.Kk,
+    } = e, r = (0, o.bG)([E.A], () => E.A.getGuild(t.guild_id));
+    return null != r ? (0, s.jsx)(_.A, {
+        className: f.Kk,
         guild: r,
-        size: f.A.Sizes.SMALLER,
+        size: _.A.Sizes.SMALLER,
         "aria-hidden": !0
-    }) : t.isGroupDM() ? (0, n.jsx)(h.A, {
+    }) : t.isGroupDM() ? (0, s.jsx)(h.A, {
         channel: t,
-        size: c._3J.SIZE_24
-    }) : (0, n.jsx)("div", {
-        className: s()(S.Kk, S.ro),
-        children: (0, n.jsx)(a.ChatIcon, {
+        size: u._3J.SIZE_24
+    }) : (0, s.jsx)("div", {
+        className: l()(f.Kk, f.ro),
+        children: (0, s.jsx)(a.ChatIcon, {
             size: "xxs"
         })
     })
 }
 
-function y(e) {
+function R(e) {
     let {
         channel: t
-    } = e, r = (0, o.bG)([p.A], () => p.A.getGuild(t.guild_id)), l = (0, u.Ay)(t, !1), s = (0, d.gU)(t, r), a = t.isPrivate() || null == s, i = t.isDM() ? g.intl.formatToPlainString(g.t.smD7XV, {
-        username: l
-    }) : l;
-    return (0, n.jsxs)("div", {
-        className: S.yP,
-        children: [a ? null : (0, n.jsx)(s, {
-            className: S.j1,
+    } = e, r = (0, o.bG)([E.A], () => E.A.getGuild(t.guild_id)), n = (0, c.Ay)(t, !1), l = (0, d.gU)(t, r), a = t.isPrivate() || null == l, i = t.isDM() ? S.intl.formatToPlainString(S.t.smD7XV, {
+        username: n
+    }) : n;
+    return (0, s.jsxs)("div", {
+        className: f.yP,
+        children: [a ? null : (0, s.jsx)(l, {
+            className: f.j1,
             size: "xxs"
-        }), (0, n.jsx)(c.Heading, {
+        }), (0, s.jsx)(u.Heading, {
             variant: "text-md/semibold",
             color: "text-default",
             children: i

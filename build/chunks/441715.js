@@ -1,48 +1,47 @@
-/** chunk id: 441715, original params: e,t,l (module,exports,require) **/
-l.d(t, {
-    $: () => a
+/** chunk id: 441715, original params: t,e,l (module,exports,require) **/
+l.d(e, {
+    $: () => o
 });
-var n = l(562465),
-    i = l(73153),
+var i = l(562465),
+    n = l(73153),
     r = l(549479),
-    o = l(652215);
-async function a(e) {
-    let t = r.A.getAllowedApplicationIds(e);
-    if (null !== t) return Promise.resolve(t);
-    if (r.A.isFetching(e)) return new Promise(t => {
+    s = l(652215);
+async function o(t) {
+    let e = r.A.getAllowedApplicationIds(t);
+    if (null !== e) return Promise.resolve(e);
+    if (r.A.isFetching(t)) return new Promise(e => {
         let l = () => {
-            let n = r.A.getAllowedApplicationIds(e);
-            null !== n && (r.A.removeChangeListener(l), t(n))
+            let i = r.A.getAllowedApplicationIds(t);
+            null !== i && (r.A.removeChangeListener(l), e(i))
         };
         r.A.addChangeListener(l)
     });
-    i.h.dispatch({
+    n.h.dispatch({
         type: "GUILD_SETTINGS_ONBOARDING_ALLOWED_APPLICATIONS_FETCH_START",
-        guildId: e
+        guildId: t
     });
     try {
-        var l;
-        let t = await n.Bo.get({
-            url: o.Rsh.GUILD_ONBOARDING_ALLOWED_APPLICATIONS(e),
+        let e = await i.Bo.get({
+            url: s.Rsh.GUILD_ONBOARDING_ALLOWED_APPLICATIONS(t),
             rejectWithError: !1
         });
-        if (t.ok && (null == (l = t.body) ? void 0 : l.application_ids)) {
-            let l = t.body.application_ids.map(e => String(e));
-            return i.h.dispatch({
+        if (e.ok && e.body?.application_ids) {
+            let l = e.body.application_ids.map(t => String(t));
+            return n.h.dispatch({
                 type: "GUILD_SETTINGS_ONBOARDING_ALLOWED_APPLICATIONS_FETCH_SUCCESS",
-                guildId: e,
+                guildId: t,
                 applicationIds: l
             }), l
         }
-        return i.h.dispatch({
+        return n.h.dispatch({
             type: "GUILD_SETTINGS_ONBOARDING_ALLOWED_APPLICATIONS_FETCH_SUCCESS",
-            guildId: e,
+            guildId: t,
             applicationIds: []
         }), []
-    } catch (t) {
-        return i.h.dispatch({
+    } catch (e) {
+        return n.h.dispatch({
             type: "GUILD_SETTINGS_ONBOARDING_ALLOWED_APPLICATIONS_FETCH_FAILURE",
-            guildId: e
+            guildId: t
         }), []
     }
 }

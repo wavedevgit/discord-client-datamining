@@ -13,13 +13,12 @@ var i = n(627968),
     c = n(477427),
     g = n(985018);
 let m = t => {
-    var e;
     let {
-        onClose: n,
-        channelId: m,
-        applicationId: p,
-        transitionState: h
-    } = t, v = (0, a.bG)([o.Ay], () => o.Ay.getChannelMuteConfig(null, m)), A = l.useMemo(() => (0, s.gv)().map(t => {
+        onClose: e,
+        channelId: n,
+        applicationId: m,
+        transitionState: p
+    } = t, h = (0, a.bG)([o.Ay], () => o.Ay.getChannelMuteConfig(null, n)), A = l.useMemo(() => (0, s.gv)().map(t => {
         let {
             label: e,
             value: n
@@ -30,20 +29,20 @@ let m = t => {
         }
     }), []);
     return (0, i.jsx)(r.Modal, {
-        transitionState: h,
-        onClose: n,
+        transitionState: p,
+        onClose: e,
         title: g.intl.string(g.t.NkwaBs),
         actions: [{
             variant: "primary",
             text: g.intl.string(g.t.cpT0Cq),
-            onClick: n
+            onClick: e
         }],
         children: (0, i.jsx)(u.z6M, {
             options: A,
             onChange: t => {
-                d.A.updateAppDMOverrideSettings(null, m, p, (0, s.pB)(t), c.fd.Muted)
+                d.A.updateAppDMOverrideSettings(null, n, m, (0, s.pB)(t), c.fd.Muted)
             },
-            value: null != (e = null == v ? void 0 : v.selected_time_window) ? e : void 0
+            value: h?.selected_time_window ?? void 0
         })
     })
 }

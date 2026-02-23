@@ -1,10 +1,10 @@
 /** chunk id: 980888, original params: t,e,s (module,exports,require) **/
 s.d(e, {
-    A: () => g
-}), s(321073), s(896048);
+    A: () => I
+}), s(321073);
 var l = s(627968),
-    n = s(64700),
-    a = s(311907),
+    a = s(64700),
+    n = s(311907),
     i = s(397927),
     r = s(466472),
     h = s(775228),
@@ -12,17 +12,12 @@ var l = s(627968),
     d = s(837921),
     u = s(985018),
     c = s(742898);
-
-function p(t, e, s) {
-    return e in t ? Object.defineProperty(t, e, {
-        value: s,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : t[e] = s, t
-}
-let A = "select";
-class I extends n.PureComponent {
+let p = "select";
+class A extends a.PureComponent {
+    state = {
+        newInstallationPath: null
+    };
+    fetchedMetadataPaths = new Set;
     fetchAllDirectoryMetadata() {
         let {
             installationPaths: t
@@ -63,8 +58,8 @@ class I extends n.PureComponent {
             value: e,
             label: this.renderLabel(e)
         }), s.push({
-            id: A,
-            value: A,
+            id: p,
+            value: p,
             label: u.intl.string(u.t["cL/rrq"])
         }), s
     }
@@ -82,6 +77,21 @@ class I extends n.PureComponent {
         } = this.props, l = null != e[t] && !1 === e[t].hasPermission;
         s(t, l || !this.hasEnoughDiskSpace(t))
     }
+    handleChange = t => {
+        t === p ? d.Ay.showOpenDialog(["openDirectory"]).then(t => {
+            if (null != t && t.length > 0) {
+                let e = t[0];
+                this.setState({
+                    newInstallationPath: null != this.props.installationPaths.find(t => {
+                        let {
+                            path: s
+                        } = t;
+                        return s === e
+                    }) ? null : e
+                }), this.sendChange(e)
+            }
+        }) : this.sendChange(t)
+    };
     renderError() {
         let {
             value: t,
@@ -125,27 +135,8 @@ class I extends n.PureComponent {
             }), this.renderError()]
         })
     }
-    constructor(...t) {
-        super(...t), p(this, "state", {
-            newInstallationPath: null
-        }), p(this, "fetchedMetadataPaths", new Set), p(this, "handleChange", t => {
-            t === A ? d.Ay.showOpenDialog(["openDirectory"]).then(t => {
-                if (null != t && t.length > 0) {
-                    let e = t[0];
-                    this.setState({
-                        newInstallationPath: null != this.props.installationPaths.find(t => {
-                            let {
-                                path: s
-                            } = t;
-                            return s === e
-                        }) ? null : e
-                    }), this.sendChange(e)
-                }
-            }) : this.sendChange(t)
-        })
-    }
 }
-let g = a.Ay.connectStores([h.A], () => ({
+let I = n.Ay.connectStores([h.A], () => ({
     installationPaths: h.A.installationPaths,
     installationPathsMetadata: h.A.installationPathsMetadata
-}))(I)
+}))(A)

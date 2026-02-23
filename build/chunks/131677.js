@@ -1,56 +1,53 @@
 /** chunk id: 131677, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => y
-}), n(896048);
-var r, l, i = n(311907),
+    A: () => _
+});
+var i = n(311907),
     s = n(73153),
-    a = n(95701),
-    o = n(583613),
-    c = n(734057),
-    u = n(222823),
-    d = n(309010),
-    p = n(645959);
-let h = [],
-    g = new Set;
+    l = n(95701),
+    r = n(583613),
+    a = n(734057),
+    o = n(222823),
+    c = n(309010),
+    d = n(645959);
+let u = [],
+    h = new Set;
 
-function f() {
-    let e = p.A.getPrivateChannelIds().filter(e => u.Ay.getMentionCount(e) > 0);
-    return e.length > 20 && (e.length = 20), !(0, o.in)(e, h) && (h = e, g = new Set(e), !0)
+function A() {
+    let e = d.default.getPrivateChannelIds().filter(e => o.Ay.getMentionCount(e) > 0);
+    return e.length > 20 && (e.length = 20), !(0, r.in)(e, u) && (u = e, h = new Set(e), !0)
 }
 
-function m() {
-    return f()
+function p() {
+    return A()
 }
 
-function b(e) {
+function g(e) {
     let {
         channelId: t
-    } = e, n = c.A.getChannel(t);
-    return null != n && !!(0, a.Gw)(n.type) && f()
+    } = e, n = a.A.getChannel(t);
+    return null != n && !!(0, l.Gw)(n.type) && A()
 }
-class A extends(r = i.Ay.Store) {
+class m extends i.Ay.Store {
+    static displayName = "PrivateChannelReadStateStore";
     initialize() {
-        this.waitFor(p.A, c.A, d.A, u.Ay)
+        this.waitFor(d.default, a.A, c.A, o.Ay)
     }
     getUnreadPrivateChannelIds() {
-        return h
+        return u
     }
-}(l = "displayName") in A ? Object.defineProperty(A, l, {
-    value: "PrivateChannelReadStateStore",
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
-}) : A[l] = "PrivateChannelReadStateStore";
-let y = new A(s.h, {
-    CONNECTION_OPEN: m,
-    OVERLAY_INITIALIZE: m,
-    MESSAGE_CREATE: b,
-    MESSAGE_ACK: b,
+}
+let _ = new m(s.h, {
+    CONNECTION_OPEN: p,
+    OVERLAY_INITIALIZE: p,
+    MESSAGE_CREATE: g,
+    MESSAGE_ACK: g,
     CHANNEL_SELECT: function(e) {
         let {
             channelId: t
-        } = e, n = c.A.getChannel(t);
-        return null != n && !!(0, a.Gw)(n.type) && f()
+        } = e, n = a.A.getChannel(t);
+        return null != n && !!(0, l.Gw)(n.type) && A()
     },
     CHANNEL_DELETE: function(e) {
         let {
@@ -58,19 +55,19 @@ let y = new A(s.h, {
                 id: t
             }
         } = e;
-        return !!g.has(t) && f()
+        return !!h.has(t) && A()
     },
     WINDOW_FOCUS: function() {
-        let e = c.A.getChannel(d.A.getChannelId());
-        return null != e && !!(0, a.Gw)(e.type) && f()
+        let e = a.A.getChannel(c.A.getChannelId());
+        return null != e && !!(0, l.Gw)(e.type) && A()
     },
     CHANNEL_CREATE: function(e) {
         let {
             channel: {
                 id: t
             }
-        } = e, n = c.A.getChannel(t);
-        return null != n && !!(0, a.Gw)(n.type) && f()
+        } = e, n = a.A.getChannel(t);
+        return null != n && !!(0, l.Gw)(n.type) && A()
     },
     CHANNEL_UPDATES: function(e) {
         let {
@@ -80,9 +77,9 @@ let y = new A(s.h, {
                 id: e
             }
             of t) {
-            let t = c.A.getChannel(e);
-            null != t && (0, a.Gw)(t.type) && (n = !0)
+            let t = a.A.getChannel(e);
+            null != t && (0, l.Gw)(t.type) && (n = !0)
         }
-        return !!n && f()
+        return !!n && A()
     }
 })

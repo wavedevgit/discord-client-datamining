@@ -1,31 +1,31 @@
 /** chunk id: 325087, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => u
+    A: () => c
 });
-var r = n(627968),
-    i = n(64700),
+var i = n(627968),
+    r = n(64700),
     l = n(342494),
     a = n(976860),
     s = n(652215),
     o = n(985018),
-    c = n(78701);
+    d = n(78701);
 
-function u(e) {
+function c(e) {
     let {
         onNavigateToQuestHome: t,
         onRender: n,
-        onRequestClose: u,
-        targetElementRef: d
-    } = e, p = i.useCallback(() => {
+        onRequestClose: c,
+        targetElementRef: u
+    } = e, A = r.useCallback(() => {
         t(), (0, a.pX)(s.BVt.QUEST_HOME_V2)
     }, [t]);
-    return i.useEffect(() => {
+    return r.useEffect(() => {
         n()
-    }, [n]), (0, r.jsx)(l.AM, {
+    }, [n]), (0, i.jsx)(l.AM, {
         actions: [{
             text: o.intl.string(o.t.facYnD),
             variant: "primary",
-            onClick: p
+            onClick: A
         }],
         align: "top",
         body: o.intl.string(o.t.o4NGXc),
@@ -35,12 +35,12 @@ function u(e) {
         gradientColor: "purple",
         graphic: {
             type: "image",
-            src: c.A
+            src: d.A
         },
-        onRequestClose: u,
+        onRequestClose: c,
         position: "right",
         size: "lg",
-        targetElementRef: d,
+        targetElementRef: u,
         title: o.intl.string(o.t.EDDchq)
     })
 }

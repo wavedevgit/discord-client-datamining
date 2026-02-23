@@ -1,30 +1,26 @@
 /** chunk id: 609276, original params: e,t,n (module,exports,require) **/
-let r, i, l;
+let i, r, l;
 n.d(t, {
-    A: () => p
-}), n(896048);
-var a, s, o = n(311907),
-    c = n(73153);
+    A: () => c
+});
+var a = n(311907),
+    s = n(73153);
 
-function u() {
-    i = {}, r = {}, l = new Set
+function o() {
+    r = {}, i = {}, l = new Set
 }
-u();
-class d extends(a = o.Ay.Store) {
+o();
+class d extends a.Ay.Store {
+    static displayName = "ApplicationStatisticsStore";
     getStatisticsForApplication(e) {
-        return r[e]
+        return i[e]
     }
     shouldFetchStatisticsForApplication(e) {
-        let t = i[e];
+        let t = r[e];
         return !l.has(e) && (null == t || Date.now() - t > 36e5)
     }
-}(s = "displayName") in d ? Object.defineProperty(d, s, {
-    value: "ApplicationStatisticsStore",
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
-}) : d[s] = "ApplicationStatisticsStore";
-let p = new d(c.h, {
+}
+let c = new d(s.h, {
     APPLICATION_ACTIVITY_STATISTICS_FETCH_START: function(e) {
         let {
             applicationId: t
@@ -42,7 +38,7 @@ let p = new d(c.h, {
             statistics: t,
             applicationId: n
         } = e;
-        i[n] = Date.now(), l.delete(n), r[n] = t
+        r[n] = Date.now(), l.delete(n), i[n] = t
     },
-    LOGOUT: u
+    LOGOUT: o
 })

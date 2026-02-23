@@ -1,39 +1,39 @@
 /** chunk id: 966851, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => c
-}), n(896048), n(733351);
-var r = n(627968),
-    i = n(64700),
+    A: () => d
+});
+var i = n(627968),
+    s = n(64700),
     l = n(856644),
-    s = n(69090),
+    r = n(69090),
     a = n(175284),
     o = n(512031);
 
-function c(e) {
+function d(e) {
     let {
         setEditRoleId: t,
         guild: n,
-        everyoneRole: c,
-        otherRoles: d,
+        everyoneRole: d,
+        otherRoles: c,
         setSelectedSection: u
-    } = e, [g, m] = i.useState(""), [p, f] = i.useState(o.p4), h = g.trim(), b = i.useMemo(() => d.filter(e => (0, l.Vh)(e, h)), [d, h]), x = i.useCallback(() => (0, r.jsx)(a.A, {
+    } = e, [m, g] = s.useState(""), [x, h] = s.useState(o.p4), _ = m.trim(), A = s.useMemo(() => c.filter(e => (0, l.Vh)(e, _)), [c, _]), p = s.useCallback(() => (0, i.jsx)(a.A, {
         guild: n,
-        everyoneRole: c,
-        filteredRoles: b,
+        everyoneRole: d,
+        filteredRoles: A,
         setEditRoleId: t,
-        query: g,
-        setQuery: m,
-        setHeaderHeight: f
-    }, "header"), [n, c, b, t, g]);
-    return (0, r.jsx)(s.A, {
+        query: m,
+        setQuery: g,
+        setHeaderHeight: h
+    }, "header"), [n, d, A, t, m]);
+    return (0, i.jsx)(r.A, {
         setEditRoleId: t,
         guild: n,
-        everyoneRole: c,
-        otherRoles: d,
+        everyoneRole: d,
+        otherRoles: c,
         setSelectedSection: u,
-        renderHeader: x,
-        headerHeight: p,
-        query: g
+        renderHeader: p,
+        headerHeight: x,
+        query: m
     })
 }

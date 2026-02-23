@@ -1,11 +1,11 @@
 /** chunk id: 187521, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => l
+    A: () => a
 });
-var r = n(203982),
-    i = n(652215);
-let l = {
+var i = n(203982),
+    r = n(652215);
+let a = {
     binds: ["mod+shift+b"],
     comboKeysBindGlobal: !0,
-    action: () => (r._.dispatch(i.jej.TOGGLE_SOUNDBOARD), !1)
+    action: () => (i._.dispatch(r.jej.TOGGLE_SOUNDBOARD), !1)
 }

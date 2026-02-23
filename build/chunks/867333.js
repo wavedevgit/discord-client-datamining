@@ -1,32 +1,32 @@
-/** chunk id: 867333, original params: e,t,n (module,exports,require) **/
-n.d(t, {
+/** chunk id: 867333, original params: e,t,a (module,exports,require) **/
+a.d(t, {
     A: () => o
 });
-var r = n(627968);
-n(64700);
-var l = n(503698),
-    i = n.n(l),
-    a = n(397927),
-    s = n(1305);
+var n = a(627968);
+a(64700);
+var i = a(503698),
+    s = a.n(i),
+    l = a(397927),
+    r = a(1305);
 
 function o(e) {
     let {
         loading: t,
-        children: n
+        children: a
     } = e;
-    return (0, r.jsxs)("div", {
-        className: s.kL,
-        children: [t ? (0, r.jsx)("div", {
-            className: s.dc,
-            children: (0, r.jsx)(a.y$y, {
-                className: s.u1,
-                type: a.y$y.Type.SPINNING_CIRCLE
+    return (0, n.jsxs)("div", {
+        className: r.kL,
+        children: [t ? (0, n.jsx)("div", {
+            className: r.dc,
+            children: (0, n.jsx)(l.y$y, {
+                className: r.u1,
+                type: l.y$y.Type.SPINNING_CIRCLE
             })
-        }) : null, (0, r.jsx)("div", {
-            className: i()({
-                [s.Lq]: t
+        }) : null, (0, n.jsx)("div", {
+            className: s()({
+                [r.Lq]: t
             }),
-            children: n
+            children: a
         })]
     })
 }

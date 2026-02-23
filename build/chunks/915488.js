@@ -2,9 +2,9 @@
 n.d(t, {
     a: () => s
 });
-var r = n(850992),
-    i = n(203982),
-    l = n(652215),
+var i = n(850992),
+    l = n(203982),
+    r = n(652215),
     a = n(698279);
 
 function s(e) {
@@ -12,8 +12,8 @@ function s(e) {
         stickerPack: t,
         stickerPickerCategories: n
     } = e;
-    i._.dispatchToLastSubscribed(l.jej.OPEN_EXPRESSION_PICKER, {
+    l._.dispatchToLastSubscribed(r.jej.OPEN_EXPRESSION_PICKER, {
         activeView: a.kx.STICKER
     });
-    let s = n.findIndex(e => e.id === t.id); - 1 !== s && r.bM.setActiveCategoryIndex(s)
+    let s = n.findIndex(e => e.id === t.id); - 1 !== s && i.bM.setActiveCategoryIndex(s)
 }

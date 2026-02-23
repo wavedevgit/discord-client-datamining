@@ -1,34 +1,34 @@
 /** chunk id: 406975, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    Ay: () => d,
-    O$: () => c,
-    Ur: () => a,
+    Ay: () => _,
+    O$: () => d,
+    Ur: () => l,
     hU: () => o
 });
-var r = n(955572),
-    i = n(775602),
-    l = n(652215);
+var i = n(955572),
+    r = n(775602),
+    a = n(652215);
 
 function s(e) {
-    return l.hH7.ZOOM_SCALES[Math.max(0, Math.min(l.hH7.ZOOM_SCALES.indexOf(i.A.zoom) + e, l.hH7.ZOOM_SCALES.length - 1))]
+    return a.hH7.ZOOM_SCALES[Math.max(0, Math.min(a.hH7.ZOOM_SCALES.indexOf(r.A.zoom) + e, a.hH7.ZOOM_SCALES.length - 1))]
 }
-let a = {
+let l = {
         binds: ["mod+plus"],
         comboKeysBindGlobal: !0,
-        action: () => ((0, r.Qp)(s(1)), !1)
+        action: () => ((0, i.Qp)(s(1)), !1)
     },
     o = {
         binds: ["mod+minus"],
         comboKeysBindGlobal: !0,
-        action: () => ((0, r.Qp)(s(-1)), !1)
+        action: () => ((0, i.Qp)(s(-1)), !1)
     },
-    c = {
+    d = {
         binds: ["mod+0"],
         comboKeysBindGlobal: !0,
-        action: () => ((0, r.Qp)(l.hH7.ZOOM_DEFAULT), !1)
+        action: () => ((0, i.Qp)(a.hH7.ZOOM_DEFAULT), !1)
     },
-    d = 21552 == n.j ? {
-        ZOOM_IN: a,
+    _ = 21552 == n.j ? {
+        ZOOM_IN: l,
         ZOOM_OUT: o,
-        ZOOM_RESET: c
+        ZOOM_RESET: d
     } : null

@@ -1,135 +1,113 @@
 /** chunk id: 993468, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     default: () => _
-}), n(801541), n(896048);
-var r = n(627968),
-    i = n(64700),
-    s = n(284009),
-    a = n.n(s),
+}), n(801541);
+var i = n(627968),
+    s = n(64700),
+    r = n(284009),
+    a = n.n(r),
     o = n(889137),
     l = n(158954),
     u = n(311907),
     d = n(397927),
     g = n(631670),
-    c = n(963334),
-    m = n(781436),
-    E = n(836602),
+    E = n(546727),
+    m = n(975169),
+    c = n(836602),
     h = n(287809),
-    f = n(927578),
-    S = n(652215),
-    v = n(985018),
-    O = n(197266);
+    S = n(927578),
+    A = n(652215),
+    R = n(985018),
+    U = n(197266);
 
 function _(e) {
-    var t, n;
+    var t;
     let {
-        transitionState: s,
-        onClose: _
-    } = e, y = (0, u.bG)([h.default], () => {
+        transitionState: n,
+        onClose: r
+    } = e, _ = (0, u.bG)([h.default], () => {
         let e = h.default.getCurrentUser();
         return a()(null != e, "ChangeUsernameModal: currentUser cannot be undefined"), e
-    }), T = i.useMemo(() => f.Ay.canEditDiscriminator(y) && !y.hasUniqueUsername(), [y]), [p, A] = i.useState(y.username), [R, L] = i.useState(y.discriminator), [b, P] = i.useState(""), [C, M] = i.useState(!1), U = (0, u.bG)([E.A], () => E.A.getErrors()), w = y.hasUniqueUsername(), k = (0, m.i)(p, w, !1, y.username), I = i.useRef(null), N = i.useMemo(() => {
-        var e, t, n;
-        return null != (e = null == U || null == (t = U.username) ? void 0 : t[0]) ? e : null == U || null == (n = U.discriminator) ? void 0 : n[0]
-    }, [U]);
-    i.useEffect(() => {
-        if (s === d.ip4.ENTERED) {
-            var e;
-            null == (e = I.current) || e.focus()
-        }
-    }, [s]);
-    let G = R !== y.discriminator;
-    async function x(e) {
+    }), T = s.useMemo(() => S.Ay.canEditDiscriminator(_) && !_.hasUniqueUsername(), [_]), [v, f] = s.useState(_.username), [N, p] = s.useState(_.discriminator), [I, L] = s.useState(""), [y, M] = s.useState(!1), O = (0, u.bG)([c.A], () => c.A.getErrors()), w = _.hasUniqueUsername(), k = (0, m.i)(v, w, !1, _.username), C = s.useRef(null), b = s.useMemo(() => O?.username?.[0] ?? O?.discriminator?.[0], [O]);
+    s.useEffect(() => {
+        n === d.ip4.ENTERED && C.current?.focus()
+    }, [n]);
+    let x = N !== _.discriminator;
+    async function P(e) {
         e.preventDefault(), M(!0);
-        let t = await (0, g.yu)({
-            username: p,
-            discriminator: T ? R : void 0,
-            password: b
+        let t = await (0, g._L)({
+            username: v,
+            discriminator: T ? N : void 0,
+            password: I
         });
-        M(!1), (null == t ? void 0 : t.ok) && _()
+        M(!1), t?.ok && r()
     }
-    return (0, r.jsx)("form", {
-        onSubmit: x,
-        children: (0, r.jsx)(l.Modal, {
-            onClose: _,
-            transitionState: s,
-            title: v.intl.string(v.t.m5or54),
-            subtitle: v.intl.string(v.t.SLJvy0),
+    return (0, i.jsx)("form", {
+        onSubmit: P,
+        children: (0, i.jsx)(l.Modal, {
+            onClose: r,
+            transitionState: n,
+            title: R.intl.string(R.t.m5or54),
+            subtitle: R.intl.string(R.t.SLJvy0),
             actions: [{
                 variant: "secondary",
-                text: v.intl.string(v.t["ETE/oC"]),
-                onClick: _
+                text: R.intl.string(R.t["ETE/oC"]),
+                onClick: r
             }, {
                 variant: "primary",
-                text: v.intl.string(v.t.i4jeWR),
+                text: R.intl.string(R.t.i4jeWR),
                 type: "submit",
-                loading: C
+                loading: y
             }],
-            children: (0, r.jsxs)(d.BJc, {
+            children: (0, i.jsxs)(d.BJc, {
                 gap: 16,
-                children: [(0, r.jsxs)("div", {
-                    children: [(0, r.jsxs)(d.BJc, {
+                children: [(0, i.jsxs)("div", {
+                    children: [(0, i.jsxs)(d.BJc, {
                         direction: "horizontal",
                         gap: 4,
-                        children: [(0, r.jsx)(d.ksK, function(e) {
-                            for (var t = 1; t < arguments.length; t++) {
-                                var n = null != arguments[t] ? arguments[t] : {},
-                                    r = Object.keys(n);
-                                "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                                    return Object.getOwnPropertyDescriptor(n, e).enumerable
-                                }))), r.forEach(function(t) {
-                                    var r;
-                                    r = n[t], t in e ? Object.defineProperty(e, t, {
-                                        value: r,
-                                        enumerable: !0,
-                                        configurable: !0,
-                                        writable: !0
-                                    }) : e[t] = r
-                                })
-                            }
-                            return e
-                        }({
-                            label: v.intl.string(v.t.TWzdWj),
-                            error: N,
+                        children: [(0, i.jsx)(d.ksK, {
+                            label: R.intl.string(R.t.TWzdWj),
+                            error: b,
                             name: "username",
-                            value: p,
-                            maxLength: S.d0r,
-                            onChange: A,
-                            inputRef: I,
-                            fullWidth: !0
-                        }, (n = y.hasUniqueUsername(), (0, o.YW)(k).with({
-                            type: c.q.ERROR,
-                            message: o.P.select()
-                        }, e => ({
-                            error: e
-                        })).with({
-                            type: c.q.AVAILABLE,
-                            message: o.P.select()
-                        }, e => ({
-                            successMessage: e
-                        })).otherwise(() => n ? {
-                            helperText: v.intl.string(v.t.z7c4bP)
-                        } : {})))), !y.hasUniqueUsername() && (0, r.jsx)(d.ksK, {
+                            value: v,
+                            maxLength: A.d0r,
+                            onChange: f,
+                            inputRef: C,
+                            fullWidth: !0,
+                            ...(t = _.hasUniqueUsername(), (0, o.YW)(k).with({
+                                type: E.q.ERROR,
+                                message: o.P.select()
+                            }, e => ({
+                                error: e
+                            })).with({
+                                type: E.q.AVAILABLE,
+                                message: o.P.select()
+                            }, e => ({
+                                successMessage: e
+                            })).otherwise(() => t ? {
+                                helperText: R.intl.string(R.t.z7c4bP)
+                            } : {}))
+                        }), !_.hasUniqueUsername() && (0, i.jsx)(d.ksK, {
                             name: "discriminator",
-                            "aria-label": v.intl.string(v.t.ozumaN),
+                            "aria-label": R.intl.string(R.t.ozumaN),
                             maxLength: 4,
-                            value: R,
-                            onChange: L,
+                            value: N,
+                            onChange: p,
                             disabled: !T,
                             leading: "#"
                         })]
-                    }), G ? (0, r.jsx)(d.Text, {
+                    }), x ? (0, i.jsx)(d.Text, {
                         variant: "text-xs/normal",
                         color: "text-default",
-                        className: O.Z,
-                        children: v.intl.string(v.t.mConUX)
+                        className: U.Z,
+                        children: R.intl.string(R.t.mConUX)
                     }) : null]
-                }), (0, r.jsx)(d.ksK, {
-                    label: v.intl.string(v.t.TmdnJ3),
-                    error: null == U || null == (t = U.password) ? void 0 : t[0],
+                }), (0, i.jsx)(d.ksK, {
+                    label: R.intl.string(R.t.TmdnJ3),
+                    error: O?.password?.[0],
                     type: "password",
-                    value: b,
-                    onChange: P
+                    value: I,
+                    onChange: L
                 })]
             })
         })

@@ -1,138 +1,134 @@
-/** chunk id: 752118, original params: l,t,e (module,exports,require) **/
-e.d(t, {
-    default: () => E
-}), e(896048);
-var n = e(627968),
-    r = e(64700),
-    i = e(311907),
-    a = e(562465),
-    s = e(732955),
-    u = e(397927),
-    c = e(964486),
-    d = e(504049),
-    o = e(961350),
-    x = e(696451),
-    A = e(71393),
-    N = e(576705),
-    v = e(287809),
-    g = e(954571),
-    k = e(427262),
-    m = e(652215),
-    h = e(985018),
-    p = e(940892);
+/** chunk id: 752118, original params: t,e,n (module,exports,require) **/
+n.d(e, {
+    default: () => y
+});
+var l = n(627968),
+    r = n(64700),
+    a = n(311907),
+    i = n(562465),
+    s = n(732955),
+    c = n(397927),
+    u = n(964486),
+    d = n(504049),
+    o = n(961350),
+    x = n(696451),
+    A = n(71393),
+    N = n(576705),
+    g = n(287809),
+    k = n(954571),
+    m = n(427262),
+    h = n(652215),
+    p = n(985018),
+    C = n(940892);
 
-function C(l) {
+function E(t) {
     let {
-        disabled: t = !1,
-        user: e,
-        setNickname: i,
-        nickname: a,
+        disabled: e = !1,
+        user: n,
+        setNickname: a,
+        nickname: i,
         error: s,
-        hasNick: c
-    } = l, d = r.useRef(null), x = r.useCallback(() => {
-        var l;
-        i(""), null == (l = d.current) || l.focus()
-    }, [i]);
-    return (0, n.jsxs)(n.Fragment, {
-        children: [t || null == e || e.id === o.default.getId() ? null : (0, n.jsx)(u.ZpM, {
-            type: u.ZpM.Types.WARNING,
-            className: p.Nr,
-            children: (0, n.jsx)(u.Text, {
+        hasNick: u
+    } = t, d = r.useRef(null), x = r.useCallback(() => {
+        a(""), d.current?.focus()
+    }, [a]);
+    return (0, l.jsxs)(l.Fragment, {
+        children: [e || null == n || n.id === o.default.getId() ? null : (0, l.jsx)(c.ZpM, {
+            type: c.ZpM.Types.WARNING,
+            className: C.Nr,
+            children: (0, l.jsx)(c.Text, {
                 variant: "text-md/normal",
-                children: h.intl.string(h.t.dq3At2)
+                children: p.intl.string(p.t.dq3At2)
             })
-        }), (0, n.jsx)(u.ksK, {
-            label: t ? h.intl.string(h.t.EyA4q5) : h.intl.string(h.t["621LJD"]),
-            disabled: t,
+        }), (0, l.jsx)(c.ksK, {
+            label: e ? p.intl.string(p.t.EyA4q5) : p.intl.string(p.t["621LJD"]),
+            disabled: e,
             inputRef: d,
-            maxLength: m.d0r,
-            value: a,
-            placeholder: k.Ay.getName(e),
-            onChange: i,
+            maxLength: h.d0r,
+            value: i,
+            placeholder: m.Ay.getName(n),
+            onChange: a,
             autoFocus: !0
-        }), null != s ? (0, n.jsx)(u.Text, {
+        }), null != s ? (0, l.jsx)(c.Text, {
             variant: "text-xs/normal",
             color: "text-feedback-critical",
-            className: p.wt,
+            className: C.wt,
             children: s
-        }) : null, c && !t ? (0, n.jsx)("div", {
-            className: p.cL,
-            children: (0, n.jsx)(u.QWc, {
-                text: h.intl.string(h.t.aE02Rz),
+        }) : null, u && !e ? (0, l.jsx)("div", {
+            className: C.cL,
+            children: (0, l.jsx)(c.QWc, {
+                text: p.intl.string(p.t.aE02Rz),
                 onClick: x,
                 textVariant: "text-sm/normal"
             })
         }) : null]
     })
 }
-let E = function(l) {
-    var t;
+let y = function(t) {
     let {
         transitionState: e,
-        user: u,
-        guildId: o,
-        onClose: k,
-        analyticsSource: p,
-        analyticsLocations: E
-    } = l, y = (0, i.bG)([x.Ay], () => null != o ? x.Ay.getMember(o, u.id) : null), b = (0, i.bG)([N.A, v.default, A.A], () => {
-        var l;
-        let t = A.A.getGuild(o);
-        return null != t && ((null == (l = v.default.getCurrentUser()) ? void 0 : l.id) === u.id ? N.A.can(m.xBc.CHANGE_NICKNAME, t) || N.A.can(m.xBc.MANAGE_NICKNAMES, t) : N.A.canManageUser(m.xBc.MANAGE_NICKNAMES, u.id, t))
-    }), [f, _] = r.useState(!1), [M, j] = r.useState(null != (t = null == y ? void 0 : y.nick) ? t : ""), [G, I] = r.useState({});
-    (0, c.Ay)(() => {
-        g.default.track(m.HAw.OPEN_MODAL, {
+        user: n,
+        guildId: c,
+        onClose: o,
+        analyticsSource: m,
+        analyticsLocations: C
+    } = t, y = (0, a.bG)([x.Ay], () => null != c ? x.Ay.getMember(c, n.id) : null), b = (0, a.bG)([N.A, g.default, A.A], () => {
+        let t = A.A.getGuild(c);
+        return null != t && (g.default.getCurrentUser()?.id === n.id ? N.A.can(h.xBc.CHANGE_NICKNAME, t) || N.A.can(h.xBc.MANAGE_NICKNAMES, t) : N.A.canManageUser(h.xBc.MANAGE_NICKNAMES, n.id, t))
+    }), [f, _] = r.useState(!1), [M, j] = r.useState(y?.nick ?? ""), [v, G] = r.useState({});
+    (0, u.Ay)(() => {
+        k.default.track(h.HAw.OPEN_MODAL, {
             type: "Change Server Identity",
-            location: m.liQ.GUILD_CHANNEL,
-            source: p
+            location: h.liQ.GUILD_CHANNEL,
+            source: m
         })
     });
-    let S = (0, d.$9)(o, {
-            location: null == E ? void 0 : E[0],
-            targetUserId: u.id
+    let I = (0, d.$9)(c, {
+            location: C?.[0],
+            targetUserId: n.id
         }),
-        L = r.useCallback(async l => {
-            var t, e, n, r, i, s, c, x, A;
-            l.preventDefault();
-            let N = null;
-            if (M !== (null != (t = null == y ? void 0 : y.nick) ? t : "") && ((N = null != N ? N : {}).nick = M), null == N) return void k();
+        S = r.useCallback(async t => {
+            t.preventDefault();
+            let e = null;
+            if (M !== (y?.nick ?? "") && ((e = e ?? {}).nick = M), null == e) return void o();
             try {
-                _(!0), await a.Bo.patch({
-                    url: m.Rsh.GUILD_MEMBER(o, u.id),
-                    body: N,
+                _(!0), await i.Bo.patch({
+                    url: h.Rsh.GUILD_MEMBER(c, n.id),
+                    body: e,
                     rejectWithError: !1
-                }), S(d.Nj.CHANGE_NICKNAME), k()
-            } catch (a) {
-                let l;
+                }), I(d.Nj.CHANGE_NICKNAME), o()
+            } catch (n) {
+                let t;
                 _(!1);
-                let t = null != (e = null == (n = a.body) ? void 0 : n.errors) ? e : null;
-                (null == t ? void 0 : t.nick) != null ? l = (null == (s = t.nick) || null == (i = s._errors) || null == (r = i[0]) ? void 0 : r.message) || h.intl.string(h.t.xex86n) : (null == t ? void 0 : t.username) != null && (l = (null == (A = t.username) || null == (x = A._errors) || null == (c = x[0]) ? void 0 : c.message) || h.intl.string(h.t.xex86n)), I({
-                    nick: l
+                let e = n.body?.errors ?? null;
+                e?.nick != null ? t = e.nick?._errors?.[0]?.message || p.intl.string(p.t.xex86n) : e?.username != null && (t = e.username?._errors?.[0]?.message || p.intl.string(p.t.xex86n)), G({
+                    nick: t
                 })
             }
-        }, [o, M, k, u, y, S]);
-    return (0, n.jsx)("form", {
-        onSubmit: L,
-        children: (0, n.jsx)(s.aFV, {
+        }, [c, M, o, n, y, I]);
+    return (0, l.jsx)("form", {
+        onSubmit: S,
+        children: (0, l.jsx)(s.aFV, {
             transitionState: e,
-            onClose: k,
-            title: h.intl.string(h.t.dilOF6),
+            onClose: o,
+            title: p.intl.string(p.t.dilOF6),
             actions: [{
-                text: h.intl.string(h.t["ETE/oC"]),
-                onClick: k,
+                text: p.intl.string(p.t["ETE/oC"]),
+                onClick: o,
                 variant: "secondary"
             }, {
-                text: h.intl.string(h.t["R3BPH+"]),
+                text: p.intl.string(p.t["R3BPH+"]),
                 variant: "primary",
                 type: "submit",
                 disabled: f
             }],
-            children: (0, n.jsx)(C, {
+            children: (0, l.jsx)(E, {
                 disabled: !b,
-                user: u,
-                error: G.nick,
+                user: n,
+                error: v.nick,
                 nickname: M,
                 setNickname: j,
-                hasNick: (null == y ? void 0 : y.nick) != null
+                hasNick: y?.nick != null
             })
         })
     })

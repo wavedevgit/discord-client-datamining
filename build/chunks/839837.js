@@ -1,31 +1,30 @@
 /** chunk id: 839837, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => c
+    A: () => d
 });
-var r = n(64700),
-    i = n(262828),
+var i = n(64700),
+    s = n(262828),
     l = n(105917),
-    s = n(969379),
+    r = n(969379),
     a = n(705751),
     o = n(311750);
 
-function c(e) {
-    var t;
+function d(e) {
     let {
-        application: n,
-        loading: c
-    } = (0, i.A)(e, a.S7.GUILD_ROLE_SUBSCRIPTIONS), {
+        application: t,
+        loading: n
+    } = (0, s.A)(e, a.S7.GUILD_ROLE_SUBSCRIPTIONS), {
         payoutsByPeriod: d,
-        loading: u
-    } = (0, s.A)(null == n ? void 0 : n.id, {
+        loading: c
+    } = (0, r.A)(t?.id, {
         groupType: o.x1.GUILD_PRODUCT,
-        teamId: null == n || null == (t = n.team) ? void 0 : t.id
+        teamId: t?.team?.id
     }), {
-        currentPeriod: g,
+        currentPeriod: u,
         previousPeriods: m,
-        metrics: p
-    } = r.useMemo(() => {
+        metrics: g
+    } = i.useMemo(() => {
         let {
             currentPeriod: e,
             previousPeriods: t
@@ -37,11 +36,11 @@ function c(e) {
         }
     }, [d]);
     return {
-        loading: c || u,
+        loading: n || c,
         payoutsByPeriod: d,
-        currentPeriod: g,
+        currentPeriod: u,
         previousPeriods: m,
-        metrics: p,
-        application: n
+        metrics: g,
+        application: t
     }
 }

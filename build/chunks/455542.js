@@ -1,43 +1,42 @@
-/** chunk id: 455542, original params: e,t,n (module,exports,require) **/
-n.d(t, {
+/** chunk id: 455542, original params: e,t,a (module,exports,require) **/
+a.d(t, {
     A: () => c
 });
-var r = n(627968),
-    l = n(64700),
-    i = n(397927),
-    a = n(168186);
-n(827669);
-var s = n(985018),
-    o = n(380964);
+var n = a(627968),
+    i = a(64700),
+    s = a(397927),
+    l = a(168186);
+a(827669);
+var r = a(985018),
+    o = a(380964);
 
 function c(e) {
     let {
         application: t
-    } = e, n = l.useMemo(() => {
-        var e;
-        let n = null == (e = t.directory_entry) ? void 0 : e.popular_application_commands;
-        return null != n ? n.map(e => (0, a.Oe)({
+    } = e, a = i.useMemo(() => {
+        let e = t.directory_entry?.popular_application_commands;
+        return null != e ? e.map(e => (0, l.Oe)({
             rootCommand: e,
             command: e,
             applicationId: e.application_id
         })) : []
     }, [t]);
-    return 0 === n.length ? null : (0, r.jsxs)("div", {
+    return 0 === a.length ? null : (0, n.jsxs)("div", {
         className: o.hd,
-        children: [(0, r.jsx)(i.Heading, {
+        children: [(0, n.jsx)(s.Heading, {
             variant: "heading-lg/semibold",
             color: "text-strong",
-            children: s.intl.string(s.t.swIgTL)
-        }), (0, r.jsx)("div", {
+            children: r.intl.string(r.t.swIgTL)
+        }), (0, n.jsx)("div", {
             className: o.hQ,
-            children: n.map(e => (0, r.jsxs)("div", {
+            children: a.map(e => (0, n.jsxs)("div", {
                 className: o.dO,
-                children: [(0, r.jsxs)(i.Text, {
+                children: [(0, n.jsxs)(s.Text, {
                     className: o.p6,
                     variant: "code",
                     color: "text-strong",
                     children: ["/", e.displayName]
-                }), (0, r.jsx)(i.Text, {
+                }), (0, n.jsx)(s.Text, {
                     variant: "text-md/normal",
                     color: "text-default",
                     children: e.displayDescription

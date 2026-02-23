@@ -1,28 +1,29 @@
 /** chunk id: 576456, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => u
-}), n(896048);
-var r = n(627968),
-    l = n(64700),
-    i = n(503698),
-    s = n.n(i),
+    A: () => d
+});
+var i = n(627968),
+    s = n(64700),
+    l = n(503698),
+    r = n.n(l),
     a = n(397927),
     o = n(985018),
     c = n(647586);
 
-function u(e) {
+function d(e) {
     let {
         className: t,
         onJump: n
-    } = e, [i, u] = l.useState(!1);
-    return (0, r.jsx)(a.DUT, {
-        className: s()(c.n, t),
+    } = e, [l, d] = s.useState(!1);
+    return (0, i.jsx)(a.DUT, {
+        className: r()(c.n, t),
         onClick: e => {
-            u(!0), n(e)
+            d(!0), n(e)
         },
-        children: i ? (0, r.jsx)(a.y$y, {
+        children: l ? (0, i.jsx)(a.y$y, {
             type: a.y$y.Type.PULSING_ELLIPSIS
-        }) : (0, r.jsx)(a.Text, {
+        }) : (0, i.jsx)(a.Text, {
             variant: "text-xs/medium",
             className: c.Q,
             children: o.intl.string(o.t.k5WiPf)

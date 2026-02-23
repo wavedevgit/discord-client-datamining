@@ -3,11 +3,11 @@
 n.d(t, {
     A: () => o
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(397927),
+var s = n(397927),
     l = n(239705),
-    s = n(985018),
+    r = n(985018),
     a = n(86181);
 
 function o(e) {
@@ -15,47 +15,47 @@ function o(e) {
         action: t,
         triggerType: n,
         toggled: o,
-        onToggleAction: c
-    } = e, d = e => () => c(e), u = (0, l.x)(t.type, t, n);
+        onToggleAction: d
+    } = e, c = e => () => d(e), u = (0, l.x)(t.type, t, n);
     if (null == u) return null;
     let {
-        headerText: g,
-        descriptionText: m,
-        icon: p
+        headerText: m,
+        descriptionText: g,
+        icon: x
     } = u;
-    return (0, r.jsxs)("div", {
+    return (0, i.jsxs)("div", {
         className: a.Ik,
-        children: [(0, r.jsx)("div", {
+        children: [(0, i.jsx)("div", {
             className: a.TV,
-            children: (0, r.jsx)(p, {
+            children: (0, i.jsx)(x, {
                 size: "custom",
                 color: "currentColor",
                 className: a.gE
             })
-        }), (0, r.jsxs)("div", {
+        }), (0, i.jsxs)("div", {
             className: a.xj,
-            children: [(0, r.jsx)(i.Heading, {
+            children: [(0, i.jsx)(s.Heading, {
                 variant: "heading-sm/semibold",
-                children: g
-            }), (0, r.jsx)(i.Text, {
+                children: m
+            }), (0, i.jsx)(s.Text, {
                 color: "interactive-text-default",
                 variant: "text-xs/medium",
-                children: m
-            }), o ? (0, r.jsxs)(i.Text, {
+                children: g
+            }), o ? (0, i.jsxs)(s.Text, {
                 color: "text-muted",
                 variant: "text-xs/medium",
-                children: [s.intl.string(s.t.Oa9oWJ), (0, r.jsx)(i.DUT, {
-                    onClick: d(!0),
+                children: [r.intl.string(r.t.Oa9oWJ), (0, i.jsx)(s.DUT, {
+                    onClick: c(!0),
                     className: a._2,
                     tag: "span",
                     role: "link",
-                    children: s.intl.string(s.t.QupmYY)
+                    children: r.intl.string(r.t.QupmYY)
                 })]
             }) : null]
-        }), (0, r.jsx)("div", {
-            children: (0, r.jsx)(i.DUT, {
-                onClick: u.isEditable ? d(!1) : void 0,
-                children: (0, r.jsx)(i.P7L, {
+        }), (0, i.jsx)("div", {
+            children: (0, i.jsx)(s.DUT, {
+                onClick: u.isEditable ? c(!1) : void 0,
+                children: (0, i.jsx)(s.P7L, {
                     checked: o,
                     disabled: !u.isEditable
                 })

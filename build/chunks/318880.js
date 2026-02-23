@@ -7,5 +7,6 @@ e.exports = {
     Bc: "friend_bbd192",
     YW: "match_bbd192",
     xK: "discordTag_bbd192",
-    oz: "friendSelected_bbd192"
+    oz: "friendSelected_bbd192",
+    ch: "staffOverrideCheckbox_bbd192"
 }

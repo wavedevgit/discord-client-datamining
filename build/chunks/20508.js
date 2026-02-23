@@ -1,63 +1,32 @@
-/** chunk id: 20508, original params: e,t,r (module,exports,require) **/
-r.d(t, {
-    default: () => c
+/** chunk id: 20508, original params: t,a,e (module,exports,require) **/
+e.d(a, {
+    default: () => m
 });
-var n = r(627968),
-    l = r(64700),
-    o = r(158954),
-    a = r(997509),
-    i = r(652215),
-    u = r(985018);
+var i = e(627968),
+    n = e(64700),
+    r = e(158954),
+    s = e(997509),
+    l = e(652215),
+    u = e(985018);
 
-function c(e) {
+function m(t) {
     let {
-        guild: t
-    } = e, r = function(e, t) {
-        if (null == e) return {};
-        var r, n, l, o = {};
-        if ("u" > typeof Reflect && Reflect.ownKeys) {
-            for (l = 0, r = Reflect.ownKeys(e); l < r.length; l++) n = r[l], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n]);
-            return o
-        }
-        if (o = function(e, t) {
-                if (null == e) return {};
-                var r, n, l = {},
-                    o = Object.getOwnPropertyNames(e);
-                for (n = 0; n < o.length; n++) r = o[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
-                return l
-            }(e, t), Object.getOwnPropertySymbols)
-            for (l = 0, r = Object.getOwnPropertySymbols(e); l < r.length; l++) n = r[l], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n]);
-        return o
-    }(e, ["guild"]), c = t.id, f = l.useCallback(() => {
-        a.A.leaveGuild(c, !0)
-    }, [c]);
-    return (0, n.jsx)(o.ConfirmModal, function(e) {
-        for (var t = 1; t < arguments.length; t++) {
-            var r = null != arguments[t] ? arguments[t] : {},
-                n = Object.keys(r);
-            "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-                return Object.getOwnPropertyDescriptor(r, e).enumerable
-            }))), n.forEach(function(t) {
-                var n;
-                n = r[t], t in e ? Object.defineProperty(e, t, {
-                    value: n,
-                    enumerable: !0,
-                    configurable: !0,
-                    writable: !0
-                }) : e[t] = n
-            })
-        }
-        return e
-    }({
+        guild: a,
+        ...e
+    } = t, m = a.id, o = n.useCallback(() => {
+        s.A.leaveGuild(m, !0)
+    }, [m]);
+    return (0, i.jsx)(r.ConfirmModal, {
         title: u.intl.formatToPlainString(u.t["1GX6P/"], {
-            name: t.name
+            name: a.name
         }),
-        subtitle: t.features.has(i.GuildFeatures.HUB) ? u.intl.format(u.t.ZHTXVD, {
-            name: t.name
+        subtitle: a.features.has(l.GuildFeatures.HUB) ? u.intl.format(u.t.ZHTXVD, {
+            name: a.name
         }) : u.intl.format(u.t.ZEXC0r, {
-            name: t.name
+            name: a.name
         }),
-        confirmText: t.features.has(i.GuildFeatures.HUB) ? u.intl.string(u.t.Dv8gFT) : u.intl.string(u.t.J2TBi3),
-        onConfirm: f
-    }, r))
+        confirmText: a.features.has(l.GuildFeatures.HUB) ? u.intl.string(u.t.Dv8gFT) : u.intl.string(u.t.J2TBi3),
+        onConfirm: o,
+        ...e
+    })
 }

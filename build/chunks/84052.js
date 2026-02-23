@@ -1,30 +1,31 @@
 /** chunk id: 84052, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => d,
-    v: () => u
+    A: () => u,
+    v: () => d
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var l = n(503698),
-    i = n.n(l),
-    s = n(827734),
+var s = n(503698),
+    l = n.n(s),
+    r = n(827734),
     a = n(35275),
     o = n(486218),
     c = n(728444);
 
-function u(e) {
+function d(e) {
     return e
 }
 
-function d(e) {
+function u(e) {
     let {
         locked: t
     } = e;
-    return (0, r.jsx)("div", {
-        className: i()(c.Xs, o.U),
-        children: (0, r.jsx)(a.A, {
+    return (0, i.jsx)("div", {
+        className: l()(c.Xs, o.U),
+        children: (0, i.jsx)(a.A, {
             className: c.gE,
-            color: t ? s.A.colors.CREATOR_REVENUE_LOCKED_CHANNEL_ICON.css : void 0
+            color: t ? r.A.colors.CREATOR_REVENUE_LOCKED_CHANNEL_ICON.css : void 0
         })
     })
 }

@@ -1,89 +1,89 @@
-/** chunk id: 879164, original params: e,t,l (module,exports,require) **/
-l.d(t, {
-    _: () => g
-}), l(228524);
-var n = l(627968);
-l(64700);
-var r = l(990078),
-    s = l(397927),
-    a = l(87719),
-    o = l(857586),
-    i = l(757036),
-    c = l(954571),
-    d = l(652215),
-    u = l(788868),
-    m = l(927961),
-    p = l(985018),
-    f = l(127134);
+/** chunk id: 879164, original params: e,t,s (module,exports,require) **/
+s.d(t, {
+    _: () => h
+});
+var l = s(627968);
+s(64700);
+var a = s(990078),
+    n = s(397927),
+    i = s(87719),
+    r = s(857586),
+    o = s(757036),
+    d = s(954571),
+    c = s(652215),
+    u = s(788868),
+    m = s(927961),
+    _ = s(985018),
+    x = s(127134);
 
-function g(e) {
+function h(e) {
     let {
         onApply: t,
-        onSurpriseMe: l,
-        onClose: g,
-        canApply: _
-    } = e, x = (0, i.L)(u.PremiumTypes.TIER_2), b = (0, n.jsx)(s.Button, {
+        onSurpriseMe: s,
+        onClose: h,
+        canApply: p
+    } = e, g = (0, o.L)(u.PremiumTypes.TIER_2), f = (0, l.jsx)(n.Button, {
         variant: "secondary",
         size: "md",
-        onClick: l,
+        onClick: s,
         icon: {
             type: "rive",
-            asset: s.mdx,
+            asset: n.mdx,
             riveProps: {
                 dataBinding: {
-                    fill: s.LU0.colors.ICON_STRONG
+                    fill: n.LU0.colors.ICON_STRONG
                 }
             }
         },
-        text: p.intl.string(m.default.NOGFds)
-    }), h = (0, n.jsxs)("div", {
-        className: f.k0,
-        children: [b, (0, n.jsx)(r.m, {
-            text: p.intl.string(m.default.cVTpnj),
-            shouldShow: !_,
-            children: (0, n.jsx)(s.Button, {
+        text: _.intl.string(m.default.NOGFds)
+    }), N = (0, l.jsxs)("div", {
+        className: x.k0,
+        children: [f, (0, l.jsx)(a.m, {
+            text: _.intl.string(m.default.cVTpnj),
+            shouldShow: !p,
+            children: (0, l.jsx)(n.Button, {
                 onClick: t,
-                disabled: !_,
-                text: p.intl.string(p.t["1Qm822"]),
+                disabled: !p,
+                text: _.intl.string(_.t["1Qm822"]),
                 variant: "primary",
                 size: "md",
                 fullWidth: !0
             })
         })]
-    }), j = (0, n.jsxs)("div", {
-        className: f.UX,
-        children: [(0, n.jsxs)("div", {
-            className: f.iQ,
-            children: [(0, n.jsx)(r.m, {
-                text: p.intl.string(p.t["5AFxuK"]),
-                children: (0, n.jsx)(s.tvc, {
+    }), C = (0, l.jsxs)("div", {
+        className: x.UX,
+        children: [(0, l.jsxs)("div", {
+            className: x.iQ,
+            children: [(0, l.jsx)(a.m, {
+                text: _.intl.string(_.t["5AFxuK"]),
+                children: (0, l.jsx)(n.tvc, {
                     size: "md",
-                    color: s.LU0.colors.ICON_STRONG
+                    color: n.LU0.colors.ICON_STRONG
                 })
-            }), (0, n.jsx)(s.Text, {
+            }), (0, l.jsx)(n.Text, {
                 variant: "text-md/medium",
                 color: "text-default",
-                className: f.h_,
-                children: p.intl.format(m.default.PWf0xS, {
+                className: x.h_,
+                children: _.intl.format(m.default.PWf0xS, {
                     onClickNitro: () => {
-                        c.default.track(d.HAw.DISPLAY_NAME_STYLES_NITRO_CLICKED), (0, a.x)(g)
+                        d.default.track(c.HAw.DISPLAY_NAME_STYLES_NITRO_CLICKED), (0, i.x)(h)
                     }
                 })
             })]
-        }), (0, n.jsxs)("div", {
-            className: f.UD,
-            children: [b, (0, n.jsx)(o.A, {
+        }), (0, l.jsxs)("div", {
+            className: x.UD,
+            children: [f, (0, l.jsx)(r.A, {
                 premiumModalAnalyticsLocation: {
-                    section: d.JJy.DISPLAY_NAME_STYLES_MODAL_FOOTER,
-                    object: d.ZSU.PREMIUM_UPSELL_BUTTON
+                    section: c.JJy.DISPLAY_NAME_STYLES_MODAL_FOOTER,
+                    object: c.ZSU.PREMIUM_UPSELL_BUTTON
                 },
                 subscriptionTier: u.pe.TIER_2
             })]
         })]
     });
-    return (0, n.jsx)(s.jlY, {
+    return (0, l.jsx)(n.jlY, {
         "data-migration-pending": !0,
-        className: f.qr,
-        children: x ? h : j
+        className: x.qr,
+        children: g ? N : C
     })
 }

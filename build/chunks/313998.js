@@ -1,117 +1,114 @@
-/** chunk id: 313998, original params: n,e,t (module,exports,require) **/
-t.d(e, {
-    A: () => C,
-    g: () => E
-}), t(896048), t(321073);
-var i = t(627968);
+/** chunk id: 313998, original params: e,n,t (module,exports,require) **/
+t.d(n, {
+    A: () => v,
+    g: () => I
+}), t(321073);
+var l = t(627968);
 t(64700);
-var l = t(503698),
-    r = t.n(l),
+var i = t(503698),
+    r = t.n(i),
     a = t(110259),
-    o = t(311907),
-    u = t(554146),
-    d = t(397927),
-    s = t(387755),
+    d = t(311907),
+    s = t(554146),
+    o = t(397927),
+    u = t(387755),
     c = t(688810),
-    g = t(139286),
-    A = t(313961),
-    p = t(313369),
-    b = t(325909),
-    f = t(47167),
-    v = t(379848),
-    m = t(378570),
-    _ = t(164891),
-    y = t(734057),
-    O = t(309010),
-    x = t(806931),
-    h = t(49999),
-    j = t(985018),
-    I = t(951808);
+    A = t(139286),
+    g = t(313961),
+    m = t(313369),
+    f = t(325909),
+    p = t(47167),
+    x = t(379848),
+    b = t(378570),
+    E = t(164891),
+    h = t(734057),
+    _ = t(309010),
+    C = t(806931),
+    T = t(49999),
+    N = t(985018),
+    G = t(951808);
 
-function E(n, e) {
-    let t = (0, o.bG)([O.A], () => O.A.getVoiceChannelId()),
-        i = (0, o.bG)([y.A], () => {
-            var n, e;
-            return null != (n = null == (e = y.A.getChannel(t)) ? void 0 : e.getGuildId()) ? n : void 0
-        }),
+function I(e, n) {
+    let t = (0, d.bG)([_.A], () => _.A.getVoiceChannelId()),
+        l = (0, d.bG)([h.A], () => h.A.getChannel(t)?.getGuildId() ?? void 0),
         {
-            enabled: l
-        } = _.A.useExperiment({
-            guildId: i,
-            location: e
+            enabled: i
+        } = E.A.useExperiment({
+            guildId: l,
+            location: n
         });
-    return l ? t : n
+    return i ? t : e
 }
 
-function C(n, e) {
-    let [t, l] = (0, o.yK)([A.A], () => [null != e ? A.A.getParticipants(e) : null, null != e ? A.A.getParticipant(e, n.id) : null], [e, n.id]), f = (0, o.bG)([y.A], () => y.A.getChannel(e)), O = (0, b.o)(n, "context_menu", e), {
-        enabled: E
-    } = _.A.useExperiment({
-        guildId: null == f ? void 0 : f.guild_id,
+function v(e, n) {
+    let [t, i] = (0, d.yK)([g.A], () => [null != n ? g.A.getParticipants(n) : null, null != n ? g.A.getParticipant(n, e.id) : null], [n, e.id]), p = (0, d.bG)([h.A], () => h.A.getChannel(n)), _ = (0, f.oP)(e, "context_menu", n), {
+        enabled: I
+    } = E.A.useExperiment({
+        guildId: p?.guild_id,
         location: "useRingHangupItem"
     }), {
-        copyVariant: C
-    } = p.o.useConfig({
+        copyVariant: v
+    } = m.o.useConfig({
         location: "useRingHangupItem"
-    }), G = !O || (null == t ? void 0 : t.length) === 0 || null == e, P = E && (null == f ? void 0 : f.guild_id) != null, T = null == l, k = null != l && l.type === x.lp.USER && l.ringing, S = [];
-    P && !G && (T || k) && S.push(u.M.RING_USER_TO_VC_NEW_BADGE);
-    let [U, w] = (0, v.kn)(S), D = U === u.M.RING_USER_TO_VC_NEW_BADGE, {
-        analyticsLocations: R
+    }), j = !_ || t?.length === 0 || null == n, y = I && p?.guild_id != null, M = null == i, U = null != i && i.type === C.lp.USER && i.ringing, S = [];
+    y && !j && (M || U) && S.push(s.M.RING_USER_TO_VC_NEW_BADGE);
+    let [R, P] = (0, x.kn)(S), D = R === s.M.RING_USER_TO_VC_NEW_BADGE, {
+        analyticsLocations: V
     } = (0, c.Ay)();
-    if ((0, g.A)({
+    if ((0, A.A)({
             type: a.ImpressionTypes.MENU,
             name: a.ImpressionNames.RING_TO_GUILD_VC_MENU_ITEM_SHOWN,
             properties: {
-                voice_channel_id: e,
-                voice_guild_id: null == f ? void 0 : f.guild_id,
-                location_stack: R
+                voice_channel_id: n,
+                voice_guild_id: p?.guild_id,
+                location_stack: V
             }
         }, {
-            disableTrack: G || !P
-        }, [n.id]), G) return null;
-    if (T) {
-        let t = P ? j.intl.string(j.t["3Hv9qQ"]) : "add" === C ? j.intl.string(j.t.xlwRY6) : j.intl.string(j.t.bHa9kN);
-        return (0, i.jsx)(d.Drp, {
+            disableTrack: j || !y
+        }, [e.id]), j) return null;
+    if (M) {
+        let t = y ? N.intl.string(N.t["3Hv9qQ"]) : "add" === v ? N.intl.string(N.t.xlwRY6) : N.intl.string(N.t.bHa9kN);
+        return (0, l.jsx)(o.Drp, {
             id: "ring",
             label: t,
             badge: D ? "new" : void 0,
-            subtext: P || "control" !== C ? (0, i.jsx)(N, {
-                channel: f
+            subtext: y || "control" !== v ? (0, l.jsx)(O, {
+                channel: p
             }) : null,
             action: () => {
-                D && w(h.i.TAKE_ACTION), s.A.ring(e, [n.id], "user_context_menu"), P && null != e && (0, m.iN)(e)
+                D && P(T.i.TAKE_ACTION), u.A.ring(n, [e.id], "user_context_menu"), y && null != n && (0, b.iN)(n)
             }
         })
     }
-    return k ? (0, i.jsx)(d.Drp, {
+    return U ? (0, l.jsx)(o.Drp, {
         id: "stop-ringing",
-        label: j.intl.string(j.t.ygslb0),
+        label: N.intl.string(N.t.ygslb0),
         badge: D ? "new" : void 0,
-        subtext: P ? (0, i.jsx)(d.Text, {
+        subtext: y ? (0, l.jsx)(o.Text, {
             variant: "text-xs/medium",
-            className: r()(I.W$, I.DF),
-            children: j.intl.format(j.t.dwfzZi, {
-                channelName: (0, i.jsx)(N, {
-                    channel: f
+            className: r()(G.W$, G.DF),
+            children: N.intl.format(N.t.dwfzZi, {
+                channelName: (0, l.jsx)(O, {
+                    channel: p
                 })
             })
         }) : null,
         action: () => {
-            D && w(h.i.TAKE_ACTION), s.A.stopRinging(e, [n.id])
+            D && P(T.i.TAKE_ACTION), u.A.stopRinging(n, [e.id])
         }
     }) : null
 }
-let N = n => {
+let O = e => {
     let {
-        channel: e
-    } = n, t = (0, f.Ay)(e);
-    return (0, i.jsxs)("div", {
-        className: I.W$,
-        children: [(0, i.jsx)(d.HKD, {
+        channel: n
+    } = e, t = (0, p.Ay)(n);
+    return (0, l.jsxs)("div", {
+        className: G.W$,
+        children: [(0, l.jsx)(o.HKD, {
             size: "xs"
-        }), (0, i.jsx)(d.Text, {
+        }), (0, l.jsx)(o.Text, {
             variant: "text-xs/medium",
-            className: I.HA,
+            className: G.HA,
             children: t
         })]
     })

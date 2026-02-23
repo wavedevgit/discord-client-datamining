@@ -1,56 +1,52 @@
 /** chunk id: 619921, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => g
 });
-var r, i, l, s, a, o = n(311907),
-    c = n(73153),
-    d = n(734057),
-    u = n(650048),
-    _ = n(71393),
-    p = n(309010),
-    m = n(645959),
-    g = n(652215);
-let A = (null != (i = null == (s = window) || null == (l = s.location) ? void 0 : l.pathname) ? i : "").startsWith(g.BVt.ACTIVITIES) ? g.BVt.ACTIVITIES : null;
+var i = n(311907),
+    r = n(73153),
+    a = n(734057),
+    s = n(650048),
+    l = n(71393),
+    o = n(309010),
+    d = n(645959),
+    _ = n(652215);
+let c = (window?.location?.pathname ?? "").startsWith(_.BVt.ACTIVITIES) ? _.BVt.ACTIVITIES : null;
 
-function f(e) {
+function u(e) {
     let {
         link: t
     } = e;
-    if (A === t) return !1;
-    A = t
+    if (c === t) return !1;
+    c = t
 }
-class b extends(a = o.Ay.Store) {
+class A extends i.Ay.Store {
+    static displayName = "AppViewStore";
     initialize() {
-        this.waitFor(u.A, m.A, p.A, _.A, d.A)
+        this.waitFor(s.A, d.default, o.A, l.A, a.A)
     }
     getHomeLink() {
-        return null != A ? A : u.A.fallbackRoute
+        return c ?? s.A.fallbackRoute
     }
-}(r = "displayName") in b ? Object.defineProperty(b, r, {
-    value: "AppViewStore",
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
-}) : b[r] = "AppViewStore";
-let h = new b(c.h, {
+}
+let g = new A(r.h, {
     OVERLAY_INITIALIZE: function() {
-        let e = m.A.getPrivateChannelIds(),
-            t = p.A.getChannelId(g.ME);
-        (null != t || null != e[0]) && (A = g.BVt.CHANNEL(g.ME, null != t ? t : e[0]))
+        let e = d.default.getPrivateChannelIds(),
+            t = o.A.getChannelId(_.ME);
+        (null != t || null != e[0]) && (c = _.BVt.CHANNEL(_.ME, t ?? e[0]))
     },
-    APP_VIEW_SET_HOME_LINK: f,
+    APP_VIEW_SET_HOME_LINK: u,
     APPLICATION_STORE_LOCATION_CHANGE: function(e) {
         let {
             location: t
         } = e;
-        f({
+        u({
             link: t.pathname,
             type: "APP_VIEW_SET_HOME_LINK"
         })
     },
     APPLICATION_STORE_RESET_NAVIGATION: function() {
-        if (null == A || !A.startsWith(g.BVt.APPLICATION_STORE)) return !1;
-        A = g.BVt.APPLICATION_STORE
+        if (null == c || !c.startsWith(_.BVt.APPLICATION_STORE)) return !1;
+        c = _.BVt.APPLICATION_STORE
     },
     CHANNEL_SELECT: function(e) {
         let {
@@ -58,8 +54,8 @@ let h = new b(c.h, {
             channelId: n
         } = e;
         if (null == t && null != n) {
-            let e = g.BVt.CHANNEL(g.ME, n);
-            if (e !== A) return A = e, !0
+            let e = _.BVt.CHANNEL(_.ME, n);
+            if (e !== c) return c = e, !0
         }
         return !1
     },
@@ -67,6 +63,6 @@ let h = new b(c.h, {
         let {
             channel: t
         } = e;
-        null == t.guild_id && null != t.id && null != A && A === g.BVt.CHANNEL(g.ME, t.id) && (A = null)
+        null == t.guild_id && null != t.id && null != c && c === _.BVt.CHANNEL(_.ME, t.id) && (c = null)
     }
 })

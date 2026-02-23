@@ -1,97 +1,96 @@
 /** chunk id: 632130, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => m
-}), n(896048), n(321073);
-var r = n(339048),
-    i = n(830382),
+    A: () => p
+}), n(321073);
+var i = n(339048),
+    r = n(830382),
     l = n(800342),
     a = n(10716),
     s = n(143582),
     o = n(147964),
-    c = n(636401),
-    u = n(994717),
-    d = n(613057),
-    p = n(652215);
+    d = n(636401),
+    c = n(994717),
+    u = n(613057),
+    A = n(652215);
 async function h(e, t) {
-    let n = t.filter(e => e.type === p.Puh.SUBSCRIPTION_GROUP),
-        r = await Promise.all(n.map(async t => await (0, s.vz)(e, t.id))),
-        i = [];
-    return r.forEach(e => {
+    let n = t.filter(e => e.type === A.Puh.SUBSCRIPTION_GROUP),
+        i = await Promise.all(n.map(async t => await (0, s.vz)(e, t.id))),
+        r = [];
+    return i.forEach(e => {
         if (null == e) return null;
         let n = e.subscription_listings;
         if (null == n) return null;
-        let r = [];
+        let i = [];
         n.forEach(e => {
             e.subscription_plans.forEach(n => {
-                var i;
-                let l = null == n ? void 0 : n.price,
-                    a = t.find(e => e.id === n.sku_id);
-                if (null == a) return;
-                let s = {
+                let r = n?.price,
+                    l = t.find(e => e.id === n.sku_id);
+                if (null == l) return;
+                let a = {
                     id: n.sku_id,
-                    name: a.name,
-                    type: a.type,
+                    name: l.name,
+                    type: l.type,
                     price: {
-                        amount: l,
-                        currency: p.Yri.USD
+                        amount: r,
+                        currency: A.Yri.USD
                     },
                     application_id: e.application_id,
                     flags: e.sku_flags,
-                    release_date: null != (i = a.release_date) ? i : null
+                    release_date: l.release_date ?? null
                 };
-                r.push(s)
+                i.push(a)
             })
-        }), r.filter(e => (null == e ? void 0 : e.price) != null).forEach(e => i.push(e))
-    }), i
+        }), i.filter(e => e?.price != null).forEach(e => r.push(e))
+    }), r
 }
-async function f(e) {
+async function _(e) {
     let {
         socket: t
     } = e;
-    (0, u.C)(t.transport);
+    (0, c.C)(t.transport);
     let n = t.application.id;
-    if (null == n) throw new c.A({
-        errorCode: p.Lw6.INVALID_COMMAND
+    if (null == n) throw new d.A({
+        errorCode: A.Lw6.INVALID_COMMAND
     }, "No application.");
     if (o.A.inTestModeForApplication(n) || a.A.inDevModeForApplication(n)) {
-        let e = await i.O1(n, !1),
+        let e = await r.O1(n, !1),
             t = await h(n, e);
         return [...e.filter(e => null != e.price), ...t]
     }
-    let r = await l.JI(n);
-    return [...r.filter(e => e.sku.type !== p.Puh.SUBSCRIPTION_GROUP).map(e => e.sku).filter(e => null != e.price), ...await h(n, r.map(e => e.sku))]
+    let i = await l.JI(n);
+    return [...i.filter(e => e.sku.type !== A.Puh.SUBSCRIPTION_GROUP).map(e => e.sku).filter(e => null != e.price), ...await h(n, i.map(e => e.sku))]
 }
 
-function g(e) {
+function m(e) {
     let {
         socket: t
     } = e;
-    (0, u.C)(t.transport);
+    (0, c.C)(t.transport);
     let n = t.application.id;
-    if (null == n) throw new c.A({
-        errorCode: p.Lw6.INVALID_COMMAND
+    if (null == n) throw new d.A({
+        errorCode: A.Lw6.INVALID_COMMAND
     }, "No application.");
-    return r.LM(n)
+    return i.LM(n)
 }
-let m = {
-    [p.e$_.GET_SKUS]: {
-        [d.sm.ANY]: [d.VH, d.hj],
-        handler: f
+let p = {
+    [A.e$_.GET_SKUS]: {
+        [u.sm.ANY]: [u.VH, u.hj],
+        handler: _
     },
-    [p.e$_.GET_ENTITLEMENTS]: {
-        [d.sm.ANY]: [d.VH, d.hj],
-        handler: g
+    [A.e$_.GET_ENTITLEMENTS]: {
+        [u.sm.ANY]: [u.VH, u.hj],
+        handler: m
     },
-    [p.e$_.GET_SKUS_EMBEDDED]: {
-        [d.sm.ANY]: [d.VH, d.hj],
+    [A.e$_.GET_SKUS_EMBEDDED]: {
+        [u.sm.ANY]: [u.VH, u.hj],
         handler: async e => ({
-            skus: await f(e)
+            skus: await _(e)
         })
     },
-    [p.e$_.GET_ENTITLEMENTS_EMBEDDED]: {
-        [d.sm.ANY]: [d.VH, d.hj],
+    [A.e$_.GET_ENTITLEMENTS_EMBEDDED]: {
+        [u.sm.ANY]: [u.VH, u.hj],
         handler: async e => ({
-            entitlements: await g(e)
+            entitlements: await m(e)
         })
     }
 }

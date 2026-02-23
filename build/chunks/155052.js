@@ -1,85 +1,58 @@
 /** chunk id: 155052, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => O
-}), n(321073), n(896048);
+    A: () => E
+}), n(321073);
 var i = n(627968),
-    r = n(64700),
+    s = n(64700),
     l = n(311907),
-    a = n(397927),
-    o = n(555528),
-    s = n(531685),
-    u = n(365971),
-    c = n(243612),
-    d = n(582240),
+    r = n(397927),
+    a = n(555528),
+    o = n(531685),
+    d = n(365971),
+    u = n(243612),
+    c = n(582240),
     h = n(295102),
-    p = n(545807),
-    f = n(644434);
+    g = n(545807),
+    m = n(644434);
 
-function g(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            i = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), i.forEach(function(t) {
-            var i;
-            i = n[t], t in e ? Object.defineProperty(e, t, {
-                value: i,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = i
-        })
-    }
-    return e
-}
-
-function m(e) {
+function p(e) {
     return e.widget.id
 }
 
-function A(e, t, n, r) {
-    var l, o;
-    return n === a.wLy.YEETED ? null : (0, i.jsx)(d.A, (l = g({}, t), o = o = {
+function A(e, t, n, s) {
+    return n === r.wLy.YEETED ? null : (0, i.jsx)(c.A, {
+        ...t,
         transitionState: n,
-        cleanUp: r
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var i = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, i)
-        }
-        return n
-    })(Object(o)).forEach(function(e) {
-        Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(o, e))
-    }), l), e)
+        cleanUp: s
+    }, e)
 }
-let y = [],
-    O = r.memo(function(e) {
+let x = [],
+    E = s.memo(function(e) {
         let {
             className: t
-        } = e, n = (0, p.A)(), d = (0, l.bG)([s.A], () => s.A.windowSize((0, u.Q2)(n))), O = (0, l.bG)([o.A], () => {
-            let e = o.A.getLayout(f.G);
-            if (null == e) return y;
+        } = e, n = (0, g.A)(), c = (0, l.bG)([o.A], () => o.A.windowSize((0, d.Q2)(n))), E = (0, l.bG)([a.A], () => {
+            let e = a.A.getLayout(m.G);
+            if (null == e) return x;
             let t = [];
             for (let n of e.widgets) {
-                let e = o.A.getWidget(n);
+                let e = a.A.getWidget(n);
                 if (null == e) continue;
                 let i = h.A[e.type];
-                null != i && (null == i.predicate || i.predicate()) && t.push(g({
-                    widget: e
-                }, i))
+                null != i && (null == i.predicate || i.predicate()) && t.push({
+                    widget: e,
+                    ...i
+                })
             }
             return t
-        }, [], c.VC), v = r.useCallback(e => (0, i.jsx)("div", {
+        }, [], u.VC), f = s.useCallback(e => (0, i.jsx)("div", {
             className: t,
-            style: d,
+            style: c,
             children: e
-        }), [t, d]);
-        return (0, i.jsx)(a.Fai, {
-            items: O,
+        }), [t, c]);
+        return (0, i.jsx)(r.Fai, {
+            items: E,
             renderItem: A,
-            getItemKey: m,
-            wrapChildren: v
+            getItemKey: p,
+            wrapChildren: f
         })
     })

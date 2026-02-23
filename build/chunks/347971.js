@@ -3,46 +3,46 @@ n.d(t, {
     A: () => u
 });
 var a = n(627968),
-    l = n(64700),
-    r = n(158954),
-    i = n(397927),
-    s = n(839214),
+    i = n(64700),
+    s = n(158954),
+    l = n(397927),
+    r = n(839214),
     o = n(849823),
-    c = n(840065);
-let d = (0, s.D)(() => ({
+    d = n(840065);
+let c = (0, r.D)(() => ({
     urlString: "",
     error: null
 }));
 
 function u() {
-    let e = d.useField("error"),
-        t = l.useCallback(() => {
-            let e = d.getField("urlString");
-            if (null == e || "" === e) return void d.setState({
+    let e = c.useField("error"),
+        t = i.useCallback(() => {
+            let e = c.getField("urlString");
+            if (null == e || "" === e) return void c.setState({
                 error: "URL is required"
             });
             let t = (0, o.default)(e);
-            null == t ? d.setState({
+            null == t ? c.setState({
                 error: "String did not match expected format"
-            }) : (0, c.openUserSettingsFromParsedUrl)({
+            }) : (0, d.openUserSettingsFromParsedUrl)({
                 match: t,
                 urlOrigin: "devtools"
             })
         }, []);
-    return (0, a.jsxs)(r.nVY, {
+    return (0, a.jsxs)(s.nVY, {
         label: "Settings Deep Link Tool",
-        children: [(0, a.jsx)(i.ksK, {
+        children: [(0, a.jsx)(l.ksK, {
             label: "URL",
             placeholder: "e.g. /settings/appearance",
-            onChange: e => d.setState({
+            onChange: e => c.setState({
                 urlString: e,
                 error: null
             })
-        }), (0, a.jsx)(r.$nd, {
+        }), (0, a.jsx)(s.$nd, {
             variant: "primary",
             onClick: t,
             text: "Open User Settings for URL"
-        }), null != e && (0, a.jsx)(r.EYj, {
+        }), null != e && (0, a.jsx)(s.EYj, {
             variant: "text-sm/normal",
             color: "text-feedback-critical",
             children: e

@@ -1,7 +1,7 @@
 /** chunk id: 465105, original params: t,n,e (module,exports,require) **/
 e.d(n, {
     A: () => l
-}), e(896048);
+});
 var a = e(64700),
     i = e(198982);
 

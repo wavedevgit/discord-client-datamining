@@ -1,15 +1,15 @@
 /** chunk id: 305182, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    V: () => i
-}), n(896048);
-var r = n(64700),
-    l = n(397927);
+    V: () => s
+});
+var l = n(64700),
+    i = n(397927);
 
-function i() {
-    let [e, t] = r.useState(!0);
+function s() {
+    let [e, t] = l.useState(!0);
     return {
-        transitions: (0, l.pnh)(e, {
+        transitions: (0, i.pnh)(e, {
             keys: e => e ? "shown" : "hidden",
             config: a,
             from: {

@@ -1,62 +1,57 @@
-/** chunk id: 218727, original params: e,t,r (module,exports,require) **/
-r.d(t, {
-    A: () => f
+/** chunk id: 218727, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    A: () => o
 });
-var n, l, a = r(311907),
-    i = r(73153);
+var a = n(311907),
+    l = n(73153);
 let s = () => ({
         isFetching: !1,
         lastFetchedAt: null,
         error: null
     }),
-    o = [],
-    c = s();
-class u extends(l = a.Ay.Store) {
+    i = [],
+    r = s();
+class c extends a.Ay.Store {
+    static displayName = "RecentAvatarsStore";
     get isFetching() {
-        return c.isFetching
+        return r.isFetching
     }
     get fetchError() {
-        return c.error
+        return r.error
     }
     get shouldFetch() {
-        var e;
-        return Date.now() - (null != (e = c.lastFetchedAt) ? e : 0) > 3e5 && !c.isFetching
+        return Date.now() - (r.lastFetchedAt ?? 0) > 3e5 && !r.isFetching
     }
     getAvatars() {
-        return o
+        return i
     }
-}(n = "displayName") in u ? Object.defineProperty(u, n, {
-    value: "RecentAvatarsStore",
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
-}) : u[n] = "RecentAvatarsStore";
-let f = new u(i.h, {
+}
+let o = new c(l.h, {
     RECENT_AVATARS_FETCH_START: function() {
-        c.isFetching = !0, c.error = null
+        r.isFetching = !0, r.error = null
     },
     RECENT_AVATARS_FETCH_SUCCESS: function(e) {
         let {
             avatars: t
         } = e;
-        o = t, c.isFetching = !1, c.lastFetchedAt = Date.now()
+        i = t, r.isFetching = !1, r.lastFetchedAt = Date.now()
     },
     RECENT_AVATARS_FETCH_FAILURE: function(e) {
         let {
             error: t
         } = e;
-        c.isFetching = !1, c.error = t
+        r.isFetching = !1, r.error = t
     },
     RECENT_AVATARS_UPDATE: function() {
-        c.lastFetchedAt = 0
+        r.lastFetchedAt = 0
     },
     RECENT_AVATAR_DELETE: function(e) {
         let {
             avatarId: t
         } = e;
-        o = o.filter(e => e.id !== t)
+        i = i.filter(e => e.id !== t)
     },
     LOGOUT: function() {
-        o = [], c = s()
+        i = [], r = s()
     }
 })

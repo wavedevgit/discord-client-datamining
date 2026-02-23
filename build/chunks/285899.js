@@ -1,179 +1,136 @@
-/** chunk id: 285899, original params: e,t,r (module,exports,require) **/
-r.d(t, {
-    O: () => j,
-    default: () => P
-}), r(896048);
-var n = r(627968),
-    a = r(64700),
-    l = r(512750),
-    o = r(158954),
-    s = r(397927),
-    i = r(503852),
-    c = r(661685),
-    u = r(898190),
-    d = r(490557),
-    f = r(193157),
-    p = r(568065),
-    m = r(333354),
-    b = r(985018),
-    k = r(438619);
+/** chunk id: 285899, original params: e,t,a (module,exports,require) **/
+a.d(t, {
+    O: () => I,
+    default: () => T
+});
+var r = a(627968),
+    n = a(64700),
+    s = a(512750),
+    i = a(158954),
+    l = a(397927),
+    o = a(503852),
+    c = a(661685),
+    d = a(898190),
+    u = a(490557),
+    k = a(193157),
+    m = a(568065),
+    b = a(333354),
+    f = a(985018),
+    p = a(438619);
 
-function O(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var r = null != arguments[t] ? arguments[t] : {},
-            n = Object.keys(r);
-        "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(r, e).enumerable
-        }))), n.forEach(function(t) {
-            var n;
-            n = r[t], t in e ? Object.defineProperty(e, t, {
-                value: n,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = n
-        })
-    }
-    return e
-}
-
-function g(e, t) {
-    if (null == e) return {};
-    var r, n, a, l = {};
-    if ("u" > typeof Reflect && Reflect.ownKeys) {
-        for (a = 0, r = Reflect.ownKeys(e); a < r.length; a++) n = r[a], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n]);
-        return l
-    }
-    if (l = function(e, t) {
-            if (null == e) return {};
-            var r, n, a = {},
-                l = Object.getOwnPropertyNames(e);
-            for (n = 0; n < l.length; n++) r = l[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
-            return a
-        }(e, t), Object.getOwnPropertySymbols)
-        for (a = 0, r = Object.getOwnPropertySymbols(e); a < r.length; a++) n = r[a], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n]);
-    return l
-}
-
-function j(e) {
-    var t, r;
+function I(e) {
     let {
-        size: l,
-        title: i,
-        body: c,
-        warningText: u,
-        acknowledgementText: d,
-        error: f,
-        isLoading: p,
-        onDeactivate: j
-    } = e, P = g(e, ["size", "title", "body", "warningText", "acknowledgementText", "error", "isLoading", "onDeactivate"]), [I, y] = a.useState(!1);
-    return (0, n.jsxs)(o.Modal, (t = O({}, P), r = r = {
-        size: l,
-        title: b.intl.formatToPlainString(m.default.iEBw1M, {
-            perk: i
+        size: t,
+        title: a,
+        body: s,
+        warningText: o,
+        acknowledgementText: c,
+        error: d,
+        isLoading: u,
+        onDeactivate: k,
+        ...m
+    } = e, [I, T] = n.useState(!1);
+    return (0, r.jsxs)(i.Modal, {
+        ...m,
+        size: t,
+        title: f.intl.formatToPlainString(b.default.iEBw1M, {
+            perk: a
         }),
-        subtitle: b.intl.formatToPlainString(m.default["7o0K+2"], {
-            perk: i
+        subtitle: f.intl.formatToPlainString(b.default["7o0K+2"], {
+            perk: a
         }),
         actions: [{
             variant: "secondary",
-            text: b.intl.string(b.t["ETE/oC"]),
-            onClick: P.onClose
+            text: f.intl.string(f.t["ETE/oC"]),
+            onClick: m.onClose
         }, {
             variant: "critical-primary",
-            text: b.intl.string(m.default.PYPdl4),
-            loading: p,
-            onClick: j,
-            disabled: null != d && !I
+            text: f.intl.string(b.default.PYPdl4),
+            loading: u,
+            onClick: k,
+            disabled: null != c && !I
         }],
-        children: [c, (0, n.jsxs)("div", {
-            className: k.UW,
-            children: [(0, n.jsx)(o.EYj, {
+        children: [s, (0, r.jsxs)("div", {
+            className: p.UW,
+            children: [(0, r.jsx)(i.EYj, {
                 color: "text-feedback-critical",
                 variant: "eyebrow",
-                children: b.intl.string(m.default.OVt5CC)
-            }), (0, n.jsx)(o.EYj, {
-                className: k.i4,
+                children: f.intl.string(b.default.OVt5CC)
+            }), (0, r.jsx)(i.EYj, {
+                className: p.i4,
                 tag: "span",
                 variant: "text-sm/medium",
-                children: u
+                children: o
             })]
-        }), null != f && (0, n.jsx)(o.EYj, {
-            className: k.kc,
+        }), null != d && (0, r.jsx)(i.EYj, {
+            className: p.kc,
             color: "text-feedback-critical",
             variant: "text-sm/semibold",
-            children: f
-        }), null != d && (0, n.jsx)("div", {
-            className: k.ud,
-            children: (0, n.jsx)(s.Checkbox, {
+            children: d
+        }), null != c && (0, r.jsx)("div", {
+            className: p.ud,
+            children: (0, r.jsx)(l.Checkbox, {
                 checked: I,
-                onChange: y,
-                label: d,
+                onChange: T,
+                label: c,
                 labelType: "secondary"
             })
         })]
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
-        var r = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var n = Object.getOwnPropertySymbols(e);
-            r.push.apply(r, n)
-        }
-        return r
-    })(Object(r)).forEach(function(e) {
-        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
-    }), t))
+    })
 }
 
-function P(e) {
+function T(e) {
     let {
         guildId: t,
-        powerup: r
-    } = e, s = g(e, ["guildId", "powerup"]), {
-        onDeactivate: m,
-        error: b,
-        isLoading: P
-    } = (0, u.A)(t, r), {
-        onClose: I
-    } = s, y = a.useCallback(e => {
-        e.stopPropagation(), m().then(() => {
-            null == I || I()
+        powerup: a,
+        ...l
+    } = e, {
+        onDeactivate: b,
+        error: f,
+        isLoading: T
+    } = (0, d.A)(t, a), {
+        onClose: _
+    } = l, x = n.useCallback(e => {
+        e.stopPropagation(), b().then(() => {
+            _?.()
         })
-    }, [I, m]), v = function(e, t) {
+    }, [_, b]), E = function(e, t) {
         let {
-            warningText: r,
-            vanityUrlWarning: s
+            warningText: a,
+            vanityUrlWarning: l
         } = (0, c.A)(e, t);
-        return a.useMemo(() => t.skuId === l.FB ? (0, n.jsx)(o.EYj, {
+        return n.useMemo(() => t.skuId === s.FB ? (0, r.jsx)(i.EYj, {
             color: "text-feedback-critical",
             variant: "text-sm/semibold",
-            children: r
-        }) : null != s ? (0, n.jsxs)(n.Fragment, {
-            children: [r, (0, n.jsx)(o.EYj, {
+            children: a
+        }) : null != l ? (0, r.jsxs)(r.Fragment, {
+            children: [a, (0, r.jsx)(i.EYj, {
                 color: "text-feedback-critical",
                 variant: "text-sm/semibold",
-                children: s
+                children: l
             })]
-        }) : r, [t.skuId, r, s])
-    }(t, r);
-    return (0, i.Z)(t, r, i.q.DEACTIVATE), (0, n.jsx)(j, O({
-        size: r.type === p.o9.LEVEL ? "md" : "sm",
-        title: r.title,
+        }) : a, [t.skuId, a, l])
+    }(t, a);
+    return (0, o.Z)(t, a, o.q.DEACTIVATE), (0, r.jsx)(I, {
+        size: a.type === m.o9.LEVEL ? "md" : "sm",
+        title: a.title,
         body: (() => {
-            switch (r.type) {
-                case p.o9.LEVEL:
-                    return (0, n.jsx)(f.A, {
-                        powerup: r
+            switch (a.type) {
+                case m.o9.LEVEL:
+                    return (0, r.jsx)(k.A, {
+                        powerup: a
                     });
-                case p.o9.PERK:
-                    return (0, n.jsx)(d.l, {
-                        className: k.Sl,
-                        powerup: r
+                case m.o9.PERK:
+                    return (0, r.jsx)(u.l, {
+                        className: p.Sl,
+                        powerup: a
                     })
             }
         })(),
-        warningText: v,
-        error: b,
-        isLoading: P,
-        onDeactivate: y
-    }, s))
+        warningText: E,
+        error: f,
+        isLoading: T,
+        onDeactivate: x,
+        ...l
+    })
 }

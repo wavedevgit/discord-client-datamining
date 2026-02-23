@@ -1,54 +1,54 @@
 /** chunk id: 503062, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => j
 });
-var r = n(627968),
+var i = n(627968),
     l = n(64700),
-    i = n(311907),
-    a = n(397927),
-    o = n(442433),
-    s = n(297413),
+    a = n(311907),
+    s = n(397927),
+    r = n(442433),
+    o = n(297413),
     c = n(439547),
-    u = n(714114),
-    d = n(729551),
-    f = n(178418),
-    p = n(87664),
-    g = n(290863),
-    m = n(939496),
-    b = n(652215),
-    y = n(996988),
-    O = n(794904);
-let j = a._3J.SIZE_40,
-    h = (0, a.FT9)(j);
+    d = n(714114),
+    u = n(729551),
+    g = n(178418),
+    m = n(87664),
+    x = n(290863),
+    f = n(939496),
+    p = n(652215),
+    h = n(996988),
+    _ = n(794904);
+let A = s._3J.SIZE_40,
+    I = (0, s.FT9)(A);
 
-function x(e) {
+function j(e) {
     let {
         user: t,
-        status: x,
+        status: j,
         guildId: v,
-        channelId: _,
-        onSelect: I
+        channelId: E,
+        onSelect: T
     } = e, {
-        theme: w,
-        themeType: A
-    } = (0, m.E)(), P = l.useMemo(() => t.isNonUserBot() || (0, f.c)(t, _), [t, _]), {
-        activities: E,
-        isMobileOnline: S
-    } = (0, i.cf)([g.A], () => ({
-        activities: g.A.getActivities(t.id),
-        isMobileOnline: g.A.isMobileOnline(t.id)
-    })), T = (0, p.A)(t.id), {
-        voiceActivityStatusEnabled: C
+        theme: b,
+        themeType: y
+    } = (0, f.E)(), N = l.useMemo(() => t.isNonUserBot() || (0, g.c)(t, E), [t, E]), {
+        activities: S,
+        isMobileOnline: C
+    } = (0, a.cf)([x.A], () => ({
+        activities: x.A.getActivities(t.id),
+        isMobileOnline: x.A.isMobileOnline(t.id)
+    })), R = (0, m.A)(t.id), {
+        voiceActivityStatusEnabled: k
     } = (0, c.g)({
         location: "UserProfileMutualFriendRow"
     }), {
-        voiceChannel: N
-    } = (0, u.A)({
-        userId: C ? t.id : void 0,
+        voiceChannel: L
+    } = (0, d.A)({
+        userId: k ? t.id : void 0,
         guildId: v
     });
-    return (0, r.jsxs)(a.DUT, {
-        focusProps: A === y.d.MODAL_V2 ? {
+    return (0, i.jsxs)(s.DUT, {
+        focusProps: y === h.d.MODAL_V2 ? {
             offset: {
                 top: 4,
                 right: 4,
@@ -59,66 +59,38 @@ function x(e) {
                 right: 8
             }
         },
-        className: O.nM,
-        onClick: I,
+        className: _.nM,
+        onClick: T,
         onContextMenu: e => {
-            (0, o.L3)(e, async () => {
+            (0, r.L3)(e, async () => {
                 let {
                     default: e
                 } = await Promise.all([n.e("97262"), n.e("3795"), n.e("32418"), n.e("57600")]).then(n.bind(n, 668569));
-                return n => {
-                    var l, i;
-                    return (0, r.jsx)(e, (l = function(e) {
-                        for (var t = 1; t < arguments.length; t++) {
-                            var n = null != arguments[t] ? arguments[t] : {},
-                                r = Object.keys(n);
-                            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                                return Object.getOwnPropertyDescriptor(n, e).enumerable
-                            }))), r.forEach(function(t) {
-                                var r;
-                                r = n[t], t in e ? Object.defineProperty(e, t, {
-                                    value: r,
-                                    enumerable: !0,
-                                    configurable: !0,
-                                    writable: !0
-                                }) : e[t] = r
-                            })
-                        }
-                        return e
-                    }({}, n), i = i = {
-                        user: t
-                    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
-                        var n = Object.keys(e);
-                        if (Object.getOwnPropertySymbols) {
-                            var r = Object.getOwnPropertySymbols(e);
-                            n.push.apply(n, r)
-                        }
-                        return n
-                    })(Object(i)).forEach(function(e) {
-                        Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(i, e))
-                    }), l))
-                }
+                return n => (0, i.jsx)(e, {
+                    ...n,
+                    user: t
+                })
             })
         },
-        children: [(0, r.jsx)(a.euF, {
-            src: t.getAvatarURL(v, h),
+        children: [(0, i.jsx)(s.euF, {
+            src: t.getAvatarURL(v, I),
             "aria-label": t.username,
-            size: j,
-            status: P ? b.clD.UNKNOWN : x,
-            statusBackdropColor: P ? void 0 : (0, a.C$5)(w),
-            isMobile: S,
-            className: O.my
-        }), (0, r.jsxs)("div", {
-            className: O.zH,
-            children: [(0, r.jsx)(s.A, {
+            size: A,
+            status: N ? p.clD.UNKNOWN : j,
+            statusBackdropColor: N ? void 0 : (0, s.C$5)(b),
+            isMobile: C,
+            className: _.my
+        }), (0, i.jsxs)("div", {
+            className: _.zH,
+            children: [(0, i.jsx)(o.A, {
                 user: t,
-                className: O.Tc,
-                discriminatorClass: O.D2
-            }), (0, r.jsx)(d.A, {
+                className: _.Tc,
+                discriminatorClass: _.D2
+            }), (0, i.jsx)(u.A, {
                 user: t,
-                activities: E,
-                applicationStream: T,
-                voiceChannel: N
+                activities: S,
+                applicationStream: R,
+                voiceChannel: L
             })]
         })]
     })

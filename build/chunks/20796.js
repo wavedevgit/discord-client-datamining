@@ -1,59 +1,58 @@
 /** chunk id: 20796, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    B: () => f
+    B: () => I
 });
 var l = n(627968),
-    r = n(64700),
-    i = n(808380),
+    i = n(64700),
+    r = n(808380),
     s = n(397927),
     a = n(429913),
-    o = n(263577),
-    u = n(769015),
-    c = n(790381),
-    d = n(266080),
+    u = n(263577),
+    o = n(769015),
+    d = n(790381),
+    c = n(266080),
     h = n(652215);
 let g = {
-    [i.Y.XBOX]: d.A,
-    [i.Y.PLAYSTATION]: c.A
+    [r.Y.XBOX]: c.A,
+    [r.Y.PLAYSTATION]: d.A
 };
 
-function f(e) {
+function I(e) {
     let {
         activities: t,
         gameProfileEntry: n,
-        gameIconSize: i,
-        platformIconSizePx: c
-    } = e, d = r.useMemo(() => t.find(e => {
+        gameIconSize: r,
+        platformIconSizePx: d
+    } = e, c = i.useMemo(() => t.find(e => {
         let {
             type: t
         } = e;
         return t === h.$pd.PLAYING
-    }), [t]), f = (0, a.h)(null == d ? void 0 : d.application_id);
-    return null == d ? null : function(e) {
-        var t;
+    }), [t]), I = (0, a.h)(c?.application_id);
+    return null == c ? null : function(e) {
         let {
-            gameProfileEntry: n,
-            gameApplication: r,
+            gameProfileEntry: t,
+            gameApplication: n,
             gameIconSize: i,
-            platformIconSizePx: a
-        } = e, c = null == n || null == (t = n.extra) ? void 0 : t.platform, d = null != c ? g[c] : null, h = null != d ? (0, l.jsx)(d, {
-            width: a,
-            height: a,
+            platformIconSizePx: r
+        } = e, a = t?.extra?.platform, d = null != a ? g[a] : null, c = null != d ? (0, l.jsx)(d, {
+            width: r,
+            height: r,
             color: s.LU0.colors.INTERACTIVE_ICON_DEFAULT
-        }) : null, f = null == r ? void 0 : r.getIconURL(a), p = null != f ? (0, l.jsx)(o.V, {
-            src: f,
-            alt: null == r ? void 0 : r.name,
-            size: a
+        }) : null, h = n?.getIconURL(r), I = null != h ? (0, l.jsx)(u.V, {
+            src: h,
+            alt: n?.name,
+            size: r
         }) : null;
-        return (0, l.jsx)(u.A, {
-            game: r,
+        return (0, l.jsx)(o.A, {
+            game: n,
             size: i,
-            unknownGameIconFallback: null != h ? h : p
+            unknownGameIconFallback: c ?? I
         })
     }({
         gameProfileEntry: n,
-        gameApplication: f,
-        gameIconSize: i,
-        platformIconSizePx: c
+        gameApplication: I,
+        gameIconSize: r,
+        platformIconSizePx: d
     })
 }

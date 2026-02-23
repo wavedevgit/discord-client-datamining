@@ -1,11 +1,12 @@
 /** chunk id: 587837, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
     A: () => a
-}), n(896048);
-var r = n(627968),
-    l = n(64700),
-    i = n(761929),
-    s = n(423765);
+});
+var i = n(627968),
+    s = n(64700),
+    l = n(761929),
+    r = n(423765);
 
 function a(e) {
     let {
@@ -14,22 +15,21 @@ function a(e) {
         onResizeEnd: a,
         minHeight: o,
         maxHeight: c
-    } = e, [u, d] = l.useState(null);
-    l.useEffect(() => {
-        var e, n;
-        d(null != (e = null == (n = t.current) ? void 0 : n.offsetHeight) ? e : null)
+    } = e, [d, u] = s.useState(null);
+    s.useEffect(() => {
+        u(t.current?.offsetHeight ?? null)
     }, [t]);
-    let p = (0, i.A)({
-        initialElementDimension: u,
+    let h = (0, l.A)({
+        initialElementDimension: d,
         minDimension: o,
         maxDimension: c,
         resizableDomNodeRef: t,
         onElementResize: n,
         onElementResizeEnd: a,
-        orientation: i.R.VERTICAL_BOTTOM
+        orientation: l.R.VERTICAL_BOTTOM
     });
-    return (0, r.jsx)("div", {
-        onMouseDown: p,
-        className: s.D
+    return (0, i.jsx)("div", {
+        onMouseDown: h,
+        className: r.D
     })
 }

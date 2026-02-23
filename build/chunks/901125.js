@@ -1,57 +1,57 @@
 /** chunk id: 901125, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => A
+    A: () => h
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(503698),
-    l = n.n(i),
-    s = n(397927),
-    a = n(780964),
+var s = n(503698),
+    a = n.n(s),
+    r = n(397927),
+    l = n(780964),
     o = n(840065),
     c = n(975571),
     d = n(927578),
     u = n(526292),
     _ = n(788868),
-    p = n(652215),
-    m = n(985018),
+    m = n(652215),
+    A = n(985018),
     g = n(158793);
-let A = e => {
+let h = e => {
     let t, n, {
-            premiumSubscription: i,
-            className: A,
-            textColor: f
+            premiumSubscription: s,
+            className: h,
+            textColor: x
         } = e,
-        b = (0, u.ar)();
-    if (null == i) return null;
-    let h = null != i ? d.Ay.getPremiumPlanItem(i) : null;
-    if (d.Ay.isBoostOnlySubscription(i) ? t = m.intl.string(m.t.Uj0md3) : null != h && (t = d.Ay.getTierDisplayNameByPlanId(h.planId)), null == t) return null;
-    let E = () => (0, o.openUserSettings)(a.X.SUBSCRIPTIONS_PANEL, {
-            section: p.nc_.SUBSCRIPTIONS
+        p = (0, u.ar)();
+    if (null == s) return null;
+    let E = null != s ? d.Ay.getPremiumPlanItem(s) : null;
+    if (d.Ay.isBoostOnlySubscription(s) ? t = A.intl.string(A.t.Uj0md3) : null != E && (t = d.Ay.getTierDisplayNameByPlanId(E.planId)), null == t) return null;
+    let C = () => (0, o.openUserSettings)(l.X.SUBSCRIPTIONS_PANEL, {
+            section: m.nc_.SUBSCRIPTIONS
         }),
-        O = (null != h ? d.Ay.getSkuIdForPlan(h.planId) : null) === _.pe.TIER_1;
-    return n = null != f ? f : b ? "always-white" : "text-default", (0, r.jsxs)(s.ZpM, {
-        className: l()(g.kL, A, {
-            [g.He]: b
+        T = (null != E ? d.Ay.getSkuIdForPlan(E.planId) : null) === _.pe.TIER_1;
+    return n = null != x ? x : p ? "always-white" : "text-default", (0, i.jsxs)(r.ZpM, {
+        className: a()(g.kL, h, {
+            [g.He]: p
         }),
-        type: s.ZpM.Types.CUSTOM,
-        children: [(0, r.jsx)(s.EpV, {
+        type: r.ZpM.Types.CUSTOM,
+        children: [(0, i.jsx)(r.EpV, {
             size: "custom",
             width: 20,
             height: 20,
             color: "currentColor",
-            className: l()(g.Kk, {
-                [g.Pt]: b
+            className: a()(g.Kk, {
+                [g.Pt]: p
             })
-        }), (0, r.jsx)(s.Text, {
+        }), (0, i.jsx)(r.Text, {
             variant: "text-sm/medium",
             color: n,
-            children: O ? m.intl.format(m.t["tYuv+T"], {
-                helpdeskArticle: c.A.getArticleURL(p.MVz.PREMIUM_DETAILS),
-                onSubscriptionsClick: E
-            }) : m.intl.format(m.t.xHRgU2, {
+            children: T ? A.intl.format(A.t["tYuv+T"], {
+                helpdeskArticle: c.A.getArticleURL(m.MVz.PREMIUM_DETAILS),
+                onSubscriptionsClick: C
+            }) : A.intl.format(A.t.xHRgU2, {
                 subscriptionName: t,
-                onSubscriptionsClick: E
+                onSubscriptionsClick: C
             })
         })]
     })

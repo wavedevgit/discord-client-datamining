@@ -1,23 +1,24 @@
 /** chunk id: 477654, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
     o: () => a
-}), n(896048);
-var r = n(64700);
+});
+var i = n(64700);
 n(309613);
-var l = n(652215);
-let i = 9975 + l.T_y,
-    s = 9975 / l.T_y;
+var s = n(652215);
+let l = 9975 + s.T_y,
+    r = 9975 / s.T_y;
 
 function a(e) {
     let {
         totalResults: t,
         isSearching: n
-    } = e, [a, o] = r.useState(t);
-    return r.useEffect(() => {
+    } = e, [a, o] = i.useState(t);
+    return i.useEffect(() => {
         n || o(t)
     }, [t, n]), {
-        isPaginationTotalCountLimited: a > 9975 + l.T_y,
-        paginationTotalCount: Math.min(a, i),
-        paginationMaxIndex: s
+        isPaginationTotalCountLimited: a > 9975 + s.T_y,
+        paginationTotalCount: Math.min(a, l),
+        paginationMaxIndex: r
     }
 }

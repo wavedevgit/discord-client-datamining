@@ -1,62 +1,62 @@
 /** chunk id: 901057, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => A
+    A: () => x
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(311907),
-    l = n(990078),
-    a = n(397927),
+var l = n(311907),
+    a = n(990078),
+    r = n(397927),
     s = n(367513),
     o = n(956793),
     c = n(47167),
-    u = n(332173),
-    d = n(976860),
-    p = n(95701),
-    m = n(734057),
-    f = n(71393),
-    g = n(994500),
-    _ = n(287809),
-    h = n(147036),
-    b = n(449054),
-    y = n(652215);
+    d = n(332173),
+    u = n(976860),
+    m = n(95701),
+    _ = n(734057),
+    A = n(71393),
+    h = n(994500),
+    f = n(287809),
+    E = n(147036),
+    g = n(449054),
+    p = n(652215);
 
-function A(e) {
+function x(e) {
     let {
         channel: t,
         onClick: n,
-        beforeTransition: A,
-        className: v,
-        openChatWithoutConnecting: O
-    } = e, x = (0, i.bG)([_.default, g.A], () => null == t ? "" : (0, c.m1)(t, _.default, g.A), [t]);
-    return (0, r.jsx)(l.m, {
+        beforeTransition: x,
+        className: C,
+        openChatWithoutConnecting: I
+    } = e, T = (0, l.bG)([f.default, h.A], () => null == t ? "" : (0, c.m1)(t, f.default, h.A), [t]);
+    return (0, i.jsx)(a.m, {
         "data-pending-richtooltip-migration": !0,
-        __unsupportedReactNodeAsText: x,
+        __unsupportedReactNodeAsText: T,
         position: "top",
-        children: (0, r.jsx)(u.A, {
+        children: (0, i.jsx)(d.A, {
             role: "link",
-            className: v,
+            className: C,
             onClick: e => {
-                e.stopPropagation(), null != n ? n() : (null != A && A(), (0, a.s7G)(), function(e, t) {
+                e.stopPropagation(), null != n ? n() : (null != x && x(), (0, r.s7G)(), function(e, t) {
                     let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
                     if (null == e || null == t) return;
-                    let r = f.A.getGuild(e);
-                    if ((null == r ? void 0 : r.joinedAt) == null) return b.Z2(e, {}, {
+                    let i = A.A.getGuild(e);
+                    if (i?.joinedAt == null) return g.Z2(e, {}, {
                         channelId: t
                     });
-                    let i = m.A.getChannel(t);
-                    if (null != i && (0, p.ay)(i.type)) {
+                    let l = _.A.getChannel(t);
+                    if (null != l && (0, m.ay)(l.type)) {
                         if (n) {
-                            s.A.updateChatOpen(i.id, !0), (0, d.pX)(y.BVt.CHANNEL(e, t));
+                            s.A.updateChatOpen(l.id, !0), (0, u.pX)(p.BVt.CHANNEL(e, t));
                             return
                         }
-                        o.default.selectVoiceChannel(i.id);
+                        o.default.selectVoiceChannel(l.id);
                         return
-                    }(0, d.pX)(y.BVt.CHANNEL(e, t))
-                }(null == t ? void 0 : t.guild_id, null == t ? void 0 : t.id, O))
+                    }(0, u.pX)(p.BVt.CHANNEL(e, t))
+                }(t?.guild_id, t?.id, I))
             },
-            iconType: (0, h.QG)(t),
-            children: x
+            iconType: (0, E.QG)(t),
+            children: T
         })
     })
 }

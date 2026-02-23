@@ -1,160 +1,76 @@
-/** chunk id: 652165, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    B4: () => y,
-    o6: () => g
+/** chunk id: 652165, original params: t,e,a (module,exports,require) **/
+a.d(e, {
+    B4: () => h,
+    o6: () => d
 });
-var r = n(627968),
-    i = n(835245);
-n(192308);
-var a = n(397927),
-    o = n(73153),
-    s = n(769315),
-    l = n(589078),
-    c = n(301518),
-    u = n(373856),
-    d = n(652215);
-
-function f(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-
-function p(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            f(e, t, n[t])
-        })
-    }
-    return e
-}
-
-function _(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-        var r = Object.getOwnPropertySymbols(e);
-        t && (r = r.filter(function(t) {
-            return Object.getOwnPropertyDescriptor(e, t).enumerable
-        })), n.push.apply(n, r)
-    }
-    return n
-}
-
-function h(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-n(231723);
-let m = "orb-checkout-payment-modal-key",
-    g = () => (0, a.Ry6)(m);
-
-function E() {
-    o.h.wait(() => {
-        o.h.dispatch({
-            type: "PAYMENT_MODAL_OPEN"
-        })
-    })
-}
-let y = e => {
+var n = a(835245);
+a(192308);
+var l = a(397927),
+    r = a(73153),
+    s = a(589078),
+    i = a(301518),
+    o = a(373856),
+    u = a(652215);
+a(231723);
+let c = "orb-checkout-payment-modal-key",
+    d = () => (0, l.Ry6)(c),
+    h = t => {
         let {
-            skuId: t,
-            onCheckoutSuccess: n,
+            skuId: e,
+            onCheckoutSuccess: a,
             analyticsLocations: r = [],
-            analyticsSourceLocation: o,
-            onCloseCallback: l,
-            rentalDuration: f
-        } = e, {
-            enabled: p
-        } = (0, s.ik)({
-            location: "openOrbCheckoutPaymentModal"
-        }), _ = (0, i.A)(), h = !1, g = () => {
-            h || (0, u.g)(d.HAw.PAYMENT_FLOW_CANCELED, {
-                loadId: _,
-                skuId: t,
-                analyticsLocations: r,
-                analyticsSourceLocation: o
-            }), (0, a.OoC)(m)
-        }, E = {
-            loadId: _,
-            skuId: t,
-            onCheckoutSuccess: e => {
-                h || n(e), h = !0
+            analyticsSourceLocation: s,
+            onCloseCallback: d
+        } = t, h = (0, n.A)(), v = !1;
+        return p({
+            loadId: h,
+            skuId: e,
+            onCheckoutSuccess: t => {
+                v || a(t), v = !0
             },
             analyticsLocations: r,
-            analyticsSourceLocation: o,
+            analyticsSourceLocation: s,
             onCloseCallback: () => {
-                (0, c.S)({
-                    checkoutSucceeded: h
-                }), null == l || l()
+                (0, i.S)({
+                    checkoutSucceeded: v
+                }), d?.()
             },
-            rentalDuration: f,
-            onCloseRequest: g
-        };
-        return p ? b(E) : O(E)
-    },
-    b = e => {
-        let {
-            loadId: t,
-            skuId: n,
-            onCheckoutSuccess: r,
-            analyticsLocations: i = [],
-            analyticsSourceLocation: a,
-            onCloseCallback: o,
-            rentalDuration: s,
-            onCloseRequest: c
-        } = e;
-        return E(), (0, l.Tt)().openCheckoutModal({
-            loadId: t,
-            skuId: n,
-            analyticsLocations: i,
-            analyticsSourceLocation: a,
-            flowSpecificOptions: {
-                rentalDuration: s,
-                onCheckoutSuccess: r
-            },
-            openModalOptions: {
-                onCloseCallback: o,
-                modalKey: m,
-                onCloseRequest: c
+            onCloseRequest: () => {
+                v || (0, o.g)(u.HAw.PAYMENT_FLOW_CANCELED, {
+                    loadId: h,
+                    skuId: e,
+                    analyticsLocations: r,
+                    analyticsSourceLocation: s
+                }), (0, l.OoC)(c)
             }
         })
     },
-    O = e => {
+    p = t => {
         let {
-            skuId: t,
-            onCheckoutSuccess: i,
-            onCloseRequest: o,
-            loadId: s,
+            loadId: e,
+            skuId: a,
+            onCheckoutSuccess: n,
             analyticsLocations: l = [],
-            analyticsSourceLocation: c,
-            onCloseCallback: u,
-            rentalDuration: d
-        } = e;
-        return E(), (0, a.mMO)(async () => {
-            let {
-                default: e
-            } = await Promise.resolve().then(n.bind(n, 440612));
-            return n => (0, r.jsx)(e, h(p({
-                skuId: t,
-                analyticsLocations: l,
-                analyticsSourceLocation: c,
-                onCheckoutSuccess: i,
-                rentalDuration: d
-            }, n), {
-                loadId: s
-            }))
-        }, {
-            onCloseCallback: u,
-            onCloseRequest: o,
-            modalKey: m
+            analyticsSourceLocation: i,
+            onCloseCallback: o,
+            onCloseRequest: u
+        } = t;
+        return r.h.wait(() => {
+            r.h.dispatch({
+                type: "PAYMENT_MODAL_OPEN"
+            })
+        }), (0, s.Tt)().openCheckoutModal({
+            loadId: e,
+            skuId: a,
+            analyticsLocations: l,
+            analyticsSourceLocation: i,
+            flowSpecificOptions: {
+                onCheckoutSuccess: n
+            },
+            openModalOptions: {
+                onCloseCallback: o,
+                modalKey: c,
+                onCloseRequest: u
+            }
         })
     }

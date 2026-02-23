@@ -1,58 +1,58 @@
 /** chunk id: 58013, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => d
-}), n(896048);
-var r = n(627968),
-    i = n(64700),
-    s = n(110259),
+    A: () => u
+});
+var i = n(627968),
+    s = n(64700),
+    r = n(110259),
     l = n(397927),
     a = n(585541),
     o = n(163698),
-    c = n(528685),
-    u = n(524832);
+    d = n(528685),
+    c = n(524832);
 
-function d(e) {
+function u(e) {
     let {
         transitionTo: t,
         token: n,
-        width: d
-    } = e, [h, p] = i.useState(u.k.START), [g, f] = i.useState(null), [_, m] = i.useState(""), A = {
-        impression_group: s.ImpressionGroups.ACCOUNT_REVERT_FLOW
+        width: u
+    } = e, [h, _] = s.useState(c.k.START), [p, g] = s.useState(null), [m, f] = s.useState(""), A = {
+        impression_group: r.ImpressionGroups.ACCOUNT_REVERT_FLOW
     };
-    return (0, r.jsx)("div", {
+    return (0, i.jsx)("div", {
         style: {
             margin: "8px"
         },
-        children: (0, r.jsxs)(l.tN_, {
+        children: (0, i.jsxs)(l.tN_, {
             activeSlide: h,
-            width: d,
-            onSlideReady: f,
-            children: [(0, r.jsx)(l.q7S, {
-                id: u.k.START,
+            width: u,
+            onSlideReady: g,
+            children: [(0, i.jsx)(l.q7S, {
+                id: c.k.START,
                 impressionProperties: A,
-                impressionName: s.ImpressionNames.ACCOUNT_REVERT_EXPLAINER,
-                children: (0, r.jsx)(o.A, {
-                    setSlide: p,
+                impressionName: r.ImpressionNames.ACCOUNT_REVERT_EXPLAINER,
+                children: (0, i.jsx)(o.A, {
+                    setSlide: _,
                     transitionTo: t
                 })
-            }), (0, r.jsx)(l.q7S, {
-                id: u.k.PASSWORD,
+            }), (0, i.jsx)(l.q7S, {
+                id: c.k.PASSWORD,
                 impressionProperties: A,
-                impressionName: s.ImpressionNames.ACCOUNT_REVERT_CHANGE_PASSWORD,
-                children: (0, r.jsx)(a.A, {
-                    setOriginalEmail: m,
-                    setSlide: p,
+                impressionName: r.ImpressionNames.ACCOUNT_REVERT_CHANGE_PASSWORD,
+                children: (0, i.jsx)(a.A, {
+                    setOriginalEmail: f,
+                    setSlide: _,
                     transitionTo: t,
-                    ready: g === u.k.PASSWORD,
+                    ready: p === c.k.PASSWORD,
                     token: n
                 })
-            }), (0, r.jsx)(l.q7S, {
-                id: u.k.SUCCESS,
+            }), (0, i.jsx)(l.q7S, {
+                id: c.k.SUCCESS,
                 impressionProperties: A,
-                impressionName: s.ImpressionNames.ACCOUNT_REVERT_SUCCESS,
-                children: (0, r.jsx)(c.A, {
-                    email: _
+                impressionName: r.ImpressionNames.ACCOUNT_REVERT_SUCCESS,
+                children: (0, i.jsx)(d.A, {
+                    email: m
                 })
             })]
         })

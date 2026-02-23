@@ -1,12 +1,13 @@
 /** chunk id: 224331, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => i
+    A: () => l
 });
-var r = n(64700),
-    l = n(915667);
+var i = n(64700),
+    s = n(915667);
 
-function i(e, t) {
-    return r.useCallback(() => {
-        (0, l.A)(e, t)
+function l(e, t) {
+    return i.useCallback(() => {
+        (0, s.A)(e, t)
     }, [e, t])
 }

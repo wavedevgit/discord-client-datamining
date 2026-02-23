@@ -4,8 +4,8 @@ n.d(e, {
 });
 var i = n(627968),
     a = n(64700),
-    l = n(503698),
-    r = n.n(l),
+    r = n(503698),
+    l = n.n(r),
     s = n(397927),
     d = n(235986),
     c = n(450565),
@@ -18,15 +18,15 @@ function g(t) {
     let {
         guildTemplate: e,
         onClick: n,
-        autoFocus: l
-    } = t, r = a.useCallback(() => {
+        autoFocus: r
+    } = t, l = a.useCallback(() => {
         n(e)
     }, [e, n]);
     return (0, i.jsx)(o.A, {
         icon: c.a[e.id],
         message: e.label,
-        onClick: r,
-        autoFocus: l
+        onClick: l,
+        autoFocus: r
     })
 }
 
@@ -35,7 +35,7 @@ function _(t) {
         className: e,
         isNewUser: n,
         onClose: a,
-        onChooseTemplate: l,
+        onChooseTemplate: r,
         onJoin: c
     } = t, o = (0, m.p)();
     return (0, i.jsxs)(i.Fragment, {
@@ -60,11 +60,11 @@ function _(t) {
             })]
         }), (0, i.jsxs)(s.$mQ, {
             "data-migration-pending": !0,
-            className: r()(C.KA, e),
+            className: l()(C.KA, e),
             paddingFix: !1,
             children: [(0, i.jsx)(g, {
                 guildTemplate: o[m.v.CREATE],
-                onClick: l,
+                onClick: r,
                 autoFocus: !0
             }), (0, i.jsx)(s.Text, {
                 className: C.l8,
@@ -73,22 +73,22 @@ function _(t) {
                 children: p.intl.string(p.t.JGDkfg)
             }), (0, i.jsx)(g, {
                 guildTemplate: o[m.v.GAMING],
-                onClick: l
+                onClick: r
             }), (0, i.jsx)(g, {
                 guildTemplate: o[m.v.FRIENDS],
-                onClick: l
+                onClick: r
             }), (0, i.jsx)(g, {
                 guildTemplate: o[m.v.STUDY],
-                onClick: l
+                onClick: r
             }), (0, i.jsx)(g, {
                 guildTemplate: o[m.v.SCHOOL_CLUB],
-                onClick: l
+                onClick: r
             }), (0, i.jsx)(g, {
                 guildTemplate: o[m.v.LOCAL_COMMUNITY],
-                onClick: l
+                onClick: r
             }), (0, i.jsx)(g, {
                 guildTemplate: o[m.v.CREATORS],
-                onClick: l
+                onClick: r
             })]
         }), null != c && (0, i.jsxs)(s.jlY, {
             "data-migration-pending": !0,

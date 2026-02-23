@@ -1,108 +1,87 @@
 /** chunk id: 214660, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => y,
-    H: () => A
+    A: () => x,
+    H: () => f
 });
-var r, l = n(627968);
+var i, s = n(627968);
 n(64700);
-var i = n(311907),
-    s = n(139033),
+var l = n(311907),
+    r = n(139033),
     a = n(397927),
     o = n(830215),
     c = n(315982),
-    u = n(915089),
-    d = n(557722),
-    p = n(834942),
-    h = n(287809),
-    g = n(652215),
-    f = n(53516),
+    d = n(915089),
+    u = n(557722),
+    h = n(834942),
+    A = n(287809),
+    p = n(652215),
+    g = n(53516),
     m = n(985018),
-    b = n(43310),
-    A = ((r = {})[r.VOICE = 0] = "VOICE", r);
-let y = e => {
+    _ = n(43310),
+    f = ((i = {})[i.VOICE = 0] = "VOICE", i);
+let x = e => {
     let {
         type: t,
-        guildId: r,
-        closePopout: A
-    } = e, y = (0, u.GV)(), {
-        notClaimed: O,
-        notEmailVerified: j,
-        notPhoneVerified: x,
-        newAccount: _,
-        newMember: v
-    } = (0, i.bG)([p.A], () => p.A.getCheck(r), [r]), E = 0 === t ? m.intl.string(m.t["6zY8BI"]) : null, C = null, S = null;
-    return (0 === t && (O ? (C = m.intl.string(m.t.IRxUlG), S = m.intl.string(m.t.fiNVin)) : x ? (C = m.intl.string(m.t.vW8iUF), S = m.intl.string(m.t["50gfOv"])) : j ? (C = m.intl.string(m.t.vdSOpz), S = m.intl.string(m.t.lm1UKt)) : v ? (C = m.intl.formatToPlainString(m.t.v1ktYb, {
-        min: g.$8o.MEMBER_AGE
-    }), S = m.intl.string(m.t.BddRzS)) : _ && (C = m.intl.formatToPlainString(m.t.sncw41, {
-        min: g.$8o.ACCOUNT_AGE
-    }), S = m.intl.string(m.t.BddRzS))), null == E || null == C) ? null : (0, l.jsxs)(a.lGe, {
-        className: b.kL,
-        "aria-labelledby": y,
-        children: [(0, l.jsx)("img", {
+        guildId: i,
+        closePopout: f
+    } = e, x = (0, d.GV)(), {
+        notClaimed: C,
+        notEmailVerified: E,
+        notPhoneVerified: I,
+        newAccount: b,
+        newMember: N
+    } = (0, l.bG)([h.A], () => h.A.getCheck(i), [i]), S = 0 === t ? m.intl.string(m.t["6zY8BI"]) : null, T = null, y = null;
+    return (0 === t && (C ? (T = m.intl.string(m.t.IRxUlG), y = m.intl.string(m.t.fiNVin)) : I ? (T = m.intl.string(m.t.vW8iUF), y = m.intl.string(m.t["50gfOv"])) : E ? (T = m.intl.string(m.t.vdSOpz), y = m.intl.string(m.t.lm1UKt)) : N ? (T = m.intl.formatToPlainString(m.t.v1ktYb, {
+        min: p.$8o.MEMBER_AGE
+    }), y = m.intl.string(m.t.BddRzS)) : b && (T = m.intl.formatToPlainString(m.t.sncw41, {
+        min: p.$8o.ACCOUNT_AGE
+    }), y = m.intl.string(m.t.BddRzS))), null == S || null == T) ? null : (0, s.jsxs)(a.lGe, {
+        className: _.kL,
+        "aria-labelledby": x,
+        children: [(0, s.jsx)("img", {
             alt: "",
-            className: b.Sl,
+            className: _.Sl,
             src: n(303528)
-        }), (0, l.jsxs)("div", {
-            className: b.Qs,
-            children: [(0, l.jsx)(a.Heading, {
+        }), (0, s.jsxs)("div", {
+            className: _.Qs,
+            children: [(0, s.jsx)(a.Heading, {
                 variant: "heading-md/semibold",
-                id: y,
-                children: E
-            }), (0, l.jsx)(a.Text, {
+                id: x,
+                children: S
+            }), (0, s.jsx)(a.Text, {
                 color: "text-default",
                 variant: "text-sm/normal",
-                children: C
-            }), (0, l.jsxs)("div", {
-                className: b.UD,
-                children: [null != S ? (0, l.jsx)("div", {
+                children: T
+            }), (0, s.jsxs)("div", {
+                className: _.UD,
+                children: [null != y ? (0, s.jsx)("div", {
                     "data-button-hoisted-classname-wrapper": !0,
-                    className: b.FS,
-                    children: (0, l.jsx)(a.Button, {
+                    className: _.FS,
+                    children: (0, s.jsx)(a.Button, {
                         variant: "primary",
-                        text: S,
+                        text: y,
                         onClick: () => {
-                            if (O) c.R();
-                            else if (x)(0, a.mMO)(async () => {
+                            C ? c.R() : I ? (0, a.mMO)(async () => {
                                 let {
                                     default: e
-                                } = await Promise.resolve().then(n.bind(n, 615715));
-                                return t => (0, l.jsx)(e, function(e) {
-                                    for (var t = 1; t < arguments.length; t++) {
-                                        var n = null != arguments[t] ? arguments[t] : {},
-                                            r = Object.keys(n);
-                                        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                                            return Object.getOwnPropertyDescriptor(n, e).enumerable
-                                        }))), r.forEach(function(t) {
-                                            var r;
-                                            r = n[t], t in e ? Object.defineProperty(e, t, {
-                                                value: r,
-                                                enumerable: !0,
-                                                configurable: !0,
-                                                writable: !0
-                                            }) : e[t] = r
-                                        })
-                                    }
-                                    return e
-                                }({
-                                    reason: d.d.GUILD_PHONE_REQUIRED
-                                }, t))
-                            }, {
-                                modalKey: f.V
-                            });
-                            else if (j) {
-                                var e;
-                                o.A.verifyResend(), (0, s.A)({
-                                    title: m.intl.string(m.t.LykQYk),
-                                    subtitle: m.intl.format(m.t.azKEPy, {
-                                        email: null == (e = h.default.getCurrentUser()) ? void 0 : e.email
-                                    })
+                                } = await Promise.all([n.e("84704"), n.e("45668")]).then(n.bind(n, 615715));
+                                return t => (0, s.jsx)(e, {
+                                    reason: u.d.GUILD_PHONE_REQUIRED,
+                                    ...t
                                 })
-                            }
-                            A()
+                            }, {
+                                modalKey: g.V
+                            }) : E && (o.A.verifyResend(), (0, r.A)({
+                                title: m.intl.string(m.t.LykQYk),
+                                subtitle: m.intl.format(m.t.azKEPy, {
+                                    email: A.default.getCurrentUser()?.email
+                                })
+                            })), f()
                         }
                     })
-                }) : null, O || x || j ? (0, l.jsx)(a.QWc, {
-                    onClick: A,
+                }) : null, C || I || E ? (0, s.jsx)(a.QWc, {
+                    onClick: f,
                     text: m.intl.string(m.t.oEAioF),
                     variant: "secondary"
                 }) : null]

@@ -1,39 +1,39 @@
 /** chunk id: 722888, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    G: () => c,
+    G: () => d,
     _: () => o
 });
-var r = n(64700),
-    i = n(311907),
-    l = n(599941),
+var i = n(64700),
+    l = n(311907),
+    r = n(599941),
     a = n(544199),
     s = n(697627);
 
 function o(e, t) {
-    let n = (0, i.bG)([s.A], () => s.A.getPriceTiersForGuildAndType(e, t)),
-        l = (0, i.bG)([s.A], () => s.A.getPriceTiersFetchStateForGuildAndType(e, t));
-    return r.useEffect(() => {
-        l === s.e.NOT_FETCHED && (0, a.F)(e, t)
-    }, [e, l, t]), {
-        loading: l === s.e.FETCHING,
+    let n = (0, l.bG)([s.A], () => s.A.getPriceTiersForGuildAndType(e, t)),
+        r = (0, l.bG)([s.A], () => s.A.getPriceTiersFetchStateForGuildAndType(e, t));
+    return i.useEffect(() => {
+        r === s.e.NOT_FETCHED && (0, a.F)(e, t)
+    }, [e, r, t]), {
+        loading: r === s.e.FETCHING,
         priceTiers: n
     }
 }
 
-function c(e) {
+function d(e) {
     let {
         fetchSubscriptionsSettings: t,
         loading: n,
-        error: i
-    } = (0, l.XE)();
-    r.useEffect(() => {
+        error: l
+    } = (0, r.XE)();
+    i.useEffect(() => {
         t(e)
     }, [t, e]);
-    let a = (0, l.Tq)(e);
+    let a = (0, r.Tq)(e);
     return {
         loaded: null != a && !n,
         subscriptionsSettings: a,
         loading: n,
-        error: i
+        error: l
     }
 }

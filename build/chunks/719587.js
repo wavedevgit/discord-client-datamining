@@ -6,29 +6,29 @@ var n = i(311907),
     l = i(290595),
     s = i(171316),
     r = i(419954),
-    u = i(153488),
-    a = i(975571),
+    a = i(153488),
+    u = i(975571),
     o = i(780964),
     d = i(997913),
-    T = i(652215),
-    A = i(985018);
+    A = i(652215),
+    T = i(985018);
 let S = (0, r.zD)(o.X.DATA_USAGE_STATISTICS_SETTING, {
-    useTitle: () => A.intl.string(A.t.XuADY2),
-    useSubtitle: () => A.intl.format(A.t["igTSG/"], {
-        helpdeskArticle: a.A.getArticleURL(T.MVz.DATA_PRIVACY_CONTROLS)
+    useTitle: () => T.intl.string(T.t.XuADY2),
+    useSubtitle: () => T.intl.format(T.t["igTSG/"], {
+        helpdeskArticle: u.A.getArticleURL(A.MVz.DATA_PRIVACY_CONTROLS)
     }),
     useValue: function() {
-        return (0, n.bG)([u.A], () => u.A.hasConsented(T.YAq.USAGE_STATISTICS))
+        return (0, n.bG)([a.A], () => a.A.hasConsented(A.YAq.USAGE_STATISTICS))
     },
     setValue: function(t) {
-        t ? (0, l.U)([T.YAq.USAGE_STATISTICS], []).catch(d.i) : (0, d.O)({
-            header: A.intl.string(A.t.OdPCbN),
-            body: A.intl.string(A.t.MGWabA),
-            confirmText: A.intl.string(A.t["D3+rU4"]),
-            cancelText: A.intl.string(A.t.kYpG0u),
-            onConfirm: () => (0, l.U)([], [T.YAq.USAGE_STATISTICS]).catch(d.i)
+        t ? (0, l.U)([A.YAq.USAGE_STATISTICS], []).catch(d.i) : (0, d.O)({
+            header: T.intl.string(T.t.OdPCbN),
+            body: T.intl.string(T.t.MGWabA),
+            confirmText: T.intl.string(T.t["D3+rU4"]),
+            cancelText: T.intl.string(T.t.kYpG0u),
+            onConfirm: () => (0, l.U)([], [A.YAq.USAGE_STATISTICS]).catch(d.i)
         })
     },
-    useSearchTerms: () => [A.intl.string(A.t.XuADY2)],
+    useSearchTerms: () => [T.intl.string(T.t.XuADY2)],
     useDisabled: s.uM
 })

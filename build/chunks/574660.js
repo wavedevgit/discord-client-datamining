@@ -1,67 +1,64 @@
 /** chunk id: 574660, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    F: () => A,
-    t: () => v
+    F: () => C,
+    t: () => E
 });
-var r = n(64700),
-    i = n(311907),
-    l = n(735991),
+var i = n(64700),
+    l = n(311907),
+    r = n(735991),
     a = n(297486),
     s = n(837057),
     o = n(310419),
-    c = n(734057),
-    u = n(576705),
-    d = n(309010),
-    p = n(967198),
+    d = n(734057),
+    c = n(576705),
+    u = n(309010),
+    _ = n(967198),
     m = n(692848),
-    f = n(204776),
-    g = n(354287),
-    _ = n(652215),
-    h = n(488995),
-    b = n(985018);
+    h = n(204776),
+    p = n(354287),
+    g = n(652215),
+    A = n(488995),
+    x = n(985018);
 
-function y(e) {
+function f(e) {
     let {
         isDiscoverable: t,
         customInstallUrl: n,
-        installParams: r,
+        installParams: i,
         integrationTypesConfig: a
-    } = e, s = (0, f.Ie)({
+    } = e, s = (0, h.Ie)({
         customInstallUrl: n,
-        installParams: r,
+        installParams: i,
         integrationTypesConfig: a
-    }), o = (0, i.bG)([p.A], () => {
-        var e;
-        return null != (e = p.A.getGuildId()) ? e : void 0
-    }), m = (0, i.bG)([c.A, u.A, d.A], () => {
-        let e = c.A.getChannel(d.A.getChannelId());
-        return null != e && (e.isPrivate() || u.A.can(_.xBc.SEND_MESSAGES, e))
-    }, []), g = (0, l.V1)(e, o) && m;
+    }), o = (0, l.bG)([_.A], () => _.A.getGuildId() ?? void 0), m = (0, l.bG)([d.A, c.A, u.A], () => {
+        let e = d.A.getChannel(u.A.getChannelId());
+        return null != e && (e.isPrivate() || c.A.can(g.xBc.SEND_MESSAGES, e))
+    }, []), p = (0, r.V1)(e, o) && m;
     return {
         isDiscoverable: t,
         customInstallUrl: n,
-        installParams: r,
+        installParams: i,
         integrationTypesConfig: a,
-        canViewApp: t || g,
-        canOpenAppLauncher: g,
+        canViewApp: t || p,
+        canOpenAppLauncher: p,
         isInstallable: s,
         selectedGuildId: o
     }
 }
 
-function A(e, t) {
+function C(e, t) {
     let {
         canViewApp: n,
-        canOpenAppLauncher: i,
-        isInstallable: l,
-        customInstallUrl: c,
-        installParams: u,
-        integrationTypesConfig: d,
-        selectedGuildId: p
-    } = y(e);
-    return r.useMemo(() => n ? () => {
-        (null == t || t(), i) ? (0, a.hg)(e.id) : (0, s.transitionToGlobalDiscovery)({
-            tab: h.GlobalDiscoveryTab.APPS,
+        canOpenAppLauncher: l,
+        isInstallable: r,
+        customInstallUrl: d,
+        installParams: c,
+        integrationTypesConfig: u,
+        selectedGuildId: _
+    } = f(e);
+    return i.useMemo(() => n ? () => {
+        (t?.(), l) ? (0, a.hg)(e.id) : (0, s.transitionToGlobalDiscovery)({
+            tab: A.GlobalDiscoveryTab.APPS,
             applicationId: e.id,
             newSessionState: {
                 entrypoint: {
@@ -69,34 +66,34 @@ function A(e, t) {
                 }
             }
         })
-    } : l ? () => {
-        null == t || t(), (0, m.o)({
+    } : r ? () => {
+        t?.(), (0, m.o)({
             applicationId: e.id,
-            customInstallUrl: c,
-            installParams: u,
-            integrationTypesConfig: d,
-            guildId: p,
+            customInstallUrl: d,
+            installParams: c,
+            integrationTypesConfig: u,
+            guildId: _,
             source: "app_message_embed"
         })
-    } : void 0, [e.id, i, n, c, u, d, l, t, p])
+    } : void 0, [e.id, l, n, d, c, u, r, t, _])
 }
 
-function v(e) {
+function E(e) {
     let {
         canViewApp: t,
         isInstallable: n
-    } = y(e), i = A(e);
-    return r.useMemo(() => t && null != i ? {
-        label: b.intl.string(b.t.hvVgAZ),
-        trackingArea: g.kY.VIEW,
+    } = f(e), l = C(e);
+    return i.useMemo(() => t && null != l ? {
+        label: x.intl.string(x.t.hvVgAZ),
+        trackingArea: p.kY.VIEW,
         onClick() {
-            i()
+            l()
         }
-    } : n && null != i ? {
-        label: b.intl.string(b.t.NgXl3C),
-        trackingArea: g.kY.ADD_APP,
+    } : n && null != l ? {
+        label: x.intl.string(x.t.NgXl3C),
+        trackingArea: p.kY.ADD_APP,
         onClick() {
-            i()
+            l()
         }
-    } : void 0, [t, n, i])
+    } : void 0, [t, n, l])
 }

@@ -1,67 +1,41 @@
-/** chunk id: 760459, original params: e,t,l (module,exports,require) **/
-l.d(t, {
-    A: () => r
+/** chunk id: 760459, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    A: () => s
 });
-var n = l(627968),
-    i = l(942528),
-    a = l(409626);
+var l = i(627968),
+    a = i(942528),
+    n = i(409626);
 
-function r(e) {
-    var t, l;
+function s(e) {
     let {
-        entry: r,
-        viewId: s,
-        officialGuildId: o,
-        source: c
+        entry: t,
+        viewId: i,
+        officialGuildId: s,
+        source: r
     } = e;
-    return (0, n.jsx)(i.A, (t = function(e) {
-        for (var t = 1; t < arguments.length; t++) {
-            var l = null != arguments[t] ? arguments[t] : {},
-                n = Object.keys(l);
-            "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(l).filter(function(e) {
-                return Object.getOwnPropertyDescriptor(l, e).enumerable
-            }))), n.forEach(function(t) {
-                var n;
-                n = l[t], t in e ? Object.defineProperty(e, t, {
-                    value: n,
-                    enumerable: !0,
-                    configurable: !0,
-                    writable: !0
-                }) : e[t] = n
-            })
-        }
-        return e
-    }({}, e), l = l = {
+    return (0, l.jsx)(a.A, {
+        ...e,
         onReaction: () => {
-            (0, a.Tn)({
-                action: a.Ws.SendMessageUser,
-                applicationId: r.extra.application_id,
-                gameName: r.extra.game_name,
-                recipientUserId: r.author_id,
-                viewId: s,
-                officialGuildId: o,
-                source: c
+            (0, n.Tn)({
+                action: n.Ws.SendMessageUser,
+                applicationId: t.extra.application_id,
+                gameName: t.extra.game_name,
+                recipientUserId: t.author_id,
+                viewId: i,
+                officialGuildId: s,
+                source: r
             })
         },
         onRequestOpen: () => {
-            (0, a.Tn)({
-                action: a.Ws.ClickMessageUser,
-                applicationId: r.extra.application_id,
-                gameName: r.extra.game_name,
-                recipientUserId: r.author_id,
-                viewId: s,
-                officialGuildId: o,
-                source: c
+            (0, n.Tn)({
+                action: n.Ws.ClickMessageUser,
+                applicationId: t.extra.application_id,
+                gameName: t.extra.game_name,
+                recipientUserId: t.author_id,
+                viewId: i,
+                officialGuildId: s,
+                source: r
             })
         }
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
-        var l = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var n = Object.getOwnPropertySymbols(e);
-            l.push.apply(l, n)
-        }
-        return l
-    })(Object(l)).forEach(function(e) {
-        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(l, e))
-    }), t))
+    })
 }

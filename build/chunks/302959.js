@@ -1,140 +1,91 @@
-/** chunk id: 302959, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => x,
-    M: () => j
+/** chunk id: 302959, original params: t,e,n (module,exports,require) **/
+n.d(e, {
+    A: () => y,
+    M: () => v
 });
-var r = n(627968),
+var i = n(627968),
     l = n(64700),
-    i = n(311907),
+    r = n(311907),
     a = n(833349),
     s = n(153331),
     o = n(592182),
-    c = n(587895),
+    d = n(587895),
     u = n(806246),
-    d = n(890330),
-    p = n(172710),
-    f = n(616356),
+    c = n(890330),
+    A = n(172710),
+    p = n(616356),
     m = n(734057),
-    g = n(71393),
-    y = n(977997),
-    b = n(954571),
-    _ = n(821589),
-    h = n(652215),
-    A = n(654471);
+    h = n(71393),
+    g = n(977997),
+    f = n(954571),
+    E = n(821589),
+    C = n(652215),
+    S = n(654471);
 
-function v(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = r
-        })
-    }
-    return e
-}
-
-function O(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
-        }
-        return n
-    })(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-
-function S(e) {
+function T(t) {
     let {
-        type: t,
+        type: e,
         source: n,
         activity: l,
-        applicationStream: i,
+        applicationStream: r,
         user: a,
         guildId: s,
-        channelId: c,
+        channelId: d,
         onAction: u
-    } = e;
-    return (0, r.jsx)(o.A, {
-        className: (0, _.t)(A, "actions", t),
-        type: t,
+    } = t;
+    return (0, i.jsx)(o.A, {
+        className: (0, E.t)(S, "actions", e),
+        type: e,
         source: n,
         activity: l,
-        applicationStream: i,
+        applicationStream: r,
         user: a,
         guildId: s,
         buttonVariant: "primary",
-        channelId: c,
+        channelId: d,
         onAction: u
     })
 }
-let j = s.A.Types,
-    x = function(e) {
+let v = s.A.Types,
+    y = function(t) {
         let {
-            activity: t,
+            activity: e,
             user: n,
             useStoreStream: o = !0,
-            showActions: _ = !0,
-            hideHeader: A = !1,
-            showChannelDetails: j = !1
-        } = e, x = function(e, t) {
-            if (null == e) return {};
-            var n, r, l, i = {};
-            if ("u" > typeof Reflect && Reflect.ownKeys) {
-                for (l = 0, n = Reflect.ownKeys(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
-                return i
-            }
-            if (i = function(e, t) {
-                    if (null == e) return {};
-                    var n, r, l = {},
-                        i = Object.getOwnPropertyNames(e);
-                    for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n]);
-                    return l
-                }(e, t), Object.getOwnPropertySymbols)
-                for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
-            return i
-        }(e, ["activity", "user", "useStoreStream", "showActions", "hideHeader", "showChannelDetails"]), I = (0, i.bG)([y.A, m.A], () => {
-            var e;
-            return m.A.getChannel(null == (e = y.A.getVoiceStateForUser(n.id)) ? void 0 : e.channelId)
-        }), E = (0, d.v)("UserActivityContainer", I), C = (0, i.bG)([f.A], () => o ? f.A.getAnyStreamForUser(n.id) : null), P = (null == t ? void 0 : t.type) === h.$pd.HANG_STATUS && E ? I : null, N = (0, i.bG)([g.A, y.A, m.A], () => {
-            var e, r;
-            return (0, a.A)(t, h.jUm.EMBEDDED) ? g.A.getGuild(null == (e = m.A.getChannel(null == (r = y.A.getVoiceStateForSession(n.id, null == t ? void 0 : t.session_id)) ? void 0 : r.channelId)) ? void 0 : e.getGuildId()) : null != P ? g.A.getGuild(P.getGuildId()) : null
-        }), T = (0, i.bG)([g.A], () => null != C ? g.A.getGuild(C.guildId) : null), w = (0, i.bG)([c.A], () => {
-            if (null != t)
-                if (null != t.application_id) return c.A.getApplication(t.application_id);
-                else return c.A.getApplicationByName(t.name);
+            showActions: E = !0,
+            hideHeader: S = !1,
+            showChannelDetails: v = !1,
+            ...y
+        } = t, x = (0, r.bG)([g.A, m.A], () => m.A.getChannel(g.A.getVoiceStateForUser(n.id)?.channelId)), N = (0, c.v)("UserActivityContainer", x), _ = (0, r.bG)([p.A], () => o ? p.A.getAnyStreamForUser(n.id) : null), I = e?.type === C.$pd.HANG_STATUS && N ? x : null, j = (0, r.bG)([h.A, g.A, m.A], () => (0, a.A)(e, C.jUm.EMBEDDED) ? h.A.getGuild(m.A.getChannel(g.A.getVoiceStateForSession(n.id, e?.session_id)?.channelId)?.getGuildId()) : null != I ? h.A.getGuild(I.getGuildId()) : null), P = (0, r.bG)([h.A], () => null != _ ? h.A.getGuild(_.guildId) : null), U = (0, r.bG)([d.A], () => {
+            if (null != e)
+                if (null != e.application_id) return d.A.getApplication(e.application_id);
+                else return d.A.getApplicationByName(e.name);
             return null
         });
         return (l.useEffect(() => {
-            (null == t ? void 0 : t.type) === h.$pd.HANG_STATUS && E && b.default.track(h.HAw.VIEW_HANG_STATUS, v({
+            e?.type === C.$pd.HANG_STATUS && N && f.default.track(C.HAw.VIEW_HANG_STATUS, {
                 source: "UserActivity",
-                other_user_id: n.id
-            }, (0, u.A)(null == P ? void 0 : P.id)))
-        }, [null == t ? void 0 : t.type, E, P, n.id]), (null == t ? void 0 : t.type) !== h.$pd.HANG_STATUS || E) ? (0, r.jsx)(s.A, O(v({}, x), {
-            activity: t,
+                other_user_id: n.id,
+                ...(0, u.A)(I?.id)
+            })
+        }, [e?.type, N, I, n.id]), e?.type !== C.$pd.HANG_STATUS || N) ? (0, i.jsx)(s.A, {
+            ...y,
+            activity: e,
             user: n,
-            application: w,
-            hideHeader: A,
-            activityGuild: null != N ? N : T,
-            showChannelDetails: j,
-            channel: j ? I : void 0,
-            renderActions: _ ? () => (0, r.jsx)(S, O(v({}, x), {
-                applicationStream: C,
-                activity: t,
+            application: U,
+            hideHeader: S,
+            activityGuild: j ?? P,
+            showChannelDetails: v,
+            channel: v ? x : void 0,
+            enableUserHoverActivities: y.enableUserHoverActivities,
+            renderActions: E ? () => (0, i.jsx)(T, {
+                ...y,
+                applicationStream: _,
+                activity: e,
                 user: n
-            })) : null,
-            onOpenSpotifyTrack: p.Mp,
-            onOpenSpotifyArtist: p.mN,
-            onOpenSpotifyAlbum: p.QX
-        })) : null
+            }) : null,
+            onOpenSpotifyTrack: A.Mp,
+            onOpenSpotifyArtist: A.mN,
+            onOpenSpotifyAlbum: A.QX
+        }) : null
     }

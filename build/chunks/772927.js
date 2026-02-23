@@ -1,17 +1,17 @@
 /** chunk id: 772927, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => l
+    A: () => a
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(525739);
+var s = n(525739);
 
-function l(e) {
+function a(e) {
     let {
         children: t
     } = e;
-    return (0, r.jsx)("div", {
-        className: i.y,
+    return (0, i.jsx)("div", {
+        className: s.y,
         children: t
     })
 }

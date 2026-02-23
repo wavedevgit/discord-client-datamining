@@ -1,83 +1,60 @@
-/** chunk id: 842716, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    A: () => y
-}), n(733351), n(667532);
-var r, i = n(311907),
-    a = n(506774),
-    o = n(73153),
-    s = n(768570);
-
-function l(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-let c = s.nC,
-    u = "tokenized",
-    d = !1,
-    f = {};
-
-function p(e) {
-    var t;
-    let {
-        id: n,
-        query: r
-    } = e;
-    if ("string" != typeof r || "" === (r = r.trim())) return;
-    let i = f[n] = null != (t = f[n]) ? t : [],
-        o = i.indexOf(r); - 1 !== o ? (i.splice(o, 1), i.unshift(r)) : null != i[0] && "" !== i[0] && r.startsWith(i[0]) ? i[0] = r : o < 0 && i.unshift(r), i.length > 5 && i.splice(5, i.length), a.w.set(s.nC, {
-        history: f
-    })
-}
-
-function _(e) {
-    let {
-        id: t
-    } = e;
-    delete f[t], a.w.set(s.nC, {
-        history: f
-    })
-}
-
-function h(e) {
-    let {
-        id: t,
-        query: n
-    } = e;
-    null != f[t] && (f[t] = f[t].filter(e => e !== n), a.w.set(s.nC, {
-        history: f
-    }))
-}
-
-function m(e) {
-    return Object.keys(e).forEach(t => {
-        Array.isArray(e[t]) && (e[t] = e[t].filter(e => "string" == typeof e && e.trim())), Array.isArray(e[t]) && 0 !== e[t].length || delete e[t]
-    }), e
-}
-
-function g() {
-    a.w.remove(s.nC), f = {}
-}
-class E extends(r = i.Ay.Store) {
+/** chunk id: 842716, original params: e,t,r (module,exports,require) **/
+r.d(t, {
+    A: () => d
+}), r(667532);
+var s = r(311907),
+    n = r(506774),
+    l = r(73153),
+    a = r(768570);
+let i = a.nC,
+    o = !1,
+    u = {};
+class c extends s.Ay.Store {
+    static displayName = a.yQ;
     initialize() {
-        let e = a.w.get(c);
-        (null == e ? void 0 : e.history) != null && (f = m(e.history)), d = !!a.w.get(u)
+        var e;
+        let t = n.w.get(i);
+        t?.history != null && (Object.keys(e = t.history).forEach(t => {
+            Array.isArray(e[t]) && (e[t] = e[t].filter(e => "string" == typeof e && e.trim())), Array.isArray(e[t]) && 0 !== e[t].length || delete e[t]
+        }), u = e), o = !!n.w.get("tokenized")
     }
     isTokenized() {
-        return d
+        return o
     }
     getHistory(e) {
-        return f[e]
+        return u[e]
     }
 }
-l(E, "displayName", s.yQ);
-let y = new E(o.h, {
-    SEARCH_HISTORY_WEB_CLEAR_ITEMS: _,
-    SEARCH_HISTORY_WEB_REMOVE_ITEM: h,
-    SEARCH_HISTORY_WEB_ADD_ITEM: p,
-    LOGOUT: g
+let d = new c(l.h, {
+    SEARCH_HISTORY_WEB_CLEAR_ITEMS: function(e) {
+        let {
+            id: t
+        } = e;
+        delete u[t], n.w.set(a.nC, {
+            history: u
+        })
+    },
+    SEARCH_HISTORY_WEB_REMOVE_ITEM: function(e) {
+        let {
+            id: t,
+            query: r
+        } = e;
+        null != u[t] && (u[t] = u[t].filter(e => e !== r), n.w.set(a.nC, {
+            history: u
+        }))
+    },
+    SEARCH_HISTORY_WEB_ADD_ITEM: function(e) {
+        let {
+            id: t,
+            query: r
+        } = e;
+        if ("string" != typeof r || "" === (r = r.trim())) return;
+        let s = u[t] = u[t] ?? [],
+            l = s.indexOf(r); - 1 !== l ? (s.splice(l, 1), s.unshift(r)) : null != s[0] && "" !== s[0] && r.startsWith(s[0]) ? s[0] = r : l < 0 && s.unshift(r), s.length > 5 && s.splice(5, s.length), n.w.set(a.nC, {
+            history: u
+        })
+    },
+    LOGOUT: function() {
+        n.w.remove(a.nC), u = {}
+    }
 })

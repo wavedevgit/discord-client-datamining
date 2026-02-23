@@ -1,107 +1,79 @@
 /** chunk id: 663572, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => _
+    A: () => p
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(397927),
-    s = n(611010),
+var s = n(397927),
+    r = n(611010),
     l = n(95701),
     a = n(427157),
     o = n(860689),
-    c = n(949155),
-    u = n(131929),
-    d = n(652215),
+    d = n(949155),
+    c = n(131929),
+    u = n(652215),
     h = n(985018),
-    p = n(140030);
+    _ = n(140030);
 
-function g(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = r
-        })
-    }
-    return e
-}
-
-function f(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
-        }
-        return n
-    })(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-
-function _(e) {
+function p(e) {
     let {
         invite: t,
         onAcceptInvite: n,
-        disableUser: _ = !1
+        disableUser: p = !1
     } = e;
     if (null == t) return null;
-    let m = null != t.guild ? (0, o.DY)(t.guild) : null,
-        A = null != t.channel ? (0, l.OY)(t.channel) : null,
-        x = null != t.target_application ? new s.Ay(t.target_application) : null,
-        E = _ || null == t.inviter ? null : new a.A(t.inviter),
-        v = !(null != t.approximate_member_count && t.approximate_member_count > c.FC || null != m && m.features.has(d.GuildFeatures.COMMUNITY)) && null != E && (0, c.B_)(t),
-        y = (e => {
+    let g = null != t.guild ? (0, o.DY)(t.guild) : null,
+        m = null != t.channel ? (0, l.OY)(t.channel) : null,
+        f = null != t.target_application ? new r.Ay(t.target_application) : null,
+        A = p || null == t.inviter ? null : new a.A(t.inviter),
+        E = !(null != t.approximate_member_count && t.approximate_member_count > d.FC || null != g && g.features.has(u.GuildFeatures.COMMUNITY)) && null != A && (0, d.B_)(t),
+        x = (e => {
             let {
                 state: t
             } = e;
             switch (t) {
-                case d.elq.ACCEPTING:
-                case d.elq.APP_OPENING:
+                case u.elq.ACCEPTING:
+                case u.elq.APP_OPENING:
                     return !0;
                 default:
                     return !1
             }
         })(t),
-        b = {
+        I = {
             invite: t,
-            user: E,
-            guild: m,
-            channel: A,
-            application: x
+            user: A,
+            guild: g,
+            channel: m,
+            application: f
         };
-    return (0, c.Fk)(t) ? (0, r.jsx)(u.A, {
+    return (0, d.Fk)(t) ? (0, i.jsx)(c.A, {
         invite: t,
-        channel: A,
-        isSubmitting: y,
+        channel: m,
+        isSubmitting: x,
         onAcceptInvite: n
-    }) : (0, r.jsxs)("div", {
-        className: p.kL,
-        children: [(0, r.jsx)(c.zN, {
-            application: x,
-            guild: m,
-            user: v || (0, c.PX)(t) ? E : null
-        }), (0, c.PX)(t) ? null : (0, r.jsx)(c.ji, f(g({}, b), {
-            showBigUserIcon: v
-        })), (0, r.jsx)(c.TZ, f(g({}, b), {
-            showBigUserIcon: v
-        })), (0, r.jsx)(c.IK, g({}, b)), (0, r.jsx)("div", {
-            className: p.xG,
-            children: (0, r.jsx)(i.Button, {
+    }) : (0, i.jsxs)("div", {
+        className: _.kL,
+        children: [(0, i.jsx)(d.zN, {
+            application: f,
+            guild: g,
+            user: E || (0, d.PX)(t) ? A : null
+        }), (0, d.PX)(t) ? null : (0, i.jsx)(d.ji, {
+            ...I,
+            showBigUserIcon: E
+        }), (0, i.jsx)(d.TZ, {
+            ...I,
+            showBigUserIcon: E
+        }), (0, i.jsx)(d.IK, {
+            ...I
+        }), (0, i.jsx)("div", {
+            className: _.xG,
+            children: (0, i.jsx)(s.Button, {
                 variant: "primary",
                 size: "md",
                 text: h.intl.string(h.t.ohMvm1),
                 onClick: n,
-                loading: y,
+                loading: x,
                 fullWidth: !0
             })
         })]

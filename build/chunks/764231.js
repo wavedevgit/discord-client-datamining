@@ -1,10 +1,10 @@
 /** chunk id: 764231, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    T: () => i
+    T: () => l
 }), n(439174), n(112848);
 var r = n(788868),
     a = n(985018);
-let i = (e, t) => {
+let l = (e, t) => {
     switch (e) {
         case r.Ac.PREMIUM_TENURE_1_MONTH:
         case r.Ac.PREMIUM_TENURE_3_MONTH:

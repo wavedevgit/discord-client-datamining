@@ -1,17 +1,17 @@
 /** chunk id: 398523, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => l
+    A: () => a
 });
-var r = n(600975),
-    i = n(688151);
-let l = (0, r.C)({
+var i = n(600975),
+    s = n(688151);
+let a = (0, i.C)({
     kind: "user",
     id: "2025-10_recurring_3p_promotion",
     label: "Recurring 3P Promotion Experiment",
     defaultConfig: {
         enabled: !1
     },
-    commonTriggerPoint: i.$G.CONNECTION_OPEN,
+    commonTriggerPoint: s.$G.CONNECTION_OPEN,
     treatments: [{
         id: 0,
         label: "Control group. Users do not get to see the recurring 3P promotion surfaces.",

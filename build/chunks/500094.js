@@ -2,13 +2,13 @@
 n.d(t, {
     A: () => l
 });
-var r = n(600975),
-    i = n(688151);
-let l = (0, r.C)({
+var i = n(600975),
+    r = n(688151);
+let l = (0, i.C)({
     kind: "guild",
     id: "2025-04_report_to_mod",
     label: "Report to moderator",
-    commonTriggerPoint: i.$G.CONNECTION_OPEN,
+    commonTriggerPoint: r.$G.CONNECTION_OPEN,
     defaultConfig: {
         enabled: !1
     },

@@ -1,9 +1,9 @@
 /** chunk id: 545509, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    j: () => i
+    j: () => l
 });
-var r = n(218394);
+var i = n(218394);
 
-function i() {
-    return (0, r.j)()
+function l() {
+    return (0, i.j)()
 }

@@ -1,74 +1,14 @@
-/** chunk id: 5900, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    V: () => h
+/** chunk id: 5900, original params: e,l,a (module,exports,require) **/
+a.d(l, {
+    V: () => d
 });
-var r = n(627968),
-    i = n(64700),
-    a = n(397927),
-    o = n(459192),
-    s = n(990078),
-    l = n(710617);
-
-function c(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-
-function u(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            c(e, t, n[t])
-        })
-    }
-    return e
-}
-
-function d(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-        var r = Object.getOwnPropertySymbols(e);
-        t && (r = r.filter(function(t) {
-            return Object.getOwnPropertyDescriptor(e, t).enumerable
-        })), n.push.apply(n, r)
-    }
-    return n
-}
-
-function f(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : d(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-
-function p(e, t) {
-    if (null == e) return {};
-    var n, r, i, a = {};
-    if ("u" > typeof Reflect && Reflect.ownKeys) {
-        for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
-        return a
-    }
-    if (a = _(e, t), Object.getOwnPropertySymbols)
-        for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
-    return a
-}
-
-function _(e, t) {
-    if (null == e) return {};
-    var n, r, i = {},
-        a = Object.getOwnPropertyNames(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
-    return i
-}
-let h = {
+var t = a(627968),
+    o = a(64700),
+    n = a(397927),
+    i = a(459192),
+    s = a(990078),
+    r = a(557464);
+let d = {
     title: "Tooltip",
     stories: [{
         name: "Tooltip",
@@ -76,36 +16,37 @@ let h = {
         docs: "https://design.discord.tools/components/web/tooltip",
         component: function(e) {
             let {
-                text: t,
-                position: n,
-                align: o,
-                caretAlign: l,
-                customOffset: c,
-                delay: d,
-                spacing: _,
-                ariaHidden: h
-            } = e, m = p(e, ["text", "position", "align", "caretAlign", "customOffset", "delay", "spacing", "ariaHidden"]), g = i.useMemo(() => {
-                if ("center" !== l && null != l) return "custom" === l ? {
-                    align: l,
-                    customOffset: c
+                text: l,
+                position: a,
+                align: i,
+                caretAlign: r,
+                customOffset: d,
+                delay: u,
+                spacing: c,
+                ariaHidden: b,
+                ...p
+            } = e, m = o.useMemo(() => {
+                if ("center" !== r && null != r) return "custom" === r ? {
+                    align: r,
+                    customOffset: d
                 } : {
-                    align: l
+                    align: r
                 }
-            }, [l, c]);
-            return (0, r.jsx)(s.m, f(u({
-                text: t,
-                position: n,
-                align: o,
-                delay: d,
-                spacing: _,
-                caretConfig: g,
-                ariaHidden: h
-            }, m), {
-                children: (0, r.jsx)(a.Button, {
+            }, [r, d]);
+            return (0, t.jsx)(s.m, {
+                text: l,
+                position: a,
+                align: i,
+                delay: u,
+                spacing: c,
+                caretConfig: m,
+                ariaHidden: b,
+                ...p,
+                children: (0, t.jsx)(n.Button, {
                     variant: "primary",
                     text: "Hover me"
                 })
-            }))
+            })
         },
         controls: {
             text: {
@@ -202,46 +143,49 @@ let h = {
         docs: "https://design.discord.tools/components/web/tooltip",
         component: function(e) {
             let {
-                title: t,
-                body: n,
+                title: l,
+                body: a,
                 showAsset: s,
-                assetSize: c,
-                position: d,
-                align: _,
-                caretAlign: h,
+                assetSize: d,
+                padding: u,
+                position: c,
+                align: b,
+                caretAlign: p,
                 customOffset: m,
-                delay: g,
-                spacing: E,
-                forceOpen: y
-            } = e, b = p(e, ["title", "body", "showAsset", "assetSize", "position", "align", "caretAlign", "customOffset", "delay", "spacing", "forceOpen"]), O = i.useMemo(() => {
-                if ("center" !== h && null != h) return "custom" === h ? {
-                    align: h,
+                delay: x,
+                spacing: v,
+                forceOpen: h,
+                ...y
+            } = e, f = o.useMemo(() => {
+                if ("center" !== p && null != p) return "custom" === p ? {
+                    align: p,
                     customOffset: m
                 } : {
-                    align: h
+                    align: p
                 }
-            }, [h, m]), v = i.useMemo(() => s ? {
+            }, [p, m]), g = o.useMemo(() => s ? {
                 type: "image",
-                src: l.A,
+                src: r.A,
                 aspectRatio: "1/1"
             } : void 0, [s]);
-            return (0, r.jsx)(o.u, f(u({
-                title: t,
-                body: n,
-                position: d,
-                align: _,
-                delay: g,
-                spacing: E,
-                caretConfig: O,
-                asset: v,
-                assetSize: c,
-                forceOpen: y
-            }, b), {
-                children: (0, r.jsx)(a.Button, {
+            return (0, t.jsx)(i.u, {
+                title: l,
+                body: a,
+                position: c,
+                align: b,
+                padding: u,
+                delay: x,
+                spacing: v,
+                caretConfig: f,
+                asset: g,
+                assetSize: d,
+                forceOpen: h,
+                ...y,
+                children: (0, t.jsx)(n.Button, {
                     variant: "primary",
                     text: "Hover me (rich)"
                 })
-            }))
+            })
         },
         controls: {
             title: {
@@ -273,6 +217,21 @@ let h = {
                 }, {
                     label: "48px",
                     value: 48
+                }, {
+                    label: "80px",
+                    value: 80
+                }]
+            },
+            padding: {
+                label: "Padding",
+                type: "select",
+                defaultValue: "default",
+                options: [{
+                    label: "Default",
+                    value: "default"
+                }, {
+                    label: "Large",
+                    value: "lg"
                 }]
             },
             position: {

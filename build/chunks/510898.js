@@ -1,61 +1,29 @@
 /** chunk id: 510898, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
-}), n(896048);
-var r = n(627968),
-    i = n(64700),
-    l = n(397927),
-    s = n(403362),
-    a = n(143582),
+    A: () => A
+});
+var i = n(627968),
+    s = n(64700),
+    a = n(397927),
+    r = n(403362),
+    l = n(143582),
     o = n(915043),
     c = n(888848),
     d = n(331441),
     u = n(20770),
     _ = n(985018);
-
-function p(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-
-function m(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            p(e, t, n[t])
-        })
-    }
-    return e
-}
-
-function g(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
-        }
-        return n
-    })(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-class A extends i.PureComponent {
+class m extends s.PureComponent {
+    state = {
+        hasError: !1
+    };
     static getDerivedStateFromError(e) {
         return {
             hasError: !0
         }
     }
     render() {
-        return this.state.hasError ? (0, r.jsxs)(l.$Td, {
-            color: l.Hv$.DANGER,
+        return this.state.hasError ? (0, i.jsxs)(a.$Td, {
+            color: a.Hv$.DANGER,
             style: {
                 borderRadius: 0
             },
@@ -66,89 +34,69 @@ class A extends i.PureComponent {
             })]
         }) : this.props.children
     }
-    constructor(...e) {
-        super(...e), p(this, "state", {
-            hasError: !1
-        })
-    }
 }
 
-function f(e) {
+function A(e) {
     let {
         subscriptions: t,
         updateHeader: n
-    } = e, [l, p] = i.useState({
+    } = e, [a, A] = s.useState({
         route: d.R.HOME
     }), {
-        route: f
-    } = l, b = () => {
-        p({
+        route: g
+    } = a, h = () => {
+        A({
             route: d.R.HOME
         })
-    }, h = e => {
-        p(m({
-            route: d.R.SWITCH_APP_PLANS
-        }, e)), n(_.intl.string(_.t.VFqtkP), b)
-    }, [E, O] = i.useState({});
-    i.useEffect(() => {
-        for (let n of t) {
-            var e;
-            let t = null == (e = n.items[0]) ? void 0 : e.planId;
-            null != t && (O(e => g(m({}, e), {
-                [n.id]: c.G.LOADING
-            })), (0, a._R)(t).then(() => {
-                O(e => g(m({}, e), {
-                    [n.id]: c.G.DONE
+    }, x = e => {
+        A({
+            route: d.R.SWITCH_APP_PLANS,
+            ...e
+        }), n(_.intl.string(_.t.VFqtkP), h)
+    }, [p, E] = s.useState({});
+    s.useEffect(() => {
+        for (let e of t) {
+            let t = e.items[0]?.planId;
+            null != t && (E(t => ({
+                ...t,
+                [e.id]: c.G.LOADING
+            })), (0, l._R)(t).then(() => {
+                E(t => ({
+                    ...t,
+                    [e.id]: c.G.DONE
                 }))
             }).catch(() => {
-                O(e => g(m({}, e), {
-                    [n.id]: c.G.ERROR
+                E(t => ({
+                    ...t,
+                    [e.id]: c.G.ERROR
                 }))
             }))
         }
     }, [t]);
     let {
-        loadState: x
-    } = (0, o.E)(), C = x !== o.mJ.LOADED;
-    switch (f) {
+        loadState: C
+    } = (0, o.E)(), T = C !== o.mJ.LOADED;
+    switch (g) {
         case d.R.HOME:
-            return (0, r.jsx)(r.Fragment, {
-                children: t.map(e => {
-                    var t;
-                    return (0, r.jsx)(A, {
+            return (0, i.jsx)(i.Fragment, {
+                children: t.map(e => (0, i.jsx)(m, {
+                    subscription: e,
+                    children: (0, i.jsx)(c.A, {
                         subscription: e,
-                        children: (0, r.jsx)(c.A, {
-                            subscription: e,
-                            navigateToSwitchPlan: h,
-                            loadingState: C ? c.G.LOADING : null != (t = E[e.id]) ? t : c.G.LOADING
-                        })
-                    }, e.id)
-                })
+                        navigateToSwitchPlan: x,
+                        loadingState: T ? c.G.LOADING : p[e.id] ?? c.G.LOADING
+                    })
+                }, e.id))
             });
         case d.R.SWITCH_APP_PLANS:
             let {
-                route: S
-            } = l, T = function(e, t) {
-                if (null == e) return {};
-                var n, r, i, l = {};
-                if ("u" > typeof Reflect && Reflect.ownKeys) {
-                    for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
-                    return l
-                }
-                if (l = function(e, t) {
-                        if (null == e) return {};
-                        var n, r, i = {},
-                            l = Object.getOwnPropertyNames(e);
-                        for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
-                        return i
-                    }(e, t), Object.getOwnPropertySymbols)
-                    for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
-                return l
-            }(l, ["route"]);
-            return (0, r.jsx)(u.A, g(m({}, T), {
-                navigateToHome: b
-            }));
+                route: S, ...I
+            } = a;
+            return (0, i.jsx)(u.A, {
+                ...I,
+                navigateToHome: h
+            });
         default:
-            (0, s.xb)(f)
+            (0, r.xb)(g)
     }
 }

@@ -1,4 +1,5 @@
 /** chunk id: 837021, original params: e,t,n (module,exports,require) **/
+"use strict";
 e.exports = {
     rN: "blobContainer_e5445c",
     Io: "pill_e5445c",

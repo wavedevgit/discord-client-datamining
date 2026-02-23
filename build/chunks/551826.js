@@ -2,12 +2,12 @@
 n.d(t, {
     A: () => o
 });
-var l = n(627968);
+var i = n(627968);
 n(64700);
-var r = n(417597),
-    i = n(397927),
+var l = n(417597),
+    s = n(397927),
     a = n(3137),
-    s = n(208343);
+    r = n(208343);
 
 function o(e) {
     let {
@@ -15,12 +15,12 @@ function o(e) {
         shakeLocation: n,
         children: o,
         className: c
-    } = e, u = (0, s.A)(n);
-    return (0, r.bG)([a.A], () => a.A.isEnabled({
+    } = e, d = (0, r.A)(n);
+    return (0, l.bG)([a.A], () => a.A.isEnabled({
         shakeLocation: n
-    })) ? (0, l.jsx)(i.bfh, {
+    })) ? (0, i.jsx)(s.bfh, {
         isShaking: t,
-        intensity: u,
+        intensity: d,
         className: c,
         children: o
     }) : o

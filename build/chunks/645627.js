@@ -1,68 +1,67 @@
 /** chunk id: 645627, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    HJ: () => u,
-    Ln: () => c
-}), n(896048);
-var r = n(64700),
-    s = n(975807),
+    HJ: () => c,
+    Ln: () => d
+});
+var s = n(64700),
+    a = n(975807),
     i = n(829219),
-    a = n(341915),
+    r = n(341915),
     o = n(18437),
     l = n(590202);
 
-function c(e) {
+function d(e) {
     let {
         isClaimingReward: t,
         isFetchingRewardCode: n,
-        questContent: s,
+        questContent: a,
         quest: o,
         rewardCode: l,
-        preview: c
-    } = e, [u, d] = r.useState(!1), [m, p] = r.useState(!1), f = r.useCallback(async (e, t, n) => {
+        preview: d
+    } = e, [c, u] = s.useState(!1), [m, C] = s.useState(!1), h = s.useCallback(async (e, t, n) => {
         try {
-            p(!0), await (0, i.Oq)(e, t, n), d(!1), p(!1)
+            C(!0), await (0, i.Oq)(e, t, n), u(!1), C(!1)
         } catch (e) {
-            d(!0), p(!1)
+            u(!0), C(!1)
         }
-    }, []), C = r.useCallback(e => {
+    }, []), x = s.useCallback(e => {
         try {
             (0, i.jh)(e)
         } catch (e) {
-            d(!0)
+            u(!0)
         }
     }, []);
-    return r.useEffect(() => {
-        var e, r;
-        !0 === c || null != l || u || t || m || n || (d(!1), (null == (e = o.userStatus) ? void 0 : e.claimedAt) == null ? f(o.id, a.pY.CROSS_PLATFORM, s) : (null == (r = o.userStatus) ? void 0 : r.claimedAt) != null && C(o.id))
-    }, [f, C, u, t, m, n, s, o, l, c]), {
-        claimCode: f,
-        fetchCode: C,
-        hasError: u,
-        setHasError: d
+    return s.useEffect(() => {
+        !0 === d || null != l || c || t || m || n || (u(!1), o.userStatus?.claimedAt == null ? h(o.id, r.pY.CROSS_PLATFORM, a) : o.userStatus?.claimedAt != null && x(o.id))
+    }, [h, x, c, t, m, n, a, o, l, d]), {
+        claimCode: h,
+        fetchCode: x,
+        hasError: c,
+        setHasError: u
     }
 }
 
-function u(e) {
+function c(e) {
     let {
         quest: t,
         redemptionLink: n,
         questContent: i,
-        questContentPosition: a,
-        sourceQuestContent: c
-    } = e, u = (0, o.Ut)();
-    return r.useCallback(() => {
-        null != n && (u({
+        questContentPosition: r,
+        sourceQuestContent: d
+    } = e, c = (0, o.Ut)();
+    return s.useCallback(() => {
+        null != n && (c({
             questId: t.id,
             questContent: i,
             questContentCTA: l.Cy.REDEEM_REWARD,
-            questContentPosition: a,
-            sourceQuestContent: c
-        }), u({
+            questContentPosition: r,
+            sourceQuestContent: d
+        }), c({
             questId: t.id,
             questContent: i,
             questContentCTA: l.Cy.VISIT_REDEMPTION_LINK,
-            questContentPosition: a,
-            sourceQuestContent: c
-        }), (0, s.A)(n))
-    }, [t.id, i, a, c, u, n])
+            questContentPosition: r,
+            sourceQuestContent: d
+        }), (0, a.A)(n))
+    }, [t.id, i, r, d, c, n])
 }

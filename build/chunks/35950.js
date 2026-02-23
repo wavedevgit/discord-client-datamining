@@ -1,56 +1,55 @@
-/** chunk id: 35950, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => f
-}), n(896048);
-var l = n(627968),
-    r = n(64700),
-    i = n(503698),
-    s = n.n(i),
-    a = n(735438),
-    o = n(311907),
-    c = n(397927),
-    u = n(993408),
-    d = n(821701),
-    p = n(645178),
-    m = n(833336),
-    x = n(836602),
-    g = n(773669),
-    A = n(405269),
-    h = n(927578),
-    _ = n(359701),
-    y = n(550111),
-    j = n(985018),
-    v = n(514748);
-let b = e => {
+/** chunk id: 35950, original params: e,t,l (module,exports,require) **/
+l.d(t, {
+    A: () => v
+});
+var s = l(627968),
+    n = l(64700),
+    i = l(503698),
+    r = l.n(i),
+    a = l(735438),
+    c = l(311907),
+    o = l(397927),
+    u = l(993408),
+    d = l(821701),
+    m = l(536572),
+    p = l(836602),
+    x = l(773669),
+    A = l(405269),
+    h = l(927578),
+    _ = l(359701),
+    g = l(550111),
+    j = l(985018),
+    y = l(514748);
+let C = e => {
         let {
             purchase: t,
-            product: n,
+            product: l,
             user: i
-        } = e, d = (0, o.bG)([g.default], () => g.default.locale), m = (0, p.Tk)(t), x = (0, p.o7)(n), _ = h.Ay.canUseCollectibles(i), y = (0, u.gA)(t), b = (0, u.G0)(n), f = !_ && y, [O, C] = r.useState(null);
-        r.useEffect(() => {
-            C((null == t ? void 0 : t.expiresAt) != null ? (0, A.Tf)(Date.now(), t.expiresAt) : null)
-        }, [null == t ? void 0 : t.expiresAt]);
-        let E = null == t || f;
-        return (0, l.jsxs)("div", {
-            className: s()(v.ip, {
-                [v.w6]: E
+        } = e, d = (0, c.bG)([x.default], () => x.default.locale), p = (0, m.Sw)(t), _ = (0, m.VG)(l), g = h.Ay.canUseCollectibles(i), C = (0, u.gA)(t), v = (0, u.G0)(l), E = !g && C, [N, I] = n.useState(null);
+        n.useEffect(() => {
+            I(t?.expiresAt != null ? (0, A.Tf)(Date.now(), t.expiresAt) : null)
+        }, [t?.expiresAt]);
+        let b = null == t || E;
+        return (0, s.jsxs)("div", {
+            className: r()(y.ip, {
+                [y.w6]: b
             }),
-            children: [(0, l.jsx)(c.Text, {
+            children: [(0, s.jsx)(o.Text, {
                 color: "text-strong",
                 variant: "text-sm/semibold",
-                children: (0, a.isEmpty)(m) ? x : m
-            }), E ? (0, l.jsx)(c.Text, {
+                children: (0, a.isEmpty)(p) ? _ : p
+            }), b ? (0, s.jsx)(o.Text, {
                 color: "text-default",
                 variant: "text-sm/normal",
-                children: f ? j.intl.string(j.t.nD78oa) : b && _ ? j.intl.string(j.t.hmyYK8) : b ? j.intl.string(j.t.JY1i0u) : j.intl.string(j.t.fEGjVQ)
-            }) : (0, l.jsxs)(l.Fragment, {
-                children: [null != O && (0, l.jsx)(c.Text, {
+                children: E ? j.intl.string(j.t.nD78oa) : v && g ? j.intl.string(j.t.hmyYK8) : v ? j.intl.string(j.t.JY1i0u) : j.intl.string(j.t.fEGjVQ)
+            }) : (0, s.jsxs)(s.Fragment, {
+                children: [null != N && (0, s.jsx)(o.Text, {
                     variant: "text-xxs/normal",
                     color: "text-muted",
                     children: j.intl.format(j.t.Io7ozn, {
-                        days: O.days.toString()
+                        days: N.days.toString()
                     })
-                }), (0, l.jsxs)(c.Text, {
+                }), (0, s.jsxs)(o.Text, {
                     variant: "text-xxs/normal",
                     color: "text-muted",
                     children: [j.intl.format(j.t.gW9R4B, {
@@ -58,8 +57,8 @@ let b = e => {
                             month: "long",
                             year: "numeric"
                         })
-                    }), null != t.expiresAt && (0, l.jsxs)(l.Fragment, {
-                        children: [(0, l.jsx)("br", {}), j.intl.format(j.t.eZSTa5, {
+                    }), null != t.expiresAt && (0, s.jsxs)(s.Fragment, {
+                        children: [(0, s.jsx)("br", {}), j.intl.format(j.t.eZSTa5, {
                             date: t.expiresAt.toLocaleDateString(d, {
                                 minute: "numeric",
                                 hour: "numeric",
@@ -69,7 +68,7 @@ let b = e => {
                             })
                         })]
                     })]
-                }), y && (0, l.jsx)(c.Text, {
+                }), C && (0, s.jsx)(o.Text, {
                     variant: "text-xxs/normal",
                     color: "text-muted",
                     children: j.intl.string(j.t.nKdAlO)
@@ -77,76 +76,50 @@ let b = e => {
             })]
         })
     },
-    f = e => {
-        var t, n;
+    v = e => {
         let {
-            user: r,
-            guildId: i,
-            nameplate: a
-        } = e, c = (0, o.cf)([x.A, m.A], () => null == i ? x.A.getPendingChanges() : m.A.getAllPending()), {
-            product: p,
-            purchase: g
-        } = (0, d.A)(null == a ? void 0 : a.skuId), A = h.Ay.canUseCollectibles(r), f = (0, u.gA)(g), O = null == g || !A && f;
-        return (0, l.jsxs)("div", {
-            className: s()(v.i1, {
-                [v.Zj]: null != a && O
+            user: t,
+            guildId: l,
+            nameplate: n
+        } = e, i = (0, c.cf)([p.A], () => p.A.getPendingChanges(l)), {
+            product: a,
+            purchase: o
+        } = (0, d.A)(n?.skuId), m = h.Ay.canUseCollectibles(t), x = (0, u.gA)(o), A = null == o || !m && x;
+        return (0, s.jsxs)("div", {
+            className: r()(y.i1, {
+                [y.Zj]: null != n && A
             }),
-            children: [(0, l.jsx)("div", {
-                className: v.u_,
+            children: [(0, s.jsx)("div", {
+                className: y.u_,
                 role: "img",
                 "aria-label": j.intl.string(j.t.SZeUdR),
-                children: (0, l.jsxs)("div", {
-                    className: v.Xp,
+                children: (0, s.jsxs)("div", {
+                    className: y.Xp,
                     "aria-hidden": !0,
-                    children: [(0, l.jsx)(_._, {
+                    children: [(0, s.jsx)(_._, {
                         width: 124,
                         opacity: .9
-                    }), (0, l.jsx)(_._, {
+                    }), (0, s.jsx)(_._, {
                         width: 124,
                         opacity: .9
-                    }), (0, l.jsx)(y.A, (t = function(e) {
-                        for (var t = 1; t < arguments.length; t++) {
-                            var n = null != arguments[t] ? arguments[t] : {},
-                                l = Object.keys(n);
-                            "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                                return Object.getOwnPropertyDescriptor(n, e).enumerable
-                            }))), l.forEach(function(t) {
-                                var l;
-                                l = n[t], t in e ? Object.defineProperty(e, t, {
-                                    value: l,
-                                    enumerable: !0,
-                                    configurable: !0,
-                                    writable: !0
-                                }) : e[t] = l
-                            })
-                        }
-                        return e
-                    }({}, c), n = n = {
-                        user: r,
-                        guildId: i,
-                        nameplate: a,
+                    }), (0, s.jsx)(g.A, {
+                        ...i,
+                        user: t,
+                        guildId: l,
+                        nameplate: n,
                         isHighlighted: !0
-                    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
-                        var n = Object.keys(e);
-                        if (Object.getOwnPropertySymbols) {
-                            var l = Object.getOwnPropertySymbols(e);
-                            n.push.apply(n, l)
-                        }
-                        return n
-                    })(Object(n)).forEach(function(e) {
-                        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-                    }), t)), (0, l.jsx)(_._, {
+                    }), (0, s.jsx)(_._, {
                         width: 124,
                         opacity: .9
-                    }), (0, l.jsx)(_._, {
+                    }), (0, s.jsx)(_._, {
                         width: 124,
                         opacity: .9
                     })]
                 })
-            }), null != a && (0, l.jsx)(b, {
-                purchase: g,
-                product: p,
-                user: r
+            }), null != n && (0, s.jsx)(C, {
+                purchase: o,
+                product: a,
+                user: t
             })]
         })
     }

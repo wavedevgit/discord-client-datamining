@@ -2,33 +2,33 @@
 "use strict";
 n.d(t, {
     A: () => m
-}), n(896048);
-var r = n(627968),
-    l = n(64700),
-    i = n(503698),
-    a = n.n(i),
-    s = n(942381),
+});
+var l = n(627968),
+    i = n(64700),
+    s = n(503698),
+    a = n.n(s),
+    r = n(942381),
     o = n(375499),
-    c = n(151271),
-    d = n(698279),
+    d = n(151271),
+    c = n(698279),
     u = n(111314);
-let m = l.memo(l.forwardRef(function(e, t) {
+let m = i.memo(i.forwardRef(function(e, t) {
     let {
         disabled: n,
-        type: i,
+        type: s,
         className: m,
         onClick: h,
-        channel: g
-    } = e, [f, x, p] = (0, c.RQ)(e => [e.activeView, e.activeViewType, e.activeChannelId], s.x), b = l.useCallback(() => {
-        (0, c.ed)(i, g.id), null == h || h()
-    }, [i, h, g.id]);
-    return n ? null : (0, r.jsx)("div", {
-        className: a()(d.VQ, u.UD),
+        channel: x
+    } = e, [g, f, p] = (0, d.RQ)(e => [e.activeView, e.activeViewType, e.activeChannelId], r.x), _ = i.useCallback(() => {
+        (0, d.ed)(s, x.id), h?.()
+    }, [s, h, x.id]);
+    return n ? null : (0, l.jsx)("div", {
+        className: a()(c.VQ, u.UD),
         ref: t,
-        children: (0, r.jsx)(o.A, {
+        children: (0, l.jsx)(o.A, {
             className: a()(u.Z8, m),
-            onClick: b,
-            active: (f === d.kx.GIF || f === d.kx.EMOJI || f === d.kx.STICKER) && x === i && p === g.id,
+            onClick: _,
+            active: (g === c.kx.GIF || g === c.kx.EMOJI || g === c.kx.STICKER) && f === s && p === x.id,
             tabIndex: 0,
             focusProps: {
                 offset: {

@@ -1,126 +1,100 @@
 /** chunk id: 144482, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    default: () => v
+    default: () => y
 });
-var l = n(627968),
-    a = n(64700),
+var a = n(627968),
+    l = n(64700),
     i = n(319060),
     o = n(421380),
-    r = n(397927),
+    u = n(397927),
     c = n(398866),
-    u = n(709066),
+    r = n(709066),
     s = n(681827),
-    d = n(203736),
-    p = n(240248),
-    I = n(969508),
-    m = n(705751),
-    A = n(985018),
-    O = n(505712);
-let _ = (0, p.xI)(i.A.INTERACTION_IFRAME_MODAL_MODAL_MIN_WIDTH),
-    y = (0, p.xI)(i.A.INTERACTION_IFRAME_MODAL_MODAL_MAX_WIDTH),
-    E = (0, p.xI)(i.A.INTERACTION_IFRAME_MODAL_MODAL_MARGIN),
-    h = (0, p.xI)(i.A.INTERACTION_IFRAME_MODAL_MODAL_HEADER_HEIGHT);
+    d = n(981355),
+    I = n(240248),
+    p = n(969508),
+    A = n(705751),
+    m = n(985018),
+    _ = n(505712);
+let E = (0, I.xI)(i.A.INTERACTION_IFRAME_MODAL_MODAL_MIN_WIDTH),
+    h = (0, I.xI)(i.A.INTERACTION_IFRAME_MODAL_MODAL_MAX_WIDTH),
+    C = (0, I.xI)(i.A.INTERACTION_IFRAME_MODAL_MODAL_MARGIN),
+    T = (0, I.xI)(i.A.INTERACTION_IFRAME_MODAL_MODAL_HEADER_HEIGHT);
 
-function v(e) {
-    var t, n, i;
+function y(e) {
     let {
-        title: p,
-        onClose: v
+        title: t,
+        onClose: n
     } = e, {
-        applicationIconURL: f,
-        applicationName: b,
-        queryParams: g,
-        iframeUrl: C
-    } = (0, I.aV)(e), {
-        width: T,
-        height: N
-    } = (0, d.A)(), M = a.useMemo(() => {
-        let e = Math.min((N - h - 2 * E) * 16 / 9, y);
-        return Math.max(_, Math.min(T - 2 * E, e))
-    }, [T, N]);
-    return (0, l.jsx)(r.EOs, (n = function(e) {
-        for (var t = 1; t < arguments.length; t++) {
-            var n = null != arguments[t] ? arguments[t] : {},
-                l = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                return Object.getOwnPropertyDescriptor(n, e).enumerable
-            }))), l.forEach(function(t) {
-                var l;
-                l = n[t], t in e ? Object.defineProperty(e, t, {
-                    value: l,
-                    enumerable: !0,
-                    configurable: !0,
-                    writable: !0
-                }) : e[t] = l
-            })
-        }
-        return e
-    }({}, e), i = i = {
-        size: r.rIJ.DYNAMIC,
-        className: O.zr,
+        applicationIconURL: i,
+        applicationName: I,
+        queryParams: y,
+        iframeUrl: N
+    } = (0, p.aV)(e), {
+        width: O,
+        height: g
+    } = (0, d.A)(), M = l.useMemo(() => {
+        let e = Math.min((g - T - 2 * C) * 16 / 9, h);
+        return Math.max(E, Math.min(O - 2 * C, e))
+    }, [O, g]);
+    return (0, a.jsx)(u.EOs, {
+        ...e,
+        size: u.rIJ.DYNAMIC,
+        className: _.zr,
         parentComponent: "InteractionIframeModal",
         "data-migration-pending": !0,
-        children: (0, l.jsxs)("div", {
+        children: (0, a.jsxs)("div", {
             style: {
                 width: M
             },
-            children: [(0, l.jsxs)(r.rQ0, {
+            children: [(0, a.jsxs)(u.rQ0, {
                 separator: !1,
-                className: O.Hc,
+                className: _.Hc,
                 "data-migration-pending": !0,
-                children: [(0, l.jsx)(r.euF, {
-                    src: f,
-                    size: r._3J.SIZE_32,
-                    "aria-label": b,
-                    className: O.In
-                }), (0, l.jsxs)("div", {
-                    className: O.Wh,
-                    children: [(0, l.jsxs)("div", {
-                        children: [(0, l.jsx)(r.Heading, {
+                children: [(0, a.jsx)(u.euF, {
+                    src: i,
+                    size: u._3J.SIZE_32,
+                    "aria-label": I,
+                    className: _.In
+                }), (0, a.jsxs)("div", {
+                    className: _.Wh,
+                    children: [(0, a.jsxs)("div", {
+                        children: [(0, a.jsx)(u.Heading, {
                             variant: "heading-sm/bold",
-                            children: b
-                        }), (0, l.jsx)(r.Text, {
+                            children: I
+                        }), (0, a.jsx)(u.Text, {
                             variant: "text-xs/medium",
                             color: "interactive-text-default",
-                            children: p
+                            children: t
                         })]
-                    }), (0, l.jsx)(u.A, {
-                        type: m.nu.BOT,
-                        className: O.AO,
-                        verified: null == (t = e.application.bot) ? void 0 : t.verified
+                    }), (0, a.jsx)(r.A, {
+                        type: A.nu.BOT,
+                        className: _.AO,
+                        verified: e.application.bot?.verified
                     })]
-                }), (0, l.jsx)(o.$n, {
-                    onClick: v,
-                    innerClassName: O.b,
-                    className: O.cG,
+                }), (0, a.jsx)(o.$n, {
+                    onClick: n,
+                    innerClassName: _.b,
+                    className: _.cG,
                     look: o.$n.Looks.BLANK,
                     size: o.$n.Sizes.NONE,
-                    "aria-label": A.intl.string(A.t.WAI6xu),
+                    "aria-label": m.intl.string(m.t.WAI6xu),
                     "data-migration-pending": !0,
-                    children: (0, l.jsx)(r.PGe, {
+                    children: (0, a.jsx)(u.PGe, {
                         size: "md",
                         color: "currentColor",
-                        className: O.ut
+                        className: _.ut
                     })
                 })]
-            }), (0, l.jsx)(s.A, {
+            }), (0, a.jsx)(s.A, {
                 aspectRatio: 16 / 9,
-                children: (0, l.jsx)(c.o, {
-                    url: C,
+                children: (0, a.jsx)(c.o, {
+                    url: N,
                     shouldRefocus: !0,
-                    className: O.pU,
-                    queryParams: g
+                    className: _.pU,
+                    queryParams: y
                 })
             })]
         })
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var l = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, l)
-        }
-        return n
-    })(Object(i)).forEach(function(e) {
-        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
-    }), n))
+    })
 }

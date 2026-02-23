@@ -1,30 +1,29 @@
 /** chunk id: 927573, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    $s: () => d,
-    Qy: () => s,
+    $s: () => c,
+    Qy: () => r,
     T$: () => o,
     Ug: () => a,
     _4: () => l,
     mu: () => u
 });
-var r, i = n(985018);
+var i, s = n(985018);
 let l = 5,
-    s = 10,
+    r = 10,
     a = 30;
-var o = ((r = {})[r.DISPLAY = 0] = "DISPLAY", r[r.PERMISSIONS = 1] = "PERMISSIONS", r[r.MEMBERS = 2] = "MEMBERS", r[r.VERIFICATIONS = 3] = "VERIFICATIONS", r);
-let c = {
-    afk_channel_id: () => i.intl.string(i.t.KuYcnU),
-    public_updates_channel_id: () => i.intl.string(i.t.vAyDGU),
-    safety_alerts_channel_id: () => i.intl.string(i.t.sMkYE8),
-    system_channel_id: () => i.intl.string(i.t.NASFnq)
+var o = ((i = {})[i.DISPLAY = 0] = "DISPLAY", i[i.PERMISSIONS = 1] = "PERMISSIONS", i[i.MEMBERS = 2] = "MEMBERS", i[i.VERIFICATIONS = 3] = "VERIFICATIONS", i);
+let d = {
+    afk_channel_id: () => s.intl.string(s.t.KuYcnU),
+    public_updates_channel_id: () => s.intl.string(s.t.vAyDGU),
+    safety_alerts_channel_id: () => s.intl.string(s.t.sMkYE8),
+    system_channel_id: () => s.intl.string(s.t.NASFnq)
 };
 
-function d(e) {
-    var t;
+function c(e) {
     if (0 === Object.keys(e).length) return null;
-    let n = Object.keys(e)[0],
-        r = null == (t = c[n]) ? void 0 : t.call(c);
-    return null != r ? "(".concat(r, ") ").concat(e[n]) : e[n]
+    let t = Object.keys(e)[0],
+        n = d[t]?.();
+    return null != n ? `(${n}) ${e[t]}` : e[t]
 }
 let u = "https://discord.gg"

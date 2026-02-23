@@ -1,230 +1,200 @@
-/** chunk id: 728645, original params: t,e,n (module,exports,require) **/
-n.d(e, {
-    A: () => x
-}), n(896048);
-var a = n(627968),
-    r = n(64700),
-    s = n(397927),
-    i = n(439309),
-    l = n(985018),
-    o = n(256209);
+/** chunk id: 728645, original params: t,e,a (module,exports,require) **/
+a.d(e, {
+    A: () => g
+});
+var n = a(627968),
+    s = a(64700),
+    i = a(397927),
+    r = a(439309),
+    l = a(985018),
+    o = a(256209);
 
 function c(t) {
-    for (var e = 1; e < arguments.length; e++) {
-        var n = null != arguments[e] ? arguments[e] : {},
-            a = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(n).filter(function(t) {
-            return Object.getOwnPropertyDescriptor(n, t).enumerable
-        }))), a.forEach(function(e) {
-            var a;
-            a = n[e], e in t ? Object.defineProperty(t, e, {
-                value: a,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : t[e] = a
-        })
-    }
-    return t
-}
-
-function d(t, e) {
-    return e = null != e ? e : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(e)) : (function(t, e) {
-        var n = Object.keys(t);
-        if (Object.getOwnPropertySymbols) {
-            var a = Object.getOwnPropertySymbols(t);
-            n.push.apply(n, a)
-        }
-        return n
-    })(Object(e)).forEach(function(n) {
-        Object.defineProperty(t, n, Object.getOwnPropertyDescriptor(e, n))
-    }), t
-}
-
-function g(t) {
     let {
         user: e,
-        tagId: n,
-        title: r,
-        messageCount: i,
+        tagId: a,
+        title: s,
+        messageCount: r,
         reactionCount: c,
         activeAgo: d,
-        tags: g,
-        attachment: m
+        tags: m,
+        attachment: g
     } = t, {
-        name: u,
-        avatarSrc: x
+        name: x,
+        avatarSrc: u
     } = e;
-    return (0, a.jsxs)("div", {
+    return (0, n.jsxs)("div", {
         className: o.bE,
-        children: [(0, a.jsxs)("div", {
-            children: [(0, a.jsxs)("div", {
+        children: [(0, n.jsxs)("div", {
+            children: [(0, n.jsxs)("div", {
                 className: o.mG,
-                children: [(0, a.jsxs)(s.Text, {
+                children: [(0, n.jsxs)(i.Text, {
                     color: "text-strong",
                     variant: "text-xs/medium",
                     className: o.mG,
-                    children: [(0, a.jsx)("img", {
-                        src: x,
+                    children: [(0, n.jsx)("img", {
+                        src: u,
                         alt: l.intl.string(l.t.lqaIxI),
                         width: 16,
                         height: 16
-                    }), u]
-                }), null != n && (0, a.jsxs)(a.Fragment, {
-                    children: [(0, a.jsx)("span", {
+                    }), x]
+                }), null != a && (0, n.jsxs)(n.Fragment, {
+                    children: [(0, n.jsx)("span", {
                         className: o.xE,
                         children: "•"
-                    }), (0, a.jsx)(s.Text, {
+                    }), (0, n.jsx)(i.Text, {
                         color: "text-strong",
                         variant: "text-xxs/medium",
                         className: o.qo,
-                        children: g[n]
+                        children: m[a]
                     })]
                 })]
-            }), (0, a.jsx)(s.Heading, {
+            }), (0, n.jsx)(i.Heading, {
                 color: "text-strong",
                 variant: "heading-md/semibold",
                 className: o.W0,
-                children: r
-            }), (0, a.jsxs)("div", {
+                children: s
+            }), (0, n.jsxs)("div", {
                 className: o.mG,
-                children: [(0, a.jsxs)(s.Text, {
+                children: [(0, n.jsxs)(i.Text, {
                     color: "text-default",
                     variant: "text-xs/medium",
                     className: o.Hu,
-                    children: [(0, a.jsx)(s.oyn, {
+                    children: [(0, n.jsx)(i.oyn, {
                         size: "xs",
                         color: "currentColor",
                         className: o.Kk
-                    }), i]
-                }), c > 0 && (0, a.jsxs)(a.Fragment, {
-                    children: [(0, a.jsx)("span", {
+                    }), r]
+                }), c > 0 && (0, n.jsxs)(n.Fragment, {
+                    children: [(0, n.jsx)("span", {
                         className: o.xE,
                         children: "•"
-                    }), (0, a.jsxs)(s.Text, {
+                    }), (0, n.jsxs)(i.Text, {
                         color: "text-default",
                         variant: "text-xs/medium",
                         className: o.Hu,
-                        children: [(0, a.jsx)("span", {
+                        children: [(0, n.jsx)("span", {
                             role: "img",
                             "aria-label": l.intl.string(l.t.gHp0C4),
                             className: o.Kk,
                             children: "❤️"
                         }), c]
                     })]
-                }), (0, a.jsx)("span", {
+                }), (0, n.jsx)("span", {
                     className: o.xE,
                     children: "•"
-                }), (0, a.jsx)(s.Text, {
+                }), (0, n.jsx)(i.Text, {
                     color: "text-default",
                     variant: "text-xs/medium",
                     children: d
                 })]
             })]
-        }), null != m && (0, a.jsx)("img", {
-            src: m,
+        }), null != g && (0, n.jsx)("img", {
+            src: g,
             alt: l.intl.formatToPlainString(l.t.MJHFt9, {
-                name: r
+                name: s
             }),
             className: o.oh
         })]
     })
 }
 
-function m(t) {
+function d(t) {
     let {
         author: e,
-        content: n
+        content: a
     } = t, {
-        name: r,
-        isOP: i,
+        name: s,
+        isOP: r,
         avatarSrc: c
     } = e;
-    return (0, a.jsxs)("div", {
+    return (0, n.jsxs)("div", {
         className: o.iU,
-        children: [(0, a.jsx)("img", {
+        children: [(0, n.jsx)("img", {
             src: c,
             alt: l.intl.string(l.t.lqaIxI),
             width: 40,
             height: 40
-        }), (0, a.jsxs)("div", {
-            children: [(0, a.jsxs)("div", {
+        }), (0, n.jsxs)("div", {
+            children: [(0, n.jsxs)("div", {
                 className: o.mG,
-                children: [(0, a.jsx)(s.Text, {
+                children: [(0, n.jsx)(i.Text, {
                     color: "text-strong",
                     variant: "text-sm/semibold",
-                    children: r
-                }), i && (0, a.jsx)("span", {
+                    children: s
+                }), r && (0, n.jsx)("span", {
                     className: o.aj,
                     children: l.intl.string(l.t.fyE8sH)
                 })]
-            }), (0, a.jsx)(s.Text, {
+            }), (0, n.jsx)(i.Text, {
                 color: "text-default",
                 variant: "text-sm/normal",
-                children: n
+                children: a
             })]
         })]
     })
 }
 
-function u(t) {
+function m(t) {
     let {
         title: e,
-        messages: n,
-        maxHeight: r
+        messages: a,
+        maxHeight: s
     } = t;
-    return (0, a.jsx)("div", {
+    return (0, n.jsx)("div", {
         className: o.i1,
         style: {
-            maxHeight: r
+            maxHeight: s
         },
         "aria-hidden": !0,
-        children: (0, a.jsxs)("div", {
+        children: (0, n.jsxs)("div", {
             className: o.VH,
-            children: [(0, a.jsx)(s.oyn, {
+            children: [(0, n.jsx)(i.oyn, {
                 size: "md",
                 color: "currentColor",
                 className: o.DD
-            }), (0, a.jsx)(s.Heading, {
+            }), (0, n.jsx)(i.Heading, {
                 color: "text-strong",
                 variant: "heading-lg/semibold",
                 className: o.wx,
                 children: e
-            }), (0, a.jsx)("div", {
+            }), (0, n.jsx)("div", {
                 className: o.zC,
-                children: n.map((t, e) => (0, a.jsxs)(a.Fragment, {
-                    children: [(0, a.jsx)(m, c({}, t), e), 0 === e && (0, a.jsxs)("div", {
-                        children: [(0, a.jsx)("hr", {
+                children: a.map((t, e) => (0, n.jsxs)(n.Fragment, {
+                    children: [(0, n.jsx)(d, {
+                        ...t
+                    }, e), 0 === e && (0, n.jsxs)("div", {
+                        children: [(0, n.jsx)("hr", {
                             className: o.lL
-                        }), (0, a.jsxs)("div", {
+                        }), (0, n.jsxs)("div", {
                             className: o.KY,
-                            children: [(0, a.jsxs)(s.Text, {
+                            children: [(0, n.jsxs)(i.Text, {
                                 color: "text-brand",
                                 variant: "text-xs/medium",
                                 className: o.QJ,
-                                children: [(0, a.jsx)("span", {
+                                children: [(0, n.jsx)("span", {
                                     role: "img",
                                     "aria-label": l.intl.string(l.t.gHp0C4),
                                     className: o.Kk,
                                     children: "❤️"
                                 }), "17"]
-                            }), (0, a.jsxs)(s.Text, {
+                            }), (0, n.jsxs)(i.Text, {
                                 color: "text-muted",
                                 variant: "text-xs/medium",
                                 className: o.CQ,
-                                children: [(0, a.jsx)(s.XFE, {
+                                children: [(0, n.jsx)(i.XFE, {
                                     size: "xs",
                                     color: "currentColor"
                                 }), l.intl.string(l.t["3aOv+h"])]
                             })]
-                        }), (0, a.jsx)("hr", {
+                        }), (0, n.jsx)("hr", {
                             className: o.N
                         })]
                     })]
                 }))
-            }), (0, a.jsx)("div", {
+            }), (0, n.jsx)("div", {
                 className: o.RW,
-                children: (0, a.jsx)(s.Text, {
+                children: (0, n.jsx)(i.Text, {
                     color: "text-muted",
                     variant: "text-sm/normal",
                     children: l.intl.string(l.t.YzpScd)
@@ -234,44 +204,45 @@ function u(t) {
     })
 }
 
-function x(t) {
+function g(t) {
     let {
         id: e
-    } = t, [n, l] = r.useState(0), m = r.useRef(null), {
-        tags: x,
-        posts: p,
-        postPreview: h,
-        ariaLabel: j
-    } = (0, i.A)(e);
-    return r.useEffect(() => {
+    } = t, [a, l] = s.useState(0), d = s.useRef(null), {
+        tags: g,
+        posts: x,
+        postPreview: u,
+        ariaLabel: h
+    } = (0, r.A)(e);
+    return s.useEffect(() => {
         l(0)
-    }, [e]), r.useEffect(() => {
-        var t;
-        0 === n && (null == m || null == (t = m.current) ? void 0 : t.clientHeight) != null && l(m.current.clientHeight - 40)
-    }, [n]), (0, a.jsxs)("div", {
+    }, [e]), s.useEffect(() => {
+        0 === a && d?.current?.clientHeight != null && l(d.current.clientHeight - 40)
+    }, [a]), (0, n.jsxs)("div", {
         className: o.kL,
         role: "image",
-        "aria-label": j,
-        children: [(0, a.jsxs)("div", {
-            ref: m,
+        "aria-label": h,
+        children: [(0, n.jsxs)("div", {
+            ref: d,
             className: o.T,
             "aria-hidden": !0,
-            children: [(0, a.jsx)("div", {
+            children: [(0, n.jsx)("div", {
                 className: o._A,
-                children: x.map((t, e) => (0, a.jsx)(s.Text, {
+                children: g.map((t, e) => (0, n.jsx)(i.Text, {
                     color: "text-strong",
                     variant: "text-xs/medium",
                     className: o.Tc,
                     children: t
                 }, e))
-            }), (0, a.jsx)("div", {
+            }), (0, n.jsx)("div", {
                 className: o.Yl,
-                children: p.map((t, e) => (0, a.jsx)(g, d(c({}, t), {
-                    tags: x
-                }), e))
+                children: x.map((t, e) => (0, n.jsx)(c, {
+                    ...t,
+                    tags: g
+                }, e))
             })]
-        }), (0, a.jsx)(u, d(c({}, h), {
-            maxHeight: n
-        }))]
+        }), (0, n.jsx)(m, {
+            ...u,
+            maxHeight: a
+        })]
     })
 }

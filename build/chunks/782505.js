@@ -1,46 +1,46 @@
 /** chunk id: 782505, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     IA: () => v,
-    jB: () => _,
-    qv: () => A,
-    zf: () => I
-}), n(896048);
-var r = n(627968),
+    jB: () => E,
+    qv: () => y,
+    zf: () => T
+});
+var i = n(627968),
     l = n(64700),
-    i = n(735438),
-    a = n(397927),
-    o = n(308528),
-    s = n(736653),
+    a = n(735438),
+    s = n(397927),
+    r = n(308528),
+    o = n(736653),
     c = n(573648),
-    u = n(780964),
-    d = n(840065),
-    f = n(562153),
-    p = n(993401),
-    g = n(652215),
-    m = n(985018),
-    b = n(308497);
-let y = [() => m.intl.string(m.t.madJdE), () => m.intl.string(m.t.NYmfoP), () => m.intl.string(m.t.R2PaCg), () => m.intl.string(m.t.laSR8h), () => m.intl.string(m.t.DnsJE8)],
-    O = [() => m.intl.string(m.t.nFSbeE), () => m.intl.string(m.t.gTcxOz), () => m.intl.string(m.t["8T0wYj"]), () => m.intl.string(m.t.BIHl1g), () => m.intl.string(m.t["jhBm0+"])],
-    j = [() => m.intl.string(m.t.AyMGXA), () => m.intl.string(m.t.aAFW7V), e => m.intl.formatToPlainString(m.t.h2g0cM, {
+    d = n(780964),
+    u = n(840065),
+    g = n(562153),
+    m = n(993401),
+    x = n(652215),
+    f = n(985018),
+    p = n(308497);
+let h = [() => f.intl.string(f.t.madJdE), () => f.intl.string(f.t.NYmfoP), () => f.intl.string(f.t.R2PaCg), () => f.intl.string(f.t.laSR8h), () => f.intl.string(f.t.DnsJE8)],
+    _ = [() => f.intl.string(f.t.nFSbeE), () => f.intl.string(f.t.gTcxOz), () => f.intl.string(f.t["8T0wYj"]), () => f.intl.string(f.t.BIHl1g), () => f.intl.string(f.t["jhBm0+"])],
+    A = [() => f.intl.string(f.t.AyMGXA), () => f.intl.string(f.t.aAFW7V), e => f.intl.formatToPlainString(f.t.h2g0cM, {
         name: e
-    }), () => m.intl.string(m.t.rrYh58), () => m.intl.string(m.t["HX3K+F"]), () => m.intl.string(m.t["/yW3aY"]), () => m.intl.string(m.t["PmL/v0"]), () => m.intl.string(m.t.IALa3h), () => m.intl.string(m.t.HRcTFL), () => m.intl.string(m.t.NuCqPt), () => m.intl.string(m.t["M1tw+4"]), () => m.intl.string(m.t.UBm1y2), () => m.intl.string(m.t.Cu95PQ), () => m.intl.string(m.t["R/wFuh"]), () => m.intl.string(m.t.HQPAVT), () => m.intl.string(m.t.YolGh4)],
-    h = [g.fg2.STEAM, g.fg2.PLAYSTATION, g.fg2.XBOX, g.fg2.TWITCH, g.fg2.BATTLENET, g.fg2.LEAGUE_OF_LEGENDS, g.fg2.EPIC_GAMES, g.fg2.RIOT_GAMES, g.fg2.ROBLOX, g.fg2.SPOTIFY, g.fg2.YOUTUBE, g.fg2.CRUNCHYROLL, g.fg2.BUNGIE];
+    }), () => f.intl.string(f.t.rrYh58), () => f.intl.string(f.t["HX3K+F"]), () => f.intl.string(f.t["/yW3aY"]), () => f.intl.string(f.t["PmL/v0"]), () => f.intl.string(f.t.IALa3h), () => f.intl.string(f.t.HRcTFL), () => f.intl.string(f.t.NuCqPt), () => f.intl.string(f.t["M1tw+4"]), () => f.intl.string(f.t.UBm1y2), () => f.intl.string(f.t.Cu95PQ), () => f.intl.string(f.t["R/wFuh"]), () => f.intl.string(f.t.HQPAVT), () => f.intl.string(f.t.YolGh4)],
+    I = [x.fg2.STEAM, x.fg2.PLAYSTATION, x.fg2.XBOX, x.fg2.TWITCH, x.fg2.BATTLENET, x.fg2.LEAGUE_OF_LEGENDS, x.fg2.EPIC_GAMES, x.fg2.RIOT_GAMES, x.fg2.ROBLOX, x.fg2.SPOTIFY, x.fg2.YOUTUBE, x.fg2.CRUNCHYROLL, x.fg2.BUNGIE];
 
-function x(e) {
+function j(e) {
     let {
         heading: t,
         bodyText: n,
         children: l
     } = e;
-    return (0, r.jsxs)("div", {
-        className: b.Ie,
-        children: [(0, r.jsxs)("div", {
-            className: b.FS,
-            children: [(0, r.jsx)(a.Heading, {
+    return (0, i.jsxs)("div", {
+        className: p.Ie,
+        children: [(0, i.jsxs)("div", {
+            className: p.FS,
+            children: [(0, i.jsx)(s.Heading, {
                 variant: "heading-md/medium",
                 color: "text-strong",
                 children: t
-            }), (0, r.jsx)(a.Text, {
+            }), (0, i.jsx)(s.Text, {
                 variant: "text-sm/normal",
                 color: "text-default",
                 children: n
@@ -50,100 +50,91 @@ function x(e) {
 }
 
 function v() {
-    let e = m.intl.string(m.t.RnD2yZ),
-        [t] = l.useState(() => {
-            var e;
-            return (null != (e = (0, i.sample)(y)) ? e : y[0])()
-        });
-    return (0, r.jsx)(x, {
+    let e = f.intl.string(f.t.RnD2yZ),
+        [t] = l.useState(() => ((0, a.sample)(h) ?? h[0])());
+    return (0, i.jsx)(j, {
         heading: e,
         bodyText: t
     })
 }
 
-function _() {
-    let e = m.intl.string(m.t.bFgqYJ),
-        [t] = l.useState(() => {
-            var e;
-            return (null != (e = (0, i.sample)(O)) ? e : O[0])()
-        });
-    return (0, r.jsx)(x, {
+function E() {
+    let e = f.intl.string(f.t.bFgqYJ),
+        [t] = l.useState(() => ((0, a.sample)(_) ?? _[0])());
+    return (0, i.jsx)(j, {
         heading: e,
         bodyText: t
     })
 }
 
-function I(e) {
+function T(e) {
     let {
         user: t,
         guildId: n,
-        channelId: s,
+        channelId: o,
         onClose: c
-    } = e, u = f.Ay.getName(n, s, t), d = m.intl.formatToPlainString(m.t.sjSitP, {
-        name: u
-    }), [g] = l.useState(() => {
-        var e;
-        return (null != (e = (0, i.sample)(j)) ? e : j[0])(u)
-    }), y = l.useCallback(() => {
-        o.A.openPrivateChannel({
+    } = e, d = g.Ay.getName(n, o, t), u = f.intl.formatToPlainString(f.t.sjSitP, {
+        name: d
+    }), [x] = l.useState(() => ((0, a.sample)(A) ?? A[0])(d)), h = l.useCallback(() => {
+        r.A.openPrivateChannel({
             recipientIds: t.id
-        }), null == c || c()
+        }), c?.()
     }, [t.id, c]);
-    return (0, r.jsx)(x, {
-        heading: d,
-        bodyText: g,
-        children: (0, r.jsx)("div", {
-            className: b.v0,
-            children: (0, r.jsx)(p.FD, {
-                icon: a.oyn,
-                text: m.intl.string(m.t["g33r/P"]),
-                onClick: y
+    return (0, i.jsx)(j, {
+        heading: u,
+        bodyText: x,
+        children: (0, i.jsx)("div", {
+            className: p.v0,
+            children: (0, i.jsx)(m.FD, {
+                icon: s.oyn,
+                text: f.intl.string(f.t["g33r/P"]),
+                onClick: h
             })
         })
     })
 }
 
-function w() {
-    let e = (0, s.Ay)();
-    return (0, r.jsx)("div", {
-        className: b.HU,
-        children: h.map((t, n) => {
+function b() {
+    let e = (0, o.Ay)();
+    return (0, i.jsx)("div", {
+        className: p.HU,
+        children: I.map((t, n) => {
             let l = c.A.get(t);
             if (null == l) return null;
-            let i = (0, a.Mwr)(e) ? l.icon.darkPNG : l.icon.lightPNG;
-            return (0, r.jsx)("img", {
-                src: i,
+            let a = (0, s.Mwr)(e) ? l.icon.darkPNG : l.icon.lightPNG;
+            return (0, i.jsx)("img", {
+                src: a,
                 alt: l.name,
-                className: b.gj
+                className: p.gj
             }, n)
         })
     })
 }
 
-function A(e) {
+function y(e) {
     let {
         onClose: t
     } = e, n = l.useCallback(() => {
-        null == t || t(), (0, d.openUserSettings)(u.X.CONNECTIONS_PANEL, {
-            section: g.nc_.CONNECTIONS
+        t?.(), (0, u.openUserSettings)(d.X.CONNECTIONS_PANEL, {
+            section: x.nc_.CONNECTIONS
         })
-    }, [t]), i = l.useCallback(() => {
-        null == t || t(), (0, d.openUserSettings)(u.X.CONTENT_AND_SOCIAL_PANEL, {
-            section: g.nc_.CONTENT_AND_SOCIAL,
+    }, [t]), a = l.useCallback(() => {
+        t?.(), (0, u.openUserSettings)(d.X.CONTENT_AND_SOCIAL_PANEL, {
+            section: x.nc_.CONTENT_AND_SOCIAL,
             subsection: "CONNECTED_GAMES"
         })
     }, [t]);
-    return (0, r.jsxs)(x, {
-        heading: m.intl.string(m.t.VB6LWY),
-        bodyText: m.intl.string(m.t.KpjsU9),
-        children: [(0, r.jsx)(w, {}), (0, r.jsxs)("div", {
-            className: b.v0,
-            children: [(0, r.jsx)(p.FD, {
-                text: m.intl.string(m.t["/Hl24U"]),
+    return (0, i.jsxs)(j, {
+        heading: f.intl.string(f.t.VB6LWY),
+        bodyText: f.intl.string(f.t.KpjsU9),
+        children: [(0, i.jsx)(b, {}), (0, i.jsxs)("div", {
+            className: p.v0,
+            children: [(0, i.jsx)(m.FD, {
+                text: f.intl.string(f.t["/Hl24U"]),
                 onClick: n
-            }), (0, r.jsx)(p.FD, {
-                text: m.intl.string(m.t.GTCx0p),
-                onClick: i
+            }), (0, i.jsx)(m.FD, {
+                text: f.intl.string(f.t.GTCx0p),
+                onClick: a
             })]
         })]
     })

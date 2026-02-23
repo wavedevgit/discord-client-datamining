@@ -1,26 +1,27 @@
 /** chunk id: 611330, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => s
+    A: () => r
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var l = n(397927),
-    i = n(666384);
+var s = n(397927),
+    l = n(666384);
 
-function s(e) {
+function r(e) {
     let {
         userCount: t
     } = e;
-    return (0, r.jsxs)("div", {
-        className: i.kL,
-        children: [(0, r.jsx)(l.nFg, {
+    return (0, i.jsxs)("div", {
+        className: l.kL,
+        children: [(0, i.jsx)(s.nFg, {
             size: "xxs",
             color: "currentColor",
-            className: i.Fd
-        }), (0, r.jsx)(l.Text, {
+            className: l.Fd
+        }), (0, i.jsx)(s.Text, {
             variant: "text-sm/normal",
             color: "text-default",
-            className: i.w8,
+            className: l.w8,
             children: t
         })]
     })

@@ -1,7 +1,7 @@
 /** chunk id: 530209, original params: t,e,n (module,exports,require) **/
 n.d(e, {
     D: () => c,
-    e: () => o
+    e: () => d
 });
 var l = n(311907),
     i = n(734057),
@@ -14,10 +14,10 @@ function c(t, e) {
     return r.MJ(u.xBc.VIEW_CHANNEL, t) || e === a.Ps.EXTERNAL
 }
 
-function o(t, e) {
+function d(t, e) {
     return (0, l.bG)([i.A, s.Ay], () => {
         let n = i.A.getChannel(t),
             l = s.Ay.getGuildScheduledEvent(e);
-        return c(n, null == l ? void 0 : l.entity_type)
+        return c(n, l?.entity_type)
     }, [t, e])
 }

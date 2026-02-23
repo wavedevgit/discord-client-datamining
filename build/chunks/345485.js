@@ -1,52 +1,52 @@
 /** chunk id: 345485, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => p
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(110259),
+var r = n(110259),
     l = n(417597),
     a = n(342494),
     s = n(139286),
     o = n(997509),
-    c = n(260509),
-    u = n(71393),
-    d = n(287809),
-    p = n(652215),
+    d = n(260509),
+    c = n(71393),
+    u = n(287809),
+    A = n(652215),
     h = n(49999),
-    f = n(985018),
-    g = n(330766);
+    _ = n(985018),
+    m = n(330766);
 
-function m(e) {
+function p(e) {
     let {
         guildId: t,
         markAsDismissed: n,
-        targetElementRef: m
-    } = e, A = (0, l.bG)([u.A, d.default], () => {
-        let e = d.default.getCurrentUser(),
-            n = u.A.getGuild(t);
-        return null != n && (0, c.bM)(n, e)
+        targetElementRef: p
+    } = e, g = (0, l.bG)([c.A, u.default], () => {
+        let e = u.default.getCurrentUser(),
+            n = c.A.getGuild(t);
+        return null != n && (0, d.bM)(n, e)
     });
     return (0, s.A)({
-        type: i.ImpressionTypes.POPOUT,
-        name: i.ImpressionNames.ENABLE_CREATOR_MONETIZATION_GUILD_HEADER_UPSELL,
+        type: r.ImpressionTypes.POPOUT,
+        name: r.ImpressionNames.ENABLE_CREATOR_MONETIZATION_GUILD_HEADER_UPSELL,
         properties: {
             guild_id: t,
-            is_owner: A
+            is_owner: g
         }
-    }), (0, r.jsx)(a.AM, {
-        targetElementRef: m,
-        title: f.intl.string(f.t.C0m4rQ),
-        body: f.intl.string(f.t.zOHfEX),
+    }), (0, i.jsx)(a.AM, {
+        targetElementRef: p,
+        title: _.intl.string(_.t.C0m4rQ),
+        body: _.intl.string(_.t.zOHfEX),
         graphic: {
             type: "image",
-            src: g
+            src: m
         },
         actions: [{
-            text: f.intl.string(f.t.OgQQbG),
+            text: _.intl.string(_.t.OgQQbG),
             variant: "primary",
             onClick: () => {
-                o.A.open(t, p.BEX.ROLE_SUBSCRIPTIONS)
+                o.A.open(t, A.BEX.ROLE_SUBSCRIPTIONS)
             }
         }],
         onRequestClose: () => n(h.i.USER_DISMISS),

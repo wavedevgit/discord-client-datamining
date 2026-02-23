@@ -1,15 +1,15 @@
 /** chunk id: 925931, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
     g: () => a
 });
-var r = n(927813),
-    l = n(427262),
-    i = n(985018);
-let s = +r.A.Millis.DAY;
+var i = n(927813),
+    s = n(427262),
+    l = n(985018);
+let r = +i.A.Millis.DAY;
 
 function a(e) {
-    var t, n, r;
-    if ((0, l.mv)(e.user)) return i.intl.string(i.t.VaCdhQ);
-    let a = null == (t = e.member) ? void 0 : t.joinedAt;
-    return null == a ? i.intl.string(i.t.CQmzib) : null != e.member && e.member.roles.length > 0 ? null != (n = null == (r = e.role) ? void 0 : r.name) ? n : i.intl.string(i.t["97/NdO"]) : new Date().getTime() - Date.parse(a) < s ? i.intl.string(i.t.IKE48n) : i.intl.string(i.t.u0gUWt)
+    if ((0, s.mv)(e.user)) return l.intl.string(l.t.VaCdhQ);
+    let t = e.member?.joinedAt;
+    return null == t ? l.intl.string(l.t.CQmzib) : null != e.member && e.member.roles.length > 0 ? e.role?.name ?? l.intl.string(l.t["97/NdO"]) : new Date().getTime() - Date.parse(t) < r ? l.intl.string(l.t.IKE48n) : l.intl.string(l.t.u0gUWt)
 }

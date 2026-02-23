@@ -1,111 +1,80 @@
 /** chunk id: 624712, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => O
-}), n(896048);
-var r = n(627968);
+    A: () => I
+});
+var i = n(627968);
 n(64700);
-var i = n(562465),
+var r = n(562465),
     l = n(451988),
     a = n(397927),
     s = n(339048),
     o = n(10716),
-    c = n(587895),
-    u = n(287809),
-    d = n(469778),
-    p = n(147964),
+    d = n(587895),
+    c = n(287809),
+    u = n(469778),
+    A = n(147964),
     h = n(927813),
-    f = n(837921),
-    g = n(636401),
-    m = n(613057),
-    A = n(652215);
-
-function _(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = r
-        })
-    }
-    return e
-}
-
-function b(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
-        }
-        return n
-    })(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
+    _ = n(837921),
+    m = n(636401),
+    p = n(613057),
+    g = n(652215);
 let E = 10 * h.A.Millis.SECOND,
-    O = {
-        [A.e$_.VALIDATE_APPLICATION]: {
-            scope: m.hj,
+    I = {
+        [g.e$_.VALIDATE_APPLICATION]: {
+            scope: p.hj,
             handler(e) {
                 let {
                     socket: t
-                } = e, i = t.application.id;
+                } = e, r = t.application.id;
                 try {
                     var o;
                     let e;
-                    if (null == i) throw new g.A({
-                        errorCode: A.Lw6.INVALID_COMMAND
+                    if (null == r) throw new m.A({
+                        errorCode: g.Lw6.INVALID_COMMAND
                     }, "No application.");
-                    let t = c.A.getApplication(i);
-                    if (null == t) throw new g.A({
-                        errorCode: A.Lw6.INVALID_ENTITLEMENT
+                    let t = d.A.getApplication(r);
+                    if (null == t) throw new m.A({
+                        errorCode: g.Lw6.INVALID_ENTITLEMENT
                     }, "SKU does not exist.");
                     let n = t.primarySkuId;
-                    if (null == n) throw new g.A({
-                        errorCode: A.Lw6.INVALID_ENTITLEMENT
+                    if (null == n) throw new m.A({
+                        errorCode: g.Lw6.INVALID_ENTITLEMENT
                     }, "SKU does not exist.");
-                    return Promise.race([(o = t.id, e = d.A.isEntitledToSku(u.default.getCurrentUser(), n, o), null != e ? Promise.resolve(e) : (0, s.LM)(o).then(() => !0 === d.A.isEntitledToSku(u.default.getCurrentUser(), n, o))).then(e => {
-                        if (!e) throw new g.A({
-                            errorCode: A.Lw6.INVALID_ENTITLEMENT
+                    return Promise.race([(o = t.id, e = u.A.isEntitledToSku(c.default.getCurrentUser(), n, o), null != e ? Promise.resolve(e) : (0, s.LM)(o).then(() => !0 === u.A.isEntitledToSku(c.default.getCurrentUser(), n, o))).then(e => {
+                        if (!e) throw new m.A({
+                            errorCode: g.Lw6.INVALID_ENTITLEMENT
                         }, "User does not have entitlement.")
                     }), (0, l.BK)(E).then(() => {
-                        throw new g.A({
-                            errorCode: A.Lw6.INVALID_ENTITLEMENT
+                        throw new m.A({
+                            errorCode: g.Lw6.INVALID_ENTITLEMENT
                         }, "Timed out fetching entitlement.")
                     })])
                 } catch (e) {
-                    throw e.code === A.Lw6.INVALID_ENTITLEMENT && (f.Ay.focus(null, !0), (0, a.mMO)(async () => {
+                    throw e.code === g.Lw6.INVALID_ENTITLEMENT && (_.Ay.focus(null, !0), (0, a.mMO)(async () => {
                         let {
                             default: e
                         } = await n.e("26766").then(n.bind(n, 448701));
-                        return t => (0, r.jsx)(e, b(_({}, t), {
-                            applicationId: i
-                        }))
+                        return t => (0, i.jsx)(e, {
+                            ...t,
+                            applicationId: r
+                        })
                     })), e
                 }
             }
         },
-        [A.e$_.GET_ENTITLEMENT_TICKET]: {
-            scope: m.hj,
+        [g.e$_.GET_ENTITLEMENT_TICKET]: {
+            scope: p.hj,
             handler(e) {
                 let {
                     socket: t
                 } = e, l = t.application.id;
-                if (null == l) throw new g.A({
-                    errorCode: A.Lw6.INVALID_COMMAND
+                if (null == l) throw new m.A({
+                    errorCode: g.Lw6.INVALID_COMMAND
                 }, "No application.");
-                return i.Bo.post({
-                    url: A.Rsh.ENTITLEMENT_TICKET(l),
+                return r.Bo.post({
+                    url: g.Rsh.ENTITLEMENT_TICKET(l),
                     body: {
-                        test_mode: p.A.inTestModeForApplication(l) || o.A.inDevModeForApplication(l)
+                        test_mode: A.A.inTestModeForApplication(l) || o.A.inDevModeForApplication(l)
                     },
                     retries: 3,
                     oldFormErrors: !0,
@@ -116,13 +85,14 @@ let E = 10 * h.A.Millis.SECOND,
                     } = e;
                     return t
                 }).catch(e => {
-                    throw f.Ay.focus(null, !0), (0, a.mMO)(async () => {
+                    throw _.Ay.focus(null, !0), (0, a.mMO)(async () => {
                         let {
                             default: e
                         } = await n.e("26766").then(n.bind(n, 448701));
-                        return t => (0, r.jsx)(e, b(_({}, t), {
+                        return t => (0, i.jsx)(e, {
+                            ...t,
                             applicationId: l
-                        }))
+                        })
                     }), e
                 })
             }

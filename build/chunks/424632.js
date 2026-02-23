@@ -1,11 +1,11 @@
 /** chunk id: 424632, original params: e,t,r (module,exports,require) **/
 r.d(t, {
     F3: () => l,
-    Qp: () => f,
+    Qp: () => u,
     Qx: () => s,
-    l$: () => u,
+    l$: () => f,
     ny: () => o
-}), r(896048), r(693327), r(554719), r(680155), r(323874), r(14289), r(35956), r(65821), r(927092), r(212978), r(201528), r(393431), r(752391), r(532706), r(42231), r(232424), r(757074), r(949626), r(767709), r(65162);
+}), r(323874), r(14289), r(35956), r(393431), r(532706), r(42231), r(232424), r(949626), r(767709), r(65162);
 var a = r(735438),
     n = r(830917),
     i = r(339984);
@@ -17,8 +17,8 @@ async function o(e) {
         cropOriginCoordinates: l,
         maxDimensions: c,
         imageRotation: s = 0,
-        resizeWidth: u = null,
-        resizeHeight: f = null
+        resizeWidth: f = null,
+        resizeHeight: u = null
     } = e, {
         sourceX: A,
         sourceY: h,
@@ -30,30 +30,30 @@ async function o(e) {
         cropOriginCoordinates: l,
         maxDimensions: c,
         imageRotation: s
-    }), E = await t.arrayBuffer(), d = new Worker(new URL("/assets/" + r.u("47773"), r.b)), _ = new Promise((e, r) => {
-        d.onmessage = a => {
-            var n, o;
+    }), E = await t.arrayBuffer(), _ = new Worker(new URL("/assets/" + r.u("47773"), r.b)), d = new Promise((e, r) => {
+        _.onmessage = a => {
             let {
-                data: l
+                data: n
             } = a;
-            if (l.type === i.lA.CROP_ANIMATED_IMAGE_COMPLETE) e((n = new Blob([l.result], {
-                type: t.type
-            }), new Promise(e => {
-                let t = new FileReader;
-                t.onload = t => {
-                    var r;
-                    let a = null == (r = t.target) ? void 0 : r.result;
-                    "string" == typeof a ? e(a) : e("")
-                }, t.readAsDataURL(n)
-            }))), d.terminate();
-            else if (l.type === i.lA.CROP_ANIMATED_IMAGE_ERROR) {
-                let e = null == l ? void 0 : l.error,
-                    t = null != (o = null == e ? void 0 : e.message) ? o : "Unknown error";
-                r(Error("Error cropping animated image: ".concat(t))), d.terminate()
+            if (n.type === i.lA.CROP_ANIMATED_IMAGE_COMPLETE) {
+                var o;
+                e((o = new Blob([n.result], {
+                    type: t.type
+                }), new Promise(e => {
+                    let t = new FileReader;
+                    t.onload = t => {
+                        let r = t.target?.result;
+                        "string" == typeof r ? e(r) : e("")
+                    }, t.readAsDataURL(o)
+                }))), _.terminate()
+            } else if (n.type === i.lA.CROP_ANIMATED_IMAGE_ERROR) {
+                let e = n?.error,
+                    t = e?.message ?? "Unknown error";
+                r(Error(`Error cropping animated image: ${t}`)), _.terminate()
             }
         }
     }), p = "image/webp" === t.type ? "webp" : "gif";
-    return d.postMessage({
+    return _.postMessage({
         type: i.lA.CROP_ANIMATED_IMAGE_START,
         data: new Uint8Array(E),
         x: 0 | A,
@@ -61,12 +61,12 @@ async function o(e) {
         width: 0 | m,
         height: 0 | w,
         imageRotation: 0 | s,
-        resizeWidth: u,
-        resizeHeight: f,
+        resizeWidth: f,
+        resizeHeight: u,
         format: p
     }), {
-        result: _,
-        cancelFn: () => d.terminate()
+        result: d,
+        cancelFn: () => _.terminate()
     }
 }
 
@@ -115,7 +115,7 @@ function s(e, t, r) {
     }
 }
 
-function u(e, t, r) {
+function f(e, t, r) {
     let a = {
             top: 0,
             bottom: 0,
@@ -127,7 +127,7 @@ function u(e, t, r) {
     return 0 !== n && (a.left = -Math.abs(n / 2), a.right = n / 2), 0 !== i && (a.bottom = -Math.abs(i / 2), a.top = i / 2), a
 }
 
-function f(e, t, r, a) {
+function u(e, t, r, a) {
     switch (e) {
         case i.HL.AVATAR:
         case i.HL.AVATAR_DECORATION:
@@ -157,9 +157,9 @@ function f(e, t, r, a) {
                 width: s, height: .4 * s
             };
         case i.HL.HOME_HEADER:
-            let u = Math.min(t, i.Ip);
+            let f = Math.min(t, i.Ip);
             return {
-                width: u, height: u * (1 / i.ny)
+                width: f, height: f * (1 / i.ny)
             }
     }
 }

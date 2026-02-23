@@ -1,25 +1,25 @@
-/** chunk id: 507887, original params: e,t,r (module,exports,require) **/
-r.d(t, {
-    A: () => l
+/** chunk id: 507887, original params: e,t,_ (module,exports,require) **/
+_.d(t, {
+    A: () => r
 });
-var n = r(954571),
-    o = r(652215);
+var o = _(954571),
+    n = _(652215);
 
-function l(e) {
+function r(e) {
     let {
         problem: t,
-        feedback: r,
-        reportType: l,
+        feedback: _,
+        reportType: r,
         reportId: c = null,
         rating: a = null,
-        dontShowAgain: _
+        dontShowAgain: l
     } = e;
-    n.default.track(o.HAw.IAR_FEEDBACK_SUBMITTED, {
+    o.default.track(n.HAw.IAR_FEEDBACK_SUBMITTED, {
         reason: t,
-        report_type: l,
+        report_type: r,
         report_id: c,
         rating: a,
-        feedback: r,
-        dont_show_again: _
+        feedback: _,
+        dont_show_again: l
     })
 }

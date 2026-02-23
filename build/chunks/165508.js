@@ -1,52 +1,36 @@
 /** chunk id: 165508, original params: e,t,n (module,exports,require) **/
 n.r(t), n.d(t, {
-    default: () => c
-}), n(65821);
-var r = n(627968);
+    default: () => l
+});
+var s = n(627968);
 n(64700);
-var s = n(397927),
+var a = n(397927),
     i = n(80556),
-    a = n(577015),
+    r = n(577015),
     o = n(320028);
-
-function l(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = r
-        })
-    }
-    return e
-}
-let c = {
+let l = {
     showCaptcha: function(e, t) {
-        let a = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {},
+        let r = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {},
             {
-                sitekey: c,
-                captchaService: u,
-                options: d
+                sitekey: l,
+                captchaService: d,
+                options: c
             } = e;
-        (0, s.mMO)(async () => {
+        (0, a.mMO)(async () => {
             let {
                 default: e
             } = await n.e("39522").then(n.bind(n, 252345));
-            return n => (0, r.jsx)(e, l({
+            return n => (0, s.jsx)(e, {
                 onCaptchaVerify: (e, n) => t({
                     captcha_key: e,
                     captcha_rqtoken: n
                 }),
-                captchaService: u,
-                sitekey: c
-            }, a, d, n))
+                captchaService: d,
+                sitekey: l,
+                ...r,
+                ...c,
+                ...n
+            })
         }, {
             Layer: i.Ay,
             modalKey: o.f
@@ -55,28 +39,31 @@ let c = {
     showCaptchaAsync: function(e) {
         let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
             {
-                sitekey: c,
-                captchaService: u,
-                captchaSessionId: d,
-                options: m
+                sitekey: l,
+                captchaService: d,
+                captchaSessionId: c,
+                options: u
             } = e;
-        return new Promise((e, p) => {
-            (0, s.mMO)(async () => {
+        return new Promise((e, m) => {
+            (0, a.mMO)(async () => {
                 let {
-                    default: s
+                    default: a
                 } = await n.e("39522").then(n.bind(n, 252345));
-                return n => (0, r.jsx)(s, l({
+                return n => (0, s.jsx)(a, {
                     onCaptchaVerify: (t, n) => e({
                         captcha_key: t,
                         captcha_rqtoken: n,
-                        captcha_session_id: d
+                        captcha_session_id: c
                     }),
-                    captchaService: u,
-                    sitekey: c,
+                    captchaService: d,
+                    sitekey: l,
                     onReject: e => {
-                        e === a.CaptchaError.CANCEL ? p(new a.CaptchaCancelError) : p(Error("cancel captcha"))
-                    }
-                }, t, m, n))
+                        e === r.CaptchaError.CANCEL ? m(new r.CaptchaCancelError) : m(Error("cancel captcha"))
+                    },
+                    ...t,
+                    ...u,
+                    ...n
+                })
             }, {
                 Layer: i.Ay,
                 modalKey: o.f
@@ -84,6 +71,6 @@ let c = {
         })
     },
     useIsCaptchaModalOpen: function() {
-        return (0, s.red)(e => (0, s.fDT)(e, o.f))
+        return (0, a.red)(e => (0, a.fDT)(e, o.f))
     }
 }

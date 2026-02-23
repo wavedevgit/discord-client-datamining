@@ -1,11 +1,11 @@
 /** chunk id: 776038, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    a: () => l
+    a: () => a
 });
-var r = n(406935),
-    i = n(594061);
-let l = e => i.wc.updateAsync("privacy", t => {
-    t.inappropriateConversationWarnings = r._t.create({
+var i = n(406935),
+    s = n(594061);
+let a = e => s.wc.updateAsync("privacy", t => {
+    t.inappropriateConversationWarnings = i._t.create({
         value: e
     })
-}, i.Sb.INFREQUENT_USER_ACTION)
+}, s.Sb.INFREQUENT_USER_ACTION)

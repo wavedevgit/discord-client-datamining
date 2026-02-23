@@ -2,16 +2,16 @@
 n.d(t, {
     j: () => l
 });
-var r = n(397927),
-    i = n(851907);
+var i = n(397927),
+    r = n(851907);
 
 function l(e) {
     let {
         application: t,
         channelId: n
     } = e;
-    return null != (0, i.Ay)({
+    return null != (0, r.Ay)({
         application: t,
         channelId: n
-    }) ? r.KX8 : r.SYi
+    }) ? i.KX8 : i.SYi
 }

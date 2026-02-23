@@ -1,8 +1,8 @@
 /** chunk id: 110919, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    Ay: () => i
+    Ay: () => s
 });
-let r = (0, n(600975).C)({
+let i = (0, n(600975).C)({
         kind: "user",
         id: "2023-12_pause_subscriptions_experiment",
         label: "Pause Subscriptions Experiment",
@@ -17,16 +17,16 @@ let r = (0, n(600975).C)({
             }
         }]
     }),
-    i = e => {
+    s = e => {
         let {
             location: t,
             autoTrackExposure: n = !0,
-            trackExposureOptions: i = {}
+            trackExposureOptions: s = {}
         } = e;
-        return r.useExperiment({
+        return i.useExperiment({
             location: t
         }, {
             autoTrackExposure: n,
-            trackExposureOptions: i
+            trackExposureOptions: s
         })
     }

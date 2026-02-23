@@ -1,95 +1,95 @@
-/** chunk id: 412775, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => _
+/** chunk id: 412775, original params: e,n,t (module,exports,require) **/
+t.d(n, {
+    A: () => v
 });
-var l = n(627968);
-n(64700);
-var i = n(311907),
-    r = n(397927),
-    s = n(821269),
-    o = n(437774),
-    a = n(773669),
-    d = n(967198),
-    c = n(351906),
-    u = n(183555),
-    p = n(346713),
-    f = n(484509),
-    m = n(389996),
-    A = n(46937),
-    x = n(361311),
-    g = n(743987),
-    j = n(900179),
-    h = n(280645),
-    b = n(928223),
-    v = n(518477),
-    I = n(985018),
-    y = n(195723);
+var i = t(627968);
+t(64700);
+var s = t(311907),
+    l = t(397927),
+    a = t(821269),
+    r = t(437774),
+    d = t(773669),
+    c = t(967198),
+    o = t(351906),
+    u = t(183555),
+    A = t(346713),
+    x = t(484509),
+    m = t(389996),
+    _ = t(46937),
+    p = t(361311),
+    f = t(743987),
+    h = t(900179),
+    I = t(280645),
+    j = t(928223),
+    g = t(518477),
+    b = t(985018),
+    N = t(195723);
 
-function _(e) {
+function v(e) {
     let {
-        user: t,
-        displayProfile: n,
-        onClose: _
+        user: n,
+        displayProfile: t,
+        onClose: v
     } = e, {
-        trackUserProfileAction: O
-    } = (0, u.NJ)(), N = (0, i.bG)([d.A], () => d.A.getGuildId()), E = (0, s.q)({
-        userId: t.id
-    }), P = (0, i.bG)([c.A], () => c.A.hidePersonalInformation), T = (0, i.bG)([a.default], () => a.default.locale), C = (0, f.A)(t.id), S = (0, p.A)(t.id);
-    return (0, l.jsxs)(r.IpV, {
+        trackUserProfileAction: T
+    } = (0, u.NJ)(), E = (0, s.bG)([c.A], () => c.A.getGuildId()), C = (0, a.q)({
+        userId: n.id
+    }), y = (0, s.bG)([o.A], () => o.A.hidePersonalInformation), L = (0, s.bG)([d.default], () => d.default.locale), S = (0, x.A)(n.id), O = (0, A.A)(n.id);
+    return (0, i.jsxs)(l.IpV, {
         fade: !0,
-        className: y.XG,
-        children: [(null == n ? void 0 : n.bio) != null && (null == n ? void 0 : n.bio) !== "" && !P && (0, l.jsx)(m.A, {
-            userBio: n.bio,
+        className: N.XG,
+        children: [t?.bio != null && t?.bio !== "" && !y && (0, i.jsx)(m.A, {
+            userBio: t.bio,
             setLineClamp: !1
-        }), (null == n ? void 0 : n.guildId) != null && (0, l.jsx)(h.A, {
-            userId: t.id,
-            guildId: n.guildId
-        }), t.isProvisional && (0, l.jsx)(j.A, {
-            heading: I.intl.string(I.t.Iyka0U),
-            headingIcon: (0, l.jsx)(r.EpV, {
+        }), t?.guildId != null && (0, i.jsx)(I.A, {
+            userId: n.id,
+            guildId: t.guildId
+        }), n.isProvisional && (0, i.jsx)(h.A, {
+            heading: b.intl.string(b.t.Iyka0U),
+            headingIcon: (0, i.jsx)(l.EpV, {
                 size: "xxs",
-                color: r.LU0.colors.TEXT_STRONG
+                color: l.LU0.colors.TEXT_STRONG
             }),
             headingColor: "text-default",
-            children: (0, l.jsx)(o.T, {
-                userId: t.id
+            children: (0, i.jsx)(r.T, {
+                userId: n.id
             })
-        }), E.length > 0 && (0, l.jsx)(j.A, {
-            heading: I.intl.string(I.t["Uv/eTx"]),
-            children: (0, l.jsx)(x.A, {
-                applicationIds: E
+        }), C.length > 0 && (0, i.jsx)(h.A, {
+            heading: b.intl.string(b.t["Uv/eTx"]),
+            children: (0, i.jsx)(p.A, {
+                applicationIds: C
             })
-        }), (0, l.jsx)(j.A, {
-            heading: I.intl.string(I.t.a6XYD9),
-            children: (0, l.jsx)(g.A, {
-                userId: t.id,
-                guildId: null == n ? void 0 : n.guildId,
-                tooltipDelay: v.In
+        }), (0, i.jsx)(h.A, {
+            heading: b.intl.string(b.t.a6XYD9),
+            children: (0, i.jsx)(f.A, {
+                userId: n.id,
+                guildId: t?.guildId,
+                tooltipDelay: g.In
             })
-        }), C.length > 0 && (0, l.jsx)(j.A, {
-            heading: I.intl.string(I.t["3fe7U5"]),
-            scrollTargetId: v.bk.CONNECTIONS,
-            children: (0, l.jsx)(A.Ay, {
-                connectedAccounts: C,
-                className: y.oQ,
-                userId: t.id,
-                locale: T
+        }), S.length > 0 && (0, i.jsx)(h.A, {
+            heading: b.intl.string(b.t["3fe7U5"]),
+            scrollTargetId: g.bk.CONNECTIONS,
+            children: (0, i.jsx)(_.Ay, {
+                connectedAccounts: S,
+                className: N.oQ,
+                userId: n.id,
+                locale: L
             })
-        }), S.length > 0 && (0, l.jsx)(j.A, {
-            heading: I.intl.string(I.t.PHjkRE),
-            children: S.map(e => (0, l.jsx)(A.Wc, {
-                className: y.MI,
+        }), O.length > 0 && (0, i.jsx)(h.A, {
+            heading: b.intl.string(b.t.PHjkRE),
+            children: O.map(e => (0, i.jsx)(_.Wc, {
+                className: N.MI,
                 applicationRoleConnection: e,
-                locale: T,
+                locale: L,
                 onApplicationClicked: () => {
-                    O({
+                    T({
                         action: "PRESS_APP_CONNECTION"
-                    }), _()
+                    }), v()
                 },
-                selectedGuildId: null != N ? N : void 0
+                selectedGuildId: E ?? void 0
             }, e.application.id))
-        }), (0, l.jsx)(b.A, {
-            userId: t.id
+        }), (0, i.jsx)(j.A, {
+            userId: n.id
         })]
     })
 }

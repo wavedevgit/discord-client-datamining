@@ -1,212 +1,175 @@
 /** chunk id: 454516, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => T
-}), n(896048), n(733351), n(228524), n(321073);
-var r = n(627968),
-    i = n(64700),
+    A: () => v
+}), n(321073);
+var i = n(627968),
+    s = n(64700),
     l = n(735438),
-    s = n.n(l),
+    r = n.n(l),
     a = n(417597),
     o = n(397927),
-    c = n(442433),
-    d = n(686956),
+    d = n(442433),
+    c = n(686956),
     u = n(475743),
-    g = n(736653),
-    m = n(962125),
-    p = n(859126),
-    f = n(287809),
-    h = n(996439),
-    b = n(997509),
-    x = n(555337),
-    j = n(203498),
-    _ = n(660496),
-    O = n(652215),
-    v = n(985018),
-    y = n(220906);
-
-function A(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-
-function E(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            A(e, t, n[t])
-        })
-    }
-    return e
-}
-
-function N(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
-        }
-        return n
-    })(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-class S extends i.PureComponent {
+    m = n(736653),
+    g = n(962125),
+    x = n(859126),
+    h = n(287809),
+    _ = n(996439),
+    A = n(997509),
+    p = n(555337),
+    f = n(203498),
+    j = n(660496),
+    N = n(652215),
+    E = n(985018),
+    b = n(220906);
+class T extends s.PureComponent {
     render() {
-        var e;
         let {
-            user: t,
-            guild: n
+            user: e,
+            guild: t
         } = this.props;
-        return (0, r.jsxs)(o.DUT, {
-            className: y.KD,
+        return (0, i.jsxs)(o.DUT, {
+            className: b.KD,
             onClick: this.handleShowModal,
             onContextMenu: this.handleContextMenu,
-            children: [(0, r.jsx)(o.euF, {
-                src: t.getAvatarURL(null == n ? void 0 : n.id, 40),
-                "aria-label": t.username,
+            children: [(0, i.jsx)(o.euF, {
+                src: e.getAvatarURL(t?.id, 40),
+                "aria-label": e.username,
                 size: o._3J.SIZE_40,
-                className: y.pX
-            }), (0, r.jsxs)("div", {
-                className: y.Xh,
-                children: [(0, r.jsx)(o.Text, {
+                className: b.pX
+            }), (0, i.jsxs)("div", {
+                className: b.Xh,
+                children: [(0, i.jsx)(o.Text, {
                     variant: "text-md/semibold",
                     color: "text-strong",
-                    children: null != (e = t.globalName) ? e : t.username
-                }), (0, r.jsx)(o.Text, {
+                    children: e.globalName ?? e.username
+                }), (0, i.jsx)(o.Text, {
                     variant: "text-sm/medium",
                     color: "text-default",
-                    children: null != t.globalName ? t.username : null
+                    children: null != e.globalName ? e.username : null
                 })]
             })]
         })
     }
-    constructor(...e) {
-        super(...e), A(this, "handleShowModal", () => {
+    handleShowModal = () => {
+        let {
+            guild: e,
+            user: t,
+            ban: s
+        } = this.props;
+        (0, o.mMO)(async () => {
             let {
+                default: l
+            } = await n.e("50437").then(n.bind(n, 392516));
+            return n => (0, i.jsx)(l, {
+                ...n,
                 guild: e,
                 user: t,
-                ban: i
-            } = this.props;
-            (0, o.mMO)(async () => {
-                let {
-                    default: l
-                } = await n.e("50437").then(n.bind(n, 392516));
-                return n => (0, r.jsx)(l, N(E({}, n), {
-                    guild: e,
-                    user: t,
-                    ban: i
-                }))
+                ban: s
             })
-        }), A(this, "handleContextMenu", e => {
-            (0, c.L3)(e, async () => {
-                let {
-                    default: e
-                } = await n.e("12123").then(n.bind(n, 263702));
-                return t => (0, r.jsx)(e, N(E({}, t), {
-                    user: this.props.user
-                }))
+        })
+    };
+    handleContextMenu = e => {
+        (0, d.L3)(e, async () => {
+            let {
+                default: e
+            } = await n.e("12123").then(n.bind(n, 263702));
+            return t => (0, i.jsx)(e, {
+                ...t,
+                user: this.props.user
             })
         })
     }
 }
-let I = i.forwardRef(function(e, t) {
+let C = s.forwardRef(function(e, t) {
     let {
         guild: n,
         sortedBans: l,
-        bans: s
-    } = e, a = i.useCallback(e => {
-        var t;
-        if (null == s && 0 === e) return 60;
-        let n = l[e],
-            r = null == s ? void 0 : s.get(null != (t = null == n ? void 0 : n.id) ? t : "");
-        return 60 * (null != n && null != r)
-    }, [s, l]), c = i.useCallback(e => {
-        var t;
-        if (null == s && 0 === e) return (0, r.jsx)(o.y$y, {
-            className: y.u1,
+        bans: r
+    } = e, a = s.useCallback(e => {
+        if (null == r && 0 === e) return 60;
+        let t = l[e],
+            n = r?.get(t?.id ?? "");
+        return 60 * (null != t && null != n)
+    }, [r, l]), d = s.useCallback(e => {
+        if (null == r && 0 === e) return (0, i.jsx)(o.y$y, {
+            className: b.u1,
             type: o.y$y.Type.SPINNING_CIRCLE
         }, "spinner");
-        let i = l[e],
-            a = null == s ? void 0 : s.get(null != (t = null == i ? void 0 : i.id) ? t : "");
-        if (null != i && null != a) return (0, r.jsx)(S, {
-            user: i,
-            ban: a,
+        let t = l[e],
+            s = r?.get(t?.id ?? "");
+        if (null != t && null != s) return (0, i.jsx)(T, {
+            user: t,
+            ban: s,
             guild: n
-        }, i.id)
-    }, [s, n, l]);
-    return (0, r.jsx)(m.A, {
+        }, t.id)
+    }, [r, n, l]);
+    return (0, i.jsx)(g.A, {
         role: "listbox",
         listPadding: [8, 8, 8, 8],
         rowCount: l.length,
         rowHeight: a,
-        renderRow: c,
+        renderRow: d,
         ref: t
     })
 });
 
-function C(e) {
+function I(e) {
     let {
         guildId: t,
         storedSearchQuery: n
-    } = e, [l, s] = i.useState(null != n ? n : ""), [a, c] = i.useState(!1), u = i.useCallback(() => {
-        b.A.setSection(O.BEX.SAFETY), (0, j.K)(_.C.DM_AND_SPAM_PROTECTION)
-    }, []), g = i.useCallback(e => {
-        s(e), 0 === e.trim().length && b.A.setSearchQuery(e)
-    }, []), m = i.useCallback(() => {
-        s(""), b.A.setSearchQuery("")
-    }, []), f = i.useCallback(async () => {
+    } = e, [l, r] = s.useState(n ?? ""), [a, d] = s.useState(!1), u = s.useCallback(() => {
+        A.A.setSection(N.BEX.SAFETY), (0, f.K)(j.C.DM_AND_SPAM_PROTECTION)
+    }, []), m = s.useCallback(e => {
+        r(e), 0 === e.trim().length && A.A.setSearchQuery(e)
+    }, []), g = s.useCallback(() => {
+        r(""), A.A.setSearchQuery("")
+    }, []), h = s.useCallback(async () => {
         if (0 === l.trim().length) {
-            b.A.setSearchQuery(l), c(!1);
+            A.A.setSearchQuery(l), d(!1);
             return
         }
         if (!a) try {
-            c(!0);
-            let [e, n] = (0, p.H)(l), r = e[0];
-            b.A.setSearchQuery(l), await d.A.searchGuildBans(t, r, n), c(!1)
+            d(!0);
+            let [e, n] = (0, x.H)(l), i = e[0];
+            A.A.setSearchQuery(l), await c.A.searchGuildBans(t, i, n), d(!1)
         } catch (e) {
-            c(!1)
+            d(!1)
         }
-    }, [t, a, l]), h = i.useCallback(e => {
-        "Enter" === e.key && (e.preventDefault(), e.stopPropagation(), f())
-    }, [f]);
-    return (0, r.jsxs)("div", {
-        children: [(0, r.jsx)(o.Heading, {
+    }, [t, a, l]), _ = s.useCallback(e => {
+        "Enter" === e.key && (e.preventDefault(), e.stopPropagation(), h())
+    }, [h]);
+    return (0, i.jsxs)("div", {
+        children: [(0, i.jsx)(o.Heading, {
             variant: "heading-lg/semibold",
-            children: v.intl.string(v.t["7OY0gJ"])
-        }), (0, r.jsx)("div", {
-            className: y.Vu,
-            children: (0, r.jsx)(o.Text, {
+            children: E.intl.string(E.t["7OY0gJ"])
+        }), (0, i.jsx)("div", {
+            className: b.Vu,
+            children: (0, i.jsx)(o.Text, {
                 variant: "text-sm/normal",
-                className: y.h_,
-                children: v.intl.format(v.t.JcZ36i, {
+                className: b.h_,
+                children: E.intl.format(E.t.JcZ36i, {
                     onModerationClick: u
                 })
             })
-        }), (0, r.jsxs)("div", {
-            className: y.IA,
-            children: [(0, r.jsx)(o.IWV, {
-                query: null != l ? l : "",
-                placeholder: v.intl.string(v.t.MiqUmf),
-                "aria-label": v.intl.string(v.t.MiqUmf),
-                onChange: g,
-                onKeyDown: h,
-                onClear: m
-            }), (0, r.jsx)("div", {
+        }), (0, i.jsxs)("div", {
+            className: b.IA,
+            children: [(0, i.jsx)(o.IWV, {
+                query: l ?? "",
+                placeholder: E.intl.string(E.t.MiqUmf),
+                "aria-label": E.intl.string(E.t.MiqUmf),
+                onChange: m,
+                onKeyDown: _,
+                onClear: g
+            }), (0, i.jsx)("div", {
                 "data-button-hoisted-classname-wrapper": !0,
-                className: y.JU,
-                children: (0, r.jsx)(o.Button, {
+                className: b.JU,
+                children: (0, i.jsx)(o.Button, {
                     variant: "primary",
-                    text: v.intl.string(v.t["5h0QOP"]),
-                    onClick: f,
+                    text: E.intl.string(E.t["5h0QOP"]),
+                    onClick: h,
                     disabled: a,
                     loading: a
                 })
@@ -215,87 +178,84 @@ function C(e) {
     })
 }
 
-function T() {
-    var e, t;
+function v() {
     let {
-        guild: c,
-        searchQuery: m
-    } = (0, a.bG)([x.A], () => x.A.getProps(), [], l.isEqual), b = null != m && m.trim().length > 0, j = (0, u.A)(b), _ = b !== j, [A] = (0, a.bG)([x.A], () => x.A.getBans(), [], h.D), S = null != (e = null == A ? void 0 : A.size) ? e : 0, T = (0, g.Ay)(), P = null != (t = null == c ? void 0 : c.id) ? t : O.dJq, w = i.useRef(null), R = i.useCallback(e => null == e || 0 === e.length ? e => null != e : t => {
+        guild: e,
+        searchQuery: t
+    } = (0, a.bG)([p.A], () => p.A.getProps(), [], l.isEqual), d = null != t && t.trim().length > 0, g = (0, u.A)(d), A = d !== g, [f] = (0, a.bG)([p.A], () => p.A.getBans(), [], _.D), j = f?.size ?? 0, T = (0, m.Ay)(), v = e?.id ?? N.dJq, S = s.useRef(null), y = s.useCallback(e => null == e || 0 === e.length ? e => null != e : t => {
         if (null == t || 0 === e.trim().length) return !1;
         let [
-            [n], r
-        ] = (0, p.H)(e);
-        return !!r.includes(t.id) || null != n && !!(t.username.toLowerCase().includes(n.toLowerCase()) || null != t.globalName && t.globalName.toLowerCase().includes(n.toLowerCase()))
-    }, []), D = i.useCallback((e, t, n) => {
+            [n], i
+        ] = (0, x.H)(e);
+        return !!i.includes(t.id) || null != n && !!(t.username.toLowerCase().includes(n.toLowerCase()) || null != t.globalName && t.globalName.toLowerCase().includes(n.toLowerCase()))
+    }, []), R = s.useCallback((e, t, n) => {
         if (null == e || 0 === n) return [];
-        let r = [];
+        let i = [];
         for (let n of e.keys()) {
-            let e = f.default.getUser(n);
-            null != e && R(t)(e) && r.push(e)
+            let e = h.default.getUser(n);
+            null != e && y(t)(e) && i.push(e)
         }
-        return r
-    }, [R]), G = i.useMemo(() => D(A, m, S), [A, D, m, S]), L = null != A, k = G.length % 1e3 == 0 && G.length > 0 && L, M = 0 === G.length, [U, B] = i.useState({
+        return i
+    }, [y]), O = s.useMemo(() => R(f, t, j), [f, R, t, j]), G = null != f, L = O.length % 1e3 == 0 && O.length > 0 && G, D = 0 === O.length, [M, k] = s.useState({
         currentPage: 1,
         pageSize: 100
     });
-    i.useEffect(() => {
-        _ && 1 !== U.currentPage && B(e => N(E({}, e), {
+    s.useEffect(() => {
+        A && 1 !== M.currentPage && k(e => ({
+            ...e,
             currentPage: 1
         }))
-    }, [_, U.currentPage]);
-    let F = i.useCallback(e => {
-            d.A.fetchGuildBansBatch(P, 1e3, e)
-        }, [P]),
-        H = i.useMemo(() => s().chunk(G, U.pageSize), [U.pageSize, G]),
-        V = i.useCallback(e => {
-            var t, n, r;
-            null == (t = w.current) || t.scrollToSectionTop(0), (e + 1) * U.pageSize > G.length && k && !b && (K.current = null != (n = null == (r = G[G.length - 1]) ? void 0 : r.id) ? n : null, F(K.current)), (null != H[e - 1] || k) && B(t => N(E({}, t), {
+    }, [A, M.currentPage]);
+    let U = s.useCallback(e => {
+            c.A.fetchGuildBansBatch(v, 1e3, e)
+        }, [v]),
+        P = s.useMemo(() => r().chunk(O, M.pageSize), [M.pageSize, O]),
+        w = s.useCallback(e => {
+            S.current?.scrollToSectionTop(0), (e + 1) * M.pageSize > O.length && L && !d && (B.current = O[O.length - 1]?.id ?? null, U(B.current)), (null != P[e - 1] || L) && k(t => ({
+                ...t,
                 currentPage: e
             }))
-        }, [U.pageSize, G, k, H, F, b]),
-        K = i.useRef(null);
-    i.useEffect(() => {
-        F(K.current)
-    }, [F]);
-    let z = i.useMemo(() => {
-        var e;
-        return null != (e = H[U.currentPage - 1]) ? e : []
-    }, [H, U.currentPage]);
-    return null == c ? null : (0, r.jsxs)("div", {
-        className: y.kL,
-        children: [(0, r.jsx)(C, {
-            guildId: P,
-            storedSearchQuery: m
-        }), (0, r.jsxs)("div", {
-            className: y.gs,
-            children: [!M && (0, r.jsx)(I, {
-                guild: c,
-                bans: A,
-                sortedBans: z,
-                ref: w
-            }), !k && M && (0, r.jsxs)(o.ppr, {
+        }, [M.pageSize, O, L, P, U, d]),
+        B = s.useRef(null);
+    s.useEffect(() => {
+        U(B.current)
+    }, [U]);
+    let F = s.useMemo(() => P[M.currentPage - 1] ?? [], [P, M.currentPage]);
+    return null == e ? null : (0, i.jsxs)("div", {
+        className: b.kL,
+        children: [(0, i.jsx)(I, {
+            guildId: v,
+            storedSearchQuery: t
+        }), (0, i.jsxs)("div", {
+            className: b.gs,
+            children: [!D && (0, i.jsx)(C, {
+                guild: e,
+                bans: f,
+                sortedBans: F,
+                ref: S
+            }), !L && D && (0, i.jsxs)(o.ppr, {
                 theme: T,
-                className: y.p$,
-                children: [(0, r.jsx)(o.G8R, {
+                className: b.p$,
+                children: [(0, i.jsx)(o.G8R, {
                     darkSrc: n(29093),
                     lightSrc: n(993507),
                     width: 256,
                     height: 212
-                }), (0, r.jsx)(o.SGT, {
-                    note: v.intl.string(v.t.zfCsAw),
+                }), (0, i.jsx)(o.SGT, {
+                    note: E.intl.string(E.t.zfCsAw),
                     style: {
                         maxWidth: 300
                     },
-                    children: v.intl.string(v.t.ZEiY1D)
+                    children: E.intl.string(E.t.ZEiY1D)
                 })]
             })]
-        }), (0, r.jsx)("div", {
-            children: (0, r.jsx)(o.mgR, {
-                className: y.JV,
-                totalCount: G.length + (k ? U.pageSize : 0),
-                pageSize: U.pageSize,
-                currentPage: U.currentPage,
-                onPageChange: V,
+        }), (0, i.jsx)("div", {
+            children: (0, i.jsx)(o.mgR, {
+                className: b.JV,
+                totalCount: O.length + (L ? M.pageSize : 0),
+                pageSize: M.pageSize,
+                currentPage: M.currentPage,
+                onPageChange: w,
                 maxVisiblePages: 9
             })
         })]

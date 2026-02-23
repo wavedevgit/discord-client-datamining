@@ -1,125 +1,85 @@
 /** chunk id: 786574, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     N: () => o
-}), n(896048), n(321073), n(733351), n(638769);
+}), n(321073);
 var a = n(627968),
-    l = n(64700),
-    r = n(614820),
-    i = n(397927),
-    s = n(231643);
+    i = n(64700),
+    s = n(614820),
+    l = n(397927),
+    r = n(231643);
 
 function o(e, t) {
-    let [n, o] = l.useState(""), c = l.useMemo(() => {
+    let [n, o] = i.useState(""), d = i.useMemo(() => {
         if ("" === n.trim()) return e;
         let t = n.toLowerCase().trim();
         return e.filter(e => {
-            var n, a, l;
-            let i = (null != (n = (0, r.O)(e.name)) ? n : "").toLowerCase(),
-                s = (null != (a = e.group) ? a : "").toLowerCase(),
-                o = null != (l = e.tags) ? l : [];
-            return i.includes(t) || e.id.toLowerCase().includes(t) || s.includes(t) || o.some(e => e.toLowerCase().includes(t))
+            let n = ((0, s.O)(e.name) ?? "").toLowerCase(),
+                a = (e.group ?? "").toLowerCase(),
+                i = e.tags ?? [];
+            return n.includes(t) || e.id.toLowerCase().includes(t) || a.includes(t) || i.some(e => e.toLowerCase().includes(t))
         })
     }, [e, n]);
-    return [l.useMemo(() => (0, a.jsx)(i.aK1, {
+    return [i.useMemo(() => (0, a.jsx)(l.aK1, {
         id: "devtools-search",
-        control: (e, t) => {
-            var l, r;
-            return (0, a.jsx)(i.VPO, (l = function(e) {
-                for (var t = 1; t < arguments.length; t++) {
-                    var n = null != arguments[t] ? arguments[t] : {},
-                        a = Object.keys(n);
-                    "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                        return Object.getOwnPropertyDescriptor(n, e).enumerable
-                    }))), a.forEach(function(t) {
-                        var a;
-                        a = n[t], t in e ? Object.defineProperty(e, t, {
-                            value: a,
-                            enumerable: !0,
-                            configurable: !0,
-                            writable: !0
-                        }) : e[t] = a
-                    })
-                }
-                return e
-            }({}, e), r = r = {
-                query: n,
-                onChange: o,
-                placeholder: "Search DevTools...",
-                ref: t
-            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
-                var n = Object.keys(e);
-                if (Object.getOwnPropertySymbols) {
-                    var a = Object.getOwnPropertySymbols(e);
-                    n.push.apply(n, a)
-                }
-                return n
-            })(Object(r)).forEach(function(e) {
-                Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(r, e))
-            }), l))
-        }
-    }, "devtools-search"), [n]), ...l.useMemo(() => {
+        control: (e, t) => (0, a.jsx)(l.VPO, {
+            ...e,
+            query: n,
+            onChange: o,
+            placeholder: "Search DevTools...",
+            ref: t
+        })
+    }, "devtools-search"), [n]), ...i.useMemo(() => {
         let e = [];
-        if ("" !== n.trim() && 0 === c.length) e.push((0, a.jsx)(i.Drp, {
+        if ("" !== n.trim() && 0 === d.length) e.push((0, a.jsx)(l.Drp, {
             id: "devtools-no-results",
-            label: 'No DevTools found for "'.concat(n, '"'),
+            label: `No DevTools found for "${n}"`,
             disabled: !0
         }, "devtools-no-results"));
         else {
-            let l = c.filter(e => e.group === s.fu.NONE),
+            let i = d.filter(e => e.group === r.fu.NONE),
                 o = function(e) {
                     let t = new Map;
-                    for (let a of e) {
-                        var n;
-                        let e = null != (n = t.get(a.group)) ? n : [];
-                        e.push(a), t.set(a.group, e)
+                    for (let n of e) {
+                        let e = t.get(n.group) ?? [];
+                        e.push(n), t.set(n.group, e)
                     }
                     return t
-                }(c.filter(e => e.group !== s.fu.NONE));
-            l.forEach(n => {
-                var l;
+                }(d.filter(e => e.group !== r.fu.NONE));
+            i.forEach(n => {
                 let {
-                    id: s,
-                    name: o
+                    id: i,
+                    name: r
                 } = n;
-                return e.push((0, a.jsx)(i.Drp, {
-                    id: s,
-                    label: null != (l = (0, r.O)(o)) ? l : "",
-                    action: () => t(s)
-                }, s))
-            }), s.BW.forEach(l => {
-                let s = o.get(l);
-                if (null != s && s.length > 0) {
-                    let o = s.sort((e, t) => {
-                        var n, a;
-                        return (null != (n = (0, r.O)(e.name)) ? n : "").localeCompare(null != (a = (0, r.O)(t.name)) ? a : "")
-                    });
-                    "" === n.trim() ? e.push((0, a.jsx)(i.Drp, {
-                        id: "devtools-".concat(l),
-                        label: l,
-                        children: (0, a.jsx)(i.rXV, {
-                            children: o.map(e => {
-                                var n;
-                                return (0, a.jsx)(i.Drp, {
-                                    id: "devtools-".concat(e.id),
-                                    label: null != (n = (0, r.O)(e.name)) ? n : "",
-                                    action: () => t(e.id)
-                                }, e.id)
-                            })
-                        })
-                    }, "devtools-".concat(l))) : e.push((0, a.jsx)(i.rXV, {
-                        label: l,
-                        children: o.map(e => {
-                            var n;
-                            return (0, a.jsx)(i.Drp, {
-                                id: "devtools-filtered-".concat(e.id),
-                                label: null != (n = (0, r.O)(e.name)) ? n : "",
+                return e.push((0, a.jsx)(l.Drp, {
+                    id: i,
+                    label: (0, s.O)(r) ?? "",
+                    action: () => t(i)
+                }, i))
+            }), r.BW.forEach(i => {
+                let r = o.get(i);
+                if (null != r && r.length > 0) {
+                    let o = r.sort((e, t) => ((0, s.O)(e.name) ?? "").localeCompare((0, s.O)(t.name) ?? ""));
+                    "" === n.trim() ? e.push((0, a.jsx)(l.Drp, {
+                        id: `devtools-${i}`,
+                        label: i,
+                        children: (0, a.jsx)(l.rXV, {
+                            children: o.map(e => (0, a.jsx)(l.Drp, {
+                                id: `devtools-${e.id}`,
+                                label: (0, s.O)(e.name) ?? "",
                                 action: () => t(e.id)
-                            }, e.id)
+                            }, e.id))
                         })
-                    }, "devtools-filtered-".concat(l)))
+                    }, `devtools-${i}`)) : e.push((0, a.jsx)(l.rXV, {
+                        label: i,
+                        children: o.map(e => (0, a.jsx)(l.Drp, {
+                            id: `devtools-filtered-${e.id}`,
+                            label: (0, s.O)(e.name) ?? "",
+                            action: () => t(e.id)
+                        }, e.id))
+                    }, `devtools-filtered-${i}`))
                 }
             })
         }
         return e
-    }, [c, n, t])]
+    }, [d, n, t])]
 }

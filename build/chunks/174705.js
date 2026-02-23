@@ -1,156 +1,155 @@
-/** chunk id: 174705, original params: t,n,e (module,exports,require) **/
-e.d(n, {
-    default: () => U
-}), e(896048), e(65821);
-var r = e(627968),
-    i = e(64700),
-    l = e(284009),
-    a = e.n(l),
-    o = e(158954),
-    u = e(311907),
-    c = e(397927),
-    s = e(158032),
-    d = e(155718),
-    _ = e(793574),
-    p = e(688810),
-    m = e(156312),
-    y = e(853398),
-    f = e(532794),
-    C = e(287809),
-    I = e(295405),
-    A = e(97352),
-    v = e(954571),
-    b = e(927578),
-    S = e(580630),
-    P = e(83617),
-    g = e(615396),
-    x = e(543767),
-    L = e(96304),
-    N = e(380083),
-    h = e(788868),
-    E = e(652215),
-    M = e(985018);
-let U = t => {
-    var n, e, l, U;
+/** chunk id: 174705, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    default: () => G
+});
+var r = n(627968),
+    i = n(64700),
+    l = n(284009),
+    o = n.n(l),
+    u = n(158954),
+    a = n(311907),
+    _ = n(397927),
+    s = n(158032),
+    c = n(155718),
+    d = n(793574),
+    m = n(688810),
+    p = n(156312),
+    f = n(853398),
+    C = n(532794),
+    b = n(287809),
+    y = n(295405),
+    I = n(97352),
+    A = n(954571),
+    g = n(927578),
+    h = n(580630),
+    S = n(83617),
+    P = n(615396),
+    T = n(543767),
+    v = n(96304),
+    U = n(380083),
+    L = n(788868),
+    x = n(652215),
+    E = n(985018);
+let G = e => {
     let {
-        daysLeft: k,
-        premiumType: w,
-        premiumSubscription: T,
-        analyticsSource: D,
-        onClose: O,
-        transitionState: R
-    } = t, [G, j] = i.useState(!1), {
-        analyticsLocations: B
-    } = (0, p.Ay)(_.A.PREMIUM_UNCANCEL_MODAL), q = (0, u.bG)([C.default], () => {
-        let t = C.default.getCurrentUser();
-        return a()(null != t, "ProfileItem: currentUser cannot be undefined"), t
-    }), K = (0, u.bG)([I.A], () => (null == T ? void 0 : T.paymentSourceId) != null ? I.A.getPaymentSource(T.paymentSourceId) : null, [T]), W = T.items[0].planId, z = (0, b.mH)(h.hd[W].skuId), {
-        priceOptions: F
-    } = (0, y.A)({
+        daysLeft: t,
+        premiumType: n,
+        premiumSubscription: l,
+        analyticsSource: G,
+        onClose: N,
+        transitionState: w
+    } = e, [M, R] = i.useState(!1), {
+        analyticsLocations: D
+    } = (0, m.Ay)(d.A.PREMIUM_UNCANCEL_MODAL), F = (0, a.bG)([b.default], () => {
+        let e = b.default.getCurrentUser();
+        return o()(null != e, "ProfileItem: currentUser cannot be undefined"), e
+    }), k = (0, a.bG)([y.A], () => l?.paymentSourceId != null ? y.A.getPaymentSource(l.paymentSourceId) : null, [l]), O = l.items[0].planId, j = (0, g.mH)(L.hd[O].skuId), {
+        priceOptions: B
+    } = (0, f.A)({
         activeSubscription: null,
-        skuIDs: [z],
-        paymentSourceId: null == T ? void 0 : T.paymentSourceId,
+        skuIDs: [j],
+        paymentSourceId: l?.paymentSourceId,
         isGift: !1
-    }), [H] = (0, x.Kq)({
-        subscriptionId: T.id,
+    }), [q] = (0, T.Kq)({
+        subscriptionId: l.id,
         items: [{
-            planId: W,
+            planId: O,
             quantity: 1
         }],
         renewal: !0,
-        paymentSourceId: null == T ? void 0 : T.paymentSourceId,
-        currency: F.currency,
-        analyticsLocations: (0, p.Ay)(_.A.PREMIUM_UNCANCEL_MODAL),
-        analyticsLocation: _.A.PREMIUM_UNCANCEL_MODAL
-    }), X = (0, u.bG)([A.A], () => (0, g.c9)(W), [W]), $ = (0, u.bG)([A.A], () => A.A.isFetchingForSKU(z)), J = null == H || null == (U = H.invoiceItems) || null == (l = U.find(t => t.subscriptionPlanId === W)) || null == (e = l.discounts) || null == (n = e.find(t => t.type === d.iS.SUBSCRIPTION_PLAN)) ? void 0 : n.amount, Z = null != X ? (0, b.y8)(X.id, !1, !1, F) : null, Q = null != Z && null != J ? (0, S.$g)(Z.amount - (null != J ? J : 0), Z.currency) : null, {
-        intervalType: V,
-        intervalCount: Y
-    } = b.Ay.getInterval(W), tt = w === h.PremiumTypes.TIER_1, tn = null != Z ? (0, S.$g)(Z.amount, Z.currency) : null;
+        paymentSourceId: l?.paymentSourceId,
+        currency: B.currency,
+        analyticsLocations: (0, m.Ay)(d.A.PREMIUM_UNCANCEL_MODAL),
+        analyticsLocation: d.A.PREMIUM_UNCANCEL_MODAL
+    }), K = (0, a.bG)([I.A], () => (0, P.c9)(O), [O]), W = (0, a.bG)([I.A], () => I.A.isFetchingForSKU(j)), $ = q?.invoiceItems?.find(e => e.subscriptionPlanId === O)?.discounts?.find(e => e.type === c.iS.SUBSCRIPTION_PLAN)?.amount, z = null != K ? (0, g.y8)(K.id, !1, !1, B) : null, Y = null != z && null != $ ? (0, h.$g)(z.amount - ($ ?? 0), z.currency) : null, {
+        intervalType: H,
+        intervalCount: X
+    } = g.Ay.getInterval(O), V = n === L.PremiumTypes.TIER_1, Z = null != z ? (0, h.$g)(z.amount, z.currency) : null;
     return (i.useEffect(() => {
-        v.default.track(E.HAw.OPEN_MODAL, {
+        A.default.track(x.HAw.OPEN_MODAL, {
             type: "Premium Uncancel Winback",
-            source: D
+            source: G
         })
-    }, [D]), G) ? (0, r.jsx)(o.Modal, {
+    }, [G]), M) ? (0, r.jsx)(u.Modal, {
         actions: [],
-        onClose: O,
-        transitionState: R,
+        onClose: N,
+        transitionState: w,
         title: "",
-        children: (0, r.jsx)(m.PaymentContextProvider, {
-            activeSubscription: T,
+        children: (0, r.jsx)(p.PaymentContextProvider, {
+            activeSubscription: l,
             stepConfigs: [],
             skuIDs: [],
-            children: (0, r.jsx)(N.Ay, {
-                planId: W,
-                onClose: O,
-                paymentSourceType: null == K ? void 0 : K.type
+            children: (0, r.jsx)(U.Ay, {
+                planId: O,
+                onClose: N,
+                paymentSourceType: k?.type
             })
         })
-    }) : (0, r.jsx)(o.Modal, {
-        title: tt ? M.intl.formatToPlainString(M.t.Sngnzg, {
-            daysLeft: k
-        }) : M.intl.formatToPlainString(M.t.tdvIlU, {
-            daysLeft: k
+    }) : (0, r.jsx)(u.Modal, {
+        title: V ? E.intl.formatToPlainString(E.t.Sngnzg, {
+            daysLeft: t
+        }) : E.intl.formatToPlainString(E.t.tdvIlU, {
+            daysLeft: t
         }),
-        subtitle: tt ? M.intl.format(M.t["6Su2Xb"], {}) : M.intl.format(M.t["lE+P8X"], {}),
+        subtitle: V ? E.intl.format(E.t["6Su2Xb"], {}) : E.intl.format(E.t["lE+P8X"], {}),
         size: "md",
-        onClose: O,
-        preview: null !== tn ? (0, r.jsx)(c.Text, {
+        onClose: N,
+        preview: null !== Z ? (0, r.jsx)(_.Text, {
             variant: "text-sm/normal",
-            children: function(t) {
-                switch (V) {
-                    case h.WT.YEAR:
-                        return tt ? M.intl.format(M.t.O7JRza, {
-                            price: t
-                        }) : M.intl.format(M.t["0y5kAG"], {
-                            price: t
+            children: function(e) {
+                switch (H) {
+                    case L.WT.YEAR:
+                        return V ? E.intl.format(E.t.O7JRza, {
+                            price: e
+                        }) : E.intl.format(E.t["0y5kAG"], {
+                            price: e
                         });
-                    case h.WT.MONTH:
-                        if (null != Q) return M.intl.format(M.t["1/ucvu"], {
-                            discountPrice: Q,
-                            defaultPrice: t
+                    case L.WT.MONTH:
+                        if (null != Y) return E.intl.format(E.t["1/ucvu"], {
+                            discountPrice: Y,
+                            defaultPrice: e
                         });
-                        if (tt) return M.intl.format(M.t.rbwRlf, {
-                            price: t
+                        if (V) return E.intl.format(E.t.rbwRlf, {
+                            price: e
                         });
-                        if (1 === Y) return M.intl.format(M.t.C9oRCx, {
-                            price: t
+                        if (1 === X) return E.intl.format(E.t.C9oRCx, {
+                            price: e
                         });
-                        return M.intl.format(M.t.TmmTgl, {
-                            price: t,
-                            intervalCount: Y
+                        return E.intl.format(E.t.TmmTgl, {
+                            price: e,
+                            intervalCount: X
                         });
                     default:
-                        throw Error("Unknown interval type ".concat(V))
+                        throw Error(`Unknown interval type ${H}`)
                 }
-            }(tn)
-        }) : (0, r.jsx)(c.y$y, {
-            type: c.tVU.SPINNING_CIRCLE
+            }(Z)
+        }) : (0, r.jsx)(_.y$y, {
+            type: _.tVU.SPINNING_CIRCLE
         }),
         actions: [{
-            text: M.intl.string(M.t.XDpS4K),
+            text: E.intl.string(E.t.XDpS4K),
             variant: "secondary",
-            onClick: O
+            onClick: N
         }, {
-            text: M.intl.string(M.t["2+luBl"]),
+            text: E.intl.string(E.t["2+luBl"]),
             variant: "primary",
-            disabled: $,
+            disabled: W,
             onClick: async () => {
-                if (null != T) {
-                    let t = (0, P.jJ)(W, T.currency, null == K ? void 0 : K.id);
-                    null != K && K.id === T.paymentSourceId && t ? (await s.Ir(T, B, T.currency, K, E.ThZ.UNCANCEL_WINBACK_MODAL), j(!0)) : (O(), (0, f.A)({
-                        initialPlanId: W,
-                        analyticsLocations: B,
-                        analyticsLocation: E.ThZ.UNCANCEL_WINBACK_MODAL
+                if (null != l) {
+                    let e = (0, S.jJ)(O, l.currency, k?.id);
+                    null != k && k.id === l.paymentSourceId && e ? (await s.Ir(l, D, l.currency, k, x.ThZ.UNCANCEL_WINBACK_MODAL), R(!0)) : (N(), (0, C.A)({
+                        initialPlanId: O,
+                        analyticsLocations: D,
+                        analyticsLocation: x.ThZ.UNCANCEL_WINBACK_MODAL
                     }))
                 }
             }
         }],
-        transitionState: R,
-        children: (0, r.jsx)(L.l, {
-            currentUser: q,
-            premiumType: w,
-            onClose: O,
+        transitionState: w,
+        children: (0, r.jsx)(v.l, {
+            currentUser: F,
+            premiumType: n,
+            onClose: N,
             isDowngrade: !1,
             isPremiumRebrand: !0
         })

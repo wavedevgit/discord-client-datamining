@@ -1,22 +1,21 @@
-/** chunk id: 167579, original params: e,t,_ (module,exports,require) **/
-_.d(t, {
-    A: () => c
+/** chunk id: 167579, original params: e,t,a (module,exports,require) **/
+a.d(t, {
+    A: () => o
 });
-var n = _(311907),
-    a = _(961350),
-    o = _(430452),
-    r = _(977997);
+var n = a(311907),
+    r = a(961350),
+    i = a(430452),
+    _ = a(977997);
 
-function c(e) {
-    return (0, n.cf)([r.A, o.A, a.default], () => (function(e) {
-        var t;
-        let _ = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : r.A,
-            n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : o.A,
-            c = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : a.default,
-            i = null != e ? _.getVoiceState(e.getGuildId(), c.getId()) : null;
+function o(e) {
+    return (0, n.cf)([_.A, i.Ay, r.default], () => (function(e) {
+        let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : _.A,
+            a = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : i.Ay,
+            n = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : r.default,
+            o = null != e ? t.getVoiceState(e.getGuildId(), n.getId()) : null;
         return {
-            selfDeaf: n.isSelfDeaf(),
-            deaf: null != (t = null == i ? void 0 : i.deaf) && t
+            selfDeaf: a.isSelfDeaf(),
+            deaf: o?.deaf ?? !1
         }
-    })(e, r.A, o.A, a.default), [e])
+    })(e, _.A, i.Ay, r.default), [e])
 }

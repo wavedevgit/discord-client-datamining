@@ -2,12 +2,12 @@
 n.d(t, {
     A: () => d
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(503698),
-    l = n.n(i),
-    s = n(397927),
-    a = n(985018),
+var s = n(503698),
+    a = n.n(s),
+    r = n(397927),
+    l = n(985018),
     o = n(38824);
 
 function c(e) {
@@ -15,8 +15,8 @@ function c(e) {
         title: t,
         children: n
     } = e;
-    return (0, r.jsxs)("div", {
-        children: [(0, r.jsx)(s.Heading, {
+    return (0, i.jsxs)("div", {
+        children: [(0, i.jsx)(r.Heading, {
             variant: "text-md/medium",
             className: o.Vf,
             children: t
@@ -28,27 +28,27 @@ function d(e) {
     let {
         children: t,
         className: n,
-        layoutClassName: i,
-        profilePreview: s,
+        layoutClassName: s,
+        profilePreview: r,
         profilePreviewTitle: d,
         nameplatePreview: u
     } = e;
-    return (0, r.jsx)("div", {
-        className: l()(o.UA, n),
-        children: (0, r.jsxs)("div", {
-            className: l()(o.yt, i),
-            children: [(0, r.jsx)("div", {
+    return (0, i.jsx)("div", {
+        className: a()(o.UA, n),
+        children: (0, i.jsxs)("div", {
+            className: a()(o.yt, s),
+            children: [(0, i.jsx)("div", {
                 className: o.Fp,
-                children: (0, r.jsxs)(r.Fragment, {
-                    children: [(0, r.jsx)(c, {
-                        title: null != d ? d : a.intl.string(a.t.Zb06yP),
-                        children: s
-                    }), null != u ? (0, r.jsx)(c, {
-                        title: a.intl.string(a.t["7KRt6R"]),
+                children: (0, i.jsxs)(i.Fragment, {
+                    children: [(0, i.jsx)(c, {
+                        title: d ?? l.intl.string(l.t.Zb06yP),
+                        children: r
+                    }), null != u ? (0, i.jsx)(c, {
+                        title: l.intl.string(l.t.x5CoXR),
                         children: u
                     }) : null]
                 })
-            }), (0, r.jsx)("div", {
+            }), (0, i.jsx)("div", {
                 className: o.oB,
                 children: t
             })]

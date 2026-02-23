@@ -1,134 +1,92 @@
 /** chunk id: 449859, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => b
 });
-var r = n(627968),
+var a = n(627968),
     i = n(64700),
-    a = n(503698),
-    o = n.n(a),
+    r = n(503698),
+    l = n.n(r),
     s = n(990078),
-    l = n(405269),
-    c = n(355938),
+    o = n(253932),
+    c = n(405269),
+    d = n(355938),
     u = n(943815),
-    d = n(985018),
-    f = n(679740);
-
-function p(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-
-function _(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            p(e, t, n[t])
-        })
-    }
-    return e
-}
-
-function h(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-        var r = Object.getOwnPropertySymbols(e);
-        t && (r = r.filter(function(t) {
-            return Object.getOwnPropertyDescriptor(e, t).enumerable
-        })), n.push.apply(n, r)
-    }
-    return n
-}
-
-function m(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-
-function g(e) {
-    return new Date(e)
-}
-let E = i.memo(function(e) {
+    _ = n(985018),
+    m = n(679740);
+let p = i.memo(function(e) {
         let {
             children: t,
             className: n,
-            compact: a = !1,
+            compact: r = !1,
             timestamp: p,
-            timestampFormat: _,
+            timestampFormat: b,
             isVisibleOnlyOnHover: h = !1,
-            cozyAlt: m = !1,
-            isInline: E = !0,
-            id: b,
-            isEdited: O = !1,
-            application: v,
-            tooltipPosition: A
-        } = e, I = i.useMemo(() => g(p), [p]), S = i.useMemo(() => (0, l.K7)(I), [I]), T = i.useMemo(() => null != _ ? (0, l.i$)(I, _) : a ? (0, l.i$)(I, "LT") : (0, l.mk)(I, !0), [I, _, a]), C = i.useMemo(() => a ? (0, u.A)(T) : null, [a, T]), N = i.useMemo(() => O ? d.intl.formatToPlainString(d.t.CDzOFd, {
+            cozyAlt: g = !1,
+            isInline: A = !0,
+            id: T,
+            isEdited: x = !1,
+            application: I,
+            tooltipPosition: C
+        } = e, E = i.useMemo(() => new Date(p), [p]), S = i.useMemo(() => (0, c.K7)(E), [E]), y = o.PZ.useSetting(), v = i.useMemo(() => null != b ? (0, c.i$)(E, b, y) : r ? (0, c.i$)(E, "LT", y) : (0, c.mk)(E, !0), [E, b, r, y]), j = i.useMemo(() => r ? (0, u.A)(v) : null, [r, v]), R = i.useMemo(() => x ? _.intl.formatToPlainString(_.t.CDzOFd, {
             timeFormatted: S
-        }) : S, [O, S]);
-        return (0, r.jsx)("span", {
-            className: o()(n, C, {
-                [f.vE]: !0,
-                [f.ET]: h,
-                [f.YQ]: E,
-                [f.CC]: m
+        }) : S, [x, S]);
+        return (0, a.jsx)("span", {
+            className: l()(n, j, {
+                [m.vE]: !0,
+                [m.ET]: h,
+                [m.YQ]: A,
+                [m.CC]: g
             }),
-            children: null == v ? (0, r.jsx)(s.m, {
+            children: null == I ? (0, a.jsx)(s.m, {
                 asContainer: !0,
-                __unsupportedReactNodeAsText: (0, l.i$)(I, "LLLL"),
-                "aria-label": N,
-                position: A,
+                __unsupportedReactNodeAsText: (0, c.i$)(E, "LLLL"),
+                "aria-label": R,
+                position: C,
                 delay: 750,
-                children: (0, r.jsx)(y, {
-                    timeFormatted: T,
-                    timestamp: I,
-                    id: b,
-                    compact: a,
+                children: (0, a.jsx)(f, {
+                    timeFormatted: v,
+                    timestamp: E,
+                    id: T,
+                    compact: r,
                     children: t
                 })
-            }) : (0, r.jsx)(c.A, {
-                application: v,
-                compact: a,
-                children: (0, r.jsx)(y, {
-                    timeFormatted: T,
-                    timestamp: I,
-                    id: b,
-                    compact: a,
+            }) : (0, a.jsx)(d.A, {
+                application: I,
+                compact: r,
+                children: (0, a.jsx)(f, {
+                    timeFormatted: v,
+                    timestamp: E,
+                    id: T,
+                    compact: r,
                     children: t
                 })
             })
         })
     }),
-    y = i.memo(function(e) {
+    f = i.memo(function(e) {
         let {
             tooltipProps: t,
             timeFormatted: n,
             children: i,
-            compact: a,
-            timestamp: o,
+            compact: r,
+            timestamp: l,
             id: s
         } = e;
-        return (0, r.jsx)("time", m(_({}, t), {
+        return (0, a.jsx)("time", {
+            ...t,
             id: s,
-            dateTime: o.toISOString(),
-            children: null != i ? i : (0, r.jsxs)(r.Fragment, {
-                children: [(0, r.jsx)("i", {
-                    className: f.me,
+            dateTime: l.toISOString(),
+            children: null != i ? i : (0, a.jsxs)(a.Fragment, {
+                children: [(0, a.jsx)("i", {
+                    className: m.me,
                     "aria-hidden": !0,
-                    children: a ? "[" : " — "
-                }), n, a && (0, r.jsxs)("i", {
-                    className: f.me,
+                    children: r ? "[" : " — "
+                }), n, r && (0, a.jsxs)("i", {
+                    className: m.me,
                     "aria-hidden": !0,
                     children: ["]", " "]
                 })]
             })
-        }))
+        })
     }),
-    b = E
+    b = p

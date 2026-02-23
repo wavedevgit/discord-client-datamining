@@ -1,120 +1,116 @@
 /** chunk id: 693240, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    o: () => x,
+    o: () => p,
     w: () => g
 });
 var a = n(627968);
 n(64700);
-var l = n(311907),
-    r = n(116833),
-    i = n(342494),
-    s = n(73153),
+var i = n(311907),
+    s = n(116833),
+    l = n(342494),
+    r = n(73153),
     o = n(626584),
-    c = n(71393),
-    d = n(685073),
+    d = n(71393),
+    c = n(685073),
     u = n(514661),
     m = n(49999),
-    p = n(985018);
-let h = new o.A("GuildTagAvailableCoachmark");
+    h = n(985018);
+let x = new o.A("GuildTagAvailableCoachmark");
 
-function x(e) {
-    var t;
-    let n = (0, l.bG)([c.A], () => c.A.getGuild(e.guildId));
+function p(e) {
+    let t = (0, i.bG)([d.A], () => d.A.getGuild(e.guildId));
 
-    function o(t) {
-        var a, l;
-        (null == n || null == (a = n.profile) ? void 0 : a.tag) != null && s.h.dispatch({
+    function n(n) {
+        t?.profile?.tag != null && r.h.dispatch({
             type: "GUILD_TAG_CHANGED_COACHMARK_SEEN",
-            guildId: n.id,
+            guildId: t.id,
             lastSeenInfo: {
-                tag: n.profile.tag
+                tag: t.profile.tag
             }
-        }), null == (l = e.onDismiss) || l.call(e, t)
+        }), e.onDismiss?.(n)
     }
     let {
-        isAdopting: x,
-        onAdoptTag: g,
-        onEditProfile: f
-    } = (0, u.A)(null != (t = null == n ? void 0 : n.id) ? t : null, () => o(m.i.TAKE_ACTION));
-    if (null == n || !(0, d.q0)(n)) return h.error("GuildTagChangedCoachmark rendered without guildId for a guild with tags."), e.children;
-    let b = [{
-        text: p.intl.string(p.t.jwEaiX),
-        loading: x,
-        onClick: g,
+        isAdopting: o,
+        onAdoptTag: p,
+        onEditProfile: g
+    } = (0, u.A)(t?.id ?? null, () => n(m.i.TAKE_ACTION));
+    if (null == t || !(0, c.q0)(t)) return x.error("GuildTagChangedCoachmark rendered without guildId for a guild with tags."), e.children;
+    let _ = [{
+        text: h.intl.string(h.t.jwEaiX),
+        loading: o,
+        onClick: p,
         variant: "primary"
     }, {
-        text: p.intl.string(p.t.s5vZlQ),
-        onClick: f,
+        text: h.intl.string(h.t.s5vZlQ),
+        onClick: g,
         variant: "secondary"
     }];
     return (0, a.jsxs)(a.Fragment, {
-        children: [e.children, (0, a.jsx)(i.AM, {
+        children: [e.children, (0, a.jsx)(l.AM, {
             targetElementRef: e.targetElementRef,
             shouldShow: !0,
             position: "top",
             graphic: {
                 type: "dynamic",
-                component: r.DynamicGraphicComponent.GUILD_TAG_COACHMARK_ASSET,
+                component: s.DynamicGraphicComponent.GUILD_TAG_COACHMARK_ASSET,
                 props: {
-                    guildId: n.id,
-                    guildProfile: n.profile
+                    guildId: t.id,
+                    guildProfile: t.profile
                 }
             },
-            title: p.intl.formatToPlainString(p.t["m/Tc3n"], {
-                guildName: n.name
+            title: h.intl.formatToPlainString(h.t["m/Tc3n"], {
+                guildName: t.name
             }),
-            body: p.intl.string(p.t.DrAXIr),
-            actions: b,
+            body: h.intl.string(h.t.DrAXIr),
+            actions: _,
             size: "md",
-            onRequestClose: () => o(m.i.USER_DISMISS)
+            onRequestClose: () => n(m.i.USER_DISMISS)
         })]
     })
 }
 
 function g(e) {
-    var t;
-    let n = (0, l.bG)([c.A], () => c.A.getGuild(e.guildId));
+    let t = (0, i.bG)([d.A], () => d.A.getGuild(e.guildId));
 
-    function s(t) {
-        var n;
-        null == (n = e.onDismiss) || n.call(e, t)
+    function n(t) {
+        e.onDismiss?.(t)
     }
     let {
-        isAdopting: o,
-        onAdoptTag: x,
-        onEditProfile: g
-    } = (0, u.A)(null != (t = null == n ? void 0 : n.id) ? t : null, () => s(m.i.TAKE_ACTION));
-    if (null == n || !(0, d.q0)(n)) return h.error("GuildTagAvailableCoachmark rendered without guildId for a guild with tags."), e.children;
-    let f = [{
-        text: p.intl.string(p.t.jwEaiX),
-        loading: o,
-        onClick: x,
+        isAdopting: r,
+        onAdoptTag: o,
+        onEditProfile: p
+    } = (0, u.A)(t?.id ?? null, () => n(m.i.TAKE_ACTION));
+    if (null == t || !(0, c.q0)(t)) return x.error("GuildTagAvailableCoachmark rendered without guildId for a guild with tags."), e.children;
+    let g = [{
+        text: h.intl.string(h.t.jwEaiX),
+        loading: r,
+        onClick: o,
         variant: "primary"
     }, {
-        text: p.intl.string(p.t.s5vZlQ),
-        onClick: g,
+        text: h.intl.string(h.t.s5vZlQ),
+        onClick: p,
         variant: "secondary"
     }];
     return (0, a.jsxs)(a.Fragment, {
-        children: [e.children, (0, a.jsx)(i.AM, {
+        children: [e.children, (0, a.jsx)(l.AM, {
             targetElementRef: e.targetElementRef,
             shouldShow: !0,
             position: "top",
             graphic: {
                 type: "dynamic",
-                component: r.DynamicGraphicComponent.GUILD_TAG_COACHMARK_ASSET,
+                component: s.DynamicGraphicComponent.GUILD_TAG_COACHMARK_ASSET,
                 props: {
-                    guildId: n.id,
-                    guildProfile: n.profile
+                    guildId: t.id,
+                    guildProfile: t.profile
                 }
             },
-            title: p.intl.formatToPlainString(p.t.VFqnyU, {
-                guildName: n.name
+            title: h.intl.formatToPlainString(h.t.VFqnyU, {
+                guildName: t.name
             }),
-            body: p.intl.string(p.t.DrAXIr),
-            actions: f,
+            body: h.intl.string(h.t.DrAXIr),
+            actions: g,
             size: "md",
-            onRequestClose: () => s(m.i.USER_DISMISS)
+            onRequestClose: () => n(m.i.USER_DISMISS)
         })]
     })
 }

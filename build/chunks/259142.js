@@ -1,65 +1,64 @@
-/** chunk id: 259142, original params: t,e,r (module,exports,require) **/
-r.d(e, {
-    default: () => m
+/** chunk id: 259142, original params: t,a,e (module,exports,require) **/
+e.d(a, {
+    default: () => x
 });
-var n = r(627968);
-r(64700);
-var o = r(284009),
-    a = r.n(o),
-    l = r(158954),
-    c = r(311907),
-    i = r(397927),
-    s = r(871109),
-    u = r(59375),
-    d = r(94733),
-    f = r(985018),
-    p = r(14036);
+var n = e(627968);
+e(64700);
+var i = e(284009),
+    s = e.n(i),
+    l = e(158954),
+    o = e(311907),
+    d = e(397927),
+    r = e(871109),
+    c = e(59375),
+    u = e(94733),
+    m = e(985018),
+    f = e(14036);
 
-function b(t) {
+function h(t) {
     let {
-        attachment: e,
-        guildId: r,
-        productId: o
+        attachment: a,
+        guildId: e,
+        productId: i
     } = t;
     return (0, n.jsxs)("li", {
-        className: p.k,
-        children: [(0, n.jsx)(u.A, {
-            attachment: e
-        }), (0, n.jsx)(d.A, {
-            className: p.i,
-            icon: i.s3U,
+        className: f.k,
+        children: [(0, n.jsx)(c.A, {
+            attachment: a
+        }), (0, n.jsx)(u.A, {
+            className: f.i,
+            icon: d.s3U,
             text: void 0,
-            guildId: r,
-            productId: o,
-            attachmentId: e.id
+            guildId: e,
+            productId: i,
+            attachmentId: a.id
         })]
     })
 }
 
-function m(t) {
-    var e;
+function x(t) {
     let {
-        guildId: r,
-        productId: o,
+        guildId: a,
+        productId: e,
         onClose: i,
-        transitionState: u
-    } = t, d = (0, c.bG)([s.A], () => s.A.getGuildProduct(o));
-    a()(null != d, "guildProductListing cannot be null");
-    let p = null != (e = d.attachments) ? e : [];
+        transitionState: d
+    } = t, c = (0, o.bG)([r.A], () => r.A.getGuildProduct(e));
+    s()(null != c, "guildProductListing cannot be null");
+    let u = c.attachments ?? [];
     return (0, n.jsx)(l.Modal, {
         size: "md",
-        transitionState: u,
-        "aria-label": f.intl.string(f.t["3jaCac"]),
-        title: d.name,
-        subtitle: f.intl.format(f.t["6dOuaP"], {
-            count: d.attachments_count
+        transitionState: d,
+        "aria-label": m.intl.string(m.t["3jaCac"]),
+        title: c.name,
+        subtitle: m.intl.format(m.t["6dOuaP"], {
+            count: c.attachments_count
         }),
         actions: [],
         onClose: i,
         children: (0, n.jsx)("ul", {
-            children: p.map(t => (0, n.jsx)(b, {
-                guildId: r,
-                productId: d.id,
+            children: u.map(t => (0, n.jsx)(h, {
+                guildId: a,
+                productId: c.id,
                 attachment: t
             }, t.id))
         })

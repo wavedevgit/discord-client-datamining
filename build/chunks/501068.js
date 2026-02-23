@@ -1,26 +1,26 @@
 /** chunk id: 501068, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    p: () => s
+    p: () => r
 });
 var a = n(627968);
 n(64700);
-var l = n(554146),
-    r = n(397927),
-    i = n(963763);
-let s = e => {
+var i = n(554146),
+    s = n(397927),
+    l = n(963763);
+let r = e => {
     let {
         className: t
-    } = e, n = Object.keys(l.M).find(e => "COLLECTIBLES_SHOP_ENTRY_MARKETING" === e);
+    } = e, n = Object.keys(i.M).find(e => "COLLECTIBLES_SHOP_ENTRY_MARKETING" === e);
     return null == n ? null : (0, a.jsxs)("div", {
         className: t,
-        children: [(0, a.jsx)(r.Heading, {
+        children: [(0, a.jsx)(s.Heading, {
             variant: "heading-md/semibold",
             children: "Shop Marketing"
         }), (0, a.jsx)("div", {
             style: {
                 zIndex: 1
             },
-            children: (0, a.jsx)(i.A, {
+            children: (0, a.jsx)(l.A, {
                 items: [n]
             })
         })]

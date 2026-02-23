@@ -1,53 +1,53 @@
-/** chunk id: 656106, original params: e,t,n (module,exports,require) **/
-n.d(t, {
+/** chunk id: 656106, original params: e,t,a (module,exports,require) **/
+a.d(t, {
     Fr: () => u,
     JX: () => d,
     YR: () => c,
-    eM: () => s,
+    eM: () => r,
     kq: () => o
-}), n(896048), n(680155), n(323874), n(14289), n(35956);
-var r = n(976860),
-    l = n(767599),
-    i = n(310419),
-    a = n(652215);
-let s = () => {
+}), a(323874), a(14289), a(35956);
+var n = a(976860),
+    i = a(767599),
+    s = a(310419),
+    l = a(652215);
+let r = () => {
         let e = {
-            previousView: (0, i.R4)()
+            previousView: (0, s.R4)()
         };
-        (0, r.pX)(a.BVt.GLOBAL_DISCOVERY_APPS, {
+        (0, n.pX)(l.BVt.GLOBAL_DISCOVERY_APPS, {
             state: e
         })
     },
     o = e => {
         let {
             categoryId: t
-        } = e, n = {
-            previousView: (0, i.R4)()
+        } = e, a = {
+            previousView: (0, s.R4)()
         };
-        (0, r.pX)(a.BVt.GLOBAL_DISCOVERY_APPS_CATEGORY(t), {
-            state: n
+        (0, n.pX)(l.BVt.GLOBAL_DISCOVERY_APPS_CATEGORY(t), {
+            state: a
         })
     },
     c = e => {
         let {
             applicationId: t
-        } = e, n = {
-            previousView: (0, i.R4)()
+        } = e, a = {
+            previousView: (0, s.R4)()
         };
-        (0, r.pX)(a.BVt.GLOBAL_DISCOVERY_APPS_PROFILE(t), {
-            state: n
+        (0, n.pX)(l.BVt.GLOBAL_DISCOVERY_APPS_PROFILE(t), {
+            state: a
         })
     },
     d = function() {
         let {
             query: e,
             categoryId: t,
-            page: n
-        } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, s = {
-            previousView: (0, i.R4)()
+            page: a
+        } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, r = {
+            previousView: (0, s.R4)()
         }, o = new URLSearchParams;
-        null != e && "" !== e && o.set("q", e), null != t && t !== l.lj && o.set("category_id", t.toString()), null != n && n > 1 && o.set("page", n.toString()), (0, r.pX)(a.BVt.GLOBAL_DISCOVERY_APPS_SEARCH, {
-            state: s,
+        null != e && "" !== e && o.set("q", e), null != t && t !== i.lj && o.set("category_id", t.toString()), null != a && a > 1 && o.set("page", a.toString()), (0, n.pX)(l.BVt.GLOBAL_DISCOVERY_APPS_SEARCH, {
+            state: r,
             search: o.toString()
         })
     },
@@ -56,6 +56,6 @@ let s = () => {
             location: {
                 state: t
             }
-        } = (0, r.JK)();
-        (0, r.bG)(e, t)
+        } = (0, n.JK)();
+        (0, n.bG)(e, t)
     }

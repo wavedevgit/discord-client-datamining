@@ -1,20 +1,20 @@
 /** chunk id: 39216, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => l
+    A: () => a
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(590089);
+var s = n(590089);
 
-function l(e) {
+function a(e) {
     let {
         node: t
     } = e, {
         useTitle: n,
-        useSubtitle: l
-    } = t, s = n(), a = null == l ? void 0 : l();
-    return (0, r.jsx)(i.U, {
-        title: s,
-        description: a
+        useSubtitle: a
+    } = t, r = n(), l = a?.();
+    return (0, i.jsx)(s.U, {
+        title: r,
+        description: l
     })
 }

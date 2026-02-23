@@ -1,57 +1,54 @@
 /** chunk id: 823991, original params: e,n,t (module,exports,require) **/
 t.d(n, {
-    A: () => _
+    A: () => c
 });
 var a = t(627968);
 t(64700);
-var r = t(503698),
-    i = t.n(r),
-    l = t(397927),
-    o = t(985018),
-    c = t(928103);
+var i = t(503698),
+    r = t.n(i),
+    o = t(397927),
+    l = t(985018),
+    s = t(928103);
 
-function _(e) {
+function c(e) {
     let {
         guild: n,
         speakers: t,
-        speakerCount: r,
-        className: _
-    } = e, s = t.slice(0, 5), d = s.map(e => {
-        var t, r;
-        return (0, a.jsxs)("div", {
-            className: c.dq,
-            children: [(0, a.jsx)(l.euF, {
-                src: null == e || null == (t = e.user) ? void 0 : t.getAvatarURL(n.id, 20),
-                size: l._3J.SIZE_20,
-                className: c.my,
-                "aria-label": "".concat(null == e ? void 0 : e.userNick, "-avatar")
-            }), (0, a.jsx)("div", {
-                className: c.CU,
-                children: (0, a.jsx)(l.Text, {
-                    color: "text-default",
-                    variant: "text-sm/normal",
-                    className: c.br,
-                    children: null == e ? void 0 : e.userNick
-                })
-            })]
-        }, null == e || null == (r = e.user) ? void 0 : r.id)
-    }), u = r - s.length;
+        speakerCount: i,
+        className: c
+    } = e, _ = t.slice(0, 5), d = _.map(e => (0, a.jsxs)("div", {
+        className: s.dq,
+        children: [(0, a.jsx)(o.euF, {
+            src: e?.user?.getAvatarURL(n.id, 20),
+            size: o._3J.SIZE_20,
+            className: s.my,
+            "aria-label": `${e?.userNick}-avatar`
+        }), (0, a.jsx)("div", {
+            className: s.CU,
+            children: (0, a.jsx)(o.Text, {
+                color: "text-default",
+                variant: "text-sm/normal",
+                className: s.br,
+                children: e?.userNick
+            })
+        })]
+    }, e?.user?.id)), u = i - _.length;
     return (0, a.jsxs)("div", {
-        className: i()(c.Vg, _),
+        className: r()(s.Vg, c),
         children: [d, u > 0 && (0, a.jsxs)("div", {
-            className: c.dq,
+            className: s.dq,
             children: [(0, a.jsx)("div", {
-                className: c.Ko,
-                children: (0, a.jsx)(l.cNw, {
+                className: s.Ko,
+                children: (0, a.jsx)(o.cNw, {
                     size: "custom",
                     color: "currentColor",
                     height: 12
                 })
-            }), (0, a.jsx)(l.Text, {
+            }), (0, a.jsx)(o.Text, {
                 color: "text-default",
                 variant: "text-sm/normal",
-                className: c.br,
-                children: o.intl.format(o.t["185ggO"], {
+                className: s.br,
+                children: l.intl.format(l.t["185ggO"], {
                     count: u
                 })
             })]

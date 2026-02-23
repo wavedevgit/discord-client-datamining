@@ -1,51 +1,51 @@
 /** chunk id: 380682, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => M
-}), n(228524);
-var r = n(627968),
-    i = n(311907),
+    A: () => P
+});
+var i = n(627968),
+    s = n(311907),
     l = n(990078),
-    s = n(397927),
+    r = n(397927),
     a = n(44892),
     o = n(833448),
-    c = n(997509),
-    d = n(555337),
+    d = n(997509),
+    c = n(555337),
     u = n(529942),
-    g = n(209700),
-    m = n(976860),
-    p = n(130771),
-    f = n(260509),
-    h = n(317525),
-    b = n(287809),
-    x = n(403362),
-    j = n(300233),
-    _ = n(599941),
-    O = n(11351),
-    v = n(739455),
-    y = n(535876),
-    A = n(299824),
-    E = n(859016),
-    N = n(623529),
-    S = n(328031),
-    I = n(646296),
-    C = n(700458),
-    T = n(159719),
-    P = n(652215),
-    w = n(746080),
-    R = n(269927),
+    m = n(209700),
+    g = n(976860),
+    x = n(130771),
+    h = n(260509),
+    _ = n(317525),
+    A = n(287809),
+    p = n(403362),
+    f = n(300233),
+    j = n(599941),
+    N = n(11351),
+    E = n(739455),
+    b = n(535876),
+    T = n(299824),
+    C = n(859016),
+    I = n(623529),
+    v = n(328031),
+    S = n(646296),
+    y = n(700458),
+    R = n(159719),
+    O = n(652215),
+    G = n(746080),
+    L = n(269927),
     D = n(985018),
-    G = n(782356);
+    M = n(782356);
 
-function L(e) {
+function k(e) {
     let {
         application: t,
         guild: n
-    } = e, l = (0, _.Tq)(n.id), s = (0, _.uP)(n.id), a = s.some(e => null != e.name && null != e.subscription_plans[0] && null != e.description && null != e.image_asset), o = (0, i.yK)([h.A], () => s.map(e => h.A.getRole(n.id, e.role_id)), [n.id, s]).some(e => null != e && 0 !== e.color), c = s.some(e => e.role_benefits.benefits.length > 0), d = null != t && n.features.has(P.GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED), u = [{
+    } = e, l = (0, j.Tq)(n.id), r = (0, j.uP)(n.id), a = r.some(e => null != e.name && null != e.subscription_plans[0] && null != e.description && null != e.image_asset), o = (0, s.yK)([_.A], () => r.map(e => _.A.getRole(n.id, e.role_id)), [n.id, r]).some(e => null != e && 0 !== e.color), d = r.some(e => e.role_benefits.benefits.length > 0), c = null != t && n.features.has(O.GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED), u = [{
         title: D.intl.string(D.t.p2Rsdl),
         items: [{
             description: D.intl.string(D.t.zbO7fU),
-            completed: d
+            completed: c
         }]
     }, {
         title: D.intl.string(D.t["/CfKoD"]),
@@ -54,10 +54,10 @@ function L(e) {
             completed: !0
         }, {
             description: D.intl.string(D.t.cVcEYK),
-            completed: (null == l ? void 0 : l.description) != null && "" !== l.description
+            completed: l?.description != null && "" !== l.description
         }, {
             description: D.intl.string(D.t["88XnXE"]),
-            completed: (null == l ? void 0 : l.cover_image_asset) != null
+            completed: l?.cover_image_asset != null
         }]
     }, {
         title: D.intl.string(D.t.pXbGYc),
@@ -69,54 +69,51 @@ function L(e) {
             completed: o
         }, {
             description: D.intl.string(D.t["/P03C6"]),
-            completed: c
+            completed: d
         }]
     }];
-    return (0, r.jsx)(S.A, {
+    return (0, i.jsx)(v.A, {
         children: u
     })
 }
 
-function k(e) {
+function U(e) {
     let {
         application: t
     } = e, {
         teams: n
-    } = (0, p.A)({
+    } = (0, x.A)({
         refreshOnDepChange: !1
-    }), i = n.find(e => {
-        var n;
-        return e.id === (null == t || null == (n = t.team) ? void 0 : n.id)
-    }), l = [R.y.ACTION_REQUIRED, R.y.BLOCKED, R.y.SUSPENDED];
-    return (null == i ? void 0 : i.payout_account_status) != null && l.includes(null == i ? void 0 : i.payout_account_status) ? (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(s.hKd, {
+    }), s = n.find(e => e.id === t?.team?.id), l = [L.y.ACTION_REQUIRED, L.y.BLOCKED, L.y.SUSPENDED];
+    return s?.payout_account_status != null && l.includes(s?.payout_account_status) ? (0, i.jsxs)(i.Fragment, {
+        children: [(0, i.jsx)(r.hKd, {
             size: 16
-        }), (0, r.jsx)(s.wx6, {
+        }), (0, i.jsx)(r.wx6, {
             type: "warning",
             children: D.intl.format(D.t.Yo0ZB2, {
-                url: P.X7G.DEVELOPER_PORTAL_PAYOUT_SETTINGS(i.id)
+                url: O.X7G.DEVELOPER_PORTAL_PAYOUT_SETTINGS(s.id)
             })
-        }), (0, r.jsx)(s.hKd, {
+        }), (0, i.jsx)(r.hKd, {
             size: 16
         })]
     }) : null
 }
 
-function M(e) {
+function P(e) {
     let t, {
             guild: n,
             application: l
         } = e,
-        s = (0, i.bG)([d.A], () => d.A.getProps().subsection),
-        a = null != l && n.features.has(P.GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED);
-    return (0, o.T)(n), t = a ? s === P.nd0.ROLE_SUBSCRIPTION_EMOJI ? C.Oi.EMOJIS : C.Oi.TIERS : C.Oi.PAYMENT, (0, r.jsx)(j.H, {
+        r = (0, s.bG)([c.A], () => c.A.getProps().subsection),
+        a = null != l && n.features.has(O.GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED);
+    return (0, o.T)(n), t = a ? r === O.nd0.ROLE_SUBSCRIPTION_EMOJI ? y.Oi.EMOJIS : y.Oi.TIERS : y.Oi.PAYMENT, (0, i.jsx)(f.H, {
         guildId: n.id,
         refetchOnMount: !0,
-        children: (0, r.jsx)(O.p6, {
+        children: (0, i.jsx)(N.p6, {
             guildId: n.id,
-            children: (0, r.jsx)(C.ZM, {
+            children: (0, i.jsx)(y.ZM, {
                 initialTab: t,
-                children: (0, r.jsx)(U, {
+                children: (0, i.jsx)(w, {
                     guild: n,
                     application: l
                 })
@@ -125,109 +122,109 @@ function M(e) {
     })
 }
 
-function U(e) {
+function w(e) {
     let t, {
             guild: n,
             application: o
         } = e,
-        d = null != o && n.features.has(P.GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED),
+        c = null != o && n.features.has(O.GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED),
         {
-            currentTab: p,
-            setCurrentTab: _
-        } = (0, C.Tj)(),
-        O = (0, j.X)(),
-        S = (0, i.bG)([b.default], () => b.default.getCurrentUser()),
-        R = (0, y.A)(n.id),
-        M = null != n && (0, f.bM)(n, S);
-    if (!O) return (0, r.jsx)(s.y$y, {});
-    switch (p) {
-        case C.Oi.BASIC_INFO:
-            t = (0, r.jsx)(N.A, {
+            currentTab: x,
+            setCurrentTab: j
+        } = (0, y.Tj)(),
+        N = (0, f.X)(),
+        v = (0, s.bG)([A.default], () => A.default.getCurrentUser()),
+        L = (0, b.A)(n.id),
+        P = null != n && (0, h.bM)(n, v);
+    if (!N) return (0, i.jsx)(r.y$y, {});
+    switch (x) {
+        case y.Oi.BASIC_INFO:
+            t = (0, i.jsx)(I.A, {
                 guild: n
             });
             break;
-        case C.Oi.TIERS:
-            t = (0, r.jsx)(I.A, {
+        case y.Oi.TIERS:
+            t = (0, i.jsx)(S.A, {
                 guildId: n.id
             });
             break;
-        case C.Oi.PAYMENT:
-            t = (0, r.jsx)(E.A, {
+        case y.Oi.PAYMENT:
+            t = (0, i.jsx)(C.A, {
                 guild: n
             });
             break;
-        case C.Oi.EMOJIS:
-            t = (0, r.jsx)(T.A, {
+        case y.Oi.EMOJIS:
+            t = (0, i.jsx)(R.A, {
                 guild: n
             });
             break;
         default:
-            (0, x.xb)(p)
+            (0, p.xb)(x)
     }
-    return (0, r.jsxs)("div", {
-        className: G.kL,
-        children: [(0, r.jsxs)("div", {
-            className: G.rb,
-            children: [(0, r.jsxs)(s.BJc, {
+    return (0, i.jsxs)("div", {
+        className: M.kL,
+        children: [(0, i.jsxs)("div", {
+            className: M.rb,
+            children: [(0, i.jsxs)(r.BJc, {
                 gap: 8,
-                children: [(0, r.jsx)(s.Heading, {
+                children: [(0, i.jsx)(r.Heading, {
                     variant: "heading-lg/semibold",
                     children: D.intl.string(D.t["KzCF/6"])
-                }), (0, r.jsx)(s.Text, {
+                }), (0, i.jsx)(r.Text, {
                     variant: "text-sm/normal",
                     children: D.intl.string(D.t.KyGv0k)
                 })]
-            }), (0, r.jsx)(A.A, {
+            }), (0, i.jsx)(T.A, {
                 guild: n
-            }), d && (0, r.jsx)(k, {
+            }), c && (0, i.jsx)(U, {
                 application: o
-            }), (0, r.jsxs)("div", {
-                className: G.Mv,
-                children: [(0, r.jsxs)(s.VQ0, {
-                    className: G.$H,
+            }), (0, i.jsxs)("div", {
+                className: M.Mv,
+                children: [(0, i.jsxs)(r.VQ0, {
+                    className: M.$H,
                     "aria-label": D.intl.string(D.t["+1H47t"]),
-                    selectedItem: p,
+                    selectedItem: x,
                     type: "top",
                     look: "brand",
-                    onItemSelect: _,
-                    children: [(0, r.jsx)(a.A, {
-                        id: C.Oi.BASIC_INFO,
+                    onItemSelect: j,
+                    children: [(0, i.jsx)(a.A, {
+                        id: y.Oi.BASIC_INFO,
                         disabledTooltip: D.intl.string(D.t.NVDuUX),
-                        disabled: !d,
+                        disabled: !c,
                         children: D.intl.string(D.t["/CfKoD"])
-                    }), (0, r.jsx)(a.A, {
-                        id: C.Oi.TIERS,
+                    }), (0, i.jsx)(a.A, {
+                        id: y.Oi.TIERS,
                         disabledTooltip: D.intl.string(D.t.NVDuUX),
-                        disabled: !d,
+                        disabled: !c,
                         children: D.intl.string(D.t.pXbGYc)
-                    }), (0, r.jsx)(a.A, {
-                        id: C.Oi.EMOJIS,
+                    }), (0, i.jsx)(a.A, {
+                        id: y.Oi.EMOJIS,
                         disabledTooltip: D.intl.string(D.t.NVDuUX),
-                        disabled: !d,
+                        disabled: !c,
                         children: D.intl.string(D.t.XBkDoA)
-                    }), M ? (0, r.jsx)(s.VQ0.Item, {
-                        className: G.__invalid_tabBarItem,
-                        id: C.Oi.PAYMENT,
+                    }), P ? (0, i.jsx)(r.VQ0.Item, {
+                        className: M.__invalid_tabBarItem,
+                        id: y.Oi.PAYMENT,
                         children: D.intl.string(D.t.p2Rsdl)
                     }) : null]
-                }), d && (0, r.jsx)("div", {
-                    className: G.jc,
-                    children: (0, r.jsx)(l.m, {
+                }), c && (0, i.jsx)("div", {
+                    className: M.jc,
+                    children: (0, i.jsx)(l.m, {
                         text: D.intl.string(D.t["1wCH4M"]),
-                        children: (0, r.jsx)(s.Button, {
-                            disabled: R,
+                        children: (0, i.jsx)(r.Button, {
+                            disabled: L,
                             onClick: () => {
-                                let e = h.A.getEveryoneRole(n);
-                                c.A.close();
+                                let e = _.A.getEveryoneRole(n);
+                                d.A.close();
                                 let t = {
                                     [e.id]: e
                                 };
                                 (0, u.Tk)(n.id, {
-                                    type: g._.SERVER_SHOP,
+                                    type: m._.SERVER_SHOP,
                                     roles: t,
                                     initialTab: "role_subscriptions",
-                                    returnToSection: P.BEX.ROLE_SUBSCRIPTIONS
-                                }), (0, v.SY)(n.id), (0, m.pX)(P.BVt.CHANNEL(n.id, w.VV.ROLE_SUBSCRIPTIONS))
+                                    returnToSection: O.BEX.ROLE_SUBSCRIPTIONS
+                                }), (0, E.SY)(n.id), (0, g.pX)(O.BVt.CHANNEL(n.id, G.VV.ROLE_SUBSCRIPTIONS))
                             },
                             text: D.intl.string(D.t.vM81yY),
                             size: "sm",
@@ -236,7 +233,7 @@ function U(e) {
                     })
                 })]
             }), t]
-        }), (0, r.jsx)(L, {
+        }), (0, i.jsx)(k, {
             application: o,
             guild: n
         })]

@@ -1,15 +1,15 @@
 /** chunk id: 789646, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     Mg: () => s,
-    RZ: () => c
-}), n(65821), n(896048);
-var r = n(627968),
-    i = n(64700),
-    l = n(403362);
-let a = i.createContext(void 0);
+    RZ: () => d
+});
+var i = n(627968),
+    l = n(64700),
+    r = n(403362);
+let a = l.createContext(void 0);
 
 function s() {
-    let e = i.useContext(a);
+    let e = l.useContext(a);
     if (null == e) throw Error("No PollFocusContextProvider found");
     return e
 }
@@ -18,28 +18,27 @@ function o(e) {
     let {
         children: t,
         actionButtonRef: n,
-        pollAnswerRef: l,
+        pollAnswerRef: r,
         manageFocusOnAction: s
-    } = e, o = i.useMemo(() => ({
+    } = e, o = l.useMemo(() => ({
         actionButtonRef: n,
-        pollAnswerRef: l,
+        pollAnswerRef: r,
         manageFocusOnAction: s
-    }), [n, l, s]);
-    return (0, r.jsx)(a.Provider, {
+    }), [n, r, s]);
+    return (0, i.jsx)(a.Provider, {
         value: o,
         children: t
     })
 }
 
-function c(e) {
+function d(e) {
     let {
         children: t
-    } = e, [n, a] = i.useState(), s = i.useRef(null), c = i.useRef(null);
-    return i.useEffect(() => {
-        var e, t, r;
-        "POLL_ANSWERS" === n && null != c.current && (null == (t = c.current) || null == (e = t.ref) || e.focus()), "ACTION_BUTTON" === n && null != s.current && (null == (r = s.current) || r.focus())
-    }, [n]), (0, r.jsx)(o, {
-        pollAnswerRef: c,
+    } = e, [n, a] = l.useState(), s = l.useRef(null), d = l.useRef(null);
+    return l.useEffect(() => {
+        "POLL_ANSWERS" === n && null != d.current && d.current?.ref?.focus(), "ACTION_BUTTON" === n && null != s.current && s.current?.focus()
+    }, [n]), (0, i.jsx)(o, {
+        pollAnswerRef: d,
         actionButtonRef: s,
         manageFocusOnAction: e => {
             switch (e) {
@@ -54,7 +53,7 @@ function c(e) {
                 case "showVoterDetails":
                     break;
                 default:
-                    (0, l.xb)(e)
+                    (0, r.xb)(e)
             }
         },
         children: t

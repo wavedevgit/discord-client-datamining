@@ -1,51 +1,50 @@
 /** chunk id: 748113, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => d
+    A: () => o
 });
 var l = n(627968);
 n(64700);
-var r = n(397927),
+var a = n(397927),
     i = n(573435),
-    a = n(486020),
+    r = n(486020),
     s = n(985018),
-    o = n(248065);
-let d = e => {
-    var t;
+    d = n(248065);
+let o = e => {
     let {
-        entry: n
+        entry: t
     } = e, {
-        id: d,
-        icon: c,
-        name: u
-    } = n, m = null != (t = a.Ay.getGuildIconURL({
-        id: d,
-        icon: c,
+        id: n,
+        icon: o,
+        name: c
+    } = t, u = r.Ay.getGuildIconURL({
+        id: n,
+        icon: o,
         size: 32
-    })) ? t : void 0;
+    }) ?? void 0;
     return (0, l.jsxs)("div", {
-        className: o.kL,
-        children: [(0, l.jsx)(r.Heading, {
-            className: o.wx,
+        className: d.kL,
+        children: [(0, l.jsx)(a.Heading, {
+            className: d.wx,
             variant: "heading-sm/semibold",
             children: s.intl.string(s.t.nTe4HC)
         }), (0, l.jsx)("div", {
-            className: o.bo,
+            className: d.bo,
             children: (0, l.jsxs)("div", {
-                className: o.OA,
+                className: d.OA,
                 children: [(0, l.jsx)(i.Ay, {
                     mask: i.Ay.Masks.SQUIRCLE,
                     width: 32,
                     height: 32,
-                    className: o.$d,
+                    className: d.$d,
                     children: (0, l.jsx)("img", {
-                        src: m,
+                        src: u,
                         alt: "",
-                        className: o.$f
+                        className: d.$f
                     })
-                }), (0, l.jsx)(r.Text, {
+                }), (0, l.jsx)(a.Text, {
                     color: "text-default",
                     variant: "text-sm/normal",
-                    children: u
+                    children: c
                 })]
             })
         })]

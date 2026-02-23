@@ -1,119 +1,119 @@
 /** chunk id: 661455, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    O: () => D,
-    default: () => E,
-    n: () => x
+    O: () => I,
+    default: () => p,
+    n: () => j
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(397927),
-    l = n(442433),
-    o = n(847767),
-    a = n(358367),
+var l = n(397927),
+    a = n(442433),
+    r = n(847767),
+    d = n(358367),
     s = n(793574),
-    c = n(734337),
+    o = n(734337),
     u = n(855187),
-    d = n(479335),
-    b = n(470743),
-    f = n(50268),
-    g = n(961350),
-    A = n(239211),
-    p = n(399476),
-    j = n(301541),
-    O = n(198229),
-    v = n(243949),
-    m = n(972432),
-    y = n(652215),
-    h = n(985018);
+    c = n(479335),
+    A = n(470743),
+    g = n(50268),
+    b = n(961350),
+    f = n(239211),
+    E = n(399476),
+    m = n(301541),
+    x = n(198229),
+    h = n(243949),
+    C = n(972432),
+    S = n(652215),
+    v = n(985018);
 
-function x(e) {
+function j(e) {
     let {
         isOwnSettings: t,
         userId: n,
-        channelId: l,
-        guildId: o,
-        context: a
-    } = e, s = (0, v.A)({
+        channelId: a,
+        guildId: r,
+        context: d
+    } = e, s = (0, h.A)({
         userId: n,
-        guildId: o,
-        channelId: l,
+        guildId: r,
+        channelId: a,
         showGuildProfile: !0,
-        icon: i.nys,
-        label: h.intl.string(h.t.iXAna6)
-    }), d = (0, j.A)(n, a, i.oyn), f = (0, m.A)(n), g = (0, O.A)(n), A = (0, c.A)(n), p = (0, u.A)(n), y = (0, b.A)();
-    return [(0, r.jsxs)(i.rXV, {
-        children: [s, d]
-    }), (0, r.jsxs)(i.rXV, {
-        children: [f, g, A, p, t && y]
+        icon: l.nys,
+        label: v.intl.string(v.t.iXAna6)
+    }), c = (0, m.A)(n, d, l.oyn), g = (0, C.A)(n), b = (0, x.A)(n), f = (0, o.A)(n), E = (0, u.A)(n), S = (0, A.A)();
+    return [(0, i.jsxs)(l.rXV, {
+        children: [s, c]
+    }), (0, i.jsxs)(l.rXV, {
+        children: [g, b, f, E, t && S]
     })]
 }
 
-function D(e, t, n) {
-    let l = (0, d.u)({
+function I(e, t, n) {
+    let a = (0, c.u)({
             userId: e.id,
             channelId: t,
             guildId: n,
             minimal: !0
         }),
-        o = (0, f.A)({
+        r = (0, g.A)({
             id: e.id,
-            label: h.intl.string(h.t["/AXYnE"])
+            label: v.intl.string(v.t["/AXYnE"])
         }),
-        a = (0, p.A)({
+        d = (0, E.A)({
             user: e,
             guildId: n,
             channelId: t,
             location: "GuildVoiceUserContextMenu"
         }),
-        s = (0, A.A)({
+        s = (0, f.A)({
             user: e,
             guildId: n,
             channelId: t,
             location: "GuildVoiceUserContextMenu"
         }),
-        c = (0, r.jsxs)(i.rXV, {
-            children: [l, o]
+        o = (0, i.jsxs)(l.rXV, {
+            children: [a, r]
         });
-    return [(0, r.jsxs)(i.rXV, {
-        children: [a, s]
-    }), c]
+    return [(0, i.jsxs)(l.rXV, {
+        children: [d, s]
+    }), o]
 }
-let E = (0, a.A)((0, o.A)(function(e) {
+let p = (0, d.A)((0, r.A)(function(e) {
     let {
         user: t,
         channel: n,
-        onSelect: o,
-        onInteraction: a,
+        onSelect: r,
+        onInteraction: d,
         context: s
-    } = e, c = n.id, u = t.isNonUserBot(), d = t.id === g.default.getId(), b = x({
-        isOwnSettings: d,
+    } = e, o = n.id, u = t.isNonUserBot(), c = t.id === b.default.getId(), A = j({
+        isOwnSettings: c,
         userId: t.id,
-        channelId: c,
+        channelId: o,
         context: s
-    }), A = D(t, c), p = (0, f.A)({
+    }), f = I(t, o), E = (0, g.A)({
         id: t.id,
-        label: h.intl.string(h.t["/AXYnE"])
+        label: v.intl.string(v.t["/AXYnE"])
     });
-    return (0, r.jsx)(i.W1t, {
+    return (0, i.jsx)(l.W1t, {
         "data-menu-migrated-auto": !0,
         navId: "user-context",
-        onClose: l.Z_,
-        "aria-label": h.intl.string(h.t.liqwPJ),
-        onSelect: o,
-        onInteraction: a,
+        onClose: a.Z_,
+        "aria-label": v.intl.string(v.t.liqwPJ),
+        onSelect: r,
+        onInteraction: d,
         variant: "fixed",
-        children: !u && (0, r.jsxs)(r.Fragment, {
-            children: [b, !d && (0, r.jsx)(i.rXV, {
-                children: (0, r.jsx)(i.Drp, {
+        children: !u && (0, i.jsxs)(i.Fragment, {
+            children: [A, !c && (0, i.jsx)(l.rXV, {
+                children: (0, i.jsx)(l.Drp, {
                     id: "more-options",
-                    label: h.intl.string(h.t.PdRCRg),
-                    children: A
+                    label: v.intl.string(v.t.PdRCRg),
+                    children: f
                 })
-            }), d && (0, r.jsx)(i.rXV, {
-                children: p
+            }), c && (0, i.jsx)(l.rXV, {
+                children: E
             })]
         })
     })
 }, {
-    object: y.ZSU.CONTEXT_MENU
+    object: S.ZSU.CONTEXT_MENU
 }), [s.A.VOICE_USER])

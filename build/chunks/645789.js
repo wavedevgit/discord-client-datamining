@@ -1,75 +1,74 @@
 /** chunk id: 645789, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
-}), n(896048);
-var r = n(627968),
-    i = n(64700),
-    l = n(311907),
-    s = n(36525),
-    a = n(631670),
+    A: () => x
+});
+var i = n(627968),
+    s = n(64700),
+    a = n(311907),
+    r = n(36525),
+    l = n(631670),
     o = n(933725),
     c = n(587600),
     d = n(207803),
     u = n(836602),
     _ = n(624826),
-    p = n(253932),
-    m = n(354694),
+    m = n(253932),
+    A = n(354694),
     g = n(592074),
-    A = n(985018);
+    h = n(985018);
 
-function f() {
+function x() {
     let {
         canSubmit: e,
         errors: t
-    } = (0, l.cf)([u.A], () => ({
+    } = (0, a.cf)([u.A], () => ({
         canSubmit: u.A.canSubmit(),
         errors: u.A.getErrors()
-    })), [n, f] = i.useState(!1), b = i.useMemo(() => (null == t ? void 0 : t.message) != null ? null == t ? void 0 : t.message : Object.keys(null != t ? t : {}).length > 0 ? A.intl.string(A.t["84MExs"]) : null, [t]), h = i.useCallback(async () => {
-        var e, t, n, r, i;
-        f(!0);
-        let l = u.A.getPendingChanges(),
-            s = (0, c.Sk)(l),
-            A = (0, c.yX)(l),
-            b = (0, c.yg)(l),
-            h = !0;
-        if (Object.keys(s).length > 0) {
-            let r = await (0, a.yu)(s);
-            if (h = h && null != (e = null == r ? void 0 : r.ok) && e, null == r ? void 0 : r.ok) {
-                let e = r.body;
-                void 0 !== l.pendingAvatar && (0, _.t)({
-                    avatarHash: e.avatar,
-                    avatarId: s.avatarId,
-                    avatarAssetOrigin: null == (n = l.pendingAvatar) ? void 0 : n.assetOrigin
-                }), (0, a.pZ)()
-            } else(null == r || null == (t = r.body) ? void 0 : t.username) != null && (0, g.E)()
+    })), [n, x] = s.useState(!1), p = s.useMemo(() => Object.keys(t ?? {}).length > 0 ? h.intl.string(h.t["84MExs"]) : null, [t]), E = s.useCallback(async () => {
+        x(!0);
+        let e = u.A.getPendingChanges(),
+            t = (0, c.Sk)(e),
+            n = (0, c.yX)(e),
+            i = (0, c.yg)(e),
+            s = !0;
+        if (Object.keys(t).length > 0) {
+            let n = await (0, l._L)(t);
+            if (s = s && (n?.ok ?? !1), n?.ok) {
+                let i = n.body;
+                void 0 !== e.pendingAvatar && (0, _.t)({
+                    avatarHash: i.avatar,
+                    avatarId: t.avatarId,
+                    avatarAssetOrigin: e.pendingAvatar?.assetOrigin
+                }), (0, l.pZ)()
+            } else n?.body?.username != null && (0, g.E)()
         }
-        if (Object.keys(A).length > 0) {
-            let e = await (0, d.gi)(A);
-            h = h && null != (r = null == e ? void 0 : e.ok) && r, (null == e ? void 0 : e.ok) ? (0, d.RE)() : (0, m.m)()
+        if (Object.keys(n).length > 0) {
+            let e = await (0, d.gi)(n);
+            s = s && (e?.ok ?? !1), e?.ok ? (0, d.RE)() : (0, A.m)()
         }
-        if (void 0 !== l.pendingLegacyUsernameDisabled) try {
-            await p.m$.updateSetting(l.pendingLegacyUsernameDisabled), (0, a._e)()
-        } catch (e) {
-            (0, m.m)(), h = !1
+        if (void 0 !== e.pendingLegacyUsernameDisabled) try {
+            await m.m$.updateSetting(e.pendingLegacyUsernameDisabled), (0, l._e)()
+        } catch {
+            (0, A.m)(), s = !1
         }
-        if (Object.keys(b).length > 0) {
+        if (Object.keys(i).length > 0) {
             let {
                 primaryGuildId: e
-            } = b;
+            } = i;
             if (void 0 !== e) {
                 let t = await (0, o.m)(e, null !== e);
-                h = h && null != (i = null == t ? void 0 : t.ok) && i, (null == t ? void 0 : t.ok) ? (0, a.fw)() : (0, m.m)()
+                s = s && (t?.ok ?? !1), t?.ok ? (0, l.fw)() : (0, A.m)()
             }
         }
-        h && (0, a.x8)(), f(!1)
-    }, []), E = i.useCallback(() => {
-        (0, a.IM)()
+        s && (0, l.x8)(), x(!1)
+    }, []), C = s.useCallback(() => {
+        (0, l.IM)()
     }, []);
-    return (0, r.jsx)(s.A, {
+    return (0, i.jsx)(r.A, {
         submitting: n,
-        onSave: h,
-        onReset: E,
+        onSave: E,
+        onReset: C,
         disabled: !e,
-        errorMessage: null != b ? b : void 0
+        errorMessage: p ?? void 0
     })
 }

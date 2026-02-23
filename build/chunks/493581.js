@@ -2,26 +2,23 @@
 "use strict";
 n.d(t, {
     f: () => a
-}), n(896048);
-var r = n(353640),
-    i = n(121894),
+});
+var i = n(353640),
+    s = n(121894),
     l = n(250527);
-let s = new Map,
-    a = (0, r.v)((e, t) => ({
+let r = new Map,
+    a = (0, i.v)((e, t) => ({
         topGames: new Map,
         tryFetchTopGames: async n => {
-            let r = t().topGames,
-                a = s.get(n);
-            if (null != a && Date.now() - a < 36e5) {
-                var o;
-                return null != (o = r.get(n)) ? o : {}
-            }
-            let c = await (0, l.U7)(n),
-                d = new Map(r);
-            return d.set(n, c), (0, i.r)(() => {
+            let i = t().topGames,
+                a = r.get(n);
+            if (null != a && Date.now() - a < 36e5) return i.get(n) ?? {};
+            let o = await (0, l.U7)(n),
+                d = new Map(i);
+            return d.set(n, o), (0, s.r)(() => {
                 e({
                     topGames: d
                 })
-            }), s.set(n, Date.now()), c
+            }), r.set(n, Date.now()), o
         }
     }))

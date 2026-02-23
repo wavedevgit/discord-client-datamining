@@ -1,227 +1,226 @@
 /** chunk id: 808124, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => v
-}), n(896048);
-var r = n(627968),
-    l = n(64700),
-    i = n(503698),
-    s = n.n(i),
+    A: () => N
+});
+var i = n(627968),
+    s = n(64700),
+    l = n(503698),
+    r = n.n(l),
     a = n(311907),
     o = n(397927),
     c = n(517461),
-    u = n(770178),
-    d = n(418126),
-    p = n(266626),
-    h = n(998740),
-    g = n(732777),
-    f = n(709382),
+    d = n(770178),
+    u = n(418126),
+    h = n(266626),
+    A = n(998740),
+    p = n(732777),
+    g = n(709382),
     m = n(287245),
-    b = n(615658),
-    A = n(592044),
-    y = n(100449),
-    O = n(588703),
-    j = n(985018),
-    x = n(185014);
-let _ = e => {
+    _ = n(615658),
+    f = n(592044),
+    x = n(100449),
+    C = n(588703),
+    E = n(985018),
+    I = n(185014);
+let b = e => {
         let {
             channel: t,
             idle: n,
-            className: i,
+            className: l,
             participants: a
-        } = e, p = (0, g.A)(t.id), [h, _] = l.useState(!1), v = l.useCallback(e => {
-            d.Ay.update(t.id, {
+        } = e, h = (0, p.A)(t.id), [A, b] = s.useState(!1), N = s.useCallback(e => {
+            u.Ay.update(t.id, {
                 seat: e
             })
-        }, [t.id]), [E, C] = (0, c.V)("haven-show-chat", !1);
-        l.useEffect(() => {
+        }, [t.id]), [S, T] = (0, c.V)("haven-show-chat", !1);
+        s.useEffect(() => {
             setTimeout(() => {
-                _(!0)
+                b(!0)
             }, 2500)
         }, []);
-        let [S, I] = l.useState(.65), [N, T] = l.useState(.65), [P, w] = l.useState(.65), [R, D] = l.useState({
+        let [y, v] = s.useState(.65), [j, R] = s.useState(.65), [O, L] = s.useState(.65), [M, D] = s.useState({
             x: 0,
             y: 0
-        }), [L, M] = l.useState(!1), [G, k] = l.useState(0), [U, V] = l.useState({
+        }), [G, U] = s.useState(!1), [P, w] = s.useState(0), [k, V] = s.useState({
             x: 0,
             y: 0
-        }), [B, H] = l.useState({
+        }), [B, H] = s.useState({
             x: 0,
             y: 0
-        }), [F, Y] = l.useState(!1), K = l.useRef(null), [W, z] = l.useState(null), X = (0, u.w)(e => {
+        }), [F, K] = s.useState(!1), W = s.useRef(null), [Y, z] = s.useState(null), X = (0, d.w)(e => {
             let {
                 contentRect: t,
                 target: n
-            } = e, r = n.getBoundingClientRect(), l = t.width, i = t.height, s = l / f.i.width * 1.5, a = i / f.i.height * 1.5, o = l / f.i.width * 1.1, c = i / f.i.height * 1.1;
+            } = e, i = n.getBoundingClientRect(), s = t.width, l = t.height, r = s / g.i.width * 1.5, a = l / g.i.height * 1.5, o = s / g.i.width * 1.1, c = l / g.i.height * 1.1;
             V({
-                x: l / 2 + r.x,
-                y: i / 2 + r.y
+                x: s / 2 + i.x,
+                y: l / 2 + i.y
             });
-            let u = Math.max(s, a);
-            if (I(Math.max(o, c)), w(u), null != K.current) {
-                let e = K.current.getBoundingClientRect();
+            let d = Math.max(r, a);
+            if (v(Math.max(o, c)), L(d), null != W.current) {
+                let e = W.current.getBoundingClientRect();
                 z({
-                    x: e.left - r.left,
-                    y: e.top - r.top
+                    x: e.left - i.left,
+                    y: e.top - i.top
                 })
             }
-        }), q = l.useCallback(e => {
-            var t;
-            let n = Math.max(e, S),
-                r = null == (t = X.current) ? void 0 : t.getBoundingClientRect();
-            if (null == r) return;
-            let l = {
+        }), q = s.useCallback(e => {
+            let t = Math.max(e, y),
+                n = X.current?.getBoundingClientRect();
+            if (null == n) return;
+            let i = {
                     x: 1156,
                     y: 1110
                 },
-                i = !0,
-                s = 0,
-                a = r.height / n;
-            for (; i && s < 10;)(i = l.y + a / 2 > 1536) && (l.y -= 32), s++;
-            let o = l.x * n,
-                c = l.y * n,
-                u = r.width / 2 - o,
-                d = r.height / 2 - c;
-            T(n), D({
-                x: u,
+                s = !0,
+                l = 0,
+                r = n.height / t;
+            for (; s && l < 10;)(s = i.y + r / 2 > 1536) && (i.y -= 32), l++;
+            let a = i.x * t,
+                o = i.y * t,
+                c = n.width / 2 - a,
+                d = n.height / 2 - o;
+            R(t), D({
+                x: c,
                 y: d
             })
-        }, [X, S]);
-        l.useEffect(() => {
-            q(P)
-        }, [P, q]);
-        let J = l.useCallback(e => {
-            var t;
-            let n = null == (t = X.current) ? void 0 : t.getBoundingClientRect();
-            if (null == n) return;
-            let r = n.height / N,
-                l = n.width / N,
-                i = {
-                    x: e.x / N,
-                    y: e.y / N
+        }, [X, y]);
+        s.useEffect(() => {
+            q(O)
+        }, [O, q]);
+        let J = s.useCallback(e => {
+            let t = X.current?.getBoundingClientRect();
+            if (null == t) return;
+            let n = t.height / j,
+                i = t.width / j,
+                s = {
+                    x: e.x / j,
+                    y: e.y / j
                 },
-                s = e.y / N > 0,
-                a = e.x / N > 0,
-                o = i.y - r < -1536,
-                c = i.x - l < -2180;
-            o || s || a || c || D(e)
-        }, [X, N]);
-        return (0, r.jsx)(o.vN3, {
-            children: (0, r.jsxs)("div", {
+                l = e.y / j > 0,
+                r = e.x / j > 0,
+                a = s.y - n < -1536,
+                o = s.x - i < -2180;
+            a || l || r || o || D(e)
+        }, [X, j]);
+        return (0, i.jsx)(o.vN3, {
+            children: (0, i.jsxs)("div", {
                 ref: X,
-                className: s()(x.km, i),
+                className: r()(I.km, l),
                 onClick: () => {
-                    k(0)
+                    w(0)
                 },
-                onMouseDown: () => M(Date.now()),
+                onMouseDown: () => U(Date.now()),
                 onMouseUp: e => {
                     if (null != X.current) {
-                        if (G < 2) {
+                        if (P < 2) {
                             let n = Date.now(),
-                                r = X.current.getBoundingClientRect(),
-                                l = {
-                                    x: (e.pageX - r.x - R.x) / N,
-                                    y: (e.pageY - r.y - R.y) / N
+                                i = X.current.getBoundingClientRect(),
+                                s = {
+                                    x: (e.pageX - i.x - M.x) / j,
+                                    y: (e.pageY - i.y - M.y) / j
                                 };
-                            !1 !== L && n - L > 250 && d.Ay.update(t.id, {
-                                position: l
+                            !1 !== G && n - G > 250 && u.Ay.update(t.id, {
+                                position: s
                             })
                         }
-                        M(!1)
+                        U(!1)
                     }
                 },
                 onMouseMove: e => {
-                    !1 !== L && (k(G + Math.abs(e.movementX) + Math.abs(e.movementY)), J({
-                        x: R.x + e.movementX,
-                        y: R.y + e.movementY
+                    !1 !== G && (w(P + Math.abs(e.movementX) + Math.abs(e.movementY)), J({
+                        x: M.x + e.movementX,
+                        y: M.y + e.movementY
                     })), H({
                         x: e.pageX,
                         y: e.pageY
                     })
                 },
-                children: [(0, r.jsx)("div", {
-                    className: x.VT,
+                children: [(0, i.jsx)("div", {
+                    className: I.VT,
                     style: {
-                        transform: "translate(".concat(R.x, "px, ").concat(R.y, "px) scale(").concat(N, ") ")
+                        transform: `translate(${M.x}px, ${M.y}px) scale(${j}) `
                     },
-                    children: (0, r.jsx)(f.A, {
-                        roomSeats: p.seats,
-                        roomParticipants: p.participants,
+                    children: (0, i.jsx)(g.A, {
+                        roomSeats: h.seats,
+                        roomParticipants: h.participants,
                         participants: a,
                         channel: t,
                         idle: n,
-                        skipNewUserEducation: !h,
-                        onSeatClick: v
+                        skipNewUserEducation: !A,
+                        onSeatClick: N
                     })
-                }), (0, r.jsxs)("div", {
-                    className: s()(x.nM, x.vf),
-                    children: [(0, r.jsxs)("div", {
-                        className: s()(x.nM, {
-                            [x.R]: n
+                }), (0, i.jsxs)("div", {
+                    className: r()(I.nM, I.vf),
+                    children: [(0, i.jsxs)("div", {
+                        className: r()(I.nM, {
+                            [I.R]: n
                         }),
-                        children: [(0, r.jsx)("div", {
-                            ref: K,
-                            children: (0, r.jsx)(o.K0, {
+                        children: [(0, i.jsx)("div", {
+                            ref: W,
+                            children: (0, i.jsx)(o.K0, {
                                 variant: "icon-only",
-                                "aria-label": j.intl.string(O.default.W7TAH4),
+                                "aria-label": E.intl.string(C.default.W7TAH4),
                                 icon: o.T7G,
                                 disabled: n,
                                 onClick: e => {
-                                    e.preventDefault(), e.stopPropagation(), Y(!F)
+                                    e.preventDefault(), e.stopPropagation(), K(!F)
                                 }
                             })
-                        }), (0, r.jsx)(o.K0, {
+                        }), (0, i.jsx)(o.K0, {
                             variant: "icon-only",
-                            "aria-label": j.intl.string(O.default.O7EDNk),
-                            icon: E ? o._mZ : o.oyn,
+                            "aria-label": E.intl.string(C.default.O7EDNk),
+                            icon: S ? o._mZ : o.oyn,
                             disabled: n,
                             onClick: e => {
-                                e.preventDefault(), e.stopPropagation(), C(!E)
+                                e.preventDefault(), e.stopPropagation(), T(!S)
                             }
                         })]
-                    }), (0, r.jsx)(m.A, {
+                    }), (0, i.jsx)(m.A, {
                         channel: t,
                         idle: n,
-                        showChat: null != E && E
-                    }), (0, r.jsxs)("div", {
-                        className: s()(x.nM, {
-                            [x.R]: n
+                        showChat: S ?? !1
+                    }), (0, i.jsxs)("div", {
+                        className: r()(I.nM, {
+                            [I.R]: n
                         }),
-                        children: [(0, r.jsx)(o.K0, {
+                        children: [(0, i.jsx)(o.K0, {
                             variant: "icon-only",
                             "aria-label": "Zoom out Haven",
                             icon: o.V0_,
                             disabled: n,
                             onClick: e => {
-                                e.preventDefault(), e.stopPropagation(), q(N - .05)
+                                e.preventDefault(), e.stopPropagation(), q(j - .05)
                             }
-                        }), (0, r.jsx)(o.K0, {
+                        }), (0, i.jsx)(o.K0, {
                             variant: "icon-only",
                             "aria-label": "Zoom in Haven",
                             icon: o.r1u,
                             disabled: n,
                             onClick: e => {
-                                e.preventDefault(), e.stopPropagation(), q(N + .05)
+                                e.preventDefault(), e.stopPropagation(), q(j + .05)
                             }
                         })]
                     })]
-                }), (0, r.jsx)(y.A, {
+                }), (0, i.jsx)(x.A, {
                     channel: t,
                     participants: a
-                }), (0, r.jsx)(A.A, {
+                }), (0, i.jsx)(f.A, {
                     open: F,
-                    close: () => Y(!1),
-                    triggerRef: K,
-                    style: null != W ? {
-                        left: W.x,
-                        top: W.y
+                    close: () => K(!1),
+                    triggerRef: W,
+                    style: null != Y ? {
+                        left: Y.x,
+                        top: Y.y
                     } : void 0
-                }), (0, r.jsx)(b.A, {}), (0, r.jsx)("div", {
-                    className: s()(x.Lw, {
-                        [x.FD]: h
+                }), (0, i.jsx)(_.A, {}), (0, i.jsx)("div", {
+                    className: r()(I.Lw, {
+                        [I.FD]: A
                     }),
-                    children: (0, r.jsx)("div", {
-                        className: x.dH,
-                        children: (0, r.jsx)(o.Text, {
+                    children: (0, i.jsx)("div", {
+                        className: I.dH,
+                        children: (0, i.jsx)(o.Text, {
                             variant: "display-lg",
                             children: "Welcome to Haven"
                         })
@@ -230,29 +229,14 @@ let _ = e => {
             })
         })
     },
-    v = e => {
-        let t = p.s.useConfig({
+    N = e => {
+        let t = h.s.useConfig({
                 location: "Haven"
             }).enabled,
-            n = (0, a.bG)([h.A], () => h.A.isUserConnected(e.channel.id));
-        return (l.useEffect(() => {
-            !t || n || d.Ay.connect(e.channel.id)
-        }, [e.channel.id, n, t]), t) ? (0, r.jsx)(_, function(e) {
-            for (var t = 1; t < arguments.length; t++) {
-                var n = null != arguments[t] ? arguments[t] : {},
-                    r = Object.keys(n);
-                "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                    return Object.getOwnPropertyDescriptor(n, e).enumerable
-                }))), r.forEach(function(t) {
-                    var r;
-                    r = n[t], t in e ? Object.defineProperty(e, t, {
-                        value: r,
-                        enumerable: !0,
-                        configurable: !0,
-                        writable: !0
-                    }) : e[t] = r
-                })
-            }
-            return e
-        }({}, e)) : null
+            n = (0, a.bG)([A.A], () => A.A.isUserConnected(e.channel.id));
+        return (s.useEffect(() => {
+            !t || n || u.Ay.connect(e.channel.id)
+        }, [e.channel.id, n, t]), t) ? (0, i.jsx)(b, {
+            ...e
+        }) : null
     }

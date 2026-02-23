@@ -1,67 +1,65 @@
-/** chunk id: 379574, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => g
-}), n(896048), n(693327), n(554719), n(680155), n(323874), n(14289), n(35956), n(747238);
-var r = n(627968),
-    l = n(64700),
-    i = n(311907),
-    a = n(397927),
-    s = n(976860),
-    o = n(961350),
-    c = n(449054),
-    d = n(412461),
-    u = n(933171),
-    p = n(652215),
-    h = n(985018);
-let m = "redirect_to_support_server";
+/** chunk id: 379574, original params: e,t,a (module,exports,require) **/
+a.d(t, {
+    A: () => _
+}), a(323874), a(14289), a(35956);
+var n = a(627968),
+    i = a(64700),
+    s = a(311907),
+    l = a(397927),
+    r = a(976860),
+    o = a(961350),
+    c = a(449054),
+    d = a(412461),
+    u = a(933171),
+    h = a(652215),
+    m = a(985018);
+let p = "redirect_to_support_server";
 
-function g(e) {
+function _(e) {
     var t;
-    let n, g, _, {
-            application: b,
-            className: f
+    let a, _, g, {
+            application: x,
+            className: A
         } = e,
         {
-            onGoToSupportServer: x
-        } = (t = b, n = (0, d.DB)(), g = (0, i.bG)([o.default], () => o.default.getSessionId()), _ = l.useCallback(async () => {
+            onGoToSupportServer: C
+        } = (t = x, a = (0, d.DB)(), _ = (0, s.bG)([o.default], () => o.default.getSessionId()), g = i.useCallback(async () => {
             try {
-                var e;
-                let n = null == t || null == (e = t.guild) ? void 0 : e.id;
-                if (null != n) {
-                    (0, d.TR)(p.HAw.APP_DIRECTORY_SUPPORT_SERVER_JOINED, {
+                let e = t?.guild?.id;
+                if (null != e) {
+                    (0, d.TR)(h.HAw.APP_DIRECTORY_SUPPORT_SERVER_JOINED, {
                         application_id: t.id,
-                        support_guild_id: n
+                        support_guild_id: e
                     });
-                    let e = {
-                        page: p.liQ.APPLICATION_DIRECTORY
+                    let a = {
+                        page: h.liQ.APPLICATION_DIRECTORY
                     };
-                    await (0, c.Z2)(n, e)
+                    await (0, c.Z2)(e, a)
                 }
-            } catch (e) {}
-        }, [t]), l.useEffect(() => {
+            } catch {}
+        }, [t]), i.useEffect(() => {
             let e = new URL(location.href);
-            if (null != t && n && null != g && "true" === e.searchParams.get(m)) {
-                e.searchParams.delete(m);
+            if (null != t && a && null != _ && "true" === e.searchParams.get(p)) {
+                e.searchParams.delete(p);
                 let t = e.pathname + e.search;
-                (0, s.bG)(t), _()
+                (0, r.bG)(t), g()
             }
-        }, [n, _, g, t]), {
-            onGoToSupportServer: l.useCallback(() => {
-                var e;
-                null != (null == t || null == (e = t.guild) ? void 0 : e.id) && (n ? _() : (0, d.jL)({
-                    [m]: "true"
+        }, [a, g, _, t]), {
+            onGoToSupportServer: i.useCallback(() => {
+                null != t?.guild?.id && (a ? g() : (0, d.jL)({
+                    [p]: "true"
                 }))
-            }, [t, _, n])
+            }, [t, g, a])
         });
-    return null != b.guild && b.guild.features.includes(p.GuildFeatures.DISCOVERABLE) ? (0, r.jsxs)("div", {
-        className: f,
-        children: [(0, r.jsx)(a.Heading, {
+    return null != x.guild && x.guild.features.includes(h.GuildFeatures.DISCOVERABLE) ? (0, n.jsxs)("div", {
+        className: A,
+        children: [(0, n.jsx)(l.Heading, {
             variant: "heading-sm/semibold",
             color: "text-strong",
-            children: h.intl.string(h.t.KJEO27)
-        }), (0, r.jsx)(u.A, {
-            guild: b.guild,
-            onClick: x
+            children: m.intl.string(m.t.KJEO27)
+        }), (0, n.jsx)(u.A, {
+            guild: x.guild,
+            onClick: C
         })]
     }) : null
 }

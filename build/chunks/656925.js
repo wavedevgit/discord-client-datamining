@@ -1,37 +1,37 @@
-/** chunk id: 656925, original params: e,t,r (module,exports,require) **/
-r.d(t, {
+/** chunk id: 656925, original params: e,t,n (module,exports,require) **/
+n.d(t, {
     A: () => u
 });
-var n = r(64700),
-    l = r(311907),
-    a = r(397927),
-    i = r(45837),
-    s = r(961350),
-    o = r(101058),
-    c = r(595535);
+var a = n(64700),
+    l = n(311907),
+    s = n(397927),
+    i = n(45837),
+    r = n(961350),
+    c = n(101058),
+    o = n(595535);
 
 function u(e) {
     let {
         avatarId: t,
-        storageHash: r,
+        storageHash: n,
         size: u
     } = e, {
-        onMouseEnter: f,
-        onMouseLeave: d,
-        shouldAnimate: p
-    } = (0, i.A)(), g = (0, l.bG)([s.default], () => s.default.getId());
+        onMouseEnter: d,
+        onMouseLeave: A,
+        shouldAnimate: g
+    } = (0, i.A)(), h = (0, l.bG)([r.default], () => r.default.getId());
     return {
-        avatarSrc: n.useMemo(() => (0, o.Xp)({
-            userId: g,
+        avatarSrc: a.useMemo(() => (0, c.Xp)({
+            userId: h,
             avatarId: t,
-            storageHash: r,
-            canAnimate: p,
-            size: (0, a.FT9)(null != u ? u : c.q)
-        }), [g, t, r, p, u]),
-        isAvatarAnimating: p,
+            storageHash: n,
+            canAnimate: g,
+            size: (0, s.FT9)(u ?? o.q)
+        }), [h, t, n, g, u]),
+        isAvatarAnimating: g,
         eventHandlers: {
-            onMouseEnter: f,
-            onMouseLeave: d
+            onMouseEnter: d,
+            onMouseLeave: A
         }
     }
 }

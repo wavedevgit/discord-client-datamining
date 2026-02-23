@@ -1,37 +1,37 @@
 /** chunk id: 502060, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    G: () => s
-}), n(228524);
-var r = n(627968);
+    G: () => r
+});
+var i = n(627968);
 n(64700);
-var i = n(397927);
+var s = n(397927);
 n(195043);
-var l = n(645022);
+var a = n(645022);
 
-function s(e) {
+function r(e) {
     let {
         children: t,
         title: n,
-        description: s
+        description: r
     } = e;
-    return (0, r.jsxs)("div", {
-        className: l.L1,
-        children: [(null != n || null != s) && (0, r.jsxs)("div", {
-            className: l.Km,
-            children: [null != n && (0, r.jsx)(i.Heading, {
+    return (0, i.jsxs)("div", {
+        className: a.L1,
+        children: [(null != n || null != r) && (0, i.jsxs)("div", {
+            className: a.Km,
+            children: [null != n && (0, i.jsx)(s.Heading, {
                 variant: "heading-lg/semibold",
                 color: "text-strong",
                 children: n
-            }), null != s && (0, r.jsx)(i.Text, {
+            }), null != r && (0, i.jsx)(s.Text, {
                 variant: "text-sm/normal",
                 color: "text-default",
-                children: s
+                children: r
             })]
-        }), (0, r.jsx)("div", {
-            className: l.Yq,
+        }), (0, i.jsx)("div", {
+            className: a.Yq,
             children: t
-        }), (0, r.jsx)(i.cGx, {
-            className: l.yj
+        }), (0, i.jsx)(s.cGx, {
+            className: a.yj
         })]
     })
 }

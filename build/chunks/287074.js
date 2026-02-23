@@ -1,94 +1,65 @@
 /** chunk id: 287074, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => b
-}), n(896048);
-var r = n(627968),
-    l = n(64700),
-    i = n(311907),
-    s = n(397927),
+    A: () => g
+});
+var i = n(627968),
+    s = n(64700),
+    l = n(311907),
+    r = n(397927),
     a = n(945830),
     o = n(323073),
     c = n(267102),
-    u = n(222823),
-    d = n(203982),
-    p = n(58736),
-    h = n(652215),
-    g = n(985018);
-
-function f(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = r
-        })
-    }
-    return e
-}
-
-function m(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
-        }
-        return n
-    })(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-let b = function(e) {
+    d = n(222823),
+    u = n(203982),
+    h = n(58736),
+    A = n(652215),
+    p = n(985018);
+let g = function(e) {
     let {
         channel: t
-    } = e, n = (0, o.vL)(t), [b, A] = l.useState(!1), y = (0, i.bG)([u.Ay], () => u.Ay.hasUnreadPins(t.id), [t]), O = (0, c.aL)(), j = l.useRef(null), x = l.useCallback(() => {
-        n || A(e => !e)
+    } = e, n = (0, o.vL)(t), [g, m] = s.useState(!1), _ = (0, l.bG)([d.Ay], () => d.Ay.hasUnreadPins(t.id), [t]), f = (0, c.aL)(), x = s.useRef(null), C = s.useCallback(() => {
+        n || m(e => !e)
     }, [n]);
 
-    function _(e) {
-        (null == e ? void 0 : e.shiftKey) || O.dispatch(h.jej.POPOUT_CLOSE)
+    function E(e) {
+        e?.shiftKey || f.dispatch(A.jej.POPOUT_CLOSE)
     }
-    return l.useEffect(() => (d._.subscribe(h.jej.TOGGLE_CHANNEL_PINS, x), () => {
-        d._.unsubscribe(h.jej.TOGGLE_CHANNEL_PINS, x)
-    }), [x]), (0, r.jsx)(s.YNO, {
-        targetElementRef: j,
-        shouldShow: b,
-        animation: s.YNO.Animation.NONE,
+    return s.useEffect(() => (u._.subscribe(A.jej.TOGGLE_CHANNEL_PINS, C), () => {
+        u._.unsubscribe(A.jej.TOGGLE_CHANNEL_PINS, C)
+    }), [C]), (0, i.jsx)(r.YNO, {
+        targetElementRef: x,
+        shouldShow: g,
+        animation: r.YNO.Animation.NONE,
         position: "bottom",
         align: "right",
         autoInvert: !1,
         ignoreModalClicks: !0,
-        onRequestClose: () => A(!1),
+        onRequestClose: () => m(!1),
         renderPopout: function(e) {
-            return (0, r.jsx)(a.A, m(f({}, e), {
-                onJump: _,
+            return (0, i.jsx)(a.A, {
+                ...e,
+                onJump: E,
                 channel: t
-            }))
+            })
         },
         clickTrap: !0,
         children: (e, t) => {
             let {
-                isShown: l
+                isShown: s
             } = t;
-            return (0, r.jsx)(p.In, m(f({}, e), {
-                ref: j,
-                onClick: x,
-                tooltip: l ? null : g.intl.string(g.t["mp1N/2"]),
-                icon: s.tsw,
+            return (0, i.jsx)(h.In, {
+                ...e,
+                ref: x,
+                onClick: C,
+                tooltip: s ? null : p.intl.string(p.t["mp1N/2"]),
+                icon: r.tsw,
                 iconSize: 20,
-                "aria-label": g.intl.string(g.t["mp1N/2"]),
+                "aria-label": p.intl.string(p.t["mp1N/2"]),
                 disabled: n,
-                showBadge: y,
-                selected: l
-            }))
+                showBadge: _,
+                selected: s
+            })
         }
     })
 }

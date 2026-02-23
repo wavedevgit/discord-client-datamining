@@ -1,9 +1,9 @@
 /** chunk id: 639040, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => c
-}), n(457529), n(321073);
-var r = n(64700),
-    i = n(311907),
+    A: () => d
+}), n(321073);
+var i = n(64700),
+    r = n(311907),
     l = n(4106),
     a = n(883344),
     s = n(596720);
@@ -81,44 +81,43 @@ function o(e, t, n) {
     return null
 }
 
-function c() {
-    var e, t;
-    let n = (0, i.bG)([a.A], () => a.A.getUnreadDisplayItems()),
-        c = (0, i.bG)([a.A], () => a.A.getReadDisplayItems()),
-        u = (0, i.bG)([a.A], () => a.A.getNextIndexToHydrate()),
-        d = (0, i.cf)([a.A], () => a.A.getHydratedItems()),
-        p = (0, i.bG)([a.A], () => a.A.getMissingItems());
-    r.useEffect(() => {
-        let e = Date.now() + c.length;
-        l.A.ackGravityItems(c.map(t => ({
+function d() {
+    let e = (0, r.bG)([a.A], () => a.A.getUnreadDisplayItems()),
+        t = (0, r.bG)([a.A], () => a.A.getReadDisplayItems()),
+        n = (0, r.bG)([a.A], () => a.A.getNextIndexToHydrate()),
+        d = (0, r.cf)([a.A], () => a.A.getHydratedItems()),
+        c = (0, r.bG)([a.A], () => a.A.getMissingItems());
+    i.useEffect(() => {
+        let e = Date.now() + t.length;
+        l.A.ackGravityItems(t.map(t => ({
             id: t.id,
             timestamp: e--
         }), !0))
-    }, [c]);
-    let h = [],
-        f = [],
-        g = 0;
-    for (let t = 0; t < n.length && !(g >= u); t++) {
-        let r = n[t];
-        if (g++, p[r.id]) continue;
-        let i = d[r.id];
-        if (null == i && r.type === s.Mm.MESSAGE && (null == (e = r.data.message_context) ? void 0 : e.reference_message_id) != null && (i = d[r.data.message_id]), null != i) {
-            let e = o(r, i, !0);
-            null != e && h.push(e)
+    }, [t]);
+    let u = [],
+        A = [],
+        h = 0;
+    for (let t = 0; t < e.length && !(h >= n); t++) {
+        let n = e[t];
+        if (h++, c[n.id]) continue;
+        let i = d[n.id];
+        if (null == i && n.type === s.Mm.MESSAGE && n.data.message_context?.reference_message_id != null && (i = d[n.data.message_id]), null != i) {
+            let e = o(n, i, !0);
+            null != e && u.push(e)
         }
     }
-    for (let e = 0; e < c.length && !(g >= u); e++) {
-        let n = c[e];
-        if (g++, p[n.id]) continue;
-        let r = d[n.id];
-        if (null == r && n.type === s.Mm.MESSAGE && (null == (t = n.data.message_context) ? void 0 : t.reference_message_id) != null && (r = d[n.data.message_id]), null != r) {
-            let e = o(n, r, !1);
-            null != e && f.push(e)
+    for (let e = 0; e < t.length && !(h >= n); e++) {
+        let n = t[e];
+        if (h++, c[n.id]) continue;
+        let i = d[n.id];
+        if (null == i && n.type === s.Mm.MESSAGE && n.data.message_context?.reference_message_id != null && (i = d[n.data.message_id]), null != i) {
+            let e = o(n, i, !1);
+            null != e && A.push(e)
         }
     }
     return {
-        unreadItems: h,
-        readItems: f,
-        allUnreadItemsHydrated: u >= n.length
+        unreadItems: u,
+        readItems: A,
+        allUnreadItemsHydrated: n >= e.length
     }
 }

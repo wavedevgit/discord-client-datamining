@@ -1,41 +1,41 @@
-/** chunk id: 124589, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => a
+/** chunk id: 124589, original params: e,t,a (module,exports,require) **/
+a.d(t, {
+    A: () => l
 });
-var r = n(627968);
-n(64700);
-var l = n(397927),
-    i = n(985018);
+var n = a(627968);
+a(64700);
+var i = a(397927),
+    s = a(985018);
 
-function a(e) {
+function l(e) {
     let {
         tabs: t,
-        selectedTab: n,
-        onTabSelect: a,
-        onClose: s
+        selectedTab: a,
+        onTabSelect: l,
+        onClose: r
     } = e;
-    return (0, r.jsx)(l.W1t, {
+    return (0, n.jsx)(i.W1t, {
         "data-menu-migrated-auto": !0,
         navId: "global-discovery-tabs-overflow-menu",
-        "aria-label": i.intl.string(i.t.riPnr0),
+        "aria-label": s.intl.string(s.t.riPnr0),
         hideScroller: !0,
-        onClose: s,
-        onSelect: s,
-        children: (0, r.jsx)(l.rXV, {
+        onClose: r,
+        onSelect: r,
+        children: (0, n.jsx)(i.rXV, {
             children: t.map(e => {
                 let {
                     id: t,
-                    label: i
+                    label: s
                 } = e;
-                return (0, r.jsx)(l.Drp, {
+                return (0, n.jsx)(i.Drp, {
                     id: t,
-                    label: i,
-                    icon: t === n ? l.yr3 : void 0,
-                    leadingAccessory: t === n ? {
+                    label: s,
+                    icon: t === a ? i.yr3 : void 0,
+                    leadingAccessory: t === a ? {
                         type: "icon",
-                        icon: l.yr3
+                        icon: i.yr3
                     } : void 0,
-                    action: () => a(t)
+                    action: () => l(t)
                 }, t)
             })
         }, "overflow-tabs")

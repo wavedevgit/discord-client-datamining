@@ -1,53 +1,45 @@
-/** chunk id: 900210, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => m,
+/** chunk id: 900210, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    A: () => h,
     W: () => s
-}), n(896048), n(446912);
-var i, l, r, o = n(311907),
-    a = n(73153),
-    s = ((l = {}).HOVER = "HOVER", l.EXTERNAL = "EXTERNAL", l.RANDOM = "RANDOM", l);
-let u = {},
-    c = {},
-    d = {},
-    p = (e, t) => {
-        let n = null != t.id ? t.id : t.name;
-        return "".concat(e, ":").concat(n)
+});
+var n, l = i(311907),
+    a = i(73153),
+    s = ((n = {}).HOVER = "HOVER", n.EXTERNAL = "EXTERNAL", n.RANDOM = "RANDOM", n);
+let r = {},
+    o = {},
+    u = {},
+    d = (e, t) => {
+        let i = null != t.id ? t.id : t.name;
+        return `${e}:${i}`
     };
-class h extends(i = o.Ay.Store) {
-    getReactionPickerAnimation(e, t, n) {
-        return u["".concat(e, ":").concat(t, ":").concat(null != n ? n : "")]
+class c extends l.Ay.Store {
+    static displayName = "BurstReactionEffectsStore";
+    getReactionPickerAnimation(e, t, i) {
+        return r[`${e}:${t}:${i??""}`]
     }
-    getEffectForEmojiId(e, t, n) {
-        var i;
-        let l = p(t, n);
-        return null == (i = c[e]) ? void 0 : i[l]
+    getEffectForEmojiId(e, t, i) {
+        let n = d(t, i);
+        return o[e]?.[n]
     }
-}(r = "displayName") in h ? Object.defineProperty(h, r, {
-    value: "BurstReactionEffectsStore",
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
-}) : h[r] = "BurstReactionEffectsStore";
-let m = new h(a.h, {
+}
+let h = new c(a.h, {
     BURST_REACTION_EFFECT_CLEAR: e => {
-        var t;
         let {
-            channelId: n,
+            channelId: t,
             messageId: i,
-            emoji: l
-        } = e, r = p(i, l);
-        null == (t = c[n]) || delete t[r]
+            emoji: n
+        } = e, l = d(i, n);
+        delete o[t]?.[l]
     },
     BURST_REACTION_EFFECT_PLAY: e => {
-        var t, n, i;
         let {
-            channelId: l,
-            messageId: r,
-            emoji: o,
-            key: a
-        } = e, s = p(r, o);
+            channelId: t,
+            messageId: i,
+            emoji: n,
+            key: l
+        } = e, a = d(i, n);
         if (((e, t) => {
-                var n;
                 let i;
                 switch (e) {
                     case "HOVER":
@@ -59,50 +51,50 @@ let m = new h(a.h, {
                     default:
                         i = "EXTERNAL"
                 }
-                let l = Object.fromEntries(Object.entries(null != (n = c[t]) ? n : {}).filter(e => {
+                let n = Object.fromEntries(Object.entries(o[t] ?? {}).filter(e => {
                     let [, t] = e;
                     return t === i
                 }));
-                if (Object.keys(l).length >= 5 && "EXTERNAL" === e) {
-                    for (let e in l)
-                        if (null == d[t] || null == d[t][e]) {
-                            delete c[t][e], delete l[e];
+                if (Object.keys(n).length >= 5 && "EXTERNAL" === e) {
+                    for (let e in n)
+                        if (null == u[t] || null == u[t][e]) {
+                            delete o[t][e], delete n[e];
                             break
                         }
                 }
-                return Object.keys(l).length
-            })(a, l) >= 5) return;
-        let u = null != (t = c[l]) ? t : {},
-            h = (null != (n = d[l]) ? n : {})[s],
-            m = u[s];
-        ("HOVER" !== a || null == m) && ("HOVER" === m && "EXTERNAL" === a && null != h && ("function" == typeof h.destroy && h.destroy(), null == (i = d[l]) || delete i[s], m = void 0), null == m && (null != c[l] ? c[l][s] = a : c[l] = {
-            [s]: a
+                return Object.keys(n).length
+            })(l, t) >= 5) return;
+        let s = o[t] ?? {},
+            r = (u[t] ?? {})[a],
+            c = s[a];
+        ("HOVER" !== l || null == c) && ("HOVER" === c && "EXTERNAL" === l && null != r && ("function" == typeof r.destroy && r.destroy(), delete u[t]?.[a], c = void 0), null == c && (null != o[t] ? o[t][a] = l : o[t] = {
+            [a]: l
         }))
     },
     BURST_REACTION_ANIMATION_ADD: e => {
         let {
             channelId: t,
-            messageId: n,
-            emoji: i,
+            messageId: i,
+            emoji: n,
             animation: l
-        } = e, r = p(n, i);
-        null == d[t] && (d[t] = {}), d[t][r] = l
+        } = e, a = d(i, n);
+        null == u[t] && (u[t] = {}), u[t][a] = l
     },
     BURST_REACTION_PICKER_ANIMATION_ADD: e => {
         let {
             messageId: t,
-            emojiName: n,
-            emojiId: i,
+            emojiName: i,
+            emojiId: n,
             startPosition: l
         } = e;
-        u["".concat(t, ":").concat(n, ":").concat(null != i ? i : "")] = l
+        r[`${t}:${i}:${n??""}`] = l
     },
     BURST_REACTION_PICKER_ANIMATION_CLEAR: e => {
         let {
             messageId: t,
-            emojiName: n,
-            emojiId: i
+            emojiName: i,
+            emojiId: n
         } = e;
-        delete u["".concat(t, ":").concat(n, ":").concat(null != i ? i : "")]
+        delete r[`${t}:${i}:${n??""}`]
     }
 })

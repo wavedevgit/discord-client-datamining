@@ -1,19 +1,20 @@
 /** chunk id: 709544, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
     A: () => c
 });
-var r = n(311907),
-    l = n(95701),
-    i = n(734057),
-    s = n(71393),
+var i = n(311907),
+    s = n(95701),
+    l = n(734057),
+    r = n(71393),
     a = n(309010),
     o = n(652215);
 
 function c(e, t) {
-    return (0, r.bG)([i.A, s.A, a.A], () => {
-        let n = s.A.getGuild(t);
-        if (!((null == n ? void 0 : n.features.has(o.GuildFeatures.WELCOME_SCREEN_ENABLED)) === !0 && n.features.has(o.GuildFeatures.COMMUNITY)) || n.features.has(o.GuildFeatures.GUILD_SERVER_GUIDE)) return !1;
-        let r = i.A.getChannel(e);
-        return e === a.A.getChannelId(t) && null != r && r.getGuildId() === n.id && (0, l.ke)(r.type)
+    return (0, i.bG)([l.A, r.A, a.A], () => {
+        let n = r.A.getGuild(t);
+        if (!(n?.features.has(o.GuildFeatures.WELCOME_SCREEN_ENABLED) === !0 && n.features.has(o.GuildFeatures.COMMUNITY)) || n.features.has(o.GuildFeatures.GUILD_SERVER_GUIDE)) return !1;
+        let i = l.A.getChannel(e);
+        return e === a.A.getChannelId(t) && null != i && i.getGuildId() === n.id && (0, s.ke)(i.type)
     })
 }

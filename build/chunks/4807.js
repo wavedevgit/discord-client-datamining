@@ -3,32 +3,32 @@ n.d(t, {
     A: () => u
 });
 var a = n(627968),
-    l = n(64700),
-    r = n(158954),
-    i = n(554146),
-    s = n(397927),
+    i = n(64700),
+    s = n(158954),
+    l = n(554146),
+    r = n(397927),
     o = n(367727),
-    c = n(594061),
-    d = n(795695);
+    d = n(594061),
+    c = n(795695);
 
 function u() {
-    return (0, a.jsx)(s.HOs, {
-        className: d.kL,
+    return (0, a.jsx)(r.HOs, {
+        className: c.kL,
         children: (0, a.jsx)(m, {})
     })
 }
 
 function m() {
-    let e = l.useCallback(() => {
-            (0, c._N)(i.M.NITRO_TENURE_BADGE_LEVEL_UP)
+    let e = i.useCallback(() => {
+            (0, d._N)(l.M.NITRO_TENURE_BADGE_LEVEL_UP)
         }, []),
         {
             lastDismissedAtMs: t
-        } = (0, o.FZ)(i.M.NITRO_TENURE_BADGE_LEVEL_UP),
+        } = (0, o.FZ)(l.M.NITRO_TENURE_BADGE_LEVEL_UP),
         n = null != t ? new Date(t) : null;
     return (0, a.jsxs)(a.Fragment, {
-        children: [(0, a.jsx)(r.DZT, {
-            className: d.wx,
+        children: [(0, a.jsx)(s.DZT, {
+            className: c.wx,
             variant: "heading-lg/semibold",
             children: "Tenure Badges"
         }), (0, a.jsxs)("p", {
@@ -38,8 +38,8 @@ function m() {
                 children: "Not Dismissed"
             })]
         }), (0, a.jsx)("div", {
-            className: d.PW,
-            children: (0, a.jsx)(s.Button, {
+            className: c.PW,
+            children: (0, a.jsx)(r.Button, {
                 variant: "primary",
                 text: "Reset Level Up DC",
                 onClick: e

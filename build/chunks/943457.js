@@ -4,13 +4,13 @@ n.d(e, {
 });
 var i = n(110259),
     a = n(198982),
-    l = n(499785),
-    r = n(652215);
+    r = n(499785),
+    l = n(652215);
 let s = {
     createGuildFromTemplate: async function(t, e, n, s, d) {
         try {
-            return (await l.A.post({
-                url: r.Rsh.GUILDS,
+            return (await r.A.post({
+                url: l.Rsh.GUILDS,
                 body: {
                     name: t,
                     icon: e,

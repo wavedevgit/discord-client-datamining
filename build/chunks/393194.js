@@ -1,45 +1,44 @@
 /** chunk id: 393194, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => p
-}), n(896048);
-var l = n(627968);
+    A: () => m
+});
+var i = n(627968);
 n(64700);
-var r = n(311907),
-    i = n(397927),
+var l = n(311907),
+    s = n(397927),
     a = n(713654),
-    s = n(435470),
+    r = n(435470),
     o = n(969043),
     c = n(576967),
-    u = n(314307),
-    d = n(985018),
+    d = n(314307),
+    u = n(985018),
     h = n(867384);
 
-function p(e) {
-    var t;
+function m(e) {
     let {
-        channel: n
-    } = e, p = (0, s.kt)(n), {
-        firstMessage: f
-    } = (0, r.cf)([o.A], () => o.A.getMessage(n.id)), m = new Set((0, s.zt)(n, p)), g = null != (t = (0, a.gU)(n)) ? t : i.oyn;
-    return (0, l.jsxs)(u.Ay, {
-        channelId: n.id,
+        channel: t
+    } = e, n = (0, r.kt)(t), {
+        firstMessage: m
+    } = (0, l.cf)([o.A], () => o.A.getMessage(t.id)), A = new Set((0, r.zt)(t, n)), g = (0, a.gU)(t) ?? s.oyn;
+    return (0, i.jsxs)(d.Ay, {
+        channelId: t.id,
         className: h.kL,
-        children: [(0, l.jsx)("div", {
+        children: [(0, i.jsx)("div", {
             className: h.P0,
-            children: (0, l.jsx)(g, {
+            children: (0, i.jsx)(g, {
                 className: h.Kk,
                 strokeWidth: 1.75
             })
-        }), (0, l.jsx)(u.cr, {
+        }), (0, i.jsx)(d.cr, {
             className: h.wx,
-            children: n.name
-        }), null == f && (0, l.jsx)(i.Text, {
+            children: t.name
+        }), null == m && (0, i.jsx)(s.Text, {
             variant: "text-md/normal",
             color: "text-default",
-            children: d.intl.string(d.t.mE3KJN)
-        }), (0, l.jsx)(c.A, {
-            appliedTags: m,
-            wrap: n.isModeratorReportChannel()
+            children: u.intl.string(u.t.mE3KJN)
+        }), (0, i.jsx)(c.A, {
+            appliedTags: A,
+            wrap: t.isModeratorReportChannel()
         })]
     })
 }

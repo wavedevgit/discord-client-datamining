@@ -1,39 +1,39 @@
-/** chunk id: 193157, original params: e,t,r (module,exports,require) **/
-r.d(t, {
+/** chunk id: 193157, original params: e,t,a (module,exports,require) **/
+a.d(t, {
     A: () => d
-}), r(228524);
-var n = r(627968);
-r(64700);
-var o = r(503698),
-    a = r.n(o),
-    s = r(158954),
-    c = r(309326),
-    i = r(337322),
-    l = r(260905);
+});
+var s = a(627968);
+a(64700);
+var r = a(503698),
+    n = a.n(r),
+    o = a(158954),
+    c = a(309326),
+    i = a(337322),
+    l = a(260905);
 
 function d(e) {
     let {
         powerup: t
-    } = e, r = (0, i.A)(t);
-    return (0, n.jsx)("div", {
+    } = e, a = (0, i.A)(t);
+    return (0, s.jsx)("div", {
         className: l.I1,
-        children: r.map(e => {
+        children: a.map(e => {
             let {
                 Icon: t,
-                className: r
+                className: a
             } = (0, c.a)(e.perkIcon, !1);
-            return (0, n.jsxs)("div", {
+            return (0, s.jsxs)("div", {
                 className: l.Ab,
-                children: [(0, n.jsx)(t, {
+                children: [(0, s.jsx)(t, {
                     color: "currentColor",
-                    className: a()(l.kf, r)
-                }), (0, n.jsx)(s.EYj, {
+                    className: n()(l.kf, a)
+                }), (0, s.jsx)(o.EYj, {
                     className: l.uL,
                     color: "text-default",
                     variant: "text-sm/medium",
                     children: e.description
                 })]
-            }, "perk-".concat(e.perkIcon))
+            }, `perk-${e.perkIcon}`)
         })
     })
 }

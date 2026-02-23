@@ -1,85 +1,53 @@
 /** chunk id: 306417, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    Dt: () => M,
-    Fb: () => D,
-    Fh: () => P,
-    Vx: () => k,
-    e5: () => G,
-    k$: () => U
-}), n(801541), n(228524);
-var r = n(627968),
-    i = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    Dt: () => w,
+    Fb: () => P,
+    Fh: () => j,
+    Vx: () => D,
+    e5: () => O,
+    k$: () => k
+}), n(801541);
+var i = n(627968),
+    l = n(64700),
+    r = n(503698),
+    a = n.n(r),
     s = n(889137),
     o = n(827734),
-    c = n(421380),
-    u = n(397927),
-    d = n(565645),
-    p = n(619517),
+    d = n(421380),
+    c = n(397927),
+    u = n(565645),
+    _ = n(619517),
     m = n(253932),
-    f = n(44234),
-    g = n(282054),
-    _ = n(218394),
-    h = n(180662),
-    b = n(969632),
-    y = n(438437),
-    A = n(290794),
-    v = n(789646),
-    O = n(985018),
-    x = n(846537);
+    h = n(44234),
+    p = n(282054),
+    g = n(218394),
+    A = n(180662),
+    x = n(969632),
+    f = n(438437),
+    C = n(290794),
+    E = n(789646),
+    I = n(985018),
+    b = n(846537);
 
-function E(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = r
-        })
-    }
-    return e
-}
-
-function j(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
-        }
-        return n
-    })(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-
-function C(e) {
+function T(e) {
     let {
         className: t,
         children: n
     } = e;
-    return (0, r.jsx)("ul", {
-        "aria-label": O.intl.string(O.t.sJpqBS),
+    return (0, i.jsx)("ul", {
+        "aria-label": I.intl.string(I.t.sJpqBS),
         className: t,
         children: n
     })
 }
 
-function I(e) {
+function v(e) {
     let {
         className: t,
         children: n
     } = e;
-    return (0, r.jsx)("div", {
-        "aria-label": O.intl.string(O.t.sJpqBS),
+    return (0, i.jsx)("div", {
+        "aria-label": I.intl.string(I.t.sJpqBS),
         role: "group",
         className: t,
         children: n
@@ -90,52 +58,37 @@ function S(e) {
     let {
         className: t,
         children: n
-    } = e, i = (0, c._u)({
+    } = e, {
+        ref: l,
+        ...r
+    } = (0, d._u)({
         orientation: "vertical"
-    }), {
-        ref: l
-    } = i, a = function(e, t) {
-        if (null == e) return {};
-        var n, r, i, l = {};
-        if ("u" > typeof Reflect && Reflect.ownKeys) {
-            for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
-            return l
-        }
-        if (l = function(e, t) {
-                if (null == e) return {};
-                var n, r, i = {},
-                    l = Object.getOwnPropertyNames(e);
-                for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
-                return i
-            }(e, t), Object.getOwnPropertySymbols)
-            for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
-        return l
-    }(i, ["ref"]);
-    return (0, r.jsx)("div", j(E({
-        "aria-label": O.intl.string(O.t.sJpqBS),
-        ref: l
-    }, a), {
+    });
+    return (0, i.jsx)("div", {
+        "aria-label": I.intl.string(I.t.sJpqBS),
+        ref: l,
+        ...r,
         className: t,
         children: n
-    }))
+    })
 }
 
-function T(e) {
+function y(e) {
     let {
         className: t,
         onClick: n,
-        isSelected: i,
-        isFirstAnswer: l,
+        isSelected: l,
+        isFirstAnswer: r,
         children: s
     } = e, {
         pollAnswerRef: o
-    } = (0, v.Mg)();
-    return (0, r.jsx)(u.DUT, {
+    } = (0, E.Mg)();
+    return (0, i.jsx)(c.DUT, {
         role: "checkbox",
-        className: a()(t, x.Sn),
+        className: a()(t, b.Sn),
         onClick: n,
-        "aria-checked": i,
-        ref: l ? o : void 0,
+        "aria-checked": l,
+        ref: r ? o : void 0,
         children: s
     })
 }
@@ -144,145 +97,144 @@ function N(e) {
     let {
         className: t,
         children: n,
-        onClick: i,
-        isSelected: l,
+        onClick: l,
+        isSelected: r,
         hasSelectedAnyAnswer: s,
         isFirstAnswer: o
     } = e, {
-        pollAnswerRef: c
-    } = (0, v.Mg)();
-    return (0, r.jsx)(u.DUT, {
+        pollAnswerRef: d
+    } = (0, E.Mg)();
+    return (0, i.jsx)(c.DUT, {
         role: "radio",
-        className: a()(t, x.Sn),
-        onClick: i,
-        "aria-checked": l,
-        tabIndex: s ? l ? 0 : -1 : o ? 0 : -1,
-        ref: o ? c : void 0,
+        className: a()(t, b.Sn),
+        onClick: l,
+        "aria-checked": r,
+        tabIndex: s ? r ? 0 : -1 : o ? 0 : -1,
+        ref: o ? d : void 0,
         children: n
     })
 }
 
-function P(e) {
+function j(e) {
     let {
         answers: t,
         answersInteraction: n,
-        answerTapAccessibilityLabel: i,
-        canTapAnswers: l,
+        answerTapAccessibilityLabel: l,
+        canTapAnswers: r,
         hasSelectedAnyAnswer: a,
         className: o,
-        answerClassName: c,
-        renderAnswerContent: u
+        answerClassName: d,
+        renderAnswerContent: c
     } = e, {
-        ContainerComponent: d,
-        answerElementType: p
+        ContainerComponent: u,
+        answerElementType: _
     } = (0, s.YW)({
-        canTapAnswers: l,
+        canTapAnswers: r,
         answersInteraction: n
     }).with({
-        answersInteraction: y.CQ.RADIO_BUTTONS
+        answersInteraction: f.CQ.RADIO_BUTTONS
     }, () => ({
         ContainerComponent: S,
         answerElementType: 1
     })).with({
-        answersInteraction: y.CQ.CHECKBOXES
+        answersInteraction: f.CQ.CHECKBOXES
     }, () => ({
-        ContainerComponent: I,
+        ContainerComponent: v,
         answerElementType: 2
     })).with({
         canTapAnswers: !0,
-        answersInteraction: y.CQ.LIST
+        answersInteraction: f.CQ.LIST
     }, () => ({
-        ContainerComponent: C,
+        ContainerComponent: T,
         answerElementType: 3
     })).otherwise(() => ({
-        ContainerComponent: C,
+        ContainerComponent: T,
         answerElementType: 0
     }));
-    return (0, r.jsx)(d, {
+    return (0, i.jsx)(u, {
         className: o,
-        children: t.map((e, t) => (0, r.jsx)(w, {
-            className: c,
+        children: t.map((e, t) => (0, i.jsx)(L, {
+            className: d,
             answer: e,
             isFirstAnswer: 0 === t,
-            elementType: p,
-            answerTapAccessibilityLabel: i,
+            elementType: _,
+            answerTapAccessibilityLabel: l,
             hasSelectedAnyAnswer: a,
-            children: u(e)
+            children: c(e)
         }, e.answerId))
     })
 }
 
-function w(e) {
+function L(e) {
     let {
         className: t,
         answer: n,
-        children: l,
+        children: r,
         hasSelectedAnyAnswer: s,
         isFirstAnswer: o,
-        elementType: c
+        elementType: d
     } = e, {
-        channelId: u,
-        messageId: d
-    } = (0, A.Tu)(), p = (0, A.hd)(n.style), m = !0 === n.isSelected, f = i.useCallback(() => {
-        h.A.handlePollAnswerTapped({
-            channelId: u,
-            messageId: d,
+        channelId: c,
+        messageId: u
+    } = (0, C.Tu)(), _ = (0, C.hd)(n.style), m = !0 === n.isSelected, h = l.useCallback(() => {
+        A.A.handlePollAnswerTapped({
+            channelId: c,
+            messageId: u,
             answerId: n.answerId
         })
-    }, [u, d, n.answerId]);
-    switch (c) {
+    }, [c, u, n.answerId]);
+    switch (d) {
         case 0:
         case 3:
-            return (0, r.jsx)("li", {
-                className: a()(t, p),
-                children: l
+            return (0, i.jsx)("li", {
+                className: a()(t, _),
+                children: r
             });
         case 1:
-            return (0, r.jsx)(N, {
-                className: a()(t, p),
-                onClick: f,
+            return (0, i.jsx)(N, {
+                className: a()(t, _),
+                onClick: h,
                 isSelected: m,
                 hasSelectedAnyAnswer: s,
                 isFirstAnswer: o,
-                children: l
+                children: r
             });
         case 2:
-            return (0, r.jsx)(T, {
-                className: a()(t, p),
-                onClick: f,
+            return (0, i.jsx)(y, {
+                className: a()(t, _),
+                onClick: h,
                 isSelected: m,
                 isFirstAnswer: o,
-                children: l
+                children: r
             })
     }
 }
 
 function R(e) {
-    var t;
     let {
-        attachment: n,
-        className: i
-    } = e, l = (0, _.j)(), a = m.kt.useSetting();
-    return (0, r.jsx)(p.Ay, {
-        className: i,
-        imageClassName: x.Bw,
-        src: null != n.proxy_url && "" !== n.proxy_url ? n.proxy_url : n.url,
-        alt: null != (t = n.description) ? t : (0, b.Kj)(n.filename),
+        attachment: t,
+        className: n
+    } = e, l = (0, g.j)(), r = m.kt.useSetting();
+    return (0, i.jsx)(_.Ay, {
+        className: n,
+        imageClassName: b.Bw,
+        src: null != t.proxy_url && "" !== t.proxy_url ? t.proxy_url : t.url,
+        alt: t.description ?? (0, x.Kj)(t.filename),
         responsive: !0,
         width: 212,
         height: 212,
-        autoPlay: a,
+        autoPlay: r,
         shouldAnimate: l,
         shouldRenderAccessory: !1
     })
 }
 
-function D(e) {
+function P(e) {
     let {
         className: t,
         emoji: n
     } = e;
-    return (0, r.jsx)(d.A, {
+    return (0, i.jsx)(u.A, {
         className: t,
         emojiId: n.id,
         emojiName: n.name,
@@ -290,48 +242,45 @@ function D(e) {
     })
 }
 
-function L(e, t) {
-    return null != e ? (0, r.jsx)("div", {
+function M(e, t) {
+    return null != e ? (0, i.jsx)("div", {
         className: e,
         children: t
     }) : t
 }
 
-function M(e) {
+function w(e) {
     let {
         media: t,
         containerClassName: n,
-        attachmentClassName: i,
-        emojiClassName: l,
+        attachmentClassName: l,
+        emojiClassName: r,
         fallback: a
     } = e, {
         message: s
-    } = (0, A.y0)();
+    } = (0, C.y0)();
     if (null != t.attachmentIds && t.attachmentIds.length > 0) {
-        let e = s.attachments.find(e => {
-            var n;
-            return e.id === (null == (n = t.attachmentIds) ? void 0 : n[0])
-        });
-        if (null != e) return L(n, (0, r.jsx)(R, {
-            className: i,
+        let e = s.attachments.find(e => e.id === t.attachmentIds?.[0]);
+        if (null != e) return M(n, (0, i.jsx)(R, {
+            className: l,
             attachment: e
         }))
     }
-    return null != t.emoji ? L(n, (0, r.jsx)(D, {
-        className: l,
+    return null != t.emoji ? M(n, (0, i.jsx)(P, {
+        className: r,
         emoji: t.emoji
     })) : void 0 !== a ? a : null
 }
 
-function k(e) {
+function D(e) {
     let {
         isVictor: t,
         isExpired: n,
-        size: i,
-        className: l
+        size: l,
+        className: r
     } = e, {
         color: a,
-        backgroundColor: c
+        backgroundColor: d
     } = (0, s.YW)({
         isVictor: t,
         isExpired: n
@@ -351,55 +300,57 @@ function k(e) {
         color: o.A.unsafe_rawColors.BRAND_500.css,
         backgroundColor: o.A.unsafe_rawColors.WHITE.css
     }));
-    return (0, r.jsx)(u.yr3, {
+    return (0, i.jsx)(c.yr3, {
         size: "custom",
-        width: i,
-        height: i,
-        className: l,
+        width: l,
+        height: l,
+        className: r,
         color: a,
-        secondaryColor: c,
+        secondaryColor: d,
         "aria-hidden": !0
     })
 }
 
-function U(e) {
+function k(e) {
     let {
         isSelected: t,
         size: n,
-        className: i
-    } = e, l = {
+        className: l
+    } = e, r = {
         width: n,
         height: n,
-        background: x.So,
+        background: b.So,
         "aria-hidden": !0
     };
-    return t ? (0, r.jsx)(g.A, j(E({}, l), {
-        foreground: x.dY,
-        className: i
-    })) : (0, r.jsx)(f.A, j(E({}, l), {
-        className: i
-    }))
+    return t ? (0, i.jsx)(p.A, {
+        ...r,
+        foreground: b.dY,
+        className: l
+    }) : (0, i.jsx)(h.A, {
+        ...r,
+        className: l
+    })
 }
 
-function G(e) {
+function O(e) {
     let {
         isSelected: t,
         size: n,
-        className: i
-    } = e, l = .85 * n;
-    return (0, r.jsx)("div", {
-        className: a()(x.kv, {
-            [x.H7]: t
-        }, i),
+        className: l
+    } = e, r = .85 * n;
+    return (0, i.jsx)("div", {
+        className: a()(b.kv, {
+            [b.H7]: t
+        }, l),
         style: {
             width: n,
             height: n
         },
         "aria-hidden": !0,
-        children: t && (0, r.jsx)(u.A9s, {
+        children: t && (0, i.jsx)(c.A9s, {
             size: "custom",
-            width: l,
-            height: l,
+            width: r,
+            height: r,
             color: o.A.unsafe_rawColors.WHITE.css
         })
     })

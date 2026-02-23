@@ -1,111 +1,70 @@
-/** chunk id: 456947, original params: t,e,r (module,exports,require) **/
-r.d(e, {
-    default: () => p
+/** chunk id: 456947, original params: t,i,e (module,exports,require) **/
+e.d(i, {
+    default: () => x
 });
-var n = r(627968);
-r(64700);
-var o = r(158954),
-    c = r(397927),
-    i = r(985018),
-    l = r(212603),
-    s = r(973324);
-let a = t => {
+var n = e(627968);
+e(64700);
+var s = e(158954),
+    r = e(397927),
+    a = e(985018),
+    c = e(212603),
+    l = e(973324);
+let o = t => {
     let {
-        text: e,
-        icon: r,
-        foreground: o
+        text: i,
+        icon: e,
+        foreground: s
     } = t;
     return (0, n.jsxs)("div", {
-        className: l.OI,
+        className: c.OI,
         children: [(0, n.jsx)("div", {
-            className: l.zc,
-            children: (0, n.jsx)(r, {
-                color: null != o ? o : "currentColor",
-                className: l.kZ,
+            className: c.zc,
+            children: (0, n.jsx)(e, {
+                color: s ?? "currentColor",
+                className: c.kZ,
                 size: "custom",
                 height: 40,
                 width: 40
             })
-        }), (0, n.jsx)(c.Text, {
+        }), (0, n.jsx)(r.Text, {
             variant: "text-md/normal",
             color: "text-default",
-            className: l.Ct,
-            children: e
+            className: c.Ct,
+            children: i
         })]
     })
 };
 
-function p(t) {
-    var e, r;
+function x(t) {
     let {
-        transitionState: l,
-        onClose: p
-    } = t, u = function(t, e) {
-        if (null == t) return {};
-        var r, n, o, c = {};
-        if ("u" > typeof Reflect && Reflect.ownKeys) {
-            for (o = 0, r = Reflect.ownKeys(t); o < r.length; o++) n = r[o], !(e.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(t, n) && (c[n] = t[n]);
-            return c
-        }
-        if (c = function(t, e) {
-                if (null == t) return {};
-                var r, n, o = {},
-                    c = Object.getOwnPropertyNames(t);
-                for (n = 0; n < c.length; n++) r = c[n], !(e.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(t, r) && (o[r] = t[r]);
-                return o
-            }(t, e), Object.getOwnPropertySymbols)
-            for (o = 0, r = Object.getOwnPropertySymbols(t); o < r.length; o++) n = r[o], !(e.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(t, n) && (c[n] = t[n]);
-        return c
-    }(t, ["transitionState", "onClose"]);
-    return (0, n.jsxs)(o.ExpressiveModal, (e = function(t) {
-        for (var e = 1; e < arguments.length; e++) {
-            var r = null != arguments[e] ? arguments[e] : {},
-                n = Object.keys(r);
-            "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(t) {
-                return Object.getOwnPropertyDescriptor(r, t).enumerable
-            }))), n.forEach(function(e) {
-                var n;
-                n = r[e], e in t ? Object.defineProperty(t, e, {
-                    value: n,
-                    enumerable: !0,
-                    configurable: !0,
-                    writable: !0
-                }) : t[e] = n
-            })
-        }
-        return t
-    }({}, u), r = r = {
+        transitionState: i,
+        onClose: e,
+        ...c
+    } = t;
+    return (0, n.jsxs)(s.ExpressiveModal, {
+        ...c,
         graphic: {
             type: "image",
-            src: s.A
+            src: l.A
         },
-        title: i.intl.string(i.t.UVuXCs),
-        onClose: p,
-        transitionState: l,
+        title: a.intl.string(a.t.UVuXCs),
+        onClose: e,
+        transitionState: i,
         actions: [{
-            text: i.intl.string(i.t.obLqZ8),
+            text: a.intl.string(a.t.obLqZ8),
             variant: "primary",
-            onClick: p
+            onClick: e
         }],
-        children: [(0, n.jsx)(a, {
-            text: i.intl.string(i.t.sBDfo6),
-            icon: c.z0P,
+        children: [(0, n.jsx)(o, {
+            text: a.intl.string(a.t.sBDfo6),
+            icon: r.z0P,
             foreground: "var(--icon-feedback-critical)"
-        }), (0, n.jsx)(a, {
-            text: i.intl.string(i.t.x58YtH),
-            icon: c.zWQ
-        }), (0, n.jsx)(a, {
-            text: i.intl.string(i.t.XtVqla),
-            icon: c.E7M
+        }), (0, n.jsx)(o, {
+            text: a.intl.string(a.t.x58YtH),
+            icon: r.zWQ
+        }), (0, n.jsx)(o, {
+            text: a.intl.string(a.t.XtVqla),
+            icon: r.E7M
         })]
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : (function(t, e) {
-        var r = Object.keys(t);
-        if (Object.getOwnPropertySymbols) {
-            var n = Object.getOwnPropertySymbols(t);
-            r.push.apply(r, n)
-        }
-        return r
-    })(Object(r)).forEach(function(t) {
-        Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
-    }), e))
+    })
 }

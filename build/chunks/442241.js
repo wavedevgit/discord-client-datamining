@@ -1,99 +1,57 @@
-/** chunk id: 442241, original params: e,t,r (module,exports,require) **/
-r.d(t, {
-    default: () => p
-}), r(896048), r(228524);
-var n = r(627968),
-    o = r(64700),
-    a = r(158954),
-    c = r(397927),
-    i = r(49999),
-    l = r(985018),
-    s = r(216705);
+/** chunk id: 442241, original params: t,a,e (module,exports,require) **/
+e.d(a, {
+    default: () => c
+});
+var n = e(627968),
+    s = e(64700),
+    i = e(158954),
+    r = e(397927),
+    o = e(49999),
+    d = e(985018),
+    l = e(216705);
 
-function p(e) {
-    var t, r;
+function c(t) {
     let {
-        modalConfig: p,
-        markAsDismissed: f
-    } = e, u = function(e, t) {
-        if (null == e) return {};
-        var r, n, o, a = {};
-        if ("u" > typeof Reflect && Reflect.ownKeys) {
-            for (o = 0, r = Reflect.ownKeys(e); o < r.length; o++) n = r[o], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n]);
-            return a
-        }
-        if (a = function(e, t) {
-                if (null == e) return {};
-                var r, n, o = {},
-                    a = Object.getOwnPropertyNames(e);
-                for (n = 0; n < a.length; n++) r = a[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (o[r] = e[r]);
-                return o
-            }(e, t), Object.getOwnPropertySymbols)
-            for (o = 0, r = Object.getOwnPropertySymbols(e); o < r.length; o++) n = r[o], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n]);
-        return a
-    }(e, ["modalConfig", "markAsDismissed"]), y = o.useCallback(e => {
-        var t;
-        null == (t = p.onPrimaryClick) || t.call(p, e), f(i.i.TAKE_ACTION)
-    }, [p, f]), d = [p.firstHeader, p.secondHeader].filter(Boolean).join(" "), b = [{
+        modalConfig: a,
+        markAsDismissed: e,
+        ...c
+    } = t, h = s.useCallback(t => {
+        a.onPrimaryClick?.(t), e(o.i.TAKE_ACTION)
+    }, [a, e]), x = [a.firstHeader, a.secondHeader].filter(Boolean).join(" "), m = [{
         variant: "secondary",
-        text: l.intl.string(l.t["ETE/oC"]),
-        onClick: u.onClose
-    }, ...null != p.primaryButtonText ? [{
+        text: d.intl.string(d.t["ETE/oC"]),
+        onClick: c.onClose
+    }, ...null != a.primaryButtonText ? [{
         variant: "primary",
-        text: p.primaryButtonText,
-        onClick: y
+        text: a.primaryButtonText,
+        onClick: h
     }] : []];
-    return (0, n.jsx)(a.Modal, (t = function(e) {
-        for (var t = 1; t < arguments.length; t++) {
-            var r = null != arguments[t] ? arguments[t] : {},
-                n = Object.keys(r);
-            "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-                return Object.getOwnPropertyDescriptor(r, e).enumerable
-            }))), n.forEach(function(t) {
-                var n;
-                n = r[t], t in e ? Object.defineProperty(e, t, {
-                    value: n,
-                    enumerable: !0,
-                    configurable: !0,
-                    writable: !0
-                }) : e[t] = n
-            })
-        }
-        return e
-    }({}, u), r = r = {
-        title: d,
-        actions: b,
+    return (0, n.jsx)(i.Modal, {
+        ...c,
+        title: x,
+        actions: m,
         size: "md",
         children: (0, n.jsx)("div", {
-            className: s.kL,
+            className: l.kL,
             children: (0, n.jsxs)("div", {
-                className: s.hQ,
-                children: [(0, n.jsx)(c.Text, {
+                className: l.hQ,
+                children: [(0, n.jsx)(r.Text, {
                     tag: "span",
-                    className: s.h_,
+                    className: l.h_,
                     variant: "text-sm/normal",
-                    children: p.firstBody
-                }), (0, n.jsx)(c.Text, {
+                    children: a.firstBody
+                }), (0, n.jsx)(r.Text, {
                     tag: "span",
-                    className: s.h_,
+                    className: l.h_,
                     variant: "text-sm/normal",
-                    children: p.secondBody
-                }), (0, n.jsx)(c.Text, {
+                    children: a.secondBody
+                }), (0, n.jsx)(r.Text, {
                     tag: "span",
-                    className: s.h_,
+                    className: l.h_,
                     variant: "text-sm/normal",
-                    children: p.thirdBody
+                    children: a.thirdBody
                 })]
             })
         })
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
-        var r = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var n = Object.getOwnPropertySymbols(e);
-            r.push.apply(r, n)
-        }
-        return r
-    })(Object(r)).forEach(function(e) {
-        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
-    }), t))
+    })
 }

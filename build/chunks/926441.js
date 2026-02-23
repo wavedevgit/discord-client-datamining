@@ -1,59 +1,59 @@
 /** chunk id: 926441, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => y
-}), n(896048);
-var r = n(64700),
-    i = n(498419),
-    l = n.n(i),
+    A: () => T
+});
+var i = n(64700),
+    r = n(498419),
+    l = n.n(r),
     a = n(481613),
     s = n.n(a),
     o = n(311907),
-    c = n(800828),
-    u = n(912309),
-    d = n(458294),
-    p = n(803224),
+    d = n(800828),
+    c = n(912309),
+    u = n(458294),
+    A = n(803224),
     h = n(994500),
-    f = n(503509),
-    g = n(723702),
-    m = n(837921),
-    A = n(726249),
-    _ = n(652215),
-    b = n(985018);
-let E = new Set(["Blink", "Gecko", "WebKit"]),
-    O = _.tEg;
-if (g.isPlatformEmbedded) O = e => m.Ay.setBadge(e);
-else if (E.has(s().layout)) {
+    _ = n(503509),
+    m = n(723702),
+    p = n(837921),
+    g = n(726249),
+    E = n(652215),
+    I = n(985018);
+let f = new Set(["Blink", "Gecko", "WebKit"]),
+    C = E.tEg;
+if (m.isPlatformEmbedded) C = e => p.Ay.setBadge(e);
+else if (f.has(s().layout)) {
     let e = new(l())({
         animation: "none"
     });
-    O = t => {
+    C = t => {
         try {
-            (0, A.sF)(t), e.badge(-1 === t ? "•" : t)
+            (0, g.sF)(t), e.badge(-1 === t ? "•" : t)
         } catch (e) {}
     }
 }
 
-function y() {
-    let e = (0, o.bG)([f.A], () => f.A.hasIncomingCalls()),
-        t = (0, o.bG)([d.default, h.A, p.A, c.A], () => {
-            let e = d.default.getTotalMentionCount(),
-                t = (0, u.dH)([h.A, c.A]),
-                n = d.default.hasAnyUnread(),
-                r = p.A.getDisableUnreadBadge(),
-                i = e + t;
-            return 0 === i && n && !r && (i = -1), i
+function T() {
+    let e = (0, o.bG)([_.A], () => _.A.hasIncomingCalls()),
+        t = (0, o.bG)([u.default, h.A, A.A, d.A], () => {
+            let e = u.default.getTotalMentionCount(),
+                t = (0, c.dH)([h.A, d.A]),
+                n = u.default.hasAnyUnread(),
+                i = A.A.getDisableUnreadBadge(),
+                r = e + t;
+            return 0 === r && n && !i && (r = -1), r
         });
-    r.useEffect(() => {
+    i.useEffect(() => {
         if (!e) return;
-        let t = m.Ay.bounceDock("critical"),
-            n = (0, A.iA)({
-                messages: [b.intl.string(b.t["fk1/bX"])],
+        let t = p.Ay.bounceDock("critical"),
+            n = (0, g.iA)({
+                messages: [I.intl.string(I.t["fk1/bX"])],
                 count: 50
             });
         return () => {
-            null == t || t(), n()
+            t?.(), n()
         }
-    }, [e]), r.useEffect(() => {
-        O(t)
-    }, [t]), r.useEffect(() => () => O(0), [])
+    }, [e]), i.useEffect(() => {
+        C(t)
+    }, [t]), i.useEffect(() => () => C(0), [])
 }

@@ -1,160 +1,118 @@
 /** chunk id: 123653, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => b
-}), n(896048);
-var r = n(627968),
-    l = n(64700),
-    i = n(884362),
+    A: () => _
+});
+var l = n(627968),
+    i = n(64700),
+    s = n(884362),
     a = n(837381),
-    s = n(311907),
+    r = n(311907),
     o = n(397927),
-    c = n(775602),
-    d = n(422844),
+    d = n(775602),
+    c = n(422844),
     u = n(435470),
     m = n(853742),
     h = n(376310),
-    g = n(652215),
-    f = n(985018),
-    x = n(553017);
+    x = n(652215),
+    g = n(985018),
+    f = n(553017);
 
 function p() {
     return Promise.resolve()
 }
 
-function b(e) {
+function _(e) {
     let {
         channel: t,
         closePopout: n,
-        setPopoutRef: b
+        setPopoutRef: _
     } = e, j = (0, u.OT)(t), {
-        tagFilter: v
-    } = (0, d.R)(t.id), _ = (0, d.p)(), y = (0, s.bG)([c.A], () => c.A.keyboardModeEnabled), A = l.useCallback(e => {
+        tagFilter: b
+    } = (0, c.R)(t.id), v = (0, c.p)(), A = (0, r.bG)([d.A], () => d.A.keyboardModeEnabled), C = i.useCallback(e => {
         (0, m.UA)({
             guildId: t.guild_id,
             channelId: t.id,
             tagId: e,
-            filterTagIds: Array.from(v),
-            added: !v.has(e),
+            filterTagIds: Array.from(b),
+            added: !b.has(e),
             location: {
-                page: g.liQ.GUILD_CHANNEL,
-                section: g.JJy.FORUM_CHANNEL_HEADER,
-                object: g.ZSU.CHANNEL_TAG
+                page: x.liQ.GUILD_CHANNEL,
+                section: x.JJy.FORUM_CHANNEL_HEADER,
+                object: x.ZSU.CHANNEL_TAG
             }
-        }), _.getState().toggleTagFilter(t.id, e)
-    }, [t, v, _]), C = l.useCallback(() => {
-        _.getState().setTagFilter(t.id, new Set), y || n()
-    }, [_, t.id, y, n]), O = (0, i.Ay)({
-        id: "".concat(t.id, "-all-tags-dropdown-navigator"),
+        }), v.getState().toggleTagFilter(t.id, e)
+    }, [t, b, v]), T = i.useCallback(() => {
+        v.getState().setTagFilter(t.id, new Set), A || n()
+    }, [v, t.id, A, n]), N = (0, s.Ay)({
+        id: `${t.id}-all-tags-dropdown-navigator`,
         isEnabled: !0,
         wrap: !0,
         scrollToStart: p,
         scrollToEnd: p
-    }), T = l.useRef(null);
-    return l.useEffect(() => {
+    }), S = i.useRef(null);
+    return i.useEffect(() => {
         requestAnimationFrame(() => {
-            if (null != T.current) {
-                let e = T.current.querySelector(".".concat(x.Tc));
+            if (null != S.current) {
+                let e = S.current.querySelector(`.${f.Tc}`);
                 null != e && e.focus()
             }
         })
-    }, []), (0, r.jsxs)(o.lGe, {
+    }, []), (0, l.jsxs)(o.lGe, {
         ref: e => {
-            null == b || b(e)
+            _?.(e)
         },
-        "aria-label": f.intl.string(f.t.TdqRTh),
-        className: x.kL,
-        children: [(0, r.jsx)("div", {
-            className: x.wx,
-            children: (0, r.jsxs)("div", {
-                className: x.LD,
-                children: [(0, r.jsx)(o.Heading, {
+        "aria-label": g.intl.string(g.t.TdqRTh),
+        className: f.kL,
+        children: [(0, l.jsx)("div", {
+            className: f.wx,
+            children: (0, l.jsxs)("div", {
+                className: f.LD,
+                children: [(0, l.jsx)(o.Heading, {
                     color: "interactive-text-default",
                     variant: "heading-md/semibold",
-                    className: x.TK,
-                    children: f.intl.string(f.t.HPu3kq)
-                }), (0, r.jsx)("div", {
-                    className: x.d1,
-                    children: (0, r.jsx)(o.Text, {
-                        className: x.lT,
+                    className: f.TK,
+                    children: g.intl.string(g.t.HPu3kq)
+                }), (0, l.jsx)("div", {
+                    className: f.d1,
+                    children: (0, l.jsx)(o.Text, {
+                        className: f.lT,
                         color: "none",
                         variant: "text-xs/medium",
                         tabularNumbers: !0,
-                        children: v.size
+                        children: b.size
                     })
                 })]
             })
-        }), (0, r.jsx)(a.hD, {
-            navigator: O,
-            children: (0, r.jsx)(a.PR, {
+        }), (0, l.jsx)(a.hD, {
+            navigator: N,
+            children: (0, l.jsx)(a.PR, {
                 children: e => {
-                    var t, n;
                     let {
-                        ref: l
-                    } = e, i = function(e, t) {
-                        if (null == e) return {};
-                        var n, r, l, i = {};
-                        if ("u" > typeof Reflect && Reflect.ownKeys) {
-                            for (l = 0, n = Reflect.ownKeys(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
-                            return i
-                        }
-                        if (i = function(e, t) {
-                                if (null == e) return {};
-                                var n, r, l = {},
-                                    i = Object.getOwnPropertyNames(e);
-                                for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n]);
-                                return l
-                            }(e, t), Object.getOwnPropertySymbols)
-                            for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
-                        return i
-                    }(e, ["ref"]);
-                    return (0, r.jsx)("div", (t = function(e) {
-                        for (var t = 1; t < arguments.length; t++) {
-                            var n = null != arguments[t] ? arguments[t] : {},
-                                r = Object.keys(n);
-                            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                                return Object.getOwnPropertyDescriptor(n, e).enumerable
-                            }))), r.forEach(function(t) {
-                                var r;
-                                r = n[t], t in e ? Object.defineProperty(e, t, {
-                                    value: r,
-                                    enumerable: !0,
-                                    configurable: !0,
-                                    writable: !0
-                                }) : e[t] = r
-                            })
-                        }
-                        return e
-                    }({
+                        ref: t,
+                        ...n
+                    } = e;
+                    return (0, l.jsx)("div", {
                         ref: e => {
-                            l.current = e, T.current = e
-                        }
-                    }, i), n = n = {
-                        className: x.I8,
-                        children: j.map(e => (0, r.jsx)(h.A, {
-                            className: x.Tc,
+                            t.current = e, S.current = e
+                        },
+                        ...n,
+                        className: f.I8,
+                        children: j.map(e => (0, l.jsx)(h.A, {
+                            className: f.Tc,
                             tag: e,
-                            selected: v.has(e.id),
-                            onClick: () => A(e.id)
+                            selected: b.has(e.id),
+                            onClick: () => C(e.id)
                         }, e.id))
-                    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
-                        var n = Object.keys(e);
-                        if (Object.getOwnPropertySymbols) {
-                            var r = Object.getOwnPropertySymbols(e);
-                            n.push.apply(n, r)
-                        }
-                        return n
-                    })(Object(n)).forEach(function(e) {
-                        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-                    }), t))
+                    })
                 }
             })
-        }), (0, r.jsx)("div", {
-            className: x.me
-        }), (0, r.jsx)(o.QWc, {
-            "aria-label": f.intl.string(f.t["98EPQP"]),
-            onClick: C,
-            text: f.intl.string(f.t["98EPQP"])
+        }), (0, l.jsx)("div", {
+            className: f.me
+        }), (0, l.jsx)(o.QWc, {
+            "aria-label": g.intl.string(g.t["98EPQP"]),
+            onClick: T,
+            text: g.intl.string(g.t["98EPQP"])
         })]
     })
 }

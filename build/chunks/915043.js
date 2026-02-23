@@ -1,79 +1,78 @@
-/** chunk id: 915043, original params: t,e,n (module,exports,require) **/
-n.d(e, {
-    $s: () => m,
-    CZ: () => I,
-    E: () => v,
-    GD: () => h,
-    Ko: () => y,
-    W_: () => P,
-    mJ: () => g,
-    sD: () => E,
-    wm: () => N
-}), n(321073), n(896048), n(492834), n(938796);
-var l, r = n(64700),
-    i = n(311907),
-    u = n(339048),
-    o = n(71393),
-    s = n(576705),
-    a = n(97352),
-    c = n(166403),
-    d = n(67480),
-    p = n(324050),
-    f = n(143582),
-    S = n(337095),
-    A = n(607940),
-    b = n(163437),
-    O = n(652215),
-    g = ((l = {})[l.NOT_LOADED = 0] = "NOT_LOADED", l[l.LOADING = 1] = "LOADING", l[l.LOADED = 2] = "LOADED", l[l.ERROR = 3] = "ERROR", l);
-let I = t => {
+/** chunk id: 915043, original params: t,e,i (module,exports,require) **/
+i.d(e, {
+    $s: () => C,
+    CZ: () => f,
+    E: () => N,
+    GD: () => m,
+    Ko: () => L,
+    W_: () => g,
+    mJ: () => E,
+    sD: () => h,
+    wm: () => F
+}), i(321073), i(938796);
+var n, l = i(64700),
+    s = i(311907),
+    r = i(339048),
+    a = i(71393),
+    u = i(576705),
+    o = i(97352),
+    c = i(166403),
+    d = i(67480),
+    p = i(324050),
+    S = i(143582),
+    I = i(337095),
+    A = i(607940),
+    _ = i(163437),
+    T = i(652215),
+    E = ((n = {})[n.NOT_LOADED = 0] = "NOT_LOADED", n[n.LOADING = 1] = "LOADING", n[n.LOADED = 2] = "LOADED", n[n.ERROR = 3] = "ERROR", n);
+let f = t => {
     let {
         guildId: e,
-        canFetch: n = !0,
-        forceRefetch: l = !1
-    } = t, u = (0, i.bG)([A.A], () => null != e ? A.A.getEntitlementsForGuildFetchState(e) : null, [e]);
-    return r.useEffect(() => {
-        if (null == e || e === O.ME) return;
+        canFetch: i = !0,
+        forceRefetch: n = !1
+    } = t, r = (0, s.bG)([A.A], () => null != e ? A.A.getEntitlementsForGuildFetchState(e) : null, [e]);
+    return l.useEffect(() => {
+        if (null == e || e === T.ME) return;
         let t = A.A.getEntitlementsForGuildFetchState(e);
-        n && (t === A.e.NOT_FETCHED || l) && (0, f.f5)(e)
-    }, [e, n, l]), {
-        entitlementsLoaded: u === A.e.FETCHED
+        i && (t === A.e.NOT_FETCHED || n) && (0, S.f5)(e)
+    }, [e, i, n]), {
+        entitlementsLoaded: r === A.e.FETCHED
     }
 };
 
-function m(t) {
-    var e;
-    let n = null != (e = null == t ? void 0 : t.id) ? e : O.dJq,
+function C(t) {
+    let e = t?.id ?? T.dJq,
         {
-            entitlementsLoaded: l
-        } = I({
-            guildId: n,
-            canFetch: (0, i.bG)([s.A], () => s.A.can(O.xBc.ADMINISTRATOR, t))
+            entitlementsLoaded: i
+        } = f({
+            guildId: e,
+            canFetch: (0, s.bG)([u.A], () => u.A.can(T.xBc.ADMINISTRATOR, t))
         }),
-        u = (0, i.bG)([p.A], () => p.A.getLastGuildDismissedTime(n)),
-        o = (0, i.yK)([A.A], () => {
-            let t = A.A.getEntitlementsForGuild(n),
-                e = A.A.getEntitlementsForGuild(n, !1),
-                l = t.map(t => t.applicationId);
-            return e.filter(t => !l.includes(t.applicationId))
+        n = (0, s.bG)([p.A], () => p.A.getLastGuildDismissedTime(e)),
+        r = (0, s.yK)([A.A], () => {
+            let t = A.A.getEntitlementsForGuild(e),
+                i = A.A.getEntitlementsForGuild(e, !1),
+                n = t.map(t => t.applicationId);
+            return i.filter(t => !n.includes(t.applicationId))
         }),
-        a = (0, i.cf)([d.A], () => d.A.getSKUs()),
-        c = r.useMemo(() => o.filter(t => {
+        a = (0, s.cf)([d.A], () => d.A.getSKUs()),
+        o = l.useMemo(() => r.filter(t => {
             let e = a[t.skuId];
             return null != e && e.available
-        }), [o, a]);
-    return l ? c.filter(t => null != t.endsAt && t.endsAt.getTime() > Math.max(null != u ? u : 0, Date.now() - 2592e6)) : []
+        }), [r, a]);
+    return i ? o.filter(t => null != t.endsAt && t.endsAt.getTime() > Math.max(n ?? 0, Date.now() - 2592e6)) : []
 }
-let v = () => {
-    let [t, e] = r.useState(0);
-    return r.useEffect(() => {
-        e(1), Promise.all([(0, u.qw)({
+let N = () => {
+    let [t, e] = l.useState(0);
+    return l.useEffect(() => {
+        e(1), Promise.all([(0, r.qw)({
             withSku: !0,
             withApplication: !0,
-            entitlementType: O.zF_.APPLICATION_SUBSCRIPTION
-        }), (0, u.qw)({
+            entitlementType: T.zF_.APPLICATION_SUBSCRIPTION
+        }), (0, r.qw)({
             withSku: !0,
             withApplication: !0,
-            entitlementType: O.zF_.PURCHASE
+            entitlementType: T.zF_.PURCHASE
         })]).catch(() => {
             e(3)
         }).then(() => {
@@ -84,64 +83,60 @@ let v = () => {
     }
 };
 
-function E(t, e) {
-    let n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2],
-        [l, u] = r.useState([]),
-        [s, a] = r.useState(!1);
-    return r.useLayoutEffect(() => {
-        null != t && n && (a(!0), (0, S.L5)(t, e).then(u).finally(() => {
-            a(!1)
+function h(t, e) {
+    let i = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2],
+        [n, r] = l.useState([]),
+        [u, o] = l.useState(!1);
+    return l.useLayoutEffect(() => {
+        null != t && i && (o(!0), (0, I.L5)(t, e).then(r).finally(() => {
+            o(!1)
         }))
-    }, [t, e, n]), {
-        guilds: (0, i.yK)([o.A], () => l.map(t => o.A.getGuild(t)).filter(t => null != t), [l]),
-        isFetching: s
+    }, [t, e, i]), {
+        guilds: (0, s.yK)([a.A], () => n.map(t => a.A.getGuild(t)).filter(t => null != t), [n]),
+        isFetching: u
     }
 }
-let P = t => t.items;
+let g = t => t.items;
 
-function h(t, e) {
-    return _(t, e, P)
+function m(t, e) {
+    return O(t, e, g)
 }
-let T = t => {
-    var e, n;
-    return null != (e = null == (n = t.renewalMutations) ? void 0 : n.items) ? e : []
-};
+let P = t => t.renewalMutations?.items ?? [];
 
-function y(t, e) {
-    return _(t, e, T)
+function L(t, e) {
+    return O(t, e, P)
 }
 
-function _(t, e, n) {
-    let [l, u] = (0, i.yK)([c.A, a.A], () => null == t ? [] : N({
+function O(t, e, i) {
+    let [n, r] = (0, s.yK)([c.A, o.A], () => null == t ? [] : F({
         groupSku: t,
         SubscriptionStore: c.A,
-        SubscriptionPlanStore: a.A,
-        mapSubscriptionItems: n,
+        SubscriptionPlanStore: o.A,
+        mapSubscriptionItems: i,
         guildId: e
-    }), [t, n, e]);
-    return r.useMemo(() => {
-        if (null != l && null != u) return {
-            subscription: l,
-            subscriptionPlan: u
+    }), [t, i, e]);
+    return l.useMemo(() => {
+        if (null != n && null != r) return {
+            subscription: n,
+            subscriptionPlan: r
         }
-    }, [l, u])
+    }, [n, r])
 }
 
-function N(t) {
-    var e, n;
+function F(t) {
     let {
-        groupSku: l,
-        SubscriptionStore: r,
-        SubscriptionPlanStore: i,
-        mapSubscriptionItems: u,
-        guildId: o
+        groupSku: e,
+        SubscriptionStore: i,
+        SubscriptionPlanStore: n,
+        mapSubscriptionItems: l,
+        guildId: s
     } = t, {
-        bundledSkuIds: s,
+        bundledSkuIds: r,
         flags: a
-    } = l;
-    for (let t of null != (e = r.getActiveApplicationSubscriptions()) ? e : []) {
-        if ((0, b.PJ)(a) && null != o && (null == (n = t.metadata) ? void 0 : n.application_subscription_guild_id) !== o) continue;
-        let e = u(t).map(t => i.get(t.planId)).find(t => null != t && s.includes(t.skuId));
+    } = e;
+    for (let t of i.getActiveApplicationSubscriptions() ?? []) {
+        if ((0, _.PJ)(a) && null != s && t.metadata?.application_subscription_guild_id !== s) continue;
+        let e = l(t).map(t => n.get(t.planId)).find(t => null != t && r.includes(t.skuId));
         if (null != e) return [t, e]
     }
     return []

@@ -1,28 +1,28 @@
 /** chunk id: 29570, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => i
-}), n(896048);
-var r = n(64700);
-let i = function() {
+    A: () => s
+});
+var i = n(64700);
+let s = function() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 5,
-        [t, n] = r.useState(!1),
-        [i, l] = r.useState(0),
-        [s, a] = r.useState(!1),
-        [o, c] = r.useState(0);
-    return r.useEffect(() => {
-        i >= e && (a(!0), c(Math.floor(i / e)));
+        [t, n] = i.useState(!1),
+        [s, a] = i.useState(0),
+        [r, l] = i.useState(!1),
+        [o, c] = i.useState(0);
+    return i.useEffect(() => {
+        s >= e && (l(!0), c(Math.floor(s / e)));
         let t = setTimeout(() => {
-            l(0)
+            a(0)
         }, 1e3);
         return () => clearTimeout(t)
-    }, [i, e]), r.useEffect(() => {
+    }, [s, e]), i.useEffect(() => {
         if (!t) {
             let e = setTimeout(() => {
-                a(!1), c(0)
+                l(!1), c(0)
             }, 1e3);
             return () => clearTimeout(e)
         }
-        l(e => e + 1)
+        a(e => e + 1)
     }, [t]), {
         onHover: () => {
             n(!0)
@@ -30,7 +30,7 @@ let i = function() {
         onUnhover: () => {
             n(!1)
         },
-        isEasterEggTriggered: s,
+        isEasterEggTriggered: r,
         easterEggLevel: o
     }
 }

@@ -1,44 +1,44 @@
-/** chunk id: 212168, original params: e,n,t (module,exports,require) **/
-t.d(n, {
-    A: () => s,
-    i: () => u
+/** chunk id: 212168, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    A: () => c,
+    i: () => d
 });
-var r, i = t(627968),
-    l = t(64700),
-    a = t(503698),
-    d = t.n(a),
-    c = t(446958),
-    u = ((r = {}).PREMIUM = "premium", r.LIMITED = "limited", r);
-let o = {
+var i, r = n(627968),
+    a = n(64700),
+    s = n(503698),
+    l = n.n(s),
+    o = n(446958),
+    d = ((i = {}).PREMIUM = "premium", i.LIMITED = "limited", i);
+let _ = {
         premium: {
-            border: c.wU,
-            background: c.gI
+            border: o.wU,
+            background: o.gI
         },
         limited: {
-            border: c.rY,
-            background: c.pm
+            border: o.rY,
+            background: o.pm
         }
     },
-    s = l.forwardRef(function(e, n) {
+    c = a.forwardRef(function(e, t) {
         let {
-            children: t,
-            type: r = "premium",
-            isShown: l,
-            hasBackground: a = !1,
-            className: u,
-            backgroundClassName: s
+            children: n,
+            type: i = "premium",
+            isShown: a,
+            hasBackground: s = !1,
+            className: d,
+            backgroundClassName: c
         } = e;
-        if (!l) return t;
+        if (!a) return n;
         let {
-            border: f,
-            background: h
-        } = o[r];
-        return (0, i.jsx)("div", {
-            ref: n,
-            className: d()(f, u),
-            children: (0, i.jsx)("div", {
-                className: d()(a ? h : c.Tp, s),
-                children: t
+            border: u,
+            background: A
+        } = _[i];
+        return (0, r.jsx)("div", {
+            ref: t,
+            className: l()(u, d),
+            children: (0, r.jsx)("div", {
+                className: l()(s ? A : o.Tp, c),
+                children: n
             })
         })
     })

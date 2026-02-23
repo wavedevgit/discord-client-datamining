@@ -1,52 +1,46 @@
 /** chunk id: 697627, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => p,
-    e: () => u
-}), n(896048);
-var r, i, l, a = n(311907),
-    s = n(73153);
-let o = new Map,
-    c = new Map;
-var u = ((i = {})[i.NOT_FETCHED = 0] = "NOT_FETCHED", i[i.FETCHING = 1] = "FETCHING", i[i.FETCHED = 2] = "FETCHED", i);
-class d extends(r = a.Ay.Store) {
+    A: () => c,
+    e: () => o
+});
+var i, l = n(311907),
+    r = n(73153);
+let a = new Map,
+    s = new Map;
+var o = ((i = {})[i.NOT_FETCHED = 0] = "NOT_FETCHED", i[i.FETCHING = 1] = "FETCHING", i[i.FETCHED = 2] = "FETCHED", i);
+class d extends l.Ay.Store {
+    static displayName = "CreatorMonetizationStore";
     getPriceTiersFetchStateForGuildAndType(e, t) {
-        var n, r;
-        return null != (n = null == (r = c.get(e)) ? void 0 : r.get(t)) ? n : 0
+        return s.get(e)?.get(t) ?? 0
     }
     getPriceTiersForGuildAndType(e, t) {
-        var n;
-        return null == (n = o.get(e)) ? void 0 : n.get(t)
+        return a.get(e)?.get(t)
     }
-}(l = "displayName") in d ? Object.defineProperty(d, l, {
-    value: "CreatorMonetizationStore",
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
-}) : d[l] = "CreatorMonetizationStore";
-let p = new d(s.h, {
+}
+let c = new d(r.h, {
     CONNECTION_OPEN: function() {
-        o.clear(), c.clear()
+        a.clear(), s.clear()
     },
     CREATOR_MONETIZATION_PRICE_TIERS_FETCH: function(e) {
         let {
             guildId: t,
             priceTierType: n
         } = e;
-        c.has(t) || c.set(t, new Map), c.get(t).set(n, 1)
+        s.has(t) || s.set(t, new Map), s.get(t).set(n, 1)
     },
     CREATOR_MONETIZATION_PRICE_TIERS_FETCH_SUCCESS: function(e) {
         let {
             guildId: t,
             priceTierType: n,
-            priceTiers: r
+            priceTiers: i
         } = e;
-        c.has(t) || c.set(t, new Map), c.get(t).set(n, 2), o.has(t) || o.set(t, new Map), o.get(t).set(n, r)
+        s.has(t) || s.set(t, new Map), s.get(t).set(n, 2), a.has(t) || a.set(t, new Map), a.get(t).set(n, i)
     },
     CREATOR_MONETIZATION_PRICE_TIERS_FETCH_FAILURE: function(e) {
         let {
             guildId: t,
             priceTierType: n
         } = e;
-        c.has(t) || c.set(t, new Map), c.get(t).set(n, 2)
+        s.has(t) || s.set(t, new Map), s.get(t).set(n, 2)
     }
 })

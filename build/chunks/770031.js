@@ -1,8 +1,8 @@
 /** chunk id: 770031, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => r
+    A: () => i
 });
-let r = (0, n(945810).mj)({
+let i = (0, n(945810).mj)({
     name: "2026-01-bug-reporter",
     kind: "user",
     defaultConfig: {

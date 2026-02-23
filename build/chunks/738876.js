@@ -1,51 +1,52 @@
 /** chunk id: 738876, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => j
-}), n(896048);
-var r = n(627968),
-    l = n(64700),
-    i = n(311907),
-    s = n(323073),
+    A: () => E
+});
+var i = n(627968),
+    s = n(64700),
+    l = n(311907),
+    r = n(323073),
     a = n(861382),
     o = n(47167),
     c = n(31717),
-    u = n(834942),
-    d = n(186111),
-    p = n(576705),
-    h = n(994500),
-    g = n(287809),
-    f = n(203982),
+    d = n(834942),
+    u = n(186111),
+    h = n(576705),
+    A = n(994500),
+    p = n(287809),
+    g = n(203982),
     m = n(518960),
-    b = n(65593),
-    A = n(698638),
-    y = n(652215),
-    O = n(985018);
-let j = function(e) {
+    _ = n(65593),
+    f = n(698638),
+    x = n(652215),
+    C = n(985018);
+let E = function(e) {
     let {
         className: t,
         style: n,
-        channel: j,
-        draftType: x
-    } = e, [_, v] = l.useState(!0), E = (0, i.bG)([d.A], () => d.A.hasLayers()), C = (0, i.bG)([p.A], () => null != j && p.A.can(y.xBc.ATTACH_FILES, j), [j]), S = null != (0, i.bG)([a.A], () => a.A.getActiveCommand(j.id)), I = j.getGuildId(), N = x === c.C.FirstThreadMessage, T = (0, s.vL)(j), P = l.useMemo(() => !E && (j.isPrivate() && !j.isManaged() || null != I && !T && C && u.A.canChatInGuild(I)), [C, T, j, I, E]), w = N ? y.kvI.GUILD_THREADS_ONLY.has(j.type) ? O.intl.string(O.t.RBBLhL) : O.intl.string(O.t.gUx4eu) : _ ? O.intl.format(O.t.dYP2Fc, {
-        destination: (0, o.m1)(j, g.default, h.A, !0)
-    }) : O.intl.string(O.t.h76ulG);
-    return S || !P ? null : (0, r.jsx)(b.A, {
+        channel: E,
+        draftType: I
+    } = e, [b, N] = s.useState(!0), S = (0, l.bG)([u.A], () => u.A.hasLayers()), T = (0, l.bG)([h.A], () => null != E && h.A.can(x.xBc.ATTACH_FILES, E), [E]), y = null != (0, l.bG)([a.A], () => a.A.getActiveCommand(E.id)), v = E.getGuildId(), j = I === c.C.FirstThreadMessage, R = (0, r.vL)(E), O = s.useMemo(() => !S && (E.isPrivate() && !E.isManaged() || null != v && !R && T && d.A.canChatInGuild(v)), [T, R, E, v, S]), L = j ? x.kvI.GUILD_THREADS_ONLY.has(E.type) ? C.intl.string(C.t.RBBLhL) : C.intl.string(C.t.gUx4eu) : b ? C.intl.format(C.t.dYP2Fc, {
+        destination: (0, o.m1)(E, p.default, A.A, !0)
+    }) : C.intl.string(C.t.h76ulG);
+    return y || !O ? null : (0, i.jsx)(_.A, {
         className: t,
         style: n,
-        title: w,
-        description: N ? O.intl.string(O.t.lpgkzq) : O.intl.string(O.t.usQh4J),
-        icons: A.ir,
+        title: L,
+        description: j ? C.intl.string(C.t.lpgkzq) : C.intl.string(C.t.usQh4J),
+        icons: f.ir,
         onDrop: e => {
-            if (S) return !1;
-            P && null != j && ((0, m.R)(e, j, x, {
-                requireConfirm: _,
+            if (y) return !1;
+            O && null != E && ((0, m.R)(e, E, I, {
+                requireConfirm: b,
                 origin: "drag_drop"
-            }), f._.dispatchToLastSubscribed(y.jej.TEXTAREA_FOCUS))
+            }), g._.dispatchToLastSubscribed(x.jej.TEXTAREA_FOCUS))
         },
-        onDragClear: () => v(!0),
+        onDragClear: () => N(!0),
         onDragOver: e => {
-            if (S) return !1;
-            N || e.shiftKey !== _ || v(!e.shiftKey)
+            if (y) return !1;
+            j || e.shiftKey !== b || N(!e.shiftKey)
         }
     })
 }

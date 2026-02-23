@@ -1,28 +1,27 @@
 /** chunk id: 662074, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => u
 });
-var r = n(627968),
-    i = n(64700),
+var i = n(627968),
+    r = n(64700),
     l = n(397927),
     a = n(115884),
-    s = n(664531),
-    o = n(120006),
-    c = n(985018),
-    u = n(97276);
+    s = n(120006),
+    o = n(985018),
+    d = n(97276);
 
-function d() {
-    return (0, r.jsxs)("header", {
-        className: u.wx,
-        children: [(0, r.jsx)(l.Heading, {
+function c() {
+    return (0, i.jsxs)("header", {
+        className: d.wx,
+        children: [(0, i.jsx)(l.Heading, {
             variant: "heading-lg/semibold",
-            className: u.DD,
-            children: c.intl.string(c.t.w5uwoI)
-        }), (0, r.jsx)(a.A, {})]
+            className: d.DD,
+            children: o.intl.string(o.t.w5uwoI)
+        }), (0, i.jsx)(a.A, {})]
     })
 }
-let p = function() {
-    return (0, r.jsxs)(i.Fragment, {
-        children: [(0, r.jsx)(d, {}), (0, s.a)() && (0, r.jsx)(o.A, {})]
+let u = function() {
+    return (0, i.jsxs)(r.Fragment, {
+        children: [(0, i.jsx)(c, {}), (0, i.jsx)(s.A, {})]
     })
 }

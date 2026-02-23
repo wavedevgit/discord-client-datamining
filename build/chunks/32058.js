@@ -1,35 +1,35 @@
-/** chunk id: 32058, original params: e,t,n (module,exports,require) **/
+/** chunk id: 32058, original params: e,t,l (module,exports,require) **/
 "use strict";
-n.d(t, {
-    e: () => u
+l.d(t, {
+    e: () => c
 });
-var r = n(627968);
-n(64700);
-var i = n(503698),
-    a = n.n(i),
-    o = n(397927),
-    s = n(985018),
-    l = n(825057),
-    c = n(997168);
-let u = e => {
+var r = l(627968);
+l(64700);
+var a = l(503698),
+    n = l.n(a),
+    i = l(397927),
+    s = l(985018),
+    o = l(825057),
+    d = l(997168);
+let c = e => {
     let {
         children: t,
-        footer: n,
-        className: i
+        footer: l,
+        className: a
     } = e;
     return (0, r.jsx)("div", {
-        className: a()(c.zr, c.Gg, c.EX, c.vl, l.yl, i),
+        className: n()(d.zr, d.Gg, d.EX, d.vl, o.yl, a),
         "aria-label": s.intl.string(s.t.eQ2bLp),
         children: (0, r.jsxs)("form", {
-            className: l.Zd,
+            className: o.Zd,
             onSubmit: e => {
                 e.preventDefault()
             },
-            children: [(0, r.jsx)(o.$mQ, {
+            children: [(0, r.jsx)(i.$mQ, {
                 "data-migration-pending": !0,
-                className: l.gT,
+                className: o.gT,
                 children: t
-            }), n]
+            }), l]
         })
     })
 }

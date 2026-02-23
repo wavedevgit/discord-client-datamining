@@ -1,55 +1,54 @@
-/** chunk id: 366334, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    A: () => d
-}), n(228524);
-var r = n(627968);
-n(64700);
-var i = n(503698),
-    a = n.n(i),
-    o = n(397927),
-    s = n(659612),
-    l = n(898612),
-    c = n(232492),
-    u = n(53605);
+/** chunk id: 366334, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    A: () => u
+});
+var l = i(627968);
+i(64700);
+var n = i(503698),
+    a = i.n(n),
+    s = i(397927),
+    r = i(659612),
+    c = i(898612),
+    d = i(232492),
+    o = i(53605);
 
-function d(e) {
+function u(e) {
     let {
         benefit: t,
-        guildId: n
-    } = e, i = (0, c.A)(n, t.ref_id), d = (0, r.jsx)(s.A, {
-        guildId: n,
+        guildId: i
+    } = e, n = (0, d.A)(i, t.ref_id), u = (0, l.jsx)(r.A, {
+        guildId: i,
         emojiId: t.emoji_id,
         emojiName: t.emoji_name
-    }), f = null != i ? (0, r.jsx)(o.DUT, {
-        className: u.__invalid_channelLink,
-        onClick: i.navigateToChannel,
-        "aria-label": i.ariaLabel,
+    }), m = null != n ? (0, l.jsx)(s.DUT, {
+        className: o.__invalid_channelLink,
+        onClick: n.navigateToChannel,
+        "aria-label": n.ariaLabel,
         role: "link",
-        children: (0, r.jsx)(o.Text, {
+        children: (0, l.jsx)(s.Text, {
             variant: "text-md/medium",
             color: "text-strong",
-            className: a()(u.UU, u.F$),
-            children: (0, l.A)(t)
+            className: a()(o.UU, o.F$),
+            children: (0, c.A)(t)
         })
-    }) : (0, r.jsx)(o.Text, {
+    }) : (0, l.jsx)(s.Text, {
         variant: "text-md/medium",
         color: "text-strong",
-        className: u.UU,
-        children: (0, l.A)(t)
+        className: o.UU,
+        children: (0, c.A)(t)
     });
-    return (0, r.jsxs)("div", {
-        className: u.kL,
-        children: [(0, r.jsxs)("div", {
-            className: u.op,
-            children: [f, (0, r.jsx)(o.Text, {
+    return (0, l.jsxs)("div", {
+        className: o.kL,
+        children: [(0, l.jsxs)("div", {
+            className: o.op,
+            children: [m, (0, l.jsx)(s.Text, {
                 color: "interactive-text-default",
                 variant: "text-sm/normal",
                 children: t.description
             })]
-        }), (0, r.jsx)("div", {
-            className: u.qq,
-            children: d
+        }), (0, l.jsx)("div", {
+            className: o.qq,
+            children: u
         })]
     })
 }

@@ -1,14 +1,15 @@
 /** chunk id: 628325, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    S: () => i
+    S: () => l
 });
-var r = n(353640),
-    l = n(121894);
-let i = (0, r.v)((e, t) => ({
+var i = n(353640),
+    s = n(121894);
+let l = (0, i.v)((e, t) => ({
     hasNoUnreads: !1,
     shouldHide: () => !t().hasNoUnreads,
     setInboxReadState: n => {
-        n !== t().hasNoUnreads && (0, l.r)(() => {
+        n !== t().hasNoUnreads && (0, s.r)(() => {
             e({
                 hasNoUnreads: n
             })

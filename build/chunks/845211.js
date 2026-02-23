@@ -1,47 +1,48 @@
 /** chunk id: 845211, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => h
+    A: () => A
 }), n(667532);
-var r = n(627968),
-    l = n(64700),
-    i = n(311907),
-    s = n(73939),
+var i = n(627968),
+    s = n(64700),
+    l = n(311907),
+    r = n(73939),
     a = n(397927),
     o = n(734057),
     c = n(131677),
-    u = n(383501),
-    d = n(50400),
-    p = n(985018);
+    d = n(383501),
+    u = n(50400),
+    h = n(985018);
 
-function h() {
-    (0, i.bG)([o.A], () => o.A.getPrivateChannelsVersion());
+function A() {
+    (0, l.bG)([o.A], () => o.A.getPrivateChannelsVersion());
     let e = o.A.getMutablePrivateChannels(),
-        t = (0, i.yK)([c.A], () => c.A.getUnreadPrivateChannelIds()),
+        t = (0, l.yK)([c.A], () => c.A.getUnreadPrivateChannelIds()),
         {
             selectedVoiceGuildId: n,
-            selectedVoiceChannelId: h
-        } = (0, i.cf)([u.A], () => ({
-            selectedVoiceGuildId: u.A.getGuildId(),
-            selectedVoiceChannelId: u.A.getChannelId()
+            selectedVoiceChannelId: A
+        } = (0, l.cf)([d.A], () => ({
+            selectedVoiceGuildId: d.A.getGuildId(),
+            selectedVoiceChannelId: d.A.getChannelId()
         })),
-        g = t.map(t => {
+        p = t.map(t => {
             let n = e[t];
-            return null == n || n.id === h ? null : (0, r.jsx)(d.A, {
+            return null == n || n.id === A ? null : (0, i.jsx)(u.A, {
                 channel: n
             }, n.id)
         }),
-        f = null == n && null != h ? e[h] : null;
-    return null != f && g.unshift((0, r.jsx)(d.A, {
-        channel: f
-    }, f.id)), (0, r.jsx)(a.BJc, {
+        g = null == n && null != A ? e[A] : null;
+    return null != g && p.unshift((0, i.jsx)(u.A, {
+        channel: g
+    }, g.id)), (0, i.jsx)(a.BJc, {
         id: "guild-list-unread-dms",
         role: "group",
-        "aria-label": p.intl.string(p.t.YUU0RF),
+        "aria-label": h.intl.string(h.t.YUU0RF),
         gap: "xs",
-        hidden: g.length < 1,
-        children: (0, r.jsx)(s.F, {
-            component: l.Fragment,
-            children: g
+        hidden: p.length < 1,
+        children: (0, i.jsx)(r.F, {
+            component: s.Fragment,
+            children: p
         })
     })
 }

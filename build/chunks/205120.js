@@ -1,31 +1,22 @@
 /** chunk id: 205120, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => g
-}), n(896048);
-var l = n(627968),
-    r = n(64700),
-    i = n(155718),
+});
+var i = n(627968),
+    l = n(64700),
+    s = n(155718),
     a = n(751258),
-    s = n(451909),
+    r = n(451909),
     o = n(652215),
     c = n(650583),
-    u = n(985018),
-    d = n(921522);
+    d = n(985018),
+    u = n(921522);
 
-function h(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-
-function p(e) {
+function h(e) {
     e.stopPropagation()
 }
 
-function f() {
+function m() {
     let e = window.getSelection();
     if (null == e) return {
         selection: null,
@@ -40,128 +31,130 @@ function f() {
     }
 }
 
-function m(e, t, n) {
-    let l = document.createRange();
-    l.setStart(t, n), l.collapse(!0), e.removeAllRanges(), e.addRange(l)
+function A(e, t, n) {
+    let i = document.createRange();
+    i.setStart(t, n), i.collapse(!0), e.removeAllRanges(), e.addRange(i)
 }
-class g extends r.PureComponent {
+class g extends l.PureComponent {
+    node = l.createRef();
+    onClickSave = () => {
+        let {
+            textValue: e
+        } = this.props;
+        this.onSubmit(e)
+    };
+    onSubmit = e => {
+        let {
+            message: t,
+            channel: n,
+            onConfirmDelete: i,
+            onCancel: l,
+            saveMessage: c,
+            validateEdit: d
+        } = this.props;
+        return 0 === e.length ? (i(n, t), l(n.id), Promise.resolve({
+            shouldClear: !1,
+            shouldRefocus: !1
+        })) : d({
+            value: e,
+            channel: n
+        }).then(i => {
+            let {
+                valid: d
+            } = i;
+            if (!d) return Promise.resolve({
+                shouldClear: !1,
+                shouldRefocus: !1
+            });
+            let u = (0, a.S)(e, {
+                channel: n,
+                isEdit: !0
+            });
+            if (u?.content != null && (e = u.content), t.hasFlag(o.pr7.IS_COMPONENTS_V2) && this.props.channel.type === o.rbe.GUILD_ANNOUNCEMENT) {
+                let t = r.Ay.parse(this.props.channel, e),
+                    n = this.props.message.components.filter(e => e.type === s.I5.TEXT_DISPLAY);
+                if (1 === n.length) {
+                    let i = n[0];
+                    e !== i.content && c(this.props.channel.id, this.props.message.id, t)
+                }
+            } else {
+                let t = r.Ay.parse(this.props.channel, e);
+                t.content !== this.props.message.content && c(this.props.channel.id, this.props.message.id, t)
+            }
+            return l(n.id), Promise.resolve({
+                shouldClear: !0,
+                shouldRefocus: !0
+            })
+        })
+    };
+    onChange = (e, t, n) => {
+        let {
+            channel: i,
+            onChange: l
+        } = this.props;
+        l(i.id, t, n)
+    };
+    onKeyDown = e => {
+        if (e.key === c.dh.ESCAPE && !e.shiftKey) {
+            let {
+                channel: t,
+                onCancel: n
+            } = this.props;
+            e.preventDefault(), e.stopPropagation(), n(t.id)
+        }
+        if (e.key === c.dh.HOME && !(e.shiftKey || e.ctrlKey)) {
+            e.preventDefault();
+            let {
+                selection: t,
+                rangeStartContainer: n,
+                rangeStartOffset: i
+            } = m();
+            if (null == t || null == n || null == i) return;
+            A(t, n, 0)
+        }
+        if (e.key === c.dh.END && !(e.shiftKey || e.ctrlKey)) {
+            e.preventDefault();
+            let {
+                selection: t,
+                rangeStartContainer: n,
+                rangeStartOffset: i
+            } = m();
+            if (null == t || null == n || null == i) return;
+            let l = n.textContent;
+            if (null == l) return;
+            A(t, n, l.length)
+        }
+    };
     render() {
         let {
             className: e,
             textValue: t,
             richValue: n,
-            message: r,
-            channel: i,
+            message: l,
+            channel: s,
             onCancel: a,
-            children: s
-        } = this.props, o = (0, l.jsx)("div", {
-            className: d.z,
-            children: u.intl.format(u.t.wDsPXs, {
-                onCancel: () => a(i.id),
+            children: r
+        } = this.props, o = (0, i.jsx)("div", {
+            className: u.z,
+            children: d.intl.format(d.t.wDsPXs, {
+                onCancel: () => a(s.id),
                 onSave: this.onClickSave
             })
         });
-        return (0, l.jsxs)("div", {
+        return (0, i.jsxs)("div", {
             className: e,
             ref: this.node,
-            onContextMenu: p,
-            children: [s({
+            onContextMenu: h,
+            children: [r({
                 textValue: t,
                 richValue: n,
-                message: r,
-                channel: i,
+                message: l,
+                channel: s,
                 onChange: this.onChange,
                 onSubmit: this.onSubmit,
                 onKeyDown: this.onKeyDown,
                 renderLeftAccessories: () => o
             }), o]
-        })
-    }
-    constructor(...e) {
-        super(...e), h(this, "node", r.createRef()), h(this, "onClickSave", () => {
-            let {
-                textValue: e
-            } = this.props;
-            this.onSubmit(e)
-        }), h(this, "onSubmit", e => {
-            let {
-                message: t,
-                channel: n,
-                onConfirmDelete: l,
-                onCancel: r,
-                saveMessage: c,
-                validateEdit: u
-            } = this.props;
-            return 0 === e.length ? (l(n, t), r(n.id), Promise.resolve({
-                shouldClear: !1,
-                shouldRefocus: !1
-            })) : u({
-                value: e,
-                channel: n
-            }).then(l => {
-                let {
-                    valid: u
-                } = l;
-                if (!u) return Promise.resolve({
-                    shouldClear: !1,
-                    shouldRefocus: !1
-                });
-                let d = (0, a.S)(e, {
-                    channel: n,
-                    isEdit: !0
-                });
-                if ((null == d ? void 0 : d.content) != null && (e = d.content), t.hasFlag(o.pr7.IS_COMPONENTS_V2) && this.props.channel.type === o.rbe.GUILD_ANNOUNCEMENT) {
-                    let t = s.Ay.parse(this.props.channel, e),
-                        n = this.props.message.components.filter(e => e.type === i.I5.TEXT_DISPLAY);
-                    if (1 === n.length) {
-                        let l = n[0];
-                        e !== l.content && c(this.props.channel.id, this.props.message.id, t)
-                    }
-                } else {
-                    let t = s.Ay.parse(this.props.channel, e);
-                    t.content !== this.props.message.content && c(this.props.channel.id, this.props.message.id, t)
-                }
-                return r(n.id), Promise.resolve({
-                    shouldClear: !0,
-                    shouldRefocus: !0
-                })
-            })
-        }), h(this, "onChange", (e, t, n) => {
-            let {
-                channel: l,
-                onChange: r
-            } = this.props;
-            r(l.id, t, n)
-        }), h(this, "onKeyDown", e => {
-            if (e.key === c.dh.ESCAPE && !e.shiftKey) {
-                let {
-                    channel: t,
-                    onCancel: n
-                } = this.props;
-                e.preventDefault(), e.stopPropagation(), n(t.id)
-            }
-            if (e.key === c.dh.HOME && !(e.shiftKey || e.ctrlKey)) {
-                e.preventDefault();
-                let {
-                    selection: t,
-                    rangeStartContainer: n,
-                    rangeStartOffset: l
-                } = f();
-                if (null == t || null == n || null == l) return;
-                m(t, n, 0)
-            }
-            if (e.key === c.dh.END && !(e.shiftKey || e.ctrlKey)) {
-                e.preventDefault();
-                let {
-                    selection: t,
-                    rangeStartContainer: n,
-                    rangeStartOffset: l
-                } = f();
-                if (null == t || null == n || null == l) return;
-                let r = n.textContent;
-                if (null == r) return;
-                m(t, n, r.length)
-            }
         })
     }
 }

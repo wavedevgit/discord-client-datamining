@@ -2,12 +2,12 @@
 n.d(t, {
     K: () => s
 });
-var r = n(311907),
-    i = n(346835),
-    l = n(257269),
+var i = n(311907),
+    l = n(346835),
+    r = n(257269),
     a = n(652215);
-let s = (0, r.UT)(i.A, {
+let s = (0, i.UT)(l.A, {
     getQueryId: a.fic.CUSTOM_ACTIVITY_LINK,
-    get: (e, t) => null == e || null == t ? null : i.A.getOne(e, t),
-    load: (e, t) => (0, l.Py)(e, t)
+    get: (e, t) => null == e || null == t ? null : l.A.getOne(e, t),
+    load: (e, t) => (0, r.Py)(e, t)
 })

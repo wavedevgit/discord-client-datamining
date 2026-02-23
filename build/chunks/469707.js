@@ -1,19 +1,20 @@
 /** chunk id: 469707, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
     A: () => a
 });
-var r = n(311907),
-    l = n(401843),
-    i = n(616356),
-    s = n(961350);
+var i = n(311907),
+    s = n(401843),
+    l = n(616356),
+    r = n(961350);
 
 function a(e, t) {
-    let n = (0, r.bG)([s.default], () => s.default.getId()),
-        a = (0, r.bG)([i.A], () => {
-            let t = i.A.getCurrentUserActiveStream();
+    let n = (0, i.bG)([r.default], () => r.default.getId()),
+        a = (0, i.bG)([l.A], () => {
+            let t = l.A.getCurrentUserActiveStream();
             return null != t && t.channelId === e
         }, [e]);
-    return [(null == t || t === n) && a, (0, r.bG)([i.A], () => i.A.isSelfStreamHidden(e), [e]), t => {
-        (0, l.Ho)(e, t)
+    return [(null == t || t === n) && a, (0, i.bG)([l.A], () => l.A.isSelfStreamHidden(e), [e]), t => {
+        (0, s.Ho)(e, t)
     }]
 }

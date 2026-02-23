@@ -4,24 +4,24 @@ n.d(t, {
 });
 var a = n(627968);
 n(64700);
-var l = n(503698),
-    r = n.n(l),
-    i = n(397927),
-    s = n(350246);
+var i = n(503698),
+    s = n.n(i),
+    l = n(397927),
+    r = n(350246);
 let o = function(e) {
     let {
         allowClicks: t = !1,
         children: n,
-        withBorder: l = !1
+        withBorder: i = !1
     } = e;
-    return (0, a.jsx)(i.M1G, {
-        children: (0, a.jsx)(i.ZpM, {
-            className: r()(s.Rx, {
-                [s.aK]: l
+    return (0, a.jsx)(l.M1G, {
+        children: (0, a.jsx)(l.ZpM, {
+            className: s()(r.Rx, {
+                [r.aK]: i
             }),
-            outline: l,
+            outline: i,
             children: (0, a.jsx)("div", {
-                className: s.AZ,
+                className: r.AZ,
                 onClickCapture: t ? void 0 : function(e) {
                     e.stopPropagation()
                 },

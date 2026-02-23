@@ -2,46 +2,46 @@
 n.d(t, {
     A: () => d
 });
-var r = n(627968),
-    i = n(64700),
-    l = n(934551),
-    s = n(873298),
-    a = n(397927),
+var i = n(627968),
+    s = n(64700),
+    a = n(934551),
+    r = n(873298),
+    l = n(397927),
     o = n(308757);
 
 function c(e) {
     let {
         redactionType: t,
         label: n
-    } = e, c = i.useMemo(() => {
+    } = e, c = s.useMemo(() => {
         switch (t) {
-            case s.TO.BLUR:
-                return l.ImageIcon;
-            case s.TO.BLOCK:
-                return l.DenyIcon;
-            case s.TO.SHOW:
-                return l.EyeIcon;
+            case r.TO.BLUR:
+                return a.ImageIcon;
+            case r.TO.BLOCK:
+                return a.DenyIcon;
+            case r.TO.SHOW:
+                return a.EyeIcon;
             default:
                 return null
         }
     }, [t]);
-    return (0, r.jsxs)("div", {
+    return (0, i.jsxs)("div", {
         className: o.q,
-        children: [null != c && (0, r.jsx)(c, {
+        children: [null != c && (0, i.jsx)(c, {
             size: "xs",
             color: "currentColor"
-        }), (0, r.jsx)(a.Text, {
+        }), (0, i.jsx)(l.Text, {
             variant: "text-md/normal",
             color: "text-default",
             children: n
         })]
     })
 }
-let d = i.memo(function(e) {
+let d = s.memo(function(e) {
     let {
         option: t
     } = e;
-    return (0, r.jsx)(c, {
+    return (0, i.jsx)(c, {
         redactionType: t.value,
         label: t.label
     })

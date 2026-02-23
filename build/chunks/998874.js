@@ -1,32 +1,32 @@
 /** chunk id: 998874, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => c
+    A: () => d
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(503698),
-    a = n.n(l),
-    s = n(397927),
+    l = n(64700),
+    s = n(503698),
+    a = n.n(s),
+    r = n(397927),
     o = n(175728);
 
-function c(e) {
+function d(e) {
     let {
         children: t,
         icon: n,
-        title: l
+        title: s
     } = e;
     return (0, i.jsxs)("header", {
         className: o.wx,
         children: [(0, i.jsxs)("div", {
             className: o.UU,
-            children: [r.cloneElement(n, {
+            children: [l.cloneElement(n, {
                 className: a()(n.props.className, o.Kk),
                 height: 24,
                 width: 24
-            }), (0, i.jsx)(s.Heading, {
+            }), (0, i.jsx)(r.Heading, {
                 variant: "heading-md/semibold",
                 className: o.DD,
-                children: l
+                children: s
             })]
         }), t]
     })

@@ -1,67 +1,51 @@
-/** chunk id: 156189, original params: e,t,a (module,exports,require) **/
-a.d(t, {
-    default: () => u
-}), a(896048);
-var n = a(627968),
-    c = a(64700),
-    i = a(732955),
-    l = a(397927),
-    r = a(321563),
-    s = a(782997),
-    o = a(652215),
-    _ = a(670455),
-    m = a(985018);
+/** chunk id: 156189, original params: e,a,t (module,exports,require) **/
+t.d(a, {
+    default: () => d
+});
+var n = t(627968),
+    i = t(64700),
+    c = t(732955),
+    s = t(397927),
+    l = t(321563),
+    r = t(782997),
+    _ = t(652215),
+    o = t(670455),
+    m = t(985018);
 
-function u(e) {
+function d(e) {
     let {
-        onClose: t,
-        transitionState: u
-    } = e, [d, b] = c.useState(null);
-    return (0, n.jsx)(i.aFV, {
+        onClose: a,
+        transitionState: d
+    } = e, [u, b] = i.useState(null);
+    return (0, n.jsx)(c.aFV, {
         title: m.intl.string(m.t.BIbnR2),
         subtitle: m.intl.string(m.t.j2kf2m),
-        onClose: t,
+        onClose: a,
         actions: [],
-        transitionState: u,
-        children: (0, n.jsxs)(l.BJc, {
+        transitionState: d,
+        children: (0, n.jsxs)(s.BJc, {
             gap: 16,
-            children: [(0, n.jsx)(r.A, {
-                ratingOptions: [_.P0.GOOD, _.P0.BAD],
+            children: [(0, n.jsx)(l.A, {
+                ratingOptions: [o.P0.GOOD, o.P0.BAD],
                 emojiKind: "thumb",
-                selectedRating: d,
+                selectedRating: u,
                 onChangeRating: function(e) {
-                    b(e), null != e && ((0, s.A)({
+                    b(e), null != e && ((0, r.A)({
                         rating: e
-                    }), t(), (0, l.mMO)(async () => {
+                    }), a(), (0, s.mMO)(async () => {
                         let {
                             default: e
-                        } = await a.e("37836").then(a.bind(a, 845671));
-                        return t => (0, n.jsx)(e, function(e) {
-                            for (var t = 1; t < arguments.length; t++) {
-                                var a = null != arguments[t] ? arguments[t] : {},
-                                    n = Object.keys(a);
-                                "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(a).filter(function(e) {
-                                    return Object.getOwnPropertyDescriptor(a, e).enumerable
-                                }))), n.forEach(function(t) {
-                                    var n;
-                                    n = a[t], t in e ? Object.defineProperty(e, t, {
-                                        value: n,
-                                        enumerable: !0,
-                                        configurable: !0,
-                                        writable: !0
-                                    }) : e[t] = n
-                                })
-                            }
-                            return e
-                        }({
-                            body: m.intl.string(m.t.IuPjpE)
-                        }, t))
+                        } = await t.e("37836").then(t.bind(t, 845671));
+                        return a => (0, n.jsx)(e, {
+                            body: m.intl.string(m.t.IuPjpE),
+                            ...a
+                        })
                     }))
                 }
-            }), (0, n.jsx)(l.Text, {
+            }), (0, n.jsx)(s.Text, {
                 variant: "text-md/normal",
                 children: m.intl.format(m.t.zru1K0, {
-                    safetyCenterUrl: o.X7G.SAFETY_CENTER
+                    safetyCenterUrl: _.X7G.SAFETY_CENTER
                 })
             })]
         })

@@ -1,14 +1,14 @@
 /** chunk id: 12773, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => s
+    A: () => r
 });
-var r = n(562465),
-    i = n(73153),
+var i = n(562465),
+    s = n(73153),
     l = n(652215);
 
-function s(e) {
-    return r.Bo.get({
+function r(e) {
+    return i.Bo.get({
         url: l.Rsh.GUILD_TOP_READ_CHANNELS(e),
         oldFormErrors: !0,
         rejectWithError: !1
@@ -16,7 +16,7 @@ function s(e) {
         let {
             body: n
         } = t;
-        i.h.dispatch({
+        s.h.dispatch({
             type: "GUILD_TOP_READ_CHANNELS_FETCH_SUCCESS",
             guildId: e,
             topChannelIds: n

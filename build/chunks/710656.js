@@ -1,29 +1,29 @@
 /** chunk id: 710656, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => l
+    A: () => c
 });
-var r = n(627968);
+var s = n(627968);
 n(64700);
-var o = n(333748),
-    s = n(59198),
+var r = n(333748),
+    o = n(59198),
     i = n(652215),
     a = n(544105);
 
-function l(e) {
+function c(e) {
     let {
         authToken: t,
         onContinue: n,
-        onError: l,
-        onClose: c
+        onError: c,
+        onClose: l
     } = e;
-    return (0, r.jsx)(s.W, {
+    return (0, s.jsx)(o.W, {
         platformType: i.fg2.XBOX,
-        clientId: o.i.XBOX_APPLICATION_ID,
+        clientId: r.i.XBOX_APPLICATION_ID,
         scopes: a.sS,
         authToken: t,
         onContinue: n,
-        onError: l,
-        onClose: c
+        onError: c,
+        onClose: l
     })
 }

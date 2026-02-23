@@ -1,51 +1,46 @@
 /** chunk id: 187696, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => d
+    A: () => c
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(901517),
-    l = n(397244),
-    a = n(714114),
-    s = n(729551),
-    o = n(427262),
-    c = n(985018),
-    u = n(893750);
-let d = function(e) {
+var r = n(397244),
+    l = n(714114),
+    a = n(729551),
+    s = n(427262),
+    o = n(985018),
+    d = n(893750);
+let c = function(e) {
     let {
         hovered: t,
         activities: n,
-        applicationStream: d,
-        status: p,
-        user: h,
-        userIgnored: f
+        applicationStream: c,
+        status: u,
+        user: A,
+        userIgnored: h
     } = e, {
-        voiceActivityStatusEnabled: g
-    } = (0, i.G)({
-        location: "StatusText"
-    }), {
-        voiceChannel: m
-    } = (0, a.A)({
-        userId: null == h ? void 0 : h.id
-    }), A = g ? m : void 0;
-    return f ? (0, r.jsx)("div", {
-        className: u.Q,
-        children: c.intl.string(c.t.tFY5Zb)
-    }) : (0, l.A)({
+        voiceChannel: _
+    } = (0, l.A)({
+        userId: A?.id
+    });
+    return h ? (0, i.jsx)("div", {
+        className: d.Q,
+        children: o.intl.string(o.t.tFY5Zb)
+    }) : (0, r.A)({
         activities: n,
-        status: p,
-        applicationStream: d,
-        voiceChannel: A
-    }) ? (0, r.jsx)(s.A, {
-        textClassName: u.q,
+        status: u,
+        applicationStream: c,
+        voiceChannel: _
+    }) ? (0, i.jsx)(a.A, {
+        textClassName: d.q,
         activities: n,
-        applicationStream: d,
-        voiceChannel: A,
+        applicationStream: c,
+        voiceChannel: _,
         animateEmoji: t,
-        user: h,
+        user: A,
         textSize: "sm"
-    }) : (0, r.jsx)("div", {
-        className: u.Q,
-        children: (0, o.MU)(p)
+    }) : (0, i.jsx)("div", {
+        className: d.Q,
+        children: (0, s.MU)(u)
     })
 }

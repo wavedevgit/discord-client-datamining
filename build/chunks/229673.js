@@ -1,57 +1,57 @@
 /** chunk id: 229673, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => A
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(934551),
-    l = n(429913),
-    a = n(769015),
+var l = n(934551),
+    a = n(429913),
+    r = n(769015),
     s = n(975571),
     o = n(763754),
     c = n(447215),
-    u = n(888675),
-    d = n(652215),
-    p = n(985018),
-    m = n(953837);
+    d = n(888675),
+    u = n(652215),
+    m = n(985018),
+    _ = n(953837);
 
-function f(e) {
+function A(e) {
     let {
         message: t,
         channel: n,
-        author: f,
-        compact: g
+        author: A,
+        compact: h
     } = e, {
-        nick: _
-    } = (0, o.d8)(f, n), h = (0, c.P)({
-        user: f,
+        nick: f
+    } = (0, o.d8)(A, n), E = (0, c.P)({
+        user: A,
         channelId: n.id,
         guildId: void 0,
         messageId: void 0
-    })(), b = (0, l.h)(t.applicationId);
-    if (null == b) return null;
-    let y = p.intl.format(p.t.m7Lwas, {
-        username: _,
-        usernameHook: h,
-        gameName: b.name,
-        gameIconHook: e => (0, r.jsxs)("span", {
-            className: m.Y_,
-            children: [(0, r.jsx)(a.A, {
-                game: b,
-                size: a.M.XXSMALL,
-                className: m.p4
+    })(), g = (0, a.h)(t.applicationId);
+    if (null == g) return null;
+    let p = m.intl.format(m.t.m7Lwas, {
+        username: f,
+        usernameHook: E,
+        gameName: g.name,
+        gameIconHook: e => (0, i.jsxs)("span", {
+            className: _.Y_,
+            children: [(0, i.jsx)(r.A, {
+                game: g,
+                size: r.M.XXSMALL,
+                className: _.p4
             }), " ", e]
         }),
-        helpdeskArticle: s.A.getArticleURL(d.MVz.SOCIAL_LAYER_CONNECTIONS)
+        helpdeskArticle: s.A.getArticleURL(u.MVz.SOCIAL_LAYER_CONNECTIONS)
     });
-    return (0, r.jsx)(u.A, {
-        iconNode: (0, r.jsx)(i.GameControllerIcon, {
+    return (0, i.jsx)(d.A, {
+        iconNode: (0, i.jsx)(l.GameControllerIcon, {
             size: "sm"
         }),
-        compact: g,
-        contentClassName: m.Qs,
-        children: (0, r.jsx)("div", {
-            children: y
+        compact: h,
+        contentClassName: _.Qs,
+        children: (0, i.jsx)("div", {
+            children: p
         })
     })
 }

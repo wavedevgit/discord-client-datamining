@@ -1,88 +1,59 @@
 /** chunk id: 933057, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => b
-}), n(896048);
-var r = n(627968),
-    l = n(64700),
-    i = n(311907),
-    s = n(397927),
+    A: () => g
+});
+var i = n(627968),
+    s = n(64700),
+    l = n(311907),
+    r = n(397927),
     a = n(58736),
     o = n(857071),
     c = n(203982),
-    u = n(607508),
-    d = n(914703),
-    p = n(37411),
-    h = n(652215),
-    g = n(985018);
+    d = n(607508),
+    u = n(914703),
+    h = n(37411),
+    A = n(652215),
+    p = n(985018);
 
-function f(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = r
-        })
-    }
-    return e
-}
-
-function m(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
-        }
-        return n
-    })(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-
-function b(e) {
+function g(e) {
     let {
         channel: t
-    } = e, n = (0, u.X)(t), [b, A] = l.useState(!1), y = l.useRef(null), O = (0, i.bG)([o.A], () => null != t.guild_id && o.A.isLurking(t.guild_id));
-    if (l.useEffect(() => {
-            let e = () => A(!0);
-            return c._.subscribe(h.jej.OPEN_THREAD_NOTIFICATION_SETTINGS, e), () => {
-                c._.unsubscribe(h.jej.OPEN_THREAD_NOTIFICATION_SETTINGS, e)
+    } = e, n = (0, d.X)(t), [g, m] = s.useState(!1), _ = s.useRef(null), f = (0, l.bG)([o.A], () => null != t.guild_id && o.A.isLurking(t.guild_id));
+    if (s.useEffect(() => {
+            let e = () => m(!0);
+            return c._.subscribe(A.jej.OPEN_THREAD_NOTIFICATION_SETTINGS, e), () => {
+                c._.unsubscribe(A.jej.OPEN_THREAD_NOTIFICATION_SETTINGS, e)
             }
-        }, []), O) return null;
-    let j = g.intl.string(g.t.h850Ss);
-    return (0, r.jsx)(s.YNO, {
-        targetElementRef: y,
-        shouldShow: b,
-        animation: s.YNO.Animation.NONE,
+        }, []), f) return null;
+    let x = p.intl.string(p.t.h850Ss);
+    return (0, i.jsx)(r.YNO, {
+        targetElementRef: _,
+        shouldShow: g,
+        animation: r.YNO.Animation.NONE,
         position: "bottom",
         align: "right",
         autoInvert: !1,
-        onRequestClose: () => A(!1),
-        renderPopout: e => (0, r.jsx)(d.A, m(f({}, e), {
+        onRequestClose: () => m(!1),
+        renderPopout: e => (0, i.jsx)(u.A, {
+            ...e,
             channel: t,
             navId: "thread-context",
-            label: g.intl.string(g.t["1NBjqb"])
-        })),
+            label: p.intl.string(p.t["1NBjqb"])
+        }),
         children: (e, t) => {
             let {
-                isShown: l
+                isShown: s
             } = t;
-            return (0, r.jsx)(a.Ay.Icon, m(f({}, e), {
-                ref: y,
-                onClick: () => A(e => !e),
-                tooltip: l ? null : j,
-                icon: n === p.CP.NO_MESSAGES ? s.a_I : s.XFE,
-                "aria-label": j,
-                selected: l
-            }))
+            return (0, i.jsx)(a.Ay.Icon, {
+                ...e,
+                ref: _,
+                onClick: () => m(e => !e),
+                tooltip: s ? null : x,
+                icon: n === h.CP.NO_MESSAGES ? r.a_I : r.XFE,
+                "aria-label": x,
+                selected: s
+            })
         }
     })
 }

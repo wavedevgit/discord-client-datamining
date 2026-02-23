@@ -2,37 +2,37 @@
 n.d(t, {
     A: () => c
 });
-var l = n(627968);
+var i = n(627968);
 n(64700);
-var r = n(503698),
-    i = n.n(r),
+var l = n(503698),
+    s = n.n(l),
     a = n(397927),
-    s = n(569989),
+    r = n(569989),
     o = n(630487);
 
 function c(e) {
     let {
         className: t,
         roleColor: n,
-        roleName: r,
+        roleName: l,
         hasRemoveIcon: c = !1,
-        onClick: u,
-        disabled: d = !1,
+        onClick: d,
+        disabled: u = !1,
         verified: h = !1
     } = e;
-    return (0, l.jsx)(a.DUT, {
-        className: i()(t, o.x6, {
-            [o.r9]: d
+    return (0, i.jsx)(a.DUT, {
+        className: s()(t, o.x6, {
+            [o.r9]: u
         }),
-        onClick: d ? void 0 : u,
-        "aria-disabled": d,
+        onClick: u ? void 0 : d,
+        "aria-disabled": u,
         role: "button",
-        children: (0, l.jsx)(s.A, {
+        children: (0, i.jsx)(r.A, {
             className: o.JC,
             roleColor: n,
-            roleName: r,
+            roleName: l,
             verified: h,
-            children: c && (0, l.jsx)(a.PGe, {
+            children: c && (0, i.jsx)(a.PGe, {
                 size: "custom",
                 color: "currentColor",
                 height: 6,

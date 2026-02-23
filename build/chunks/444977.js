@@ -17,7 +17,7 @@ function u(n, t) {
         id: a.id,
         label: a.name,
         action: i => {
-            a.id !== u && r.Wp(n.id, n.branchId, a.id), null == t || t(i)
+            a.id !== u && r.Wp(n.id, n.branchId, a.id), t?.(i)
         }
     }, a.id))
 }

@@ -1,12 +1,12 @@
-/** chunk id: 930932, original params: e,t,l (module,exports,require) **/
-l.d(t, {
-    A_: () => c,
-    Op: () => g,
-    TK: () => h,
+/** chunk id: 930932, original params: t,e,l (module,exports,require) **/
+l.d(e, {
+    A_: () => g,
+    Op: () => f,
+    TK: () => U,
     de: () => _,
-    ed: () => v,
-    n3: () => E,
-    wq: () => p
+    ed: () => E,
+    n3: () => v,
+    wq: () => o
 }), l(321073);
 var n = l(735438),
     a = l.n(n),
@@ -16,95 +16,50 @@ var n = l(735438),
     s = l(652215),
     d = l(716829),
     b = l(985018);
-
-function O(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var l = null != arguments[t] ? arguments[t] : {},
-            n = Object.keys(l);
-        "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(l).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(l, e).enumerable
-        }))), n.forEach(function(t) {
-            var n;
-            n = l[t], t in e ? Object.defineProperty(e, t, {
-                value: n,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = n
-        })
-    }
-    return e
-}
-
-function o(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-        var l = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var n = Object.getOwnPropertySymbols(e);
-            l.push.apply(l, n)
-        }
-        return l
-    })(Object(t)).forEach(function(l) {
-        Object.defineProperty(e, l, Object.getOwnPropertyDescriptor(t, l))
-    }), e
-}
-let v = (e, t) => {
-    let l = a().shuffle(e),
-        n = l.findIndex(e => e.value === t);
+let E = (t, e) => {
+    let l = a().shuffle(t),
+        n = l.findIndex(t => t.value === e);
     if (n > -1) {
-        let e = l[n];
-        l.splice(n, 1), l.push(e)
+        let t = l[n];
+        l.splice(n, 1), l.push(t)
     }
     return l
 };
 
-function E(e) {
+function v(t) {
     let {
-        feedbackType: t,
+        feedbackType: e,
         location: l
-    } = e;
+    } = t;
     r.default.track(s.HAw.USER_SETTINGS_IN_APP_FEEDBACK_OPTED_OUT, {
-        feedback_type: u.MW[t],
+        feedback_type: u.MW[e],
         opted_out_until: u.fs
-    }), i.Yt.updateSetting(e => o(O({}, e), {
-        [t]: o(O({}, e[t]), {
+    }), i.Yt.updateSetting(t => ({
+        ...t,
+        [e]: {
+            ...t[e],
             optOutExpiryTime: u.fs
-        })
+        }
     }))
 }
 
-function f(e) {
-    return e.filter(e => {
+function O(t) {
+    return t.filter(t => {
         let {
-            disabled: t
-        } = e;
-        return !t
-    }).map(e => {
+            disabled: e
+        } = t;
+        return !e
+    }).map(t => {
         let {
-            disabled: t
-        } = e;
-        return function(e, t) {
-            if (null == e) return {};
-            var l, n, a, i = {};
-            if ("u" > typeof Reflect && Reflect.ownKeys) {
-                for (a = 0, l = Reflect.ownKeys(e); a < l.length; a++) n = l[a], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
-                return i
-            }
-            if (i = function(e, t) {
-                    if (null == e) return {};
-                    var l, n, a = {},
-                        i = Object.getOwnPropertyNames(e);
-                    for (n = 0; n < i.length; n++) l = i[n], !(t.indexOf(l) >= 0) && Object.prototype.propertyIsEnumerable.call(e, l) && (a[l] = e[l]);
-                    return a
-                }(e, t), Object.getOwnPropertySymbols)
-                for (a = 0, l = Object.getOwnPropertySymbols(e); a < l.length; a++) n = l[a], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
-            return i
-        }(e, ["disabled"])
+            disabled: e,
+            ...l
+        } = t;
+        return l
     })
 }
 
-function c() {
-    return f([{
+function g() {
+    return O([{
         variant: u.UV.SELF,
         value: u.bO.COULD_NOT_CONNECT,
         label: b.intl.string(d.default.gMHKDJ)
@@ -131,11 +86,11 @@ function c() {
     }])
 }
 
-function g(e) {
+function f(t) {
     let {
-        isMobile: t
-    } = e;
-    return f([{
+        isMobile: e
+    } = t;
+    return O([{
         value: u.X.NO_AUDIO,
         variant: u.UV.SELF,
         label: b.intl.string(d.default["GWypH+"])
@@ -183,7 +138,7 @@ function g(e) {
         value: u.X.TROUBLE_WITH_SPEAKERPHONE,
         variant: u.UV.SELF,
         label: b.intl.string(d.default["4qlGrO"]),
-        disabled: !t
+        disabled: !e
     }, {
         value: u.X.NO_GAME_AUDIO,
         variant: u.UV.SELF,
@@ -192,7 +147,7 @@ function g(e) {
 }
 
 function _() {
-    return f([{
+    return O([{
         value: u.AO.NO_VIDEO,
         variant: u.UV.SELF,
         label: b.intl.string(d.default["Bh+02d"])
@@ -219,110 +174,110 @@ function _() {
     }])
 }
 
-function p(e) {
+function o(t) {
     let {
-        isStreamer: t
-    } = e;
-    return f([{
+        isStreamer: e
+    } = t;
+    return O([{
         value: u.j6.COULD_NOT_LOAD,
         variant: u.UV.SELF,
         label: b.intl.string(d.default["w+kiDF"]),
-        disabled: !t
+        disabled: !e
     }, {
         value: u.j6.BLACK_SCREEN,
         variant: u.UV.SELF,
         label: b.intl.string(d.default.RRZZZb),
-        disabled: !t
+        disabled: !e
     }, {
         value: u.j6.FREEZING_OR_HITCHING,
         variant: u.UV.SELF,
         label: b.intl.string(d.default["3PKSkd"]),
-        disabled: !t
+        disabled: !e
     }, {
         value: u.j6.LAG,
         variant: u.UV.SELF,
         label: b.intl.string(d.default.iMxexK),
-        disabled: !t
+        disabled: !e
     }, {
         value: u.j6.BLURRY_OR_PIXELATED,
         variant: u.UV.SELF,
         label: b.intl.string(d.default["8ceyQy"]),
-        disabled: !t
+        disabled: !e
     }, {
         value: u.j6.NO_AUDIO,
         variant: u.UV.SELF,
         label: b.intl.string(d.default.HaZSC3),
-        disabled: !t
+        disabled: !e
     }, {
         value: u.j6.BAD_AUDIO,
         variant: u.UV.SELF,
         label: b.intl.string(d.default["zIC+8Y"]),
-        disabled: !t
+        disabled: !e
     }, {
         value: u.j6.STOPPED_UNEXPECTEDLY,
         variant: u.UV.SELF,
         label: b.intl.string(d.default["/nlKuG"]),
-        disabled: !t
+        disabled: !e
     }, {
         value: u.j6.DESYNC,
         variant: u.UV.SELF,
         label: b.intl.string(d.default.JS6akP),
-        disabled: !t
+        disabled: !e
     }, {
         value: u.j6.NO_GAME_AUDIO,
         variant: u.UV.SELF,
         label: b.intl.string(d.default.TaIrh5),
-        disabled: !t
+        disabled: !e
     }, {
         value: u.j6.COULD_NOT_LOAD,
         variant: u.UV.SOMEONE,
         label: b.intl.string(d.default.jU9Zs8),
-        disabled: t
+        disabled: e
     }, {
         value: u.j6.BLACK_SCREEN,
         variant: u.UV.SOMEONE,
         label: b.intl.string(d.default.aml28x),
-        disabled: t
+        disabled: e
     }, {
         value: u.j6.FREEZING_OR_HITCHING,
         variant: u.UV.SOMEONE,
         label: b.intl.string(d.default.V3EeCH),
-        disabled: t
+        disabled: e
     }, {
         value: u.j6.LAG,
         variant: u.UV.SOMEONE,
         label: b.intl.string(d.default.hi1Y39),
-        disabled: t
+        disabled: e
     }, {
         value: u.j6.BLURRY_OR_PIXELATED,
         variant: u.UV.SOMEONE,
         label: b.intl.string(d.default.qdBn3L),
-        disabled: t
+        disabled: e
     }, {
         value: u.j6.NO_AUDIO,
         variant: u.UV.SOMEONE,
         label: b.intl.string(d.default.DOOlop),
-        disabled: t
+        disabled: e
     }, {
         value: u.j6.BAD_AUDIO,
         variant: u.UV.SOMEONE,
         label: b.intl.string(d.default.k7bdGE),
-        disabled: t
+        disabled: e
     }, {
         value: u.j6.STOPPED_UNEXPECTEDLY,
         variant: u.UV.SOMEONE,
         label: b.intl.string(d.default.jPD998),
-        disabled: t
+        disabled: e
     }, {
         value: u.j6.DESYNC,
         variant: u.UV.SOMEONE,
         label: b.intl.string(d.default.JfAvQp),
-        disabled: t
+        disabled: e
     }])
 }
 
-function h() {
-    return f([{
+function U() {
+    return O([{
         value: u.CW.TOXIC_OR_INAPPROPRIATE,
         variant: u.UV.OTHERS,
         label: b.intl.string(d.default.PLBRzF)

@@ -1,38 +1,31 @@
 /** chunk id: 871697, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => c
+    A: () => a
 });
-var r, l = n(311907),
-    i = n(73153);
-
-function s(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-let a = {};
-class o extends(r = l.Ay.PersistedStore) {
+var i = n(311907),
+    s = n(73153);
+let l = {};
+class r extends i.Ay.PersistedStore {
+    static displayName = "ViewHistoryStore";
+    static persistKey = "ViewHistoryStore";
     initialize(e) {
         null != e && Object.keys(e).forEach(t => {
-            "number" == typeof e[t] && (a[t] = e[t])
+            "number" == typeof e[t] && (l[t] = e[t])
         })
     }
     getState() {
-        return a
+        return l
     }
     hasViewed(e) {
-        return null != a[e]
+        return null != l[e]
     }
 }
-s(o, "displayName", "ViewHistoryStore"), s(o, "persistKey", "ViewHistoryStore");
-let c = new o(i.h, {
+let a = new r(s.h, {
     VIEW_HISTORY_MARK_VIEW: function(e) {
         let {
             key: t
         } = e;
-        a[t] = Date.now()
+        l[t] = Date.now()
     }
 })

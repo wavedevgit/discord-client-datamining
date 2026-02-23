@@ -1,27 +1,27 @@
 /** chunk id: 505417, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    l: () => i
+    l: () => l
 });
-var r = n(985018);
+var i = n(985018);
 
-function i(e) {
+function l(e) {
     let {
         isVoiceChannel: t,
         isHubGuild: n,
-        isOwnInvite: i,
-        isGuest: l,
+        isOwnInvite: l,
+        isGuest: r,
         isStage: a,
         isStream: s
     } = e;
     if (t)
-        if (i)
-            if (s) return r.intl.string(r.t.N85DCl);
-            else if (a) return r.intl.string(r.t.TJQcNv);
-    else if (l) return r.intl.string(r.t.mJyBir);
-    else return r.intl.string(r.t.lxTgP9);
-    else if (s) return r.intl.string(r.t.Mnvc3C);
-    else if (a) return r.intl.string(r.t.FdPNr5);
-    else if (l) return r.intl.string(r.t.f4gmrf);
-    else return r.intl.string(r.t.H39rEY);
-    return n ? i ? r.intl.string(r.t.UxmnHx) : r.intl.string(r.t.sigPEf) : i ? r.intl.string(r.t["oU/lsl"]) : r.intl.string(r.t.BoQUFf)
+        if (l)
+            if (s) return i.intl.string(i.t.N85DCl);
+            else if (a) return i.intl.string(i.t.TJQcNv);
+    else if (r) return i.intl.string(i.t.mJyBir);
+    else return i.intl.string(i.t.lxTgP9);
+    else if (s) return i.intl.string(i.t.Mnvc3C);
+    else if (a) return i.intl.string(i.t.FdPNr5);
+    else if (r) return i.intl.string(i.t.f4gmrf);
+    else return i.intl.string(i.t.H39rEY);
+    return n ? l ? i.intl.string(i.t.UxmnHx) : i.intl.string(i.t.sigPEf) : l ? i.intl.string(i.t["oU/lsl"]) : i.intl.string(i.t.BoQUFf)
 }

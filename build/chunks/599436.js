@@ -1,13 +1,13 @@
 /** chunk id: 599436, original params: t,e,n (module,exports,require) **/
 n.d(e, {
     A: () => c
-}), n(228524);
+});
 var a = n(627968);
 n(64700);
 var r = n(397927),
     i = n(87404),
-    l = n(985018),
-    s = n(297002),
+    s = n(985018),
+    l = n(297002),
     o = n(117816);
 
 function c(t) {
@@ -21,28 +21,28 @@ function c(t) {
             type: "image",
             src: o.A
         },
-        title: l.intl.string(l.t.hhR7gX),
+        title: s.intl.string(s.t.hhR7gX),
         onClose: n,
         transitionState: c,
         actions: [{
             variant: "secondary",
-            text: l.intl.string(l.t.rwTBFs),
+            text: s.intl.string(s.t.rwTBFs),
             onClick: e
         }, {
             variant: "primary",
-            text: l.intl.string(l.t["ETE/oC"]),
+            text: s.intl.string(s.t["ETE/oC"]),
             onClick: n
         }],
         children: [(0, a.jsx)(r.Text, {
-            className: s.h_,
+            className: l.h_,
             variant: "text-md/normal",
-            children: l.intl.format(l.t.rqWXUf, {
+            children: s.intl.format(s.t.rqWXUf, {
                 hcArticle: i.kP
             })
         }), (0, a.jsx)(r.Text, {
-            className: s.h_,
+            className: l.h_,
             variant: "text-md/normal",
-            children: l.intl.string(l.t["3LW10C"])
+            children: s.intl.string(s.t["3LW10C"])
         })]
     })
 }

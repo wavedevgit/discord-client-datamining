@@ -1,43 +1,43 @@
 /** chunk id: 19767, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => d
-}), n(896048);
+    A: () => c
+});
 var a = n(627968),
-    l = n(64700),
-    r = n(311907),
-    i = n(397927),
-    s = n(53705),
+    i = n(64700),
+    s = n(311907),
+    l = n(397927),
+    r = n(53705),
     o = n(154323),
-    c = n(607335);
+    d = n(607335);
 
-function d() {
-    let e = (0, r.bG)([o.A], () => o.A.allWithDescriptions(), [], r.My),
-        t = l.useMemo(() => e.map(e => {
-            let [t, n, l] = e;
+function c() {
+    let e = (0, s.bG)([o.A], () => o.A.allWithDescriptions(), [], s.My),
+        t = i.useMemo(() => e.map(e => {
+            let [t, n, i] = e;
             return (0, a.jsxs)(a.Fragment, {
-                children: [(0, a.jsx)(i.dOG, {
-                    label: l,
+                children: [(0, a.jsx)(l.dOG, {
+                    label: i,
                     description: t,
                     checked: n,
-                    onChange: e => (0, s.L)(t, e)
-                }, t), (0, a.jsx)(i.cGx, {
+                    onChange: e => (0, r.L)(t, e)
+                }, t), (0, a.jsx)(l.cGx, {
                     gap: 16
                 })]
             })
         }), [e]);
     return (0, a.jsxs)("div", {
-        className: c.kL,
+        className: d.kL,
         children: [(0, a.jsx)("div", {
             "data-button-hoisted-classname-wrapper": !0,
-            className: c.x6,
-            children: (0, a.jsx)(i.Button, {
+            className: d.x6,
+            children: (0, a.jsx)(l.Button, {
                 variant: "primary",
                 text: "Clear all",
-                onClick: s.$,
+                onClick: r.$,
                 fullWidth: !0
             })
         }), (0, a.jsx)("div", {
-            className: c.vu,
+            className: d.vu,
             children: t
         })]
     })

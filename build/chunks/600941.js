@@ -1,64 +1,61 @@
 /** chunk id: 600941, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => s
+    A: () => o
 });
 var r = n(998418),
     l = n(568065),
     i = n(333354),
-    o = n(985018);
+    s = n(985018);
 
-function s(e) {
-    var t, n, s;
-    let a, {
-            guildId: u,
-            powerups: d
+function o(e) {
+    let t, {
+            guildId: n,
+            powerups: o
         } = e,
-        c = (0, r.jJ)(u, d),
-        p = c.some(e => e.type !== l.b_.INACTIVE);
-    if (d.length <= 0) return null;
-    let m = c.reduce((e, t) => {
+        a = (0, r.jJ)(n, o),
+        u = a.some(e => e.type !== l.b_.INACTIVE);
+    if (o.length <= 0) return null;
+    let d = a.reduce((e, t) => {
         let {
             sourceEntitlement: n
-        } = t, r = null == n ? void 0 : n.ends_at;
+        } = t, r = n?.ends_at;
         return null == r ? e : null == e || r < e ? r : e
     }, void 0);
-    null != m ? a = {
+    null != d ? t = {
         type: "expiring",
-        expiringAt: m
-    } : p && (a = {
+        expiringAt: d
+    } : u && (t = {
         type: "active",
-        statusText: o.intl.string(i.default.FFLkmx)
+        statusText: s.intl.string(i.default.FFLkmx)
     });
-    let f = c.reduce((e, t) => {
+    let c = a.reduce((e, t) => {
             let {
                 type: n,
                 powerup: r
             } = t;
             return n === l.b_.POWERUP_ACTIVATED ? e + r.cost : e
         }, 0),
-        v = c.reduce((e, t) => {
-            var n, r;
+        p = a.reduce((e, t) => {
             let {
-                powerup: l
+                powerup: n
             } = t;
-            return e < (null != (n = null == l ? void 0 : l.cost) ? n : 0) ? e : null != (r = null == l ? void 0 : l.cost) ? r : 0
-        }, null != (t = null == (s = c[0]) || null == (n = s.powerup) ? void 0 : n.cost) ? t : 0),
-        g = c.reduce((e, t) => {
-            var n;
+            return e < (n?.cost ?? 0) ? e : n?.cost ?? 0
+        }, a[0]?.powerup?.cost ?? 0),
+        m = a.reduce((e, t) => {
             let {
-                powerup: r
+                powerup: n
             } = t;
-            return e + (null != (n = null == r ? void 0 : r.cost) ? n : 0)
+            return e + (n?.cost ?? 0)
         }, 0),
-        A = p ? f : v;
+        A = u ? c : p;
     return {
-        isActive: p,
-        status: a,
+        isActive: u,
+        status: t,
         cost: A,
-        costDecorator: !p && g > A ? "+" : void 0,
-        expiringAt: m,
-        activeCost: f,
-        minCost: v,
-        totalCost: g
+        costDecorator: !u && m > A ? "+" : void 0,
+        expiringAt: d,
+        activeCost: c,
+        minCost: p,
+        totalCost: m
     }
 }

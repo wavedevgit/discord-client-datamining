@@ -1,178 +1,194 @@
 /** chunk id: 712150, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => v
-}), n(896048);
-var r = n(627968),
-    i = n(64700),
+    A: () => E
+});
+var i = n(627968),
+    s = n(64700),
     l = n(503698),
-    s = n.n(l),
+    r = n.n(l),
     a = n(317097),
-    o = n(421380),
+    o = n(990078),
+    d = n(421380),
     c = n(397927),
-    d = n(130333),
-    u = n(953348),
+    u = n(130333),
+    m = n(953348),
     g = n(81461),
-    m = n(997509),
-    p = n(743981),
-    f = n(583970),
-    h = n(985018),
-    b = n(175820);
+    x = n(997509),
+    h = n(743981),
+    _ = n(583970),
+    A = n(985018),
+    p = n(175820);
 
-function x(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = r
-        })
-    }
-    return e
-}
-
-function j(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
-        }
-        return n
-    })(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-
-function _(e) {
+function f(e) {
     let {
         palette: t,
         badge: n,
-        isSelected: i,
+        isSelected: s,
         onClick: l
-    } = e, a = (0, o.Gx)({
-        isSelected: i,
-        label: (0, d.A)(t.primary, t.secondary)
+    } = e, a = (0, d.Gx)({
+        isSelected: s,
+        label: (0, u.A)(t.primary, t.secondary)
     });
-    return (0, r.jsx)(c.DUT, j(x({}, a), {
-        className: s()(b.Uh, {
-            [b.fT]: i
+    return (0, i.jsx)(c.DUT, {
+        ...a,
+        className: r()(p.Uh, {
+            [p.fT]: s
         }),
         onClick: l,
-        children: (0, r.jsx)(g.J, {
+        children: (0, i.jsx)(g.J, {
             badge: n,
             width: 32,
             height: 32,
             primaryTintColor: t.primary,
             secondaryTintColor: t.secondary
         })
-    }))
+    })
 }
 
-function O(e) {
+function j(e) {
     let {
         badge: t,
         primary: n,
-        secondary: i,
+        secondary: s,
         isSelected: l,
-        showColorPopout: d,
-        setShowColorPopout: g,
-        palettePopoutTargetRef: m,
-        handleChange: f
-    } = e, _ = (0, o.Gx)({
+        showColorPopout: o,
+        setShowColorPopout: u,
+        palettePopoutTargetRef: g,
+        handleChange: x
+    } = e, _ = (0, d.Gx)({
         isSelected: l,
-        label: h.intl.formatToPlainString(h.t.hr4D2X, {
+        label: A.intl.formatToPlainString(A.t.hr4D2X, {
             primaryColor: n,
-            secondaryColor: i
+            secondaryColor: s
         })
     });
-    return (0, r.jsx)(u.A, {
-        popoutTargetRef: m,
-        showSecondaryColor: p.C9[t] >= 2,
+    return (0, i.jsx)(m.A, {
+        popoutTargetRef: g,
+        showSecondaryColor: h.C9[t] >= 2,
         palette: {
             primary: n,
-            secondary: i
+            secondary: s
         },
         onPrimaryColorChange: e => {
-            f({
+            x({
                 primary: (0, a.Hl)(e)
             })
         },
         onSecondaryColorChange: e => {
-            f({
+            x({
                 secondary: (0, a.Hl)(e)
             })
         },
-        shouldShow: d,
-        onRequestClose: () => g(!1),
-        children: e => (0, r.jsx)(c.DUT, j(x({}, e, _), {
-            innerRef: m,
+        shouldShow: o,
+        onRequestClose: () => u(!1),
+        children: e => (0, i.jsx)(c.DUT, {
+            ...e,
+            ..._,
+            innerRef: g,
             onClick: () => {
-                g(e => !e)
+                u(e => !e)
             },
-            className: s()(b.Uh, {
-                [b.fT]: l
+            className: r()(p.Uh, {
+                [p.fT]: l
             }),
-            children: (0, r.jsx)(c.dDg, {
+            children: (0, i.jsx)(c.dDg, {
                 size: "custom",
                 width: 20,
                 height: 20
             })
-        }))
+        })
     })
 }
-let v = function(e) {
+
+function N(e) {
+    let {
+        badge: t,
+        isSelected: n,
+        onClick: s
+    } = e, l = A.intl.string(_.default["4lP3/H"]), a = (0, d.Gx)({
+        isSelected: n,
+        label: l
+    });
+    return (0, i.jsx)(o.m, {
+        text: l,
+        "aria-label": l,
+        children: (0, i.jsxs)(c.DUT, {
+            ...a,
+            className: r()(p.Uh, p.lM, {
+                [p.fT]: n
+            }),
+            onClick: s,
+            children: [(0, i.jsx)(g.J, {
+                badge: t,
+                width: 32,
+                height: 32
+            }), (0, i.jsx)("div", {
+                className: p.i0,
+                children: (0, i.jsx)(c.fNY, {
+                    size: "custom",
+                    width: 12,
+                    height: 12
+                })
+            })]
+        })
+    })
+}
+let E = function(e) {
     let {
         className: t,
         guildId: n,
         badge: l,
-        primaryColor: s,
+        primaryColor: r,
         secondaryColor: a
-    } = e, [d, u] = i.useState(!1), g = i.useRef(null), v = i.useId(), y = i.useId(), A = i.useMemo(() => p.Ub.every(e => e.primary !== s || e.secondary !== a), [s, a]), E = (0, o._u)({
+    } = e, [o, u] = s.useState(!1), m = s.useRef(null), g = s.useId(), E = s.useId(), b = null == r && null == a, T = s.useMemo(() => !b && h.Ub.every(e => e.primary !== r || e.secondary !== a), [b, r, a]), C = (0, d._u)({
         orientation: "horizontal",
         isDisabled: !1,
-        labelledBy: v
+        labelledBy: g
     });
 
-    function N(e) {
+    function I(e) {
         let t = {};
-        void 0 !== e.primary && (t.badgeColorPrimary = e.primary), void 0 !== e.secondary && (t.badgeColorSecondary = e.secondary), m.A.updateGuildProfile(n, t)
+        void 0 !== e.primary && (t.badgeColorPrimary = e.primary), void 0 !== e.secondary && (t.badgeColorSecondary = e.secondary), x.A.updateGuildProfile(n, t)
     }
-    return (0, r.jsxs)("div", {
+    return (0, i.jsxs)("div", {
         className: t,
-        children: [(0, r.jsx)(c.D0$, {
-            label: h.intl.string(f.default.zSbMdX),
-            id: v,
-            children: e => (0, r.jsxs)("div", j(x({}, E), {
+        children: [(0, i.jsx)(c.D0$, {
+            label: A.intl.string(_.default.zSbMdX),
+            id: g,
+            children: e => (0, i.jsxs)("div", {
+                ...C,
                 id: e.controlId,
-                "aria-describedby": y,
-                className: b.p3,
-                children: [p.Ub.map(e => (0, r.jsx)(_, {
+                "aria-describedby": E,
+                className: p.p3,
+                children: [h.Ub.map(e => (0, i.jsx)(f, {
                     palette: e,
                     badge: l,
-                    isSelected: e.primary === s && e.secondary === a,
-                    onClick: () => N(e)
-                }, "".concat(e.primary).concat(e.secondary))), (0, r.jsx)(O, {
+                    isSelected: e.primary === r && e.secondary === a,
+                    onClick: () => I(e)
+                }, `${e.primary}${e.secondary}`)), (0, i.jsx)(N, {
                     badge: l,
-                    primary: s,
-                    secondary: a,
-                    isSelected: A,
-                    showColorPopout: d,
+                    isSelected: b,
+                    onClick: () => {
+                        I({
+                            primary: null,
+                            secondary: null
+                        })
+                    }
+                }), (0, i.jsx)(j, {
+                    badge: l,
+                    primary: r ?? h.Ub["0"].primary,
+                    secondary: a ?? h.Ub["0"].secondary,
+                    isSelected: T,
+                    showColorPopout: o,
                     setShowColorPopout: u,
-                    palettePopoutTargetRef: g,
-                    handleChange: N
+                    palettePopoutTargetRef: m,
+                    handleChange: I
                 })]
-            }))
-        }), (0, r.jsx)(c.AC4, {
-            id: y,
-            children: h.intl.string(h.t.ovbW0Z)
+            })
+        }), (0, i.jsx)(c.AC4, {
+            id: E,
+            children: A.intl.string(A.t.ovbW0Z)
         })]
     })
 }

@@ -1,28 +1,28 @@
 /** chunk id: 747176, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => o
+    A: () => i
 });
-var r = n(627968);
+var l = n(627968);
 n(64700);
-var l = n(594808),
-    a = n(207963),
-    i = n(100558);
+var a = n(594808),
+    r = n(207963),
+    s = n(100558);
 
-function o(e) {
+function i(e) {
     let {
         components: t,
         renderComponents: n
     } = e, {
-        message: o
-    } = (0, a.jc)();
-    return null == t || 0 === t.length ? null : (0, r.jsxs)("div", {
-        className: i.kL,
-        children: [(0, r.jsx)("div", {
-            className: i.Y_,
+        message: i
+    } = (0, r.jc)();
+    return null == t || 0 === t.length ? null : (0, l.jsxs)("div", {
+        className: s.kL,
+        children: [(0, l.jsx)("div", {
+            className: s.Y_,
             children: n(t)
-        }), null != o ? (0, r.jsx)(l.Ay, {
-            className: i.z3,
-            message: o,
+        }), null != i ? (0, l.jsx)(a.Ay, {
+            className: s.z3,
+            message: i,
             component: e
         }) : null]
     })

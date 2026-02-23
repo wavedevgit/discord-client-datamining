@@ -1,39 +1,41 @@
 /** chunk id: 251191, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => h
+    A: () => C
 });
-var r = n(627968),
+var s = n(627968),
     l = n(64700),
-    s = n(503698),
-    a = n.n(s),
+    r = n(503698),
+    a = n.n(r),
     i = n(311907),
     o = n(397927),
-    c = n(287809),
+    c = n(720462),
+    d = n(287809),
     u = n(440938),
-    d = n(590180),
-    g = n(206077),
-    f = n(751304),
-    m = n(561769),
-    p = n(758836),
-    _ = n(985018),
-    b = n(201073);
-let h = e => {
+    g = n(590180),
+    _ = n(313276),
+    m = n(206077),
+    h = n(751304),
+    p = n(561769),
+    f = n(758836),
+    x = n(985018),
+    E = n(201073);
+let C = e => {
     let {
         shelf: t,
         handleTransition: n,
-        tab: s
-    } = e, h = (0, i.bG)([c.default], () => c.default.getCurrentUser()), E = (0, i.bG)([d.A], () => d.A.getCategory(t.categorySkuId)), v = (0, u.uM)(), C = l.useMemo(() => t.rankedSkuIds.map(e => d.A.getProduct(e)).filter(e => null != e), [t.rankedSkuIds]), A = (0, g.X)(C).slice(0, 4);
-    return null == h ? null : (0, r.jsxs)("div", {
-        className: a()(b.Vp, b.YB),
-        children: [(0, r.jsxs)("div", {
-            className: b.$6,
-            children: [(0, r.jsx)(o.Heading, {
+        tab: r
+    } = e, C = (0, i.bG)([d.default], () => d.default.getCurrentUser()), A = (0, i.bG)([g.A], () => g.A.getCategory(t.categorySkuId)), b = (0, u.uM)(), S = (0, _.A)(), v = l.useMemo(() => S(t.rankedSkuIds), [t.rankedSkuIds, S]), L = (0, m.X)(v);
+    return null == C ? null : (0, s.jsxs)("div", {
+        className: a()(E.Vp, E.YB),
+        children: [(0, s.jsxs)("div", {
+            className: E.$6,
+            children: [(0, s.jsx)(o.Heading, {
                 variant: "heading-lg/semibold",
                 children: t.name
-            }), (0, r.jsx)(o.Button, {
+            }), (0, s.jsx)(o.Button, {
                 variant: "secondary",
-                text: _.intl.formatToPlainString(_.t.bc9RBE, {
+                text: x.intl.formatToPlainString(x.t.bc9RBE, {
                     category_name: t.name
                 }),
                 onClick: () => {
@@ -41,26 +43,26 @@ let h = e => {
                         sourceButton: "shelf block see all",
                         categorySkuId: t.categorySkuId,
                         isInternalShopDeeplink: !0,
-                        isOrbsExclusive: (null == E ? void 0 : E.isOrbsExclusive) && s !== p.G2.ORBS
+                        isOrbsExclusive: A?.isOrbsExclusive && r !== f.G2.ORBS
                     })
                 }
             })]
-        }), (0, r.jsx)("div", {
-            className: b.hm,
-            children: (0, r.jsx)(r.Fragment, {
-                children: A.map((e, n) => {
-                    if (null == d.A.getCategoryForProduct(e.skuId) || null == e) return null;
+        }), (0, s.jsx)(c.A, {
+            gap: "xl",
+            children: (0, s.jsx)(s.Fragment, {
+                children: L.map((e, n) => {
+                    if (null == g.A.getCategoryForProduct(e.skuId) || null == e) return null;
                     let l = e.skuId;
-                    return (0, r.jsx)(u.R9, {
+                    return (0, s.jsx)(u.R9, {
                         newValue: {
                             tilePosition: n,
                             pageSection: t.name,
                             categoryPosition: 2
                         },
-                        children: (0, r.jsx)(f.A, {
+                        children: (0, s.jsx)(h.A, {
                             skuId: l,
-                            prioritizedCurrency: s === p.G2.ORBS ? m.Hi.ORBS : void 0,
-                            onClickAnalytics: (0, m.UU)(e, s, v)
+                            prioritizedCurrency: r === f.G2.ORBS ? p.Hi.ORBS : void 0,
+                            onClickAnalytics: (0, p.UU)(e, r, b)
                         }, l)
                     }, l)
                 })

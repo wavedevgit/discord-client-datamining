@@ -1,34 +1,18 @@
-/** chunk id: 647534, original params: e,n,t (module,exports,require) **/
-t.d(n, {
-    A: () => l
+/** chunk id: 647534, original params: e,i,n (module,exports,require) **/
+n.d(i, {
+    A: () => a
 });
-var i = t(627968),
-    r = t(397927);
+var t = n(627968),
+    l = n(397927);
 
-function l(e) {
-    (0, r.mMO)(async () => {
+function a(e) {
+    (0, l.mMO)(async () => {
         let {
-            default: n
-        } = await Promise.all([t.e("63379"), t.e("72668")]).then(t.bind(t, 404128));
-        return t => (0, i.jsx)(n, function(e) {
-            for (var n = 1; n < arguments.length; n++) {
-                var t = null != arguments[n] ? arguments[n] : {},
-                    i = Object.keys(t);
-                "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
-                    return Object.getOwnPropertyDescriptor(t, e).enumerable
-                }))), i.forEach(function(n) {
-                    var i;
-                    i = t[n], n in e ? Object.defineProperty(e, n, {
-                        value: i,
-                        enumerable: !0,
-                        configurable: !0,
-                        writable: !0
-                    }) : e[n] = i
-                })
-            }
-            return e
-        }({
-            guildId: e
-        }, t))
+            default: i
+        } = await Promise.all([n.e("63379"), n.e("72668")]).then(n.bind(n, 404128));
+        return n => (0, t.jsx)(i, {
+            guildId: e,
+            ...n
+        })
     })
 }

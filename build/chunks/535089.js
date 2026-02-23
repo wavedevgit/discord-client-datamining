@@ -1,21 +1,21 @@
 /** chunk id: 535089, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => i
-}), n(896048);
-var r = n(64700),
+    A: () => a
+});
+var i = n(64700),
     l = n(172218);
 
-function i(e) {
+function a(e) {
     let {
         wishlistId: t,
         onAction: n,
-        productLines: i
-    } = e, [a, o] = (0, r.useState)(!1), s = (0, r.useCallback)(e => {
+        productLines: a
+    } = e, [s, r] = (0, i.useState)(!1), o = (0, i.useCallback)(e => {
         e && null != t && (n({
             action: "VIEW_WISHLIST",
             wishlistId: t,
-            productLines: null != i ? i : void 0
-        }), o(!0))
-    }, [t, n, i]);
-    return (0, l.K)(s, void 0, null != t && !a)
+            productLines: a ?? void 0
+        }), r(!0))
+    }, [t, n, a]);
+    return (0, l.K)(o, void 0, null != t && !s)
 }

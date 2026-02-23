@@ -4,24 +4,24 @@ n.d(t, {
 });
 var l = n(627968);
 n(64700);
-var r = n(311907),
+var a = n(311907),
     i = n(397927),
-    a = n(463259),
+    r = n(463259),
     s = n(287809),
-    o = n(985018),
-    d = n(395618);
+    d = n(985018),
+    o = n(395618);
 let c = e => {
     let {
         widget: t,
         userId: n
-    } = e, c = (0, r.bG)([s.default], () => s.default.getUser(n));
+    } = e, c = (0, a.bG)([s.default], () => s.default.getUser(n));
     return null == c ? null : (0, l.jsxs)("div", {
-        className: d.k,
+        className: o.k,
         children: [(0, l.jsx)(i.Heading, {
-            className: d.w,
+            className: o.w,
             variant: "heading-sm/semibold",
-            children: o.intl.string(o.t.SpsnDY)
-        }), (0, l.jsx)(a.u, {
+            children: d.intl.string(d.t.SpsnDY)
+        }), (0, l.jsx)(r.u, {
             widget: t,
             user: c,
             disableInteraction: !0

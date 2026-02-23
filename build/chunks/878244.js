@@ -1,258 +1,232 @@
 /** chunk id: 878244, original params: e,t,i (module,exports,require) **/
 i.d(t, {
-    A: () => T
+    A: () => O,
+    O: () => j
 });
 var n = i(627968),
-    r = i(64700),
-    l = i(575593),
-    s = i(311907),
-    a = i(435371),
-    o = i(587895),
-    u = i(576030),
-    c = i(954571),
-    d = i(427262),
-    m = i(594832),
-    p = i(146423),
-    f = i(460442),
-    _ = i(754804),
-    h = i(479026),
-    g = i(652215),
-    I = i(788868),
-    S = i(985018),
-    x = i(804810);
+    s = i(64700),
+    r = i(575593),
+    l = i(311907),
+    o = i(435371),
+    a = i(587895),
+    d = i(576030),
+    u = i(954571),
+    c = i(427262),
+    m = i(178213),
+    _ = i(594832),
+    f = i(146423),
+    h = i(460442),
+    p = i(754804),
+    I = i(479026),
+    S = i(652215),
+    g = i(788868),
+    C = i(985018),
+    A = i(804810);
+let x = g.vQ.DM_CHANNEL_WISHLIST,
+    w = f.yU.LARGE;
 
-function C(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var i = null != arguments[t] ? arguments[t] : {},
-            n = Object.keys(i);
-        "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(i).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(i, e).enumerable
-        }))), n.forEach(function(t) {
-            var n;
-            n = i[t], t in e ? Object.defineProperty(e, t, {
-                value: n,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = n
-        })
-    }
-    return e
+function j() {
+    return (0, n.jsx)(f.$8, {
+        size: w
+    })
 }
 
-function b(e, t) {
-    if (null == e) return {};
-    var i, n, r, l = {};
-    if ("u" > typeof Reflect && Reflect.ownKeys) {
-        for (r = 0, i = Reflect.ownKeys(e); r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n]);
-        return l
-    }
-    if (l = function(e, t) {
-            if (null == e) return {};
-            var i, n, r = {},
-                l = Object.getOwnPropertyNames(e);
-            for (n = 0; n < l.length; n++) i = l[n], !(t.indexOf(i) >= 0) && Object.prototype.propertyIsEnumerable.call(e, i) && (r[i] = e[i]);
-            return r
-        }(e, t), Object.getOwnPropertySymbols)
-        for (r = 0, i = Object.getOwnPropertySymbols(e); r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n]);
-    return l
-}
-let w = I.vQ.DM_CHANNEL_WISHLIST;
-
-function y(e) {
+function L(e) {
     let {
         sku: t,
         onClick: i,
-        onOpenWishlist: l,
-        wishlistOwner: s,
-        tooltipInfo: o,
-        wishlistId: u,
-        source: d,
-        hasMultipleSources: h,
-        totalUnownedWishlistItems: I,
-        index: S,
-        skuPreviewStyle: C
-    } = e, b = r.useMemo(() => ({
+        onOpenWishlist: r,
+        wishlistOwner: l,
+        tooltipInfo: a,
+        wishlistId: d,
+        source: c,
+        hasMultipleSources: I,
+        totalUnownedWishlistItems: g,
+        index: C,
+        skuPreviewStyle: A
+    } = e, x = (0, m.G)("wishlist_banner"), j = s.useMemo(() => ({
         collectibles: {
             nameplate: {
                 width: 136
             }
         }
-    }), []), w = S === m.pl - 1 && I > m.pl, y = I - m.pl + 1, O = r.useCallback(() => {
-        if (w) return void l();
-        let e = d === m.uS.WISHLIST ? "wishlist" : "shop";
-        c.default.track(g.HAw.GIFTING_ITEM_CLICKED, {
+    }), []), L = (0, _.Yu)(x), T = C === L - 1 && g > L, b = g - L + 1, O = s.useCallback(() => {
+        if (T) return void r();
+        let e = c === _.uS.WISHLIST ? "wishlist" : "shop";
+        u.default.track(S.HAw.GIFTING_ITEM_CLICKED, {
             sku_id: t.id,
             item_source: e,
-            wishlist_id: d === m.uS.WISHLIST ? u : null,
+            wishlist_id: c === _.uS.WISHLIST ? d : null,
             product_line: t.productLine
-        }), null == i || i()
-    }, [i, u, d, t.id, t.productLine, l, w]), j = r.useMemo(() => {
-        var e;
-        let i = (0, n.jsxs)(p.A, {
+        }), i?.()
+    }, [i, d, c, t.id, t.productLine, r, T]), k = s.useMemo(() => {
+        let e = (0, n.jsxs)(f.Ay, {
             sku: t,
-            user: s,
-            cardStyle: x.Nr,
-            skuPreviewStyle: C,
-            options: b,
+            user: l,
+            size: w,
+            skuPreviewStyle: A,
+            options: j,
             onClick: O,
-            children: [h && d === m.uS.POPULAR && (0, n.jsx)(_.o, {}), h && d === m.uS.WISHLIST && (0, n.jsx)(_.k, {}), w && (0, n.jsx)(f.Yb, {
-                count: y
+            children: [I && c === _.uS.POPULAR && (0, n.jsx)(p.o, {}), I && c === _.uS.WISHLIST && (0, n.jsx)(p.k, {}), T && (0, n.jsx)(h.Yb, {
+                count: b
             })]
         });
-        return o.shouldShow ? null != o.title && null == o.body && null == o.icon ? (0, n.jsx)(a.m_, {
-            text: o.title,
+        return a.shouldShow ? null != a.title && null == a.body && null == a.icon ? (0, n.jsx)(o.m_, {
+            text: a.title,
             position: "top",
             asContainer: !0,
-            delay: m.Zh,
-            children: i
-        }) : (0, n.jsx)(a.un, {
-            title: o.title,
-            body: null != (e = o.body) ? e : "",
-            asset: o.icon,
-            assetSize: m.Q8,
+            delay: _.Zh,
+            children: e
+        }) : (0, n.jsx)(o.un, {
+            title: a.title,
+            body: a.body ?? "",
+            asset: a.icon,
+            assetSize: _.Q8,
             position: "top",
             asContainer: !0,
-            delay: m.Zh,
-            children: i
-        }) : i
-    }, [t, s, O, d, h, b, o.shouldShow, o.title, o.body, o.icon, y, C, w]);
+            delay: _.Zh,
+            children: e
+        }) : e
+    }, [t, l, O, c, I, j, a.shouldShow, a.title, a.body, a.icon, b, A, T]);
     return (0, n.jsx)("div", {
-        children: j
+        children: k
+    })
+}
+
+function T(e) {
+    let {
+        sku: t,
+        wishlistOwner: i,
+        analyticsLocations: r,
+        onClick: o,
+        hasMultipleTypes: u,
+        hasMultipleSources: m,
+        source: f,
+        ...h
+    } = e, p = (0, l.bG)([a.A], () => a.A.getApplication(t.applicationId)), S = s.useMemo(() => {
+        let e = c.Ay.getName(i),
+            t = f === _.uS.WISHLIST ? C.intl.formatToPlainString(C.t.p3RmJF, {
+                username: e
+            }) : C.intl.string(C.t.Ig6VDH);
+        return u || m ? !u && m ? {
+            title: t,
+            icon: (0, n.jsx)(d.mW, {
+                application: p
+            }),
+            shouldShow: !0
+        } : u && !m ? {
+            title: C.intl.string(C.t["4yiU7x"]),
+            icon: (0, n.jsx)(d.mW, {
+                application: p
+            }),
+            shouldShow: !0
+        } : {
+            title: C.intl.string(C.t["4yiU7x"]),
+            body: t,
+            icon: (0, n.jsx)(d.mW, {
+                application: p
+            }),
+            shouldShow: !0
+        } : {
+            title: C.intl.string(C.t["4yiU7x"]),
+            shouldShow: !1
+        }
+    }, [f, u, m, p, i]), g = s.useCallback(() => {
+        o?.(), (0, I.T)({
+            isOwner: !1,
+            giftingOrigin: x,
+            profileOwner: i,
+            isItemOwned: !1,
+            application: p ?? void 0,
+            sku: t,
+            analyticsLocations: r ?? []
+        })
+    }, [t, i, p, r, o]);
+    return (0, n.jsx)(L, {
+        sku: t,
+        wishlistOwner: i,
+        analyticsLocations: r,
+        onClick: g,
+        hasMultipleTypes: u,
+        hasMultipleSources: m,
+        tooltipInfo: S,
+        source: f,
+        ...h
+    })
+}
+
+function b(e) {
+    let {
+        sku: t,
+        wishlistOwner: i,
+        analyticsLocations: l,
+        onClick: o,
+        hasMultipleTypes: a,
+        hasMultipleSources: u,
+        source: m,
+        ...f
+    } = e, h = s.useMemo(() => {
+        let e = c.Ay.getName(i),
+            t = m === _.uS.WISHLIST ? C.intl.formatToPlainString(C.t.p3RmJF, {
+                username: e
+            }) : C.intl.string(C.t.Ig6VDH);
+        return a || u ? !a && u ? {
+            title: t,
+            shouldShow: !0
+        } : a && !u ? {
+            title: C.intl.string(C.t.HFhcqh),
+            icon: (0, n.jsx)(d.mW, {}),
+            shouldShow: !0
+        } : {
+            title: C.intl.string(C.t.HFhcqh),
+            body: t,
+            icon: (0, n.jsx)(d.mW, {}),
+            shouldShow: !0
+        } : {
+            title: C.intl.string(C.t.HFhcqh),
+            shouldShow: !1
+        }
+    }, [m, a, u, i]), p = s.useMemo(() => null != t.bundledSkus && t.bundledSkus.length > 0 ? A.E : t.tenantMetadata?.collectibles?.type === r.R.NAMEPLATE ? A.q : void 0, [t.bundledSkus, t.tenantMetadata?.collectibles?.type]), S = s.useMemo(() => () => {
+        (0, I._)({
+            isOwner: !1,
+            isItemOwned: !1,
+            onWishlistItemClick: o,
+            profileOwner: i,
+            sku: t,
+            analyticsLocations: l ?? [],
+            giftingOrigin: x
+        })
+    }, [t, i, o, l]);
+    return (0, n.jsx)(L, {
+        sku: t,
+        wishlistOwner: i,
+        analyticsLocations: l,
+        onClick: S,
+        hasMultipleTypes: a,
+        hasMultipleSources: u,
+        tooltipInfo: h,
+        source: m,
+        skuPreviewStyle: p,
+        ...f
     })
 }
 
 function O(e) {
     let {
         sku: t,
-        wishlistOwner: i,
-        analyticsLocations: l,
-        onClick: a,
-        hasMultipleTypes: c,
-        hasMultipleSources: p,
-        source: f
-    } = e, _ = b(e, ["sku", "wishlistOwner", "analyticsLocations", "onClick", "hasMultipleTypes", "hasMultipleSources", "source"]), g = (0, s.bG)([o.A], () => o.A.getApplication(t.applicationId)), I = r.useMemo(() => {
-        let e = d.Ay.getName(i),
-            t = f === m.uS.WISHLIST ? S.intl.formatToPlainString(S.t.p3RmJF, {
-                username: e
-            }) : S.intl.string(S.t.Ig6VDH);
-        return c || p ? !c && p ? {
-            title: t,
-            icon: (0, n.jsx)(u.mW, {
-                application: g
-            }),
-            shouldShow: !0
-        } : c && !p ? {
-            title: S.intl.string(S.t["4yiU7x"]),
-            icon: (0, n.jsx)(u.mW, {
-                application: g
-            }),
-            shouldShow: !0
-        } : {
-            title: S.intl.string(S.t["4yiU7x"]),
-            body: t,
-            icon: (0, n.jsx)(u.mW, {
-                application: g
-            }),
-            shouldShow: !0
-        } : {
-            title: S.intl.string(S.t["4yiU7x"]),
-            shouldShow: !1
-        }
-    }, [f, c, p, g, i]), x = r.useCallback(() => {
-        null == a || a(), (0, h.T)({
-            isOwner: !1,
-            giftingOrigin: w,
-            profileOwner: i,
-            isItemOwned: !1,
-            application: null != g ? g : void 0,
-            sku: t,
-            analyticsLocations: null != l ? l : []
-        })
-    }, [t, i, g, l, a]);
-    return (0, n.jsx)(y, C({
-        sku: t,
-        wishlistOwner: i,
-        analyticsLocations: l,
-        onClick: x,
-        hasMultipleTypes: c,
-        hasMultipleSources: p,
-        tooltipInfo: I,
-        source: f
-    }, _))
-}
-
-function j(e) {
-    var t, i;
-    let {
-        sku: s,
-        wishlistOwner: a,
-        analyticsLocations: o,
-        onClick: c,
-        hasMultipleTypes: p,
-        hasMultipleSources: f,
-        source: _
-    } = e, g = b(e, ["sku", "wishlistOwner", "analyticsLocations", "onClick", "hasMultipleTypes", "hasMultipleSources", "source"]), I = r.useMemo(() => {
-        let e = d.Ay.getName(a),
-            t = _ === m.uS.WISHLIST ? S.intl.formatToPlainString(S.t.p3RmJF, {
-                username: e
-            }) : S.intl.string(S.t.Ig6VDH);
-        return p || f ? !p && f ? {
-            title: t,
-            shouldShow: !0
-        } : p && !f ? {
-            title: S.intl.string(S.t.HFhcqh),
-            icon: (0, n.jsx)(u.mW, {}),
-            shouldShow: !0
-        } : {
-            title: S.intl.string(S.t.HFhcqh),
-            body: t,
-            icon: (0, n.jsx)(u.mW, {}),
-            shouldShow: !0
-        } : {
-            title: S.intl.string(S.t.HFhcqh),
-            shouldShow: !1
-        }
-    }, [_, p, f, a]), O = r.useMemo(() => {
-        var e, t;
-        return null != s.bundledSkus && s.bundledSkus.length > 0 ? x.Eo : (null == (t = s.tenantMetadata) || null == (e = t.collectibles) ? void 0 : e.type) === l.R.NAMEPLATE ? x.qF : void 0
-    }, [s.bundledSkus, null == (i = s.tenantMetadata) || null == (t = i.collectibles) ? void 0 : t.type]), j = r.useMemo(() => () => {
-        (0, h._)({
-            isOwner: !1,
-            isItemOwned: !1,
-            onWishlistItemClick: c,
-            profileOwner: a,
-            sku: s,
-            analyticsLocations: null != o ? o : [],
-            giftingOrigin: w
-        })
-    }, [s, a, c, o]);
-    return (0, n.jsx)(y, C({
-        sku: s,
-        wishlistOwner: a,
-        analyticsLocations: o,
-        onClick: j,
-        hasMultipleTypes: p,
-        hasMultipleSources: f,
-        tooltipInfo: I,
-        source: _,
-        skuPreviewStyle: O
-    }, g))
-}
-
-function T(e) {
-    let {
-        sku: t
-    } = e, i = b(e, ["sku"]);
+        ...i
+    } = e;
     switch (t.productLine) {
-        case g.EZt.SOCIAL_LAYER_GAME_ITEM:
-            return (0, n.jsx)(O, C({
-                sku: t
-            }, i));
-        case g.EZt.COLLECTIBLES:
-            return (0, n.jsx)(j, C({
-                sku: t
-            }, i));
+        case S.EZt.SOCIAL_LAYER_GAME_ITEM:
+            return (0, n.jsx)(T, {
+                sku: t,
+                ...i
+            });
+        case S.EZt.COLLECTIBLES:
+            return (0, n.jsx)(b, {
+                sku: t,
+                ...i
+            });
         default:
             return null
     }

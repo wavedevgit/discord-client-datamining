@@ -1,172 +1,142 @@
 /** chunk id: 217549, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => j
-}), n(321073), n(896048);
-var r = n(627968),
-    i = n(64700),
+    A: () => y
+}), n(321073);
+var i = n(627968),
+    r = n(64700),
     l = n(311907),
     a = n(397927),
     s = n(308368),
     o = n(956793),
-    c = n(573648),
-    u = n(833349),
-    d = n(765379),
-    p = n(61330),
+    d = n(573648),
+    c = n(833349),
+    u = n(765379),
+    A = n(61330),
     h = n(15285),
-    f = n(651743),
-    g = n(780964),
-    m = n(840065),
-    A = n(962173),
-    _ = n(134861),
-    b = n(189081),
-    E = n(194871),
-    O = n(954571),
-    y = n(144914),
-    I = n(715671),
-    v = n(652215),
-    S = n(985018);
+    _ = n(651743),
+    m = n(780964),
+    p = n(840065),
+    g = n(962173),
+    E = n(134861),
+    I = n(189081),
+    f = n(194871),
+    C = n(954571),
+    T = n(144914),
+    N = n(715671),
+    S = n(652215),
+    x = n(985018);
+let v = d.A.get(S.fg2.XBOX).name;
 
-function C(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = r
-        })
-    }
-    return e
-}
-
-function N(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
-        }
-        return n
-    })(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-let T = c.A.get(v.fg2.XBOX).name;
-
-function j(e) {
+function y(e) {
     let {
         currentActivities: t
-    } = e, n = t.length > 1, j = function(e) {
+    } = e, n = t.length > 1, y = function(e) {
         let {
             currentActivities: t
-        } = e, n = (0, l.bG)([A.A], () => A.A.getAccounts().some(e => e.type === c.A.get(v.fg2.XBOX).type)), i = t.some(e => {
+        } = e, n = (0, l.bG)([g.A], () => g.A.getAccounts().some(e => e.type === d.A.get(S.fg2.XBOX).type)), r = t.some(e => {
             let {
                 activity: t
             } = e;
-            return (0, p.A)(t)
+            return (0, A.A)(t)
         });
-        return n || !i ? null : (0, r.jsx)(a.Drp, {
+        return n || !r ? null : (0, i.jsx)(a.Drp, {
             id: "xbox-connect",
-            action: () => (0, m.openUserSettings)(g.X.CONNECTIONS_PANEL, {
-                section: v.nc_.CONNECTIONS
+            action: () => (0, p.openUserSettings)(m.X.CONNECTIONS_PANEL, {
+                section: S.nc_.CONNECTIONS
             }),
-            label: S.intl.formatToPlainString(S.t.XWSHTb, {
-                platform: T
+            label: x.intl.formatToPlainString(x.t.XWSHTb, {
+                platform: v
             })
         })
-    }(e), x = function(e) {
+    }(e), b = function(e) {
         let {
             currentActivities: t
-        } = e, n = i.useContext(O.AnalyticsContext);
-        return (0, l.yK)([h.Ay, b.A, f.A, E.A, _.A], () => t.filter(e => !(0, d.A)(e.activity)).map(e => {
+        } = e, n = r.useContext(C.AnalyticsContext);
+        return (0, l.yK)([h.Ay, I.A, _.A, f.A, E.A], () => t.filter(e => !(0, u.A)(e.activity)).map(e => {
             let {
                 activity: t,
-                game: r
-            } = e, i = b.A.getActiveLibraryApplication(r.id);
-            return N(C({}, e), {
-                libraryApplication: i,
-                canJoin: null != t && (0, u.A)(t, v.jUm.JOIN) && t.type === v.$pd.PLAYING,
-                canPlay: (0, y.A)({
-                    LibraryApplicationStore: b.A,
-                    LaunchableGameStore: f.A,
-                    DispatchApplicationStore: E.A,
-                    ConnectedAppsStore: _.A,
-                    applicationId: r.id,
-                    branchId: null != i ? i.branchId : null
+                game: i
+            } = e, r = I.A.getActiveLibraryApplication(i.id);
+            return {
+                ...e,
+                libraryApplication: r,
+                canJoin: null != t && (0, c.A)(t, S.jUm.JOIN) && t.type === S.$pd.PLAYING,
+                canPlay: (0, T.A)({
+                    LibraryApplicationStore: I.A,
+                    LaunchableGameStore: _.A,
+                    DispatchApplicationStore: f.A,
+                    ConnectedAppsStore: E.A,
+                    applicationId: i.id,
+                    branchId: null != r ? r.branchId : null
                 }),
-                isLaunching: f.A.launchingGames.has(r.id),
-                isRunning: h.Ay.getRunningVerifiedApplicationIds().includes(r.id),
+                isLaunching: _.A.launchingGames.has(i.id),
+                isRunning: h.Ay.getRunningVerifiedApplicationIds().includes(i.id),
                 location: n.location
-            })
+            }
         }), [n.location, t])
-    }(e), P = [];
-    for (let e of x) {
+    }(e), O = [];
+    for (let e of b) {
         let {
             activity: t
         } = e;
-        null != t && null != t.type && P.push(function(e, t) {
+        null != t && null != t.type && O.push(function(e, t) {
             let {
                 canJoin: n,
-                activity: i,
+                activity: r,
                 activityUser: l
             } = e;
-            if (!n || null == i) return null;
-            async function c() {
-                if (null == i) return;
+            if (!n || null == r) return null;
+            async function d() {
+                if (null == r) return;
                 let e = await s.A.sendActivityInviteUser({
-                    type: v.xL.JOIN_REQUEST,
+                    type: S.xL.JOIN_REQUEST,
                     userId: l.id,
-                    activity: i,
-                    location: v.ThZ.USER_ACTIVITY_ACTIONS
+                    activity: r,
+                    location: S.ThZ.USER_ACTIVITY_ACTIONS
                 });
                 null != e && o.default.selectPrivateChannel(e.id)
             }
-            return (0, r.jsx)(a.Drp, {
-                id: "join-".concat(i.session_id),
-                label: t ? S.intl.formatToPlainString(S.t.wFAvxM, {
+            return (0, i.jsx)(a.Drp, {
+                id: `join-${r.session_id}`,
+                label: t ? x.intl.formatToPlainString(x.t.wFAvxM, {
                     name: l.toString()
-                }) : S.intl.string(S.t.OKsSCR),
-                action: c
+                }) : x.intl.string(x.t.OKsSCR),
+                action: d
             })
         }(e, n), function(e, t) {
             let {
                 activity: n,
-                game: i,
+                game: r,
                 libraryApplication: l,
                 location: s,
                 canPlay: o,
-                isRunning: c,
-                isLaunching: u
+                isRunning: d,
+                isLaunching: c
             } = e;
             if (!o || null == n) return null;
-            let d = c ? S.intl.formatToPlainString(S.t["gBme/4"], {
-                name: i.name
-            }) : u ? S.intl.formatToPlainString(S.t.WtSQwG, {
-                name: i.name
+            let u = d ? x.intl.formatToPlainString(x.t["gBme/4"], {
+                name: r.name
+            }) : c ? x.intl.formatToPlainString(x.t.WtSQwG, {
+                name: r.name
             }) : void 0;
-            return (0, r.jsx)(a.Drp, {
-                id: "play-".concat(n.session_id),
+            return (0, i.jsx)(a.Drp, {
+                id: `play-${n.session_id}`,
                 action: function() {
-                    (0, I.playApplication)(i.id, l, {
+                    (0, N.playApplication)(r.id, l, {
                         analyticsParams: {
-                            location: N(C({}, s), {
-                                object: v.ZSU.LIST_ITEM
-                            })
+                            location: {
+                                ...s,
+                                object: S.ZSU.LIST_ITEM
+                            }
                         }
                     })
                 },
-                label: t ? S.intl.formatToPlainString(S.t.ZDZEJN, {
-                    name: i.name
-                }) : S.intl.string(S.t.XKUw8m),
-                subtext: d
+                label: t ? x.intl.formatToPlainString(x.t.ZDZEJN, {
+                    name: r.name
+                }) : x.intl.string(x.t.XKUw8m),
+                subtext: u
             })
         }(e, n))
     }
-    return [j, ...P]
+    return [y, ...O]
 }

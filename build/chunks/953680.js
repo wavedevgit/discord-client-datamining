@@ -1,81 +1,81 @@
 /** chunk id: 953680, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => g
-}), n(747238), n(896048);
-var r = n(627968),
-    i = n(64700),
-    s = n(503698),
-    l = n.n(s),
+    A: () => p
+});
+var i = n(627968),
+    s = n(64700),
+    r = n(503698),
+    l = n.n(r),
     a = n(397927),
     o = n(129014),
-    c = n(642277),
-    u = n(854378),
-    d = n(976860),
+    d = n(642277),
+    c = n(854378),
+    u = n(976860),
     h = n(985018),
-    p = n(473169);
-let g = function(e) {
+    _ = n(473169);
+let p = function(e) {
     let {
         match: t,
         location: n,
-        attemptDeepLink: s
-    } = e, [g, f] = i.useState(0);
-    i.useEffect(() => {
+        attemptDeepLink: r
+    } = e, [p, g] = s.useState(0);
+    s.useEffect(() => {
         o.default.once("connected", () => {
-            f(1)
+            g(1)
         }), o.default.once("disconnected", () => {
-            (0, d.pX)((0, c.W)())
+            (0, u.pX)((0, d.W)())
         }), o.default.connect()
-    }, []), i.useEffect(() => {
-        if (0 !== g) return;
-        let e = setTimeout(() => (0, d.pX)((0, c.W)()), 3e3);
+    }, []), s.useEffect(() => {
+        if (0 !== p) return;
+        let e = setTimeout(() => (0, u.pX)((0, d.W)()), 3e3);
         return () => clearTimeout(e)
-    }, [g]);
-    let _ = i.useCallback(async (e, t) => {
+    }, [p]);
+    let m = s.useCallback(async (e, t) => {
         try {
-            f(2), await s(e, t), f(3)
+            g(2), await r(e, t), g(3)
         } catch (e) {
             console.error("Error opening deeplink", e)
         }
-    }, [s]);
-    if ((0, d.MX)()) return null;
-    switch (g) {
+    }, [r]);
+    if ((0, u.MX)()) return null;
+    switch (p) {
         case 1:
-            return (0, r.jsxs)(u.Ay, {
-                children: [(0, r.jsx)(u.hE, {
-                    className: p.QB,
+            return (0, i.jsxs)(c.Ay, {
+                children: [(0, i.jsx)(c.hE, {
+                    className: _.QB,
                     children: h.intl.string(h.t.qllnGm)
-                }), (0, r.jsx)(u.tK, {
+                }), (0, i.jsx)(c.tK, {
                     children: h.intl.string(h.t.SXCxye)
-                }), (0, r.jsx)("div", {
-                    className: p.eT,
-                    children: (0, r.jsx)(a.Button, {
+                }), (0, i.jsx)("div", {
+                    className: _.eT,
+                    children: (0, i.jsx)(a.Button, {
                         text: h.intl.string(h.t.UQvCf7),
                         fullWidth: !0,
-                        onClick: () => _(t, n)
+                        onClick: () => m(t, n)
                     })
-                }), (0, r.jsx)("div", {
-                    className: l()(p.Ot, p.F1),
-                    children: (0, r.jsx)(a.QWc, {
+                }), (0, i.jsx)("div", {
+                    className: l()(_.Ot, _.F1),
+                    children: (0, i.jsx)(a.QWc, {
                         text: h.intl.string(h.t["2ixEBi"]),
                         textVariant: "text-sm/normal",
-                        onClick: () => (0, d.pX)((0, c.W)())
+                        onClick: () => (0, u.pX)((0, d.W)())
                     })
                 })]
             });
         case 0:
         case 2:
-            return (0, r.jsxs)(u.Ay, {
-                children: [(0, r.jsx)(u.hE, {
+            return (0, i.jsxs)(c.Ay, {
+                children: [(0, i.jsx)(c.hE, {
                     children: h.intl.string(h.t["Z+hCVU"])
-                }), (0, r.jsx)(u.CK, {})]
+                }), (0, i.jsx)(c.CK, {})]
             });
         case 3:
-            return (0, r.jsxs)(u.Ay, {
-                children: [(0, r.jsx)(u.hE, {
-                    className: p.QB,
+            return (0, i.jsxs)(c.Ay, {
+                children: [(0, i.jsx)(c.hE, {
+                    className: _.QB,
                     children: h.intl.string(h.t.csrAMJ)
-                }), (0, r.jsx)(u.tK, {
+                }), (0, i.jsx)(c.tK, {
                     children: h.intl.string(h.t.ghBJz9)
                 })]
             })

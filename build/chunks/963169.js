@@ -1,50 +1,49 @@
-/** chunk id: 963169, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    MS: () => u,
-    OE: () => d,
-    Qb: () => f
+/** chunk id: 963169, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    MS: () => d,
+    OE: () => u,
+    Qb: () => h
 });
-var r = n(73153),
-    i = n(824865),
-    a = n(976860),
-    o = n(954571),
-    s = n(545167),
-    l = n(729904),
-    c = n(652215);
+var n = i(73153),
+    r = i(824865),
+    l = i(976860),
+    a = i(954571),
+    s = i(545167),
+    o = i(729904),
+    c = i(652215);
 
-function u(e, t) {
-    r.h.dispatch({
+function d(e, t) {
+    n.h.dispatch({
         type: "ROUTE_CHANGED",
         location: e,
         action: t
     })
 }
 
-function d(e) {
-    if (!(0, a.TX)()) return;
-    if (o.default.track(c.HAw.APP_BACK_FORWARD_NAVIGATED, {
+function u(e) {
+    if (!(0, l.TX)()) return;
+    if (a.default.track(c.HAw.APP_BACK_FORWARD_NAVIGATED, {
             nav_direction: -1,
             nav_trigger: e
         }), !(0, s.vY)({
-            location: e
-        })) return void(0, a.aX)();
-    let t = l.A.backDestination;
-    null != t && (0, a.pX)(t.path, {
-        source: i.A.USER_NAVIGATED_BACK
+            location: "navigatingBackForward"
+        })) return void(0, l.aX)();
+    let t = o.A.backDestination;
+    null != t && (0, l.pX)(t.path, {
+        source: r.A.USER_NAVIGATED_BACK
     })
 }
 
-function f(e) {
-    if (!(0, a.TX)()) return;
-    if (o.default.track(c.HAw.APP_BACK_FORWARD_NAVIGATED, {
+function h(e) {
+    if (!(0, l.TX)()) return;
+    if (a.default.track(c.HAw.APP_BACK_FORWARD_NAVIGATED, {
             nav_direction: 1,
             nav_trigger: e
         }), !(0, s.vY)({
-            location: e
-        })) return void(0, a.sY)();
-    let t = l.A.forwardDestination;
-    null != t && (0, a.pX)(t.path, {
-        source: i.A.USER_NAVIGATED_FORWARD
+            location: "navigatingBackForward"
+        })) return void(0, l.sY)();
+    let t = o.A.forwardDestination;
+    null != t && (0, l.pX)(t.path, {
+        source: r.A.USER_NAVIGATED_FORWARD
     })
 }

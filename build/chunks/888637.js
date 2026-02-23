@@ -10,8 +10,8 @@ var i = n(503698),
     a = n(661191),
     u = n(555407),
     c = n(349112),
-    o = n(985018),
-    d = n(150837);
+    d = n(985018),
+    o = n(150837);
 
 function h(t) {
     let {
@@ -19,39 +19,39 @@ function h(t) {
         recurrenceRule: n,
         guildEventId: i,
         onRecurrenceClick: h,
-        hideScroller: v = !1,
-        activeRecurrenceId: m
+        hideScroller: m = !1,
+        activeRecurrenceId: g
     } = t, {
-        recurrenceStartTimes: g,
-        canViewMoreRecurrences: f,
-        updateRecurrenceStartTimes: x
-    } = (0, u.A)(i, e, n), p = v ? "div" : s.HOs;
+        recurrenceStartTimes: x,
+        canViewMoreRecurrences: v,
+        updateRecurrenceStartTimes: f
+    } = (0, u.A)(i, e, n), p = m ? "div" : s.HOs;
     return (0, l.jsxs)("div", {
-        className: d.w5,
+        className: o.w5,
         children: [(0, l.jsx)(s.Heading, {
             variant: "heading-sm/medium",
-            className: d.R_,
-            children: o.intl.string(o.t["D/jjoa"])
+            className: o.R_,
+            children: d.intl.string(d.t["D/jjoa"])
         }), (0, l.jsxs)(p, {
-            className: r()(d.XG, {
-                [d.cq]: !v
+            className: r()(o.XG, {
+                [o.cq]: !m
             }),
-            children: [g.map(t => {
+            children: [x.map(t => {
                 let e = a.default.fromTimestamp(t.getTime());
                 return (0, l.jsx)(c.A, {
                     recurrenceId: e,
                     originalScheduledStartTime: t,
                     guildEventId: i,
                     onClick: h,
-                    isActive: e === m
+                    isActive: e === g
                 }, e)
-            }), f && (0, l.jsx)("div", {
-                className: d.UD,
+            }), v && (0, l.jsx)("div", {
+                className: o.UD,
                 children: (0, l.jsx)(s.QWc, {
                     onClick: t => {
-                        t.stopPropagation(), x()
+                        t.stopPropagation(), f()
                     },
-                    text: o.intl.string(o.t["8O7Hpy"]),
+                    text: d.intl.string(d.t["8O7Hpy"]),
                     size: "sm"
                 })
             })]

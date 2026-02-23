@@ -1,29 +1,29 @@
-/** chunk id: 816709, original params: t,e,n (module,exports,require) **/
-n.d(e, {
-    A: () => o
+/** chunk id: 816709, original params: t,e,i (module,exports,require) **/
+i.d(e, {
+    A: () => a
 });
-var l = n(627968);
-n(64700);
-var r = n(9578),
-    i = n(985018),
-    u = n(202509);
+var n = i(627968);
+i(64700);
+var l = i(9578),
+    s = i(985018),
+    r = i(202509);
 
-function o(t) {
+function a(t) {
     let {
         termsOfServiceUrl: e,
-        privacyPolicyUrl: n
+        privacyPolicyUrl: i
     } = t;
-    return null == e && null == n ? null : (0, l.jsxs)("span", {
-        className: u.Q,
-        children: [null != e && (0, l.jsx)(r.A, {
+    return null == e && null == i ? null : (0, n.jsxs)("span", {
+        className: r.Q,
+        children: [null != e && (0, n.jsx)(l.A, {
             href: e,
-            children: i.intl.string(i.t["8S0kcM"])
-        }), null != e && null != n && (0, l.jsx)("span", {
+            children: s.intl.string(s.t["8S0kcM"])
+        }), null != e && null != i && (0, n.jsx)("span", {
             "aria-disabled": "true",
             children: "•"
-        }), null != n && (0, l.jsx)(r.A, {
-            href: n,
-            children: i.intl.string(i.t.ZpyeCm)
+        }), null != i && (0, n.jsx)(l.A, {
+            href: i,
+            children: s.intl.string(s.t.ZpyeCm)
         })]
     })
 }

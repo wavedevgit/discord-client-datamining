@@ -1,16 +1,16 @@
 /** chunk id: 372598, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    XO: () => i,
-    dL: () => l
+    XO: () => l,
+    dL: () => i
 });
 var r = n(411335);
 
-function l(e) {
-    let t = i();
+function i(e) {
+    let t = l();
     return Array.from(e.defaultActionTypes).map(e => t[e])
 }
 
-function i() {
+function l() {
     return {
         [r.AH.BLOCK_MESSAGE]: {
             type: r.AH.BLOCK_MESSAGE,

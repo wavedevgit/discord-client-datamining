@@ -1,36 +1,32 @@
 /** chunk id: 451802, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => v,
-    E: () => _
-}), n(896048);
-var r, i = n(627968),
-    s = n(64700),
-    o = n(503698),
-    l = n.n(o),
-    a = n(507392),
-    c = n.n(a),
+    A: () => C,
+    E: () => x
+});
+var i, s = n(627968),
+    a = n(64700),
+    r = n(503698),
+    l = n.n(r),
+    o = n(507392),
+    c = n.n(o),
     d = n(735438),
     u = n.n(d),
-    h = n(397927),
-    p = n(235986),
-    b = n(350535),
-    m = n(985018),
-    g = n(181204);
-
-function f(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-var _ = ((r = {}).DEFAULT = "DEFAULT", r.RECORDING = "RECORDING", r);
-let O = {
-    DEFAULT: g.__invalid_default,
-    RECORDING: g.oz
+    _ = n(397927),
+    m = n(235986),
+    A = n(350535),
+    g = n(985018),
+    h = n(181204),
+    x = ((i = {}).DEFAULT = "DEFAULT", i.RECORDING = "RECORDING", i);
+let p = {
+    DEFAULT: h.__invalid_default,
+    RECORDING: h.oz
 };
-class C extends s.PureComponent {
+class E extends a.PureComponent {
+    _inputId = u().uniqueId("key-recorder-");
+    _unregisterNativeRecorder = null;
+    _mousedownMode = null;
+    _inputRef = a.createRef();
+    _containerRef = a.createRef();
     componentWillUnmount() {
         null != this._unregisterNativeRecorder && this._unregisterNativeRecorder()
     }
@@ -42,83 +38,82 @@ class C extends s.PureComponent {
         } = e;
         if (n === t) return;
         let {
-            _inputRef: r
+            _inputRef: i
         } = this;
-        if (null == r.current) return;
+        if (null == i.current) return;
         let {
-            activeElement: i
+            activeElement: s
         } = document;
-        "DEFAULT" === t && r.current === i && r.current.blur(), "RECORDING" === t && r.current !== i && r.current.focus()
+        "DEFAULT" === t && i.current === s && i.current.blur(), "RECORDING" === t && i.current !== s && i.current.focus()
     }
+    setInputRef = e => {
+        let {
+            registerNativeRecorder: t,
+            onChange: n
+        } = this.props;
+        if (this._inputRef.current = e, this._unregisterNativeRecorder?.(), null != e)
+            if (null != t && null != n) try {
+                this._unregisterNativeRecorder = t(e.id, n)
+            } catch (e) {
+                this._unregisterNativeRecorder = null
+            } else null != n && (new(c())(e).handleKey = n)
+    };
+    handleClick = e => {
+        e.stopPropagation(), e.preventDefault();
+        let {
+            onClick: t,
+            disableOnClickWhileRecording: n
+        } = this.props;
+        n && "RECORDING" === this._mousedownMode || t()
+    };
+    handleMouseDown = () => {
+        this._mousedownMode = this.props.mode
+    };
     render() {
         let e, {
                 mode: t,
                 value: n,
-                disabled: r
+                disabled: i
             } = this.props,
-            s = (0, b.dI)(n, !0);
-        return e = "RECORDING" === t ? m.intl.string(m.t.bmOri0) : 0 === n.length ? m.intl.string(m.t.co3wt9) : m.intl.string(m.t.idFMvH), (0, i.jsx)(h.vN3, {
+            a = (0, A.dI)(n, !0);
+        return e = "RECORDING" === t ? g.intl.string(g.t.bmOri0) : 0 === n.length ? g.intl.string(g.t.co3wt9) : g.intl.string(g.t.idFMvH), (0, s.jsx)(_.vN3, {
             focusTarget: this._inputRef,
             ringTarget: this._containerRef,
-            children: (0, i.jsx)("div", {
+            children: (0, s.jsx)("div", {
                 onClick: this.handleClick,
                 onMouseDown: this.handleMouseDown,
                 ref: this._containerRef,
-                className: l()(g.Qm, O[t], {
-                    [g.Qz]: r
+                className: l()(h.Qm, p[t], {
+                    [h.Qz]: i
                 }),
-                children: (0, i.jsxs)(p.A, {
-                    className: g.Pp,
-                    children: [(0, i.jsx)(p.A.Child, {
-                        className: g.bZ,
-                        children: (0, i.jsx)("input", {
+                children: (0, s.jsxs)(m.A, {
+                    className: h.Pp,
+                    children: [(0, s.jsx)(m.A.Child, {
+                        className: h.bZ,
+                        children: (0, s.jsx)("input", {
                             id: this._inputId,
-                            placeholder: m.intl.string(m.t.nWRdnl),
+                            placeholder: g.intl.string(g.t.nWRdnl),
                             type: "text",
                             ref: this.setInputRef,
                             readOnly: !0,
-                            value: s,
-                            disabled: "RECORDING" !== this.props.mode || r
+                            value: a,
+                            disabled: "RECORDING" !== this.props.mode || i
                         })
-                    }), (0, i.jsx)("div", {
-                        className: g.UD,
-                        children: (0, i.jsx)(h.Button, {
+                    }), (0, s.jsx)("div", {
+                        className: h.UD,
+                        children: (0, s.jsx)(_.Button, {
                             size: "sm",
                             variant: "RECORDING" === this.props.mode ? "critical-secondary" : "secondary",
                             text: e,
                             onClick: e => {
                                 e.stopPropagation(), e.preventDefault(), this.handleClick(e)
                             },
-                            disabled: r
+                            disabled: i
                         })
                     })]
                 })
             })
         })
     }
-    constructor(...e) {
-        super(...e), f(this, "_inputId", u().uniqueId("key-recorder-")), f(this, "_unregisterNativeRecorder", null), f(this, "_mousedownMode", null), f(this, "_inputRef", s.createRef()), f(this, "_containerRef", s.createRef()), f(this, "setInputRef", e => {
-            var t;
-            let {
-                registerNativeRecorder: n,
-                onChange: r
-            } = this.props;
-            if (this._inputRef.current = e, null == (t = this._unregisterNativeRecorder) || t.call(this), null != e)
-                if (null != n && null != r) try {
-                    this._unregisterNativeRecorder = n(e.id, r)
-                } catch (e) {
-                    this._unregisterNativeRecorder = null
-                } else null != r && (new(c())(e).handleKey = r)
-        }), f(this, "handleClick", e => {
-            e.stopPropagation(), e.preventDefault();
-            let {
-                onClick: t,
-                disableOnClickWhileRecording: n
-            } = this.props;
-            n && "RECORDING" === this._mousedownMode || t()
-        }), f(this, "handleMouseDown", () => {
-            this._mousedownMode = this.props.mode
-        })
-    }
 }
-let v = C
+let C = E

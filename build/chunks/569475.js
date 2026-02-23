@@ -2,10 +2,10 @@
 n.d(t, {
     A: () => l
 });
-var r = n(933958),
-    i = n(734057);
+var i = n(933958),
+    r = n(734057);
 
 function l() {
-    let e = r.Ay.getConnectedActivityChannelId();
-    return i.A.getChannel(e)
+    let e = i.Ay.getConnectedActivityChannelId();
+    return r.A.getChannel(e)
 }

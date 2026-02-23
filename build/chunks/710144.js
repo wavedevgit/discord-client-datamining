@@ -1,12 +1,11 @@
 /** chunk id: 710144, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => l
 });
-var i = n(627968),
-    s = n(64700);
+var s = n(627968),
+    i = n(64700);
 let r = e => t => {
-    null == t || t.stopPropagation(), e()
+    t?.stopPropagation(), e()
 };
 
 function l(e) {
@@ -14,8 +13,8 @@ function l(e) {
         onClick: t,
         className: n,
         children: l
-    } = e, o = s.useRef(null);
-    return (0, i.jsx)("div", {
+    } = e, o = i.useRef(null);
+    return (0, s.jsx)("div", {
         onClick: t,
         ref: o,
         className: n,

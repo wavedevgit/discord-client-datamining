@@ -1,50 +1,40 @@
 /** chunk id: 765624, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => m
-}), n(896048);
-var r = n(627968),
-    i = n(64700),
-    s = n(111956),
-    l = n.n(s),
+    A: () => g
+});
+var i = n(627968),
+    s = n(64700),
+    r = n(111956),
+    l = n.n(r),
     a = n(615300),
     o = n(607399),
-    c = n(319060),
-    u = n(397927),
-    d = n(240248),
+    d = n(319060),
+    c = n(397927),
+    u = n(240248),
     h = n(299198);
-
-function p(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-
-function g(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            p(e, t, n[t])
-        })
-    }
-    return e
-}
-let f = (0, d.xI)(c.A.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
-    _ = {
+let _ = (0, u.xI)(d.A.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
+    p = {
         friction: 10,
         tension: 130
     },
-    m = function(e) {
-        return class extends i.Component {
+    g = function(e) {
+        return class extends s.Component {
+            timeout;
+            anim = new a.A.Value(0);
+            state = {
+                shouldAnimate: !o.Fr
+            };
             componentDidMount() {
                 o.Fr || (window.addEventListener("resize", this.handleResizeDebounced), this.handleResize())
             }
+            handleResize = () => {
+                let e = window.innerWidth > _;
+                !this.state.shouldAnimate && e && this.anim.setValue(1), this.setState({
+                    shouldAnimate: e
+                })
+            };
+            handleResizeDebounced = l()(this.handleResize, 60);
             componentWillUnmount() {
                 clearTimeout(this.timeout), window.removeEventListener("resize", this.handleResizeDebounced)
             }
@@ -58,9 +48,10 @@ let f = (0, d.xI)(c.A.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
                 this.state.shouldAnimate ? this.animateTo(0, e) : e()
             }
             animateTo(e, t) {
-                a.A.spring(this.anim, g({
-                    toValue: e
-                }, _)).start(t)
+                a.A.spring(this.anim, {
+                    toValue: e,
+                    ...p
+                }).start(t)
             }
             getAnimatedStyle(e) {
                 return this.state.shouldAnimate ? {
@@ -81,31 +72,23 @@ let f = (0, d.xI)(c.A.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
                 } : null
             }
             render() {
-                return (0, r.jsx)("div", {
+                return (0, i.jsx)("div", {
                     className: h.i,
-                    children: (0, r.jsx)(u.CZY.Consumer, {
+                    children: (0, i.jsx)(c.CZY.Consumer, {
                         children: t => {
                             let {
                                 reducedMotion: n
                             } = t;
-                            return (0, r.jsx)(a.A.div, {
+                            return (0, i.jsx)(a.A.div, {
                                 className: h.l,
                                 style: this.getAnimatedStyle(n.enabled),
-                                children: (0, r.jsx)(e, g({}, this.props))
+                                children: (0, i.jsx)(e, {
+                                    ...this.props
+                                })
                             })
                         }
                     })
                 })
-            }
-            constructor(...e) {
-                super(...e), p(this, "timeout", void 0), p(this, "anim", new a.A.Value(0)), p(this, "state", {
-                    shouldAnimate: !o.Fr
-                }), p(this, "handleResize", () => {
-                    let e = window.innerWidth > f;
-                    !this.state.shouldAnimate && e && this.anim.setValue(1), this.setState({
-                        shouldAnimate: e
-                    })
-                }), p(this, "handleResizeDebounced", l()(this.handleResize, 60))
             }
         }
     }

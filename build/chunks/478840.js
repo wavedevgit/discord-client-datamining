@@ -1,94 +1,92 @@
-/** chunk id: 478840, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    V: () => c
+/** chunk id: 478840, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    V: () => d
 });
-var i = n(310784),
-    l = n.n(i),
-    r = n(325335),
-    o = n(998304),
-    a = n(300703);
-let s = "#ffffff",
+var n = i(310784),
+    l = i.n(n),
+    a = i(325335),
+    s = i(998304),
+    r = i(300703);
+let o = "#ffffff",
     u = "#36393e",
-    c = (e, t, n) => {
-        var i;
+    d = (e, t, i) => {
         if (null == e || e.length < 1) return null;
-        let c = (e => {
+        let n = (e => {
                 let {
                     colors: t,
-                    saturationFactor: n = 1,
-                    shouldProcessMobileColors: i = !1
-                } = e, c = (e => {
-                    var t, n;
+                    saturationFactor: i = 1,
+                    shouldProcessMobileColors: n = !1
+                } = e, d = (e => {
                     let {
-                        colors: i,
-                        saturationFactor: a = 1
+                        colors: t,
+                        saturationFactor: i = 1
                     } = e;
-                    if (null == i || i.length < 1) return null;
-                    let c = (0, o.h6)(i),
-                        d = r.A.parseString(c);
-                    if (null == d) return null;
-                    let p = (0, o.IB)(d.red, d.blue, d.green),
-                        h = null != (t = (0, o.lZ)({
-                            foreground: l()((0, o.fE)(d, .6, !0).toHexString()),
-                            background: l()(s),
+                    if (null == t || t.length < 1) return null;
+                    let n = (0, s.h6)(t),
+                        r = a.A.parseString(n);
+                    if (null == r) return null;
+                    let d = (0, s.IB)(r.red, r.blue, r.green),
+                        c = (0, s.lZ)({
+                            foreground: l()((0, s.fE)(r, .6, !0).toHexString()),
+                            background: l()(o),
                             ratio: 3,
-                            saturationFactor: a
-                        })) ? t : d,
-                        m = null != (n = (0, o.lZ)({
-                            foreground: l()((0, o.fE)(d, .6, !1).toHexString()),
+                            saturationFactor: i
+                        }) ?? r,
+                        h = (0, s.lZ)({
+                            foreground: l()((0, s.fE)(r, .6, !1).toHexString()),
                             background: l()(u),
                             ratio: 5,
-                            saturationFactor: a
-                        })) ? n : d,
-                        f = (0, o.lZ)({
-                            foreground: l()(c),
-                            background: l()(s),
+                            saturationFactor: i
+                        }) ?? r,
+                        m = (0, s.lZ)({
+                            foreground: l()(n),
+                            background: l()(o),
                             ratio: 7,
-                            saturationFactor: a
+                            saturationFactor: i
                         }),
-                        g = (0, o.lZ)({
-                            foreground: l()(c),
+                        p = (0, s.lZ)({
+                            foreground: l()(n),
                             background: l()(u),
                             ratio: 7,
-                            saturationFactor: a
+                            saturationFactor: i
                         });
                     return {
                         LIGHT: {
-                            accentColor: null == f ? void 0 : f.hex(),
-                            backgroundColor: (0, o.WN)({
-                                colorRGB: h,
-                                saturationFactor: a
+                            accentColor: m?.hex(),
+                            backgroundColor: (0, s.WN)({
+                                colorRGB: c,
+                                saturationFactor: i
                             }),
-                            highlightColor: null == d ? void 0 : d.toHexString(),
-                            opacity: (null == p ? void 0 : p.saturation) < .1 ? .35 : .1
+                            highlightColor: r?.toHexString(),
+                            opacity: d?.saturation < .1 ? .35 : .1
                         },
                         DARK: {
-                            accentColor: null == g ? void 0 : g.hex(),
-                            backgroundColor: (0, o.WN)({
-                                colorRGB: m,
-                                saturationFactor: a
+                            accentColor: p?.hex(),
+                            backgroundColor: (0, s.WN)({
+                                colorRGB: h,
+                                saturationFactor: i
                             }),
-                            highlightColor: null == d ? void 0 : d.toHexString(),
-                            opacity: (null == p ? void 0 : p.saturation) < .1 ? .5 : .2
+                            highlightColor: r?.toHexString(),
+                            opacity: d?.saturation < .1 ? .5 : .2
                         }
                     }
                 })({
                     colors: t,
-                    saturationFactor: n
+                    saturationFactor: i
                 });
-                return a.A.applyPlatformToThemedEmojiColorPalette({
-                    palette: c,
-                    shouldProcessMobileColors: i
+                return r.A.applyPlatformToThemedEmojiColorPalette({
+                    palette: d,
+                    shouldProcessMobileColors: n
                 })
             })({
                 colors: e,
                 saturationFactor: t
             }),
-            d = n ? null == c ? void 0 : c.DARK : null == c ? void 0 : c.LIGHT;
+            d = i ? n?.DARK : n?.LIGHT;
         return {
-            backgroundColor: null == d ? void 0 : d.backgroundColor,
-            accentColor: null == d ? void 0 : d.accentColor,
-            highlightColor: null == d ? void 0 : d.highlightColor,
-            opacity: null != (i = null == d ? void 0 : d.opacity) ? i : .15
+            backgroundColor: d?.backgroundColor,
+            accentColor: d?.accentColor,
+            highlightColor: d?.highlightColor,
+            opacity: d?.opacity ?? .15
         }
     }

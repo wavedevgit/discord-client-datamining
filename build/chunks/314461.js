@@ -1,120 +1,92 @@
 /** chunk id: 314461, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    default: () => h
+    default: () => j
 });
-var r = n(627968);
+var l = n(627968);
 n(64700);
-var l = n(158954),
-    i = n(397927),
-    s = n(688810),
-    a = n(801264),
+var r = n(158954),
+    a = n(397927),
+    i = n(688810),
+    s = n(801264),
     d = n(397400),
     o = n(187549),
     c = n(355609),
     u = n(842319),
     m = n(27023),
     x = n(800007),
-    g = n(294726),
-    f = n(985018),
-    j = n(8577);
+    _ = n(294726),
+    g = n(985018),
+    f = n(8577);
 
-function p(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = r
-        })
-    }
-    return e
-}
-
-function v(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
-        }
-        return n
-    })(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-
-function b(e) {
+function h(e) {
     let {
         step: t,
         setFooterNode: n
-    } = (0, m.bv)(), s = (0, o.U)("GameServerSetupModal"), {
+    } = (0, m.bv)(), i = (0, o.U)("GameServerSetupModal"), {
         title: d,
-        subtitle: b
+        subtitle: h
     } = function(e) {
         switch (e) {
             case x.HS.SELECT_GAME:
                 return {
-                    title: f.intl.string(g.default["3vWDMz"]), subtitle: f.intl.string(g.default.Az5bjs)
+                    title: g.intl.string(_.default["3vWDMz"]), subtitle: g.intl.string(_.default.Az5bjs)
                 };
             case x.HS.SERVER_SETTINGS:
                 return {
-                    title: f.intl.string(g.default.RLGW9z)
+                    title: g.intl.string(_.default.RLGW9z)
                 }
         }
     }(t);
-    return (0, r.jsxs)(l.dWK, v(p({}, e), {
+    return (0, l.jsxs)(r.dWK, {
+        ...e,
         size: "lg",
-        children: [(0, r.jsx)(l.rQ0, {
+        children: [(0, l.jsx)(r.rQ0, {
             title: d,
-            subtitle: b
-        }), s && (0, r.jsx)("div", {
-            className: j.M,
-            children: (0, r.jsx)(a.A, {
-                look: a.k.WARNING,
-                children: f.intl.format(g.default.XzXjK2, {})
+            subtitle: h
+        }), i && (0, l.jsx)("div", {
+            className: f.M,
+            children: (0, l.jsx)(s.A, {
+                look: s.k.WARNING,
+                children: g.intl.format(_.default.XzXjK2, {})
             })
-        }), (0, r.jsx)(i.IpV, {
-            className: j.j,
+        }), (0, l.jsx)(a.IpV, {
+            className: f.j,
             style: {
                 width: x.ST
             },
-            children: (0, r.jsx)("div", {
+            children: (0, l.jsx)("div", {
                 style: {
                     padding: x.by
                 },
-                children: (0, r.jsxs)(i.tN_, {
+                children: (0, l.jsxs)(a.tN_, {
                     width: x.U$,
                     activeSlide: t,
-                    children: [(0, r.jsx)(i.q7S, {
+                    children: [(0, l.jsx)(a.q7S, {
                         id: x.HS.SELECT_GAME,
-                        children: (0, r.jsx)(c.A, {})
-                    }, x.HS.SELECT_GAME), (0, r.jsx)(i.q7S, {
+                        children: (0, l.jsx)(c.A, {})
+                    }, x.HS.SELECT_GAME), (0, l.jsx)(a.q7S, {
                         id: x.HS.SERVER_SETTINGS,
-                        children: (0, r.jsx)(u.A, {})
+                        children: (0, l.jsx)(u.A, {})
                     }, x.HS.SERVER_SETTINGS)]
                 })
             })
-        }), (0, r.jsx)("div", {
+        }), (0, l.jsx)("div", {
             ref: e => n(e)
         })]
-    }))
+    })
 }
 
-function h(e) {
+function j(e) {
     let {
         analyticsLocations: t
-    } = (0, s.Ay)();
-    return (0, d.wN)(e.guildId, t, e.analyticsLocation), (0, r.jsx)(s.f5, {
+    } = (0, i.Ay)();
+    return (0, d.wN)(e.guildId, t, e.analyticsLocation), (0, l.jsx)(i.f5, {
         value: t,
-        children: (0, r.jsx)(m.mf, v(p({}, e), {
-            children: (0, r.jsx)(b, p({}, e))
-        }))
+        children: (0, l.jsx)(m.mf, {
+            ...e,
+            children: (0, l.jsx)(h, {
+                ...e
+            })
+        })
     })
 }

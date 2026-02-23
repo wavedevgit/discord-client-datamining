@@ -1,17 +1,16 @@
-/** chunk id: 916974, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    CancellationContext: () => o,
+/** chunk id: 916974, original params: t,e,i (module,exports,require) **/
+i.d(e, {
+    CancellationContext: () => a,
     X: () => s
 });
-var r = n(64700),
-    i = n(158954),
-    a = n(788868);
-let o = r.createContext({
+var n = i(64700),
+    r = i(158954),
+    l = i(788868);
+let a = n.createContext({
         setStep: () => {},
-        premiumType: a.PremiumTypes.TIER_0,
+        premiumType: l.PremiumTypes.TIER_0,
         onClose: () => {},
-        transitionState: i.ip4.ENTERING,
+        transitionState: r.ip4.ENTERING,
         premiumSubscription: {},
         analyticsLocations: [],
         analyticsLocation: void 0,
@@ -26,4 +25,4 @@ let o = r.createContext({
         pauseDuration: null,
         setPauseDuration: () => {}
     }),
-    s = () => r.useContext(o)
+    s = () => n.useContext(a)

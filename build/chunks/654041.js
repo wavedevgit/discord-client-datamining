@@ -1,92 +1,92 @@
-/** chunk id: 654041, original params: e,t,r (module,exports,require) **/
-r.d(t, {
-    default: () => j
-}), r(896048), r(228524);
-var n = r(627968),
-    o = r(64700),
-    i = r(835245),
-    l = r(158954),
-    c = r(554146),
-    s = r(397927),
-    a = r(379848),
-    u = r(95035),
-    f = r(632738),
-    p = r(105428),
-    d = r(975571),
-    b = r(935649),
-    O = r(847599),
-    y = r(36149),
-    A = r(737567),
-    E = r(40449),
-    m = r(652215),
-    _ = r(239093),
-    R = r(985018),
-    g = r(891921);
-let j = function(e) {
+/** chunk id: 654041, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    default: () => M
+});
+var i = n(627968),
+    r = n(64700),
+    a = n(835245),
+    s = n(158954),
+    o = n(554146),
+    l = n(397927),
+    u = n(379848),
+    c = n(95035),
+    d = n(632738),
+    A = n(105428),
+    _ = n(975571),
+    E = n(935649),
+    f = n(847599),
+    R = n(36149),
+    p = n(737567),
+    C = n(40449),
+    m = n(652215),
+    I = n(239093),
+    h = n(985018),
+    x = n(891921);
+let M = function(e) {
     let {
         transitionState: t,
-        entryPoint: r,
-        onClose: j
-    } = e, [P, h] = o.useState(c.M.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), C = o.useRef(P), [I, S] = (0, a.kn)([P], void 0, !0), {
-        loading: v,
-        initiateAgeVerification: x
-    } = (0, y.nn)({
-        onComplete: j,
-        entryPoint: r
-    }), k = o.useMemo(() => (0, i.A)(), []), w = (0, A.I)("age_verification_get_started_modal"), M = o.useRef(!1);
-    return o.useEffect(() => {
-        C.current = I
-    }, [I]), o.useLayoutEffect(() => () => {
-        if (M.current) return;
-        let e = C.current;
-        null != e && (M.current = !0, p.A.maybeOpenAgeVerificationUserFeedback({
+        entryPoint: n,
+        onClose: M
+    } = e, [T, k] = r.useState(o.M.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), S = r.useRef(T), [b, g] = (0, u.kn)([T], void 0, !0), {
+        loading: P,
+        initiateAgeVerification: U
+    } = (0, R.nn)({
+        onComplete: M,
+        entryPoint: n
+    }), v = r.useMemo(() => (0, a.A)(), []), L = (0, p.I)("age_verification_get_started_modal"), N = r.useRef(!1);
+    return r.useEffect(() => {
+        S.current = b
+    }, [b]), r.useLayoutEffect(() => () => {
+        if (N.current) return;
+        let e = S.current;
+        null != e && (N.current = !0, A.A.maybeOpenAgeVerificationUserFeedback({
             location: "age_verification_get_started_modal",
             visibleContent: e
         }))
-    }, []), o.useEffect(() => {
-        (0, O.Bs)(k, O.WU.PRIMARY, r)
-    }, [k, r]), (0, n.jsxs)(l.Modal, {
+    }, []), r.useEffect(() => {
+        (0, f.Bs)(v, f.WU.PRIMARY, n)
+    }, [v, n]), (0, i.jsxs)(s.Modal, {
         transitionState: t,
-        onClose: j,
-        title: (0, y.ST)(r),
-        subtitle: (0, y.mK)(r),
+        onClose: M,
+        title: (0, R.ST)(n),
+        subtitle: (0, R.mK)(n),
         actions: [{
-            text: R.intl.string(R.t.SJMnkX),
-            loading: v,
-            icon: s.I9m,
+            text: h.intl.string(h.t.SJMnkX),
+            loading: P,
+            icon: l.I9m,
             iconPosition: "end",
             onClick: async () => {
-                (0, O.St)(k, O.WU.PRIMARY, O._7.GET_STARTED), h(c.M.AGE_VERIFICATION_SURVEY_MODAL_CLOSE), await x()
+                (0, f.St)(v, f.WU.PRIMARY, f._7.GET_STARTED), k(o.M.AGE_VERIFICATION_SURVEY_MODAL_CLOSE), await U()
             }
         }],
-        actionBarInput: (0, n.jsxs)(u.A, {
+        actionBarInput: (0, i.jsxs)(c.A, {
             onClick: () => {
-                b.A.openUrl(d.A.getArticleURL(m.MVz.TIGGER_PAWTECT_LEARN_MORE)), (0, O.St)(k, O.WU.PRIMARY, O._7.LEARN_MORE)
+                E.A.openUrl(_.A.getArticleURL(m.MVz.TIGGER_PAWTECT_LEARN_MORE)), (0, f.St)(v, f.WU.PRIMARY, f._7.LEARN_MORE)
             },
-            className: g.A,
-            children: [R.intl.string(R.t["aA6q/z"]), (0, n.jsx)(s.I9m, {
+            className: x.A,
+            children: [h.intl.string(h.t["aA6q/z"]), (0, i.jsx)(l.I9m, {
                 size: "xs",
                 color: "currentColor"
             })]
         }),
-        children: [(0, E.f6)(k).map((e, t) => {
+        children: [(0, C.f6)(v).map((e, t) => {
             let {
-                title: r,
-                description: o
+                title: n,
+                description: r
             } = e;
-            return (0, n.jsx)(f.PQ, {
-                title: r,
-                description: o,
+            return (0, i.jsx)(d.PQ, {
+                title: n,
+                description: r,
                 listType: "numbered",
                 index: t
             }, t)
-        }), !w && (0, n.jsx)(s.Text, {
+        }), !L && (0, i.jsx)(l.Text, {
             variant: "text-xs/medium",
             color: "text-muted",
-            className: g.B,
-            children: R.intl.format(R.t.pJAxgQ, {
+            className: x.B,
+            children: h.intl.format(h.t.pJAxgQ, {
                 handleOnRequestHook: () => {
-                    b.A.openUrl(_.d$.APPEALS_LINK), (0, O.St)(k, O.WU.PRIMARY, O._7.MANUAL_REVIEW_REQUEST)
+                    E.A.openUrl(I.d$.APPEALS_LINK), (0, f.St)(v, f.WU.PRIMARY, f._7.MANUAL_REVIEW_REQUEST)
                 }
             })
         })]

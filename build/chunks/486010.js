@@ -1,54 +1,54 @@
 /** chunk id: 486010, original params: e,t,a (module,exports,require) **/
 a.d(t, {
-    default: () => R
-}), a(896048);
-var r = a(627968),
+    default: () => A
+});
+var s = a(627968),
     n = a(64700),
-    s = a(503698),
-    l = a.n(s),
-    i = a(110259),
+    l = a(503698),
+    i = a.n(l),
+    r = a(110259),
     c = a(417597),
     o = a(827734),
     d = a(582754),
     m = a(397927),
     x = a(608461),
-    u = a(58149),
-    _ = a(139286),
-    p = a(544028),
-    f = a(954571),
+    _ = a(58149),
+    u = a(139286),
+    h = a(544028),
+    p = a(954571),
     j = a(567305),
-    h = a(336200),
-    g = a(74399),
-    T = a(739455),
-    v = a(752942),
-    y = a(128088),
-    N = a(652215),
-    b = a(985018),
-    C = a(904268);
+    f = a(336200),
+    T = a(74399),
+    g = a(739455),
+    N = a(752942),
+    C = a(128088),
+    v = a(652215),
+    I = a(985018),
+    E = a(904268);
 
-function I(e) {
+function y(e) {
     let {
         name: t,
         imageUrl: a,
         selected: n,
-        onTap: s
+        onTap: l
     } = e;
-    return (0, r.jsxs)(m.DUT, {
-        onClick: s,
-        className: C.rz,
-        children: [(0, r.jsx)("img", {
+    return (0, s.jsxs)(m.DUT, {
+        onClick: l,
+        className: E.rz,
+        children: [(0, s.jsx)("img", {
             src: a,
             alt: "",
-            className: C.ks
-        }), (0, r.jsxs)("div", {
-            className: C.GY,
-            children: [(0, r.jsx)(m.Heading, {
+            className: E.ks
+        }), (0, s.jsxs)("div", {
+            className: E.GY,
+            children: [(0, s.jsx)(m.Heading, {
                 variant: "heading-md/normal",
-                className: l()({
-                    [C.kE]: !n
+                className: i()({
+                    [E.kE]: !n
                 }),
                 children: t
-            }), n && (0, r.jsx)(m.yr3, {
+            }), n && (0, s.jsx)(m.yr3, {
                 size: "md",
                 secondaryColor: o.A.unsafe_rawColors.WHITE.css,
                 color: o.A.unsafe_rawColors.BRAND_500.css
@@ -57,168 +57,151 @@ function I(e) {
     })
 }
 
-function O(e) {
+function R(e) {
     let {
         loading: t,
         error: a,
         templates: n,
-        selectedTemplateIndex: s,
-        handleTapTemplate: l
-    } = e, i = (0, c.bG)([p.A], () => p.A.theme);
-    return t ? (0, r.jsx)(m.y$y, {}) : null != a ? (0, r.jsx)(m.wx6, {
+        selectedTemplateIndex: l,
+        handleTapTemplate: i
+    } = e, r = (0, c.bG)([h.A], () => h.A.theme);
+    return t ? (0, s.jsx)(m.y$y, {}) : null != a ? (0, s.jsx)(m.wx6, {
         type: "critical",
         children: a.message
-    }) : null == n || 0 === n.length ? null : (0, r.jsx)("div", {
-        className: C.PJ,
-        children: n.map((e, t) => (0, r.jsx)(I, {
-            imageUrl: t === s ? e.category_image : (0, d.qB)(i) ? e.unselected_light_theme_category_image : e.unselected_dark_theme_category_image,
+    }) : null == n || 0 === n.length ? null : (0, s.jsx)("div", {
+        className: E.PJ,
+        children: n.map((e, t) => (0, s.jsx)(y, {
+            imageUrl: t === l ? e.category_image : (0, d.qB)(r) ? e.unselected_light_theme_category_image : e.unselected_dark_theme_category_image,
             name: e.category,
-            selected: t === s,
-            onTap: () => l(t)
+            selected: t === l,
+            onTap: () => i(t)
         }, t))
     })
 }
 
-function E(e) {
-    var t, a;
+function L(e) {
     let {
-        guildId: s,
-        templates: l,
-        selectedTemplateIndex: i,
-        priceTiers: c,
-        showPriceReselection: o,
-        setShowPriceReselection: d,
-        handleCreateTierFromTemplate: m
-    } = e, x = (0, T.zu)(s, c, null != l ? null == (a = l[i]) || null == (t = a.listings[0]) ? void 0 : t.price_tier : void 0), u = null != x && x.length > 0, _ = n.useCallback(e => {
-        u ? d(!0) : m(e)
-    }, [m, u, d]);
-    return null == l || 0 === l.length ? null : o && u ? (0, r.jsx)(y.A, {
-        selectedTemplate: l[i],
-        handleSelectTemplate: m,
-        newPricesToPick: x
-    }) : (0, r.jsx)(v.A, {
-        selectedTemplate: l[i],
-        handleSelectTemplate: _
+        guildId: t,
+        templates: a,
+        selectedTemplateIndex: l,
+        priceTiers: i,
+        showPriceReselection: r,
+        setShowPriceReselection: c,
+        handleCreateTierFromTemplate: o
+    } = e, d = (0, g.zu)(t, i, null != a ? a[l]?.listings[0]?.price_tier : void 0), m = null != d && d.length > 0, x = n.useCallback(e => {
+        m ? c(!0) : o(e)
+    }, [o, m, c]);
+    return null == a || 0 === a.length ? null : r && m ? (0, s.jsx)(C.A, {
+        selectedTemplate: a[l],
+        handleSelectTemplate: o,
+        newPricesToPick: d
+    }) : (0, s.jsx)(N.A, {
+        selectedTemplate: a[l],
+        handleSelectTemplate: x
     })
 }
 
-function R(e) {
+function A(e) {
     let {
         transitionState: t,
         onClose: a,
-        guildId: s,
-        addNewEditStateFromTemplate: l,
+        guildId: l,
+        addNewEditStateFromTemplate: i,
         addNewEditStateFromScratch: o,
         priceTiers: d
-    } = e, p = (0, c.bG)([g.A], () => g.A.getTemplates(s)), [T, {
-        loading: v,
-        error: y
-    }] = (0, x.A)(h.y), I = n.useRef("voluntarily_exit");
+    } = e, h = (0, c.bG)([T.A], () => T.A.getTemplates(l)), [g, {
+        loading: N,
+        error: C
+    }] = (0, x.A)(f.y), y = n.useRef("voluntarily_exit");
     n.useEffect(() => {
-        (null == p || 0 === p.length) && T(s)
-    }, [T, s, p]), n.useEffect(() => {
-        t === m.ip4.EXITING && f.default.track(N.HAw.ROLE_SUBSCRIPTION_LISTING_TEMPLATE_SELECTOR_EXITED, function(e) {
-            for (var t = 1; t < arguments.length; t++) {
-                var a = null != arguments[t] ? arguments[t] : {},
-                    r = Object.keys(a);
-                "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(a).filter(function(e) {
-                    return Object.getOwnPropertyDescriptor(a, e).enumerable
-                }))), r.forEach(function(t) {
-                    var r;
-                    r = a[t], t in e ? Object.defineProperty(e, t, {
-                        value: r,
-                        enumerable: !0,
-                        configurable: !0,
-                        writable: !0
-                    }) : e[t] = r
-                })
-            }
-            return e
-        }({
-            exit_reason: I.current
-        }, (0, u.H$)(s)))
-    }, [t, s, I]);
-    let [R, S] = n.useState(0), [w, L] = n.useState(!1), A = n.useCallback(e => {
-        I.current = "template_selected", (0, h.c)(e, s), l(e), a()
-    }, [s, l, a]), P = n.useCallback(() => {
-        w ? L(!1) : a()
-    }, [w, a]), k = (0, j.Xi)(s);
-    return (0, _.A)({
-        type: i.ImpressionTypes.MODAL,
-        name: i.ImpressionNames.ROLE_SUBSCRIPTION_LISTING_TEMPLATE_SELECTOR,
+        (null == h || 0 === h.length) && g(l)
+    }, [g, l, h]), n.useEffect(() => {
+        t === m.ip4.EXITING && p.default.track(v.HAw.ROLE_SUBSCRIPTION_LISTING_TEMPLATE_SELECTOR_EXITED, {
+            exit_reason: y.current,
+            ...(0, _.H$)(l)
+        })
+    }, [t, l, y]);
+    let [A, S] = n.useState(0), [b, U] = n.useState(!1), k = n.useCallback(e => {
+        y.current = "template_selected", (0, f.c)(e, l), i(e), a()
+    }, [l, i, a]), w = n.useCallback(() => {
+        b ? U(!1) : a()
+    }, [b, a]), D = (0, j.Xi)(l);
+    return (0, u.A)({
+        type: r.ImpressionTypes.MODAL,
+        name: r.ImpressionNames.ROLE_SUBSCRIPTION_LISTING_TEMPLATE_SELECTOR,
         properties: {
-            guild_id: s
+            guild_id: l
         }
-    }), (0, r.jsxs)(m.EOs, {
+    }), (0, s.jsxs)(m.EOs, {
         "data-migration-pending": !0,
         transitionState: t,
         size: m.rIJ.DYNAMIC,
-        className: C.CR,
+        className: E.CR,
         parentComponent: "GuildRoleSubscriptionsTierTemplateModal",
-        children: [(0, r.jsx)(m.DUT, {
-            onClick: P,
-            className: C.b,
-            children: (0, r.jsx)(m.PGe, {
+        children: [(0, s.jsx)(m.DUT, {
+            onClick: w,
+            className: E.b,
+            children: (0, s.jsx)(m.PGe, {
                 size: "xxs",
                 color: "currentColor"
             })
-        }), (0, r.jsxs)(m.$mQ, {
-            className: C.jE,
+        }), (0, s.jsxs)(m.$mQ, {
+            className: E.jE,
             "data-migration-pending": !0,
-            children: [(0, r.jsxs)("div", {
-                className: C.pv,
-                children: [w && (0, r.jsx)(m.DUT, {
-                    className: C.wZ,
+            children: [(0, s.jsxs)("div", {
+                className: E.pv,
+                children: [b && (0, s.jsx)(m.DUT, {
+                    className: E.wZ,
                     onClick: () => {
-                        w && L(!1)
+                        b && U(!1)
                     },
                     "aria-label": "overlay"
-                }), (0, r.jsxs)(m.IpV, {
-                    className: C.H2,
-                    children: [(0, r.jsx)(m.Heading, {
+                }), (0, s.jsxs)(m.IpV, {
+                    className: E.H2,
+                    children: [(0, s.jsx)(m.Heading, {
                         variant: "heading-xl/semibold",
-                        children: b.intl.string(b.t["9QQ+i+"])
-                    }), (0, r.jsx)(m.Text, {
+                        children: I.intl.string(I.t["9QQ+i+"])
+                    }), (0, s.jsx)(m.Text, {
                         variant: "text-sm/normal",
-                        className: C.jJ,
-                        children: b.intl.string(b.t.CvFFOv)
-                    }), k && (0, r.jsx)(m.Text, {
+                        className: E.jJ,
+                        children: I.intl.string(I.t.CvFFOv)
+                    }), D && (0, s.jsx)(m.Text, {
                         variant: "text-sm/normal",
-                        className: C.uL,
-                        children: b.intl.format(b.t.iQML2g, {
+                        className: E.uL,
+                        children: I.intl.format(I.t.iQML2g, {
                             creatorPortalUrl: "https://discord.com/creator-portal/learn-from-creators?tab=lightning-lessons"
                         })
-                    }), (0, r.jsx)("div", {
-                        className: C.QX,
-                        children: (0, r.jsx)(O, {
-                            loading: v,
-                            error: y,
-                            templates: p,
-                            selectedTemplateIndex: R,
+                    }), (0, s.jsx)("div", {
+                        className: E.QX,
+                        children: (0, s.jsx)(R, {
+                            loading: N,
+                            error: C,
+                            templates: h,
+                            selectedTemplateIndex: A,
                             handleTapTemplate: e => {
                                 S(e)
                             }
                         })
                     })]
-                }), (0, r.jsx)(m.Text, {
+                }), (0, s.jsx)(m.Text, {
                     variant: "text-sm/normal",
-                    children: b.intl.string(b.t.jymUTC)
-                }), (0, r.jsx)(m.Button, {
+                    children: I.intl.string(I.t.jymUTC)
+                }), (0, s.jsx)(m.Button, {
                     onClick: () => {
-                        I.current = "create_from_scratch", o(), a()
+                        y.current = "create_from_scratch", o(), a()
                     },
                     variant: "secondary",
                     icon: m.R2l,
-                    text: b.intl.string(b.t.a3ycUX)
+                    text: I.intl.string(I.t.a3ycUX)
                 })]
-            }), (0, r.jsx)(E, {
-                guildId: s,
-                templates: p,
-                selectedTemplateIndex: R,
+            }), (0, s.jsx)(L, {
+                guildId: l,
+                templates: h,
+                selectedTemplateIndex: A,
                 priceTiers: d,
-                showPriceReselection: w,
-                setShowPriceReselection: L,
-                handleCreateTierFromTemplate: A
+                showPriceReselection: b,
+                setShowPriceReselection: U,
+                handleCreateTierFromTemplate: k
             })]
         })]
     })

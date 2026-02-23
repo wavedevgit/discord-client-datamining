@@ -6,8 +6,8 @@ var i = s(627968),
     n = s(64700),
     r = s(158954),
     a = s(397927),
-    l = s(975571),
-    c = s(341915),
+    c = s(975571),
+    l = s(341915),
     o = s(651892),
     u = s(792620),
     d = s(652215),
@@ -22,30 +22,27 @@ function g(t) {
         quest: T
     } = t, _ = (t => {
         switch (t) {
-            case c.uF.QUEST_BAR:
-            case c.uF.QUEST_BAR_V2:
+            case l.uF.QUEST_BAR:
+            case l.uF.QUEST_BAR_V2:
                 return {
                     location: !0, age: !0, activity: !0
                 };
-            case c.uF.ACTIVITY_PANEL:
-            case c.uF.QUESTS_EMBED:
-            case c.uF.QUEST_LIVE_STREAM:
+            case l.uF.ACTIVITY_PANEL:
+            case l.uF.QUESTS_EMBED:
+            case l.uF.QUEST_LIVE_STREAM:
                 return {
                     activity: !0
                 };
             default:
                 return
         }
-    })(g), f = n.useMemo(() => {
-        var t;
-        return (0, o.JM)({
-            isTargetedDisclosure: null != _,
-            gamePublisher: T.config.messages.gamePublisher,
-            gameTitle: T.config.messages.gameTitle,
-            cosponsorName: null == (t = T.config.cosponsorMetadata) ? void 0 : t.name,
-            isVideoQuest: (0, u.vv)(T)
-        })
-    }, [T, _]);
+    })(g), f = n.useMemo(() => (0, o.JM)({
+        isTargetedDisclosure: null != _,
+        gamePublisher: T.config.messages.gamePublisher,
+        gameTitle: T.config.messages.gameTitle,
+        cosponsorName: T.config.cosponsorMetadata?.name,
+        isVideoQuest: (0, u.vv)(T)
+    }), [T, _]);
     return (0, i.jsxs)(r.Modal, {
         size: "sm",
         transitionState: e,
@@ -66,7 +63,7 @@ function g(t) {
             variant: "text-xs/medium",
             color: "text-muted",
             children: x.intl.format(x.t.tzq9Wa, {
-                privacySettingsUrl: l.A.getArticleURL(d.MVz.QUESTS_PRIVACY_CONTROLS)
+                privacySettingsUrl: c.A.getArticleURL(d.MVz.QUESTS_PRIVACY_CONTROLS)
             })
         })]
     })

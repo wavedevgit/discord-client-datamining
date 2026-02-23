@@ -1,106 +1,63 @@
 /** chunk id: 208667, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => h
+    A: () => A
 });
-var r = n(627968),
-    l = n(64700),
-    i = n(110259),
-    s = n(837381),
+var i = n(627968),
+    s = n(64700),
+    l = n(110259),
+    r = n(837381),
     a = n(397927),
     o = n(928039),
     c = n(139286),
-    u = n(688895),
-    d = n(456425),
-    p = n(1347);
+    d = n(688895),
+    u = n(456425),
+    h = n(1347);
 
-function h(e) {
+function A(e) {
     let {
         initialized: t,
         items: n,
-        loading: h,
-        loadMore: g
-    } = e, f = l.useRef(null), m = (0, o.A)("for-you", f);
+        loading: A,
+        loadMore: p
+    } = e, g = s.useRef(null), m = (0, o.A)("for-you", g);
     (0, c.A)({
-        type: i.ImpressionTypes.VIEW,
-        name: i.ImpressionNames.NOTIFICATION_CENTER_LANDING,
+        type: l.ImpressionTypes.VIEW,
+        name: l.ImpressionNames.NOTIFICATION_CENTER_LANDING,
         properties: {
             empty: 0 === n.length
         }
     }, {
         disableTrack: !t
     }, [t]);
-    let b = () => {
-        var e;
-        let t = null == (e = f.current) ? void 0 : e.getScrollerState();
-        null == t || t.scrollHeight - t.scrollTop - t.offsetHeight < 1500 && g()
+    let _ = () => {
+        let e = g.current?.getScrollerState();
+        null == e || e.scrollHeight - e.scrollTop - e.offsetHeight < 1500 && p()
     };
-    return t ? 0 === n.length ? (0, r.jsx)(u.H, {}) : (0, r.jsx)(s.hD, {
+    return t ? 0 === n.length ? (0, i.jsx)(d.H, {}) : (0, i.jsx)(r.hD, {
         navigator: m,
-        children: (0, r.jsx)(s.PR, {
+        children: (0, i.jsx)(r.PR, {
             children: e => {
-                var t, l;
                 let {
-                    ref: i
-                } = e, s = function(e, t) {
-                    if (null == e) return {};
-                    var n, r, l, i = {};
-                    if ("u" > typeof Reflect && Reflect.ownKeys) {
-                        for (l = 0, n = Reflect.ownKeys(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
-                        return i
-                    }
-                    if (i = function(e, t) {
-                            if (null == e) return {};
-                            var n, r, l = {},
-                                i = Object.getOwnPropertyNames(e);
-                            for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n]);
-                            return l
-                        }(e, t), Object.getOwnPropertySymbols)
-                        for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
-                    return i
-                }(e, ["ref"]);
-                return (0, r.jsxs)(a.T7Y, (t = function(e) {
-                    for (var t = 1; t < arguments.length; t++) {
-                        var n = null != arguments[t] ? arguments[t] : {},
-                            r = Object.keys(n);
-                        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                            return Object.getOwnPropertyDescriptor(n, e).enumerable
-                        }))), r.forEach(function(t) {
-                            var r;
-                            r = n[t], t in e ? Object.defineProperty(e, t, {
-                                value: r,
-                                enumerable: !0,
-                                configurable: !0,
-                                writable: !0
-                            }) : e[t] = r
-                        })
-                    }
-                    return e
-                }({
-                    className: p.kL,
+                    ref: t,
+                    ...s
+                } = e;
+                return (0, i.jsxs)(a.T7Y, {
+                    className: h.kL,
                     ref: e => {
-                        var t;
-                        f.current = e, i.current = null != (t = null == e ? void 0 : e.getScrollerNode()) ? t : null
-                    }
-                }, s), l = l = {
-                    onScroll: b,
-                    children: [(0, r.jsx)(d.$, {
+                        g.current = e, t.current = e?.getScrollerNode() ?? null
+                    },
+                    ...s,
+                    onScroll: _,
+                    children: [(0, i.jsx)(u.$, {
                         items: n
-                    }), h ? (0, r.jsx)(a.y$y, {
-                        className: p.u1
+                    }), A ? (0, i.jsx)(a.y$y, {
+                        className: h.u1
                     }) : null]
-                }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
-                    var n = Object.keys(e);
-                    if (Object.getOwnPropertySymbols) {
-                        var r = Object.getOwnPropertySymbols(e);
-                        n.push.apply(n, r)
-                    }
-                    return n
-                })(Object(l)).forEach(function(e) {
-                    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(l, e))
-                }), t))
+                })
             }
         })
-    }) : (0, r.jsx)(a.y$y, {
-        className: p.k$
+    }) : (0, i.jsx)(a.y$y, {
+        className: h.k$
     })
 }

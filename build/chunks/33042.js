@@ -1,71 +1,70 @@
 /** chunk id: 33042, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    Q: () => f,
-    T: () => b
-}), n(228524);
+    Q: () => g,
+    T: () => _
+});
 var a = n(627968);
 n(64700);
-var l = n(397927),
-    r = n(970931),
-    i = n(341967),
-    s = n(253932),
-    o = n(927813),
-    c = n(427262),
+var i = n(397927),
+    s = n(970931),
+    l = n(253932),
+    r = n(927813),
+    o = n(427262),
     d = n(146901),
-    u = n(827827),
-    m = n(652215),
-    p = n(985018);
+    c = n(827827),
+    u = n(652215),
+    m = n(985018);
 let h = [{
-        duration: 15 * o.A.Millis.MINUTE,
-        label: () => p.intl.string(p.t["8ot6gv"])
+        duration: 15 * r.A.Millis.MINUTE,
+        label: () => m.intl.string(m.t["8ot6gv"])
     }, {
-        duration: o.A.Millis.HOUR,
-        label: () => p.intl.string(p.t.UMWBZr)
+        duration: r.A.Millis.HOUR,
+        label: () => m.intl.string(m.t.UMWBZr)
     }, {
-        duration: 8 * o.A.Millis.HOUR,
-        label: () => p.intl.string(p.t.EpAXPC)
+        duration: 8 * r.A.Millis.HOUR,
+        label: () => m.intl.string(m.t.EpAXPC)
     }, {
-        duration: o.A.Millis.DAY,
-        label: () => p.intl.string(p.t["755t4q"])
+        duration: r.A.Millis.DAY,
+        label: () => m.intl.string(m.t["755t4q"])
     }, {
-        duration: 3 * o.A.Millis.DAY,
-        label: () => p.intl.string(p.t["f3/1ch"])
+        duration: 3 * r.A.Millis.DAY,
+        label: () => m.intl.string(m.t["f3/1ch"])
     }, {
         duration: void 0,
-        label: () => p.intl.string(p.t["46dqJY"])
+        label: () => m.intl.string(m.t["46dqJY"])
     }],
     x = "forever";
 
-function g(e) {
+function p(e) {
     let {
         status: t,
         currentStatus: n,
-        description: r
-    } = e, i = t !== m.clD.ONLINE, s = (0, a.jsx)(a.Fragment, {
+        description: s
+    } = e, l = t !== u.clD.ONLINE, r = (0, a.jsx)(a.Fragment, {
         children: h.map(e => {
             let {
-                duration: r,
-                label: i
+                duration: s,
+                label: l
             } = e;
-            return (0, a.jsx)(l.Drp, {
-                id: "".concat(t, "-").concat(r),
-                label: i(),
-                action: () => (0, u.A)({
+            return (0, a.jsx)(i.Drp, {
+                id: `${t}-${s}`,
+                label: l(),
+                action: () => (0, c.A)({
                     nextStatus: t,
                     prevStatus: n,
-                    durationMillis: r
+                    durationMillis: s
                 }),
                 dontCloseOnAction: !0
-            }, null != r ? r : x)
+            }, s ?? x)
         })
     });
-    return (0, a.jsx)(l.Drp, {
+    return (0, a.jsx)(i.Drp, {
         id: t,
         keepItemStyles: !0,
-        hasSubmenu: i,
-        label: (0, c.MU)(t),
-        subtext: r,
-        iconLeft: () => (0, a.jsx)(l.nW6, {
+        hasSubmenu: l,
+        label: (0, o.MU)(t),
+        subtext: s,
+        iconLeft: () => (0, a.jsx)(i.nW6, {
             status: t,
             size: 10
         }),
@@ -74,115 +73,112 @@ function g(e) {
             status: t
         },
         action: () => {
-            (0, u.A)({
+            (0, c.A)({
                 nextStatus: t,
                 prevStatus: n
             })
         },
         dontCloseOnAction: !0,
-        children: i ? s : void 0
+        children: l ? r : void 0
     })
 }
 
-function f(e) {
+function g(e) {
     if (null == e || "0" === e) return;
     let {
         kind: t,
         dateString: n,
         timeString: a
     } = (0, d._)(e);
-    return "today" === t ? p.intl.formatToPlainString(p.t.ZxxHIO, {
+    return "today" === t ? m.intl.formatToPlainString(m.t.ZxxHIO, {
         timeString: a
-    }) : p.intl.formatToPlainString(p.t["9OFjSe"], {
+    }) : m.intl.formatToPlainString(m.t["9OFjSe"], {
         dateString: n,
         timeString: a
     })
 }
 
-function b(e) {
-    let t = s.CY.useSetting(),
-        n = (0, r.kB)(),
-        o = i.P.useExperiment({
-            location: "UserProfileAccountPopout"
-        }).allowQuietMode || n,
-        c = s.Jr.useSetting(),
-        d = e === m.clD.DND,
-        u = n => {
-            let a = f(t);
-            if (e === n && null != a) return a;
-            switch (n) {
-                case m.clD.DND:
-                    return o ? p.intl.string(p.t.day5A6) : p.intl.string(p.t["tq/fMK"]);
-                case m.clD.INVISIBLE:
-                    return p.intl.string(p.t.zPc6Mc);
+function _(e) {
+    let t = l.CY.useSetting(),
+        n = (0, s.kB)(),
+        r = l.Jr.useSetting(),
+        o = e === u.clD.DND,
+        d = a => {
+            let i = g(t);
+            if (e === a && null != i) return i;
+            switch (a) {
+                case u.clD.DND:
+                    return n ? m.intl.string(m.t.day5A6) : m.intl.string(m.t["tq/fMK"]);
+                case u.clD.INVISIBLE:
+                    return m.intl.string(m.t.zPc6Mc);
                 default:
                     return
             }
         },
-        b = (0, a.jsx)(a.Fragment, {
+        c = (0, a.jsx)(a.Fragment, {
             children: h.map(t => {
                 let {
                     duration: n,
-                    label: i
+                    label: l
                 } = t;
-                return (0, a.jsx)(l.Drp, {
-                    id: "".concat(e, "-").concat(n),
-                    label: i(),
+                return (0, a.jsx)(i.Drp, {
+                    id: `${e}-${n}`,
+                    label: l(),
                     action: () => {
-                        (0, r.ES)(!0, n)
+                        (0, s.ES)(!0, n)
                     },
                     dontCloseOnAction: !0
-                }, null != n ? n : x)
+                }, n ?? x)
             })
         }),
-        v = g({
-            status: m.clD.ONLINE,
+        _ = p({
+            status: u.clD.ONLINE,
             currentStatus: e
         }),
-        j = g({
-            status: m.clD.IDLE,
+        f = p({
+            status: u.clD.IDLE,
             currentStatus: e,
-            description: u(m.clD.IDLE)
+            description: d(u.clD.IDLE)
         }),
-        _ = g({
-            status: m.clD.DND,
+        b = p({
+            status: u.clD.DND,
             currentStatus: e,
-            description: u(m.clD.DND)
+            description: d(u.clD.DND)
         }),
-        y = g({
-            status: m.clD.INVISIBLE,
+        v = p({
+            status: u.clD.INVISIBLE,
             currentStatus: e,
-            description: u(m.clD.INVISIBLE)
+            description: d(u.clD.INVISIBLE)
         });
     return (0, a.jsxs)(a.Fragment, {
-        children: [v, (0, a.jsx)(l.bXX, {}, "menu-separator-statuses"), j, _, y, o || n ? (0, a.jsxs)(a.Fragment, {
-            children: [(0, a.jsx)(l.bXX, {}, "menu-separator-statuses"), (0, a.jsx)(l.Drp, {
+        children: [_, (0, a.jsx)(i.bXX, {}, "menu-separator-statuses"), f, b, v, n ? (0, a.jsxs)(a.Fragment, {
+            children: [(0, a.jsx)(i.bXX, {}, "menu-separator-statuses"), (0, a.jsx)(i.Drp, {
                 id: "quiet-mode",
                 "aria-label": "focus mode",
                 keepItemStyles: !0,
                 hasSubmenu: !0,
-                label: p.intl.string(p.t.gJRnwK),
-                iconLeft: l.a_I,
+                label: m.intl.string(m.t.gJRnwK),
+                iconLeft: i.a_I,
                 leadingAccessory: {
                     type: "icon",
-                    icon: l.a_I
+                    icon: i.a_I
                 },
                 badge: {
-                    text: n ? p.intl.string(p.t.ApAu9f) : d ? p.intl.string(p.t.gH3Frd) : p.intl.string(p.t["64pl82"])
+                    text: n ? m.intl.string(m.t.ApAu9f) : o ? m.intl.string(m.t.gH3Frd) : m.intl.string(m.t["64pl82"])
                 },
-                subtext: n && null != c && "0" !== c ? p.intl.format(p.t.BWD8fs, {
-                    endTime: new Date(Number(c)).toLocaleString(p.intl.currentLocale, {
+                subtext: n && null != r && "0" !== r ? m.intl.format(m.t.BWD8fs, {
+                    endTime: new Date(Number(r)).toLocaleString(m.intl.currentLocale, {
                         month: "numeric",
                         day: "numeric",
                         hour: "numeric",
                         minute: "2-digit"
                     })
-                }) : p.intl.string(p.t["Br1q+x"]),
+                }) : m.intl.string(m.t["Br1q+x"]),
                 action: () => {
-                    (0, r.ES)(!n)
+                    (0, s.ES)(!n)
                 },
                 dontCloseOnAction: !0,
-                children: b
+                children: c
             }, "quiet-mode")]
         }) : null]
     })

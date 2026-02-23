@@ -1,25 +1,22 @@
 /** chunk id: 639841, original params: e,t,n (module,exports,require) **/
-var r, i, l = n(311907),
-    a = n(73153),
-    s = n(49463),
-    o = n(217222),
-    c = n(424728);
+var i = n(311907),
+    r = n(73153),
+    l = n(49463),
+    a = n(217222),
+    s = n(424728);
 
-function u() {
-    c.l.trigger()
+function o() {
+    s.l.trigger()
 }
-class d extends(i = l.Ay.Store) {
-    initialize() {
-        this.waitFor(s.A, o.A)
-    }
+class d extends i.Ay.Store {
+    static displayName = "ExperimentTriggerPointStore";
     constructor() {
-        super(a.h, {
-            CONNECTION_OPEN: u
-        }, a.A.Early)
+        super(r.h, {
+            CONNECTION_OPEN: o
+        }, r.A.Early)
     }
-}(r = "displayName") in d ? Object.defineProperty(d, r, {
-    value: "ExperimentTriggerPointStore",
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
-}) : d[r] = "ExperimentTriggerPointStore", new d
+    initialize() {
+        this.waitFor(l.A, a.A)
+    }
+}
+new d

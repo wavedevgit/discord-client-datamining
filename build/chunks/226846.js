@@ -1,68 +1,47 @@
-/** chunk id: 226846, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    q: () => f
+/** chunk id: 226846, original params: e,t,l (module,exports,require) **/
+l.d(t, {
+    q: () => c
 });
-var r = n(627968);
-n(64700);
-var i = n(397927),
-    a = n(73079),
-    o = n(156312),
-    s = n(252561),
-    l = n(818348),
-    c = n(825057);
-
-function u(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-
-function d(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            u(e, t, n[t])
-        })
-    }
-    return e
-}
-let f = {
+var a = l(627968);
+l(64700);
+var n = l(397927),
+    r = l(73079),
+    i = l(156312),
+    s = l(252561),
+    o = l(818348),
+    u = l(825057);
+let c = {
     name: "Choose Payment Source Type",
     id: "choose-payment-source-type",
     component: function(e) {
         let {
             isEligibleForTrial: t,
-            onlyStripeCardEnabled: n,
-            paymentRequestWalletsEnabled: u
-        } = e, f = {
+            onlyStripeCardEnabled: l,
+            paymentRequestWalletsEnabled: c
+        } = e, d = {
             onChooseType: () => {},
             onStripePaymentMethodReceived: e => {
                 console.log("onStripePaymentMethodReceived called: ", e)
             },
             isEligibleForTrial: t,
-            paymentRequestWallets: u ? ["googlePay", "applePay"] : [],
-            paymentSourceTypeRestrictions: n ? [l.he.CARD.valueOf()] : null
+            paymentRequestWallets: c ? ["googlePay", "applePay"] : [],
+            paymentSourceTypeRestrictions: l ? [o.he.CARD.valueOf()] : null
         };
-        return (0, r.jsx)(o.PaymentContextProvider, {
+        return (0, a.jsx)(i.PaymentContextProvider, {
             stepConfigs: [],
             skuIDs: [],
             activeSubscription: null,
-            children: (0, r.jsxs)(s.wn, {
-                children: [(0, r.jsx)(i.Heading, {
+            children: (0, a.jsxs)(s.wn, {
+                children: [(0, a.jsx)(n.Heading, {
                     variant: "heading-xl/semibold",
                     children: "Choose Payment Source Type"
-                }), (0, r.jsx)(s.e_, {
-                    className: c.Bt,
-                    children: (0, r.jsx)("div", {
-                        className: c.VS,
-                        children: (0, r.jsx)(a.A, d({}, f))
+                }), (0, a.jsx)(s.e_, {
+                    className: u.Bt,
+                    children: (0, a.jsx)("div", {
+                        className: u.VS,
+                        children: (0, a.jsx)(r.A, {
+                            ...d
+                        })
                     })
                 })]
             })

@@ -1,23 +1,23 @@
 /** chunk id: 554154, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => c
+    A: () => d
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(342494),
+var r = n(342494),
     l = n(997509),
     a = n(652215),
     s = n(49999),
     o = n(985018);
 
-function c(e) {
+function d(e) {
     let {
         guildId: t,
         markAsDismissed: n,
-        targetElementRef: c
+        targetElementRef: d
     } = e;
-    return (0, r.jsx)(i.HZ, {
-        targetElementRef: c,
+    return (0, i.jsx)(r.HZ, {
+        targetElementRef: d,
         title: o.intl.string(o.t.gCgirr),
         body: o.intl.string(o.t.fLMZFw),
         assetUrl: "https://cdn.discordapp.com/assets/server-subscription-tier-template/upsell.mov",

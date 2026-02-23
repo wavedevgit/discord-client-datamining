@@ -1,24 +1,24 @@
 /** chunk id: 633026, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => b
+    A: () => f
 });
-var r = n(627968);
+var s = n(627968);
 n(64700);
 var l = n(503698),
-    s = n.n(l),
+    r = n.n(l),
     a = n(172218),
     i = n(651162),
     o = n(311907),
     c = n(397927),
-    u = n(287809),
-    d = n(993408),
+    d = n(287809),
+    u = n(993408),
     g = n(212407),
-    f = n(815280),
+    _ = n(815280),
     m = n(695413),
-    p = n(201073);
-(0, d.$b)(90);
-let _ = {
+    h = n(201073);
+(0, u.$b)(90);
+let p = {
         rankedSkuIds: [],
         name: "",
         unpublishedAt: void 0,
@@ -28,73 +28,72 @@ let _ = {
         categoryStoreListingId: "",
         rewardSkuId: void 0
     },
-    b = e => {
-        var t;
+    f = e => {
         let {
-            isLoading: n = !1,
-            heroBlock: l,
-            tab: i,
-            onVisibilityChange: d
-        } = e, b = (0, a.K)(e => {
-            null == d || d(e)
-        }, .1, null != d), h = (0, o.bG)([u.default], () => u.default.getCurrentUser()), {
-            bannerDisplayConfig: E,
-            logoDisplayConfig: v,
+            isLoading: t = !1,
+            heroBlock: n,
+            tab: l,
+            onVisibilityChange: i
+        } = e, u = (0, a.K)(e => {
+            i?.(e)
+        }, .1, null != i), f = (0, o.bG)([d.default], () => d.default.getCurrentUser()), {
+            bannerDisplayConfig: x,
+            logoDisplayConfig: E,
             heroLogo: C,
             heroBannerStatic: A,
-            heroBannerAnimated: x
-        } = (0, g.Kk)(l), S = null != (t = null == E ? void 0 : E.responsive) && t, O = null == E ? void 0 : E.backgroundStyle;
-        return null != h && (n || l !== _) ? (0, r.jsxs)("div", {
-            ref: b,
-            className: p.os,
-            children: [(0, r.jsx)("div", {
-                className: s()(p.vK, {
-                    [p.no]: S
+            heroBannerAnimated: b
+        } = (0, g.Kk)(n), S = x?.responsive ?? !1, v = x?.backgroundStyle;
+        return null != f && (t || n !== p) ? (0, s.jsxs)("div", {
+            ref: u,
+            className: h.os,
+            children: [(0, s.jsx)("div", {
+                className: r()(h.vK, {
+                    [h.no]: S
                 }),
-                style: null != O ? {
-                    background: O
+                style: null != v ? {
+                    background: v
                 } : void 0,
-                children: null != A && (0, r.jsx)(f.A, {
+                children: null != A && (0, s.jsx)(_.A, {
                     bannerStatic: A,
-                    bannerAnimated: x,
+                    bannerAnimated: b,
                     isResponsive: S
                 })
-            }), (0, r.jsxs)("div", {
-                className: p.xX,
-                children: [(0, r.jsx)("div", {
-                    className: s()(p.bC, {
-                        [p.no]: S
+            }), (0, s.jsxs)("div", {
+                className: h.xX,
+                children: [(0, s.jsx)("div", {
+                    className: r()(h.bC, {
+                        [h.no]: S
                     }),
-                    children: n ? (0, r.jsx)("div", {
-                        className: p.Hw
-                    }) : (0, r.jsx)("div", {
-                        className: p.Hw,
-                        children: (0, r.jsxs)("div", {
-                            className: p.Wq,
-                            children: [null != C && (0, r.jsx)("img", {
-                                className: p.rm,
+                    children: t ? (0, s.jsx)("div", {
+                        className: h.Hw
+                    }) : (0, s.jsx)("div", {
+                        className: h.Hw,
+                        children: (0, s.jsxs)("div", {
+                            className: h.Wq,
+                            children: [null != C && (0, s.jsx)("img", {
+                                className: h.rm,
                                 src: C,
-                                alt: l.name,
-                                style: null == v ? void 0 : v.toDesktopStyles()
-                            }), null != l.title && (0, r.jsx)(c.Heading, {
+                                alt: n.name,
+                                style: E?.toDesktopStyles()
+                            }), null != n.title && (0, s.jsx)(c.Heading, {
                                 variant: "heading-xxl/bold",
-                                className: p.DD,
+                                className: h.DD,
                                 color: "text-strong",
-                                children: l.title
-                            }), "" !== l.summary && (0, r.jsx)(c.Text, {
+                                children: n.title
+                            }), "" !== n.summary && (0, s.jsx)(c.Text, {
                                 variant: "text-md/normal",
-                                className: p.Tm,
-                                style: null != l.bannerTextColor ? {
-                                    color: l.bannerTextColor
+                                className: h.Tm,
+                                style: null != n.bannerTextColor ? {
+                                    color: n.bannerTextColor
                                 } : void 0,
-                                children: l.summary
+                                children: n.summary
                             })]
                         })
                     })
-                }), (0, r.jsx)(m.A, {
-                    isBlockLoading: n,
-                    heroBlock: l,
-                    tab: i
+                }), (0, s.jsx)(m.A, {
+                    isBlockLoading: t,
+                    heroBlock: n,
+                    tab: l
                 })]
             })]
         }) : null

@@ -1,60 +1,60 @@
-/** chunk id: 392332, original params: e,t,l (module,exports,require) **/
-l.d(t, {
+/** chunk id: 392332, original params: e,t,i (module,exports,require) **/
+i.d(t, {
     A: () => x
-}), l(896048);
-var n = l(627968),
-    i = l(64700),
-    a = l(503698),
-    r = l.n(a),
-    s = l(158954),
-    o = l(397927),
-    c = l(760459),
-    d = l(985018),
-    u = l(851822),
-    m = l(491510);
+});
+var l = i(627968),
+    a = i(64700),
+    n = i(503698),
+    s = i.n(n),
+    r = i(158954),
+    c = i(397927),
+    o = i(760459),
+    d = i(985018),
+    u = i(851822),
+    m = i(491510);
 
 function x(e) {
     let {
         entries: t,
-        viewId: l,
-        officialGuildId: a,
+        viewId: i,
+        officialGuildId: n,
         onClose: x,
-        source: f
-    } = e, g = t.length > 7, [h, p] = i.useState(!1), j = i.useMemo(() => t.slice(0, g && !h ? 6 : void 0), [t, g, h]);
-    return (0, n.jsxs)("div", {
-        children: [(0, n.jsx)(s.DZT, {
+        source: g
+    } = e, h = t.length > 7, [f, j] = a.useState(!1), p = a.useMemo(() => t.slice(0, h && !f ? 6 : void 0), [t, h, f]);
+    return (0, l.jsxs)("div", {
+        children: [(0, l.jsx)(r.DZT, {
             className: u.bV,
             variant: "text-md/semibold",
             color: "text-strong",
             children: d.intl.string(d.t.ak8OHk)
-        }), 0 === t.length ? (0, n.jsx)(s.EYj, {
+        }), 0 === t.length ? (0, l.jsx)(r.EYj, {
             variant: "text-xs/semibold",
             color: "text-strong",
             className: m.p$,
             children: d.intl.string(d.t.R5fYVO)
-        }) : (0, n.jsxs)(n.Fragment, {
-            children: [(0, n.jsx)("div", {
-                className: r()(m.yz, {
-                    [m.T6]: g && !h
+        }) : (0, l.jsxs)(l.Fragment, {
+            children: [(0, l.jsx)("div", {
+                className: s()(m.yz, {
+                    [m.T6]: h && !f
                 }),
-                children: (0, n.jsx)("div", {
+                children: (0, l.jsx)("div", {
                     className: u.fi,
-                    children: j.map(e => (0, n.jsx)(c.A, {
+                    children: p.map(e => (0, l.jsx)(o.A, {
                         entry: e,
-                        viewId: l,
+                        viewId: i,
                         onClose: x,
-                        officialGuildId: a,
-                        source: f
+                        officialGuildId: n,
+                        source: g
                     }, e.id))
                 })
-            }), g && !h && (0, n.jsxs)(o.DUT, {
+            }), h && !f && (0, l.jsxs)(c.DUT, {
                 className: m.ND,
-                onClick: () => p(!0),
-                children: [(0, n.jsx)(s.EYj, {
+                onClick: () => j(!0),
+                children: [(0, l.jsx)(r.EYj, {
                     variant: "text-xs/semibold",
                     color: "interactive-text-default",
                     children: d.intl.string(d.t.yohc6E)
-                }), (0, n.jsx)(o.abt, {
+                }), (0, l.jsx)(c.abt, {
                     size: "xs"
                 })]
             })]

@@ -2,62 +2,62 @@
 "use strict";
 n.d(t, {
     A: () => m
-}), n(896048);
-var r = n(627968);
+});
+var s = n(627968);
 n(64700);
 var l = n(503698),
-    s = n.n(l),
+    r = n.n(l),
     a = n(424918),
     i = n(440938),
     o = n(993408),
     c = n(196231),
-    u = n(985018),
-    d = n(201073);
+    d = n(985018),
+    u = n(201073);
 let g = e => {
         let {
             handleTransition: t,
             featuredBlockRecord: n
         } = e;
-        return (0, r.jsx)("div", {
-            className: s()(d.n9, d.YB),
-            children: null == n ? void 0 : n.subblocks.map((e, n) => e.type === a.u.CATEGORY ? (0, r.jsx)(i.R9, {
+        return (0, s.jsx)("div", {
+            className: r()(u.n9, u.YB),
+            children: n?.subblocks.map((e, n) => e.type === a.u.CATEGORY ? (0, s.jsx)(i.R9, {
                 newValue: {
                     categoryPosition: 1,
                     pageCategory: e.name,
                     pageSection: "featured_block",
                     tilePosition: n
                 },
-                children: (0, r.jsx)(c.S, {
+                children: (0, s.jsx)(c.S, {
                     subblock: e,
-                    badgeText: (0, o.HF)(e.unpublishedAt) ? u.intl.string(u.t["h/uBCR"]) : void 0,
+                    badgeText: (0, o.HF)(e.unpublishedAt) ? d.intl.string(d.t["h/uBCR"]) : void 0,
                     handleTransition: t
                 }, e.categoryStoreListingId)
             }, e.categoryStoreListingId) : null)
         })
     },
-    f = e => {
+    _ = e => {
         let {
             handleTransition: t,
             categories: n
         } = e;
         if (null == n || n.length < 2) return null;
         let [l, a] = n;
-        return (0, r.jsx)("div", {
-            className: s()(d.n9, d.YB),
-            children: (0, r.jsxs)(i.R9, {
+        return (0, s.jsx)("div", {
+            className: r()(u.n9, u.YB),
+            children: (0, s.jsxs)(i.R9, {
                 newValue: {
                     categoryPosition: 1,
-                    pageCategory: null != l ? l.name : null == a ? void 0 : a.name,
+                    pageCategory: null != l ? l.name : a?.name,
                     pageSection: "featured_block",
                     tilePosition: +(null == l)
                 },
-                children: [null != l && (0, r.jsx)(c.S, {
+                children: [null != l && (0, s.jsx)(c.S, {
                     category: l,
-                    badgeText: (0, o.HF)(l.unpublishedAt) ? u.intl.string(u.t["h/uBCR"]) : void 0,
+                    badgeText: (0, o.HF)(l.unpublishedAt) ? d.intl.string(d.t["h/uBCR"]) : void 0,
                     handleTransition: t
-                }), null != a && (0, r.jsx)(c.S, {
+                }), null != a && (0, s.jsx)(c.S, {
                     category: a,
-                    badgeText: (0, o.HF)(a.unpublishedAt) ? u.intl.string(u.t["h/uBCR"]) : void 0,
+                    badgeText: (0, o.HF)(a.unpublishedAt) ? d.intl.string(d.t["h/uBCR"]) : void 0,
                     handleTransition: t
                 })]
             })
@@ -70,24 +70,24 @@ let g = e => {
             categories: l,
             featuredBlockRecord: a
         } = e;
-        return t ? (0, r.jsxs)("div", {
-            className: s()(d.n9, d.YB),
-            children: [(0, r.jsx)("div", {
-                className: s()(d.Jn, d.oT),
-                children: (0, r.jsx)("div", {
-                    className: d.uy
+        return t ? (0, s.jsxs)("div", {
+            className: r()(u.n9, u.YB),
+            children: [(0, s.jsx)("div", {
+                className: r()(u.Jn, u.oT),
+                children: (0, s.jsx)("div", {
+                    className: u.uy
                 })
-            }), (0, r.jsx)("div", {
-                className: s()(d.Jn, d.oT),
-                children: (0, r.jsx)("div", {
-                    className: d.uy
+            }), (0, s.jsx)("div", {
+                className: r()(u.Jn, u.oT),
+                children: (0, s.jsx)("div", {
+                    className: u.uy
                 })
             })]
-        }) : null != a ? (0, r.jsx)(g, {
+        }) : null != a ? (0, s.jsx)(g, {
             featuredBlockRecord: a,
             handleTransition: n,
             isLoading: !1
-        }) : (0, r.jsx)(f, {
+        }) : (0, s.jsx)(_, {
             categories: l,
             handleTransition: n,
             isLoading: !1

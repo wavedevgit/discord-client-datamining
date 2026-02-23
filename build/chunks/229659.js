@@ -1,70 +1,41 @@
 /** chunk id: 229659, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => o
-}), n(896048);
-var l = n(627968),
-    r = n(64700),
-    i = n(502671),
+});
+var i = n(627968),
+    l = n(64700),
+    s = n(502671),
     a = n(827734),
-    s = n(397927);
+    r = n(397927);
 
 function o(e) {
-    let t = (0, r.useRef)(null),
-        [n, o] = (0, r.useState)(null),
-        [c] = (0, r.useState)(() => new i.TimelineDataSeries),
-        u = (0, s.rdh)(a.A.colors.BACKGROUND_BASE_LOW).hsl(),
-        d = (0, s.rdh)(a.A.colors.TEXT_DEFAULT).hsl(),
-        h = (0, s.rdh)(a.A.colors.BACKGROUND_MOD_MUTED).hsl(),
-        p = (0, s.rdh)(a.A.unsafe_rawColors.BRAND_500).hsl();
-    (0, r.useEffect)(() => {
-        var e;
-        let n = t.current;
-        if (null == n) return;
-        let l = new i.TimelineGraphView(n, null != (e = window.devicePixelRatio) ? e : 1);
-        l.backgroundColor = u, l.textColor = d, l.gridColor = h, l.timeOptions = {
+    let t = (0, l.useRef)(null),
+        [n, o] = (0, l.useState)(null),
+        [c] = (0, l.useState)(() => new s.TimelineDataSeries),
+        d = (0, r.rdh)(a.A.colors.BACKGROUND_BASE_LOW).hsl(),
+        u = (0, r.rdh)(a.A.colors.TEXT_DEFAULT).hsl(),
+        h = (0, r.rdh)(a.A.colors.BACKGROUND_MOD_MUTED).hsl(),
+        m = (0, r.rdh)(a.A.unsafe_rawColors.BRAND_500).hsl();
+    (0, l.useEffect)(() => {
+        let e = t.current;
+        if (null == e) return;
+        let n = new s.TimelineGraphView(e, window.devicePixelRatio ?? 1);
+        n.backgroundColor = d, n.textColor = u, n.gridColor = h, n.timeOptions = {
             timeStyle: "short"
-        }, l.fontFamily = "gg sans", l.fontSize = 11, c.setColor(p), l.addDataSeries(c), l.updateEndDate(), o(l)
-    }, [t, u, p, h, d, c]);
-    let f = e.converter,
-        m = null != f ? e.dataPoints.map(e => {
-            var t, n;
-            return t = function(e) {
-                for (var t = 1; t < arguments.length; t++) {
-                    var n = null != arguments[t] ? arguments[t] : {},
-                        l = Object.keys(n);
-                    "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                        return Object.getOwnPropertyDescriptor(n, e).enumerable
-                    }))), l.forEach(function(t) {
-                        var l;
-                        l = n[t], t in e ? Object.defineProperty(e, t, {
-                            value: l,
-                            enumerable: !0,
-                            configurable: !0,
-                            writable: !0
-                        }) : e[t] = l
-                    })
-                }
-                return e
-            }({}, e), n = n = {
-                value: f(e.value)
-            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
-                var n = Object.keys(e);
-                if (Object.getOwnPropertySymbols) {
-                    var l = Object.getOwnPropertySymbols(e);
-                    n.push.apply(n, l)
-                }
-                return n
-            })(Object(n)).forEach(function(e) {
-                Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-            }), t
-        }) : e.dataPoints;
-    c.setPoints(m), null == n || n.updateEndDate();
-    let g = {
+        }, n.fontFamily = "gg sans", n.fontSize = 11, c.setColor(m), n.addDataSeries(c), n.updateEndDate(), o(n)
+    }, [t, d, m, h, u, c]);
+    let A = e.converter,
+        g = null != A ? e.dataPoints.map(e => ({
+            ...e,
+            value: A(e.value)
+        })) : e.dataPoints;
+    c.setPoints(g), n?.updateEndDate();
+    let p = {
         width: e.width,
         height: e.height
     };
-    return (0, l.jsx)("canvas", {
-        style: g,
+    return (0, i.jsx)("canvas", {
+        style: p,
         width: e.width,
         height: e.height,
         ref: t

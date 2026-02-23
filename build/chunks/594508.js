@@ -1,48 +1,48 @@
-/** chunk id: 594508, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    E: () => c,
-    v: () => u
+/** chunk id: 594508, original params: t,e,n (module,exports,require) **/
+n.d(e, {
+    E: () => d,
+    v: () => c
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(732955),
+var r = n(732955),
     l = n(397927),
     a = n(701273),
     s = n(985018),
     o = n(690990);
-let c = e => {
+let d = t => {
     let {
-        onConfirm: t,
+        onConfirm: e,
         onCancel: n,
-        title: c,
-        subtitle: u,
-        confirmCta: d,
-        showOpenDiscord: p = !0
-    } = e;
-    return (0, r.jsxs)("div", {
+        title: d,
+        subtitle: c,
+        confirmCta: u,
+        showOpenDiscord: m = !0
+    } = t;
+    return (0, i.jsxs)("div", {
         className: o.RP,
-        children: [(0, r.jsx)(l.Heading, {
+        children: [(0, i.jsx)(l.Heading, {
             className: o.RS,
             variant: "heading-lg/extrabold",
-            children: c
-        }), null != u ? (0, r.jsx)(l.Text, {
+            children: d
+        }), null != c ? (0, i.jsx)(l.Text, {
             className: o.sT,
             variant: "text-sm/normal",
             color: "text-default",
-            children: u
-        }) : null, (0, r.jsxs)("div", {
+            children: c
+        }) : null, (0, i.jsxs)("div", {
             className: o.UD,
-            children: [p && (0, r.jsx)(i.$nd, {
+            children: [m && (0, i.jsx)(r.$nd, {
                 variant: "primary",
                 text: s.intl.string(s.t["8L5bZG"]),
                 fullWidth: !0,
                 onClick: () => (0, a.A)("application_sub_mweb_success_modal")
-            }), (0, r.jsx)(i.$nd, {
+            }), (0, i.jsx)(r.$nd, {
                 variant: "secondary",
-                text: d,
+                text: u,
                 fullWidth: !0,
-                onClick: t
-            }), null != n && (0, r.jsx)(i.$nd, {
+                onClick: e
+            }), null != n && (0, i.jsx)(r.$nd, {
                 variant: "secondary",
                 text: s.intl.string(s.t.iAfxo3),
                 fullWidth: !0,
@@ -52,41 +52,41 @@ let c = e => {
     })
 };
 
-function u(e) {
+function c(t) {
     let {
-        onConfirm: t,
+        onConfirm: e,
         tierName: n,
-        subscription: c
-    } = e;
-    return (0, r.jsxs)("div", {
+        subscription: d
+    } = t;
+    return (0, i.jsxs)("div", {
         className: o.RP,
-        children: [(0, r.jsx)(l.Heading, {
+        children: [(0, i.jsx)(l.Heading, {
             className: o.RS,
             variant: "heading-lg/extrabold",
             children: s.intl.format(s.t.wLFT6z, {
                 tier: n
             })
-        }), (0, r.jsx)(l.Text, {
+        }), (0, i.jsx)(l.Text, {
             className: o.sT,
             variant: "text-sm/normal",
             color: "text-default",
             children: s.intl.format(s.t.OsAK9h, {
-                timestamp: null == c ? void 0 : c.currentPeriodEnd
+                timestamp: d?.currentPeriodEnd
             })
-        }), (0, r.jsxs)("div", {
+        }), (0, i.jsxs)("div", {
             className: o.UD,
-            children: [(0, r.jsx)("div", {
+            children: [(0, i.jsx)("div", {
                 "data-button-hoisted-classname-wrapper": !0,
                 className: o.__invalid_openDiscordButton,
-                children: (0, r.jsx)(i.$nd, {
+                children: (0, i.jsx)(r.$nd, {
                     variant: "primary",
                     text: s.intl.string(s.t["8L5bZG"]),
                     onClick: () => (0, a.A)("application_sub_mweb_success_modal")
                 })
-            }), (0, r.jsx)(i.$nd, {
+            }), (0, i.jsx)(r.$nd, {
                 variant: "secondary",
                 text: s.intl.string(s.t.nlkywz),
-                onClick: t
+                onClick: e
             })]
         })]
     })

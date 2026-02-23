@@ -1,57 +1,56 @@
 /** chunk id: 388773, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => u
-}), n(896048);
-var r = n(627968),
-    i = n(64700),
-    l = n(397927),
-    s = n(641324),
-    a = n(46373),
+});
+var i = n(627968),
+    s = n(64700),
+    a = n(397927),
+    r = n(641324),
+    l = n(46373),
     o = n(78837),
     c = n(985018),
     d = n(115686);
 
 function u(e) {
-    var t;
-    let n, {
-            node: u
+    let t, {
+            node: n
         } = e,
-        [_, p] = i.useState(!1),
+        [u, _] = s.useState(!1),
         {
             layout: m,
-            collapseAfter: g,
-            useCollapsibleTitle: A,
-            useCollapsedSubtitle: f
-        } = u,
-        b = null != g ? m.slice(0, g) : m,
-        h = null != g ? m.slice(g) : [],
-        E = null != (t = null == A ? void 0 : A(_, h.length)) ? t : (n = h.length, _ ? c.intl.formatToPlainString(c.t["3SHL+d"], {
-            count: n
+            collapseAfter: A,
+            useCollapsibleTitle: g,
+            useCollapsedSubtitle: h
+        } = n,
+        x = null != A ? m.slice(0, A) : m,
+        p = null != A ? m.slice(A) : [],
+        E = g?.(u, p.length) ?? (t = p.length, u ? c.intl.formatToPlainString(c.t["3SHL+d"], {
+            count: t
         }) : c.intl.formatToPlainString(c.t["8JRFyZ"], {
-            count: n
+            count: t
         })),
-        O = null == f ? void 0 : f();
-    return (0, r.jsxs)(l.BJc, {
+        C = h?.();
+    return (0, i.jsxs)(a.BJc, {
         gap: 8,
-        children: [b.map((e, t) => (0, r.jsxs)(i.Fragment, {
-            children: [(0, r.jsx)(s.A, {
+        children: [x.map((e, t) => (0, i.jsxs)(s.Fragment, {
+            children: [(0, i.jsx)(r.A, {
                 node: e
-            }), t !== b.length - 1 && (0, r.jsx)(a.A, {})]
-        }, e.key)), h.length > 0 && (0, r.jsxs)("div", {
+            }), t !== x.length - 1 && (0, i.jsx)(l.A, {})]
+        }, e.key)), p.length > 0 && (0, i.jsxs)("div", {
             className: d.CT,
-            children: [(0, r.jsx)(a.A, {
+            children: [(0, i.jsx)(l.A, {
                 className: d.mn
-            }), (0, r.jsx)(o.f, {
+            }), (0, i.jsx)(o.f, {
                 title: E,
-                collapsedSubtitle: O,
-                isExpanded: _,
-                onExpandedChange: p,
-                children: (0, r.jsx)(l.BJc, {
+                collapsedSubtitle: C,
+                isExpanded: u,
+                onExpandedChange: _,
+                children: (0, i.jsx)(a.BJc, {
                     gap: 8,
-                    children: h.map((e, t) => (0, r.jsxs)(i.Fragment, {
-                        children: [(0, r.jsx)(s.A, {
+                    children: p.map((e, t) => (0, i.jsxs)(s.Fragment, {
+                        children: [(0, i.jsx)(r.A, {
                             node: e
-                        }), t !== h.length - 1 && (0, r.jsx)(a.A, {})]
+                        }), t !== p.length - 1 && (0, i.jsx)(l.A, {})]
                     }, e.key))
                 })
             })]

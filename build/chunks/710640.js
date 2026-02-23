@@ -1,33 +1,33 @@
 /** chunk id: 710640, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
     fo: () => a,
-    uW: () => s,
+    uW: () => r,
     vr: () => c,
     z0: () => o
-}), n(733351);
-var r = n(753738),
-    l = n(985018);
+});
+var i = n(753738),
+    s = n(985018);
 
-function i(e, t) {
+function l(e, t) {
     return {
         type: e,
-        message: null != t ? t : null
+        message: t ?? null
     }
 }
 
-function s() {
-    return i(0, l.intl.string(l.t.uXA573))
+function r() {
+    return l(0, s.intl.string(s.t.uXA573))
 }
 
 function a() {
-    return i(0, l.intl.string(l.t.kesTVT))
+    return l(0, s.intl.string(s.t.kesTVT))
 }
 
 function o(e, t) {
-    return i(1, (0, r.cw)(e, null == t ? void 0 : t.id))
+    return l(1, (0, i.cw)(e, t?.id))
 }
 
 function c(e, t) {
-    var n;
-    return null == e || 0 === e.type && null != t.content && t.content.trim().length > 0 ? null : null != (n = e.message) ? n : null
+    return null == e || 0 === e.type && null != t.content && t.content.trim().length > 0 ? null : e.message ?? null
 }

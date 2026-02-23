@@ -1,44 +1,42 @@
 /** chunk id: 617071, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => u
-}), n(896048);
+});
 var l = n(627968),
-    r = n(64700),
+    a = n(64700),
     i = n(857250),
-    a = n(397927),
+    r = n(397927),
     s = n(899847),
-    o = n(662502),
-    d = n(632738),
+    d = n(662502),
+    o = n(632738),
     c = n(985018);
 let u = e => {
-    var t, n;
     let {
-        parents: u
-    } = e, [m, p] = r.useState(!1), b = r.useCallback(() => {
+        parents: t
+    } = e, [n, u] = a.useState(!1), _ = a.useCallback(() => {
         (0, s.Xz)().then(() => {
-            var e, t;
-            (0, a.showToast)((0, i.o)(c.intl.formatToPlainString(c.t.wr4IT5, {
-                count: u.length,
-                parent1: u[0].username,
-                parent2: null == (e = u[1]) ? void 0 : e.username,
-                parent3: null == (t = u[2]) ? void 0 : t.username
-            }), a.ToastType.SUCCESS)), p(!0)
+            (0, r.showToast)((0, i.o)(c.intl.formatToPlainString(c.t.wr4IT5, {
+                count: t.length,
+                parent1: t[0].username,
+                parent2: t[1]?.username,
+                parent3: t[2]?.username
+            }), r.ToastType.SUCCESS)), u(!0)
         }).catch(() => {
-            o.A.showFailedToast()
+            d.A.showFailedToast()
         })
-    }, [u]);
-    if (0 === u.length) return null;
-    let _ = c.intl.formatToPlainString(c.t.HqyWeO, {
-        count: u.length,
-        parent1: u[0].username,
-        parent2: null == (t = u[1]) ? void 0 : t.username,
-        parent3: null == (n = u[2]) ? void 0 : n.username
+    }, [t]);
+    if (0 === t.length) return null;
+    let m = c.intl.formatToPlainString(c.t.HqyWeO, {
+        count: t.length,
+        parent1: t[0].username,
+        parent2: t[1]?.username,
+        parent3: t[2]?.username
     });
-    return (0, l.jsx)(d.PQ, {
-        title: _,
+    return (0, l.jsx)(o.PQ, {
+        title: m,
         description: c.intl.string(c.t["5l/hlt"]),
-        buttonText: m ? c.intl.string(c.t.ntuuk7) : c.intl.string(c.t["sYdX/H"]),
-        buttonDisabled: m,
-        onButtonPress: b
+        buttonText: n ? c.intl.string(c.t.ntuuk7) : c.intl.string(c.t["sYdX/H"]),
+        buttonDisabled: n,
+        onButtonPress: _
     })
 }

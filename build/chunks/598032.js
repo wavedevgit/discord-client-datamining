@@ -1,125 +1,124 @@
-/** chunk id: 598032, original params: e,t,r (module,exports,require) **/
-r.d(t, {
+/** chunk id: 598032, original params: e,t,s (module,exports,require) **/
+s.d(t, {
     A: () => w
-}), r(896048);
-var n = r(627968);
-r(64700);
-var i = r(503698),
-    l = r.n(i),
-    s = r(141931),
-    a = r(311907),
-    o = r(397927),
-    c = r(627363),
-    d = r(769015),
-    u = r(74848),
-    f = r(430452),
-    h = r(723702),
-    p = r(688465),
-    x = r(461430),
-    m = r(56439),
-    j = r(654291),
-    g = r(420659),
-    _ = r(753070),
-    v = r(731854),
-    b = r(191850),
-    y = r(985018),
-    S = r(607186);
+});
+var r = s(627968);
+s(64700);
+var i = s(503698),
+    n = s.n(i),
+    l = s(141931),
+    a = s(311907),
+    o = s(397927),
+    c = s(627363),
+    d = s(769015),
+    u = s(74848),
+    f = s(430452),
+    h = s(723702),
+    x = s(688465),
+    p = s(461430),
+    m = s(56439),
+    _ = s(654291),
+    g = s(420659),
+    j = s(753070),
+    v = s(731854),
+    A = s(191850),
+    S = s(985018),
+    y = s(607186);
 
-function A() {
-    return (0, n.jsx)("span", {
-        className: S.gO,
+function C() {
+    return (0, r.jsx)("span", {
+        className: y.gO,
         children: "•"
     })
 }
 
-function O(e) {
+function b(e) {
     let {
         source: t
     } = e, {
-        data: r
-    } = (0, c.YY)(null != t && (0, j.l)(t) ? t.id : void 0);
-    return null == t ? (0, n.jsx)(o.Fzq, {
-        className: S.Jd,
+        data: s
+    } = (0, c.YY)(null != t && (0, _.l)(t) ? t.id : void 0);
+    return null == t ? (0, r.jsx)(o.Fzq, {
+        className: y.Jd,
         size: "md",
         color: "currentColor"
-    }) : (0, j.l)(t) ? (0, n.jsx)(d.A, {
-        game: r,
+    }) : (0, _.l)(t) ? (0, r.jsx)(d.A, {
+        game: s,
         pid: t.pid
-    }) : null == t.icon || "" === t.icon ? (0, n.jsx)(o.Fzq, {
-        className: S.Jd,
+    }) : null == t.icon || "" === t.icon ? (0, r.jsx)(o.Fzq, {
+        className: y.Jd,
         size: "md",
         color: "currentColor"
-    }) : (0, n.jsx)("img", {
+    }) : (0, r.jsx)("img", {
         src: t.icon,
         alt: "",
-        className: S.pI
+        className: y.pI
     })
 }
 
 function w() {
-    var e, t, r, i;
     let [{
-        preset: c,
-        resolution: d,
-        fps: j,
-        muteStreamAudio: w,
-        selectedSource: C,
-        sourceType: E,
-        audioSourceId: I
-    }] = (0, p.tS)(), [N, T] = (0, u.tR)(v.oh.AUDIO_INPUT, {
+        preset: e,
+        resolution: t,
+        fps: s,
+        muteStreamAudio: i,
+        selectedSource: c,
+        sourceType: d,
+        audioSourceId: _
+    }] = (0, x.tS)(), [w, I] = (0, u.tR)(v.oh.AUDIO_INPUT, {
         location: "StreamSettingsSummary"
-    }), R = N.concat(T), [P, M] = null != (e = (0, g.A)(c)) ? e : [d, j], D = (0, x.K)(c), U = (0, m.b)(P), G = E === s.fS.CAMERA, L = null != C, k = null != C ? null == C || null == (r = C.id) ? void 0 : r.startsWith(s.fS.CAMERA) : G, F = c === _.jQ.PRESET_AUTO, H = L ? void 0 : c === _.jQ.PRESET_VIDEO ? y.intl.string(b.default.MuHUFe) : c === _.jQ.PRESET_DOCUMENTS ? y.intl.string(b.default.y0JuYR) : c === _.jQ.PRESET_AUTO ? y.intl.string(b.default.m4jtlc) : void 0, B = (0, a.bG)([f.A], () => f.A.getUseSystemScreensharePicker() && (0, h.isLinux)());
-    return (0, n.jsxs)("div", {
-        className: S.zr,
-        children: [L && (0, n.jsx)(O, {
-            source: C
-        }), (0, n.jsxs)("div", {
-            className: S.z,
-            children: [(0, n.jsx)(o.Text, {
-                className: S.fB,
+    }), E = w.concat(I), [N, O] = (0, g.A)(e) ?? [t, s], T = (0, p.K)(e), R = (0, m.b)(N), M = d === l.fS.CAMERA, U = null != c, G = null != c ? c?.id?.startsWith(l.fS.CAMERA) : M, L = e === j.jQ.PRESET_AUTO, D = U ? void 0 : e === j.jQ.PRESET_VIDEO ? S.intl.string(A.default.MuHUFe) : e === j.jQ.PRESET_DOCUMENTS ? S.intl.string(A.default.y0JuYR) : e === j.jQ.PRESET_AUTO ? S.intl.string(A.default.m4jtlc) : void 0, P = (0, a.bG)([f.Ay], () => f.Ay.getUseSystemScreensharePicker() && (0, h.isLinux)());
+    return (0, r.jsxs)("div", {
+        className: y.zr,
+        children: [U && (0, r.jsx)(b, {
+            source: c
+        }), (0, r.jsxs)("div", {
+            className: y.z,
+            children: [(0, r.jsx)(o.Text, {
+                className: y.fB,
                 variant: "text-md/semibold",
                 color: "text-strong",
-                children: L ? null != (t = null == C ? void 0 : C.name) ? t : y.intl.string(b.default["hJMA+x"]) : D
-            }), (0, n.jsxs)(o.Text, {
-                className: S.kI,
+                children: U ? c?.name ?? S.intl.string(A.default["hJMA+x"]) : T
+            }), (0, r.jsxs)(o.Text, {
+                className: y.kI,
                 variant: "text-xs/medium",
                 color: "text-muted",
-                children: [L && (0, n.jsxs)(n.Fragment, {
-                    children: [(0, n.jsxs)("span", {
-                        className: S.x5,
-                        children: [(0, n.jsx)(o.Zes, {
-                            className: S.Kk,
+                children: [U && (0, r.jsxs)(r.Fragment, {
+                    children: [(0, r.jsxs)("span", {
+                        className: y.x5,
+                        children: [(0, r.jsx)(o.Zes, {
+                            className: y.Kk,
                             size: "xxs",
                             color: "currentColor"
-                        }), D]
-                    }), (0, n.jsx)(A, {})]
-                }), null != H && (0, n.jsx)("span", {
-                    children: H
-                }), !F && (0, n.jsxs)(n.Fragment, {
-                    children: [(0, n.jsx)(A, {}), (0, n.jsx)("span", {
-                        children: U
-                    }), (0, n.jsx)(A, {}), (0, n.jsx)("span", {
-                        children: "".concat(M, "fps")
+                        }), T]
+                    }), (0, r.jsx)(C, {})]
+                }), null != D && (0, r.jsx)("span", {
+                    children: D
+                }), !L && (0, r.jsxs)(r.Fragment, {
+                    children: [(0, r.jsx)(C, {}), (0, r.jsx)("span", {
+                        children: R
+                    }), (0, r.jsx)(C, {}), (0, r.jsx)("span", {
+                        children: `${O}fps`
                     })]
-                }), w && (0, n.jsxs)(n.Fragment, {
-                    children: [(0, n.jsx)(A, {}), (0, n.jsxs)("span", {
-                        className: S.x5,
-                        children: [(0, n.jsx)(o._RO, {
-                            className: l()(S.Kk, S.tG),
+                }), i && (0, r.jsxs)(r.Fragment, {
+                    children: [(0, r.jsx)(C, {}), (0, r.jsxs)("span", {
+                        className: y.x5,
+                        children: [(0, r.jsx)(o._RO, {
+                            className: n()(y.Kk, y.tG),
                             size: "xxs",
                             color: "currentColor"
-                        }), y.intl.string(b.default.FzMGWR)]
+                        }), S.intl.string(A.default.FzMGWR)]
                     })]
-                }), !w && !k && B && (0, n.jsxs)(n.Fragment, {
-                    children: [(0, n.jsx)(A, {}), y.intl.string(b.default["n9/rUq"])]
-                }), k ? (0, n.jsxs)(n.Fragment, {
-                    children: [(0, n.jsx)(A, {}), (0, n.jsx)("span", {
-                        children: null == (i = R.find(e => {
+                }), !i && !G && P && (0, r.jsxs)(r.Fragment, {
+                    children: [(0, r.jsx)(C, {}), S.intl.string(A.default["n9/rUq"])]
+                }), G ? (0, r.jsxs)(r.Fragment, {
+                    children: [(0, r.jsx)(C, {}), (0, r.jsx)("span", {
+                        children: E.find(e => {
                             let {
                                 id: t
                             } = e;
-                            return I === t
-                        })) ? void 0 : i.name
+                            return _ === t
+                        })?.name
                     })]
                 }) : null]
             })]

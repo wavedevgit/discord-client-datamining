@@ -1,204 +1,173 @@
 /** chunk id: 828709, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => j,
-    B: () => _
-}), n(228524), n(896048);
-var r = n(627968);
+    A: () => A,
+    B: () => p
+});
+var i = n(627968);
 n(64700);
-var i = n(503698),
-    l = n.n(i),
-    s = n(735438),
-    a = n.n(s),
+var s = n(503698),
+    l = n.n(s),
+    r = n(735438),
+    a = n.n(r),
     o = n(397927),
-    c = n(157559),
-    d = n(599119),
+    d = n(157559),
+    c = n(599119),
     u = n(202027),
-    g = n(111487),
-    m = n(107795),
-    p = n(539916),
-    f = n(985018),
-    h = n(313109);
+    m = n(111487),
+    g = n(107795),
+    x = n(539916),
+    h = n(985018),
+    _ = n(313109);
 
-function b(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = r
-        })
-    }
-    return e
-}
-
-function x(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
-        }
-        return n
-    })(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-
-function j(e) {
-    var t, i, s, c;
+function A(e) {
     let {
-        guild: j,
-        prompt: _,
-        singleColumn: O,
-        promptIndex: v,
-        option: y,
-        hasError: A,
-        onDragStart: E,
-        onDragComplete: N,
-        onDragReset: S
-    } = e, I = null, C = a().findIndex(_.options, e => e.id === y.id), {
+        guild: t,
+        prompt: s,
+        singleColumn: r,
+        promptIndex: d,
+        option: A,
+        hasError: p,
+        onDragStart: f,
+        onDragComplete: j,
+        onDragReset: N
+    } = e, E = null, b = a().findIndex(s.options, e => e.id === A.id), {
         drag: T,
-        dragSourcePosition: P,
-        drop: w,
-        setIsDraggable: R
-    } = (0, d.A)({
-        type: "ONBOARDING_PROMPT_OPTION_CARD-".concat(_.id),
-        index: C,
-        optionId: y.id,
-        onDragStart: E,
-        onDragComplete: N,
-        onDragReset: S
+        dragSourcePosition: C,
+        drop: I,
+        setIsDraggable: v
+    } = (0, c.A)({
+        type: `ONBOARDING_PROMPT_OPTION_CARD-${s.id}`,
+        index: b,
+        optionId: A.id,
+        onDragStart: f,
+        onDragComplete: j,
+        onDragReset: N
     }), {
-        customEmoji: D,
-        unicodeEmoji: G
-    } = (0, u.A)(null == (t = y.emoji) ? void 0 : t.id, null == (i = y.emoji) ? void 0 : i.name);
-    return (0, p.hv)(y.emoji) || null != D || null != G || (I = f.intl.string(f.t["61wfmh"])), (0, r.jsxs)(o.DUT, {
-        className: l()(h.we, {
-            [h.JD]: A || null != I,
-            [h.A]: null != P && C < P,
-            [h.Ze]: null != P && C > P,
-            [h.h7]: O
+        customEmoji: S,
+        unicodeEmoji: y
+    } = (0, u.A)(A.emoji?.id, A.emoji?.name);
+    return (0, x.hv)(A.emoji) || null != S || null != y || (E = h.intl.string(h.t["61wfmh"])), (0, i.jsxs)(o.DUT, {
+        className: l()(_.we, {
+            [_.JD]: p || null != E,
+            [_.A]: null != C && b < C,
+            [_.Ze]: null != C && b > C,
+            [_.h7]: r
         }),
         onClick: () => (0, o.mMO)(async () => {
             let {
                 default: e
             } = await n.e("62765").then(n.bind(n, 826204));
-            return t => (0, r.jsx)(e, x(b({}, t), {
-                guild: j,
-                prompt: _,
-                option: y,
-                index: v,
+            return n => (0, i.jsx)(e, {
+                ...n,
+                guild: t,
+                prompt: s,
+                option: A,
+                index: d,
                 onSave: e => {
-                    (0, m.NF)(j, _.id, {
-                        options: _.options.map(t => t.id === y.id ? e : t)
+                    (0, g.NF)(t, s.id, {
+                        options: s.options.map(t => t.id === A.id ? e : t)
                     })
                 },
                 onDelete: () => {
-                    (0, m.NF)(j, _.id, {
-                        options: _.options.filter(e => e.id !== y.id)
+                    (0, g.NF)(t, s.id, {
+                        options: s.options.filter(e => e.id !== A.id)
                     })
                 }
-            }))
+            })
         }),
-        onMouseEnter: () => R(!0),
-        onMouseLeave: () => R(!1),
+        onMouseEnter: () => v(!0),
+        onMouseLeave: () => v(!1),
         innerRef: e => {
-            T(w(e))
+            T(I(e))
         },
-        children: [(0, r.jsx)("div", {
-            className: h.cK,
-            children: (0, r.jsx)(o.WP0, {
+        children: [(0, i.jsx)("div", {
+            className: _.cK,
+            children: (0, i.jsx)(o.WP0, {
                 size: "xs",
                 color: "currentColor",
-                className: h.__invalid_dragIcon
+                className: _.__invalid_dragIcon
             })
-        }), (0, r.jsxs)("div", {
-            className: h.OF,
-            children: [(0, r.jsx)("div", {
-                className: h.Zg,
-                children: (0, r.jsx)(g.A, {
-                    emojiId: null == (s = y.emoji) ? void 0 : s.id,
-                    emojiName: null == (c = y.emoji) ? void 0 : c.name,
+        }), (0, i.jsxs)("div", {
+            className: _.OF,
+            children: [(0, i.jsx)("div", {
+                className: _.Zg,
+                children: (0, i.jsx)(m.A, {
+                    emojiId: A.emoji?.id,
+                    emojiName: A.emoji?.name,
                     defaultComponent: null
                 })
-            }), (0, r.jsxs)("div", {
-                className: h.Qq,
-                children: [(0, r.jsx)(o.Text, {
+            }), (0, i.jsxs)("div", {
+                className: _.Qq,
+                children: [(0, i.jsx)(o.Text, {
                     variant: "text-md/medium",
                     color: "text-strong",
                     lineClamp: 1,
-                    children: y.title
-                }), "" !== y.description && (0, r.jsx)(o.Text, {
-                    className: h.h_,
+                    children: A.title
+                }), "" !== A.description && (0, i.jsx)(o.Text, {
+                    className: _.h_,
                     variant: "text-xs/normal",
                     color: "text-default",
-                    children: y.description
+                    children: A.description
                 })]
             })]
-        }), null != I && (0, r.jsx)(o.Text, {
+        }), null != E && (0, i.jsx)(o.Text, {
             variant: "text-xs/medium",
             color: "text-feedback-critical",
-            children: I
+            children: E
         })]
     })
 }
 
-function _(e) {
+function p(e) {
     let {
         guild: t,
-        prompt: i,
-        promptIndex: s,
+        prompt: s,
+        promptIndex: r,
         singleColumn: a
-    } = e, d = () => {
+    } = e, c = () => {
         (0, o.mMO)(async () => {
             let {
                 default: e
             } = await n.e("62765").then(n.bind(n, 826204));
-            return n => (0, r.jsx)(e, x(b({}, n), {
+            return n => (0, i.jsx)(e, {
+                ...n,
                 guild: t,
-                prompt: i,
-                onSave: e => (0, m.NF)(t, i.id, {
-                    options: [...i.options, e]
+                prompt: s,
+                onSave: e => (0, g.NF)(t, s.id, {
+                    options: [...s.options, e]
                 }),
                 onDelete: () => {},
-                index: s
-            }))
+                index: r
+            })
         })
     };
-    return (0, r.jsx)(o.DUT, {
-        className: l()(h.we, h.f, {
-            [h.JS]: 0 === i.options.length,
-            [h.h7]: a
+    return (0, i.jsx)(o.DUT, {
+        className: l()(_.we, _.f, {
+            [_.JS]: 0 === s.options.length,
+            [_.h7]: a
         }),
         onClick: () => {
-            i.options.length + 1 === p.Bu ? c.A.show({
-                title: f.intl.string(f.t.TggC7k),
-                body: f.intl.formatToPlainString(f.t.kPQKai, {
-                    thresholdCount: p.Bu
+            s.options.length + 1 === x.Bu ? d.A.show({
+                title: h.intl.string(h.t.TggC7k),
+                body: h.intl.formatToPlainString(h.t.kPQKai, {
+                    thresholdCount: x.Bu
                 }),
-                confirmText: f.intl.string(f.t.BddRzS),
-                cancelText: f.intl.string(f.t["ETE/oC"]),
-                onConfirm: d
-            }) : d()
+                confirmText: h.intl.string(h.t.BddRzS),
+                cancelText: h.intl.string(h.t["ETE/oC"]),
+                onConfirm: c
+            }) : c()
         },
-        children: (0, r.jsxs)("div", {
-            className: h.OF,
-            children: [(0, r.jsx)(o.U1e, {
+        children: (0, i.jsxs)("div", {
+            className: _.OF,
+            children: [(0, i.jsx)(o.U1e, {
                 size: "md",
                 color: "currentColor",
-                className: h.WW
-            }), (0, r.jsx)(o.Text, {
+                className: _.WW
+            }), (0, i.jsx)(o.Text, {
                 variant: "text-md/medium",
                 color: "text-strong",
-                children: f.intl.string(f.t.Ty3lgp)
+                children: h.intl.string(h.t.Ty3lgp)
             })]
         })
     })

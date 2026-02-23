@@ -1,28 +1,28 @@
 /** chunk id: 533148, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => s
-}), n(747238), n(812715);
-var r = n(627968),
-    i = n(397927),
+    A: () => r
+});
+var i = n(627968),
+    s = n(397927),
     l = n(927573);
 
-function s(e) {
+function r(e) {
     let {
         value: t,
         onChange: n,
-        error: s,
+        error: r,
         disabled: a,
         autoFocus: o = !1
     } = e;
-    return (0, r.jsx)(i.ksK, {
-        leading: "".concat(l.mu, "/"),
+    return (0, i.jsx)(s.ksK, {
+        leading: `${l.mu}/`,
         value: t,
         onChange: e => {
             n(e.replace(/ /g, "-"))
         },
         maxLength: 25,
-        error: s,
+        error: r,
         disabled: a,
         autoFocus: o
     })

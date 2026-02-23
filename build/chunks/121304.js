@@ -2,11 +2,11 @@
 n.d(t, {
     g: () => d
 });
-var r = n(773669),
-    i = n(927578),
-    l = n(580630),
-    s = n(788868),
-    a = n(652215),
+var i = n(773669),
+    s = n(927578),
+    a = n(580630),
+    r = n(788868),
+    l = n(652215),
     o = n(985018),
     c = n(927961);
 let d = () => {
@@ -107,10 +107,10 @@ let d = () => {
             id: 4,
             label: o.intl.string(o.t["ufhQC+"]),
             tier0ColumnData: {
-                text: (0, i.EJ)(s.PremiumTypes.TIER_0)
+                text: (0, s.EJ)(r.PremiumTypes.TIER_0)
             },
             tier2ColumnData: {
-                text: (0, i.EJ)(s.PremiumTypes.TIER_2)
+                text: (0, s.EJ)(r.PremiumTypes.TIER_2)
             }
         }, {
             id: 11,
@@ -151,8 +151,8 @@ let d = () => {
         }, {
             id: 6,
             label: o.intl.formatToPlainString(o.t.nyhDpw, {
-                numBoosts: s.M4,
-                percentageOff: (0, l.l9)(r.default.locale, s.oX / 100)
+                numBoosts: r.M4,
+                percentageOff: (0, a.l9)(i.default.locale, r.oX / 100)
             }),
             tier0ColumnData: {
                 includes: !1
@@ -190,7 +190,7 @@ let d = () => {
         }, {
             id: 15,
             label: o.intl.formatToPlainString(o.t["8crdzJ"], {
-                maxChars: a.CS1
+                maxChars: l.CS1
             }),
             tier0ColumnData: {
                 includes: !1

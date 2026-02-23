@@ -1,55 +1,54 @@
-/** chunk id: 456459, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    V: () => m
-}), n(896048);
-var r = n(627968),
-    i = n(64700),
-    a = n(158954),
-    o = n(311907),
-    s = n(775602),
-    l = n(524246),
-    c = n(816252),
-    u = n(916974),
-    d = n(788868),
-    f = n(985018),
-    p = n(333291),
-    _ = n(303930),
-    h = n(938822);
-let m = () => {
+/** chunk id: 456459, original params: t,e,i (module,exports,require) **/
+i.d(e, {
+    V: () => x
+});
+var n = i(627968),
+    r = i(64700),
+    l = i(158954),
+    a = i(311907),
+    s = i(775602),
+    u = i(524246),
+    o = i(816252),
+    c = i(916974),
+    d = i(788868),
+    m = i(985018),
+    f = i(333291),
+    g = i(303930),
+    p = i(938822);
+let x = () => {
     let {
-        transitionState: e,
-        onClose: t,
-        premiumType: n,
-        confettiCanvas: m,
-        churnUserDiscountOffer: g,
-        discountedPrice: E
-    } = (0, u.X)(), y = (0, i.useRef)(null), [b, O] = (0, i.useState)(!1), v = (0, o.bG)([s.A], () => s.A.useReducedMotion);
-    if ((0, i.useEffect)(() => {
-            null !== y.current && null !== E && O(!0)
-        }, [y, E]), null === g) return null;
-    let A = n === d.PremiumTypes.TIER_2;
-    return (0, r.jsxs)("div", {
+        transitionState: t,
+        onClose: e,
+        premiumType: i,
+        confettiCanvas: x,
+        churnUserDiscountOffer: h,
+        discountedPrice: P
+    } = (0, c.X)(), y = (0, r.useRef)(null), [C, v] = (0, r.useState)(!1), E = (0, a.bG)([s.A], () => s.A.useReducedMotion);
+    if ((0, r.useEffect)(() => {
+            null !== y.current && null !== P && v(!0)
+        }, [y, P]), null === h) return null;
+    let D = i === d.PremiumTypes.TIER_2;
+    return (0, n.jsxs)("div", {
         ref: y,
-        children: [(0, r.jsx)(a.ExpressiveModal, {
+        children: [(0, n.jsx)(l.ExpressiveModal, {
             graphic: {
                 type: "image",
-                src: A ? h.A : _
+                src: D ? p.A : g
             },
-            gradientColor: A ? "nitro-pink" : "nitro-green",
-            transitionState: e,
-            title: f.intl.string(f.t.PZSyRk),
-            onClose: async () => t(),
-            children: (0, r.jsx)("div", {
-                className: p.TA,
-                children: (0, r.jsx)(c._, {
-                    offerState: c.b.APPLIED,
-                    userDiscountOffer: g
+            gradientColor: D ? "nitro-pink" : "nitro-green",
+            transitionState: t,
+            title: m.intl.string(m.t.PZSyRk),
+            onClose: async () => e(),
+            children: (0, n.jsx)("div", {
+                className: f.TA,
+                children: (0, n.jsx)(o._, {
+                    offerState: o.b.APPLIED,
+                    userDiscountOffer: h
                 })
             })
-        }), !v && b && (0, r.jsx)(l.A, {
+        }), !E && C && (0, n.jsx)(u.A, {
             confettiTarget: y.current,
-            confettiCanvas: m,
+            confettiCanvas: x,
             confettiVelocityMultiplier: .75
         })]
     })

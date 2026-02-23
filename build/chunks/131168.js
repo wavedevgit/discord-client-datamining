@@ -2,20 +2,19 @@
 n.d(t, {
     p: () => c
 });
-var r = n(311907),
-    i = n(166403),
-    l = n(816733),
-    s = n(694080),
-    a = n(432779),
+var i = n(311907),
+    s = n(166403),
+    a = n(816733),
+    r = n(694080),
+    l = n(432779),
     o = n(788868);
 
 function c() {
-    var e;
-    let t = (0, r.bG)([i.A], () => i.A.getPremiumTypeSubscription()),
-        n = l.A.isFetchingOffer(),
-        c = l.A.hasFetchedOffer(),
-        d = (0, a.A)(o.q),
-        u = (0, a.A)(o.EG),
-        _ = null != (e = null != d ? d : u) ? e : null;
-    return (null == t ? void 0 : t.canceledAt) == null ? null : null != _ ? _ : (n || c || (0, s.Vn)(), null)
+    let e = (0, i.bG)([s.A], () => s.A.getPremiumTypeSubscription()),
+        t = a.A.isFetchingOffer(),
+        n = a.A.hasFetchedOffer(),
+        c = (0, l.A)(o.q),
+        d = (0, l.A)(o.EG),
+        u = c ?? d ?? null;
+    return e?.canceledAt == null ? null : null != u ? u : (t || n || (0, r.Vn)(), null)
 }

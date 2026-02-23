@@ -1,122 +1,107 @@
 /** chunk id: 64983, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => b
+    A: () => E
 });
-var r = n(627968),
-    i = n(64700),
+var i = n(627968),
+    r = n(64700),
     l = n(735438),
     a = n.n(l),
     s = n(421380),
     o = n(397927),
-    c = n(58149),
-    u = n(954571),
-    d = n(83241),
-    p = n(926466),
+    d = n(58149),
+    c = n(954571),
+    u = n(83241),
+    A = n(926466),
     h = n(652215),
-    f = n(985018),
-    g = n(978927);
-
-function m(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = r
-        })
-    }
-    return e
-}
-let A = a().debounce(c.Ay.trackWithMetadata, 500),
-    _ = e => {
+    _ = n(985018),
+    m = n(978927);
+let p = a().debounce(d.Ay.trackWithMetadata, 500),
+    g = e => {
         let {
             guild: t,
             title: n,
             message: l,
             image: a,
-            type: d,
-            imageMarginX: p,
-            imageMarginTop: m,
-            trackingSource: _,
-            undismissable: b,
-            onDismissed: E,
-            onClick: O,
-            cta: y,
-            ctaColor: I
+            type: u,
+            imageMarginX: A,
+            imageMarginTop: g,
+            trackingSource: E,
+            undismissable: I,
+            onDismissed: f,
+            onClick: C,
+            cta: T,
+            ctaColor: N
         } = e;
-        i.useEffect(() => {
-            A(h.HAw.CHANNEL_NOTICE_VIEWED, {
-                notice_type: d,
+        r.useEffect(() => {
+            p(h.HAw.CHANNEL_NOTICE_VIEWED, {
+                notice_type: u,
                 guild_id: t.id
             })
-        }, [t.id, d]);
-        let v = null;
-        "function" == typeof y ? v = y() : null != y && (v = (0, r.jsx)(s.$n, {
+        }, [t.id, u]);
+        let S = null;
+        "function" == typeof T ? S = T() : null != T && (S = (0, i.jsx)(s.$n, {
             "data-migration-pending": !0,
-            className: g.HM,
+            className: m.HM,
             size: s.$n.Sizes.SMALL,
             onClick: () => {
-                null != d && u.default.track(h.HAw.CHANNEL_NOTICE_CTA_CLICKED, {
-                    source: _,
+                null != u && c.default.track(h.HAw.CHANNEL_NOTICE_CTA_CLICKED, {
+                    source: E,
                     guild_id: t.id,
-                    notice_type: d
-                }), null == O || O()
+                    notice_type: u
+                }), C?.()
             },
             fullWidth: !0,
-            color: I,
-            children: y
+            color: N,
+            children: T
         }));
-        let S = null != p ? "".concat(p, "px") : "16px";
-        return (0, r.jsxs)("div", {
-            className: g.kX,
-            children: [!0 === b ? null : (0, r.jsx)(o.DUT, {
+        let x = null != A ? `${A}px` : "16px";
+        return (0, i.jsxs)("div", {
+            className: m.kX,
+            children: [!0 === I ? null : (0, i.jsx)(o.DUT, {
                 onClick: () => {
-                    c.Ay.trackWithMetadata(h.HAw.CHANNEL_NOTICE_CLOSED, {
-                        notice_type: d
-                    }), null == E || E()
+                    d.Ay.trackWithMetadata(h.HAw.CHANNEL_NOTICE_CLOSED, {
+                        notice_type: u
+                    }), f?.()
                 },
-                className: g.VN,
-                "aria-label": f.intl.string(f.t.WAI6xu),
-                children: (0, r.jsx)(o.PGe, {
+                className: m.VN,
+                "aria-label": _.intl.string(_.t.WAI6xu),
+                children: (0, i.jsx)(o.PGe, {
                     size: "md",
                     color: "currentColor",
-                    className: g.ut
+                    className: m.ut
                 })
-            }), (0, r.jsx)("div", {
-                className: g.ZS,
+            }), null != a && (0, i.jsx)("div", {
+                className: m.ZS,
                 style: {
-                    marginTop: "".concat(m, "px"),
-                    marginLeft: S,
-                    marginRight: S
+                    marginTop: `${g}px`,
+                    marginLeft: x,
+                    marginRight: x
                 },
-                children: (0, r.jsx)("img", {
-                    className: g.Sl,
+                children: "string" == typeof a ? (0, i.jsx)("img", {
+                    className: m.Sl,
                     src: a,
                     alt: ""
-                })
-            }), (0, r.jsxs)("div", {
-                className: g.iU,
-                children: [null != n ? (0, r.jsx)(o.Heading, {
+                }) : a
+            }), (0, i.jsxs)("div", {
+                className: m.iU,
+                children: [null != n ? (0, i.jsx)(o.Heading, {
                     variant: "heading-md/semibold",
-                    className: g.DD,
+                    className: m.DD,
                     children: n
-                }) : null, (0, r.jsx)(o.Text, {
+                }) : null, (0, i.jsx)(o.Text, {
                     variant: "text-sm/normal",
                     children: l
-                }), v]
+                }), S]
             })]
         })
     },
-    b = function(e) {
+    E = function(e) {
         let {
             showRedesignedChannelNotice: t
-        } = (0, d.P)(!0);
-        return t ? (0, r.jsx)(p.A, m({}, e)) : (0, r.jsx)(_, m({}, e))
+        } = (0, u.P)(!0);
+        return t ? (0, i.jsx)(A.A, {
+            ...e
+        }) : (0, i.jsx)(g, {
+            ...e
+        })
     }

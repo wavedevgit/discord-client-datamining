@@ -1,58 +1,55 @@
-/** chunk id: 128490, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => j
+/** chunk id: 128490, original params: e,n,t (module,exports,require) **/
+t.d(n, {
+    A: () => h
 });
-var l = n(627968);
-n(64700);
-var i = n(311907),
-    r = n(397927),
-    s = n(734057),
-    o = n(309010),
-    a = n(622543),
-    d = n(987112),
-    c = n(389996),
-    u = n(743987),
-    p = n(900179),
-    f = n(280645),
-    m = n(928223),
-    A = n(518477),
-    x = n(985018),
-    g = n(195723);
+var i = t(627968);
+t(64700);
+var s = t(311907),
+    l = t(397927),
+    a = t(734057),
+    r = t(309010),
+    d = t(622543),
+    c = t(987112),
+    o = t(389996),
+    u = t(743987),
+    A = t(900179),
+    x = t(280645),
+    m = t(928223),
+    _ = t(518477),
+    p = t(985018),
+    f = t(195723);
 
-function j(e) {
+function h(e) {
     let {
-        user: t,
-        displayProfile: n,
-        guildId: j,
-        onClose: h
-    } = e, b = (0, i.bG)([a.A], () => {
-        var e;
-        return null == (e = a.A.getUserProfile(t.id)) ? void 0 : e.application
-    }), v = (0, i.bG)([s.A, o.A], () => s.A.getChannel(o.A.getChannelId()));
-    return (0, l.jsxs)(r.IpV, {
+        user: n,
+        displayProfile: t,
+        guildId: h,
+        onClose: I
+    } = e, j = (0, s.bG)([d.A], () => d.A.getUserProfile(n.id)?.application), g = (0, s.bG)([a.A, r.A], () => a.A.getChannel(r.A.getChannelId()));
+    return (0, i.jsxs)(l.IpV, {
         fade: !0,
-        className: g.XG,
-        children: [(null == n ? void 0 : n.bio) != null && (null == n ? void 0 : n.bio) !== "" && (0, l.jsx)(c.A, {
-            userBio: n.bio,
+        className: f.XG,
+        children: [t?.bio != null && t?.bio !== "" && (0, i.jsx)(o.A, {
+            userBio: t.bio,
             setLineClamp: !1
-        }), (null == b ? void 0 : b.popularApplicationCommandIds) != null && null != v && (0, l.jsx)(d.A, {
-            applicationId: b.id,
-            commandIds: b.popularApplicationCommandIds,
-            channel: v,
-            guildId: j,
-            onClick: h
-        }), (null == n ? void 0 : n.guildId) != null && (0, l.jsx)(f.A, {
-            userId: t.id,
-            guildId: n.guildId
-        }), (0, l.jsx)(p.A, {
-            heading: x.intl.string(x.t["A//N4k"]),
-            children: (0, l.jsx)(u.A, {
-                userId: t.id,
-                guildId: j,
-                tooltipDelay: A.In
+        }), j?.popularApplicationCommandIds != null && null != g && (0, i.jsx)(c.A, {
+            applicationId: j.id,
+            commandIds: j.popularApplicationCommandIds,
+            channel: g,
+            guildId: h,
+            onClick: I
+        }), t?.guildId != null && (0, i.jsx)(x.A, {
+            userId: n.id,
+            guildId: t.guildId
+        }), (0, i.jsx)(A.A, {
+            heading: p.intl.string(p.t["A//N4k"]),
+            children: (0, i.jsx)(u.A, {
+                userId: n.id,
+                guildId: h,
+                tooltipDelay: _.In
             })
-        }), (0, l.jsx)(m.A, {
-            userId: t.id
+        }), (0, i.jsx)(m.A, {
+            userId: n.id
         })]
     })
 }

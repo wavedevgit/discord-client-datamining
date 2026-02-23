@@ -1,67 +1,67 @@
-/** chunk id: 701508, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => h
-}), n(228524);
-var r = n(627968),
-    l = n(64700),
-    i = n(503698),
-    a = n.n(i),
-    s = n(582754),
-    o = n(397927),
-    c = n(736653),
-    d = n(611371),
-    u = n(262834);
+/** chunk id: 701508, original params: e,t,a (module,exports,require) **/
+a.d(t, {
+    A: () => m
+});
+var n = a(627968),
+    i = a(64700),
+    s = a(503698),
+    l = a.n(s),
+    r = a(582754),
+    o = a(397927),
+    c = a(736653),
+    d = a(611371),
+    u = a(262834);
 
-function p(e) {
+function h(e) {
     let {
         title: t,
-        betaTag: n,
-        color: l = "text-strong"
+        betaTag: a,
+        color: i = "text-strong"
     } = e;
-    return (0, r.jsxs)(o.Heading, {
-        className: a()(u.DD, u.Zv),
+    return (0, n.jsxs)(o.Heading, {
+        className: l()(u.DD, u.Zv),
         variant: "display-lg",
-        color: l,
-        children: [t, n && (0, r.jsx)(d.A, {
+        color: i,
+        children: [t, a && (0, n.jsx)(d.A, {
             className: u.TN
         })]
     })
 }
 
-function h(e) {
+function m(e) {
     let {
         title: t,
-        titleColor: n,
-        description: i,
+        titleColor: a,
+        description: s,
         button: d,
-        className: h,
-        children: m,
-        betaTag: g = !1
-    } = e, _ = (0, c.Ay)(), b = (0, s.Mw)(_), f = l.useMemo(() => Array.isArray(t) ? t.map((e, t) => (0, r.jsx)(p, {
+        className: m,
+        children: p,
+        betaTag: _ = !1
+    } = e, g = (0, c.Ay)(), x = (0, r.Mw)(g), A = i.useMemo(() => Array.isArray(t) ? t.map((e, t) => (0, n.jsx)(h, {
         title: e,
-        betaTag: g,
-        color: n
-    }, t)) : (0, r.jsx)(p, {
+        betaTag: _,
+        color: a
+    }, t)) : (0, n.jsx)(h, {
         title: t,
-        betaTag: g,
-        color: n
-    }), [t, g, n]);
-    return (0, r.jsxs)("div", {
-        className: a()(u.kL, h),
-        children: [(0, r.jsx)("div", {
+        betaTag: _,
+        color: a
+    }), [t, _, a]);
+    return (0, n.jsxs)("div", {
+        className: l()(u.kL, m),
+        children: [(0, n.jsx)("div", {
             className: u.Qs,
-            children: (0, r.jsxs)("div", {
+            children: (0, n.jsxs)("div", {
                 className: u.FS,
-                children: [f, null != i && (0, r.jsx)(o.Text, {
+                children: [A, null != s && (0, n.jsx)(o.Text, {
                     className: u.h_,
                     variant: "text-md/medium",
-                    color: b ? "text-muted" : "text-strong",
-                    children: i
-                }), null != d && (0, r.jsx)("div", {
+                    color: x ? "text-muted" : "text-strong",
+                    children: s
+                }), null != d && (0, n.jsx)("div", {
                     className: u.UD,
                     children: d
                 })]
             })
-        }), m]
+        }), p]
     })
 }

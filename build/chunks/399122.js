@@ -1,30 +1,30 @@
-/** chunk id: 399122, original params: e,t,n (module,exports,require) **/
-n.d(t, {
+/** chunk id: 399122, original params: e,t,i (module,exports,require) **/
+i.d(t, {
     A: () => u
 });
-var l = n(627968);
-n(64700);
-var i = n(347805),
-    r = n(183555),
-    s = n(716804),
-    o = n(83013),
-    a = n(518477),
-    d = n(985018),
-    c = n(473836);
+var l = i(627968);
+i(64700);
+var n = i(347805),
+    s = i(183555),
+    a = i(716804),
+    r = i(83013),
+    o = i(518477),
+    d = i(985018),
+    c = i(473836);
 
 function u(e) {
     let {
         userId: t
-    } = e, n = (0, s.g)(), {
+    } = e, i = (0, a.g)(), {
         trackUserProfileAction: u
-    } = (0, r.NJ)();
-    return (0, l.jsx)(o.A, {
+    } = (0, s.NJ)();
+    return (0, l.jsx)(r.A, {
         heading: d.intl.string(d.t["mQKv+v"]),
-        scrollTargetId: a.bk.NOTE,
-        children: (0, l.jsx)(i.A, {
+        scrollTargetId: o.bk.NOTE,
+        children: (0, l.jsx)(n.A, {
             userId: t,
             className: c.N,
-            autoFocus: n === a.bk.NOTE,
+            autoFocus: i === o.bk.NOTE,
             onUpdate: () => u({
                 action: "SET_NOTE"
             })

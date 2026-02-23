@@ -1,42 +1,42 @@
-/** chunk id: 236972, original params: e,t,n (module,exports,require) **/
-n.d(t, {
+/** chunk id: 236972, original params: e,t,l (module,exports,require) **/
+l.d(t, {
     L: () => u
 });
-var l = n(942381),
-    i = n(265690),
-    a = n(121894),
-    r = n(667920);
-let s = (0, i.h)(e => ({
+var n = l(942381),
+    a = l(265690),
+    i = l(121894),
+    s = l(667920);
+let r = (0, a.h)(e => ({
     audio: null,
     file: null,
     loading: !1,
     loadAudioFromFile: async t => {
-        if ((0, a.r)(() => e({
+        if ((0, i.r)(() => e({
                 file: t,
                 audio: null,
                 loading: null != t
             })), null == t) return;
-        let n = await (0, r.Xi)(t);
-        null != n && (0, a.r)(() => e({
-            audio: n,
+        let l = await (0, s.Xi)(t);
+        null != l && (0, i.r)(() => e({
+            audio: l,
             loading: !1
         }))
     },
     maxVolume: 1,
     setMaxVolume: t => {
-        (0, a.r)(() => e({
+        (0, i.r)(() => e({
             maxVolume: t
         }))
     }
 }));
 
 function u() {
-    return s(e => ({
+    return r(e => ({
         audio: e.audio,
         file: e.file,
         loading: e.loading,
         loadAudioFromFile: e.loadAudioFromFile,
         maxVolume: e.maxVolume,
         setMaxVolume: e.setMaxVolume
-    }), l.x)
+    }), n.x)
 }

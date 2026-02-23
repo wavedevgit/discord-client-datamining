@@ -1,88 +1,60 @@
 /** chunk id: 633148, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => g
+    A: () => x
 });
-var r = n(627968),
-    l = n(64700),
-    i = n(732955),
+var l = n(627968),
+    i = n(64700),
+    s = n(732955),
     a = n(397927),
-    s = n(406704),
+    r = n(406704),
     o = n(203982),
-    c = n(435470),
-    d = n(853742),
+    d = n(435470),
+    c = n(853742),
     u = n(652215),
     m = n(985018),
     h = n(659002);
 
-function g(e) {
+function x(e) {
     let {
         channelName: t,
-        guildId: g,
-        tagFilter: f,
-        channel: x
-    } = e, p = (0, c.S4)(x), b = (0, s.AI)(x), j = x.isMediaChannel(), v = l.useCallback(() => {
-        (0, d.zd)(), (0, a.mMO)(async () => {
+        guildId: x,
+        tagFilter: g,
+        channel: f
+    } = e, p = (0, d.S4)(f), _ = (0, r.AI)(f), j = f.isMediaChannel(), b = i.useCallback(() => {
+        (0, c.zd)(), (0, a.mMO)(async () => {
             let {
                 default: e
             } = await n.e("7937").then(n.bind(n, 420472));
-            return t => {
-                var n, l;
-                return (0, r.jsx)(e, (n = function(e) {
-                    for (var t = 1; t < arguments.length; t++) {
-                        var n = null != arguments[t] ? arguments[t] : {},
-                            r = Object.keys(n);
-                        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                            return Object.getOwnPropertyDescriptor(n, e).enumerable
-                        }))), r.forEach(function(t) {
-                            var r;
-                            r = n[t], t in e ? Object.defineProperty(e, t, {
-                                value: r,
-                                enumerable: !0,
-                                configurable: !0,
-                                writable: !0
-                            }) : e[t] = r
-                        })
-                    }
-                    return e
-                }({}, t), l = l = {
-                    guildId: g
-                }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
-                    var n = Object.keys(e);
-                    if (Object.getOwnPropertySymbols) {
-                        var r = Object.getOwnPropertySymbols(e);
-                        n.push.apply(n, r)
-                    }
-                    return n
-                })(Object(l)).forEach(function(e) {
-                    Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(l, e))
-                }), n))
-            }
+            return t => (0, l.jsx)(e, {
+                ...t,
+                guildId: x
+            })
         })
-    }, [g]), _ = f.size > 0, y = b || p, A = !_ && p && !j, C = l.useCallback(() => A ? v() : b ? void o._.dispatch(u.jej.FOCUS_COMPOSER_TITLE) : (0, u.FXj)(), [v, A, b]);
-    return (0, r.jsxs)("div", {
+    }, [x]), v = g.size > 0, A = _ || p, C = !v && p && !j, T = i.useCallback(() => C ? b() : _ ? void o._.dispatch(u.jej.FOCUS_COMPOSER_TITLE) : (0, u.FXj)(), [b, C, _]);
+    return (0, l.jsxs)("div", {
         className: h.k,
-        children: [(0, r.jsx)(a.Heading, {
+        children: [(0, l.jsx)(a.Heading, {
             className: h.w,
             variant: "heading-md/semibold",
-            children: _ ? m.intl.formatToPlainString(m.t.lvPci0, {
-                numTags: f.size
+            children: v ? m.intl.formatToPlainString(m.t.lvPci0, {
+                numTags: g.size
             }) : m.intl.string(m.t.PwTMG0)
-        }), (0, r.jsx)(a.Text, {
+        }), (0, l.jsx)(a.Text, {
             color: "text-default",
             variant: "text-sm/normal",
-            children: _ ? m.intl.formatToPlainString(m.t.AAeye1, {
-                numTags: f.size
+            children: v ? m.intl.formatToPlainString(m.t.AAeye1, {
+                numTags: g.size
             }) : m.intl.formatToPlainString(m.t.YtsXFD, {
                 channelName: t
             })
-        }), y && (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsx)(a.hKd, {
+        }), A && (0, l.jsxs)(l.Fragment, {
+            children: [(0, l.jsx)(a.hKd, {
                 size: 16
-            }), (0, r.jsx)(i.$nd, {
-                text: A ? m.intl.string(m.t.DgatTQ) : m.intl.string(m.t.wOKE8I),
+            }), (0, l.jsx)(s.$nd, {
+                text: C ? m.intl.string(m.t.DgatTQ) : m.intl.string(m.t.wOKE8I),
                 variant: "secondary",
-                onClick: C
+                onClick: T
             })]
         })]
     })

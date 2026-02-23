@@ -1,43 +1,44 @@
 /** chunk id: 665450, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => p
+    A: () => h
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var l = n(503698),
-    i = n.n(l),
-    s = n(311907),
+var s = n(503698),
+    l = n.n(s),
+    r = n(311907),
     a = n(397927),
     o = n(775602),
     c = n(108713),
-    u = n(985018),
-    d = n(177432);
+    d = n(985018),
+    u = n(177432);
 
-function p(e) {
+function h(e) {
     let {
         height: t
-    } = e, l = (0, s.bG)([o.A], () => o.A.useReducedMotion);
-    return (0, r.jsxs)("div", {
-        className: d.zr,
-        children: [(0, r.jsx)(a.akl, {
+    } = e, s = (0, r.bG)([o.A], () => o.A.useReducedMotion);
+    return (0, i.jsxs)("div", {
+        className: u.zr,
+        children: [(0, i.jsx)(a.akl, {
             importData: () => n.e("35066").then(n.t.bind(n, 844512, 19)).then(e => {
                 let {
                     default: t
                 } = e;
                 return t
             }),
-            shouldAnimate: !l,
-            className: i()(d.Qw, {
-                [d.R]: t <= 280
+            shouldAnimate: !s,
+            className: l()(u.Qw, {
+                [u.R]: t <= 280
             })
-        }), (0, r.jsx)(a.Heading, {
-            className: d.wx,
+        }), (0, i.jsx)(a.Heading, {
+            className: u.wx,
             variant: "heading-md/bold",
-            children: u.intl.string(u.t["C+tj1c"])
-        }), (0, r.jsx)(a.Text, {
+            children: d.intl.string(d.t["C+tj1c"])
+        }), (0, i.jsx)(a.Text, {
             variant: "text-md/normal",
             color: "text-default",
-            children: u.intl.format(u.t["nNHd/y"], {
+            children: d.intl.format(d.t["nNHd/y"], {
                 onCancel: c.ZG
             })
         })]

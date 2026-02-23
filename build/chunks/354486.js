@@ -1,94 +1,94 @@
 /** chunk id: 354486, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => A,
-    l: () => y
-}), n(896048);
+    l: () => C
+});
 var a = n(627968),
-    l = n(64700),
-    r = n(311907),
-    i = n(554146),
-    s = n(342494),
+    i = n(64700),
+    s = n(311907),
+    l = n(554146),
+    r = n(342494),
     o = n(379848),
-    c = n(827827),
-    d = n(253932),
+    d = n(827827),
+    c = n(253932),
     u = n(186111),
     m = n(461213),
-    p = n(927813),
-    h = n(159609),
-    x = n(49999),
+    h = n(927813),
+    x = n(159609),
+    p = n(49999),
     g = n(818348),
-    f = n(985018),
-    b = n(64924);
-let v = p.A.Millis.HOUR,
-    j = p.A.Millis.DAY,
-    _ = 4 * p.A.Millis.DAY;
+    _ = n(985018),
+    f = n(64924);
+let b = h.A.Millis.HOUR,
+    v = h.A.Millis.DAY,
+    j = 4 * h.A.Millis.DAY;
 
-function y() {
+function C() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
         {
             shouldShow: t = !0
         } = e,
-        [n, a] = l.useState(Date.now()),
-        s = (0, r.bG)([u.A], () => u.A.hasLayers()),
-        c = (0, r.bG)([m.A], () => m.A.getStatus()),
-        p = d._6.useSetting(),
-        f = (null == p ? void 0 : p.value) != null ? Number(p.value) : null,
-        b = d.CY.useSetting(),
-        y = c === g.cl.DND && null != f && n - f > j && "0" === b,
+        [n, a] = i.useState(Date.now()),
+        r = (0, s.bG)([u.A], () => u.A.hasLayers()),
+        d = (0, s.bG)([m.A], () => m.A.getStatus()),
+        h = c._6.useSetting(),
+        _ = h?.value != null ? Number(h.value) : null,
+        f = c.CY.useSetting(),
+        C = d === g.cl.DND && null != _ && n - _ > v && "0" === f,
         {
             enabled: A
-        } = (0, h.k)({
+        } = (0, x.k)({
             location: "useDoNotDisturbReminderPopoverDismissibleContent",
-            autoTrackExposure: y,
-            disable: !y
+            autoTrackExposure: C,
+            disable: !C
         });
-    return l.useEffect(() => {
-        if (c === g.cl.DND) {
+    return i.useEffect(() => {
+        if (d === g.cl.DND) {
             a(Date.now());
-            let e = setInterval(() => a(Date.now()), v);
+            let e = setInterval(() => a(Date.now()), b);
             return () => clearInterval(e)
         }
-    }, [c]), (0, o.Wl)(A && !s && t ? i.M.DO_NOT_DISTURB_REMINDER_POPOVER : null, {
-        cooldownDurationMs: _,
+    }, [d]), (0, o.Wl)(A && !r && t ? l.M.DO_NOT_DISTURB_REMINDER_POPOVER : null, {
+        cooldownDurationMs: j,
         numTimesToRecur: 2
-    }, x.m.ACCOUNT_NAME_ZONE, !0)
+    }, p.m.ACCOUNT_NAME_ZONE, !0)
 }
 
 function A(e) {
     let {
         targetElementRef: t,
         onDismiss: n,
-        children: l
+        children: i
     } = e, {
-        enabled: r,
-        titleText: i,
+        enabled: s,
+        titleText: l,
         bodyText: o
-    } = (0, h.k)({
+    } = (0, x.k)({
         location: "popover",
         autoTrackExposure: !1
     });
-    return null != t.current && r ? (0, a.jsxs)(a.Fragment, {
-        children: [l, (0, a.jsx)(s.AM, {
+    return null != t.current && s ? (0, a.jsxs)(a.Fragment, {
+        children: [i, (0, a.jsx)(r.AM, {
             targetElementRef: t,
-            title: f.intl.string(i),
-            body: f.intl.string(o),
+            title: _.intl.string(l),
+            body: _.intl.string(o),
             caretConfig: {
                 align: "start"
             },
             gradientColor: "purple",
             actions: [{
-                text: f.intl.string(f.t.fwPurU),
+                text: _.intl.string(_.t.fwPurU),
                 onClick: () => {
-                    (0, c.A)({
+                    (0, d.A)({
                         nextStatus: g.cl.ONLINE
-                    }), null == n || n(x.i.PRIMARY)
+                    }), n?.(p.i.PRIMARY)
                 }
             }],
             graphic: {
                 type: "image",
-                src: b
+                src: f
             },
-            onRequestClose: () => null == n ? void 0 : n(x.i.DISMISS)
+            onRequestClose: () => n?.(p.i.DISMISS)
         })]
-    }) : l
+    }) : i
 }

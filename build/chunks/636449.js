@@ -1,5 +1,6 @@
 /** chunk id: 636449, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    U: () => l
+    U: () => s
 });
-var r, l = ((r = {})[r.PENDING_JOIN_REQUESTS_FOLDER = 1] = "PENDING_JOIN_REQUESTS_FOLDER", r)
+var i, s = ((i = {})[i.PENDING_JOIN_REQUESTS_FOLDER = 1] = "PENDING_JOIN_REQUESTS_FOLDER", i)

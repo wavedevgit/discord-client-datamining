@@ -1,45 +1,44 @@
 /** chunk id: 665037, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => A,
-    G: () => m
+    A: () => g,
+    G: () => p
 });
-var r, i = n(64700),
+var i, r = n(64700),
     l = n(311907),
     a = n(285059),
     s = n(82005),
     o = n(508654),
-    c = n(221094),
-    u = n(320426),
-    d = n(915043),
-    p = n(788866),
+    d = n(221094),
+    c = n(320426),
+    u = n(915043),
+    A = n(788866),
     h = n(992250),
-    f = n(15438),
-    g = n(652215),
-    m = ((r = {})[r.ENABLE_PUBLIC_GUILD = 0] = "ENABLE_PUBLIC_GUILD", r[r.MAX_MEMBER_COUNT = 1] = "MAX_MEMBER_COUNT", r[r.GUILD_LIVE_CHANNEL = 2] = "GUILD_LIVE_CHANNEL", r[r.GUILD_MFA_WARNING = 3] = "GUILD_MFA_WARNING", r[r.COMMANDS_MIGRATION = 4] = "COMMANDS_MIGRATION", r[r.APPLICATION_SUBSCRIPTION_EXPIRATION = 5] = "APPLICATION_SUBSCRIPTION_EXPIRATION", r[r.HUB_STUDY_ROOM = 6] = "HUB_STUDY_ROOM", r[r.CLAN_UPSELL = 7] = "CLAN_UPSELL", r);
+    _ = n(15438),
+    m = n(652215),
+    p = ((i = {})[i.ENABLE_PUBLIC_GUILD = 0] = "ENABLE_PUBLIC_GUILD", i[i.MAX_MEMBER_COUNT = 1] = "MAX_MEMBER_COUNT", i[i.GUILD_LIVE_CHANNEL = 2] = "GUILD_LIVE_CHANNEL", i[i.GUILD_MFA_WARNING = 3] = "GUILD_MFA_WARNING", i[i.COMMANDS_MIGRATION = 4] = "COMMANDS_MIGRATION", i[i.APPLICATION_SUBSCRIPTION_EXPIRATION = 5] = "APPLICATION_SUBSCRIPTION_EXPIRATION", i[i.HUB_STUDY_ROOM = 6] = "HUB_STUDY_ROOM", i[i.CLAN_UPSELL = 7] = "CLAN_UPSELL", i);
 
-function A(e) {
-    var t;
-    let n = null != (t = null == e ? void 0 : e.id) ? t : g.dJq,
-        r = (0, l.bG)([p.A], () => p.A.isVisible(e)),
-        m = (0, l.bG)([f.A], () => f.A.isVisible(e)),
-        A = (0, s.C)(n),
-        _ = (0, l.bG)([h.A], () => h.A.isVisible(e)),
-        b = u.A.useShouldShowChannelNotice(n),
-        E = (0, d.$s)(e),
+function g(e) {
+    let t = e?.id ?? m.dJq,
+        n = (0, l.bG)([A.A], () => A.A.isVisible(e)),
+        i = (0, l.bG)([_.A], () => _.A.isVisible(e)),
+        p = (0, s.C)(t),
+        g = (0, l.bG)([h.A], () => h.A.isVisible(e)),
+        E = c.A.useShouldShowChannelNotice(t),
+        I = (0, u.$s)(e),
         {
-            enableStudyGroup: O
-        } = (0, c.y)(e),
-        y = E.length > 0,
-        I = O && !(null == e ? void 0 : e.features.has(g.GuildFeatures.HUB)),
-        v = (0, o.WG)(n);
-    if (i.useEffect(() => {
-            a.A.getGuildEventsForCurrentUser(n)
-        }, [n]), r) return 0;
-    if (m) return 1;
-    if (A || null != v) return 2;
-    if (_) return 3;
-    if (b) return 4;
-    else if (y) return 5;
-    else if (I) return 6;
+            enableStudyGroup: f
+        } = (0, d.y)(e),
+        C = I.length > 0,
+        T = f && !e?.features.has(m.GuildFeatures.HUB),
+        N = (0, o.WG)(t);
+    if (r.useEffect(() => {
+            a.A.getGuildEventsForCurrentUser(t)
+        }, [t]), n) return 0;
+    if (i) return 1;
+    if (p || null != N) return 2;
+    if (g) return 3;
+    if (E) return 4;
+    else if (C) return 5;
+    else if (T) return 6;
     return null
 }

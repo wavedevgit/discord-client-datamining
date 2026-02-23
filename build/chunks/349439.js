@@ -1,24 +1,21 @@
 /** chunk id: 349439, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    GQ: () => m,
-    GZ: () => A,
-    il: () => g,
-    nF: () => _,
-    rj: () => p
+    GQ: () => u,
+    GZ: () => m,
+    il: () => _,
+    nF: () => d
 });
-var r = n(575593),
-    i = n(289397),
-    l = n(898461),
-    s = n(837015),
+var i = n(575593),
+    s = n(898461),
     a = n(203632),
-    o = n(486020),
-    c = n(788868),
-    d = n(842130),
-    u = n(985018);
-let _ = e => {
+    r = n(486020),
+    l = n(788868),
+    o = n(842130),
+    c = n(985018);
+let d = e => {
         if (0 === e.items.length) return null;
         let t = e.items[0];
-        return (0, l.T)(t) ? (0, o.F_)({
+        return (0, s.T)(t) ? (0, r.F_)({
             avatarDecoration: {
                 asset: t.asset
             },
@@ -26,44 +23,39 @@ let _ = e => {
             canAnimate: !0
         }) : null
     },
-    p = e => {
-        if (0 === e.items.length) return null;
-        let t = e.items[0];
-        return (0, s.F)(t) ? (0, i.n)("collectibles/".concat(t.asset, "static.png")) : null
-    },
-    m = e => {
+    u = e => {
         if (0 === e.items.length) return null;
         let t = e.items[0];
         return (0, a.C)(t) ? t.thumbnailPreviewSrc : null
     },
-    g = e => {
+    _ = e => {
         if (null == e) return !1;
-        let t = c.hd[e];
-        return (null == t ? void 0 : t.skuId) === c.pe.GUILD
+        let t = l.hd[e];
+        return t?.skuId === l.pe.GUILD
     },
-    A = (e, t) => {
-        let n, i, l = null != t;
-        if (null != e) n = e.name, i = (e => {
+    m = (e, t) => {
+        let n, s, a = null != t;
+        if (null != e) n = e.name, s = (e => {
             switch (e) {
-                case r.R.AVATAR_DECORATION:
-                    return u.intl.string(d.default.obi47v);
-                case r.R.PROFILE_EFFECT:
-                    return u.intl.string(d.default.RX8BMR);
-                case r.R.NAMEPLATE:
-                    return u.intl.string(d.default.nNGEHk);
-                case r.R.BUNDLE:
-                    return u.intl.string(d.default.VS1fKo);
+                case i.R.AVATAR_DECORATION:
+                    return c.intl.string(o.default.obi47v);
+                case i.R.PROFILE_EFFECT:
+                    return c.intl.string(o.default.RX8BMR);
+                case i.R.NAMEPLATE:
+                    return c.intl.string(o.default.nNGEHk);
+                case i.R.BUNDLE:
+                    return c.intl.string(o.default.VS1fKo);
                 default:
                     return ""
             }
         })(e.type);
-        else if (l && null != t) {
-            let e = c.hd[t];
-            n = null == e ? void 0 : e.name
+        else if (a && null != t) {
+            let e = l.hd[t];
+            n = e?.name
         }
         return {
             displayName: n,
-            typeName: i,
-            isSubscription: l
+            typeName: s,
+            isSubscription: a
         }
     }

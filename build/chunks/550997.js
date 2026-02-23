@@ -1,136 +1,128 @@
-/** chunk id: 550997, original params: e,t,n (module,exports,require) **/
+/** chunk id: 550997, original params: e,t,l (module,exports,require) **/
 "use strict";
-let r;
-n.r(t), n.d(t, {
-    default: () => N,
-    renderChangelogMessageMarkup: () => w
-}), n(747238), n(812715);
-var i = n(791332),
-    a = n.n(i),
-    o = n(873879),
-    s = n(683412),
-    l = n(704726),
-    c = n(46054);
-
-function u(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-
-function d(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            u(e, t, n[t])
-        })
-    }
-    return e
-}
-
-function f(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-        var r = Object.getOwnPropertySymbols(e);
-        t && (r = r.filter(function(t) {
-            return Object.getOwnPropertyDescriptor(e, t).enumerable
-        })), n.push.apply(n, r)
-    }
-    return n
-}
-
-function p(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-let _ = a().defaultRules.lheading,
-    h = a().defaultRules.heading,
-    m = a().defaultRules.link,
-    g = a().defaultRules.image,
-    E = a().defaultRules.list,
-    y = a().defaultRules.blockQuote,
-    b = a().defaultRules.paragraph,
-    O = /\{(.+?)}/,
-    v = /^\$(\w+?)\$/;
-r = n(482644);
-let A = e => {
+let a;
+l.r(t), l.d(t, {
+    default: () => C,
+    renderChangelogMessageMarkup: () => y
+});
+var n = l(791332),
+    r = l.n(n),
+    s = l(873879),
+    i = l(683412),
+    o = l(704726),
+    d = l(46054);
+let c = r().defaultRules.lheading,
+    u = r().defaultRules.heading,
+    _ = r().defaultRules.link,
+    m = r().defaultRules.image,
+    h = r().defaultRules.list,
+    p = r().defaultRules.blockQuote,
+    g = r().defaultRules.paragraph,
+    b = /\{(.+?)}/,
+    f = /^\$(\w+?)\$/;
+a = l(482644);
+let x = e => {
         let {
             transformUpperCase: t = !1
         } = e;
-        return (e, n, r) => {
-            let i = O.exec(e[1]),
-                o = e[1].replace(O, "");
-            return t && (o = o.toUpperCase()), {
-                className: null != i ? i[1] : null,
+        return (e, l, a) => {
+            let n = b.exec(e[1]),
+                s = e[1].replace(b, "");
+            return t && (s = s.toUpperCase()), {
+                className: null != n ? n[1] : null,
                 level: "=" === e[2] ? 1 : 2,
-                content: a().parseInline(n, o, r)
+                content: r().parseInline(l, s, a)
             }
         }
     },
-    I = e => p(d({}, r.baseRules), {
-        image: d({}, g, "function" == typeof r.customRules.image ? r.customRules.image(e) : r.customRules.image),
-        link: d({}, m, "function" == typeof r.customRules.link ? r.customRules.link(e) : r.customRules.link),
-        list: d({}, E, "function" == typeof r.customRules.list ? r.customRules.list(e) : r.customRules.list),
+    k = e => ({
+        ...a.baseRules,
+        image: {
+            ...m,
+            ..."function" == typeof a.customRules.image ? a.customRules.image(e) : a.customRules.image
+        },
+        link: {
+            ..._,
+            ..."function" == typeof a.customRules.link ? a.customRules.link(e) : a.customRules.link
+        },
+        list: {
+            ...h,
+            ..."function" == typeof a.customRules.list ? a.customRules.list(e) : a.customRules.list
+        },
         interpolation: {
-            order: l.Ay.order,
-            match: e => v.exec(e),
-            parse(e, t, n) {
-                let r = n.interpolations[e[1]];
-                return null == r ? {
+            order: o.Ay.order,
+            match: e => f.exec(e),
+            parse(e, t, l) {
+                let a = l.interpolations[e[1]];
+                return null == a ? {
                     type: "text",
                     content: e[0]
                 } : {
                     type: "interpolation",
-                    renderer: r
+                    renderer: a
                 }
             },
             react: e => e.renderer()
         },
-        lheading: d(p(d({}, _), {
-            parse: A({
+        lheading: {
+            ...c,
+            parse: x({
                 transformUpperCase: !0
-            })
-        }), "function" == typeof r.customRules.lheading ? r.customRules.lheading(e) : r.customRules.lheading),
-        heading: d({}, h, "function" == typeof r.customRules.heading ? r.customRules.heading(e) : r.customRules.heading),
-        blockQuote: d({}, y, "function" == typeof r.customRules.blockQuote ? r.customRules.blockQuote(e) : r.customRules.blockQuote),
-        paragraph: d({}, b, "function" == typeof r.customRules.paragraph ? r.customRules.paragraph(e) : r.customRules.paragraph)
-    }),
-    S = e => ({
-        lheading: d(p(d({}, _), {
-            parse: A({
-                transformUpperCase: !1
-            })
-        }), "function" == typeof r.customRules.lheading ? r.customRules.lheading(e) : r.customRules.lheading)
-    }),
-    T = e => p(d({}, I(e)), {
-        newline: d({}, a().defaultRules.newline),
-        text: l.Ay,
-        list: o.A,
-        subtext: s.A
+            }),
+            ..."function" == typeof a.customRules.lheading ? a.customRules.lheading(e) : a.customRules.lheading
+        },
+        heading: {
+            ...u,
+            ..."function" == typeof a.customRules.heading ? a.customRules.heading(e) : a.customRules.heading
+        },
+        blockQuote: {
+            ...p,
+            ..."function" == typeof a.customRules.blockQuote ? a.customRules.blockQuote(e) : a.customRules.blockQuote
+        },
+        paragraph: {
+            ...g,
+            ..."function" == typeof a.customRules.paragraph ? a.customRules.paragraph(e) : a.customRules.paragraph
+        }
     });
 
-function C(e) {
-    return d({}, I(e))
+function A(e) {
+    return {
+        ...k(e)
+    }
 }
-let N = {
-    getDefaultRules: C,
-    getSpecialRules: e => d({}, I(e), S(e)),
-    getMessageRules: e => d({}, T(e))
+let C = {
+    getDefaultRules: A,
+    getSpecialRules: e => ({
+        ...k(e),
+        ...{
+            lheading: {
+                ...c,
+                parse: x({
+                    transformUpperCase: !1
+                }),
+                ..."function" == typeof a.customRules.lheading ? a.customRules.lheading(e) : a.customRules.lheading
+            }
+        }
+    }),
+    getMessageRules: e => ({
+        ...{
+            ...k(e),
+            newline: {
+                ...r().defaultRules.newline
+            },
+            text: o.Ay,
+            list: s.A,
+            subtext: i.A
+        }
+    })
 };
 
-function w(e, t, n) {
+function y(e, t, l) {
     return {
         hasSpoilerEmbeds: !1,
         hasBailedAst: !1,
-        content: c.A.reactParserFor(C(t))(e.content, !1, null != n ? {
-            changeLog: n
+        content: d.A.reactParserFor(A(t))(e.content, !1, null != l ? {
+            changeLog: l
         } : {})
     }
 }

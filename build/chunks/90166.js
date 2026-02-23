@@ -1,30 +1,30 @@
 /** chunk id: 90166, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => d
+    A: () => u
 });
-var r = n(627968),
-    i = n(64700),
+var i = n(627968),
+    r = n(64700),
     l = n(621248),
     a = n(975571),
     s = n(64983),
     o = n(652215),
-    c = n(985018),
-    u = n(462947);
-let d = e => {
+    d = n(985018),
+    c = n(462947);
+let u = e => {
     let {
         guild: t
-    } = e, n = i.useCallback(() => {
+    } = e, n = r.useCallback(() => {
         (0, l.x)(t.id)
     }, [t.id]);
-    return (0, r.jsx)(s.A, {
+    return (0, i.jsx)(s.A, {
         guild: t,
         onDismissed: n,
-        message: c.intl.format(c.t["+QqO3U"], {
+        message: d.intl.format(d.t["+QqO3U"], {
             maxMemberCount: t.maxMembers,
             maxMembersUrl: a.A.getArticleURL(o.MVz.MAX_MEMBERS)
         }),
         type: o.n5X.MAX_MEMBER_COUNT,
-        image: u,
+        image: c,
         imageMarginX: 61
     })
 }

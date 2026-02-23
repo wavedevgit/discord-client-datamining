@@ -1,32 +1,32 @@
 /** chunk id: 305928, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
     A: () => c
 });
-var r = n(64700),
-    l = n(311907),
-    i = n(354583),
-    s = n(616356),
+var i = n(64700),
+    s = n(311907),
+    l = n(354583),
+    r = n(616356),
     a = n(383501),
     o = n(977997);
 
 function c(e) {
-    var t;
-    let n = (0, l.bG)([a.A], () => a.A.getGuildId()),
-        c = e.children.map(e => e.id),
-        u = null != n && c.includes(n),
+    let t = (0, s.bG)([a.A], () => a.A.getGuildId()),
+        n = e.children.map(e => e.id),
+        c = null != t && n.includes(t),
         d = !1,
-        p = !1,
+        u = !1,
         h = !1,
-        g = (0, l.bG)([a.A], () => a.A.getChannelId()),
-        f = null == (t = (0, i.A)()) ? void 0 : t.guild_id,
-        m = null != f && c.includes(f),
-        b = (0, l.bG)([o.A], () => null != g && o.A.hasVideo(g), [g]),
-        A = (0, l.bG)([s.A], () => s.A.getCurrentUserActiveStream());
-    return u && (d = !b, p = b, h = null != A && null != A.guildId && c.includes(A.guildId)), r.useMemo(() => ({
+        A = (0, s.bG)([a.A], () => a.A.getChannelId()),
+        p = (0, l.A)()?.guild_id,
+        g = null != p && n.includes(p),
+        m = (0, s.bG)([o.A], () => null != A && o.A.hasVideo(A), [A]),
+        _ = (0, s.bG)([r.A], () => r.A.getCurrentUserActiveStream());
+    return c && (d = !m, u = m, h = null != _ && null != _.guildId && n.includes(_.guildId)), i.useMemo(() => ({
         audio: d,
-        video: p,
+        video: u,
         screenshare: h,
-        liveStage: m,
-        isCurrentUserConnected: u
-    }), [d, p, h, m, u])
+        liveStage: g,
+        isCurrentUserConnected: c
+    }), [d, u, h, g, c])
 }

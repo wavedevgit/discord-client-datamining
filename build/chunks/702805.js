@@ -1,11 +1,11 @@
 /** chunk id: 702805, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    E: () => a,
+    E: () => s,
     G9: () => o,
     LA: () => u,
-    R$: () => c,
-    Ts: () => s,
-    lS: () => d
+    R$: () => d,
+    Ts: () => a,
+    lS: () => c
 });
 var r = n(73153),
     i = n(60868),
@@ -28,24 +28,24 @@ function o(e) {
     })
 }
 
-function a(e) {
+function s(e) {
     r.h.dispatch({
         type: "CHANNEL_SETTINGS_PERMISSIONS_SET_ADVANCED_MODE",
         advancedMode: e
     })
 }
 
-function s() {
+function a() {
     r.h.dispatch({
         type: "CHANNEL_SETTINGS_PERMISSIONS_INIT"
     })
 }
 
-function c(e, t, n) {
-    return d(e, t, [], n)
+function d(e, t, n) {
+    return c(e, t, [], n)
 }
 
-function d(e, t, n, i) {
+function c(e, t, n, i) {
     return r.h.dispatch({
         type: "CHANNEL_SETTINGS_PERMISSIONS_SUBMITTING"
     }), new Promise(r => {

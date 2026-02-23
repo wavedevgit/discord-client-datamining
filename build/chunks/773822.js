@@ -1,22 +1,22 @@
-/** chunk id: 773822, original params: e,t,r (module,exports,require) **/
-r.d(t, {
+/** chunk id: 773822, original params: e,t,_ (module,exports,require) **/
+_.d(t, {
     A: () => c,
-    G: () => l
+    G: () => r
 });
-var n, o = r(985018),
-    l = ((n = {}).COULD_NOT_FIND = "I couldn't find what I was looking for", n.CONFUSING_LANGUAGE = "I found the language confusing", n.OTHER = "Other", n);
+var o, n = _(985018),
+    r = ((o = {}).COULD_NOT_FIND = "I couldn't find what I was looking for", o.CONFUSING_LANGUAGE = "I found the language confusing", o.OTHER = "Other", o);
 
 function c() {
     return [{
-        label: o.intl.string(o.t.cigGCe),
+        label: n.intl.string(n.t.cigGCe),
         code: 2,
         value: "I couldn't find what I was looking for"
     }, {
-        label: o.intl.string(o.t.ZyXA0q),
+        label: n.intl.string(n.t.ZyXA0q),
         code: 3,
         value: "I found the language confusing"
     }, {
-        label: o.intl.string(o.t.emlT91),
+        label: n.intl.string(n.t.emlT91),
         code: 1,
         value: "Other"
     }]

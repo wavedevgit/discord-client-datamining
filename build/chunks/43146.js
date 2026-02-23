@@ -1,37 +1,36 @@
 /** chunk id: 43146, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    v: () => s
+    v: () => r
 });
-var r = n(627968),
-    i = n(397927),
-    l = n(244242);
+var i = n(627968),
+    s = n(397927),
+    a = n(244242);
 
-function s(e) {
-    var t;
+function r(e) {
     let {
-        node: n
+        node: t
     } = e, {
-        useValue: s,
-        setValue: a,
-        useTitle: o,
-        useSubtitle: c,
-        useDisabled: d,
-        useDisabledMessage: u,
-        useBadge: _,
-        hasIcon: p
-    } = n, m = o(), g = null == c ? void 0 : c(), A = s(), f = null != (t = null == d ? void 0 : d()) && t, b = null == u ? void 0 : u(), h = null == _ ? void 0 : _();
-    return (0, r.jsxs)(l.L, {
-        children: [(0, r.jsx)(i.dOG, {
+        useValue: n,
+        setValue: r,
+        useTitle: l,
+        useSubtitle: o,
+        useDisabled: c,
+        useDisabledMessage: d,
+        useBadge: u,
+        hasIcon: _
+    } = t, m = l(), A = o?.(), g = n(), h = c?.() ?? !1, x = d?.(), p = u?.();
+    return (0, i.jsxs)(a.L, {
+        children: [(0, i.jsx)(s.dOG, {
             label: m,
-            description: g,
-            badge: h,
-            checked: A,
-            hasIcon: p,
-            onChange: e => a(e),
-            disabled: f
-        }), f && null != b ? (0, r.jsx)(i.po8, {
-            messageType: i.YCn.WARNING,
-            children: b
+            description: A,
+            badge: p,
+            checked: g,
+            hasIcon: _,
+            onChange: e => r(e),
+            disabled: h
+        }), h && null != x ? (0, i.jsx)(s.po8, {
+            messageType: s.YCn.WARNING,
+            children: x
         }) : null]
     })
 }

@@ -1,10 +1,10 @@
-/** chunk id: 168447, original params: e,n,t (module,exports,require) **/
-t.d(n, {
-    Y: () => i
+/** chunk id: 168447, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    Y: () => l
 });
-var l = t(311907),
-    r = t(349435);
+var i = n(311907),
+    r = n(349435);
 
-function i(e) {
-    return (0, l.bG)([r.Ay], () => r.Ay.getChannelSafetyWarnings(e), [e]).filter(e => e.type === r._j.INAPPROPRIATE_CONVERSATION_TIER_1 || e.type === r._j.INAPPROPRIATE_CONVERSATION_TIER_2)
+function l(e) {
+    return (0, i.bG)([r.Ay], () => r.Ay.getChannelSafetyWarnings(e), [e]).filter(e => e.type === r._j.INAPPROPRIATE_CONVERSATION_TIER_1 || e.type === r._j.INAPPROPRIATE_CONVERSATION_TIER_2)
 }

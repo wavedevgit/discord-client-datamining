@@ -1,30 +1,30 @@
-/** chunk id: 783437, original params: e,t,r (module,exports,require) **/
-r.d(t, {
-    A: () => i
-}), r(896048);
-var n = r(64700),
-    s = r(677185);
-let i = e => {
+/** chunk id: 783437, original params: e,t,s (module,exports,require) **/
+s.d(t, {
+    A: () => l
+});
+var a = s(64700),
+    i = s(677185);
+let l = e => {
     let {
         subscriptionId: t,
-        searchQuery: r
-    } = e, [i, l] = n.useState([]), [a, o] = n.useState(0), [c, u] = n.useState(!1), [d, f] = n.useState(!1), p = async e => {
-        if (!c && null != e) try {
-            u(!0), f(!1);
-            let n = await (0, s.EQ)(t, e, r);
-            l(t => 0 === e ? n.users : [...t, ...n.users]), o(n.nextIndex)
+        searchQuery: s
+    } = e, [l, r] = a.useState([]), [n, c] = a.useState(0), [d, o] = a.useState(!1), [u, m] = a.useState(!1), x = async e => {
+        if (!d && null != e) try {
+            o(!0), m(!1);
+            let a = await (0, i.EQ)(t, e, s);
+            r(t => 0 === e ? a.users : [...t, ...a.users]), c(a.nextIndex)
         } catch (e) {
-            f(!0)
+            m(!0)
         } finally {
-            u(!1)
+            o(!1)
         }
     };
-    return (0, n.useEffect)(() => {
-        o(0), p(0)
-    }, [t, r]), {
-        eligibleUsers: i,
-        isFetching: c,
-        hasError: d,
-        getNextRows: () => p(a)
+    return (0, a.useEffect)(() => {
+        c(0), x(0)
+    }, [t, s]), {
+        eligibleUsers: l,
+        isFetching: d,
+        hasError: u,
+        getNextRows: () => x(n)
     }
 }

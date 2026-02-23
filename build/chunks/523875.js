@@ -1,10 +1,10 @@
-/** chunk id: 523875, original params: e,t,r (module,exports,require) **/
-r.d(t, {
-    L: () => a
+/** chunk id: 523875, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    L: () => u
 });
-var n = r(627968),
-    o = r(64700),
-    i = r(744682);
+var r = n(627968),
+    a = n(64700),
+    i = n(744682);
 let l = {
         mute: {
             name: "mute",
@@ -27,73 +27,39 @@ let l = {
             duration: 40
         }
     },
-    a = e => {
-        let t = o.useRef(null),
-            a = o.useRef(e);
-        a.current = e;
-        let u = o.useMemo(() => () => {
+    u = e => {
+        let t = a.useRef(null),
+            u = a.useRef(e);
+        u.current = e;
+        let s = a.useMemo(() => () => {
                 null != t.current && t.current.play(e)
             }, [e]),
-            c = o.useCallback(() => {
+            o = a.useCallback(() => {
                 if (null == t.current) return;
-                let r = "mute" === e ? "hover_unmuted" : "hover_muted";
-                t.current.play(r)
+                let n = "mute" === e ? "hover_unmuted" : "hover_muted";
+                t.current.play(n)
             }, [e]),
-            s = o.useCallback(() => {
+            c = a.useCallback(() => {
                 if (null == t.current) return;
-                let r = "mute" === e ? "hover_unmuted" : "hover_muted";
-                t.current.stopIfPlaying(r)
+                let n = "mute" === e ? "hover_unmuted" : "hover_muted";
+                t.current.stopIfPlaying(n)
             }, [e]),
-            b = o.useCallback(e => {
-                var o, u;
-                return (0, n.jsx)(i.P, (o = function(e) {
-                    for (var t = 1; t < arguments.length; t++) {
-                        var r = null != arguments[t] ? arguments[t] : {},
-                            n = Object.keys(r);
-                        "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-                            return Object.getOwnPropertyDescriptor(r, e).enumerable
-                        }))), n.forEach(function(t) {
-                            var n;
-                            n = r[t], t in e ? Object.defineProperty(e, t, {
-                                value: n,
-                                enumerable: !0,
-                                configurable: !0,
-                                writable: !0
-                            }) : e[t] = n
-                        })
-                    }
-                    return e
-                }({}, e), u = u = {
-                    src: () => r.e("18133").then(r.t.bind(r, 705844, 19)),
-                    ref: t,
-                    initialAnimation: a.current,
-                    markers: l
-                }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(u)) : (function(e, t) {
-                    var r = Object.keys(e);
-                    if (Object.getOwnPropertySymbols) {
-                        var n = Object.getOwnPropertySymbols(e);
-                        r.push.apply(r, n)
-                    }
-                    return r
-                })(Object(u)).forEach(function(e) {
-                    Object.defineProperty(o, e, Object.getOwnPropertyDescriptor(u, e))
-                }), o))
-            }, []);
+            d = a.useCallback(e => (0, r.jsx)(i.P, {
+                ...e,
+                src: () => n.e("18133").then(n.t.bind(n, 705844, 19)),
+                ref: t,
+                initialAnimation: u.current,
+                markers: l
+            }), []);
         return {
             events: {
-                onClick: u,
-                onMouseEnter: c,
-                onMouseLeave: s
+                onClick: s,
+                onMouseEnter: o,
+                onMouseLeave: c
             },
-            play: u,
-            getDuration: o.useCallback(() => {
-                var e;
-                return null == (e = t.current) ? void 0 : e.getDuration()
-            }, []),
-            getCurrentFrame: o.useCallback(() => {
-                var e, r;
-                return null != (e = null == (r = t.current) ? void 0 : r.getCurrentFrame()) ? e : null
-            }, []),
-            Component: b
+            play: s,
+            getDuration: a.useCallback(() => t.current?.getDuration(), []),
+            getCurrentFrame: a.useCallback(() => t.current?.getCurrentFrame() ?? null, []),
+            Component: d
         }
     }

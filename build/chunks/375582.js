@@ -1,27 +1,27 @@
 /** chunk id: 375582, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    v: () => h
-}), n(896048);
+    v: () => x
+});
 var a = n(627968),
-    l = n(64700),
-    r = n(503698),
-    i = n.n(r),
-    s = n(158954),
+    i = n(64700),
+    s = n(503698),
+    l = n.n(s),
+    r = n(158954),
     o = n(397927),
-    c = n(63415),
-    d = n(661251),
+    d = n(63415),
+    c = n(661251),
     u = n(737740);
 let m = [{
         id: "private_browsing_perk",
         name: "Privacy Perk Components"
     }],
-    p = {
-        private_browsing_perk: c.p
+    h = {
+        private_browsing_perk: d.p
     },
-    h = () => {
-        let [e, t] = l.useState("private_browsing_perk"), n = l.useMemo(() => p[e], [e]);
+    x = () => {
+        let [e, t] = i.useState("private_browsing_perk"), n = i.useMemo(() => h[e], [e]);
         return (0, a.jsxs)("div", {
-            className: i()(d.nd, u.kL),
+            className: l()(c.nd, u.kL),
             children: [(0, a.jsx)(o.VQ0, {
                 className: u.$H,
                 selectedItem: e,
@@ -33,7 +33,7 @@ let m = [{
                     id: e.id,
                     children: e.name
                 }, e.id))
-            }), (0, a.jsx)(s.ArX, {
+            }), (0, a.jsx)(r.ArX, {
                 children: (0, a.jsx)("div", {
                     className: u.Qs,
                     children: (0, a.jsx)(n, {})

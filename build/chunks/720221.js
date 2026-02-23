@@ -1,42 +1,41 @@
-/** chunk id: 720221, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    F: () => a
-}), n(228524);
-var r = n(627968);
-n(64700);
-var i = n(106236);
-let a = {
+/** chunk id: 720221, original params: e,l,a (module,exports,require) **/
+a.d(l, {
+    F: () => n
+});
+var t = a(627968);
+a(64700);
+var o = a(106236);
+let n = {
     title: "Slider",
     stories: [{
         id: "slider",
         name: "Slider",
         component: function(e) {
             let {
-                minValue: t,
-                maxValue: n,
-                initialValue: a,
-                markerCount: o,
+                minValue: l,
+                maxValue: a,
+                initialValue: n,
+                markerCount: i,
                 stickToMarkers: s,
-                disabled: l,
-                equidistant: c,
+                disabled: r,
+                equidistant: d,
                 label: u,
-                description: d
-            } = e, f = o > 0 ? Array.from({
-                length: o
-            }, (e, r) => Math.floor(t + r / (o - 1) * (n - t))) : void 0;
-            return (0, r.jsx)(i.A, {
+                description: c
+            } = e, b = i > 0 ? Array.from({
+                length: i
+            }, (e, t) => Math.floor(l + t / (i - 1) * (a - l))) : void 0;
+            return (0, t.jsx)(o.A, {
                 label: u,
-                description: d,
+                description: c,
                 layout: "horizontal-responsive",
-                minValue: t,
-                maxValue: n,
-                initialValue: a,
-                markers: f,
+                minValue: l,
+                maxValue: a,
+                initialValue: n,
+                markers: b,
                 stickToMarkers: s,
-                disabled: l,
-                equidistant: c
-            }, o)
+                disabled: r,
+                equidistant: d
+            }, i)
         },
         controls: {
             label: {

@@ -8,7 +8,7 @@ let l = t => {
         guildId: e,
         guildEventId: n
     } = t;
-    return "https://discord.com/events/".concat(e, "/").concat(n)
+    return `https://discord.com/events/${e}/${n}`
 };
 
 function i(t, e, n) {

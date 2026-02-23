@@ -1,68 +1,65 @@
 /** chunk id: 308072, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => g
+    A: () => m
 });
-var r = n(627968),
-    i = n(64700),
+var i = n(627968),
+    s = n(64700),
     l = n(503698),
-    s = n.n(l),
+    r = n.n(l),
     a = n(397927),
     o = n(311907),
-    c = n(585958),
-    d = n(760751),
+    d = n(585958),
+    c = n(760751),
     u = n(677230);
 
-function g(e) {
+function m(e) {
     let {
         applicationId: t,
         selected: n,
         onClick: l,
-        disabled: g
+        disabled: m
     } = e, {
-        isFetching: m,
-        coverImageUrl: p
-    } = (0, c.n)(t, {
+        isFetching: g,
+        coverImageUrl: x
+    } = (0, d.n)(t, {
         coverImageSize: 256
-    }), f = (0, o.bG)([d.A], () => {
-        var e, n;
-        return null != (e = null == (n = d.A.getDetectableGame(t)) ? void 0 : n.name) ? e : ""
-    }), h = i.useCallback(() => {
-        null == l || l(t)
-    }, [t, l]), b = i.useMemo(() => m ? null : null == p ? (0, r.jsx)("div", {
+    }), h = (0, o.bG)([c.A], () => c.A.getDetectableGame(t)?.name ?? ""), _ = s.useCallback(() => {
+        l?.(t)
+    }, [t, l]), A = s.useMemo(() => g ? null : null == x ? (0, i.jsx)("div", {
         className: u.gP,
-        children: (0, r.jsx)(a._7Z, {
+        children: (0, i.jsx)(a._7Z, {
             size: "lg"
         })
-    }) : (0, r.jsx)("img", {
+    }) : (0, i.jsx)("img", {
         className: u.Su,
-        alt: f,
-        src: p
-    }), [p, m, f]);
-    return (0, r.jsxs)("div", {
-        className: s()(u.id, {
+        alt: h,
+        src: x
+    }), [x, g, h]);
+    return (0, i.jsxs)("div", {
+        className: r()(u.id, {
             [u.rX]: !n,
-            [u.r9]: g
+            [u.r9]: m
         }),
-        children: [(0, r.jsxs)(a.DUT, {
-            "aria-disabled": g,
-            tabIndex: g ? -1 : 0,
-            onClick: g ? void 0 : h,
-            className: s()(u.a8, {
-                [u.AL]: m,
-                [u.r9]: g
+        children: [(0, i.jsxs)(a.DUT, {
+            "aria-disabled": m,
+            tabIndex: m ? -1 : 0,
+            onClick: m ? void 0 : _,
+            className: r()(u.a8, {
+                [u.AL]: g,
+                [u.r9]: m
             }),
-            children: [n && (0, r.jsx)("div", {
+            children: [n && (0, i.jsx)("div", {
                 className: u.jK,
-                children: (0, r.jsx)(a.P7L, {
+                children: (0, i.jsx)(a.P7L, {
                     checked: n
                 })
-            }), b]
-        }), (0, r.jsx)(a.Text, {
+            }), A]
+        }), (0, i.jsx)(a.Text, {
             className: u.mO,
             variant: "text-xs/medium",
             color: "text-strong",
-            children: f
+            children: h
         })]
     })
 }

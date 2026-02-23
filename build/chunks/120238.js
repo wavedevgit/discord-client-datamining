@@ -1,41 +1,41 @@
 /** chunk id: 120238, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => d
-}), n(228524);
+    A: () => c
+});
 var a = n(627968),
-    l = n(64700),
-    r = n(397927),
-    i = n(805866),
-    s = n(646284),
+    i = n(64700),
+    s = n(397927),
+    l = n(805866),
+    r = n(646284),
     o = n(985018),
-    c = n(141200);
-let d = e => {
+    d = n(141200);
+let c = e => {
     let {
         onSubmit: t,
         disabled: n
-    } = e, d = l.useCallback(async () => {
+    } = e, c = i.useCallback(async () => {
         await t({
-            type: i.Ij.Empty
+            type: l.Ij.Empty
         }), window.location.reload()
     }, [t]);
     return (0, a.jsxs)("div", {
-        className: c.kL,
-        children: [(0, a.jsx)(r.Heading, {
+        className: d.kL,
+        children: [(0, a.jsx)(s.Heading, {
             variant: "heading-lg/bold",
-            className: c.DD,
-            children: o.intl.string(s.default.v52itt)
-        }), (0, a.jsx)(r.Text, {
+            className: d.DD,
+            children: o.intl.string(r.default.v52itt)
+        }), (0, a.jsx)(s.Text, {
             variant: "text-md/normal",
             color: "text-muted",
-            className: c.h_,
-            children: o.intl.string(s.default["5am8D3"])
-        }), (0, a.jsx)(r.BJc, {
+            className: d.h_,
+            children: o.intl.string(r.default["5am8D3"])
+        }), (0, a.jsx)(s.BJc, {
             direction: "horizontal",
             justify: "end",
-            children: (0, a.jsx)(r.Button, {
+            children: (0, a.jsx)(s.Button, {
                 variant: "primary",
-                text: o.intl.string(s.default["GDsHl+"]),
-                onClick: d,
+                text: o.intl.string(r.default["GDsHl+"]),
+                onClick: c,
                 disabled: n
             })
         })]

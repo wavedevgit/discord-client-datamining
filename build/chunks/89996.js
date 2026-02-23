@@ -1,4 +1,5 @@
 /** chunk id: 89996, original params: e,t,n (module,exports,require) **/
+"use strict";
 e.exports = {
     zr: "root__4ad81",
     Qw: "art__4ad81",

@@ -1,109 +1,83 @@
-/** chunk id: 448362, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    Gy: () => g,
-    k7: () => l.k
-}), n(896048);
-var r = n(627968),
-    i = n(64700),
-    a = n(503698),
-    o = n.n(a),
-    s = n(397927);
-n(14115);
-var l = n(305003),
-    c = n(626031),
-    u = n(339763),
-    d = n(796688);
-
-function f(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-
-function p(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            f(e, t, n[t])
-        })
-    }
-    return e
-}
-let _ = () => (0, r.jsx)("img", {
+/** chunk id: 448362, original params: e,t,l (module,exports,require) **/
+l.d(t, {
+    Gy: () => m,
+    k7: () => o.k
+});
+var a = l(627968),
+    n = l(64700),
+    r = l(503698),
+    i = l.n(r),
+    s = l(397927);
+l(14115);
+var o = l(305003),
+    u = l(626031),
+    c = l(339763),
+    d = l(796688);
+let p = () => (0, a.jsx)("img", {
         className: d.V8,
-        src: n(324292),
+        src: l(324292),
         alt: ""
     }),
-    h = "balance-widget-pill",
-    m = (e, t) => e === l.k.SELECTED ? d.wH : t ? d.mr : d.Ay,
-    g = (0, i.forwardRef)(function(e, t) {
+    m = (0, n.forwardRef)(function(e, t) {
         let {
-            id: n,
-            balance: a,
-            balanceWidgetMode: f = l.k.DEFAULT,
-            showNotificationBadge: g,
-            onClick: E,
-            onMouseDown: y,
-            disabled: b,
-            isInModalOverlay: O,
-            className: v
-        } = e, [A, I] = (0, i.useState)(!1), S = (0, i.useMemo)(() => m(f, A), [f, A]), [T, C] = (0, i.useState)(!1), [N, w] = (0, i.useState)(!1), [R, P] = (0, i.useState)(2700), D = null === a;
-        (0, i.useEffect)(() => {
-            D && !T && (C(!0), setTimeout(() => {
-                w(!0)
+            id: l,
+            balance: r,
+            balanceWidgetMode: m = o.k.DEFAULT,
+            showNotificationBadge: h,
+            onClick: x,
+            onMouseDown: b,
+            disabled: g,
+            isInModalOverlay: y,
+            className: f
+        } = e, [E, v] = (0, n.useState)(!1), S = (0, n.useMemo)(() => m === o.k.SELECTED ? d.wH : E ? d.mr : d.Ay, [m, E]), [j, T] = (0, n.useState)(!1), [C, P] = (0, n.useState)(!1), [R, A] = (0, n.useState)(2700), _ = null === r;
+        (0, n.useEffect)(() => {
+            _ && !j && (T(!0), setTimeout(() => {
+                P(!0)
             }, 500))
-        }, [D, C, T]), (0, i.useEffect)(() => {
-            N && !D && C(!1)
-        }, [D, N]);
-        let L = D || T,
-            x = T ? null : a,
-            [M, j] = (0, i.useState)(null),
-            k = (0, i.useRef)(null),
-            U = (0, i.useCallback)(() => {
-                k.current = null, j(null)
+        }, [_, T, j]), (0, n.useEffect)(() => {
+            C && !_ && T(!1)
+        }, [_, C]);
+        let I = _ || j,
+            N = j ? null : r,
+            [k, D] = (0, n.useState)(null),
+            M = (0, n.useRef)(null),
+            O = (0, n.useCallback)(() => {
+                M.current = null, D(null)
             }, []),
-            G = (0, i.useCallback)(e => {
-                let t = M === k.current;
-                e > 0 && ("earn" !== M || !t) && j("earn")
-            }, [j, M]),
-            F = {
-                currentAnimationType: M,
-                animationTypeRef: k,
-                onSetAnimationDurationMS: P
-            };
-        return (0, r.jsx)(s.DUT, {
-            onClick: L ? void 0 : E,
-            className: o()(d.vk, {
-                [d.r9]: b
+            B = (0, n.useCallback)(e => {
+                let t = k === M.current;
+                e > 0 && ("earn" !== k || !t) && D("earn")
+            }, [D, k]);
+        return (0, a.jsx)(s.DUT, {
+            onClick: I ? void 0 : x,
+            className: i()(d.vk, {
+                [d.r9]: g
             }),
-            id: null != n ? n : h,
-            children: (0, r.jsxs)("span", {
-                onMouseDown: y,
-                onMouseEnter: b ? void 0 : () => I(!0),
-                onMouseLeave: b ? void 0 : () => I(!1),
+            id: l ?? "balance-widget-pill",
+            children: (0, a.jsxs)("span", {
+                onMouseDown: b,
+                onMouseEnter: g ? void 0 : () => v(!0),
+                onMouseLeave: g ? void 0 : () => v(!1),
                 ref: t,
-                className: o()(d.kL, S, v, {
-                    [d.En]: L,
-                    [d.dA]: O,
-                    [d.r9]: b
+                className: i()(d.kL, S, f, {
+                    [d.En]: I,
+                    [d.dA]: y,
+                    [d.r9]: g
                 }),
-                children: [(0, r.jsx)("div", {
-                    className: o()(d.hr, L ? d.nr : void 0),
-                    children: (0, r.jsx)(u.Ay, p({}, F))
-                }), (0, r.jsx)(c.A, {
-                    value: x,
-                    onValueChange: G,
-                    onValueReached: U,
+                children: [(0, a.jsx)("div", {
+                    className: i()(d.hr, I ? d.nr : void 0),
+                    children: (0, a.jsx)(c.Ay, {
+                        currentAnimationType: k,
+                        animationTypeRef: M,
+                        onSetAnimationDurationMS: A
+                    })
+                }), (0, a.jsx)(u.A, {
+                    value: N,
+                    onValueChange: B,
+                    onValueReached: O,
                     targetTotalCounterTime: R,
-                    className: L ? d.F : void 0
-                }), g && (0, r.jsx)(_, {})]
+                    className: I ? d.F : void 0
+                }), h && (0, a.jsx)(p, {})]
             })
         })
     })

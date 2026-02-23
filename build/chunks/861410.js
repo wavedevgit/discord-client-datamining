@@ -1,99 +1,78 @@
 /** chunk id: 861410, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => h
-}), n(228524);
-var r, i = n(311907),
-    l = n(73153),
-    s = n(71393),
-    a = n(652215);
-
-function o(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-let c = {
+    A: () => x
+});
+var i = n(311907),
+    s = n(73153),
+    l = n(71393),
+    r = n(652215);
+let a = {
         description: "",
         channels: [],
         enabled: !1
     },
-    d = c,
-    u = !1,
-    g = !1,
-    m = c;
+    o = a,
+    d = !1,
+    c = !1,
+    u = a;
 
-function p(e) {
+function m(e) {
     let {
         welcomeScreen: t,
         guildId: n
-    } = e, r = s.A.getGuild(n);
-    if (null != t) {
-        var i, l;
-        m = d = {
-            description: null != (i = t.description) ? i : "",
-            channels: null != (l = t.welcome_channels) ? l : [],
-            enabled: null == r ? void 0 : r.features.has(a.GuildFeatures.WELCOME_SCREEN_ENABLED)
-        }
-    } else m = d = c;
-    g = !1
+    } = e, i = l.A.getGuild(n);
+    u = o = null != t ? {
+        description: t.description ?? "",
+        channels: t.welcome_channels ?? [],
+        enabled: i?.features.has(r.GuildFeatures.WELCOME_SCREEN_ENABLED)
+    } : a, c = !1
 }
-class f extends(r = i.Ay.Store) {
+class g extends i.Ay.Store {
+    static displayName = "WelcomeScreenSettingsStore";
     initialize() {
-        this.waitFor(s.A)
+        this.waitFor(l.A)
     }
     get() {
-        return m
+        return u
     }
     showNotice() {
-        return g
+        return c
     }
     getSettingsProps() {
         return {
-            submitting: u,
-            hasErrors: g,
-            welcomeSettings: m,
-            originalWelcomeSettings: d
+            submitting: d,
+            hasErrors: c,
+            welcomeSettings: u,
+            originalWelcomeSettings: o
         }
     }
 }
-o(f, "displayName", "WelcomeScreenSettingsStore");
-let h = new f(l.h, {
-    WELCOME_SCREEN_FETCH_SUCCESS: p,
-    WELCOME_SCREEN_UPDATE: p,
+let x = new g(s.h, {
+    WELCOME_SCREEN_FETCH_SUCCESS: m,
+    WELCOME_SCREEN_UPDATE: m,
     WELCOME_SCREEN_SETTINGS_RESET: function() {
-        m = d, g = !1
+        u = o, c = !1
     },
     WELCOME_SCREEN_SETTINGS_CLEAR: function() {
-        m = c, d = c
+        u = a, o = a
     },
     WELCOME_SCREEN_SETTINGS_UPDATE: function(e) {
         let {
             settings: t
         } = e;
-        m = function(e) {
-            for (var t = 1; t < arguments.length; t++) {
-                var n = null != arguments[t] ? arguments[t] : {},
-                    r = Object.keys(n);
-                "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                    return Object.getOwnPropertyDescriptor(n, e).enumerable
-                }))), r.forEach(function(t) {
-                    o(e, t, n[t])
-                })
-            }
-            return e
-        }({}, m, t)
+        u = {
+            ...u,
+            ...t
+        }
     },
     WELCOME_SCREEN_SUBMIT: function() {
-        u = !0
+        d = !0
     },
     WELCOME_SCREEN_SUBMIT_SUCCESS: function(e) {
-        p(e), u = !1
+        m(e), d = !1
     },
     WELCOME_SCREEN_SUBMIT_FAILURE: function() {
-        g = !0, u = !1
+        c = !0, d = !1
     }
 })

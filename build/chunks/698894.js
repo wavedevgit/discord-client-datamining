@@ -1,44 +1,44 @@
-/** chunk id: 698894, original params: e,t,r (module,exports,require) **/
+/** chunk id: 698894, original params: e,t,a (module,exports,require) **/
 "use strict";
-r.d(t, {
-    r: () => p
+a.d(t, {
+    r: () => h
 });
-var n = r(627968),
-    a = r(64700),
-    s = r(333748),
-    i = r(397927),
-    l = r(647053),
-    o = r(985018),
-    c = r(856229),
-    d = r(806782),
-    u = r(277606);
-let p = e => {
+var s = a(627968),
+    r = a(64700),
+    n = a(333748),
+    i = a(397927),
+    l = a(647053),
+    o = a(985018),
+    c = a(856229),
+    d = a(806782),
+    u = a(277606);
+let h = e => {
     let {
         onComplete: t,
-        data: r
-    } = e, p = (0, a.useId)(), f = null, h = null, x = r.scopes.some(e => (0, l.RM)(e));
-    return r.clientId === s.i.PLAYSTATION_APPLICATION_ID || r.clientId === s.i.PLAYSTATION_STAGING_APPLICATION_ID ? f = d.A : x && (f = u.A), null != r.twoWayLinkCode ? h = o.intl.string(o.t.QhATl2) : x && (h = o.intl.string(o.t.vBPvK3)), (0, n.jsxs)("div", {
+        data: a
+    } = e, h = (0, r.useId)(), p = null, x = null, f = a.scopes.some(e => (0, l.RM)(e));
+    return a.clientId === n.i.PLAYSTATION_APPLICATION_ID || a.clientId === n.i.PLAYSTATION_STAGING_APPLICATION_ID ? p = d.A : f && (p = u.A), null != a.twoWayLinkCode ? x = o.intl.string(o.t.QhATl2) : f && (x = o.intl.string(o.t.vBPvK3)), (0, s.jsxs)("div", {
         className: c.Qs,
-        children: [null != f ? (0, n.jsx)("img", {
-            src: f,
+        children: [null != p ? (0, s.jsx)("img", {
+            src: p,
             className: c.xX,
             alt: "",
-            "aria-labelledby": p
-        }) : null, (0, n.jsxs)("div", {
+            "aria-labelledby": h
+        }) : null, (0, s.jsxs)("div", {
             className: c.gx,
-            children: [(0, n.jsx)(i.Heading, {
+            children: [(0, s.jsx)(i.Heading, {
                 variant: "heading-xl/extrabold",
-                id: p,
+                id: h,
                 children: o.intl.string(o.t.qDtJmD)
-            }), null != h ? (0, n.jsx)(i.Text, {
+            }), null != x ? (0, s.jsx)(i.Text, {
                 variant: "text-md/normal",
                 color: "text-default",
-                children: h
+                children: x
             }) : null]
-        }), (0, n.jsx)("div", {
+        }), (0, s.jsx)("div", {
             "data-button-hoisted-classname-wrapper": !0,
             className: c.wC,
-            children: (0, n.jsx)(i.Button, {
+            children: (0, s.jsx)(i.Button, {
                 variant: "primary",
                 text: o.intl.string(o.t.i4jeWR),
                 onClick: t

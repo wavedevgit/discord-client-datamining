@@ -1,26 +1,26 @@
 /** chunk id: 740625, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    R: () => a
+    R: () => l
 });
-var r = n(627968),
-    l = n(397927),
-    i = n(790114),
-    s = n(295057);
-let a = e => {
+var i = n(627968),
+    s = n(397927),
+    a = n(790114),
+    r = n(295057);
+let l = e => {
     let {
         children: t,
         header: n,
-        notice: a
-    } = e, o = (0, i.A)();
-    return (0, r.jsxs)("div", {
-        className: s.r,
-        children: [a, !o && (0, r.jsx)(l.Fmo, {
-            children: (0, r.jsx)(l.Heading, {
+        notice: l
+    } = e, o = (0, a.A)();
+    return (0, i.jsxs)("div", {
+        className: r.r,
+        children: [l, !o && (0, i.jsx)(s.Fmo, {
+            children: (0, i.jsx)(s.Heading, {
                 variant: "heading-xl/semibold",
                 color: "text-strong",
                 children: n
             })
-        }), (0, r.jsx)("div", {
+        }), (0, i.jsx)("div", {
             children: t
         })]
     })

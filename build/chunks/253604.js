@@ -2,73 +2,62 @@
 n.d(t, {
     A: () => u
 });
-var r = n(627968),
-    i = n(64700),
-    l = n(311907),
-    s = n(397927),
-    a = n(101058),
+var i = n(627968),
+    s = n(64700),
+    a = n(311907),
+    r = n(397927),
+    l = n(101058),
     o = n(836602),
     c = n(287070),
     d = n(83118);
 
 function u(e) {
-    var t;
     let {
-        user: u,
-        disabledInputs: _,
-        containerClassName: p
+        user: t,
+        disabledInputs: u,
+        containerClassName: _
     } = e, {
         reducedMotion: m
-    } = i.useContext(s.CZY), {
-        pendingAvatar: g,
-        pendingBanner: A,
-        pendingAvatarDecoration: f,
-        pendingProfileEffect: b,
-        pendingDisplayNameStyles: h,
+    } = s.useContext(r.CZY), {
+        pendingAvatar: A,
+        pendingBanner: g,
+        pendingAvatarDecoration: h,
+        pendingProfileEffect: x,
+        pendingDisplayNameStyles: p,
         pendingThemeColors: E,
-        pendingPronouns: O,
-        pendingBio: x,
-        tryItOutThemeColors: C,
-        tryItOutAvatar: S,
-        tryItOutBanner: T,
-        tryItOutAvatarDecoration: I,
-        tryItOutDisplayNameStyles: N
-    } = (0, l.cf)([o.A], () => (function(e) {
-        for (var t = 1; t < arguments.length; t++) {
-            var n = null != arguments[t] ? arguments[t] : {},
-                r = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                return Object.getOwnPropertyDescriptor(n, e).enumerable
-            }))), r.forEach(function(t) {
-                var r;
-                r = n[t], t in e ? Object.defineProperty(e, t, {
-                    value: r,
-                    enumerable: !0,
-                    configurable: !0,
-                    writable: !0
-                }) : e[t] = r
-            })
+        pendingPronouns: C,
+        pendingBio: T,
+        tryItOutThemeColors: S,
+        tryItOutAvatar: I,
+        tryItOutBanner: f,
+        tryItOutAvatarDecoration: N,
+        tryItOutDisplayNameStyles: b
+    } = (0, a.cf)([o.A], () => {
+        let e = o.A.getPendingChanges(),
+            t = o.A.getTryItOutChanges();
+        return {
+            ...e,
+            ...t
         }
-        return e
-    })({}, o.A.getPendingChanges(), o.A.getTryItOutChanges())), y = (0, a.V7)({
-        userId: u.id,
-        image: null != S ? S : g
+    }), j = (0, l.V7)({
+        userId: t.id,
+        image: I ?? A
     });
-    return (0, r.jsx)(c.A, {
-        containerClassName: p,
-        user: u,
-        pendingPronouns: O,
-        pendingBio: x,
-        pendingBanner: null != (t = null != T ? T : A) ? t : n(636763),
-        pendingDisplayNameStyles: null != N ? N : h,
-        pendingAvatar: y,
-        pendingThemeColors: null != C ? C : E,
-        pendingAvatarDecoration: void 0 !== I ? I : f,
-        pendingProfileEffect: b,
-        avatarClassName: null != S || null != g || m.enabled ? void 0 : d.W,
+    return (0, i.jsx)(c.A, {
+        containerClassName: _,
+        user: t,
+        pendingPronouns: C,
+        pendingBio: T,
+        pendingBanner: f ?? g ?? n(636763),
+        pendingDisplayNameStyles: b ?? p,
+        pendingAvatar: j,
+        pendingThemeColors: S ?? E,
+        pendingAvatarDecoration: void 0 !== N ? N : h,
+        pendingProfileEffect: x,
+        avatarClassName: null != I || null != A || m.enabled ? void 0 : d.W,
         canUsePremiumCustomization: !0,
         isTryItOut: !0,
-        disabledInputs: _,
+        disabledInputs: u,
         hideExampleButton: !0
     })
 }

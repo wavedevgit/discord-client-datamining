@@ -1,56 +1,56 @@
 /** chunk id: 758246, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => P,
-    j: () => C
-}), n(228524), n(896048), n(693327), n(554719), n(680155), n(323874), n(14289), n(35956), n(747238), n(812715), n(866193), n(591487), n(727858);
-var r = n(627968),
-    i = n(64700);
+    A: () => O,
+    j: () => y
+}), n(323874), n(14289), n(35956);
+var i = n(627968),
+    s = n(64700);
 n(516773);
 var l = n(311907),
-    s = n(36525),
+    r = n(36525),
     a = n(421380),
     o = n(397927),
-    c = n(416052),
-    d = n(611371),
+    d = n(416052),
+    c = n(611371),
     u = n(938925),
-    g = n(460760),
-    m = n(776231),
-    p = n(946274),
-    f = n(342298),
-    h = n(576705),
-    b = n(486020),
-    x = n(975571),
-    j = n(997509),
-    _ = n(555337),
-    O = n(458907),
-    v = n(719175),
-    y = n(643674),
-    A = n(156057),
-    E = n(652215),
-    N = n(985018),
-    S = n(628080);
-let I = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
-    C = () => {
+    m = n(460760),
+    g = n(776231),
+    x = n(946274),
+    h = n(342298),
+    _ = n(576705),
+    A = n(486020),
+    p = n(975571),
+    f = n(997509),
+    j = n(555337),
+    N = n(458907),
+    E = n(719175),
+    b = n(643674),
+    T = n(156057),
+    C = n(652215),
+    I = n(985018),
+    v = n(628080);
+let S = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
+    y = () => {
         let {
             guild: e,
             guildMetadata: t,
             submitting: n
-        } = (0, l.cf)([_.A], () => ({
-            submitting: _.A.isSubmitting(),
-            guild: _.A.getGuild(),
-            guildMetadata: _.A.getMetadata()
+        } = (0, l.cf)([j.A], () => ({
+            submitting: j.A.isSubmitting(),
+            guild: j.A.getGuild(),
+            guildMetadata: j.A.getMetadata()
         }));
-        return (0, r.jsx)(s.A, {
+        return (0, i.jsx)(r.A, {
             submitting: n,
             onReset: () => {
-                null != e && j.A.init(e.id)
+                null != e && f.A.init(e.id)
             },
             onSave: () => {
-                null != e && (j.A.saveGuild(e.id, {
+                null != e && (f.A.saveGuild(e.id, {
                     discoverySplash: e.discoverySplash,
                     description: e.description
-                }), (0, g.Oh)({
+                }), (0, m.Oh)({
                     guildId: e.id,
                     primaryCategoryId: t.primaryCategoryId,
                     keywords: t.keywords,
@@ -65,81 +65,79 @@ let I = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
             }
         })
     },
-    T = () => {
-        var e;
-        let t = i.useRef(null),
-            s = (0, l.bG)([_.A], () => _.A.getGuild()),
-            [C, T] = i.useState(!1);
-        i.useEffect(() => {
-            C || null == s || ((0, g.Mu)(), (0, g.mo)(s.id), (0, g.ax)(s.id), T(!0))
-        }, [s, C]);
+    R = () => {
+        let e = s.useRef(null),
+            t = (0, l.bG)([j.A], () => j.A.getGuild()),
+            [r, y] = s.useState(!1);
+        s.useEffect(() => {
+            r || null == t || ((0, m.Mu)(), (0, m.mo)(t.id), (0, m.ax)(t.id), y(!0))
+        }, [t, r]);
         let {
-            canManageGuild: P
-        } = (0, l.cf)([h.A], () => ({
-            canManageGuild: h.A.can(E.xBc.MANAGE_GUILD, s)
-        })), w = (0, l.bG)([_.A], () => _.A.isGuildMetadataLoaded()), R = (0, l.bG)([_.A], () => null != s ? _.A.getMetadata() : null), D = (0, l.bG)([_.A], () => null != s && (null == R ? void 0 : R.isPublished) ? _.A.getSlug() : null), [G, L] = i.useState([!0]), [k, M] = i.useState(!0), [U, B] = i.useState([!1]), [F, H] = i.useState([""]);
-        i.useEffect(() => {
-            if (null !== R) {
+            canManageGuild: R
+        } = (0, l.cf)([_.A], () => ({
+            canManageGuild: _.A.can(C.xBc.MANAGE_GUILD, t)
+        })), O = (0, l.bG)([j.A], () => j.A.isGuildMetadataLoaded()), G = (0, l.bG)([j.A], () => null != t ? j.A.getMetadata() : null), L = (0, l.bG)([j.A], () => null != t && G?.isPublished ? j.A.getSlug() : null), [D, M] = s.useState([!0]), [k, U] = s.useState(!0), [P, w] = s.useState([!1]), [B, F] = s.useState([""]);
+        s.useEffect(() => {
+            if (null !== G) {
                 let e = [],
                     t = [];
-                R.socialLinks.forEach((n, r) => {
+                G.socialLinks.forEach((n, i) => {
                     if ("" !== n) {
-                        let i = (e => {
+                        let s = (e => {
                             try {
-                                var t, n, r, i;
-                                let l = new URL(e).hostname.split(".");
-                                if (3 === l.length && "bandcamp" === l[1].toLowerCase()) return A.x.bandcamp.presentation;
-                                let s = null != (t = null == (n = l.shift()) ? void 0 : n.toLowerCase()) ? t : "";
-                                if ("www" === s && (s = null != (r = null == (i = l.shift()) ? void 0 : i.toLowerCase()) ? r : ""), s in A.x) return A.x[s].presentation;
+                                let t = new URL(e).hostname.split(".");
+                                if (3 === t.length && "bandcamp" === t[1].toLowerCase()) return T.x.bandcamp.presentation;
+                                let n = t.shift()?.toLowerCase() ?? "";
+                                if ("www" === n && (n = t.shift()?.toLowerCase() ?? ""), n in T.x) return T.x[n].presentation;
                                 return null
-                            } catch (e) {
+                            } catch {
                                 return null
                             }
                         })(n);
-                        null !== i ? (t[r] = i, e[r] = !0) : e[r] = !1
-                    } else e[r] = !0
-                }), H(t), L(e), M(e.every(e => !0 === e))
+                        null !== s ? (t[i] = s, e[i] = !0) : e[i] = !1
+                    } else e[i] = !0
+                }), F(t), M(e), U(e.every(e => !0 === e))
             }
-        }, [R]);
-        let V = (0, l.bG)([_.A], () => null != s ? _.A.getErrors() : null);
-        if (null == s || null == R) return null;
-        let K = e => {
-                j.A.updateGuild({
+        }, [G]);
+        let H = (0, l.bG)([j.A], () => null != t ? j.A.getErrors() : null);
+        if (null == t || null == G) return null;
+        let V = e => {
+                f.A.updateGuild({
                     discoverySplash: e
                 })
             },
             z = e => {
-                let t = () => {
-                    (0, g.Ok)(s.id, e), e ? (0, g.Oh)({
-                        guildId: s.id,
-                        primaryCategoryId: R.primaryCategoryId,
-                        keywords: R.keywords,
-                        emojiDiscoverabilityEnabled: R.emojiDiscoverabilityEnabled,
-                        partnerActionedTimestamp: R.partnerActionedTimestamp,
-                        partnerApplicationTimestamp: R.partnerApplicationTimestamp,
+                let i = () => {
+                    (0, m.Ok)(t.id, e), e ? (0, m.Oh)({
+                        guildId: t.id,
+                        primaryCategoryId: G.primaryCategoryId,
+                        keywords: G.keywords,
+                        emojiDiscoverabilityEnabled: G.emojiDiscoverabilityEnabled,
+                        partnerActionedTimestamp: G.partnerActionedTimestamp,
+                        partnerApplicationTimestamp: G.partnerApplicationTimestamp,
                         isPublished: !0,
-                        reasonsToJoin: R.reasonsToJoin,
-                        socialLinks: R.socialLinks,
-                        about: R.about
-                    }) : (0, g.Oh)({
-                        guildId: s.id,
-                        primaryCategoryId: R.primaryCategoryId,
-                        keywords: R.keywords,
-                        emojiDiscoverabilityEnabled: R.emojiDiscoverabilityEnabled,
-                        partnerActionedTimestamp: R.partnerActionedTimestamp,
-                        partnerApplicationTimestamp: R.partnerApplicationTimestamp,
+                        reasonsToJoin: G.reasonsToJoin,
+                        socialLinks: G.socialLinks,
+                        about: G.about
+                    }) : (0, m.Oh)({
+                        guildId: t.id,
+                        primaryCategoryId: G.primaryCategoryId,
+                        keywords: G.keywords,
+                        emojiDiscoverabilityEnabled: G.emojiDiscoverabilityEnabled,
+                        partnerActionedTimestamp: G.partnerActionedTimestamp,
+                        partnerApplicationTimestamp: G.partnerApplicationTimestamp,
                         isPublished: !1,
-                        reasonsToJoin: R.reasonsToJoin,
-                        socialLinks: R.socialLinks,
-                        about: R.about
-                    }), j.A.saveGuild(s.id, {
-                        discoverySplash: s.discoverySplash,
-                        description: s.description
+                        reasonsToJoin: G.reasonsToJoin,
+                        socialLinks: G.socialLinks,
+                        about: G.about
+                    }), f.A.saveGuild(t.id, {
+                        discoverySplash: t.discoverySplash,
+                        description: t.description
                     })
                 };
-                e ? t() : null != s.vanityURLCode ? n.e("63983").then(n.bind(n, 256050)).then(e => {
-                    e.default.open(t)
-                }) : t()
+                e ? i() : null != t.vanityURLCode ? n.e("63983").then(n.bind(n, 256050)).then(e => {
+                    e.default.open(i)
+                }) : i()
             },
             W = e => {
                 let {
@@ -149,272 +147,271 @@ let I = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                 return null !== t && t.length >= 10 && t.length <= 128 && null !== n
             },
             Y = [{
-                title: N.intl.string(N.t["/SWsH3"]),
+                title: I.intl.string(I.t["/SWsH3"]),
                 items: [{
-                    description: N.intl.string(N.t.DU8jF2),
-                    completed: null !== s.discoverySplash && "" !== s.discoverySplash
+                    description: I.intl.string(I.t.DU8jF2),
+                    completed: null !== t.discoverySplash && "" !== t.discoverySplash
                 }, {
-                    description: N.intl.string(N.t.SW5OH6),
-                    completed: null !== s.description && "" !== s.description
+                    description: I.intl.string(I.t.SW5OH6),
+                    completed: null !== t.description && "" !== t.description
                 }, {
-                    description: N.intl.string(N.t.m3b3WL),
-                    completed: null !== R.about && R.about.length >= 300 && R.about.length <= 2400
+                    description: I.intl.string(I.t.m3b3WL),
+                    completed: null !== G.about && G.about.length >= 300 && G.about.length <= 2400
                 }, {
-                    description: N.intl.string(N.t.qpx5MN),
-                    completed: null !== R.reasonsToJoin && R.reasonsToJoin.every(e => (e => {
+                    description: I.intl.string(I.t.qpx5MN),
+                    completed: null !== G.reasonsToJoin && G.reasonsToJoin.every(e => (e => {
                         let {
                             reason: t = "",
                             emoji_name: n = ""
                         } = e;
                         return (null === t || "" === t) && null === n
-                    })(e) || W(e)) && R.reasonsToJoin.filter(W).length >= 2
+                    })(e) || W(e)) && G.reasonsToJoin.filter(W).length >= 2
                 }]
             }],
-            X = (e, t) => {
-                let n = [...U];
-                n[e] = t, B(n)
+            K = (e, t) => {
+                let n = [...P];
+                n[e] = t, w(n)
             };
-        return (0, r.jsx)("div", {
-            className: S.ed,
-            children: (0, r.jsx)("div", {
-                className: S.V1,
-                children: (0, r.jsx)(o.ArX, {
-                    className: S.iL,
-                    children: (0, r.jsx)("main", {
-                        ref: t,
-                        className: S.z1,
-                        children: (0, r.jsx)(o.xpW, {
-                            containerRef: t,
-                            children: (0, r.jsxs)("div", {
-                                className: S.kL,
-                                children: [(0, r.jsxs)("div", {
-                                    className: S.rb,
-                                    children: [(0, r.jsxs)(o.Heading, {
+        return (0, i.jsx)("div", {
+            className: v.ed,
+            children: (0, i.jsx)("div", {
+                className: v.V1,
+                children: (0, i.jsx)(o.ArX, {
+                    className: v.iL,
+                    children: (0, i.jsx)("main", {
+                        ref: e,
+                        className: v.z1,
+                        children: (0, i.jsx)(o.xpW, {
+                            containerRef: e,
+                            children: (0, i.jsxs)("div", {
+                                className: v.kL,
+                                children: [(0, i.jsxs)("div", {
+                                    className: v.rb,
+                                    children: [(0, i.jsxs)(o.Heading, {
                                         variant: "heading-lg/semibold",
-                                        children: [N.intl.string(N.t.kGlQGF), (0, r.jsx)(d.A, {
-                                            className: S.TN
+                                        children: [I.intl.string(I.t.kGlQGF), (0, i.jsx)(c.A, {
+                                            className: v.TN
                                         })]
-                                    }), (0, r.jsxs)(o.Text, {
+                                    }), (0, i.jsxs)(o.Text, {
                                         variant: "text-sm/normal",
-                                        className: S.NG,
-                                        children: [N.intl.format(N.t["+ScrMf"], {
+                                        className: v.NG,
+                                        children: [I.intl.format(I.t["+ScrMf"], {
                                             discordURL: window.GLOBAL_ENV.MARKETING_ENDPOINT
-                                        }), " ", N.intl.format(N.t.T6WtKw, {
-                                            learnMoreURL: x.A.getArticleURL(E.MVz.SERVER_WEB_PAGES)
+                                        }), " ", I.intl.format(I.t.T6WtKw, {
+                                            learnMoreURL: p.A.getArticleURL(C.MVz.SERVER_WEB_PAGES)
                                         })]
-                                    }), (0, r.jsxs)(o.BJc, {
+                                    }), (0, i.jsxs)(o.BJc, {
                                         gap: 40,
                                         children: [(() => {
-                                            if (!R.isPublished || null == D) return;
-                                            let e = I + D;
-                                            return (0, r.jsxs)(o.BJc, {
+                                            if (!G.isPublished || null == L) return;
+                                            let e = S + L;
+                                            return (0, i.jsxs)(o.BJc, {
                                                 gap: 16,
-                                                children: [(0, r.jsx)(o.D0$, {
-                                                    label: N.intl.string(N.t.safBZ9),
-                                                    children: (0, r.jsx)(c.A, {
+                                                children: [(0, i.jsx)(o.D0$, {
+                                                    label: I.intl.string(I.t.safBZ9),
+                                                    children: (0, i.jsx)(d.A, {
                                                         value: e
                                                     })
-                                                }), (0, r.jsx)(o.Button, {
+                                                }), (0, i.jsx)(o.Button, {
                                                     variant: "primary",
                                                     size: "sm",
-                                                    text: N.intl.string(N.t.NI8iGI),
+                                                    text: I.intl.string(I.t.NI8iGI),
                                                     onClick: () => window.open(e)
                                                 })]
                                             })
-                                        })(), (0, r.jsx)(o.cGx, {}), (() => {
-                                            if (null != s) return (0, r.jsxs)(r.Fragment, {
-                                                children: [(0, r.jsx)(O.T, {
-                                                    label: N.intl.string(N.t.GjPpSu),
-                                                    description: N.intl.string(N.t.MVXonM),
-                                                    guildId: s.id,
-                                                    guildMetadata: R,
-                                                    isDisabled: !P
-                                                }), (0, r.jsx)(v.A, {
-                                                    label: N.intl.string(N.t.oOPlPA),
-                                                    guild: s,
-                                                    guildMetadata: R,
-                                                    disabled: !P
-                                                }), (null == V ? void 0 : V.category) != null ? (0, r.jsx)(o.Text, {
+                                        })(), (0, i.jsx)(o.cGx, {}), (() => {
+                                            if (null != t) return (0, i.jsxs)(i.Fragment, {
+                                                children: [(0, i.jsx)(N.T, {
+                                                    label: I.intl.string(I.t.GjPpSu),
+                                                    description: I.intl.string(I.t.MVXonM),
+                                                    guildId: t.id,
+                                                    guildMetadata: G,
+                                                    isDisabled: !R
+                                                }), (0, i.jsx)(E.A, {
+                                                    label: I.intl.string(I.t.oOPlPA),
+                                                    guild: t,
+                                                    guildMetadata: G,
+                                                    disabled: !R
+                                                }), H?.category != null ? (0, i.jsx)(o.Text, {
                                                     color: "text-feedback-critical",
-                                                    className: S.z3,
+                                                    className: v.z3,
                                                     variant: "text-sm/normal",
-                                                    children: V.category
+                                                    children: H.category
                                                 }) : null]
                                             })
-                                        })(), (0, r.jsx)(o.cGx, {}), (() => {
-                                            if (null != s) return (0, r.jsx)(o.D0$, {
-                                                label: N.intl.string(N.t["8bT/Cu"]),
-                                                description: N.intl.string(N.t.WCWT7A),
-                                                errorMessage: (null == V ? void 0 : V.discovery_splash) != null ? V.discovery_splash : void 0,
+                                        })(), (0, i.jsx)(o.cGx, {}), (() => {
+                                            if (null != t) return (0, i.jsx)(o.D0$, {
+                                                label: I.intl.string(I.t["8bT/Cu"]),
+                                                description: I.intl.string(I.t.WCWT7A),
+                                                errorMessage: H?.discovery_splash != null ? H.discovery_splash : void 0,
                                                 layout: "horizontal",
-                                                children: (0, r.jsxs)(o.BJc, {
+                                                children: (0, i.jsxs)(o.BJc, {
                                                     gap: 16,
-                                                    children: [(0, r.jsx)(f.A, {
-                                                        image: s.discoverySplash,
-                                                        makeURL: e => b.Ay.getGuildDiscoverySplashURL({
-                                                            id: s.id,
+                                                    children: [(0, i.jsx)(h.A, {
+                                                        image: t.discoverySplash,
+                                                        makeURL: e => A.Ay.getGuildDiscoverySplashURL({
+                                                            id: t.id,
                                                             splash: e,
-                                                            size: 512 * (0, m.mZ)()
+                                                            size: 512 * (0, g.mZ)()
                                                         }),
-                                                        disabled: !P,
-                                                        onChange: K,
-                                                        hint: N.intl.string(N.t.uPvxqJ),
-                                                        imageClassName: S.$U,
+                                                        disabled: !R,
+                                                        onChange: V,
+                                                        hint: I.intl.string(I.t.uPvxqJ),
+                                                        imageClassName: v.$U,
                                                         hideSize: !0
-                                                    }), (0, r.jsxs)(a.$n, {
+                                                    }), (0, i.jsxs)(a.$n, {
                                                         size: a.$n.Sizes.SMALL,
                                                         color: a.$n.Colors.PRIMARY,
-                                                        children: [N.intl.string(N.t.yG2pUi), (0, r.jsx)(p.Ay, {
-                                                            disabled: !P,
-                                                            onChange: K
+                                                        children: [I.intl.string(I.t.yG2pUi), (0, i.jsx)(x.Ay, {
+                                                            disabled: !R,
+                                                            onChange: V
                                                         })]
                                                     })]
                                                 })
                                             })
-                                        })(), (0, r.jsx)(o.cGx, {}), (0, r.jsx)(o.fs1, {
-                                            label: N.intl.string(N.t["RSfm+i"]),
-                                            description: N.intl.string(N.t.IBi6hz),
-                                            value: null !== s.description ? s.description : "",
-                                            placeholder: N.intl.string(N.t.rFa9Ui),
+                                        })(), (0, i.jsx)(o.cGx, {}), (0, i.jsx)(o.fs1, {
+                                            label: I.intl.string(I.t["RSfm+i"]),
+                                            description: I.intl.string(I.t.IBi6hz),
+                                            value: null !== t.description ? t.description : "",
+                                            placeholder: I.intl.string(I.t.rFa9Ui),
                                             onChange: e => {
-                                                var t;
-                                                j.A.updateGuild({
-                                                    description: null != (t = null == e ? void 0 : e.replaceAll("\n", "")) ? t : ""
+                                                f.A.updateGuild({
+                                                    description: e?.replaceAll("\n", "") ?? ""
                                                 })
                                             },
                                             maxLength: 300,
-                                            disabled: !P
-                                        }), (0, r.jsx)(o.cGx, {}), (() => {
-                                            if (null == R) return null;
-                                            let e = 0 === R.reasonsToJoin.length ? [, , , , ].fill({
+                                            disabled: !R
+                                        }), (0, i.jsx)(o.cGx, {}), (() => {
+                                            if (null == G) return null;
+                                            let e = 0 === G.reasonsToJoin.length ? [, , , , ].fill({
                                                 reason: "",
                                                 emoji_name: null
-                                            }) : R.reasonsToJoin;
-                                            return (0, r.jsx)(o.D0$, {
-                                                label: N.intl.string(N.t.vUmXsR),
-                                                description: N.intl.string(N.t.esnBnW),
-                                                errorMessage: (null == V ? void 0 : V.reasons_to_join) != null ? V.reasons_to_join : void 0,
-                                                children: (0, r.jsx)(y.A, {
+                                            }) : G.reasonsToJoin;
+                                            return (0, i.jsx)(o.D0$, {
+                                                label: I.intl.string(I.t.vUmXsR),
+                                                description: I.intl.string(I.t.esnBnW),
+                                                errorMessage: H?.reasons_to_join != null ? H.reasons_to_join : void 0,
+                                                children: (0, i.jsx)(b.A, {
                                                     reasonMinLength: 10,
                                                     reasonMaxLength: 128,
-                                                    guildId: s.id,
+                                                    guildId: t.id,
                                                     reasons: e
                                                 })
                                             })
-                                        })(), (0, r.jsx)(o.cGx, {}), (0, r.jsx)(o.fs1, {
-                                            label: N.intl.string(N.t["lu+BmJ"]),
-                                            description: N.intl.string(N.t.ozSi8g),
-                                            error: (null == V ? void 0 : V.about) != null ? V.about : void 0,
+                                        })(), (0, i.jsx)(o.cGx, {}), (0, i.jsx)(o.fs1, {
+                                            label: I.intl.string(I.t["lu+BmJ"]),
+                                            description: I.intl.string(I.t.ozSi8g),
+                                            error: H?.about != null ? H.about : void 0,
                                             showCharacterCount: !0,
                                             rows: 10,
-                                            value: R.about,
-                                            placeholder: N.intl.string(N.t.TduTbs),
+                                            value: G.about,
+                                            placeholder: I.intl.string(I.t.TduTbs),
                                             onChange: e => {
-                                                (0, g.xN)(s.id, e)
+                                                (0, m.xN)(t.id, e)
                                             },
                                             minLength: 300,
                                             maxLength: 2400,
-                                            disabled: !P,
-                                            defaultDirty: (null == (e = R.about) ? void 0 : e.length) > 0
-                                        }, "text-area-".concat(w)), (0, r.jsx)(o.cGx, {}), (0, r.jsxs)(o.D0$, {
-                                            label: N.intl.string(N.t.V5mNyb),
-                                            description: N.intl.string(N.t.d3kA9a),
-                                            errorMessage: (null == V ? void 0 : V.social_links) != null ? V.social_links : void 0,
-                                            children: [R.socialLinks.map((e, t) => {
-                                                var n;
-                                                let i, l = F[t],
-                                                    a = Object.values(A.x).find(e => e.presentation === l),
-                                                    c = null != a ? "".concat(a.baseUrl) : void 0;
-                                                return (0, r.jsxs)("div", {
-                                                    className: S.Au,
-                                                    onMouseOver: () => X(t, !0),
-                                                    onFocus: () => X(t, !0),
-                                                    onMouseOut: () => X(t, !1),
-                                                    onBlur: () => X(t, !1),
-                                                    children: [(0, r.jsx)(o.l6P, {
+                                            disabled: !R,
+                                            defaultDirty: G.about?.length > 0
+                                        }, `text-area-${O}`), (0, i.jsx)(o.cGx, {}), (0, i.jsxs)(o.D0$, {
+                                            label: I.intl.string(I.t.V5mNyb),
+                                            description: I.intl.string(I.t.d3kA9a),
+                                            errorMessage: H?.social_links != null ? H.social_links : void 0,
+                                            children: [G.socialLinks.map((e, n) => {
+                                                var s;
+                                                let l, r = B[n],
+                                                    a = Object.values(T.x).find(e => e.presentation === r),
+                                                    d = null != a ? `${a.baseUrl}` : void 0;
+                                                return (0, i.jsxs)("div", {
+                                                    className: v.Au,
+                                                    onMouseOver: () => K(n, !0),
+                                                    onFocus: () => K(n, !0),
+                                                    onMouseOut: () => K(n, !1),
+                                                    onBlur: () => K(n, !1),
+                                                    children: [(0, i.jsx)(o.l6P, {
                                                         selectionMode: "single",
-                                                        options: (n = F[t], i = Object.entries(A.x).filter(e => !F.includes(e[1].presentation)).map(e => ({
+                                                        options: (s = B[n], l = Object.entries(T.x).filter(e => !B.includes(e[1].presentation)).map(e => ({
                                                             id: e[0],
                                                             label: e[1].presentation,
                                                             value: e[0]
-                                                        })), null == n || "" === n ? i : i.concat({
-                                                            id: n,
-                                                            label: n,
-                                                            value: n
+                                                        })), null == s || "" === s ? l : l.concat({
+                                                            id: s,
+                                                            label: s,
+                                                            value: s
                                                         })),
-                                                        label: N.intl.string(N.t.xSALIK),
+                                                        label: I.intl.string(I.t.xSALIK),
                                                         hideLabel: !0,
-                                                        placeholder: N.intl.string(N.t.xSALIK),
-                                                        value: F[t],
+                                                        placeholder: I.intl.string(I.t.xSALIK),
+                                                        value: B[n],
                                                         onSelectionChange: e => {
-                                                            let n, r, i;
-                                                            return n = [...R.socialLinks], r = [...F], i = [...G], void(r[t] = e, n[t] = A.x[e].baseUrl, i[t] = !0, L(i), H(r), M(i.every(e => !0 === e)), (0, g.uh)(s.id, n))
+                                                            let i, s, l;
+                                                            return i = [...G.socialLinks], s = [...B], l = [...D], void(s[n] = e, i[n] = T.x[e].baseUrl, l[n] = !0, M(l), F(s), U(l.every(e => !0 === e)), (0, m.uh)(t.id, i))
                                                         },
-                                                        disabled: !P
-                                                    }), (0, r.jsx)(o.ksK, {
-                                                        value: e.replace(null != c ? c : "", ""),
+                                                        disabled: !R
+                                                    }), (0, i.jsx)(o.ksK, {
+                                                        value: e.replace(d ?? "", ""),
                                                         onChange: e => {
-                                                            var n;
-                                                            let r, i, l;
-                                                            return n = "".concat(c).concat(e), i = (r = [...R.socialLinks])[t], l = n, 0 === i.length && l.length > 1 && !1 === RegExp("^https?:").test(l) && (l = "https://" + l), void(!/\.(zip|exe|pdf|dmg|msi|apk|rar|7z|tar|gz|iso|docx?|xlsx?|pptx?|mp4|mp3)$/i.test(l) && (r[t] = l, (0, g.uh)(s.id, r)))
+                                                            var i;
+                                                            let s, l, r;
+                                                            return i = `${d}${e}`, l = (s = [...G.socialLinks])[n], r = i, 0 === l.length && r.length > 1 && !1 === RegExp("^https?:").test(r) && (r = "https://" + r), void(!/\.(zip|exe|pdf|dmg|msi|apk|rar|7z|tar|gz|iso|docx?|xlsx?|pptx?|mp4|mp3)$/i.test(r) && (s[n] = r, (0, m.uh)(t.id, s)))
                                                         },
-                                                        placeholder: null != c ? void 0 : N.intl.string(N.t.Q6o4pJ),
+                                                        placeholder: null != d ? void 0 : I.intl.string(I.t.Q6o4pJ),
                                                         maxLength: 150,
-                                                        disabled: !P || null == F[t],
+                                                        disabled: !R || null == B[n],
                                                         fullWidth: !0,
-                                                        leading: c,
-                                                        trailing: P ? {
+                                                        leading: d,
+                                                        trailing: R ? {
                                                             icon: o.ucK,
-                                                            "aria-label": N.intl.string(N.t.N86XcP),
+                                                            "aria-label": I.intl.string(I.t.N86XcP),
                                                             onClick: () => {
-                                                                let e, n, r, i;
-                                                                return (e = [...U]).splice(t, 1), B(e), (n = [...G]).splice(t, 1), L(n), (r = [...F]).splice(t, 1), H(r), void((i = [...R.socialLinks]).splice(t, 1), (0, g.uh)(s.id, i))
+                                                                let e, i, s, l;
+                                                                return (e = [...P]).splice(n, 1), w(e), (i = [...D]).splice(n, 1), M(i), (s = [...B]).splice(n, 1), F(s), void((l = [...G.socialLinks]).splice(n, 1), (0, m.uh)(t.id, l))
                                                             }
                                                         } : void 0
                                                     })]
-                                                }, "social-container-" + t)
-                                            }), (null == V ? void 0 : V.social_links) != null ? (0, r.jsx)(o.Text, {
+                                                }, "social-container-" + n)
+                                            }), H?.social_links != null ? (0, i.jsx)(o.Text, {
                                                 color: "text-feedback-critical",
                                                 variant: "text-sm/normal",
-                                                children: V.social_links
-                                            }) : null, (0, r.jsx)(o.Button, {
+                                                children: H.social_links
+                                            }) : null, (0, i.jsx)(o.Button, {
                                                 variant: "secondary",
                                                 size: "sm",
-                                                text: N.intl.string(N.t.Qvovjc),
+                                                text: I.intl.string(I.t.Qvovjc),
                                                 onClick: () => {
-                                                    if (R.socialLinks.length < 9) {
-                                                        let e = [...R.socialLinks];
-                                                        (0, g.uh)(s.id, e.concat("")), H(F.concat(""))
+                                                    if (G.socialLinks.length < 9) {
+                                                        let e = [...G.socialLinks];
+                                                        (0, m.uh)(t.id, e.concat("")), F(B.concat(""))
                                                     }
                                                 },
-                                                disabled: !P || R.socialLinks.length >= 9
+                                                disabled: !R || G.socialLinks.length >= 9
                                             })]
-                                        }), R.isPublished && (0, r.jsxs)(r.Fragment, {
-                                            children: [(0, r.jsx)(o.cGx, {}), (0, r.jsx)(o.D0$, {
-                                                label: N.intl.string(N.t["5yF7e1"]),
-                                                description: N.intl.string(N.t.eOFvqT),
-                                                children: (0, r.jsx)(o.Button, {
+                                        }), G.isPublished && (0, i.jsxs)(i.Fragment, {
+                                            children: [(0, i.jsx)(o.cGx, {}), (0, i.jsx)(o.D0$, {
+                                                label: I.intl.string(I.t["5yF7e1"]),
+                                                description: I.intl.string(I.t.eOFvqT),
+                                                children: (0, i.jsx)(o.Button, {
                                                     variant: "critical-primary",
                                                     size: "sm",
-                                                    text: N.intl.string(N.t["DCHd/G"]),
+                                                    text: I.intl.string(I.t["DCHd/G"]),
                                                     onClick: () => z(!1),
-                                                    disabled: !P
+                                                    disabled: !R
                                                 })
                                             })]
-                                        }), (null == V ? void 0 : V.is_published) != null ? (0, r.jsx)(o.Text, {
+                                        }), H?.is_published != null ? (0, i.jsx)(o.Text, {
                                             color: "text-feedback-critical",
                                             variant: "text-sm/normal",
-                                            children: V.is_published
+                                            children: H.is_published
                                         }) : null]
                                     })]
-                                }), !R.isPublished && (0, r.jsx)("div", {
-                                    className: S.D4,
-                                    children: (0, r.jsx)(u.A, {
-                                        title: N.intl.string(N.t["2kCyn/"]),
+                                }), !G.isPublished && (0, i.jsx)("div", {
+                                    className: v.D4,
+                                    children: (0, i.jsx)(u.A, {
+                                        title: I.intl.string(I.t["2kCyn/"]),
                                         children: Y,
-                                        buttonLabel: N.intl.string(N.t.tVK6S9),
+                                        buttonLabel: I.intl.string(I.t.tVK6S9),
                                         buttonCallback: () => z(!0),
-                                        disabled: !P || !k
+                                        disabled: !R || !k
                                     })
                                 })]
                             })
@@ -424,4 +421,4 @@ let I = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
             })
         })
     },
-    P = () => null == (0, l.bG)([_.A], () => _.A.getGuild()) ? null : (0, r.jsx)(T, {})
+    O = () => null == (0, l.bG)([j.A], () => j.A.getGuild()) ? null : (0, i.jsx)(R, {})

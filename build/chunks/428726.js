@@ -1,11 +1,11 @@
 /** chunk id: 428726, original params: t,e,n (module,exports,require) **/
 n.d(e, {
     default: () => o
-}), n(896048);
+});
 var i = n(627968),
     a = n(64700),
-    r = n(189213),
-    s = n(397927),
+    s = n(189213),
+    r = n(397927),
     l = n(917136),
     u = n(985018);
 
@@ -26,15 +26,12 @@ function o(t) {
         }
     }
     return a.useEffect(() => {
-        if (e === s.ip4.ENTERED) {
-            var t;
-            null == (t = E.current) || t.focus()
-        }
-    }, [e]), (0, i.jsx)(r.Modal, {
+        e === r.ip4.ENTERED && E.current?.focus()
+    }, [e]), (0, i.jsx)(s.Modal, {
         transitionState: e,
         title: u.intl.string(u.t.YjuMsf),
         onClose: n,
-        input: (0, i.jsx)(s.ksK, {
+        input: (0, i.jsx)(r.ksK, {
             label: u.intl.string(u.t["7yEgJY"]),
             inputRef: E,
             "aria-label": u.intl.string(u.t["7yEgJY"]),

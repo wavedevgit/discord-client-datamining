@@ -1,72 +1,72 @@
-/** chunk id: 475356, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => g
+/** chunk id: 475356, original params: e,t,a (module,exports,require) **/
+a.d(t, {
+    A: () => _
 });
-var r = n(627968);
-n(64700);
-var l = n(503698),
-    i = n.n(l),
-    a = n(158954),
-    s = n(273423),
-    o = n(973172),
-    c = n(854788),
-    d = n(379581),
-    u = n(379574),
-    p = n(559607),
-    h = n(985018),
-    m = n(534114);
+var n = a(627968);
+a(64700);
+var i = a(503698),
+    s = a.n(i),
+    l = a(158954),
+    r = a(273423),
+    o = a(973172),
+    c = a(854788),
+    d = a(379581),
+    u = a(379574),
+    h = a(559607),
+    m = a(985018),
+    p = a(534114);
 
-function g(e) {
+function _(e) {
     let {
         className: t,
-        view: n,
-        application: l
-    } = e, g = "embedded" === n, _ = (0, o.A)({
-        application: l
+        view: a,
+        application: i
+    } = e, _ = "embedded" === a, g = (0, o.A)({
+        application: i
     });
-    return (0, r.jsxs)("div", {
-        className: i()(t, {
-            [m.PD]: !g,
-            [m.UT]: g
+    return (0, n.jsxs)("div", {
+        className: s()(t, {
+            [p.PD]: !_,
+            [p.UT]: _
         }),
-        children: [(0, r.jsxs)("div", {
-            className: i()(m.hd, {
-                [m.d5]: g
+        children: [(0, n.jsxs)("div", {
+            className: s()(p.hd, {
+                [p.d5]: _
             }),
-            children: [(0, r.jsx)("div", {
-                className: m.iY,
-                children: (0, r.jsx)(s.A, {
-                    application: l,
-                    mutualGuilds: _,
+            children: [(0, n.jsx)("div", {
+                className: p.iY,
+                children: (0, n.jsx)(r.A, {
+                    application: i,
+                    mutualGuilds: g,
                     mutualGuildShownMax: 3,
-                    className: m.wu,
-                    guildIconSize: s.I.SMALL,
-                    guildsClassName: m.HG,
+                    className: p.wu,
+                    guildIconSize: r.I.SMALL,
+                    guildsClassName: p.HG,
                     compact: !0,
-                    children: (0, r.jsx)(a.DZT, {
+                    children: (0, n.jsx)(l.DZT, {
                         variant: "heading-sm/semibold",
                         color: "text-strong",
-                        children: h.intl.string(h.t["3NxHC4"])
+                        children: m.intl.string(m.t["3NxHC4"])
                     })
                 })
-            }), (0, r.jsx)(c.A, {
-                application: l,
-                className: m.iY
-            }), (0, r.jsx)(p.A, {
-                application: l,
-                className: m.iY
+            }), (0, n.jsx)(c.A, {
+                application: i,
+                className: p.iY
+            }), (0, n.jsx)(h.A, {
+                application: i,
+                className: p.iY
             })]
-        }), (0, r.jsxs)("div", {
-            className: i()(m.hd, {
-                [m.d5]: g
+        }), (0, n.jsxs)("div", {
+            className: s()(p.hd, {
+                [p.d5]: _
             }),
-            children: [(0, r.jsx)(d.A, {
-                application: l,
-                className: m.iY,
-                innerClassName: g ? m.RU : void 0
-            }), (0, r.jsx)(u.A, {
-                application: l,
-                className: m.iY
+            children: [(0, n.jsx)(d.A, {
+                application: i,
+                className: p.iY,
+                innerClassName: _ ? p.RU : void 0
+            }), (0, n.jsx)(u.A, {
+                application: i,
+                className: p.iY
             })]
         })]
     })

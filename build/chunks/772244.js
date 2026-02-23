@@ -1,18 +1,15 @@
 /** chunk id: 772244, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    OY: () => o,
-    Ry: () => s,
-    qV: () => d
-}), n(896048);
+    R: () => s,
+    q: () => r
+});
 var a = n(64700),
-    l = n(397927),
-    r = n(736653),
-    i = n(890687);
+    i = n(397927);
 
 function s() {
     let [{
         spring: e
-    }, t] = (0, l.zhh)(() => ({
+    }, t] = (0, i.zhh)(() => ({
         spring: 0
     }), "animate-always");
     return {
@@ -27,38 +24,25 @@ function s() {
         }, [t])
     }
 }
-
-function o(e, t) {
-    var n;
-    let a = (0, i.Vn)(e),
-        l = null != (n = (0, r.xv)()) ? n : 0,
-        s = "var(--green-330)",
-        o = ["var(--background-base-lowest)", "var(--interactive-text-default)"];
-    return {
-        backgroundTop: t ? o[l] : ["#828288", "#CBCDD4"][l],
-        backgroundBottom: t ? o[l] : ["#535356", "#8B8C95"][l],
-        foreground: s,
-        glow: t && a ? s : "#C4C1D66E"
-    }
-}
-let c = () => {
+n(272111);
+let l = () => {
     let e = document.body.style.getPropertyValue("--custom-guild-sidebar-width").slice(0, -2);
     return parseInt("" !== e ? e : "375")
 };
 
-function d() {
+function r() {
     return {
         label: ! function() {
-            let [e, t] = a.useState(() => 270 > c());
+            let [e, t] = a.useState(() => 270 > l());
             return a.useEffect(() => {
                 let e = new MutationObserver(() => {
-                    t(270 > c())
+                    t(270 > l())
                 });
                 return e.observe(document.body, {
                     attributes: !0,
                     attributeFilter: ["style"]
                 }), () => e.disconnect()
-            }, [270]), e
+            }, []), e
         }()
     }
 }

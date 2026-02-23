@@ -1,71 +1,71 @@
-/** chunk id: 386404, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => y
-}), n(896048);
-var r = n(627968),
-    l = n(64700),
-    i = n(91871),
-    o = n.n(i),
-    a = n(111956),
-    s = n.n(a),
-    c = n(33851),
-    u = n.n(c),
-    d = n(417597),
-    C = n(397927),
-    m = n(57222),
-    p = n(504049),
-    f = n(266047),
-    b = n(221950),
-    j = n(950072),
-    g = n(985018),
-    h = n(246542);
-let x = new Set;
+/** chunk id: 386404, original params: e,t,l (module,exports,require) **/
+l.d(t, {
+    A: () => j
+});
+var n = l(627968),
+    i = l(64700),
+    a = l(91871),
+    s = l.n(a),
+    r = l(111956),
+    o = l.n(r),
+    C = l(33851),
+    d = l.n(C),
+    c = l(417597),
+    u = l(397927),
+    m = l(57222),
+    x = l(504049),
+    h = l(266047),
+    g = l(221950),
+    _ = l(950072),
+    H = l(985018),
+    p = l(246542);
+let f = new Set;
 
-function y(e) {
+function j(e) {
     let {
         guildId: t
-    } = e, n = (0, p.hs)(t), i = (0, d.bG)([f.A], () => f.A.getSearchStateByGuildId(t), [t], u()), [a, c] = l.useState(i.selectedRoleIds), y = (0, m.H)(t, x, !0), O = l.useCallback(e => {
-        (0, b.Ld)(t, {
+    } = e, l = (0, x.hs)(t), a = (0, c.bG)([h.A], () => h.A.getSearchStateByGuildId(t), [t], d()), [r, C] = i.useState(a.selectedRoleIds), j = (0, m.H)(t, f, !0), b = i.useCallback(e => {
+        (0, g.Ld)(t, {
             selectedRoleIds: e
-        }), n(e)
-    }, [t, n]), v = l.useMemo(() => s()(O, 300), [O]), _ = l.useCallback(e => {
-        let t = new Set(null != e ? e : []);
-        c(t), v(t)
-    }, [v]), H = l.useCallback(e => {
+        }), l(e)
+    }, [t, l]), v = i.useMemo(() => o()(b, 300), [b]), A = i.useCallback(e => {
+        let t = new Set(e ?? []);
+        C(t), v(t)
+    }, [v]), N = i.useCallback(e => {
         let {
-            record: n
+            record: l
         } = e;
         return {
-            id: n.id,
-            value: n.id,
-            label: n.name,
-            leading: (0, r.jsx)(j.C, {
-                role: n,
+            id: l.id,
+            value: l.id,
+            label: l.name,
+            leading: (0, n.jsx)(_.C, {
+                role: l,
                 guildId: t
-            }, n.id)
+            }, l.id)
         }
-    }, [t]), w = l.useCallback((e, t) => {
-        let n = new Map(y.map(e => [e.record.id, e]));
+    }, [t]), L = i.useCallback((e, t) => {
+        let l = new Map(j.map(e => [e.record.id, e]));
         return e.filter(e => {
-            let r = n.get(e.value);
-            if (null == r) return !1;
+            let n = l.get(e.value);
+            if (null == n) return !1;
             let {
-                record: l
-            } = r;
-            return o()(t.toLowerCase(), l.name.toLowerCase())
+                record: i
+            } = n;
+            return s()(t.toLowerCase(), i.name.toLowerCase())
         })
-    }, [y]);
-    return (0, r.jsx)("div", {
-        className: h.qm,
-        children: (0, r.jsx)(C.ZiE, {
-            label: g.intl.string(g.t.ZveC7e),
+    }, [j]);
+    return (0, n.jsx)("div", {
+        className: p.qm,
+        children: (0, n.jsx)(u.ZiE, {
+            label: H.intl.string(H.t.ZveC7e),
             hideLabel: !0,
-            placeholder: g.intl.string(g.t.ZveC7e),
-            value: Array.from(a),
-            onSelectionChange: _,
-            options: y,
-            formatOption: H,
-            customMatchSorter: w,
+            placeholder: H.intl.string(H.t.ZveC7e),
+            value: Array.from(r),
+            onSelectionChange: A,
+            options: j,
+            formatOption: N,
+            customMatchSorter: L,
             selectionMode: "multiple",
             autoFocus: !0,
             closeOnSelect: !1,

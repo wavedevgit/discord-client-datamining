@@ -1,27 +1,26 @@
 /** chunk id: 82038, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    c: () => A
-}), n(896048), n(747238);
-var r = n(621466),
-    i = n(158954),
-    l = n(775602),
+    c: () => I
+});
+var i = n(621466),
+    r = n(158954),
+    a = n(775602),
     s = n(186111),
-    a = n(430452),
+    l = n(430452),
     o = n(383501),
-    c = n(203982),
-    d = n(350535),
-    u = n(652215);
-let _ = new Set(["PageDown", "PageUp", "Home", "End", "ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"]),
-    p = new Set(["Alt", "AltGraph", "CapsLock", "Control", "Fn", "FnLock", "Hyper", "Meta", "NumLock", "OS", "ScrollLock", "Shift", "Super", "Symbol", "SymbolLock"]),
-    m = new Set(["F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10", "F11", "F12", "F13", "F14", "F15", "F16", "F17", "F18", "F19", "F20", "Accept", "ContextMenu", "Find", "ZoomIn", "ZoomOut"]),
-    g = new Set(["ChannelDown", "ChannelUp", "MediaFastForward", "MediaPause", "MediaPlay", "MediaPlayPause", "MediaRecord", "MediaRewind", "MediaStop", "MediaTrackNext", "MediaTrackPrevious", "AudioBalanceLeft", "AudioBalanceRight", "AudioBassDown", "AudioBassBoostDown", "AudioBassBoostToggle", "AudioBassBoostUp", "AudioBassUp", "AudioFaderFront", "AudioFaderReader", "AudioSurroundModeNext", "AudioTrebleDown", "AudioTreblUp", "AudioVolumeDown", "AudioVolumeMute", "AudioVolumeUp", "VolumeUp", "VolumeDown", "VolumeMute"]),
-    A = {
+    d = n(203982),
+    _ = n(350535),
+    c = n(652215);
+let u = new Set(["PageDown", "PageUp", "Home", "End", "ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"]),
+    A = new Set(["Alt", "AltGraph", "CapsLock", "Control", "Fn", "FnLock", "Hyper", "Meta", "NumLock", "OS", "ScrollLock", "Shift", "Super", "Symbol", "SymbolLock"]),
+    g = new Set(["F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10", "F11", "F12", "F13", "F14", "F15", "F16", "F17", "F18", "F19", "F20", "Accept", "ContextMenu", "Find", "ZoomIn", "ZoomOut"]),
+    E = new Set(["ChannelDown", "ChannelUp", "MediaFastForward", "MediaPause", "MediaPlay", "MediaPlayPause", "MediaRecord", "MediaRewind", "MediaStop", "MediaTrackNext", "MediaTrackPrevious", "AudioBalanceLeft", "AudioBalanceRight", "AudioBassDown", "AudioBassBoostDown", "AudioBassBoostToggle", "AudioBassBoostUp", "AudioBassUp", "AudioFaderFront", "AudioFaderReader", "AudioSurroundModeNext", "AudioTrebleDown", "AudioTreblUp", "AudioVolumeDown", "AudioVolumeMute", "AudioVolumeUp", "VolumeUp", "VolumeDown", "VolumeMute"]),
+    I = {
         binds: ["any-character"],
         keydown(e, t) {
-            var n;
-            let A = null == (n = (0, r.BF)(e)) ? void 0 : n.activeElement;
-            if ((0, r.Cw)(A) || i.rxt.isActive() || p.has(t) || m.has(t) || g.has(t)) return !1;
-            let f = null != A && "BODY" === A.tagName;
-            return !(l.A.keyboardModeEnabled && !f && !/^[a-zA-Z0-9]$/.test(t) || c._.hasSubscribers(u.jej.MODAL_CLOSE) || s.A.hasLayers()) && ("Tab" === t && c._.hasSubscribers(u.jej.TEXTAREA_FOCUS) && null != document.querySelector('[data-can-focus="true"]') ? (e.preventDefault(), c._.dispatch(u.jej.TEXTAREA_FOCUS), !1) : !(o.A.isConnected() && a.A.getMode() === u.TBI.PUSH_TO_TALK && !a.A.isSelfMute() && Object.values(a.A.getShortcuts()).map(d.pi).some(t => t.map(e => e.keyCode).includes(e.keyCode))) && void(!e.metaKey && !e.ctrlKey && !_.has(t) && c._.dispatchToLastSubscribed(u.jej.TEXTAREA_FOCUS)))
+            let n = (0, i.BF)(e)?.activeElement;
+            if ((0, i.Cw)(n) || r.rxt.isActive() || A.has(t) || g.has(t) || E.has(t)) return !1;
+            let I = null != n && "BODY" === n.tagName;
+            return !(a.A.keyboardModeEnabled && !I && !/^[a-zA-Z0-9]$/.test(t) || d._.hasSubscribers(c.jej.MODAL_CLOSE) || s.A.hasLayers()) && ("Tab" === t && d._.hasSubscribers(c.jej.TEXTAREA_FOCUS) && null != document.querySelector('[data-can-focus="true"]') ? (e.preventDefault(), d._.dispatch(c.jej.TEXTAREA_FOCUS), !1) : !(o.A.isConnected() && l.Ay.getMode() === c.TBI.PUSH_TO_TALK && !l.Ay.isSelfMute() && Object.values(l.Ay.getShortcuts()).map(_.pi).some(t => t.map(e => e.keyCode).includes(e.keyCode))) && void(!e.metaKey && !e.ctrlKey && !u.has(t) && d._.dispatchToLastSubscribed(c.jej.TEXTAREA_FOCUS)))
         }
     }

@@ -1,79 +1,76 @@
 /** chunk id: 860227, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    CJ: () => o,
-    JH: () => u,
-    XL: () => d,
-    ZD: () => p,
-    d$: () => l,
-    fF: () => f,
+    CJ: () => l,
+    JH: () => d,
+    XL: () => u,
+    ZD: () => m,
+    d$: () => o,
+    fF: () => _,
     nS: () => s,
     xl: () => c
-}), n(733351);
-var r = n(264927),
+});
+var a = n(264927),
     i = n(143413),
-    a = n(652215);
+    r = n(652215);
 
-function o(e) {
-    return "message-content-".concat(e.id)
+function l(e) {
+    return `message-content-${e.id}`
 }
 
 function s(e) {
-    return "message-reply-context-".concat(e.id)
+    return `message-reply-context-${e.id}`
 }
 
-function l(e, t) {
-    let n = null != t ? t : e.id;
-    return "message-username-".concat(n)
+function o(e, t) {
+    let n = t ?? e.id;
+    return `message-username-${n}`
 }
 
 function c(e) {
-    return "message-timestamp-".concat(e.id)
-}
-
-function u(e) {
-    return "message-reactions-".concat(e.id)
+    return `message-timestamp-${e.id}`
 }
 
 function d(e) {
-    return "message-accessories-".concat(e.id)
+    return `message-reactions-${e.id}`
 }
 
-function f(e, t, n) {
-    let u = e.type === a.lAJ.REPLY && null != e.messageReference,
-        f = e.embeds.length > 0,
-        p = e.attachments.length > 0,
-        _ = e.stickerItems.length > 0,
-        h = e.codedLinks.length > 0,
-        m = e.components.length > 0,
-        g = e.hasFlag(a.pr7.HAS_THREAD),
-        E = f || p || _ || h || g || m || e.type === a.lAJ.THREAD_CREATED,
-        y = f && e.content === e.embeds[0].url && e.embeds[0].type === a.Auw.GIFV,
-        b = e.type !== a.lAJ.DEFAULT || !y && "" !== e.content,
-        O = (0, i.A)(e),
-        v = !O && (null == n ? void 0 : n.hasTimestamp) !== !1,
-        A = !O,
-        I = l(e, t),
-        S = s(e),
-        T = u ? S : I,
-        C = A ? "".concat(T, " ").concat(r.lW) : "";
-    if (b) {
-        let t = o(e);
-        C += " ".concat(t)
+function u(e) {
+    return `message-accessories-${e.id}`
+}
+
+function _(e, t, n) {
+    let d = e.type === r.lAJ.REPLY && null != e.messageReference,
+        _ = e.embeds.length > 0,
+        m = e.attachments.length > 0,
+        p = e.stickerItems.length > 0,
+        f = e.codedLinks.length > 0,
+        b = e.components.length > 0,
+        h = e.hasFlag(r.pr7.HAS_THREAD),
+        g = _ || m || p || f || h || b || e.type === r.lAJ.THREAD_CREATED,
+        A = _ && e.content === e.embeds[0].url && e.embeds[0].type === r.Auw.GIFV,
+        T = e.type !== r.lAJ.DEFAULT || !A && "" !== e.content,
+        x = (0, i.A)(e),
+        I = !x && n?.hasTimestamp !== !1,
+        C = o(e, t),
+        E = s(e),
+        S = x ? "" : `${d?E:C} ${a.lW}`;
+    if (T) {
+        let t = l(e);
+        S += ` ${t}`
     }
-    if (E) {
-        let t = d(e);
-        C += " ".concat(t)
+    if (g) {
+        let t = u(e);
+        S += ` ${t}`
     }
-    if (v) {
+    if (I) {
         let t = c(e);
-        C += " ".concat(r.l6, " ").concat(t)
+        S += ` ${a.l6} ${t}`
     }
-    return C.trim()
+    return S.trim()
 }
 
-function p(e) {
+function m(e) {
     if (0 === e.reactions.length) return;
-    let t = u(e);
-    return "".concat(r.oz, " ").concat(t)
+    let t = d(e);
+    return `${a.oz} ${t}`
 }

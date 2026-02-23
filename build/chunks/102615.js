@@ -1,32 +1,32 @@
 /** chunk id: 102615, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => m
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(397927),
-    l = n(502060),
-    s = n(772927),
-    a = n(983806),
+var s = n(397927),
+    a = n(502060),
+    r = n(772927),
+    l = n(983806),
     o = n(683167),
     c = n(351104),
     d = n(46184),
     u = n(901794),
     _ = n(985018);
-let p = () => (0, r.jsxs)(i.BJc, {
+let m = () => (0, i.jsxs)(s.BJc, {
     gap: 32,
-    children: [(0, r.jsx)(a.b, {}), (0, r.jsxs)("div", {
-        children: [(0, r.jsx)(l.G, {
+    children: [(0, i.jsx)(l.b, {}), (0, i.jsxs)("div", {
+        children: [(0, i.jsx)(a.G, {
             title: _.intl.string(_.t.xVRG4P),
-            children: (0, r.jsx)(u.f, {})
-        }), (0, r.jsx)(l.G, {
+            children: (0, i.jsx)(u.f, {})
+        }), (0, i.jsx)(a.G, {
             title: _.intl.string(_.t["y62Z/d"]),
-            children: (0, r.jsxs)(s.A, {
-                children: [(0, r.jsx)(o.A, {}), (0, r.jsx)(c.Z, {})]
+            children: (0, i.jsxs)(r.A, {
+                children: [(0, i.jsx)(o.A, {}), (0, i.jsx)(c.Z, {})]
             })
-        }), (0, r.jsx)(l.G, {
+        }), (0, i.jsx)(a.G, {
             title: _.intl.string(_.t["1Qn8iV"]),
-            children: (0, r.jsx)(d.A, {})
+            children: (0, i.jsx)(d.A, {})
         })]
     })]
 })

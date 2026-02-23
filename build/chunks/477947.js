@@ -1,77 +1,97 @@
 /** chunk id: 477947, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => s
+    A: () => r
 });
-var r = n(403362),
-    i = n(743981),
+var i = n(403362),
+    s = n(743981),
     l = n(985018);
 
-function s(e) {
+function r(e) {
     switch (e) {
-        case i.bl.SWORD:
+        case s.bl.SWORD:
             return l.intl.string(l.t["+4RpVO"]);
-        case i.bl.WATER_DROP:
+        case s.bl.WATER_DROP:
             return l.intl.string(l.t["08tAb0"]);
-        case i.bl.SKULL:
+        case s.bl.SKULL:
             return l.intl.string(l.t["0opW02"]);
-        case i.bl.TOADSTOOL:
+        case s.bl.TOADSTOOL:
             return l.intl.string(l.t.M90TUl);
-        case i.bl.MOON:
+        case s.bl.MOON:
             return l.intl.string(l.t.G8H5XZ);
-        case i.bl.LIGHTNING:
+        case s.bl.LIGHTNING:
             return l.intl.string(l.t.hcPaJA);
-        case i.bl.LEAF:
+        case s.bl.LEAF:
             return l.intl.string(l.t.Zg3hHZ);
-        case i.bl.HEART:
+        case s.bl.HEART:
             return l.intl.string(l.t.WjcnZD);
-        case i.bl.FIRE:
+        case s.bl.FIRE:
             return l.intl.string(l.t.OLVr2Z);
-        case i.bl.COMPASS:
+        case s.bl.COMPASS:
             return l.intl.string(l.t.fSU0qj);
-        case i.bl.CROSSHAIRS:
+        case s.bl.CROSSHAIRS:
             return l.intl.string(l.t.FImC7X);
-        case i.bl.FLOWER:
+        case s.bl.FLOWER:
             return l.intl.string(l.t.Kswg0Y);
-        case i.bl.FORCE:
+        case s.bl.FORCE:
             return l.intl.string(l.t.ALJkb2);
-        case i.bl.GEM:
+        case s.bl.GEM:
             return l.intl.string(l.t.Xpb5FV);
-        case i.bl.LAVA:
+        case s.bl.LAVA:
             return l.intl.string(l.t.Q9Mv1c);
-        case i.bl.PSYCHIC:
+        case s.bl.PSYCHIC:
             return l.intl.string(l.t.qCL3jX);
-        case i.bl.SMOKE:
+        case s.bl.SMOKE:
             return l.intl.string(l.t.HWyuRl);
-        case i.bl.SNOW:
+        case s.bl.SNOW:
             return l.intl.string(l.t["YTpD+b"]);
-        case i.bl.SOUND:
+        case s.bl.SOUND:
             return l.intl.string(l.t["8MDV4p"]);
-        case i.bl.SUN:
+        case s.bl.SUN:
             return l.intl.string(l.t.q4KKjI);
-        case i.bl.WIND:
+        case s.bl.WIND:
             return l.intl.string(l.t.jTxbHc);
-        case i.bl.BUNNY:
+        case s.bl.BUNNY:
             return l.intl.string(l.t.s0jeu5);
-        case i.bl.DOG:
+        case s.bl.DOG:
             return l.intl.string(l.t.teQDPB);
-        case i.bl.FROG:
+        case s.bl.FROG:
             return l.intl.string(l.t.SAUCGD);
-        case i.bl.GOAT:
+        case s.bl.GOAT:
             return l.intl.string(l.t.Mpxtar);
-        case i.bl.CAT:
+        case s.bl.CAT:
             return l.intl.string(l.t.qCpIw3);
-        case i.bl.DIAMOND:
+        case s.bl.DIAMOND:
             return l.intl.string(l.t["zE/nMU"]);
-        case i.bl.CROWN:
+        case s.bl.CROWN:
             return l.intl.string(l.t.Rp2AbV);
-        case i.bl.TROPHY:
+        case s.bl.TROPHY:
             return l.intl.string(l.t.Jw25U0);
-        case i.bl.MONEY_BAG:
+        case s.bl.MONEY_BAG:
             return l.intl.string(l.t.s2U0Nw);
-        case i.bl.DOLLAR_SIGN:
+        case s.bl.DOLLAR_SIGN:
             return l.intl.string(l.t.AWIIQw);
+        case s.bl.CLOVER:
+            return l.intl.string(l.t.ZzsbQp);
+        case s.bl.BLOSSOM:
+            return l.intl.string(l.t.uGSJSU);
+        case s.bl.POTTED_PLANT:
+            return l.intl.string(l.t.BGZKO9);
+        case s.bl.MAPLE:
+            return l.intl.string(l.t.Rqq6To);
+        case s.bl.WILTED_FLOWER:
+            return l.intl.string(l.t.o1OjGD);
+        case s.bl.BUTTERFLY:
+            return l.intl.string(l.t["76qj8a"]);
+        case s.bl.SNAIL:
+            return l.intl.string(l.t.mFQo1S);
+        case s.bl.CATERPILLAR:
+            return l.intl.string(l.t.fTwuEi);
+        case s.bl.SPIDER:
+            return l.intl.string(l.t.TzZYZM);
+        case s.bl.BEE:
+            return l.intl.string(l.t["6euAa8"]);
         default:
-            (0, r.xb)(e)
+            (0, i.xb)(e)
     }
 }

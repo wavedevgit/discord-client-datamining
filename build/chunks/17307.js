@@ -1,84 +1,84 @@
 /** chunk id: 17307, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    G4: () => p,
-    LQ: () => m,
+    G4: () => m,
+    LQ: () => A,
     t4: () => u,
     vx: () => _
-}), n(321073), n(896048);
-var r = n(311907),
-    i = n(582754),
-    l = n(287809),
-    s = n(166403),
-    a = n(927578),
+}), n(321073);
+var i = n(311907),
+    s = n(582754),
+    a = n(287809),
+    r = n(166403),
+    l = n(927578),
     o = n(322631),
     c = n(788868),
     d = n(985018);
-let u = (e, t, n) => (0, i.Mw)(e) ? t : n,
+let u = (e, t, n) => (0, s.Mw)(e) ? t : n,
     _ = e => {
         let {
             perksCards: t,
             variant: n,
-            hideCardsOnNarrowScreen: r,
-            isPremiumSubscriber: i,
-            fractionalState: l,
-            isInReverseTrial: s,
-            recurring3PPromotionExperiment: a,
+            hideCardsOnNarrowScreen: i,
+            isPremiumSubscriber: s,
+            fractionalState: a,
+            isInReverseTrial: r,
+            recurring3PPromotionExperiment: l,
             showPremiumGroup: d,
             isPremiumGroupMember: u
         } = e, _ = [];
         switch (n) {
             case o.cJ.PERKS_DISCOVERABILITY:
-                _ = !1 === i ? [t.profiles, t.moreEmojiPower, t.largeUploads, t.hdVideo, t.clientThemes, t.customAppIcons] : l === c.xc.FP_ONLY || u ? [t.profiles, t.clientThemes, t.hdVideo] : [t.profiles, t.clientThemes, t.serverBoosts];
+                _ = !1 === s ? [t.profiles, t.moreEmojiPower, t.largeUploads, t.hdVideo, t.clientThemes, t.customAppIcons] : a === c.xc.FP_ONLY || u ? [t.profiles, t.clientThemes, t.hdVideo] : [t.profiles, t.clientThemes, t.serverBoosts];
                 break;
             case o.cJ.WHATS_NEW:
                 _ = (e => {
                     let {
                         cards: t,
                         perksCards: n,
-                        recurring3PPromotionExperiment: r,
-                        showPremiumGroup: i
-                    } = e, l = null != n.tenureBadge ? [n.tenureBadge] : [], s = 3 - l.length, a = e => {
+                        recurring3PPromotionExperiment: i,
+                        showPremiumGroup: s
+                    } = e, a = null != n.tenureBadge ? [n.tenureBadge] : [], r = 3 - a.length, l = e => {
                         let {
                             card: n
                         } = e;
-                        t.length < s && t.push(n)
+                        t.length < r && t.push(n)
                     };
-                    return i && a({
+                    return s && l({
                         card: n.premiumGroup
-                    }), r && a({
+                    }), i && l({
                         card: n.recurring3PPromotions
-                    }), a({
+                    }), l({
                         card: n.displayNameStyles
-                    }), a({
+                    }), l({
                         card: n.customThemes
-                    }), a({
+                    }), l({
                         card: n.permadecos
-                    }), a({
+                    }), l({
                         card: n.newAppStylesUpdateJune2024
-                    }), t.push(...l), t
+                    }), t.push(...a), t
                 })({
                     cards: _,
                     perksCards: t,
-                    recurring3PPromotionExperiment: a,
+                    recurring3PPromotionExperiment: l,
                     showPremiumGroup: d
                 });
                 break;
             case o.cJ.CARD_CAROUSEL_FIRST_ROW:
-                _ = !1 === i ? [t.serverBoosts, t.superReactions, t.earlyAccessSeeAllVariant, t.specialShopPerks] : [t.customAppIcons, t.moreEmojiPower, t.customSoundsEverywhere, t.specialStickerAccess];
+                _ = !1 === s ? [t.serverBoosts, t.superReactions, t.earlyAccessSeeAllVariant, t.specialShopPerks] : [t.customAppIcons, t.moreEmojiPower, t.customSoundsEverywhere, t.specialStickerAccess];
                 break;
             case o.cJ.CARD_CAROUSEL_SECOND_ROW:
-                _ = !1 === i ? [t.customSoundsEverywhere, t.specialStickerAccess] : l === c.xc.FP_ONLY ? s ? [t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions] : [t.greyServerBoosts, t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions] : [t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions];
+                _ = !1 === s ? [t.customSoundsEverywhere, t.specialStickerAccess] : a === c.xc.FP_ONLY ? r ? [t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions] : [t.greyServerBoosts, t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions] : [t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions];
                 break;
             case o.cJ.CARD_CAROUSEL_THIRD_ROW:
-                _ = l === c.xc.FP_ONLY ? s ? [t.entranceSoundsSeeAllVariation] : [t.entranceSoundsSeeAllVariation, t.greyBadge] : [t.entranceSoundsSeeAllVariation, t.badge]
+                _ = a === c.xc.FP_ONLY ? r ? [t.entranceSoundsSeeAllVariation] : [t.entranceSoundsSeeAllVariation, t.greyBadge] : [t.entranceSoundsSeeAllVariation, t.badge]
         }
-        return r && (_ = _.filter(e => !e.hideOnNarrowScreen)), _
+        return i && (_ = _.filter(e => !e.hideOnNarrowScreen)), _
     },
-    p = e => {
-        let t = (0, r.bG)([s.A], () => s.A.getPremiumTypeSubscription()),
-            n = null != t ? a.Ay.getPremiumPlanItem(t) : null,
-            i = (null != n ? a.Ay.getSkuIdForPlan(n.planId) : null) === c.pe.TIER_2;
-        return e ? i ? {
+    m = e => {
+        let t = (0, i.bG)([r.A], () => r.A.getPremiumTypeSubscription()),
+            n = null != t ? l.Ay.getPremiumPlanItem(t) : null,
+            s = (null != n ? l.Ay.getSkuIdForPlan(n.planId) : null) === c.pe.TIER_2;
+        return e ? s ? {
             title: d.intl.string(d.t.Aw5DRm),
             subtitle: d.intl.string(d.t.aHdO6o)
         } : {
@@ -89,7 +89,7 @@ let u = (e, t, n) => (0, i.Mw)(e) ? t : n,
             subtitle: d.intl.string(d.t["5TFEXv"])
         }
     },
-    m = () => {
-        let e = (0, r.bG)([l.default], () => l.default.getCurrentUser());
-        return (0, a.TW)(e)
+    A = () => {
+        let e = (0, i.bG)([a.default], () => a.default.getCurrentUser());
+        return (0, l.TW)(e)
     }

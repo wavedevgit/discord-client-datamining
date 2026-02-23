@@ -1,56 +1,56 @@
 /** chunk id: 351466, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => E
 });
-var r = n(627968),
-    i = n(64700),
-    l = n(960488),
+var i = n(627968),
+    r = n(64700),
+    l = n(873263),
     a = n(311907),
     s = n(726249),
     o = n(49463),
-    c = n(122204),
-    u = n(301503),
-    d = n(570763),
-    p = n(403362),
+    d = n(122204),
+    c = n(301503),
+    u = n(570763),
+    A = n(403362),
     h = n(533129),
-    f = n(726845),
-    g = n(285395),
-    m = n(488995),
-    A = n(34352);
-let _ = function() {
+    _ = n(726845),
+    m = n(285395),
+    p = n(488995),
+    g = n(34352);
+let E = function() {
     let e = (0, a.bG)([o.A], () => o.A.hasLoadedExperiments),
-        t = f.A.useField("selectedTab"),
+        t = _.A.useField("selectedTab"),
         n = function(e) {
             switch (e) {
-                case m.GlobalDiscoveryTab.SERVERS:
-                    return (0, r.jsx)(u.A, {});
-                case m.GlobalDiscoveryTab.APPS:
-                    return (0, r.jsx)(c.default, {});
-                case m.GlobalDiscoveryTab.QUESTS:
-                    return (0, r.jsx)(d.A, {
+                case p.GlobalDiscoveryTab.SERVERS:
+                    return (0, i.jsx)(c.A, {});
+                case p.GlobalDiscoveryTab.APPS:
+                    return (0, i.jsx)(d.default, {});
+                case p.GlobalDiscoveryTab.QUESTS:
+                    return (0, i.jsx)(u.A, {
                         topLevelRoute: !1
                     });
                 default:
-                    (0, p.xb)(e)
+                    (0, A.xb)(e)
             }
         }(t),
-        _ = (0, l.zy)();
-    return i.useEffect(() => {
-        let e = _.pathname,
-            t = (0, g.j)(e);
-        t !== f.A.getField("selectedTab") && f.A.setState({
+        E = (0, l.zy)();
+    return r.useEffect(() => {
+        let e = E.pathname,
+            t = (0, m.j)(e);
+        t !== _.A.getField("selectedTab") && _.A.setState({
             selectedTab: t
         })
-    }, [_.pathname]), i.useEffect(() => {
+    }, [E.pathname]), r.useEffect(() => {
         e && (0, h.tx)({
             selectedTab: t
         })
-    }, [t, e]), (0, r.jsxs)("section", {
-        className: A.k,
-        children: [(0, r.jsx)(s.HI, {
-            location: (0, g.t)(t)
-        }), (0, r.jsx)("div", {
-            className: A.T
+    }, [t, e]), (0, i.jsxs)("section", {
+        className: g.k,
+        children: [(0, i.jsx)(s.HI, {
+            location: (0, m.t)(t)
+        }), (0, i.jsx)("div", {
+            className: g.T
         }), n]
     })
 }

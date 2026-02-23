@@ -28,6 +28,6 @@ function r(e) {
             variant: s,
             guildId: r,
             analyticsLocations: o
-        }, "".concat(e, "-").concat(t)))
+        }, `${e}-${t}`))
     })
 }

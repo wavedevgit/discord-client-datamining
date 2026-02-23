@@ -1,218 +1,372 @@
 /** chunk id: 814340, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => Z
-}), n(65821), n(896048), n(747238), n(667532);
-var r, l = n(627968),
-    i = n(64700),
-    s = n(503698),
-    a = n.n(s),
-    o = n(158954),
-    c = n(311907),
-    u = n(990078),
+    A: () => K
+});
+var i = n(627968),
+    s = n(64700),
+    l = n(503698),
+    r = n.n(l),
+    a = n(158954),
+    o = n(311907),
+    c = n(990078),
     d = n(397927),
-    p = n(442433),
+    u = n(442433),
     h = n(390435),
-    g = n(775121),
-    f = n(629357),
-    m = n(329308),
-    b = n(599677),
-    A = n(12351),
-    y = n(915089),
-    O = n(360619),
-    j = n(734057),
+    A = n(775121),
+    p = n(629357),
+    g = n(599677),
+    m = n(12351),
+    _ = n(915089),
+    f = n(734057),
     x = n(458294),
-    _ = n(71393),
-    v = n(290863),
-    E = n(222823),
-    C = n(309010),
-    S = n(607567),
-    I = n(248465),
-    N = n(234320),
+    C = n(71393),
+    E = n(290863),
+    I = n(222823),
+    b = n(309010),
+    N = n(607567),
+    S = n(234320),
     T = n(203982),
-    P = n(975571),
-    w = n(793322),
-    R = n(174768),
-    D = n(586068),
-    L = n(826050),
-    M = n(818039),
-    G = n(652215),
-    k = n(985018),
-    U = n(171814);
-
-function V(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-
-function B(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            V(e, t, n[t])
-        })
-    }
-    return e
-}
-
-function H(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
-        }
-        return n
-    })(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-let F = () => (0, l.jsxs)("div", {
-    className: U.p$,
-    children: [(0, l.jsx)("div", {
-        className: U.lv,
-        children: k.intl.string(k.t.bpbATE)
-    }), (0, l.jsx)("div", {
-        className: U.PA,
-        children: (0, l.jsx)(d.MzZ, {
-            href: P.A.getArticleURL(G.MVz.QUICK_SWITCHER_TUTORIAL),
-            children: k.intl.string(k.t["4iPfEO"])
+    y = n(975571),
+    v = n(793322),
+    j = n(174768),
+    R = n(586068),
+    O = n(826050),
+    L = n(652215),
+    M = n(985018),
+    D = n(171814);
+let G = () => (0, i.jsxs)("div", {
+    className: D.p$,
+    children: [(0, i.jsx)("div", {
+        className: D.lv,
+        children: M.intl.string(M.t.bpbATE)
+    }), (0, i.jsx)("div", {
+        className: D.PA,
+        children: (0, i.jsx)(d.MzZ, {
+            href: y.A.getArticleURL(L.MVz.QUICK_SWITCHER_TUTORIAL),
+            children: M.intl.string(M.t["4iPfEO"])
         })
     })]
 });
-class Y extends(r = i.Component) {
+class U extends s.Component {
+    static defaultProps = {
+        unread: !1
+    };
     render() {
-        let e = _.A.getGuild(this.props.channel.guild_id);
-        return (0, l.jsx)(D.c3, H(B({}, this.props), {
-            children: (0, l.jsx)("div", {
-                className: U.MD,
+        let e = C.A.getGuild(this.props.channel.guild_id);
+        return (0, i.jsx)(R.c3, {
+            ...this.props,
+            children: (0, i.jsx)("div", {
+                className: D.MD,
                 children: null != e ? e.name : null
             })
-        }))
+        })
     }
 }
-V(Y, "defaultProps", {
-    unread: !1
-});
-let K = c.Ay.connectStores([E.Ay, j.A], e => {
+let P = o.Ay.connectStores([I.Ay, f.A], e => {
         let {
             channel: t
         } = e;
         return {
-            unread: E.Ay.hasUnread(t.id),
-            mentions: E.Ay.getMentionCount(t.id),
-            isMentionLowImportance: E.Ay.getIsMentionLowImportance(t.id),
-            category: j.A.getChannel(t.parent_id)
+            unread: I.Ay.hasUnread(t.id),
+            mentions: I.Ay.getMentionCount(t.id),
+            isMentionLowImportance: I.Ay.getIsMentionLowImportance(t.id),
+            category: f.A.getChannel(t.parent_id)
         }
-    })(Y),
-    W = c.Ay.connectStores([S.Ay], e => {
+    })(U),
+    w = o.Ay.connectStores([N.Ay], e => {
         let {
             channel: t
         } = e;
         if (null == t.guild_id) throw Error("ConnectedVoiceChannel - somehow we got a voice channel with no guild_id...");
         return {
-            voiceStates: S.Ay.getVoiceStates(t.guild_id)[t.id]
+            voiceStates: N.Ay.getVoiceStates(t.guild_id)[t.id]
         }
-    })(Y),
-    z = c.Ay.connectStores([x.default], e => {
+    })(U),
+    k = o.Ay.connectStores([x.default], e => {
         let {
             guild: t
         } = e;
         return {
             unread: x.default.hasUnread(t.id)
         }
-    })(D.OS),
-    X = c.Ay.connectStores([E.Ay, v.A], e => {
-        var t;
+    })(R.OS),
+    V = o.Ay.connectStores([I.Ay, E.A], e => {
         let {
-            channel: n
-        } = e, r = null, l = v.A.getState().statuses;
-        return (null == (t = n.recipients) ? void 0 : t.some(e => l[e] === G.clD.ONLINE)) && (r = G.clD.ONLINE), {
-            mentions: E.Ay.getMentionCount(n.id),
-            status: r
+            channel: t
+        } = e, n = null, i = E.A.getState().statuses;
+        return t.recipients?.some(e => i[e] === L.clD.ONLINE) && (n = L.clD.ONLINE), {
+            mentions: I.Ay.getMentionCount(t.id),
+            status: n
         }
-    })(D.nG),
-    q = c.Ay.connectStores([j.A, E.Ay, v.A], e => {
+    })(R.nG),
+    B = o.Ay.connectStores([f.A, I.Ay, E.A], e => {
         let {
             user: t
-        } = e, n = j.A.getDMFromUserId(t.id);
+        } = e, n = f.A.getDMFromUserId(t.id);
         return {
-            mentions: null != n ? E.Ay.getMentionCount(n) : 0,
-            status: v.A.getStatus(t.id),
-            isMobile: v.A.isMobileOnline(t.id)
+            mentions: null != n ? I.Ay.getMentionCount(n) : 0,
+            status: E.A.getStatus(t.id),
+            isMobile: E.A.isMobileOnline(t.id)
         }
-    })(D.KJ);
+    })(R.KJ);
 
-function J(e, t, n) {
-    return (0, l.jsx)(u.m, {
+function H(e, t, n) {
+    return (0, i.jsx)(c.m, {
         __unsupportedReactNodeAsText: n,
-        children: (0, l.jsx)("span", {
-            className: U.ZT,
+        children: (0, i.jsx)("span", {
+            className: D.ZT,
             children: t
         })
     }, e)
 }
-class Q extends i.PureComponent {
+class F extends s.PureComponent {
+    scrollerRef = s.createRef();
+    inputRef = s.createRef();
+    _listId = (0, _.Ld)();
+    state = {
+        query: this.props.query,
+        mouseFocusDisabled: !0
+    };
     componentDidMount() {
-        g.A.disable(), g.A.enableTemp(h.w)
+        A.A.disable(), A.A.enableTemp(h.w)
     }
     componentWillUnmount() {
-        g.A.disableTemp(), g.A.enable()
+        A.A.disableTemp(), A.A.enable()
     }
     componentDidUpdate(e, t) {
         let {
             mouseFocusDisabled: n,
-            query: r
+            query: i
         } = this.state, {
-            selectedIndex: l
+            selectedIndex: s
         } = this.props, {
-            current: i
+            current: l
         } = this.scrollerRef;
-        null != i && (r !== t.query ? i.scrollTo({
+        null != l && (i !== t.query ? l.scrollTo({
             to: 0
-        }) : n && l >= 0 && i.scrollToIndex({
+        }) : n && s >= 0 && l.scrollToIndex({
             section: 0,
-            row: l,
+            row: s,
             padding: 10
         }))
     }
     close() {
-        (0, w.jD)()
+        (0, v.jD)()
     }
     search(e) {
         this.setState({
             query: e
-        }), (0, w.$P)(e)
+        }), (0, v.$P)(e)
     }
+    handleInputChange = () => {
+        let {
+            current: e
+        } = this.inputRef;
+        null != e && this.search(e.value)
+    };
+    handleMouseMove = () => {
+        let {
+            mouseFocusDisabled: e
+        } = this.state;
+        !1 !== e && this.setState({
+            mouseFocusDisabled: !1
+        })
+    };
+    focusResult = e => {
+        this.state.mouseFocusDisabled || (0, v.wf)(this.props.results.indexOf(e))
+    };
+    selectResult = e => {
+        (0, v.F6)(e, this.props.queryMode === p.rD.TEXT_CHANNEL)
+    };
+    handleContextMenu = e => {
+        let t = this.props.results[this.props.selectedIndex];
+        switch (t.type) {
+            case p.rD.GUILD:
+                return (0, u.L3)(e, async () => {
+                    let {
+                        default: e
+                    } = await Promise.all([n.e("43600"), n.e("68587"), n.e("63379"), n.e("56026"), n.e("16301"), n.e("22191"), n.e("25961"), n.e("21968"), n.e("35894"), n.e("67231"), n.e("50796"), n.e("8458"), n.e("11810"), n.e("39048"), n.e("56475"), n.e("54469"), n.e("57498")]).then(n.bind(n, 544676));
+                    return n => (0, i.jsx)(e, {
+                        ...n,
+                        guild: t.record,
+                        onSelect: v.jD,
+                        hideSettings: !0
+                    })
+                });
+            case p.rD.TEXT_CHANNEL:
+            case p.rD.VOICE_CHANNEL:
+                let s = t.record,
+                    l = C.A.getGuild(s.getGuildId());
+                if (null == l) return;
+                switch (s.type) {
+                    case L.rbe.GUILD_TEXT:
+                    case L.rbe.GUILD_ANNOUNCEMENT:
+                    case L.rbe.GUILD_FORUM:
+                    case L.rbe.GUILD_MEDIA:
+                        return (0, u.L3)(e, async () => {
+                            let {
+                                default: e
+                            } = await Promise.all([n.e("97262"), n.e("57287"), n.e("77666")]).then(n.bind(n, 370372));
+                            return t => (0, i.jsx)(e, {
+                                ...t,
+                                channel: s,
+                                guild: l,
+                                onSelect: v.jD
+                            })
+                        });
+                    case L.rbe.GUILD_VOICE:
+                    case L.rbe.GUILD_STAGE_VOICE:
+                        return (0, u.L3)(e, async () => {
+                            let {
+                                default: e
+                            } = await Promise.all([n.e("97262"), n.e("57287"), n.e("40394"), n.e("18159")]).then(n.bind(n, 698193));
+                            return t => (0, i.jsx)(e, {
+                                ...t,
+                                channel: s,
+                                guild: l,
+                                onSelect: v.jD
+                            })
+                        });
+                    case L.rbe.ANNOUNCEMENT_THREAD:
+                    case L.rbe.PUBLIC_THREAD:
+                    case L.rbe.PRIVATE_THREAD:
+                        return (0, u.L3)(e, async () => {
+                            let {
+                                default: e
+                            } = await n.e("33").then(n.bind(n, 44536));
+                            return t => (0, i.jsx)(e, {
+                                ...t,
+                                channel: s,
+                                onSelect: v.jD
+                            })
+                        });
+                    case L.rbe.GUILD_STORE:
+                        return (0, u.L3)(e, async () => {
+                            let {
+                                default: e
+                            } = await n.e("15669").then(n.bind(n, 313140));
+                            return t => (0, i.jsx)(e, {
+                                ...t,
+                                channel: s,
+                                guild: l,
+                                onSelect: v.jD
+                            })
+                        });
+                    case L.rbe.GUILD_DIRECTORY:
+                        return (0, u.L3)(e, async () => {
+                            let {
+                                default: e
+                            } = await n.e("29559").then(n.bind(n, 994058));
+                            return t => (0, i.jsx)(e, {
+                                ...t,
+                                channel: s
+                            })
+                        })
+                }
+                break;
+            case p.rD.GROUP_DM:
+                return (0, u.L3)(e, async () => {
+                    let {
+                        default: e
+                    } = await Promise.all([n.e("97262"), n.e("15438")]).then(n.bind(n, 4027));
+                    return n => (0, i.jsx)(e, {
+                        ...n,
+                        channel: t.record,
+                        selected: b.A.getChannelId() === t.record.id,
+                        onSelect: v.jD
+                    })
+                });
+            case p.rD.USER:
+                return (0, u.L3)(e, async () => {
+                    let {
+                        default: e
+                    } = await Promise.all([n.e("97262"), n.e("32418"), n.e("22252")]).then(n.bind(n, 668569));
+                    return n => (0, i.jsx)(e, {
+                        ...n,
+                        user: t.record,
+                        onSelect: v.jD
+                    })
+                })
+        }
+    };
+    handleKeyDown = e => {
+        let {
+            mouseFocusDisabled: t,
+            query: n
+        } = this.state, {
+            results: i
+        } = this.props;
+        !1 === t && this.setState({
+            mouseFocusDisabled: !0
+        });
+        let s = e.key.toLowerCase(),
+            {
+                selectedIndex: l
+            } = this.props;
+        switch (s) {
+            case "escape":
+                e.preventDefault(), e.stopPropagation(), n.length > 0 ? this.search("") : (0, v.jD)();
+                return;
+            case "k":
+            case "t":
+                (!0 === e.ctrlKey || !0 === e.metaKey) && (e.preventDefault(), e.stopPropagation(), (0, v.jD)());
+                return;
+            case "enter": {
+                if (-1 === l) return;
+                if (e.preventDefault(), e.altKey) return this.handleContextMenu(e);
+                let t = i[l];
+                null != t && this.selectResult(t);
+                return
+            }
+            case "arrowup":
+                l = (0, p.Vv)(p.vB.UP, l, i);
+                break;
+            case "arrowdown":
+                l = (0, p.Vv)(p.vB.DOWN, l, i);
+                break;
+            case "n":
+                if (!e.ctrlKey) return;
+                l = (0, p.Vv)(p.vB.DOWN, l, i);
+                break;
+            case "p":
+                if (!e.ctrlKey) return;
+                l = (0, p.Vv)(p.vB.UP, l, i);
+                break;
+            default:
+                return
+        }
+        e.preventDefault(), (0, v.wf)(l)
+    };
+    handleGlobalPaste = e => {
+        let {
+            event: t
+        } = e, n = t.clipboardData?.getData("text");
+        null != n && (t.preventDefault(), t.stopPropagation(), this.search(this.state.query + n), this.inputRef.current?.focus())
+    };
     renderInput() {
         let {
             selectedIndex: e,
             results: t
         } = this.props, {
             query: n
-        } = this.state, r = t.length > 0 && "" !== n;
-        return (0, l.jsxs)(l.Fragment, {
-            children: [(0, l.jsx)(N.EG, {
-                event: G.jej.GLOBAL_CLIPBOARD_PASTE,
+        } = this.state, s = t.length > 0 && "" !== n;
+        return (0, i.jsxs)(i.Fragment, {
+            children: [(0, i.jsx)(S.EG, {
+                event: L.jej.GLOBAL_CLIPBOARD_PASTE,
                 handler: this.handleGlobalPaste
-            }), (0, l.jsx)(d.vN3, {
-                children: (0, l.jsx)("input", {
-                    className: U.hF,
-                    "aria-label": k.intl.string(k.t.ZvKwYa),
+            }), (0, i.jsx)(d.vN3, {
+                children: (0, i.jsx)("input", {
+                    className: D.hF,
+                    "aria-label": M.intl.string(M.t.ZvKwYa),
                     ref: this.inputRef,
                     type: "text",
                     role: "combobox",
                     "aria-controls": this._listId,
-                    "aria-expanded": r,
-                    "aria-activedescendant": r ? this.getRowId(e) : void 0,
+                    "aria-expanded": s,
+                    "aria-activedescendant": s ? this.getRowId(e) : void 0,
                     "aria-autocomplete": "list",
-                    placeholder: k.intl.string(k.t.VtvewW),
+                    placeholder: M.intl.string(M.t.VtvewW),
                     onChange: this.handleInputChange,
                     onKeyDown: this.handleKeyDown,
                     value: this.state.query,
@@ -232,45 +386,153 @@ class Q extends i.PureComponent {
             } = this.state, {
                 results: t
             } = this.props;
-            return 0 === t.length && e.length > 0 ? (0, l.jsx)(F, {}) : 0 === t.length ? null : (0, l.jsx)(d.Eie, {
+            return 0 === t.length && e.length > 0 ? (0, i.jsx)(G, {}) : 0 === t.length ? null : (0, i.jsx)(d.Eie, {
                 innerId: this._listId,
                 innerRole: "listbox",
-                "aria-label": k.intl.string(k.t.Wef5Do),
+                "aria-label": M.intl.string(M.t.Wef5Do),
                 ref: this.scrollerRef,
                 sectionHeight: 0,
                 rowHeight: 34,
                 paddingBottom: 10,
                 sections: [t.length],
-                className: U.XG,
+                className: D.XG,
                 renderRow: this.renderRow,
                 renderSection: this.renderSection
             })
         };
-        return (0, l.jsx)("div", {
-            className: U.sN,
+        return (0, i.jsx)("div", {
+            className: D.sN,
             children: e()
         })
     }
     focusNode(e) {
-        T._.dispatch(G.jej.QUICKSWITCHER_RESULT_FOCUS, {
+        T._.dispatch(L.jej.QUICKSWITCHER_RESULT_FOCUS, {
             node: e
         })
     }
     getRowId(e) {
-        return "quick-switcher-".concat(this._listId, "-item-").concat(e)
+        return `quick-switcher-${this._listId}-item-${e}`
     }
+    renderRow = e => {
+        let {
+            row: t
+        } = e, n = this.props.results[t], {
+            selectedIndex: s
+        } = this.props, {
+            showScores: l
+        } = g.A.getCurrentConfig({
+            location: "62f4be_1"
+        }, {
+            autoTrackExposure: !1
+        });
+        switch (n.type) {
+            case p.rD.HEADER:
+                return (0, i.jsx)(R.Y9, {
+                    children: n.record.text
+                }, `${n.type}-${n.record.id}`);
+            case p.rD.TEXT_CHANNEL:
+                return (0, i.jsx)(P, {
+                    id: this.getRowId(t),
+                    focused: s >= 0 && t === s,
+                    onClick: () => this.selectResult(n),
+                    onMouseEnter: () => this.focusResult(n),
+                    onFocus: this.focusNode,
+                    onContextMenu: this.handleContextMenu,
+                    channel: n.record,
+                    score: l ? n.score : void 0
+                }, `${n.type}-${n.record.id}`);
+            case p.rD.VOICE_CHANNEL:
+                return (0, i.jsx)(w, {
+                    id: this.getRowId(t),
+                    focused: s >= 0 && t === s,
+                    onClick: () => this.selectResult(n),
+                    onMouseEnter: () => this.focusResult(n),
+                    onFocus: this.focusNode,
+                    onContextMenu: this.handleContextMenu,
+                    channel: n.record,
+                    score: l ? n.score : void 0
+                }, `${n.type}-${n.record.id}`);
+            case p.rD.GUILD:
+                return (0, i.jsx)(k, {
+                    id: this.getRowId(t),
+                    focused: s >= 0 && t === s,
+                    onClick: () => this.selectResult(n),
+                    onMouseEnter: () => this.focusResult(n),
+                    onFocus: this.focusNode,
+                    onContextMenu: this.handleContextMenu,
+                    guild: n.record,
+                    score: l ? n.score : void 0
+                }, `${n.type}-${n.record.id}`);
+            case p.rD.USER:
+                return (0, i.jsx)(B, {
+                    id: this.getRowId(t),
+                    focused: s >= 0 && t === s,
+                    onClick: () => this.selectResult(n),
+                    onMouseEnter: () => this.focusResult(n),
+                    onFocus: this.focusNode,
+                    onContextMenu: this.handleContextMenu,
+                    user: n.record,
+                    comparator: n.comparator,
+                    score: l ? n.score : void 0
+                }, `${n.type}-${n.record.id}`);
+            case p.rD.GROUP_DM:
+                return (0, i.jsx)(V, {
+                    id: this.getRowId(t),
+                    focused: s >= 0 && t === s,
+                    onClick: () => this.selectResult(n),
+                    onMouseEnter: () => this.focusResult(n),
+                    onFocus: this.focusNode,
+                    onContextMenu: this.handleContextMenu,
+                    channel: n.record,
+                    score: l ? n.score : void 0
+                }, `${n.type}-${n.record.id}`);
+            case p.rD.APPLICATION:
+                return (0, i.jsx)(R.lg, {
+                    id: this.getRowId(t),
+                    focused: s >= 0 && t === s,
+                    onClick: () => this.selectResult(n),
+                    onMouseEnter: () => this.focusResult(n),
+                    onFocus: this.focusNode,
+                    application: n.record
+                }, `${n.type}-${n.record.id}`);
+            case p.rD.LINK:
+                return (0, i.jsx)(R.N_, {
+                    focused: s >= 0 && t === s,
+                    onClick: () => this.selectResult(n),
+                    onMouseEnter: () => this.focusResult(n),
+                    onFocus: this.focusNode,
+                    onContextMenu: this.handleContextMenu,
+                    link: n.record,
+                    score: l ? n.score : void 0,
+                    id: this.getRowId(t)
+                }, `${n.type}-${n.record.id}`);
+            case p.rD.IN_APP_NAVIGATION:
+                return (0, i.jsx)(R.vw, {
+                    focused: s >= 0 && t === s,
+                    onClick: () => this.selectResult(n),
+                    onMouseEnter: () => this.focusResult(n),
+                    onFocus: this.focusNode,
+                    onContextMenu: this.handleContextMenu,
+                    navigationRecord: n.record,
+                    score: l ? n.score : void 0,
+                    id: this.getRowId(t)
+                }, `${n.type}-${n.record.id}`);
+            default:
+                return null
+        }
+    };
     renderProtip() {
-        return (0, l.jsx)(A.A, {
-            className: a()(U.PP, {
-                [U.ov]: this.state.query.length > 0
+        return (0, i.jsx)(m.A, {
+            className: r()(D.PP, {
+                [D.ov]: this.state.query.length > 0
             }),
-            type: A.A.Types.INLINE,
-            children: k.intl.format(k.t.wukqXQ, {
-                userSymbolHook: (e, t) => J(t, f.AT.USER, k.intl.string(k.t.GQRCGn)),
-                textChannelSymbolHook: (e, t) => J(t, f.AT.TEXT_CHANNEL, k.intl.string(k.t.wrwhuZ)),
-                voiceChannelSymbolHook: (e, t) => J(t, f.AT.VOICE_CHANNEL, k.intl.string(k.t["jz+hJp"])),
-                guildSymbolHook: (e, t) => J(t, f.AT.GUILD, k.intl.string(k.t.WuwCWi)),
-                helpdeskArticle: P.A.getArticleURL(G.MVz.QUICK_SWITCHER_TUTORIAL)
+            type: m.A.Types.INLINE,
+            children: M.intl.format(M.t.wukqXQ, {
+                userSymbolHook: (e, t) => H(t, p.AT.USER, M.intl.string(M.t.GQRCGn)),
+                textChannelSymbolHook: (e, t) => H(t, p.AT.TEXT_CHANNEL, M.intl.string(M.t.wrwhuZ)),
+                voiceChannelSymbolHook: (e, t) => H(t, p.AT.VOICE_CHANNEL, M.intl.string(M.t["jz+hJp"])),
+                guildSymbolHook: (e, t) => H(t, p.AT.GUILD, M.intl.string(M.t.WuwCWi)),
+                helpdeskArticle: y.A.getArticleURL(L.MVz.QUICK_SWITCHER_TUTORIAL)
             })
         })
     }
@@ -281,333 +543,29 @@ class Q extends i.PureComponent {
             seenTutorial: t,
             results: n
         } = this.props;
-        return t ? null : (0, l.jsx)(L.A, {
+        return t ? null : (0, i.jsx)(O.A, {
             hasQuery: e.length > 0 && n.length > 0
         })
     }
     render() {
-        return (0, l.jsx)(o.dWK, {
-            "aria-label": k.intl.string(k.t.ZvKwYa),
+        return (0, i.jsx)(a.dWK, {
+            "aria-label": M.intl.string(M.t.ZvKwYa),
             size: "lg",
             transitionState: this.props.transitionState,
             onClose: this.props.onClose,
-            children: (0, l.jsxs)("div", {
-                className: U.rs,
+            children: (0, i.jsxs)("div", {
+                className: D.rs,
                 onMouseMove: this.handleMouseMove,
                 children: [this.renderInput(), this.renderResults(), this.renderProtip(), this.renderTutorial()]
             })
         })
     }
-    constructor(...e) {
-        super(...e), V(this, "scrollerRef", i.createRef()), V(this, "inputRef", i.createRef()), V(this, "_listId", (0, y.Ld)()), V(this, "state", {
-            query: this.props.query,
-            mouseFocusDisabled: !0
-        }), V(this, "handleInputChange", () => {
-            let {
-                current: e
-            } = this.inputRef;
-            null != e && this.search(e.value)
-        }), V(this, "handleMouseMove", () => {
-            let {
-                mouseFocusDisabled: e
-            } = this.state;
-            !1 !== e && this.setState({
-                mouseFocusDisabled: !1
-            })
-        }), V(this, "focusResult", e => {
-            this.state.mouseFocusDisabled || (0, w.wf)(this.props.results.indexOf(e))
-        }), V(this, "selectResult", e => {
-            (0, w.F6)(e, this.props.queryMode === f.rD.TEXT_CHANNEL)
-        }), V(this, "handleContextMenu", e => {
-            let t = this.props.results[this.props.selectedIndex];
-            switch (t.type) {
-                case f.rD.GUILD:
-                    return (0, p.L3)(e, async () => {
-                        let {
-                            default: e
-                        } = await Promise.all([n.e("68587"), n.e("43600"), n.e("63379"), n.e("56026"), n.e("16301"), n.e("22191"), n.e("25961"), n.e("21968"), n.e("35894"), n.e("50796"), n.e("11810"), n.e("8458"), n.e("39048"), n.e("36290"), n.e("59735"), n.e("54469"), n.e("70084")]).then(n.bind(n, 544676));
-                        return n => (0, l.jsx)(e, H(B({}, n), {
-                            guild: t.record,
-                            onSelect: w.jD,
-                            hideSettings: !0
-                        }))
-                    });
-                case f.rD.TEXT_CHANNEL:
-                case f.rD.VOICE_CHANNEL:
-                    let r = t.record,
-                        i = _.A.getGuild(r.getGuildId());
-                    if (null == i) return;
-                    switch (r.type) {
-                        case G.rbe.GUILD_TEXT:
-                        case G.rbe.GUILD_ANNOUNCEMENT:
-                        case G.rbe.GUILD_FORUM:
-                        case G.rbe.GUILD_MEDIA:
-                            return (0, p.L3)(e, async () => {
-                                let {
-                                    default: e
-                                } = await Promise.all([n.e("97262"), n.e("57287"), n.e("77666")]).then(n.bind(n, 370372));
-                                return t => (0, l.jsx)(e, H(B({}, t), {
-                                    channel: r,
-                                    guild: i,
-                                    onSelect: w.jD
-                                }))
-                            });
-                        case G.rbe.GUILD_VOICE:
-                        case G.rbe.GUILD_STAGE_VOICE:
-                            return (0, p.L3)(e, async () => {
-                                let {
-                                    default: e
-                                } = await Promise.all([n.e("97262"), n.e("57287"), n.e("40394"), n.e("30997")]).then(n.bind(n, 698193));
-                                return t => (0, l.jsx)(e, H(B({}, t), {
-                                    channel: r,
-                                    guild: i,
-                                    onSelect: w.jD
-                                }))
-                            });
-                        case G.rbe.ANNOUNCEMENT_THREAD:
-                        case G.rbe.PUBLIC_THREAD:
-                        case G.rbe.PRIVATE_THREAD:
-                            return (0, p.L3)(e, async () => {
-                                let {
-                                    default: e
-                                } = await n.e("33").then(n.bind(n, 44536));
-                                return t => (0, l.jsx)(e, H(B({}, t), {
-                                    channel: r,
-                                    onSelect: w.jD
-                                }))
-                            });
-                        case G.rbe.GUILD_STORE:
-                            return (0, p.L3)(e, async () => {
-                                let {
-                                    default: e
-                                } = await n.e("15669").then(n.bind(n, 313140));
-                                return t => (0, l.jsx)(e, H(B({}, t), {
-                                    channel: r,
-                                    guild: i,
-                                    onSelect: w.jD
-                                }))
-                            });
-                        case G.rbe.GUILD_DIRECTORY:
-                            return (0, p.L3)(e, async () => {
-                                let {
-                                    default: e
-                                } = await n.e("29559").then(n.bind(n, 994058));
-                                return t => (0, l.jsx)(e, H(B({}, t), {
-                                    channel: r
-                                }))
-                            })
-                    }
-                    break;
-                case f.rD.GROUP_DM:
-                    return (0, p.L3)(e, async () => {
-                        let {
-                            default: e
-                        } = await Promise.all([n.e("97262"), n.e("60200")]).then(n.bind(n, 4027));
-                        return n => (0, l.jsx)(e, H(B({}, n), {
-                            channel: t.record,
-                            selected: C.A.getChannelId() === t.record.id,
-                            onSelect: w.jD
-                        }))
-                    });
-                case f.rD.USER:
-                    return (0, p.L3)(e, async () => {
-                        let {
-                            default: e
-                        } = await Promise.all([n.e("97262"), n.e("32418"), n.e("22252")]).then(n.bind(n, 668569));
-                        return n => (0, l.jsx)(e, H(B({}, n), {
-                            user: t.record,
-                            onSelect: w.jD
-                        }))
-                    })
-            }
-        }), V(this, "handleKeyDown", e => {
-            let {
-                mouseFocusDisabled: t,
-                query: n
-            } = this.state, {
-                results: r
-            } = this.props;
-            !1 === t && this.setState({
-                mouseFocusDisabled: !0
-            });
-            let l = e.key.toLowerCase(),
-                {
-                    selectedIndex: i
-                } = this.props;
-            switch (l) {
-                case "escape":
-                    e.preventDefault(), e.stopPropagation(), n.length > 0 ? this.search("") : (0, w.jD)();
-                    return;
-                case "k":
-                    (!0 === e.ctrlKey || !0 === e.metaKey) && (e.preventDefault(), e.stopPropagation(), (0, w.jD)());
-                    return;
-                case "enter": {
-                    if (-1 === i) return;
-                    if (e.preventDefault(), e.altKey) return this.handleContextMenu(e);
-                    let t = r[i];
-                    null != t && this.selectResult(t);
-                    return
-                }
-                case "arrowup":
-                    i = (0, f.Vv)(f.vB.UP, i, r);
-                    break;
-                case "arrowdown":
-                    i = (0, f.Vv)(f.vB.DOWN, i, r);
-                    break;
-                case "n":
-                    if (!e.ctrlKey) return;
-                    i = (0, f.Vv)(f.vB.DOWN, i, r);
-                    break;
-                case "p":
-                    if (!e.ctrlKey) return;
-                    i = (0, f.Vv)(f.vB.UP, i, r);
-                    break;
-                default:
-                    return
-            }
-            e.preventDefault(), (0, w.wf)(i)
-        }), V(this, "handleGlobalPaste", e => {
-            var t, n;
-            let {
-                event: r
-            } = e, l = null == (t = r.clipboardData) ? void 0 : t.getData("text");
-            null != l && (r.preventDefault(), r.stopPropagation(), this.search(this.state.query + l), null == (n = this.inputRef.current) || n.focus())
-        }), V(this, "renderRow", e => {
-            let {
-                row: t
-            } = e, n = this.props.results[t], {
-                selectedIndex: r
-            } = this.props, {
-                showScores: i
-            } = b.A.getCurrentConfig({
-                location: "62f4be_1"
-            }, {
-                autoTrackExposure: !1
-            });
-            switch (n.type) {
-                case f.rD.HEADER:
-                    return (0, l.jsx)(D.Y9, {
-                        children: n.record.text
-                    }, "".concat(n.type, "-").concat(n.record.id));
-                case f.rD.TEXT_CHANNEL:
-                    return (0, l.jsx)(K, {
-                        id: this.getRowId(t),
-                        focused: r >= 0 && t === r,
-                        onClick: () => this.selectResult(n),
-                        onMouseEnter: () => this.focusResult(n),
-                        onFocus: this.focusNode,
-                        onContextMenu: this.handleContextMenu,
-                        channel: n.record,
-                        score: i ? n.score : void 0
-                    }, "".concat(n.type, "-").concat(n.record.id));
-                case f.rD.VOICE_CHANNEL:
-                    return (0, l.jsx)(W, {
-                        id: this.getRowId(t),
-                        focused: r >= 0 && t === r,
-                        onClick: () => this.selectResult(n),
-                        onMouseEnter: () => this.focusResult(n),
-                        onFocus: this.focusNode,
-                        onContextMenu: this.handleContextMenu,
-                        channel: n.record,
-                        score: i ? n.score : void 0
-                    }, "".concat(n.type, "-").concat(n.record.id));
-                case f.rD.GUILD:
-                    return (0, l.jsx)(z, {
-                        id: this.getRowId(t),
-                        focused: r >= 0 && t === r,
-                        onClick: () => this.selectResult(n),
-                        onMouseEnter: () => this.focusResult(n),
-                        onFocus: this.focusNode,
-                        onContextMenu: this.handleContextMenu,
-                        guild: n.record,
-                        score: i ? n.score : void 0
-                    }, "".concat(n.type, "-").concat(n.record.id));
-                case f.rD.USER:
-                    return (0, l.jsx)(q, {
-                        id: this.getRowId(t),
-                        focused: r >= 0 && t === r,
-                        onClick: () => this.selectResult(n),
-                        onMouseEnter: () => this.focusResult(n),
-                        onFocus: this.focusNode,
-                        onContextMenu: this.handleContextMenu,
-                        user: n.record,
-                        comparator: n.comparator,
-                        score: i ? n.score : void 0
-                    }, "".concat(n.type, "-").concat(n.record.id));
-                case f.rD.GROUP_DM:
-                    return (0, l.jsx)(X, {
-                        id: this.getRowId(t),
-                        focused: r >= 0 && t === r,
-                        onClick: () => this.selectResult(n),
-                        onMouseEnter: () => this.focusResult(n),
-                        onFocus: this.focusNode,
-                        onContextMenu: this.handleContextMenu,
-                        channel: n.record,
-                        score: i ? n.score : void 0
-                    }, "".concat(n.type, "-").concat(n.record.id));
-                case f.rD.APPLICATION:
-                    return (0, l.jsx)(D.lg, {
-                        id: this.getRowId(t),
-                        focused: r >= 0 && t === r,
-                        onClick: () => this.selectResult(n),
-                        onMouseEnter: () => this.focusResult(n),
-                        onFocus: this.focusNode,
-                        application: n.record
-                    }, "".concat(n.type, "-").concat(n.record.id));
-                case f.rD.LINK:
-                    return (0, l.jsx)(D.N_, {
-                        focused: r >= 0 && t === r,
-                        onClick: () => this.selectResult(n),
-                        onMouseEnter: () => this.focusResult(n),
-                        onFocus: this.focusNode,
-                        onContextMenu: this.handleContextMenu,
-                        link: n.record,
-                        score: i ? n.score : void 0,
-                        id: this.getRowId(t)
-                    }, "".concat(n.type, "-").concat(n.record.id));
-                case f.rD.IN_APP_NAVIGATION:
-                    return (0, l.jsx)(D.vw, {
-                        focused: r >= 0 && t === r,
-                        onClick: () => this.selectResult(n),
-                        onMouseEnter: () => this.focusResult(n),
-                        onFocus: this.focusNode,
-                        onContextMenu: this.handleContextMenu,
-                        navigationRecord: n.record,
-                        score: i ? n.score : void 0,
-                        id: this.getRowId(t),
-                        children: n.record.type === m.t1.SETTINGS && (0, l.jsx)("div", {
-                            className: U.MD,
-                            children: k.intl.string(k.t["3D5yo/"])
-                        })
-                    }, "".concat(n.type, "-").concat(n.record.id));
-                default:
-                    return null
-            }
-        })
-    }
 }
 
-function Z(e) {
-    let t = (0, c.cf)([R.A], () => R.A.getProps()),
-        n = (0, O.PH)(),
-        r = M.A.useExperiment({
-            location: "QuickSwitcher"
-        }).enabled,
-        s = i.useMemo(() => r ? Object.values(n).filter(e => null != e.url).filter(e => null == e.predicate || e.predicate()) : [], [n, r]);
-    return i.useLayoutEffect(() => {
-        if (!r) return;
-        let e = s.map(e => {
-            var t;
-            return {
-                title: "string" == typeof e.label ? e.label : "",
-                searchableTitles: null != (t = e.searchableTitles) ? t : [],
-                path: e.url
-            }
-        }).filter(e => "" !== e.title && null != e.path);
-        e.unshift({
-            title: k.intl.string(k.t["3D5yo/"]),
-            searchableTitles: [k.intl.string(k.t["3D5yo/"])],
-            path: G.BVt.SETTINGS("account")
-        }), (0, I.FR)(e)
-    }, [s, r]), (0, l.jsx)(Q, B({}, t, e))
+function K(e) {
+    let t = (0, o.cf)([j.A], () => j.A.getProps());
+    return (0, i.jsx)(F, {
+        ...t,
+        ...e
+    })
 }

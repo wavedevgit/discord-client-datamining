@@ -1,88 +1,72 @@
 /** chunk id: 357541, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => f
 });
-var r = n(627968),
+var i = n(627968),
     l = n(64700),
-    i = n(990078),
-    a = n(397927),
-    o = n(183555),
-    s = n(633075),
+    a = n(990078),
+    s = n(397927),
+    r = n(183555),
+    o = n(633075),
     c = n(735321),
-    u = n(384377),
-    d = n(605694),
-    f = n(518477),
-    p = n(49999),
-    g = n(985018);
+    d = n(384377),
+    u = n(605694),
+    g = n(518477),
+    m = n(49999),
+    x = n(985018);
 
-function m(e) {
+function f(e) {
     let {
         user: t,
         application: n,
-        onDismiss: m
+        onDismiss: f
     } = e, {
-        trackUserProfileEditAction: b
-    } = (0, o.NJ)(), y = l.useMemo(() => new s.R({
+        trackUserProfileEditAction: p
+    } = (0, r.NJ)(), h = l.useMemo(() => new o.R({
         applicationId: n.id
-    }), [n.id]), O = l.useCallback(() => {
-        null != y && ((0, c.Y5)(y), b(function(e) {
-            for (var t = 1; t < arguments.length; t++) {
-                var n = null != arguments[t] ? arguments[t] : {},
-                    r = Object.keys(n);
-                "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                    return Object.getOwnPropertyDescriptor(n, e).enumerable
-                }))), r.forEach(function(t) {
-                    var r;
-                    r = n[t], t in e ? Object.defineProperty(e, t, {
-                        value: r,
-                        enumerable: !0,
-                        configurable: !0,
-                        writable: !0
-                    }) : e[t] = r
-                })
-            }
-            return e
-        }({
-            action: "WIDGET_ADDED"
-        }, y.getProfileEditAnalyticsOptions())), (0, u.XA)(f.jM.WIDGET_ADDED))
-    }, [y, b]);
-    return (0, r.jsx)(d.A, {
+    }), [n.id]), _ = l.useCallback(() => {
+        null != h && ((0, c.Y5)(h), p({
+            action: "WIDGET_ADDED",
+            ...h.getProfileEditAnalyticsOptions()
+        }), (0, d.XA)(g.jM.WIDGET_ADDED))
+    }, [h, p]);
+    return (0, i.jsx)(u.A, {
         user: t,
-        widget: y,
+        widget: h,
         subtle: !0,
-        cta: (0, r.jsx)(d.A.Cta, {
+        cta: (0, i.jsx)(u.A.Cta, {
             showSuggestedForYou: !0,
-            heading: g.intl.format(g.t.OIzLCy, {
+            heading: x.intl.format(x.t.OIzLCy, {
                 applicationName: n.name
             }),
-            content: g.intl.format(g.t.BQySru, {
+            content: x.intl.format(x.t.BQySru, {
                 applicationName: n.name
             }),
-            buttons: (0, r.jsxs)(r.Fragment, {
-                children: [(0, r.jsx)(i.m, {
-                    text: g.intl.string(g.t.WAI6xu),
+            buttons: (0, i.jsxs)(i.Fragment, {
+                children: [(0, i.jsx)(a.m, {
+                    text: x.intl.string(x.t.WAI6xu),
                     ariaHidden: !0,
-                    children: (0, r.jsx)(a.SCx, {
+                    children: (0, i.jsx)(s.SCx, {
                         variant: "secondary",
                         size: "sm",
-                        icon: a.PGe,
-                        "aria-label": g.intl.string(g.t.WAI6xu),
+                        icon: s.PGe,
+                        "aria-label": x.intl.string(x.t.WAI6xu),
                         onClick: () => {
-                            m(p.i.USER_DISMISS)
+                            f(m.i.USER_DISMISS)
                         }
                     })
-                }), (0, r.jsx)(i.m, {
-                    text: g.intl.string(g.t["lBG2s/"]),
+                }), (0, i.jsx)(a.m, {
+                    text: x.intl.string(x.t["lBG2s/"]),
                     ariaHidden: !0,
-                    children: (0, r.jsx)(a.SCx, {
+                    children: (0, i.jsx)(s.SCx, {
                         variant: "primary",
                         size: "sm",
-                        icon: a.Uzd,
-                        "aria-label": g.intl.formatToPlainString(g.t.KfGahB, {
+                        icon: s.Uzd,
+                        "aria-label": x.intl.formatToPlainString(x.t.KfGahB, {
                             applicationName: n.name
                         }),
                         onClick: () => {
-                            m(p.i.TAKE_ACTION), O()
+                            f(m.i.TAKE_ACTION), _()
                         }
                     })
                 })]

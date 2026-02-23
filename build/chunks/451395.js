@@ -1,98 +1,61 @@
 /** chunk id: 451395, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     gY: () => m,
-    jV: () => y,
-    mG: () => b
-}), n(896048);
-var r = n(627968),
+    jV: () => f,
+    mG: () => x
+});
+var i = n(627968),
     l = n(64700),
-    i = n(503698),
-    a = n.n(i),
-    o = n(131346),
-    s = n(522437),
+    a = n(503698),
+    s = n.n(a),
+    r = n(131346),
+    o = n(522437),
     c = n(352944),
-    u = n(435371),
-    d = n(397927),
-    f = n(985018);
-
-function p(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = r
-        })
-    }
-    return e
-}
-
-function g(e, t) {
-    if (null == e) return {};
-    var n, r, l, i = {};
-    if ("u" > typeof Reflect && Reflect.ownKeys) {
-        for (l = 0, n = Reflect.ownKeys(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
-        return i
-    }
-    if (i = function(e, t) {
-            if (null == e) return {};
-            var n, r, l = {},
-                i = Object.getOwnPropertyNames(e);
-            for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n]);
-            return l
-        }(e, t), Object.getOwnPropertySymbols)
-        for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
-    return i
-}
+    d = n(435371),
+    u = n(397927),
+    g = n(985018);
 
 function m(e) {
     let {
         dragRef: t,
         dropRef: n,
-        index: r,
-        listType: i,
-        itemId: a,
-        itemType: u,
-        itemPreviewProps: d,
-        onReorder: f,
-        onEnd: p,
-        disableDefaultPreview: g = !0
-    } = e, m = "".concat(u, "_").concat(i), b = l.useCallback((e, t) => {
-        null == f || f(e, t)
-    }, [f]), y = l.useMemo(() => ({
-        id: a,
-        index: r,
-        itemType: u,
-        itemPreviewProps: d
-    }), [a, r, u, d]), [{
-        isDragging: O
-    }, j, h] = (0, o.i)({
-        type: m,
-        item: y,
+        index: i,
+        listType: a,
+        itemId: s,
+        itemType: d,
+        itemPreviewProps: u,
+        onReorder: g,
+        onEnd: m,
+        disableDefaultPreview: x = !0
+    } = e, f = `${d}_${a}`, p = l.useCallback((e, t) => {
+        g?.(e, t)
+    }, [g]), h = l.useMemo(() => ({
+        id: s,
+        index: i,
+        itemType: d,
+        itemPreviewProps: u
+    }), [s, i, d, u]), [{
+        isDragging: _
+    }, A, I] = (0, r.i)({
+        type: f,
+        item: h,
         collect: e => ({
             isDragging: e.isDragging()
         }),
-        end: p
+        end: m
     });
     l.useEffect(() => {
-        g && h((0, c.n)(), {
+        x && I((0, c.n)(), {
             captureDraggingState: !0
         })
-    }, [h, g]);
+    }, [I, x]);
     let [{
-        dragSourcePosition: x
-    }, v] = (0, s.H)({
-        accept: m,
+        dragSourcePosition: j
+    }, v] = (0, o.H)({
+        accept: f,
         drop: e => {
             let t = e.index;
-            t !== r && (b(t, r), e.index = r)
+            t !== i && (p(t, i), e.index = i)
         },
         collect: e => {
             let t = e.getItem(),
@@ -104,70 +67,63 @@ function m(e) {
             }
         }
     });
-    return l.useLayoutEffect(() => (j(t), v(n), () => {
-        v(null), j(null)
-    }), [j, t, v, n]), {
-        isDragging: O,
-        dragSourcePosition: x
+    return l.useLayoutEffect(() => (A(t), v(n), () => {
+        v(null), A(null)
+    }), [A, t, v, n]), {
+        isDragging: _,
+        dragSourcePosition: j
     }
 }
-let b = l.memo(function(e) {
+let x = l.memo(function(e) {
     let {
         index: t,
         className: n,
-        draggingClassName: i,
-        dropBeforeClassName: o,
-        dropAfterClassName: s,
+        draggingClassName: a,
+        dropBeforeClassName: r,
+        dropAfterClassName: o,
         "aria-label": c,
-        children: u
-    } = e, d = g(e, ["index", "className", "draggingClassName", "dropBeforeClassName", "dropAfterClassName", "aria-label", "children"]), f = l.useRef(null), {
-        isDragging: b,
-        dragSourcePosition: y
-    } = m(p({
-        dragRef: f,
-        dropRef: f,
-        index: t
-    }, d)), O = null != y, j = O && t < y, h = O && t > y;
-    return (0, r.jsx)("div", {
-        ref: f,
-        className: a()(n, b && i, j && o, h && s),
+        children: d,
+        ...u
+    } = e, g = l.useRef(null), {
+        isDragging: x,
+        dragSourcePosition: f
+    } = m({
+        dragRef: g,
+        dropRef: g,
+        index: t,
+        ...u
+    }), p = null != f, h = p && t < f, _ = p && t > f;
+    return (0, i.jsx)("div", {
+        ref: g,
+        className: s()(n, x && a, h && r, _ && o),
         "aria-label": c,
-        children: u
+        children: d
     })
 });
 
-function y(e) {
-    var t, n;
+function f(e) {
     let {
-        buttonRef: l,
-        "aria-label": i,
-        iconSize: a = "sm"
-    } = e, o = g(e, ["buttonRef", "aria-label", "iconSize"]);
-    return (0, r.jsx)(u.un, {
-        body: f.intl.format(f.t["zvln/l"], {
-            emphasizeHook: e => (0, r.jsx)("strong", {
+        buttonRef: t,
+        "aria-label": n,
+        iconSize: l = "sm",
+        ...a
+    } = e;
+    return (0, i.jsx)(d.un, {
+        body: g.intl.format(g.t["zvln/l"], {
+            emphasizeHook: e => (0, i.jsx)("strong", {
                 children: e
             })
         }),
         ariaHidden: !0,
-        children: (0, r.jsx)(d.DUT, (t = p({
-            innerRef: l,
-            "aria-label": null != i ? i : f.intl.string(f.t.n9T3Hi),
-            "aria-keyshortcuts": "Control+D, Meta+D"
-        }, o), n = n = {
-            children: (0, r.jsx)(d.WP0, {
-                size: a,
+        children: (0, i.jsx)(u.DUT, {
+            innerRef: t,
+            "aria-label": n ?? g.intl.string(g.t.n9T3Hi),
+            "aria-keyshortcuts": "Control+D, Meta+D",
+            ...a,
+            children: (0, i.jsx)(u.WP0, {
+                size: l,
                 color: "currentColor"
             })
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
-            var n = Object.keys(e);
-            if (Object.getOwnPropertySymbols) {
-                var r = Object.getOwnPropertySymbols(e);
-                n.push.apply(n, r)
-            }
-            return n
-        })(Object(n)).forEach(function(e) {
-            Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-        }), t))
+        })
     })
 }

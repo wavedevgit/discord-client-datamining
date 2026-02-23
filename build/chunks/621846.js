@@ -1,70 +1,70 @@
-/** chunk id: 621846, original params: e,t,r (module,exports,require) **/
+/** chunk id: 621846, original params: e,t,a (module,exports,require) **/
 "use strict";
-r.d(t, {
-    H: () => f
-}), r(896048), r(747238);
-var n = r(627968),
-    a = r(64700),
-    s = r(492462),
-    i = r(960488),
-    l = r(397927),
-    o = r(716965),
-    c = r(102028),
-    d = r(533553),
-    u = r(985018),
-    p = r(694900);
+a.d(t, {
+    H: () => p
+});
+var s = a(627968),
+    r = a(64700),
+    n = a(492462),
+    i = a(873263),
+    l = a(397927),
+    o = a(716965),
+    c = a(102028),
+    d = a(533553),
+    u = a(985018),
+    h = a(694900);
 
-function f(e) {
+function p(e) {
     let {
         onUserCodeAccepted: t,
-        usePrefilledCode: r
-    } = e, [f, h] = a.useState(() => {
+        usePrefilledCode: a
+    } = e, [p, x] = r.useState(() => {
         let {
             user_code: e
-        } = s.parse(window.location.search);
-        return r && null != e ? e : ""
-    }), x = (0, i.zy)(), m = a.useCallback(() => {
-        (0, o.Vh)(x, "user_code_input_unauthorized")
-    }, [x]), {
-        manualSubmit: g,
-        error: _,
-        submitting: b
-    } = (0, c.e)(f, t, m);
-    return (0, n.jsxs)("div", {
-        className: p.Qs,
-        children: [(0, n.jsxs)("div", {
-            className: p.gx,
-            children: [(0, n.jsx)(l.Heading, {
+        } = n.parse(window.location.search);
+        return a ? e ?? "" : ""
+    }), f = (0, i.zy)(), _ = r.useCallback(() => {
+        (0, o.Vh)(f, "user_code_input_unauthorized")
+    }, [f]), {
+        manualSubmit: m,
+        error: g,
+        submitting: v
+    } = (0, c.e)(p, t, _);
+    return (0, s.jsxs)("div", {
+        className: h.Qs,
+        children: [(0, s.jsxs)("div", {
+            className: h.gx,
+            children: [(0, s.jsx)(l.Heading, {
                 variant: "heading-xl/extrabold",
-                className: p.Qq,
+                className: h.Qq,
                 children: u.intl.string(u.t.KYPNUv)
-            }), (0, n.jsxs)(l.BJc, {
+            }), (0, s.jsxs)(l.BJc, {
                 gap: 24,
-                children: [(0, n.jsx)(l.Text, {
+                children: [(0, s.jsx)(l.Text, {
                     variant: "text-md/medium",
                     color: "text-default",
-                    className: p.Qq,
+                    className: h.Qq,
                     children: u.intl.string(u.t.xRHk7f)
-                }), (0, n.jsx)(l.ksK, {
+                }), (0, s.jsx)(l.ksK, {
                     placeholder: u.intl.formatToPlainString(u.t["0tbz6x"], {
                         number: d.D.USER_CODE_LENGTH
                     }),
                     maxLength: d.D.USER_CODE_LENGTH,
                     autoComplete: "off",
                     autoFocus: !0,
-                    value: f,
-                    onChange: h,
-                    error: _,
+                    value: p,
+                    onChange: x,
+                    error: g,
                     fullWidth: !0
                 })]
             })]
-        }), (0, n.jsx)(l.Button, {
+        }), (0, s.jsx)(l.Button, {
             fullWidth: !0,
             variant: "primary",
             text: u.intl.string(u.t["3PatSz"]),
-            onClick: g,
-            loading: b,
-            disabled: f.length !== d.D.USER_CODE_LENGTH
+            onClick: m,
+            loading: v,
+            disabled: p.length !== d.D.USER_CODE_LENGTH
         })]
     })
 }

@@ -1,117 +1,89 @@
 /** chunk id: 99072, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => E
+    A: () => T
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(311907),
-    l = n(397927),
+var l = n(311907),
+    r = n(397927),
     a = n(456060),
     s = n(793574),
     o = n(688810),
-    c = n(572211),
-    u = n(354287),
-    d = n(112150),
-    p = n(15285),
+    d = n(572211),
+    c = n(354287),
+    u = n(112150),
+    _ = n(15285),
     m = n(72432),
-    f = n(616356),
-    g = n(760751),
-    _ = n(383501),
-    h = n(486020),
-    b = n(723702),
-    y = n(661191),
-    A = n(820672),
-    v = n(768349),
-    O = n(426127),
-    x = n(985018);
+    h = n(616356),
+    p = n(760751),
+    g = n(383501),
+    A = n(486020),
+    x = n(723702),
+    f = n(661191),
+    C = n(820672),
+    E = n(768349),
+    I = n(426127),
+    b = n(985018);
 
-function E(e) {
+function T(e) {
     let {
         currentUserId: t,
-        message: E,
-        application: j,
-        channel: C,
-        analyticsLocations: I,
-        onView: S
+        message: T,
+        application: v,
+        channel: S,
+        analyticsLocations: y,
+        onView: N
     } = e, {
-        staticBannerSrc: T,
-        videoBannerSrc: N,
-        bannerAspectRatio: P
-    } = (0, d.f)(j), w = h.Ay.getApplicationIconURL({
-        id: j.id,
-        icon: j.icon
-    }), R = (0, i.bG)([p.Ay, g.A], () => p.Ay.getVisibleRunningGames().find(e => {
+        staticBannerSrc: j,
+        videoBannerSrc: L,
+        bannerAspectRatio: R
+    } = (0, u.f)(v), P = A.Ay.getApplicationIconURL({
+        id: v.id,
+        icon: v.icon
+    }), M = (0, l.bG)([_.Ay, p.A], () => _.Ay.getVisibleRunningGames().find(e => {
         let {
             id: t
         } = e;
-        if (t === j.id) return !0;
-        let n = g.A.getGameByApplication(j);
+        if (t === v.id) return !0;
+        let n = p.A.getGameByApplication(v);
         return null != n && t === n.id
-    })), D = (0, i.bG)([f.A], () => f.A.getCurrentUserActiveStream()), L = (0, i.bG)([_.A], () => _.A.getChannelId()), M = y.default.extractTimestamp(E.id) + A.M < Date.now(), k = (0, r.jsx)(r.Fragment, {
-        children: (0, a.Wf)(E, C, t)
+    })), w = (0, l.bG)([h.A], () => h.A.getCurrentUserActiveStream()), D = (0, l.bG)([g.A], () => g.A.getChannelId()), k = f.default.extractTimestamp(T.id) + C.M < Date.now(), O = (0, i.jsx)(i.Fragment, {
+        children: (0, a.Wf)(T, S, t)
     }), {
         analyticsLocations: U
-    } = (0, o.Ay)(I, s.A.REQUEST_TO_STREAM_INVITE_EMBED), G = x.intl.string(O.default["5+172e"]), B = !1;
-    return M ? (G = x.intl.string(O.default.u4QmWl), B = !0) : null != D ? (G = x.intl.string(O.default.P0wwmM), B = !0) : L !== C.id ? (G = x.intl.string(O.default.qRXats), B = !0) : null == R && (G = x.intl.string(O.default["43zohO"]), B = !0), (0, r.jsx)(c.h, {
-        header: x.intl.string(O.default.nAyuPp),
-        title: j.name,
-        staticBannerSrc: T,
-        videoBannerSrc: N,
-        bannerAspectRatio: P,
-        iconSrc: null != w ? w : void 0,
-        info: k,
-        actions: E.author.id === t ? [] : [{
+    } = (0, o.Ay)(y, s.A.REQUEST_TO_STREAM_INVITE_EMBED), G = b.intl.string(I.default["5+172e"]), B = !1;
+    return k ? (G = b.intl.string(I.default.u4QmWl), B = !0) : null != w ? (G = b.intl.string(I.default.P0wwmM), B = !0) : D !== S.id ? (G = b.intl.string(I.default.qRXats), B = !0) : null == M && (G = b.intl.string(I.default["43zohO"]), B = !0), (0, i.jsx)(d.h, {
+        header: b.intl.string(I.default.nAyuPp),
+        title: v.name,
+        staticBannerSrc: j,
+        videoBannerSrc: L,
+        bannerAspectRatio: R,
+        iconSrc: P ?? void 0,
+        info: O,
+        actions: T.author.id === t ? [] : [{
             label: G,
-            trackingArea: u.kY.STREAM,
+            trackingArea: c.kY.STREAM,
             disabled: B,
             onClick: () => {
-                null != R && ((0, b.isWindows)() ? (0, m.A)(R.pid) : (0, l.mMO)(async () => {
+                null != M && ((0, x.isWindows)() ? (0, m.A)(M.pid) : (0, r.mMO)(async () => {
                     let {
                         default: e
                     } = await Promise.all([n.e("96811"), n.e("48697")]).then(n.bind(n, 648230));
-                    return t => {
-                        var n, i;
-                        return (0, r.jsx)(e, (n = function(e) {
-                            for (var t = 1; t < arguments.length; t++) {
-                                var n = null != arguments[t] ? arguments[t] : {},
-                                    r = Object.keys(n);
-                                "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                                    return Object.getOwnPropertyDescriptor(n, e).enumerable
-                                }))), r.forEach(function(t) {
-                                    var r;
-                                    r = n[t], t in e ? Object.defineProperty(e, t, {
-                                        value: r,
-                                        enumerable: !0,
-                                        configurable: !0,
-                                        writable: !0
-                                    }) : e[t] = r
-                                })
-                            }
-                            return e
-                        }({}, t), i = i = {
-                            analyticsLocations: U
-                        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
-                            var n = Object.keys(e);
-                            if (Object.getOwnPropertySymbols) {
-                                var r = Object.getOwnPropertySymbols(e);
-                                n.push.apply(n, r)
-                            }
-                            return n
-                        })(Object(i)).forEach(function(e) {
-                            Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
-                        }), n))
-                    }
+                    return t => (0, i.jsx)(e, {
+                        ...t,
+                        analyticsLocations: U
+                    })
                 }))
             }
         }],
         trackingConfig: {
-            id: j.id,
-            linkType: v.J.REQUEST_TO_STREAM,
-            guildId: C.guild_id,
-            channelId: C.id,
-            messageId: E.id,
-            onView: S,
-            isDeadEnd: M
+            id: v.id,
+            linkType: E.J.REQUEST_TO_STREAM,
+            guildId: S.guild_id,
+            channelId: S.id,
+            messageId: T.id,
+            onView: N,
+            isDeadEnd: k
         }
     })
 }

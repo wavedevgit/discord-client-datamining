@@ -1,120 +1,120 @@
 /** chunk id: 676526, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    h: () => h
+    h: () => I
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
 var l = n(503698),
-    i = n.n(l),
-    a = n(688807),
+    a = n.n(l),
+    s = n(688807),
+    r = n(152621),
     o = n(287809),
-    s = n(735321),
-    c = n(451395),
+    c = n(735321),
+    d = n(451395),
     u = n(823016),
-    d = n(788593),
-    f = n(858808),
-    p = n(685049),
-    g = n(973397),
-    m = n(617086),
-    b = n(985018),
-    y = n(461349),
-    O = n(616060);
+    g = n(788593),
+    m = n(858808),
+    x = n(685049),
+    f = n(617086),
+    p = n(985018),
+    h = n(461349),
+    _ = n(616060);
 
-function j(e) {
+function A(e) {
     let {
         index: t,
         widgetType: n,
         game: l,
-        coverImageUrl: i,
-        gameName: a,
-        children: o
+        coverImageUrl: a,
+        gameName: s,
+        children: r
     } = e, {
-        manageFocusOnReorder: d
+        manageFocusOnReorder: o
     } = (0, u.r)();
-    return (0, r.jsx)(c.mG, {
+    return (0, i.jsx)(d.mG, {
         index: t,
         itemId: l.applicationId,
         listType: n,
         itemType: "GAME_COVER",
         itemPreviewProps: {
-            imageSrc: i,
-            gameName: a
+            imageSrc: a,
+            gameName: s
         },
-        "aria-label": b.intl.formatToPlainString(b.t["0dR3gw"], {
+        "aria-label": p.intl.formatToPlainString(p.t["0dR3gw"], {
             positionNumber: t + 1
         }),
-        onReorder: (e, t) => (0, s.Un)(n, e, t),
-        onEnd: () => d(l.applicationId),
-        className: O.kL,
-        dropBeforeClassName: O.A,
-        dropAfterClassName: O.Ze,
-        draggingClassName: O.Id,
-        children: (0, r.jsx)("div", {
-            className: O.An,
-            children: o
+        onReorder: (e, t) => (0, c.Un)(n, e, t),
+        onEnd: () => o(l.applicationId),
+        className: _.kL,
+        dropBeforeClassName: _.A,
+        dropAfterClassName: _.Ze,
+        draggingClassName: _.Id,
+        children: (0, i.jsx)("div", {
+            className: _.An,
+            children: r
         })
     })
 }
 
-function h(e) {
+function I(e) {
     let {
         game: t,
         userId: n,
         widgetType: l,
-        guildId: s,
-        channelId: b,
-        disableInteraction: h = !1,
-        index: x,
+        guildId: c,
+        channelId: p,
+        disableInteraction: I = !1,
+        index: j,
         onRemoveGame: v,
-        coverRef: _
+        coverRef: E
     } = e, {
-        coverImageUrl: I,
-        gameName: w,
-        isLoading: A
-    } = (0, g.A)(t.applicationId), {
-        registerDragHandleRef: P
-    } = (0, u.r)(), E = (0, m.A)(t.applicationId).length > 0, S = o.default.getCurrentUser(), T = (null == S ? void 0 : S.id) === n, C = !h && T, {
-        isDragging: N
-    } = (0, a.V)(e => ({
+        coverImageUrl: T,
+        gameName: b,
+        isLoading: y
+    } = (0, r.A)(t.applicationId), {
+        registerDragHandleRef: N
+    } = (0, u.r)(), S = (0, f.A)(t.applicationId).length > 0, C = o.default.getCurrentUser(), R = C?.id === n, k = !I && R, {
+        isDragging: L
+    } = (0, s.V)(e => ({
         isDragging: e.isDragging()
-    })), k = () => (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(d.A, {
-            imageSrc: I,
-            gameName: w,
+    })), O = () => (0, i.jsxs)(i.Fragment, {
+        children: [(0, i.jsx)(g.A, {
+            imageSrc: T,
+            gameName: b,
             applicationId: t.applicationId,
             userId: n,
-            disableInteraction: h,
-            className: i()(E ? O.kO : void 0, null == I || h ? void 0 : y.iL),
-            hideTooltip: N,
-            coverRef: _
-        }), C && (0, r.jsx)(c.jV, {
-            buttonRef: P(t.applicationId),
-            className: O.BU
-        }), !h && (0, r.jsx)(p.d, {
+            disableInteraction: I,
+            className: a()(S ? _.kO : void 0, null == T || I ? void 0 : h.iL),
+            hideTooltip: L,
+            coverRef: E
+        }), k && (0, i.jsx)(d.jV, {
+            buttonRef: N(t.applicationId),
+            className: _.BU
+        }), !I && (0, i.jsx)(x.d, {
             userId: n,
             applicationId: t.applicationId,
-            guildId: s,
-            channelId: b,
-            className: O.Ez
-        }), C && (0, r.jsx)(f.A, {
+            guildId: c,
+            channelId: p,
+            className: _.Ez
+        }), k && (0, i.jsx)(m.A, {
             game: t,
             widgetType: l,
-            className: O.vS,
+            className: _.vS,
             iconSize: "xs",
-            onRemove: () => null == v ? void 0 : v(t.applicationId)
+            onRemove: () => v?.(t.applicationId)
         })]
     });
-    return A ? (0, r.jsx)("div", {
-        className: y.mD
-    }) : C ? (0, r.jsx)(j, {
+    return y ? (0, i.jsx)("div", {
+        className: h.mD
+    }) : k ? (0, i.jsx)(A, {
         widgetType: l,
-        index: null != x ? x : 0,
+        index: j ?? 0,
         game: t,
-        coverImageUrl: I,
-        gameName: w,
-        children: k()
-    }) : (0, r.jsx)("div", {
-        className: O.kL,
-        children: k()
+        coverImageUrl: T,
+        gameName: b,
+        children: O()
+    }) : (0, i.jsx)("div", {
+        className: _.kL,
+        children: O()
     })
 }

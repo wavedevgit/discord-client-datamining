@@ -1,30 +1,24 @@
-/** chunk id: 805739, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    A: () => l
+/** chunk id: 805739, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    A: () => r
 });
-var r = n(985018);
-
-function i(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-let a = ["a", "b", "c", "d"],
-    o = e => e;
+var l = i(985018);
+let n = ["a", "b", "c", "d"],
+    a = e => e;
 
 function s(e, t) {
-    let n = {},
-        r = Math.min(e.length, a.length);
-    for (let i = 0; i < r; ++i) n[a[i]] = (n, r) => t(e[i], r);
-    return n
+    let i = {},
+        l = Math.min(e.length, n.length);
+    for (let a = 0; a < l; ++a) i[n[a]] = (i, l) => t(e[a], l);
+    return i
 }
-class l {
+class r {
+    items;
+    constructor(e) {
+        this.items = e
+    }
     asString() {
-        return this.transformed(o)
+        return this.transformed(a)
     }
     isEmpty() {
         return 0 === this.items.length
@@ -36,14 +30,11 @@ class l {
             case 1:
                 return e(this.items[0], "");
             case 2:
-                return r.intl.format(r.t.GENERIC_FORMATTED_LIST_TWO, s(this.items, e));
+                return l.intl.format(l.t.GENERIC_FORMATTED_LIST_TWO, s(this.items, e));
             case 3:
-                return r.intl.format(r.t.GENERIC_FORMATTED_LIST_THREE, s(this.items, e));
+                return l.intl.format(l.t.GENERIC_FORMATTED_LIST_THREE, s(this.items, e));
             default:
-                return r.intl.format(r.t.GENERIC_FORMATTED_LIST_FOUR, s(this.items, e))
+                return l.intl.format(l.t.GENERIC_FORMATTED_LIST_FOUR, s(this.items, e))
         }
-    }
-    constructor(e) {
-        i(this, "items", void 0), this.items = e
     }
 }

@@ -1,75 +1,66 @@
 /** chunk id: 752412, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => _
-}), n(896048);
-var r = n(73153),
-    i = n(827343),
+    A: () => g
+});
+var i = n(73153),
+    r = n(827343),
     l = n(272355),
     a = n(15285),
     s = n(869146),
     o = n(430452),
-    c = n(531685),
-    u = n(652215),
-    d = n(731854);
-
-function p(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-let h = new Set,
-    f = new Set,
-    g = null;
+    d = n(531685),
+    c = n(652215),
+    u = n(731854);
+let A = new Set,
+    h = new Set,
+    _ = null;
 
 function m() {
-    for (let e of h) i.A.setDisableLocalVideo(e, u.bb8.MANUAL_ENABLED, d.x.DEFAULT, !1);
-    f.clear(), h.clear()
+    for (let e of A) r.A.setDisableLocalVideo(e, c.bb8.MANUAL_ENABLED, u.x.DEFAULT, !1);
+    h.clear(), A.clear()
 }
-class A extends l.A {
+class p extends l.A {
     _initialize() {
-        r.h.subscribe("RTC_CONNECTION_VIDEO", this.handleIncomingVideo), r.h.subscribe("AUDIO_SET_LOCAL_VIDEO_DISABLED", this.handleManualLocalVideoToggle), r.h.subscribe("WINDOW_VISIBILITY_CHANGE", this.handleWindowVisibilityChange), r.h.subscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect), s.A.addChangeListener(this.handlePopoutChange)
+        i.h.subscribe("RTC_CONNECTION_VIDEO", this.handleIncomingVideo), i.h.subscribe("AUDIO_SET_LOCAL_VIDEO_DISABLED", this.handleManualLocalVideoToggle), i.h.subscribe("WINDOW_VISIBILITY_CHANGE", this.handleWindowVisibilityChange), i.h.subscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect), s.A.addChangeListener(this.handlePopoutChange)
     }
     _terminate() {
-        r.h.unsubscribe("RTC_CONNECTION_VIDEO", this.handleIncomingVideo), r.h.unsubscribe("AUDIO_SET_LOCAL_VIDEO_DISABLED", this.handleManualLocalVideoToggle), r.h.unsubscribe("WINDOW_VISIBILITY_CHANGE", this.handleWindowVisibilityChange), r.h.unsubscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect), s.A.removeChangeListener(this.handlePopoutChange), m(), g = null
+        i.h.unsubscribe("RTC_CONNECTION_VIDEO", this.handleIncomingVideo), i.h.unsubscribe("AUDIO_SET_LOCAL_VIDEO_DISABLED", this.handleManualLocalVideoToggle), i.h.unsubscribe("WINDOW_VISIBILITY_CHANGE", this.handleWindowVisibilityChange), i.h.unsubscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect), s.A.removeChangeListener(this.handlePopoutChange), m(), _ = null
     }
     handleIncomingVideo(e) {
         let {
             userId: t,
             context: n,
-            streamId: r
+            streamId: i
         } = e;
-        if (n !== d.x.DEFAULT || null == r) return;
+        if (n !== u.x.DEFAULT || null == i) return;
         let l = null != a.Ay.getVisibleGame(),
-            p = c.A.isVisible(),
-            g = s.A.getWindowVisible(u.MLl.CHANNEL_CALL_POPOUT),
-            m = o.A.isLocalVideoDisabled(t, n),
-            A = f.has(t);
-        !l || p || g || m || A || (h.add(t), i.A.setDisableLocalVideo(t, u.bb8.DISABLED, n, !1))
+            _ = d.A.isVisible(),
+            m = s.A.getWindowVisible(c.MLl.CHANNEL_CALL_POPOUT),
+            p = o.Ay.isLocalVideoDisabled(t, n),
+            g = h.has(t);
+        !l || _ || m || p || g || (A.add(t), r.A.setDisableLocalVideo(t, c.bb8.DISABLED, n, !1))
     }
     handleManualLocalVideoToggle(e) {
         let {
             userId: t,
             persist: n
         } = e;
-        n && (f.add(t), h.delete(t))
+        n && (h.add(t), A.delete(t))
     }
-    constructor(...e) {
-        super(...e), p(this, "handleWindowVisibilityChange", e => {
-            let {
-                visible: t
-            } = e;
-            t && m()
-        }), p(this, "handleVoiceChannelSelect", e => {
-            let {
-                channelId: t
-            } = e;
-            t !== g && (m(), g = t)
-        }), p(this, "handlePopoutChange", () => {
-            s.A.getWindowVisible(u.MLl.CHANNEL_CALL_POPOUT) && m()
-        })
+    handleWindowVisibilityChange = e => {
+        let {
+            visible: t
+        } = e;
+        t && m()
+    };
+    handleVoiceChannelSelect = e => {
+        let {
+            channelId: t
+        } = e;
+        t !== _ && (m(), _ = t)
+    };
+    handlePopoutChange = () => {
+        s.A.getWindowVisible(c.MLl.CHANNEL_CALL_POPOUT) && m()
     }
 }
-let _ = new A
+let g = new p

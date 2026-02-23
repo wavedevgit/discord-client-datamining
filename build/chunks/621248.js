@@ -1,19 +1,19 @@
 /** chunk id: 621248, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    J: () => i,
+    J: () => r,
     x: () => l
 });
-var r = n(73153);
+var i = n(73153);
 
-function i(e) {
-    r.h.dispatch({
+function r(e) {
+    i.h.dispatch({
         type: "PUBLIC_UPSELL_NOTICE_DISMISS",
         guildId: e
     })
 }
 
 function l(e) {
-    r.h.dispatch({
+    i.h.dispatch({
         type: "MAX_MEMBER_COUNT_NOTICE_DISMISS",
         guildId: e
     })

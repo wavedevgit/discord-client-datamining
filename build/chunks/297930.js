@@ -6,39 +6,39 @@ var d = s(627968);
 s(64700);
 var i = s(503698),
     c = s.n(i),
-    l = s(225180),
-    m = s(441272);
+    m = s(225180),
+    l = s(441272);
 
 function r(e) {
     let {
         instance: a
-    } = e, s = (0, l.A)(a.gameId, "cover");
+    } = e, s = (0, m.A)(a.gameId, "cover");
     return (0, d.jsxs)("div", {
-        className: m.kL,
+        className: l.kL,
         children: [(0, d.jsxs)("div", {
-            className: c()(m.Su, m.TK),
+            className: c()(l.Su, l.TK),
             children: [(0, d.jsx)("div", {
-                className: c()(m.w1, m.Uf)
+                className: c()(l.w1, l.Uf)
             }), (0, d.jsx)("div", {
-                className: c()(m.w1, m.Gj)
+                className: c()(l.w1, l.Gj)
             })]
         }), (0, d.jsxs)("div", {
-            className: c()(m.Su, m._3),
+            className: c()(l.Su, l._3),
             children: [(0, d.jsx)("div", {
-                className: c()(m.w1, m.Uf)
+                className: c()(l.w1, l.Uf)
             }), (0, d.jsx)("div", {
-                className: c()(m.w1, m.Gj)
+                className: c()(l.w1, l.Gj)
             })]
         }), (0, d.jsxs)("div", {
-            className: c()(m.Su, m.Tp),
+            className: c()(l.Su, l.Tp),
             children: [(0, d.jsx)("img", {
                 src: s,
                 alt: "",
-                className: m.Sl
+                className: l.Sl
             }), (0, d.jsx)("div", {
-                className: c()(m.w1, m.Uf)
+                className: c()(l.w1, l.Uf)
             }), (0, d.jsx)("div", {
-                className: c()(m.w1, m.Gj)
+                className: c()(l.w1, l.Gj)
             })]
         })]
     })

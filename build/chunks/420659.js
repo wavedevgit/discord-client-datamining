@@ -1,21 +1,18 @@
-/** chunk id: 420659, original params: e,t,r (module,exports,require) **/
-r.d(t, {
+/** chunk id: 420659, original params: e,t,s (module,exports,require) **/
+s.d(t, {
     A: () => c
 });
-var n = r(311907),
-    i = r(734057),
-    l = r(71393),
-    s = r(309010),
-    a = r(287809),
-    o = r(476697);
+var r = s(311907),
+    i = s(734057),
+    n = s(71393),
+    l = s(309010),
+    a = s(287809),
+    o = s(476697);
 
 function c(e) {
-    let t = (0, n.bG)([a.default], () => a.default.getCurrentUser()),
-        r = (0, n.bG)([s.A, i.A], () => i.A.getChannel(s.A.getVoiceChannelId())),
-        c = null == r ? void 0 : r.getGuildId(),
-        d = (0, n.bG)([l.A], () => {
-            var e;
-            return null != c ? null == (e = l.A.getGuild(c)) ? void 0 : e.premiumTier : null
-        });
+    let t = (0, r.bG)([a.default], () => a.default.getCurrentUser()),
+        s = (0, r.bG)([l.A, i.A], () => i.A.getChannel(l.A.getVoiceChannelId())),
+        c = s?.getGuildId(),
+        d = (0, r.bG)([n.A], () => null != c ? n.A.getGuild(c)?.premiumTier : null);
     return (0, o.A)(e, t, d)
 }

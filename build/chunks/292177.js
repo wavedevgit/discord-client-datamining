@@ -1,16 +1,16 @@
-/** chunk id: 292177, original params: e,t,n (module,exports,require) **/
-function r(e) {
+/** chunk id: 292177, original params: e,t,r (module,exports,require) **/
+function n(e) {
     let t = e;
     for (; null != t && t !== document.body;) {
-        if ((null == t ? void 0 : t.getAttribute("aria-hidden")) === "true") return !0;
+        if (t?.getAttribute("aria-hidden") === "true") return !0;
         t = t.parentElement
     }
     return !1
 }
-n.d(t, {
-    i6: () => r,
+r.d(t, {
+    i6: () => n,
     vN: () => l,
     ye: () => a
-}), n(896048);
-let a = Array.from(n(944181).aria.keys()),
-    l = a.map(e => "[".concat(e, "]")).join(", ")
+});
+let a = Array.from(r(944181).aria.keys()),
+    l = a.map(e => `[${e}]`).join(", ")

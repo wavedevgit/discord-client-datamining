@@ -1,13 +1,14 @@
 /** chunk id: 595567, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
     Q: () => o
 });
-var r = n(627968),
-    l = n(64700),
-    i = n(435371),
-    s = n(93055),
+var i = n(627968),
+    s = n(64700),
+    l = n(435371),
+    r = n(93055),
     a = n(985018);
-let o = l.memo(function(e) {
+let o = s.memo(function(e) {
     let {
         "aria-label": t = !1,
         children: n
@@ -15,8 +16,8 @@ let o = l.memo(function(e) {
         let {
             favoriteAdded: e,
             clearFavoriteAdded: t
-        } = (0, s.CJ)();
-        return l.useEffect(() => {
+        } = (0, r.CJ)();
+        return s.useEffect(() => {
             if (e) {
                 let e = setTimeout(() => {
                     t()
@@ -27,7 +28,7 @@ let o = l.memo(function(e) {
             }
         }, [e, t]), e
     }();
-    return o ? (0, r.jsx)(i.m_, {
+    return o ? (0, i.jsx)(l.m_, {
         forceOpen: o,
         hideOnClick: !0,
         spacing: 12,
@@ -35,7 +36,7 @@ let o = l.memo(function(e) {
         align: "center",
         text: a.intl.string(a.t["4tSWQg"]),
         "aria-label": t,
-        children: (0, r.jsx)("div", {
+        children: (0, i.jsx)("div", {
             children: n
         })
     }) : n

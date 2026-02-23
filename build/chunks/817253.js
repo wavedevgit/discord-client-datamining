@@ -2,11 +2,11 @@
 n.d(t, {
     A: () => o
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(638075),
-    l = n(763754),
-    a = n(888675),
+var l = n(638075),
+    a = n(763754),
+    r = n(888675),
     s = n(985018);
 
 function o(e) {
@@ -14,14 +14,14 @@ function o(e) {
         message: t,
         usernameHook: o,
         compact: c
-    } = e, u = (0, l.Ay)(t), d = o(u), p = i.A.getSystemMessageUserJoin(t.id), m = s.intl.format(p, {
-        username: u.nick,
-        usernameHook: d
+    } = e, d = (0, a.Ay)(t), u = o(d), m = l.A.getSystemMessageUserJoin(t.id), _ = s.intl.format(m, {
+        username: d.nick,
+        usernameHook: u
     });
-    return (0, r.jsx)(a.A, {
+    return (0, i.jsx)(r.A, {
         icon: n(394803),
         timestamp: t.timestamp,
         compact: c,
-        children: m
+        children: _
     })
 }

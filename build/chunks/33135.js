@@ -1,116 +1,116 @@
 /** chunk id: 33135, original params: e,t,r (module,exports,require) **/
 r.d(t, {
     A: () => k
-}), r(321073), r(896048), r(114821), r(339614), r(667532);
+}), r(321073), r(667532);
 var n = r(627968),
     a = r(64700),
     i = r(735438),
-    l = r.n(i),
-    s = r(311907),
+    s = r.n(i),
+    l = r(311907),
     o = r(397927),
     d = r(233545),
-    c = r(83257),
-    u = r(361739),
+    u = r(83257),
+    c = r(361739),
     m = r(235986),
     p = r(97469),
-    y = r(544028),
-    h = r(734057),
-    g = r(696451),
-    A = r(383501),
-    f = r(412780),
-    v = r(287809),
+    h = r(544028),
+    y = r(734057),
+    A = r(696451),
+    f = r(383501),
+    g = r(412780),
+    F = r(287809),
     b = r(427262),
-    C = r(817006),
-    E = r(121614),
+    v = r(817006),
+    C = r(121614),
     x = r(663272),
-    D = r(820931),
-    R = r(307414),
-    F = r(244920),
+    E = r(820931),
+    D = r(307414),
+    R = r(244920),
     S = r(652215),
     j = r(731854),
-    P = r(985018),
-    N = r(518959);
+    N = r(985018),
+    I = r(518959);
 
-function I(e, t, r, a, i) {
-    let s = [];
-    if (null == t) return s;
+function P(e, t, r, a, i) {
+    let l = [];
+    if (null == t) return l;
     let {
-        transport: c,
+        transport: u,
         rtp: {
             inbound: p,
-            outbound: y
+            outbound: h
         },
-        camera: h
+        camera: y
     } = t;
-    if (s.push({
-            section: u.Fq.HEADER,
-            label: P.intl.formatToPlainString(P.t.PK5fOC, {
+    if (l.push({
+            section: c.Fq.HEADER,
+            label: N.intl.formatToPlainString(N.t.PK5fOC, {
                 context: e
             })
-        }), null != c && s.push({
-            section: (0, f.Xi)(e, S.zWA.TRANSPORT, r),
-            label: P.intl.string(P.t.wU9IN2),
-            element: F.A,
+        }), null != u && l.push({
+            section: (0, g.Xi)(e, S.zWA.TRANSPORT, r),
+            label: N.intl.string(N.t.wU9IN2),
+            element: R.A,
             elementProps: {
                 context: e,
                 index: r
             }
-        }), null == y || l().isEmpty(y) || s.push({
-            section: (0, f.Xi)(e, S.zWA.OUTBOUND, r),
-            label: P.intl.string(P.t["3u0gII"]),
-            element: D.A,
+        }), null == h || s().isEmpty(h) || l.push({
+            section: (0, g.Xi)(e, S.zWA.OUTBOUND, r),
+            label: N.intl.string(N.t["3u0gII"]),
+            element: E.A,
             elementProps: {
                 context: e,
                 index: r
             }
-        }), null != h && s.push({
-            section: (0, f.Xi)(e, S.zWA.CAMERA, r),
-            label: P.intl.string(P.t["2AGBWH"]),
-            element: C.A,
+        }), null != y && l.push({
+            section: (0, g.Xi)(e, S.zWA.CAMERA, r),
+            label: N.intl.string(N.t["2AGBWH"]),
+            element: v.A,
             elementProps: {
                 context: e,
                 index: r,
-                camera: h
+                camera: y
             }
-        }), null != p && !l().isEmpty(p)) {
+        }), null != p && !s().isEmpty(p)) {
         let t = [];
-        Object.keys(p).forEach(l => {
-            let s, c = v.default.getUser(l),
-                u = g.Ay.getNick(i, l),
-                y = (0, f.Xi)(e, l, r);
-            null != p[l] && p[l].length > 0 && t.push({
-                section: y,
-                label: null != c ? (0, n.jsx)(m.A, {
+        Object.keys(p).forEach(s => {
+            let l, u = F.default.getUser(s),
+                c = A.Ay.getNick(i, s),
+                h = (0, g.Xi)(e, s, r);
+            null != p[s] && p[s].length > 0 && t.push({
+                section: h,
+                label: null != u ? (0, n.jsx)(m.A, {
                     align: m.A.Align.CENTER,
                     children: (0, n.jsx)(m.A.Child, {
                         children: (0, n.jsxs)(m.A, {
                             align: m.A.Align.CENTER,
                             children: [(0, n.jsx)(o.euF, {
                                 size: o._3J.SIZE_24,
-                                src: c.getAvatarURL(i, 24),
-                                "aria-label": c.username,
-                                className: N.my
+                                src: u.getAvatarURL(i, 24),
+                                "aria-label": u.username,
+                                className: I.my
                             }), (0, n.jsx)("span", {
-                                className: N.Xh,
-                                children: null != u ? u : b.Ay.getName(c)
+                                className: I.Xh,
+                                children: c ?? b.Ay.getName(u)
                             })]
                         })
                     })
-                }) : (s = null != u ? u : l, (0, n.jsx)(m.A, {
+                }) : (l = c ?? s, (0, n.jsx)(m.A, {
                     align: m.A.Align.CENTER,
                     children: (0, n.jsx)(m.A.Child, {
                         children: (0, n.jsx)(m.A, {
                             align: m.A.Align.CENTER,
                             children: (0, n.jsx)("span", {
-                                className: N.Xh,
-                                children: s
+                                className: I.Xh,
+                                children: l
                             })
                         })
                     })
                 })),
-                ariaLabel: null != c ? c.tag : l,
+                ariaLabel: null != u ? u.tag : s,
                 onClick: () => {
-                    d.c4(y)
+                    d.c4(h)
                 },
                 element: x.A,
                 elementProps: {
@@ -119,81 +119,80 @@ function I(e, t, r, a, i) {
                     videoStreams: a
                 }
             })
-        }), t.length > 0 && (s.push({
-            section: u.Fq.HEADER,
-            label: P.intl.string(P.t.SJmZaq)
-        }), s.push(...t))
+        }), t.length > 0 && (l.push({
+            section: c.Fq.HEADER,
+            label: N.intl.string(N.t.SJmZaq)
+        }), l.push(...t))
     }
-    return s
+    return l
 }
 
 function k() {
-    var e, t;
     let {
-        defaultStats: r,
-        streamStats: i
-    } = (0, s.bG)([f.Ay], () => ({
-        defaultStats: f.Ay.getAllStats(j.x.DEFAULT),
-        streamStats: f.Ay.getAllStats(j.x.STREAM)
-    }), [], s.My), l = (0, s.bG)([A.A, h.A], () => h.A.getChannel(A.A.getChannelId())), m = null == (e = r.concat(i).find(e => null != e.screenshare)) ? void 0 : e.screenshare, g = null == (t = i.find(e => null != e.clips)) ? void 0 : t.clips, v = (0, s.bG)([y.A], () => y.A.theme), b = (0, p.NC)(), C = (0, s.bG)([f.Ay], () => f.Ay.getSection()), x = function(e) {
+        defaultStats: e,
+        streamStats: t
+    } = (0, l.bG)([g.Ay], () => ({
+        defaultStats: g.Ay.getAllStats(j.x.DEFAULT),
+        streamStats: g.Ay.getAllStats(j.x.STREAM)
+    }), [], l.My), r = (0, l.bG)([f.A, y.A], () => y.A.getChannel(f.A.getChannelId())), i = e.concat(t).find(e => null != e.screenshare)?.screenshare, s = t.find(e => null != e.clips)?.clips, m = (0, l.bG)([h.A], () => h.A.theme), A = (0, p.NC)(), F = (0, l.bG)([g.Ay], () => g.Ay.getSection()), b = function(e) {
         let {
             defaultStats: t,
             streamStats: r,
             videoStreams: a,
             screenshare: i,
-            clips: l,
-            channel: s,
+            clips: s,
+            channel: l,
             connectionState: d
-        } = e, c = t.flatMap((e, t) => I(j.x.DEFAULT, e, t, a, null == s ? void 0 : s.getGuildId())), m = r.flatMap((e, t) => I(j.x.STREAM, e, t, a, null == s ? void 0 : s.getGuildId())), p = [], y = [], h = {
-            section: u.Fq.DIVIDER
+        } = e, u = t.flatMap((e, t) => P(j.x.DEFAULT, e, t, a, l?.getGuildId())), m = r.flatMap((e, t) => P(j.x.STREAM, e, t, a, l?.getGuildId())), p = [], h = [], y = {
+            section: c.Fq.DIVIDER
         };
-        return null != i && (p.push(h), p.push({
+        return null != i && (p.push(y), p.push({
             section: S.zWA.SCREENSHARE,
-            label: P.intl.string(P.t["gWbr/U"]),
-            element: R.A,
+            label: N.intl.string(N.t["gWbr/U"]),
+            element: D.A,
             elementProps: {
                 screenshare: i
             }
-        })), null != l && (y.push(h), y.push({
+        })), null != s && (h.push(y), h.push({
             section: S.zWA.CLIPS,
-            label: P.intl.string(P.t.MKrFKE),
-            element: E.A,
+            label: N.intl.string(N.t.MKrFKE),
+            element: C.A,
             elementProps: {
-                clips: l
+                clips: s
             }
-        })), m.length > 0 && m.unshift(h), [...null != s ? [{
-            section: u.Fq.CUSTOM,
+        })), m.length > 0 && m.unshift(y), [...null != l ? [{
+            section: c.Fq.CUSTOM,
             label: "Channel Name",
             element: () => (0, n.jsx)(o.Heading, {
-                className: N.HA,
+                className: I.HA,
                 variant: "heading-lg/semibold",
-                children: s.name
+                children: l.name
             })
         }] : [], {
-            section: u.Fq.CUSTOM,
+            section: c.Fq.CUSTOM,
             label: "Connection State",
             element: () => (0, n.jsx)(o.Heading, {
-                className: N.HA,
+                className: I.HA,
                 variant: "heading-md/normal",
                 children: d === S.S7L.RTC_CONNECTED ? "Connected" : "Disconnected"
             })
-        }, ...c, ...m, ...p, ...y]
+        }, ...u, ...m, ...p, ...h]
     }({
-        defaultStats: r,
-        streamStats: i,
-        videoStreams: (0, s.bG)([f.Ay], () => f.Ay.getVideoStreams()),
-        screenshare: m,
-        clips: g,
-        channel: l,
-        connectionState: (0, s.bG)([A.A], () => A.A.getState())
+        defaultStats: e,
+        streamStats: t,
+        videoStreams: (0, l.bG)([g.Ay], () => g.Ay.getVideoStreams()),
+        screenshare: i,
+        clips: s,
+        channel: r,
+        connectionState: (0, l.bG)([f.A], () => f.A.getState())
     });
     return a.useEffect(() => () => {
         d.VN()
-    }, []), (0, n.jsx)(c.Ay, {
-        theme: v,
-        sidebarTheme: b,
-        section: C,
+    }, []), (0, n.jsx)(u.Ay, {
+        theme: m,
+        sidebarTheme: A,
+        section: F,
         onSetSection: d.c4,
-        sections: x
+        sections: b
     })
 }

@@ -1,80 +1,80 @@
 /** chunk id: 406406, original params: t,e,n (module,exports,require) **/
 n.d(e, {
-    default: () => O
+    default: () => m
 });
 var l = n(627968);
 n(64700);
-var r = n(397927),
-    i = n(442433),
-    u = n(820284),
-    o = n(50268),
-    a = n(247191),
-    c = n(971961),
-    s = n(753333),
-    d = n(544255),
-    g = n(28314),
-    E = n(24661),
-    f = n(288357),
-    A = n(587018),
-    y = n(675623),
-    p = n(174966),
-    b = n(652215),
-    v = n(985018);
+var i = n(397927),
+    r = n(442433),
+    a = n(820284),
+    d = n(50268),
+    s = n(247191),
+    u = n(971961),
+    o = n(753333),
+    c = n(544255),
+    E = n(28314),
+    A = n(24661),
+    g = n(288357),
+    _ = n(587018),
+    h = n(675623),
+    T = n(174966),
+    f = n(652215),
+    y = n(985018);
 
-function O(t) {
+function m(t) {
     let {
         guildEventId: e,
         recurrenceId: n,
-        channel: O,
-        guild: h,
-        analyticsContext: _,
-        isRecurrenceItem: m = !1,
-        onSelect: T,
-        target: j
-    } = t, S = (0, A.A)({
+        channel: m,
+        guild: v,
+        analyticsContext: p,
+        isRecurrenceItem: N = !1,
+        onSelect: S,
+        target: G
+    } = t, D = (0, _.A)({
         guildEventId: e,
         recurrenceId: n,
-        guild: h,
-        channel: O
-    }), w = (0, d.A)({
+        guild: v,
+        channel: m
+    }), b = (0, c.A)({
         guildEventId: e,
         recurrenceId: n,
-        guild: h,
-        channel: O
-    }), D = (0, g.A)({
+        guild: v,
+        channel: m
+    }), I = (0, E.A)({
         guildEventId: e,
-        guild: h,
-        channel: O,
+        guild: v,
+        channel: m,
         recurrenceId: n,
-        isRecurrenceItem: m
-    }), N = (0, E.A)(e, h, O), P = (0, p.A)(e, h, O), G = (0, s.A)(e, h.id, n), I = (0, c.A)(e, j), C = (0, f.A)(e), x = (0, o.A)({
+        isRecurrenceItem: N
+    }), C = (0, A.A)(e, v, m), x = (0, T.A)(e, v, m), w = (0, o.A)(e, v.id, n), O = (0, u.A)(e, G), R = (0, g.A)(e), j = (0, d.A)({
         id: e,
-        label: v.intl.string(v.t.WZwPO4)
-    }), R = (0, o.A)({
+        label: y.intl.string(y.t.WZwPO4)
+    }), L = (0, d.A)({
         id: n,
-        label: v.intl.string(v.t.NZRGQo)
-    }), L = (0, a.A)(e, h.id, O, n), U = (0, y.A)({
+        label: y.intl.string(y.t.NZRGQo)
+    }), U = (0, s.A)(e, v.id, m, n), P = (0, h.A)({
         guildEventId: e,
-        guildId: h.id,
+        guildId: v.id,
         recurrenceId: n
     });
-    return (0, l.jsx)(u.A, {
-        context: _,
-        object: b.ZSU.CONTEXT_MENU,
-        children: (0, l.jsxs)(r.W1t, {
+    return (0, l.jsx)(a.A, {
+        context: p,
+        object: f.ZSU.CONTEXT_MENU,
+        children: (0, l.jsxs)(i.W1t, {
             "data-menu-migrated-auto": !0,
             navId: "user-context",
-            onClose: i.Z_,
-            "aria-label": v.intl.string(v.t.liqwPJ),
-            onSelect: T,
-            children: [(0, l.jsxs)(r.rXV, {
-                children: [L, !m && P, D, !m && N, w, S, G, m && U]
-            }), !m && (0, l.jsx)(r.rXV, {
-                children: C
-            }), null != I && (0, l.jsx)(r.rXV, {
-                children: I
-            }), (0, l.jsxs)(r.rXV, {
-                children: [x, R]
+            onClose: r.Z_,
+            "aria-label": y.intl.string(y.t.liqwPJ),
+            onSelect: S,
+            children: [(0, l.jsxs)(i.rXV, {
+                children: [U, !N && x, I, !N && C, b, D, w, N && P]
+            }), !N && (0, l.jsx)(i.rXV, {
+                children: R
+            }), null != O && (0, l.jsx)(i.rXV, {
+                children: O
+            }), (0, l.jsxs)(i.rXV, {
+                children: [j, L]
             })]
         })
     })

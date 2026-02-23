@@ -1,15 +1,15 @@
 /** chunk id: 729394, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    K: () => i
+    K: () => l
 });
-var r = n(73153);
+var i = n(73153);
 
-function i(e) {
+function l(e) {
     let {
         messageId: t,
         coverImageURL: n
     } = e;
-    r.h.dispatch({
+    i.h.dispatch({
         type: "SET_MESSAGE_ACTIVITY_INVITE_COVER_IMAGE_URL",
         messageId: t,
         coverImageURL: n

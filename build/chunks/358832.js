@@ -1,66 +1,66 @@
 /** chunk id: 358832, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => A
-}), n(896048);
-var r = n(627968),
-    i = n(64700),
+    A: () => p
+});
+var i = n(627968),
+    r = n(64700),
     l = n(311907),
     a = n(397927),
     s = n(157559),
     o = n(229224),
-    c = n(987482),
-    u = n(598384),
-    d = n(383501),
-    p = n(58736),
+    d = n(987482),
+    c = n(598384),
+    u = n(383501),
+    A = n(58736),
     h = n(985018),
-    f = n(892513);
-
-function g(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-class m extends i.PureComponent {
+    _ = n(892513);
+class m extends r.PureComponent {
     static getDerivedStateFromProps(e, t) {
         return e.mode !== t.memoizedMode ? {
             memoizedMode: e.mode,
             clicked: !1
         } : null
     }
+    state = {
+        memoizedMode: this.props.mode,
+        clicked: !1
+    };
     handleDownloadApps() {
-        (0, a.qfG)(e => (0, r.jsx)(c.default, function(e) {
-            for (var t = 1; t < arguments.length; t++) {
-                var n = null != arguments[t] ? arguments[t] : {},
-                    r = Object.keys(n);
-                "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                    return Object.getOwnPropertyDescriptor(n, e).enumerable
-                }))), r.forEach(function(t) {
-                    g(e, t, n[t])
-                })
-            }
-            return e
-        }({
-            source: "Links"
-        }, e)))
+        (0, a.qfG)(e => (0, i.jsx)(d.default, {
+            source: "Links",
+            ...e
+        }))
     }
+    handleInstallDownload = () => {
+        u.A.isConnected() ? s.A.show({
+            title: h.intl.string(h.t.tiu1ly),
+            body: h.intl.string(h.t["zK+lqW"]),
+            onConfirm: this.doUpdate,
+            cancelText: h.intl.string(h.t["ETE/oC"]),
+            confirmText: h.intl.string(h.t["QDX/qu"]),
+            confirmVariant: "critical-primary"
+        }) : this.doUpdate()
+    };
+    doUpdate = () => {
+        this.state.clicked || (this.setState({
+            clicked: !0
+        }), (0, o.a)())
+    };
     render() {
         switch (this.props.mode) {
             case "UPDATE_AVAILABLE":
-                return (0, r.jsx)(p.In, {
+                return (0, i.jsx)(A.In, {
                     tooltip: h.intl.string(h.t["zp9d/4"]),
-                    foreground: f.el,
-                    background: f.gg,
+                    foreground: _.el,
+                    background: _.gg,
                     icon: a.s3U,
                     className: this.props.className
                 });
             case "UPDATE_MANUALLY":
             case "UPDATE_DOWNLOADED":
-                return (0, r.jsx)(p.In, {
+                return (0, i.jsx)(A.In, {
                     tooltip: h.intl.string(h.t.u18OXF),
-                    foreground: f.wV,
+                    foreground: _.wV,
                     onClick: this.handleInstallDownload,
                     icon: a.s3U,
                     className: this.props.className
@@ -69,26 +69,7 @@ class m extends i.PureComponent {
                 return null
         }
     }
-    constructor(...e) {
-        super(...e), g(this, "state", {
-            memoizedMode: this.props.mode,
-            clicked: !1
-        }), g(this, "handleInstallDownload", () => {
-            d.A.isConnected() ? s.A.show({
-                title: h.intl.string(h.t.tiu1ly),
-                body: h.intl.string(h.t["zK+lqW"]),
-                onConfirm: this.doUpdate,
-                cancelText: h.intl.string(h.t["ETE/oC"]),
-                confirmText: h.intl.string(h.t["QDX/qu"]),
-                confirmVariant: "critical-primary"
-            }) : this.doUpdate()
-        }), g(this, "doUpdate", () => {
-            this.state.clicked || (this.setState({
-                clicked: !0
-            }), (0, o.a)())
-        })
-    }
 }
-let A = l.Ay.connectStores([u.A], () => ({
-    mode: u.A.getState()
+let p = l.Ay.connectStores([c.A], () => ({
+    mode: c.A.getState()
 }))(m)

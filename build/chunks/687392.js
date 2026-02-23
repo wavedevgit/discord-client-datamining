@@ -1,21 +1,21 @@
-/** chunk id: 687392, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => c
+/** chunk id: 687392, original params: t,e,n (module,exports,require) **/
+n.d(e, {
+    A: () => s
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(397927),
-    l = n(398590),
-    a = n(997509),
-    u = n(652215),
-    o = n(985018);
+var l = n(397927),
+    a = n(398590),
+    d = n(997509),
+    r = n(652215),
+    u = n(985018);
 
-function c(e, t) {
-    return t === u.BRT.POPOUT ? null : (0, r.jsx)(i.Drp, {
+function s(t, e) {
+    return e === r.BRT.POPOUT ? null : (0, i.jsx)(l.Drp, {
         id: "nav-server-settings",
-        label: o.intl.string(o.t["154/bL"]),
+        label: u.intl.string(u.t["154/bL"]),
         action: () => {
-            (0, l.jH)(), a.A.open(e, u.BEX.MODERATION)
+            (0, a.jH)(), d.A.open(t, r.BEX.MODERATION)
         }
     })
 }

@@ -1,30 +1,28 @@
 /** chunk id: 576470, original params: t,i,n (module,exports,require) **/
 n.d(i, {
-    A: () => g
-}), n(896048);
-var e, r = n(627968),
-    E = n(64700),
-    s = n(735438),
-    l = n.n(s),
-    S = n(405269),
-    o = n(985018);
-
-function a(t, i, n) {
-    return i in t ? Object.defineProperty(t, i, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : t[i] = n, t
-}
-class A extends(e = E.PureComponent) {
+    A: () => A
+});
+var e = n(627968),
+    r = n(64700),
+    E = n(735438),
+    s = n.n(E),
+    l = n(405269),
+    S = n(985018);
+class o extends r.PureComponent {
+    static defaultProps = {
+        showDays: !0,
+        showUnits: !1,
+        stopAtOneSec: !1,
+        intervalDuration: 1e3
+    };
+    _interval;
     componentDidMount() {
         let {
             intervalDuration: t,
             onInterval: i
         } = this.props;
         this._interval = setInterval(() => {
-            this.forceUpdate(), null == i || i()
+            this.forceUpdate(), i?.()
         }, t)
     }
     componentWillUnmount() {
@@ -34,19 +32,19 @@ class A extends(e = E.PureComponent) {
         let {
             showDays: i,
             showUnits: n,
-            className: e
-        } = this.props, E = [t.days, t.hours, t.minutes, t.seconds], s = [o.intl.string(o.t["6m/6nM"]), o.intl.string(o.t.n7dksO), o.intl.string(o.t["1LyF1h"]), o.intl.string(o.t.QJyuxY)];
+            className: r
+        } = this.props, E = [t.days, t.hours, t.minutes, t.seconds], l = [S.intl.string(S.t["6m/6nM"]), S.intl.string(S.t.n7dksO), S.intl.string(S.t["1LyF1h"]), S.intl.string(S.t.QJyuxY)];
         if (0 === t.days) E.shift();
         else if (!i) {
             let t = E.shift();
             E[0] += 24 * t
         }
-        let S = l()(E).map(t => t < 10 ? "0".concat(t) : t).map((t, i) => [i > 0 && !n ? ":" : " ", (0, r.jsxs)("span", {
-            children: [t, n ? s[E.length - i - 1] : null]
+        let o = s()(E).map(t => t < 10 ? `0${t}` : t).map((t, i) => [i > 0 && !n ? ":" : " ", (0, e.jsxs)("span", {
+            children: [t, n ? l[E.length - i - 1] : null]
         }, i)]).flatten().value();
-        return (0, r.jsx)("span", {
-            className: e,
-            children: S
+        return (0, e.jsx)("span", {
+            className: r,
+            children: o
         })
     }
     render() {
@@ -54,24 +52,15 @@ class A extends(e = E.PureComponent) {
             deadline: t,
             children: i,
             className: n,
-            stopAtOneSec: e
+            stopAtOneSec: r
         } = this.props;
-        if (t === 1 / 0) return (0, r.jsx)("span", {
+        if (t === 1 / 0) return (0, e.jsx)("span", {
             className: n,
-            "aria-label": o.intl.string(o.t.PqEzn8),
+            "aria-label": S.intl.string(S.t.PqEzn8),
             children: "∞"
         });
-        let E = (0, S.Tf)(Date.now(), t, e);
+        let E = (0, l.Tf)(Date.now(), t, r);
         return null != i ? i(E, this.defaultRender.bind(this, E)) : this.defaultRender(E)
     }
-    constructor(...t) {
-        super(...t), a(this, "_interval", void 0)
-    }
 }
-a(A, "defaultProps", {
-    showDays: !0,
-    showUnits: !1,
-    stopAtOneSec: !1,
-    intervalDuration: 1e3
-});
-let g = A
+let A = o

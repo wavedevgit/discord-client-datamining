@@ -1,27 +1,28 @@
 /** chunk id: 246884, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => v
+    A: () => N
 });
-var r = n(627968),
-    l = n(64700),
-    i = n(311907),
-    s = n(397927),
+var i = n(627968),
+    s = n(64700),
+    l = n(311907),
+    r = n(397927),
     a = n(442433),
     o = n(688810),
     c = n(272613),
-    u = n(398884),
-    d = n(772366),
-    p = n(728321),
-    h = n(260509),
-    g = n(71393),
-    f = n(287809),
+    d = n(398884),
+    u = n(772366),
+    h = n(728321),
+    A = n(260509),
+    p = n(71393),
+    g = n(287809),
     m = n(531053),
-    b = n(606256),
-    A = n(652215),
-    y = n(819638),
-    O = n(985018),
-    j = n(283237);
-let x = {
+    _ = n(606256),
+    f = n(652215),
+    x = n(819638),
+    C = n(985018),
+    E = n(283237);
+let I = {
     origin: {
         x: -16,
         y: 0
@@ -34,68 +35,53 @@ let x = {
     }
 };
 
-function _(e) {
+function b(e) {
     (0, a.L3)(e, async () => {
         let {
             default: e
         } = await n.e("17288").then(n.bind(n, 4571));
-        return t => (0, r.jsx)(e, function(e) {
-            for (var t = 1; t < arguments.length; t++) {
-                var n = null != arguments[t] ? arguments[t] : {},
-                    r = Object.keys(n);
-                "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                    return Object.getOwnPropertyDescriptor(n, e).enumerable
-                }))), r.forEach(function(t) {
-                    var r;
-                    r = n[t], t in e ? Object.defineProperty(e, t, {
-                        value: r,
-                        enumerable: !0,
-                        configurable: !0,
-                        writable: !0
-                    }) : e[t] = r
-                })
-            }
-            return e
-        }({}, t))
+        return t => (0, i.jsx)(e, {
+            ...t
+        })
     })
 }
 
-function v(e) {
+function N(e) {
     let {
         disableTooltip: t,
         lastTargetNode: n
-    } = e, a = (0, i.yK)([g.A], () => g.A.getGuildsArray()), v = (0, i.bG)([f.default], () => f.default.getCurrentUser()), E = l.useMemo(() => a.some(e => (0, h.bM)(e, v)), [a, v]), C = (0, s.red)(e => (0, s.fDT)(e, y.fc)), {
-        analyticsLocations: S
-    } = (0, o.Ay)(), I = (0, r.jsx)(b.A, {
+    } = e, a = (0, l.yK)([p.A], () => p.A.getGuildsArray()), N = (0, l.bG)([g.default], () => g.default.getCurrentUser()), S = s.useMemo(() => a.some(e => (0, A.bM)(e, N)), [a, N]), T = (0, r.red)(e => (0, r.fDT)(e, x.fc)), {
+        analyticsLocations: y
+    } = (0, o.Ay)(), v = (0, i.jsx)(_.A, {
         showPill: !1,
         id: "create-join-button",
         onClick: () => {
-            (0, u.Sn)() ? (0, d.A)({
+            (0, d.Sn)() ? (0, u.A)({
                 analyticsSource: {
-                    page: A.ThZ.CREATE_JOIN_GUILD_MODAL
+                    page: f.ThZ.CREATE_JOIN_GUILD_MODAL
                 },
                 analyticsLocation: {
-                    page: A.ThZ.CREATE_JOIN_GUILD_MODAL,
-                    section: A.JJy.GUILD_CAP_UPSELL_MODAL
+                    page: f.ThZ.CREATE_JOIN_GUILD_MODAL,
+                    section: f.JJy.GUILD_CAP_UPSELL_MODAL
                 },
-                analyticsLocations: S
+                analyticsLocations: y
             }) : c.A.openCreateGuildModal({
                 location: "Guild List"
             })
         },
-        selected: C,
-        onContextMenu: _,
-        tooltip: O.intl.string(O.t.l5WIbf),
-        icon: s.U1e
+        selected: T,
+        onContextMenu: b,
+        tooltip: C.intl.string(C.t.l5WIbf),
+        icon: r.U1e
     });
-    return t ? I : (0, r.jsx)("div", {
-        className: j.Uq,
-        children: (0, r.jsxs)(p.A, {
-            tutorialId: E ? "create-more-servers" : "create-first-server",
-            inlineSpecs: x,
+    return t ? v : (0, i.jsx)("div", {
+        className: E.Uq,
+        children: (0, i.jsxs)(h.A, {
+            tutorialId: S ? "create-more-servers" : "create-first-server",
+            inlineSpecs: I,
             position: "right",
-            children: [I, null != n && (0, r.jsx)(m.Ay, {
-                name: O.intl.string(O.t["45xjM5"]),
+            children: [v, null != n && (0, i.jsx)(m.Ay, {
+                name: C.intl.string(C.t["45xjM5"]),
                 targetNode: n,
                 below: !0,
                 noCombine: !0

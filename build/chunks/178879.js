@@ -2,11 +2,10 @@
 n.d(t, {
     f: () => a
 }), n(938796);
-var r = n(665260),
-    i = n(630446),
-    l = n(652215);
+var i = n(665260),
+    l = n(630446),
+    r = n(652215);
 
 function a(e) {
-    var t;
-    return (0, r.Lt)(null != (t = e.flags) ? t : 0, l.iSj.IS_CONTENT_INVENTORY_ENTRY) && (0, i.yC)("isContentInventoryFallbackEmbed")
+    return (0, i.Lt)(e.flags ?? 0, r.iSj.IS_CONTENT_INVENTORY_ENTRY) && (0, l.yC)("isContentInventoryFallbackEmbed")
 }

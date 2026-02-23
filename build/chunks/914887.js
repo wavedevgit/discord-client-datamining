@@ -2,56 +2,56 @@
 n.d(t, {
     a: () => a
 });
-var r = n(64700),
-    i = n(954571),
-    l = n(652215);
+var i = n(64700),
+    l = n(954571),
+    r = n(652215);
 
 function a(e, t, n, a) {
-    let s = r.useRef(null),
-        o = r.useRef(t),
-        c = r.useRef({
+    let s = i.useRef(null),
+        o = i.useRef(t),
+        d = i.useRef({
             positionInSection: n,
             analyticsLocations: a
         });
-    r.useEffect(() => {
+    i.useEffect(() => {
         o.current = t
     }, [t]);
-    let u = r.useCallback(() => {
+    let c = i.useCallback(() => {
             let {
                 sessionId: t,
                 guildId: n,
-                pageIndex: r,
+                pageIndex: i,
                 pageTitle: a,
                 pageSection: s,
-                pageSectionTitle: u,
-                isUserGuildMember: d,
-                pageHasLeaderboard: p
+                pageSectionTitle: c,
+                isUserGuildMember: u,
+                pageHasLeaderboard: _
             } = o.current, {
                 positionInSection: m,
-                analyticsLocations: f
-            } = c.current;
-            i.default.track(l.HAw.SLAYER_STOREFRONT_CARD_IMPRESSION, {
+                analyticsLocations: h
+            } = d.current;
+            l.default.track(r.HAw.SLAYER_STOREFRONT_CARD_IMPRESSION, {
                 slayer_storefront_session_id: t,
                 sku_id: e,
                 guild_id: n,
-                page_index: r,
+                page_index: i,
                 page_title: a,
                 page_section: s,
-                page_section_title: u,
+                page_section_title: c,
                 position_in_section: m,
-                is_user_guild_member: d,
-                page_has_leaderboard: p,
-                location_stack: f
+                is_user_guild_member: u,
+                page_has_leaderboard: _,
+                location_stack: h
             })
         }, [e]),
-        d = r.useCallback(e => {
+        u = i.useCallback(e => {
             e ? null === s.current && (s.current = window.setTimeout(() => {
-                u(), s.current = null
+                c(), s.current = null
             }, 1e3)) : null !== s.current && (clearTimeout(s.current), s.current = null)
-        }, [u]);
-    return r.useEffect(() => () => {
+        }, [c]);
+    return i.useEffect(() => () => {
         null !== s.current && (clearTimeout(s.current), s.current = null)
     }, []), {
-        handleCardVisibilityChange: d
+        handleCardVisibilityChange: u
     }
 }

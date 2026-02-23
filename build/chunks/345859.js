@@ -1,16 +1,17 @@
 /** chunk id: 345859, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
     H: () => a
 });
-var r = n(64700),
-    l = n(311907),
-    i = n(822382),
-    s = n(65600);
+var i = n(64700),
+    s = n(311907),
+    l = n(822382),
+    r = n(65600);
 
 function a(e) {
-    let t = (0, l.bG)([s.A], () => {
-        let t = (0, i.bS)(e);
-        return s.A.getSearchResultsQueryString(t)
+    let t = (0, s.bG)([r.A], () => {
+        let t = (0, l.bS)(e);
+        return r.A.getSearchResultsQueryString(t)
     });
-    return r.useMemo(() => (0, i._o)(null != t ? t : ""), [t])
+    return i.useMemo(() => (0, l._o)(t ?? ""), [t])
 }

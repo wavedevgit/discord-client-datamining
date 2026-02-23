@@ -1,37 +1,37 @@
 /** chunk id: 622697, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => d
+    A: () => c
 });
 var a = n(627968),
-    l = n(397927),
-    r = n(736653),
-    i = n(653523),
-    s = n(270704),
+    i = n(397927),
+    s = n(736653),
+    l = n(653523),
+    r = n(270704),
     o = n(652215),
-    c = n(566305);
+    d = n(566305);
 
-function d(e) {
+function c(e) {
     let {
         selected: t,
         onSelect: n
-    } = e, d = (0, r.Ay)();
+    } = e, c = (0, s.Ay)();
     return (0, a.jsxs)("div", {
-        className: c.N,
-        children: [(0, a.jsx)(l.Text, {
+        className: d.N,
+        children: [(0, a.jsx)(i.Text, {
             variant: "text-sm/semibold",
             children: "Preselected Gradient"
         }), (0, a.jsx)("div", {
-            className: c.Z,
-            children: s.Z6.map(e => {
-                let l = d !== o.NJ8.LIGHT ? e.darkBackground : e.lightBackground,
-                    r = t === e.name;
-                return (0, a.jsx)(i.S4, {
+            className: d.Z,
+            children: r.Z6.map(e => {
+                let i = c !== o.NJ8.LIGHT ? e.darkBackground : e.lightBackground,
+                    s = t === e.name;
+                return (0, a.jsx)(l.S4, {
                     onSelect: () => n(e),
                     style: {
-                        background: l
+                        background: i
                     },
                     name: e.name,
-                    isSelected: r
+                    isSelected: s
                 }, e.name)
             })
         })]

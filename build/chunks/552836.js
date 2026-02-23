@@ -1,63 +1,36 @@
 /** chunk id: 552836, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => c
+    A: () => a
 });
-var r, l = n(311907),
-    i = n(73153);
-
-function s(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-let a = {};
-class o extends(r = l.Ay.PersistedStore) {
+var i = n(311907),
+    s = n(73153);
+let l = {};
+class r extends i.Ay.PersistedStore {
+    static displayName = "GuildBoostingProgressBarPersistedStore";
+    static persistKey = "PremiumGuildProgressBarPersistedStore";
     initialize(e) {
-        null != e && (a = e)
+        null != e && (l = e)
     }
     getState() {
-        return a
+        return l
     }
     getCountForGuild(e) {
-        return a[e]
+        return l[e]
     }
 }
-s(o, "displayName", "GuildBoostingProgressBarPersistedStore"), s(o, "persistKey", "PremiumGuildProgressBarPersistedStore");
-let c = new o(i.h, {
+let a = new r(s.h, {
     APPLIED_GUILD_BOOST_COUNT_UPDATE: e => {
-        var t, n;
         let {
-            guildId: r,
-            premiumCount: l
+            guildId: t,
+            premiumCount: n
         } = e;
-        t = function(e) {
-            for (var t = 1; t < arguments.length; t++) {
-                var n = null != arguments[t] ? arguments[t] : {},
-                    r = Object.keys(n);
-                "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                    return Object.getOwnPropertyDescriptor(n, e).enumerable
-                }))), r.forEach(function(t) {
-                    s(e, t, n[t])
-                })
-            }
-            return e
-        }({}, a), n = n = {
-            [r]: l
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
-            var n = Object.keys(e);
-            if (Object.getOwnPropertySymbols) {
-                var r = Object.getOwnPropertySymbols(e);
-                n.push.apply(n, r)
-            }
-            return n
-        })(Object(n)).forEach(function(e) {
-            Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-        }), a = t
+        l = {
+            ...l,
+            [t]: n
+        }
     },
     APPLIED_GUILD_BOOST_COUNT_RESET: function() {
-        a = {}
+        l = {}
     }
 })

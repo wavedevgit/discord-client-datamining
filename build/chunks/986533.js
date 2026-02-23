@@ -1,88 +1,88 @@
 /** chunk id: 986533, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => f
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(503698),
-    l = n.n(i),
-    a = n(397927),
+var l = n(503698),
+    a = n.n(l),
+    r = n(397927),
     s = n(709066),
     o = n(763754),
     c = n(643204),
-    u = n(809115),
-    d = n(888675),
-    p = n(652215),
-    m = n(705751),
-    f = n(985018),
-    g = n(234054);
+    d = n(809115),
+    u = n(888675),
+    m = n(652215),
+    _ = n(705751),
+    A = n(985018),
+    h = n(234054);
 
-function _(e) {
+function f(e) {
     let {
         message: t,
         compact: n,
-        usernameHook: i
-    } = e, _ = (0, o.Ay)(t), h = i(_), {
-        avatarSrc: b,
+        usernameHook: l
+    } = e, f = (0, o.Ay)(t), E = l(f), {
+        avatarSrc: g,
         eventHandlers: {
-            onMouseEnter: y,
-            onMouseLeave: A
+            onMouseEnter: p,
+            onMouseLeave: x
         }
-    } = (0, u.a)(!0), v = "" !== t.content ? new Date(t.content).toLocaleString(f.intl.currentLocale, {
+    } = (0, d.a)(!0), C = "" !== t.content ? new Date(t.content).toLocaleString(A.intl.currentLocale, {
         hour: "numeric",
         minute: "2-digit",
         month: "2-digit",
         day: "2-digit",
         year: "numeric"
     }) : "";
-    return (0, r.jsx)("div", {
-        onMouseEnter: y,
-        onMouseLeave: A,
-        children: (0, r.jsx)(d.A, {
-            className: l()(g.rs, {
-                [g.oE]: n
+    return (0, i.jsx)("div", {
+        onMouseEnter: p,
+        onMouseLeave: x,
+        children: (0, i.jsx)(u.A, {
+            className: a()(h.rs, {
+                [h.oE]: n
             }),
-            iconNode: n ? null : (0, r.jsx)(u.l, {
-                src: b
+            iconNode: n ? null : (0, i.jsx)(d.l, {
+                src: g
             }),
-            iconContainerClassName: g.zc,
+            iconContainerClassName: h.zc,
             compact: n,
-            children: (0, r.jsxs)("div", {
-                className: l()(g.Qs, {
-                    [g.oE]: n
+            children: (0, i.jsxs)("div", {
+                className: a()(h.Qs, {
+                    [h.oE]: n
                 }),
-                children: [(0, r.jsx)(c.ix, {
+                children: [(0, i.jsx)(c.ix, {
                     message: t,
-                    messageClassname: g.he,
-                    className: l()(g.QV, g.he, {
-                        [g.oE]: n
+                    messageClassname: h.he,
+                    className: a()(h.QV, h.he, {
+                        [h.oE]: n
                     }),
-                    username: (0, r.jsxs)("div", {
-                        className: g.he,
-                        children: [(0, r.jsx)(a.Text, {
+                    username: (0, i.jsxs)("div", {
+                        className: h.he,
+                        children: [(0, i.jsx)(r.Text, {
                             variant: "text-md/normal",
                             color: "text-brand",
                             tag: "span",
-                            className: g.Xh,
-                            children: f.intl.string(f.t.hG1StD)
-                        }), (0, r.jsx)(s.A, {
-                            type: m.nu.SYSTEM_DM,
-                            className: g.Al
+                            className: h.Xh,
+                            children: A.intl.string(A.t.hG1StD)
+                        }), (0, i.jsx)(s.A, {
+                            type: _.nu.SYSTEM_DM,
+                            className: h.Al
                         })]
                     }),
                     compact: n,
                     showTimestamp: !0
-                }), (0, r.jsx)("div", {
-                    className: l()(g.__invalid_messageContent, {
-                        [g.oE]: n
+                }), (0, i.jsx)("div", {
+                    className: a()(h.__invalid_messageContent, {
+                        [h.oE]: n
                     }),
-                    children: t.type === p.lAJ.GUILD_INCIDENT_ALERT_MODE_ENABLED ? f.intl.format(f.t["+m8eD7"], {
-                        username: _.nick,
-                        usernameHook: h,
-                        time: v
-                    }) : f.intl.format(f.t["BHeke+"], {
-                        username: _.nick,
-                        usernameHook: h
+                    children: t.type === m.lAJ.GUILD_INCIDENT_ALERT_MODE_ENABLED ? A.intl.format(A.t["+m8eD7"], {
+                        username: f.nick,
+                        usernameHook: E,
+                        time: C
+                    }) : A.intl.format(A.t["BHeke+"], {
+                        username: f.nick,
+                        usernameHook: E
                     })
                 })]
             })

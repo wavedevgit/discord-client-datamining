@@ -1,50 +1,50 @@
 /** chunk id: 270424, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => x
 });
-var r = n(627968),
-    a = n(158954),
-    i = n(311907),
-    l = n(492917),
-    s = n(287809),
-    o = n(307600),
-    c = n(496587),
-    d = n(800007),
+var a = n(627968),
+    i = n(158954),
+    s = n(311907),
+    r = n(492917),
+    l = n(287809),
+    d = n(307600),
+    o = n(496587),
+    c = n(800007),
     u = n(294726),
-    m = n(985018),
-    f = n(710882);
+    _ = n(985018),
+    m = n(710882);
 
-function g(e) {
+function x(e) {
     let {
         guildId: t
-    } = e, n = (0, i.bG)([s.default], () => s.default.getCurrentUser());
+    } = e, n = (0, s.bG)([l.default], () => l.default.getCurrentUser());
     if (null == n) return null;
-    let g = (0, d.yC)(n.id, t);
-    return (0, r.jsx)(c.A, {
-        actions: (0, r.jsx)(a.$nd, {
+    let x = (0, c.yC)(n.id, t);
+    return (0, a.jsx)(o.A, {
+        actions: (0, a.jsx)(i.$nd, {
             variant: "secondary",
             fullWidth: !0,
-            text: m.intl.string(u.default.f0xbih),
-            icon: a.I9m,
+            text: _.intl.string(u.default.f0xbih),
+            icon: i.I9m,
             iconPosition: "end",
-            onClick: () => (0, o.h)({
-                href: g
+            onClick: () => (0, d.h)({
+                href: x
             })
         }),
-        children: (0, r.jsxs)("div", {
-            className: f.Q,
-            children: [(0, r.jsx)(l.u7P, {
+        children: (0, a.jsxs)("div", {
+            className: m.Q,
+            children: [(0, a.jsx)(r.u7P, {
                 alt: "",
                 width: 117,
                 height: 78
-            }), (0, r.jsxs)("div", {
-                className: f.y,
-                children: [(0, r.jsx)(a.DZT, {
+            }), (0, a.jsxs)("div", {
+                className: m.y,
+                children: [(0, a.jsx)(i.DZT, {
                     variant: "heading-md/semibold",
-                    children: m.intl.string(u.default.qE2eqK)
-                }), (0, r.jsx)(a.EYj, {
+                    children: _.intl.string(u.default.qE2eqK)
+                }), (0, a.jsx)(i.EYj, {
                     variant: "text-sm/medium",
-                    children: m.intl.string(u.default.n4Towj)
+                    children: _.intl.string(u.default.n4Towj)
                 })]
             })]
         })

@@ -1,7 +1,7 @@
 /** chunk id: 55187, original params: a,e,t (module,exports,require) **/
 t.d(e, {
     b: () => C
-}), t(65821);
+});
 var n = t(627968),
     r = t(64700),
     s = t(284009),
@@ -26,8 +26,8 @@ function C(a) {
         expectedCallbackState: u,
         onAuthToken: C,
         onError: g,
-        onClose: v,
-        img: b,
+        onClose: b,
+        img: v,
         title: E,
         body: f,
         redirectDestination: k
@@ -44,13 +44,13 @@ function C(a) {
         let {
             state: t
         } = (0, d.vA)(a);
-        i()(null != t, "Authorize URL state query parameter must be present"), null == s || s(t)
+        i()(null != t, "Authorize URL state query parameter must be present"), s?.(t)
     }, [e, g, s]), T = r.useCallback(a => {
         let {
             callbackCode: t,
             callbackState: n
         } = a;
-        n !== u ? j.warn("".concat(e, " link: received mismatching callback state!")) : C({
+        n !== u ? j.warn(`${e} link: received mismatching callback state!`) : C({
             callbackCode: t,
             callbackState: n
         })
@@ -73,14 +73,14 @@ function C(a) {
                 })
             }), (0, n.jsxs)("div", {
                 className: p.bm,
-                children: [b, " "]
+                children: [v, " "]
             }), (0, n.jsx)(c.Heading, {
                 className: p.DD,
                 variant: "heading-xl/extrabold",
                 children: E
-            }), null != v && (0, n.jsx)(c.s_y, {
+            }), null != b && (0, n.jsx)(c.s_y, {
                 className: p.b,
-                onClick: v
+                onClick: b
             })]
         }), (0, n.jsxs)(c.$mQ, {
             "data-migration-pending": !0,

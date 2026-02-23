@@ -1,43 +1,43 @@
 /** chunk id: 751258, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    S: () => A
-}), n(733351), n(896048), n(747238), n(812715), n(866193);
-var l = n(791332),
-    r = n.n(l),
-    i = n(715943),
+    S: () => f
+});
+var i = n(791332),
+    l = n.n(i),
+    s = n(715943),
     a = n(843472),
-    s = n(58149),
+    r = n(58149),
     o = n(508675),
     c = n(649963),
-    u = n(815807),
-    d = n(253932),
+    d = n(815807),
+    u = n(253932),
     h = n(320501),
-    p = n(652215);
-let f = /\\([*?+/])/g,
-    m = {
+    m = n(652215);
+let A = /\\([*?+/])/g,
+    g = {
         tts: {
             action: () => ({
-                tts: d.on.getSetting()
+                tts: u.on.getSetting()
             })
         },
         me: {
             action: e => ({
-                content: "_".concat(e, "_")
+                content: `_${e}_`
             })
         },
         tableflip: {
             action: e => ({
-                content: "".concat(e, " (╯\xb0□\xb0)╯︵ ┻━┻").trim()
+                content: `${e} (╯\xb0□\xb0)╯︵ ┻━┻`.trim()
             })
         },
         unflip: {
             action: e => ({
-                content: "".concat(e, " ┬─┬ノ( \xba _ \xbaノ)").trim()
+                content: `${e} ┬─┬ノ( \xba _ \xbaノ)`.trim()
             })
         },
         shrug: {
             action: e => ({
-                content: "".concat(e, " \xaf\\_(ツ)_/\xaf").trim()
+                content: `${e} \xaf\\_(ツ)_/\xaf`.trim()
             })
         },
         nick: {
@@ -45,45 +45,44 @@ let f = /\\([*?+/])/g,
                 let {
                     channel: n
                 } = t;
-                if (null != n.guild_id) return i.A.changeNickname(n.guild_id, n.id, p.ME, e), {
+                if (null != n.guild_id) return s.A.changeNickname(n.guild_id, n.id, m.ME, e), {
                     content: ""
                 }
             }
         },
         reaction: {
-            match: r().anyScopeRegex(/^\+:(.+?): *$/),
+            match: l().anyScopeRegex(/^\+:(.+?): *$/),
             action(e, t) {
                 let {
                     isEdit: n,
-                    channel: l
+                    channel: i
                 } = t;
-                if (n || !h.A.hasPresent(l.id)) return;
-                let r = h.A.getMessages(l.id).last();
-                if (null == r || null == r.id) return;
-                let i = o.Ay.getDisambiguatedEmojiContext(l.guild_id).getByName(e.trim().slice(2, -1));
-                if (null != i) return (0, c.BB)(l.id, r.id, (0, u.jq)(i)), {
+                if (n || !h.A.hasPresent(i.id)) return;
+                let l = h.A.getMessages(i.id).last();
+                if (null == l || null == l.id) return;
+                let s = o.Ay.getDisambiguatedEmojiContext(i.guild_id).getByName(e.trim().slice(2, -1));
+                if (null != s) return (0, c.BB)(i.id, l.id, (0, d.jq)(s)), {
                     content: ""
                 }
             }
         },
         searchReplace: {
-            match: r().anyScopeRegex(/^s\/([^\/\\]*(?:\\.[^\/\\]*)*)\/([^\/\\]*(?:\\.[^\/\\]*)*)(?:\/([g]*))?$/),
+            match: l().anyScopeRegex(/^s\/([^\/\\]*(?:\\.[^\/\\]*)*)\/([^\/\\]*(?:\\.[^\/\\]*)*)(?:\/([g]*))?$/),
             action(e, t) {
-                var n, l;
                 let {
-                    isEdit: r,
+                    isEdit: n,
                     channel: i
                 } = t;
-                if (r) return;
-                let s = h.A.getLastEditableMessage(i.id);
-                if (null == s || null == s.id) return {
+                if (n) return;
+                let l = h.A.getLastEditableMessage(i.id);
+                if (null == l || null == l.id) return {
                     content: ""
                 };
-                let [o, c, u, d] = Array.from(null != (n = e.match(this.match.regex)) ? n : []), p = null != (l = null == d ? void 0 : d.split("")) ? l : [];
-                c = c.replace(f, (e, t) => t), u = u.replace(f, (e, t) => t);
-                let m = p.includes("g") ? s.content.replaceAll(c, u) : s.content.replace(c, u);
-                return (null == m || "" === m.trim()) && 0 === s.attachments.length ? a.A.deleteMessage(i.id, s.id) : m !== s.content && a.A.editMessage(i.id, s.id, {
-                    content: m
+                let [s, r, o, c] = Array.from(e.match(this.match.regex) ?? []), d = c?.split("") ?? [];
+                r = r.replace(A, (e, t) => t), o = o.replace(A, (e, t) => t);
+                let u = d.includes("g") ? l.content.replaceAll(r, o) : l.content.replace(r, o);
+                return (null == u || "" === u.trim()) && 0 === l.attachments.length ? a.A.deleteMessage(i.id, l.id) : u !== l.content && a.A.editMessage(i.id, l.id, {
+                    content: u
                 }), {
                     content: ""
                 }
@@ -91,29 +90,28 @@ let f = /\\([*?+/])/g,
         },
         spoiler: {
             action: e => ({
-                content: (0, p.ZGg)(e).trim()
+                content: (0, m.ZGg)(e).trim()
             })
         }
     };
 
-function g(e, t, n, l) {
-    return s.Ay.trackWithMetadata(p.HAw.SLASH_COMMAND_USED, {
+function p(e, t, n, i) {
+    return r.Ay.trackWithMetadata(m.HAw.SLASH_COMMAND_USED, {
         command: e
-    }), t.action(n, l)
+    }), t.action(n, i)
 }
 
-function A(e, t) {
-    for (let l in m) {
-        let r = m[l];
-        if (null != r.match) {
-            var n;
-            if (null == (n = r.match.regex) ? void 0 : n.test(e)) return g(l, r, e, t);
+function f(e, t) {
+    for (let n in g) {
+        let i = g[n];
+        if (null != i.match) {
+            if (i.match.regex?.test(e)) return p(n, i, e, t);
             continue
         }
-        if (d.D_.getSetting() && "/" === e[0]) {
-            let n = e.split(" ");
-            if (l === n[0].slice(1) && null != r.action) return g(l, r, n.slice(1).join(" "), t)
+        if (u.D_.getSetting() && "/" === e[0]) {
+            let l = e.split(" ");
+            if (n === l[0].slice(1) && null != i.action) return p(n, i, l.slice(1).join(" "), t)
         }
     }
 }
-Object.setPrototypeOf(m, null)
+Object.setPrototypeOf(g, null)

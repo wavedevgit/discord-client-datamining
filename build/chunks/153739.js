@@ -4,31 +4,31 @@ n.d(t, {
     tl: () => d,
     y3: () => o
 });
-var r = n(417597),
-    i = n(287809),
-    l = n(842144),
-    s = n(695515),
-    a = n(438732);
+var i = n(417597),
+    s = n(287809),
+    a = n(842144),
+    r = n(695515),
+    l = n(438732);
 let o = () => {
-        let e = (0, a.A)();
-        return (0, r.bG)([s.A, i.default], () => {
-            if (!0 !== e) return i.default.getCurrentUser();
-            let t = s.A.getSelectedTeenId();
-            if (null !== t) return i.default.getUser(t)
+        let e = (0, l.A)();
+        return (0, i.bG)([r.A, s.default], () => {
+            if (!0 !== e) return s.default.getCurrentUser();
+            let t = r.A.getSelectedTeenId();
+            if (null !== t) return s.default.getUser(t)
         })
     },
-    c = e => (0, r.bG)([i.default], () => {
-        let t = i.default.getUser(e);
+    c = e => (0, i.bG)([s.default], () => {
+        let t = s.default.getUser(e);
         if (null != t) return t
     }),
     d = () => {
-        let e = s.A.getSelectedTeenId(),
+        let e = r.A.getSelectedTeenId(),
             {
                 hasLoadedSettings: t,
                 isLoading: n
-            } = (0, r.cf)([l.A], () => ({
-                hasLoadedSettings: null != e && l.A.hasSettingsForUser(e),
-                isLoading: l.A.isLoading
+            } = (0, i.cf)([a.A], () => ({
+                hasLoadedSettings: null != e && a.A.hasSettingsForUser(e),
+                isLoading: a.A.isLoading
             }));
         return null !== e && !t && !n
     }

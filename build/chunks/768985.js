@@ -1,75 +1,75 @@
 /** chunk id: 768985, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    j: () => E
+    j: () => C
 });
-var r = n(64700),
-    i = n(731738),
-    l = n(417597),
-    s = n(964486),
-    a = n(612200),
+var i = n(64700),
+    s = n(731738),
+    a = n(417597),
+    r = n(964486),
+    l = n(612200),
     o = n(831062),
     c = n(210714),
     d = n(287809),
     u = n(954571),
     _ = n(695515),
-    p = n(809697),
-    m = n(500470),
+    m = n(809697),
+    A = n(500470),
     g = n(33666),
-    A = n(834981),
-    f = n(191627),
-    b = n(652215),
-    h = n(204925);
+    h = n(834981),
+    x = n(191627),
+    p = n(652215),
+    E = n(204925);
 
-function E(e) {
+function C(e) {
     let {
         location: t,
         onMountEffect: n
-    } = e, E = (0, g.A)(), O = (0, A.W1)(), {
-        familyCenterInitialized: x,
-        isLoading: C
-    } = (0, l.cf)([_.A], () => ({
+    } = e, C = (0, g.A)(), T = (0, h.W1)(), {
+        familyCenterInitialized: S,
+        isLoading: I
+    } = (0, a.cf)([_.A], () => ({
         familyCenterInitialized: _.A.getIsInitialized(),
         isLoading: _.A.isLoading()
-    })), S = (0, m.k)(), {
-        selectedTab: T,
-        handleTabChange: I
-    } = (0, p.A)(), N = d.default.getCurrentUser(), y = null != E, j = x && null != N && !y;
-    (0, s.Ay)(() => {
+    })), f = (0, A.k)(), {
+        selectedTab: N,
+        handleTabChange: b
+    } = (0, m.A)(), j = d.default.getCurrentUser(), v = null != C, O = S && null != j && !v;
+    (0, r.Ay)(() => {
         (0, c.d)("family-center"), null != n && n()
     });
-    let v = {
-            isConsideredAdult: "adult" === E,
-            numOfAcceptedRequests: O,
-            selectedTab: T,
-            selectedTeenId: S
+    let R = {
+            isConsideredAdult: "adult" === C,
+            numOfAcceptedRequests: T,
+            selectedTab: N,
+            selectedTeenId: f
         },
-        P = r.useRef(v);
-    return r.useEffect(() => {
-        P.current = v
-    }), r.useEffect(() => {
-        if (x && y) {
+        y = i.useRef(R);
+    return i.useEffect(() => {
+        y.current = R
+    }), i.useEffect(() => {
+        if (S && v) {
             let {
                 isConsideredAdult: e,
                 numOfAcceptedRequests: n,
-                selectedTab: r,
-                selectedTeenId: l
-            } = P.current;
-            u.default.track(b.HAw.FAMILY_CENTER_VIEWED, {
+                selectedTab: i,
+                selectedTeenId: a
+            } = y.current;
+            u.default.track(p.HAw.FAMILY_CENTER_VIEWED, {
                 is_considered_adult: e,
                 num_of_accepted_links: n,
-                selected_teen_id: l,
-                initial_page: f.zu[r],
-                source: f.iN[t]
+                selected_teen_id: a,
+                initial_page: x.zu[i],
+                source: x.iN[t]
             }), o.A.increment({
-                name: i.K.FAMILY_CENTER_VIEW
+                name: s.K.FAMILY_CENTER_VIEW
             })
         }
-    }, [x, y, t]), r.useEffect(() => {
-        j && (0, a.yO)(h.w_.FAMILY_CENTER)
-    }, [j]), {
-        isLoading: C,
-        selectedTab: T,
-        handleTabChange: I,
-        showAgeGateModal: j
+    }, [S, v, t]), i.useEffect(() => {
+        O && (0, l.yO)(E.w_.FAMILY_CENTER)
+    }, [O]), {
+        isLoading: I,
+        selectedTab: N,
+        handleTabChange: b,
+        showAgeGateModal: O
     }
 }

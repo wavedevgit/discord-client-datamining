@@ -1,40 +1,41 @@
 /** chunk id: 935159, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    Lx: () => i,
+    Lx: () => l,
     Nt: () => a,
-    iF: () => l,
-    pE: () => s
+    iF: () => s,
+    pE: () => r
 });
-var r = n(73153);
+var i = n(73153);
 
-function l(e) {
+function s(e) {
     let {
         eventId: t,
         stageId: n
     } = e;
-    (null != t || null != n) && r.h.dispatch({
+    (null != t || null != n) && i.h.dispatch({
         type: "LIVE_CHANNEL_NOTICE_HIDE",
         eventId: t,
         stageId: n
     })
 }
 
-function i(e) {
-    r.h.dispatch({
+function l(e) {
+    i.h.dispatch({
         type: "UPCOMING_GUILD_EVENT_NOTICE_HIDE",
         eventId: e
     })
 }
 
-function s(e) {
-    r.h.dispatch({
+function r(e) {
+    i.h.dispatch({
         type: "UPCOMING_GUILD_EVENT_NOTICE_SEEN",
         guildEventId: e
     })
 }
 
 function a(e) {
-    r.h.dispatch({
+    i.h.dispatch({
         type: "EVENT_BANNER_DISMISS",
         eventId: e
     })

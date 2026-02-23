@@ -1,12 +1,13 @@
 /** chunk id: 168015, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => l
-}), n(896048);
-var r = n(64700);
+    A: () => s
+});
+var i = n(64700);
 
-function l() {
-    let [e, t] = (0, r.useState)(window.innerWidth >= 1132);
-    return (0, r.useEffect)(() => {
+function s() {
+    let [e, t] = (0, i.useState)(window.innerWidth >= 1132);
+    return (0, i.useEffect)(() => {
         let e = () => {
             t(window.innerWidth >= 1132)
         };

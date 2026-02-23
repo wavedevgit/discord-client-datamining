@@ -1,25 +1,25 @@
 /** chunk id: 670861, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => A
 });
-var r = n(627968),
-    i = n(64700),
+var i = n(627968),
+    r = n(64700),
     l = n(311907),
     a = n(734057),
     s = n(71393),
     o = n(320501),
-    c = n(883344),
-    u = n(691611),
-    d = n(659088);
+    d = n(883344),
+    c = n(691611),
+    u = n(659088);
 
-function p(e) {
+function A(e) {
     let {
         item: t
     } = e, {
         channelId: n,
-        messageIds: p,
+        messageIds: A,
         title: h
-    } = i.useMemo(() => {
+    } = r.useMemo(() => {
         switch (t.data.kind) {
             case "message":
                 return {
@@ -38,22 +38,19 @@ function p(e) {
                     channelId: void 0, messageIds: [], title: void 0
                 }
         }
-    }, [t]), f = (0, l.bG)([a.A], () => null != n ? a.A.getChannel(n) : null, [n]), g = (0, l.bG)([s.A], () => (null == f ? void 0 : f.guild_id) != null ? s.A.getGuild(f.guild_id) : null, [f]), m = (0, l.yK)([c.A, o.A], () => null == n ? [] : p.map(e => {
-        var t;
-        return null != (t = c.A.getMessage(e)) ? t : o.A.getMessage(n, e)
-    }).filter(e => null != e), [n, p]);
-    return null == f || null == g || 0 === m.length ? null : (0, r.jsxs)("div", {
-        className: d.kL,
-        children: [null != h ? (0, r.jsx)("div", {
-            className: d.gn,
-            children: (0, r.jsx)("div", {
-                className: d.DD,
+    }, [t]), _ = (0, l.bG)([a.A], () => null != n ? a.A.getChannel(n) : null, [n]), m = (0, l.bG)([s.A], () => _?.guild_id != null ? s.A.getGuild(_.guild_id) : null, [_]), p = (0, l.yK)([d.A, o.A], () => null == n ? [] : A.map(e => d.A.getMessage(e) ?? o.A.getMessage(n, e)).filter(e => null != e), [n, A]);
+    return null == _ || null == m || 0 === p.length ? null : (0, i.jsxs)("div", {
+        className: u.kL,
+        children: [null != h ? (0, i.jsx)("div", {
+            className: u.gn,
+            children: (0, i.jsx)("div", {
+                className: u.DD,
                 children: h
             })
-        }) : null, (0, r.jsx)("div", {
-            className: d.MJ,
-            children: m.map(e => (0, r.jsx)(u.A, {
-                channel: f,
+        }) : null, (0, i.jsx)("div", {
+            className: u.MJ,
+            children: p.map(e => (0, i.jsx)(c.A, {
+                channel: _,
                 message: e,
                 renderThreadAccessory: !1,
                 disableReactionCreates: !1,

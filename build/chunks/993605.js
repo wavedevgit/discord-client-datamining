@@ -1,6 +1,5 @@
 /** chunk id: 993605, original params: e,n,t (module,exports,require) **/
 e.exports = {
-    Qs: "content__3bf54",
     b: "closeButton__3bf54",
     Tn: "upsellImage__3bf54",
     NH: "upsellImageWithTrialOffer__3bf54",
@@ -10,7 +9,5 @@ e.exports = {
     pl: "perkIconGuild__3bf54",
     $z: "perkIconUpload__3bf54",
     Kg: "perkIconStream__3bf54",
-    zO: "perkIconChatPerks__3bf54",
-    uA: "backStep__3bf54",
-    wV: "footerRight__3bf54"
+    zO: "perkIconChatPerks__3bf54"
 }

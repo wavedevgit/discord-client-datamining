@@ -1,83 +1,57 @@
-/** chunk id: 155301, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => d
-}), n(896048);
-var r = n(627968),
-    i = n(64700),
+/** chunk id: 155301, original params: t,e,n (module,exports,require) **/
+n.d(e, {
+    A: () => u
+});
+var i = n(627968),
+    r = n(64700),
     l = n(459793),
     a = n(97352),
     s = n(927578),
     o = n(937008),
-    c = n(156312),
-    u = n(534479);
+    d = n(156312),
+    c = n(534479);
 
-function d(e) {
+function u(t) {
     let {
-        initialStep: t,
+        initialStep: e,
         initialPlanId: n,
-        guildId: d,
-        setAnalyticsData: p,
-        handleClose: m
-    } = e, {
+        guildId: u,
+        setAnalyticsData: m,
+        handleClose: p
+    } = t, {
         blockedPayments: f,
-        setStep: b,
+        setStep: x,
         hasFetchedSubscriptions: g,
-        hasFetchedSubscriptionPlans: x,
-        currencyLoading: j,
-        selectedSkuId: h,
-        setSelectedSkuId: v,
-        setSelectedPlanId: y,
-        priceOptions: P,
-        setSubscriptionMetadataRequest: S
-    } = (0, c.P5)(), {
-        isGift: O
-    } = (0, o.Pv)(), [A, C] = i.useState(!g || !x || j);
-    return (i.useEffect(() => {
-        C(!g || !x || j)
-    }, [j, x, g]), i.useEffect(() => {
-        null != d && S({
-            guild_id: d
+        hasFetchedSubscriptionPlans: h,
+        currencyLoading: b,
+        selectedSkuId: A,
+        setSelectedSkuId: j,
+        setSelectedPlanId: S,
+        priceOptions: v,
+        setSubscriptionMetadataRequest: C
+    } = (0, d.P5)(), {
+        isGift: N
+    } = (0, o.Pv)(), [_, y] = r.useState(!g || !h || b);
+    return (r.useEffect(() => {
+        y(!g || !h || b)
+    }, [b, h, g]), r.useEffect(() => {
+        null != u && C({
+            guild_id: u
         })
-    }, [d, S]), i.useEffect(() => {
-        y(n);
-        let e = null != n ? a.A.get(n) : null;
-        A || f || (p(t => {
-            var n, r;
-            let i = null != e ? (0, s.y8)(e.id, !1, O, P) : void 0;
-            return n = function(e) {
-                for (var t = 1; t < arguments.length; t++) {
-                    var n = null != arguments[t] ? arguments[t] : {},
-                        r = Object.keys(n);
-                    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                        return Object.getOwnPropertyDescriptor(n, e).enumerable
-                    }))), r.forEach(function(t) {
-                        var r;
-                        r = n[t], t in e ? Object.defineProperty(e, t, {
-                            value: r,
-                            enumerable: !0,
-                            configurable: !0,
-                            writable: !0
-                        }) : e[t] = r
-                    })
-                }
-                return e
-            }({}, t), r = r = {
-                subscription_plan_id: null == e ? void 0 : e.id,
-                price: null == i ? void 0 : i.amount,
-                regular_price: null == e ? void 0 : e.price,
-                currency: P.currency
-            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
-                var n = Object.keys(e);
-                if (Object.getOwnPropertySymbols) {
-                    var r = Object.getOwnPropertySymbols(e);
-                    n.push.apply(n, r)
-                }
-                return n
-            })(Object(r)).forEach(function(e) {
-                Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
-            }), n
-        }), null != e && (v(null == e ? void 0 : e.skuId), b(t)))
-    }, [f, n, O, A, P, h, p, y, v, b, t]), A) ? (0, r.jsx)(u.A, {}) : f ? (0, r.jsx)(l.oO, {
-        onClose: m
+    }, [u, C]), r.useEffect(() => {
+        S(n);
+        let t = null != n ? a.A.get(n) : null;
+        _ || f || (m(e => {
+            let n = null != t ? (0, s.y8)(t.id, !1, N, v) : void 0;
+            return {
+                ...e,
+                subscription_plan_id: t?.id,
+                price: n?.amount,
+                regular_price: t?.price,
+                currency: v.currency
+            }
+        }), null != t && (j(t?.skuId), x(e)))
+    }, [f, n, N, _, v, A, m, S, j, x, e]), _) ? (0, i.jsx)(c.A, {}) : f ? (0, i.jsx)(l.oO, {
+        onClose: p
     }) : null
 }

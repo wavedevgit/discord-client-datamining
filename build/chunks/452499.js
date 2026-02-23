@@ -2,48 +2,46 @@
 "use strict";
 n.d(t, {
     A: () => a
-}), n(896048);
-var r = n(64700),
-    i = n(486020),
+});
+var i = n(64700),
+    s = n(486020),
     l = n(791275),
-    s = n(652215);
+    r = n(652215);
 
 function a(e, t, n) {
-    var a, o;
     let {
-        isLoading: c,
-        error: d,
-        highlightedCreatorDetails: u
-    } = (0, l.A)(e), g = null == u ? void 0 : u.store_page, m = r.useMemo(() => {
-        var e, t, n;
-        let r, i = (n = null == g || null == (e = g.role_subscription) ? void 0 : e.group_listings, r = new Set, null == n || n.forEach(e => {
-                var t;
-                null == (t = e.subscription_listings) || t.forEach(e => {
-                    r.add(e.role_id)
+        isLoading: a,
+        error: o,
+        highlightedCreatorDetails: d
+    } = (0, l.A)(e), c = d?.store_page, u = i.useMemo(() => {
+        var e;
+        let t, n = (e = c?.role_subscription?.group_listings, t = new Set, e?.forEach(e => {
+                e.subscription_listings?.forEach(e => {
+                    t.add(e.role_id)
                 })
-            }), r),
-            l = null == g || null == (t = g.role_subscription) ? void 0 : t.benefit_emojis;
-        return null == l ? void 0 : l.filter(e => e.roles.some(e => i.has(e)))
-    }, [null == g ? void 0 : g.role_subscription]), p = null == g ? void 0 : g.guild.icon_hash, f = i.Ay.getGuildIconURL({
+            }), t),
+            i = c?.role_subscription?.benefit_emojis;
+        return i?.filter(e => e.roles.some(e => n.has(e)))
+    }, [c?.role_subscription]), m = c?.guild.icon_hash, g = s.Ay.getGuildIconURL({
         id: e,
-        icon: p,
+        icon: m,
         size: n
-    }), h = r.useMemo(() => null != m && m.length > t ? m.slice(0, t) : m, [m, t]), b = null != m && m.length > t ? m.length - t : null, x = null == u ? void 0 : u.slug, j = null != x ? s.X7G.ROLE_SUBSCRIPTION_STORE_PAGE(x) : void 0, _ = null == g || null == (a = g.guild) ? void 0 : a.name, O = null == g || null == (o = g.role_subscription) ? void 0 : o.subscriber_count, v = !c && null != _ && null != p && null != f;
-    return v ? {
-        hasAllImperativeDetails: v,
-        isLoading: c,
+    }), x = i.useMemo(() => null != u && u.length > t ? u.slice(0, t) : u, [u, t]), h = null != u && u.length > t ? u.length - t : null, _ = d?.slug, A = null != _ ? r.X7G.ROLE_SUBSCRIPTION_STORE_PAGE(_) : void 0, p = c?.guild?.name, f = c?.role_subscription?.subscriber_count, j = !a && null != p && null != m && null != g;
+    return j ? {
+        hasAllImperativeDetails: j,
+        isLoading: a,
         details: {
-            guildName: _,
-            guildIcon: p,
-            guildAvatarUrl: f,
-            storePageUrl: j,
-            subscriberCount: O,
-            emojisToShow: h,
-            notShownEmojiCount: b
+            guildName: p,
+            guildIcon: m,
+            guildAvatarUrl: g,
+            storePageUrl: A,
+            subscriberCount: f,
+            emojisToShow: x,
+            notShownEmojiCount: h
         }
     } : {
-        hasAllImperativeDetails: v,
-        isLoading: c,
-        error: d
+        hasAllImperativeDetails: j,
+        isLoading: a,
+        error: o
     }
 }

@@ -1,21 +1,21 @@
 /** chunk id: 103733, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    U: () => l
-}), n(896048);
-var r = n(64700),
-    i = n(172218);
-let l = function() {
+    U: () => a
+});
+var i = n(64700),
+    s = n(172218);
+let a = function() {
     let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0],
-        [t, n] = (0, r.useState)(1),
-        l = (0, r.useMemo)(() => ({
+        [t, n] = (0, i.useState)(1),
+        a = (0, i.useMemo)(() => ({
             threshold: Array.from({
                 length: 101
             }, (e, t) => t / 100)
         }), []);
     return {
-        visibilityPercentageRef: (0, i.B)(e => {
+        visibilityPercentageRef: (0, s.B)(e => {
             n(e.intersectionRatio)
-        }, l, e),
+        }, a, e),
         visibilityPercentage: t
     }
 }

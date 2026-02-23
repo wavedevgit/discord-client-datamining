@@ -1,46 +1,14 @@
 /** chunk id: 508575, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => m
-}), n(446912), n(896048);
+    A: () => c
+});
 var a = n(627968),
-    l = n(412703),
-    r = n(843282),
-    i = n(397927),
-    s = n(927813),
+    i = n(412703),
+    s = n(843282),
+    l = n(397927),
+    r = n(927813),
     o = n(93587);
-
-function c(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            a = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), a.forEach(function(t) {
-            var a;
-            a = n[t], t in e ? Object.defineProperty(e, t, {
-                value: a,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = a
-        })
-    }
-    return e
-}
-
-function d(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var a = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, a)
-        }
-        return n
-    })(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-let u = [{
+let d = [{
         value: 1,
         label: "Stream Desktop"
     }, {
@@ -59,19 +27,19 @@ let u = [{
         value: 5,
         label: "Play Activity"
     }],
-    m = function(e) {
+    c = function(e) {
         let {
             onSelect: t,
             taskDuration: n = 10,
-            taskConfigV2: m
+            taskConfigV2: c
         } = e;
-        return (0, a.jsxs)(i.BJc, {
+        return (0, a.jsxs)(l.BJc, {
             gap: 20,
-            children: [(0, a.jsx)(r.Pw, {
+            children: [(0, a.jsx)(s.Pw, {
                 label: "Task Type(s)",
                 className: o.Z,
                 placeholder: "Select Task Preset",
-                options: u,
+                options: d,
                 renderOptionValue: e => e.map(e => (0, a.jsx)("div", {
                     children: e.label
                 }, e.value)),
@@ -80,54 +48,55 @@ let u = [{
                 }),
                 isSelected: e => {
                     var t;
-                    let n, a, r, i, s;
-                    return e === (t = m.tasks, n = l.n.PLAY_ON_PLAYSTATION in t || l.n.PLAY_ON_XBOX in t, a = l.n.PLAY_ON_DESKTOP in t || l.n.PLAY_ON_DESKTOP_V2 in t, r = l.n.STREAM_ON_DESKTOP in t, i = l.n.WATCH_VIDEO in t, s = l.n.PLAY_ACTIVITY in t, n && a ? 4 : n ? 3 : a ? 0 : r ? 1 : i ? 2 : s ? 5 : void 0)
+                    let n, a, s, l, r;
+                    return e === (t = c.tasks, n = i.n.PLAY_ON_PLAYSTATION in t || i.n.PLAY_ON_XBOX in t, a = i.n.PLAY_ON_DESKTOP in t || i.n.PLAY_ON_DESKTOP_V2 in t, s = i.n.STREAM_ON_DESKTOP in t, l = i.n.WATCH_VIDEO in t, r = i.n.PLAY_ACTIVITY in t, n && a ? 4 : n ? 3 : a ? 0 : s ? 1 : l ? 2 : r ? 5 : void 0)
                 },
                 select: e => {
-                    t(d(c({}, m), {
+                    t({
+                        ...c,
                         tasks: function(e, t) {
                             let n = {};
                             switch (e) {
                                 case 1:
-                                    n[l.n.STREAM_ON_DESKTOP] = {
-                                        type: l.n.STREAM_ON_DESKTOP,
+                                    n[i.n.STREAM_ON_DESKTOP] = {
+                                        type: i.n.STREAM_ON_DESKTOP,
                                         target: t
                                     };
                                     break;
                                 case 0:
-                                    n[l.n.PLAY_ON_DESKTOP] = {
-                                        type: l.n.PLAY_ON_DESKTOP,
+                                    n[i.n.PLAY_ON_DESKTOP] = {
+                                        type: i.n.PLAY_ON_DESKTOP,
                                         target: t
                                     };
                                     break;
                                 case 3:
-                                    n[l.n.PLAY_ON_PLAYSTATION] = {
-                                        type: l.n.PLAY_ON_PLAYSTATION,
+                                    n[i.n.PLAY_ON_PLAYSTATION] = {
+                                        type: i.n.PLAY_ON_PLAYSTATION,
                                         target: t,
                                         externalIds: []
-                                    }, n[l.n.PLAY_ON_XBOX] = {
-                                        type: l.n.PLAY_ON_XBOX,
+                                    }, n[i.n.PLAY_ON_XBOX] = {
+                                        type: i.n.PLAY_ON_XBOX,
                                         target: t,
                                         externalIds: []
                                     };
                                     break;
                                 case 4:
-                                    n[l.n.PLAY_ON_DESKTOP] = {
-                                        type: l.n.PLAY_ON_DESKTOP,
+                                    n[i.n.PLAY_ON_DESKTOP] = {
+                                        type: i.n.PLAY_ON_DESKTOP,
                                         target: t
-                                    }, n[l.n.PLAY_ON_PLAYSTATION] = {
-                                        type: l.n.PLAY_ON_PLAYSTATION,
+                                    }, n[i.n.PLAY_ON_PLAYSTATION] = {
+                                        type: i.n.PLAY_ON_PLAYSTATION,
                                         target: t,
                                         externalIds: []
-                                    }, n[l.n.PLAY_ON_XBOX] = {
-                                        type: l.n.PLAY_ON_XBOX,
+                                    }, n[i.n.PLAY_ON_XBOX] = {
+                                        type: i.n.PLAY_ON_XBOX,
                                         target: t,
                                         externalIds: []
                                     };
                                     break;
                                 case 2:
-                                    n[l.n.WATCH_VIDEO] = {
-                                        type: l.n.WATCH_VIDEO,
+                                    n[i.n.WATCH_VIDEO] = {
+                                        type: i.n.WATCH_VIDEO,
                                         target: t,
                                         assets: {
                                             video: {
@@ -140,33 +109,35 @@ let u = [{
                                     };
                                     break;
                                 case 5:
-                                    n[l.n.PLAY_ACTIVITY] = {
-                                        type: l.n.PLAY_ACTIVITY,
+                                    n[i.n.PLAY_ACTIVITY] = {
+                                        type: i.n.PLAY_ACTIVITY,
                                         target: t
                                     }
                             }
                             return n
                         }(e, n)
-                    }))
+                    })
                 },
                 serialize: String,
                 "data-migration-pending": !0
-            }), (0, a.jsx)(i.ksK, {
+            }), (0, a.jsx)(l.ksK, {
                 label: "Task Duration",
-                value: String(n / s.A.Seconds.MINUTE),
+                value: String(n / r.A.Seconds.MINUTE),
                 onChange: function(e) {
                     let n = Number(e);
                     if (isNaN(n)) return;
-                    n *= s.A.Seconds.MINUTE;
-                    let a = Object.fromEntries(Object.entries(m.tasks).map(e => {
+                    n *= r.A.Seconds.MINUTE;
+                    let a = Object.fromEntries(Object.entries(c.tasks).map(e => {
                         let [t, a] = e;
-                        return [t, d(c({}, a), {
+                        return [t, {
+                            ...a,
                             target: n
-                        })]
+                        }]
                     }));
-                    t(d(c({}, m), {
+                    t({
+                        ...c,
                         tasks: a
-                    }))
+                    })
                 }
             })]
         })

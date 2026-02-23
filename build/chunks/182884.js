@@ -2,28 +2,28 @@
 n.d(t, {
     A: () => o
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(397927),
-    l = n(641324),
-    s = n(985018),
-    a = n(462250);
+var s = n(397927),
+    a = n(641324),
+    r = n(985018),
+    l = n(462250);
 
 function o(e) {
     let {
         node: t
     } = e;
-    return (0, r.jsxs)(i.BJc, {
+    return (0, i.jsxs)(s.BJc, {
         gap: 8,
         padding: {
             top: 8
         },
-        children: [(0, r.jsx)(i.Heading, {
+        children: [(0, i.jsx)(s.Heading, {
             variant: "heading-md/semibold",
             color: "text-muted",
-            className: a.D,
-            children: s.intl.string(s.t.rPREPG)
-        }), t.layout.map(e => (0, r.jsx)(l.A, {
+            className: l.D,
+            children: r.intl.string(r.t.rPREPG)
+        }), t.layout.map(e => (0, i.jsx)(a.A, {
             node: e
         }, e.key))]
     })

@@ -1,127 +1,209 @@
-/** chunk id: 727353, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    Z: () => _
+/** chunk id: 727353, original params: t,e,n (module,exports,require) **/
+n.d(e, {
+    P: () => S,
+    Z: () => C
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
 var l = n(503698),
-    i = n.n(l),
+    r = n.n(l),
     a = n(311907),
     s = n(397927),
     o = n(302959),
-    c = n(592182),
+    d = n(592182),
     u = n(587895),
-    d = n(12351),
+    c = n(402216),
+    A = n(12351),
     p = n(769015),
-    f = n(877315),
-    m = n(607407),
+    m = n(877315),
+    h = n(607407),
     g = n(652215),
-    y = n(985018),
-    b = n(573073);
+    f = n(985018),
+    E = n(573073);
 
-function _(e) {
+function C(t) {
     let {
-        stream: t,
+        stream: e,
         activeStream: n,
         streamActivity: l,
-        streamApplication: _,
-        user: h,
-        currentUserId: A,
-        canWatch: v,
-        unavailableReason: O,
-        onWatchStream: S,
-        onAction: j,
-        showHeader: x = !1,
-        hideTip: I = !1,
-        className: E,
-        wrapperClassName: C,
-        skipContainer: P = !1
-    } = e, N = (0, a.bG)([u.A], () => {
-        if (null != _) {
-            if (null != _.id) return u.A.getApplication(_.id);
-            else if (null != _.name) return u.A.getApplicationByName(_.name)
+        streamApplication: c,
+        user: C,
+        currentUserId: S,
+        canWatch: T,
+        unavailableReason: v,
+        onWatchStream: y,
+        onAction: x,
+        showHeader: N = !1,
+        hideTip: _ = !1,
+        className: I
+    } = t, j = (0, a.bG)([u.A], () => {
+        if (null != c) {
+            if (null != c.id) return u.A.getApplication(c.id);
+            else if (null != c.name) return u.A.getApplicationByName(c.name)
         }
         return null
-    }, [_]), T = null != l && null != l.name ? y.intl.formatToPlainString(y.t["4CQq9Q"], {
+    }, [c]), P = null != l && null != l.name ? f.intl.formatToPlainString(f.t["4CQq9Q"], {
         name: l.name
-    }) : y.intl.string(y.t["Jpkr/q"]), w = (0, r.jsxs)(r.Fragment, {
-        children: [x && (0, r.jsxs)("div", {
-            className: b.WG,
-            children: [null != N && (0, r.jsx)(p.A, {
-                game: N,
-                className: b.lK
-            }), (0, r.jsx)(s.Text, {
+    }) : f.intl.string(f.t["Jpkr/q"]), U = (0, i.jsxs)(i.Fragment, {
+        children: [N && (0, i.jsxs)("div", {
+            className: E.WG,
+            children: [null != j && (0, i.jsx)(p.A, {
+                game: j,
+                className: E.lK
+            }), (0, i.jsx)(s.Text, {
                 variant: "text-xs/bold",
-                children: T
+                color: "currentColor",
+                children: P
             })]
-        }), null != S ? (0, r.jsxs)(s.DUT, {
-            onClick: S,
-            className: b.i1,
-            children: [(0, r.jsx)(m.A, {
-                className: b.oz,
-                stream: t
-            }), v ? (0, r.jsx)("div", {
-                className: b.xD,
-                children: (0, r.jsx)(s.Text, {
+        }), null != y ? (0, i.jsxs)(s.DUT, {
+            onClick: y,
+            className: E.i1,
+            children: [(0, i.jsx)(h.A, {
+                className: E.oz,
+                stream: e
+            }), T ? (0, i.jsx)("div", {
+                className: E.xD,
+                children: (0, i.jsx)(s.Text, {
                     variant: "text-sm/normal",
                     color: "none",
-                    className: b.ON,
-                    children: (0, f.A)(t, n, A, O)
+                    className: E.ON,
+                    children: (0, m.A)(e, n, S, v)
                 })
             }) : null]
-        }) : (0, r.jsxs)("div", {
-            className: b.i1,
-            children: [(0, r.jsx)(m.A, {
-                className: b.oz,
-                stream: t
-            }), v ? (0, r.jsx)("div", {
-                className: b.xD,
-                children: (0, r.jsx)(s.Text, {
+        }) : (0, i.jsxs)("div", {
+            className: E.i1,
+            children: [(0, i.jsx)(h.A, {
+                className: E.oz,
+                stream: e
+            }), T ? (0, i.jsx)("div", {
+                className: E.xD,
+                children: (0, i.jsx)(s.Text, {
                     variant: "text-sm/normal",
                     color: "none",
-                    className: b.ON,
-                    children: (0, f.A)(t, n, A, O)
+                    className: E.ON,
+                    children: (0, m.A)(e, n, S, v)
                 })
             }) : null]
-        }), (0, r.jsxs)("div", {
-            className: b.rf,
-            children: [null != l ? (0, r.jsx)(o.A, {
+        }), (0, i.jsxs)("div", {
+            className: E.rf,
+            children: [null != l ? (0, i.jsx)(o.A, {
                 hideHeader: !0,
                 type: o.M.STREAM_PREVIEW,
                 activity: l,
-                user: h,
-                guildId: t.guildId,
-                channelId: t.channelId,
+                user: C,
+                guildId: e.guildId,
+                channelId: e.channelId,
                 analyticsParams: {
                     location: {
                         page: g.liQ.GO_LIVE_MODAL,
                         section: g.JJy.STREAM_VIEWER_POPOUT
                     }
                 },
-                onAction: j
-            }) : (0, r.jsx)(c.A, {
+                onAction: x
+            }) : (0, i.jsx)(d.A, {
                 type: o.M.STREAM_PREVIEW,
-                applicationStream: t,
-                user: h,
-                guildId: t.guildId,
-                channelId: t.channelId,
-                className: b.lx,
-                onAction: j
-            }), !I && (0, r.jsx)(d.A, {
-                type: d.A.Types.INLINE,
-                className: b.PP,
-                children: __OVERLAY__ ? y.intl.string(y.t.YRdw70) : y.intl.string(y.t.CCTgbF)
+                applicationStream: e,
+                user: C,
+                guildId: e.guildId,
+                channelId: e.channelId,
+                className: E.lx,
+                onAction: x
+            }), !_ && (0, i.jsx)(A.A, {
+                type: A.A.Types.INLINE,
+                className: E.PP,
+                children: __OVERLAY__ ? f.intl.string(f.t.YRdw70) : f.intl.string(f.t.CCTgbF)
             })]
         })]
     });
-    return P ? (0, r.jsx)("div", {
-        className: i()(b.yt, b.Tb, C),
-        children: w
-    }) : (0, r.jsx)("div", {
-        className: i()(b.yt, C),
-        children: (0, r.jsx)("div", {
-            className: i()(b.Rh, E),
-            children: w
+    return (0, i.jsx)("div", {
+        className: E.yt,
+        children: (0, i.jsx)("div", {
+            className: r()(E.Rh, I),
+            children: U
         })
+    })
+}
+
+function S(t) {
+    let {
+        stream: e,
+        streamActivity: n,
+        activeStream: l,
+        user: a,
+        currentUserId: u,
+        canWatch: A,
+        unavailableReason: p,
+        onWatchStream: C,
+        onAction: S,
+        showHeader: T = !1,
+        wrapperClassName: v
+    } = t;
+    return (0, i.jsxs)("div", {
+        className: r()(E.yt, v),
+        children: [T && (0, i.jsxs)("div", {
+            className: E.mg,
+            children: [(0, i.jsx)(s.Text, {
+                variant: "text-xs/medium",
+                color: "text-muted",
+                children: f.intl.string(f.t["HV97U/"])
+            }), (0, i.jsx)(c.Ay, {
+                size: c.ed.SMALL
+            })]
+        }), null != C ? (0, i.jsxs)(s.DUT, {
+            onClick: C,
+            className: E.GE,
+            children: [(0, i.jsx)(h.A, {
+                className: E.oz,
+                stream: e
+            }), A ? (0, i.jsx)("div", {
+                className: E.xD,
+                children: (0, i.jsx)(s.Text, {
+                    variant: "text-sm/normal",
+                    color: "none",
+                    className: E.ON,
+                    children: (0, m.A)(e, l, u, p)
+                })
+            }) : null]
+        }) : (0, i.jsxs)("div", {
+            className: E.GE,
+            children: [(0, i.jsx)(h.A, {
+                className: E.oz,
+                stream: e
+            }), A ? (0, i.jsx)("div", {
+                className: E.xD,
+                children: (0, i.jsx)(s.Text, {
+                    variant: "text-sm/normal",
+                    color: "none",
+                    className: E.ON,
+                    children: (0, m.A)(e, l, u, p)
+                })
+            }) : null]
+        }), (0, i.jsx)("div", {
+            className: E.JN,
+            children: null != n ? (0, i.jsx)(o.A, {
+                hideHeader: !0,
+                type: o.M.STREAM_PREVIEW,
+                activity: n,
+                user: a,
+                guildId: e.guildId,
+                channelId: e.channelId,
+                enableUserHoverActivities: !0,
+                analyticsParams: {
+                    location: {
+                        page: g.liQ.GO_LIVE_MODAL,
+                        section: g.JJy.STREAM_VIEWER_POPOUT
+                    }
+                },
+                onAction: S
+            }) : (0, i.jsx)(d.A, {
+                type: o.M.STREAM_PREVIEW,
+                applicationStream: e,
+                user: a,
+                guildId: e.guildId,
+                channelId: e.channelId,
+                className: E.lx,
+                onAction: S
+            })
+        })]
     })
 }

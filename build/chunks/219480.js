@@ -1,216 +1,187 @@
 /** chunk id: 219480, original params: e,t,l (module,exports,require) **/
 l.d(t, {
-    A: () => x
-}), l(896048), l(321073), l(228524);
-var n = l(627968),
-    r = l(64700),
-    i = l(110259),
-    a = l(311907),
-    s = l(397927),
-    c = l(139286),
-    o = l(962125),
-    u = l(661191),
-    d = l(274372),
-    p = l(399925),
-    m = l(555957),
-    f = l(714973),
-    y = l(696016),
-    b = l(985018),
+    A: () => A
+}), l(321073);
+var i = l(627968),
+    s = l(64700),
+    a = l(110259),
+    n = l(311907),
+    r = l(397927),
+    d = l(139286),
+    c = l(962125),
+    o = l(661191),
+    u = l(274372),
+    m = l(399925),
+    p = l(555957),
+    h = l(714973),
+    x = l(696016),
+    C = l(985018),
     v = l(430494);
-let j = 16 / 9,
-    h = [0, 16, 0, 16],
-    g = h[1] + h[3];
+let g = 16 / 9,
+    j = [0, 16, 0, 16],
+    f = j[1] + j[3];
 
-function O(e, t) {
+function y(e, t) {
     return Math.ceil(t / e)
 }
 
-function x(e) {
+function A(e) {
     let {
         channelId: t,
-        filteredClips: x,
-        totalClipCount: C,
-        onClipClick: w
-    } = e, [P, A] = r.useState(!0), [E, I] = r.useState({
+        filteredClips: A,
+        totalClipCount: N,
+        onClipClick: I
+    } = e, [b, E] = s.useState(!0), [k, M] = s.useState({
         width: 0,
         height: 0
-    }), S = (0, a.bG)([d.A], () => d.A.getSettings().storageLocation), N = (0, a.yK)([d.A], () => d.A.getNewClipIds()), k = (0, a.bG)([d.A], () => d.A.getExportingClipIds().length > 0);
-    (0, c.A)({
-        type: i.ImpressionTypes.MODAL,
-        name: i.ImpressionNames.CLIP_GALLERY_VIEWED,
+    }), w = (0, n.bG)([u.A], () => u.A.getSettings().storageLocation), L = (0, n.yK)([u.A], () => u.A.getNewClipIds()), S = (0, n.bG)([u.A], () => u.A.getExportingClipIds().length > 0);
+    (0, d.A)({
+        type: a.ImpressionTypes.MODAL,
+        name: a.ImpressionNames.CLIP_GALLERY_VIEWED,
         properties: {
-            number_of_clips_loaded: x.length
+            number_of_clips_loaded: A.length
         }
     }, {
-        disableTrack: P
-    }, [x.length, P]), r.useEffect(() => ((0, p.jA)(), () => {
-        (0, p.jA)(), (0, p.Su)()
+        disableTrack: b
+    }, [A.length, b]), s.useEffect(() => ((0, m.jA)(), () => {
+        (0, m.jA)(), (0, m.Su)()
     }), []);
-    let D = r.useMemo(() => {
+    let H = s.useMemo(() => {
             let e = [],
                 t = new Map,
                 l = [],
-                n = new Date;
-            n.setHours(0, 0, 0, 0);
-            let r = n.getTime();
-            if (x.forEach(e => {
-                    let n = u.default.extractTimestamp(e.id),
-                        i = new Date(n);
-                    if (i.setHours(0, 0, 0, 0), i.getTime() === r) l.push(e);
+                i = new Date;
+            i.setHours(0, 0, 0, 0);
+            let s = i.getTime();
+            if (A.forEach(e => {
+                    let i = o.default.extractTimestamp(e.id),
+                        a = new Date(i);
+                    if (a.setHours(0, 0, 0, 0), a.getTime() === s) l.push(e);
                     else {
-                        var a;
-                        let l = new Date(n).toLocaleDateString("en-US", {
+                        let l = new Date(i).toLocaleDateString("en-US", {
                                 month: "long",
                                 year: "numeric"
                             }),
-                            r = null != (a = t.get(l)) ? a : [];
-                        t.set(l, [...r, e])
+                            s = t.get(l) ?? [];
+                        t.set(l, [...s, e])
                     }
                 }), l.length > 0) {
                 let t = l.some(e => e.isTemporary);
                 e.push({
                     type: "today",
-                    title: b.intl.string(b.t["kB2R/0"]),
-                    description: t ? b.intl.string(b.t["6AXirz"]) : void 0,
+                    title: C.intl.string(C.t["kB2R/0"]),
+                    description: t ? C.intl.string(C.t["6AXirz"]) : void 0,
                     clips: l
                 })
             }
             return Array.from(t.entries()).forEach(t => {
-                let [l, n] = t;
+                let [l, i] = t;
                 e.push({
                     type: "monthyear",
                     title: l,
-                    clips: n
+                    clips: i
                 })
             }), e
-        }, [x]),
+        }, [A]),
         {
-            width: M
-        } = E,
+            width: T
+        } = k,
         {
-            tileWidth: L,
-            columns: H
-        } = r.useMemo(() => {
+            tileWidth: P,
+            columns: V
+        } = s.useMemo(() => {
             var e;
-            let t, l, n, r, i;
-            return e = x.length, n = 16 * ((l = Math.max(1, Math.floor(((t = M - g) + 16) / 336))) - 1), r = Math.max(320, (t - n) / l), i = O(l, e), {
-                tileWidth: r,
+            let t, l, i, s, a;
+            return e = A.length, i = 16 * ((l = Math.max(1, Math.floor(((t = T - f) + 16) / 336))) - 1), s = Math.max(320, (t - i) / l), a = y(l, e), {
+                tileWidth: s,
                 columns: l,
-                rows: i
+                rows: a
             }
-        }, [x.length, M]);
-    r.useEffect(() => {
+        }, [A.length, T]);
+    s.useEffect(() => {
         !async function() {
-            A(!0);
+            E(!0);
             try {
-                await p.Fb(S)
+                await m.Fb(w)
             } finally {
-                A(!1)
+                E(!1)
             }
         }()
-    }, [S]);
-    let T = r.useCallback(e => {
-            (0, s.mMO)(async () => {
+    }, [w]);
+    let D = s.useCallback(e => {
+            (0, r.mMO)(async () => {
                 let {
-                    default: r
+                    default: s
                 } = await Promise.all([l.e("19632"), l.e("95987")]).then(l.bind(l, 723028));
-                return l => {
-                    var i, a;
-                    return (0, n.jsx)(r, (i = function(e) {
-                        for (var t = 1; t < arguments.length; t++) {
-                            var l = null != arguments[t] ? arguments[t] : {},
-                                n = Object.keys(l);
-                            "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(l).filter(function(e) {
-                                return Object.getOwnPropertyDescriptor(l, e).enumerable
-                            }))), n.forEach(function(t) {
-                                var n;
-                                n = l[t], t in e ? Object.defineProperty(e, t, {
-                                    value: n,
-                                    enumerable: !0,
-                                    configurable: !0,
-                                    writable: !0
-                                }) : e[t] = n
-                            })
-                        }
-                        return e
-                    }({}, l), a = a = {
-                        channelId: t,
-                        clip: e
-                    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
-                        var l = Object.keys(e);
-                        if (Object.getOwnPropertySymbols) {
-                            var n = Object.getOwnPropertySymbols(e);
-                            l.push.apply(l, n)
-                        }
-                        return l
-                    })(Object(a)).forEach(function(e) {
-                        Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(a, e))
-                    }), i))
-                }
+                return l => (0, i.jsx)(s, {
+                    ...l,
+                    channelId: t,
+                    clip: e
+                })
             }, {
-                modalKey: y.DQ,
+                modalKey: x.DQ,
                 stackingBehavior: "stack"
             })
         }, [t]),
-        R = r.useMemo(() => D.map(e => O(H, e.clips.length)), [D, H]),
-        V = r.useMemo(() => R.reduce((e, t) => e + t, 0), [R]),
-        G = Math.floor(L / j),
-        _ = r.useCallback((e, t) => {
+        R = s.useMemo(() => H.map(e => y(V, e.clips.length)), [H, V]),
+        G = s.useMemo(() => R.reduce((e, t) => e + t, 0), [R]),
+        _ = Math.floor(P / g),
+        O = s.useCallback((e, t) => {
             let {
                 sectionIndex: l,
-                sectionRowIndex: r
-            } = t, i = D[l];
-            if (null == i) return null;
-            let a = r * H,
-                s = i.clips.slice(a, a + H);
-            return (0, n.jsx)("div", {
+                sectionRowIndex: s
+            } = t, a = H[l];
+            if (null == a) return null;
+            let n = s * V,
+                r = a.clips.slice(n, n + V);
+            return (0, i.jsx)("div", {
                 className: v.UX,
-                children: s.map(e => (0, n.jsx)("div", {
+                children: r.map(e => (0, i.jsx)("div", {
                     style: {
-                        width: L
+                        width: P
                     },
-                    children: (0, n.jsx)(m.A, {
-                        actionsDisabled: k,
-                        isNew: N.includes(e.id),
-                        onClick: null != w ? w : T,
+                    children: (0, i.jsx)(p.A, {
+                        actionsDisabled: S,
+                        isNew: L.includes(e.id),
+                        onClick: I ?? D,
                         clip: e
                     })
                 }, e.id))
-            }, "row-".concat(l, "-").concat(r))
-        }, [D, H, L, k, N, T, w]),
-        K = r.useCallback(e => {
-            let t = D[e];
-            return (null == t ? void 0 : t.description) != null ? 66 : 44
-        }, [D]),
-        z = r.useCallback(e => {
-            let t = D[e];
-            return null == t ? null : (0, n.jsxs)("div", {
+            }, `row-${l}-${s}`)
+        }, [H, V, P, S, L, D, I]),
+        z = s.useCallback(e => {
+            let t = H[e];
+            return t?.description != null ? 66 : 44
+        }, [H]),
+        K = s.useCallback(e => {
+            let t = H[e];
+            return null == t ? null : (0, i.jsxs)("div", {
                 className: v.aE,
-                children: [(0, n.jsx)(s.Heading, {
+                children: [(0, i.jsx)(r.Heading, {
                     variant: "text-md/semibold",
                     color: "text-default",
                     children: t.title
-                }), null != t.description && (0, n.jsx)(s.Text, {
+                }), null != t.description && (0, i.jsx)(r.Text, {
                     variant: "text-sm/normal",
                     color: "text-subtle",
                     className: v.yV,
                     children: t.description
                 })]
-            }, "header-".concat(e))
-        }, [D]);
-    return P || 0 !== D.length ? P ? (0, n.jsx)("div", {
+            }, `header-${e}`)
+        }, [H]);
+    return b || 0 !== H.length ? b ? (0, i.jsx)("div", {
         className: v.dc,
-        children: (0, n.jsx)(s.y$y, {})
-    }) : (0, n.jsx)(o.A, {
-        listPadding: h,
-        renderRow: _,
-        renderSectionHeader: z,
-        rowCount: V,
+        children: (0, i.jsx)(r.y$y, {})
+    }) : (0, i.jsx)(c.A, {
+        listPadding: j,
+        renderRow: O,
+        renderSectionHeader: K,
+        rowCount: G,
         rowCountBySection: R,
-        rowHeight: G + 68 + 16,
-        sectionHeaderHeight: K,
-        onResize: I
-    }) : (0, n.jsx)(f.A, {
-        isEmptyBecauseQuery: C > 0
+        rowHeight: _ + 68 + 16,
+        sectionHeaderHeight: z,
+        onResize: M
+    }) : (0, i.jsx)(h.A, {
+        isEmptyBecauseQuery: N > 0
     })
 }

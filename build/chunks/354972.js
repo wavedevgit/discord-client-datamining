@@ -1,4 +1,5 @@
 /** chunk id: 354972, original params: e,t,n (module,exports,require) **/
+"use strict";
 e.exports = {
     iE: "wrapper_cb9592",
     qb: "normal_cb9592",

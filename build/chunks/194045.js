@@ -1,110 +1,83 @@
 /** chunk id: 194045, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => S
-}), n(896048);
-var r = n(627968);
+});
+var i = n(627968);
 n(64700);
-var i = n(397927),
+var r = n(397927),
     l = n(73153),
     a = n(626584),
     s = n(450510),
     o = n(891540),
-    c = n(734057),
-    u = n(430452),
-    d = n(309010),
-    p = n(532624),
+    d = n(734057),
+    c = n(430452),
+    u = n(309010),
+    A = n(532624),
     h = n(518647),
-    f = n(796774),
-    g = n(209932),
-    m = n(123973),
-    A = n(102597),
-    _ = n(904054),
-    b = n(857179),
-    E = n(652215),
-    O = n(731854);
-
-function y(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-let I = new a.A("SoundboardManager");
-class v extends h.A {
+    _ = n(796774),
+    m = n(209932),
+    p = n(123973),
+    g = n(102597),
+    E = n(904054),
+    I = n(857179),
+    f = n(652215),
+    C = n(731854);
+let T = new a.A("SoundboardManager");
+class N extends h.A {
+    playingSoundsWeb = new Map;
     _initialize() {
         super._initialize(), __OVERLAY__ || l.h.subscribe("OVERLAY_SOUNDBOARD_SOUNDS_FETCH_REQUEST", this._handleOverlaySoundboardSoundsFetchRequest)
     }
     _terminate() {
         super._terminate(), __OVERLAY__ || l.h.unsubscribe("OVERLAY_SOUNDBOARD_SOUNDS_FETCH_REQUEST", this._handleOverlaySoundboardSoundsFetchRequest)
     }
-    constructor(...e) {
-        var t;
-        super(...e), t = this, y(this, "playingSoundsWeb", new Map), y(this, "_stopAndClearSounds", () => {
-            u.A.supports(O.O5.SAMPLE_PLAYBACK) && u.A.getMediaEngine().eachConnection(e => {
-                e.stopAllSamplesLocalPlayback()
-            }), this.playingSoundsWeb.forEach(e => {
-                e.pause(), e.src = ""
-            }), this.playingSoundsWeb = new Map
-        }), y(this, "_playSound", async function(e) {
+    _stopAndClearSounds = () => {
+        c.Ay.supports(C.O5.SAMPLE_PLAYBACK) && c.Ay.getMediaEngine().eachConnection(e => {
+            e.stopAllSamplesLocalPlayback()
+        }), this.playingSoundsWeb.forEach(e => {
+            e.pause(), e.src = ""
+        }), this.playingSoundsWeb = new Map
+    };
+    _playSound = (() => {
+        var e = this;
+        return async function(t) {
             let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 1,
-                r = arguments.length > 2 ? arguments[2] : void 0,
-                i = arguments.length > 3 ? arguments[3] : void 0,
-                l = null != i && d.A.getVoiceChannelId() === i;
-            if ((null == i || l) && !u.A.isDeaf() && !g.A.isLocalSoundboardMuted(r)) try {
-                let i = {
-                    soundKey: "".concat(r, "-").concat(e),
-                    soundURL: (0, A.A)(e),
-                    soundVolume: (0, _.A)(n),
-                    reportSoundStartedPlaying: () => (0, f.dZ)(e, r)
+                i = arguments.length > 2 ? arguments[2] : void 0,
+                r = arguments.length > 3 ? arguments[3] : void 0,
+                l = null != r && u.A.getVoiceChannelId() === r;
+            if ((null == r || l) && !c.Ay.isDeaf() && !m.A.isLocalSoundboardMuted(i)) try {
+                let r = {
+                    soundKey: `${i}-${t}`,
+                    soundURL: (0, g.A)(t),
+                    soundVolume: (0, E.A)(n),
+                    reportSoundStartedPlaying: () => (0, _.dZ)(t, i)
                 };
-                u.A.supports(O.O5.SAMPLE_PLAYBACK) ? await (0, b.o)(i) : await (0, b.G)(i, t.playingSoundsWeb)
+                c.Ay.supports(C.O5.SAMPLE_PLAYBACK) ? await (0, I.o)(r) : await (0, I.G)(r, e.playingSoundsWeb)
             } catch (e) {
-                I.warn("Error playing soundboard sound: ".concat(e.message))
+                T.warn(`Error playing soundboard sound: ${e.message}`)
             } finally {
-                (0, f.g0)(e, r)
+                (0, _.g0)(t, i)
             }
-        }), y(this, "_handleOverlaySoundboardSoundsFetchRequest", () => {
-            (0, f.E7)()
-        }), y(this, "_handleOpenEducationModal", (e, t) => {
-            if (null == e) return;
-            let l = c.A.getChannel(t),
-                a = p.Ay.getKeybindForAction(E.hCu.SOUNDBOARD_HOLD);
-            null != l && (0, m.A)(l) && null != a && o.A.hasHotspot(s._2.SOUNDBOARD_WHEEL_EDUCATION_MODAL) && (0, i.mMO)(async () => {
-                let {
-                    default: t
-                } = await n.e("51143").then(n.bind(n, 888762));
-                return n => {
-                    var i, s;
-                    return (0, r.jsx)(t, (i = function(e) {
-                        for (var t = 1; t < arguments.length; t++) {
-                            var n = null != arguments[t] ? arguments[t] : {},
-                                r = Object.keys(n);
-                            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                                return Object.getOwnPropertyDescriptor(n, e).enumerable
-                            }))), r.forEach(function(t) {
-                                y(e, t, n[t])
-                            })
-                        }
-                        return e
-                    }({}, n), s = s = {
-                        guildId: e,
-                        keybind: a,
-                        channel: l
-                    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
-                        var n = Object.keys(e);
-                        if (Object.getOwnPropertySymbols) {
-                            var r = Object.getOwnPropertySymbols(e);
-                            n.push.apply(n, r)
-                        }
-                        return n
-                    })(Object(s)).forEach(function(e) {
-                        Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(s, e))
-                    }), i))
-                }
+        }
+    })();
+    _handleOverlaySoundboardSoundsFetchRequest = () => {
+        (0, _.E7)()
+    };
+    _handleOpenEducationModal = (e, t) => {
+        if (null == e) return;
+        let l = d.A.getChannel(t),
+            a = A.Ay.getKeybindForAction(f.hCu.SOUNDBOARD_HOLD);
+        null != l && (0, p.Ay)(l) && null != a && o.A.hasHotspot(s._2.SOUNDBOARD_WHEEL_EDUCATION_MODAL) && (0, r.mMO)(async () => {
+            let {
+                default: t
+            } = await n.e("51143").then(n.bind(n, 888762));
+            return n => (0, i.jsx)(t, {
+                ...n,
+                guildId: e,
+                keybind: a,
+                channel: l
             })
         })
     }
 }
-let S = new v
+let S = new N

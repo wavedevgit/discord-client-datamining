@@ -1,97 +1,82 @@
 /** chunk id: 571139, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
     A: () => P
-}), n(321073), n(896048);
-var r = n(627968);
+}), n(321073);
+var i = n(627968);
 n(64700);
-var i = n(503698),
-    l = n.n(i),
-    a = n(960488),
-    o = n(311907),
-    s = n(314116),
-    c = n(397927),
-    u = n(71393),
-    E = n(967198),
-    d = n(624458),
-    _ = n(202384),
-    A = n(513461),
-    T = n(709977),
-    I = n(212455),
-    O = n(652215),
-    N = n(746080),
-    p = n(985018),
-    R = n(121615),
-    S = n(1624);
-let P = () => {
-    var e, t;
-    let i = (0, o.bG)([E.A], () => E.A.getGuildId(), []),
-        P = (0, o.bG)([u.A], () => u.A.getGuild(i), [i]),
-        y = (0, o.bG)([I.A], () => null != i ? I.A.getRequest(i) : null, [i]),
-        m = (0, a.zy)(),
-        f = (null == (t = (0, a.B6)(m.pathname, O.BVt.CHANNEL(null == P ? void 0 : P.id, N.VV.GUILD_ONBOARDING))) ? void 0 : t.isExact) === !0;
-    if (null == P || !(0, T.Qd)(P) || f) return null;
-    let C = null != (e = null == y ? void 0 : y.applicationStatus) ? e : A.B5.STARTED,
+var r = n(503698),
+    l = n.n(r);
+if (21552 == n.j) var s = n(873263);
+var a = n(311907),
+    o = n(314116),
+    E = n(397927),
+    c = n(334465),
+    _ = n(71393),
+    d = n(967198),
+    A = n(624458),
+    u = n(202384),
+    T = n(513461),
+    I = n(709977),
+    N = n(212455),
+    R = n(652215),
+    S = n(746080),
+    O = n(985018),
+    C = n(121615),
+    p = n(1624);
+let P = 21552 == n.j ? () => {
+    let e = (0, a.bG)([d.A], () => d.A.getGuildId(), []),
+        t = (0, a.bG)([_.A], () => _.A.getGuild(e), [e]),
+        r = (0, a.bG)([N.A], () => null != e ? N.A.getRequest(e) : null, [e]),
+        P = (0, s.zy)(),
+        D = (0, c.B)(P.pathname, R.BVt.CHANNEL(t?.id, S.VV.GUILD_ONBOARDING))?.isExact === !0;
+    if (null == t || !(0, I.Qd)(t) || D) return null;
+    let U = r?.applicationStatus ?? T.B5.STARTED,
         g = null,
-        D = null,
-        h = null,
-        b = [R.lm, S.lm];
-    switch (C) {
-        case A.B5.SUBMITTED:
-            g = p.intl.string(p.t["5iLvSx"]), D = p.intl.string(p.t.mqtdmQ), h = () => {
-                (0, s.A)({
-                    title: p.intl.string(p.t.aIz1oV),
-                    subtitle: p.intl.string(p.t["13tjTU"]),
+        M = null,
+        m = null,
+        h = [C.lm, p.lm];
+    switch (U) {
+        case T.B5.SUBMITTED:
+            g = O.intl.string(O.t["5iLvSx"]), M = O.intl.string(O.t.mqtdmQ), m = () => {
+                (0, o.A)({
+                    title: O.intl.string(O.t.aIz1oV),
+                    subtitle: O.intl.string(O.t["13tjTU"]),
                     variant: "primary",
-                    confirmText: p.intl.string(p.t["cY+Oob"]),
-                    onConfirm: () => d.A.removeGuildJoinRequest(P.id)
+                    confirmText: O.intl.string(O.t["cY+Oob"]),
+                    onConfirm: () => A.A.removeGuildJoinRequest(t.id)
                 })
             };
             break;
-        case A.B5.REJECTED:
-            g = p.intl.string(p.t.lk30cY), D = p.intl.string(p.t["8RrsHr"]), h = () => {
-                (0, c.mMO)(async () => {
+        case T.B5.REJECTED:
+            g = O.intl.string(O.t.lk30cY), M = O.intl.string(O.t["8RrsHr"]), m = () => {
+                (0, E.mMO)(async () => {
                     let {
                         default: e
                     } = await n.e("37548").then(n.bind(n, 856103));
-                    return t => (0, r.jsx)(e, function(e) {
-                        for (var t = 1; t < arguments.length; t++) {
-                            var n = null != arguments[t] ? arguments[t] : {},
-                                r = Object.keys(n);
-                            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                                return Object.getOwnPropertyDescriptor(n, e).enumerable
-                            }))), r.forEach(function(t) {
-                                var r;
-                                r = n[t], t in e ? Object.defineProperty(e, t, {
-                                    value: r,
-                                    enumerable: !0,
-                                    configurable: !0,
-                                    writable: !0
-                                }) : e[t] = r
-                            })
-                        }
-                        return e
-                    }({
-                        guildId: P.id
-                    }, t))
+                    return n => (0, i.jsx)(e, {
+                        guildId: t.id,
+                        ...n
+                    })
                 })
-            }, b.push(R.z3);
+            }, h.push(C.z3);
             break;
         default:
-            g = p.intl.string(p.t.G5YKXP), D = p.intl.string(p.t["r8/DT+"]), h = () => {
-                (0, _.Ze)(P.id)
+            g = O.intl.string(O.t.G5YKXP), M = O.intl.string(O.t["r8/DT+"]), m = () => {
+                (0, u.Ze)(t.id)
             }
     }
-    return (0, r.jsxs)("div", {
-        className: l()(...b),
-        children: [(0, r.jsx)(c.Text, {
-            className: R.wx,
+    return (0, i.jsxs)("div", {
+        className: l()(...h),
+        children: [(0, i.jsx)(E.Text, {
+            className: C.wx,
             variant: "text-sm/normal",
             children: g
-        }), (0, r.jsx)(c.Button, {
+        }), (0, i.jsx)(E.Button, {
             variant: "overlay-primary",
             size: "sm",
-            onClick: h,
-            text: D
+            onClick: m,
+            text: M
         })]
     })
-}
+} : null

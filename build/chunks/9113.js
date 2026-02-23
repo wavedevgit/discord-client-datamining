@@ -1,14 +1,14 @@
 /** chunk id: 9113, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => l
+    A: () => a
 });
-var r = n(64700),
-    i = n(256311);
+var i = n(64700),
+    s = n(256311);
 
-function l(e) {
-    r.useEffect(() => {
-        if (null != e) return i.A.lockChangeLog(e), () => {
-            i.A.unlockChangeLog(e)
+function a(e) {
+    i.useEffect(() => {
+        if (null != e) return s.A.lockChangeLog(e), () => {
+            s.A.unlockChangeLog(e)
         }
     }, [e])
 }

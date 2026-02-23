@@ -1,42 +1,41 @@
-/** chunk id: 414506, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    default: () => _
+/** chunk id: 414506, original params: e,l,n (module,exports,require) **/
+n.d(l, {
+    default: () => g
 });
-var l = n(627968);
+var t = n(627968);
 n(64700);
 var r = n(397927),
     o = n(442433),
     i = n(847767),
     c = n(358367),
-    u = n(793574),
-    a = n(688810),
-    d = n(180798),
-    s = n(652215),
+    d = n(793574),
+    s = n(688810),
+    a = n(180798),
+    u = n(652215),
     A = n(985018);
-let _ = (0, c.A)((0, i.A)(function(e) {
-    var t;
+let g = (0, c.A)((0, i.A)(function(e) {
     let {
-        user: n,
-        guildId: i,
-        onSelect: c,
-        analyticsLocations: s,
-        onCloseContextMenu: _,
-        isViewOnly: b
+        user: l,
+        guildId: n,
+        onSelect: i,
+        analyticsLocations: c,
+        onCloseContextMenu: u,
+        isViewOnly: g
     } = e, {
-        analyticsLocations: f
-    } = (0, a.Ay)(u.A.CONTEXT_MENU), E = null != (t = null == s ? void 0 : s[0]) ? t : f[0], g = (0, d.A)(n.id, i, !0, E, b);
-    return (0, l.jsx)(r.W1t, {
+        analyticsLocations: p
+    } = (0, s.Ay)(d.A.CONTEXT_MENU), b = c?.[0] ?? p[0], h = (0, a.A)(l.id, n, !0, b, g);
+    return (0, t.jsx)(r.W1t, {
         "data-menu-migrated": !0,
         navId: "guild-moderation-roles",
         onClose: () => {
-            (0, o.Z_)(), null == _ || _()
+            (0, o.Z_)(), u?.()
         },
         "aria-label": A.intl.string(A.t.liqwPJ),
-        onSelect: c,
-        children: (0, l.jsx)(r.rXV, {
-            children: g
+        onSelect: i,
+        children: (0, t.jsx)(r.rXV, {
+            children: h
         })
     })
 }, {
-    object: s.ZSU.CONTEXT_MENU
-}), [u.A.CONTEXT_MENU, u.A.GUILD_MODERATION_USER_MENU])
+    object: u.ZSU.CONTEXT_MENU
+}), [d.A.CONTEXT_MENU, d.A.GUILD_MODERATION_USER_MENU])

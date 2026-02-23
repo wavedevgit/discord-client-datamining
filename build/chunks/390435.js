@@ -1,45 +1,30 @@
 /** chunk id: 390435, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    w: () => u
+    w: () => d
 });
-var r = n(621466),
-    l = n(397927),
-    i = n(267102),
-    s = n(712687),
+var i = n(621466),
+    s = n(397927),
+    l = n(267102),
+    r = n(712687),
     a = n(203982),
     o = n(406975),
     c = n(652215);
-let u = function(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = r
-        })
-    }
-    return e
-}({
+let d = {
     POP_LAYER: {
         binds: ["esc"],
         comboKeysBindGlobal: !0,
         action(e) {
-            if ((0, l.ny_)()) return !1;
+            if ((0, s.ny_)()) return !1;
             if (a._.hasSubscribers(c.jej.CALL_DECLINE)) return a._.dispatch(c.jej.CALL_DECLINE), !1;
-            if (s.A.close()) return !1;
-            if ((0, r.vq)(e.target)) {
-                let t = (0, i.mU)(e.target);
-                if (null == t ? void 0 : t.hasSubscribers(c.jej.POPOUT_CLOSE)) return t.dispatch(c.jej.POPOUT_CLOSE), !1
+            if (r.A.close()) return !1;
+            if ((0, i.vq)(e.target)) {
+                let t = (0, l.mU)(e.target);
+                if (t?.hasSubscribers(c.jej.POPOUT_CLOSE)) return t.dispatch(c.jej.POPOUT_CLOSE), !1
             }
             if (a._.hasSubscribers(c.jej.MODAL_CLOSE)) return a._.dispatch(c.jej.MODAL_CLOSE), !1;
             a._.dispatch(c.jej.LAYER_POP_ESCAPE_KEY)
         }
-    }
-}, o.Ay)
+    },
+    ...o.Ay
+}

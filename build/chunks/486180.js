@@ -1,112 +1,84 @@
 /** chunk id: 486180, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => y
+    A: () => p
 });
-var r, a, i = n(627968),
-    l = n(64700),
+var a = n(627968),
+    i = n(64700),
     s = n(158954),
-    o = n(311907),
-    c = n(990078),
+    r = n(311907),
+    l = n(990078),
     d = n(397927),
-    u = n(793574),
-    m = n(665171),
-    f = n(522055),
-    g = n(895770),
-    _ = n(355609),
+    o = n(793574),
+    c = n(665171),
+    u = n(522055),
+    _ = n(895770),
+    m = n(355609),
     x = n(843095),
-    v = n(800007),
-    j = n(294726),
-    p = n(985018),
-    b = n(979402);
-let h = (r = function(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = r
-        })
-    }
-    return e
-}({}, v.ZN), a = a = {
-    initialStep: v.HS.SERVER_SETTINGS
-}, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-        var r = Object.getOwnPropertySymbols(e);
-        n.push.apply(n, r)
-    }
-    return n
-})(Object(a)).forEach(function(e) {
-    Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(a, e))
-}), r);
+    g = n(800007),
+    f = n(294726),
+    v = n(985018),
+    h = n(979402);
+let j = {
+    ...g.ZN,
+    initialStep: g.HS.SERVER_SETTINGS
+};
 
-function y(e) {
+function p(e) {
     let {
         guildId: t
     } = e;
-    l.useEffect(() => {
-        (0, m.z9)(t)
+    i.useEffect(() => {
+        (0, c.z9)(t)
     }, [t]);
-    let n = (0, o.bG)([f.A], () => f.A.getStateForGuild(t)),
+    let n = (0, r.bG)([u.A], () => u.A.getStateForGuild(t)),
         {
-            catalog: r,
-            instances: a
-        } = l.useMemo(() => {
-            var e, t;
-            return {
-                catalog: Object.values(null != (e = null == n ? void 0 : n.catalog) ? e : {}),
-                instances: Object.values(null != (t = null == n ? void 0 : n.instances) ? t : {})
-            }
-        }, [null == n ? void 0 : n.catalog, null == n ? void 0 : n.instances]),
-        y = a.length >= v.ZI;
-    return 0 === r.length ? (0, i.jsx)("div", {
-        className: b.kL,
-        children: (0, i.jsx)(d.y$y, {
+            catalog: p,
+            instances: C
+        } = i.useMemo(() => ({
+            catalog: Object.values(n?.catalog ?? {}),
+            instances: Object.values(n?.instances ?? {})
+        }), [n?.catalog, n?.instances]),
+        I = C.length >= g.ZI;
+    return 0 === p.length ? (0, a.jsx)("div", {
+        className: h.kL,
+        children: (0, a.jsx)(d.y$y, {
             type: d.tVU.SPINNING_CIRCLE,
-            className: b.u1
+            className: h.u1
         })
-    }) : (0, i.jsxs)("div", {
-        className: b.kL,
-        children: [(0, i.jsx)(s.DZT, {
-            className: b.R_,
+    }) : (0, a.jsxs)("div", {
+        className: h.kL,
+        children: [(0, a.jsx)(s.DZT, {
+            className: h.R_,
             variant: "heading-md/semibold",
-            children: p.intl.string(j.default["3vWDMz"])
-        }), y && (0, i.jsx)("div", {
-            className: b.Bq,
-            children: (0, i.jsx)(_.k, {})
-        }), (0, i.jsx)(s.IpV, {
-            className: b.nd,
-            children: (0, i.jsx)("div", {
-                className: b.Y_,
-                children: r.map((e, n) => (0, i.jsx)(c.m, {
+            children: v.intl.string(f.default["3vWDMz"])
+        }), I && (0, a.jsx)("div", {
+            className: h.Bq,
+            children: (0, a.jsx)(m.k, {})
+        }), (0, a.jsx)(s.IpV, {
+            className: h.nd,
+            children: (0, a.jsx)("div", {
+                className: h.Y_,
+                children: p.map((e, n) => (0, a.jsx)(l.m, {
                     asContainer: !0,
-                    text: e.disabled ? p.intl.formatToPlainString(j.default.uVpJYf, {
+                    text: e.disabled ? v.intl.formatToPlainString(f.default.uVpJYf, {
                         gameName: e.name
                     }) : null,
                     position: "top",
-                    children: (0, i.jsx)(g.A, {
+                    children: (0, a.jsx)(_.A, {
                         guildId: t,
                         game: e,
                         onClick: () => (0, x.A)({
                             guildId: t,
-                            stepConfig: h,
+                            stepConfig: j,
                             initialGameServerGame: e,
-                            analyticsLocation: u.A.GAME_SERVER_PAGE_SIDEBAR
+                            analyticsLocation: o.A.GAME_SERVER_PAGE_SIDEBAR
                         }),
-                        imageClassName: b.Sl,
-                        titleClassName: b.DD,
-                        disabled: y || e.disabled,
-                        location: u.A.GAME_SERVER_PAGE_SIDEBAR
+                        imageClassName: h.Sl,
+                        titleClassName: h.DD,
+                        disabled: I || e.disabled,
+                        location: o.A.GAME_SERVER_PAGE_SIDEBAR
                     })
-                }, "sidebar-game-".concat(n, "-").concat(e.id)))
+                }, `sidebar-game-${n}-${e.id}`))
             })
         })]
     })

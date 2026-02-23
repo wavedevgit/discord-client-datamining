@@ -1,18 +1,16 @@
-/** chunk id: 14115, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    Y: () => i
+/** chunk id: 14115, original params: e,t,l (module,exports,require) **/
+l.d(t, {
+    Y: () => n
 });
-let r = {
+let a = {
         EARN: .25,
         SPEND: .3
     },
-    i = (e, t) => {
-        let n = e > 0,
-            i = t * r[n ? "EARN" : "SPEND"],
-            a = n ? t - i : 0;
+    n = (e, t) => {
+        let l = e > 0,
+            n = t * a[l ? "EARN" : "SPEND"];
         return {
-            duration: i,
-            delay: a
+            duration: n,
+            delay: l ? t - n : 0
         }
     }

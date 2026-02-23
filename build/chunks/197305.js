@@ -1,68 +1,60 @@
-/** chunk id: 197305, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => p
-}), n(321073);
-var r, l = n(311907),
-    i = n(73153),
-    a = n(213012),
-    s = n(71393);
-
-function o(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-let c = {},
-    u = () => {
-        c = {
+/** chunk id: 197305, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    A: () => u
+}), i(321073);
+var n = i(311907),
+    s = i(73153),
+    l = i(213012),
+    r = i(71393);
+let a = {},
+    d = () => {
+        a = {
             guildAffinitiesByGuildId: {},
             guildAffinities: [],
             lastFetched: 0
         }
     };
-u();
-class d extends(r = l.Ay.PersistedStore) {
+d();
+class o extends n.Ay.PersistedStore {
+    static displayName = "GuildAffinitiesStore";
+    static persistKey = "GuildAffinitiesStore";
     initialize(e) {
-        null != e && (c = e), this.waitFor(s.A)
+        null != e && (a = e), this.waitFor(r.A)
     }
     getState() {
-        return c
+        return a
     }
     getGuildAffinity(e) {
-        return c.guildAffinitiesByGuildId[e]
+        return a.guildAffinitiesByGuildId[e]
     }
     get affinities() {
-        return c.guildAffinities
+        return a.guildAffinities
     }
     get hasRequestResolved() {
-        return 0 !== c.lastFetched
+        return 0 !== a.lastFetched
     }
 }
-o(d, "displayName", "GuildAffinitiesStore"), o(d, "persistKey", "GuildAffinitiesStore");
-let p = new d(i.h, {
+let u = new o(s.h, {
     CONNECTION_OPEN: function() {
-        return Date.now() - c.lastFetched > 864e5 && (0, a.I)(), !1
+        return Date.now() - a.lastFetched > 864e5 && (0, l.I)(), !1
     },
     LOAD_GUILD_AFFINITIES_SUCCESS: function(e) {
         let {
             guildAffinities: t
         } = e;
-        c.guildAffinities = [], c.guildAffinitiesByGuildId = {}, c.lastFetched = Date.now(), t.forEach((e, t) => {
+        a.guildAffinities = [], a.guildAffinitiesByGuildId = {}, a.lastFetched = Date.now(), t.forEach((e, t) => {
             let {
-                affinity: n,
-                guild_id: r
-            } = e, l = {
-                score: n,
-                guildId: r,
+                affinity: i,
+                guild_id: n
+            } = e, s = {
+                score: i,
+                guildId: n,
                 index: t
             };
-            c.guildAffinitiesByGuildId[r] = l, c.guildAffinities.push(l)
+            a.guildAffinitiesByGuildId[n] = s, a.guildAffinities.push(s)
         })
     },
     LOGOUT: function() {
-        u()
+        d()
     }
 })

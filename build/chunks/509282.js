@@ -1,352 +1,343 @@
 /** chunk id: 509282, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    $: () => R,
-    G: () => w
-}), n(896048), n(938796), n(228524), n(733351);
-var r = n(627968),
-    i = n(64700),
-    l = n(284009),
-    a = n.n(l),
+    $: () => M,
+    G: () => P
+}), n(938796);
+var i = n(627968),
+    l = n(64700),
+    r = n(284009),
+    a = n.n(r),
     s = n(311907),
     o = n(397927),
-    c = n(996759),
-    u = n(800342),
-    d = n(627363),
-    p = n(587895),
+    d = n(996759),
+    c = n(800342),
+    u = n(627363),
+    _ = n(587895),
     m = n(163437),
-    f = n(185438),
-    g = n(734057),
-    _ = n(97352),
-    h = n(31455),
-    b = n(67480),
-    y = n(328968),
-    A = n(954571),
-    v = n(957565),
-    O = n(943775),
-    x = n(997997),
-    E = n(658575),
-    j = n(376374),
-    C = n(652215),
-    I = n(435220),
-    S = n(985018),
-    T = n(159740);
-let N = (0, s.UT)([b.A, y.A, _.A], {
-        getQueryId: C.fic.SKU,
+    h = n(185438),
+    p = n(734057),
+    g = n(97352),
+    A = n(31455),
+    x = n(67480),
+    f = n(328968),
+    C = n(954571),
+    E = n(957565),
+    I = n(943775),
+    b = n(997997),
+    T = n(658575),
+    v = n(376374),
+    S = n(652215),
+    y = n(435220),
+    N = n(985018),
+    j = n(159740);
+let L = (0, s.UT)([x.A, f.A, g.A], {
+        getQueryId: S.fic.SKU,
         get: e => {
             if (null == e) return;
-            let t = b.A.get(e),
-                n = y.A.getForSKU(e);
+            let t = x.A.get(e),
+                n = f.A.getForSKU(e);
             if (null == t || null == n) return;
-            let r = _.A.getForSKU(e);
+            let i = g.A.getForSKU(e);
             return {
                 sku: t,
                 storeListing: n,
-                subscriptionPlan: null != r ? r[0] : void 0
+                subscriptionPlan: null != i ? i[0] : void 0
             }
         },
         load: async e => {
-            a()(null != e, "skuId is null"), await (0, u.QB)(e)
+            a()(null != e, "skuId is null"), await (0, c.QB)(e)
         }
     }),
-    P = (0, s.UT)([b.A], {
-        getQueryId: C.fic.__DO_NOT_USE__STOREFRONT_MESSAGE_EMBED_PARENT_SKU,
-        get: e => {
-            var t;
-            return null == e ? null : null != (t = b.A.getParentSKU(e)) ? t : null
-        },
+    R = (0, s.UT)([x.A], {
+        getQueryId: S.fic.__DO_NOT_USE__STOREFRONT_MESSAGE_EMBED_PARENT_SKU,
+        get: e => null == e ? null : x.A.getParentSKU(e) ?? null,
         load: async (e, t) => {
-            a()(null != e && null != t, "appId is null"), await (0, u.JI)(t)
+            a()(null != e && null != t, "appId is null"), await (0, c.JI)(t)
         }
     });
 
-function w(e) {
+function P(e) {
     let {
         appId: t,
-        message: l
-    } = e, a = (0, E.G)(t), {
-        data: u
-    } = (0, d.YY)(t), [m, f, _, b] = (0, s.yK)([p.A, h.A, g.A], () => {
-        var e;
-        let n = p.A.getApplication(t),
-            r = null != n ? (0, O.A)(n, 45) : void 0,
-            i = null == (e = g.A.getBasicChannel(l.channel_id)) ? void 0 : e.guild_id;
-        return [h.A.getStoreLayout(t), h.A.getFetchStatus(t), i, r]
-    }, [t, l.channel_id]);
-    i.useEffect(() => {
-        f === h.N.NONE && (0, c.V)(t)
-    }, [t, f]);
-    let y = m.subscriptions.length,
-        v = m.otps.length,
-        j = i.useMemo(() => y > 0 && v > 0 ? S.intl.formatToPlainString(S.t["jA648+"], {
-            subCount: y,
-            itemCount: v
-        }) : y > 0 ? S.intl.formatToPlainString(S.t.GSfibA, {
-            count: y
-        }) : v > 0 ? S.intl.formatToPlainString(S.t.j7Go5A, {
-            count: v
-        }) : S.intl.string(S.t.rMA98g), [v, y]);
-    if (!a || null == u) return null;
-    let N = () => {
+        message: r
+    } = e, a = (0, T.G)(t), {
+        data: c
+    } = (0, u.YY)(t), [m, h, g, x] = (0, s.yK)([_.A, A.A, p.A], () => {
+        let e = _.A.getApplication(t),
+            n = null != e ? (0, I.A)(e, 45) : void 0,
+            i = p.A.getBasicChannel(r.channel_id)?.guild_id;
+        return [A.A.getStoreLayout(t), A.A.getFetchStatus(t), i, n]
+    }, [t, r.channel_id]);
+    l.useEffect(() => {
+        h === A.N.NONE && (0, d.V)(t)
+    }, [t, h]);
+    let f = m.subscriptions.length,
+        E = m.otps.length,
+        v = l.useMemo(() => f > 0 && E > 0 ? N.intl.formatToPlainString(N.t["jA648+"], {
+            subCount: f,
+            itemCount: E
+        }) : f > 0 ? N.intl.formatToPlainString(N.t.GSfibA, {
+            count: f
+        }) : E > 0 ? N.intl.formatToPlainString(N.t.j7Go5A, {
+            count: E
+        }) : N.intl.string(N.t.rMA98g), [E, f]);
+    if (!a || null == c) return null;
+    let L = () => {
         (0, o.mMO)(async () => {
             let {
                 default: e
             } = await Promise.all([n.e("33563"), n.e("43245")]).then(n.bind(n, 719847));
-            return n => (0, r.jsx)(e, {
+            return n => (0, i.jsx)(e, {
                 transitionState: n.transitionState,
                 onClose: n.onClose,
                 appId: t,
-                guildId: _
+                guildId: g
             })
         })
     };
-    return (0, r.jsx)(D, {
-        appName: u.name,
-        title: S.intl.formatToPlainString(S.t.XDRjs5, {
-            appName: u.name
+    return (0, i.jsx)(w, {
+        appName: c.name,
+        title: N.intl.formatToPlainString(N.t.XDRjs5, {
+            appName: c.name
         }),
-        description: j,
-        link: "".concat(location.protocol, "//").concat(location.host).concat(C.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(u.id, I.GlobalDiscoveryAppsSections.STORE)),
+        description: v,
+        link: `${location.protocol}//${location.host}${S.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(c.id,y.GlobalDiscoveryAppsSections.STORE)}`,
         onLinkCopy: () => {
-            (0, x.K)(t, x.C.STORE_EMBED)
+            (0, b.K)(t, b.C.STORE_EMBED)
         },
-        iconSrc: b,
+        iconSrc: x,
         onIconClick: () => {
-            N(), A.default.track(C.HAw.STOREFRONT_STORE_MESSAGE_EMBED_CLICKED, {
+            L(), C.default.track(S.HAw.STOREFRONT_STORE_MESSAGE_EMBED_CLICKED, {
                 application_id: t,
                 area: "app_icon"
             })
         },
-        children: (0, r.jsx)("div", {
-            className: T.mZ,
-            children: (0, r.jsx)(o.Button, {
+        children: (0, i.jsx)("div", {
+            className: j.mZ,
+            children: (0, i.jsx)(o.Button, {
                 onClick: () => {
-                    N(), A.default.track(C.HAw.STOREFRONT_STORE_MESSAGE_EMBED_CLICKED, {
+                    L(), C.default.track(S.HAw.STOREFRONT_STORE_MESSAGE_EMBED_CLICKED, {
                         application_id: t,
                         area: "open_store_button"
                     })
                 },
-                text: S.intl.string(S.t.kRvlKJ)
+                text: N.intl.string(N.t.kRvlKJ)
             })
         })
     })
 }
 
-function R(e) {
-    var t, l;
+function M(e) {
     let {
-        appId: a,
-        skuId: c,
-        message: u
+        appId: t,
+        skuId: r,
+        message: a
     } = e, {
-        parentSku: p,
-        sku: _,
-        subscriptionPlan: h,
-        storeListing: b
+        parentSku: d,
+        sku: c,
+        subscriptionPlan: _,
+        storeListing: g
     } = function(e, t) {
-        var n, r;
         let {
-            data: i
-        } = N(e), l = null == i ? void 0 : i.sku, a = null == i ? void 0 : i.subscriptionPlan, s = null == i ? void 0 : i.storeListing, {
-            data: o
-        } = P(e, null != (n = null == l || null == (r = l.application) ? void 0 : r.id) ? n : null == l ? void 0 : l.applicationId);
+            data: n
+        } = L(e), i = n?.sku, l = n?.subscriptionPlan, r = n?.storeListing, {
+            data: a
+        } = R(e, i?.application?.id ?? i?.applicationId);
         return {
-            parentSku: o,
-            sku: (null == l ? void 0 : l.applicationId) === t ? l : null,
-            storeListing: s,
-            subscriptionPlan: a
+            parentSku: a,
+            sku: i?.applicationId === t ? i : null,
+            storeListing: r,
+            subscriptionPlan: l
         }
-    }(c, a), {
-        data: y
-    } = (0, d.YY)(null == _ ? void 0 : _.applicationId), v = (0, s.bG)([g.A], () => {
-        var e;
-        return null == (e = g.A.getBasicChannel(u.channel_id)) ? void 0 : e.guild_id
-    }, [u]), w = i.useMemo(() => null != y ? (0, O.A)(y, 45) : void 0, [y]), R = (0, E.G)(null != (t = null == y ? void 0 : y.id) ? t : ""), {
-        openModal: L,
+    }(r, t), {
+        data: A
+    } = (0, u.YY)(c?.applicationId), x = (0, s.bG)([p.A], () => p.A.getBasicChannel(a.channel_id)?.guild_id, [a]), f = l.useMemo(() => null != A ? (0, I.A)(A, 45) : void 0, [A]), E = (0, T.G)(A?.id ?? ""), {
+        openModal: P,
         subscriptionPurchaseButtonState: M
-    } = (0, f.A)({
-        skuId: c,
-        initialSubscribeForGuild: v
+    } = (0, h.A)({
+        skuId: r,
+        initialSubscribeForGuild: x
     });
-    if (!R || null == y || null == _) return null;
-    let k = _.type === C.Puh.SUBSCRIPTION,
-        U = !!k && (0, m.bg)(_.flags),
-        G = () => {
+    if (!E || null == A || null == c) return null;
+    let D = c.type === S.Puh.SUBSCRIPTION,
+        k = !!D && (0, m.bg)(c.flags),
+        O = () => {
             (0, o.mMO)(async () => {
                 let {
                     default: e
                 } = await Promise.all([n.e("33563"), n.e("43245")]).then(n.bind(n, 719847));
-                return t => (0, r.jsx)(e, {
+                return t => (0, i.jsx)(e, {
                     transitionState: t.transitionState,
                     onClose: t.onClose,
-                    appId: y.id,
-                    guildId: v
+                    appId: A.id,
+                    guildId: x
                 })
             })
         },
-        B = () => {
+        U = () => {
             (0, o.mMO)(async () => {
-                let e = k ? (await Promise.resolve().then(n.bind(n, 168393))).SubscriptionDetailsModal : null,
-                    t = k ? null : (await Promise.resolve().then(n.bind(n, 963179))).ItemDetailsModal;
+                let e = D ? (await Promise.resolve().then(n.bind(n, 168393))).SubscriptionDetailsModal : null,
+                    t = D ? null : (await Promise.resolve().then(n.bind(n, 963179))).ItemDetailsModal;
                 return n => {
-                    let i = () => {
-                        n.onClose(), G()
+                    let l = () => {
+                        n.onClose(), O()
                     };
-                    return null != e && null != p ? (0, r.jsx)(e, {
+                    return null != e && null != d ? (0, i.jsx)(e, {
                         transitionState: n.transitionState,
-                        appId: y.id,
-                        skuId: _.id,
-                        guildId: v,
-                        subscriptionType: U ? "user" : "guild",
+                        appId: A.id,
+                        skuId: c.id,
+                        guildId: x,
+                        subscriptionType: k ? "user" : "guild",
                         onClose: n.onClose,
-                        onHeaderTitleClick: i
-                    }) : null != t ? (0, r.jsx)(t, {
+                        onHeaderTitleClick: l
+                    }) : null != t ? (0, i.jsx)(t, {
                         transitionState: n.transitionState,
-                        appId: y.id,
-                        skuId: c,
+                        appId: A.id,
+                        skuId: r,
                         onClose: n.onClose,
-                        onHeaderTitleClick: i
+                        onHeaderTitleClick: l
                     }) : null
                 }
             })
         },
-        F = k ? U ? (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsx)(o.nys, {
+        G = D ? k ? (0, i.jsxs)(i.Fragment, {
+            children: [(0, i.jsx)(o.nys, {
                 size: "custom",
                 width: 12,
                 height: 12
-            }), " ", S.intl.string(S.t.wnifjC)]
-        }) : (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsx)(o.RR9, {
+            }), " ", N.intl.string(N.t.wnifjC)]
+        }) : (0, i.jsxs)(i.Fragment, {
+            children: [(0, i.jsx)(o.RR9, {
                 size: "custom",
                 width: 12,
                 height: 12
-            }), " ", S.intl.string(S.t.NRC3ar)]
-        }) : null == b || null == (l = b.description) ? void 0 : l.trim();
-    "" === F && (F = void 0);
-    let H = () => {
-        A.default.track(C.HAw.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
-            application_id: y.id,
-            sku_id: _.id,
+            }), " ", N.intl.string(N.t.NRC3ar)]
+        }) : g?.description?.trim();
+    "" === G && (G = void 0);
+    let B = () => {
+        C.default.track(S.HAw.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
+            application_id: A.id,
+            sku_id: c.id,
             area: "purchase_button"
         })
     };
-    return (0, r.jsx)(D, {
-        appName: y.name,
-        title: _.name,
-        description: F,
-        link: "".concat(location.protocol, "//").concat(location.host).concat(C.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(y.id, I.GlobalDiscoveryAppsSections.STORE)),
+    return (0, i.jsx)(w, {
+        appName: A.name,
+        title: c.name,
+        description: G,
+        link: `${location.protocol}//${location.host}${S.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(A.id,y.GlobalDiscoveryAppsSections.STORE)}`,
         onLinkCopy: () => {
-            (0, x.K)(y.id, x.C.SKU_EMBED, c)
+            (0, b.K)(A.id, b.C.SKU_EMBED, r)
         },
-        iconSrc: w,
+        iconSrc: f,
         onIconClick: () => {
-            G(), A.default.track(C.HAw.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
-                application_id: y.id,
-                sku_id: _.id,
+            O(), C.default.track(S.HAw.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
+                application_id: A.id,
+                sku_id: c.id,
                 area: "app_icon"
             })
         },
-        children: (0, r.jsxs)("div", {
-            className: T.w,
-            children: [(0, r.jsx)(o.Button, {
+        children: (0, i.jsxs)("div", {
+            className: j.w,
+            children: [(0, i.jsx)(o.Button, {
                 variant: "secondary",
                 onClick: () => {
-                    B(), A.default.track(C.HAw.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
-                        application_id: y.id,
-                        sku_id: _.id,
+                    U(), C.default.track(S.HAw.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
+                        application_id: A.id,
+                        sku_id: c.id,
                         area: "view_details"
                     })
                 },
-                text: S.intl.string(S.t.DXYfjO)
-            }), k ? null != h ? (0, r.jsx)(j.rc, {
-                onClick: L,
-                appId: y.id,
-                subscriptionType: U ? "user" : "guild",
-                skuId: _.id,
+                text: N.intl.string(N.t.DXYfjO)
+            }), D ? null != _ ? (0, i.jsx)(v.rc, {
+                onClick: P,
+                appId: A.id,
+                subscriptionType: k ? "user" : "guild",
+                skuId: c.id,
                 icon: o.U1X,
-                onHasClicked: H,
-                subscriptionPlan: h,
+                onHasClicked: B,
+                subscriptionPlan: _,
                 state: M
-            }) : (0, r.jsx)(o.Button, {
+            }) : (0, i.jsx)(o.Button, {
                 variant: "primary",
-                text: S.intl.string(S.t.uuzaAK),
-                onClick: B
-            }) : (0, r.jsx)(j.$P, {
-                appId: y.id,
-                sku: _,
+                text: N.intl.string(N.t.uuzaAK),
+                onClick: U
+            }) : (0, i.jsx)(v.$P, {
+                appId: A.id,
+                sku: c,
                 icon: o.U1X,
-                onHasClicked: H
+                onHasClicked: B
             })]
         })
     })
 }
 
-function D(e) {
+function w(e) {
     let {
         appName: t,
         title: n,
-        description: i,
-        link: l,
+        description: l,
+        link: r,
         iconSrc: a,
         onIconClick: s,
-        onLinkCopy: c,
-        children: u
+        onLinkCopy: d,
+        children: c
     } = e;
-    return (0, r.jsxs)("div", {
-        className: T.iE,
-        children: [(0, r.jsxs)("div", {
-            className: T.wx,
-            children: [(0, r.jsxs)("div", {
-                className: T.qd,
-                children: [(0, r.jsx)(o.U1X, {
+    return (0, i.jsxs)("div", {
+        className: j.iE,
+        children: [(0, i.jsxs)("div", {
+            className: j.wx,
+            children: [(0, i.jsxs)("div", {
+                className: j.qd,
+                children: [(0, i.jsx)(o.U1X, {
                     size: "xxs"
-                }), (0, r.jsx)(o.Text, {
+                }), (0, i.jsx)(o.Text, {
                     variant: "eyebrow",
                     color: "text-muted",
                     children: t
                 })]
-            }), v.p5 && (0, r.jsx)(o.K0, {
-                "aria-label": S.intl.string(S.t.WqhZss),
-                icon: () => (0, r.jsx)(o.qYV, {
+            }), E.p5 && (0, i.jsx)(o.K0, {
+                "aria-label": N.intl.string(N.t.WqhZss),
+                icon: () => (0, i.jsx)(o.qYV, {
                     size: "xs"
                 }),
                 size: "sm",
                 onClick: () => {
-                    (0, v.C)(l, () => {
-                        (0, o.showToast)((0, o.createToast)(S.intl.string(S.t["L/PwZf"]), o.ToastType.SUCCESS)), c()
+                    (0, E.C)(r, () => {
+                        (0, o.showToast)((0, o.createToast)(N.intl.string(N.t["L/PwZf"]), o.ToastType.SUCCESS)), d()
                     })
                 },
                 variant: "icon-only"
             })]
-        }), (0, r.jsxs)("div", {
-            className: T.Qs,
-            children: [(0, r.jsxs)("div", {
-                className: T.oB,
-                children: [null != a && (0, r.jsx)(o.DUT, {
+        }), (0, i.jsxs)("div", {
+            className: j.Qs,
+            children: [(0, i.jsxs)("div", {
+                className: j.oB,
+                children: [null != a && (0, i.jsx)(o.DUT, {
                     onClick: s,
-                    children: (0, r.jsx)("img", {
+                    children: (0, i.jsx)("img", {
                         src: a.href,
                         alt: "",
-                        className: T.Z2
+                        className: j.Z2
                     })
-                }), (0, r.jsxs)("div", {
-                    className: T.Tf,
-                    style: null == i ? {
+                }), (0, i.jsxs)("div", {
+                    className: j.Tf,
+                    style: null == l ? {
                         justifyContent: "space-evenly"
                     } : void 0,
-                    children: [(0, r.jsx)(o.Text, {
+                    children: [(0, i.jsx)(o.Text, {
                         variant: "heading-md/semibold",
                         tag: "div",
                         children: n
-                    }), null != i && (0, r.jsx)(o.Text, {
+                    }), null != l && (0, i.jsx)(o.Text, {
                         variant: "heading-md/medium",
                         color: "text-muted",
                         tag: "div",
-                        className: T.h_,
-                        children: i
+                        className: j.h_,
+                        children: l
                     })]
                 })]
-            }), u]
+            }), c]
         })]
     })
 }

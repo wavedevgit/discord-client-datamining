@@ -1,42 +1,42 @@
-/** chunk id: 854788, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => p
+/** chunk id: 854788, original params: e,t,a (module,exports,require) **/
+a.d(t, {
+    A: () => h
 });
-var r = n(627968),
-    l = n(64700),
-    i = n(397927),
-    a = n(412461),
-    s = n(310419),
-    o = n(656106),
-    c = n(652215),
-    d = n(985018),
-    u = n(101386);
+var n = a(627968),
+    i = a(64700),
+    s = a(397927),
+    l = a(412461),
+    r = a(310419),
+    o = a(656106),
+    c = a(652215),
+    d = a(985018),
+    u = a(101386);
 
-function p(e) {
+function h(e) {
     let {
         application: t,
-        className: n
-    } = e, p = l.useCallback(e => {
-        (0, a.TR)(c.HAw.APP_DIRECTORY_CATEGORY_CLICKED, {
+        className: a
+    } = e, h = i.useCallback(e => {
+        (0, l.TR)(c.HAw.APP_DIRECTORY_CATEGORY_CLICKED, {
             category: e.name,
             category_id: e.id,
-            current_page: s.ev.APPLICATION
+            current_page: r.ev.APPLICATION
         }), (0, o.JX)({
             categoryId: e.id
         })
     }, []);
-    return null == t.categories || 0 === t.categories.length ? null : (0, r.jsxs)("div", {
-        className: n,
-        children: [(0, r.jsx)(i.Heading, {
+    return null == t.categories || 0 === t.categories.length ? null : (0, n.jsxs)("div", {
+        className: a,
+        children: [(0, n.jsx)(s.Heading, {
             variant: "heading-sm/semibold",
             color: "text-strong",
             children: d.intl.string(d.t.s7iald)
-        }), (0, r.jsx)("div", {
+        }), (0, n.jsx)("div", {
             className: u.L,
-            children: t.categories.map(e => (0, r.jsx)(i.DUT, {
+            children: t.categories.map(e => (0, n.jsx)(s.DUT, {
                 className: u.c,
-                onClick: () => p(e),
-                children: (0, r.jsx)(i.Text, {
+                onClick: () => h(e),
+                children: (0, n.jsx)(s.Text, {
                     variant: "text-sm/semibold",
                     color: "redesign-button-tertiary-text",
                     children: e.name

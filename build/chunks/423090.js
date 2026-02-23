@@ -1,42 +1,42 @@
-/** chunk id: 423090, original params: t,e,r (module,exports,require) **/
-r.d(e, {
+/** chunk id: 423090, original params: t,e,l (module,exports,require) **/
+l.d(e, {
     M: () => o,
     v: () => c
 });
-var n = r(627968);
-r(64700);
-var l = r(855522),
-    s = r(158954),
-    i = r(827734),
-    a = r(477540);
+var s = l(627968);
+l(64700);
+var r = l(855522),
+    n = l(158954),
+    i = l(827734),
+    a = l(477540);
 
 function o(t) {
     let {
         type: e
     } = t;
-    return (0, n.jsx)(c, {
-        icon: "user" === e ? (0, n.jsx)(s.nys, {
+    return (0, s.jsx)(c, {
+        icon: "user" === e ? (0, s.jsx)(n.nys, {
             size: "xxs",
             color: i.A.colors.INTERACTIVE_TEXT_DEFAULT
-        }) : (0, n.jsx)(s.RR9, {
+        }) : (0, s.jsx)(n.RR9, {
             size: "xxs",
             color: i.A.colors.INTERACTIVE_TEXT_DEFAULT
         }),
-        text: "user" === e ? l.A.Messages.STOREFRONT_USER_SUBSCRIPTION : l.A.Messages.STOREFRONT_SERVER_SUBSCRIPTION
+        text: "user" === e ? r.A.Messages.STOREFRONT_USER_SUBSCRIPTION : r.A.Messages.STOREFRONT_SERVER_SUBSCRIPTION
     })
 }
 
 function c(t) {
     let {
         icon: e,
-        text: r
+        text: l
     } = t;
-    return (0, n.jsxs)("div", {
+    return (0, s.jsxs)("div", {
         className: a.k,
-        children: [e, (0, n.jsx)(s.EYj, {
+        children: [e, (0, s.jsx)(n.EYj, {
             color: "text-strong",
             variant: "text-sm/medium",
-            children: r
+            children: l
         })]
     })
 }

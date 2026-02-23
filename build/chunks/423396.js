@@ -1,192 +1,66 @@
-/** chunk id: 423396, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    Gu: () => N
-}), n(896048);
-var r = n(627968),
-    i = n(64700),
-    a = n(397927),
-    o = n(166532),
-    s = n(231018),
-    l = n(685944),
-    c = n(623020),
-    u = n(927578),
-    d = n(412463),
-    f = n(492518),
-    p = n(689614),
-    _ = n(652215),
-    h = n(788868),
-    m = n(985018),
-    g = n(749226);
-
-function E(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-
-function y(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            E(e, t, n[t])
-        })
-    }
-    return e
-}
-
-function b(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-        var r = Object.getOwnPropertySymbols(e);
-        t && (r = r.filter(function(t) {
-            return Object.getOwnPropertyDescriptor(e, t).enumerable
-        })), n.push.apply(n, r)
-    }
-    return n
-}
-
-function O(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-let v = [{
-        key: o.pn.REVIEW,
-        renderStep: e => (0, r.jsx)(c._M, y({}, e)),
+/** chunk id: 423396, original params: e,t,l (module,exports,require) **/
+l.d(t, {
+    Gu: () => S
+});
+var a = l(627968),
+    n = l(64700),
+    r = l(397927),
+    i = l(166532),
+    s = l(231018),
+    o = l(685944),
+    u = l(623020),
+    c = l(927578),
+    d = l(412463),
+    p = l(492518),
+    m = l(689614),
+    h = l(652215),
+    x = l(788868),
+    b = l(985018),
+    g = l(749226);
+let y = [{
+        key: i.pn.REVIEW,
+        renderStep: e => (0, a.jsx)(u._M, {
+            ...e
+        }),
         options: {
-            useBreadcrumbLabel: () => m.intl.string(m.t.QBnNHq)
+            useBreadcrumbLabel: () => b.intl.string(b.t.QBnNHq)
         }
     }, {
-        key: o.pn.ADD_PAYMENT_STEPS,
-        renderStep: e => (0, r.jsx)(d.eO, O(y({}, e), {
-            originStep: o.pn.REVIEW,
+        key: i.pn.ADD_PAYMENT_STEPS,
+        renderStep: e => (0, a.jsx)(d.eO, {
+            ...e,
+            originStep: i.pn.REVIEW,
             text: "Add Payment Steps Placeholder"
-        })),
+        }),
         options: {
-            useBreadcrumbLabel: () => m.intl.string(m.t.QBnNHq)
+            useBreadcrumbLabel: () => b.intl.string(b.t.QBnNHq)
         }
     }, {
-        key: o.pn.CONFIRM,
-        renderStep: e => (0, r.jsx)(d.eO, O(y({}, e), {
-            originStep: o.pn.REVIEW,
+        key: i.pn.CONFIRM,
+        renderStep: e => (0, a.jsx)(d.eO, {
+            ...e,
+            originStep: i.pn.REVIEW,
             text: "Confirm Step Placeholder"
-        })),
+        }),
         options: {
-            useBreadcrumbLabel: () => m.intl.string(m.t.QBnNHq)
+            useBreadcrumbLabel: () => b.intl.string(b.t.QBnNHq)
         }
     }, {
-        key: o.pn.PLAN_SELECT,
-        renderStep: e => (0, r.jsx)(d.eO, O(y({}, e), {
-            originStep: o.pn.REVIEW,
+        key: i.pn.PLAN_SELECT,
+        renderStep: e => (0, a.jsx)(d.eO, {
+            ...e,
+            originStep: i.pn.REVIEW,
             text: "Plan Select Step Placeholder"
-        })),
+        }),
         options: {
-            useBreadcrumbLabel: () => m.intl.string(m.t.QBnNHq)
+            useBreadcrumbLabel: () => b.intl.string(b.t.QBnNHq)
         }
     }],
-    A = () => (0, r.jsx)(a.Text, {
+    f = () => (0, a.jsx)(r.Text, {
         variant: "text-sm/normal",
         children: "Purchase button is disabled for this story"
     }),
-    I = e => {
-        let {
-            skuId: t,
-            isGift: n,
-            hideErrors: i
-        } = e, {
-            analyticsLocations: a,
-            loadId: o,
-            handleClose: c,
-            handleComplete: p,
-            isFetching: h,
-            sku: m
-        } = (0, d.ud)({
-            skuId: t,
-            isGift: n,
-            applicationId: _.FYj
-        }), E = (e, t, i) => n ? (0, r.jsx)(s.A, {
-            step: i,
-            onClose: () => t(!1)
-        }) : (0, r.jsx)(l.A, {
-            step: i,
-            onClose: () => t(!1)
-        }), y = u.Ay.isPremiumSku(t);
-        return h || null == m || y ? (0, r.jsx)(f.k, {}) : (0, r.jsxs)("div", {
-            className: g.Cd,
-            children: [(0, r.jsx)(d.dL, {
-                stepConfigs: v,
-                analyticsLocations: a,
-                applicationId: _.FYj,
-                initialPlanId: void 0,
-                skuId: t,
-                isGift: n,
-                hideErrors: i,
-                loadId: o,
-                purchaseType: _.VVm.ONE_TIME,
-                disablePurchases: !0,
-                excludeSubscriptionPlansBySKU: !0,
-                renderHeader: E,
-                onClose: c,
-                onComplete: p
-            }), (0, r.jsx)(A, {})]
-        })
-    },
-    S = e => {
-        let {
-            skuId: t,
-            isGift: n,
-            hideErrors: a
-        } = e, {
-            analyticsLocations: o,
-            loadId: s,
-            handleClose: l,
-            handleComplete: c,
-            isFetching: p,
-            sku: m
-        } = (0, d.ud)({
-            skuId: t,
-            isGift: n,
-            applicationId: h.tv
-        }), E = u.Ay.isPremiumSku(t), y = E ? h.zE[t] : void 0, [b, O] = i.useState(y), I = i.useRef(!1);
-        i.useEffect(() => {
-            I.current || null == y || (I.current = !0, O(y))
-        }, [y, b]);
-        let {
-            isLoadedForPremiumSKUs: S,
-            selectedPlan: T
-        } = (0, d.n1)({
-            subscriptionPlanId: b
-        });
-        return !p && null != m && S && E && null != T ? (0, r.jsxs)("div", {
-            className: g.Cd,
-            children: [(0, r.jsx)(d.dL, {
-                stepConfigs: v,
-                analyticsLocations: o,
-                applicationId: h.tv,
-                initialPlanId: y,
-                skuId: t,
-                isGift: n,
-                hideErrors: a,
-                loadId: s,
-                purchaseType: _.VVm.SUBSCRIPTION,
-                disablePurchases: !0,
-                onClose: l,
-                onComplete: c,
-                paymentContextOverrides: {
-                    selectedPlan: T,
-                    setSelectedPlanId: O
-                }
-            }), (0, r.jsx)(A, {})]
-        }) : (0, r.jsx)(f.k, {})
-    },
-    T = {
+    E = {
         isGift: {
             label: "Is Gift",
             type: "boolean",
@@ -198,38 +72,128 @@ let v = [{
             defaultValue: !0
         }
     },
-    C = (0, p.R)(),
-    N = {
+    v = (0, m.R)(),
+    S = {
         title: "Checkout Review Step",
         stories: [{
             name: "Collectibles Review Step",
             id: "collectibles-checkout-review-step",
-            component: I,
-            controls: y({
+            component: e => {
+                let {
+                    skuId: t,
+                    isGift: l,
+                    hideErrors: n
+                } = e, {
+                    analyticsLocations: r,
+                    loadId: i,
+                    handleClose: u,
+                    handleComplete: m,
+                    isFetching: x,
+                    sku: b
+                } = (0, d.ud)({
+                    skuId: t,
+                    isGift: l,
+                    applicationId: h.FYj
+                }), E = c.Ay.isPremiumSku(t);
+                return x || null == b || E ? (0, a.jsx)(p.k, {}) : (0, a.jsxs)("div", {
+                    className: g.Cd,
+                    children: [(0, a.jsx)(d.dL, {
+                        stepConfigs: y,
+                        analyticsLocations: r,
+                        applicationId: h.FYj,
+                        initialPlanId: void 0,
+                        skuId: t,
+                        isGift: l,
+                        hideErrors: n,
+                        loadId: i,
+                        purchaseType: h.VVm.ONE_TIME,
+                        disablePurchases: !0,
+                        excludeSubscriptionPlansBySKU: !0,
+                        renderHeader: (e, t, n) => l ? (0, a.jsx)(s.A, {
+                            step: n
+                        }) : (0, a.jsx)(o.A, {
+                            step: n,
+                            onClose: () => t(!1)
+                        }),
+                        onClose: u,
+                        onComplete: m
+                    }), (0, a.jsx)(f, {})]
+                })
+            },
+            controls: {
                 skuId: {
                     label: "SKU ID",
                     type: "select",
-                    options: C.options,
-                    defaultValue: C.defaultValue
-                }
-            }, T)
+                    options: v.options,
+                    defaultValue: v.defaultValue
+                },
+                ...E
+            }
         }, {
             name: "Premium Review Step",
             id: "premium-checkout-review-step",
-            component: S,
-            controls: y({
+            component: e => {
+                let {
+                    skuId: t,
+                    isGift: l,
+                    hideErrors: r
+                } = e, {
+                    analyticsLocations: i,
+                    loadId: s,
+                    handleClose: o,
+                    handleComplete: u,
+                    isFetching: m,
+                    sku: b
+                } = (0, d.ud)({
+                    skuId: t,
+                    isGift: l,
+                    applicationId: x.tv
+                }), E = c.Ay.isPremiumSku(t), v = E ? x.zE[t] : void 0, [S, j] = n.useState(v), T = n.useRef(!1);
+                n.useEffect(() => {
+                    T.current || null == v || (T.current = !0, j(v))
+                }, [v, S]);
+                let {
+                    isLoadedForPremiumSKUs: C,
+                    selectedPlan: P
+                } = (0, d.n1)({
+                    subscriptionPlanId: S
+                });
+                return !m && null != b && C && E && null != P ? (0, a.jsxs)("div", {
+                    className: g.Cd,
+                    children: [(0, a.jsx)(d.dL, {
+                        stepConfigs: y,
+                        analyticsLocations: i,
+                        applicationId: x.tv,
+                        initialPlanId: v,
+                        skuId: t,
+                        isGift: l,
+                        hideErrors: r,
+                        loadId: s,
+                        purchaseType: h.VVm.SUBSCRIPTION,
+                        disablePurchases: !0,
+                        onClose: o,
+                        onComplete: u,
+                        paymentContextOverrides: {
+                            selectedPlan: P,
+                            setSelectedPlanId: j
+                        }
+                    }), (0, a.jsx)(f, {})]
+                }) : (0, a.jsx)(p.k, {})
+            },
+            controls: {
                 skuId: {
                     label: "SKU ID",
                     type: "select",
                     options: [{
-                        value: h.pe.TIER_0,
-                        label: "".concat(h.pe.TIER_0, " (Nitro Basic)")
+                        value: x.pe.TIER_0,
+                        label: `${x.pe.TIER_0} (Nitro Basic)`
                     }, {
-                        value: h.pe.TIER_2,
-                        label: "".concat(h.pe.TIER_2, " (Nitro Standard)")
+                        value: x.pe.TIER_2,
+                        label: `${x.pe.TIER_2} (Nitro Standard)`
                     }],
-                    defaultValue: h.pe.TIER_0
-                }
-            }, T)
+                    defaultValue: x.pe.TIER_0
+                },
+                ...E
+            }
         }]
     }

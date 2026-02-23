@@ -1,65 +1,55 @@
 /** chunk id: 220706, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => d
 });
-var l, r = n(311907),
-    i = n(73153),
-    a = n(734057),
-    s = n(746080);
-
-function o(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-let c = {},
-    u = {};
-class d extends(l = r.Ay.PersistedStore) {
+var i = n(311907),
+    l = n(73153),
+    s = n(734057),
+    a = n(746080);
+let r = {},
+    o = {};
+class c extends i.Ay.PersistedStore {
+    static displayName = "GuildOnboardingHomeNavigationStore";
+    static persistKey = "GuildOnboardingHomeNavigationStore";
     initialize(e) {
-        var t;
-        this.waitFor(a.A), c = null != (t = null == e ? void 0 : e.selectedResourceChannelIdByGuildId) ? t : {}
+        this.waitFor(s.A), r = e?.selectedResourceChannelIdByGuildId ?? {}
     }
     getState() {
         return {
-            selectedResourceChannelIdByGuildId: c
+            selectedResourceChannelIdByGuildId: r
         }
     }
     getSelectedResourceChannelId(e) {
-        return null == e ? null : c[e]
+        return null == e ? null : r[e]
     }
     getHomeNavigationChannelId(e) {
-        var t;
-        return null == e ? null : null != (t = c[e]) ? t : u[e]
+        return null == e ? null : r[e] ?? o[e]
     }
 }
-o(d, "displayName", "GuildOnboardingHomeNavigationStore"), o(d, "persistKey", "GuildOnboardingHomeNavigationStore");
-let h = new d(i.h, {
+let d = new c(l.h, {
     CHANNEL_SELECT: function(e) {
         let {
             channelId: t,
             guildId: n
         } = e;
-        if (null == n || t === s.VV.GUILD_HOME) return;
-        let l = a.A.getChannel(t),
-            r = c[n],
-            i = u[n];
-        (null == l ? void 0 : l.isThread()) && (null == l ? void 0 : l.parent_id) != null && [i, r].includes(null == l ? void 0 : l.parent_id) || (t !== r && delete c[n], t !== i && delete u[n])
+        if (null == n || t === a.VV.GUILD_HOME) return;
+        let i = s.A.getChannel(t),
+            l = r[n],
+            c = o[n];
+        i?.isThread() && i?.parent_id != null && [c, l].includes(i?.parent_id) || (t !== l && delete r[n], t !== c && delete o[n])
     },
     SELECT_HOME_RESOURCE_CHANNEL: function(e) {
         let {
             channelId: t,
             guildId: n
         } = e;
-        null == t ? delete u[n] : c[n] = t, delete u[n]
+        null == t ? delete o[n] : r[n] = t, delete o[n]
     },
     SELECT_NEW_MEMBER_ACTION_CHANNEL: function(e) {
         let {
             channelId: t,
             guildId: n
         } = e;
-        delete c[n], u[n] = t
+        delete r[n], o[n] = t
     }
 })

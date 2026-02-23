@@ -1,45 +1,46 @@
 /** chunk id: 792967, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => d
-}), n(114821), n(339614), n(321073);
-var r = n(627968);
+    A: () => u
+}), n(321073);
+var i = n(627968);
 n(64700);
-var l = n(735438),
-    i = n.n(l),
-    s = n(813516),
+var s = n(735438),
+    l = n.n(s),
+    r = n(813516),
     a = n(5658),
     o = n(712209),
     c = n(985018),
-    u = n(48355);
+    d = n(48355);
 
-function d(e, t, n) {
+function u(e, t, n) {
     let {
-        markChannelRead: l,
-        markGuildRead: d,
-        deleteChannel: p,
-        toggle: h,
-        getNumUnreadChannels: g
-    } = t, f = null;
-    return i().flatMap(e, e => {
-        let t = e.sortOrder !== f;
-        f = e.sortOrder;
-        let i = [];
-        return t && (e.hasLoadedAnything && e.sortOrder === o.xB.ReallyOldChannel ? i.push((0, r.jsx)(s.A, {
-            className: u.y,
-            contentClassName: u.$,
+        markChannelRead: s,
+        markGuildRead: u,
+        deleteChannel: h,
+        toggle: A,
+        getNumUnreadChannels: p
+    } = t, g = null;
+    return l().flatMap(e, e => {
+        let t = e.sortOrder !== g;
+        g = e.sortOrder;
+        let l = [];
+        return t && (e.hasLoadedAnything && e.sortOrder === o.xB.ReallyOldChannel ? l.push((0, i.jsx)(r.A, {
+            className: d.y,
+            contentClassName: d.$,
             children: c.intl.string(c.t.roBMzj)
-        }, "old-divider")) : e.hasLoadedAnything && e.sortOrder === o.xB.NoNotifications && i.push((0, r.jsx)(s.A, {
-            className: u.y,
-            contentClassName: u.$,
+        }, "old-divider")) : e.hasLoadedAnything && e.sortOrder === o.xB.NoNotifications && l.push((0, i.jsx)(r.A, {
+            className: d.y,
+            contentClassName: d.$,
             children: c.intl.string(c.t["2Ys7nu"])
-        }, "disabled-divider"))), i.push((0, r.jsx)(a.A, {
+        }, "disabled-divider"))), l.push((0, i.jsx)(a.A, {
             channel: e,
-            markChannelRead: l,
-            markGuildRead: d,
-            toggle: h,
-            deleteChannel: p,
+            markChannelRead: s,
+            markGuildRead: u,
+            toggle: A,
+            deleteChannel: h,
             onJump: n,
-            getNumUnreadChannels: g
-        }, e.channelId)), i
+            getNumUnreadChannels: p
+        }, e.channelId)), l
     })
 }

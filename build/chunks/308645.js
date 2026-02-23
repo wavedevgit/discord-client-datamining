@@ -1,221 +1,216 @@
-/** chunk id: 308645, original params: t,e,n (module,exports,require) **/
-n.d(e, {
+/** chunk id: 308645, original params: t,e,E (module,exports,require) **/
+E.d(e, {
     Gf: () => o,
     Yn: () => S,
     d: () => c,
-    hH: () => s,
+    hH: () => T,
     k9: () => U
 });
-var E = n(562465),
-    i = n(73153),
-    _ = n(77350),
-    l = n(961350),
-    A = n(207913),
-    r = n(393033),
-    a = n(239093),
-    u = n(652215);
+var n = E(562465),
+    _ = E(73153),
+    i = E(77350),
+    A = E(961350),
+    l = E(207913),
+    a = E(393033),
+    r = E(239093),
+    s = E(652215);
 async function S() {
-    i.h.dispatch({
+    _.h.dispatch({
         type: "SAFETY_HUB_FETCH_START"
     });
-    let t = l.default.getSuspendedUserToken(),
-        e = null != t ? u.Rsh.SAFETY_HUB_SUSPENDED : u.Rsh.SAFETY_HUB,
-        n = null != t ? E.Bo.post({
+    let t = A.default.getSuspendedUserToken(),
+        e = null != t ? s.Rsh.SAFETY_HUB_SUSPENDED : s.Rsh.SAFETY_HUB,
+        E = null != t ? n.Bo.post({
             url: e,
             body: {
                 token: t
             },
             rejectWithError: !1
-        }) : E.Bo.get({
+        }) : n.Bo.get({
             url: e,
             rejectWithError: !1
         });
-    await n.then(t => {
+    await E.then(t => {
         let {
             body: e
         } = t, {
-            classifications: n,
-            guild_classifications: E,
-            account_standing: _,
-            is_dsa_eligible: l,
-            username: A,
-            is_appeal_eligible: r,
-            appeal_eligibility: a
-        } = e, u = n.map(t => (T(t), t));
-        i.h.dispatch({
+            classifications: E,
+            guild_classifications: n,
+            account_standing: i,
+            is_dsa_eligible: A,
+            username: l,
+            is_appeal_eligible: a,
+            appeal_eligibility: r
+        } = e, s = E.map(t => (u(t), t));
+        _.h.dispatch({
             type: "SAFETY_HUB_FETCH_SUCCESS",
-            classifications: u.concat(null != E ? E : []),
-            accountStanding: _,
-            isDsaEligible: l,
-            username: A,
-            isAppealEligible: r,
-            appealEligibility: null != a ? a : []
+            classifications: s.concat(n ?? []),
+            accountStanding: i,
+            isDsaEligible: A,
+            username: l,
+            isAppealEligible: a,
+            appealEligibility: r ?? []
         })
     }).catch(t => {
-        var e, n;
-        i.h.dispatch({
+        _.h.dispatch({
             type: "SAFETY_HUB_FETCH_FAILURE",
-            error: null != (e = null == t || null == (n = t.body) ? void 0 : n.message) ? e : "Unknown error"
+            error: t?.body?.message ?? "Unknown error"
         })
     })
 }
-async function s(t) {
-    i.h.dispatch({
+async function T(t) {
+    _.h.dispatch({
         type: "SAFETY_HUB_FETCH_CLASSIFICATION_START",
         classificationId: t
     });
-    let e = l.default.getSuspendedUserToken(),
-        n = null != e ? u.Rsh.SAFETY_HUB_SUSPENDED : u.Rsh.SAFETY_HUB,
-        _ = null != e ? E.Bo.post({
-            url: n,
+    let e = A.default.getSuspendedUserToken(),
+        E = null != e ? s.Rsh.SAFETY_HUB_SUSPENDED : s.Rsh.SAFETY_HUB,
+        i = null != e ? n.Bo.post({
+            url: E,
             body: {
                 token: e
             },
             rejectWithError: !1
-        }) : E.Bo.get({
-            url: n,
+        }) : n.Bo.get({
+            url: E,
             rejectWithError: !1
         });
-    await _.then(e => {
+    await i.then(e => {
         let {
-            body: n
+            body: E
         } = e, {
-            classifications: E,
-            account_standing: _,
-            is_dsa_eligible: l,
-            username: A,
-            is_appeal_eligible: r
-        } = n, a = E.find(e => e.id === t);
-        null != a ? (T(a), i.h.dispatch({
+            classifications: n,
+            account_standing: i,
+            is_dsa_eligible: A,
+            username: l,
+            is_appeal_eligible: a
+        } = E, r = n.find(e => e.id === t);
+        null != r ? (u(r), _.h.dispatch({
             type: "SAFETY_HUB_FETCH_CLASSIFICATION_SUCCESS",
-            classification: a,
-            accountStanding: _,
-            isDsaEligible: l,
-            username: A,
-            isAppealEligible: r
-        })) : i.h.dispatch({
+            classification: r,
+            accountStanding: i,
+            isDsaEligible: A,
+            username: l,
+            isAppealEligible: a
+        })) : _.h.dispatch({
             type: "SAFETY_HUB_FETCH_CLASSIFICATION_FAILURE",
             error: "Classification not found.",
             classificationId: t
         })
     }).catch(e => {
-        var n, E;
-        i.h.dispatch({
+        _.h.dispatch({
             type: "SAFETY_HUB_FETCH_CLASSIFICATION_FAILURE",
-            error: null != (n = null == e || null == (E = e.body) ? void 0 : E.message) ? n : "Unknown error",
+            error: e?.body?.message ?? "Unknown error",
             classificationId: t
         })
     })
 }
 
-function T(t) {
+function u(t) {
     if (null != t.flagged_content && t.flagged_content.length > 0) {
         let e = t.flagged_content[0];
         e.attachments = e.attachments.filter(t => {
             let {
                 filename: e
             } = t;
-            return (0, _.u)(e) || (0, _.AE)(e)
-        }), t.flagged_content = (0, r.Jn)(e) ? [] : [e]
+            return (0, i.u)(e) || (0, i.AE)(e)
+        }), t.flagged_content = (0, a.Jn)(e) ? [] : [e]
     }
 }
-async function o(t, e, n) {
-    let _ = l.default.getSuspendedUserToken(),
-        A = null != _ ? u.Rsh.SAFETY_HUB_REQUEST_SUSPENDED_USER_REVIEW(t) : u.Rsh.SAFETY_HUB_REQUEST_REVIEW(t),
-        r = null != _ ? E.Bo.put({
-            url: A,
+async function o(t, e, E) {
+    let i = A.default.getSuspendedUserToken(),
+        l = null != i ? s.Rsh.SAFETY_HUB_REQUEST_SUSPENDED_USER_REVIEW(t) : s.Rsh.SAFETY_HUB_REQUEST_REVIEW(t),
+        a = null != i ? n.Bo.put({
+            url: l,
             body: {
                 signal: e,
-                user_input: n,
-                token: _
+                user_input: E,
+                token: i
             },
             rejectWithError: !1
-        }) : E.Bo.put({
-            url: A,
+        }) : n.Bo.put({
+            url: l,
             body: {
                 signal: e,
-                user_input: n
+                user_input: E
             },
             rejectWithError: !1
         });
-    i.h.dispatch({
+    _.h.dispatch({
         type: "SAFETY_HUB_REQUEST_REVIEW_START"
-    }), await r.then(() => {
-        i.h.dispatch({
+    }), await a.then(() => {
+        _.h.dispatch({
             type: "SAFETY_HUB_REQUEST_REVIEW_SUCCESS",
             classificationId: t
         })
     }).catch(t => {
-        var e, n;
-        throw i.h.dispatch({
+        throw _.h.dispatch({
             type: "SAFETY_HUB_REQUEST_REVIEW_FAILURE",
-            error: null != (e = null == t || null == (n = t.body) ? void 0 : n.message) ? e : "Unknown error"
+            error: t?.body?.message ?? "Unknown error"
         }), t
     })
 }
 async function U(t) {
-    i.h.dispatch({
+    _.h.dispatch({
         type: "SAFETY_HUB_REQUEST_AUTOMATED_UNDERAGE_APPEAL_START"
     });
-    let e = l.default.getSuspendedUserToken(),
-        n = u.Rsh.SAFETY_HUB_REQUEST_SUSPENDED_AGE_VERIFICATION,
-        _ = E.Bo.post({
-            url: n,
+    let e = A.default.getSuspendedUserToken(),
+        E = s.Rsh.SAFETY_HUB_REQUEST_SUSPENDED_AGE_VERIFICATION,
+        i = n.Bo.post({
+            url: E,
             body: {
                 token: e,
                 from_classification_id: t
             },
             rejectWithError: !1
         });
-    await _.then(t => {
+    await i.then(t => {
         let {
             body: e
         } = t, {
-            verification_request_id: n,
-            verification_webview_url: E
+            verification_request_id: E,
+            verification_webview_url: n
         } = e;
-        i.h.dispatch({
+        _.h.dispatch({
             type: "SAFETY_HUB_REQUEST_AUTOMATED_UNDERAGE_APPEAL_SUCCESS",
-            verificationRequestId: n,
-            verificationWebviewUrl: E
+            verificationRequestId: E,
+            verificationWebviewUrl: n
         })
     }).catch(t => {
-        var e, n;
-        i.h.dispatch({
+        _.h.dispatch({
             type: "SAFETY_HUB_REQUEST_AUTOMATED_UNDERAGE_APPEAL_FAILURE",
-            error: null != (e = null == t || null == (n = t.body) ? void 0 : n.message) ? e : "Unknown error"
+            error: t?.body?.message ?? "Unknown error"
         })
     })
 }
 async function c() {
-    i.h.dispatch({
+    _.h.dispatch({
         type: "SAFETY_HUB_CHECK_AUTOMATED_UNDERAGE_APPEAL_START"
     });
-    let t = l.default.getSuspendedUserToken(),
-        e = A.A.getAgeCheckAttempts(),
-        n = u.Rsh.SAFETY_HUB_CHECK_SUSPENDED_AGE_VERIFICATION,
-        _ = E.Bo.post({
-            url: n,
+    let t = A.default.getSuspendedUserToken(),
+        e = l.A.getAgeCheckAttempts(),
+        E = s.Rsh.SAFETY_HUB_CHECK_SUSPENDED_AGE_VERIFICATION,
+        i = n.Bo.post({
+            url: E,
             body: {
                 token: t
             },
             rejectWithError: !1
         });
-    await _.then(t => {
+    await i.then(t => {
         let {
-            body: n
+            body: E
         } = t, {
-            success: E
-        } = n;
-        !E && e < a.ti && setTimeout(() => c(), a.Eb), i.h.dispatch({
+            success: n
+        } = E;
+        !n && e < r.ti && setTimeout(() => c(), r.Eb), _.h.dispatch({
             type: "SAFETY_HUB_CHECK_AUTOMATED_UNDERAGE_APPEAL_SUCCESS",
-            success: E
+            success: n
         })
     }).catch(t => {
-        var e, n;
-        i.h.dispatch({
+        _.h.dispatch({
             type: "SAFETY_HUB_CHECK_AUTOMATED_UNDERAGE_APPEAL_FAILURE",
-            error: null != (e = null == t || null == (n = t.body) ? void 0 : n.message) ? e : "Unknown error"
+            error: t?.body?.message ?? "Unknown error"
         })
     })
 }

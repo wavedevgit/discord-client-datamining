@@ -1,64 +1,47 @@
 /** chunk id: 396787, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     F5: () => h,
-    XA: () => f,
-    jv: () => p
+    XA: () => A,
+    jv: () => m
 });
-var l = n(627968);
+var i = n(627968);
 n(64700);
-var r = n(653922),
-    i = n(397927),
+var l = n(653922),
+    s = n(397927),
     a = n(157559),
-    s = n(308528),
+    r = n(308528),
     o = n(793574),
     c = n(576470),
-    u = n(339984),
-    d = n(985018);
-let h = (e, t) => (0, i.mMO)(async () => {
+    d = n(339984),
+    u = n(985018);
+let h = (e, t) => (0, s.mMO)(async () => {
         let {
-            default: r
-        } = await Promise.all([n.e("79149"), n.e("53653"), n.e("66863")]).then(n.bind(n, 551028));
-        return n => (0, l.jsx)(r, function(e) {
-            for (var t = 1; t < arguments.length; t++) {
-                var n = null != arguments[t] ? arguments[t] : {},
-                    l = Object.keys(n);
-                "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                    return Object.getOwnPropertyDescriptor(n, e).enumerable
-                }))), l.forEach(function(t) {
-                    var l;
-                    l = n[t], t in e ? Object.defineProperty(e, t, {
-                        value: l,
-                        enumerable: !0,
-                        configurable: !0,
-                        writable: !0
-                    }) : e[t] = l
-                })
-            }
-            return e
-        }({
+            default: l
+        } = await Promise.all([n.e("59701"), n.e("53653"), n.e("66863")]).then(n.bind(n, 551028));
+        return n => (0, i.jsx)(l, {
             maxFileSizeBytes: 8388608,
             onComplete: e,
-            uploadType: u.HL.AVATAR,
+            uploadType: d.HL.AVATAR,
             showUpsellHeader: !1,
-            modalTitle: d.intl.string(d.t["6yrpFR"]),
+            modalTitle: u.intl.string(u.t["6yrpFR"]),
             analyticsLocation: o.A.GROUP_DM_ICON_EDITOR,
             analyticsLocations: t,
-            allowRecentAvatarsSelection: !1
-        }, n))
+            allowRecentAvatarsSelection: !1,
+            ...n
+        })
     }),
-    p = (e, t) => {
+    m = (e, t) => {
         h(n => {
-            s.A.setIcon(e, n.imageUri, t).catch(f)
+            r.A.setIcon(e, n.imageUri, t).catch(A)
         }, [t])
     },
-    f = e => {
-        var t;
-        if ((null == e || null == (t = e.body) ? void 0 : t.retry_after) != null) {
-            let t = (0, r.A)(new Date, e.body.retry_after);
+    A = e => {
+        if (e?.body?.retry_after != null) {
+            let t = (0, l.A)(new Date, e.body.retry_after);
             a.A.show({
-                title: d.intl.string(d.t.Whhv4w),
-                body: d.intl.format(d.t.VIJkAy, {
-                    duration: (0, l.jsx)(c.A, {
+                title: u.intl.string(u.t.Whhv4w),
+                body: u.intl.format(u.t.VIJkAy, {
+                    duration: (0, i.jsx)(c.A, {
                         showUnits: !0,
                         deadline: t
                     })

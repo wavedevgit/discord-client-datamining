@@ -2,24 +2,24 @@
 "use strict";
 n.d(t, {
     A: () => a
-}), n(896048);
-var r = n(64700),
-    i = n(735438),
+});
+var i = n(64700),
+    s = n(735438),
     l = n(627794),
-    s = n(789821);
+    r = n(789821);
 
 function a(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [],
         n = arguments.length > 2 ? arguments[2] : void 0,
-        [a, o] = r.useState((0, s.Mv)(t)),
+        [a, o] = i.useState((0, r.Mv)(t)),
         {
-            errorMessage: c,
-            handleValidateKeywords: d
+            errorMessage: d,
+            handleValidateKeywords: c
         } = function(e) {
-            let [t, n] = r.useState(null);
+            let [t, n] = i.useState(null);
             return {
                 errorMessage: t,
-                handleValidateKeywords: r.useMemo(() => (0, i.debounce)(t => {
+                handleValidateKeywords: i.useMemo(() => (0, s.debounce)(t => {
                     try {
                         (0, l.wk)(t, e), n(null)
                     } catch (e) {
@@ -31,15 +31,15 @@ function a(e) {
                 }), [e])
             }
         }(n),
-        u = r.useCallback(e => 0 !== e.length && (0, s.ir)(e) ? (0, s.Mv)((0, s.c_)(e)) : e, []);
+        u = i.useCallback(e => 0 !== e.length && (0, r.ir)(e) ? (0, r.Mv)((0, r.c_)(e)) : e, []);
     return {
         value: a,
-        errorMessage: c,
-        onChange: r.useCallback(t => {
+        errorMessage: d,
+        onChange: i.useCallback(t => {
             let n = t.currentTarget.value;
             "insertFromPaste" === t.nativeEvent.inputType && (n = u(n));
-            let r = (0, s.c_)(n);
-            o(n), e(r), d(r)
-        }, [d, u, e])
+            let i = (0, r.c_)(n);
+            o(n), e(i), c(i)
+        }, [c, u, e])
     }
 }

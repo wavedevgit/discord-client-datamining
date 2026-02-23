@@ -2,25 +2,21 @@
 n.d(t, {
     A: () => d
 });
-var r, i, l = n(311907),
-    a = n(73153),
-    s = n(576705),
-    o = n(652215);
+var i = n(311907),
+    r = n(73153),
+    l = n(576705),
+    a = n(652215);
 
-function c() {
+function s() {
     return !0
 }
-class u extends(i = l.Ay.Store) {
+class o extends i.Ay.Store {
+    static displayName = "InviteNoticeStore";
     initialize() {
-        this.waitFor(s.A), this.syncWith([s.A], c)
+        this.waitFor(l.A), this.syncWith([l.A], s)
     }
     channelNoticePredicate(e, t) {
-        return Date.now() - t >= o.D2K && s.A.can(o.xBc.ADMINISTRATOR, e)
+        return Date.now() - t >= a.D2K && l.A.can(a.xBc.ADMINISTRATOR, e)
     }
-}(r = "displayName") in u ? Object.defineProperty(u, r, {
-    value: "InviteNoticeStore",
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
-}) : u[r] = "InviteNoticeStore";
-let d = new u(a.h)
+}
+let d = new o(r.h)

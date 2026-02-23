@@ -1,304 +1,275 @@
 /** chunk id: 743015, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => V
-}), n(896048), n(321073), n(864466), n(443073);
+    A: () => P
+}), n(321073);
 var l = n(627968),
-    r = n(64700),
-    i = n(503698),
-    a = n.n(i),
-    s = n(311907),
-    o = n(554146),
+    i = n(64700),
+    s = n(503698),
+    a = n.n(s),
+    r = n(311907),
+    d = n(554146),
     c = n(827734),
-    d = n(3026),
+    o = n(3026),
     u = n(990078),
-    h = n(397927),
-    p = n(442433),
-    f = n(826673),
-    _ = n(721592),
-    m = n(35275),
-    g = n(166444),
-    x = n(46054),
-    b = n(454058),
-    A = n(976860),
-    C = n(138298),
+    _ = n(397927),
+    h = n(442433),
+    x = n(826673),
+    m = n(721592),
+    g = n(35275),
+    A = n(166444),
+    C = n(46054),
+    f = n(454058),
+    p = n(976860),
+    N = n(138298),
     j = n(323443),
-    O = n(863005),
-    v = n(637248),
-    y = n(329255),
-    N = n(197843),
-    w = n(915644),
-    I = n(652215),
-    S = n(746080),
-    E = n(650583),
-    P = n(985018),
-    D = n(282627),
+    v = n(863005),
+    b = n(637248),
+    I = n(329255),
+    E = n(197843),
+    S = n(915644),
+    w = n(652215),
+    y = n(746080),
+    O = n(650583),
+    T = n(985018),
+    L = n(282627),
     R = n(206314);
-
-function T(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            l = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), l.forEach(function(t) {
-            var l;
-            l = n[t], t in e ? Object.defineProperty(e, t, {
-                value: l,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = l
-        })
-    }
-    return e
-}
-
-function L(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var l = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, l)
-        }
-        return n
-    })(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-let k = new Set([I.rbe.GUILD_FORUM, I.rbe.GUILD_MEDIA]),
-    H = new Set([I.rbe.GUILD_VOICE, I.rbe.GUILD_STAGE_VOICE]);
+let D = new Set([w.rbe.GUILD_FORUM, w.rbe.GUILD_MEDIA]),
+    H = new Set([w.rbe.GUILD_VOICE, w.rbe.GUILD_STAGE_VOICE]);
 
 function M(e) {
     let {
         guild: t,
-        channel: r,
-        onCategoryClick: i
-    } = e, s = (0, N.Rg)(t.id, r.id, r.id), o = (0, N.eK)(t.id, r.id, r.id);
+        channel: i,
+        onCategoryClick: s
+    } = e, r = (0, E.Rg)(t.id, i.id, i.id), d = (0, E.eK)(t.id, i.id, i.id);
     return (0, l.jsxs)("div", {
-        className: a()(D.Fv, {
-            [D.d0]: "null" === r.id
+        className: a()(L.Fv, {
+            [L.d0]: "null" === i.id
         }),
         onContextMenu: e => {
-            (0, p.L3)(e, async () => {
+            (0, h.L3)(e, async () => {
                 let {
                     default: e
                 } = await Promise.all([n.e("75149"), n.e("53378")]).then(n.bind(n, 725756));
-                return n => (0, l.jsx)(e, L(T({}, n), {
-                    channel: r,
+                return n => (0, l.jsx)(e, {
+                    ...n,
+                    channel: i,
                     guild: t
-                }))
+                })
             })
         },
-        children: [(0, l.jsx)(h.Text, {
-            className: D.O1,
+        children: [(0, l.jsx)(_.Text, {
+            className: L.O1,
             color: "text-strong",
             variant: "text-lg/medium",
             lineClamp: 1,
-            children: r.name
-        }), "null" !== r.id && !o && (0, l.jsx)("div", {
-            children: (0, l.jsx)(h.dOG, {
-                label: P.intl.string(P.t.mSQwnW),
-                checked: s,
-                onChange: () => void(!o && i(t.id, r.id, r.id))
+            children: i.name
+        }), "null" !== i.id && !d && (0, l.jsx)("div", {
+            children: (0, l.jsx)(_.dOG, {
+                label: T.intl.string(T.t.mSQwnW),
+                checked: r,
+                onChange: () => void(!d && s(t.id, i.id, i.id))
             })
         })]
     })
 }
-let G = r.memo(function() {
+let G = i.memo(function() {
         return (0, l.jsx)("div", {
-            className: D.me
+            className: L.me
         })
     }),
-    B = r.memo(function(e) {
+    B = i.memo(function(e) {
         let {
             index: t
         } = e;
-        return (0, l.jsx)(h.Text, {
+        return (0, l.jsx)(_.Text, {
             variant: "text-xs/normal",
-            className: D.Ks,
+            className: L.Ks,
             children: "\xb7"
-        }, "separator-".concat(t))
+        }, `separator-${t}`)
     }),
-    U = r.memo(function(e) {
+    k = i.memo(function(e) {
         let t, {
-                channel: r,
-                category: i,
-                guild: o,
-                isFirstChannel: f,
-                isLastChannel: y,
-                onChannelClick: w,
+                channel: i,
+                category: s,
+                guild: d,
+                isFirstChannel: x,
+                isLastChannel: I,
+                onChannelClick: S,
                 tooltipDirection: M = "right"
             } = e,
             {
-                isSubscriptionGated: U
-            } = (0, _.A)(r.id),
-            V = (0, N.Rg)(o.id, r.id, i.id),
-            F = (0, N.eK)(o.id, r.id, i.id),
-            W = (0, N.v)(o.id, i.id),
-            q = (0, s.bG)([O.A], () => O.A.getActiveThreadCount(o.id, r.id)),
-            K = (0, s.bG)([b.A], () => b.A.shouldIndicateNewChannel(o.id, r.id)),
-            Z = (t = [], I.kvI.GUILD_THREADS_ONLY.has(r.type) && q >= 1 && t.push((0, l.jsx)(h.Text, {
+                isSubscriptionGated: k
+            } = (0, m.A)(i.id),
+            P = (0, E.Rg)(d.id, i.id, s.id),
+            U = (0, E.eK)(d.id, i.id, s.id),
+            V = (0, E.v)(d.id, s.id),
+            F = (0, r.bG)([v.A], () => v.A.getActiveThreadCount(d.id, i.id)),
+            W = (0, r.bG)([f.A], () => f.A.shouldIndicateNewChannel(d.id, i.id)),
+            q = (t = [], w.kvI.GUILD_THREADS_ONLY.has(i.type) && F >= 1 && t.push((0, l.jsx)(_.Text, {
                 variant: "text-xs/normal",
-                className: D.qy,
-                children: P.intl.format(P.t.z0qML2, {
-                    count: q
+                className: L.qy,
+                children: T.intl.format(T.t.z0qML2, {
+                    count: F
                 })
-            }, "thread-count")), H.has(r.type) || t.push((0, l.jsx)(h.Text, {
+            }, "thread-count")), H.has(i.type) || t.push((0, l.jsx)(_.Text, {
                 variant: "text-xs/normal",
-                className: D.qy,
-                children: (0, v.YC)(r.id)
-            }, "active")), null != r.topic && r.topic.length > 0 && t.push((0, l.jsx)(d.A, {
+                className: L.qy,
+                children: (0, b.YC)(i.id)
+            }, "active")), null != i.topic && i.topic.length > 0 && t.push((0, l.jsx)(o.A, {
                 className: R.PT,
-                children: (0, l.jsx)(h.Text, {
-                    className: D.At,
+                children: (0, l.jsx)(_.Text, {
+                    className: L.At,
                     variant: "text-xs/normal",
-                    children: x.A.parseTopic(r.topic, !0, {
-                        channelId: r.id
+                    children: C.A.parseTopic(i.topic, !0, {
+                        channelId: i.id
                     })
                 })
             }, "topic")), [t.map((e, t) => [e, (0, l.jsx)(B, {
                 index: t
-            }, "subtitle-separator-".concat(t))])].flat(2).slice(0, -1)),
-            Y = e => ((e.stopPropagation(), k.has(r.type) || e.shiftKey) ? (0, A.uh)(o.id, r.id) : r.isGuildStageVoice() || r.isGuildVoice() ? (0, j.av)(r) : C.A.openChannelAsSidebar({
-                guildId: r.guild_id,
-                channelId: r.id,
-                baseChannelId: S.VV.CHANNEL_BROWSER
+            }, `subtitle-separator-${t}`)])].flat(2).slice(0, -1)),
+            K = e => ((e.stopPropagation(), D.has(i.type) || e.shiftKey) ? (0, p.uh)(d.id, i.id) : i.isGuildStageVoice() || i.isGuildVoice() ? (0, j.av)(i) : N.A.openChannelAsSidebar({
+                guildId: i.guild_id,
+                channelId: i.id,
+                baseChannelId: y.VV.CHANNEL_BROWSER
             }), !0),
-            z = P.intl.string(P.t.vetGQs);
-        r.isGuildStageVoice() || r.isGuildVoice() ? z = P.intl.string(P.t.VJlc0S) : r.isForumLikeChannel() && (z = P.intl.string(P.t["3xjX0U"]));
-        let J = F ? "text-muted" : "text-default",
-            X = (0, h.rdh)(F ? c.A.colors.TEXT_MUTED : c.A.colors.TEXT_DEFAULT).hex();
+            Z = T.intl.string(T.t.vetGQs);
+        i.isGuildStageVoice() || i.isGuildVoice() ? Z = T.intl.string(T.t.VJlc0S) : i.isForumLikeChannel() && (Z = T.intl.string(T.t["3xjX0U"]));
+        let Y = U ? "text-muted" : "text-default",
+            z = (0, _.rdh)(U ? c.A.colors.TEXT_MUTED : c.A.colors.TEXT_DEFAULT).hex();
         return (0, l.jsxs)(l.Fragment, {
             children: [(0, l.jsx)(u.m, {
-                text: W,
+                text: V,
                 delay: 500,
                 position: M,
-                children: (0, l.jsxs)(h.DUT, {
-                    className: a()(D.WG, {
-                        [D.Qn]: f,
-                        [D.wp]: y,
-                        [D.r9]: F
+                children: (0, l.jsxs)(_.DUT, {
+                    className: a()(L.WG, {
+                        [L.Qn]: x,
+                        [L.wp]: I,
+                        [L.r9]: U
                     }),
                     onClick: e => {
-                        if (!F) return e.stopPropagation(), w(o.id, r.id, i.id), !0
+                        if (!U) return e.stopPropagation(), S(d.id, i.id, s.id), !0
                     },
                     onContextMenu: e => {
-                        r.isGuildVocal() ? (0, p.L3)(e, async () => {
+                        i.isGuildVocal() ? (0, h.L3)(e, async () => {
                             let {
                                 default: e
                             } = await Promise.all([n.e("97262"), n.e("57287"), n.e("40394"), n.e("30997")]).then(n.bind(n, 698193));
-                            return t => (0, l.jsx)(e, L(T({}, t), {
-                                channel: r,
-                                guild: o
-                            }))
-                        }) : (0, p.L3)(e, async () => {
+                            return t => (0, l.jsx)(e, {
+                                ...t,
+                                channel: i,
+                                guild: d
+                            })
+                        }) : (0, h.L3)(e, async () => {
                             let {
                                 default: e
-                            } = await Promise.all([n.e("97262"), n.e("57287"), n.e("77666")]).then(n.bind(n, 370372));
-                            return t => (0, l.jsx)(e, L(T({}, t), {
-                                channel: r,
-                                guild: o
-                            }))
+                            } = await Promise.all([n.e("97262"), n.e("57287"), n.e("55285")]).then(n.bind(n, 370372));
+                            return t => (0, l.jsx)(e, {
+                                ...t,
+                                channel: i,
+                                guild: d
+                            })
                         })
                     },
                     children: [(0, l.jsxs)("div", {
-                        className: D.yW,
+                        className: L.yW,
                         children: [(0, l.jsxs)("div", {
-                            className: D.HA,
-                            children: [(0, l.jsx)(g.gm, {
-                                channel: r,
-                                guild: o
-                            }), (0, l.jsx)(d.A, {
-                                className: D.__invalid_name,
-                                children: (0, l.jsx)(h.Text, {
-                                    className: D.be,
+                            className: L.HA,
+                            children: [(0, l.jsx)(A.gm, {
+                                channel: i,
+                                guild: d
+                            }), (0, l.jsx)(o.A, {
+                                className: L.__invalid_name,
+                                children: (0, l.jsx)(_.Text, {
+                                    className: L.be,
                                     variant: "text-md/medium",
                                     lineClamp: 1,
-                                    color: J,
-                                    children: r.name
+                                    color: Y,
+                                    children: i.name
                                 })
-                            }), U ? (0, l.jsx)(m.A, {
-                                color: X,
-                                className: D.PC
-                            }) : null, K ? (0, l.jsx)(h.LpS, {
-                                text: P.intl.string(P.t.y2b7CA),
+                            }), k ? (0, l.jsx)(g.A, {
+                                color: z,
+                                className: L.PC
+                            }) : null, W ? (0, l.jsx)(_.LpS, {
+                                text: T.intl.string(T.t.y2b7CA),
                                 color: c.A.unsafe_rawColors.BRAND_260.css,
-                                className: D.wD
+                                className: L.wD
                             }) : null]
                         }), (0, l.jsx)("div", {
-                            className: D.Ze,
-                            children: Z
+                            className: L.Ze,
+                            children: q
                         })]
                     }), (0, l.jsxs)("div", {
-                        className: D.tN,
+                        className: L.tN,
                         children: [(0, l.jsx)("div", {
-                            className: D.Kx,
-                            children: (0, l.jsx)(h.Button, {
+                            className: L.Kx,
+                            children: (0, l.jsx)(_.Button, {
                                 size: "sm",
                                 variant: "overlay-primary",
-                                onClick: Y,
-                                text: z,
+                                onClick: K,
+                                text: Z,
                                 onKeyDown: e => {
-                                    (e.key === E.dh.ENTER || e.key === E.dh.SPACE) && (e.preventDefault(), e.stopPropagation(), Y(e))
+                                    (e.key === O.dh.ENTER || e.key === O.dh.SPACE) && (e.preventDefault(), e.stopPropagation(), K(e))
                                 }
                             })
-                        }), (0, l.jsx)(h.P7L, {
-                            checked: V,
-                            disabled: F
+                        }), (0, l.jsx)(_.P7L, {
+                            checked: P,
+                            disabled: U
                         })]
                     })]
                 })
-            }), !y && (0, l.jsx)(G, {})]
+            }), !I && (0, l.jsx)(G, {})]
         })
     });
 
-function V(e) {
+function P(e) {
     let {
         categories: t,
         guild: n,
-        className: i,
-        innerClassName: s,
+        className: s,
+        innerClassName: r,
         hasSidebar: c
     } = e, {
-        onChannelClick: d
-    } = (0, y.A)(n.id), u = (0, f.JZ)(o.M.CHANNEL_BROWSER_NUX) ? 0 : -1, p = r.useCallback(e => {
+        onChannelClick: o
+    } = (0, I.A)(n.id), u = (0, x.JZ)(d.M.CHANNEL_BROWSER_NUX) ? 0 : -1, h = i.useCallback(e => {
         let {
-            section: r
+            section: i
         } = e;
-        if (0 === r && -1 === u) return null;
-        let i = t._categories[r + u];
+        if (0 === i && -1 === u) return null;
+        let s = t._categories[i + u];
         return (0, l.jsx)(M, {
-            channel: i.channel,
-            guild: n,
-            onCategoryClick: d
-        }, i.channel.id)
-    }, [t, n, u, d]), _ = r.useCallback(e => {
-        let {
-            section: r,
-            row: i
-        } = e;
-        if (0 === r && -1 === u) return (0, l.jsx)(w.A, {
-            guild: n
-        });
-        let a = t._categories[r + u],
-            s = t[a.channel.id][i];
-        return null == s ? null : (0, l.jsx)(U, {
-            category: a.channel,
             channel: s.channel,
             guild: n,
-            isFirstChannel: 0 === i,
-            isLastChannel: t[a.channel.id].length - 1 === i,
-            tooltipDirection: c ? "right" : "top",
-            onChannelClick: d
+            onCategoryClick: o
         }, s.channel.id)
-    }, [t, n, u, c, d]), m = (0, w.C)(n.id), g = (0, v.zH)(n.id, t, 64, m);
-    return (0, l.jsx)(h.Eie, {
-        className: i,
-        innerClassName: a()(s, D.bv),
+    }, [t, n, u, o]), m = i.useCallback(e => {
+        let {
+            section: i,
+            row: s
+        } = e;
+        if (0 === i && -1 === u) return (0, l.jsx)(S.A, {
+            guild: n
+        });
+        let a = t._categories[i + u],
+            r = t[a.channel.id][s];
+        return null == r ? null : (0, l.jsx)(k, {
+            category: a.channel,
+            channel: r.channel,
+            guild: n,
+            isFirstChannel: 0 === s,
+            isLastChannel: t[a.channel.id].length - 1 === s,
+            tooltipDirection: c ? "right" : "top",
+            onChannelClick: o
+        }, r.channel.id)
+    }, [t, n, u, c, o]), g = (0, S.C)(n.id), A = (0, b.zH)(n.id, t, 64, g);
+    return (0, l.jsx)(_.Eie, {
+        className: s,
+        innerClassName: a()(r, L.bv),
         sectionHeight: 48,
-        rowHeight: e => g[e].rowHeight,
-        renderSection: p,
-        renderRow: _,
-        sections: g.map(e => e.rowCount)
+        rowHeight: e => A[e].rowHeight,
+        renderSection: h,
+        renderRow: m,
+        sections: A.map(e => e.rowCount)
     }, "channel-browser-list")
 }

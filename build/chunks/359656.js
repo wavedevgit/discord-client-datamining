@@ -1,49 +1,50 @@
 /** chunk id: 359656, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => u
-}), n(896048);
-var r = n(627968),
-    l = n(64700),
-    i = n(503698),
-    s = n.n(i),
+    A: () => d
+});
+var i = n(627968),
+    s = n(64700),
+    l = n(503698),
+    r = n.n(l),
     a = n(397927),
     o = n(183555),
     c = n(752458);
 
-function u(e) {
+function d(e) {
     let {
         section: t,
         header: n,
-        items: i,
-        listClassName: u,
-        onExpand: d
+        items: l,
+        listClassName: d,
+        onExpand: u
     } = e, {
-        trackUserProfileAction: p
-    } = (0, o.NJ)(), h = l.useId(), [g, f] = l.useState(!1), m = g ? a.abt : a._BQ;
-    return (0, r.jsxs)("section", {
+        trackUserProfileAction: h
+    } = (0, o.NJ)(), A = s.useId(), [p, g] = s.useState(!1), m = p ? a.abt : a._BQ;
+    return (0, i.jsxs)("section", {
         className: c.uW,
-        children: [(0, r.jsxs)(a.DUT, {
-            className: s()(c.wx, c.vk),
-            "aria-controls": h,
-            "aria-expanded": g,
+        children: [(0, i.jsxs)(a.DUT, {
+            className: r()(c.wx, c.vk),
+            "aria-controls": A,
+            "aria-expanded": p,
             onClick: () => {
-                f(!g), g || (p({
+                g(!p), p || (h({
                     action: "PRESS_SECTION",
                     section: t
-                }), null == d || d())
+                }), u?.())
             },
-            children: [(0, r.jsxs)(a.Heading, {
+            children: [(0, i.jsxs)(a.Heading, {
                 variant: "text-sm/medium",
                 color: "text-default",
-                children: [n, " — ", i.length]
-            }), (0, r.jsx)(m, {
+                children: [n, " — ", l.length]
+            }), (0, i.jsx)(m, {
                 size: "md"
             })]
-        }), i.length > 0 && (0, r.jsx)("ul", {
-            id: h,
-            hidden: !g,
-            className: s()(c.p_, u),
-            children: i
+        }), l.length > 0 && (0, i.jsx)("ul", {
+            id: A,
+            hidden: !p,
+            className: r()(c.p_, d),
+            children: l
         })]
     })
 }

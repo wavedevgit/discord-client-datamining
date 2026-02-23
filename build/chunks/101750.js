@@ -1,9 +1,9 @@
 /** chunk id: 101750, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    E: () => i
+    E: () => s
 });
-let r = (0, n(600975).C)({
+let l = (0, n(600975).C)({
     kind: "user",
     id: "2023-10_social_proofing_message_nitro_badge",
     label: "Social Proofing Message Nitro Badge",
@@ -28,8 +28,8 @@ let r = (0, n(600975).C)({
     }]
 });
 
-function i(e, t) {
-    let n = r.getCurrentConfig({
+function s(e, t) {
+    let n = l.getCurrentConfig({
         location: t
     }, {
         autoTrackExposure: !0

@@ -1,19 +1,18 @@
-/** chunk id: 396695, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
+/** chunk id: 396695, original params: e,t,i (module,exports,require) **/
+i.d(t, {
     E: () => a
-}), n(896048);
-var r = n(64700),
-    i = n(695825);
+});
+var l = i(64700),
+    n = i(695825);
 let a = () => {
-    let [e, t] = r.useState(!1), [n, a] = r.useState(null);
+    let [e, t] = l.useState(!1), [i, a] = l.useState(null);
     return {
         loading: e,
-        error: n,
-        getTrialPurchaseEligibility: r.useCallback(async (e, n, r) => {
+        error: i,
+        getTrialPurchaseEligibility: l.useCallback(async (e, i, l) => {
             t(!0), a(null);
             try {
-                return await (0, i.KD)(e, n, r)
+                return await (0, n.KD)(e, i, l)
             } catch (e) {
                 a(e)
             } finally {

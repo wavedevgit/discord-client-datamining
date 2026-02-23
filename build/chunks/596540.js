@@ -1,76 +1,77 @@
 /** chunk id: 596540, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => f
+    A: () => g
 });
-var r = n(627968),
-    l = n(64700),
-    i = n(397927),
-    s = n(73153),
+var i = n(627968),
+    s = n(64700),
+    l = n(397927),
+    r = n(73153),
     a = n(964486),
     o = n(203982),
     c = n(851109),
-    u = n(355741),
-    d = n(480680),
-    p = n(652215),
-    h = n(985018),
-    g = n(782462);
+    d = n(355741),
+    u = n(480680),
+    h = n(652215),
+    A = n(985018),
+    p = n(782462);
 
-function f(e) {
+function g(e) {
     let {
         children: t,
         popoutPosition: n,
-        popoutAlign: d,
-        targetElementRef: g,
-        spacing: f = 0
+        popoutAlign: u,
+        targetElementRef: p,
+        spacing: g = 0
     } = e, {
-        isOpen: b,
-        setIsOpen: A
-    } = (0, u.A)(), y = l.useCallback(() => {
-        A(!1)
-    }, [A]), O = l.useCallback(() => {
-        A(!b)
-    }, [b, A]);
+        isOpen: _,
+        setIsOpen: f
+    } = (0, d.A)(), x = s.useCallback(() => {
+        f(!1)
+    }, [f]), C = s.useCallback(() => {
+        f(!_)
+    }, [_, f]);
     (0, a.Ay)(() => {
         let e = () => {
-            A(!1)
+            f(!1)
         };
-        return s.h.subscribe("USER_SETTINGS_MODAL_OPEN", e), () => s.h.unsubscribe("USER_SETTINGS_MODAL_OPEN", e)
-    }), l.useEffect(() => (o._.subscribe(p.jej.TOGGLE_INBOX, O), () => void o._.unsubscribe(p.jej.TOGGLE_INBOX, O)), [O]);
+        return r.h.subscribe("USER_SETTINGS_MODAL_OPEN", e), () => r.h.unsubscribe("USER_SETTINGS_MODAL_OPEN", e)
+    }), s.useEffect(() => (o._.subscribe(h.jej.TOGGLE_INBOX, C), () => void o._.unsubscribe(h.jej.TOGGLE_INBOX, C)), [C]);
     let {
-        entrypoint: j
+        entrypoint: E
     } = (0, c.X8)({
         location: "NotificationsInboxPopout"
     });
-    return (0, r.jsx)(i.YNO, {
-        targetElementRef: g,
-        shouldShow: b,
-        align: d,
-        animation: j === c.RK.TITLE_BAR_LEFT ? i.YNO.Animation.TRANSLATE : i.YNO.Animation.FADE,
-        animationPosition: j === c.RK.TITLE_BAR_LEFT ? "bottom" : "left",
+    return (0, i.jsx)(l.YNO, {
+        targetElementRef: p,
+        shouldShow: _,
+        align: u,
+        animation: E === c.RK.TITLE_BAR_LEFT ? l.YNO.Animation.TRANSLATE : l.YNO.Animation.FADE,
+        animationPosition: E === c.RK.TITLE_BAR_LEFT ? "bottom" : "left",
         position: n,
-        onRequestClose: y,
-        spacing: f,
-        renderPopout: () => (0, r.jsx)(i.lGe, {
-            "aria-label": h.intl.string(h.t.GSmTKJ),
-            children: (0, r.jsx)(m, {})
+        onRequestClose: x,
+        spacing: g,
+        renderPopout: () => (0, i.jsx)(l.lGe, {
+            "aria-label": A.intl.string(A.t.GSmTKJ),
+            children: (0, i.jsx)(m, {})
         }),
         children: (e, n) => {
             let {
-                isShown: r
+                isShown: i
             } = n;
-            return t(O, r, e)
+            return t(C, i, e)
         }
     })
 }
 
 function m() {
-    return (0, r.jsxs)("div", {
-        className: g.kL,
-        children: [(0, r.jsx)("div", {
-            className: g._Q,
-            children: (0, r.jsx)("span", {
-                className: g.Tp
+    return (0, i.jsxs)("div", {
+        className: p.kL,
+        children: [(0, i.jsx)("div", {
+            className: p._Q,
+            children: (0, i.jsx)("span", {
+                className: p.Tp
             })
-        }), (0, r.jsx)(d.A, {})]
+        }), (0, i.jsx)(u.A, {})]
     })
 }

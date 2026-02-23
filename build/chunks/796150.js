@@ -1,131 +1,93 @@
 /** chunk id: 796150, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    default: () => v
-}), n(896048), n(142703);
-var r = n(627968),
-    o = n(64700),
-    a = n(340287),
-    l = n(397927),
-    i = n(830215),
-    c = n(964486),
-    s = n(883662),
-    u = n(628965),
-    d = n(203982),
-    _ = n(115063),
-    b = n(152056),
-    p = n(780964),
-    f = n(162396),
-    y = n(12901),
-    g = n(921854),
-    m = n(840065),
-    h = n(652215),
-    O = n(985018),
-    j = n(249316);
+    default: () => C
+});
+var a = n(627968),
+    r = n(64700),
+    i = n(397927),
+    s = n(964486),
+    l = n(883662),
+    o = n(961350),
+    c = n(628965),
+    u = n(287809),
+    d = n(115063),
+    _ = n(152056),
+    m = n(780964),
+    g = n(162396),
+    p = n(12901),
+    b = n(921854),
+    f = n(840065),
+    h = n(985018),
+    x = n(249316);
 
-function x(e) {
+function y(e) {
     let {
         destinationPanel: t,
         originPanel: n
     } = e;
-    (0, _.iY)({
+    (0, d.iY)({
         destinationPane: t,
         originPane: n,
-        subsection: u.A.getSubsection(),
-        source: u.A.getAnalyticsLocation(),
-        locationStack: u.A.getAnalyticsLocations()
+        subsection: c.A.getSubsection(),
+        source: c.A.getAnalyticsLocation(),
+        locationStack: c.A.getAnalyticsLocations()
     })
 }
 
-function v(e) {
+function C(e) {
     let {
-        target: t
-    } = e, n = function(e, t) {
-        if (null == e) return {};
-        var n, r, o, a = {};
-        if ("u" > typeof Reflect && Reflect.ownKeys) {
-            for (o = 0, n = Reflect.ownKeys(e); o < n.length; o++) r = n[o], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
-            return a
-        }
-        if (a = function(e, t) {
-                if (null == e) return {};
-                var n, r, o = {},
-                    a = Object.getOwnPropertyNames(e);
-                for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n]);
-                return o
-            }(e, t), Object.getOwnPropertySymbols)
-            for (o = 0, n = Object.getOwnPropertySymbols(e); o < n.length; o++) r = n[o], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
-        return a
-    }(e, ["target"]), l = b.A.useField("query"), _ = o.useRef(null);
-    (0, c.Ay)(() => {
-        let e = u.A.getSection();
-        null != e && (x({
+        target: t,
+        ...n
+    } = e, i = _.A.useField("query"), d = r.useRef(null);
+    (0, s.Ay)(() => {
+        let e = c.A.getSection();
+        null != e && (y({
             destinationPanel: e,
             originPanel: null
-        }), _.current = e)
+        }), d.current = e)
     });
-    let O = o.useCallback(e => {
-            b.A.setState({
+    let h = r.useCallback(e => {
+            _.A.setState({
                 query: e
             })
         }, []),
-        [j, v] = o.useState(!1);
-    return (o.useEffect(() => {
+        [x, C] = r.useState(!1);
+    return (r.useLayoutEffect(() => {
         let e = () => {
-            (0, a.flushSync)(() => {
-                v(!0), (0, y.default)()
-            }), setImmediate(() => {
-                i.A.logout("settings")
-            })
+            null == u.default.getCurrentUser() && (C(!0), (0, p.default)())
         };
-        return d._.subscribe(h.jej.SETTINGS_TRIGGER_LOGOUT, e), () => {
-            d._.unsubscribe(h.jej.SETTINGS_TRIGGER_LOGOUT, e)
-        }
-    }, []), j) ? null : (0, r.jsx)(s.A, function(e) {
-        for (var t = 1; t < arguments.length; t++) {
-            var n = null != arguments[t] ? arguments[t] : {},
-                r = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                return Object.getOwnPropertyDescriptor(n, e).enumerable
-            }))), r.forEach(function(t) {
-                var r;
-                r = n[t], t in e ? Object.defineProperty(e, t, {
-                    value: r,
-                    enumerable: !0,
-                    configurable: !0,
-                    writable: !0
-                }) : e[t] = r
-            })
-        }
-        return e
-    }({
-        partialRoot: g.D,
-        emptyState: S,
-        sidebarFooter: f.A,
+        return o.default.addChangeListener(e), () => o.default.removeChangeListener(e)
+    }, []), x) ? null : (0, a.jsx)(l.A, {
+        partialRoot: b.D,
+        emptyState: A,
+        sidebarFooter: g.A,
         onPanelChange: e => {
-            let t = (0, m.getUserSettingsSectionsByWebUserSettings)().get(e);
-            null != t && (x({
+            let t = (0, f.getUserSettingsSectionsByWebUserSettings)().get(e);
+            null != t && (y({
                 destinationPanel: t,
-                originPanel: _.current
-            }), _.current = t)
+                originPanel: d.current
+            }), d.current = t)
         },
         target: t,
-        defaultTarget: p.X.ACCOUNT_PANEL,
-        searchQuery: l,
-        onSearchChange: O
-    }, n))
+        defaultTarget: m.X.ACCOUNT_PANEL,
+        searchQuery: i,
+        onSearchChange: h,
+        ...n
+    })
 }
 
-function S() {
-    return (0, r.jsxs)("div", {
-        className: j.t,
-        children: [(0, r.jsx)(l.Text, {
+function A() {
+    return (0, a.jsxs)("div", {
+        className: x.t,
+        children: [(0, a.jsx)(i.Text, {
             variant: "text-sm/semibold",
             color: "text-strong",
-            children: O.intl.string(O.t.zihbmv)
-        }), (0, r.jsx)(l.Text, {
+            children: h.intl.string(h.t.zihbmv)
+        }), (0, a.jsx)(i.Text, {
             variant: "text-sm/normal",
             color: "text-subtle",
-            children: O.intl.string(O.t.XclvsB)
+            children: h.intl.string(h.t.XclvsB)
         })]
     })
 }

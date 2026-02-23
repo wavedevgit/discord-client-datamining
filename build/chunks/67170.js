@@ -1,4 +1,5 @@
 /** chunk id: 67170, original params: e,t,n (module,exports,require) **/
+"use strict";
 e.exports = {
     kL: "container__6b38f",
     FS: "textContainer__6b38f",

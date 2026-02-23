@@ -1,37 +1,37 @@
-/** chunk id: 819027, original params: e,t,r (module,exports,require) **/
-r.d(t, {
-    A: () => d
+/** chunk id: 819027, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    A: () => m
 });
-var n = r(627968);
-r(64700);
-var o = r(397927),
-    i = r(688810),
-    l = r(474397),
-    a = r(780964),
-    u = r(840065),
-    c = r(652215),
-    s = r(355097),
-    b = r(985018);
+var r = n(627968);
+n(64700);
+var a = n(397927),
+    i = n(688810),
+    l = n(474397),
+    u = n(780964),
+    s = n(840065),
+    o = n(652215),
+    c = n(355097),
+    d = n(985018);
 
-function d(e) {
+function m(e) {
     let {
         analyticsLocations: t
     } = (0, i.Ay)();
-    return (0, n.jsx)(o.Drp, {
+    return (0, r.jsx)(a.Drp, {
         id: "voice-settings",
-        label: b.intl.string(b.t.NiTd0e),
+        label: d.intl.string(d.t.NiTd0e),
         action: () => {
-            (0, u.openUserSettings)(a.X.VOICE_AND_VIDEO_PANEL, {
-                section: c.nc_.VOICE,
-                subsection: s.V5,
+            (0, s.openUserSettings)(u.X.VOICE_AND_VIDEO_PANEL, {
+                section: o.nc_.VOICE,
+                subsection: c.V5,
                 analyticsLocations: t,
                 appContext: e
-            }), (0, l.A)(e, e === c.BRT.POPOUT)
+            }), (0, l.A)(e, e === o.BRT.POPOUT)
         },
-        icon: o.Zes,
+        icon: a.Zes,
         leadingAccessory: {
             type: "icon",
-            icon: o.Zes
+            icon: a.Zes
         }
     })
 }

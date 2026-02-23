@@ -2,8 +2,8 @@
 n.d(t, {
     A: () => s
 });
-var r = n(627968),
-    i = n(397927),
+var i = n(627968),
+    r = n(397927),
     l = n(736653),
     a = n(985018);
 
@@ -11,14 +11,14 @@ function s(e) {
     let {
         onClick: t
     } = e, s = (0, l.Ay)();
-    return (0, r.jsxs)(i.ppr, {
+    return (0, i.jsxs)(r.ppr, {
         theme: s,
-        children: [(0, r.jsx)(i.G8R, {
+        children: [(0, i.jsx)(r.G8R, {
             lightSrc: n(826223),
             darkSrc: n(317017),
             width: 415,
             height: 200
-        }), (0, r.jsx)(i.SGT, {
+        }), (0, i.jsx)(r.SGT, {
             note: a.intl.format(a.t.Pv8u2u, {
                 onClick: t
             })

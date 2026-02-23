@@ -1,37 +1,37 @@
 /** chunk id: 468946, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => v
 });
-var l = n(627968),
+var a = n(627968),
     i = n(281445),
-    a = n(158954),
-    r = n(736653),
-    s = n(27023),
-    u = n(818348),
-    o = n(294726),
-    d = n(985018),
-    c = n(288948),
+    s = n(158954),
+    l = n(736653),
+    r = n(27023),
+    d = n(818348),
+    c = n(294726),
+    o = n(985018),
+    u = n(288948),
     m = n(391637),
-    v = n(588979);
+    g = n(588979);
 
 function f() {
-    let e = (0, r.Ay)();
-    return (0, l.jsx)(a.EYj, {
+    let e = (0, l.Ay)();
+    return (0, a.jsx)(s.EYj, {
         variant: "text-sm/medium",
-        className: c.Q,
-        children: d.intl.format(o.default.fcJiY8, {
-            provider: (0, l.jsx)("img", {
-                className: c.S,
-                src: e !== u.NJ.LIGHT ? v : m,
+        className: u.Q,
+        children: o.intl.format(c.default.fcJiY8, {
+            provider: (0, a.jsx)("img", {
+                className: u.S,
+                src: e !== d.NJ.LIGHT ? g : m,
                 alt: "Shockbyte"
             })
         })
     })
 }
 
-function g() {
+function v() {
     let {
         gameProvider: e
-    } = (0, s.bv)();
-    return e === i.X.SHOCKBYTE ? (0, l.jsx)(f, {}) : null
+    } = (0, r.bv)();
+    return e === i.X.SHOCKBYTE ? (0, a.jsx)(f, {}) : null
 }

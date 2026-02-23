@@ -1,88 +1,88 @@
 /** chunk id: 7936, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => m
-}), n(896048), n(747238);
-var r = n(627968),
-    i = n(64700),
-    s = n(503698),
-    l = n.n(s),
+    A: () => f
+});
+var i = n(627968),
+    s = n(64700),
+    r = n(503698),
+    l = n.n(r),
     a = n(311907),
     o = n(397927),
-    c = n(557722),
-    u = n(628387),
-    d = n(148864),
+    d = n(557722),
+    c = n(628387),
+    u = n(148864),
     h = n(146571),
-    p = n(854378);
+    _ = n(854378);
 n(53516);
-var g = n(985018),
-    f = n(20976),
-    _ = n(473169);
-let m = () => {
-    let [e, t] = i.useState(""), [s, m] = i.useState(""), [A, x] = i.useState(!1), [E, v] = i.useState(!1), [y, b] = i.useState(null), [j, O] = i.useState(null), I = (0, a.bG)([d.A], () => d.A.getCountryCode()), S = I.code.split(" ")[0], N = async () => {
+var p = n(985018),
+    g = n(20976),
+    m = n(473169);
+let f = () => {
+    let [e, t] = s.useState(""), [r, f] = s.useState(""), [A, E] = s.useState(!1), [x, I] = s.useState(!1), [v, N] = s.useState(null), [j, S] = s.useState(null), C = (0, a.bG)([u.A], () => u.A.getCountryCode()), y = C.code.split(" ")[0], T = async () => {
         try {
-            await c.A.resendCode(e)
+            await d.A.resendCode(e)
         } catch (e) {
-            O(e.body.message)
+            S(e.body.message)
         }
-    }, C = async () => {
-        x(!0);
+    }, b = async () => {
+        E(!0);
         try {
             let {
                 token: t
-            } = await c.A.verifyPhone(S + e, s);
-            b(null), O(null), v(!0), c.A.validatePhoneForSupport(t)
+            } = await d.A.verifyPhone(y + e, r);
+            N(null), S(null), I(!0), d.A.validatePhoneForSupport(t)
         } catch (e) {
-            e.body.message ? (b(null), O(e.body.message)) : (b(e.body.phone), O(e.body.code))
+            e.body.message ? (N(null), S(e.body.message)) : (N(e.body.phone), S(e.body.code))
         } finally {
-            x(!1)
+            E(!1)
         }
-    }, T = (0, r.jsxs)(p.Ay, {
-        children: [(0, r.jsx)(p._V, {
+    }, R = (0, i.jsxs)(_.Ay, {
+        children: [(0, i.jsx)(_._V, {
             src: n(142041)
-        }), (0, r.jsxs)(p.hE, {
-            className: l()(_.QX, f.Uu, f.wq, f.Hu),
-            children: [g.intl.string(g.t.WWzQta), (0, r.jsx)(o.yr3, {
+        }), (0, i.jsxs)(_.hE, {
+            className: l()(m.QX, g.Uu, g.wq, g.Hu),
+            children: [p.intl.string(p.t.WWzQta), (0, i.jsx)(o.yr3, {
                 size: "md",
                 color: "currentColor",
-                className: _.oY
+                className: m.oY
             })]
         })]
     });
-    return E ? T : (0, r.jsxs)(p.Ay, {
-        children: [(0, r.jsx)(p.hE, {
-            children: g.intl.string(g.t.o4JNrO)
-        }), (0, r.jsx)(p.tK, {
-            className: _.Ot,
-            children: g.intl.string(g.t.y0tVbq)
-        }), (0, r.jsxs)(p.eB, {
-            className: _.QX,
-            children: [(0, r.jsx)(h.A, {
-                label: g.intl.string(g.t["eJnn0+"]),
-                alpha2: I.alpha2,
-                countryCode: S,
+    return x ? R : (0, i.jsxs)(_.Ay, {
+        children: [(0, i.jsx)(_.hE, {
+            children: p.intl.string(p.t.o4JNrO)
+        }), (0, i.jsx)(_.tK, {
+            className: m.Ot,
+            children: p.intl.string(p.t.y0tVbq)
+        }), (0, i.jsxs)(_.eB, {
+            className: m.QX,
+            children: [(0, i.jsx)(h.A, {
+                label: p.intl.string(p.t["eJnn0+"]),
+                alpha2: C.alpha2,
+                countryCode: y,
                 value: e,
                 autoComplete: "off",
                 spellCheck: "false",
                 onChange: t,
-                forceMode: u.Pd.PHONE,
-                error: y
-            }), (0, r.jsx)(p.pd, {
-                className: _.QX,
-                label: g.intl.string(g.t.OdzNbm),
-                value: s,
-                onChange: m,
+                forceMode: c.Pd.PHONE,
+                error: v
+            }), (0, i.jsx)(_.pd, {
+                className: m.QX,
+                label: p.intl.string(p.t.OdzNbm),
+                value: r,
+                onChange: f,
                 maxLength: 6,
                 error: j
-            }), (0, r.jsx)(o.QWc, {
-                text: g.intl.string(g.t["5b60gi"]),
-                onClick: N
-            }), (0, r.jsx)("div", {
-                className: _.QX,
-                children: (0, r.jsx)(o.Button, {
-                    text: g.intl.string(g.t.i4jeWR),
+            }), (0, i.jsx)(o.QWc, {
+                text: p.intl.string(p.t["5b60gi"]),
+                onClick: T
+            }), (0, i.jsx)("div", {
+                className: m.QX,
+                children: (0, i.jsx)(o.Button, {
+                    text: p.intl.string(p.t.i4jeWR),
                     fullWidth: !0,
-                    onClick: C,
+                    onClick: b,
                     loading: A
                 })
             })]

@@ -1,20 +1,19 @@
 /** chunk id: 565832, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => c
+    A: () => d
 });
 var a = n(627968),
-    l = n(311907),
-    r = n(935154),
-    i = n(748319),
-    s = n(287809),
+    i = n(311907),
+    s = n(935154),
+    l = n(748319),
+    r = n(287809),
     o = n(427262);
 
-function c(e) {
-    var t;
+function d(e) {
     let {
-        nameplate: n
-    } = e, c = (0, l.bG)([s.default], () => s.default.getCurrentUser()), d = null != (t = o.Ay.useName(c)) ? t : "";
-    return (0, a.jsx)(i.g, {
+        nameplate: t
+    } = e, n = (0, i.bG)([r.default], () => r.default.getCurrentUser()), d = o.Ay.useName(n) ?? "";
+    return (0, a.jsx)(l.g, {
         username: d,
         selfMute: !1,
         selfDeaf: !1,
@@ -23,13 +22,11 @@ function c(e) {
         suppress: !1,
         speaking: !1,
         streaming: !1,
-        status: r.cl.ONLINE,
-        currentUser: c,
+        status: s.cl.ONLINE,
+        currentUser: n,
         activities: [],
         applicationStream: void 0,
         userTag: "",
-        hidePrivateData: !1,
-        premiumSubscription: void 0,
         speakingWhileMuted: !1,
         speakingWhilePTTInactive: !1,
         occluded: !1,
@@ -38,12 +35,9 @@ function c(e) {
             settings: []
         },
         awaitingRemote: !1,
-        isEligibleForPomelo: !1,
-        nameplate: n,
+        nameplate: t,
         voiceChannel: null,
-        voiceActivityStatusEnabled: !1,
         isQuestBarEmpty: !0,
-        hasLoadedQuestBar: !0,
         isListenAlongVisible: !1
     })
 }

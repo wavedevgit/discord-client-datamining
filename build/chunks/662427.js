@@ -1,25 +1,22 @@
 /** chunk id: 662427, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => c
+    A: () => a
 });
-var r, i, l = n(311907),
-    a = n(73153);
-let o = [];
-class s extends(i = l.Ay.Store) {
+var i = n(311907),
+    r = n(73153);
+let l = [];
+class s extends i.Ay.Store {
+    static displayName = "CreatorMonetizationMarketingStore";
     getEligibleGuildsForNagActivate() {
-        return o
+        return l
     }
-}(r = "displayName") in s ? Object.defineProperty(s, r, {
-    value: "CreatorMonetizationMarketingStore",
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
-}) : s[r] = "CreatorMonetizationMarketingStore";
-let c = new s(a.h, {
+}
+let a = new s(r.h, {
     CREATOR_MONETIZATION_NAG_ACTIVATE_ELIGIBLITY_FETCH_SUCCESS: function(e) {
         let {
             eligibleGuilds: t
         } = e;
-        o = t
+        l = t
     }
 })

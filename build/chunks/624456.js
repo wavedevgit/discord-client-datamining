@@ -1,19 +1,17 @@
 /** chunk id: 624456, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    M: () => a,
-    l: () => o
+    M: () => r,
+    l: () => a
 });
-var r = n(284009),
-    i = n.n(r);
+var i = n(284009),
+    l = n.n(i);
 
-function a(e) {
+function r(e) {
     let t = e.items;
-    return i()(1 === t.length, "more than 1 subscription item for role subscription"), t[0].planId
+    return l()(1 === t.length, "more than 1 subscription item for role subscription"), t[0].planId
 }
 
-function o(e) {
-    var t;
-    let n = null == e || null == (t = e.renewalMutations) ? void 0 : t.items;
-    if (null != n) return i()(n.length <= 1, "more than 1 renewal mutation for role subscription"), null == n ? void 0 : n[0].planId
+function a(e) {
+    let t = e?.renewalMutations?.items;
+    if (null != t) return l()(t.length <= 1, "more than 1 renewal mutation for role subscription"), t?.[0].planId
 }

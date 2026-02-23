@@ -2,8 +2,8 @@
 n.d(t, {
     A: () => s
 });
-var r = n(334595),
-    i = n(837921),
+var i = n(334595),
+    r = n(837921),
     l = n(90924),
     a = n(629471);
 let s = {
@@ -15,8 +15,8 @@ let s = {
             } = e;
             (0, l.lG)(t.transport);
             let n = t.application.id;
-            if (null != n) return (0, r.A)(n), {
-                enabled: i.Ay.getEnableHardwareAcceleration()
+            if (null != n) return (0, i.A)(n), {
+                enabled: r.Ay.getEnableHardwareAcceleration()
             }
         }
     }

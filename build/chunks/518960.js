@@ -1,136 +1,119 @@
-/** chunk id: 518960, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    R: () => C,
-    V: () => y
-}), n(896048), n(65821);
-var r = n(367513),
-    i = n(843472),
-    o = n(608299),
-    a = n(23658),
-    l = n(743445),
-    c = n(565150),
-    _ = n(58149),
-    s = n(313961),
-    d = n(301169),
-    u = n(522602),
-    p = n(287809),
-    f = n(954571),
-    m = n(453771),
-    g = n(927578),
-    h = n(382287),
-    E = n(652215),
-    I = n(381941),
-    b = n(788868),
-    O = n(985018);
+/** chunk id: 518960, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    R: () => v,
+    V: () => N
+});
+var n = i(367513),
+    l = i(843472),
+    a = i(608299),
+    s = i(23658),
+    r = i(743445),
+    o = i(565150),
+    u = i(58149),
+    d = i(313961),
+    c = i(301169),
+    h = i(522602),
+    m = i(287809),
+    p = i(954571),
+    g = i(453771),
+    A = i(927578),
+    f = i(382287),
+    T = i(652215),
+    E = i(381941),
+    x = i(788868),
+    I = i(985018);
 
-function T(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = r
-        })
-    }
-    return e
-}
-
-function y(e, t, n) {
-    let r = p.default.getCurrentUser(),
-        i = e.guild_id,
-        o = m.o2(i),
-        l = Array.from(t).map(e => e.size),
-        c = Array.from(t).map(e => null != e.type ? e.type : "unknown"),
-        s = l.reduce((e, t) => e + t, 0),
-        d = l.length > 0 ? Math.max(...l) : 0,
-        u = l.length;
-    if (d > o) {
-        let t = null == n ? void 0 : n.reduce((e, t) => e + t, 0);
-        (0, _.zV)(E.HAw.FILE_SIZE_LIMIT_EXCEEDED, {
+function N(e, t, i) {
+    let n = m.default.getCurrentUser(),
+        l = e.guild_id,
+        a = g.o2(l),
+        r = Array.from(t).map(e => e.size),
+        o = Array.from(t).map(e => null != e.type ? e.type : "unknown"),
+        d = r.reduce((e, t) => e + t, 0),
+        c = r.length > 0 ? Math.max(...r) : 0,
+        h = r.length;
+    if (c > a) {
+        let t = i?.reduce((e, t) => e + t, 0);
+        (0, u.zV)(T.HAw.FILE_SIZE_LIMIT_EXCEEDED, {
             channel_id: e.id,
-            guild_id: i,
-            user_individual_file_size_limit: o,
-            pre_compression_file_sizes: l,
-            pre_compression_aggregate_file_size: s,
-            num_attachments: u,
-            error_type: I.ty.UPLOAD_ATTACHMENT_MAX_SIZE_ERROR,
-            attachment_mimetypes: c,
-            post_compression_file_sizes: n,
+            guild_id: l,
+            user_individual_file_size_limit: a,
+            pre_compression_file_sizes: r,
+            pre_compression_aggregate_file_size: d,
+            num_attachments: h,
+            error_type: E.ty.UPLOAD_ATTACHMENT_MAX_SIZE_ERROR,
+            attachment_mimetypes: o,
+            post_compression_file_sizes: i,
             post_compression_aggregate_file_size: t
-        }), (0, a.openUploadError)({
-            title: O.intl.string(O.t["/tGlcj"]),
-            help: (0, h.WQ)(r, i),
-            showPremiumUpsell: !(0, g.YE)(r, b.PremiumTypes.TIER_2),
-            fileSize: d
+        }), (0, s.openUploadError)({
+            title: I.intl.string(I.t["/tGlcj"]),
+            help: (0, f.WQ)(n, l),
+            showPremiumUpsell: !(0, A.YE)(n, x.PremiumTypes.TIER_2),
+            fileSize: c
         });
         return
-    }(0, a.openUploadError)({
-        title: O.intl.string(O.t["/tGlcj"]),
-        help: O.intl.formatToPlainString(O.t.tUOJdH, {
-            maxSize: m.Hb(m.bB())
+    }(0, s.openUploadError)({
+        title: I.intl.string(I.t["/tGlcj"]),
+        help: I.intl.formatToPlainString(I.t.tUOJdH, {
+            maxSize: g.Hb(g.bB())
         })
     })
 }
-async function C(e, t, n) {
+async function v(e, t, i) {
     let {
-        filesMetadata: _,
-        requireConfirm: p = !0,
-        isThumbnail: m = !1,
-        origin: g
+        filesMetadata: u,
+        requireConfirm: m = !0,
+        isThumbnail: g = !1,
+        origin: A
     } = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {};
     if (e.length < 1) return;
-    if (null != _ && _.length !== e.length) throw Error("Unexpected mismatch between files and file metadata");
-    let b = t.getGuildId(),
-        C = Array.from(e),
-        v = C.map(e => ({
+    if (null != u && u.length !== e.length) throw Error("Unexpected mismatch between files and file metadata");
+    let x = t.getGuildId(),
+        v = Array.from(e),
+        j = v.map(e => ({
             originalContentType: e.type,
             preCompressionSize: e.size
         }));
-    if (await Promise.resolve(), (0, h.fJ)(C, b)) return void y(t, C);
-    if (u.A.getUploadCount(t.id, n) + C.length > E.XgB) {
-        (0, a.openUploadError)({
-            title: O.intl.string(O.t.wOr6hB),
-            help: O.intl.formatToPlainString(O.t["qqyp/e"], {
-                limit: E.XgB
+    if (await Promise.resolve(), (0, f.fJ)(v, x)) return void N(t, v);
+    if (h.A.getUploadCount(t.id, i) + v.length > T.XgB) {
+        (0, s.openUploadError)({
+            title: I.intl.string(I.t.wOr6hB),
+            help: I.intl.formatToPlainString(I.t["qqyp/e"], {
+                limit: T.XgB
             })
-        }), f.default.track(E.HAw.UPLOAD_FILE_LIMIT_ERROR, {
-            existing_count: u.A.getUploadCount(t.id, n),
-            new_count: C.length
+        }), p.default.track(T.HAw.UPLOAD_FILE_LIMIT_ERROR, {
+            existing_count: h.A.getUploadCount(t.id, i),
+            new_count: v.length
         });
         return
     }
-    if (t.type !== E.rbe.GUILD_VOICE && t.type !== E.rbe.GUILD_STAGE_VOICE || s.A.getChatOpen(t.id) || r.A.updateChatOpen(t.id, !0), p) {
-        let e = C.map((e, t) => T({
+    if (t.type !== T.rbe.GUILD_VOICE && t.type !== T.rbe.GUILD_STAGE_VOICE || d.A.getChatOpen(t.id) || n.A.updateChatOpen(t.id, !0), m) {
+        let e = v.map((e, t) => ({
             file: e,
-            platform: c.xz.WEB,
-            isThumbnail: m,
-            origin: g,
-            compressionMetadata: v[t]
-        }, null == _ ? void 0 : _[t]));
-        o.A.addFiles({
+            platform: o.xz.WEB,
+            isThumbnail: g,
+            origin: A,
+            compressionMetadata: j[t],
+            ...u?.[t]
+        }));
+        a.A.addFiles({
             files: e,
             channelId: t.id,
-            draftType: n
+            draftType: i
         })
     } else {
-        let e = C.map((e, n) => {
-            let r = null != _ ? _[n] : {};
-            return new l.bK(T({
+        let e = v.map((e, i) => {
+            let n = null != u ? u[i] : {};
+            return new r.bK({
                 file: e,
-                platform: c.xz.WEB,
-                isThumbnail: m,
-                origin: g,
-                compressionMetadata: v[n]
-            }, r), t.id)
+                platform: o.xz.WEB,
+                isThumbnail: g,
+                origin: A,
+                compressionMetadata: j[i],
+                ...n
+            }, t.id)
         });
-        i.A.sendMessage(t.id, {
+        l.A.sendMessage(t.id, {
             content: "",
             tts: !1,
             invalidEmojis: [],
@@ -138,14 +121,14 @@ async function C(e, t, n) {
         }, void 0, {
             eagerDispatch: !1,
             attachmentsToUpload: e,
-            location: I.Hx.INSTANT_UPLOAD,
-            onAttachmentUploadError: (e, n, r) => {
-                (0, d.k)({
+            location: E.Hx.INSTANT_UPLOAD,
+            onAttachmentUploadError: (e, i, n) => {
+                (0, c.k)({
                     file: e,
                     guildId: t.getGuildId(),
                     analyticsLocations: [],
-                    code: n,
-                    reason: r
+                    code: i,
+                    reason: n
                 })
             }
         })

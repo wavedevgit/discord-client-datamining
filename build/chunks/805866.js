@@ -1,13 +1,13 @@
 /** chunk id: 805866, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    Ij: () => d,
+    Ij: () => c,
     Qq: () => o,
-    Vn: () => c,
-    wP: () => s
-}), n(896048), n(64700);
-var a, l, r = n(646284),
-    i = n(985018),
-    s = ((a = {})[a.REFRESH_APP = -1] = "REFRESH_APP", a[a.EMAIL_VERIFICATION = 3] = "EMAIL_VERIFICATION", a[a.AGE_VERIFICATION = 9] = "AGE_VERIFICATION", a);
+    Vn: () => d,
+    wP: () => r
+}), n(64700);
+var a, i, s = n(646284),
+    l = n(985018),
+    r = ((a = {})[a.REFRESH_APP = -1] = "REFRESH_APP", a[a.EMAIL_VERIFICATION = 3] = "EMAIL_VERIFICATION", a[a.AGE_VERIFICATION = 9] = "AGE_VERIFICATION", a);
 let o = {
         EMAIL_VERIFICATION: "email_verification",
         PHONE_VERIFICATION: "phone_verification",
@@ -15,6 +15,6 @@ let o = {
         REFRESH_APP: "refresh_app",
         AGE_VERIFICATION: "age_verification"
     },
-    c = new Set(Object.values(o));
-i.intl.string(r.default["Qm6K/s"]), i.intl.string(r.default["dSkE/A"]);
-var d = ((l = {}).Empty = "empty", l.VerificationCode = "verification_code", l)
+    d = new Set(Object.values(o));
+l.intl.string(s.default["Qm6K/s"]), l.intl.string(s.default["dSkE/A"]);
+var c = ((i = {}).Empty = "empty", i.VerificationCode = "verification_code", i)

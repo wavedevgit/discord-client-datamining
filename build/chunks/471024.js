@@ -1,53 +1,49 @@
 /** chunk id: 471024, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    Ay: () => O,
-    de: () => m,
-    sI: () => A
+    Ay: () => m,
+    de: () => g,
+    sI: () => f
 });
-var i, r = n(627968),
+var i = n(627968),
     s = n(64700),
     l = n(503698),
-    o = n.n(l),
-    a = n(397927),
-    c = n(12641),
+    a = n.n(l),
+    r = n(397927),
+    o = n(12641),
     d = n(985018),
-    u = n(58755),
-    h = n(473169);
-
-function p(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-let f = e => e.stopPropagation(),
-    g = () => (0, r.jsx)("div", {
-        className: u.tR,
-        onClick: f,
-        onMouseEnter: f,
-        onMouseOver: f
+    c = n(58755),
+    u = n(473169);
+let h = e => e.stopPropagation(),
+    p = () => (0, i.jsx)("div", {
+        className: c.tR,
+        onClick: h,
+        onMouseEnter: h,
+        onMouseOver: h
     }),
-    y = () => (0, r.jsx)("div", {
-        className: u.yF
+    A = () => (0, i.jsx)("div", {
+        className: c.yF
     }),
-    A = (e, t, n) => (0, r.jsx)("div", {
-        className: u.qD,
+    f = (e, t, n) => (0, i.jsx)("div", {
+        className: c.qD,
         children: d.intl.format(n, {
             keybind: t,
-            keybindHook: (e, n) => (0, r.jsx)(c.A, {
+            keybindHook: (e, n) => (0, i.jsx)(o.A, {
                 keybind: t,
-                className: u.P
+                className: c.P
             }, n)
         })
     }),
-    m = (e, t) => (0, r.jsx)("div", {
-        className: u.g2,
+    g = (e, t) => (0, i.jsx)("div", {
+        className: c.g2,
         children: t
     });
-class b extends(i = s.PureComponent) {
+class _ extends s.PureComponent {
+    static defaultProps = {
+        maxBodyLines: void 0,
+        expand: !1,
+        disabled: !1
+    };
     static getDerivedStateFromProps(e, t) {
         let {
             expand: n
@@ -58,11 +54,20 @@ class b extends(i = s.PureComponent) {
             expanded: !0
         } : null
     }
+    constructor(e) {
+        super(e);
+        const {
+            expand: t
+        } = e;
+        this.state = {
+            expanded: t
+        }
+    }
     componentDidMount() {
         let {
             onNotificationShow: e
         } = this.props;
-        null == e || e()
+        e?.()
     }
     componentDidUpdate(e) {
         let {
@@ -70,15 +75,41 @@ class b extends(i = s.PureComponent) {
         } = this.props;
         null != t && null == e.onNotificationShow && t()
     }
+    handleDismiss = e => {
+        e.stopPropagation();
+        let {
+            onDismissClick: t
+        } = this.props;
+        t?.(e)
+    };
+    handleConfirmClick = e => {
+        e.stopPropagation();
+        let {
+            onConfirmClick: t
+        } = this.props;
+        t?.(e)
+    };
+    handleCancelClick = e => {
+        e.stopPropagation();
+        let {
+            onCancelClick: t
+        } = this.props;
+        t?.(e)
+    };
+    handleMouseEnter = () => {
+        this.props.disabled || this.setState({
+            expanded: !0
+        })
+    };
     renderCloseButton() {
-        return "function" == typeof this.props.title ? null : (0, r.jsx)(a.DUT, {
+        return "function" == typeof this.props.title ? null : (0, i.jsx)(r.DUT, {
             onClick: this.handleDismiss,
-            className: u.r,
+            className: c.r,
             "aria-label": d.intl.string(d.t.LnEgqX),
-            children: (0, r.jsx)(a.PGe, {
+            children: (0, i.jsx)(r.PGe, {
                 size: "xs",
                 color: "currentColor",
-                className: u.MW
+                className: c.MW
             })
         })
     }
@@ -94,14 +125,14 @@ class b extends(i = s.PureComponent) {
         } = this;
         if (null == e) return null;
         if ("function" == typeof e) {
-            let i = e(n, t);
-            return null != i ? (0, r.jsxs)(s.Fragment, {
-                children: [(0, r.jsx)(y, {}), i]
+            let l = e(n, t);
+            return null != l ? (0, i.jsxs)(s.Fragment, {
+                children: [(0, i.jsx)(A, {}), l]
             }, "hint-custom") : null
         }
-        return (0, r.jsxs)(s.Fragment, {
-            children: [(0, r.jsx)(y, {}), (0, r.jsx)("div", {
-                className: "string" == typeof e ? u.dx : void 0,
+        return (0, i.jsxs)(s.Fragment, {
+            children: [(0, i.jsx)(A, {}), (0, i.jsx)("div", {
+                className: "string" == typeof e ? c.dx : void 0,
                 children: e
             }, "hint-text")]
         }, "hint-text")
@@ -112,32 +143,32 @@ class b extends(i = s.PureComponent) {
                 cancelText: e,
                 confirmText: t,
                 onConfirmClick: n,
-                onCancelClick: i,
-                hint: l
+                onCancelClick: l,
+                hint: a
             },
             state: {
                 expanded: o
             }
         } = this;
-        if (!o) return null != l ? this.renderHint() : null;
+        if (!o) return null != a ? this.renderHint() : null;
         if (null != this.props.renderFooter) {
             let e = this.props.renderFooter(o);
-            return null != e ? (0, r.jsxs)(s.Fragment, {
-                children: [(0, r.jsx)(y, {}), e]
+            return null != e ? (0, i.jsxs)(s.Fragment, {
+                children: [(0, i.jsx)(A, {}), e]
             }, "footer-custom-content") : null
         }
-        return null != n || null != i ? (0, r.jsxs)(s.Fragment, {
-            children: [(0, r.jsx)(y, {}), (0, r.jsxs)(a.ButtonGroup, {
+        return null != n || null != l ? (0, i.jsxs)(s.Fragment, {
+            children: [(0, i.jsx)(A, {}), (0, i.jsxs)(r.ButtonGroup, {
                 fullWidth: !0,
-                children: [null != n ? (0, r.jsx)(a.Button, {
+                children: [null != n ? (0, i.jsx)(r.Button, {
                     variant: "active",
                     size: "sm",
-                    text: null != t ? t : d.intl.string(d.t.BddRzS),
+                    text: t ?? d.intl.string(d.t.BddRzS),
                     onClick: this.handleConfirmClick
-                }) : null, null != i ? (0, r.jsx)(a.Button, {
+                }) : null, null != l ? (0, i.jsx)(r.Button, {
                     variant: "secondary",
                     size: "sm",
-                    text: null != e ? e : d.intl.string(d.t["ETE/oC"]),
+                    text: e ?? d.intl.string(d.t["ETE/oC"]),
                     onClick: this.handleCancelClick
                 }) : null]
             })]
@@ -147,13 +178,13 @@ class b extends(i = s.PureComponent) {
         let {
             icon: e
         } = this.props;
-        return null == e ? null : "string" == typeof e ? (0, r.jsx)(a.euF, {
+        return null == e ? null : "string" == typeof e ? (0, i.jsx)(r.euF, {
             src: e,
-            size: a._3J.SIZE_40,
-            className: u.my,
+            size: r._3J.SIZE_40,
+            className: c.my,
             "aria-hidden": !0
-        }) : (0, r.jsx)("div", {
-            className: u.my,
+        }) : (0, i.jsx)("div", {
+            className: c.my,
             children: e
         })
     }
@@ -163,15 +194,15 @@ class b extends(i = s.PureComponent) {
             title: t,
             maxBodyLines: n
         } = this.props;
-        return (0, r.jsxs)("div", {
-            className: u.Qs,
-            children: [this.renderIcon(), (0, r.jsxs)("div", {
-                className: u.zH,
-                children: [(0, r.jsx)("div", {
-                    className: u.DD,
+        return (0, i.jsxs)("div", {
+            className: c.Qs,
+            children: [this.renderIcon(), (0, i.jsxs)("div", {
+                className: c.zH,
+                children: [(0, i.jsx)("div", {
+                    className: c.DD,
                     children: "function" == typeof t ? t(this.handleDismiss) : t
-                }), null != e ? (0, r.jsx)("div", {
-                    className: o()(u.rf, h.a5),
+                }), null != e ? (0, i.jsx)("div", {
+                    className: a()(c.rf, u.a5),
                     style: {
                         WebkitLineClamp: n,
                         lineClamp: n
@@ -190,53 +221,17 @@ class b extends(i = s.PureComponent) {
             state: {
                 expanded: n
             }
-        } = this, i = null != e ? a.DUT : "div";
-        return (0, r.jsxs)(i, {
+        } = this, s = null != e ? r.DUT : "div";
+        return (0, i.jsxs)(s, {
             onMouseOver: n ? void 0 : this.handleMouseEnter,
             onFocus: n ? void 0 : this.handleMouseEnter,
-            onClick: null != e ? e : void 0,
-            className: o()(u.kL, {
-                [u.gr]: !0,
-                [u.vk]: null != e && !t
+            onClick: e ?? void 0,
+            className: a()(c.kL, {
+                [c.gr]: !0,
+                [c.vk]: null != e && !t
             }),
-            children: [this.renderCloseButton(), this.renderContent(), this.renderFooter(), t ? (0, r.jsx)(g, {}) : null]
+            children: [this.renderCloseButton(), this.renderContent(), this.renderFooter(), t ? (0, i.jsx)(p, {}) : null]
         })
     }
-    constructor(e) {
-        super(e), p(this, "handleDismiss", e => {
-            e.stopPropagation();
-            let {
-                onDismissClick: t
-            } = this.props;
-            null == t || t(e)
-        }), p(this, "handleConfirmClick", e => {
-            e.stopPropagation();
-            let {
-                onConfirmClick: t
-            } = this.props;
-            null == t || t(e)
-        }), p(this, "handleCancelClick", e => {
-            e.stopPropagation();
-            let {
-                onCancelClick: t
-            } = this.props;
-            null == t || t(e)
-        }), p(this, "handleMouseEnter", () => {
-            this.props.disabled || this.setState({
-                expanded: !0
-            })
-        });
-        const {
-            expand: t
-        } = e;
-        this.state = {
-            expanded: t
-        }
-    }
 }
-p(b, "defaultProps", {
-    maxBodyLines: void 0,
-    expand: !1,
-    disabled: !1
-});
-let O = b
+let m = _

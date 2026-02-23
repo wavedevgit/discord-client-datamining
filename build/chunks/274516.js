@@ -1,5 +1,5 @@
-/** chunk id: 274516, original params: e,t,n (module,exports,require) **/
-var r = {
+/** chunk id: 274516, original params: e,t,l (module,exports,require) **/
+var a = {
     "./2017-11-16.mp4": "394734",
     "./channel-following.png": "611418",
     "./discovery.jpg": "59383",
@@ -10,17 +10,17 @@ var r = {
     "./store.jpg": "191686"
 };
 
-function i(e) {
-    return n(a(e))
+function n(e) {
+    return l(r(e))
 }
 
-function a(e) {
-    if (!n.o(r, e)) {
+function r(e) {
+    if (!l.o(a, e)) {
         var t = Error("Cannot find module '" + e + "'");
         throw t.code = "MODULE_NOT_FOUND", t
     }
-    return r[e]
+    return a[e]
 }
-i.keys = function() {
-    return Object.keys(r)
-}, i.resolve = a, e.exports = i, i.id = 274516
+n.keys = function() {
+    return Object.keys(a)
+}, n.resolve = r, e.exports = n, n.id = 274516

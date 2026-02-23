@@ -1,47 +1,47 @@
 /** chunk id: 332191, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    J: () => m
-}), n(896048);
-var r = n(627968),
-    i = n(64700),
-    l = n(311907),
-    s = n(397927),
-    a = n(15285),
+    J: () => A
+});
+var i = n(627968),
+    s = n(64700),
+    a = n(311907),
+    r = n(397927),
+    l = n(15285),
     o = n(942405),
     c = n(403362),
     d = n(975571),
     u = n(652215),
     _ = n(985018),
-    p = n(476555);
+    m = n(476555);
 
-function m() {
+function A() {
     let e = (0, o.XQ)(),
-        [t, n] = i.useState(!1),
-        [m, g] = i.useState(() => (0, o.TC)()),
-        A = (0, l.bG)([a.Ay], () => a.Ay.getSystemServiceStatus("input-service")),
-        f = i.useCallback(async () => {
-            n(!0), m ? await (0, o.z8)("windows-settings") : await (0, o.sL)("windows-settings"), n(!1), g((0, o.TC)())
-        }, [m]);
+        [t, n] = s.useState(!1),
+        [A, g] = s.useState(() => (0, o.TC)()),
+        h = (0, a.bG)([l.Ay], () => l.Ay.getSystemServiceStatus("input-service")),
+        x = s.useCallback(async () => {
+            n(!0), A ? await (0, o.z8)("windows-settings") : await (0, o.sL)("windows-settings"), n(!1), g((0, o.TC)())
+        }, [A]);
     if (!e) return null;
-    let b = "running" === A.state;
-    return (0, r.jsxs)("div", {
-        className: p.q,
-        children: [(0, r.jsxs)("div", {
-            className: p.L,
-            children: [(0, r.jsx)(s.Text, {
+    let p = "running" === h.state;
+    return (0, i.jsxs)("div", {
+        className: m.q,
+        children: [(0, i.jsxs)("div", {
+            className: m.L,
+            children: [(0, i.jsx)(r.Text, {
                 variant: "text-md/medium",
                 color: "text-strong",
                 children: _.intl.string(_.t.roHq80)
-            }), (0, r.jsx)(s.Text, {
+            }), (0, i.jsx)(r.Text, {
                 variant: "text-sm/normal",
                 color: "text-subtle",
                 children: _.intl.format(_.t["8CAL+D"], {
                     helpCenterLink: d.A.getArticleURL(u.MVz.SYSTEM_SERVICE)
                 })
-            }), m ? (0, r.jsx)(s.Text, {
+            }), A ? (0, i.jsx)(r.Text, {
                 variant: "text-sm/normal",
-                color: b ? "text-feedback-positive" : "text-feedback-warning",
-                children: b ? _.intl.string(_.t.KHVMkW) : _.intl.format(_.t["5Rlr0b"], {
+                color: p ? "text-feedback-positive" : "text-feedback-warning",
+                children: p ? _.intl.string(_.t.KHVMkW) : _.intl.format(_.t["5Rlr0b"], {
                     status: function(e) {
                         switch (e.state) {
                             case "unknown":
@@ -65,14 +65,14 @@ function m() {
                             default:
                                 (0, c.xb)(e.state)
                         }
-                    }(A)
+                    }(h)
                 })
             }) : null]
-        }), (0, r.jsx)(s.Button, {
-            variant: m ? "critical-secondary" : "primary",
+        }), (0, i.jsx)(r.Button, {
+            variant: A ? "critical-secondary" : "primary",
             loading: t,
-            onClick: f,
-            text: m ? _.intl.string(_.t.pAwbdL) : _.intl.string(_.t["1iI46O"])
+            onClick: x,
+            text: A ? _.intl.string(_.t.pAwbdL) : _.intl.string(_.t["1iI46O"])
         })]
     })
 }

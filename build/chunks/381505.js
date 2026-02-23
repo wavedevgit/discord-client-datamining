@@ -1,9 +1,9 @@
-/** chunk id: 381505, original params: e,t,r (module,exports,require) **/
-r.d(t, {
-    c: () => i
+/** chunk id: 381505, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    c: () => r
 });
 
-function i(e) {
+function r(e) {
     return {
         js_heap_size_limit: e.jsHeapSizeLimit,
         total_js_heap_size: e.totalJSHeapSize,

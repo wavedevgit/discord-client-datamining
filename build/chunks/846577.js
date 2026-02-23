@@ -1,26 +1,26 @@
-/** chunk id: 846577, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    P: () => d
+/** chunk id: 846577, original params: n,e,t (module,exports,require) **/
+t.d(e, {
+    P: () => u
 });
-var i = n(627968);
-n(64700);
-var r = n(311907),
-    l = n(397927),
-    a = n(966107),
-    s = n(287809),
-    o = n(985018);
+var i = t(627968);
+t(64700);
+var r = t(311907),
+    l = t(397927),
+    a = t(966107),
+    d = t(287809),
+    s = t(985018);
 
-function d(e) {
-    let t = (0, r.bG)([s.default], () => s.default.getCurrentUser());
-    return (null == t ? void 0 : t.isStaff()) !== !0 ? null : (0, i.jsxs)(i.Fragment, {
-        children: [!e.isMessageRequest && (0, i.jsx)(l.Drp, {
+function u(n) {
+    let e = (0, r.bG)([d.default], () => d.default.getCurrentUser());
+    return e?.isStaff() !== !0 ? null : (0, i.jsxs)(i.Fragment, {
+        children: [!n.isMessageRequest && (0, i.jsx)(l.Drp, {
             id: "mark-as-message-request",
-            label: o.intl.string(o.t.L6623r),
-            action: () => (0, a.Sk)(e.id)
+            label: s.intl.string(s.t.L6623r),
+            action: () => (0, a.Sk)(n.id)
         }), (0, i.jsx)(l.Drp, {
             id: "clear-message-request",
-            label: o.intl.string(o.t["85YWlY"]),
-            action: () => (0, a.JH)(e.id)
+            label: s.intl.string(s.t["85YWlY"]),
+            action: () => (0, a.JH)(n.id)
         })]
     })
 }

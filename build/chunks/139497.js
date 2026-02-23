@@ -1,46 +1,45 @@
 /** chunk id: 139497, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => d
+    A: () => c
 });
-var r = n(627968),
-    i = n(64700),
+var i = n(627968),
+    s = n(64700),
     l = n(397927),
-    s = n(713654),
+    r = n(713654),
     a = n(199940),
     o = n(985018),
-    c = n(659233);
-let d = function(e) {
-    var t;
+    d = n(659233);
+let c = function(e) {
     let {
-        channel: n,
-        end: d
-    } = e, u = i.useCallback(() => {
+        channel: t,
+        end: n
+    } = e, c = s.useCallback(() => {
         (0, a.px)({
-            channelId: n.id,
-            title: n.name,
+            channelId: t.id,
+            title: t.name,
             description: "",
             emoji: null,
             icon: null
         })
-    }, [n]), g = null != (t = (0, s.gU)(n)) ? t : l.N$i;
-    return (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsxs)("div", {
-            className: c.TG,
-            children: [(0, r.jsx)(g, {
-                className: c.cC
-            }), (0, r.jsx)(l.Text, {
-                className: c.g7,
+    }, [t]), u = (0, r.gU)(t) ?? l.N$i;
+    return (0, i.jsxs)(i.Fragment, {
+        children: [(0, i.jsxs)("div", {
+            className: d.TG,
+            children: [(0, i.jsx)(u, {
+                className: d.cC
+            }), (0, i.jsx)(l.Text, {
+                className: d.g7,
                 variant: "text-sm/normal",
-                children: n.name
-            }), (0, r.jsx)(l.Button, {
+                children: t.name
+            }), (0, i.jsx)(l.Button, {
                 size: "sm",
                 variant: "primary",
-                onClick: u,
+                onClick: c,
                 text: o.intl.string(o.t.OYkgVk)
             })]
-        }), d && (0, r.jsx)("div", {
-            className: c.p3
+        }), n && (0, i.jsx)("div", {
+            className: d.p3
         })]
     })
 }

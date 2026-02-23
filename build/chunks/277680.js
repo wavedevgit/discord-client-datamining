@@ -1,14 +1,15 @@
 /** chunk id: 277680, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => i
-}), n(747238), n(812715);
-var r = n(985018);
-let l = /[!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~]/g;
+    A: () => l
+});
+var i = n(985018);
+let s = /[!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~]/g;
 
-function i(e) {
-    let t = r.intl.string(r.t.FeUKeA);
+function l(e) {
+    let t = i.intl.string(i.t.FeUKeA);
     return null != e && null != e.sourceName && e.sourceName.length > 0 && (t = e.sourceName), {
-        sanitizedTitle: t.replace(l, ""),
+        sanitizedTitle: t.replace(s, ""),
         title: t
     }
 }

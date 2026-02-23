@@ -1,31 +1,31 @@
 /** chunk id: 501381, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    o: () => d
+    o: () => c
 });
-var r = n(627968),
-    i = n(64700),
+var i = n(627968),
+    s = n(64700),
     l = n(158954),
-    s = n(397927),
+    r = n(397927),
     a = n(415951),
     o = n(985018),
-    c = n(796333);
+    d = n(796333);
 
-function d(e) {
+function c(e) {
     let {
         guildId: t
-    } = e, n = i.useCallback(() => {
+    } = e, n = s.useCallback(() => {
         a.A.openMemberVerificationPreviewModal(t)
     }, [t]);
-    return (0, r.jsxs)(s.DUT, {
+    return (0, i.jsxs)(r.DUT, {
         onClick: n,
-        className: c.j,
-        children: [(0, r.jsx)(l.EYj, {
+        className: d.j,
+        children: [(0, i.jsx)(l.EYj, {
             tag: "span",
             variant: "text-sm/semibold",
             color: "text-brand",
             children: o.intl.string(o.t.SKNnqq)
-        }), (0, r.jsx)(s.tfB, {
+        }), (0, i.jsx)(r.tfB, {
             size: "xs",
             color: "currentColor"
         })]

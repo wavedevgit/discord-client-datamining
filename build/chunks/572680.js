@@ -1,142 +1,114 @@
-/** chunk id: 572680, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => v
-}), n(896048);
-var i = n(627968),
-    l = n(64700),
-    r = n(106778),
-    o = n(92674),
-    a = n(615300),
-    s = n(397927),
-    u = n(565645),
-    c = n(21161),
-    d = n(750506),
-    p = n(147421),
-    h = n(486020),
-    m = n(690521),
-    f = n(851110),
-    g = n(624085);
+/** chunk id: 572680, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    A: () => T
+});
+var n = i(627968),
+    l = i(64700),
+    a = i(106778),
+    s = i(475539),
+    r = i(615300),
+    o = i(397927),
+    u = i(565645),
+    d = i(21161),
+    c = i(750506),
+    h = i(147421),
+    m = i(486020),
+    p = i(690521),
+    g = i(851110),
+    A = i(624085);
+let f = [];
 
-function b(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            i = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), i.forEach(function(t) {
-            var i;
-            i = n[t], t in e ? Object.defineProperty(e, t, {
-                value: i,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = i
-        })
-    }
-    return e
-}
-
-function y(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var i = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, i)
-        }
-        return n
-    })(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-let O = [];
-
-function v(e) {
+function T(e) {
     let {
         messageId: t,
-        emoji: n,
-        startPosition: v,
-        targetPosition: j
-    } = e, [A, T] = l.useState(0), [E, I] = l.useState(0), [S, x] = l.useState(null), {
-        confettiCanvas: N
-    } = l.useContext(c.x), R = (0, r.f9)(N, S), P = l.useMemo(() => [{
-        src: null == n.id ? m.Ay.getURL(n.name) : h.Ay.getEmojiURL({
-            id: n.id,
+        emoji: i,
+        startPosition: T,
+        targetPosition: E
+    } = e, [x, I] = l.useState(0), [N, v] = l.useState(0), [j, R] = l.useState(null), {
+        confettiCanvas: C
+    } = l.useContext(d.x), S = (0, a.f9)(C, j), b = l.useMemo(() => [{
+        src: null == i.id ? p.Ay.getURL(i.name) : m.Ay.getEmojiURL({
+            id: i.id,
             animated: !1,
             size: 22
         }),
         colorize: !1
-    }], [n.name, n.id]), C = j.x - j.width / 2 * .5, w = j.y - j.height / 2 * .5, _ = (0, s.zhh)({
+    }], [i.name, i.id]), y = E.x - E.width / 2 * .5, _ = E.y - E.height / 2 * .5, O = (0, o.zhh)({
         from: {
-            y: v.y
+            y: T.y
         },
         to: {
-            y: w
+            y: _
         },
         config: {
             duration: 450,
-            easing: a.A.Easing.in(a.A.Easing.exp)
+            easing: r.A.Easing.in(r.A.Easing.exp)
         },
         onChange: e => {
             let {
                 y: t
             } = e;
-            I(t)
+            v(t)
         }
-    }), M = (0, s.zhh)({
+    }), M = (0, o.zhh)({
         from: {
-            x: v.x,
+            x: T.x,
             scale: 1,
             opacity: 1
         },
         to: {
-            x: C,
+            x: y,
             scale: .5,
             opacity: .4
         },
         config: {
             duration: 450,
-            easing: a.A.Easing.in(a.A.Easing.ease)
+            easing: r.A.Easing.in(r.A.Easing.ease)
         },
         onRest: () => {
-            (0, p.p)(t, n.name, n.id)
+            (0, h.p)(t, i.name, i.id)
         },
         onChange: e => {
             let {
                 x: t
             } = e;
-            T(t)
+            I(t)
         }
     });
     return l.useEffect(() => {
-        A > 0 && E > 0 && R.createConfetti(y(b({}, f.Mw), {
+        x > 0 && N > 0 && S.createConfetti({
+            ...g.Mw,
             position: {
                 type: "static",
                 value: {
-                    x: A,
-                    y: E
+                    x: x,
+                    y: N
                 }
             }
-        }))
-    }, [R, A, E]), (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(r.K_, {
-            ref: x,
-            sprites: P,
-            colors: O,
-            spriteWidth: f.wn,
-            spriteHeight: f.wn
-        }), (0, i.jsx)(d.Ay, {
-            children: (0, i.jsx)(o.animated.div, {
-                style: b({}, _),
-                className: g.qq,
-                children: (0, i.jsx)(o.animated.div, {
-                    style: y(b({}, M), {
+        })
+    }, [S, x, N]), (0, n.jsxs)(n.Fragment, {
+        children: [(0, n.jsx)(a.K_, {
+            ref: R,
+            sprites: b,
+            colors: f,
+            spriteWidth: g.wn,
+            spriteHeight: g.wn
+        }), (0, n.jsx)(c.Ay, {
+            children: (0, n.jsx)(s.animated.div, {
+                style: {
+                    ...O
+                },
+                className: A.qq,
+                children: (0, n.jsx)(s.animated.div, {
+                    style: {
+                        ...M,
                         opacity: M.opacity
-                    }),
-                    children: (0, i.jsx)(u.A, {
-                        className: g.Zg,
-                        emojiId: n.id,
-                        emojiName: n.name,
-                        animated: n.animated,
+                    },
+                    children: (0, n.jsx)(u.A, {
+                        className: A.Zg,
+                        emojiId: i.id,
+                        emojiName: i.name,
+                        animated: i.animated,
                         size: "jumbo"
                     })
                 })

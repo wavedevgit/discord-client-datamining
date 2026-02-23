@@ -1,12 +1,12 @@
 /** chunk id: 476592, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     Z: () => c
-}), n(228524);
-var l = n(627968),
-    r = n(64700),
-    i = n(492917),
+});
+var i = n(627968),
+    l = n(64700),
+    s = n(492917),
     a = n(397927),
-    s = n(985018),
+    r = n(985018),
     o = n(916874);
 
 function c(e) {
@@ -14,46 +14,43 @@ function c(e) {
         header: t,
         description: n,
         onDismiss: c,
-        buttons: u,
-        dismissible: d = !0
-    } = e, h = r.useCallback(() => {
-        null == c || c()
+        buttons: d,
+        dismissible: u = !0
+    } = e, h = l.useCallback(() => {
+        c?.()
     }, [c]);
-    return (0, l.jsxs)("div", {
+    return (0, i.jsxs)("div", {
         className: o.HZ,
-        children: [(0, l.jsxs)("div", {
+        children: [(0, i.jsxs)("div", {
             className: o.Be,
-            children: [(0, l.jsx)(i.k_4, {
+            children: [(0, i.jsx)(s.k_4, {
                 alt: "",
                 size: 32
-            }), (0, l.jsxs)("div", {
-                children: [(0, l.jsx)(a.Heading, {
+            }), (0, i.jsxs)("div", {
+                children: [(0, i.jsx)(a.Heading, {
                     variant: "heading-md/semibold",
                     color: "text-strong",
                     children: t
-                }), (0, l.jsx)(a.Text, {
+                }), (0, i.jsx)(a.Text, {
                     variant: "text-sm/normal",
                     color: "text-strong",
                     children: n
                 })]
             })]
-        }), (0, l.jsx)("div", {
+        }), (0, i.jsx)("div", {
             className: o.Uo,
-            children: null == u ? void 0 : u.map((e, t) => {
-                var n;
-                return (0, l.jsx)(a.Button, {
-                    text: e.text,
-                    variant: null != (n = e.variant) ? n : "secondary",
-                    onClick: e.onClick,
-                    size: "sm"
-                }, t)
-            })
-        }), d ? (0, l.jsx)(a.DUT, {
+            children: d?.map((e, t) => (0, i.jsx)(a.Button, {
+                text: e.text,
+                variant: e.variant ?? "secondary",
+                onClick: e.onClick,
+                size: "sm"
+            }, t))
+        }), u ? (0, i.jsx)(a.DUT, {
             className: o.b,
             onClick: h,
             role: "button",
-            "aria-label": s.intl.string(s.t.WAI6xu),
-            children: (0, l.jsx)(a.PGe, {
+            "aria-label": r.intl.string(r.t.WAI6xu),
+            children: (0, i.jsx)(a.PGe, {
                 size: "md",
                 color: "currentColor",
                 className: o.b

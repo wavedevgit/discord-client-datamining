@@ -2,7 +2,7 @@
 n.d(t, {
     B: () => a,
     t: () => s
-}), n(896048);
+});
 var l = n(73153),
     i = n(219271);
 
@@ -17,7 +17,7 @@ function s(e) {
     return (0, i.u)().then(() => {
         l.h.dispatch({
             type: "LOAD_INVITE_SUGGESTIONS",
-            omitUserIds: null != t ? t : new Set,
+            omitUserIds: t ?? new Set,
             guild: n,
             channel: s,
             applicationId: a,

@@ -2,14 +2,14 @@
 n.r(t), n.d(t, {
     default: () => s
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(960488),
+var r = n(873263),
     l = n(28025),
     a = n(652215);
 
 function s() {
-    return (0, r.jsx)(i.qh, {
+    return (0, i.jsx)(r.qh, {
         path: a.BVt.APPLICATION_DIRECTORY,
         component: l.x
     })

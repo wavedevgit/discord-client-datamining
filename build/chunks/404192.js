@@ -1,43 +1,43 @@
 /** chunk id: 404192, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => _
 });
 var l = n(627968);
 n(64700);
-var r = n(503698),
-    i = n.n(r),
-    a = n(397927),
+var a = n(503698),
+    i = n.n(a),
+    r = n(397927),
     s = n(975807),
-    o = n(985018),
-    d = n(212335),
+    d = n(985018),
+    o = n(212335),
     c = n(606566);
 let u = e => {
     let {
         data: {
             url: t,
             link_text: n,
-            link_description: r,
-            is_localized: o
+            link_description: a,
+            is_localized: d
         }
     } = e;
-    return o ? (0, l.jsxs)(a.DUT, {
+    return d ? (0, l.jsxs)(r.DUT, {
         role: "link",
-        className: i()(c.$J, d.lD),
+        className: i()(c.$J, o.lD),
         onClick: () => {
             (0, s.A)(t)
         },
         children: [(0, l.jsxs)("div", {
             className: c.xU,
-            children: [(0, l.jsx)(a.Text, {
+            children: [(0, l.jsx)(r.Text, {
                 className: c.__invalid_linkText,
                 variant: "text-md/semibold",
                 children: n
-            }), null != r && "" !== r && (0, l.jsx)(a.Text, {
+            }), null != a && "" !== a && (0, l.jsx)(r.Text, {
                 variant: "text-md/normal",
                 color: "text-muted",
-                children: r
+                children: a
             })]
-        }), (0, l.jsx)(a.I9m, {
+        }), (0, l.jsx)(r.I9m, {
             size: "sm",
             color: "currentColor",
             className: c.wP
@@ -45,7 +45,7 @@ let u = e => {
     }) : null
 };
 
-function m(e) {
+function _(e) {
     let {
         elements: t
     } = e;
@@ -61,21 +61,21 @@ function m(e) {
             } = e;
             return (0, l.jsx)(u, {
                 data: n
-            }, "external-link+".concat(t))
+            }, `external-link+${t}`)
         }),
-        r = t.some(e => {
+        a = t.some(e => {
             let {
                 data: t
             } = e;
             return t.is_header_hidden
         });
     return (0, l.jsxs)("div", {
-        className: i()(c.nV, d.E8),
-        children: [!r && (0, l.jsx)(a.Heading, {
+        className: i()(c.nV, o.E8),
+        children: [!a && (0, l.jsx)(r.Heading, {
             variant: "heading-sm/semibold",
             color: "text-default",
             className: c.wx,
-            children: o.intl.string(o.t.hvVgAZ)
+            children: d.intl.string(d.t.hvVgAZ)
         }), n]
     })
 }

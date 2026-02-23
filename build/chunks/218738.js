@@ -1,118 +1,101 @@
 /** chunk id: 218738, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    default: () => p
+    default: () => b
 });
-var r = n(627968),
-    i = n(64700),
-    o = n(110259),
-    a = n(397927),
-    l = n(930932),
-    _ = n(382935),
-    c = n(835806),
-    s = n(954571),
-    u = n(652215),
-    d = n(670455),
-    b = n(985018),
-    m = n(716829);
+var i = n(627968),
+    a = n(64700),
+    _ = n(110259),
+    o = n(397927),
+    r = n(930932),
+    l = n(382935),
+    s = n(835806),
+    c = n(954571),
+    d = n(652215),
+    m = n(670455),
+    u = n(985018),
+    p = n(716829);
 
-function p(e) {
+function b(e) {
     let {
         isStreamer: t,
-        stream: p,
-        streamApplication: f,
-        onClose: g,
-        transitionState: O,
-        analyticsData: j
+        stream: b,
+        streamApplication: g,
+        onClose: f,
+        transitionState: E,
+        analyticsData: S
     } = e;
-    i.useEffect(() => {
-        s.default.track(u.HAw.OPEN_MODAL, {
+    a.useEffect(() => {
+        c.default.track(d.HAw.OPEN_MODAL, {
             type: "Stream Problem Report",
-            other_user_id: p.ownerId,
-            application_id: null != f ? f.id : null,
-            application_name: null != f ? f.name : null,
-            game_id: null != f ? f.id : null,
+            other_user_id: b.ownerId,
+            application_id: null != g ? g.id : null,
+            application_name: null != g ? g.name : null,
+            game_id: null != g ? g.id : null,
             source: "Stream End"
         })
-    }, [p.ownerId, f]);
-    let y = b.intl.string(b.t["5smP3R"]),
-        E = b.intl.string(b.t["0uxA2V"]),
-        v = b.intl.string(b.t.CqjnLN),
-        S = {
-            impressionName: o.ImpressionNames.STREAM_FEEDBACK_MODAL,
+    }, [b.ownerId, g]);
+    let A = u.intl.string(u.t["5smP3R"]),
+        j = u.intl.string(u.t["0uxA2V"]),
+        R = u.intl.string(u.t.CqjnLN),
+        T = {
+            impressionName: _.ImpressionNames.STREAM_FEEDBACK_MODAL,
             impressionProperties: {
-                media_session_id: j.media_session_id,
-                rtc_connection_id: j.rtc_connection_id,
-                parent_media_session_id: j.parent_media_session_id
+                media_session_id: S.media_session_id,
+                rtc_connection_id: S.rtc_connection_id,
+                parent_media_session_id: S.parent_media_session_id
             }
         },
-        w = {
-            value: t ? d.Eq.STREAMING : d.Eq.STREAM_WATCHING,
-            label: b.intl.string(t ? m.default["0ZBLiZ"] : m.default.TVTIT1),
-            problemsHeader: b.intl.string(b.t["6Y1t5P"]),
-            problemOptions: (0, l.wq)({
+        h = {
+            value: t ? m.Eq.STREAMING : m.Eq.STREAM_WATCHING,
+            label: u.intl.string(t ? p.default["0ZBLiZ"] : p.default.TVTIT1),
+            problemsHeader: u.intl.string(u.t["6Y1t5P"]),
+            problemOptions: (0, r.wq)({
                 isStreamer: t
             }),
             freeformConfig: {
-                value: d.j6.FREEFORM,
-                label: b.intl.string(b.t.emlT91)
+                value: m.j6.FREEFORM,
+                label: u.intl.string(u.t.emlT91)
             }
         };
-    return (0, r.jsx)(_.A, {
+    return (0, i.jsx)(l.A, {
         onSubmit: function(e) {
-            var t, i;
             let {
-                dontShowAgain: o,
-                rating: _,
-                feedback: s,
-                category: u,
-                problem: m
+                dontShowAgain: t,
+                rating: a,
+                feedback: _,
+                category: l,
+                problem: c
             } = e;
-            o && (0, l.n3)({
-                feedbackType: d.MW.STREAM,
+            t && (0, r.n3)({
+                feedbackType: m.MW.STREAM,
                 location: "StreamFeedback"
-            }), null == _ || ((0, c.A)({
-                problem: null != (t = null == m ? void 0 : m.value) ? t : null,
-                category: u,
-                variant: null != (i = null == m ? void 0 : m.variant) ? i : null,
-                stream: p,
-                feedback: s,
-                streamApplication: f,
-                analyticsData: j,
+            }), null == a || ((0, s.A)({
+                problem: c?.value ?? null,
+                category: l,
+                variant: c?.variant ?? null,
+                stream: b,
+                feedback: _,
+                streamApplication: g,
+                analyticsData: S,
                 location: "Stream End",
-                rating: _
-            }), null != m && (0, a.mMO)(async () => {
+                rating: a
+            }), null != c && (0, o.mMO)(async () => {
                 let {
                     default: e
                 } = await n.e("37836").then(n.bind(n, 845671));
-                return t => (0, r.jsx)(e, function(e) {
-                    for (var t = 1; t < arguments.length; t++) {
-                        var n = null != arguments[t] ? arguments[t] : {},
-                            r = Object.keys(n);
-                        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                            return Object.getOwnPropertyDescriptor(n, e).enumerable
-                        }))), r.forEach(function(t) {
-                            var r;
-                            r = n[t], t in e ? Object.defineProperty(e, t, {
-                                value: r,
-                                enumerable: !0,
-                                configurable: !0,
-                                writable: !0
-                            }) : e[t] = r
-                        })
-                    }
-                    return e
-                }({
-                    body: b.intl.string(b.t.mMTVnv)
-                }, t))
+                return t => (0, i.jsx)(e, {
+                    body: u.intl.string(u.t.mMTVnv),
+                    ...t
+                })
             }))
         },
-        onClose: g,
-        ratingHeader: y,
+        onClose: f,
+        ratingHeader: A,
         ratingEmojiKind: "face",
-        ratingBody: t ? E : v,
-        categoriesHeader: b.intl.string(m.default.tq8598),
-        optionsTree: [w],
-        impression: S,
-        transitionState: O
+        ratingBody: t ? j : R,
+        categoriesHeader: u.intl.string(p.default.tq8598),
+        optionsTree: [h],
+        impression: T,
+        transitionState: E
     })
 }

@@ -1,86 +1,71 @@
-/** chunk id: 226151, original params: e,n,t (module,exports,require) **/
-t.d(n, {
-    default: () => g
-}), t(896048);
-var l = t(627968);
-t(64700);
-var a = t(793574),
-    i = t(688810),
-    r = t(937008),
-    s = t(156312),
-    o = t(491057),
-    c = t(546042),
-    u = t(721252),
-    d = t(674223),
-    p = t(818348);
+/** chunk id: 226151, original params: e,n,a (module,exports,require) **/
+a.d(n, {
+    default: () => x
+});
+var t = a(627968);
+a(64700);
+var i = a(793574),
+    s = a(688810),
+    l = a(937008),
+    d = a(156312),
+    r = a(491057),
+    c = a(546042),
+    o = a(721252),
+    u = a(674223),
+    p = a(818348);
 
-function f(e) {
+function h(e) {
     let {
         onClose: n,
-        onComplete: t,
-        transitionState: a,
-        applicationId: r,
-        analyticsLocationObject: o,
-        skuId: u
-    } = e, {} = (0, s.P5)(), {
-        analyticsLocations: d
-    } = (0, i.Ay)();
-    return (0, l.jsx)(c.PaymentModal, {
+        onComplete: a,
+        transitionState: i,
+        applicationId: l,
+        analyticsLocationObject: r,
+        skuId: o
+    } = e, {} = (0, d.P5)(), {
+        analyticsLocations: u
+    } = (0, s.Ay)();
+    return (0, t.jsx)(c.PaymentModal, {
         onClose: n,
-        onComplete: t,
-        applicationId: r,
-        skuId: u,
+        onComplete: a,
+        applicationId: l,
+        skuId: o,
         initialPlanId: null,
-        analyticsObject: o,
-        analyticsLocations: d,
-        transitionState: a
+        analyticsObject: r,
+        analyticsLocations: u,
+        transitionState: i
     })
 }
 
-function g(e) {
+function x(e) {
     let {
         loadId: n,
-        applicationId: t,
+        applicationId: a,
         skuId: c,
-        analyticsLocations: g,
-        isGift: b = !1
+        analyticsLocations: x,
+        isGift: g = !1
     } = e, {
-        analyticsLocations: j
-    } = (0, i.Ay)(g, a.A.PREMIUM_PAYMENT_MODAL);
-    return (0, l.jsx)(i.f5, {
-        value: j,
-        children: (0, l.jsx)(s.PaymentContextProvider, {
+        analyticsLocations: m
+    } = (0, s.Ay)(x, i.A.PREMIUM_PAYMENT_MODAL);
+    return (0, t.jsx)(s.f5, {
+        value: m,
+        children: (0, t.jsx)(d.PaymentContextProvider, {
             loadId: n,
             stepConfigs: function() {
                 let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-                return [u.kJ, ...e ? [d.K_] : [], u.zK, ...u.hh, u.r2, u.zX]
-            }(b),
-            applicationId: t,
+                return [o.kJ, ...e ? [u.K] : [], o.zK, ...o.hh, o.r2, o.zX]
+            }(g),
+            applicationId: a,
             skuIDs: [c],
             activeSubscription: null,
             purchaseType: p.VV.ONE_TIME,
-            isGift: b,
-            children: (0, l.jsx)(o.Qt, {
-                children: (0, l.jsx)(r.dX, {
-                    isGift: b,
-                    children: (0, l.jsx)(f, function(e) {
-                        for (var n = 1; n < arguments.length; n++) {
-                            var t = null != arguments[n] ? arguments[n] : {},
-                                l = Object.keys(t);
-                            "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
-                                return Object.getOwnPropertyDescriptor(t, e).enumerable
-                            }))), l.forEach(function(n) {
-                                var l;
-                                l = t[n], n in e ? Object.defineProperty(e, n, {
-                                    value: l,
-                                    enumerable: !0,
-                                    configurable: !0,
-                                    writable: !0
-                                }) : e[n] = l
-                            })
-                        }
-                        return e
-                    }({}, e))
+            isGift: g,
+            children: (0, t.jsx)(r.Qt, {
+                children: (0, t.jsx)(l.dX, {
+                    isGift: g,
+                    children: (0, t.jsx)(h, {
+                        ...e
+                    })
                 })
             })
         })

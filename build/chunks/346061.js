@@ -1,297 +1,270 @@
 /** chunk id: 346061, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    e: () => m,
-    h: () => b
-}), n(65821);
-var r = n(627968),
-    l = n(64700),
-    i = n(503698),
-    s = n.n(i),
+    e: () => p,
+    h: () => g
+});
+var i = n(627968),
+    s = n(64700),
+    l = n(503698),
+    r = n.n(l),
     a = n(97808),
     o = n(397927),
     c = n(573435),
-    u = n(398094),
-    d = n(778712),
-    p = n(920466);
+    d = n(398094),
+    u = n(778712),
+    h = n(920466);
 
-function h(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = r
-        })
-    }
-    return e
-}
-
-function g(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
-        }
-        return n
-    })(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-
-function f(e) {
+function A(e) {
     let {
         children: t,
         size: n,
-        onClick: i,
+        onClick: l,
         onMouseDown: a,
-        onKeyDown: d,
-        onContextMenu: h,
-        onMouseEnter: g,
-        onMouseLeave: f,
+        onKeyDown: u,
+        onContextMenu: A,
+        onMouseEnter: p,
+        onMouseLeave: g,
         className: m,
-        ariaHidden: b,
-        avatarDecoration: A,
-        specs: O,
-        cornerIconUrl: j,
-        cornerIconOffsetX: x,
-        cornerIconOffsetY: _,
-        ariaLabel: v
-    } = e, E = {
+        ariaHidden: f,
+        avatarDecoration: x,
+        specs: C,
+        cornerIconUrl: E,
+        cornerIconOffsetX: I,
+        cornerIconOffsetY: b,
+        ariaLabel: N
+    } = e, S = {
         width: (0, o.FT9)(n),
         height: (0, o.FT9)(n)
-    }, C = (0, l.useId)(), S = O.size * u.Xq, I = null != A && (0, r.jsxs)("svg", {
-        width: S,
-        height: S,
-        viewBox: "0 0 ".concat(S, " ").concat(S),
-        className: p.DX,
+    }, T = (0, s.useId)(), y = C.size * d.Xq, v = null != x && (0, i.jsxs)("svg", {
+        width: y,
+        height: y,
+        viewBox: `0 0 ${y} ${y}`,
+        className: h.DX,
         "aria-hidden": !0,
-        children: [(0, r.jsxs)("mask", {
-            id: C,
-            children: [(0, r.jsx)("rect", {
+        children: [(0, i.jsxs)("mask", {
+            id: T,
+            children: [(0, i.jsx)("rect", {
                 x: 0,
                 y: 0,
-                width: S,
-                height: S,
+                width: y,
+                height: y,
                 fill: "white"
-            }), null != j && function(e, t) {
+            }), null != E && function(e, t) {
                 let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 0,
-                    l = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 0,
+                    s = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 0,
                     {
-                        height: i,
-                        width: s,
+                        height: l,
+                        width: r,
                         x: a,
                         y: o
-                    } = function(e, t, n, r) {
+                    } = function(e, t, n, i) {
                         let {
-                            height: l,
-                            width: i,
-                            x: s,
+                            height: s,
+                            width: l,
+                            x: r,
                             y: a
-                        } = y(e, n, r), o = (t - e.size) / 2;
+                        } = _(e, n, i), o = (t - e.size) / 2;
                         return {
-                            width: i,
-                            height: l,
-                            x: s + o,
+                            width: l,
+                            height: s,
+                            x: r + o,
                             y: a + o
                         }
-                    }(e, t, n, l);
-                return (0, r.jsx)("rect", {
-                    mask: "url(#".concat(c.hW.SQUIRCLE, ")"),
-                    height: i,
-                    width: s,
+                    }(e, t, n, s);
+                return (0, i.jsx)("rect", {
+                    mask: `url(#${c.hW.SQUIRCLE})`,
+                    height: l,
+                    width: r,
                     x: a,
                     y: o,
                     rx: e.stroke,
                     fill: "black"
                 })
-            }(O, S, x, _)]
-        }), (0, r.jsx)("foreignObject", {
+            }(C, y, I, b)]
+        }), (0, i.jsx)("foreignObject", {
             x: 0,
             y: 0,
-            width: S,
-            height: S,
-            mask: "url(#".concat(C, ")"),
-            children: (0, r.jsx)("img", {
-                className: p.M,
-                src: A,
+            width: y,
+            height: y,
+            mask: `url(#${T})`,
+            children: (0, i.jsx)("img", {
+                className: h.M,
+                src: x,
                 alt: " ",
                 "aria-hidden": !0
             })
         })]
     });
-    return null != i || null != a ? (0, r.jsxs)(o.DUT, {
-        className: s()(p.iE, p.Wn, m),
-        style: E,
-        onClick: i,
-        onContextMenu: h,
+    return null != l || null != a ? (0, i.jsxs)(o.DUT, {
+        className: r()(h.iE, h.Wn, m),
+        style: S,
+        onClick: l,
+        onContextMenu: A,
         onMouseDown: a,
-        onKeyDown: d,
-        onMouseEnter: null != g ? g : void 0,
-        onMouseLeave: null != f ? f : void 0,
-        "aria-label": null != v ? v : void 0,
-        "aria-hidden": b,
-        children: [t, I]
-    }) : (0, r.jsxs)("div", {
-        className: s()(p.iE, m),
-        style: E,
-        onContextMenu: null != h ? h : void 0,
-        onMouseEnter: null != g ? g : void 0,
-        onMouseLeave: null != f ? f : void 0,
+        onKeyDown: u,
+        onMouseEnter: p ?? void 0,
+        onMouseLeave: g ?? void 0,
+        "aria-label": N ?? void 0,
+        "aria-hidden": f,
+        children: [t, v]
+    }) : (0, i.jsxs)("div", {
+        className: r()(h.iE, m),
+        style: S,
+        onContextMenu: A ?? void 0,
+        onMouseEnter: p ?? void 0,
+        onMouseLeave: g ?? void 0,
         role: "img",
-        "aria-label": null != v ? v : void 0,
-        "aria-hidden": b,
-        children: [t, I]
+        "aria-label": N ?? void 0,
+        "aria-hidden": f,
+        children: [t, v]
     })
 }
 
-function m(e) {
+function p(e) {
     let {
         src: t,
         size: n,
-        "aria-hidden": i = !1,
+        "aria-hidden": l = !1,
         "aria-label": o,
-        imageClassName: u,
-        cornerIconUrl: m,
-        cornerIconOffsetX: b = 0,
-        cornerIconOffsetY: O = 0
-    } = e, j = (0, d.Kj)(n), x = j.size, _ = (0, l.useId)();
-    return (0, r.jsx)(f, g(h({}, e), {
+        imageClassName: d,
+        cornerIconUrl: p,
+        cornerIconOffsetX: g = 0,
+        cornerIconOffsetY: f = 0
+    } = e, x = (0, u.Kj)(n), C = x.size, E = (0, s.useId)();
+    return (0, i.jsx)(A, {
+        ...e,
         ariaLabel: o,
-        ariaHidden: i,
-        specs: j,
-        children: (0, r.jsxs)("svg", {
-            width: x + b,
-            height: x + O,
-            viewBox: "0 0 ".concat(x + b, " ").concat(x + O),
-            className: s()(p.dK, p.JW),
+        ariaHidden: l,
+        specs: x,
+        children: (0, i.jsxs)("svg", {
+            width: C + g,
+            height: C + f,
+            viewBox: `0 0 ${C+g} ${C+f}`,
+            className: r()(h.dK, h.JW),
             "aria-hidden": !0,
-            children: [(0, r.jsxs)("mask", {
-                id: _,
-                children: [(0, r.jsx)("circle", {
-                    cx: j.size / 2,
-                    cy: j.size / 2,
-                    r: j.size / 2,
+            children: [(0, i.jsxs)("mask", {
+                id: E,
+                children: [(0, i.jsx)("circle", {
+                    cx: x.size / 2,
+                    cy: x.size / 2,
+                    r: x.size / 2,
                     fill: "white"
-                }), null != m && function(e, t, n) {
+                }), null != p && function(e, t, n) {
                     let {
-                        height: l,
-                        width: i,
-                        x: s,
+                        height: s,
+                        width: l,
+                        x: r,
                         y: a
-                    } = y(e, t, n);
-                    return (0, r.jsx)("rect", {
-                        mask: "url(#".concat(c.hW.SQUIRCLE, ")"),
-                        height: l,
-                        width: i,
-                        x: s,
+                    } = _(e, t, n);
+                    return (0, i.jsx)("rect", {
+                        mask: `url(#${c.hW.SQUIRCLE})`,
+                        height: s,
+                        width: l,
+                        x: r,
                         y: a,
                         fill: "black"
                     })
-                }(j, b, O)]
-            }), (0, r.jsx)("foreignObject", {
+                }(x, g, f)]
+            }), (0, i.jsx)("foreignObject", {
                 x: 0,
                 y: 0,
-                width: j.size,
-                height: j.size,
-                mask: "url(#".concat(_, ")"),
-                children: (0, r.jsx)(a.d9, {
+                width: x.size,
+                height: x.size,
+                mask: `url(#${E})`,
+                children: (0, i.jsx)(a.d9, {
                     src: t,
-                    className: u,
+                    className: d,
                     isSpeaking: !1
                 })
-            }), null != m && (0, r.jsx)("foreignObject", g(h({}, A(j, b, O)), {
-                mask: "url(#".concat(c.hW.SQUIRCLE, ")"),
-                children: (0, r.jsx)("img", {
-                    src: m,
+            }), null != p && (0, i.jsx)("foreignObject", {
+                ...m(x, g, f),
+                mask: `url(#${c.hW.SQUIRCLE})`,
+                children: (0, i.jsx)("img", {
+                    src: p,
                     height: 16,
                     width: 16,
                     alt: " "
                 })
-            }))]
+            })]
         })
-    }))
+    })
 }
 
-function b(e) {
+function g(e) {
     let {
         src: t,
         size: n,
-        "aria-hidden": i = !1,
+        "aria-hidden": l = !1,
         "aria-label": a,
         cornerIconUrl: o,
-        cornerIconOffsetX: u = 0,
-        cornerIconOffsetY: m = 0
-    } = e, b = (0, l.useId)(), O = (0, l.useId)(), j = (0, d.Kj)(n), x = j.size + u, _ = j.size + m, v = y(j, u, m), E = A(j, u, m);
-    return (0, r.jsx)(f, g(h({}, e), {
+        cornerIconOffsetX: d = 0,
+        cornerIconOffsetY: p = 0
+    } = e, g = (0, s.useId)(), f = (0, s.useId)(), x = (0, u.Kj)(n), C = x.size + d, E = x.size + p, I = _(x, d, p), b = m(x, d, p);
+    return (0, i.jsx)(A, {
+        ...e,
         ariaLabel: a,
-        ariaHidden: i,
-        specs: j,
-        children: (0, r.jsxs)("svg", {
-            width: x,
-            height: _,
-            viewBox: "0 0 ".concat(x, " ").concat(_),
-            className: s()(p.dK, p.JW),
+        ariaHidden: l,
+        specs: x,
+        children: (0, i.jsxs)("svg", {
+            width: C,
+            height: E,
+            viewBox: `0 0 ${C} ${E}`,
+            className: r()(h.dK, h.JW),
             "aria-hidden": !0,
-            children: [(0, r.jsxs)("mask", {
-                id: b,
-                children: [(0, r.jsx)("rect", {
+            children: [(0, i.jsxs)("mask", {
+                id: g,
+                children: [(0, i.jsx)("rect", {
                     x: 0,
                     y: 0,
-                    width: j.size,
-                    height: j.size,
+                    width: x.size,
+                    height: x.size,
                     fill: "white",
-                    mask: "url(#".concat(c.hW.SQUIRCLE, ")")
-                }), (0, r.jsx)("circle", {
-                    cx: v.x + v.width / 2,
-                    cy: v.y + v.height / 2,
-                    r: v.width / 2,
+                    mask: `url(#${c.hW.SQUIRCLE})`
+                }), (0, i.jsx)("circle", {
+                    cx: I.x + I.width / 2,
+                    cy: I.y + I.height / 2,
+                    r: I.width / 2,
                     fill: "black"
                 })]
-            }), (0, r.jsx)("mask", {
-                id: O,
-                children: (0, r.jsx)("circle", {
-                    cx: E.x + E.width / 2,
-                    cy: E.y + E.height / 2,
-                    r: E.width / 2,
+            }), (0, i.jsx)("mask", {
+                id: f,
+                children: (0, i.jsx)("circle", {
+                    cx: b.x + b.width / 2,
+                    cy: b.y + b.height / 2,
+                    r: b.width / 2,
                     fill: "white"
                 })
-            }), (0, r.jsx)("foreignObject", {
+            }), (0, i.jsx)("foreignObject", {
                 x: 0,
                 y: 0,
-                width: j.size,
-                height: j.size,
-                mask: "url(#".concat(b, ")"),
-                children: (0, r.jsx)("div", {
-                    className: p.yA,
-                    children: (0, r.jsx)("img", {
-                        src: null != t ? t : void 0,
+                width: x.size,
+                height: x.size,
+                mask: `url(#${g})`,
+                children: (0, i.jsx)("div", {
+                    className: h.yA,
+                    children: (0, i.jsx)("img", {
+                        src: t ?? void 0,
                         alt: " ",
-                        className: p.my,
+                        className: h.my,
                         "aria-hidden": !0
                     })
                 }, t)
-            }), null != o && (0, r.jsx)("foreignObject", g(h({}, E), {
-                mask: "url(#".concat(O, ")"),
-                children: (0, r.jsx)("img", {
+            }), null != o && (0, i.jsx)("foreignObject", {
+                ...b,
+                mask: `url(#${f})`,
+                children: (0, i.jsx)("img", {
                     src: o,
                     height: 16,
                     width: 16,
                     alt: " "
                 })
-            }))]
+            })]
         })
-    }))
+    })
 }
 
-function A(e, t, n) {
+function m(e, t, n) {
     return {
         width: 16,
         height: 16,
@@ -300,14 +273,14 @@ function A(e, t, n) {
     }
 }
 
-function y(e, t, n) {
-    let r = A(e, t, n),
-        l = r.x - 2,
-        i = r.y - 2;
+function _(e, t, n) {
+    let i = m(e, t, n),
+        s = i.x - 2,
+        l = i.y - 2;
     return {
-        width: r.height + 4,
-        height: r.width + 4,
-        x: l,
-        y: i
+        width: i.height + 4,
+        height: i.width + 4,
+        x: s,
+        y: l
     }
 }

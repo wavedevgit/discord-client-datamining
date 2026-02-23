@@ -1,115 +1,84 @@
-/** chunk id: 29681, original params: e,t,n (module,exports,require) **/
-n.d(t, {
+/** chunk id: 29681, original params: t,e,n (module,exports,require) **/
+n.d(e, {
     default: () => g
-}), n(896048);
-var r = n(627968),
+});
+var a = n(627968),
     i = n(64700),
-    a = n(158954),
+    s = n(158954),
     l = n(311907),
-    s = n(397927),
+    r = n(397927),
     c = n(97260),
     o = n(117178),
-    u = n(775121),
-    b = n(532624),
-    d = n(350535),
-    p = n(980504),
-    O = n(652215),
-    y = n(985018),
-    f = n(316173);
+    d = n(775121),
+    u = n(532624),
+    b = n(350535);
+n(980504);
+var h = n(652215),
+    x = n(985018),
+    _ = n(316173);
 
-function g(e) {
-    var t;
+function g(t) {
     let {
-        transitionState: n,
-        onClose: g
-    } = e, h = (0, l.bG)([b.Ay], () => b.Ay.getKeybindForAction(O.hCu.SOUNDBOARD_HOLD)), [j, m] = i.useState(null != (t = null == h ? void 0 : h.shortcut) ? t : []), x = i.useCallback(() => {
-        if (0 === j.length) return null != h && c.A.deleteKeybind(h.id), g();
-        if (null == h) c.A.addKeybind({
-            action: O.hCu.SOUNDBOARD_HOLD,
-            shortcut: j,
+        transitionState: e,
+        onClose: n
+    } = t, g = (0, l.bG)([u.Ay], () => u.Ay.getKeybindForAction(h.hCu.SOUNDBOARD_HOLD)), [m, A] = i.useState(g?.shortcut ?? []), p = i.useCallback(() => {
+        if (0 === m.length) return null != g && c.A.deleteKeybind(g.id), n();
+        null == g ? c.A.addKeybind({
+            action: h.hCu.SOUNDBOARD_HOLD,
+            shortcut: m,
             enabled: !0,
             params: {}
-        });
-        else {
-            var e, t;
-            c.A.setKeybind((e = function(e) {
-                for (var t = 1; t < arguments.length; t++) {
-                    var n = null != arguments[t] ? arguments[t] : {},
-                        r = Object.keys(n);
-                    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                        return Object.getOwnPropertyDescriptor(n, e).enumerable
-                    }))), r.forEach(function(t) {
-                        var r;
-                        r = n[t], t in e ? Object.defineProperty(e, t, {
-                            value: r,
-                            enumerable: !0,
-                            configurable: !0,
-                            writable: !0
-                        }) : e[t] = r
-                    })
-                }
-                return e
-            }({}, h), t = t = {
-                shortcut: j
-            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-                var n = Object.keys(e);
-                if (Object.getOwnPropertySymbols) {
-                    var r = Object.getOwnPropertySymbols(e);
-                    n.push.apply(n, r)
-                }
-                return n
-            })(Object(t)).forEach(function(n) {
-                Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-            }), e))
-        }
-        g()
-    }, [h, g, j]);
-    i.useEffect(() => (u.A.disable(), () => {
-        u.A.enable()
+        }) : c.A.setKeybind({
+            ...g,
+            shortcut: m
+        }), n()
+    }, [g, n, m]);
+    i.useEffect(() => (d.A.disable(), () => {
+        d.A.enable()
     }), []);
-    let v = i.useMemo(() => [{
-        text: y.intl.string(y.t["ETE/oC"]),
-        onClick: g,
+    let C = i.useMemo(() => [{
+        text: x.intl.string(x.t["ETE/oC"]),
+        onClick: n,
         variant: "secondary"
     }, {
-        text: y.intl.string(y.t["R3BPH+"]),
-        onClick: x,
+        text: x.intl.string(x.t["R3BPH+"]),
+        onClick: p,
         variant: "primary"
-    }], [g, x]);
-    return (0, r.jsxs)(a.Modal, {
-        transitionState: n,
-        title: y.intl.string(y.t["0Osu3x"]),
-        actions: v,
-        onClose: g,
-        children: [(0, r.jsx)(s.po8, {
-            className: f.$e,
-            messageType: s.YCn.WARNING,
-            children: y.intl.string(y.t["O2v/eP"])
-        }), (0, r.jsx)(s.Heading, {
-            className: f._5,
+    }], [n, p]);
+    return (0, a.jsxs)(s.Modal, {
+        transitionState: e,
+        title: x.intl.string(x.t["0Osu3x"]),
+        actions: C,
+        onClose: n,
+        children: [(0, a.jsx)(r.po8, {
+            className: _.$e,
+            messageType: r.YCn.WARNING,
+            children: x.intl.string(x.t["O2v/eP"])
+        }), (0, a.jsx)(r.Heading, {
+            className: _._5,
             variant: "eyebrow",
             color: "text-default",
-            children: y.intl.string(y.t.UUpAD6)
-        }), (0, r.jsx)(s.Text, {
-            className: f.XI,
+            children: x.intl.string(x.t.UUpAD6)
+        }), (0, a.jsx)(r.Text, {
+            className: _.XI,
             variant: "text-md/normal",
-            children: y.intl.string(y.t["1xFbP/"])
-        }), (0, r.jsx)(s.Text, {
-            className: f.lf,
+            children: x.intl.string(x.t["1xFbP/"])
+        }), (0, a.jsx)(r.Text, {
+            className: _.lf,
             variant: "text-sm/normal",
-            children: y.intl.string(y.t.laNlTl)
-        }), (0, r.jsx)(s.Heading, {
-            className: f._5,
+            children: x.intl.string(x.t.laNlTl)
+        }), (0, a.jsx)(r.Heading, {
+            className: _._5,
             variant: "eyebrow",
             color: "text-default",
-            children: y.intl.string(y.t["1La4tC"])
-        }), (0, r.jsx)(o.A, {
-            defaultValue: j,
-            onChange: m
-        }), (0, r.jsx)(s.MzZ, {
-            className: f.WA,
-            onClick: () => m((0, d.OH)(p.XF)),
-            children: y.intl.string(y.t["s7+2rQ"])
+            children: x.intl.string(x.t["1La4tC"])
+        }), (0, a.jsx)(o.A, {
+            defaultValue: m,
+            onChange: A
+        }), (0, a.jsx)(r.MzZ, {
+            className: _.WA,
+            onClick: () => A((0, b.OH)("ctrl+`")),
+            children: x.intl.string(x.t["s7+2rQ"])
         })]
     })
 }

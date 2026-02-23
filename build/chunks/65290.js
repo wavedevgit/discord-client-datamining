@@ -1,12 +1,11 @@
-/** chunk id: 65290, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => r
-}), n(938796);
-var l = n(311907),
-    i = n(622543);
+/** chunk id: 65290, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    A: () => s
+}), i(938796);
+var l = i(311907),
+    n = i(622543);
 
-function r(e) {
-    var t;
-    let n = (0, l.bG)([i.A], () => i.A.getUserProfile(e.id));
-    return (null == n ? void 0 : n.bio) === "" && (null == n ? void 0 : n.pronouns) === "" && (null == n ? void 0 : n.banner) === void 0 && (null == n ? void 0 : n.accentColor) === void 0 && (null == n ? void 0 : n.banner) === void 0 && e.flags === e.publicFlags && ((null == n ? void 0 : n.badges) == null || (null == n || null == (t = n.badges) ? void 0 : t.length) === 0)
+function s(e) {
+    let t = (0, l.bG)([n.A], () => n.A.getUserProfile(e.id));
+    return t?.bio === "" && t?.pronouns === "" && t?.banner === void 0 && t?.accentColor === void 0 && t?.banner === void 0 && e.flags === e.publicFlags && (t?.badges == null || t?.badges?.length === 0)
 }

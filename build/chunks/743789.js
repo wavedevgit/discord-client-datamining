@@ -1,4 +1,5 @@
 /** chunk id: 743789, original params: e,t,n (module,exports,require) **/
+"use strict";
 e.exports = {
     wx: "header__7f9c0",
     qr: "footer__7f9c0",

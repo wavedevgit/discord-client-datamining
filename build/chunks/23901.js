@@ -1,11 +1,11 @@
 /** chunk id: 23901, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    F: () => a
+    F: () => l
 });
-var r = n(419954),
-    i = n(780964),
-    l = n(417385),
-    s = n(687837);
-let a = (0, r.zZ)(i.X.LANGUAGE_AND_TIME_CATEGORY, {
-    buildLayout: () => [l.p, s.H]
+var i = n(419954),
+    s = n(780964),
+    a = n(417385),
+    r = n(687837);
+let l = (0, i.zZ)(s.X.LANGUAGE_AND_TIME_CATEGORY, {
+    buildLayout: () => [a.p, r.H]
 })

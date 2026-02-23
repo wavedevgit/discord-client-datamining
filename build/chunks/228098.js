@@ -2,19 +2,18 @@
 n.d(t, {
     A: () => c
 });
-var l = n(311907),
-    r = n(473529),
-    i = n(543465),
+var i = n(311907),
+    l = n(473529),
+    s = n(543465),
     a = n(395504),
-    s = n(652215),
+    r = n(652215),
     o = n(746080);
 
 function c(e) {
-    var t;
-    let n = (0, a.jN)((null == e ? void 0 : e.getGuildId()) != null ? e.guild_id : s.eGj),
-        c = (0, l.bG)([i.Ay], () => null != e && i.Ay.isChannelRecordOrParentOptedIn(e)),
-        u = (0, r.d)(null != (t = null == e ? void 0 : e.guild_id) ? t : s.eGj);
+    let t = (0, a.jN)(e?.getGuildId() != null ? e.guild_id : r.eGj),
+        n = (0, i.bG)([s.Ay], () => null != e && s.Ay.isChannelRecordOrParentOptedIn(e)),
+        c = (0, l.d)(e?.guild_id ?? r.eGj);
     if (null == e) return !1;
-    let d = u && e.hasFlag(o.lx.IS_GUILD_RESOURCE_CHANNEL);
-    return n && !d && !c && !e.isThread()
+    let d = c && e.hasFlag(o.lx.IS_GUILD_RESOURCE_CHANNEL);
+    return t && !d && !n && !e.isThread()
 }

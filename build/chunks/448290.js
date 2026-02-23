@@ -1,48 +1,42 @@
-/** chunk id: 448290, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    A: () => h,
-    C: () => _
-}), n(896048);
-var r = n(627968);
-n(64700);
-var i = n(311907),
-    a = n(397927),
-    o = n(414798),
-    s = n(734057),
-    l = n(576705),
-    c = n(309010),
-    u = n(203982),
-    d = n(427262),
-    f = n(652215),
-    p = n(985018);
+/** chunk id: 448290, original params: e,n,t (module,exports,require) **/
+t.d(n, {
+    A: () => m,
+    C: () => g
+});
+var i = t(627968);
+t(64700);
+var l = t(311907),
+    r = t(397927),
+    a = t(414798),
+    s = t(734057),
+    d = t(576705),
+    o = t(309010),
+    c = t(203982),
+    u = t(427262),
+    h = t(652215),
+    A = t(985018);
 
-function _(e, t) {
+function g(e, n) {
     let {
-        id: n
-    } = e, r = "@".concat(d.Ay.getUserTag(e, {
-        decoration: "never"
-    })), i = "<@".concat(n, ">");
-    u._.dispatchToLastSubscribed(f.jej.INSERT_TEXT, {
-        plainText: r,
-        rawText: i
-    }), null != t && o.A.startTyping(t)
+        id: t
+    } = e, i = `@${u.Ay.getUserTag(e,{decoration:"never"})}`, l = `<@${t}>`;
+    c._.dispatchToLastSubscribed(h.jej.INSERT_TEXT, {
+        plainText: i,
+        rawText: l
+    }), null != n && a.A.startTyping(n)
 }
 
-function h(e, t, n) {
-    let [o, u] = (0, i.yK)([c.A, s.A, l.A], () => {
-        let e = c.A.getChannelId(t),
-            n = s.A.getChannel(e);
-        return [e, null != n && (n.isMultiUserDM() || l.A.can(f.xBc.SEND_MESSAGES, n))]
-    }, [t]), d = n === f.BRT.POPOUT;
-    if (!u || d) return null;
-
-    function h() {
-        _(e, o)
-    }
-    return (0, r.jsx)(a.Drp, {
+function m(e, n, t) {
+    let [a, c] = (0, l.yK)([o.A, s.A, d.A], () => {
+        let e = o.A.getChannelId(n),
+            t = s.A.getChannel(e);
+        return [e, null != t && (t.isMultiUserDM() || d.A.can(h.xBc.SEND_MESSAGES, t))]
+    }, [n]), u = t === h.BRT.POPOUT;
+    return !c || u ? null : (0, i.jsx)(r.Drp, {
         id: "mention",
-        label: p.intl.string(p.t.P8tvKG),
-        action: h
+        label: A.intl.string(A.t.P8tvKG),
+        action: function() {
+            g(e, a)
+        }
     })
 }

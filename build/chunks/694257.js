@@ -1,29 +1,30 @@
 /** chunk id: 694257, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
     A: () => a
 }), n(321073);
-var r = n(627968),
-    l = n(64700),
-    i = n(945777),
-    s = n(58249);
-let a = l.memo(function(e) {
+var i = n(627968),
+    s = n(64700),
+    l = n(945777),
+    r = n(58249);
+let a = s.memo(function(e) {
     let {
         channel: t,
         participants: n,
-        maxTiles: l
+        maxTiles: s
     } = e;
     if (0 === n.length) return null;
     let a = [];
-    for (let e = 0; e < l; e++)
+    for (let e = 0; e < s; e++)
         if (e < n.length) {
-            let l = n[e];
-            a.push((0, r.jsx)(i.A, {
+            let s = n[e];
+            a.push((0, i.jsx)(l.A, {
                 channel: t,
-                participant: l
-            }, l.id))
-        } else a.push((0, r.jsx)(i.S, {}, e));
-    return (0, r.jsx)("div", {
-        className: s.l,
+                participant: s
+            }, s.id))
+        } else a.push((0, i.jsx)(l.S, {}, e));
+    return (0, i.jsx)("div", {
+        className: r.l,
         children: a
     })
 })

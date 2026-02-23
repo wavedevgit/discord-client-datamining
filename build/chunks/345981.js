@@ -1,22 +1,22 @@
 /** chunk id: 345981, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    X: () => l
+    X: () => a
 });
-var r = n(652215),
-    i = n(985018);
+var i = n(652215),
+    l = n(985018);
 
-function l(e) {
+function a(e) {
     let {
         application: t,
         username: n,
-        usernameHook: l = r.tEg
+        usernameHook: a = i.tEg
     } = e;
-    return null != t ? i.intl.format(i.t.dXdgno, {
+    return null != t ? l.intl.format(l.t.dXdgno, {
         username: n,
         applicationName: t.name,
-        usernameHook: l
-    }) : i.intl.format(i.t.O829Uu, {
+        usernameHook: a
+    }) : l.intl.format(l.t.O829Uu, {
         username: n,
-        usernameHook: l
+        usernameHook: a
     })
 }

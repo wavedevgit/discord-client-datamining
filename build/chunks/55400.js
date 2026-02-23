@@ -1,8 +1,8 @@
 /** chunk id: 55400, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    w: () => i
+    w: () => r
 });
-let r = (0, n(600975).C)({
+let i = (0, n(600975).C)({
     kind: "user",
     id: "2023-01_clear_all_message_requests",
     label: "Safety Experience Reject All Message Requests",
@@ -18,8 +18,8 @@ let r = (0, n(600975).C)({
     }]
 });
 
-function i() {
-    return r.useExperiment({
+function r() {
+    return i.useExperiment({
         location: "c10bec_1"
     }, {
         autoTrackExposure: !0

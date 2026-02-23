@@ -1,86 +1,86 @@
 /** chunk id: 438038, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    R: () => f
-}), n(896048);
-var r = n(627968),
-    i = n(64700),
-    l = n(92674);
+    R: () => h
+});
+var i = n(627968),
+    l = n(64700),
+    r = n(475539);
 n(311907), n(859703);
 var a = n(341915),
     s = n(890687),
     o = n(73473),
-    c = n(288531),
-    u = n(285433),
-    d = n(394900),
-    p = n(433745),
+    d = n(288531),
+    c = n(285433),
+    u = n(394900),
+    _ = n(433745),
     m = n(868684);
 
-function f(e) {
+function h(e) {
     let {
         quest: t,
         location: n,
-        initiallyExpanded: f,
-        contentPosition: g,
-        sourceQuestContent: _
-    } = e, h = (0, s.LS)(t), {
-        containerRef: b,
-        size: y,
-        height: A
-    } = (0, d.L)(), {
-        expansionSpring: v,
-        isAnimating: O,
-        isExpanded: x,
-        toggleExpanded: E
-    } = (0, d.s)({
-        initiallyExpanded: f || (0, p.RA)({
+        initiallyExpanded: h,
+        contentPosition: p,
+        sourceQuestContent: g
+    } = e, A = (0, s.LS)(t), {
+        containerRef: x,
+        size: f,
+        height: C
+    } = (0, u.L)(), {
+        expansionSpring: E,
+        isAnimating: I,
+        isExpanded: b,
+        toggleExpanded: T
+    } = (0, u.s)({
+        initiallyExpanded: h || (0, _.RA)({
             location: n,
             quest: t
         })
-    }), [j, C] = i.useState(!1), I = () => C(!0), S = () => C(!1), T = null != A ? A : p._B;
-    return (0, r.jsx)(o.R, {
+    }), [v, S] = l.useState(!1), y = () => S(!0), N = () => S(!1), j = C ?? _._B;
+    return (0, i.jsx)(o.R, {
         questOrQuests: t,
         questContent: n,
-        questContentPosition: g,
+        questContentPosition: p,
         trackGuildAndChannelMetadata: n === a.uF.QUESTS_EMBED,
-        sourceQuestContent: _,
-        children: e => (0, r.jsx)(l.animated.div, {
+        sourceQuestContent: g,
+        children: e => (0, i.jsx)(r.animated.div, {
             style: {
-                maxHeight: n === a.uF.QUESTS_EMBED ? void 0 : v.to({
+                maxHeight: n === a.uF.QUESTS_EMBED ? void 0 : E.to({
                     range: [0, 1],
-                    output: [p.es, T]
+                    output: [_.es, j]
                 })
             },
             className: m.i,
-            onMouseEnter: I,
-            onMouseLeave: S,
-            onFocus: I,
-            onBlur: S,
-            children: (0, r.jsxs)("div", {
+            onMouseEnter: y,
+            onMouseLeave: N,
+            onFocus: y,
+            onBlur: N,
+            children: (0, i.jsxs)("div", {
                 ref: t => {
-                    e.current = t, b.current = t
+                    e.current = t, x.current = t
                 },
-                children: [(0, r.jsx)(u.A, {
-                    isQuestExpired: h,
+                children: [(0, i.jsx)(c.A, {
+                    isQuestExpired: A,
                     location: n,
                     quest: t,
-                    size: y,
-                    expansionSpring: v,
-                    isInteracting: j,
-                    isAnimating: O,
-                    isExpanded: x,
-                    contentPosition: g,
-                    toggleExpanded: E,
-                    sourceQuestContent: _
-                }), (0, r.jsx)(c.A, {
+                    size: f,
+                    expansionSpring: E,
+                    isInteracting: v,
+                    isAnimating: I,
+                    isExpanded: b,
+                    contentPosition: p,
+                    toggleExpanded: T,
+                    sourceQuestContent: g
+                }), (0, i.jsx)(d.A, {
                     quest: t,
-                    isQuestExpired: h,
+                    isQuestExpired: A,
                     location: n,
-                    size: y,
-                    isFocused: j,
-                    isExpanded: x,
-                    isAnimating: O,
-                    contentPosition: g,
-                    sourceQuestContent: _
+                    size: f,
+                    isFocused: v,
+                    isExpanded: b,
+                    isAnimating: I,
+                    contentPosition: p,
+                    sourceQuestContent: g
                 })]
             })
         })

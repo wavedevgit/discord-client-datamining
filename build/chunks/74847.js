@@ -1,14 +1,14 @@
 /** chunk id: 74847, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    t: () => a
+    t: () => r
 });
-var r = n(734057),
-    i = n(576705),
-    l = n(652215);
+var i = n(734057),
+    l = n(576705),
+    a = n(652215);
 
-function a(e) {
-    let t = r.A.getChannel(e),
-        n = null == t ? void 0 : t.isPrivate(),
-        a = null == t ? void 0 : t.isForumChannel();
-    return n || i.A.can(l.xBc.ATTACH_FILES, t) && i.A.can(l.xBc.SEND_MESSAGES, t) && !a
+function r(e) {
+    let t = i.A.getChannel(e),
+        n = t?.isPrivate(),
+        r = t?.isForumChannel();
+    return n || l.A.can(a.xBc.ATTACH_FILES, t) && l.A.can(a.xBc.SEND_MESSAGES, t) && !r
 }

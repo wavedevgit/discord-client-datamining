@@ -1,57 +1,55 @@
 /** chunk id: 632678, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => c
+    A: () => u
 });
-var i = n(627968),
-    s = n(64700),
+var s = n(627968),
+    i = n(64700),
     r = n(621466),
     l = n(311907),
     o = n(397927),
     a = n(628965),
-    d = n(152056),
-    u = n(985018);
+    c = n(152056),
+    d = n(985018);
 
-function c() {
-    let e = d.A.useField("query"),
-        t = s.useCallback((e, t) => {
-            t.stopPropagation(), t.preventDefault(), d.A.setState({
+function u() {
+    let e = c.A.useField("query"),
+        t = i.useCallback((e, t) => {
+            t.stopPropagation(), t.preventDefault(), c.A.setState({
                 isActive: e
             })
         }, []),
-        n = s.useCallback(() => {
-            d.A.setState({
+        n = i.useCallback(() => {
+            c.A.setState({
                 query: "",
                 isActive: !1
             })
         }, []),
-        c = s.useRef(null),
+        u = i.useRef(null),
         h = (0, l.bG)([a.A], () => a.A.getSection());
-    s.useEffect(() => {
+    i.useEffect(() => {
         let e = e => {
-            var t;
-            let n = c.current;
-            (null == (t = (0, r.BF)(e)) ? void 0 : t.activeElement) === document.body && (null == n || n.focus())
+            let t = u.current;
+            (0, r.BF)(e)?.activeElement === document.body && t?.focus()
         };
         return window.addEventListener("keydown", e), () => window.removeEventListener("keydown", e)
     }, [h]);
-    let p = s.useCallback(e => {
-        d.A.setState({
+    let _ = i.useCallback(e => {
+        c.A.setState({
             query: e
         })
     }, []);
-    return (0, i.jsx)("div", {
+    return (0, s.jsx)("div", {
         style: {
             marginBottom: "8px"
         },
-        children: (0, i.jsx)(o.IWV, {
-            ref: c,
+        children: (0, s.jsx)(o.IWV, {
+            ref: u,
             query: e,
             onClear: n,
-            onChange: p,
-            placeholder: u.intl.string(u.t["5h0QOP"]),
+            onChange: _,
+            placeholder: d.intl.string(d.t["5h0QOP"]),
             inputProps: {
-                "aria-label": u.intl.string(u.t.pk9BWW),
+                "aria-label": d.intl.string(d.t.pk9BWW),
                 "aria-expanded": !0,
                 onFocus: e => t(!0, e),
                 onBlur: e => t(!1, e)

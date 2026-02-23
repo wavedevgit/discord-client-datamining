@@ -1,52 +1,25 @@
-/** chunk id: 842524, original params: e,t,r (module,exports,require) **/
-r.d(t, {
-    A: () => _
+/** chunk id: 842524, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    A: () => o
 });
-var n, o = r(311907),
-    i = r(73153);
+var i = n(311907),
+    l = n(73153);
+let a = r();
 
-function c(e, t, r) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: r,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = r, e
-}
-let a = l();
-
-function l() {
+function r() {
     return {
         ignoreTimestamps: {}
     }
 }
-class s extends(n = o.Ay.PersistedStore) {
+class s extends i.Ay.PersistedStore {
+    static displayName = "IgnoreNoticeStore";
+    static persistKey = "IgnoreNoticeStore";
     initialize(e) {
-        var t, r, n;
-        let o = null != (t = null == e ? void 0 : e.ignoreTimestamps) ? t : {};
-        r = function(e) {
-            for (var t = 1; t < arguments.length; t++) {
-                var r = null != arguments[t] ? arguments[t] : {},
-                    n = Object.keys(r);
-                "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-                    return Object.getOwnPropertyDescriptor(r, e).enumerable
-                }))), n.forEach(function(t) {
-                    c(e, t, r[t])
-                })
-            }
-            return e
-        }({}, l()), n = n = {
-            ignoreTimestamps: o
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
-            var r = Object.keys(e);
-            if (Object.getOwnPropertySymbols) {
-                var n = Object.getOwnPropertySymbols(e);
-                r.push.apply(r, n)
-            }
-            return r
-        })(Object(n)).forEach(function(e) {
-            Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(n, e))
-        }), a = r
+        let t = e?.ignoreTimestamps ?? {};
+        a = {
+            ...r(),
+            ignoreTimestamps: t
+        }
     }
     getState() {
         return a
@@ -55,13 +28,12 @@ class s extends(n = o.Ay.PersistedStore) {
         return a.ignoreTimestamps
     }
 }
-c(s, "displayName", "IgnoreNoticeStore"), c(s, "persistKey", "IgnoreNoticeStore");
-let _ = new s(i.h, {
+let o = new s(l.h, {
     RELATIONSHIP_IGNORE_USER_SUCCESS: function(e) {
         let {
             userId: t,
-            timestamp: r
+            timestamp: n
         } = e;
-        a.ignoreTimestamps[t] = r
+        a.ignoreTimestamps[t] = n
     }
 })

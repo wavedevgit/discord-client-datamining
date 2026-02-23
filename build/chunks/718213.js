@@ -1,16 +1,16 @@
-/** chunk id: 718213, original params: e,t,r (module,exports,require) **/
-r.d(t, {
-    A: () => a
-}), r(896048);
-var n = r(64700);
-let a = function(e, t) {
-    let [r, a] = n.useState(e);
-    return n.useEffect(() => {
-        let r = setTimeout(() => {
-            a(e)
+/** chunk id: 718213, original params: e,t,s (module,exports,require) **/
+s.d(t, {
+    A: () => i
+});
+var a = s(64700);
+let i = function(e, t) {
+    let [s, i] = a.useState(e);
+    return a.useEffect(() => {
+        let s = setTimeout(() => {
+            i(e)
         }, t);
         return () => {
-            clearTimeout(r)
+            clearTimeout(s)
         }
-    }, [e, t]), r
+    }, [e, t]), s
 }

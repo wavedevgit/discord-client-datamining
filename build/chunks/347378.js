@@ -1,92 +1,87 @@
-/** chunk id: 347378, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    E: () => h
-}), n(896048);
-var r = n(627968),
-    i = n(64700),
-    a = n(503698),
-    o = n.n(a),
-    s = n(158954),
-    l = n(927578),
-    c = n(580630),
-    u = n(735164),
-    d = n(692440),
-    f = n(916974),
-    p = n(985018),
-    _ = n(600834);
-let h = () => {
+/** chunk id: 347378, original params: t,e,i (module,exports,require) **/
+i.d(e, {
+    E: () => p
+});
+var n = i(627968),
+    r = i(64700),
+    l = i(503698),
+    a = i.n(l),
+    s = i(158954),
+    u = i(927578),
+    o = i(580630),
+    c = i(735164),
+    d = i(692440),
+    m = i(916974),
+    f = i(985018),
+    g = i(600834);
+let p = () => {
     let {
-        transitionState: e,
-        planId: t,
-        renewalInvoice: n,
-        onClose: a,
-        handleCancellation: h,
-        renewalInvoiceDetails: m,
-        fullPrice: g,
-        premiumSubscription: E
-    } = (0, f.X)(), [y, b] = i.useState(!1), [O, v] = i.useState(!1);
-    if (null == n) return null;
-    let A = async () => {
-        b(!0), v(!1);
+        transitionState: t,
+        planId: e,
+        renewalInvoice: i,
+        onClose: l,
+        handleCancellation: p,
+        renewalInvoiceDetails: x,
+        fullPrice: h,
+        premiumSubscription: P
+    } = (0, m.X)(), [y, C] = r.useState(!1), [v, E] = r.useState(!1);
+    if (null == i) return null;
+    let D = async () => {
+        C(!0), E(!1);
         try {
-            await h(), a()
-        } catch (e) {
-            v(!0), b(!1)
+            await p(), l()
+        } catch (t) {
+            E(!0), C(!1)
         }
-    }, I = [{
-        text: p.intl.string(p.t.h9tkAK),
-        onClick: () => a(),
+    }, j = [{
+        text: f.intl.string(f.t.h9tkAK),
+        onClick: () => l(),
         variant: "secondary"
     }, {
-        text: "".concat(p.intl.format(p.t.yxFzdO, {
-            planPremiumType: l.Ay.getTierDisplayNameByPlanId("".concat(t))
-        })),
-        onClick: A,
+        text: `${f.intl.format(f.t.yxFzdO,{planPremiumType:u.Ay.getTierDisplayNameByPlanId(`${e}`)})}`,
+        onClick: D,
         disabled: y,
         variant: "critical-primary",
         loading: y
     }];
-    if (null == m) return null;
+    if (null == x) return null;
     let {
-        intervalType: S,
-        intervalCount: T
-    } = m, C = (0, c.CE)("".concat(g), S, T);
-    return (0, r.jsxs)(s.Modal, {
+        intervalType: _,
+        intervalCount: A
+    } = x, S = (0, o.CE)(`${h}`, _, A);
+    return (0, n.jsxs)(s.Modal, {
         size: "md",
-        transitionState: e,
-        title: "".concat(p.intl.format(p.t.LZunzZ, {
-            planPremiumType: l.Ay.getTierDisplayNameByPlanId("".concat(t))
-        })),
-        subtitle: 0 !== n.total ? p.intl.format(p.t.ycyeBx, {
-            renewalDate: n.subscriptionPeriodStart,
-            rate: (0, c.CE)((0, c.$g)(n.total, n.currency), S, T)
-        }) : p.intl.format(p.t["+y0Tjy"], {
-            renewalDate: n.subscriptionPeriodStart
+        transitionState: t,
+        title: `${f.intl.format(f.t.LZunzZ,{planPremiumType:u.Ay.getTierDisplayNameByPlanId(`${e}`)})}`,
+        subtitle: 0 !== i.total ? f.intl.format(f.t.ycyeBx, {
+            renewalDate: i.subscriptionPeriodStart,
+            rate: (0, o.CE)((0, o.$g)(i.total, i.currency), _, A)
+        }) : f.intl.format(f.t["+y0Tjy"], {
+            renewalDate: i.subscriptionPeriodStart
         }),
-        actions: I,
-        onClose: async () => a(),
-        children: [(0, r.jsxs)(u.Yx, {
+        actions: j,
+        onClose: async () => l(),
+        children: [(0, n.jsxs)(c.Yx, {
             isPremiumRebrand: !0,
-            className: o()({
-                [_.JD]: O
+            className: a()({
+                [g.JD]: v
             }),
-            children: [(0, r.jsx)(u.Xd, {
-                children: p.intl.string(p.t.iqhIp4)
-            }), (0, r.jsx)(u.oR, {
-                label: p.intl.formatToPlainString(p.t.r3jVZq, {
-                    planName: l.Ay.getDisplayName("".concat(t))
+            children: [(0, n.jsx)(c.Xd, {
+                children: f.intl.string(f.t.iqhIp4)
+            }), (0, n.jsx)(c.oR, {
+                label: f.intl.formatToPlainString(f.t.r3jVZq, {
+                    planName: u.Ay.getDisplayName(`${e}`)
                 }),
-                value: "".concat(C),
-                className: _.aD
-            }), (0, r.jsx)(u.pK, {}), (0, r.jsx)(d.m0, {
-                premiumSubscription: E,
-                renewalInvoice: n,
+                value: `${S}`,
+                className: g.aD
+            }), (0, n.jsx)(c.pK, {}), (0, n.jsx)(d.m0, {
+                premiumSubscription: P,
+                renewalInvoice: i,
                 isUpdate: !0
             })]
-        }), O ? (0, r.jsx)(s.wx6, {
+        }), v ? (0, n.jsx)(s.wx6, {
             type: "critical",
-            children: p.intl.string(p.t["5mlOCW"])
+            children: f.intl.string(f.t["5mlOCW"])
         }) : null]
     })
 }

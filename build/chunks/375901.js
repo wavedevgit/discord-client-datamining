@@ -1,10 +1,10 @@
 /** chunk id: 375901, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    D: () => l,
-    j: () => r
+    D: () => i,
+    j: () => l
 });
-let l = "chat-messages";
+let i = "chat-messages";
 
-function r(e, t) {
-    return "".concat(l, "-").concat(e, "-").concat(t)
+function l(e, t) {
+    return `${i}-${e}-${t}`
 }

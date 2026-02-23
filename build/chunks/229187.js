@@ -1,14 +1,14 @@
 /** chunk id: 229187, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => i
+    A: () => a
 });
-var r = n(803306),
+var i = n(803306),
     l = n(622543);
 
-function i(e, t) {
+function a(e, t) {
     if (l.A.isFetchingFriends(e)) return;
     let n = l.A.getMutualFriendsCount(e);
     if (0 === n) return;
-    let i = l.A.getMutualFriends(e);
-    if (null == n || null == i || i.length !== n) return (0, r.q0)(e, t)
+    let a = l.A.getMutualFriends(e);
+    if (null == n || null == a || a.length !== n) return (0, i.q0)(e, t)
 }

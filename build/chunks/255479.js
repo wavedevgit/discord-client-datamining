@@ -1,33 +1,32 @@
-/** chunk id: 255479, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    S: () => o
-}), n(896048);
-var r = n(627968),
-    i = n(64700),
-    a = n(158954);
-let o = {
+/** chunk id: 255479, original params: e,l,a (module,exports,require) **/
+a.d(l, {
+    S: () => i
+});
+var t = a(627968),
+    o = a(64700),
+    n = a(158954);
+let i = {
     title: "TabBar",
     stories: [{
         id: "tabbar",
         name: "TabBar",
         component: function(e) {
             let {
-                look: t,
-                type: n,
-                tabCount: o
-            } = e, [s, l] = i.useState("tab1"), c = Array.from({
-                length: o
-            }, (e, t) => ({
-                id: "tab".concat(t + 1),
-                name: "Tab ".concat(t + 1)
+                look: l,
+                type: a,
+                tabCount: i
+            } = e, [s, r] = o.useState("tab1"), d = Array.from({
+                length: i
+            }, (e, l) => ({
+                id: `tab${l+1}`,
+                name: `Tab ${l+1}`
             }));
-            return (0, r.jsx)(a.VQ0, {
-                type: n,
-                look: t,
+            return (0, t.jsx)(n.VQ0, {
+                type: a,
+                look: l,
                 selectedItem: s,
-                onItemSelect: l,
-                children: c.map(e => (0, r.jsx)(a.VQ0.Item, {
+                onItemSelect: r,
+                children: d.map(e => (0, t.jsx)(n.VQ0.Item, {
                     id: e.id,
                     children: e.name
                 }, e.id))

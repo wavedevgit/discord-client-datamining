@@ -1,7 +1,7 @@
 /** chunk id: 924037, original params: t,e,i (module,exports,require) **/
 i.d(e, {
     default: () => a
-}), i(457529);
+});
 var n = i(627968);
 i(64700);
 var r = i(158954),
@@ -14,7 +14,7 @@ let a = t => {
         onClose: d
     } = t;
     return (0, n.jsx)(r.Modal, {
-        title: "Debugging entry: ".concat(e.id),
+        title: `Debugging entry: ${e.id}`,
         transitionState: i,
         actions: [],
         onClose: d,

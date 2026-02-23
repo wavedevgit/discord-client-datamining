@@ -1,94 +1,66 @@
-/** chunk id: 137766, original params: e,A,t (module,exports,require) **/
-t.d(A, {
-    A: () => v
+/** chunk id: 137766, original params: A,e,t (module,exports,require) **/
+t.d(e, {
+    A: () => p
 });
-var r = t(627968),
-    n = t(64700),
-    l = t(284009),
-    a = t.n(l),
-    i = t(317097),
+var n = t(627968),
+    a = t(64700),
+    r = t(284009),
+    i = t.n(r),
+    l = t(317097),
     s = t(397927),
     o = t(915089),
     d = t(411342),
     u = t(652215),
     c = t(985018),
     g = t(228580);
+let q = (0, o.Ld)();
 
-function f(e) {
-    for (var A = 1; A < arguments.length; A++) {
-        var t = null != arguments[A] ? arguments[A] : {},
-            r = Object.keys(t);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(t, e).enumerable
-        }))), r.forEach(function(A) {
-            var r;
-            r = t[A], A in e ? Object.defineProperty(e, A, {
-                value: r,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[A] = r
-        })
-    }
-    return e
-}
-
-function p(e, A) {
-    return A = null != A ? A : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(A)) : (function(e, A) {
-        var t = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            t.push.apply(t, r)
-        }
-        return t
-    })(Object(A)).forEach(function(t) {
-        Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(A, t))
-    }), e
-}
-let m = (0, o.Ld)();
-
-function v(e) {
+function p(A) {
     let {
-        newRoleParams: A,
+        newRoleParams: e,
         setNewRoleParams: t
-    } = e, l = n.useRef(null), {
+    } = A, r = a.useRef(null), {
         name: o,
-        color: v
-    } = A, h = e => t(A => (a()(null != A, "newRoleParams should be defined"), p(f({}, A), {
-        color: e
-    })));
-    return (0, r.jsxs)("div", {
+        color: p
+    } = e, f = A => t(e => (i()(null != e, "newRoleParams should be defined"), {
+        ...e,
+        color: A
+    }));
+    return (0, n.jsxs)("div", {
         className: g.CJ,
-        children: [(0, r.jsx)(s.ksK, {
+        children: [(0, n.jsx)(s.ksK, {
             autoFocus: !0,
             value: o,
-            onChange: e => t(A => (a()(null != A, "newRoleParams should be defined"), p(f({}, A), {
-                name: e
-            }))),
-            id: m,
+            onChange: A => t(e => (i()(null != e, "newRoleParams should be defined"), {
+                ...e,
+                name: A
+            })),
+            id: q,
             placeholder: c.intl.string(c.t.oNauug),
             maxLength: u.fHV
-        }), (0, r.jsxs)("div", {
+        }), (0, n.jsxs)("div", {
             className: g.P4,
-            children: [(0, r.jsx)(s.AC4, {
+            children: [(0, n.jsx)(s.AC4, {
                 children: c.intl.format(c.t["Vlq/pH"], {
-                    color: (0, i.Hl)(v)
+                    color: (0, l.Hl)(p)
                 })
-            }), (0, r.jsx)(s.YNO, {
-                targetElementRef: l,
-                renderPopout: e => (0, r.jsx)(s.VNw, p(f({}, e), {
-                    value: v,
-                    onChange: h
-                })),
-                children: e => (0, r.jsx)(s.K0, p(f({}, e), {
+            }), (0, n.jsx)(s.YNO, {
+                targetElementRef: r,
+                renderPopout: A => (0, n.jsx)(s.VNw, {
+                    ...A,
+                    value: p,
+                    onChange: f
+                }),
+                children: A => (0, n.jsx)(s.K0, {
+                    ...A,
                     variant: "secondary",
                     icon: s.dDg,
-                    buttonRef: l,
+                    buttonRef: r,
                     "aria-label": c.intl.string(c.t.QLgdlS)
-                }))
+                })
             })]
-        }), (0, r.jsx)(d.A, {
-            role: A
+        }), (0, n.jsx)(d.A, {
+            role: e
         })]
     })
 }

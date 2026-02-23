@@ -1,54 +1,54 @@
 /** chunk id: 836953, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
-}), n(896048), n(321073);
-var r = n(627968),
-    i = n(64700),
+    A: () => _
+}), n(321073);
+var i = n(627968),
+    r = n(64700),
     l = n(311907),
     a = n(587895),
     s = n(64983),
     o = n(997509),
-    c = n(143582),
-    u = n(915043),
-    d = n(652215),
-    p = n(985018),
+    d = n(143582),
+    c = n(915043),
+    u = n(652215),
+    A = n(985018),
     h = n(298525);
 
-function f(e) {
+function _(e) {
     let t, {
             guild: n
         } = e,
-        f = (0, u.$s)(n),
-        g = () => (0, c.Hc)(n.id),
-        m = i.useMemo(() => new Set(f.map(e => e.applicationId)), [f]),
-        A = (0, l.yK)([a.A], () => {
+        _ = (0, c.$s)(n),
+        m = () => (0, d.Hc)(n.id),
+        p = r.useMemo(() => new Set(_.map(e => e.applicationId)), [_]),
+        g = (0, l.yK)([a.A], () => {
             let e = [];
-            for (let t of m) {
+            for (let t of p) {
                 let n = a.A.getApplication(t);
                 null != n && e.push(n)
             }
             return e
-        }, [m]);
-    return 0 === A.length ? null : (t = 1 === A.length ? p.intl.formatToPlainString(p.t["Egq+G/"], {
-        a: A[0].name
-    }) : 2 === A.length ? p.intl.formatToPlainString(p.t.LxU9R3, {
-        a: A[0].name,
-        b: A[1].name
-    }) : 3 === A.length ? p.intl.formatToPlainString(p.t.crKXMC, {
-        a: A[0].name,
-        b: A[1].name,
-        c: A[2].name
-    }) : p.intl.string(p.t.MvfowF), (0, r.jsx)(s.A, {
+        }, [p]);
+    return 0 === g.length ? null : (t = 1 === g.length ? A.intl.formatToPlainString(A.t["Egq+G/"], {
+        a: g[0].name
+    }) : 2 === g.length ? A.intl.formatToPlainString(A.t.LxU9R3, {
+        a: g[0].name,
+        b: g[1].name
+    }) : 3 === g.length ? A.intl.formatToPlainString(A.t.crKXMC, {
+        a: g[0].name,
+        b: g[1].name,
+        c: g[2].name
+    }) : A.intl.string(A.t.MvfowF), (0, i.jsx)(s.A, {
         guild: n,
-        onDismissed: g,
+        onDismissed: m,
         message: t,
-        type: d.n5X.APPLICATION_SUBSCRIPTION_EXPIRATION,
+        type: u.n5X.APPLICATION_SUBSCRIPTION_EXPIRATION,
         image: h,
         onClick: () => {
-            g(), o.A.open(n.id, d.BEX.INTEGRATIONS)
+            m(), o.A.open(n.id, u.BEX.INTEGRATIONS)
         },
         imageMarginTop: 6,
         imageMarginX: 46,
-        cta: p.intl.string(p.t.Rr3MAe)
+        cta: A.intl.string(A.t.Rr3MAe)
     }))
 }

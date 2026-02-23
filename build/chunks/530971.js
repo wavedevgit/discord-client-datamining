@@ -2,38 +2,38 @@
 "use strict";
 n.d(t, {
     A: () => E
-}), n(896048);
-var r = n(627968),
+});
+var s = n(627968),
     l = n(64700),
-    s = n(311907),
+    r = n(311907),
     a = n(775602),
     i = n(287809),
     o = n(728458),
     c = n(590180),
-    u = n(4227),
-    d = n(856686),
+    d = n(4227),
+    u = n(856686),
     g = n(429876),
-    f = n(599062),
+    _ = n(599062),
     m = n(998694),
-    p = n(231209),
-    _ = n(781724),
-    b = n(758836);
-let h = [b.G2.HOME, b.G2.ORBS];
+    h = n(231209),
+    p = n(781724),
+    f = n(758836);
+let x = [f.G2.HOME, f.G2.ORBS];
 
 function E(e) {
     let {
         tab: t,
-        sortedCategories: n,
+        categories: n,
         transitionToTab: i,
         transitionState: o,
         updateAnalyticsState: c,
-        refreshCategories: u
-    } = e, m = v();
-    C(m);
-    let E = (0, s.bG)([a.A], () => a.A.useReducedMotion),
-        [A, x] = l.useState(void 0),
-        [S, O] = l.useState(!0),
-        y = l.useMemo(() => n.filter(e => !b.MS.some(t => {
+        refreshCategories: d
+    } = e, m = C();
+    A(m);
+    let E = (0, r.bG)([a.A], () => a.A.useReducedMotion),
+        [b, S] = l.useState(void 0),
+        [v, L] = l.useState(!0),
+        I = l.useMemo(() => n.filter(e => !f.MS.some(t => {
             let {
                 categorySkuId: n
             } = t;
@@ -43,51 +43,50 @@ function E(e) {
             let {
                 sourceButton: t,
                 categorySkuId: n,
-                shouldAnimate: r,
+                shouldAnimate: s,
                 isInternalShopDeeplink: l,
-                isOrbsExclusive: s
+                isOrbsExclusive: r
             } = e;
             c(t, n);
-            let a = r && !E,
-                o = s ? b.G2.ORBS : b.G2.CATALOG;
-            x(n), O(!l), i(o, a)
+            let a = s && !E,
+                o = r ? f.G2.ORBS : f.G2.CATALOG;
+            S(n), L(!l), i(o, a)
         }, [E, i, c]),
         {
-            searchError: T
-        } = (0, d.S)();
-    return null != T ? (0, r.jsx)(_.A, {}) : null != m ? (0, r.jsx)(f.h, {
-        onRetry: u,
+            searchError: k
+        } = (0, u.S)();
+    return null != k ? (0, s.jsx)(p.A, {}) : null != m ? (0, s.jsx)(_.h, {
+        onRetry: d,
         errorMessage: m,
-        errorOrigin: f.A.SHOP_PAGE
-    }) : h.includes(t) ? (0, r.jsx)(p.A, {
+        errorOrigin: _.A.SHOP_PAGE
+    }) : x.includes(t) ? (0, s.jsx)(h.A, {
         handleTransition: j,
         tab: t,
         transitionState: o
-    }) : (0, r.jsx)(g.A, {
+    }) : (0, s.jsx)(g.A, {
         tab: t,
-        sortedCategories: y,
-        initialCategoryId: A,
-        showFilterInitially: S,
+        categories: I,
+        initialCategoryId: b,
+        showFilterInitially: v,
         onUnmount: () => {
-            x(void 0), O(!0)
+            S(void 0), L(!0)
         }
     })
 }
-let v = () => (0, s.bG)([c.A, u.A], () => null != c.A.error ? "shop load fetch categories error: ".concat(c.A.error.message) : null != u.A.claimError ? "shop load claim error: ".concat(u.A.claimError.message) : null != u.A.fetchError ? "shop load fetch purchase error: ".concat(u.A.fetchError.message) : void 0),
-    C = e => {
-        let t = (0, s.bG)([i.default], () => i.default.getCurrentUser()),
+let C = () => (0, r.bG)([c.A, d.A], () => null != c.A.error ? `shop load fetch categories error: ${c.A.error.message}` : null != d.A.claimError ? `shop load claim error: ${d.A.claimError.message}` : null != d.A.fetchError ? `shop load fetch purchase error: ${d.A.fetchError.message}` : void 0),
+    A = e => {
+        let t = (0, r.bG)([i.default], () => i.default.getCurrentUser()),
             {
                 noCache: n,
-                includeUnpublished: r
+                includeUnpublished: s
             } = (0, m.A)();
         l.useEffect(() => {
-            var l, s;
             null != e && o.A.captureMessage(e, {
                 tags: {
-                    isStaff: null != (l = null == t || null == (s = t.isStaff()) ? void 0 : s.toString()) ? l : "unknown",
+                    isStaff: t?.isStaff()?.toString() ?? "unknown",
                     disableCache: n.toString(),
-                    includeUnpublished: r.toString()
+                    includeUnpublished: s.toString()
                 }
             })
-        }, [e, t, n, r])
+        }, [e, t, n, s])
     }

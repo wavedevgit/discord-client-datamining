@@ -24,9 +24,9 @@ function u(a) {
         body: j,
         learnMoreLink: C,
         valueProps: g
-    } = a, v = (0, s.bG)([c.A], () => {
+    } = a, b = (0, s.bG)([c.A], () => {
         let a = c.A.getAccount(null, e);
-        return (null == a ? void 0 : a.twoWayLink) === !1
+        return a?.twoWayLink === !1
     });
     return (0, n.jsxs)(o.A, {
         children: [(0, n.jsxs)(i.rQ0, {
@@ -40,7 +40,7 @@ function u(a) {
             }), (0, n.jsx)(i.Heading, {
                 className: m.DD,
                 variant: "heading-xl/extrabold",
-                children: v && null != p ? p : h
+                children: b && null != p ? p : h
             }), (0, n.jsx)(i.s_y, {
                 className: m.b,
                 onClick: u

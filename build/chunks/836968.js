@@ -1,27 +1,27 @@
-/** chunk id: 836968, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    N: () => a
-}), n(896048), n(638769);
-var r = n(64700),
-    l = n(562465),
-    i = n(652215);
-let o = new Map;
+/** chunk id: 836968, original params: e,t,l (module,exports,require) **/
+l.d(t, {
+    N: () => r
+});
+var n = l(64700),
+    i = l(562465),
+    a = l(652215);
+let s = new Map;
 
-function a(e) {
-    let [t, n] = r.useState(o.has(e) ? Array.from(o.get(e)) : []), [a, s] = r.useState(!1), c = r.useMemo(() => t.map(e => e.code), [t]), u = r.useMemo(() => t.reduce((e, t) => (e[t.code] = t, e), {}), [t]), d = r.useCallback(async () => {
-        s(!0);
-        let t = (await l.Bo.get({
-            url: i.Rsh.GUILD_INSTANT_INVITES(e),
+function r(e) {
+    let [t, l] = n.useState(s.has(e) ? Array.from(s.get(e)) : []), [r, o] = n.useState(!1), C = n.useMemo(() => t.map(e => e.code), [t]), d = n.useMemo(() => t.reduce((e, t) => (e[t.code] = t, e), {}), [t]), c = n.useCallback(async () => {
+        o(!0);
+        let t = (await i.Bo.get({
+            url: a.Rsh.GUILD_INSTANT_INVITES(e),
             rejectWithError: !0
         })).body.sort((e, t) => new Date(t.created_at).getTime() - new Date(e.created_at).getTime());
-        n(t), o.set(e, new Set(t)), s(!1)
+        l(t), s.set(e, new Set(t)), o(!1)
     }, [e]);
-    return r.useEffect(() => {
-        d()
-    }, [e, d]), {
+    return n.useEffect(() => {
+        c()
+    }, [e, c]), {
         invitesRaw: t,
-        inviteCodes: c,
-        invitesByCode: u,
-        loading: a
+        inviteCodes: C,
+        invitesByCode: d,
+        loading: r
     }
 }

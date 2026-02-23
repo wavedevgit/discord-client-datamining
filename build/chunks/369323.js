@@ -2,15 +2,15 @@
 n.d(e, {
     default: () => b
 });
-var l = n(627968),
-    i = n(64700),
-    o = n(397927),
-    a = n(975807),
+var i = n(627968),
+    o = n(64700),
+    a = n(397927),
+    l = n(975807),
     s = n(95035),
     r = n(400492),
     d = n(985018),
     p = n(654923);
-let u = [{
+let c = [{
     preBold: "That's pretty...",
     bold: "fly!"
 }, {
@@ -23,13 +23,13 @@ let u = [{
     postBold: "lievable!"
 }];
 
-function c(t) {
+function u(t) {
     let {
         punConfig: e
     } = t;
-    return (0, l.jsxs)(l.Fragment, {
-        children: [e.preBold, (0, l.jsx)("b", {
-            children: (0, l.jsx)("i", {
+    return (0, i.jsxs)(i.Fragment, {
+        children: [e.preBold, (0, i.jsx)("b", {
+            children: (0, i.jsx)("i", {
                 children: e.bold
             })
         }), e.postBold]
@@ -42,17 +42,17 @@ function b(t) {
         onClose: n,
         asanaTask: b
     } = t;
-    i.useEffect(() => {
+    o.useEffect(() => {
         (0, r.Ak)("success", .1)
     }, []);
-    let m = i.useRef(u[Math.floor(Math.random() * u.length)]).current;
-    return (0, l.jsx)(o.EOs, {
+    let m = o.useRef(c[Math.floor(Math.random() * c.length)]).current;
+    return (0, i.jsx)(a.EOs, {
         "data-migration-pending": !0,
         className: p.Nk,
         transitionState: e,
         "aria-label": d.intl.string(d.t.mCCdwi),
         parentComponent: "BugReporterSubmitModal",
-        children: (0, l.jsxs)(o.$mQ, {
+        children: (0, i.jsxs)(a.$mQ, {
             "data-migration-pending": !0,
             style: {
                 overflow: "hidden",
@@ -60,19 +60,19 @@ function b(t) {
             },
             className: p.jE,
             paddingFix: !1,
-            children: [(0, l.jsx)(o.s_y, {
+            children: [(0, i.jsx)(a.s_y, {
                 "data-migration-pending": !0,
                 onClick: () => {
-                    null == n || n()
+                    n?.()
                 },
                 className: p.b
-            }), (0, l.jsxs)(o.Text, {
+            }), (0, i.jsxs)(a.Text, {
                 className: p.KP,
                 variant: "text-sm/normal",
-                children: ["Thanks for submitting a ", (0, l.jsx)(s.A, {
-                    onClick: () => (0, a.A)(b.permalink_url),
+                children: ["Thanks for submitting a ", (0, i.jsx)(s.A, {
+                    onClick: () => (0, l.A)(b.permalink_url),
                     children: "bug"
-                }), "!", (0, l.jsx)("br", {}), (0, l.jsx)(c, {
+                }), "!", (0, i.jsx)("br", {}), (0, i.jsx)(u, {
                     punConfig: m
                 })]
             })]

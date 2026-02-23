@@ -12,27 +12,27 @@ let r = e => {
         modalState: n,
         shouldHideTemporaryInviteToggle: r,
         onGenerateNewLink: o,
-        onToggleTemporary: u,
-        onSelectMaxAge: d,
+        onToggleTemporary: d,
+        onSelectMaxAge: u,
         onSelectMaxUses: c,
         isGuestInviteCreationToggleEnabled: g,
         onSetInviteFlags: h,
-        onClose: p,
-        transitionState: v,
-        isRoleAssignmentEnabled: A,
-        assignableRoles: I,
-        onToggleRole: m
+        onClose: A,
+        transitionState: p,
+        isRoleAssignmentEnabled: I,
+        assignableRoles: m,
+        onToggleRole: x
     } = e, {
-        maxAgeOptions: S,
-        maxAge: x,
+        maxAgeOptions: v,
+        maxAge: S,
         maxUses: y,
-        temporary: f,
-        flags: E,
-        roleIds: _
+        temporary: E,
+        flags: f,
+        roleIds: T
     } = n;
     return (0, l.jsx)(i.Modal, {
-        transitionState: v,
-        onClose: p,
+        transitionState: p,
+        onClose: A,
         title: a.intl.string(a.t.Atdlyu),
         actions: [{
             variant: "secondary",
@@ -47,20 +47,20 @@ let r = e => {
         }],
         children: (0, l.jsx)(s.A, {
             shouldHideTemporaryInviteToggle: r,
-            maxAgeOptions: S,
-            maxAge: x,
+            maxAgeOptions: v,
+            maxAge: S,
             maxUses: y,
-            temporary: f,
-            onToggleTemporary: u,
-            onSelectMaxAge: d,
+            temporary: E,
+            onToggleTemporary: d,
+            onSelectMaxAge: u,
             onSelectMaxUses: c,
             isGuestInviteCreationToggleEnabled: g,
             onSetInviteFlags: h,
-            inviteFlags: E,
-            isRoleAssignmentEnabled: A,
-            assignableRoles: I,
-            selectedRoleIds: _,
-            onToggleRole: m
+            inviteFlags: f,
+            isRoleAssignmentEnabled: I,
+            assignableRoles: m,
+            selectedRoleIds: T,
+            onToggleRole: x
         })
     })
 }

@@ -1,25 +1,25 @@
-/** chunk id: 77735, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    _: () => o,
-    d: () => l
+/** chunk id: 77735, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    _: () => l,
+    d: () => a
 });
-var i = n(509381);
-let r = [i.my.VOICE_ISOLATION, i.my.STUDIO, i.my.CUSTOM];
-
-function o(e) {
-    let {
-        location: t
-    } = e;
-    return {
-        enabledInputProfiles: r
-    }
-}
+var s = i(509381);
+let n = [s.m.VOICE_ISOLATION, s.m.STUDIO, s.m.CUSTOM];
 
 function l(e) {
     let {
         location: t
     } = e;
     return {
-        enabledInputProfiles: r
+        enabledInputProfiles: n
+    }
+}
+
+function a(e) {
+    let {
+        location: t
+    } = e;
+    return {
+        enabledInputProfiles: n
     }
 }

@@ -1,186 +1,171 @@
-/** chunk id: 247165, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => A
-}), n(747238), n(938796);
-var r = n(627968),
-    l = n(64700),
-    i = n(158954),
-    a = n(311907),
-    s = n(397927),
-    o = n(9578),
-    c = n(549711),
-    d = n(123791),
-    u = n(55926),
-    p = n(311321),
-    h = n(163437),
-    m = n(67480),
-    g = n(412461),
-    _ = n(656106),
-    b = n(435220),
-    f = n(652215),
-    x = n(985018),
-    v = n(70345);
+/** chunk id: 247165, original params: e,t,a (module,exports,require) **/
+a.d(t, {
+    A: () => b
+}), a(938796);
+var n = a(627968),
+    i = a(64700),
+    s = a(158954),
+    l = a(311907),
+    r = a(397927),
+    o = a(9578),
+    c = a(549711),
+    d = a(123791),
+    u = a(55926),
+    h = a(311321),
+    m = a(163437),
+    p = a(67480),
+    _ = a(412461),
+    g = a(656106),
+    x = a(435220),
+    A = a(652215),
+    C = a(985018),
+    v = a(70345);
 
-function j(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = r
-        })
-    }
-    return e
-}
-
-function A(e) {
+function b(e) {
     let {
         application: t
     } = e;
-    return (0, r.jsxs)("div", {
+    return (0, n.jsxs)("div", {
         className: v.ZM,
-        children: [(0, r.jsx)(y, {
+        children: [(0, n.jsx)(f, {
             application: t
-        }), (0, r.jsx)(O, {
+        }), (0, n.jsx)(I, {
             application: t
         })]
     })
 }
 
-function y(e) {
+function f(e) {
     let {
         application: t
     } = e, {
-        subscriptions: n,
-        otps: l
+        subscriptions: a,
+        otps: i
     } = (0, d.C)(t.id);
-    return (0, r.jsxs)("div", {
+    return (0, n.jsxs)("div", {
         className: v.ZM,
-        children: [n.length > 0 && (0, r.jsxs)("div", {
+        children: [a.length > 0 && (0, n.jsxs)("div", {
             className: v.dD,
-            children: [(0, r.jsx)(p.A, {
-                subscriptions: n,
+            children: [(0, n.jsx)(h.A, {
+                subscriptions: a,
                 color: "text-strong"
-            }), (0, r.jsx)("div", {
+            }), (0, n.jsx)("div", {
                 className: v.ZE,
-                children: n.map(e => {
-                    let n = (0, h.bg)(e.skuFlags) ? "user" : "guild";
-                    return (0, r.jsx)(u.B4, {
+                children: a.map(e => {
+                    let a = (0, m.bg)(e.skuFlags) ? "user" : "guild";
+                    return (0, n.jsx)(u.B4, {
                         appId: t.id,
                         listing: e,
-                        subscriptionType: n,
-                        onDetails: () => (0, _.Fr)(f.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(t.id, e.skuId))
+                        subscriptionType: a,
+                        onDetails: () => (0, g.Fr)(A.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(t.id, e.skuId))
                     }, e.id)
                 })
             })]
-        }), l.length > 0 && (0, r.jsxs)("div", {
+        }), i.length > 0 && (0, n.jsxs)("div", {
             className: v.dD,
-            children: [(0, r.jsx)(i.DZT, {
+            children: [(0, n.jsx)(s.DZT, {
                 variant: "heading-lg/semibold",
                 color: "text-strong",
-                children: x.intl.string(x.t.yUGTs8)
-            }), (0, r.jsx)("div", {
+                children: C.intl.string(C.t.yUGTs8)
+            }), (0, n.jsx)("div", {
                 className: v.ZE,
-                children: l.map(e => (0, r.jsx)(u.B8, {
+                children: i.map(e => (0, n.jsx)(u.B8, {
                     skuId: e.skuId,
                     appId: t.id,
-                    onDetails: () => (0, _.Fr)(f.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(t.id, e.skuId))
+                    onDetails: () => (0, g.Fr)(A.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(t.id, e.skuId))
                 }, e.id))
             })]
-        }), (0, r.jsx)(c.A, {
-            path: f.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(":applicationId", ":skuId"),
+        }), (0, n.jsx)(c.A, {
+            path: A.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(":applicationId", ":skuId"),
             exact: !0,
-            render: e => (0, r.jsx)(C, j({}, e))
+            render: e => (0, n.jsx)(j, {
+                ...e
+            })
         })]
     })
 }
 
-function C(e) {
+function j(e) {
     let {
         match: {
             params: {
                 applicationId: t,
-                skuId: i
+                skuId: s
             }
         }
-    } = e, o = (0, a.bG)([m.A], () => m.A.get(i), [i]), c = (0, a.bG)([m.A], () => null != i ? m.A.getParentSKU(i) : void 0, [i]), d = l.useId(), u = l.useCallback(() => (0, _.Fr)(f.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(t, b.GlobalDiscoveryAppsSections.STORE)), [t]);
-    return l.useLayoutEffect(() => {
+    } = e, o = (0, l.bG)([p.A], () => p.A.get(s), [s]), c = (0, l.bG)([p.A], () => null != s ? p.A.getParentSKU(s) : void 0, [s]), d = i.useId(), u = i.useCallback(() => (0, g.Fr)(A.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(t, x.GlobalDiscoveryAppsSections.STORE)), [t]);
+    return i.useLayoutEffect(() => {
         var e;
-        switch (null == o ? void 0 : o.type) {
-            case f.Puh.CONSUMABLE:
-            case f.Puh.DURABLE:
-                return void(0, s.mMO)(async () => {
+        switch (o?.type) {
+            case A.Puh.CONSUMABLE:
+            case A.Puh.DURABLE:
+                return void(0, r.mMO)(async () => {
                     let {
                         ItemDetailsModal: e
-                    } = await Promise.resolve().then(n.bind(n, 963179));
-                    return n => (0, r.jsx)(e, j({
+                    } = await Promise.resolve().then(a.bind(a, 963179));
+                    return a => (0, n.jsx)(e, {
                         appId: t,
-                        skuId: i
-                    }, n))
+                        skuId: s,
+                        ...a
+                    })
                 }, {
                     modalKey: d,
                     onCloseCallback: () => {
-                        S() || (0, _.Fr)(f.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(t, b.GlobalDiscoveryAppsSections.STORE))
+                        E() || (0, g.Fr)(A.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(t, x.GlobalDiscoveryAppsSections.STORE))
                     }
                 });
-            case f.Puh.SUBSCRIPTION:
-                if ((null == c ? void 0 : c.flags) == null) return;
-                return e = (0, h.bg)(c.flags) ? "user" : "guild", void(0, s.mMO)(async () => {
+            case A.Puh.SUBSCRIPTION:
+                if (c?.flags == null) return;
+                return e = (0, m.bg)(c.flags) ? "user" : "guild", void(0, r.mMO)(async () => {
                     let {
-                        SubscriptionDetailsModal: l
-                    } = await Promise.resolve().then(n.bind(n, 168393));
-                    return n => (0, r.jsx)(l, j({
+                        SubscriptionDetailsModal: i
+                    } = await Promise.resolve().then(a.bind(a, 168393));
+                    return a => (0, n.jsx)(i, {
                         appId: t,
                         subscriptionType: e,
-                        skuId: i,
-                        guildId: void 0
-                    }, n))
+                        skuId: s,
+                        guildId: void 0,
+                        ...a
+                    })
                 }, {
                     modalKey: d,
                     onCloseCallback: () => {
-                        S() || (0, _.Fr)(f.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(t, b.GlobalDiscoveryAppsSections.STORE))
+                        E() || (0, g.Fr)(A.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(t, x.GlobalDiscoveryAppsSections.STORE))
                     }
                 })
         }
-    }, [t, d, u, null == c ? void 0 : c.flags, null == o ? void 0 : o.flags, null == o ? void 0 : o.type, i]), l.useLayoutEffect(() => () => {
-        (0, s.OoC)(d)
+    }, [t, d, u, c?.flags, o?.flags, o?.type, s]), i.useLayoutEffect(() => () => {
+        (0, r.OoC)(d)
     }, [d]), null
 }
 
-function O(e) {
+function I(e) {
     let {
         application: t
-    } = e, n = (0, g.DB)(), l = t.terms_of_service_url, a = t.privacy_policy_url;
-    if (null == l && null == a) return null;
-    let s = (e, t) => (0, r.jsx)(o.A, {
+    } = e, a = (0, _.DB)(), i = t.terms_of_service_url, l = t.privacy_policy_url;
+    if (null == i && null == l) return null;
+    let r = (e, t) => (0, n.jsx)(o.A, {
         href: t,
-        trusted: !n,
+        trusted: !a,
         children: e
     });
-    return (0, r.jsx)("div", {
+    return (0, n.jsx)("div", {
         className: v.V6,
-        children: (0, r.jsx)(i.EYj, {
+        children: (0, n.jsx)(s.EYj, {
             color: "text-strong",
             variant: "text-sm/normal",
-            children: null != l && null != a ? x.intl.format(x.t.nylPOT, {
-                termsHook: e => s(e, l),
-                privacyHook: e => s(e, a)
-            }) : null != l ? x.intl.format(x.t["0cPyDz"], {
-                termsHook: e => s(e, l)
-            }) : null != a ? x.intl.format(x.t["loYGC/"], {
-                privacyHook: e => s(e, a)
+            children: null != i && null != l ? C.intl.format(C.t.nylPOT, {
+                termsHook: e => r(e, i),
+                privacyHook: e => r(e, l)
+            }) : null != i ? C.intl.format(C.t["0cPyDz"], {
+                termsHook: e => r(e, i)
+            }) : null != l ? C.intl.format(C.t["loYGC/"], {
+                privacyHook: e => r(e, l)
             }) : null
         })
     })
 }
 
-function S() {
+function E() {
     return window.location.pathname.startsWith("/login")
 }

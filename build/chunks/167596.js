@@ -8,54 +8,50 @@ var l = n(627968),
     a = n(665260),
     r = n(397927),
     o = n(735547),
-    u = n(652215),
-    d = n(985018),
+    d = n(652215),
+    u = n(985018),
     c = n(901462);
 let g = o.Ay.getMaxUsesOptions;
 
 function h(e) {
-    var t;
     let {
-        shouldHideTemporaryInviteToggle: n,
-        maxAgeOptions: h,
-        maxAge: p,
-        maxUses: v,
-        temporary: A,
+        shouldHideTemporaryInviteToggle: t,
+        maxAgeOptions: n,
+        maxAge: h,
+        maxUses: A,
+        temporary: p,
         onToggleTemporary: I,
         onSelectMaxAge: m,
-        onSelectMaxUses: S,
-        isGuestInviteCreationToggleEnabled: x,
-        inviteFlags: y,
-        onSetInviteFlags: f,
+        onSelectMaxUses: x,
+        isGuestInviteCreationToggleEnabled: v,
+        inviteFlags: S,
+        onSetInviteFlags: y,
         isRoleAssignmentEnabled: E,
-        assignableRoles: _,
-        selectedRoleIds: C,
-        onToggleRole: b
-    } = e, T = o.Ay.getMaxAgeOptionByValue(p), N = g.find(e => e.value === v), M = i.useMemo(() => _.map(e => ({
+        assignableRoles: f,
+        selectedRoleIds: T,
+        onToggleRole: C
+    } = e, _ = o.Ay.getMaxAgeOptionByValue(h), b = g.find(e => e.value === A), N = i.useMemo(() => f.map(e => ({
         id: e.id,
         value: e.id,
         label: e.name,
-        leading: () => {
-            var t;
-            return (0, l.jsx)(r.WYI, {
-                color: null != (t = e.colorString) ? t : u.TpD,
-                colors: e.colorStrings,
-                background: !1,
-                tooltip: !1
-            })
-        }
-    })), [_]), O = i.useCallback(e => {
-        let t = Array.from(C),
-            n = null != e ? e : [],
+        leading: () => (0, l.jsx)(r.WYI, {
+            color: e.colorString ?? d.TpD,
+            colors: e.colorStrings,
+            background: !1,
+            tooltip: !1
+        })
+    })), [f]), M = i.useCallback(e => {
+        let t = Array.from(T),
+            n = e ?? [],
             l = n.find(e => !t.includes(e)),
             i = t.find(e => !n.includes(e));
-        null != l ? b(l) : null != i && b(i)
-    }, [C, b]);
+        null != l ? C(l) : null != i && C(i)
+    }, [T, C]);
     return (0, l.jsxs)("div", {
         className: c.z1,
         children: [(0, l.jsx)(r.ZiE, {
-            label: d.intl.string(d.t["60qw2x"]),
-            options: h,
+            label: u.intl.string(u.t["60qw2x"]),
+            options: n,
             formatOption: e => {
                 let {
                     value: t,
@@ -67,11 +63,11 @@ function h(e) {
                     label: n
                 }
             },
-            value: null != (t = null == T ? void 0 : T.value) ? t : h[0].value,
+            value: _?.value ?? n[0].value,
             onSelectionChange: m,
             selectionMode: "single"
         }), (0, l.jsx)(r.ZiE, {
-            label: d.intl.string(d.t.jDqWHW),
+            label: u.intl.string(u.t.jDqWHW),
             options: g,
             formatOption: e => {
                 let {
@@ -84,27 +80,29 @@ function h(e) {
                     label: n
                 }
             },
-            value: null == N ? void 0 : N.value,
-            onSelectionChange: S,
+            value: b?.value,
+            onSelectionChange: x,
             selectionMode: "single"
-        }), E && _.length > 0 && (0, l.jsx)(r.ZiE, {
-            label: d.intl.string(d.t.rPYJxL),
-            placeholder: d.intl.string(d.t["/djIh7"]),
-            options: M,
-            value: Array.from(C),
-            onSelectionChange: O,
+        }), E && f.length > 0 && (0, l.jsx)(r.ZiE, {
+            label: u.intl.string(u.t.rPYJxL),
+            placeholder: u.intl.string(u.t["/djIh7"]),
+            options: N,
+            value: Array.from(T),
+            onSelectionChange: M,
             selectionMode: "multiple",
-            closeOnSelect: !1
-        }), !n && (0, l.jsx)(r.dOG, {
-            checked: A,
+            closeOnSelect: !1,
+            disabled: p
+        }), !t && (0, l.jsx)(r.dOG, {
+            checked: p,
             onChange: e => I(e),
-            description: d.intl.string(d.t.UN5IRX),
-            label: d.intl.string(d.t["wE+9dr"])
-        }), x && (0, l.jsx)(r.dOG, {
-            checked: (0, a.Lt)(y, s.Q.IS_GUEST_INVITE),
-            onChange: e => f((0, a.lA)(y, s.Q.IS_GUEST_INVITE, e)),
-            description: d.intl.string(d.t["/FeTK6"]),
-            label: d.intl.string(d.t.siexRS)
+            description: u.intl.string(u.t.UN5IRX),
+            label: u.intl.string(u.t["wE+9dr"]),
+            disabled: T.size > 0
+        }), v && (0, l.jsx)(r.dOG, {
+            checked: (0, a.Lt)(S, s.Q.IS_GUEST_INVITE),
+            onChange: e => y((0, a.lA)(S, s.Q.IS_GUEST_INVITE, e)),
+            description: u.intl.string(u.t["/FeTK6"]),
+            label: u.intl.string(u.t.siexRS)
         })]
     })
 }

@@ -1,78 +1,74 @@
 /** chunk id: 670492, original params: e,t,r (module,exports,require) **/
 "use strict";
 r.d(t, {
-    A: () => y
+    A: () => _
 });
-var n, o, s = r(735438),
-    i = r.n(s),
-    a = r(247775),
-    c = r(311907),
-    l = r(73153);
-let d = !1,
-    u = [],
-    p = "",
+var s = r(735438),
+    n = r.n(s),
+    o = r(247775),
+    i = r(311907),
+    a = r(73153);
+let c = !1,
+    l = [],
+    d = "",
     h = !1,
-    f = {
+    p = {
         viewNonce: "",
         regenerateNonce: ""
     };
-class _ extends(o = c.Ay.Store) {
+class u extends i.Ay.Store {
+    static displayName = "MFAStore";
     getVerificationKey() {
-        return p
-    }
-    getBackupCodes() {
-        return u
-    }
-    get togglingSMS() {
         return d
     }
+    getBackupCodes() {
+        return l
+    }
+    get togglingSMS() {
+        return c
+    }
     getNonces() {
-        return f
+        return p
     }
     get hasSeenBackupPrompt() {
         return h
     }
-}(n = "displayName") in _ ? Object.defineProperty(_, n, {
-    value: "MFAStore",
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
-}) : _[n] = "MFAStore";
-let y = new _(l.h, {
+}
+let _ = new u(a.h, {
     MFA_ENABLE_SUCCESS: function(e) {
         let {
             token: t,
             codes: r
         } = e;
-        void 0 !== t && a.setToken(t), u = r
+        void 0 !== t && o.setToken(t), l = r
     },
     MFA_DISABLE_SUCCESS: function(e) {
         let {
             token: t
         } = e;
-        a.setToken(t)
+        o.setToken(t)
     },
     MFA_SMS_TOGGLE: function() {
-        d = !0
+        c = !0
     },
     MFA_SMS_TOGGLE_COMPLETE: function() {
-        d = !1
+        c = !1
     },
     MFA_CLEAR_BACKUP_CODES: function() {
-        u = []
+        l = []
     },
     MFA_VIEW_BACKUP_CODES: function(e) {
         let {
             codes: t,
             key: r
         } = e;
-        u = i().sortBy(t, "code"), p = r
+        l = n().sortBy(t, "code"), d = r
     },
     MFA_SEND_VERIFICATION_KEY: function(e) {
         let {
             nonces: t
         } = e;
-        f = t
+        p = t
     },
     MFA_SEEN_BACKUP_CODE_PROMPT: function() {
         h = !0

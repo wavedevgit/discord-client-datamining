@@ -1,12 +1,12 @@
 /** chunk id: 829691, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    v: () => i
+    v: () => s
 });
-var r = n(73153);
+var i = n(73153);
 
-function i(e) {
-    r.h.dispatch({
+function s(e) {
+    i.h.dispatch({
         type: "AUTH_INVITE_UPDATE",
         invite: e
     })

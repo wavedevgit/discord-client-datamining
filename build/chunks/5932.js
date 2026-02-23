@@ -1,10 +1,11 @@
 /** chunk id: 5932, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    M: () => l
+    M: () => s
 });
-var r = n(985018);
+var i = n(985018);
 
-function l(e) {
+function s(e) {
     if (null == e) return null;
     switch (e.type) {
         case "embedded-activities":
@@ -14,7 +15,7 @@ function l(e) {
             };
         case "go-live":
             return {
-                subtitle: r.intl.string(r.t.Pa817q)
+                subtitle: i.intl.string(i.t.Pa817q)
             }
     }
     return null

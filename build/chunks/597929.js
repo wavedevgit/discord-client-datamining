@@ -1,15 +1,14 @@
 /** chunk id: 597929, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    V: () => l,
-    _: () => i
+    V: () => a,
+    _: () => l
 });
-var r = n(155718);
+var i = n(155718);
 
-function i(e) {
+function l(e) {
     return null != e.interactionMetadata
 }
 
-function l(e) {
-    var t, n;
-    return (null == (t = e.interactionMetadata) ? void 0 : t.type) === r.G4.APPLICATION_COMMAND && (null == (n = e.interactionMetadata) ? void 0 : n.command_type) === r.kc.PRIMARY_ENTRY_POINT
+function a(e) {
+    return e.interactionMetadata?.type === i.G4.APPLICATION_COMMAND && e.interactionMetadata?.command_type === i.kc.PRIMARY_ENTRY_POINT
 }

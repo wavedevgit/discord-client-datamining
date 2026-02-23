@@ -1,93 +1,66 @@
 /** chunk id: 573956, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    G: () => _
+    G: () => b
 });
-var r = n(627968),
-    l = n(64700),
-    i = n(417597),
-    s = n(554146),
+var i = n(627968),
+    s = n(64700),
+    l = n(417597),
+    r = n(554146),
     a = n(827734),
     o = n(397927),
     c = n(442433),
-    u = n(826673),
-    d = n(591552),
-    p = n(202776),
-    h = n(454058),
-    g = n(976860),
-    f = n(222823),
+    d = n(826673),
+    u = n(591552),
+    h = n(202776),
+    A = n(454058),
+    p = n(976860),
+    g = n(222823),
     m = n(661191),
-    b = n(32603),
-    A = n(652793),
-    y = n(652215),
-    O = n(746080),
-    j = n(790782),
-    x = n(985018);
+    _ = n(32603),
+    f = n(652793),
+    x = n(652215),
+    C = n(746080),
+    E = n(790782),
+    I = n(985018);
 
-function _(e) {
+function b(e) {
     let {
         guild: t,
-        selected: _
-    } = e, v = (0, p.A)(t), E = (0, u.JZ)(s.M.CHANNEL_BROWSER_NEW_BADGE_NUX), C = (0, i.yK)([h.A], () => Array.from(h.A.getNewChannelIds(t.id)).filter(e => h.A.shouldIndicateNewChannel(t.id, e))), S = (0, i.bG)([f.Ay], () => f.Ay.hasUnread(t.id, j.P.GUILD_ONBOARDING_QUESTION)), I = C.length > b.rR, N = (0, i.bG)([d.A, f.Ay], () => {
-        let e = d.A.lastFetchedAt(t.id),
-            n = f.Ay.lastMessageId(t.id, j.P.GUILD_ONBOARDING_QUESTION);
+        selected: b
+    } = e, N = (0, h.A)(t), S = (0, d.JZ)(r.M.CHANNEL_BROWSER_NEW_BADGE_NUX), T = (0, l.yK)([A.A], () => Array.from(A.A.getNewChannelIds(t.id)).filter(e => A.A.shouldIndicateNewChannel(t.id, e))), y = (0, l.bG)([g.Ay], () => g.Ay.hasUnread(t.id, E.P.GUILD_ONBOARDING_QUESTION)), v = T.length > _.rR, j = (0, l.bG)([u.A, g.Ay], () => {
+        let e = u.A.lastFetchedAt(t.id),
+            n = g.Ay.lastMessageId(t.id, E.P.GUILD_ONBOARDING_QUESTION);
         if (null == n) return !1;
-        let r = m.default.extractTimestamp(n);
-        return null != e && e > r
-    }), T = l.useCallback(() => {
-        (0, g.pX)(y.BVt.CHANNEL(t.id, v ? O.VV.CUSTOMIZE_COMMUNITY : O.VV.CHANNEL_BROWSER))
-    }, [t.id, v]), P = l.useCallback(e => {
+        let i = m.default.extractTimestamp(n);
+        return null != e && e > i
+    }), R = s.useCallback(() => {
+        (0, p.pX)(x.BVt.CHANNEL(t.id, N ? C.VV.CUSTOMIZE_COMMUNITY : C.VV.CHANNEL_BROWSER))
+    }, [t.id, N]), O = s.useCallback(e => {
         (0, c.L3)(e, async () => {
             let {
                 default: e
             } = await n.e("30412").then(n.bind(n, 807431));
-            return n => {
-                var l, i;
-                return (0, r.jsx)(e, (l = function(e) {
-                    for (var t = 1; t < arguments.length; t++) {
-                        var n = null != arguments[t] ? arguments[t] : {},
-                            r = Object.keys(n);
-                        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                            return Object.getOwnPropertyDescriptor(n, e).enumerable
-                        }))), r.forEach(function(t) {
-                            var r;
-                            r = n[t], t in e ? Object.defineProperty(e, t, {
-                                value: r,
-                                enumerable: !0,
-                                configurable: !0,
-                                writable: !0
-                            }) : e[t] = r
-                        })
-                    }
-                    return e
-                }({}, n), i = i = {
-                    guild: t
-                }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
-                    var n = Object.keys(e);
-                    if (Object.getOwnPropertySymbols) {
-                        var r = Object.getOwnPropertySymbols(e);
-                        n.push.apply(n, r)
-                    }
-                    return n
-                })(Object(i)).forEach(function(e) {
-                    Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(i, e))
-                }), l))
-            }
+            return n => (0, i.jsx)(e, {
+                ...n,
+                guild: t
+            })
         })
-    }, [t]), w = null;
-    return E && !S && !I || _ || N || (w = (0, r.jsx)(o.LpS, {
+    }, [t]), L = null;
+    return S && !y && !v || b || j || (L = (0, i.jsx)(o.LpS, {
         color: a.A.colors.BADGE_BACKGROUND_BRAND.css,
-        text: x.intl.string(x.t.y2b7CA)
-    })), (0, r.jsx)(A.G, {
-        id: "channels-".concat(t.id),
-        renderIcon: e => (0, r.jsx)(o.kiI, {
+        text: I.intl.string(I.t.y2b7CA)
+    })), (0, i.jsx)(f.G, {
+        id: `channels-${t.id}`,
+        renderIcon: e => (0, i.jsx)(o.kiI, {
             size: "md",
             color: "currentColor",
             className: e
         }),
-        text: v ? x.intl.string(x.t.h9mGOP) : x.intl.string(x.t.et6wav),
-        selected: _,
-        onClick: T,
-        onContextMenu: P,
-        trailing: w
+        text: N ? I.intl.string(I.t.h9mGOP) : I.intl.string(I.t.et6wav),
+        selected: b,
+        onClick: R,
+        onContextMenu: O,
+        trailing: L
     })
 }

@@ -1,175 +1,153 @@
-/** chunk id: 558179, original params: e,t,n (module,exports,require) **/
+/** chunk id: 558179, original params: e,t,r (module,exports,require) **/
 "use strict";
-n.d(t, {
-    A: () => N
-}), n(591487), n(727858), n(747238);
-var r, i, a = n(627968),
-    o = n(64700),
-    s = n(503698),
-    l = n.n(s),
-    c = n(791332),
-    u = n.n(c),
-    d = n(268218),
-    f = n(481859),
-    p = n(694403),
-    _ = n(542664),
-    h = n(49005),
-    m = n(529223),
-    g = n(829681);
+r.d(t, {
+    A: () => j
+});
+var n = r(627968),
+    a = r(64700),
+    s = r(503698),
+    l = r.n(s),
+    i = r(791332),
+    c = r.n(i),
+    o = r(268218),
+    u = r(481859),
+    d = r(694403),
+    _ = r(542664),
+    h = r(49005),
+    m = r(529223),
+    p = r(829681);
+let f = RegExp(`https?://${window.GLOBAL_ENV.CDN_HOST??""}`);
 
-function E(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
+function g(e) {
+    return "string" == typeof e.content ? e.content : v(e.content)
 }
-
-function y(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            E(e, t, n[t])
-        })
-    }
-    return e
-}
-
-function b(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-        var r = Object.getOwnPropertySymbols(e);
-        t && (r = r.filter(function(t) {
-            return Object.getOwnPropertyDescriptor(e, t).enumerable
-        })), n.push.apply(n, r)
-    }
-    return n
-}
-
-function O(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-let v = new RegExp("https?://".concat(null != (r = window.GLOBAL_ENV.CDN_HOST) ? r : ""));
-
-function A(e) {
-    return "string" == typeof e.content ? e.content : T(e.content)
-}
-let I = O(y({}, u().defaultRules), {
-        heading: O(y({}, u().defaultRules.heading), {
-            react(e, t, n) {
-                let r = "h".concat(e.level);
-                return (0, a.jsx)(f.A, {
-                    tag: r,
-                    children: t(e.content, n)
-                }, n.key)
+let x = {
+        ...c().defaultRules,
+        heading: {
+            ...c().defaultRules.heading,
+            react(e, t, r) {
+                let a = `h${e.level}`;
+                return (0, n.jsx)(u.A, {
+                    tag: a,
+                    children: t(e.content, r)
+                }, r.key)
             }
-        }),
-        paragraph: O(y({}, u().defaultRules.paragraph), {
-            react: (e, t, n) => (0, a.jsx)("div", {
+        },
+        paragraph: {
+            ...c().defaultRules.paragraph,
+            react: (e, t, r) => (0, n.jsx)("div", {
                 className: m.FY,
-                children: t(e.content, n)
-            }, n.key)
-        }),
-        strong: O(y({}, u().defaultRules.strong), {
+                children: t(e.content, r)
+            }, r.key)
+        },
+        strong: {
+            ...c().defaultRules.strong,
             order: 6
-        }),
-        em: O(y({}, u().defaultRules.em), {
+        },
+        em: {
+            ...c().defaultRules.em,
             order: 6
-        }),
-        u: O(y({}, u().defaultRules.u), {
+        },
+        u: {
+            ...c().defaultRules.u,
             order: 5
-        }),
-        del: O(y({}, u().defaultRules.del), {
+        },
+        del: {
+            ...c().defaultRules.del,
             order: 6
-        }),
-        link: O(y({}, p.Ay, (0, h.A)({
-            enableBuildOverrides: !1
-        })), {
+        },
+        link: {
+            ...d.Ay,
+            ...(0, h.A)({
+                enableBuildOverrides: !1
+            }),
             order: 6
-        }),
-        blockQuote: O(y({}, u().defaultRules.blockQuote), {
-            react: (e, t, n) => (0, a.jsx)("blockquote", {
+        },
+        blockQuote: {
+            ...c().defaultRules.blockQuote,
+            react: (e, t, r) => (0, n.jsx)("blockquote", {
                 className: m.aV,
-                children: A(e)
-            }, n.key)
-        }),
-        image: O(y({}, u().defaultRules.image), {
+                children: g(e)
+            }, r.key)
+        },
+        image: {
+            ...c().defaultRules.image,
             order: 6,
-            match(e, t, n) {
-                let r = u().defaultRules.image;
-                if (null == r || null == r.match) return !1;
-                let i = r.match(e, t, n);
-                if (null != i && Array.isArray(i) && i.length >= 3) {
-                    let e = i[2];
-                    if ("string" == typeof e) return null != e.match(v) ? i : null
+            match(e, t, r) {
+                let n = c().defaultRules.image;
+                if (null == n || null == n.match) return !1;
+                let a = n.match(e, t, r);
+                if (null != a && Array.isArray(a) && a.length >= 3) {
+                    let e = a[2];
+                    if ("string" == typeof e) return null != e.match(f) ? a : null
                 }
                 return !1
             }
-        }),
-        inlineCode: O(y({}, _.A.RULES.inlineCode), {
+        },
+        inlineCode: {
+            ..._.A.RULES.inlineCode,
             order: 6,
-            react: (e, t, n) => (0, a.jsx)("code", {
+            react: (e, t, r) => (0, n.jsx)("code", {
                 className: m.hQ,
-                children: A(e)
-            }, n.key)
-        }),
-        codeBlock: O(y({}, u().defaultRules.codeBlock), {
-            react(e, t, r) {
-                let i = () => (0, a.jsx)("pre", {
-                    children: (0, a.jsx)("code", {
-                        className: l()(g.kw, "hljs"),
-                        children: A(e)
+                children: g(e)
+            }, r.key)
+        },
+        codeBlock: {
+            ...c().defaultRules.codeBlock,
+            react(e, t, a) {
+                let s = () => (0, n.jsx)("pre", {
+                    children: (0, n.jsx)("code", {
+                        className: l()(p.kw, "hljs"),
+                        children: g(e)
                     })
-                }, r.key);
-                return (0, a.jsx)(d.c2, {
-                    createPromise: () => Promise.resolve().then(n.bind(n, 752238)),
+                }, a.key);
+                return (0, n.jsx)(o.c2, {
+                    createPromise: () => Promise.resolve().then(r.bind(r, 752238)),
                     webpackId: 752238,
-                    renderFallback: i,
+                    renderFallback: s,
                     render: t => {
-                        if (!(e.lang && t.hasLanguage(e.lang)) || "string" != typeof e.content) return i();
+                        if (!(e.lang && t.hasLanguage(e.lang)) || "string" != typeof e.content) return s();
                         {
-                            let n = t.highlight(e.lang, e.content, !0);
-                            return null == n ? i() : (0, a.jsx)("pre", {
-                                children: (0, a.jsx)("code", {
-                                    className: l()(g.kw, "hljs", n.language),
+                            let r = t.highlight(e.lang, e.content, !0);
+                            return null == r ? s() : (0, n.jsx)("pre", {
+                                children: (0, n.jsx)("code", {
+                                    className: l()(p.kw, "hljs", r.language),
                                     dangerouslySetInnerHTML: {
-                                        __html: n.value
+                                        __html: r.value
                                     }
                                 })
-                            }, r.key)
+                            }, a.key)
                         }
                     }
-                }, r.key)
+                }, a.key)
             }
-        })
-    }),
-    S = u().parserFor(I),
-    T = u().reactFor(u().ruleOutput(I, "react"));
-class C extends(i = o.PureComponent) {
+        }
+    },
+    b = c().parserFor(x),
+    v = c().reactFor(c().ruleOutput(x, "react"));
+class y extends a.PureComponent {
+    static rules = x;
+    static defaultProps = {
+        parser: b,
+        output: v
+    };
     render() {
         let {
             className: e,
             children: t,
-            state: n,
-            parser: r,
-            output: i
-        } = this.props, o = i(r("".concat(t, "\n\n"), y({
-            inline: !1
-        }, n)));
-        return (0, a.jsx)("div", {
+            state: r,
+            parser: a,
+            output: s
+        } = this.props, i = s(a(`${t}
+
+`, {
+            inline: !1,
+            ...r
+        }));
+        return (0, n.jsx)("div", {
             className: l()(m.wD, e),
-            children: o
+            children: i
         })
     }
 }
-E(C, "rules", I), E(C, "defaultProps", {
-    parser: S,
-    output: T
-});
-let N = C
+let j = y

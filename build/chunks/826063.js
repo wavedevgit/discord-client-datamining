@@ -1,4 +1,4 @@
-/** chunk id: 826063, original params: e,t,r (module,exports,require) **/
-e.exports = {
+/** chunk id: 826063, original params: t,e,i (module,exports,require) **/
+t.exports = {
     U: "doubleInput__594ce"
 }

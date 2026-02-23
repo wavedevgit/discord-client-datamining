@@ -1,9 +1,9 @@
 /** chunk id: 149305, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    c: () => r
+    c: () => i
 });
-let r = (0, n(600975).C)({
+let i = (0, n(600975).C)({
     kind: "guild",
     id: "2023-08_deadchat_simple_prompt_guild",
     label: "Simple deadchat prompt",

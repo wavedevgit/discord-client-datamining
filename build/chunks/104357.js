@@ -2,9 +2,9 @@
 n.d(t, {
     T: () => a
 });
-var r = n(945810),
-    i = n(916023);
-let l = (0, r.mj)({
+var i = n(945810),
+    r = n(916023);
+let l = (0, i.mj)({
     name: "2025-12-social-layer-storefront-rtc-entrypoint-user-experiment",
     kind: "user",
     defaultConfig: {
@@ -23,10 +23,10 @@ let l = (0, r.mj)({
 function a(e) {
     let {
         location: t
-    } = e, n = (0, i.kt)({
+    } = e, n = (0, r.kt)({
         location: t
-    }), r = l.useConfig({
+    }), i = l.useConfig({
         location: t
     }).enabled;
-    return n && r
+    return n && i
 }

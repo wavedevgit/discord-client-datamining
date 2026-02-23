@@ -1,31 +1,31 @@
-/** chunk id: 744185, original params: e,s,n (module,exports,require) **/
-n.r(s), n.d(s, {
-    default: () => u
+/** chunk id: 744185, original params: e,s,l (module,exports,require) **/
+l.r(s), l.d(s, {
+    default: () => o
 });
-var l = n(627968),
-    a = n(503698),
-    i = n.n(a),
-    t = n(960488),
-    r = n(573648),
-    c = n(950198),
-    d = n(985018),
-    o = n(53046);
+var n = l(627968),
+    i = l(503698),
+    a = l.n(i),
+    t = l(873263),
+    r = l(573648),
+    c = l(950198),
+    d = l(985018),
+    u = l(53046);
 
-function u() {
+function o() {
     let {
         type: e
     } = (0, t.g)(), s = (0, c.mw)(e);
     if (null == s) return null;
-    let n = r.A.get(s);
-    return (0, l.jsxs)(c.mP, {
+    let l = r.A.get(s);
+    return (0, n.jsxs)(c.mP, {
         platformType: s,
-        children: [(0, l.jsx)("div", {
-            className: o.i,
+        children: [(0, n.jsx)("div", {
+            className: u.i,
             children: d.intl.format(d.t.RzEB5v, {
-                name: n.name
+                name: l.name
             })
-        }), (0, l.jsx)("div", {
-            className: i()(o.i, o.z),
+        }), (0, n.jsx)("div", {
+            className: a()(u.i, u.z),
             children: d.intl.string(d.t["Q+lNwZ"])
         })]
     })

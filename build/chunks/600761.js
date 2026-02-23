@@ -1,64 +1,64 @@
 /** chunk id: 600761, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    i: () => a
+    i: () => s
 });
-var r = n(64700),
+var i = n(64700),
     l = n(688807),
-    i = n(397927);
+    a = n(397927);
 
-function a(e) {
+function s(e) {
     let {
         containerRef: t,
         itemType: n = "WIDGET",
-        edgeDistance: a = 130,
-        maxSpeed: o = 1700,
-        power: s = 2.2
-    } = e, c = (0, r.useRef)(null), u = (0, r.useRef)(0), d = (0, r.useRef)({
+        edgeDistance: s = 130,
+        maxSpeed: r = 1700,
+        power: o = 2.2
+    } = e, c = (0, i.useRef)(null), d = (0, i.useRef)(0), u = (0, i.useRef)({
         top: 0,
         bottom: 0
-    }), f = (0, r.useRef)(null), p = (0, r.useCallback)(e => ({
+    }), g = (0, i.useRef)(null), m = (0, i.useCallback)(e => ({
         isDragging: e.isDragging(),
         clientOffset: e.getClientOffset(),
         item: e.getItem()
     }), []), {
-        isDragging: g,
-        clientOffset: m,
-        item: b
-    } = (0, l.V)(p);
-    (0, r.useEffect)(() => {
-        f.current = m
-    }, [m]);
-    let y = (0, i.VUy)();
-    (0, r.useEffect)(() => {
+        isDragging: x,
+        clientOffset: f,
+        item: p
+    } = (0, l.V)(m);
+    (0, i.useEffect)(() => {
+        g.current = f
+    }, [f]);
+    let h = (0, a.VUy)();
+    (0, i.useEffect)(() => {
         let e = t.current;
         if (null == e) return;
-        if (!(!0 === g && (null == b ? void 0 : b.itemType) === n && !y)) {
-            null !== c.current && cancelAnimationFrame(c.current), c.current = null, e.style.overflowAnchor = "auto", e.style.overscrollBehavior = "auto", u.current = 0;
+        if (!(!0 === x && p?.itemType === n && !h)) {
+            null !== c.current && cancelAnimationFrame(c.current), c.current = null, e.style.overflowAnchor = "auto", e.style.overscrollBehavior = "auto", d.current = 0;
             return
         }
-        let r = e.getBoundingClientRect();
-        return d.current = {
-            top: r.top,
-            bottom: r.bottom
+        let i = e.getBoundingClientRect();
+        return u.current = {
+            top: i.top,
+            bottom: i.bottom
         }, e.style.overflowAnchor = "none", e.style.overscrollBehavior = "contain", c.current = requestAnimationFrame(function t(n) {
             c.current = requestAnimationFrame(t);
-            let r = f.current;
-            if (null == e || null == r) {
-                u.current = n;
+            let i = g.current;
+            if (null == e || null == i) {
+                d.current = n;
                 return
             }
-            let l = Math.min(32, 0 !== u.current ? n - u.current : 16) / 1e3;
-            u.current = n;
+            let l = Math.min(32, 0 !== d.current ? n - d.current : 16) / 1e3;
+            d.current = n;
             let {
-                top: i,
-                bottom: p
-            } = d.current, g = r.y, m = g - i, b = p - g, y = 0;
-            if (m >= 0 && m < a ? y = -o * Math.pow(1 - m / a, s) : b >= 0 && b < a && (y = o * Math.pow(1 - b / a, s)), 0 !== y) {
-                let t = y * l;
+                top: a,
+                bottom: m
+            } = u.current, x = i.y, f = x - a, p = m - x, h = 0;
+            if (f >= 0 && f < s ? h = -r * Math.pow(1 - f / s, o) : p >= 0 && p < s && (h = r * Math.pow(1 - p / s, o)), 0 !== h) {
+                let t = h * l;
                 Math.abs(t) >= 1 && (e.scrollTop += Math.round(t))
             }
         }), () => {
-            null !== c.current && cancelAnimationFrame(c.current), c.current = null, u.current = 0, null != e && (e.style.overflowAnchor = "auto", e.style.overscrollBehavior = "auto")
+            null !== c.current && cancelAnimationFrame(c.current), c.current = null, d.current = 0, null != e && (e.style.overflowAnchor = "auto", e.style.overscrollBehavior = "auto")
         }
-    }, [t, g, null == b ? void 0 : b.itemType, n, a, o, s, y])
+    }, [t, x, p?.itemType, n, s, r, o, h])
 }

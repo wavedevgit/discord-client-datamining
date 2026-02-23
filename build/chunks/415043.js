@@ -1,70 +1,35 @@
 /** chunk id: 415043, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => p,
+    A: () => u,
     H: () => g
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
 var l = n(503698),
-    i = n.n(l),
-    a = n(342952),
-    o = n(435371),
-    s = n(397927),
+    a = n.n(l),
+    s = n(342952),
+    r = n(435371),
+    o = n(397927),
     c = n(915089),
-    u = n(457047);
+    d = n(457047);
 
-function d(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = r
-        })
-    }
-    return e
-}
-
-function f(e, t) {
-    if (null == e) return {};
-    var n, r, l, i = {};
-    if ("u" > typeof Reflect && Reflect.ownKeys) {
-        for (l = 0, n = Reflect.ownKeys(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
-        return i
-    }
-    if (i = function(e, t) {
-            if (null == e) return {};
-            var n, r, l = {},
-                i = Object.getOwnPropertyNames(e);
-            for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n]);
-            return l
-        }(e, t), Object.getOwnPropertySymbols)
-        for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
-    return i
-}
-
-function p(e) {
+function u(e) {
     let {
         label: t,
         className: n,
-        size: l = s._3J.SIZE_16,
-        maxUsers: o = 4
-    } = e, p = f(e, ["label", "className", "size", "maxUsers"]), g = (0, c.GV)();
-    return (0, r.jsxs)("div", {
-        className: i()(n, u.k),
-        children: [(0, r.jsx)(a.I, d({
+        size: l = o._3J.SIZE_16,
+        maxUsers: r = 4,
+        ...u
+    } = e, g = (0, c.GV)();
+    return (0, i.jsxs)("div", {
+        className: a()(n, d.k),
+        children: [(0, i.jsx)(s.I, {
             "aria-labelledby": g,
-            overflowCountClassName: u.j,
+            overflowCountClassName: d.j,
             size: l,
-            maxUsers: o
-        }, p)), (0, r.jsx)(s.Text, {
+            maxUsers: r,
+            ...u
+        }), (0, i.jsx)(o.Text, {
             variant: "text-xs/normal",
             color: "text-subtle",
             id: g,
@@ -78,25 +43,27 @@ function g(e) {
         label: t,
         className: n,
         overflowCountClassName: l,
-        size: c = s._3J.SIZE_16,
-        maxUsers: p = 4,
-        onClick: g
-    } = e, m = f(e, ["label", "className", "overflowCountClassName", "size", "maxUsers", "onClick"]);
-    return (0, r.jsx)("div", {
+        size: c = o._3J.SIZE_16,
+        maxUsers: u = 4,
+        onClick: g,
+        ...m
+    } = e;
+    return (0, i.jsx)("div", {
         className: n,
-        children: (0, r.jsx)(o.m_, {
+        children: (0, i.jsx)(r.m_, {
             text: t,
             asContainer: !0,
             ariaHidden: !0,
-            children: (0, r.jsx)(s.DUT, {
+            children: (0, i.jsx)(o.DUT, {
                 onClick: g,
                 "aria-label": t,
-                children: (0, r.jsx)(a.I, d({
+                children: (0, i.jsx)(s.I, {
                     size: c,
-                    maxUsers: p,
-                    overflowCountClassName: i()(u.j, l),
-                    "aria-hidden": !0
-                }, m))
+                    maxUsers: u,
+                    overflowCountClassName: a()(d.j, l),
+                    "aria-hidden": !0,
+                    ...m
+                })
             })
         })
     })

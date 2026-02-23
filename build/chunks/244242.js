@@ -1,21 +1,21 @@
 /** chunk id: 244242, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    L: () => l
+    L: () => a
 });
-var r = n(627968),
-    i = n(397927);
+var i = n(627968),
+    s = n(397927);
 
-function l(e) {
+function a(e) {
     let {
         children: t
     } = e;
-    return (0, r.jsx)(i.BJc, {
+    return (0, i.jsx)(s.BJc, {
         gap: 0,
         padding: {
-            left: 12,
-            right: 12,
-            top: 8,
-            bottom: 8
+            left: "sm",
+            right: "sm",
+            top: "xs",
+            bottom: "xs"
         },
         children: t
     })

@@ -1,66 +1,65 @@
-/** chunk id: 487953, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => h
-}), n(896048), n(228524);
-var r = n(627968),
-    l = n(64700),
-    i = n(230109),
-    a = n(397927),
-    s = n(735991),
-    o = n(635350),
-    c = n(486020),
-    d = n(841985),
-    u = n(985018),
-    p = n(286453);
-let h = function(e) {
-    var t, n, h;
+/** chunk id: 487953, original params: e,t,a (module,exports,require) **/
+a.d(t, {
+    A: () => m
+});
+var n = a(627968),
+    i = a(64700),
+    s = a(230109),
+    l = a(397927),
+    r = a(735991),
+    o = a(635350),
+    c = a(486020),
+    d = a(841985),
+    u = a(985018),
+    h = a(286453);
+let m = function(e) {
     let {
-        application: m,
-        onSelectApplication: g,
-        showCategory: _ = !1
-    } = e, b = l.useRef(null), f = null == (n = m.categories) ? void 0 : n[0], [x, v] = l.useState(!1), j = l.useCallback(e => {
-        e && v(!0)
-    }, []), A = (0, s.NO)(m), y = l.useCallback(() => {
-        g(m.id)
-    }, [g, m.id]), C = l.useMemo(() => x ? c.Ay.getApplicationIconURL({
-        id: m.id,
-        icon: m.icon,
+        application: t,
+        onSelectApplication: a,
+        showCategory: m = !1
+    } = e, p = i.useRef(null), _ = t.categories?.[0], [g, x] = i.useState(!1), A = i.useCallback(e => {
+        e && x(!0)
+    }, []), C = (0, r.NO)(t), v = i.useCallback(() => {
+        a(t.id)
+    }, [a, t.id]), b = i.useMemo(() => g ? c.Ay.getApplicationIconURL({
+        id: t.id,
+        icon: t.icon,
         size: 48
-    }) : void 0, [x, m]), O = _ && null != f;
-    return (0, r.jsx)(i.L, {
-        innerRef: b,
-        onChange: j,
-        active: !x,
-        children: (0, r.jsx)("div", {
-            ref: b,
-            className: p.kL,
-            children: (0, r.jsxs)(o.A, {
-                className: p.Nr,
-                onClick: y,
+    }) : void 0, [g, t]), f = m && null != _;
+    return (0, n.jsx)(s.L, {
+        innerRef: p,
+        onChange: A,
+        active: !g,
+        children: (0, n.jsx)("div", {
+            ref: p,
+            className: h.kL,
+            children: (0, n.jsxs)(o.A, {
+                className: h.Nr,
+                onClick: v,
                 onContextMenu: () => {},
                 "aria-label": u.intl.string(u.t.np1Wru),
-                children: [(0, r.jsxs)("div", {
-                    className: p.wx,
-                    children: [(0, r.jsx)("div", {
+                children: [(0, n.jsxs)("div", {
+                    className: h.wx,
+                    children: [(0, n.jsx)("div", {
                         style: {
                             width: "100%",
                             display: "block",
                             aspectRatio: 16 / 9
                         },
-                        children: x ? (0, r.jsx)(d.A, {
-                            application: m,
+                        children: g ? (0, n.jsx)(d.A, {
+                            application: t,
                             bannerType: "card",
-                            iconURL: C
+                            iconURL: b
                         }) : null
-                    }), (0, r.jsx)("div", {
-                        className: p.H,
+                    }), (0, n.jsx)("div", {
+                        className: h.H,
                         style: {
                             height: 28
                         },
-                        children: x ? (0, r.jsx)("img", {
-                            src: C,
+                        children: g ? (0, n.jsx)("img", {
+                            src: b,
                             alt: "",
-                            className: p.my,
+                            className: h.my,
                             height: 48,
                             width: 48,
                             style: {
@@ -69,41 +68,41 @@ let h = function(e) {
                             }
                         }) : null
                     })]
-                }), (0, r.jsxs)("div", {
-                    className: p.eV,
-                    children: [(0, r.jsx)("div", {
-                        className: p.gn,
-                        children: (0, r.jsx)("div", {
-                            className: p.DD,
-                            children: (0, r.jsx)(a.Heading, {
+                }), (0, n.jsxs)("div", {
+                    className: h.eV,
+                    children: [(0, n.jsx)("div", {
+                        className: h.gn,
+                        children: (0, n.jsx)("div", {
+                            className: h.DD,
+                            children: (0, n.jsx)(l.Heading, {
                                 variant: "heading-md/semibold",
                                 color: "text-strong",
-                                className: p.JB,
-                                children: m.name
+                                className: h.JB,
+                                children: t.name
                             })
                         })
-                    }), O || A ? (0, r.jsxs)("div", {
-                        className: p.op,
-                        children: [O ? (0, r.jsx)(a.Text, {
-                            className: p.m4,
+                    }), f || C ? (0, n.jsxs)("div", {
+                        className: h.op,
+                        children: [f ? (0, n.jsx)(l.Text, {
+                            className: h.m4,
                             variant: "text-xs/medium",
                             color: "text-default",
-                            children: f.name
-                        }) : null, O && A ? (0, r.jsx)(a.Text, {
+                            children: _.name
+                        }) : null, f && C ? (0, n.jsx)(l.Text, {
                             variant: "text-xs/medium",
                             color: "text-subtle",
                             children: "•"
-                        }) : null, A ? (0, r.jsx)(a.Text, {
+                        }) : null, C ? (0, n.jsx)(l.Text, {
                             variant: "text-xs/medium",
                             color: "text-subtle",
                             children: u.intl.string(u.t["/eVltv"])
                         }) : null]
-                    }) : null, (0, r.jsx)(a.Text, {
-                        className: p.h_,
+                    }) : null, (0, n.jsx)(l.Text, {
+                        className: h.h_,
                         variant: "text-sm/medium",
                         color: "text-default",
-                        lineClamp: O || A ? 2 : 3,
-                        children: null != (t = null == (h = m.directory_entry) ? void 0 : h.short_description) ? t : m.description
+                        lineClamp: f || C ? 2 : 3,
+                        children: t.directory_entry?.short_description ?? t.description
                     })]
                 })]
             })

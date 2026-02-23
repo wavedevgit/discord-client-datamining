@@ -1,65 +1,65 @@
 /** chunk id: 968930, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => _
 });
-var r = n(73153),
-    i = n(631670),
+var i = n(73153),
+    r = n(631670),
     l = n(272355),
     a = n(159001),
     s = n(688796),
     o = n(101058),
-    c = n(207803),
-    u = n(287809),
-    d = n(927578),
-    p = n(339984);
+    d = n(207803),
+    c = n(287809),
+    u = n(927578),
+    A = n(339984);
 class h extends l.A {
     _initialize() {
-        r.h.subscribe("PROFILE_CUSTOMIZATION_OPEN_PREVIEW_MODAL", this.maybeOpenProfilePreviewModal)
+        i.h.subscribe("PROFILE_CUSTOMIZATION_OPEN_PREVIEW_MODAL", this.maybeOpenProfilePreviewModal)
     }
     _terminate() {
-        r.h.unsubscribe("PROFILE_CUSTOMIZATION_OPEN_PREVIEW_MODAL", this.maybeOpenProfilePreviewModal)
+        i.h.unsubscribe("PROFILE_CUSTOMIZATION_OPEN_PREVIEW_MODAL", this.maybeOpenProfilePreviewModal)
     }
     maybeOpenProfilePreviewModal(e) {
-        return e.uploadType === p.HL.AVATAR ? (e => {
+        return e.uploadType === A.HL.AVATAR ? (e => {
             let {
                 image: t,
                 file: n,
-                guildId: r,
+                guildId: i,
                 analyticsSource: l,
                 isTryItOut: h
             } = e;
-            if (h) return void(0, c.e$)(t);
-            let f = u.default.getCurrentUser(),
-                g = null != r ? a.zq : i.zq,
-                m = d.Ay.canUseAnimatedAvatar(f);
-            if (m || "image/gif" !== n.type) return void g(t);
-            if (null == f) return;
-            let A = (0, o.V7)({
-                userId: f.id,
+            if (h) return void(0, d.e$)(t);
+            let _ = c.default.getCurrentUser(),
+                m = null != i ? a.zq : r.zq,
+                p = u.Ay.canUseAnimatedAvatar(_);
+            if (p || "image/gif" !== n.type) return void m(t);
+            if (null == _) return;
+            let g = (0, o.V7)({
+                userId: _.id,
                 image: t
             });
-            if (!m) return void(0, s.G)({
-                uploadType: p.HL.AVATAR,
-                imageSrc: A,
+            if (!p) return void(0, s.G)({
+                uploadType: A.HL.AVATAR,
+                imageSrc: g,
                 analyticsSource: l
             })
-        })(e) : e.uploadType === p.HL.BANNER ? (e => {
+        })(e) : e.uploadType === A.HL.BANNER ? (e => {
             let {
                 image: t,
                 guildId: n,
-                analyticsSource: r,
-                isTryItOut: i
+                analyticsSource: i,
+                isTryItOut: r
             } = e, l = t.imageUri;
-            if (i) return void(0, c.xe)(l);
-            let o = u.default.getCurrentUser(),
-                h = null != n ? a.Iz : c.Iz,
-                f = d.Ay.canUsePremiumProfileCustomization(o);
-            d.Ay.canUsePremiumProfileCustomization(o) ? h(l) : null == o || f || (0, s.G)({
-                uploadType: p.HL.BANNER,
+            if (r) return void(0, d.xe)(l);
+            let o = c.default.getCurrentUser(),
+                h = null != n ? a.Iz : d.Iz,
+                _ = u.Ay.canUsePremiumProfileCustomization(o);
+            u.Ay.canUsePremiumProfileCustomization(o) ? h(l) : null == o || _ || (0, s.G)({
+                uploadType: A.HL.BANNER,
                 imageSrc: l,
-                analyticsSource: r
+                analyticsSource: i
             })
         })(e) : void 0
     }
 }
-let f = new h
+let _ = new h

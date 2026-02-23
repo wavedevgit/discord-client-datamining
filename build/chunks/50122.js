@@ -1,11 +1,12 @@
 /** chunk id: 50122, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
     A: () => o
 });
-var r = n(812729),
-    l = n.n(r),
-    i = n(311907),
-    s = n(242919),
+var i = n(812729),
+    s = n.n(i),
+    l = n(311907),
+    r = n(242919),
     a = n(60821);
 
 function o() {
@@ -13,15 +14,15 @@ function o() {
         recentStatuses: e,
         currentHangStatus: t,
         customHangStatus: n,
-        favoritedStatuses: r
-    } = (0, i.cf)([s.A], () => ({
-        recentStatuses: s.A.getRecentStatuses(),
-        currentHangStatus: s.A.getCurrentHangStatus(),
-        customHangStatus: s.A.getCustomHangStatus(),
-        favoritedStatuses: s.A.getFavoritedStatuses()
-    })), o = 6 - r.length;
+        favoritedStatuses: i
+    } = (0, l.cf)([r.A], () => ({
+        recentStatuses: r.A.getRecentStatuses(),
+        currentHangStatus: r.A.getCurrentHangStatus(),
+        customHangStatus: r.A.getCustomHangStatus(),
+        favoritedStatuses: r.A.getFavoritedStatuses()
+    })), o = 6 - i.length;
     return e.filter(e => {
-        let r = (0, a.A)(e) ? e === t : l()(e, n);
-        return !s.A.isFavorited(e) && !r
+        let i = (0, a.A)(e) ? e === t : s()(e, n);
+        return !r.A.isFavorited(e) && !i
     }).slice(0, o)
 }

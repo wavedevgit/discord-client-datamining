@@ -1,34 +1,35 @@
 /** chunk id: 626262, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    $: () => O
-}), n(896048);
-var r = n(627968),
-    i = n(64700),
+    $: () => N
+});
+var i = n(627968),
+    r = n(64700),
     l = n(989349),
-    a = n.n(l),
-    o = n(554146),
-    s = n(916768),
-    c = n(617108),
-    u = n(745299),
-    E = n(816733),
+    s = n.n(l),
+    a = n(554146),
+    o = n(916768),
+    E = n(617108),
+    c = n(745299),
+    _ = n(816733),
     d = n(927578),
-    _ = n(160761),
-    A = n(49999),
+    A = n(160761),
+    u = n(49999),
     T = n(652215),
     I = n(788868);
-let O = e => {
+let N = e => {
     let {
         dismissibleContent: t,
         noticeType: n
-    } = e, l = i.useMemo(() => {
+    } = e, l = r.useMemo(() => {
         switch (n) {
             case T.kqX.PREMIUM_TIER_2_TRIAL_ENDING:
-                let e = E.A.getAlmostExpiringTrialOffers([I.pe.TIER_2]);
+                let e = _.A.getAlmostExpiringTrialOffersForReminder([I.pe.TIER_2]);
                 return {
                     cooldownDurationMs: (0, d.e1)(e[0])
                 };
             case T.kqX.PREMIUM_TIER_2_DISCOUNT_ENDING:
-                let t = E.A.getAlmostExpiringDiscountOffers([I.pe.TIER_2]);
+                let t = _.A.getAlmostExpiringDiscountOffersForReminder([I.pe.TIER_2]);
                 return {
                     cooldownDurationMs: (0, d.e1)(t[0])
                 };
@@ -37,18 +38,18 @@ let O = e => {
                     cooldownDurationMs: 1 / 0
                 }
         }
-    }, [n]), O = a()().add(5, "days").toDate(), [N, p] = (0, _.Bo)(t, l, A.m.NOTICE_BAR);
-    if (null == N) return null;
-    if (N === o.M.NAGBAR_NOTICE_OFFER_EXPIRING) {
-        if (n === T.kqX.PREMIUM_TIER_2_TRIAL_ENDING) return (0, r.jsx)(u.A, {
+    }, [n]), N = s()().add(5, "days").toDate(), [R, S] = (0, A.Bo)(t, l, u.m.NOTICE_BAR);
+    if (null == R) return null;
+    if (R === a.M.NAGBAR_NOTICE_OFFER_EXPIRING) {
+        if (n === T.kqX.PREMIUM_TIER_2_TRIAL_ENDING) return (0, i.jsx)(c.A, {
             dismissCurrentNotice: () => {
-                p(A.i.USER_DISMISS), (0, s.w)(O)
+                S(u.i.USER_DISMISS), (0, o.w)(N)
             },
             subscriptionTier: I.pe.TIER_2
         });
-        if (n === T.kqX.PREMIUM_TIER_2_DISCOUNT_ENDING) return (0, r.jsx)(c.A, {
+        if (n === T.kqX.PREMIUM_TIER_2_DISCOUNT_ENDING) return (0, i.jsx)(E.A, {
             dismissCurrentNotice: () => {
-                p(A.i.USER_DISMISS), (0, s.w)(O)
+                S(u.i.USER_DISMISS), (0, o.w)(N)
             },
             subscriptionTier: I.pe.TIER_2
         })

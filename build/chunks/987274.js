@@ -1,29 +1,28 @@
-/** chunk id: 987274, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    I7: () => l
+/** chunk id: 987274, original params: e,t,l (module,exports,require) **/
+l.d(t, {
+    I7: () => o
 });
-var r = n(627968);
-n(64700);
-var i = n(706276),
-    a = n(808411),
-    o = n(919470),
-    s = n(985018);
-let l = {
+var a = l(627968);
+l(64700);
+var n = l(706276),
+    r = l(808411),
+    i = l(919470),
+    s = l(985018);
+let o = {
     title: "Nitro Components",
     stories: [{
         name: "Cancellation Flow",
-        component: () => (0, r.jsx)(i.o, {}),
+        component: () => (0, a.jsx)(n.o, {}),
         id: "cancellation-flow",
         controls: {}
     }, {
         name: "Expressive Progress",
-        component: a.A,
+        component: r.A,
         id: "expressive-progress",
         controls: {}
     }, {
         name: "Premium Tooltip",
-        component: o.A,
+        component: i.A,
         id: "premium-tooltip",
         controls: {
             title: {

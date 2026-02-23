@@ -4,29 +4,29 @@ a.d(t, {
 });
 var r = a(627968);
 a(64700);
-var s = a(92674),
+var s = a(475539),
     i = a(827734),
-    n = a(397927),
-    l = a(915089),
+    l = a(397927),
+    n = a(915089),
     d = a(985018),
     c = a(447110);
 let o = e => {
         let {
             currentNumber: t,
             thresholdNumber: a,
-            currentLabel: l,
+            currentLabel: n,
             isPercent: o = !1
         } = e, x = null != a ? Math.floor(t / a * 100) : 0, m = d.intl.formatToPlainString(d.t.YMor7k, {
             count: t
         }), h = null != a ? d.intl.formatToPlainString(d.t.YMor7k, {
             count: a
-        }) : "--", u = (0, n.rdh)(i.A.unsafe_rawColors.RED_400).hex(), _ = (0, n.rdh)(i.A.unsafe_rawColors.YELLOW_300).hex();
+        }) : "--", u = (0, l.rdh)(i.A.unsafe_rawColors.RED_400).hex(), _ = (0, l.rdh)(i.A.unsafe_rawColors.YELLOW_300).hex();
         return (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsxs)("div", {
                 className: c.Tr,
                 children: [(0, r.jsx)("div", {
                     className: c.yZ
-                }), (0, r.jsx)(n.c7X, {
+                }), (0, r.jsx)(l.c7X, {
                     from: {
                         width: 0
                     },
@@ -47,7 +47,7 @@ let o = e => {
                         return (0, r.jsx)(s.animated.div, {
                             className: c.hr,
                             style: {
-                                width: t.interpolate(e => "".concat(e, "%")),
+                                width: t.interpolate(e => `${e}%`),
                                 backgroundColor: t.interpolate(e => e < 33 ? u : _)
                             }
                         })
@@ -57,25 +57,25 @@ let o = e => {
                 className: c.ei,
                 children: [(0, r.jsxs)("div", {
                     className: c.__invalid_current,
-                    children: [(0, r.jsx)(n.Text, {
+                    children: [(0, r.jsx)(l.Text, {
                         variant: "text-md/semibold",
                         color: x < 33 ? "text-feedback-critical" : "text-feedback-warning",
-                        children: o ? "".concat(m, "%") : m
-                    }), (0, r.jsxs)(n.Text, {
+                        children: o ? `${m}%` : m
+                    }), (0, r.jsxs)(l.Text, {
                         "aria-describedby": "health-score-details-score-explain",
                         variant: "text-xs/normal",
                         color: "text-default",
-                        children: [l, (0, r.jsx)("sup", {
+                        children: [n, (0, r.jsx)("sup", {
                             "aria-hidden": !0,
                             children: "1"
                         })]
                     })]
                 }), (0, r.jsxs)("div", {
                     className: c.aS,
-                    children: [(0, r.jsx)(n.Text, {
+                    children: [(0, r.jsx)(l.Text, {
                         variant: "text-sm/semibold",
-                        children: o ? "".concat(h, "%") : h
-                    }), (0, r.jsx)(n.Text, {
+                        children: o ? `${h}%` : h
+                    }), (0, r.jsx)(l.Text, {
                         "aria-describedby": "health-score-details-requirement-explain",
                         variant: "text-xs/normal",
                         color: "text-default",
@@ -91,7 +91,7 @@ let o = e => {
                 transitionState: x,
                 onClose: m
             } = e,
-            h = (0, l.GV)(),
+            h = (0, n.GV)(),
             {
                 retentionHealthy: u,
                 engagementHealthy: _,
@@ -104,11 +104,11 @@ let o = e => {
             } = g;
         if (!_ && null != j && j < 40 && (a = (0, r.jsxs)("div", {
                 className: c.cl,
-                children: [(0, r.jsx)(n.Heading, {
+                children: [(0, r.jsx)(l.Heading, {
                     className: c.xd,
                     variant: "heading-md/semibold",
                     children: d.intl.string(d.t.sEzDIR)
-                }), (0, r.jsx)(n.Text, {
+                }), (0, r.jsx)(l.Text, {
                     variant: "text-sm/normal",
                     children: d.intl.string(d.t.zNp3Kg)
                 }), (0, r.jsx)(o, {
@@ -118,11 +118,11 @@ let o = e => {
                 })]
             })), !_ && null != b && b < 20 && (s = (0, r.jsxs)("div", {
                 className: c.cl,
-                children: [(0, r.jsx)(n.Heading, {
+                children: [(0, r.jsx)(l.Heading, {
                     className: c.xd,
                     variant: "heading-md/semibold",
                     children: d.intl.string(d.t.fWQTbv)
-                }), (0, r.jsx)(n.Text, {
+                }), (0, r.jsx)(l.Text, {
                     variant: "text-sm/normal",
                     children: d.intl.string(d.t.Tl8MR6)
                 }), (0, r.jsx)(o, {
@@ -134,11 +134,11 @@ let o = e => {
             let e = Math.floor(100 * p);
             t = (0, r.jsxs)("div", {
                 className: c.cl,
-                children: [(0, r.jsx)(n.Heading, {
+                children: [(0, r.jsx)(l.Heading, {
                     className: c.xd,
                     variant: "heading-md/semibold",
                     children: d.intl.string(d.t.YF6x21)
-                }), (0, r.jsx)(n.Text, {
+                }), (0, r.jsx)(l.Text, {
                     variant: "text-sm/normal",
                     children: d.intl.format(d.t.kMBzFj, {})
                 }), (0, r.jsx)(o, {
@@ -149,20 +149,20 @@ let o = e => {
                 })]
             })
         }
-        return (0, r.jsxs)(n.EOs, {
+        return (0, r.jsxs)(l.EOs, {
             transitionState: x,
-            size: n.rIJ.MEDIUM,
+            size: l.rIJ.MEDIUM,
             className: c.__invalid_modal,
             "aria-labelledby": h,
             parentComponent: "HealthScoreDetailsModal",
-            children: [(0, r.jsxs)(n.$mQ, {
+            children: [(0, r.jsxs)(l.$mQ, {
                 className: c.Qs,
-                children: [(0, r.jsx)(n.Heading, {
+                children: [(0, r.jsx)(l.Heading, {
                     variant: "heading-xl/semibold",
                     className: c.Hc,
                     id: h,
                     children: d.intl.string(d.t["+GHxPy"])
-                }), (0, r.jsx)(n.Text, {
+                }), (0, r.jsx)(l.Text, {
                     className: c.xd,
                     variant: "text-sm/normal",
                     children: d.intl.string(d.t.QOs3XA)
@@ -170,7 +170,7 @@ let o = e => {
                     className: c.me
                 }), a, s, t, (0, r.jsx)("div", {
                     className: c.me
-                }), (0, r.jsxs)(n.Text, {
+                }), (0, r.jsxs)(l.Text, {
                     className: c.xd,
                     color: "text-default",
                     id: "health-score-details-score-explain",
@@ -180,7 +180,7 @@ let o = e => {
                         children: "1 "
                     }), d.intl.string(d.t.tN5kb2)]
                 })]
-            }), (0, r.jsx)(n.s_y, {
+            }), (0, r.jsx)(l.s_y, {
                 onClick: m,
                 className: c.b
             })]

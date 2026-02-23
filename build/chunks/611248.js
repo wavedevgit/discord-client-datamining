@@ -1,22 +1,22 @@
 /** chunk id: 611248, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    e: () => l
+    e: () => s
 });
-var r = n(985018);
-let l = {
+var l = n(985018);
+let s = {
     get webauthn() {
-        return r.intl.string(r.t.gTH4Dp)
+        return l.intl.string(l.t.gTH4Dp)
     },
     get totp() {
-        return r.intl.string(r.t.nXKmyf)
+        return l.intl.string(l.t.nXKmyf)
     },
     get sms() {
-        return r.intl.string(r.t.ZbVwZW)
+        return l.intl.string(l.t.ZbVwZW)
     },
     get password() {
-        return r.intl.string(r.t["8F6hKS"])
+        return l.intl.string(l.t["8F6hKS"])
     },
     get backup() {
-        return r.intl.string(r.t.vhSRKf)
+        return l.intl.string(l.t.vhSRKf)
     }
 }

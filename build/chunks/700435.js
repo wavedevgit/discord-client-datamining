@@ -6,11 +6,10 @@ var n = i(311907),
     l = i(684013),
     s = i(419954),
     r = i(256415),
-    u = i(780964),
-    a = i(652215),
+    a = i(780964),
+    u = i(652215),
     o = i(985018);
-let d = (0, s.Hn)(u.X.OVERLAY_VOICE_WIDGET_AVATAR_SIZE, {
-    fieldLayout: "horizontal",
+let d = (0, s.Hn)(a.X.OVERLAY_VOICE_WIDGET_AVATAR_SIZE, {
     useTitle: () => o.intl.string(o.t.dnvZSg),
     useValue: () => (0, n.bG)([r.default], () => r.default.getAvatarSizeMode()),
     setValue: t => {
@@ -19,10 +18,10 @@ let d = (0, s.Hn)(u.X.OVERLAY_VOICE_WIDGET_AVATAR_SIZE, {
     useOptions: () => [{
         id: "large",
         label: o.intl.string(o.t.YcOxtr),
-        value: a.OSZ.LARGE
+        value: u.OSZ.LARGE
     }, {
         id: "small",
         label: o.intl.string(o.t.BKIKqx),
-        value: a.OSZ.SMALL
+        value: u.OSZ.SMALL
     }]
 })

@@ -1,24 +1,23 @@
-/** chunk id: 785205, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    p: () => o
+/** chunk id: 785205, original params: e,t,l (module,exports,require) **/
+l.d(t, {
+    p: () => i
 });
-var r = n(627968);
-n(64700);
-var i = n(156312),
-    a = n(482132);
-let o = e => {
+var a = l(627968);
+l(64700);
+var n = l(156312),
+    r = l(482132);
+let i = e => {
     let {
         children: t,
-        stepConfigs: n
+        stepConfigs: l
     } = e;
-    return (0, r.jsxs)(i.PaymentContextProvider, {
-        stepConfigs: n,
+    return (0, a.jsxs)(n.PaymentContextProvider, {
+        stepConfigs: l,
         skuIDs: [],
         activeSubscription: null,
-        children: [(0, r.jsx)(a.dZ, {
+        children: [(0, a.jsx)(r.dZ, {
             children: t
-        }), (0, r.jsx)(a.Ay, {
+        }), (0, a.jsx)(r.Ay, {
             header: null,
             isLargeModal: !1,
             isDynamicModal: !0

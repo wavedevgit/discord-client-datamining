@@ -1,31 +1,31 @@
-/** chunk id: 635350, original params: e,t,n (module,exports,require) **/
-n.d(t, {
+/** chunk id: 635350, original params: e,t,a (module,exports,require) **/
+a.d(t, {
     A: () => c
 });
-var r = n(627968),
-    l = n(64700),
-    i = n(503698),
-    a = n.n(i),
-    s = n(397927),
-    o = n(330640);
-let c = l.memo(function(e) {
+var n = a(627968),
+    i = a(64700),
+    s = a(503698),
+    l = a.n(s),
+    r = a(397927),
+    o = a(330640);
+let c = i.memo(function(e) {
     let {
         onClick: t,
-        onContextMenu: n,
-        className: l,
-        disabled: i,
+        onContextMenu: a,
+        className: i,
+        disabled: s,
         children: c,
         "aria-label": d,
         ref: u
     } = e;
-    return (0, r.jsx)(s.sqX, {
+    return (0, n.jsx)(r.sqX, {
         ref: u,
-        className: a()(o.Nr, l, {
+        className: l()(o.Nr, i, {
             [o.vk]: null != t,
-            [o.r9]: i
+            [o.r9]: s
         }),
-        onContextMenu: n,
-        onClick: i ? void 0 : t,
+        onContextMenu: a,
+        onClick: s ? void 0 : t,
         "aria-label": d,
         children: c
     })

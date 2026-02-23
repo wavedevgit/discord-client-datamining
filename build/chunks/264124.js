@@ -1,22 +1,22 @@
-/** chunk id: 264124, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => s
+/** chunk id: 264124, original params: e,n,t (module,exports,require) **/
+t.d(n, {
+    A: () => c
 });
-var r = n(627968);
-n(64700);
-var i = n(311907),
-    l = n(397927),
-    a = n(55619),
-    o = n(351906),
-    c = n(985018);
+var i = t(627968);
+t(64700);
+var l = t(311907),
+    a = t(397927),
+    s = t(55619),
+    r = t(351906),
+    o = t(985018);
 
-function s() {
-    let e = (0, i.bG)([o.A], () => o.A.enabled, []);
-    return (0, r.jsx)(l.sLh, {
+function c() {
+    let e = (0, l.bG)([r.A], () => r.A.enabled, []);
+    return (0, i.jsx)(a.sLh, {
         id: "streamer-mode-toggle",
-        label: c.intl.string(c.t.p9ZAJZ),
+        label: o.intl.string(o.t.p9ZAJZ),
         action: () => {
-            a.A.setEnabled(!e)
+            s.A.setEnabled(!e)
         },
         checked: e
     })

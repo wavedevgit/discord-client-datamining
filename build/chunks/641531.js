@@ -1,0 +1,44 @@
+/** chunk id: 641531, original params: t,e,i (module,exports,require) **/
+i.d(e, {
+    V: () => g
+});
+var n = i(349941),
+    l = i(311907),
+    s = i(955572),
+    r = i(775602),
+    a = i(47671),
+    u = i(419954),
+    o = i(97469),
+    d = i(544028),
+    A = i(253932),
+    T = i(780964),
+    S = i(818348),
+    E = i(985018);
+let g = (0, u.zD)(T.X.DISPLAY_DARK_SIDEBAR, {
+    useTitle: () => E.intl.string(E.t.EpSHAQ),
+    useSearchTerms: () => [E.intl.string(E.t.Ksh3ik)],
+    useValue: function() {
+        let t = (0, o.qo)();
+        return (0, l.bG)([d.A, r.A], () => {
+            let e = d.A.theme,
+                i = r.A.useForcedColors;
+            return t && (0, n.qB)(e) && !i
+        })
+    },
+    usePredicate: function() {
+        let t = null != A.eh.useSetting().customUserThemeSettings;
+        return (0, l.bG)([d.A, a.A], () => {
+            let e = d.A.theme,
+                i = a.A.gradientPreset;
+            return (0, n.qB)(e) && null == i && !t
+        })
+    },
+    useDisabled: function() {
+        return (0, l.bG)([d.A, r.A], () => {
+            let t = d.A.theme,
+                e = r.A.useForcedColors;
+            return t !== S.NJ.LIGHT || e
+        })
+    },
+    setValue: s.LO
+})

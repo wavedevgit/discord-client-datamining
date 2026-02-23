@@ -1,42 +1,42 @@
 /** chunk id: 983806, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    b: () => h
-}), n(896048);
-var r = n(627968),
-    i = n(64700),
-    l = n(503698),
-    s = n.n(l),
-    a = n(843282),
+    b: () => E
+});
+var i = n(627968),
+    s = n(64700),
+    a = n(503698),
+    r = n.n(a),
+    l = n(843282),
     o = n(397927),
     c = n(10005),
     d = n(809697),
     u = n(153739),
     _ = n(834981),
-    p = n(343906),
-    m = n(191627),
+    m = n(343906),
+    A = n(191627),
     g = n(842130),
-    A = n(985018),
-    f = n(377148);
-let b = () => {
+    h = n(985018),
+    x = n(377148);
+let p = () => {
         let e = (0, _.vx)(),
             t = (0, u.y3)(),
             {
                 selectTeenUser: n
             } = (0, c.A)({}),
-            l = e.map(e => ({
+            a = e.map(e => ({
                 label: e,
                 value: e
             })),
-            d = i.useCallback(e => (0, r.jsx)(p.O, {
+            d = s.useCallback(e => (0, i.jsx)(m.O, {
                 userId: e.value,
                 avatarSize: o._3J.SIZE_24,
                 hideUserTag: !0
             }), []);
-        return 0 === e.length ? null : (0, r.jsx)("div", {
-            className: s()(f.Gq, {
-                [f.wS]: e.length > 1
+        return 0 === e.length ? null : (0, i.jsx)("div", {
+            className: r()(x.Gq, {
+                [x.wS]: e.length > 1
             }),
-            children: e.length > 1 ? (0, r.jsx)(a.Pw, {
+            children: e.length > 1 ? (0, i.jsx)(l.Pw, {
                 renderOptionLabel: d,
                 renderOptionValue: e => {
                     let [t] = e;
@@ -46,54 +46,54 @@ let b = () => {
                 select: e => {
                     n(e)
                 },
-                isSelected: e => e === (null == t ? void 0 : t.id),
-                options: l,
+                isSelected: e => e === t?.id,
+                options: a,
                 "data-migration-pending": !0
-            }) : (0, r.jsx)(p.O, {
+            }) : (0, i.jsx)(m.O, {
                 userId: e[0],
                 avatarSize: o._3J.SIZE_24,
                 hideUserTag: !0
             })
         })
     },
-    h = () => {
+    E = () => {
         let {
             selectedTab: e,
             handleTabChange: t
-        } = (0, d.A)(), n = i.useCallback(() => {
-            t(m.u9.ACTIVITY)
+        } = (0, d.A)(), n = s.useCallback(() => {
+            t(A.u9.ACTIVITY)
         }, [t]);
-        return (0, r.jsxs)(o.BJc, {
+        return (0, i.jsxs)(o.BJc, {
             gap: 32,
-            children: [(0, r.jsxs)(o.DUT, {
-                className: f.Gv,
+            children: [(0, i.jsxs)(o.DUT, {
+                className: x.Gv,
                 onClick: n,
-                "aria-label": A.intl.string(A.t.ybUZql),
-                children: [(0, r.jsx)(o.Zge, {
+                "aria-label": h.intl.string(h.t.ybUZql),
+                children: [(0, i.jsx)(o.Zge, {
                     size: "sm",
                     color: o.LU0.colors.INTERACTIVE_TEXT_DEFAULT
-                }), (0, r.jsx)(o.Text, {
+                }), (0, i.jsx)(o.Text, {
                     variant: "eyebrow",
                     color: "text-default",
-                    children: A.intl.string(A.t["13/7kX"])
+                    children: h.intl.string(h.t["13/7kX"])
                 })]
-            }), (0, r.jsxs)(o.BJc, {
+            }), (0, i.jsxs)(o.BJc, {
                 direction: "horizontal",
                 align: "center",
                 justify: "space-between",
-                children: [(0, r.jsxs)(o.BJc, {
+                children: [(0, i.jsxs)(o.BJc, {
                     gap: 4,
-                    className: f.gn,
-                    children: [(0, r.jsx)(o.Text, {
+                    className: x.gn,
+                    children: [(0, i.jsx)(o.Text, {
                         variant: "text-sm/medium",
                         color: "text-subtle",
-                        children: A.intl.string(g.default.RZqaJn)
-                    }), (0, r.jsx)(o.Heading, {
+                        children: h.intl.string(g.default.RZqaJn)
+                    }), (0, i.jsx)(o.Heading, {
                         variant: "heading-xl/semibold",
                         color: "text-strong",
-                        children: A.intl.string(e === m.u9.CONTENT_AND_SOCIAL ? A.t["+o1pDZ"] : A.t.OAuOHD)
+                        children: h.intl.string(e === A.u9.CONTENT_AND_SOCIAL ? h.t["+o1pDZ"] : h.t.OAuOHD)
                     })]
-                }), (0, r.jsx)(b, {})]
+                }), (0, i.jsx)(p, {})]
             })]
         })
     }

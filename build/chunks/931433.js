@@ -1,29 +1,13 @@
-/** chunk id: 931433, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    V: () => c
+/** chunk id: 931433, original params: e,t,l (module,exports,require) **/
+l.d(t, {
+    V: () => o
 });
-var r = n(627968),
-    i = n(732955),
-    a = n(652165),
-    o = n(749226);
-let s = e => {
-        (0, a.B4)({
-            skuId: e,
-            onCheckoutSuccess: e => {
-                let {
-                    skuId: t,
-                    entitlements: n
-                } = e;
-                console.log("Orb Checkout Success for SKU: ".concat(t, ". Entitlement(s): "), n, Date.now())
-            },
-            onCloseCallback: () => {
-                console.log("Orb Checkout Closed")
-            }
-        })
-    },
-    l = "1271174907081789524",
-    c = {
+var a = l(627968),
+    n = l(732955),
+    r = l(652165),
+    i = l(749226);
+let s = "1271174907081789524",
+    o = {
         title: "Orb Checkout",
         stories: [{
             name: "Orb Checkout Modals",
@@ -32,13 +16,25 @@ let s = e => {
                 let {
                     skuId: t
                 } = e;
-                return (0, r.jsx)("div", {
-                    className: o.YG,
-                    children: (0, r.jsx)(i.$nd, {
+                return (0, a.jsx)("div", {
+                    className: i.YG,
+                    children: (0, a.jsx)(n.$nd, {
                         onClick: () => {
-                            s(t)
+                            (0, r.B4)({
+                                skuId: t,
+                                onCheckoutSuccess: e => {
+                                    let {
+                                        skuId: t,
+                                        entitlements: l
+                                    } = e;
+                                    console.log(`Orb Checkout Success for SKU: ${t}. Entitlement(s): `, l, Date.now())
+                                },
+                                onCloseCallback: () => {
+                                    console.log("Orb Checkout Closed")
+                                }
+                            })
                         },
-                        text: "Open Orb Checkout for Custom SKU: ".concat(t)
+                        text: `Open Orb Checkout for Custom SKU: ${t}`
                     })
                 })
             },
@@ -56,19 +52,19 @@ let s = e => {
                         skuId: "1332505467980873728",
                         skuName: "Pondering Portal (Deco)"
                     }, {
-                        skuId: l,
+                        skuId: s,
                         skuName: "Oni's Curse (Deco)"
                     }].map(e => {
                         let {
                             skuId: t,
-                            skuName: n
+                            skuName: l
                         } = e;
                         return {
-                            label: n,
+                            label: l,
                             value: t
                         }
                     }),
-                    defaultValue: l
+                    defaultValue: s
                 }
             }
         }]

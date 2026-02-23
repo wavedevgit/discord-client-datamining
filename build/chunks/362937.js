@@ -1,58 +1,57 @@
 /** chunk id: 362937, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    ImportBenefitsFromRoleModal: () => K,
+    ImportBenefitsFromRoleModal: () => q,
     ImportBenefitsFromSubscriptionListingModal: () => F
-}), n(896048), n(228524), n(114821), n(339614);
+});
 var i = n(627968),
     l = n(64700),
     r = n(503698),
     s = n.n(r),
     a = n(158954),
     o = n(311907),
-    c = n(52133),
-    d = n(319060),
+    d = n(52133),
+    c = n(319060),
     m = n(397927),
-    u = n(565645),
-    x = n(444927),
-    h = n(713654),
+    x = n(565645),
+    h = n(444927),
+    u = n(713654),
     g = n(915089),
-    f = n(508675),
-    j = n(201275),
-    p = n(657048),
-    _ = n(95701),
+    j = n(508675),
+    f = n(201275),
+    _ = n(657048),
+    p = n(95701),
     v = n(34457),
-    b = n(769765),
-    N = n(317525),
-    C = n(71393),
+    N = n(769765),
+    C = n(317525),
+    b = n(71393),
     T = n(147925),
-    y = n(240248),
-    S = n(500345),
-    w = n(361588),
-    I = n(417360),
-    A = n(898612),
-    k = n(652215),
-    E = n(985018),
-    B = n(669297);
+    A = n(240248),
+    I = n(500345),
+    S = n(361588),
+    k = n(417360),
+    w = n(898612),
+    y = n(652215),
+    B = n(985018),
+    E = n(669297);
 let M = (0, g.Ld)(),
-    O = (0, g.Ld)(),
-    L = (0, y.xI)(d.A.IMPORT_BENEFITS_MODAL_ROLE_ICON_SIZE);
+    L = (0, g.Ld)(),
+    z = (0, A.xI)(c.A.IMPORT_BENEFITS_MODAL_ROLE_ICON_SIZE);
 
-function z(e) {
-    var t;
+function D(e) {
     let {
-        emojiId: n,
-        emojiName: l,
-        className: r
-    } = e, s = (0, o.bG)([f.Ay], () => null != n ? f.Ay.getCustomEmojiById(n) : void 0);
-    return (0, i.jsx)(u.A, {
-        emojiId: n,
-        emojiName: l,
-        animated: null != (t = null == s ? void 0 : s.animated) && t,
-        className: r
+        emojiId: t,
+        emojiName: n,
+        className: l
+    } = e, r = (0, o.bG)([j.Ay], () => null != t ? j.Ay.getCustomEmojiById(t) : void 0);
+    return (0, i.jsx)(x.A, {
+        emojiId: t,
+        emojiName: n,
+        animated: r?.animated ?? !1,
+        className: l
     })
 }
 
-function D(e) {
+function O(e) {
     let {
         icon: t,
         children: n,
@@ -61,34 +60,34 @@ function D(e) {
         onChange: a
     } = e, o = l || r;
     return (0, i.jsxs)("label", {
-        className: s()(B.nM, {
-            [B.KD]: o,
-            [B.r9]: r
+        className: s()(E.nM, {
+            [E.KD]: o,
+            [E.r9]: r
         }),
         children: [(0, i.jsx)("div", {
-            className: B.N,
+            className: E.N,
             children: t
         }), (0, i.jsx)("div", {
-            className: B.qg,
+            className: E.qg,
             children: n
         }), (0, i.jsxs)("div", {
-            className: B.eF,
+            className: E.eF,
             children: [(0, i.jsx)(m.vN3, {
                 children: (0, i.jsx)("input", {
                     type: "checkbox",
                     checked: o,
                     disabled: r,
-                    className: B.m8,
+                    className: E.m8,
                     onChange: function(e) {
                         a(e.target.checked)
                     }
                 })
             }), (0, i.jsx)("div", {
-                className: B.Ew,
+                className: E.Ew,
                 children: (0, i.jsx)(m.A9s, {
                     size: "md",
                     color: "currentColor",
-                    className: B.pc,
+                    className: E.pc,
                     "aria-hidden": !0
                 })
             })]
@@ -106,18 +105,18 @@ function R(e) {
         onToggleBenefit: a
     } = e, o = l.every(e => s.has(e));
     return l.length > 0 ? (0, i.jsxs)("div", {
-        className: B.uW,
+        className: E.uW,
         children: [(0, i.jsx)(m.Heading, {
             variant: "heading-md/semibold",
             color: "text-strong",
             children: t
         }), l.length - r.size > 1 && (0, i.jsx)("div", {
-            className: B.p_,
-            children: (0, i.jsx)(D, {
+            className: E.p_,
+            children: (0, i.jsx)(O, {
                 icon: (0, i.jsx)(m.fdC, {
                     size: "md",
                     color: "currentColor",
-                    className: B.aL
+                    className: E.aL
                 }),
                 checked: o,
                 onChange: function(e) {
@@ -130,12 +129,12 @@ function R(e) {
                 })
             })
         }), (0, i.jsx)("div", {
-            className: B.p_,
-            children: l.map(e => (0, i.jsxs)(D, {
-                icon: (0, i.jsx)(z, {
+            className: E.p_,
+            children: l.map(e => (0, i.jsxs)(O, {
+                icon: (0, i.jsx)(D, {
                     emojiId: e.emoji_id,
                     emojiName: e.emoji_name,
-                    className: B.aL
+                    className: E.aL
                 }),
                 checked: s.has(e),
                 disabled: r.has(e),
@@ -143,13 +142,13 @@ function R(e) {
                 children: [(0, i.jsx)(m.Text, {
                     color: "text-strong",
                     variant: "text-md/semibold",
-                    children: (0, A.A)(e)
+                    children: (0, w.A)(e)
                 }), (0, i.jsx)(m.Text, {
                     color: "interactive-text-default",
                     variant: "text-sm/normal",
                     children: e.description
                 })]
-            }, (0, S.nh)(e)))
+            }, (0, I.nh)(e)))
         })]
     }) : null
 }
@@ -161,55 +160,55 @@ function F(e) {
         existingChannelBenefits: r,
         existingIntangibleBenefits: s,
         onSubmit: o,
-        onClose: d
-    } = e, u = n.role_benefits.benefits, [x, h] = l.useState(() => new Set(u)), g = l.useMemo(() => u.filter(S.B1), [u]), f = (0, I.A)(g), j = l.useMemo(() => u.filter(S.b1), [u]), p = l.useMemo(() => new Set(f.filter(e => r.some(t => t.ref_id === e.ref_id))), [f, r]), _ = l.useMemo(() => new Set(j.filter(e => s.some(t => (0, c.A)(e, t)))), [s, j]);
+        onClose: c
+    } = e, x = n.role_benefits.benefits, [h, u] = l.useState(() => new Set(x)), g = l.useMemo(() => x.filter(I.B1), [x]), j = (0, k.A)(g), f = l.useMemo(() => x.filter(I.b1), [x]), _ = l.useMemo(() => new Set(j.filter(e => r.some(t => t.ref_id === e.ref_id))), [j, r]), p = l.useMemo(() => new Set(f.filter(e => s.some(t => (0, d.A)(e, t)))), [s, f]);
 
     function v(e, t) {
-        h(n => {
+        u(n => {
             let i = new Set(n);
             return t ? i.add(e) : i.delete(e), i
         })
     }
 
-    function b(e) {
+    function N(e) {
         e.preventDefault();
-        let t = u.filter(e => x.has(e));
-        o(t.filter(S.B1).filter(e => !p.has(e)), t.filter(S.b1).filter(e => !_.has(e))), d()
+        let t = x.filter(e => h.has(e));
+        o(t.filter(I.B1).filter(e => !_.has(e)), t.filter(I.b1).filter(e => !p.has(e))), c()
     }
     return (0, i.jsx)("form", {
-        onSubmit: b,
+        onSubmit: N,
         children: (0, i.jsxs)(a.Modal, {
             transitionState: t,
-            onClose: d,
-            title: E.intl.format(E.t["7zpiYL"], {
+            onClose: c,
+            title: B.intl.format(B.t["7zpiYL"], {
                 tierName: n.name
             }).toString(),
             actions: [{
                 variant: "secondary",
-                text: E.intl.string(E.t["ETE/oC"]),
-                onClick: d
+                text: B.intl.string(B.t["ETE/oC"]),
+                onClick: c
             }, {
                 variant: "primary",
-                text: E.intl.string(E.t["27a21y"]),
-                disabled: 0 === x.size,
-                onClick: b
+                text: B.intl.string(B.t["27a21y"]),
+                disabled: 0 === h.size,
+                onClick: N
             }],
-            children: [0 === f.length && 0 === j.length && (0, i.jsx)(m.Text, {
+            children: [0 === j.length && 0 === f.length && (0, i.jsx)(m.Text, {
                 variant: "text-md/normal",
-                children: E.intl.string(E.t["I+16xv"])
+                children: B.intl.string(B.t["I+16xv"])
             }), (0, i.jsx)(R, {
-                title: E.intl.string(E.t.S2kKzP),
-                selectAllText: E.intl.string(E.t["5Q/fLO"]),
-                benefits: f,
-                dupeBenefits: p,
-                selectedBenefits: x,
-                onToggleBenefit: v
-            }), (0, i.jsx)(R, {
-                title: E.intl.string(E.t.RdwKw7),
-                selectAllText: E.intl.string(E.t.aJPLVE),
+                title: B.intl.string(B.t.S2kKzP),
+                selectAllText: B.intl.string(B.t["5Q/fLO"]),
                 benefits: j,
                 dupeBenefits: _,
-                selectedBenefits: x,
+                selectedBenefits: h,
+                onToggleBenefit: v
+            }), (0, i.jsx)(R, {
+                title: B.intl.string(B.t.RdwKw7),
+                selectAllText: B.intl.string(B.t.aJPLVE),
+                benefits: f,
+                dupeBenefits: p,
+                selectedBenefits: h,
                 onToggleBenefit: v
             })]
         })
@@ -217,62 +216,46 @@ function F(e) {
 }
 
 function G(e) {
-    var t;
     let {
-        guildId: n,
-        role: l,
-        channelCount: r,
-        onSelect: s
-    } = e, a = (0, j.$7)({
-        guildId: n,
-        roleId: l.id,
-        size: L
+        guildId: t,
+        role: n,
+        channelCount: l,
+        onSelect: r
+    } = e, s = (0, f.$7)({
+        guildId: t,
+        roleId: n.id,
+        size: z
     });
     return (0, i.jsxs)(m.DUT, {
-        className: B.xf,
-        onClick: s,
+        className: E.xf,
+        onClick: r,
         children: [(0, i.jsx)("div", {
-            className: B.N,
-            children: null != a ? (0, i.jsx)(p.A, function(e) {
-                for (var t = 1; t < arguments.length; t++) {
-                    var n = null != arguments[t] ? arguments[t] : {},
-                        i = Object.keys(n);
-                    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                        return Object.getOwnPropertyDescriptor(n, e).enumerable
-                    }))), i.forEach(function(t) {
-                        var i;
-                        i = n[t], t in e ? Object.defineProperty(e, t, {
-                            value: i,
-                            enumerable: !0,
-                            configurable: !0,
-                            writable: !0
-                        }) : e[t] = i
-                    })
-                }
-                return e
-            }({}, a)) : (0, i.jsx)(m.iTF, {
+            className: E.N,
+            children: null != s ? (0, i.jsx)(_.A, {
+                ...s
+            }) : (0, i.jsx)(m.iTF, {
                 size: "custom",
                 width: 23,
                 height: 23,
-                color: null != (t = l.colorString) ? t : k.TpD,
-                className: B.bO
+                color: n.colorString ?? y.TpD,
+                className: E.bO
             })
         }), (0, i.jsxs)("div", {
-            className: B.qg,
+            className: E.qg,
             children: [(0, i.jsx)(m.Text, {
                 color: "text-strong",
                 variant: "text-md/normal",
-                className: B.__invalid_benefitTitle,
-                children: l.name
+                className: E.__invalid_benefitTitle,
+                children: n.name
             }), (0, i.jsx)(m.Text, {
                 color: "text-default",
                 variant: "text-sm/normal",
-                children: E.intl.format(E.t["2KzH89"], {
-                    num: r
+                children: B.intl.format(B.t["2KzH89"], {
+                    num: l
                 })
             })]
         }), (0, i.jsx)("div", {
-            className: B.eF,
+            className: E.eF,
             children: (0, i.jsx)(T.A, {
                 direction: T.A.Directions.RIGHT
             })
@@ -280,32 +263,31 @@ function G(e) {
     })
 }
 
-function P(e) {
+function H(e) {
     let {
         guild: t,
         onSelect: n
-    } = e, r = (0, o.bG)([N.A], () => N.A.getSortedRoles(t.id)), s = (0, o.bG)([b.A], () => b.A.getCategories(t.id)), a = l.useMemo(() => s._categories.flatMap(e => s[e.channel.id].filter(e => {
+    } = e, r = (0, o.bG)([C.A], () => C.A.getSortedRoles(t.id)), s = (0, o.bG)([N.A], () => N.A.getCategories(t.id)), a = l.useMemo(() => s._categories.flatMap(e => s[e.channel.id].filter(e => {
         let {
             channel: t
         } = e;
-        return _.JT.has(t.type)
+        return p.JT.has(t.type)
     }).map(e => {
         let {
             channel: t
         } = e;
         return t
-    })), [s]), c = l.useMemo(() => r.flatMap(e => {
-        var t;
-        if ((0, v.Oy)(e) || (null == (t = e.tags) ? void 0 : t.subscription_listing_id) != null || (0, v.sx)(e, k.Lti)) return [];
-        let n = (0, w.A)(a, e).length;
-        return n > 0 ? {
+    })), [s]), d = l.useMemo(() => r.flatMap(e => {
+        if ((0, v.Oy)(e) || e.tags?.subscription_listing_id != null || (0, v.sx)(e, y.Lti)) return [];
+        let t = (0, S.A)(a, e).length;
+        return t > 0 ? {
             role: e,
-            channelCount: n
+            channelCount: t
         } : []
     }), [r, a]);
-    return c.length > 0 ? (0, i.jsx)("div", {
-        className: B.p_,
-        children: c.map(e => (0, i.jsx)(G, {
+    return d.length > 0 ? (0, i.jsx)("div", {
+        className: E.p_,
+        children: d.map(e => (0, i.jsx)(G, {
             guildId: t.id,
             role: e.role,
             channelCount: e.channelCount,
@@ -313,32 +295,32 @@ function P(e) {
         }, e.role.id))
     }) : (0, i.jsx)(m.Text, {
         variant: "text-md/normal",
-        children: E.intl.string(E.t.u09gKk)
+        children: B.intl.string(B.t.u09gKk)
     })
 }
 
-function H(e) {
+function K(e) {
     let {
         onClose: t,
         guildId: n,
         onSelect: l
-    } = e, r = (0, o.bG)([C.A], () => C.A.getGuild(n));
+    } = e, r = (0, o.bG)([b.A], () => b.A.getGuild(n));
     return null == r ? null : (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)(m.rQ0, {
             "data-migration-pending": !0,
             children: [(0, i.jsx)(m.Heading, {
                 id: M,
                 variant: "heading-md/semibold",
-                children: E.intl.string(E.t["3JrZ/P"])
+                children: B.intl.string(B.t["3JrZ/P"])
             }), (0, i.jsx)(m.s_y, {
                 "data-migration-pending": !0,
-                className: B.iT,
+                className: E.iT,
                 onClick: t
             })]
         }), (0, i.jsx)(m.$mQ, {
             "data-migration-pending": !0,
-            className: B.jE,
-            children: (0, i.jsx)(P, {
+            className: E.jE,
+            children: (0, i.jsx)(H, {
                 guild: r,
                 onSelect: l
             })
@@ -355,14 +337,14 @@ function Q(e) {
         onImport: a
     } = e, o = l.useRef(r);
     null != r && (o.current = r);
-    let c = null != r ? r : o.current,
-        d = (0, x.A)(() => {
-            let e = b.A.getCategories(n);
+    let d = r ?? o.current,
+        c = (0, h.A)(() => {
+            let e = N.A.getCategories(n);
             return e._categories.flatMap(t => e[t.channel.id].filter(e => {
                 let {
                     channel: t
                 } = e;
-                return _.JT.has(t.type)
+                return p.JT.has(t.type)
             }).map(e => {
                 let {
                     channel: t
@@ -370,62 +352,61 @@ function Q(e) {
                 return t
             }))
         }),
-        u = l.useMemo(() => (0, w.A)(d, c), [d, c]),
-        [g, f] = l.useState(() => new Set(u.map(e => e.id)));
+        x = l.useMemo(() => (0, S.A)(c, d), [c, d]),
+        [g, j] = l.useState(() => new Set(x.map(e => e.id)));
 
-    function j(e, t) {
-        f(n => {
+    function f(e, t) {
+        j(n => {
             let i = new Set(n);
             return t ? i.add(e) : i.delete(e), i
         })
     }
     return (0, i.jsxs)("form", {
         onSubmit: function(e) {
-            e.preventDefault(), a(u.map(e => e.id).filter(e => g.has(e))), t()
+            e.preventDefault(), a(x.map(e => e.id).filter(e => g.has(e))), t()
         },
-        className: B.ID,
+        className: E.ID,
         children: [(0, i.jsxs)(m.rQ0, {
             "data-migration-pending": !0,
             children: [(0, i.jsx)(m.Heading, {
-                id: O,
+                id: L,
                 variant: "heading-md/semibold",
-                children: E.intl.format(E.t.iuPodG, {
-                    roleName: c.name
+                children: B.intl.format(B.t.iuPodG, {
+                    roleName: d.name
                 })
             }), (0, i.jsx)(m.s_y, {
                 "data-migration-pending": !0,
-                className: B.iT,
+                className: E.iT,
                 onClick: t
             })]
         }), (0, i.jsxs)(m.$mQ, {
             "data-migration-pending": !0,
-            className: B.jE,
-            children: [u.length > 1 && (0, i.jsx)("div", {
-                className: B.p_,
-                children: (0, i.jsx)(D, {
+            className: E.jE,
+            children: [x.length > 1 && (0, i.jsx)("div", {
+                className: E.p_,
+                children: (0, i.jsx)(O, {
                     icon: (0, i.jsx)(m.fdC, {
                         size: "md",
                         color: "currentColor"
                     }),
-                    checked: g.size === u.length,
+                    checked: g.size === x.length,
                     onChange: function(e) {
-                        for (let t of u) j(t.id, e)
+                        for (let t of x) f(t.id, e)
                     },
                     children: (0, i.jsx)(m.Text, {
                         color: "text-strong",
                         variant: "text-md/normal",
-                        children: E.intl.string(E.t["5Q/fLO"])
+                        children: B.intl.string(B.t["5Q/fLO"])
                     })
                 })
             }), (0, i.jsx)("div", {
-                className: B.p_,
-                children: u.map(e => {
-                    var t;
-                    let n = null != (t = (0, h._U)(e.type)) ? t : m.N$i;
-                    return (0, i.jsx)(D, {
+                className: E.p_,
+                children: x.map(e => {
+                    let t = (0, u._U)(e.type) ?? m.N$i;
+                    return (0, i.jsx)(O, {
                         icon: (0, i.jsx)("div", {
-                            className: B.aL,
-                            children: (0, i.jsx)(n, {
+                            className: E.aL,
+                            children: (0, i.jsx)(t, {
                                 size: "custom",
                                 color: "currentColor",
                                 width: "100%",
@@ -433,11 +414,11 @@ function Q(e) {
                             })
                         }),
                         checked: g.has(e.id),
-                        onChange: t => j(e.id, t),
+                        onChange: t => f(e.id, t),
                         children: (0, i.jsx)(m.Text, {
                             color: "text-strong",
                             variant: "text-md/normal",
-                            className: B.__invalid_benefitTitle,
+                            className: E.__invalid_benefitTitle,
                             children: e.name
                         })
                     }, e.id)
@@ -449,11 +430,11 @@ function Q(e) {
                 direction: "horizontal-reverse",
                 children: [(0, i.jsx)(m.Button, {
                     variant: "primary",
-                    text: E.intl.string(E.t["1j8Sow"]),
+                    text: B.intl.string(B.t["1j8Sow"]),
                     type: "submit"
                 }), (0, i.jsx)(m.Button, {
                     variant: "secondary",
-                    text: E.intl.string(E.t["ETE/oC"]),
+                    text: B.intl.string(B.t["ETE/oC"]),
                     onClick: s
                 })]
             })
@@ -461,7 +442,7 @@ function Q(e) {
     })
 }
 
-function K(e) {
+function q(e) {
     let {
         transitionState: t,
         guildId: n,
@@ -471,7 +452,7 @@ function K(e) {
     return (0, i.jsx)(m.EOs, {
         "data-migration-pending": !0,
         transitionState: t,
-        "aria-labelledby": null == a ? M : O,
+        "aria-labelledby": null == a ? M : L,
         parentComponent: "ImportBenefitsModal",
         children: (0, i.jsxs)(m.tN_, {
             contentDisplay: "flex",
@@ -479,7 +460,7 @@ function K(e) {
             width: 440,
             children: [(0, i.jsx)(m.q7S, {
                 id: 0,
-                children: (0, i.jsx)(H, {
+                children: (0, i.jsx)(K, {
                     onClose: r,
                     guildId: n,
                     onSelect: o

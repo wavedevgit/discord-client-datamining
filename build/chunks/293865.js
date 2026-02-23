@@ -1,152 +1,124 @@
 /** chunk id: 293865, original params: e,n,l (module,exports,require) **/
 l.d(n, {
-    A: () => y
+    A: () => C
 });
-var t = l(627968),
-    r = l(64700),
-    a = l(503698),
-    i = l.n(a),
-    s = l(311907),
-    c = l(397927),
-    o = l(736653),
-    d = l(263063),
+var a = l(627968),
+    s = l(64700),
+    t = l(503698),
+    i = l.n(t),
+    r = l(311907),
+    d = l(397927),
+    c = l(736653),
+    o = l(263063),
     u = l(57991),
-    m = l(961973),
-    h = l(997509),
-    f = l(855687),
+    h = l(961973),
+    m = l(997509),
+    x = l(855687),
     g = l(576705),
-    x = l(486020),
-    b = l(652215),
-    j = l(985018),
-    p = l(574885),
-    A = l(66087),
-    _ = l(540725);
+    A = l(486020),
+    _ = l(652215),
+    f = l(985018),
+    j = l(574885),
+    b = l(66087),
+    I = l(540725);
 
-function v(e) {
+function N(e) {
     let {
         guild: n
     } = e, {
         variant: l,
-        icon: r,
-        text: a
-    } = n.features.has(b.GuildFeatures.BANNER) ? {
+        icon: s,
+        text: t
+    } = n.features.has(_.GuildFeatures.BANNER) ? {
         variant: "overlay-secondary",
-        icon: c.XGR,
-        text: j.intl.string(j.t.b0y3DL)
+        icon: d.XGR,
+        text: f.intl.string(f.t.b0y3DL)
     } : {
         variant: "expressive",
-        icon: c._Jp,
-        text: j.intl.string(j.t["+7XY31"])
+        icon: d._Jp,
+        text: f.intl.string(f.t["+7XY31"])
     };
-    return (0, t.jsx)("div", {
-        className: p.SY,
-        children: (0, t.jsx)(c.Button, {
+    return (0, a.jsx)("div", {
+        className: j.SY,
+        children: (0, a.jsx)(d.Button, {
             variant: l,
-            icon: r,
-            text: a,
+            icon: s,
+            text: t,
             onClick: () => {
-                h.A.open(n.id, b.BEX.ONBOARDING, void 0, b.nd0.SERVER_GUIDE)
+                m.A.open(n.id, _.BEX.ONBOARDING, void 0, _.nd0.SERVER_GUIDE)
             }
         })
     })
 }
-let y = r.memo(function(e) {
+let C = s.memo(function(e) {
     let n, {
-            guild: a,
-            titleClassName: h
+            guild: t,
+            titleClassName: m
         } = e,
         {
-            homeHeaderImage: y,
-            isHomeHeaderImageSet: I
+            homeHeaderImage: C,
+            isHomeHeaderImageSet: p
         } = {
-            homeHeaderImage: n = r.useMemo(() => null == a ? null : x.Ay.getGuildHomeHeaderURL({
-                id: a.id,
-                homeHeader: a.homeHeader
-            }), [a]),
+            homeHeaderImage: n = s.useMemo(() => null == t ? null : A.Ay.getGuildHomeHeaderURL({
+                id: t.id,
+                homeHeader: t.homeHeader
+            }), [t]),
             isHomeHeaderImageSet: null != n,
             homeHeaderScroll: 200 * (null != n)
         },
-        N = (0, m.A2)(a.id),
-        C = (0, s.bG)([g.A], () => (0, f.K)(g.A, a)),
-        O = (0, o.Ay)();
-    return (0, t.jsxs)("div", {
-        className: p.wx,
-        children: [(0, t.jsxs)("div", {
-            className: p.w5,
-            children: [(0, t.jsx)("div", {
-                className: i()(p.NC, {
-                    [p.KN]: !I
+        v = (0, h.A2)(t.id),
+        G = (0, r.bG)([g.A], () => (0, x.K)(g.A, t)),
+        y = (0, c.Ay)();
+    return (0, a.jsxs)("div", {
+        className: j.wx,
+        children: [(0, a.jsxs)("div", {
+            className: j.w5,
+            children: [(0, a.jsx)("div", {
+                className: i()(j.NC, {
+                    [j.KN]: !p
                 }),
                 style: {
-                    backgroundImage: "url(".concat(I ? y : "dark" === O ? A : _, ")")
+                    backgroundImage: `url(${p?C:"dark"===y?b:I})`
                 }
-            }), N && (0, t.jsx)(v, {
-                guild: a
+            }), v && (0, a.jsx)(N, {
+                guild: t
             })]
-        }), (0, t.jsx)("div", {
-            className: p.oB,
-            children: (0, t.jsxs)("div", {
-                className: h,
-                children: [(0, t.jsx)(d.A, {
-                    className: p.nr,
-                    guild: a,
-                    size: d.A.Sizes.XLARGE,
+        }), (0, a.jsx)("div", {
+            className: j.oB,
+            children: (0, a.jsxs)("div", {
+                className: m,
+                children: [(0, a.jsx)(o.A, {
+                    className: j.nr,
+                    guild: t,
+                    size: o.A.Sizes.XLARGE,
                     active: !0
-                }), (0, t.jsx)(c.Fmo, {
-                    children: (0, t.jsxs)("div", {
-                        className: p.Bv,
-                        children: [(0, t.jsx)(c.Heading, {
-                            className: p.Bv,
+                }), (0, a.jsx)(d.Fmo, {
+                    children: (0, a.jsxs)("div", {
+                        className: j.Bv,
+                        children: [(0, a.jsx)(d.Heading, {
+                            className: j.Bv,
                             variant: "heading-xxl/bold",
-                            children: a.name
-                        }), (0, t.jsx)(u.A, {
+                            children: t.name
+                        }), (0, a.jsx)(u.A, {
                             size: 24,
-                            guild: a,
+                            guild: t,
                             tooltipPosition: "bottom",
-                            tooltipColor: c.STz.Colors.PRIMARY
-                        }), C && (0, t.jsx)("div", {
+                            tooltipColor: d.STz.Colors.PRIMARY
+                        }), G && (0, a.jsx)("div", {
                             "data-button-hoisted-classname-wrapper": !0,
-                            className: p.ak,
-                            children: (0, t.jsx)(c.Button, {
+                            className: j.ak,
+                            children: (0, a.jsx)(d.Button, {
                                 variant: "secondary",
-                                text: j.intl.string(j.t.VINpSK),
-                                onClick: () => (0, c.mMO)(async () => {
+                                text: f.intl.string(f.t.VINpSK),
+                                onClick: () => (0, d.mMO)(async () => {
                                     let {
                                         default: e
                                     } = await Promise.all([l.e("43600"), l.e("42821")]).then(l.bind(l, 234355));
-                                    return n => {
-                                        var l, r;
-                                        return (0, t.jsx)(e, (l = function(e) {
-                                            for (var n = 1; n < arguments.length; n++) {
-                                                var l = null != arguments[n] ? arguments[n] : {},
-                                                    t = Object.keys(l);
-                                                "function" == typeof Object.getOwnPropertySymbols && (t = t.concat(Object.getOwnPropertySymbols(l).filter(function(e) {
-                                                    return Object.getOwnPropertyDescriptor(l, e).enumerable
-                                                }))), t.forEach(function(n) {
-                                                    var t;
-                                                    t = l[n], n in e ? Object.defineProperty(e, n, {
-                                                        value: t,
-                                                        enumerable: !0,
-                                                        configurable: !0,
-                                                        writable: !0
-                                                    }) : e[n] = t
-                                                })
-                                            }
-                                            return e
-                                        }({}, n), r = r = {
-                                            guild: a,
-                                            source: b.PE1.GUILD_HOME
-                                        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(r)) : (function(e, n) {
-                                            var l = Object.keys(e);
-                                            if (Object.getOwnPropertySymbols) {
-                                                var t = Object.getOwnPropertySymbols(e);
-                                                l.push.apply(l, t)
-                                            }
-                                            return l
-                                        })(Object(r)).forEach(function(e) {
-                                            Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(r, e))
-                                        }), l))
-                                    }
+                                    return n => (0, a.jsx)(e, {
+                                        ...n,
+                                        guild: t,
+                                        source: _.PE1.GUILD_HOME
+                                    })
                                 })
                             })
                         })]

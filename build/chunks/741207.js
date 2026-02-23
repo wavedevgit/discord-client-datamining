@@ -1,80 +1,79 @@
 /** chunk id: 741207, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => f
+    A: () => h
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(311907),
+var s = n(311907),
     l = n(990078),
-    s = n(397927),
+    r = n(397927),
     a = n(71393),
     o = n(576705),
-    c = n(239705),
-    d = n(411335),
+    d = n(239705),
+    c = n(411335),
     u = n(652215),
-    g = n(200700),
-    m = n(985018),
-    p = n(86181);
+    m = n(200700),
+    g = n(985018),
+    x = n(86181);
 
-function f(e) {
-    var t;
+function h(e) {
     let {
-        action: n,
-        triggerType: f,
+        action: t,
+        triggerType: n,
         guildId: h,
-        toggled: b,
-        onToggleAction: x
-    } = e, j = e => () => x(e), _ = (0, c.x)(n.type, n, f), O = null == (t = n.metadata) ? void 0 : t.durationSeconds, v = null != O ? (0, g.getFriendlyDurationString)(O) : null, y = (0, i.bG)([o.A, a.A], () => o.A.can(u.xBc.MODERATE_MEMBERS, a.A.getGuild(h)), [h]);
-    if (null == _) return null;
+        toggled: _,
+        onToggleAction: A
+    } = e, p = e => () => A(e), f = (0, d.x)(t.type, t, n), j = t.metadata?.durationSeconds, N = null != j ? (0, m.getFriendlyDurationString)(j) : null, E = (0, s.bG)([o.A, a.A], () => o.A.can(u.xBc.MODERATE_MEMBERS, a.A.getGuild(h)), [h]);
+    if (null == f) return null;
     let {
-        headerText: A,
-        descriptionText: E,
-        icon: N
-    } = _;
-    return (0, r.jsxs)("div", {
-        className: p.Ik,
-        children: [(0, r.jsx)("div", {
-            className: p.TV,
-            children: (0, r.jsx)(N, {
+        headerText: b,
+        descriptionText: T,
+        icon: C
+    } = f;
+    return (0, i.jsxs)("div", {
+        className: x.Ik,
+        children: [(0, i.jsx)("div", {
+            className: x.TV,
+            children: (0, i.jsx)(C, {
                 size: "md",
                 color: "currentColor",
-                className: p.gE
+                className: x.gE
             })
-        }), (0, r.jsxs)("div", {
-            className: p.xj,
-            children: [(0, r.jsx)(s.Heading, {
+        }), (0, i.jsxs)("div", {
+            className: x.xj,
+            children: [(0, i.jsx)(r.Heading, {
                 variant: "heading-sm/semibold",
-                children: A
-            }), (0, r.jsx)(s.Text, {
+                children: b
+            }), (0, i.jsx)(r.Text, {
                 color: "interactive-text-default",
                 variant: "text-xs/medium",
-                children: E
-            }), b && (0, r.jsxs)(s.Text, {
+                children: T
+            }), _ && (0, i.jsxs)(r.Text, {
                 color: "interactive-text-default",
                 variant: "text-xs/medium",
-                children: [null === v ? null : f === d.uh.MENTION_SPAM ? m.intl.format(m.t.i3lsKD, {
-                    friendlyDurationString: v
-                }) : m.intl.format(m.t.mvHxze, {
-                    friendlyDurationString: v
-                }), y && (0, r.jsx)(s.DUT, {
-                    onClick: j(!0),
-                    className: p._2,
+                children: [null === N ? null : n === c.uh.MENTION_SPAM ? g.intl.format(g.t.i3lsKD, {
+                    friendlyDurationString: N
+                }) : g.intl.format(g.t.mvHxze, {
+                    friendlyDurationString: N
+                }), E && (0, i.jsx)(r.DUT, {
+                    onClick: p(!0),
+                    className: x._2,
                     tag: "span",
                     role: "link",
-                    children: m.intl.string(m.t["0B95RJ"])
+                    children: g.intl.string(g.t["0B95RJ"])
                 })]
             })]
-        }), (0, r.jsx)(l.m, {
-            text: m.intl.format(m.t.wx6Vb9, {}),
-            "aria-label": m.intl.formatToMarkdownString(m.t.wx6Vb9, {}),
-            shouldShow: !y,
-            children: (0, r.jsx)("div", {
-                children: (0, r.jsx)(s.DUT, {
-                    onClick: y ? j(!1) : void 0,
-                    children: (0, r.jsx)(s.P7L, {
-                        checked: b,
-                        disabled: !y
+        }), (0, i.jsx)(l.m, {
+            text: g.intl.format(g.t.wx6Vb9, {}),
+            "aria-label": g.intl.formatToMarkdownString(g.t.wx6Vb9, {}),
+            shouldShow: !E,
+            children: (0, i.jsx)("div", {
+                children: (0, i.jsx)(r.DUT, {
+                    onClick: E ? p(!1) : void 0,
+                    children: (0, i.jsx)(r.P7L, {
+                        checked: _,
+                        disabled: !E
                     })
                 })
             })

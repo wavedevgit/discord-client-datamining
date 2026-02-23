@@ -1,8 +1,9 @@
 /** chunk id: 893943, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    X: () => r
-});
+"use strict";
 
-function r(e) {
+function i(e) {
     return e.length > 0
 }
+n.d(t, {
+    X: () => i
+})

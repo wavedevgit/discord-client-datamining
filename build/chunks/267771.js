@@ -1,20 +1,20 @@
 /** chunk id: 267771, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => s
+    A: () => r
 });
-var r = n(64700),
-    l = n(568065),
-    i = n(652215);
+var i = n(64700),
+    s = n(568065),
+    l = n(652215);
 
-function s(e) {
-    return (0, r.useMemo)(() => {
+function r(e) {
+    return (0, i.useMemo)(() => {
         if (null == e) return 0;
-        let t = (null == e ? void 0 : e.features.has(i.GuildFeatures.PREMIUM_TIER_3_OVERRIDE)) === !0 ? 0 : i.M2T[i.TVA.TIER_3],
-            n = Object.values(l.sy),
-            r = Object.values(l.YV);
-        return n.concat(r).forEach(n => {
-            var r, l;
-            null == n.includedInLevel && (null == (r = null == (l = n.isEnabled) ? void 0 : l.call(n, e.id)) || r) && (t += n.boostPrice)
+        let t = e?.features.has(l.GuildFeatures.PREMIUM_TIER_3_OVERRIDE) === !0 ? 0 : l.M2T[l.TVA.TIER_3],
+            n = Object.values(s.sy),
+            i = Object.values(s.YV);
+        return n.concat(i).forEach(n => {
+            null == n.includedInLevel && (n.isEnabled?.(e.id) ?? !0) && (t += n.boostPrice)
         }), t
     }, [e])
 }

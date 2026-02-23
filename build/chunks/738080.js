@@ -1,31 +1,31 @@
-/** chunk id: 738080, original params: e,t,n (module,exports,require) **/
-n.d(t, {
+/** chunk id: 738080, original params: t,e,n (module,exports,require) **/
+n.d(e, {
     A: () => o
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
 var l = n(556445),
-    i = n(833349),
+    r = n(833349),
     a = n(90644),
     s = n(652215);
 
-function o(e) {
+function o(t) {
     let {
-        activity: t,
+        activity: e,
         user: n,
         guildId: o,
-        channelId: c,
+        channelId: d,
         source: u,
-        onAction: d
-    } = e;
-    return null != t && (0, i.A)(t, s.jUm.SYNC) && (0, a.A)(t) ? (0, r.jsx)(l.A, {
+        onAction: c
+    } = t;
+    return null != e && (0, r.A)(e, s.jUm.SYNC) && (0, a.A)(e) ? (0, i.jsx)(l.A, {
         size: "sm",
         variant: "secondary",
         user: n,
-        activity: t,
-        guildId: null != o ? o : void 0,
-        channelId: c,
+        activity: e,
+        guildId: o ?? void 0,
+        channelId: d,
         source: u,
-        onAction: d
+        onAction: c
     }) : null
 }

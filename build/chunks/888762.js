@@ -1,87 +1,72 @@
 /** chunk id: 888762, original params: t,e,n (module,exports,require) **/
 n.d(e, {
-    default: () => h
-}), n(747238);
+    default: () => u
+});
 var i = n(627968),
     a = n(64700),
-    r = n(158954),
-    s = n(397927),
-    c = n(450510),
-    o = n(350535),
-    l = n(927421),
-    d = n(985018),
-    u = n(290844);
+    s = n(158954),
+    d = n(397927),
+    l = n(450510),
+    c = n(350535),
+    r = n(927421),
+    o = n(985018),
+    h = n(290844);
 
-function h(t) {
+function u(t) {
     let {
         guildId: e,
-        channel: h,
-        keybind: b,
+        channel: u,
+        keybind: k,
         transitionState: p,
-        onClose: y
-    } = t, k = a.useCallback(async () => {
-        (0, c.sF)(c._2.SOUNDBOARD_WHEEL_EDUCATION_MODAL), await y()
-    }, [y]), f = a.useCallback(async () => {
-        await k(), (0, s.mMO)(async () => {
+        onClose: x
+    } = t, y = a.useCallback(async () => {
+        (0, l.sF)(l._2.SOUNDBOARD_WHEEL_EDUCATION_MODAL), await x()
+    }, [x]), _ = a.useCallback(async () => {
+        await y(), (0, d.mMO)(async () => {
             let {
                 default: t
             } = await n.e("90237").then(n.bind(n, 29681));
-            return e => (0, i.jsx)(t, function(t) {
-                for (var e = 1; e < arguments.length; e++) {
-                    var n = null != arguments[e] ? arguments[e] : {},
-                        i = Object.keys(n);
-                    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(t) {
-                        return Object.getOwnPropertyDescriptor(n, t).enumerable
-                    }))), i.forEach(function(e) {
-                        var i;
-                        i = n[e], e in t ? Object.defineProperty(t, e, {
-                            value: i,
-                            enumerable: !0,
-                            configurable: !0,
-                            writable: !0
-                        }) : t[e] = i
-                    })
-                }
-                return t
-            }({}, e))
+            return e => (0, i.jsx)(t, {
+                ...e
+            })
         })
-    }, [k]), j = a.useMemo(() => [{
+    }, [y]), j = a.useMemo(() => [{
         variant: "secondary",
-        text: d.intl.string(d.t.TJ0N99),
-        onClick: f
+        text: o.intl.string(o.t.TJ0N99),
+        onClick: _
     }, {
-        text: d.intl.string(d.t.ZwRzIH),
-        onClick: k,
+        text: o.intl.string(o.t.ZwRzIH),
+        onClick: y,
         variant: "primary"
-    }], [f, k]);
-    return (0, i.jsxs)(r.Modal, {
-        onClose: k,
+    }], [_, y]);
+    return (0, i.jsxs)(s.Modal, {
+        onClose: y,
         actions: j,
         transitionState: p,
-        title: d.intl.string(d.t.yJeV51),
-        children: [(0, i.jsx)(s.Text, {
+        title: o.intl.string(o.t.yJeV51),
+        children: [(0, i.jsx)(d.Text, {
             variant: "text-md/normal",
-            children: d.intl.format(d.t.fq3Swz, {
-                keybind: (0, o.dI)(b.shortcut, !0).split(" + "),
+            children: o.intl.format(o.t.fq3Swz, {
+                keybind: (0, c.dI)(k.shortcut, !0).split(" + "),
                 keybindHook: (t, e) => (0, i.jsx)("span", {
-                    className: u.EY,
-                    children: (0, i.jsx)(s.e7I, {
-                        className: u.d4,
-                        shortcut: (0, o.dI)(b.shortcut, !1)
+                    className: h.EY,
+                    children: (0, i.jsx)(d.e7I, {
+                        className: h.d4,
+                        shortcut: (0, c.dI)(k.shortcut, !1)
                     })
                 }, e),
-                openSettingsHook: (t, e) => (0, i.jsx)(s.MzZ, {
-                    onClick: f,
+                openSettingsHook: (t, e) => (0, i.jsx)(d.MzZ, {
+                    onClick: _,
                     children: t
                 }, e)
             })
         }), (0, i.jsx)("div", {
-            className: u.Rj,
-            children: (0, i.jsx)(l.A, {
+            className: h.Rj,
+            children: (0, i.jsx)(r.A, {
                 width: 372,
                 height: 316,
                 guildId: e,
-                channel: h,
+                channel: u,
                 interactive: !1,
                 keepOpen: !0,
                 onClose: () => {},

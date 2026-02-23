@@ -1,10 +1,10 @@
-/** chunk id: 592074, original params: t,s,a (module,exports,require) **/
-a.d(s, {
-    E: () => p
+/** chunk id: 592074, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    E: () => a
 });
-var i = a(397927),
-    o = a(985018);
+var i = n(397927),
+    s = n(985018);
 
-function p() {
-    (0, i.showToast)((0, i.createToast)(o.intl.string(o.t["TGg/2k"]), i.ToastType.FAILURE))
+function a() {
+    (0, i.showToast)((0, i.createToast)(s.intl.string(s.t["TGg/2k"]), i.ToastType.FAILURE))
 }

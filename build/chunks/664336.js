@@ -1,23 +1,14 @@
-/** chunk id: 664336, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => l
+/** chunk id: 664336, original params: e,t,a (module,exports,require) **/
+a.d(t, {
+    A: () => i
 });
-var r = n(92674);
-class l {
+var n = a(475539);
+class i {
+    top = new n.SpringValue(0);
     handleScroll(e) {
         this.top.set(e.currentTarget.scrollTop)
     }
     get scrollPosition() {
         return this.top
-    }
-    constructor() {
-        ! function(e, t, n) {
-            "top" in e ? Object.defineProperty(e, "top", {
-                value: n,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e.top = n
-        }(this, 0, new r.SpringValue(0))
     }
 }

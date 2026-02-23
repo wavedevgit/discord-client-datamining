@@ -1,26 +1,25 @@
 /** chunk id: 704413, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => u
+    A: () => c
 });
-var r = n(64700),
-    i = n(736653),
-    l = n(253932),
+var i = n(64700),
+    l = n(736653),
+    r = n(253932),
     a = n(862780),
     s = n(21878),
     o = n(951727),
-    c = n(708676);
+    d = n(708676);
 
-function u(e, t) {
-    var n;
-    let u = (0, s.M)(e),
-        d = (0, a.d$)(u.getChannelId())[u.id],
-        p = (0, c.A)(null == (n = u.poll) ? void 0 : n.expiry),
-        m = l.Sf.useSetting(),
-        f = (0, i.Ay)(),
-        g = null != t ? t : f;
-    return r.useMemo(() => (0, o.Ay)(u, d, {
-        animateEmoji: m,
-        theme: g,
-        formattedExpirationLabel: p
-    }), [m, u, d, p, g])
+function c(e, t) {
+    let n = (0, s.M)(e),
+        c = (0, a.d$)(n.getChannelId())[n.id],
+        u = (0, d.A)(n.poll?.expiry),
+        _ = r.Sf.useSetting(),
+        m = (0, l.Ay)(),
+        h = t ?? m;
+    return i.useMemo(() => (0, o.Ay)(n, c, {
+        animateEmoji: _,
+        theme: h,
+        formattedExpirationLabel: u
+    }), [_, n, c, u, h])
 }

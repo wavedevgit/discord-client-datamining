@@ -1,32 +1,32 @@
 /** chunk id: 905586, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => s
+    A: () => r
 });
 var a = n(627968),
-    l = n(397927),
-    r = n(985018),
-    i = n(319728);
-let s = function(e) {
+    i = n(397927),
+    s = n(985018),
+    l = n(319728);
+let r = function(e) {
     let {
         onDesktop: t,
         onConsole: n
     } = e;
-    return (0, a.jsxs)(l.ButtonGroup, {
+    return (0, a.jsxs)(i.ButtonGroup, {
         direction: "vertical",
         fullWidth: !0,
-        className: i.G,
+        className: l.G,
         size: "sm",
-        children: [(0, a.jsx)(l.Button, {
+        children: [(0, a.jsx)(i.Button, {
             onClick: t,
-            text: r.intl.string(r.t["QXc01+"]),
+            text: s.intl.string(s.t["QXc01+"]),
             variant: "secondary",
-            icon: l.kN9,
+            icon: i.kN9,
             iconPosition: "end"
-        }), (0, a.jsx)(l.Button, {
+        }), (0, a.jsx)(i.Button, {
             onClick: n,
-            text: r.intl.string(r.t["8lAfuB"]),
+            text: s.intl.string(s.t["8lAfuB"]),
             variant: "secondary",
-            icon: l._xR,
+            icon: i._xR,
             iconPosition: "end"
         })]
     })

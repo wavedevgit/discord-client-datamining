@@ -2,11 +2,11 @@
 n.d(t, {
     V: () => a
 });
-var l = n(311907),
-    r = n(994500),
-    i = n(652215);
+var i = n(311907),
+    l = n(994500),
+    s = n(652215);
 
 function a(e) {
-    let t = (0, l.bG)([r.A], () => r.A.getRelationshipType(e), [e]);
-    return t === i.eA$.NONE || t === i.eA$.BLOCKED || t === i.eA$.PENDING_INCOMING
+    let t = (0, i.bG)([l.A], () => l.A.getRelationshipType(e), [e]);
+    return t === s.eA$.NONE || t === s.eA$.BLOCKED || t === s.eA$.PENDING_INCOMING
 }

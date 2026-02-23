@@ -1,39 +1,39 @@
 /** chunk id: 743790, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    $: () => d
+    $: () => _
 });
-var r = n(627968),
-    i = n(503698),
-    l = n.n(i),
+var i = n(627968),
+    r = n(503698),
+    a = n.n(r),
     s = n(397927),
-    a = n(573435),
+    l = n(573435),
     o = n(260509),
-    c = n(369752);
+    d = n(369752);
 
-function d(e) {
+function _(e) {
     let {
         guild: t,
         size: n
-    } = e, i = (0, o.Iv)(t, n, !1, !0), d = (0, o.Rb)(t);
-    return (0, r.jsx)(a.Ay, {
-        className: c.zc,
-        mask: a.Ay.Masks.SQUIRCLE,
+    } = e, r = (0, o.Iv)(t, n, !1, !0), _ = (0, o.Rb)(t);
+    return (0, i.jsx)(l.Ay, {
+        className: d.zc,
+        mask: l.Ay.Masks.SQUIRCLE,
         width: n,
         height: n,
-        children: null != i ? (0, r.jsx)("img", {
-            src: i,
+        children: null != r ? (0, i.jsx)("img", {
+            src: r,
             alt: t.name,
             height: n,
             width: n
-        }) : (0, r.jsx)("div", {
-            className: c.FS,
-            children: (0, r.jsx)(s.Text, {
-                className: l()({
-                    [c.ri]: 20 === n
+        }) : (0, i.jsx)("div", {
+            className: d.FS,
+            children: (0, i.jsx)(s.Text, {
+                className: a()({
+                    [d.ri]: 20 === n
                 }),
                 color: "text-subtle",
                 variant: "text-md/semibold",
-                children: d
+                children: _
             })
         })
     })

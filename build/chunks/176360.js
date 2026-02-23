@@ -1,188 +1,160 @@
 /** chunk id: 176360, original params: e,t,n (module,exports,require) **/
-let r, i;
+let i, r;
 n.d(t, {
-    A: () => w
-}), n(896048);
-var l, a = n(735438),
-    s = n.n(a),
-    o = n(311907),
-    c = n(506774),
-    u = n(73153),
-    d = n(488926),
-    p = n(863036),
-    h = n(734057),
-    f = n(652215),
-    g = n(737045);
-
-function m(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-
-function A(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            m(e, t, n[t])
-        })
-    }
-    return e
-}
-
-function _(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
-        }
-        return n
-    })(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-let b = new Set,
-    E = f.XlH.CLOSED,
-    O = !1,
-    y = null,
+    A: () => b
+});
+var l = n(735438),
+    a = n.n(l),
+    s = n(311907),
+    o = n(506774),
+    d = n(73153),
+    c = n(488926),
+    u = n(863036),
+    A = n(734057),
+    h = n(652215),
+    _ = n(737045);
+let m = new Set,
+    p = h.XlH.CLOSED,
+    g = !1,
+    E = null,
     I = null,
-    v = null,
-    S = null,
+    f = null,
     C = null,
+    T = null,
     N = null,
-    T = c.w.get(g.t0) || !1;
+    S = o.w.get(_.t0) || !1;
 
-function j(e) {
+function x(e) {
     let t = e.getGuildId(),
-        n = A({}, e.permissionOverwrites);
-    return null != t && null == n[t] && (n[t] = d.xT(t)), n
+        n = {
+            ...e.permissionOverwrites
+        };
+    return null != t && null == n[t] && (n[t] = c.xT(t)), n
 }
 
-function x() {
-    if (v = p.A.getChannel(), S = p.A.getCategory(), null == v) return !1;
-    let e = v.getGuildId();
-    I = y = j(v), null == y[C] && (C = e), i = null != S, r = d.r(v, S), N = null, O = !1, E = f.XlH.CLOSED, b.clear()
+function v() {
+    if (f = u.A.getChannel(), C = u.A.getCategory(), null == f) return !1;
+    let e = f.getGuildId();
+    I = E = x(f), null == E[T] && (T = e), r = null != C, i = c.r(f, C), N = null, g = !1, p = h.XlH.CLOSED, m.clear()
 }
-class P extends(l = o.Ay.Store) {
+class y extends s.Ay.Store {
+    static displayName = "ChannelSettingsPermissionsStore";
     initialize() {
-        this.waitFor(p.A, h.A)
+        this.waitFor(u.A, A.A)
     }
     hasChanges() {
-        return O
+        return g
     }
     showNotice() {
         return this.hasChanges()
     }
     getPermissionOverwrite(e) {
-        return null == y ? void 0 : y[e]
+        return E?.[e]
     }
     get editedPermissionIds() {
-        return Array.from(b)
+        return Array.from(m)
     }
     get permissionOverwrites() {
-        return y
-    }
-    get selectedOverwriteId() {
-        return C
-    }
-    get formState() {
         return E
     }
-    get isLockable() {
-        return i
-    }
-    get locked() {
-        return r
-    }
-    get channel() {
-        return v
-    }
-    get category() {
-        return S
-    }
-    get advancedMode() {
+    get selectedOverwriteId() {
         return T
     }
+    get formState() {
+        return p
+    }
+    get isLockable() {
+        return r
+    }
+    get locked() {
+        return i
+    }
+    get channel() {
+        return f
+    }
+    get category() {
+        return C
+    }
+    get advancedMode() {
+        return S
+    }
 }
-m(P, "displayName", "ChannelSettingsPermissionsStore");
-let w = new P(u.h, {
+let b = new y(d.h, {
     CHANNEL_SETTINGS_SET_SECTION: function(e) {
         let {
             section: t
         } = e;
-        if (null != v || t !== f.p_A.PERMISSIONS) return !1;
-        x()
+        if (null != f || t !== h.p_A.PERMISSIONS) return !1;
+        v()
     },
-    CHANNEL_SETTINGS_PERMISSIONS_INIT: x,
+    CHANNEL_SETTINGS_PERMISSIONS_INIT: v,
     CHANNEL_SETTINGS_PERMISSIONS_UPDATE_PERMISSION: function(e) {
         let {
             id: t,
             allow: n,
-            deny: i
-        } = e, l = null == y ? void 0 : y[t];
-        if (null == l || null == v) return !1;
-        l = _(A({}, l), {
+            deny: r
+        } = e, l = E?.[t];
+        if (null == l || null == f) return !1;
+        l = {
+            ...l,
             allow: n,
-            deny: i
-        }), y = _(A({}, y), {
+            deny: r
+        }, E = {
+            ...E,
             [t]: l
-        }), b.add(t), E = f.XlH.OPEN, O = !s().isEqual(y, I), r = d.r(v, S)
+        }, m.add(t), p = h.XlH.OPEN, g = !a().isEqual(E, I), i = c.r(f, C)
     },
     CHANNEL_SETTINGS_PERMISSIONS_SELECT_PERMISSION: function(e) {
         let {
             id: t
         } = e;
-        if (null != y && null != y[t]) C = t;
+        if (null != E && null != E[t]) T = t;
         else {
-            if (null == v) return !1;
+            if (null == f) return !1;
             N = t
         }
     },
     CHANNEL_SETTINGS_INIT: function() {
-        p.A.getSection() === f.p_A.PERMISSIONS && x()
+        u.A.getSection() === h.p_A.PERMISSIONS && v()
     },
     CHANNEL_SETTINGS_CLOSE: function() {
-        E = f.XlH.CLOSED, y = null, I = null, v = null, S = null, O = !1, b.clear(), C = null, N = null
+        p = h.XlH.CLOSED, E = null, I = null, f = null, C = null, g = !1, m.clear(), T = null, N = null
     },
     CHANNEL_UPDATES: function(e) {
         let {
             channels: t
         } = e;
-        if (null == v) return !1;
+        if (null == f) return !1;
         let n = !1;
         for (let e of t) !1 !== function(e) {
-            if (null == v || v.id !== e || null == (v = h.A.getChannel(e))) return !1;
-            S = p.A.getCategory();
-            let t = v.getGuildId();
+            if (null == f || f.id !== e || null == (f = A.A.getChannel(e))) return !1;
+            C = u.A.getCategory();
+            let t = f.getGuildId();
             if (null == t) return !1;
-            I = j(v);
+            I = x(f);
             let n = {};
-            return b.forEach(e => {
-                null != y && (n[e] = y[e])
-            }), null == n[t] && null == v.permissionOverwrites[t] && (n[t] = d.xT(t)), null == (y = A({}, v.permissionOverwrites, n))[C] ? C = t : null != N && null != y[N] && (C = N, N = null), r = d.r(v, S), !0
+            return m.forEach(e => {
+                null != E && (n[e] = E[e])
+            }), null == n[t] && null == f.permissionOverwrites[t] && (n[t] = c.xT(t)), null == (E = {
+                ...f.permissionOverwrites,
+                ...n
+            })[T] ? T = t : null != N && null != E[N] && (T = N, N = null), i = c.r(f, C), !0
         }(e.id) && (n = !0);
         return n
     },
     CHANNEL_SETTINGS_PERMISSIONS_SUBMITTING: function() {
-        E = f.XlH.SUBMITTING
+        p = h.XlH.SUBMITTING
     },
     CHANNEL_SETTINGS_PERMISSIONS_SAVE_SUCCESS: function(e) {
         let {
             silent: t
         } = e;
-        t ? E = f.XlH.OPEN : (E = f.XlH.CLOSED, x())
+        t ? p = h.XlH.OPEN : (p = h.XlH.CLOSED, v())
     },
     CHANNEL_SETTINGS_PERMISSIONS_SET_ADVANCED_MODE: function(e) {
         let {
             advancedMode: t
         } = e;
-        T = t, c.w.set(g.t0, t)
+        S = t, o.w.set(_.t0, t)
     }
 })

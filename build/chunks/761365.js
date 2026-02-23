@@ -1,52 +1,51 @@
-/** chunk id: 761365, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    A: () => l
+/** chunk id: 761365, original params: t,e,r (module,exports,require) **/
+r.d(e, {
+    A: () => u
 });
-var r = n(627968),
-    i = n(64700),
-    a = n(359701),
-    o = n(550111),
-    s = n(488189);
-let l = i.memo(function(e) {
+var i = r(627968),
+    l = r(64700),
+    n = r(359701),
+    s = r(550111),
+    a = r(488189);
+let u = l.memo(function(t) {
     let {
-        user: t,
-        nameplate: n,
-        isHighlighted: i,
-        size: l = "default"
-    } = e, c = "small" === l ? 62 : 94, u = "small" === l ? 72 : 110;
-    return (0, r.jsx)("div", {
-        className: s.Dz,
-        children: (0, r.jsxs)("div", {
-            className: s.ur,
-            children: [(0, r.jsx)(a._, {
+        user: e,
+        nameplate: r,
+        isHighlighted: l,
+        size: u = "default"
+    } = t, o = "small" === u ? 62 : 94, d = "small" === u ? 72 : 110;
+    return (0, i.jsx)("div", {
+        className: a.Dz,
+        children: (0, i.jsxs)("div", {
+            className: a.ur,
+            children: [(0, i.jsx)(n._, {
                 showStatus: !0,
-                width: c,
+                width: o,
                 opacity: .7,
-                size: l
-            }), (0, r.jsx)(a._, {
+                size: u
+            }), (0, i.jsx)(n._, {
                 showStatus: !0,
-                width: u,
+                width: d,
                 opacity: .85,
-                size: l
-            }), (0, r.jsx)(o.A, {
-                user: t,
-                nameplate: n,
-                className: s.tZ,
-                isHighlighted: i,
-                showPlaceholderUser: !i,
+                size: u
+            }), (0, i.jsx)(s.A, {
+                user: e,
+                nameplate: r,
+                className: a.tZ,
+                isHighlighted: l,
+                showPlaceholderUser: !l,
                 showStatus: !0,
-                nameplatePreviewSize: "small" === l ? "small" : "default"
-            }), (0, r.jsx)(a._, {
+                nameplatePreviewSize: "small" === u ? "small" : "default"
+            }), (0, i.jsx)(n._, {
                 showStatus: !0,
-                width: u,
+                width: d,
                 opacity: .85,
-                size: l
-            }), (0, r.jsx)(a._, {
+                size: u
+            }), (0, i.jsx)(n._, {
                 showStatus: !0,
-                width: c,
+                width: o,
                 opacity: .7,
-                size: l
+                size: u
             })]
         })
     })

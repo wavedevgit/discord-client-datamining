@@ -1,270 +1,234 @@
-/** chunk id: 439447, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => y
-}), n(65821), n(896048);
-var r, l, i = n(627968),
+/** chunk id: 439447, original params: t,e,n (module,exports,require) **/
+n.d(e, {
+    A: () => m
+});
+var i, l, r = n(627968),
     a = n(64700),
     s = n(499979),
     o = n(451988),
-    c = n(985018);
-
-function u(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-
-function d(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            u(e, t, n[t])
-        })
-    }
-    return e
-}
-var p = ((r = p || {}).ACTIVITY_FEED = "ACTIVITY_FEED", r.ACTIVITY_FEED_NEW = "ACTIVITY_FEED_NEW", r.USER_ACTIVITY = "USER_ACTIVITY", r.GAME_LIBRARY_TIME_PLAYED = "GAME_LIBRARY_TIME_PLAYED", r.GAME_LIBRARY_LAST_PLAYED = "GAME_LIBRARY_LAST_PLAYED", r),
-    f = ((l = f || {}).START = "START", l.END = "END", l.TIME = "TIME", l);
-let m = e => (t, n) => null == n ? "" : c.intl.format(e(), d({
-        time: t
-    }, n)),
-    g = {
+    d = n(985018),
+    u = ((i = u || {}).ACTIVITY_FEED = "ACTIVITY_FEED", i.ACTIVITY_FEED_NEW = "ACTIVITY_FEED_NEW", i.USER_ACTIVITY = "USER_ACTIVITY", i.GAME_LIBRARY_TIME_PLAYED = "GAME_LIBRARY_TIME_PLAYED", i.GAME_LIBRARY_LAST_PLAYED = "GAME_LIBRARY_LAST_PLAYED", i),
+    c = ((l = c || {}).START = "START", l.END = "END", l.TIME = "TIME", l);
+let A = t => (e, n) => null == n ? "" : d.intl.format(t(), {
+        time: e,
+        ...n
+    }),
+    p = {
         ACTIVITY_FEED: {
             START: {
-                [s.pJ.SECONDS]: () => c.intl.string(c.t["ahzZr+"]),
-                [s.pJ.MINUTES]: e => c.intl.formatToPlainString(c.t["03mIHW"], {
-                    time: e
+                [s.pJ.SECONDS]: () => d.intl.string(d.t["ahzZr+"]),
+                [s.pJ.MINUTES]: t => d.intl.formatToPlainString(d.t["03mIHW"], {
+                    time: t
                 }),
-                [s.pJ.HOURS]: e => c.intl.formatToPlainString(c.t.eNoooU, {
-                    time: e
+                [s.pJ.HOURS]: t => d.intl.formatToPlainString(d.t.eNoooU, {
+                    time: t
                 }),
-                [s.pJ.DAYS]: e => c.intl.formatToPlainString(c.t["2rUo/p"], {
-                    time: e
+                [s.pJ.DAYS]: t => d.intl.formatToPlainString(d.t["2rUo/p"], {
+                    time: t
                 })
             },
             END: {
-                [s.pJ.SECONDS]: () => c.intl.string(c.t.EluAd9),
-                [s.pJ.MINUTES]: e => c.intl.formatToPlainString(c.t.BZxG8Z, {
-                    time: e
+                [s.pJ.SECONDS]: () => d.intl.string(d.t.EluAd9),
+                [s.pJ.MINUTES]: t => d.intl.formatToPlainString(d.t.BZxG8Z, {
+                    time: t
                 }),
-                [s.pJ.HOURS]: e => c.intl.formatToPlainString(c.t.cRMUpw, {
-                    time: e
+                [s.pJ.HOURS]: t => d.intl.formatToPlainString(d.t.cRMUpw, {
+                    time: t
                 }),
-                [s.pJ.DAYS]: e => c.intl.formatToPlainString(c.t.yP1T84, {
-                    time: e
+                [s.pJ.DAYS]: t => d.intl.formatToPlainString(d.t.yP1T84, {
+                    time: t
                 }),
-                [s.pJ.WEEKS]: e => c.intl.formatToPlainString(c.t.AWkdqe, {
-                    time: e
+                [s.pJ.WEEKS]: t => d.intl.formatToPlainString(d.t.AWkdqe, {
+                    time: t
                 }),
-                [s.pJ.MONTHS]: e => c.intl.formatToPlainString(c.t.upamA7, {
-                    time: e
+                [s.pJ.MONTHS]: t => d.intl.formatToPlainString(d.t.upamA7, {
+                    time: t
                 }),
-                [s.pJ.YEARS]: e => c.intl.formatToPlainString(c.t.vfMC2h, {
-                    time: e
+                [s.pJ.YEARS]: t => d.intl.formatToPlainString(d.t.vfMC2h, {
+                    time: t
                 })
             }
         },
         ACTIVITY_FEED_NEW: {
             START: {
-                [s.pJ.SECONDS]: m(() => c.t.Bf3PRU),
-                [s.pJ.MINUTES]: m(() => c.t["A9P+dT"]),
-                [s.pJ.HOURS]: m(() => c.t.KwVzfh),
-                [s.pJ.DAYS]: m(() => c.t.hbUpBN)
+                [s.pJ.SECONDS]: A(() => d.t.Bf3PRU),
+                [s.pJ.MINUTES]: A(() => d.t["A9P+dT"]),
+                [s.pJ.HOURS]: A(() => d.t.KwVzfh),
+                [s.pJ.DAYS]: A(() => d.t.hbUpBN)
             },
             END: {
-                [s.pJ.SECONDS]: e => c.intl.formatToPlainString(c.t.C3MTOD, {
-                    seconds: e
+                [s.pJ.SECONDS]: t => d.intl.formatToPlainString(d.t.C3MTOD, {
+                    seconds: t
                 }),
-                [s.pJ.MINUTES]: e => c.intl.formatToPlainString(c.t["GqQ/Y9"], {
-                    minutes: e
+                [s.pJ.MINUTES]: t => d.intl.formatToPlainString(d.t["GqQ/Y9"], {
+                    minutes: t
                 }),
-                [s.pJ.HOURS]: e => c.intl.formatToPlainString(c.t.c5zfWZ, {
-                    hours: e
+                [s.pJ.HOURS]: t => d.intl.formatToPlainString(d.t.c5zfWZ, {
+                    hours: t
                 }),
-                [s.pJ.DAYS]: e => c.intl.formatToPlainString(c.t.amjnaI, {
-                    days: e
+                [s.pJ.DAYS]: t => d.intl.formatToPlainString(d.t.amjnaI, {
+                    days: t
                 })
             }
         },
         USER_ACTIVITY: {
             START: {
-                [s.pJ.SECONDS]: () => c.intl.string(c.t["ahzZr+"]),
-                [s.pJ.MINUTES]: function(e, t) {
-                    let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
-                    return n ? c.intl.formatToPlainString(c.t["03mIHW"], {
-                        time: e
-                    }) : c.intl.formatToPlainString(c.t["vQml+P"], {
-                        time: e
+                [s.pJ.SECONDS]: function(t, e) {
+                    return arguments.length > 2 && void 0 !== arguments[2] && arguments[2], d.intl.string(d.t["ahzZr+"])
+                },
+                [s.pJ.MINUTES]: function(t, e) {
+                    let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
+                        i = arguments.length > 3 && void 0 !== arguments[3] && arguments[3];
+                    return n ? d.intl.formatToPlainString(d.t["03mIHW"], {
+                        time: t
+                    }) : i ? d.intl.formatToPlainString(d.t.w5w79N, {
+                        time: t
+                    }) : d.intl.formatToPlainString(d.t["vQml+P"], {
+                        time: t
                     })
                 },
-                [s.pJ.HOURS]: function(e, t) {
-                    let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
-                    return n ? c.intl.formatToPlainString(c.t.eNoooU, {
-                        time: e
-                    }) : c.intl.formatToPlainString(c.t["4Wq+6x"], {
-                        time: e
+                [s.pJ.HOURS]: function(t, e) {
+                    let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
+                        i = arguments.length > 3 && void 0 !== arguments[3] && arguments[3];
+                    return n ? d.intl.formatToPlainString(d.t.eNoooU, {
+                        time: t
+                    }) : i ? d.intl.formatToPlainString(d.t.EPkGyE, {
+                        time: t
+                    }) : d.intl.formatToPlainString(d.t["4Wq+6x"], {
+                        time: t
                     })
                 },
-                [s.pJ.DAYS]: function(e, t) {
-                    let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
-                    return n ? c.intl.formatToPlainString(c.t["2rUo/p"], {
-                        time: e
-                    }) : c.intl.formatToPlainString(c.t["jN3/fR"], {
-                        time: e
+                [s.pJ.DAYS]: function(t, e) {
+                    let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
+                        i = arguments.length > 3 && void 0 !== arguments[3] && arguments[3];
+                    return n ? d.intl.formatToPlainString(d.t["2rUo/p"], {
+                        time: t
+                    }) : i ? d.intl.formatToPlainString(d.t.V3g3dS, {
+                        time: t
+                    }) : d.intl.formatToPlainString(d.t["jN3/fR"], {
+                        time: t
                     })
                 }
             }
         },
         GAME_LIBRARY_TIME_PLAYED: {
             TIME: {
-                [s.pJ.NONE]: () => c.intl.string(c.t.LqDiCt),
-                [s.pJ.SECONDS]: e => c.intl.formatToPlainString(c.t.xDIDBL, {
-                    time: e
+                [s.pJ.NONE]: () => d.intl.string(d.t.LqDiCt),
+                [s.pJ.SECONDS]: t => d.intl.formatToPlainString(d.t.xDIDBL, {
+                    time: t
                 }),
-                [s.pJ.MINUTES]: e => c.intl.formatToPlainString(c.t.KGqJce, {
-                    time: e
+                [s.pJ.MINUTES]: t => d.intl.formatToPlainString(d.t.KGqJce, {
+                    time: t
                 }),
-                [s.pJ.HOURS]: e => c.intl.formatToPlainString(c.t.OLchUE, {
-                    time: e
+                [s.pJ.HOURS]: t => d.intl.formatToPlainString(d.t.OLchUE, {
+                    time: t
                 })
             }
         },
         GAME_LIBRARY_LAST_PLAYED: {
             END: {
-                [s.pJ.NONE]: () => c.intl.string(c.t.EoWLru),
-                [s.pJ.SECONDS]: () => c.intl.string(c.t.QTHa8b),
-                [s.pJ.MINUTES]: e => c.intl.formatToPlainString(c.t.SVEfcd, {
-                    time: e
+                [s.pJ.NONE]: () => d.intl.string(d.t.EoWLru),
+                [s.pJ.SECONDS]: () => d.intl.string(d.t.QTHa8b),
+                [s.pJ.MINUTES]: t => d.intl.formatToPlainString(d.t.SVEfcd, {
+                    time: t
                 }),
-                [s.pJ.HOURS]: e => c.intl.formatToPlainString(c.t["0Gbusd"], {
-                    time: e
+                [s.pJ.HOURS]: t => d.intl.formatToPlainString(d.t["0Gbusd"], {
+                    time: t
                 }),
-                [s.pJ.DAYS]: e => c.intl.formatToPlainString(c.t.hnPZZ7, {
-                    time: e
+                [s.pJ.DAYS]: t => d.intl.formatToPlainString(d.t.hnPZZ7, {
+                    time: t
                 }),
-                [s.pJ.WEEKS]: e => c.intl.formatToPlainString(c.t.L3fTpL, {
-                    time: e
+                [s.pJ.WEEKS]: t => d.intl.formatToPlainString(d.t.L3fTpL, {
+                    time: t
                 }),
-                [s.pJ.MONTHS]: e => c.intl.formatToPlainString(c.t.xAFWQV, {
-                    time: e
+                [s.pJ.MONTHS]: t => d.intl.formatToPlainString(d.t.xAFWQV, {
+                    time: t
                 }),
-                [s.pJ.YEARS]: e => c.intl.formatToPlainString(c.t["9Yr3NW"], {
-                    time: e
+                [s.pJ.YEARS]: t => d.intl.formatToPlainString(d.t["9Yr3NW"], {
+                    time: t
                 })
             }
         }
     };
 
-function y(e) {
-    var t, n;
-    return n = class extends(t = a.PureComponent) {
+function m(t) {
+    return class extends a.PureComponent {
+        static Locations = u;
+        static Types = c;
+        timer = new o.IX;
+        state = {
+            time: this.getDiff()
+        };
         componentDidMount() {
             this.timer.start(1e4, this.update)
         }
-        componentDidUpdate(e) {
+        componentDidUpdate(t) {
             let {
-                start: t,
+                start: e,
                 end: n,
-                time: r
+                time: i
             } = this.props;
-            (e.start !== t || e.end !== n || e.time !== r) && this.update()
+            (t.start !== e || t.end !== n || t.time !== i) && this.update()
         }
         componentWillUnmount() {
             this.timer.stop()
         }
         getDiff() {
             let {
-                start: e,
-                end: t,
+                start: t,
+                end: e,
                 time: n
             } = this.props;
             if (null != n) return n / 1e3 / 60;
-            let r = Date.now(),
+            let i = Date.now(),
                 l = 0;
-            return null != e ? l = r - e : null != t && (l = r - t), Math.abs(l) / 1e3 / 60
+            return null != t ? l = i - t : null != e && (l = i - e), Math.abs(l) / 1e3 / 60
         }
-        getTimeUnit(e, t, n) {
-            let r = (0, s.Ul)(e, e => (function(e, t, n) {
-                let r = g[n];
-                if (null != r) {
-                    let n = r[t];
-                    if (null != n) return null != n[e]
+        update = () => {
+            this.setState({
+                time: this.getDiff()
+            })
+        };
+        getTimeUnit(t, e, n) {
+            let i = (0, s.Ul)(t, t => (function(t, e, n) {
+                let i = p[n];
+                if (null != i) {
+                    let n = i[e];
+                    if (null != n) return null != n[t]
                 }
                 return !1
-            })(e, n, t));
-            if (null == r) throw Error("Could not get the time unit in PlayTime with time: ".concat(e, " for type: ").concat(n, " in location: ").concat(t));
-            return r
+            })(t, n, e));
+            if (null == i) throw Error(`Could not get the time unit in PlayTime with time: ${t} for type: ${n} in location: ${e}`);
+            return i
         }
         getType() {
             let {
-                start: e,
-                end: t,
+                start: t,
+                end: e,
                 time: n
             } = this.props;
-            return null != e ? "START" : null != t ? "END" : null != n ? "TIME" : null
+            return null != t ? "START" : null != e ? "END" : null != n ? "TIME" : null
         }
         render() {
-            var t, n;
-            let r = this.props,
-                {
-                    location: l,
-                    messageProps: a,
-                    isApplicationStreaming: o
-                } = r,
-                c = function(e, t) {
-                    if (null == e) return {};
-                    var n, r, l, i = {};
-                    if ("u" > typeof Reflect && Reflect.ownKeys) {
-                        for (l = 0, n = Reflect.ownKeys(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
-                        return i
-                    }
-                    if (i = function(e, t) {
-                            if (null == e) return {};
-                            var n, r, l = {},
-                                i = Object.getOwnPropertyNames(e);
-                            for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n]);
-                            return l
-                        }(e, t), Object.getOwnPropertySymbols)
-                        for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
-                    return i
-                }(r, ["location", "messageProps", "isApplicationStreaming"]),
-                {
-                    time: u
-                } = this.state,
-                p = this.getType();
-            if (null == p) return null;
-            let f = this.getTimeUnit(u, l, p),
-                m = g[l][p];
-            if (null == m) return null;
-            let y = m[f],
-                b = Math.floor((0, s.eZ)(u, f));
-            return (0, i.jsx)(e, (t = d({}, c), n = n = {
-                children: null == y ? void 0 : y(b, a, o)
-            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
-                var n = Object.keys(e);
-                if (Object.getOwnPropertySymbols) {
-                    var r = Object.getOwnPropertySymbols(e);
-                    n.push.apply(n, r)
-                }
-                return n
-            })(Object(n)).forEach(function(e) {
-                Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-            }), t))
-        }
-        constructor(...e) {
-            super(...e), u(this, "timer", new o.IX), u(this, "state", {
-                time: this.getDiff()
-            }), u(this, "update", () => {
-                this.setState({
-                    time: this.getDiff()
-                })
+            let {
+                location: e,
+                messageProps: n,
+                isApplicationStreaming: i,
+                enableUserHoverActivities: l,
+                ...a
+            } = this.props, {
+                time: o
+            } = this.state, d = this.getType();
+            if (null == d) return null;
+            let u = this.getTimeUnit(o, e, d),
+                c = p[e][d];
+            if (null == c) return null;
+            let A = c[u],
+                m = Math.floor((0, s.eZ)(o, u));
+            return (0, r.jsx)(t, {
+                ...a,
+                children: A?.(m, n, i, l)
             })
         }
-    }, u(n, "Locations", p), u(n, "Types", f), n
+    }
 }

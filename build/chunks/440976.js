@@ -1,11 +1,12 @@
 /** chunk id: 440976, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => c
-}), n(896048), n(927092), n(212978), n(201528), n(393431), n(752391), n(532706), n(42231), n(232424), n(757074), n(949626), n(767709), n(65162);
-var l, r, i = n(311907),
-    a = n(73153);
+    A: () => r
+}), n(393431), n(532706), n(42231), n(232424), n(949626), n(767709), n(65162);
+var i = n(311907),
+    l = n(73153);
 let s = new Map;
-class o extends(l = i.Ay.Store) {
+class a extends i.Ay.Store {
+    static displayName = "TransientKeyStore";
     getUsers() {
         return s
     }
@@ -16,13 +17,8 @@ class o extends(l = i.Ay.Store) {
             if (t[e] !== n[e]) return !1;
         return !0
     }
-}(r = "displayName") in o ? Object.defineProperty(o, r, {
-    value: "TransientKeyStore",
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
-}) : o[r] = "TransientKeyStore";
-let c = new o(a.h, {
+}
+let r = new a(l.h, {
     CONNECTION_OPEN: function() {
         s.clear()
     },
@@ -30,8 +26,8 @@ let c = new o(a.h, {
         let {
             userId: t,
             key: n
-        } = e, l = new Uint8Array(n);
-        s.set(t, l)
+        } = e, i = new Uint8Array(n);
+        s.set(t, i)
     },
     SECURE_FRAMES_TRANSIENT_KEY_DELETE: function(e) {
         let {

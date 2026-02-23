@@ -1,97 +1,98 @@
 /** chunk id: 885947, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => C
 });
 var r = n(627968),
     l = n(64700),
-    o = n(503698),
-    i = n.n(o),
-    s = n(435371),
-    a = n(397927),
-    c = n(713517),
-    u = n(240248),
+    i = n(503698),
+    s = n.n(i),
+    a = n(435371),
+    o = n(397927),
+    u = n(713517),
+    c = n(240248),
     d = n(341915),
-    p = n(890687),
-    f = n(590202),
-    m = n(971649),
-    v = n(717415),
-    b = n(583235),
-    E = n(985018),
-    g = n(438655);
+    m = n(890687),
+    p = n(590202),
+    E = n(971649),
+    f = n(717415),
+    v = n(583235),
+    h = n(985018),
+    g = n(438655),
+    S = n(681636);
 
-function h() {
+function C() {
     let {
         quest: e,
         sourceQuestContent: t,
         isPortrait: n,
-        onClose: o
-    } = l.useContext(v.VideoQuestModalContext), h = (0, m.go)(), y = (0, p.LS)(e), O = l.useRef(null), {
-        isHoveringOrFocusing: S
-    } = (0, c.A)(O), _ = (0, b.H)({
+        onClose: i
+    } = l.useContext(f.VideoQuestModalContext), C = (0, E.go)(), A = (0, m.LS)(e), x = l.useRef(null), {
+        isHoveringOrFocusing: _
+    } = (0, u.A)(x), b = (0, v.H)({
         quest: e,
-        onClose: o,
+        onClose: i,
         sourceQuestContent: t,
-        impressionId: h
-    }), C = e.config.ctaConfig.subtitle, x = void 0 !== C && !(0, u.uJ)(C);
-    return (0, r.jsx)(s.m_, {
-        text: E.intl.string(E.t.EuHF34),
-        children: (0, r.jsx)(a.DUT, {
-            onClick: () => _(d.uF.VIDEO_MODAL, f.Cy.OPEN_GAME_LINK),
+        impressionId: C
+    }), T = e.config.ctaConfig.subtitle, y = void 0 !== T && !(0, c.uJ)(T);
+    return (0, r.jsx)(a.m_, {
+        text: h.intl.string(h.t.EuHF34),
+        children: (0, r.jsx)(o.DUT, {
+            onClick: () => b(d.uF.VIDEO_MODAL, p.Cy.OPEN_GAME_LINK),
             className: g._S,
             children: (0, r.jsxs)("div", {
-                className: i()(g.hA, g.t8, {
-                    [g.Mc]: y
+                className: s()(S.hA, g.t8, {
+                    [g.Mc]: A
                 }),
-                ref: O,
+                ref: x,
                 children: [(0, r.jsx)("div", {
                     className: g.sB,
-                    children: (0, r.jsx)(a.Heading, {
+                    children: (0, r.jsx)(o.Heading, {
                         variant: "heading-md/medium",
                         color: "text-strong",
-                        className: i()(g.xw, {
+                        className: s()(g.xw, {
                             [g._L]: n
                         }),
                         lineClamp: n ? void 0 : 1,
-                        children: E.intl.format(E.t.EQa7os, {
+                        children: h.intl.format(h.t.EQa7os, {
                             questName: e.config.messages.questName
                         })
                     })
                 }), (0, r.jsxs)("div", {
-                    className: i()(g.sB, {
+                    className: s()(g.sB, {
                         [g.fi]: n
                     }),
                     children: [(0, r.jsx)("div", {
-                        className: i()(g.PV, {
+                        className: s()(g.PV, {
                             [g.WV]: n,
                             [g.mq]: n
                         }),
-                        children: (0, r.jsx)(a.yr3, {
+                        children: (0, r.jsx)(o.yr3, {
                             size: "xs",
-                            color: S ? a.LU0.colors.ICON_STRONG.css : a.LU0.colors.ICON_MUTED.css
+                            color: _ ? o.LU0.colors.ICON_STRONG.css : o.LU0.colors.ICON_MUTED.css
                         })
-                    }), (0, r.jsx)(a.Heading, {
+                    }), (0, r.jsx)(o.Heading, {
                         variant: "heading-sm/medium",
-                        className: i()(g.PV, {
+                        className: s()(g.PV, {
                             [g.WV]: n,
                             [g.mq]: n
                         }),
-                        color: S ? "text-strong" : "text-subtle",
+                        color: _ ? "text-strong" : "text-subtle",
                         lineClamp: 1,
                         children: e.config.messages.gamePublisher
-                    }), x ? (0, r.jsxs)(r.Fragment, {
+                    }), y ? (0, r.jsxs)(r.Fragment, {
                         children: [(0, r.jsx)("div", {
                             "aria-hidden": "true",
-                            className: i()(g.SC, {
+                            className: s()(g.SC, {
                                 [g.b2]: n
                             })
-                        }), (0, r.jsx)(a.Heading, {
-                            className: i()(g.xw, {
+                        }), (0, r.jsx)(o.Heading, {
+                            className: s()(g.xw, {
                                 [g._L]: n
                             }),
                             variant: "heading-sm/medium",
                             lineClamp: n ? void 0 : 1,
-                            color: S ? "text-strong" : "text-subtle",
-                            children: C
+                            color: _ ? "text-strong" : "text-subtle",
+                            children: T
                         })]
                     }) : null]
                 })]

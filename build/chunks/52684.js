@@ -1,19 +1,19 @@
 /** chunk id: 52684, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => c,
-    G: () => a
+    A: () => o,
+    G: () => r
 }), n(321073);
-var r, i = n(311907),
-    l = n(961350),
-    a = ((r = {})[r.END_EARLY = 0] = "END_EARLY", r);
-let o = [];
+var i, l = n(311907),
+    a = n(961350),
+    r = ((i = {})[i.END_EARLY = 0] = "END_EARLY", i);
+let s = [];
 
-function c(e) {
-    let t = (0, i.bG)([l.default], () => l.default.getId()),
+function o(e) {
+    let t = (0, l.bG)([a.default], () => a.default.getId()),
         {
             poll: n
         } = e;
-    if (!e.isPoll() || null == n) return o;
-    let r = [];
-    return n.expiry.isSameOrBefore(Date.now()) || e.author.id !== t || r.push(0), r
+    if (!e.isPoll() || null == n) return s;
+    let i = [];
+    return n.expiry.isSameOrBefore(Date.now()) || e.author.id !== t || i.push(0), i
 }

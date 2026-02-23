@@ -1,273 +1,272 @@
 /** chunk id: 317547, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    Ay: () => R,
-    Kh: () => E,
-    MD: () => C,
-    fh: () => A
-}), n(321073), n(896048);
-var r = n(627968),
-    i = n(64700),
+    Ay: () => L,
+    Kh: () => C,
+    MD: () => y,
+    fh: () => T
+}), n(321073);
+var i = n(627968),
+    s = n(64700),
     l = n(503698),
-    s = n.n(l),
+    r = n.n(l),
     a = n(989349),
     o = n.n(a),
-    c = n(311907),
-    d = n(990078),
+    d = n(311907),
+    c = n(990078),
     u = n(397927),
-    g = n(596719),
-    m = n(105917),
-    p = n(580630),
-    f = n(636194),
-    h = n(971630),
-    b = n(942117),
-    x = n(487552),
-    j = n(311237),
-    _ = n(652215),
-    O = n(311750),
-    v = n(985018),
-    y = n(921503);
-let A = e => {
+    m = n(596719),
+    g = n(105917),
+    x = n(580630),
+    h = n(636194),
+    _ = n(971630),
+    A = n(942117),
+    p = n(487552),
+    f = n(311237),
+    j = n(652215),
+    N = n(311750),
+    E = n(985018),
+    b = n(921503);
+let T = e => {
         let {
             children: t,
             className: n
         } = e;
-        return (0, r.jsx)("div", {
-            className: s()(y.Hn, n),
+        return (0, i.jsx)("div", {
+            className: r()(b.Hn, n),
             children: t
-        })
-    },
-    E = e => {
-        let {
-            children: t
-        } = e;
-        return (0, r.jsx)("div", {
-            className: y.Hn,
-            children: (0, p.$g)(null != t ? t : 0, _.Yri.USD)
-        })
-    },
-    N = e => {
-        let {
-            children: t
-        } = e;
-        return (0, r.jsx)(A, {
-            className: y.fo,
-            children: null != t ? t : "-"
-        })
-    },
-    S = e => {
-        let {
-            children: t
-        } = e;
-        return (0, r.jsx)(A, {
-            className: y.wJ,
-            children: o()(t).utc().format("MMMM YYYY")
-        })
-    },
-    I = e => {
-        var t;
-        let {
-            listingId: n
-        } = e, i = (0, c.bG)([f.A], () => f.A.getSubscriptionListing(n)), l = null != (t = null == i ? void 0 : i.name) ? t : "[".concat(v.intl.string(v.t["4tEmXR"]), "]");
-        return (0, r.jsx)(A, {
-            children: l
         })
     },
     C = e => {
         let {
             children: t
         } = e;
-        return (0, r.jsxs)(A, {
-            className: y.u4,
-            children: [null != t ? t : "-", " ", (0, r.jsx)(u.nys, {
+        return (0, i.jsx)("div", {
+            className: b.Hn,
+            children: (0, x.$g)(t ?? 0, j.Yri.USD)
+        })
+    },
+    I = e => {
+        let {
+            children: t
+        } = e;
+        return (0, i.jsx)(T, {
+            className: b.fo,
+            children: null != t ? t : "-"
+        })
+    },
+    v = e => {
+        let {
+            children: t
+        } = e;
+        return (0, i.jsx)(T, {
+            className: b.wJ,
+            children: o()(t).utc().format("MMMM YYYY")
+        })
+    },
+    S = e => {
+        let {
+            listingId: t
+        } = e, n = (0, d.bG)([h.A], () => h.A.getSubscriptionListing(t)), s = n?.name ?? `[${E.intl.string(E.t["4tEmXR"])}]`;
+        return (0, i.jsx)(T, {
+            children: s
+        })
+    },
+    y = e => {
+        let {
+            children: t
+        } = e;
+        return (0, i.jsxs)(T, {
+            className: b.u4,
+            children: [t ?? "-", " ", (0, i.jsx)(u.nys, {
                 size: "md",
                 color: "currentColor",
-                className: y.BK,
+                className: b.BK,
                 "aria-hidden": !0
             })]
         })
     },
-    T = () => {
-        let e = (0, r.jsx)(d.m, {
-            text: v.intl.string(v.t.q3PkL5),
-            children: (0, r.jsx)(u.mir, {
+    R = () => {
+        let e = (0, i.jsx)(c.m, {
+            text: E.intl.string(E.t.q3PkL5),
+            children: (0, i.jsx)(u.mir, {
                 size: "xs",
                 color: "currentColor",
-                className: y.EU
+                className: b.EU
             })
         });
-        return (0, r.jsxs)(r.Fragment, {
-            children: [v.intl.string(v.t["/MWnxs"]), " ", e]
+        return (0, i.jsxs)(i.Fragment, {
+            children: [E.intl.string(E.t["/MWnxs"]), " ", e]
         })
     },
-    P = () => {
-        let e = (0, r.jsx)(d.m, {
-            text: v.intl.string(v.t.cIGvZI),
-            children: (0, r.jsx)(u.mir, {
+    O = () => {
+        let e = (0, i.jsx)(c.m, {
+            text: E.intl.string(E.t.cIGvZI),
+            children: (0, i.jsx)(u.mir, {
                 size: "xs",
                 color: "currentColor",
-                className: y.Cg
+                className: b.Cg
             })
         });
-        return (0, r.jsxs)(r.Fragment, {
-            children: [v.intl.string(v.t.oypxxw), " ", e]
+        return (0, i.jsxs)(i.Fragment, {
+            children: [E.intl.string(E.t.oypxxw), " ", e]
         })
     },
-    w = [{
+    G = [{
         key: "dropdown",
-        cellClassName: y.pR,
+        cellClassName: b.pR,
         renderHeader: () => null,
         render(e, t) {
             let {
                 expandedRows: n,
-                onToggleExpandRow: i
+                onToggleExpandRow: s
             } = t, l = n.has(e.key);
-            return (0, r.jsx)(u.DUT, {
-                className: s()(y.Hn, y.nn),
-                onClick: () => i(e.key),
-                children: (0, r.jsx)(u._BQ, {
+            return (0, i.jsx)(u.DUT, {
+                className: r()(b.Hn, b.nn),
+                onClick: () => s(e.key),
+                children: (0, i.jsx)(u._BQ, {
                     size: "md",
                     color: "currentColor",
-                    className: s()(y.Rq, {
-                        [y.jH]: l
+                    className: r()(b.Rq, {
+                        [b.jH]: l
                     })
                 })
             })
         }
     }, {
         key: "period",
-        cellClassName: y.Ii,
-        renderHeader: () => v.intl.string(v.t.fThnXa),
+        cellClassName: b.Ii,
+        renderHeader: () => E.intl.string(E.t.fThnXa),
         render(e, t) {
             let {
                 expandedRows: n
-            } = t, i = [(0, r.jsx)(S, {
+            } = t, s = [(0, i.jsx)(v, {
                 children: e.periodStartingAt
             }, e.key)];
             if (n.has(e.key))
-                for (let t in e.ppgs) i.push((0, r.jsx)(I, {
+                for (let t in e.ppgs) s.push((0, i.jsx)(S, {
                     listingId: t
                 }, t));
-            return i
+            return s
         }
     }, {
         key: "amount",
-        cellClassName: s()(y.Fh, y.WI),
-        renderHeader: () => (0, r.jsx)(T, {}),
+        cellClassName: r()(b.Fh, b.WI),
+        renderHeader: () => (0, i.jsx)(R, {}),
         render(e, t) {
             let {
                 expandedRows: n
-            } = t, i = [(0, r.jsx)(E, {
+            } = t, s = [(0, i.jsx)(C, {
                 children: e.amount
             }, e.key)];
             if (n.has(e.key))
                 for (let t in e.ppgs) {
                     let n = e.ppgs[t];
-                    i.push((0, r.jsx)(E, {
-                        children: null == n ? void 0 : n.amount
+                    s.push((0, i.jsx)(C, {
+                        children: n?.amount
                     }, t))
                 }
-            return i
+            return s
         }
     }, {
         key: "status",
-        cellClassName: s()(y.xG, y.WI),
-        renderHeader: () => (0, r.jsx)(P, {}),
+        cellClassName: r()(b.xG, b.WI),
+        renderHeader: () => (0, i.jsx)(O, {}),
         render(e) {
             let {
                 ppgStatus: t,
                 payoutStatus: n,
-                ppgDeferralReasons: i,
+                ppgDeferralReasons: s,
                 periodEndDate: l
-            } = (0, m.Rs)(e);
-            return (0, r.jsx)(N, {
-                children: ((e, t, n, i) => {
-                    let l = null != i ? o()(i).add(15, "days").toISOString() : void 0,
-                        s = (0, h.T4)(l, "MMM D");
+            } = (0, g.Rs)(e);
+            return (0, i.jsx)(I, {
+                children: ((e, t, n, s) => {
+                    let l = null != s ? o()(s).add(15, "days").toISOString() : void 0,
+                        r = (0, _.T4)(l, "MMM D");
                     switch (e) {
-                        case O.U1.OPEN:
-                            return (0, r.jsxs)(r.Fragment, {
-                                children: [null != s ? v.intl.formatToPlainString(v.t.I6YOjS, {
-                                    payoutDate: s
-                                }) : v.intl.string(v.t.G5ATX6), (0, r.jsx)(x.A, {
-                                    className: y.$A
+                        case N.U1.OPEN:
+                            return (0, i.jsxs)(i.Fragment, {
+                                children: [null != r ? E.intl.formatToPlainString(E.t.I6YOjS, {
+                                    payoutDate: r
+                                }) : E.intl.string(E.t.G5ATX6), (0, i.jsx)(p.A, {
+                                    className: b.$A
                                 })]
                             });
-                        case O.U1.CANCELED:
-                            return (0, r.jsxs)(r.Fragment, {
-                                children: [v.intl.string(v.t["0SrNPx"]), (0, r.jsx)(u.aXh, {
+                        case N.U1.CANCELED:
+                            return (0, i.jsxs)(i.Fragment, {
+                                children: [E.intl.string(E.t["0SrNPx"]), (0, i.jsx)(u.aXh, {
                                     size: "md",
                                     color: "currentColor",
-                                    className: y.u5
+                                    className: b.u5
                                 })]
                             });
-                        case O.U1.PAYOUT_DEFERRED:
-                            if ((null == n ? void 0 : n.includes(O.MC.PAYOUT_SEIZED)) === !0) return (0, r.jsxs)(r.Fragment, {
-                                children: [v.intl.string(v.t["0SrNPx"]), (0, r.jsx)(u.aXh, {
+                        case N.U1.PAYOUT_DEFERRED:
+                            if (n?.includes(N.MC.PAYOUT_SEIZED) === !0) return (0, i.jsxs)(i.Fragment, {
+                                children: [E.intl.string(E.t["0SrNPx"]), (0, i.jsx)(u.aXh, {
                                     size: "md",
                                     color: "currentColor",
-                                    className: y.u5
+                                    className: b.u5
                                 })]
                             });
-                            return (0, r.jsxs)(r.Fragment, {
-                                children: [v.intl.string(v.t.OtZ5kz), (0, r.jsx)(j.A, {
-                                    className: y.tK
+                            return (0, i.jsxs)(i.Fragment, {
+                                children: [E.intl.string(E.t.OtZ5kz), (0, i.jsx)(f.A, {
+                                    className: b.tK
                                 })]
                             })
                     }
                     switch (t) {
-                        case O.bp.MANUAL:
-                        case O.bp.OPEN:
-                        case O.bp.PENDING:
-                        case O.bp.PROCESSING:
-                        case O.bp.SUBMITTED:
-                        case O.bp.PENDING_FUNDS:
-                        case O.bp.CANCELED:
-                        case O.bp.ERROR:
-                            return (0, r.jsxs)(r.Fragment, {
-                                children: [null != s ? v.intl.formatToPlainString(v.t.I6YOjS, {
-                                    payoutDate: s
-                                }) : v.intl.string(v.t.ubdQTt), (0, r.jsx)(x.A, {
-                                    className: y.$A
+                        case N.bp.MANUAL:
+                        case N.bp.OPEN:
+                        case N.bp.PENDING:
+                        case N.bp.PROCESSING:
+                        case N.bp.SUBMITTED:
+                        case N.bp.PENDING_FUNDS:
+                        case N.bp.CANCELED:
+                        case N.bp.ERROR:
+                            return (0, i.jsxs)(i.Fragment, {
+                                children: [null != r ? E.intl.formatToPlainString(E.t.I6YOjS, {
+                                    payoutDate: r
+                                }) : E.intl.string(E.t.ubdQTt), (0, i.jsx)(p.A, {
+                                    className: b.$A
                                 })]
                             });
-                        case O.bp.PAID:
-                            return (0, r.jsxs)(r.Fragment, {
-                                children: [v.intl.string(v.t.eoSslJ), (0, r.jsx)(u.yr3, {
+                        case N.bp.PAID:
+                            return (0, i.jsxs)(i.Fragment, {
+                                children: [E.intl.string(E.t.eoSslJ), (0, i.jsx)(u.yr3, {
                                     size: "md",
                                     color: "currentColor",
-                                    className: y.Ql
+                                    className: b.Ql
                                 })]
                             });
-                        case O.bp.DEFERRED:
-                        case O.bp.DEFERRED_INTERNAL:
-                        case O.bp.REJECTED:
-                        case O.bp.RISK_REVIEW:
-                            return (0, r.jsxs)(r.Fragment, {
-                                children: [b.A.getStatusErrorText(t), (0, r.jsx)(u.aXh, {
+                        case N.bp.DEFERRED:
+                        case N.bp.DEFERRED_INTERNAL:
+                        case N.bp.REJECTED:
+                        case N.bp.RISK_REVIEW:
+                            return (0, i.jsxs)(i.Fragment, {
+                                children: [A.A.getStatusErrorText(t), (0, i.jsx)(u.aXh, {
                                     size: "md",
                                     color: "currentColor",
-                                    className: y.u5
+                                    className: b.u5
                                 })]
                             })
                     }
                     return null
-                })(t, n, i, l)
+                })(t, n, s, l)
             })
         }
     }],
-    R = e => {
+    L = e => {
         let {
             payoutsByPeriod: t
-        } = e, [n, l] = i.useState(new Set);
-        return (0, r.jsx)("div", {
-            className: y.CZ,
-            children: (0, r.jsx)(g.A, {
-                columns: w,
+        } = e, [n, l] = s.useState(new Set);
+        return (0, i.jsx)("div", {
+            className: b.CZ,
+            children: (0, i.jsx)(m.A, {
+                columns: G,
                 data: t,
-                className: y.tp,
-                rowClassName: y.nM,
-                headerClassName: y.wx,
+                className: b.tp,
+                rowClassName: b.nM,
+                headerClassName: b.wx,
                 cellProps: {
                     onToggleExpandRow: e => {
                         l(t => {

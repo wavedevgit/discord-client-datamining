@@ -1,34 +1,41 @@
 /** chunk id: 43203, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    $: () => d,
-    A: () => p
+    $: () => A,
+    A: () => h
 });
-var r = n(73153),
-    i = n(846293),
-    l = n(976860),
-    a = n(961350),
-    s = n(837921),
-    o = n(636401),
+var i = n(73153),
+    r = n(846293),
+    l = n(394681),
+    a = n(976860),
+    s = n(961350),
+    o = n(837921),
+    d = n(636401),
     c = n(613057),
     u = n(652215);
-async function d(e, t) {
-    let {
-        invite: n
-    } = await i.Ay.resolveInvite(e, t);
-    if (null == n) throw new o.A({
+async function A(e, t) {
+    let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {},
+        {
+            invite: c
+        } = await r.Ay.resolveInvite(e, t);
+    if (null == c) throw new d.A({
         errorCode: u.Lw6.INVALID_INVITE
-    }, "Invalid invite id: ".concat(e));
-    return a.default.isAuthenticated() ? r.h.dispatch({
+    }, `Invalid invite id: ${e}`);
+    if (null != n && "experiments" in n)
+        for (let e of n.experiments ?? []) e === l.R.definition.id && null != c.guild && l.R.trackExposure({
+            guildId: c.guild.id,
+            location: t
+        });
+    return s.default.isAuthenticated() ? i.h.dispatch({
         type: "INVITE_MODAL_OPEN",
-        invite: n,
+        invite: c,
         code: e,
         context: u.BRT.APP
-    }) : (0, l.bG)(u.BVt.INVITE(e)), s.Ay.focus(), {
-        invite: n,
+    }) : (0, a.bG)(u.BVt.INVITE(e)), o.Ay.focus(), {
+        invite: c,
         code: e
     }
 }
-let p = {
+let h = {
     [u.e$_.OPEN_INVITE]: {
         scope: c.hj,
         async handler(e) {
@@ -37,7 +44,7 @@ let p = {
                     code: t
                 }
             } = e;
-            await d(t, "RPC OPEN_INVITE Handler")
+            await A(t, "RPC OPEN_INVITE Handler")
         }
     }
 }

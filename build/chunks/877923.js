@@ -1,28 +1,28 @@
 /** chunk id: 877923, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => h
 });
-var r = n(627968),
-    i = n(64700),
-    l = n(417597),
-    a = n(451988),
+var i = n(627968),
+    l = n(64700),
+    a = n(417597),
+    r = n(451988),
     s = n(397927),
     o = n(775602),
     c = n(21161),
-    u = n(67414),
-    d = n(147036),
-    p = n(888675),
-    m = n(652215),
-    f = n(731875);
+    d = n(67414),
+    u = n(147036),
+    m = n(888675),
+    _ = n(652215),
+    A = n(731875);
 
-function g(e) {
+function h(e) {
     let {
         giftIntentType: t,
         recipientUser: n,
-        channel: g
-    } = e, _ = (0, l.bG)([o.A], () => o.A.useReducedMotion), h = i.useRef(null), {
-        createMultipleConfettiAt: b
-    } = i.useContext(c.x), y = i.useCallback(e => ({
+        channel: h
+    } = e, f = (0, a.bG)([o.A], () => o.A.useReducedMotion), E = l.useRef(null), {
+        createMultipleConfettiAt: g
+    } = l.useContext(c.x), p = l.useCallback(e => ({
         size: {
             type: "static-random",
             minValue: e.confettiSize - 6,
@@ -40,32 +40,38 @@ function g(e) {
             }
         }
     }), []);
-    return i.useEffect(() => {
-        var e;
-        if (_) return;
-        let t = null == (e = h.current) ? void 0 : e.getBoundingClientRect();
-        if (null == t) return;
-        let n = y({
-                confettiSize: 8
-            }),
-            r = new a.J_(1e3, () => {
-                b(t.left + t.width / 2, t.top + t.height / 2, n, 60)
+    return l.useEffect(() => {
+        if (f) return;
+        let e = E.current;
+        if (null == e) return;
+        let t = null,
+            n = new IntersectionObserver(i => {
+                let [l] = i;
+                l.intersectionRatio < .5 || (n.disconnect(), (t = new r.J_(1e3, () => {
+                    let t = e.getBoundingClientRect(),
+                        n = p({
+                            confettiSize: 8
+                        });
+                    g(t.left + t.width / 2, t.top + t.height / 2, n, 60)
+                })).delay())
+            }, {
+                threshold: .5
             });
-        return r.delay(), () => {
-            r.cancel()
+        return n.observe(e), () => {
+            n.disconnect(), t?.cancel()
         }
-    }, [b, h, _, y]), (0, r.jsx)(p.A, {
-        contentClassName: f.o9,
-        iconContainerClassName: f.zc,
-        iconNode: (0, r.jsx)(s.XFE, {
-            colorClass: f.Kk
+    }, [g, E, f, p]), (0, i.jsx)(m.A, {
+        contentClassName: A.o9,
+        iconContainerClassName: A.zc,
+        iconNode: (0, i.jsx)(s.XFE, {
+            colorClass: A.Kk
         }),
-        children: (0, r.jsx)(u.A, {
-            innerRef: h,
+        children: (0, i.jsx)(d.A, {
+            innerRef: E,
             giftIntentType: t,
             recipientUser: n,
-            analyticsPage: (0, d.DJ)(g),
-            analyticsSection: m.JJy.CHANNEL
+            analyticsPage: (0, u.DJ)(h),
+            analyticsSection: _.JJy.CHANNEL
         })
     })
 }

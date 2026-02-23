@@ -1,21 +1,21 @@
 /** chunk id: 604681, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => i
+    A: () => r
 });
-var r = n(73153);
-let i = {
+var i = n(73153);
+let r = {
     toggleMembersSection() {
-        r.h.dispatch({
+        i.h.dispatch({
             type: "CHANNEL_TOGGLE_MEMBERS_SECTION"
         })
     },
     toggleUserProfileSidebarSection() {
-        r.h.dispatch({
+        i.h.dispatch({
             type: "USER_PROFILE_SIDEBAR_TOGGLE_SECTION"
         })
     },
     toggleSummariesSection() {
-        r.h.dispatch({
+        i.h.dispatch({
             type: "CHANNEL_TOGGLE_SUMMARIES_SECTION"
         })
     }

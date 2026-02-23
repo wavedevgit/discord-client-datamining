@@ -1,46 +1,46 @@
 /** chunk id: 57718, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    Ay: () => y,
-    C8: () => b,
-    LU: () => h
+    Ay: () => f,
+    C8: () => x,
+    LU: () => A
 });
-var r, i, l = n(627968);
+var i, l, r = n(627968);
 n(64700);
 var a = n(503698),
     s = n.n(a),
-    o = n(92674),
-    c = n(827734),
-    u = n(582754),
-    d = n(397927),
-    p = n(890687),
+    o = n(475539),
+    d = n(827734),
+    c = n(582754),
+    u = n(397927),
+    _ = n(890687),
     m = n(579473),
-    f = n(241124),
-    g = n(652215),
-    _ = n(995360),
-    h = ((r = {})[r.SMALL = 24] = "SMALL", r[r.MEDIUM = 32] = "MEDIUM", r),
-    b = ((i = {})[i.SMALL = 2] = "SMALL", i[i.MEDIUM = 8] = "MEDIUM", i);
-let y = function(e) {
+    h = n(241124),
+    p = n(652215),
+    g = n(995360),
+    A = ((i = {})[i.SMALL = 24] = "SMALL", i[i.MEDIUM = 32] = "MEDIUM", i),
+    x = ((l = {})[l.SMALL = 2] = "SMALL", l[l.MEDIUM = 8] = "MEDIUM", l);
+let f = function(e) {
     let {
         className: t,
         logotypeClassName: n,
-        gameTileSize: r = 24,
-        quest: i,
+        gameTileSize: i = 24,
+        quest: l,
         separatorSpacing: a = 2,
-        theme: h = g.NJ8.DARK,
-        withCosponsor: b = !0,
-        withGameTile: y = !0,
-        logotypeStyle: A,
-        onLoadComplete: v
-    } = e, O = (0, u.Mw)(h) ? g.NJ8.DARK : g.NJ8.LIGHT, x = (0, p.a5)(i.id, O), E = b && null != i.config.cosponsorMetadata && null != x;
-    return (0, l.jsxs)("div", {
-        className: s()(_.Iu, t),
-        children: [y && (0, l.jsx)(f.Sn, {
+        theme: A = p.NJ8.DARK,
+        withCosponsor: x = !0,
+        withGameTile: f = !0,
+        logotypeStyle: C,
+        onLoadComplete: E
+    } = e, I = (0, c.Mw)(A) ? p.NJ8.DARK : p.NJ8.LIGHT, b = (0, _.a5)(l.id, I), T = x && null != l.config.cosponsorMetadata && null != b;
+    return (0, r.jsxs)("div", {
+        className: s()(g.Iu, t),
+        children: [f && (0, r.jsx)(h.Sn, {
             id: "QuestPartnerBranding_gameTile",
-            children: e => (0, l.jsx)("img", {
+            children: e => (0, r.jsx)("img", {
                 ref: e,
-                className: _._Y,
+                className: g._Y,
                 alt: "",
-                src: (0, m.tW)(i, m.fY.GAME_TILE, O).url,
+                src: (0, m.tW)(l, m.fY.GAME_TILE, I).url,
                 style: {
                     borderRadius: function(e) {
                         switch (e) {
@@ -49,47 +49,44 @@ let y = function(e) {
                             case 32:
                                 return 4
                         }
-                    }(r),
-                    width: r,
-                    height: r
+                    }(i),
+                    width: i,
+                    height: i
                 },
-                onLoad: v
+                onLoad: E
             })
-        }), (0, l.jsx)(f.Sn, {
+        }), (0, r.jsx)(h.Sn, {
             id: "QuestPartnerBranding_gameLogotype",
-            children: e => (0, l.jsx)(o.animated.img, {
+            children: e => (0, r.jsx)(o.animated.img, {
                 ref: e,
-                className: s()(_.lW, n, {
-                    [_.TO]: E
+                className: s()(g.lW, n, {
+                    [g.TO]: T
                 }),
-                style: A,
-                alt: i.config.messages.gameTitle,
-                src: (0, m.tW)(i, m.fY.LOGO_TYPE, O).url,
-                onLoad: v
+                style: C,
+                alt: l.config.messages.gameTitle,
+                src: (0, m.tW)(l, m.fY.LOGO_TYPE, I).url,
+                onLoad: E
             })
-        }), E && (0, l.jsxs)(l.Fragment, {
-            children: [(0, l.jsx)("div", {
-                className: _.ub,
+        }), T && (0, r.jsxs)(r.Fragment, {
+            children: [(0, r.jsx)("div", {
+                className: g.ub,
                 style: {
-                    margin: "0 ".concat(a, "px")
+                    margin: `0 ${a}px`
                 },
-                children: (0, l.jsx)(d.aoi, {
-                    className: _.JB,
-                    color: c.A.colors.WHITE
+                children: (0, r.jsx)(u.aoi, {
+                    className: g.JB,
+                    color: d.A.colors.WHITE
                 })
-            }), (0, l.jsx)(f.Sn, {
+            }), (0, r.jsx)(h.Sn, {
                 id: "QuestPartnerBranding_cosponsorLogotype",
-                children: e => {
-                    var t, r;
-                    return (0, l.jsx)(o.animated.img, {
-                        ref: e,
-                        className: s()(_.lW, _.TO, n),
-                        style: A,
-                        alt: null != (t = null == (r = i.config.cosponsorMetadata) ? void 0 : r.name) ? t : "",
-                        src: x.url,
-                        onLoad: v
-                    })
-                }
+                children: e => (0, r.jsx)(o.animated.img, {
+                    ref: e,
+                    className: s()(g.lW, g.TO, n),
+                    style: C,
+                    alt: l.config.cosponsorMetadata?.name ?? "",
+                    src: b.url,
+                    onLoad: E
+                })
             })]
         })]
     })

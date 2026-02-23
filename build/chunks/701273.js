@@ -3,43 +3,42 @@
 n.d(t, {
     A: () => m
 });
-var r = n(481613),
-    i = n.n(r),
-    a = n(400253),
-    o = n(49485),
-    s = n(80703),
-    l = n(803306),
-    c = n(976860),
-    u = n(961350),
-    d = n(650048),
-    f = n(954571),
-    p = n(877062),
-    _ = n(652215);
-async function h(e) {
-    var t, n;
-    let r = null == (t = i().os) ? void 0 : t.family;
-    if ("Android" === r || "iOS" === r) {
-        let t = null != (n = u.default.getFingerprint()) ? n : u.default.getId(),
-            r = (0, o.I_)();
-        if (null == t && u.default.isAuthenticated()) try {
-            await (0, l.rQ)(), t = u.default.getId()
-        } catch (e) {}
-        return (0, o.Ay)((0, a.BH)(), {
+var i = n(481613),
+    s = n.n(i),
+    r = n(400253),
+    l = n(49485),
+    a = n(80703),
+    o = n(803306),
+    d = n(976860),
+    c = n(961350),
+    u = n(650048),
+    h = n(954571),
+    _ = n(877062),
+    p = n(652215);
+async function g(e) {
+    let t = s().os?.family;
+    if ("Android" === t || "iOS" === t) {
+        let t = c.default.getFingerprint() ?? c.default.getId(),
+            n = (0, l.I_)();
+        if (null == t && c.default.isAuthenticated()) try {
+            await (0, o.rQ)(), t = c.default.getId()
+        } catch {}
+        return (0, l.Ay)((0, r.BH)(), {
             utmSource: e,
             fingerprint: t,
-            attemptId: r
+            attemptId: n
         })
     }
     return "discord://"
 }
 async function m(e) {
-    let t = await h(e),
-        n = (0, o.X7)(t);
-    null != n && f.default.track(_.HAw.DEEP_LINK_CLICKED, {
-        fingerprint: (0, s.v)(n.fingerprint),
+    let t = await g(e),
+        n = (0, l.X7)(t);
+    null != n && h.default.track(p.HAw.DEEP_LINK_CLICKED, {
+        fingerprint: (0, a.v)(n.fingerprint),
         attempt_id: n.attemptId,
         source: n.utmSource
-    }), p.A.launch(t, e => {
-        e || (0, c.bG)(d.A.fallbackRoute)
+    }), _.A.launch(t, e => {
+        e || (0, d.bG)(u.A.fallbackRoute)
     })
 }

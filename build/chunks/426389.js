@@ -1,211 +1,182 @@
 /** chunk id: 426389, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => U
-}), n(896048);
-var r = n(627968),
-    i = n(64700),
+    A: () => G
+});
+var i = n(627968),
+    r = n(64700),
     l = n(735438),
     a = n.n(l),
     s = n(111956),
     o = n.n(s),
-    c = n(311907),
-    u = n(397927),
-    d = n(73153),
-    p = n(829219),
+    d = n(311907),
+    c = n(397927),
+    u = n(73153),
+    A = n(829219),
     h = n(859703),
-    f = n(341915),
-    g = n(843490),
-    m = n(890687),
-    A = n(639214),
-    _ = n(814793),
-    b = n(219271),
-    E = n(21119),
-    O = n(287809),
-    y = n(943577),
-    I = n(954571),
-    v = n(927813),
-    S = n(279877),
-    C = n(112273),
-    N = n(666290),
-    T = n(928636),
-    j = n(502696),
-    x = n(282447),
-    P = n(652215),
-    w = n(654487),
-    L = n(985018),
-    R = n(23729);
-let D = 15 * v.A.Millis.MINUTE,
-    M = (0, x.A)(function(e) {
+    _ = n(341915),
+    m = n(843490),
+    p = n(890687),
+    g = n(639214),
+    E = n(814793),
+    I = n(219271),
+    f = n(21119),
+    C = n(287809),
+    T = n(943577),
+    N = n(954571),
+    S = n(927813),
+    x = n(279877),
+    v = n(112273),
+    y = n(666290),
+    b = n(928636),
+    O = n(502696),
+    L = n(282447),
+    R = n(652215),
+    P = n(654487),
+    j = n(985018),
+    D = n(23729);
+let M = 15 * S.A.Millis.MINUTE,
+    w = (0, L.A)(function(e) {
         let {
             party: t,
             onUserContextMenu: n,
             onChannelContextMenu: l,
             quest: a
-        } = e, s = i.useRef(null), c = (0, r.jsx)(N.A, {
+        } = e, s = r.useRef(null), d = (0, i.jsx)(y.A, {
             party: t,
             onUserContextMenu: n
-        }), d = (0, r.jsx)(C.A, {
+        }), u = (0, i.jsx)(v.A, {
             party: t,
             onChannelContextMenu: l,
             quest: a
         }), {
-            partiedMembers: p,
+            partiedMembers: A,
             applicationStreams: h,
-            currentActivities: f,
-            voiceChannels: g
-        } = t, m = p.length, A = h.length, _ = f.length, b = g.length > 0, E = i.useCallback(() => {
-            let e = f.filter(e => {
-                var t, n;
-                return (null == (t = e.game) ? void 0 : t.name) != null && (0, I.isGameApplicationType)(null == (n = e.game) ? void 0 : n.type)
-            }).map(e => e.game.name);
-            I.default.track(P.HAw.NOW_PLAYING_CARD_HOVERED, {
-                num_users: m,
-                num_streams: A,
-                num_activities: _,
-                in_voice_channel: b,
+            currentActivities: _,
+            voiceChannels: m
+        } = t, p = A.length, g = h.length, E = _.length, I = m.length > 0, f = r.useCallback(() => {
+            let e = _.filter(e => e.game?.name != null && (0, N.isGameApplicationType)(e.game?.type)).map(e => e.game.name);
+            N.default.track(R.HAw.NOW_PLAYING_CARD_HOVERED, {
+                num_users: p,
+                num_streams: g,
+                num_activities: E,
+                in_voice_channel: I,
                 games_detected: e
             })
-        }, [m, A, _, b, f]), O = i.useMemo(() => o()(E, D), [E]);
-        return null != c || null != d ? (0, r.jsx)(u.YNO, {
+        }, [p, g, E, I, _]), C = r.useMemo(() => o()(f, M), [f]);
+        return null != d || null != u ? (0, i.jsx)(c.YNO, {
             targetElementRef: s,
             position: "left",
             renderPopout: e => {
                 let {
                     closePopout: n
                 } = e;
-                return (0, r.jsx)(j.A, {
+                return (0, i.jsx)(O.A, {
                     party: t,
                     close: n
                 })
             },
             spacing: 8,
             children: (e, t) => {
-                var n, i;
                 let {
-                    isShown: l
+                    isShown: n
                 } = t;
-                return (0, r.jsx)(T.A, (n = function(e) {
-                    for (var t = 1; t < arguments.length; t++) {
-                        var n = null != arguments[t] ? arguments[t] : {},
-                            r = Object.keys(n);
-                        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                            return Object.getOwnPropertyDescriptor(n, e).enumerable
-                        }))), r.forEach(function(t) {
-                            var r;
-                            r = n[t], t in e ? Object.defineProperty(e, t, {
-                                value: r,
-                                enumerable: !0,
-                                configurable: !0,
-                                writable: !0
-                            }) : e[t] = r
-                        })
-                    }
-                    return e
-                }({}, e), i = i = {
+                return (0, i.jsx)(b.A, {
+                    ...e,
                     ref: s,
-                    onMouseEnter: O,
+                    onMouseEnter: C,
                     "aria-haspopup": "menu",
-                    className: R.MP,
-                    active: l,
-                    children: (0, r.jsxs)("div", {
-                        children: [c, d]
+                    className: D.MP,
+                    active: n,
+                    children: (0, i.jsxs)("div", {
+                        children: [d, u]
                     })
-                }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
-                    var n = Object.keys(e);
-                    if (Object.getOwnPropertySymbols) {
-                        var r = Object.getOwnPropertySymbols(e);
-                        n.push.apply(n, r)
-                    }
-                    return n
-                })(Object(i)).forEach(function(e) {
-                    Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
-                }), n))
+                })
             }
         }) : null
     }),
-    k = a().throttle(() => b.u(), 3e5);
+    U = a().throttle(() => I.u(), 3e5);
 
-function U() {
+function G() {
     let {
         nowPlayingCards: e,
         loaded: t,
         needsRefresh: n,
         fetching: l,
         currentUser: a
-    } = (0, c.cf)([y.A, E.A, O.default], () => ({
-        nowPlayingCards: y.A.nowPlayingCards,
-        loaded: y.A.loaded,
-        needsRefresh: E.A.shouldFetch(),
-        fetching: E.A.isFetching(),
-        currentUser: O.default.getCurrentUser()
-    })), s = (0, c.bG)([h.A], () => h.A.quests), o = (0, m.oH)(Array.from(s.values()));
-    i.useEffect(() => (d.h.wait(() => S.O()), () => {
-        d.h.wait(() => S.v())
-    }), [null == a ? void 0 : a.id]), i.useEffect(() => {
-        n && !l && k()
+    } = (0, d.cf)([T.A, f.A, C.default], () => ({
+        nowPlayingCards: T.A.nowPlayingCards,
+        loaded: T.A.loaded,
+        needsRefresh: f.A.shouldFetch(),
+        fetching: f.A.isFetching(),
+        currentUser: C.default.getCurrentUser()
+    })), s = (0, d.bG)([h.A], () => h.A.quests), o = (0, p.oH)(Array.from(s.values()));
+    r.useEffect(() => (u.h.wait(() => x.O()), () => {
+        u.h.wait(() => x.v())
+    }), [a?.id]), r.useEffect(() => {
+        n && !l && U()
     }, [n, l]);
     let {
-        use_api_call: b
-    } = g.M.getConfig({
+        use_api_call: I
+    } = m.M.getConfig({
         location: "NowPlaying"
     }), {
-        questsByPartyId: I,
-        questIdsByPartyId: v
-    } = i.useMemo(() => {
+        questsByPartyId: N,
+        questIdsByPartyId: S
+    } = r.useMemo(() => {
         let t = new Map,
             n = new Map,
-            r = new Set,
-            i = (0, _.$e)(s, w.B3);
+            i = new Set,
+            r = (0, E.$e)(s, P.B3);
         for (let l of e) l.party.currentActivities.forEach(e => {
             let {
                 activity: a
             } = e;
             if (null == a) return;
-            let s = (0, A.nq)(i, a);
-            null == s || r.has(s.id) || (t.set(l.party.id, s), r.add(s.id), n.set(l.party.id, s.id))
+            let s = (0, g.nq)(r, a);
+            null == s || i.has(s.id) || (t.set(l.party.id, s), i.add(s.id), n.set(l.party.id, s.id))
         });
         return {
             questsByPartyId: t,
             questIdsByPartyId: n
         }
-    }, [e, s, o]), C = i.useMemo(() => new Set(Array.from(v.values())), [v]);
-    i.useEffect(() => {
-        b && C.size > 0 && (0, p.yO)(Array.from(C), f.uF.ACTIVITY_PANEL, "NowPlaying")
-    }, [C, b]);
-    let N = (0, c.bG)([h.A], () => h.A.earnedQuestForPlacement.get(f.uF.ACTIVITY_PANEL), []),
-        T = i.useMemo(() => {
-            if (!b) return I;
-            if (null == N) return new Map;
+    }, [e, s, o]), v = r.useMemo(() => new Set(Array.from(S.values())), [S]);
+    r.useEffect(() => {
+        I && v.size > 0 && (0, A.yO)(Array.from(v), _.uF.ACTIVITY_PANEL, "NowPlaying")
+    }, [v, I]);
+    let y = (0, d.bG)([h.A], () => h.A.earnedQuestForPlacement.get(_.uF.ACTIVITY_PANEL), []),
+        b = r.useMemo(() => {
+            if (!I) return N;
+            if (null == y) return new Map;
             let e = new Map;
-            for (let [t, n] of v.entries()) {
-                let r = N.quests.get(n);
-                null != r && e.set(t, r)
+            for (let [t, n] of S.entries()) {
+                let i = y.quests.get(n);
+                null != i && e.set(t, i)
             }
             return e
-        }, [b, N, I, v]),
-        j = null;
-    return t ? j = e.length > 0 ? e.map(e => {
+        }, [I, y, N, S]),
+        O = null;
+    return t ? O = e.length > 0 ? e.map(e => {
         let {
             party: t
         } = e;
-        return (0, r.jsx)(M, {
+        return (0, i.jsx)(w, {
             party: t,
-            quest: T.get(t.id)
+            quest: b.get(t.id)
         }, t.id)
-    }) : (0, r.jsxs)("div", {
-        className: R.aM,
-        children: [(0, r.jsx)(u.Heading, {
+    }) : (0, i.jsxs)("div", {
+        className: D.aM,
+        children: [(0, i.jsx)(c.Heading, {
             variant: "heading-md/semibold",
-            className: R.jU,
-            children: L.intl.string(L.t["ngJ/5u"])
-        }), (0, r.jsx)(u.Text, {
+            className: D.jU,
+            children: j.intl.string(j.t["ngJ/5u"])
+        }), (0, i.jsx)(c.Text, {
             color: "none",
-            className: R.BI,
+            className: D.BI,
             variant: "text-sm/normal",
-            children: L.intl.string(L.t["99ZWxQ"])
+            children: j.intl.string(j.t["99ZWxQ"])
         })]
-    }) : (0, r.jsx)("div", {
-        className: R.aM,
-        children: (0, r.jsx)(u.y$y, {})
+    }) : (0, i.jsx)("div", {
+        className: D.aM,
+        children: (0, i.jsx)(c.y$y, {})
     })
 }

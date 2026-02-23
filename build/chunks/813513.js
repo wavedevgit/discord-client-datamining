@@ -1,37 +1,40 @@
 /** chunk id: 813513, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => c
-}), n(896048);
-var r = n(627968);
+    A: () => u
+});
+var i = n(627968);
 n(64700);
-var l = n(397927),
-    i = n(685399),
-    s = n(667936),
-    a = n(879349),
-    o = n(439792);
+var s = n(503698),
+    l = n.n(s),
+    r = n(397927),
+    a = n(685399),
+    o = n(667936),
+    c = n(879349),
+    d = n(439792);
 
-function c(e) {
+function u(e) {
     let {
         channel: t,
-        onAction: n
-    } = e, c = (0, i.Ay)(t), u = Array.from((0, i.Rz)(c).values());
-    return 0 === u.length ? null : (0, r.jsxs)(l.HOs, {
-        className: o.kL,
-        children: [(0, r.jsx)("div", {
-            className: o.oT,
-            children: (0, r.jsx)(a.A, {
+        onAction: n,
+        isStandardGap: s
+    } = e, u = (0, a.Ay)(t), h = Array.from((0, a.Rz)(u).values());
+    return 0 === h.length ? null : (0, i.jsxs)(r.HOs, {
+        className: l()(d.kL, {
+            [d.iA]: s
+        }),
+        children: [(0, i.jsx)("div", {
+            className: d.oT,
+            children: (0, i.jsx)(c.A, {
                 channel: t
             })
-        }), (0, r.jsx)("div", {
-            className: o.zN
-        }), u.map((e, l) => {
-            var i;
-            return (0, r.jsx)(s.A, {
-                embeddedApp: e,
-                presenceActivity: null != (i = e.presenceActivity) ? i : void 0,
-                channel: t,
-                onAction: n
-            }, l)
-        })]
+        }), (0, i.jsx)("div", {
+            className: d.zN
+        }), h.map((e, s) => (0, i.jsx)(o.A, {
+            embeddedApp: e,
+            presenceActivity: e.presenceActivity ?? void 0,
+            channel: t,
+            onAction: n
+        }, s))]
     })
 }

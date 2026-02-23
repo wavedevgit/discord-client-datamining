@@ -1,53 +1,53 @@
 /** chunk id: 379082, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => m
-}), n(896048);
-var r = n(64700),
-    i = n(989349),
-    l = n.n(i),
-    s = n(311907),
-    a = n(71393),
+    A: () => A
+});
+var i = n(64700),
+    s = n(989349),
+    a = n.n(s),
+    r = n(311907),
+    l = n(71393),
     o = n(580630),
     c = n(599941),
     d = n(636194),
     u = n(624456),
     _ = n(652215),
-    p = n(985018);
+    m = n(985018);
 
-function m(e) {
+function A(e) {
     let t = (0, u.M)(e),
-        n = (0, s.bG)([d.A], () => d.A.getSubscriptionListingForPlan(t)),
-        i = (0, s.bG)([d.A], () => null != n ? d.A.getSubscriptionGroupListingForSubscriptionListing(n.id) : null),
-        m = (0, s.bG)([a.A], () => a.A.getGuild(null == i ? void 0 : i.guild_id)),
-        [g, A] = r.useState(!1),
+        n = (0, r.bG)([d.A], () => d.A.getSubscriptionListingForPlan(t)),
+        s = (0, r.bG)([d.A], () => null != n ? d.A.getSubscriptionGroupListingForSubscriptionListing(n.id) : null),
+        A = (0, r.bG)([l.A], () => l.A.getGuild(s?.guild_id)),
+        [g, h] = i.useState(!1),
         {
-            fetchSubscriptionsSettings: f
+            fetchSubscriptionsSettings: x
         } = (0, c.XE)();
-    r.useEffect(() => {
-        g && null != m && null == d.A.getSubscriptionSettings(m.id) && f(m.id)
-    }, [g, m, f]);
-    let b = null == n ? void 0 : function(e) {
+    i.useEffect(() => {
+        g && null != A && null == d.A.getSubscriptionSettings(A.id) && x(A.id)
+    }, [g, A, x]);
+    let p = null == n ? void 0 : function(e) {
         let {
             subscription: t
-        } = e, n = l()(t.currentPeriodEnd).format("M/D/YY"), r = null != t.price ? (0, o.$g)(t.price, t.currency) : "", i = l()(t.createdAt).format("M/D/YY"), s = t.status === _.Dmq.CANCELED, a = t.status === _.Dmq.PAST_DUE, c = t.hasActiveTrial;
+        } = e, n = a()(t.currentPeriodEnd).format("M/D/YY"), i = null != t.price ? (0, o.$g)(t.price, t.currency) : "", s = a()(t.createdAt).format("M/D/YY"), r = t.status === _.Dmq.CANCELED, l = t.status === _.Dmq.PAST_DUE, c = t.hasActiveTrial;
         return {
-            memberSince: i,
+            memberSince: s,
             nextRenewalDate: n,
-            nextRenewalLabel: s ? p.intl.string(p.t.UAfot2) : p.intl.string(p.t.CVjLcM),
-            subscriptionPrice: r,
-            isCancelled: s,
-            isPastDue: a,
+            nextRenewalLabel: r ? m.intl.string(m.t.UAfot2) : m.intl.string(m.t.CVjLcM),
+            subscriptionPrice: i,
+            isCancelled: r,
+            isPastDue: l,
             isTrial: c
         }
     }({
         subscription: e
     });
     return {
-        guild: m,
+        guild: A,
         expanded: g,
-        handleToggleExpanded: () => A(e => !e),
+        handleToggleExpanded: () => h(e => !e),
         listing: n,
-        groupListing: i,
-        subscriptionInfo: b
+        groupListing: s,
+        subscriptionInfo: p
     }
 }

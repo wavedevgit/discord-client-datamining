@@ -1,113 +1,108 @@
 /** chunk id: 510790, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    f: () => C
-}), n(747238);
-var r = n(627968),
-    i = n(64700),
-    l = n(735438),
+    f: () => S
+});
+var i = n(627968),
+    l = n(64700),
+    r = n(735438),
     a = n(110259),
     s = n(239947),
     o = n(934551),
-    c = n(97808),
-    u = n(732955),
-    d = n(397927),
-    p = n(139286),
+    d = n(97808),
+    c = n(732955),
+    u = n(397927),
+    _ = n(139286),
     m = n(520117),
-    f = n(793943),
-    g = n(763754),
-    _ = n(973654),
-    h = n(954571),
-    b = n(467135),
-    y = n(644235),
-    A = n(153469),
-    v = n(652215),
-    O = n(520650),
-    x = n(985018),
-    E = n(294456);
-let j = e => e.map(e => "#".concat(e)),
-    C = e => {
+    h = n(793943),
+    p = n(763754),
+    g = n(973654),
+    A = n(954571),
+    x = n(467135),
+    f = n(644235),
+    C = n(153469),
+    E = n(652215),
+    I = n(520650),
+    b = n(985018),
+    T = n(294456);
+let v = e => e.map(e => `#${e}`),
+    S = e => {
         let {
             message: t
         } = e, {
             sharedClientTheme: n
         } = t, {
-            setAll: i
-        } = (0, b.ko)();
-        return void 0 === n ? null : (0, r.jsxs)("div", {
-            className: E.kL,
-            children: [(0, r.jsx)(I, {
+            setAll: l
+        } = (0, x.ko)();
+        return void 0 === n ? null : (0, i.jsxs)("div", {
+            className: T.kL,
+            children: [(0, i.jsx)(y, {
                 message: t
-            }), (0, r.jsx)(u.$nd, {
-                text: x.intl.string(x.t.SKNnqq),
+            }), (0, i.jsx)(c.$nd, {
+                text: b.intl.string(b.t.SKNnqq),
                 fullWidth: !0,
                 variant: "primary",
                 onClick: () => {
-                    h.default.track(v.HAw.CUSTOM_THEME_SHARE_PREVIEWED, {}), (0, f.nf)(f.HP.CUSTOM_THEME, {
-                        from: f.xv.SHARE_MESSAGE
-                    }), i({
-                        colors: j(n.colors),
+                    A.default.track(E.HAw.CUSTOM_THEME_SHARE_PREVIEWED, {}), (0, h.nf)(h.HP.CUSTOM_THEME, {
+                        from: h.xv.SHARE_MESSAGE
+                    }), l({
+                        colors: v(n.colors),
                         chassisMixAmount: n.base_mix,
                         gradientAngle: n.gradient_angle
-                    }), (0, _.GQ)((0, y.PC)(n.base_theme))
+                    }), (0, g.GQ)((0, f.PC)(n.base_theme))
                 }
             })]
         })
     },
-    I = e => {
-        let t, n, u, {
-                message: f
+    y = e => {
+        let t, n, c, {
+                message: h
             } = e,
             {
-                sharedClientTheme: _
-            } = f,
-            h = (0, g.Ay)(f),
-            b = i.useMemo(() => (0, l.once)(() => {
-                (0, p.x)({
+                sharedClientTheme: g
+            } = h,
+            A = (0, p.Ay)(h),
+            x = l.useMemo(() => (0, r.once)(() => {
+                (0, _.x)({
                     type: a.ImpressionTypes.VIEW,
                     name: s.I.CUSTOM_THEME_SHARE,
                     properties: {}
                 })
             }), []),
-            y = (0, m.A)({
+            f = (0, m.A)({
                 onVisible: () => {
-                    b()
+                    x()
                 },
                 threshold: 1,
                 minTimeVisibleMs: 200
             }),
-            v = i.useMemo(() => {
-                var e;
-                return void 0 === _ ? "" : (0, A.V9)(j(_.colors), null != (e = _.gradient_angle) ? e : 0)
-            }, [_]);
-        return void 0 === _ ? null : (0, r.jsxs)("div", {
-            className: E.pS,
-            ref: y,
-            children: [(0, r.jsx)("div", {
-                className: E.sl,
+            E = l.useMemo(() => void 0 === g ? "" : (0, C.V9)(v(g.colors), g.gradient_angle ?? 0), [g]);
+        return void 0 === g ? null : (0, i.jsxs)("div", {
+            className: T.pS,
+            ref: f,
+            children: [(0, i.jsx)("div", {
+                className: T.sl,
                 style: {
-                    background: "".concat(v)
+                    background: `${E}`
                 }
-            }), (0, r.jsxs)("div", {
-                className: E.Ix,
-                children: [(0, r.jsxs)(d.Heading, {
+            }), (0, i.jsxs)("div", {
+                className: T.Ix,
+                children: [(0, i.jsxs)(u.Heading, {
                     variant: "heading-md/semibold",
-                    className: E.qP,
-                    children: [x.intl.string(O.default.KSBBpC), " ", (0, r.jsx)(o.NitroWheelIcon, {})]
-                }), (0, r.jsx)(d.Text, {
+                    className: T.qP,
+                    children: [b.intl.string(I.default.KSBBpC), " ", (0, i.jsx)(o.NitroWheelIcon, {})]
+                }), (0, i.jsx)(u.Text, {
                     variant: "text-sm/medium",
                     color: "text-subtle",
-                    className: E.Tb,
-                    children: (t = "".concat(x.intl.format(O.default.fQPSEf, {
-                        username: "__USERNAME__"
-                    })), n = f.author, u = h.nick, t.split(" ").map((e, t) => "__USERNAME__" !== e ? (0, r.jsxs)(i.Fragment, {
+                    className: T.Tb,
+                    children: (t = `${b.intl.format(I.default.fQPSEf,{username:"__USERNAME__"})}`, n = h.author, c = A.nick, t.split(" ").map((e, t) => "__USERNAME__" !== e ? (0, i.jsxs)(l.Fragment, {
                         children: [e, " "]
-                    }, t) : (0, r.jsxs)("span", {
-                        className: E.H,
-                        children: [(0, r.jsx)(c.eu, {
-                            "aria-label": u,
+                    }, t) : (0, i.jsxs)("span", {
+                        className: T.H,
+                        children: [(0, i.jsx)(d.eu, {
+                            "aria-label": c,
                             src: n.getAvatarURL(null, 20),
-                            size: d._3J.SIZE_20
-                        }), " ", u, " "]
+                            size: u._3J.SIZE_20
+                        }), " ", c, " "]
                     }, t)))
                 })]
             })]

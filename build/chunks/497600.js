@@ -1,46 +1,46 @@
 /** chunk id: 497600, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => b
+    A: () => g
 });
 var l = n(627968);
 n(64700);
-var r = n(397927),
-    i = n(688810),
-    a = n(612630),
-    o = n(657331),
-    s = n(961350),
-    d = n(351906),
+var i = n(397927),
+    a = n(688810),
+    r = n(612630),
+    d = n(657331),
+    o = n(961350),
+    s = n(351906),
     u = n(652215),
     c = n(518477),
     A = n(985018);
 
-function b(e) {
+function g(e) {
     let {
         user: t,
         guildId: n,
-        channelId: b,
-        context: g
+        channelId: g,
+        context: m
     } = e, {
-        id: f
+        id: b
     } = t, {
-        loading: m,
-        note: p
-    } = (0, a.A)(f), O = !m && null != p && p.length > 0, y = g === u.BRT.POPOUT || g === u.BRT.OVERLAY, {
-        analyticsLocations: v
-    } = (0, i.Ay)();
-    return f === s.default.getId() || d.A.hidePersonalInformation || y ? null : (0, l.jsx)(r.Drp, {
+        loading: E,
+        note: f
+    } = (0, r.A)(b), h = !E && null != f && f.length > 0, x = m === u.BRT.POPOUT || m === u.BRT.OVERLAY, {
+        analyticsLocations: M
+    } = (0, a.Ay)();
+    return b === o.default.getId() || s.A.hidePersonalInformation || x ? null : (0, l.jsx)(i.Drp, {
         id: "note",
-        label: m ? A.intl.string(A.t["WLKx/9"]) : O ? A.intl.string(A.t.sHHsOM) : A.intl.string(A.t.Dglxrf),
+        label: E ? A.intl.string(A.t["WLKx/9"]) : h ? A.intl.string(A.t.sHHsOM) : A.intl.string(A.t.Dglxrf),
         subtext: A.intl.string(A.t.r1BOdd),
         action: () => {
-            (0, o.openUserProfileModal)({
+            (0, d.openUserProfileModal)({
                 userId: t.id,
                 tabSection: c.RP.USER_INFO,
                 scrollTarget: c.bk.NOTE,
                 guildId: n,
-                channelId: b,
-                sourceAnalyticsLocations: v,
-                appContext: g
+                channelId: g,
+                sourceAnalyticsLocations: M,
+                appContext: m
             })
         }
     })

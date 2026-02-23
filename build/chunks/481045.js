@@ -1,58 +1,59 @@
 /** chunk id: 481045, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
     L7: () => m,
-    qA: () => A
+    qA: () => f
 });
-var r = n(627968),
-    l = n(311907),
-    i = n(397927),
-    s = n(253932),
+var i = n(627968),
+    s = n(311907),
+    l = n(397927),
+    r = n(253932),
     a = n(780964),
     o = n(840065),
     c = n(711014),
-    u = n(115063),
-    d = n(704037),
-    p = n(652215),
-    h = n(536482),
-    g = n(985018),
-    f = n(259533);
+    d = n(115063),
+    u = n(704037),
+    h = n(652215),
+    A = n(536482),
+    p = n(985018),
+    g = n(259533);
 let m = () => {
     (0, o.openUserSettings)(a.X.ACTIVITY_PRIVACY_PANEL, {
-        section: p.nc_.ACTIVITY_PRIVACY
+        section: h.nc_.ACTIVITY_PRIVACY
     })
 };
 
-function b(e) {
+function _(e) {
     let {
         children: t,
         onClick: n
     } = e;
-    return (0, r.jsxs)(i.DUT, {
-        className: f.E1,
+    return (0, i.jsxs)(l.DUT, {
+        className: g.E1,
         onClick: n,
-        children: [(0, r.jsx)("div", {
-            className: f.j3,
+        children: [(0, i.jsx)("div", {
+            className: g.j3,
             children: t
-        }), (0, r.jsx)(i._BQ, {
-            color: i.LU0.colors.TEXT_SUBTLE,
+        }), (0, i.jsx)(l._BQ, {
+            color: l.LU0.colors.TEXT_SUBTLE,
             size: "xs"
         })]
     })
 }
 
-function A(e) {
+function f(e) {
     let {
         onClosePopout: t
-    } = e, n = s.tz.useSetting(), a = (0, l.bG)([c.Ay], () => c.Ay.getFlattenedGuildIds()), o = (0, u.Kk)(), p = a.filter(e => !o.has(e));
-    return 0 === a.length ? null : (0, r.jsxs)(b, {
+    } = e, n = r.tz.useSetting(), a = (0, s.bG)([c.Ay], () => c.Ay.getFlattenedGuildIds()), o = (0, d.Kk)(), h = a.filter(e => !o.has(e));
+    return 0 === a.length ? null : (0, i.jsxs)(_, {
         onClick: () => {
             t(), m()
         },
-        children: [(0, r.jsx)(i.Text, {
+        children: [(0, i.jsx)(l.Text, {
             variant: "text-sm/semibold",
-            children: g.intl.string(n ? h.default["3GrhnF"] : h.default["54ycKJ"])
-        }), (0, r.jsx)(d.l, {
-            guildIds: p
+            children: p.intl.string(n ? A.default["3GrhnF"] : A.default["54ycKJ"])
+        }), (0, i.jsx)(u.l, {
+            guildIds: h
         })]
     })
 }

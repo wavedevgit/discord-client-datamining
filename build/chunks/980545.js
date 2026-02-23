@@ -1,86 +1,70 @@
 /** chunk id: 980545, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => E
+    A: () => C
 });
-var r = n(627968),
-    i = n(64700),
-    l = n(503698),
-    s = n.n(l),
-    a = n(835245),
+var i = n(627968),
+    s = n(64700),
+    a = n(503698),
+    r = n.n(a),
+    l = n(835245),
     o = n(582754),
     c = n(397927),
     d = n(736653),
     u = n(12901),
     _ = n(954571),
-    p = n(341915),
-    m = n(590202),
+    m = n(341915),
+    A = n(590202),
     g = n(545986),
-    A = n(652215),
-    f = n(985018),
-    b = n(608821),
-    h = n(641701);
+    h = n(652215),
+    x = n(985018),
+    p = n(608821),
+    E = n(641701);
 
-function E(e) {
+function C(e) {
     let {
         inOldSettings: t = !1
-    } = e, n = (0, o.Mw)((0, d.Ay)()), l = i.useMemo(() => ({
-        backgroundImage: "url(".concat("https://cdn.discordapp.com/assets/discovery/quests-wumpus-hikes-mountain-transparent-background.png", ")")
-    }), []), E = i.useCallback(() => {
+    } = e, n = (0, o.Mw)((0, d.Ay)()), a = s.useMemo(() => ({
+        backgroundImage: "url(https://cdn.discordapp.com/assets/discovery/quests-wumpus-hikes-mountain-transparent-background.png)"
+    }), []), C = s.useCallback(() => {
         (0, u.default)(), (0, g.navigateToQuestHome)({
-            fromContent: p.uF.QUEST_HOME_MOVE_CALLOUT
-        }), _.default.track(A.HAw.QUEST_CONTENT_CLICKED, function(e) {
-            for (var t = 1; t < arguments.length; t++) {
-                var n = null != arguments[t] ? arguments[t] : {},
-                    r = Object.keys(n);
-                "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                    return Object.getOwnPropertyDescriptor(n, e).enumerable
-                }))), r.forEach(function(t) {
-                    var r;
-                    r = n[t], t in e ? Object.defineProperty(e, t, {
-                        value: r,
-                        enumerable: !0,
-                        configurable: !0,
-                        writable: !0
-                    }) : e[t] = r
-                })
-            }
-            return e
-        }({
-            cta_name: m.Cy.VIEW_QUESTS,
-            click_id: (0, a.A)(),
-            is_targeted: !1
-        }, (0, m.fF)(p.uF.QUEST_HOME_MOVE_CALLOUT)))
+            fromContent: m.uF.QUEST_HOME_MOVE_CALLOUT
+        }), _.default.track(h.HAw.QUEST_CONTENT_CLICKED, {
+            cta_name: A.Cy.VIEW_QUESTS,
+            click_id: (0, l.A)(),
+            is_targeted: !1,
+            ...(0, A.fF)(m.uF.QUEST_HOME_MOVE_CALLOUT)
+        })
     }, []);
-    return (0, r.jsx)("div", {
-        className: s()(b.kL, {
-            [b.Zd]: t
+    return (0, i.jsx)("div", {
+        className: r()(p.kL, {
+            [p.Zd]: t
         }),
-        style: l,
-        children: (0, r.jsxs)(c.BJc, {
-            className: b.FS,
+        style: a,
+        children: (0, i.jsxs)(c.BJc, {
+            className: p.FS,
             justify: "space-between",
-            children: [(0, r.jsxs)(c.BJc, {
+            children: [(0, i.jsxs)(c.BJc, {
                 gap: 4,
-                children: [(0, r.jsxs)("div", {
-                    className: b.N1,
-                    children: [(0, r.jsx)("img", {
+                children: [(0, i.jsxs)("div", {
+                    className: p.N1,
+                    children: [(0, i.jsx)("img", {
                         alt: "",
-                        src: h,
-                        className: b.Kk
-                    }), (0, r.jsx)(c.Heading, {
+                        src: E,
+                        className: p.Kk
+                    }), (0, i.jsx)(c.Heading, {
                         variant: "heading-lg/bold",
                         color: "always-white",
-                        children: f.intl.string(f.t.z8YP2A)
+                        children: x.intl.string(x.t.z8YP2A)
                     })]
-                }), (0, r.jsx)(c.Text, {
+                }), (0, i.jsx)(c.Text, {
                     variant: "text-md/medium",
                     color: "text-subtle",
-                    children: f.intl.string(f.t.HdKh65)
+                    children: x.intl.string(x.t.HdKh65)
                 })]
-            }), (0, r.jsx)(c.Button, {
+            }), (0, i.jsx)(c.Button, {
                 variant: n ? "primary" : "overlay-primary",
-                text: f.intl.string(f.t.GURBQl),
-                onClick: E
+                text: x.intl.string(x.t.GURBQl),
+                onClick: C
             })]
         })
     })

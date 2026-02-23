@@ -1,58 +1,57 @@
-/** chunk id: 363937, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    Y: () => d
-}), n(228524), n(896048);
-var r = n(627968),
-    i = n(64700),
-    a = n(933832),
-    o = n(176781),
-    s = n(173936),
-    l = n(625903),
-    c = n(972213),
-    u = n(421380);
-let d = {
+/** chunk id: 363937, original params: e,l,a (module,exports,require) **/
+a.d(l, {
+    Y: () => c
+});
+var t = a(627968),
+    o = a(64700),
+    n = a(933832),
+    i = a(176781),
+    s = a(173936),
+    r = a(625903),
+    d = a(972213),
+    u = a(421380);
+let c = {
     title: "VoidRadioGroup",
     stories: [{
         id: "voidradiogroup",
         name: "VoidRadioGroup",
         component: function(e) {
             let {
-                optionCount: t,
-                size: n,
-                disabled: d,
-                orientation: f,
+                optionCount: l,
+                size: a,
+                disabled: c,
+                orientation: b,
                 radioPosition: p,
-                withTransparentBackground: _,
-                label: h,
-                description: m,
-                withDescriptions: g,
-                withIcons: E
-            } = e, [y, b] = i.useState("option1"), O = [a.A, o.x, s.q, l.Z, c.d], v = Array.from({
-                length: t
-            }, (e, t) => ({
-                value: "option".concat(t + 1),
-                name: "Option ".concat(t + 1),
-                description: g ? "This is a description for option ".concat(t + 1) : void 0,
-                icon: E ? O[t % O.length] : void 0
+                withTransparentBackground: m,
+                label: x,
+                description: v,
+                withDescriptions: h,
+                withIcons: y
+            } = e, [f, g] = o.useState("option1"), V = [n.A, i.x, s.q, r.Z, d.d], C = Array.from({
+                length: l
+            }, (e, l) => ({
+                value: `option${l+1}`,
+                name: `Option ${l+1}`,
+                description: h ? `This is a description for option ${l+1}` : void 0,
+                icon: y ? V[l % V.length] : void 0
             }));
-            return (0, r.jsx)(u.$d, {
+            return (0, t.jsx)(u.$d, {
                 "data-migration-pending": !0,
-                value: y,
+                value: f,
                 onChange: e => {
                     let {
-                        value: t
+                        value: l
                     } = e;
-                    return b(t)
+                    return g(l)
                 },
-                options: v,
-                size: n,
-                disabled: d,
-                orientation: f,
+                options: C,
+                size: a,
+                disabled: c,
+                orientation: b,
                 radioPosition: p,
-                withTransparentBackground: _,
-                label: h,
-                description: m
+                withTransparentBackground: m,
+                label: x,
+                description: v
             })
         },
         controls: {

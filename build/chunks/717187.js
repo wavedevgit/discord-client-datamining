@@ -1,35 +1,35 @@
-/** chunk id: 717187, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    y: () => u
+/** chunk id: 717187, original params: n,e,t (module,exports,require) **/
+t.d(e, {
+    y: () => c
 });
-var i = n(627968);
-n(64700);
-var r = n(397927),
-    l = n(349435),
-    a = n(178186),
-    s = n(617641),
-    o = n(937624),
-    d = n(985018);
+var i = t(627968);
+t(64700);
+var r = t(397927),
+    l = t(349435),
+    a = t(178186),
+    d = t(617641),
+    s = t(937624),
+    u = t(985018);
 
-function u(e) {
-    let t = (0, o.P)(e),
-        n = (0, s.Lc)({
+function c(n) {
+    let e = (0, s.P)(n),
+        t = (0, d.Lc)({
             location: "inappropriate_conversation_context_menu"
         });
-    if (null === t || !n) return null;
+    if (null === e || !t) return null;
     let {
-        isTier1: u,
-        isTier2: c
-    } = t;
+        isTier1: c,
+        isTier2: o
+    } = e;
     return (0, i.jsxs)(i.Fragment, {
-        children: [!u && (0, i.jsx)(r.Drp, {
+        children: [!c && (0, i.jsx)(r.Drp, {
             id: "mark-as-tier-1-inappro",
-            label: d.intl.string(d.t.EuzCET),
-            action: () => (0, a.Rw)(e.id, l._j.INAPPROPRIATE_CONVERSATION_TIER_1)
-        }), !c && (0, i.jsx)(r.Drp, {
+            label: u.intl.string(u.t.EuzCET),
+            action: () => (0, a.Rw)(n.id, l._j.INAPPROPRIATE_CONVERSATION_TIER_1)
+        }), !o && (0, i.jsx)(r.Drp, {
             id: "mark-as-tier-2-inappro",
-            label: d.intl.string(d.t["tBw/1i"]),
-            action: () => (0, a.Rw)(e.id, l._j.INAPPROPRIATE_CONVERSATION_TIER_2)
+            label: u.intl.string(u.t["tBw/1i"]),
+            action: () => (0, a.Rw)(n.id, l._j.INAPPROPRIATE_CONVERSATION_TIER_2)
         })]
     })
 }

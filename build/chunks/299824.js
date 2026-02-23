@@ -1,48 +1,48 @@
 /** chunk id: 299824, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => c
+    A: () => d
 });
-var r = n(627968),
-    i = n(158954),
+var i = n(627968),
+    s = n(158954),
     l = n(739929),
-    s = n(652215),
+    r = n(652215),
     a = n(985018),
     o = n(294310);
 
-function c(e) {
+function d(e) {
     let t, {
             guild: n
         } = e,
         {
-            resubmittingEnableRequest: c,
-            resubmissionError: d,
+            resubmittingEnableRequest: d,
+            resubmissionError: c,
             createEnableRequest: u,
-            resubmittedRequest: g,
-            requestRejectedNoticeText: m,
-            reapplyNoticeText: p
+            resubmittedRequest: m,
+            requestRejectedNoticeText: g,
+            reapplyNoticeText: x
         } = (0, l.A)(n),
-        f = n.features.has(s.GuildFeatures.CREATOR_MONETIZABLE_RESTRICTED),
-        h = n.features.has(s.GuildFeatures.CREATOR_MONETIZABLE_PENDING_NEW_OWNER_ONBOARDING);
-    if (null != d) return (0, r.jsx)("div", {
+        h = n.features.has(r.GuildFeatures.CREATOR_MONETIZABLE_RESTRICTED),
+        _ = n.features.has(r.GuildFeatures.CREATOR_MONETIZABLE_PENDING_NEW_OWNER_ONBOARDING);
+    if (null != c) return (0, i.jsx)("div", {
         className: o.U,
-        children: (0, r.jsx)(i.wx6, {
+        children: (0, i.jsx)(s.wx6, {
             type: "critical",
-            children: d.getAnyErrorMessage()
+            children: c.getAnyErrorMessage()
         })
     });
-    let b = null;
-    return null != m ? b = m : g ? b = a.intl.string(a.t.MyJpJT) : null != p ? (b = p, t = a.intl.string(a.t["YKw/NQ"])) : h ? b = a.intl.string(a.t.e2g9sW) : f && (b = a.intl.string(a.t.rxI9sl)), null != b ? (0, r.jsx)("div", {
+    let A = null;
+    return null != g ? A = g : m ? A = a.intl.string(a.t.MyJpJT) : null != x ? (A = x, t = a.intl.string(a.t["YKw/NQ"])) : _ ? A = a.intl.string(a.t.e2g9sW) : h && (A = a.intl.string(a.t.rxI9sl)), null != A ? (0, i.jsx)("div", {
         className: o.U,
-        children: (0, r.jsx)(i.po8, {
-            messageType: i.YCn.WARNING,
-            action: (0, r.jsx)(i.$nd, {
+        children: (0, i.jsx)(s.po8, {
+            messageType: s.YCn.WARNING,
+            action: (0, i.jsx)(s.$nd, {
                 variant: "overlay-secondary",
                 text: t,
                 onClick: u,
-                loading: c
+                loading: d
             }),
-            children: b
+            children: A
         })
     }) : null
 }

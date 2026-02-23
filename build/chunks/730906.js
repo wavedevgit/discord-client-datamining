@@ -1,19 +1,19 @@
-/** chunk id: 730906, original params: e,t,n (module,exports,require) **/
-n.d(t, {
+/** chunk id: 730906, original params: e,t,l (module,exports,require) **/
+l.d(t, {
     A: () => u
 });
-var l = n(284009),
-    i = n.n(l),
-    a = n(311907),
-    r = n(508675),
-    s = n(7584);
+var n = l(284009),
+    a = l.n(n),
+    i = l(311907),
+    s = l(508675),
+    r = l(7584);
 
 function u(e) {
     let {
         emojiId: t,
-        emojiName: n
-    } = e, l = (0, a.bG)([r.Ay], () => null != t ? r.Ay.getCustomEmojiById(t) : null);
-    if (null != l || null != n)
-        if (null == t) return i()(null != n, "emojiName must be defined if emojiId is not defined"), s.Ay.convertSurrogateToName(n, !1);
-        else return null == l ? void 0 : l.name
+        emojiName: l
+    } = e, n = (0, i.bG)([s.Ay], () => null != t ? s.Ay.getCustomEmojiById(t) : null);
+    if (null != n || null != l)
+        if (null == t) return a()(null != l, "emojiName must be defined if emojiId is not defined"), r.Ay.convertSurrogateToName(l, !1);
+        else return n?.name
 }

@@ -1,20 +1,20 @@
 /** chunk id: 851828, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => p
-}), n(896048);
+    A: () => h
+});
 var a = n(627968),
-    l = n(64700),
-    r = n(503698),
-    i = n.n(r),
-    s = n(311907),
+    i = n(64700),
+    s = n(503698),
+    l = n.n(s),
+    r = n(311907),
     o = n(397927),
-    c = n(73153),
-    d = n(236899),
+    d = n(73153),
+    c = n(236899),
     u = n(661251),
     m = n(665646);
 
-function p() {
-    let [e, t] = l.useState(""), n = (0, s.bG)([d.A], () => d.A.getAllWordsSorted().map((e, t) => {
+function h() {
+    let [e, t] = i.useState(""), n = (0, r.bG)([c.A], () => c.A.getAllWordsSorted().map((e, t) => {
         let [n, a] = e;
         return {
             word: n,
@@ -22,23 +22,23 @@ function p() {
             value: a,
             idx: t
         }
-    }), [], s.My), r = l.useMemo(() => 0 === e.length ? n : n.filter(t => {
+    }), [], r.My), s = i.useMemo(() => 0 === e.length ? n : n.filter(t => {
         let {
             word: n
         } = t;
         return n.toLowerCase().startsWith(e.toLowerCase())
-    }), [n, e]), p = l.useCallback(() => {
-        c.h.dispatch({
+    }), [n, e]), h = i.useCallback(() => {
+        d.h.dispatch({
             type: "DEV_TOOLS_WORD_FREQUENCY_RESET"
         })
     }, []);
     return (0, a.jsxs)("div", {
-        className: i()(u.nd, m.nd),
+        className: l()(u.nd, m.nd),
         children: [n.length > 0 && (0, a.jsxs)(a.Fragment, {
             children: [(0, a.jsxs)(o.Text, {
                 variant: "text-md/semibold",
                 className: m.Gf,
-                children: ["Word Frequencies (", r.length, " unique words)"]
+                children: ["Word Frequencies (", s.length, " unique words)"]
             }), (0, a.jsx)(o.Text, {
                 variant: "text-sm/normal",
                 children: "This is a list of the most common short words found in messages sent and received by this client. They're ignored by the mention suggestions experiment to avoid distracting suggestions. These statistics are stored locally only."
@@ -54,7 +54,7 @@ function p() {
                     variant: "secondary",
                     size: "sm",
                     text: "Clear Statistics",
-                    onClick: p
+                    onClick: h
                 })]
             }), (0, a.jsx)("div", {
                 className: m.u4,
@@ -63,7 +63,7 @@ function p() {
                     children: (0, a.jsxs)("div", {
                         className: m.r6,
                         children: [(0, a.jsxs)("div", {
-                            className: i()(u.ZR, m.qd),
+                            className: l()(u.ZR, m.qd),
                             children: [(0, a.jsx)("div", {
                                 className: m.Xd,
                                 children: "Index"
@@ -74,19 +74,19 @@ function p() {
                                 className: m.gR,
                                 children: "Count"
                             })]
-                        }), r.map(e => {
+                        }), s.map(e => {
                             let {
                                 word: t,
                                 value: n,
-                                idx: l
+                                idx: i
                             } = e;
                             return (0, a.jsxs)("div", {
-                                className: i()(u.jD, m.jD),
+                                className: l()(u.jD, m.jD),
                                 children: [(0, a.jsx)("div", {
                                     className: m.Xd,
                                     children: (0, a.jsx)(o.Text, {
                                         variant: "text-sm/normal",
-                                        children: l + 1
+                                        children: i + 1
                                     })
                                 }), (0, a.jsx)("div", {
                                     className: m.hH,
@@ -101,7 +101,7 @@ function p() {
                                         children: n
                                     })
                                 })]
-                            }, "".concat(t, "-").concat(l))
+                            }, `${t}-${i}`)
                         })]
                     })
                 })
@@ -113,7 +113,7 @@ function p() {
                 color: "text-muted",
                 children: "Load messages in a channel to see word frequency analysis."
             })
-        }), n.length > 0 && 0 === r.length && e.length > 0 && (0, a.jsx)("div", {
+        }), n.length > 0 && 0 === s.length && e.length > 0 && (0, a.jsx)("div", {
             className: m.p$,
             children: (0, a.jsxs)(o.Text, {
                 variant: "text-md/normal",

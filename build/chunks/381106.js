@@ -1,27 +1,27 @@
-/** chunk id: 381106, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => s
+/** chunk id: 381106, original params: e,t,l (module,exports,require) **/
+l.d(t, {
+    A: () => r
 });
-var l = n(627968),
-    i = n(64700),
-    a = n(236972),
-    r = n(997098);
-let s = i.memo(function(e) {
+var n = l(627968),
+    a = l(64700),
+    i = l(236972),
+    s = l(997098);
+let r = a.memo(function(e) {
     let {
         fineTuning: t,
-        fineTuningResolution: n,
-        duration: i
+        fineTuningResolution: l,
+        duration: a
     } = e, {
-        file: s,
+        file: r,
         audio: u
-    } = (0, a.L)();
-    return (0, l.jsx)(r.A, {
-        file: s,
+    } = (0, i.L)();
+    return (0, n.jsx)(s.A, {
+        file: r,
         audio: u,
         waveformSettings: {
             fineTuning: t,
-            fineTuningResolution: n,
-            duration: i
+            fineTuningResolution: l,
+            duration: a
         }
     })
 })

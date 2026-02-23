@@ -1,215 +1,183 @@
 /** chunk id: 921318, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => L
-}), n(896048), n(638769), n(321073);
-var r = n(627968),
-    i = n(64700),
+    A: () => j
+}), n(321073);
+var i = n(627968),
+    r = n(64700),
     l = n(503698),
     a = n.n(l),
     s = n(997101),
     o = n(311907),
-    c = n(435371),
-    u = n(397927),
-    d = n(384904),
-    p = n(308528),
+    d = n(435371),
+    c = n(397927),
+    u = n(384904),
+    A = n(308528),
     h = n(770178),
-    f = n(36149),
-    g = n(793574),
-    m = n(58149),
-    A = n(176031),
-    _ = n(21119),
-    b = n(854627),
-    E = n(734057),
-    O = n(153488),
-    y = n(290863),
-    I = n(994500),
-    v = n(741961),
-    S = n(287809),
-    C = n(615405),
-    N = n(403362),
-    T = n(344917),
-    j = n(652215),
-    x = n(985018),
-    P = n(68e4);
+    _ = n(36149),
+    m = n(793574),
+    p = n(58149),
+    g = n(176031),
+    E = n(21119),
+    I = n(854627),
+    f = n(734057),
+    C = n(153488),
+    T = n(290863),
+    N = n(994500),
+    S = n(741961),
+    x = n(287809),
+    v = n(615405),
+    y = n(403362),
+    b = n(344917),
+    O = n(652215),
+    L = n(985018),
+    R = n(68e4);
 
-function w(e) {
-    var t, n;
+function P(e) {
     let {
-        user: i,
-        index: l,
-        isCompetitive: a
+        user: t,
+        index: n,
+        isCompetitive: r
     } = e, {
-        status: s,
-        isMobile: c
-    } = (0, o.cf)([y.A], () => ({
-        status: y.A.getStatus(i.id),
-        isMobile: y.A.isMobileOnline(i.id)
-    })), d = (0, o.bG)([v.A, E.A], () => {
-        let e = E.A.getDMFromUserId(i.id);
-        return null != e && v.A.isTyping(e, i.id)
-    }, [i]), {
-        avatarSrc: h,
-        eventHandlers: f
-    } = (0, b.A)({
-        userId: i.id,
-        size: u._3J.SIZE_32,
+        status: l,
+        isMobile: a
+    } = (0, o.cf)([T.A], () => ({
+        status: T.A.getStatus(t.id),
+        isMobile: T.A.isMobileOnline(t.id)
+    })), s = (0, o.bG)([S.A, f.A], () => {
+        let e = f.A.getDMFromUserId(t.id);
+        return null != e && S.A.isTyping(e, t.id)
+    }, [t]), {
+        avatarSrc: d,
+        eventHandlers: u
+    } = (0, I.A)({
+        userId: t.id,
+        size: c._3J.SIZE_32,
         animateOnHover: !0
-    }), A = async () => {
-        var e, t;
-        await p.A.openPrivateChannel({
-            recipientIds: [i.id],
-            location: g.A.FREQUENT_FRIENDS_ROW
+    }), h = async () => {
+        await A.A.openPrivateChannel({
+            recipientIds: [t.id],
+            location: m.A.FREQUENT_FRIENDS_ROW
         });
-        let n = E.A.getDMFromUserId(i.id);
-        null != n && (0, m.zV)(j.HAw.CHANNEL_OPENED, (e = function(e) {
-            for (var t = 1; t < arguments.length; t++) {
-                var n = null != arguments[t] ? arguments[t] : {},
-                    r = Object.keys(n);
-                "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                    return Object.getOwnPropertyDescriptor(n, e).enumerable
-                }))), r.forEach(function(t) {
-                    var r;
-                    r = n[t], t in e ? Object.defineProperty(e, t, {
-                        value: r,
-                        enumerable: !0,
-                        configurable: !0,
-                        writable: !0
-                    }) : e[t] = r
-                })
-            }
-            return e
-        }({}, (0, m.qL)(n)), t = t = {
-            location: "".concat(g.A.FREQUENT_FRIENDS_ROW, " ").concat(l + 1)
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-            var n = Object.keys(e);
-            if (Object.getOwnPropertySymbols) {
-                var r = Object.getOwnPropertySymbols(e);
-                n.push.apply(n, r)
-            }
-            return n
-        })(Object(t)).forEach(function(n) {
-            Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-        }), e))
-    }, _ = 0 === l, O = _ ? u.Y3C : a ? u.Y5K : void 0, I = _ ? x.intl.string(x.t.aI4VOL) : a ? x.intl.string(x.t.kABl2x) : void 0;
-    return (0, r.jsx)(u.DUT, {
-        className: P.it,
-        onClick: A,
-        onMouseEnter: f.onMouseEnter,
-        onMouseLeave: f.onMouseLeave,
-        "aria-label": x.intl.formatToPlainString(x.t.M5FjCr, {
-            username: i.username
+        let e = f.A.getDMFromUserId(t.id);
+        null != e && (0, p.zV)(O.HAw.CHANNEL_OPENED, {
+            ...(0, p.qL)(e),
+            location: `${m.A.FREQUENT_FRIENDS_ROW} ${n+1}`
+        })
+    }, _ = 0 === n, g = _ ? c.Y3C : r ? c.Y5K : void 0, E = _ ? L.intl.string(L.t.aI4VOL) : r ? L.intl.string(L.t.kABl2x) : void 0;
+    return (0, i.jsx)(c.DUT, {
+        className: R.it,
+        onClick: h,
+        onMouseEnter: u.onMouseEnter,
+        onMouseLeave: u.onMouseLeave,
+        "aria-label": L.intl.formatToPlainString(L.t.M5FjCr, {
+            username: t.username
         }),
-        children: (0, r.jsx)(u.euF, {
-            src: h,
-            "aria-label": null != (t = i.globalName) ? t : i.username,
-            status: s,
-            isTyping: d,
-            isMobile: c && !d,
-            size: u._3J.SIZE_32,
-            CutoutIcon: O,
-            avatarTooltipAsset: _ ? "\uD83D\uDD25" : a ? "❄️" : void 0,
-            avatarTooltipText: I,
+        children: (0, i.jsx)(c.euF, {
+            src: d,
+            "aria-label": t.globalName ?? t.username,
+            status: l,
+            isTyping: s,
+            isMobile: a && !s,
+            size: c._3J.SIZE_32,
+            CutoutIcon: g,
+            avatarTooltipAsset: _ ? "\uD83D\uDD25" : r ? "❄️" : void 0,
+            avatarTooltipText: E,
             statusTooltip: !0,
             statusTooltipDelay: 50,
-            avatarTooltipTitle: null != (n = i.globalName) ? n : i.username
+            avatarTooltipTitle: t.globalName ?? t.username
         })
     })
 }
 
-function L() {
+function j() {
     let e, t, n, {
             enabled: l
-        } = (0, T.M)("frequent_friends_row"),
-        p = (e = (0, o.yK)([_.A], () => [..._.A.getUserAffinities()].sort((e, t) => _.A.compare(e.otherUserId, t.otherUserId))), t = (0, o.yK)([S.default, I.A], () => {
+        } = (0, b.M)("frequent_friends_row"),
+        A = (e = (0, o.yK)([E.A], () => [...E.A.getUserAffinities()].sort((e, t) => E.A.compare(e.otherUserId, t.otherUserId))), t = (0, o.yK)([x.default, N.A], () => {
             let t = e.map(e => e.otherUserId),
                 n = [];
             for (let e of t)
                 if (n.length < 5) {
-                    let t = S.default.getUser(e);
-                    !(0, N.Vq)(t) || I.A.isIgnored(t.id) || I.A.isBlocked(t.id) || n.push(t)
+                    let t = x.default.getUser(e);
+                    !(0, y.Vq)(t) || N.A.isIgnored(t.id) || N.A.isBlocked(t.id) || n.push(t)
                 } else break;
             return n
-        }, [e]), n = i.useMemo(() => {
-            var n, r;
+        }, [e]), n = r.useMemo(() => {
             if (t.length < 5) return !1;
-            let i = e.findIndex(e => e.otherUserId === t[4].id);
-            return !!(i < e.length - 1) && !!((null == (n = e[i]) ? void 0 : n.communicationProbability) - .25 <= (null == (r = e[i + 1]) ? void 0 : r.communicationProbability))
+            let n = e.findIndex(e => e.otherUserId === t[4].id);
+            return !!(n < e.length - 1 && e[n]?.communicationProbability - .25 <= e[n + 1]?.communicationProbability)
         }, [e, t]), t.length < 3 ? null : {
             frequentFriends: t,
             showCompetitiveSpot: n
         }),
-        g = (0, o.bG)([O.A], () => O.A.hasConsented(j.YAq.PERSONALIZATION)),
-        m = (0, o.bG)([S.default], () => {
-            var e, t;
-            return null != (e = null == (t = S.default.getCurrentUser()) ? void 0 : t.nsfwAllowed) && e
-        }),
-        [b, E] = i.useState({
+        m = (0, o.bG)([C.A], () => C.A.hasConsented(O.YAq.PERSONALIZATION)),
+        p = (0, o.bG)([x.default], () => x.default.getCurrentUser()?.nsfwAllowed ?? !1),
+        [I, f] = r.useState({
             scrollLeft: 0,
             scrollWidth: 0,
             clientWidth: 0
         }),
-        y = i.useRef(null),
-        v = (0, o.bG)([C.A], () => C.A.ipCountryCode),
-        L = (0, f.uE)(),
-        R = i.useCallback(() => {
-            var e;
-            let t = null == (e = y.current) ? void 0 : e.getScrollerNode();
-            null != t && E({
-                scrollLeft: t.scrollLeft,
-                scrollWidth: t.scrollWidth,
-                clientWidth: t.clientWidth
+        T = r.useRef(null),
+        S = (0, o.bG)([v.A], () => v.A.ipCountryCode),
+        j = (0, _.uE)(),
+        D = r.useCallback(() => {
+            let e = T.current?.getScrollerNode();
+            null != e && f({
+                scrollLeft: e.scrollLeft,
+                scrollWidth: e.scrollWidth,
+                clientWidth: e.clientWidth
             })
         }, []);
-    i.useEffect(() => {
-        (null == p ? void 0 : p.frequentFriends.length) != null && R()
-    }, [null == p ? void 0 : p.frequentFriends.length, null == p ? void 0 : p.showCompetitiveSpot, R]);
-    let D = (0, h.w)(R, []),
-        M = i.useCallback(e => {
+    r.useEffect(() => {
+        A?.frequentFriends.length != null && D()
+    }, [A?.frequentFriends.length, A?.showCompetitiveSpot, D]);
+    let M = (0, h.w)(D, []),
+        w = r.useCallback(e => {
             let t = e.currentTarget;
-            E({
+            f({
                 scrollLeft: t.scrollLeft,
                 scrollWidth: t.scrollWidth,
                 clientWidth: t.clientWidth
             })
-        }, [E]);
-    if (i.useEffect(() => {
-            (0, d.xe)()
-        }, []), !l || null == p || !g) return null;
+        }, [f]);
+    if (r.useEffect(() => {
+            (0, u.xe)()
+        }, []), !l || null == A || !m) return null;
     let {
-        frequentFriends: k,
-        showCompetitiveSpot: U
-    } = p, G = (v === s.d.AU || v === s.d.GB) && !L, V = null != v && s.M.EU_COUNTRIES.has(v) && !m, B = !G && !V && null != v && U, H = b.scrollWidth > b.clientWidth, F = b.scrollLeft > 0, Y = b.scrollLeft < b.scrollWidth - b.clientWidth - 2;
-    return (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsxs)("div", {
-            className: P.mk,
-            children: [(0, r.jsxs)("div", {
-                className: P.$r,
-                children: [(0, r.jsx)(u.Text, {
+        frequentFriends: U,
+        showCompetitiveSpot: G
+    } = A, k = (S === s.d.AU || S === s.d.GB) && !j, V = null != S && s.M.EU_COUNTRIES.has(S) && !p, B = !k && !V && null != S && G, H = I.scrollWidth > I.clientWidth, F = I.scrollLeft > 0, Y = I.scrollLeft < I.scrollWidth - I.clientWidth - 2;
+    return (0, i.jsxs)(i.Fragment, {
+        children: [(0, i.jsxs)("div", {
+            className: R.mk,
+            children: [(0, i.jsxs)("div", {
+                className: R.$r,
+                children: [(0, i.jsx)(c.Text, {
                     variant: "text-sm/semibold",
-                    className: P.Uq,
-                    children: x.intl.string(x.t.QEh90H)
-                }), (0, r.jsx)(c.m_, {
-                    text: x.intl.string(x.t.tqCMcU),
-                    children: (0, r.jsx)(u.mir, {
-                        className: P.BK
+                    className: R.Uq,
+                    children: L.intl.string(L.t.QEh90H)
+                }), (0, i.jsx)(d.m_, {
+                    text: L.intl.string(L.t.tqCMcU),
+                    children: (0, i.jsx)(c.mir, {
+                        className: R.BK
                     })
                 })]
-            }), (0, r.jsx)(u.zCo, {
+            }), (0, i.jsx)(c.zCo, {
                 ref: e => {
-                    y.current = e, D.current = (null == e ? void 0 : e.getScrollerNode()) != null ? e.getScrollerNode() : null
+                    T.current = e, M.current = e?.getScrollerNode() != null ? e.getScrollerNode() : null
                 },
-                className: a()(P.i9, {
-                    [P.BI]: H && F,
-                    [P.E2]: H && Y
+                className: a()(R.i9, {
+                    [R.BI]: H && F,
+                    [R.E2]: H && Y
                 }),
                 orientation: "horizontal",
-                onScroll: M,
-                children: k.map((e, t) => (0, r.jsx)(w, {
+                onScroll: w,
+                children: U.map((e, t) => (0, i.jsx)(P, {
                     user: e,
                     index: t,
-                    isCompetitive: B && t === k.length - 1
+                    isCompetitive: B && t === U.length - 1
                 }, e.id))
             })]
-        }), (0, r.jsx)(A.n, {})]
+        }), (0, i.jsx)(g.n, {})]
     })
 }

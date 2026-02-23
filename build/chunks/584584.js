@@ -1,79 +1,74 @@
 /** chunk id: 584584, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => j
-}), n(896048), n(321073);
-var r, i, l = n(735438),
-    a = n.n(l),
-    s = n(311907),
-    o = n(506774),
-    c = n(73153),
-    u = n(339048),
-    d = n(830382),
-    p = n(627363),
-    m = n(587895),
-    f = n(15285),
-    g = n(287809),
-    _ = n(469778),
+    A: () => T
+}), n(321073);
+var i = n(735438),
+    l = n.n(i),
+    a = n(311907),
+    r = n(506774),
+    s = n(73153),
+    o = n(339048),
+    c = n(830382),
+    d = n(627363),
+    u = n(587895),
+    m = n(15285),
+    _ = n(287809),
+    A = n(469778),
     h = n(67480),
-    b = n(652215);
-let y = "DetectedOffPlatformPremiumPerksStore",
-    A = {},
-    v = {},
-    O = [];
+    f = n(652215);
+let E = "DetectedOffPlatformPremiumPerksStore",
+    g = {},
+    p = {},
+    x = [];
 
-function x() {
+function C() {
     let e = !1;
     for (let {
             skuId: t,
             applicationId: n
         }
-        of a().values(v)) {
-        if (O.includes(t)) continue;
-        let r = m.A.getApplication(n);
-        if (null == r) {
-            m.A.isFetchingApplication(n) || m.A.didFetchingApplicationFail(n) || p.Ay.fetchApplication(n);
-            continue
-        }
-        let i = h.A.get(t);
+        of l().values(p)) {
+        if (x.includes(t)) continue;
+        let i = u.A.getApplication(n);
         if (null == i) {
-            h.A.isFetching(t) || h.A.didFetchingSkuFail(t) || d.EX(r.id, t);
+            u.A.isFetchingApplication(n) || u.A.didFetchingApplicationFail(n) || d.Ay.fetchApplication(n);
             continue
         }
-        _.A.applicationIdsFetching.has(r.id) || _.A.isEntitledToSku(g.default.getCurrentUser(), t, r.id, r.id) || !i.available ? null != A[t] && (delete A[t], e = !0) : (A[t] = {
+        let l = h.A.get(t);
+        if (null == l) {
+            h.A.isFetching(t) || h.A.didFetchingSkuFail(t) || c.EX(i.id, t);
+            continue
+        }
+        A.A.applicationIdsFetching.has(i.id) || A.A.isEntitledToSku(_.default.getCurrentUser(), t, i.id, i.id) || !l.available ? null != g[t] && (delete g[t], e = !0) : (g[t] = {
             skuId: t,
             applicationId: n
         }, e = !0)
     }
     return e
 }
-class E extends(r = s.Ay.Store) {
+class I extends a.Ay.Store {
+    static displayName = "DetectedOffPlatformPremiumPerksStore";
     initialize() {
-        var e;
-        this.waitFor(m.A, _.A, f.Ay, h.A, g.default), O = null != (e = o.w.get(y)) ? e : O
+        this.waitFor(u.A, A.A, m.Ay, h.A, _.default), x = r.w.get(E) ?? x
     }
     getDetectedOffPlatformPremiumPerks() {
-        return a().values(A)
+        return l().values(g)
     }
-}(i = "displayName") in E ? Object.defineProperty(E, i, {
-    value: "DetectedOffPlatformPremiumPerksStore",
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
-}) : E[i] = "DetectedOffPlatformPremiumPerksStore";
-let j = new E(c.h, {
+}
+let T = new I(s.h, {
     LOGOUT: function() {
-        A = {}, v = {}
+        g = {}, p = {}
     },
-    SKU_FETCH_SUCCESS: x,
-    ENTITLEMENT_FETCH_APPLICATION_SUCCESS: x,
-    ENTITLEMENT_CREATE: x,
-    APPLICATION_FETCH_SUCCESS: x,
+    SKU_FETCH_SUCCESS: C,
+    ENTITLEMENT_FETCH_APPLICATION_SUCCESS: C,
+    ENTITLEMENT_CREATE: C,
+    APPLICATION_FETCH_SUCCESS: C,
     DETECTED_OFF_PLATFORM_PREMIUM_PERKS_DISMISS: function(e) {
         let {
             skuId: t
         } = e;
-        if (delete A[t], O.includes(t)) return !1;
-        O.push(t), o.w.set(y, O)
+        if (delete g[t], x.includes(t)) return !1;
+        x.push(t), r.w.set(E, x)
     },
     RUNNING_GAMES_CHANGE: function() {
         let e = !1;
@@ -81,16 +76,16 @@ let j = new E(c.h, {
                 id: t,
                 distributor: n
             }
-            of f.Ay.getRunningGames())
-            if (null != t && n !== b.d3x.DISCORD)
+            of m.Ay.getRunningGames())
+            if (null != t && n !== f.d3x.DISCORD)
                 for (let {
                         skuId: n,
-                        applicationId: r
+                        applicationId: i
                     }
-                    of b.m_i) r !== t || O.includes(n) || null == v[n] && (_.A.applicationIdsFetched.has(r) || _.A.applicationIdsFetching.has(r) || null != _.A.getForSku(n) || u.LM(r), v[n] = {
+                    of f.m_i) i !== t || x.includes(n) || null == p[n] && (A.A.applicationIdsFetched.has(i) || A.A.applicationIdsFetching.has(i) || null != A.A.getForSku(n) || o.LM(i), p[n] = {
                     skuId: n,
-                    applicationId: r
+                    applicationId: i
                 }, e = !0);
-        return e && x(), e
+        return e && C(), e
     }
 })

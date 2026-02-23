@@ -1,117 +1,67 @@
-/** chunk id: 42473, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => g
+/** chunk id: 42473, original params: e,t,l (module,exports,require) **/
+l.d(t, {
+    A: () => p
 });
-var l = n(627968),
-    r = n(64700),
-    o = n(503698),
-    i = n.n(o),
-    a = n(435371),
-    s = n(614820),
-    u = n(421380),
-    c = n(397927),
-    d = n(573435),
-    _ = n(310945);
-
-function p(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            l = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), l.forEach(function(t) {
-            var l;
-            l = n[t], t in e ? Object.defineProperty(e, t, {
-                value: l,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = l
-        })
-    }
-    return e
-}
-
-function b(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var l = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, l)
-        }
-        return n
-    })(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-
-function m(e, t) {
-    if (null == e) return {};
-    var n, l, r, o = {};
-    if ("u" > typeof Reflect && Reflect.ownKeys) {
-        for (r = 0, n = Reflect.ownKeys(e); r < n.length; r++) l = n[r], !(t.indexOf(l) >= 0) && Object.prototype.propertyIsEnumerable.call(e, l) && (o[l] = e[l]);
-        return o
-    }
-    if (o = function(e, t) {
-            if (null == e) return {};
-            var n, l, r = {},
-                o = Object.getOwnPropertyNames(e);
-            for (l = 0; l < o.length; l++) n = o[l], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n]);
-            return r
-        }(e, t), Object.getOwnPropertySymbols)
-        for (r = 0, n = Object.getOwnPropertySymbols(e); r < n.length; r++) l = n[r], !(t.indexOf(l) >= 0) && Object.prototype.propertyIsEnumerable.call(e, l) && (o[l] = e[l]);
-    return o
-}
-let f = r.forwardRef(function(e, t) {
+var n = l(627968),
+    s = l(64700),
+    a = l(503698),
+    i = l.n(a),
+    r = l(435371),
+    o = l(614820),
+    u = l(421380),
+    c = l(397927),
+    d = l(573435),
+    m = l(310945);
+let A = s.forwardRef(function(e, t) {
         let {
-            children: n,
-            onContextMenu: r,
-            onClick: o,
-            onMouseDown: a,
-            disabled: s,
+            children: l,
+            onContextMenu: s,
+            onClick: a,
+            onMouseDown: r,
+            disabled: o,
             icon: c,
-            iconForeground: p,
-            innerClassName: b,
-            className: m,
-            redGlow: f,
-            onMouseEnter: g,
-            onMouseLeave: y,
+            iconForeground: A,
+            innerClassName: p,
+            className: x,
+            redGlow: E,
+            onMouseEnter: f,
+            onMouseLeave: h,
             "aria-label": S,
-            "aria-checked": x,
-            role: h,
-            plated: A
-        } = e, O = "function" == typeof c ? (0, l.jsx)(c, {
+            "aria-checked": N,
+            role: T,
+            plated: C
+        } = e, v = "function" == typeof c ? (0, n.jsx)(c, {
             width: 20,
             height: 20,
             size: "custom",
-            colorClass: null != p ? p : "",
+            colorClass: A ?? "",
             color: "currentColor"
         }) : c;
-        return (0, l.jsxs)(u.$n, {
+        return (0, n.jsxs)(u.$n, {
             "data-migration-pending": !0,
             "aria-label": S,
             buttonRef: t,
             look: u.$n.Looks.BLANK,
             size: u.$n.Sizes.NONE,
-            disabled: s,
-            innerClassName: b,
-            wrapperClassName: i()(_.x6, m),
-            className: i()(_.x6, m, {
-                [_.Xr]: f,
-                [_.r9]: s,
-                [_.Sn]: !s,
-                [_.ZQ]: A,
-                [_.OH]: f && A
+            disabled: o,
+            innerClassName: p,
+            wrapperClassName: i()(m.x6, x),
+            className: i()(m.x6, x, {
+                [m.Xr]: E,
+                [m.r9]: o,
+                [m.Sn]: !o,
+                [m.ZQ]: C,
+                [m.OH]: E && C
             }),
             onClick: e => {
-                null != o && o(e)
+                null != a && a(e)
             },
-            onMouseDown: a,
-            onMouseEnter: g,
-            onMouseLeave: y,
-            onContextMenu: r,
-            role: h,
-            "aria-checked": x,
+            onMouseDown: r,
+            onMouseEnter: f,
+            onMouseLeave: h,
+            onContextMenu: s,
+            role: T,
+            "aria-checked": N,
             focusProps: {
                 offset: {
                     left: -1,
@@ -120,90 +70,94 @@ let f = r.forwardRef(function(e, t) {
                     bottom: 1
                 }
             },
-            children: [null != n ? (0, l.jsx)(d.Ay, {
+            children: [null != l ? (0, n.jsx)(d.Ay, {
                 width: 20,
                 height: 20,
                 mask: d.Ay.Masks.PANEL_BUTTON,
-                children: O
-            }) : O, n]
+                children: v
+            }) : v, l]
         })
     }),
-    g = r.forwardRef(function(e, t) {
+    p = s.forwardRef(function(e, t) {
         if (null == e.tooltipType) {
             let {
-                tooltipText: n,
-                tooltipForceOpen: r,
-                tooltipShouldShow: o,
+                tooltipText: l,
+                tooltipForceOpen: s,
+                tooltipShouldShow: a,
                 tooltipPositionKey: i,
-                "aria-label": u
-            } = e, c = m(e, ["tooltipText", "tooltipForceOpen", "tooltipShouldShow", "tooltipPositionKey", "aria-label"]), d = (0, s.O)(n);
-            return (0, l.jsx)(a.m_, {
-                text: n,
-                forceOpen: r,
-                shouldShow: o,
+                "aria-label": u,
+                ...c
+            } = e, d = (0, o.O)(l), m = u ?? d;
+            return (0, n.jsx)(r.m_, {
+                text: l,
+                forceOpen: s,
+                shouldShow: a,
                 positionKey: i,
-                children: (0, l.jsx)(f, b(p({}, c), {
-                    "aria-label": null != u ? u : d,
+                ariaHidden: m === d,
+                children: (0, n.jsx)(A, {
+                    ...c,
+                    "aria-label": m,
                     ref: t
-                }))
+                })
             })
         } {
             let {
-                tooltipText: n,
-                tooltipForceOpen: r,
-                tooltipShouldShow: o,
+                tooltipText: l,
+                tooltipForceOpen: s,
+                tooltipShouldShow: a,
                 tooltipPositionKey: i,
-                onClick: a,
-                onMouseEnter: s,
+                onClick: r,
+                onMouseEnter: o,
                 onMouseLeave: u,
                 onContextMenu: d,
-                onFocus: g,
-                onBlur: y,
-                "aria-label": S
-            } = e, x = m(e, ["tooltipText", "tooltipForceOpen", "tooltipShouldShow", "tooltipPositionKey", "onClick", "onMouseEnter", "onMouseLeave", "onContextMenu", "onFocus", "onBlur", "aria-label"]);
-            return (0, l.jsx)(c.STz, {
+                onFocus: p,
+                onBlur: x,
+                "aria-label": E,
+                ...f
+            } = e;
+            return (0, n.jsx)(c.STz, {
                 "data-migration-pending": !0,
-                tooltipClassName: _.RF,
-                tooltipContentClassName: _.In,
-                "aria-label": S,
-                forceOpen: r,
-                shouldShow: o,
+                tooltipClassName: m.RF,
+                tooltipContentClassName: m.In,
+                "aria-label": E,
+                forceOpen: s,
+                shouldShow: a,
                 color: c.oMw.GREEN,
                 positionKeyStemOverride: i,
-                text: n,
+                text: l,
                 children: e => {
                     let {
-                        onClick: n,
-                        onMouseEnter: r,
-                        onMouseLeave: o,
+                        onClick: l,
+                        onMouseEnter: s,
+                        onMouseLeave: a,
                         onContextMenu: i,
                         onFocus: c,
-                        onBlur: _,
-                        "aria-label": m
+                        onBlur: m,
+                        "aria-label": E
                     } = e;
-                    return (0, l.jsx)(f, b(p({
+                    return (0, n.jsx)(A, {
                         onClick: e => {
-                            null == n || n(), null == a || a(e)
+                            l?.(), r?.(e)
                         },
                         onMouseEnter: () => {
-                            null == r || r(), null == s || s()
+                            s?.(), o?.()
                         },
                         onMouseLeave: () => {
-                            null == o || o(), null == u || u()
+                            a?.(), u?.()
                         },
                         onContextMenu: e => {
-                            null == i || i(), null == d || d(e)
+                            i?.(), d?.(e)
                         },
                         onFocus: () => {
-                            null == c || c(), null == g || g()
+                            c?.(), p?.()
                         },
                         onBlur: () => {
-                            null == _ || _(), null == y || y()
+                            m?.(), x?.()
                         },
-                        "aria-label": m
-                    }, x), {
+                        "aria-label": E,
+                        ...f,
                         ref: t
-                    }))
+                    })
                 }
             })
         }

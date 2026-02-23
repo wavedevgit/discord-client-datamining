@@ -1,11 +1,12 @@
 /** chunk id: 717607, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
     A: () => c
-}), n(896048);
-var r = n(627968),
-    l = n(64700),
-    i = n(158954),
-    s = n(607272),
+});
+var i = n(627968),
+    s = n(64700),
+    l = n(158954),
+    r = n(607272),
     a = n(985018),
     o = n(993169);
 
@@ -13,44 +14,44 @@ function c(e) {
     let {
         userId: t,
         applicationId: n
-    } = e, [c, u] = l.useState(!1), [d, p] = l.useState(!1), h = l.useCallback(async e => {
-        e.stopPropagation(), p(!0);
+    } = e, [c, d] = s.useState(!1), [u, h] = s.useState(!1), A = s.useCallback(async e => {
+        e.stopPropagation(), h(!0);
         try {
-            await s.A.cancelFriendRequest({
+            await r.A.cancelFriendRequest({
                 userId: t,
                 applicationId: n,
                 location: "ActionButtonFriendRequest"
             })
         } finally {
-            p(!1)
+            h(!1)
         }
-    }, [n, t]), g = l.useCallback(async e => {
-        e.stopPropagation(), u(!0);
+    }, [n, t]), p = s.useCallback(async e => {
+        e.stopPropagation(), d(!0);
         try {
-            await s.A.maybeConfirmFriendRequestAccept({
+            await r.A.maybeConfirmFriendRequestAccept({
                 userId: t,
                 applicationId: n,
                 location: "ActionButtonFriendRequest"
             })
         } finally {
-            u(!1)
+            d(!1)
         }
     }, [n, t]);
-    return (0, r.jsx)("div", {
+    return (0, i.jsx)("div", {
         className: o.Ze,
-        children: (0, r.jsxs)(i.e2v, {
+        children: (0, i.jsxs)(l.e2v, {
             size: "sm",
-            children: [(0, r.jsx)(i.$nd, {
+            children: [(0, i.jsx)(l.$nd, {
                 variant: "active",
-                onClick: g,
+                onClick: p,
                 text: a.intl.string(a.t.Zcibdf),
                 loading: c,
-                disabled: d
-            }), (0, r.jsx)(i.$nd, {
+                disabled: u
+            }), (0, i.jsx)(l.$nd, {
                 variant: "secondary",
-                onClick: h,
+                onClick: A,
                 text: a.intl.string(a.t.xuio0C),
-                loading: d,
+                loading: u,
                 disabled: c
             })]
         })

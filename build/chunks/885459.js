@@ -1,52 +1,52 @@
 /** chunk id: 885459, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => m
-}), n(896048), n(680155), n(323874), n(14289), n(35956), n(747238), n(321073);
-var r = n(627968),
-    i = n(64700),
-    l = n(960488),
+    A: () => p
+}), n(323874), n(14289), n(35956), n(321073);
+var i = n(627968),
+    r = n(64700),
+    l = n(873263),
     a = n(311907),
     s = n(73153),
     o = n(829219),
-    c = n(859703),
-    u = n(890687),
-    d = n(306190),
-    p = n(607976),
+    d = n(859703),
+    c = n(890687),
+    u = n(306190),
+    A = n(607976),
     h = n(886217),
-    f = n(652215);
+    _ = n(652215);
 
-function g(e) {
-    return new URLSearchParams(e).get(u.L1.QUEST_ID)
+function m(e) {
+    return new URLSearchParams(e).get(c.L1.QUEST_ID)
 }
-let m = function(e) {
+let p = function(e) {
     let {
         questId: t
     } = e, {
         questId: n,
-        setQuestId: m
+        setQuestId: p
     } = function(e) {
         let t = (0, l.W6)(),
-            [n, r] = i.useState(e),
+            [n, i] = r.useState(e),
             {
                 search: a
             } = (0, l.zy)();
-        return i.useEffect(() => {
-            let t = g(a);
-            null != t ? r(t) : null != e && r(e)
-        }, [e, a]), i.useEffect(() => {
-            if (null == n || g(a) === n) return;
+        return r.useEffect(() => {
+            let t = m(a);
+            null != t ? i(t) : null != e && i(e)
+        }, [e, a]), r.useEffect(() => {
+            if (null == n || m(a) === n) return;
             let e = new URLSearchParams;
-            e.set(u.L1.TAB, u.NC.PREVIEW_TOOL), e.set(u.L1.QUEST_ID, n), t.push("".concat(f.BVt.QUEST_HOME_V2, "?").concat(e.toString()))
+            e.set(c.L1.TAB, c.NC.PREVIEW_TOOL), e.set(c.L1.QUEST_ID, n), t.push(`${_.BVt.QUEST_HOME_V2}?${e.toString()}`)
         }, [n, t, a]), {
             questId: n,
-            setQuestId: r
+            setQuestId: i
         }
-    }(t), A = (0, a.bG)([c.A], () => null != n ? c.A.getQuest(n) : void 0, [n]), _ = (0, a.bG)([c.A], () => null != n ? c.A.getQuestLoadedViaPreview(n) : null, [n]);
-    i.useEffect(() => {
+    }(t), g = (0, a.bG)([d.A], () => null != n ? d.A.getQuest(n) : void 0, [n]), E = (0, a.bG)([d.A], () => null != n ? d.A.getQuestLoadedViaPreview(n) : null, [n]);
+    r.useEffect(() => {
         null != n && (0, o.dQ)(n).then(() => {
             (0, o.Gt)(n)
         })
-    }, [n]), i.useEffect(() => {
+    }, [n]), r.useEffect(() => {
         let e = e => {
             let {
                 quest_id: t
@@ -57,23 +57,23 @@ let m = function(e) {
             s.h.unsubscribe("QUEST_PREVIEW_UPDATE", e)
         }
     }, [n]);
-    let [b, E] = i.useState([]);
-    return (0, r.jsx)(p.A, {
-        controls: (0, r.jsx)(d.A, {
+    let [I, f] = r.useState([]);
+    return (0, i.jsx)(A.A, {
+        controls: (0, i.jsx)(u.A, {
             questId: n,
-            setQuestId: m,
-            quest: A,
+            setQuestId: p,
+            quest: g,
             refreshQuest: () => {
                 null != n && (0, o.dQ)(n)
             }
         }),
-        selectedSections: b,
+        selectedSections: I,
         onSectionSelect: e => {
-            "all" === e ? E([]) : E([e])
+            "all" === e ? f([]) : f([e])
         },
-        children: (null == _ ? void 0 : _.id) != null ? (0, r.jsx)(h.Ok, {
-            questId: null == _ ? void 0 : _.id,
-            selectedSections: b
+        children: E?.id != null ? (0, i.jsx)(h.Ok, {
+            questId: E?.id,
+            selectedSections: I
         }) : null
     })
 }

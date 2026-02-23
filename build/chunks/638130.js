@@ -2,47 +2,47 @@
 n.d(t, {
     f: () => g
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(444802),
-    l = n(975571),
-    s = n(524738),
-    a = n(421248),
+var s = n(444802),
+    a = n(975571),
+    r = n(524738),
+    l = n(421248),
     o = n(42765),
     c = n(871930),
     d = n(355097),
     u = n(531525),
     _ = n(652215),
-    p = n(985018),
-    m = n(456144);
+    m = n(985018),
+    A = n(456144);
 
 function g() {
-    let e = (0, i.WX)(),
+    let e = (0, s.WX)(),
         t = [{
-            title: p.intl.string(p.t.GYpoAq),
-            component: a.Z,
+            title: m.intl.string(m.t.GYpoAq),
+            component: l.Z,
             orientation: "vertical",
             setting: u.H.SEXUALLY_EXPLICIT_MEDIA_REDACTION
         }, {
-            title: p.intl.string(p.t["16/3Bi"]),
+            title: m.intl.string(m.t["16/3Bi"]),
             component: o.q,
             orientation: "vertical",
             setting: u.H.GORE_MEDIA_REDACTION
         }];
-    return (0, r.jsxs)(c.h, {
+    return (0, i.jsxs)(c.h, {
         setting: u.H.SENSITIVE_CONTENT_FILTERS,
         scrollPosition: d.d1.EXPLICIT_MEDIA_REDACTION_V2,
-        children: [(0, r.jsx)(c._, {
-            header: p.intl.string(p.t["Hj/But"]),
-            description: p.intl.format(p.t.dliU4j, {
-                learnMoreLink: l.A.getArticleURL(e)
+        children: [(0, i.jsx)(c._, {
+            header: m.intl.string(m.t["Hj/But"]),
+            description: m.intl.format(m.t.dliU4j, {
+                learnMoreLink: a.A.getArticleURL(e)
             })
-        }), (0, r.jsx)(s.A, {
+        }), (0, i.jsx)(r.A, {
             parentSetting: u.H.CONTENT_SOCIAL,
             settingsSection: _.nc_.CONTENT_AND_SOCIAL,
             tabs: t,
             orientation: "vertical",
-            tabsClassName: m.v
+            tabsClassName: A.v
         })]
     })
 }

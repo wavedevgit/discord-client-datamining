@@ -1,9 +1,9 @@
 /** chunk id: 829887, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    RU: () => u,
-    SQ: () => c,
+    RU: () => E,
+    SQ: () => u,
     mb: () => o
-}), n(228524);
+});
 var l = n(627968);
 n(64700);
 var r = n(503698),
@@ -12,18 +12,18 @@ var r = n(503698),
     s = n(100411);
 let o = 16;
 
-function u(e) {
+function E(e) {
     let {
         description: t,
         name: n,
         icon: r,
-        onNavigate: u,
-        className: c,
-        missingNavIcon: E
+        onNavigate: E,
+        className: u,
+        missingNavIcon: c
     } = e;
     return (0, l.jsxs)(i.DUT, {
-        onClick: u,
-        className: a()(s.ol, null != u && s.xO, c),
+        onClick: E,
+        className: a()(s.ol, null != E && s.xO, u),
         children: [null != r && (0, l.jsx)("div", {
             className: s.bl,
             children: r
@@ -33,21 +33,21 @@ function u(e) {
         }), (0, l.jsx)("div", {
             className: s.uV,
             children: t
-        }), null != u && (0, l.jsx)("div", {
+        }), null != E && (0, l.jsx)("div", {
             className: s.Rp,
             children: (0, l.jsx)(i.uhT, {
                 size: "custom",
                 width: o,
                 height: o
             })
-        }), null == u && null != E && (0, l.jsx)("div", {
+        }), null == E && null != c && (0, l.jsx)("div", {
             className: s.Rp,
-            children: E
+            children: c
         })]
     })
 }
 
-function c(e) {
+function u(e) {
     let {
         children: t
     } = e;

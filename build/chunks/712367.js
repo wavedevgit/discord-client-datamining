@@ -1,23 +1,23 @@
 /** chunk id: 712367, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => s
+    A: () => r
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(985018),
+var s = n(985018),
     l = n(137551);
 
-function s(e) {
+function r(e) {
     let {
         showDirtyIndicator: t
     } = e;
-    return t ? (0, r.jsxs)("div", {
+    return t ? (0, i.jsxs)("div", {
         className: l.k,
-        children: [i.intl.string(i.t.KUw7Ss), (0, r.jsx)("div", {
+        children: [s.intl.string(s.t.KUw7Ss), (0, i.jsx)("div", {
             className: l.O
         })]
-    }) : (0, r.jsx)(r.Fragment, {
-        children: i.intl.string(i.t.KUw7Ss)
+    }) : (0, i.jsx)(i.Fragment, {
+        children: s.intl.string(s.t.KUw7Ss)
     })
 }

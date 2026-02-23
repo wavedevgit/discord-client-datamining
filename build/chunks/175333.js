@@ -1,35 +1,35 @@
 /** chunk id: 175333, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => c
+    A: () => d
 });
 var i = n(471024),
-    r = n(486020),
-    s = n(684748),
-    l = n(652215),
-    o = n(672396),
-    a = n(985018);
+    s = n(486020),
+    l = n(684748),
+    a = n(652215),
+    r = n(672396),
+    o = n(985018);
 
-function c(e, t) {
+function d(e, t) {
     let n = e.username,
-        c = a.intl.format(a.t["Yk+uYG"], {
+        d = o.intl.format(o.t["Yk+uYG"], {
             username: ""
         }),
-        d = (0, r.ku)(e),
+        c = (0, s.ku)(e),
         {
             trackView: u,
             trackClick: h
-        } = (0, s.Y)(o.KS.ActivityUserJoin, {
-            notif_type: o.KS.ActivityUserJoin,
+        } = (0, l.Y)(r.KS.ActivityUserJoin, {
+            notif_type: r.KS.ActivityUserJoin,
             notif_user_id: e.id,
-            activity_type: l.xL.JOIN,
+            activity_type: a.xL.JOIN,
             activity_name: t.name
         });
     return {
-        icon: d,
+        icon: c,
         title: n,
-        body: c,
-        hint: e => (0, i.de)(e, a.intl.string(a.t.WRj1Wn)),
+        body: d,
+        hint: e => (0, i.de)(e, o.intl.string(o.t.WRj1Wn)),
         onNotificationShow: () => {
             u()
         },

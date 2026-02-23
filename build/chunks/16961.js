@@ -1,12 +1,13 @@
 /** chunk id: 16961, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    G: () => s
+    G: () => r
 });
-var r = n(723702),
-    l = n(837921),
-    i = n(652215);
+var i = n(723702),
+    s = n(837921),
+    l = n(652215);
 
-function s() {
-    let e = r.isPlatformEmbedded && l.Ay.supportsFeature(i.BYE.POPOUT_WINDOWS);
-    return !r.isPlatformEmbedded || e
+function r() {
+    let e = i.isPlatformEmbedded && s.Ay.supportsFeature(l.BYE.POPOUT_WINDOWS);
+    return !i.isPlatformEmbedded || e
 }

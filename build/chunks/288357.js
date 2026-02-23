@@ -1,22 +1,22 @@
 /** chunk id: 288357, original params: t,e,n (module,exports,require) **/
 n.d(e, {
-    A: () => c
+    A: () => u
 });
 var l = n(627968);
 n(64700);
-var r = n(311907),
-    i = n(397927),
-    u = n(928658),
-    o = n(698441),
-    a = n(985018);
+var i = n(311907),
+    r = n(397927),
+    a = n(928658),
+    d = n(698441),
+    s = n(985018);
 
-function c(t) {
-    let e = (0, r.bG)([o.Ay], () => o.Ay.getGuildScheduledEvent(t), [t]);
-    return null == t || null == e ? null : (0, l.jsx)(i.Drp, {
+function u(t) {
+    let e = (0, i.bG)([d.Ay], () => d.Ay.getGuildScheduledEvent(t), [t]);
+    return null == t || null == e ? null : (0, l.jsx)(r.Drp, {
         id: "report-event",
-        label: a.intl.string(a.t.IBA5wX),
-        action: () => (0, u.uA)(e),
-        icon: i.iFK,
+        label: s.intl.string(s.t.IBA5wX),
+        action: () => (0, a.uA)(e),
+        icon: r.iFK,
         color: "danger"
     })
 }

@@ -1,73 +1,73 @@
-/** chunk id: 216410, original params: e,n,t (module,exports,require) **/
-t.d(n, {
-    A: () => c
-}), t(228524);
-var l = t(627968);
-t(64700);
-var r = t(503698),
-    i = t.n(r),
-    s = t(187322),
-    u = t(158954),
-    o = t(581444),
-    a = t(671816);
+/** chunk id: 216410, original params: n,i,e (module,exports,require) **/
+e.d(i, {
+    A: () => o
+});
+var t = e(627968);
+e(64700);
+var l = e(503698),
+    s = e.n(l),
+    r = e(187322),
+    a = e(158954),
+    d = e(581444),
+    u = e(671816);
 
-function c(e) {
+function o(n) {
     let {
-        title: n,
-        description: t,
-        headerImage: r,
-        onDetails: c,
-        onPurchase: d,
-        PurchaseButton: p,
-        GiftButton: m,
-        availabilityLabel: b
-    } = e;
-    return (0, l.jsx)(s.vN, {
-        children: (0, l.jsxs)("div", {
-            className: i()(o.iE, a.t),
+        title: i,
+        description: e,
+        headerImage: l,
+        onDetails: o,
+        onPurchase: c,
+        PurchaseButton: m,
+        GiftButton: p,
+        availabilityLabel: x
+    } = n;
+    return (0, t.jsx)(r.vN, {
+        children: (0, t.jsxs)("div", {
+            className: s()(d.iE, u.t),
             tabIndex: 0,
             onClick: () => {
-                null != c ? c() : null != d && d()
+                null != o ? o() : null != c && c()
             },
-            onKeyUp: e => {
-                "Enter" === e.key && (e.stopPropagation(), e.preventDefault(), null != c ? c() : null != d && d())
+            onKeyUp: n => {
+                "Enter" === n.key && (n.stopPropagation(), n.preventDefault(), null != o ? o() : null != c && c())
             },
-            children: [(0, l.jsx)("div", {
-                className: o.Td,
-                style: null != r ? {
-                    backgroundImage: null != r ? "url(".concat(r.toString(), ")") : void 0
+            children: [(0, t.jsx)("div", {
+                className: d.Td,
+                style: null != l ? {
+                    backgroundImage: null != l ? `url(${l.toString()})` : void 0
                 } : void 0,
-                children: null == r && (0, l.jsx)(u.qyI, {
+                children: null == l && (0, t.jsx)(a.qyI, {
                     color: "white",
                     size: "custom",
                     height: 80,
                     width: 80
                 })
-            }), (0, l.jsxs)("div", {
-                className: o.zH,
-                children: [(0, l.jsx)(u.EYj, {
+            }), (0, t.jsxs)("div", {
+                className: d.zH,
+                children: [(0, t.jsx)(a.EYj, {
                     color: "text-strong",
                     variant: "text-md/semibold",
-                    children: n
-                }), null != t && (0, l.jsx)(u.EYj, {
-                    className: o.h_,
+                    children: i
+                }), null != e && (0, t.jsx)(a.EYj, {
+                    className: d.h_,
                     color: "text-muted",
                     variant: "text-sm/normal",
-                    children: t
+                    children: e
                 })]
-            }), (null != p || null != m) && (0, l.jsxs)("div", {
-                className: o.qr,
-                children: [null != p && (0, l.jsx)(u.EYj, {
+            }), (null != m || null != p) && (0, t.jsxs)("div", {
+                className: d.qr,
+                children: [null != m && (0, t.jsx)(a.EYj, {
                     color: "interactive-text-default",
                     variant: "text-sm/normal",
-                    children: b
-                }), (0, l.jsxs)("div", {
-                    className: o.GC,
-                    children: [null != p && (0, l.jsx)(p, {
-                        onClick: e => {
-                            e.stopPropagation(), null == d || d()
+                    children: x
+                }), (0, t.jsxs)("div", {
+                    className: d.GC,
+                    children: [null != m && (0, t.jsx)(m, {
+                        onClick: n => {
+                            n.stopPropagation(), c?.()
                         }
-                    }), null != m && (0, l.jsx)(m, {})]
+                    }), null != p && (0, t.jsx)(p, {})]
                 })]
             })]
         })

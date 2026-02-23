@@ -1,0 +1,88 @@
+/** chunk id: 409013, original params: e,t,r (module,exports,require) **/
+r.d(t, {
+    J: () => h,
+    v: () => i
+});
+var l = r(735438),
+    d = r(562465),
+    c = r(73153),
+    a = r(198982),
+    n = r(972441),
+    o = r(652215);
+let u = ["request_params"],
+    s = e => (0, l.isObject)(e) ? (0, l.isArray)(e) ? e.map(s) : (0, l.reduce)(e, (e, t, r) => {
+        let d = (0, l.camelCase)(r);
+        return u.includes(r) ? {
+            ...e,
+            [d]: t
+        } : {
+            ...e,
+            [d]: s(t)
+        }
+    }, {}) : e,
+    i = async e => {
+        let {
+            tenantId: t,
+            layoutId: r,
+            abortSignal: l
+        } = e;
+        if (!n.A.isFetchingLayout(t, r)) try {
+            c.h.dispatch({
+                type: "CMS_LAYOUT_FETCH",
+                tenantId: t,
+                layoutId: r
+            });
+            let e = await d.Bo.get({
+                url: o.Rsh.CMS_LAYOUT(t, r),
+                rejectWithError: !0,
+                signal: l
+            });
+            c.h.dispatch({
+                type: "CMS_LAYOUT_FETCH_SUCCESS",
+                tenantId: t,
+                layout: s(e.body)
+            })
+        } catch (l) {
+            let e = new a.LG(l);
+            throw c.h.dispatch({
+                type: "CMS_LAYOUT_FETCH_FAILURE",
+                tenantId: t,
+                layoutId: r,
+                apiError: e
+            }), e
+        }
+    }, h = async e => {
+        let {
+            tenantId: t,
+            templateId: r,
+            abortSignal: l,
+            requestParams: u
+        } = e;
+        if (!n.A.isFetchingTemplate(t, r)) try {
+            c.h.dispatch({
+                type: "CMS_TEMPLATE_FETCH",
+                tenantId: t,
+                templateId: r
+            });
+            let e = await d.Bo.get({
+                url: o.Rsh.CMS_TEMPLATE(t, r),
+                rejectWithError: !0,
+                signal: l,
+                query: u
+            });
+            c.h.dispatch({
+                type: "CMS_TEMPLATE_FETCH_SUCCESS",
+                tenantId: t,
+                templateId: r,
+                layout: s(e.body)
+            })
+        } catch (l) {
+            let e = new a.LG(l);
+            throw c.h.dispatch({
+                type: "CMS_TEMPLATE_FETCH_FAILURE",
+                tenantId: t,
+                templateId: r,
+                apiError: e
+            }), e
+        }
+    }

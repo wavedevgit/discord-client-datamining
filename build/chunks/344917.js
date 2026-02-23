@@ -1,8 +1,8 @@
 /** chunk id: 344917, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    M: () => i
+    M: () => r
 });
-let r = (0, n(945810).mj)({
+let i = (0, n(945810).mj)({
     kind: "user",
     name: "2025-09-frequent-friends",
     defaultConfig: {
@@ -18,8 +18,8 @@ let r = (0, n(945810).mj)({
     }
 });
 
-function i(e) {
-    return r.useConfig({
+function r(e) {
+    return i.useConfig({
         location: e
     })
 }

@@ -1,222 +1,174 @@
 /** chunk id: 187582, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => L
-}), n(896048), n(321073);
-var r = n(627968),
-    l = n(64700),
-    i = n(607399),
-    s = n(311907),
+    A: () => D
+}), n(321073);
+var i = n(627968),
+    s = n(64700),
+    l = n(607399),
+    r = n(311907),
     a = n(397927),
     o = n(442433),
     c = n(414798),
-    u = n(110574),
-    d = n(793574),
-    p = n(688810),
-    h = n(709066),
-    g = n(87664),
-    f = n(485947),
+    d = n(110574),
+    u = n(793574),
+    h = n(688810),
+    A = n(709066),
+    p = n(87664),
+    g = n(485947),
     m = n(111864),
-    b = n(342296),
-    A = n(290863),
-    y = n(994500),
-    O = n(741961),
-    j = n(287809),
-    x = n(954571),
-    _ = n(203982),
-    v = n(398219),
-    E = n(427262),
-    C = n(837921),
-    S = n(652215),
-    I = n(985018),
-    N = n(701939);
+    _ = n(342296),
+    f = n(290863),
+    x = n(994500),
+    C = n(741961),
+    E = n(287809),
+    I = n(954571),
+    b = n(203982),
+    N = n(398219),
+    S = n(427262),
+    T = n(837921),
+    y = n(652215),
+    v = n(985018),
+    j = n(701939);
+let R = [],
+    O = T.Ay.getEnableHardwareAcceleration();
 
-function T(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = r
-        })
-    }
-    return e
-}
-let P = [],
-    w = C.Ay.getEnableHardwareAcceleration();
-
-function R(e) {
+function L(e) {
     let {
         user: t,
         channel: a,
-        status: d,
-        activities: p
-    } = e, h = (0, s.bG)([O.A], () => null != O.A.getTypingUsers(a.id)[t.id]), f = (0, s.bG)([j.default], () => j.default.getCurrentUser()), x = (0, s.bG)([A.A], () => A.A.isMobileOnline(t.id)), v = (0, s.bG)([y.A], () => y.A.getNickname(t.id)), C = (0, g.A)(t.id), N = l.useRef(null), P = e => {
+        status: u,
+        activities: h
+    } = e, A = (0, r.bG)([C.A], () => null != C.A.getTypingUsers(a.id)[t.id]), g = (0, r.bG)([E.default], () => E.default.getCurrentUser()), I = (0, r.bG)([f.A], () => f.A.isMobileOnline(t.id)), N = (0, r.bG)([x.A], () => x.A.getNickname(t.id)), T = (0, p.A)(t.id), j = s.useRef(null), R = e => {
         (0, o.L3)(e, async () => {
             let {
                 default: e
-            } = await Promise.all([n.e("97262"), n.e("29534"), n.e("62891"), n.e("42296")]).then(n.bind(n, 228006));
-            return n => {
-                var l, i;
-                return (0, r.jsx)(e, (l = T({}, n), i = i = {
-                    user: t,
-                    channel: a
-                }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
-                    var n = Object.keys(e);
-                    if (Object.getOwnPropertySymbols) {
-                        var r = Object.getOwnPropertySymbols(e);
-                        n.push.apply(n, r)
-                    }
-                    return n
-                })(Object(i)).forEach(function(e) {
-                    Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(i, e))
-                }), l))
-            }
+            } = await Promise.all([n.e("97262"), n.e("42128"), n.e("69293")]).then(n.bind(n, 228006));
+            return n => (0, i.jsx)(e, {
+                ...n,
+                user: t,
+                channel: a
+            })
         })
-    }, R = () => {
-        let e = "@".concat(E.Ay.getUserTag(t, {
-                decoration: "never"
-            })),
-            n = "<@".concat(t.id, ">");
-        _._.dispatch(S.jej.TEXTAREA_FOCUS, {
+    }, L = () => {
+        let e = `@${S.Ay.getUserTag(t,{decoration:"never"})}`,
+            n = `<@${t.id}>`;
+        b._.dispatch(y.jej.TEXTAREA_FOCUS, {
             channelId: a.id
-        }), _._.dispatchToLastSubscribed(S.jej.INSERT_TEXT, {
+        }), b._.dispatchToLastSubscribed(y.jej.INSERT_TEXT, {
             plainText: e,
             rawText: n
         }), c.A.startTyping(a.id)
-    }, D = (0, m.r)({
+    }, M = (0, m.r)({
         user: t
-    }), [L, M] = l.useState(!1);
-    return (0, r.jsx)(b.A, {
-        targetElementRef: N,
+    }), [D, G] = s.useState(!1);
+    return (0, i.jsx)(_.A, {
+        targetElementRef: j,
         user: t,
         channelId: a.id,
-        position: i.Fr ? "window_center" : "left",
+        position: l.Fr ? "window_center" : "left",
         spacing: 16,
-        onShiftClick: R,
-        shouldShow: L,
-        onRequestClose: () => M(!1),
+        onShiftClick: L,
+        shouldShow: D,
+        onRequestClose: () => G(!1),
         children: e => {
             let {
                 onClick: n,
-                onMouseDown: l
-            } = e, i = function(e, t) {
-                if (null == e) return {};
-                var n, r, l, i = {};
-                if ("u" > typeof Reflect && Reflect.ownKeys) {
-                    for (l = 0, n = Reflect.ownKeys(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
-                    return i
-                }
-                if (i = function(e, t) {
-                        if (null == e) return {};
-                        var n, r, l = {},
-                            i = Object.getOwnPropertyNames(e);
-                        for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n]);
-                        return l
-                    }(e, t), Object.getOwnPropertySymbols)
-                    for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
-                return i
-            }(e, ["onClick", "onMouseDown"]);
-            return (0, r.jsx)(u.A, T({
-                ref: N,
+                onMouseDown: s,
+                ...l
+            } = e;
+            return (0, i.jsx)(d.A, {
+                ref: j,
                 user: t,
-                currentUser: f,
+                currentUser: g,
                 isOwner: t.id === a.ownerId,
-                ownerTooltipText: I.intl.string(I.t["MRXZ+x"]),
-                shouldAnimateStatus: w,
-                isTyping: h,
-                status: d,
-                activities: p,
-                applicationStream: C,
+                ownerTooltipText: v.intl.string(v.t["MRXZ+x"]),
+                shouldAnimateStatus: O,
+                isTyping: A,
+                status: u,
+                activities: h,
+                applicationStream: T,
                 channel: a,
-                onContextMenu: P,
-                selected: L,
-                isMobile: x,
-                nick: v,
-                nameplate: D,
+                onContextMenu: R,
+                selected: D,
+                isMobile: I,
+                nick: N,
+                nameplate: M,
                 onClick: e => {
-                    e.shiftKey ? null == R || R() : M(e => !e)
+                    e.shiftKey ? L?.() : G(e => !e)
                 },
                 onMouseDown: e => {
-                    L ? e.stopPropagation() : null == l || l(e)
-                }
-            }, i), t.id)
+                    D ? e.stopPropagation() : s?.(e)
+                },
+                ...l
+            }, t.id)
         }
     })
 }
 
-function D(e, t) {
+function M(e, t) {
     if (e.listItems.length !== t.listItems.length) return !1;
     for (let n = 0; n < e.listItems.length; n++) {
-        let r = e.listItems[n],
-            l = t.listItems[n];
-        if (r.user !== l.user || r.status !== l.status || r.activities !== l.activities) return !1
+        let i = e.listItems[n],
+            s = t.listItems[n];
+        if (i.user !== s.user || i.status !== s.status || i.activities !== s.activities) return !1
     }
     return !0
 }
 
-function L(e) {
+function D(e) {
     let {
         channel: t
-    } = e, n = j.default.getCurrentUser(), i = null == n ? void 0 : n.isStaff(), {
+    } = e, n = E.default.getCurrentUser(), l = n?.isStaff(), {
         analyticsLocations: o
-    } = (0, p.Ay)(d.A.MEMBER_LIST), {
+    } = (0, h.Ay)(u.A.MEMBER_LIST), {
         listItems: c
-    } = (0, s.bG)([y.A, j.default, A.A], () => {
-        let e = (0, v.F)(t.recipients, j.default),
+    } = (0, r.bG)([x.A, E.default, f.A], () => {
+        let e = (0, N.F)(t.recipients, E.default),
             n = {};
-        for (let t of e) {
-            var r, l, i;
-            y.A.isFriend(t.id) || t.id === (null == (r = j.default.getCurrentUser()) ? void 0 : r.id) ? n[t.id] = {
-                status: null != (l = A.A.getStatus(t.id)) ? l : S.clD.OFFLINE,
-                activities: null != (i = A.A.getActivities(t.id)) ? i : P
-            } : n[t.id] = {
-                status: S.clD.OFFLINE,
-                activities: P
-            }
-        }
-        let s = [];
+        for (let t of e) x.A.isFriend(t.id) || t.id === E.default.getCurrentUser()?.id ? n[t.id] = {
+            status: f.A.getStatus(t.id) ?? y.clD.OFFLINE,
+            activities: f.A.getActivities(t.id) ?? R
+        } : n[t.id] = {
+            status: y.clD.OFFLINE,
+            activities: R
+        };
+        let i = [];
         for (let t of e) {
             let e = {
                 user: t,
                 status: n[t.id].status,
                 activities: n[t.id].activities
             };
-            s.push(e)
+            i.push(e)
         }
         return {
-            listItems: s
+            listItems: i
         }
-    }, [t], D);
-    l.useEffect(() => {
-        x.default.track(S.HAw.MEMBER_LIST_VIEWED, {
+    }, [t], M);
+    s.useEffect(() => {
+        I.default.track(y.HAw.MEMBER_LIST_VIEWED, {
             channel_id: t.id,
             channel_type: t.type,
             guild_id: t.guild_id
         })
     }, [t.guild_id, t.id, t.type]);
-    let u = i && c.every(e => e.user.isStaff());
-    return (0, r.jsx)(p.f5, {
+    let d = l && c.every(e => e.user.isStaff());
+    return (0, i.jsx)(h.f5, {
         value: o,
-        children: (0, r.jsx)("div", {
-            className: N.kL,
-            children: (0, r.jsx)("aside", {
-                className: N.yg,
-                children: (0, r.jsxs)(a.HOs, {
-                    className: N.ol,
+        children: (0, i.jsx)("div", {
+            className: j.kL,
+            children: (0, i.jsx)("aside", {
+                className: j.yg,
+                children: (0, i.jsxs)(a.HOs, {
+                    className: j.ol,
                     fade: !0,
-                    children: [(0, r.jsxs)(f.A, {
-                        className: N.lL,
-                        children: ["".concat(I.intl.string(I.t["9Oq93m"]), "—").concat(c.length, " "), u && (0, r.jsx)(h.A, {
-                            type: h.A.Types.STAFF_ONLY_DM
+                    children: [(0, i.jsxs)(g.A, {
+                        className: j.lL,
+                        children: [`${v.intl.string(v.t["9Oq93m"])}—${c.length} `, d && (0, i.jsx)(A.A, {
+                            type: A.A.Types.STAFF_ONLY_DM
                         })]
-                    }), c.map(e => (0, r.jsx)(R, {
+                    }), c.map(e => (0, i.jsx)(L, {
                         user: e.user,
                         status: e.status,
                         activities: e.activities,

@@ -1,42 +1,42 @@
 /** chunk id: 754804, original params: e,t,i (module,exports,require) **/
 i.d(t, {
-    k: () => a,
-    o: () => o
+    k: () => o,
+    o: () => a
 });
 var n = i(627968),
-    r = i(158954),
-    l = i(556918);
+    s = i(158954),
+    r = i(556918);
 
-function s(e) {
+function l(e) {
     let {
         icon: t
     } = e;
     return (0, n.jsx)("div", {
-        className: l.Fx,
+        className: r.Fx,
         children: t
     })
 }
 
-function a() {
-    return (0, n.jsx)(s, {
-        icon: (0, n.jsx)(r.C3E, {
+function o() {
+    return (0, n.jsx)(l, {
+        icon: (0, n.jsx)(s.C3E, {
             size: "custom",
             width: 20,
             height: 20,
             color: "currentColor",
-            colorClass: l.Be
+            colorClass: r.Be
         })
     })
 }
 
-function o() {
-    return (0, n.jsx)(s, {
-        icon: (0, n.jsx)(r.Y3C, {
+function a() {
+    return (0, n.jsx)(l, {
+        icon: (0, n.jsx)(s.Y3C, {
             size: "custom",
             width: 20,
             height: 20,
             color: "currentColor",
-            colorClass: l.rY
+            colorClass: r.rY
         })
     })
 }

@@ -1,20 +1,19 @@
-/** chunk id: 715628, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    A: () => a
+/** chunk id: 715628, original params: e,a,t (module,exports,require) **/
+t.d(a, {
+    A: () => o
 });
-var r = n(627968);
-n(64700);
-var i = n(291812);
+var n = t(627968);
+t(64700);
+var i = t(291812);
 
-function a(e, t) {
+function o(e, a) {
     let {
-        message: n,
-        compact: a
+        message: t,
+        compact: o
     } = e;
-    return (0, r.jsx)(i.Ay, {
-        message: n,
-        content: t,
-        compact: null != a && a
+    return (0, n.jsx)(i.Ay, {
+        message: t,
+        content: a,
+        compact: o ?? !1
     })
 }

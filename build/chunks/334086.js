@@ -1,44 +1,44 @@
-/** chunk id: 334086, original params: e,n,l (module,exports,require) **/
-l.d(n, {
-    $: () => d,
+/** chunk id: 334086, original params: e,n,t (module,exports,require) **/
+t.d(n, {
+    $: () => u,
     c: () => h
 });
-var t = l(284009),
-    i = l.n(t),
-    s = l(956793),
-    a = l(849736),
-    r = l(323443),
-    c = l(734057),
-    o = l(383501),
-    u = l(988794);
-async function d(e, n) {
+var l = t(284009),
+    i = t.n(l),
+    s = t(956793),
+    a = t(849736),
+    r = t(323443),
+    c = t(734057),
+    o = t(383501),
+    d = t(988794);
+async function u(e, n) {
     let {
-        entity_type: l
+        entity_type: t
     } = e;
-    switch (l) {
-        case u.Ps.STAGE_INSTANCE: {
+    switch (t) {
+        case d.Ps.STAGE_INSTANCE: {
             let n = o.A.getChannelId(),
-                l = c.A.getChannel(e.channel_id);
-            i()(null != l, "could not find channel"), n !== l.id && (await r.cy(l, !0), await r.jA(l, null)), await (0, a.e7)(l, !1, !0);
+                t = c.A.getChannel(e.channel_id);
+            i()(null != t, "could not find channel"), n !== t.id && (await r.cy(t, !0), await r.jA(t, null)), await (0, a.e7)(t, !1, !0);
             break
         }
-        case u.Ps.VOICE: {
+        case d.Ps.VOICE: {
             let n = o.A.getChannelId(),
-                l = c.A.getChannel(e.channel_id);
-            i()(null != l, "could not find channel"), n !== l.id && s.default.selectVoiceChannel(l.id)
+                t = c.A.getChannel(e.channel_id);
+            i()(null != t, "could not find channel"), n !== t.id && s.default.selectVoiceChannel(t.id)
         }
     }
 }
 
 function h(e, n) {
     let {
-        entity_type: l
+        entity_type: t
     } = e;
-    switch (l) {
-        case u.Ps.STAGE_INSTANCE:
-        case u.Ps.VOICE:
-        case u.Ps.EXTERNAL:
-            null == n || n()
+    switch (t) {
+        case d.Ps.STAGE_INSTANCE:
+        case d.Ps.VOICE:
+        case d.Ps.EXTERNAL:
+            n?.()
     }
     return Promise.resolve()
 }

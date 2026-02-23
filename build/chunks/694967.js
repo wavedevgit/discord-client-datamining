@@ -1,12 +1,13 @@
 /** chunk id: 694967, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
     A: () => a
 });
-var r = n(311907),
-    l = n(962173),
-    i = n(403362),
-    s = n(652215);
+var i = n(311907),
+    s = n(962173),
+    l = n(403362),
+    r = n(652215);
 
 function a() {
-    return (0, r.yK)([l.A], () => [l.A.getAccount(null, s.fg2.XBOX), l.A.getAccount(null, s.fg2.PLAYSTATION), l.A.getAccount(null, s.fg2.PLAYSTATION_STAGING)].filter(i.Vq))
+    return (0, i.yK)([s.A], () => [s.A.getAccount(null, r.fg2.XBOX), s.A.getAccount(null, r.fg2.PLAYSTATION), s.A.getAccount(null, r.fg2.PLAYSTATION_STAGING)].filter(l.Vq))
 }

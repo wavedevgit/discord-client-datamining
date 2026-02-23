@@ -1,28 +1,28 @@
 /** chunk id: 298481, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => d
+    A: () => u
 });
-var r = n(627968),
-    i = n(64700),
-    l = n(397927),
+var i = n(627968),
+    l = n(64700),
+    r = n(397927),
     a = n(935649),
     s = n(847599),
     o = n(870383),
-    c = n(36149),
-    u = n(985018);
+    d = n(36149),
+    c = n(985018);
 
-function d(e) {
+function u(e) {
     let {
         channelId: t
-    } = e, n = (0, c.b8)(), d = (0, c.i2)(), p = (0, o.W)(u.intl.string(u.t.KPGVWl), u.intl.string(u.t["9KiIz6"])), m = u.intl.string(u.t["/nicWo"]), f = i.useCallback(() => {
+    } = e, n = (0, d.b8)(), u = (0, d.i2)(), _ = (0, o.W)(c.intl.string(c.t.KPGVWl), c.intl.string(c.t["9KiIz6"])), m = c.intl.string(c.t["/nicWo"]), h = l.useCallback(() => {
         a.A.showAgeVerificationGetStartedModal({
             entryPoint: s.q1.SYSTEM_DM_RETRY_BUTTON
         }), (0, s.UT)(s.Im.RETRY, t)
     }, [t]);
-    return (0, r.jsx)(l.Button, {
+    return (0, i.jsx)(r.Button, {
         variant: "primary",
-        text: n ? p : m,
-        onClick: f,
-        disabled: !d
+        text: n ? _ : m,
+        onClick: h,
+        disabled: !u
     })
 }

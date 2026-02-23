@@ -1,9 +1,8 @@
-/** chunk id: 861170, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    G: () => i
+/** chunk id: 861170, original params: e,a,t (module,exports,require) **/
+t.d(a, {
+    G: () => n
 });
-let r = new(0, n(731692).B)({
+let r = new(0, t(731692).B)({
     ach: {
         year: "mwaka",
         month: "dwe",
@@ -386,6 +385,6 @@ let r = new(0, n(731692).B)({
     }
 }, "en");
 
-function i(e, t, n) {
-    return "era" === e || "dayPeriod" === e ? t : "year" === e || "month" === e || "day" === e ? r.getStringForLocale(e, n) : "––"
+function n(e, a, t) {
+    return "era" === e || "dayPeriod" === e ? a : "year" === e || "month" === e || "day" === e ? r.getStringForLocale(e, t) : "––"
 }

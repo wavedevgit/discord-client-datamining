@@ -1,51 +1,30 @@
-/** chunk id: 709772, original params: e,t,n (module,exports,require) **/
+/** chunk id: 709772, original params: e,t,l (module,exports,require) **/
 "use strict";
-n.d(t, {
-    a: () => c
+l.d(t, {
+    a: () => s
 });
-var r = n(627968);
-n(64700);
-var i = n(342393),
-    a = n(71532),
-    o = n(714126);
-
-function s(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-
-function l(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            s(e, t, n[t])
-        })
-    }
-    return e
-}
-let c = e => {
+var r = l(627968);
+l(64700);
+var a = l(342393),
+    n = l(71532),
+    i = l(714126);
+let s = e => {
     let {
         errorLabel: t,
-        children: n,
+        children: l,
         elementOptions: s
-    } = e, c = Date.now();
-    return (0, r.jsx)(o.W, {
+    } = e, o = Date.now();
+    return (0, r.jsx)(i.W, {
         label: t,
-        children: (0, r.jsx)(i.Elements, {
-            stripe: (0, a.Cv)(),
-            options: l({
+        children: (0, r.jsx)(a.Elements, {
+            stripe: (0, n.Cv)(),
+            options: {
                 mode: "setup",
                 currency: "usd",
-                setup_future_usage: "off_session"
-            }, s),
-            children: n
+                setup_future_usage: "off_session",
+                ...s
+            },
+            children: l
         })
-    }, c)
+    }, o)
 }

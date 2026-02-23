@@ -2,4 +2,4 @@
 n.d(t, {
     M: () => l
 });
-var r, l = ((r = {})[r.UNKNOWN = 0] = "UNKNOWN", r[r.MESSAGE_SEND = 1] = "MESSAGE_SEND", r[r.GUILD_MEMBER_JOIN_OR_UPDATE = 2] = "GUILD_MEMBER_JOIN_OR_UPDATE", r)
+var i, l = ((i = {})[i.UNKNOWN = 0] = "UNKNOWN", i[i.MESSAGE_SEND = 1] = "MESSAGE_SEND", i[i.GUILD_MEMBER_JOIN_OR_UPDATE = 2] = "GUILD_MEMBER_JOIN_OR_UPDATE", i)

@@ -1,62 +1,31 @@
-/** chunk id: 462226, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => c
+/** chunk id: 462226, original params: t,e,n (module,exports,require) **/
+n.d(e, {
+    A: () => d
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
 var l = n(397927),
-    i = n(626584),
+    r = n(626584),
     a = n(833349),
     s = n(652215),
     o = n(985018);
 
-function c(e) {
+function d(t) {
     let {
-        activity: t,
+        activity: e,
         user: n,
-        variant: c = "secondary",
-        onAction: u
-    } = e, d = function(e, t) {
-        if (null == e) return {};
-        var n, r, l, i = {};
-        if ("u" > typeof Reflect && Reflect.ownKeys) {
-            for (l = 0, n = Reflect.ownKeys(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
-            return i
-        }
-        if (i = function(e, t) {
-                if (null == e) return {};
-                var n, r, l = {},
-                    i = Object.getOwnPropertyNames(e);
-                for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n]);
-                return l
-            }(e, t), Object.getOwnPropertySymbols)
-            for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
-        return i
-    }(e, ["activity", "user", "variant", "onAction"]);
-    return (0, a.A)(t, s.jUm.INSTANCE) ? (0, r.jsx)(l.Button, function(e) {
-        for (var t = 1; t < arguments.length; t++) {
-            var n = null != arguments[t] ? arguments[t] : {},
-                r = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                return Object.getOwnPropertyDescriptor(n, e).enumerable
-            }))), r.forEach(function(t) {
-                var r;
-                r = n[t], t in e ? Object.defineProperty(e, t, {
-                    value: r,
-                    enumerable: !0,
-                    configurable: !0,
-                    writable: !0
-                }) : e[t] = r
-            })
-        }
-        return e
-    }({
+        variant: d = "secondary",
+        onAction: u,
+        ...c
+    } = t;
+    return (0, a.A)(e, s.jUm.INSTANCE) ? (0, i.jsx)(l.Button, {
         text: o.intl.string(o.t.vwl1PK),
-        variant: c,
+        variant: d,
         size: "sm",
         onClick: () => {
-            null == u || u(), new i.A("UserActivityActions").log("notify", n.id, t)
+            u?.(), new r.A("UserActivityActions").log("notify", n.id, e)
         },
-        fullWidth: !0
-    }, d)) : null
+        fullWidth: !0,
+        ...c
+    }) : null
 }

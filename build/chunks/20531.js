@@ -1,4 +1,5 @@
 /** chunk id: 20531, original params: e,t,n (module,exports,require) **/
+"use strict";
 e.exports = {
     lF: "participants__4783a",
     Kk: "icon__4783a",

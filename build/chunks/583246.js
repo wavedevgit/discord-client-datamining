@@ -1,58 +1,58 @@
 /** chunk id: 583246, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => m
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
 var l = n(398590),
-    i = n(114212),
-    a = n(345942),
-    o = n(183555),
-    s = n(913453),
+    a = n(114212),
+    s = n(345942),
+    r = n(183555),
+    o = n(913453),
     c = n(51943),
-    u = n(782505),
-    d = n(515054),
-    f = n(828151);
+    d = n(782505),
+    u = n(515054),
+    g = n(828151);
 
-function p(e) {
+function m(e) {
     let {
         user: t,
         onClose: n
     } = e, {
-        trackUserProfileAction: p
-    } = (0, o.NJ)(), {
-        mutualGuilds: g,
-        isFetching: m
-    } = (0, s.A)(t);
-    return (0, r.jsx)(d.K, {
-        className: f.XG,
+        trackUserProfileAction: m
+    } = (0, r.NJ)(), {
+        mutualGuilds: x,
+        isFetching: f
+    } = (0, o.A)(t);
+    return (0, i.jsx)(u.K, {
+        className: g.XG,
         fade: !0,
-        children: null == g && m ? Array.from({
+        children: null == x && f ? Array.from({
             length: 10
-        }).map((e, t) => (0, r.jsxs)("div", {
-            className: f.Y7,
-            children: [(0, r.jsx)(i.FQ, {
+        }).map((e, t) => (0, i.jsxs)("div", {
+            className: g.Y7,
+            children: [(0, i.jsx)(a.FQ, {
                 width: 40,
                 opacity: .08
-            }), (0, r.jsx)(i.FQ, {
+            }), (0, i.jsx)(a.FQ, {
                 width: 135,
                 opacity: .08
             })]
-        }, t)) : (null != g || m) && (null == g ? void 0 : g.length) !== 0 ? null == g ? void 0 : g.map(e => {
+        }, t)) : (null != x || f) && x?.length !== 0 ? x?.map(e => {
             let {
-                guild: i,
-                nick: o
+                guild: a,
+                nick: r
             } = e;
-            return (0, r.jsx)(c.A, {
+            return (0, i.jsx)(c.A, {
                 user: t,
-                guild: i,
-                nick: o,
+                guild: a,
+                nick: r,
                 onSelect: () => {
-                    p({
+                    m({
                         action: "PRESS_MUTUAL_GUILD"
-                    }), (0, a.u)(i.id), n(), (0, l.jH)()
+                    }), (0, s.u)(a.id), n(), (0, l.jH)()
                 }
-            }, i.id)
-        }) : (0, r.jsx)(u.jB, {})
+            }, a.id)
+        }) : (0, i.jsx)(d.jB, {})
     })
 }

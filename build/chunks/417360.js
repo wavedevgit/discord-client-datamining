@@ -1,11 +1,10 @@
 /** chunk id: 417360, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => a
+    A: () => r
 });
-var r = n(311907),
-    i = n(734057);
+var i = n(311907),
+    l = n(734057);
 
-function a(e) {
-    return (0, r.yK)([i.A], () => e.filter(e => i.A.hasChannel(e.ref_id)), [e])
+function r(e) {
+    return (0, i.yK)([l.A], () => e.filter(e => l.A.hasChannel(e.ref_id)), [e])
 }

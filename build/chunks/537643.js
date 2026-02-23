@@ -1,49 +1,48 @@
 /** chunk id: 537643, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    I: () => c
+    I: () => d
 });
-var r = n(64700),
-    i = n(311907),
-    l = n(139675),
+var i = n(64700),
+    l = n(311907),
+    r = n(139675),
     a = n(835517),
     s = n(729394),
     o = n(216184);
-let c = e => {
+let d = e => {
     let {
         messageId: t,
         presenceActivity: n,
-        application: c
+        application: d
     } = e, {
-        cachedImageURL: u,
-        imageURL: d
-    } = (0, i.cf)([o.A], () => (e => {
-        var t, n, r, i;
+        cachedImageURL: c,
+        imageURL: u
+    } = (0, l.cf)([o.A], () => (e => {
         let {
-            messageId: s,
-            presenceActivity: c,
-            application: u
-        } = e, d = o.A.getCoverImageURL({
-            messageId: s
+            messageId: t,
+            presenceActivity: n,
+            application: i
+        } = e, l = o.A.getCoverImageURL({
+            messageId: t
         });
-        if (null === d) return {
+        if (null === l) return {
             cachedImageURL: null,
             imageURL: null
         };
-        let p = 600 * (0, a.A)(),
-            m = null != (t = null != (n = null != (r = (null == c || null == (i = c.assets) ? void 0 : i.invite_cover_image) != null ? (0, l.uD)(c.application_id, c.assets.invite_cover_image, p) : null) ? r : d) ? n : u.getCoverImageURL(p)) ? t : null;
+        let s = 600 * (0, a.A)(),
+            d = (n?.assets?.invite_cover_image != null ? (0, r.uD)(n.application_id, n.assets.invite_cover_image, s) : null) ?? l ?? i.getCoverImageURL(s) ?? null;
         return {
-            cachedImageURL: d,
-            imageURL: m
+            cachedImageURL: l,
+            imageURL: d
         }
     })({
         messageId: t,
         presenceActivity: n,
-        application: c
-    }), [t, n, c]);
-    return r.useEffect(() => {
-        u !== d && s.K({
+        application: d
+    }), [t, n, d]);
+    return i.useEffect(() => {
+        c !== u && s.K({
             messageId: t,
-            coverImageURL: d
+            coverImageURL: u
         })
-    }, [u, d, t]), d
+    }, [c, u, t]), u
 }

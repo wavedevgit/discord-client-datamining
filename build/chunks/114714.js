@@ -1,19 +1,19 @@
 /** chunk id: 114714, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => u
+    A: () => c
 });
-var r = n(73153),
-    i = n(272355),
+var i = n(73153),
+    r = n(272355),
     l = n(927813),
     a = n(4106),
     s = n(335934);
 let o = null;
-class c extends i.A {
+class d extends r.A {
     _initialize() {
-        r.h.subscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen)
+        i.h.subscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen)
     }
     _terminate() {
-        r.h.unsubscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen)
+        i.h.unsubscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen)
     }
     handlePostConnectionOpen() {
         (0, s.HF)("ICYMIManager", !1) && (! function e() {
@@ -24,4 +24,4 @@ class c extends i.A {
         }(!0), a.A.getGuildChannelScores(), a.A.getRecommendedGuilds())
     }
 }
-let u = new c
+let c = new d

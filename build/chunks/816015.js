@@ -1,77 +1,67 @@
 /** chunk id: 816015, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => _
-}), n(896048);
-var r = n(627968),
-    i = n(64700),
-    l = n(960488),
+    A: () => g
+});
+var i = n(627968),
+    r = n(64700),
+    l = n(873263),
     a = n(311907),
     s = n(308528),
     o = n(456412),
-    c = n(210714),
-    u = n(851466),
-    d = n(820284),
-    p = n(341338),
+    d = n(210714),
+    c = n(851466),
+    u = n(820284),
+    A = n(341338),
     h = n(998515),
-    f = n(652215),
-    g = n(58682);
-
-function m(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-class A extends i.Component {
+    _ = n(652215),
+    m = n(58682);
+class p extends r.Component {
     componentDidMount() {
-        this.fetchStoreListing(), (0, c.d)("channel_store_listing")
+        this.fetchStoreListing(), (0, d.d)("channel_store_listing")
     }
+    fetchStoreListing = e => {
+        let {
+            channel: t,
+            inputSkuId: n
+        } = this.props;
+        return null != e ? s.A.fetchChannelStoreListing(t.id, e) : null != n ? s.A.fetchChannelStoreListing(t.id, n) : s.A.fetchChannelStoreListing(t.id)
+    };
+    renderApplicationListing = e => {
+        let {
+            location: t
+        } = e, {
+            channel: n,
+            skuId: r,
+            width: l
+        } = this.props;
+        return (0, i.jsx)(A.A, {
+            channel: n,
+            inputSkuId: r,
+            fetchStoreListing: this.fetchStoreListing,
+            location: t,
+            pageSize: (0, h.getPageSize)(l)
+        })
+    };
     render() {
-        return null != this.props.skuId ? (0, r.jsx)(d.A, {
-            page: f.liQ.CHANNEL_STORE_LISTING,
+        return null != this.props.skuId ? (0, i.jsx)(u.A, {
+            page: _.liQ.CHANNEL_STORE_LISTING,
             root: !0,
-            children: (0, r.jsx)("div", {
-                className: g.gE,
-                children: (0, r.jsx)(l.qh, {
+            children: (0, i.jsx)("div", {
+                className: m.gE,
+                children: (0, i.jsx)(l.qh, {
                     path: "*",
                     render: this.renderApplicationListing
                 })
             })
         }) : null
     }
-    constructor(...e) {
-        super(...e), m(this, "fetchStoreListing", e => {
-            let {
-                channel: t,
-                inputSkuId: n
-            } = this.props;
-            return null != e ? s.A.fetchChannelStoreListing(t.id, e) : null != n ? s.A.fetchChannelStoreListing(t.id, n) : s.A.fetchChannelStoreListing(t.id)
-        }), m(this, "renderApplicationListing", e => {
-            let {
-                location: t
-            } = e, {
-                channel: n,
-                skuId: i,
-                width: l
-            } = this.props;
-            return (0, r.jsx)(p.A, {
-                channel: n,
-                inputSkuId: i,
-                fetchStoreListing: this.fetchStoreListing,
-                location: t,
-                pageSize: (0, h.getPageSize)(l)
-            })
-        })
-    }
 }
-let _ = (0, o.A)(a.Ay.connectStores([u.A], e => {
+let g = (0, o.A)(a.Ay.connectStores([c.A], e => {
     let {
         channel: t,
         inputSkuId: n
     } = e;
     return {
-        skuId: null != n ? n : u.A.getSkuIdForChannel(t.id)
+        skuId: null != n ? n : c.A.getSkuIdForChannel(t.id)
     }
-})(A))
+})(p))

@@ -1,42 +1,42 @@
 /** chunk id: 622413, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => o
-}), n(228524);
-var r = n(627968);
+});
+var i = n(627968);
 n(64700);
-var i = n(503698),
-    l = n.n(i),
+var l = n(503698),
+    r = n.n(l),
     a = n(397927),
     s = n(233645);
 let o = e => {
     let {
         renderTitle: t,
         renderTagline: n,
-        renderActions: i,
+        renderActions: l,
         renderMedia: o,
-        className: c,
-        isHorizontal: u = !1
+        className: d,
+        isHorizontal: c = !1
     } = e;
-    return (0, r.jsxs)("div", {
-        className: l()(s.Vs, {
-            [s.ZQ]: u
-        }, c),
-        children: [(0, r.jsx)("div", {
-            className: l()(s.$_, {
-                [s.rO]: u
+    return (0, i.jsxs)("div", {
+        className: r()(s.Vs, {
+            [s.ZQ]: c
+        }, d),
+        children: [(0, i.jsx)("div", {
+            className: r()(s.$_, {
+                [s.rO]: c
             }),
-            children: null == o ? void 0 : o()
-        }), (0, r.jsxs)("div", {
+            children: o?.()
+        }), (0, i.jsxs)("div", {
             className: s.h_,
-            children: [(0, r.jsx)(a.H, {
+            children: [(0, i.jsx)(a.H, {
                 className: s.DD,
-                children: null == t ? void 0 : t()
-            }), (0, r.jsx)("div", {
+                children: t?.()
+            }), (0, i.jsx)("div", {
                 className: s.dS,
-                children: null == n ? void 0 : n()
-            }), (0, r.jsx)("div", {
+                children: n?.()
+            }), (0, i.jsx)("div", {
                 className: s.o1,
-                children: null == i ? void 0 : i()
+                children: l?.()
             })]
         })]
     })

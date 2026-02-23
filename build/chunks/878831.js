@@ -1,14 +1,14 @@
 /** chunk id: 878831, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => l
+    A: () => r
 });
-var r = n(110259),
-    i = n(139286);
+var i = n(110259),
+    l = n(139286);
 
-function l(e, t) {
-    (0, i.A)({
-        name: r.ImpressionNames.CLOUD_PLAY_CTA,
-        type: r.ImpressionTypes.VIEW,
+function r(e, t) {
+    (0, l.A)({
+        name: i.ImpressionNames.CLOUD_PLAY_CTA,
+        type: i.ImpressionTypes.VIEW,
         properties: {
             location_stack: t
         }

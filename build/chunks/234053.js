@@ -1,42 +1,41 @@
 /** chunk id: 234053, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    Lu: () => h,
+    Lu: () => _,
     cE: () => u,
-    le: () => p
-}), n(938796), n(896048), n(321073);
+    le: () => h
+}), n(938796), n(321073);
 var l = n(665260);
 n(873298);
-var r = n(669953);
+var i = n(669953);
 n(617617);
-var i = n(808728),
+var s = n(808728),
     a = n(696451),
-    s = n(543465),
-    o = n(816662),
+    r = n(543465),
+    d = n(816662),
     c = n(395504),
-    d = n(340837);
+    o = n(340837);
 
 function u(e) {
-    var t, n;
-    let r = (0, c.WW)(e),
-        i = null != (t = null == (n = a.Ay.getSelfMember(e)) ? void 0 : n.flags) ? t : 0,
-        o = (0, l.Lt)(i, d.D.COMPLETED_ONBOARDING),
-        u = s.Ay.getOptedInChannels(e).size > 0;
-    return !r && !o && !u
+    let t = (0, c.WW)(e),
+        n = a.Ay.getSelfMember(e)?.flags ?? 0,
+        i = (0, l.Lt)(n, o.D.COMPLETED_ONBOARDING),
+        s = r.Ay.getOptedInChannels(e).size > 0;
+    return !t && !i && !s
 }
 
-function h(e) {
-    if (u(e)) return void p(e);
+function _(e) {
+    if (u(e)) return void h(e);
     {
         let t = (0, c.WW)(e);
-        (0, o.e4)(e, !t)
+        (0, d.e4)(e, !t)
     }
 }
 
-function p(e) {
+function h(e) {
     let {
         include: t = new Set,
         exclude: n = new Set
-    } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, l = i.Ay.getChannels(e), a = [...l[i.I6], ...l[i.vM]].filter(e => {
+    } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, l = s.Ay.getChannels(e), a = [...l[s.I6], ...l[s.vM]].filter(e => {
         let {
             channel: t
         } = e;
@@ -47,5 +46,5 @@ function p(e) {
         } = e;
         return t.id
     });
-    t.forEach(e => a.push(e)), r.A.onboardExistingMember(e, new Set(a))
+    t.forEach(e => a.push(e)), i.A.onboardExistingMember(e, new Set(a))
 }

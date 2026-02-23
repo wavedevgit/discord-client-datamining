@@ -2,13 +2,13 @@
 n.d(t, {
     X: () => a
 });
-var r = n(562465),
-    i = n(198982),
-    l = n(652215);
+var i = n(562465),
+    l = n(198982),
+    r = n(652215);
 let a = async (e, t) => {
     try {
-        return (await r.Bo.get({
-            url: l.Rsh.PRICE_TIERS,
+        return (await i.Bo.get({
+            url: r.Rsh.PRICE_TIERS,
             query: {
                 price_tier_type: t,
                 guild_id: e
@@ -16,6 +16,6 @@ let a = async (e, t) => {
             rejectWithError: !1
         })).body
     } catch (e) {
-        throw new i.LG(e)
+        throw new l.LG(e)
     }
 }

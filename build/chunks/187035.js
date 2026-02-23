@@ -1,95 +1,93 @@
 /** chunk id: 187035, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => B
-}), n(896048);
-var r = n(627968),
-    i = n(64700),
-    s = n(503698),
-    l = n.n(s),
+    A: () => U
+});
+var i = n(627968),
+    s = n(64700),
+    r = n(503698),
+    l = n.n(r),
     a = n(284009),
     o = n.n(a),
-    c = n(311907),
-    u = n(397927),
-    d = n(854378),
+    d = n(311907),
+    c = n(397927),
+    u = n(854378),
     h = n(10088),
-    p = n(122906),
-    g = n(225858),
-    f = n(121623),
-    _ = n(895600),
-    m = n(768397),
+    _ = n(122906),
+    p = n(225858),
+    g = n(121623),
+    m = n(895600),
+    f = n(768397),
     A = n(942614),
-    x = n(210714),
-    E = n(894778),
-    v = n(961350),
-    y = n(650048),
-    b = n(877062),
+    E = n(210714),
+    x = n(894778),
+    I = n(961350),
+    v = n(650048),
+    N = n(877062),
     j = n(129851),
-    O = n(538796),
-    I = n(229),
-    S = n(652215),
-    N = n(401755),
-    C = n(771016),
-    T = n(315290),
-    R = n(396574),
+    S = n(538796),
+    C = n(229),
+    y = n(652215),
+    T = n(401755),
+    b = n(771016),
+    R = n(315290),
+    O = n(396574),
     w = n(985018),
-    P = n(256651),
+    L = n(256651),
     k = n(473169);
-
-function L(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-c.Ay.initialize();
-class D extends i.PureComponent {
+d.Ay.initialize();
+class D extends s.PureComponent {
     componentDidMount() {
-        (0, x.d)("guildTemplate"), R.VP || b.A.launch("discord://" + S.BVt.GUILD_TEMPLATE(this.props.code), () => void 0)
+        (0, E.d)("guildTemplate"), O.VP || N.A.launch("discord://" + y.BVt.GUILD_TEMPLATE(this.props.code), () => void 0)
     }
     componentDidUpdate(e) {
-        this.props.code !== e.code && f.A.resolveGuildTemplate(this.props.code)
+        this.props.code !== e.code && g.A.resolveGuildTemplate(this.props.code)
     }
+    handleContinue = () => {
+        let {
+            defaultRoute: e,
+            transitionTo: t
+        } = this.props;
+        t(e)
+    };
     renderButton(e, t) {
-        return R.VP ? (0, r.jsx)("div", {
+        return O.VP ? (0, i.jsx)("div", {
             className: k.eT,
-            children: (0, r.jsx)(u.Button, {
+            children: (0, i.jsx)(c.Button, {
                 text: e,
                 fullWidth: !0,
                 onClick: t
             })
-        }) : (0, r.jsx)(d.KE, {
+        }) : (0, i.jsx)(u.KE, {
             className: k.eT
         })
     }
     renderSpinner(e) {
-        return (0, r.jsxs)(d.Ay, {
-            children: [(0, r.jsx)(d.hE, {
+        return (0, i.jsxs)(u.Ay, {
+            children: [(0, i.jsx)(u.hE, {
                 children: e
-            }), (0, r.jsx)(d.CK, {})]
+            }), (0, i.jsx)(u.CK, {})]
         })
     }
     renderInvalidGuildTemplate() {
-        return (0, r.jsxs)(d.Ay, {
-            children: [(0, r.jsx)(d._V, {
+        return (0, i.jsxs)(u.Ay, {
+            children: [(0, i.jsx)(u._V, {
                 src: n(428721),
                 className: k.QB
-            }), (0, r.jsx)(d.hE, {
+            }), (0, i.jsx)(u.hE, {
                 className: l()(k.Ot, k.QB),
                 children: w.intl.string(w.t.C7ZRNw)
-            }), (0, r.jsx)(d.tK, {
+            }), (0, i.jsx)(u.tK, {
                 children: w.intl.string(w.t.A6MwXE)
             }), this.renderButton(w.intl.string(w.t.fIv16B), this.handleContinue)]
         })
     }
     renderAppOpened() {
-        return (0, r.jsxs)(d.Ay, {
-            children: [(0, r.jsx)(d.hE, {
+        return (0, i.jsxs)(u.Ay, {
+            children: [(0, i.jsx)(u.hE, {
                 className: k.QB,
                 children: w.intl.string(w.t.csrAMJ)
-            }), (0, r.jsx)(d.tK, {
+            }), (0, i.jsx)(u.tK, {
                 children: w.intl.string(w.t["m1+IBn"])
             }), this.renderButton(w.intl.string(w.t.fIv16B), this.handleContinue)]
         })
@@ -98,18 +96,18 @@ class D extends i.PureComponent {
         let {
             guildTemplate: e
         } = this.props;
-        return (o()(null != e, "guild template must not be null"), e.state === N.QB.RESOLVING) ? (0, r.jsx)(d.Ay, {
-            className: P.sL,
-            children: (0, r.jsx)(m.A, {
+        return (o()(null != e, "guild template must not be null"), e.state === T.QB.RESOLVING) ? (0, i.jsx)(u.Ay, {
+            className: L.sL,
+            children: (0, i.jsx)(f.A, {
                 guildTemplate: e
             })
-        }) : (0, r.jsx)(U, {
+        }) : (0, i.jsx)(B, {
             guildTemplate: e
         })
     }
     renderContinue() {
-        return (0, r.jsxs)(d.Ay, {
-            children: [(0, r.jsx)(d.hE, {
+        return (0, i.jsxs)(u.Ay, {
+            children: [(0, i.jsx)(u.hE, {
                 children: w.intl.string(w.t.fOc4gn)
             }), this.renderButton(w.intl.string(w.t.fIv16B), this.handleContinue)]
         })
@@ -119,96 +117,79 @@ class D extends i.PureComponent {
             guildTemplate: e,
             nativeAppState: t,
             authenticated: n,
-            transitionTo: i,
-            location: s
+            transitionTo: s,
+            location: r
         } = this.props;
         if (null == e) return this.renderSpinner(w.intl.string(w.t.ZTNur7));
-        if (t === S.fAW.OPEN) return this.renderAppOpened();
-        if (t === S.fAW.OPENING) return this.renderSpinner(w.intl.string(w.t["Z+hCVU"]));
+        if (t === y.fAW.OPEN) return this.renderAppOpened();
+        if (t === y.fAW.OPENING) return this.renderSpinner(w.intl.string(w.t["Z+hCVU"]));
         switch (e.state) {
-            case N.QB.RESOLVING:
+            case T.QB.RESOLVING:
                 return this.renderSpinner(w.intl.string(w.t["Z+hCVU"]));
-            case N.QB.RESOLVED:
-                if (n || !R.VP) return this.renderAuthenticatedOrDownload();
-                if (this.props.login) return (0, r.jsx)(j.A, {
+            case T.QB.RESOLVED:
+                if (n || !O.VP) return this.renderAuthenticatedOrDownload();
+                if (this.props.login) return (0, i.jsx)(j.A, {
                     guildTemplate: e,
-                    transitionTo: i,
-                    location: s
+                    transitionTo: s,
+                    location: r
                 });
-                return (0, r.jsx)(I.A, {
+                return (0, i.jsx)(C.A, {
                     guildTemplate: e,
-                    transitionTo: i,
-                    location: s,
+                    transitionTo: s,
+                    location: r,
                     onRegister: () => {
-                        (0, A.C)(C.zY.ORGANIC_REGISTERED_GUILD_TEMPLATE), E.A.flowStart(T.do.ORGANIC_GUILD_TEMPLATES, T.ju.NUF_STARTED)
+                        (0, A.C)(b.zY.ORGANIC_REGISTERED_GUILD_TEMPLATE), x.A.flowStart(R.do.ORGANIC_GUILD_TEMPLATES, R.ju.NUF_STARTED)
                     }
                 });
-            case N.QB.EXPIRED:
+            case T.QB.EXPIRED:
                 return this.renderInvalidGuildTemplate();
             default:
                 return null
         }
     }
-    constructor(...e) {
-        super(...e), L(this, "handleContinue", () => {
-            let {
-                defaultRoute: e,
-                transitionTo: t
-            } = this.props;
-            t(e)
-        })
-    }
-}
-
-function B(e) {
-    let t = {
-        guildTemplate: (0, c.bG)([p.A], () => p.A.getGuildTemplate(e.code)),
-        nativeAppState: (0, c.bG)([h.A], () => h.A.getState(e.code)),
-        authenticated: (0, c.bG)([v.default], () => v.default.isAuthenticated()),
-        defaultRoute: (0, c.bG)([y.A], () => y.A.defaultRoute)
-    };
-    return (0, r.jsx)(D, function(e) {
-        for (var t = 1; t < arguments.length; t++) {
-            var n = null != arguments[t] ? arguments[t] : {},
-                r = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                return Object.getOwnPropertyDescriptor(n, e).enumerable
-            }))), r.forEach(function(t) {
-                L(e, t, n[t])
-            })
-        }
-        return e
-    }({}, e, t))
 }
 
 function U(e) {
+    let t = {
+        guildTemplate: (0, d.bG)([_.A], () => _.A.getGuildTemplate(e.code)),
+        nativeAppState: (0, d.bG)([h.A], () => h.A.getState(e.code)),
+        authenticated: (0, d.bG)([I.default], () => I.default.isAuthenticated()),
+        defaultRoute: (0, d.bG)([v.A], () => v.A.defaultRoute)
+    };
+    return (0, i.jsx)(D, {
+        ...e,
+        ...t
+    })
+}
+
+function B(e) {
     let {
         guildTemplate: t
     } = e, {
         form: n,
-        handleSubmit: i
-    } = (0, g.A)(t, !1);
-    E.A.flowStep(T.do.ORGANIC_GUILD_TEMPLATES, T.jC.GUILD_CREATE);
-    let s = (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(d.hE, {
-            className: P.wx,
+        handleSubmit: s
+    } = (0, p.A)(t, !1);
+    x.A.flowStep(R.do.ORGANIC_GUILD_TEMPLATES, R.jC.GUILD_CREATE);
+    let r = (0, i.jsxs)(i.Fragment, {
+        children: [(0, i.jsx)(u.hE, {
+            className: L.wx,
             children: w.intl.string(w.t.UNFvtM)
-        }), n, (0, r.jsx)("div", {
-            className: P.Tf,
-            children: (0, r.jsx)(u.Button, {
+        }), n, (0, i.jsx)("div", {
+            className: L.Tf,
+            children: (0, i.jsx)(c.Button, {
                 text: w.intl.string(w.t.xr59t7),
                 fullWidth: !0,
-                onClick: i
+                onClick: s
             })
         })]
     });
-    return (0, r.jsx)(O.A, {
-        className: P.sL,
-        children: () => [(0, r.jsx)(_.A, {
+    return (0, i.jsx)(S.A, {
+        className: L.sL,
+        children: () => [(0, i.jsx)(m.A, {
             guildTemplate: t
-        }, "template"), (0, r.jsx)("div", {
-            className: P.KJ,
-            children: s
+        }, "template"), (0, i.jsx)("div", {
+            className: L.KJ,
+            children: r
         }, "contents")]
     })
 }

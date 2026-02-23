@@ -1,29 +1,29 @@
 /** chunk id: 113090, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => a
+    A: () => l
 });
-var r = n(64700),
-    i = n(311907),
-    l = n(73153),
-    s = n(233317);
+var i = n(64700),
+    s = n(311907),
+    a = n(73153),
+    r = n(233317);
 
-function a() {
+function l() {
     let {
         useCachedData: e = !1,
         fetch: t = !0
     } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, {
         premiumGroupMembership: n,
-        isFetchingMembership: a
-    } = (0, i.cf)([s.A], () => ({
-        premiumGroupMembership: s.A.getMembership(),
-        isFetchingMembership: s.A.isFetchingMembership()
+        isFetchingMembership: l
+    } = (0, s.cf)([r.A], () => ({
+        premiumGroupMembership: r.A.getMembership(),
+        isFetchingMembership: r.A.isFetchingMembership()
     }));
-    return (0, r.useEffect)(() => {
-        !t || e && s.A.hasFetchedMembership() || l.h.dispatch({
+    return (0, i.useEffect)(() => {
+        !t || e && r.A.hasFetchedMembership() || a.h.dispatch({
             type: "PREMIUM_GROUP_MEMBERSHIP_REQUEST"
         })
     }, [t, e]), {
         premiumGroupMembership: n,
-        isLoading: a
+        isLoading: l
     }
 }

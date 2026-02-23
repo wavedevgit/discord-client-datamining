@@ -1,82 +1,80 @@
-/** chunk id: 809506, original params: e,A,t (module,exports,require) **/
-t.d(A, {
-    A: () => C
-}), t(896048);
-var r = t(627968),
-    n = t(64700),
-    l = t(503698),
-    a = t.n(l),
-    i = t(835245),
+/** chunk id: 809506, original params: A,e,t (module,exports,require) **/
+t.d(e, {
+    A: () => U
+});
+var n = t(627968),
+    a = t(64700),
+    r = t(503698),
+    i = t.n(r),
+    l = t(835245),
     s = t(397927),
     o = t(408018),
     d = t(133343),
     u = t(95701),
     c = t(31717),
     g = t(652215),
-    f = t(985018),
+    q = t(985018),
     p = t(502512),
-    m = t(648359);
-let v = (0, i.A)(),
+    f = t(648359);
+let m = (0, l.A)(),
     h = (0, u.createChannelRecord)({
         id: "1",
         type: g.rbe.DM
     });
 
-function b() {
-    return new Promise(e => {
-        e({
+function C() {
+    return new Promise(A => {
+        A({
             shouldClear: !1,
             shouldRefocus: !0
         })
     })
 }
 
-function q(e) {
-    var A;
+function v(A) {
     let {
-        hasError: t,
-        maxLength: n,
-        text: l
-    } = e;
-    return (0, r.jsxs)("div", {
-        className: a()(m.Ru, {
-            [m.hz]: t
+        hasError: e,
+        maxLength: t,
+        text: a
+    } = A;
+    return (0, n.jsxs)("div", {
+        className: i()(f.Ru, {
+            [f.hz]: e
         }),
         "aria-hidden": "true",
-        children: [null != (A = null == l ? void 0 : l.length) ? A : 0, " ", null != n && "/ ".concat(n)]
+        children: [a?.length ?? 0, " ", null != t && `/ ${t}`]
     })
 }
 
-function C(e) {
-    var A;
+function U(A) {
     let {
-        "aria-labelledby": t,
-        className: l,
-        id: i,
-        autoFocus: u,
-        maxLength: g,
-        onChange: m,
-        onSubmit: C,
-        showCharacterCount: j = !1,
-        placeholder: U,
-        required: V,
-        value: x,
-        enableThemedBackground: O = !1,
-        parentModalKey: y,
-        label: P,
-        errorMessage: K
-    } = e, N = (0, s.xW1)(), [I, F] = n.useState(() => (0, o.x7)(x)), T = n.useRef(!0 === u), X = null != t ? t : null == N ? void 0 : N.titleId, W = null != (A = null == N ? void 0 : N.errorId) ? A : v;
+        "aria-labelledby": e,
+        className: t,
+        id: r,
+        autoFocus: l,
+        maxLength: u,
+        onChange: g,
+        onSubmit: f,
+        showCharacterCount: U = !1,
+        placeholder: V,
+        required: x,
+        value: b,
+        enableThemedBackground: j = !1,
+        parentModalKey: K,
+        label: N,
+        errorMessage: F
+    } = A, T = (0, s.xW1)(), [I, X] = a.useState(() => (0, o.x7)(b)), W = a.useRef(!0 === l), P = e ?? T?.titleId, Q = T?.errorId ?? m;
 
-    function Q(e, A, t) {
-        m(A), F(t)
+    function Z(A, e, t) {
+        g(e), X(t)
     }
-    let S = n.useMemo(() => ({
+    let z = a.useMemo(() => ({
         analyticsName: "simple",
         autocomplete: {
             alwaysUseLayer: !0,
             small: !0
         },
-        disableAutoFocus: !0 !== u,
+        disableAutoFocus: !0 !== l,
         drafts: {
             type: c.C.ChannelMessage
         },
@@ -90,52 +88,49 @@ function C(e) {
             useDisabledStylesOnSubmit: !0,
             disableEnterToSubmit: !0
         }
-    }), [u]);
-    return (0, r.jsx)(s.D0$, {
-        label: P,
-        errorMessage: K,
-        id: i,
-        required: V,
-        children: e => {
-            var A, t;
-            return (0, r.jsxs)(d.Ay, {
-                id: null != (A = null == e ? void 0 : e.controlId) ? A : i,
-                "aria-describedby": null != (t = null == e ? void 0 : e.describedById) ? t : W,
-                "aria-labelledby": X,
-                "aria-errormessage": null == e ? void 0 : e.errorMessageId,
-                "aria-invalid": (null == e ? void 0 : e.errorMessageId) != null,
-                className: p.T,
-                innerClassName: a()(l, p.n),
-                maxCharacterCount: g,
-                onChange: Q,
-                placeholder: U,
-                required: V,
-                channel: h,
-                textValue: x,
-                richValue: I,
-                type: S,
-                onBlur: () => {
-                    T.current = !1
-                },
-                onFocus: () => {
-                    T.current = !0
-                },
-                focused: T.current,
-                onSubmit: null != C ? C : b,
-                disableThemedBackground: !O,
-                parentModalKey: y,
-                emojiPickerCloseOnModalOuterClick: !0,
-                children: [!0 === j && (0, r.jsx)(q, {
-                    hasError: null != N.error || null != g && x.length > g,
-                    text: x,
-                    maxLength: g
-                }), null != g && (0, r.jsx)(s.AC4, {
-                    id: v,
-                    children: f.intl.format(f.t["+DFxLc"], {
-                        maxLength: g
-                    })
-                })]
-            })
-        }
+    }), [l]);
+    return (0, n.jsx)(s.D0$, {
+        label: N,
+        errorMessage: F,
+        id: r,
+        required: x,
+        children: A => (0, n.jsxs)(d.Ay, {
+            id: A?.controlId ?? r,
+            "aria-describedby": A?.describedById ?? Q,
+            "aria-labelledby": P,
+            "aria-errormessage": A?.errorMessageId,
+            "aria-invalid": A?.errorMessageId != null,
+            className: p.T,
+            innerClassName: i()(t, p.n),
+            maxCharacterCount: u,
+            onChange: Z,
+            placeholder: V,
+            required: x,
+            channel: h,
+            textValue: b,
+            richValue: I,
+            type: z,
+            onBlur: () => {
+                W.current = !1
+            },
+            onFocus: () => {
+                W.current = !0
+            },
+            focused: W.current,
+            onSubmit: f ?? C,
+            disableThemedBackground: !j,
+            parentModalKey: K,
+            emojiPickerCloseOnModalOuterClick: !0,
+            children: [!0 === U && (0, n.jsx)(v, {
+                hasError: null != T.error || null != u && b.length > u,
+                text: b,
+                maxLength: u
+            }), null != u && (0, n.jsx)(s.AC4, {
+                id: m,
+                children: q.intl.format(q.t["+DFxLc"], {
+                    maxLength: u
+                })
+            })]
+        })
     })
 }

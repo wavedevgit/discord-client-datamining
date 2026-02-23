@@ -1,156 +1,123 @@
 /** chunk id: 4270, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => N
+    A: () => y
 });
-var r = n(627968),
-    i = n(64700),
+var i = n(627968),
+    r = n(64700),
     l = n(503698),
     a = n.n(l),
     s = n(837381),
     o = n(731738),
-    c = n(397927),
-    u = n(55400),
-    d = n(964486),
-    p = n(260762),
+    d = n(397927),
+    c = n(55400),
+    u = n(964486),
+    A = n(260762),
     h = n(485947),
-    f = n(831062),
-    g = n(954571),
-    m = n(336590),
-    A = n(471271),
-    _ = n(957283),
-    b = n(284306),
-    E = n(790499),
-    O = n(514426),
-    y = n(977524),
-    I = n(687599),
-    v = n(652215),
-    S = n(985018),
-    C = n(843284);
+    _ = n(831062),
+    m = n(954571),
+    p = n(336590),
+    g = n(471271),
+    E = n(957283),
+    I = n(284306),
+    f = n(790499),
+    C = n(514426),
+    T = n(977524),
+    N = n(687599),
+    S = n(652215),
+    x = n(985018),
+    v = n(843284);
 
-function N() {
-    let e = i.useRef(null),
-        t = (0, b.A)(),
-        n = (0, E.I)(),
-        l = (0, m.r)(),
-        N = (0, u.w)(),
-        T = (0, p.A)("message-requests-spam-list"),
+function y() {
+    let e = r.useRef(null),
+        t = (0, I.A)(),
+        n = (0, f.I)(),
+        l = (0, p.r)(),
+        y = (0, c.w)(),
+        b = (0, A.A)("message-requests-spam-list"),
         {
-            channelId: j
-        } = (0, _.N)(),
-        x = i.useCallback(() => {
-            (0, c.showToast)((0, c.createToast)(S.intl.string(S.t["EDYbS+"]), c.ToastType.FAILURE))
+            channelId: O
+        } = (0, E.N)(),
+        L = r.useCallback(() => {
+            (0, d.showToast)((0, d.createToast)(x.intl.string(x.t["EDYbS+"]), d.ToastType.FAILURE))
         }, []),
         {
-            rejectAll: P
-        } = (0, A.t)({
-            onError: x
+            rejectAll: R
+        } = (0, g.t)({
+            onError: L
         }),
-        w = i.useCallback(() => {
-            P(t.map(e => e.channel.id))
-        }, [t, P]);
-    (0, d.Ay)(() => {
-        g.default.track(v.HAw.SPAM_MESSAGE_REQUESTS_VIEWED, {
+        P = r.useCallback(() => {
+            R(t.map(e => e.channel.id))
+        }, [t, R]);
+    (0, u.Ay)(() => {
+        m.default.track(S.HAw.SPAM_MESSAGE_REQUESTS_VIEWED, {
             num_spam_message_requests: n
-        }), f.A.increment({
+        }), _.A.increment({
             name: o.K.SPAM_MESSAGE_REQUEST_VIEW
         })
     });
-    let L = i.useCallback(e => {
-            var n, i;
+    let j = r.useCallback(e => {
             let {
-                row: s
-            } = e, o = t[s], c = null == (i = t[s + 1]) || null == (n = i.channel) ? void 0 : n.id, u = o.channel.id;
-            return (0, r.jsx)(y.A, {
-                index: s,
+                row: n
+            } = e, r = t[n], s = t[n + 1]?.channel?.id, o = r.channel.id;
+            return (0, i.jsx)(T.A, {
+                index: n,
                 className: a()({
-                    [C.wH]: null != j && j === u,
-                    [C.wZ]: null != j && j === c
+                    [v.wH]: null != O && O === o,
+                    [v.wZ]: null != O && O === s
                 }),
-                channel: o.channel,
-                user: o.user,
+                channel: r.channel,
+                user: r.user,
                 hasSingleMessageRequest: l
-            }, u)
-        }, [t, l, j]),
-        R = i.useCallback(() => (0, r.jsxs)(h.A, {
-            className: C.Gf,
-            children: [S.intl.format(S.t.C79Edh, {
+            }, o)
+        }, [t, l, O]),
+        D = r.useCallback(() => (0, i.jsxs)(h.A, {
+            className: v.Gf,
+            children: [x.intl.format(x.t.C79Edh, {
                 count: n
-            }), N && n > 0 ? (0, r.jsxs)(r.Fragment, {
-                children: [(0, r.jsx)(c.Text, {
-                    className: C.sg,
+            }), y && n > 0 ? (0, i.jsxs)(i.Fragment, {
+                children: [(0, i.jsx)(d.Text, {
+                    className: v.sg,
                     variant: "eyebrow",
                     color: "text-default",
                     tag: "span",
                     children: "•"
-                }), (0, r.jsx)(c.QWc, {
+                }), (0, i.jsx)(d.QWc, {
                     textVariant: "text-sm/normal",
-                    text: S.intl.string(S.t.p6t7RC),
-                    onClick: w,
-                    "aria-label": S.intl.string(S.t.p6t7RC)
+                    text: x.intl.string(x.t.p6t7RC),
+                    onClick: P,
+                    "aria-label": x.intl.string(x.t.p6t7RC)
                 })]
             }) : null]
-        }, "message-requests-spam-title"), [n, w, N]);
-    return 0 === t.length ? (0, r.jsx)(O.A, {
-        section: I.zz.SPAM
-    }) : (0, r.jsx)(s.hD, {
-        navigator: T,
-        children: (0, r.jsx)(s.PR, {
+        }, "message-requests-spam-title"), [n, P, y]);
+    return 0 === t.length ? (0, i.jsx)(C.A, {
+        section: N.zz.SPAM
+    }) : (0, i.jsx)(s.hD, {
+        navigator: b,
+        children: (0, i.jsx)(s.PR, {
             children: n => {
                 let {
-                    ref: i,
-                    role: l
-                } = n, a = function(e, t) {
-                    if (null == e) return {};
-                    var n, r, i, l = {};
-                    if ("u" > typeof Reflect && Reflect.ownKeys) {
-                        for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
-                        return l
-                    }
-                    if (l = function(e, t) {
-                            if (null == e) return {};
-                            var n, r, i = {},
-                                l = Object.getOwnPropertyNames(e);
-                            for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
-                            return i
-                        }(e, t), Object.getOwnPropertySymbols)
-                        for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
-                    return l
-                }(n, ["ref", "role"]);
-                return (0, r.jsx)(c.B8B, function(e) {
-                    for (var t = 1; t < arguments.length; t++) {
-                        var n = null != arguments[t] ? arguments[t] : {},
-                            r = Object.keys(n);
-                        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                            return Object.getOwnPropertyDescriptor(n, e).enumerable
-                        }))), r.forEach(function(t) {
-                            var r;
-                            r = n[t], t in e ? Object.defineProperty(e, t, {
-                                value: r,
-                                enumerable: !0,
-                                configurable: !0,
-                                writable: !0
-                            }) : e[t] = r
-                        })
-                    }
-                    return e
-                }({
-                    className: C.p_,
+                    ref: r,
+                    role: l,
+                    ...a
+                } = n;
+                return (0, i.jsx)(d.B8B, {
+                    className: v.p_,
                     innerRole: l,
-                    innerAriaLabel: S.intl.string(S.t.e7GWjQ),
+                    innerAriaLabel: x.intl.string(x.t.e7GWjQ),
                     ref: t => {
-                        var n;
-                        e.current = t, i.current = null != (n = null == t ? void 0 : t.getScrollerNode()) ? n : null
+                        e.current = t, r.current = t?.getScrollerNode() ?? null
                     },
                     paddingTop: 24,
                     paddingBottom: 24,
                     sectionHeight: 26,
                     rowHeight: 73,
-                    renderSection: R,
-                    renderRow: L,
+                    renderSection: D,
+                    renderRow: j,
                     sections: [t.length],
                     chunkSize: 30,
-                    fade: !0
-                }, a), "message-requests-spam-list")
+                    fade: !0,
+                    ...a
+                }, "message-requests-spam-list")
             }
         })
     })

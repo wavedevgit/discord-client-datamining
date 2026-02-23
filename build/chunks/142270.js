@@ -1,88 +1,93 @@
-/** chunk id: 142270, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    SS: () => y,
+/** chunk id: 142270, original params: e,t,l (module,exports,require) **/
+l.d(t, {
+    SS: () => v,
     cP: () => E
-}), n(896048);
-var r = n(627968),
-    i = n(64700),
-    a = n(503698),
-    o = n.n(a),
-    s = n(82495),
-    l = n(84483),
-    c = n(938396),
-    u = n(318346),
-    d = n(309954),
-    f = n(305003),
-    p = n(162097),
-    _ = n(219980),
-    h = n(652215),
-    m = n(985018),
-    g = n(847688);
+});
+var a = l(627968),
+    n = l(64700),
+    r = l(503698),
+    i = l.n(r),
+    s = l(82495),
+    o = l(482589),
+    u = l(938396),
+    c = l(649032),
+    d = l(26508),
+    p = l(318346),
+    m = l(309954),
+    h = l(305003),
+    x = l(162097),
+    b = l(219980),
+    g = l(652215),
+    y = l(985018),
+    f = l(847688);
 let E = {
-        START: g.Vl,
-        END: g.Wk
+        START: f.Vl,
+        END: f.Wk
     },
-    y = e => {
+    v = e => {
         let {
             showNotificationBadge: t,
-            ctaText: n,
-            ctaOnClick: a,
-            analyticsPage: y,
-            linkText: b = m.intl.string(m.t.XRdyjz),
-            cardAlignment: O = E.START,
-            className: v
+            ctaText: l,
+            ctaOnClick: r,
+            analyticsPage: v,
+            linkText: S = y.intl.string(y.t.XRdyjz),
+            cardAlignment: j = E.START,
+            className: T
         } = e, {
-            balance: A
-        } = (0, d.W)(), {
-            isInTreatment: I
-        } = (0, l.uX)("BalanceWidgetMenu"), [S, T] = i.useState(f.k.DEFAULT), [C, N] = i.useState(!1), [w, R] = i.useState(!1), P = i.useRef(null), D = i.useCallback(() => {
-            let e = !C;
-            e && null != y && (0, u.Y)({
-                pageType: y,
-                sectionType: h.JJy.ORBS_BALANCE_MENU,
-                ctaObject: h.ZSU.OPEN_ORB_BALANCE_MENU_FROM_PILL
-            }), T(e ? f.k.SELECTED : f.k.DEFAULT), N(e)
-        }, [C, y]), L = i.useCallback(() => {
-            C && D()
-        }, [C, D]), x = (0, s.A)(null, L), M = i.useMemo(() => (0, r.jsx)(p.b, {
-            analyticsPage: y,
-            ctaText: n,
-            ctaOnClick: () => {
-                D(), a()
-            },
-            linkText: b
-        }), [y, n, b, D, a]), j = i.useMemo(() => (0, r.jsx)(c.A, {
-            targetElementRef: P,
-            shouldShow: C,
-            onRequestClose: D,
-            ctaText: n,
-            ctaOnClick: () => {
-                D(), a()
-            }
-        }), [C, D, n, a]);
-        return (0, r.jsxs)("div", {
-            className: o()(g.kL, v, {
-                [g.R]: w,
-                [g.RK]: !w
+            balance: C
+        } = (0, m.W)(), P = (0, d.DK)(c.W.NITRO, "BalanceWidgetMenu"), [R, A] = n.useState(h.k.DEFAULT), [_, I] = n.useState(!1), [N, k] = n.useState(!1), D = n.useRef(null);
+        (0, o.j)(!_);
+        let M = n.useCallback(() => {
+                let e = !_;
+                e && null != v && (0, p.Y)({
+                    pageType: v,
+                    sectionType: g.JJy.ORBS_BALANCE_MENU,
+                    ctaObject: g.ZSU.OPEN_ORB_BALANCE_MENU_FROM_PILL
+                }), A(e ? h.k.SELECTED : h.k.DEFAULT), I(e)
+            }, [_, v]),
+            O = n.useCallback(() => {
+                _ && M()
+            }, [_, M]),
+            B = (0, s.A)(null, O),
+            V = n.useMemo(() => (0, a.jsx)(x.b, {
+                analyticsPage: v,
+                ctaText: l,
+                ctaOnClick: () => {
+                    M(), r()
+                },
+                linkText: S
+            }), [v, l, S, M, r]),
+            w = n.useMemo(() => (0, a.jsx)(u.A, {
+                targetElementRef: D,
+                shouldShow: _,
+                onRequestClose: M,
+                ctaText: l,
+                ctaOnClick: () => {
+                    M(), r()
+                }
+            }), [_, M, l, r]);
+        return (0, a.jsxs)("div", {
+            className: i()(f.kL, T, {
+                [f.R]: N,
+                [f.RK]: !N
             }),
-            children: [(0, r.jsx)(_.J, {
-                pillRef: P,
-                balance: A,
-                balanceWidgetMode: S,
+            children: [(0, a.jsx)(b.J, {
+                pillRef: D,
+                balance: C,
+                balanceWidgetMode: R,
                 onMouseDown: e => {
                     e.stopPropagation()
                 },
-                onClick: D,
+                onClick: M,
                 showNotificationBadge: t
-            }), I ? j : C && (0, r.jsx)("div", {
-                className: o()(g.Ui, O, {
-                    [g.R]: w,
-                    [g.RK]: !w
+            }), P ? w : _ && (0, a.jsx)("div", {
+                className: i()(f.Ui, j, {
+                    [f.R]: N,
+                    [f.RK]: !N
                 }),
-                ref: x,
-                children: M
+                ref: B,
+                children: V
             })]
         })
     };
-y.CardAlignment = E
+v.CardAlignment = E

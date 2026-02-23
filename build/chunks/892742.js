@@ -1,43 +1,43 @@
 /** chunk id: 892742, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => p
 });
-var r = n(627968),
-    i = n(64700),
-    l = n(397927),
+var i = n(627968),
+    l = n(64700),
+    r = n(397927),
     a = n(341915),
     s = n(890687),
     o = n(710969),
-    c = n(814793),
-    u = n(338404),
-    d = n(127219),
-    p = n(636658),
+    d = n(814793),
+    c = n(338404),
+    u = n(127219),
+    _ = n(636658),
     m = n(438038),
-    f = n(986588);
+    h = n(986588);
 
-function g(e) {
+function p(e) {
     let {
         questId: t
     } = e, {
         quests: n,
-        excludedQuests: g,
-        isFetchingCurrentQuests: _
+        excludedQuests: p,
+        isFetchingCurrentQuests: g
     } = (0, s.mL)({
         fetchPolicy: "cache-or-network",
         callerSource: "embed"
-    }), h = i.useMemo(() => (0, o.vc)(t, n, g), [t, n, g]), b = i.useMemo(() => g.find(e => e.id === t), [t, g]);
-    return _ ? (0, r.jsx)(l.y$y, {
-        className: f.u
-    }) : null == h ? null != b ? (0, r.jsx)(u.g, {
+    }), A = l.useMemo(() => (0, o.vc)(t, n, p), [t, n, p]), x = l.useMemo(() => p.find(e => e.id === t), [t, p]);
+    return g ? (0, i.jsx)(r.y$y, {
+        className: h.u
+    }) : null == A ? null != x ? (0, i.jsx)(c.g, {
         questId: t
-    }) : (0, r.jsx)(d.l, {
+    }) : (0, i.jsx)(u.l, {
         questId: t,
-        reason: d.o.NOT_FOUND
-    }) : (0, c.E0)(h.config) ? (0, r.jsx)(m.R, {
-        quest: h,
+        reason: u.o.NOT_FOUND
+    }) : (0, d.E0)(A.config) ? (0, i.jsx)(m.R, {
+        quest: A,
         location: a.uF.QUESTS_EMBED,
         sourceQuestContent: a.uF.QUESTS_EMBED
-    }, h.id) : (0, r.jsx)(p.S, {
+    }, A.id) : (0, i.jsx)(_.S, {
         questId: t
     })
 }

@@ -1,196 +1,150 @@
 /** chunk id: 412484, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    Ay: () => C,
-    NH: () => N,
-    T: () => I
-}), n(896048);
-var r = n(627968),
-    l = n(64700),
-    i = n(503698),
-    s = n.n(i),
+    Ay: () => T,
+    NH: () => j,
+    T: () => v
+});
+var i = n(627968),
+    s = n(64700),
+    l = n(503698),
+    r = n.n(l),
     a = n(481613),
     o = n.n(a),
     c = n(837381),
-    u = n(311907),
-    d = n(397927),
-    p = n(73153),
-    h = n(964486),
-    g = n(775602),
-    f = n(928039),
+    d = n(311907),
+    u = n(397927),
+    h = n(73153),
+    A = n(964486),
+    p = n(775602),
+    g = n(928039),
     m = n(954571),
-    b = n(203982),
-    A = n(723702),
-    y = n(157296),
-    O = n(963702),
-    j = n(792967),
-    x = n(712209),
-    _ = n(652215),
-    v = n(985018),
-    E = n(852570);
+    _ = n(203982),
+    f = n(723702),
+    x = n(157296),
+    C = n(963702),
+    E = n(792967),
+    I = n(712209),
+    b = n(652215),
+    N = n(985018),
+    S = n(852570);
 
-function C(e) {
-    var t, n, i, a, y, C, I;
+function T(e) {
+    var t, n, l, a, x, T;
     let {
-        onJump: N,
-        showTutorial: T,
-        setSeenTutorial: P,
-        closePopout: w
-    } = e, R = l.useRef(null), [D, L] = (0, x.Ay)(R), {
-        loadState: M,
-        channels: G
-    } = D, {
-        maybeLoadMore: k
-    } = L, U = (0, u.bG)([g.A], () => g.A.messageGroupSpacing);
-    t = R, n = D, i = L, l.useLayoutEffect(() => {
-        var e;
+        onJump: v,
+        showTutorial: j,
+        setSeenTutorial: R,
+        closePopout: O
+    } = e, L = s.useRef(null), [M, D] = (0, I.Ay)(L), {
+        loadState: G,
+        channels: U
+    } = M, {
+        maybeLoadMore: P
+    } = D, w = (0, d.bG)([p.A], () => p.A.messageGroupSpacing);
+    t = L, n = M, l = D, s.useLayoutEffect(() => {
         let {
-            scrollToChannelIndex: r
+            scrollToChannelIndex: e
         } = n;
-        i.clearScrollToChannelIndex();
+        l.clearScrollToChannelIndex();
         let {
-            current: l
+            current: i
         } = t;
-        if (null == l || null == r) return;
-        let s = null == (e = l.getScrollerNode()) ? void 0 : e.children;
+        if (null == i || null == e) return;
+        let s = i.getScrollerNode()?.children;
         if (null == s) return;
-        let a = s[r];
-        if (null == a) return;
+        let r = s[e];
+        if (null == r) return;
         let {
-            scrollTop: o,
-            offsetHeight: c
-        } = l.getScrollerState();
-        (a.offsetTop < o || a.offsetTop > o + c) && l.scrollTo({
-            to: a.offsetTop
+            scrollTop: a,
+            offsetHeight: o
+        } = i.getScrollerState();
+        (r.offsetTop < a || r.offsetTop > a + o) && i.scrollTo({
+            to: r.offsetTop
         })
-    }), a = D, y = L, l.useEffect(() => {
+    }), a = M, x = D, s.useEffect(() => {
         let e = () => {
             let e = a.channels.find(e => !e.collapsed);
-            null != e && y.markChannelRead(e)
+            null != e && x.markChannelRead(e)
         };
-        return b._.subscribe(_.jej.MARK_TOP_INBOX_CHANNEL_READ, e), () => {
-            b._.unsubscribe(_.jej.MARK_TOP_INBOX_CHANNEL_READ, e)
+        return _._.subscribe(b.jej.MARK_TOP_INBOX_CHANNEL_READ, e), () => {
+            _._.unsubscribe(b.jej.MARK_TOP_INBOX_CHANNEL_READ, e)
         }
-    }, [y, a.channels]), C = L, l.useEffect(() => {
+    }, [x, a.channels]), T = D, s.useEffect(() => {
         let e = e => {
-            ((0, A.isMac)() || (0, A.isMacWeb)() ? e.metaKey : e.ctrlKey) && !e.shiftKey && !e.altKey && "z" === e.key && C.undoMarkChannelRead()
+            ((0, f.isMac)() || (0, f.isMacWeb)() ? e.metaKey : e.ctrlKey) && !e.shiftKey && !e.altKey && "z" === e.key && T.undoMarkChannelRead()
         };
         return document.addEventListener("keydown", e), () => {
             document.removeEventListener("keydown", e)
         }
-    }, [C]), l.useEffect(() => {
-        m.default.track(_.HAw.OPEN_POPOUT, {
+    }, [T]), s.useEffect(() => {
+        m.default.track(b.HAw.OPEN_POPOUT, {
             type: "Inbox"
         })
-    }, []), l.useEffect(() => (p.h.subscribe("CONNECTION_OPEN", w), () => {
-        p.h.unsubscribe("CONNECTION_OPEN", w)
-    }), [w]), (0, h.Ay)(() => (b._.subscribe(_.jej.INBOX_MARK_ALL_UNREADS_READ, L.markAllRead), () => {
-        b._.unsubscribe(_.jej.INBOX_MARK_ALL_UNREADS_READ, L.markAllRead)
+    }, []), s.useEffect(() => (h.h.subscribe("CONNECTION_OPEN", O), () => {
+        h.h.unsubscribe("CONNECTION_OPEN", O)
+    }), [O]), (0, A.Ay)(() => (_._.subscribe(b.jej.INBOX_MARK_ALL_UNREADS_READ, D.markAllRead), () => {
+        _._.unsubscribe(b.jej.INBOX_MARK_ALL_UNREADS_READ, D.markAllRead)
     }));
-    let V = (0, f.A)("unreads", R);
-    if (0 === G.length) {
-        return (0, r.jsx)(O.A, {
-            Icon: d.K$s,
-            header: v.intl.string(v.t["6XMM+D"]),
-            tip: (null == (I = o().os) ? void 0 : I.family) === "OS X" ? v.intl.string(v.t.w9uDOW) : v.intl.string(v.t.BiUJC6)
-        })
-    }
-    return (0, r.jsx)(c.hD, {
-        navigator: V,
-        children: (0, r.jsx)(c.PR, {
+    let k = (0, g.A)("unreads", L);
+    return 0 === U.length ? (0, i.jsx)(C.A, {
+        Icon: u.K$s,
+        header: N.intl.string(N.t["6XMM+D"]),
+        tip: o().os?.family === "OS X" ? N.intl.string(N.t.w9uDOW) : N.intl.string(N.t.BiUJC6)
+    }) : (0, i.jsx)(c.hD, {
+        navigator: k,
+        children: (0, i.jsx)(c.PR, {
             children: e => {
-                var t, n;
                 let {
-                    ref: l
-                } = e, i = function(e, t) {
-                    if (null == e) return {};
-                    var n, r, l, i = {};
-                    if ("u" > typeof Reflect && Reflect.ownKeys) {
-                        for (l = 0, n = Reflect.ownKeys(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
-                        return i
-                    }
-                    if (i = function(e, t) {
-                            if (null == e) return {};
-                            var n, r, l = {},
-                                i = Object.getOwnPropertyNames(e);
-                            for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n]);
-                            return l
-                        }(e, t), Object.getOwnPropertySymbols)
-                        for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
-                    return i
-                }(e, ["ref"]);
-                return (0, r.jsxs)(d.ChK, (t = function(e) {
-                    for (var t = 1; t < arguments.length; t++) {
-                        var n = null != arguments[t] ? arguments[t] : {},
-                            r = Object.keys(n);
-                        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                            return Object.getOwnPropertyDescriptor(n, e).enumerable
-                        }))), r.forEach(function(t) {
-                            var r;
-                            r = n[t], t in e ? Object.defineProperty(e, t, {
-                                value: r,
-                                enumerable: !0,
-                                configurable: !0,
-                                writable: !0
-                            }) : e[t] = r
-                        })
-                    }
-                    return e
-                }({
+                    ref: t,
+                    ...n
+                } = e;
+                return (0, i.jsxs)(u.ChK, {
                     ref: e => {
-                        var t;
-                        R.current = e, l.current = null != (t = null == e ? void 0 : e.getScrollerNode()) ? t : null
-                    }
-                }, i), n = n = {
-                    onScroll: M === x.mJ.Done ? void 0 : k,
-                    className: s()(E.XG, "group-spacing-".concat(U)),
-                    children: [T ? (0, r.jsx)(S, {
-                        setSeenTutorial: P
-                    }) : null, (0, j.A)(G, L, N), M === x.mJ.Done ? null : (0, r.jsx)(d.y$y, {
-                        className: E.u1
+                        L.current = e, t.current = e?.getScrollerNode() ?? null
+                    },
+                    ...n,
+                    onScroll: G === I.mJ.Done ? void 0 : P,
+                    className: r()(S.XG, `group-spacing-${w}`),
+                    children: [j ? (0, i.jsx)(y, {
+                        setSeenTutorial: R
+                    }) : null, (0, E.A)(U, D, v), G === I.mJ.Done ? null : (0, i.jsx)(u.y$y, {
+                        className: S.u1
                     })]
-                }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
-                    var n = Object.keys(e);
-                    if (Object.getOwnPropertySymbols) {
-                        var r = Object.getOwnPropertySymbols(e);
-                        n.push.apply(n, r)
-                    }
-                    return n
-                })(Object(n)).forEach(function(e) {
-                    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-                }), t))
+                })
             }
         })
     })
 }
 
-function S(e) {
+function y(e) {
     let {
         setSeenTutorial: t
     } = e;
-    return (0, r.jsxs)("div", {
-        className: E.d$,
-        children: [(0, r.jsx)("div", {
-            className: E.cm,
-            children: (0, r.jsx)(d.K$s, {
+    return (0, i.jsxs)("div", {
+        className: S.d$,
+        children: [(0, i.jsx)("div", {
+            className: S.cm,
+            children: (0, i.jsx)(u.K$s, {
                 size: "md",
                 color: "currentColor"
             })
-        }), (0, r.jsxs)("div", {
-            children: [(0, r.jsx)(d.Heading, {
-                className: E.__invalid_tutorialHeader,
+        }), (0, i.jsxs)("div", {
+            children: [(0, i.jsx)(u.Heading, {
+                className: S.__invalid_tutorialHeader,
                 variant: "heading-md/semibold",
-                children: v.intl.string(v.t.vZPktJ)
-            }), (0, r.jsx)(d.Text, {
+                children: N.intl.string(N.t.vZPktJ)
+            }), (0, i.jsx)(u.Text, {
                 color: "text-default",
                 variant: "text-sm/normal",
-                children: v.intl.string(v.t.vWkIII)
-            }), (0, r.jsx)("div", {
+                children: N.intl.string(N.t.vWkIII)
+            }), (0, i.jsx)("div", {
                 "data-button-hoisted-classname-wrapper": !0,
-                className: E.dh,
-                children: (0, r.jsx)(d.Button, {
+                className: S.dh,
+                children: (0, i.jsx)(u.Button, {
                     variant: "primary",
                     size: "sm",
-                    text: v.intl.string(v.t["+IrDzN"]),
+                    text: N.intl.string(N.t["+IrDzN"]),
                     onClick: t
                 })
             })]
@@ -198,14 +152,14 @@ function S(e) {
     })
 }
 
-function I() {
-    return (0, r.jsx)(O.A, {
-        Icon: d.K$s,
+function v() {
+    return (0, i.jsx)(C.A, {
+        Icon: u.K$s,
         disableStars: !0,
-        header: v.intl.string(v.t["KG/ynf"]),
-        tip: v.intl.string(v.t.cvcKzX)
+        header: N.intl.string(N.t["KG/ynf"]),
+        tip: N.intl.string(N.t.cvcKzX)
     })
 }
-let N = () => (0, r.jsx)(y.A, {
-    onClick: () => b._.dispatch(_.jej.INBOX_MARK_ALL_UNREADS_READ)
+let j = () => (0, i.jsx)(x.A, {
+    onClick: () => _._.dispatch(b.jej.INBOX_MARK_ALL_UNREADS_READ)
 })

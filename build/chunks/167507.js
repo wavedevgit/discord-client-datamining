@@ -1,33 +1,33 @@
 /** chunk id: 167507, original params: e,n,t (module,exports,require) **/
 t.d(n, {
-    N: () => f
+    N: () => j
 });
-var r = t(627968),
-    l = t(64700),
-    c = t(397927),
-    a = t(442433),
+var l = t(627968),
+    r = t(64700),
+    a = t(397927),
+    s = t(442433),
     i = t(9578),
-    o = t(975807),
-    s = t(235393),
+    c = t(975807),
+    d = t(235393),
     u = t(332173),
-    d = t(202803),
+    o = t(202803),
     h = t(403362),
-    p = t(62849),
-    j = t(800344);
+    m = t(62849),
+    x = t(800344);
 
-function f(e) {
+function j(e) {
     let {
         type: n,
         value: t,
-        children: l
+        children: r
     } = e;
     switch (n) {
         case "normal":
-            return (0, r.jsx)(i.A, {
+            return (0, l.jsx)(i.A, {
                 title: t.title,
                 href: t.url,
-                children: (0, r.jsx)("span", {
-                    children: l
+                children: (0, l.jsx)("span", {
+                    children: r
                 })
             });
         case "mention":
@@ -36,31 +36,31 @@ function f(e) {
                 case "message":
                     let {
                         value: {
-                            guild_id: c,
-                            channel_id: a
+                            guild_id: a,
+                            channel_id: s
                         }
-                    } = t, o = "message_id" in t.value ? t.value.message_id : void 0;
-                    return (0, r.jsx)(p.A, {
-                        channelId: a,
-                        guildId: c,
-                        messageId: o
+                    } = t, c = "message_id" in t.value ? t.value.message_id : void 0;
+                    return (0, l.jsx)(m.A, {
+                        channelId: s,
+                        guildId: a,
+                        messageId: c
                     });
                 case "attachment":
                     let {
                         value: {
-                            domain: s,
+                            domain: d,
                             ephemeral: u,
-                            channel_id: d,
-                            attachment_id: j,
-                            name: f
+                            channel_id: o,
+                            attachment_id: x,
+                            name: j
                         }
                     } = t;
-                    return (0, r.jsx)(m, {
-                        domain: s,
+                    return (0, l.jsx)(g, {
+                        domain: d,
                         ephemeral: u,
-                        channelId: d,
-                        attachmentId: j,
-                        name: f
+                        channelId: o,
+                        attachmentId: x,
+                        name: j
                     });
                 default:
                     (0, h.xb)(t)
@@ -71,66 +71,38 @@ function f(e) {
     }
 }
 
-function m(e) {
+function g(e) {
     let {
         domain: n,
         ephemeral: i,
         channelId: h,
-        attachmentId: p,
-        name: f
-    } = e, m = "https://".concat(n, "/").concat(i ? "ephemeral-attachments" : "attachments", "/").concat(h, "/").concat(p, "/").concat(f), y = l.useCallback(async () => {
-        let e = await (0, d.AN)(m);
-        s.A.trackLinkClicked(e), (0, o.A)(e)
-    }, [m]), b = l.useCallback(e => {
-        (0, a.L3)(e, async () => {
+        attachmentId: m,
+        name: j
+    } = e, g = `https://${n}/${i?"ephemeral-attachments":"attachments"}/${h}/${m}/${j}`, p = r.useCallback(async () => {
+        let e = await (0, o.AN)(g);
+        d.A.trackLinkClicked(e), (0, c.A)(e)
+    }, [g]), f = r.useCallback(e => {
+        (0, s.L3)(e, async () => {
             let {
                 default: e
             } = await t.e("62529").then(t.bind(t, 740024));
-            return n => {
-                var t, l;
-                return (0, r.jsx)(e, (t = function(e) {
-                    for (var n = 1; n < arguments.length; n++) {
-                        var t = null != arguments[n] ? arguments[n] : {},
-                            r = Object.keys(t);
-                        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
-                            return Object.getOwnPropertyDescriptor(t, e).enumerable
-                        }))), r.forEach(function(n) {
-                            var r;
-                            r = t[n], n in e ? Object.defineProperty(e, n, {
-                                value: r,
-                                enumerable: !0,
-                                configurable: !0,
-                                writable: !0
-                            }) : e[n] = r
-                        })
-                    }
-                    return e
-                }({}, n), l = l = {
-                    attachmentUrl: m,
-                    attachmentName: f
-                }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(l)) : (function(e, n) {
-                    var t = Object.keys(e);
-                    if (Object.getOwnPropertySymbols) {
-                        var r = Object.getOwnPropertySymbols(e);
-                        t.push.apply(t, r)
-                    }
-                    return t
-                })(Object(l)).forEach(function(e) {
-                    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(l, e))
-                }), t))
-            }
+            return n => (0, l.jsx)(e, {
+                ...n,
+                attachmentUrl: g,
+                attachmentName: j
+            })
         })
-    }, [f, m]);
-    return (0, r.jsxs)(u.A, {
+    }, [j, g]);
+    return (0, l.jsxs)(u.A, {
         role: "link",
-        href: m,
-        onClick: y,
-        onContextMenu: b,
+        href: g,
+        onClick: p,
+        onContextMenu: f,
         className: "attachmentLink",
-        children: [(0, r.jsx)(c.PtA, {
+        children: [(0, l.jsx)(a.PtA, {
             size: "xs",
-            className: j.Kk,
+            className: x.Kk,
             color: "currentColor"
-        }), f]
+        }), j]
     })
 }

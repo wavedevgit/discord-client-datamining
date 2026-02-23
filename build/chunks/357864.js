@@ -2,24 +2,24 @@
 n.d(t, {
     A: () => o
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var l = n(158954),
-    i = n(985018),
-    s = n(303166),
-    a = n(638718);
+var s = n(158954),
+    a = n(985018),
+    r = n(303166),
+    l = n(638718);
 
 function o() {
-    return (0, r.jsxs)("div", {
-        className: s.k,
-        children: [(0, r.jsx)("img", {
-            className: s.N,
-            src: a,
+    return (0, i.jsxs)("div", {
+        className: r.k,
+        children: [(0, i.jsx)("img", {
+            className: r.N,
+            src: l,
             alt: ""
-        }), (0, r.jsx)(l.EYj, {
+        }), (0, i.jsx)(s.EYj, {
             variant: "text-md/normal",
             color: "text-muted",
-            children: i.intl.string(i.t.H217fV)
+            children: a.intl.string(a.t.H217fV)
         })]
     })
 }

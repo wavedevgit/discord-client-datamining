@@ -1,4 +1,5 @@
 /** chunk id: 291305, original params: e,t,n (module,exports,require) **/
+"use strict";
 e.exports = {
     T: "background__6343b",
     W: "gradientRoleColorsImage__6343b"

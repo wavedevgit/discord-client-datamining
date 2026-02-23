@@ -1,8 +1,7 @@
 /** chunk id: 761705, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    Q: () => i.Q,
-    W: () => r.W
+    Q: () => a.Q,
+    W: () => s.W
 });
-var r = n(309954),
-    i = n(715054)
+var s = n(309954),
+    a = n(715054)

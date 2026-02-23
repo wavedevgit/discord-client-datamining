@@ -1,148 +1,148 @@
 /** chunk id: 523599, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => w
-}), n(264879), n(321073), n(896048), n(667532);
-var l, r, a = n(735438),
-    i = n.n(a),
-    s = n(136722),
-    o = n(311907),
-    u = n(73153),
-    c = n(411153),
+    A: () => P
+}), n(321073), n(667532);
+var l = n(735438),
+    r = n.n(l),
+    a = n(136722),
+    i = n(311907),
+    s = n(73153),
+    o = n(411153),
     E = n(95701),
-    _ = n(34457),
-    d = n(696451),
-    g = n(317525),
-    A = n(71393),
-    T = n(652215);
-let I = s.kg(T.xBc.KICK_MEMBERS, T.xBc.BAN_MEMBERS, T.xBc.ADMINISTRATOR, T.xBc.MANAGE_CHANNELS, T.xBc.MANAGE_GUILD, T.xBc.MANAGE_MESSAGES, T.xBc.MANAGE_NICKNAMES, T.xBc.MANAGE_ROLES, T.xBc.MANAGE_WEBHOOKS, T.xBc.MANAGE_GUILD_EXPRESSIONS, T.xBc.MOVE_MEMBERS, T.xBc.MUTE_MEMBERS, T.xBc.DEAFEN_MEMBERS),
-    O = null,
-    h = [],
+    u = n(34457),
+    c = n(696451),
+    _ = n(317525),
+    d = n(71393),
+    A = n(652215);
+let g = a.kg(A.xBc.KICK_MEMBERS, A.xBc.BAN_MEMBERS, A.xBc.ADMINISTRATOR, A.xBc.MANAGE_CHANNELS, A.xBc.MANAGE_GUILD, A.xBc.MANAGE_MESSAGES, A.xBc.MANAGE_NICKNAMES, A.xBc.MANAGE_ROLES, A.xBc.MANAGE_WEBHOOKS, A.xBc.MANAGE_GUILD_EXPRESSIONS, A.xBc.MOVE_MEMBERS, A.xBc.MUTE_MEMBERS, A.xBc.DEAFEN_MEMBERS),
+    T = null,
+    I = [],
     N = [],
+    h = [],
     m = [],
-    f = [],
     S = [],
-    p = [],
     G = [],
+    O = [],
     R = [],
-    D = !0,
-    C = !1,
+    C = !0,
     L = !1,
-    x = !0,
-    b = !1,
+    D = !1,
+    f = !0,
+    x = !1,
     M = null,
-    v = T.F_X.ALL,
+    p = A.F_X.ALL,
     U = null,
-    j = {},
-    y = 0;
+    k = {},
+    b = 0;
 
-function k(e) {
+function F(e) {
     let t = [],
         n = 0;
     return e.reverse().forEach(e => {
-        var l, r, a;
-        let s = [],
-            o = null,
-            u = null,
-            _ = null;
-        if (null != e.reason && s.push(new c.QO(T.gGk.REASON, null, e.reason)), null != e.changes)
+        let l = [],
+            a = null,
+            i = null,
+            s = null;
+        if (null != e.reason && l.push(new o.QO(A.gGk.REASON, null, e.reason)), null != e.changes)
             for (let t of e.changes) {
-                let e = new c.QO(t.key, t.old_value, t.new_value);
-                s.push(e), e.key === T.gGk.NAME ? o = e : e.key === T.gGk.TYPE ? _ = e : e.key === T.gGk.TITLE && (u = e)
+                let e = new o.QO(t.key, t.old_value, t.new_value);
+                l.push(e), e.key === A.gGk.NAME ? a = e : e.key === A.gGk.TYPE ? s = e : e.key === A.gGk.TITLE && (i = e)
             }
-        if (e.action_type === T.F_X.MEMBER_PRUNE) {
+        if (e.action_type === A.F_X.MEMBER_PRUNE) {
             let t = null != e && null != e.options && null != e.options.delete_member_days ? e.options.delete_member_days : 1,
-                n = new c.QO(T.gGk.PRUNE_DELETE_DAYS, null, t);
-            s.push(n)
+                n = new o.QO(A.gGk.PRUNE_DELETE_DAYS, null, t);
+            l.push(n)
         }
-        e.action_type === T.F_X.AUTO_MODERATION_BLOCK_MESSAGE && (null == (r = e.options) ? void 0 : r.auto_moderation_rule_name) != null && s.push(new c.QO(T.gGk.AUTO_MODERATION_TRIGGERED_RULE_NAME, null, e.options.auto_moderation_rule_name)), e.action_type === T.F_X.VOICE_CHANNEL_STATUS_CREATE && (null == (l = e.options) ? void 0 : l.status) != null && s.push(new c.QO(T.gGk.STATUS, null, e.options.status));
-        let d = new c.Ay({
+        e.action_type === A.F_X.AUTO_MODERATION_BLOCK_MESSAGE && e.options?.auto_moderation_rule_name != null && l.push(new o.QO(A.gGk.AUTO_MODERATION_TRIGGERED_RULE_NAME, null, e.options.auto_moderation_rule_name)), e.action_type === A.F_X.VOICE_CHANNEL_STATUS_CREATE && e.options?.status != null && l.push(new o.QO(A.gGk.STATUS, null, e.options.status));
+        let u = new o.Ay({
                 id: e.id,
                 action: e.action_type,
                 targetId: e.target_id,
                 userId: e.user_id,
-                changes: s,
+                changes: l,
                 options: e.options
             }),
-            g = t[0];
+            c = t[0];
         if (function(e, t, n) {
                 let l = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 30,
-                    r = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : 50;
-                return null != e && e.action === t.action && e.targetId === t.targetId && e.userId === t.userId && i().isEqual(e.options, t.options) && t.timestampStart.diff(e.timestampStart, "minutes") < l && n < r && t.targetType !== T.GaG.INVITE && t.action !== T.F_X.MESSAGE_DELETE && t.action !== T.F_X.MESSAGE_BULK_DELETE && t.action !== T.F_X.MESSAGE_PIN && t.action !== T.F_X.MESSAGE_UNPIN && t.action !== T.F_X.MEMBER_MOVE && t.action !== T.F_X.MEMBER_DISCONNECT && t.action !== T.F_X.BOT_ADD && t.action !== T.F_X.APPLICATION_COMMAND_PERMISSION_UPDATE && t.action !== T.F_X.MEMBER_PRUNE
-            }(g, d, n)) {
-            t[0] = g.merge({
-                changes: [...g.changes, ...d.changes],
-                timestampEnd: d.timestampStart
+                    a = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : 50;
+                return null != e && e.action === t.action && e.targetId === t.targetId && e.userId === t.userId && r().isEqual(e.options, t.options) && t.timestampStart.diff(e.timestampStart, "minutes") < l && n < a && t.targetType !== A.GaG.INVITE && t.action !== A.F_X.MESSAGE_DELETE && t.action !== A.F_X.MESSAGE_BULK_DELETE && t.action !== A.F_X.MESSAGE_PIN && t.action !== A.F_X.MESSAGE_UNPIN && t.action !== A.F_X.MEMBER_MOVE && t.action !== A.F_X.MEMBER_DISCONNECT && t.action !== A.F_X.BOT_ADD && t.action !== A.F_X.APPLICATION_COMMAND_PERMISSION_UPDATE && t.action !== A.F_X.MEMBER_PRUNE
+            }(c, u, n)) {
+            t[0] = c.merge({
+                changes: [...c.changes, ...u.changes],
+                timestampEnd: u.timestampStart
             }), n++;
             return
         }
-        if (d.actionType === T.RWi.DELETE && (null != o || null != u)) {
-            let e = null != (a = null == o ? void 0 : o.oldValue) ? a : null == u ? void 0 : u.oldValue;
-            (d.targetType === T.GaG.CHANNEL || d.targetType === T.GaG.CHANNEL_OVERWRITE) && null !== _ && (0, E.tr)(_.oldValue) && (e = "#".concat(e)), null == j[d.targetType] ? j[d.targetType] = {
-                [d.targetId]: e
-            } : j[d.targetType][d.targetId] = e
+        if (u.actionType === A.RWi.DELETE && (null != a || null != i)) {
+            let e = a?.oldValue ?? i?.oldValue;
+            (u.targetType === A.GaG.CHANNEL || u.targetType === A.GaG.CHANNEL_OVERWRITE) && null !== s && (0, E.tr)(s.oldValue) && (e = `#${e}`), null == k[u.targetType] ? k[u.targetType] = {
+                [u.targetId]: e
+            } : k[u.targetType][u.targetId] = e
         }
-        n = 0, t.unshift(d)
+        n = 0, t.unshift(u)
     }), t
 }
 
-function P(e) {
+function j(e) {
     let {
         section: t
     } = e;
-    if (t !== T.BEX.AUDIT_LOG) return !1;
-    let n = d.Ay.getMembers(O),
-        l = A.A.getGuild(O),
-        r = null != O ? g.A.getUnsafeMutableRoles(O) : void 0;
-    m = i()(n).filter(e => e.roles.some(t => {
+    if (t !== A.BEX.AUDIT_LOG) return !1;
+    let n = c.Ay.getMembers(T),
+        l = d.A.getGuild(T),
+        a = null != T ? _.A.getUnsafeMutableRoles(T) : void 0;
+    h = r()(n).filter(e => e.roles.some(t => {
         if (null != l) {
             if (e.userId === l.ownerId) return !0;
-            let n = null == r ? void 0 : r[t];
-            return null != n && (0, _.sx)(n, I)
+            let n = a?.[t];
+            return null != n && (0, u.sx)(n, g)
         }
     })).map(e => e.userId).value()
 }
-class F extends(l = o.Ay.Store) {
+class v extends i.Ay.Store {
+    static displayName = "GuildSettingsAuditLogStore";
     initialize() {
-        this.waitFor(A.A, g.A, d.Ay)
+        this.waitFor(d.A, _.A, c.Ay)
     }
     get logs() {
-        return h
+        return I
     }
     get integrations() {
         return N
     }
     get webhooks() {
-        return f
+        return m
     }
     get guildScheduledEvents() {
         return S
     }
     get automodRules() {
-        return p
+        return G
     }
     get threads() {
-        return G
+        return O
     }
     get applicationCommands() {
         return R
     }
     get isInitialLoading() {
-        return D
-    }
-    get isLoading() {
         return C
     }
-    get isLoadingNextPage() {
+    get isLoading() {
         return L
     }
+    get isLoadingNextPage() {
+        return D
+    }
     get hasOlderLogs() {
-        return x
+        return f
     }
     get hasError() {
-        return b
+        return x
     }
     get userIds() {
-        return m
+        return h
     }
     get userIdFilter() {
         return M
@@ -151,36 +151,30 @@ class F extends(l = o.Ay.Store) {
         return U
     }
     get actionFilter() {
-        return v
+        return p
     }
     get deletedTargets() {
-        return j
+        return k
     }
     get groupedFetchCount() {
-        return y
+        return b
     }
-}(r = "displayName") in F ? Object.defineProperty(F, r, {
-    value: "GuildSettingsAuditLogStore",
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
-}) : F[r] = "GuildSettingsAuditLogStore";
-let w = new F(u.h, {
+}
+let P = new v(s.h, {
     AUDIT_LOG_FETCH_START: function() {
-        C = !0
+        L = !0
     },
     AUDIT_LOG_FETCH_SUCCESS: function(e) {
-        var t;
-        y = 0, D = !1, C = !1, x = !0, b = !1, h = k(e.logs), N = e.integrations, f = e.webhooks, S = e.guildScheduledEvents, p = null != (t = e.automodRules) ? t : [], G = e.threads, R = e.applicationCommands, e.logs.length < T.$jw && (x = !1)
+        b = 0, C = !1, L = !1, f = !0, x = !1, I = F(e.logs), N = e.integrations, m = e.webhooks, S = e.guildScheduledEvents, G = e.automodRules ?? [], O = e.threads, R = e.applicationCommands, e.logs.length < A.$jw && (f = !1)
     },
     AUDIT_LOG_FETCH_FAIL: function() {
-        C = !1, b = !0, h = []
+        L = !1, x = !0, I = []
     },
     AUDIT_LOG_FETCH_NEXT_PAGE_START: function(e) {
         let {
             isGroupedFetch: t
         } = e;
-        L = !0, t && y++
+        D = !0, t && b++
     },
     AUDIT_LOG_FETCH_NEXT_PAGE_SUCCESS: function(e) {
         let {
@@ -192,19 +186,19 @@ let w = new F(u.h, {
             threads: i,
             applicationCommands: s
         } = e;
-        if (L = !1, N = n, f = l, S = r, p = a, G = i, R = s, (0 === t.length || t.length < T.$jw) && (x = !1), t.length > 0) {
-            let e = k(t);
-            h = [...h, ...e]
+        if (D = !1, N = n, m = l, S = r, G = a, O = i, R = s, (0 === t.length || t.length < A.$jw) && (f = !1), t.length > 0) {
+            let e = F(t);
+            I = [...I, ...e]
         }
     },
     AUDIT_LOG_FETCH_NEXT_PAGE_FAIL: function() {
-        L = !1
+        D = !1
     },
     AUDIT_LOG_FILTER_BY_ACTION: function(e) {
         let {
             action: t
         } = e;
-        v = t
+        p = t
     },
     AUDIT_LOG_FILTER_BY_USER: function(e) {
         let {
@@ -218,17 +212,17 @@ let w = new F(u.h, {
         } = e;
         U = t
     },
-    GUILD_SETTINGS_SET_SECTION: P,
+    GUILD_SETTINGS_SET_SECTION: j,
     GUILD_SETTINGS_INIT: function(e) {
         let {
             guildId: t,
             section: n
         } = e;
-        return O = t, U = null, P({
+        return T = t, U = null, j({
             section: n
         })
     },
     GUILD_SETTINGS_CLOSE: function() {
-        h = [], m = [], v = T.F_X.ALL, M = null, U = null, j = {}, y = 0, D = !0, N = [], f = [], S = [], p = [], G = []
+        I = [], h = [], p = A.F_X.ALL, M = null, U = null, k = {}, b = 0, C = !0, N = [], m = [], S = [], G = [], O = []
     }
 })

@@ -1,42 +1,9 @@
-/** chunk id: 856686, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    S: () => i
+/** chunk id: 856686, original params: e,t,s (module,exports,require) **/
+s.d(t, {
+    S: () => n
 });
-var r = n(353640);
-
-function l(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = r
-        })
-    }
-    return e
-}
-
-function s(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
-        }
-        return n
-    })(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-let a = {
+var r = s(353640);
+let l = {
         skus: [],
         currentPage: 0,
         totalCount: 0,
@@ -44,17 +11,20 @@ let a = {
         searchError: null,
         isFetchingResults: !1
     },
-    i = (0, r.v)(e => s(l({}, a), {
+    n = (0, r.v)(e => ({
+        ...l,
         onSetResponse: t => {
-            let n = Math.floor(t.pageOffset / t.pageLimit) + 1;
-            e(s(l({}, t), {
-                currentPage: n
-            }))
+            let s = Math.floor(t.pageOffset / t.pageLimit) + 1;
+            e({
+                ...t,
+                currentPage: s
+            })
         },
         setSearchError: t => {
-            e(s(l({}, a), {
+            e({
+                ...l,
                 searchError: t
-            }))
+            })
         },
         setIsFetchingResults: t => {
             e({
@@ -67,6 +37,8 @@ let a = {
             })
         },
         clear: () => {
-            e(l({}, a))
+            e({
+                ...l
+            })
         }
     }))

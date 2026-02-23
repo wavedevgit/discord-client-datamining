@@ -1,6 +1,6 @@
 /** chunk id: 62697, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => u
+    A: () => E
 });
 var l = n(627968);
 n(64700);
@@ -10,7 +10,7 @@ var r = n(397927),
     s = n(848161),
     o = n(438536);
 
-function u(e) {
+function E(e) {
     let {
         onNavigate: t,
         backPanel: n = a.g.INFO
@@ -21,7 +21,7 @@ function u(e) {
             className: o.qd,
             children: (0, l.jsxs)(r.DUT, {
                 className: s.Gv,
-                onClick: () => null == t ? void 0 : t(n),
+                onClick: () => t?.(n),
                 children: [(0, l.jsx)(r.rJJ, {
                     size: "custom",
                     width: 20,

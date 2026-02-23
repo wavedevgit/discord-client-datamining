@@ -1,43 +1,42 @@
-/** chunk id: 59375, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => i
+/** chunk id: 59375, original params: e,t,s (module,exports,require) **/
+s.d(t, {
+    A: () => l
 });
-var r = n(627968);
-n(64700);
-var l = n(397927),
-    a = n(407943);
+var a = s(627968);
+s(64700);
+var n = s(397927),
+    i = s(407943);
 
-function i(e) {
-    var t;
+function l(e) {
     let {
-        attachment: n
-    } = e, i = Math.round((null != (t = n.size) ? t : 0) / 1024 / 1024 * 100) / 100;
-    return (0, r.jsxs)("div", {
-        className: a.kL,
-        children: [(0, r.jsx)(l.DF1, {
+        attachment: t
+    } = e, s = Math.round((t.size ?? 0) / 1024 / 1024 * 100) / 100;
+    return (0, a.jsxs)("div", {
+        className: i.kL,
+        children: [(0, a.jsx)(n.DF1, {
             size: "xs",
             color: "currentColor",
-            className: a.Yg
-        }), (0, r.jsx)(l.hKd, {
+            className: i.Yg
+        }), (0, a.jsx)(n.hKd, {
             size: 8,
             horizontal: !0
-        }), (0, r.jsx)(l.Text, {
+        }), (0, a.jsx)(n.Text, {
             variant: "text-sm/normal",
             color: "text-default",
-            className: a.Md,
-            children: n.filename
-        }), (0, r.jsx)(l.hKd, {
+            className: i.Md,
+            children: t.filename
+        }), (0, a.jsx)(n.hKd, {
             size: 8,
             horizontal: !0
-        }), (0, r.jsx)("div", {
-            className: a.Om
-        }), (0, r.jsx)(l.hKd, {
+        }), (0, a.jsx)("div", {
+            className: i.Om
+        }), (0, a.jsx)(n.hKd, {
             size: 8,
             horizontal: !0
-        }), (0, r.jsxs)(l.Text, {
+        }), (0, a.jsxs)(n.Text, {
             variant: "text-sm/normal",
             color: "text-muted",
-            children: [i, "MB"]
+            children: [s, "MB"]
         })]
     })
 }

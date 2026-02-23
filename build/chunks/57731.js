@@ -1,120 +1,92 @@
 /** chunk id: 57731, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => p
-}), n(896048);
-var r = n(627968),
-    i = n(397927),
+    A: () => x
+});
+var i = n(627968),
+    s = n(397927),
     l = n(11351),
-    s = n(306444),
+    r = n(306444),
     a = n(922975),
     o = n(963175),
-    c = n(792105),
-    d = n(389082),
+    d = n(792105),
+    c = n(389082),
     u = n(136230),
-    g = n(985018),
-    m = n(436151);
+    m = n(985018),
+    g = n(436151);
 
-function p() {
+function x() {
     let {
         editStateId: e,
         guildId: t
-    } = (0, s.O)(), [, p] = a.$7(e, t), [f, h] = a.xR(e, t), b = a.It(e, t);
+    } = (0, r.O)(), [, x] = a.$7(e, t), [h, _] = a.xR(e, t), A = a.It(e, t);
 
-    function x() {
-        (0, i.mMO)(async () => {
+    function p() {
+        (0, s.mMO)(async () => {
             let {
                 default: e
             } = await n.e("64939").then(n.bind(n, 836774));
-            return n => {
-                var i, l;
-                return (0, r.jsx)(e, (i = function(e) {
-                    for (var t = 1; t < arguments.length; t++) {
-                        var n = null != arguments[t] ? arguments[t] : {},
-                            r = Object.keys(n);
-                        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                            return Object.getOwnPropertyDescriptor(n, e).enumerable
-                        }))), r.forEach(function(t) {
-                            var r;
-                            r = n[t], t in e ? Object.defineProperty(e, t, {
-                                value: r,
-                                enumerable: !0,
-                                configurable: !0,
-                                writable: !0
-                            }) : e[t] = r
-                        })
-                    }
-                    return e
-                }({}, n), l = l = {
-                    guildId: t,
-                    onUploadIcon: e => p({
-                        icon: e,
-                        unicodeEmoji: null
-                    }),
-                    onSelectUnicodeEmoji: e => p({
-                        icon: null,
-                        unicodeEmoji: e
-                    })
-                }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
-                    var n = Object.keys(e);
-                    if (Object.getOwnPropertySymbols) {
-                        var r = Object.getOwnPropertySymbols(e);
-                        n.push.apply(n, r)
-                    }
-                    return n
-                })(Object(l)).forEach(function(e) {
-                    Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
-                }), i))
-            }
+            return n => (0, i.jsx)(e, {
+                ...n,
+                guildId: t,
+                onUploadIcon: e => x({
+                    icon: e,
+                    unicodeEmoji: null
+                }),
+                onSelectUnicodeEmoji: e => x({
+                    icon: null,
+                    unicodeEmoji: e
+                })
+            })
         })
     }
-    let j = (0, l.gN)();
-    return (0, r.jsx)(o.A, {
-        title: g.intl.string(g.t["Ah+sQ9"]),
-        description: g.intl.string(g.t.ixbWiB),
-        children: (0, r.jsxs)(i.BJc, {
+    let f = (0, l.gN)();
+    return (0, i.jsx)(o.A, {
+        title: m.intl.string(m.t["Ah+sQ9"]),
+        description: m.intl.string(m.t.ixbWiB),
+        children: (0, i.jsxs)(s.BJc, {
             direction: "vertical",
             gap: 24,
-            children: [(0, r.jsx)(i.D0$, {
-                label: g.intl.string(g.t["6OUqDa"]),
-                disabled: j,
-                children: (0, r.jsx)(d.A, {
-                    value: f,
-                    onChange: h,
-                    disabled: j
+            children: [(0, i.jsx)(s.D0$, {
+                label: m.intl.string(m.t["6OUqDa"]),
+                disabled: f,
+                children: (0, i.jsx)(c.A, {
+                    value: h,
+                    onChange: _,
+                    disabled: f
                 })
-            }), (0, r.jsx)(i.D0$, {
-                label: g.intl.string(g.t["zn8/AX"]),
-                disabled: j,
-                description: g.intl.string(g.t.AqHUrU),
-                children: (0, r.jsxs)(i.BJc, {
+            }), (0, i.jsx)(s.D0$, {
+                label: m.intl.string(m.t["zn8/AX"]),
+                disabled: f,
+                description: m.intl.string(m.t.AqHUrU),
+                children: (0, i.jsxs)(s.BJc, {
                     direction: "horizontal",
                     gap: 16,
-                    children: [(0, r.jsx)(u.A, {
-                        role: b,
-                        "aria-label": g.intl.string(g.t.mD1oGB),
-                        onClick: x,
-                        disabled: j
-                    }), (0, r.jsx)(i.Button, {
+                    children: [(0, i.jsx)(u.A, {
+                        role: A,
+                        "aria-label": m.intl.string(m.t.mD1oGB),
+                        onClick: p,
+                        disabled: f
+                    }), (0, i.jsx)(s.Button, {
                         variant: "secondary",
-                        onClick: x,
-                        disabled: j,
-                        text: g.intl.string(g.t.mD1oGB)
+                        onClick: p,
+                        disabled: f,
+                        text: m.intl.string(m.t.mD1oGB)
                     })]
                 })
-            }), (0, r.jsx)(i.M1G, {
-                children: (0, r.jsxs)("div", {
-                    className: m.i,
+            }), (0, i.jsx)(s.M1G, {
+                children: (0, i.jsxs)("div", {
+                    className: g.i,
                     "aria-hidden": !0,
-                    children: [(0, r.jsx)(c.A, {
+                    children: [(0, i.jsx)(d.A, {
                         guildId: t,
-                        role: b,
-                        className: m.z,
+                        role: A,
+                        className: g.z,
                         theme: "light"
-                    }), (0, r.jsx)(c.A, {
+                    }), (0, i.jsx)(d.A, {
                         guildId: t,
-                        role: b,
-                        className: m.z,
+                        role: A,
+                        className: g.z,
                         theme: "dark"
                     })]
                 })

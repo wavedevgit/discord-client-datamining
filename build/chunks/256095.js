@@ -1,5 +1,5 @@
 /** chunk id: 256095, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    k: () => l
+    k: () => a
 });
-var r, l = ((r = {}).PREPARING = "PREPARING", r.READY_TO_UPLOAD = "READY_TO_UPLOAD", r.ERROR = "ERROR", r)
+var l, a = ((l = {}).PREPARING = "PREPARING", l.READY_TO_UPLOAD = "READY_TO_UPLOAD", l.ERROR = "ERROR", l)

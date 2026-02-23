@@ -2,12 +2,12 @@
 r.d(t, {
     L_: () => i,
     Sf: () => l
-}), r(65821), r(927092), r(212978), r(201528), r(393431), r(752391), r(532706), r(42231), r(232424), r(757074), r(949626), r(767709), r(65162), r(896048), r(693327), r(554719), r(680155), r(323874), r(14289), r(35956), r(321073);
+}), r(393431), r(532706), r(42231), r(232424), r(949626), r(767709), r(65162), r(323874), r(14289), r(35956), r(321073);
 let a = null;
 
 function n(e, t, r) {
     let a = e._malloc(t);
-    if (0 === a) throw Error("Failed to allocate ".concat(t, " bytes for ").concat(r, " - out of WASM memory"));
+    if (0 === a) throw Error(`Failed to allocate ${t} bytes for ${r} - out of WASM memory`);
     return a
 }
 async function i() {
@@ -56,11 +56,11 @@ async function o(e) {
                 break
             }
             let s = t.HEAPU32[e >> 2],
-                u = t.HEAP32[n >> 2],
-                f = new Uint8Array(t.HEAPU8.buffer, s, c).slice();
+                f = t.HEAP32[n >> 2],
+                u = new Uint8Array(t.HEAPU8.buffer, s, c).slice();
             o.push({
-                data: f,
-                timestamp: u,
+                data: u,
+                timestamp: f,
                 width: r,
                 height: a
             }), t._free(e), t._free(n)
@@ -82,7 +82,7 @@ async function l(e) {
             frameCount: t
         } = await o(e);
         return t > 1
-    } catch (e) {
+    } catch {
         return !1
     }
 }

@@ -1,12 +1,12 @@
 /** chunk id: 633400, original params: t,e,s (module,exports,require) **/
 s.d(e, {
     default: () => m
-}), s(896048);
+});
 var r = s(627968);
 s(64700);
 var i = s(158954),
-    l = s(397927),
-    n = s(608461),
+    n = s(397927),
+    l = s(608461),
     a = s(493540),
     c = s(985018),
     o = s(100670),
@@ -24,13 +24,13 @@ function x(t) {
             className: o.mT,
             src: d
         }), (0, r.jsxs)("div", {
-            children: [(0, r.jsx)(l.Text, {
+            children: [(0, r.jsx)(n.Text, {
                 variant: "text-sm/semibold",
                 color: "text-default",
                 children: e
-            }), (0, r.jsx)(l.hKd, {
+            }), (0, r.jsx)(n.hKd, {
                 size: 4
-            }), (0, r.jsx)(l.Text, {
+            }), (0, r.jsx)(n.Text, {
                 variant: "text-sm/normal",
                 color: "text-muted",
                 children: s
@@ -46,12 +46,12 @@ function m(t) {
         transitionState: o,
         onClose: d
     } = t, [m, {
-        loading: u,
-        error: h
-    }] = (0, n.A)(s ? a.Y7 : a.KW), p = async () => {
+        loading: h,
+        error: u
+    }] = (0, l.A)(s ? a.Y7 : a.KW), p = async () => {
         try {
             let t = await m(e);
-            null != t && (null == d || d())
+            null != t && d?.()
         } catch (t) {}
     };
     return (0, r.jsx)(i.Modal, {
@@ -63,18 +63,18 @@ function m(t) {
             text: c.intl.string(c.t.Jj8nUC)
         }, {
             variant: "primary",
-            loading: u,
+            loading: h,
             onClick: p,
             text: c.intl.string(c.t["pC/ozD"])
         }],
         title: c.intl.string(c.t.TP4GSt),
         onClose: d,
         preview: (0, r.jsxs)(r.Fragment, {
-            children: [null == h ? null : (0, r.jsxs)(l.Text, {
+            children: [null == u ? null : (0, r.jsxs)(n.Text, {
                 variant: "text-xs/normal",
                 color: "text-feedback-critical",
-                children: ["Error: ", h.message]
-            }), (0, r.jsx)(l.Text, {
+                children: ["Error: ", u.message]
+            }), (0, r.jsx)(n.Text, {
                 variant: "text-xs/normal",
                 color: "text-muted",
                 children: c.intl.format(c.t["+oNl6x"], {
@@ -85,7 +85,7 @@ function m(t) {
         subtitle: c.intl.format(c.t.c0IsON, {
             termsURL: "https://support.discord.com/hc/en-us/articles/5330075836311-Creator-Pilot-Terms"
         }),
-        children: (0, r.jsxs)(l.BJc, {
+        children: (0, r.jsxs)(n.BJc, {
             gap: 16,
             children: [(0, r.jsx)(x, {
                 header: c.intl.string(c.t.UzDaWD),

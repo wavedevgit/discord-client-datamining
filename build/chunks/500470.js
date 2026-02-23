@@ -1,13 +1,13 @@
 /** chunk id: 500470, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     k: () => s,
-    x: () => a
+    x: () => r
 });
 var l = n(417597),
-    r = n(287809),
+    a = n(287809),
     i = n(695515);
-let a = () => {
+let r = () => {
         let e = (0, l.bG)([i.A], () => i.A.getSelectedTeenId());
-        return (0, l.bG)([r.default], () => null !== e ? r.default.getUser(e) : void 0)
+        return (0, l.bG)([a.default], () => null !== e ? a.default.getUser(e) : void 0)
     },
     s = () => (0, l.bG)([i.A], () => i.A.getSelectedTeenId())

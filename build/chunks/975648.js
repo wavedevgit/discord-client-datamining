@@ -1,41 +1,37 @@
 /** chunk id: 975648, original params: e,t,n (module,exports,require) **/
-let r;
+let i;
 n.d(t, {
-    A: () => d
+    A: () => o
 });
-var i, l, s = n(311907),
+var s = n(311907),
     a = n(73153);
-let o = !1;
-class c extends(l = s.Ay.Store) {
+let r = !1;
+class l extends s.Ay.Store {
+    static displayName = "DataHarvestStore";
     get harvestType() {
-        return r
+        return i
     }
     get requestingHarvest() {
-        return o
+        return r
     }
-}(i = "displayName") in c ? Object.defineProperty(c, i, {
-    value: "DataHarvestStore",
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
-}) : c[i] = "DataHarvestStore";
-let d = new c(a.h, {
+}
+let o = new l(a.h, {
     CONNECTION_OPEN: function() {
-        r = void 0
+        i = void 0
     },
     UPDATE_DATA_HARVEST_TYPE: function(e) {
         let {
             harvestType: t
         } = e;
-        o = !1, r = t
+        r = !1, i = t
     },
     LOAD_DATA_HARVEST_TYPE_START: function() {
-        o = !0
+        r = !0
     },
     LOAD_DATA_HARVEST_TYPE_FAILURE: function() {
-        o = !1
+        r = !1
     },
     LOGOUT: function() {
-        o = !1, r = null
+        r = !1, i = null
     }
 })

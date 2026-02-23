@@ -1,5 +1,4 @@
 /** chunk id: 119907, original params: e,t,n (module,exports,require) **/
-"use strict";
 e.exports = {
     M1: "ephemeral__5126c",
     SH: "nitroMessage__5126c",

@@ -4,6 +4,5 @@ l.d(t, {
 });
 
 function n(e) {
-    var t;
-    return null != (t = e.safetyAlertsChannelId) ? t : e.publicUpdatesChannelId
+    return e.safetyAlertsChannelId ?? e.publicUpdatesChannelId
 }

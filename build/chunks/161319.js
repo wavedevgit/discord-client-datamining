@@ -1,84 +1,65 @@
 /** chunk id: 161319, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    PR: () => D,
-    Recurring3PModal: () => w,
-    uE: () => M
-}), n(896048), n(638769), n(321073);
-var r = n(627968),
-    i = n(64700),
-    l = n(158954),
-    s = n(311907),
-    a = n(397927),
+    PR: () => P,
+    Recurring3PModal: () => D,
+    uE: () => G
+}), n(321073);
+var i = n(627968),
+    s = n(64700),
+    a = n(158954),
+    r = n(311907),
+    l = n(397927),
     o = n(544028),
     c = n(287809),
     d = n(954571),
     u = n(975571),
     _ = n(927578),
-    p = n(728458),
-    m = n(792656),
+    m = n(728458),
+    A = n(792656),
     g = n(264779),
-    A = n(597758),
-    f = n(35587),
-    b = n(412260),
-    h = n(852218),
-    E = n(699443),
-    O = n(934204),
-    x = n(788868),
-    C = n(652215),
-    S = n(985018),
-    T = n(342087),
-    I = n(870378),
-    N = n(8496);
-
-function y(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = r
-        })
-    }
-    return e
-}
-let j = {
-        [h.KS]: {
-            title: S.t.sfGgOG,
-            body: S.t.igiSKe,
-            bodyWithExpiration: S.t.w8CXUl,
+    h = n(597758),
+    x = n(35587),
+    p = n(412260),
+    E = n(852218),
+    C = n(699443),
+    T = n(934204),
+    S = n(788868),
+    I = n(652215),
+    f = n(985018),
+    N = n(342087),
+    b = n(870378),
+    j = n(8496);
+let v = {
+        [E.KS]: {
+            title: f.t.sfGgOG,
+            body: f.t.igiSKe,
+            bodyWithExpiration: f.t.w8CXUl,
             redemptionURL: "https://steelseries.com/",
             logos: {
-                dark: (0, r.jsx)(E.a1, {}),
-                light: (0, r.jsx)(E.Gn, {})
+                dark: (0, i.jsx)(C.a1, {}),
+                light: (0, i.jsx)(C.Gn, {})
             },
-            asset: N.A
+            asset: j.A
         },
-        [h.Cs]: {
-            title: S.t["9N8obd"],
-            body: S.t["34g+Z3"],
-            bodyWithExpiration: S.t.rqmpXc,
+        [E.Cs]: {
+            title: f.t["9N8obd"],
+            body: f.t["34g+Z3"],
+            bodyWithExpiration: f.t.rqmpXc,
             redemptionURL: "https://www.kontrolfreek.com/",
             logos: {
-                dark: (0, r.jsx)(E.WF, {}),
-                light: (0, r.jsx)(E.s, {})
+                dark: (0, i.jsx)(C.WF, {}),
+                light: (0, i.jsx)(C.s, {})
             },
-            asset: I.A
+            asset: b.A
         }
     },
-    v = e => {
+    O = e => {
         let {
             recurrence: t
-        } = e, n = (0, r.jsx)(l.rOg, {
-            color: a.LU0.colors.CONTROL_CONNECTED_BACKGROUND_DEFAULT
-        }), s = (0, r.jsx)(l.K0, {
-            icon: l.TdU,
+        } = e, n = (0, i.jsx)(a.rOg, {
+            color: l.LU0.colors.CONTROL_CONNECTED_BACKGROUND_DEFAULT
+        }), r = (0, i.jsx)(a.K0, {
+            icon: a.TdU,
             size: "sm",
             variant: "secondary",
             "aria-label": "",
@@ -86,61 +67,61 @@ let j = {
             onClick: () => {
                 navigator.clipboard.writeText(t.code), c(n)
             }
-        }), [o, c] = i.useState(() => s);
-        if (null != t.code) return (0, r.jsx)("div", {
-            className: T.oP,
-            children: (0, r.jsxs)("div", {
-                className: T.t0,
-                children: [(0, r.jsx)("div", {
-                    className: T.cD,
-                    children: (0, r.jsx)(l.EYj, {
+        }), [o, c] = s.useState(() => r);
+        if (null != t.code) return (0, i.jsx)("div", {
+            className: N.oP,
+            children: (0, i.jsxs)("div", {
+                className: N.t0,
+                children: [(0, i.jsx)("div", {
+                    className: N.cD,
+                    children: (0, i.jsx)(a.EYj, {
                         variant: "text-md/medium",
                         color: "text-strong",
                         children: t.code
                     })
-                }), o, (0, r.jsx)(l.$nd, {
+                }), o, (0, i.jsx)(a.$nd, {
                     variant: "overlay-primary",
                     size: "sm",
-                    text: S.intl.formatToPlainString(S.t.DF68t7, {
+                    text: f.intl.formatToPlainString(f.t.DF68t7, {
                         redemptionURL: t.redemptionURL
                     }),
                     onClick: () => {
-                        window.open(t.redemptionURL, "_blank"), d.default.track(C.HAw.RECURRING_PROMOTION_CLAIMED)
+                        window.open(t.redemptionURL, "_blank"), d.default.track(I.HAw.RECURRING_PROMOTION_CLAIMED)
                     }
                 })]
             })
         })
     },
-    P = () => Object.entries(j).map(e => {
+    R = () => Object.entries(v).map(e => {
         let [t, n] = e;
-        return (0, r.jsx)("div", {
-            className: T.lA,
-            children: (0, r.jsxs)("div", {
-                className: T.LV,
-                children: [(0, r.jsxs)("div", {
-                    className: T.JN,
-                    children: [(0, r.jsx)("div", {
-                        className: T.MC,
-                        children: (0, r.jsx)(l.XAi, {
+        return (0, i.jsx)("div", {
+            className: N.lA,
+            children: (0, i.jsxs)("div", {
+                className: N.LV,
+                children: [(0, i.jsxs)("div", {
+                    className: N.JN,
+                    children: [(0, i.jsx)("div", {
+                        className: N.MC,
+                        children: (0, i.jsx)(a.XAi, {
                             size: "refresh_sm"
                         })
-                    }), (0, r.jsxs)("div", {
-                        className: T.yO,
-                        children: [(0, r.jsx)(l.DZT, {
+                    }), (0, i.jsxs)("div", {
+                        className: N.yO,
+                        children: [(0, i.jsx)(a.DZT, {
                             variant: "heading-lg/semibold",
                             color: "text-strong",
-                            children: S.intl.string(n.title)
-                        }), (0, r.jsx)(l.DZT, {
+                            children: f.intl.string(n.title)
+                        }), (0, i.jsx)(a.DZT, {
                             variant: "heading-sm/medium",
                             color: "text-subtle",
-                            children: S.intl.string(n.body)
+                            children: f.intl.string(n.body)
                         })]
                     })]
-                }), (0, r.jsx)("div", {
-                    className: T.R4,
-                    children: (0, r.jsx)(a._V3, {
+                }), (0, i.jsx)("div", {
+                    className: N.R4,
+                    children: (0, i.jsx)(l._V3, {
                         src: n.asset,
-                        className: T.Ys,
+                        className: N.Ys,
                         width: 100,
                         height: 100,
                         zoomable: !1
@@ -149,227 +130,211 @@ let j = {
             })
         }, t)
     }),
-    R = e => {
+    y = e => {
         var t;
         let n, c, {
                 promotionRecurrences: d
             } = e,
-            [_, m] = i.useState(d.length > 1),
-            [A, f] = i.useState([]),
-            [b, h] = i.useState(new Set);
-        i.useEffect(() => {
-            f([d.sort((e, t) => t.startDate > e.startDate ? 1 : -1)[0]])
+            [_, A] = s.useState(d.length > 1),
+            [h, x] = s.useState([]),
+            [p, E] = s.useState(new Set);
+        s.useEffect(() => {
+            x([d.sort((e, t) => t.startDate > e.startDate ? 1 : -1)[0]])
         }, [d]);
-        let E = (t = d[0].partnerId, n = (0, s.bG)([o.A], () => (0, l.Mwr)(o.A.theme)), null == (c = j[t]) ? null : n ? c.logos.dark : c.logos.light),
-            O = (0, r.jsx)(a._V3, {
+        let C = (t = d[0].partnerId, n = (0, r.bG)([o.A], () => (0, a.Mwr)(o.A.theme)), null == (c = v[t]) ? null : n ? c.logos.dark : c.logos.light),
+            T = (0, i.jsx)(l._V3, {
                 src: d[0].asset,
-                className: T.Ys,
+                className: N.Ys,
                 width: 100,
                 height: 100,
                 zoomable: !1
             });
-        return (0, r.jsxs)("div", {
-            children: [A.map((e, t) => {
-                let n = b.has(e.id),
-                    i = null == e.code;
-                return (0, r.jsxs)("div", {
-                    className: T.lA,
-                    children: [(0, r.jsxs)("div", {
-                        className: T.LV,
-                        children: [(0, r.jsxs)("div", {
-                            className: T.JN,
-                            children: [E, (0, r.jsxs)("div", {
-                                className: T.yO,
-                                children: [(0, r.jsx)(l.DZT, {
+        return (0, i.jsxs)("div", {
+            children: [h.map((e, t) => {
+                let n = p.has(e.id),
+                    s = null == e.code;
+                return (0, i.jsxs)("div", {
+                    className: N.lA,
+                    children: [(0, i.jsxs)("div", {
+                        className: N.LV,
+                        children: [(0, i.jsxs)("div", {
+                            className: N.JN,
+                            children: [C, (0, i.jsxs)("div", {
+                                className: N.yO,
+                                children: [(0, i.jsx)(a.DZT, {
                                     variant: "heading-lg/semibold",
                                     color: "text-strong",
-                                    children: S.intl.string(e.title)
-                                }), (0, r.jsx)(l.DZT, {
+                                    children: f.intl.string(e.title)
+                                }), (0, i.jsx)(a.DZT, {
                                     variant: "heading-sm/medium",
                                     color: "text-subtle",
-                                    children: n ? S.intl.format(S.t.i2EuFO, {
-                                        helpdeskArticle: u.A.getArticleURL(C.MVz.RECURRING_PROMOTION)
-                                    }) : i ? S.intl.string(e.body) : S.intl.format(e.bodyWithExpiration, {
+                                    children: n ? f.intl.format(f.t.i2EuFO, {
+                                        helpdeskArticle: u.A.getArticleURL(I.MVz.RECURRING_PROMOTION)
+                                    }) : s ? f.intl.string(e.body) : f.intl.format(e.bodyWithExpiration, {
                                         date: e.endDate
                                     })
                                 })]
-                            }), i && (n ? (0, r.jsx)(l.$nd, {
-                                icon: l.EpV,
+                            }), s && (n ? (0, i.jsx)(a.$nd, {
+                                icon: a.EpV,
                                 variant: "critical-secondary",
                                 size: "sm",
                                 disabled: !0,
-                                text: S.intl.string(S.t["8LKchl"])
-                            }) : (0, r.jsx)(l.$nd, {
-                                icon: l.XAi,
+                                text: f.intl.string(f.t["8LKchl"])
+                            }) : (0, i.jsx)(a.$nd, {
+                                icon: a.XAi,
                                 variant: "overlay-primary",
                                 size: "sm",
-                                text: S.intl.string(S.t.vwASIl),
+                                text: f.intl.string(f.t.vwASIl),
                                 onClick: () => {
                                     (0, g.kd)({
                                         promotionId: e.id,
                                         analyticsLocations: []
                                     }).then(n => {
-                                        var r, i;
-                                        f([...A.slice(0, t), (r = y({}, e), i = i = {
+                                        x([...h.slice(0, t), {
+                                            ...e,
                                             code: n.code
-                                        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
-                                            var n = Object.keys(e);
-                                            if (Object.getOwnPropertySymbols) {
-                                                var r = Object.getOwnPropertySymbols(e);
-                                                n.push.apply(n, r)
-                                            }
-                                            return n
-                                        })(Object(i)).forEach(function(e) {
-                                            Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
-                                        }), r), ...A.slice(t + 1)])
+                                        }, ...h.slice(t + 1)])
                                     }).catch(t => {
-                                        h(t => new Set([...t, e.id])), p.A.captureException(t)
+                                        E(t => new Set([...t, e.id])), m.A.captureException(t)
                                     })
                                 }
                             }))]
-                        }), (0, r.jsx)("div", {
-                            className: T.R4,
-                            children: O
+                        }), (0, i.jsx)("div", {
+                            className: N.R4,
+                            children: T
                         })]
-                    }), null != e.code && (0, r.jsx)(v, {
+                    }), null != e.code && (0, i.jsx)(O, {
                         recurrence: e
                     })]
                 }, e.id)
-            }), _ && (0, r.jsx)(l.DUT, {
-                className: T.K8,
+            }), _ && (0, i.jsx)(a.DUT, {
+                className: N.K8,
                 onClick: () => {
-                    m(!1), f([...A, ...d.slice(1)])
+                    A(!1), x([...h, ...d.slice(1)])
                 },
-                children: (0, r.jsx)(l.EYj, {
+                children: (0, i.jsx)(a.EYj, {
                     variant: "text-sm/medium",
                     color: "text-subtle",
-                    children: S.intl.string(S.t.rjjZxV)
+                    children: f.intl.string(f.t.rjjZxV)
                 })
             })]
         })
     },
-    D = e => {
+    P = e => {
         let {
             percentage: t
         } = e;
-        return (0, r.jsxs)("div", {
-            className: T.hr,
-            children: [t > 0 && t < 100 && (0, r.jsx)(() => (0, r.jsx)("div", {
-                className: T.ML,
+        return (0, i.jsxs)("div", {
+            className: N.hr,
+            children: [t > 0 && t < 100 && (0, i.jsx)(() => (0, i.jsx)("div", {
+                className: N.ML,
                 style: {
-                    left: "calc(".concat(t, "% - ").concat(5, "px)")
+                    left: `calc(${t}% - 5px)`
                 },
-                children: (0, r.jsx)(O.z, {})
-            }), {}), (0, r.jsx)("div", {
-                className: T.SX,
+                children: (0, i.jsx)(T.z, {})
+            }), {}), (0, i.jsx)("div", {
+                className: N.SX,
                 style: {
-                    width: "".concat(t, "%")
+                    width: `${t}%`
                 }
             })]
         })
     },
-    L = e => {
-        if (e.promotionType === h.pt.THIRD_PARTY_OUTBOUND_RECURRING) {
-            var t, n;
-            return null != (t = null == (n = e.partnerId) ? void 0 : n.toLowerCase()) ? t : null
-        }
-        return e.outboundTitle.toLowerCase()
-    },
-    w = e => {
-        let t, n, i, {
-                onClose: a
+    L = e => e.promotionType === E.pt.THIRD_PARTY_OUTBOUND_RECURRING ? e.partnerId?.toLowerCase() ?? null : e.outboundTitle.toLowerCase(),
+    D = e => {
+        let t, n, s, {
+                onClose: l
             } = e,
             {
                 promotionsLoaded: o,
                 claimedOutboundPromotionCodeMap: d
-            } = (0, f.y7)(),
-            p = (0, s.yK)([b.A], () => b.A.outboundRecurringPromotions),
-            h = (0, s.bG)([c.default], () => c.default.getCurrentUser()),
-            E = !1 === _.Ay.isPremiumExactly(h, x.PremiumTypes.TIER_2),
-            O = null == h ? void 0 : h.isFractionalPremiumWithNoStandardSub(),
-            I = null == h || E || O;
-        if (!1 === o) return (0, r.jsx)(l.y$y, {});
-        let N = (e => {
+            } = (0, x.y7)(),
+            m = (0, r.yK)([p.A], () => p.A.outboundRecurringPromotions),
+            E = (0, r.bG)([c.default], () => c.default.getCurrentUser()),
+            C = !1 === _.Ay.isPremiumExactly(E, S.PremiumTypes.TIER_2),
+            T = E?.isFractionalPremiumWithNoStandardSub(),
+            b = null == E || C || T;
+        if (!1 === o) return (0, i.jsx)(a.y$y, {});
+        let j = (e => {
             let {
                 promotions: t,
                 codesByPromotion: n
-            } = e, r = {};
+            } = e, i = {};
             return t.filter(e => !0 === (0, g.HB)({
                 promotionPartner: e.outboundTitle,
                 promotionType: e.promotionType
             })).forEach(e => {
-                var t;
-                let i = L(e),
-                    l = (e => {
-                        var t;
+                let t = L(e),
+                    s = (e => {
                         let {
-                            promotion: n
-                        } = e, r = L(n);
-                        return null == r ? null : null != (t = j[r]) ? t : null
+                            promotion: t
+                        } = e, n = L(t);
+                        return null == n ? null : v[n] ?? null
                     })({
                         promotion: e
                     });
-                if (null == i || null == l) return;
-                i in r || (r[i] = []);
-                let s = y({
+                if (null == t || null == s) return;
+                t in i || (i[t] = []);
+                let a = {
                     id: e.id,
-                    partnerId: i,
+                    partnerId: t,
                     startDate: e.startDate,
                     endDate: e.endDate,
-                    code: null != (t = n[e.id]) ? t : null
-                }, l);
-                r[i].push(s)
-            }), r
+                    code: n[e.id] ?? null,
+                    ...s
+                };
+                i[t].push(a)
+            }), i
         })({
-            promotions: p,
+            promotions: m,
             codesByPromotion: d
         });
-        return (0, r.jsx)(l.Modal, {
-            title: S.intl.string(S.t["7ioAjs"]),
-            subtitle: S.intl.format(S.t.LOYRxB, {
-                helpCenterLink: u.A.getArticleURL(C.MVz.RECURRING_PROMOTION)
+        return (0, i.jsx)(a.Modal, {
+            title: f.intl.string(f.t["7ioAjs"]),
+            subtitle: f.intl.format(f.t.LOYRxB, {
+                helpCenterLink: u.A.getArticleURL(I.MVz.RECURRING_PROMOTION)
             }),
             actions: [],
             preview: (() => {
-                if (!0 === I) return (0, r.jsx)(m.A, {
-                    subscriptionTier: x.pe.TIER_2,
+                if (!0 === b) return (0, i.jsx)(A.A, {
+                    subscriptionTier: S.pe.TIER_2,
                     fullWidth: !0,
                     onClick: () => {
-                        a()
+                        l()
                     },
                     onSubscribeModalClose: e => {
-                        if (e) return A.Ay.fetchActivePromotions()
+                        if (e) return h.Ay.fetchActivePromotions()
                     }
                 })
             })(),
-            transitionState: l.ip4.ENTERED,
-            onClose: a,
+            transitionState: a.ip4.ENTERED,
+            onClose: l,
             children: (n = new Date((t = new Date(new Date().toLocaleString("en-US", {
                 timeZone: "America/New_York"
-            }))).getFullYear(), t.getMonth() + 1, 0).getDate(), i = t.getDate() / n * 100, I ? (0, r.jsx)(P, {}) : (0, r.jsxs)("div", {
-                className: T.kL,
-                children: [(0, r.jsx)("div", {
-                    className: T.Ps,
-                    children: (0, r.jsx)(l.EYj, {
+            }))).getFullYear(), t.getMonth() + 1, 0).getDate(), s = t.getDate() / n * 100, b ? (0, i.jsx)(R, {}) : (0, i.jsxs)("div", {
+                className: N.kL,
+                children: [(0, i.jsx)("div", {
+                    className: N.Ps,
+                    children: (0, i.jsx)(a.EYj, {
                         variant: "text-md/medium",
                         color: "text-subtle",
-                        children: S.intl.format(S.t["43kZKL"], {
+                        children: f.intl.format(f.t["43kZKL"], {
                             days: n - t.getDate()
                         })
                     })
-                }), (0, r.jsx)("div", {
-                    className: T.G9,
-                    children: (0, r.jsx)(D, {
-                        percentage: i
+                }), (0, i.jsx)("div", {
+                    className: N.G9,
+                    children: (0, i.jsx)(P, {
+                        percentage: s
                     })
-                }), (0, r.jsx)("div", {
-                    className: T.kR,
-                    children: Object.entries(N).sort((e, t) => {
-                        let [n] = e, [r] = t;
-                        return r.localeCompare(n)
+                }), (0, i.jsx)("div", {
+                    className: N.kR,
+                    children: Object.entries(j).sort((e, t) => {
+                        let [n] = e, [i] = t;
+                        return i.localeCompare(n)
                     }).map(e => {
                         let [t, n] = e;
-                        return (0, r.jsx)(R, {
+                        return (0, i.jsx)(y, {
                             promotionRecurrences: n
                         }, t)
                     })
@@ -377,16 +342,18 @@ let j = {
             }))
         })
     },
-    M = e => {
+    G = e => {
         let {
             analyticsLocations: t
         } = e;
-        d.default.track(C.HAw.RECURRING_PROMOTION_MODAL_OPENED, {
+        d.default.track(I.HAw.RECURRING_PROMOTION_MODAL_OPENED, {
             location_stack: t
-        }), A.Ay.fetchActivePromotions(), (0, a.mMO)(async () => {
+        }), h.Ay.fetchActivePromotions(), (0, l.mMO)(async () => {
             let {
                 Recurring3PModal: e
             } = await Promise.resolve().then(n.bind(n, 161319));
-            return t => (0, r.jsx)(e, y({}, t))
+            return t => (0, i.jsx)(e, {
+                ...t
+            })
         })
     }

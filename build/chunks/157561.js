@@ -1,47 +1,47 @@
-/** chunk id: 157561, original params: e,t,n (module,exports,require) **/
-n.d(t, {
+/** chunk id: 157561, original params: e,t,a (module,exports,require) **/
+a.d(t, {
     v: () => d
 });
-var r = n(64700),
-    l = n(416730),
-    i = n(620140),
-    a = n(412461),
-    s = n(310419),
-    o = n(656106),
-    c = n(652215);
+var n = a(64700),
+    i = a(416730),
+    s = a(620140),
+    l = a(412461),
+    r = a(310419),
+    o = a(656106),
+    c = a(652215);
 
 function d(e) {
     let {
         initialQuery: t = ""
-    } = e, n = l.A.useField("query");
-    r.useEffect(() => l.A.setState({
+    } = e, a = i.A.useField("query");
+    n.useEffect(() => i.A.setState({
         query: t
     }), [t]);
-    let d = r.useCallback(e => {
-            l.A.setState({
+    let d = n.useCallback(e => {
+            i.A.setState({
                 query: e
             })
         }, []),
-        u = r.useCallback(() => {
-            l.A.setState({
+        u = n.useCallback(() => {
+            i.A.setState({
                 query: ""
             })
         }, []),
-        p = r.useCallback(() => {
-            let e = (0, i.A)();
-            (0, a.TR)(c.HAw.APP_DIRECTORY_SEARCH_STARTED, {
-                search_term: n,
+        h = n.useCallback(() => {
+            let e = (0, s.A)();
+            (0, l.TR)(c.HAw.APP_DIRECTORY_SEARCH_STARTED, {
+                search_term: a,
                 category: e.name,
-                current_page: s.ev.HOME,
+                current_page: r.ev.HOME,
                 category_id: e.id
             }), (0, o.JX)({
-                query: n
+                query: a
             })
-        }, [n]);
+        }, [a]);
     return {
-        searchQuery: n,
+        searchQuery: a,
         onSearchTextChange: d,
         onClearSearch: u,
-        onSearchSubmit: p
+        onSearchSubmit: h
     }
 }

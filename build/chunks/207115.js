@@ -1,113 +1,78 @@
 /** chunk id: 207115, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => b
-}), n(896048);
-var r = n(627968),
-    i = n(64700),
-    l = n(311907),
-    a = n(397927),
-    o = n(157559),
-    c = n(969632),
-    s = n(649963),
-    d = n(406704),
+    A: () => f
+});
+var i = n(627968),
+    l = n(64700),
+    a = n(311907),
+    r = n(397927),
+    s = n(157559),
+    o = n(969632),
+    d = n(649963),
+    c = n(406704),
     u = n(576705),
     g = n(486020),
-    p = n(690521),
-    f = n(652215),
-    y = n(985018);
+    A = n(690521),
+    m = n(652215),
+    p = n(985018);
 
-function b(e, t) {
+function f(e, t) {
     let {
         reducedMotion: n
-    } = i.useContext(a.CZY), g = (0, d.Id)(t), b = (0, l.bG)([u.A], () => u.A.can(f.xBc.MANAGE_MESSAGES, t) && g, [t, g]), m = e.reactions.reduce((e, t) => {
-        var n;
-        return (null == (n = t.count_details) ? void 0 : n.vote) != null || null != e.find(e => null != e.id && e.id === t.emoji.id || e.name === t.emoji.name) ? e : [...e, t.emoji]
-    }, []);
-    return !b || null == e.reactions || 0 === e.reactions.length || e.isPoll() && !(0, c.Gh)(e) ? null : (0, r.jsx)(a.Drp, {
+    } = l.useContext(r.CZY), g = (0, c.Id)(t), f = (0, a.bG)([u.A], () => u.A.can(m.xBc.MANAGE_MESSAGES, t) && g, [t, g]), y = e.reactions.reduce((e, t) => t.count_details?.vote != null || null != e.find(e => null != e.id && e.id === t.emoji.id || e.name === t.emoji.name) ? e : [...e, t.emoji], []);
+    return !f || null == e.reactions || 0 === e.reactions.length || e.isPoll() && !(0, o.Gh)(e) ? null : (0, i.jsx)(r.Drp, {
         id: "remove-emoji-reactions",
-        label: y.intl.string(y.t["zx/e4P"]),
+        label: p.intl.string(p.t["zx/e4P"]),
         leadingAccessory: {
             type: "icon",
-            icon: a.FD6
+            icon: r.FD6
         },
         color: "danger",
-        children: m.map(i => {
-            var l, c, d;
-            return (0, r.jsx)(a.Drp, {
-                id: "remove-emoji-reactions-".concat(null != (l = i.name) ? l : i.id),
-                label: null == i.id ? i.name : ":".concat(i.name, ":"),
-                action: n => {
-                    n.shiftKey ? (0, s.Jf)(t.id, e.id, i) : o.A.show({
-                        title: y.intl.string(y.t["73GqTz"]),
-                        body: y.intl.string(y.t.dmy5bn),
-                        confirmText: y.intl.string(y.t.p89ACt),
-                        confirmVariant: "critical-primary",
-                        cancelText: y.intl.string(y.t.gm1Vej),
-                        onConfirm: () => {
-                            (0, s.Jf)(t.id, e.id, i)
-                        }
-                    })
-                },
-                leadingAccessory: {
-                    type: "emoji",
-                    emojiId: i.id,
-                    src: null == i.id ? p.Ay.getURL(null != (c = i.name) ? c : "") : void 0,
-                    animated: i.animated
-                },
-                icon: e => {
-                    var t, l;
-                    return (0, r.jsx)(A, (t = function(e) {
-                        for (var t = 1; t < arguments.length; t++) {
-                            var n = null != arguments[t] ? arguments[t] : {},
-                                r = Object.keys(n);
-                            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                                return Object.getOwnPropertyDescriptor(n, e).enumerable
-                            }))), r.forEach(function(t) {
-                                var r;
-                                r = n[t], t in e ? Object.defineProperty(e, t, {
-                                    value: r,
-                                    enumerable: !0,
-                                    configurable: !0,
-                                    writable: !0
-                                }) : e[t] = r
-                            })
-                        }
-                        return e
-                    }({}, e), l = l = {
-                        reducedMotionEnabled: n.enabled,
-                        emoji: i
-                    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
-                        var n = Object.keys(e);
-                        if (Object.getOwnPropertySymbols) {
-                            var r = Object.getOwnPropertySymbols(e);
-                            n.push.apply(n, r)
-                        }
-                        return n
-                    })(Object(l)).forEach(function(e) {
-                        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(l, e))
-                    }), t))
-                },
-                dontCloseOnActionIfHoldingShiftKey: !0
-            }, null != (d = i.name) ? d : i.id)
-        })
+        children: y.map(l => (0, i.jsx)(r.Drp, {
+            id: `remove-emoji-reactions-${l.name??l.id}`,
+            label: null == l.id ? l.name : `:${l.name}:`,
+            action: n => {
+                n.shiftKey ? (0, d.Jf)(t.id, e.id, l) : s.A.show({
+                    title: p.intl.string(p.t["73GqTz"]),
+                    body: p.intl.string(p.t.dmy5bn),
+                    confirmText: p.intl.string(p.t.p89ACt),
+                    confirmVariant: "critical-primary",
+                    cancelText: p.intl.string(p.t.gm1Vej),
+                    onConfirm: () => {
+                        (0, d.Jf)(t.id, e.id, l)
+                    }
+                })
+            },
+            leadingAccessory: {
+                type: "emoji",
+                emojiId: l.id,
+                src: null == l.id ? A.Ay.getURL(l.name ?? "") : void 0,
+                animated: l.animated
+            },
+            icon: e => (0, i.jsx)(h, {
+                ...e,
+                reducedMotionEnabled: n.enabled,
+                emoji: l
+            }),
+            dontCloseOnActionIfHoldingShiftKey: !0
+        }, l.name ?? l.id))
     })
 }
 
-function A(e) {
-    var t;
+function h(e) {
     let {
-        emoji: n,
-        reducedMotionEnabled: i,
+        emoji: t,
+        reducedMotionEnabled: n,
         className: l = "",
         isFocused: a = !1
     } = e;
-    return (0, r.jsx)("img", {
+    return (0, i.jsx)("img", {
         className: l,
-        src: null != n.id ? g.Ay.getEmojiURL({
-            id: n.id,
-            animated: n.animated && (!i || a),
+        src: null != t.id ? g.Ay.getEmojiURL({
+            id: t.id,
+            animated: t.animated && (!n || a),
             size: 18
-        }) : p.Ay.getURL(null != (t = n.name) ? t : ""),
+        }) : A.Ay.getURL(t.name ?? ""),
         alt: ""
     })
 }

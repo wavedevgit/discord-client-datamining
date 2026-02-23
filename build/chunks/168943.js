@@ -1,8 +1,8 @@
 /** chunk id: 168943, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    L: () => i
+    L: () => s
 });
-let r = (0, n(600975).C)({
+let i = (0, n(600975).C)({
     kind: "user",
     id: "2025-03_toggle_camera_keybind",
     label: "Toggle Camera Keybind",
@@ -18,10 +18,10 @@ let r = (0, n(600975).C)({
     }]
 });
 
-function i() {
+function s() {
     let {
         enabled: e
-    } = r.getCurrentConfig({
+    } = i.getCurrentConfig({
         location: "keybinds"
     }, {
         autoTrackExposure: !1

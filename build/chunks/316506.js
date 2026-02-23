@@ -1,24 +1,24 @@
 /** chunk id: 316506, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => h,
-    u: () => f
-}), n(896048);
-var r = n(627968),
-    i = n(64700),
+    A: () => _,
+    u: () => h
+});
+var i = n(627968),
+    s = n(64700),
     l = n(311907),
-    s = n(397927),
+    r = n(397927),
     a = n(442433),
     o = n(665013),
-    c = n(34457),
-    d = n(642133),
+    d = n(34457),
+    c = n(642133),
     u = n(458334),
-    g = n(927573),
-    m = n(985018),
-    p = n(286420);
+    m = n(927573),
+    g = n(985018),
+    x = n(286420);
 
-function f() {
-    let [e, t] = i.useState(!0);
+function h() {
+    let [e, t] = s.useState(!0);
     return {
         scrolledToTop: e,
         handleScroll: function(e) {
@@ -27,110 +27,79 @@ function f() {
     }
 }
 
-function h(e) {
+function _(e) {
     let {
         guild: t,
-        role: f,
-        selectedSection: h,
-        setSelectedSection: b
-    } = e, x = i.useCallback(e => {
-        b(e)
-    }, [b]), j = (0, l.bG)([d.A], () => {
-        var e;
-        return null == (e = d.A.getRoleMemberCount(t.id)) ? void 0 : e[f.id]
-    }, [f.id, t.id]), _ = (0, c.Oy)(f), O = (0, u.A)(t.id, f);
-    i.useEffect(() => {
-        _ && b(g.T$.PERMISSIONS)
-    }, [_, b]);
-    let v = (0, o.x)(t, f);
-    return (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsxs)("div", {
-            className: p.gn,
-            children: [(0, r.jsx)(s.Text, {
-                className: p.Qw,
+        role: h,
+        selectedSection: _,
+        setSelectedSection: A
+    } = e, p = s.useCallback(e => {
+        A(e)
+    }, [A]), f = (0, l.bG)([c.A], () => c.A.getRoleMemberCount(t.id)?.[h.id], [h.id, t.id]), j = (0, d.Oy)(h), N = (0, u.A)(t.id, h);
+    s.useEffect(() => {
+        j && A(m.T$.PERMISSIONS)
+    }, [j, A]);
+    let E = (0, o.x)(t, h);
+    return (0, i.jsxs)(i.Fragment, {
+        children: [(0, i.jsxs)("div", {
+            className: x.gn,
+            children: [(0, i.jsx)(r.Text, {
+                className: x.Qw,
                 color: "text-strong",
                 variant: "text-md/semibold",
-                children: m.intl.format(m.t.BUdGkE, {
-                    roleName: f.name
+                children: g.intl.format(g.t.BUdGkE, {
+                    roleName: h.name
                 })
-            }), v ? (0, r.jsx)(s.DUT, {
-                className: p.MK,
+            }), E ? (0, i.jsx)(r.DUT, {
+                className: x.MK,
                 onClick: function(e) {
                     (0, a.L3)(e, async () => {
                         let {
                             default: e
                         } = await Promise.resolve().then(n.bind(n, 665013));
-                        return n => {
-                            var i, l;
-                            return (0, r.jsx)(e, (i = function(e) {
-                                for (var t = 1; t < arguments.length; t++) {
-                                    var n = null != arguments[t] ? arguments[t] : {},
-                                        r = Object.keys(n);
-                                    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                                        return Object.getOwnPropertyDescriptor(n, e).enumerable
-                                    }))), r.forEach(function(t) {
-                                        var r;
-                                        r = n[t], t in e ? Object.defineProperty(e, t, {
-                                            value: r,
-                                            enumerable: !0,
-                                            configurable: !0,
-                                            writable: !0
-                                        }) : e[t] = r
-                                    })
-                                }
-                                return e
-                            }({}, n), l = l = {
-                                guild: t,
-                                role: f
-                            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
-                                var n = Object.keys(e);
-                                if (Object.getOwnPropertySymbols) {
-                                    var r = Object.getOwnPropertySymbols(e);
-                                    n.push.apply(n, r)
-                                }
-                                return n
-                            })(Object(l)).forEach(function(e) {
-                                Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
-                            }), i))
-                        }
+                        return n => (0, i.jsx)(e, {
+                            ...n,
+                            guild: t,
+                            role: h
+                        })
                     })
                 },
-                "aria-label": m.intl.string(m.t.PdRCRg),
-                children: (0, r.jsx)(s.jNK, {
+                "aria-label": g.intl.string(g.t.PdRCRg),
+                children: (0, i.jsx)(r.jNK, {
                     size: "md",
                     color: "currentColor"
                 })
             }) : null]
-        }), null != O ? (0, r.jsx)(s.po8, {
-            messageType: s.YCn.WARNING,
-            children: O
-        }) : null, (0, r.jsxs)(s.VQ0, {
-            className: p.$H,
-            "aria-label": m.intl.string(m.t["+1H47t"]),
-            selectedItem: h,
+        }), null != N ? (0, i.jsx)(r.po8, {
+            messageType: r.YCn.WARNING,
+            children: N
+        }) : null, (0, i.jsxs)(r.VQ0, {
+            className: x.$H,
+            "aria-label": g.intl.string(g.t["+1H47t"]),
+            selectedItem: _,
             type: "top",
             look: "brand",
-            onItemSelect: x,
-            children: [(0, r.jsx)(s.VQ0.Item, {
-                className: p.YU,
-                id: g.T$.DISPLAY,
-                disabled: _,
-                children: m.intl.string(m.t.hmdomw)
-            }), (0, r.jsx)(s.VQ0.Item, {
-                className: p.YU,
-                id: g.T$.PERMISSIONS,
-                children: m.intl.string(m.t.WIDE1L)
-            }), (0, r.jsx)(s.VQ0.Item, {
-                className: p.YU,
-                id: g.T$.VERIFICATIONS,
-                disabled: _,
-                children: m.intl.string(m.t["5//Muu"])
-            }), (0, r.jsx)(s.VQ0.Item, {
-                className: p.YU,
-                id: g.T$.MEMBERS,
-                disabled: _,
-                children: _ ? m.intl.string(m.t["kg//+7"]) : m.intl.formatToPlainString(m.t.bHnZWW, {
-                    numMembers: String(j)
+            onItemSelect: p,
+            children: [(0, i.jsx)(r.VQ0.Item, {
+                className: x.YU,
+                id: m.T$.DISPLAY,
+                disabled: j,
+                children: g.intl.string(g.t.hmdomw)
+            }), (0, i.jsx)(r.VQ0.Item, {
+                className: x.YU,
+                id: m.T$.PERMISSIONS,
+                children: g.intl.string(g.t.WIDE1L)
+            }), (0, i.jsx)(r.VQ0.Item, {
+                className: x.YU,
+                id: m.T$.VERIFICATIONS,
+                disabled: j,
+                children: g.intl.string(g.t["5//Muu"])
+            }), (0, i.jsx)(r.VQ0.Item, {
+                className: x.YU,
+                id: m.T$.MEMBERS,
+                disabled: j,
+                children: j ? g.intl.string(g.t["kg//+7"]) : g.intl.formatToPlainString(g.t.bHnZWW, {
+                    numMembers: String(f)
                 })
             })]
         })]

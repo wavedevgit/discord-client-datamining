@@ -13,19 +13,19 @@ function s(e) {
         offset: n,
         totalCount: s,
         pageSize: o,
-        renderPageWrapper: u
-    } = e, c = Math.floor(n / o) + 1, E = r.useCallback(e => {
+        renderPageWrapper: E
+    } = e, u = Math.floor(n / o) + 1, c = r.useCallback(e => {
         t(e - 1)
     }, [t]);
     return (0, l.jsx)("div", {
         className: i.k,
         children: (0, l.jsx)(a.mgR, {
-            currentPage: c,
+            currentPage: u,
             totalCount: s,
             pageSize: o,
-            onPageChange: E,
+            onPageChange: c,
             maxVisiblePages: 5,
-            renderPageWrapper: u
+            renderPageWrapper: E
         })
     })
 }

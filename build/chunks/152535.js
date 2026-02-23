@@ -1,80 +1,81 @@
 /** chunk id: 152535, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => g
+    A: () => p
 });
-var r = n(627968),
-    l = n(64700),
-    i = n(533781),
-    s = n(265872),
+var i = n(627968),
+    s = n(64700),
+    l = n(533781),
+    r = n(265872),
     a = n(688810),
     o = n(384059),
     c = n(421773),
-    u = n(729081),
-    d = n(709562),
-    p = n(376086),
-    h = n(985018);
+    d = n(729081),
+    u = n(709562),
+    h = n(376086),
+    A = n(985018);
 
-function g(e) {
+function p(e) {
     let {
         channel: t,
         themeable: n,
-        whichPopoutIsOpen: g,
-        setWhichPopoutIsOpen: f
+        whichPopoutIsOpen: p,
+        setWhichPopoutIsOpen: g
     } = e, {
         parentAnalyticsLocation: m
-    } = (0, a.Ay)(), b = l.useRef(null), {
-        isHovered: A,
-        setIsHovered: y,
-        onMouseEnter: O,
-        onMouseLeave: j
+    } = (0, a.Ay)(), _ = s.useRef(null), {
+        isHovered: f,
+        setIsHovered: x,
+        onMouseEnter: C,
+        onMouseLeave: E
     } = (0, c.A)(200, 300), {
-        Component: x,
-        play: _,
+        Component: I,
+        play: b,
         events: {
-            onMouseEnter: v,
-            onMouseLeave: E
+            onMouseEnter: N,
+            onMouseLeave: S
         }
-    } = (0, i.T)(), C = l.useCallback(e => {
-        "focus" !== e.type && (O(), v())
-    }, [O, v]), S = l.useCallback(() => {
-        null == g && (j(), E())
-    }, [j, E, g]), I = l.useCallback(() => {
-        (0, o.X)(m, o.O.GIFTING), g === p.P.GIFTING ? (null == f || f(void 0), j()) : (null != g ? (_(), O()) : _(), null == f || f(p.P.GIFTING))
-    }, [O, j, m, _, f, g]);
-    return (0, r.jsx)(s.Y, {
-        targetElementRef: b,
-        shouldShow: A && (g === p.P.GIFTING || null == g) || g === p.P.GIFTING,
-        animation: s.Y.Animation.FADE,
+    } = (0, l.T)(), T = s.useCallback(e => {
+        "focus" !== e.type && (C(), N())
+    }, [C, N]), y = s.useCallback(() => {
+        null == p && (E(), S())
+    }, [E, S, p]), v = s.useCallback(() => {
+        (0, o.X)(m, o.O.GIFTING), p === h.P.GIFTING ? (g?.(void 0), E()) : (null != p ? (b(), C()) : b(), g?.(h.P.GIFTING))
+    }, [C, E, m, b, g, p]);
+    return (0, i.jsx)(r.Y, {
+        targetElementRef: _,
+        shouldShow: f && (p === h.P.GIFTING || null == p) || p === h.P.GIFTING,
+        animation: r.Y.Animation.FADE,
         animationPosition: "top",
         position: "top",
         align: "center",
         spacing: 16,
         onRequestClose: () => {
-            y(!1), null == f || f(void 0)
+            x(!1), g?.(void 0)
         },
         renderPopout: e => {
             let {
                 closePopout: n
             } = e;
-            return (0, r.jsx)(u.A, {
+            return (0, i.jsx)(d.A, {
                 channel: t,
                 closePopout: n,
-                isHovered: A,
-                onMouseEnter: O,
-                onMouseLeave: j
+                isHovered: f,
+                onMouseEnter: C,
+                onMouseLeave: E
             })
         },
-        children: () => (0, r.jsx)(d.l, {
-            ref: b,
+        children: () => (0, i.jsx)(u.l, {
+            ref: _,
             isTrayButton: !0,
             themeable: n,
-            "aria-label": h.intl.string(h.t.PEjaCx),
-            iconComponent: x,
-            onClick: I,
-            onMouseEnter: C,
-            onMouseLeave: S,
-            isActive: A || g === p.P.GIFTING,
-            color: A || g === p.P.GIFTING ? "primaryDark" : void 0
+            "aria-label": A.intl.string(A.t.PEjaCx),
+            iconComponent: I,
+            onClick: v,
+            onMouseEnter: T,
+            onMouseLeave: y,
+            isActive: f || p === h.P.GIFTING,
+            color: f || p === h.P.GIFTING ? "primaryDark" : void 0
         })
     })
 }

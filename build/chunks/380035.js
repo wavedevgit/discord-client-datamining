@@ -1,87 +1,71 @@
-/** chunk id: 380035, original params: t,e,n (module,exports,require) **/
-n.d(e, {
-    default: () => h
+/** chunk id: 380035, original params: t,i,e (module,exports,require) **/
+e.d(i, {
+    default: () => E
 });
-var r = n(627968),
-    i = n(64700),
-    l = n(158954),
-    a = n(311907),
-    s = n(397927),
-    c = n(287809),
-    o = n(975571),
-    u = n(735321),
-    d = n(463259),
-    b = n(384377),
-    f = n(518477),
-    p = n(985018),
-    g = n(22047);
+var n = e(627968),
+    l = e(64700),
+    s = e(158954),
+    r = e(311907),
+    a = e(397927),
+    c = e(287809),
+    d = e(975571),
+    o = e(735321),
+    u = e(463259),
+    x = e(384377),
+    h = e(518477),
+    p = e(985018),
+    b = e(22047);
 
-function x(t) {
+function g(t) {
     let {
-        widget: e,
-        user: n
+        widget: i,
+        user: e
     } = t;
-    return (0, r.jsx)(d.u, {
-        widget: e,
-        user: n,
+    return (0, n.jsx)(u.u, {
+        widget: i,
+        user: e,
         disableInteraction: !0
     })
 }
 
-function h(t) {
+function E(t) {
     let {
-        transitionState: e,
-        widget: n,
-        userId: d,
-        onClose: h,
+        transitionState: i,
+        widget: e,
+        userId: u,
+        onClose: E,
         trackUserProfileEditAction: j
-    } = t, m = i.useCallback(() => {
-        (0, u.qA)(n), j(function(t) {
-            for (var e = 1; e < arguments.length; e++) {
-                var n = null != arguments[e] ? arguments[e] : {},
-                    r = Object.keys(n);
-                "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(t) {
-                    return Object.getOwnPropertyDescriptor(n, t).enumerable
-                }))), r.forEach(function(e) {
-                    var r;
-                    r = n[e], e in t ? Object.defineProperty(t, e, {
-                        value: r,
-                        enumerable: !0,
-                        configurable: !0,
-                        writable: !0
-                    }) : t[e] = r
-                })
-            }
-            return t
-        }({
-            action: "WIDGET_REMOVED"
-        }, n.getProfileEditAnalyticsOptions())), h(), (0, b.XA)(f.jM.WIDGET_REMOVED)
-    }, [n, h, j]), w = (0, a.bG)([c.default], () => c.default.getUser(d));
-    return null == w ? null : (0, r.jsxs)(l.Modal, {
-        transitionState: e,
-        onClose: h,
+    } = t, m = l.useCallback(() => {
+        (0, o.qA)(e), j({
+            action: "WIDGET_REMOVED",
+            ...e.getProfileEditAnalyticsOptions()
+        }), E(), (0, x.XA)(h.jM.WIDGET_REMOVED)
+    }, [e, E, j]), w = (0, r.bG)([c.default], () => c.default.getUser(u));
+    return null == w ? null : (0, n.jsxs)(s.Modal, {
+        transitionState: i,
+        onClose: E,
         title: p.intl.string(p.t.Mm07Yc),
         subtitle: p.intl.format(p.t["x+djI4"], {
-            helpUrl: o.C
+            helpUrl: d.C
         }),
         actions: [{
             variant: "secondary",
             text: p.intl.string(p.t["ETE/oC"]),
-            onClick: h
+            onClick: E
         }, {
             variant: "critical-primary",
             text: p.intl.string(p.t.Mm07Yc),
             onClick: m
         }],
-        children: [(0, r.jsx)("div", {
-            className: g.w,
-            children: (0, r.jsx)(x, {
-                widget: n,
+        children: [(0, n.jsx)("div", {
+            className: b.w,
+            children: (0, n.jsx)(g, {
+                widget: e,
                 user: w
             })
-        }), (0, r.jsx)("div", {
-            className: g.d,
-            children: (0, r.jsx)(s.Text, {
+        }), (0, n.jsx)("div", {
+            className: b.d,
+            children: (0, n.jsx)(a.Text, {
                 color: "text-subtle",
                 variant: "text-sm/normal",
                 children: p.intl.string(p.t.bQNGeT)

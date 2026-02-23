@@ -1,36 +1,36 @@
-/** chunk id: 721127, original params: e,t,a (module,exports,require) **/
-a.d(t, {
-    A: () => l
+/** chunk id: 721127, original params: t,e,n (module,exports,require) **/
+n.d(e, {
+    A: () => A
 });
-var n = a(627968);
-a(64700);
-var i = a(503698),
-    c = a.n(i),
-    o = a(397927),
-    r = a(404374),
-    s = a(468099);
+var i = n(627968);
+n(64700);
+var a = n(503698),
+    o = n.n(a),
+    r = n(397927),
+    s = n(404374),
+    l = n(468099);
 
-function l(e) {
+function A(t) {
     let {
-        text: t,
-        className: a,
-        button: i,
-        reducedRightPadding: l = !1
-    } = e;
-    return (0, n.jsxs)("div", {
-        className: c()(l ? s.wp : s.Ug, a),
-        children: [(0, n.jsxs)("div", {
-            className: s.g9,
-            children: [(0, n.jsx)(o.tvc, {
+        text: e,
+        className: n,
+        button: a,
+        reducedRightPadding: A = !1
+    } = t;
+    return (0, i.jsxs)("div", {
+        className: o()(A ? l.wp : l.Ug, n),
+        children: [(0, i.jsxs)("div", {
+            className: l.g9,
+            children: [(0, i.jsx)(r.tvc, {
                 size: "md",
-                className: s.Kk,
-                color: r.k0.PREMIUM_TIER_2
-            }), (0, n.jsx)(o.Text, {
-                className: s.Qq,
+                className: l.Kk,
+                color: s.k0.PREMIUM_TIER_2
+            }), (0, i.jsx)(r.Text, {
+                className: l.Qq,
                 variant: "text-md/normal",
                 color: "text-strong",
-                children: t
+                children: e
             })]
-        }), i]
+        }), a]
     })
 }

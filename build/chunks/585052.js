@@ -1,30 +1,30 @@
 /** chunk id: 585052, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => A
 });
-var r = n(627968),
-    i = n(64700),
-    l = n(158954),
-    s = n(975571),
-    a = n(809505),
+var i = n(627968),
+    s = n(64700),
+    a = n(158954),
+    r = n(975571),
+    l = n(809505),
     o = n(253932),
     c = n(84373),
     d = n(871930),
     u = n(531525),
     _ = n(652215),
-    p = n(985018);
+    m = n(985018);
 
-function m() {
+function A() {
     let e = (0, c.o)(),
-        t = i.useMemo(() => (0, a.YS)(), []);
-    return (0, r.jsxs)(d.h, {
+        t = s.useMemo(() => (0, l.YS)(), []);
+    return (0, i.jsxs)(d.h, {
         setting: u.H.PRIVACY_DIRECT_MESSAGE_SPAM_FILTER_V2,
-        children: [(0, r.jsx)(d._, {
-            header: p.intl.string(p.t.tiCXaH),
-            description: p.intl.format(p.t.RvjRRI, {
-                appealLink: s.A.getArticleURL(_.MVz.SAFE_DIRECT_MESSAGING)
+        children: [(0, i.jsx)(d._, {
+            header: m.intl.string(m.t.tiCXaH),
+            description: m.intl.format(m.t.RvjRRI, {
+                appealLink: r.A.getArticleURL(_.MVz.SAFE_DIRECT_MESSAGING)
             })
-        }), (0, r.jsx)(l.z6M, {
+        }), (0, i.jsx)(a.z6M, {
             value: e,
             options: t,
             onChange: e => o.he.updateSetting(e)

@@ -1,83 +1,41 @@
 /** chunk id: 522958, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    n: () => d
-}), n(747238), n(896048);
+    n: () => o
+});
 var a = n(627968),
-    l = n(64700),
-    r = n(397927),
-    i = n(147925),
-    s = n(159452);
+    i = n(64700),
+    s = n(397927),
+    l = n(147925),
+    r = n(159452);
 
 function o(e) {
     let {
-        text: t
-    } = e;
-    return (0, a.jsx)("span", {
-        className: s.IR,
-        children: t.split("").map((e, t) => (0, a.jsx)("span", {
-            className: s.ZF,
-            style: {
-                "--custom-letter-index": t
-            },
-            children: e
-        }, t))
-    })
-}
-
-function c(e) {
-    let {
-        text: t
-    } = e;
-    return (0, a.jsx)("span", {
-        className: s.IR,
-        children: "⭐ ".concat(t).split("").map((e, t) => (0, a.jsx)("span", {
-            className: s.EC,
-            style: {
-                "--custom-letter-index": t
-            },
-            children: e
-        }, t))
-    })
-}
-
-function d(e) {
-    let {
         title: t,
         initExpanded: n,
-        highlightMode: d = "none",
-        children: u
-    } = e, [m, p] = l.useState(n), h = l.useCallback(() => {
-        p(!m)
-    }, [m]), x = "root" === d ? "status-warning" : "status-positive", g = e => "migrated" === d ? (0, a.jsx)(r.Text, {
+        highlightMode: o = "none",
+        children: d
+    } = e, [c, u] = i.useState(n), m = i.useCallback(() => {
+        u(!c)
+    }, [c]), h = "migrated" === o || "migrated-root" === o ? void 0 : "status-warning", x = e => (0, a.jsx)(s.Text, {
         variant: e,
-        children: (0, a.jsx)(o, {
-            text: t
-        })
-    }) : "migrated-root" === d ? (0, a.jsx)(r.Text, {
-        variant: e,
-        children: (0, a.jsx)(c, {
-            text: t
-        })
-    }) : (0, a.jsx)(r.Text, {
-        variant: e,
-        color: x,
+        color: h,
         children: t
     });
-    return null == u ? (0, a.jsx)("div", {
-        className: s.NF,
-        children: g("text-md/normal")
+    return null == d ? (0, a.jsx)("div", {
+        className: r.NF,
+        children: x("text-md/normal")
     }) : (0, a.jsxs)("div", {
-        className: s.NF,
-        children: [(0, a.jsxs)(r.DUT, {
-            className: s.jr,
-            onClick: h,
-            children: [g("text-md/bold"), (0, a.jsx)(i.A, {
-                direction: m ? i.A.Directions.DOWN : i.A.Directions.RIGHT,
-                className: s.D
+        className: r.NF,
+        children: [(0, a.jsxs)(s.DUT, {
+            className: r.jr,
+            onClick: m,
+            children: [x("text-md/bold"), (0, a.jsx)(l.A, {
+                direction: c ? l.A.Directions.DOWN : l.A.Directions.RIGHT,
+                className: r.D
             })]
-        }), m && (0, a.jsx)("div", {
-            className: s.m4,
-            children: u
+        }), c && (0, a.jsx)("div", {
+            className: r.m4,
+            children: d
         })]
     })
 }

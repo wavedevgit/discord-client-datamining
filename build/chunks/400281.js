@@ -1,77 +1,77 @@
 /** chunk id: 400281, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => _,
-    j: () => j
+    A: () => j,
+    j: () => f
 });
-var r = n(627968),
-    i = n(64700),
+var i = n(627968),
+    s = n(64700),
     l = n(110259),
-    s = n(397927),
+    r = n(397927),
     a = n(139286),
     o = n(544199),
-    c = n(614692),
-    d = n(893148),
+    d = n(614692),
+    c = n(893148),
     u = n(739929),
-    g = n(584508),
-    m = n(196169),
-    p = n(565447),
-    f = n(346076),
-    h = n(720281),
-    b = n(853922),
-    x = n(980197);
+    m = n(584508),
+    g = n(196169),
+    x = n(565447),
+    h = n(346076),
+    _ = n(720281),
+    A = n(853922),
+    p = n(980197);
 
-function j(e) {
+function f(e) {
     let {
         onboardingMarketing: t,
         onboardingMarketingError: n
-    } = e, i = e => {
+    } = e, s = e => {
         let {
             children: t
         } = e;
-        return (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsx)(s.cGx, {
-                className: x.ts
+        return (0, i.jsxs)(i.Fragment, {
+            children: [(0, i.jsx)(r.cGx, {
+                className: p.ts
             }), t]
         })
-    }, l = (0, r.jsx)(i, {
-        children: (0, r.jsx)(f.A, {})
-    }, b.u.HOW_IT_WORKS), a = (0, r.jsx)(i, {
-        children: (0, r.jsx)(m.A, {})
-    }, b.u.BENEFITS);
-    return null != n || (null == t ? void 0 : t.sections) == null ? (0, r.jsxs)(r.Fragment, {
+    }, l = (0, i.jsx)(s, {
+        children: (0, i.jsx)(h.A, {})
+    }, A.u.HOW_IT_WORKS), a = (0, i.jsx)(s, {
+        children: (0, i.jsx)(g.A, {})
+    }, A.u.BENEFITS);
+    return null != n || t?.sections == null ? (0, i.jsxs)(i.Fragment, {
         children: [l, a]
-    }) : (0, r.jsx)(r.Fragment, {
+    }) : (0, i.jsx)(i.Fragment, {
         children: t.sections.map(e => {
             switch (e.type) {
-                case b.u.HOW_IT_WORKS:
+                case A.u.HOW_IT_WORKS:
                     return l;
-                case b.u.BENEFITS:
+                case A.u.BENEFITS:
                     return a;
-                case b.u.OTHER_CREATORS:
-                    return (0, r.jsx)(i, {
-                        children: (0, r.jsx)(p.A, {
+                case A.u.OTHER_CREATORS:
+                    return (0, i.jsx)(s, {
+                        children: (0, i.jsx)(x.A, {
                             highlightedCreators: e.creators
                         })
-                    }, b.u.OTHER_CREATORS)
+                    }, A.u.OTHER_CREATORS)
             }
         })
     })
 }
 
-function _(e) {
+function j(e) {
     let {
         guild: t
     } = e, n = (0, u.A)(t), {
-        eligibilityLoading: m,
-        eligibilityError: p,
-        eligibility: f
-    } = n, b = (0, c.s)(f), {
-        isLoading: _,
-        error: O,
-        creatorMonetizationOnboardingMarketing: v
-    } = (0, d.A)(t.id);
-    return (i.useEffect(() => {
+        eligibilityLoading: g,
+        eligibilityError: x,
+        eligibility: h
+    } = n, A = (0, d.s)(h), {
+        isLoading: j,
+        error: N,
+        creatorMonetizationOnboardingMarketing: E
+    } = (0, c.A)(t.id);
+    return (s.useEffect(() => {
         (0, o.G)(t.id)
     }, [t.id]), (0, a.A)({
         type: l.ImpressionTypes.PANE,
@@ -80,23 +80,23 @@ function _(e) {
             guild_id: t.id,
             is_owner: n.isGuildOwner,
             is_eligible: n.eligibleForMonetization,
-            ineligible_reasons: b
+            ineligible_reasons: A
         }
     }, {
-        disableTrack: null == t.id || null == f
-    }), m || null == f || _) ? (0, r.jsx)(s.y$y, {}) : f.actionRequired ? (0, r.jsx)(h.A, {
+        disableTrack: null == t.id || null == h
+    }), g || null == h || j) ? (0, i.jsx)(r.y$y, {}) : h.actionRequired ? (0, i.jsx)(_.A, {
         guild: t
-    }) : null != p ? (0, r.jsx)(s.wx6, {
+    }) : null != x ? (0, i.jsx)(r.wx6, {
         type: "critical",
-        children: p.message
-    }) : (0, r.jsxs)("div", {
-        className: x.kL,
-        children: [(0, r.jsx)(g.A, {
+        children: x.message
+    }) : (0, i.jsxs)("div", {
+        className: p.kL,
+        children: [(0, i.jsx)(m.A, {
             guild: t,
             monetizationEligibility: n
-        }), (0, r.jsx)(j, {
-            onboardingMarketing: v,
-            onboardingMarketingError: O
+        }), (0, i.jsx)(f, {
+            onboardingMarketing: E,
+            onboardingMarketingError: N
         })]
     })
 }

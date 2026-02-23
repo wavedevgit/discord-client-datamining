@@ -1,8 +1,8 @@
 /** chunk id: 527815, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    t: () => r
+    t: () => i
 });
 
-function r(e) {
+function i(e) {
     e()
 }

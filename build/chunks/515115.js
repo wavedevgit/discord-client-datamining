@@ -1,22 +1,22 @@
-/** chunk id: 515115, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    L: () => s
+/** chunk id: 515115, original params: e,t,l (module,exports,require) **/
+l.d(t, {
+    L: () => a
 });
-var l = n(397927),
-    r = n(713654),
-    i = n(9448);
+var n = l(397927),
+    s = l(713654),
+    i = l(9448);
 
-function s(e, t) {
-    let n, s;
+function a(e, t) {
+    let l, a;
     if (null == e) return null;
-    let a = (0, i.oF)(e);
-    if (null != a) n = l.BT6, s = a;
+    let r = (0, i.oF)(e);
+    if (null != r) l = n.BT6, a = r;
     else {
         if (null == t) return null;
-        n = (0, r._U)(t.type), s = t.name
+        l = (0, s._U)(t.type), a = t.name
     }
     return {
-        IconComponent: n,
-        locationName: s
+        IconComponent: l,
+        locationName: a
     }
 }

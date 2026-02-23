@@ -2,36 +2,36 @@
 "use strict";
 t.d(r, {
     default: () => p
-}), t(896048), t(693327), t(554719), t(680155), t(323874), t(14289), t(35956);
-var n = t(627968),
+}), t(323874), t(14289), t(35956);
+var s = t(627968),
     o = t(64700),
-    s = t(158954),
-    i = t(414121),
+    i = t(158954),
+    n = t(414121),
     a = t(985018),
-    l = t(194536);
-let c = [],
+    c = t(194536);
+let l = [],
     p = function(e) {
         let {
             transitionState: r,
             onClose: t,
             questId: p
-        } = e, u = o.useMemo(() => {
-            let e = new URL("".concat(window.location.origin, "/quests/").concat(p));
+        } = e, d = o.useMemo(() => {
+            let e = new URL(`${window.location.origin}/quests/${p}`);
             return e.searchParams.append("referrer_id", "quest_home_qr_code"), e.toString()
         }, [p]);
-        return (0, n.jsx)(s.Modal, {
-            actions: c,
+        return (0, s.jsx)(i.Modal, {
+            actions: l,
             onClose: t,
             size: "md",
             subtitle: a.intl.string(a.t.bBTjR9),
             title: a.intl.string(a.t.g3jrBu),
             transitionState: r,
-            children: (0, n.jsx)("div", {
-                className: l.m,
-                children: (0, n.jsx)(i.Lx, {
+            children: (0, s.jsx)("div", {
+                className: c.m,
+                children: (0, s.jsx)(n.Lx, {
                     size: 200,
-                    text: u,
-                    overlaySize: i.Zs.SIZE_40
+                    text: d,
+                    overlaySize: n.Zs.SIZE_40
                 })
             })
         })

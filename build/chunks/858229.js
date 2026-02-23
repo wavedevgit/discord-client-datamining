@@ -1,27 +1,27 @@
 /** chunk id: 858229, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => c
-}), n(896048);
-var r = n(627968),
-    i = n(64700),
+    A: () => d
+});
+var i = n(627968),
+    s = n(64700),
     l = n(397927),
-    s = n(391958),
+    r = n(391958),
     a = n(985018),
     o = n(816925);
 
-function c(e) {
+function d(e) {
     let {
         onChange: t,
         initialValue: n,
-        maxWordCount: c,
-        collapsed: d = !1
-    } = e, [u, g] = i.useState(!d);
-    return (0, r.jsx)(l.Nt8, {
+        maxWordCount: d,
+        collapsed: c = !1
+    } = e, [u, m] = s.useState(!c);
+    return (0, i.jsx)(l.Nt8, {
         isExpanded: u,
-        collapsibleContent: (0, r.jsx)(s.A, {
+        collapsibleContent: (0, i.jsx)(r.A, {
             onChangeText: t,
-            maxWordCount: c,
+            maxWordCount: d,
             className: o.ft,
             textAreaClassName: o.cC,
             subtitleText: a.intl.formatToMarkdownString(a.t.qm7UZ8, {}),
@@ -32,20 +32,20 @@ function c(e) {
             let {
                 onClick: t
             } = e;
-            return (0, r.jsx)(l.DUT, {
+            return (0, i.jsx)(l.DUT, {
                 onClick: e => {
-                    g(!u), t(e)
+                    m(!u), t(e)
                 },
-                children: (0, r.jsxs)("div", {
+                children: (0, i.jsxs)("div", {
                     className: o.wx,
-                    children: [(0, r.jsx)(l.Heading, {
+                    children: [(0, i.jsx)(l.Heading, {
                         variant: "text-sm/medium",
                         children: a.intl.string(a.t.lbE2Nm)
-                    }), u ? (0, r.jsx)(l.tN5, {
+                    }), u ? (0, i.jsx)(l.tN5, {
                         size: "md",
                         color: "currentColor",
                         className: o.UE
-                    }) : (0, r.jsx)(l.abt, {
+                    }) : (0, i.jsx)(l.abt, {
                         size: "md",
                         color: "currentColor",
                         className: o.UE

@@ -1,78 +1,72 @@
 /** chunk id: 439156, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => y
+    A: () => x
 });
-var r = n(627968),
-    l = n(64700),
-    i = n(503698),
-    s = n.n(i),
+var i = n(627968),
+    s = n(64700),
+    l = n(503698),
+    r = n.n(l),
     a = n(435371),
     o = n(732955),
     c = n(397927),
-    u = n(470934),
-    d = n(898190),
-    p = n(998418),
-    h = n(220628),
-    g = n(933337),
-    f = n(568065),
+    d = n(470934),
+    u = n(898190),
+    h = n(998418),
+    A = n(220628),
+    p = n(933337),
+    g = n(568065),
     m = n(333354),
-    b = n(985018),
-    A = n(294590);
+    _ = n(985018),
+    f = n(294590);
 
-function y(e) {
-    var t, n;
+function x(e) {
     let {
-        guildId: i,
-        powerup: y,
-        compact: O,
-        iconSize: j,
-        size: x,
-        grow: _,
-        className: v,
-        onError: E
+        guildId: t,
+        powerup: n,
+        compact: l,
+        iconSize: x,
+        size: C,
+        grow: E,
+        className: I,
+        onError: b
     } = e, {
-        onActivate: C,
+        onActivate: N,
         isLoading: S,
-        error: I
-    } = (0, h.A)(i, y), {
-        isLoading: N,
         error: T
-    } = (0, d.A)(i, y), P = (0, g.A)(i, y), w = (0, p.Ay)(i, y), R = w.type !== f.b_.INACTIVE, {
-        disabled: D,
-        reason: L
-    } = (0, u.A)(i, y, R), M = null != L ? {
+    } = (0, A.A)(t, n), {
+        isLoading: y,
+        error: v
+    } = (0, u.A)(t, n), j = (0, p.A)(t, n), R = (0, h.Ay)(t, n), O = R.type !== g.b_.INACTIVE, {
+        disabled: L,
+        reason: M
+    } = (0, d.A)(t, n, O), D = null != M ? {
         title: null,
-        body: L
-    } : function(e, t) {
-        if (e.type === f.b_.LEVEL_ACTIVATED) {
-            var n, r;
-            return {
-                title: b.intl.string(m.default["9oYuvb"]),
-                body: b.intl.formatToPlainString(m.default.WRRYUT, {
-                    perkName: null != (n = null == (r = e.sourcePowerup) ? void 0 : r.title) ? n : b.intl.string(b.t.BfF6ED)
-                })
-            }
-        }
-        return e.type === f.b_.POWERUP_ACTIVATED ? {
-            title: b.intl.string(m.default.TZsu1U),
-            body: b.intl.formatToPlainString(m.default["5HQUzD"], {
-                boostCount: t.cost
-            })
-        } : null
-    }(w, y);
-    return l.useEffect(() => {
-        null == E || E(null != I ? I : T)
-    }, [I, T, E]), (0, r.jsx)(a.un, {
-        body: null != (t = null == M ? void 0 : M.body) ? t : "",
-        title: null != (n = null == M ? void 0 : M.title) ? n : void 0,
-        shouldShow: null != M,
+        body: M
+    } : R.type === g.b_.LEVEL_ACTIVATED ? {
+        title: _.intl.string(m.default["9oYuvb"]),
+        body: _.intl.formatToPlainString(m.default.WRRYUT, {
+            perkName: R.sourcePowerup?.title ?? _.intl.string(_.t.BfF6ED)
+        })
+    } : R.type === g.b_.POWERUP_ACTIVATED ? {
+        title: _.intl.string(m.default.TZsu1U),
+        body: _.intl.formatToPlainString(m.default["5HQUzD"], {
+            boostCount: n.cost
+        })
+    } : null;
+    return s.useEffect(() => {
+        b?.(T ?? v)
+    }, [T, v, b]), (0, i.jsx)(a.un, {
+        body: D?.body ?? "",
+        title: D?.title ?? void 0,
+        shouldShow: null != D,
         delay: 100,
-        "aria-label": null != L ? L : R ? b.intl.string(m.default.TZsu1U) : void 0,
-        children: (0, r.jsx)("div", {
-            className: s()(A.zr, {
-                [A._o]: _,
-                [A.nB]: !_
-            }, v),
+        "aria-label": null != M ? M : O ? _.intl.string(m.default.TZsu1U) : void 0,
+        children: (0, i.jsx)("div", {
+            className: r()(f.zr, {
+                [f._o]: E,
+                [f.nB]: !E
+            }, I),
             children: (() => {
                 let {
                     text: e,
@@ -81,64 +75,48 @@ function y(e) {
                     let {
                         cost: t,
                         isActive: n,
-                        compact: l,
-                        iconSize: i
-                    } = e, s = null != i ? i : "sm", a = n ? c.x8N : c._Jp;
-                    return l ? {
+                        compact: s,
+                        iconSize: l
+                    } = e, r = l ?? "sm", a = n ? c.x8N : c._Jp;
+                    return s ? {
                         text: t.toString(),
                         icon: a
                     } : {
-                        text: b.intl.format(n ? m.default.uzQpQd : m.default.ad2Mfj, {
+                        text: _.intl.format(n ? m.default.uzQpQd : m.default.ad2Mfj, {
                             boostCount: t,
-                            dotHook: () => (0, r.jsx)("span", {
-                                className: A.Om,
+                            dotHook: () => (0, i.jsx)("span", {
+                                className: f.Om,
                                 children: "•"
                             }),
-                            boostIconHook: () => (0, r.jsx)(a, {
-                                size: s,
+                            boostIconHook: () => (0, i.jsx)(a, {
+                                size: r,
                                 color: "currentColor",
-                                className: A.$J
+                                className: f.$J
                             })
                         })
                     }
                 }({
-                    cost: y.cost,
-                    isActive: R,
-                    compact: O,
-                    iconSize: j
+                    cost: n.cost,
+                    isActive: O,
+                    compact: l,
+                    iconSize: x
                 });
-                return (0, r.jsx)(o.$nd, function(e) {
-                    for (var t = 1; t < arguments.length; t++) {
-                        var n = null != arguments[t] ? arguments[t] : {},
-                            r = Object.keys(n);
-                        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                            return Object.getOwnPropertyDescriptor(n, e).enumerable
-                        }))), r.forEach(function(t) {
-                            var r;
-                            r = n[t], t in e ? Object.defineProperty(e, t, {
-                                value: r,
-                                enumerable: !0,
-                                configurable: !0,
-                                writable: !0
-                            }) : e[t] = r
-                        })
-                    }
-                    return e
-                }({
-                    variant: R ? "secondary" : "primary",
-                    "aria-label": b.intl.string(R ? m.default.TZsu1U : m.default.gSxlHf),
-                    disabled: D,
+                return (0, i.jsx)(o.$nd, {
+                    variant: O ? "secondary" : "primary",
+                    "aria-label": _.intl.string(O ? m.default.TZsu1U : m.default.gSxlHf),
+                    disabled: L,
                     onClick: e => {
-                        e.stopPropagation(), R ? P() : C()
+                        e.stopPropagation(), O ? j() : N()
                     },
-                    loading: S || N,
-                    fullWidth: _,
-                    size: null != x ? x : O ? "md" : void 0,
+                    loading: S || y,
+                    fullWidth: E,
+                    size: C ?? (l ? "md" : void 0),
                     text: e,
-                    minWidth: 0
-                }, O ? {
-                    icon: t
-                } : {}))
+                    minWidth: 0,
+                    ...l ? {
+                        icon: t
+                    } : {}
+                })
             })()
         })
     })

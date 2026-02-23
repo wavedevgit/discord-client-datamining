@@ -1,11 +1,11 @@
-/** chunk id: 522238, original params: e,t,n (module,exports,require) **/
+/** chunk id: 522238, original params: t,e,n (module,exports,require) **/
 "use strict";
-n.d(t, {
-    openMFAModal: () => a
+n.d(e, {
+    openMFAModal: () => i
 }), n(205816);
 var r = n(533925),
-    o = n(611248);
+    a = n(611248);
 
-function a(e, t, a) {
-    e.methods = e.methods.filter(e => Object.hasOwn(o.e, e.type)), n(720353).a(e, e => (0, r.s0)(e, t), a)
+function i(t, e, i) {
+    t.methods = t.methods.filter(t => Object.hasOwn(a.e, t.type)), n(720353).a(t, t => (0, r.s0)(t, e), i)
 }

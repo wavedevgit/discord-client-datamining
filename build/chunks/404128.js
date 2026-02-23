@@ -1,144 +1,101 @@
-/** chunk id: 404128, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    default: () => j
+/** chunk id: 404128, original params: a,e,i (module,exports,require) **/
+i.d(e, {
+    default: () => p
 });
-var r = n(627968);
-n(64700);
-var a = n(503698),
-    i = n.n(a),
-    l = n(311907),
-    o = n(990078),
-    s = n(397927),
-    d = n(29086),
-    c = n(581781),
-    u = n(71393),
-    b = n(287809),
-    f = n(685073),
-    g = n(514661),
-    p = n(985018),
-    y = n(583970),
-    m = n(581298);
+var n = i(627968);
+i(64700);
+var t = i(503698),
+    l = i.n(t),
+    d = i(311907),
+    s = i(990078),
+    r = i(397927),
+    o = i(29086),
+    g = i(581781),
+    c = i(71393),
+    u = i(287809),
+    _ = i(685073),
+    f = i(514661),
+    m = i(985018),
+    b = i(583970),
+    h = i(581298);
 
-function j(e) {
-    var t, n, a, j;
+function p(a) {
     let {
-        guildId: O
-    } = e, _ = function(e, t) {
-        if (null == e) return {};
-        var n, r, a, i = {};
-        if ("u" > typeof Reflect && Reflect.ownKeys) {
-            for (a = 0, n = Reflect.ownKeys(e); a < n.length; a++) r = n[a], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
-            return i
-        }
-        if (i = function(e, t) {
-                if (null == e) return {};
-                var n, r, a = {},
-                    i = Object.getOwnPropertyNames(e);
-                for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n]);
-                return a
-            }(e, t), Object.getOwnPropertySymbols)
-            for (a = 0, n = Object.getOwnPropertySymbols(e); a < n.length; a++) r = n[a], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
-        return i
-    }(e, ["guildId"]), h = (0, l.bG)([u.A], () => u.A.getGuild(O)), v = (0, l.bG)([b.default], () => {
-        var e;
-        let t = null == (e = b.default.getCurrentUser()) ? void 0 : e.primaryGuild;
-        return (null == t ? void 0 : t.identityGuildId) === O && (null == t ? void 0 : t.identityEnabled) === !0
-    }, [O]), {
+        guildId: e,
+        ...i
+    } = a, t = (0, d.bG)([c.A], () => c.A.getGuild(e)), p = (0, d.bG)([u.default], () => {
+        let a = u.default.getCurrentUser()?.primaryGuild;
+        return a?.identityGuildId === e && a?.identityEnabled === !0
+    }, [e]), {
         isAdopting: x,
         onAdoptTag: C,
-        onEditProfile: w
-    } = (0, g.A)(O, _.onClose);
-    if (null != h && (0, f.Rg)(h) && (0, f.q0)(h)) return (0, r.jsxs)(s.EOs, (a = function(e) {
-        for (var t = 1; t < arguments.length; t++) {
-            var n = null != arguments[t] ? arguments[t] : {},
-                r = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                return Object.getOwnPropertyDescriptor(n, e).enumerable
-            }))), r.forEach(function(t) {
-                var r;
-                r = n[t], t in e ? Object.defineProperty(e, t, {
-                    value: r,
-                    enumerable: !0,
-                    configurable: !0,
-                    writable: !0
-                }) : e[t] = r
-            })
-        }
-        return e
-    }({
+        onEditProfile: j
+    } = (0, f.A)(e, i.onClose);
+    if (null != t && (0, _.Rg)(t) && (0, _.q0)(t)) return (0, n.jsxs)(r.EOs, {
         "data-migration-pending": !0,
-        className: m.yl,
-        size: s.rIJ.DYNAMIC
-    }, _), j = j = {
+        className: h.yl,
+        size: r.rIJ.DYNAMIC,
+        ...i,
         parentComponent: "GuildTagAdoptModal",
-        children: [(0, r.jsxs)(s.$mQ, {
+        children: [(0, n.jsxs)(r.$mQ, {
             "data-migration-pending": !0,
-            className: m.jE,
+            className: h.jE,
             scrollbarType: "none",
-            children: [(0, r.jsx)("div", {
-                className: m.X6,
-                children: (0, r.jsxs)("div", {
-                    className: m.kb,
-                    children: [(0, r.jsxs)("div", {
-                        className: m.N1,
-                        children: [(0, r.jsx)(s.Heading, {
+            children: [(0, n.jsx)("div", {
+                className: h.X6,
+                children: (0, n.jsxs)("div", {
+                    className: h.kb,
+                    children: [(0, n.jsxs)("div", {
+                        className: h.N1,
+                        children: [(0, n.jsx)(r.Heading, {
                             variant: "heading-lg/bold",
-                            children: p.intl.string(y.default.OvKPi0)
-                        }), (0, r.jsx)(s.Text, {
+                            children: m.intl.string(b.default.OvKPi0)
+                        }), (0, n.jsx)(r.Text, {
                             variant: "text-md/normal",
-                            children: p.intl.string(y.default.kHxfDw)
+                            children: m.intl.string(b.default.kHxfDw)
                         })]
-                    }), (0, r.jsx)(c.A, {
-                        className: m._S,
-                        guildId: h.id,
-                        guildName: h.name,
-                        guildIcon: h.icon,
+                    }), (0, n.jsx)(g.A, {
+                        className: h._S,
+                        guildId: t.id,
+                        guildName: t.name,
+                        guildIcon: t.icon,
                         guildIconSize: 32,
-                        guildTag: h.profile.tag,
-                        guildBadge: null != (t = h.profile.badge) ? t : ""
-                    }), (0, r.jsxs)("div", {
-                        className: m.UD,
-                        children: [(0, r.jsx)(o.m, {
-                            text: p.intl.string(y.default.WlENZt),
-                            shouldShow: v,
-                            children: (0, r.jsx)(s.Button, {
+                        guildTag: t.profile.tag,
+                        guildBadge: t.profile.badge ?? ""
+                    }), (0, n.jsxs)("div", {
+                        className: h.UD,
+                        children: [(0, n.jsx)(s.m, {
+                            text: m.intl.string(b.default.WlENZt),
+                            shouldShow: p,
+                            children: (0, n.jsx)(r.Button, {
                                 variant: "primary",
-                                text: p.intl.string(p.t.jwEaiX),
+                                text: m.intl.string(m.t.jwEaiX),
                                 fullWidth: !0,
                                 onClick: C,
                                 loading: x,
-                                disabled: v
+                                disabled: p
                             })
-                        }), (0, r.jsx)(s.Button, {
+                        }), (0, n.jsx)(r.Button, {
                             variant: "secondary",
-                            text: p.intl.string(p.t.s5vZlQ),
+                            text: m.intl.string(m.t.s5vZlQ),
                             fullWidth: !0,
-                            onClick: w
+                            onClick: j
                         })]
                     })]
                 })
-            }), (0, r.jsx)("div", {
-                className: i()(m.X6, m.pG),
-                children: (0, r.jsx)(d.A, {
-                    className: m.uJ,
-                    guildId: h.id,
-                    tag: h.profile.tag,
-                    badge: null != (n = h.profile.badge) ? n : ""
+            }), (0, n.jsx)("div", {
+                className: l()(h.X6, h.pG),
+                children: (0, n.jsx)(o.A, {
+                    className: h.uJ,
+                    guildId: t.id,
+                    tag: t.profile.tag,
+                    badge: t.profile.badge ?? ""
                 })
             })]
-        }), (0, r.jsx)(s.s_y, {
+        }), (0, n.jsx)(r.s_y, {
             "data-migration-pending": !0,
-            className: m.VN,
-            onClick: _.onClose
+            className: h.VN,
+            onClick: i.onClose
         })]
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(j)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
-        }
-        return n
-    })(Object(j)).forEach(function(e) {
-        Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(j, e))
-    }), a))
+    })
 }

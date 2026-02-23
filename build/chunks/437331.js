@@ -1,49 +1,48 @@
 /** chunk id: 437331, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    V: () => D
+    V: () => R
 });
 var l = n(627968),
-    r = n(64700),
-    i = n(311907),
+    i = n(64700),
+    r = n(311907),
     s = n(397927),
     a = n(47167),
-    o = n(713654),
-    u = n(941971),
-    c = n(309632),
-    d = n(734057),
+    u = n(713654),
+    o = n(941971),
+    d = n(309632),
+    c = n(734057),
     h = n(71393),
     g = n(290863),
-    f = n(222823),
-    p = n(287809),
-    I = n(914853),
-    m = n(1404),
-    E = n(102983),
-    A = n(578093),
-    y = n(912156),
-    S = n(67103),
-    v = n(576420),
-    O = n(549866),
-    b = n(336148),
-    N = n(783346);
+    I = n(222823),
+    A = n(287809),
+    f = n(914853),
+    E = n(1404),
+    m = n(102983),
+    S = n(578093),
+    p = n(912156),
+    N = n(67103),
+    T = n(953013),
+    _ = n(576420),
+    C = n(336148),
+    y = n(783346);
 
-function T(e) {
+function x(e) {
     return (0, l.jsx)(s.hVq, {
         count: e
     })
 }
 
-function _(e) {
-    var t, n;
+function M(e) {
     let {
-        channelId: r,
-        listItemId: i,
-        mentionCount: o,
-        unread: c
-    } = e, h = null != (t = (0, a.Ay)(null != (n = d.A.getChannel(r)) ? n : void 0, !0)) ? t : "???";
-    return (0, l.jsx)(m.D, {
-        listItemId: i,
-        leftIndicator: (0, l.jsx)(u.A, {
-            unread: c
+        channelId: t,
+        listItemId: n,
+        mentionCount: i,
+        unread: r
+    } = e, u = (0, a.Ay)(c.A.getChannel(t) ?? void 0, !0) ?? "???";
+    return (0, l.jsx)(E.D, {
+        listItemId: n,
+        leftIndicator: (0, l.jsx)(o.A, {
+            unread: r
         }),
         avatar: (0, l.jsx)(s.euF, {
             src: void 0,
@@ -52,220 +51,218 @@ function _(e) {
         }),
         primaryText: (0, l.jsx)("span", {
             children: (0, l.jsx)(s.Text, {
-                className: N.Xh,
+                className: y.Xh,
                 variant: "text-sm/medium",
                 color: "text-muted",
-                children: h
+                children: u
             })
         }),
-        rightActions: () => o > 0 ? T(o) : null
+        rightActions: () => i > 0 ? x(i) : null
     })
 }
 
-function C(e) {
-    var t;
+function v(e) {
     let {
-        channel: n,
-        listItemId: o,
-        mentionCount: d,
-        isMentionLowImportance: h,
-        unread: f,
-        onPrimaryAction: y,
-        onContextMenu: v
-    } = e, _ = n.id, C = null != (t = (0, a.Ay)(n, !1)) ? t : "???", x = (0, b.X)(n), D = (0, c.A)(n, !1), {
-        user: M,
-        status: j,
-        isMobile: w
-    } = (0, i.cf)([p.default, g.A], () => {
-        if (!n.isDM()) return {
+        channel: t,
+        listItemId: n,
+        mentionCount: u,
+        isMentionLowImportance: c,
+        unread: h,
+        onPrimaryAction: I,
+        onContextMenu: p
+    } = e, _ = t.id, M = (0, a.Ay)(t, !1) ?? "???", v = (0, C.X6)(t), D = (0, d.A)(t, !1), {
+        user: R,
+        status: U,
+        isMobile: O
+    } = (0, r.cf)([A.default, g.A], () => {
+        if (!t.isDM()) return {
             user: null,
             status: null,
             isMobile: !1
         };
-        let e = n.getRecipientId(),
-            t = null != e ? p.default.getUser(e) : null;
+        let e = t.getRecipientId(),
+            n = null != e ? A.default.getUser(e) : null;
         return {
-            user: t,
+            user: n,
             status: null != e ? g.A.getStatus(e) : null,
             isMobile: null != e && g.A.isMobileOnline(e)
         }
-    }, [n]), P = r.useCallback(e => {
-        let t = n.isMultiUserDM() ? S.K.GROUP_DM_CHANNEL : S.K.DM_CHANNEL;
-        null == v || v({
-            type: t,
+    }, [t]), G = i.useCallback(e => {
+        let n = t.isMultiUserDM() ? N.K.GROUP_DM_CHANNEL : N.K.DM_CHANNEL;
+        p?.({
+            type: n,
             event: e,
-            channel: n,
-            user: null != M ? M : void 0
+            channel: t,
+            user: R ?? void 0
         })
-    }, [n, v, M]), R = n.isMultiUserDM() || n.isPrivate() && n.recipients.length >= 2, U = r.useCallback(() => {
-        null == y || y({
-            type: S.c.OPEN_TEXT_CHAT_CHANNEL,
+    }, [t, p, R]), F = t.isMultiUserDM() || t.isPrivate() && t.recipients.length >= 2, w = i.useCallback(() => {
+        I?.({
+            type: N.c.OPEN_TEXT_CHAT_CHANNEL,
             channelId: _,
             guildId: null
         })
-    }, [_, y]);
-    return (0, l.jsx)(m.D, {
-        listItemId: o,
-        leftIndicator: (0, l.jsx)(u.A, {
-            unread: f
+    }, [_, I]);
+    return (0, l.jsx)(E.D, {
+        listItemId: n,
+        leftIndicator: (0, l.jsx)(o.A, {
+            unread: h
         }),
-        onClick: U,
-        onContextMenu: P,
-        avatar: (0, l.jsx)(E.h, {
-            channel: n,
-            user: M,
+        onClick: w,
+        onContextMenu: G,
+        avatar: (0, l.jsx)(m.h, {
+            channel: t,
+            user: R,
             "aria-hidden": !0,
             size: s._3J.SIZE_32,
-            status: j,
-            isMobile: w,
-            isTyping: x,
-            mentionCount: d,
-            isMentionLowImportance: h
+            status: U,
+            isMobile: O,
+            isTyping: v,
+            mentionCount: u,
+            isMentionLowImportance: c
         }),
         primaryText: (0, l.jsx)("div", {
-            className: N.QV,
+            className: y.QV,
             children: (0, l.jsx)(s.Text, {
-                className: N.Xh,
+                className: y.Xh,
                 variant: "text-sm/medium",
-                color: f || d > 0 ? "text-strong" : "text-muted",
-                children: C
+                color: h || u > 0 ? "text-strong" : "text-muted",
+                children: M
             })
         }),
         secondaryText: null != D ? (0, l.jsx)(s.Text, {
             variant: "text-xs/normal",
             color: "text-muted",
-            children: (0, l.jsx)(O.b, {
-                channel: n,
+            children: (0, l.jsx)(T.o, {
+                channel: t,
                 message: D
             })
         }) : null,
         rightActions: e => (0, l.jsxs)(l.Fragment, {
-            children: [d > 0 ? T(d) : null, e && R ? (0, l.jsx)(A.j, {
-                tab: I.x.MESSAGES,
+            children: [u > 0 ? x(u) : null, e && F ? (0, l.jsx)(S.j, {
+                tab: f.x.MESSAGES,
                 targetId: _
             }) : null]
         })
     })
 }
 
-function x(e) {
-    var t, n, d;
-    let g, {
-            channel: f,
-            listItemId: p,
-            mentionCount: E,
-            unread: v,
-            recentlyAddedTimestampMs: _,
-            onPrimaryAction: C,
-            onContextMenu: x
+function D(e) {
+    let t, {
+            channel: n,
+            listItemId: c,
+            mentionCount: g,
+            unread: I,
+            recentlyAddedTimestampMs: A,
+            onPrimaryAction: m,
+            onContextMenu: _
         } = e,
-        D = f.id,
-        M = null != (t = null == (d = f.getGuildId) ? void 0 : d.call(f)) ? t : null,
-        j = (0, i.bG)([h.A], () => {
-            var e;
-            return null != M && null != (e = h.A.getGuild(M)) ? e : null
-        }, [M]),
-        w = null != (n = (0, a.Ay)(f, !1)) ? n : "???",
-        P = (0, b.X)(f),
-        R = (0, c.A)(f, !1),
-        U = (0, s.rdh)(s.LU0.colors.TEXT_STRONG),
-        G = (0, s.rdh)(s.LU0.colors.TEXT_MUTED),
-        L = v || E > 0 ? "text-strong" : "text-muted",
-        k = v || E > 0 ? U : G,
-        F = r.useCallback(e => {
-            null == x || x({
-                type: S.K.GUILD_TEXT_CHANNEL,
+        M = n.id,
+        v = n.getGuildId?.() ?? null,
+        D = (0, r.bG)([h.A], () => null != v ? h.A.getGuild(v) ?? null : null, [v]),
+        R = (0, a.Ay)(n, !1) ?? "???",
+        U = (0, C.X6)(n),
+        O = (0, C.DL)(n),
+        G = (0, d.A)(n, !1),
+        F = (0, s.rdh)(s.LU0.colors.TEXT_STRONG),
+        w = (0, s.rdh)(s.LU0.colors.TEXT_MUTED),
+        L = I || g > 0 ? "text-strong" : "text-muted",
+        b = I || g > 0 ? F : w,
+        k = i.useCallback(e => {
+            _?.({
+                type: N.K.GUILD_TEXT_CHANNEL,
                 event: e,
-                channel: f,
-                guild: j
+                channel: n,
+                guild: D
             })
-        }, [f, j, x]),
-        V = r.useCallback(() => {
-            null == C || C({
-                type: S.c.OPEN_TEXT_CHAT_CHANNEL,
-                channelId: D,
-                guildId: M
+        }, [n, D, _]),
+        P = i.useCallback(() => {
+            m?.({
+                type: N.c.OPEN_TEXT_CHAT_CHANNEL,
+                channelId: M,
+                guildId: v
             })
-        }, [D, M, C]);
-    return (0, l.jsx)(m.D, {
-        listItemId: p,
-        recentlyAddedTimestampMs: _,
-        leftIndicator: (0, l.jsx)(u.A, {
-            unread: v
+        }, [M, v, m]);
+    return (0, l.jsx)(E.D, {
+        listItemId: c,
+        recentlyAddedTimestampMs: A,
+        leftIndicator: (0, l.jsx)(o.A, {
+            unread: I
         }),
-        onClick: V,
-        onContextMenu: F,
-        avatar: (0, l.jsx)(y.A, {
-            channel: f,
-            guild: null != j ? j : void 0,
-            size: y.Q.SMALL_32,
-            isTyping: P
+        onClick: P,
+        onContextMenu: k,
+        avatar: (0, l.jsx)(p.A, {
+            channel: n,
+            guild: D ?? void 0,
+            size: p.Q.SMALL_32,
+            isTyping: U,
+            typingFillColor: O ?? void 0
         }),
         primaryText: (0, l.jsxs)("div", {
-            className: N.QV,
-            children: [null == (g = (0, o.gU)(f, j)) ? null : (0, l.jsx)(g, {
-                color: k.hex(),
+            className: y.QV,
+            children: [null == (t = (0, u.gU)(n, D)) ? null : (0, l.jsx)(t, {
+                color: b.hex(),
                 size: "xxs",
-                className: N.p
+                className: y.p
             }), (0, l.jsx)(s.Text, {
-                className: N.Xh,
+                className: y.Xh,
                 variant: "text-sm/medium",
                 color: L,
-                children: w
+                children: R
             })]
         }),
-        secondaryText: null != R ? (0, l.jsx)(s.Text, {
+        secondaryText: (0, l.jsx)(s.Text, {
             variant: "text-xs/normal",
             color: "text-muted",
-            children: (0, l.jsx)(O.b, {
-                channel: f,
-                message: R
+            children: (0, l.jsx)(T.o, {
+                channel: n,
+                message: G,
+                showTypingPreview: !0
             })
-        }) : null,
+        }),
         rightActions: e => (0, l.jsxs)(l.Fragment, {
-            children: [E > 0 ? T(E) : null, e ? (0, l.jsx)(A.j, {
-                tab: I.x.MESSAGES,
-                targetId: D
+            children: [g > 0 ? x(g) : null, e ? (0, l.jsx)(S.j, {
+                tab: f.x.MESSAGES,
+                targetId: M
             }) : null]
         })
     })
 }
 
-function D(e) {
+function R(e) {
     let {
         channelId: t,
         listItemId: n,
-        shouldHighlightIfRecentlyAdded: r,
+        shouldHighlightIfRecentlyAdded: i,
         onPrimaryAction: s,
         onContextMenu: a
-    } = e, o = (0, i.bG)([d.A], () => d.A.getChannel(t), [t]), {
-        mentionCount: u,
-        unread: c,
+    } = e, u = (0, r.bG)([c.A], () => c.A.getChannel(t), [t]), {
+        mentionCount: o,
+        unread: d,
         isMentionLowImportance: h
-    } = (0, i.cf)([f.Ay], () => ({
-        mentionCount: f.Ay.getMentionCount(t),
-        isMentionLowImportance: f.Ay.getIsMentionLowImportance(t),
-        unread: f.Ay.hasUnread(t)
-    }), [t]), g = (0, v.A2)(t);
-    return null == o ? (0, l.jsx)(_, {
+    } = (0, r.cf)([I.Ay], () => ({
+        mentionCount: I.Ay.getMentionCount(t),
+        isMentionLowImportance: I.Ay.getIsMentionLowImportance(t),
+        unread: I.Ay.hasUnread(t)
+    }), [t]), g = (0, _.A2)(t);
+    return null == u ? (0, l.jsx)(M, {
         channelId: t,
         listItemId: n,
-        mentionCount: u,
-        unread: c
-    }) : o.isPrivate() ? (0, l.jsx)(C, {
-        channel: o,
+        mentionCount: o,
+        unread: d
+    }) : u.isPrivate() ? (0, l.jsx)(v, {
+        channel: u,
         listItemId: n,
-        mentionCount: u,
+        mentionCount: o,
         isMentionLowImportance: h,
-        unread: c,
+        unread: d,
         onPrimaryAction: s,
         onContextMenu: a
-    }) : (0, l.jsx)(x, {
-        channel: o,
+    }) : (0, l.jsx)(D, {
+        channel: u,
         listItemId: n,
-        mentionCount: u,
-        unread: c,
-        recentlyAddedTimestampMs: r ? g : null,
+        mentionCount: o,
+        unread: d,
+        recentlyAddedTimestampMs: i ? g : null,
         onPrimaryAction: s,
         onContextMenu: a
     })

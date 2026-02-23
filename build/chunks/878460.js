@@ -1,41 +1,32 @@
 /** chunk id: 878460, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => u
+    A: () => c
 });
-var r, i = n(311907),
-    l = n(73153);
-
-function s(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
+var i = n(311907),
+    s = n(73153);
 let a = {},
-    o = null;
+    r = null;
 
-function c() {
-    a = {}, o = null
+function l() {
+    a = {}, r = null
 }
-class d extends(r = i.Ay.Store) {
+class o extends i.Ay.Store {
+    static displayName = "EmailSettingsStore";
     getEmailSettings() {
         return {
             categories: a,
-            initialized: o
+            initialized: r
         }
     }
 }
-s(d, "displayName", "EmailSettingsStore");
-let u = new d(l.h, {
-    CONNECTION_OPEN: c,
-    LOGOUT: c,
+let c = new o(s.h, {
+    CONNECTION_OPEN: l,
+    LOGOUT: l,
     EMAIL_SETTINGS_FETCH_SUCCESS: function(e) {
         let {
             settings: t
         } = e;
-        a = t.categories, o = t.initialized
+        a = t.categories, r = t.initialized
     },
     EMAIL_SETTINGS_UPDATE_SUCCESS: function(e) {
         let {
@@ -47,17 +38,9 @@ let u = new d(l.h, {
         let {
             updates: t
         } = e;
-        a = function(e) {
-            for (var t = 1; t < arguments.length; t++) {
-                var n = null != arguments[t] ? arguments[t] : {},
-                    r = Object.keys(n);
-                "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                    return Object.getOwnPropertyDescriptor(n, e).enumerable
-                }))), r.forEach(function(t) {
-                    s(e, t, n[t])
-                })
-            }
-            return e
-        }({}, a, t)
+        a = {
+            ...a,
+            ...t
+        }
     }
 })

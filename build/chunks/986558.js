@@ -1,5 +1,4 @@
-/** chunk id: 986558, original params: e,t,n (module,exports,require) **/
-"use strict";
+/** chunk id: 986558, original params: e,a,t (module,exports,require) **/
 e.exports = {
     w: "linkIcon_ebf183"
 }

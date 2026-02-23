@@ -1,37 +1,37 @@
 /** chunk id: 272997, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    k: () => h
+    k: () => A
 });
-var r = n(627968),
-    l = n(64700),
-    i = n(311907),
-    s = n(627363),
+var i = n(627968),
+    s = n(64700),
+    l = n(311907),
+    r = n(627363),
     a = n(769015),
     o = n(25528),
     c = n(961350),
-    u = n(69555),
-    d = n(266069),
-    p = n(709889);
+    d = n(69555),
+    u = n(266069),
+    h = n(709889);
 
-function h(e) {
-    var t;
+function A(e) {
     let {
-        guildId: n,
-        onSetActivityStatus: h
-    } = e, g = (0, i.bG)([c.default], () => c.default.getId()), f = (0, o.A)(g, n)[0], m = null != (t = (0, s.YY)(null == f ? void 0 : f.application_id).data) ? t : void 0, b = l.useCallback(() => {
-        null != m && ((0, u.xA)(m.id, !0), h())
-    }, [m, h]);
-    return null == m ? null : (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(d.u, {
-            label: m.name,
-            icon: (0, r.jsx)(a.A, {
-                game: m,
-                className: p.K
+        guildId: t,
+        onSetActivityStatus: n
+    } = e, A = (0, l.bG)([c.default], () => c.default.getId()), p = (0, o.Ay)(A, t)[0], g = (0, r.YY)(p?.application_id).data ?? void 0, m = s.useCallback(() => {
+        null != g && ((0, d.xA)(g.id, !0), n())
+    }, [g, n]);
+    return null == g ? null : (0, i.jsxs)(i.Fragment, {
+        children: [(0, i.jsx)(u.u, {
+            label: g.name,
+            icon: (0, i.jsx)(a.A, {
+                game: g,
+                className: h.K
             }),
-            setStatus: b
-        }), (0, r.jsx)("div", {
+            setStatus: m
+        }), (0, i.jsx)("div", {
             role: "separator",
-            className: p.m
+            className: h.m
         })]
     })
 }

@@ -1,206 +1,187 @@
 /** chunk id: 322388, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    PV: () => b,
-    Td: () => p
+    PV: () => m,
+    Td: () => x
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(735438),
+var s = n(735438),
     l = n(397927),
-    o = n(513461),
-    c = n(910919),
-    s = n(286056),
-    a = n(645745),
-    d = n(468287),
+    r = n(513461),
+    a = n(910919),
+    c = n(286056),
+    d = n(645745),
+    o = n(468287),
     u = n(985018);
 
-function f(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = r
-        })
-    }
-    return e
-}
-
-function j(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
-        }
-        return n
-    })(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-
-function p(e) {
+function x(e) {
     let {
         dropHoveredIndex: t,
-        formField: p,
-        guild: b,
-        index: m,
-        isDragEnabled: O,
-        submittedGuildJoinRequestsCount: v,
-        removeFormField: x,
-        updateFormField: h,
-        updateFormFieldOrder: g,
-        canRemove: P,
-        actionsLocation: w,
+        formField: x,
+        guild: m,
+        index: v,
+        isDragEnabled: j,
+        submittedGuildJoinRequestsCount: f,
+        removeFormField: g,
+        updateFormField: p,
+        updateFormFieldOrder: A,
+        canRemove: T,
+        actionsLocation: C,
         fieldStyle: E
-    } = e, A = async () => {
-        await x(m)
-    }, D = async e => {
-        await h(m, e)
-    }, T = async (e, t, n) => {
-        await g(e, t, n)
-    }, C = (0, i.uniqueId)(), S = t === m, R = {
-        key: C,
-        index: m,
-        isDragEnabled: O,
-        isDropHovered: S,
+    } = e, w = async () => {
+        await g(v)
+    }, y = async e => {
+        await p(v, e)
+    }, P = async (e, t, n) => {
+        await A(e, t, n)
+    }, R = (0, s.uniqueId)(), b = t === v, N = {
+        key: R,
+        index: v,
+        isDragEnabled: j,
+        isDropHovered: b,
         onEdit: () => {
-            0 === v ? y(p, D, b) : (0, l.mMO)(async () => {
+            0 === f ? h(x, y, m) : (0, l.mMO)(async () => {
                 let {
                     default: e
                 } = await n.e("5705").then(n.bind(n, 83024));
-                return t => (0, r.jsx)(e, j(f({}, t), {
-                    guildId: b.id,
-                    submittedGuildJoinRequestsCount: v,
-                    onConfirm: () => y(p, D, b)
-                }))
+                return t => (0, i.jsx)(e, {
+                    ...t,
+                    guildId: m.id,
+                    submittedGuildJoinRequestsCount: f,
+                    onConfirm: () => h(x, y, m)
+                })
             })
         },
-        onRemove: A,
-        onDrop: T,
-        canRemove: P,
-        actionsLocation: w,
+        onRemove: w,
+        onDrop: P,
+        canRemove: T,
+        actionsLocation: C,
         fieldStyle: E
     };
-    switch (p.field_type) {
-        case o.rX.TERMS:
-            return (0, r.jsx)(a.A, f({
-                channelId: b.rulesChannelId,
-                title: E === o.Vf.COMPACT ? u.intl.string(u.t["55+gic"]) : u.intl.string(u.t["53vNcB"]),
-                formField: p
-            }, R));
-        case o.rX.PARAGRAPH:
-            return (0, r.jsx)(s.A, f({
-                formField: p
-            }, R));
-        case o.rX.TEXT_INPUT:
-            return (0, r.jsx)(d.A, f({
-                formField: p
-            }, R));
-        case o.rX.MULTIPLE_CHOICE:
-            return (0, r.jsx)(c.A, f({
-                formField: p
-            }, R));
+    switch (x.field_type) {
+        case r.rX.TERMS:
+            return (0, i.jsx)(d.A, {
+                channelId: m.rulesChannelId,
+                title: E === r.Vf.COMPACT ? u.intl.string(u.t["55+gic"]) : u.intl.string(u.t["53vNcB"]),
+                formField: x,
+                ...N
+            });
+        case r.rX.PARAGRAPH:
+            return (0, i.jsx)(c.A, {
+                formField: x,
+                ...N
+            });
+        case r.rX.TEXT_INPUT:
+            return (0, i.jsx)(o.A, {
+                formField: x,
+                ...N
+            });
+        case r.rX.MULTIPLE_CHOICE:
+            return (0, i.jsx)(a.A, {
+                formField: x,
+                ...N
+            });
         default:
             return null
     }
 }
 
-function b(e, t, i) {
+function m(e, t, s) {
     switch (e) {
-        case o.rX.TERMS:
+        case r.rX.TERMS:
             return (0, l.mMO)(async () => {
                 let {
                     default: e
                 } = await n.e("32435").then(n.bind(n, 24094));
-                return n => (0, r.jsx)(e, j(f({}, n), {
+                return n => (0, i.jsx)(e, {
+                    ...n,
                     field: void 0,
                     onSave: t,
-                    guild: i
-                }))
+                    guild: s
+                })
             });
-        case o.rX.PARAGRAPH:
+        case r.rX.PARAGRAPH:
             return (0, l.mMO)(async () => {
                 let {
                     ParagraphFormFieldModal: e
                 } = await n.e("26510").then(n.bind(n, 542717));
-                return n => (0, r.jsx)(e, j(f({}, n), {
+                return n => (0, i.jsx)(e, {
+                    ...n,
                     field: void 0,
                     onSave: t
-                }))
+                })
             });
-        case o.rX.TEXT_INPUT:
+        case r.rX.TEXT_INPUT:
             return (0, l.mMO)(async () => {
                 let {
                     TextInputFormFieldModal: e
                 } = await n.e("26510").then(n.bind(n, 542717));
-                return n => (0, r.jsx)(e, j(f({}, n), {
+                return n => (0, i.jsx)(e, {
+                    ...n,
                     field: void 0,
                     onSave: t
-                }))
+                })
             });
-        case o.rX.MULTIPLE_CHOICE:
+        case r.rX.MULTIPLE_CHOICE:
             return (0, l.mMO)(async () => {
                 let {
                     default: e
                 } = await n.e("52981").then(n.bind(n, 520660));
-                return n => (0, r.jsx)(e, j(f({}, n), {
+                return n => (0, i.jsx)(e, {
+                    ...n,
                     field: void 0,
                     onSave: t
-                }))
+                })
             })
     }
 }
 
-function y(e, t, i) {
+function h(e, t, s) {
     switch (e.field_type) {
-        case o.rX.TERMS:
+        case r.rX.TERMS:
             return (0, l.mMO)(async () => {
                 let {
                     default: l
                 } = await n.e("32435").then(n.bind(n, 24094));
-                return n => (0, r.jsx)(l, j(f({}, n), {
+                return n => (0, i.jsx)(l, {
+                    ...n,
                     field: e,
                     onSave: t,
-                    guild: i
-                }))
+                    guild: s
+                })
             });
-        case o.rX.PARAGRAPH:
+        case r.rX.PARAGRAPH:
             return (0, l.mMO)(async () => {
                 let {
-                    ParagraphFormFieldModal: i
+                    ParagraphFormFieldModal: s
                 } = await n.e("26510").then(n.bind(n, 542717));
-                return n => (0, r.jsx)(i, j(f({}, n), {
+                return n => (0, i.jsx)(s, {
+                    ...n,
                     field: e,
                     onSave: t
-                }))
+                })
             });
-        case o.rX.TEXT_INPUT:
+        case r.rX.TEXT_INPUT:
             return (0, l.mMO)(async () => {
                 let {
-                    TextInputFormFieldModal: i
+                    TextInputFormFieldModal: s
                 } = await n.e("26510").then(n.bind(n, 542717));
-                return n => (0, r.jsx)(i, j(f({}, n), {
+                return n => (0, i.jsx)(s, {
+                    ...n,
                     field: e,
                     onSave: t
-                }))
+                })
             });
-        case o.rX.MULTIPLE_CHOICE:
+        case r.rX.MULTIPLE_CHOICE:
             return (0, l.mMO)(async () => {
                 let {
-                    default: i
+                    default: s
                 } = await n.e("52981").then(n.bind(n, 520660));
-                return n => (0, r.jsx)(i, j(f({}, n), {
+                return n => (0, i.jsx)(s, {
+                    ...n,
                     field: e,
                     onSave: t
-                }))
+                })
             })
     }
 }

@@ -2,23 +2,23 @@
 n.d(t, {
     A: () => s
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(990078),
-    l = n(397927),
+var l = n(990078),
+    r = n(397927),
     a = n(985018);
 let s = e => {
     let {
         onGift: t,
         tooltipDelay: n = 250
     } = e;
-    return (0, r.jsx)(i.m, {
+    return (0, i.jsx)(l.m, {
         text: a.intl.string(a.t["JCFN/y"]),
         delay: n,
-        children: (0, r.jsx)(l.K0, {
+        children: (0, i.jsx)(r.K0, {
             "aria-label": a.intl.string(a.t["JCFN/y"]),
             variant: "primary",
-            icon: l.okO,
+            icon: r.okO,
             size: "md",
             onClick: t
         })

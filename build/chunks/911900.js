@@ -1,8 +1,8 @@
-/** chunk id: 911900, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => i
+/** chunk id: 911900, original params: e,n,t (module,exports,require) **/
+t.d(n, {
+    A: () => l
 });
-let i = (0, n(250105).Ay)({
+let l = (0, t(250105).Ay)({
     kind: "user",
     name: "2025-10-call-tile-popout",
     defaultConfig: {

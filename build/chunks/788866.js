@@ -1,36 +1,31 @@
 /** chunk id: 788866, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => m
-}), n(896048);
-var r, i, l = n(311907),
-    a = n(506774),
-    s = n(73153),
-    o = n(498642),
-    c = n(71393),
-    u = n(576705),
+    A: () => _
+});
+var i = n(311907),
+    r = n(506774),
+    l = n(73153),
+    a = n(498642),
+    s = n(71393),
+    o = n(576705),
     d = n(124759),
-    p = n(652215);
-let h = "publicUpsellChannelNoticeGuilds",
-    f = new Set;
-class g extends(r = l.Ay.Store) {
+    c = n(652215);
+let u = "publicUpsellChannelNoticeGuilds",
+    A = new Set;
+class h extends i.Ay.Store {
+    static displayName = "EnablePublicGuildUpsellNoticeStore";
     initialize() {
-        var e;
-        this.waitFor(u.A, c.A, o.A), this.syncWith([u.A, c.A, o.A], p.tEg), f = (e = new Set(a.w.get(h)), e)
+        this.waitFor(o.A, s.A, a.A), this.syncWith([o.A, s.A, a.A], c.tEg), A = new Set(r.w.get(u)) ?? new Set
     }
     isVisible(e) {
         if (null == e) return;
-        let t = o.A.getMemberCount(e.id);
-        return !f.has(e.id) && null != t && t >= d.dH && u.A.can(p.xBc.ADMINISTRATOR, e) && !e.features.has(p.GuildFeatures.COMMUNITY)
+        let t = a.A.getMemberCount(e.id);
+        return !A.has(e.id) && null != t && t >= d.dH && o.A.can(c.xBc.ADMINISTRATOR, e) && !e.features.has(c.GuildFeatures.COMMUNITY)
     }
-}(i = "displayName") in g ? Object.defineProperty(g, i, {
-    value: "EnablePublicGuildUpsellNoticeStore",
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
-}) : g[i] = "EnablePublicGuildUpsellNoticeStore";
-let m = new g(s.h, {
+}
+let _ = new h(l.h, {
     PUBLIC_UPSELL_NOTICE_DISMISS: function(e) {
         let t = e.guildId;
-        if (!f.has(t)) return f.add(t), a.w.set(h, f), !0
+        if (!A.has(t)) return A.add(t), r.w.set(u, A), !0
     }
 })

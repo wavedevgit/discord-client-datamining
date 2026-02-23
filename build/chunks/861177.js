@@ -1,81 +1,69 @@
-/** chunk id: 861177, original params: e,t,r (module,exports,require) **/
-r.d(t, {
-    default: () => O
+/** chunk id: 861177, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    default: () => g
 });
-var n = r(627968);
-r(64700);
-var o = r(311907),
-    c = r(385612),
-    l = r(287809),
-    a = r(927578),
-    i = r(87719),
-    u = r(244975),
-    s = r(788868),
-    f = r(652215),
-    p = r(339984),
-    y = r(985018),
-    b = r(626072);
+var a = n(627968);
+n(64700);
+var i = n(311907),
+    o = n(385612),
+    r = n(287809),
+    s = n(927578),
+    c = n(87719),
+    l = n(414345),
+    d = n(244975),
+    u = n(788868),
+    p = n(652215),
+    f = n(339984),
+    b = n(985018),
+    y = n(626072);
 
-function O(e) {
+function g(e) {
     let {
         onClose: t,
-        source: r
-    } = e, O = function(e, t) {
-        if (null == e) return {};
-        var r, n, o, c = {};
-        if ("u" > typeof Reflect && Reflect.ownKeys) {
-            for (o = 0, r = Reflect.ownKeys(e); o < r.length; o++) n = r[o], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (c[n] = e[n]);
-            return c
-        }
-        if (c = function(e, t) {
-                if (null == e) return {};
-                var r, n, o = {},
-                    c = Object.getOwnPropertyNames(e);
-                for (n = 0; n < c.length; n++) r = c[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (o[r] = e[r]);
-                return o
-            }(e, t), Object.getOwnPropertySymbols)
-            for (o = 0, r = Object.getOwnPropertySymbols(e); o < r.length; o++) n = r[o], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (c[n] = e[n]);
-        return c
-    }(e, ["onClose", "source"]), d = (0, o.bG)([l.default], () => l.default.getCurrentUser()), g = a.Ay.isPremium(d) ? y.t.E0sNsc : y.t.UBcuto, m = y.intl.format(g, {
+        source: n,
+        ...g
+    } = e, A = (0, i.bG)([r.default], () => r.default.getCurrentUser()), C = s.Ay.isPremium(A) ? b.t.E0sNsc : b.t.UBcuto, m = b.intl.format(C, {
         onLearnMore: function() {
-            t(), (0, i.e)()
+            t(), (0, c.e)()
         }
     });
-    return (0, n.jsx)(u.A, function(e) {
-        for (var t = 1; t < arguments.length; t++) {
-            var r = null != arguments[t] ? arguments[t] : {},
-                n = Object.keys(r);
-            "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-                return Object.getOwnPropertyDescriptor(r, e).enumerable
-            }))), n.forEach(function(t) {
-                var n;
-                n = r[t], t in e ? Object.defineProperty(e, t, {
-                    value: n,
-                    enumerable: !0,
-                    configurable: !0,
-                    writable: !0
-                }) : e[t] = n
+    return (0, l.g)({
+        location: "PremiumProfileUpsell"
+    }) ? (0, a.jsx)(d.F, {
+        title: b.intl.string(b.t.BbsMm4),
+        subtitle: m,
+        graphic: {
+            src: y.A,
+            type: "image"
+        },
+        secondaryCTA: b.intl.string(b.t.SpAQib),
+        onSecondaryClick: () => {
+            t(), (0, o.XD)({
+                uploadType: f.HL.BANNER,
+                analyticsSource: n
             })
-        }
-        return e
-    }({
-        artURL: b.A,
-        type: s.e.CUSTOM_PROFILE_UPSELL,
-        title: y.intl.string(y.t.BbsMm4),
+        },
+        onClose: t,
+        ...g
+    }) : (0, a.jsx)(d.A, {
+        artURL: y.A,
+        type: u.e.CUSTOM_PROFILE_UPSELL,
+        title: b.intl.string(b.t.BbsMm4),
         body: m,
         glowUp: m,
         onSecondaryClick: () => {
-            t(), (0, c.XD)({
-                uploadType: p.HL.BANNER,
-                analyticsSource: r
+            t(), (0, o.XD)({
+                uploadType: f.HL.BANNER,
+                analyticsSource: n
             })
         },
-        secondaryCTA: y.intl.string(y.t.SpAQib),
-        analyticsSource: r,
+        secondaryCTA: b.intl.string(b.t.SpAQib),
+        analyticsSource: n,
         analyticsLocation: {
-            section: f.JJy.USER_PROFILE,
-            object: f.ZSU.BUTTON_CTA
+            section: p.JJy.USER_PROFILE,
+            object: p.ZSU.BUTTON_CTA
         },
-        onClose: t
-    }, O))
+        onClose: t,
+        ...g
+    })
 }

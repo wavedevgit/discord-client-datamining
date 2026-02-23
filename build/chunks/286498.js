@@ -1,221 +1,191 @@
 /** chunk id: 286498, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => I
-}), n(896048), n(747238);
-var l = n(627968),
-    r = n(64700),
-    i = n(503698),
-    a = n.n(i),
-    s = n(837381),
+    A: () => y
+});
+var i = n(627968),
+    l = n(64700),
+    s = n(503698),
+    a = n.n(s),
+    r = n(837381),
     o = n(311907),
     c = n(435371),
-    u = n(397927),
-    d = n(49229),
+    d = n(397927),
+    u = n(49229),
     h = n(297413),
-    p = n(966327),
-    f = n(793574),
-    m = n(235986),
-    g = n(803664),
-    A = n(583311),
-    b = n(290863),
-    _ = n(584777),
-    y = n(994500),
-    v = n(427262),
-    E = n(652215),
-    O = n(985018),
-    C = n(318880);
-
-function S(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            l = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), l.forEach(function(t) {
-            var l;
-            l = n[t], t in e ? Object.defineProperty(e, t, {
-                value: l,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = l
-        })
-    }
-    return e
-}
-
-function x(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var l = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, l)
-        }
-        return n
-    })(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-let j = e => {
+    m = n(966327),
+    A = n(793574),
+    g = n(235986),
+    p = n(803664),
+    f = n(583311),
+    _ = n(290863),
+    E = n(584777),
+    x = n(994500),
+    C = n(427262),
+    S = n(652215),
+    I = n(985018),
+    T = n(318880);
+let N = e => {
     let {
         user: t,
         handleTrackAction: n
-    } = e, i = (0, o.bG)([y.A], () => y.A.getRelationshipType(t.id)), [a, s] = r.useState(!1), h = (0, g.A)({
+    } = e, s = (0, o.bG)([x.A], () => x.A.getRelationshipType(t.id)), [a, r] = l.useState(!1), h = (0, p.A)({
         user: t,
-        location: f.A.NEW_GROUP_DM_INVITE_MODAL,
-        setLoading: s
-    }), p = r.useRef(null), m = r.useCallback(async () => {
-        n(), s(!0), await d.A.addRelationship({
+        location: A.A.NEW_GROUP_DM_INVITE_MODAL,
+        setLoading: r
+    }), m = l.useRef(null), g = l.useCallback(async () => {
+        n(), r(!0), await u.A.addRelationship({
             userId: t.id,
             context: {
-                location: f.A.NEW_GROUP_DM_INVITE_MODAL
+                location: A.A.NEW_GROUP_DM_INVITE_MODAL
             }
-        }), s(!1)
+        }), r(!1)
     }, [n, t.id]);
     if (t.bot) return null;
-    switch (i) {
-        case E.eA$.FRIEND:
+    switch (s) {
+        case S.eA$.FRIEND:
             return null;
-        case E.eA$.PENDING_INCOMING:
-            return (0, l.jsx)(A.A, {
-                targetElementRef: p,
+        case S.eA$.PENDING_INCOMING:
+            return (0, i.jsx)(f.A, {
+                targetElementRef: m,
                 menuItems: [h],
-                children: e => (0, l.jsx)(c.m_, {
+                children: e => (0, i.jsx)(c.m_, {
                     asContainer: !0,
-                    text: O.intl.string(O.t["6QQCQ+"]),
+                    text: I.intl.string(I.t["6QQCQ+"]),
                     ariaHidden: !0,
-                    children: (0, l.jsx)(u.K0, x(S({}, e), {
-                        buttonRef: p,
+                    children: (0, i.jsx)(d.K0, {
+                        ...e,
+                        buttonRef: m,
                         size: "sm",
                         variant: "icon-only",
-                        "aria-label": O.intl.string(O.t["6QQCQ+"]),
-                        icon: u.lI8,
+                        "aria-label": I.intl.string(I.t["6QQCQ+"]),
+                        icon: d.lI8,
                         loading: a
-                    }))
+                    })
                 })
             });
-        case E.eA$.PENDING_OUTGOING:
-            return (0, l.jsx)(c.m_, {
+        case S.eA$.PENDING_OUTGOING:
+            return (0, i.jsx)(c.m_, {
                 asContainer: !0,
-                text: O.intl.string(O.t["s/+byI"]),
+                text: I.intl.string(I.t["s/+byI"]),
                 ariaHidden: !0,
-                children: (0, l.jsx)(u.K0, {
+                children: (0, i.jsx)(d.K0, {
                     size: "sm",
                     variant: "icon-only",
-                    "aria-label": O.intl.string(O.t["s/+byI"]),
-                    icon: u.lI8,
+                    "aria-label": I.intl.string(I.t["s/+byI"]),
+                    icon: d.lI8,
                     disabled: !0
                 })
             });
         default:
-            return (0, l.jsx)(c.m_, {
+            return (0, i.jsx)(c.m_, {
                 asContainer: !0,
-                text: O.intl.string(O.t.w5uwoI),
+                text: I.intl.string(I.t.w5uwoI),
                 ariaHidden: !0,
-                children: (0, l.jsx)(u.K0, {
+                children: (0, i.jsx)(d.K0, {
                     size: "sm",
-                    onClick: m,
+                    onClick: g,
                     variant: "icon-only",
-                    "aria-label": O.intl.string(O.t.w5uwoI),
-                    icon: u.Rvf,
+                    "aria-label": I.intl.string(I.t.w5uwoI),
+                    icon: d.Rvf,
                     loading: a
                 })
             })
     }
 };
 
-function I(e) {
+function y(e) {
     let t, {
             user: n,
-            section: r,
-            row: i,
-            hideDiscriminator: d,
-            comparator: f,
-            selected: g,
-            checked: A,
-            disabled: y = !1,
-            onClick: E,
-            onMouseEnter: I,
-            onMessageClick: T,
-            "aria-setsize": N,
-            "aria-posinset": P,
-            numSelected: w,
-            staffOverride: R,
-            handleTrackAction: D,
-            showFriendButton: M = !1
+            section: l,
+            row: s,
+            hideDiscriminator: u,
+            comparator: A,
+            selected: p,
+            checked: f,
+            disabled: x = !1,
+            onClick: S,
+            onMessageClick: y,
+            onMouseEnter: v,
+            "aria-setsize": b,
+            "aria-posinset": j,
+            handleTrackAction: R,
+            inImprovedDMExperiment: M,
+            disabledTooltipText: D,
+            staffOverride: O
         } = e,
-        k = (0, o.bG)([b.A], () => b.A.getStatus(n.id)),
-        L = (0, s.rm)(String(n.id));
-    return t = R ? (0, l.jsx)(u.P7L, {
-        checked: A,
-        disabled: y
-    }) : 0 === w ? (0, l.jsx)(u.Button, {
-        variant: "secondary",
-        text: O.intl.string(O.t["g33r/P"]),
-        size: "sm",
-        onClick: () => {
-            D(r, i, "message"), null != T && T(n.id)
-        }
-    }) : (0, l.jsx)(c.m_, {
-        asContainer: !0,
-        text: O.intl.string(O.t.z9qAt9),
-        children: (0, l.jsx)(u.P7L, {
-            checked: A,
-            disabled: !0
+        L = (0, o.bG)([_.A], () => _.A.getStatus(n.id));
+    t = l === E.A.GUILD_MEMBERS ? O ? (0, i.jsx)("div", {
+        className: T.ch,
+        children: (0, i.jsx)(d.P7L, {
+            checked: f
         })
-    }), (0, l.jsx)(u.DUT, x(S({
-        id: "user-row-".concat(i),
-        className: a()(C.Se, {
-            [C.r9]: y
+    }) : (0, i.jsx)(c.m_, {
+        asContainer: !0,
+        text: x ? D : I.intl.string(I.t["6Urw1t"]),
+        children: (0, i.jsx)(d.K0, {
+            "aria-label": "",
+            size: "sm",
+            variant: "secondary",
+            icon: d.ggM,
+            onClick: () => {
+                R(l, s, "message"), y?.(n.id)
+            },
+            disabled: x
+        })
+    }) : (0, i.jsx)(d.P7L, {
+        checked: f,
+        disabled: x
+    });
+    let P = (0, r.rm)(String(n.id)),
+        k = !x && l === E.A.FRIENDS || O;
+    return (0, i.jsx)(d.DUT, {
+        id: `user-row-${s}`,
+        className: a()(T.Se, {
+            [T.r9]: !k
         }),
-        onClick: r === _.A.FRIENDS || R ? () => {
-            D(r, i, "select"), null != E && E(n.id)
+        onClick: k ? () => {
+            R(l, s, "select"), S?.(n.id)
         } : void 0,
         onMouseEnter: () => {
-            null != I && I(r, i)
-        }
-    }, L), {
+            v?.(l, s)
+        },
+        ...P,
         role: "option",
-        "aria-selected": A,
-        "aria-disabled": y,
-        "aria-setsize": N,
-        "aria-posinset": P,
-        children: (0, l.jsxs)(m.A, {
-            align: m.A.Align.CENTER,
-            className: a()(C.Bc, {
-                [C.oz]: g
+        "aria-selected": f,
+        "aria-disabled": x,
+        "aria-setsize": b,
+        "aria-posinset": j,
+        children: (0, i.jsxs)(g.A, {
+            align: g.A.Align.CENTER,
+            className: a()(T.Bc, {
+                [T.oz]: p
             }),
-            children: [(0, l.jsx)(p.A, {
+            children: [(0, i.jsx)(m.A, {
                 user: n,
-                status: k,
-                className: C.my
-            }), (0, l.jsxs)("div", {
-                className: C.YW,
-                children: [(0, l.jsx)(u.Text, {
+                status: L,
+                className: T.my
+            }), (0, i.jsxs)("div", {
+                className: T.YW,
+                children: [(0, i.jsx)(d.Text, {
                     tag: "strong",
-                    className: C.$R,
+                    className: T.$R,
                     "aria-hidden": !0,
                     variant: "text-md/medium",
-                    children: null != f && f === n.tag ? v.Ay.getName(n) : null != f && "" !== f ? f : v.Ay.getName(n)
-                }), (0, l.jsx)(u.Text, {
+                    children: null != A && A === n.tag ? C.Ay.getName(n) : null != A && "" !== A ? A : C.Ay.getName(n)
+                }), (0, i.jsx)(d.Text, {
                     variant: "text-xs/normal",
                     color: "text-muted",
-                    children: (0, l.jsx)(h.A, {
+                    children: (0, i.jsx)(h.A, {
                         user: n,
-                        hideDiscriminator: d,
-                        className: C.xK,
-                        usernameClass: C.__invalid_weightMedium,
-                        discriminatorClass: C.__invalid_weightMedium,
+                        hideDiscriminator: u,
+                        className: T.xK,
                         forceUsername: !0
                     })
                 })]
-            }), r !== _.A.FRIENDS && M ? (0, l.jsx)(j, {
+            }), l !== E.A.FRIENDS && M ? (0, i.jsx)(N, {
                 user: n,
-                handleTrackAction: () => D(r, i, "friend")
-            }) : null, r === _.A.FRIENDS ? (0, l.jsx)(u.P7L, {
-                checked: A,
-                disabled: y
-            }) : t]
+                handleTrackAction: () => R(l, s, "friend")
+            }) : null, t]
         })
-    }))
+    })
 }

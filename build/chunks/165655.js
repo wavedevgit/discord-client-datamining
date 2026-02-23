@@ -1,20 +1,20 @@
 /** chunk id: 165655, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    T: () => a
+    T: () => s
 });
-var l = n(627968),
+var a = n(627968),
     i = n(583087);
 
-function a(e) {
+function s(e) {
     let {
         imageUrl: t
     } = e;
-    return (0, l.jsx)("div", {
+    return (0, a.jsx)("div", {
         className: i.k,
-        children: (0, l.jsx)("div", {
+        children: (0, a.jsx)("div", {
             className: i.d,
             style: {
-                backgroundImage: "url(".concat(t, ")")
+                backgroundImage: `url(${t})`
             }
         })
     })

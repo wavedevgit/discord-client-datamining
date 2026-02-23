@@ -1,129 +1,102 @@
 /** chunk id: 283354, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    default: () => h
+    default: () => A
 });
-var r = n(627968),
-    l = n(64700),
-    i = n(314116),
-    s = n(397927),
+var i = n(627968),
+    s = n(64700),
+    l = n(314116),
+    r = n(397927),
     a = n(442433),
     o = n(50268),
     c = n(928658),
-    u = n(208882),
-    d = n(352123),
-    p = n(985018);
+    d = n(208882),
+    u = n(352123),
+    h = n(985018);
 
-function h(e) {
+function A(e) {
     let {
         entry: t,
-        onSelect: h,
-        closePopout: g,
-        hideEditButton: f = !1
+        onSelect: A,
+        closePopout: p,
+        hideEditButton: g = !1
     } = e, {
         isEntryAdmin: m,
-        canEdit: b,
-        canRemove: A
-    } = (0, d.A)(t), y = (0, o.A)({
+        canEdit: _,
+        canRemove: f
+    } = (0, u.A)(t), x = (0, o.A)({
         id: t.guildId,
-        label: p.intl.string(p.t["94lLD7"]),
-        onSuccess: g
+        label: h.intl.string(h.t["94lLD7"]),
+        onSuccess: p
     });
-    l.useEffect(() => {
-        b || A || null != y || (0, a.Z_)()
+    s.useEffect(() => {
+        _ || f || null != x || (0, a.Z_)()
     });
-    let O = () => {
-        u.ZM(t.channelId, t.guildId)
+    let C = () => {
+        d.ZM(t.channelId, t.guildId)
     };
 
-    function j() {
-        (0, a.Z_)(), null == g || g()
+    function E() {
+        (0, a.Z_)(), p?.()
     }
-    return (0, r.jsxs)(s.W1t, {
+    return (0, i.jsxs)(r.W1t, {
         "data-menu-migrated": !0,
         navId: "guild-entry-context",
-        onClose: j,
-        "aria-label": p.intl.string(p.t.HpQykc),
-        onSelect: h,
-        children: [(0, r.jsxs)(s.rXV, {
-            children: [b && !f ? (0, r.jsx)(s.Drp, {
+        onClose: E,
+        "aria-label": h.intl.string(h.t.HpQykc),
+        onSelect: A,
+        children: [(0, i.jsxs)(r.rXV, {
+            children: [_ && !g ? (0, i.jsx)(r.Drp, {
                 id: "update-entry",
-                label: p.intl.string(p.t.XnuOvN),
+                label: h.intl.string(h.t.XnuOvN),
                 action: function() {
-                    (0, s.mMO)(async () => {
+                    (0, r.mMO)(async () => {
                         let {
                             default: e
                         } = await n.e("88869").then(n.bind(n, 201700));
-                        return n => {
-                            var l, i;
-                            return (0, r.jsx)(e, (l = function(e) {
-                                for (var t = 1; t < arguments.length; t++) {
-                                    var n = null != arguments[t] ? arguments[t] : {},
-                                        r = Object.keys(n);
-                                    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                                        return Object.getOwnPropertyDescriptor(n, e).enumerable
-                                    }))), r.forEach(function(t) {
-                                        var r;
-                                        r = n[t], t in e ? Object.defineProperty(e, t, {
-                                            value: r,
-                                            enumerable: !0,
-                                            configurable: !0,
-                                            writable: !0
-                                        }) : e[t] = r
-                                    })
-                                }
-                                return e
-                            }({}, n), i = i = {
-                                entry: t
-                            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
-                                var n = Object.keys(e);
-                                if (Object.getOwnPropertySymbols) {
-                                    var r = Object.getOwnPropertySymbols(e);
-                                    n.push.apply(n, r)
-                                }
-                                return n
-                            })(Object(i)).forEach(function(e) {
-                                Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(i, e))
-                            }), l))
-                        }
-                    }), j()
+                        return n => (0, i.jsx)(e, {
+                            ...n,
+                            entry: t
+                        })
+                    }), E()
                 },
                 leadingAccessory: {
                     type: "icon",
-                    icon: s.R2l
+                    icon: r.R2l
                 }
-            }) : null, A ? (0, r.jsx)(s.Drp, {
+            }) : null, f ? (0, i.jsx)(r.Drp, {
                 id: "remove-from-hub",
-                label: p.intl.string(p.t.KUxYWH),
+                label: h.intl.string(h.t.KUxYWH),
                 action: function() {
-                    (0, i.A)({
-                        title: p.intl.string(p.t.KUxYWH),
-                        subtitle: p.intl.format(p.t["/5y0uV"], {
+                    (0, l.A)({
+                        title: h.intl.string(h.t.KUxYWH),
+                        subtitle: h.intl.format(h.t["/5y0uV"], {
                             guildName: t.name
                         }),
-                        confirmText: p.intl.string(p.t.N86XcP),
-                        onConfirm: O
-                    }), j()
+                        confirmText: h.intl.string(h.t.N86XcP),
+                        onConfirm: C
+                    }), E()
                 },
                 color: "danger",
                 leadingAccessory: {
                     type: "icon",
-                    icon: s.ucK
+                    icon: r.ucK
                 }
-            }) : null, m ? null : (0, r.jsx)(s.Drp, {
+            }) : null, m ? null : (0, i.jsx)(r.Drp, {
                 id: "report-server-listing",
-                label: p.intl.string(p.t.Aen9eh),
+                label: h.intl.string(h.t.Aen9eh),
                 action: function() {
-                    null != t && ((0, c.sJ)(t), j())
+                    null != t && ((0, c.sJ)(t), E())
                 },
-                icon: s.iFK,
+                icon: r.iFK,
                 leadingAccessory: {
                     type: "icon",
-                    icon: s.iFK
+                    icon: r.iFK
                 },
                 color: "danger"
             })]
-        }), (0, r.jsx)(s.rXV, {
-            children: y
+        }), (0, i.jsx)(r.rXV, {
+            children: x
         })]
     })
 }

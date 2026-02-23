@@ -1,16 +1,15 @@
-/** chunk id: 194362, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    a: () => l
+/** chunk id: 194362, original params: e,t,r (module,exports,require) **/
+r.d(t, {
+    a: () => s
 });
-var r = n(104798),
-    i = n(652215);
-async function l(e) {
-    let t = r.A.generateNonce();
+var i = r(104798),
+    a = r(652215);
+async function s(e) {
+    let t = i.A.generateNonce();
     try {
-        let n = await r.A.createHandoffToken(t);
-        return i.X7G.DEVELOPER_PORTAL_LOGIN_HANDOFF(t, n, e)
-    } catch (t) {
-        return "//".concat(window.GLOBAL_ENV.DEVELOPERS_ENDPOINT, "/").concat(e)
+        let r = await i.A.createHandoffToken(t);
+        return a.X7G.DEVELOPER_PORTAL_LOGIN_HANDOFF(t, r, e)
+    } catch {
+        return `//${window.GLOBAL_ENV.DEVELOPERS_ENDPOINT}/${e}`
     }
 }

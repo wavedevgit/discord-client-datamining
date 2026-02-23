@@ -2,20 +2,20 @@
 n.d(t, {
     A: () => o
 });
-var r = n(64700),
-    i = n(311907),
-    l = n(824552),
-    s = n(875444),
-    a = n(546183);
+var i = n(64700),
+    s = n(311907),
+    a = n(824552),
+    r = n(875444),
+    l = n(546183);
 
 function o(e, t) {
-    let n = (0, i.bG)([a.default], () => a.default.getFetchState()),
-        o = (0, i.bG)([a.default], () => e ? a.default.getNewestTokensForNonChildrenApplications() : a.default.getNewestTokens()),
-        c = r.useMemo(() => null == o ? [] : o.filter(e => (0, s.A)(e.application)).map(e => e.application), [o]);
-    return r.useEffect(() => {
-        t || l.A.fetch()
+    let n = (0, s.bG)([l.default], () => l.default.getFetchState()),
+        o = (0, s.bG)([l.default], () => e ? l.default.getNewestTokensForNonChildrenApplications() : l.default.getNewestTokens()),
+        c = i.useMemo(() => null == o ? [] : o.filter(e => (0, r.A)(e.application)).map(e => e.application), [o]);
+    return i.useEffect(() => {
+        t || a.A.fetch()
     }, [t]), {
-        showLoadingIndicator: n !== a.FetchState.FETCHED && (null == o || 0 === o.length),
+        showLoadingIndicator: n !== l.FetchState.FETCHED && (null == o || 0 === o.length),
         slayerSdkApplications: c
     }
 }

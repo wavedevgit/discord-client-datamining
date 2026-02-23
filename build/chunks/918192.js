@@ -1,22 +1,22 @@
 /** chunk id: 918192, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    Bw: () => x,
-    ld: () => j
-}), n(896048);
+    Bw: () => _,
+    ld: () => A
+});
 var l = n(627968);
 n(64700);
-var r = n(311907),
-    i = n(827734),
-    a = n(397927),
+var i = n(311907),
+    a = n(827734),
+    r = n(397927),
     s = n(442433),
     c = n(85448),
-    o = n(994500),
-    u = n(427262),
-    d = n(312006),
-    g = n(366098),
-    h = n(985018),
-    f = n(545058);
-let x = e => {
+    d = n(994500),
+    o = n(427262),
+    u = n(312006),
+    h = n(366098),
+    g = n(985018),
+    x = n(545058);
+let _ = e => {
         let {
             channelId: t
         } = e;
@@ -27,132 +27,104 @@ let x = e => {
     m = e => {
         let {
             channelId: t
-        } = e, n = (0, g.D3)(t), r = (0, g.Xk)(t);
-        if (0 === n && 0 === r) return null;
+        } = e, n = (0, h.D3)(t), i = (0, h.Xk)(t);
+        if (0 === n && 0 === i) return null;
         let c = e => {
-            (0, s.jA)(e, e => {
-                var n, r;
-                return (0, l.jsx)(b, (n = function(e) {
-                    for (var t = 1; t < arguments.length; t++) {
-                        var n = null != arguments[t] ? arguments[t] : {},
-                            l = Object.keys(n);
-                        "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                            return Object.getOwnPropertyDescriptor(n, e).enumerable
-                        }))), l.forEach(function(t) {
-                            var l;
-                            l = n[t], t in e ? Object.defineProperty(e, t, {
-                                value: l,
-                                enumerable: !0,
-                                configurable: !0,
-                                writable: !0
-                            }) : e[t] = l
-                        })
-                    }
-                    return e
-                }({}, e), r = r = {
-                    channelId: t
-                }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
-                    var n = Object.keys(e);
-                    if (Object.getOwnPropertySymbols) {
-                        var l = Object.getOwnPropertySymbols(e);
-                        n.push.apply(n, l)
-                    }
-                    return n
-                })(Object(r)).forEach(function(e) {
-                    Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
-                }), n))
-            }, {
+            (0, s.jA)(e, e => (0, l.jsx)(T, {
+                ...e,
+                channelId: t
+            }), {
                 position: "left",
                 align: "bottom"
             })
         };
-        return n > 0 && r > 0 ? (0, l.jsxs)("div", {
-            className: f.jC,
-            children: [(0, l.jsx)(a.KTN, {
+        return n > 0 && i > 0 ? (0, l.jsxs)("div", {
+            className: x.jC,
+            children: [(0, l.jsx)(r.KTN, {
                 size: "lg",
-                color: i.A.unsafe_rawColors.RED_400.css
-            }), (0, l.jsx)(a.Text, {
+                color: a.A.unsafe_rawColors.RED_400.css
+            }), (0, l.jsx)(r.Text, {
                 variant: "text-xs/normal",
                 color: "text-default",
-                children: h.intl.string(h.t["P/KFXz"])
-            }), (0, l.jsx)(a.DUT, {
-                className: f.R5,
+                children: g.intl.string(g.t["P/KFXz"])
+            }), (0, l.jsx)(r.DUT, {
+                className: x.R5,
                 onClick: c,
-                children: h.intl.string(h.t.rUEjBe)
+                children: g.intl.string(g.t.rUEjBe)
             })]
-        }) : r > 0 ? (0, l.jsxs)("div", {
-            className: f.jC,
-            children: [(0, l.jsx)(a.G3N, {
+        }) : i > 0 ? (0, l.jsxs)("div", {
+            className: x.jC,
+            children: [(0, l.jsx)(r.G3N, {
                 size: "lg"
-            }), (0, l.jsx)(a.Text, {
+            }), (0, l.jsx)(r.Text, {
                 variant: "text-xs/normal",
                 color: "text-default",
-                children: h.intl.format(h.t.Ri3o33, {
-                    number: r
+                children: g.intl.format(g.t.Ri3o33, {
+                    number: i
                 })
-            }), (0, l.jsx)(a.DUT, {
-                className: f.R5,
+            }), (0, l.jsx)(r.DUT, {
+                className: x.R5,
                 onClick: c,
-                children: h.intl.string(h.t.rUEjBe)
+                children: g.intl.string(g.t.rUEjBe)
             })]
         }) : (0, l.jsxs)("div", {
-            className: f.jC,
-            children: [(0, l.jsx)(a.KTN, {
+            className: x.jC,
+            children: [(0, l.jsx)(r.KTN, {
                 size: "lg",
-                color: i.A.unsafe_rawColors.RED_400.css
-            }), (0, l.jsx)(a.Text, {
+                color: a.A.unsafe_rawColors.RED_400.css
+            }), (0, l.jsx)(r.Text, {
                 variant: "text-xs/normal",
                 color: "text-default",
-                children: h.intl.format(h.t["6Tcdt7"], {
+                children: g.intl.format(g.t["6Tcdt7"], {
                     number: n
                 })
-            }), (0, l.jsx)(a.DUT, {
-                className: f.R5,
+            }), (0, l.jsx)(r.DUT, {
+                className: x.R5,
                 onClick: c,
-                children: h.intl.string(h.t.rUEjBe)
+                children: g.intl.string(g.t.rUEjBe)
             })]
         })
     },
-    j = e => {
+    A = e => {
         let {
             user: t,
             showStatus: n,
-            speaker: i,
+            speaker: a,
             channelId: s
-        } = e, g = (0, r.bG)([d.Ay], () => d.Ay.isModerator(t.id, s)), x = (0, r.bG)([o.A], () => o.A.isBlocked(t.id)), m = null;
-        return n && (m = i ? h.intl.string(h.t.LqMmG2) : g ? h.intl.string(h.t.GMZqSi) : h.intl.string(h.t.suRApw)), (0, l.jsxs)("div", {
-            className: f.kQ,
+        } = e, h = (0, i.bG)([u.Ay], () => u.Ay.isModerator(t.id, s)), _ = (0, i.bG)([d.A], () => d.A.isBlocked(t.id)), m = null;
+        return n && (m = a ? g.intl.string(g.t.LqMmG2) : h ? g.intl.string(g.t.GMZqSi) : g.intl.string(g.t.suRApw)), (0, l.jsxs)("div", {
+            className: x.kQ,
             children: [(0, l.jsx)(c.A, {
                 src: t.getAvatarURL(null, 32),
-                size: a._3J.SIZE_32,
+                size: r._3J.SIZE_32,
                 muted: !1,
                 deafen: !1,
                 speaking: !1,
                 ringing: !1,
-                renderIcon: i ? () => (0, l.jsx)(a.cNw, {
+                renderIcon: a ? () => (0, l.jsx)(r.cNw, {
                     size: "md",
                     color: "currentColor",
-                    className: f.Kk
+                    className: x.Kk
                 }) : null
             }, t.id), (0, l.jsxs)("div", {
-                className: f.eF,
+                className: x.eF,
                 children: [(0, l.jsxs)("div", {
-                    className: f.Xh,
-                    children: [(0, l.jsx)(a.Text, {
+                    className: x.Xh,
+                    children: [(0, l.jsx)(r.Text, {
                         variant: n ? "text-md/normal" : "text-sm/normal",
-                        children: u.Ay.getName(t)
-                    }), (0, l.jsx)(a.Text, {
+                        children: o.Ay.getName(t)
+                    }), (0, l.jsx)(r.Text, {
                         variant: n ? "text-md/normal" : "text-sm/normal",
                         color: "text-subtle",
-                        children: "#".concat(t.discriminator)
+                        children: `#${t.discriminator}`
                     })]
                 }), (0, l.jsxs)("div", {
-                    className: f.Xh,
-                    children: [(0, l.jsx)(a.Text, {
+                    className: x.Xh,
+                    children: [(0, l.jsx)(r.Text, {
                         variant: "text-xs/normal",
-                        color: x ? "text-feedback-critical" : "text-default",
-                        children: x ? h.intl.string(h.t["4bDptI"]) : h.intl.string(h.t.tFY5Zb)
-                    }), (0, l.jsxs)(a.Text, {
+                        color: _ ? "text-feedback-critical" : "text-default",
+                        children: _ ? g.intl.string(g.t["4bDptI"]) : g.intl.string(g.t.tFY5Zb)
+                    }), (0, l.jsxs)(r.Text, {
                         variant: "text-xs/normal",
                         color: "text-muted",
                         children: ["| ", m]
@@ -161,17 +133,17 @@ let x = e => {
             })]
         })
     },
-    b = e => {
+    T = e => {
         let {
             channelId: t
-        } = e, n = (0, g.mT)(t), r = (0, g.Iv)(t);
-        return (0, l.jsx)(a.HOs, {
-            className: f.kL,
-            children: [...n, ...r].map(e => {
+        } = e, n = (0, h.mT)(t), i = (0, h.Iv)(t);
+        return (0, l.jsx)(r.HOs, {
+            className: x.kL,
+            children: [...n, ...i].map(e => {
                 let {
                     user: n
                 } = e;
-                return (0, l.jsx)(j, {
+                return (0, l.jsx)(A, {
                     user: n,
                     channelId: t
                 }, n.id)

@@ -1,55 +1,55 @@
 /** chunk id: 900662, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => _,
-    N: () => f
+    A: () => m,
+    N: () => g
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(503698),
-    s = n.n(i),
+var s = n(503698),
+    r = n.n(s),
     l = n(827734),
     a = n(397927),
     o = n(854378),
-    c = n(235986),
-    u = n(652215),
-    d = n(985018),
+    d = n(235986),
+    c = n(652215),
+    u = n(985018),
     h = n(413700),
-    p = n(20976),
-    g = n(473169);
+    _ = n(20976),
+    p = n(473169);
 
-function f(e) {
+function g(e) {
     let {
         text: t,
-        buttonCta: i,
-        onClick: u
+        buttonCta: s,
+        onClick: c
     } = e;
-    return (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(o._V, {
+    return (0, i.jsxs)(i.Fragment, {
+        children: [(0, i.jsx)(o._V, {
             src: n(431979)
-        }), (0, r.jsx)(o.hE, {
-            className: s()(g.QX, g.QB, p.tR),
-            children: d.intl.string(d.t.eL5z0i)
-        }), (0, r.jsx)(o.tK, {
-            className: g.C2,
-            children: d.intl.string(d.t.poAv63)
-        }), (0, r.jsxs)(a.ZpM, {
+        }), (0, i.jsx)(o.hE, {
+            className: r()(p.QX, p.QB, _.tR),
+            children: u.intl.string(u.t.eL5z0i)
+        }), (0, i.jsx)(o.tK, {
+            className: p.C2,
+            children: u.intl.string(u.t.poAv63)
+        }), (0, i.jsxs)(a.ZpM, {
             className: h.Nr,
             type: a.ZpM.Types.CUSTOM,
-            children: [(0, r.jsx)("img", {
+            children: [(0, i.jsx)("img", {
                 alt: "",
                 className: h.q8,
                 src: n(133531)
-            }), (0, r.jsx)("img", {
+            }), (0, i.jsx)("img", {
                 alt: "",
                 className: h.dw,
                 src: n(610925)
-            }), (0, r.jsxs)(c.A, {
+            }), (0, i.jsxs)(d.A, {
                 className: h.p_,
-                direction: c.A.Direction.VERTICAL,
-                align: c.A.Align.STRETCH,
+                direction: d.A.Direction.VERTICAL,
+                align: d.A.Align.STRETCH,
                 grow: 0,
-                children: [(0, r.jsx)(a.Text, {
+                children: [(0, i.jsx)(a.Text, {
                     tag: "strong",
                     className: h.p8,
                     variant: "text-md/normal",
@@ -57,12 +57,12 @@ function f(e) {
                         color: l.A.unsafe_rawColors.PRIMARY_300.css
                     },
                     children: t
-                }), (0, r.jsx)("div", {
+                }), (0, i.jsx)("div", {
                     className: h.x6,
-                    children: (0, r.jsx)(a.Button, {
-                        text: i,
+                    children: (0, i.jsx)(a.Button, {
+                        text: s,
                         fullWidth: !0,
-                        onClick: u
+                        onClick: c
                     })
                 })]
             })]
@@ -70,19 +70,19 @@ function f(e) {
     })
 }
 
-function _(e) {
+function m(e) {
     let {
         text: t,
         buttonCta: n,
-        theme: i = u.NJ8.DARK,
-        onClick: s
+        theme: s = c.NJ8.DARK,
+        onClick: r
     } = e;
-    return (0, r.jsx)(o.Ay, {
-        theme: i,
-        children: (0, r.jsx)(f, {
+    return (0, i.jsx)(o.Ay, {
+        theme: s,
+        children: (0, i.jsx)(g, {
             text: t,
             buttonCta: n,
-            onClick: s
+            onClick: r
         })
     })
 }

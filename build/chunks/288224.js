@@ -1,10 +1,10 @@
 /** chunk id: 288224, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    X: () => r
+    X: () => i
 });
 var l = n(73153);
 
-function r(e) {
+function i(e) {
     let {
         emojiId: t,
         userImage: n

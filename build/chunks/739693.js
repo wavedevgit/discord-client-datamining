@@ -1,93 +1,85 @@
-/** chunk id: 739693, original params: t,e,n (module,exports,require) **/
-n.d(e, {
-    default: () => g
-}), n(896048);
-var l = n(627968),
-    r = n(64700),
-    s = n(158954),
-    i = n(311907),
-    a = n(397927),
+/** chunk id: 739693, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    default: () => m
+});
+var i = n(627968),
+    s = n(64700),
+    a = n(158954),
+    r = n(311907),
+    l = n(397927),
     o = n(631670),
-    u = n(836602),
+    c = n(836602),
     d = n(592074),
-    p = n(652215),
-    c = n(985018);
+    u = n(652215),
+    _ = n(985018);
 
-function g(t) {
-    var e, n, g, v;
+function m(e) {
     let {
-        transitionState: f,
-        onSuccess: w,
-        onClose: h,
-        requirementsUpdated: C
-    } = t, [E, b] = r.useState(""), [k, m] = r.useState(""), [y, S] = r.useState(""), [x, T] = r.useState(null), [j, R] = r.useState(null), {
-        formState: K,
-        errors: q
-    } = (0, i.cf)([u.A], () => ({
-        formState: u.A.getFormState(),
-        errors: u.A.getErrors()
-    })), A = r.useRef(null);
-    async function I(t) {
-        t.preventDefault(), (0, o.x8)();
-        let e = !1;
-        if ("" === k ? (T(c.intl.string(c.t["/7/oPU"])), e = !0) : T(null), k !== y ? (R(c.intl.string(c.t["IEKYZ/"])), e = !0) : R(null), e) return;
-        let n = await (0, o.yu)({
-            password: E,
-            newPassword: k
+        transitionState: t,
+        onSuccess: n,
+        onClose: m,
+        requirementsUpdated: A
+    } = e, [g, h] = s.useState(""), [x, p] = s.useState(""), [E, C] = s.useState(""), [T, S] = s.useState(null), [I, f] = s.useState(null), {
+        formState: N,
+        errors: b
+    } = (0, r.cf)([c.A], () => ({
+        formState: c.A.getFormState(),
+        errors: c.A.getErrors()
+    })), j = s.useRef(null);
+    async function v(e) {
+        e.preventDefault(), (0, o.x8)();
+        let t = !1;
+        if ("" === x ? (S(_.intl.string(_.t["/7/oPU"])), t = !0) : S(null), x !== E ? (f(_.intl.string(_.t["IEKYZ/"])), t = !0) : f(null), t) return;
+        let i = await (0, o._L)({
+            password: g,
+            newPassword: x
         });
-        if (null == n ? void 0 : n.ok) w();
-        else {
-            var l;
-            (null == n || null == (l = n.body) ? void 0 : l.username) != null && (0, d.E)()
-        }
+        i?.ok ? n() : i?.body?.username != null && (0, d.E)()
     }
-    return r.useEffect(() => {
-        if (f === a.ip4.ENTERED) {
-            var t;
-            null == (t = A.current) || t.focus()
-        }
-    }, [f]), (0, l.jsx)("form", {
-        onSubmit: I,
-        children: (0, l.jsx)(s.Modal, {
-            transitionState: f,
-            onClose: h,
-            title: c.intl.string(c.t.geta79),
-            subtitle: C ? c.intl.string(c.t["37iHbZ"]) : c.intl.string(c.t.iOurYj),
+    return s.useEffect(() => {
+        t === l.ip4.ENTERED && j.current?.focus()
+    }, [t]), (0, i.jsx)("form", {
+        onSubmit: v,
+        children: (0, i.jsx)(a.Modal, {
+            transitionState: t,
+            onClose: m,
+            title: _.intl.string(_.t.geta79),
+            subtitle: A ? _.intl.string(_.t["37iHbZ"]) : _.intl.string(_.t.iOurYj),
             actions: [{
                 variant: "secondary",
-                text: c.intl.string(c.t["ETE/oC"]),
-                onClick: h
+                text: _.intl.string(_.t["ETE/oC"]),
+                onClick: m
             }, {
                 variant: "primary",
-                text: c.intl.string(c.t.i4jeWR),
-                loading: K === p.XlH.SUBMITTING,
+                text: _.intl.string(_.t.i4jeWR),
+                loading: N === u.XlH.SUBMITTING,
                 type: "submit"
             }],
-            children: (0, l.jsxs)(a.BJc, {
+            children: (0, i.jsxs)(l.BJc, {
                 gap: 20,
-                children: [(0, l.jsx)(a.ksK, {
-                    label: c.intl.string(c.t.WBqMRQ),
-                    error: null == q || null == (g = q.password) ? void 0 : g[0],
+                children: [(0, i.jsx)(l.ksK, {
+                    label: _.intl.string(_.t.WBqMRQ),
+                    error: b?.password?.[0],
                     type: "password",
-                    value: E,
-                    onChange: b,
-                    inputRef: A,
+                    value: g,
+                    onChange: h,
+                    inputRef: j,
                     autoComplete: "current-password",
                     required: !0
-                }), (0, l.jsx)(a.ksK, {
-                    label: c.intl.string(c.t["8dM4FO"]),
-                    error: null != (e = null != (n = null == q || null == (v = q.new_password) ? void 0 : v[0]) ? n : x) ? e : void 0,
+                }), (0, i.jsx)(l.ksK, {
+                    label: _.intl.string(_.t["8dM4FO"]),
+                    error: b?.new_password?.[0] ?? T ?? void 0,
                     type: "password",
-                    value: k,
-                    onChange: m,
+                    value: x,
+                    onChange: p,
                     autoComplete: "new-password",
                     required: !0
-                }), (0, l.jsx)(a.ksK, {
-                    label: c.intl.string(c.t.iQG2KC),
-                    error: null != j ? j : void 0,
+                }), (0, i.jsx)(l.ksK, {
+                    label: _.intl.string(_.t.iQG2KC),
+                    error: I ?? void 0,
                     type: "password",
-                    value: y,
-                    onChange: S,
+                    value: E,
+                    onChange: C,
                     autoComplete: "new-password",
                     required: !0
                 })]

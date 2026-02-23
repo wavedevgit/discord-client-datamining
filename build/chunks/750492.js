@@ -1,26 +1,26 @@
 /** chunk id: 750492, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => s
+    A: () => o
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
 var l = n(158954),
-    i = n(735321),
-    a = n(985018),
-    o = n(997338);
+    a = n(735321),
+    s = n(985018),
+    r = n(997338);
 
-function s(e) {
+function o(e) {
     let {
         widgetType: t,
         gameCount: n
-    } = e, s = (0, i.cv)(t);
-    return n <= s ? null : (0, r.jsx)("div", {
+    } = e, o = (0, a.cv)(t);
+    return n <= o ? null : (0, i.jsx)("div", {
         role: "alert",
-        className: o.l,
-        children: (0, r.jsx)(l.wx6, {
+        className: r.l,
+        children: (0, i.jsx)(l.wx6, {
             type: "warning",
-            children: a.intl.formatToPlainString(a.t.Rv3wYq, {
-                maxGames: s
+            children: s.intl.formatToPlainString(s.t.Rv3wYq, {
+                maxGames: o
             })
         })
     })

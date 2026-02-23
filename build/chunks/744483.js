@@ -1,35 +1,36 @@
 /** chunk id: 744483, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => g
+    A: () => p
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var l = n(311907),
-    i = n(397927),
-    s = n(604681),
+var s = n(311907),
+    l = n(397927),
+    r = n(604681),
     a = n(672385),
     o = n(950191),
     c = n(168015),
-    u = n(761640),
-    d = n(58736),
-    p = n(652215),
-    h = n(985018);
+    d = n(761640),
+    u = n(58736),
+    h = n(652215),
+    A = n(985018);
 
-function g(e) {
+function p(e) {
     let {
         channel: t,
         showCallOrActivityPanel: n
-    } = e, g = (0, l.bG)([u.Ay], () => u.Ay.getSection(t.id, null == t ? void 0 : t.isDM())), f = (0, o.Ay)(t.getRecipientId()), m = (0, c.A)(), b = g === p.YvQ.PROFILE && m;
-    return (0, r.jsx)(d.In, {
+    } = e, p = (0, s.bG)([d.Ay], () => d.Ay.getSection(t.id, t?.isDM())), g = (0, o.Ay)(t.getRecipientId()), m = (0, c.A)(), _ = p === h.YvQ.PROFILE && m;
+    return (0, i.jsx)(u.In, {
         disabled: !m || n,
-        tooltip: !m || n ? h.intl.string(h.t.YneDgF) : b ? h.intl.string(h.t.niD64e) : h.intl.string(h.t["+FAsHq"]),
-        icon: i.nRI,
+        tooltip: !m || n ? A.intl.string(A.t.YneDgF) : _ ? A.intl.string(A.t.niD64e) : A.intl.string(A.t["+FAsHq"]),
+        icon: l.nRI,
         onClick: () => {
             (0, a.am)({
-                displayProfile: f,
-                isProfileOpen: !b
-            }), s.A.toggleUserProfileSidebarSection()
+                displayProfile: g,
+                isProfileOpen: !_
+            }), r.A.toggleUserProfileSidebarSection()
         },
-        selected: b && m && !n
+        selected: _ && m && !n
     })
 }

@@ -1,7 +1,7 @@
 /** chunk id: 15073, original params: e,t,i (module,exports,require) **/
 i.d(t, {
-    TZ: () => d,
-    zi: () => o
+    TZ: () => o,
+    zi: () => d
 });
 var s = i(311907),
     l = i(600975),
@@ -23,7 +23,7 @@ let r = (0, l.C)({
     }]
 });
 
-function o(e) {
+function d(e) {
     return r.useExperiment({
         guildId: e,
         location: "dd4beb_1"
@@ -32,18 +32,17 @@ function o(e) {
     })
 }
 
-function d(e) {
-    var t;
-    let i = (0, s.bG)([n.A], () => n.A.can(a.xBc.MANAGE_GUILD, e)),
+function o(e) {
+    let t = (0, s.bG)([n.A], () => n.A.can(a.xBc.MANAGE_GUILD, e)),
         {
-            enabled: l
+            enabled: i
         } = r.useExperiment({
-            guildId: null != (t = null == e ? void 0 : e.id) ? t : a.dJq,
+            guildId: e?.id ?? a.dJq,
             location: "dd4beb_3"
         }, {
             autoTrackExposure: !0
         });
     if (null == e) return !1;
-    let o = e.features.has(a.GuildFeatures.COMMUNITY);
-    return i && o && l
+    let l = e.features.has(a.GuildFeatures.COMMUNITY);
+    return t && l && i
 }

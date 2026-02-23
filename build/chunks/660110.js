@@ -1,31 +1,31 @@
 /** chunk id: 660110, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => b,
-    V: () => j
+    A: () => T,
+    V: () => A
 });
-var l, r = n(627968);
+var l, i = n(627968);
 n(64700);
-var i = n(397927),
-    a = n(975807),
+var a = n(397927),
+    r = n(975807),
     s = n(935649),
     c = n(847599),
-    o = n(36149),
-    u = n(975571),
-    d = n(418208),
-    g = n(652215),
-    h = n(985018);
+    d = n(36149),
+    o = n(975571),
+    u = n(418208),
+    h = n(652215),
+    g = n(985018);
 
-function f() {
-    return (0, o.yM)() ? h.intl.format(h.t.iWGjcg, {
-        hook: e => (0, r.jsx)(i.MzZ, {
+function x() {
+    return (0, d.yM)() ? g.intl.format(g.t.iWGjcg, {
+        hook: e => (0, i.jsx)(a.MzZ, {
             onClick: e => {
-                e.preventDefault(), e.stopPropagation(), (0, a.A)(u.A.getArticleURL(g.MVz.TIGGER_PAWTECT_LEARN_MORE))
+                e.preventDefault(), e.stopPropagation(), (0, r.A)(o.A.getArticleURL(h.MVz.TIGGER_PAWTECT_LEARN_MORE))
             },
             useDefaultUnderlineStyles: !1,
             children: e.join("")
         })
-    }) : h.intl.format(h.t.edpbxy, {
-        hook: e => (0, r.jsx)(i.MzZ, {
+    }) : g.intl.format(g.t.edpbxy, {
+        hook: e => (0, i.jsx)(a.MzZ, {
             onClick: e => {
                 e.preventDefault(), e.stopPropagation(), s.A.showAgeVerificationGetStartedModal({
                     entryPoint: c.q1.START_STAGE_PROMPT
@@ -37,15 +37,15 @@ function f() {
     })
 }
 
-function x(e) {
+function _(e) {
     let {
         className: t
-    } = e, n = (0, o.yM)();
-    return (0, r.jsx)("div", {
+    } = e, n = (0, d.yM)();
+    return (0, i.jsx)("div", {
         className: t,
-        children: (0, r.jsx)(i.wx6, {
+        children: (0, i.jsx)(a.wx6, {
             type: n ? "info" : "warning",
-            children: (0, r.jsx)(f, {})
+            children: (0, i.jsx)(x, {})
         })
     })
 }
@@ -53,45 +53,45 @@ function x(e) {
 function m(e) {
     let {
         className: t
-    } = e, n = (0, o.yM)();
-    return (0, r.jsx)("div", {
+    } = e, n = (0, d.yM)();
+    return (0, i.jsx)("div", {
         className: t,
-        children: (0, r.jsxs)(i.BJc, {
+        children: (0, i.jsxs)(a.BJc, {
             direction: "horizontal",
             gap: 4,
             align: "center",
-            children: [n ? (0, r.jsx)(i.mir, {
+            children: [n ? (0, i.jsx)(a.mir, {
                 size: "refresh_sm",
                 color: "var(--text-default)"
-            }) : (0, r.jsx)(i.id, {
+            }) : (0, i.jsx)(a.id, {
                 size: "refresh_sm",
                 color: "var(--text-default)"
-            }), (0, r.jsx)(i.Text, {
+            }), (0, i.jsx)(a.Text, {
                 color: "text-default",
                 variant: "text-sm/medium",
-                children: (0, r.jsx)(f, {})
+                children: (0, i.jsx)(x, {})
             })]
         })
     })
 }
-var j = ((l = {})[l.TOP = 0] = "TOP", l[l.BOTTOM = 1] = "BOTTOM", l);
+var A = ((l = {})[l.TOP = 0] = "TOP", l[l.BOTTOM = 1] = "BOTTOM", l);
 
-function b(e) {
+function T(e) {
     let {
         className: t,
         noBackground: n,
         divider: l,
-        channelId: a
+        channelId: r
     } = e;
-    if (!(0, d.Vv)(null != a ? a : void 0)) return null;
+    if (!(0, u.Vv)(r ?? void 0)) return null;
     let s = Array.isArray(l) ? l : null != l ? [l] : [];
-    return (0, r.jsxs)(r.Fragment, {
-        children: [s.includes(0) && (0, r.jsx)(i.cGx, {
+    return (0, i.jsxs)(i.Fragment, {
+        children: [s.includes(0) && (0, i.jsx)(a.cGx, {
             gap: 16
-        }), (0, r.jsx)("div", {
+        }), (0, i.jsx)("div", {
             className: t,
-            children: n ? (0, r.jsx)(m, {}) : (0, r.jsx)(x, {})
-        }), (null == s ? void 0 : s.includes(1)) && (0, r.jsx)(i.cGx, {
+            children: n ? (0, i.jsx)(m, {}) : (0, i.jsx)(_, {})
+        }), s?.includes(1) && (0, i.jsx)(a.cGx, {
             gap: 16
         })]
     })

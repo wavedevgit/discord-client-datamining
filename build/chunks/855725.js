@@ -1,13 +1,14 @@
 /** chunk id: 855725, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    w: () => i
+    w: () => l
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var l = n(397927);
+var s = n(397927);
 
-function i(e) {
-    return (0, r.jsx)(l.hVq, {
+function l(e) {
+    return (0, i.jsx)(s.hVq, {
         count: e
     })
 }

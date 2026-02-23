@@ -1,171 +1,152 @@
-/** chunk id: 539895, original params: e,t,n (module,exports,require) **/
-let r;
-n.d(t, {
-    A: () => T
-}), n(938796), n(896048), n(321073);
-var i, l = n(311907),
-    o = n(73153),
-    u = n(846293),
-    c = n(346542),
-    d = n(976860),
-    s = n(95701),
-    a = n(961350),
-    f = n(734057),
-    O = n(696451),
-    b = n(71393),
-    g = n(299091),
-    p = n(576705),
-    y = n(994500),
-    v = n(287809),
-    h = n(860689),
-    A = n(837921),
-    w = n(430914),
-    S = n(652215),
-    m = n(746080);
-
-function I(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-
-function E(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            I(e, t, n[t])
-        })
-    }
-    return e
-}
-let j = S.BRT.APP,
-    P = !1,
-    _ = !1,
+/** chunk id: 539895, original params: e,t,i (module,exports,require) **/
+let n;
+i.d(t, {
+    A: () => y
+}), i(938796), i(321073);
+var l = i(311907),
+    r = i(73153),
+    d = i(846293),
+    a = i(346542),
+    o = i(976860),
+    u = i(95701),
+    s = i(961350),
+    _ = i(734057),
+    c = i(696451),
+    f = i(71393),
+    A = i(299091),
+    g = i(576705),
+    I = i(994500),
+    S = i(287809),
+    h = i(860689),
+    v = i(837921),
+    p = i(430914),
+    m = i(652215),
+    E = i(746080);
+let w = m.BRT.APP,
+    b = !1,
+    C = !1,
     N = [];
 
-function C() {
-    P = !0
+function T() {
+    b = !0
 }
-class R extends(i = l.Ay.Store) {
+class O extends l.Ay.Store {
+    static displayName = "InviteModalStore";
     initialize() {
-        this.waitFor(a.default, f.A, O.Ay, b.A, g.A, p.A, y.A, v.default)
+        this.waitFor(s.default, _.A, c.Ay, f.A, A.A, g.A, I.A, S.default)
     }
     isOpen() {
-        let e = __OVERLAY__ ? S.BRT.OVERLAY : S.BRT.APP;
-        return !!(P && N.length > 0 && j === e)
+        let e = __OVERLAY__ ? m.BRT.OVERLAY : m.BRT.APP;
+        return !!(b && N.length > 0 && w === e)
     }
     getProps() {
         return {
             invite: N.length > 0 ? N[0][0] : null,
-            error: null != r && "" !== r ? r : null,
-            submitting: _
+            error: null != n && "" !== n ? n : null,
+            submitting: C
         }
     }
 }
-I(R, "displayName", "InviteModalStore");
-let T = new R(o.h, {
-    OVERLAY_INITIALIZE: C,
-    CONNECTION_OPEN: C,
+let y = new O(r.h, {
+    OVERLAY_INITIALIZE: T,
+    CONNECTION_OPEN: T,
     CONNECTION_CLOSED: function() {
-        P = !1
+        b = !1
     },
     INVITE_MODAL_OPEN: function(e) {
         let t = e.invite;
         if (null == t) return !1;
-        if (t.state !== S.elq.EXPIRED && t.state !== S.elq.BANNED && t.state !== S.elq.ERROR) {
+        if (t.state !== m.elq.EXPIRED && t.state !== m.elq.BANNED && t.state !== m.elq.ERROR) {
             let {
                 channel: e,
-                guild: r
+                guild: i
             } = t;
             if (null == e) return !1;
-            if ((0, s.MK)(e.type)) {
-                if (null != f.A.getChannel(e.id)) return (0, d.uh)(S.ME, e.id), A.Ay.focus(), !1
+            if ((0, u.MK)(e.type)) {
+                if (null != _.A.getChannel(e.id)) return (0, o.uh)(m.ME, e.id), v.Ay.focus(), !1
             } else {
-                if (null == r) return !1;
-                if (null != b.A.getGuild(r.id) && !(0, c.G4)(t)) {
+                if (null == i) return !1;
+                if (null != f.A.getGuild(i.id) && !(0, a.G4)(t)) {
                     let e = !1;
                     if (null != t.roles && t.roles.length > 0) {
-                        var n;
-                        let i = a.default.getId(),
-                            l = O.Ay.getMember(r.id, i),
-                            o = new Set(null != (n = null == l ? void 0 : l.roles) ? n : []);
-                        e = t.roles.some(e => !o.has(e.id))
+                        let n = s.default.getId(),
+                            l = c.Ay.getMember(i.id, n),
+                            r = new Set(l?.roles ?? []);
+                        e = t.roles.some(e => !r.has(e.id))
                     }
                     if (!e) {
                         let e = function(e) {
-                            if ((0, c.d4)(e)) return m.VV.ROLE_SUBSCRIPTIONS;
+                            if ((0, a.d4)(e)) return E.VV.ROLE_SUBSCRIPTIONS;
                             let {
                                 channel: t
                             } = e;
                             if (null != t) {
-                                let e = f.A.getChannel(t.id);
-                                if (p.A.can(S.xBc.VIEW_CHANNEL, e)) return t.id
+                                let e = _.A.getChannel(t.id);
+                                if (g.A.can(m.xBc.VIEW_CHANNEL, e)) return t.id
                             }
                             return null
                         }(t);
-                        return (0, d.uh)(r.id, e), A.Ay.focus(), !1
+                        return (0, o.uh)(i.id, e), v.Ay.focus(), !1
                     }
                 }
             }
         }
         if (N.some(e => {
-                let [n] = e;
-                return n.code === t.code
+                let [i] = e;
+                return i.code === t.code
             })) return !1;
-        j = e.context, _ = !1;
-        let r = function(e) {
+        w = e.context, C = !1;
+        let i = function(e) {
             let {
                 approximate_member_count: t,
-                approximate_presence_count: n,
-                code: r,
-                state: i,
-                target_type: l,
-                target_user: o,
-                target_application: u,
-                type: c,
-                channel: d,
+                approximate_presence_count: i,
+                code: n,
+                state: l,
+                target_type: r,
+                target_user: d,
+                target_application: a,
+                type: o,
+                channel: u,
                 guild: s,
-                is_nickname_changeable: a,
-                flags: f
-            } = e, O = {
-                code: r,
-                state: i,
+                is_nickname_changeable: _,
+                flags: c
+            } = e, f = {
+                code: n,
+                state: l,
                 approximate_member_count: t,
-                approximate_presence_count: n,
-                target_type: l,
-                target_user: o,
-                target_application: u,
-                type: c,
-                is_nickname_changeable: a,
-                flags: f
+                approximate_presence_count: i,
+                target_type: r,
+                target_user: d,
+                target_application: a,
+                type: o,
+                is_nickname_changeable: _,
+                flags: c
             };
-            return null != d && (O.channel = E({}, d)), null != s && (O.guild = (0, h.DY)(s)), null != e.inviter && (O.inviter = E({}, e.inviter)), null != e.roles && (O.roles = e.roles), O
+            return null != u && (f.channel = {
+                ...u
+            }), null != s && (f.guild = (0, h.DY)(s)), null != e.inviter && (f.inviter = {
+                ...e.inviter
+            }), null != e.roles && (f.roles = e.roles), f
         }(t);
-        N.push([r, e.resolve]), (0, w.Zs)({
+        N.push([i, e.resolve]), (0, p.Zs)({
             location: "accept_invite_modal",
             autoTrackExposure: !0,
             guild: t.guild
-        }).showFriendsInServer && u.Ay.fetchFriendMembers(t.code)
+        }).showFriendsInServer && d.Ay.fetchFriendMembers(t.code)
     },
     INVITE_MODAL_CLOSE: function() {
-        if (r = null, _ = !1, N.length > 0) {
+        if (n = null, C = !1, N.length > 0) {
             let [, e] = N.shift();
             null != e && e()
         }
     },
     INVITE_ACCEPT: function() {
-        _ = !0
+        C = !0
     },
     INVITE_MODAL_ERROR: function(e) {
         let {
             message: t
         } = e;
-        r = t, _ = !1
+        n = t, C = !1
     }
 })

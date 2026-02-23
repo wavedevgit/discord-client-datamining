@@ -1,28 +1,27 @@
 /** chunk id: 860051, original params: e,t,n (module,exports,require) **/
 n.r(t), n.d(t, {
-    default: () => p
+    default: () => u
 });
-var l = n(627968),
-    r = n(311907),
-    i = n(627363),
-    o = n(91242),
-    a = n(127938),
+var a = n(627968),
+    i = n(311907),
+    o = n(627363),
+    r = n(91242),
+    l = n(127938),
     c = n(923917),
-    s = n(620148),
-    u = n(33445),
+    _ = n(620148),
+    s = n(33445),
     d = n(985018);
 
-function p(e) {
-    var t, n;
+function u(e) {
     let {
-        windowKey: p
-    } = e, f = (0, s.A)(), m = (0, r.bG)([o.A], () => o.A.getConnectedFrame()), {
-        data: A
-    } = (0, i.YY)(null == m ? void 0 : m.applicationId), b = null != (t = null != (n = null == f ? void 0 : f.name) ? n : null == A ? void 0 : A.name) ? t : d.intl.string(d.t.IC5Ann);
-    return (0, l.jsx)(c.A, {
+        windowKey: t
+    } = e, n = (0, _.A)(), u = (0, i.bG)([r.A], () => r.A.getConnectedFrame()), {
+        data: p
+    } = (0, o.YY)(u?.applicationId), m = n?.name ?? p?.name ?? d.intl.string(d.t.IC5Ann);
+    return (0, a.jsx)(c.A, {
         withTitleBar: !0,
-        windowKey: p,
-        title: b,
-        children: null != f ? (0, l.jsx)(u.A, {}) : (0, l.jsx)(a.A, {})
+        windowKey: t,
+        title: m,
+        children: null != n ? (0, a.jsx)(s.A, {}) : (0, a.jsx)(l.A, {})
     })
 }

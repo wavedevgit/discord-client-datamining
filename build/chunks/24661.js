@@ -1,52 +1,52 @@
-/** chunk id: 24661, original params: n,t,e (module,exports,require) **/
-e.d(t, {
-    A: () => A
+/** chunk id: 24661, original params: t,e,n (module,exports,require) **/
+n.d(e, {
+    A: () => E
 });
-var i = e(627968);
-e(64700);
-var l = e(311907),
-    r = e(397927),
-    a = e(931991),
-    s = e(849736),
-    c = e(698441),
-    o = e(496092),
-    d = e(988794),
-    u = e(985018);
+var l = n(627968);
+n(64700);
+var i = n(311907),
+    r = n(397927),
+    a = n(931991),
+    d = n(849736),
+    s = n(698441),
+    u = n(496092),
+    o = n(988794),
+    c = n(985018);
 
-function A(n, t, A) {
+function E(t, e, E) {
     let {
-        canManageGuildEvent: b
-    } = (0, a.nr)(null != A ? A : t), g = (0, l.bG)([c.Ay], () => c.Ay.isActive(n)), h = (0, l.bG)([c.Ay], () => c.Ay.getGuildScheduledEvent(n), [n]), j = b(h);
-    if (null == n || !j || !g || (null == h ? void 0 : h.entity_type) === d.Ps.EXTERNAL) return null;
-    let v = () => {
-        (null == A ? void 0 : A.isGuildStageVoice()) ? (0, s.OE)(A) : null != n && o.A.endEvent(n, t.id), (0, r.s7G)()
+        canManageGuildEvent: A
+    } = (0, a.nr)(E ?? e), g = (0, i.bG)([s.Ay], () => s.Ay.isActive(t)), _ = (0, i.bG)([s.Ay], () => s.Ay.getGuildScheduledEvent(t), [t]), h = A(_);
+    if (null == t || !h || !g || _?.entity_type === o.Ps.EXTERNAL) return null;
+    let T = () => {
+        E?.isGuildStageVoice() ? (0, d.OE)(E) : null != t && u.A.endEvent(t, e.id), (0, r.s7G)()
     };
-    return (0, i.jsx)(r.Drp, {
-        id: u.intl.string(u.t.qaYzPA),
-        label: u.intl.string(u.t.qaYzPA),
+    return (0, l.jsx)(r.Drp, {
+        id: c.intl.string(c.t.qaYzPA),
+        label: c.intl.string(c.t.qaYzPA),
         action: function() {
             (0, r.mMO)(async () => {
                 let {
-                    Modal: n
-                } = await Promise.resolve().then(e.bind(e, 158954));
-                return t => {
+                    Modal: t
+                } = await Promise.resolve().then(n.bind(n, 158954));
+                return e => {
                     let {
-                        onClose: e,
-                        transitionState: l
-                    } = t;
-                    return (0, i.jsx)(n, {
-                        transitionState: l,
-                        title: u.intl.string(u.t.qaYzPA),
-                        subtitle: u.intl.string(u.t.bnDQ7E),
-                        onClose: e,
+                        onClose: n,
+                        transitionState: i
+                    } = e;
+                    return (0, l.jsx)(t, {
+                        transitionState: i,
+                        title: c.intl.string(c.t.qaYzPA),
+                        subtitle: c.intl.string(c.t.bnDQ7E),
+                        onClose: n,
                         actions: [{
-                            onClick: e,
+                            onClick: n,
                             variant: "secondary",
-                            text: u.intl.string(u.t["ETE/oC"])
+                            text: c.intl.string(c.t["ETE/oC"])
                         }, {
-                            onClick: v,
+                            onClick: T,
                             variant: "critical-primary",
-                            text: u.intl.string(u.t.mjB9pd)
+                            text: c.intl.string(c.t.mjB9pd)
                         }]
                     })
                 }

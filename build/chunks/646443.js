@@ -1,33 +1,32 @@
-/** chunk id: 646443, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    l: () => c
+/** chunk id: 646443, original params: e,t,l (module,exports,require) **/
+l.d(t, {
+    l: () => u
 });
-var r = n(627968),
-    i = n(934551),
-    a = n(732955),
-    o = n(397927),
-    s = n(957565),
-    l = n(184339);
-let c = e => {
+var a = l(627968),
+    n = l(934551),
+    r = l(732955),
+    i = l(397927),
+    s = l(957565),
+    o = l(184339);
+let u = e => {
     let {
         label: t,
-        value: n
+        value: l
     } = e;
-    return (0, r.jsxs)("div", {
-        className: l.I,
-        children: [(0, r.jsxs)(o.Text, {
+    return (0, a.jsxs)("div", {
+        className: o.I,
+        children: [(0, a.jsxs)(i.Text, {
             variant: "text-sm/medium",
             children: [t, ":"]
-        }), (0, r.jsx)(o.Text, {
+        }), (0, a.jsx)(i.Text, {
             variant: "text-sm/normal",
-            children: n
-        }), (0, r.jsx)(a.K0, {
+            children: l
+        }), (0, a.jsx)(r.K0, {
             size: "sm",
             "aria-label": "Copy Link",
             variant: "icon-only",
-            icon: i.CopyIcon,
-            onClick: () => (0, s.C)(n)
+            icon: n.CopyIcon,
+            onClick: () => (0, s.C)(l)
         })]
     })
 }

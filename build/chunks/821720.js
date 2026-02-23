@@ -1,57 +1,50 @@
 /** chunk id: 821720, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => d
-}), n(321073), n(896048);
-var l = n(64700),
-    r = n(311907),
-    i = n(573695),
+    A: () => u
+}), n(321073);
+var i = n(64700),
+    l = n(311907),
+    s = n(573695),
     a = n(911411),
-    s = n(290863);
+    r = n(290863);
 let o = [],
     c = [],
-    u = [];
+    d = [];
 
-function d(e, t) {
-    let [n, d] = function(e, t) {
-        let [n, i] = l.useMemo(() => (function(e, t) {
-            if (!t.isPrivate()) return [u, c];
-            let n = e.filter(e => {
-                    var t, n;
-                    return (null == (t = e.application) ? void 0 : t.id) != null && (null == (n = e.activity) ? void 0 : n.party_id) != null
-                }),
-                l = n.map(e => e.id);
-            return [n, l]
-        })(e, t), [e, t]), a = (0, r.yK)([s.A], () => {
+function u(e, t) {
+    let [n, u] = function(e, t) {
+        let [n, s] = i.useMemo(() => (function(e, t) {
+            if (!t.isPrivate()) return [d, c];
+            let n = e.filter(e => e.application?.id != null && e.activity?.party_id != null),
+                i = n.map(e => e.id);
+            return [n, i]
+        })(e, t), [e, t]), a = (0, l.yK)([r.A], () => {
             let e = [];
             return n.forEach(t => {
-                null != s.A.findActivity(t.author.id, e => {
-                    var n, l, r;
-                    return e.application_id === (null == (n = t.application) ? void 0 : n.id) && (null == (l = e.party) ? void 0 : l.id) === (null == (r = t.activity) ? void 0 : r.party_id)
-                }, null, !0) && e.push(t.id)
+                null != r.A.findActivity(t.author.id, e => e.application_id === t.application?.id && e.party?.id === t.activity?.party_id, null, !0) && e.push(t.id)
             }), e
         }, [n]);
-        return [i, l.useMemo(() => (function(e, t) {
+        return [s, i.useMemo(() => (function(e, t) {
             if (0 === e.length) return o;
             let n = [];
             return e.forEach(e => {
-                var l, r;
-                let i = null == (l = e.application) ? void 0 : l.id,
-                    a = null == (r = e.activity) ? void 0 : r.party_id;
-                if (e.id in t || null == i || null == a) return;
+                let i = e.application?.id,
+                    l = e.activity?.party_id;
+                if (e.id in t || null == i || null == l) return;
                 let s = e.timestamp.getTime(),
-                    o = {
+                    a = {
                         userId: e.author.id,
                         applicationId: i,
-                        partyId: a,
+                        partyId: l,
                         messageId: e.id,
                         channelId: e.channel_id,
                         inviteTime: s
                     };
-                n.push(o)
+                n.push(a)
             }), n
         })(n, a), [n, a])]
     }(e, t);
-    return l.useEffect(() => {
-        for (let e of d) a.A.isSubscribed(e) || (0, i.B)(e)
-    }, [d]), [n, d]
+    return i.useEffect(() => {
+        for (let e of u) a.A.isSubscribed(e) || (0, s.B)(e)
+    }, [u]), [n, u]
 }

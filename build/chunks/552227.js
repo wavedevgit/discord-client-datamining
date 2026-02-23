@@ -1,40 +1,40 @@
 /** chunk id: 552227, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => s
+    A: () => r
 });
-var l = n(627968);
+var i = n(627968);
 n(64700);
-var r = n(397927),
-    i = n(985018),
+var l = n(397927),
+    s = n(985018),
     a = n(270920);
-let s = e => {
+let r = e => {
     let {
         guild: t,
-        onClose: s
+        onClose: r
     } = e;
-    return (0, l.jsxs)("div", {
+    return (0, i.jsxs)("div", {
         className: a.kL,
-        children: [(0, l.jsx)("img", {
+        children: [(0, i.jsx)("img", {
             alt: "",
             className: a.Sl,
             src: n(960416)
-        }), (0, l.jsxs)("div", {
+        }), (0, i.jsxs)("div", {
             className: a.Qs,
-            children: [(0, l.jsx)(r.Heading, {
+            children: [(0, i.jsx)(l.Heading, {
                 variant: "heading-md/semibold",
-                children: i.intl.format(i.t.THgVCC, {
+                children: s.intl.format(s.t.THgVCC, {
                     guild: t.name
                 })
-            }), (0, l.jsx)(r.Text, {
+            }), (0, i.jsx)(l.Text, {
                 color: "text-default",
                 variant: "text-sm/normal",
-                children: i.intl.string(i.t["1yq3nO"])
-            }), (0, l.jsx)("div", {
+                children: s.intl.string(s.t["1yq3nO"])
+            }), (0, i.jsx)("div", {
                 className: a.UD,
-                children: (0, l.jsx)(r.Button, {
+                children: (0, i.jsx)(l.Button, {
                     variant: "primary",
-                    text: i.intl.string(i.t.hLw0wc),
-                    onClick: s
+                    text: s.intl.string(s.t.hLw0wc),
+                    onClick: r
                 })
             })]
         })]

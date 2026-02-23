@@ -1,69 +1,66 @@
 /** chunk id: 495565, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    r: () => s
-}), n(321073), n(896048), n(747238), n(812715);
-var r = n(64700),
-    l = n(575593),
+    r: () => l
+}), n(321073);
+var a = n(64700),
+    r = n(575593),
     i = n(985018);
-let a = function(e) {
-        var t, n;
-        let r = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-        if (r) return i.intl.formatToPlainString(i.t["/0Yndu"], {
-            num: null == (n = e.bundledProducts) ? void 0 : n.length
+let s = function(e) {
+        let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
+        if (t) return i.intl.formatToPlainString(i.t["/0Yndu"], {
+            num: e.bundledProducts?.length
         });
-        let a = null != (t = e.bundledProducts) ? t : [],
-            s = [],
-            o = !1;
-        for (let e of a) switch (e.type) {
-            case l.R.AVATAR_DECORATION:
-                s.push(i.intl.formatToPlainString(i.t.Ntv9Jt, {
+        let n = e.bundledProducts ?? [],
+            a = [],
+            s = !1;
+        for (let e of n) switch (e.type) {
+            case r.R.AVATAR_DECORATION:
+                a.push(i.intl.formatToPlainString(i.t.Ntv9Jt, {
                     itemName: e.name
                 }));
                 break;
-            case l.R.PROFILE_EFFECT:
-                s.push(i.intl.formatToPlainString(i.t["3Y8q7a"], {
+            case r.R.PROFILE_EFFECT:
+                a.push(i.intl.formatToPlainString(i.t["3Y8q7a"], {
                     itemName: e.name
                 }));
                 break;
-            case l.R.NAMEPLATE:
-                s.push(i.intl.formatToPlainString(i.t["2keXky"], {
+            case r.R.NAMEPLATE:
+                a.push(i.intl.formatToPlainString(i.t["2keXky"], {
                     itemName: e.name
-                })), o = !0
+                })), s = !0
         }
-        if (o) {
-            let e = s.join(", ").replace(/, ([^,]*)$/, " & $1");
+        if (s) {
+            let e = a.join(", ").replace(/, ([^,]*)$/, " & $1");
             return i.intl.formatToPlainString(i.t.Ofrqj6, {
                 joinedItems: e
             })
         }
-        let c = s.join(" & ");
+        let l = a.join(" & ");
         return i.intl.formatToPlainString(i.t.Ofrqj6, {
-            joinedItems: c
+            joinedItems: l
         })
     },
-    s = function(e) {
-        let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
-            n = arguments.length > 2 ? arguments[2] : void 0;
-        return (0, r.useMemo)(() => {
-            if (null != n) return 3 === n ? i.intl.string(i.t.QUjmjp) : 7 === n ? i.intl.string(i.t.yPxJA2) : i.intl.string(i.t["o+VpXZ"]);
+    l = function(e) {
+        let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
+        return (0, a.useMemo)(() => {
             if (null != e && null != e.summary && "" !== e.summary) {
-                if (e.type === l.R.BUNDLE && e.summary.includes("{joinedItems}")) {
-                    let n = a(e, t);
+                if (e.type === r.R.BUNDLE && e.summary.includes("{joinedItems}")) {
+                    let n = s(e, t);
                     return e.summary.replace("{joinedItems}", n)
                 }
                 return e.summary
             }
-            switch (null == e ? void 0 : e.type) {
-                case l.R.AVATAR_DECORATION:
+            switch (e?.type) {
+                case r.R.AVATAR_DECORATION:
                     return i.intl.string(i.t["3lv7q2"]);
-                case l.R.PROFILE_EFFECT:
+                case r.R.PROFILE_EFFECT:
                     return i.intl.string(i.t.VhJL72);
-                case l.R.NAMEPLATE:
+                case r.R.NAMEPLATE:
                     return i.intl.string(i.t.ik37EZ);
-                case l.R.BUNDLE:
-                    return a(e, t);
+                case r.R.BUNDLE:
+                    return s(e, t);
                 default:
                     return ""
             }
-        }, [e, t, n])
+        }, [e, t])
     }

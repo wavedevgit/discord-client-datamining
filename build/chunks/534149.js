@@ -1,51 +1,11 @@
-/** chunk id: 534149, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    N: () => d
+/** chunk id: 534149, original params: e,t,l (module,exports,require) **/
+l.d(t, {
+    N: () => s
 });
-var r = n(627968),
-    i = n(64700),
-    a = n(744682);
-
-function o(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-
-function s(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            o(e, t, n[t])
-        })
-    }
-    return e
-}
-
-function l(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-        var r = Object.getOwnPropertySymbols(e);
-        t && (r = r.filter(function(t) {
-            return Object.getOwnPropertyDescriptor(e, t).enumerable
-        })), n.push.apply(n, r)
-    }
-    return n
-}
-
-function c(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : l(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-let u = {
+var a = l(627968),
+    n = l(64700),
+    r = l(744682);
+let i = {
         earn: {
             name: "earn",
             start: 0,
@@ -57,30 +17,25 @@ let u = {
             duration: 180
         }
     },
-    d = e => {
-        let t = i.useRef(null),
-            o = i.useRef(e);
-        o.current = e;
-        let l = i.useMemo(() => () => {
+    s = e => {
+        let t = n.useRef(null),
+            s = n.useRef(e);
+        s.current = e;
+        let o = n.useMemo(() => () => {
                 null != t.current && t.current.play(e)
             }, [e]),
-            d = i.useCallback(e => (0, r.jsx)(a.P, c(s({}, e), {
-                src: () => n.e("78611").then(n.t.bind(n, 433886, 19)),
+            u = n.useCallback(e => (0, a.jsx)(r.P, {
+                ...e,
+                src: () => l.e("78611").then(l.t.bind(l, 433886, 19)),
                 ref: t,
-                initialAnimation: o.current,
-                markers: u
-            })), []);
+                initialAnimation: s.current,
+                markers: i
+            }), []);
         return {
             events: {},
-            play: l,
-            getDuration: i.useCallback(() => {
-                var e;
-                return null == (e = t.current) ? void 0 : e.getDuration()
-            }, []),
-            getCurrentFrame: i.useCallback(() => {
-                var e, n;
-                return null != (e = null == (n = t.current) ? void 0 : n.getCurrentFrame()) ? e : null
-            }, []),
-            Component: d
+            play: o,
+            getDuration: n.useCallback(() => t.current?.getDuration(), []),
+            getCurrentFrame: n.useCallback(() => t.current?.getCurrentFrame() ?? null, []),
+            Component: u
         }
     }

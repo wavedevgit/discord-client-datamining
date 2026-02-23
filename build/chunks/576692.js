@@ -1,38 +1,38 @@
 /** chunk id: 576692, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    i: () => o
+    i: () => u
 });
 var l = n(627968),
-    r = n(64700),
-    i = n(503698),
-    s = n.n(i),
+    i = n(64700),
+    r = n(503698),
+    s = n.n(r),
     a = n(250402);
 
-function o(e) {
+function u(e) {
     let {
         size: t,
         lowerBadge: n,
-        lowerBadgeSize: i = {
+        lowerBadgeSize: r = {
             width: 16,
             height: 16
         },
-        children: o,
-        className: u,
-        innerClassName: c,
-        rounded: d = !0,
+        children: u,
+        className: o,
+        innerClassName: d,
+        rounded: c = !0,
         "aria-hidden": h
-    } = e, g = null != n, f = r.useId(), p = "".concat(f, "-lower_badge_masks"), I = "".concat(f, "-shape_mask"), m = "".concat(f, "-stroke_mask"), E = (null == i ? void 0 : i.width) != null ? i.width : 16, A = (null == i ? void 0 : i.height) != null ? i.height : 16, y = {
+    } = e, g = null != n, I = i.useId(), A = `${I}-lower_badge_masks`, f = `${I}-shape_mask`, E = `${I}-stroke_mask`, m = r?.width != null ? r.width : 16, S = r?.height != null ? r.height : 16, p = {
         width: t + 8,
         height: t + 8,
         x: -4,
         y: -4
-    }, S = d ? (0, l.jsx)("circle", {
-        id: I,
+    }, N = c ? (0, l.jsx)("circle", {
+        id: f,
         cx: t / 2,
         cy: t / 2,
         r: t / 2
     }) : (0, l.jsx)("rect", {
-        id: I,
+        id: f,
         x: 0,
         y: 0,
         width: t,
@@ -41,45 +41,45 @@ function o(e) {
         ry: 8
     });
     return (0, l.jsxs)("div", {
-        className: s()(u, a.iE),
+        className: s()(o, a.iE),
         style: {
             width: t,
             height: t
         },
         "aria-hidden": h,
         children: [(0, l.jsxs)("svg", {
-            width: y.width,
-            height: y.height,
-            viewBox: "".concat(y.x, " ").concat(y.y, " ").concat(y.width, " ").concat(y.height),
+            width: p.width,
+            height: p.height,
+            viewBox: `${p.x} ${p.y} ${p.width} ${p.height}`,
             className: s()(a.JW, a.Pm),
             overflow: "visible",
             role: "none",
             children: [(0, l.jsxs)("defs", {
-                children: [S, g ? (0, l.jsx)("rect", {
-                    id: p,
-                    x: t - (E + 4) + 2,
-                    y: t - (A + 4) + 2,
-                    width: E + 4,
-                    height: A + 4,
+                children: [N, g ? (0, l.jsx)("rect", {
+                    id: A,
+                    x: t - (m + 4) + 2,
+                    y: t - (S + 4) + 2,
+                    width: m + 4,
+                    height: S + 4,
                     rx: t / 4,
                     ry: t / 4
                 }) : null]
             }), (0, l.jsxs)("mask", {
-                id: f,
+                id: I,
                 fill: "black",
                 x: 0,
                 y: 0,
                 width: t,
                 height: t,
                 children: [(0, l.jsx)("use", {
-                    href: "#".concat(I),
+                    href: `#${f}`,
                     fill: "white"
                 }), g ? (0, l.jsx)("use", {
-                    href: "#".concat(p),
+                    href: `#${A}`,
                     fill: "black"
                 }) : null]
             }), g ? (0, l.jsxs)("mask", {
-                id: m,
+                id: E,
                 children: [(0, l.jsx)("rect", {
                     width: "150%",
                     height: "150%",
@@ -87,21 +87,21 @@ function o(e) {
                     y: "-25%",
                     fill: "white"
                 }), (0, l.jsx)("use", {
-                    href: "#".concat(p),
+                    href: `#${A}`,
                     fill: "black"
                 })]
             }) : null, (0, l.jsx)("foreignObject", {
-                mask: "url(#".concat(f, ")"),
+                mask: `url(#${I})`,
                 x: 0,
                 y: 0,
-                className: c,
+                className: d,
                 width: t,
                 height: t,
-                children: o
+                children: u
             })]
         }), g ? (0, l.jsx)("div", {
             className: a.H7,
             children: n
         }) : null]
-    }, f)
+    }, I)
 }

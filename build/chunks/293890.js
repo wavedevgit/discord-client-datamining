@@ -1,29 +1,29 @@
 /** chunk id: 293890, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => E
-}), n(896048);
-var r = n(627968);
+    A: () => f
+});
+var i = n(627968);
 n(64700);
-var i = n(397927),
+var r = n(397927),
     l = n(73153),
     a = n(298990),
     s = n(846293),
     o = n(684013),
-    c = n(980142),
-    u = n(626584),
-    d = n(375492),
-    p = n(461213),
+    d = n(980142),
+    c = n(626584),
+    u = n(375492),
+    A = n(461213),
     h = n(636401),
-    f = n(90924),
-    g = n(629471),
-    m = n(546983),
-    A = n(613057),
-    _ = n(652215);
-let b = new u.A("RPCCommandsOverlay"),
-    E = {
-        [_.e$_.SET_OVERLAY_LOCKED]: {
-            scope: A.hj,
-            validation: e => (0, g.A)(e).required().keys({
+    _ = n(90924),
+    m = n(629471),
+    p = n(546983),
+    g = n(613057),
+    E = n(652215);
+let I = new c.A("RPCCommandsOverlay"),
+    f = {
+        [E.e$_.SET_OVERLAY_LOCKED]: {
+            scope: g.hj,
+            validation: e => (0, m.A)(e).required().keys({
                 locked: e.boolean().required(),
                 pid: e.number().min(0).required()
             }),
@@ -34,22 +34,22 @@ let b = new u.A("RPCCommandsOverlay"),
                         pid: n
                     },
                     socket: {
-                        application: r
+                        application: i
                     }
                 } = e;
-                if (b.verbose("RPCCommands.SET_OVERLAY_LOCKED", {
+                if (I.verbose("RPCCommands.SET_OVERLAY_LOCKED", {
                         locked: t,
                         pid: n
-                    }), null == r.id) throw new h.A({
-                    errorCode: _.Lw6.INVALID_COMMAND
+                    }), null == i.id) throw new h.A({
+                    errorCode: E.Lw6.INVALID_COMMAND
                 }, "No application.");
                 o.A.setInputLocked(t, n)
             }
         },
-        [_.e$_.OPEN_OVERLAY_ACTIVITY_INVITE]: {
-            scope: A.hj,
-            validation: e => (0, g.A)(e).required().keys({
-                type: e.number().required().valid([_.xL.JOIN]),
+        [E.e$_.OPEN_OVERLAY_ACTIVITY_INVITE]: {
+            scope: g.hj,
+            validation: e => (0, m.A)(e).required().keys({
+                type: e.number().required().valid([E.xL.JOIN]),
                 pid: e.number().min(0).required()
             }),
             handler(e) {
@@ -57,30 +57,30 @@ let b = new u.A("RPCCommandsOverlay"),
                     socket: t,
                     args: {
                         type: n,
-                        pid: r
+                        pid: i
                     }
-                } = e, i = t.application.id;
-                if (null == i) throw new h.A({
-                    errorCode: _.Lw6.INVALID_COMMAND
+                } = e, r = t.application.id;
+                if (null == r) throw new h.A({
+                    errorCode: E.Lw6.INVALID_COMMAND
                 }, "No application.");
-                let l = d.A.getApplicationActivity(i);
-                if (null == l || null == l.secrets || !(0, f.px)(n, l.party, l.secrets)) throw new h.A({
-                    errorCode: _.Lw6.NO_ELIGIBLE_ACTIVITY
+                let l = u.A.getApplicationActivity(r);
+                if (null == l || null == l.secrets || !(0, _.px)(n, l.party, l.secrets)) throw new h.A({
+                    errorCode: E.Lw6.NO_ELIGIBLE_ACTIVITY
                 }, "No eligible activity for application. Ensure an activity includes a party and appropriate secret.");
                 let {
                     lock: s,
                     context: o
-                } = (0, m.d5)(r), u = (0, c.A)(l, p.A);
-                return (0, a.qf)(l, u, o).then(() => {
-                    if (s(), u) throw new h.A({
-                        errorCode: _.Lw6.NO_ELIGIBLE_ACTIVITY
+                } = (0, p.d5)(i), c = (0, d.A)(l, A.A);
+                return (0, a.qf)(l, c, o).then(() => {
+                    if (s(), c) throw new h.A({
+                        errorCode: E.Lw6.NO_ELIGIBLE_ACTIVITY
                     }, "No eligible activity for application. Ensure user does have have privacy enabled.")
                 })
             }
         },
-        [_.e$_.OPEN_OVERLAY_GUILD_INVITE]: {
-            scope: A.hj,
-            validation: e => (0, g.A)(e).required().keys({
+        [E.e$_.OPEN_OVERLAY_GUILD_INVITE]: {
+            scope: g.hj,
+            validation: e => (0, m.A)(e).required().keys({
                 code: e.string().required(),
                 pid: e.number().min(0).required()
             }),
@@ -90,38 +90,38 @@ let b = new u.A("RPCCommandsOverlay"),
                         code: t,
                         pid: n
                     },
-                    socket: r
+                    socket: i
                 } = e;
-                if (null == r.application.id) throw new h.A({
-                    errorCode: _.Lw6.INVALID_COMMAND
+                if (null == i.application.id) throw new h.A({
+                    errorCode: E.Lw6.INVALID_COMMAND
                 }, "No application.");
                 return s.Ay.resolveInvite(t, "Game SDK").then(e => {
                     let {
                         invite: t,
-                        code: r
+                        code: i
                     } = e;
                     if (null == t) throw new h.A({
-                        errorCode: _.Lw6.INVALID_INVITE
-                    }, "Invalid invite id: ".concat(r));
+                        errorCode: E.Lw6.INVALID_INVITE
+                    }, `Invalid invite id: ${i}`);
                     let {
-                        context: i,
+                        context: r,
                         lock: a
-                    } = (0, m.d5)(n);
+                    } = (0, p.d5)(n);
                     return new Promise(e => {
                         l.h.dispatch({
                             type: "INVITE_MODAL_OPEN",
                             invite: t,
-                            code: r,
-                            context: i,
+                            code: i,
+                            context: r,
                             resolve: e
                         })
                     }).then(a)
                 })
             }
         },
-        [_.e$_.OPEN_OVERLAY_VOICE_SETTINGS]: {
-            scope: A.hj,
-            validation: e => (0, g.A)(e).required().keys({
+        [E.e$_.OPEN_OVERLAY_VOICE_SETTINGS]: {
+            scope: g.hj,
+            validation: e => (0, m.A)(e).required().keys({
                 pid: e.number().min(0).required()
             }),
             handler(e) {
@@ -132,52 +132,24 @@ let b = new u.A("RPCCommandsOverlay"),
                     socket: l
                 } = e, a = l.application.id;
                 if (null == a) throw new h.A({
-                    errorCode: _.Lw6.INVALID_COMMAND
+                    errorCode: E.Lw6.INVALID_COMMAND
                 }, "No application.");
                 let {
                     lock: s,
                     context: o
-                } = (0, m.d5)(t);
+                } = (0, p.d5)(t);
                 return new Promise(e => {
-                    (0, i.mMO)(async () => {
+                    (0, r.mMO)(async () => {
                         let {
                             default: e
                         } = await n.e("96531").then(n.bind(n, 880510));
-                        return t => {
-                            var n, i, s;
-                            return (0, r.jsx)(e, (i = function(e) {
-                                for (var t = 1; t < arguments.length; t++) {
-                                    var n = null != arguments[t] ? arguments[t] : {},
-                                        r = Object.keys(n);
-                                    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                                        return Object.getOwnPropertyDescriptor(n, e).enumerable
-                                    }))), r.forEach(function(t) {
-                                        var r;
-                                        r = n[t], t in e ? Object.defineProperty(e, t, {
-                                            value: r,
-                                            enumerable: !0,
-                                            configurable: !0,
-                                            writable: !0
-                                        }) : e[t] = r
-                                    })
-                                }
-                                return e
-                            }({}, t), s = s = {
-                                mediaEngineContext: a,
-                                subtitle: null != (n = l.application.name) ? n : void 0
-                            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
-                                var n = Object.keys(e);
-                                if (Object.getOwnPropertySymbols) {
-                                    var r = Object.getOwnPropertySymbols(e);
-                                    n.push.apply(n, r)
-                                }
-                                return n
-                            })(Object(s)).forEach(function(e) {
-                                Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(s, e))
-                            }), i))
-                        }
+                        return t => (0, i.jsx)(e, {
+                            ...t,
+                            mediaEngineContext: a,
+                            subtitle: l.application.name ?? void 0
+                        })
                     }, {
-                        contextKey: o === _.BRT.POPOUT ? i.KX8 : i.SYi,
+                        contextKey: o === E.BRT.POPOUT ? r.KX8 : r.SYi,
                         onCloseCallback: () => {
                             s(), e()
                         }

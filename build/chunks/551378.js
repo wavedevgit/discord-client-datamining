@@ -1,70 +1,70 @@
 /** chunk id: 551378, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => E
+    A: () => C
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(503698),
-    l = n.n(i),
-    s = n(397927),
-    a = n(294433),
+var s = n(503698),
+    a = n.n(s),
+    r = n(397927),
+    l = n(294433),
     o = n(438732),
     c = n(809697),
     d = n(834981),
     u = n(796497),
     _ = n(191627),
-    p = n(842130),
-    m = n(985018),
+    m = n(842130),
+    A = n(985018),
     g = n(555064),
-    A = n(896498),
-    f = n(272673),
-    b = n(607913);
-let h = () => {
+    h = n(896498),
+    x = n(272673),
+    p = n(607913);
+let E = () => {
         let e = (0, d.Li)(),
             t = (0, o.A)(),
             {
                 handleTabChange: n
             } = (0, c.A)();
-        return (0, d.xr)() || t && e ? null : (0, r.jsx)("div", {
+        return (0, d.xr)() || t && e ? null : (0, i.jsx)("div", {
             className: g.x6,
-            children: t ? (0, r.jsx)(s.Button, {
+            children: t ? (0, i.jsx)(r.Button, {
                 variant: "primary",
-                text: m.intl.string(m.t.LhlgY9),
+                text: A.intl.string(A.t.LhlgY9),
                 onClick: () => n(_.u9.REQUESTS)
-            }) : (0, r.jsx)(u.A, {})
+            }) : (0, i.jsx)(u.A, {})
         })
     },
-    E = () => {
+    C = () => {
         let e = (0, o.A)(),
-            t = (0, a.y)(m.intl.string(p.default["T7GyW+"]), m.intl.string(p.default.goKE2b)),
-            n = (0, a.y)(m.intl.format(p.default.MXjDSv, {
+            t = (0, l.y)(A.intl.string(m.default["T7GyW+"]), A.intl.string(m.default.goKE2b)),
+            n = (0, l.y)(A.intl.format(m.default.MXjDSv, {
                 articleLink: "https://support.discord.com/hc/articles/14155060633623"
-            }), m.intl.format(p.default.EMCf6j, {
+            }), A.intl.format(m.default.EMCf6j, {
                 articleLink: "https://support.discord.com/hc/articles/14155043715735"
             }));
-        return (0, r.jsxs)("div", {
-            className: l()(g.kL, A.a),
-            children: [(0, r.jsxs)("div", {
-                children: [(0, r.jsx)("div", {
-                    children: (0, r.jsxs)("div", {
+        return (0, i.jsxs)("div", {
+            className: a()(g.kL, h.a),
+            children: [(0, i.jsxs)("div", {
+                children: [(0, i.jsx)("div", {
+                    children: (0, i.jsxs)("div", {
                         className: g.TK,
-                        children: [(0, r.jsx)(s.Heading, {
+                        children: [(0, i.jsx)(r.Heading, {
                             variant: "heading-xl/medium",
-                            children: (0, r.jsx)(s.Fmo, {
+                            children: (0, i.jsx)(r.Fmo, {
                                 children: t
                             })
-                        }), (0, r.jsx)(s.Text, {
+                        }), (0, i.jsx)(r.Text, {
                             variant: "text-sm/medium",
                             color: "text-muted",
                             children: n
                         })]
                     })
-                }), (0, r.jsx)(h, {})]
-            }), (0, r.jsx)("div", {
+                }), (0, i.jsx)(E, {})]
+            }), (0, i.jsx)("div", {
                 className: g.F0,
-                children: (0, r.jsx)("img", {
-                    src: e ? f : b,
-                    alt: m.intl.string(p.default.ffg6xd)
+                children: (0, i.jsx)("img", {
+                    src: e ? x : p,
+                    alt: A.intl.string(m.default.ffg6xd)
                 })
             })]
         })

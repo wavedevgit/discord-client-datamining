@@ -1,23 +1,23 @@
 /** chunk id: 355443, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     H: () => l
-}), n(896048), n(228524);
-var r = n(179771),
-    i = n(672162);
+});
+var i = n(179771),
+    r = n(672162);
 let l = {
-        [i.vd.INITIATE_IMAGE_UPLOAD]: {
+        [r.vd.INITIATE_IMAGE_UPLOAD]: {
             request: void 0,
             response: e => ({
                 image_url: e.string().required()
             })
         },
-        [i.vd.OPEN_SHARE_MOMENT_DIALOG]: {
+        [r.vd.OPEN_SHARE_MOMENT_DIALOG]: {
             response: void 0,
             request: e => ({
                 mediaUrl: e.string().required().max(1024)
             })
         },
-        [i.vd.AUTHENTICATE]: {
+        [r.vd.AUTHENTICATE]: {
             request: e => ({
                 access_token: e.string().allow(null).optional()
             }),
@@ -31,7 +31,7 @@ let l = {
                     public_flags: e.number().required(),
                     global_name: e.string().allow(null)
                 }).required(),
-                scopes: e.array().items(e.string().valid(...(0, i.iW)(r.F))).required(),
+                scopes: e.array().items(e.string().valid(...(0, r.iW)(i.F))).required(),
                 expires: e.string().required(),
                 application: e.object({
                     description: e.string().required(),
@@ -42,7 +42,7 @@ let l = {
                 }).required()
             })
         },
-        [i.vd.GET_ACTIVITY_INSTANCE_CONNECTED_PARTICIPANTS]: {
+        [r.vd.GET_ACTIVITY_INSTANCE_CONNECTED_PARTICIPANTS]: {
             request: void 0,
             response: e => ({
                 participants: e.array().items(s(e).keys({
@@ -50,7 +50,7 @@ let l = {
                 }).required()).required()
             })
         },
-        [i.vd.SHARE_INTERACTION]: {
+        [r.vd.SHARE_INTERACTION]: {
             request: e => ({
                 command: e.string().required(),
                 options: e.array().items(e.object({
@@ -71,7 +71,7 @@ let l = {
                 success: e.boolean().required()
             })
         },
-        [i.vd.SHARE_LINK]: {
+        [r.vd.SHARE_LINK]: {
             request: e => ({
                 custom_id: e.string().max(64),
                 message: e.string().max(1e3).required(),
@@ -83,7 +83,7 @@ let l = {
                 didSendMessage: e.boolean().required()
             })
         },
-        [i.vd.GET_RELATIONSHIPS]: {
+        [r.vd.GET_RELATIONSHIPS]: {
             request: void 0,
             response: e => ({
                 relationships: e.array().required().items(e.object({
@@ -96,20 +96,20 @@ let l = {
                 }))
             })
         },
-        [i.vd.INVITE_USER_EMBEDDED]: {
+        [r.vd.INVITE_USER_EMBEDDED]: {
             request: e => ({
                 user_id: e.string().required(),
                 content: e.string().min(0).max(1024)
             }),
             response: void 0
         },
-        [i.vd.GET_USER]: {
+        [r.vd.GET_USER]: {
             request: e => ({
                 id: e.string().max(64).required()
             }),
             response: e => s(e).allow(null)
         },
-        [i.vd.GET_QUEST_ENROLLMENT_STATUS]: {
+        [r.vd.GET_QUEST_ENROLLMENT_STATUS]: {
             request: e => ({
                 quest_id: e.string().required()
             }),
@@ -119,12 +119,18 @@ let l = {
                 enrolled_at: e.string().allow(null).optional()
             })
         },
-        [i.vd.QUEST_START_TIMER]: {
+        [r.vd.QUEST_START_TIMER]: {
             request: e => ({
                 quest_id: e.string().required()
             }),
             response: e => ({
                 success: e.boolean().required()
+            })
+        },
+        [r.vd.REQUEST_PROXY_TICKET_REFRESH]: {
+            request: void 0,
+            response: e => ({
+                ticket: e.string().required()
             })
         }
     },
@@ -192,9 +198,9 @@ let l = {
     }).description("Discord User"),
     o = e => e.object({
         type: e.number().valid(1).required(),
-        components: e.array().max(5).items(c(e))
+        components: e.array().max(5).items(d(e))
     }),
-    c = e => e.object({
+    d = e => e.object({
         type: e.number().valid(2).required(),
         style: e.number().min(1).max(5).required(),
         label: e.string().max(80).description("Text that appears on the button"),

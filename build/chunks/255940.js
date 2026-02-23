@@ -1,11 +1,12 @@
 /** chunk id: 255940, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    O: () => l
+    O: () => s
 });
-var r = n(73153);
+var i = n(73153);
 
-function l(e) {
-    r.h.dispatch({
+function s(e) {
+    i.h.dispatch({
         type: "PREMIUM_REQUIRED_MODAL_CLOSE",
         shouldContinue: e
     })

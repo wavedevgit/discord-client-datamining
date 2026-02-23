@@ -1,81 +1,81 @@
 /** chunk id: 155008, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => v
+    A: () => E
 });
-var r = n(627968),
-    i = n(64700),
+var i = n(627968),
+    s = n(64700),
     l = n(311907),
-    s = n(554146),
+    r = n(554146),
     a = n(397927),
     o = n(826673),
-    c = n(774780),
-    d = n(532197),
+    d = n(774780),
+    c = n(532197),
     u = n(71393),
-    g = n(555337),
-    m = n(203498),
-    p = n(982832),
-    f = n(660496),
-    h = n(88613),
-    b = n(807334),
-    x = n(5558),
-    j = n(49999),
-    _ = n(985018),
-    O = n(690450);
+    m = n(555337),
+    g = n(203498),
+    x = n(982832),
+    h = n(660496),
+    _ = n(88613),
+    A = n(807334),
+    p = n(5558),
+    f = n(49999),
+    j = n(985018),
+    N = n(690450);
 
-function v() {
-    let e, t = (0, l.bG)([g.A], () => g.A.getGuildId()),
+function E() {
+    let e, t = (0, l.bG)([m.A], () => m.A.getGuildId()),
         n = (0, l.bG)([u.A], () => u.A.getGuild(t)),
-        v = (0, l.bG)([p.A], () => p.A.getCurrentPage());
-    if (i.useEffect(() => {
-            (0, o.Dr)(s.M.COMMUNITY_GUILD_SETTINGS_SAFETY, {
-                dismissAction: j.i.AUTO
+        E = (0, l.bG)([x.A], () => x.A.getCurrentPage());
+    if (s.useEffect(() => {
+            (0, o.Dr)(r.M.COMMUNITY_GUILD_SETTINGS_SAFETY, {
+                dismissAction: f.i.AUTO
             })
         }, []), null == n) return null;
-    let y = (0, x.N)(n);
-    switch (v) {
-        case f.C.OVERVIEW:
-            e = (0, r.jsx)(h.A, {
+    let b = (0, p.N)(n);
+    switch (E) {
+        case h.C.OVERVIEW:
+            e = (0, i.jsx)(_.A, {
                 guild: n
             });
             break;
-        case f.C.CAPTCHA_AND_RAID_PROTECTION:
-            e = (0, r.jsx)(b.A, {
-                title: _.intl.string(_.t["53eF5o"]),
-                settings: y[f.C.CAPTCHA_AND_RAID_PROTECTION]
+        case h.C.CAPTCHA_AND_RAID_PROTECTION:
+            e = (0, i.jsx)(A.A, {
+                title: j.intl.string(j.t["53eF5o"]),
+                settings: b[h.C.CAPTCHA_AND_RAID_PROTECTION]
             });
             break;
-        case f.C.DM_AND_SPAM_PROTECTION:
-            e = (0, r.jsx)(b.A, {
-                title: _.intl.string(_.t.O0SfFy),
-                settings: y[f.C.DM_AND_SPAM_PROTECTION]
+        case h.C.DM_AND_SPAM_PROTECTION:
+            e = (0, i.jsx)(A.A, {
+                title: j.intl.string(j.t.O0SfFy),
+                settings: b[h.C.DM_AND_SPAM_PROTECTION]
             });
             break;
-        case f.C.AUTOMOD:
-            e = (0, r.jsx)(c.A, {
+        case h.C.AUTOMOD:
+            e = (0, i.jsx)(d.A, {
                 guildId: n.id
             });
             break;
-        case f.C.PERMISSIONS:
-            e = (0, r.jsx)(b.A, {
-                title: _.intl.string(_.t.BXoNiT),
-                settings: y[f.C.PERMISSIONS]
+        case h.C.PERMISSIONS:
+            e = (0, i.jsx)(A.A, {
+                title: j.intl.string(j.t.BXoNiT),
+                settings: b[h.C.PERMISSIONS]
             })
     }
-    return (0, r.jsxs)(r.Fragment, {
-        children: [v !== f.C.OVERVIEW && (0, r.jsx)(a.DUT, {
-            className: O.aX,
+    return (0, i.jsxs)(i.Fragment, {
+        children: [E !== h.C.OVERVIEW && (0, i.jsx)(a.DUT, {
+            className: N.aX,
             onClick: () => {
-                (0, m.K)(f.C.OVERVIEW)
+                (0, g.K)(h.C.OVERVIEW)
             },
-            children: (0, r.jsxs)("div", {
-                className: O.Gv,
-                children: [(0, r.jsx)(d.A, {
-                    direction: d.A.Directions.LEFT
-                }), (0, r.jsx)(a.Text, {
+            children: (0, i.jsxs)("div", {
+                className: N.Gv,
+                children: [(0, i.jsx)(c.A, {
+                    direction: c.A.Directions.LEFT
+                }), (0, i.jsx)(a.Text, {
                     variant: "text-sm/semibold",
                     color: "interactive-text-default",
-                    children: _.intl.string(_.t["13/7kX"])
+                    children: j.intl.string(j.t["13/7kX"])
                 })]
             })
         }), e]

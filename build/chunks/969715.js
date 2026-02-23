@@ -1,65 +1,65 @@
 /** chunk id: 969715, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => g
-}), n(896048), n(321073);
-var r = n(311907),
-    l = n(570209),
-    i = n(457699),
-    s = n(352505),
+    A: () => p
+}), n(321073);
+var i = n(311907),
+    s = n(570209),
+    l = n(457699),
+    r = n(352505),
     a = n(465364),
     o = n(383233),
     c = n(994500),
-    u = n(517381),
-    d = n(822382),
-    p = n(65600);
-let h = [];
+    d = n(517381),
+    u = n(822382),
+    h = n(65600);
+let A = [];
 
-function g(e) {
+function p(e) {
     let {
         searchContext: t
-    } = e, n = s.m.useExperiment({
+    } = e, n = r.m.useExperiment({
         location: "useMessageRenderedContent"
-    }).enabled, g = (0, r.bG)([p.A, u.A, i.A], () => {
-        var e;
-        let r = (0, d.bS)(t),
-            s = p.A.getSearchResultsQuery(r),
-            c = u.A.getMessages(r);
-        if (null == s || null == c || 0 === c.length) return h;
-        let g = (0, l.wG)(null != (e = (0, d.dX)(s)) ? e : ""),
-            f = [];
-        return c.forEach(e => {
+    }).enabled, p = (0, i.bG)([h.A, d.A, l.A], () => {
+        let e = (0, u.bS)(t),
+            i = h.A.getSearchResultsQuery(e),
+            r = d.A.getMessages(e);
+        if (null == i || null == r || 0 === r.length) return A;
+        let c = (0, s.wG)((0, u.dX)(i) ?? ""),
+            p = [];
+        return r.forEach(e => {
             let t = new o.Ay(e);
             t = (t = function(e, t) {
-                let [n] = t, r = n.getMessage(e.id, e.channel_id);
-                return null != r && (e = e.merge({
-                    attachments: r.attachments,
-                    embeds: r.embeds
+                let [n] = t, i = n.getMessage(e.id, e.channel_id);
+                return null != i && (e = e.merge({
+                    attachments: i.attachments,
+                    embeds: i.embeds
                 })), e
-            }(t, [i.A])).set("customRenderedContent", (0, a.Ay)(t, {
-                postProcessor: g,
+            }(t, [l.A])).set("customRenderedContent", (0, a.Ay)(t, {
+                postProcessor: c,
                 allowHeading: !0,
                 allowList: !0,
                 allowGameMentions: n
-            })), f.push(t)
-        }), f
-    }, [n, t], r.My), {
-        blockCount: f,
+            })), p.push(t)
+        }), p
+    }, [n, t], i.My), {
+        blockCount: g,
         ignoreCount: m
-    } = (0, r.cf)([c.A], () => {
+    } = (0, i.cf)([c.A], () => {
         let e = 0,
             t = 0;
-        return g.forEach(n => {
-            let r = c.A.isBlockedForMessage(n),
-                l = c.A.isIgnoredForMessage(n);
-            r ? e++ : l && t++
+        return p.forEach(n => {
+            let i = c.A.isBlockedForMessage(n),
+                s = c.A.isIgnoredForMessage(n);
+            i ? e++ : s && t++
         }), {
             blockCount: e,
             ignoreCount: t
         }
     });
     return {
-        renderedMessages: g,
-        blockCount: f,
+        renderedMessages: p,
+        blockCount: g,
         ignoreCount: m
     }
 }

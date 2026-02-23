@@ -1,24 +1,24 @@
-/** chunk id: 72817, original params: e,t,l (module,exports,require) **/
-l.d(t, {
+/** chunk id: 72817, original params: e,t,a (module,exports,require) **/
+a.d(t, {
     K: () => i,
     m: () => n
-}), l(896048);
-var a = l(943357);
-let i = Object.entries(a.Wn).map(e => {
-        let [t, l] = e;
+});
+var l = a(943357);
+let i = Object.entries(l.Wn).map(e => {
+        let [t, a] = e;
         return {
-            id: l.toString(),
+            id: a.toString(),
             label: t,
-            value: l
+            value: a
         }
     }).filter(function(e) {
         return "string" != typeof e.value
     }),
-    n = Object.entries(a.Fo).map(e => {
-        let [t, l] = e;
+    n = Object.entries(l.Fo).map(e => {
+        let [t, a] = e;
         return {
-            id: l,
+            id: a,
             label: t,
-            value: l
+            value: a
         }
     })

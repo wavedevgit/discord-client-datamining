@@ -3,9 +3,9 @@
 n.d(t, {
     rW: () => a
 });
-var r = n(627968),
+var s = n(627968),
     l = n(64700);
-let s = l.createContext(null);
+let r = l.createContext(null);
 
 function a(e) {
     let {
@@ -14,7 +14,7 @@ function a(e) {
     } = e, a = l.useMemo(() => ({
         blockType: t
     }), [t]);
-    return (0, r.jsx)(s.Provider, {
+    return (0, s.jsx)(r.Provider, {
         value: a,
         children: n
     })

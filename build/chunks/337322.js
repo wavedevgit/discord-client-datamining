@@ -1,45 +1,45 @@
-/** chunk id: 337322, original params: e,t,r (module,exports,require) **/
-r.d(t, {
+/** chunk id: 337322, original params: e,t,a (module,exports,require) **/
+a.d(t, {
     A: () => l
-}), r(321073);
-var n = r(64700),
-    o = r(403362),
-    a = r(473145),
-    s = r(568065),
-    c = r(333354),
-    i = r(985018);
+}), a(321073);
+var s = a(64700),
+    r = a(403362),
+    n = a(473145),
+    o = a(568065),
+    c = a(333354),
+    i = a(985018);
 
 function l(e) {
     let {
         includeEmojis: t,
-        includeStickers: r,
+        includeStickers: a,
         includeSoundboards: l
     } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {
         includeEmojis: !0,
         includeStickers: !0,
         includeSoundboards: !0
     };
-    return n.useMemo(() => {
-        let n = [],
-            d = (0, s.w$)();
-        return t && n.push({
-            perkIcon: a.TP.EMOJI,
+    return s.useMemo(() => {
+        let s = [],
+            d = (0, o.w$)();
+        return t && s.push({
+            perkIcon: n.TP.EMOJI,
             description: i.intl.formatToPlainString(c.default["NXvV0+"], {
                 totalEmojis: e.features.total_emoji_slots,
                 additionalEmojis: e.features.additional_emoji_slots
             })
-        }), r && n.push({
-            perkIcon: a.TP.STICKER,
+        }), a && s.push({
+            perkIcon: n.TP.STICKER,
             description: i.intl.formatToPlainString(c.default.ZEvvPz, {
                 totalStickers: e.features.total_sticker_slots,
                 additionalStickers: e.features.additional_sticker_slots
             })
-        }), l && n.push({
-            perkIcon: a.TP.SOUNDBOARD,
+        }), l && s.push({
+            perkIcon: n.TP.SOUNDBOARD,
             description: i.intl.formatToPlainString(c.default["s9u/E7"], {
                 totalSoundboards: e.features.total_sound_slots,
                 additionalSoundboards: e.features.additional_sound_slots
             })
-        }), n.concat(e.features.features.map(e => d[e]).filter(o.Vq))
-    }, [e, t, r, l])
+        }), s.concat(e.features.features.map(e => d[e]).filter(r.Vq))
+    }, [e, t, a, l])
 }

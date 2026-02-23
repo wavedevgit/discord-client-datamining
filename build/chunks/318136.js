@@ -1,4 +1,5 @@
 /** chunk id: 318136, original params: e,t,n (module,exports,require) **/
+"use strict";
 e.exports = {
     sH: "recentMentionsPopout__95796",
     qC: "widerInbox__95796",

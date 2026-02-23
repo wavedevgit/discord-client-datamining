@@ -1,109 +1,76 @@
 /** chunk id: 998986, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => P
+    A: () => j
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var l = n(503698),
-    i = n.n(l),
-    s = n(417597),
+var s = n(503698),
+    l = n.n(s),
+    r = n(417597),
     a = n(554146),
     o = n(506774),
     c = n(397927),
-    u = n(442433),
-    d = n(775602),
-    p = n(58149),
-    h = n(289397),
-    g = n(491026),
-    f = n(486418),
+    d = n(442433),
+    u = n(775602),
+    h = n(58149),
+    A = n(289397),
+    p = n(491026),
+    g = n(486418),
     m = n(575926),
-    b = n(826673),
-    A = n(976860),
-    y = n(808728),
-    O = n(71393),
-    j = n(954571),
-    x = n(652793),
-    _ = n(652215),
-    v = n(746080),
-    E = n(634654),
-    C = n(985018),
-    S = n(568187);
+    _ = n(826673),
+    f = n(976860),
+    x = n(808728),
+    C = n(71393),
+    E = n(954571),
+    I = n(652793),
+    b = n(652215),
+    N = n(746080),
+    S = n(634654),
+    T = n(985018),
+    y = n(568187);
 
-function I(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = r
-        })
-    }
-    return e
-}
-
-function N(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
-        }
-        return n
-    })(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-
-function T(e) {
+function v(e) {
     let {
         guildId: t,
         selected: n,
-        handleClick: l
-    } = e, u = (0, g.YZ)(t, "guild_shop_channel_row"), f = (0, s.bG)([O.A], () => O.A.getGuild(t)), v = (null == f ? void 0 : f.features.has(_.GuildFeatures.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE)) === !0, T = "false" === o.w.get(E.bJ, "false"), P = (0, s.bG)([d.A], () => d.A.useReducedMotion);
-    return (0, r.jsx)(x.G, {
-        id: "shop-".concat(t),
-        className: i()(S.A2, {
-            [S.wH]: n,
-            [S.ST]: T
+        handleClick: s
+    } = e, d = (0, p.YZ)(t, "guild_shop_channel_row"), g = (0, r.bG)([C.A], () => C.A.getGuild(t)), N = g?.features.has(b.GuildFeatures.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE) === !0, v = "false" === o.w.get(S.bJ, "false"), j = (0, r.bG)([u.A], () => u.A.useReducedMotion);
+    return (0, i.jsx)(I.G, {
+        id: `shop-${t}`,
+        className: l()(y.A2, {
+            [y.wH]: n,
+            [y.ST]: v
         }),
-        innerClassName: S.LE,
-        renderIcon: e => (0, r.jsx)(m.h, {
+        innerClassName: y.LE,
+        renderIcon: e => (0, i.jsx)(m.h, {
             width: 20,
             height: 20,
-            className: i()([e, S.sV])
+            className: l()([e, y.sV])
         }),
-        text: C.intl.string(C.t.al5EXL),
+        text: T.intl.string(T.t.al5EXL),
         selected: n,
-        onClick: l,
-        trailing: (0, r.jsxs)("div", {
-            className: S.ai,
-            children: [P ? (0, r.jsx)(c.LpS, {
+        onClick: s,
+        trailing: (0, i.jsxs)("div", {
+            className: y.ai,
+            children: [j ? (0, i.jsx)(c.LpS, {
                 color: c.LU0.unsafe_rawColors.BRAND_260.css,
-                text: C.intl.string(C.t.y2b7CA),
-                className: S.Ad
-            }) : (0, r.jsx)("img", {
-                src: (0, h.n)("server_products/storefront/money.gif"),
-                className: S.TG,
+                text: T.intl.string(T.t.y2b7CA),
+                className: y.Ad
+            }) : (0, i.jsx)("img", {
+                src: (0, A.n)("server_products/storefront/money.gif"),
+                className: y.TG,
                 alt: ""
-            }), n && (0, r.jsx)(c.DUT, {
-                className: S.b,
+            }), n && (0, i.jsx)(c.DUT, {
+                className: y.b,
                 onClick: e => {
-                    if (e.stopPropagation(), (0, b.Dr)(a.M.SERVER_SHOP_PHANTOM_PREVIEW), j.default.track(_.HAw.GUILD_SHOP_PREVIEW_CLICK, N(I({}, (0, p.H$)(t)), {
-                            action_taken: E.hN.DISMISS_CHANNEL_ROW
-                        })), !u || !v) {
-                        var n;
-                        (0, A.bG)(_.BVt.CHANNEL(t, null == (n = y.Ay.getDefaultChannel(t)) ? void 0 : n.id))
-                    }
+                    e.stopPropagation(), (0, _.Dr)(a.M.SERVER_SHOP_PHANTOM_PREVIEW), E.default.track(b.HAw.GUILD_SHOP_PREVIEW_CLICK, {
+                        ...(0, h.H$)(t),
+                        action_taken: S.hN.DISMISS_CHANNEL_ROW
+                    }), d && N || (0, f.bG)(b.BVt.CHANNEL(t, x.Ay.getDefaultChannel(t)?.id))
                 },
-                "aria-label": C.intl.string(C.t.cpT0Cq),
-                children: (0, r.jsx)(c.aXh, {
+                "aria-label": T.intl.string(T.t.cpT0Cq),
+                children: (0, i.jsx)(c.aXh, {
                     size: "xs",
                     color: "currentColor"
                 })
@@ -112,35 +79,36 @@ function T(e) {
     })
 }
 
-function P(e) {
+function j(e) {
     let {
         guild: t,
-        selected: l
-    } = e, i = (0, f.P)(t, "guild_shop_channel_row"), s = () => {
-        o.w.set(E.bJ, "true"), (0, A.pX)(_.BVt.CHANNEL(t.id, v.VV.GUILD_SHOP))
+        selected: s
+    } = e, l = (0, g.P)(t, "guild_shop_channel_row"), r = () => {
+        o.w.set(S.bJ, "true"), (0, f.pX)(b.BVt.CHANNEL(t.id, N.VV.GUILD_SHOP))
     };
-    return i ? (0, r.jsx)(T, {
+    return l ? (0, i.jsx)(v, {
         guildId: t.id,
-        selected: l,
-        handleClick: s
-    }) : (0, r.jsx)(x.G, {
-        id: "shop-".concat(t.id),
-        renderIcon: e => (0, r.jsx)(m.h, {
+        selected: s,
+        handleClick: r
+    }) : (0, i.jsx)(I.G, {
+        id: `shop-${t.id}`,
+        renderIcon: e => (0, i.jsx)(m.h, {
             width: 20,
             height: 20,
             className: e
         }),
-        text: C.intl.string(C.t.al5EXL),
-        selected: l,
-        onClick: s,
+        text: T.intl.string(T.t.al5EXL),
+        selected: s,
+        onClick: r,
         onContextMenu: e => {
-            null != t && (0, u.L3)(e, async () => {
+            null != t && (0, d.L3)(e, async () => {
                 let {
                     default: e
                 } = await n.e("52565").then(n.bind(n, 345332));
-                return n => (0, r.jsx)(e, N(I({}, n), {
+                return n => (0, i.jsx)(e, {
+                    ...n,
                     guild: t
-                }))
+                })
             })
         }
     })

@@ -1,171 +1,134 @@
-/** chunk id: 429131, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    CreateEmojiWithRolesModal: () => R,
+/** chunk id: 429131, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    CreateEmojiWithRolesModal: () => E,
     UpdateEmojiRolesModal: () => N
-}), n(896048), n(747238), n(638769);
-var r = n(627968),
-    i = n(64700),
-    l = n(503698),
-    a = n.n(l),
-    o = n(735438),
-    s = n.n(o),
-    c = n(835245),
-    d = n(158954),
-    u = n(421380),
-    m = n(397927),
-    p = n(554375),
-    f = n(608461),
-    b = n(810877),
-    h = n(288224),
-    j = n(954571),
-    g = n(486020),
-    y = n(690521),
-    x = n(599941),
-    v = n(235149),
-    O = n(652215),
-    w = n(985018),
-    S = n(898515);
-
-function _(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = r
-        })
-    }
-    return e
-}
-
-function A(e, t) {
-    if (null == e) return {};
-    var n, r, i, l = {};
-    if ("u" > typeof Reflect && Reflect.ownKeys) {
-        for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
-        return l
-    }
-    if (l = function(e, t) {
-            if (null == e) return {};
-            var n, r, i = {},
-                l = Object.getOwnPropertyNames(e);
-            for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
-            return i
-        }(e, t), Object.getOwnPropertySymbols)
-        for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
-    return l
-}
-let E = e => {
+});
+var l = i(627968),
+    n = i(64700),
+    a = i(503698),
+    s = i.n(a),
+    r = i(735438),
+    o = i.n(r),
+    d = i(835245),
+    c = i(158954),
+    m = i(421380),
+    u = i(397927),
+    h = i(554375),
+    x = i(608461),
+    j = i(810877),
+    p = i(288224),
+    g = i(954571),
+    _ = i(486020),
+    b = i(690521),
+    v = i(599941),
+    S = i(235149),
+    f = i(652215),
+    A = i(985018),
+    w = i(898515);
+let C = e => {
     let {
         className: t,
-        onChange: n,
-        textVariant: i = "text-md/normal",
-        label: l,
-        value: o,
-        isArchived: s = !1
+        onChange: i,
+        textVariant: n = "text-md/normal",
+        label: a,
+        value: r,
+        isArchived: o = !1
     } = e;
-    return (0, r.jsx)(u.Kj, {
+    return (0, l.jsx)(m.Kj, {
         size: 24,
-        className: a()(S.J_, t),
-        value: o,
-        onChange: n,
-        type: u.Xo.INVERTED,
-        children: (0, r.jsxs)("div", {
-            className: S.lN,
-            children: [(0, r.jsx)(m.Text, {
+        className: s()(w.J_, t),
+        value: r,
+        onChange: i,
+        type: m.Xo.INVERTED,
+        children: (0, l.jsxs)("div", {
+            className: w.lN,
+            children: [(0, l.jsx)(u.Text, {
                 color: "interactive-text-active",
-                variant: i,
-                children: l
-            }), s && (0, r.jsx)(m.LpS, {
-                text: w.intl.string(w.t.nhbtEl)
+                variant: n,
+                children: a
+            }), o && (0, l.jsx)(u.LpS, {
+                text: A.intl.string(A.t.nhbtEl)
             })]
         })
     })
 };
 
-function C(e) {
+function y(e) {
     let {
         transitionState: t,
-        onClose: n,
-        initialRoleIds: l = [],
-        listingChoices: a,
-        emojiUrl: o,
-        emojiName: c,
-        saving: u,
-        onSave: p
-    } = e, [f, b] = i.useState(() => new Set(l)), h = i.useMemo(() => s().isEqual(f, new Set(a.map(e => {
+        onClose: i,
+        initialRoleIds: a = [],
+        listingChoices: s,
+        emojiUrl: r,
+        emojiName: d,
+        saving: m,
+        onSave: h
+    } = e, [x, j] = n.useState(() => new Set(a)), p = n.useMemo(() => o().isEqual(x, new Set(s.map(e => {
         let {
             role_id: t
         } = e;
         return t
-    }))), [a, f]), j = f.size > 0;
-    return (0, r.jsx)(d.Modal, {
-        onClose: n,
+    }))), [s, x]), g = x.size > 0;
+    return (0, l.jsx)(c.Modal, {
+        onClose: i,
         transitionState: t,
-        title: w.intl.string(w.t.nP7nDY),
-        subtitle: w.intl.string(w.t.I4SYUF),
+        title: A.intl.string(A.t.nP7nDY),
+        subtitle: A.intl.string(A.t.I4SYUF),
         preview: !0,
         actions: [{
-            text: w.intl.string(w.t["ETE/oC"]),
+            text: A.intl.string(A.t["ETE/oC"]),
             variant: "secondary",
-            onClick: n
+            onClick: i
         }, {
-            text: w.intl.string(w.t["R3BPH+"]),
+            text: A.intl.string(A.t["R3BPH+"]),
             variant: "primary",
             onClick: () => {
-                p(Array.from(f), n)
+                h(Array.from(x), i)
             },
-            disabled: !j,
-            loading: u
+            disabled: !g,
+            loading: m
         }],
-        children: (0, r.jsxs)(m.BJc, {
+        children: (0, l.jsxs)(u.BJc, {
             gap: "xl",
-            children: [(0, r.jsxs)(m.BJc, {
+            children: [(0, l.jsxs)(u.BJc, {
                 direction: "horizontal",
                 gap: "md",
                 align: "center",
-                children: [(0, r.jsx)(m._V3, {
-                    src: o,
+                children: [(0, l.jsx)(u._V3, {
+                    src: r,
                     width: 40,
                     height: 40,
                     alt: ""
-                }), (0, r.jsxs)(m.Text, {
+                }), (0, l.jsxs)(u.Text, {
                     variant: "text-md/normal",
-                    children: [":", c, ":"]
+                    children: [":", d, ":"]
                 })]
-            }), (0, r.jsxs)("div", {
-                children: [(0, r.jsx)(E, {
-                    className: S.L7,
-                    label: w.intl.string(w.t["Ve/y5z"]),
+            }), (0, l.jsxs)("div", {
+                children: [(0, l.jsx)(C, {
+                    className: w.L7,
+                    label: A.intl.string(A.t["Ve/y5z"]),
                     textVariant: "text-md/semibold",
-                    value: h,
+                    value: p,
                     onChange: () => {
-                        h ? b(new Set) : b(new Set(a.map(e => {
+                        p ? j(new Set) : j(new Set(s.map(e => {
                             let {
                                 role_id: t
                             } = e;
                             return t
                         })))
                     }
-                }, "allSubscriptionRoles"), a.map((e, t) => (0, r.jsxs)(r.Fragment, {
-                    children: [0 !== t && (0, r.jsx)("div", {
-                        className: S.OO
-                    }), (0, r.jsx)(E, {
+                }, "allSubscriptionRoles"), s.map((e, t) => (0, l.jsxs)(l.Fragment, {
+                    children: [0 !== t && (0, l.jsx)("div", {
+                        className: w.OO
+                    }), (0, l.jsx)(C, {
                         onChange: () => {
                             let t;
-                            return t = e.role_id, b(e => {
-                                let n = new Set(e);
-                                return e.has(t) ? n.delete(t) : n.add(t), n
+                            return t = e.role_id, j(e => {
+                                let i = new Set(e);
+                                return e.has(t) ? i.delete(t) : i.add(t), i
                             })
                         },
-                        value: f.has(e.role_id),
+                        value: x.has(e.role_id),
                         label: e.name,
                         isArchived: e.archived
                     }, e.role_id)]
@@ -175,85 +138,89 @@ function C(e) {
     })
 }
 
-function R(e) {
+function E(e) {
     let {
         guildId: t,
-        data: n,
-        file: l
-    } = e, a = A(e, ["guildId", "data", "file"]), [o, s] = i.useState(!1), d = async (e, r) => {
+        data: i,
+        file: a,
+        ...s
+    } = e, [r, o] = n.useState(!1), c = async (e, l) => {
         try {
-            s(!0);
-            let i = (0, c.A)();
-            j.default.track(O.HAw.EMOJI_UPLOAD_STARTED, {
+            o(!0);
+            let n = (0, d.A)();
+            g.default.track(f.HAw.EMOJI_UPLOAD_STARTED, {
                 guild_id: t,
-                upload_id: i
+                upload_id: n
             });
-            let a = await (0, b.W)({
+            let s = await (0, j.W)({
                 guildId: t,
-                uploadId: i,
-                data: n,
-                file: l,
+                uploadId: n,
+                data: i,
+                file: a,
                 roles: e
             });
-            "object" == typeof a && "id" in a && h.X({
-                emojiId: a.id,
+            "object" == typeof s && "id" in s && p.X({
+                emojiId: s.id,
                 userImage: {
-                    data: n,
-                    file: l
+                    data: i,
+                    file: a
                 }
-            }), r()
+            }), l()
         } catch (e) {} finally {
-            s(!1)
+            o(!1)
         }
-    }, u = (0, x.uP)(t, {
+    }, m = (0, v.uP)(t, {
         includeSoftDeleted: !0,
         sortDeletedListingsLast: !0
-    }), m = y.Ay.sanitizeEmojiName(l.name.split(".")[0]);
-    return (0, r.jsx)(C, _({
-        emojiName: m,
-        emojiUrl: n,
-        onSave: d,
-        saving: o,
-        listingChoices: u
-    }, a))
+    }), u = b.Ay.sanitizeEmojiName(a.name.split(".")[0]);
+    return (0, l.jsx)(y, {
+        emojiName: u,
+        emojiUrl: i,
+        onSave: c,
+        saving: r,
+        listingChoices: m,
+        ...s
+    })
 }
 
 function N(e) {
     let {
         emoji: t,
-        guildId: n
-    } = e, l = A(e, ["emoji", "guildId"]), a = g.Ay.getEmojiURL({
+        guildId: i,
+        ...a
+    } = e, s = _.Ay.getEmojiURL({
         id: t.id,
         animated: t.animated,
         size: 40
-    }), [o, {
-        loading: s
-    }] = (0, f.A)(p.Cp), c = async (e, r) => {
-        null != await o({
-            guildId: n,
+    }), [r, {
+        loading: o
+    }] = (0, x.A)(h.Cp), d = async (e, l) => {
+        null != await r({
+            guildId: i,
             emojiId: t.id,
             roles: e
-        }) && r()
-    }, d = (0, x.uP)(n, {
+        }) && l()
+    }, c = (0, v.uP)(i, {
         includeSoftDeleted: !0
     });
-    d.sort((e, t) => Number(e.soft_deleted) - Number(t.soft_deleted));
-    let u = (0, v.A)(n),
-        m = i.useMemo(() => {
-            let e = new Set(u.map(e => {
+    c.sort((e, t) => Number(e.soft_deleted) - Number(t.soft_deleted));
+    let m = (0, S.A)(i),
+        u = n.useMemo(() => {
+            let e = new Set(m.map(e => {
                 let {
                     id: t
                 } = e;
                 return t
             }));
             return t.roles.filter(t => e.has(t))
-        }, [t.roles, u]);
-    return (0, r.jsx)(C, _({
+        }, [t.roles, m]);
+    return (0, l.jsx)(y, {
         emojiName: t.name,
-        emojiUrl: a,
-        onSave: c,
-        initialRoleIds: m,
-        saving: s,
-        listingChoices: d
-    }, l))
+        emojiUrl: s,
+        onSave: d,
+        initialRoleIds: u,
+        saving: o,
+        listingChoices: c,
+        ...a
+    })
 }

@@ -1,111 +1,110 @@
 /** chunk id: 192380, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
-}), n(896048), n(492834);
-var r = n(627968),
-    i = n(64700),
+    A: () => _
+});
+var i = n(627968),
+    r = n(64700),
     l = n(311907),
     a = n(883344),
     s = n(859524),
     o = n(567061),
-    c = n(519028),
-    u = n(285545),
-    d = n(673310),
-    p = n(884801),
+    d = n(519028),
+    c = n(285545),
+    u = n(673310),
+    A = n(884801),
     h = n(739954);
-let f = function(e) {
+let _ = function(e) {
     let {
         scrollContainerRef: t
     } = e, n = (0, l.bG)([a.A], () => a.A.notificationItem(), []), {
-        showDot: f
-    } = (0, c.A)(), g = i.useRef(null), [m, A] = i.useState(!1), {
-        data: _,
-        loading: b,
-        isRefreshing: E,
-        handleOnRefresh: O,
-        viewabilityConfigCallbackPairs: y
-    } = (0, u.i)({
-        showDot: f,
+        showDot: _
+    } = (0, d.A)(), m = r.useRef(null), [p, g] = r.useState(!1), {
+        data: E,
+        loading: I,
+        isRefreshing: f,
+        handleOnRefresh: C,
+        viewabilityConfigCallbackPairs: T
+    } = (0, c.i)({
+        showDot: _,
         notificationItem: n
-    }), I = (0, o.E)();
-    i.useEffect(() => () => {
-        I()
-    }, [I]);
-    let v = (0, l.bG)([a.A], () => a.A.hasNewContent(), []),
-        S = (0, l.bG)([a.A], () => a.A.isHydrating(), []),
-        C = i.useMemo(() => y[0].onViewableItemsChanged, [y]),
+    }), N = (0, o.E)();
+    r.useEffect(() => () => {
+        N()
+    }, [N]);
+    let S = (0, l.bG)([a.A], () => a.A.hasNewContent(), []),
+        x = (0, l.bG)([a.A], () => a.A.isHydrating(), []),
+        v = r.useMemo(() => T[0].onViewableItemsChanged, [T]),
         {
-            registerItemRef: N
-        } = (0, p.N)(_, C, t),
-        T = i.useMemo(() => _.some(e => "end" === e.data.kind), [_]),
-        j = i.useCallback(() => {
-            if (T) return;
+            registerItemRef: y
+        } = (0, A.N)(E, v, t),
+        b = r.useMemo(() => E.some(e => "end" === e.data.kind), [E]),
+        O = r.useCallback(() => {
+            if (b) return;
             let e = t.current;
-            null == e || !(e.scrollHeight - e.scrollTop - e.clientHeight < 300) || m || b || S || (A(!0), (0, s._x)().finally(() => {
+            null == e || !(e.scrollHeight - e.scrollTop - e.clientHeight < 300) || p || I || x || (g(!0), (0, s._x)().finally(() => {
                 setTimeout(() => {
-                    A(!1)
+                    g(!1)
                 }, 300)
             }))
-        }, [b, m, S, T, t]);
-    i.useEffect(() => {
+        }, [I, p, x, b, t]);
+    r.useEffect(() => {
         let e = t.current;
-        if (null != e) return e.addEventListener("scroll", j), () => {
-            e.removeEventListener("scroll", j)
+        if (null != e) return e.addEventListener("scroll", O), () => {
+            e.removeEventListener("scroll", O)
         }
-    }, [j, t]);
-    let x = i.useCallback(() => {
-            var e;
-            null == (e = t.current) || e.scrollTo({
+    }, [O, t]);
+    let L = r.useCallback(() => {
+            t.current?.scrollTo({
                 top: 0,
                 behavior: "smooth"
             })
         }, [t]),
-        P = i.useCallback(() => {
-            O(), x()
-        }, [O, x]),
-        w = i.useCallback(e => "loading" === e.data.kind ? (0, r.jsx)("div", {
+        R = r.useCallback(() => {
+            C(), L()
+        }, [C, L]),
+        P = r.useCallback(e => "loading" === e.data.kind ? (0, i.jsx)("div", {
             style: {
                 padding: "32px",
                 textAlign: "center"
             },
-            children: (0, r.jsx)("div", {
+            children: (0, i.jsx)("div", {
                 children: "Loading ICYMI feed..."
             })
-        }, e.id) : "bottomLoading" === e.data.kind ? (0, r.jsx)("div", {
+        }, e.id) : "bottomLoading" === e.data.kind ? (0, i.jsx)("div", {
             style: {
                 padding: "16px",
                 textAlign: "center"
             },
-            children: (0, r.jsx)("div", {
+            children: (0, i.jsx)("div", {
                 children: "Loading more..."
             })
-        }, e.id) : "end" === e.data.kind ? (0, r.jsx)("div", {
+        }, e.id) : "end" === e.data.kind ? (0, i.jsx)("div", {
             style: {
                 padding: "32px",
                 textAlign: "center",
                 color: "#949ba4"
             },
-            children: (0, r.jsx)("div", {
+            children: (0, i.jsx)("div", {
                 children: "You're all caught up!"
             })
-        }, e.id) : (0, r.jsx)("div", {
-            ref: t => N(e.id, t),
+        }, e.id) : (0, i.jsx)("div", {
+            ref: t => y(e.id, t),
             "data-item-id": e.id,
-            children: (0, r.jsx)(d.A, {
+            children: (0, i.jsx)(u.A, {
                 item: e
             })
-        }, e.id), [N]);
-    return b && 0 === _.length ? (0, r.jsx)("div", {
+        }, e.id), [y]);
+    return I && 0 === E.length ? (0, i.jsx)("div", {
         style: {
             padding: "32px",
             textAlign: "center"
         },
-        children: (0, r.jsx)("div", {
+        children: (0, i.jsx)("div", {
             children: "Loading ICYMI feed..."
         })
-    }) : (0, r.jsxs)("div", {
+    }) : (0, i.jsxs)("div", {
         className: h.k,
-        children: [v && !E && (0, r.jsx)("div", {
+        children: [S && !f && (0, i.jsx)("div", {
             style: {
                 position: "sticky",
                 top: 0,
@@ -113,8 +112,8 @@ let f = function(e) {
                 padding: "8px",
                 textAlign: "center"
             },
-            children: (0, r.jsx)("button", {
-                onClick: P,
+            children: (0, i.jsx)("button", {
+                onClick: R,
                 style: {
                     background: "#5865f2",
                     color: "white",
@@ -127,15 +126,15 @@ let f = function(e) {
                 },
                 children: "New content available"
             })
-        }), (0, r.jsxs)("div", {
-            ref: g,
+        }), (0, i.jsxs)("div", {
+            ref: m,
             className: h.j,
-            children: [_.map(e => w(e)), !T && (m || S) && (0, r.jsx)("div", {
+            children: [E.map(e => P(e)), !b && (p || x) && (0, i.jsx)("div", {
                 style: {
                     padding: "16px",
                     textAlign: "center"
                 },
-                children: (0, r.jsx)("div", {
+                children: (0, i.jsx)("div", {
                     style: {
                         color: "#949ba4"
                     },

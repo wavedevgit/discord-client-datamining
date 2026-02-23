@@ -1,34 +1,34 @@
 /** chunk id: 821306, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => p
-}), n(896048);
+    A: () => h
+});
 var a = n(627968),
-    l = n(64700),
-    r = n(503698),
-    i = n.n(r),
-    s = n(311907),
+    i = n(64700),
+    s = n(503698),
+    l = n.n(s),
+    r = n(311907),
     o = n(397927),
-    c = n(263834),
-    d = n(865116),
+    d = n(263834),
+    c = n(865116),
     u = n(759136),
     m = n(661251);
 
-function p(e) {
+function h(e) {
     let {
         devSettingsCategory: t
-    } = e, n = (0, s.bG)([d.Ay], () => d.Ay.allByCategory(t), [t], s.My), r = l.useMemo(() => n.map(e => {
+    } = e, n = (0, r.bG)([c.Ay], () => c.Ay.allByCategory(t), [t], r.My), s = i.useMemo(() => n.map(e => {
         let [t, n, {
-            label: l
+            label: i
         }] = e;
         return (0, a.jsx)(o.dOG, {
-            label: l,
+            label: i,
             description: t,
             checked: n,
-            onChange: e => (0, c.L)(t, e)
+            onChange: e => (0, d.L)(t, e)
         }, t)
     }), [n]);
     return (0, a.jsx)("div", {
-        className: i()(m.nd, u.n),
-        children: r
+        className: l()(m.nd, u.n),
+        children: s
     })
 }

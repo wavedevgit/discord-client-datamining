@@ -1,72 +1,72 @@
-/** chunk id: 32246, original params: e,t,l (module,exports,require) **/
-l.d(t, {
-    A: () => x
+/** chunk id: 32246, original params: e,t,s (module,exports,require) **/
+s.d(t, {
+    A: () => g
 });
-var n = l(627968);
-l(64700);
-var r = l(503698),
-    s = l.n(r),
-    a = l(559949),
-    o = l(158954),
-    i = l(990078),
-    c = l(397927),
-    d = l(945096),
-    u = l(73392),
-    m = l(750656),
-    p = l(927961),
-    f = l(985018),
-    g = l(880203),
-    _ = l(248997);
+var l = s(627968);
+s(64700);
+var a = s(503698),
+    n = s.n(a),
+    i = s(559949),
+    r = s(158954),
+    o = s(990078),
+    d = s(397927),
+    c = s(945096),
+    u = s(73392),
+    m = s(750656),
+    _ = s(927961),
+    x = s(985018),
+    h = s(880203),
+    p = s(248997);
 
-function x(e) {
+function g(e) {
     let {
         selectedFontId: t,
-        setSelectedFontId: l,
-        displayName: r,
-        className: x
-    } = e, b = t !== a.x.DEFAULT, h = (0, d.Xr)(r);
-    return (0, n.jsxs)("div", {
-        className: x,
-        children: [(0, n.jsxs)(o.DZT, {
+        setSelectedFontId: s,
+        displayName: a,
+        className: g
+    } = e, f = t !== i.x.DEFAULT, N = (0, c.Xr)(a);
+    return (0, l.jsxs)("div", {
+        className: g,
+        children: [(0, l.jsxs)(r.DZT, {
             variant: "heading-md/semibold",
-            className: g.s,
-            children: [f.intl.string(p.default.nP0ngb), (0, n.jsx)(c.tvc, {
+            className: h.s,
+            children: [x.intl.string(_.default.nP0ngb), (0, l.jsx)(d.tvc, {
                 size: "xs",
-                color: c.LU0.colors.TEXT_DEFAULT
+                color: d.LU0.colors.TEXT_DEFAULT
             })]
-        }), (0, n.jsx)(o.BJc, {
+        }), (0, l.jsx)(r.BJc, {
             direction: "horizontal",
             align: "center",
             wrap: !0,
             children: m.rA.map(e => {
-                let r = (0, u.p)(e),
-                    a = e === t;
-                return (0, n.jsx)(i.m, {
-                    text: f.intl.string(r.name),
+                let a = (0, u.p)(e),
+                    i = e === t;
+                return (0, l.jsx)(o.m, {
+                    text: x.intl.string(a.name),
                     asContainer: !0,
-                    children: (0, n.jsx)(c.DUT, {
-                        className: s()(_.SO, {
-                            [_.wH]: a
+                    children: (0, l.jsx)(d.DUT, {
+                        className: n()(p.SO, {
+                            [p.wH]: i
                         }),
-                        onClick: () => l(e),
-                        "aria-label": f.intl.string(r.name),
-                        children: (0, n.jsx)(o.EYj, {
+                        onClick: () => s(e),
+                        "aria-label": x.intl.string(a.name),
+                        children: (0, l.jsx)(r.EYj, {
                             variant: "text-lg/semibold",
-                            color: a ? "text-strong" : "text-default",
-                            className: s()(_.FH, r.className),
+                            color: i ? "text-strong" : "text-default",
+                            className: n()(p.FH, a.className),
                             children: "Gg"
                         })
                     })
                 }, e)
             })
-        }), b && h && (0, n.jsxs)("div", {
-            className: _.Lb,
-            children: [(0, n.jsx)(o.mir, {
+        }), f && N && (0, l.jsxs)("div", {
+            className: p.Lb,
+            children: [(0, l.jsx)(r.mir, {
                 size: "lg"
-            }), (0, n.jsx)(o.EYj, {
+            }), (0, l.jsx)(r.EYj, {
                 variant: "text-sm/normal",
                 color: "text-subtle",
-                children: f.intl.string(p.default["+O1xL2"])
+                children: x.intl.string(_.default["+O1xL2"])
             })]
         })]
     })

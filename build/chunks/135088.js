@@ -2,9 +2,9 @@
 s.d(t, {
     A: () => d
 });
-var l = s(627968);
+var n = s(627968);
 s(64700);
-var n = s(582754),
+var l = s(582754),
     i = s(659746),
     a = s(896361),
     r = s(513497),
@@ -15,25 +15,25 @@ let d = e => {
         type: t,
         theme: s
     } = e;
-    return (0, l.jsx)("div", {
+    return (0, n.jsx)("div", {
         className: c.Eq,
-        children: (0, l.jsx)("div", {
+        children: (0, n.jsx)("div", {
             className: c.v9,
             children: ((e, t) => {
-                let s = (0, n.Mw)(t) ? "white" : "black";
+                let s = (0, l.Mw)(t) ? "white" : "black";
                 switch (e) {
                     case i.Or.PREMIUM_UPDATED:
-                        return (0, l.jsx)(C.A, {
+                        return (0, n.jsx)(C.A, {
                             color: s,
                             className: c.gd
                         });
                     case i.Or.PREMIUM_ACTIVATED:
-                        return (0, l.jsx)(a.A, {
+                        return (0, n.jsx)(a.A, {
                             color: s,
                             className: c.gd
                         });
                     case i.Or.PREMIUM_PAYMENT_STARTED:
-                        return (0, l.jsx)(r.A, {
+                        return (0, n.jsx)(r.A, {
                             color: s,
                             className: c.gd
                         });

@@ -1,22 +1,22 @@
-/** chunk id: 850183, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => a
+/** chunk id: 850183, original params: e,t,l (module,exports,require) **/
+l.d(t, {
+    A: () => r
 });
-var l = n(627968);
-n(64700);
-var r = n(503698),
-    i = n.n(r),
-    s = n(695035);
+var n = l(627968);
+l(64700);
+var s = l(503698),
+    i = l.n(s),
+    a = l(695035);
 
-function a(e) {
+function r(e) {
     let {
         source: t,
-        className: n
+        className: l
     } = e;
-    return null == t ? null : (0, l.jsx)("div", {
-        className: i()(s.k, n),
+    return null == t ? null : (0, n.jsx)("div", {
+        className: i()(a.k, l),
         style: {
-            backgroundImage: "url(".concat(t, ")")
+            backgroundImage: `url(${t})`
         },
         "data-type": "event-image"
     })

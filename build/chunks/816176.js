@@ -1,6 +1,6 @@
 /** chunk id: 816176, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    d: () => l
+    d: () => i
 });
 let a = (0, n(945810).mj)({
     name: "2025-12-social-layer-storefront-wishlist-user-account-popout",
@@ -18,7 +18,7 @@ let a = (0, n(945810).mj)({
     }
 });
 
-function l(e) {
+function i(e) {
     let {
         location: t
     } = e;

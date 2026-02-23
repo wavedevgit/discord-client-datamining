@@ -1,65 +1,65 @@
-/** chunk id: 217905, original params: t,e,r (module,exports,require) **/
-r.d(e, {
+/** chunk id: 217905, original params: t,e,l (module,exports,require) **/
+l.d(e, {
     F: () => a
-}), r(228524);
-var n = r(627968);
-r(64700);
-var l = r(855522),
-    s = r(158954),
-    i = r(183377);
+});
+var s = l(627968);
+l(64700);
+var r = l(855522),
+    n = l(158954),
+    i = l(183377);
 
 function a(t) {
     let {
         benefits: e,
-        description: r,
+        description: l,
         imgSrc: a,
         title: o,
         tag: c,
         FallbackIcon: d
-    } = t, u = null != a ? {
-        "--custom-background-url": "url(".concat(a.toString(), ")")
+    } = t, x = null != a ? {
+        "--custom-background-url": `url(${a.toString()})`
     } : void 0;
-    return (0, n.jsxs)("div", {
+    return (0, s.jsxs)("div", {
         className: i.kL,
-        children: [(0, n.jsxs)("div", {
+        children: [(0, s.jsxs)("div", {
             className: i.wx,
-            children: [(0, n.jsx)("div", {
+            children: [(0, s.jsx)("div", {
                 className: i.y2,
-                style: u
-            }), (0, n.jsx)("div", {
+                style: x
+            }), (0, s.jsx)("div", {
                 className: i.F0,
-                children: null != a ? (0, n.jsx)("img", {
+                children: null != a ? (0, s.jsx)("img", {
                     src: a.toString(),
                     alt: ""
-                }) : (0, n.jsx)(d, {
+                }) : (0, s.jsx)(d, {
                     size: "custom",
                     color: "var(--text-muted)",
                     height: 96,
                     width: 96
                 })
             })]
-        }), (0, n.jsxs)("div", {
+        }), (0, s.jsxs)("div", {
             className: i.Qs,
-            children: [(0, n.jsxs)("div", {
+            children: [(0, s.jsxs)("div", {
                 className: i.zH,
-                children: [null != c && (0, n.jsx)("div", {
+                children: [null != c && (0, s.jsx)("div", {
                     children: c
-                }), (0, n.jsx)(s.DZT, {
+                }), (0, s.jsx)(n.DZT, {
                     color: "text-strong",
                     variant: "heading-xl/semibold",
                     children: o
-                }), null != r && "" !== r && (0, n.jsx)(s.EYj, {
+                }), null != l && "" !== l && (0, s.jsx)(n.EYj, {
                     color: "text-default",
                     variant: "text-md/normal",
                     className: i.h_,
-                    children: r
+                    children: l
                 })]
-            }), null != e && (0, n.jsxs)("div", {
+            }), null != e && (0, s.jsxs)("div", {
                 className: i.PX,
-                children: [(0, n.jsx)(s.EYj, {
+                children: [(0, s.jsx)(n.EYj, {
                     color: "text-default",
                     variant: "eyebrow",
-                    children: l.A.Messages.STOREFRONT_BENEFITS_TITLE
+                    children: r.A.Messages.STOREFRONT_BENEFITS_TITLE
                 }), e]
             })]
         })]

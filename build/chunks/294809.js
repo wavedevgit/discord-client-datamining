@@ -1,192 +1,179 @@
 /** chunk id: 294809, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     C: () => V
-}), n(638769), n(896048);
+});
 var l = n(627968),
-    r = n(64700),
-    i = n(311907),
+    i = n(64700),
+    r = n(311907),
     s = n(377802),
     a = n(342952),
-    o = n(397927),
-    u = n(47167),
-    c = n(713654),
-    d = n(21119),
+    u = n(397927),
+    o = n(47167),
+    d = n(713654),
+    c = n(21119),
     h = n(734057),
     g = n(71393),
-    f = n(576705),
-    p = n(222823),
-    I = n(994500),
-    m = n(309010),
-    E = n(287809),
-    A = n(977997),
-    y = n(607567),
-    S = n(403362),
-    v = n(996439),
-    O = n(914853),
-    b = n(676923),
-    N = n(1404),
-    T = n(483392),
-    _ = n(578093),
-    C = n(912156),
-    x = n(67103),
-    D = n(195435),
-    M = n(576420),
-    j = n(336148),
-    w = n(652215),
-    P = n(985018),
-    R = n(783346),
-    U = n(416001),
-    G = n(905777);
+    I = n(576705),
+    A = n(222823),
+    f = n(994500),
+    E = n(309010),
+    m = n(287809),
+    S = n(977997),
+    p = n(607567),
+    N = n(403362),
+    T = n(996439),
+    _ = n(914853),
+    C = n(676923),
+    y = n(1404),
+    x = n(483392),
+    M = n(578093),
+    v = n(912156),
+    D = n(67103),
+    R = n(195435),
+    U = n(576420),
+    O = n(336148),
+    G = n(652215),
+    F = n(985018),
+    w = n(783346),
+    L = n(416001),
+    b = n(905777);
 
-function L(e) {
+function k(e) {
     let {
         isCollapsed: t
     } = e;
-    return (0, l.jsx)(T.C, {
+    return (0, l.jsx)(x.C, {
         isCollapsed: t,
         size: "md",
-        className: U.t4
+        className: L.t4
     })
 }
 
-function k(e) {
+function P(e) {
     e.preventDefault(), e.stopPropagation()
 }
 
-function F(e) {
+function j(e) {
     let {
         channelId: t,
         guildId: n
-    } = e, r = function(e) {
+    } = e, i = function(e) {
         let {
             channelId: t
         } = e;
-        return (0, i.yK)([A.A, E.default, d.A, I.A], () => Object.values(A.A.getVoiceStatesForChannel(t)).map(e => E.default.getUser(e.userId)).filter(S.Vq).sort((e, t) => {
-            var n, l, r, i;
-            return I.A.isFriend(e.id) && !I.A.isFriend(t.id) ? -1 : !I.A.isFriend(e.id) && I.A.isFriend(t.id) ? 1 : (null != (n = null == (r = d.A.getUserAffinity(t.id)) ? void 0 : r.vcProbability) ? n : 0) - (null != (l = null == (i = d.A.getUserAffinity(e.id)) ? void 0 : i.vcProbability) ? l : 0)
-        }), [t])
+        return (0, r.yK)([S.A, m.default, c.A, f.A], () => Object.values(S.A.getVoiceStatesForChannel(t)).map(e => m.default.getUser(e.userId)).filter(N.Vq).sort((e, t) => f.A.isFriend(e.id) && !f.A.isFriend(t.id) ? -1 : !f.A.isFriend(e.id) && f.A.isFriend(t.id) ? 1 : (c.A.getUserAffinity(t.id)?.vcProbability ?? 0) - (c.A.getUserAffinity(e.id)?.vcProbability ?? 0)), [t])
     }({
         channelId: t
     });
-    return 0 === r.length ? null : (0, l.jsx)("div", {
-        className: G.X0,
+    return 0 === i.length ? null : (0, l.jsx)("div", {
+        className: b.X0,
         children: (0, l.jsx)(a.A, {
-            users: r,
-            guildId: null != n ? n : void 0,
-            maxUsers: Math.min(r.length, 4),
-            size: o._3J.SIZE_24,
+            users: i,
+            guildId: n ?? void 0,
+            maxUsers: Math.min(i.length, 4),
+            size: u._3J.SIZE_24,
             disableUserPopout: !0,
-            "aria-label": P.intl.string(P.t.TxqPQR)
+            "aria-label": F.intl.string(F.t.TxqPQR)
         })
     })
 }
 
 function V(e) {
-    var t, n, a;
-    let d, {
-            channelId: I,
-            listItemId: E,
-            voiceStates: A,
-            shouldHighlightIfRecentlyAdded: S,
-            isExpanded: T = !1,
-            onToggleExpanded: U,
-            onPrimaryAction: V,
-            onContextMenu: H
+    let t, {
+            channelId: n,
+            listItemId: a,
+            voiceStates: c,
+            shouldHighlightIfRecentlyAdded: f,
+            isExpanded: m = !1,
+            onToggleExpanded: S,
+            onPrimaryAction: N,
+            onContextMenu: x
         } = e,
-        Y = (0, i.bG)([h.A], () => h.A.getChannel(I), [I]),
-        W = null != (t = (0, u.Ay)(null != Y ? Y : void 0, !0)) ? t : "???",
-        z = null != (n = null == Y || null == (a = Y.getGuildId) ? void 0 : a.call(Y)) ? n : null,
-        B = (0, i.bG)([g.A], () => {
-            var e;
-            return null != z && null != (e = g.A.getGuild(z)) ? e : null
-        }, [z]),
-        K = (0, i.bG)([m.A], () => m.A.getVoiceChannelId() === I, [I]),
-        X = (0, i.bG)([f.A], () => {
-            var e, t;
-            return null != Y && (null != (e = null == (t = Y.isPrivate) ? void 0 : t.call(Y)) && !!e || f.A.can(w.xBc.READ_MESSAGE_HISTORY, Y))
-        }, [Y]),
-        [Q] = (0, i.bG)([y.Ay], () => null == Y || null == z ? [
+        L = (0, r.bG)([h.A], () => h.A.getChannel(n), [n]),
+        V = (0, o.Ay)(L ?? void 0, !0) ?? "???",
+        H = L?.getGuildId?.() ?? null,
+        Y = (0, r.bG)([g.A], () => null != H ? g.A.getGuild(H) ?? null : null, [H]),
+        W = (0, r.bG)([E.A], () => E.A.getVoiceChannelId() === n, [n]),
+        z = (0, r.bG)([I.A], () => null != L && (!!L.isPrivate?.() || I.A.can(G.xBc.READ_MESSAGE_HISTORY, L)), [L]),
+        [$] = (0, r.bG)([p.Ay], () => null == L || null == H ? [
             [], 0
-        ] : [y.Ay.getVoiceStatesForChannel(Y), y.Ay.getVoiceStateVersion(z)], [Y, z], v.D),
-        Z = null != Q && Q.length > 0,
-        q = (0, M.A2)(I),
-        J = (0, j.X)(Y),
-        $ = r.useRef(null),
-        ee = r.useCallback(() => {
-            let e = $.current;
-            null != e && (clearTimeout(e), $.current = null)
+        ] : [p.Ay.getVoiceStatesForChannel(L), p.Ay.getVoiceStateVersion(H)], [L, H], T.D),
+        B = null != $ && $.length > 0,
+        K = (0, U.A2)(n),
+        X = (0, O.X6)(L),
+        Z = i.useRef(null),
+        Q = i.useCallback(() => {
+            let e = Z.current;
+            null != e && (clearTimeout(e), Z.current = null)
         }, []);
-    r.useEffect(() => () => {
-        ee()
-    }, [ee]);
-    let et = r.useCallback(e => {
-            e.stopPropagation(), null == V || V({
-                type: x.c.CONNECT_VOICE_CHANNEL,
-                channelId: I,
-                guildId: z
-            }), T || null == U || U(I)
-        }, [I, z, T, V, U]),
-        en = r.useCallback(e => {
-            e.stopPropagation(), null == V || V({
-                type: x.c.DISCONNECT_VOICE_CHANNEL,
-                channelId: I
+    i.useEffect(() => () => {
+        Q()
+    }, [Q]);
+    let J = i.useCallback(e => {
+            e.stopPropagation(), N?.({
+                type: D.c.CONNECT_VOICE_CHANNEL,
+                channelId: n,
+                guildId: H
+            }), m || S?.(n)
+        }, [n, H, m, N, S]),
+        q = i.useCallback(e => {
+            e.stopPropagation(), N?.({
+                type: D.c.DISCONNECT_VOICE_CHANNEL,
+                channelId: n
             })
-        }, [I, V]),
-        el = r.useCallback(() => {
-            X && (null == V || V({
-                type: x.c.OPEN_TEXT_CHAT_CHANNEL,
-                channelId: I,
-                guildId: z
-            }))
-        }, [X, I, z, V]),
-        er = r.useCallback(e => {
-            if (Z) {
-                null == U || U(I);
-                return
-            }
-        }, [I, Z, U]),
-        ei = r.useCallback(e => {
-            ee(), el()
-        }, [ee, el]),
-        es = r.useCallback(e => {
-            null == H || H({
-                type: x.K.VOICE_CHANNEL,
+        }, [n, N]),
+        ee = i.useCallback(() => {
+            z && N?.({
+                type: D.c.OPEN_TEXT_CHAT_CHANNEL,
+                channelId: n,
+                guildId: H
+            })
+        }, [z, n, H, N]),
+        et = i.useCallback(e => {
+            if (B) return void S?.(n)
+        }, [n, B, S]),
+        en = i.useCallback(e => {
+            Q(), ee()
+        }, [Q, ee]),
+        el = i.useCallback(e => {
+            x?.({
+                type: D.K.VOICE_CHANNEL,
                 event: e,
-                channel: null != Y ? Y : void 0,
-                guild: B,
-                channelId: I
+                channel: L ?? void 0,
+                guild: Y,
+                channelId: n
             })
-        }, [Y, I, B, H]),
+        }, [L, n, Y, x]),
         {
-            mentionCount: ea
-        } = (0, i.cf)([p.Ay], () => ({
-            mentionCount: p.Ay.getMentionCount(I),
-            isMentionLowImportance: p.Ay.getIsMentionLowImportance(I),
-            unread: p.Ay.hasUnread(I)
-        }), [I]),
-        eo = (0, o.rdh)(o.LU0.colors.STATUS_POSITIVE),
-        eu = (0, o.rdh)(o.LU0.colors.STATUS_DANGER),
-        ec = (0, o.rdh)(o.LU0.colors.TEXT_STRONG),
-        ed = (0, o.rdh)(o.LU0.colors.TEXT_MUTED),
-        eh = K ? eo : ea > 0 ? ec : ed,
+            mentionCount: ei
+        } = (0, r.cf)([A.Ay], () => ({
+            mentionCount: A.Ay.getMentionCount(n),
+            isMentionLowImportance: A.Ay.getIsMentionLowImportance(n),
+            unread: A.Ay.hasUnread(n)
+        }), [n]),
+        er = (0, u.rdh)(u.LU0.colors.STATUS_POSITIVE),
+        es = (0, u.rdh)(u.LU0.colors.STATUS_DANGER),
+        ea = (0, u.rdh)(u.LU0.colors.TEXT_STRONG),
+        eu = (0, u.rdh)(u.LU0.colors.TEXT_MUTED),
+        eo = W ? er : ei > 0 ? ea : eu,
         {
-            Component: eg,
+            Component: ed,
             events: {
-                onMouseEnter: ef,
-                onMouseLeave: ep
+                onMouseEnter: ec,
+                onMouseLeave: eh
             }
         } = (0, s.O)(),
-        eI = () => {
-            let e = K ? P.intl.string(P.t["6vrfgt"]) : P.intl.string(P.t.S0W8Z5),
-                t = K ? eu.hex() : eo.hex(),
-                n = K ? eg : o._jp;
+        eg = () => {
+            let e = W ? F.intl.string(F.t["6vrfgt"]) : F.intl.string(F.t.S0W8Z5),
+                t = W ? es.hex() : er.hex(),
+                n = W ? ed : u._jp;
             return (0, l.jsx)("div", {
-                onDoubleClick: k,
-                children: (0, l.jsx)(b.S, {
+                onDoubleClick: P,
+                children: (0, l.jsx)(C.S, {
                     tooltipText: e,
-                    onClick: K ? en : et,
-                    onMouseEnter: ef,
-                    onMouseLeave: ep,
+                    onClick: W ? q : J,
+                    onMouseEnter: ec,
+                    onMouseLeave: eh,
                     children: (0, l.jsx)(n, {
                         size: "sm",
                         color: t
@@ -195,75 +182,75 @@ function V(e) {
             })
         };
     return (0, l.jsxs)("div", {
-        onDoubleClick: ei,
-        children: [(0, l.jsx)(N.D, {
-            listItemId: E,
-            recentlyAddedTimestampMs: S ? q : null,
-            onClick: er,
-            onContextMenu: es,
-            avatar: null != Y ? (0, l.jsx)(C.A, {
-                isTyping: J,
-                guild: null != B ? B : void 0,
-                channel: Y,
-                size: C.Q.SMALL_32
+        onDoubleClick: en,
+        children: [(0, l.jsx)(y.D, {
+            listItemId: a,
+            recentlyAddedTimestampMs: f ? K : null,
+            onClick: et,
+            onContextMenu: el,
+            avatar: null != L ? (0, l.jsx)(v.A, {
+                isTyping: X,
+                guild: Y ?? void 0,
+                channel: L,
+                size: v.Q.SMALL_32
             }) : null,
             primaryText: (0, l.jsxs)("div", {
-                className: R.QV,
-                children: [null == (d = (0, c.gU)(Y, B)) ? null : (0, l.jsx)(d, {
-                    color: eh.hex(),
+                className: w.QV,
+                children: [null == (t = (0, d.gU)(L, Y)) ? null : (0, l.jsx)(t, {
+                    color: eo.hex(),
                     size: "xxs",
-                    className: R.p
-                }), (0, l.jsx)(o.Text, {
-                    className: R.Xh,
+                    className: w.p
+                }), (0, l.jsx)(u.Text, {
+                    className: w.Xh,
                     variant: "text-sm/medium",
-                    color: K ? "status-positive-text" : ea > 0 ? "text-strong" : "text-muted",
-                    children: W
+                    color: W ? "status-positive-text" : ei > 0 ? "text-strong" : "text-muted",
+                    children: V
                 })]
             }),
-            secondaryText: (null == B ? void 0 : B.name) != null ? (0, l.jsx)(o.Text, {
+            secondaryText: Y?.name != null ? (0, l.jsx)(u.Text, {
                 variant: "text-xs/normal",
                 color: "text-muted",
-                children: B.name
+                children: Y.name
             }) : null,
             rightActions: e => {
                 switch (!0) {
-                    case !Z:
+                    case !B:
                         return e ? (0, l.jsxs)("div", {
-                            className: G.YT,
-                            onDoubleClick: k,
-                            children: [eI(), (0, l.jsx)(_.j, {
-                                tab: O.x.VOICE,
-                                targetId: I
+                            className: b.YT,
+                            onDoubleClick: P,
+                            children: [eg(), (0, l.jsx)(M.j, {
+                                tab: _.x.VOICE,
+                                targetId: n
                             })]
                         }) : null;
-                    case Z:
+                    case B:
                         return (0, l.jsxs)(l.Fragment, {
-                            children: [T ? (0, l.jsxs)("div", {
-                                className: G.YT,
-                                onDoubleClick: k,
-                                children: [eI(), (0, l.jsx)(_.j, {
-                                    tab: O.x.VOICE,
-                                    targetId: I
+                            children: [m ? (0, l.jsxs)("div", {
+                                className: b.YT,
+                                onDoubleClick: P,
+                                children: [eg(), (0, l.jsx)(M.j, {
+                                    tab: _.x.VOICE,
+                                    targetId: n
                                 })]
-                            }) : (0, l.jsx)(F, {
-                                channelId: I,
-                                guildId: z
-                            }), (0, l.jsx)(L, {
-                                isCollapsed: !T
+                            }) : (0, l.jsx)(j, {
+                                channelId: n,
+                                guildId: H
+                            }), (0, l.jsx)(k, {
+                                isCollapsed: !m
                             })]
                         });
                     default:
                         return null
                 }
             }
-        }), T && Q.length > 0 ? (0, l.jsx)("div", {
-            className: G.Nz,
-            children: Q.slice(0, 25).map(e => (0, l.jsx)(D.a, {
-                channelId: I,
-                guildId: z,
+        }), m && $.length > 0 ? (0, l.jsx)("div", {
+            className: b.Nz,
+            children: $.slice(0, 25).map(e => (0, l.jsx)(R.a, {
+                channelId: n,
+                guildId: H,
                 userId: e.user.id,
-                onDoubleClick: k,
-                onContextMenu: H
+                onDoubleClick: P,
+                onContextMenu: x
             }, e.user.id))
         }) : null]
     })

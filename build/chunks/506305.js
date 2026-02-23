@@ -6,16 +6,17 @@ var n = i(311907),
     l = i(955572),
     s = i(775602),
     r = i(419954),
-    u = i(780964),
-    a = i(840065),
-    o = i(652215),
-    d = i(985018);
-let T = (0, r.zD)(u.X.SYNC_PROFILE_THEMES, {
-    useTitle: () => d.intl.string(d.t["sSY+mD"]),
-    useSubtitle: () => d.intl.format(d.t.u6UjrL, {
+    a = i(780964),
+    u = i(358776),
+    o = i(840065),
+    d = i(652215),
+    A = i(985018);
+let T = (0, r.zD)(a.X.SYNC_PROFILE_THEMES, {
+    useTitle: () => (0, u.bp)("SyncProfileThemes_useTitle") ? A.intl.string(A.t.C00w4l) : A.intl.string(A.t["sSY+mD"]),
+    useSubtitle: () => (0, u.bp)("SyncProfileThemes_useSubtitle") ? void 0 : A.intl.format(A.t.u6UjrL, {
         onThemeClick() {
-            (0, a.openUserSettings)(u.X.APPEARANCE_PANEL, {
-                section: o.nc_.APPEARANCE
+            (0, o.openUserSettings)(a.X.APPEARANCE_PANEL, {
+                section: d.nc_.APPEARANCE
             })
         }
     }),

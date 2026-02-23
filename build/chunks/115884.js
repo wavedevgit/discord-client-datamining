@@ -1,169 +1,132 @@
 /** chunk id: 115884, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => N
-}), n(896048), n(733351), n(747238);
-var r = n(627968),
-    i = n(64700),
+    A: () => x
+});
+var i = n(627968),
+    r = n(64700),
     l = n(503698),
     a = n.n(l),
     s = n(284009),
     o = n.n(s),
-    c = n(421380),
-    u = n(397927),
-    d = n(49229),
-    p = n(915089),
+    d = n(421380),
+    c = n(397927),
+    u = n(49229),
+    A = n(915089),
     h = n(395422),
-    f = n(652215),
-    g = n(650583),
-    m = n(985018),
-    A = n(680982),
-    _ = n(473169);
-
-function b(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = r
-        })
-    }
-    return e
-}
-
-function E(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
-        }
-        return n
-    })(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-let O = n(892799),
-    y = {
+    _ = n(652215),
+    m = n(650583),
+    p = n(985018),
+    g = n(680982),
+    E = n(473169);
+let I = n(892799),
+    f = {
         canSend: !1,
         hint: null,
         success: null,
         error: null
     },
-    I = (0, p.Ld)(),
-    v = "".concat(I, "-decription"),
-    S = "".concat(I, "-error");
+    C = (0, A.Ld)(),
+    T = `${C}-decription`,
+    N = `${C}-error`;
 
-function C(e, t) {
+function S(e, t) {
     switch (t.type) {
         case "RESET":
-            return y;
+            return f;
         case "SUCCESS":
-            return E(b({}, y), {
-                success: t.text
-            });
+            return {
+                ...f, success: t.text
+            };
         case "HINT":
-            return E(b({}, y), {
-                canSend: !0,
-                hint: t.text
-            });
+            return {
+                ...f, canSend: !0, hint: t.text
+            };
         case "ERROR":
-            return E(b({}, e), {
-                canSend: !0,
-                error: t.text
-            })
+            return {
+                ...e, canSend: !0, error: t.text
+            }
     }
 }
 
-function N(e) {
+function x(e) {
     let {
-        placeholder: t = m.intl.string(m.t["Rn/sLl"])
-    } = e, n = i.useRef(null), l = i.useRef(null), [s, p] = i.useReducer(C, y), {
-        canSend: b,
-        hint: E,
-        error: N,
-        success: T
+        placeholder: t = p.intl.string(p.t["Rn/sLl"])
+    } = e, n = r.useRef(null), l = r.useRef(null), [s, A] = r.useReducer(S, f), {
+        canSend: x,
+        hint: v,
+        error: y,
+        success: b
     } = s;
-    return i.useEffect(() => {
-        null != T && (o()(null != n.current, "Input is submitting when not mounted"), n.current.value = "", n.current.focus())
-    }, [T, n]), (0, r.jsxs)("form", {
+    return r.useEffect(() => {
+        null != b && (o()(null != n.current, "Input is submitting when not mounted"), n.current.value = "", n.current.focus())
+    }, [b, n]), (0, i.jsxs)("form", {
         onSubmit: e => {
             e.preventDefault(), o()(null != n.current, "Input is submitted when not mounted");
             let t = n.current.value.trim();
             !t.includes("#") && t.startsWith("@") && (t = t.substring(1));
-            let r = (0, h.Ty)(t);
-            null != r ? p({
+            let i = (0, h.Ty)(t);
+            null != i ? A({
                 type: "ERROR",
-                text: r
-            }) : d.A.sendRequest({
+                text: i
+            }) : u.A.sendRequest({
                 discordTag: t,
                 context: {
                     location: "Add Friend"
                 }
-            }).then(() => p({
+            }).then(() => A({
                 type: "SUCCESS",
-                text: m.intl.format(m.t.Rtl1Ep, {
+                text: p.intl.format(p.t.Rtl1Ep, {
                     discordTag: t
                 })
-            }), e => {
-                var n;
-                return p({
-                    type: "ERROR",
-                    text: (0, h.vU)(null == (n = e.body) ? void 0 : n.code, t)
-                })
-            })
+            }), e => A({
+                type: "ERROR",
+                text: (0, h.vU)(e.body?.code, t)
+            }))
         },
         autoComplete: "off",
-        children: [(0, r.jsxs)("div", {
-            className: A.QR,
-            children: [(0, r.jsx)(u.Text, {
+        children: [(0, i.jsxs)("div", {
+            className: g.QR,
+            children: [(0, i.jsx)(c.Text, {
                 tag: "div",
                 variant: "heading-md/normal",
-                children: m.intl.string(m.t["Rn/sLl"])
-            }), (0, r.jsx)("img", {
-                src: O,
+                children: p.intl.string(p.t["Rn/sLl"])
+            }), (0, i.jsx)("img", {
+                src: I,
                 alt: "Wumpus Waving"
             })]
-        }), (0, r.jsx)(u.vN3, {
+        }), (0, i.jsx)(c.vN3, {
             focusTarget: n,
             ringTarget: l,
-            ringClassName: A.hN,
-            children: (0, r.jsxs)("div", {
+            ringClassName: g.hN,
+            children: (0, i.jsxs)("div", {
                 ref: l,
-                className: a()(A.fc, {
-                    [A.kX]: T,
-                    [A.z3]: N
+                className: a()(g.fc, {
+                    [g.kX]: b,
+                    [g.z3]: y
                 }),
-                children: [(0, r.jsx)(c.ob, {
-                    id: I,
+                children: [(0, i.jsx)(d.ob, {
+                    id: C,
                     inputRef: n,
-                    className: A.QP,
-                    inputClassName: A.hF,
+                    className: g.QP,
+                    inputClassName: g.hF,
                     onKeyPress: e => {
                         let t = e.currentTarget.value;
-                        if (e.key !== g.N$.Enter && t.includes("#")) {
+                        if (e.key !== m.N$.Enter && t.includes("#")) {
                             o()(null != n.current, "Input is handling keypress when not mounted");
-                            let r = t.indexOf("#"),
-                                i = n.current.selectionStart,
-                                l = e.key === g.N$.Backspace || e.key === g.N$.ArrowRight || e.key === g.N$.ArrowLeft,
+                            let i = t.indexOf("#"),
+                                r = n.current.selectionStart,
+                                l = e.key === m.N$.Backspace || e.key === m.N$.ArrowRight || e.key === m.N$.ArrowLeft,
                                 a = e.which >= 48 && e.which <= 57;
-                            null != i && i > r && /^(.+?#\d{4})$/.test(t) && !l ? e.preventDefault() : null == i || !(i > r) || a || l || e.preventDefault()
+                            null != r && r > i && /^(.+?#\d{4})$/.test(t) && !l ? e.preventDefault() : null == r || !(r > i) || a || l || e.preventDefault()
                         }
                     },
                     onChange: e => {
-                        if (e.length <= 0) return void p({
+                        if (e.length <= 0) return void A({
                             type: "RESET"
                         });
                         let t = "",
                             [, n] = e.split("#");
-                        null != n && (t = e + f.RoK.slice(null != n ? n.length + 1 : 0)), p({
+                        null != n && (t = e + _.RoK.slice(null != n ? n.length + 1 : 0)), A({
                             type: "HINT",
                             text: t
                         })
@@ -177,36 +140,36 @@ function N(e) {
                     "data-1p-ignore": !0,
                     placeholder: t,
                     "aria-label": t,
-                    "aria-invalid": null != N || void 0,
-                    "aria-describedby": null != N ? S : v
-                }), null != E && (0, r.jsx)("div", {
-                    className: A.dQ,
+                    "aria-invalid": null != y || void 0,
+                    "aria-describedby": null != y ? N : T
+                }), null != v && (0, i.jsx)("div", {
+                    className: g.dQ,
                     "aria-hidden": !0,
-                    children: E
-                }), (0, r.jsx)(u.Button, {
+                    children: v
+                }), (0, i.jsx)(c.Button, {
                     variant: "primary",
                     size: "sm",
-                    text: m.intl.string(m.t["PMsq/b"]),
-                    disabled: !b,
+                    text: p.intl.string(p.t["PMsq/b"]),
+                    disabled: !x,
                     type: "submit"
                 })]
             })
-        }), null != N && (0, r.jsx)("div", {
+        }), null != y && (0, i.jsx)("div", {
             role: "alert",
-            children: (0, r.jsx)(u.Text, {
-                id: S,
+            children: (0, i.jsx)(c.Text, {
+                id: N,
                 variant: "text-sm/normal",
-                className: _.Ot,
+                className: E.Ot,
                 color: "text-feedback-critical",
-                children: N
+                children: y
             })
-        }), null != T && (0, r.jsx)("div", {
+        }), null != b && (0, i.jsx)("div", {
             role: "status",
-            children: (0, r.jsx)(u.Text, {
+            children: (0, i.jsx)(c.Text, {
                 variant: "text-sm/normal",
-                className: _.Ot,
+                className: E.Ot,
                 color: "text-feedback-positive",
-                children: T
+                children: b
             })
         })]
     })

@@ -1,106 +1,115 @@
-/** chunk id: 539085, original params: e,t,r (module,exports,require) **/
-r.d(t, {
-    A: () => v
-}), r(896048), r(228524);
-var n = r(627968),
-    o = r(64700),
-    s = r(503698),
-    a = r.n(s),
-    i = r(397927),
-    l = r(470934),
-    c = r(998418),
-    d = r(813847),
-    u = r(890942),
-    p = r(490557),
-    f = r(439156),
-    x = r(220628),
-    j = r(867060),
-    m = r(985018),
-    b = r(235545);
+/** chunk id: 539085, original params: e,a,s (module,exports,require) **/
+s.d(a, {
+    A: () => g
+});
+var t = s(627968),
+    i = s(64700),
+    r = s(503698),
+    n = s.n(r),
+    d = s(397927),
+    o = s(470934),
+    l = s(998418),
+    c = s(813847),
+    x = s(890942),
+    u = s(490557),
+    m = s(439156),
+    p = s(220628),
+    v = s(867060),
+    h = s(985018),
+    j = s(235545);
 
-function v(e) {
+function g(e) {
     let {
-        canUseBoosts: t,
-        guildId: r,
-        powerup: s
-    } = e, [v, O] = o.useState(!1), y = (0, c.Ay)(r, s), g = (0, d.e)(s, y, !1), h = (0, c.dy)(y), {
-        disabled: w
-    } = (0, l.A)(r, s, h), {
-        onActivate: _,
-        error: I
-    } = (0, x.A)(r, s);
-    (0, j.A)(I);
-    let P = !t || w,
-        A = h && !P,
-        C = (0, n.jsxs)(n.Fragment, {
-            children: [(0, n.jsx)("div", {
-                className: a()(b._W, {
-                    [b.vu]: h
-                }),
-                children: (0, n.jsx)(p.l, {
-                    powerup: s,
-                    isHovering: !P && v
-                })
-            }), (0, n.jsxs)("div", {
-                className: b.xQ,
-                children: [(0, n.jsxs)("div", {
-                    className: b.U7,
-                    children: [(0, n.jsx)("div", {
-                        children: (0, n.jsx)(i.Text, {
+        canUseBoosts: a,
+        guildId: s,
+        powerup: r,
+        isNewPerk: g,
+        forceStaticImages: _
+    } = e, [I, C] = i.useState(!1), f = (0, l.Ay)(s, r), N = (0, c.e)(r, f, !1), k = (0, l.dy)(f), {
+        disabled: A
+    } = (0, o.A)(s, r, k), {
+        onActivate: b,
+        error: S
+    } = (0, p.A)(s, r);
+    (0, v.A)(S);
+    let w = !a || A,
+        T = k && !w,
+        y = (0, t.jsxs)(t.Fragment, {
+            children: [(0, t.jsxs)("div", {
+                className: j.R9,
+                children: [(0, t.jsx)("div", {
+                    className: n()(j._W, {
+                        [j.vu]: k
+                    }),
+                    children: (0, t.jsx)(u.l, {
+                        powerup: r,
+                        isHovering: !w && I,
+                        forceStaticImage: _
+                    })
+                }), g && (0, t.jsx)(d.LpS, {
+                    className: j.qS,
+                    text: h.intl.string(h.t.y2b7CA)
+                })]
+            }), (0, t.jsxs)("div", {
+                className: j.xQ,
+                children: [(0, t.jsxs)("div", {
+                    className: j.U7,
+                    children: [(0, t.jsx)("div", {
+                        children: (0, t.jsx)(d.Text, {
                             variant: "text-sm/medium",
-                            color: (h || v) && !P ? "text-strong" : "text-subtle",
-                            children: s.description
+                            color: (k || I) && !w ? "text-strong" : "text-subtle",
+                            children: r.description
                         })
-                    }), (0, n.jsxs)("div", {
-                        children: [(null == g ? void 0 : g.type) === "expiring" && (0, n.jsx)(u.P5, {
-                            dateString: g.expiringAt
-                        }), (null == g ? void 0 : g.type) === "removing" && (0, n.jsx)(u.Yq, {
-                            removingAt: g.removingAt
-                        }), (null == g ? void 0 : g.type) === "active" && (0, n.jsx)(u.TG, {
-                            text: g.statusText
-                        }), null == g && (0, n.jsxs)("div", {
-                            className: b.II,
-                            children: [(0, n.jsx)(i._Jp, {
+                    }), (0, t.jsxs)("div", {
+                        children: [N?.type === "expiring" && (0, t.jsx)(x.P5, {
+                            dateString: N.expiringAt
+                        }), N?.type === "removing" && (0, t.jsx)(x.Yq, {
+                            removingAt: N.removingAt
+                        }), N?.type === "active" && (0, t.jsx)(x.TG, {
+                            text: N.statusText
+                        }), null == N && (0, t.jsxs)("div", {
+                            className: j.II,
+                            children: [(0, t.jsx)(d._Jp, {
                                 size: "sm",
-                                color: i.LU0.unsafe_rawColors.GUILD_BOOSTING_PINK
-                            }), (0, n.jsx)(i.Text, {
+                                color: d.LU0.unsafe_rawColors.GUILD_BOOSTING_PINK
+                            }), (0, t.jsx)(d.Text, {
                                 variant: "text-sm/medium",
                                 color: "text-subtle",
-                                children: m.intl.formatToPlainString(m.t.t2Wbo1, {
-                                    required: s.cost,
+                                children: h.intl.formatToPlainString(h.t.t2Wbo1, {
+                                    required: r.cost,
                                     decorator: ""
                                 })
                             })]
                         })]
                     })]
-                }), A && (0, n.jsx)(f.A, {
+                }), T && (0, t.jsx)(m.A, {
                     compact: !0,
                     iconSize: "md",
-                    guildId: r,
-                    powerup: s,
-                    className: b.Rm
+                    guildId: s,
+                    powerup: r,
+                    className: j.Rm
                 })]
             })]
         });
-    return h ? (0, n.jsx)("div", {
-        className: a()(b.nK, b.RO, {
-            [b.r9]: P
+    return k ? (0, t.jsx)("div", {
+        className: n()(j.nK, j.RO, {
+            [j.r9]: w
         }),
-        onMouseEnter: () => O(!0),
-        onMouseLeave: () => O(!1),
-        children: C
-    }) : (0, n.jsx)(i.DUT, {
-        className: a()(b.nK, {
-            [b.r9]: P
+        onMouseEnter: () => C(!0),
+        onMouseLeave: () => C(!1),
+        children: y
+    }) : (0, t.jsx)(d.DUT, {
+        className: n()(j.nK, {
+            [j.r9]: w
         }),
-        onMouseEnter: () => O(!0),
-        onMouseLeave: () => O(!1),
-        "aria-disabled": P,
+        onMouseEnter: () => C(!0),
+        onMouseLeave: () => C(!1),
+        "aria-disabled": w,
         onClick: e => {
-            e.stopPropagation(), P || null == _ || _({
+            e.stopPropagation(), w || b?.({
                 shouldCloseAllModals: !1
             })
         },
-        children: C
+        children: y
     })
 }

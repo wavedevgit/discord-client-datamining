@@ -1,119 +1,117 @@
 /** chunk id: 247191, original params: t,e,n (module,exports,require) **/
 n.d(e, {
-    A: () => j
-}), n(228524), n(747238);
+    A: () => G
+});
 var l = n(627968);
 n(64700);
-var r = n(931773),
-    i = n.n(r),
-    u = n(989349),
-    o = n.n(u),
-    a = n(492462),
-    c = n(311907),
-    s = n(397927),
-    d = n(77729),
-    g = n(451909),
-    E = n(71393),
-    f = n(723702),
-    A = n(698441),
-    y = n(563312),
-    p = n(794782),
-    b = n(974930),
-    v = n(988794),
-    O = n(652215),
-    h = n(985018);
-let _ = "YYYYMMDDTHHmmss",
-    m = "YYYY-MM-DDTHH:mm:ss",
-    T = /RRULE:.*/;
+var i = n(242934),
+    r = n.n(i),
+    a = n(989349),
+    d = n.n(a),
+    s = n(492462),
+    u = n(311907),
+    o = n(397927),
+    c = n(77729),
+    E = n(451909),
+    A = n(71393),
+    g = n(723702),
+    _ = n(698441),
+    h = n(563312),
+    T = n(794782),
+    f = n(974930),
+    y = n(988794),
+    m = n(652215),
+    v = n(985018);
+let p = "YYYYMMDDTHHmmss",
+    N = "YYYY-MM-DDTHH:mm:ss",
+    S = /RRULE:.*/;
 
-function j(t, e, n, r) {
-    var u, j, S;
-    let w, D = (0, c.bG)([A.Ay], () => A.Ay.isActive(t)),
-        N = (0, y.nh)(null != t ? t : "", r),
-        P = (0, c.bG)([A.Ay], () => A.Ay.getGuildScheduledEvent(t), [t]),
-        G = (0, c.bG)([E.A], () => E.A.getGuild(e), [e]);
-    if (D || null == N || null == P) return null;
-    w = P.entity_type === v.Ps.EXTERNAL ? P.entity_metadata.location : null != n && null != G ? h.intl.formatToPlainString(h.t["2t8L04"], {
+function G(t, e, n, i) {
+    let a, G = (0, u.bG)([_.Ay], () => _.Ay.isActive(t)),
+        D = (0, h.nh)(t ?? "", i),
+        b = (0, u.bG)([_.Ay], () => _.Ay.getGuildScheduledEvent(t), [t]),
+        I = (0, u.bG)([A.A], () => A.A.getGuild(e), [e]);
+    if (G || null == D || null == b) return null;
+    a = b.entity_type === y.Ps.EXTERNAL ? b.entity_metadata.location : null != n && null != I ? v.intl.formatToPlainString(v.t["2t8L04"], {
         channelName: n.name,
-        guildName: G.name
-    }) : h.intl.string(h.t.VSgOVg);
-    let I = o()(P.scheduled_start_time),
-        C = null != P.scheduled_end_time ? o()(P.scheduled_end_time) : I,
-        x = null != P.description && "" !== P.description ? g.Ay.unparse(P.description, null != (u = null == n ? void 0 : n.id) ? u : O.dJq, !0) : "",
-        R = (0, p.Sn)(P.recurrence_rule),
-        L = null != R ? (0, b.X7)(R) : null,
+        guildName: I.name
+    }) : v.intl.string(v.t.VSgOVg);
+    let C = d()(b.scheduled_start_time),
+        x = null != b.scheduled_end_time ? d()(b.scheduled_end_time) : C,
+        w = null != b.description && "" !== b.description ? E.Ay.unparse(b.description, n?.id ?? m.dJq, !0) : "",
+        O = (0, T.Sn)(b.recurrence_rule),
+        R = null != O ? (0, f.X7)(O) : null,
         {
-            startTime: U,
-            endTime: V
-        } = N,
-        M = null != (j = o()(U)) ? j : I,
-        B = null != (S = o()(null != V ? V : U)) ? S : I,
-        k = () => {
-            let t = i()();
+            startTime: j,
+            endTime: L
+        } = D,
+        U = d()(j) ?? C,
+        P = d()(L ?? j) ?? C,
+        V = () => {
+            let t = r()();
             t.createEvent({
-                start: I,
-                end: C,
-                summary: P.name,
-                description: x,
-                location: w,
-                repeating: L
-            }), f.isPlatformEmbedded ? d.A.fileManager.saveWithDialog(t.toString(), "discord-event.ics") : window.open(t.toURL(), "_blank")
+                start: C,
+                end: x,
+                summary: b.name,
+                description: w,
+                location: a,
+                repeating: R
+            }), g.isPlatformEmbedded ? c.A.fileManager.saveWithDialog(t.toString(), "discord-event.ics") : window.open(t.toURL(), "_blank")
         };
-    return (0, l.jsxs)(s.Drp, {
-        id: h.intl.string(h.t.k5pvjo),
-        label: h.intl.string(h.t.k5pvjo),
-        action: k,
-        children: [(0, l.jsx)(s.Drp, {
-            id: h.intl.string(h.t.JKSLRH),
-            label: h.intl.string(h.t.JKSLRH),
+    return (0, l.jsxs)(o.Drp, {
+        id: v.intl.string(v.t.k5pvjo),
+        label: v.intl.string(v.t.k5pvjo),
+        action: V,
+        children: [(0, l.jsx)(o.Drp, {
+            id: v.intl.string(v.t.JKSLRH),
+            label: v.intl.string(v.t.JKSLRH),
             action: () => {
-                var t;
-                let e = null == L ? void 0 : L.toString(),
-                    n = {
-                        text: P.name,
-                        dates: "".concat(I.format(_), "/").concat(C.format(_)),
-                        details: x,
+                let t = R?.toString(),
+                    e = {
+                        text: b.name,
+                        dates: `${C.format(p)}/${x.format(p)}`,
+                        details: w,
                         action: "TEMPLATE",
-                        location: w,
-                        recur: null != e ? null == (t = T.exec(e)) ? void 0 : t[0] : void 0
+                        location: a,
+                        recur: null != t ? S.exec(t)?.[0] : void 0
                     },
-                    l = "https://calendar.google.com/calendar/render?".concat((0, a.stringify)(n));
-                window.open(l, "_blank")
+                    n = `https://calendar.google.com/calendar/render?${(0,s.stringify)(e)}`;
+                window.open(n, "_blank")
             }
-        }), (0, l.jsx)(s.Drp, {
-            id: h.intl.string(h.t.nrBYSe),
-            label: h.intl.string(h.t.nrBYSe),
-            action: k
-        }), (0, l.jsx)(s.Drp, {
-            id: h.intl.string(h.t.odzaCd),
-            label: h.intl.string(h.t.odzaCd),
+        }), (0, l.jsx)(o.Drp, {
+            id: v.intl.string(v.t.nrBYSe),
+            label: v.intl.string(v.t.nrBYSe),
+            action: V
+        }), (0, l.jsx)(o.Drp, {
+            id: v.intl.string(v.t.odzaCd),
+            label: v.intl.string(v.t.odzaCd),
             action: () => {
                 let t = {
                         v: 60,
-                        title: P.name,
-                        st: M.format(_),
-                        et: B.format(_),
-                        desc: x,
-                        in_loc: w
+                        title: b.name,
+                        st: U.format(p),
+                        et: P.format(p),
+                        desc: w,
+                        in_loc: a
                     },
-                    e = "https://calendar.yahoo.com/?".concat((0, a.stringify)(t));
+                    e = `https://calendar.yahoo.com/?${(0,s.stringify)(t)}`;
                 window.open(e, "_blank")
             }
-        }), (0, l.jsx)(s.Drp, {
-            id: h.intl.string(h.t.rQe8EE),
-            label: h.intl.string(h.t.rQe8EE),
+        }), (0, l.jsx)(o.Drp, {
+            id: v.intl.string(v.t.rQe8EE),
+            label: v.intl.string(v.t.rQe8EE),
             action: () => {
                 let t = {
                         path: "/calendar/action/compose",
                         rru: "addevent",
-                        startdt: M.format(m),
-                        enddt: B.format(m),
-                        subject: P.name,
-                        body: x,
-                        location: w,
+                        startdt: U.format(N),
+                        enddt: P.format(N),
+                        subject: b.name,
+                        body: w,
+                        location: a,
                         allday: !1
                     },
-                    e = "https://outlook.live.com/calendar/0/deeplink/compose?".concat((0, a.stringify)(t));
+                    e = `https://outlook.live.com/calendar/0/deeplink/compose?${(0,s.stringify)(t)}`;
                 window.open(e, "_blank")
             }
         })]

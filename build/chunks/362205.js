@@ -1,75 +1,48 @@
 /** chunk id: 362205, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => m
-}), n(896048);
-var r = n(627968),
-    o = n(64700),
-    a = n(503698),
-    l = n.n(a),
-    i = n(284009),
-    c = n.n(i),
-    s = n(92674),
+    A: () => x
+});
+var a = n(627968),
+    r = n(64700),
+    i = n(503698),
+    s = n.n(i),
+    l = n(284009),
+    o = n.n(l),
+    c = n(475539),
     u = n(837381),
     d = n(397927),
     _ = n(964486),
-    b = n(775602),
+    m = n(775602),
+    g = n(253932),
     p = n(894858),
-    f = n(890690),
-    y = n(637577);
+    b = n(890690),
+    f = n(637577);
 
-function g(e) {
+function h(e) {
     let {
         category: t,
         onClick: n,
-        active: o
+        active: r
     } = e, {
-        useTitle: a,
-        useSubnavLabel: i,
-        key: s
-    } = t, _ = null == a ? void 0 : a(), b = null == i ? void 0 : i(), p = null != b ? b : _;
-    return c()(null != p, "[SettingsSubnavigationCategory] Category must have a title"), (0, r.jsx)(u.tG, {
-        id: s,
-        children: e => {
-            var t, a;
-            return (0, r.jsx)(d.DUT, (t = function(e) {
-                for (var t = 1; t < arguments.length; t++) {
-                    var n = null != arguments[t] ? arguments[t] : {},
-                        r = Object.keys(n);
-                    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                        return Object.getOwnPropertyDescriptor(n, e).enumerable
-                    }))), r.forEach(function(t) {
-                        var r;
-                        r = n[t], t in e ? Object.defineProperty(e, t, {
-                            value: r,
-                            enumerable: !0,
-                            configurable: !0,
-                            writable: !0
-                        }) : e[t] = r
-                    })
-                }
-                return e
-            }({
-                onClick: n,
-                className: l()(y.AS, {
-                    [y.vu]: o
-                })
-            }, e), a = a = {
-                children: p
-            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
-                var n = Object.keys(e);
-                if (Object.getOwnPropertySymbols) {
-                    var r = Object.getOwnPropertySymbols(e);
-                    n.push.apply(n, r)
-                }
-                return n
-            })(Object(a)).forEach(function(e) {
-                Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(a, e))
-            }), t), s)
-        }
+        useTitle: i,
+        useSubnavLabel: l,
+        key: c
+    } = t, _ = i?.(), m = l?.() ?? _;
+    return o()(null != m, "[SettingsSubnavigationCategory] Category must have a title"), (0, a.jsx)(u.tG, {
+        id: c,
+        children: e => (0, a.jsx)(d.DUT, {
+            onClick: n,
+            className: s()(f.AS, {
+                [f.vu]: r
+            }),
+            ...e,
+            children: m
+        }, c)
     })
 }
 
-function m(e) {
+function x(e) {
     let {
         categories: t
     } = e, n = p.A.useField("currentCategoryKey");
@@ -78,18 +51,20 @@ function m(e) {
             currentCategoryKey: t[0].key
         })
     });
-    let a = o.useMemo(() => Math.max(t.findIndex(e => e.key === n), 0), [t, n]),
+    let i = r.useMemo(() => Math.max(t.findIndex(e => e.key === n), 0), [t, n]),
         {
-            thumbRef: l,
-            trackRef: i,
-            thumbAnchorRef: c,
+            thumbRef: s,
+            trackRef: l,
+            thumbAnchorRef: o,
             springs: u
         } = function(e) {
-            let t = o.useRef(null),
-                n = o.useRef(null),
-                r = o.useRef(null),
-                a = o.useRef(!0),
-                [l, i] = (0, d.zhh)(() => ({
+            let t = g.Xi.useSetting(),
+                n = r.useRef(null),
+                a = r.useRef(null),
+                i = r.useRef(null),
+                s = r.useRef(!0),
+                l = r.useRef(t),
+                [o, c] = (0, d.zhh)(() => ({
                     y: 0,
                     height: 0,
                     config: {
@@ -98,46 +73,51 @@ function m(e) {
                         tension: 300
                     }
                 }));
-            return o.useLayoutEffect(() => {
-                if (null == t.current || null == n.current || null == r.current) return;
-                let [e, o] = [t.current.getBoundingClientRect(), r.current.getBoundingClientRect()];
-                if (a.current) {
-                    a.current = !1, l.y.set(o.y - e.y), l.height.set(o.height);
-                    return
+            return r.useLayoutEffect(() => {
+                let e = l.current !== t,
+                    r = () => {
+                        if (null == n.current || null == a.current || null == i.current) return;
+                        let [r, u] = [n.current.getBoundingClientRect(), i.current.getBoundingClientRect()], d = r.width / 2, _ = (u.y - r.y) / d, g = u.height / d;
+                        s.current || e || m.A.useReducedMotion ? (o.y.set(_), o.height.set(g)) : c({
+                            y: _,
+                            height: g
+                        }), s.current = !1, l.current = t
+                    },
+                    u = null;
+                return e ? u = requestAnimationFrame(() => {
+                    u = null, r()
+                }) : r(), () => {
+                    null != u && cancelAnimationFrame(u)
                 }
-                i({
-                    y: o.y - e.y,
-                    height: o.height,
-                    immediate: b.A.useReducedMotion
-                })
-            }, [e, i, l.y, l.height]), {
-                thumbRef: n,
-                trackRef: t,
-                thumbAnchorRef: r,
-                springs: l
+            }, [e, c, o.y, o.height, t]), {
+                thumbRef: a,
+                trackRef: n,
+                thumbAnchorRef: i,
+                springs: o
             }
-        }(a);
-    return (0, f.u)(t), (0, r.jsxs)("div", {
-        className: y.o8,
+        }(i);
+    return (0, b.u)(t), (0, a.jsxs)("div", {
+        className: f.o8,
         role: "list",
         style: {
             "--custom-nav-count": t.length,
-            "--custom-nav-index": a
+            "--custom-nav-index": i,
+            "--custom-nav-width": "2px"
         },
-        children: [(0, r.jsx)("div", {
-            className: y.u4,
+        children: [(0, a.jsx)("div", {
+            className: f.u4,
             "aria-hidden": "true",
-            ref: i,
-            children: (0, r.jsx)(s.animated.div, {
-                className: y.FF,
+            ref: l,
+            children: (0, a.jsx)(c.animated.div, {
+                className: f.FF,
                 style: u,
-                ref: l
+                ref: s
             })
-        }), (0, r.jsx)("div", {
-            className: y.gu,
+        }), (0, a.jsx)("div", {
+            className: f.gu,
             "aria-hidden": "true",
-            ref: c
-        }), t.map(e => (0, r.jsx)(g, {
+            ref: o
+        }), t.map(e => (0, a.jsx)(h, {
             onClick: () => {
                 var t;
                 return t = e.key, void p.A.setState({

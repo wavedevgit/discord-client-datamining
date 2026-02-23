@@ -1,54 +1,54 @@
-/** chunk id: 153527, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    S: () => m,
-    n: () => h
+/** chunk id: 153527, original params: e,t,a (module,exports,require) **/
+a.d(t, {
+    S: () => p,
+    n: () => m
 });
-var r, l = n(627968);
-n(64700);
-var i = n(503698),
-    a = n.n(i),
-    s = n(397927),
-    o = n(736653),
-    c = n(742589),
-    d = n(151252),
-    u = n(571338),
-    p = n(403299),
-    h = ((r = {}).DEFAULT = "DEFAULT", r.SEARCH = "SEARCH", r);
+var n, i = a(627968);
+a(64700);
+var s = a(503698),
+    l = a.n(s),
+    r = a(397927),
+    o = a(736653),
+    c = a(742589),
+    d = a(151252),
+    u = a(571338),
+    h = a(403299),
+    m = ((n = {}).DEFAULT = "DEFAULT", n.SEARCH = "SEARCH", n);
 
-function m(e) {
+function p(e) {
     let {
         selectedTabId: t,
-        handleTransition: n,
-        tabs: r,
-        state: i = "DEFAULT",
-        onAvailableWidthChange: h,
-        icon: m,
-        children: g
-    } = e, _ = (0, o.Ay)(), {
-        enabled: b
+        handleTransition: a,
+        tabs: n,
+        state: s = "DEFAULT",
+        onAvailableWidthChange: m,
+        icon: p,
+        children: _
+    } = e, g = (0, o.Ay)(), {
+        enabled: x
     } = (0, d.Z)({
         location: "global_discovery_header_bar"
     });
-    return (0, l.jsx)(s.NPJ, {
-        theme: _,
-        children: e => (0, l.jsxs)(c.A, {
-            className: a()(e, p.jr),
-            innerClassname: b ? p.vi : void 0,
-            children: ["DEFAULT" === i && (0, l.jsxs)(l.Fragment, {
-                children: [(0, l.jsx)(m, {
+    return (0, i.jsx)(r.NPJ, {
+        theme: g,
+        children: e => (0, i.jsxs)(c.A, {
+            className: l()(e, h.jr),
+            innerClassname: x ? h.vi : void 0,
+            children: ["DEFAULT" === s && (0, i.jsxs)(i.Fragment, {
+                children: [(0, i.jsx)(p, {
                     color: "currentColor",
                     size: "md"
-                }), (0, l.jsx)(u.A, {
-                    tabs: r,
+                }), (0, i.jsx)(u.A, {
+                    tabs: n,
                     selectedTab: t,
-                    onTabSelect: n,
-                    onAvailableWidthChange: h
+                    onTabSelect: a,
+                    onAvailableWidthChange: m
                 })]
-            }), (0, l.jsx)("div", {
-                className: a()(p.w4, {
-                    [p.cS]: "SEARCH" === i
+            }), (0, i.jsx)("div", {
+                className: l()(h.w4, {
+                    [h.cS]: "SEARCH" === s
                 }),
-                children: g
+                children: _
             })]
         })
     })

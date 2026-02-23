@@ -1,60 +1,61 @@
 /** chunk id: 592982, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => E
+    A: () => S
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var l = n(311907),
-    i = n(397927),
-    s = n(587895),
+var s = n(311907),
+    l = n(397927),
+    r = n(587895),
     a = n(690953),
     o = n(267102),
     c = n(516311),
-    u = n(71393),
-    d = n(313961),
-    p = n(457246),
-    h = n(973937),
-    g = n(854182),
-    f = n(734337),
+    d = n(71393),
+    u = n(313961),
+    h = n(457246),
+    A = n(973937),
+    p = n(854182),
+    g = n(734337),
     m = n(834857),
-    b = n(451556),
-    A = n(74329),
-    y = n(956747),
-    O = n(470743),
-    j = n(806931),
-    x = n(652215),
-    _ = n(985018),
-    v = n(220636);
+    _ = n(451556),
+    f = n(74329),
+    x = n(956747),
+    C = n(470743),
+    E = n(806931),
+    I = n(652215),
+    b = n(985018),
+    N = n(220636);
 
-function E(e) {
+function S(e) {
     let {
         onClose: t,
         onSelect: n,
-        channel: E,
-        remoteMode: C,
-        onInteraction: S
-    } = e, I = (0, o.Us)(), {
-        id: N,
-        type: T
-    } = E, P = (0, l.bG)([u.A], () => u.A.getGuild(E.guild_id), [E.guild_id]), w = (0, l.bG)([d.A], () => d.A.getSelectedParticipant(N)), R = (null == w ? void 0 : w.type) === j.lp.STREAM ? w.stream : null, D = (0, l.bG)([s.A], () => (null == w ? void 0 : w.type) === j.lp.ACTIVITY ? s.A.getApplication(w.applicationId) : void 0), L = (0, g.A)(N), M = (0, y.A)(N), G = (0, m.A)(E, P, null == R ? void 0 : R.ownerId, null == D ? void 0 : D.id), k = (0, h.A)(N), U = (0, O.A)(), V = (0, c.RQ)(N), B = (0, c.dA)(N), H = (0, A.A)(R, I), F = (0, b.A)(D, N), Y = (0, f.A)(), K = (0, a.A)(E), W = (0, p.f)(N);
-    return (0, r.jsxs)(i.W1t, {
+        channel: S,
+        remoteMode: T,
+        onInteraction: y
+    } = e, v = (0, o.Us)(), {
+        id: j,
+        type: R
+    } = S, O = (0, s.bG)([d.A], () => d.A.getGuild(S.guild_id), [S.guild_id]), L = (0, s.bG)([u.A], () => u.A.getSelectedParticipant(j)), M = L?.type === E.lp.STREAM ? L.stream : null, D = (0, s.bG)([r.A], () => L?.type === E.lp.ACTIVITY ? r.A.getApplication(L.applicationId) : void 0), G = (0, p.A)(j), U = (0, x.A)(j), P = (0, m.A)(S, O, M?.ownerId, D?.id), w = (0, A.A)(j), k = (0, C.A)(), V = (0, c.RQ)(j), B = (0, c.dA)(j), H = (0, f.A)(M, v), F = (0, _.A)(D, j), K = (0, g.A)(), W = (0, a.A)(S), Y = (0, h.f)(j);
+    return (0, i.jsxs)(l.W1t, {
         "data-menu-needs-review": !0,
-        className: v.MK,
+        className: N.MK,
         onClose: t,
         onSelect: n,
-        onInteraction: S,
+        onInteraction: y,
         navId: "more-settings-context",
-        "aria-label": _.intl.string(_.t.FTLzdR),
-        children: [(0, r.jsx)(i.rXV, {
-            children: T !== x.rbe.GUILD_STAGE_VOICE ? G : null
-        }), (0, r.jsxs)(i.rXV, {
-            children: [T === x.rbe.GUILD_STAGE_VOICE ? V : null, T === x.rbe.GUILD_STAGE_VOICE ? B : null, C || T === x.rbe.GUILD_STAGE_VOICE ? null : k, Y, T !== x.rbe.GUILD_STAGE_VOICE ? L : null, T === x.rbe.GUILD_STAGE_VOICE || T === x.rbe.GUILD_VOICE ? M : null]
-        }), (0, r.jsx)(i.rXV, {
-            children: K
-        }), (0, r.jsxs)(i.rXV, {
-            children: [U, !E.isManaged() && E.isPrivate() ? W : null]
-        }), (0, r.jsxs)(i.rXV, {
-            children: [null != R ? H : null, null != D ? F : null]
+        "aria-label": b.intl.string(b.t.FTLzdR),
+        children: [(0, i.jsx)(l.rXV, {
+            children: R !== I.rbe.GUILD_STAGE_VOICE ? P : null
+        }), (0, i.jsxs)(l.rXV, {
+            children: [R === I.rbe.GUILD_STAGE_VOICE ? V : null, R === I.rbe.GUILD_STAGE_VOICE ? B : null, T || R === I.rbe.GUILD_STAGE_VOICE ? null : w, K, R !== I.rbe.GUILD_STAGE_VOICE ? G : null, R === I.rbe.GUILD_STAGE_VOICE || R === I.rbe.GUILD_VOICE ? U : null]
+        }), (0, i.jsx)(l.rXV, {
+            children: W
+        }), (0, i.jsxs)(l.rXV, {
+            children: [k, !S.isManaged() && S.isPrivate() ? Y : null]
+        }), (0, i.jsxs)(l.rXV, {
+            children: [null != M ? H : null, null != D ? F : null]
         })]
     })
 }

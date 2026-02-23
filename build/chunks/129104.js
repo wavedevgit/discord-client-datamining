@@ -1,115 +1,88 @@
 /** chunk id: 129104, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    R: () => b
+    R: () => _
 });
-var r = n(627968),
-    l = n(64700),
-    i = n(311907),
-    s = n(397927),
+var i = n(627968),
+    s = n(64700),
+    l = n(311907),
+    r = n(397927),
     a = n(565645),
     o = n(375499),
     c = n(937773),
-    u = n(961350),
-    d = n(734057),
-    p = n(309010),
-    h = n(559405),
-    g = n(652215),
-    f = n(307731),
+    d = n(961350),
+    u = n(734057),
+    h = n(309010),
+    A = n(559405),
+    p = n(652215),
+    g = n(307731),
     m = n(680930);
 
-function b(e) {
+function _(e) {
     let {
         customStatusEmoji: t,
         setCustomStatusEmoji: n,
-        selectedDefaultStatus: b,
-        setIsEmojiPickerOpen: A,
-        defaultStatusVariant: y
-    } = e, O = l.useRef(null), j = (0, i.bG)([p.A, d.A], () => d.A.getChannel(p.A.getVoiceChannelId())), x = l.useCallback(() => null != t ? (0, r.jsx)(a.A, {
+        selectedDefaultStatus: _,
+        setIsEmojiPickerOpen: f,
+        defaultStatusVariant: x
+    } = e, C = s.useRef(null), E = (0, l.bG)([h.A, u.A], () => u.A.getChannel(h.A.getVoiceChannelId())), I = s.useCallback(() => null != t ? (0, i.jsx)(a.A, {
         emojiId: t.id,
         emojiName: t.name,
         animated: !!t.animated
-    }) : null != b ? (0, r.jsx)(h.A, {
+    }) : null != _ ? (0, i.jsx)(A.A, {
         className: m.Kk,
-        userId: u.default.getId(),
+        userId: d.default.getId(),
         size: 20,
         hangStatusActivity: {
-            type: g.$pd.HANG_STATUS,
-            state: b
+            type: p.$pd.HANG_STATUS,
+            state: _
         },
-        fallbackVariant: y
-    }) : null, [t, y, b]);
-    return (0, r.jsx)(s.YNO, {
-        targetElementRef: O,
-        onRequestOpen: () => A(!0),
-        onRequestClose: () => A(!1),
+        fallbackVariant: x
+    }) : null, [t, x, _]);
+    return (0, i.jsx)(r.YNO, {
+        targetElementRef: C,
+        onRequestOpen: () => f(!0),
+        onRequestClose: () => f(!1),
         renderPopout: e => {
-            var t;
             let {
-                closePopout: l
+                closePopout: t
             } = e;
-            return (0, r.jsx)(c.A, {
-                channel: j,
-                guildId: null != (t = null == j ? void 0 : j.guild_id) ? t : void 0,
-                closePopout: l,
+            return (0, i.jsx)(c.A, {
+                channel: E,
+                guildId: E?.guild_id ?? void 0,
+                closePopout: t,
                 onSelectEmoji: e => {
-                    var t;
                     let {
-                        emoji: r,
-                        willClose: i
+                        emoji: i,
+                        willClose: s
                     } = e;
-                    null == r ? n(null) : n(null != r.id ? {
-                        id: r.id,
-                        name: r.name,
-                        animated: r.animated
+                    null == i ? n(null) : n(null != i.id ? {
+                        id: i.id,
+                        name: i.name,
+                        animated: i.animated
                     } : {
                         id: null,
-                        name: null != (t = r.optionallyDiverseSequence) ? t : "",
+                        name: i.optionallyDiverseSequence ?? "",
                         animated: !1
-                    }), i && l()
+                    }), s && t()
                 },
-                pickerIntention: f.b_.STATUS
+                pickerIntention: g.b_.STATUS
             })
         },
         position: "left",
-        animation: s.YNO.Animation.NONE,
+        animation: r.YNO.Animation.NONE,
         align: "top",
         children: (e, n) => {
-            var l, i;
             let {
                 isShown: s
             } = n;
-            return (0, r.jsx)(o.A, (l = function(e) {
-                for (var t = 1; t < arguments.length; t++) {
-                    var n = null != arguments[t] ? arguments[t] : {},
-                        r = Object.keys(n);
-                    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                        return Object.getOwnPropertyDescriptor(n, e).enumerable
-                    }))), r.forEach(function(t) {
-                        var r;
-                        r = n[t], t in e ? Object.defineProperty(e, t, {
-                            value: r,
-                            enumerable: !0,
-                            configurable: !0,
-                            writable: !0
-                        }) : e[t] = r
-                    })
-                }
-                return e
-            }({}, e), i = i = {
-                ref: O,
+            return (0, i.jsx)(o.A, {
+                ...e,
+                ref: C,
                 active: s,
                 tabIndex: 0,
-                renderButtonContents: null == t && null == b ? null : x
-            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
-                var n = Object.keys(e);
-                if (Object.getOwnPropertySymbols) {
-                    var r = Object.getOwnPropertySymbols(e);
-                    n.push.apply(n, r)
-                }
-                return n
-            })(Object(i)).forEach(function(e) {
-                Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(i, e))
-            }), l))
+                renderButtonContents: null == t && null == _ ? null : I
+            })
         }
     })
 }

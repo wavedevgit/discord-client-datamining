@@ -1,96 +1,56 @@
-/** chunk id: 32272, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    V: () => f
-}), n(896048);
-var r = n(627968),
-    i = n(64700),
-    a = n(508382),
-    o = n(158954),
-    s = n(868249);
-
-function l(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-
-function c(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            l(e, t, n[t])
-        })
-    }
-    return e
-}
-
-function u(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-        var r = Object.getOwnPropertySymbols(e);
-        t && (r = r.filter(function(t) {
-            return Object.getOwnPropertyDescriptor(e, t).enumerable
-        })), n.push.apply(n, r)
-    }
-    return n
-}
-
-function d(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : u(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-let f = {
+/** chunk id: 32272, original params: e,l,a (module,exports,require) **/
+a.d(l, {
+    V: () => r
+});
+var t = a(627968),
+    o = a(64700),
+    n = a(508382),
+    i = a(158954),
+    s = a(868249);
+let r = {
     title: "FloatingLayer",
     stories: [{
         name: "FloatingLayer",
         id: "popover-layer",
         component: function(e) {
             let {
-                placement: t,
-                spacing: n,
-                autoFlip: l,
-                autoShift: u,
-                strategy: f,
-                portal: p,
-                blockPointerEvents: _
-            } = e, [h, m] = i.useState(!1);
-            return (0, r.jsx)(a.Ow, {
-                open: h,
+                placement: l,
+                spacing: a,
+                autoFlip: r,
+                autoShift: d,
+                strategy: u,
+                portal: c,
+                blockPointerEvents: b
+            } = e, [p, m] = o.useState(!1);
+            return (0, t.jsx)(n.Ow, {
+                open: p,
                 onOpenChange: m,
-                placement: t,
-                spacing: n,
-                autoFlip: l,
-                autoShift: u,
-                strategy: f,
-                portal: p,
-                blockPointerEvents: _,
-                renderLayer: () => (0, r.jsx)("div", {
+                placement: l,
+                spacing: a,
+                autoFlip: r,
+                autoShift: d,
+                strategy: u,
+                portal: c,
+                blockPointerEvents: b,
+                renderLayer: () => (0, t.jsx)("div", {
                     className: s.q,
-                    children: (0, r.jsx)(o.EYj, {
+                    children: (0, t.jsx)(i.EYj, {
                         variant: "text-sm/medium",
                         children: "FloatingLayer Content"
                     })
                 }),
                 children: e => {
                     let {
-                        ref: t,
-                        props: n
+                        ref: l,
+                        props: a
                     } = e;
-                    return (0, r.jsx)(o.$nd, d(c({
+                    return (0, t.jsx)(i.$nd, {
                         variant: "primary",
                         text: "Target Element",
-                        onClick: () => m(!h)
-                    }, n), {
-                        buttonRef: t
-                    }))
+                        onClick: () => m(!p),
+                        ...a,
+                        buttonRef: l
+                    })
                 }
             })
         },

@@ -1,83 +1,83 @@
 /** chunk id: 164599, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => E
+    A: () => C
 });
-var r = n(627968),
-    i = n(64700),
-    l = n(503698),
-    s = n.n(l),
-    a = n(421380),
+var i = n(627968),
+    s = n(64700),
+    a = n(503698),
+    r = n.n(a),
+    l = n(421380),
     o = n(397927),
     c = n(688810),
     d = n(309635),
     u = n(954571),
     _ = n(927578),
-    p = n(919395),
-    m = n(128450),
+    m = n(919395),
+    A = n(128450),
     g = n(212168),
-    A = n(652215),
-    f = n(788868),
-    b = n(985018),
-    h = n(97671);
+    h = n(652215),
+    x = n(788868),
+    p = n(985018),
+    E = n(97671);
 
-function E(e) {
+function C(e) {
     let {
         user: t,
         guild: n,
-        initialSelectedEffect: l,
-        className: E,
-        sectionTitle: O,
-        forcedDivider: x = !1,
-        withTutorial: C = !1,
-        showBorder: S = !1
+        initialSelectedEffect: a,
+        className: C,
+        sectionTitle: T,
+        forcedDivider: S = !1,
+        withTutorial: I = !1,
+        showBorder: f = !1
     } = e, {
-        analyticsLocations: T
-    } = (0, c.Ay)(), I = _.Ay.canUsePremiumProfileCustomization(t), N = (0, p.N2)({
+        analyticsLocations: N
+    } = (0, c.Ay)(), b = _.Ay.canUsePremiumProfileCustomization(t), j = (0, m.N2)({
         user: t,
-        guildId: null == n ? void 0 : n.id
+        guildId: n?.id
     }), {
-        pendingProfileEffect: y,
-        errors: j
-    } = (0, p.nZ)(null == n ? void 0 : n.id);
-    i.useEffect(() => {
-        I && u.default.track(A.HAw.PREMIUM_UPSELL_VIEWED, {
-            type: f.e.PROFILE_EFFECTS_INLINE_SETTINGS,
-            location_stack: T
+        pendingProfileEffect: v,
+        errors: O
+    } = (0, m.nZ)(n?.id);
+    s.useEffect(() => {
+        b && u.default.track(h.HAw.PREMIUM_UPSELL_VIEWED, {
+            type: x.e.PROFILE_EFFECTS_INLINE_SETTINGS,
+            location_stack: N
         })
-    }, [I, T]);
-    let v = C ? o.wLn : a.$n;
-    return (0, r.jsx)(m.A, {
-        forcedDivider: x,
+    }, [b, N]);
+    let R = I ? o.wLn : l.$n;
+    return (0, i.jsx)(A.A, {
+        forcedDivider: S,
         borderType: g.i.PREMIUM,
         hasBackground: !0,
-        title: O,
-        showBorder: S,
-        errors: j,
-        className: E,
-        children: (0, r.jsxs)("div", {
-            className: h.NC,
-            children: [(0, r.jsx)(v, {
-                size: a.$n.Sizes.SMALL,
+        title: T,
+        showBorder: f,
+        errors: O,
+        className: C,
+        children: (0, i.jsxs)("div", {
+            className: E.NC,
+            children: [(0, i.jsx)(R, {
+                size: l.$n.Sizes.SMALL,
                 onClick: () => {
                     (0, d.W)({
-                        analyticsLocations: T,
+                        analyticsLocations: N,
                         guild: n,
-                        initialSelectedEffect: l
+                        initialSelectedEffect: a
                     })
                 },
-                className: s()({
-                    [h.yj]: C
+                className: r()({
+                    [E.yj]: I
                 }),
-                children: b.intl.string(b.t["/dRfCf"])
-            }), (void 0 === y ? null != N : null != y) && (0, r.jsx)("div", {
+                children: p.intl.string(p.t["/dRfCf"])
+            }), (void 0 === v ? null != j : null != v) && (0, i.jsx)("div", {
                 "data-button-hoisted-classname-wrapper": !0,
-                className: h.DT,
-                children: (0, r.jsx)(o.Button, {
+                className: E.DT,
+                children: (0, i.jsx)(o.Button, {
                     variant: "secondary",
                     size: "sm",
-                    text: null != n ? b.intl.string(b.t.CHf9iJ) : b.intl.string(b.t.uMuafO),
+                    text: null != n ? p.intl.string(p.t.CHf9iJ) : p.intl.string(p.t.uMuafO),
                     onClick: () => {
-                        (0, p.mZ)(null, null == n ? void 0 : n.id)
+                        (0, m.mZ)(null, n?.id)
                     }
                 })
             })]

@@ -3,11 +3,11 @@
 n.d(t, {
     A: () => o
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(503698),
-    l = n.n(i),
-    s = n(305015),
+var s = n(503698),
+    l = n.n(s),
+    r = n(305015),
     a = n(415517);
 
 function o(e) {
@@ -15,9 +15,9 @@ function o(e) {
         className: t,
         size: n = 14
     } = e;
-    return (0, r.jsx)("div", {
+    return (0, i.jsx)("div", {
         className: l()([a.S, t]),
-        children: (0, r.jsx)(s.A, {
+        children: (0, i.jsx)(r.A, {
             height: n,
             width: n
         })

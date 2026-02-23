@@ -1,100 +1,99 @@
 /** chunk id: 965601, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    C: () => h
-}), n(896048), n(733351);
-var r = n(627968),
-    l = n(64700),
-    i = n(562465),
-    s = n(990078),
+    C: () => A
+});
+var i = n(627968),
+    s = n(64700),
+    l = n(562465),
+    r = n(990078),
     a = n(397927),
     o = n(147087),
     c = n(320501),
-    u = n(652215),
-    d = n(985018);
-async function p(e) {
+    d = n(652215),
+    u = n(985018);
+async function h(e) {
     try {
-        var t, n;
-        let r = await i.Bo.post({
-            url: u.Rsh.AI_TITLE,
+        let t = await l.Bo.post({
+            url: d.Rsh.AI_TITLE,
             body: {
                 content: e
             },
             oldFormErrors: !0,
             rejectWithError: !1
         });
-        return r.ok && null != (t = null == (n = r.body) ? void 0 : n.title) ? t : null
+        return t.ok ? t.body?.title ?? null : null
     } catch (e) {
         return null
     }
 }
 
-function h(e) {
+function A(e) {
     let {
         parentChannel: t,
         parentMessageId: n,
-        updateThreadSettings: i,
-        threadSettings: u,
-        textAreaState: h
-    } = e, [g, f] = l.useState(!1), [m, b] = l.useState(!1), A = (0, o.b)(), y = l.useCallback(async () => {
-        if (A) {
-            f(!0);
+        updateThreadSettings: l,
+        threadSettings: d,
+        textAreaState: A
+    } = e, [p, g] = s.useState(!1), [m, _] = s.useState(!1), f = (0, o.b)(), x = s.useCallback(async () => {
+        if (f) {
+            g(!0);
             try {
-                let r = null;
+                let e = null;
                 if (null != n) {
-                    var e;
-                    let l = c.A.getMessage(t.id, n);
-                    r = null != (e = null == l ? void 0 : l.content) ? e : null
-                } else h.textValue.trim().length >= 10 && (r = h.textValue);
-                if (null != r) {
-                    let e = await p(r);
-                    null != e && "" !== e.trim() && i({
-                        name: e
+                    let i = c.A.getMessage(t.id, n);
+                    e = i?.content ?? null
+                } else A.textValue.trim().length >= 10 && (e = A.textValue);
+                if (null != e) {
+                    let t = await h(e);
+                    null != t && "" !== t.trim() && l({
+                        name: t
                     })
                 }
             } finally {
-                f(!1)
+                g(!1)
             }
         }
-    }, [t.id, n, i, A, h.textValue]);
-    l.useEffect(() => {
-        b(!1), f(!1), t.id === u.parentChannelId && n !== u.parentMessageId && i({
+    }, [t.id, n, l, f, A.textValue]);
+    s.useEffect(() => {
+        _(!1), g(!1), t.id === d.parentChannelId && n !== d.parentMessageId && l({
             name: ""
         })
-    }, [n, i, t.id, u.parentChannelId, u.parentMessageId]), l.useEffect(() => {
-        null != u.name && "" !== u.name.trim() || m || A && null != n && (b(!0), y())
-    }, [t.id, n, i, u.name, m, A, y]);
-    let O = l.useCallback(function() {
+    }, [n, l, t.id, d.parentChannelId, d.parentMessageId]), s.useEffect(() => {
+        null != d.name && "" !== d.name.trim() || m || f && null != n && (_(!0), x())
+    }, [t.id, n, l, d.name, m, f, x]);
+    let C = s.useCallback(function() {
             let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-            if (A) return {
+            if (f) return {
                 icon: a.Dud,
-                onClick: y,
-                "aria-label": d.intl.string(d.t.ZF2oBs),
-                disabled: e || g || null == n && h.textValue.trim().length < 10,
-                tooltip: d.intl.string(d.t.ZF2oBs),
-                loading: g
+                onClick: x,
+                "aria-label": u.intl.string(u.t.ZF2oBs),
+                disabled: e || p || null == n && A.textValue.trim().length < 10,
+                tooltip: u.intl.string(u.t.ZF2oBs),
+                loading: p
             }
-        }, [A, y, g, n, h.textValue]),
-        j = l.useCallback(function() {
+        }, [f, x, p, n, A.textValue]),
+        E = s.useCallback(function() {
             let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-            return A ? (0, r.jsx)(s.m, {
-                text: d.intl.string(d.t.ZF2oBs),
-                children: (0, r.jsx)(a.K0, {
+            return f ? (0, i.jsx)(r.m, {
+                text: u.intl.string(u.t.ZF2oBs),
+                children: (0, i.jsx)(a.K0, {
                     icon: a.Dud,
                     variant: "secondary",
                     size: "sm",
-                    "aria-label": d.intl.string(d.t.ZF2oBs),
-                    onClick: y,
-                    disabled: e || g || null == n && h.textValue.trim().length < 10,
-                    loading: g,
+                    "aria-label": u.intl.string(u.t.ZF2oBs),
+                    onClick: x,
+                    disabled: e || p || null == n && A.textValue.trim().length < 10,
+                    loading: p,
                     type: "button"
                 })
             }) : null
-        }, [A, g, n, h.textValue, y]);
+        }, [f, p, n, A.textValue, x]);
     return {
-        isGeneratingAI: g,
-        generateAIName: y,
-        enableAIFeatures: A,
-        renderAiGenerateButton: j,
-        getThreadNameInputAccessory: O
+        isGeneratingAI: p,
+        generateAIName: x,
+        enableAIFeatures: f,
+        renderAiGenerateButton: E,
+        getThreadNameInputAccessory: C
     }
 }

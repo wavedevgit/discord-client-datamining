@@ -1,61 +1,61 @@
-/** chunk id: 515598, original params: e,t,a (module,exports,require) **/
-a.d(t, {
-    A: () => A
+/** chunk id: 515598, original params: t,e,n (module,exports,require) **/
+n.d(e, {
+    A: () => m
 });
-var n = a(627968);
-a(64700);
-var i = a(311907),
-    c = a(397927),
-    o = a(688810),
-    r = a(503566),
-    s = a(631305),
-    l = a(71393),
-    d = a(967198),
-    u = a(652215),
-    p = a(874864),
-    _ = a(985018),
-    m = a(234518);
+var i = n(627968);
+n(64700);
+var a = n(311907),
+    o = n(397927),
+    r = n(688810),
+    s = n(503566),
+    l = n(631305),
+    A = n(71393),
+    c = n(967198),
+    d = n(652215),
+    _ = n(874864),
+    u = n(985018),
+    L = n(234518);
 
-function A(e) {
+function m(t) {
     let {
-        analyticsSection: t,
-        analyticsPage: a,
-        isGIF: A,
-        banner: f
-    } = e, g = (0, i.bG)([d.A], () => d.A.getGuildId()), h = (0, i.bG)([l.A], () => l.A.getGuild(g)), {
-        analyticsLocations: x
-    } = (0, o.Ay)();
-    return null == h || h.features.has(u.GuildFeatures.ANIMATED_BANNER) || !A && h.features.has(u.GuildFeatures.BANNER) ? null : (0, n.jsxs)("div", {
-        className: m.kL,
-        children: [(0, n.jsx)(c._Jp, {
-            color: c.LU0.unsafe_rawColors.GUILD_BOOSTING_PINK,
-            className: m.qC
-        }), (0, n.jsx)(c.Text, {
+        analyticsSection: e,
+        analyticsPage: n,
+        isGIF: m,
+        banner: g
+    } = t, E = (0, a.bG)([c.A], () => c.A.getGuildId()), N = (0, a.bG)([A.A], () => A.A.getGuild(E)), {
+        analyticsLocations: R
+    } = (0, r.Ay)();
+    return null == N || N.features.has(d.GuildFeatures.ANIMATED_BANNER) || !m && N.features.has(d.GuildFeatures.BANNER) ? null : (0, i.jsxs)("div", {
+        className: L.kL,
+        children: [(0, i.jsx)(o._Jp, {
+            color: o.LU0.unsafe_rawColors.GUILD_BOOSTING_PINK,
+            className: L.qC
+        }), (0, i.jsx)(o.Text, {
             color: "text-strong",
             variant: "text-sm/semibold",
-            children: _.intl.string(_.t["56M7xe"])
-        }), (0, n.jsx)("div", {
-            className: m.xF,
-            children: (0, n.jsx)(c.QWc, {
-                text: _.intl.string(_.t.WUHdZV),
+            children: u.intl.string(u.t["56M7xe"])
+        }), (0, i.jsx)("div", {
+            className: L.xF,
+            children: (0, i.jsx)(o.QWc, {
+                text: u.intl.string(u.t.WUHdZV),
                 onClick: () => {
-                    if (null == h) return;
-                    let e = {
-                        section: t,
-                        page: a,
-                        object: u.ZSU.UPSELL_HEADER
+                    if (null == N) return;
+                    let t = {
+                        section: e,
+                        page: n,
+                        object: d.ZSU.UPSELL_HEADER
                     };
-                    null != f ? (0, r._)({
-                        analyticsLocations: x,
-                        analyticsLocation: e,
-                        guild: h,
-                        isGIF: A,
-                        banner: f
-                    }) : (0, s.A)({
-                        analyticsLocations: x,
-                        analyticsSourceLocation: e,
-                        guild: h,
-                        perks: A ? (0, p.Pf)() : (0, p.QR)()
+                    null != g ? (0, s._)({
+                        analyticsLocations: R,
+                        analyticsLocation: t,
+                        guild: N,
+                        isGIF: m,
+                        banner: g
+                    }) : (0, l.A)({
+                        analyticsLocations: R,
+                        analyticsSourceLocation: t,
+                        guild: N,
+                        perks: m ? (0, _.Pf)() : (0, _.QR)()
                     })
                 },
                 textVariant: "text-sm/semibold"

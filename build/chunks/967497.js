@@ -1,10 +1,11 @@
 /** chunk id: 967497, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    R: () => l
+    R: () => s
 });
-var r = n(793322);
-let l = {
+var i = n(793322);
+let s = {
     binds: ["mod+k", "mod+t"],
     comboKeysBindGlobal: !0,
-    action: () => ((0, r.WU)("KEYBIND", ""), !1)
+    action: () => ((0, i.WU)("KEYBIND", ""), !1)
 }

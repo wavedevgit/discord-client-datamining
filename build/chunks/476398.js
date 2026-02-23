@@ -1,81 +1,79 @@
 /** chunk id: 476398, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
-}), n(896048), n(114821), n(339614);
+    A: () => _
+});
 var a = n(627968),
-    l = n(311907),
-    r = n(397927),
-    i = n(793574),
-    s = n(657331),
+    i = n(311907),
+    s = n(397927),
+    l = n(793574),
+    r = n(657331),
     o = n(287809),
-    c = n(574520),
-    d = n(435738),
+    d = n(574520),
+    c = n(435738),
     u = n(99753),
     m = n(475450),
-    p = n(583846),
-    h = n(424994),
-    x = n(805176);
+    h = n(583846),
+    x = n(424994),
+    p = n(805176);
 
 function g(e) {
     let {
         id: t
-    } = e, n = (0, l.bG)([o.default], () => o.default.getUser(t));
-    return null == n ? null : (0, a.jsx)(r.DUT, {
-        className: x._,
+    } = e, n = (0, i.bG)([o.default], () => o.default.getUser(t));
+    return null == n ? null : (0, a.jsx)(s.DUT, {
+        className: p._,
         onClick: function() {
-            (0, s.openUserProfileModal)({
-                sourceAnalyticsLocations: [i.A.DEV_TOOLS],
+            (0, r.openUserProfileModal)({
+                sourceAnalyticsLocations: [l.A.DEV_TOOLS],
                 userId: t
             })
         },
-        children: (0, a.jsx)(r.Text, {
+        children: (0, a.jsx)(s.Text, {
             variant: "text-md/semibold",
             children: n.username
         })
     })
 }
 
-function f() {
-    var e;
-    let t = (0, l.bG)([u.A], () => u.A.getFeed(h.X1.GLOBAL_FEED)),
-        n = (0, l.bG)([u.A], () => u.A.getFilters()),
-        i = (0, l.cf)([c.A], () => {
-            var e;
-            let n = {};
-            for (let a of null != (e = null == t ? void 0 : t.entries) ? e : []) n[(0, c.$)(a.content)] = c.A.canRenderContent(a.content);
-            return n
-        }, [t]),
-        s = (0, l.bG)([d.A], () => d.A.getImpressionCappedItemIds());
-    if (null == n) return null;
-    let o = null == t || null == (e = t.entries) ? void 0 : e.flatMap(e => {
+function _() {
+    let e = (0, i.bG)([u.A], () => u.A.getFeed(x.X1.GLOBAL_FEED)),
+        t = (0, i.bG)([u.A], () => u.A.getFilters()),
+        n = (0, i.cf)([d.A], () => {
+            let t = {};
+            for (let n of e?.entries ?? []) t[(0, d.$)(n.content)] = d.A.canRenderContent(n.content);
+            return t
+        }, [e]),
+        l = (0, i.bG)([c.A], () => c.A.getImpressionCappedItemIds());
+    if (null == t) return null;
+    let r = e?.entries?.flatMap(e => {
         let {
-            content: t
+            content: i
         } = e;
-        if (!(0, m.l)(n, t)) return [];
-        let l = i[(0, c.$)(t)];
+        if (!(0, m.l)(t, i)) return [];
+        let r = n[(0, d.$)(i)];
         return (0, a.jsxs)("li", {
-            className: x.p,
+            className: p.p,
             children: [(0, a.jsx)(g, {
-                type: t.author_type,
-                id: t.author_id
-            }), !l && (0, a.jsx)(r.Text, {
+                type: i.author_type,
+                id: i.author_id
+            }), !r && (0, a.jsx)(s.Text, {
                 variant: "text-md/normal",
                 children: "Expired or no matching presence"
-            }), (0, p.I5)(t) && (0, a.jsxs)(r.Text, {
+            }), (0, h.I5)(i) && (0, a.jsxs)(s.Text, {
                 variant: "text-md/normal",
-                children: ["Expired at ", t.expires_at]
-            }), s.has(t.id) && (0, a.jsx)(r.Text, {
+                children: ["Expired at ", i.expires_at]
+            }), l.has(i.id) && (0, a.jsx)(s.Text, {
                 variant: "text-md/normal",
                 children: "Impression capped"
             })]
-        }, t.id)
+        }, i.id)
     });
     return (0, a.jsxs)("div", {
-        children: [(0, a.jsx)(r.Heading, {
+        children: [(0, a.jsx)(s.Heading, {
             variant: "heading-md/semibold",
             children: "Selected Content"
-        }), null != o ? (0, a.jsx)("ul", {
-            children: o
+        }), null != r ? (0, a.jsx)("ul", {
+            children: r
         }) : (0, a.jsx)("div", {
             children: "(none?)"
         })]

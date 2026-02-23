@@ -1,79 +1,79 @@
 /** chunk id: 140354, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => O
+    A: () => C
 });
-var r = n(627968),
-    i = n(64700),
+var i = n(627968),
+    r = n(64700),
     l = n(503698),
     a = n.n(l),
     s = n(311907),
     o = n(397927),
-    c = n(765671),
-    u = n(4616),
-    d = n(743674),
-    p = n(426660),
+    d = n(765671),
+    c = n(4616),
+    u = n(743674),
+    A = n(426660),
     h = n(71393),
-    f = n(486020),
-    g = n(998304),
-    m = n(817818),
-    A = n(967305),
-    _ = n(985018),
-    b = n(666088),
-    E = n(22004);
+    _ = n(486020),
+    m = n(998304),
+    p = n(817818),
+    g = n(967305),
+    E = n(985018),
+    I = n(666088),
+    f = n(22004);
 
-function O(e) {
+function C(e) {
     let {
         guildId: t,
         channelId: n
     } = e, {
         ref: l,
-        width: O,
-        height: y
-    } = (0, c.Ay)(), I = i.useCallback(() => {
-        null != t && null != n && ((0, m.sy)(t), (0, A.default)({
+        width: C,
+        height: T
+    } = (0, d.Ay)(), N = r.useCallback(() => {
+        null != t && null != n && ((0, p.sy)(t), (0, g.default)({
             guildId: t,
             returnChannelId: n
         }))
-    }, [t, n]), v = (0, s.bG)([h.A], () => h.A.getGuild(t)), S = i.useMemo(() => null == v ? null : f.Ay.getGuildSplashURL({
-        id: v.id,
-        splash: v.splash
-    }), [v]), C = (0, d.S)(S);
-    return (0, r.jsxs)("div", {
-        className: a()(b.kf, E.iW, {
-            [E.Me]: null == S
+    }, [t, n]), S = (0, s.bG)([h.A], () => h.A.getGuild(t)), x = r.useMemo(() => null == S ? null : _.Ay.getGuildSplashURL({
+        id: S.id,
+        splash: S.splash
+    }), [S]), v = (0, u.S)(x);
+    return (0, i.jsxs)("div", {
+        className: a()(I.kf, f.iW, {
+            [f.Me]: null == x
         }),
         ref: l,
-        children: [null != S ? (0, r.jsx)(u.A, {
-            className: E.xX,
-            src: S,
-            width: O,
-            height: y,
-            imageClassName: E.Iv
-        }) : (0, r.jsx)(p.A, {}), null != C && null != S && (0, r.jsx)("div", {
-            className: E.D7,
+        children: [null != x ? (0, i.jsx)(c.A, {
+            className: f.xX,
+            src: x,
+            width: C,
+            height: T,
+            imageClassName: f.Iv
+        }) : (0, i.jsx)(A.A, {}), null != v && null != x && (0, i.jsx)("div", {
+            className: f.D7,
             style: {
-                background: "linear-gradient(180deg, ".concat((0, g.cb)(C, .16), " 0%, ").concat((0, g.cb)(C, 1), " 100%)")
+                background: `linear-gradient(180deg, ${(0,m.cb)(v,.16)} 0%, ${(0,m.cb)(v,1)} 100%)`
             }
-        }), null != S && (0, r.jsx)("div", {
-            className: E.D7
-        }), (0, r.jsxs)("div", {
-            className: a()(b.Cj, b.Vw),
-            children: [(0, r.jsxs)("div", {
-                className: b.wx,
-                children: [(0, r.jsx)(o.Heading, {
+        }), null != x && (0, i.jsx)("div", {
+            className: f.D7
+        }), (0, i.jsxs)("div", {
+            className: a()(I.Cj, I.Vw),
+            children: [(0, i.jsxs)("div", {
+                className: I.wx,
+                children: [(0, i.jsx)(o.Heading, {
                     variant: "heading-xxl/normal",
                     color: "always-white",
-                    children: _.intl.string(_.t.CCmhpF)
-                }), (0, r.jsx)(o.Text, {
+                    children: E.intl.string(E.t.CCmhpF)
+                }), (0, i.jsx)(o.Text, {
                     variant: "text-lg/normal",
                     color: "always-white",
-                    children: _.intl.string(_.t.gRAHcZ)
+                    children: E.intl.string(E.t.gRAHcZ)
                 })]
-            }), (0, r.jsx)(o.Button, {
+            }), (0, i.jsx)(o.Button, {
                 variant: "overlay-primary",
                 size: "md",
-                text: _.intl.string(_.t.VVFjAC),
-                onClick: I
+                text: E.intl.string(E.t.VVFjAC),
+                onClick: N
             })]
         })]
     })

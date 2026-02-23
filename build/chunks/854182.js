@@ -1,21 +1,21 @@
-/** chunk id: 854182, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => c
+/** chunk id: 854182, original params: e,n,t (module,exports,require) **/
+t.d(n, {
+    A: () => o
 });
-var r = n(627968);
-n(64700);
-var i = n(311907),
-    a = n(397927),
-    l = n(367513),
-    o = n(313961),
-    d = n(985018);
+var i = t(627968);
+t(64700);
+var l = t(311907),
+    r = t(397927),
+    a = t(367513),
+    s = t(313961),
+    d = t(985018);
 
-function c(e) {
-    let t = (0, i.bG)([o.A], () => o.A.getVoiceParticipantsHidden(e));
-    return (0, r.jsx)(a.sLh, {
+function o(e) {
+    let n = (0, l.bG)([s.A], () => s.A.getVoiceParticipantsHidden(e));
+    return (0, i.jsx)(r.sLh, {
         id: "no-video-hide",
         label: d.intl.string(d.t.BL8ss6),
-        checked: !t,
-        action: () => l.A.toggleVoiceParticipantsHidden(e, !t)
+        checked: !n,
+        action: () => a.A.toggleVoiceParticipantsHidden(e, !n)
     })
 }

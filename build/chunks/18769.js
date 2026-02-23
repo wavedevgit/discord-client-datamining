@@ -1,44 +1,43 @@
-/** chunk id: 18769, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    A: () => s
+/** chunk id: 18769, original params: e,t,r (module,exports,require) **/
+r.d(t, {
+    A: () => n
 });
-var r = n(627968),
-    i = n(158954),
-    a = n(653793),
-    o = n(524025);
-let s = e => {
+var l = r(627968),
+    d = r(158954),
+    c = r(653793),
+    a = r(524025);
+let n = e => {
     let {
         backgroundImage: t,
-        logoSrc: n,
-        supplementalImage: s,
-        href: l,
-        ctaText: c
+        logoSrc: r,
+        supplementalImage: n,
+        href: o,
+        ctaText: u
     } = e;
-    return (0, r.jsxs)("div", {
-        className: o.rJ,
-        children: [(0, r.jsx)(a.A, {
+    return (0, l.jsxs)("div", {
+        className: a.rJ,
+        children: [(0, l.jsx)(c.A, {
             overflowable: !0,
-            children: (0, r.jsx)("div", {
-                className: o.rf,
+            children: (0, l.jsx)("div", {
+                className: a.rf,
                 style: {
-                    backgroundImage: "url(".concat(t, ")")
+                    backgroundImage: `url(${t})`
                 },
-                children: (0, r.jsxs)("div", {
-                    className: o.kb,
-                    children: [(0, r.jsx)("div", {}), (0, r.jsx)("img", {
-                        className: o.wm,
-                        src: n,
+                children: (0, l.jsxs)("div", {
+                    className: a.kb,
+                    children: [(0, l.jsx)("div", {}), (0, l.jsx)("img", {
+                        className: a.wm,
+                        src: r,
                         alt: ""
-                    }), (0, r.jsx)(i.$nd, {
-                        text: c,
+                    }), (0, l.jsx)(d.$nd, {
+                        text: u,
                         variant: "overlay-primary"
                     })]
                 })
             })
-        }), null != s && (0, r.jsx)("img", {
-            className: o.hP,
-            src: s,
+        }), null != n && (0, l.jsx)("img", {
+            className: a.hP,
+            src: n,
             alt: ""
         })]
     })

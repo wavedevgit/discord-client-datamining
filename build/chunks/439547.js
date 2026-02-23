@@ -2,7 +2,7 @@
 n.d(t, {
     g: () => l
 });
-let r = (0, n(600975).C)({
+let i = (0, n(600975).C)({
         kind: "user",
         id: "2025-02_voice_activity_status_mobile",
         label: "Voice Activity Status (Mobile)",
@@ -22,7 +22,7 @@ let r = (0, n(600975).C)({
             location: t,
             autoTrackExposure: n = !0
         } = e;
-        return r.useExperiment({
+        return i.useExperiment({
             location: t
         }, {
             autoTrackExposure: n

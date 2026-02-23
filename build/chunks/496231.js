@@ -2,14 +2,10 @@
 n.d(t, {
     A: () => a
 });
-var l = n(311907),
-    r = n(622543),
-    i = n(652215);
+var i = n(311907),
+    l = n(622543),
+    s = n(652215);
 
 function a(e) {
-    let t = (0, l.bG)([r.A], () => {
-        var t;
-        return null !== e ? null == (t = r.A.getUserProfile(null != e ? e : i.dJq)) ? void 0 : t.application : void 0
-    });
-    return null != t ? t : void 0
+    return (0, i.bG)([l.A], () => null !== e ? l.A.getUserProfile(e ?? s.dJq)?.application : void 0) ?? void 0
 }

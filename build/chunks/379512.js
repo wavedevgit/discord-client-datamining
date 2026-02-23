@@ -1,12 +1,12 @@
 /** chunk id: 379512, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    F: () => o
+    F: () => s
 });
 var r = n(568065),
     l = n(333354),
     i = n(985018);
 
-function o(e, t) {
+function s(e, t) {
     switch (t) {
         case r.yG.AVAILABLE:
             return i.intl.formatToPlainString(l.default.BdRXZA, {

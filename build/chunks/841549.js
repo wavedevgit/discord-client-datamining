@@ -1,81 +1,53 @@
-/** chunk id: 841549, original params: e,t,n (module,exports,require) **/
-n.d(t, {
+/** chunk id: 841549, original params: e,t,i (module,exports,require) **/
+i.d(t, {
     B8: () => s,
-    Mg: () => u,
-    pB: () => c,
+    Mg: () => r,
+    pB: () => o,
     wQ: () => a
-}), n(65821);
-var i = n(627968);
-n(64700);
-var l = n(442433);
-
-function r(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            i = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), i.forEach(function(t) {
-            var i;
-            i = n[t], t in e ? Object.defineProperty(e, t, {
-                value: i,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = i
-        })
-    }
-    return e
-}
-
-function o(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var i = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, i)
-        }
-        return n
-    })(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
+});
+var n = i(627968);
+i(64700);
+var l = i(442433);
 
 function a(e, t, a) {
     a.isGroupDM() ? (0, l.L3)(e, async () => {
         let {
             default: e
-        } = await Promise.all([n.e("54809"), n.e("97262"), n.e("3795"), n.e("29534"), n.e("97283"), n.e("62891"), n.e("9429")]).then(n.bind(n, 228006));
-        return n => (0, i.jsx)(e, o(r({}, n), {
+        } = await Promise.all([i.e("41927"), i.e("97262"), i.e("3795"), i.e("42128"), i.e("97283"), i.e("97735")]).then(i.bind(i, 228006));
+        return i => (0, n.jsx)(e, {
+            ...i,
             user: t,
             channel: a
-        }))
+        })
     }) : a.isDM() ? (0, l.L3)(e, async () => {
         let {
             default: e
-        } = await Promise.all([n.e("54809"), n.e("97262"), n.e("3795"), n.e("99011"), n.e("29534"), n.e("97283"), n.e("93169"), n.e("55150"), n.e("39778"), n.e("78229")]).then(n.bind(n, 385913));
-        return n => (0, i.jsx)(e, o(r({}, n), {
+        } = await Promise.all([i.e("41927"), i.e("97262"), i.e("3795"), i.e("42128"), i.e("97283"), i.e("39778"), i.e("92982")]).then(i.bind(i, 385913));
+        return i => (0, n.jsx)(e, {
+            ...i,
             user: t,
             channel: a,
             showMute: !1,
             targetIsUser: !0
-        }))
+        })
     }) : null != a.guild_id ? (0, l.L3)(e, async () => {
         let {
             default: e
-        } = await Promise.all([n.e("54809"), n.e("97262"), n.e("3795"), n.e("29534"), n.e("97283"), n.e("55296"), n.e("84841"), n.e("51444")]).then(n.bind(n, 107632));
-        return n => (0, i.jsx)(e, o(r({}, n), {
+        } = await Promise.all([i.e("41927"), i.e("97262"), i.e("3795"), i.e("42128"), i.e("97283"), i.e("84841"), i.e("78104")]).then(i.bind(i, 107632));
+        return i => (0, n.jsx)(e, {
+            ...i,
             user: t,
             channel: a,
             guildId: a.guild_id
-        }))
+        })
     }) : (0, l.L3)(e, async () => {
         let {
             default: e
-        } = await Promise.all([n.e("97262"), n.e("3795"), n.e("32418"), n.e("57600")]).then(n.bind(n, 668569));
-        return n => (0, i.jsx)(e, o(r({}, n), {
+        } = await Promise.all([i.e("97262"), i.e("3795"), i.e("32418"), i.e("57600")]).then(i.bind(i, 668569));
+        return i => (0, n.jsx)(e, {
+            ...i,
             user: t
-        }))
+        })
     })
 }
 
@@ -83,69 +55,58 @@ function s(e, t) {
     let {
         user: a,
         channel: s,
-        moderationAlertId: u,
-        guildId: c
-    } = t, d = function(e, t) {
-        if (null == e) return {};
-        var n, i, l, r = {};
-        if ("u" > typeof Reflect && Reflect.ownKeys) {
-            for (l = 0, n = Reflect.ownKeys(e); l < n.length; l++) i = n[l], !(t.indexOf(i) >= 0) && Object.prototype.propertyIsEnumerable.call(e, i) && (r[i] = e[i]);
-            return r
-        }
-        if (r = function(e, t) {
-                if (null == e) return {};
-                var n, i, l = {},
-                    r = Object.getOwnPropertyNames(e);
-                for (i = 0; i < r.length; i++) n = r[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n]);
-                return l
-            }(e, t), Object.getOwnPropertySymbols)
-            for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) i = n[l], !(t.indexOf(i) >= 0) && Object.prototype.propertyIsEnumerable.call(e, i) && (r[i] = e[i]);
-        return r
-    }(t, ["user", "channel", "moderationAlertId", "guildId"]);
-    if ((null == s ? void 0 : s.isGroupDM()) || (null == s ? void 0 : s.isDM())) throw Error("Cannot moderate user in DM or group DM");
-    let p = null != c ? c : null == s ? void 0 : s.getGuildId();
-    null != p && (0, l.L3)(e, async () => {
+        moderationAlertId: r,
+        guildId: o,
+        ...u
+    } = t;
+    if (s?.isGroupDM() || s?.isDM()) throw Error("Cannot moderate user in DM or group DM");
+    let d = o ?? s?.getGuildId();
+    null != d && (0, l.L3)(e, async () => {
         let {
             default: e
-        } = await n.e("12970").then(n.bind(n, 104849));
-        return t => (0, i.jsx)(e, r(o(r({}, t), {
+        } = await i.e("12970").then(i.bind(i, 104849));
+        return t => (0, n.jsx)(e, {
+            ...t,
             user: a,
-            channelId: null == s ? void 0 : s.id,
-            guildId: p,
-            moderationAlertId: u
-        }), d))
+            channelId: s?.id,
+            guildId: d,
+            moderationAlertId: r,
+            ...u
+        })
     })
 }
 
-function u(e, t) {
+function r(e, t) {
     let {
         user: a,
         guildId: s,
-        analyticsLocations: u,
-        onCloseContextMenu: c,
-        isViewOnly: d
+        analyticsLocations: r,
+        onCloseContextMenu: o,
+        isViewOnly: u
     } = t;
     (0, l.L3)(e, async () => {
         let {
             default: e
-        } = await n.e("83767").then(n.bind(n, 414506));
-        return t => (0, i.jsx)(e, o(r({}, t), {
+        } = await i.e("83767").then(i.bind(i, 414506));
+        return t => (0, n.jsx)(e, {
+            ...t,
             user: a,
             guildId: s,
-            analyticsLocations: u,
-            onCloseContextMenu: c,
-            isViewOnly: d
-        }))
+            analyticsLocations: r,
+            onCloseContextMenu: o,
+            isViewOnly: u
+        })
     })
 }
 
-function c(e, t, a) {
+function o(e, t, a) {
     null != a && (0, l.L3)(e, async () => {
         let {
             default: e
-        } = await n.e("77759").then(n.bind(n, 331458));
-        return t => (0, i.jsx)(e, o(r({}, t), {
+        } = await i.e("77759").then(i.bind(i, 331458));
+        return t => (0, n.jsx)(e, {
+            ...t,
             guildId: a
-        }))
+        })
     })
 }

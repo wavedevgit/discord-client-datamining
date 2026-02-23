@@ -1,33 +1,33 @@
 /** chunk id: 483706, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    p: () => T
+    p: () => N
 });
-var r = n(627968),
-    i = n(64700),
-    l = n(158954),
-    s = n(397927),
-    a = n(308528),
+var i = n(627968),
+    s = n(64700),
+    a = n(158954),
+    r = n(397927),
+    l = n(308528),
     o = n(922529),
     c = n(780964),
     d = n(12901),
     u = n(840065),
     _ = n(899847),
-    p = n(809697),
-    m = n(153739),
+    m = n(809697),
+    A = n(153739),
     g = n(534654),
-    A = n(834981),
-    f = n(191627),
-    b = n(652215),
-    h = n(842130),
-    E = n(985018),
-    O = n(191248);
-let x = e => {
+    h = n(834981),
+    x = n(191627),
+    p = n(652215),
+    E = n(842130),
+    C = n(985018),
+    T = n(191248);
+let S = e => {
         let {
             title: t,
             buttonText: n,
-            onButtonPress: i
+            onButtonPress: s
         } = e;
-        return (0, r.jsxs)(l.BJc, {
+        return (0, i.jsxs)(a.BJc, {
             padding: {
                 top: 12,
                 bottom: 12
@@ -36,51 +36,51 @@ let x = e => {
             direction: "horizontal",
             align: "center",
             gap: 32,
-            children: [(0, r.jsx)(l.EYj, {
+            children: [(0, i.jsx)(a.EYj, {
                 variant: "text-md/medium",
                 children: t
-            }), (0, r.jsx)(s.Button, {
+            }), (0, i.jsx)(r.Button, {
                 text: n,
-                onClick: i,
+                onClick: s,
                 variant: "secondary",
                 size: "sm"
             })]
         })
     },
-    C = () => {
-        let e = (0, A.vx)(),
+    I = () => {
+        let e = (0, h.vx)(),
             t = () => {
                 (0, u.openUserSettings)(c.X.CONTENT_AND_SOCIAL_PANEL, {
-                    section: b.nc_.CONTENT_AND_SOCIAL
+                    section: p.nc_.CONTENT_AND_SOCIAL
                 })
             };
-        return (0, r.jsxs)(l.BJc, {
+        return (0, i.jsxs)(a.BJc, {
             justify: "space-between",
             direction: "horizontal",
             align: "center",
             gap: 32,
-            children: [(0, r.jsxs)(l.BJc, {
+            children: [(0, i.jsxs)(a.BJc, {
                 direction: "vertical",
                 gap: 4,
-                children: [(0, r.jsx)(l.EYj, {
+                children: [(0, i.jsx)(a.EYj, {
                     variant: "text-sm/semibold",
-                    children: E.intl.string(h.default.ahKIJO)
-                }), (0, r.jsx)(l.EYj, {
+                    children: C.intl.string(E.default.ahKIJO)
+                }), (0, i.jsx)(a.EYj, {
                     variant: "text-md/medium",
                     color: "text-muted",
-                    children: E.intl.format(h.default.X9rW0j, {
-                        openSettingsHook: (e, n) => (0, r.jsx)(s.MzZ, {
+                    children: C.intl.format(E.default.X9rW0j, {
+                        openSettingsHook: (e, n) => (0, i.jsx)(r.MzZ, {
                             onClick: t,
                             children: e
                         }, n)
                     })
                 })]
-            }), (0, r.jsx)(s.Button, {
-                text: E.intl.formatToPlainString(h.default.ggcjPR, {
+            }), (0, i.jsx)(r.Button, {
+                text: C.intl.formatToPlainString(E.default.ggcjPR, {
                     count: e.length
                 }),
                 onClick: () => {
-                    (0, d.default)(), a.A.openPrivateChannel({
+                    (0, d.default)(), l.A.openPrivateChannel({
                         recipientIds: e
                     })
                 },
@@ -89,47 +89,47 @@ let x = e => {
             })]
         })
     },
-    S = () => {
-        let e = (0, m.y3)(),
-            t = (0, m.tl)(),
+    f = () => {
+        let e = (0, A.y3)(),
+            t = (0, A.tl)(),
             {
                 handleTabChange: n
-            } = (0, p.A)();
-        i.useEffect(() => {
-            (null == e ? void 0 : e.id) != null && t && _.Ay.fetchTeenSettingsAndConsents(null == e ? void 0 : e.id)
-        }, [null == e ? void 0 : e.id, t]);
-        let s = e => {
+            } = (0, m.A)();
+        s.useEffect(() => {
+            e?.id != null && t && _.Ay.fetchTeenSettingsAndConsents(e?.id)
+        }, [e?.id, t]);
+        let r = e => {
             n(e)
         };
-        return (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsxs)(l.BJc, {
+        return (0, i.jsxs)(i.Fragment, {
+            children: [(0, i.jsxs)(a.BJc, {
                 direction: "vertical",
                 gap: 4,
-                children: [(0, r.jsx)(l.EYj, {
+                children: [(0, i.jsx)(a.EYj, {
                     variant: "text-sm/semibold",
-                    children: E.intl.string(h.default.ahKIJO)
-                }), (0, r.jsx)(l.EYj, {
+                    children: C.intl.string(E.default.ahKIJO)
+                }), (0, i.jsx)(a.EYj, {
                     variant: "text-md/medium",
                     color: "text-muted",
-                    children: E.intl.string(h.default.Sv236e)
+                    children: C.intl.string(E.default.Sv236e)
                 })]
-            }), (0, r.jsx)(x, {
-                title: E.intl.string(E.t["+o1pDZ"]),
-                buttonText: E.intl.string(E.t.bt75uw),
-                onButtonPress: () => s(f.u9.CONTENT_AND_SOCIAL)
-            }), (0, r.jsx)(o.A, {
-                className: O.yF
-            }), (0, r.jsx)(x, {
-                title: E.intl.string(E.t.OAuOHD),
-                buttonText: E.intl.string(E.t.bt75uw),
-                onButtonPress: () => s(f.u9.DATA_AND_PRIVACY)
+            }), (0, i.jsx)(S, {
+                title: C.intl.string(C.t["+o1pDZ"]),
+                buttonText: C.intl.string(C.t.bt75uw),
+                onButtonPress: () => r(x.u9.CONTENT_AND_SOCIAL)
+            }), (0, i.jsx)(o.A, {
+                className: T.yF
+            }), (0, i.jsx)(S, {
+                title: C.intl.string(C.t.OAuOHD),
+                buttonText: C.intl.string(C.t.bt75uw),
+                onButtonPress: () => r(x.u9.DATA_AND_PRIVACY)
             })]
         })
     },
-    T = () => {
+    N = () => {
         let e = (0, g.A)();
-        return 0 === (0, A.vx)().length ? null : (0, r.jsx)("div", {
-            className: O.kL,
-            children: e ? (0, r.jsx)(C, {}) : (0, r.jsx)(S, {})
+        return 0 === (0, h.vx)().length ? null : (0, i.jsx)("div", {
+            className: T.kL,
+            children: e ? (0, i.jsx)(I, {}) : (0, i.jsx)(f, {})
         })
     }

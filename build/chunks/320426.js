@@ -1,103 +1,69 @@
 /** chunk id: 320426, original params: e,t,r (module,exports,require) **/
 r.d(t, {
-    A: () => A
-}), r(896048);
+    A: () => u
+});
 var i = r(64700),
-    n = r(417597),
-    o = r(562465),
-    a = r(73153),
-    s = r(58149),
+    a = r(417597),
+    s = r(562465),
+    n = r(73153),
+    o = r(58149),
     l = r(71393),
     c = r(576705),
-    d = r(954571),
-    _ = r(927813),
-    u = r(381616),
-    p = r(652215);
-
-function E(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var r = null != arguments[t] ? arguments[t] : {},
-            i = Object.keys(r);
-        "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(r, e).enumerable
-        }))), i.forEach(function(t) {
-            var i;
-            i = r[t], t in e ? Object.defineProperty(e, t, {
-                value: i,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = i
-        })
-    }
-    return e
-}
-
-function h(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-        var r = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var i = Object.getOwnPropertySymbols(e);
-            r.push.apply(r, i)
-        }
-        return r
-    })(Object(t)).forEach(function(r) {
-        Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r))
-    }), e
-}
-let O = +_.A.Millis.DAY,
+    _ = r(954571),
+    d = r(927813),
+    E = r(381616),
+    h = r(652215);
+let A = +d.A.Millis.DAY,
     I = new Map,
-    A = {
+    u = {
         useShouldShowChannelNotice(e) {
-            let t = (0, n.bG)([l.A, c.A], () => {
+            let t = (0, a.bG)([l.A, c.A], () => {
                 let t = l.A.getGuild(e);
-                return null != t && c.A.can(p.xBc.ADMINISTRATOR, t)
+                return null != t && c.A.can(h.xBc.ADMINISTRATOR, t)
             });
             i.useEffect(() => {
-                var r;
-                let i, n;
-                t && (i = Date.now(), i < (n = null != (r = I.get(e)) ? r : 0) + O || (I.set(e, i), o.Bo.post({
-                    url: p.Rsh.GUILD_MIGRATE_COMMAND_SCOPE(e),
+                let r, i;
+                t && (r = Date.now(), r < (i = I.get(e) ?? 0) + A || (I.set(e, r), s.Bo.post({
+                    url: h.Rsh.GUILD_MIGRATE_COMMAND_SCOPE(e),
                     rejectWithError: !0
                 }).then(t => {
-                    var r, i;
-                    a.h.dispatch({
+                    n.h.dispatch({
                         type: "COMMANDS_MIGRATION_UPDATE_SUCCESS",
                         guildId: e,
-                        integrationIdsWithAppCommands: null != (r = null == (i = t.body) ? void 0 : i.integration_ids_with_app_commands) ? r : []
+                        integrationIdsWithAppCommands: t.body?.integration_ids_with_app_commands ?? []
                     })
                 }, () => {
-                    I.set(e, n)
+                    I.set(e, i)
                 })))
             }, [e, t]);
-            let r = (0, n.bG)([u.A], () => u.A.shouldShowChannelNotice(e));
+            let r = (0, a.bG)([E.A], () => E.A.shouldShowChannelNotice(e));
             return t && r
         },
         dismissNotice(e) {
-            a.h.dispatch({
+            n.h.dispatch({
                 type: "COMMANDS_MIGRATION_NOTICE_DISMISSED",
                 guildId: e
             })
         },
         dismissOverviewTooltip(e, t) {
-            var r;
-            a.h.dispatch({
+            n.h.dispatch({
                 type: "COMMANDS_MIGRATION_OVERVIEW_TOOLTIP_DISMISSED",
                 guildId: e,
                 integrationId: t.id
-            }), d.default.track(p.HAw.COMMANDS_MIGRATION_TOOLTIP_DISMISSED, h(E({}, (0, s.H$)(e)), {
-                application_id: null == (r = t.application) ? void 0 : r.id,
+            }), _.default.track(h.HAw.COMMANDS_MIGRATION_TOOLTIP_DISMISSED, {
+                ...(0, o.H$)(e),
+                application_id: t.application?.id,
                 location: "overview"
-            }))
+            })
         },
         dismissToggleTooltip(e, t) {
-            var r;
-            void 0 !== t && (a.h.dispatch({
+            void 0 !== t && (n.h.dispatch({
                 type: "COMMANDS_MIGRATION_TOGGLE_TOOLTIP_DISMISSED",
                 integrationId: t.id
-            }), d.default.track(p.HAw.COMMANDS_MIGRATION_TOOLTIP_DISMISSED, h(E({}, (0, s.H$)(e)), {
-                application_id: null == (r = t.application) ? void 0 : r.id,
+            }), _.default.track(h.HAw.COMMANDS_MIGRATION_TOOLTIP_DISMISSED, {
+                ...(0, o.H$)(e),
+                application_id: t.application?.id,
                 location: "toggle"
-            })))
+            }))
         }
     }

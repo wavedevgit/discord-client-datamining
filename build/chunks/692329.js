@@ -1,16 +1,16 @@
-/** chunk id: 692329, original params: t,i,n (module,exports,require) **/
-n.d(i, {
+/** chunk id: 692329, original params: t,i,l (module,exports,require) **/
+l.d(i, {
     A: () => o
 });
-var l = n(64700),
-    e = n(311907),
-    a = n(773669),
-    r = n(696016),
-    s = n(985018);
+var n = l(64700),
+    e = l(311907),
+    a = l(773669),
+    r = l(696016),
+    s = l(985018);
 
 function o() {
     let t = (0, e.bG)([a.default], () => a.default.locale);
-    return l.useMemo(() => [{
+    return n.useMemo(() => [{
         value: r.LX.SECONDS_30,
         label: s.intl.formatToPlainString(s.t["bTFv/3"], {
             count: 30

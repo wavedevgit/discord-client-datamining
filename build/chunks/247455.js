@@ -1,23 +1,23 @@
 /** chunk id: 247455, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => c
+    A: () => d
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(503698),
-    l = n.n(i),
+var r = n(503698),
+    l = n.n(r),
     a = n(607470),
     s = n(778827),
     o = n(181713);
-let c = e => {
+let d = e => {
     let {
         className: t,
         isAnimated: n = !1,
-        questName: i
-    } = e, c = n ? o.A : o.A + "?format=webp";
-    return (0, r.jsx)("div", {
+        questName: r
+    } = e, d = n ? o.A : o.A + "?format=webp";
+    return (0, i.jsx)("div", {
         className: l()(s.k, t),
-        children: n ? (0, r.jsx)(a.A, {
+        children: n ? (0, i.jsx)(a.A, {
             autoPlay: !0,
             loop: !0,
             muted: !0,
@@ -25,14 +25,14 @@ let c = e => {
             playsInline: !0,
             className: s.L,
             controls: !1,
-            children: (0, r.jsx)("source", {
-                src: c,
+            children: (0, i.jsx)("source", {
+                src: d,
                 type: "video/webm"
             })
-        }) : (0, r.jsx)("img", {
+        }) : (0, i.jsx)("img", {
             className: s.L,
-            src: c,
-            alt: i
+            src: d,
+            alt: r
         })
     })
 }

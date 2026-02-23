@@ -1,20 +1,21 @@
 /** chunk id: 987344, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => i
+    A: () => l
 });
-var r = n(64700),
-    l = n(967198);
+var i = n(64700),
+    s = n(967198);
 
-function i(e) {
-    r.useEffect(() => {
+function l(e) {
+    i.useEffect(() => {
         let t = null;
 
         function n() {
-            let n = l.A.getGuildId();
-            n !== t && (t = null != n ? n : null, e(null != n ? n : null, !1))
+            let n = s.A.getGuildId();
+            n !== t && (t = n ?? null, e(n ?? null, !1))
         }
-        return l.A.addChangeListener(n), () => {
-            l.A.removeChangeListener(n)
+        return s.A.addChangeListener(n), () => {
+            s.A.removeChangeListener(n)
         }
     }, [e])
 }

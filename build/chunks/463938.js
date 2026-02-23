@@ -1,59 +1,43 @@
 /** chunk id: 463938, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    j: () => A
+    j: () => f
 });
-var r = n(627968),
-    l = n(64700),
-    i = n(837381),
-    s = n(311907),
+var i = n(627968),
+    s = n(64700),
+    l = n(837381),
+    r = n(311907),
     a = n(827734),
     o = n(397927),
     c = n(701785),
-    u = n(65995),
-    d = n(976860),
-    p = n(147925),
-    h = n(652215),
-    g = n(746080),
-    f = n(985018),
+    d = n(65995),
+    u = n(976860),
+    h = n(147925),
+    A = n(652215),
+    p = n(746080),
+    g = n(985018),
     m = n(949684);
 
-function b(e, t) {
-    return (0, r.jsx)(o.Text, {
+function _(e, t) {
+    return (0, i.jsx)(o.Text, {
         variant: "text-xs/bold",
         color: "text-default",
         children: e
     }, t)
 }
-let A = l.memo(function(e) {
-    var t, n;
+let f = s.memo(function(e) {
     let {
-        guild: A
-    } = e, y = (0, s.bG)([c.h], () => c.h.getNewMemberActions(A.id), [A.id]), O = (0, s.bG)([u.A], () => u.A.getCompletedActions(A.id)), j = l.useMemo(() => {
-        if (null == y || null == O) return 0;
+        guild: t
+    } = e, n = (0, r.bG)([c.h], () => c.h.getNewMemberActions(t.id), [t.id]), f = (0, r.bG)([d.A], () => d.A.getCompletedActions(t.id)), x = s.useMemo(() => {
+        if (null == n || null == f) return 0;
         let e = 0;
-        return y.forEach(t => {
-            null != O[t.channelId] && e++
+        return n.forEach(t => {
+            null != f[t.channelId] && e++
         }), e
-    }, [O, y]), x = null == y ? 0 : y.length, _ = (0, i.rm)("progress-bar-".concat(A.id));
-    return (0, r.jsxs)("li", {
-        children: [(0, r.jsxs)(o.DUT, (t = function(e) {
-            for (var t = 1; t < arguments.length; t++) {
-                var n = null != arguments[t] ? arguments[t] : {},
-                    r = Object.keys(n);
-                "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                    return Object.getOwnPropertyDescriptor(n, e).enumerable
-                }))), r.forEach(function(t) {
-                    var r;
-                    r = n[t], t in e ? Object.defineProperty(e, t, {
-                        value: r,
-                        enumerable: !0,
-                        configurable: !0,
-                        writable: !0
-                    }) : e[t] = r
-                })
-            }
-            return e
-        }({}, _), n = n = {
+    }, [f, n]), C = null == n ? 0 : n.length, E = (0, l.rm)(`progress-bar-${t.id}`);
+    return (0, i.jsxs)("li", {
+        children: [(0, i.jsxs)(o.DUT, {
+            ...E,
             role: "button",
             focusProps: {
                 offset: {
@@ -62,47 +46,38 @@ let A = l.memo(function(e) {
             },
             className: m.G9,
             onClick: function() {
-                (0, d.pX)(h.BVt.CHANNEL(A.id, g.VV.GUILD_HOME))
+                (0, u.pX)(A.BVt.CHANNEL(t.id, p.VV.GUILD_HOME))
             },
-            children: [(0, r.jsxs)("div", {
+            children: [(0, i.jsxs)("div", {
                 className: m.A1,
-                children: [(0, r.jsx)(o.Heading, {
+                children: [(0, i.jsx)(o.Heading, {
                     variant: "heading-sm/bold",
-                    children: f.intl.string(f.t.SnrR3x)
-                }), (0, r.jsxs)("div", {
+                    children: g.intl.string(g.t.SnrR3x)
+                }), (0, i.jsxs)("div", {
                     className: m.Ib,
-                    children: [(0, r.jsx)(o.Text, {
+                    children: [(0, i.jsx)(o.Text, {
                         variant: "text-xs/medium",
                         color: "text-muted",
                         className: m.Cv,
-                        children: f.intl.format(f.t.eqZ1lW, {
-                            numberHook: b,
-                            total: x.toString(),
-                            completed: j.toString()
+                        children: g.intl.format(g.t.eqZ1lW, {
+                            numberHook: _,
+                            total: C.toString(),
+                            completed: x.toString()
                         })
-                    }), (0, r.jsx)(p.A, {
+                    }), (0, i.jsx)(h.A, {
                         className: m.UE,
                         width: 16,
                         height: 16,
-                        direction: p.A.Directions.RIGHT
+                        direction: h.A.Directions.RIGHT
                     })]
                 })]
-            }), (0, r.jsx)(o.iCB, {
+            }), (0, i.jsx)(o.iCB, {
                 className: m.hr,
                 foregroundGradientColor: [a.A.unsafe_rawColors.GREEN_300.css, a.A.unsafe_rawColors.GREEN_230.css],
-                percent: j / x * 100 + 3,
+                percent: x / C * 100 + 3,
                 animate: !0
             })]
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
-            var n = Object.keys(e);
-            if (Object.getOwnPropertySymbols) {
-                var r = Object.getOwnPropertySymbols(e);
-                n.push.apply(n, r)
-            }
-            return n
-        })(Object(n)).forEach(function(e) {
-            Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-        }), t)), (0, r.jsx)("div", {
+        }), (0, i.jsx)("div", {
             role: "separator",
             className: m.yF
         })]

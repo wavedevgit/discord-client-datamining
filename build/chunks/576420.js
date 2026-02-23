@@ -1,46 +1,14 @@
 /** chunk id: 576420, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A2: () => u,
-    Ay: () => c,
-    WS: () => a
+    A2: () => a,
+    Ay: () => u,
+    WS: () => r
 });
 var l = n(839214),
-    r = n(914853);
-
-function i(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            l = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), l.forEach(function(t) {
-            var l;
-            l = n[t], t in e ? Object.defineProperty(e, t, {
-                value: l,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = l
-        })
-    }
-    return e
-}
-
-function s(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var l = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, l)
-        }
-        return n
-    })(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-let a = 1e3,
-    o = (0, l.D)((e, t) => ({
-        activeTab: r.x.FRIENDS,
+    i = n(914853);
+let r = 1e3,
+    s = (0, l.D)((e, t) => ({
+        activeTab: i.x.FRIENDS,
         recentlyAddedFavoriteTimestampMsByKey: {},
         setActiveTab: n => {
             t().activeTab !== n && e({
@@ -48,26 +16,25 @@ let a = 1e3,
             })
         },
         markFavoriteAdded: (t, n) => {
-            let l = null != n ? n : Date.now();
+            let l = n ?? Date.now();
             e(e => ({
-                recentlyAddedFavoriteTimestampMsByKey: s(i({}, e.recentlyAddedFavoriteTimestampMsByKey), {
+                recentlyAddedFavoriteTimestampMsByKey: {
+                    ...e.recentlyAddedFavoriteTimestampMsByKey,
                     [t]: l
-                })
+                }
             }))
         },
         clearFavoriteAdded: t => {
             e(e => null == e.recentlyAddedFavoriteTimestampMsByKey[t] ? {} : {
-                recentlyAddedFavoriteTimestampMsByKey: s(i({}, e.recentlyAddedFavoriteTimestampMsByKey), {
+                recentlyAddedFavoriteTimestampMsByKey: {
+                    ...e.recentlyAddedFavoriteTimestampMsByKey,
                     [t]: void 0
-                })
+                }
             })
         }
     }));
 
-function u(e) {
-    return o.useState(t => {
-        var n;
-        return null != (n = t.recentlyAddedFavoriteTimestampMsByKey[e]) ? n : null
-    })
+function a(e) {
+    return s.useState(t => t.recentlyAddedFavoriteTimestampMsByKey[e] ?? null)
 }
-let c = o
+let u = s

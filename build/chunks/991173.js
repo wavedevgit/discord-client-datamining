@@ -1,22 +1,22 @@
 /** chunk id: 991173, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => u
-}), n(896048);
-var r = n(179771),
-    i = n(10584),
+    A: () => c
+});
+var i = n(179771),
+    r = n(10584),
     l = n(636401),
     a = n(629471),
     s = n(613057),
     o = n(652215),
-    c = n(731854);
-let u = {
+    d = n(731854);
+let c = {
     [o.e$_.SET_CERTIFIED_DEVICES]: {
         scope: {
-            [s.sm.ANY]: [r.F.RPC, s.hj]
+            [s.sm.ANY]: [i.F.RPC, s.hj]
         },
         validation: e => (0, a.A)(e).required().keys({
             devices: e.array().items((0, a.A)(e).keys({
-                type: e.string().required().valid([c.oh.AUDIO_INPUT, c.oh.AUDIO_OUTPUT, c.oh.VIDEO_INPUT]),
+                type: e.string().required().valid([d.oh.AUDIO_INPUT, d.oh.AUDIO_OUTPUT, d.oh.VIDEO_INPUT]),
                 id: e.string().required().min(1),
                 vendor: (0, a.A)(e).required().keys({
                     name: e.string().min(1),
@@ -43,7 +43,7 @@ let u = {
             if (null == t.application.id) throw new l.A({
                 errorCode: o.Lw6.INVALID_COMMAND
             }, "No application.");
-            (0, i.z)(t.application.id, n.map(e => ({
+            (0, r.z)(t.application.id, n.map(e => ({
                 type: e.type,
                 id: e.id,
                 vendor: e.vendor,

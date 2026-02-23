@@ -1,33 +1,33 @@
 /** chunk id: 922316, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => x
-}), n(896048);
+    A: () => p
+});
 var a = n(627968),
-    l = n(64700),
-    r = n(503698),
-    i = n.n(r),
-    s = n(158954),
+    i = n(64700),
+    s = n(503698),
+    l = n.n(s),
+    r = n(158954),
     o = n(397927),
-    c = n(234560),
-    d = n(613912),
+    d = n(234560),
+    c = n(613912),
     u = n(661251),
     m = n(288198);
-let p = [{
+let h = [{
         id: "virtual-currency",
         name: "Virtual Current (Orb) Components"
     }, {
         id: "nitro",
         name: "Nitro Components"
     }],
-    h = {
-        "virtual-currency": d.B,
-        nitro: c.$
+    x = {
+        "virtual-currency": c.B,
+        nitro: d.$
     };
 
-function x() {
-    let [e, t] = l.useState("virtual-currency"), n = l.useMemo(() => h[e], [e]);
+function p() {
+    let [e, t] = i.useState("virtual-currency"), n = i.useMemo(() => x[e], [e]);
     return (0, a.jsxs)("div", {
-        className: i()(u.nd, m.kL),
+        className: l()(u.nd, m.kL),
         children: [(0, a.jsx)(o.VQ0, {
             className: m.$H,
             selectedItem: e,
@@ -35,11 +35,11 @@ function x() {
             look: "brand",
             type: "top",
             orientation: "horizontal",
-            children: p.map(e => (0, a.jsx)(o.VQ0.Item, {
+            children: h.map(e => (0, a.jsx)(o.VQ0.Item, {
                 id: e.id,
                 children: e.name
             }, e.id))
-        }), (0, a.jsx)(s.ArX, {
+        }), (0, a.jsx)(r.ArX, {
             children: (0, a.jsx)("div", {
                 className: m.Qs,
                 children: (0, a.jsx)(n, {})

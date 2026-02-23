@@ -1,5 +1,4 @@
-/** chunk id: 58855, original params: e,t,n (module,exports,require) **/
-"use strict";
+/** chunk id: 58855, original params: e,a,t (module,exports,require) **/
 e.exports = {
     C: "newMemberBadge_f80704"
 }

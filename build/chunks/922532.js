@@ -1,90 +1,89 @@
 /** chunk id: 922532, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     m: () => o
-}), n(896048);
+});
 var a = n(64700),
-    l = n(341915),
-    r = n(561844),
-    i = n(590202),
-    s = n(652215);
+    i = n(341915),
+    s = n(561844),
+    l = n(590202),
+    r = n(652215);
 
 function o(e) {
     let {
         quest: t,
         isExpanded: n,
         setIsExpanded: o,
-        expandQuestBar: c,
-        isQuestCompleted: d,
+        expandQuestBar: d,
+        isQuestCompleted: c,
         isQuestAccepted: u,
         prevIsQuestAccepted: m,
-        impressionRef: p
-    } = e, h = a.useRef(-1), x = a.useRef(!1), [g, f] = a.useState(!1), [b, v] = a.useState(!1), j = a.useCallback(() => {
+        impressionRef: h,
+        onQuestBarFocus: x
+    } = e, p = a.useRef(-1), g = a.useRef(!1), [_, f] = a.useState(!1), [b, v] = a.useState(!1), j = a.useCallback(() => {
         f(!0)
-    }, []), _ = a.useCallback(() => {
-        f(!1), x.current || d || o(!1)
-    }, [d, o]), y = a.useCallback(() => {
-        f(!1), d || o(!1), x.current = !1
-    }, [d, o]), A = a.useCallback(() => {
-        v(!0)
     }, []), C = a.useCallback(() => {
+        f(!1), g.current || c || o(!1)
+    }, [c, o]), A = a.useCallback(() => {
+        f(!1), c || o(!1), g.current = !1
+    }, [c, o]), T = a.useCallback(() => {
+        v(!0)
+    }, []), S = a.useCallback(() => {
         v(!1), o(!1)
-    }, [o]), S = a.useCallback(function() {
+    }, [o]), y = a.useCallback(function() {
         let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-        if (n) return;
+        if (x(), n) return;
         let {
             withDelay: t = !1
         } = e;
-        t ? h.current = window.setTimeout(c, 75) : c()
-    }, [c, n]), O = a.useCallback(() => {
-        S()
-    }, [S]), T = a.useCallback(() => {
-        window.clearTimeout(h.current), g || b || x.current || o(!1)
-    }, [g, b, o]), E = a.useCallback(() => {
-        var e;
-        (0, r.av)({
+        t ? p.current = window.setTimeout(d, 75) : d()
+    }, [d, n, x]), E = a.useCallback(() => {
+        y()
+    }, [y]), N = a.useCallback(() => {
+        window.clearTimeout(p.current), _ || b || g.current || o(!1)
+    }, [_, b, o]), I = a.useCallback(() => {
+        (0, s.av)({
             questId: t.id,
-            event: s.HAw.QUEST_HOVER,
+            event: r.HAw.QUEST_HOVER,
             properties: {
-                content_id: l.uF.QUEST_BAR,
-                content_name: (0, i.jO)(l.uF.QUEST_BAR),
-                impression_id: null == (e = p.current) ? void 0 : e.getId()
+                content_id: i.uF.QUEST_BAR,
+                content_name: (0, l.jO)(i.uF.QUEST_BAR),
+                impression_id: h.current?.getId()
             },
             shouldExtendSession: !0,
-            sourceQuestContent: l.uF.QUEST_BAR_V2
-        }), x.current = !0, S({
+            sourceQuestContent: i.uF.QUEST_BAR_V2
+        }), g.current = !0, y({
             withDelay: !0
         })
-    }, [S, p, t.id]), N = a.useCallback(() => {
-        var e;
-        (0, r.av)({
+    }, [y, h, t.id]), k = a.useCallback(() => {
+        (0, s.av)({
             questId: t.id,
-            event: s.HAw.QUEST_HOVER_OFF,
+            event: r.HAw.QUEST_HOVER_OFF,
             properties: {
-                content_id: l.uF.QUEST_BAR,
-                content_name: (0, i.jO)(l.uF.QUEST_BAR),
-                impression_id: null == (e = p.current) ? void 0 : e.getId()
+                content_id: i.uF.QUEST_BAR,
+                content_name: (0, l.jO)(i.uF.QUEST_BAR),
+                impression_id: h.current?.getId()
             },
-            sourceQuestContent: l.uF.QUEST_BAR_V2
-        }), x.current = !1, T()
-    }, [T, p, t.id]);
+            sourceQuestContent: i.uF.QUEST_BAR_V2
+        }), g.current = !1, N()
+    }, [N, h, t.id]);
     return a.useEffect(() => {
-        b && N()
-    }, [b, N]), a.useLayoutEffect(() => {
-        u && !m && x.current && c()
-    }, [c, u, m]), a.useLayoutEffect(() => {
-        d || !u || m || x.current || o(!1)
-    }, [u, d, m, o]), {
-        ctxMenuOpen: g,
+        b && k()
+    }, [b, k]), a.useLayoutEffect(() => {
+        u && !m && g.current && d()
+    }, [d, u, m]), a.useLayoutEffect(() => {
+        c || !u || m || g.current || o(!1)
+    }, [u, c, m, o]), {
+        ctxMenuOpen: _,
         gameSheetOpen: b,
         handleCtxMenuOpened: j,
-        handleCtxMenuClosed: _,
-        handleCtxMenuSelection: y,
-        handleGameSheetOpened: A,
-        handleGameSheetClosed: C,
-        handleFocus: S,
-        handleFocusWithoutDelay: O,
-        handleBlur: T,
-        handleMouseEnter: E,
-        handleMouseLeave: N
+        handleCtxMenuClosed: C,
+        handleCtxMenuSelection: A,
+        handleGameSheetOpened: T,
+        handleGameSheetClosed: S,
+        handleFocus: y,
+        handleFocusWithoutDelay: E,
+        handleBlur: N,
+        handleMouseEnter: I,
+        handleMouseLeave: k
     }
 }

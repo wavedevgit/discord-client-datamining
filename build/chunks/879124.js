@@ -1,20 +1,21 @@
 /** chunk id: 879124, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    E: () => i,
-    T: () => l
+    E: () => l,
+    T: () => s
 });
-var r = n(73153);
+var i = n(73153);
 
-function l(e) {
-    r.h.dispatch({
+function s(e) {
+    i.h.dispatch({
         type: "VOICE_CATEGORY_EXPAND",
         guildId: e,
         expand: !0
     })
 }
 
-function i(e) {
-    r.h.dispatch({
+function l(e) {
+    i.h.dispatch({
         type: "VOICE_CATEGORY_COLLAPSE",
         guildId: e,
         expand: !1

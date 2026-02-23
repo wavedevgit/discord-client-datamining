@@ -1,181 +1,148 @@
 /** chunk id: 921955, original params: e,t,n (module,exports,require) **/
-let l;
+let i;
 n.d(t, {
-    A: () => T
-}), n(896048), n(321073), n(733351), n(747238);
-var r, i = n(311907),
-    a = n(73153),
-    s = n(308368),
-    o = n(629357),
-    c = n(47167),
-    u = n(734057),
+    A: () => v
+}), n(321073);
+var l = n(311907),
+    s = n(73153),
+    a = n(308368),
+    r = n(629357),
+    o = n(47167),
+    c = n(734057),
     d = n(71393),
-    h = n(375492),
-    p = n(290863),
-    f = n(994500),
-    m = n(287809),
+    u = n(375492),
+    h = n(290863),
+    m = n(994500),
+    A = n(287809),
     g = n(645959),
-    A = n(652215);
+    p = n(652215);
+let f = [r.rD.TEXT_CHANNEL, r.rD.GROUP_DM, r.rD.USER],
+    _ = null,
+    E = null,
+    x = [],
+    C = [];
 
-function b(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-let _ = [o.rD.TEXT_CHANNEL, o.rD.GROUP_DM, o.rD.USER],
-    y = null,
-    v = null,
-    E = [],
-    O = [];
-
-function C(e) {
-    E = [...E, e], O = O.map(e => {
-        var t, n;
-        return t = function(e) {
-            for (var t = 1; t < arguments.length; t++) {
-                var n = null != arguments[t] ? arguments[t] : {},
-                    l = Object.keys(n);
-                "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                    return Object.getOwnPropertyDescriptor(n, e).enumerable
-                }))), l.forEach(function(t) {
-                    b(e, t, n[t])
-                })
-            }
-            return e
-        }({}, e), n = n = {
-            sent: E.includes(e.data.record.id)
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
-            var n = Object.keys(e);
-            if (Object.getOwnPropertySymbols) {
-                var l = Object.getOwnPropertySymbols(e);
-                n.push.apply(n, l)
-            }
-            return n
-        })(Object(n)).forEach(function(e) {
-            Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-        }), t
-    }), I.emitChange()
+function S(e) {
+    x = [...x, e], C = C.map(e => ({
+        ...e,
+        sent: x.includes(e.data.record.id)
+    })), y.emitChange()
 }
 
-function S() {
-    y = null, null != l && (l.destroy(), l = null), null != v && v()
+function I() {
+    _ = null, null != i && (i.destroy(), i = null), null != E && E()
 }
 
-function x() {
-    let e = null != y && null != y.application_id ? h.A.getApplicationActivity(y.application_id) : null;
-    if (null != y && (null == e || null == e.party || null == e.party.id)) return S()
+function T() {
+    let e = null != _ && null != _.application_id ? u.A.getApplicationActivity(_.application_id) : null;
+    if (null != _ && (null == e || null == e.party || null == e.party.id)) return I()
 }
-class j extends(r = i.Ay.Store) {
+class N extends l.Ay.Store {
+    static displayName = "ActivityInviteModalStore";
     initialize() {
-        this.waitFor(u.A, d.A, h.A, p.A, g.A, m.default)
+        this.waitFor(c.A, d.A, u.A, h.A, g.default, A.default)
     }
     getActivity() {
-        return y
+        return _
     }
     getQuery() {
-        var e;
-        return null != (e = null == l ? void 0 : l.query) ? e : ""
+        return i?.query ?? ""
     }
     getResults() {
-        return O
+        return C
     }
 }
-b(j, "displayName", "ActivityInviteModalStore");
-let I = new j(a.h, {
+let y = new N(s.h, {
         ACTIVITY_INVITE_MODAL_OPEN: function(e) {
-            y = e.activity, v = e.resolve, E = [], null == l && (l = new o.Ay((e, t) => {
+            _ = e.activity, E = e.resolve, x = [], null == i && (i = new r.Ay((e, t) => {
                 let n;
-                O = ("" === t.trim() ? (n = [], g.A.getPrivateChannelIds().forEach(e => {
-                    let t = u.A.getChannel(e);
+                C = ("" === t.trim() ? (n = [], g.default.getPrivateChannelIds().forEach(e => {
+                    let t = c.A.getChannel(e);
                     if (null != t)
-                        if (t.type === A.rbe.DM) {
+                        if (t.type === p.rbe.DM) {
                             let e = t.getRecipientId(),
-                                l = null != e ? m.default.getUser(e) : null;
-                            null != l && n.push({
-                                type: o.rD.USER,
-                                record: l,
+                                i = null != e ? A.default.getUser(e) : null;
+                            null != i && n.push({
+                                type: r.rD.USER,
+                                record: i,
                                 score: 0
                             })
                         } else t.isMultiUserDM() && n.push({
-                            type: o.rD.GROUP_DM,
+                            type: r.rD.GROUP_DM,
                             record: t,
                             score: 0
                         })
                 }), n) : e).map(e => {
                     switch (e.type) {
-                        case o.rD.USER: {
+                        case r.rD.USER: {
                             let {
                                 record: t
                             } = e;
                             return {
-                                type: o.rD.USER,
-                                sent: E.includes(t.id),
-                                status: p.A.getStatus(t.id),
+                                type: r.rD.USER,
+                                sent: x.includes(t.id),
+                                status: h.A.getStatus(t.id),
                                 data: e
                             }
                         }
-                        case o.rD.TEXT_CHANNEL: {
-                            var t;
+                        case r.rD.TEXT_CHANNEL: {
                             let {
-                                record: n
-                            } = e, l = u.A.getChannel(n.parent_id), r = d.A.getGuild(n.guild_id);
+                                record: t
+                            } = e, n = c.A.getChannel(t.parent_id), i = d.A.getGuild(t.guild_id);
                             return {
-                                type: o.rD.TEXT_CHANNEL,
-                                sent: E.includes(n.id),
-                                categoryName: null != l ? (0, c.m1)(l, m.default, f.A) : "",
-                                guildName: null != (t = null == r ? void 0 : r.name) ? t : "",
+                                type: r.rD.TEXT_CHANNEL,
+                                sent: x.includes(t.id),
+                                categoryName: null != n ? (0, o.m1)(n, A.default, m.A) : "",
+                                guildName: i?.name ?? "",
                                 data: e
                             }
                         }
-                        case o.rD.GROUP_DM: {
+                        case r.rD.GROUP_DM: {
                             let {
                                 record: t
                             } = e;
                             return {
-                                type: o.rD.GROUP_DM,
-                                sent: E.includes(t.id),
+                                type: r.rD.GROUP_DM,
+                                sent: x.includes(t.id),
                                 data: e
                             }
                         }
                         default:
                             return null
                     }
-                }).filter(e => null != e), I.emitChange()
-            }, _, 100)), l.search("")
+                }).filter(e => null != e), y.emitChange()
+            }, f, 100)), i.search("")
         },
         ACTIVITY_INVITE_MODAL_QUERY: function(e) {
             let {
                 query: t
             } = e;
-            null != l && l.search(t)
+            null != i && i.search(t)
         },
         ACTIVITY_INVITE_MODAL_SEND: function(e) {
-            if (null == y) return;
+            if (null == _) return;
             let t = e.channelId,
                 n = e.userId;
-            null != t ? s.A.sendActivityInvite({
+            null != t ? a.A.sendActivityInvite({
                 channelId: t,
-                type: A.xL.JOIN,
-                activity: y,
+                type: p.xL.JOIN,
+                activity: _,
                 location: "Channel Text Area - Invite to Join Modal"
-            }).then(() => C(t)) : null != n && s.A.sendActivityInviteUser({
+            }).then(() => S(t)) : null != n && a.A.sendActivityInviteUser({
                 userId: n,
-                type: A.xL.JOIN,
-                activity: y,
+                type: p.xL.JOIN,
+                activity: _,
                 location: "Channel Text Area - Invite to Join Modal"
-            }).then(() => C(n))
+            }).then(() => S(n))
         },
-        ACTIVITY_INVITE_MODAL_CLOSE: S,
+        ACTIVITY_INVITE_MODAL_CLOSE: I,
         OVERLAY_SET_INPUT_LOCKED: function(e) {
             let {
                 locked: t
             } = e;
-            return !!t && null != y && (S(), !0)
+            return !!t && null != _ && (I(), !0)
         },
-        LOCAL_ACTIVITY_UPDATE: x,
-        RPC_APP_DISCONNECTED: x
+        LOCAL_ACTIVITY_UPDATE: T,
+        RPC_APP_DISCONNECTED: T
     }),
-    T = 21552 == n.j ? I : null
+    v = 21552 == n.j ? y : null

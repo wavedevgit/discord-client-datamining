@@ -1,22 +1,22 @@
 /** chunk id: 858526, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => a
+    A: () => l
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(397927),
-    l = n(179690),
-    s = n(985018);
+var s = n(397927),
+    a = n(179690),
+    r = n(985018);
 
-function a() {
-    return (0, r.jsx)(i.D0$, {
-        label: s.intl.string(s.t.EPVq00),
-        description: s.intl.string(s.t["8aDa1t"]),
-        children: (0, r.jsx)(i.Button, {
+function l() {
+    return (0, i.jsx)(s.D0$, {
+        label: r.intl.string(r.t.EPVq00),
+        description: r.intl.string(r.t["8aDa1t"]),
+        children: (0, i.jsx)(s.Button, {
             variant: "primary",
             size: "sm",
-            text: s.intl.string(s.t.cDgKte),
-            onClick: l.Ay.enableMFA
+            text: r.intl.string(r.t.cDgKte),
+            onClick: a.Ay.enableMFA
         })
     })
 }

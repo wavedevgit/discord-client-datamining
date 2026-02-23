@@ -1,16 +1,16 @@
 /** chunk id: 290794, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    Tu: () => c,
+    Tu: () => d,
     hd: () => o,
     y0: () => a,
     y5: () => s
-}), n(65821);
-var r = n(627968),
-    i = n(64700);
-let l = i.createContext(void 0);
+});
+var i = n(627968),
+    l = n(64700);
+let r = l.createContext(void 0);
 
 function a() {
-    let e = i.useContext(l);
+    let e = l.useContext(r);
     if (null == e) throw Error("No PollContextProvider found");
     return e
 }
@@ -20,11 +20,11 @@ function s(e) {
         children: t,
         message: n,
         poll: a
-    } = e, s = i.useMemo(() => ({
+    } = e, s = l.useMemo(() => ({
         message: n,
         poll: a
     }), [n, a]);
-    return (0, r.jsx)(l.Provider, {
+    return (0, i.jsx)(r.Provider, {
         value: s,
         children: t
     })
@@ -39,11 +39,11 @@ function o(e) {
     }().styles[e]
 }
 
-function c() {
+function d() {
     let {
         message: e
     } = a(), t = e.getChannelId();
-    return i.useMemo(() => ({
+    return l.useMemo(() => ({
         channelId: t,
         messageId: e.id
     }), [e.id, t])

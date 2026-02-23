@@ -1,19 +1,19 @@
 /** chunk id: 598047, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => s
-}), n(896048);
-var r = n(64700);
+    A: () => r
+});
+var i = n(64700);
 
-function i() {
+function s() {
     return "u" < typeof document || "visible" === document.visibilityState
 }
 
-function s() {
-    let [e, t] = (0, r.useState)(i());
-    return (0, r.useEffect)(() => {
+function r() {
+    let [e, t] = (0, i.useState)(s());
+    return (0, i.useEffect)(() => {
         function e() {
-            t(i())
+            t(s())
         }
         return window.addEventListener("visibilitychange", e), () => {
             window.removeEventListener("visibilitychange", e)

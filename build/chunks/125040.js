@@ -2,27 +2,27 @@
 n.d(t, {
     A: () => _
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(421380),
-    l = n(397927),
-    s = n(631670),
-    a = n(985018);
+var s = n(421380),
+    a = n(397927),
+    r = n(631670),
+    l = n(985018);
 
 function o(e) {
     let {
         onClose: t
     } = e;
-    return (0, r.jsx)(l.MJ3, {
+    return (0, i.jsx)(a.MJ3, {
         dismissable: !0,
-        header: a.intl.string(a.t.UNGZDI),
-        confirmText: a.intl.string(a.t.BddRzS),
-        confirmButtonColor: i.XD.BRAND,
+        header: l.intl.string(l.t.UNGZDI),
+        confirmText: l.intl.string(l.t.BddRzS),
+        confirmButtonColor: s.XD.BRAND,
         onCancel: t,
         onConfirm: t,
-        children: (0, r.jsx)(l.Text, {
+        children: (0, i.jsx)(a.Text, {
             variant: "text-md/normal",
-            children: a.intl.string(a.t.alpAUm)
+            children: l.intl.string(l.t.alpAUm)
         })
     })
 }
@@ -31,16 +31,16 @@ function c(e) {
     let {
         onClose: t
     } = e;
-    return (0, r.jsx)(l.MJ3, {
+    return (0, i.jsx)(a.MJ3, {
         dismissable: !0,
-        header: a.intl.string(a.t.I5UrbV),
-        confirmText: a.intl.string(a.t.BddRzS),
-        confirmButtonColor: i.XD.BRAND,
+        header: l.intl.string(l.t.I5UrbV),
+        confirmText: l.intl.string(l.t.BddRzS),
+        confirmButtonColor: s.XD.BRAND,
         onCancel: t,
         onConfirm: t,
-        children: (0, r.jsx)(l.Text, {
+        children: (0, i.jsx)(a.Text, {
             variant: "text-md/normal",
-            children: a.intl.string(a.t.UyVVan)
+            children: l.intl.string(l.t.UyVVan)
         })
     })
 }
@@ -49,16 +49,16 @@ function d(e) {
     let {
         onClose: t
     } = e;
-    return (0, r.jsx)(l.MJ3, {
+    return (0, i.jsx)(a.MJ3, {
         dismissable: !0,
-        header: a.intl.string(a.t["8lQ2rR"]),
-        confirmText: a.intl.string(a.t["8lQ2rR"]),
-        cancelText: a.intl.string(a.t["ETE/oC"]),
+        header: l.intl.string(l.t["8lQ2rR"]),
+        confirmText: l.intl.string(l.t["8lQ2rR"]),
+        cancelText: l.intl.string(l.t["ETE/oC"]),
         onCancel: t,
-        onConfirm: () => (0, s.U_)("", !0).then(t),
-        children: (0, r.jsx)(l.Text, {
+        onConfirm: () => (0, r.U_)("", !0).then(t),
+        children: (0, i.jsx)(a.Text, {
             variant: "text-md/normal",
-            children: a.intl.string(a.t.FB4H1D)
+            children: l.intl.string(l.t.FB4H1D)
         })
     })
 }
@@ -68,14 +68,14 @@ function u(e) {
         onClose: t,
         errorMessage: n
     } = e;
-    return (0, r.jsx)(l.MJ3, {
+    return (0, i.jsx)(a.MJ3, {
         dismissable: !0,
-        header: a.intl.string(a.t.LX0nT8),
-        confirmText: a.intl.string(a.t.BddRzS),
-        confirmButtonColor: i.XD.BRAND,
+        header: l.intl.string(l.t.LX0nT8),
+        confirmText: l.intl.string(l.t.BddRzS),
+        confirmButtonColor: s.XD.BRAND,
         onCancel: t,
         onConfirm: t,
-        children: (0, r.jsx)(l.Text, {
+        children: (0, i.jsx)(a.Text, {
             variant: "text-md/normal",
             children: n
         })
@@ -86,22 +86,22 @@ function _(e) {
     let {
         shouldRenderOwnedTeamsModal: t,
         shouldRenderOwnedGuildsModal: n,
-        shouldRenderDeleteAccountConfirmModal: i,
-        shouldRenderDisableAccountErrorModal: l,
-        disableAccountErrorMessage: s,
-        onOwnedTeamsWarningModalClose: a,
+        shouldRenderDeleteAccountConfirmModal: s,
+        shouldRenderDisableAccountErrorModal: a,
+        disableAccountErrorMessage: r,
+        onOwnedTeamsWarningModalClose: l,
         onOwnedGuildsWarningModalClose: _,
-        onDeleteAccountConfirmModalClose: p,
-        onDisableAccountErrorModalClose: m
+        onDeleteAccountConfirmModalClose: m,
+        onDisableAccountErrorModalClose: A
     } = e;
-    return t ? (0, r.jsx)(o, {
-        onClose: a
-    }) : n ? (0, r.jsx)(c, {
+    return t ? (0, i.jsx)(o, {
+        onClose: l
+    }) : n ? (0, i.jsx)(c, {
         onClose: _
-    }) : i ? (0, r.jsx)(d, {
-        onClose: p
-    }) : l ? (0, r.jsx)(u, {
-        onClose: m,
-        errorMessage: s
+    }) : s ? (0, i.jsx)(d, {
+        onClose: m
+    }) : a ? (0, i.jsx)(u, {
+        onClose: A,
+        errorMessage: r
     }) : null
 }

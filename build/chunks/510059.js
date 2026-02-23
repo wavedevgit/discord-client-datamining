@@ -1,117 +1,116 @@
-/** chunk id: 510059, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => I
+/** chunk id: 510059, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    A: () => N
 });
-var l = n(627968);
-n(64700);
-var i = n(503698),
-    r = n.n(i),
-    s = n(311907),
-    o = n(990078),
-    a = n(397927),
-    d = n(573648),
-    c = n(58149),
-    u = n(681819),
-    p = n(370480),
-    f = n(169869),
-    m = n(532197),
-    A = n(773669),
-    x = n(307600),
-    g = n(652215),
-    j = n(783419),
-    h = n(985018),
-    b = n(882119);
+var l = i(627968);
+i(64700);
+var n = i(503698),
+    s = i.n(n),
+    a = i(311907),
+    r = i(990078),
+    o = i(397927),
+    d = i(573648),
+    c = i(58149),
+    u = i(681819),
+    A = i(370480),
+    m = i(169869),
+    x = i(532197),
+    g = i(773669),
+    p = i(307600),
+    h = i(652215),
+    I = i(783419),
+    f = i(985018),
+    j = i(882119);
 
 function v(e) {
-    var t, n;
-    let i, {
-            account: r,
-            locale: s,
-            userId: A
+    let t, {
+            account: i,
+            locale: n,
+            userId: s
         } = e,
-        v = null != (t = r.metadata) ? t : {},
-        I = (0, p.An)(v[j.pK.CREATED_AT], s),
-        y = d.A.get((0, u.ML)(r.type));
+        a = i.metadata ?? {},
+        g = (0, A.An)(a[I.pK.CREATED_AT], n),
+        v = d.A.get((0, u.ML)(i.type));
     return (0, l.jsxs)("li", {
-        className: b.FI,
-        children: [(0, l.jsx)(o.m, {
-            __unsupportedReactNodeAsText: null == y ? void 0 : y.name,
+        className: j.FI,
+        children: [(0, l.jsx)(r.m, {
+            __unsupportedReactNodeAsText: v?.name,
             children: (0, l.jsx)("div", {
-                className: b.k_,
+                className: j.k_,
                 children: (0, l.jsx)("img", {
-                    alt: h.intl.formatToPlainString(h.t.rtm15P, {
-                        name: null == y ? void 0 : y.name
+                    alt: f.intl.formatToPlainString(f.t.rtm15P, {
+                        name: v?.name
                     }),
-                    className: b.tV,
-                    src: null == y ? void 0 : y.icon.lightPNG
+                    className: j.tV,
+                    src: v?.icon.lightPNG
                 })
             })
         }), (0, l.jsxs)("div", {
-            className: b.Hd,
+            className: j.Hd,
             children: [(0, l.jsxs)("div", {
-                children: [null == (i = null == y || null == (n = y.getPlatformUserUrl) ? void 0 : n.call(y, r)) ? (0, l.jsx)(o.m, {
+                children: [null == (t = v?.getPlatformUserUrl?.(i)) ? (0, l.jsx)(r.m, {
                     overflowOnly: !0,
-                    text: r.name,
-                    children: (0, l.jsx)(a.Text, {
+                    text: i.name,
+                    children: (0, l.jsx)(o.Text, {
                         variant: "text-sm/normal",
-                        className: b.GW,
-                        children: r.name
+                        className: j.GW,
+                        children: i.name
                     })
-                }) : (0, l.jsx)(a.MzZ, {
-                    href: i,
-                    className: b.Y2,
+                }) : (0, l.jsx)(o.MzZ, {
+                    href: t,
+                    className: j.Y2,
                     useDefaultUnderlineStyles: !1,
-                    "aria-label": (null == y ? void 0 : y.name) != null ? "".concat(y.name, ", ").concat(r.name, ", ").concat(h.intl.string(h.t.q5jLJB)) : "".concat(r.name, ", ").concat(h.intl.string(h.t.q5jLJB)),
+                    "aria-label": v?.name != null ? `${v.name}, ${i.name}, ${f.intl.string(f.t.q5jLJB)}` : `${i.name}, ${f.intl.string(f.t.q5jLJB)}`,
                     onClick: e => {
-                        (0, c.zV)(g.HAw.CONNECTED_ACCOUNT_VIEWED, {
-                            platform_type: r.type,
-                            other_user_id: A
-                        }), (0, x.h)({
-                            href: i,
-                            trusted: (null == y ? void 0 : y.type) !== g.fg2.DOMAIN
+                        (0, c.zV)(h.HAw.CONNECTED_ACCOUNT_VIEWED, {
+                            platform_type: i.type,
+                            other_user_id: s
+                        }), (0, p.h)({
+                            href: t,
+                            trusted: v?.type !== h.fg2.DOMAIN
                         }, e)
                     },
                     children: (0, l.jsxs)("div", {
-                        className: b.vi,
-                        children: [(0, l.jsx)(o.m, {
+                        className: j.vi,
+                        children: [(0, l.jsx)(r.m, {
                             overflowOnly: !0,
-                            text: r.name,
-                            children: (0, l.jsx)(a.Text, {
+                            text: i.name,
+                            children: (0, l.jsx)(o.Text, {
                                 variant: "text-sm/normal",
-                                className: b.GW,
-                                children: r.name
+                                className: j.GW,
+                                children: i.name
                             })
-                        }), (0, l.jsx)(m.A, {
-                            className: b.E4,
-                            direction: m.A.Directions.RIGHT
+                        }), (0, l.jsx)(x.A, {
+                            className: j.E4,
+                            direction: x.A.Directions.RIGHT
                         })]
                     })
-                }), null != I && (0, l.jsx)(a.Text, {
+                }), null != g && (0, l.jsx)(o.Text, {
                     variant: "text-xs/normal",
-                    children: h.intl.format(h.t["9rfonh"], {
-                        date: I
+                    children: f.intl.format(f.t["9rfonh"], {
+                        date: g
                     })
                 })]
             }), (0, l.jsx)("div", {
-                className: b.yu,
-                children: r.type === g.fg2.REDDIT ? (0, f.xE)(v) : r.type === g.fg2.STEAM ? (0, f.dy)(v) : r.type === g.fg2.BLUESKY || r.type === g.fg2.MASTODON || r.type === g.fg2.TWITTER ? (0, f.ED)(v) : r.type === g.fg2.PAYPAL ? (0, f.gZ)(v) : r.type === g.fg2.EBAY ? (0, f.ub)(v) : r.type === g.fg2.TIKTOK ? (0, f.HU)(v) : null
+                className: j.yu,
+                children: i.type === h.fg2.REDDIT ? (0, m.xE)(a) : i.type === h.fg2.STEAM ? (0, m.dy)(a) : i.type === h.fg2.BLUESKY || i.type === h.fg2.MASTODON || i.type === h.fg2.TWITTER ? (0, m.ED)(a) : i.type === h.fg2.PAYPAL ? (0, m.gZ)(a) : i.type === h.fg2.EBAY ? (0, m.ub)(a) : i.type === h.fg2.TIKTOK ? (0, m.HU)(a) : null
             })]
         })]
     })
 }
 
-function I(e) {
+function N(e) {
     let {
         connections: t,
-        userId: n,
-        className: i
-    } = e, o = (0, s.bG)([A.default], () => A.default.locale);
+        userId: i,
+        className: n
+    } = e, r = (0, a.bG)([g.default], () => g.default.locale);
     return 0 === t.length ? null : (0, l.jsx)("ul", {
-        className: r()(b.kL, i),
+        className: s()(j.kL, n),
         children: t.map(e => (0, l.jsx)(v, {
             account: e,
-            userId: n,
-            locale: o
-        }, "".concat(e.type, ":").concat(e.id)))
+            userId: i,
+            locale: r
+        }, `${e.type}:${e.id}`))
     })
 }

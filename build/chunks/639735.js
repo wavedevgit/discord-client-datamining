@@ -1,36 +1,32 @@
 /** chunk id: 639735, original params: e,t,a (module,exports,require) **/
 a.d(t, {
-    A: () => _
+    A: () => s
 });
-var n, i, c = a(311907),
-    o = a(73153);
-let s = {
+var n = a(311907),
+    i = a(73153);
+let c = {
     canPlayWowMoment: !1,
     isFetchingWowMomentMedia: !1,
     wowMomentWumpusMediaUrl: null
 };
-class d extends(i = c.Ay.Store) {
+class o extends n.Ay.Store {
+    static displayName = "PurchasedItemsFestivityStore";
     getState() {
-        return s
+        return c
     }
     get canPlayWowMoment() {
-        return s.canPlayWowMoment
+        return c.canPlayWowMoment
     }
     get isFetchingWowMomentMedia() {
-        return s.isFetchingWowMomentMedia
+        return c.isFetchingWowMomentMedia
     }
     get wowMomentWumpusMedia() {
-        return s.wowMomentWumpusMediaUrl
+        return c.wowMomentWumpusMediaUrl
     }
-}(n = "displayName") in d ? Object.defineProperty(d, n, {
-    value: "PurchasedItemsFestivityStore",
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
-}) : d[n] = "PurchasedItemsFestivityStore";
-let _ = new d(o.h, {
+}
+let s = new o(i.h, {
     LOGOUT: function() {
-        s = {
+        c = {
             canPlayWowMoment: !1,
             isFetchingWowMomentMedia: !1,
             wowMomentWumpusMediaUrl: null
@@ -40,18 +36,18 @@ let _ = new d(o.h, {
         let {
             value: t
         } = e;
-        s.canPlayWowMoment = t
+        c.canPlayWowMoment = t
     },
     PURCHASED_ITEMS_FESTIVITY_IS_FETCHING_WOW_MOMENT_MEDIA: function() {
-        s.isFetchingWowMomentMedia = !0
+        c.isFetchingWowMomentMedia = !0
     },
     PURCHASED_ITEMS_FESTIVITY_FETCH_WOW_MOMENT_MEDIA_SUCCESS: function(e) {
         let {
             wumpusMedia: t
         } = e;
-        s.wowMomentWumpusMediaUrl = t, s.isFetchingWowMomentMedia = !1
+        c.wowMomentWumpusMediaUrl = t, c.isFetchingWowMomentMedia = !1
     },
     PURCHASED_ITEMS_FESTIVITY_FETCH_WOW_MOMENT_MEDIA_FAILURE: function() {
-        s.isFetchingWowMomentMedia = !1, s.canPlayWowMoment = !1
+        c.isFetchingWowMomentMedia = !1, c.canPlayWowMoment = !1
     }
 })

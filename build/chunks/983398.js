@@ -1,43 +1,43 @@
 /** chunk id: 983398, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => I
-}), n(896048);
+    A: () => w
+});
 var r = n(627968),
     l = n(64700),
     i = n(503698),
-    o = n.n(i),
-    s = n(158954),
+    s = n.n(i),
+    o = n(158954),
     a = n(827734),
     u = n(397927),
     d = n(210273),
     c = n(998418),
     p = n(890942),
     m = n(722523),
-    f = n(634925),
-    v = n(744201),
+    A = n(634925),
+    _ = n(744201),
     g = n(867060),
-    A = n(568065),
-    _ = n(652215),
-    x = n(508155),
+    f = n(568065),
+    x = n(652215),
+    v = n(508155),
     h = n(333354),
-    b = n(985018),
-    j = n(876380),
+    j = n(985018),
+    b = n(876380),
     E = n(206188);
 
-function w(e) {
+function I(e) {
     let t, {
         active: n,
         nextActive: l,
         position: i
     } = e;
-    return t = n && !1 !== l ? A.z0.FULL : n && !1 === l ? A.z0.HALF : A.z0.NONE, (0, r.jsxs)("div", {
+    return t = n && !1 !== l ? f.z0.FULL : n && !1 === l ? f.z0.HALF : f.z0.NONE, (0, r.jsxs)("div", {
         className: E.progressContainer,
         children: [(0, r.jsx)("div", {
-            className: o()(E.progress, E[i], E[t])
+            className: s()(E.progress, E[i], E[t])
         }), (0, r.jsx)("div", {
-            className: o()(E.boostContainer, j.JD, {
+            className: s()(E.boostContainer, b.JD, {
                 [E.boostContainerActive]: n,
-                [j.vu]: n
+                [b.vu]: n
             }),
             children: (0, r.jsx)(u._Jp, {
                 size: "sm",
@@ -47,88 +47,88 @@ function w(e) {
     })
 }
 
-function y(e) {
+function S(e) {
     let {
         isActive: t,
         index: n
     } = e, {
         textColor: i,
-        iconColor: o
-    } = (0, v.A)(t), a = l.useMemo(() => {
-        let e = x.t[n];
+        iconColor: s
+    } = (0, _.A)(t), a = l.useMemo(() => {
+        let e = v.t[n];
         if (null == e) return [];
-        let t = e.tier === _.TVA.TIER_3 ? e.perks.slice(0, -1) : e.perks;
-        return null == t ? void 0 : t.map((e, t) => {
+        let t = e.tier === x.TVA.TIER_3 ? e.perks.slice(0, -1) : e.perks;
+        return t?.map((e, t) => {
             let l = (0, d.X)(e.perkIcon);
             return (0, r.jsxs)("div", {
                 className: E.perkRow,
                 children: [(0, r.jsx)(l, {
-                    color: o,
+                    color: s,
                     size: "sm"
-                }), (0, r.jsx)(s.EYj, {
+                }), (0, r.jsx)(o.EYj, {
                     className: E.perkText,
                     color: i,
                     variant: "text-sm/medium",
                     children: e.getCopy()
                 })]
-            }, "perk-".concat(n, "-").concat(t))
+            }, `perk-${n}-${t}`)
         })
-    }, [n, o, i]);
+    }, [n, s, i]);
     return (0, r.jsxs)("div", {
         className: E.perkRowContainer,
         children: [a, (0, r.jsx)("div", {
             className: E.perkRow,
-            children: (0, r.jsx)(s.EYj, {
+            children: (0, r.jsx)(o.EYj, {
                 color: i,
                 variant: "text-sm/medium",
-                children: b.intl.string(h.default.nIj3LZ)
+                children: j.intl.string(h.default.nIj3LZ)
             })
         })]
     })
 }
 
-function I(e) {
+function w(e) {
     let t, {
             guildId: n,
             index: i,
-            powerup: o,
-            nextPowerup: s
+            powerup: s,
+            nextPowerup: o
         } = e,
-        a = (0, c.Ay)(n, o),
-        u = (0, c.Ay)(n, s),
-        d = a.type !== A.b_.INACTIVE,
-        _ = u.type !== A.b_.INACTIVE,
-        x = a.type === A.b_.TIER_OVERRIDE_ACTIVATED,
-        [h, b] = l.useState(void 0);
-    (0, g.A)(h), t = 0 === i ? A.At.START : null == s ? A.At.END : A.At.MIDDLE;
+        a = (0, c.Ay)(n, s),
+        u = (0, c.Ay)(n, o),
+        d = a.type !== f.b_.INACTIVE,
+        x = u.type !== f.b_.INACTIVE,
+        v = a.type === f.b_.TIER_OVERRIDE_ACTIVATED,
+        [h, j] = l.useState(void 0);
+    (0, g.A)(h), t = 0 === i ? f.At.START : null == o ? f.At.END : f.At.MIDDLE;
     let {
-        textColor: j
-    } = (0, v.A)(d);
-    return (0, r.jsxs)(f.h, {
+        textColor: b
+    } = (0, _.A)(d);
+    return (0, r.jsxs)(A.h, {
         guildId: n,
-        powerup: o,
+        powerup: s,
         className: E.card,
-        children: [(0, r.jsx)(w, {
+        children: [(0, r.jsx)(I, {
             position: t,
             active: d,
-            nextActive: null != s ? _ : void 0
+            nextActive: null != o ? x : void 0
         }), (0, r.jsx)(p.Ft, {
-            title: o.title,
-            textColor: j,
-            footer: !x && (0, r.jsx)(f.A, {
+            title: s.title,
+            textColor: b,
+            footer: !v && (0, r.jsx)(A.A, {
                 className: E.footer,
                 guildId: n,
-                powerup: o
+                powerup: s
             }),
-            children: (0, r.jsx)(y, {
+            children: (0, r.jsx)(S, {
                 isActive: d,
                 index: i
             })
-        }), !x && (0, r.jsx)(p.kd, {
+        }), !v && (0, r.jsx)(p.kd, {
             children: (0, r.jsx)(m.Ay, {
                 guildId: n,
-                powerup: o,
-                onError: b
+                powerup: s,
+                onError: j
             })
         })]
     })

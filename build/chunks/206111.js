@@ -1,58 +1,58 @@
-/** chunk id: 206111, original params: e,n,t (module,exports,require) **/
-t.d(n, {
-    l: () => u
+/** chunk id: 206111, original params: n,i,e (module,exports,require) **/
+e.d(i, {
+    l: () => a
 });
-var l = t(627968),
-    r = t(64700),
-    i = t(158954),
-    s = t(217483);
+var t = e(627968),
+    l = e(64700),
+    s = e(158954),
+    r = e(217483);
 
-function u(e) {
+function a(n) {
     let {
-        title: n,
-        subtitle: t,
-        iconSrc: u,
-        backgroundSrc: o,
-        animatedBackgroundSrc: a,
-        prefersReducedMotion: c = !0
-    } = e, d = r.useMemo(() => {
-        let e = null != o ? o : u;
-        if (null != e) return {
-            "--custom-background-url": "url(".concat(e.toString(), ")")
+        title: i,
+        subtitle: e,
+        iconSrc: a,
+        backgroundSrc: d,
+        animatedBackgroundSrc: u,
+        prefersReducedMotion: o = !0
+    } = n, c = l.useMemo(() => {
+        let n = d ?? a;
+        if (null != n) return {
+            "--custom-background-url": `url(${n.toString()})`
         }
-    }, [o, u]), p = r.useMemo(() => {
-        if (null == o) return;
-        let e = {
-            "--custom-background-static": "url(".concat(o.toString())
+    }, [d, a]), m = l.useMemo(() => {
+        if (null == d) return;
+        let n = {
+            "--custom-background-static": `url(${d.toString()}`
         };
-        return c || null == a || (e["--custom-background-animated"] = "url(".concat(a.toString(), ")")), e
-    }, [a, o, c]);
-    return (0, l.jsxs)("div", {
-        className: s.iE,
-        children: [(0, l.jsx)("div", {
-            className: s.Tp,
-            style: d
-        }), (0, l.jsxs)("div", {
-            className: s.Qs,
-            children: [null != u && (0, l.jsx)("div", {
-                className: s.Kk,
-                children: (0, l.jsx)("img", {
-                    src: u.toString(),
+        return o || null == u || (n["--custom-background-animated"] = `url(${u.toString()})`), n
+    }, [u, d, o]);
+    return (0, t.jsxs)("div", {
+        className: r.iE,
+        children: [(0, t.jsx)("div", {
+            className: r.Tp,
+            style: c
+        }), (0, t.jsxs)("div", {
+            className: r.Qs,
+            children: [null != a && (0, t.jsx)("div", {
+                className: r.Kk,
+                children: (0, t.jsx)("img", {
+                    src: a.toString(),
                     alt: ""
                 })
-            }), (0, l.jsxs)("div", {
-                children: [(0, l.jsx)(i.EYj, {
+            }), (0, t.jsxs)("div", {
+                children: [(0, t.jsx)(s.EYj, {
                     variant: "heading-xl/bold",
                     tag: "div",
-                    children: n
-                }), null != t && (0, l.jsxs)(i.EYj, {
+                    children: i
+                }), null != e && (0, t.jsxs)(s.EYj, {
                     variant: "text-sm/normal",
-                    children: ["“", t, "”"]
+                    children: ["“", e, "”"]
                 })]
             })]
-        }), null != o ? (0, l.jsx)("div", {
-            className: s.Sl,
-            style: p
+        }), null != d ? (0, t.jsx)("div", {
+            className: r.Sl,
+            style: m
         }) : null]
     })
 }

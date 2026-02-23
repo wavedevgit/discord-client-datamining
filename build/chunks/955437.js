@@ -1,22 +1,22 @@
 /** chunk id: 955437, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    $2: () => d,
-    Xv: () => u,
-    n7: () => c
+    $2: () => u,
+    Xv: () => c,
+    n7: () => d
 });
-var r = n(562465),
-    i = n(73153),
-    s = n(569717),
+var i = n(562465),
+    s = n(73153),
+    r = n(569717),
     l = n(954571),
     a = n(204925),
     o = n(652215);
 
-function c(e, t) {
-    return (0, s.A)(e, t), l.default.track(o.HAw.AGE_GATE_ACTION, {
+function d(e, t) {
+    return (0, r.A)(e, t), l.default.track(o.HAw.AGE_GATE_ACTION, {
         source: t,
         action: a.AM.AGE_GATE_SUBMITTED
-    }), r.Bo.patch({
+    }), i.Bo.patch({
         url: o.Rsh.ME,
         oldFormErrors: !0,
         body: {
@@ -25,7 +25,7 @@ function c(e, t) {
         rejectWithError: !1
     }).then(e => {
         let n = e.body;
-        i.h.dispatch({
+        s.h.dispatch({
             type: "CURRENT_USER_UPDATE",
             user: n
         }), l.default.track(o.HAw.AGE_GATE_ACTION, {
@@ -35,8 +35,8 @@ function c(e, t) {
     })
 }
 
-function u(e) {
-    i.h.dispatch({
+function c(e) {
+    s.h.dispatch({
         type: "AGE_GATE_PREVENT_UNDERAGE_REGISTRATION"
     }), l.default.track(o.HAw.AGE_GATE_ACTION, {
         source: e,
@@ -44,8 +44,8 @@ function u(e) {
     })
 }
 
-function d(e) {
-    i.h.dispatch({
+function u(e) {
+    s.h.dispatch({
         type: "AGE_GATE_LOGOUT_UNDERAGE_NEW_USER"
     }), l.default.track(o.HAw.AGE_GATE_ACTION, {
         source: e,

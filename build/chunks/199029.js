@@ -1,56 +1,56 @@
-/** chunk id: 199029, original params: e,t,r (module,exports,require) **/
-r.d(t, {
+/** chunk id: 199029, original params: e,t,n (module,exports,require) **/
+n.d(t, {
     o: () => c
-}), r(896048);
-var n = r(627968),
-    l = r(64700),
-    a = r(77555),
-    o = r(151054),
-    s = r(457417),
-    i = r(848193);
+});
+var a = n(627968),
+    l = n(64700),
+    r = n(77555),
+    s = n(151054),
+    o = n(457417),
+    i = n(848193);
 let c = () => {
     let {
         selectedDestinations: e,
         maxDestinations: t,
-        searchText: r,
+        searchText: n,
         message: c,
         channel: u,
         updateSelectShareDestinations: d
-    } = (0, s.Vw)(), {
-        results: f,
-        updateSearchText: b
-    } = (0, o.R)({
+    } = (0, o.Vw)(), {
+        results: _,
+        updateSearchText: h
+    } = (0, s.R)({
         selectedDestinations: e,
         includeMissingDMs: !0
     });
     (0, l.useEffect)(() => {
-        b(r)
-    }, [b, r]);
-    let p = (0, l.useCallback)(t => {
-            let r = e.findIndex(e => {
+        h(n)
+    }, [h, n]);
+    let f = (0, l.useCallback)(t => {
+            let n = e.findIndex(e => {
                 let {
-                    type: r,
-                    id: n
+                    type: n,
+                    id: a
                 } = e;
-                return r === t.type && n === t.id
+                return n === t.type && a === t.id
             });
-            if (-1 !== r) {
+            if (-1 !== n) {
                 let t = [...e];
-                t.splice(r, 1), d(t);
+                t.splice(n, 1), d(t);
                 return
             }
             d([...e, t])
         }, [e, d]),
-        g = e.length >= t;
-    return (0, n.jsx)(a.z, {
+        p = e.length >= t;
+    return (0, a.jsx)(r.z, {
         paddingBottom: 16,
         paddingTop: 16,
-        rowData: f,
+        rowData: _,
         message: c,
         originChannel: u,
-        handleToggleDestination: p,
+        handleToggleDestination: f,
         selectedDestinations: e,
-        disableSelection: g,
+        disableSelection: p,
         rowClassName: i.q
     })
 }

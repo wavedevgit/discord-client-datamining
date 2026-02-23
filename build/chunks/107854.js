@@ -1,88 +1,63 @@
-/** chunk id: 107854, original params: e,t,n (module,exports,require) **/
-n.d(t, {
+/** chunk id: 107854, original params: t,e,n (module,exports,require) **/
+n.d(e, {
     getApplicationPaymentSteps: () => m
-}), n(896048);
-var r = n(627968);
+});
+var i = n(627968);
 n(64700);
-var i = n(166532),
+var r = n(166532),
     l = n(735305),
     a = n(721252),
     s = n(924076),
     o = n(984742),
-    c = n(155301),
-    u = n(758655),
-    d = n(985018);
+    d = n(155301),
+    c = n(758655),
+    u = n(985018);
 
-function p(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = r
-        })
-    }
-    return e
-}
-
-function m(e) {
+function m(t) {
     let {
-        guildId: t,
+        guildId: e,
         showBenefitsFirst: n
-    } = e;
+    } = t;
     return [{
         key: null,
-        renderStep: e => (0, r.jsx)(c.A, p({
-            initialStep: n ? i.pn.BENEFITS : i.pn.REVIEW,
-            guildId: t
-        }, e))
+        renderStep: t => (0, i.jsx)(d.A, {
+            initialStep: n ? r.pn.BENEFITS : r.pn.REVIEW,
+            guildId: e,
+            ...t
+        })
     }, {
-        key: i.pn.BENEFITS,
-        renderStep: e => (0, r.jsx)(s.A, p({}, e)),
+        key: r.pn.BENEFITS,
+        renderStep: t => (0, i.jsx)(s.A, {
+            ...t
+        }),
         options: {
-            useBreadcrumbLabel: () => d.intl.string(d.t["5LD2+B"])
+            useBreadcrumbLabel: () => u.intl.string(u.t["5LD2+B"])
         }
     }, {
-        key: i.pn.ADD_PAYMENT_STEPS,
-        renderStep: e => {
-            var t, n;
-            return (0, r.jsx)(l.x, (t = p({}, e), n = n = {
-                breadcrumbSteps: [i.pn.ADD_PAYMENT_STEPS, i.pn.REVIEW, i.pn.CONFIRM]
-            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
-                var n = Object.keys(e);
-                if (Object.getOwnPropertySymbols) {
-                    var r = Object.getOwnPropertySymbols(e);
-                    n.push.apply(n, r)
-                }
-                return n
-            })(Object(n)).forEach(function(e) {
-                Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-            }), t))
-        },
+        key: r.pn.ADD_PAYMENT_STEPS,
+        renderStep: t => (0, i.jsx)(l.x, {
+            ...t,
+            breadcrumbSteps: [r.pn.ADD_PAYMENT_STEPS, r.pn.REVIEW, r.pn.CONFIRM]
+        }),
         options: {
             renderHeader: !0
         }
     }, ...a.hh, {
-        key: i.pn.REVIEW,
-        renderStep: e => (0, r.jsx)(u.A, p({
+        key: r.pn.REVIEW,
+        renderStep: t => (0, i.jsx)(c.A, {
             backButtonEligible: !!n || void 0,
-            prevStep: n ? i.pn.BENEFITS : void 0
-        }, e)),
+            prevStep: n ? r.pn.BENEFITS : void 0,
+            ...t
+        }),
         options: {
             renderHeader: !0,
-            useBreadcrumbLabel: () => d.intl.string(d.t.QBnNHq)
+            useBreadcrumbLabel: () => u.intl.string(u.t.QBnNHq)
         }
     }, {
-        key: i.pn.CONFIRM,
-        renderStep: e => (0, r.jsx)(o.A, p({
-            showBenefits: !n
-        }, e))
+        key: r.pn.CONFIRM,
+        renderStep: t => (0, i.jsx)(o.A, {
+            showBenefits: !n,
+            ...t
+        })
     }]
 }

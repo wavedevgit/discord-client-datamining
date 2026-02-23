@@ -2,11 +2,11 @@
 n.d(t, {
     A: () => d
 });
-var r = n(627968);
+var l = n(627968);
 n(64700);
-var l = n(397927),
-    i = n(398450),
-    s = n(611248),
+var s = n(397927),
+    r = n(398450),
+    i = n(611248),
     a = n(985018),
     o = n(288661);
 
@@ -17,22 +17,22 @@ function d(e) {
         onClose: d,
         headerAlignStart: c
     } = e;
-    return (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(i.A.SlideHeader, {
+    return (0, l.jsxs)(l.Fragment, {
+        children: [(0, l.jsx)(r.A.SlideHeader, {
             subtitle: a.intl.string(a.t["XQaT+8"]),
             onClose: d,
             headerAlignStart: c
-        }), (0, r.jsx)(i.A.SlideContent, {
-            children: t.methods.map(e => (0, r.jsxs)(l.DUT, {
+        }), (0, l.jsx)(r.A.SlideContent, {
+            children: t.methods.map(e => (0, l.jsxs)(s.DUT, {
                 className: o.Ry,
                 onClick: () => {
                     n(e.type)
                 },
-                children: [(0, r.jsx)(l.Text, {
+                children: [(0, l.jsx)(s.Text, {
                     className: o.zx,
                     variant: "text-md/semibold",
-                    children: s.e[e.type]
-                }), (0, r.jsx)(l._BQ, {
+                    children: i.e[e.type]
+                }), (0, l.jsx)(s._BQ, {
                     size: "custom",
                     color: "currentColor",
                     width: 20,

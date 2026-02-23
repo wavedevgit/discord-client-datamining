@@ -2,12 +2,12 @@
 s.d(t, {
     A: () => d
 });
-var i = s(627968);
+var n = s(627968);
 s(64700);
-var n = s(503698),
-    r = s.n(n),
-    l = s(397927),
-    a = s(338717),
+var l = s(503698),
+    a = s.n(l),
+    i = s(397927),
+    r = s(338717),
     o = s(116806);
 let d = e => {
     let {
@@ -15,15 +15,15 @@ let d = e => {
         iconClassname: s
     } = e;
     switch (t) {
-        case a.Oc.EXPLICIT_CONTENT:
-        case a.Oc.GORE_CONTENT:
-        case a.Oc.SELF_HARM_CONTENT:
-            return (0, i.jsx)(l.DAq, {
-                className: r()(s, o.x),
+        case r.Oc.EXPLICIT_CONTENT:
+        case r.Oc.GORE_CONTENT:
+        case r.Oc.SELF_HARM_CONTENT:
+            return (0, n.jsx)(i.DAq, {
+                className: a()(s, o.x),
                 color: "white"
             });
-        case a.Oc.SPOILER:
-            return (0, i.jsx)(l.bMW, {
+        case r.Oc.SPOILER:
+            return (0, n.jsx)(i.bMW, {
                 size: "md",
                 color: "currentColor",
                 className: s

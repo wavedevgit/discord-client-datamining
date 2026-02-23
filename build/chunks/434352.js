@@ -1,52 +1,36 @@
-/** chunk id: 434352, original params: e,n,t (module,exports,require) **/
-t.d(n, {
-    A: () => c
+/** chunk id: 434352, original params: e,i,n (module,exports,require) **/
+n.d(i, {
+    A: () => d
 });
-var i = t(627968);
-t(64700);
-var r = t(397927),
-    l = t(494713),
-    a = t(985018);
+var t = n(627968);
+n(64700);
+var l = n(397927),
+    a = n(494713),
+    r = n(985018);
 
-function c(e) {
+function d(e) {
     let {
-        guildFriendsEnabled: n
-    } = l.A.useConfig({
+        guildFriendsEnabled: i
+    } = a.A.useConfig({
         location: "useFriendsItem"
     });
-    return n ? (0, i.jsx)(r.Drp, {
+    return i ? (0, t.jsx)(l.Drp, {
         id: "friends",
-        label: a.intl.string(a.t.kYxEcH),
-        icon: r.$yI,
+        label: r.intl.string(r.t.kYxEcH),
+        icon: l.$yI,
         leadingAccessory: {
             type: "icon",
-            icon: r.$yI
+            icon: l.$yI
         },
         action: () => {
-            (0, r.mMO)(async () => {
+            (0, l.mMO)(async () => {
                 let {
-                    default: n
-                } = await t.e("42048").then(t.bind(t, 151203));
-                return t => (0, i.jsx)(n, function(e) {
-                    for (var n = 1; n < arguments.length; n++) {
-                        var t = null != arguments[n] ? arguments[n] : {},
-                            i = Object.keys(t);
-                        "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
-                            return Object.getOwnPropertyDescriptor(t, e).enumerable
-                        }))), i.forEach(function(n) {
-                            var i;
-                            i = t[n], n in e ? Object.defineProperty(e, n, {
-                                value: i,
-                                enumerable: !0,
-                                configurable: !0,
-                                writable: !0
-                            }) : e[n] = i
-                        })
-                    }
-                    return e
-                }({
-                    guild: e
-                }, t))
+                    default: i
+                } = await n.e("42048").then(n.bind(n, 151203));
+                return n => (0, t.jsx)(i, {
+                    guild: e,
+                    ...n
+                })
             })
         }
     }) : null

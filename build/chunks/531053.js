@@ -1,48 +1,49 @@
 /** chunk id: 531053, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    Ay: () => j,
-    g4: () => _,
-    qv: () => x
-}), n(896048);
-var r = n(627968),
-    l = n(64700),
-    i = n(503698),
-    s = n.n(i),
+    Ay: () => E,
+    g4: () => b,
+    qv: () => I
+});
+var i = n(627968),
+    s = n(64700),
+    l = n(503698),
+    r = n.n(l),
     a = n(284009),
     o = n.n(a),
     c = n(522437),
-    u = n(686956),
-    d = n(954571),
-    p = n(263715),
-    h = n(550591),
-    g = n(652215),
-    f = n(985018),
+    d = n(686956),
+    u = n(954571),
+    h = n(263715),
+    A = n(550591),
+    p = n(652215),
+    g = n(985018),
     m = n(581277);
 
-function b(e) {
-    let t = l.useRef(null),
+function _(e) {
+    let t = s.useRef(null),
         n = e.map(e => e[0]);
-    return l.useLayoutEffect(() => {
+    return s.useLayoutEffect(() => {
         let n = requestAnimationFrame(() => {
             let n = t.current;
             if (null != n)
-                for (let [t, r] of e) t ? n.classList.add(r) : n.classList.remove(r)
+                for (let [t, i] of e) t ? n.classList.add(i) : n.classList.remove(i)
         });
         return () => cancelAnimationFrame(n)
     }, n), t
 }
 
-function A(e, t) {
+function f(e, t) {
     let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
-        r = arguments.length > 3 && void 0 !== arguments[3] && arguments[3];
-    return o()(t.type !== p.PJ.ROOT, "[GuildDropTarget] Tried using a root node as a drop target."), {
+        i = arguments.length > 3 && void 0 !== arguments[3] && arguments[3];
+    return o()(t.type !== h.PJ.ROOT, "[GuildDropTarget] Tried using a root node as a drop target."), {
         accept: e,
-        canDrop: e => e.nodeId !== t.id && (!r || e.type !== p.PJ.FOLDER || t.type !== p.PJ.FOLDER) && (e.type !== p.PJ.FOLDER || null == t.parentId),
+        canDrop: e => e.nodeId !== t.id && (!i || e.type !== h.PJ.FOLDER || t.type !== h.PJ.FOLDER) && (e.type !== h.PJ.FOLDER || null == t.parentId),
         drop(e) {
             let {
-                nodeId: l
+                nodeId: s
             } = e;
-            r && t.type !== p.PJ.FOLDER && d.default.track(g.HAw.GUILD_FOLDER_CREATED), u.A.moveById(l, t.id, n, r)
+            i && t.type !== h.PJ.FOLDER && u.default.track(p.HAw.GUILD_FOLDER_CREATED), d.A.moveById(s, t.id, n, i)
         },
         collect: e => ({
             canDrop: e.canDrop(),
@@ -51,122 +52,122 @@ function A(e, t) {
     }
 }
 
-function y(e) {
+function x(e) {
     let {
         name: t,
         targetNode: n,
-        combine: i,
-        below: s
-    } = e, a = l.useMemo(() => A([p.PJ.GUILD, p.PJ.FOLDER], n, s, i), [n, s, i]), [{
+        combine: l,
+        below: r
+    } = e, a = s.useMemo(() => f([h.PJ.GUILD, h.PJ.FOLDER], n, r, l), [n, r, l]), [{
         canDrop: o,
-        isOver: u
-    }, d] = (0, c.H)(a), h = b([
+        isOver: d
+    }, u] = (0, c.H)(a), A = _([
         [o, m.OP],
-        [u, m.NQ]
+        [d, m.NQ]
     ]);
-    return (0, r.jsx)("div", {
+    return (0, i.jsx)("div", {
         ref: e => {
-            h.current = e, d(e)
+            A.current = e, u(e)
         },
-        "data-dnd-name": f.intl.formatToPlainString(f.t["A5aDw+"], {
+        "data-dnd-name": g.intl.formatToPlainString(g.t["A5aDw+"], {
             itemName: t
         }),
         className: m.aC
     })
 }
 
-function O(e) {
+function C(e) {
     let {
         name: t,
         targetNode: n,
-        onDragOverChanged: i
+        onDragOverChanged: l
     } = e, [{
         canDrop: a,
         isOver: o
-    }, u] = (0, c.H)(() => A([p.PJ.GUILD], n, !0, !0));
-    l.useEffect(() => {
-        null == i || i(o)
-    }, [i, o]);
-    let d = b([
+    }, d] = (0, c.H)(() => f([h.PJ.GUILD], n, !0, !0));
+    s.useEffect(() => {
+        l?.(o)
+    }, [l, o]);
+    let u = _([
         [a, m.OP],
         [o, m.NQ]
     ]);
-    return (0, r.jsx)(h.A, {
+    return (0, i.jsx)(A.A, {
         text: t,
         shouldShow: o,
         forceOpen: o,
         disableWrapper: !0,
-        children: (0, r.jsx)("div", {
+        children: (0, i.jsx)("div", {
             ref: e => {
-                d.current = e, u(e)
+                u.current = e, d(e)
             },
-            "data-dnd-name": f.intl.formatToPlainString(f.t.qiQ0QI, {
+            "data-dnd-name": g.intl.formatToPlainString(g.t.qiQ0QI, {
                 itemName: t
             }),
-            className: s()(m.dw, {})
+            className: r()(m.dw, {})
         })
     })
 }
-let j = l.memo(function(e) {
+let E = s.memo(function(e) {
     let {
         name: t,
         targetNode: n,
-        noCombine: l = !1,
-        below: i = !1,
-        onDragOverChanged: s
-    } = e, a = !l && null == n.parentId;
-    return (0, r.jsxs)("div", {
+        noCombine: s = !1,
+        below: l = !1,
+        onDragOverChanged: r
+    } = e, a = !s && null == n.parentId;
+    return (0, i.jsxs)("div", {
         className: m.iE,
         "aria-hidden": !0,
-        children: [(0, r.jsx)(y, {
+        children: [(0, i.jsx)(x, {
             name: t,
             targetNode: n,
-            below: i
-        }), a ? (0, r.jsx)(O, {
+            below: l
+        }), a ? (0, i.jsx)(C, {
             name: t,
             targetNode: n,
-            onDragOverChanged: s
+            onDragOverChanged: r
         }) : null]
     })
 });
 
-function x(e) {
+function I(e) {
     let {
         name: t,
         targetNode: n
     } = e, [{
-        canDrop: l,
-        isOver: i
-    }, s] = (0, c.H)(() => A([p.PJ.GUILD], n, !0, !0)), a = b([
-        [i, m.a7]
-    ]), o = b([
-        [i, m.NQ],
-        [l, m.OP]
+        canDrop: s,
+        isOver: l
+    }, r] = (0, c.H)(() => f([h.PJ.GUILD], n, !0, !0)), a = _([
+        [l, m.a7]
+    ]), o = _([
+        [l, m.NQ],
+        [s, m.OP]
     ]);
-    return (0, r.jsx)("div", {
+    return (0, i.jsx)("div", {
         ref: a,
         className: m.Ro,
         "aria-hidden": !0,
-        children: (0, r.jsx)("div", {
+        children: (0, i.jsx)("div", {
             className: m.aO,
-            children: (0, r.jsx)("div", {
+            children: (0, i.jsx)("div", {
                 ref: e => {
-                    o.current = e, s(e)
+                    o.current = e, r(e)
                 },
-                "aria-label": "At end of ".concat(t),
+                "aria-label": `At end of ${t}`,
                 className: m.aC
             })
         })
     })
 }
 
-function _(e) {
+function b(e) {
     let {
         children: t
     } = e, [, n] = (0, c.H)({
         accept: []
     });
-    return (0, r.jsx)("div", {
+    return (0, i.jsx)("div", {
         ref: e => {
             n(e)
         },

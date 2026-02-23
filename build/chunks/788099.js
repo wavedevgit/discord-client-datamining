@@ -2,18 +2,18 @@
 n.d(e, {
     W: () => _,
     default: () => x
-}), n(896048);
+});
 var s, i = n(627968),
     l = n(64700),
     r = n(397927),
     a = n(235986),
     o = n(278941),
-    c = n(665909),
-    T = n(758601),
+    T = n(665909),
+    c = n(758601),
     d = n(407058),
     S = n(772194),
-    u = n(985018),
-    A = n(53483),
+    A = n(985018),
+    u = n(53483),
     _ = ((s = {}).ACTIONS = "ACTIONS", s.SAFETY_TIPS = "SAFETY_TIPS", s.ABOUT_SAFETY_ALERTS = "ABOUT_SAFETY_ALERTS", s);
 let x = t => {
     let {
@@ -23,16 +23,16 @@ let x = t => {
         warningType: _,
         otherUserId: x,
         transitionState: E
-    } = t, O = null != (0, o.e)(n), [m, g] = l.useState("ACTIONS"), b = l.useCallback(t => {
-        (0, c._$)({
+    } = t, m = null != (0, o.e)(n), [O, g] = l.useState("ACTIONS"), h = l.useCallback(t => {
+        (0, T._$)({
             channelId: n,
             warningId: s,
             warningType: _,
             senderId: x,
             cta: t,
-            isNudgeWarning: O
+            isNudgeWarning: m
         })
-    }, [n, s, _, x, O]), h = l.useCallback(t => {
+    }, [n, s, _, x, m]), j = l.useCallback(t => {
         let {
             text: e,
             onClick: n
@@ -43,47 +43,47 @@ let x = t => {
             variant: "secondary",
             textVariant: "text-sm/normal"
         })
-    }, []), j = l.useCallback(() => {
-        switch (m) {
+    }, []), C = l.useCallback(() => {
+        switch (O) {
             case "SAFETY_TIPS":
             case "ABOUT_SAFETY_ALERTS":
-                return (0, i.jsx)(h, {
-                    text: u.intl.string(u.t["13/7kX"]),
+                return (0, i.jsx)(j, {
+                    text: A.intl.string(A.t["13/7kX"]),
                     onClick: () => g("ACTIONS")
                 });
             default:
                 return null
         }
-    }, [m, h]), C = l.useCallback(() => {
-        switch (m) {
+    }, [O, j]), b = l.useCallback(() => {
+        switch (O) {
             case "SAFETY_TIPS":
-                return u.intl.string(u.t.EtNxi6);
+                return A.intl.string(A.t.EtNxi6);
             case "ABOUT_SAFETY_ALERTS":
-                return u.intl.string(u.t.qI14KM);
+                return A.intl.string(A.t.qI14KM);
             default:
-                return u.intl.string(u.t.MAhAp6)
+                return A.intl.string(A.t.MAhAp6)
         }
-    }, [m]), L = l.useCallback(t => {
+    }, [O]), L = l.useCallback(t => {
         g(t)
     }, [g]);
     return (0, i.jsxs)(r.EOs, {
         "data-migration-pending": !0,
         transitionState: E,
-        "aria-label": u.intl.string(u.t.eXlt01),
+        "aria-label": A.intl.string(A.t.eXlt01),
         size: r.rIJ.SMALL,
         parentComponent: "SafetyToolsModal",
         children: [(0, i.jsx)(r.rQ0, {
             "data-migration-pending": !0,
             separator: !1,
-            className: A.H,
+            className: u.H,
             justify: a.A.Justify.CENTER,
             children: (0, i.jsx)(r.Heading, {
                 variant: "heading-xl/semibold",
-                children: C()
+                children: b()
             })
         }), (0, i.jsx)(r.HOs, {
             children: (0, i.jsxs)(r.tN_, {
-                activeSlide: m,
+                activeSlide: O,
                 width: 440,
                 children: [(0, i.jsx)(r.q7S, {
                     id: "ACTIONS",
@@ -96,10 +96,10 @@ let x = t => {
                     })
                 }), (0, i.jsx)(r.q7S, {
                     id: "ABOUT_SAFETY_ALERTS",
-                    children: (0, i.jsx)(T.A, {
+                    children: (0, i.jsx)(c.A, {
                         channelId: n,
                         onClose: () => {
-                            e(), b(c.Wm.USER_SAFETY_TOOLS_ABOUT_SAFETY_ALERTS_DISMISS)
+                            e(), h(T.Wm.USER_SAFETY_TOOLS_ABOUT_SAFETY_ALERTS_DISMISS)
                         }
                     })
                 }), (0, i.jsx)(r.q7S, {
@@ -110,12 +110,12 @@ let x = t => {
         }), (0, i.jsxs)(r.jlY, {
             "data-migration-pending": !0,
             justify: a.A.Justify.BETWEEN,
-            children: [(0, i.jsx)(h, {
-                text: u.intl.string(u.t.cpT0Cq),
+            children: [(0, i.jsx)(j, {
+                text: A.intl.string(A.t.cpT0Cq),
                 onClick: () => {
-                    e(), b(c.Wm.USER_SAFETY_TOOLS_DISMISS)
+                    e(), h(T.Wm.USER_SAFETY_TOOLS_DISMISS)
                 }
-            }), j()]
+            }), C()]
         })]
     })
 }

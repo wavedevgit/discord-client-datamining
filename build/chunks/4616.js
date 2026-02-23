@@ -1,22 +1,25 @@
 /** chunk id: 4616, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    A: () => d
-}), i(65821);
-var s, n = i(627968),
-    r = i(64700),
+    A: () => o
+});
+var s = i(627968),
+    n = i(64700),
     a = i(503698),
     h = i.n(a),
     l = i(397086);
-
-function o(t, e, i) {
-    return e in t ? Object.defineProperty(t, e, {
-        value: i,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : t[e] = i, t
-}
-class c extends(s = r.PureComponent) {
+class r extends n.PureComponent {
+    unmounting = !1;
+    state = {
+        loaded: !1
+    };
+    static defaultProps = {
+        width: 0,
+        height: 0,
+        alt: ""
+    };
+    constructor(t) {
+        super(t), this.initialize()
+    }
     componentDidUpdate(t) {
         t.src !== this.props.src && this.setState({
             loaded: !1
@@ -38,66 +41,36 @@ class c extends(s = r.PureComponent) {
         this.unmounting = !0
     }
     render() {
-        var t, e;
         let {
-            className: i,
-            src: s,
-            alt: r,
-            width: a,
-            height: c,
-            onLoad: d,
-            style: u,
-            imageClassName: p
+            className: t,
+            src: e,
+            alt: i,
+            width: n,
+            height: a,
+            onLoad: r,
+            style: o,
+            imageClassName: d
         } = this.props, {
-            loaded: f
+            loaded: c
         } = this.state;
-        return (0, n.jsx)("div", {
-            className: i,
-            style: (t = function(t) {
-                for (var e = 1; e < arguments.length; e++) {
-                    var i = null != arguments[e] ? arguments[e] : {},
-                        s = Object.keys(i);
-                    "function" == typeof Object.getOwnPropertySymbols && (s = s.concat(Object.getOwnPropertySymbols(i).filter(function(t) {
-                        return Object.getOwnPropertyDescriptor(i, t).enumerable
-                    }))), s.forEach(function(e) {
-                        o(t, e, i[e])
-                    })
-                }
-                return t
-            }({}, u), e = e = {
-                width: a,
-                height: c
-            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(e)) : (function(t, e) {
-                var i = Object.keys(t);
-                if (Object.getOwnPropertySymbols) {
-                    var s = Object.getOwnPropertySymbols(t);
-                    i.push.apply(i, s)
-                }
-                return i
-            })(Object(e)).forEach(function(i) {
-                Object.defineProperty(t, i, Object.getOwnPropertyDescriptor(e, i))
-            }), t),
-            children: (0, n.jsx)("img", {
-                className: h()(l.S, p, {
-                    [l.K]: f
+        return (0, s.jsx)("div", {
+            className: t,
+            style: {
+                ...o,
+                width: n,
+                height: a
+            },
+            children: (0, s.jsx)("img", {
+                className: h()(l.S, d, {
+                    [l.K]: c
                 }),
-                width: a,
-                height: c,
-                src: s,
-                alt: r,
-                onLoad: d
+                width: n,
+                height: a,
+                src: e,
+                alt: i,
+                onLoad: r
             })
         })
     }
-    constructor(t) {
-        super(t), o(this, "unmounting", !1), o(this, "state", {
-            loaded: !1
-        }), this.initialize()
-    }
 }
-o(c, "defaultProps", {
-    width: 0,
-    height: 0,
-    alt: ""
-});
-let d = c
+let o = r

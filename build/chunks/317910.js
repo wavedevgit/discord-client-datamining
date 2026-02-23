@@ -1,34 +1,34 @@
-/** chunk id: 317910, original params: e,n,t (module,exports,require) **/
-t.d(n, {
-    A: () => d
+/** chunk id: 317910, original params: n,e,t (module,exports,require) **/
+t.d(e, {
+    A: () => A
 });
-var r = t(627968);
+var i = t(627968);
 t(64700);
-var i = t(311907),
+var r = t(311907),
     a = t(397927),
-    c = t(435183),
-    l = t(526132),
-    o = t(576705),
-    s = t(652215),
-    u = t(985018);
+    l = t(435183),
+    c = t(526132),
+    s = t(576705),
+    o = t(652215),
+    d = t(985018);
 
-function d(e) {
+function A(n) {
     let {
-        canManageChannels: n,
+        canManageChannels: e,
         canManageRoles: t,
-        canManageWebhooks: d,
-        canAccessChannel: b,
-        canUnlinkChannel: f
-    } = (0, i.cf)([o.A], () => ({
-        canManageChannels: o.A.can(s.xBc.MANAGE_CHANNELS, e),
-        canManageRoles: o.A.can(s.xBc.MANAGE_ROLES, e),
-        canManageWebhooks: o.A.can(s.xBc.MANAGE_WEBHOOKS, e),
-        canAccessChannel: o.A.can(e.accessPermissions, e),
-        canUnlinkChannel: (0, l.n)(e, o.A)
-    }), [e]);
-    return !__OVERLAY__ && b && (n || t || d || f) ? (0, r.jsx)(a.Drp, {
+        canManageWebhooks: A,
+        canAccessChannel: u,
+        canUnlinkChannel: h
+    } = (0, r.cf)([s.A], () => ({
+        canManageChannels: s.A.can(o.xBc.MANAGE_CHANNELS, n),
+        canManageRoles: s.A.can(o.xBc.MANAGE_ROLES, n),
+        canManageWebhooks: s.A.can(o.xBc.MANAGE_WEBHOOKS, n),
+        canAccessChannel: s.A.can(n.accessPermissions, n),
+        canUnlinkChannel: (0, c.n)(n, s.A)
+    }), [n]);
+    return !__OVERLAY__ && u && (e || t || A || h) ? (0, i.jsx)(a.Drp, {
         id: "edit-channel",
-        label: e.type === s.rbe.GUILD_CATEGORY ? u.intl.string(u.t.zdPFs9) : u.intl.string(u.t["3gUsJb"]),
-        action: () => c.Ay.open(e.id)
+        label: n.type === o.rbe.GUILD_CATEGORY ? d.intl.string(d.t.zdPFs9) : d.intl.string(d.t["3gUsJb"]),
+        action: () => l.Ay.open(n.id)
     }) : null
 }

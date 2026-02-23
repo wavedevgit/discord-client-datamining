@@ -1,19 +1,20 @@
 /** chunk id: 898190, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => i
+    A: () => l
 });
-var r = n(64700),
-    l = n(181940);
+var i = n(64700),
+    s = n(181940);
 
-function i(e, t) {
+function l(e, t) {
     let {
         isLoading: n,
-        error: i,
-        onToggle: s
-    } = (0, l.A)(e, t);
+        error: l,
+        onToggle: r
+    } = (0, s.A)(e, t);
     return {
         isLoading: n,
-        error: i,
-        onDeactivate: r.useCallback(() => s(!1), [s])
+        error: l,
+        onDeactivate: i.useCallback(() => r(!1), [r])
     }
 }

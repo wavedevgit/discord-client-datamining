@@ -1,62 +1,32 @@
 /** chunk id: 622770, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => p
+    A: () => h
 });
-var r, l = n(627968);
+var i, s = n(627968);
 n(64700);
-var i = n(503698),
-    s = n.n(i),
+var l = n(503698),
+    r = n.n(l),
     a = n(397927),
     o = n(709562),
     c = n(639939),
-    u = ((r = u || {})[r.UP = 0] = "UP", r[r.DOWN = 1] = "DOWN", r);
+    d = ((i = d || {})[i.UP = 0] = "UP", i[i.DOWN = 1] = "DOWN", i);
 
-function d(e) {
+function u(e) {
     let {
         direction: t,
         className: n,
-        themeable: r
-    } = e, i = function(e, t) {
-        if (null == e) return {};
-        var n, r, l, i = {};
-        if ("u" > typeof Reflect && Reflect.ownKeys) {
-            for (l = 0, n = Reflect.ownKeys(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
-            return i
-        }
-        if (i = function(e, t) {
-                if (null == e) return {};
-                var n, r, l = {},
-                    i = Object.getOwnPropertyNames(e);
-                for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n]);
-                return l
-            }(e, t), Object.getOwnPropertySymbols)
-            for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
-        return i
-    }(e, ["direction", "className", "themeable"]);
-    return (0, l.jsx)(o.A, function(e) {
-        for (var t = 1; t < arguments.length; t++) {
-            var n = null != arguments[t] ? arguments[t] : {},
-                r = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                return Object.getOwnPropertyDescriptor(n, e).enumerable
-            }))), r.forEach(function(t) {
-                var r;
-                r = n[t], t in e ? Object.defineProperty(e, t, {
-                    value: r,
-                    enumerable: !0,
-                    configurable: !0,
-                    writable: !0
-                }) : e[t] = r
-            })
-        }
-        return e
-    }({
-        className: s()(n, c.U, {
+        themeable: i,
+        ...l
+    } = e;
+    return (0, s.jsx)(o.A, {
+        className: r()(n, c.U, {
             [c.up]: 0 === t
         }),
         iconComponent: a.abt,
-        themeable: r
-    }, i))
+        themeable: i,
+        ...l
+    })
 }
-d.Directions = u;
-let p = d
+u.Directions = d;
+let h = u

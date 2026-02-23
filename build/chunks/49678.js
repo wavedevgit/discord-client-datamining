@@ -1,98 +1,70 @@
-/** chunk id: 49678, original params: e,t,r (module,exports,require) **/
-r.d(t, {
-    MessageReminderEditMenu: () => d,
-    S: () => u
-}), r(321073);
-var n = r(627968),
-    a = r(64700),
-    i = r(397927),
-    o = r(442433),
-    c = r(164684),
-    s = r(181504),
-    l = r(985018);
+/** chunk id: 49678, original params: t,e,a (module,exports,require) **/
+a.d(e, {
+    MessageReminderEditMenu: () => c,
+    S: () => o
+}), a(321073);
+var r = a(627968),
+    n = a(64700),
+    d = a(397927),
+    i = a(442433),
+    s = a(164684),
+    l = a(181504),
+    u = a(985018);
 
-function u(e) {
+function o(t) {
     let {
-        createReminder: t
-    } = e, o = a.useCallback(() => {
-        (0, i.mMO)(async () => {
+        createReminder: e
+    } = t, i = n.useCallback(() => {
+        (0, d.mMO)(async () => {
             let {
-                default: e
-            } = await r.e("49208").then(r.bind(r, 148216));
-            return r => {
-                var a, i;
-                return (0, n.jsx)(e, (a = function(e) {
-                    for (var t = 1; t < arguments.length; t++) {
-                        var r = null != arguments[t] ? arguments[t] : {},
-                            n = Object.keys(r);
-                        "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-                            return Object.getOwnPropertyDescriptor(r, e).enumerable
-                        }))), n.forEach(function(t) {
-                            var n;
-                            n = r[t], t in e ? Object.defineProperty(e, t, {
-                                value: n,
-                                enumerable: !0,
-                                configurable: !0,
-                                writable: !0
-                            }) : e[t] = n
-                        })
-                    }
-                    return e
-                }({}, r), i = i = {
-                    createReminder: t
-                }, Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
-                    var r = Object.keys(e);
-                    if (Object.getOwnPropertySymbols) {
-                        var n = Object.getOwnPropertySymbols(e);
-                        r.push.apply(r, n)
-                    }
-                    return r
-                })(Object(i)).forEach(function(e) {
-                    Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(i, e))
-                }), a))
-            }
+                default: t
+            } = await a.e("49208").then(a.bind(a, 148216));
+            return a => (0, r.jsx)(t, {
+                ...a,
+                createReminder: e
+            })
         })
-    }, [t]);
-    return a.useMemo(() => {
-        let e = s.b.map(e => {
+    }, [e]);
+    return n.useMemo(() => {
+        let t = l.b.map(t => {
             let {
-                getDueAt: r,
-                getLabel: a
-            } = e;
-            return (0, n.jsx)(i.Drp, {
-                id: "create-reminder-".concat(a()),
-                label: a(),
-                action: () => t(r())
-            }, "create-reminder-".concat(a()))
+                getDueAt: a,
+                getLabel: n
+            } = t;
+            return (0, r.jsx)(d.Drp, {
+                id: `create-reminder-${n()}`,
+                label: n(),
+                action: () => e(a())
+            }, `create-reminder-${n()}`)
         });
-        return e.push((0, n.jsx)(i.Drp, {
+        return t.push((0, r.jsx)(d.Drp, {
             id: "create-reminder-custom",
-            label: l.intl.string(l.t.OLA8Zi),
-            action: o
-        }, "custom")), e
-    }, [t, o])
+            label: u.intl.string(u.t.OLA8Zi),
+            action: i
+        }, "custom")), t
+    }, [e, i])
 }
 
-function d(e) {
+function c(t) {
     let {
-        message: t,
-        label: r
-    } = e, a = u({
-        createReminder: e => (0, c.Y)({
-            channelId: t.channel_id,
-            messageId: t.id,
-            dueAt: e
+        message: e,
+        label: a
+    } = t, n = o({
+        createReminder: t => (0, s.Y)({
+            channelId: e.channel_id,
+            messageId: e.id,
+            dueAt: t
         })
     });
-    return (0, n.jsx)(i.W1t, {
+    return (0, r.jsx)(d.W1t, {
         "data-menu-migrated-auto": !0,
         navId: "message-reminder-create",
-        onClose: o.Z_,
-        "aria-label": l.intl.string(l.t.mJ3P0N),
+        onClose: i.Z_,
+        "aria-label": u.intl.string(u.t.mJ3P0N),
         onSelect: () => null,
-        children: (0, n.jsx)(i.rXV, {
-            label: r,
-            children: a
+        children: (0, r.jsx)(d.rXV, {
+            label: a,
+            children: n
         })
     })
 }

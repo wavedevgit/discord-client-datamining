@@ -1,43 +1,43 @@
 /** chunk id: 18640, original params: t,e,i (module,exports,require) **/
 i.d(e, {
     X: () => S
-}), i(65821), i(457529);
+});
 var n = i(627968),
     l = i(64700),
     s = i(397927),
     r = i(890138),
-    u = i(954571),
-    a = i(728458),
+    a = i(954571),
+    u = i(728458),
     o = i(156186),
     d = i(602450),
-    T = i(557571),
-    A = i(652215);
+    A = i(557571),
+    T = i(652215);
 let S = () => {
     let {
         connectionStatus: t,
         setConnectionStatus: e,
         connect: i,
         disconnect: S
-    } = (0, T.lV)(), c = [d.l7.CONNECTED, d.l7.INITIALIZING].includes(t), E = (0, l.useCallback)(() => c ? (e(d.l7.DISCONNECTED), (0, r.u)(A.HAw.NITRO_WARP_TOGGLED, {
+    } = (0, A.lV)(), E = [d.l7.CONNECTED, d.l7.INITIALIZING].includes(t), g = (0, l.useCallback)(() => E ? (e(d.l7.DISCONNECTED), (0, r.u)(T.HAw.NITRO_WARP_TOGGLED, {
         is_connecting: !1
-    }), S()) : ((0, r.u)(A.HAw.NITRO_WARP_TOGGLED, {
+    }), S()) : ((0, r.u)(T.HAw.NITRO_WARP_TOGGLED, {
         is_connecting: !0
     }), e(d.l7.INITIALIZING), i().then(t => {
         t || e(d.l7.DISCONNECTED)
     }).catch(t => {
-        a.A.captureException(t, {
+        u.A.captureException(t, {
             tags: {
                 source: o.q.PRIVATE_BROWSING_PERK_CONNECT
             }
-        }), u.default.track(A.HAw.PREMIUM_FEATURE_ERROR, {
+        }), a.default.track(T.HAw.PREMIUM_FEATURE_ERROR, {
             error_message: t instanceof Error ? t.message : JSON.stringify(t),
             error_source: o.q.PRIVATE_BROWSING_PERK_CONNECT
         }), e(d.l7.DISCONNECTED)
-    })), [c, S, i, e]);
+    })), [E, S, i, e]);
     return (0, n.jsx)("div", {
         children: (0, n.jsx)(s.dOG, {
-            onChange: E,
-            checked: c
+            onChange: g,
+            checked: E
         })
     })
 }

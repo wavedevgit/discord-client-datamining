@@ -1,241 +1,211 @@
 /** chunk id: 776971, original params: t,e,n (module,exports,require) **/
 n.d(e, {
-    default: () => k
-}), n(896048);
+    default: () => S
+});
 var l = n(627968),
-    r = n(64700),
-    a = n(284009),
-    i = n.n(a),
-    o = n(989349),
-    s = n.n(o),
-    c = n(110259),
-    u = n(158954),
-    d = n(311907),
-    E = n(686956),
-    p = n(935649),
-    f = n(847599),
-    A = n(734057),
-    _ = n(309010),
-    y = n(287809),
-    m = n(954571),
-    b = n(975571),
-    g = n(955437),
-    h = n(612200),
-    T = n(323073),
-    G = n(201505),
-    v = n(204925),
-    O = n(652215),
-    R = n(985018),
-    w = n(700129);
+    a = n(64700),
+    i = n(284009),
+    r = n.n(i),
+    s = n(989349),
+    o = n.n(s),
+    u = n(110259),
+    c = n(158954),
+    E = n(311907),
+    d = n(686956),
+    A = n(935649),
+    _ = n(847599),
+    p = n(36149),
+    f = n(734057),
+    m = n(309010),
+    h = n(287809),
+    g = n(954571),
+    y = n(975571),
+    T = n(955437),
+    G = n(612200),
+    b = n(323073),
+    R = n(201505),
+    C = n(204925),
+    N = n(652215),
+    k = n(985018),
+    x = n(700129);
 
-function C(t) {
-    for (var e = 1; e < arguments.length; e++) {
-        var n = null != arguments[e] ? arguments[e] : {},
-            l = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(t) {
-            return Object.getOwnPropertyDescriptor(n, t).enumerable
-        }))), l.forEach(function(e) {
-            var l;
-            l = n[e], e in t ? Object.defineProperty(t, e, {
-                value: l,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : t[e] = l
-        })
-    }
-    return t
-}
-
-function k(t) {
-    var e, n;
-    let a, o, {
-            transitionState: k,
-            source: N
+function S(t) {
+    let e, n, {
+            transitionState: i,
+            source: s
         } = t,
-        S = (0, d.bG)([y.default], () => y.default.getCurrentUser()),
-        x = (0, d.bG)([_.A, A.A], () => A.A.getChannel(_.A.getChannelId())),
-        [M, j] = r.useState(null),
-        [I, D] = r.useState(null),
-        [P, U] = r.useState(!1),
-        [V, L] = r.useState(0),
-        F = r.useRef(null),
-        W = r.useRef(null),
-        Y = N === v.w_.FAMILY_CENTER,
-        B = (0, T.a9)() && !Y,
+        S = (0, E.bG)([h.default], () => h.default.getCurrentUser()),
+        w = (0, E.bG)([m.A, f.A], () => f.A.getChannel(m.A.getChannelId())),
+        [I, M] = a.useState(null),
+        [v, D] = a.useState(null),
+        [O, U] = a.useState(!1),
+        [V, $] = a.useState(0),
+        L = a.useRef(null),
+        j = a.useRef(null),
+        F = s === C.w_.FAMILY_CENTER,
+        P = (0, b.a9)() && !F,
         {
-            verifyAgreementButtonText: H,
-            verifyGateDescription: z,
-            verifyTitle: K
-        } = (0, T.Gn)(N),
-        Z = (0, T.vL)(x),
-        q = T.Bc.has(N),
-        Q = null != M ? s()().diff(M, "years") : null;
+            verifyAgreementButtonText: W,
+            verifyGateDescription: Y,
+            verifyTitle: B
+        } = (0, b.Gn)(s),
+        H = (0, b.vL)(w),
+        z = b.Bc.has(s);
+    (0, p.I7)(s);
+    let K = null != I ? o()().diff(I, "years") : null;
 
-    function X() {
-        if (N === v.w_.NSFW_SERVER_INVITE_EMBED) return (0, h.IO)(N), Promise.resolve();
-        let t = null == x ? void 0 : x.getGuildId();
-        return E.A.nsfwReturnToSafety(t), (0, h.IO)(N), Promise.resolve()
+    function Z() {
+        if (s === C.w_.NSFW_SERVER_INVITE_EMBED) return (0, G.IO)(s), Promise.resolve();
+        let t = w?.getGuildId();
+        return d.A.nsfwReturnToSafety(t), (0, G.IO)(s), Promise.resolve()
     }
-    async function $() {
-        i()(null != M, "Cannot submit null birthday.");
+    async function q() {
+        r()(null != I, "Cannot submit null birthday.");
         try {
-            return D(null), U(!0), await (0, g.n7)(M, N)
-        } catch (e) {
-            if (null != e.body && null != e.body.date_of_birth)(0, h.MP)(N, e.body.date_of_birth);
-            else {
-                var t;
-                (null == e || null == (t = e.body) ? void 0 : t.username) != null ? D(R.intl.string(R.t["TGg/2k"])) : D(null == e ? void 0 : e.body.message), U(!1)
-            }
+            return D(null), U(!0), await (0, T.n7)(I, s)
+        } catch (t) {
+            null != t.body && null != t.body.date_of_birth ? (0, G.MP)(s, t.body.date_of_birth) : (t?.body?.username != null ? D(k.intl.string(k.t["TGg/2k"])) : D(t?.body.message), U(!1))
         }
     }
+    async function Q() {
+        (r()(null != K, "Cannot submit if we haven't been able to calculate age."), K < 18) ? $(1): await q()
+    }
+    async function X(t) {
+        t.preventDefault(), O || null == I || await Q()
+    }
     async function J() {
-        (i()(null != Q, "Cannot submit if we haven't been able to calculate age."), Q < 18) ? L(1): await $()
+        null == await q() && $(0)
     }
-    async function tt(t) {
-        t.preventDefault(), P || null == M || await J()
-    }
-    async function te() {
-        null == await $() && L(0)
-    }
-    r.useEffect(() => {
-        (null == S ? void 0 : S.nsfwAllowed) !== !0 || B || (0, h.Nk)(N)
-    }), r.useEffect(() => {
-        m.default.track(O.HAw.AGE_GATE_ACTION, {
-            source: N,
-            action: v.AM.AGE_GATE_OPEN
+    a.useEffect(() => {
+        S?.nsfwAllowed !== !0 || P || (0, G.Nk)(s)
+    }), a.useEffect(() => {
+        g.default.track(N.HAw.AGE_GATE_ACTION, {
+            source: s,
+            action: C.AM.AGE_GATE_OPEN
         })
-    }, [N]);
-    let tn = r.useCallback(t => {
-            j(t)
+    }, [s]);
+    let tt = a.useCallback(t => {
+            M(t)
+        }, [M]),
+        te = a.useCallback(() => {
+            j.current?.focus()
         }, [j]),
-        tl = r.useCallback(() => {
-            var t;
-            null == (t = W.current) || t.focus()
-        }, [W]),
-        tr = r.useCallback(() => {
-            p.A.showAgeVerificationGetStartedModal({
-                entryPoint: f.q1.NSFW_AGE_GATE
+        tn = a.useCallback(() => {
+            A.A.showAgeVerificationGetStartedModal({
+                entryPoint: _.q1.NSFW_AGE_GATE
             })
         }, []),
-        ta = {
-            transitionState: k,
-            onClose: X,
+        tl = {
+            transitionState: i,
+            onClose: Z,
             graphic: {
                 type: "image",
-                src: w.A
+                src: x.A
             },
             gradientColor: "blue"
         };
-    return B ? (0, l.jsx)(u.ExpressiveModal, C({
-        title: K,
-        subtitle: z,
+    return P ? (0, l.jsx)(c.ExpressiveModal, {
+        title: B,
+        subtitle: Y,
         actions: [{
-            text: R.intl.string(R.t.f3Pet9),
-            onClick: X,
+            text: k.intl.string(k.t.f3Pet9),
+            onClick: Z,
             variant: "secondary"
         }, {
-            text: null != H ? H : R.intl.string(R.t["5B+npG"]),
-            onClick: tr
+            text: W ?? k.intl.string(k.t["5B+npG"]),
+            onClick: tn
         }],
         trackingProps: {
             impression: {
-                impressionName: c.ImpressionNames.USER_AGE_GATE_VERIFY
+                impressionName: u.ImpressionNames.USER_AGE_GATE_VERIFY
             },
-            impressionType: c.ImpressionTypes.MODAL
-        }
-    }, ta)) : (null == S ? void 0 : S.nsfwAllowed) === !1 && (Z || q) && !Y ? (0, l.jsx)(u.ExpressiveModal, C({
-        title: R.intl.string(q ? R.t["H0SG/g"] : R.t.NEabBa),
-        subtitle: R.intl.format(q ? R.t["6++3cX"] : R.t["2kHZes"], {
-            helpURL: b.A.getArticleURL(O.MVz.AGE_GATE)
+            impressionType: u.ImpressionTypes.MODAL
+        },
+        ...tl
+    }) : S?.nsfwAllowed === !1 && (H || z) && !F ? (0, l.jsx)(c.ExpressiveModal, {
+        title: k.intl.string(z ? k.t["H0SG/g"] : k.t.NEabBa),
+        subtitle: k.intl.format(z ? k.t["6++3cX"] : k.t["2kHZes"], {
+            helpURL: y.A.getArticleURL(N.MVz.AGE_GATE)
         }),
         actions: [{
-            text: R.intl.string(R.t["/g10LC"]),
-            onClick: X,
+            text: k.intl.string(k.t["/g10LC"]),
+            onClick: Z,
             variant: "secondary"
         }],
         trackingProps: {
             impression: {
-                impressionName: c.ImpressionNames.USER_AGE_GATE_VERIFY
+                impressionName: u.ImpressionNames.USER_AGE_GATE_VERIFY
             },
-            impressionType: c.ImpressionTypes.MODAL
-        }
-    }, ta)) : 0 === V ? (a = (() => {
-        switch (N) {
-            case v.w_.NSFW_SERVER:
-            case v.w_.NSFW_SERVER_INVITE:
-            case v.w_.NSFW_SERVER_INVITE_EMBED:
-                return R.intl.string(R.t.vAymlG);
-            case v.w_.FAMILY_CENTER:
-                return R.intl.string(R.t.M7mt7m);
+            impressionType: u.ImpressionTypes.MODAL
+        },
+        ...tl
+    }) : 0 === V ? (e = (() => {
+        switch (s) {
+            case C.w_.NSFW_SERVER:
+            case C.w_.NSFW_SERVER_INVITE:
+            case C.w_.NSFW_SERVER_INVITE_EMBED:
+                return k.intl.string(k.t.vAymlG);
+            case C.w_.FAMILY_CENTER:
+                return k.intl.string(k.t.M7mt7m);
             default:
-                return R.intl.string(R.t.F8otRo)
+                return k.intl.string(k.t.F8otRo)
         }
-    })(), o = (() => {
-        switch (N) {
-            case v.w_.FAMILY_CENTER:
-                return R.intl.string(R.t.mhUrKS);
-            case v.w_.DEEP_LINK_PROMPT:
-                return R.intl.format(R.t.iyhg2s, {
-                    helpURL: b.A.getArticleURL(O.MVz.AGE_GATE)
+    })(), n = (() => {
+        switch (s) {
+            case C.w_.FAMILY_CENTER:
+                return k.intl.string(k.t.mhUrKS);
+            case C.w_.DEEP_LINK_PROMPT:
+                return k.intl.format(k.t.iyhg2s, {
+                    helpURL: y.A.getArticleURL(N.MVz.AGE_GATE)
                 });
             default:
-                return R.intl.format(R.t.n3QjDE, {
-                    helpURL: b.A.getArticleURL(O.MVz.AGE_GATE)
+                return k.intl.format(k.t.n3QjDE, {
+                    helpURL: y.A.getArticleURL(N.MVz.AGE_GATE)
                 })
         }
     })(), (0, l.jsx)("form", {
-        onSubmit: tt,
-        children: (0, l.jsx)(u.Modal, (e = C({
-            title: a,
-            subtitle: o,
+        onSubmit: X,
+        children: (0, l.jsx)(c.Modal, {
+            title: e,
+            subtitle: n,
             actions: [{
-                text: R.intl.string(R.t["1MrpWO"]),
-                onClick: X,
+                text: k.intl.string(k.t["1MrpWO"]),
+                onClick: Z,
                 variant: "secondary"
             }, {
-                text: R.intl.string(R.t.uBFuok),
-                onClick: J,
-                loading: P,
-                disabled: null == M
-            }]
-        }, ta), n = n = {
-            children: (0, l.jsx)(G.A, {
-                label: R.intl.string(R.t.rhBeKe),
+                text: k.intl.string(k.t.uBFuok),
+                onClick: Q,
+                loading: O,
+                disabled: null == I
+            }],
+            ...tl,
+            children: (0, l.jsx)(R.A, {
+                label: k.intl.string(k.t.rhBeKe),
                 name: "date_of_birth",
-                onChange: tn,
-                onPopulated: tl,
-                error: I,
-                value: M,
-                ref: F,
+                onChange: tt,
+                onPopulated: te,
+                error: v,
+                value: I,
+                ref: L,
                 autoFocus: !0
             })
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(t, e) {
-            var n = Object.keys(t);
-            if (Object.getOwnPropertySymbols) {
-                var l = Object.getOwnPropertySymbols(t);
-                n.push.apply(n, l)
-            }
-            return n
-        })(Object(n)).forEach(function(t) {
-            Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
-        }), e))
-    })) : (0, l.jsx)(u.Modal, {
-        transitionState: k,
-        onClose: X,
-        title: R.intl.formatToPlainString(R.t.wumolR, {
-            age: null != Q ? Q : ""
+        })
+    })) : (0, l.jsx)(c.Modal, {
+        transitionState: i,
+        onClose: Z,
+        title: k.intl.formatToPlainString(k.t.wumolR, {
+            age: K ?? ""
         }),
-        subtitle: R.intl.formatToPlainString(R.t.n3QjDE, {
-            helpURL: b.A.getArticleURL(O.MVz.AGE_GATE)
+        subtitle: k.intl.formatToPlainString(k.t.n3QjDE, {
+            helpURL: y.A.getArticleURL(N.MVz.AGE_GATE)
         }),
         actions: [{
-            text: R.intl.string(R.t.cfYCrb),
-            onClick: () => L(0),
+            text: k.intl.string(k.t.cfYCrb),
+            onClick: () => $(0),
             variant: "secondary"
         }, {
-            text: R.intl.string(R.t["6tahin"]),
-            onClick: te
+            text: k.intl.string(k.t["6tahin"]),
+            onClick: J
         }]
     })
 }

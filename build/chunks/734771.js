@@ -2,41 +2,41 @@
 n.d(t, {
     A: () => s
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(763754),
-    l = n(888675),
-    a = n(985018);
+var l = n(763754),
+    a = n(888675),
+    r = n(985018);
 
 function s(e) {
     let t, {
             message: s,
             usernameHook: o,
             otherUser: c,
-            otherUsernameHook: u,
-            compact: d,
-            channel: p
+            otherUsernameHook: d,
+            compact: u,
+            channel: m
         } = e,
-        m = (0, i.Ay)(s),
-        f = m.nick,
-        g = o(m),
-        _ = (0, i.d8)(c, p);
-    if (null != _ && null != u) {
-        let e = u(_);
-        t = a.intl.format(a.t.L2FyVq, {
-            username: f,
-            usernameHook: g,
-            otherUsername: _.nick,
+        _ = (0, l.Ay)(s),
+        A = _.nick,
+        h = o(_),
+        f = (0, l.d8)(c, m);
+    if (null != f && null != d) {
+        let e = d(f);
+        t = r.intl.format(r.t.L2FyVq, {
+            username: A,
+            usernameHook: h,
+            otherUsername: f.nick,
             otherUsernameHook: e
         })
-    } else t = a.intl.format(a.t["5v2xa8"], {
-        username: f,
-        usernameHook: g
+    } else t = r.intl.format(r.t["5v2xa8"], {
+        username: A,
+        usernameHook: h
     });
-    return (0, r.jsx)(l.A, {
+    return (0, i.jsx)(a.A, {
         icon: n(884797),
         timestamp: s.timestamp,
-        compact: d,
+        compact: u,
         children: t
     })
 }

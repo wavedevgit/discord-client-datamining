@@ -1,9 +1,9 @@
 /** chunk id: 600403, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => o
-}), n(457529), n(142703);
-var r = n(954571),
-    i = n(636401),
+}), n(142703);
+var i = n(954571),
+    r = n(636401),
     l = n(722306),
     a = n(105130),
     s = n(652215);
@@ -14,35 +14,35 @@ let o = {
                 server: t,
                 socket: n,
                 evt: o,
-                args: c
-            } = e, u = t.events[o];
-            if (null == u) throw new i.A({
+                args: d
+            } = e, c = t.events[o];
+            if (null == c) throw new r.A({
                 errorCode: s.Lw6.INVALID_EVENT
-            }, "Invalid event: ".concat(o));
-            if (!(0, l.A)(n.authorization.scopes, u.scope)) throw new i.A({
+            }, `Invalid event: ${o}`);
+            if (!(0, l.A)(n.authorization.scopes, c.scope)) throw new r.A({
                 errorCode: s.Lw6.INVALID_PERMISSIONS
             }, "Not authenticated or invalid scope");
-            if (r.default.track(s.HAw.RPC_SUBSCRIPTION_REQUESTED, {
+            if (i.default.track(s.HAw.RPC_SUBSCRIPTION_REQUESTED, {
                     event: o,
-                    scope: "object" == typeof u.scope ? JSON.stringify(u.scope) : u.scope,
+                    scope: "object" == typeof c.scope ? JSON.stringify(c.scope) : c.scope,
                     application_id: n.application.id,
                     socket_scope: n.authorization.scopes.toString()
-                }), null != u.validation) {
+                }), null != c.validation) {
                 let e = await t.getJoi();
-                if (null != e.validate(c, u.validation(e), {
+                if (null != e.validate(d, c.validation(e), {
                         convert: !1
-                    }).error) throw new i.A({
+                    }).error) throw new r.A({
                     errorCode: s.Lw6.INVALID_PAYLOAD
                 }, "Invalid subscription parameters provided")
             }
-            let d = u.handler({
-                    args: c,
+            let u = c.handler({
+                    args: d,
                     socket: n
                 }),
-                p = (0, a.M)(n, o, c);
+                A = (0, a.M)(n, o, d);
             return new Promise(e => {
                 setImmediate(() => {
-                    t.addSubscription(n, o, c, d), null != p && t.dispatchToSubscriptions(o, e => e.socket.id === n.id, p)
+                    t.addSubscription(n, o, d, u), null != A && t.dispatchToSubscriptions(o, e => e.socket.id === n.id, A)
                 }), e({
                     evt: o
                 })
@@ -54,14 +54,14 @@ let o = {
             let {
                 server: t,
                 socket: n,
-                evt: r,
+                evt: i,
                 args: l
             } = e;
-            if (null == t.events[r]) throw new i.A({
+            if (null == t.events[i]) throw new r.A({
                 errorCode: s.Lw6.INVALID_EVENT
-            }, "Invalid event: ".concat(r));
-            return t.removeSubscription(n, r, l), {
-                evt: r
+            }, `Invalid event: ${i}`);
+            return t.removeSubscription(n, i, l), {
+                evt: i
             }
         }
     }

@@ -1,69 +1,42 @@
 /** chunk id: 779881, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => d
+    A: () => u
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var l = n(442433),
-    i = n(514179),
-    s = n(976860),
+var s = n(442433),
+    l = n(514179),
+    r = n(976860),
     a = n(652793),
     o = n(652215),
     c = n(746080),
-    u = n(985018);
+    d = n(985018);
 
-function d(e) {
+function u(e) {
     let {
         guild: t,
-        selected: d
+        selected: u
     } = e;
-    return (0, r.jsx)(a.G, {
-        id: "subscriptions-".concat(t.id),
-        renderIcon: e => (0, r.jsx)(i.A, {
+    return (0, i.jsx)(a.G, {
+        id: `subscriptions-${t.id}`,
+        renderIcon: e => (0, i.jsx)(l.A, {
             className: e
         }),
-        text: u.intl.string(u.t["KzCF/6"]),
-        selected: d,
+        text: d.intl.string(d.t["KzCF/6"]),
+        selected: u,
         onClick: () => {
-            (0, s.pX)(o.BVt.CHANNEL(t.id, c.VV.ROLE_SUBSCRIPTIONS))
+            (0, r.pX)(o.BVt.CHANNEL(t.id, c.VV.ROLE_SUBSCRIPTIONS))
         },
         onContextMenu: e => {
-            null != t && (0, l.L3)(e, async () => {
+            null != t && (0, s.L3)(e, async () => {
                 let {
                     default: e
                 } = await n.e("98126").then(n.bind(n, 650730));
-                return n => {
-                    var l, i;
-                    return (0, r.jsx)(e, (l = function(e) {
-                        for (var t = 1; t < arguments.length; t++) {
-                            var n = null != arguments[t] ? arguments[t] : {},
-                                r = Object.keys(n);
-                            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                                return Object.getOwnPropertyDescriptor(n, e).enumerable
-                            }))), r.forEach(function(t) {
-                                var r;
-                                r = n[t], t in e ? Object.defineProperty(e, t, {
-                                    value: r,
-                                    enumerable: !0,
-                                    configurable: !0,
-                                    writable: !0
-                                }) : e[t] = r
-                            })
-                        }
-                        return e
-                    }({}, n), i = i = {
-                        guild: t
-                    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
-                        var n = Object.keys(e);
-                        if (Object.getOwnPropertySymbols) {
-                            var r = Object.getOwnPropertySymbols(e);
-                            n.push.apply(n, r)
-                        }
-                        return n
-                    })(Object(i)).forEach(function(e) {
-                        Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(i, e))
-                    }), l))
-                }
+                return n => (0, i.jsx)(e, {
+                    ...n,
+                    guild: t
+                })
             })
         }
     })

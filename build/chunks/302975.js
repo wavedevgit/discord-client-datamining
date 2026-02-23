@@ -1,41 +1,41 @@
 /** chunk id: 302975, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => u
+    A: () => d
 });
-var l = n(627968);
+var i = n(627968);
 n(64700);
-var r = n(397927),
-    i = n(308528),
+var l = n(397927),
+    s = n(308528),
     a = n(928658),
-    s = n(623075),
+    r = n(623075),
     o = n(977347),
     c = n(985018);
 
-function u(e) {
+function d(e) {
     let {
         otherUserId: t,
         channel: n,
-        buttonText: u,
-        buttonSize: d = "sm",
+        buttonText: d,
+        buttonSize: u = "sm",
         navigateAwayOnReportSuccess: h = !0,
-        onReportClick: p,
-        onReportSubmit: f,
-        onMouseEnter: m,
-        onMouseLeave: g
-    } = e, A = (0, s.V)(t), b = (0, o.D)(n.id, t);
-    if (!A || null == b) return null;
-    let _ = () => {
-        null == f || f(), i.A.closePrivateChannel(n.id, h)
+        onReportClick: m,
+        onReportSubmit: A,
+        onMouseEnter: g,
+        onMouseLeave: p
+    } = e, f = (0, r.V)(t), _ = (0, o.D)(n.id, t);
+    if (!f || null == _) return null;
+    let E = () => {
+        A?.(), s.A.closePrivateChannel(n.id, h)
     };
-    return (0, l.jsx)(r.Button, {
-        size: d,
+    return (0, i.jsx)(l.Button, {
+        size: u,
         variant: "critical-primary",
-        disabled: null == b,
+        disabled: null == _,
         onClick: () => {
-            null == p || p(), (0, a.b8)(b, _)
+            m?.(), (0, a.b8)(_, E)
         },
-        onMouseEnter: m,
-        onMouseLeave: g,
-        text: null != u ? u : c.intl.string(c.t.HHZmDn)
+        onMouseEnter: g,
+        onMouseLeave: p,
+        text: null != d ? d : c.intl.string(c.t.HHZmDn)
     })
 }

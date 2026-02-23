@@ -1,68 +1,67 @@
 /** chunk id: 452910, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
-}), n(228524);
-var r = n(627968);
+    A: () => x
+});
+var i = n(627968);
 n(64700);
-var i = n(503698),
-    l = n.n(i),
-    s = n(421380),
-    a = n(927578),
+var s = n(503698),
+    a = n.n(s),
+    r = n(421380),
+    l = n(927578),
     o = n(545334),
     c = n(422936),
     d = n(234419),
     u = n(396375),
     _ = n(543233),
-    p = n(76707),
-    m = n(788868),
+    m = n(76707),
+    A = n(788868),
     g = n(985018),
-    A = n(296388);
-let f = e => {
-    var t;
+    h = n(296388);
+let x = e => {
     let {
-        title: n,
-        titleClassName: i,
-        buttonClassName: f,
-        subtitle: b,
-        description: h,
+        title: t,
+        titleClassName: n,
+        buttonClassName: s,
+        subtitle: x,
+        description: p,
         descriptionCta: E,
-        isPremiumGetCta: O,
-        onCtaClick: x,
-        cardVariant: C
-    } = e, S = (0, d.V)(), T = null == S ? void 0 : S.subscription_trial, I = (0, c.O)(), N = (0, a.FY)({
-        intervalType: null == T ? void 0 : T.interval,
-        intervalCount: null == T ? void 0 : T.interval_count
-    }), y = (0, o.G)({
+        isPremiumGetCta: C,
+        onCtaClick: T,
+        cardVariant: S
+    } = e, I = (0, d.V)(), f = I?.subscription_trial, N = (0, c.O)(), b = (0, l.FY)({
+        intervalType: f?.interval,
+        intervalCount: f?.interval_count
+    }), j = (0, o.G)({
         defaultResponse: g.intl.string(g.t["8x0jKT"]),
         onNonTier2Subscriber: g.intl.string(g.t.IJI7yk),
-        onTier2TrialOffer: N,
-        onTier0TrialOffer: N,
+        onTier2TrialOffer: b,
+        onTier0TrialOffer: b,
         onDiscountOffer: g.intl.formatToPlainString(g.t.bkQ4bH, {
-            percent: null == I ? void 0 : I.discount.amount
+            percent: N?.discount.amount
         })
-    }), j = (0, _.Q)(C);
-    return (0, r.jsxs)("div", {
-        className: l()(A.L_, null == j || null == (t = j.overlayContainer) ? void 0 : t.className),
-        children: [(0, r.jsx)(p.A, {
-            title: n,
-            cardVariantStyleInfo: j,
-            titleClassName: i,
-            subtitle: b,
-            description: h,
+    }), v = (0, _.Q)(S);
+    return (0, i.jsxs)("div", {
+        className: a()(h.L_, v?.overlayContainer?.className),
+        children: [(0, i.jsx)(m.A, {
+            title: t,
+            cardVariantStyleInfo: v,
+            titleClassName: n,
+            subtitle: x,
+            description: p,
             isOverlay: !0
-        }), O && (0, r.jsx)(u.A, {
-            className: f,
-            look: s.$n.Looks.BLANK,
-            color: s.$n.Colors.CUSTOM,
-            subscriptionTier: m.pe.TIER_2,
+        }), C && (0, i.jsx)(u.A, {
+            className: s,
+            look: r.$n.Looks.BLANK,
+            color: r.$n.Colors.CUSTOM,
+            subscriptionTier: A.pe.TIER_2,
             textOptions: {
-                textOverride: y
+                textOverride: j
             },
             showGradient: !0
-        }), null != E && null != x && (0, r.jsx)(s.$n, {
+        }), null != E && null != T && (0, i.jsx)(r.$n, {
             "data-migration-pending": !0,
-            className: f,
-            onClick: x,
+            className: s,
+            onClick: T,
             children: E
         })]
     })

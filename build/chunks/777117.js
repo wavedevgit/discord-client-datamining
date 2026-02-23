@@ -1,62 +1,62 @@
 /** chunk id: 777117, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => h
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var l = n(311907),
-    i = n(397927),
-    s = n(252452),
-    a = n(628965),
+var s = n(311907),
+    a = n(397927),
+    r = n(252452),
+    l = n(628965),
     o = n(513664),
     c = n(768908),
-    u = n(790076),
-    d = n(523418),
-    p = n(857266),
-    h = n(652215),
-    g = n(985018),
-    f = n(461225);
+    d = n(790076),
+    u = n(523418),
+    _ = n(857266),
+    m = n(652215),
+    A = n(985018),
+    g = n(461225);
 
-function m() {
-    let e = (0, d.b)(),
-        t = (0, l.bG)([a.A], () => a.A.getSubsection()),
+function h() {
+    let e = (0, u.b)(),
+        t = (0, s.bG)([l.A], () => l.A.getSubsection()),
         n = null != t && e.some(e => e.id === t) ? t : e[0].id;
-    return (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(i.Heading, {
-            className: f.R_,
+    return (0, i.jsxs)(i.Fragment, {
+        children: [(0, i.jsx)(a.Heading, {
+            className: g.R_,
             variant: "heading-xl/semibold",
-            children: g.intl.string(g.t.URyqtP)
-        }), (0, r.jsx)(i.VQ0, {
-            className: f.$H,
+            children: A.intl.string(A.t.URyqtP)
+        }), (0, i.jsx)(a.VQ0, {
+            className: g.$H,
             selectedItem: n,
             onItemSelect: e => {
-                s.A.setSection(h.nc_.GAMES, e)
+                r.A.setSection(m.nc_.GAMES, e)
             },
             orientation: "horizontal",
             type: "top",
             look: "brand",
-            children: e.map(e => (0, r.jsxs)(i.VQ0.Item, {
-                className: f.Mf,
+            children: e.map(e => (0, i.jsxs)(a.VQ0.Item, {
+                className: g.Mf,
                 id: e.id,
                 "aria-label": e.title,
-                children: [(0, r.jsx)(e.icon, {
-                    className: f.Ll,
+                children: [(0, i.jsx)(e.icon, {
+                    className: g.Ll,
                     color: "currentColor"
-                }), (0, r.jsx)("div", {
-                    className: f.cq,
+                }), (0, i.jsx)("div", {
+                    className: g.cq,
                     children: e.title
                 })]
             }, e.id))
         }), (() => {
             switch (n) {
-                case p.J.OVERLAY:
-                    return (0, r.jsx)(u.Ay, {});
-                case p.J.ACTIVITY_PRIVACY:
-                    return (0, r.jsx)(o.Ay, {});
-                case p.J.MY_GAMES:
+                case _.J.OVERLAY:
+                    return (0, i.jsx)(d.Ay, {});
+                case _.J.ACTIVITY_PRIVACY:
+                    return (0, i.jsx)(o.Ay, {});
+                case _.J.MY_GAMES:
                 default:
-                    return (0, r.jsx)(c.Ay, {
-                        className: f.rf,
+                    return (0, i.jsx)(c.Ay, {
+                        className: g.rf,
                         showHeader: !1
                     })
             }

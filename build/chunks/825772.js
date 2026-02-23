@@ -1,21 +1,18 @@
-/** chunk id: 825772, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => a
+/** chunk id: 825772, original params: e,t,s (module,exports,require) **/
+s.d(t, {
+    A: () => i
 });
-var r = n(315069),
-    i = n(427157);
-
-function l(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-class a extends r.A {
+var a = s(315069),
+    r = s(427157);
+class i extends a.A {
+    user;
+    member_type;
+    accepted_at;
     static createFromServer(e) {
-        return new a(e)
+        return new i(e)
+    }
+    constructor(e) {
+        super(), this.user = new r.A(e.user), this.member_type = e.member_type, this.accepted_at = e.accepted_at
     }
     isPrimary() {
         return 1 === this.member_type
@@ -25,8 +22,5 @@ class a extends r.A {
     }
     isInvited() {
         return 2 === this.member_type && null == this.accepted_at
-    }
-    constructor(e) {
-        super(), l(this, "user", void 0), l(this, "member_type", void 0), l(this, "accepted_at", void 0), this.user = new i.A(e.user), this.member_type = e.member_type, this.accepted_at = e.accepted_at
     }
 }

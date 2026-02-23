@@ -1,24 +1,24 @@
-/** chunk id: 391442, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => i
+/** chunk id: 391442, original params: e,t,s (module,exports,require) **/
+s.d(t, {
+    A: () => l
 });
-var r = n(627968);
-n(64700);
-var l = n(397927),
-    a = n(520320);
+var a = s(627968);
+s(64700);
+var n = s(397927),
+    i = s(520320);
 
-function i(e) {
+function l(e) {
     let {
         children: t,
-        label: n
+        label: s
     } = e;
-    return (0, r.jsxs)("li", {
-        children: [(0, r.jsx)(l.Text, {
+    return (0, a.jsxs)("li", {
+        children: [(0, a.jsx)(n.Text, {
             variant: "text-xs/semibold",
             color: "text-default",
-            className: a.a,
-            children: n
-        }), (0, r.jsx)(l.hKd, {
+            className: i.a,
+            children: s
+        }), (0, a.jsx)(n.hKd, {
             size: 12
         }), t]
     })

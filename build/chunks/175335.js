@@ -1,138 +1,122 @@
 /** chunk id: 175335, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => C
-}), n(896048), n(228524);
-var r = n(627968),
-    i = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    A: () => S
+});
+var i = n(627968),
+    l = n(64700),
+    r = n(503698),
+    a = n.n(r),
     s = n(110259),
     o = n(311907),
-    c = n(827734),
-    u = n(732955),
-    d = n(397927),
-    p = n(58149),
+    d = n(827734),
+    c = n(732955),
+    u = n(397927),
+    _ = n(58149),
     m = n(139286),
-    f = n(263063),
-    g = n(250627),
-    _ = n(22007),
-    h = n(813516),
-    b = n(71393),
-    y = n(954571),
-    A = n(722888),
-    v = n(43136),
-    O = n(575926),
-    x = n(652215),
-    E = n(985018),
-    j = n(266847);
+    h = n(263063),
+    p = n(250627),
+    g = n(22007),
+    A = n(813516),
+    x = n(71393),
+    f = n(954571),
+    C = n(722888),
+    E = n(43136),
+    I = n(575926),
+    b = n(652215),
+    T = n(985018),
+    v = n(266847);
 
-function C(e) {
-    var t;
+function S(e) {
     let {
-        guildId: n
-    } = e, l = (0, o.bG)([b.A], () => b.A.getGuild(n)), {
-        loading: C,
-        subscriptionsSettings: I
-    } = (0, A.G)(n), {
-        listingsLoaded: S
-    } = (0, g.bb)(n), T = (0, g.fZ)(n, {
+        guildId: t
+    } = e, n = (0, o.bG)([x.A], () => x.A.getGuild(t)), {
+        loading: r,
+        subscriptionsSettings: S
+    } = (0, C.G)(t), {
+        listingsLoaded: y
+    } = (0, p.bb)(t), N = (0, p.fZ)(t, {
         publishedOnly: !0
-    }), N = i.useCallback(async () => {
-        y.default.track(x.HAw.GUILD_SHOP_EMBED_CLICKED, function(e) {
-            for (var t = 1; t < arguments.length; t++) {
-                var n = null != arguments[t] ? arguments[t] : {},
-                    r = Object.keys(n);
-                "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                    return Object.getOwnPropertyDescriptor(n, e).enumerable
-                }))), r.forEach(function(t) {
-                    var r;
-                    r = n[t], t in e ? Object.defineProperty(e, t, {
-                        value: r,
-                        enumerable: !0,
-                        configurable: !0,
-                        writable: !0
-                    }) : e[t] = r
-                })
-            }
-            return e
-        }({}, (0, p.H$)(n))), await (0, _.A)(x.BVt.SERVER_SHOP(n))
-    }, [n]);
+    }), j = l.useCallback(async () => {
+        f.default.track(b.HAw.GUILD_SHOP_EMBED_CLICKED, {
+            ...(0, _.H$)(t)
+        }), await (0, g.A)(b.BVt.SERVER_SHOP(t))
+    }, [t]);
     (0, m.A)({
         type: s.ImpressionTypes.VIEW,
         name: s.ImpressionNames.GUILD_SHOP_EMBED
     }, {
-        disableTrack: null == l
+        disableTrack: null == n
     });
-    let P = T.length > 0 ? new Date(Math.min(...T.map(e => Date.parse(e.published_at)))) : void 0;
-    return C || !S ? (0, r.jsx)("div", {
-        className: a()(j.lm, j.dc),
-        children: (0, r.jsx)(d.y$y, {})
-    }) : null == l || null == I ? null : (0, r.jsxs)("div", {
-        className: j.lm,
-        children: [(0, r.jsx)(v.C, {
-            coverImageAsset: null != (t = I.cover_image_asset) ? t : null
-        }), (0, r.jsx)(d.hKd, {
+    let L = N.length > 0 ? new Date(Math.min(...N.map(e => Date.parse(e.published_at)))) : void 0;
+    return r || !y ? (0, i.jsx)("div", {
+        className: a()(v.lm, v.dc),
+        children: (0, i.jsx)(u.y$y, {})
+    }) : null == n || null == S ? null : (0, i.jsxs)("div", {
+        className: v.lm,
+        children: [(0, i.jsx)(E.C, {
+            coverImageAsset: S.cover_image_asset ?? null
+        }), (0, i.jsx)(u.hKd, {
             size: 16
-        }), (0, r.jsxs)("div", {
-            className: j.qs,
-            children: [(0, r.jsx)(O.h, {
+        }), (0, i.jsxs)("div", {
+            className: v.qs,
+            children: [(0, i.jsx)(I.h, {
                 height: "16px",
                 width: "16px",
-                color: c.A.colors.INTERACTIVE_TEXT_DEFAULT.css
-            }), (0, r.jsx)(d.Heading, {
+                color: d.A.colors.INTERACTIVE_TEXT_DEFAULT.css
+            }), (0, i.jsx)(u.Heading, {
                 variant: "heading-sm/semibold",
                 color: "interactive-text-default",
-                className: j.Nl,
-                children: E.intl.string(E.t.al5EXL)
+                className: v.Nl,
+                children: T.intl.string(T.t.al5EXL)
             })]
-        }), (0, r.jsx)(d.hKd, {
+        }), (0, i.jsx)(u.hKd, {
             size: 16
-        }), (0, r.jsx)(d.Heading, {
+        }), (0, i.jsx)(u.Heading, {
             variant: "heading-md/semibold",
             color: "text-default",
-            children: E.intl.format(E.t.NZeik9, {
-                guildName: l.name
+            children: T.intl.format(T.t.NZeik9, {
+                guildName: n.name
             })
-        }), (0, r.jsx)(d.hKd, {
+        }), (0, i.jsx)(u.hKd, {
             size: 4
-        }), (0, r.jsx)(d.Text, {
+        }), (0, i.jsx)(u.Text, {
             variant: "text-sm/normal",
             color: "text-muted",
             lineClamp: 2,
-            children: I.description
-        }), (0, r.jsx)(d.hKd, {
+            children: S.description
+        }), (0, i.jsx)(u.hKd, {
             size: 16
-        }), (0, r.jsx)(h.A, {}), (0, r.jsx)(d.hKd, {
+        }), (0, i.jsx)(A.A, {}), (0, i.jsx)(u.hKd, {
             size: 16
-        }), (0, r.jsxs)("div", {
-            className: j.kS,
-            children: [(0, r.jsx)(f.A, {
-                guild: l
-            }), (0, r.jsxs)("ul", {
-                className: j.q6,
-                children: [(0, r.jsx)("li", {
-                    children: (0, r.jsx)(d.Text, {
+        }), (0, i.jsxs)("div", {
+            className: v.kS,
+            children: [(0, i.jsx)(h.A, {
+                guild: n
+            }), (0, i.jsxs)("ul", {
+                className: v.q6,
+                children: [(0, i.jsx)("li", {
+                    children: (0, i.jsx)(u.Text, {
                         variant: "text-sm/normal",
                         color: "text-muted",
-                        children: E.intl.format(E.t.tKZNlb, {
-                            listingCount: T.length
+                        children: T.intl.format(T.t.tKZNlb, {
+                            listingCount: N.length
                         })
                     })
-                }), null != P && (0, r.jsx)("li", {
-                    children: (0, r.jsx)(d.Text, {
+                }), null != L && (0, i.jsx)("li", {
+                    children: (0, i.jsx)(u.Text, {
                         variant: "text-sm/normal",
                         color: "text-muted",
-                        children: E.intl.format(E.t["kXr8+b"], {
-                            createdYear: P.getFullYear()
+                        children: T.intl.format(T.t["kXr8+b"], {
+                            createdYear: L.getFullYear()
                         })
                     })
                 })]
-            }), (0, r.jsx)("div", {
-                className: j.$h,
-                children: (0, r.jsx)(u.$nd, {
-                    onClick: N,
-                    icon: O.A,
-                    text: E.intl.string(E.t.jXx1CC)
+            }), (0, i.jsx)("div", {
+                className: v.$h,
+                children: (0, i.jsx)(c.$nd, {
+                    onClick: j,
+                    icon: I.A,
+                    text: T.intl.string(T.t.jXx1CC)
                 })
             })]
         })]

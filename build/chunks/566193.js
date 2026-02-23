@@ -1,75 +1,71 @@
-/** chunk id: 566193, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    f: () => c
-}), n(896048);
-var r = n(627968),
-    i = n(64700),
-    a = n(158954),
-    o = n(311907),
-    s = n(397927),
-    l = n(287809);
-let c = {
+/** chunk id: 566193, original params: e,l,a (module,exports,require) **/
+a.d(l, {
+    f: () => d
+});
+var t = a(627968),
+    o = a(64700),
+    n = a(158954),
+    i = a(311907),
+    s = a(397927),
+    r = a(287809);
+let d = {
     title: "TagGroup",
     stories: [{
         name: "TagGroup",
         id: "tag-group",
         component: function(e) {
             let {
-                selectionMode: t,
-                removeable: n,
-                layout: c
-            } = e, u = (0, o.bG)([l.default], () => l.default.getCurrentUser()), d = i.useMemo(() => {
-                var e;
-                return [{
-                    id: "strength",
-                    label: "Strength",
-                    icon: s.rYc
-                }, {
-                    id: "dexterity",
-                    label: "Dexterity",
-                    icon: {
-                        type: "role",
-                        color: "#ff44aa"
-                    }
-                }, {
-                    id: "wisdom",
-                    label: "Wisdom",
-                    icon: {
-                        type: "avatar",
-                        src: null != (e = null == u ? void 0 : u.getAvatarURL(void 0, 16)) ? e : ""
-                    }
-                }, {
-                    id: "charisma",
-                    label: "Charisma"
-                }]
-            }, [u]), [f, p] = i.useState(d), _ = i.useCallback(e => {
-                p(f.filter(t => !e.has(t.id)))
-            }, [f]), h = i.useCallback(() => {
-                p(d)
-            }, [d]), m = (0, r.jsx)(a.CR_, {
+                selectionMode: l,
+                removeable: a,
+                layout: d
+            } = e, u = (0, i.bG)([r.default], () => r.default.getCurrentUser()), c = o.useMemo(() => [{
+                id: "strength",
+                label: "Strength",
+                icon: s.rYc
+            }, {
+                id: "dexterity",
+                label: "Dexterity",
+                icon: {
+                    type: "role",
+                    color: "#ff44aa"
+                }
+            }, {
+                id: "wisdom",
+                label: "Wisdom",
+                icon: {
+                    type: "avatar",
+                    src: u?.getAvatarURL(void 0, 16) ?? ""
+                }
+            }, {
+                id: "charisma",
+                label: "Charisma"
+            }], [u]), [b, p] = o.useState(c), m = o.useCallback(e => {
+                p(b.filter(l => !e.has(l.id)))
+            }, [b]), x = o.useCallback(() => {
+                p(c)
+            }, [c]), v = (0, t.jsx)(n.CR_, {
                 label: "Categories",
-                selectionMode: t,
-                layout: c,
-                items: f,
-                onRemove: n ? _ : void 0
-            }), g = n && (0, r.jsx)(s.Button, {
-                disabled: f.length === d.length,
+                selectionMode: l,
+                layout: d,
+                items: b,
+                onRemove: a ? m : void 0
+            }), h = a && (0, t.jsx)(s.Button, {
+                disabled: b.length === c.length,
                 text: "Reset",
-                onClick: h
+                onClick: x
             });
-            return "inline" === c ? (0, r.jsxs)(s.BJc, {
+            return "inline" === d ? (0, t.jsxs)(s.BJc, {
                 gap: 24,
-                children: [(0, r.jsx)("div", {
+                children: [(0, t.jsx)("div", {
                     style: {
                         display: "flex",
                         gap: 4
                     },
-                    children: m
-                }), g]
-            }) : (0, r.jsxs)(s.BJc, {
+                    children: v
+                }), h]
+            }) : (0, t.jsxs)(s.BJc, {
                 gap: 24,
-                children: [m, g]
+                children: [v, h]
             })
         },
         controls: {

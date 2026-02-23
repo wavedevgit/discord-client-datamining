@@ -1,85 +1,58 @@
-/** chunk id: 480773, original params: e,t,n (module,exports,require) **/
+/** chunk id: 480773, original params: e,t,l (module,exports,require) **/
 "use strict";
-n.d(t, {
-    u: () => p
+l.d(t, {
+    u: () => d
 });
-var r = n(627968);
-n(64700);
-var i = n(397927),
-    a = n(261225),
-    o = n(673277),
-    s = n(684109),
-    l = n(18769);
-
-function c(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-
-function u(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            c(e, t, n[t])
-        })
-    }
-    return e
-}
-
-function d(e, t) {
-    if (null == e) return {};
-    var n, r, i, a = {};
-    if ("u" > typeof Reflect && Reflect.ownKeys) {
-        for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
-        return a
-    }
-    if (a = f(e, t), Object.getOwnPropertySymbols)
-        for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
-    return a
-}
-
-function f(e, t) {
-    if (null == e) return {};
-    var n, r, i = {},
-        a = Object.getOwnPropertyNames(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
-    return i
-}
-let p = {
+var r = l(627968);
+l(64700);
+var a = l(397927),
+    n = l(261225),
+    i = l(673277),
+    s = l(458306),
+    o = l(18769);
+let d = {
     name: "FeaturedCollection",
     id: "featured-collection",
     component: e => {
         let {
-            columns: t
-        } = e, n = d(e, ["columns"]);
+            columns: t,
+            ...l
+        } = e;
         return (0, r.jsxs)("div", {
-            children: [(0, r.jsx)(i.Text, {
+            children: [(0, r.jsx)(a.Text, {
                 variant: "text-lg/semibold",
-                children: "Featured Collection will take up the full width of the parent, so it is best suited for Stack or Grid parents"
-            }), (0, r.jsx)(o.A, {
-                children: (0, r.jsx)(l.A, u({}, n))
-            }), (0, r.jsxs)(o.A, {
-                children: [(0, r.jsxs)(i.Text, {
+                children: "Featured Collection will take up the full width of the parent, so it is best suited for CmsStack or Grid parents"
+            }), (0, r.jsx)(i.A, {
+                children: (0, r.jsx)(o.A, {
+                    ...l
+                })
+            }), (0, r.jsxs)(i.A, {
+                children: [(0, r.jsxs)(a.Text, {
                     variant: "text-lg/semibold",
                     children: ["Grid (", t, "):"]
-                }), (0, r.jsxs)(a.A, {
+                }), (0, r.jsxs)(n.A, {
                     columns: t,
-                    children: [(0, r.jsx)(l.A, u({}, n)), (0, r.jsx)(l.A, u({}, n))]
+                    children: [(0, r.jsx)(o.A, {
+                        ...l
+                    }), (0, r.jsx)(o.A, {
+                        ...l
+                    })]
                 })]
-            }), (0, r.jsxs)(o.A, {
-                children: [(0, r.jsx)(i.Text, {
+            }), (0, r.jsxs)(i.A, {
+                children: [(0, r.jsx)(a.Text, {
                     variant: "text-lg/semibold",
                     children: "Stack:"
-                }), (0, r.jsxs)(s.A, {
+                }), (0, r.jsxs)(s.Kp, {
                     direction: "horizontal",
-                    children: [(0, r.jsx)(l.A, u({}, n)), (0, r.jsx)(l.A, u({}, n)), (0, r.jsx)(l.A, u({}, n)), (0, r.jsx)(l.A, u({}, n))]
+                    children: [(0, r.jsx)(o.A, {
+                        ...l
+                    }), (0, r.jsx)(o.A, {
+                        ...l
+                    }), (0, r.jsx)(o.A, {
+                        ...l
+                    }), (0, r.jsx)(o.A, {
+                        ...l
+                    })]
                 })]
             })]
         })

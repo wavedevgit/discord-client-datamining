@@ -1,32 +1,32 @@
 /** chunk id: 715999, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    q: () => T
+    q: () => A
 });
 var n = i(627968),
     l = i(64700),
     s = i(732955),
     r = i(156186),
-    u = i(602450),
-    a = i(557571),
+    a = i(602450),
+    u = i(557571),
     o = i(985018),
     d = i(895431);
-let T = () => {
+let A = () => {
     let {
         isWeb: t,
         installationStatus: e,
         connectionStatus: i,
-        perkAvailableToUser: T
-    } = (0, a.lV)(), A = (0, l.useMemo)(() => {
+        perkAvailableToUser: A
+    } = (0, u.lV)(), T = (0, l.useMemo)(() => {
         switch (i) {
-            case u.l7.CONNECTED:
+            case a.l7.CONNECTED:
                 return o.intl.format(d.default.EVQZqy, {
                     helpdeskArticle: r.V
                 });
-            case u.l7.DISCONNECTED:
+            case a.l7.DISCONNECTED:
                 return o.intl.format(d.default.zOCRv9, {
                     helpdeskArticle: r.V
                 });
-            case u.l7.ERROR:
+            case a.l7.ERROR:
                 return o.intl.format(d.default.e9MkUw, {
                     helpdeskArticle: r.V
                 });
@@ -39,43 +39,43 @@ let T = () => {
         if (t) return o.intl.format(d.default.z6v0w5, {
             helpdeskArticle: r.V
         });
-        if (!T) return o.intl.format(d.default.yL6mvx, {
+        if (!A) return o.intl.format(d.default.yL6mvx, {
             helpdeskArticle: r.V
         });
         switch (e) {
-            case u.Lk.ERROR:
+            case a.Lk.ERROR:
                 return o.intl.format(d.default.vjIpaK, {
                     helpdeskArticle: r.V
                 });
-            case u.Lk.INSTALLING_TIMEOUT:
+            case a.Lk.INSTALLING_TIMEOUT:
                 return o.intl.format(d.default.QWyvkt, {
                     helpdeskArticle: r.V
                 });
-            case u.Lk.INSTALLING:
+            case a.Lk.INSTALLING:
                 return o.intl.format(d.default.ZLrDvb, {
                     helpdeskArticle: r.V
                 });
-            case u.Lk.WAITING_FOR_TERMS:
-            case u.Lk.READY_FOR_LICENSE:
+            case a.Lk.WAITING_FOR_TERMS:
+            case a.Lk.READY_FOR_LICENSE:
                 return o.intl.format(d.default.rX9Z5g, {
                     helpdeskArticle: r.V
                 });
-            case u.Lk.EXISTING_INSTALLATION:
+            case a.Lk.EXISTING_INSTALLATION:
                 return o.intl.format(d.default.gOBU3K, {
                     helpdeskArticle: r.V
                 });
-            case u.Lk.ZERO_TRUST:
+            case a.Lk.ZERO_TRUST:
                 return o.intl.string(d.default.KVSUDs);
-            case u.Lk.INSTALLED:
-                return A;
-            case u.Lk.NOT_INSTALLED:
-            case u.Lk.UNKNOWN:
+            case a.Lk.INSTALLED:
+                return T;
+            case a.Lk.NOT_INSTALLED:
+            case a.Lk.UNKNOWN:
             default:
                 return o.intl.format(d.default.yL6mvx, {
                     helpdeskArticle: r.V
                 })
         }
-    }, [t, e, A, T]);
+    }, [t, e, T, A]);
     return (0, n.jsx)(s.EYj, {
         variant: "text-sm/normal",
         color: "text-subtle",

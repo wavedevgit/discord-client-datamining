@@ -1,47 +1,47 @@
-/** chunk id: 483968, original params: e,t,r (module,exports,require) **/
-r.d(t, {
-    A: () => p
+/** chunk id: 483968, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    A: () => m
 });
-var n = r(627968),
-    l = r(311907),
-    i = r(827734),
-    s = r(397927),
-    o = r(590180),
-    c = r(4227),
-    a = r(993408),
-    u = r(985018),
-    d = r(616198);
-let p = e => {
+var r = n(627968),
+    i = n(311907),
+    s = n(827734),
+    l = n(397927),
+    a = n(590180),
+    o = n(4227),
+    c = n(993408),
+    u = n(985018),
+    d = n(616198);
+let m = e => {
     let {
         skuId: t,
-        canUsePremiumCollectibles: r,
-        isPurchaseSection: p,
-        isPremiumSection: f
-    } = e, m = (0, a.aT)(t), g = (0, l.bG)([o.A, c.A], () => {
-        let e = o.A.getProduct(t),
-            r = c.A.getPurchase(t);
-        return null != r ? (0, a.gA)(r) : (0, a.G0)(e)
+        canUsePremiumCollectibles: n,
+        isPurchaseSection: m,
+        isPremiumSection: p
+    } = e, g = (0, c.aT)(t), x = (0, i.bG)([a.A, o.A], () => {
+        let e = a.A.getProduct(t),
+            n = o.A.getPurchase(t);
+        return null != n ? (0, c.gA)(n) : (0, c.G0)(e)
     });
-    return p || f && r ? null : m ? (0, n.jsx)(s.JIr, {
+    return m || p && n ? null : g ? (0, r.jsx)(l.JIr, {
         className: d.Ad,
-        text: (0, n.jsxs)("div", {
+        text: (0, r.jsxs)("div", {
             className: d.rm,
-            children: [(0, n.jsx)(s.XAi, {
+            children: [(0, r.jsx)(l.XAi, {
                 size: "xxs",
                 color: "currentColor"
             }), u.intl.string(u.t.y2b7CA)]
         })
-    }) : (0, n.jsx)(s.fkz, {
-        icon: g ? () => (0, n.jsx)(s.tvc, {
+    }) : (0, r.jsx)(l.fkz, {
+        icon: x ? () => (0, r.jsx)(l.tvc, {
             size: "custom",
             color: "currentColor",
             width: 14,
             height: 14
-        }) : () => (0, n.jsx)(s.XAi, {
+        }) : () => (0, r.jsx)(l.XAi, {
             size: "xxs",
             color: "currentColor"
         }),
-        color: i.A.colors.BACKGROUND_MOD_STRONG.css,
+        color: s.A.colors.BACKGROUND_MOD_STRONG.css,
         className: d.bG
     })
 }

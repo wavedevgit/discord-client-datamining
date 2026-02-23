@@ -1,4 +1,4 @@
-/** chunk id: 235545, original params: e,t,r (module,exports,require) **/
+/** chunk id: 235545, original params: e,a,s (module,exports,require) **/
 e.exports = {
     nK: "perkCard_a1e8da",
     r9: "disabled_a1e8da",
@@ -8,5 +8,7 @@ e.exports = {
     Rm: "toggleButton_a1e8da",
     xQ: "footerContainer_a1e8da",
     U7: "footerDetails_a1e8da",
-    II: "statusContainer_a1e8da"
+    II: "statusContainer_a1e8da",
+    R9: "perkCardImageContainer_a1e8da",
+    qS: "badge_a1e8da"
 }

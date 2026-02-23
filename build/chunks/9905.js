@@ -1,75 +1,75 @@
 /** chunk id: 9905, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    J: () => p
+    J: () => h
 });
-var r = n(627968),
-    l = n(64700),
-    i = n(311907),
-    s = n(573435),
+var i = n(627968),
+    s = n(64700),
+    l = n(311907),
+    r = n(573435),
     a = n(427157),
     o = n(71393),
     c = n(961291),
-    u = n(192849);
-let d = e => {
+    d = n(192849);
+let u = e => {
         let {
             mask: t
         } = e;
-        return null == t ? null : (0, r.jsx)("div", {
-            className: u.tK,
+        return null == t ? null : (0, i.jsx)("div", {
+            className: d.tK,
             style: {
                 backgroundColor: t.color.css
             },
-            children: (0, r.jsx)("img", {
-                className: u.QR,
+            children: (0, i.jsx)("img", {
+                className: d.QR,
                 alt: "",
                 src: t.icon
             })
         })
     },
-    p = l.memo(function(e) {
-        var t, n;
+    h = s.memo(function(e) {
         let {
-            item: l
-        } = e, p = null, h = !1, g = (0, i.bG)([o.A], () => o.A.getGuild(l.guild_id));
-        if (null != l.icon_name) p = (0, r.jsx)("img", {
+            item: t
+        } = e, n = null, s = !1, h = (0, l.bG)([o.A], () => o.A.getGuild(t.guild_id));
+        if (null != t.icon_name) n = (0, i.jsx)("img", {
             alt: "",
-            src: c.rr[(0, c.yI)(l.icon_name)]
+            src: c.rr[(0, c.yI)(t.icon_name)]
         });
-        else if (null != l.other_user) {
-            let e = l.other_user instanceof a.A ? l.other_user : new a.A(l.other_user),
-                n = null != (t = e.globalName) ? t : e.username;
-            p = (0, r.jsx)("img", {
-                alt: n,
-                className: u.Sl,
+        else if (null != t.other_user) {
+            let e = t.other_user instanceof a.A ? t.other_user : new a.A(t.other_user),
+                l = e.globalName ?? e.username;
+            n = (0, i.jsx)("img", {
+                alt: l,
+                className: d.Sl,
                 src: e.getAvatarURL(void 0, 40)
-            }), h = !0
-        } else p = null != l.icon_url ? (0, r.jsx)("img", {
-            alt: null != (n = null == g ? void 0 : g.name) ? n : "",
-            className: u.Sl,
-            src: l.icon_url
-        }) : (0, r.jsx)("img", {
+            }), s = !0
+        } else n = null != t.icon_url ? (0, i.jsx)("img", {
+            alt: h?.name ?? "",
+            className: d.Sl,
+            src: t.icon_url
+        }) : (0, i.jsx)("img", {
             alt: "",
-            src: c.rr[(0, c.sW)(l)]
+            src: c.rr[(0, c.sW)(t)]
         });
-        let f = (0, c.rS)(l.type);
-        return (0, r.jsxs)("div", {
-            className: u.kL,
-            children: [(0, r.jsx)(s.Ay, {
-                mask: null == f ? s.hW.AVATAR_DEFAULT : s.hW.AVATAR_STATUS_ROUND_16,
+        let A = (0, c.rS)(t.type);
+        return (0, i.jsxs)("div", {
+            className: d.kL,
+            children: [(0, i.jsx)(r.Ay, {
+                mask: null == A ? r.hW.AVATAR_DEFAULT : r.hW.AVATAR_STATUS_ROUND_16,
                 width: 40,
                 height: 40,
                 rightOverhang: 3,
                 bottomOverhang: 3,
-                className: u.dK,
-                children: (0, r.jsx)("div", {
-                    className: u.ZS,
-                    style: h ? void 0 : {
-                        backgroundColor: (0, c.Pm)(l)
+                className: d.dK,
+                children: (0, i.jsx)("div", {
+                    className: d.ZS,
+                    style: s ? void 0 : {
+                        backgroundColor: (0, c.Pm)(t)
                     },
-                    children: p
+                    children: n
                 })
-            }), (0, r.jsx)(d, {
-                mask: f
+            }), (0, i.jsx)(u, {
+                mask: A
             })]
         })
     })

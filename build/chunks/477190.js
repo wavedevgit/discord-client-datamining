@@ -1,72 +1,44 @@
-/** chunk id: 477190, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => s
+/** chunk id: 477190, original params: n,e,t (module,exports,require) **/
+t.d(e, {
+    A: () => c
 });
-var r = n(627968);
-n(64700);
-var i = n(311907),
-    l = n(397927),
-    a = n(576705),
-    c = n(652215),
-    o = n(985018);
+var i = t(627968);
+t(64700);
+var r = t(311907),
+    l = t(397927),
+    a = t(576705),
+    s = t(652215),
+    d = t(985018);
 
-function s(e, t) {
-    let s = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : e.type,
-        u = (0, i.bG)([a.A], () => a.A.can(c.xBc.MANAGE_CHANNELS, e), [e]);
-    if (__OVERLAY__ || !u) return null;
-    let d = () => {
+function c(n, e) {
+    let c = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : n.type,
+        A = (0, r.bG)([a.A], () => a.A.can(s.xBc.MANAGE_CHANNELS, n), [n]);
+    if (__OVERLAY__ || !A) return null;
+    let o = () => {
         (0, l.mMO)(async () => {
             let {
-                default: t
-            } = await Promise.all([n.e("72271"), n.e("64233"), n.e("29592")]).then(n.bind(n, 409200));
-            return n => {
-                var i, l;
-                return (0, r.jsx)(t, (i = function(e) {
-                    for (var t = 1; t < arguments.length; t++) {
-                        var n = null != arguments[t] ? arguments[t] : {},
-                            r = Object.keys(n);
-                        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                            return Object.getOwnPropertyDescriptor(n, e).enumerable
-                        }))), r.forEach(function(t) {
-                            var r;
-                            r = n[t], t in e ? Object.defineProperty(e, t, {
-                                value: r,
-                                enumerable: !0,
-                                configurable: !0,
-                                writable: !0
-                            }) : e[t] = r
-                        })
-                    }
-                    return e
-                }({}, n), l = l = {
-                    channelType: s,
-                    guildId: e.guild_id,
-                    categoryId: e.parent_id
-                }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
-                    var n = Object.keys(e);
-                    if (Object.getOwnPropertySymbols) {
-                        var r = Object.getOwnPropertySymbols(e);
-                        n.push.apply(n, r)
-                    }
-                    return n
-                })(Object(l)).forEach(function(e) {
-                    Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
-                }), i))
-            }
+                default: e
+            } = await Promise.all([t.e("93142"), t.e("64233"), t.e("56651")]).then(t.bind(t, 409200));
+            return t => (0, i.jsx)(e, {
+                ...t,
+                channelType: c,
+                guildId: n.guild_id,
+                categoryId: n.parent_id
+            })
         })
     };
-    switch (s) {
-        case c.rbe.GUILD_TEXT:
-            return (0, r.jsx)(l.Drp, {
+    switch (c) {
+        case s.rbe.GUILD_TEXT:
+            return (0, i.jsx)(l.Drp, {
                 id: "create-text-channel",
-                label: o.intl.string(o.t.HHkTJP),
-                action: d
+                label: d.intl.string(d.t.HHkTJP),
+                action: o
             });
-        case c.rbe.GUILD_VOICE:
-            return (0, r.jsx)(l.Drp, {
+        case s.rbe.GUILD_VOICE:
+            return (0, i.jsx)(l.Drp, {
                 id: "create-voice-channel",
-                label: o.intl.string(o.t.AlbZaI),
-                action: d
+                label: d.intl.string(d.t.AlbZaI),
+                action: o
             });
         default:
             return null

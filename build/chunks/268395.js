@@ -1,15 +1,14 @@
-/** chunk id: 268395, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    y: () => c
+/** chunk id: 268395, original params: e,l,a (module,exports,require) **/
+a.d(l, {
+    y: () => d
 });
-var r = n(627968),
-    i = n(237528),
-    a = n(121327);
-let o = {
+var t = a(627968),
+    o = a(237528),
+    n = a(121327);
+let i = {
         name: "Chip",
         id: "chip",
-        component: i.v,
+        component: o.v,
         controls: {
             text: {
                 label: "Text",
@@ -97,28 +96,28 @@ let o = {
         }
     },
     s = ["blurple", "purple", "green", "orange", "yellow", "pink", "red", "gray"],
-    l = ["Light", "Medium", "Dark"],
-    c = {
+    r = ["Light", "Medium", "Dark"],
+    d = {
         title: "Chip",
-        stories: [o, {
+        stories: [i, {
             name: "All Variants",
             id: "chip-all-variants",
             component: function() {
-                return (0, r.jsx)("div", {
-                    className: a.lx,
-                    children: l.map(e => (0, r.jsxs)("div", {
-                        className: a.uW,
-                        children: [(0, r.jsx)("h3", {
-                            className: a.Gf,
+                return (0, t.jsx)("div", {
+                    className: n.lx,
+                    children: r.map(e => (0, t.jsxs)("div", {
+                        className: n.uW,
+                        children: [(0, t.jsx)("h3", {
+                            className: n.Gf,
                             children: e
-                        }), (0, r.jsx)("div", {
-                            className: a.f2,
-                            children: s.map(t => {
-                                let n = "".concat(t).concat(e);
-                                return (0, r.jsx)(i.v, {
-                                    text: t,
-                                    variant: n
-                                }, n)
+                        }), (0, t.jsx)("div", {
+                            className: n.f2,
+                            children: s.map(l => {
+                                let a = `${l}${e}`;
+                                return (0, t.jsx)(o.v, {
+                                    text: l,
+                                    variant: a
+                                }, a)
                             })
                         })]
                     }, e))

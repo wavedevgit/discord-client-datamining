@@ -1,4 +1,5 @@
 /** chunk id: 658646, original params: e,t,n (module,exports,require) **/
+"use strict";
 e.exports = {
     pz: "sidebar__409aa",
     Hw: "mobile__409aa",
@@ -10,6 +11,5 @@ e.exports = {
     a9: "sectionLabel__409aa",
     Pf: "label__409aa",
     gM: "fixedContent__409aa",
-    PP: "searchBarContainer__409aa",
-    To: "popoverAnchor__409aa"
+    PP: "searchBarContainer__409aa"
 }

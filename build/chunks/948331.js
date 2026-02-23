@@ -1,115 +1,99 @@
 /** chunk id: 948331, original params: e,t,r (module,exports,require) **/
 r.d(t, {
-    g: () => y
+    g: () => R
 });
-var n = r(627968),
-    l = r(64700),
-    s = r(934551),
+var s = r(627968),
+    n = r(64700),
+    l = r(934551),
     a = r(158954),
     i = r(421380),
     o = r(397927),
-    c = r(793574),
-    u = r(404374),
+    u = r(793574),
+    c = r(404374),
     d = r(465794),
     h = r(927578),
-    f = r(226017),
-    p = r(652215),
-    g = r(788868),
-    S = r(985018),
-    E = r(316163),
-    _ = r(7410),
-    A = r(936037);
+    _ = r(226017),
+    E = r(652215),
+    S = r(788868),
+    f = r(985018),
+    g = r(316163),
+    A = r(7410),
+    p = r(936037);
 
-function y() {
-    return (0, f.A)() ? (0, n.jsx)("div", {
-        className: E.do,
-        children: (0, n.jsxs)("div", {
-            className: E.U6,
-            children: [(0, n.jsx)("img", {
-                src: _,
-                className: E.Sl,
+function R() {
+    return (0, _.A)() ? (0, s.jsx)("div", {
+        className: g.do,
+        children: (0, s.jsxs)("div", {
+            className: g.U6,
+            children: [(0, s.jsx)("img", {
+                src: A,
+                className: g.Sl,
                 alt: ""
-            }), (0, n.jsx)(o.Heading, {
-                className: E.wx,
+            }), (0, s.jsx)(o.Heading, {
+                className: g.wx,
                 variant: "heading-xl/semibold",
                 color: "text-default",
-                children: S.intl.string(S.t.erEf2g)
-            }), (0, n.jsx)(a.EYj, {
+                children: f.intl.string(f.t.erEf2g)
+            }), (0, s.jsx)(a.EYj, {
                 variant: "text-md/medium",
                 color: "text-muted",
-                children: S.intl.string(S.t.NaRCXT)
+                children: f.intl.string(f.t.NaRCXT)
             })]
         })
-    }) : (0, n.jsxs)("div", {
-        className: E.do,
-        children: [(0, n.jsxs)("div", {
-            className: E.U6,
-            children: [(0, n.jsx)("img", {
-                src: A,
-                className: E.Sl,
+    }) : (0, s.jsxs)("div", {
+        className: g.do,
+        children: [(0, s.jsxs)("div", {
+            className: g.U6,
+            children: [(0, s.jsx)("img", {
+                src: p,
+                className: g.Sl,
                 alt: ""
-            }), (0, n.jsx)(o.Heading, {
-                className: E.wx,
+            }), (0, s.jsx)(o.Heading, {
+                className: g.wx,
                 variant: "heading-xl/semibold",
                 color: "text-default",
-                children: S.intl.string(S.t.w4DRbZ)
-            }), (0, n.jsx)(a.EYj, {
+                children: f.intl.string(f.t.w4DRbZ)
+            }), (0, s.jsx)(a.EYj, {
                 variant: "text-md/medium",
                 color: "text-muted",
-                children: S.intl.string(S.t.F6u3E3)
+                children: f.intl.string(f.t.F6u3E3)
             })]
-        }), (0, n.jsx)(m, {})]
+        }), (0, s.jsx)(m, {})]
     })
 }
 
 function m() {
-    let e = (0, h.Dd)(g.PremiumTypes.TIER_2),
-        t = l.useCallback(() => (0, o.mMO)(async () => {
+    let e = (0, h.Dd)(S.PremiumTypes.TIER_2),
+        t = n.useCallback(() => (0, o.mMO)(async () => {
             let {
                 default: e
             } = await r.e("22540").then(r.bind(r, 530951));
-            return t => (0, n.jsx)(e, function(e) {
-                for (var t = 1; t < arguments.length; t++) {
-                    var r = null != arguments[t] ? arguments[t] : {},
-                        n = Object.keys(r);
-                    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-                        return Object.getOwnPropertyDescriptor(r, e).enumerable
-                    }))), n.forEach(function(t) {
-                        var n;
-                        n = r[t], t in e ? Object.defineProperty(e, t, {
-                            value: n,
-                            enumerable: !0,
-                            configurable: !0,
-                            writable: !0
-                        }) : e[t] = n
-                    })
-                }
-                return e
-            }({
-                source: c.A.FOR_LATER_POPOUT
-            }, t))
+            return t => (0, s.jsx)(e, {
+                source: u.A.FOR_LATER_POPOUT,
+                ...t
+            })
         }), []),
-        f = S.intl.format(S.t.qXh3fo, {
+        _ = f.intl.format(f.t.qXh3fo, {
             nitroTierName: e,
             onClick: t
         });
-    return (0, n.jsxs)("div", {
-        className: E.Zj,
-        children: [(0, n.jsx)(s.NitroWheelIcon, {
+    return (0, s.jsxs)("div", {
+        className: g.Zj,
+        children: [(0, s.jsx)(l.NitroWheelIcon, {
             size: "md",
-            color: u.k0.PREMIUM_TIER_2
-        }), (0, n.jsx)(a.EYj, {
+            color: c.k0.PREMIUM_TIER_2
+        }), (0, s.jsx)(a.EYj, {
             variant: "text-xs/medium",
             color: "text-strong",
-            className: E.tD,
-            children: f
-        }), (0, n.jsx)(d.A, {
-            className: E.Oy,
+            className: g.tD,
+            children: _
+        }), (0, s.jsx)(d.A, {
+            className: g.Oy,
             size: i.lO.TINY,
-            shinyButtonClassName: E.Oy,
-            subscriptionTier: g.pe.TIER_2,
+            shinyButtonClassName: g.Oy,
+            subscriptionTier: S.pe.TIER_2,
             premiumModalAnalyticsLocation: {
-                section: p.JJy.FOR_LATER_POPOUT_UPSELL
+                section: E.JJy.FOR_LATER_POPOUT_UPSELL
             }
         })]
     })

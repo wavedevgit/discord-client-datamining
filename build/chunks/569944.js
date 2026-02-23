@@ -1,22 +1,22 @@
 /** chunk id: 569944, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    c: () => s
+    c: () => r
 });
-var l = n(260509),
-    r = n(488926),
-    i = n(652215);
+var i = n(260509),
+    l = n(488926),
+    s = n(652215);
 
-function s(e, t) {
-    return !!((0, l.bM)(e, t) || r.$3({
-        permission: i.xBc.ADMINISTRATOR,
+function r(e, t) {
+    return !!((0, i.bM)(e, t) || l.$3({
+        permission: s.xBc.ADMINISTRATOR,
         context: e,
         user: t
-    })) || r.$3({
-        permission: i.xBc.MANAGE_GUILD,
+    })) || l.$3({
+        permission: s.xBc.MANAGE_GUILD,
         context: e,
         user: t
-    }) && r.$3({
-        permission: i.xBc.MANAGE_ROLES,
+    }) && l.$3({
+        permission: s.xBc.MANAGE_ROLES,
         context: e,
         user: t
     })

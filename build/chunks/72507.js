@@ -1,69 +1,68 @@
 /** chunk id: 72507, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    l: () => b
+    l: () => A
 });
-var r = n(627968),
-    i = n(64700),
+var i = n(627968),
+    s = n(64700),
     l = n(732955),
-    s = n(688810),
+    r = n(688810),
     a = n(2553),
     o = n(946274),
-    c = n(997509),
-    d = n(342490),
+    d = n(997509),
+    c = n(342490),
     u = n(695800),
-    g = n(652215),
-    m = n(874864),
-    p = n(478644),
-    f = n(985018),
-    h = n(822679);
+    m = n(652215),
+    g = n(874864),
+    x = n(478644),
+    h = n(985018),
+    _ = n(822679);
 
-function b(e) {
+function A(e) {
     let {
         guild: t,
         canManageGuild: n,
-        buttonClassName: b
+        buttonClassName: A
     } = e, {
-        analyticsLocations: x
-    } = (0, s.Ay)(), j = t.features.has(g.GuildFeatures.INVITE_SPLASH), _ = n && j, O = i.useRef(null), v = i.useCallback(e => {
-        c.A.updateGuild({
+        analyticsLocations: p
+    } = (0, r.Ay)(), f = t.features.has(m.GuildFeatures.INVITE_SPLASH), j = n && f, N = s.useRef(null), E = s.useCallback(e => {
+        d.A.updateGuild({
             splash: e
         })
-    }, []), y = i.useCallback(e => {
+    }, []), b = s.useCallback(e => {
         e.preventDefault(), e.stopPropagation(), (0, u.p_)({
             guild: t,
-            analyticsLocations: x,
-            analyticsSection: g.JJy.GUILD_INVITE_BACKGROUND,
-            analyticsObject: g.ZSU.BUTTON_CTA,
-            perks: (0, m.Lp)()
+            analyticsLocations: p,
+            analyticsSection: m.JJy.GUILD_INVITE_BACKGROUND,
+            analyticsObject: m.ZSU.BUTTON_CTA,
+            perks: (0, g.Lp)()
         })
-    }, [x, t]), A = i.useCallback(() => {
-        var e;
-        null == (e = O.current) || e.activateUploadDialogue()
+    }, [p, t]), T = s.useCallback(() => {
+        N.current?.activateUploadDialogue()
     }, []);
-    return j ? (0, r.jsxs)("div", {
-        className: b,
-        children: [(0, r.jsx)(l.$nd, {
-            disabled: !_,
+    return f ? (0, i.jsxs)("div", {
+        className: A,
+        children: [(0, i.jsx)(l.$nd, {
+            disabled: !j,
             variant: "primary",
-            text: f.intl.string(f.t.yG2pUi),
-            onClick: A
-        }), (0, r.jsx)("div", {
-            className: h.y,
-            children: (0, r.jsx)(o.Ay, {
-                ref: O,
-                disabled: !_,
-                onChange: v,
-                maxFileSizeBytes: p.j,
-                onFileSizeError: () => (0, a.A)(p.j),
+            text: h.intl.string(h.t.yG2pUi),
+            onClick: T
+        }), (0, i.jsx)("div", {
+            className: _.y,
+            children: (0, i.jsx)(o.Ay, {
+                ref: N,
+                disabled: !j,
+                onChange: E,
+                maxFileSizeBytes: x.j,
+                onFileSizeError: () => (0, a.A)(x.j),
                 tabIndex: -1,
                 "aria-hidden": !0
             })
         })]
-    }) : (0, r.jsx)("div", {
-        className: b,
-        children: (0, r.jsx)(d.u, {
-            onClick: y
+    }) : (0, i.jsx)("div", {
+        className: A,
+        children: (0, i.jsx)(c.u, {
+            onClick: b
         })
     })
 }

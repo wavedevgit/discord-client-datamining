@@ -1,237 +1,207 @@
 /** chunk id: 965033, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    Ay: () => G,
-    qH: () => w,
-    t9: () => P
-}), n(896048);
-var r = n(627968),
-    i = n(64700),
+    Ay: () => L,
+    qH: () => R,
+    t9: () => y
+});
+var i = n(627968),
+    s = n(64700),
     l = n(503698),
-    s = n.n(l),
+    r = n.n(l),
     a = n(735438),
     o = n(311907),
-    c = n(397927),
-    d = n(974544),
+    d = n(397927),
+    c = n(974544),
     u = n(134413),
-    g = n(780964),
-    m = n(840065),
-    p = n(260509),
-    f = n(576705),
-    h = n(351906),
-    b = n(287809),
-    x = n(975571),
-    j = n(809505),
-    _ = n(997509),
-    O = n(555337),
-    v = n(512122),
-    y = n(111771),
-    A = n(294363),
-    E = n(652215),
-    N = n(985018),
-    S = n(841541);
+    m = n(780964),
+    g = n(840065),
+    x = n(260509),
+    h = n(576705),
+    _ = n(351906),
+    A = n(287809),
+    p = n(975571),
+    f = n(809505),
+    j = n(997509),
+    N = n(555337),
+    E = n(512122),
+    b = n(111771),
+    T = n(294363),
+    C = n(652215),
+    I = n(985018),
+    v = n(841541);
 
-function I(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = r
-        })
-    }
-    return e
-}
-
-function C(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
-        }
-        return n
-    })(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-
-function T(e) {
+function S(e) {
     let {
         guild: t
-    } = e, n = (0, o.bG)([f.A], () => null != t && f.A.can(E.xBc.MANAGE_GUILD, t), [t]), l = i.useCallback(async e => {
+    } = e, n = (0, o.bG)([h.A], () => null != t && h.A.can(C.xBc.MANAGE_GUILD, t), [t]), l = s.useCallback(async e => {
         let {
             value: n
         } = e;
         try {
-            await _.A.saveGuild(t.id, {
+            await j.A.saveGuild(t.id, {
                 verificationLevel: n
-            }), _.A.updateGuild({
+            }), j.A.updateGuild({
                 verificationLevel: n
             })
         } catch (e) {
-            (0, c.showToast)((0, c.createToast)(N.intl.string(N.t["46Rs3v"]), c.ToastType.FAILURE))
+            (0, d.showToast)((0, d.createToast)(I.intl.string(I.t["46Rs3v"]), d.ToastType.FAILURE))
         }
-    }, [t]), s = i.useMemo(() => {
-        let e = (0, j.vd)(null == t ? void 0 : t.features.has(E.GuildFeatures.COMMUNITY)).map(e => C(I({}, e), {
+    }, [t]), r = s.useMemo(() => {
+        let e = (0, f.vd)(t?.features.has(C.GuildFeatures.COMMUNITY)).map(e => ({
+            ...e,
             tooltipPosition: "left"
         }));
-        return (0, j.w3)(e)
-    }, [t]), a = i.useMemo(() => s.find(e => e.value === (null == t ? void 0 : t.verificationLevel)), [t, s]);
-    return (0, r.jsxs)("div", {
-        className: S.hu,
-        children: [(0, r.jsxs)("div", {
-            className: S.aZ,
-            children: [(0, r.jsx)(c.Text, {
+        return (0, f.w3)(e)
+    }, [t]), a = s.useMemo(() => r.find(e => e.value === t?.verificationLevel), [t, r]);
+    return (0, i.jsxs)("div", {
+        className: v.hu,
+        children: [(0, i.jsxs)("div", {
+            className: v.aZ,
+            children: [(0, i.jsx)(d.Text, {
                 color: "text-strong",
                 variant: "text-md/semibold",
-                children: N.intl.string(N.t.DpRdYK)
-            }), (0, r.jsx)(c.Text, {
+                children: I.intl.string(I.t.DpRdYK)
+            }), (0, i.jsx)(d.Text, {
                 color: "text-default",
                 variant: "text-sm/normal",
-                children: N.intl.format(N.t.iuRk2j, {})
+                children: I.intl.format(I.t.iuRk2j, {})
             })]
-        }), (0, r.jsx)(y.A, {
-            changeTitle: N.intl.string(N.t.TxESJG),
-            value: null == a ? void 0 : a.value,
-            options: s,
+        }), (0, i.jsx)(b.A, {
+            changeTitle: I.intl.string(I.t.TxESJG),
+            value: a?.value,
+            options: r,
             disabled: !n,
             onChange: l
         })]
     })
 }
 
-function P(e) {
+function y(e) {
     let {
         guild: t,
         className: n,
         withDivider: l = !0
-    } = e, a = (0, o.bG)([f.A], () => null != t && f.A.can(E.xBc.MANAGE_GUILD, t), [t]), d = i.useCallback(async e => {
+    } = e, a = (0, o.bG)([h.A], () => null != t && h.A.can(C.xBc.MANAGE_GUILD, t), [t]), c = s.useCallback(async e => {
         let {
             value: n
         } = e;
         try {
-            await _.A.saveGuild(t.id, {
+            await j.A.saveGuild(t.id, {
                 explicitContentFilter: n
-            }), _.A.updateGuild({
+            }), j.A.updateGuild({
                 explicitContentFilter: n
             })
         } catch (e) {
-            (0, c.showToast)((0, c.createToast)(N.intl.string(N.t["46Rs3v"]), c.ToastType.FAILURE))
+            (0, d.showToast)((0, d.createToast)(I.intl.string(I.t["46Rs3v"]), d.ToastType.FAILURE))
         }
-    }, [t.id]), u = i.useMemo(() => {
-        let e = (0, j.QL)(null == t ? void 0 : t.features.has(E.GuildFeatures.COMMUNITY)).map(e => C(I({}, e), {
+    }, [t.id]), u = s.useMemo(() => {
+        let e = (0, f.QL)(t?.features.has(C.GuildFeatures.COMMUNITY)).map(e => ({
+            ...e,
             tooltipPosition: "left"
         }));
-        return (0, j.w3)(e)
-    }, [t]), g = i.useMemo(() => u.find(e => e.value === (null == t ? void 0 : t.explicitContentFilter)), [t, u]);
-    return (0, r.jsxs)(r.Fragment, {
-        children: [l && (0, r.jsx)(c.cGx, {
-            className: S.yF
-        }), (0, r.jsxs)("div", {
-            className: s()(S.hu, n),
-            children: [(0, r.jsxs)("div", {
-                className: S.aZ,
-                children: [(0, r.jsx)(c.Text, {
+        return (0, f.w3)(e)
+    }, [t]), m = s.useMemo(() => u.find(e => e.value === t?.explicitContentFilter), [t, u]);
+    return (0, i.jsxs)(i.Fragment, {
+        children: [l && (0, i.jsx)(d.cGx, {
+            className: v.yF
+        }), (0, i.jsxs)("div", {
+            className: r()(v.hu, n),
+            children: [(0, i.jsxs)("div", {
+                className: v.aZ,
+                children: [(0, i.jsx)(d.Text, {
                     color: "text-strong",
                     variant: "text-md/semibold",
-                    children: N.intl.string(N.t.bPgfJz)
-                }), (0, r.jsx)(c.Text, {
+                    children: I.intl.string(I.t.bPgfJz)
+                }), (0, i.jsx)(d.Text, {
                     color: "text-default",
                     variant: "text-sm/normal",
-                    children: N.intl.format(N.t.BI4ukC, {
-                        helpdeskArticle: x.A.getArticleURL(E.MVz.SAFE_DIRECT_MESSAGING)
+                    children: I.intl.format(I.t.BI4ukC, {
+                        helpdeskArticle: p.A.getArticleURL(C.MVz.SAFE_DIRECT_MESSAGING)
                     })
                 })]
-            }), (0, r.jsx)(y.A, {
-                changeTitle: N.intl.string(N.t["eBd+Uv"]),
-                value: null == g ? void 0 : g.value,
+            }), (0, i.jsx)(b.A, {
+                changeTitle: I.intl.string(I.t["eBd+Uv"]),
+                value: m?.value,
                 options: u,
                 disabled: !a,
-                onChange: d
+                onChange: c
             })]
         })]
     })
 }
-async function w(e, t) {
-    if (e.features.has(E.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY) === t) return;
+async function R(e, t) {
+    if (e.features.has(C.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY) === t) return;
     let n = e.features;
-    return t ? n.add(E.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY) : n.delete(E.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY), await _.A.saveGuild(e.id, {
+    return t ? n.add(C.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY) : n.delete(C.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY), await j.A.saveGuild(e.id, {
         features: n
     })
 }
 
-function R(e) {
+function O(e) {
     let {
         guild: t
-    } = e, n = (0, o.bG)([f.A], () => null != t && f.A.can(E.xBc.MANAGE_GUILD, t), [t]), l = t.features.has(E.GuildFeatures.COMMUNITY), s = (0, u.fw)(t.id), [a, d] = i.useState(t.features.has(E.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), g = i.useCallback(async e => {
-        d(e), await w(t, e)
+    } = e, n = (0, o.bG)([h.A], () => null != t && h.A.can(C.xBc.MANAGE_GUILD, t), [t]), l = t.features.has(C.GuildFeatures.COMMUNITY), r = (0, u.fw)(t.id), [a, c] = s.useState(t.features.has(C.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), m = s.useCallback(async e => {
+        c(e), await R(t, e)
     }, [t]);
-    return l || !s ? null : (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsxs)("div", {
-            className: S.hu,
-            children: [(0, r.jsx)(c.dOG, {
-                label: N.intl.string(N.t.jDarmy),
-                description: N.intl.string(N.t["/ee7yK"]),
+    return l || !r ? null : (0, i.jsxs)(i.Fragment, {
+        children: [(0, i.jsxs)("div", {
+            className: v.hu,
+            children: [(0, i.jsx)(d.dOG, {
+                label: I.intl.string(I.t.jDarmy),
+                description: I.intl.string(I.t["/ee7yK"]),
                 badge: "beta",
                 checked: a,
-                onChange: g,
+                onChange: m,
                 disabled: !n
-            }), (0, r.jsx)(c.po8, {
-                messageType: c.YCn.INFO,
+            }), (0, i.jsx)(d.po8, {
+                messageType: d.YCn.INFO,
                 textVariant: "text-xs/normal",
-                children: N.intl.string(N.t.JxO63z)
+                children: I.intl.string(I.t.JxO63z)
             })]
-        }), (0, r.jsx)(c.cGx, {
-            className: S.yF
+        }), (0, i.jsx)(d.cGx, {
+            className: v.yF
         })]
     })
 }
 
-function D(e) {
+function G(e) {
     let {
         guild: t,
         mfaLevel: n
-    } = e, l = (0, o.bG)([f.A], () => null != t && f.A.can(E.xBc.MANAGE_GUILD, t), [t]), s = (0, o.bG)([b.default], () => b.default.getCurrentUser()), {
-        isGuildOwnerWithMFA: d,
+    } = e, l = (0, o.bG)([h.A], () => null != t && h.A.can(C.xBc.MANAGE_GUILD, t), [t]), r = (0, o.bG)([A.default], () => A.default.getCurrentUser()), {
+        isGuildOwnerWithMFA: c,
         showMFAUserTooltip: u
-    } = i.useMemo(() => null == s ? {
+    } = s.useMemo(() => null == r ? {
         canChangeMFALevel: !1,
         showMFAUserTooltip: !1
     } : {
-        isGuildOwnerWithMFA: (0, p.ok)(t, s),
-        showMFAUserTooltip: !s.mfaEnabled && (0, p.bM)(t, s)
-    }, [s, t]), h = n === E.EkJ.ELEVATED, x = (0, a.throttle)(async e => {
-        !d || u || await _.A.updateMFALevel({
+        isGuildOwnerWithMFA: (0, x.ok)(t, r),
+        showMFAUserTooltip: !r.mfaEnabled && (0, x.bM)(t, r)
+    }, [r, t]), _ = n === C.EkJ.ELEVATED, p = (0, a.throttle)(async e => {
+        !c || u || await j.A.updateMFALevel({
             guildId: t.id,
-            level: e ? E.EkJ.ELEVATED : E.EkJ.NONE
+            level: e ? C.EkJ.ELEVATED : C.EkJ.NONE
         })
     }, 1e3);
-    return l ? (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(c.cGx, {
-            className: S.yF
-        }), (0, r.jsxs)("div", {
-            className: S.hu,
-            children: [(0, r.jsx)(c.dOG, {
-                label: N.intl.string(N.t.lbBfEQ),
-                description: N.intl.string(N.t.REr5AI),
-                checked: h,
-                onChange: x,
-                disabled: !d
-            }), u && (0, r.jsx)(c.po8, {
-                messageType: c.YCn.INFO,
+    return l ? (0, i.jsxs)(i.Fragment, {
+        children: [(0, i.jsx)(d.cGx, {
+            className: v.yF
+        }), (0, i.jsxs)("div", {
+            className: v.hu,
+            children: [(0, i.jsx)(d.dOG, {
+                label: I.intl.string(I.t.lbBfEQ),
+                description: I.intl.string(I.t.REr5AI),
+                checked: _,
+                onChange: p,
+                disabled: !c
+            }), u && (0, i.jsx)(d.po8, {
+                messageType: d.YCn.INFO,
                 textVariant: "text-xs/normal",
-                children: N.intl.format(N.t.Xz1O0W, {
+                children: I.intl.format(I.t.Xz1O0W, {
                     onClick: function() {
-                        (0, m.openUserSettings)(g.X.ACCOUNT_PANEL, {
-                            section: E.nc_.ACCOUNT
+                        (0, g.openUserSettings)(m.X.ACCOUNT_PANEL, {
+                            section: C.nc_.ACCOUNT
                         })
                     }
                 })
@@ -240,32 +210,32 @@ function D(e) {
     }) : null
 }
 
-function G() {
+function L() {
     let {
         guild: e,
         mfaLevel: t
-    } = (0, o.cf)([O.A], () => O.A.getProps(), []), n = (0, o.bG)([h.A], () => h.A.enabled, []);
-    return null == e ? null : n ? (0, r.jsx)(d.A, {}) : (0, r.jsxs)("div", {
-        children: [(0, r.jsx)(c.Heading, {
-            className: S.N1,
+    } = (0, o.cf)([N.A], () => N.A.getProps(), []), n = (0, o.bG)([_.A], () => _.A.enabled, []);
+    return null == e ? null : n ? (0, i.jsx)(c.A, {}) : (0, i.jsxs)("div", {
+        children: [(0, i.jsx)(d.Heading, {
+            className: v.N1,
             variant: "heading-lg/semibold",
-            children: N.intl.string(N.t["suhY+Y"])
-        }), (0, r.jsx)(v.p, {
+            children: I.intl.string(I.t["suhY+Y"])
+        }), (0, i.jsx)(E.p, {
             guild: e
-        }), (0, r.jsx)(R, {
+        }), (0, i.jsx)(O, {
             guild: e
-        }), (0, r.jsx)(T, {
+        }), (0, i.jsx)(S, {
             guild: e
-        }), (0, r.jsx)(D, {
+        }), (0, i.jsx)(G, {
             guild: e,
             mfaLevel: t
-        }), (0, r.jsx)(P, {
+        }), (0, i.jsx)(y, {
             guild: e
-        }), (0, r.jsx)(c.cGx, {
-            className: S.yF
-        }), (0, r.jsx)("div", {
-            className: S.hu,
-            children: (0, r.jsx)(A.b, {
+        }), (0, i.jsx)(d.cGx, {
+            className: v.yF
+        }), (0, i.jsx)("div", {
+            className: v.hu,
+            children: (0, i.jsx)(T.b, {
                 guild: e
             })
         })]

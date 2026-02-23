@@ -1,51 +1,44 @@
 /** chunk id: 994763, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => a,
-    z: () => o
-}), n(896048);
-var r = n(64700),
-    i = n(311907),
-    l = n(775602);
+    z: () => r
+});
+var i = n(64700),
+    s = n(311907),
+    a = n(775602);
 
-function s(e, t, n) {
-    let s = (0, i.bG)([l.A], () => l.A.useReducedMotion),
-        a = r.useRef(!1);
-    r.useEffect(() => {
-        if (!t || a.current) return;
-        let n = e();
-        if (null != n && n.offsetHeight > 0) {
-            a.current = !0, n.scrollIntoView({
-                behavior: s ? "auto" : "smooth"
-            });
-            return
-        }
-        let r = !1,
-            i = null,
-            l = new ResizeObserver(e => {
-                let t = e[0];
-                null == t || !(t.contentRect.height > 0) || a.current || r || (a.current = !0, l.disconnect(), t.target.scrollIntoView({
-                    behavior: s ? "auto" : "smooth"
-                }))
-            }),
-            o = () => {
-                if (r) return;
-                let t = e();
-                null != t ? t.offsetHeight > 0 ? (a.current = !0, t.scrollIntoView({
-                    behavior: s ? "auto" : "smooth"
-                })) : l.observe(t) : i = requestAnimationFrame(o)
-            };
-        return o(), () => {
-            r = !0, null != i && cancelAnimationFrame(i), l.disconnect()
-        }
-    }, [t, s, ...n]), r.useEffect(() => {
-        t || (a.current = !1)
-    }, [t])
-}
-
-function a(e, t) {
-    s(() => e.current, t, [e])
-}
-
-function o(e, t) {
-    s(() => document.getElementById(e), t, [e])
+function r(e, t, n) {
+    ! function(e, t, n) {
+        let r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : "start",
+            l = (0, s.bG)([a.A], () => a.A.useReducedMotion),
+            o = i.useRef(!1);
+        i.useEffect(() => {
+            if (!t || o.current) return;
+            let n = {
+                    behavior: l ? "auto" : "smooth",
+                    block: r
+                },
+                i = e();
+            if (null != i && i.offsetHeight > 0) {
+                o.current = !0, i.scrollIntoView(n);
+                return
+            }
+            let s = !1,
+                a = null,
+                c = new ResizeObserver(e => {
+                    let t = e[0];
+                    null == t || !(t.contentRect.height > 0) || o.current || s || (o.current = !0, c.disconnect(), t.target.scrollIntoView(n))
+                }),
+                d = performance.now(),
+                u = () => {
+                    if (s || performance.now() - d > 5e3) return;
+                    let t = e();
+                    null != t ? t.offsetHeight > 0 ? (o.current = !0, t.scrollIntoView(n)) : c.observe(t) : a = requestAnimationFrame(u)
+                };
+            return u(), () => {
+                s = !0, null != a && cancelAnimationFrame(a), c.disconnect()
+            }
+        }, [t, l, r, ...n]), i.useEffect(() => {
+            t || (o.current = !1)
+        }, [t])
+    }(() => document.getElementById(e), t, [e], n)
 }

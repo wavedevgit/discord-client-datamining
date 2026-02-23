@@ -1,106 +1,106 @@
-/** chunk id: 953722, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    default: () => j
-}), n(896048);
-var l = n(627968),
-    i = n(64700),
-    s = n(158954),
-    r = n(943457),
-    a = n(424912),
-    c = n(860689),
-    o = n(208882),
-    d = n(121004),
-    u = n(880392),
-    m = n(843580),
-    x = n(851091),
-    g = n(909806),
-    C = n(946116);
+/** chunk id: 953722, original params: e,t,l (module,exports,require) **/
+l.d(t, {
+    default: () => h
+});
+var i = l(627968),
+    s = l(64700),
+    a = l(158954),
+    n = l(943457),
+    r = l(424912),
+    c = l(860689),
+    d = l(208882),
+    o = l(121004),
+    u = l(880392),
+    x = l(843580),
+    m = l(851091),
+    C = l(909806),
+    g = l(946116);
 
-function j(e) {
+function h(e) {
     let {
         directoryChannelId: t,
-        transitionState: n,
-        initialSlide: j = C.m8.CHOOSE_GUILD,
-        onClose: h,
-        directoryGuildName: p,
-        directoryGuildId: f,
-        currentCategoryId: b
-    } = e, [L, _] = i.useState(j), [v, y] = i.useState(null), [O, S] = i.useState(null), [A, I] = i.useState(null), [N, T] = i.useState(null), [H, E] = i.useState(""), [M, k] = i.useState(null != b ? b : C.mU.UNCATEGORIZED), [G, D] = i.useState(!1), {
-        availableGuilds: U,
-        addedGuilds: w,
-        loading: Z
-    } = (0, d.A)(f, t);
-    i.useEffect(() => {
-        _(j)
-    }, [_, j]);
-    let P = async () => {
-        let e = N;
-        if (!G) {
-            if (null == O || null == v) return;
-            let t = await r.A.createGuildFromTemplate(O, A, v);
-            T(e = (0, c.Y1)(t))
+        transitionState: l,
+        initialSlide: h = g.m8.CHOOSE_GUILD,
+        onClose: j,
+        directoryGuildName: L,
+        directoryGuildId: _,
+        currentCategoryId: f
+    } = e, [p, A] = s.useState(h), [v, S] = s.useState(null), [b, I] = s.useState(null), [N, T] = s.useState(null), [H, y] = s.useState(null), [M, G] = s.useState(""), [E, U] = s.useState(f ?? g.mU.UNCATEGORIZED), [k, D] = s.useState(!1), {
+        availableGuilds: Z,
+        addedGuilds: O,
+        loading: R
+    } = (0, o.A)(_, t);
+    s.useEffect(() => {
+        A(h)
+    }, [A, h]);
+    let B = async () => {
+        let e = H;
+        if (!k) {
+            if (null == b || null == v) return;
+            let t = await n.A.createGuildFromTemplate(b, N, v);
+            y(e = (0, c.Y1)(t))
         }
-        null != e && (await o.WD(t, e.id, H, M), _(C.m8.CONFIRMATION))
-    }, R = null;
-    switch (L) {
-        case C.m8.CHOOSE_GUILD:
-            R = (0, l.jsx)(u.A, {
+        null != e && (await d.WD(t, e.id, M, E), A(g.m8.CONFIRMATION))
+    }, V = null;
+    switch (p) {
+        case g.m8.CHOOSE_GUILD:
+            V = (0, i.jsx)(u.A, {
                 directoryChannelId: t,
-                directoryGuildName: p,
+                directoryGuildName: L,
                 onGuildChosen: e => {
-                    D(!0), _(C.m8.CUSTOMIZE_EXISTING_GUILD), T(e)
+                    D(!0), A(g.m8.CUSTOMIZE_EXISTING_GUILD), y(e)
                 },
                 handleChooseCreate: () => {
-                    D(!1), _(C.m8.GUILD_TEMPLATES)
+                    D(!1), A(g.m8.GUILD_TEMPLATES)
                 },
-                availableGuilds: U,
-                addedGuilds: w,
-                loading: Z
+                availableGuilds: Z,
+                addedGuilds: O,
+                loading: R
             });
             break;
-        case C.m8.GUILD_TEMPLATES:
-            R = (0, l.jsx)(g.A, {
-                directoryGuildName: p,
+        case g.m8.GUILD_TEMPLATES:
+            V = (0, i.jsx)(C.A, {
+                directoryGuildName: L,
                 onChooseTemplate: e => {
-                    D(!1), _(C.m8.CUSTOMIZE_NEW_GUILD), y(e)
+                    D(!1), A(g.m8.CUSTOMIZE_NEW_GUILD), S(e)
                 },
-                onBack: () => _(C.m8.CHOOSE_GUILD)
+                onBack: () => A(g.m8.CHOOSE_GUILD)
             });
             break;
-        case C.m8.CUSTOMIZE_NEW_GUILD:
-            R = (0, l.jsx)(a.A, {
+        case g.m8.CUSTOMIZE_NEW_GUILD:
+            V = (0, i.jsx)(r.A, {
                 isSlideReady: !0,
                 guildTemplate: v,
                 onHubGuildInfoSet: (e, t) => {
-                    S(e), I(t), _(C.m8.CUSTOMIZE_EXISTING_GUILD)
+                    I(e), T(t), A(g.m8.CUSTOMIZE_EXISTING_GUILD)
                 },
-                onBack: () => _(C.m8.GUILD_TEMPLATES)
+                onBack: () => A(g.m8.GUILD_TEMPLATES)
             });
             break;
-        case C.m8.CUSTOMIZE_EXISTING_GUILD:
-            R = (0, l.jsx)(m.A, {
+        case g.m8.CUSTOMIZE_EXISTING_GUILD:
+            V = (0, i.jsx)(x.A, {
                 directoryChannelId: t,
-                description: H,
-                onDescriptionChange: E,
-                categoryId: M,
-                onCategoryIdChange: k,
-                onSubmit: P,
-                onBack: () => _(G ? C.m8.CHOOSE_GUILD : C.m8.CUSTOMIZE_NEW_GUILD)
+                description: M,
+                onDescriptionChange: G,
+                categoryId: E,
+                onCategoryIdChange: U,
+                onSubmit: B,
+                onBack: () => A(k ? g.m8.CHOOSE_GUILD : g.m8.CUSTOMIZE_NEW_GUILD)
             });
             break;
-        case C.m8.CONFIRMATION:
-            R = (0, l.jsx)(x.A, {
-                directoryGuildName: p,
-                guildToAdd: N,
-                isExistingGuildFlow: G,
-                onClose: h
+        case g.m8.CONFIRMATION:
+            V = (0, i.jsx)(m.A, {
+                directoryGuildName: L,
+                guildToAdd: H,
+                isExistingGuildFlow: k,
+                onClose: j
             })
     }
-    return (0, l.jsx)("div", {
-        children: (0, l.jsx)(s.dWK, {
-            transitionState: n,
-            onClose: h,
-            children: R
+    return (0, i.jsx)("div", {
+        children: (0, i.jsx)(a.dWK, {
+            transitionState: l,
+            onClose: j,
+            children: V
         })
     })
 }

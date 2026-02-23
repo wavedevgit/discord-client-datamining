@@ -1,16 +1,15 @@
-/** chunk id: 527518, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    c$: () => u
+/** chunk id: 527518, original params: e,t,l (module,exports,require) **/
+l.d(t, {
+    c$: () => c
 });
-var r = n(627968),
-    i = n(162097),
-    a = n(142270),
-    o = n(240248),
-    s = n(652215),
-    l = n(985018),
-    c = n(749226);
-let u = {
+var a = l(627968),
+    n = l(162097),
+    r = l(142270),
+    i = l(240248),
+    s = l(652215),
+    o = l(985018),
+    u = l(749226);
+let c = {
     title: "Balance Widget",
     stories: [{
         name: "Balance Widget Card",
@@ -18,13 +17,13 @@ let u = {
         component: e => {
             let {
                 ctaText: t,
-                linkText: n,
-                linkPreText: a
+                linkText: l,
+                linkPreText: r
             } = e;
-            return (0, r.jsx)(i.b, {
-                ctaText: (0, o.uJ)(t) ? l.intl.string(l.t.H57f41) : t,
-                linkText: (0, o.uJ)(n) ? l.intl.string(l.t["7f4H7D"]) : n,
-                linkPreText: (0, o.uJ)(a) ? void 0 : a,
+            return (0, a.jsx)(n.b, {
+                ctaText: (0, i.uJ)(t) ? o.intl.string(o.t.H57f41) : t,
+                linkText: (0, i.uJ)(l) ? o.intl.string(o.t["7f4H7D"]) : l,
+                linkPreText: (0, i.uJ)(r) ? void 0 : r,
                 ctaOnClick: s.tEg
             })
         },
@@ -51,19 +50,19 @@ let u = {
         component: e => {
             let {
                 ctaText: t,
-                linkText: n,
-                showNotificationBadge: i,
-                cardAlignment: u
+                linkText: l,
+                showNotificationBadge: n,
+                cardAlignment: c
             } = e;
-            return (0, r.jsx)("div", {
-                className: c.tH,
-                children: (0, r.jsx)(a.SS, {
-                    className: c.oz,
-                    ctaText: (0, o.uJ)(t) ? l.intl.string(l.t["J+vlIR"]) : t,
+            return (0, a.jsx)("div", {
+                className: u.tH,
+                children: (0, a.jsx)(r.SS, {
+                    className: u.oz,
+                    ctaText: (0, i.uJ)(t) ? o.intl.string(o.t["J+vlIR"]) : t,
                     ctaOnClick: s.tEg,
-                    showNotificationBadge: i,
-                    cardAlignment: u,
-                    linkText: (0, o.uJ)(n) ? l.intl.string(l.t.XRdyjz) : n
+                    showNotificationBadge: n,
+                    cardAlignment: c,
+                    linkText: (0, i.uJ)(l) ? o.intl.string(o.t.XRdyjz) : l
                 })
             })
         },
@@ -83,12 +82,12 @@ let u = {
                 type: "select",
                 options: [{
                     label: "Start",
-                    value: a.cP.START
+                    value: r.cP.START
                 }, {
                     label: "End",
-                    value: a.cP.END
+                    value: r.cP.END
                 }],
-                defaultValue: a.cP.START
+                defaultValue: r.cP.START
             },
             linkText: {
                 label: "Link Text",

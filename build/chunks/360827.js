@@ -1,212 +1,211 @@
 /** chunk id: 360827, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    Ay: () => N,
-    fO: () => I
-}), n(896048);
-var r = n(627968),
-    i = n(64700),
+    Ay: () => I,
+    fO: () => S
+});
+var i = n(627968),
+    s = n(64700),
     l = n(311907),
-    s = n(36525),
+    r = n(36525),
     a = n(397927),
     o = n(713654),
-    c = n(591552),
-    d = n(961973),
+    d = n(591552),
+    c = n(961973),
     u = n(555337),
-    g = n(863694),
-    m = n(527678),
-    p = n(923121),
-    f = n(352821),
-    h = n(107795),
-    b = n(655943),
-    x = n(259866),
-    j = n(699256),
-    _ = n(191117),
-    O = n(652215),
-    v = n(539916),
-    y = n(985018),
-    A = n(42483);
+    m = n(863694),
+    g = n(527678),
+    x = n(923121),
+    h = n(352821),
+    _ = n(107795),
+    A = n(655943),
+    p = n(259866),
+    f = n(699256),
+    j = n(191117),
+    N = n(652215),
+    E = n(539916),
+    b = n(985018),
+    T = n(42483);
 
-function E(e) {
+function C(e) {
     let {
         guildId: t,
         prompts: n
-    } = e, s = (0, l.bG)([g.A], () => g.A.editedDefaultChannelIds), [c, u] = (0, d.Lx)(t, n, [...s]), m = c.length, p = c.length + u.length, f = m / p * 100, h = Math.max(Math.ceil(85 * p / 100) - m, 0), [b, x] = i.useState(!1), j = b ? a.abt : a.tN5;
-    return (0, r.jsxs)("div", {
-        className: A.Kf,
-        children: [(0, r.jsxs)(a.DUT, {
-            className: A.a9,
-            onClick: () => x(!b),
-            children: [(0, r.jsxs)("div", {
-                className: A.Vn,
-                children: [f <= 85 && (0, r.jsx)(a.EpV, {
+    } = e, r = (0, l.bG)([m.A], () => m.A.editedDefaultChannelIds), [d, u] = (0, c.Lx)(t, n, [...r]), g = d.length, x = d.length + u.length, h = g / x * 100, _ = Math.max(Math.ceil(85 * x / 100) - g, 0), [A, p] = s.useState(!1), f = A ? a.abt : a.tN5;
+    return (0, i.jsxs)("div", {
+        className: T.Kf,
+        children: [(0, i.jsxs)(a.DUT, {
+            className: T.a9,
+            onClick: () => p(!A),
+            children: [(0, i.jsxs)("div", {
+                className: T.Vn,
+                children: [h <= 85 && (0, i.jsx)(a.EpV, {
                     size: "xs",
                     color: "currentColor",
-                    className: A.$e
-                }), (0, r.jsx)(a.Text, {
-                    className: A.XG,
+                    className: T.$e
+                }), (0, i.jsx)(a.Text, {
+                    className: T.XG,
                     variant: "text-xs/medium",
                     color: "text-muted",
-                    children: y.intl.format(y.t.nMVKCX, {
-                        numChannelsMissing: p - m
+                    children: b.intl.format(b.t.nMVKCX, {
+                        numChannelsMissing: x - g
                     })
                 })]
-            }), (0, r.jsxs)("div", {
-                className: A.L$,
-                children: [(0, r.jsx)(a.iCB, {
-                    className: A.gH,
-                    foregroundColor: f > 85 ? "var(--status-positive)" : "var(--status-warning)",
-                    percent: f
-                }), (0, r.jsx)(j, {
+            }), (0, i.jsxs)("div", {
+                className: T.L$,
+                children: [(0, i.jsx)(a.iCB, {
+                    className: T.gH,
+                    foregroundColor: h > 85 ? "var(--status-positive)" : "var(--status-warning)",
+                    percent: h
+                }), (0, i.jsx)(f, {
                     size: "md",
                     color: "currentColor",
-                    className: A.OW
+                    className: T.OW
                 })]
             })]
-        }), b ? (0, r.jsxs)("div", {
-            className: A.k$,
-            children: [(0, r.jsx)(a.Text, {
+        }), A ? (0, i.jsxs)("div", {
+            className: T.k$,
+            children: [(0, i.jsx)(a.Text, {
                 variant: "text-xs/semibold",
                 color: "text-muted",
-                children: y.intl.string(y.t["0FM4i+"])
-            }), (0, r.jsx)("div", {
-                className: A.BM,
+                children: b.intl.string(b.t["0FM4i+"])
+            }), (0, i.jsx)("div", {
+                className: T.BM,
                 children: u.map(e => {
-                    var t;
-                    let n = null != (t = (0, o.gU)(e)) ? t : a.N$i;
-                    return (0, r.jsx)("div", {
-                        className: A.N5,
-                        children: (0, r.jsxs)(a.Text, {
-                            className: A.Ix,
+                    let t = (0, o.gU)(e) ?? a.N$i;
+                    return (0, i.jsx)("div", {
+                        className: T.N5,
+                        children: (0, i.jsxs)(a.Text, {
+                            className: T.Ix,
                             variant: "text-xs/normal",
                             color: "interactive-text-active",
-                            children: [(0, r.jsx)(n, {
+                            children: [(0, i.jsx)(t, {
                                 size: "xxs",
                                 color: "currentColor"
                             }), e.name]
                         })
                     }, e.id)
                 })
-            }), (0, r.jsx)("div", {
-                className: A.fg,
-                children: h > 0 ? (0, r.jsxs)(r.Fragment, {
-                    children: [(0, r.jsx)(a.EpV, {
+            }), (0, i.jsx)("div", {
+                className: T.fg,
+                children: _ > 0 ? (0, i.jsxs)(i.Fragment, {
+                    children: [(0, i.jsx)(a.EpV, {
                         size: "xs",
                         color: "currentColor"
-                    }), (0, r.jsx)(a.Text, {
+                    }), (0, i.jsx)(a.Text, {
                         variant: "text-xs/normal",
                         color: "text-muted",
-                        children: y.intl.format(y.t.sX8890, {
-                            numChannels: h
+                        children: b.intl.format(b.t.sX8890, {
+                            numChannels: _
                         })
                     })]
-                }) : (0, r.jsx)(a.Text, {
+                }) : (0, i.jsx)(a.Text, {
                     variant: "text-xs/normal",
                     color: "text-muted",
-                    children: y.intl.string(y.t.o4s29v)
+                    children: b.intl.string(b.t.o4s29v)
                 })
             })]
         }) : null]
     })
 }
 
-function N(e) {
+function I(e) {
     let {
         saveOnClose: t
     } = e, n = (0, l.bG)([u.A], () => u.A.getGuild());
-    return null == n ? null : (0, r.jsx)(S, {
+    return null == n ? null : (0, i.jsx)(v, {
         guild: n,
         saveOnClose: t
     })
 }
 
-function S(e) {
+function v(e) {
     let {
         guild: t,
         saveOnClose: n
-    } = e, s = (0, l.bG)([c.A], () => c.A.isLoading()), o = (0, l.bG)([b.A], () => b.A.editedOnboardingPrompts), d = (0, l.bG)([b.A], () => b.A.advancedMode), u = i.useRef(!1);
-    i.useEffect(() => {
-        s || u.current || (u.current = !0, d || 0 !== o.length || (0, h.WC)(t, [(0, v.Mc)()], !1))
+    } = e, r = (0, l.bG)([d.A], () => d.A.isLoading()), o = (0, l.bG)([A.A], () => A.A.editedOnboardingPrompts), c = (0, l.bG)([A.A], () => A.A.advancedMode), u = s.useRef(!1);
+    s.useEffect(() => {
+        r || u.current || (u.current = !0, c || 0 !== o.length || (0, _.WC)(t, [(0, E.Mc)()], !1))
     });
-    let g = i.useRef(t);
-    if (i.useEffect(() => {
-            g.current = t
-        }), i.useEffect(() => {
+    let m = s.useRef(t);
+    if (s.useEffect(() => {
+            m.current = t
+        }), s.useEffect(() => {
             if (n) return () => {
-                let e = g.current;
-                null != e && (0, h.dm)(e, {
+                let e = m.current;
+                null != e && (0, _.dm)(e, {
                     ignoreDefaultPrompt: !0
-                }).then(() => (0, p.fH)(e.id)).catch(() => {})
+                }).then(() => (0, x.fH)(e.id)).catch(() => {})
             }
         }, [n]), null == t) return null;
-    let f = async () => {
+    let h = async () => {
         try {
-            await (0, h.dm)(t), await (0, m.X$)(t.id)
-        } catch (e) {}
+            await (0, _.dm)(t), await (0, g.X$)(t.id)
+        } catch {}
     };
-    return (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(a.Heading, {
-            className: A.wx,
+    return (0, i.jsxs)(i.Fragment, {
+        children: [(0, i.jsx)(a.Heading, {
+            className: T.wx,
             variant: "heading-lg/extrabold",
-            children: d ? y.intl.string(y.t.AGjtFv) : y.intl.string(y.t.dqCzoT)
-        }), (0, r.jsx)(a.Text, {
+            children: c ? b.intl.string(b.t.AGjtFv) : b.intl.string(b.t.dqCzoT)
+        }), (0, i.jsx)(a.Text, {
             variant: "text-sm/normal",
             color: "text-default",
-            children: y.intl.string(y.t["q/6MLL"])
-        }), (0, r.jsxs)("div", {
-            className: A.yJ,
-            children: [(0, r.jsx)(a.MzZ, {
+            children: b.intl.string(b.t["q/6MLL"])
+        }), (0, i.jsxs)("div", {
+            className: T.yJ,
+            children: [(0, i.jsx)(a.MzZ, {
                 target: "_blank",
-                href: O.X7G.GUILD_ONBOARDING_EXAMPLES,
-                children: (0, r.jsx)(a.Text, {
+                href: N.X7G.GUILD_ONBOARDING_EXAMPLES,
+                children: (0, i.jsx)(a.Text, {
                     variant: "text-sm/medium",
                     color: "text-link",
-                    children: y.intl.string(y.t.Ok55Kh)
+                    children: b.intl.string(b.t.Ok55Kh)
                 })
-            }), (0, r.jsx)("div", {
-                className: A.Om
-            }), (0, r.jsx)(a.MzZ, {
-                onClick: f,
-                children: (0, r.jsx)(a.Text, {
+            }), (0, i.jsx)("div", {
+                className: T.Om
+            }), (0, i.jsx)(a.MzZ, {
+                onClick: h,
+                children: (0, i.jsx)(a.Text, {
                     variant: "text-sm/medium",
                     color: "text-link",
-                    children: y.intl.string(y.t["6gsjdM"])
+                    children: b.intl.string(b.t["6gsjdM"])
                 })
-            }), (0, r.jsx)("div", {
-                className: A.Om
-            }), (0, r.jsx)(x.mU, {
+            }), (0, i.jsx)("div", {
+                className: T.Om
+            }), (0, i.jsx)(p.mU, {
                 guildId: t.id
             })]
-        }), (0, r.jsx)(E, {
+        }), (0, i.jsx)(C, {
             guildId: t.id,
             prompts: o
-        }), n && (0, r.jsx)(j.A, {
+        }), n && (0, i.jsx)(f.A, {
             guildId: t.id
-        }), (0, r.jsx)("div", {
-            className: A.E3,
-            children: s ? (0, r.jsx)(a.y$y, {}) : (0, r.jsx)(_.A, {
-                postjoinOnly: d,
+        }), (0, i.jsx)("div", {
+            className: T.E3,
+            children: r ? (0, i.jsx)(a.y$y, {}) : (0, i.jsx)(j.A, {
+                postjoinOnly: c,
                 guildId: t.id
             })
         })]
     })
 }
 
-function I() {
+function S() {
     let e = (0, l.bG)([u.A], () => u.A.getGuild()),
-        t = (0, l.bG)([b.A], () => b.A.submitting),
-        n = (0, l.bG)([f.A], () => f.A.isSubmitting()),
-        i = (0, l.bG)([f.A], () => f.A.hasChanges());
-    return null == e ? null : (0, r.jsx)(s.A, {
+        t = (0, l.bG)([A.A], () => A.A.submitting),
+        n = (0, l.bG)([h.A], () => h.A.isSubmitting()),
+        s = (0, l.bG)([h.A], () => h.A.hasChanges());
+    return null == e ? null : (0, i.jsx)(r.A, {
         onSave: async () => {
             try {
-                await (0, h.dm)(e), i && await (0, p.q3)(e.id)
-            } catch (e) {}
+                await (0, _.dm)(e), s && await (0, x.q3)(e.id)
+            } catch {}
         },
         onReset: () => {
-            (0, h.P3)(), i && (0, p.p2)()
+            (0, _.P3)(), s && (0, x.p2)()
         },
-        submitting: t || i && n,
-        onSaveText: y.intl.string(y.t["R3BPH+"])
+        submitting: t || s && n,
+        onSaveText: b.intl.string(b.t["R3BPH+"])
     })
 }

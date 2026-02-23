@@ -1,8 +1,9 @@
 /** chunk id: 83766, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    qB: () => r
+    qB: () => i
 });
-let r = {
+let i = {
     origin: {
         x: -36,
         y: 7

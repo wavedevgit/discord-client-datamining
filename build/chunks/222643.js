@@ -1,55 +1,53 @@
 /** chunk id: 222643, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    x: () => d
-}), n(896048);
-var r = n(627968),
-    l = n(64700),
-    i = n(311907),
-    s = n(397927),
+    x: () => u
+});
+var i = n(627968),
+    s = n(64700),
+    l = n(311907),
+    r = n(397927),
     a = n(43189),
     o = n(964404),
     c = n(461782),
-    u = n(447404);
+    d = n(447404);
 
-function d(e) {
+function u(e) {
     let {
         buttonRef: t,
         dismissed: n,
-        onDismiss: d,
-        renderComponent: p,
-        nudgeAlignIntoViewport: h = !1,
-        skipForceHide: g = !1
-    } = e, f = l.useContext(c.vG), [m, b] = l.useState(""), [A, y] = l.useState(!1), O = (0, i.bG)([o.Ay], () => o.Ay.callHeaderHeight), j = l.useRef(null), x = l.useRef(0);
-    l.useEffect(() => {
+        onDismiss: u,
+        renderComponent: h,
+        nudgeAlignIntoViewport: A = !1,
+        skipForceHide: p = !1
+    } = e, g = s.useContext(c.vG), [m, _] = s.useState(""), [f, x] = s.useState(!1), C = (0, l.bG)([o.Ay], () => o.Ay.callHeaderHeight), E = s.useRef(null), I = s.useRef(0);
+    s.useEffect(() => {
         let e = t.current;
-        if (null != e) return e.addEventListener("click", d), () => e.removeEventListener("click", d)
-    }), l.useEffect(() => {
-        if (!g) {
-            var e, t;
-            b(String(x.current)), y(void 0 !== O && O < (null != (e = null == (t = j.current) ? void 0 : t.clientHeight) ? e : 300) + 24), x.current += 1
-        }
-    }, [O, j, g]);
+        if (null != e) return e.addEventListener("click", u), () => e.removeEventListener("click", u)
+    }), s.useEffect(() => {
+        p || (_(String(I.current)), x(void 0 !== C && C < (E.current?.clientHeight ?? 300) + 24), I.current += 1)
+    }, [C, E, p]);
     let {
-        preventIdle: _,
-        allowIdle: v
-    } = (0, u.o)("popup");
-    return (null == t ? void 0 : t.current) == null ? null : (0, r.jsx)(a.Ay, {
-        children: (0, r.jsx)(s.QCO, {
+        preventIdle: b,
+        allowIdle: N
+    } = (0, d.o)("popup");
+    return t?.current == null ? null : (0, i.jsx)(a.Ay, {
+        children: (0, i.jsx)(r.QCO, {
             targetRef: t,
             position: "top",
             align: "center",
             spacing: 0,
             positionKey: m,
-            nudgeAlignIntoViewport: h,
-            children: () => (0, r.jsx)("div", {
-                ref: j,
-                onMouseOver: _,
-                onFocus: _,
-                onBlur: v,
-                onMouseLeave: v,
-                children: p({
-                    hidden: A || f || n,
-                    onDismiss: d
+            nudgeAlignIntoViewport: A,
+            children: () => (0, i.jsx)("div", {
+                ref: E,
+                onMouseOver: b,
+                onFocus: b,
+                onBlur: N,
+                onMouseLeave: N,
+                children: h({
+                    hidden: f || g || n,
+                    onDismiss: u
                 })
             })
         })

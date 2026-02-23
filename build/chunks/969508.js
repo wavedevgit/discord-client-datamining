@@ -1,51 +1,50 @@
 /** chunk id: 969508, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    FG: () => R,
-    aV: () => L,
+    FG: () => P,
+    aV: () => U,
     uD: () => D
-}), n(896048), n(693327), n(554719), n(680155), n(323874), n(14289), n(35956);
-var r = n(64700),
-    l = n(284009),
-    a = n.n(l),
-    i = n(311907),
-    o = n(562465),
-    s = n(73153),
+}), n(323874), n(14289), n(35956);
+var l = n(64700),
+    a = n(284009),
+    r = n.n(a),
+    s = n(311907),
+    i = n(562465),
+    o = n(73153),
     c = n(608299),
-    u = n(155718),
-    d = n(444927),
-    p = n(163126),
-    m = n(358579),
-    f = n(956518),
-    O = n(706727),
-    b = n(961350),
-    y = n(734057),
-    h = n(31717),
-    j = n(696451),
-    g = n(967198),
-    A = n(522602),
-    v = n(486020),
-    E = n(927813),
-    C = n(661191),
-    x = n(292348),
-    N = n(207963),
-    I = n(814890),
-    P = n(750128),
-    S = n(322980),
-    _ = n(652215),
-    T = n(985018);
+    d = n(155718),
+    u = n(444927),
+    m = n(163126),
+    p = n(358579),
+    A = n(956518),
+    h = n(706727),
+    C = n(961350),
+    E = n(734057),
+    x = n(31717),
+    N = n(696451),
+    I = n(967198),
+    _ = n(522602),
+    f = n(486020),
+    g = n(927813),
+    T = n(661191),
+    v = n(292348),
+    j = n(207963),
+    S = n(814890),
+    O = n(750128),
+    R = n(322980),
+    y = n(652215),
+    b = n(985018);
 
-function R(e) {
-    var t;
-    let n = (0, N.jc)(),
-        r = null == n || null == (t = n.modal) ? void 0 : t.components[0];
-    return (null == r ? void 0 : r.type) === u.I5.ACTION_ROW && r.components[0].id === e
+function P(e) {
+    let t = (0, j.jc)(),
+        n = t?.modal?.components[0];
+    return n?.type === d.I5.ACTION_ROW && n.components[0].id === e
 }
 
-function w(e) {
-    return r.useMemo(() => {
-        let t = g.A.getGuildId(),
-            n = null != t && null != e.bot ? j.Ay.getMember(t, e.bot.id) : void 0,
-            r = v.Ay.getApplicationIconURL({
+function L(e) {
+    return l.useMemo(() => {
+        let t = I.A.getGuildId(),
+            n = null != t && null != e.bot ? N.Ay.getMember(t, e.bot.id) : void 0,
+            l = f.Ay.getApplicationIconURL({
                 id: e.id,
                 icon: e.icon,
                 botIconFirst: !0,
@@ -53,9 +52,9 @@ function w(e) {
                 guildMember: n
             });
         return {
-            applicationIconURL: r,
-            applicationName: (null == n ? void 0 : n.nick) != null ? n.nick : null != e.bot ? e.bot.username : e.name,
-            applicationBaseUrl: (0, f.Ay)(e.id)
+            applicationIconURL: l,
+            applicationName: n?.nick != null ? n.nick : null != e.bot ? e.bot.username : e.name,
+            applicationBaseUrl: (0, A.Ay)(e.id)
         }
     }, [e.id, e.icon, e.name, e.bot])
 }
@@ -63,190 +62,186 @@ function w(e) {
 function D(e, t) {
     let {
         application: n,
-        customId: l,
-        components: a
-    } = e, o = (0, p.A)(), [u, m] = r.useState(null), [f, O] = r.useState(null), [b, y] = r.useState({}), j = (0, i.bG)([P.A], () => P.A.getModalState(f), [f]), g = (0, d.A)(() => new Set), A = r.useCallback(async () => {
+        customId: a,
+        components: r
+    } = e, i = (0, m.A)(), [d, p] = l.useState(null), [A, h] = l.useState(null), [C, E] = l.useState({}), N = (0, s.bG)([O.A], () => O.A.getModalState(A), [A]), I = (0, u.A)(() => new Set), _ = l.useCallback(async () => {
         let t;
-        if (m(null), O(null), t = !0, g.forEach(e => {
+        if (p(null), h(null), t = !0, I.forEach(e => {
                 e() || (t = !1)
             }), t) {
-            let t = C.default.fromTimestamp(Date.now());
-            O(t), await M(e, o, t)
+            let t = T.default.fromTimestamp(Date.now());
+            h(t), await M(e, i, t)
         }
-    }, [o, e, g]);
-    r.useEffect(() => {
-        j === P.Z.SUCCEEDED && (s.h.dispatch({
+    }, [i, e, I]);
+    l.useEffect(() => {
+        N === O.Z.SUCCEEDED && (o.h.dispatch({
             type: "CLEAR_INTERACTION_MODAL_STATE",
-            customId: l
-        }), c.A.removeFiles(e.channelId, U(e.channelId, l).map(e => e.id), h.C.InteractionModal), t()), j === P.Z.ERRORED && m(T.intl.string(T.t.uJgdEu))
-    }, [f, j, t, l, e.channelId]);
+            customId: a
+        }), c.A.removeFiles(e.channelId, w(e.channelId, a).map(e => e.id), x.C.InteractionModal), t()), N === O.Z.ERRORED && p(b.intl.string(b.t.uJgdEu))
+    }, [A, N, t, a, e.channelId]);
     let {
-        applicationIconURL: v,
-        applicationName: E
-    } = w(n);
+        applicationIconURL: f,
+        applicationName: g
+    } = L(n);
     return {
-        components: a,
-        applicationIconURL: v,
-        applicationName: E,
-        submissionState: j,
-        error: u,
-        validators: g,
-        validationErrors: b,
-        setValidationErrors: y,
-        onSubmit: A
+        components: r,
+        applicationIconURL: f,
+        applicationName: g,
+        submissionState: N,
+        error: d,
+        validators: I,
+        validationErrors: C,
+        setValidationErrors: E,
+        onSubmit: _
     }
 }
 
-function L(e) {
+function U(e) {
     let {
         application: t,
         customId: n
     } = e, {
-        applicationIconURL: r,
-        applicationName: l,
-        applicationBaseUrl: i
-    } = w(t), o = y.A.getChannel(e.channelId);
-    a()(null != o, "channel should not be null");
-    let s = {
-        instance_id: "".concat(e.channelId, ":").concat(t.id, ":").concat(n),
+        applicationIconURL: l,
+        applicationName: a,
+        applicationBaseUrl: s
+    } = L(t), i = E.A.getChannel(e.channelId);
+    r()(null != i, "channel should not be null");
+    let o = {
+        instance_id: `${e.channelId}:${t.id}:${n}`,
         custom_id: n,
         channel_id: e.channelId
     };
-    null != o.guild_id && "" !== o.guild_id && (s.guild_id = o.guild_id);
-    let c = new URL(null != i ? i : "");
+    null != i.guild_id && "" !== i.guild_id && (o.guild_id = i.guild_id);
+    let c = new URL(s ?? "");
     return c.pathname = e.iframePath, {
-        applicationIconURL: r,
-        applicationName: l,
-        applicationBaseUrl: i,
-        queryParams: s,
+        applicationIconURL: l,
+        applicationName: a,
+        applicationBaseUrl: s,
+        queryParams: o,
         iframeUrl: c.toString()
     }
 }
 let k = (e, t, n) => t.map(t => {
     switch (t.type) {
-        case u.I5.ACTION_ROW:
+        case d.I5.ACTION_ROW:
             return {
                 type: t.type, components: k(e, t.components, n)
             };
-        case u.I5.TEXT_INPUT: {
-            let n = S.A.getInteractionComponentState(e, t.id);
+        case d.I5.TEXT_INPUT: {
+            let n = R.A.getInteractionComponentState(e, t.id);
             return {
                 type: t.type,
                 custom_id: t.customId,
-                value: (null == n ? void 0 : n.type) === t.type ? n.value : null
+                value: n?.type === t.type ? n.value : null
             }
         }
-        case u.I5.FILE_UPLOAD: {
-            var r;
-            let l = S.A.getInteractionComponentState(e, t.id),
-                a = (null == l ? void 0 : l.type) === t.type ? l.uploadIds : null;
+        case d.I5.FILE_UPLOAD: {
+            let l = R.A.getInteractionComponentState(e, t.id),
+                a = l?.type === t.type ? l.uploadIds : null;
             return {
                 type: t.type,
                 custom_id: t.customId,
-                values: null != (r = null == a ? void 0 : a.map(e => n.uploads.findIndex(t => t.id === e))) ? r : null
+                values: a?.map(e => n.uploads.findIndex(t => t.id === e)) ?? null
             }
         }
-        case u.I5.STRING_SELECT: {
-            let n = S.A.getInteractionComponentState(e, t.id);
+        case d.I5.STRING_SELECT: {
+            let n = R.A.getInteractionComponentState(e, t.id);
             return {
                 type: t.type,
                 custom_id: t.customId,
-                values: (null == n ? void 0 : n.type) === t.type ? n.values : null
+                values: n?.type === t.type ? n.values : null
             }
         }
-        case u.I5.USER_SELECT:
-        case u.I5.ROLE_SELECT:
-        case u.I5.MENTIONABLE_SELECT:
-        case u.I5.CHANNEL_SELECT: {
-            let n = S.A.getInteractionComponentState(e, t.id);
+        case d.I5.USER_SELECT:
+        case d.I5.ROLE_SELECT:
+        case d.I5.MENTIONABLE_SELECT:
+        case d.I5.CHANNEL_SELECT: {
+            let n = R.A.getInteractionComponentState(e, t.id);
             return {
                 type: t.type,
                 custom_id: t.customId,
-                values: (null == n ? void 0 : n.type) === t.type ? n.selectedOptions.map(e => e.value) : null
+                values: n?.type === t.type ? n.selectedOptions.map(e => e.value) : null
             }
         }
-        case u.I5.TEXT_DISPLAY:
+        case d.I5.TEXT_DISPLAY:
             return {
                 type: t.type
             };
-        case u.I5.LABEL:
+        case d.I5.LABEL:
             return {
                 type: t.type, component: k(e, [t.component], n)[0]
             };
-        case u.I5.RADIO_GROUP: {
-            let n = S.A.getInteractionComponentState(e, t.id);
+        case d.I5.RADIO_GROUP: {
+            let n = R.A.getInteractionComponentState(e, t.id);
             return {
                 type: t.type,
                 custom_id: t.customId,
-                value: (null == n ? void 0 : n.type) === t.type ? n.value : null
+                value: n?.type === t.type ? n.value : null
             }
         }
-        case u.I5.CHECKBOX_GROUP: {
-            let n = S.A.getInteractionComponentState(e, t.id);
+        case d.I5.CHECKBOX_GROUP: {
+            let n = R.A.getInteractionComponentState(e, t.id);
             return {
                 type: t.type,
                 custom_id: t.customId,
-                values: (null == n ? void 0 : n.type) === t.type ? n.values : null
+                values: n?.type === t.type ? n.values : null
             }
         }
-        case u.I5.CHECKBOX: {
-            let n = S.A.getInteractionComponentState(e, t.id);
+        case d.I5.CHECKBOX: {
+            let n = R.A.getInteractionComponentState(e, t.id);
             return {
                 type: t.type,
                 custom_id: t.customId,
-                value: (null == n ? void 0 : n.type) === t.type && n.value
+                value: n?.type === t.type && n.value
             }
         }
         default:
-            a()(!1, "unreachable")
+            r()(!1, "unreachable")
     }
 });
 
-function U(e, t) {
-    return A.A.getUploads(e, h.C.InteractionModal).filter(e => {
-        var n;
-        return (null == (n = (0, I.j2)(e.id)) ? void 0 : n.containerId) === t
-    })
+function w(e, t) {
+    return _.A.getUploads(e, x.C.InteractionModal).filter(e => (0, S.j2)(e.id)?.containerId === t)
 }
 async function M(e, t, n) {
-    let r = e.channelId,
-        l = y.A.getChannel(r);
-    a()(null != l, "expected channel");
-    let i = U(r, e.customId),
-        s = i.length > 0 ? (0, m.A)(i) : void 0;
-    (0, O.tU)(n, {
+    let l = e.channelId,
+        a = E.A.getChannel(l);
+    r()(null != a, "expected channel");
+    let s = w(l, e.customId),
+        o = s.length > 0 ? (0, p.A)(s) : void 0;
+    (0, h.tU)(n, {
         data: {
-            interactionType: u.G4.MODAL_SUBMIT,
+            interactionType: d.G4.MODAL_SUBMIT,
             applicationId: e.application.id
         },
-        preflight: s
-    }), await s;
-    let c = i.map((e, t) => (0, x.OW)(e, t)),
-        d = k(e.customId, e.components, {
-            uploads: i
+        preflight: o
+    }), await o;
+    let c = s.map((e, t) => (0, v.OW)(e, t)),
+        u = k(e.customId, e.components, {
+            uploads: s
         }),
-        p = () => {
-            null != t && t.aborted || o.Bo.post({
-                url: _.Rsh.INTERACTIONS,
+        m = () => {
+            t?.aborted || i.Bo.post({
+                url: y.Rsh.INTERACTIONS,
                 body: {
-                    type: u.G4.MODAL_SUBMIT,
+                    type: d.G4.MODAL_SUBMIT,
                     application_id: e.application.id,
-                    channel_id: l.id,
-                    guild_id: l.guild_id,
+                    channel_id: a.id,
+                    guild_id: a.guild_id,
                     data: {
                         id: e.id,
                         custom_id: e.customId,
-                        components: d,
+                        components: u,
                         attachments: c.length > 0 ? c : void 0
                     },
-                    session_id: b.default.getSessionId(),
+                    session_id: C.default.getSessionId(),
                     nonce: n
                 },
                 signal: t,
                 rejectWithError: !1
             }).catch(e => {
-                429 === e.status ? setTimeout(p, e.body.retry_after * E.A.Millis.SECOND) : (0, O.C1)(n)
+                429 === e.status ? setTimeout(m, e.body.retry_after * g.A.Millis.SECOND) : (0, h.C1)(n)
             })
         };
-    p()
+    m()
 }

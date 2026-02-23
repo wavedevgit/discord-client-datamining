@@ -1,37 +1,37 @@
 /** chunk id: 206348, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    Z: () => c
+    Z: () => d
 });
 var a = n(627968);
 n(64700);
-var l = n(158954),
-    r = n(397927),
-    i = n(675120),
-    s = n(204821),
+var i = n(158954),
+    s = n(397927),
+    l = n(675120),
+    r = n(204821),
     o = n(452862);
-let c = e => {
+let d = e => {
     let {
         children: t,
         actions: n,
-        footerInput: c,
-        title: d
+        footerInput: d,
+        title: c
     } = e;
-    return (0, a.jsxs)(r.BJc, {
+    return (0, a.jsxs)(s.BJc, {
         direction: "vertical",
         justify: "start",
-        padding: s.p,
+        padding: r.p,
         className: o.kL,
-        children: [(0, a.jsx)(r.Heading, {
+        children: [(0, a.jsx)(s.Heading, {
             variant: "heading-lg/semibold",
             className: o.R_,
-            children: d
-        }), (0, a.jsx)(l.cwr, {
+            children: c
+        }), (0, a.jsx)(i.cwr, {
             children: t
         }), (0, a.jsx)("div", {
             className: o.Ic
-        }), (0, a.jsx)(i.v, {
+        }), (0, a.jsx)(l.v, {
             actions: n,
-            footerInput: c
+            footerInput: d
         })]
     })
 }

@@ -1,16 +1,15 @@
 /** chunk id: 179581, original params: t,e,n (module,exports,require) **/
 n.d(e, {
-    N: () => r
+    N: () => l
 });
-var l = n(309010),
+var a = n(309010),
     i = n(746080);
 
-function r() {
-    var t;
-    let e = null != (t = l.A.getCurrentlySelectedChannelId()) ? t : void 0;
-    return null != e && (0, i.jq)(e) ? {
-        channel_static_route: e
+function l() {
+    let t = a.A.getCurrentlySelectedChannelId() ?? void 0;
+    return null != t && (0, i.jq)(t) ? {
+        channel_static_route: t
     } : {
-        channel_id: e
+        channel_id: t
     }
 }

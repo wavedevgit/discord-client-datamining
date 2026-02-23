@@ -1,17 +1,17 @@
 /** chunk id: 517235, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => u
+    A: () => d
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var l = n(311907),
-    i = n(498400),
-    s = n(106922),
-    a = n(287809),
+var s = n(311907),
+    a = n(498400),
+    r = n(106922),
+    l = n(287809),
     o = n(927578),
     c = n(788868);
 
-function u() {
-    let e = (0, l.bG)([a.default], () => a.default.getCurrentUser());
-    return (0, o.YE)(e, c.PremiumTypes.TIER_2) ? (0, r.jsx)(s.A, {}) : (0, r.jsx)(i.A, {})
+function d() {
+    let e = (0, s.bG)([l.default], () => l.default.getCurrentUser());
+    return (0, o.YE)(e, c.PremiumTypes.TIER_2) ? (0, i.jsx)(r.A, {}) : (0, i.jsx)(a.A, {})
 }

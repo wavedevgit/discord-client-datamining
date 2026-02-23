@@ -1,18 +1,18 @@
 /** chunk id: 72800, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
-}), n(896048);
-var r = n(627968),
-    i = n(64700),
+    A: () => _
+});
+var i = n(627968),
+    r = n(64700),
     l = n(503698),
     a = n.n(l),
     s = n(417597),
     o = n(379848),
-    c = n(967198),
-    u = n(533550),
-    d = n(49999),
-    p = n(826898);
-let h = i.memo(function(e) {
+    d = n(967198),
+    c = n(533550),
+    u = n(49999),
+    A = n(826898);
+let h = r.memo(function(e) {
     let {
         state: t,
         markAsDismissed: n
@@ -20,21 +20,21 @@ let h = i.memo(function(e) {
         name: l,
         guildId: s,
         boundingRect: o
-    } = t, c = i.useMemo(() => null, [l, s, n]);
-    return null == c ? null : (0, r.jsx)("div", {
-        className: a()(p.UX, (null == o || o.y < 0) && p.R),
+    } = t, d = r.useMemo(() => null, [l, s, n]);
+    return null == d ? null : (0, i.jsx)("div", {
+        className: a()(A.UX, (null == o || o.y < 0) && A.R),
         style: null == o ? {} : {
             top: o.top,
             left: o.right - o.x
         },
-        children: c
+        children: d
     })
 });
 
-function f() {
-    let e = (0, s.bG)([c.A], () => c.A.getGuildId()),
-        t = (0, u.RX)(e),
-        [n, i] = (0, o.kn)(Object.values(t).filter(e => {
+function _() {
+    let e = (0, s.bG)([d.A], () => d.A.getGuildId()),
+        t = (0, c.RX)(e),
+        [n, r] = (0, o.kn)(Object.values(t).filter(e => {
             let {
                 disabled: t
             } = e;
@@ -44,14 +44,14 @@ function f() {
                 name: t
             } = e;
             return t
-        }), d.m.SIDEBAR);
+        }), u.m.SIDEBAR);
     if (null == n) return null;
     let l = t[n];
-    return null == l ? null : (0, r.jsx)("div", {
-        className: p.kL,
-        children: (0, r.jsx)(h, {
+    return null == l ? null : (0, i.jsx)("div", {
+        className: A.kL,
+        children: (0, i.jsx)(h, {
             state: l,
-            markAsDismissed: i
+            markAsDismissed: r
         })
     })
 }

@@ -2,7 +2,7 @@
 n.d(t, {
     X: () => l
 });
-let r = (0, n(945810).mj)({
+let i = (0, n(945810).mj)({
     name: "2026-01-social-layer-storefront-recommendations-on-profile-modal",
     kind: "user",
     defaultConfig: {
@@ -22,7 +22,7 @@ function l(e) {
     let {
         location: t
     } = e;
-    return r.useConfig({
+    return i.useConfig({
         location: t
     }).enabled
 }

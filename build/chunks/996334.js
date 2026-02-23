@@ -1,9 +1,8 @@
-/** chunk id: 996334, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    i: () => i
+/** chunk id: 996334, original params: e,l,a (module,exports,require) **/
+a.d(l, {
+    i: () => o
 });
-let r = (0, n(250105).Ay)({
+let t = (0, a(250105).Ay)({
     kind: "user",
     name: "2025-10-mana-date-inputs",
     defaultConfig: {
@@ -16,8 +15,8 @@ let r = (0, n(250105).Ay)({
     }
 });
 
-function i(e) {
-    return r.useConfig({
+function o(e) {
+    return t.useConfig({
         location: e
     }).enabled
 }

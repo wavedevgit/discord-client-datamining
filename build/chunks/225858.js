@@ -1,11 +1,11 @@
 /** chunk id: 225858, original params: e,t,r (module,exports,require) **/
 r.d(t, {
     A: () => G
-}), r(896048), r(264879);
+});
 var s = r(627968),
-    l = r(64700),
-    n = r(503698),
-    i = r.n(n),
+    n = r(64700),
+    l = r(503698),
+    i = r.n(l),
     a = r(735438),
     d = r.n(a),
     c = r(317097),
@@ -19,9 +19,9 @@ var s = r(627968),
     g = r(967144),
     p = r(95701),
     f = r(34457),
-    v = r(287809),
-    j = r(147925),
-    E = r(9865),
+    j = r(287809),
+    E = r(147925),
+    v = r(9865),
     A = r(79680),
     N = r(651539),
     I = r(774393),
@@ -32,19 +32,19 @@ var s = r(627968),
 
 function G(e) {
     let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
-        [r, n] = l.useState(""),
-        [i, a] = l.useState(null),
-        [d, c] = l.useState(null),
+        [r, l] = n.useState(""),
+        [i, a] = n.useState(null),
+        [d, c] = n.useState(null),
         u = (0, N.A)(e.code);
-    l.useEffect(() => {
+    n.useEffect(() => {
         !async function() {
-            let e = v.default.getCurrentUser();
+            let e = j.default.getCurrentUser();
             if (null == e) try {
                 e = await (0, L.rQ)()
             } catch (e) {
                 C.A.verifySSOToken("accept_guild_template", null)
             }
-            null != e && n(_.intl.formatToPlainString(u.defaultName, {
+            null != e && l(_.intl.formatToPlainString(u.defaultName, {
                 username: e.username
             }))
         }()
@@ -66,11 +66,11 @@ function G(e) {
                 type: "text",
                 value: r,
                 maxLength: 100,
-                onChange: n,
-                error: null == d ? void 0 : d.name
+                onChange: l,
+                error: d?.name
             })]
         }),
-        g = e.serializedSourceGuild.roles.map(t => E.Wj(e.serializedSourceGuild.id, t)).filter(e => !(0, f.Oy)(e));
+        g = e.serializedSourceGuild.roles.map(t => v.Wj(e.serializedSourceGuild.id, t)).filter(e => !(0, f.Oy)(e));
     return {
         form: x,
         preview: (0, s.jsxs)(s.Fragment, {
@@ -101,7 +101,7 @@ function S(e) {
         channels: t
     } = e, r = d()(t).sortBy(e => null == e.parent_id ? 1e4 * Number(e.id) : 1e4 * Number(e.parent_id) + e.id).map(e => {
         var t;
-        let r = (t = e).type === Z.rbe.GUILD_CATEGORY ? j.A : (0, x.gU)((0, p.UE)(t));
+        let r = (t = e).type === Z.rbe.GUILD_CATEGORY ? E.A : (0, x.gU)((0, p.UE)(t));
         return (0, s.jsxs)("div", {
             className: i()(M.Ix, {
                 [M.L1]: e.type === Z.rbe.GUILD_CATEGORY
@@ -125,35 +125,34 @@ function T(e) {
     let {
         guildId: t,
         roles: r
-    } = e, l = r.slice().reverse().map(e => (0, s.jsx)(H, {
+    } = e, n = r.slice().reverse().map(e => (0, s.jsx)(H, {
         guildId: t,
         role: e
     }, e.id));
     return (0, s.jsx)("ul", {
         className: M.F6,
-        children: l
+        children: n
     })
 }
 
 function H(e) {
-    var t, r;
     let {
-        guildId: l,
-        role: n
-    } = e, i = (0, o.rdh)(u.A.colors.BORDER_SUBTLE).hex(), a = null == n.color ? i : (0, c.Hl)(n.color), d = (0, g.X_)(l, n, n.colorStrings);
+        guildId: t,
+        role: r
+    } = e, n = (0, o.rdh)(u.A.colors.BORDER_SUBTLE).hex(), l = null == r.color ? n : (0, c.Hl)(r.color), i = (0, g.X_)(t, r, r.colorStrings);
     return (0, s.jsxs)("li", {
         className: M.JC,
         style: {
-            borderColor: null != (t = (0, c.xp)(a, .6)) ? t : void 0,
-            backgroundColor: null != (r = (0, c.xp)(a, .075)) ? r : void 0
+            borderColor: (0, c.xp)(l, .6) ?? void 0,
+            backgroundColor: (0, c.xp)(l, .075) ?? void 0
         },
         children: [(0, s.jsx)(o.RYH, {
             className: M.Ni,
-            color: a,
-            colors: d
+            color: l,
+            colors: i
         }), (0, s.jsx)(o.Text, {
             variant: "text-xs/medium",
-            children: n.name
+            children: r.name
         })]
     })
 }

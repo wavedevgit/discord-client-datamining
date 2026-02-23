@@ -1,102 +1,70 @@
 /** chunk id: 467164, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    default: () => I
-}), n(896048);
+    default: () => y
+});
 var l = n(627968),
-    r = n(64700),
-    i = n(989349),
-    a = n.n(i),
+    i = n(64700),
+    a = n(989349),
+    r = n.n(a),
     s = n(158954),
     c = n(311907),
-    o = n(397927),
-    u = n(964486),
-    d = n(47167),
-    g = n(232246),
-    h = n(974930),
-    f = n(422845),
-    x = n(71393),
+    d = n(397927),
+    o = n(964486),
+    u = n(47167),
+    h = n(232246),
+    g = n(974930),
+    x = n(422845),
+    _ = n(71393),
     m = n(994500),
-    j = n(287809),
-    b = n(954571),
-    p = n(272379),
-    _ = n(446600),
-    O = n(366098),
-    y = n(918192),
-    v = n(660110),
-    A = n(567854),
-    T = n(516607),
-    E = n(652215),
-    S = n(988794),
-    P = n(985018),
-    w = n(737782),
-    D = n(973324);
+    A = n(287809),
+    T = n(954571),
+    j = n(272379),
+    f = n(446600),
+    E = n(366098),
+    v = n(918192),
+    S = n(660110),
+    p = n(567854),
+    N = n(516607),
+    C = n(652215),
+    b = n(988794),
+    D = n(985018),
+    I = n(737782),
+    R = n(973324);
 
-function N(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            l = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), l.forEach(function(t) {
-            var l;
-            l = n[t], t in e ? Object.defineProperty(e, t, {
-                value: l,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = l
-        })
-    }
-    return e
-}
-
-function C(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var l = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, l)
-        }
-        return n
-    })(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-
-function I(e) {
+function y(e) {
     let {
         channel: t,
         onClose: n,
-        transitionState: i
-    } = e, a = (0, c.bG)([x.A], () => x.A.getGuild(t.guild_id));
-    return (r.useEffect(() => {
-        null == a && n()
-    }, [a, n]), null == a) ? null : (0, l.jsx)(k, {
-        transitionState: i,
-        guild: a,
+        transitionState: a
+    } = e, r = (0, c.bG)([_.A], () => _.A.getGuild(t.guild_id));
+    return (i.useEffect(() => {
+        null == r && n()
+    }, [r, n]), null == r) ? null : (0, l.jsx)(k, {
+        transitionState: a,
+        guild: r,
         channel: t,
         onClose: n
     })
 }
 
-function R(e) {
+function O(e) {
     let {
         stageChannelsInGuild: t,
         channel: n,
-        onSelectChannel: r
+        onSelectChannel: i
     } = e;
-    return null == r ? null : (0, l.jsx)("div", {
-        className: w.BD,
-        children: (0, l.jsx)(o.ZiE, {
+    return null == i ? null : (0, l.jsx)("div", {
+        className: I.BD,
+        children: (0, l.jsx)(d.ZiE, {
             selectionMode: "single",
             required: !0,
-            label: P.intl.string(P.t.S7GjDz),
+            label: D.intl.string(D.t.S7GjDz),
             value: n.id,
             options: t.map(e => ({
                 id: e.id,
                 value: e.id,
-                label: (0, d.m1)(e, j.default, m.A, !0),
-                leading: (0, l.jsx)(o.qux, {
+                label: (0, u.m1)(e, A.default, m.A, !0),
+                leading: (0, l.jsx)(d.qux, {
                     size: "custom",
                     color: "currentColor",
                     height: 24
@@ -104,152 +72,151 @@ function R(e) {
             })),
             onSelectionChange: e => {
                 let n = t.find(t => t.id === e);
-                null != n && r(n)
+                null != n && i(n)
             }
         })
     })
 }
 
 function k(e) {
-    var t, n;
     let {
-        channel: i,
-        guild: c,
-        onClose: x,
-        onSelectChannel: m,
-        transitionState: j,
-        isEvent: I = !1
+        channel: t,
+        guild: n,
+        onClose: a,
+        onSelectChannel: c,
+        transitionState: _,
+        isEvent: m = !1
     } = e, {
-        loading: k,
-        error: G,
-        onSave: M
-    } = (0, A.A)(i, x), B = r.useMemo(() => _.A.getStageInstanceByChannel(i.id), [i.id]), [U, z] = r.useState(null != (t = null == B ? void 0 : B.topic) ? t : ""), [L, V] = r.useState(""), [F] = r.useState(I), [K, W] = r.useState({
-        startDate: (0, h.jd)()
-    }), [q, Q] = r.useState(!1), Z = (0, p.Z)(i), X = (0, p.K)(i), J = null == B && Z && !F, [Y, H] = r.useState(J && X), $ = S.dD.GUILD_ONLY, [ee] = r.useState(null != (n = null == B ? void 0 : B.privacy_level) ? n : $), [et, en] = r.useState(null), el = (0, O.D3)(i.id), er = (0, O.Xk)(i.id), [ei, ea] = r.useState(!1), es = (0, d.Ay)(i), ec = (0, g.A)(c), eo = null != m, eu = ec.length > 1;
-    (0, u.Ay)(() => {
-        b.default.track(E.HAw.START_STAGE_OPENED, {
-            stage_instance_id: null == B ? void 0 : B.id,
+        loading: A,
+        error: y,
+        onSave: k
+    } = (0, p.A)(t, a), G = i.useMemo(() => f.A.getStageInstanceByChannel(t.id), [t.id]), [w, P] = i.useState(G?.topic ?? ""), [M, B] = i.useState(""), [U] = i.useState(m), [z, L] = i.useState({
+        startDate: (0, g.jd)()
+    }), [V, F] = i.useState(!1), K = (0, j.Z)(t), W = (0, j.K)(t), q = null == G && K && !U, [Q, Z] = i.useState(q && W), X = b.dD.GUILD_ONLY, [J] = i.useState(G?.privacy_level ?? X), [Y, H] = i.useState(null), $ = (0, E.D3)(t.id), ee = (0, E.Xk)(t.id), [et, en] = i.useState(!1), el = (0, u.Ay)(t), ei = (0, h.A)(n), ea = null != c, er = ei.length > 1;
+    (0, o.Ay)(() => {
+        T.default.track(C.HAw.START_STAGE_OPENED, {
+            stage_instance_id: G?.id,
             can_start_public_stage: !1,
-            guild_id: i.guild_id
+            guild_id: t.guild_id
         })
     });
-    let ed = e => {
-            (e.preventDefault(), ee === S.dD.PUBLIC && U.length < 20 && !ei) ? ea(!0): F || null == M || M({
-                topic: U,
-                privacyLevel: ee,
-                sendStartNotification: Y
+    let es = e => {
+            (e.preventDefault(), J === b.dD.PUBLIC && w.length < 20 && !et) ? en(!0): U || k?.({
+                topic: w,
+                privacyLevel: J,
+                sendStartNotification: Q
             })
         },
-        eg = r.useRef(null);
-    r.useEffect(() => {
-        var e;
-        null == (e = eg.current) || e.focus()
+        ec = i.useRef(null);
+    i.useEffect(() => {
+        ec.current?.focus()
     }, []);
-    let eh = q && null != K.startDate && K.startDate >= a()(),
-        ef = (0, l.jsxs)(l.Fragment, {
+    let ed = V && null != z.startDate && z.startDate >= r()(),
+        eo = (0, l.jsxs)(l.Fragment, {
             children: [(0, l.jsx)("div", {
-                className: w.GU,
-                children: null == B && (el > 0 || er > 0) && (0, l.jsx)(y.Bw, {
-                    channelId: i.id
+                className: I.GU,
+                children: null == G && ($ > 0 || ee > 0) && (0, l.jsx)(v.Bw, {
+                    channelId: t.id
                 })
             }), (0, l.jsxs)("form", {
-                onSubmit: ed,
-                className: w.Zd,
-                children: [(0, l.jsx)(o.ksK, {
+                onSubmit: es,
+                className: I.Zd,
+                children: [(0, l.jsx)(d.ksK, {
                     required: !0,
-                    error: null != G ? G.getAnyErrorMessage() : void 0,
-                    label: I ? P.intl.string(P.t["0HbEQ6"]) : P.intl.string(P.t["5FPBOB"]),
-                    onChange: e => z(e),
-                    helperText: ei ? P.intl.string(P.t.AqTyaR) : void 0,
-                    placeholder: P.intl.string(P.t.ZwWruY),
-                    maxLength: T.RY,
-                    value: U,
+                    error: null != y ? y.getAnyErrorMessage() : void 0,
+                    label: m ? D.intl.string(D.t["0HbEQ6"]) : D.intl.string(D.t["5FPBOB"]),
+                    onChange: e => P(e),
+                    helperText: et ? D.intl.string(D.t.AqTyaR) : void 0,
+                    placeholder: D.intl.string(D.t.ZwWruY),
+                    maxLength: N.RY,
+                    value: w,
                     autoComplete: "off",
-                    inputRef: eg
-                }), eo && eu ? (0, l.jsx)(R, {
-                    stageChannelsInGuild: ec,
-                    channel: i,
-                    onSelectChannel: m
-                }) : null, F && (0, l.jsxs)(l.Fragment, {
-                    children: [(0, l.jsx)(f.A, {
-                        className: w.kz,
-                        onScheduleChange: W,
+                    inputRef: ec
+                }), ea && er ? (0, l.jsx)(O, {
+                    stageChannelsInGuild: ei,
+                    channel: t,
+                    onSelectChannel: c
+                }) : null, U && (0, l.jsxs)(l.Fragment, {
+                    children: [(0, l.jsx)(x.A, {
+                        className: I.kz,
+                        onScheduleChange: L,
                         onRecurrenceChange: e => {
-                            let t = K.startDate;
-                            null == t || en((0, h.nG)(e, t))
+                            let t = z.startDate;
+                            null == t || H((0, g.nG)(e, t))
                         },
-                        schedule: K,
-                        recurrenceRule: et,
-                        timeSelected: q,
-                        onTimeChange: Q
-                    }), null != K.startDate && K.startDate < a()() ? (0, l.jsx)(o.Text, {
+                        schedule: z,
+                        recurrenceRule: Y,
+                        timeSelected: V,
+                        onTimeChange: F
+                    }), null != z.startDate && z.startDate < r()() ? (0, l.jsx)(d.Text, {
                         color: "text-feedback-critical",
                         variant: "text-xs/normal",
-                        className: w.$e,
-                        children: P.intl.string(P.t.AXR5Ss)
+                        className: I.$e,
+                        children: D.intl.string(D.t.AXR5Ss)
                     }) : null]
-                }), I && (0, l.jsx)("div", {
-                    className: w.kz,
-                    children: (0, l.jsx)(o.fs1, {
-                        label: P.intl.string(P.t["+gRCC7"]),
-                        placeholder: P.intl.string(P.t["kWO/E8"]),
-                        value: L,
-                        onChange: e => V(e),
-                        maxLength: S.IJ
+                }), m && (0, l.jsx)("div", {
+                    className: I.kz,
+                    children: (0, l.jsx)(d.fs1, {
+                        label: D.intl.string(D.t["+gRCC7"]),
+                        placeholder: D.intl.string(D.t["kWO/E8"]),
+                        value: M,
+                        onChange: e => B(e),
+                        maxLength: b.IJ
                     })
-                }), eo && !eu ? (0, l.jsx)(o.Text, {
+                }), ea && !er ? (0, l.jsx)(d.Text, {
                     color: "text-default",
                     variant: "text-xs/normal",
-                    className: w.Qw,
-                    children: P.intl.format(P.t["S+9O7g"], {
-                        stageName: es,
-                        stageHook: (e, t) => (0, l.jsx)("span", {
-                            className: w.HA,
-                            children: i.name
-                        }, t)
+                    className: I.Qw,
+                    children: D.intl.format(D.t["S+9O7g"], {
+                        stageName: el,
+                        stageHook: (e, n) => (0, l.jsx)("span", {
+                            className: I.HA,
+                            children: t.name
+                        }, n)
                     })
-                }) : null, (0, l.jsx)(v.A, {
-                    className: w.XI,
-                    channelId: i.id
+                }) : null, (0, l.jsx)(S.A, {
+                    className: I.XI,
+                    channelId: t.id
                 })]
             })]
         }),
-        ex = {
-            onClose: x,
-            title: null == B ? P.intl.string(P.t.DDF0cJ) : P.intl.string(P.t.YPdQOp),
-            subtitle: null == B ? P.intl.string(P.t.bqQIwa) : P.intl.string(P.t["I+9bLx"]),
-            transitionState: j,
+        eu = {
+            onClose: a,
+            title: null == G ? D.intl.string(D.t.DDF0cJ) : D.intl.string(D.t.YPdQOp),
+            subtitle: null == G ? D.intl.string(D.t.bqQIwa) : D.intl.string(D.t["I+9bLx"]),
+            transitionState: _,
             actions: [{
                 variant: "secondary",
-                text: P.intl.string(P.t["ETE/oC"]),
-                onClick: () => x()
+                text: D.intl.string(D.t["ETE/oC"]),
+                onClick: () => a()
             }, {
                 variant: "primary",
-                text: F ? P.intl.string(P.t["60lJ0C"]) : null == B ? P.intl.string(P.t.s8mM8A) : P.intl.string(P.t.K344S7),
-                onClick: ed,
-                disabled: "" === U || null == ee || I && !eh,
-                loading: k
+                text: U ? D.intl.string(D.t["60lJ0C"]) : null == G ? D.intl.string(D.t.s8mM8A) : D.intl.string(D.t.K344S7),
+                onClick: es,
+                disabled: "" === w || null == J || m && !ed,
+                loading: A
             }],
-            actionBarInput: J ? (0, l.jsxs)(o.DUT, {
-                onClick: () => H(!Y),
-                className: w.Qy,
-                children: [(0, l.jsx)(o.P7L, {
-                    checked: Y
-                }), (0, l.jsx)(o.Text, {
+            actionBarInput: q ? (0, l.jsxs)(d.DUT, {
+                onClick: () => Z(!Q),
+                className: I.Qy,
+                children: [(0, l.jsx)(d.P7L, {
+                    checked: Q
+                }), (0, l.jsx)(d.Text, {
                     color: "text-default",
                     variant: "text-sm/normal",
-                    children: P.intl.string(P.t["Pe+Pwp"])
+                    children: D.intl.string(D.t["Pe+Pwp"])
                 })]
             }) : void 0
         };
-    return null == B ? (0, l.jsx)(s.ExpressiveModal, C(N({
+    return null == G ? (0, l.jsx)(s.ExpressiveModal, {
         graphic: {
             type: "image",
-            src: D.A
-        }
-    }, ex), {
-        children: ef
-    })) : (0, l.jsx)(s.Modal, C(N({}, ex), {
-        children: ef
-    }))
+            src: R.A
+        },
+        ...eu,
+        children: eo
+    }) : (0, l.jsx)(s.Modal, {
+        ...eu,
+        children: eo
+    })
 }

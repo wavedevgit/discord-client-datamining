@@ -1,123 +1,123 @@
 /** chunk id: 831806, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    o: () => P
-}), n(896048), n(801541);
-var r = n(627968),
-    i = n(64700),
+    o: () => O
+}), n(801541);
+var i = n(627968),
+    s = n(64700),
     l = n(889137),
-    s = n(417597),
+    r = n(417597),
     a = n(732955),
     o = n(397927),
-    c = n(722888),
-    d = n(209812),
+    d = n(722888),
+    c = n(209812),
     u = n(44892),
-    g = n(833448),
-    m = n(299824),
-    p = n(997509),
-    f = n(529942),
-    h = n(209700),
-    b = n(976860),
-    x = n(260509),
-    j = n(317525),
-    _ = n(71393),
-    O = n(287809),
-    v = n(975571),
-    y = n(250627),
-    A = n(808138),
-    E = n(271653),
-    N = n(371701),
-    S = n(652215),
-    I = n(746080),
-    C = n(985018),
-    T = n(289);
+    m = n(833448),
+    g = n(299824),
+    x = n(997509),
+    h = n(529942),
+    _ = n(209700),
+    A = n(976860),
+    p = n(260509),
+    f = n(317525),
+    j = n(71393),
+    N = n(287809),
+    E = n(975571),
+    b = n(250627),
+    T = n(808138),
+    C = n(271653),
+    I = n(371701),
+    v = n(652215),
+    S = n(746080),
+    y = n(985018),
+    R = n(289);
 
-function P(e) {
+function O(e) {
     let {
         guildId: t,
         hasValidApplication: n
     } = e, {
-        listingsLoaded: P
-    } = (0, y.bb)(t), w = (0, s.bG)([_.A], () => _.A.getGuild(t)), R = (0, s.bG)([O.default], () => O.default.getCurrentUser()), D = null != w && (0, x.bM)(w, R), {
-        loading: G
-    } = (0, c.G)(t), [L, k] = i.useState(n ? "manage_listings" : "payment");
-    (0, g.T)(w);
-    let M = i.useCallback(() => {
-        if (null == w) return;
-        let e = j.A.getEveryoneRole(w);
-        p.A.close();
+        listingsLoaded: O
+    } = (0, b.bb)(t), G = (0, r.bG)([j.A], () => j.A.getGuild(t)), L = (0, r.bG)([N.default], () => N.default.getCurrentUser()), D = null != G && (0, p.bM)(G, L), {
+        loading: M
+    } = (0, d.G)(t), [k, U] = s.useState(n ? "manage_listings" : "payment");
+    (0, m.T)(G);
+    let P = s.useCallback(() => {
+        if (null == G) return;
+        let e = f.A.getEveryoneRole(G);
+        x.A.close();
         let t = {
             [e.id]: e
         };
-        (0, f.Tk)(w.id, {
-            type: h._.SERVER_SHOP,
+        (0, h.Tk)(G.id, {
+            type: _._.SERVER_SHOP,
             roles: t,
             initialTab: "guild_products",
-            returnToSection: S.BEX.GUILD_PRODUCTS
-        }), (0, b.pX)(S.BVt.CHANNEL(w.id, I.VV.GUILD_SHOP))
-    }, [w]);
-    if (!P || G) return (0, r.jsx)(o.y$y, {});
-    if (null == w) return null;
-    let U = (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsx)(o.Heading, {
+            returnToSection: v.BEX.GUILD_PRODUCTS
+        }), (0, A.pX)(v.BVt.CHANNEL(G.id, S.VV.GUILD_SHOP))
+    }, [G]);
+    if (!O || M) return (0, i.jsx)(o.y$y, {});
+    if (null == G) return null;
+    let w = (0, i.jsxs)(i.Fragment, {
+            children: [(0, i.jsx)(o.Heading, {
                 variant: "heading-lg/semibold",
-                children: C.intl.string(C.t.X6h2gz)
-            }), (0, r.jsx)(o.Text, {
+                children: y.intl.string(y.t.X6h2gz)
+            }), (0, i.jsx)(o.Text, {
                 variant: "text-sm/normal",
-                children: C.intl.format(C.t.xiYuDt, {
-                    monetizationPolicyLink: v.A.getArticleURL(S.MVz.CREATOR_POLICY),
-                    serverProductsSupportLink: v.A.getCreatorSupportArticleURL(S.MVz.SERVER_PRODUCTS)
+                children: y.intl.format(y.t.xiYuDt, {
+                    monetizationPolicyLink: E.A.getArticleURL(v.MVz.CREATOR_POLICY),
+                    serverProductsSupportLink: E.A.getCreatorSupportArticleURL(v.MVz.SERVER_PRODUCTS)
                 })
             })]
         }),
-        B = (0, r.jsxs)(o.VQ0, {
+        B = (0, i.jsxs)(o.VQ0, {
             type: "top",
             look: "brand",
-            className: T.$H,
-            "aria-label": C.intl.string(C.t.X6h2gz),
-            selectedItem: L,
-            onItemSelect: k,
-            children: [(0, r.jsx)(u.A, {
+            className: R.$H,
+            "aria-label": y.intl.string(y.t.X6h2gz),
+            selectedItem: k,
+            onItemSelect: U,
+            children: [(0, i.jsx)(u.A, {
                 id: "basic_info",
-                disabledTooltip: C.intl.string(C.t.NVDuUX),
+                disabledTooltip: y.intl.string(y.t.NVDuUX),
                 disabled: !n,
-                children: C.intl.string(C.t.w27QAR)
-            }), (0, r.jsx)(u.A, {
+                children: y.intl.string(y.t.w27QAR)
+            }), (0, i.jsx)(u.A, {
                 id: "manage_listings",
-                disabledTooltip: C.intl.string(C.t.NVDuUX),
+                disabledTooltip: y.intl.string(y.t.NVDuUX),
                 disabled: !n,
-                children: C.intl.string(C.t.wlZ1mh)
-            }), D ? (0, r.jsx)(o.VQ0.Item, {
+                children: y.intl.string(y.t.wlZ1mh)
+            }), D ? (0, i.jsx)(o.VQ0.Item, {
                 id: "payment",
-                className: T.YU,
-                children: C.intl.string(C.t.YBrFe6)
-            }) : null, n ? (0, r.jsx)("div", {
-                className: T.jc,
-                children: (0, r.jsx)(a.$nd, {
-                    text: C.intl.string(C.t.vM81yY),
+                className: R.YU,
+                children: y.intl.string(y.t.YBrFe6)
+            }) : null, n ? (0, i.jsx)("div", {
+                className: R.jc,
+                children: (0, i.jsx)(a.$nd, {
+                    text: y.intl.string(y.t.vM81yY),
                     variant: "secondary",
-                    onClick: M,
+                    onClick: P,
                     size: "sm"
                 })
             }) : null]
         }),
-        F = (0, l.YW)(L).with("basic_info", () => (0, r.jsx)(A.A, {
+        F = (0, l.YW)(k).with("basic_info", () => (0, i.jsx)(T.A, {
             guildId: t
-        })).with("manage_listings", () => (0, r.jsx)(E.A, {
+        })).with("manage_listings", () => (0, i.jsx)(C.A, {
             guildId: t
-        })).with("payment", () => (0, r.jsx)(N.A, {
+        })).with("payment", () => (0, i.jsx)(I.A, {
             guildId: t
         })).exhaustive(),
-        H = P ? (0, r.jsx)(o.VQ0.Panel, {
-            id: L,
+        H = O ? (0, i.jsx)(o.VQ0.Panel, {
+            id: k,
             children: F
-        }) : (0, r.jsx)(o.y$y, {});
-    return (0, r.jsxs)(d.ZV, {
+        }) : (0, i.jsx)(o.y$y, {});
+    return (0, i.jsxs)(c.ZV, {
         guildId: t,
-        children: [U, (0, r.jsx)(m.A, {
-            guild: w
-        }), (0, r.jsx)("div", {
-            className: T.Mv,
+        children: [w, (0, i.jsx)(g.A, {
+            guild: G
+        }), (0, i.jsx)("div", {
+            className: R.Mv,
             children: B
         }), H]
     })

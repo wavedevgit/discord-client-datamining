@@ -1,27 +1,27 @@
 /** chunk id: 359438, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    X: () => c
-}), n(228524);
-var r = n(627968);
+    X: () => d
+});
+var i = n(627968);
 n(64700);
-var i = n(397927),
-    s = n(713654),
+var s = n(397927),
+    r = n(713654),
     l = n(557582),
     a = n(88860);
 
 function o(e) {
     let {
         channel: t
-    } = e, n = (0, s._U)(t.type);
-    return (0, r.jsxs)("div", {
+    } = e, n = (0, r._U)(t.type);
+    return (0, i.jsxs)("div", {
         className: a.Nj,
-        children: [null != n ? (0, r.jsx)(n, {
+        children: [null != n ? (0, i.jsx)(n, {
             color: "currentColor",
             size: "custom",
             width: 20,
             height: 20
-        }) : null, (0, r.jsx)(i.Text, {
+        }) : null, (0, i.jsx)(s.Text, {
             className: a.dN,
             color: "none",
             variant: "text-sm/semibold",
@@ -30,23 +30,23 @@ function o(e) {
     })
 }
 
-function c(e) {
+function d(e) {
     let {
         channel: t,
         guildScheduledEvent: n
     } = e;
-    return (0, r.jsxs)("div", {
+    return (0, i.jsxs)("div", {
         className: a.kL,
-        children: [(0, r.jsx)(l.Uq, {
+        children: [(0, i.jsx)(l.Uq, {
             className: a.II,
             guildId: n.guild_id,
             guildEvent: n,
             eventPreview: n
-        }), (0, r.jsx)(l.sC, {
+        }), (0, i.jsx)(l.sC, {
             name: n.name,
             description: n.description,
             guildId: n.guild_id
-        }), null != t && n.channel_id === t.id ? (0, r.jsx)(o, {
+        }), null != t && n.channel_id === t.id ? (0, i.jsx)(o, {
             channel: t
         }) : null]
     })

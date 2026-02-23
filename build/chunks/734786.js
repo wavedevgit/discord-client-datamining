@@ -1,42 +1,39 @@
-/** chunk id: 734786, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => p
+/** chunk id: 734786, original params: e,t,a (module,exports,require) **/
+a.d(t, {
+    A: () => h
 });
-var r = n(627968),
-    l = n(64700),
-    i = n(311907),
-    a = n(397927),
-    s = n(38181),
-    o = n(767599),
-    c = n(985018),
-    d = n(471100),
-    u = n(842503);
-let p = function(e) {
+var n = a(627968),
+    i = a(64700),
+    s = a(311907),
+    l = a(397927),
+    r = a(38181),
+    o = a(767599),
+    c = a(985018),
+    d = a(471100),
+    u = a(842503);
+let h = function(e) {
     let {
         selectedCategoryId: t,
-        searchAllCategories: n
-    } = e, p = (0, i.bG)([s.A], () => s.A.getCategories()), h = l.useMemo(() => {
-        var e;
-        return null == (e = p.find(e => e.id === t)) ? void 0 : e.name
-    }, [p, t]), m = t === o.lj || null == h ? c.intl.string(c.t["FVJt+8"]) : c.intl.formatToPlainString(c.t.FjCaNB, {
-        categoryName: h
-    }), g = t === o.lj ? c.intl.string(c.t.GXiMta) : c.intl.format(c.t.JaLoFF, {
-        onClick: n
+        searchAllCategories: a
+    } = e, h = (0, s.bG)([r.A], () => r.A.getCategories()), m = i.useMemo(() => h.find(e => e.id === t)?.name, [h, t]), p = t === o.lj || null == m ? c.intl.string(c.t["FVJt+8"]) : c.intl.formatToPlainString(c.t.FjCaNB, {
+        categoryName: m
+    }), _ = t === o.lj ? c.intl.string(c.t.GXiMta) : c.intl.format(c.t.JaLoFF, {
+        onClick: a
     });
-    return (0, r.jsxs)("div", {
+    return (0, n.jsxs)("div", {
         className: d.kL,
-        children: [(0, r.jsx)("img", {
+        children: [(0, n.jsx)("img", {
             alt: "",
             src: u,
             className: d.Sl
-        }), (0, r.jsx)(a.Heading, {
+        }), (0, n.jsx)(l.Heading, {
             variant: "heading-xl/semibold",
             className: d.wx,
-            children: m
-        }), (0, r.jsx)(a.Text, {
+            children: p
+        }), (0, n.jsx)(l.Text, {
             variant: "text-md/normal",
             color: "text-default",
-            children: g
+            children: _
         })]
     })
 }

@@ -1,36 +1,37 @@
 /** chunk id: 470743, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => p
+    A: () => h
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var l = n(397927),
-    i = n(688810),
-    s = n(523527),
+var s = n(397927),
+    l = n(688810),
+    r = n(523527),
     a = n(267102),
     o = n(780964),
     c = n(840065),
-    u = n(652215),
-    d = n(985018);
+    d = n(652215),
+    u = n(985018);
 
-function p() {
+function h() {
     let e = (0, a.Us)(),
         {
             analyticsLocations: t
-        } = (0, i.Ay)();
-    return (0, r.jsx)(l.Drp, {
+        } = (0, l.Ay)();
+    return (0, i.jsx)(s.Drp, {
         id: "voice-and-video-settings",
-        label: d.intl.string(d.t.dsXapM),
+        label: u.intl.string(u.t.dsXapM),
         action: () => {
-            (0, s.A)(null, e === u.BRT.POPOUT), (0, c.openUserSettings)(o.X.VOICE_AND_VIDEO_PANEL, {
-                section: u.nc_.VOICE,
+            (0, r.A)(null, e === d.BRT.POPOUT), (0, c.openUserSettings)(o.X.VOICE_AND_VIDEO_PANEL, {
+                section: d.nc_.VOICE,
                 analyticsLocations: t
             })
         },
-        icon: l.Zes,
+        icon: s.Zes,
         leadingAccessory: {
             type: "icon",
-            icon: l.Zes
+            icon: s.Zes
         }
     })
 }

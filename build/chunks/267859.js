@@ -1,49 +1,38 @@
-/** chunk id: 267859, original params: t,e,n (module,exports,require) **/
-n.d(e, {
+/** chunk id: 267859, original params: e,t,n (module,exports,require) **/
+n.d(t, {
     A: () => u
 });
 var l = n(405269),
-    r = n(927813),
-    i = n(403362),
-    a = n(403918),
-    o = n(985018);
-let s = t => {
-    let e = Date.now() + t;
-    return (0, l.ro)(new Date, new Date(e)) ? o.intl.formatToPlainString(o.t["+3jw2j"], {
-        time: o.intl.data.formatTime(e, {
+    i = n(927813),
+    a = n(403362),
+    r = n(403918),
+    s = n(985018);
+let o = e => {
+    let t = Date.now() + e;
+    return (0, l.ro)(new Date, new Date(t)) ? s.intl.formatToPlainString(s.t["+3jw2j"], {
+        time: s.intl.data.formatTime(t, {
             format: "short"
         })
-    }) : o.intl.formatToPlainString(o.t["/Avy4C"], {
-        time: o.intl.data.formatTime(e, {
+    }) : s.intl.formatToPlainString(s.t["/Avy4C"], {
+        time: s.intl.data.formatTime(t, {
             format: "short"
         })
     })
 };
 
-function u(t) {
-    let e = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-    switch (t) {
-        case a.yt.TODAY:
-            if (e) return s(r.A.Millis.DAY);
-            return o.intl.string(o.t.TOEOae);
-        case a.yt.HOURS_4:
-            if (e) return s(4 * r.A.Millis.HOUR);
-            return o.intl.formatToPlainString(o.t.YizuvW, {
-                hours: 4
-            });
-        case a.yt.HOURS_1:
-            if (e) return s(+r.A.Millis.HOUR);
-            return o.intl.formatToPlainString(o.t.YizuvW, {
-                hours: 1
-            });
-        case a.yt.MINUTES_30:
-            if (e) return s(30 * r.A.Millis.MINUTE);
-            return o.intl.formatToPlainString(o.t["/XUoq5"], {
-                minutes: 30
-            });
-        case a.yt.DONT_CLEAR:
-            return o.intl.string(o.t.bRn8cq);
+function u(e) {
+    switch (e) {
+        case r.yt.TODAY:
+            return o(i.A.Millis.DAY);
+        case r.yt.HOURS_4:
+            return o(4 * i.A.Millis.HOUR);
+        case r.yt.HOURS_1:
+            return o(+i.A.Millis.HOUR);
+        case r.yt.MINUTES_30:
+            return o(30 * i.A.Millis.MINUTE);
+        case r.yt.DONT_CLEAR:
+            return s.intl.string(s.t.bRn8cq);
         default:
-            (0, i.xb)(t)
+            (0, a.xb)(e)
     }
 }

@@ -1,15 +1,13 @@
 /** chunk id: 206547, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => a
+    A: () => r
 });
-var r = n(311907),
-    i = n(508675);
-let a = function(e, t) {
-    return (0, r.bG)([i.Ay], () => {
-        var n;
+var i = n(311907),
+    l = n(508675);
+let r = function(e, t) {
+    return (0, i.bG)([l.Ay], () => {
         if (null == t) return null;
-        let r = i.Ay.getDisambiguatedEmojiContext(e);
-        return null != (n = r.getById(t)) ? n : r.getByName(t)
+        let n = l.Ay.getDisambiguatedEmojiContext(e);
+        return n.getById(t) ?? n.getByName(t)
     }, [e, t])
 }

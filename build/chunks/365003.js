@@ -1,9 +1,9 @@
 /** chunk id: 365003, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => a
+    A: () => i
 });
-var r = n(281445);
+var a = n(281445);
 
-function a(e, t) {
-    return null == e || e !== r.X.SHOCKBYTE ? null : null != t ? "".concat(t, "/support") : null
+function i(e, t) {
+    return null == e || e !== a.X.SHOCKBYTE ? null : null != t ? `${t}/support` : null
 }

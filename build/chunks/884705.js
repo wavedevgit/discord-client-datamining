@@ -2,23 +2,22 @@
 n.d(t, {
     A: () => o
 });
-var r = n(311907),
-    i = n(73153);
-let l = !1;
+var i = n(311907),
+    s = n(73153);
+let a = !1;
 
-function s() {
-    l = !1
+function r() {
+    a = !1
 }
-class a extends r.Ay.Store {
+class l extends i.Ay.Store {
     isTogglesDisabled() {
-        return l
+        return a
     }
 }
-let o = new a(i.h, {
+let o = new l(s.h, {
     AD_PERSONALIZATION_TOGGLES_RESTRICTED: function(e) {
-        var t;
-        l = null != (t = e.disabled) && t
+        a = e.disabled ?? !1
     },
-    CONNECTION_OPEN: s,
-    LOGOUT: s
+    CONNECTION_OPEN: r,
+    LOGOUT: r
 })

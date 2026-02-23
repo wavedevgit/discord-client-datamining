@@ -1,31 +1,32 @@
 /** chunk id: 791460, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    U: () => _
+    U: () => I
 });
 var n = i(311907),
     l = i(419117),
     s = i(419954),
     r = i(430452),
-    u = i(780964),
-    a = i(393685),
+    a = i(780964),
+    u = i(393685),
     o = i(464639),
-    d = i(466116),
+    d = i(658522),
+    A = i(466116),
     T = i(923159),
-    A = i(881318),
-    S = i(918873),
-    c = i(985667),
-    E = i(580997),
-    g = i(985018);
-let _ = (0, s.bd)(u.X.INPUT_PROFILE_VOICE_ADVANCED_ACCORDION, {
+    S = i(881318),
+    E = i(918873),
+    g = i(985667),
+    _ = i(580997),
+    c = i(985018);
+let I = (0, s.bd)(a.X.INPUT_PROFILE_VOICE_ADVANCED_ACCORDION, {
     useTitle: function(t) {
-        return t ? g.intl.string(g.t.KHsSWK) : g.intl.string(g.t.PPDo5V)
+        return t ? c.intl.string(c.t.KHsSWK) : c.intl.string(c.t.PPDo5V)
     },
     useCollapsedSubtitle: () => {
         var t;
         let e;
-        return t = u.X.INPUT_PROFILE_VOICE_ADVANCED_ACCORDION, e = (0, n.bG)([r.A], () => r.A.isInputProfileCustom()), (0, l.A)(t, {
+        return t = a.X.INPUT_PROFILE_VOICE_ADVANCED_ACCORDION, e = (0, n.bG)([r.Ay], () => r.Ay.isInputProfileCustom()), (0, l.A)(t, {
             limit: e ? 3 : 2
         })
     },
-    buildLayout: () => [a.C, A.$, d.l, E.A, T.Q, o.e, S.W, c.i]
+    buildLayout: () => [u.C, S.$, A.l, _.A, d.J, T.Q, o.e, E.W, g.i]
 })

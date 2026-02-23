@@ -1,32 +1,32 @@
 /** chunk id: 887092, original params: t,i,n (module,exports,require) **/
 n.d(i, {
-    A: () => p
+    A: () => c
 });
-var o = n(627968),
-    e = n(311907),
-    l = n(397927),
-    a = n(928658),
-    d = n(734057),
-    r = n(985018);
+var e = n(627968),
+    o = n(311907),
+    a = n(397927),
+    r = n(928658),
+    l = n(734057),
+    p = n(985018);
 
-function p(t, i, n) {
-    let p = (0, e.bG)([d.A], () => d.A.getChannel(i)),
-        c = null == p ? void 0 : p.getGuildId();
-    return (0, o.jsx)(l.Drp, {
+function c(t, i, n) {
+    let c = (0, o.bG)([l.A], () => l.A.getChannel(i)),
+        d = c?.getGuildId();
+    return (0, e.jsx)(a.Drp, {
         id: "report-app",
         color: "danger",
-        label: r.intl.string(r.t.NgA5vp),
-        action: () => (0, a.r3)({
+        label: p.intl.string(p.t.NgA5vp),
+        action: () => (0, r.r3)({
             application: t,
             entrypoint: "activity_ui_popout",
-            contextualGuildId: null != c ? c : void 0,
-            contextualChannelId: null == p ? void 0 : p.id,
+            contextualGuildId: d ?? void 0,
+            contextualChannelId: c?.id,
             appContext: n
         }),
-        icon: l.iFK,
+        icon: a.iFK,
         leadingAccessory: {
             type: "icon",
-            icon: l.iFK
+            icon: a.iFK
         }
     })
 }

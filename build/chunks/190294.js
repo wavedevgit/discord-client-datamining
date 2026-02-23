@@ -1,71 +1,70 @@
-/** chunk id: 190294, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    A: () => g
+/** chunk id: 190294, original params: e,t,s (module,exports,require) **/
+s.d(t, {
+    A: () => b
 });
-var r = n(627968),
-    l = n(64700),
-    s = n(641150),
-    a = n(397927),
-    i = n(365491),
-    o = n(758836),
-    c = n(985018);
+var r = s(627968),
+    l = s(64700),
+    n = s(641150),
+    a = s(397927),
+    o = s(365491),
+    i = s(758836),
+    c = s(985018);
 let u = [{
-        tab: o.G2.AVATAR_DECORATIONS,
+        tab: i.G2.AVATAR_DECORATIONS,
         labelKey: c.t.dRZYNE
     }, {
-        tab: o.G2.PROFILE_EFFECTS,
+        tab: i.G2.PROFILE_EFFECTS,
         labelKey: c.t["1cNjtx"]
     }, {
-        tab: o.G2.NAMEPLATES,
+        tab: i.G2.NAMEPLATES,
         labelKey: c.t.V68Fqz
     }, {
-        tab: o.G2.BUNDLES,
+        tab: i.G2.BUNDLES,
         labelKey: c.t.FYFpps
     }, {
-        tab: o.G2.CATALOG,
+        tab: i.G2.CATALOG,
         labelKey: c.t.xFcotU
     }],
     d = {
-        [s.q.ALL]: o.G2.CATALOG,
-        [s.q.AVATAR_DECORATION]: o.G2.AVATAR_DECORATIONS,
-        [s.q.PROFILE_EFFECT]: o.G2.PROFILE_EFFECTS,
-        [s.q.NAMEPLATE]: o.G2.NAMEPLATES,
-        [s.q.BUNDLE]: o.G2.BUNDLES
+        [n.q.ALL]: i.G2.CATALOG,
+        [n.q.AVATAR_DECORATION]: i.G2.AVATAR_DECORATIONS,
+        [n.q.PROFILE_EFFECT]: i.G2.PROFILE_EFFECTS,
+        [n.q.NAMEPLATE]: i.G2.NAMEPLATES,
+        [n.q.BUNDLE]: i.G2.BUNDLES
     };
 
-function g(e) {
+function b(e) {
     let {
         tabs: t,
-        selectedTab: n,
-        onTabSelect: s,
-        onClose: g,
-        showOrbRentalNewBadge: f
+        selectedTab: s,
+        onTabSelect: n,
+        onClose: b,
+        showOrbRentalNewBadge: p
     } = e, {
-        itemTypeFilters: m
-    } = (0, i.v)(), p = l.useMemo(() => {
-        if (n === o.G2.CATALOG && m.size > 0) {
-            let e = d[Array.from(m)[0]];
+        itemTypeFilters: E
+    } = (0, o.v)(), S = l.useMemo(() => {
+        if (s === i.G2.CATALOG && E.size > 0) {
+            let e = d[Array.from(E)[0]];
             if (null != e) return e
         }
-        return n
-    }, [n, m]);
+        return s
+    }, [s, E]);
     return (0, r.jsx)(a.W1t, {
         "data-menu-migrated-auto": !0,
         navId: "collectibles-shop-tabs-overflow-menu",
         "aria-label": c.intl.string(c.t["UKOtz+"]),
         hideScroller: !0,
-        onClose: g,
-        onSelect: g,
+        onClose: b,
+        onSelect: b,
         children: (0, r.jsx)(a.rXV, {
             children: t.map(e => {
                 let {
                     tab: t,
                     label: l,
-                    hasSubmenu: i
+                    hasSubmenu: o
                 } = e;
-                if (i && t === o.G2.CATALOG) {
-                    let e = t === n;
+                if (o && t === i.G2.CATALOG) {
+                    let e = t === s;
                     return (0, r.jsx)(a.Drp, {
                         id: t,
                         label: l,
@@ -78,34 +77,34 @@ function g(e) {
                         children: u.map(e => {
                             let {
                                 tab: t,
-                                labelKey: n
-                            } = e, l = t === p;
+                                labelKey: s
+                            } = e, l = t === S;
                             return (0, r.jsx)(a.Drp, {
                                 id: t,
-                                label: c.intl.string(n),
+                                label: c.intl.string(s),
                                 icon: l ? a.yr3 : void 0,
                                 leadingAccessory: l ? {
                                     type: "icon",
                                     icon: a.yr3
                                 } : void 0,
                                 action: () => {
-                                    s(t), g()
+                                    n(t), b()
                                 }
                             }, t)
                         })
                     }, t)
                 }
-                let d = t === o.G2.ORBS && f;
+                let d = t === i.G2.ORBS && p;
                 return (0, r.jsx)(a.Drp, {
                     id: t,
                     label: l,
-                    icon: t === n ? a.yr3 : void 0,
-                    leadingAccessory: t === n ? {
+                    icon: t === s ? a.yr3 : void 0,
+                    leadingAccessory: t === s ? {
                         type: "icon",
                         icon: a.yr3
                     } : void 0,
                     badge: d ? "new" : void 0,
-                    action: () => s(t)
+                    action: () => n(t)
                 }, t)
             })
         }, "overflow-tabs")

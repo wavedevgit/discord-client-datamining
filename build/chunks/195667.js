@@ -1,26 +1,23 @@
 /** chunk id: 195667, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    r: () => s
+    r: () => r
 });
-var r = n(311907),
-    i = n(899847),
-    l = n(842144);
+var i = n(311907),
+    s = n(899847),
+    a = n(842144);
 
-function s(e, t, n, s) {
-    var a, o;
+function r(e, t, n, r) {
+    var l, o;
     let {
         comparator: c = (e, t) => e === t
-    } = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : {}, d = r => {
-        var i, s;
-        return n(null == (s = l.A.getSettings(r)) || null == (i = s[e]) ? void 0 : i[t])
-    };
+    } = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : {}, d = i => n(a.A.getSettings(i)?.[e]?.[t]);
     return {
         getControlledSetting: d,
-        updateControlledSetting: (a = d, o = (n, r) => null == n ? Promise.resolve() : i.Ay.updateTeenSettings(n, e, e => {
-            e[t] = s(r, e[t])
+        updateControlledSetting: (l = d, o = (n, i) => null == n ? Promise.resolve() : s.Ay.updateTeenSettings(n, e, e => {
+            e[t] = r(i, e[t])
         }), function(e, t) {
-            return "function" == typeof t ? o(e, t(a(e))) : o(e, t)
+            return "function" == typeof t ? o(e, t(l(e))) : o(e, t)
         }),
-        useControlledSetting: e => (0, r.bG)([l.A], () => d(e), [e], c)
+        useControlledSetting: e => (0, i.bG)([a.A], () => d(e), [e], c)
     }
 }

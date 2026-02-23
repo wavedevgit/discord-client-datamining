@@ -1,102 +1,107 @@
 /** chunk id: 201497, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => E
-}), n(457529), n(65821);
-var r, i, l, a, s = n(627968),
-    o = n(64700);
+    A: () => S
+});
+var i, r, l, a = n(627968),
+    s = n(64700);
 
-function c(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
+function o(e, t) {
+    return {
+        "@type": e,
+        ... function e(t) {
+            return Object.keys(t).forEach(n => {
+                null == t[n] ? delete t[n] : "object" == typeof t[n] && (t[n] = e(t[n]))
+            }), t
+        }(function(e) {
+            let t;
+            try {
+                t = JSON.parse(JSON.stringify(e))
+            } catch (e) {
+                throw Error("[JSONLD] Invalid object format")
+            }
+            return t
+        }(t))
+    }
+}
+
+function d(e) {
+    return o("Thing", e)
+}
+
+function c(e) {
+    return o("Organization", e)
 }
 
 function u(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            c(e, t, n[t])
-        })
-    }
-    return e
+    return o("Product", e)
 }
 
-function d(e, t) {
-    return u({
-        "@type": e
-    }, function e(t) {
-        return Object.keys(t).forEach(n => {
-            null == t[n] ? delete t[n] : "object" == typeof t[n] && (t[n] = e(t[n]))
-        }), t
-    }(function(e) {
-        let t;
-        try {
-            t = JSON.parse(JSON.stringify(e))
-        } catch (e) {
-            throw Error("[JSONLD] Invalid object format")
-        }
-        return t
-    }(t)))
+function A(e) {
+    return o("ItemPage", e)
 }
-
-function p(e) {
-    return d("Thing", e)
-}
-
-function h(e) {
-    return d("Product", e)
-}
-h.Image = function(e) {
+u.Image = function(e) {
     if (null == e) return null;
     let t = e.filter(e => null != e && "" !== e);
     return 0 === t.length ? null : 1 === t.length ? t[0] : t
 };
-var f = ((i = f || {}).DAMAGED = "http://schema.org/DamagedCondition", i.NEW = "http://schema.org/NewCondition", i.REFURBISHED = "http://schema.org/RefurbishedCondition", i.USED = "http://schema.org/UsedCondition", i),
-    g = ((l = g || {}).DISCONTINUED = "http://schema.org/Discontinued", l.IN_STOCK = "http://schema.org/InStock", l.IN_STORE_ONLY = "http://schema.org/InStoreOnly", l.LIMITED_AVAILABILITY = "http://schema.org/LimitedAvailability", l.ONLINE_ONLY = "http://schema.org/OnlineOnly", l.OUT_OF_STOCK = "http://schema.org/OutOfStock", l.PREORDER = "http://schema.org/PreOrder", l.PRESALE = "http://schema.org/PreSale", l.SOLD_OUT = "http://schema.org/SoldOut", l);
+var h = ((i = h || {}).DAMAGED = "http://schema.org/DamagedCondition", i.NEW = "http://schema.org/NewCondition", i.REFURBISHED = "http://schema.org/RefurbishedCondition", i.USED = "http://schema.org/UsedCondition", i),
+    _ = ((r = _ || {}).DISCONTINUED = "http://schema.org/Discontinued", r.IN_STOCK = "http://schema.org/InStock", r.IN_STORE_ONLY = "http://schema.org/InStoreOnly", r.LIMITED_AVAILABILITY = "http://schema.org/LimitedAvailability", r.ONLINE_ONLY = "http://schema.org/OnlineOnly", r.OUT_OF_STOCK = "http://schema.org/OutOfStock", r.PREORDER = "http://schema.org/PreOrder", r.PRESALE = "http://schema.org/PreSale", r.SOLD_OUT = "http://schema.org/SoldOut", r);
 
 function m(e) {
-    return d("Offer", e)
+    return o("Offer", e)
 }
-m.ItemConditions = f, m.ItemAvailability = g;
-var A = ((a = A || {}).YEARLY = "ANN", a.MONTHLY = "MON", a);
+m.ItemConditions = h, m.ItemAvailability = _;
+var p = ((l = p || {}).YEARLY = "ANN", l.MONTHLY = "MON", l);
 
-function _(e) {
-    return d("QuantitativeValue", e)
+function g(e) {
+    return o("QuantitativeValue", e)
 }
-_.UnitCodes = A;
-class b extends(r = o.Component) {
+
+function E(e) {
+    return o("UnitPriceSpecification", e)
+}
+
+function I(e) {
+    return o("AggregateOffer", e)
+}
+
+function f(e) {
+    return o("Person", e)
+}
+
+function C(e) {
+    return o("Rating", e)
+}
+
+function T(e) {
+    return o("AggregateRating", e)
+}
+g.UnitCodes = p;
+class N extends s.Component {
+    static Thing = d;
+    static Brand = d;
+    static Person = f;
+    static Organization = c;
+    static ItemPage = A;
+    static Product = u;
+    static Offer = m;
+    static Rating = C;
+    static AggregateRating = T;
+    static AggregateOffer = I;
+    static QuantitativeValue = g;
+    static UnitPriceSpecification = E;
     render() {
         let {
             debug: e,
             data: t
-        } = this.props, n = JSON.stringify(u({
-            "@context": "http://schema.org"
-        }, t));
-        return (0, s.jsx)("script", {
+        } = this.props, n = JSON.stringify({
+            "@context": "http://schema.org",
+            ...t
+        });
+        return (0, a.jsx)("script", {
             type: "application/ld+json",
             children: n
         })
     }
 }
-c(b, "Thing", p), c(b, "Brand", p), c(b, "Person", function(e) {
-    return d("Person", e)
-}), c(b, "Organization", function(e) {
-    return d("Organization", e)
-}), c(b, "ItemPage", function(e) {
-    return d("ItemPage", e)
-}), c(b, "Product", h), c(b, "Offer", m), c(b, "Rating", function(e) {
-    return d("Rating", e)
-}), c(b, "AggregateRating", function(e) {
-    return d("AggregateRating", e)
-}), c(b, "AggregateOffer", function(e) {
-    return d("AggregateOffer", e)
-}), c(b, "QuantitativeValue", _), c(b, "UnitPriceSpecification", function(e) {
-    return d("UnitPriceSpecification", e)
-});
-let E = b
+let S = N

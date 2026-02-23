@@ -1,58 +1,57 @@
 /** chunk id: 163679, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => y
-}), n(896048);
+    A: () => C
+});
 var a = n(627968),
-    l = n(64700),
-    r = n(397927),
-    i = n(964486),
-    s = n(847599),
+    i = n(64700),
+    s = n(397927),
+    l = n(964486),
+    r = n(847599),
     o = n(767379),
-    c = n(240248),
-    d = n(39537),
+    d = n(240248),
+    c = n(39537),
     u = n(278466),
     m = n(805866),
-    p = n(627575),
-    h = n(870341),
-    x = n(686267),
+    h = n(627575),
+    x = n(870341),
+    p = n(686267),
     g = n(818348),
-    f = n(646284),
-    b = n(985018),
-    v = n(36303);
-let j = n(843020);
+    _ = n(646284),
+    f = n(985018),
+    b = n(36303);
+let v = n(843020);
 
-function _(e) {
+function j(e) {
     let {
         task: t,
         handleSubmit: n,
-        disabled: r
-    } = e, [i, s] = l.useState(t), o = l.useMemo(() => ({
-        task: i,
-        setTask: s
-    }), [i, s]);
-    return l.useEffect(() => {
-        s(t)
+        disabled: s
+    } = e, [l, r] = i.useState(t), o = i.useMemo(() => ({
+        task: l,
+        setTask: r
+    }), [l, r]);
+    return i.useEffect(() => {
+        r(t)
     }, [t]), (0, a.jsxs)(u.h.Provider, {
         value: o,
-        children: [(0, a.jsx)(x.A, {}), (0, a.jsx)(h.A, {
+        children: [(0, a.jsx)(p.A, {}), (0, a.jsx)(x.A, {
             onSubmit: n,
-            disabled: r
+            disabled: s
         })]
     })
 }
-let y = function(e) {
+let C = function(e) {
     let {
         onClose: t
-    } = e, [n, u] = l.useState(null), [h, x] = l.useState(!0), [y, A] = l.useState(null), [C, S] = l.useState(!1), O = l.useCallback(async () => {
-        x(!0), A(null);
+    } = e, [n, u] = i.useState(null), [x, p] = i.useState(!0), [C, A] = i.useState(null), [T, S] = i.useState(!1), y = i.useCallback(async () => {
+        p(!0), A(null);
         try {
-            var e;
-            let n = await (0, d.$R)();
-            if (null == n) return void t();
-            !(0, c.uJ)(null == (e = n.ui_component) ? void 0 : e.component.type) && m.Vn.has(n.ui_component.component.type) ? u(n) : u({
-                task_id: n.task_id,
+            let e = await (0, c.$R)();
+            if (null == e) return void t();
+            !(0, d.uJ)(e.ui_component?.component.type) && m.Vn.has(e.ui_component.component.type) ? u(e) : u({
+                task_id: e.task_id,
                 task_type: m.wP.REFRESH_APP,
-                assignment_id: n.assignment_id,
+                assignment_id: e.assignment_id,
                 ui_component: {
                     component: {
                         type: m.Qq.REFRESH_APP,
@@ -61,15 +60,15 @@ let y = function(e) {
                 },
                 flow_context: {
                     tasks: [],
-                    flow_id: n.flow_context.flow_id
+                    flow_id: e.flow_context.flow_id
                 }
             })
-        } catch (e) {
-            A(b.intl.string(f.default["/f++3g"]))
+        } catch {
+            A(f.intl.string(_.default["/f++3g"]))
         } finally {
-            x(!1)
+            p(!1)
         }
-    }, [t]), T = l.useCallback(async e => {
+    }, [t]), E = i.useCallback(async e => {
         if (null !== n) {
             S(!0);
             try {
@@ -78,84 +77,84 @@ let y = function(e) {
                     flow_id: n.flow_context.flow_id,
                     data: e
                 };
-                await (0, d.Rt)(t), O()
+                await (0, c.Rt)(t), y()
             } catch (e) {
-                A(b.intl.string(f.default["+QRSxc"]))
+                A(f.intl.string(_.default["+QRSxc"]))
             } finally {
                 S(!1)
             }
         }
-    }, [n, O]);
-    (0, i.Ay)(() => {
-        O()
+    }, [n, y]);
+    (0, l.Ay)(() => {
+        y()
     });
-    let E = l.useMemo(() => (null == n ? void 0 : n.task_type) === m.wP.AGE_VERIFICATION, [n]);
+    let N = i.useMemo(() => n?.task_type === m.wP.AGE_VERIFICATION, [n]);
     return (0, a.jsxs)("div", {
-        className: v.Tp,
+        className: b.Tp,
         children: [(0, a.jsx)("img", {
-            className: v.xX,
-            src: j,
+            className: b.xX,
+            src: v,
             alt: ""
-        }), E ? (0, a.jsx)(o.default, {
-            transitionState: r.ip4.ENTERED,
-            entryPoint: s.q1.SAFETY_FLOWS,
+        }), N ? (0, a.jsx)(o.default, {
+            transitionState: s.ip4.ENTERED,
+            entryPoint: r.q1.SAFETY_FLOWS,
             onClose: g.tE,
             onComplete: async () => {
-                await T({
+                await E({
                     type: m.Ij.Empty
                 })
             },
             dismissable: !1
         }) : (0, a.jsx)("div", {
-            className: v.nA,
-            children: h ? (0, a.jsx)(r.y$y, {
-                type: r.y$y.Type.SPINNING_CIRCLE
+            className: b.nA,
+            children: x ? (0, a.jsx)(s.y$y, {
+                type: s.y$y.Type.SPINNING_CIRCLE
             }) : (0, a.jsx)("div", {
-                className: v.kL,
-                children: (0, a.jsxs)(r.BJc, {
+                className: b.kL,
+                children: (0, a.jsxs)(s.BJc, {
                     direction: "horizontal",
                     justify: "start",
-                    className: v.rf,
-                    children: [null !== y && (0, a.jsxs)(r.BJc, {
+                    className: b.rf,
+                    children: [null !== C && (0, a.jsxs)(s.BJc, {
                         direction: "vertical",
                         justify: "space-between",
                         align: "center",
-                        className: v.Nj,
+                        className: b.Nj,
                         padding: 16,
-                        children: [(0, a.jsxs)(r.BJc, {
+                        children: [(0, a.jsxs)(s.BJc, {
                             direction: "vertical",
                             gap: 4,
-                            children: [(0, a.jsx)(r.Heading, {
+                            children: [(0, a.jsx)(s.Heading, {
                                 variant: "heading-xl/semibold",
-                                children: b.intl.string(b.t.c6kn6F)
-                            }), (0, a.jsx)(r.Text, {
+                                children: f.intl.string(f.t.c6kn6F)
+                            }), (0, a.jsx)(s.Text, {
                                 variant: "text-md/normal",
                                 color: "text-muted",
-                                children: b.intl.string(b.t.ZUEGFn)
+                                children: f.intl.string(f.t.ZUEGFn)
                             })]
-                        }), (0, a.jsxs)(r.BJc, {
+                        }), (0, a.jsxs)(s.BJc, {
                             direction: "horizontal",
                             justify: "center",
                             align: "center",
-                            children: [(0, a.jsx)(r.Button, {
+                            children: [(0, a.jsx)(s.Button, {
                                 fullWidth: !0,
                                 variant: "secondary",
-                                text: b.intl.string(b.t["2jxGer"]),
+                                text: f.intl.string(f.t["2jxGer"]),
                                 onClick: () => {
-                                    (0, p.k)("safety_flows_modal")
+                                    (0, h.k)("safety_flows_modal")
                                 }
-                            }), (0, a.jsx)(r.Button, {
+                            }), (0, a.jsx)(s.Button, {
                                 fullWidth: !0,
-                                text: b.intl.string(b.t["7NqTJn"]),
+                                text: f.intl.string(f.t["7NqTJn"]),
                                 onClick: () => {
-                                    O()
+                                    y()
                                 }
                             })]
                         })]
-                    }), null === y && null != n && (0, a.jsx)(_, {
+                    }), null === C && null != n && (0, a.jsx)(j, {
                         task: n,
-                        handleSubmit: T,
-                        disabled: C
+                        handleSubmit: E,
+                        disabled: T
                     })]
                 })
             })

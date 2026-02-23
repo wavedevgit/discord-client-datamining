@@ -1,11 +1,12 @@
 /** chunk id: 858466, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    U: () => l
+    U: () => s
 });
-var r = n(73153);
+var i = n(73153);
 
-function l(e) {
-    r.h.dispatch({
+function s(e) {
+    i.h.dispatch({
         type: "FETCH_CHANNEL_INFO",
         guildId: e
     })

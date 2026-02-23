@@ -2,9 +2,9 @@
 r.d(t, {
     A: () => i
 });
-var n = r(627968),
-    l = r(397927),
-    s = r(704456),
+var s = r(627968),
+    n = r(397927),
+    l = r(704456),
     a = r(252645);
 
 function i(e) {
@@ -14,24 +14,24 @@ function i(e) {
     } = e, {
         dueInText: i,
         isOverdue: o
-    } = (0, s.Ce)({
-        dueAt: null == t ? void 0 : t.saveData.dueAt,
+    } = (0, l.Ce)({
+        dueAt: t?.saveData.dueAt,
         now: r,
-        type: s.kh.SHORT
+        type: l.kh.SHORT
     });
     if (null == t.saveData.dueAt) return null;
-    let c = o ? "text-feedback-critical" : "text-default";
-    return (0, n.jsxs)("div", {
+    let u = o ? "text-feedback-critical" : "text-default";
+    return (0, s.jsxs)("div", {
         className: a.k,
-        children: [(0, n.jsx)("div", {
+        children: [(0, s.jsx)("div", {
             className: a.K,
-            children: (0, n.jsx)(l.O4, {
+            children: (0, s.jsx)(n.O4, {
                 size: "xxs",
-                color: "text-feedback-critical" === c ? l.LU0.colors.TEXT_FEEDBACK_CRITICAL : l.LU0.colors.INTERACTIVE_TEXT_ACTIVE
+                color: "text-feedback-critical" === u ? n.LU0.colors.TEXT_FEEDBACK_CRITICAL : n.LU0.colors.INTERACTIVE_TEXT_ACTIVE
             })
-        }), (0, n.jsx)(l.Heading, {
+        }), (0, s.jsx)(n.Heading, {
             variant: "text-md/semibold",
-            color: c,
+            color: u,
             children: i
         })]
     })

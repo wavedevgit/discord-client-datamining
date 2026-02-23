@@ -1,30 +1,30 @@
-/** chunk id: 219801, original params: e,a,t (module,exports,require) **/
-t.d(a, {
-    default: () => s
+/** chunk id: 219801, original params: t,i,n (module,exports,require) **/
+n.d(i, {
+    default: () => c
 });
-var n = t(627968);
-t(64700);
-var o = t(417597),
-    r = t(994288),
-    i = t(287809),
-    u = t(954571),
-    c = t(652215);
+var e = n(627968);
+n(64700);
+var s = n(417597),
+    r = n(994288),
+    l = n(287809),
+    a = n(954571),
+    o = n(652215);
 
-function s(e) {
+function c(t) {
     let {
-        transitionState: a,
-        onClose: t,
-        userId: s,
+        transitionState: i,
+        onClose: n,
+        userId: c,
         onCancel: d,
-        confirmBlock: l
-    } = e, _ = (0, o.bG)([i.default], () => i.default.getUser(s));
-    if (null != _) return (0, n.jsx)(r.default, {
-        transitionState: a,
-        user: _,
+        confirmBlock: u
+    } = t, x = (0, s.bG)([l.default], () => l.default.getUser(c));
+    if (null != x) return (0, e.jsx)(r.default, {
+        transitionState: i,
+        user: x,
         onBlock: () => {
-            l(), u.default.track(c.HAw.BLOCK_USER_CONFIRMED)
+            u(), a.default.track(o.HAw.BLOCK_USER_CONFIRMED)
         },
-        onClose: t,
+        onClose: n,
         onCancel: d
     })
 }

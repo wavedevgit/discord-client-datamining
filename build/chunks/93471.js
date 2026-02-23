@@ -2,21 +2,21 @@
 n.d(t, {
     A: () => c
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var l = n(641324),
-    i = n(669550),
-    s = n(790174),
-    a = n(23901),
+var s = n(641324),
+    a = n(669550),
+    r = n(790174),
+    l = n(23901),
     o = n(985018);
 
 function c() {
     let {
         node: e
-    } = (0, i.Ay)(a.F, "");
-    return (0, r.jsx)(s.A, {
+    } = (0, a.Ay)(l.F, "");
+    return (0, i.jsx)(r.A, {
         title: o.intl.string(o.t.KyFVyi),
-        children: (0, r.jsx)(l.A, {
+        children: (0, i.jsx)(s.A, {
             node: e
         }, e.key)
     })

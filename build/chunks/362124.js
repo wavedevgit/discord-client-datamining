@@ -1,69 +1,68 @@
-/** chunk id: 362124, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    h: () => c
-}), n(228524), n(896048);
-var r = n(627968),
-    i = n(64700),
-    a = n(934551),
-    o = n(158954),
-    s = n(732955),
-    l = n(397927);
-let c = {
+/** chunk id: 362124, original params: e,l,a (module,exports,require) **/
+a.d(l, {
+    h: () => d
+});
+var t = a(627968),
+    o = a(64700),
+    n = a(934551),
+    i = a(158954),
+    s = a(732955),
+    r = a(397927);
+let d = {
     title: "Checkbox",
     stories: [{
         id: "checkbox",
         name: "Checkbox",
         component: function(e) {
             let {
-                label: t,
-                description: n,
-                disabled: c,
+                label: l,
+                description: a,
+                disabled: d,
                 labelType: u,
-                showIcons: d
-            } = e, [f, p] = i.useState(!1), _ = i.useCallback(() => {
+                showIcons: c
+            } = e, [b, p] = o.useState(!1), m = o.useCallback(() => {
                 p(!0)
-            }, []), h = i.useCallback(() => {
+            }, []), x = o.useCallback(() => {
                 p(!1)
-            }, []), m = i.useCallback(() => {
+            }, []), v = o.useCallback(() => {
                 p(e => !e)
             }, []);
-            return (0, r.jsxs)(o.BJc, {
+            return (0, t.jsxs)(i.BJc, {
                 direction: "vertical",
                 gap: "md",
-                children: [(0, r.jsx)(l.Checkbox, {
-                    checked: f,
+                children: [(0, t.jsx)(r.Checkbox, {
+                    checked: b,
                     onChange: e => p(e),
-                    disabled: c,
-                    label: t,
-                    description: null != n || "" === n ? n : void 0,
+                    disabled: d,
+                    label: l,
+                    description: null != a || "" === a ? a : void 0,
                     value: "checkbox-value",
                     labelType: u,
-                    leadingIcon: d ? a.CircleInformationIcon : void 0
-                }), (0, r.jsxs)(o.EYj, {
+                    leadingIcon: c ? n.CircleInformationIcon : void 0
+                }), (0, t.jsxs)(i.EYj, {
                     variant: "text-sm/normal",
-                    children: ["Current state: ", f ? "Checked" : "Unchecked"]
-                }), (0, r.jsxs)(o.BJc, {
+                    children: ["Current state: ", b ? "Checked" : "Unchecked"]
+                }), (0, t.jsxs)(i.BJc, {
                     direction: "horizontal",
                     gap: "sm",
-                    children: [(0, r.jsx)(s.$nd, {
+                    children: [(0, t.jsx)(s.$nd, {
                         variant: "secondary",
                         size: "sm",
                         text: "Check",
-                        onClick: _,
-                        disabled: c
-                    }), (0, r.jsx)(s.$nd, {
+                        onClick: m,
+                        disabled: d
+                    }), (0, t.jsx)(s.$nd, {
                         variant: "secondary",
                         size: "sm",
                         text: "Uncheck",
-                        onClick: h,
-                        disabled: c
-                    }), (0, r.jsx)(s.$nd, {
+                        onClick: x,
+                        disabled: d
+                    }), (0, t.jsx)(s.$nd, {
                         variant: "primary",
                         size: "sm",
                         text: "Toggle",
-                        onClick: m,
-                        disabled: c
+                        onClick: v,
+                        disabled: d
                     })]
                 })]
             })

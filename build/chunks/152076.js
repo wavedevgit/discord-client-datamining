@@ -1,13 +1,13 @@
 /** chunk id: 152076, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    w: () => a
+    w: () => l
 });
-var r = n(687123),
-    i = n(36149),
-    l = n(207560),
-    s = n(64313);
-let a = () => {
-    let e = (0, s.o)("shouldAgeVerifyForDMDefaultOff"),
-        t = (0, l.d6)(r.t.DM_PRIVACY_SETTINGS);
-    return (0, i.p9)() && (e || t)
+var i = n(687123),
+    s = n(36149),
+    a = n(207560),
+    r = n(64313);
+let l = () => {
+    let e = (0, r.o)("shouldAgeVerifyForDMDefaultOff"),
+        t = (0, a.d6)(i.t.DM_PRIVACY_SETTINGS);
+    return (0, s.p9)() && (e || t)
 }

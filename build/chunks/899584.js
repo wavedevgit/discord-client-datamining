@@ -1,35 +1,36 @@
 /** chunk id: 899584, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => f
+    A: () => g
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var l = n(311907),
-    i = n(397927),
-    s = n(947094),
+var s = n(311907),
+    l = n(397927),
+    r = n(947094),
     a = n(919577),
     o = n(207777),
     c = n(422844),
-    u = n(435470),
-    d = n(892110),
-    p = n(45494),
-    h = n(58736),
-    g = n(985018);
+    d = n(435470),
+    u = n(892110),
+    h = n(45494),
+    A = n(58736),
+    p = n(985018);
 
-function f(e) {
+function g(e) {
     let {
         channel: t
-    } = e, n = (0, u.S4)(t), f = (0, l.bG)([s.A], () => s.A.hasHidden(t.id)), m = (0, d.l)(t.id), {
-        sortOrder: b,
-        tagFilter: A,
-        tagSetting: y
-    } = (0, c.R)(t.id), O = (0, l.bG)([o.A, p.A], () => !!(o.A.getThreadIds(t.id, b, A, y).length > 0) || !!(p.A.getThreads(t.id, b, A, y).length > 0), [t.id, b, A, y]), j = t.isMediaChannel();
-    if (!n || m || j && O) return null;
-    let x = f ? j ? g.intl.string(g.t["WP/IE1"]) : g.intl.string(g.t.zfq9V4) : j ? g.intl.string(g.t.p60yF1) : g.intl.string(g.t.SNOqYC);
-    return (0, r.jsx)(h.In, {
-        tooltip: x,
-        icon: i.mir,
-        onClick: () => a.A.hideAdminOnboarding(t.id, !f),
-        selected: !f
+    } = e, n = (0, d.S4)(t), g = (0, s.bG)([r.A], () => r.A.hasHidden(t.id)), m = (0, u.l)(t.id), {
+        sortOrder: _,
+        tagFilter: f,
+        tagSetting: x
+    } = (0, c.R)(t.id), C = (0, s.bG)([o.A, h.A], () => !!(o.A.getThreadIds(t.id, _, f, x).length > 0) || !!(h.A.getThreads(t.id, _, f, x).length > 0), [t.id, _, f, x]), E = t.isMediaChannel();
+    if (!n || m || E && C) return null;
+    let I = g ? E ? p.intl.string(p.t["WP/IE1"]) : p.intl.string(p.t.zfq9V4) : E ? p.intl.string(p.t.p60yF1) : p.intl.string(p.t.SNOqYC);
+    return (0, i.jsx)(A.In, {
+        tooltip: I,
+        icon: l.mir,
+        onClick: () => a.A.hideAdminOnboarding(t.id, !g),
+        selected: !g
     })
 }

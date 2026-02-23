@@ -1,4 +1,4 @@
-/** chunk id: 125634, original params: e,t,n (module,exports,require) **/
+/** chunk id: 125634, original params: e,t,a (module,exports,require) **/
 "use strict";
 e.exports = {
     hQ: "contentContainer__58471",
@@ -9,5 +9,6 @@ e.exports = {
     y$: "rewardsContainer__58471",
     E2: "balanceContainer__58471",
     yG: "videoBackground__58471",
+    j: "videoContainer__58471",
     Qs: "content__58471"
 }

@@ -1,10 +1,10 @@
 /** chunk id: 206572, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => l
+    A: () => a
 });
-var r = n(52133),
-    i = n(510373);
+var i = n(52133),
+    l = n(510373);
 
-function l(e) {
-    return (0, i.A)(() => e, e, r.A)
+function a(e) {
+    return (0, l.A)(() => e, e, i.A)
 }

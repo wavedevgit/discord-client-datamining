@@ -8,8 +8,8 @@ var l = n(64700),
     a = n(317525),
     r = n(576705),
     o = n(287809),
-    u = n(488926),
-    d = n(652215);
+    d = n(488926),
+    u = n(652215);
 
 function c(e) {
     let {
@@ -19,14 +19,11 @@ function c(e) {
     } = (0, i.cf)([a.A, o.default, r.A], () => ({
         sortedRoles: null != e ? a.A.getSortedRoles(e.id) : [],
         currentUser: o.default.getCurrentUser(),
-        canManageRoles: null != e && r.A.can(d.xBc.MANAGE_ROLES, e)
+        canManageRoles: null != e && r.A.can(u.xBc.MANAGE_ROLES, e)
     }), [e]);
     return l.useMemo(() => {
         if (null == e || null == n || !c) return [];
-        let l = u.HJ(e, n.id);
-        return t.filter(t => {
-            var i;
-            return !(0, s.Oy)(t) && !t.managed && (null == (i = t.tags) ? void 0 : i.guild_connections) === void 0 && !!u.wO(e, n.id, l, t)
-        })
+        let l = d.HJ(e, n.id);
+        return t.filter(t => !(0, s.Oy)(t) && !t.managed && t.tags?.guild_connections === void 0 && !!d.wO(e, n.id, l, t))
     }, [e, n, c, t])
 }

@@ -3,16 +3,16 @@ n.d(t, {
     A: () => m
 });
 var a = n(627968),
-    l = n(64700),
-    r = n(158954),
-    i = n(397927),
-    s = n(839214),
+    i = n(64700),
+    s = n(158954),
+    l = n(397927),
+    r = n(839214),
     o = n(780964),
-    c = n(840065),
-    d = n(652215);
-let u = (0, s.D)(() => ({
+    d = n(840065),
+    c = n(652215);
+let u = (0, r.D)(() => ({
     setting: o.X.ACCOUNT_PANEL,
-    section: d.nc_.ACCOUNT,
+    section: c.nc_.ACCOUNT,
     subsection: void 0
 }));
 
@@ -20,25 +20,25 @@ function m() {
     let e = u.useField("setting"),
         t = u.useField("section"),
         n = u.useField("subsection"),
-        s = l.useCallback(() => {
-            (0, c.openUserSettings)(e, {
+        r = i.useCallback(() => {
+            (0, d.openUserSettings)(e, {
                 section: t,
                 subsection: n
             })
         }, [e, t, n]),
-        m = l.useMemo(() => Object.values(o.X).map(e => ({
+        m = i.useMemo(() => Object.values(o.X).map(e => ({
             id: e,
             label: e,
             value: e
         })), []),
-        p = l.useMemo(() => Object.values(d.nc_).map(e => ({
+        h = i.useMemo(() => Object.values(c.nc_).map(e => ({
             id: e,
             label: e,
             value: e
         })), []);
-    return (0, a.jsxs)(r.nVY, {
+    return (0, a.jsxs)(s.nVY, {
         label: "Settings Navigation Tool",
-        children: [(0, a.jsx)(i.ZiE, {
+        children: [(0, a.jsx)(l.ZiE, {
             label: "Setting (Redesign)",
             placeholder: "Select a setting",
             value: e,
@@ -46,24 +46,25 @@ function m() {
                 setting: e
             }),
             options: m,
-            selectionMode: "single"
-        }), (0, a.jsx)(i.ZiE, {
+            selectionMode: "single",
+            clearable: !0
+        }), (0, a.jsx)(l.ZiE, {
             label: "Setting Section (Legacy)",
             value: t,
             onSelectionChange: e => u.setState({
                 section: e
             }),
-            options: p,
+            options: h,
             selectionMode: "single"
-        }), (0, a.jsx)(i.ksK, {
+        }), (0, a.jsx)(l.ksK, {
             label: "Setting Subsection (Legacy)",
             placeholder: "Type a subsection...",
             onChange: e => u.setState({
                 subsection: e
             })
-        }), (0, a.jsx)(r.$nd, {
+        }), (0, a.jsx)(s.$nd, {
             variant: "primary",
-            onClick: s,
+            onClick: r,
             text: "Open User Settings"
         })]
     })

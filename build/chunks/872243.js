@@ -1,39 +1,39 @@
-/** chunk id: 872243, original params: t,n,e (module,exports,require) **/
-e.d(n, {
+/** chunk id: 872243, original params: t,e,n (module,exports,require) **/
+n.d(e, {
     default: () => p
-}), e(896048), e(228524);
-var a = e(627968),
-    i = e(64700),
-    l = e(311907),
-    s = e(732955),
-    r = e(397927),
-    c = e(47167),
-    o = e(734057),
-    u = e(181079),
-    d = e(422258),
-    x = e(985018),
-    h = e(129115);
+});
+var a = n(627968),
+    i = n(64700),
+    s = n(311907),
+    l = n(732955),
+    r = n(397927),
+    c = n(47167),
+    o = n(734057),
+    u = n(181079),
+    d = n(422258),
+    x = n(985018),
+    h = n(129115);
 
 function p(t) {
     let {
-        channelId: n,
-        onClose: e,
+        channelId: e,
+        onClose: n,
         transitionState: p,
         heading: m,
         formTitle: f,
         allowReset: k = !1
-    } = t, v = (0, l.bG)([o.A], () => o.A.getChannel(n)), C = (0, c.Ay)(v), g = u.A.getNickname(n), [b, j] = i.useState(null != g ? g : "");
+    } = t, v = (0, s.bG)([o.A], () => o.A.getChannel(e)), C = (0, c.Ay)(v), g = u.A.getNickname(e), [b, j] = i.useState(g ?? "");
 
     function y(t) {
-        t.preventDefault(), (0, d.w6)(n, b), e()
+        t.preventDefault(), (0, d.w6)(e, b), n()
     }
     return (0, a.jsx)("form", {
         onSubmit: y,
-        children: (0, a.jsxs)(s.aFV, {
+        children: (0, a.jsxs)(l.aFV, {
             title: m,
             actions: [{
                 text: x.intl.string(x.t["ETE/oC"]),
-                onClick: e,
+                onClick: n,
                 variant: "secondary"
             }, {
                 text: m,
@@ -41,13 +41,13 @@ function p(t) {
                 variant: "primary",
                 type: "submit"
             }],
-            onClose: e,
+            onClose: n,
             transitionState: p,
             children: [(0, a.jsx)(r.ksK, {
                 label: f,
                 value: b,
                 onChange: j,
-                placeholder: null != C ? C : void 0,
+                placeholder: C ?? void 0,
                 maxLength: 100,
                 autoFocus: !0
             }), k && null != g ? (0, a.jsx)("div", {
@@ -55,7 +55,7 @@ function p(t) {
                 children: (0, a.jsx)(r.QWc, {
                     text: x.intl.string(x.t.aE02Rz),
                     onClick: function() {
-                        (0, d.w6)(n, null), e()
+                        (0, d.w6)(e, null), n()
                     },
                     textVariant: "text-sm/normal"
                 })

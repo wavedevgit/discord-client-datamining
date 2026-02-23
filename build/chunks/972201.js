@@ -1,82 +1,80 @@
 /** chunk id: 972201, original params: t,e,n (module,exports,require) **/
 n.d(e, {
     A: () => A
-}), n(896048);
+});
 var a = n(627968),
     r = n(64700),
     i = n(311907),
-    l = n(397927),
-    s = n(181658),
+    s = n(397927),
+    l = n(181658),
     o = n(836602),
     c = n(780333),
-    u = n(985018),
-    E = n(222872);
+    E = n(985018),
+    u = n(222872);
 
 function A(t) {
-    var e;
     let {
-        error: n,
-        setEmailToken: A,
-        setError: _,
-        onNext: C,
-        onClose: d,
+        error: e,
+        setEmailToken: n,
+        setError: A,
+        onNext: _,
+        onClose: C,
         transitionState: g
-    } = t, [N, S] = r.useState(!1), [k, m] = r.useState(""), [h, x] = r.useState(!1), p = (0, i.bG)([o.A], () => o.A.getErrors()), v = r.useRef(null);
+    } = t, [N, S] = r.useState(!1), [d, k] = r.useState(""), [m, h] = r.useState(!1), x = (0, i.bG)([o.A], () => o.A.getErrors()), p = r.useRef(null);
     r.useEffect(() => {
-        var t;
-        null == (t = v.current) || t.focus()
+        p.current?.focus()
     }, []);
     let T = async t => {
-        t.preventDefault(), _(null), S(!0);
+        t.preventDefault(), A(null), S(!0);
         try {
             let {
                 token: t
-            } = await (0, c.$)(k);
-            A(t), C()
+            } = await (0, c.$)(d);
+            n(t), _()
         } catch (t) {
-            _(new s.A(t).getAnyErrorMessage())
+            A(new l.A(t).getAnyErrorMessage())
         } finally {
             S(!1)
         }
     }, f = async () => {
-        if (!h) {
-            x(!0);
+        if (!m) {
+            h(!0);
             try {
-                await (0, c.B)(!0), (0, l.showToast)((0, l.createToast)(u.intl.string(u.t["84yeoz"]), l.ToastType.SUCCESS))
+                await (0, c.B)(!0), (0, s.showToast)((0, s.createToast)(E.intl.string(E.t["84yeoz"]), s.ToastType.SUCCESS))
             } catch (e) {
-                let t = new s.A(e).getAnyErrorMessage();
-                null != t && (0, l.showToast)((0, l.createToast)(t, l.ToastType.FAILURE))
+                let t = new l.A(e).getAnyErrorMessage();
+                null != t && (0, s.showToast)((0, s.createToast)(t, s.ToastType.FAILURE))
             } finally {
-                x(!1)
+                h(!1)
             }
         }
     };
-    return (0, a.jsx)(l.kpP, {
-        title: u.intl.string(u.t.jMGc4J),
-        subtitle: u.intl.string(u.t.SZJowy),
+    return (0, a.jsx)(s.kpP, {
+        title: E.intl.string(E.t.jMGc4J),
+        subtitle: E.intl.string(E.t.SZJowy),
         graphic: {
             type: "image",
-            src: E
+            src: u
         },
         transitionState: g,
-        onClose: d,
+        onClose: C,
         actions: [{
             variant: "primary",
-            text: u.intl.string(u.t.PDTjLN),
+            text: E.intl.string(E.t.PDTjLN),
             loading: N,
             onClick: T
         }],
-        children: (0, a.jsxs)(l.BJc, {
+        children: (0, a.jsxs)(s.BJc, {
             gap: 8,
-            children: [(0, a.jsx)(l.ksK, {
-                label: u.intl.string(u.t["8mZX6M"]),
-                error: null != n ? n : null == p || null == (e = p.email_token) ? void 0 : e[0],
-                value: k,
-                onChange: m,
-                inputRef: v
-            }), (0, a.jsx)(l.QWc, {
+            children: [(0, a.jsx)(s.ksK, {
+                label: E.intl.string(E.t["8mZX6M"]),
+                error: e ?? x?.email_token?.[0],
+                value: d,
+                onChange: k,
+                inputRef: p
+            }), (0, a.jsx)(s.QWc, {
                 textVariant: "text-sm/normal",
-                text: u.intl.string(u.t.K0NPQ6),
+                text: E.intl.string(E.t.K0NPQ6),
                 onClick: f
             })]
         })

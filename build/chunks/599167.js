@@ -1,56 +1,56 @@
 /** chunk id: 599167, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => j
+    A: () => f
 });
-var r = n(627968),
-    i = n(64700),
+var i = n(627968),
+    s = n(64700),
     l = n(311907),
-    s = n(554146),
+    r = n(554146),
     a = n(397927),
     o = n(262828),
-    c = n(826673),
-    d = n(555337),
+    d = n(826673),
+    c = n(555337),
     u = n(959757),
-    g = n(739455),
-    m = n(380682),
-    p = n(994870),
-    f = n(400281),
-    h = n(652215),
-    b = n(705751),
-    x = n(280215);
+    m = n(739455),
+    g = n(380682),
+    x = n(994870),
+    h = n(400281),
+    _ = n(652215),
+    A = n(705751),
+    p = n(280215);
 
-function j() {
-    let e, t = (0, l.bG)([d.A], () => d.A.getGuild()),
+function f() {
+    let e, t = (0, l.bG)([c.A], () => c.A.getGuild()),
         {
             application: n,
-            loading: j
-        } = (0, o.A)(null == t ? void 0 : t.id, b.S7.GUILD_ROLE_SUBSCRIPTIONS),
-        _ = i.useRef(null),
-        O = (0, u.A)(null != t ? t : void 0);
-    i.useEffect(() => {
-        null != t && (0, g.aV)(t) && (0, c.Dr)(s.M.SERVER_SUBSCRIPTION_SETTINGS_NEW_BADGE_TIER_TEMPLATE)
+            loading: f
+        } = (0, o.A)(t?.id, A.S7.GUILD_ROLE_SUBSCRIPTIONS),
+        j = s.useRef(null),
+        N = (0, u.A)(t ?? void 0);
+    s.useEffect(() => {
+        null != t && (0, m.aV)(t) && (0, d.Dr)(r.M.SERVER_SUBSCRIPTION_SETTINGS_NEW_BADGE_TIER_TEMPLATE)
     }, [t]);
-    let v = (null == t ? void 0 : t.features.has(h.GuildFeatures.CREATOR_MONETIZABLE)) === !1 && (null == t ? void 0 : t.features.has(h.GuildFeatures.CREATOR_MONETIZABLE_PROVISIONAL)) === !1;
-    return e = null == t || j ? (0, r.jsx)(a.y$y, {}) : null != O ? (0, r.jsx)(p.A, {
+    let E = t?.features.has(_.GuildFeatures.CREATOR_MONETIZABLE) === !1 && t?.features.has(_.GuildFeatures.CREATOR_MONETIZABLE_PROVISIONAL) === !1;
+    return e = null == t || f ? (0, i.jsx)(a.y$y, {}) : null != N ? (0, i.jsx)(x.A, {
         guild: t,
-        config: O
-    }) : v ? (0, r.jsx)(f.A, {
+        config: N
+    }) : E ? (0, i.jsx)(h.A, {
         guild: t
-    }) : (0, r.jsx)(m.A, {
+    }) : (0, i.jsx)(g.A, {
         guild: t,
         application: n
-    }), (0, r.jsx)("div", {
-        className: x.ed,
-        children: (0, r.jsx)("div", {
-            className: x.V1,
-            children: (0, r.jsx)(a.ArX, {
-                className: x.iL,
-                children: (0, r.jsx)("main", {
-                    ref: _,
-                    className: x.z1,
-                    children: (0, r.jsx)(a.xpW, {
-                        containerRef: _,
+    }), (0, i.jsx)("div", {
+        className: p.ed,
+        children: (0, i.jsx)("div", {
+            className: p.V1,
+            children: (0, i.jsx)(a.ArX, {
+                className: p.iL,
+                children: (0, i.jsx)("main", {
+                    ref: j,
+                    className: p.z1,
+                    children: (0, i.jsx)(a.xpW, {
+                        containerRef: j,
                         children: e
                     })
                 })

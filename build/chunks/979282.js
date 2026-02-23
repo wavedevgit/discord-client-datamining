@@ -2,9 +2,9 @@
 n.d(t, {
     A: () => a
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(518620),
+var r = n(518620),
     l = n(901319);
 
 function a(e) {
@@ -14,24 +14,24 @@ function a(e) {
         renderSection: a,
         isVirtualizedList: s,
         hasSearchQuery: o,
-        sectionFilter: c,
-        footer: u,
-        renderSectionFooter: d
+        sectionFilter: d,
+        footer: c,
+        renderSectionFooter: u
     } = e;
-    return s ? (0, r.jsx)(i.A, {
+    return s ? (0, i.jsx)(r.A, {
         rows: t,
         renderRow: n,
         renderSection: a,
-        footer: u,
-        sectionFilter: c,
-        renderSectionFooter: d
-    }) : (0, r.jsx)(l.A, {
+        footer: c,
+        sectionFilter: d,
+        renderSectionFooter: u
+    }) : (0, i.jsx)(l.A, {
         rows: t,
         renderRow: n,
         renderSection: a,
-        sectionFilter: c,
+        sectionFilter: d,
         hasSearchQuery: o,
-        footer: u,
-        renderSectionFooter: d
+        footer: c,
+        renderSectionFooter: u
     })
 }

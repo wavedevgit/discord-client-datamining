@@ -1,60 +1,59 @@
 /** chunk id: 387265, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => d
-}), n(896048), n(321073);
+    A: () => c
+}), n(321073);
 var a = n(627968),
-    l = n(64700),
-    r = n(554146),
-    i = n(397927),
-    s = n(617617),
+    i = n(64700),
+    s = n(554146),
+    l = n(397927),
+    r = n(617617),
     o = n(256787),
-    c = n(20439);
-let d = l.memo(function(e) {
+    d = n(20439);
+let c = i.memo(function(e) {
     let {
         className: t,
         content: n,
-        onChange: d
-    } = e, u = r.M[n], {
+        onChange: c
+    } = e, u = s.M[n], {
         isDismissed: m,
-        handleToggleDismissState: p
-    } = (0, c.A)(u), [h, x] = l.useState(!1), g = l.useCallback(() => {
-        null == d || d(n), p()
-    }, [d, p, n]), f = l.useCallback(e => {
-        e.preventDefault(), x(!0), navigator.clipboard.writeText(n.toLowerCase())
+        handleToggleDismissState: h
+    } = (0, d.A)(u), [x, p] = i.useState(!1), g = i.useCallback(() => {
+        c?.(n), h()
+    }, [c, h, n]), _ = i.useCallback(e => {
+        e.preventDefault(), p(!0), navigator.clipboard.writeText(n.toLowerCase())
     }, [n]);
     return (0, a.jsxs)(a.Fragment, {
-        children: [(0, a.jsxs)(i.BJc, {
+        children: [(0, a.jsxs)(l.BJc, {
             className: t,
             direction: "horizontal",
             align: "center",
-            children: [(0, a.jsx)(i.K0, {
+            children: [(0, a.jsx)(l.K0, {
                 size: "sm",
                 variant: "icon-only",
-                icon: h ? i.ODX : i.sjE,
-                onClick: f,
-                "aria-label": h ? "Copied" : "Copy"
-            }), (0, a.jsx)(i.dOG, {
-                label: "".concat(n.toLowerCase(), " (").concat(r.M[n], ")"),
+                icon: x ? l.ODX : l.sjE,
+                onClick: _,
+                "aria-label": x ? "Copied" : "Copy"
+            }), (0, a.jsx)(l.dOG, {
+                label: `${n.toLowerCase()} (${s.M[n]})`,
                 description: (0, o.Zm)(u) ? function(e) {
-                    var t, n;
-                    let a = null == (n = s.A.settings.userContent) || null == (t = n.recurringDismissibleContentStates) ? void 0 : t[e];
-                    if (null == a) return null;
-                    let l = [],
+                    let t = r.A.settings.userContent?.recurringDismissibleContentStates?.[e];
+                    if (null == t) return null;
+                    let n = [],
                         {
-                            lastDismissedVersion: r,
+                            lastDismissedVersion: a,
                             lastDismissedAtMs: i,
-                            lastDismissedObjectId: o
-                        } = a;
-                    if (void 0 !== r && 0 !== r && l.push("last_dismissed_version: ".concat(r)), void 0 !== i) {
+                            lastDismissedObjectId: s
+                        } = t;
+                    if (void 0 !== a && 0 !== a && n.push(`last_dismissed_version: ${a}`), void 0 !== i) {
                         let e = Number(i),
                             t = Number.isNaN(e) ? "n/a" : new Date(e).toLocaleString();
-                        l.push("last_dismissed_at: ".concat(t))
+                        n.push(`last_dismissed_at: ${t}`)
                     }
-                    return (void 0 !== o && "0" !== o && l.push("last_dismissed_object_id: ".concat(o)), 0 === l.length) ? null : l.join(", ")
+                    return (void 0 !== s && "0" !== s && n.push(`last_dismissed_object_id: ${s}`), 0 === n.length) ? null : n.join(", ")
                 }(u) : null,
                 checked: m,
                 onChange: g
             })]
-        }), (0, a.jsx)(i.cGx, {})]
+        }), (0, a.jsx)(l.cGx, {})]
     })
 })

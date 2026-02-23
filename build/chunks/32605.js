@@ -1,100 +1,82 @@
-/** chunk id: 32605, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    default: () => g,
-    z: () => b
+/** chunk id: 32605, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    default: () => A,
+    z: () => f
 });
-var i = n(627968);
-n(64700);
-var l = n(397927),
-    r = n(780964),
-    o = n(840065),
-    a = n(422936),
-    s = n(234419),
-    u = n(244975),
-    c = n(788868),
-    d = n(652215),
-    p = n(985018),
-    h = n(511761),
-    m = n(271110);
+var n = i(627968);
+i(64700);
+var l = i(397927),
+    a = i(780964),
+    s = i(840065),
+    r = i(414345),
+    o = i(422936),
+    u = i(234419),
+    d = i(244975),
+    c = i(788868),
+    h = i(652215),
+    m = i(985018),
+    p = i(511761),
+    g = i(271110);
+
+function A(e) {
+    let {
+        onClose: t,
+        analyticsSource: i,
+        ...l
+    } = e, A = m.intl.format(m.t["JmbS+T"], {
+        onClick: () => {
+            (0, s.openUserSettings)(a.X.NITRO_PANEL, {
+                section: h.nc_.PREMIUM
+            }), t()
+        }
+    }), f = (0, u.V)(), T = (0, o.O)(), E = null != f || null != T;
+    return (0, r.g)({
+        location: "BurstReactionsUpsell"
+    }) ? (0, n.jsx)(d.F, {
+        title: m.intl.string(m.t.N4SCJ0),
+        subtitle: A,
+        graphic: {
+            src: g,
+            type: "image"
+        },
+        onSecondaryClick: t,
+        secondaryCTA: m.intl.string(m.t.f3Pet9),
+        onClose: t
+    }) : (0, n.jsx)(d.A, {
+        artURL: g,
+        artContainerClassName: p.JS,
+        modalClassName: p.jT,
+        bodyClassName: p.IP,
+        type: c.e.BURST_REACTION_UPSELL,
+        title: m.intl.string(m.t.N4SCJ0),
+        body: A,
+        onSecondaryClick: t,
+        glowUp: A,
+        secondaryCTA: m.intl.string(m.t.f3Pet9),
+        analyticsSource: i,
+        analyticsLocation: {
+            page: h.liQ.PREMIUM_UPSELL_BURST_REACTIONS,
+            object: h.ZSU.BUTTON_CTA
+        },
+        onClose: t,
+        subscribeButtonText: E ? void 0 : m.intl.string(m.t["8x0jKT"]),
+        subscriptionTier: f?.subscription_trial?.sku_id ?? c.pe.TIER_2,
+        backButtonText: m.intl.string(m.t.f3Pet9),
+        ...l
+    })
+}
 
 function f(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            i = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), i.forEach(function(t) {
-            var i;
-            i = n[t], t in e ? Object.defineProperty(e, t, {
-                value: i,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = i
-        })
-    }
-    return e
-}
-
-function g(e) {
-    var t, n;
-    let {
-        onClose: l,
-        analyticsSource: g
-    } = e, b = function(e, t) {
-        if (null == e) return {};
-        var n, i, l, r = {};
-        if ("u" > typeof Reflect && Reflect.ownKeys) {
-            for (l = 0, n = Reflect.ownKeys(e); l < n.length; l++) i = n[l], !(t.indexOf(i) >= 0) && Object.prototype.propertyIsEnumerable.call(e, i) && (r[i] = e[i]);
-            return r
-        }
-        if (r = function(e, t) {
-                if (null == e) return {};
-                var n, i, l = {},
-                    r = Object.getOwnPropertyNames(e);
-                for (i = 0; i < r.length; i++) n = r[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n]);
-                return l
-            }(e, t), Object.getOwnPropertySymbols)
-            for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) i = n[l], !(t.indexOf(i) >= 0) && Object.prototype.propertyIsEnumerable.call(e, i) && (r[i] = e[i]);
-        return r
-    }(e, ["onClose", "analyticsSource"]), y = p.intl.format(p.t["JmbS+T"], {
-        onClick: () => {
-            (0, o.openUserSettings)(r.X.NITRO_PANEL, {
-                section: d.nc_.PREMIUM
-            }), l()
-        }
-    }), O = (0, s.V)(), v = (0, a.O)(), j = null != O || null != v;
-    return (0, i.jsx)(u.A, f({
-        artURL: m,
-        artContainerClassName: h.JS,
-        modalClassName: h.jT,
-        bodyClassName: h.IP,
-        type: c.e.BURST_REACTION_UPSELL,
-        title: p.intl.string(p.t.N4SCJ0),
-        body: y,
-        glowUp: y,
-        analyticsSource: g,
-        analyticsLocation: {
-            page: d.liQ.PREMIUM_UPSELL_BURST_REACTIONS,
-            object: d.ZSU.BUTTON_CTA
-        },
-        onClose: l,
-        subscribeButtonText: j ? void 0 : p.intl.string(p.t["8x0jKT"]),
-        subscriptionTier: null != (t = null == O || null == (n = O.subscription_trial) ? void 0 : n.sku_id) ? t : c.pe.TIER_2,
-        backButtonText: p.intl.string(p.t.f3Pet9)
-    }, b))
-}
-
-function b(e) {
     let {
         analytics: t
     } = e;
     (0, l.mMO)(async () => {
         let {
             default: e
-        } = await Promise.resolve().then(n.bind(n, 32605));
-        return n => (0, i.jsx)(e, f({
-            analyticsSource: t
-        }, n))
+        } = await Promise.resolve().then(i.bind(i, 32605));
+        return i => (0, n.jsx)(e, {
+            analyticsSource: t,
+            ...i
+        })
     })
 }

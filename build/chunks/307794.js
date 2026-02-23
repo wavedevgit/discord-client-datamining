@@ -1,100 +1,92 @@
-/** chunk id: 307794, original params: t,e,n (module,exports,require) **/
-n.d(e, {
-    default: () => O
+/** chunk id: 307794, original params: t,n,o (module,exports,require) **/
+o.d(n, {
+    default: () => g
 });
-var r = n(627968);
-n(64700);
-var o = n(827734),
-    l = n(397927),
-    a = n(688810),
-    c = n(87719),
-    i = n(244975),
-    s = n(788868),
-    f = n(652215),
-    u = n(985018),
-    p = n(915865),
-    d = n(953239),
-    b = n(929103);
+var a = o(627968);
+o(64700);
+var e = o(827734),
+    r = o(397927),
+    i = o(688810),
+    s = o(87719),
+    l = o(414345),
+    c = o(244975),
+    d = o(788868),
+    p = o(652215),
+    C = o(985018),
+    A = o(915865),
+    f = o(953239),
+    u = o(929103);
 
-function y(t, e) {
-    return (0, r.jsx)(l.LpS, {
+function m(t, n) {
+    return (0, a.jsx)(r.LpS, {
         text: t,
-        className: d.Ad,
-        color: o.A.unsafe_rawColors.BRAND_500.css
-    }, e)
+        className: f.Ad,
+        color: e.A.unsafe_rawColors.BRAND_500.css
+    }, n)
 }
 
-function O(t) {
+function g(t) {
     let {
-        guildCount: e,
-        onClose: n,
-        analyticsLocations: o
-    } = t, d = function(t, e) {
-        if (null == t) return {};
-        var n, r, o, l = {};
-        if ("u" > typeof Reflect && Reflect.ownKeys) {
-            for (o = 0, n = Reflect.ownKeys(t); o < n.length; o++) r = n[o], !(e.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(t, r) && (l[r] = t[r]);
-            return l
-        }
-        if (l = function(t, e) {
-                if (null == t) return {};
-                var n, r, o = {},
-                    l = Object.getOwnPropertyNames(t);
-                for (r = 0; r < l.length; r++) n = l[r], !(e.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(t, n) && (o[n] = t[n]);
-                return o
-            }(t, e), Object.getOwnPropertySymbols)
-            for (o = 0, n = Object.getOwnPropertySymbols(t); o < n.length; o++) r = n[o], !(e.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(t, r) && (l[r] = t[r]);
-        return l
-    }(t, ["guildCount", "onClose", "analyticsLocations"]), O = function(t, e) {
-        return (0, r.jsx)(l.DUT, {
-            className: p.C,
+        guildCount: n,
+        onClose: o,
+        analyticsLocations: e,
+        ...f
+    } = t, g = function(t, n) {
+        return (0, a.jsx)(r.DUT, {
+            className: A.C,
             tag: "span",
             onClick: () => {
-                n(), (0, c.e)()
+                o(), (0, s.e)()
             },
             children: t
-        }, e)
+        }, n)
     }, {
-        analyticsLocations: m
-    } = (0, a.Ay)(o);
-    return (0, r.jsx)(a.f5, {
-        value: m,
-        children: (0, r.jsx)(i.A, function(t) {
-            for (var e = 1; e < arguments.length; e++) {
-                var n = null != arguments[e] ? arguments[e] : {},
-                    r = Object.keys(n);
-                "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(t) {
-                    return Object.getOwnPropertyDescriptor(n, t).enumerable
-                }))), r.forEach(function(e) {
-                    var r;
-                    r = n[e], e in t ? Object.defineProperty(t, e, {
-                        value: r,
-                        enumerable: !0,
-                        configurable: !0,
-                        writable: !0
-                    }) : t[e] = r
-                })
-            }
-            return t
-        }({
-            artURL: b.A,
-            onClose: n,
-            type: s.e.GUILD_CAP_MODAL_UPSELL,
-            title: u.intl.string(u.t["CoNXB+"]),
-            body: e < f.qlD ? u.intl.format(u.t["5qLH7B"], {
-                guildCount: e,
-                onAndMore: O,
-                newBadgeHook: y
-            }) : u.intl.format(u.t.mk9CS6, {
-                onAndMore: O,
-                newBadgeHook: y
+        analyticsLocations: k
+    } = (0, i.Ay)(e);
+    return (0, l.g)({
+        location: "PremiumGuildCapUpsell"
+    }) ? (0, a.jsx)(c.F, {
+        title: C.intl.string(C.t["CoNXB+"]),
+        subtitle: n < p.qlD ? C.intl.format(C.t["5qLH7B"], {
+            guildCount: n,
+            onAndMore: g,
+            newBadgeHook: m
+        }) : C.intl.format(C.t.mk9CS6, {
+            onAndMore: g,
+            newBadgeHook: m
+        }),
+        graphic: {
+            src: u.A,
+            type: "image"
+        },
+        secondaryCTA: C.intl.string(C.t["13/7kX"]),
+        onSecondaryClick: o,
+        onClose: o,
+        ...f
+    }) : (0, a.jsx)(i.f5, {
+        value: k,
+        children: (0, a.jsx)(c.A, {
+            artURL: u.A,
+            onClose: o,
+            type: d.e.GUILD_CAP_MODAL_UPSELL,
+            title: C.intl.string(C.t["CoNXB+"]),
+            secondaryCTA: C.intl.string(C.t["13/7kX"]),
+            onSecondaryClick: o,
+            body: n < p.qlD ? C.intl.format(C.t["5qLH7B"], {
+                guildCount: n,
+                onAndMore: g,
+                newBadgeHook: m
+            }) : C.intl.format(C.t.mk9CS6, {
+                onAndMore: g,
+                newBadgeHook: m
             }),
-            context: e < f.qlD ? u.intl.formatToPlainString(u.t["C+Hqzs"], {
-                guildCount: e
-            }) : u.intl.string(u.t.m0xavd),
-            glowUp: u.intl.format(u.t["6Dl5X1"], {
-                onAndMore: O
-            })
-        }, d))
+            context: n < p.qlD ? C.intl.formatToPlainString(C.t["C+Hqzs"], {
+                guildCount: n
+            }) : C.intl.string(C.t.m0xavd),
+            glowUp: C.intl.format(C.t["6Dl5X1"], {
+                onAndMore: g
+            }),
+            ...f
+        })
     })
 }

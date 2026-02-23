@@ -2,8 +2,8 @@
 n.d(t, {
     o: () => l
 });
-var r = n(855511),
-    i = n(682261);
+var i = n(855511),
+    r = n(682261);
 
 function l(e) {
     return {
@@ -13,8 +13,8 @@ function l(e) {
             let {
                 activity: t
             } = e;
-            return (0, i.A)(t)
+            return (0, r.A)(t)
         }),
-        game_platform: e.currentActivities.length > 0 ? (0, r.A)(e.currentActivities[0].activity) : null
+        game_platform: e.currentActivities.length > 0 ? (0, i.A)(e.currentActivities[0].activity) : null
     }
 }

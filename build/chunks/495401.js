@@ -1,4 +1,5 @@
 /** chunk id: 495401, original params: e,t,n (module,exports,require) **/
+"use strict";
 e.exports = {
     XG: "scroller__629e4",
     gy: "unread__629e4 " + n(473134).kL,

@@ -1,20 +1,19 @@
-/** chunk id: 740076, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    I: () => s
+/** chunk id: 740076, original params: t,e,a (module,exports,require) **/
+a.d(e, {
+    I: () => i
 });
-var r = n(334279),
-    i = n(311907),
-    a = n(166403),
-    o = n(985018);
-let s = e => {
-    let t = (0, i.bG)([a.A], () => {
-        let e = a.A.getPremiumSubscription();
-        return (null == e ? void 0 : e.isPurchasedExternally) === !0
+var n = a(334279),
+    l = a(311907),
+    r = a(166403),
+    s = a(985018);
+let i = t => {
+    let e = (0, l.bG)([r.A], () => {
+        let t = r.A.getPremiumSubscription();
+        return t?.isPurchasedExternally === !0
     });
-    return e === r.j.PREMIUM_TIER_2_3_DAY ? {
-        isDisabled: t,
-        disabledReason: t ? o.intl.string(o.t.NbveHD) : null
+    return t === n.j.PREMIUM_TIER_2_3_DAY ? {
+        isDisabled: e,
+        disabledReason: e ? s.intl.string(s.t.NbveHD) : null
     } : {
         isDisabled: !1,
         disabledReason: null

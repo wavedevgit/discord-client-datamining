@@ -1,52 +1,51 @@
-/** chunk id: 759625, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    A: () => u
-}), n(228524);
-var r = n(627968);
-n(64700);
-var i = n(397927),
-    a = n(147925),
-    o = n(659612),
-    s = n(898612),
-    l = n(232492),
-    c = n(974105);
+/** chunk id: 759625, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    A: () => o
+});
+var l = i(627968);
+i(64700);
+var n = i(397927),
+    a = i(147925),
+    s = i(659612),
+    r = i(898612),
+    c = i(232492),
+    d = i(974105);
 
-function u(e) {
+function o(e) {
     let {
         benefit: t,
-        guildId: n,
-        onClick: u
-    } = e, d = (0, l.A)(n, t.ref_id), f = () => {
-        null == d || d.navigateToChannel(), u()
-    }, p = (0, r.jsx)(o.A, {
-        guildId: n,
+        guildId: i,
+        onClick: o
+    } = e, u = (0, c.A)(i, t.ref_id), m = (0, l.jsx)(s.A, {
+        guildId: i,
         emojiId: t.emoji_id,
         emojiName: t.emoji_name
     });
-    return (0, r.jsxs)(i.DUT, {
-        className: c.kL,
-        onClick: f,
-        "aria-label": null == d ? void 0 : d.ariaLabel,
+    return (0, l.jsxs)(n.DUT, {
+        className: d.kL,
+        onClick: () => {
+            u?.navigateToChannel(), o()
+        },
+        "aria-label": u?.ariaLabel,
         role: "link",
-        children: [(0, r.jsx)("div", {
-            className: c.qq,
-            children: p
-        }), (0, r.jsxs)("div", {
-            className: c.op,
-            children: [(0, r.jsx)(i.Text, {
+        children: [(0, l.jsx)("div", {
+            className: d.qq,
+            children: m
+        }), (0, l.jsxs)("div", {
+            className: d.op,
+            children: [(0, l.jsx)(n.Text, {
                 variant: "text-md/medium",
                 color: "text-strong",
-                className: c.UU,
-                children: (0, s.A)(t)
-            }), (0, r.jsx)(i.Text, {
+                className: d.UU,
+                children: (0, r.A)(t)
+            }), (0, l.jsx)(n.Text, {
                 color: "interactive-text-default",
                 variant: "text-sm/normal",
                 children: t.description
             })]
-        }), (0, r.jsx)(a.A, {
+        }), (0, l.jsx)(a.A, {
             direction: a.A.Directions.RIGHT,
-            className: c.OW
+            className: d.OW
         })]
     })
 }

@@ -1,10 +1,10 @@
 /** chunk id: 818143, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    G: () => l
+    G: () => a
 });
-var r = n(311907),
-    i = n(787392);
+var i = n(311907),
+    s = n(787392);
 
-function l() {
-    return (0, r.yK)([i.A], () => i.A.getUserIds())
+function a() {
+    return (0, i.yK)([s.A], () => s.A.getUserIds())
 }

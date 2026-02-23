@@ -1,12 +1,13 @@
 /** chunk id: 963702, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
     A: () => o
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var l = n(397927),
-    i = n(303727),
-    s = n(985018),
+var s = n(397927),
+    l = n(303727),
+    r = n(985018),
     a = n(610688);
 
 function o(e) {
@@ -16,32 +17,32 @@ function o(e) {
         tip: o,
         disableStars: c
     } = e;
-    return (0, r.jsxs)("div", {
+    return (0, i.jsxs)("div", {
         className: a.kL,
-        children: [(0, r.jsxs)("div", {
+        children: [(0, i.jsxs)("div", {
             className: a.zc,
-            children: [(0, r.jsx)(t, {
+            children: [(0, i.jsx)(t, {
                 color: "currentColor",
                 size: "custom",
                 className: a.Kk,
                 width: 36,
                 height: 36
-            }), c ? null : (0, r.jsx)(i.A, {
+            }), c ? null : (0, i.jsx)(l.A, {
                 className: a.uf
             })]
-        }), (0, r.jsx)(l.Heading, {
+        }), (0, i.jsx)(s.Heading, {
             className: a.wx,
             variant: "heading-xl/semibold",
             children: n
-        }), (0, r.jsxs)(l.Text, {
+        }), (0, i.jsxs)(s.Text, {
             color: "text-default",
             variant: "text-xs/normal",
-            children: [c ? null : (0, r.jsxs)(l.Text, {
+            children: [c ? null : (0, i.jsxs)(s.Text, {
                 tag: "span",
                 className: a.PP,
                 variant: "text-xs/bold",
                 color: "text-feedback-positive",
-                children: [s.intl.string(s.t["8tvIiN"]), ":", " "]
+                children: [r.intl.string(r.t["8tvIiN"]), ":", " "]
             }), o]
         })]
     })

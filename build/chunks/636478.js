@@ -1,24 +1,23 @@
-/** chunk id: 636478, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    T: () => a
+/** chunk id: 636478, original params: e,a,t (module,exports,require) **/
+t.d(a, {
+    T: () => i
 });
-var r = n(64700),
-    i = n(492313);
+var r = t(64700),
+    n = t(492313);
 
-function a(e) {
-    let [t, n] = (0, i.P)(e.isOpen, e.defaultOpen || !1, e.onOpenChange), a = (0, r.useCallback)(() => {
-        n(!0)
-    }, [n]), o = (0, r.useCallback)(() => {
-        n(!1)
-    }, [n]), s = (0, r.useCallback)(() => {
-        n(!t)
-    }, [n, t]);
+function i(e) {
+    let [a, t] = (0, n.P)(e.isOpen, e.defaultOpen || !1, e.onOpenChange), i = (0, r.useCallback)(() => {
+        t(!0)
+    }, [t]), o = (0, r.useCallback)(() => {
+        t(!1)
+    }, [t]), u = (0, r.useCallback)(() => {
+        t(!a)
+    }, [t, a]);
     return {
-        isOpen: t,
-        setOpen: n,
-        open: a,
+        isOpen: a,
+        setOpen: t,
+        open: i,
         close: o,
-        toggle: s
+        toggle: u
     }
 }

@@ -2,16 +2,16 @@
 "use strict";
 n.d(t, {
     A: () => a
-}), n(896048);
-var r = n(64700),
-    l = n(770178),
-    i = n(765548);
+});
+var l = n(64700),
+    i = n(770178),
+    s = n(765548);
 let a = () => {
-    let [e, t] = r.useState(400), n = (0, i.A)(e => {
+    let [e, t] = l.useState(400), n = (0, s.A)(e => {
         t(e.target.clientWidth)
     });
     return {
-        containerRef: (0, l.w)(n),
+        containerRef: (0, i.w)(n),
         containerWidth: e
     }
 }

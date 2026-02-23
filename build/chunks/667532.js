@@ -1,39 +1,36 @@
-/** chunk id: 667532, original params: e,t,n (module,exports,require) **/
-"use strict";
-var r = n(557939),
-    i = n(250594),
-    a = n(503199),
-    o = n(496538),
-    s = n(762503),
-    l = n(732376),
-    c = 1 !== [].unshift(0),
-    u = function() {
+/** chunk id: 667532, original params: t,n,r (module,exports,require) **/
+var e = r(557939),
+    a = r(250594),
+    i = r(503199),
+    u = r(496538),
+    o = r(762503),
+    f = r(732376);
+e({
+    target: "Array",
+    proto: !0,
+    arity: 1,
+    forced: 1 !== [].unshift(0) || ! function() {
         try {
             Object.defineProperty([], "length", {
                 writable: !1
             }).unshift()
-        } catch (e) {
-            return e instanceof TypeError
+        } catch (t) {
+            return t instanceof TypeError
         }
-    };
-r({
-    target: "Array",
-    proto: !0,
-    arity: 1,
-    forced: c || !u()
+    }()
 }, {
-    unshift: function(e) {
-        var t = i(this),
-            n = a(t),
-            r = arguments.length;
-        if (r) {
-            l(n + r);
-            for (var c = n; c--;) {
-                var u = c + r;
-                c in t ? t[u] = t[c] : s(t, u)
+    unshift: function(t) {
+        var n = a(this),
+            r = i(n),
+            e = arguments.length;
+        if (e) {
+            f(r + e);
+            for (var c = r; c--;) {
+                var s = c + e;
+                c in n ? n[s] = n[c] : o(n, s)
             }
-            for (var d = 0; d < r; d++) t[d] = arguments[d]
+            for (var l = 0; l < e; l++) n[l] = arguments[l]
         }
-        return o(t, n + r)
+        return u(n, r + e)
     }
 })

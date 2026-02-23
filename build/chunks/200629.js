@@ -1,22 +1,22 @@
-/** chunk id: 200629, original params: t,e,r (module,exports,require) **/
-r.d(e, {
+/** chunk id: 200629, original params: t,e,n (module,exports,require) **/
+n.d(e, {
     default: () => o
-}), r(896048);
-var n = r(627968);
-r(64700);
-var i = r(158954),
-    s = r(366098),
-    l = r(918192),
-    a = r(985018);
+});
+var r = n(627968);
+n(64700);
+var s = n(158954),
+    l = n(366098),
+    i = n(918192),
+    a = n(985018);
 
 function o(t) {
     let {
         channel: e,
-        onAccept: r,
+        onAccept: n,
         transitionState: o,
         onClose: c
-    } = t, d = (0, s.mT)(e.id), u = (0, s.Iv)(e.id);
-    return (0, n.jsx)(i.Modal, {
+    } = t, d = (0, l.mT)(e.id), x = (0, l.Iv)(e.id);
+    return (0, r.jsx)(s.Modal, {
         onClose: c,
         transitionState: o,
         actions: [{
@@ -27,51 +27,51 @@ function o(t) {
             text: a.intl.string(a.t.mbD50D),
             variant: "primary",
             onClick: () => {
-                r(e), c()
+                n(e), c()
             }
         }],
         title: function(t) {
             let {
                 blockedUsersCount: e,
-                ignoredUsersCount: r
+                ignoredUsersCount: n
             } = t;
-            return e > 0 && r > 0 ? a.intl.formatToPlainString(a.t.Uzdyho, {
-                number: e + r
-            }) : r > 0 ? a.intl.formatToPlainString(a.t.wvygk8, {
-                number: r
+            return e > 0 && n > 0 ? a.intl.formatToPlainString(a.t.Uzdyho, {
+                number: e + n
+            }) : n > 0 ? a.intl.formatToPlainString(a.t.wvygk8, {
+                number: n
             }) : a.intl.formatToPlainString(a.t.HviVA9, {
                 number: e
             })
         }({
             blockedUsersCount: d.length,
-            ignoredUsersCount: u.length
+            ignoredUsersCount: x.length
         }),
         subtitle: function(t) {
             let {
                 blockedUsersCount: e,
-                ignoredUsersCount: r
+                ignoredUsersCount: n
             } = t;
-            return e > 0 && r > 0 ? a.intl.string(a.t["P/KFXz"]) : r > 0 ? a.intl.format(a.t.Ri3o33, {
-                number: r
+            return e > 0 && n > 0 ? a.intl.string(a.t["P/KFXz"]) : n > 0 ? a.intl.format(a.t.Ri3o33, {
+                number: n
             }) : a.intl.format(a.t["28qZMU"], {
                 number: e
             })
         }({
             blockedUsersCount: d.length,
-            ignoredUsersCount: u.length
+            ignoredUsersCount: x.length
         }),
-        children: [...d, ...u].map(t => {
+        children: [...d, ...x].map(t => {
             let {
-                user: r,
-                id: i,
-                speaker: s
+                user: n,
+                id: s,
+                speaker: l
             } = t;
-            return (0, n.jsx)(l.ld, {
-                user: r,
-                speaker: s,
+            return (0, r.jsx)(i.ld, {
+                user: n,
+                speaker: l,
                 showStatus: !0,
                 channelId: e.id
-            }, i)
+            }, s)
         })
     })
 }

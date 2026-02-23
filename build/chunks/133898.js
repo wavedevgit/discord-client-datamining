@@ -1,5 +1,4 @@
-/** chunk id: 133898, original params: e,t,n (module,exports,require) **/
-"use strict";
+/** chunk id: 133898, original params: e,a,t (module,exports,require) **/
 e.exports = {
     iE: "wrapper__74bfa",
     Kk: "icon__74bfa",

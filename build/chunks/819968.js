@@ -1,65 +1,65 @@
-/** chunk id: 819968, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => j
-}), n(896048);
-var r = n(627968),
-    l = n(64700),
-    a = n(311907),
-    i = n(397927),
-    s = n(317525),
-    o = n(147925),
-    c = n(59375),
-    d = n(391442),
-    u = n(411342),
-    x = n(652215),
-    m = n(985018),
-    f = n(392294);
-let h = "expanded-area";
+/** chunk id: 819968, original params: e,t,s (module,exports,require) **/
+s.d(t, {
+    A: () => A
+});
+var a = s(627968),
+    n = s(64700),
+    i = s(311907),
+    l = s(397927),
+    r = s(317525),
+    d = s(147925),
+    o = s(59375),
+    c = s(391442),
+    x = s(411342),
+    m = s(652215),
+    u = s(985018),
+    h = s(392294);
+let _ = "expanded-area";
 
-function p(e) {
+function j(e) {
     let {
         attachments: t,
-        role: n,
-        roleLocked: a
-    } = e, [s, x] = l.useState(!1);
-    return (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsxs)(i.DUT, {
-            className: f.YA,
+        role: s,
+        roleLocked: i
+    } = e, [r, m] = n.useState(!1);
+    return (0, a.jsxs)(a.Fragment, {
+        children: [(0, a.jsxs)(l.DUT, {
+            className: h.YA,
             onClick: () => {
-                x(e => !e)
+                m(e => !e)
             },
-            "aria-expanded": s,
-            "aria-controls": h,
-            children: [(0, r.jsx)(i.Text, {
+            "aria-expanded": r,
+            "aria-controls": _,
+            children: [(0, a.jsx)(l.Text, {
                 variant: "text-sm/medium",
                 color: "text-default",
-                children: s ? m.intl.string(m.t.DKNxgB) : m.intl.string(m.t.ESEKua)
-            }), (0, r.jsx)(o.A, {
-                className: f.Rq,
-                direction: s ? o.A.Directions.UP : o.A.Directions.DOWN
+                children: r ? u.intl.string(u.t.DKNxgB) : u.intl.string(u.t.ESEKua)
+            }), (0, a.jsx)(d.A, {
+                className: h.Rq,
+                direction: r ? d.A.Directions.UP : d.A.Directions.DOWN
             })]
-        }), (0, r.jsx)(i.hKd, {
+        }), (0, a.jsx)(l.hKd, {
             size: 12
-        }), s && (0, r.jsxs)("ul", {
-            className: f.cu,
-            id: h,
-            children: [(0, r.jsx)(d.A, {
-                label: m.intl.string(m.t.DWYJua),
-                children: (0, r.jsx)("ul", {
-                    className: f.yO,
-                    children: t.map(e => (0, r.jsx)(c.A, {
+        }), r && (0, a.jsxs)("ul", {
+            className: h.cu,
+            id: _,
+            children: [(0, a.jsx)(c.A, {
+                label: u.intl.string(u.t.DWYJua),
+                children: (0, a.jsx)("ul", {
+                    className: h.yO,
+                    children: t.map(e => (0, a.jsx)(o.A, {
                         attachment: e
                     }, e.id))
                 })
-            }), null != n && (0, r.jsxs)(r.Fragment, {
-                children: [(0, r.jsx)("div", {
-                    className: f.me
-                }), (0, r.jsx)(d.A, {
-                    label: m.intl.string(m.t.o9xphc),
-                    children: (0, r.jsx)(u.A, {
-                        role: n,
+            }), null != s && (0, a.jsxs)(a.Fragment, {
+                children: [(0, a.jsx)("div", {
+                    className: h.me
+                }), (0, a.jsx)(c.A, {
+                    label: u.intl.string(u.t.o9xphc),
+                    children: (0, a.jsx)(x.A, {
+                        role: s,
                         textVariant: "text-md/medium",
-                        locked: a
+                        locked: i
                     })
                 })]
             })]
@@ -67,21 +67,17 @@ function p(e) {
     })
 }
 
-function j(e) {
-    var t;
+function A(e) {
     let {
-        listing: n
-    } = e, l = null != (t = n.attachments) ? t : [], i = (0, a.bG)([s.A], () => {
-        var e;
-        return s.A.getRole(n.guild_id, null != (e = n.role_id) ? e : x.dJq)
-    }), o = !n.has_entitlement;
-    return 0 === l.length && null == i ? null : 0 === l.length && null != i ? (0, r.jsx)(u.A, {
-        role: i,
+        listing: t
+    } = e, s = t.attachments ?? [], n = (0, i.bG)([r.A], () => r.A.getRole(t.guild_id, t.role_id ?? m.dJq)), l = !t.has_entitlement;
+    return 0 === s.length && null == n ? null : 0 === s.length && null != n ? (0, a.jsx)(x.A, {
+        role: n,
         textVariant: "text-md/medium",
-        locked: o
-    }) : (0, r.jsx)(p, {
-        attachments: l,
-        role: i,
-        roleLocked: o
+        locked: l
+    }) : (0, a.jsx)(j, {
+        attachments: s,
+        role: n,
+        roleLocked: l
     })
 }

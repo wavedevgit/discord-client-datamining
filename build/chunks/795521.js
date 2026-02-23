@@ -1,19 +1,16 @@
-/** chunk id: 795521, original params: i,t,e (module,exports,require) **/
-function s(i) {
-    let t = 0,
-        e = [];
+/** chunk id: 795521, original params: e,i,t (module,exports,require) **/
+function s(e) {
+    let i = 0,
+        t = [];
     return async function() {
-        if (2 !== t) {
-            if (1 === t) return new Promise(i => {
-                e.push(i)
+        if (2 !== i) {
+            if (1 === i) return new Promise(e => {
+                t.push(e)
             });
-            for (t = 1, await i(), t = 2; e.length > 0;) {
-                var s;
-                null == (s = e.shift()) || s()
-            }
+            for (i = 1, await e(), i = 2; t.length > 0;) t.shift()?.()
         }
     }
 }
-e.d(t, {
+t.d(i, {
     u: () => s
-}), e(321073)
+}), t(321073)

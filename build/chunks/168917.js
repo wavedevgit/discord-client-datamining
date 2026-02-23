@@ -2,44 +2,44 @@
 n.d(t, {
     A: () => g
 });
-var r = n(627968),
-    i = n(311907),
-    l = n(397927),
-    s = n(757036),
-    a = n(128450),
+var i = n(627968),
+    s = n(311907),
+    a = n(397927),
+    r = n(757036),
+    l = n(128450),
     o = n(180020),
     c = n(576705),
     d = n(684732),
     u = n(652215),
     _ = n(788868),
-    p = n(985018),
-    m = n(131025);
+    m = n(985018),
+    A = n(131025);
 
 function g(e) {
     let {
         errors: t,
         pendingNick: n,
         currentNick: g,
-        username: A,
-        user: f,
-        guild: b
-    } = e, h = null != n ? n : g, E = (0, i.bG)([c.A], () => c.A.can(u.xBc.CHANGE_NICKNAME, b) || c.A.can(u.xBc.MANAGE_NICKNAMES, b)), O = (0, s.L)(_.PremiumTypes.TIER_2);
-    return (0, r.jsxs)(a.A, {
-        title: p.intl.string(p.t.me1lRk),
+        username: h,
+        user: x,
+        guild: p
+    } = e, E = n ?? g, C = (0, s.bG)([c.A], () => c.A.can(u.xBc.CHANGE_NICKNAME, p) || c.A.can(u.xBc.MANAGE_NICKNAMES, p)), T = (0, r.L)(_.PremiumTypes.TIER_2);
+    return (0, i.jsxs)(l.A, {
+        title: m.intl.string(m.t.me1lRk),
         errors: t,
-        children: [(0, r.jsx)(l.ksK, {
-            value: null != h ? h : "",
-            placeholder: A,
+        children: [(0, i.jsx)(a.ksK, {
+            value: E ?? "",
+            placeholder: h,
             maxLength: u.d0r,
             onChange: function(e) {
                 (0, d.o_)(e, g)
             },
-            disabled: !E,
-            helperText: E ? void 0 : p.intl.string(p.t.gzjxQi)
-        }), O && (0, r.jsx)(o.A, {
-            user: f,
-            guildId: b.id,
-            className: m.F
+            disabled: !C,
+            helperText: C ? void 0 : m.intl.string(m.t.gzjxQi)
+        }), T && (0, i.jsx)(o.A, {
+            user: x,
+            guildId: p.id,
+            className: A.F
         })]
     })
 }

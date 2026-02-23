@@ -1,13 +1,13 @@
-/** chunk id: 646444, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => s
+/** chunk id: 646444, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    A: () => a
 });
-var l = n(311907),
-    i = n(287809),
-    r = n(65290);
+var l = i(311907),
+    n = i(287809),
+    s = i(65290);
 
-function s(e) {
-    let t = (0, l.bG)([i.default], () => i.default.getCurrentUser()),
-        n = (0, r.A)(e);
-    return (null == t ? void 0 : t.id) !== e.id && !n
+function a(e) {
+    let t = (0, l.bG)([n.default], () => n.default.getCurrentUser()),
+        i = (0, s.A)(e);
+    return t?.id !== e.id && !i
 }

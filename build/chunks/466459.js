@@ -1,37 +1,33 @@
 /** chunk id: 466459, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    h: () => c,
-    o: () => l
+    h: () => d,
+    o: () => o
 });
-var r = n(791282),
-    i = n.n(r),
-    a = n(575593),
-    o = n(311907),
-    s = n(4227);
-let l = (e, t) => {
-        var n, r, o, s;
-        let l = e.getPurchase(t.skuId),
-            c = null != l,
-            u = null != (n = null == l ? void 0 : l.expiresAt) ? n : null,
-            d = null != u,
-            f = null != (r = t.items) ? r : [],
-            p = i()(f.map(t => e.getPurchase(t.skuId)));
-        switch (null == t ? void 0 : t.type) {
-            case a.R.BUNDLE:
+var i = n(791282),
+    s = n.n(i),
+    l = n(575593),
+    a = n(311907),
+    r = n(4227);
+let o = (e, t) => {
+        let n = null != e.getPurchase(t.skuId),
+            i = t.items ?? [],
+            a = s()(i.map(t => e.getPurchase(t.skuId)));
+        switch (t?.type) {
+            case l.R.BUNDLE:
                 return {
-                    isPurchased: c || f.length > 0 && p.length === f.length, isPartiallyOwnedBundle: p.length > 0 && p.length < f.length, isPartiallyOwnedVariantsGroup: !1, isRented: !1, rentalExpiresAt: null
+                    isPurchased: n || i.length > 0 && a.length === i.length, isPartiallyOwnedBundle: a.length > 0 && a.length < i.length, isPartiallyOwnedVariantsGroup: !1
                 };
-            case a.R.VARIANTS_GROUP:
-                let _ = null == (o = t.variants) ? void 0 : o.every(t => null != e.getPurchase(t.skuId)),
-                    h = (null == (s = t.variants) ? void 0 : s.some(t => null != e.getPurchase(t.skuId))) && !_;
+            case l.R.VARIANTS_GROUP:
+                let r = t.variants?.every(t => null != e.getPurchase(t.skuId)),
+                    o = t.variants?.some(t => null != e.getPurchase(t.skuId)) && !r;
                 return {
-                    isPurchased: null != _ && _, isPartiallyOwnedBundle: !1, isPartiallyOwnedVariantsGroup: null != h && h, isRented: d, rentalExpiresAt: u
+                    isPurchased: r ?? !1, isPartiallyOwnedBundle: !1, isPartiallyOwnedVariantsGroup: o ?? !1
                 };
             default:
                 return {
-                    isPurchased: c, isPartiallyOwnedBundle: !1, isPartiallyOwnedVariantsGroup: !1, isRented: d, rentalExpiresAt: u
+                    isPurchased: n, isPartiallyOwnedBundle: !1, isPartiallyOwnedVariantsGroup: !1
                 }
         }
     },
-    c = e => (0, o.cf)([s.A], () => l(s.A, e))
+    d = e => (0, a.cf)([r.A], () => o(r.A, e))

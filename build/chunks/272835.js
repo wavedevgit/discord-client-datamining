@@ -1,16 +1,16 @@
-/** chunk id: 272835, original params: e,t,n (module,exports,require) **/
+/** chunk id: 272835, original params: e,t,l (module,exports,require) **/
 "use strict";
-n.d(t, {
-    H: () => d
-}), n(896048);
-var r = n(627968),
-    i = n(64700),
-    a = n(735438),
-    o = n(397927),
-    s = n(252561),
-    l = n(720462),
-    c = n(309587);
-let u = [{
+l.d(t, {
+    H: () => u
+});
+var r = l(627968),
+    a = l(64700),
+    n = l(735438),
+    i = l(397927),
+    s = l(252561),
+    o = l(720462),
+    d = l(309587);
+let c = [{
         id: "xxs",
         label: "xxs",
         value: "xxs"
@@ -79,59 +79,59 @@ let u = [{
         label: "40px",
         value: 40
     }],
-    d = {
+    u = {
         name: "Interactive H Scroll",
         id: "interactive-h-scroll",
         component: () => {
-            let [e, t] = i.useState(15), [n, d] = i.useState(8), [f, p] = i.useState("xl"), [_, h] = i.useState(!0), m = i.useMemo(() => [...Array(e)].map((e, t) => (0, r.jsx)(o.DUT, {
-                className: c.j,
+            let [e, t] = a.useState(15), [l, u] = a.useState(8), [h, m] = a.useState("xl"), [x, p] = a.useState(!0), b = a.useMemo(() => [...Array(e)].map((e, t) => (0, r.jsx)(i.DUT, {
+                className: d.j,
                 onClick: () => console.log(t),
-                children: (0, r.jsxs)(o.BJc, {
+                children: (0, r.jsxs)(i.BJc, {
                     direction: "vertical",
                     justify: "space-between",
                     align: "center",
                     children: [(0, r.jsx)("div", {
                         children: t
-                    }), t % 3 == 0 && (0, r.jsx)(o.Button, {
-                        onClick: () => console.log("clicked button ".concat(t)),
+                    }), t % 3 == 0 && (0, r.jsx)(i.Button, {
+                        onClick: () => console.log(`clicked button ${t}`),
                         text: "Click Me"
                     })]
                 })
             }, t)), [e]);
             return (0, r.jsxs)("div", {
-                children: [(0, r.jsx)(l.A, {
-                    gap: n,
-                    edgeFade: f,
-                    hideActionsWhenDisabled: _,
-                    children: m
+                children: [(0, r.jsx)(o.A, {
+                    gap: l,
+                    edgeFade: h,
+                    hideActionsWhenDisabled: x,
+                    children: b
                 }), (0, r.jsx)(s.nB, {}), (0, r.jsxs)(s.MG, {
-                    children: [(0, r.jsx)(o.Checkbox, {
-                        checked: _,
-                        onChange: () => h(!_),
+                    children: [(0, r.jsx)(i.Checkbox, {
+                        checked: x,
+                        onChange: () => p(!x),
                         label: "Hide Actions When Disabled"
-                    }), (0, r.jsx)(o.ksK, {
+                    }), (0, r.jsx)(i.ksK, {
                         type: "number",
                         min: 0,
                         value: e.toString(),
                         onChange: e => {
-                            t((0, a.clamp)(+e, 0, 100))
+                            t((0, n.clamp)(+e, 0, 100))
                         },
                         label: "Children Count"
                     })]
                 }), (0, r.jsx)(s.MG, {
-                    children: (0, r.jsx)(o.l6P, {
-                        value: n,
-                        options: u,
-                        onSelectionChange: d,
+                    children: (0, r.jsx)(i.l6P, {
+                        value: l,
+                        options: c,
+                        onSelectionChange: u,
                         label: "Children Gap",
                         selectionMode: "single",
                         fullWidth: !0
                     })
                 }), (0, r.jsx)(s.MG, {
-                    children: (0, r.jsx)(o.l6P, {
-                        value: f,
-                        options: u,
-                        onSelectionChange: p,
+                    children: (0, r.jsx)(i.l6P, {
+                        value: h,
+                        options: c,
+                        onSelectionChange: m,
                         label: "Edge Fade Space",
                         selectionMode: "single",
                         fullWidth: !0

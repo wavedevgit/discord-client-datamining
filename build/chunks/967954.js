@@ -1,82 +1,78 @@
 /** chunk id: 967954, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
-}), n(321073), n(896048);
-var a, l, r = n(835245),
+    A: () => p
+}), n(321073);
+var a = n(835245),
     i = n(80703),
     s = n(311907),
-    o = n(73153),
-    c = n(961350),
-    d = n(540999);
-let u = 0,
+    l = n(73153),
+    r = n(961350),
+    o = n(540999);
+let d = 0,
+    c = [],
+    u = 0,
     m = [],
-    p = 0,
-    h = [],
-    x = !1;
-class g extends(a = s.Ay.Store) {
+    h = !1;
+class x extends s.Ay.Store {
+    static displayName = "AnalyticsLogStore";
     initialize() {
-        this.waitFor(c.default, d.A)
+        this.waitFor(r.default, o.A)
     }
     get loggedEvents() {
-        return m
+        return c
     }
     get loggedEventsVersion() {
-        return p
+        return u
     }
     get loggedTriggers() {
-        return h
+        return m
     }
     get trackTriggers() {
-        return x
+        return h
     }
-}(l = "displayName") in g ? Object.defineProperty(g, l, {
-    value: "AnalyticsLogStore",
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
-}) : g[l] = "AnalyticsLogStore";
-let f = new g(o.h, {
+}
+let p = new x(l.h, {
     TRACK: function(e) {
         let {
             event: t,
             properties: n,
             fingerprint: a
         } = e;
-        d.A.isDeveloper && (m.push({
-            key: (u++).toString(),
+        o.A.isDeveloper && (c.push({
+            key: (d++).toString(),
             event: t,
             properties: n,
-            fingerprint: null != a ? (0, i.d)(a) : c.default.getId(),
+            fingerprint: null != a ? (0, i.d)(a) : r.default.getId(),
             timestamp: new Date
-        }), p++, m.length > 500 && (m = m.slice(-Math.floor(250))))
+        }), u++, c.length > 500 && (c = c.slice(-Math.floor(250))))
     },
     TRACK_TRIGGER: function(e) {
         let {
             experimentId: t,
             descriptor: n,
-            exposureType: a,
-            excluded: l,
-            location: i,
-            previouslyTracked: s
+            exposureType: i,
+            excluded: s,
+            location: l,
+            previouslyTracked: r
         } = e;
-        !d.A.isDeveloper || x && (h = [...h, {
-            key: (0, r.A)(),
+        !o.A.isDeveloper || h && (m = [...m, {
+            key: (0, a.A)(),
             experimentId: t,
             descriptor: n,
-            exposureType: a,
-            excluded: l,
-            location: i,
-            previouslyTracked: s,
+            exposureType: i,
+            excluded: s,
+            location: l,
+            previouslyTracked: r,
             timestamp: new Date
-        }]).length > 500 && h.shift()
+        }]).length > 500 && m.shift()
     },
     SET_TRACK_TRIGGERS: function(e) {
         let {
             enabled: t
         } = e;
-        x = t
+        h = t
     },
     ANALYTICS_LOG_CLEAR: function() {
-        m = [], p++, h = []
+        c = [], u++, m = []
     }
 })

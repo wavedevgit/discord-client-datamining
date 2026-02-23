@@ -1,9 +1,9 @@
 /** chunk id: 411153, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    Ag: () => c,
-    Ay: () => g,
-    QO: () => _,
-    pq: () => E
+    Ag: () => E,
+    Ay: () => d,
+    QO: () => c,
+    pq: () => u
 });
 var l = n(989349),
     r = n.n(l),
@@ -12,16 +12,7 @@ var l = n(989349),
     s = n(661191),
     o = n(652215);
 
-function u(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-
-function c(e) {
+function E(e) {
     if (e === o.F_X.ALL) return o.GaG.ALL;
     if (e <= o.F_X.GUILD_UPDATE) return o.GaG.GUILD;
     if (e <= o.F_X.CHANNEL_DELETE || e === o.F_X.MESSAGE_BULK_DELETE) return o.GaG.CHANNEL;
@@ -54,10 +45,10 @@ function c(e) {
     else if (e <= o.F_X.GUILD_MEMBER_VERIFICATION_UPDATE) return o.GaG.GUILD_MEMBER_VERIFICATION;
     else if (e <= o.F_X.GUILD_PROFILE_UPDATE) return o.GaG.GUILD_PROFILE;
     else if (e <= o.F_X.GUILD_MIGRATE_BYPASS_SLOWMODE_PERMISSION) return o.GaG.GUILD;
-    return i.A.captureMessage("Unknown target type for: ".concat(e)), o.GaG.UNKNOWN
+    return i.A.captureMessage(`Unknown target type for: ${e}`), o.GaG.UNKNOWN
 }
 
-function E(e) {
+function u(e) {
     switch (e) {
         case o.F_X.CHANNEL_CREATE:
         case o.F_X.CHANNEL_OVERWRITE_CREATE:
@@ -143,15 +134,30 @@ function E(e) {
     }
     return o.RWi.ALL
 }
-class _ {
+class c {
+    key;
+    oldValue;
+    newValue;
+    subtarget;
     constructor(e, t, n) {
-        u(this, "key", void 0), u(this, "oldValue", void 0), u(this, "newValue", void 0), u(this, "subtarget", void 0), this.key = e, this.oldValue = t, this.newValue = n
+        this.key = e, this.oldValue = t, this.newValue = n
     }
 }
-class d extends a.A {
+class _ extends a.A {
+    id;
+    actionType;
+    action;
+    targetType;
+    targetId;
+    target;
+    userId;
+    changes;
+    timestampStart;
+    timestampEnd;
+    user;
+    options;
     constructor(e) {
-        var t, n, l, a, i, o;
-        super(), u(this, "id", void 0), u(this, "actionType", void 0), u(this, "action", void 0), u(this, "targetType", void 0), u(this, "targetId", void 0), u(this, "target", void 0), u(this, "userId", void 0), u(this, "changes", void 0), u(this, "timestampStart", void 0), u(this, "timestampEnd", void 0), u(this, "user", void 0), u(this, "options", void 0), this.id = e.id, this.action = e.action, this.actionType = E(this.action), this.targetId = e.targetId, this.timestampStart = null != (t = e.timestampStart) ? t : r()(s.default.extractTimestamp(this.id)), this.timestampEnd = null != (n = e.timestampEnd) ? n : this.timestampStart, this.userId = e.userId, this.changes = null != (l = e.changes) ? l : [], this.targetType = c(this.action), this.options = null != (a = e.options) ? a : {}, this.target = null != (i = e.target) ? i : e.id, this.user = null != (o = e.user) ? o : null
+        super(), this.id = e.id, this.action = e.action, this.actionType = u(this.action), this.targetId = e.targetId, this.timestampStart = e.timestampStart ?? r()(s.default.extractTimestamp(this.id)), this.timestampEnd = e.timestampEnd ?? this.timestampStart, this.userId = e.userId, this.changes = e.changes ?? [], this.targetType = E(this.action), this.options = e.options ?? {}, this.target = e.target ?? e.id, this.user = e.user ?? null
     }
 }
-let g = d
+let d = _

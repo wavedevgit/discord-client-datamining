@@ -1,22 +1,18 @@
 /** chunk id: 701626, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => u
+    A: () => o
 });
-var r, i, l = n(311907),
-    a = n(73153),
-    s = n(576705),
-    o = n(652215);
-class c extends(i = l.Ay.Store) {
+var i = n(311907),
+    r = n(73153),
+    l = n(576705),
+    a = n(652215);
+class s extends i.Ay.Store {
+    static displayName = "GuildBoostingNoticeStore";
     initialize() {
-        this.waitFor(s.A), this.syncWith([s.A], o.tEg)
+        this.waitFor(l.A), this.syncWith([l.A], a.tEg)
     }
     channelNoticePredicate(e, t) {
-        return Date.now() - t >= o.D2K && s.A.can(o.xBc.MANAGE_GUILD, e)
+        return Date.now() - t >= a.D2K && l.A.can(a.xBc.MANAGE_GUILD, e)
     }
-}(r = "displayName") in c ? Object.defineProperty(c, r, {
-    value: "GuildBoostingNoticeStore",
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
-}) : c[r] = "GuildBoostingNoticeStore";
-let u = new c(a.h)
+}
+let o = new s(r.h)

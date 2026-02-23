@@ -1,12 +1,12 @@
 /** chunk id: 447696, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     Fy: () => s,
-    Vv: () => u,
-    Xx: () => c,
-    i4: () => E,
+    Vv: () => E,
+    Xx: () => u,
+    i4: () => c,
     oZ: () => o,
     ry: () => i
-}), n(228524);
+});
 var l = n(562465),
     r = n(73153),
     a = n(652215);
@@ -42,16 +42,16 @@ let i = function(e) {
         r.h.dispatch({
             type: "WELCOME_SCREEN_SETTINGS_RESET"
         })
-    }, u = () => {
+    }, E = () => {
         r.h.dispatch({
             type: "WELCOME_SCREEN_SETTINGS_CLEAR"
         })
-    }, c = e => {
+    }, u = e => {
         r.h.dispatch({
             type: "WELCOME_SCREEN_SETTINGS_UPDATE",
             settings: e
         })
-    }, E = async (e, t) => {
+    }, c = async (e, t) => {
         r.h.dispatch({
             type: "WELCOME_SCREEN_SUBMIT"
         });

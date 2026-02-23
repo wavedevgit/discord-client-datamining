@@ -1,55 +1,55 @@
 /** chunk id: 293495, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    Ay: () => A,
+    Ay: () => g,
     YY: () => h
 });
-var r = n(73153),
-    i = n(31728),
+var i = n(73153),
+    r = n(31728),
     l = n(272355),
     a = n(227042),
     s = n(869146),
     o = n(186111),
-    c = n(334463),
-    u = n(91242),
-    d = n(652215);
-let p = null;
+    d = n(334463),
+    c = n(91242),
+    u = n(652215);
+let A = null;
 
 function h(e) {
-    return "framepip:".concat(e.applicationId)
+    return `framepip:${e.applicationId}`
 }
 
-function f() {
-    let e = u.A.getConnectedFrame();
+function _() {
+    let e = c.A.getConnectedFrame();
     if (null == e) {
         let e;
-        return void(null != (e = p) && c.A.isOpen(e) && (r.h.wait(() => i.VN(e)), p = null))
+        return void(null != (e = A) && d.A.isOpen(e) && (i.h.wait(() => r.VN(e)), A = null))
     }
     var t = h(e);
-    if (c.A.isOpen(t)) return !1;
-    if (null != p) {
-        let e = p;
-        r.h.wait(() => i.VN(e))
+    if (d.A.isOpen(t)) return !1;
+    if (null != A) {
+        let e = A;
+        i.h.wait(() => r.VN(e))
     }
-    return r.h.wait(() => i.ho(t, d.o1q.FRAME, {})), void(p = t)
+    return i.h.wait(() => r.ho(t, u.o1q.FRAME, {})), void(A = t)
 }
 
-function g() {
+function m() {
     let e;
     if ((0, a.A)({
             LayerStore: o.A,
             PopoutWindowStore: s.A
         })) {
         let e;
-        return void(null != (e = p) && c.A.isOpen(e) && r.h.wait(() => i.jD(e)))
+        return void(null != (e = (void 0) ?? A) && d.A.isOpen(e) && i.h.wait(() => r.jD(e)))
     }
-    null != (e = p) && c.A.isOpen(e) && r.h.wait(() => i.WU(e))
+    null != (e = (void 0) ?? A) && d.A.isOpen(e) && i.h.wait(() => r.WU(e))
 }
-class m extends l.A {
+class p extends l.A {
     _initialize() {
-        u.A.addChangeListener(f), o.A.addChangeListener(g)
+        c.A.addChangeListener(_), o.A.addChangeListener(m)
     }
     _terminate() {
-        u.A.removeChangeListener(f), o.A.removeChangeListener(g)
+        c.A.removeChangeListener(_), o.A.removeChangeListener(m)
     }
 }
-let A = new m
+let g = new p

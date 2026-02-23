@@ -1,84 +1,49 @@
-/** chunk id: 64749, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    Ay: () => T,
-    eW: () => E,
-    th: () => R
-}), n(896048), n(733351);
-var r = n(627968),
-    l = n(64700),
-    i = n(503698),
-    o = n.n(i),
-    a = n(91871),
-    s = n.n(a),
-    c = n(311907),
-    u = n(397927),
-    d = n(39255),
-    C = n(47167),
-    m = n(713654),
-    p = n(915089),
-    f = n(201275),
-    b = n(967144),
-    j = n(657048),
-    g = n(963307),
-    h = n(734057),
-    x = n(317525),
-    y = n(994500),
-    O = n(287809),
-    v = n(985018),
-    _ = n(457325);
+/** chunk id: 64749, original params: e,t,l (module,exports,require) **/
+l.d(t, {
+    Ay: () => w,
+    eW: () => I,
+    th: () => S
+});
+var n = l(627968),
+    i = l(64700),
+    a = l(503698),
+    s = l.n(a),
+    r = l(91871),
+    o = l.n(r),
+    C = l(158954),
+    d = l(311907),
+    c = l(397927),
+    u = l(39255),
+    m = l(47167),
+    x = l(713654),
+    h = l(915089),
+    g = l(201275),
+    _ = l(967144),
+    H = l(657048),
+    p = l(963307),
+    f = l(734057),
+    j = l(317525),
+    b = l(994500),
+    v = l(287809),
+    A = l(985018),
+    N = l(457325);
+let L = (0, h.Ld)(),
+    V = (0, h.Ld)(),
+    R = "text-sm/medium";
 
-function H(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = r
-        })
-    }
-    return e
-}
-
-function w(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
-        }
-        return n
-    })(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-
-function A(e) {
-    return e && "u" > typeof Symbol && e.constructor === Symbol ? "symbol" : typeof e
-}
-let D = (0, p.Ld)(),
-    S = (0, p.Ld)(),
-    P = "text-sm/medium";
-
-function N(e) {
+function M(e) {
     return 1 === e.type
 }
 
-function L(e) {
+function D(e) {
     return 0 === e.type
 }
 
-function R(e) {
-    let t = "".concat(!e.name.includes(g.QP) ? "@" : "").concat(e.name);
+function S(e) {
+    let t = `${!e.name.includes(p.QP)?"@":""}${e.name}`;
     return {
         tag: {
-            type: d._.ROLE,
+            type: u._.ROLE,
             label: t
         },
         row: {
@@ -90,11 +55,11 @@ function R(e) {
     }
 }
 
-function E(e) {
-    let t = (0, C.m1)(e, O.default, y.A);
+function I(e) {
+    let t = (0, m.m1)(e, v.default, b.A);
     return {
         tag: {
-            type: d._.CHANNEL,
+            type: u._.CHANNEL,
             label: t
         },
         row: {
@@ -105,231 +70,217 @@ function E(e) {
         }
     }
 }
-let V = l.memo(function(e) {
-    var t;
+let E = i.memo(function(e) {
     let {
-        row: n,
+        row: t,
         guildId: l,
         className: i
     } = e, {
         id: a,
-        name: s
-    } = n.record, d = (0, f.$7)({
+        name: r
+    } = t.record, o = (0, g.$7)({
         guildId: l,
         roleId: a,
         size: 16
-    }), C = (0, c.bG)([x.A], () => x.A.getRole(l, a)), m = s.includes(g.QP) ? "" : "@", p = (0, u.rdh)(u.LU0.unsafe_rawColors.PRIMARY_300).hsl(), h = null != (t = null == C ? void 0 : C.colorString) ? t : p, y = (0, b.X_)(l, C, null == C ? void 0 : C.colorStrings);
-    return (0, r.jsxs)("div", {
-        className: o()(_.xZ, _.ex, i),
-        children: [(0, r.jsx)(u.WYI, {
-            className: _.__invalid_roleDot,
-            color: h,
-            colors: y,
+    }), C = (0, d.bG)([j.A], () => j.A.getRole(l, a)), u = r.includes(p.QP) ? "" : "@", m = (0, c.rdh)(c.LU0.unsafe_rawColors.PRIMARY_300).hsl(), x = C?.colorString ?? m, h = (0, _.X_)(l, C, C?.colorStrings);
+    return (0, n.jsxs)("div", {
+        className: s()(N.xZ, N.ex, i),
+        children: [(0, n.jsx)(c.WYI, {
+            className: N.__invalid_roleDot,
+            color: x,
+            colors: h,
             background: !1,
             tooltip: !1
-        }), null != d ? (0, r.jsx)(j.A, w(H({
-            className: _.YS
-        }, d), {
+        }), null != o ? (0, n.jsx)(H.A, {
+            className: N.YS,
+            ...o,
             enableTooltip: !1
-        })) : m, (0, r.jsx)(u.Text, {
-            variant: P,
-            className: _.pP,
-            children: s
+        }) : u, (0, n.jsx)(c.Text, {
+            variant: R,
+            className: N.pP,
+            children: r
         })]
     })
 });
 
-function M(e) {
+function y(e) {
     let {
         channel: t,
-        row: n,
-        className: l
-    } = e, i = null != t.parent_id, a = (0, m.gU)(t);
-    return (0, r.jsxs)("div", {
-        className: o()(_.xZ, _.sM, {
-            [_.p7]: i
-        }, l),
-        children: [null != a && (0, r.jsx)(a, {
+        row: l,
+        className: i
+    } = e, a = null != t.parent_id, r = (0, x.gU)(t);
+    return (0, n.jsxs)("div", {
+        className: s()(N.xZ, N.sM, {
+            [N.p7]: a
+        }, i),
+        children: [null != r && (0, n.jsx)(r, {
             size: "xs",
             color: "currentColor",
-            className: _.p
-        }), (0, r.jsx)(u.Text, {
-            variant: t.isCategory() ? "eyebrow" : P,
-            children: n.display
+            className: N.p
+        }), (0, n.jsx)(c.Text, {
+            variant: t.isCategory() ? "eyebrow" : R,
+            children: l.display
         })]
     })
 }
 
-function I(e, t, n) {
-    return N(e) ? (0, r.jsx)(V, {
+function T(e, t, l) {
+    return M(e) ? (0, n.jsx)(E, {
         row: e,
         guildId: t,
-        className: n
-    }, e.record.id) : L(e) ? (0, r.jsx)(M, {
+        className: l
+    }, e.record.id) : D(e) ? (0, n.jsx)(y, {
         row: e,
         channel: e.record,
-        className: n
+        className: l
     }, e.record.id) : null
 }
 
-function T(e) {
+function w(e) {
     let {
         guildId: t,
-        roleRows: n = [],
-        channelRows: i = [],
-        selectedChannelIds: a = new Set,
-        selectedRoleIds: C = new Set,
-        onChange: m,
-        placeholder: p,
-        helperText: f,
-        className: b
-    } = e, j = (0, c.bG)([x.A], () => x.A.getRolesSnapshot(t)), g = l.useMemo(() => (function(e, t, n) {
+        roleRows: l = [],
+        channelRows: a = [],
+        selectedChannelIds: r = new Set,
+        selectedRoleIds: m = new Set,
+        onChange: x,
+        placeholder: h,
+        helperText: g,
+        className: _
+    } = e, H = (0, d.bG)([j.A], () => j.A.getRolesSnapshot(t)), p = i.useMemo(() => (function(e, t, l) {
         if (null == e) return {};
-        let r = {};
+        let n = {};
         return e.forEach(e => {
-            let t = h.A.getChannel(e);
-            null != t && (r[e] = E(t))
+            let t = f.A.getChannel(e);
+            null != t && (n[e] = I(t))
         }), t.forEach(e => {
-            e in n && (r[e] = R(n[e]))
-        }), r
-    })(a, C, j), [a, C, j]), y = l.useMemo(() => Object.keys(g), [g]), [O, P] = l.useState(""), [V, M] = l.useState(!1), [T, Z] = l.useState(!1), [k, U] = l.useState(!1), F = l.useRef(null), {
-        sections: B,
+            e in l && (n[e] = S(l[e]))
+        }), n
+    })(r, m, H), [r, m, H]), b = i.useMemo(() => Object.keys(p), [p]), [v, R] = i.useState(""), [E, y] = i.useState(!1), [w, Z] = i.useState(!1), [U, O] = i.useState(!1), k = i.useRef(null), {
+        refs: F,
+        floatingStyles: B
+    } = (0, C.uaw)({
+        placement: "bottom-start",
+        offset: 0,
+        matchReferenceWidth: !0
+    }), {
+        sections: P,
         sectionCounts: G
-    } = l.useMemo(() => {
-        let e = "" !== O ? i.filter(e => s()(O, e.display.toLocaleLowerCase())) : i,
-            t = "" !== O ? n.filter(e => s()(O, e.display.toLocaleLowerCase())) : n,
-            r = [],
-            l = [];
-        return r[0] = e, l[0] = e.length, r[1] = t, l[1] = t.length, {
-            sections: r,
-            sectionCounts: l
+    } = i.useMemo(() => {
+        let e = "" !== v ? a.filter(e => o()(v, e.display.toLocaleLowerCase())) : a,
+            t = "" !== v ? l.filter(e => o()(v, e.display.toLocaleLowerCase())) : l,
+            n = [],
+            i = [];
+        return n[0] = e, i[0] = e.length, n[1] = t, i[1] = t.length, {
+            sections: n,
+            sectionCounts: i
         }
-    }, [O, i, n]), q = l.useCallback(e => {
+    }, [v, a, l]), q = i.useCallback(e => {
         let t = Object.values(e),
+            l = t.filter(e => {
+                let {
+                    row: t
+                } = e;
+                return D(t)
+            }).map(e => e.row.record.id),
             n = t.filter(e => {
                 let {
                     row: t
                 } = e;
-                return L(t)
-            }).map(e => e.row.record.id),
-            r = t.filter(e => {
-                let {
-                    row: t
-                } = e;
-                return N(t)
+                return M(t)
             }).map(e => e.row.record.id);
-        m(new Set(n), new Set(r))
-    }, [m]), z = () => {
-        M(!1), Z(!1)
+        x(new Set(l), new Set(n))
+    }, [x]), z = () => {
+        y(!1), Z(!1)
     };
-    l.useEffect(() => {
+    i.useEffect(() => {
         let e = setTimeout(() => {
-            U(V || T)
+            O(E || w)
         }, 32);
         return () => {
             clearTimeout(e)
         }
-    }, [V, T]);
-    let Y = (e, t, n) => {
-            n.stopPropagation(), n.preventDefault(), 2 === t ? M(e) : (1 === t || M(e), Z(e))
+    }, [E, w]);
+    let Y = (e, t, l) => {
+            l.stopPropagation(), l.preventDefault(), 2 === t ? y(e) : (1 === t || y(e), Z(e))
         },
-        K = l.useCallback(e => {
-            let t = H({}, g);
-            L(e) ? t[e.id] = E(e.record) : N(e) && (t[e.id] = R(e.record)), q(t), P(""), z(), setTimeout(() => {
-                var e;
-                let t = null == (e = F.current) ? void 0 : e.containerRef.current,
-                    n = null == t ? void 0 : t.firstChild;
-                null != n && n.scrollTo({
-                    top: n.scrollHeight,
+        K = i.useCallback(e => {
+            let t = {
+                ...p
+            };
+            D(e) ? t[e.id] = I(e.record) : M(e) && (t[e.id] = S(e.record)), q(t), R(""), z(), setTimeout(() => {
+                let e = k.current?.containerRef.current,
+                    t = e?.firstChild;
+                null != t && t.scrollTo({
+                    top: t.scrollHeight,
                     behavior: "smooth"
                 })
             }, 16)
-        }, [q, g]),
-        Q = l.useCallback(e => {
+        }, [q, p]),
+        Q = i.useCallback(e => {
             let {
-                section: n,
-                row: l
-            } = e, i = B[n][l];
-            return (0, r.jsx)(u.DUT, {
-                className: o()(_.Xs, _.iw),
+                section: l,
+                row: i
+            } = e, a = P[l][i];
+            return (0, n.jsx)(c.DUT, {
+                className: s()(N.Xs, N.iw),
                 onClick: e => {
-                    e.stopPropagation(), K(i)
+                    e.stopPropagation(), K(a)
                 },
-                children: (0, r.jsx)("div", {
-                    className: _.qd,
-                    children: I(i, t, _.Dq)
+                children: (0, n.jsx)("div", {
+                    className: N.qd,
+                    children: T(a, t, N.Dq)
                 })
-            }, i.id)
-        }, [t, K, B]),
-        W = l.useMemo(() => y.map(e => {
-            var n;
-            return n = g[e], w(H({}, n.tag), {
-                label: I(n.row, t, _.yS)
-            })
-        }), [g, y, t]);
-    return (0, r.jsxs)("div", {
-        className: o()(_.MT, b),
-        children: [(0, r.jsxs)("div", {
-            className: _.M6,
-            children: [(0, r.jsx)(d.A, {
+            }, a.id)
+        }, [t, K, P]),
+        W = i.useMemo(() => b.map(e => {
+            var l;
+            return l = p[e], {
+                ...l.tag,
+                label: T(l.row, t, N.yS)
+            }
+        }), [p, b, t]);
+    return (0, n.jsxs)("div", {
+        className: s()(N.MT, _),
+        children: [(0, n.jsxs)("div", {
+            className: N.M6,
+            ref: F.setReference,
+            children: [(0, n.jsx)(u.A, {
                 tags: W,
                 maxHeight: 98,
-                size: d.A.Sizes.MEDIUM,
-                query: O,
-                ref: F,
+                size: u.A.Sizes.MEDIUM,
+                query: v,
+                ref: k,
                 onRemoveTag: e => {
-                    var t;
-                    let n = y[e],
+                    let t = b[e],
                         {
-                            [n]: r
-                        } = g;
-                    q(function(e, t) {
-                        if (null == e) return {};
-                        var n, r, l, i = {};
-                        if ("u" > typeof Reflect && Reflect.ownKeys) {
-                            for (l = 0, n = Reflect.ownKeys(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
-                            return i
-                        }
-                        if (i = function(e, t) {
-                                if (null == e) return {};
-                                var n, r, l = {},
-                                    i = Object.getOwnPropertyNames(e);
-                                for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n]);
-                                return l
-                            }(e, t), Object.getOwnPropertySymbols)
-                            for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
-                        return i
-                    }(g, [(t = function(e, t) {
-                        if ("object" !== A(e) || null === e) return e;
-                        var n = e[Symbol.toPrimitive];
-                        if (void 0 !== n) {
-                            var r = n.call(e, t || "default");
-                            if ("object" !== A(r)) return r;
-                            throw TypeError("@@toPrimitive must return a primitive value.")
-                        }
-                        return ("string" === t ? String : Number)(e)
-                    }(n, "string"), "symbol" === A(t) ? t : String(t))])), P(""), z()
+                            [t]: l,
+                            ...n
+                        } = p;
+                    q(n), R(""), z()
                 },
                 onQueryChange: e => {
-                    P(e.trim().toLocaleLowerCase())
+                    R(e.trim().toLocaleLowerCase())
                 },
-                placeholder: null != p ? p : v.intl.string(v.t.uqHLzW),
-                sections: [y.length],
+                placeholder: h ?? A.intl.string(A.t.uqHLzW),
+                sections: [b.length],
                 inputProps: {
-                    "aria-labelledby": D,
-                    "aria-controls": S,
-                    "aria-expanded": k,
+                    "aria-labelledby": L,
+                    "aria-controls": V,
+                    "aria-expanded": U,
                     onFocus: e => Y(!0, 2, e),
                     onBlur: e => Y(!1, 2, e)
                 }
-            }), k && (0, r.jsx)("div", {
-                className: _.Dr,
+            }), U && (0, n.jsx)("div", {
+                ref: F.setFloating,
+                style: B,
+                className: N.Dr,
                 onFocus: e => Y(!0, 1, e),
                 onBlur: e => Y(!1, 1, e),
                 tabIndex: -1,
-                children: (0, r.jsx)(u.Eie, {
-                    className: _.ac,
-                    innerClassName: _.bB,
+                children: (0, n.jsx)(c.Eie, {
+                    className: N.ac,
+                    innerClassName: N.bB,
                     sections: G,
                     renderRow: Q,
                     rowHeight: 34,
@@ -337,38 +288,38 @@ function T(e) {
                         let {
                             section: t
                         } = e;
-                        return 0 === t ? (0, r.jsx)(u.Heading, {
+                        return 0 === t ? (0, n.jsx)(c.Heading, {
                             variant: "heading-sm/semibold",
-                            className: o()(_.Gf, _.r6),
-                            children: v.intl.string(v.t.OGiMXJ)
-                        }, v.intl.string(v.t.OGiMXJ)) : 1 === t ? (0, r.jsx)(u.Heading, {
+                            className: s()(N.Gf, N.r6),
+                            children: A.intl.string(A.t.OGiMXJ)
+                        }, A.intl.string(A.t.OGiMXJ)) : 1 === t ? (0, n.jsx)(c.Heading, {
                             variant: "heading-sm/semibold",
-                            className: o()(_.Gf, _.r6),
-                            children: v.intl.string(v.t["LPJmL/"])
-                        }, v.intl.string(v.t["LPJmL/"])) : null
+                            className: s()(N.Gf, N.r6),
+                            children: A.intl.string(A.t["LPJmL/"])
+                        }, A.intl.string(A.t["LPJmL/"])) : null
                     },
                     renderFooter: e => {
                         let {
                             section: t
                         } = e;
-                        return 0 === t ? 0 === G[1] && G[0] > 0 ? null : (0, r.jsx)("div", {
-                            className: _.Nf,
-                            children: (0, r.jsx)(u.cGx, {})
+                        return 0 === t ? 0 === G[1] && G[0] > 0 ? null : (0, n.jsx)("div", {
+                            className: N.Nf,
+                            children: (0, n.jsx)(c.cGx, {})
                         }) : null
                     },
                     sectionHeight: 24,
                     footerHeight: e => 0 === e ? 0 === G[1] && G[0] > 0 ? 0 : 32 : 0,
                     role: void 0,
                     innerRole: "listbox",
-                    innerId: S,
+                    innerId: V,
                     innerAriaOrientation: "vertical"
                 })
             })]
-        }), null != f && (0, r.jsx)(u.Text, {
+        }), null != g && (0, n.jsx)(c.Text, {
             variant: "text-xs/normal",
             color: "text-muted",
-            className: _.cy,
-            children: f
+            className: N.cy,
+            children: g
         })]
     })
 }

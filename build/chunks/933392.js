@@ -1,44 +1,40 @@
 /** chunk id: 933392, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => u
-}), n(321073), n(896048), n(638769);
-var r, i, l = n(311907),
+    A: () => c
+}), n(321073);
+var i = n(311907),
     s = n(73153),
     a = n(380098);
-let o = [];
+let r = [];
 
-function c(e) {
+function l(e) {
     let {
         payment: t
-    } = e, n = a.A.createFromServer(t), r = o.findIndex(e => e.id === t.id); - 1 === r ? (o.push(n), o.sort((e, t) => t.createdAt.getTime() - e.createdAt.getTime())) : o[r] = n, o = [...o]
+    } = e, n = a.A.createFromServer(t), i = r.findIndex(e => e.id === t.id); - 1 === i ? (r.push(n), r.sort((e, t) => t.createdAt.getTime() - e.createdAt.getTime())) : r[i] = n, r = [...r]
 }
-class d extends(r = l.Ay.Store) {
+class o extends i.Ay.Store {
+    static displayName = "PaymentStore";
     getPayment(e) {
-        return o.find(t => t.id === e)
+        return r.find(t => t.id === e)
     }
     getPayments() {
-        return o
+        return r
     }
-}(i = "displayName") in d ? Object.defineProperty(d, i, {
-    value: "PaymentStore",
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
-}) : d[i] = "PaymentStore";
-let u = new d(s.h, {
+}
+let c = new o(s.h, {
     BILLING_PAYMENTS_FETCH_SUCCESS: function(e) {
         let {
             payments: t
         } = e;
         for (let e of t) {
             let t = a.A.createFromServer(e),
-                n = o.findIndex(t => t.id === e.id); - 1 !== n ? o[n] = t : o.push(t)
+                n = r.findIndex(t => t.id === e.id); - 1 !== n ? r[n] = t : r.push(t)
         }
-        o.sort((e, t) => t.createdAt.getTime() - e.createdAt.getTime()), o = [...o]
+        r.sort((e, t) => t.createdAt.getTime() - e.createdAt.getTime()), r = [...r]
     },
-    PAYMENT_UPDATE: c,
-    BILLING_PAYMENT_FETCH_SUCCESS: c,
+    PAYMENT_UPDATE: l,
+    BILLING_PAYMENT_FETCH_SUCCESS: l,
     LOGOUT: function() {
-        o = []
+        r = []
     }
 })

@@ -1,74 +1,73 @@
 /** chunk id: 437242, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => m
+    A: () => g
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(311907),
+var s = n(311907),
     l = n(397927),
-    s = n(47167),
+    r = n(47167),
     a = n(734057),
     o = n(994500),
-    c = n(287809),
-    d = n(239705),
+    d = n(287809),
+    c = n(239705),
     u = n(985018),
-    g = n(86181);
+    m = n(86181);
 
-function m(e) {
-    var t;
+function g(e) {
     let {
-        action: n,
-        triggerType: m,
-        toggled: p,
-        onToggleAction: f
-    } = e, h = e => () => f(e), b = (0, d.x)(n.type, n, m), x = null == (t = n.metadata) ? void 0 : t.channelId, j = (0, i.bG)([c.default, o.A, a.A], () => {
-        let e = a.A.getChannel(x);
-        return null == e ? null : (0, s.m1)(e, c.default, o.A)
-    }, [x]);
-    if (null == b) return null;
+        action: t,
+        triggerType: n,
+        toggled: g,
+        onToggleAction: x
+    } = e, h = e => () => x(e), _ = (0, c.x)(t.type, t, n), A = t.metadata?.channelId, p = (0, s.bG)([d.default, o.A, a.A], () => {
+        let e = a.A.getChannel(A);
+        return null == e ? null : (0, r.m1)(e, d.default, o.A)
+    }, [A]);
+    if (null == _) return null;
     let {
-        headerText: _,
-        descriptionText: O,
-        icon: v
-    } = b;
-    return (0, r.jsxs)("div", {
-        className: g.Ik,
-        children: [(0, r.jsx)("div", {
-            className: g.TV,
-            children: (0, r.jsx)(v, {
+        headerText: f,
+        descriptionText: j,
+        icon: N
+    } = _;
+    return (0, i.jsxs)("div", {
+        className: m.Ik,
+        children: [(0, i.jsx)("div", {
+            className: m.TV,
+            children: (0, i.jsx)(N, {
                 size: "md",
                 color: "currentColor",
-                className: g.gE
+                className: m.gE
             })
-        }), (0, r.jsxs)("div", {
-            className: g.xj,
-            children: [(0, r.jsx)(l.Heading, {
+        }), (0, i.jsxs)("div", {
+            className: m.xj,
+            children: [(0, i.jsx)(l.Heading, {
                 variant: "heading-sm/semibold",
-                children: _
-            }), (0, r.jsx)(l.Text, {
+                children: f
+            }), (0, i.jsx)(l.Text, {
                 color: "interactive-text-default",
                 variant: "text-xs/medium",
-                children: O
-            }), p && (0, r.jsxs)(l.Text, {
+                children: j
+            }), g && (0, i.jsxs)(l.Text, {
                 color: "text-muted",
                 variant: "text-xs/medium",
-                children: [null != j && u.intl.format(u.t["8Sr/ar"], {
-                    channelName: j
-                }), (0, r.jsx)(l.DUT, {
+                children: [null != p && u.intl.format(u.t["8Sr/ar"], {
+                    channelName: p
+                }), (0, i.jsx)(l.DUT, {
                     onClick: h(!0),
-                    className: g._2,
+                    className: m._2,
                     tag: "span",
                     role: "link",
                     children: u.intl.string(u.t["3gUsJb"])
                 })]
             })]
-        }), (0, r.jsx)("div", {
-            children: (0, r.jsx)(l.DUT, {
-                onClick: b.isEditable ? h(!1) : void 0,
-                children: (0, r.jsx)(l.P7L, {
-                    checked: p,
-                    disabled: !b.isEditable
+        }), (0, i.jsx)("div", {
+            children: (0, i.jsx)(l.DUT, {
+                onClick: _.isEditable ? h(!1) : void 0,
+                children: (0, i.jsx)(l.P7L, {
+                    checked: g,
+                    disabled: !_.isEditable
                 })
             })
         })]

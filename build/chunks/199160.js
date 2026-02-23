@@ -1,139 +1,113 @@
 /** chunk id: 199160, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => m
-}), n(896048);
-var l, r = n(311907),
-    i = n(73153);
+    A: () => u
+});
+var i = n(311907),
+    l = n(73153);
+let s = !1,
+    a = {},
+    r = new Set,
+    o = {};
 
-function a(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
+function c() {
+    o = {}
 }
-
-function s(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            l = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), l.forEach(function(t) {
-            a(e, t, n[t])
-        })
-    }
-    return e
-}
-
-function o(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var l = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, l)
-        }
-        return n
-    })(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-let c = !1,
-    u = {},
-    d = new Set,
-    h = {};
-
-function p() {
-    h = {}
-}
-class f extends(l = r.Ay.Store) {
+class d extends i.Ay.Store {
+    static displayName = "scheduledMessageStore";
     getMessagesPendingDeletion() {
-        return d
+        return r
     }
     getScheduledMessagesForInbox() {
-        return u
+        return a
     }
     getPendingScheduledMessage(e) {
-        return h[e]
+        return o[e]
     }
     get loading() {
-        return c
+        return s
     }
 }
-a(f, "displayName", "scheduledMessageStore");
-let m = new f(i.h, {
+let u = new d(l.h, {
     SCHEDULED_MESSAGES_CREATE_SUCCESS: function(e) {
         let {
             channelId: t,
             scheduledMessageSend: n
         } = e;
-        u = o(s({}, u), {
+        a = {
+            ...a,
             [n.scheduledMessageId]: n
-        }), h = s({}, h), delete h[t]
+        }, o = {
+            ...o
+        }, delete o[t]
     },
     SCHEDULED_MESSAGES_UPDATE_SUCCESS: function(e) {
         let {
             scheduledMessageSend: t
         } = e;
-        u = o(s({}, u), {
+        a = {
+            ...a,
             [t.scheduledMessageId]: t
-        })
+        }
     },
     SCHEDULED_MESSAGES_DELETE_START: function(e) {
         let {
             scheduledMessageId: t
         } = e;
-        if (d.has(t)) return !1;
-        (d = new Set(d)).add(t)
+        if (r.has(t)) return !1;
+        (r = new Set(r)).add(t)
     },
     SCHEDULED_MESSAGES_DELETE_SUCCESS: function(e) {
         let {
             scheduledMessageId: t
         } = e;
-        if (!d.has(t)) return !1;
-        (d = new Set(d)).delete(t), u = s({}, u), delete u[t]
+        if (!r.has(t)) return !1;
+        (r = new Set(r)).delete(t), a = {
+            ...a
+        }, delete a[t]
     },
     SCHEDULED_MESSAGES_DELETE_FAILURE: function(e) {
         let {
             scheduledMessageId: t
         } = e;
-        if (!d.has(t)) return !1;
-        (d = new Set(d)).delete(t)
+        if (!r.has(t)) return !1;
+        (r = new Set(r)).delete(t)
     },
     FETCH_SCHEDULED_MESSAGES: function(e) {
         let {} = e;
-        c = !0
+        s = !0
     },
     FETCH_SCHEDULED_MESSAGES_SUCCESS: function(e) {
         let {
             messages: t
         } = e;
-        for (let e of (u = {}, t)) u[e.scheduledMessageId] = e;
-        c = !1
+        for (let e of (a = {}, t)) a[e.scheduledMessageId] = e;
+        s = !1
     },
     FETCH_SCHEDULED_MESSAGES_FAILURE: function(e) {
         let {} = e;
-        c = !1
+        s = !1
     },
     CREATE_PENDING_SCHEDULED_MESSAGE: function(e) {
         let {
             channelId: t,
             scheduledTimestamp: n
         } = e;
-        h = o(s({}, h), {
+        o = {
+            ...o,
             [t]: {
                 channelId: t,
                 scheduledTimestamp: n
             }
-        })
+        }
     },
     DELETE_PENDING_SCHEDULED_MESSAGE: function(e) {
         let {
             channelId: t
         } = e;
-        h = s({}, h), delete h[t]
+        o = {
+            ...o
+        }, delete o[t]
     },
-    LOGOUT: p,
-    CONNECTION_OPEN: p
+    LOGOUT: c,
+    CONNECTION_OPEN: c
 })

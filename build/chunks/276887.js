@@ -1,27 +1,27 @@
 /** chunk id: 276887, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => s
+    A: () => d
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(397927),
-    l = n(576705),
-    a = n(519222),
-    o = n(652215),
-    c = n(985018);
+var l = n(397927),
+    a = n(576705),
+    r = n(519222),
+    s = n(652215),
+    o = n(985018);
 
-function s(e, t) {
+function d(e, t) {
     let n = t.getGuildId();
-    return null != n && e.type === o.lAJ.USER_JOIN && l.A.canWithPartialContext(o.xBc.MANAGE_GUILD, {
+    return null != n && e.type === s.lAJ.USER_JOIN && a.A.canWithPartialContext(s.xBc.MANAGE_GUILD, {
         guildId: n
-    }) ? (0, r.jsx)(i.Drp, {
+    }) ? (0, i.jsx)(l.Drp, {
         id: "configure",
-        label: c.intl.string(c.t.NpHUi1),
+        label: o.intl.string(o.t.NpHUi1),
         leadingAccessory: {
             type: "icon",
-            icon: i.cBN
+            icon: l.cBN
         },
-        icon: i.cBN,
-        action: () => (0, a.vc)(t)
+        icon: l.cBN,
+        action: () => (0, r.vc)(t)
     }) : null
 }

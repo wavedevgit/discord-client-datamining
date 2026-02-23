@@ -1,146 +1,120 @@
-/** chunk id: 552915, original params: e,t,r (module,exports,require) **/
-r.d(t, {
-    A: () => v
+/** chunk id: 552915, original params: t,e,i (module,exports,require) **/
+i.d(e, {
+    A: () => C
 });
-var n = r(627968);
-r(64700);
-var i = r(575593),
-    l = r(311907),
-    s = r(397927),
-    a = r(954921),
-    o = r(278539),
-    c = r(550111),
-    u = r(242874),
-    d = r(75825),
-    p = r(331402),
-    f = r(287809),
-    h = r(674658),
-    m = r(245068),
-    y = r(704751);
-let g = s._3J.SIZE_152,
-    b = (0, a.Te)(g),
-    O = e => {
-        var t, r;
+var s = i(627968);
+i(64700);
+var n = i(575593),
+    l = i(311907),
+    a = i(397927),
+    r = i(954921),
+    o = i(278539),
+    u = i(550111),
+    d = i(242874),
+    c = i(75825),
+    f = i(331402),
+    p = i(287809),
+    h = i(674658),
+    m = i(245068),
+    g = i(704751);
+let A = a._3J.SIZE_152,
+    x = (0, r.Te)(A),
+    _ = t => {
         let {
-            item: i
-        } = e, a = (0, l.bG)([f.default], () => f.default.getCurrentUser()), {
-            avatarDecorationSrc: c,
-            avatarPlaceholderSrc: u,
-            eventHandlers: d
+            item: e
+        } = t, i = (0, l.bG)([p.default], () => p.default.getCurrentUser()), {
+            avatarDecorationSrc: n,
+            avatarPlaceholderSrc: r,
+            eventHandlers: u
         } = (0, o.A)({
-            user: a,
-            avatarDecorationOverride: i,
-            size: b
+            user: i,
+            avatarDecorationOverride: e,
+            size: x
         });
-        return (0, n.jsx)("div", {
-            className: y._P,
-            children: (0, n.jsx)(s.euF, (t = function(e) {
-                for (var t = 1; t < arguments.length; t++) {
-                    var r = null != arguments[t] ? arguments[t] : {},
-                        n = Object.keys(r);
-                    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-                        return Object.getOwnPropertyDescriptor(r, e).enumerable
-                    }))), n.forEach(function(t) {
-                        var n;
-                        n = r[t], t in e ? Object.defineProperty(e, t, {
-                            value: n,
-                            enumerable: !0,
-                            configurable: !0,
-                            writable: !0
-                        }) : e[t] = n
-                    })
-                }
-                return e
-            }({}, d), r = r = {
-                "aria-label": i.label,
-                src: u,
-                avatarDecoration: c,
-                size: g
-            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
-                var r = Object.keys(e);
-                if (Object.getOwnPropertySymbols) {
-                    var n = Object.getOwnPropertySymbols(e);
-                    r.push.apply(r, n)
-                }
-                return r
-            })(Object(r)).forEach(function(e) {
-                Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
-            }), t))
-        })
-    },
-    j = e => {
-        let {
-            item: t
-        } = e;
-        return (0, n.jsx)("div", {
-            className: y.xC,
-            children: (0, n.jsx)(p.A, {
-                isHighlighted: !0,
-                skuId: null == t ? void 0 : t.skuId
+        return (0, s.jsx)("div", {
+            className: g._P,
+            children: (0, s.jsx)(a.euF, {
+                ...u,
+                "aria-label": e.label,
+                src: r,
+                avatarDecoration: n,
+                size: A
             })
         })
     },
-    A = e => {
+    y = t => {
         let {
-            item: t
-        } = e;
-        return (0, n.jsx)("div", {
-            className: y.M4,
-            children: (0, n.jsx)(c.A, {
-                nameplate: t,
-                className: y.qF,
+            item: e
+        } = t;
+        return (0, s.jsx)("div", {
+            className: g.xC,
+            children: (0, s.jsx)(f.A, {
+                isHighlighted: !0,
+                skuId: e?.skuId
+            })
+        })
+    },
+    R = t => {
+        let {
+            item: e
+        } = t;
+        return (0, s.jsx)("div", {
+            className: g.M4,
+            children: (0, s.jsx)(u.A, {
+                nameplate: e,
+                className: g.qF,
                 nameplatePreviewSize: "xlarge",
                 isHighlighted: !0,
                 showPlaceholderUser: !0
             })
         })
     },
-    x = e => {
+    S = t => {
         let {
-            product: t
-        } = e;
-        return (0, n.jsx)("div", {
-            className: y.hT,
-            children: (0, n.jsx)(m.X, {
-                product: t,
+            product: e
+        } = t;
+        return (0, s.jsx)("div", {
+            className: g.hT,
+            children: (0, s.jsx)(m.X, {
+                product: e,
                 isHighlighted: !1
             })
         })
     },
-    v = e => {
+    C = t => {
         let {
-            giftCode: t
-        } = e, {
-            product: r,
+            giftCode: e
+        } = t, {
+            product: i,
             isFetching: l
-        } = (0, h.q)(t.skuId, !0);
-        if (l || null == r) return (0, n.jsx)("div", {
-            className: y.dc,
-            children: (0, n.jsx)(s.y$y, {})
+        } = (0, h.q)(e.skuId, !0);
+        if (l || null == i) return (0, s.jsx)("div", {
+            className: g.dc,
+            children: (0, s.jsx)(a.y$y, {})
         });
-        if (r.type === i.R.BUNDLE) return 0 === r.items.length ? null : (0, n.jsx)(x, {
-            product: r
+        if (i.type === n.R.BUNDLE) return 0 === i.items.length ? null : (0, s.jsx)(S, {
+            product: i
         });
-        let a = null == r ? void 0 : r.items[0];
-        switch (null == a ? void 0 : a.type) {
-            case i.R.AVATAR_DECORATION:
-                return (0, n.jsx)(O, {
-                    item: a
+        let r = i?.items[0];
+        switch (r?.type) {
+            case n.R.AVATAR_DECORATION:
+                return (0, s.jsx)(_, {
+                    item: r
                 });
-            case i.R.PROFILE_EFFECT:
-                return (0, n.jsx)(j, {
-                    item: a
+            case n.R.PROFILE_EFFECT:
+                return (0, s.jsx)(y, {
+                    item: r
                 });
-            case i.R.NAMEPLATE:
-                return (0, n.jsx)(A, {
-                    item: a
+            case n.R.NAMEPLATE:
+                return (0, s.jsx)(R, {
+                    item: r
                 });
             default:
-                return null != t.giftStyle ? (0, n.jsx)(d.A, {
-                    defaultAnimationState: u.oA.ACTION,
-                    idleAnimationState: u.oA.LOOP,
-                    className: y.l$,
-                    giftStyle: t.giftStyle
+                return null != e.giftStyle ? (0, s.jsx)(c.A, {
+                    defaultAnimationState: d.oA.ACTION,
+                    idleAnimationState: d.oA.LOOP,
+                    className: g.l$,
+                    giftStyle: e.giftStyle
                 }) : null
         }
     }

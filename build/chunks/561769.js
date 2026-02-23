@@ -1,88 +1,78 @@
 /** chunk id: 561769, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    AW: () => y,
-    Hi: () => b,
-    UU: () => O,
-    Vm: () => A,
-    ql: () => v,
-    sC: () => E,
-    v3: () => m
+    AW: () => E,
+    Hi: () => P,
+    UU: () => m,
+    Vm: () => I,
+    nY: () => O,
+    ql: () => y,
+    v3: () => _
 });
-var r = n(64700),
+var r, l, a = n(64700),
     i = n(575593),
-    a = n(417597),
+    u = n(417597),
     o = n(793574),
     s = n(688810),
-    l = n(954571),
-    c = n(590180),
-    u = n(161918),
-    d = n(572595),
-    f = n(57020),
-    p = n(940622),
-    _ = n(758836),
-    h = n(652215);
-let m = r.createContext({
-    flattenProductVariants: !1
+    c = n(954571),
+    d = n(590180),
+    p = n(161918),
+    C = n(572595),
+    g = n(57020),
+    f = n(940622),
+    h = n(758836),
+    A = n(652215);
+let _ = a.createContext({
+    flattenProductVariants: !1,
+    productOverride: void 0
 });
 
-function g() {
-    return r.useContext(m).flattenProductVariants
+function O() {
+    return a.useContext(_).flattenProductVariants
 }
-
-function E() {
-    return r.useContext(m).rentalDuration
-}
-var y = function(e) {
-        return e.NONE = "none", e.NEW = "new", e.ORBS_EXCLUSIVE = "orbs_exclusive", e.LIMITED_TIME = "limited_time", e.NITRO_EXCLUSIVE = "nitro_exclusive", e.THREE_DAY_RENTAL = "three_day_rental", e.SEVEN_DAY_RENTAL = "seven_day_rental", e.RENTAL = "rental", e
-    }({}),
-    b = function(e) {
-        return e.FIAT = "fiat", e.ORBS = "orbs", e
-    }({});
-let O = (e, t, n) => r => {
-        l.default.track(h.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-            collectibles_shop_session_id: null == n ? void 0 : n.sessionId,
+var E = ((r = {}).NONE = "none", r.NEW = "new", r.ORBS_EXCLUSIVE = "orbs_exclusive", r.LIMITED_TIME = "limited_time", r.NITRO_EXCLUSIVE = "nitro_exclusive", r),
+    P = ((l = {}).FIAT = "fiat", l.ORBS = "orbs", l);
+let m = (e, t, n) => r => {
+        c.default.track(A.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+            collectibles_shop_session_id: n?.sessionId,
             sku_id: e.skuId,
             page_type: t,
-            page_section: null == n ? void 0 : n.pageSection,
-            page_category: t === _.G2.HOME || null == n ? void 0 : n.pageCategory,
-            page_index: t === _.G2.CATALOG ? null == n ? void 0 : n.pageIndex : void 0,
-            page_size: t === _.G2.CATALOG ? null == n ? void 0 : n.pageSize : void 0,
+            page_section: n?.pageSection,
+            page_category: t === h.G2.HOME ? void 0 : n?.pageCategory,
+            page_index: t === h.G2.CATALOG ? n?.pageIndex : void 0,
+            page_size: t === h.G2.CATALOG ? n?.pageSize : void 0,
             tile_type: i.R[e.type],
-            tile_position: String(null == n ? void 0 : n.tilePosition),
+            tile_position: String(n?.tilePosition),
             cta_name: r
         })
     },
-    v = (e, t, n, i) => {
-        let l = (0, u.Mk)(),
-            p = null == l ? void 0 : l.tab,
+    y = (e, t, n) => {
+        let r = (0, p.Mk)(),
+            l = r?.tab,
             {
-                analyticsLocations: _
+                analyticsLocations: i
             } = (0, s.Ay)(o.A.COLLECTIBLES_SHOP_CARD),
-            h = (0, a.bG)([c.A], () => c.A.getCategoryForProduct(e.skuId)),
-            m = r.useRef(null);
-        return r.useCallback(t => r => {
-            if (null == h) return;
-            let a = (0, f.Ak)({
+            c = (0, u.bG)([d.A], () => d.A.getCategoryForProduct(e.skuId)),
+            f = a.useRef(null);
+        return a.useCallback(t => r => {
+            if (null == c) return;
+            let a = (0, g.A)({
                 product: e
             });
-            m.current = r.currentTarget, null == n || n(), (0, d.t)({
+            f.current = r.currentTarget, n?.(), (0, C.t)({
                 product: e,
-                category: h,
+                category: c,
                 shouldCheckoutWithOrbs: a,
-                analyticsLocations: _,
+                analyticsLocations: i,
                 analyticsSource: t,
-                returnRef: m,
-                tab: p,
-                rentalDuration: i
+                returnRef: f,
+                tab: l
             })
-        }, [e, p, h, _, n, i])(t)
+        }, [e, l, c, i, n])(t)
     },
-    A = e => {
-        let t = g(),
-            n = (0, a.bG)([c.A], () => {
-                var n;
-                return t ? c.A.getProduct(e) : null == (n = c.A.getCategoryForProduct(e)) ? void 0 : n.products.find(t => t.skuId === e)
-            });
-        return (0, p.Iv)(n)
+    I = e => {
+        let {
+            flattenProductVariants: t,
+            productOverride: n
+        } = a.useContext(_), r = (0, u.bG)([d.A], () => null != n ? n : t ? d.A.getProduct(e) : d.A.getCategoryForProduct(e)?.products.find(t => t.skuId === e));
+        return (0, f.Iv)(r)
     }

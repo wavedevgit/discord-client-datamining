@@ -1,29 +1,22 @@
-/** chunk id: 528772, original params: e,t,r (module,exports,require) **/
-r.d(t, {
+/** chunk id: 528772, original params: e,t,n (module,exports,require) **/
+n.d(t, {
     A: () => s
 });
-var n, o, i = r(311907),
-    l = r(73153);
-let a = !1,
-    u = !1;
-class c extends(o = i.Ay.Store) {
+var r = n(311907),
+    a = n(73153);
+let i = !1,
+    l = !1;
+class u extends r.Ay.Store {
+    static displayName = "SoundboardOverlayStore";
     get keepOpen() {
-        return u
+        return l
     }
     get enabled() {
-        return a
+        return i
     }
-}(n = "displayName") in c ? Object.defineProperty(c, n, {
-    value: "SoundboardOverlayStore",
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
-}) : c[n] = "SoundboardOverlayStore";
-let s = new c(l.h, {
+}
+let s = new u(a.h, {
     SOUNDBOARD_SET_OVERLAY_ENABLED: function(e) {
-        if (a = e.enabled, e.enabled) {
-            var t;
-            u = null != (t = e.keepOpen) && t
-        }
+        i = e.enabled, e.enabled && (l = e.keepOpen ?? !1)
     }
 })

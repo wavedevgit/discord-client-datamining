@@ -1,32 +1,33 @@
 /** chunk id: 585510, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
     Li: () => I,
-    _g: () => N,
-    dj: () => O
-}), n(896048);
-var r = n(136722),
-    i = n(417597),
+    _g: () => R,
+    dj: () => N
+});
+var i = n(136722),
+    r = n(417597),
     l = n(617617),
-    a = n(71393),
-    o = n(576705),
-    s = n(967198),
-    c = n(287809),
-    u = n(488926),
-    E = n(661191),
+    s = n(71393),
+    a = n(576705),
+    o = n(967198),
+    E = n(287809),
+    c = n(488926),
+    _ = n(661191),
     d = n(974103),
-    _ = n(903093),
-    A = n(610136),
+    A = n(903093),
+    u = n(610136),
     T = n(218113);
 
 function I(e) {
-    let t = (0, i.bG)([a.A, o.A], () => {
-            let t = a.A.getGuild(e);
+    let t = (0, r.bG)([s.A, a.A], () => {
+            let t = s.A.getGuild(e);
             if (null == t) return !1;
-            let n = o.A.getGuildPermissions(t);
-            return null != n && r.X8(n, T.Sz)
+            let n = a.A.getGuildPermissions(t);
+            return null != n && i.X8(n, T.Sz)
         }),
-        n = (0, i.bG)([A.A], () => null != e ? A.A.getGuildIncident(e) : null),
-        l = null != n && (0, _._J)(n);
+        n = (0, r.bG)([u.A], () => null != e ? u.A.getGuildIncident(e) : null),
+        l = null != n && (0, A._J)(n);
     return {
         shouldShowIncidentActions: t,
         incidentData: n,
@@ -34,35 +35,34 @@ function I(e) {
     }
 }
 
-function O() {
-    var e;
-    let t = function(e) {
-            let t = c.default.getCurrentUser(),
-                n = A.A.getIncidentsByGuild();
-            for (let i of E.default.keys(n).map(e => a.A.getGuild(e))) {
-                if (null == i) continue;
-                let l = n[i.id];
-                if (!(null == l || !(0, _.k$)(l) && !(0, _._J)(l) || (0, _._J)(l) && i.id !== e) && r.X8(u.cc({
+function N() {
+    let e = function(e) {
+            let t = E.default.getCurrentUser(),
+                n = u.A.getIncidentsByGuild();
+            for (let r of _.default.keys(n).map(e => s.A.getGuild(e))) {
+                if (null == r) continue;
+                let l = n[r.id];
+                if (!(null == l || !(0, A.k$)(l) && !(0, A._J)(l) || (0, A._J)(l) && r.id !== e) && i.X8(c.cc({
                         user: t,
-                        context: i,
+                        context: r,
                         checkElevated: !1
-                    }), T.Sz)) return i.id
+                    }), T.Sz)) return r.id
             }
             return null
-        }(s.A.getGuildId()),
-        n = null != (e = l.A.getGuildsProto()) ? e : {},
-        i = null != t ? n[t] : null,
-        o = null != i && i.disableRaidAlertNag;
+        }(o.A.getGuildId()),
+        t = l.A.getGuildsProto() ?? {},
+        n = null != e ? t[e] : null,
+        r = null != n && n.disableRaidAlertNag;
     return {
-        show: null != t && !o,
-        guildId: t
+        show: null != e && !r,
+        guildId: e
     }
 }
 
-function N(e) {
-    return (0, i.bG)([o.A, a.A], () => {
-        let t = a.A.getGuild(e);
-        return (0, d.nc)(t, o.A)
+function R(e) {
+    return (0, r.bG)([a.A, s.A], () => {
+        let t = s.A.getGuild(e);
+        return (0, d.nc)(t, a.A)
     })
 }
 n(652215)

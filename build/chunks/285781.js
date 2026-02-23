@@ -1,63 +1,23 @@
-/** chunk id: 285781, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    U: () => u
-}), n(896048);
-var r = n(627968),
-    i = n(64700),
-    a = n(158954);
-
-function o(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-
-function s(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            o(e, t, n[t])
-        })
-    }
-    return e
-}
-
-function l(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-        var r = Object.getOwnPropertySymbols(e);
-        t && (r = r.filter(function(t) {
-            return Object.getOwnPropertyDescriptor(e, t).enumerable
-        })), n.push.apply(n, r)
-    }
-    return n
-}
-
-function c(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : l(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-let u = {
+/** chunk id: 285781, original params: e,l,a (module,exports,require) **/
+a.d(l, {
+    U: () => i
+});
+var t = a(627968),
+    o = a(64700),
+    n = a(158954);
+let i = {
     title: "VoidSwitch",
     stories: [{
         id: "switch",
         name: "Switch",
         component: function(e) {
-            let [t, n] = i.useState(!1);
-            return (0, r.jsx)(a.TOt, c(s({
-                "data-migration-pending": !0
-            }, e), {
-                onChange: n,
-                checked: t
-            }))
+            let [l, a] = o.useState(!1);
+            return (0, t.jsx)(n.TOt, {
+                "data-migration-pending": !0,
+                ...e,
+                onChange: a,
+                checked: l
+            })
         },
         controls: {
             disabled: {

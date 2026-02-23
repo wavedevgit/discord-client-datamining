@@ -1,25 +1,25 @@
-/** chunk id: 979807, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => d
+/** chunk id: 979807, original params: n,t,i (module,exports,require) **/
+i.d(t, {
+    A: () => u
 });
-var r = n(627968);
-n(64700);
-var i = n(311907),
-    l = n(397927),
-    c = n(394953),
-    o = n(976860),
-    a = n(967198),
-    s = n(652215),
-    u = n(985018);
+var e = i(627968);
+i(64700);
+var l = i(311907),
+    r = i(397927),
+    a = i(394953),
+    d = i(976860),
+    c = i(967198),
+    s = i(652215),
+    o = i(985018);
 
-function d(e) {
-    let t = (0, i.bG)([a.A], () => a.A.getGuildId()),
-        n = (0, c.lI)();
-    return __OVERLAY__ || t !== s.YYv && !n ? null : (0, r.jsx)(l.Drp, {
+function u(n) {
+    let t = (0, l.bG)([c.A], () => c.A.getGuildId()),
+        i = (0, a.lI)();
+    return __OVERLAY__ || t !== s.YYv && !i ? null : (0, e.jsx)(r.Drp, {
         id: "go-to-original-guild",
-        label: u.intl.string(u.t.WYj55Y),
+        label: o.intl.string(o.t.WYj55Y),
         action: function() {
-            (0, o.uh)(e.guild_id, e.id)
+            (0, d.uh)(n.guild_id, n.id)
         }
     })
 }

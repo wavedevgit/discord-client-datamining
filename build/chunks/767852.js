@@ -1,182 +1,147 @@
 /** chunk id: 767852, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => B
-}), n(65821), n(896048);
-var r, i = n(627968),
-    l = n(64700),
-    a = n(503698),
-    s = n.n(a),
-    o = n(960488),
-    c = n(311907),
-    u = n(451988),
-    d = n(990078),
-    p = n(319060),
-    h = n(397927),
-    f = n(73153),
-    g = n(442433),
+    A: () => U
+});
+var i = n(627968),
+    r = n(64700),
+    l = n(503698),
+    a = n.n(l),
+    s = n(873263),
+    o = n(311907),
+    d = n(451988),
+    c = n(990078),
+    u = n(319060),
+    A = n(397927),
+    h = n(73153),
+    _ = n(442433),
     m = n(194894),
-    A = n(979604),
-    _ = n(235986),
-    b = n(596719),
-    E = n(769015),
-    O = n(290987),
-    y = n(742077),
-    I = n(268387),
-    v = n(954571),
+    p = n(979604),
+    g = n(235986),
+    E = n(596719),
+    I = n(769015),
+    f = n(290987),
+    C = n(742077),
+    T = n(268387),
+    N = n(954571),
     S = n(674378),
-    C = n(240248),
-    N = n(471761),
-    T = n(652215),
-    j = n(985018),
-    x = n(630086);
-
-function P(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-
-function w(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            P(e, t, n[t])
-        })
-    }
-    return e
-}
-
-function L(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
-        }
-        return n
-    })(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-let R = (0, C.xI)(p.A.GAME_LIST_ROW_MIN_HEIGHT),
-    D = (0, C.xI)(p.A.GAME_LIST_LINKED_TO_GLOW_DURATION),
-    M = Object.freeze({
-        [T.DpB.PLATFORM]: "Platform",
-        [T.DpB.LAST_PLAYED]: "Last Played",
-        [T.DpB.NAME]: "Name"
+    x = n(240248),
+    v = n(471761),
+    y = n(652215),
+    b = n(985018),
+    O = n(630086);
+let L = (0, x.xI)(u.A.GAME_LIST_ROW_MIN_HEIGHT),
+    R = (0, x.xI)(u.A.GAME_LIST_LINKED_TO_GLOW_DURATION),
+    P = Object.freeze({
+        [y.DpB.PLATFORM]: "Platform",
+        [y.DpB.LAST_PLAYED]: "Last Played",
+        [y.DpB.NAME]: "Name"
     }),
-    k = e => {
+    j = e => {
         let {
             flag: t,
             icon: n,
             item: r,
             tooltip: l
-        } = e, a = r.libraryApplication.hasFlag(t);
-        return (0, i.jsx)(d.m, {
+        } = e, s = r.libraryApplication.hasFlag(t);
+        return (0, i.jsx)(c.m, {
             text: l,
             children: (0, i.jsx)(n, {
-                className: s()(x.up, {
-                    [x.R]: !a
+                className: a()(O.up, {
+                    [O.R]: !s
                 })
             })
         })
     },
-    U = [{
-        key: T.DpB.NAME,
-        renderHeader: () => j.intl.string(j.t.dBfWfc),
+    D = [{
+        key: y.DpB.NAME,
+        renderHeader: () => b.intl.string(b.t.dBfWfc),
         sort: !0,
-        cellClassName: x.UQ,
-        bodyCellClassName: x.SJ,
-        render: e => (0, i.jsxs)(_.A, {
-            align: _.A.Align.CENTER,
-            children: [(0, i.jsx)(E.A, {
+        cellClassName: O.UQ,
+        bodyCellClassName: O.SJ,
+        render: e => (0, i.jsxs)(g.A, {
+            align: g.A.Align.CENTER,
+            children: [(0, i.jsx)(I.A, {
                 game: e.application,
-                size: E.M.SMALL,
-                className: x.Gt
+                size: I.M.SMALL,
+                className: O.Gt
             }), (0, i.jsxs)("div", {
-                className: x.Ot,
+                className: O.Ot,
                 children: [(0, i.jsx)("div", {
-                    className: x.TF,
+                    className: O.TF,
                     children: e.libraryApplication.getBranchedName(e.application)
-                }), e.libraryApplication.hasFlag(T.hM6.PREMIUM) ? (0, i.jsx)(d.m, {
-                    text: j.intl.string(j.t.tG2SzG),
-                    children: (0, i.jsx)(h.tvc, {
+                }), e.libraryApplication.hasFlag(y.hM6.PREMIUM) ? (0, i.jsx)(c.m, {
+                    text: b.intl.string(b.t.tG2SzG),
+                    children: (0, i.jsx)(A.tvc, {
                         size: "md",
                         color: "currentColor",
-                        className: x.oU
+                        className: O.oU
                     })
                 }) : null]
             })]
         })
     }, {
-        key: T.DpB.PLATFORM,
-        renderHeader: () => j.intl.string(j.t.YR4cHH),
+        key: y.DpB.PLATFORM,
+        renderHeader: () => b.intl.string(b.t.YR4cHH),
         sort: !0,
-        cellClassName: x.AA,
-        bodyCellClassName: x.iV,
+        cellClassName: O.AA,
+        bodyCellClassName: O.iV,
         render(e) {
             let t = e.libraryApplication.getDistributor();
-            return (0, i.jsx)(_.A, {
-                align: _.A.Align.CENTER,
-                children: null != t ? T.gG4[t] : j.intl.string(j.t["F+l3Jt"])
+            return (0, i.jsx)(g.A, {
+                align: g.A.Align.CENTER,
+                children: null != t ? y.gG4[t] : b.intl.string(b.t["F+l3Jt"])
             })
         }
     }, {
-        key: T.DpB.LAST_PLAYED,
-        renderHeader: () => j.intl.string(j.t.FDDyjS),
+        key: y.DpB.LAST_PLAYED,
+        renderHeader: () => b.intl.string(b.t.FDDyjS),
         sort: !0,
-        cellClassName: x.SX,
-        bodyCellClassName: x.iV,
+        cellClassName: O.SX,
+        bodyCellClassName: O.iV,
         render(e) {
             let t;
-            return t = e.isRunning ? j.intl.string(j.t.Md326p) : e.isNew ? j.intl.string(j.t["+F0Tho"]) : 0 !== e.lastPlayed ? (0, i.jsx)(O.Ay, {
+            return t = e.isRunning ? b.intl.string(b.t.Md326p) : e.isNew ? b.intl.string(b.t["+F0Tho"]) : 0 !== e.lastPlayed ? (0, i.jsx)(f.Ay, {
                 end: e.lastPlayed,
-                location: O.Ay.Locations.GAME_LIBRARY_LAST_PLAYED
-            }) : j.intl.string(j.t.EoWLru), (0, i.jsx)(_.A, {
-                align: _.A.Align.CENTER,
-                className: s()({
-                    [x.g3]: e.isNew
+                location: f.Ay.Locations.GAME_LIBRARY_LAST_PLAYED
+            }) : b.intl.string(b.t.EoWLru), (0, i.jsx)(g.A, {
+                align: g.A.Align.CENTER,
+                className: a()({
+                    [O.g3]: e.isNew
                 }),
                 children: t
             })
         }
     }, {
-        key: T.DpB.ACTIONS,
+        key: y.DpB.ACTIONS,
         renderHeader: () => null,
-        cellClassName: x.AT,
+        cellClassName: O.AT,
         render(e, t, n) {
-            var r, a;
+            var l, s;
             if (null == t) throw Error("No cell props defined.");
             let o = e.key === t.activeRowKey;
-            return (0, i.jsxs)(l.Fragment, {
+            return (0, i.jsxs)(r.Fragment, {
                 children: [(0, i.jsxs)("div", {
-                    className: x.nU,
-                    children: [(0, i.jsx)(k, {
-                        flag: T.hM6.PRIVATE,
+                    className: O.nU,
+                    children: [(0, i.jsx)(j, {
+                        flag: y.hM6.PRIVATE,
                         item: e,
-                        icon: h.G3N,
-                        tooltip: j.intl.string(j.t.NozAop)
-                    }), (0, i.jsx)(k, {
-                        flag: T.hM6.OVERLAY_DISABLED,
+                        icon: A.G3N,
+                        tooltip: b.intl.string(b.t.NozAop)
+                    }), (0, i.jsx)(j, {
+                        flag: y.hM6.OVERLAY_DISABLED,
                         item: e,
-                        icon: h.nkR,
-                        tooltip: j.intl.string(j.t.Az9eqn)
-                    }), (0, i.jsx)(N.A, {
-                        className: s()(x.up, {
-                            [x.R]: !e.supportsCloudSync
+                        icon: A.nkR,
+                        tooltip: b.intl.string(b.t.Az9eqn)
+                    }), (0, i.jsx)(v.A, {
+                        className: a()(O.up, {
+                            [O.R]: !e.supportsCloudSync
                         }),
                         libraryApplication: e.libraryApplication
                     })]
-                }), (0, S.XZ)(e.libraryApplication) ? (0, i.jsx)(A.A, {
-                    analyticsListSort: (r = t.sortKey, a = t.sortDirection, "".concat(M[r], " ").concat(a === T.tSW.ASCENDING ? "ASC" : "DESC")),
+                }), (0, S.XZ)(e.libraryApplication) ? (0, i.jsx)(p.A, {
+                    analyticsListSort: (l = t.sortKey, s = t.sortDirection, `${P[l]} ${s===y.tSW.ASCENDING?"ASC":"DESC"}`),
                     analyticsListIndex: n,
-                    source: T.ThZ.APPLICATION_LIBRARY,
+                    source: y.ThZ.APPLICATION_LIBRARY,
                     libraryApplication: e.libraryApplication,
                     playButtonVariant: o ? "primary" : "secondary",
                     size: "sm",
@@ -189,49 +154,45 @@ let R = (0, C.xI)(p.A.GAME_LIST_ROW_MIN_HEIGHT),
             })
         }
     }],
-    G = e => {
+    M = e => {
         let {
             item: t,
             activeRowKey: n,
             highlightedApplicationKey: r,
             onMouseEnter: l,
-            onMouseLeave: a,
+            onMouseLeave: s,
             onContextMenu: o,
-            setRef: c
-        } = e, u = function(e, t) {
-            if (null == e) return {};
-            var n, r, i, l = {};
-            if ("u" > typeof Reflect && Reflect.ownKeys) {
-                for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
-                return l
-            }
-            if (l = function(e, t) {
-                    if (null == e) return {};
-                    var n, r, i = {},
-                        l = Object.getOwnPropertyNames(e);
-                    for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
-                    return i
-                }(e, t), Object.getOwnPropertySymbols)
-                for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
-            return l
-        }(e, ["item", "activeRowKey", "highlightedApplicationKey", "onMouseEnter", "onMouseLeave", "onContextMenu", "setRef"]), d = t.key === n, p = t.key === r;
+            setRef: d,
+            ...c
+        } = e, u = t.key === n, A = t.key === r;
         return (0, i.jsx)("div", {
-            className: s()({
-                [x.eO]: d && !p,
-                [x.HM]: p,
-                [x.Ob]: !d && !p,
-                [x.ic]: !d && !t.isLaunchable
+            className: a()({
+                [O.eO]: u && !A,
+                [O.HM]: A,
+                [O.Ob]: !u && !A,
+                [O.ic]: !u && !t.isLaunchable
             }),
             ref: e => {
-                c(e, t.key)
+                d(e, t.key)
             },
             onMouseEnter: () => l(t),
-            onMouseLeave: a,
+            onMouseLeave: s,
             onContextMenu: e => o(e, t),
-            children: (0, i.jsx)("div", w({}, u))
+            children: (0, i.jsx)("div", {
+                ...c
+            })
         })
     };
-class V extends(r = l.PureComponent) {
+class w extends r.PureComponent {
+    static defaultProps = {
+        stickyHeader: !1
+    };
+    _didUnmount = !1;
+    _rowRefs = {};
+    state = {
+        overflowMenuRowKey: null,
+        highlightedApplicationKey: null != this.props.location.state ? this.props.location.state.applicationId : null
+    };
     componentDidMount() {
         let {
             fetched: e
@@ -246,14 +207,14 @@ class V extends(r = l.PureComponent) {
         let t = this.props.activeRowKey;
         if (null != t && e.activeRowKey !== t && this.props.isNavigatingByKeyboard) {
             let e = this._rowRefs[t];
-            null != e && (f.h.wait(g.Z_), this.props.scrollToRow(e, R))
+            null != e && (h.h.wait(_.Z_), this.props.scrollToRow(e, L))
         }
     }
     handleHighlightedApplicationKey() {
         let {
             highlightedApplicationKey: e
         } = this.state;
-        null != e && null != this._rowRefs[e] && (this.props.scrollToRow(this._rowRefs[e], R), new u.Ep().start(D, () => {
+        null != e && null != this._rowRefs[e] && (this.props.scrollToRow(this._rowRefs[e], L), new d.Ep().start(R, () => {
             this._didUnmount || this.setState({
                 highlightedApplicationKey: null
             })
@@ -277,36 +238,75 @@ class V extends(r = l.PureComponent) {
             } = this.props;
         for (let t of n) {
             switch (t.libraryApplication.getDistributor()) {
-                case T.d3x.DISCORD:
+                case y.d3x.DISCORD:
                     e.num_applications_discord++;
                     break;
-                case T.d3x.STEAM:
+                case y.d3x.STEAM:
                     e.num_applications_steam++;
                     break;
-                case T.d3x.BATTLENET:
+                case y.d3x.BATTLENET:
                     e.num_applications_battlenet++;
                     break;
-                case T.d3x.TWITCH:
+                case y.d3x.TWITCH:
                     e.num_applications_twitch++;
                     break;
-                case T.d3x.UPLAY:
+                case y.d3x.UPLAY:
                     e.num_applications_uplay++;
                     break;
-                case T.d3x.ORIGIN:
+                case y.d3x.ORIGIN:
                     e.num_applications_origin++;
                     break;
-                case T.d3x.GOG:
+                case y.d3x.GOG:
                     e.num_applications_gog++;
                     break;
-                case T.d3x.EPIC:
+                case y.d3x.EPIC:
                     e.num_applications_epic++
             }
             e.num_applications_total++
         }
-        v.default.track(T.HAw.LIBRARY_VIEWED, L(w({}, e), {
+        N.default.track(y.HAw.LIBRARY_VIEWED, {
+            ...e,
             load_id: t.loadId
-        }))
+        })
     }
+    setActiveRowKey = e => {
+        this.setState({
+            overflowMenuRowKey: e.key
+        })
+    };
+    clearActiveRowKey = () => {
+        this._didUnmount || this.setState({
+            overflowMenuRowKey: null
+        })
+    };
+    handleRowMouseEnter = e => {
+        this.props.isNavigatingByKeyboard || m.pU(e.key)
+    };
+    handleRowMouseLeave = () => {
+        this.props.isNavigatingByKeyboard || m.pU(null)
+    };
+    setRowRef = (e, t) => {
+        this._rowRefs[t] = e
+    };
+    handleApplicationContextMenu = (e, t) => {
+        this.setActiveRowKey(t);
+        let {
+            analyticsContext: r
+        } = this.props;
+        (0, _.L3)(e, async () => {
+            let {
+                default: e
+            } = await n.e("881").then(n.bind(n, 163368));
+            return n => (0, i.jsx)(e, {
+                ...n,
+                applicationId: t.libraryApplication.id,
+                branchId: t.libraryApplication.branchId,
+                analyticsContext: r
+            })
+        }, {
+            onClose: this.clearActiveRowKey
+        })
+    };
     handleSort(e, t) {
         m.vt(e, t)
     }
@@ -316,23 +316,23 @@ class V extends(r = l.PureComponent) {
                 filterQuery: n
             } = this.props,
             r = t.length > 0;
-        return r ? null : (e = "" !== n ? j.intl.format(j.t["4Q1TAr"], {
+        return r ? null : (e = "" !== n ? b.intl.format(b.t["4Q1TAr"], {
             query: n
-        }) : j.intl.string(j.t["0Y+0PY"]), (0, i.jsxs)("div", {
-            className: r ? x.MG : x.mv,
+        }) : b.intl.string(b.t["0Y+0PY"]), (0, i.jsxs)("div", {
+            className: r ? O.MG : O.mv,
             children: [(0, i.jsx)("div", {
-                className: x.Zd
-            }), (0, i.jsx)(_.A, {
+                className: O.Zd
+            }), (0, i.jsx)(g.A, {
                 grow: 0,
                 shrink: +!!r,
-                direction: _.A.Direction.VERTICAL,
+                direction: g.A.Direction.VERTICAL,
                 children: (0, i.jsxs)("div", {
-                    className: x.q6,
+                    className: O.q6,
                     children: [(0, i.jsx)("div", {
-                        className: x.ks,
-                        children: j.intl.string(j.t.Lw8X2j)
+                        className: O.ks,
+                        children: b.intl.string(b.t.Lw8X2j)
                     }), (0, i.jsx)("div", {
-                        className: x.Li,
+                        className: O.Li,
                         children: e
                     })]
                 })
@@ -344,29 +344,29 @@ class V extends(r = l.PureComponent) {
             sortKey: e,
             sortDirection: t,
             applicationViewItems: n,
-            activeRowKey: r,
+            activeRowKey: l,
             stickyHeader: a
         } = this.props, {
             overflowMenuRowKey: s,
             highlightedApplicationKey: o
         } = this.state;
-        return (0, i.jsxs)(l.Fragment, {
-            children: [n.length > 0 ? (0, i.jsx)(b.A, {
-                columns: U,
+        return (0, i.jsxs)(r.Fragment, {
+            children: [n.length > 0 ? (0, i.jsx)(E.A, {
+                columns: D,
                 data: n,
                 sortData: !1,
-                rowComponent: G,
-                className: x.tp,
-                headerClassName: a ? x.ln : x.wx,
-                headerCellClassName: x.e4,
-                sortedHeaderCellClassName: x.dm,
-                bodyCellClassName: x.hC,
-                rowClassName: x.G9,
+                rowComponent: M,
+                className: O.tp,
+                headerClassName: a ? O.ln : O.wx,
+                headerCellClassName: O.e4,
+                sortedHeaderCellClassName: O.dm,
+                bodyCellClassName: O.hC,
+                rowClassName: O.G9,
                 sortKey: e,
                 sortDirection: t,
                 stickyHeader: a,
                 rowProps: {
-                    activeRowKey: null != s ? s : r,
+                    activeRowKey: s ?? l,
                     highlightedApplicationKey: o,
                     onMouseEnter: this.handleRowMouseEnter,
                     onMouseLeave: this.handleRowMouseLeave,
@@ -374,7 +374,7 @@ class V extends(r = l.PureComponent) {
                     setRef: this.setRowRef
                 },
                 cellProps: {
-                    activeRowKey: null != s ? s : r,
+                    activeRowKey: s ?? l,
                     onContextMenu: this.handleApplicationContextMenu,
                     setActiveRowKey: this.setActiveRowKey,
                     clearActiveRowKey: this.clearActiveRowKey,
@@ -385,80 +385,41 @@ class V extends(r = l.PureComponent) {
             }) : null, this.renderImportHelp()]
         })
     }
-    constructor(...e) {
-        super(...e), P(this, "_didUnmount", !1), P(this, "_rowRefs", {}), P(this, "state", {
-            overflowMenuRowKey: null,
-            highlightedApplicationKey: null != this.props.location.state ? this.props.location.state.applicationId : null
-        }), P(this, "setActiveRowKey", e => {
-            this.setState({
-                overflowMenuRowKey: e.key
-            })
-        }), P(this, "clearActiveRowKey", () => {
-            this._didUnmount || this.setState({
-                overflowMenuRowKey: null
-            })
-        }), P(this, "handleRowMouseEnter", e => {
-            this.props.isNavigatingByKeyboard || m.pU(e.key)
-        }), P(this, "handleRowMouseLeave", () => {
-            this.props.isNavigatingByKeyboard || m.pU(null)
-        }), P(this, "setRowRef", (e, t) => {
-            this._rowRefs[t] = e
-        }), P(this, "handleApplicationContextMenu", (e, t) => {
-            this.setActiveRowKey(t);
-            let {
-                analyticsContext: r
-            } = this.props;
-            (0, g.L3)(e, async () => {
-                let {
-                    default: e
-                } = await n.e("881").then(n.bind(n, 163368));
-                return n => (0, i.jsx)(e, L(w({}, n), {
-                    applicationId: t.libraryApplication.id,
-                    branchId: t.libraryApplication.branchId,
-                    analyticsContext: r
-                }))
-            }, {
-                onClose: this.clearActiveRowKey
-            })
-        })
-    }
 }
 
-function B(e) {
-    let t = l.useContext(v.AnalyticsContext),
-        n = (0, o.zy)(),
+function U(e) {
+    let t = r.useContext(N.AnalyticsContext),
+        n = (0, s.zy)(),
         {
-            applicationViewItems: r,
+            applicationViewItems: l,
             filterQuery: a,
-            fetched: s
-        } = (0, c.cf)([y.A], () => ({
-            applicationViewItems: y.A.sortedFilteredLibraryApplicationViewItems,
-            filterQuery: y.A.applicationFilterQuery,
-            fetched: y.A.hasFetchedApplications
+            fetched: d
+        } = (0, o.cf)([C.A], () => ({
+            applicationViewItems: C.A.sortedFilteredLibraryApplicationViewItems,
+            filterQuery: C.A.applicationFilterQuery,
+            fetched: C.A.hasFetchedApplications
         })),
         {
-            sortKey: u,
-            sortDirection: d,
-            activeRowKey: p,
+            sortKey: c,
+            sortDirection: u,
+            activeRowKey: A,
             isNavigatingByKeyboard: h
-        } = (0, c.cf)([I.A], () => ({
-            sortKey: I.A.sortKey,
-            sortDirection: I.A.sortDirection,
-            activeRowKey: I.A.activeRowKey,
-            isNavigatingByKeyboard: I.A.isNavigatingByKeyboard
+        } = (0, o.cf)([T.A], () => ({
+            sortKey: T.A.sortKey,
+            sortDirection: T.A.sortDirection,
+            activeRowKey: T.A.activeRowKey,
+            isNavigatingByKeyboard: T.A.isNavigatingByKeyboard
         }));
-    return (0, i.jsx)(V, L(w({}, e), {
+    return (0, i.jsx)(w, {
+        ...e,
         analyticsContext: t,
         location: n,
-        applicationViewItems: r,
+        applicationViewItems: l,
         filterQuery: a,
-        fetched: s,
-        sortKey: u,
-        sortDirection: d,
-        activeRowKey: p,
+        fetched: d,
+        sortKey: c,
+        sortDirection: u,
+        activeRowKey: A,
         isNavigatingByKeyboard: h
-    }))
+    })
 }
-P(V, "defaultProps", {
-    stickyHeader: !1
-})

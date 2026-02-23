@@ -1,119 +1,118 @@
 /** chunk id: 474445, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => y
-}), n(896048), n(733351);
-var r = n(627968),
-    i = n(64700),
-    l = n(311907),
-    a = n(562465),
-    o = n(397927),
-    c = n(73153),
-    s = n(147087),
-    d = n(773669),
+    A: () => p
+});
+var i = n(627968),
+    l = n(64700),
+    a = n(311907),
+    r = n(562465),
+    s = n(397927),
+    o = n(73153),
+    d = n(147087),
+    c = n(773669),
     u = n(652215),
     g = n(985018),
-    p = n(923545);
-let f = new Map;
+    A = n(923545);
+let m = new Map;
 
-function y(e, t) {
-    let y, {
-            handleTranslate: b,
-            handleRevertTranslation: A,
-            isTranslating: m,
-            isTranslated: O
+function p(e, t) {
+    let p, {
+            handleTranslate: f,
+            handleRevertTranslation: h,
+            isTranslating: y,
+            isTranslated: E
         } = function(e) {
-            let [t, n] = i.useState(!1), r = (0, l.bG)([d.default], () => d.default.locale);
+            let [t, n] = l.useState(!1), i = (0, a.bG)([c.default], () => c.default.locale);
             return {
-                handleTranslate: i.useCallback(async (i, l) => {
-                    var s, d;
+                handleTranslate: l.useCallback(async (l, a) => {
                     if (t) return;
-                    let p = null != i ? i : r;
+                    let d = l ?? i;
                     n(!0);
-                    let y = null != (s = null != l ? l : null == (d = (0, g.getAvailableLocales)().find(e => e.value === p)) ? void 0 : d.name) ? s : p;
-                    f.has(e.id) || f.set(e.id, e.content), (0, o.showToast)((0, o.createToast)(g.intl.formatToPlainString(g.t.Znl8Z8, {
-                        targetLanguage: y
-                    }), o.ToastType.AI));
+                    let c = a ?? (0, g.getAvailableLocales)().find(e => e.value === d)?.name ?? d;
+                    m.has(e.id) || m.set(e.id, e.content), (0, s.showToast)((0, s.createToast)(g.intl.formatToPlainString(g.t.Znl8Z8, {
+                        targetLanguage: c
+                    }), s.ToastType.AI));
                     try {
-                        let t = await a.Bo.post({
+                        let t = await r.Bo.post({
                             url: u.Rsh.AI_TRANSLATE,
                             body: {
                                 content: e.content,
-                                locale: p
+                                locale: d
                             },
                             rejectWithError: !1
                         });
-                        t.ok && t.body && (c.h.dispatch({
+                        t.ok && t.body && (o.h.dispatch({
                             type: "MESSAGE_UPDATE",
                             message: {
                                 id: e.id,
                                 channel_id: e.channel_id,
                                 content: t.body.content
                             }
-                        }), (0, o.showToast)((0, o.createToast)(g.intl.formatToPlainString(g.t.FtVUqm, {
-                            targetLanguage: y
-                        }), o.ToastType.SUCCESS)))
+                        }), (0, s.showToast)((0, s.createToast)(g.intl.formatToPlainString(g.t.FtVUqm, {
+                            targetLanguage: c
+                        }), s.ToastType.SUCCESS)))
                     } finally {
                         n(!1)
                     }
-                }, [e, t, r]),
-                handleRevertTranslation: i.useCallback(() => {
-                    let t = f.get(e.id);
-                    null != t && (c.h.dispatch({
+                }, [e, t, i]),
+                handleRevertTranslation: l.useCallback(() => {
+                    let t = m.get(e.id);
+                    null != t && (o.h.dispatch({
                         type: "MESSAGE_UPDATE",
                         message: {
                             id: e.id,
                             channel_id: e.channel_id,
                             content: t
                         }
-                    }), f.delete(e.id))
+                    }), m.delete(e.id))
                 }, [e.id, e.channel_id]),
                 isTranslating: t,
-                isTranslated: f.has(e.id)
+                isTranslated: m.has(e.id)
             }
         }(e),
-        v = (y = (0, g.getAvailableLocales)(), i.useMemo(() => y.map(e => {
+        S = (p = (0, g.getAvailableLocales)(), l.useMemo(() => p.map(e => {
             let t;
             try {
-                t = n(579832)("./".concat(e.value, ".png"))
+                t = n(579832)(`./${e.value}.png`)
             } catch (e) {
                 t = n(432706)
             }
-            return (0, r.jsx)(o.Drp, {
-                id: "translate-".concat(e.value),
+            return (0, i.jsx)(s.Drp, {
+                id: `translate-${e.value}`,
                 label: e.name,
-                icon: () => (0, r.jsx)("img", {
+                icon: () => (0, i.jsx)("img", {
                     alt: "",
                     src: t,
-                    className: p.M
+                    className: A.M
                 }),
                 leadingAccessory: {
                     type: "image",
                     src: t
                 },
-                action: () => b(e.value, e.name),
-                disabled: m
+                action: () => f(e.value, e.name),
+                disabled: y
             }, e.value)
-        }), [b, m, y])),
-        j = (0, s.b)();
-    return null != e.content && "" !== e.content.trim() && j ? O ? (0, r.jsx)(o.Drp, {
+        }), [f, y, p])),
+        _ = (0, d.b)();
+    return null != e.content && "" !== e.content.trim() && _ ? E ? (0, i.jsx)(s.Drp, {
         id: "revert-translation",
         label: g.intl.string(g.t.JC9BXn),
         leadingAccessory: {
             type: "icon",
-            icon: o.UaP
+            icon: s.UaP
         },
-        icon: o.UaP,
-        action: A,
-        disabled: m
-    }) : (0, r.jsx)(o.Drp, {
+        icon: s.UaP,
+        action: h,
+        disabled: y
+    }) : (0, i.jsx)(s.Drp, {
         id: "translate",
-        label: m ? g.intl.string(g.t.SVKIdU) : g.intl.string(g.t["6epDlR"]),
-        action: () => b(),
+        label: y ? g.intl.string(g.t.SVKIdU) : g.intl.string(g.t["6epDlR"]),
+        action: () => f(),
         leadingAccessory: {
             type: "icon",
-            icon: o.UaP
+            icon: s.UaP
         },
-        disabled: m,
-        children: v
+        disabled: y,
+        children: S
     }) : null
 }

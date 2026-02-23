@@ -1,17 +1,14 @@
-/** chunk id: 908665, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => i
-}), n(896048), n(321073);
-var r = n(944181),
-    a = n(685357),
-    l = n(597807),
-    o = n(763424);
-let i = {
+/** chunk id: 908665, original params: e,t,r (module,exports,require) **/
+r.d(t, {
+    A: () => o
+}), r(321073);
+var n = r(944181),
+    a = r(685357),
+    l = r(597807),
+    i = r(763424);
+let o = {
     id: "nested-interactive",
-    selector: "button, a, ".concat(Array.from(r.roles.entries()).reduce((e, t) => {
-        let [n, r] = t;
-        return !0 === r.childrenPresentational && e.push('[role="'.concat(n, '"]')), e
-    }, []).join(", ")),
+    selector: `button, a, ${Array.from(n.roles.entries()).reduce((e,t)=>{let[r,n]=t;return!0===n.childrenPresentational&&e.push(`[role="${r}"]`),e},[]).join(", ")}`,
     tags: [],
     metadata: {
         description: "Interactive controls must not be nested",
@@ -20,9 +17,9 @@ let i = {
     check: function(e) {
         return ! function(e) {
             let t = document.createNodeIterator(e, NodeFilter.SHOW_ELEMENT),
-                n = t.nextNode();
-            for (; null !== n;) {
-                if (n !== e && function(e) {
+                r = t.nextNode();
+            for (; null !== r;) {
+                if (r !== e && function(e) {
                         switch (e.nodeName) {
                             case "IFRAME":
                             case "EMBED":
@@ -44,10 +41,10 @@ let i = {
                             default:
                                 return !1
                         }
-                    }(n)) return !1;
-                n = t.nextNode()
+                    }(r)) return !1;
+                r = t.nextNode()
             }
             return !0
-        }(e) && (0, l.z)(e) ? "Nested interactive element" : o.o
+        }(e) && (0, l.z)(e) ? "Nested interactive element" : i.o
     }
 }

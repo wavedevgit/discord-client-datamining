@@ -1,66 +1,67 @@
 /** chunk id: 518530, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => j
+    A: () => E
 });
-var r = n(627968),
-    l = n(64700),
-    i = n(554146),
-    s = n(397927),
+var i = n(627968),
+    s = n(64700),
+    l = n(554146),
+    r = n(397927),
     a = n(367513),
     o = n(738876),
     c = n(698718),
-    u = n(812771),
-    d = n(355622),
-    p = n(826673),
-    h = n(58736),
-    g = n(31717),
-    f = n(203982),
+    d = n(812771),
+    u = n(355622),
+    h = n(826673),
+    A = n(58736),
+    p = n(31717),
+    g = n(203982),
     m = n(43189),
-    b = n(652215),
-    A = n(49999),
-    y = n(985018),
-    O = n(266920);
-let j = function(e) {
+    _ = n(652215),
+    f = n(49999),
+    x = n(985018),
+    C = n(266920);
+let E = function(e) {
     let {
         channel: t,
         guild: n,
-        maxWidth: j
+        maxWidth: E
     } = e;
-    l.useEffect(() => {
-        (0, p.Dr)(i.M.CALL_CHAT_BUTTON_TEXT_IN_VOICE_COACH_MARK, {
-            dismissAction: A.i.AUTO
+    s.useEffect(() => {
+        (0, h.Dr)(l.M.CALL_CHAT_BUTTON_TEXT_IN_VOICE_COACH_MARK, {
+            dismissAction: f.i.AUTO
         })
     }, []);
-    let x = l.useCallback(() => {
-            a.A.updateChatOpen(t.id, !1, "close button"), f._.safeDispatch(b.jej.FOCUS_CHAT_BUTTON)
+    let I = s.useCallback(() => {
+            a.A.updateChatOpen(t.id, !1, "close button"), g._.safeDispatch(_.jej.FOCUS_CHAT_BUTTON)
         }, [t.id]),
-        _ = (0, r.jsx)(h.Ay.Icon, {
-            icon: s.PGe,
-            tooltip: y.intl.string(y.t.cpT0Cq),
-            onClick: x
+        b = (0, i.jsx)(A.Ay.Icon, {
+            icon: r.PGe,
+            tooltip: x.intl.string(x.t.cpT0Cq),
+            onClick: I
         });
-    return (0, r.jsxs)(u.A, {
-        sidebarType: u.X.CallChatSidebar,
-        maxWidth: j,
+    return (0, i.jsxs)(d.A, {
+        sidebarType: d.X.CallChatSidebar,
+        maxWidth: E,
         floatingLayer: m.Ay,
-        children: [(0, r.jsx)(o.A, {
+        children: [(0, i.jsx)(o.A, {
             channel: t,
-            draftType: g.C.ChannelMessage
-        }), (0, r.jsxs)(h.Ay, {
-            toolbar: _,
-            "aria-label": y.intl.string(y.t.BIYAqa),
-            children: [(0, r.jsx)(h.Ay.ChannelIcon, {
-                icon: s.oyn,
-                "aria-label": y.intl.string(y.t.Kx5kCN)
-            }), (0, r.jsx)(h.Ay.Title, {
+            draftType: p.C.ChannelMessage
+        }), (0, i.jsxs)(A.Ay, {
+            toolbar: b,
+            "aria-label": x.intl.string(x.t.BIYAqa),
+            children: [(0, i.jsx)(A.Ay.ChannelIcon, {
+                icon: r.oyn,
+                "aria-label": x.intl.string(x.t.Kx5kCN)
+            }), (0, i.jsx)(A.Ay.Title, {
                 children: t.name
             })]
-        }), (0, r.jsx)("div", {
-            className: O.T,
-            children: (0, r.jsx)(c.A, {
+        }), (0, i.jsx)("div", {
+            className: C.T,
+            children: (0, i.jsx)(c.A, {
                 channel: t,
                 guild: n,
-                chatInputType: d.oU.SIDEBAR
+                chatInputType: u.oU.SIDEBAR
             }, t.id)
         })]
     })

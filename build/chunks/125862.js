@@ -1,33 +1,31 @@
-/** chunk id: 125862, original params: e,t,n (module,exports,require) **/
-n.d(t, {
+/** chunk id: 125862, original params: e,t,a (module,exports,require) **/
+a.d(t, {
     A: () => u
 });
-var r = n(627968),
-    l = n(64700),
-    i = n(136722),
-    a = n(397927),
-    s = n(595738),
-    o = n(376092),
-    c = n(985018),
-    d = n(437504);
+var n = a(627968),
+    i = a(64700),
+    s = a(136722),
+    l = a(397927),
+    r = a(595738),
+    o = a(376092),
+    c = a(985018),
+    d = a(437504);
 let u = function(e) {
-    var t;
     let {
-        application: n
-    } = e, u = l.useMemo(() => {
-        var e;
-        let t = null == n || null == (e = n.install_params) ? void 0 : e.permissions;
-        if (null != t) return o.Q.filter(e => i.zy(i.iu(t), e))
-    }, [null == n || null == (t = n.install_params) ? void 0 : t.permissions]);
-    return null != u && u.length > 0 ? (0, r.jsxs)("div", {
+        application: t
+    } = e, a = i.useMemo(() => {
+        let e = t?.install_params?.permissions;
+        if (null != e) return o.Q.filter(t => s.zy(s.iu(e), t))
+    }, [t?.install_params?.permissions]);
+    return null != a && a.length > 0 ? (0, n.jsxs)("div", {
         className: d.A,
-        children: [(0, r.jsx)(a.Heading, {
+        children: [(0, n.jsx)(l.Heading, {
             variant: "heading-lg/semibold",
             color: "text-strong",
             children: c.intl.string(c.t.runNF8)
-        }), (0, r.jsx)(s.A, {
+        }), (0, n.jsx)(r.A, {
             className: d.h,
-            grantedPermissions: u,
+            grantedPermissions: a,
             grantedPermissionsHeader: c.intl.string(c.t.SLgiNH)
         })]
     }) : null

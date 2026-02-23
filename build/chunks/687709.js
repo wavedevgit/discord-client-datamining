@@ -1,127 +1,125 @@
-/** chunk id: 687709, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => p
+/** chunk id: 687709, original params: t,e,n (module,exports,require) **/
+n.d(e, {
+    A: () => g
 }), n(134528), n(947204);
-var r = n(562465),
-    l = n(73153),
-    i = n(198982),
+var i = n(562465),
+    a = n(73153),
+    r = n(198982),
     s = n(867455),
-    a = n(966833),
+    l = n(966833),
     o = n(157559),
     c = n(652215),
-    u = n(985018);
-let d = {
-        async pinMessage(e, t) {
+    d = n(985018);
+let _ = {
+        async pinMessage(t, e) {
             let {
                 id: n,
-                name: l
-            } = e;
-            await s.A.unarchiveThreadIfNecessary(e.id), r.Bo.put({
-                url: c.Rsh.PIN(n, t),
+                name: a
+            } = t;
+            await s.A.unarchiveThreadIfNecessary(t.id), i.Bo.put({
+                url: c.Rsh.PIN(n, e),
                 rejectWithError: !0
-            }).catch(t => {
-                let n = new i.LG(t),
-                    r = n.code,
-                    s = u.intl.string(u.t.j2d6Km),
-                    a = u.intl.string(u.t.fEptJP);
-                if (null != r) switch (r) {
+            }).catch(e => {
+                let n = new r.LG(e),
+                    i = n.code,
+                    s = d.intl.string(d.t.j2d6Km),
+                    l = d.intl.string(d.t.fEptJP);
+                if (null != i) switch (i) {
                     case c.t02.TOO_MANY_PINS_IN_CHANNEL:
-                        s = u.intl.string(u.t.HI88Q3), a = e.isPrivate() ? u.intl.formatToPlainString(u.t.Q89oQU, {
+                        s = d.intl.string(d.t.HI88Q3), l = t.isPrivate() ? d.intl.formatToPlainString(d.t.Q89oQU, {
                             maxPins: c.KL3
-                        }) : u.intl.formatToPlainString(u.t.NnO1S5, {
+                        }) : d.intl.formatToPlainString(d.t.NnO1S5, {
                             maxPins: c.KL3,
-                            channelName: l
+                            channelName: a
                         });
                         break;
                     case c.t02.INVALID_ACCESS:
-                        s = u.intl.string(u.t["25gfQX"]), a = u.intl.string(u.t.QNnTwN);
+                        s = d.intl.string(d.t["25gfQX"]), l = d.intl.string(d.t.QNnTwN);
                         break;
                     case c.t02.INVALID_PIN_MESSAGE_CHANNEL:
-                        s = u.intl.string(u.t["Q5G6+m"]), a = u.intl.string(u.t["5hgPfC"]);
+                        s = d.intl.string(d.t["Q5G6+m"]), l = d.intl.string(d.t["5hgPfC"]);
                         break;
                     case c.t02.INVALID_THREAD_ARCHIVE_STATE:
-                        s = u.intl.string(u.t.fu6Lbl), a = u.intl.string(u.t.FmrcZM);
+                        s = d.intl.string(d.t.fu6Lbl), l = d.intl.string(d.t.FmrcZM);
                         break;
                     case c.t02.INVALID_ACTION_SYSTEM_MESSAGE:
-                        s = u.intl.string(u.t["zV0/FC"]), a = u.intl.string(u.t.C4a7xI);
+                        s = d.intl.string(d.t["zV0/FC"]), l = d.intl.string(d.t.C4a7xI);
                         break;
                     case c.t02.UNKNOWN_MESSAGE:
-                        s = u.intl.string(u.t.fkqPro), a = u.intl.string(u.t.H6fRIg);
+                        s = d.intl.string(d.t.fkqPro), l = d.intl.string(d.t.H6fRIg);
                         break;
                     default:
-                        var d;
-                        s = u.intl.string(u.t.HI88Q3), a = null != (d = n.getAnyErrorMessage()) ? d : u.intl.string(u.t.fEptJP)
+                        s = d.intl.string(d.t.HI88Q3), l = n.getAnyErrorMessage() ?? d.intl.string(d.t.fEptJP)
                 }
                 o.A.show({
                     title: s,
-                    body: a,
-                    confirmText: u.intl.string(u.t.BddRzS)
+                    body: l,
+                    confirmText: d.intl.string(d.t.BddRzS)
                 })
             })
         },
-        async unpinMessage(e, t) {
-            await s.A.unarchiveThreadIfNecessary(e.id), r.Bo.del({
-                url: c.Rsh.PIN(e.id, t),
+        async unpinMessage(t, e) {
+            await s.A.unarchiveThreadIfNecessary(t.id), i.Bo.del({
+                url: c.Rsh.PIN(t.id, e),
                 oldFormErrors: !0,
                 rejectWithError: !0
             }).catch(() => o.A.show({
-                title: u.intl.string(u.t.xFjByk),
-                body: u.intl.string(u.t["0R/Toc"]),
-                confirmText: u.intl.string(u.t["7NqTJn"]),
-                cancelText: u.intl.string(u.t["ETE/oC"]),
-                onConfirm: d.unpinMessage.bind(d, e, t)
+                title: d.intl.string(d.t.xFjByk),
+                body: d.intl.string(d.t["0R/Toc"]),
+                confirmText: d.intl.string(d.t["7NqTJn"]),
+                cancelText: d.intl.string(d.t["ETE/oC"]),
+                onConfirm: _.unpinMessage.bind(_, t, e)
             }))
         },
-        ackPins(e) {
-            l.h.dispatch({
+        ackPins(t) {
+            a.h.dispatch({
                 type: "CHANNEL_PINS_ACK",
-                channelId: e
+                channelId: t
             })
         },
-        fetchPins(e, t) {
-            var n, i;
-            let s = null != (n = null == t ? void 0 : t.reset) && n,
-                o = null != (i = null == t ? void 0 : t.limit) ? i : 25,
-                u = null == t ? void 0 : t.before;
-            (s || function(e, t) {
-                let n = a.A.getPins(e);
+        fetchPins(t, e) {
+            let n = e?.reset ?? !1,
+                r = e?.limit ?? 25,
+                s = e?.before;
+            (n || function(t, e) {
+                let n = l.A.getPins(t);
                 if (null == n) return !0;
                 switch (n.state) {
-                    case a.e.FAILED:
+                    case l.e.FAILED:
                         return !0;
-                    case a.e.LOADING:
-                    case a.e.LOADED_FINISHED:
+                    case l.e.LOADING:
+                    case l.e.LOADED_FINISHED:
                         return !1;
-                    case a.e.LOADED_HAS_MORE:
-                        if (null == t) return 0 === n.items.length;
-                        return n.items.at(-1).pinnedAt === t
+                    case l.e.LOADED_HAS_MORE:
+                        if (null == e) return 0 === n.items.length;
+                        return n.items.at(-1).pinnedAt === e
                 }
-            }(e, u)) && (l.h.dispatch({
+            }(t, s)) && (a.h.dispatch({
                 type: "LOAD_PINNED_MESSAGES",
-                channelId: e,
-                reset: s
-            }), r.Bo.get({
-                url: c.Rsh.PINS(e),
+                channelId: t,
+                reset: n
+            }), i.Bo.get({
+                url: c.Rsh.PINS(t),
                 query: {
-                    limit: o,
-                    before: null == u ? void 0 : u.toISOString()
+                    limit: r,
+                    before: s?.toISOString()
                 },
                 retries: 2,
                 oldFormErrors: !0,
                 rejectWithError: !0
-            }).then(t => {
-                l.h.dispatch({
+            }).then(e => {
+                a.h.dispatch({
                     type: "LOAD_PINNED_MESSAGES_SUCCESS",
-                    pins: t.body.items,
-                    channelId: e,
-                    hasMore: t.body.has_more
+                    pins: e.body.items,
+                    channelId: t,
+                    hasMore: e.body.has_more
                 })
             }, () => {
-                l.h.dispatch({
+                a.h.dispatch({
                     type: "LOAD_PINNED_MESSAGES_FAILURE",
-                    channelId: e
+                    channelId: t
                 })
             }))
         }
     },
-    p = d
+    g = _

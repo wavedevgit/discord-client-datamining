@@ -1,36 +1,36 @@
 /** chunk id: 33216, original params: t,e,n (module,exports,require) **/
 n.d(e, {
-    default: () => s
+    default: () => o
 });
 var i = n(627968);
 n(64700);
-var l = n(158954),
-    a = n(397927),
-    r = n(974875),
-    o = n(985018);
+var a = n(158954),
+    s = n(397927),
+    l = n(974875),
+    r = n(985018);
 
-function s(t) {
+function o(t) {
     let {
         channelId: e,
         messageId: n,
-        onClose: s,
+        onClose: o,
         transitionState: c
     } = t;
-    return (0, i.jsx)(l.Modal, {
+    return (0, i.jsx)(a.Modal, {
         transitionState: c,
-        onClose: s,
-        title: o.intl.string(o.t.B3vFdU),
-        subtitle: o.intl.string(o.t.i4AbAS),
+        onClose: o,
+        title: r.intl.string(r.t.B3vFdU),
+        subtitle: r.intl.string(r.t.i4AbAS),
         actions: [{
-            text: o.intl.string(o.t.WAI6xu),
-            onClick: s
+            text: r.intl.string(r.t.WAI6xu),
+            onClick: o
         }],
-        children: (0, i.jsx)(a.Text, {
+        children: (0, i.jsx)(s.Text, {
             variant: "text-md/normal",
             color: "text-default",
-            children: o.intl.format(o.t.Ge0HUi, {
+            children: r.intl.format(r.t.Ge0HUi, {
                 handleFalsePositiveHook: () => {
-                    s(), (0, r.Q)(e, n)
+                    o(), (0, l.Q)(e, n)
                 }
             })
         })

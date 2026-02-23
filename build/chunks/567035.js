@@ -1,48 +1,47 @@
 /** chunk id: 567035, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => f
-}), n(114821), n(339614), n(896048), n(321073);
+    A: () => A
+}), n(321073);
 var i = n(735438),
-    r = n.n(i),
-    s = n(334738),
-    l = n(591552),
-    o = n(863005),
-    a = n(808728),
-    c = n(222823),
-    d = n(954571),
+    s = n.n(i),
+    l = n(334738),
+    a = n(591552),
+    r = n(863005),
+    o = n(808728),
+    d = n(222823),
+    c = n(954571),
     u = n(661191),
     h = n(652215),
     p = n(790782);
 
-function f(e, t, n) {
-    let i = r().flatMap(e, e => {
-        let t = a.Ay.getSelectableChannelIds(e),
-            n = [...t, ...a.Ay.getVocalChannelIds(e)],
-            i = o.A.getActiveJoinedThreadsForGuild(e);
+function A(e, t, n) {
+    let i = s().flatMap(e, e => {
+        let t = o.Ay.getSelectableChannelIds(e),
+            n = [...t, ...o.Ay.getVocalChannelIds(e)],
+            i = r.A.getActiveJoinedThreadsForGuild(e);
         for (let e of t) {
-            var r;
-            let t = null != (r = i[e]) ? r : {};
+            let t = i[e] ?? {};
             for (let e in t) n.push(e)
         }
         return n
     }).map(e => ({
         channelId: e,
         readStateType: p.P.CHANNEL,
-        messageId: c.Ay.lastMessageId(e)
+        messageId: d.Ay.lastMessageId(e)
     }));
     return e.forEach(e => {
         i.push({
             channelId: u.default.cast(e),
             readStateType: p.P.GUILD_EVENT,
-            messageId: c.Ay.lastMessageId(e, p.P.GUILD_EVENT)
+            messageId: d.Ay.lastMessageId(e, p.P.GUILD_EVENT)
         }), i.push({
             channelId: u.default.cast(e),
             readStateType: p.P.GUILD_ONBOARDING_QUESTION,
-            messageId: l.A.ackIdForGuild(e)
+            messageId: a.A.ackIdForGuild(e)
         })
-    }), d.default.track(h.HAw.MARK_AS_READ, {
+    }), c.default.track(h.HAw.MARK_AS_READ, {
         source: t,
         type: "guild"
-    }), (0, s.Uq)(i, n)
+    }), (0, l.Uq)(i, n)
 }

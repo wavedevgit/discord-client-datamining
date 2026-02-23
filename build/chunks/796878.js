@@ -1,46 +1,46 @@
 /** chunk id: 796878, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => u
+    A: () => c
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(877624),
+var r = n(877624),
     l = n(990078),
     a = n(397927),
     s = n(549996),
     o = n(807098),
-    c = n(542780);
+    d = n(542780);
 
-function u(e) {
+function c(e) {
     let {
         children: t
-    } = e, n = (0, s.c)(i.C.PREMIUM_TAB_TOOLTIP), u = null != n && "premiumTabTooltip" === n.properties.properties.oneofKind ? n.properties.properties.premiumTabTooltip : null, d = (0, o.T)(null == u ? void 0 : u.asset);
-    if (null == u) return t;
-    let p = (0, r.jsxs)("div", {
-        className: c.$e,
-        children: [null != d && (0, r.jsx)("img", {
-            className: c.NC,
-            src: d,
+    } = e, n = (0, s.c)(r.C.PREMIUM_TAB_TOOLTIP), c = null != n && "premiumTabTooltip" === n.properties.properties.oneofKind ? n.properties.properties.premiumTabTooltip : null, u = (0, o.T)(c?.asset);
+    if (null == c) return t;
+    let A = (0, i.jsxs)("div", {
+        className: d.$e,
+        children: [null != u && (0, i.jsx)("img", {
+            className: d.NC,
+            src: u,
             alt: ""
-        }), (0, r.jsxs)("div", {
-            className: c.Vm,
-            children: [(0, r.jsx)(a.Heading, {
+        }), (0, i.jsxs)("div", {
+            className: d.Vm,
+            children: [(0, i.jsx)(a.Heading, {
                 variant: "heading-md/bold",
                 color: "text-strong",
-                children: u.header
-            }), (0, r.jsx)(a.Text, {
+                children: c.header
+            }), (0, i.jsx)(a.Text, {
                 variant: "text-sm/normal",
                 color: "text-subtle",
-                children: u.body
+                children: c.body
             })]
         })]
     });
-    return (0, r.jsx)(l.m, {
-        __unsupportedReactNodeAsText: p,
+    return (0, i.jsx)(l.m, {
+        __unsupportedReactNodeAsText: A,
         position: "right",
-        "aria-label": u.header,
+        "aria-label": c.header,
         asContainer: !0,
-        children: (0, r.jsx)("div", {
+        children: (0, i.jsx)("div", {
             children: t
         })
     })

@@ -1,18 +1,16 @@
 /** chunk id: 785312, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => i
-}), n(896048);
-var r = n(64700);
+    A: () => s
+});
+var i = n(64700);
 
-function i(e) {
-    var t;
-    let [n, i] = r.useState(e), l = r.useRef(null);
-    return r.useEffect(() => {
-        var t, n;
-        i(null != (t = null == (n = l.current) ? void 0 : n.offsetHeight) ? t : e)
-    }, [e, null == (t = l.current) ? void 0 : t.offsetHeight]), {
-        headerHeight: n,
-        headerRef: l
+function s(e) {
+    let [t, n] = i.useState(e), s = i.useRef(null);
+    return i.useEffect(() => {
+        n(s.current?.offsetHeight ?? e)
+    }, [e, s.current?.offsetHeight]), {
+        headerHeight: t,
+        headerRef: s
     }
 }

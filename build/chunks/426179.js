@@ -1,11 +1,11 @@
 /** chunk id: 426179, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    c: () => r
+    c: () => l
 });
-var l = n(73153);
+var i = n(73153);
 
-function r(e, t, n) {
-    l.h.dispatch({
+function l(e, t, n) {
+    i.h.dispatch({
         type: "VIDEO_SIZE_UPDATE",
         streamId: e,
         dimensions: t,

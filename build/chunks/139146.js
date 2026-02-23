@@ -1,223 +1,160 @@
 /** chunk id: 139146, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    R: () => I,
+    R: () => R,
     _: () => S
-}), n(896048);
-var r = n(627968),
-    i = n(64700),
-    a = n(503698),
-    o = n.n(a),
-    s = n(575593),
-    l = n(311907),
-    c = n(554146),
-    u = n(435371),
-    d = n(397927),
-    f = n(379848),
-    p = n(661492),
-    _ = n(287809),
-    h = n(466459),
-    m = n(620434),
-    g = n(49999),
-    E = n(985018),
-    y = n(394236);
-
-function b(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-
-function O(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            b(e, t, n[t])
-        })
-    }
-    return e
-}
-
-function v(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-        var r = Object.getOwnPropertySymbols(e);
-        t && (r = r.filter(function(t) {
-            return Object.getOwnPropertyDescriptor(e, t).enumerable
-        })), n.push.apply(n, r)
-    }
-    return n
-}
-
-function A(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-let I = e => {
-    let {
-        product: t,
-        iconSize: n = 20,
-        className: a,
-        enableHoverEffect: l = !1,
-        isCardHovered: c = !0,
-        selectedVariantIndex: u
-    } = e, f = i.useMemo(() => {
-        var e;
-        return t.type === s.R.VARIANTS_GROUP && null != u && (null == (e = t.variants) ? void 0 : e[u]) != null ? t.variants[u] : t
-    }, [t, u]), _ = f.skuId, {
-        isPurchased: m
-    } = (0, h.h)(f), g = i.useMemo(() => {
-        let e = "6/4";
-        switch (t.type) {
-            case s.R.NAMEPLATE:
-            case s.R.AVATAR_DECORATION:
-                e = "16/9";
-                break;
-            case s.R.BUNDLE:
-            case s.R.PROFILE_EFFECT:
-            default:
-                e = "6/4"
-        }
-        return {
-            type: "dynamic",
-            component: d.Oz7.COLLECTIBLES_PREVIEW,
-            aspectRatio: e,
-            props: {
-                product: t,
-                forCollectedModal: !0
+});
+var a = n(627968),
+    s = n(64700),
+    i = n(503698),
+    r = n.n(i),
+    l = n(575593),
+    o = n(311907),
+    u = n(554146),
+    d = n(435371),
+    c = n(397927),
+    _ = n(379848),
+    h = n(661492),
+    m = n(287809),
+    T = n(466459),
+    p = n(620434),
+    A = n(49999),
+    f = n(985018),
+    O = n(394236);
+let E = {
+        sm: "xs",
+        md: "refresh_sm"
+    },
+    R = e => {
+        let {
+            product: t,
+            selectedVariantIndex: n,
+            ...i
+        } = e, r = s.useMemo(() => t.type === l.R.VARIANTS_GROUP && null != n && t.variants?.[n] != null ? t.variants[n] : t, [t, n]), o = r.skuId, {
+            isPurchased: u
+        } = (0, T.h)(r), d = s.useMemo(() => {
+            let e = "6/4";
+            switch (t.type) {
+                case l.R.NAMEPLATE:
+                case l.R.AVATAR_DECORATION:
+                    e = "16/9";
+                    break;
+                case l.R.BUNDLE:
+                case l.R.PROFILE_EFFECT:
+                default:
+                    e = "6/4"
             }
-        }
-    }, [t]);
-    return m ? null : (0, p.q)(f) ? (0, r.jsx)(S, {
-        skuId: _,
-        className: o()(l && y.FU, a),
-        iconSize: n,
-        isCardHovered: c,
-        nuxGraphic: g
-    }) : (0, r.jsx)(S, {
-        skuId: _,
-        className: o()(y.NY, a),
-        iconSize: n,
-        isCardHovered: c,
-        disabled: !0,
-        tooltipOverrideText: E.intl.string(E.t["50TX9k"]),
-        nuxGraphic: g
-    })
-};
+            return {
+                type: "dynamic",
+                component: c.Oz7.COLLECTIBLES_PREVIEW,
+                aspectRatio: e,
+                props: {
+                    product: t,
+                    forCollectedModal: !0
+                }
+            }
+        }, [t]);
+        return u ? null : (0, h.q)(r) ? (0, a.jsx)(S, {
+            skuId: o,
+            productName: r.name,
+            nuxGraphic: d,
+            ...i
+        }) : (0, a.jsx)(S, {
+            skuId: o,
+            productName: r.name,
+            nuxGraphic: d,
+            disabled: !0,
+            ...i
+        })
+    };
 
 function S(e) {
     let {
         skuId: t,
-        className: a,
-        iconSize: s = 20,
-        disabled: p,
-        isCardHovered: h,
-        tooltipOverrideText: b,
-        nuxGraphic: v,
-        onClick: I
-    } = e, [S, T] = (0, f.kn)([c.M.WISHLIST_NUX_TOOLTIP_AND_MODAL], void 0, !0), C = (0, l.bG)([_.default], () => _.default.getCurrentUser()), N = S === c.M.WISHLIST_NUX_TOOLTIP_AND_MODAL, {
-        reducedMotion: w
-    } = i.useContext(d.CZY), {
-        isWishlisted: R,
-        isBusy: P,
-        handleToggle: D
-    } = (0, m.c)({
+        productName: i,
+        className: l,
+        disabled: h,
+        isCardHovered: T = !0,
+        nuxGraphic: R,
+        onClick: S,
+        variant: g = "default",
+        size: v = "md"
+    } = e, I = E[v], [b, y] = (0, _.kn)([u.M.WISHLIST_NUX_TOOLTIP_AND_MODAL], void 0, !0), C = (0, o.bG)([m.default], () => m.default.getCurrentUser()), N = b === u.M.WISHLIST_NUX_TOOLTIP_AND_MODAL, {
+        reducedMotion: U
+    } = s.useContext(c.CZY), {
+        isWishlisted: k,
+        isBusy: D,
+        handleToggle: w
+    } = (0, p.c)({
         currentUser: C,
         skuId: t,
         onAddSuccess: () => {
-            N && null != v && ((0, d.mMO)(async () => {
+            N && null != R && ((0, c.mMO)(async () => {
                 let {
                     default: e
                 } = await n.e("64581").then(n.bind(n, 38884));
-                return t => (0, r.jsx)(e, A(O({}, t), {
-                    graphic: v
-                }))
-            }), T(g.i.USER_DISMISS))
+                return t => (0, a.jsx)(e, {
+                    ...t,
+                    graphic: R
+                })
+            }), y(A.i.USER_DISMISS))
         },
         onError: () => {
-            (0, d.showToast)((0, d.createToast)(E.intl.string(E.t.F8FvUy), d.ToastType.FAILURE)), d.ORC.announce(E.intl.string(E.t.F8FvUy))
+            (0, c.showToast)((0, c.createToast)(f.intl.string(f.t.F8FvUy), c.ToastType.FAILURE)), c.ORC.announce(f.intl.string(f.t.F8FvUy))
         }
-    }), L = i.useRef(null), [x, M] = i.useState(!1), j = R && !x, k = j ? d.C3E : d.yhu, U = j ? y.Pc : y.i7;
-    i.useEffect(() => {
-        M(!1)
+    }), L = s.useRef(null), [M, x] = s.useState(!1), F = k && !M, P = F ? c.C3E : c.yhu, H = r()(O.normalIconColor, F && O.wishlistedOrAnimating);
+    s.useEffect(() => {
+        x(!1)
     }, [t]);
-    let G = i.useCallback(e => {
-            e.stopPropagation(), null == I || I(), R || w.enabled ? R && x && M(!1) : M(!0), D()
-        }, [I, D, R, w.enabled, x]),
-        F = R ? E.intl.string(E.t.yr9TTf) : E.intl.string(E.t["8DkMEQ"]),
-        V = !R && !x,
-        B = i.useCallback(e => {
-            e.target === e.currentTarget && x && requestAnimationFrame(() => M(!1))
-        }, [x]),
-        H = e => w.enabled ? (0, r.jsx)(k, {
-            colorClass: null != e ? e : U,
-            size: "custom",
-            height: s,
-            width: s
-        }) : (0, r.jsxs)("div", {
-            className: o()(y.zc, V && y.QX),
-            children: [(0, r.jsx)("span", {
-                className: o()(y.P0, V && y.bP),
-                children: (0, r.jsx)(k, {
-                    colorClass: null != e ? e : U,
-                    size: "custom",
-                    height: s,
-                    width: s
-                })
-            }), (0, r.jsx)("span", {
-                className: o()(y.Do, x && y.Fb),
-                onAnimationEnd: B,
-                children: (0, r.jsx)(d.C3E, {
-                    size: "custom",
-                    height: s,
-                    width: s
-                })
-            })]
-        });
-    return (h || R) && null != C ? p ? (0, r.jsx)(u.m_, {
-        text: null != b ? b : F,
-        "aria-label": null != b ? b : F,
-        children: (0, r.jsx)(d.DUT, {
-            className: o()(y.ij, y.NY, a),
+    let B = s.useCallback(e => {
+            e.stopPropagation(), h || (S?.(), k || U.enabled ? k && M && x(!1) : x(!0), w())
+        }, [h, S, k, U.enabled, M, w]),
+        j = k ? f.intl.string(f.t.yr9TTf) : f.intl.string(f.t["8DkMEQ"]),
+        W = f.intl.formatToPlainString(f.t["7kFjeK"], {
+            productName: i
+        }),
+        G = !h && !k && !M,
+        q = s.useCallback(e => {
+            e.target === e.currentTarget && M && requestAnimationFrame(() => x(!1))
+        }, [M]),
+        K = () => (0, a.jsx)(c.DUT, {
+            className: r()(O.wishlistButton, O[v], {
+                [O.variantDefault]: "default" === g,
+                [O.variantSecondaryOverlay]: "overlay-secondary" === g,
+                [O.disabled]: h
+            }, l),
             innerRef: L,
-            onClick: e => e.stopPropagation(),
-            "aria-disabled": !0,
-            children: (0, r.jsx)(k, {
-                colorClass: y.rM,
-                size: "custom",
-                height: s,
-                width: s
+            onClick: B,
+            "aria-label": W,
+            "aria-pressed": k,
+            "aria-busy": D,
+            "aria-disabled": h,
+            children: U.enabled ? (0, a.jsx)(P, {
+                colorClass: (void 0) ?? H,
+                size: I
+            }) : (0, a.jsxs)("div", {
+                className: r()(O.iconContainer, G && O.canAnimate),
+                children: [(0, a.jsx)("span", {
+                    className: r()(O.iconWrapper, G && O.canHover),
+                    children: (0, a.jsx)(P, {
+                        colorClass: (void 0) ?? H,
+                        size: I
+                    })
+                }), (0, a.jsx)("span", {
+                    className: r()(O.animationOverlay, M && O.clickAnimation),
+                    onAnimationEnd: q,
+                    children: (0, a.jsx)(c.C3E, {
+                        size: I
+                    })
+                })]
             })
-        })
-    }) : N ? (0, r.jsx)(u.un, {
-        title: E.intl.string(E.t["47Rhc3"]),
-        body: E.intl.string(E.t.PXjA0b),
-        "aria-label": F,
-        children: (0, r.jsx)(d.DUT, {
-            className: o()(y.ij, a),
-            innerRef: L,
-            onClick: G,
-            "aria-label": F,
-            "aria-busy": P,
-            children: H()
-        })
-    }) : (0, r.jsx)(u.m_, {
-        text: null != b ? b : F,
-        "aria-label": null != b ? b : F,
-        children: (0, r.jsx)(d.DUT, {
-            className: o()(y.ij, a),
-            innerRef: L,
-            onClick: G,
-            "aria-label": F,
-            "aria-busy": P,
-            children: H()
-        })
-    }, "wishlist-button-hovering-".concat(x || h)) : null
+        });
+    return (T || k) && null != C ? N && !h ? (0, a.jsx)(d.un, {
+        title: f.intl.string(f.t["47Rhc3"]),
+        body: f.intl.string(f.t.PXjA0b),
+        children: K()
+    }) : (0, a.jsx)(d.m_, {
+        text: h ? f.intl.string(f.t["50TX9k"]) : j,
+        ariaHidden: !h,
+        children: K()
+    }) : null
 }

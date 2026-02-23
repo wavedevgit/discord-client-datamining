@@ -1,122 +1,104 @@
-/** chunk id: 704554, original params: e,t,r (module,exports,require) **/
-r.d(t, {
-    RT: () => i
-}), r(896048), r(693327), r(554719), r(680155), r(323874), r(14289), r(35956), r(733351);
-var n = r(64700),
-    u = r(812729),
-    c = r.n(u),
-    l = r(735438),
-    s = r(403362),
-    o = r(379078);
-let a = new Worker(new URL("/assets/" + r.u("83450"), r.b));
+/** chunk id: 704554, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    RT: () => d
+}), n(323874), n(14289), n(35956);
+var a = n(64700),
+    l = n(812729),
+    i = n.n(l),
+    r = n(735438),
+    s = n(403362),
+    u = n(379078);
+let o = new Worker(new URL("/assets/" + n.u("83450"), n.b));
 
-function i(e, t, r, u) {
-    let i = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : [],
-        d = n.useRef(null),
-        f = n.useRef(null),
-        p = n.useRef(r),
+function d(e, t, n, l) {
+    let d = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : [],
+        c = a.useRef(null),
+        m = a.useRef(null),
+        g = a.useRef(n),
         {
-            searchStringGenerator: m
-        } = u,
-        g = function(e) {
+            searchStringGenerator: f
+        } = l,
+        p = function(e) {
             let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [],
-                [r, u] = n.useState(e),
-                l = n.useRef(e);
-            return n.useEffect(() => {
-                l.current = e
-            }, [e]), n.useEffect(() => {
-                u(e => {
-                    let t = l.current;
-                    return c()(e, t) ? e : t
+                [n, l] = a.useState(e),
+                r = a.useRef(e);
+            return a.useEffect(() => {
+                r.current = e
+            }, [e]), a.useEffect(() => {
+                l(e => {
+                    let t = r.current;
+                    return i()(e, t) ? e : t
                 })
-            }, t), r
-        }(t.map(m), [t, m, ...i]),
-        E = function(e) {
+            }, t), n
+        }(t.map(f), [t, f, ...d]),
+        h = function(e) {
             let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [],
-                [r, u] = n.useState(e),
-                l = n.useRef(e);
-            return n.useEffect(() => {
-                l.current = e
-            }, [e]), n.useEffect(() => {
-                u(e => {
-                    let t = l.current;
-                    return c()(e, t) ? e : t
+                [n, l] = a.useState(e),
+                r = a.useRef(e);
+            return a.useEffect(() => {
+                r.current = e
+            }, [e]), a.useEffect(() => {
+                l(e => {
+                    let t = r.current;
+                    return i()(e, t) ? e : t
                 })
-            }, t), r
+            }, t), n
         }(t, [t]);
-    n.useEffect(() => {
-        p.current = r
-    }, [r]);
-    let h = n.useMemo(() => {
+    a.useEffect(() => {
+        g.current = n
+    }, [n]);
+    let v = a.useMemo(() => {
         let {
             throttleMs: e = 200,
             throttleLeading: t = !0,
-            throttleTrailing: r = !0,
-            maxSearchResults: n = -1
-        } = u;
-        return f.current = (0, l.throttle)(async (e, t, r) => {
-            if ("" === e.trim()) return void(n > 0 ? p.current(t.slice(0, n)) : p.current(t));
-            d.current = (0, l.uniqueId)();
-            let c = await
-
-            function(e, t, r, n) {
-                var u;
-                let c = null != (u = n.promiseUuid) ? u : (0, l.uniqueId)(),
+            throttleTrailing: n = !0,
+            maxSearchResults: a = -1
+        } = l;
+        return m.current = (0, r.throttle)(async (e, t, n) => {
+            if ("" === e.trim()) return void(a > 0 ? g.current(t.slice(0, a)) : g.current(t));
+            c.current = (0, r.uniqueId)();
+            let i = await
+            function(e, t, n, a) {
+                let l = a.promiseUuid ?? (0, r.uniqueId)(),
                     {
-                        searchType: i = o.n.FUZZY,
-                        sortType: d = o.r.NONE,
-                        jaroWinklerSearchThreshold: f = .85,
-                        maxSearchResults: p = -1
-                    } = n;
-                return new Promise(n => {
-                    let u = t => {
+                        searchType: i = u.n.FUZZY,
+                        sortType: d = u.r.NONE,
+                        jaroWinklerSearchThreshold: c = .85,
+                        maxSearchResults: m = -1
+                    } = a;
+                return new Promise(a => {
+                    let r = t => {
                         let {
                             data: {
-                                id: r,
-                                foundItemIndexes: l
+                                id: n,
+                                foundItemIndexes: i
                             }
                         } = t;
-                        c === r && (n(l.map(t => e[t]).filter(s.Vq)), null == a || a.removeEventListener("message", u))
+                        l === n && (a(i.map(t => e[t]).filter(s.Vq)), o?.removeEventListener("message", r))
                     };
-                    null == a || a.addEventListener("message", u), null == a || a.postMessage({
-                        id: c,
+                    o?.addEventListener("message", r), o?.postMessage({
+                        id: l,
                         searchTerm: t,
-                        searchStrings: r,
+                        searchStrings: n,
                         searchType: i,
                         sortType: d,
-                        jaroWinklerSearchThreshold: f,
-                        maxSearchResults: p
+                        jaroWinklerSearchThreshold: c,
+                        maxSearchResults: m
                     })
                 })
-            }(t, e, r, function(e) {
-                for (var t = 1; t < arguments.length; t++) {
-                    var r = null != arguments[t] ? arguments[t] : {},
-                        n = Object.keys(r);
-                    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-                        return Object.getOwnPropertyDescriptor(r, e).enumerable
-                    }))), n.forEach(function(t) {
-                        var n;
-                        n = r[t], t in e ? Object.defineProperty(e, t, {
-                            value: n,
-                            enumerable: !0,
-                            configurable: !0,
-                            writable: !0
-                        }) : e[t] = n
-                    })
-                }
-                return e
-            }({
-                promiseUuid: d.current
-            }, u));
-            null != d.current && p.current(c)
+            }(t, e, n, {
+                promiseUuid: c.current,
+                ...l
+            });
+            null != c.current && g.current(i)
         }, e, {
             leading: t,
-            trailing: r
-        }), f.current
-    }, [u]);
-    return n.useEffect(() => {
-        h(e, E, g)
-    }, [h, e, E, g, ...i]), n.useEffect(() => () => {
-        null != f.current && f.current.cancel(), f.current = null, d.current = null
-    }, [g, r, u]), h
+            trailing: n
+        }), m.current
+    }, [l]);
+    return a.useEffect(() => {
+        v(e, h, p)
+    }, [v, e, h, p, ...d]), a.useEffect(() => () => {
+        null != m.current && m.current.cancel(), m.current = null, c.current = null
+    }, [p, n, l]), v
 }

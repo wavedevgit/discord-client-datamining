@@ -1,170 +1,141 @@
 /** chunk id: 250006, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => x
-}), n(228524);
-var r = n(627968),
-    i = n(64700),
+    A: () => p
+});
+var i = n(627968),
+    s = n(64700),
     l = n(503698),
-    s = n.n(l),
+    r = n.n(l),
     a = n(311907),
     o = n(990078),
-    c = n(397927),
-    d = n(736653),
+    d = n(397927),
+    c = n(736653),
     u = n(573648),
-    g = n(587895),
-    m = n(599119),
-    p = n(923121),
-    f = n(539916),
-    h = n(985018),
-    b = n(931136);
+    m = n(587895),
+    g = n(599119),
+    x = n(923121),
+    h = n(539916),
+    _ = n(985018),
+    A = n(931136);
 
-function x(e) {
+function p(e) {
     let {
         connection: t,
         index: l,
-        onDragStart: x,
-        onDragReset: j,
-        onDragComplete: _,
-        draggingId: O
-    } = e, v = (0, d.Ay)(), {
-        drag: y,
-        drop: A,
-        dragSourcePosition: E,
-        setIsDraggable: N
-    } = (0, m.A)({
+        onDragStart: p,
+        onDragReset: f,
+        onDragComplete: j,
+        draggingId: N
+    } = e, E = (0, c.Ay)(), {
+        drag: b,
+        drop: T,
+        dragSourcePosition: C,
+        setIsDraggable: I
+    } = (0, g.A)({
         type: "ONBOARDING_CONNECTION_CARD",
         index: l,
         optionId: t.id,
-        onDragStart: () => x(t.id),
-        onDragComplete: e => _(e),
-        onDragReset: () => j()
-    }), S = i.useCallback(() => {
-        (0, p.zN)(l)
-    }, [l]), I = i.useCallback(() => {
-        (0, c.mMO)(async () => {
+        onDragStart: () => p(t.id),
+        onDragComplete: e => j(e),
+        onDragReset: () => f()
+    }), v = s.useCallback(() => {
+        (0, x.zN)(l)
+    }, [l]), S = s.useCallback(() => {
+        (0, d.mMO)(async () => {
             let {
                 default: e
             } = await n.e("90194").then(n.bind(n, 566857));
-            return n => {
-                var i, s;
-                return (0, r.jsx)(e, (i = function(e) {
-                    for (var t = 1; t < arguments.length; t++) {
-                        var n = null != arguments[t] ? arguments[t] : {},
-                            r = Object.keys(n);
-                        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                            return Object.getOwnPropertyDescriptor(n, e).enumerable
-                        }))), r.forEach(function(t) {
-                            var r;
-                            r = n[t], t in e ? Object.defineProperty(e, t, {
-                                value: r,
-                                enumerable: !0,
-                                configurable: !0,
-                                writable: !0
-                            }) : e[t] = r
-                        })
-                    }
-                    return e
-                }({}, n), s = s = {
-                    connection: t,
-                    index: l
-                }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
-                    var n = Object.keys(e);
-                    if (Object.getOwnPropertySymbols) {
-                        var r = Object.getOwnPropertySymbols(e);
-                        n.push.apply(n, r)
-                    }
-                    return n
-                })(Object(s)).forEach(function(e) {
-                    Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(s, e))
-                }), i))
-            }
+            return n => (0, i.jsx)(e, {
+                ...n,
+                connection: t,
+                index: l
+            })
         })
-    }, [t, l]), C = t.connection_type === f.wZ.APPLICATION, T = t.application_id, P = (0, a.bG)([g.A], () => C && null != T ? g.A.getApplication(T) : null, [C, T]), w = i.useMemo(() => (function(e, t, n) {
-        var r, i, l;
-        if (e.connection_type === f.wZ.APPLICATION && null != e.application_id) {
+    }, [t, l]), y = t.connection_type === h.wZ.APPLICATION, R = t.application_id, O = (0, a.bG)([m.A], () => y && null != R ? m.A.getApplication(R) : null, [y, R]), G = s.useMemo(() => (function(e, t, n) {
+        if (e.connection_type === h.wZ.APPLICATION && null != e.application_id) {
             if (null != n) return {
                 name: n.name,
-                icon: null != (r = n.getIconURL(128)) ? r : null
+                icon: n.getIconURL(128) ?? null
             }
         } else if (null != e.provider_id) {
             let n = u.A.get(e.provider_id);
             return null != n ? {
                 name: n.name,
-                icon: "light" === t ? null == (i = n.icon) ? void 0 : i.lightPNG : null == (l = n.icon) ? void 0 : l.darkPNG
+                icon: "light" === t ? n.icon?.lightPNG : n.icon?.darkPNG
             } : {
                 name: "Unknown Platform",
                 icon: null
             }
         }
         return {
-            name: h.intl.string(h.t.kFlgsx),
+            name: _.intl.string(_.t.kFlgsx),
             icon: null
         }
-    })(t, v, P), [t, v, P]);
-    return (0, r.jsxs)("div", {
-        className: s()(b.Nr, {
-            [b.A]: null != E && l < E,
-            [b.Ze]: null != E && l > E
+    })(t, E, O), [t, E, O]);
+    return (0, i.jsxs)("div", {
+        className: r()(A.Nr, {
+            [A.A]: null != C && l < C,
+            [A.Ze]: null != C && l > C
         }),
-        onMouseEnter: () => N(!0),
-        onMouseLeave: () => N(!1),
+        onMouseEnter: () => I(!0),
+        onMouseLeave: () => I(!1),
         ref: e => {
-            y(A(e))
+            b(T(e))
         },
-        children: [(0, r.jsx)("div", {
-            className: b.BU,
-            children: (0, r.jsx)(c.WP0, {
+        children: [(0, i.jsx)("div", {
+            className: A.BU,
+            children: (0, i.jsx)(d.WP0, {
                 size: "sm",
                 color: "currentColor"
             })
-        }), (0, r.jsxs)("div", {
-            className: b.hu,
-            children: [(0, r.jsx)("div", {
-                className: b.Kk,
-                children: null != w.icon ? (0, r.jsx)("img", {
-                    src: w.icon,
+        }), (0, i.jsxs)("div", {
+            className: A.hu,
+            children: [(0, i.jsx)("div", {
+                className: A.Kk,
+                children: null != G.icon ? (0, i.jsx)("img", {
+                    src: G.icon,
                     alt: "",
                     width: 40,
                     height: 40
-                }) : (0, r.jsx)(c._xR, {
+                }) : (0, i.jsx)(d._xR, {
                     size: "custom",
                     width: 40,
                     height: 40,
                     color: "currentColor"
                 })
-            }), (0, r.jsxs)("div", {
-                className: b.P_,
-                children: [(0, r.jsx)(c.Text, {
+            }), (0, i.jsxs)("div", {
+                className: A.P_,
+                children: [(0, i.jsx)(d.Text, {
                     variant: "text-md/medium",
                     color: "text-strong",
-                    children: w.name
-                }), (0, r.jsx)(c.Text, {
+                    children: G.name
+                }), (0, i.jsx)(d.Text, {
                     variant: "text-sm/normal",
                     color: "text-muted",
-                    children: null != t.description && t.description.length > 0 ? t.description : h.intl.string(h.t["4nNtsP"])
+                    children: null != t.description && t.description.length > 0 ? t.description : _.intl.string(_.t["4nNtsP"])
                 })]
             })]
-        }), (0, r.jsxs)("div", {
-            className: b.o1,
-            children: [(0, r.jsx)(o.m, {
-                text: h.intl.string(h.t.bt75uw),
-                children: (0, r.jsx)(c.DUT, {
-                    className: b.r9,
-                    onClick: I,
-                    "aria-label": h.intl.string(h.t.bt75uw),
-                    children: (0, r.jsx)(c.R2l, {
+        }), (0, i.jsxs)("div", {
+            className: A.o1,
+            children: [(0, i.jsx)(o.m, {
+                text: _.intl.string(_.t.bt75uw),
+                children: (0, i.jsx)(d.DUT, {
+                    className: A.r9,
+                    onClick: S,
+                    "aria-label": _.intl.string(_.t.bt75uw),
+                    children: (0, i.jsx)(d.R2l, {
                         size: "xs",
                         color: "currentColor"
                     })
                 })
-            }), (0, r.jsx)(o.m, {
-                text: h.intl.string(h.t.N86XcP),
-                children: (0, r.jsx)(c.DUT, {
-                    className: b.DT,
-                    onClick: S,
-                    "aria-label": h.intl.string(h.t.N86XcP),
-                    children: (0, r.jsx)(c.ucK, {
+            }), (0, i.jsx)(o.m, {
+                text: _.intl.string(_.t.N86XcP),
+                children: (0, i.jsx)(d.DUT, {
+                    className: A.DT,
+                    onClick: v,
+                    "aria-label": _.intl.string(_.t.N86XcP),
+                    children: (0, i.jsx)(d.ucK, {
                         size: "xs",
                         color: "currentColor"
                     })

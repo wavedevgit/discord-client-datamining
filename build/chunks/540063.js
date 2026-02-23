@@ -1,28 +1,27 @@
 /** chunk id: 540063, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => A
 });
-var r = n(627968),
-    i = n(64700),
+var i = n(627968),
+    r = n(64700),
     l = n(342494),
     a = n(793574),
     s = n(688810),
     o = n(979286),
-    c = n(758836),
-    u = n(985018),
-    d = n(166805);
-let p = e => {
+    d = n(758836),
+    c = n(985018),
+    u = n(166805);
+let A = e => {
     let {
         targetElementRef: t,
         onRequestClose: n,
-        onClick: p
+        onClick: A
     } = e, {
         analyticsLocations: h
-    } = (0, s.Ay)(a.A.HOME_PAGE_SHOP_TAB), f = i.useRef(n);
-    return f.current = n, i.useEffect(() => () => {
-        var e;
-        null == (e = f.current) || e.call(f)
-    }, []), (0, r.jsx)(l.AM, {
+    } = (0, s.Ay)(a.A.HOME_PAGE_SHOP_TAB), _ = r.useRef(n);
+    return _.current = n, r.useEffect(() => () => {
+        _.current?.()
+    }, []), (0, i.jsx)(l.AM, {
         targetElementRef: t,
         position: "right",
         size: "md",
@@ -31,21 +30,21 @@ let p = e => {
         caretConfig: {
             align: "start"
         },
-        title: u.intl.string(u.t.epBu6F),
-        body: u.intl.string(u.t["o8+3AX"]),
+        title: c.intl.string(c.t.epBu6F),
+        body: c.intl.string(c.t["o8+3AX"]),
         graphic: {
             type: "image",
-            src: d.A
+            src: u.A
         },
         gradientColor: "blue",
         actions: [{
-            text: u.intl.string(u.t.dp9qDi),
+            text: c.intl.string(c.t.dp9qDi),
             variant: "primary",
             onClick: () => {
-                null == p || p(), (0, o.Cz)({
+                A?.(), (0, o.Cz)({
                     analyticsLocations: h,
                     analyticsSource: a.A.HOME_PAGE_SHOP_TAB,
-                    tab: c.G2.HOME
+                    tab: d.G2.HOME
                 })
             }
         }],

@@ -1,146 +1,104 @@
-/** chunk id: 940481, original params: e,t,r (module,exports,require) **/
-r.d(t, {
-    default: () => h
-}), r(896048), r(228524);
-var n = r(627968),
-    l = r(64700),
-    a = r(512750),
-    s = r(311907),
-    o = r(397927),
-    i = r(645619),
-    c = r(503852),
-    d = r(363487),
-    u = r(722523),
-    b = r(490557),
-    p = r(214676),
-    f = r(499623),
-    m = r(428050),
-    g = r(568065),
-    _ = r(333354),
-    x = r(985018),
-    j = r(712957);
+/** chunk id: 940481, original params: e,t,s (module,exports,require) **/
+s.d(t, {
+    default: () => j
+});
+var n = s(627968),
+    a = s(64700),
+    r = s(512750),
+    l = s(311907),
+    i = s(397927),
+    o = s(645619),
+    c = s(503852),
+    d = s(363487),
+    u = s(722523),
+    _ = s(490557),
+    m = s(214676),
+    x = s(499623),
+    g = s(428050),
+    b = s(568065),
+    f = s(333354),
+    h = s(985018),
+    p = s(712957);
 
-function h(e) {
-    var t, r;
+function j(e) {
     let {
-        guildId: h,
-        powerup: O
-    } = e, y = function(e, t) {
-        if (null == e) return {};
-        var r, n, l, a = {};
-        if ("u" > typeof Reflect && Reflect.ownKeys) {
-            for (l = 0, r = Reflect.ownKeys(e); l < r.length; l++) n = r[l], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n]);
-            return a
-        }
-        if (a = function(e, t) {
-                if (null == e) return {};
-                var r, n, l = {},
-                    a = Object.getOwnPropertyNames(e);
-                for (n = 0; n < a.length; n++) r = a[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
-                return l
-            }(e, t), Object.getOwnPropertySymbols)
-            for (l = 0, r = Object.getOwnPropertySymbols(e); l < r.length; l++) n = r[l], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n]);
-        return a
-    }(e, ["guildId", "powerup"]), [v, k] = l.useState(void 0), C = l.useMemo(() => {
-        switch (O.skuId) {
-            case a.SL:
-                return (0, n.jsx)(p.L, {
-                    guildId: h
+        guildId: t,
+        powerup: s,
+        ...j
+    } = e, [C, k] = a.useState(void 0), v = a.useMemo(() => {
+        switch (s.skuId) {
+            case r.SL:
+                return (0, n.jsx)(m.L, {
+                    guildId: t
                 });
-            case a.aN:
-                return (0, n.jsx)(p.T, {});
-            case a.FB:
-                return (0, n.jsx)(m.A, {});
+            case r.aN:
+                return (0, n.jsx)(m.T, {});
+            case r.FB:
+                return (0, n.jsx)(g.A, {});
             default:
                 return
         }
-    }, [O, h]);
-    (0, c.Z)(h, O, c.q.DETAIL);
-    let w = (0, d.A)(h),
-        S = g.wr[O.skuId],
-        N = null != S ? g.a8[S] : null,
-        P = (0, s.bG)([i.A], () => i.A.getStateForGuild(h)),
-        I = null != N ? null == P ? void 0 : P.allPowerups[N] : null;
-    return (0, n.jsxs)(o.EOs, (t = function(e) {
-        for (var t = 1; t < arguments.length; t++) {
-            var r = null != arguments[t] ? arguments[t] : {},
-                n = Object.keys(r);
-            "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-                return Object.getOwnPropertyDescriptor(r, e).enumerable
-            }))), n.forEach(function(t) {
-                var n;
-                n = r[t], t in e ? Object.defineProperty(e, t, {
-                    value: n,
-                    enumerable: !0,
-                    configurable: !0,
-                    writable: !0
-                }) : e[t] = n
-            })
-        }
-        return e
-    }({
+    }, [s, t]);
+    (0, c.Z)(t, s, c.q.DETAIL);
+    let N = (0, d.A)(t),
+        S = b.wr[s.skuId],
+        A = null != S ? b.a8[S] : null,
+        I = (0, l.bG)([o.A], () => o.A.getStateForGuild(t)),
+        E = null != A ? I?.allPowerups[A] : null;
+    return (0, n.jsxs)(i.EOs, {
         "data-migration-pending": !0,
-        className: j.yl,
-        size: o.rIJ.DYNAMIC
-    }, y), r = r = {
+        className: p.yl,
+        size: i.rIJ.DYNAMIC,
+        ...j,
         parentComponent: "GuildPowerupPerkModal",
-        children: [(0, n.jsxs)(o.$mQ, {
+        children: [(0, n.jsxs)(i.$mQ, {
             "data-migration-pending": !0,
-            className: j._F,
+            className: p._F,
             scrollbarType: "none",
             children: [(0, n.jsxs)("div", {
-                className: j.pz,
-                children: [(0, n.jsx)(o.hLv, {
-                    className: j.UZ,
-                    children: (0, n.jsx)(b.l, {
-                        powerup: O
+                className: p.pz,
+                children: [(0, n.jsx)(i.hLv, {
+                    className: p.UZ,
+                    children: (0, n.jsx)(_.l, {
+                        powerup: s
                     })
                 }), (0, n.jsxs)("div", {
-                    className: j.hQ,
-                    children: [(0, n.jsx)(o.Heading, {
+                    className: p.hQ,
+                    children: [(0, n.jsx)(i.Heading, {
                         variant: "heading-xl/extrabold",
-                        children: O.title
-                    }), (0, n.jsx)(o.Text, {
-                        className: j.h_,
+                        children: s.title
+                    }), (0, n.jsx)(i.Text, {
+                        className: p.h_,
                         variant: "text-sm/normal",
-                        children: O.description
-                    }), null != I && (0, n.jsx)(o.Text, {
-                        className: j.h_,
+                        children: s.description
+                    }), null != E && (0, n.jsx)(i.Text, {
+                        className: p.h_,
                         variant: "text-sm/normal",
-                        children: x.intl.formatToPlainString(_.default.NAFGkH, {
-                            level: I.title
+                        children: h.intl.formatToPlainString(f.default.NAFGkH, {
+                            level: E.title
                         })
-                    }), (0, n.jsx)(f.F, {
-                        powerup: O
-                    }), null != v && (0, n.jsx)(o.Text, {
-                        className: j.z3,
+                    }), (0, n.jsx)(x.F, {
+                        powerup: s
+                    }), null != C && (0, n.jsx)(i.Text, {
+                        className: p.z3,
                         color: "text-feedback-critical",
                         variant: "text-sm/semibold",
-                        children: v
-                    }), w && (0, n.jsx)(u.Ay, {
-                        className: j.qr,
-                        guildId: h,
-                        powerup: O,
+                        children: C
+                    }), N && (0, n.jsx)(u.Ay, {
+                        className: p.qr,
+                        guildId: t,
+                        powerup: s,
                         onError: k
                     })]
                 })]
-            }), null != C && (0, n.jsx)("div", {
-                className: j._9,
-                children: C
+            }), null != v && (0, n.jsx)("div", {
+                className: p._9,
+                children: v
             })]
-        }), (0, n.jsx)(o.s_y, {
+        }), (0, n.jsx)(i.s_y, {
             "data-migration-pending": !0,
-            className: j.VN,
-            onClick: y.onClose
+            className: p.VN,
+            onClick: j.onClose
         })]
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
-        var r = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var n = Object.getOwnPropertySymbols(e);
-            r.push.apply(r, n)
-        }
-        return r
-    })(Object(r)).forEach(function(e) {
-        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
-    }), t))
+    })
 }

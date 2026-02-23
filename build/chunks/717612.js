@@ -4,38 +4,38 @@ n.d(t, {
 });
 var l = n(627968);
 n(64700);
-var r = n(397927),
+var a = n(397927),
     i = n(263063),
-    a = n(734057),
+    r = n(734057),
     s = n(71393),
-    o = n(985018),
-    d = n(611090);
+    d = n(985018),
+    o = n(611090);
 let c = e => {
     let {
         entry: t
-    } = e, n = a.A.getChannel(t.channelId);
+    } = e, n = r.A.getChannel(t.channelId);
     if (null == n) return null;
     let c = s.A.getGuild(n.guild_id);
     return null == c ? null : (0, l.jsxs)("div", {
-        className: d.kL,
-        children: [(0, l.jsx)(r.Heading, {
-            className: d.wx,
+        className: o.kL,
+        children: [(0, l.jsx)(a.Heading, {
+            className: o.wx,
             variant: "heading-sm/semibold",
-            children: o.intl.string(o.t.nTe4HC)
+            children: d.intl.string(d.t.nTe4HC)
         }), (0, l.jsxs)("div", {
-            className: d.bo,
+            className: o.bo,
             children: [(0, l.jsxs)("div", {
-                className: d.mo,
+                className: o.mo,
                 children: [(0, l.jsx)(i.A, {
                     guild: c,
                     size: i.A.Sizes.MINI,
-                    className: d.xG
-                }), (0, l.jsx)(r.Text, {
+                    className: o.xG
+                }), (0, l.jsx)(a.Text, {
                     color: "text-default",
                     variant: "text-sm/normal",
                     children: c.name
                 })]
-            }), (0, l.jsx)(r.Text, {
+            }), (0, l.jsx)(a.Text, {
                 variant: "text-md/semibold",
                 color: "text-strong",
                 children: t.name

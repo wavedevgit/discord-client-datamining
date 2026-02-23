@@ -1,234 +1,204 @@
 /** chunk id: 753806, original params: e,t,r (module,exports,require) **/
 r.d(t, {
-    A: () => j
-}), r(747238), r(812715), r(733351);
-var n = r(627968),
-    l = r(271830),
-    s = r(192308),
+    A: () => v
+});
+var s = r(627968),
+    n = r(271830),
+    l = r(192308),
     a = r(988665),
     i = r(138298),
     o = r(734057),
-    c = r(203982),
-    u = r(504531),
+    u = r(203982),
+    c = r(504531),
     d = r(614690),
     h = r(256796),
-    f = r(822382),
-    p = r(23667),
-    g = r(956467),
-    S = r(408730),
-    E = r(771650),
-    _ = r(616252),
-    A = r(65600),
-    y = r(145331),
+    _ = r(822382),
+    E = r(23667),
+    S = r(956467),
+    f = r(408730),
+    g = r(771650),
+    A = r(616252),
+    p = r(65600),
+    R = r(145331),
     m = r(768570),
-    b = r(921242),
-    R = r(652215);
+    y = r(921242),
+    T = r(652215);
 
-function v(e) {
-    let t = (0, f.bS)(e);
-    _.A.clearSearchEditorState(e), h.A.clearSearchMessages(t), p.A.cleanUp(t), g.A.cleanUp(t)
+function I(e) {
+    let t = (0, _.bS)(e);
+    A.A.clearSearchEditorState(e), h.A.clearSearchMessages(t), E.A.cleanUp(t), S.A.cleanUp(t)
 }
 
-function O(e) {
+function x(e) {
     let {
         searchContext: t,
         searchQueryString: r,
-        searchQuery: n,
-        offset: l
-    } = e, s = (0, f.bS)(t);
-    h.A.clearSearchMessages(s), _.A.setShowNoResultsAlt(t), _.A.setShowBlockedResults(t, !1), _.A.updateSearchResultsQuery(t, r, n, l), _.A.addSearchHistoryItem(t, r)
+        searchQuery: s,
+        offset: n
+    } = e, l = (0, _.bS)(t);
+    h.A.clearSearchMessages(l), A.A.setShowNoResultsAlt(t), A.A.setShowBlockedResults(t, !1), A.A.updateSearchResultsQuery(t, r, s, n), A.A.addSearchHistoryItem(t, r)
 }
 
-function T(e) {
-    var t;
+function L(e) {
     let {
-        searchContext: r,
-        searchQueryString: n,
-        searchEverywhere: l,
-        offset: s
-    } = e, a = (0, f.bS)(r), i = null != (t = A.A.getSearchMode(a)) ? t : b.z, o = {
-        offset: s
+        searchContext: t,
+        searchQueryString: r,
+        searchEverywhere: s,
+        offset: n
+    } = e, l = (0, _.bS)(t), a = p.A.getSearchMode(l) ?? y.z, i = {
+        offset: n
     };
-    r.type === R.I4_.DMS ? h.A.fetchTabMessages({
-        searchContext: r,
+    t.type === T.I4_.DMS ? h.A.fetchTabMessages({
+        searchContext: t,
         searchTabs: [m.$H.MESSAGES],
-        searchQueryString: n,
-        searchMode: i,
-        getId: () => a,
-        getLimit: () => R.T_y,
-        pagination: o,
+        searchQueryString: r,
+        searchMode: a,
+        getId: () => l,
+        getLimit: () => T.T_y,
+        pagination: i,
         trackExactTotalHits: !0,
         onFetchStart: e => {
             let {
-                searchQueryString: t,
-                searchQuery: n
+                searchQueryString: r,
+                searchQuery: s
             } = e;
-            O({
-                searchContext: r,
-                searchQueryString: t,
-                searchQuery: n,
-                offset: s
+            x({
+                searchContext: t,
+                searchQueryString: r,
+                searchQuery: s,
+                offset: n
             })
         }
     }) : h.A.fetchMessages({
-        searchContext: r,
-        searchQueryString: n,
-        pagination: o,
-        searchMode: i,
-        searchEverywhere: l,
+        searchContext: t,
+        searchQueryString: r,
+        pagination: i,
+        searchMode: a,
+        searchEverywhere: s,
         onFetchStart: e => {
             let {
-                searchQueryString: t,
-                searchQuery: n
+                searchQueryString: r,
+                searchQuery: s
             } = e;
-            O({
-                searchContext: r,
-                searchQueryString: t,
-                searchQuery: n,
-                offset: s
+            x({
+                searchContext: t,
+                searchQueryString: r,
+                searchQuery: s,
+                offset: n
             })
         }
     })
 }
 
-function x(e) {
-    let t = (0, f.bS)(e),
-        r = A.A.getEditorState(t);
-    return null != r ? u.pe(r) : null
+function b(e) {
+    let t = (0, _.bS)(e),
+        r = p.A.getEditorState(t);
+    return null != r ? c.pe(r) : null
 }
 
-function I(e, t) {
-    var r;
-    let n = (0, f.bS)(e),
-        l = null != (r = A.A.getEditorState(n)) ? r : u.e_(d.ys(E.Ay)),
-        s = u.t7(t, l);
-    s = u.a4(s, 512);
-    let i = (0, f._o)(t).filter(e => e.type !== a.Ay.NON_TOKEN_TYPE);
-    s = u.uD(i, s, E.Ay), s = u.UO(0 + t.length, s), _.A.updateSearchEditorState(e, s)
+function N(e, t) {
+    let r = (0, _.bS)(e),
+        s = p.A.getEditorState(r) ?? c.e_(d.ys(g.Ay)),
+        n = c.t7(t, s);
+    n = c.a4(n, 512);
+    let l = (0, _._o)(t).filter(e => e.type !== a.Ay.NON_TOKEN_TYPE);
+    n = c.uD(l, n, g.Ay), n = c.UO(0 + t.length, n), A.A.updateSearchEditorState(e, n)
 }
 
-function L(e) {
-    c._.dispatch(R.jej.SET_SEARCH_QUERY, e)
+function C(e) {
+    u._.dispatch(T.jej.SET_SEARCH_QUERY, e)
 }
-let j = {
-    cleanUpSearchState: v,
-    fetchMessages: T,
-    setSearchInputText: I,
+let v = {
+    cleanUpSearchState: I,
+    fetchMessages: L,
+    setSearchInputText: N,
     appendToSearchInputText: function(e, t) {
-        let r = x(e);
+        let r = b(e);
         if (null == r) return;
-        let n = r.endsWith(" ") ? r + t : r + " " + t;
-        I(e, n), T({
+        let s = r.endsWith(" ") ? r + t : r + " " + t;
+        N(e, s), L({
             searchContext: e,
-            searchQueryString: n,
+            searchQueryString: s,
             offset: 0
         })
     },
-    getSearchInputText: x,
+    getSearchInputText: b,
     ensureSearchInputDecorators: function(e) {
-        let t, r = (0, f.bS)(e),
-            n = A.A.getEditorState(r),
-            s = null == n ? void 0 : n.getCurrentContent(),
-            a = null == n ? void 0 : n.getSelection();
-        null != s && null != a ? (t = u.Rg(d.ys(E.Ay), s), t = l.EditorState.forceSelection(t, a)) : t = u.e_(d.ys(E.Ay)), _.A.updateSearchEditorState(e, t)
+        let t, r = (0, _.bS)(e),
+            s = p.A.getEditorState(r),
+            l = s?.getCurrentContent(),
+            a = s?.getSelection();
+        null != l && null != a ? (t = c.Rg(d.ys(g.Ay), l), t = n.EditorState.forceSelection(t, a)) : t = c.e_(d.ys(g.Ay)), A.A.updateSearchEditorState(e, t)
     },
     setSearchQuery: function(e) {
         let {
             query: t,
             performSearch: r,
-            replace: n,
-            resultsState: l,
-            searchQuerySource: s
+            replace: s,
+            resultsState: n,
+            searchQuerySource: l
         } = e, {
             mode: a,
             cursorScope: i
-        } = l, o = 0;
-        null != a.token ? o = a.token.start : (null == i ? void 0 : i.currentToken) != null && (o = i.currentToken.end);
-        let c = null != a.token ? a.token.end : o;
-        L({
+        } = n, o = 0;
+        null != a.token ? o = a.token.start : i?.currentToken != null && (o = i.currentToken.end);
+        let u = null != a.token ? a.token.end : o;
+        C({
             query: t,
             anchor: o,
-            focus: c,
+            focus: u,
             performSearch: r,
-            replace: n,
-            searchQuerySource: s
+            replace: s,
+            searchQuerySource: l
         })
     },
-    dispatchSetSearchQuery: L,
+    dispatchSetSearchQuery: C,
     transitionStateToSearchContext: function(e, t, r) {
-        let n = (0, f.bS)(e),
-            l = A.A.getEditorState(n);
-        if (null == l) return;
-        let s = u.pe(l),
-            a = t.type === R.I4_.CHANNEL ? (0, f.EH)(s) : s;
-        I(t, a = a.trim());
-        let o = A.A.getSearchMode(n);
-        _.A.updateSearchMode(t, null != o ? o : b.z), S.A.transferSession(e, t);
-        let c = (0, f._o)(a),
-            d = (0, f.Zf)(c);
-        S.A.refreshQueryId(t), (0, y.fd)({
+        let s = (0, _.bS)(e),
+            n = p.A.getEditorState(s);
+        if (null == n) return;
+        let l = c.pe(n),
+            a = t.type === T.I4_.CHANNEL ? (0, _.EH)(l) : l;
+        N(t, a = a.trim());
+        let o = p.A.getSearchMode(s);
+        A.A.updateSearchMode(t, o ?? y.z), f.A.transferSession(e, t);
+        let u = (0, _._o)(a),
+            d = (0, _.Zf)(u);
+        f.A.refreshQueryId(t), (0, R.fd)({
             searchContext: t,
             query: d,
             queryString: a,
             searchQuerySource: m.Q_.SEARCH_XDM_SETTINGS
-        }), T({
+        }), L({
             searchContext: t,
             searchQueryString: a,
             offset: 0
         });
-        let p = (0, f.bS)(t);
-        i.A.setSelectedSearchContext(p), _.A.clearSearchEditorState(e), h.A.clearSearchMessages(n), null == r || r()
+        let E = (0, _.bS)(t);
+        i.A.setSelectedSearchContext(E), A.A.clearSearchEditorState(e), h.A.clearSearchMessages(s), r?.()
     },
     cleanUpPrivateChannelSearchState: function() {
-        A.A.getSearchStateIds().forEach(e => {
+        p.A.getSearchStateIds().forEach(e => {
             let t = o.A.getChannel(e);
-            null != t && t.isPrivate() && v({
-                type: R.I4_.CHANNEL,
+            null != t && t.isPrivate() && I({
+                type: T.I4_.CHANNEL,
                 channelId: t.id
             })
         })
     },
     openSearchFiltersModal: function(e) {
-        (0, y.TJ)({
+        (0, R.TJ)({
             searchContext: e
-        }), (0, s.openModalLazy)(async () => {
+        }), (0, l.openModalLazy)(async () => {
             let {
                 default: t
             } = await r.e("47230").then(r.bind(r, 561965));
-            return r => {
-                var l, s;
-                return (0, n.jsx)(t, (l = function(e) {
-                    for (var t = 1; t < arguments.length; t++) {
-                        var r = null != arguments[t] ? arguments[t] : {},
-                            n = Object.keys(r);
-                        "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-                            return Object.getOwnPropertyDescriptor(r, e).enumerable
-                        }))), n.forEach(function(t) {
-                            var n;
-                            n = r[t], t in e ? Object.defineProperty(e, t, {
-                                value: n,
-                                enumerable: !0,
-                                configurable: !0,
-                                writable: !0
-                            }) : e[t] = n
-                        })
-                    }
-                    return e
-                }({}, r), s = s = {
-                    searchContext: e
-                }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
-                    var r = Object.keys(e);
-                    if (Object.getOwnPropertySymbols) {
-                        var n = Object.getOwnPropertySymbols(e);
-                        r.push.apply(r, n)
-                    }
-                    return r
-                })(Object(s)).forEach(function(e) {
-                    Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(s, e))
-                }), l))
-            }
+            return r => (0, s.jsx)(t, {
+                ...r,
+                searchContext: e
+            })
         }, {
-            modalKey: b.b
+            modalKey: y.b
         })
     }
 }

@@ -1,8 +1,8 @@
-/** chunk id: 832248, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => l
+/** chunk id: 832248, original params: e,t,l (module,exports,require) **/
+l.d(t, {
+    A: () => n
 });
-let l = (0, n(353640).v)(() => ({
+let n = (0, l(353640).v)(() => ({
     isOpen: null,
     shouldRenderTenureLevelUp: !1
 }))

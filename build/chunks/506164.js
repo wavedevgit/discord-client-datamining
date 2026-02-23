@@ -1,11 +1,12 @@
 /** chunk id: 506164, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
     A: () => o
-}), n(228524);
-var r = n(627968),
-    l = n(64700),
-    i = n(397927),
-    s = n(847599),
+});
+var i = n(627968),
+    s = n(64700),
+    l = n(397927),
+    r = n(847599),
     a = n(263518);
 let o = function(e) {
     let {
@@ -13,52 +14,52 @@ let o = function(e) {
         description: n,
         agreement: o,
         disagreement: c,
-        onAgree: u,
-        onDisagree: d,
-        modalType: p,
-        channelId: h,
-        guildId: g
+        onAgree: d,
+        onDisagree: u,
+        modalType: h,
+        channelId: A,
+        guildId: p
     } = e;
-    l.useEffect(() => {
-        (0, s.Bf)(p, h, g)
-    }, [p, h, g]);
-    let f = l.useCallback(() => {
-            (0, s.mU)(s.IY.NSFW_CHANNEL_DISAGREE_CTA, p, h, g), null == d || d()
-        }, [d, p, h, g]),
-        m = l.useCallback(() => {
-            (0, s.mU)(s.IY.NSFW_CHANNEL_AGREE_CTA, p, h, g), null == u || u()
-        }, [u, p, h, g]);
-    return (0, r.jsxs)(i.BJc, {
+    s.useEffect(() => {
+        (0, r.Bf)(h, A, p)
+    }, [h, A, p]);
+    let g = s.useCallback(() => {
+            (0, r.mU)(r.IY.NSFW_CHANNEL_DISAGREE_CTA, h, A, p), u?.()
+        }, [u, h, A, p]),
+        m = s.useCallback(() => {
+            (0, r.mU)(r.IY.NSFW_CHANNEL_AGREE_CTA, h, A, p), d?.()
+        }, [d, h, A, p]);
+    return (0, i.jsxs)(l.BJc, {
         justify: "center",
         align: "center",
         direction: "vertical",
         gap: 16,
         className: a.XG,
-        children: [(0, r.jsxs)(i.BJc, {
+        children: [(0, i.jsxs)(l.BJc, {
             gap: 8,
             justify: "center",
             align: "center",
             direction: "vertical",
-            children: [(0, r.jsx)(i.Text, {
+            children: [(0, i.jsx)(l.Text, {
                 variant: "text-lg/semibold",
                 className: a.DD,
                 children: t
-            }), (0, r.jsx)(i.Text, {
+            }), (0, i.jsx)(l.Text, {
                 variant: "text-md/medium",
                 className: a.h_,
                 color: "text-muted",
                 children: n
             })]
-        }), (0, r.jsxs)(i.BJc, {
+        }), (0, i.jsxs)(l.BJc, {
             direction: "horizontal",
             justify: "center",
             align: "center",
             gap: 16,
-            children: [null != c && null != d ? (0, r.jsx)(i.Button, {
+            children: [null != c && null != u ? (0, i.jsx)(l.Button, {
                 variant: "secondary",
                 text: c,
-                onClick: f
-            }) : null, null != o && null != u ? (0, r.jsx)(i.Button, {
+                onClick: g
+            }) : null, null != o && null != d ? (0, i.jsx)(l.Button, {
                 onClick: m,
                 text: o
             }) : null]

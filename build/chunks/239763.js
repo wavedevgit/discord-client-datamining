@@ -1,63 +1,63 @@
-/** chunk id: 239763, original params: e,t,n (module,exports,require) **/
-n.d(t, {
+/** chunk id: 239763, original params: e,t,a (module,exports,require) **/
+a.d(t, {
     A: () => o
 });
-var a = n(627968);
-n(64700);
-var i = n(503698),
-    l = n.n(i),
-    s = n(994277),
-    r = n(266479);
+var n = a(627968);
+a(64700);
+var s = a(503698),
+    i = a.n(s),
+    l = a(994277),
+    r = a(266479);
 
 function o(e) {
     let {
         step: t
-    } = e, n = t === s.i.AGE_GATE, i = t === s.i.CHOOSE_TEMPLATE || t === s.i.CREATION_INTENT, o = t === s.i.CUSTOMIZE_GUILD, c = t === s.i.CHANNEL_PROMPT || t === s.i.JOIN_GUILD, d = o || c, _ = i || d;
-    return (0, a.jsxs)("div", {
+    } = e, a = t === l.i.AGE_GATE, s = t === l.i.CHOOSE_TEMPLATE || t === l.i.CREATION_INTENT, o = t === l.i.CUSTOMIZE_GUILD, c = t === l.i.CHANNEL_PROMPT || t === l.i.JOIN_GUILD, _ = o || c, d = s || _;
+    return (0, n.jsxs)("div", {
         className: r.pz,
-        children: [(0, a.jsx)("div", {
-            className: l()(r.Qo, {
-                [r.WU]: n
+        children: [(0, n.jsx)("div", {
+            className: i()(r.Qo, {
+                [r.WU]: a
             })
-        }), (0, a.jsx)("div", {
-            className: l()(r.NF, {
-                [r.WU]: _
-            })
-        }), (0, a.jsx)("div", {
-            className: l()(r.MW, {
+        }), (0, n.jsx)("div", {
+            className: i()(r.NF, {
                 [r.WU]: d
             })
-        }), (0, a.jsx)("div", {
-            className: l()(r._e, {
+        }), (0, n.jsx)("div", {
+            className: i()(r.MW, {
                 [r.WU]: _
             })
-        }), (0, a.jsx)("div", {
-            className: l()(r.ss, {
-                [r.WU]: _
-            })
-        }), (0, a.jsx)("div", {
-            className: l()(r.mJ, {
-                [r.WU]: i
-            })
-        }), (0, a.jsx)("div", {
-            className: l()(r.Gx, {
-                [r.WU]: i
-            })
-        }), (0, a.jsx)("div", {
-            className: l()(r.p, {
+        }), (0, n.jsx)("div", {
+            className: i()(r._e, {
                 [r.WU]: d
             })
-        }), (0, a.jsx)("div", {
-            className: l()(r.hV, {
+        }), (0, n.jsx)("div", {
+            className: i()(r.ss, {
+                [r.WU]: d
+            })
+        }), (0, n.jsx)("div", {
+            className: i()(r.mJ, {
+                [r.WU]: s
+            })
+        }), (0, n.jsx)("div", {
+            className: i()(r.Gx, {
+                [r.WU]: s
+            })
+        }), (0, n.jsx)("div", {
+            className: i()(r.p, {
+                [r.WU]: _
+            })
+        }), (0, n.jsx)("div", {
+            className: i()(r.hV, {
                 [r.WU]: o
             })
-        }), (0, a.jsx)("div", {
-            className: l()(r.s3, {
+        }), (0, n.jsx)("div", {
+            className: i()(r.s3, {
                 [r.WU]: c
             })
-        }), (0, a.jsx)("div", {
-            className: l()(r.mq, {
-                [r.WU]: _
+        }), (0, n.jsx)("div", {
+            className: i()(r.mq, {
+                [r.WU]: d
             })
         })]
     })

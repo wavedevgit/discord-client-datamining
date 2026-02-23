@@ -1,30 +1,30 @@
 /** chunk id: 715764, original params: e,n,t (module,exports,require) **/
 t.d(n, {
-    EY: () => l,
-    Sv: () => a,
-    fz: () => c
+    EY: () => r,
+    Sv: () => s,
+    fz: () => a
 });
-var r = t(627968);
+var l = t(627968);
 
-function l(e) {
+function r(e) {
     let {
         children: n
     } = e;
     return n
 }
 
-function c(e) {
+function a(e) {
     let {
         siblings: n,
         index: t,
-        children: l
+        children: r
     } = e;
-    return (0, r.jsxs)("span", {
-        children: [l, t < n.length - 1 ? (0, r.jsx)("br", {}) : null]
+    return (0, l.jsxs)("span", {
+        children: [r, t < n.length - 1 ? (0, l.jsx)("br", {}) : null]
     })
 }
 
-function a() {
-    return (0, r.jsx)("p", {})
+function s() {
+    return (0, l.jsx)("p", {})
 }
 t(64700)

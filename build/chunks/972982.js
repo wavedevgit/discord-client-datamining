@@ -1,94 +1,79 @@
 /** chunk id: 972982, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => C
+    A: () => I
 });
-var r = n(627968),
-    i = n(64700),
-    l = n(284009),
-    s = n.n(l),
-    a = n(311907),
+var i = n(627968),
+    s = n(64700),
+    a = n(284009),
+    r = n.n(a),
+    l = n(311907),
     o = n(397927),
     c = n(195043),
     d = n(359990),
     u = n(961350),
     _ = n(670492),
-    p = n(287809),
-    m = n(464477),
+    m = n(287809),
+    A = n(464477),
     g = n(709913),
-    A = n(455611),
-    f = n(858526),
-    b = n(309198),
-    h = n(978551),
-    E = n(100817),
-    O = n(531525);
-class x extends i.PureComponent {
+    h = n(455611),
+    x = n(858526),
+    p = n(309198),
+    E = n(978551),
+    C = n(100817),
+    T = n(531525);
+class S extends s.PureComponent {
     renderEnabled() {
         let {
             backupCodes: e,
             hasTOTPEnabled: t,
             currentUser: n,
-            togglingSMS: i
+            togglingSMS: s
         } = this.props;
-        return (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsx)(g.A, {
+        return (0, i.jsxs)(i.Fragment, {
+            children: [(0, i.jsx)(g.A, {
                 backupCodes: e,
                 currentUser: n,
                 hasTOTPEnabled: t
-            }), e.length > 0 && (0, r.jsxs)(o.BJc, {
+            }), e.length > 0 && (0, i.jsxs)(o.BJc, {
                 gap: 16,
-                children: [(0, r.jsx)(A.A, {
+                children: [(0, i.jsx)(h.A, {
                     backupCodes: e
-                }), (0, r.jsx)(o.cGx, {})]
-            }), t && (0, r.jsx)(c.x, {
-                setting: O.H.ACCOUNT_SMS_BACKUP,
-                children: (0, r.jsx)(b.A, {
+                }), (0, i.jsx)(o.cGx, {})]
+            }), t && (0, i.jsx)(c.x, {
+                setting: T.H.ACCOUNT_SMS_BACKUP,
+                children: (0, i.jsx)(p.A, {
                     currentUser: n,
-                    togglingSMS: i
+                    togglingSMS: s
                 })
-            }), (0, r.jsx)(c.x, {
-                setting: O.H.ACCOUNT_SECURITY_KEYS,
-                children: (0, r.jsx)(d.A, {})
+            }), (0, i.jsx)(c.x, {
+                setting: T.H.ACCOUNT_SECURITY_KEYS,
+                children: (0, i.jsx)(d.A, {})
             })]
         })
     }
     renderDisabled() {
-        return (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsx)(f.A, {}), (0, r.jsx)(d.A, {})]
+        return (0, i.jsxs)(i.Fragment, {
+            children: [(0, i.jsx)(x.A, {}), (0, i.jsx)(d.A, {})]
         })
     }
     render() {
         let {
             currentUser: e
         } = this.props;
-        return m.K7 ? e.verified ? e.mfaEnabled ? this.renderEnabled() : this.renderDisabled() : (0, r.jsx)(E.A, {}) : (0, r.jsx)(h.A, {})
+        return A.K7 ? e.verified ? e.mfaEnabled ? this.renderEnabled() : this.renderDisabled() : (0, i.jsx)(C.A, {}) : (0, i.jsx)(E.A, {})
     }
 }
 
-function C(e) {
-    let t = (0, a.bG)([p.default], () => p.default.getCurrentUser());
-    s()(null != t, "TwoFactorAuth: currentUser cannot be undefined");
-    let n = (0, a.cf)([_.A, u.default], () => ({
+function I(e) {
+    let t = (0, l.bG)([m.default], () => m.default.getCurrentUser());
+    r()(null != t, "TwoFactorAuth: currentUser cannot be undefined");
+    let n = (0, l.cf)([_.A, u.default], () => ({
         togglingSMS: _.A.togglingSMS,
         hasTOTPEnabled: u.default.hasTOTPEnabled()
     }));
-    return (0, r.jsx)(x, function(e) {
-        for (var t = 1; t < arguments.length; t++) {
-            var n = null != arguments[t] ? arguments[t] : {},
-                r = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                return Object.getOwnPropertyDescriptor(n, e).enumerable
-            }))), r.forEach(function(t) {
-                var r;
-                r = n[t], t in e ? Object.defineProperty(e, t, {
-                    value: r,
-                    enumerable: !0,
-                    configurable: !0,
-                    writable: !0
-                }) : e[t] = r
-            })
-        }
-        return e
-    }({
-        currentUser: t
-    }, n, e))
+    return (0, i.jsx)(S, {
+        currentUser: t,
+        ...n,
+        ...e
+    })
 }

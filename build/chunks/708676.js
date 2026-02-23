@@ -3,23 +3,23 @@ n.d(t, {
     A: () => s,
     J: () => a
 });
-var r = n(989349),
-    i = n.n(r),
-    l = n(985018);
+var i = n(989349),
+    l = n.n(i),
+    r = n(985018);
 
 function a(e) {
-    let t = i()();
+    let t = l()();
     if (e <= t) return;
     let n = e.diff(t, "days");
-    if (n > 1) return l.intl.formatToPlainString(l.t.dex68a, {
+    if (n > 1) return r.intl.formatToPlainString(r.t.dex68a, {
         days: n
     });
-    let r = e.diff(t, "hours");
-    if (r > 1) return l.intl.formatToPlainString(l.t.BWqf0c, {
-        hours: r
+    let i = e.diff(t, "hours");
+    if (i > 1) return r.intl.formatToPlainString(r.t.BWqf0c, {
+        hours: i
     });
     let a = e.diff(t, "minutes");
-    return l.intl.formatToPlainString(l.t["3SLXAz"], {
+    return r.intl.formatToPlainString(r.t["3SLXAz"], {
         minutes: a
     })
 }

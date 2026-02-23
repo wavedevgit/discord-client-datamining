@@ -1,53 +1,52 @@
 /** chunk id: 620434, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    c: () => c
-}), n(896048);
-var r = n(64700),
-    i = n(311907),
-    a = n(688810),
-    o = n(622543),
-    s = n(808247),
-    l = n(594832);
+    c: () => u
+});
+var a = n(64700),
+    s = n(311907),
+    i = n(688810),
+    r = n(622543),
+    l = n(808247),
+    o = n(594832);
 
-function c(e) {
+function u(e) {
     let {
         currentUser: t,
         skuId: n,
-        onAddSuccess: c,
-        onRemoveSuccess: u,
-        onError: d
+        onAddSuccess: u,
+        onRemoveSuccess: d,
+        onError: c
     } = e, {
-        analyticsLocations: f
-    } = (0, a.Ay)(), p = (0, i.bG)([o.A], () => null != t ? o.A.getFirstWishlistId(t.id) : null), _ = (0, l.rJ)(p, n), [h, m] = r.useState(null), [g, E] = r.useState(!1), y = null !== h ? h : _;
-    r.useEffect(() => {
-        m(null), E(!1)
+        analyticsLocations: _
+    } = (0, i.Ay)(), h = (0, s.bG)([r.A], () => null != t ? r.A.getFirstWishlistId(t.id) : null), m = (0, o.rJ)(h, n), [T, p] = a.useState(null), [A, f] = a.useState(!1), O = null !== T ? T : m;
+    a.useEffect(() => {
+        p(null), f(!1)
     }, [n]);
-    let b = r.useCallback(async () => {
-        if (null != t && !g)
-            if (E(!0), y && null != p) {
-                m(!1);
+    let E = a.useCallback(async () => {
+        if (null != t && !A)
+            if (f(!0), O && null != h) {
+                p(!1);
                 try {
-                    await s.A.removeSkuFromWishlist(p, n, f), null == u || u()
+                    await l.A.removeSkuFromWishlist(h, n, _), d?.()
                 } catch (e) {
-                    null == d || d(e)
+                    c?.(e)
                 } finally {
-                    m(null), E(!1)
+                    p(null), f(!1)
                 }
             } else {
-                m(!0);
+                p(!0);
                 try {
-                    await s.A.addSkuToWishlist(n, f), null == c || c()
+                    await l.A.addSkuToWishlist(n, _), u?.()
                 } catch (e) {
-                    null == d || d(e)
+                    c?.(e)
                 } finally {
-                    m(null), E(!1)
+                    p(null), f(!1)
                 }
             }
-    }, [t, g, y, p, n, f, c, u, d]);
+    }, [t, A, O, h, n, _, u, d, c]);
     return {
-        isWishlisted: y,
-        isBusy: g,
-        handleToggle: b
+        isWishlisted: O,
+        isBusy: A,
+        handleToggle: E
     }
 }

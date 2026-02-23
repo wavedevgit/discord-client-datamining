@@ -1,88 +1,71 @@
-/** chunk id: 437290, original params: e,t,r (module,exports,require) **/
-r.d(t, {
+/** chunk id: 437290, original params: e,t,s (module,exports,require) **/
+s.d(t, {
     A: () => u
 });
-var n = r(627968),
-    a = r(64700),
-    s = r(503698),
-    l = r.n(s),
-    c = r(990078),
-    i = r(397927),
-    o = r(854627),
-    d = r(429974);
+var a = s(627968),
+    i = s(64700),
+    l = s(503698),
+    r = s.n(l),
+    n = s(990078),
+    c = s(397927),
+    d = s(854627),
+    o = s(429974);
 
 function u(e) {
-    var t;
     let {
-        user: r,
+        user: t,
         checked: s,
-        onChange: u,
-        disabled: b,
-        tooltipConfig: x
-    } = e, m = a.useRef(null), {
-        avatarSrc: h,
-        eventHandlers: _
-    } = (0, o.A)({
-        userId: null == r ? void 0 : r.id,
-        size: i._3J.SIZE_32
-    }), f = null != (t = r.globalName) ? t : r.username;
-    return (0, n.jsx)(c.m, {
-        text: (null == x ? void 0 : x.isActive(r, b)) ? x.text(r) : null,
+        onChange: l,
+        disabled: u,
+        tooltipConfig: m
+    } = e, x = i.useRef(null), {
+        avatarSrc: _,
+        eventHandlers: f
+    } = (0, d.A)({
+        userId: t?.id,
+        size: c._3J.SIZE_32
+    }), h = t.globalName ?? t.username;
+    return (0, a.jsx)(n.m, {
+        text: m?.isActive(t, u) ? m.text(t) : null,
         position: "top",
-        anchorRef: m,
+        anchorRef: x,
         asContainer: !0,
-        children: (0, n.jsxs)(i.DUT, {
-            className: l()(d.kL, {
-                [d.vk]: !b
+        children: (0, a.jsxs)(c.DUT, {
+            className: r()(o.kL, {
+                [o.vk]: !u
             }),
             onClick: () => {
-                b || u(r, !s)
+                u || l(t, !s)
             },
-            children: [(0, n.jsx)("div", {
-                className: d.dj,
-                children: (0, n.jsx)(i.euF, function(e) {
-                    for (var t = 1; t < arguments.length; t++) {
-                        var r = null != arguments[t] ? arguments[t] : {},
-                            n = Object.keys(r);
-                        "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-                            return Object.getOwnPropertyDescriptor(r, e).enumerable
-                        }))), n.forEach(function(t) {
-                            var n;
-                            n = r[t], t in e ? Object.defineProperty(e, t, {
-                                value: n,
-                                enumerable: !0,
-                                configurable: !0,
-                                writable: !0
-                            }) : e[t] = n
-                        })
-                    }
-                    return e
-                }({
-                    className: l()({
-                        [d.SU]: b
+            children: [(0, a.jsx)("div", {
+                className: o.dj,
+                children: (0, a.jsx)(c.euF, {
+                    className: r()({
+                        [o.SU]: u
                     }),
-                    src: h,
-                    "aria-label": f,
-                    size: i._3J.SIZE_32
-                }, _))
-            }), (0, n.jsxs)("div", {
-                className: d.QV,
-                children: [(0, n.jsx)(i.Text, {
-                    className: d.nT,
-                    color: b ? "text-muted" : "text-default",
+                    src: _,
+                    "aria-label": h,
+                    size: c._3J.SIZE_32,
+                    ...f
+                })
+            }), (0, a.jsxs)("div", {
+                className: o.QV,
+                children: [(0, a.jsx)(c.Text, {
+                    className: o.nT,
+                    color: u ? "text-muted" : "text-default",
                     variant: "text-md/semibold",
-                    children: f
-                }), (0, n.jsx)(i.Text, {
-                    className: d.nT,
-                    color: b ? "text-muted" : "text-subtle",
+                    children: h
+                }), (0, a.jsx)(c.Text, {
+                    className: o.nT,
+                    color: u ? "text-muted" : "text-subtle",
                     variant: "text-xs/normal",
-                    children: r.username
+                    children: t.username
                 })]
-            }), (0, n.jsx)("div", {
-                ref: m,
-                className: d.kv,
-                children: (0, n.jsx)(i.Checkbox, {
-                    disabled: b,
+            }), (0, a.jsx)("div", {
+                ref: x,
+                className: o.kv,
+                children: (0, a.jsx)(c.Checkbox, {
+                    disabled: u,
                     checked: s,
                     label: ""
                 })

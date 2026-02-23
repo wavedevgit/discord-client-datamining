@@ -1,73 +1,57 @@
 /** chunk id: 955874, original params: e,t,a (module,exports,require) **/
 a.d(t, {
-    Y: () => N
+    Y: () => A
 });
-var r = a(627968),
-    s = a(64700),
-    l = a(503698),
-    n = a.n(l),
-    i = a(409291),
+var s = a(627968),
+    l = a(64700),
+    i = a(503698),
+    r = a.n(i),
+    n = a(409291),
     o = a(829869),
     c = a(280617),
     d = a(855522),
-    u = a(730555);
-let _ = null;
-class N extends s.PureComponent {
+    _ = a(730555);
+let N = null;
+class A extends l.PureComponent {
+    constructor(e) {
+        super(e), null != e.locale && d.A.setLocale(e.locale), N = t => (0, s.jsx)(n.A, {
+            track: e.track,
+            trackOutboundLink: e.trackOutboundLink,
+            ...t
+        })
+    }
     render() {
         let {
             token: e,
             className: t,
             onChangeLocale: a,
-            mainContentId: l,
-            mobileClassName: i,
+            mainContentId: i,
+            mobileClassName: n,
             avoidRouter: d,
-            authRedirectTo: N,
-            openNavAriaLabel: A,
-            hideNavAriaLabel: p,
-            skipToContentLabel: h
+            authRedirectTo: A,
+            openNavAriaLabel: u,
+            hideNavAriaLabel: I,
+            skipToContentLabel: k
         } = this.props;
-        return null == _ ? null : (0, r.jsxs)(s.Fragment, {
-            children: [(0, r.jsx)(o.Q, {
-                className: n()(u.q, t),
-                TrackClick: _,
+        return null == N ? null : (0, s.jsxs)(l.Fragment, {
+            children: [(0, s.jsx)(o.Q, {
+                className: r()(_.q, t),
+                TrackClick: N,
                 token: e,
                 avoidRouter: d,
-                authRedirectTo: N,
+                authRedirectTo: A,
                 onChangeLocale: a,
-                mainContentId: l,
-                skipToContentLabel: h
-            }), (0, r.jsx)(c.i, {
-                className: n()(u.O, i),
+                mainContentId: i,
+                skipToContentLabel: k
+            }), (0, s.jsx)(c.i, {
+                className: r()(_.O, n),
                 token: e,
                 avoidRouter: d,
-                TrackClick: _,
+                TrackClick: N,
                 onChangeLocale: a,
-                openNavAriaLabel: A,
-                hideNavAriaLabel: p
+                openNavAriaLabel: u,
+                hideNavAriaLabel: I
             })]
         })
-    }
-    constructor(e) {
-        super(e), null != e.locale && d.A.setLocale(e.locale), _ = t => (0, r.jsx)(i.A, function(e) {
-            for (var t = 1; t < arguments.length; t++) {
-                var a = null != arguments[t] ? arguments[t] : {},
-                    r = Object.keys(a);
-                "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(a).filter(function(e) {
-                    return Object.getOwnPropertyDescriptor(a, e).enumerable
-                }))), r.forEach(function(t) {
-                    var r;
-                    r = a[t], t in e ? Object.defineProperty(e, t, {
-                        value: r,
-                        enumerable: !0,
-                        configurable: !0,
-                        writable: !0
-                    }) : e[t] = r
-                })
-            }
-            return e
-        }({
-            track: e.track,
-            trackOutboundLink: e.trackOutboundLink
-        }, t))
     }
 }

@@ -1,55 +1,43 @@
 /** chunk id: 462675, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => m
+    A: () => h
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var l = n(793574),
-    i = n(688810),
-    s = n(915618),
+var s = n(793574),
+    l = n(688810),
+    r = n(915618),
     a = n(857253),
     o = n(670470),
-    c = n(502633),
-    u = n(430452),
+    c = n(430452),
     d = n(699022),
-    p = n(680949),
-    h = n(319610),
-    g = n(786515),
-    f = n(878559);
+    u = n(878559);
 
-function m(e) {
+function h(e) {
     let {
         channel: t,
-        hasActiveStream: n,
-        showRightDivider: m = !1
+        showRightDivider: n = !1
     } = e, {
-        analyticsLocations: b
-    } = (0, i.Ay)(l.A.VOICE_CONTROL_TRAY), A = (0, a.A)(), {
-        isSharedCanvasEnabled: y
-    } = c.A.useExperiment({
-        guildId: null == t ? void 0 : t.guild_id,
-        location: "b7309a_1"
-    }), {
-        enableViewerClipping: O
+        analyticsLocations: h
+    } = (0, l.Ay)(s.A.VOICE_CONTROL_TRAY), A = (0, a.A)(), {
+        enableViewerClipping: p
     } = o.A.useExperiment({
         location: "VoiceEffectsActionBar"
     }, {
         autoTrackExposure: !1
-    }), j = (0, s.A)(u.A);
+    }), g = (0, r.A)(c.Ay);
     if (null == t || null != A) return null;
-    let x = O && j,
-        _ = y && n;
-    return x || _ ? (0, r.jsxs)(i.f5, {
-        value: b,
-        children: [(0, r.jsxs)("div", {
-            className: f.w,
-            children: [x && (0, r.jsx)(d.A, {
+    let m = p && g;
+    return m ? (0, i.jsxs)(l.f5, {
+        value: h,
+        children: [(0, i.jsx)("div", {
+            className: u.w,
+            children: m && (0, i.jsx)(d.A, {
                 channel: t
-            }), _ && (0, r.jsx)(p.A, {}), _ && (0, r.jsx)(h.A, {
-                channel: t
-            }), _ && (0, r.jsx)(g.A, {})]
-        }), m && (0, r.jsx)("div", {
-            className: f.y
+            })
+        }), n && (0, i.jsx)("div", {
+            className: u.y
         })]
     }) : null
 }

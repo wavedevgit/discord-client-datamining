@@ -1,105 +1,74 @@
 /** chunk id: 685049, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    d: () => f,
-    o: () => d
+    d: () => g,
+    o: () => u
 });
-var r = n(627968),
+var i = n(627968),
     l = n(409626),
-    i = n(692969),
-    a = n(562153),
-    o = n(415043),
-    s = n(617086),
+    a = n(692969),
+    s = n(562153),
+    r = n(415043),
+    o = n(617086),
     c = n(985018),
-    u = n(418061);
+    d = n(418061);
 
-function d(e) {
+function u(e) {
     let {
-        applicationId: t
-    } = e, n = function(e, t) {
-        if (null == e) return {};
-        var n, r, l, i = {};
-        if ("u" > typeof Reflect && Reflect.ownKeys) {
-            for (l = 0, n = Reflect.ownKeys(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
-            return i
-        }
-        if (i = function(e, t) {
-                if (null == e) return {};
-                var n, r, l = {},
-                    i = Object.getOwnPropertyNames(e);
-                for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n]);
-                return l
-            }(e, t), Object.getOwnPropertySymbols)
-            for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
-        return i
-    }(e, ["applicationId"]), l = (0, s.A)(t);
-    return l.length > 0 ? (0, r.jsx)(o.A, function(e) {
-        for (var t = 1; t < arguments.length; t++) {
-            var n = null != arguments[t] ? arguments[t] : {},
-                r = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                return Object.getOwnPropertyDescriptor(n, e).enumerable
-            }))), r.forEach(function(t) {
-                var r;
-                r = n[t], t in e ? Object.defineProperty(e, t, {
-                    value: r,
-                    enumerable: !0,
-                    configurable: !0,
-                    writable: !0
-                }) : e[t] = r
-            })
-        }
-        return e
-    }({
+        applicationId: t,
+        ...n
+    } = e, l = (0, o.A)(t);
+    return l.length > 0 ? (0, i.jsx)(r.A, {
         label: c.intl.formatToPlainString(c.t.ujhJdG, {
             numFriends: l.length
         }),
         users: l,
-        maxUsers: 4
-    }, n)) : null
+        maxUsers: 4,
+        ...n
+    }) : null
 }
 
-function f(e) {
-    var t, n, d;
-    let f, {
-            userId: p,
-            applicationId: g,
-            guildId: m,
-            channelId: b,
-            className: y
+function g(e) {
+    var t, n, u;
+    let g, {
+            userId: m,
+            applicationId: x,
+            guildId: f,
+            channelId: p,
+            className: h
         } = e,
-        O = (0, s.A)(g),
-        j = O.length > 0,
-        h = (t = O, n = m, d = b, f = t.slice(0, 3).map(e => a.Ay.getName(n, d, e)), 1 === t.length ? c.intl.formatToPlainString(c.t.FURqTU, {
-            name: f[0]
+        _ = (0, o.A)(x),
+        A = _.length > 0,
+        I = (t = _, n = f, u = p, g = t.slice(0, 3).map(e => s.Ay.getName(n, u, e)), 1 === t.length ? c.intl.formatToPlainString(c.t.FURqTU, {
+            name: g[0]
         }) : 2 === t.length ? c.intl.formatToPlainString(c.t["08Usu/"], {
-            name1: f[0],
-            name2: f[1]
+            name1: g[0],
+            name2: g[1]
         }) : 3 === t.length ? c.intl.formatToPlainString(c.t.NTYHag, {
-            name1: f[0],
-            name2: f[1],
-            name3: f[2]
+            name1: g[0],
+            name2: g[1],
+            name3: g[2]
         }) : c.intl.formatToPlainString(c.t["i/5oAn"], {
-            name1: f[0],
-            name2: f[1],
-            name3: f[2],
+            name1: g[0],
+            name2: g[1],
+            name3: g[2],
             numPeople: t.length - 3
         })),
-        x = (0, i.A)({
+        j = (0, a.A)({
             location: "SocialProofButton",
-            applicationId: g,
+            applicationId: x,
             source: l.Ob.UserProfile,
-            sourceUserId: p,
+            sourceUserId: m,
             trackEntryPointImpression: !0
         });
-    return j && null != x ? (0, r.jsx)(o.H, {
-        users: O,
-        label: h,
-        className: y,
-        onClick: x,
-        guildId: m,
-        channelId: b,
-        "aria-label": h,
+    return A && null != j ? (0, i.jsx)(r.H, {
+        users: _,
+        label: I,
+        className: h,
+        onClick: j,
+        guildId: f,
+        channelId: p,
+        "aria-label": I,
         overflowCountColor: "text-strong",
-        overflowCountClassName: u.L
+        overflowCountClassName: d.L
     }) : null
 }

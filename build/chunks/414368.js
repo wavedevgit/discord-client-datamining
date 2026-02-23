@@ -2,27 +2,28 @@
 "use strict";
 n.d(t, {
     CV: () => d,
-    IZ: () => m,
-    JT: () => c,
-    PL: () => s,
-    iX: () => h,
-    qf: () => o,
-    tm: () => u
+    IZ: () => u,
+    JT: () => o,
+    PL: () => a,
+    iX: () => m,
+    qf: () => r,
+    tm: () => c
 });
-var r, l = n(284009),
-    i = n.n(l);
-
-function a(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-var s = ((r = {})[r.THREE_BY_TWO = 2 / 3] = "THREE_BY_TWO", r[r.SIXTEEN_BY_NINE = 9 / 16] = "SIXTEEN_BY_NINE", r);
-let o = 12;
-class c {
+var l, i = n(284009),
+    s = n.n(i),
+    a = ((l = {})[l.THREE_BY_TWO = 2 / 3] = "THREE_BY_TWO", l[l.SIXTEEN_BY_NINE = 9 / 16] = "SIXTEEN_BY_NINE", l);
+let r = 12;
+class o {
+    minWidth;
+    maxWidth;
+    gap;
+    constructor({
+        minWidth: e,
+        maxWidth: t,
+        gap: n
+    }) {
+        s()(e < t, "minWidth needs to be smaller than maxWidth"), this.minWidth = e, this.maxWidth = t, this.gap = n
+    }
     getWidth(e) {
         return this.getRenderOptions(e).columnWidth
     }
@@ -33,32 +34,25 @@ class c {
         };
         let t = e / this.maxWidth,
             n = Math.max(Math.floor(t + (e / this.minWidth - t) / 2), 1),
-            r = this.gap * (n - 1);
+            l = this.gap * (n - 1);
         return {
             columns: n,
-            columnWidth: (e - r) / n
+            columnWidth: (e - l) / n
         }
-    }
-    constructor({
-        minWidth: e,
-        maxWidth: t,
-        gap: n
-    }) {
-        a(this, "minWidth", void 0), a(this, "maxWidth", void 0), a(this, "gap", void 0), i()(e < t, "minWidth needs to be smaller than maxWidth"), this.minWidth = e, this.maxWidth = t, this.gap = n
     }
 }
 let d = {
         columns: 1,
         columnWidth: 450
     },
-    u = function(e) {
-        let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : s.THREE_BY_TWO,
+    c = function(e) {
+        let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : a.THREE_BY_TWO,
             n = e - 2,
-            r = Math.ceil(n * t);
-        return [n, r]
+            l = Math.ceil(n * t);
+        return [n, l]
     },
-    m = 12,
-    h = function(e) {
-        let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : s.THREE_BY_TWO;
-        return 60 + u(e - 2 * m, t)[1] + 24 + 3 * o
+    u = 12,
+    m = function(e) {
+        let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : a.THREE_BY_TWO;
+        return 60 + c(e - 2 * u, t)[1] + 24 + 3 * r
     }

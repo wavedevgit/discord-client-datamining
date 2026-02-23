@@ -1,13 +1,13 @@
 /** chunk id: 780333, original params: t,e,n (module,exports,require) **/
 n.d(e, {
-    $: () => s,
-    B: () => l
+    $: () => l,
+    B: () => s
 });
 var a = n(110259),
     r = n(499785),
     i = n(652215);
 
-function l() {
+function s() {
     let t = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
     return r.A.put({
         url: i.Rsh.USER_EMAIL,
@@ -20,7 +20,7 @@ function l() {
         rejectWithError: !1
     })
 }
-async function s(t) {
+async function l(t) {
     return (await r.A.post({
         url: i.Rsh.USER_EMAIL_VERIFY_CODE,
         body: {

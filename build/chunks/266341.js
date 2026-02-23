@@ -1,6 +1,5 @@
-/** chunk id: 266341, original params: e,t,n (module,exports,require) **/
-"use strict";
-var r = {
+/** chunk id: 266341, original params: e,_,r (module,exports,require) **/
+r.r(e.exports = {
     grid: "grid__1b670",
     columns1: "columns1__1b670",
     columns2: "columns2__1b670",
@@ -21,5 +20,4 @@ var r = {
     gridItemRows4: "gridItemRows4__1b670",
     gridItemRows5: "gridItemRows5__1b670",
     gridItemRows6: "gridItemRows6__1b670"
-};
-n.r(e.exports = r)
+})

@@ -1,22 +1,21 @@
-/** chunk id: 261225, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    A: () => l,
-    M: () => s
+/** chunk id: 261225, original params: e,t,r (module,exports,require) **/
+r.d(t, {
+    A: () => o,
+    M: () => n
 });
-var r = n(627968);
-n(64700);
-var i = n(503698),
-    a = n.n(i),
-    o = n(266341);
-let s = 6,
-    l = e => {
+var l = r(627968);
+r(64700);
+var d = r(503698),
+    c = r.n(d),
+    a = r(266341);
+let n = 6,
+    o = e => {
         let {
             columns: t = 3,
-            children: n
-        } = e, i = Math.max(1, Math.min(s, Math.floor(t)));
-        return (0, r.jsx)("div", {
-            className: a()(o.grid, o["columns".concat(i)]),
-            children: n
+            children: r
+        } = e, d = Math.max(1, Math.min(n, Math.floor(t)));
+        return (0, l.jsx)("div", {
+            className: c()(a.grid, a[`columns${d}`]),
+            children: r
         })
     }

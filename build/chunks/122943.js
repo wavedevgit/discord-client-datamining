@@ -1,99 +1,99 @@
 /** chunk id: 122943, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => y
+    A: () => T
 });
-var r = n(627968),
-    i = n(64700),
+var i = n(627968),
+    r = n(64700),
     l = n(503698),
     a = n.n(l),
     s = n(311907),
     o = n(397927),
-    c = n(863439),
-    u = n(465364),
-    d = n(448368),
-    p = n(302031),
+    d = n(863439),
+    c = n(465364),
+    u = n(448368),
+    A = n(302031),
     h = n(253932),
-    f = n(576705),
-    g = n(994500),
-    m = n(978914),
-    A = n(652215),
-    _ = n(838541),
-    b = n(985018),
-    E = n(536791),
-    O = n(206314);
-let y = i.memo(function(e) {
+    _ = n(576705),
+    m = n(994500),
+    p = n(978914),
+    g = n(652215),
+    E = n(838541),
+    I = n(985018),
+    f = n(536791),
+    C = n(206314);
+let T = r.memo(function(e) {
     let {
         channel: t
     } = e, {
         loaded: n,
         error: l,
-        message: y
-    } = (0, m.I)(t), {
-        isBlocked: I,
-        isIgnored: v
-    } = (0, s.cf)([g.A], () => ({
-        isBlocked: null != y && g.A.isBlockedForMessage(y),
-        isIgnored: null != y && g.A.isIgnoredForMessage(y)
-    }), [y]), S = (0, s.bG)([f.A], () => f.A.can(A.xBc.MANAGE_MESSAGES, t)), C = h.gs.useSetting(), {
-        content: N
-    } = i.useMemo(() => (null == y ? void 0 : y.content) != null && "" !== y.content ? (0, u.Ay)(y, {
+        message: T
+    } = (0, p.I)(t), {
+        isBlocked: N,
+        isIgnored: S
+    } = (0, s.cf)([m.A], () => ({
+        isBlocked: null != T && m.A.isBlockedForMessage(T),
+        isIgnored: null != T && m.A.isIgnoredForMessage(T)
+    }), [T]), x = (0, s.bG)([_.A], () => _.A.can(g.xBc.MANAGE_MESSAGES, t)), v = h.gs.useSetting(), {
+        content: y
+    } = r.useMemo(() => T?.content != null && "" !== T.content ? (0, c.Ay)(T, {
         formatInline: !0,
         noStyleAndInteraction: !0
     }) : {
         content: null
-    }, [y]), T = null;
-    if (l) T = (0, r.jsx)(o.Text, {
-        className: E.G4,
+    }, [T]), b = null;
+    if (l) b = (0, i.jsx)(o.Text, {
+        className: f.G4,
         variant: "text-sm/normal",
         color: "text-muted",
-        children: b.intl.string(b.t.BZHld2)
+        children: I.intl.string(I.t.BZHld2)
     });
     else if (n)
-        if (null != y && I) T = (0, r.jsx)(o.Text, {
-            className: E.G4,
+        if (null != T && N) b = (0, i.jsx)(o.Text, {
+            className: f.G4,
             variant: "text-sm/normal",
             color: "text-muted",
-            children: b.intl.string(b.t["WPe+xL"])
+            children: I.intl.string(I.t["WPe+xL"])
         });
-        else if (null != y && v) T = (0, r.jsx)(o.Text, {
-        className: E.G4,
+        else if (null != T && S) b = (0, i.jsx)(o.Text, {
+        className: f.G4,
         variant: "text-sm/normal",
         color: "text-muted",
-        children: b.intl.string(b.t.uxrh1O)
+        children: I.intl.string(I.t.uxrh1O)
     });
-    else if (null != y) {
+    else if (null != T) {
         let {
             contentPlaceholder: e,
             renderedContent: t
-        } = (0, d.o)(y, N, I, v, a()(E.BK, O.tZ), {
-            leadingIconClass: E.AF,
-            trailingIconClass: E.AF,
-            iconSize: _.eJ
+        } = (0, u.o)(T, y, N, S, a()(f.BK, C.tZ), {
+            leadingIconClass: f.AF,
+            trailingIconClass: f.AF,
+            iconSize: E.eJ
         });
-        T = null != t ? (0, r.jsx)(o.Text, {
+        b = null != t ? (0, i.jsx)(o.Text, {
             variant: "text-sm/normal",
             color: "text-muted",
-            className: E.BK,
+            className: f.BK,
             children: t
-        }) : (0, r.jsx)(o.Text, {
+        }) : (0, i.jsx)(o.Text, {
             tag: "span",
             variant: "text-sm/normal",
             color: "text-muted",
-            className: E.G4,
+            className: f.G4,
             children: e
         })
-    } else T = (0, r.jsx)(o.Text, {
-        className: E.G4,
+    } else b = (0, i.jsx)(o.Text, {
+        className: f.G4,
         variant: "text-sm/normal",
         color: "text-muted",
-        children: b.intl.string(b.t["0KfDxM"])
+        children: I.intl.string(I.t["0KfDxM"])
     });
-    else T = null;
-    return (0, r.jsx)(p.Bs.Provider, {
-        value: (0, c.A)(C, S),
-        children: (0, r.jsx)(o.M1G, {
-            className: E.JY,
-            children: T
+    else b = null;
+    return (0, i.jsx)(A.Bs.Provider, {
+        value: (0, d.A)(v, x),
+        children: (0, i.jsx)(o.M1G, {
+            className: f.JY,
+            children: b
         })
     })
 })

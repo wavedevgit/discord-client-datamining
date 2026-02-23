@@ -1,18 +1,18 @@
-/** chunk id: 288104, original params: t,i,n (module,exports,require) **/
-n.d(i, {
+/** chunk id: 288104, original params: t,i,e (module,exports,require) **/
+e.d(i, {
     A: () => S,
     b: () => _
 });
-var e = n(627968);
-n(64700);
-var r = n(311907),
-    l = n(397927),
-    s = n(832712),
-    a = n(718194),
-    o = n(543465),
-    d = n(477427),
-    g = n(652215),
-    c = n(985018);
+var n = e(627968);
+e(64700);
+var r = e(311907),
+    l = e(397927),
+    s = e(832712),
+    a = e(718194),
+    o = e(543465),
+    d = e(477427),
+    g = e(652215),
+    c = e(985018);
 
 function u(t) {
     let i = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
@@ -61,38 +61,38 @@ function u(t) {
 
 function _(t) {
     let i = t.getGuildId(),
-        n = t.id,
+        e = t.id,
         _ = (0, r.bG)([o.Ay], () => {
-            let n = g.orn.NULL;
-            return null != t.parent_id && (n = o.Ay.getChannelMessageNotifications(i, t.parent_id)), n !== g.orn.NULL ? n : o.Ay.getMessageNotifications(i)
+            let e = g.orn.NULL;
+            return null != t.parent_id && (e = o.Ay.getChannelMessageNotifications(i, t.parent_id)), e !== g.orn.NULL ? e : o.Ay.getMessageNotifications(i)
         }, [i, t.parent_id]),
         S = (0, r.bG)([o.Ay], () => o.Ay.getNewForumThreadsCreated(t)),
-        A = (0, r.bG)([o.Ay], () => o.Ay.getChannelOverrides(i)[n], [i, n]),
+        A = (0, r.bG)([o.Ay], () => o.Ay.getChannelOverrides(i)[e], [i, e]),
         N = null == A ? g.orn.NULL : A.message_notifications,
         E = (0, a.YK)(t),
         h = u(t, E);
-    return null == h ? null : (0, e.jsxs)(e.Fragment, {
-        children: [t.isForumLikeChannel() ? (0, e.jsxs)(e.Fragment, {
-            children: [(0, e.jsx)(l.sLh, {
+    return null == h ? null : (0, n.jsxs)(n.Fragment, {
+        children: [t.isForumLikeChannel() ? (0, n.jsxs)(n.Fragment, {
+            children: [(0, n.jsx)(l.sLh, {
                 id: "new-forum-threads-created",
                 label: c.intl.string(c.t.Rkgjph),
                 checked: S,
                 action: () => s.A.setForumThreadsCreated(t, !S)
-            }), (0, e.jsx)(l.bXX, {})]
+            }), (0, n.jsx)(l.bXX, {})]
         }) : null, h.map(r => {
             let {
                 setting: a,
                 label: o
             } = r;
-            return null != o && (0, e.jsx)(l.iDA, {
+            return null != o && (0, n.jsx)(l.iDA, {
                 group: "channel-notifications",
-                id: "".concat(a),
+                id: `${a}`,
                 label: o,
                 subtext: a === g.orn.NULL ? function(t, i) {
-                    let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
+                    let e = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
                     switch (t) {
                         case g.orn.ALL_MESSAGES:
-                            return i.type === g.rbe.GUILD_VOICE && n ? c.intl.string(c.t["9sGJkt"]) : c.intl.string(c.t["n/bTaY"]);
+                            return i.type === g.rbe.GUILD_VOICE && e ? c.intl.string(c.t["9sGJkt"]) : c.intl.string(c.t["n/bTaY"]);
                         case g.orn.ONLY_MENTIONS:
                             return c.intl.format(c.t.L2hmYy, {});
                         case g.orn.NO_MESSAGES:
@@ -103,7 +103,7 @@ function _(t) {
                     }
                 }(_, t, E) : void 0,
                 action: () => {
-                    null != i && s.A.updateChannelOverrideSettings(i, n, {
+                    null != i && s.A.updateChannelOverrideSettings(i, e, {
                         message_notifications: a
                     }, d.G_.notifications(a))
                 },
@@ -114,22 +114,21 @@ function _(t) {
 }
 
 function S(t) {
-    var i, n;
-    let s = _(t),
-        d = (0, r.bG)([o.Ay], () => o.Ay.resolvedMessageNotifications(t), [t]),
-        S = (0, r.bG)([o.Ay], () => o.Ay.getChannelOverrides(t.guild_id)[t.id], [t.guild_id, t.id]),
-        A = null == S ? g.orn.NULL : S.message_notifications,
-        N = (0, a.YK)(t),
-        E = A === g.orn.NULL && t.isGuildStageVoice() ? c.intl.format(c.t.L2hmYy, {}) : null == (n = u(t, N)) || null == (i = n.find(t => {
+    let i = _(t),
+        e = (0, r.bG)([o.Ay], () => o.Ay.resolvedMessageNotifications(t), [t]),
+        s = (0, r.bG)([o.Ay], () => o.Ay.getChannelOverrides(t.guild_id)[t.id], [t.guild_id, t.id]),
+        d = null == s ? g.orn.NULL : s.message_notifications,
+        S = (0, a.YK)(t),
+        A = d === g.orn.NULL && t.isGuildStageVoice() ? c.intl.format(c.t.L2hmYy, {}) : u(t, S)?.find(t => {
             let {
                 setting: i
             } = t;
-            return i === d
-        })) ? void 0 : i.label;
-    return null != s ? (0, e.jsx)(l.Drp, {
+            return i === e
+        })?.label;
+    return null != i ? (0, n.jsx)(l.Drp, {
         id: "channel-notifications",
         label: c.intl.string(c.t.h850Ss),
-        subtext: E,
-        children: s
+        subtext: A,
+        children: i
     }) : null
 }

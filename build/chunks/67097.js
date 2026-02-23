@@ -3,13 +3,13 @@
 n.d(t, {
     A: () => l
 });
-var r = n(64700),
-    i = n(985018);
+var i = n(64700),
+    s = n(985018);
 
 function l() {
-    return r.useMemo(() => [{
+    return i.useMemo(() => [{
         value: null,
-        label: i.intl.string(i.t.zHfL6o)
+        label: s.intl.string(s.t.zHfL6o)
     }, {
         value: 10,
         label: "10"

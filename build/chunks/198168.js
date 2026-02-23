@@ -1,23 +1,22 @@
 /** chunk id: 198168, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    N: () => a
+    N: () => l
 });
-var r = n(837057),
-    i = n(310419),
-    l = n(967198),
+var i = n(837057),
+    r = n(310419),
+    a = n(967198),
     s = n(488995);
-let a = {
+let l = {
     binds: ["mod+ctrl+a"],
     comboKeysBindGlobal: !0,
     action() {
-        var e;
-        let t = null != (e = l.A.getGuildId()) ? e : void 0;
-        (0, r.transitionToGlobalDiscovery)({
+        let e = a.A.getGuildId() ?? void 0;
+        (0, i.transitionToGlobalDiscovery)({
             tab: s.GlobalDiscoveryTab.APPS,
             newSessionState: {
-                guildId: null != t ? t : null,
+                guildId: e ?? null,
                 entrypoint: {
-                    name: i.sW.KEYBOARD_SHORTCUT
+                    name: r.sW.KEYBOARD_SHORTCUT
                 }
             }
         })

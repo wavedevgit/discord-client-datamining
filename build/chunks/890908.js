@@ -1,44 +1,48 @@
-/** chunk id: 890908, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    UO: () => g,
-    lB: () => h
+/** chunk id: 890908, original params: e,t,l (module,exports,require) **/
+l.r(t), l.d(t, {
+    RevenuePlaygroundCollectionId: () => g,
+    nitroCollection: () => v,
+    paymentsCollection: () => f,
+    playgroundConfig: () => S,
+    virtualCurrencyCollection: () => E
 });
-var r = n(397927),
-    i = n(527518),
-    a = n(270727),
-    o = n(473106),
-    s = n(423396),
-    l = n(647047),
-    c = n(987274),
-    u = n(931433),
-    d = n(391622),
-    f = n(203484),
-    p = n(445736),
-    _ = n(504312),
-    h = function(e) {
-        return e.PAYMENTS = "payments", e.VIRTUAL_CURRENCY = "virtual-currency", e.NITRO = "nitro", e
-    }({});
-let m = ["Revenue Storybook", "Revenue Playground"],
-    g = {
+var a, n = l(397927),
+    r = l(777595),
+    i = l(527518),
+    s = l(270727),
+    o = l(473106),
+    u = l(423396),
+    c = l(987274),
+    d = l(886532),
+    p = l(931433),
+    m = l(391622),
+    h = l(203484),
+    x = l(445736),
+    b = l(504312),
+    g = ((a = {}).PAYMENTS = "payments", a.VIRTUAL_CURRENCY = "virtual-currency", a.NITRO = "nitro", a);
+let y = ["Revenue Storybook", "Revenue Playground"],
+    f = {
+        id: "payments",
+        name: "Payments",
+        groups: [o._, b.Y, x.Wo, r.v, u.Gu, h.O],
+        tags: y,
+        IconComponent: n.d2Y
+    },
+    E = {
+        id: "virtual-currency",
+        name: "Virtual Currency",
+        groups: [s.h2, i.c$, p.V, m.e],
+        tags: y,
+        IconComponent: n.Cp8
+    },
+    v = {
+        id: "nitro",
+        name: "Nitro",
+        groups: [c.I7, d.H],
+        tags: y,
+        IconComponent: n.tvc
+    },
+    S = {
         playgroundBaseUrl: "revenue",
-        collections: [{
-            id: "payments",
-            name: "Payments",
-            groups: [o._, _.Y, p.Wo, l.n, s.Gu, f.O],
-            tags: m,
-            IconComponent: r.d2Y
-        }, {
-            id: "virtual-currency",
-            name: "Virtual Currency",
-            groups: [a.h2, i.c$, u.V, d.e],
-            tags: m,
-            IconComponent: r.Cp8
-        }, {
-            id: "nitro",
-            name: "Nitro",
-            groups: [c.I7],
-            tags: m,
-            IconComponent: r.tvc
-        }]
+        collections: [f, E, v]
     }

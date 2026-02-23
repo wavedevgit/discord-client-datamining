@@ -2,75 +2,75 @@
 "use strict";
 n.d(t, {
     A: () => A
-}), n(896048);
-var r = n(627968),
-    i = n(64700),
-    s = n(481613),
-    l = n.n(s),
+});
+var i = n(627968),
+    s = n(64700),
+    r = n(481613),
+    l = n.n(r),
     a = n(311907),
     o = n(397927),
-    c = n(830215),
-    u = n(964486),
-    d = n(396681),
+    d = n(830215),
+    c = n(964486),
+    u = n(396681),
     h = n(854378),
-    p = n(976860),
-    g = n(210714),
-    f = n(652215),
-    _ = n(985018),
-    m = n(473169);
+    _ = n(976860),
+    p = n(210714),
+    g = n(652215),
+    m = n(985018),
+    f = n(473169);
 
 function A(e) {
     let {
         location: t,
-        transitionTo: s = p.pX
-    } = e, [a, A] = i.useState("submitting");
+        transitionTo: r = _.pX
+    } = e, [a, A] = s.useState("submitting");
 
-    function x() {
-        return "Android" === l().os.family || "iOS" === l().os.family ? null : (0, r.jsx)(o.Button, {
-            text: _.intl.string(_.t.dKhVQN),
+    function E() {
+        return "Android" === l().os.family || "iOS" === l().os.family ? null : (0, i.jsx)(o.Button, {
+            text: m.intl.string(m.t.dKhVQN),
             fullWidth: !0,
-            onClick: () => s(f.BVt.LOGIN, {
+            onClick: () => r(g.BVt.LOGIN, {
                 source: "authorizeIPAdress"
             })
         })
     }
-    return ((0, u.Ay)(() => {
-        (0, g.d)("authorize_ip");
-        let e = (0, d.A)(t);
+    return ((0, c.Ay)(() => {
+        (0, p.d)("authorize_ip");
+        let e = (0, u.A)(t);
         null == e ? A("failed") : (async () => {
             try {
-                await c.A.authorizeIPAddress(e), A("succeeded")
+                await d.A.authorizeIPAddress(e), A("succeeded")
             } catch (e) {
                 A("failed")
             }
         })()
-    }), "failed" === a) ? (0, r.jsxs)(h.Ay, {
-        children: [(0, r.jsx)("img", {
+    }), "failed" === a) ? (0, i.jsxs)(h.Ay, {
+        children: [(0, i.jsx)("img", {
             alt: "",
             src: n(792009),
-            className: m.SX
-        }), (0, r.jsx)(h.hE, {
-            className: m.QB,
-            children: _.intl.string(_.t["f/54az"])
-        }), (0, r.jsx)(h.tK, {
-            className: m.C2,
-            children: _.intl.string(_.t.i3ehMr)
-        }), x()]
-    }) : "succeeded" === a ? (0, r.jsxs)(h.Ay, {
-        children: [(0, r.jsx)("img", {
+            className: f.SX
+        }), (0, i.jsx)(h.hE, {
+            className: f.QB,
+            children: m.intl.string(m.t["f/54az"])
+        }), (0, i.jsx)(h.tK, {
+            className: f.C2,
+            children: m.intl.string(m.t.i3ehMr)
+        }), E()]
+    }) : "succeeded" === a ? (0, i.jsxs)(h.Ay, {
+        children: [(0, i.jsx)("img", {
             alt: "",
             src: n(841406),
-            className: m.SX
-        }), (0, r.jsx)(h.hE, {
-            className: m.QB,
-            children: _.intl.string(_.t.iG0SlK)
-        }), (0, r.jsx)(h.tK, {
-            className: m.C2,
-            children: _.intl.string(_.t["Elv+qt"])
-        }), x()]
-    }) : (0, r.jsxs)(h.Ay, {
-        children: [(0, r.jsx)(h.CK, {}), (0, r.jsx)(h.hE, {
-            children: _.intl.string(_.t["9exy+V"])
+            className: f.SX
+        }), (0, i.jsx)(h.hE, {
+            className: f.QB,
+            children: m.intl.string(m.t.iG0SlK)
+        }), (0, i.jsx)(h.tK, {
+            className: f.C2,
+            children: m.intl.string(m.t["Elv+qt"])
+        }), E()]
+    }) : (0, i.jsxs)(h.Ay, {
+        children: [(0, i.jsx)(h.CK, {}), (0, i.jsx)(h.hE, {
+            children: m.intl.string(m.t["9exy+V"])
         })]
     })
 }

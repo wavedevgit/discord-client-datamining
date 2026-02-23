@@ -1,7 +1,7 @@
 /** chunk id: 604095, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    AZ: () => a,
-    Cp: () => u,
+    AZ: () => u,
+    Cp: () => a,
     _s: () => r,
     fk: () => s,
     tA: () => o
@@ -24,13 +24,13 @@ async function r() {
     })
 }
 
-function u(t) {
+function a(t) {
     s.setState({
         openOnStartup: t
     }), l.Ay.send("TOGGLE_OPEN_ON_STARTUP", t)
 }
 
-function a(t) {
+function u(t) {
     s.setState({
         startMinimized: t
     }), l.Ay.send("TOGGLE_START_MINIMIZED", t)

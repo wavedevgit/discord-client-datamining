@@ -1,8 +1,8 @@
 /** chunk id: 159329, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    P3: () => i
+    P3: () => r
 });
-let r = (0, n(600975).C)({
+let i = (0, n(600975).C)({
     id: "2025-05_safety_flows",
     label: "Safety Flows",
     kind: "user",
@@ -18,11 +18,11 @@ let r = (0, n(600975).C)({
     }]
 });
 
-function i(e) {
+function r(e) {
     let {
         location: t
     } = e;
-    return r.getCurrentConfig({
+    return i.getCurrentConfig({
         location: t
     }, {
         autoTrackExposure: !1

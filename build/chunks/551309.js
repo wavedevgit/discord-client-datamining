@@ -1,40 +1,37 @@
-/** chunk id: 551309, original params: r,e,t (module,exports,require) **/
-t.d(e, {
+/** chunk id: 551309, original params: e,r,t (module,exports,require) **/
+t.d(r, {
     default: () => s
 });
-var l = t(627968);
+var i = t(627968);
 t(64700);
-var i = t(311907),
-    n = t(397927),
+var l = t(311907),
+    o = t(397927),
     a = t(442433),
-    o = t(775602),
+    n = t(775602),
     c = t(652215),
     d = t(985018);
 
-function s(r) {
+function s(e) {
     let {
-        roles: e
-    } = r, t = (0, i.bG)([o.A], () => o.A.roleStyle);
-    return (0, l.jsx)(n.W1t, {
+        roles: r
+    } = e, t = (0, l.bG)([n.A], () => n.A.roleStyle);
+    return (0, i.jsx)(o.W1t, {
         "data-menu-migrated": !0,
         navId: "invite-roles-menu",
         onClose: a.Z_,
         onSelect: () => {},
         "aria-label": d.intl.string(d.t["LPJmL/"]),
-        children: (0, l.jsx)(n.rXV, {
-            children: e.map(r => {
-                var e;
-                return (0, l.jsx)(n.Drp, {
-                    id: r.id,
-                    leadingAccessory: {
-                        type: "roleDot",
-                        variant: "dot" === t ? "dot" : "circle",
-                        color: null != (e = r.colorString) ? e : c.TpD,
-                        colors: r.colorStrings
-                    },
-                    label: r.name
-                }, r.id)
-            })
+        children: (0, i.jsx)(o.rXV, {
+            children: r.map(e => (0, i.jsx)(o.Drp, {
+                id: e.id,
+                leadingAccessory: {
+                    type: "roleDot",
+                    variant: "dot" === t ? "dot" : "circle",
+                    color: e.colorString ?? c.TpD,
+                    colors: e.colorStrings
+                },
+                label: e.name
+            }, e.id))
         })
     })
 }

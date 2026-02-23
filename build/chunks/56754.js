@@ -1,20 +1,19 @@
-/** chunk id: 56754, original params: t,e,n (module,exports,require) **/
-n.d(e, {
-    L: () => i
-}), n(896048);
-var l = n(311907),
-    r = n(469778);
+/** chunk id: 56754, original params: t,e,i (module,exports,require) **/
+i.d(e, {
+    L: () => s
+});
+var n = i(311907),
+    l = i(469778);
 
-function i(t) {
-    return (0, l.bG)([r.A], () => {
-        let e = r.A.getForSku(t);
+function s(t) {
+    return (0, n.bG)([l.A], () => {
+        let e = l.A.getForSku(t);
         if (null == e) return !1;
-        let n = 0;
+        let i = 0;
         for (let t of e) {
-            var l, i;
-            let e = null != (l = null == (i = t.endsAt) ? void 0 : i.getTime()) ? l : 1 / 0;
-            e >= n && (n = e)
+            let e = t.endsAt?.getTime() ?? 1 / 0;
+            e >= i && (i = e)
         }
-        return n > new Date().getTime()
+        return i > new Date().getTime()
     }, [t])
 }

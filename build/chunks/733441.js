@@ -1,33 +1,34 @@
 /** chunk id: 733441, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => h
+    A: () => A
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var l = n(311907),
-    i = n(397927),
-    s = n(604681),
+var s = n(311907),
+    l = n(397927),
+    r = n(604681),
     a = n(58149),
     o = n(761640),
     c = n(967198),
-    u = n(58736),
-    d = n(652215),
-    p = n(985018);
+    d = n(58736),
+    u = n(652215),
+    h = n(985018);
 
-function h(e) {
+function A(e) {
     let {
         channelId: t
-    } = e, n = (0, l.bG)([o.Ay], () => o.Ay.getSection(t)), h = (0, l.bG)([c.A], () => c.A.getGuildId()), g = n === d.YvQ.MEMBERS;
-    return (0, r.jsx)(u.In, {
-        tooltip: g ? p.intl.string(p.t.Axvx8c) : p.intl.string(p.t.gxChDx),
-        icon: i.nFg,
+    } = e, n = (0, s.bG)([o.Ay], () => o.Ay.getSection(t)), A = (0, s.bG)([c.A], () => c.A.getGuildId()), p = n === u.YvQ.MEMBERS;
+    return (0, i.jsx)(d.In, {
+        tooltip: p ? h.intl.string(h.t.Axvx8c) : h.intl.string(h.t.gxChDx),
+        icon: l.nFg,
         onClick: () => {
-            a.Ay.trackWithMetadata(d.HAw.MEMBER_LIST_TOGGLED, {
+            a.Ay.trackWithMetadata(u.HAw.MEMBER_LIST_TOGGLED, {
                 channel_id: t,
-                guild_id: h,
-                member_list_open: !g
-            }), s.A.toggleMembersSection()
+                guild_id: A,
+                member_list_open: !p
+            }), r.A.toggleMembersSection()
         },
-        selected: g
+        selected: p
     })
 }

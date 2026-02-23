@@ -1,119 +1,118 @@
 /** chunk id: 946599, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => y
-}), n(896048);
-var r = n(627968),
+    A: () => p
+});
+var i = n(627968),
     l = n(64700),
-    i = n(503698),
-    a = n.n(i),
-    o = n(926675),
-    s = n(990078),
-    c = n(397927),
-    u = n(147925),
+    a = n(503698),
+    s = n.n(a);
+n(926675);
+var r = n(990078),
+    o = n(397927),
+    c = n(147925),
     d = n(183555),
-    f = n(735321),
-    p = n(122338),
-    g = n(394245),
-    m = n(985018),
-    b = n(542467);
+    u = n(735321),
+    g = n(122338),
+    m = n(394245),
+    x = n(985018),
+    f = n(542467);
 
-function y(e) {
-    var t;
+function p(e) {
     let {
-        tags: n,
-        isCurrentUser: i,
-        widgetType: s,
-        applicationId: c,
-        className: u,
-        disableInteraction: y = !1
-    } = e, j = null != (t = null == n ? void 0 : n.filter(e => null != (0, g.W3)(e))) ? t : [], h = j.length > 0, _ = o.Y$, I = i && !y && (0, f.mS)(s) && j.length < _, {
-        trackUserProfileAction: w
-    } = (0, d.NJ)(), A = (0, l.useRef)(new Map), P = (0, l.useRef)(null), E = (0, l.useRef)(null), [S, T] = (0, l.useState)(0), [C, N] = (0, l.useState)(!1), k = v(P, E, j, A, T);
-    if ((0, l.useEffect)(() => (k(), window.addEventListener("resize", k), () => {
-            window.removeEventListener("resize", k)
-        }), [k, null == j ? void 0 : j.join("")]), !h && !I) return null;
-    let R = C ? j : j.slice(0, j.length - S);
-    return (0, r.jsxs)("div", {
-        className: a()(b.I4, u),
-        children: [h && (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsx)("ul", {
-                className: b.Tw,
-                "aria-label": m.intl.string(m.t.EfjTi4),
-                children: R.map(e => (0, r.jsx)(O, {
+        tags: t,
+        isCurrentUser: n,
+        widgetType: a,
+        applicationId: r,
+        className: o,
+        disableInteraction: c = !1
+    } = e, p = t?.filter(e => null != (0, m.W3)(e)) ?? [], _ = p.length > 0, A = n && !c && (0, u.mS)(a) && p.length < 20, {
+        trackUserProfileAction: v
+    } = (0, d.NJ)(), E = (0, l.useRef)(new Map), T = (0, l.useRef)(null), b = (0, l.useRef)(null), [y, N] = (0, l.useState)(0), [S, C] = (0, l.useState)(!1), R = j(T, b, p, E, N);
+    if ((0, l.useEffect)(() => (R(), window.addEventListener("resize", R), () => {
+            window.removeEventListener("resize", R)
+        }), [R, p?.join("")]), !_ && !A) return null;
+    let k = S ? p : p.slice(0, p.length - y);
+    return (0, i.jsxs)("div", {
+        className: s()(f.I4, o),
+        children: [_ && (0, i.jsxs)(i.Fragment, {
+            children: [(0, i.jsx)("ul", {
+                className: f.Tw,
+                "aria-label": x.intl.string(x.t.EfjTi4),
+                children: k.map(e => (0, i.jsx)(h, {
                     tag: e,
-                    isCurrentUser: i,
-                    applicationId: c,
-                    widgetType: s,
+                    isCurrentUser: n,
+                    applicationId: r,
+                    widgetType: a,
                     ref: t => {
-                        null != t && A.current.set(e, t)
+                        null != t && E.current.set(e, t)
                     },
-                    disableInteraction: y
+                    disableInteraction: c
                 }, e))
-            }), S > 0 && (0, r.jsx)(x, {
-                buttonRef: P,
-                isExpanded: C,
-                numberOfOverflowingTags: S,
+            }), y > 0 && (0, i.jsx)(I, {
+                buttonRef: T,
+                isExpanded: S,
+                numberOfOverflowingTags: y,
                 onExpandTags: () => {
-                    N(!0), w({
+                    C(!0), v({
                         action: "EXPAND_GAME_TAGS"
                     })
                 },
                 onCollapseTags: () => {
-                    N(!1), w({
+                    C(!1), v({
                         action: "COLLAPSE_GAME_TAGS"
                     })
                 },
-                disableInteraction: y
+                disableInteraction: c
             })]
-        }), I && (0, r.jsx)(p.A, {
-            tags: n,
-            widgetType: s,
-            applicationId: c,
-            ref: E
+        }), A && (0, i.jsx)(g.A, {
+            tags: t,
+            widgetType: a,
+            applicationId: r,
+            ref: b
         })]
     })
 }
-let O = e => {
+let h = e => {
     let {
         tag: t,
         isCurrentUser: n,
         applicationId: l,
-        widgetType: i,
-        disableInteraction: a,
-        ref: o
+        widgetType: a,
+        disableInteraction: s,
+        ref: c
     } = e, {
-        trackUserProfileEditAction: u
-    } = (0, d.NJ)(), p = (0, g.W3)(t);
+        trackUserProfileEditAction: g
+    } = (0, d.NJ)(), p = (0, m.W3)(t);
     if (null == p) return null;
     let {
-        getText: y,
-        icon: O
+        getText: h,
+        icon: _
     } = p;
-    return (0, r.jsxs)("li", {
-        className: b.Tc,
-        ref: o,
-        children: [(0, r.jsx)(O, {
+    return (0, i.jsxs)("li", {
+        className: f.Tc,
+        ref: c,
+        children: [(0, i.jsx)(_, {
             size: "xxs"
-        }), (0, r.jsx)(c.Text, {
+        }), (0, i.jsx)(o.Text, {
             variant: "text-xxs/medium",
             color: "text-subtle",
-            children: y()
-        }), n && !a && (0, r.jsx)(s.m, {
-            text: m.intl.string(m.t.Otv9fP),
+            children: h()
+        }), n && !s && (0, i.jsx)(r.m, {
+            text: x.intl.string(x.t.Otv9fP),
             ariaHidden: !0,
-            children: (0, r.jsx)(c.DUT, {
+            children: (0, i.jsx)(o.DUT, {
                 onClick: () => {
-                    (0, f.tg)(i, l, t), u({
+                    (0, u.tg)(a, l, t), g({
                         action: "TAG_REMOVED",
-                        widgetEdited: i,
+                        widgetEdited: a,
                         gameId: l
                     })
                 },
-                className: b.DT,
-                "aria-label": m.intl.formatToPlainString(m.t.GCn1ne, {
-                    tag: y()
+                className: f.DT,
+                "aria-label": x.intl.formatToPlainString(x.t.GCn1ne, {
+                    tag: h()
                 }),
-                children: (0, r.jsx)(c.PGe, {
+                children: (0, i.jsx)(o.PGe, {
                     size: "xxs",
                     color: "currentColor"
                 })
@@ -122,80 +121,79 @@ let O = e => {
     })
 };
 
-function j(e) {
+function _(e) {
     let {
         numberOfOverflowingTags: t
     } = e;
-    return (0, r.jsx)(c.Text, {
+    return (0, i.jsx)(o.Text, {
         variant: "text-xxs/medium",
         color: "none",
-        children: "+".concat(t)
+        children: `+${t}`
     })
 }
 
-function h() {
-    return (0, r.jsx)(u.A, {
-        direction: u.A.Directions.LEFT,
+function A() {
+    return (0, i.jsx)(c.A, {
+        direction: c.A.Directions.LEFT,
         width: 12,
         height: 12,
-        className: b.OW
+        className: f.OW
     })
 }
 
-function x(e) {
+function I(e) {
     let {
         isExpanded: t,
         numberOfOverflowingTags: n,
         onExpandTags: l,
-        onCollapseTags: i,
-        disableInteraction: a,
-        buttonRef: o
-    } = e, u = t ? m.intl.string(m.t.z9VPrQ) : m.intl.string(m.t.mriLXL), d = t ? m.intl.string(m.t.z9VPrQ) : m.intl.formatToPlainString(m.t.F6iMs4, {
+        onCollapseTags: a,
+        disableInteraction: s,
+        buttonRef: c
+    } = e, d = t ? x.intl.string(x.t.z9VPrQ) : x.intl.string(x.t.mriLXL), u = t ? x.intl.string(x.t.z9VPrQ) : x.intl.formatToPlainString(x.t.F6iMs4, {
         count: n
     });
-    return a ? (0, r.jsx)("div", {
-        className: b.X1,
-        ref: o,
-        children: (0, r.jsx)(j, {
+    return s ? (0, i.jsx)("div", {
+        className: f.X1,
+        ref: c,
+        children: (0, i.jsx)(_, {
             numberOfOverflowingTags: n
         })
-    }) : (0, r.jsx)(s.m, {
-        text: u,
+    }) : (0, i.jsx)(r.m, {
+        text: d,
         ariaHidden: t,
-        children: (0, r.jsx)(c.DUT, {
-            innerRef: o,
-            onClick: t ? i : l,
-            "aria-label": d,
-            className: t ? b.cS : b.X1,
-            children: t ? (0, r.jsx)(h, {}) : (0, r.jsx)(j, {
+        children: (0, i.jsx)(o.DUT, {
+            innerRef: c,
+            onClick: t ? a : l,
+            "aria-label": u,
+            className: t ? f.cS : f.X1,
+            children: t ? (0, i.jsx)(A, {}) : (0, i.jsx)(_, {
                 numberOfOverflowingTags: n
             })
         })
     })
 }
-let v = (e, t, n, r, i) => (0, l.useCallback)(() => {
-    var l, a, o, s;
-    if (null == n) return void i(0);
-    let c = null != (l = null == (o = e.current) ? void 0 : o.getBoundingClientRect().width) ? l : 0,
-        u = null != (a = null == (s = t.current) ? void 0 : s.getBoundingClientRect().width) ? a : 0,
-        d = u > 0 ? 8 : 4,
-        f = 0,
-        p = 0,
-        g = r.current;
+let j = (e, t, n, i, a) => (0, l.useCallback)(() => {
+    if (null == n) return void a(0);
+    let l = e.current?.getBoundingClientRect().width ?? 0,
+        s = t.current?.getBoundingClientRect().width ?? 0,
+        r = s > 0 ? 8 : 4,
+        o = 0,
+        c = 0,
+        d = i.current;
     for (let e = 0; e < n.length; e++) {
-        let t = g.get(n[e]);
+        let t = d.get(n[e]);
         if (null != t) {
-            if ((p += t.offsetWidth + 4) > 296) break;
-            f++
+            if ((c += t.offsetWidth + 4) > 296) break;
+            o++
         }
     }
-    p = 0;
-    for (let e = f; e < n.length; e++) {
-        let t = g.get(n[e]);
+    c = 0;
+    for (let e = o; e < n.length; e++) {
+        let t = d.get(n[e]);
         if (null != t) {
-            if ((p += t.offsetWidth + 4) > 296 - c - u - d) break;
-            f++
+            if ((c += t.offsetWidth + 4) > 296 - l - s - r) break;
+            o++
         }
     }
-    i(n.length - f)
-}, [e, t, null == n ? void 0 : n.join(""), r, i])
+    a(n.length - o)
+}, [e, t, n?.join(""), i, a])

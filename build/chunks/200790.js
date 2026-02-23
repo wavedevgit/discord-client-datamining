@@ -1,87 +1,87 @@
 /** chunk id: 200790, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => x
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(503698),
-    l = n.n(i),
-    s = n(421380),
-    a = n(397927),
+var s = n(503698),
+    a = n.n(s),
+    r = n(421380),
+    l = n(397927),
     o = n(688810),
     c = n(507698),
     d = n(954921),
     u = n(354328),
     _ = n(405810),
-    p = n(919395),
-    m = n(128450),
+    m = n(919395),
+    A = n(128450),
     g = n(985018),
-    A = n(223772);
+    h = n(223772);
 
-function f(e) {
+function x(e) {
     let {
         user: t,
         guild: n,
-        className: i,
+        className: s,
         sectionTitle: _,
-        forcedDivider: f = !1,
-        withTutorial: h = !1
+        forcedDivider: x = !1,
+        withTutorial: E = !1
     } = e, {
-        analyticsLocations: E
-    } = (0, o.Ay)(), O = (0, u.A)("enable_avatar_decoration_uploads"), x = (0, p.a4)({
+        analyticsLocations: C
+    } = (0, o.Ay)(), T = (0, u.A)("enable_avatar_decoration_uploads"), S = (0, m.a4)({
         user: t,
-        guildId: null == n ? void 0 : n.id
+        guildId: n?.id
     }), {
-        pendingAvatarDecoration: C,
-        errors: S
-    } = (0, p.CP)(null == n ? void 0 : n.id), T = h ? a.wLn : s.$n;
-    return (0, r.jsxs)(m.A, {
-        className: i,
-        forcedDivider: f,
+        pendingAvatarDecoration: I,
+        errors: f
+    } = (0, m.CP)(n?.id), N = E ? l.wLn : r.$n;
+    return (0, i.jsxs)(A.A, {
+        className: s,
+        forcedDivider: x,
         hasBackground: !0,
         title: _,
-        errors: S,
-        children: [(0, r.jsxs)("div", {
-            className: A.NC,
-            children: [(0, r.jsx)(T, {
-                size: s.$n.Sizes.SMALL,
+        errors: f,
+        children: [(0, i.jsxs)("div", {
+            className: h.NC,
+            children: [(0, i.jsx)(N, {
+                size: r.$n.Sizes.SMALL,
                 onClick: () => {
                     (0, d.L)({
-                        analyticsLocations: E,
+                        analyticsLocations: C,
                         guild: n
                     })
                 },
-                className: l()({
-                    [A.yj]: h
+                className: a()({
+                    [h.yj]: E
                 }),
                 children: g.intl.string(g.t.BVcYCx)
-            }), (void 0 === C ? null != x : null != C) && (0, r.jsx)("div", {
+            }), (void 0 === I ? null != S : null != I) && (0, i.jsx)("div", {
                 "data-button-hoisted-classname-wrapper": !0,
-                className: A.DT,
-                children: (0, r.jsx)(a.Button, {
+                className: h.DT,
+                children: (0, i.jsx)(l.Button, {
                     variant: "secondary",
                     size: "sm",
                     text: (0, c.uZ)(t, n) ? g.intl.string(g.t.CHf9iJ) : g.intl.string(g.t.OrokWm),
                     onClick: () => {
-                        (0, p.Dx)(null, null == n ? void 0 : n.id)
+                        (0, m.Dx)(null, n?.id)
                     }
                 })
             })]
-        }), t.isStaff() && O && (0, r.jsx)(b, {
+        }), t.isStaff() && T && (0, i.jsx)(p, {
             user: t
         })]
     })
 }
-let b = e => {
+let p = e => {
     let {
         user: t
     } = e;
-    return (0, r.jsxs)("div", {
-        className: A.J_,
-        children: [(0, r.jsx)(a.Text, {
+    return (0, i.jsxs)("div", {
+        className: h.J_,
+        children: [(0, i.jsx)(l.Text, {
             variant: "text-xs/bold",
             children: "STAFF ONLY and Experimental. Upload a decoration to view throughout the app."
-        }), (0, r.jsx)(_.A, {
+        }), (0, i.jsx)(_.A, {
             onChange: e => {
                 null != e && (t.avatarDecoration = {
                     asset: e,

@@ -1,22 +1,16 @@
 /** chunk id: 625788, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => l
+    A: () => i
 });
-let l = (0, n(945810).mj)({
+let i = (0, n(945810).mj)({
     kind: "user",
     name: "2026-01-improved-dm-send",
     defaultConfig: {
-        enabled: !1,
-        showFriendButton: !1
+        enabled: !1
     },
     variations: {
         1: {
-            enabled: !0,
-            showFriendButton: !1
-        },
-        2: {
-            enabled: !0,
-            showFriendButton: !0
+            enabled: !0
         }
     }
 })

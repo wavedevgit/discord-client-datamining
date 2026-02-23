@@ -1,11 +1,12 @@
 /** chunk id: 675853, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
     Ay: () => o,
     CB: () => a,
-    wQ: () => s
+    wQ: () => r
 });
 let {
-    Layer: r,
-    LayerContainer: l,
-    LayerProvider: i
-} = (0, n(397927).AyR)("VoiceChannelEffectsCall"), s = l, a = i, o = r
+    Layer: i,
+    LayerContainer: s,
+    LayerProvider: l
+} = (0, n(397927).AyR)("VoiceChannelEffectsCall"), r = s, a = l, o = i

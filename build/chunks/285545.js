@@ -1,45 +1,45 @@
 /** chunk id: 285545, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    i: () => g
-}), n(896048), n(321073);
-var r = n(64700),
-    i = n(311907),
+    i: () => m
+}), n(321073);
+var i = n(64700),
+    r = n(311907),
     l = n(919796),
     a = n(4106),
     s = n(105971),
     o = n(800319),
-    c = n(883344),
-    u = n(596720),
-    d = n(859524),
-    p = n(639040),
+    d = n(883344),
+    c = n(596720),
+    u = n(859524),
+    A = n(639040),
     h = n(567061),
-    f = n(118972);
+    _ = n(118972);
 
-function g(e) {
+function m(e) {
     let {
         showDot: t,
         notificationItem: n
-    } = e, [g, m] = r.useState(!1), {
-        unreadItems: A,
-        readItems: _,
-        allUnreadItemsHydrated: b
-    } = (0, p.A)(), E = (0, i.bG)([c.A], () => c.A.getVersion(), []), O = (0, i.bG)([c.A], () => !(c.A.isFirstPageHydrated() && E > 0));
-    r.useEffect(() => {
-        null != c.A.getLoadId() && s.k.trackFeedShown({
+    } = e, [m, p] = i.useState(!1), {
+        unreadItems: g,
+        readItems: E,
+        allUnreadItemsHydrated: I
+    } = (0, A.A)(), f = (0, r.bG)([d.A], () => d.A.getVersion(), []), C = (0, r.bG)([d.A], () => !(d.A.isFirstPageHydrated() && f > 0));
+    i.useEffect(() => {
+        null != d.A.getLoadId() && s.k.trackFeedShown({
             homeSessionId: "gravity"
         })
-    }, [E]);
-    let y = (0, i.bG)([c.A], () => c.A.isRefreshing(), []),
-        I = (0, i.bG)([c.A], () => c.A.isHydrating(), []),
-        [v, S] = r.useState([]),
+    }, [f]);
+    let T = (0, r.bG)([d.A], () => d.A.isRefreshing(), []),
+        N = (0, r.bG)([d.A], () => d.A.isHydrating(), []),
+        [S, x] = i.useState([]),
         {
-            loadId: C,
-            lastScrollEventTimestamp: N
-        } = (0, i.cf)([c.A], () => ({
-            loadId: c.A.getLoadId(),
-            lastScrollEventTimestamp: c.A.lastScrollEvent()
+            loadId: v,
+            lastScrollEventTimestamp: y
+        } = (0, r.cf)([d.A], () => ({
+            loadId: d.A.getLoadId(),
+            lastScrollEventTimestamp: d.A.lastScrollEvent()
         })),
-        T = v.filter(e => {
+        b = S.filter(e => {
             let {
                 item: t
             } = e;
@@ -50,66 +50,65 @@ function g(e) {
             } = e;
             return t.id
         }).pop(),
-        j = (0, l.A)(T);
-    r.useEffect(() => {
-        if (y || O || null == j || null == T || T === j) return;
+        O = (0, l.A)(b);
+    i.useEffect(() => {
+        if (T || C || null == O || null == b || b === O) return;
         let e = Date.now();
-        e - N > f.N && (a.A.gravityScrollEvent(e), s.k.trackFeedFirstScrollStarted())
-    }, [y, N, j, T, C, O]);
-    let x = r.useCallback(e => {
+        e - y > _.N && (a.A.gravityScrollEvent(e), s.k.trackFeedFirstScrollStarted())
+    }, [T, y, O, b, v, C]);
+    let L = i.useCallback(e => {
             let {
                 viewableItems: t
             } = e;
-            if (t.some(e => "end" === e.item.data.kind) && m(!0), 0 === t.length) return;
-            S(t);
+            if (t.some(e => "end" === e.item.data.kind) && p(!0), 0 === t.length) return;
+            x(t);
             let n = [],
-                r = (0, d.P0)(t),
-                i = Date.now();
-            for (let e = r.length - 1; e >= 0; e--) {
-                let t = r[e];
+                i = (0, u.P0)(t),
+                r = Date.now();
+            for (let e = i.length - 1; e >= 0; e--) {
+                let t = i[e];
                 null != t && n.push({
                     id: t.id,
-                    type: (0, u.xG)(t),
-                    timestamp: i++
+                    type: (0, c.xG)(t),
+                    timestamp: r++
                 })
             }
-            n.length > 0 && a.A.ackGravityItems(n, !0), s.k.trackItemShortImpression(t, r.map(e => ({
+            n.length > 0 && a.A.ackGravityItems(n, !0), s.k.trackItemShortImpression(t, i.map(e => ({
                 id: e.id,
-                type: (0, u.xG)(e)
-            })), E)
-        }, [E, m]),
-        P = r.useCallback(e => {
+                type: (0, c.xG)(e)
+            })), f)
+        }, [f, p]),
+        R = i.useCallback(e => {
             let {
                 viewableItems: t
             } = e;
             if (0 === t.length) return;
-            let n = (0, d.P0)(t);
+            let n = (0, u.P0)(t);
             s.k.trackItemLongImpression(t, n.map(e => ({
                 id: e.id,
-                type: (0, u.xG)(e)
-            })), E), a.A.triggerItemsLongImpression(t.filter(e => {
+                type: (0, c.xG)(e)
+            })), f), a.A.triggerItemsLongImpression(t.filter(e => {
                 let {
                     item: t
                 } = e;
                 return !o.P.has(t.data.kind)
             }).map(e => {
-                var t, n;
                 let {
-                    item: r,
-                    index: i
+                    item: t,
+                    index: n
                 } = e;
                 return {
-                    itemId: r.id,
-                    itemType: (0, d.px)(r),
+                    itemId: t.id,
+                    itemType: (0, u.px)(t),
                     triggerType: "list",
-                    itemFeedIndex: i,
-                    itemScore: null != (t = r.score) ? t : null,
-                    itemChannelType: null != (n = r.channelType) ? n : null,
+                    itemFeedIndex: n,
+                    itemScore: t.score ?? null,
+                    itemChannelType: t.channelType ?? null,
                     isInitiallyVisible: !1
                 }
             }))
-        }, [E]),
-        w = r.useCallback(e => {
+        }, [f]),
+        P = i.useCallback(e => {
             let {
                 viewableItems: t
             } = e;
@@ -119,81 +118,80 @@ function g(e) {
                 } = e;
                 return !o.P.has(t.data.kind)
             }).map(e => {
-                var t, n;
                 let {
-                    item: r,
-                    index: i
+                    item: t,
+                    index: n
                 } = e;
                 return {
-                    itemId: r.id,
-                    itemType: (0, d.px)(r),
+                    itemId: t.id,
+                    itemType: (0, u.px)(t),
                     triggerType: "list",
-                    itemFeedIndex: i,
-                    itemScore: null != (t = r.score) ? t : null,
-                    itemChannelType: null != (n = r.channelType) ? n : null,
+                    itemFeedIndex: n,
+                    itemScore: t.score ?? null,
+                    itemChannelType: t.channelType ?? null,
                     isInitiallyVisible: !1
                 }
             }))
         }, []),
-        L = r.useMemo(() => [{
+        j = i.useMemo(() => [{
             viewabilityConfig: {
                 waitForInteraction: !1,
                 viewAreaCoveragePercentThreshold: 100,
                 minimumViewTime: 50
             },
-            onViewableItemsChanged: x
+            onViewableItemsChanged: L
         }, {
             viewabilityConfig: {
                 waitForInteraction: !1,
                 viewAreaCoveragePercentThreshold: 50,
                 minimumViewTime: 1e3
             },
-            onViewableItemsChanged: P
+            onViewableItemsChanged: R
         }, {
             viewabilityConfig: {
                 waitForInteraction: !1,
                 viewAreaCoveragePercentThreshold: 50,
                 minimumViewTime: 50
             },
-            onViewableItemsChanged: w
-        }], [x, P, w]);
-    r.useEffect(() => {
+            onViewableItemsChanged: P
+        }], [L, R, P]);
+    i.useEffect(() => {
         a.A.openICYMITab()
     }, []);
-    let R = (0, h.E)(t),
+    let D = (0, h.E)(t),
         {
-            data: D,
-            stickyHeaderIndices: M
-        } = r.useMemo(() => {
+            data: M,
+            stickyHeaderIndices: w
+        } = i.useMemo(() => {
             let e = [];
-            return O && null != n && n.type === u.Mm.CUSTOM_STATUS && e.push({
+            return C && null != n && n.type === c.Mm.CUSTOM_STATUS && e.push({
                 id: n.id,
                 timestamp: Date.now(),
                 data: {
                     kind: "contentInventory",
-                    content: (0, d.YM)(n).activity
+                    content: (0, u.YM)(n).activity
                 },
                 score: n.score,
                 unread: !0
-            }), O ? e.push({
+            }), C ? e.push({
                 id: "loading",
                 timestamp: 0,
                 unread: !1,
                 data: {
                     kind: "loading"
                 }
-            }) : (A.forEach(t => {
-                (0, d.yx)(t) || e.push(t)
-            }), b && e.push({
+            }) : (g.forEach(t => {
+                (0, u.yx)(t) || e.push(t)
+            }), I && e.push({
                 id: "end",
                 timestamp: 0,
                 unread: !1,
                 data: {
                     kind: "end"
                 }
-            }), _.length > 0 && _.forEach(t => {
-                (0, d.yx)(t) || e.push(t)
-            }), I && e.push({
+            }), E.length > 0 && E.forEach(t => {
+                (0, u.yx)(t) || e.push(t)
+            }), N && e.push({
                 id: "bottomLoading",
                 timestamp: 0,
                 unread: !1,
@@ -204,16 +202,16 @@ function g(e) {
                 data: e,
                 stickyHeaderIndices: []
             }
-        }, [O, n, A, b, _, I]);
+        }, [C, n, g, I, E, N]);
     return {
-        data: D,
-        loading: O,
-        version: E,
-        visibleItemIds: v,
-        endVisible: g,
-        isRefreshing: y,
-        handleOnRefresh: R,
-        stickyHeaderIndices: M,
-        viewabilityConfigCallbackPairs: L
+        data: M,
+        loading: C,
+        version: f,
+        visibleItemIds: S,
+        endVisible: m,
+        isRefreshing: T,
+        handleOnRefresh: D,
+        stickyHeaderIndices: w,
+        viewabilityConfigCallbackPairs: j
     }
 }

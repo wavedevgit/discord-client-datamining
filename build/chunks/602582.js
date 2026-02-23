@@ -1,65 +1,91 @@
 /** chunk id: 602582, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => A
-}), n(896048);
+    A: () => m
+});
 var l = n(735438),
-    r = n.n(l),
-    i = n(562465),
+    i = n.n(l),
+    r = n(562465),
     s = n(73153),
     a = n(439372),
-    o = n(723176),
-    u = n(626584),
-    c = n(142120);
+    u = n(723176),
+    o = n(626584),
+    d = n(142120);
 n(95701);
-var d = n(961350),
+var c = n(961350),
     h = n(734057),
     g = n(946132),
-    f = n(937136),
-    p = n(652215);
-
-function I(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-let m = new u.A("MessagePreviewManager");
+    I = n(937136),
+    A = n(652215);
+let f = new o.A("MessagePreviewManager");
 class E extends a.A {
+    remote = new Map;
+    remoteTicking = !1;
+    tickQueued = !1;
+    localFetching = new Set;
+    actions = {
+        CONNECTION_OPEN_SUPPLEMENTAL: () => this.handleConnectionOpenSupplemental(),
+        CONNECTION_RESUMED: () => this.handleConnectionResumed(),
+        GUILD_CREATE: e => this.handleGuildCreate(e),
+        GUILD_DELETE: e => this.handleGuildDelete(e),
+        LOAD_MESSAGES_SUCCESS: e => this.handleMessagesLoaded(e),
+        LOCAL_MESSAGES_LOADED: e => this.handleMessagesLoaded(e),
+        LOGOUT: () => this.handleLogout(),
+        MESSAGE_CREATE: e => this.handleMessageCreate(e),
+        MESSAGE_DELETE: e => this.handleMessageDelete(e),
+        MESSAGE_UPDATE: e => this.handleMessageUpdate(e),
+        THREAD_LIST_SYNC: e => this.handleThreadListSync(e)
+    };
     addWant(e) {
         h.A.getBasicChannel(e)
     }
+    remoteTick = i().debounce((() => {
+        var e = this;
+        return async function() {
+            let t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 0;
+            if (!d.A.isConnected()) {
+                e.tickQueued = !0;
+                return
+            }
+            if (!e.remoteTicking && !(t > 5)) {
+                e.tickQueued = !1;
+                try {
+                    for (let [t, n] of(e.remoteTicking = !0, e.remote)) await (null == t ? e.fetchDms(n) : e.fetchGuilds(t, n));
+                    e.cleanup(), e.remoteTicking = !1
+                } catch (n) {
+                    f.log(`couldn't fetch message previews (attempt: ${t}, error: ${n})`), e.remoteTicking = !1, e.remoteTick(t + 1)
+                }
+            }
+        }
+    })(), 100);
     async fetchLocal(e) {
         if (!(!g.A.isLocalFetchNeeded(e) || this.localFetching.has(e))) try {
-            var t;
-            m.verbose("fetching local previews (via: database, guild_id: ".concat(e, ")")), this.localFetching.add(e);
-            let n = d.default.getId(),
-                l = await (null == (t = o.A.messages()) ? void 0 : t.getMostRecents(e));
-            null != l && n === d.default.getId() && s.h.dispatch({
+            f.verbose(`fetching local previews (via: database, guild_id: ${e})`), this.localFetching.add(e);
+            let t = c.default.getId(),
+                n = await u.A.messages()?.getMostRecents(e);
+            null != n && t === c.default.getId() && s.h.dispatch({
                 type: "MESSAGE_PREVIEWS_LOCALLY_LOADED",
                 guildId: e,
-                messages: l.map(e => {
+                messages: n.map(e => {
                     let [t, n] = e;
                     return [t, n.message]
                 })
             })
         } catch (e) {
-            m.log("couldn't fetch local previews (error: ".concat(e, ")"))
+            f.log(`couldn't fetch local previews (error: ${e})`)
         } finally {
             this.localFetching.delete(e)
         }
     }
     fetchGuilds(e, t) {
         let n = t.nextWants(1e3);
-        return 0 === n.length ? Promise.resolve() : t.try(n, () => (m.verbose("fetching guild previews (via: gateway, guild_id: ".concat(e, ", channel_ids: ").concat(n.join(", "), ")")), c.A.getSocket().requestLastMessages(e, n), Promise.resolve()))
+        return 0 === n.length ? Promise.resolve() : t.try(n, () => (f.verbose(`fetching guild previews (via: gateway, guild_id: ${e}, channel_ids: ${n.join(", ")})`), d.A.getSocket().requestLastMessages(e, n), Promise.resolve()))
     }
     fetchDms(e) {
         let t = e.nextWants(30);
         return 0 === t.length ? Promise.resolve() : e.try(t, async () => {
-            m.verbose("fetching dm previews (via: http, channel_ids: ".concat(t.join(", "), ")"));
-            let e = (await i.Bo.post({
-                url: p.Rsh.MESSAGE_PREVIEWS,
+            f.verbose(`fetching dm previews (via: http, channel_ids: ${t.join(", ")})`);
+            let e = (await r.Bo.post({
+                url: A.Rsh.MESSAGE_PREVIEWS,
                 body: {
                     channel_ids: t
                 },
@@ -77,7 +103,7 @@ class E extends a.A {
         null != n && g.A.isLatest(e, t) && n.removeWant(t)
     }
     getOrCreate(e) {
-        return this.remote.has(e) || this.remote.set(e, new f.p), this.remote.get(e)
+        return this.remote.has(e) || this.remote.set(e, new I.p), this.remote.get(e)
     }
     cleanup() {
         for (let [e, t] of this.remote) t.empty() && this.remote.delete(e)
@@ -99,63 +125,24 @@ class E extends a.A {
         this.localFetching.clear(), this.remote.clear(), this.remoteTicking = !1
     }
     handleMessageCreate(e) {
-        var t;
-        this.syncChannel(null != (t = e.guildId) ? t : null, e.channelId)
+        this.syncChannel(e.guildId ?? null, e.channelId)
     }
     handleMessageDelete(e) {
-        var t;
-        this.syncChannel(null != (t = e.guildId) ? t : null, e.channelId)
+        this.syncChannel(e.guildId ?? null, e.channelId)
     }
     handleMessageUpdate(e) {
-        if (null != e.message.channel_id) {
-            var t;
-            this.syncChannel(null != (t = e.guildId) ? t : null, e.message.channel_id)
-        }
+        null != e.message.channel_id && this.syncChannel(e.guildId ?? null, e.message.channel_id)
     }
     handleMessagesLoaded(e) {
-        var t, n;
-        let l = h.A.getBasicChannel(e.channelId),
-            r = null != (t = null == l ? void 0 : l.guild_id) ? t : null;
-        if (null != l)
-            for (let t of null != (n = e.messages) ? n : []) this.syncChannel(r, t.channel_id)
+        let t = h.A.getBasicChannel(e.channelId),
+            n = t?.guild_id ?? null;
+        if (null != t)
+            for (let t of e.messages ?? []) this.syncChannel(n, t.channel_id)
     }
     handleThreadListSync(e) {
         let t = this.remote.get(e.guildId);
-        if (null != t) {
-            var n;
-            for (let l of null != (n = e.mostRecentMessages) ? n : []) t.removeWant(l.channel_id)
-        }
-    }
-    constructor(...e) {
-        var t;
-        super(...e), t = this, I(this, "remote", new Map), I(this, "remoteTicking", !1), I(this, "tickQueued", !1), I(this, "localFetching", new Set), I(this, "actions", {
-            CONNECTION_OPEN_SUPPLEMENTAL: () => this.handleConnectionOpenSupplemental(),
-            CONNECTION_RESUMED: () => this.handleConnectionResumed(),
-            GUILD_CREATE: e => this.handleGuildCreate(e),
-            GUILD_DELETE: e => this.handleGuildDelete(e),
-            LOAD_MESSAGES_SUCCESS: e => this.handleMessagesLoaded(e),
-            LOCAL_MESSAGES_LOADED: e => this.handleMessagesLoaded(e),
-            LOGOUT: () => this.handleLogout(),
-            MESSAGE_CREATE: e => this.handleMessageCreate(e),
-            MESSAGE_DELETE: e => this.handleMessageDelete(e),
-            MESSAGE_UPDATE: e => this.handleMessageUpdate(e),
-            THREAD_LIST_SYNC: e => this.handleThreadListSync(e)
-        }), I(this, "remoteTick", r().debounce(async function() {
-            let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 0;
-            if (!c.A.isConnected()) {
-                t.tickQueued = !0;
-                return
-            }
-            if (!t.remoteTicking && !(e > 5)) {
-                t.tickQueued = !1;
-                try {
-                    for (let [e, n] of(t.remoteTicking = !0, t.remote)) await (null == e ? t.fetchDms(n) : t.fetchGuilds(e, n));
-                    t.cleanup(), t.remoteTicking = !1
-                } catch (n) {
-                    m.log("couldn't fetch message previews (attempt: ".concat(e, ", error: ").concat(n, ")")), t.remoteTicking = !1, t.remoteTick(e + 1)
-                }
-            }
-        }, 100))
+        if (null != t)
+            for (let n of e.mostRecentMessages ?? []) t.removeWant(n.channel_id)
     }
 }
-let A = new E
+let m = new E

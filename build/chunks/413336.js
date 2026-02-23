@@ -1,12 +1,17 @@
 /** chunk id: 413336, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    X: () => a
+    $: () => o
 });
 var n = i(419954),
     l = i(780964),
     s = i(246161),
     r = i(340889),
-    u = i(897208);
-let a = (0, n.zZ)(l.X.STREAMER_MODE_CATEGORY, {
-    buildLayout: () => [r.U, s.c, u.p]
-})
+    a = i(897208),
+    u = i(985018);
+
+function o(t) {
+    return (0, n.zZ)(l.X.STREAMER_MODE_CATEGORY, {
+        useTitle: t ? () => u.intl.string(u.t.S5GfOW) : void 0,
+        buildLayout: () => [r.U, s.c, a.p]
+    })
+}

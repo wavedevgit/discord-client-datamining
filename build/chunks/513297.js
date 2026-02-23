@@ -1,34 +1,34 @@
-/** chunk id: 513297, original params: e,t,i (module,exports,require) **/
-i.d(t, {
-    A: () => p
+/** chunk id: 513297, original params: e,t,s (module,exports,require) **/
+s.d(t, {
+    A: () => A
 });
-var s, n = i(627968);
-i(64700);
-var r = i(503698),
-    o = i.n(r),
-    a = i(990078),
-    l = i(397927),
-    u = i(573729),
-    c = ((s = c || {})[s.ACCEPT = 0] = "ACCEPT", s[s.DENY = 1] = "DENY", s[s.DEFAULT = 2] = "DEFAULT", s);
+var i, n = s(627968);
+s(64700);
+var a = s(503698),
+    r = s.n(a),
+    l = s(990078),
+    o = s(397927),
+    u = s(573729),
+    h = ((i = h || {})[i.ACCEPT = 0] = "ACCEPT", i[i.DENY = 1] = "DENY", i[i.DEFAULT = 2] = "DEFAULT", i);
 
-function h(e) {
+function c(e) {
     let {
         icon: t,
-        tooltip: i,
-        onClick: s,
-        actionType: r = 2,
-        shouldHighlight: c
+        tooltip: s,
+        onClick: i,
+        actionType: a = 2,
+        shouldHighlight: h
     } = e;
-    return (0, n.jsx)(a.m, {
-        text: i,
-        children: (0, n.jsx)(l.DUT, {
+    return (0, n.jsx)(l.m, {
+        text: s,
+        children: (0, n.jsx)(o.DUT, {
             tag: "div",
-            "aria-label": i,
-            onClick: s,
-            className: o()(u.hP, {
-                [u.Jj]: 0 === r,
-                [u.Bs]: 1 === r,
-                [u.Zt]: c
+            "aria-label": s,
+            onClick: i,
+            className: r()(u.hP, {
+                [u.Jj]: 0 === a,
+                [u.Bs]: 1 === a,
+                [u.Zt]: h
             }),
             children: (0, n.jsx)(t, {
                 className: u.Kk,
@@ -37,5 +37,5 @@ function h(e) {
         })
     })
 }
-h.ActionTypes = c;
-let p = h
+c.ActionTypes = h;
+let A = c

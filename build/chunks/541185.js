@@ -1,8 +1,8 @@
 /** chunk id: 541185, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => r
+    A: () => i
 });
-let r = (0, n(600975).C)({
+let i = (0, n(600975).C)({
     kind: "user",
     id: "2025-05_priority_vad",
     label: "Priority PTT keybind in VAD mode",

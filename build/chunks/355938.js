@@ -1,24 +1,23 @@
 /** chunk id: 355938, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => u
+    A: () => d
 });
-var r = n(627968);
+var a = n(627968);
 n(64700);
 var i = n(435371),
-    a = n(397927),
-    o = n(769015),
+    r = n(397927),
+    l = n(769015),
     s = n(985018),
-    l = n(999584);
+    o = n(999584);
 
 function c(e) {
     let {
         application: t,
         children: n
     } = e;
-    return (0, r.jsx)(i.un, {
-        asset: (0, r.jsx)(o.A, {
-            size: o.M.MEDIUM_LARGE,
+    return (0, a.jsx)(i.un, {
+        asset: (0, a.jsx)(l.A, {
+            size: l.M.MEDIUM_LARGE,
             game: t
         }),
         body: s.intl.format(s.t.J3s8JP, {
@@ -27,23 +26,23 @@ function c(e) {
         position: "top",
         asContainer: !0,
         "aria-label": s.intl.string(s.t["5nMcv1"]),
-        children: (0, r.jsx)(a.DUT, {
+        children: (0, a.jsx)(r.DUT, {
             tag: "span",
             children: n
         })
     })
 }
 
-function u(e) {
+function d(e) {
     let {
         application: t,
         compact: n,
         children: i
     } = e;
-    return (0, r.jsxs)(c, {
+    return (0, a.jsxs)(c, {
         application: t,
-        children: [n ? null : (0, r.jsx)(a._xR, {
-            className: l.Gt,
+        children: [n ? null : (0, a.jsx)(r._xR, {
+            className: o.Gt,
             size: "custom",
             width: 14,
             height: 14

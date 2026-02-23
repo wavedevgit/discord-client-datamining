@@ -1,40 +1,43 @@
 /** chunk id: 704037, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    l: () => h
-}), n(896048), n(667532);
-var r = n(627968),
-    l = n(64700),
-    i = n(311907),
-    s = n(397927),
+    l: () => A
+}), n(667532);
+var i = n(627968),
+    s = n(64700),
+    l = n(311907),
+    r = n(397927),
     a = n(573435),
     o = n(71393),
     c = n(967198),
-    u = n(743790),
-    d = n(960016);
+    d = n(743790),
+    u = n(960016);
 
-function p(e) {
+function h(e) {
     let {
-        children: t
+        children: t,
+        iconSize: n
     } = e;
-    return (0, r.jsx)(a.Ay, {
-        className: d.Iu,
+    return (0, i.jsx)(a.Ay, {
+        className: u.Iu,
         mask: a.Ay.Masks.SQUIRCLE,
-        width: 25,
-        height: 25,
+        width: n + 5,
+        height: n + 5,
         children: t
     })
 }
 
-function h(e) {
+function A(e) {
     let {
-        guildIds: t
-    } = e, n = (0, i.bG)([c.A], () => c.A.getGuildId()), a = (0, i.yK)([o.A], () => t.map(e => o.A.getGuild(e)), [t]), h = (0, l.useMemo)(() => a.filter(e => null != e), [a]), {
+        guildIds: t,
+        iconSize: n = 20
+    } = e, a = (0, l.bG)([c.A], () => c.A.getGuildId()), A = (0, l.yK)([o.A], () => t.map(e => o.A.getGuild(e)), [t]), p = (0, s.useMemo)(() => A.filter(e => null != e), [A]), {
         visibleGuilds: g,
-        numTruncated: f
-    } = (0, l.useMemo)(() => {
-        let e = [...h];
-        if (null != n) {
-            let t = h.findIndex(e => e.id === n); - 1 !== t && (e.splice(t, 1), e.unshift(h[t]))
+        numTruncated: m
+    } = (0, s.useMemo)(() => {
+        let e = [...p];
+        if (null != a) {
+            let t = p.findIndex(e => e.id === a); - 1 !== t && (e.splice(t, 1), e.unshift(p[t]))
         }
         return 4 === e.length ? {
             visibleGuilds: e,
@@ -45,20 +48,22 @@ function h(e) {
             visibleGuilds: e.slice(0, 3),
             numTruncated: e.length - 3
         }
-    }, [h, n]);
-    return (0, r.jsxs)("div", {
-        className: d.WM,
-        children: [g.map(e => (0, r.jsx)(p, {
-            children: (0, r.jsx)(u.$, {
+    }, [p, a]);
+    return (0, i.jsxs)("div", {
+        className: u.WM,
+        children: [g.map(e => (0, i.jsx)(h, {
+            iconSize: n,
+            children: (0, i.jsx)(d.$, {
                 guild: e,
-                size: 20
+                size: n
             })
-        }, e.id)), f > 0 && (0, r.jsx)(p, {
-            children: (0, r.jsxs)(s.Text, {
-                className: d.br,
+        }, e.id)), m > 0 && (0, i.jsx)(h, {
+            iconSize: n,
+            children: (0, i.jsxs)(r.Text, {
+                className: u.br,
                 color: "text-subtle",
                 variant: "text-xxs/semibold",
-                children: ["+", f]
+                children: ["+", m]
             })
         })]
     })

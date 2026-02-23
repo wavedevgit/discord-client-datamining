@@ -1,30 +1,30 @@
-/** chunk id: 927197, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => s
+/** chunk id: 927197, original params: t,e,n (module,exports,require) **/
+n.d(e, {
+    A: () => u
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(311907),
+var r = n(311907),
     a = n(397927),
-    o = n(610411),
+    l = n(610411),
     c = n(894010),
-    l = n(495756),
-    u = n(985018);
+    o = n(495756),
+    s = n(985018);
 
-function s(e, t) {
-    let n = (0, i.bG)([l.A], () => l.A.getMute(e)),
-        s = !n;
-    return (0, r.jsx)(a.sLh, {
+function u(t, e) {
+    let n = (0, r.bG)([o.A], () => o.A.getMute(t)),
+        u = !n;
+    return (0, i.jsx)(a.sLh, {
         id: "mute-game",
-        label: u.intl.string(u.t["6EwEwp"]),
+        label: s.intl.string(s.t["6EwEwp"]),
         checked: n,
         action: () => {
-            (0, o.i1)({
-                gameName: t,
-                applicationId: e,
-                label: s ? o.VD.MUTED : o.VD.UNMUTED,
-                source: o.eh.GAME_CONTEXT_MENU
-            }), (0, c.b)(e, s)
+            (0, l.i1)({
+                gameName: e,
+                applicationId: t,
+                label: u ? l.VD.MUTED : l.VD.UNMUTED,
+                source: l.eh.GAME_CONTEXT_MENU
+            }), (0, c.b)(t, u)
         }
     })
 }

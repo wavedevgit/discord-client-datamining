@@ -1,27 +1,25 @@
-/** chunk id: 573481, original params: e,l,t (module,exports,require) **/
-t.d(l, {
+/** chunk id: 573481, original params: e,t,l (module,exports,require) **/
+l.d(t, {
     A: () => c
-}), t(896048);
-var n = t(812729),
-    s = t.n(n),
-    a = t(311907),
-    i = t(505527),
-    r = t(956703),
-    o = t(652215);
+});
+var s = l(812729),
+    a = l.n(s),
+    n = l(311907),
+    i = l(505527),
+    r = l(956703),
+    o = l(652215);
 
 function c(e) {
-    var l, t;
     let {
-        channelId: n,
-        messageId: c,
-        reaction: d
-    } = e, u = (0, a.bG)([r.A], () => {
-        var e;
-        let l = r.A.getReactions(n, c, d.emoji, o.WxW, i.v.VOTE);
-        return Array.from(null != (e = null == l ? void 0 : l.values()) ? e : [])
-    }, [n, c, d.emoji], s());
+        channelId: t,
+        messageId: l,
+        reaction: s
+    } = e, c = (0, n.bG)([r.A], () => {
+        let e = r.A.getReactions(t, l, s.emoji, o.WxW, i.v.VOTE);
+        return Array.from(e?.values() ?? [])
+    }, [t, l, s.emoji], a());
     return {
-        reactors: u,
-        hasMore: (null != (l = null == (t = d.count_details) ? void 0 : t.vote) ? l : 0) > u.length
+        reactors: c,
+        hasMore: (s.count_details?.vote ?? 0) > c.length
     }
 }

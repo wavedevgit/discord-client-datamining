@@ -1,12 +1,12 @@
-/** chunk id: 21251, original params: e,t,r (module,exports,require) **/
+/** chunk id: 21251, original params: e,t,a (module,exports,require) **/
 "use strict";
-r.d(t, {
-    i: () => s
+a.d(t, {
+    i: () => n
 });
-var n = r(333748),
-    a = r(652215);
+var s = a(333748),
+    r = a(652215);
 
-function s(e) {
+function n(e) {
     let t = null;
-    return e === n.i.PLAYSTATION_APPLICATION_ID ? t = a.fg2.PLAYSTATION : e === n.i.PLAYSTATION_STAGING_APPLICATION_ID && (t = a.fg2.PLAYSTATION_STAGING), t
+    return e === s.i.PLAYSTATION_APPLICATION_ID ? t = r.fg2.PLAYSTATION : e === s.i.PLAYSTATION_STAGING_APPLICATION_ID && (t = r.fg2.PLAYSTATION_STAGING), t
 }

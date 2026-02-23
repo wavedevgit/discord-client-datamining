@@ -1,14 +1,14 @@
 /** chunk id: 112715, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    Z: () => i
+    Z: () => s
 });
-var r = n(964486);
+var i = n(964486);
 
-function i(e) {
-    (0, r.Ay)(() => {
-        let t = null == e ? void 0 : e();
+function s(e) {
+    (0, i.Ay)(() => {
+        let t = e?.();
         return () => {
-            null == t || t()
+            t?.()
         }
     })
 }

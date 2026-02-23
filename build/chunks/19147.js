@@ -1,76 +1,16 @@
-/** chunk id: 19147, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    S: () => y
-}), n(896048), n(228524);
-var r = n(627968),
-    i = n(64700),
-    a = n(540637),
-    o = n(978617),
-    s = n(158954),
-    l = n(389723),
-    c = n(783878),
-    u = n(379649);
-
-function d(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-
-function f(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            d(e, t, n[t])
-        })
-    }
-    return e
-}
-
-function p(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-        var r = Object.getOwnPropertySymbols(e);
-        t && (r = r.filter(function(t) {
-            return Object.getOwnPropertyDescriptor(e, t).enumerable
-        })), n.push.apply(n, r)
-    }
-    return n
-}
-
-function _(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-
-function h(e, t) {
-    if (null == e) return {};
-    var n, r, i, a = {};
-    if ("u" > typeof Reflect && Reflect.ownKeys) {
-        for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
-        return a
-    }
-    if (a = m(e, t), Object.getOwnPropertySymbols)
-        for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
-    return a
-}
-
-function m(e, t) {
-    if (null == e) return {};
-    var n, r, i = {},
-        a = Object.getOwnPropertyNames(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
-    return i
-}
-let g = [{
+/** chunk id: 19147, original params: e,l,a (module,exports,require) **/
+a.d(l, {
+    S: () => p
+});
+var t = a(627968),
+    o = a(64700),
+    n = a(540637),
+    i = a(978617),
+    s = a(158954),
+    r = a(389723),
+    d = a(783878),
+    u = a(379649);
+let c = [{
         label: "Aardvark",
         value: "aardvark",
         id: "aardvark"
@@ -96,7 +36,7 @@ let g = [{
         id: "snake",
         disabled: !0
     }],
-    E = [{
+    b = [{
         label: "Aardvark",
         value: "aardvark",
         id: "aardvark",
@@ -139,27 +79,30 @@ let g = [{
         leading: s.N$i,
         disabled: !0
     }],
-    y = {
+    p = {
         title: "Select",
         stories: [{
             id: "select",
             name: "Select",
             component: function(e) {
                 let {
-                    selectionMode: t,
-                    withLeadingAndTrailing: n
-                } = e, a = h(e, ["selectionMode", "withLeadingAndTrailing"]), [s, l] = i.useState(void 0), [c, u] = i.useState([]), d = b(n, a.asyncOptions);
-                return "single" === t ? (0, r.jsx)(o.l6, _(f({}, a), {
-                    selectionMode: t,
-                    options: d,
-                    onSelectionChange: l,
+                    selectionMode: l,
+                    withLeadingAndTrailing: a,
+                    ...n
+                } = e, [s, r] = o.useState(void 0), [d, u] = o.useState([]), c = m(a, n.asyncOptions);
+                return "single" === l ? (0, t.jsx)(i.l6, {
+                    ...n,
+                    selectionMode: l,
+                    options: c,
+                    onSelectionChange: r,
                     value: s
-                })) : (0, r.jsx)(o.l6, _(f({}, a), {
-                    selectionMode: t,
-                    options: d,
+                }) : (0, t.jsx)(i.l6, {
+                    ...n,
+                    selectionMode: l,
+                    options: c,
                     onSelectionChange: u,
-                    value: c
-                }))
+                    value: d
+                })
             },
             controls: {
                 selectionMode: {
@@ -280,21 +223,24 @@ let g = [{
             name: "SearchableSelect",
             component: function(e) {
                 let {
-                    selectionMode: t,
-                    withLeadingAndTrailing: n,
-                    asyncOptions: a
-                } = e, o = h(e, ["selectionMode", "withLeadingAndTrailing", "asyncOptions"]), [s, l] = i.useState(void 0), [u, d] = i.useState([]), p = b(n, a);
-                return "single" === t ? (0, r.jsx)(c.Z, _(f({}, o), {
-                    selectionMode: t,
-                    onSelectionChange: l,
+                    selectionMode: l,
+                    withLeadingAndTrailing: a,
+                    asyncOptions: n,
+                    ...i
+                } = e, [s, r] = o.useState(void 0), [u, c] = o.useState([]), b = m(a, n);
+                return "single" === l ? (0, t.jsx)(d.Z, {
+                    ...i,
+                    selectionMode: l,
+                    onSelectionChange: r,
                     value: s,
-                    options: p
-                })) : (0, r.jsx)(c.Z, _(f({}, o), {
-                    selectionMode: t,
-                    onSelectionChange: d,
+                    options: b
+                }) : (0, t.jsx)(d.Z, {
+                    ...i,
+                    selectionMode: l,
+                    onSelectionChange: c,
                     value: u,
-                    options: p
-                }))
+                    options: b
+                })
             },
             controls: {
                 selectionMode: {
@@ -395,39 +341,40 @@ let g = [{
             name: "ComboBox",
             component: function(e) {
                 let {
-                    selectionMode: t,
-                    label: n,
-                    hideLabel: a,
-                    description: o,
+                    selectionMode: l,
+                    label: a,
+                    hideLabel: n,
+                    description: i,
                     helperText: s,
-                    errorMessage: c,
+                    errorMessage: d,
                     successMessage: u,
-                    wrapTags: d,
-                    withLeadingAndTrailing: p,
-                    placeholder: m
-                } = e, g = h(e, ["selectionMode", "label", "hideLabel", "description", "helperText", "errorMessage", "successMessage", "wrapTags", "withLeadingAndTrailing", "placeholder"]), {
-                    required: E,
-                    disabled: y
-                } = g, O = b(p, g.asyncOptions), [v, A] = i.useState(null);
-                return (0, r.jsxs)(l.iS, _(f({
-                    selectionMode: t,
-                    onSelectionChange: A,
-                    options: O,
-                    value: v
-                }, g), {
-                    children: [(0, r.jsx)(l.a3, {
-                        label: n,
-                        hideLabel: a,
-                        placeholder: m,
-                        required: E,
-                        disabled: y,
-                        description: o,
+                    wrapTags: c,
+                    withLeadingAndTrailing: b,
+                    placeholder: p,
+                    ...x
+                } = e, {
+                    required: v,
+                    disabled: h
+                } = x, y = m(b, x.asyncOptions), [f, g] = o.useState(null);
+                return (0, t.jsxs)(r.iS, {
+                    selectionMode: l,
+                    onSelectionChange: g,
+                    options: y,
+                    value: f,
+                    ...x,
+                    children: [(0, t.jsx)(r.a3, {
+                        label: a,
+                        hideLabel: n,
+                        placeholder: p,
+                        required: v,
+                        disabled: h,
+                        description: i,
                         helperText: s,
-                        errorMessage: c,
+                        errorMessage: d,
                         successMessage: u,
-                        wrapTags: d
-                    }), (0, r.jsx)(l.X2, {})]
-                }))
+                        wrapTags: c
+                    }), (0, t.jsx)(r.X2, {})]
+                })
             },
             controls: {
                 selectionMode: {
@@ -523,18 +470,18 @@ let g = [{
             name: "ListBox",
             component: function(e) {
                 let {
-                    selectionMode: t,
-                    required: n,
-                    shouldFocusWrap: o,
+                    selectionMode: l,
+                    required: a,
+                    shouldFocusWrap: i,
                     withLeadingAndTrailing: s
-                } = e, [l, c] = i.useState(null);
-                return (0, r.jsx)(a.q, {
-                    selectionMode: t,
-                    required: n,
-                    shouldFocusWrap: o,
-                    items: s ? E : g,
-                    onSelectionChange: c,
-                    selectedItems: l
+                } = e, [r, d] = o.useState(null);
+                return (0, t.jsx)(n.q, {
+                    selectionMode: l,
+                    required: a,
+                    shouldFocusWrap: i,
+                    items: s ? b : c,
+                    onSelectionChange: d,
+                    selectedItems: r
                 })
             },
             controls: {
@@ -569,10 +516,10 @@ let g = [{
         }]
     };
 
-function b(e, t) {
-    let n = i.useRef(null);
-    return i.useMemo(() => {
-        let r = e ? E : g;
-        return t ? e => new Promise(null != n.current ? e => e(n.current) : e => setTimeout(() => (n.current = r, e(r)), 1e3)) : r
-    }, [e, t])
+function m(e, l) {
+    let a = o.useRef(null);
+    return o.useMemo(() => {
+        let t = e ? b : c;
+        return l ? e => new Promise(null != a.current ? e => e(a.current) : e => setTimeout(() => (a.current = t, e(t)), 1e3)) : t
+    }, [e, l])
 }

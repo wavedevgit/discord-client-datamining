@@ -3,10 +3,10 @@
 n.d(t, {
     S: () => o
 });
-var r = n(627968),
-    i = n(64700),
+var i = n(627968),
+    s = n(64700),
     l = n(95035),
-    s = n(192701);
+    r = n(192701);
 
 function a(e) {
     return e
@@ -18,12 +18,12 @@ function o(e) {
         onMFAEnabled: n
     } = e, {
         isUserMFAEnabled: o,
-        isModerationMFAEnabled: c
-    } = (0, s.f)(), d = i.useCallback(async () => {
-        await t(), null == n || n()
-    }, [t, n]), u = i.useCallback(e => (0, r.jsx)(l.A, {
-        onClick: d,
+        isModerationMFAEnabled: d
+    } = (0, r.f)(), c = s.useCallback(async () => {
+        await t(), n?.()
+    }, [t, n]), u = s.useCallback(e => (0, i.jsx)(l.A, {
+        onClick: c,
         children: e
-    }), [d]);
-    return o && c ? a : u
+    }), [c]);
+    return o && d ? a : u
 }

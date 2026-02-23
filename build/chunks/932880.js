@@ -1,80 +1,23 @@
-/** chunk id: 932880, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    d: () => f
+/** chunk id: 932880, original params: e,l,a (module,exports,require) **/
+a.d(l, {
+    d: () => s
 });
-var r = n(627968),
-    i = n(206471),
-    a = n(397927),
-    o = n(860606);
-
-function s(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-
-function l(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            s(e, t, n[t])
-        })
-    }
-    return e
-}
-
-function c(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-        var r = Object.getOwnPropertySymbols(e);
-        t && (r = r.filter(function(t) {
-            return Object.getOwnPropertyDescriptor(e, t).enumerable
-        })), n.push.apply(n, r)
-    }
-    return n
-}
-
-function u(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : c(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-
-function d(e) {
-    return (0, r.jsx)(a.ArX, {
-        className: o.H,
-        children: Object.values(i.O).map(t => (0, r.jsxs)(a.ZpM, {
-            className: o.N,
-            children: [(0, r.jsx)(a.Text, u(l({}, e), {
-                variant: t,
-                children: e.children
-            })), (0, r.jsx)(a.Text, {
-                variant: "text-xs/normal",
-                color: "text-subtle",
-                children: t
-            })]
-        }, t))
-    })
-}
-let f = {
+var t = a(627968),
+    o = a(206471),
+    n = a(397927),
+    i = a(860606);
+let s = {
     title: "Text",
     stories: [{
         name: "Text",
         id: "text",
-        component: a.Text,
+        component: n.Text,
         controls: {
             variant: {
                 label: "Variant",
                 type: "select",
                 defaultValue: "text-sm/normal",
-                options: Object.values(i.O).map(e => ({
+                options: Object.values(o.O).map(e => ({
                     label: e,
                     value: e
                 }))
@@ -127,7 +70,23 @@ let f = {
     }, {
         name: "Typography Scales",
         id: "text-scales",
-        component: d,
+        component: function(e) {
+            return (0, t.jsx)(n.ArX, {
+                className: i.H,
+                children: Object.values(o.O).map(l => (0, t.jsxs)(n.ZpM, {
+                    className: i.N,
+                    children: [(0, t.jsx)(n.Text, {
+                        ...e,
+                        variant: l,
+                        children: e.children
+                    }), (0, t.jsx)(n.Text, {
+                        variant: "text-xs/normal",
+                        color: "text-subtle",
+                        children: l
+                    })]
+                }, l))
+            })
+        },
         controls: {
             children: {
                 label: "Text",

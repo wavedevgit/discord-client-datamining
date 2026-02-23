@@ -2,15 +2,15 @@
 "use strict";
 n.d(t, {
     A: () => u
-}), n(321073), n(638769);
-var r = n(64700),
-    i = n(975807),
+}), n(321073);
+var i = n(64700),
+    s = n(975807),
     l = n(258328),
-    s = n(975571),
+    r = n(975571),
     a = n(354390),
     o = n(192701),
-    c = n(652215),
-    d = n(985018);
+    d = n(652215),
+    c = n(985018);
 
 function u(e) {
     let {
@@ -18,88 +18,87 @@ function u(e) {
         actions: n,
         sortedByIneligible: u
     } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, {
-        isUserMFAEnabled: g,
-        isModerationMFAEnabled: m
-    } = (0, o.f)(), p = r.useCallback(async () => {
-        var e, r;
-        g ? m || await (null == n || null == (r = n.onRequireModeratorMFAClick) ? void 0 : r.call(n)) : await (null == n || null == (e = n.onEnableMFAClick) ? void 0 : e.call(n)), null == t || t()
-    }, [g, m, t, n]), f = (0, a.S)({
-        onEnableMFAClick: p
+        isUserMFAEnabled: m,
+        isModerationMFAEnabled: g
+    } = (0, o.f)(), x = i.useCallback(async () => {
+        m ? g || await n?.onRequireModeratorMFAClick?.() : await n?.onEnableMFAClick?.(), t?.()
+    }, [m, g, t, n]), h = (0, a.S)({
+        onEnableMFAClick: x
     });
-    return r.useMemo(() => {
+    return i.useMemo(() => {
         if (null == e) return null;
         let {
             minimumOwnerAgeInYears: t,
-            minimumSize: r
+            minimumSize: i
         } = e, a = !e.noRecentViolations, o = [{
             key: "no_violations_requirement",
-            checkedLabel: d.intl.string(d.t["1lGNPZ"]),
-            uncheckedLabel: d.intl.string(d.t["D+gTJt"]),
-            description: d.intl.format(d.t.HFY0m6, {
-                communityGuidelinesUrl: s.A.getArticleURL(c.MVz.PUBLIC_GUILD_GUILDLINES)
+            checkedLabel: c.intl.string(c.t["1lGNPZ"]),
+            uncheckedLabel: c.intl.string(c.t["D+gTJt"]),
+            description: c.intl.format(c.t.HFY0m6, {
+                communityGuidelinesUrl: r.A.getArticleURL(d.MVz.PUBLIC_GUILD_GUILDLINES)
             }),
             checked: e.noRecentViolations,
-            actionLabel: a ? d.intl.string(d.t["xU2fl+"]) : void 0,
-            actionHandler: a ? () => (0, i.A)(s.A.getSubmitRequestURL()) : void 0
+            actionLabel: a ? c.intl.string(c.t["xU2fl+"]) : void 0,
+            actionHandler: a ? () => (0, s.A)(r.A.getSubmitRequestURL()) : void 0
         }];
         if (null != t && null != e.meetsOwnerAgeRequirement && o.push({
                 key: "owner_age_requirement",
-                checkedLabel: d.intl.string(d.t["+F8haD"]),
-                uncheckedLabel: d.intl.string(d.t["5BwC/O"]),
-                description: d.intl.formatToPlainString(d.t.DW1Vae, {
+                checkedLabel: c.intl.string(c.t["+F8haD"]),
+                uncheckedLabel: c.intl.string(c.t["5BwC/O"]),
+                description: c.intl.formatToPlainString(c.t.DW1Vae, {
                     minimumOwnerAgeInYears: t
                 }),
                 checked: e.meetsOwnerAgeRequirement
-            }), null != r && null != e.hasSufficientMembers && o.push({
+            }), null != i && null != e.hasSufficientMembers && o.push({
                 key: "member_count_requirement",
-                checkedLabel: d.intl.string(d.t.j7wXWo),
-                uncheckedLabel: d.intl.string(d.t.W0suNz),
-                description: d.intl.formatToPlainString(d.t.up53zR, {
-                    minimumSize: r
+                checkedLabel: c.intl.string(c.t.j7wXWo),
+                uncheckedLabel: c.intl.string(c.t.W0suNz),
+                description: c.intl.formatToPlainString(c.t.up53zR, {
+                    minimumSize: i
                 }),
                 checked: e.hasSufficientMembers
             }), null != e.minimumAgeInDays && null != e.meetsServerAgeRequirement && o.push({
                 key: "server_age_requirement",
-                checkedLabel: d.intl.string(d.t.mjbvWw),
-                uncheckedLabel: d.intl.string(d.t["9BV6L6"]),
-                description: d.intl.formatToPlainString(d.t.Zwv84O, {
+                checkedLabel: c.intl.string(c.t.mjbvWw),
+                uncheckedLabel: c.intl.string(c.t["9BV6L6"]),
+                description: c.intl.formatToPlainString(c.t.Zwv84O, {
                     minimumAge: (0, l.A)(e.minimumAgeInDays)
                 }),
                 checked: e.meetsServerAgeRequirement
             }), null != e.weeklyCommunicators && o.push({
                 key: "weekly_communicator_count_requirement",
-                checkedLabel: d.intl.string(d.t.Qw7qv4),
-                uncheckedLabel: d.intl.string(d.t.b45kGG),
-                description: d.intl.string(d.t.NbtjEC),
+                checkedLabel: c.intl.string(c.t.Qw7qv4),
+                uncheckedLabel: c.intl.string(c.t.b45kGG),
+                description: c.intl.string(c.t.NbtjEC),
                 checked: e.weeklyCommunicators
             }), null != e.hasMemberRetention && o.push({
                 key: "member_retention_requirement",
-                checkedLabel: d.intl.string(d.t.Qvq39M),
-                uncheckedLabel: d.intl.string(d.t.azHboI),
-                description: d.intl.string(d.t.u4rCYO),
+                checkedLabel: c.intl.string(c.t.Qvq39M),
+                uncheckedLabel: c.intl.string(c.t.azHboI),
+                description: c.intl.string(c.t.u4rCYO),
                 checked: e.hasMemberRetention
             }), o.push({
                 key: "nsfw_requirement",
-                checkedLabel: d.intl.string(d.t.bymfTb),
-                uncheckedLabel: d.intl.string(d.t["718pRA"]),
-                description: d.intl.string(d.t["5ZqX+j"]),
+                checkedLabel: c.intl.string(c.t.bymfTb),
+                uncheckedLabel: c.intl.string(c.t["718pRA"]),
+                description: c.intl.string(c.t["5ZqX+j"]),
                 checked: e.notNSFW
             }), null != e.hasEnabled2FA) {
-            let t = !e.hasEnabled2FA && !g && (null == n ? void 0 : n.onEnableMFAClick) != null,
-                r = !e.hasEnabled2FA && !m && (null == n ? void 0 : n.onRequireModeratorMFAClick) != null,
-                i = t || r;
+            let t = !e.hasEnabled2FA && !m && n?.onEnableMFAClick != null,
+                i = !e.hasEnabled2FA && !g && n?.onRequireModeratorMFAClick != null,
+                s = t || i;
             o.push({
                 key: "2fa_requirement",
-                checkedLabel: d.intl.string(d.t.NqVyFk),
-                uncheckedLabel: d.intl.string(d.t.VcDNIV),
-                description: d.intl.format(d.t["7NzkfV"], {
-                    enableMFAHook: f
+                checkedLabel: c.intl.string(c.t.NqVyFk),
+                uncheckedLabel: c.intl.string(c.t.VcDNIV),
+                description: c.intl.format(c.t["7NzkfV"], {
+                    enableMFAHook: h
                 }),
                 checked: e.hasEnabled2FA,
-                actionLabel: i ? d.intl.string(d.t.BU4Diu) : void 0,
-                actionHandler: i ? p : void 0
+                actionLabel: s ? c.intl.string(c.t.BU4Diu) : void 0,
+                actionHandler: s ? x : void 0
             })
         }
         return !0 === u && o.sort(e => e.checked ? 0 : -1), o
-    }, [e, u, g, n, m, f, p])
+    }, [e, u, m, n, g, h, x])
 }

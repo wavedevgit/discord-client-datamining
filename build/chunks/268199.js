@@ -1,129 +1,82 @@
 /** chunk id: 268199, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => m,
+    A: () => u,
     h: () => h
 });
-var i, r = n(627968);
+var i, l = n(627968);
 n(64700);
-var l = n(503698),
-    a = n.n(l),
-    s = n(421380),
+var s = n(503698),
+    a = n.n(s),
+    r = n(421380),
     o = n(397927),
-    c = n(985018),
-    d = n(734591);
+    d = n(985018),
+    c = n(734591),
+    u = ((i = {}).DENY = "DENY", i.PASSTHROUGH = "PASSTHROUGH", i.ALLOW = "ALLOW", i);
+let m = Object.keys(u);
 
-function u(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            i = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), i.forEach(function(t) {
-            var i;
-            i = n[t], t in e ? Object.defineProperty(e, t, {
-                value: i,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = i
-        })
-    }
-    return e
-}
-
-function p(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var i = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, i)
-        }
-        return n
-    })(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-var m = ((i = {}).DENY = "DENY", i.PASSTHROUGH = "PASSTHROUGH", i.ALLOW = "ALLOW", i);
-let g = Object.keys(m);
-
-function b(e) {
+function g(e) {
     let {
         value: t = "PASSTHROUGH",
         onChange: n,
         labelledBy: i,
-        disabled: l = !1,
+        disabled: s = !1,
         id: o
-    } = e, c = (0, s._u)({
+    } = e, {
+        ref: d,
+        ...u
+    } = (0, r._u)({
         orientation: "horizontal",
-        isDisabled: l,
+        isDisabled: s,
         labelledBy: i
-    }), {
-        ref: m
-    } = c, b = function(e, t) {
-        if (null == e) return {};
-        var n, i, r, l = {};
-        if ("u" > typeof Reflect && Reflect.ownKeys) {
-            for (r = 0, n = Reflect.ownKeys(e); r < n.length; r++) i = n[r], !(t.indexOf(i) >= 0) && Object.prototype.propertyIsEnumerable.call(e, i) && (l[i] = e[i]);
-            return l
-        }
-        if (l = function(e, t) {
-                if (null == e) return {};
-                var n, i, r = {},
-                    l = Object.getOwnPropertyNames(e);
-                for (i = 0; i < l.length; i++) n = l[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n]);
-                return r
-            }(e, t), Object.getOwnPropertySymbols)
-            for (r = 0, n = Object.getOwnPropertySymbols(e); r < n.length; r++) i = n[r], !(t.indexOf(i) >= 0) && Object.prototype.propertyIsEnumerable.call(e, i) && (l[i] = e[i]);
-        return l
-    }(c, ["ref"]);
-    return (0, r.jsx)("div", p(u({
-        className: a()(d.Os, {
-            [d.r9]: l
+    });
+    return (0, l.jsx)("div", {
+        className: a()(c.Os, {
+            [c.r9]: s
         }),
-        ref: m,
-        id: o
-    }, b), {
-        children: g.map(e => (0, r.jsx)(f, {
+        ref: d,
+        id: o,
+        ...u,
+        children: m.map(e => (0, l.jsx)(x, {
             type: e,
             isSelected: t === e,
             onSelect: e => {
-                t === e || l || n(e)
+                t === e || s || n(e)
             }
         }, e))
-    }))
+    })
 }
 
-function f(e) {
+function x(e) {
     let t, n, i, {
-        type: l,
-        onSelect: m,
-        isSelected: g
+        type: s,
+        onSelect: u,
+        isSelected: m
     } = e;
-    switch (l) {
+    switch (s) {
         case "DENY":
-            i = c.intl.string(c.t["6639O5"]), t = o.PGe, n = d.Xg;
+            i = d.intl.string(d.t["6639O5"]), t = o.PGe, n = c.Xg;
             break;
         case "ALLOW":
-            i = c.intl.string(c.t.RzDfSk), t = o.A9s, n = d.cw;
+            i = d.intl.string(d.t.RzDfSk), t = o.A9s, n = c.cw;
             break;
         default:
-            i = c.intl.string(c.t.ujC3ZS), t = o.Fb4, n = d.le
+            i = d.intl.string(d.t.ujC3ZS), t = o.Fb4, n = c.le
     }
-    let b = (0, s.Gx)({
-        isSelected: g,
+    let g = (0, r.Gx)({
+        isSelected: m,
         label: i
     });
-    return (0, r.jsx)(o.DUT, p(u({
-        className: a()(d.AS, n, {
-            [d.wH]: g
+    return (0, l.jsx)(o.DUT, {
+        className: a()(c.AS, n, {
+            [c.wH]: m
         }),
-        onClick: () => m(l)
-    }, b), {
-        children: (0, r.jsx)(t, {
+        onClick: () => u(s),
+        ...g,
+        children: (0, l.jsx)(t, {
             color: "currentColor",
             size: "xs"
         })
-    }))
+    })
 }
-b.Types = m;
-let h = b
+g.Types = u;
+let h = g

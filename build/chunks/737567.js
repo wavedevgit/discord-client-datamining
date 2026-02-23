@@ -1,8 +1,8 @@
-/** chunk id: 737567, original params: e,t,r (module,exports,require) **/
-r.d(t, {
-    I: () => o
+/** chunk id: 737567, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    I: () => r
 });
-let n = (0, r(945810).mj)({
+let i = (0, n(945810).mj)({
         kind: "user",
         name: "2025-11-hide-manual-link",
         defaultConfig: {
@@ -14,6 +14,6 @@ let n = (0, r(945810).mj)({
             }
         }
     }),
-    o = e => n.useConfig({
+    r = e => i.useConfig({
         location: e
     }).isHidden

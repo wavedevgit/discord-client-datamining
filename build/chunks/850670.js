@@ -1,10 +1,9 @@
 /** chunk id: 850670, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    v: () => i
+    v: () => l
 });
-var r = n(652215);
+var i = n(652215);
 
-function i(e) {
-    var t;
-    return (null == (t = e.activity) ? void 0 : t.type) === r.xL.JOIN_REQUEST
+function l(e) {
+    return e.activity?.type === i.xL.JOIN_REQUEST
 }

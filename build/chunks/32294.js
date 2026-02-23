@@ -1,64 +1,62 @@
 /** chunk id: 32294, original params: e,t,n (module,exports,require) **/
-let r;
+let i;
 n.d(t, {
-    A: () => S
+    A: () => x
 });
-var i = n(73153),
+var r = n(73153),
     l = n(31728),
     a = n(272355),
     s = n(933958),
     o = n(313961),
-    c = n(652896),
-    u = n(869146),
-    d = n(616356),
-    p = n(734057),
+    d = n(652896),
+    c = n(869146),
+    u = n(616356),
+    A = n(734057),
     h = n(186111),
-    f = n(430452),
-    g = n(334463),
-    m = n(383501),
-    A = n(309010),
-    _ = n(967198),
-    b = n(977997),
-    E = n(652215),
-    O = n(731854);
+    _ = n(430452),
+    m = n(334463),
+    p = n(383501),
+    g = n(309010),
+    E = n(967198),
+    I = n(977997),
+    f = n(652215),
+    C = n(731854);
 
-function y() {
-    var e;
-    let t = r;
-    if (null == t || !g.A.isOpen(t)) return !1;
-    i.h.wait(() => l.VN(t)), null == (e = m.A.getRTCConnection()) || e.setPipOpen(!1), r = null
+function T() {
+    let e = i;
+    if (null == e || !m.A.isOpen(e)) return !1;
+    r.h.wait(() => l.VN(e)), p.A.getRTCConnection()?.setPipOpen(!1), i = null
 }
 
-function I() {
-    var e;
-    let t = m.A.getChannelId(),
-        n = r === t;
+function N() {
+    let e = p.A.getChannelId(),
+        t = i === e;
     if (function() {
-            let e = m.A.getChannelId(),
-                t = A.A.getChannelId();
-            if (!f.A.supports(O.O5.VIDEO) || u.A.getWindowOpen(E.MLl.CHANNEL_CALL_POPOUT)) return !0;
-            let n = null != e && d.A.getAllActiveStreams().some(t => !o.A.isParticipantPoppedOut(e, (0, c._z)(t)));
-            if (!(null != e && Object.values(b.A.getVideoVoiceStatesForChannel(e)).some(t => {
+            let e = p.A.getChannelId(),
+                t = g.A.getChannelId();
+            if (!_.Ay.supports(C.O5.VIDEO) || c.A.getWindowOpen(f.MLl.CHANNEL_CALL_POPOUT)) return !0;
+            let n = null != e && u.A.getAllActiveStreams().some(t => !o.A.isParticipantPoppedOut(e, (0, d._z)(t)));
+            if (!(null != e && Object.values(I.A.getVideoVoiceStatesForChannel(e)).some(t => {
                     let {
                         userId: n
                     } = t;
-                    return !f.A.isLocalVideoDisabled(n) && !o.A.isParticipantPoppedOut(e, n)
+                    return !_.Ay.isLocalVideoDisabled(n) && !o.A.isParticipantPoppedOut(e, n)
                 }) || n)) return !0;
-            let r = h.A.hasLayers();
-            return !(r && h.A.getLayers().includes(E.zgK.RTC_DEBUG)) && (!!r || e === t)
-        }()) return y();
-    if (n || y(), null == t) return !1;
-    let a = p.A.getChannel(t);
-    return !(null == a || g.A.isOpen(t)) && (i.h.wait(() => l.ho(a.id, E.o1q.VIDEO, {
-        channel: a
-    })), null == (e = m.A.getRTCConnection()) || e.setPipOpen(!0), void(r = t))
+            let i = h.A.hasLayers();
+            return !(i && h.A.getLayers().includes(f.zgK.RTC_DEBUG)) && (!!i || e === t)
+        }()) return T();
+    if (t || T(), null == e) return !1;
+    let n = A.A.getChannel(e);
+    return !(null == n || m.A.isOpen(e)) && (r.h.wait(() => l.ho(n.id, f.o1q.VIDEO, {
+        channel: n
+    })), p.A.getRTCConnection()?.setPipOpen(!0), void(i = e))
 }
-class v extends a.A {
+class S extends a.A {
     _initialize() {
-        A.A.addChangeListener(I), _.A.addChangeListener(I), m.A.addChangeListener(I), b.A.addChangeListener(I), h.A.addChangeListener(I), d.A.addChangeListener(I), u.A.addChangeListener(I), f.A.addChangeListener(I), s.Ay.addChangeListener(I), o.A.addChangeListener(I)
+        g.A.addChangeListener(N), E.A.addChangeListener(N), p.A.addChangeListener(N), I.A.addChangeListener(N), h.A.addChangeListener(N), u.A.addChangeListener(N), c.A.addChangeListener(N), _.Ay.addChangeListener(N), s.Ay.addChangeListener(N), o.A.addChangeListener(N)
     }
     _terminate() {
-        A.A.removeChangeListener(I), _.A.removeChangeListener(I), m.A.removeChangeListener(I), b.A.removeChangeListener(I), h.A.removeChangeListener(I), d.A.removeChangeListener(I), u.A.removeChangeListener(I), f.A.removeChangeListener(I), s.Ay.removeChangeListener(I), o.A.removeChangeListener(I)
+        g.A.removeChangeListener(N), E.A.removeChangeListener(N), p.A.removeChangeListener(N), I.A.removeChangeListener(N), h.A.removeChangeListener(N), u.A.removeChangeListener(N), c.A.removeChangeListener(N), _.Ay.removeChangeListener(N), s.Ay.removeChangeListener(N), o.A.removeChangeListener(N)
     }
 }
-let S = new v
+let x = new S

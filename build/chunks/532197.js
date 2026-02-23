@@ -1,44 +1,40 @@
-/** chunk id: 532197, original params: e,t,n (module,exports,require) **/
+/** chunk id: 532197, original params: e,t,r (module,exports,require) **/
 "use strict";
-n.d(t, {
-    A: () => g
+r.d(t, {
+    A: () => _
 });
-var i, s, r = n(627968),
-    l = n(64700),
-    o = n(503698),
-    a = n.n(o),
-    d = n(397927),
-    u = n(262633);
-let c = {
+var n = r(627968),
+    a = r(64700),
+    s = r(503698),
+    l = r.n(s),
+    i = r(397927),
+    c = r(262633);
+let o = {
         UP: "up",
         RIGHT: "right",
         DOWN: "down",
         LEFT: "left"
     },
-    h = {
-        [c.UP]: "",
-        [c.RIGHT]: u.pG,
-        [c.DOWN]: u.TR,
-        [c.LEFT]: u.kb
+    u = {
+        [o.UP]: "",
+        [o.RIGHT]: c.pG,
+        [o.DOWN]: c.TR,
+        [o.LEFT]: c.kb
     };
-class p extends(s = l.PureComponent) {
+class d extends a.PureComponent {
+    static Directions = o;
     render() {
         let {
             direction: e,
             className: t
         } = this.props;
-        return (0, r.jsx)(d.z$m, {
+        return (0, n.jsx)(i.z$m, {
             size: "md",
             color: "currentColor",
-            className: a()(t, {
-                [h[e]]: !0
+            className: l()(t, {
+                [u[e]]: !0
             })
         })
     }
-}(i = "Directions") in p ? Object.defineProperty(p, i, {
-    value: c,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
-}) : p[i] = c;
-let g = p
+}
+let _ = d

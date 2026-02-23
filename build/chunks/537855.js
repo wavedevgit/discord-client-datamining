@@ -3,45 +3,45 @@ n.d(t, {
     K: () => u
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(735438),
+    l = n(64700),
+    s = n(735438),
     a = n(158954),
-    s = n(397927),
+    r = n(397927),
     o = n(770178),
-    c = n(985018),
-    d = n(155135);
+    d = n(985018),
+    c = n(155135);
 
 function u(e) {
     let {
         hasInvites: t,
         setHeight: n,
         onShowDisableInvites: u,
-        onShowInviteModal: p,
-        hasInviteDisabledPermission: m,
-        invitesDisabled: g,
-        canCreateInvites: b
-    } = e, f = r.useMemo(() => (0, l.debounce)(n, 100), [n]), h = r.useCallback(e => {
+        onShowInviteModal: m,
+        hasInviteDisabledPermission: g,
+        invitesDisabled: x,
+        canCreateInvites: h
+    } = e, p = l.useMemo(() => (0, s.debounce)(n, 100), [n]), A = l.useCallback(e => {
         let t = e.contentRect;
-        null != t && f(t.height)
-    }, [f]), x = (0, o.w)(h);
+        null != t && p(t.height)
+    }, [p]), b = (0, o.w)(A);
     return (0, i.jsxs)("div", {
-        ref: x,
-        className: d.o,
+        ref: b,
+        className: c.o,
         children: [(0, i.jsx)(a.DZT, {
             variant: "text-xs/bold",
             color: "text-muted",
-            className: d.U,
-            children: t ? c.intl.string(c.t.DjWsya) : c.intl.string(c.t.AmwmLg)
+            className: c.U,
+            children: t ? d.intl.string(d.t.DjWsya) : d.intl.string(d.t.AmwmLg)
         }), (0, i.jsxs)(a.e2v, {
-            children: [(0, i.jsx)(s.Button, {
-                variant: g ? "primary" : "critical-secondary",
-                text: g ? c.intl.string(c.t["/dbw3H"]) : c.intl.string(c.t.Uwsjn6),
+            children: [(0, i.jsx)(r.Button, {
+                variant: x ? "primary" : "critical-secondary",
+                text: x ? d.intl.string(d.t["/dbw3H"]) : d.intl.string(d.t.Uwsjn6),
                 onClick: u,
-                disabled: !m
-            }), !0 === b ? (0, i.jsx)(s.Button, {
+                disabled: !g
+            }), !0 === h ? (0, i.jsx)(r.Button, {
                 variant: "primary",
-                text: c.intl.string(c.t.KmK3q4),
-                onClick: p
+                text: d.intl.string(d.t.KmK3q4),
+                onClick: m
             }) : null]
         })]
     })

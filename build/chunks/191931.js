@@ -2,19 +2,19 @@
 n.d(t, {
     A: () => o
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(503698),
-    l = n.n(i),
+var l = n(503698),
+    r = n.n(l),
     a = n(985018),
     s = n(592483);
 let o = e => {
     let {
         className: t
     } = e;
-    return (0, r.jsx)("div", {
-        className: l()(s.T, t),
-        children: (0, r.jsx)("span", {
+    return (0, i.jsx)("div", {
+        className: r()(s.T, t),
+        children: (0, i.jsx)("span", {
             className: s.Q,
             children: a.intl.string(a.t["14lP0W"])
         })

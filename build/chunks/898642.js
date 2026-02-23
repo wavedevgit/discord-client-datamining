@@ -1,57 +1,41 @@
 /** chunk id: 898642, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => m
-}), n(896048);
-var r = n(627968);
+    A: () => p
+});
+var i = n(627968);
 n(64700);
-var i = n(311907),
+var r = n(311907),
     l = n(827734),
     a = n(397927),
     s = n(773669),
     o = n(287809),
-    c = n(954571),
-    u = n(975571),
-    d = n(427262),
-    p = n(58736),
+    d = n(954571),
+    c = n(975571),
+    u = n(427262),
+    A = n(58736),
     h = n(652215),
-    f = n(985018);
-let g = new Set(["ko", "ja"]);
+    _ = n(985018);
+let m = new Set(["ko", "ja"]);
 
-function m(e) {
+function p(e) {
     let {
         className: t,
         focusSectionProps: n
-    } = e, m = (0, i.bG)([o.default], () => o.default.getCurrentUser()), A = (0, i.bG)([s.default], () => s.default.locale), _ = (0, d.mv)(m);
-    return (0, r.jsx)(a.MzZ, {
-        href: u.C,
+    } = e, p = (0, r.bG)([o.default], () => o.default.getCurrentUser()), g = (0, r.bG)([s.default], () => s.default.locale), E = (0, u.mv)(p);
+    return (0, i.jsx)(a.MzZ, {
+        href: c.C,
         target: "_blank",
         tabIndex: -1,
-        children: (0, r.jsx)(p.In, function(e) {
-            for (var t = 1; t < arguments.length; t++) {
-                var n = null != arguments[t] ? arguments[t] : {},
-                    r = Object.keys(n);
-                "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                    return Object.getOwnPropertyDescriptor(n, e).enumerable
-                }))), r.forEach(function(t) {
-                    var r;
-                    r = n[t], t in e ? Object.defineProperty(e, t, {
-                        value: r,
-                        enumerable: !0,
-                        configurable: !0,
-                        writable: !0
-                    }) : e[t] = r
-                })
-            }
-            return e
-        }({
-            color: _ ? l.A.unsafe_rawColors.GREEN_360.css : "currentColor",
+        children: (0, i.jsx)(A.In, {
+            color: E ? l.A.unsafe_rawColors.GREEN_360.css : "currentColor",
             className: t,
-            onClick: () => c.default.track(h.HAw.HELP_CLICKED, {
-                highlighted: _
+            onClick: () => d.default.track(h.HAw.HELP_CLICKED, {
+                highlighted: E
             }),
             icon: a.cBN,
-            tooltipPosition: g.has(A) ? "left" : void 0,
-            tooltip: f.intl.string(f.t["cqEoj/"])
-        }, n))
+            tooltipPosition: m.has(g) ? "left" : void 0,
+            tooltip: _.intl.string(_.t["cqEoj/"]),
+            ...n
+        })
     })
 }

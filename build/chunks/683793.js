@@ -1,25 +1,24 @@
-/** chunk id: 683793, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    A: () => f
+/** chunk id: 683793, original params: e,s,t (module,exports,require) **/
+t.d(s, {
+    A: () => d
 });
-var r = n(627968);
-n(64700);
-var i = n(582754),
-    a = n(421380),
-    o = n(397927),
-    s = n(736653),
-    l = n(985018),
-    c = n(250277),
-    u = n(492735),
-    d = n(350045);
-let f = function(e) {
+var r = t(627968);
+t(64700);
+var a = t(582754),
+    i = t(421380),
+    n = t(397927),
+    l = t(736653),
+    o = t(985018),
+    c = t(250277),
+    m = t(492735),
+    u = t(350045);
+let d = function(e) {
     let {
-        churnUserDiscountOffer: t,
-        onDiscountClaim: n,
-        onContinue: f
-    } = e, p = (0, s.Ay)(), _ = (0, i.Mw)(p) ? u : d;
-    return null == t ? null : (0, r.jsxs)("div", {
+        churnUserDiscountOffer: s,
+        onDiscountClaim: t,
+        onContinue: d
+    } = e, x = (0, l.Ay)(), p = (0, a.Mw)(x) ? m : u;
+    return null == s ? null : (0, r.jsxs)("div", {
         className: c.bR,
         children: [(0, r.jsx)("div", {
             className: c.v0
@@ -31,39 +30,39 @@ let f = function(e) {
                 className: c.xt,
                 children: [(0, r.jsx)("img", {
                     alt: "",
-                    src: _,
+                    src: p,
                     className: c.lR
                 }), (0, r.jsxs)("div", {
                     className: c.t2,
-                    children: [(0, r.jsx)(o.Text, {
+                    children: [(0, r.jsx)(n.Text, {
                         variant: "text-md/medium",
                         className: c.PU,
-                        children: l.intl.format(l.t["2gem05"], {
-                            percent: t.discount.amount,
-                            numMonths: t.discount.user_usage_limit
+                        children: o.intl.format(o.t["2gem05"], {
+                            percent: s.discount.amount,
+                            numMonths: s.discount.user_usage_limit
                         })
                     }), (0, r.jsxs)("div", {
                         className: c.$t,
-                        children: [(0, r.jsxs)(o.wLn, {
+                        children: [(0, r.jsxs)(n.wLn, {
                             "data-migration-pending": !0,
                             className: c.Oy,
                             innerClassName: c.iO,
-                            look: a.pR.OUTLINED,
-                            color: a.XD.CUSTOM,
-                            onClick: () => null == n ? void 0 : n(),
-                            children: [(0, r.jsx)(o.tvc, {
+                            look: i.pR.OUTLINED,
+                            color: i.XD.CUSTOM,
+                            onClick: () => t?.(),
+                            children: [(0, r.jsx)(n.tvc, {
                                 size: "xs",
                                 color: "currentColor",
                                 className: c.Fl
-                            }), (0, r.jsx)(o.Text, {
+                            }), (0, r.jsx)(n.Text, {
                                 variant: "text-sm/semibold",
                                 className: c.H0,
-                                children: l.intl.string(l.t.zrCzVB)
+                                children: o.intl.string(o.t.zrCzVB)
                             })]
-                        }), (0, r.jsx)(o.Button, {
+                        }), (0, r.jsx)(n.Button, {
                             variant: "primary",
-                            text: l.intl.string(l.t["3PatSz"]),
-                            onClick: () => null == f ? void 0 : f()
+                            text: o.intl.string(o.t["3PatSz"]),
+                            onClick: () => d?.()
                         })]
                     })]
                 })]

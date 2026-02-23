@@ -31,6 +31,5 @@ e.exports = {
     pV: "noItemsIcon_e335a7",
     yW: "boostingDesktopAppBlurb_e335a7",
     oU: "duplicateSubscriptionsBanner_e335a7",
-    dk: "duplicateSubscriptionsBannerText_e335a7",
-    dn: "helpNoticeDismissIcon_e335a7"
+    dk: "duplicateSubscriptionsBannerText_e335a7"
 }

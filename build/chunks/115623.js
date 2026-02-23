@@ -1,45 +1,45 @@
-/** chunk id: 115623, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    default: () => c
+/** chunk id: 115623, original params: t,e,a (module,exports,require) **/
+a.d(e, {
+    default: () => d
 });
-var a = i(627968);
-i(64700);
-var r = i(158954),
-    n = i(397927),
-    s = i(915089),
-    l = i(985018),
-    o = i(399675),
-    d = i(938430);
+var i = a(627968);
+a(64700);
+var r = a(158954),
+    s = a(397927),
+    n = a(915089),
+    l = a(985018),
+    o = a(399675),
+    c = a(938430);
 
-function c(t) {
+function d(t) {
     let {
         transitionState: e,
-        onClose: i,
-        storeListing: c,
-        subscription: u
-    } = t, p = (0, s.GV)();
-    return (0, a.jsx)(r.ExpressiveModal, {
+        onClose: a,
+        storeListing: d,
+        subscription: p
+    } = t, u = (0, n.GV)();
+    return (0, i.jsx)(r.ExpressiveModal, {
         actions: [{
             variant: "secondary",
-            onClick: i,
+            onClick: a,
             text: l.intl.string(l.t["JtWl+a"])
         }],
-        "aria-labelledby": p,
+        "aria-labelledby": u,
         graphic: {
             type: "image",
-            src: d
+            src: c
         },
-        onClose: i,
+        onClose: a,
         transitionState: e,
         title: l.intl.formatToPlainString(l.t.wLFT6z, {
-            tier: c.summary
+            tier: d.summary
         }),
-        children: (0, a.jsx)(n.Text, {
+        children: (0, i.jsx)(s.Text, {
             className: o.VA,
             variant: "text-md/medium",
             color: "text-default",
             children: l.intl.format(l.t.OsAK9h, {
-                timestamp: null == u ? void 0 : u.currentPeriodEnd
+                timestamp: p?.currentPeriodEnd
             })
         })
     })

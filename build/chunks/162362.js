@@ -1,13 +1,14 @@
 /** chunk id: 162362, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => l
+    A: () => s
 });
-var r = n(773669);
+var i = n(773669);
 
-function l(e) {
+function s(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {
         month: "numeric",
         day: "numeric"
     };
-    return new Date(e).toLocaleDateString(r.default.locale, t)
+    return new Date(e).toLocaleDateString(i.default.locale, t)
 }

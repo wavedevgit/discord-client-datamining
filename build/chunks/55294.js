@@ -1,63 +1,63 @@
 /** chunk id: 55294, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => b,
-    N: () => y
+    A: () => _,
+    N: () => x
 });
-var r = n(64700),
-    l = n(942381),
-    i = n(465532),
-    s = n(843472),
+var i = n(64700),
+    s = n(942381),
+    l = n(465532),
+    r = n(843472),
     a = n(608299),
     o = n(23658),
     c = n(425059),
-    u = n(218152),
-    d = n(451909),
-    p = n(31717),
-    h = n(522602),
-    g = n(393309),
-    f = n(381941),
+    d = n(218152),
+    u = n(451909),
+    h = n(31717),
+    A = n(522602),
+    p = n(393309),
+    g = n(381941),
     m = n(985018);
 
-function b(e) {
+function _(e) {
     let {
         parentChannel: t,
         parentMessageId: n,
-        threadSettings: l,
+        threadSettings: s,
         privateThreadMode: c,
-        location: u,
-        onThreadCreated: b,
-        useDefaultThreadName: A
-    } = e, y = r.useCallback((e, t, n, r) => {
-        s.A.sendMessage(e.id, d.Ay.parse(e, n), void 0, {
+        location: d,
+        onThreadCreated: _,
+        useDefaultThreadName: f
+    } = e, x = i.useCallback((e, t, n, i) => {
+        r.A.sendMessage(e.id, u.Ay.parse(e, n), void 0, {
             eagerDispatch: !1,
-            location: f.Hx.THREAD_CREATION,
-            stickerIds: r,
+            location: g.Hx.THREAD_CREATION,
+            stickerIds: i,
             attachmentsToUpload: t,
-            onAttachmentUploadError: (r, l, s, c) => {
-                var u;
+            onAttachmentUploadError: (i, s, r, c) => {
                 (0, o.openUploadError)({
                     title: m.intl.string(m.t.B3vFdU),
-                    help: null != (u = null == c ? void 0 : c.message) ? u : m.intl.string(m.t.zMEjJg)
-                }), "" !== n && "" === p.A.getDraft(e.id, p.C.FirstThreadMessage) && i.A.saveDraft(e.id, n, p.C.FirstThreadMessage), 0 === h.A.getUploadCount(e.id, p.C.FirstThreadMessage) && a.A.setUploads({
+                    help: c?.message ?? m.intl.string(m.t.zMEjJg)
+                }), "" !== n && "" === h.A.getDraft(e.id, h.C.FirstThreadMessage) && l.A.saveDraft(e.id, n, h.C.FirstThreadMessage), 0 === A.A.getUploadCount(e.id, h.C.FirstThreadMessage) && a.A.setUploads({
                     channelId: e.id,
                     uploads: t,
-                    draftType: p.C.FirstThreadMessage
+                    draftType: h.C.FirstThreadMessage
                 })
             }
         })
     }, []);
-    return (0, g.r$)({
+    return (0, p.r$)({
         parentChannel: t,
         parentMessageId: n,
-        threadSettings: l,
+        threadSettings: s,
         privateThreadMode: c,
-        location: u,
-        onThreadCreated: b,
-        useDefaultThreadName: A,
-        uploadHandler: y
+        location: d,
+        onThreadCreated: _,
+        useDefaultThreadName: f,
+        uploadHandler: x
     })
 }
-async function A(e) {
+async function f(e) {
     let t = new c.A,
         n = await t.uploadFiles(e);
     return {
@@ -66,13 +66,13 @@ async function A(e) {
     }
 }
 
-function y(e) {
+function x(e) {
     let {
         parentChannel: t
     } = e, {
         name: n,
-        appliedTags: r
-    } = (0, u.kU)(e => {
+        appliedTags: i
+    } = (0, d.kU)(e => {
         let {
             name: t,
             appliedTags: n
@@ -81,11 +81,11 @@ function y(e) {
             name: t,
             appliedTags: n
         }
-    }, l.x);
-    return (0, g.w0)({
+    }, s.x);
+    return (0, p.w0)({
         parentChannel: t,
         name: n,
-        appliedTags: r,
-        upload: A
+        appliedTags: i,
+        upload: f
     })
 }

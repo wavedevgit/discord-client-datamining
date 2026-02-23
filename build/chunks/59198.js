@@ -1,7 +1,7 @@
 /** chunk id: 59198, original params: a,e,t (module,exports,require) **/
 t.d(e, {
     W: () => p
-}), t(896048);
+});
 var n = t(627968),
     r = t(64700),
     s = t(284009),
@@ -26,7 +26,7 @@ function p(a) {
         onError: j,
         onClose: C,
         redirectUri: g
-    } = a, [v, b] = r.useState(!1), E = r.useCallback(async a => {
+    } = a, [b, v] = r.useState(!1), E = r.useCallback(async a => {
         let t, n, {
                 location: r
             } = a,
@@ -37,8 +37,7 @@ function p(a) {
         try {
             t = await c.A.completeTwoWayLink(e, r, s, i)
         } catch (a) {
-            var l;
-            h.error("".concat(e, " link error:"), a), n = null == (l = a.body) ? void 0 : l.code
+            h.error(`${e} link error:`, a), n = a.body?.code
         }
         null != t ? p() : j(n)
     }, [e, d, p, j]), {
@@ -56,7 +55,7 @@ function p(a) {
         redirectUri: g,
         isTwoWayLinkDiscordConsent: !0
     }), w = r.useCallback(() => {
-        i()(null != T, "sendAuthorize not available"), b(!0), T(!0)
+        i()(null != T, "sendAuthorize not available"), v(!0), T(!0)
     }, [T]);
     return (0, n.jsxs)(m.A, {
         children: [(0, n.jsxs)(l.rQ0, {
@@ -93,7 +92,7 @@ function p(a) {
                 children: (0, n.jsx)(l.Button, {
                     variant: "primary",
                     text: u.intl.string(u.t.ZN4hkc),
-                    loading: v,
+                    loading: b,
                     onClick: w
                 })
             })

@@ -1,81 +1,65 @@
-/** chunk id: 298492, original params: e,t,r (module,exports,require) **/
-r.d(t, {
-    q: () => b
+/** chunk id: 298492, original params: e,t,s (module,exports,require) **/
+s.d(t, {
+    q: () => _
 });
-var n = r(627968);
-r(64700);
-var s = r(503698),
-    i = r.n(s),
-    l = r(397927),
-    a = r(308528),
-    o = r(854627),
-    c = r(12901),
-    u = r(427262),
-    d = r(519412),
-    f = r(985018),
-    p = r(712685);
-let b = e => {
+var a = s(627968);
+s(64700);
+var i = s(503698),
+    l = s.n(i),
+    r = s(397927),
+    n = s(308528),
+    c = s(854627),
+    d = s(12901),
+    o = s(427262),
+    u = s(519412),
+    m = s(985018),
+    x = s(712685);
+let _ = e => {
     let {
         recipient: t,
-        isSuccess: r,
-        onClose: s
+        isSuccess: s,
+        onClose: i
     } = e, {
-        avatarSrc: b,
-        eventHandlers: m
-    } = (0, o.A)({
-        userId: null == t ? void 0 : t.id,
-        size: l._3J.SIZE_56
-    }), g = u.Ay.getName(t), y = !r;
-    return (0, n.jsxs)("div", {
-        className: i()(p.nM, {
-            [p.z3]: y
+        avatarSrc: _,
+        eventHandlers: f
+    } = (0, c.A)({
+        userId: t?.id,
+        size: r._3J.SIZE_56
+    }), h = o.Ay.getName(t), p = !s;
+    return (0, a.jsxs)("div", {
+        className: l()(x.nM, {
+            [x.z3]: p
         }),
-        children: [(0, n.jsx)(l.euF, function(e) {
-            for (var t = 1; t < arguments.length; t++) {
-                var r = null != arguments[t] ? arguments[t] : {},
-                    n = Object.keys(r);
-                "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-                    return Object.getOwnPropertyDescriptor(r, e).enumerable
-                }))), n.forEach(function(t) {
-                    var n;
-                    n = r[t], t in e ? Object.defineProperty(e, t, {
-                        value: n,
-                        enumerable: !0,
-                        configurable: !0,
-                        writable: !0
-                    }) : e[t] = n
-                })
-            }
-            return e
-        }({
-            src: b,
-            "aria-label": g,
-            size: l._3J.SIZE_32
-        }, m)), (0, n.jsxs)("div", {
-            className: p.Qs,
-            children: [(0, n.jsx)(l.Heading, {
+        children: [(0, a.jsx)(r.euF, {
+            src: _,
+            "aria-label": h,
+            size: r._3J.SIZE_32,
+            ...f
+        }), (0, a.jsxs)("div", {
+            className: x.Qs,
+            children: [(0, a.jsx)(r.Heading, {
                 variant: "heading-md/semibold",
                 color: "text-strong",
-                className: p.QC,
-                children: g
-            }), y && (0, n.jsx)(l.Text, {
+                className: x.QC,
+                children: h
+            }), p && (0, a.jsx)(r.Text, {
                 variant: "text-xs/normal",
                 color: "text-strong",
-                className: p.kc,
-                children: f.intl.format(d.default["Y/oMwY"], {
-                    userName: g
+                className: x.kc,
+                children: m.intl.format(u.default["Y/oMwY"], {
+                    userName: h
                 })
             })]
-        }), r && (0, n.jsx)(l.Button, {
+        }), s && (0, a.jsx)(r.Button, {
             variant: "secondary",
             size: "sm",
-            text: f.intl.string(f.t["g33r/P"]),
-            icon: l.oyn,
+            text: m.intl.string(m.t["g33r/P"]),
+            icon: r.oyn,
             onClick: () => {
                 var e;
-                return e = t.id, void((0, c.default)(), a.A.openPrivateChannel({
+                return e = t.id, void((0, d.default)(), n.A.openPrivateChannel({
                     recipientIds: e
-                }), s())
+                }), i())
             }
         })]
     })

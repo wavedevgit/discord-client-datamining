@@ -1,29 +1,29 @@
 /** chunk id: 791295, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => u
+    A: () => c
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(342494),
+var r = n(342494),
     l = n(997509),
     a = n(652215),
     s = n(49999),
     o = n(985018),
-    c = n(279688);
+    d = n(279688);
 
-function u(e) {
+function c(e) {
     let {
         guild: t,
         markAsDismissed: n,
-        targetElementRef: u
+        targetElementRef: c
     } = e;
-    return (0, r.jsx)(i.AM, {
-        targetElementRef: u,
+    return (0, i.jsx)(r.AM, {
+        targetElementRef: c,
         title: o.intl.string(o.t.Hgd22r),
         body: o.intl.string(o.t.SorTPA),
         graphic: {
             type: "image",
-            src: c
+            src: d
         },
         actions: [{
             text: o.intl.string(o.t["9l+df7"]),

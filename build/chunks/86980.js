@@ -1,78 +1,66 @@
 /** chunk id: 86980, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    j: () => y
+    j: () => R
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(284009),
-    a = n.n(i),
-    o = n(397927),
-    s = n(800342),
-    l = n(73825),
-    c = n(851907),
-    u = n(160946),
-    d = n(342098),
-    f = n(216678),
-    p = n(869146),
-    _ = n(143582),
-    h = n(490744),
-    m = n(67480),
-    g = n(652215);
-
-function E(e) {
-    let t = (0, c.LU)({
-            applicationId: e
-        }),
-        n = null != t ? p.A.getWindow(t) : void 0;
-    return null == n || n.closed ? o.SYi : o.KX8
-}
-async function y(e) {
-    let {
+var r = n(284009),
+    l = n.n(r),
+    s = n(397927),
+    a = n(800342),
+    o = n(73825),
+    E = n(851907),
+    c = n(160946),
+    _ = n(342098),
+    d = n(216678),
+    A = n(869146),
+    u = n(143582),
+    T = n(490744),
+    I = n(67480),
+    N = n(652215);
+async function R(e) {
+    var t, n, r, R, S;
+    let O, C, {
+            applicationId: p,
+            skuId: P,
+            initialPlanId: D,
+            analyticsLocations: U,
+            analyticsLocationObject: g
+        } = e,
+        M = I.A.get(P);
+    if (null == M) {
+        let e = (await (0, a.JI)(p)).find(e => e.sku.id === P);
+        l()(null != e, "Could not find store listing for sku"), e.sku.type === N.Puh.SUBSCRIPTION_GROUP && await (0, u.vz)(p, e.id)
+    }
+    M = M ?? I.A.get(P), l()(null != M && M.applicationId === p, "SKU must belong to application"), M.type !== N.Puh.SUBSCRIPTION || (0, c.B)([M.id]) || await (0, o.ur)(M.id);
+    let m = null == (C = null != (O = (0, E.LU)({
+        applicationId: p
+    })) ? A.A.getWindow(O) : void 0) || C.closed ? s.SYi : s.KX8;
+    if (M.type !== N.Puh.SUBSCRIPTION) return new Promise((e, t) => {
+        (0, d.A)({
+            applicationId: p,
+            skuId: P,
+            analyticsLocationObject: g,
+            analyticsLocations: U,
+            contextKey: m,
+            onComplete: t => {
+                e(t?.entitlements ?? [])
+            },
+            onClose: e => {
+                e || t()
+            }
+        })
+    });
+    await (t = p, n = P, r = D, R = g, S = U, (0, _.l)({
         applicationId: t,
         skuId: n,
         initialPlanId: r,
-        analyticsLocations: i,
-        analyticsLocationObject: o
-    } = e, c = m.A.get(n);
-    if (null == c) {
-        let e = (await (0, s.JI)(t)).find(e => e.sku.id === n);
-        a()(null != e, "Could not find store listing for sku"), e.sku.type === g.Puh.SUBSCRIPTION_GROUP && await (0, _.vz)(t, e.id)
-    }
-    c = null != c ? c : m.A.get(n), a()(null != c && c.applicationId === t, "SKU must belong to application"), c.type !== g.Puh.SUBSCRIPTION || (0, u.B)([c.id]) || await (0, l.ur)(c.id);
-    let d = E(t);
-    if (c.type !== g.Puh.SUBSCRIPTION) return new Promise((e, r) => {
-        let a = t => {
-                var n;
-                e(null != (n = null == t ? void 0 : t.entitlements) ? n : [])
-            },
-            s = e => {
-                e || r()
-            };
-        (0, f.A)({
-            applicationId: t,
-            skuId: n,
-            analyticsLocationObject: o,
-            analyticsLocations: i,
-            contextKey: d,
-            onComplete: a,
-            onClose: s
+        analyticsLocationObject: R,
+        analyticsLocations: S,
+        renderHeader: (e, t, n) => (0, i.jsx)(T.fs, {
+            step: n,
+            onClose: () => t(!1)
         })
-    });
-    await b(t, n, r, o, i)
-}
-
-function b(e, t, n, i, a) {
-    let o = (e, t, n) => (0, r.jsx)(h.fs, {
-        step: n,
-        onClose: () => t(!1)
-    });
-    return (0, d.l)({
-        applicationId: e,
-        skuId: t,
-        initialPlanId: n,
-        analyticsLocationObject: i,
-        analyticsLocations: a,
-        renderHeader: o
-    })
+    }))
 }

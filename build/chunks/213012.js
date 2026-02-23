@@ -1,12 +1,12 @@
-/** chunk id: 213012, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    I: () => a
+/** chunk id: 213012, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    I: () => r
 });
-var r = n(562465),
-    l = n(73153),
-    i = n(652215);
-let a = () => r.Bo.get({
-    url: i.Rsh.GUILD_AFFINITIES,
+var n = i(562465),
+    s = i(73153),
+    l = i(652215);
+let r = () => n.Bo.get({
+    url: l.Rsh.GUILD_AFFINITIES,
     oldFormErrors: !0,
     rejectWithError: !1
 }).then(e => {
@@ -15,12 +15,12 @@ let a = () => r.Bo.get({
             guild_affinities: t
         }
     } = e;
-    l.h.dispatch({
+    s.h.dispatch({
         type: "LOAD_GUILD_AFFINITIES_SUCCESS",
         guildAffinities: t
     })
 }, () => {
-    l.h.dispatch({
+    s.h.dispatch({
         type: "LOAD_GUILD_AFFINITIES_FAILURE"
     })
 })

@@ -1,63 +1,64 @@
 /** chunk id: 264409, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => d
+    A: () => u
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var l = n(503698),
-    i = n.n(l),
-    s = n(92674),
+var s = n(503698),
+    l = n.n(s),
+    r = n(475539),
     a = n(827734),
     o = n(397927),
     c = n(263063),
-    u = n(211170);
+    d = n(211170);
 
-function d(e) {
+function u(e) {
     let {
         guild: t,
         show: n,
-        active: l,
-        onAnimationStart: d,
-        onAnimationRest: p
-    } = e, h = {}, g = {};
-    h.transform = "translate3d(10px, 10px, 0) scale3d(3, 3, 1)", g.transform = "translate3d(0, 0, 0) scale3d(1, 1, 1)";
-    let f = (0, o.rdh)(a.A.unsafe_rawColors.BRAND_500).hex(),
+        active: s,
+        onAnimationStart: u,
+        onAnimationRest: h
+    } = e, A = {}, p = {};
+    A.transform = "translate3d(10px, 10px, 0) scale3d(3, 3, 1)", p.transform = "translate3d(0, 0, 0) scale3d(1, 1, 1)";
+    let g = (0, o.rdh)(a.A.unsafe_rawColors.BRAND_500).hex(),
         m = (0, o.rdh)(a.A.unsafe_rawColors.PRIMARY_630).hex();
-    l && null == t.icon && (h.backgroundColor = f, g.backgroundColor = m);
-    let b = (0, o.pnh)(n, {
-        from: h,
-        enter: g,
-        leave: h,
+    s && null == t.icon && (A.backgroundColor = g, p.backgroundColor = m);
+    let _ = (0, o.pnh)(n, {
+        from: A,
+        enter: p,
+        leave: A,
         config: {
             duration: 100
         },
-        onStart: d,
-        onRest: p
+        onStart: u,
+        onRest: h
     });
-    return (0, r.jsx)(r.Fragment, {
-        children: b((e, n, l) => n && (0, r.jsx)("div", {
-            className: u.qc,
-            children: (0, r.jsx)("div", {
-                className: i()(u.MJ, u.L0),
+    return (0, i.jsx)(i.Fragment, {
+        children: _((e, n, s) => n && (0, i.jsx)("div", {
+            className: d.qc,
+            children: (0, i.jsx)("div", {
+                className: l()(d.MJ, d.L0),
                 style: {
                     margin: 0
                 },
-                children: (0, r.jsx)(s.animated.div, {
-                    className: u.NG,
+                children: (0, i.jsx)(r.animated.div, {
+                    className: d.NG,
                     style: e,
-                    children: (0, r.jsx)("div", {
-                        className: u.qJ,
-                        children: (0, r.jsx)("div", {
-                            className: u.jg,
-                            children: (0, r.jsx)(c.A, {
+                    children: (0, i.jsx)("div", {
+                        className: d.qJ,
+                        children: (0, i.jsx)("div", {
+                            className: d.jg,
+                            children: (0, i.jsx)(c.A, {
                                 guild: t,
                                 size: c.A.Sizes.SMOL,
-                                className: u.VL
+                                className: d.VL
                             })
                         })
                     })
                 })
             })
-        }, l.key))
+        }, s.key))
     })
 }

@@ -1,178 +1,160 @@
 /** chunk id: 7891, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => C
-}), n(896048), n(747238);
-var r = n(627968),
-    i = n(64700),
+    A: () => y
+});
+var i = n(627968),
+    s = n(64700),
     l = n(503698),
-    s = n.n(l),
+    r = n.n(l),
     a = n(284009),
     o = n.n(a),
-    c = n(311907),
-    d = n(73939),
+    d = n(311907),
+    c = n(73939),
     u = n(36525),
-    g = n(397927),
-    m = n(416052),
-    p = n(975807),
-    f = n(58149),
-    h = n(465932),
-    b = n(555337),
-    x = n(954571),
-    j = n(300233),
-    _ = n(599941),
-    O = n(652215),
-    v = n(985018),
-    y = n(218251);
-let A = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 2196594, 4752414, 0xc75a38, 0xc74138, 12401e3, 0xc5579d, 5659039, 4092591, 5868359, 6586142, 8876063, 8484432, 9979976, 5269106, 3421236],
-    E = /^(https?:\/\/)?(?:m\.|www\.)?(youtu\.be|youtube\.com)\/(embed\/|v\/|watch\?v=|watch\?.+&v=)?((\w|-){11})(?:\S+)?$/,
-    N = A[4],
-    S = e => {
-        var t, n;
+    m = n(397927),
+    g = n(416052),
+    x = n(975807),
+    h = n(58149),
+    _ = n(465932),
+    A = n(555337),
+    p = n(954571),
+    f = n(300233),
+    j = n(599941),
+    N = n(652215),
+    E = n(985018),
+    b = n(218251);
+let T = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 2196594, 4752414, 0xc75a38, 0xc74138, 12401e3, 0xc5579d, 5659039, 4092591, 5868359, 6586142, 8876063, 8484432, 9979976, 5269106, 3421236],
+    C = /^(https?:\/\/)?(?:m\.|www\.)?(youtu\.be|youtube\.com)\/(embed\/|v\/|watch\?v=|watch\?.+&v=)?((\w|-){11})(?:\S+)?$/,
+    I = T[4],
+    v = e => {
         let {
-            guild: l,
-            canEnable: a
-        } = e, c = (0, _.Tq)(l.id), {
-            loading: b,
-            updateSubscriptionsSettings: j
-        } = (0, _.KE)(), [S, I] = i.useState(l.features.has(O.GuildFeatures.CREATOR_STORE_PAGE)), [C, T] = i.useState(null != (t = null == c ? void 0 : c.store_page_primary_color) ? t : N), [P, w] = i.useState(null == c ? void 0 : c.store_page_trailer_url), R = null == P || null != P.match(E), [D, G] = i.useState(null != (n = null == c ? void 0 : c.store_page_show_subscriber_count) && n), L = i.useRef(null == c ? void 0 : c.store_page_slug).current, k = S !== l.features.has(O.GuildFeatures.CREATOR_STORE_PAGE) || (null == c ? void 0 : c.store_page_primary_color) == null && C !== N || (null == c ? void 0 : c.store_page_primary_color) != null && C !== (null == c ? void 0 : c.store_page_primary_color) || P !== (null == c ? void 0 : c.store_page_trailer_url) || null != D && D !== (null == c ? void 0 : c.store_page_show_subscriber_count), M = async () => {
-            o()(null != c, "Settings must be defined");
+            guild: t,
+            canEnable: n
+        } = e, l = (0, j.Tq)(t.id), {
+            loading: a,
+            updateSubscriptionsSettings: d
+        } = (0, j.KE)(), [A, f] = s.useState(t.features.has(N.GuildFeatures.CREATOR_STORE_PAGE)), [v, S] = s.useState(l?.store_page_primary_color ?? I), [y, R] = s.useState(l?.store_page_trailer_url), O = null == y || null != y.match(C), [G, L] = s.useState(l?.store_page_show_subscriber_count ?? !1), D = s.useRef(l?.store_page_slug).current, M = A !== t.features.has(N.GuildFeatures.CREATOR_STORE_PAGE) || l?.store_page_primary_color == null && v !== I || l?.store_page_primary_color != null && v !== l?.store_page_primary_color || y !== l?.store_page_trailer_url || null != G && G !== l?.store_page_show_subscriber_count, k = async () => {
+            o()(null != l, "Settings must be defined");
             let e = {};
-            S !== l.features.has(O.GuildFeatures.CREATOR_STORE_PAGE) && (e.store_page_enabled = S), ((null == c ? void 0 : c.store_page_primary_color) == null && C !== N || (null == c ? void 0 : c.store_page_primary_color) != null && C !== (null == c ? void 0 : c.store_page_primary_color)) && (e.store_page_primary_color = C), P !== (null == c ? void 0 : c.store_page_trailer_url) && (e.store_page_trailer_url = P), D !== (null == c ? void 0 : c.store_page_show_subscriber_count) && (e.store_page_show_subscriber_count = D), Object.keys(e).length > 0 && (await j(l.id, e), "store_page_enabled" in e && x.default.track(O.HAw.GUILD_ROLE_SUBSCRIPTION_STORE_PAGE_TOGGLED, function(e) {
-                for (var t = 1; t < arguments.length; t++) {
-                    var n = null != arguments[t] ? arguments[t] : {},
-                        r = Object.keys(n);
-                    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                        return Object.getOwnPropertyDescriptor(n, e).enumerable
-                    }))), r.forEach(function(t) {
-                        var r;
-                        r = n[t], t in e ? Object.defineProperty(e, t, {
-                            value: r,
-                            enumerable: !0,
-                            configurable: !0,
-                            writable: !0
-                        }) : e[t] = r
-                    })
-                }
-                return e
-            }({
-                enabled: S
-            }, (0, f.H$)(l.id))))
-        }, U = O.X7G.ROLE_SUBSCRIPTION_STORE_PAGE(L), B = null != P && P === (null == c ? void 0 : c.store_page_trailer_url), {
-            shouldRestrictUpdatingCreatorMonetizationSettings: F
-        } = (0, h.nq)(l.id), H = F || !R, V = !S && !a;
-        return (0, r.jsxs)(g.BJc, {
+            A !== t.features.has(N.GuildFeatures.CREATOR_STORE_PAGE) && (e.store_page_enabled = A), (l?.store_page_primary_color == null && v !== I || l?.store_page_primary_color != null && v !== l?.store_page_primary_color) && (e.store_page_primary_color = v), y !== l?.store_page_trailer_url && (e.store_page_trailer_url = y), G !== l?.store_page_show_subscriber_count && (e.store_page_show_subscriber_count = G), Object.keys(e).length > 0 && (await d(t.id, e), "store_page_enabled" in e && p.default.track(N.HAw.GUILD_ROLE_SUBSCRIPTION_STORE_PAGE_TOGGLED, {
+                enabled: A,
+                ...(0, h.H$)(t.id)
+            }))
+        }, U = N.X7G.ROLE_SUBSCRIPTION_STORE_PAGE(D), P = null != y && y === l?.store_page_trailer_url, {
+            shouldRestrictUpdatingCreatorMonetizationSettings: w
+        } = (0, _.nq)(t.id), B = w || !O, F = !A && !n;
+        return (0, i.jsxs)(m.BJc, {
             gap: 24,
-            children: [(0, r.jsx)(g.Heading, {
+            children: [(0, i.jsx)(m.Heading, {
                 variant: "heading-lg/semibold",
-                children: v.intl.string(v.t.N6Tg9A)
-            }), (0, r.jsxs)(g.BJc, {
+                children: E.intl.string(E.t.N6Tg9A)
+            }), (0, i.jsxs)(m.BJc, {
                 gap: 8,
-                children: [(0, r.jsx)(g.dOG, {
-                    label: v.intl.string(v.t.lwvl1g),
-                    checked: S,
-                    disabled: F || V,
-                    description: v.intl.string(v.t["uU/69/"]),
-                    onChange: e => I(e)
-                }), V ? (0, r.jsx)(g.po8, {
-                    messageType: g.YCn.WARNING,
-                    children: v.intl.string(v.t.mIgfEu)
+                children: [(0, i.jsx)(m.dOG, {
+                    label: E.intl.string(E.t.lwvl1g),
+                    checked: A,
+                    disabled: w || F,
+                    description: E.intl.string(E.t["uU/69/"]),
+                    onChange: e => f(e)
+                }), F ? (0, i.jsx)(m.po8, {
+                    messageType: m.YCn.WARNING,
+                    children: E.intl.string(E.t.mIgfEu)
                 }) : null]
-            }), (0, r.jsx)(g.cGx, {}), (0, r.jsxs)(g.D0$, {
-                label: v.intl.string(v.t.N46WOv),
-                disabled: F,
-                children: [(0, r.jsx)(m.A, {
+            }), (0, i.jsx)(m.cGx, {}), (0, i.jsxs)(m.D0$, {
+                label: E.intl.string(E.t.N46WOv),
+                disabled: w,
+                children: [(0, i.jsx)(g.A, {
                     value: U,
-                    className: s()({
-                        [y.r9]: F
+                    className: r()({
+                        [b.r9]: w
                     })
-                }), (0, r.jsx)("div", {
+                }), (0, i.jsx)("div", {
                     "data-button-hoisted-classname-wrapper": !0,
-                    className: y.eZ,
-                    children: (0, r.jsx)(g.Button, {
+                    className: b.eZ,
+                    children: (0, i.jsx)(m.Button, {
                         variant: "primary",
-                        text: v.intl.string(v.t.CaOYqc),
-                        onClick: () => (0, p.A)(U),
-                        disabled: F
+                        text: E.intl.string(E.t.CaOYqc),
+                        onClick: () => (0, x.A)(U),
+                        disabled: w
                     })
                 })]
-            }), (0, r.jsx)(g.cGx, {}), (0, r.jsx)(g.D0$, {
-                label: v.intl.string(v.t.W39uIL),
-                description: v.intl.string(v.t.B6XtE7),
-                children: (0, r.jsxs)("div", {
-                    className: y.xu,
-                    children: [(0, r.jsx)(g.Text, {
+            }), (0, i.jsx)(m.cGx, {}), (0, i.jsx)(m.D0$, {
+                label: E.intl.string(E.t.W39uIL),
+                description: E.intl.string(E.t.B6XtE7),
+                children: (0, i.jsxs)("div", {
+                    className: b.xu,
+                    children: [(0, i.jsx)(m.Text, {
                         variant: "text-md/medium",
                         style: {
-                            backgroundColor: "#".concat(C.toString(16).padStart(6, "0"))
+                            backgroundColor: `#${v.toString(16).padStart(6,"0")}`
                         },
-                        className: y.pB,
-                        children: v.intl.string(v.t.l6iM36)
-                    }), (0, r.jsx)(g.skP, {
-                        colors: A,
+                        className: b.pB,
+                        children: E.intl.string(E.t.l6iM36)
+                    }), (0, i.jsx)(m.skP, {
+                        colors: T,
                         customColor: null,
-                        defaultColor: N,
-                        value: C,
-                        onChange: e => T(e),
+                        defaultColor: I,
+                        value: v,
+                        onChange: e => S(e),
                         renderDefaultButton: () => null,
                         renderCustomButton: () => null,
-                        colorContainerClassName: y.jP,
-                        disabled: F
+                        colorContainerClassName: b.jP,
+                        disabled: w
                     })]
                 })
-            }), (0, r.jsx)(g.cGx, {}), (0, r.jsx)(g.ksK, {
-                label: v.intl.string(v.t.k2yRvd),
-                description: v.intl.string(v.t.amd996),
-                value: null != P ? P : void 0,
-                onChange: e => w("" === e ? null : e),
-                error: R ? null : v.intl.string(v.t["1kL79Q"]),
-                placeholder: v.intl.string(v.t["+I4gdT"]),
-                trailing: R && B ? g.yr3 : void 0,
-                disabled: F
-            }), (0, r.jsx)(g.cGx, {}), (0, r.jsx)(g.nVY, {
-                label: v.intl.string(v.t.AU2HU0),
-                description: v.intl.string(v.t.iWBt3Q),
-                children: (0, r.jsx)(g.dOG, {
-                    label: v.intl.string(v.t.hJsAPo),
-                    description: v.intl.string(v.t.hn65ET),
-                    icon: g.nys,
-                    checked: D,
-                    onChange: e => G(e),
-                    disabled: F
+            }), (0, i.jsx)(m.cGx, {}), (0, i.jsx)(m.ksK, {
+                label: E.intl.string(E.t.k2yRvd),
+                description: E.intl.string(E.t.amd996),
+                value: y ?? void 0,
+                onChange: e => R("" === e ? null : e),
+                error: O ? null : E.intl.string(E.t["1kL79Q"]),
+                placeholder: E.intl.string(E.t["+I4gdT"]),
+                trailing: O && P ? m.yr3 : void 0,
+                disabled: w
+            }), (0, i.jsx)(m.cGx, {}), (0, i.jsx)(m.nVY, {
+                label: E.intl.string(E.t.AU2HU0),
+                description: E.intl.string(E.t.iWBt3Q),
+                children: (0, i.jsx)(m.dOG, {
+                    label: E.intl.string(E.t.hJsAPo),
+                    description: E.intl.string(E.t.hn65ET),
+                    icon: m.nys,
+                    checked: G,
+                    onChange: e => L(e),
+                    disabled: w
                 })
-            }), (0, r.jsx)(d.F, {
+            }), (0, i.jsx)(c.F, {
                 component: "div",
-                className: y.se,
-                children: k && (0, r.jsx)(g.FQk, {
-                    children: (0, r.jsx)(u.A, {
-                        submitting: b,
+                className: b.se,
+                children: M && (0, i.jsx)(m.FQk, {
+                    children: (0, i.jsx)(u.A, {
+                        submitting: a,
                         onReset: () => {
-                            var e, t;
-                            I(l.features.has(O.GuildFeatures.CREATOR_STORE_PAGE)), T(null != (e = null == c ? void 0 : c.store_page_primary_color) ? e : N), w(null == c ? void 0 : c.store_page_trailer_url), G(null != (t = null == c ? void 0 : c.store_page_show_subscriber_count) && t)
+                            f(t.features.has(N.GuildFeatures.CREATOR_STORE_PAGE)), S(l?.store_page_primary_color ?? I), R(l?.store_page_trailer_url), L(l?.store_page_show_subscriber_count ?? !1)
                         },
-                        onSave: M,
-                        disabled: H
+                        onSave: k,
+                        disabled: B
                     })
                 })
             })]
         })
     };
 
-function I() {
-    let e = (0, c.bG)([b.A], () => b.A.getGuild()),
-        t = (0, j.X)(),
-        n = (0, _.uP)(null == e ? void 0 : e.id).some(e => e.published);
-    return null != e && t ? (0, r.jsx)(S, {
+function S() {
+    let e = (0, d.bG)([A.A], () => A.A.getGuild()),
+        t = (0, f.X)(),
+        n = (0, j.uP)(e?.id).some(e => e.published);
+    return null != e && t ? (0, i.jsx)(v, {
         guild: e,
         canEnable: n
-    }) : (0, r.jsx)(g.y$y, {})
+    }) : (0, i.jsx)(m.y$y, {})
 }
 
-function C() {
-    let e = (0, c.bG)([b.A], () => b.A.getGuild());
-    return (0, r.jsx)(j.H, {
-        guildId: null == e ? void 0 : e.id,
+function y() {
+    let e = (0, d.bG)([A.A], () => A.A.getGuild());
+    return (0, i.jsx)(f.H, {
+        guildId: e?.id,
         refetchOnMount: !0,
-        children: (0, r.jsx)(I, {})
+        children: (0, i.jsx)(S, {})
     })
 }

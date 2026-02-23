@@ -1,11 +1,11 @@
 /** chunk id: 888675, original params: e,s,t (module,exports,require) **/
 t.d(s, {
-    A: () => u
+    A: () => m
 });
 var n = t(627968);
 t(64700);
-var l = t(503698),
-    a = t.n(l),
+var a = t(503698),
+    l = t.n(a),
     i = t(397927),
     r = t(449859),
     o = t(256883);
@@ -14,44 +14,44 @@ function c(e) {
     let {
         icon: s,
         iconNode: t,
-        timestamp: l,
+        timestamp: a,
         timestampFormat: i,
         className: c,
-        children: u,
-        contentClassName: m,
+        children: m,
+        contentClassName: u,
         iconClassName: d,
         iconContainerClassName: h,
         timestampClassName: g,
-        compact: p = !1,
-        additionalContent: j
+        compact: A = !1,
+        additionalContent: x
     } = e;
     return (0, n.jsxs)("div", {
-        className: a()(c, {
+        className: l()(c, {
             [o.kL]: !0,
-            [o.oE]: p,
-            [o.E]: !p
+            [o.oE]: A,
+            [o.E]: !A
         }),
         children: [null != t && (0, n.jsx)("div", {
-            className: a()(o.zc, h),
+            className: l()(o.zc, h),
             children: t
         }), null != s && (0, n.jsx)("div", {
             className: o.zc,
             children: (0, n.jsx)("div", {
                 "data-accessibility": "desaturate",
-                className: a()(o.Kk, o.RK, d),
+                className: l()(o.Kk, o.RK, d),
                 style: {
-                    backgroundImage: "url('".concat(s, "')")
+                    backgroundImage: `url('${s}')`
                 }
             })
         }), (0, n.jsxs)("div", {
-            className: a()(m, o.Qs),
+            className: l()(u, o.Qs),
             children: [(0, n.jsxs)("div", {
-                children: [u, null != l && (0, n.jsx)(r.A, {
-                    timestamp: l,
+                children: [m, null != a && (0, n.jsx)(r.A, {
+                    timestamp: a,
                     timestampFormat: i,
                     className: g
                 })]
-            }), j]
+            }), x]
         })]
     })
 }
@@ -69,4 +69,4 @@ c.Action = e => {
         })]
     })
 };
-let u = c
+let m = c

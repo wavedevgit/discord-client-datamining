@@ -3,9 +3,9 @@ n.d(t, {
     C: () => l,
     m: () => a
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(397927);
+var r = n(397927);
 let l = "command-share-modal";
 
 function a(e) {
@@ -14,44 +14,28 @@ function a(e) {
         channel: a,
         command: s,
         previewMessage: o,
-        requireLaunchChannel: c,
-        contextKey: u,
-        onShareResult: d
+        requireLaunchChannel: d,
+        contextKey: c,
+        onShareResult: u
     } = e;
-    (0, i.mMO)(async () => {
+    (0, r.mMO)(async () => {
         let {
             ApplicationCommandShareModal: e
         } = await n.e("33885").then(n.bind(n, 962156));
-        return n => (0, r.jsx)(e, function(e) {
-            for (var t = 1; t < arguments.length; t++) {
-                var n = null != arguments[t] ? arguments[t] : {},
-                    r = Object.keys(n);
-                "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                    return Object.getOwnPropertyDescriptor(n, e).enumerable
-                }))), r.forEach(function(t) {
-                    var r;
-                    r = n[t], t in e ? Object.defineProperty(e, t, {
-                        value: r,
-                        enumerable: !0,
-                        configurable: !0,
-                        writable: !0
-                    }) : e[t] = r
-                })
-            }
-            return e
-        }({
+        return n => (0, i.jsx)(e, {
             applicationId: t,
             channel: a,
             command: s,
             previewMessage: o,
-            onShareResult: d,
-            requireLaunchChannel: c
-        }, n))
+            onShareResult: u,
+            requireLaunchChannel: d,
+            ...n
+        })
     }, {
         modalKey: l,
-        contextKey: u,
+        contextKey: c,
         onCloseCallback: () => {
-            d(!1)
+            u(!1)
         }
     })
 }

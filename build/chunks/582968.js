@@ -1,19 +1,19 @@
 /** chunk id: 582968, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => s
+    A: () => r
 });
-var l = n(627968),
-    r = n(503698),
-    i = n.n(r),
+var i = n(627968),
+    l = n(503698),
+    s = n.n(l),
     a = n(546190);
 
-function s() {
-    return (0, l.jsxs)("div", {
+function r() {
+    return (0, i.jsxs)("div", {
         className: a.kL,
-        children: [(0, l.jsx)("div", {
-            className: i()(a.v9, a.KJ)
-        }), (0, l.jsx)("div", {
-            className: i()(a.v9, a.rx)
+        children: [(0, i.jsx)("div", {
+            className: s()(a.v9, a.KJ)
+        }), (0, i.jsx)("div", {
+            className: s()(a.v9, a.rx)
         })]
     })
 }

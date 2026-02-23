@@ -1,24 +1,25 @@
 /** chunk id: 459321, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => c
+    A: () => E
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(397927),
+var r = n(397927),
     l = n(780964),
-    a = n(840065),
-    o = n(652215),
-    s = n(985018);
+    s = n(840065),
+    a = n(652215),
+    o = n(985018);
 
-function c() {
-    return (0, r.jsxs)(i.$Td, {
-        color: i.Hv$.DANGER,
-        children: [s.intl.string(s.t.lQiCJ6), (0, r.jsx)(i.Z_L, {
-            noticeType: o.kqX.PTT_NO_KEYBIND_WARNING,
+function E() {
+    return (0, i.jsxs)(r.$Td, {
+        color: r.Hv$.DANGER,
+        children: [o.intl.string(o.t.lQiCJ6), (0, i.jsx)(r.Z_L, {
+            noticeType: a.kqX.PTT_NO_KEYBIND_WARNING,
             onClick: function() {
-                (0, a.openUserSettings)(l.X.VOICE_PUSH_TO_TALK_KEYBIND_SETTING)
+                (0, s.openUserSettings)(l.X.VOICE_PUSH_TO_TALK_KEYBIND_SETTING)
             },
-            children: s.intl.string(s.t["UgQN+9"])
+            children: o.intl.string(o.t["UgQN+9"])
         })]
     })
 }

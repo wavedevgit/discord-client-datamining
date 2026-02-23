@@ -4,43 +4,43 @@ n.d(t, {
 });
 var a = n(627968);
 n(64700);
-var l = n(311907),
-    r = n(397927),
-    i = n(155718),
-    s = n(935649),
+var i = n(311907),
+    s = n(397927),
+    l = n(155718),
+    r = n(935649),
     o = n(847599),
-    c = n(287809),
-    d = n(805866),
+    d = n(287809),
+    c = n(805866),
     u = n(206348);
 let m = function(e) {
     let {
         onSubmit: t
-    } = e, n = (0, l.bG)([c.default], () => c.default.getCurrentUser());
+    } = e, n = (0, i.bG)([d.default], () => d.default.getCurrentUser());
     return (0, a.jsx)(u.Z, {
         title: "Lorem ipsum dolor",
         actions: [{
             text: "Consectetur adipiscing",
             variant: "primary",
             onClick: () => {
-                (null == n ? void 0 : n.ageVerificationStatus) === i.Tk.UNVERIFIED ? s.A.showAgeVerificationGetStartedModal({
+                n?.ageVerificationStatus === l.Tk.UNVERIFIED ? r.A.showAgeVerificationGetStartedModal({
                     entryPoint: o.q1.SAFETY_FLOWS,
                     onClose: () => t({
-                        type: d.Ij.Empty
+                        type: c.Ij.Empty
                     })
                 }) : t({
-                    type: d.Ij.Empty
+                    type: c.Ij.Empty
                 })
             }
         }],
-        children: (0, a.jsxs)(r.BJc, {
+        children: (0, a.jsxs)(s.BJc, {
             gap: 8,
-            children: [(0, a.jsx)(r.Text, {
+            children: [(0, a.jsx)(s.Text, {
                 variant: "text-md/normal",
                 children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-            }), (0, a.jsx)(r.Text, {
+            }), (0, a.jsx)(s.Text, {
                 variant: "text-md/normal",
                 children: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-            }), (0, a.jsx)(r.Text, {
+            }), (0, a.jsx)(s.Text, {
                 variant: "text-md/normal",
                 children: "Ut enim ad minim veniam quis"
             })]

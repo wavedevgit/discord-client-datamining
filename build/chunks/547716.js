@@ -1,5 +1,5 @@
-/** chunk id: 547716, original params: e,l,a (module,exports,require) **/
-a.d(l, {
+/** chunk id: 547716, original params: e,a,l (module,exports,require) **/
+l.d(a, {
     H: () => i
 });
 let i = "Guild Welcome Screen"

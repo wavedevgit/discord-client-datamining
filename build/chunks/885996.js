@@ -1,102 +1,102 @@
-/** chunk id: 885996, original params: t,e,n (module,exports,require) **/
-n.d(e, {
-    FY: () => S,
+/** chunk id: 885996, original params: t,e,i (module,exports,require) **/
+i.d(e, {
+    FY: () => I,
     GS: () => p,
-    OP: () => f
-}), n(228524);
-var l = n(627968);
-n(64700);
-var r = n(503698),
-    i = n.n(r),
-    u = n(187322),
-    o = n(855522),
-    s = n(158954),
-    a = n(827734),
-    c = n(596678),
-    d = n(671816);
+    OP: () => S
+});
+var n = i(627968);
+i(64700);
+var l = i(503698),
+    s = i.n(l),
+    r = i(187322),
+    a = i(855522),
+    u = i(158954),
+    o = i(827734),
+    c = i(596678),
+    d = i(671816);
 let p = 5;
 
-function f(t) {
+function S(t) {
     let {
         description: e,
-        imgSrc: n,
-        renderPurchaseButton: r,
-        onPurchase: f,
-        title: S,
+        imgSrc: i,
+        renderPurchaseButton: l,
+        onPurchase: S,
+        title: I,
         onDetails: A,
-        benefitItems: b,
-        benefitsSummary: O,
-        subtitle: g,
-        maxBenefits: I = p
+        benefitItems: _,
+        benefitsSummary: T,
+        subtitle: E,
+        maxBenefits: f = p
     } = t;
-    return (0, l.jsx)(u.vN, {
-        children: (0, l.jsxs)("div", {
-            className: i()(c.kL, d.t),
+    return (0, n.jsx)(r.vN, {
+        children: (0, n.jsxs)("div", {
+            className: s()(c.kL, d.t),
             tabIndex: 0,
             onClick: () => {
-                null != A ? A() : null != f && f()
+                null != A ? A() : null != S && S()
             },
             onKeyUp: t => {
-                "Enter" === t.key && (t.stopPropagation(), t.preventDefault(), null != A ? A() : null != f && f())
+                "Enter" === t.key && (t.stopPropagation(), t.preventDefault(), null != A ? A() : null != S && S())
             },
-            children: [(0, l.jsx)("div", {
+            children: [(0, n.jsx)("div", {
                 className: c.Nr,
-                children: (0, l.jsxs)("div", {
+                children: (0, n.jsxs)("div", {
                     className: c.rf,
-                    children: [(0, l.jsx)(s.EYj, {
+                    children: [(0, n.jsx)(u.EYj, {
                         tag: "div",
                         variant: "heading-lg/semibold",
-                        children: S
-                    }), (0, l.jsx)("div", {
+                        children: I
+                    }), (0, n.jsx)("div", {
                         className: c.Sl,
-                        children: null != n ? (0, l.jsx)("img", {
-                            src: n.toString(),
+                        children: null != i ? (0, n.jsx)("img", {
+                            src: i.toString(),
                             alt: ""
-                        }) : (0, l.jsx)(s.bhD, {
-                            color: a.A.colors.ICON_STRONG,
+                        }) : (0, n.jsx)(u.bhD, {
+                            color: o.A.colors.ICON_STRONG,
                             size: "custom",
                             height: 48,
                             width: 48
                         })
-                    }), null != r ? r({
+                    }), null != l ? l({
                         onClick: t => {
-                            t.stopPropagation(), null == f || f()
+                            t.stopPropagation(), S?.()
                         }
-                    }) : null, g, null != e && "" !== e && (0, l.jsx)(s.EYj, {
+                    }) : null, E, null != e && "" !== e && (0, n.jsx)(u.EYj, {
                         className: c.h_,
                         color: "text-default",
                         variant: "text-sm/medium",
                         children: e
                     })]
                 })
-            }), null != O && (0, l.jsx)("div", {
+            }), null != T && (0, n.jsx)("div", {
                 className: c.xl,
-                children: (0, l.jsx)(s.EYj, {
+                children: (0, n.jsx)(u.EYj, {
                     color: "interactive-text-default",
                     variant: "text-sm/medium",
-                    children: o.A.Messages.STOREFRONT_BENEFITS_SUMMARY.format({
-                        count: O
+                    children: a.A.Messages.STOREFRONT_BENEFITS_SUMMARY.format({
+                        count: T
                     })
                 })
-            }), null != b && b.length > 0 && (0, l.jsx)("div", {
+            }), null != _ && _.length > 0 && (0, n.jsx)("div", {
                 className: c.PX,
-                children: (0, l.jsx)("div", {
+                children: (0, n.jsx)("div", {
                     className: c.iq,
-                    children: (0, l.jsxs)("div", {
+                    children: (0, n.jsxs)("div", {
                         className: c.Pp,
-                        children: [(0, l.jsx)(s.EYj, {
+                        children: [(0, n.jsx)(u.EYj, {
                             color: "text-default",
                             variant: "eyebrow",
-                            children: o.A.Messages.STOREFRONT_BENEFITS_TITLE
-                        }), b.length > I ? (0, l.jsxs)(l.Fragment, {
-                            children: [b.slice(0, I), (0, l.jsx)(s.EYj, {
+                            children: a.A.Messages.STOREFRONT_BENEFITS_TITLE
+                        }), _.length > f ? (0, n.jsxs)(n.Fragment, {
+                            children: [_.slice(0, f), (0, n.jsx)(u.EYj, {
                                 variant: "text-md/semibold",
                                 color: "text-subtle",
-                                children: o.A.Messages.STOREFRONT_MORE_BENEFITS.format({
-                                    count: b.length - I
+                                children: a.A.Messages.STOREFRONT_MORE_BENEFITS.format({
+                                    count: _.length - f
                                 })
                             })]
-                        }) : b]
+                        }) : _]
                     })
                 })
             })]
@@ -104,25 +104,25 @@ function f(t) {
     })
 }
 
-function S(t) {
+function I(t) {
     let {
         icon: e,
-        header: n,
-        description: r
+        header: i,
+        description: l
     } = t;
-    return (0, l.jsxs)("div", {
+    return (0, n.jsxs)("div", {
         className: c.w2,
-        children: [(0, l.jsx)("div", {
+        children: [(0, n.jsx)("div", {
             className: c.z8,
             children: e
-        }), (0, l.jsxs)("div", {
-            children: [null != n && (0, l.jsx)(s.EYj, {
+        }), (0, n.jsxs)("div", {
+            children: [null != i && (0, n.jsx)(u.EYj, {
                 variant: "text-md/semibold",
                 color: "text-strong",
-                children: n
-            }), (0, l.jsx)(s.EYj, {
+                children: i
+            }), (0, n.jsx)(u.EYj, {
                 variant: "text-sm/normal",
-                children: r
+                children: l
             })]
         })]
     })

@@ -1,36 +1,37 @@
 /** chunk id: 898616, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => d
+    A: () => u
 });
-var r = n(64700),
+var i = n(64700),
     l = n(311907),
-    i = n(721932),
-    a = n(71393),
-    o = n(871123),
-    s = n(916023),
+    a = n(721932),
+    s = n(71393),
+    r = n(871123),
+    o = n(916023),
     c = n(501838),
-    u = n(188275);
+    d = n(188275);
 
-function d(e) {
-    var t;
+function u(e) {
     let {
-        location: n,
-        wishlist: d
-    } = e, f = (0, s.kt)({
-        location: n
-    }), p = r.useMemo(() => (null == d ? void 0 : d.userId) != null ? [d.userId] : [], [d]), g = (0, l.bG)([a.A], () => a.A.getGuild((0, o.zf)())), m = null != (t = null == d ? void 0 : d.items.some(e => (0, i.$)(e))) && t, b = (0, c.gT)({
-        gameIds: u.sQ,
-        userIds: p
-    }), y = (0, c.K6)({
-        gameIds: u.sQ,
-        userIds: p
-    }), O = (0, c.l1)({
-        userIds: p,
-        guildIdsWithGameStores: u.tC
+        location: t,
+        wishlist: n,
+        profileOwner: u,
+        currentUser: g
+    } = e, m = (0, o.kt)({
+        location: t
+    }), x = u.id === g?.id, f = i.useMemo(() => n?.userId != null ? [n.userId] : [], [n]), p = (0, l.bG)([s.A], () => s.A.getGuild((0, r.zf)())), h = n?.items.some(e => (0, a.$)(e)) ?? !1, _ = (0, c.gT)({
+        gameIds: d.sQ,
+        userIds: f
+    }), A = (0, c.K6)({
+        gameIds: d.sQ,
+        userIds: f
+    }), I = (0, c.l1)({
+        userIds: f,
+        guildIdsWithGameStores: d.tC
     }), j = (0, c.hJ)({
-        gameIds: u.sQ
-    }), h = (0, c.ok)({
-        gameIds: u.sQ
+        gameIds: d.sQ
+    }), v = (0, c.ok)({
+        gameIds: d.sQ
     });
-    return f && (null != g || h || m || b || y || O || j)
+    return m && (h || _ || A || I || x && (null != p || j || v))
 }

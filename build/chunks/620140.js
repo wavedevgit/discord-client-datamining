@@ -1,30 +1,30 @@
-/** chunk id: 620140, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => a,
-    C: () => i
+/** chunk id: 620140, original params: e,t,a (module,exports,require) **/
+a.d(t, {
+    A: () => l,
+    C: () => s
 });
-var r = n(435220),
-    l = n(985018);
+var n = a(435220),
+    i = a(985018);
 
-function i(e) {
+function s(e) {
     switch (e.id) {
         case 4:
-            return l.intl.string(l.t["3m9Egb"]);
+            return i.intl.string(i.t["3m9Egb"]);
         case 6:
-            return l.intl.string(l.t.VJRr3Y);
+            return i.intl.string(i.t.VJRr3Y);
         case 8:
-            return l.intl.string(l.t.Uv7mFd);
+            return i.intl.string(i.t.Uv7mFd);
         case 9:
-            return l.intl.string(l.t.TEK9Ax);
+            return i.intl.string(i.t.TEK9Ax);
         case 10:
-            return l.intl.string(l.t.lfBt2T)
+            return i.intl.string(i.t.lfBt2T)
     }
     return ""
 }
 
-function a() {
+function l() {
     return {
-        id: r.GLOBAL_DISCOVERY_APPS_FEATURED_CATEGORY_ID,
-        name: l.intl.string(l.t.ijDDwz)
+        id: n.GLOBAL_DISCOVERY_APPS_FEATURED_CATEGORY_ID,
+        name: i.intl.string(i.t.ijDDwz)
     }
 }

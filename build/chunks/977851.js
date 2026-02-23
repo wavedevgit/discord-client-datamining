@@ -1,187 +1,155 @@
 /** chunk id: 977851, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    V: () => v
-}), n(896048), n(321073);
-var r = n(627968),
-    l = n(64700),
-    i = n(503698),
-    s = n.n(i),
+    V: () => N
+}), n(321073);
+var i = n(627968),
+    s = n(64700),
+    l = n(503698),
+    r = n.n(l),
     a = n(735438),
     o = n(311907),
     c = n(367513),
-    u = n(688810),
-    d = n(313961),
-    p = n(384059),
-    h = n(222823),
-    g = n(309010),
-    f = n(741961),
+    d = n(688810),
+    u = n(313961),
+    h = n(384059),
+    A = n(222823),
+    p = n(309010),
+    g = n(741961),
     m = n(234320),
-    b = n(20465),
-    A = n(108460),
-    y = n(709562),
-    O = n(652215),
-    j = n(985018);
+    _ = n(20465),
+    f = n(108460),
+    x = n(709562),
+    C = n(652215),
+    E = n(985018);
 
-function x(e) {
-    let t = (0, o.bG)([f.A], () => !(0, a.isEmpty)(f.A.getTypingUsers(e)), [e]),
-        n = (0, o.bG)([g.A], () => g.A.getVoiceChannelId() === e, [e]),
+function I(e) {
+    let t = (0, o.bG)([g.A], () => !(0, a.isEmpty)(g.A.getTypingUsers(e)), [e]),
+        n = (0, o.bG)([p.A], () => p.A.getVoiceChannelId() === e, [e]),
         {
-            unreadCount: r,
-            mentionCount: l
-        } = (0, o.cf)([h.Ay], () => ({
-            unreadCount: h.Ay.getUnreadCount(e),
-            mentionCount: h.Ay.getMentionCount(e)
+            unreadCount: i,
+            mentionCount: s
+        } = (0, o.cf)([A.Ay], () => ({
+            unreadCount: A.Ay.getUnreadCount(e),
+            mentionCount: A.Ay.getMentionCount(e)
         }), [e]);
     return {
-        unreadCount: r,
-        mentionCount: l,
+        unreadCount: i,
+        mentionCount: s,
         voiceChannelIsSelected: n,
         isTyping: t
     }
 }
 
-function _(e) {
+function b(e) {
     let {
         className: t,
         channelId: n
     } = e, {
-        unreadCount: l,
-        mentionCount: i,
-        isTyping: s,
+        unreadCount: s,
+        mentionCount: l,
+        isTyping: r,
         voiceChannelIsSelected: a
-    } = x(n);
-    return (0, r.jsx)(A.A, {
+    } = I(n);
+    return (0, i.jsx)(f.A, {
         className: t,
-        unreadCount: l,
-        mentionCount: i,
-        isTyping: s,
+        unreadCount: s,
+        mentionCount: l,
+        isTyping: r,
         canBadge: a
     })
 }
 
-function v(e) {
+function N(e) {
     let t, {
             channelId: n,
-            className: i,
+            className: l,
             showingClassName: a,
-            onClick: h,
-            inPopout: g,
-            showRequestToSpeakSidebar: f,
-            toggleRequestToSpeakSidebar: A
+            onClick: A,
+            inPopout: p,
+            showRequestToSpeakSidebar: g,
+            toggleRequestToSpeakSidebar: f,
+            ...N
         } = e,
-        v = function(e, t) {
-            if (null == e) return {};
-            var n, r, l, i = {};
-            if ("u" > typeof Reflect && Reflect.ownKeys) {
-                for (l = 0, n = Reflect.ownKeys(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
-                return i
-            }
-            if (i = function(e, t) {
-                    if (null == e) return {};
-                    var n, r, l = {},
-                        i = Object.getOwnPropertyNames(e);
-                    for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n]);
-                    return l
-                }(e, t), Object.getOwnPropertySymbols)
-                for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
-            return i
-        }(e, ["channelId", "className", "showingClassName", "onClick", "inPopout", "showRequestToSpeakSidebar", "toggleRequestToSpeakSidebar"]),
         {
-            parentAnalyticsLocation: E
-        } = (0, u.Ay)(),
+            parentAnalyticsLocation: S
+        } = (0, d.Ay)(),
         {
-            disabled: C
-        } = v,
-        S = l.useRef(null),
-        I = (0, o.bG)([d.A], () => d.A.getChatOpen(n), [n]),
+            disabled: T
+        } = N,
+        y = s.useRef(null),
+        v = (0, o.bG)([u.A], () => u.A.getChatOpen(n), [n]),
         {
-            isShowing: N,
-            unreadCount: T,
-            mentionCount: P
+            isShowing: j,
+            unreadCount: R,
+            mentionCount: O
         } = function(e) {
             let {
                 unreadCount: t,
                 mentionCount: n,
-                isTyping: r
-            } = x(e), [i, s] = l.useState(!1);
-            return l.useEffect(() => {
-                s(t > 0);
+                isTyping: i
+            } = I(e), [l, r] = s.useState(!1);
+            return s.useEffect(() => {
+                r(t > 0);
                 let e = setTimeout(() => {
-                    s(!1)
-                }, b.R);
+                    r(!1)
+                }, _.R);
                 return () => {
-                    clearTimeout(e), s(!1)
+                    clearTimeout(e), r(!1)
                 }
             }, [t]), {
-                isShowing: i || n > 0 || r,
+                isShowing: l || n > 0 || i,
                 unreadCount: t,
                 mentionCount: n
             }
         }(n),
-        w = l.useCallback(() => {
-            (0, p.X)(E, p.O.CHAT, !I), null == h || h(), !I && f && (null == A || A()), c.A.updateChatOpen(n, !I, "toggle chat button")
-        }, [n, I, h, f, A, E]),
-        R = l.useCallback(e => {
+        L = s.useCallback(() => {
+            (0, h.X)(S, h.O.CHAT, !v), A?.(), !v && g && f?.(), c.A.updateChatOpen(n, !v, "toggle chat button")
+        }, [n, v, A, g, f, S]),
+        M = s.useCallback(e => {
             let {
                 className: t
             } = e;
-            return (0, r.jsx)(_, {
+            return (0, i.jsx)(b, {
                 className: t,
                 channelId: n
             })
         }, [n]),
-        D = l.useCallback(() => {
-            var e;
-            null == (e = S.current) || e.focus()
+        D = s.useCallback(() => {
+            y.current?.focus()
         }, []);
     (0, m.Vo)({
-        event: O.jej.FOCUS_CHAT_BUTTON,
-        handler: C ? null : D
+        event: C.jej.FOCUS_CHAT_BUTTON,
+        handler: T ? null : D
     });
-    let [L, M] = l.useState(!1), G = l.useCallback(() => {
-        g && M(!0)
-    }, [g]);
+    let [G, U] = s.useState(!1), P = s.useCallback(() => {
+        p && U(!0)
+    }, [p]);
     (0, m.Vo)({
-        event: O.jej.SHOW_TEXT_IN_VOICE_POPOUT_COMING_SOON_TIP,
-        handler: G
-    }), l.useEffect(() => {
+        event: C.jej.SHOW_TEXT_IN_VOICE_POPOUT_COMING_SOON_TIP,
+        handler: P
+    }), s.useEffect(() => {
         let e;
-        return L && (e = setTimeout(() => {
-            M(!1)
+        return G && (e = setTimeout(() => {
+            U(!1)
         }, 3e3)), () => {
             clearTimeout(e)
         }
-    }, [L]);
-    let k = [t = g && C ? j.intl.string(j.t.DPgc5h) : I ? j.intl.string(j.t.nthdxB) : j.intl.string(j.t["5KxXrK"])];
-    return P > 0 && k.push(j.intl.formatToPlainString(j.t["3l1GOx"], {
-        mentionCount: P
-    })), T > 0 && k.push(j.intl.string(j.t.x5zAGZ)), (0, r.jsx)(y.A, function(e) {
-        for (var t = 1; t < arguments.length; t++) {
-            var n = null != arguments[t] ? arguments[t] : {},
-                r = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                return Object.getOwnPropertyDescriptor(n, e).enumerable
-            }))), r.forEach(function(t) {
-                var r;
-                r = n[t], t in e ? Object.defineProperty(e, t, {
-                    value: r,
-                    enumerable: !0,
-                    configurable: !0,
-                    writable: !0
-                }) : e[t] = r
-            })
-        }
-        return e
-    }({
-        buttonRef: S,
-        onClick: w,
+    }, [G]);
+    let w = [t = p && T ? E.intl.string(E.t.DPgc5h) : v ? E.intl.string(E.t.nthdxB) : E.intl.string(E.t["5KxXrK"])];
+    return O > 0 && w.push(E.intl.formatToPlainString(E.t["3l1GOx"], {
+        mentionCount: O
+    })), R > 0 && w.push(E.intl.string(E.t.x5zAGZ)), (0, i.jsx)(x.A, {
+        buttonRef: y,
+        onClick: L,
         label: t,
-        "aria-label": k.join(", "),
-        iconComponent: R,
+        "aria-label": w.join(", "),
+        iconComponent: M,
         tooltipPosition: "bottom",
-        wrapperClassName: s()(i, null != a && {
-            [a]: N
+        wrapperClassName: r()(l, null != a && {
+            [a]: j
         }),
-        forceTooltipOpen: L
-    }, v))
+        forceTooltipOpen: G,
+        ...N
+    })
 }

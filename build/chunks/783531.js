@@ -1,20 +1,20 @@
-/** chunk id: 783531, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => s
+/** chunk id: 783531, original params: e,t,a (module,exports,require) **/
+a.d(t, {
+    A: () => r
 });
-var r = n(627968),
-    l = n(64700),
-    i = n(397927),
-    a = n(880355);
-let s = l.forwardRef(function(e, t) {
+var n = a(627968),
+    i = a(64700),
+    s = a(397927),
+    l = a(880355);
+let r = i.forwardRef(function(e, t) {
     let {
-        onScroll: n,
-        children: l
+        onScroll: a,
+        children: i
     } = e;
-    return (0, r.jsx)(i.T7Y, {
-        onScroll: n,
-        className: a.X,
+    return (0, n.jsx)(s.T7Y, {
+        onScroll: a,
+        className: l.X,
         ref: t,
-        children: l
+        children: i
     })
 })

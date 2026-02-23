@@ -1,84 +1,82 @@
 /** chunk id: 371764, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    x: () => E
+    x: () => C
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(110259),
-    l = n(877624),
-    s = n(934551),
-    a = n(158954),
+var s = n(110259),
+    a = n(877624),
+    r = n(934551),
+    l = n(158954),
     o = n(232582),
     c = n(732955),
     d = n(397927),
     u = n(212245),
     _ = n(688810),
-    p = n(139286),
-    m = n(975571),
+    m = n(139286),
+    A = n(975571),
     g = n(498470),
-    A = n(637706),
-    f = n(895163),
-    b = n(985018),
-    h = n(122506);
-let E = e => {
-    var t, n;
+    h = n(637706),
+    x = n(895163),
+    p = n(985018),
+    E = n(122506);
+let C = e => {
     let {
-        componentId: E,
-        promotionBannerMarketingComponentFields: O
+        componentId: t,
+        promotionBannerMarketingComponentFields: n
     } = e, {
-        analyticsLocations: x
-    } = (0, _.Ay)(), C = (0, u.p)();
-    (0, p.A)({
-        type: i.ImpressionTypes.VIEW,
-        name: i.ImpressionNames.PREMIUM_MARKETING_COMPONENT,
+        analyticsLocations: C
+    } = (0, _.Ay)(), T = (0, u.p)();
+    (0, m.A)({
+        type: s.ImpressionTypes.VIEW,
+        name: s.ImpressionNames.PREMIUM_MARKETING_COMPONENT,
         properties: {
-            component_type: l.C.MARKETING_PAGE_BANNER,
-            component_id: E
+            component_type: a.C.MARKETING_PAGE_BANNER,
+            component_id: t
         }
     });
-    let S = (0, f.Xn)("marketing_page_banner"),
-        T = (0, g.h)({
-            buttonAction: S.treatment === f.tz.PLAN_SELECTION ? o.dz.OPEN_PLAN_SELECTION_MODAL : null != (t = null == (n = O.button) ? void 0 : n.buttonAction) ? t : o.dz.OPEN_TIER_2_PAYMENT_MODAL,
-            analyticsLocations: x,
-            analyticsLocation: C.location
+    let S = (0, x.Xn)("marketing_page_banner"),
+        I = (0, g.h)({
+            buttonAction: S.treatment === x.tz.PLAN_SELECTION ? o.dz.OPEN_PLAN_SELECTION_MODAL : n.button?.buttonAction ?? o.dz.OPEN_TIER_2_PAYMENT_MODAL,
+            analyticsLocations: C,
+            analyticsLocation: T.location
         }),
-        I = (0, A.a)(O.body);
-    return (0, r.jsxs)("div", {
-        className: h.kL,
-        children: [(0, r.jsx)("div", {
-            className: h.LY,
-            children: (0, r.jsx)(d._V3, {
-                src: O.assetUrl,
-                width: 96,
-                height: 96,
-                className: h.ot
+        f = (0, h.a)(n.body);
+    return (0, i.jsxs)("div", {
+        className: E.kL,
+        children: [(0, i.jsx)("div", {
+            className: E.LY,
+            children: (0, i.jsx)("img", {
+                src: n.assetUrl,
+                className: E.ot,
+                alt: ""
             })
-        }), (0, r.jsxs)("div", {
-            className: h.IH,
-            children: [(0, r.jsx)(a.DZT, {
+        }), (0, i.jsxs)("div", {
+            className: E.IH,
+            children: [(0, i.jsx)(l.DZT, {
                 variant: "heading-md/semibold",
                 color: "text-strong",
-                children: O.header
-            }), (0, r.jsxs)(a.EYj, {
+                children: n.header
+            }), (0, i.jsxs)(l.EYj, {
                 variant: "text-md/medium",
                 color: "text-subtle",
-                className: h.tb,
-                children: [I, "" !== O.helpArticleId && (0, r.jsxs)(r.Fragment, {
-                    children: ["\xa0", (0, r.jsx)(d.MzZ, {
-                        className: h.$T,
-                        href: m.A.getArticleURL(O.helpArticleId),
-                        children: b.intl.string(b.t["sBp+u0"])
+                className: E.tb,
+                children: [f, "" !== n.helpArticleId && (0, i.jsxs)(i.Fragment, {
+                    children: ["\xa0", (0, i.jsx)(d.MzZ, {
+                        className: E.$T,
+                        href: A.A.getArticleURL(n.helpArticleId),
+                        children: p.intl.string(p.t["sBp+u0"])
                     })]
                 })]
             })]
-        }), null != O.button && (0, r.jsx)("div", {
-            className: h.UD,
-            children: (0, r.jsx)(c.$nd, {
+        }), null != n.button && (0, i.jsx)("div", {
+            className: E.UD,
+            children: (0, i.jsx)(c.$nd, {
                 variant: "expressive",
                 size: "md",
-                onClick: T,
-                text: O.button.copy,
-                icon: s.NitroWheelIcon
+                onClick: I,
+                text: n.button.copy,
+                icon: r.NitroWheelIcon
             })
         })]
     })

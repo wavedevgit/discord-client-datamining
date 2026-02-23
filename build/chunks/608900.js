@@ -1,115 +1,85 @@
 /** chunk id: 608900, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => g
-}), n(896048);
-var r = n(627968),
-    l = n(64700),
-    i = n(503698),
-    s = n.n(i),
+    A: () => p
+});
+var i = n(627968),
+    s = n(64700),
+    l = n(503698),
+    r = n.n(l),
     a = n(835245),
     o = n(397927),
     c = n(709562),
-    u = n(985018),
-    d = n(529414);
+    d = n(985018),
+    u = n(529414);
 
-function p(e) {
+function h(e) {
     let {
         width: t = 24,
         height: n = 24,
-        isBadged: i = !1
-    } = e, [s] = l.useState(() => (0, a.A)());
-    return (0, r.jsxs)("svg", {
+        isBadged: l = !1
+    } = e, [r] = s.useState(() => (0, a.A)());
+    return (0, i.jsxs)("svg", {
         width: t,
         height: n,
         viewBox: "0 0 24 24",
-        children: [(0, r.jsx)("defs", {
-            children: (0, r.jsxs)("mask", {
-                id: s,
-                children: [(0, r.jsx)("rect", {
+        children: [(0, i.jsx)("defs", {
+            children: (0, i.jsxs)("mask", {
+                id: r,
+                children: [(0, i.jsx)("rect", {
                     fill: "white",
                     width: "100%",
                     height: "100%"
-                }), i && (0, r.jsx)("circle", {
+                }), l && (0, i.jsx)("circle", {
                     cx: "20",
                     cy: "19",
                     r: "10",
                     fill: "black"
                 })]
             })
-        }), (0, r.jsx)("g", {
-            mask: "url(#".concat(s, ")"),
-            children: (0, r.jsx)(o.cJi, {})
+        }), (0, i.jsx)("g", {
+            mask: `url(#${r})`,
+            children: (0, i.jsx)(o.cJi, {})
         })]
     })
 }
 
-function h(e) {
+function A(e) {
     let {
         className: t,
         numRequestToSpeak: n
-    } = e, l = n > 0;
-    return (0, r.jsxs)("div", {
-        className: s()(d.v, t),
-        children: [(0, r.jsx)(p, {
-            isBadged: l
-        }), l ? (0, r.jsx)(o.Text, {
-            className: d.F,
+    } = e, s = n > 0;
+    return (0, i.jsxs)("div", {
+        className: r()(u.v, t),
+        children: [(0, i.jsx)(h, {
+            isBadged: s
+        }), s ? (0, i.jsx)(o.Text, {
+            className: u.F,
             variant: "text-xs/semibold",
             children: n > 99 ? "99+" : n
         }) : null]
     })
 }
 
-function g(e) {
+function p(e) {
     let {
         toggleRequestToSpeakSidebar: t,
         showRequestToSpeakSidebar: n,
-        className: i,
-        numRequestToSpeak: s,
-        onClick: a
-    } = e, o = function(e, t) {
-        if (null == e) return {};
-        var n, r, l, i = {};
-        if ("u" > typeof Reflect && Reflect.ownKeys) {
-            for (l = 0, n = Reflect.ownKeys(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
-            return i
-        }
-        if (i = function(e, t) {
-                if (null == e) return {};
-                var n, r, l = {},
-                    i = Object.getOwnPropertyNames(e);
-                for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n]);
-                return l
-            }(e, t), Object.getOwnPropertySymbols)
-            for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
-        return i
-    }(e, ["toggleRequestToSpeakSidebar", "showRequestToSpeakSidebar", "className", "numRequestToSpeak", "onClick"]), d = l.useCallback(() => {
-        null == a || a(), t()
+        className: l,
+        numRequestToSpeak: r,
+        onClick: a,
+        ...o
+    } = e, u = s.useCallback(() => {
+        a?.(), t()
     }, [a, t]);
-    return (0, r.jsx)(c.A, function(e) {
-        for (var t = 1; t < arguments.length; t++) {
-            var n = null != arguments[t] ? arguments[t] : {},
-                r = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                return Object.getOwnPropertyDescriptor(n, e).enumerable
-            }))), r.forEach(function(t) {
-                var r;
-                r = n[t], t in e ? Object.defineProperty(e, t, {
-                    value: r,
-                    enumerable: !0,
-                    configurable: !0,
-                    writable: !0
-                }) : e[t] = r
-            })
-        }
-        return e
-    }({
-        onClick: d,
-        label: n ? u.intl.string(u.t.gKGz7A) : u.intl.string(u.t.ImQ4dW),
-        className: i,
-        iconComponent: () => (0, r.jsx)(h, {
-            numRequestToSpeak: s,
-            className: i
-        })
-    }, o))
+    return (0, i.jsx)(c.A, {
+        onClick: u,
+        label: n ? d.intl.string(d.t.gKGz7A) : d.intl.string(d.t.ImQ4dW),
+        className: l,
+        iconComponent: () => (0, i.jsx)(A, {
+            numRequestToSpeak: r,
+            className: l
+        }),
+        ...o
+    })
 }

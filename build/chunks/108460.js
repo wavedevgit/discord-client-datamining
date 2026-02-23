@@ -1,52 +1,53 @@
 /** chunk id: 108460, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => p
-}), n(896048);
-var r = n(627968),
-    l = n(64700),
-    i = n(503698),
-    s = n.n(i),
+    A: () => h
+});
+var i = n(627968),
+    s = n(64700),
+    l = n(503698),
+    r = n.n(l),
     a = n(835245),
     o = n(397927),
     c = n(315502),
-    u = n(545290);
+    d = n(545290);
 
-function d(e) {
+function u(e) {
     let {
         width: t = 24,
         height: n = 24,
-        isBadged: i = !1,
-        isTyping: s = !1
-    } = e, [c] = l.useState(() => (0, a.A)());
-    return (0, r.jsxs)("svg", {
+        isBadged: l = !1,
+        isTyping: r = !1
+    } = e, [c] = s.useState(() => (0, a.A)());
+    return (0, i.jsxs)("svg", {
         width: t,
         height: n,
         viewBox: "0 0 24 24",
-        children: [(0, r.jsx)("defs", {
-            children: (0, r.jsxs)("mask", {
+        children: [(0, i.jsx)("defs", {
+            children: (0, i.jsxs)("mask", {
                 id: c,
-                children: [(0, r.jsx)("rect", {
+                children: [(0, i.jsx)("rect", {
                     fill: "white",
                     width: "100%",
                     height: "100%"
-                }), s && (0, r.jsx)("g", {
+                }), r && (0, i.jsx)("g", {
                     fill: "black",
-                    transform: "translate(5.5, ".concat(10.5, ") scale(").concat(11 / 24, ")"),
-                    children: (0, r.jsx)(o.UBN, {
+                    transform: `translate(5.5, 10.5) scale(${11/24})`,
+                    children: (0, i.jsx)(o.UBN, {
                         dotRadius: 3.5,
                         spacing: 3,
                         fill: "black"
                     })
-                }), i && (0, r.jsx)("circle", {
+                }), l && (0, i.jsx)("circle", {
                     cx: "20",
                     cy: "19",
                     r: "10",
                     fill: "red"
                 })]
             })
-        }), (0, r.jsx)("g", {
-            mask: "url(#".concat(c, ")"),
-            children: (0, r.jsx)(o.oyn, {
+        }), (0, i.jsx)("g", {
+            mask: `url(#${c})`,
+            children: (0, i.jsx)(o.oyn, {
                 size: "custom",
                 width: t,
                 height: n,
@@ -56,24 +57,23 @@ function d(e) {
     })
 }
 
-function p(e) {
-    var t;
+function h(e) {
     let {
-        className: n,
-        unreadCount: l,
-        mentionCount: i,
-        isTyping: a,
-        canBadge: o
-    } = e, p = null != i && i > 0, h = null != (t = p ? i : l) ? t : 0, g = o && null != l && l > 0;
-    return (0, r.jsxs)("div", {
-        className: s()(u.Or, n),
-        children: [(0, r.jsx)(d, {
-            isBadged: g,
-            isTyping: a
-        }), g && (0, r.jsx)(c.A, {
-            hasMentions: p,
+        className: t,
+        unreadCount: n,
+        mentionCount: s,
+        isTyping: l,
+        canBadge: a
+    } = e, o = null != s && s > 0, h = (o ? s : n) ?? 0, A = a && null != n && n > 0;
+    return (0, i.jsxs)("div", {
+        className: r()(d.Or, t),
+        children: [(0, i.jsx)(u, {
+            isBadged: A,
+            isTyping: l
+        }), A && (0, i.jsx)(c.A, {
+            hasMentions: o,
             truncatedCount: h > 99 ? "99+" : h,
-            className: u.qS
+            className: d.qS
         })]
     })
 }

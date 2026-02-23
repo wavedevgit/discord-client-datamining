@@ -1,27 +1,27 @@
 /** chunk id: 345007, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    o: () => T
+    o: () => A
 });
 var n = i(955572),
     l = i(775602),
     s = i(419954),
     r = i(253932),
-    u = i(780964),
-    a = i(381941),
+    a = i(780964),
+    u = i(381941),
     o = i(985018);
-let d = t => "".concat(t.toFixed(0), "px"),
-    T = (0, s.sN)(u.X.APPEARANCE_MESSAGE_GROUP_SPACING, {
+let d = t => `${t.toFixed(0)}px`,
+    A = (0, s.sN)(a.X.APPEARANCE_MESSAGE_GROUP_SPACING, {
         useTitle: () => o.intl.string(o.t.Q6lKkg),
         useSubtitle: () => o.intl.string(o.t.p7eUrb),
-        markers: a.qh,
+        markers: u.qh,
         stickToMarkers: !0,
-        minValue: a.qh["0"],
-        maxValue: a.qh[a.qh.length - 1],
-        useDefaultValue: () => r.hH.useSetting() ? a.y5 : a.ES,
+        minValue: u.qh["0"],
+        maxValue: u.qh[u.qh.length - 1],
+        useDefaultValue: () => r.hH.useSetting() ? u.y5 : u.ES,
         getInitialValue: () => {
             let t = l.A.messageGroupSpacing,
                 e = r.hH.getSetting();
-            return null != t ? t : e ? a.y5 : a.ES
+            return null != t ? t : e ? u.y5 : u.ES
         },
         onValueRender: d,
         onMarkerRender: d,

@@ -1,99 +1,73 @@
-/** chunk id: 542717, original params: t,e,r (module,exports,require) **/
-r.d(e, {
-    ParagraphFormFieldModal: () => y,
-    TextInputFormFieldModal: () => d
-}), r(228524), r(896048), r(747238), r(812715), r(733351);
-var n = r(627968),
-    i = r(64700),
-    a = r(397927),
-    l = r(198982),
-    o = r(513461),
-    c = r(242273),
-    s = r(260197),
-    u = r(985018);
+/** chunk id: 542717, original params: t,n,e (module,exports,require) **/
+e.d(n, {
+    ParagraphFormFieldModal: () => p,
+    TextInputFormFieldModal: () => _
+});
+var r = e(627968),
+    i = e(64700),
+    a = e(397927),
+    l = e(198982),
+    o = e(513461),
+    s = e(242273),
+    c = e(260197),
+    d = e(985018);
 
-function b(t) {
-    for (var e = 1; e < arguments.length; e++) {
-        var r = null != arguments[e] ? arguments[e] : {},
-            n = Object.keys(r);
-        "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(t) {
-            return Object.getOwnPropertyDescriptor(r, t).enumerable
-        }))), n.forEach(function(e) {
-            var n;
-            n = r[e], e in t ? Object.defineProperty(t, e, {
-                value: n,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : t[e] = n
+function u(t) {
+    let {
+        type: n,
+        title: e,
+        description: o,
+        field: u,
+        onSave: _,
+        onClose: p
+    } = t, [b, g] = i.useState(u?.label ?? ""), [y, x] = i.useState(null), h = async () => {
+        null != y && x(null);
+        let t = b.trim();
+        if ("" === t) return void x(d.intl.string(d.t["G+TI44"]));
+        try {
+            await _({
+                field_type: n,
+                label: t,
+                required: !0
+            }), p()
+        } catch (t) {
+            x(new l.LG(t).getAnyErrorMessage())
+        }
+    };
+    return (0, r.jsx)(s.A, {
+        ...t,
+        errorText: y,
+        title: e,
+        description: o,
+        onConfirm: h,
+        onCancel: p,
+        children: (0, r.jsx)(a.ksK, {
+            onChange: t => {
+                null != y && x(null);
+                let n = t.replace(/(\r\n|\n|\r)/g, " ");
+                n.length > c.Ty && (n = n.slice(0, c.Ty)), g(n)
+            },
+            placeholder: d.intl.string(d.t.fqVmbL),
+            value: b,
+            onKeyDown: t => "Enter" === t.key && h()
         })
-    }
-    return t
+    })
+}
+
+function _(t) {
+    return (0, r.jsx)(u, {
+        title: d.intl.string(d.t.w6Q9wz),
+        description: d.intl.string(d.t["A6M+qv"]),
+        type: o.rX.TEXT_INPUT,
+        ...t
+    })
 }
 
 function p(t) {
-    var e, r, o;
-    let {
-        type: p,
-        title: d,
-        description: y,
-        field: g,
-        onSave: _,
-        onClose: f
-    } = t, [O, j] = i.useState(null != (e = null == g ? void 0 : g.label) ? e : ""), [m, h] = i.useState(null), w = async () => {
-        null != m && h(null);
-        let t = O.trim();
-        if ("" === t) return void h(u.intl.string(u.t["G+TI44"]));
-        try {
-            await _({
-                field_type: p,
-                label: t,
-                required: !0
-            }), f()
-        } catch (t) {
-            h(new l.LG(t).getAnyErrorMessage())
-        }
-    };
-    return (0, n.jsx)(c.A, (r = b({}, t), o = o = {
-        errorText: m,
-        title: d,
-        description: y,
-        onConfirm: w,
-        onCancel: f,
-        children: (0, n.jsx)(a.ksK, {
-            onChange: t => {
-                null != m && h(null);
-                let e = t.replace(/(\r\n|\n|\r)/g, " ");
-                e.length > s.Ty && (e = e.slice(0, s.Ty)), j(e)
-            },
-            placeholder: u.intl.string(u.t.fqVmbL),
-            value: O,
-            onKeyDown: t => "Enter" === t.key && w()
-        })
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(o)) : (function(t, e) {
-        var r = Object.keys(t);
-        if (Object.getOwnPropertySymbols) {
-            var n = Object.getOwnPropertySymbols(t);
-            r.push.apply(r, n)
-        }
-        return r
-    })(Object(o)).forEach(function(t) {
-        Object.defineProperty(r, t, Object.getOwnPropertyDescriptor(o, t))
-    }), r))
-}
-
-function d(t) {
-    return (0, n.jsx)(p, b({
-        title: u.intl.string(u.t.w6Q9wz),
-        description: u.intl.string(u.t["A6M+qv"]),
-        type: o.rX.TEXT_INPUT
-    }, t))
-}
-
-function y(t) {
-    return (0, n.jsx)(p, b({
-        title: u.intl.string(u.t.gG0JBN),
-        description: u.intl.string(u.t.SMX0ia),
-        type: o.rX.PARAGRAPH
-    }, t))
+    return (0, r.jsx)(u, {
+        title: d.intl.string(d.t.gG0JBN),
+        description: d.intl.string(d.t.SMX0ia),
+        type: o.rX.PARAGRAPH,
+        ...t
+    })
 }

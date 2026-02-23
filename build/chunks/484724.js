@@ -1,70 +1,69 @@
 /** chunk id: 484724, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => v
-}), n(896048), n(747238);
-var r = n(627968),
-    i = n(64700),
-    l = n(311907),
+    A: () => E
+});
+var i = n(627968),
+    l = n(64700),
+    r = n(311907),
     a = n(686956),
     s = n(688810),
     o = n(202384),
-    c = n(51758),
-    u = n(665066),
-    d = n(323443),
-    p = n(734057),
+    d = n(51758),
+    c = n(665066),
+    u = n(323443),
+    _ = n(734057),
     m = n(696451),
-    f = n(71393),
-    g = n(287809),
-    _ = n(285059),
-    h = n(698441),
-    b = n(496092),
-    y = n(427080),
-    A = n(652215);
+    h = n(71393),
+    p = n(287809),
+    g = n(285059),
+    A = n(698441),
+    x = n(496092),
+    f = n(427080),
+    C = n(652215);
 
-function v(e) {
+function E(e) {
     let {
         code: t
-    } = e, [n, v, O] = t.split("-"), {
-        analyticsLocations: x
+    } = e, [n, E, I] = t.split("-"), {
+        analyticsLocations: b
     } = (0, s.Ay)(), {
-        guildScheduledEvent: E,
-        guild: j,
-        channel: C,
-        isMember: I
-    } = (0, l.cf)([h.Ay, f.A, p.A, m.Ay, g.default], () => {
-        var e, t;
-        let r = null != (e = h.Ay.getGuildScheduledEvent(v)) ? e : void 0,
-            i = f.A.getGuild(n),
-            l = p.A.getChannel(null == r ? void 0 : r.channel_id);
+        guildScheduledEvent: T,
+        guild: v,
+        channel: S,
+        isMember: y
+    } = (0, r.cf)([A.Ay, h.A, _.A, m.Ay, p.default], () => {
+        let e = A.Ay.getGuildScheduledEvent(E) ?? void 0,
+            t = h.A.getGuild(n),
+            i = _.A.getChannel(e?.channel_id);
         return {
-            guildScheduledEvent: r,
-            guild: i,
-            channel: l,
-            isMember: m.Ay.isMember(n, null == (t = g.default.getCurrentUser()) ? void 0 : t.id)
+            guildScheduledEvent: e,
+            guild: t,
+            channel: i,
+            isMember: m.Ay.isMember(n, p.default.getCurrentUser()?.id)
         }
-    }, [n, v]);
-    return i.useEffect(() => {
-        (null == E ? void 0 : E.id) == null && b.A.fetchGuildEvent(n, v), _.A.getGuildEventUserCounts(n, v, null != O ? [O] : []), _.A.getGuildEventsForCurrentUser(n)
-    }, [v, n, null == E ? void 0 : E.id, O]), (0, r.jsx)(y.Ay, {
-        guild: j,
-        channel: C,
-        guildScheduledEvent: E,
-        isMember: I,
+    }, [n, E]);
+    return l.useEffect(() => {
+        T?.id == null && x.A.fetchGuildEvent(n, E), g.A.getGuildEventUserCounts(n, E, null != I ? [I] : []), g.A.getGuildEventsForCurrentUser(n)
+    }, [E, n, T?.id, I]), (0, i.jsx)(f.Ay, {
+        guild: v,
+        channel: S,
+        guildScheduledEvent: T,
+        isMember: y,
         onAcceptInstantInvite: () => {
-            if ((0, u.g)({
-                    guild: j,
-                    isMember: I,
-                    analyticsLocations: x
-                }) === u.W.PROCEED) {
-                if ((0, c.V)(n)) return void(0, o.Ze)(n);
+            if ((0, c.g)({
+                    guild: v,
+                    isMember: y,
+                    analyticsLocations: b
+                }) === c.W.PROCEED) {
+                if ((0, d.V)(n)) return void(0, o.Ze)(n);
                 a.A.joinGuild(n, {
-                    source: A.Q4z.GUILD_EVENT_EMBED
+                    source: C.Q4z.GUILD_EVENT_EMBED
                 }).catch(() => {})
             }
         },
         onTransitionToInviteChannel: function() {
-            (0, c.V)(n) ? (0, o.Ze)(n) : (null == C ? void 0 : C.isGuildStageVoice()) ? (0, d.av)(C) : (null == C ? void 0 : C.isGuildVoice()) && b.A.joinVoiceEvent(C.guild_id, C.id)
+            (0, d.V)(n) ? (0, o.Ze)(n) : S?.isGuildStageVoice() ? (0, u.av)(S) : S?.isGuildVoice() && x.A.joinVoiceEvent(S.guild_id, S.id)
         },
-        recurrenceId: O
+        recurrenceId: I
     })
 }

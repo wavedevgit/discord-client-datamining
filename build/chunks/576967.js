@@ -1,27 +1,27 @@
 /** chunk id: 576967, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => o
-}), n(896048);
-var l = n(627968);
+});
+var i = n(627968);
 n(64700);
-var r = n(503698),
-    i = n.n(r),
+var l = n(503698),
+    s = n.n(l),
     a = n(376310),
-    s = n(601051);
+    r = n(601051);
 
 function o(e) {
     let {
         appliedTags: t,
         setAppliedTags: n,
-        wrap: r
+        wrap: l
     } = e, o = null != n ? e => {
         t.has(e) && (t.delete(e), n(new Set(t)))
     } : void 0;
-    return (0, l.jsx)("div", {
-        className: i()(s._, {
-            [s.L]: r
+    return (0, i.jsx)("div", {
+        className: s()(r._, {
+            [r.L]: l
         }),
-        children: Array.from(t).map(e => (0, l.jsx)(a.A, {
+        children: Array.from(t).map(e => (0, i.jsx)(a.A, {
             tag: e,
             onRemove: o,
             size: null == o ? a.A.Sizes.SMALL : a.A.Sizes.MEDIUM

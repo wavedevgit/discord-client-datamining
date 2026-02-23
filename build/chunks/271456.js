@@ -1,29 +1,29 @@
-/** chunk id: 271456, original params: t,e,n (module,exports,require) **/
-n.d(e, {
+/** chunk id: 271456, original params: t,n,e (module,exports,require) **/
+e.d(n, {
     A: () => u
 });
-var i = n(627968);
-n(64700);
-var r = n(311907),
-    l = n(397927),
-    a = n(147087),
-    o = n(867455),
-    s = n(780057),
-    d = n(985018);
+var i = e(627968);
+e(64700);
+var a = e(311907),
+    l = e(397927),
+    r = e(147087),
+    s = e(867455),
+    d = e(780057),
+    o = e(985018);
 
 function u(t) {
-    let e = (0, r.bG)([s.A], () => s.A.isInProgress());
-    return (0, a.b)() && t.isThread() ? (0, i.jsx)(l.Drp, {
+    let n = (0, a.bG)([d.A], () => d.A.isInProgress());
+    return (0, r.b)() && t.isThread() ? (0, i.jsx)(l.Drp, {
         id: "summarize-thread",
-        label: e ? d.intl.string(d.t.oKECxB) : d.intl.string(d.t.EXfguE),
-        disabled: e,
-        loading: e,
-        action: () => o.A.summarizeThread(t),
-        children: e ? null : (0, i.jsxs)(i.Fragment, {
+        label: n ? o.intl.string(o.t.oKECxB) : o.intl.string(o.t.EXfguE),
+        disabled: n,
+        loading: n,
+        action: () => s.A.summarizeThread(t),
+        children: n ? null : (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(l.Drp, {
                 id: "summarize_thread_for_everyone",
-                label: d.intl.string(d.t.eCzSdd),
-                action: () => o.A.summarizeThread(t, !1),
+                label: o.intl.string(o.t.eCzSdd),
+                action: () => s.A.summarizeThread(t, !1),
                 icon: l.nFg,
                 leadingAccessory: {
                     type: "icon",
@@ -31,8 +31,8 @@ function u(t) {
                 }
             }), (0, i.jsx)(l.Drp, {
                 id: "summarize_thread_for_me",
-                label: d.intl.string(d.t["HOe+Hq"]),
-                action: () => o.A.summarizeThread(t),
+                label: o.intl.string(o.t["HOe+Hq"]),
+                action: () => s.A.summarizeThread(t),
                 icon: l.nys,
                 leadingAccessory: {
                     type: "icon",

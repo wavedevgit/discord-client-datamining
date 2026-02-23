@@ -1,78 +1,79 @@
 /** chunk id: 984624, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => b
+    A: () => _
 });
-var r = n(627968),
-    l = n(64700),
-    i = n(311907),
-    s = n(397927),
+var i = n(627968),
+    s = n(64700),
+    l = n(311907),
+    r = n(397927),
     a = n(267102),
     o = n(931991),
     c = n(246356),
-    u = n(404355),
-    d = n(734057),
-    p = n(707592),
-    h = n(496092),
-    g = n(132860),
-    f = n(508654),
+    d = n(404355),
+    u = n(734057),
+    h = n(707592),
+    A = n(496092),
+    p = n(132860),
+    g = n(508654),
     m = n(985018);
 
-function b(e) {
+function _(e) {
     let {
         channelId: t,
         onClick: n
-    } = e, b = (0, a.Us)(), A = (0, f.Qs)(t), y = (0, i.bG)([d.A], () => d.A.getChannel(t), [t]), {
-        canManageGuildEvent: O
-    } = (0, o.nr)(y), j = O(A), x = l.useRef(null);
-    if (null == A) return null;
-    let _ = () => {
-            null != y && (0, g.A)(y) ? (0, p.Py)(y, b) : n()
+    } = e, _ = (0, a.Us)(), f = (0, g.Qs)(t), x = (0, l.bG)([u.A], () => u.A.getChannel(t), [t]), {
+        canManageGuildEvent: C
+    } = (0, o.nr)(x), E = C(f), I = s.useRef(null);
+    if (null == f) return null;
+    let b = () => {
+            null != x && (0, p.A)(x) ? (0, h.Py)(x, _) : n()
         },
-        v = () => {
-            h.A.endEvent(A.id, A.guild_id)
+        N = () => {
+            A.A.endEvent(f.id, f.guild_id)
         };
-    return j ? (0, r.jsx)(s.YNO, {
-        targetElementRef: x,
+    return E ? (0, i.jsx)(r.YNO, {
+        targetElementRef: I,
         renderPopout: e => {
             let {
                 closePopout: t
             } = e;
-            return (0, r.jsx)(c.A, {
-                children: (0, r.jsx)(s.W1t, {
+            return (0, i.jsx)(c.A, {
+                children: (0, i.jsx)(r.W1t, {
                     "data-menu-migrated": !0,
                     navId: "exit-options",
                     onSelect: () => {},
                     "aria-label": m.intl.string(m.t["K6/mk3"]),
                     onClose: t,
-                    children: (0, r.jsx)(s.Drp, {
+                    children: (0, i.jsx)(r.Drp, {
                         id: "end-voice-event",
                         color: "danger",
-                        action: v,
+                        action: N,
                         label: m.intl.string(m.t.qaYzPA),
                         leadingAccessory: {
                             type: "icon",
-                            icon: s.aXh
+                            icon: r.aXh
                         },
-                        icon: s.aXh
+                        icon: r.aXh
                     })
                 })
             })
         },
         align: "center",
         position: "top",
-        animation: s.YNO.Animation.FADE,
+        animation: r.YNO.Animation.FADE,
         children: e => {
             let {
                 onClick: t
             } = e;
-            return (0, r.jsx)(u.A, {
-                buttonRef: x,
+            return (0, i.jsx)(d.A, {
+                buttonRef: I,
                 label: m.intl.string(m.t["6vrfgt"]),
-                onClick: _,
+                onClick: b,
                 onPopoutClick: t
             })
         }
-    }) : (0, r.jsx)(u.A, {
+    }) : (0, i.jsx)(d.A, {
         label: m.intl.string(m.t["6vrfgt"]),
         onClick: n
     })

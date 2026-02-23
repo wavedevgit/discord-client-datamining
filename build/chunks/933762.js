@@ -1,47 +1,43 @@
 /** chunk id: 933762, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => d
+    A: () => u
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(311907),
-    l = n(397927),
-    a = n(734057),
+var l = n(311907),
+    a = n(397927),
+    r = n(734057),
     s = n(763754),
     o = n(888675),
     c = n(985018),
-    u = n(324208);
+    d = n(324208);
 
-function d(e) {
-    var t;
+function u(e) {
     let {
-        message: n,
-        compact: d,
-        usernameHook: p,
+        message: t,
+        compact: n,
+        usernameHook: u,
         onClickThread: m,
-        onClickViewThreads: f,
-        onContextMenuThread: g
-    } = e, _ = (0, s.Ay)(n), h = p(_), b = (0, i.bG)([a.A], () => {
-        var e;
-        return a.A.getChannel(null == (e = n.messageReference) ? void 0 : e.channel_id)
-    }), y = c.intl.format(c.t.cZ9Uf2, {
-        actorName: _.nick,
-        actorHook: h,
-        threadName: null != (t = null == b ? void 0 : b.name) ? t : n.content,
+        onClickViewThreads: _,
+        onContextMenuThread: A
+    } = e, h = (0, s.Ay)(t), f = u(h), E = (0, l.bG)([r.A], () => r.A.getChannel(t.messageReference?.channel_id)), g = c.intl.format(c.t.cZ9Uf2, {
+        actorName: h.nick,
+        actorHook: f,
+        threadName: E?.name ?? t.content,
         threadOnClick: {
             onClick: m,
-            onContextMenu: g
+            onContextMenu: A
         },
-        viewThreadsOnClick: f
+        viewThreadsOnClick: _
     });
-    return (0, r.jsx)(o.A, {
-        iconNode: (0, r.jsx)(l.ysw, {
+    return (0, i.jsx)(o.A, {
+        iconNode: (0, i.jsx)(a.ysw, {
             size: "md",
             color: "currentColor",
-            className: u.K
+            className: d.K
         }),
-        timestamp: n.timestamp,
-        compact: d,
-        children: y
+        timestamp: t.timestamp,
+        compact: n,
+        children: g
     })
 }

@@ -2,22 +2,22 @@
 n.d(t, {
     A: () => _
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(397927),
-    l = n(502060),
-    s = n(983806),
-    a = n(218359),
+var s = n(397927),
+    a = n(502060),
+    r = n(983806),
+    l = n(218359),
     o = n(445343),
     c = n(696616),
     d = n(564752),
     u = n(985018);
-let _ = () => (0, r.jsxs)(i.BJc, {
+let _ = () => (0, i.jsxs)(s.BJc, {
     gap: 32,
-    children: [(0, r.jsx)(s.b, {}), (0, r.jsx)("div", {
-        children: (0, r.jsxs)(l.G, {
+    children: [(0, i.jsx)(r.b, {}), (0, i.jsx)("div", {
+        children: (0, i.jsxs)(a.G, {
             title: u.intl.string(u.t.SRZyHg),
-            children: [(0, r.jsx)(d.A, {}), (0, r.jsx)(c.A, {}), (0, r.jsx)(o.A, {}), (0, r.jsx)(a.A, {})]
+            children: [(0, i.jsx)(d.A, {}), (0, i.jsx)(c.A, {}), (0, i.jsx)(o.A, {}), (0, i.jsx)(l.A, {})]
         })
     })]
 })

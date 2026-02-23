@@ -1,25 +1,26 @@
 /** chunk id: 203548, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => d
-}), n(896048);
-var r = n(627968),
-    l = n(64700),
-    i = n(92674),
-    s = n(397927),
+    A: () => u
+});
+var i = n(627968),
+    s = n(64700),
+    l = n(475539),
+    r = n(397927),
     a = n(770178),
     o = n(180686);
 let c = Math.ceil(Math.sqrt(115200)),
-    u = (c - 240) / 2,
-    d = l.forwardRef(function(e, t) {
+    d = (c - 240) / 2,
+    u = s.forwardRef(function(e, t) {
         let {
             children: n
-        } = e, [d, p] = l.useState(-1), h = l.useCallback(e => {
-            p(e.contentRect.width)
-        }, []), g = (0, a.w)(h, [], {
+        } = e, [u, h] = s.useState(-1), A = s.useCallback(e => {
+            h(e.contentRect.width)
+        }, []), p = (0, a.w)(A, [], {
             fireOnMount: !0
         }), [{
-            shineSpring: f
-        }, m] = (0, s.zhh)(() => ({
+            shineSpring: g
+        }, m] = (0, r.zhh)(() => ({
             from: {
                 shineSpring: 0
             },
@@ -29,39 +30,39 @@ let c = Math.ceil(Math.sqrt(115200)),
                 tension: 170,
                 friction: 38
             }
-        })), b = l.useCallback((e, t) => {
+        })), _ = s.useCallback((e, t) => {
             m({
                 shineSpring: 1,
                 delay: t
             })
-        }, [m]), A = l.useCallback(() => {
+        }, [m]), f = s.useCallback(() => {
             m({
                 shineSpring: 0,
                 immediate: !0
             })
-        }, [m]), y = l.useMemo(() => {
-            let e = (0, r.jsx)(i.animated.div, {
+        }, [m]), x = s.useMemo(() => {
+            let e = (0, i.jsx)(l.animated.div, {
                 className: o.q2,
                 style: {
-                    transform: f.to(e => "translateX(calc(".concat(e * d, "px + ").concat(e * c, "px)) translateY(-50%) rotate(45deg)"))
+                    transform: g.to(e => `translateX(calc(${e*u}px + ${e*c}px)) translateY(-50%) rotate(45deg)`)
                 }
             });
             return n(o.VU, o.Qq, o.Kk, e)
-        }, [n, d, f]);
-        return l.useImperativeHandle(t, () => ({
-            onMouseEnter: b,
-            onMouseLeave: A
-        }), [b, A]), (0, r.jsx)("div", {
+        }, [n, u, g]);
+        return s.useImperativeHandle(t, () => ({
+            onMouseEnter: _,
+            onMouseLeave: f
+        }), [_, f]), (0, i.jsx)("div", {
             className: o.iE,
-            onMouseEnter: b,
-            onMouseLeave: A,
-            onFocus: b,
-            onBlur: A,
-            ref: g,
+            onMouseEnter: _,
+            onMouseLeave: f,
+            onFocus: _,
+            onBlur: f,
+            ref: p,
             style: {
-                "--custom-shine-dimensions": "".concat(240, "px"),
-                "--custom-shine-rotated-dimensions-delta": "".concat(u, "px")
+                "--custom-shine-dimensions": "240px",
+                "--custom-shine-rotated-dimensions-delta": `${d}px`
             },
-            children: y
+            children: x
         })
     })

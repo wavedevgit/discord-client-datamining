@@ -1,11 +1,11 @@
 /** chunk id: 229224, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    a: () => i
+    a: () => r
 });
-var r = n(73153);
+var i = n(73153);
 
-function i() {
-    r.h.dispatch({
+function r() {
+    i.h.dispatch({
         type: "AUTO_UPDATER_QUIT_AND_INSTALL"
     })
 }

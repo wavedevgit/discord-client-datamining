@@ -1,93 +1,66 @@
 /** chunk id: 942596, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    Z: () => _
+    Z: () => u
 });
-var r = n(627968),
-    o = n(397927),
-    a = n(933297),
-    l = n(985018);
+var a = n(627968),
+    r = n(397927),
+    i = n(933297),
+    s = n(985018);
 
-function i(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = r
-        })
-    }
-    return e
-}
-
-function c(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
-        }
-        return n
-    })(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-
-function s(e) {
+function l(e) {
     let {
         useCount: t
     } = e, n = t();
-    return 0 === n ? null : (0, r.jsx)(o.hVq, {
+    return 0 === n ? null : (0, a.jsx)(r.hVq, {
         count: n
     })
 }
 
-function u(e) {
+function o(e) {
     let {
         getDismissibleContentTypes: t,
         stronglyDiscouragedBadgeComponent: n,
-        visibleContent: a,
-        isSelected: i
-    } = e, c = null == t ? void 0 : t(), s = null != a && c.includes(a) && !i, u = null != n ? (0, r.jsx)(n, {}) : (0, r.jsx)(o.LpS, {
-        text: l.intl.string(l.t.y2b7CA)
+        visibleContent: i,
+        isSelected: l
+    } = e, o = t?.(), c = null != i && o.includes(i) && !l, u = null != n ? (0, a.jsx)(n, {}) : (0, a.jsx)(r.LpS, {
+        text: s.intl.string(s.t.y2b7CA)
     });
-    return s ? u : null
+    return c ? u : null
 }
 
-function d(e) {
+function c(e) {
     let {
         useCustomDecoration: t,
         visibleContent: n,
-        isSelected: r
+        isSelected: a
     } = e;
-    return t(n, r)
+    return t(n, a)
 }
 
-function _(e) {
+function u(e) {
     let {
         trailing: t,
         visibleContent: n,
-        isSelected: o
+        isSelected: r
     } = e;
     if (null == t) return null;
     switch (t.type) {
-        case a.S.BADGE_COUNT:
-            return (0, r.jsx)(s, i({}, t));
-        case a.S.BADGE_NEW:
-            return (0, r.jsx)(u, c(i({}, t), {
+        case i.Si.BADGE_COUNT:
+            return (0, a.jsx)(l, {
+                ...t
+            });
+        case i.Si.BADGE_NEW:
+            return (0, a.jsx)(o, {
+                ...t,
                 visibleContent: n,
-                isSelected: o
-            }));
-        case a.S.STRONGLY_DISCOURAGED_CUSTOM:
-            return (0, r.jsx)(d, c(i({}, t), {
+                isSelected: r
+            });
+        case i.Si.STRONGLY_DISCOURAGED_CUSTOM:
+            return (0, a.jsx)(c, {
+                ...t,
                 visibleContent: n,
-                isSelected: o
-            }))
+                isSelected: r
+            })
     }
 }

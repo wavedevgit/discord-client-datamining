@@ -1,66 +1,26 @@
-/** chunk id: 35602, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    I: () => u
-}), n(321073), n(457529), n(65821);
-var r = n(627968);
-n(64700);
-var i = n(397927);
-
-function a(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-
-function o(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            a(e, t, n[t])
-        })
-    }
-    return e
-}
-
-function s(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-        var r = Object.getOwnPropertySymbols(e);
-        t && (r = r.filter(function(t) {
-            return Object.getOwnPropertyDescriptor(e, t).enumerable
-        })), n.push.apply(n, r)
-    }
-    return n
-}
-
-function l(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : s(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-let c = new(n(626584)).A("MFAPlayground"),
-    u = {
+/** chunk id: 35602, original params: e,a,l (module,exports,require) **/
+l.d(a, {
+    I: () => n
+}), l(321073);
+var t = l(627968);
+l(64700);
+var o = l(397927);
+let s = new(l(626584)).A("MFAPlayground"),
+    n = {
         title: "MFA",
         stories: [{
             name: "Challenge Modal",
             id: "mfa-modal",
             component: function(e) {
                 let {
-                    hasPassword: t,
-                    hasTotp: a,
-                    hasSms: s,
-                    hasWebauthn: u,
-                    hasBackup: d,
-                    simulateError: f
-                } = e, p = [];
-                u && p.push({
+                    hasPassword: a,
+                    hasTotp: n,
+                    hasSms: r,
+                    hasWebauthn: i,
+                    hasBackup: u,
+                    simulateError: p
+                } = e, d = [];
+                i && d.push({
                     type: "webauthn",
                     challenge: JSON.stringify({
                         publicKey: {
@@ -71,45 +31,46 @@ let c = new(n(626584)).A("MFAPlayground"),
                             userVerification: "preferred"
                         }
                     })
-                }), a && p.push({
+                }), n && d.push({
                     type: "totp"
-                }), s && p.push({
+                }), r && d.push({
                     type: "sms"
-                }), d && p.push({
+                }), u && d.push({
                     type: "backup"
-                }), t && p.push({
+                }), a && d.push({
                     type: "password"
                 });
-                let _ = p.length > 0 ? p : [{
+                let c = d.length > 0 ? d : [{
                     type: "password"
                 }];
-                return (0, r.jsxs)(i.BJc, {
+                return (0, t.jsxs)(o.BJc, {
                     align: "center",
-                    children: [u && (0, r.jsx)(i.Text, {
+                    children: [i && (0, t.jsx)(o.Text, {
                         variant: "text-sm/normal",
                         color: "text-muted",
                         children: "Note: WebAuthn UI will appear but will always error"
-                    }), (0, r.jsx)(i.Button, {
+                    }), (0, t.jsx)(o.Button, {
                         variant: "primary",
                         text: "Open MFA Modal",
                         onClick: () => {
                             let e = {
-                                    ticket: "mock-ticket-".concat(Math.random().toString(36).substring(7)),
-                                    methods: _
+                                    ticket: `mock-ticket-${Math.random().toString(36).substring(7)}`,
+                                    methods: c
                                 },
-                                t = e => new Promise((t, n) => {
-                                    (c.info("Type: ".concat(e.mfaType)), c.info("Data: ".concat(e.data)), c.info("Ticket: ".concat(e.ticket)), f) ? n(Error("simulated error")): t()
+                                a = e => new Promise((a, l) => {
+                                    (s.info(`Type: ${e.mfaType}`), s.info(`Data: ${e.data}`), s.info(`Ticket: ${e.ticket}`), p) ? l(Error("simulated error")): a()
                                 });
-                            (0, i.mMO)(async () => {
+                            (0, o.mMO)(async () => {
                                 let {
-                                    MFAModal: i
-                                } = await Promise.all([n.e("88890"), n.e("62564")]).then(n.bind(n, 720353));
-                                return n => (0, r.jsx)(i, l(o({}, n), {
-                                    finish: t,
+                                    MFAModal: o
+                                } = await Promise.all([l.e("88890"), l.e("62564")]).then(l.bind(l, 720353));
+                                return l => (0, t.jsx)(o, {
+                                    ...l,
+                                    finish: a,
                                     mfaChallenge: e
-                                }))
+                                })
                             }, {
-                                onCloseCallback: () => c.info("Modal closed")
+                                onCloseCallback: () => s.info("Modal closed")
                             })
                         }
                     })]

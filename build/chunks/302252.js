@@ -1,129 +1,134 @@
-/** chunk id: 302252, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    default: () => m
+/** chunk id: 302252, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    default: () => g
 });
-var i = n(627968);
-n(64700);
-var o = n(110259),
-    a = n(397927),
-    r = n(930932),
-    l = n(382935),
-    s = n(131935),
-    c = n(954571),
-    _ = n(652215),
-    u = n(670455),
-    d = n(985018),
-    b = n(716829);
+var n = i(627968);
+i(64700);
+var o = i(110259),
+    a = i(397927),
+    l = i(207753),
+    r = i(930932),
+    _ = i(382935),
+    s = i(131935),
+    u = i(430452),
+    d = i(954571),
+    c = i(652215),
+    m = i(670455),
+    b = i(985018),
+    p = i(716829);
 
-function m(e) {
+function g(e) {
     let {
         onClose: t,
-        transitionState: m,
-        analyticsData: p
-    } = e, g = d.intl.string(d.t.Ss6tlb), v = d.intl.string(d.t.tLi4cR), f = {
+        transitionState: g,
+        analyticsData: v
+    } = e, f = b.intl.string(b.t.Ss6tlb), O = b.intl.string(b.t.tLi4cR), A = {
         impressionName: o.ImpressionNames.VOICE_FEEDBACK_MODAL,
         impressionProperties: {
-            rtc_connection_id: p.rtc_connection_id,
-            media_session_id: p.media_session_id
+            rtc_connection_id: v.rtc_connection_id,
+            media_session_id: v.media_session_id
         }
-    }, O = {
-        value: u.Eq.CONNECTION,
-        label: d.intl.string(b.default.FVhMw6),
-        problemsHeader: d.intl.string(d.t.FJmoxF),
+    }, E = {
+        value: m.Eq.CONNECTION,
+        label: b.intl.string(p.default.FVhMw6),
+        problemsHeader: b.intl.string(b.t.FJmoxF),
         problemOptions: (0, r.A_)(),
         freeformConfig: {
-            value: u.bO.FREEFORM,
-            label: d.intl.string(d.t.emlT91)
+            value: m.bO.FREEFORM,
+            label: b.intl.string(b.t.emlT91)
         }
     }, y = {
-        value: u.Eq.AUDIO,
-        label: d.intl.string(b.default.PL2l6A),
-        problemsHeader: d.intl.string(d.t.FJmoxF),
+        value: m.Eq.AUDIO,
+        label: b.intl.string(p.default.PL2l6A),
+        problemsHeader: b.intl.string(b.t.FJmoxF),
         problemOptions: (0, r.Op)({
             isMobile: !1
         }),
         freeformConfig: {
-            value: u.X.FREEFORM,
-            label: d.intl.string(d.t.emlT91)
+            value: m.X.FREEFORM,
+            label: b.intl.string(b.t.emlT91)
         }
-    }, E = {
-        value: u.Eq.VIDEO,
-        label: d.intl.string(b.default["0WFzPh"]),
-        problemsHeader: d.intl.string(d.t.FJmoxF),
+    }, F = {
+        value: m.Eq.VIDEO,
+        label: b.intl.string(p.default["0WFzPh"]),
+        problemsHeader: b.intl.string(b.t.FJmoxF),
         problemOptions: (0, r.de)(),
         freeformConfig: {
-            value: u.AO.FREEFORM,
-            label: d.intl.string(d.t.emlT91)
+            value: m.AO.FREEFORM,
+            label: b.intl.string(b.t.emlT91)
         }
-    }, A = {
-        value: u.Eq.PEOPLE,
-        label: d.intl.string(b.default.Moa3W9),
-        problemsHeader: d.intl.string(d.t.FJmoxF),
+    }, C = {
+        value: m.Eq.PEOPLE,
+        label: b.intl.string(p.default.Moa3W9),
+        problemsHeader: b.intl.string(b.t.FJmoxF),
         problemOptions: (0, r.TK)(),
         freeformConfig: {
-            value: u.CW.FREEFORM,
-            label: d.intl.string(d.t.emlT91)
+            value: m.CW.FREEFORM,
+            label: b.intl.string(b.t.emlT91)
         }
     };
-    return (0, i.jsx)(l.A, {
+    return (0, n.jsx)(_.A, {
         onMount: () => {
-            c.default.track(_.HAw.OPEN_MODAL, {
+            d.default.track(c.HAw.OPEN_MODAL, {
                 type: "voice",
                 source: "Feedback Modal"
             })
         },
         onSubmit: function(e) {
-            var t, o;
             let {
-                dontShowAgain: l,
-                rating: c,
-                feedback: b,
-                category: m,
-                problem: g
+                dontShowAgain: t,
+                rating: o,
+                feedback: _,
+                category: d,
+                problem: p
             } = e;
-            l && (0, r.n3)({
-                feedbackType: u.MW.VOICE,
-                location: "VoiceCallFeedbackModal"
-            }), null == c || ((0, s.A)(_.HAw.CALL_REPORT_PROBLEM, {
-                rating: c,
-                category: m,
-                reasonDescription: null != (t = null == g ? void 0 : g.value) ? t : null,
-                variant: null != (o = null == g ? void 0 : g.variant) ? o : null,
-                feedback: b,
-                analyticsData: p
-            }), null != g && (0, a.mMO)(async () => {
-                let {
-                    default: e
-                } = await n.e("37836").then(n.bind(n, 845671));
-                return t => (0, i.jsx)(e, function(e) {
-                    for (var t = 1; t < arguments.length; t++) {
-                        var n = null != arguments[t] ? arguments[t] : {},
-                            i = Object.keys(n);
-                        "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                            return Object.getOwnPropertyDescriptor(n, e).enumerable
-                        }))), i.forEach(function(t) {
-                            var i;
-                            i = n[t], t in e ? Object.defineProperty(e, t, {
-                                value: i,
-                                enumerable: !0,
-                                configurable: !0,
-                                writable: !0
-                            }) : e[t] = i
+            if (t && (0, r.n3)({
+                    feedbackType: m.MW.VOICE,
+                    location: "VoiceCallFeedbackModal"
+                }), null != o) {
+                if ((0, s.A)(c.HAw.CALL_REPORT_PROBLEM, {
+                        rating: o,
+                        category: d,
+                        reasonDescription: p?.value ?? null,
+                        variant: p?.variant ?? null,
+                        feedback: _,
+                        analyticsData: v
+                    }), null != p) {
+                    if (p.value === m.X.NO_AUDIO && p.variant === m.UV.SELF && function(e) {
+                            let {
+                                duration: t,
+                                duration_muted_ms: i
+                            } = e;
+                            return null != t && null != i && 0 !== t && i / t >= .98 && u.Ay.isSelfMute()
+                        }(v) && l.A.getConfig({
+                            location: "VoiceCallFeedbackModal"
+                        }).muteTutorialEnabled) return void(0, a.mMO)(async () => {
+                        let {
+                            default: e
+                        } = await i.e("41737").then(i.bind(i, 36304));
+                        return t => (0, n.jsx)(e, {
+                            ...t
                         })
-                    }
-                    return e
-                }({
-                    body: d.intl.string(d.t["d9+vQ8"])
-                }, t))
-            }))
+                    });
+                    (0, a.mMO)(async () => {
+                        let {
+                            default: e
+                        } = await i.e("37836").then(i.bind(i, 845671));
+                        return t => (0, n.jsx)(e, {
+                            body: b.intl.string(b.t["d9+vQ8"]),
+                            ...t
+                        })
+                    })
+                }
+            }
         },
         onClose: t,
-        ratingHeader: g,
+        ratingHeader: f,
         ratingEmojiKind: "face",
-        ratingBody: v,
-        categoriesHeader: d.intl.string(b.default.tq8598),
-        optionsTree: [O, y, E, A],
-        impression: f,
-        transitionState: m
+        ratingBody: O,
+        categoriesHeader: b.intl.string(p.default.tq8598),
+        optionsTree: [E, y, F, C],
+        impression: A,
+        transitionState: g
     })
 }

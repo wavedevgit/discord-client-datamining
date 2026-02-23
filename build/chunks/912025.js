@@ -1,24 +1,24 @@
-/** chunk id: 912025, original params: e,t,n (module,exports,require) **/
-n.d(t, {
+/** chunk id: 912025, original params: t,e,n (module,exports,require) **/
+n.d(e, {
     A: () => c
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(397927),
+var r = n(397927),
     a = n(409626),
-    o = n(692969);
+    l = n(692969);
 
-function c(e) {
-    let t = (0, o.A)({
+function c(t) {
+    let e = (0, l.A)({
         location: "ContentPopout",
-        applicationId: null == e ? void 0 : e.id,
+        applicationId: t?.id,
         source: a.Ob.ActivityCard,
         trackEntryPointImpression: !0,
         sourceUserId: void 0
     }, {});
-    return (0, r.jsx)(i.Drp, {
+    return (0, i.jsx)(r.Drp, {
         id: "game-profile",
         label: "Game Profile",
-        action: t
+        action: e
     })
 }

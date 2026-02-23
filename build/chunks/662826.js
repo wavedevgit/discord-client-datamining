@@ -1,19 +1,19 @@
 /** chunk id: 662826, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    g: () => A
+    g: () => T
 });
 var n = i(311907),
     l = i(274372),
     s = i(915618),
     r = i(399925),
-    u = i(670470),
-    a = i(419954),
+    a = i(670470),
+    u = i(419954),
     o = i(430452),
     d = i(780964),
-    T = i(985018);
-let A = (0, a.zD)(d.X.CLIPS_VIEWERSIDE_CLIPS_SETTING, {
-    useTitle: () => T.intl.string(T.t.NWw7kY),
-    useSubtitle: () => T.intl.string(T.t["0vjy8N"]),
+    A = i(985018);
+let T = (0, u.zD)(d.X.CLIPS_VIEWERSIDE_CLIPS_SETTING, {
+    useTitle: () => A.intl.string(A.t.NWw7kY),
+    useSubtitle: () => A.intl.string(A.t["0vjy8N"]),
     useValue: function() {
         return (0, n.bG)([l.A], () => l.A.getSettings().viewerClipsEnabled)
     },
@@ -24,11 +24,11 @@ let A = (0, a.zD)(d.X.CLIPS_VIEWERSIDE_CLIPS_SETTING, {
     usePredicate: function() {
         let {
             enableViewerClipping: t
-        } = u.A.useExperiment({
+        } = a.A.useExperiment({
             location: "Data & Privacy"
         }, {
             autoTrackExposure: !1
-        }), e = (0, n.bG)([o.A], () => (0, s.A)(o.A));
+        }), e = (0, n.bG)([o.Ay], () => (0, s.A)(o.Ay));
         return t && e
     }
 })

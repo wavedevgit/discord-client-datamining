@@ -5,11 +5,11 @@ i.d(t, {
 var n = i(627968),
     l = i(64700),
     c = i(732955),
-    r = i(369162),
-    o = i(427562),
-    s = i(652215),
-    a = i(985018),
-    d = i(390790);
+    s = i(369162),
+    d = i(427562),
+    a = i(652215),
+    r = i(985018),
+    o = i(390790);
 
 function u(e) {
     let {
@@ -19,35 +19,35 @@ function u(e) {
         onConfirm: _
     } = e, {
         rules: h,
-        rulesAccepted: p
-    } = (0, r.P)(), k = l.useCallback(() => {
+        rulesAccepted: k
+    } = (0, s.P)(), C = l.useCallback(() => {
         u(), _()
     }, [u, _]);
     return (0, n.jsx)(c.aFV, {
-        title: a.intl.string(a.t["Q8OFN+"]),
-        subtitle: a.intl.format(a.t.JLUVfo, {
-            onCommunityGuidelinesClick: () => (0, o.p3)({
-                articleId: s.MVz.PUBLIC_GUILD_GUILDLINES,
+        title: r.intl.string(r.t["Q8OFN+"]),
+        subtitle: r.intl.format(r.t.JLUVfo, {
+            onCommunityGuidelinesClick: () => (0, d.p3)({
+                articleId: a.MVz.PUBLIC_GUILD_GUILDLINES,
                 guildId: t,
-                modalStep: o.iv.AGREE_TO_RULES
+                modalStep: d.iv.AGREE_TO_RULES
             }),
-            onDiscoveryGuidelinesClick: () => (0, o.p3)({
-                articleId: s.MVz.SERVER_DISCOVERY_GUIDELINES,
+            onDiscoveryGuidelinesClick: () => (0, d.p3)({
+                articleId: a.MVz.SERVER_DISCOVERY_GUIDELINES,
                 guildId: t,
-                modalStep: o.iv.AGREE_TO_RULES
+                modalStep: d.iv.AGREE_TO_RULES
             })
         }),
         actions: [{
-            disabled: !p,
-            text: a.intl.string(a.t["qjtt/p"]),
-            onClick: k
+            disabled: !k,
+            text: r.intl.string(r.t["qjtt/p"]),
+            onClick: C
         }],
         transitionState: i,
         onClose: u,
         children: (0, n.jsx)("div", {
-            className: d.H,
+            className: o.H,
             children: h.map(e => (0, n.jsx)("div", {
-                className: d.k,
+                className: o.k,
                 children: (0, n.jsx)(c.Sc0, {
                     checked: e.checked,
                     onChange: e.onCheck,

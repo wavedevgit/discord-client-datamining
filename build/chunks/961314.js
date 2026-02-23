@@ -1,41 +1,42 @@
 /** chunk id: 961314, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => p
+    A: () => h
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var l = n(397927),
-    i = n(58736),
-    s = n(722260),
+var s = n(397927),
+    l = n(58736),
+    r = n(722260),
     a = n(563312),
     o = n(974930),
     c = n(103355),
-    u = n(985018),
-    d = n(234944);
+    d = n(985018),
+    u = n(234944);
 
-function p(e) {
+function h(e) {
     let {
         guildEvent: t,
         recurrenceId: n
-    } = e, p = (0, a.Ay)(t, n), h = (0, s.A)(n, t.id);
+    } = e, h = (0, a.Ay)(t, n), A = (0, r.A)(n, t.id);
     if (null == t) return null;
-    let g = (null == t ? void 0 : t.scheduled_start_time) != null ? (0, o.j)(h, p.startTime, new Date(null == t ? void 0 : t.scheduled_start_time)) : null;
-    return (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(i.Ay.Divider, {
-            className: d.yF
-        }), (0, r.jsx)(c.L, {
-            startTime: p.startTime.toISOString(),
-            status: null != g ? g : t.status,
-            liveText: u.intl.string(u.t.kM6e4G),
-            className: d.aF,
+    let p = t?.scheduled_start_time != null ? (0, o.j)(A, h.startTime, new Date(t?.scheduled_start_time)) : null;
+    return (0, i.jsxs)(i.Fragment, {
+        children: [(0, i.jsx)(l.Ay.Divider, {
+            className: u.yF
+        }), (0, i.jsx)(c.L, {
+            startTime: h.startTime.toISOString(),
+            status: p ?? t.status,
+            liveText: d.intl.string(d.t.kM6e4G),
+            className: u.aF,
             textVariant: "text-lg/semibold",
             eventType: t.entity_type,
-            guildEventId: null == t ? void 0 : t.id,
+            guildEventId: t?.id,
             recurrenceId: n
-        }), (0, r.jsx)(l.Text, {
+        }), (0, i.jsx)(s.Text, {
             color: "text-default",
             variant: "text-md/normal",
-            className: d.eq,
+            className: u.eq,
             children: t.name
         })]
     })

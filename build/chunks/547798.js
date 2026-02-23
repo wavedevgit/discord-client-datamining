@@ -1,140 +1,124 @@
 /** chunk id: 547798, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => N
-}), n(65821), n(896048);
+    A: () => I
+});
 var a = n(627968),
-    l = n(64700),
-    r = n(503698),
-    i = n.n(r),
-    s = n(141931),
+    i = n(64700),
+    s = n(503698),
+    l = n.n(s),
+    r = n(141931),
     o = n(562465),
-    c = n(306173),
-    d = n(397927),
+    d = n(306173),
+    c = n(397927),
     u = n(73153),
     m = n(787880),
-    p = n(142120),
-    h = n(69555),
-    x = n(237984),
+    h = n(142120),
+    x = n(69555),
+    p = n(237984),
     g = n(349435),
-    f = n(674272),
-    b = n(253932),
-    v = n(559248),
-    j = n(179690),
-    _ = n(309010),
-    y = n(837921),
+    _ = n(674272),
+    f = n(253932),
+    b = n(559248),
+    v = n(179690),
+    j = n(309010),
+    C = n(837921),
     A = n(652215),
-    C = n(327337),
+    T = n(327337),
     S = n(431804),
-    O = n(229988),
-    T = n(473169);
+    y = n(229988),
+    E = n(473169);
 
-function E() {
+function N() {
     throw Error("Send help")
 }
 
-function N() {
-    let e = b.j0.useSetting(),
-        [t, r] = l.useState(!1);
-    return t ? {} : (0, a.jsxs)(d.HOs, {
+function I() {
+    let e = f.j0.useSetting(),
+        [t, s] = i.useState(!1);
+    return t ? {} : (0, a.jsxs)(c.HOs, {
         children: [(0, a.jsx)("div", {
-            className: i()(O.N, T.SX),
-            children: (0, a.jsx)(v.M, {})
+            className: l()(y.N, E.SX),
+            children: (0, a.jsx)(b.M, {})
         }), (0, a.jsx)("div", {
-            className: i()(O.N, T.QB),
-            children: (0, a.jsx)(d.Button, {
+            className: l()(y.N, E.QB),
+            children: (0, a.jsx)(c.Button, {
                 variant: "primary",
                 size: "sm",
                 text: "Launch Vibing Wumpus",
-                onClick: () => (0, f.A)({
+                onClick: () => (0, _.A)({
                     source: S.y.KEYBIND
                 })
             })
         }), (0, a.jsx)("div", {
-            className: i()(O.N, T.QB),
-            children: (0, a.jsx)(d.Button, {
+            className: l()(y.N, E.QB),
+            children: (0, a.jsx)(c.Button, {
                 variant: "primary",
                 size: "sm",
                 text: "Launch Safety Tools Modal",
                 onClick: () => {
-                    let e, t;
-                    return t = null != (e = _.A.getChannelId()) ? e : "21154681615024128", void(0, d.mMO)(async () => {
+                    let e;
+                    return e = j.A.getChannelId() ?? "21154681615024128", void(0, c.mMO)(async () => {
                         let {
-                            default: e
+                            default: t
                         } = await Promise.all([n.e("45033"), n.e("46717"), n.e("54105")]).then(n.bind(n, 788099));
-                        return n => (0, a.jsx)(e, function(e) {
-                            for (var t = 1; t < arguments.length; t++) {
-                                var n = null != arguments[t] ? arguments[t] : {},
-                                    a = Object.keys(n);
-                                "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                                    return Object.getOwnPropertyDescriptor(n, e).enumerable
-                                }))), a.forEach(function(t) {
-                                    var a;
-                                    a = n[t], t in e ? Object.defineProperty(e, t, {
-                                        value: a,
-                                        enumerable: !0,
-                                        configurable: !0,
-                                        writable: !0
-                                    }) : e[t] = a
-                                })
-                            }
-                            return e
-                        }({
+                        return n => (0, a.jsx)(t, {
                             otherUserId: "9876543210",
-                            channelId: t,
+                            channelId: e,
                             warningId: "test-warning-id",
-                            warningType: g._j.INAPPROPRIATE_CONVERSATION_TIER_2
-                        }, n))
+                            warningType: g._j.INAPPROPRIATE_CONVERSATION_TIER_2,
+                            ...n
+                        })
                     }, {
-                        modalKey: C.V
+                        modalKey: T.V
                     })
                 }
             })
         }), (0, a.jsx)("div", {
-            className: i()(O.N, T.QB),
-            children: (0, a.jsx)(d.Button, {
+            className: l()(y.N, E.QB),
+            children: (0, a.jsx)(c.Button, {
                 variant: "primary",
                 size: "sm",
                 text: "Launch Captcha Test Tool",
                 onClick: () => (0, m.g)()
             })
         }), (0, a.jsx)("div", {
-            className: i()(O.N, T.QB),
-            children: (0, a.jsx)(d.Button, {
+            className: l()(y.N, E.QB),
+            children: (0, a.jsx)(c.Button, {
                 variant: "primary",
                 size: "sm",
                 text: "Reset Hang Status State",
-                onClick: h.B7
+                onClick: x.B7
             })
         }), (0, a.jsx)("div", {
-            className: i()(O.N, T.QB),
-            children: (0, a.jsx)(d.Button, {
+            className: l()(y.N, E.QB),
+            children: (0, a.jsx)(c.Button, {
                 variant: "primary",
                 size: "sm",
                 text: "Force libdiscore Crash",
-                onClick: c.Oy
+                onClick: d.Oy
             })
         }), (0, a.jsx)("div", {
-            className: i()(O.N, T.QB),
-            children: (0, a.jsx)(d.dOG, {
+            className: l()(y.N, E.QB),
+            children: (0, a.jsx)(c.dOG, {
                 label: "Ignore profile speedbump disabled",
                 checked: e,
-                onChange: e => b.j0.updateSetting(e)
+                onChange: e => f.j0.updateSetting(e)
             })
         }), (0, a.jsxs)("div", {
-            className: i()(O.N, T.QB),
-            children: [(0, a.jsx)(d.Button, {
+            className: l()(y.N, E.QB),
+            children: [(0, a.jsx)(c.Button, {
                 variant: "primary",
                 size: "sm",
                 text: "Open Overlay",
-                onClick: () => (0, x.o)()
-            }), (0, a.jsx)(d.Button, {
+                onClick: () => (0, p.o)()
+            }), (0, a.jsx)(c.Button, {
                 variant: "primary",
                 size: "sm",
                 text: "Reset Socket",
                 onClick: () => {
-                    p.A.getSocket().close(), p.A.getSocket().connect()
+                    h.A.getSocket().close(), h.A.getSocket().connect()
                 }
-            }), (0, a.jsx)(d.Button, {
+            }), (0, a.jsx)(c.Button, {
                 variant: "primary",
                 size: "sm",
                 text: "Clear Caches",
@@ -146,12 +130,12 @@ function N() {
                         resetSocket: !0
                     })
                 }
-            }), (0, a.jsx)(d.Button, {
+            }), (0, a.jsx)(c.Button, {
                 variant: "primary",
                 size: "sm",
                 text: "Show TOTP Success",
-                onClick: () => (0, j.sy)(!0)
-            }), (0, a.jsx)(d.Button, {
+                onClick: () => (0, v.sy)(!0)
+            }), (0, a.jsx)(c.Button, {
                 variant: "primary",
                 size: "sm",
                 text: "Trigger Suspicious Sessions Notifications",
@@ -163,8 +147,8 @@ function N() {
                 }
             })]
         }), (0, a.jsxs)("div", {
-            className: i()(O.N, T.QB),
-            children: [(0, a.jsx)(d.l6P, {
+            className: l()(y.N, E.QB),
+            children: [(0, a.jsx)(c.l6P, {
                 label: "Trigger native crash",
                 hideLabel: !0,
                 selectionMode: "single",
@@ -194,8 +178,8 @@ function N() {
                     value: 4,
                     id: "out_of_memory"
                 }],
-                onSelectionChange: e => null != e && y.Ay.crash(e)
-            }), (0, a.jsx)(d.l6P, {
+                onSelectionChange: e => null != e && C.Ay.crash(e)
+            }), (0, a.jsx)(c.l6P, {
                 label: "Trigger JS crash",
                 hideLabel: !0,
                 selectionMode: "single",
@@ -206,28 +190,28 @@ function N() {
                     id: "native_js_crash"
                 }, {
                     label: "Delayed exception in renderer process",
-                    value: s.qQ.RendererProcessDelayed,
+                    value: r.qQ.RendererProcessDelayed,
                     id: "delayed_exception_in_renderer_process"
                 }, {
                     label: "Exception in renderer process",
-                    value: s.qQ.RendererProcess,
+                    value: r.qQ.RendererProcess,
                     id: "exception_in_renderer_process"
                 }, {
                     label: "Exception in main process",
-                    value: s.qQ.MainProcess,
+                    value: r.qQ.MainProcess,
                     id: "exception_in_main_process"
                 }],
-                onSelectionChange: e => null != e ? void y.Ay.triggerJSException(e) : void 0
-            }), (0, a.jsx)(d.Button, {
+                onSelectionChange: e => null != e ? void C.Ay.triggerJSException(e) : void 0
+            }), (0, a.jsx)(c.Button, {
                 variant: "primary",
                 size: "sm",
                 text: "React Crash",
-                onClick: () => r(!0)
-            }), (0, a.jsx)(d.Button, {
+                onClick: () => s(!0)
+            }), (0, a.jsx)(c.Button, {
                 variant: "primary",
                 size: "sm",
                 text: "onClick Throw",
-                onClick: E
+                onClick: N
             })]
         })]
     })

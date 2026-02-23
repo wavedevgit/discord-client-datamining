@@ -1,15 +1,15 @@
 /** chunk id: 875331, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    E: () => i
+    E: () => s
 });
-var r = n(73153);
+var i = n(73153);
 
-function i(e, t, n) {
-    return r.h.dispatch({
+function s(e, t, n) {
+    return i.h.dispatch({
         type: "GUILD_SETTINGS_WIDGET_UPDATE",
         guildId: e,
         enabled: t,
-        channelId: null != n ? n : null
+        channelId: n ?? null
     }), Promise.resolve(!0)
 }

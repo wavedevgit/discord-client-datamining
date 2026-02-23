@@ -1,15 +1,15 @@
-/** chunk id: 408607, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => a
+/** chunk id: 408607, original params: e,t,l (module,exports,require) **/
+l.d(t, {
+    A: () => r
 });
-var l = n(64700),
-    r = n(311907),
-    i = n(686956),
-    s = n(287809);
+var n = l(64700),
+    s = l(311907),
+    i = l(686956),
+    a = l(287809);
 
-function a(e) {
-    let t = (0, r.bG)([s.default], () => s.default.getUser(null == e ? void 0 : e.creator_id), [e]);
-    return l.useEffect(() => {
-        null == t && (null == e ? void 0 : e.creator_id) != null && i.A.requestMembersById(e.guild_id, e.creator_id)
+function r(e) {
+    let t = (0, s.bG)([a.default], () => a.default.getUser(e?.creator_id), [e]);
+    return n.useEffect(() => {
+        null == t && e?.creator_id != null && i.A.requestMembersById(e.guild_id, e.creator_id)
     }, [e, t]), t
 }

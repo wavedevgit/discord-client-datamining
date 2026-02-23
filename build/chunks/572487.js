@@ -1,15 +1,15 @@
 /** chunk id: 572487, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => d
 });
-var l, r, i = n(311907),
-    a = n(73153),
+var i = n(311907),
+    l = n(73153),
     s = n(652215);
-let o = {};
+let a = {};
 
-function c(e) {
-    let t = o[e = null != e ? e : "null"];
-    return null == t && (t = o[e] = {
+function r(e) {
+    let t = a[e = e ?? "null"];
+    return null == t && (t = a[e] = {
         state: s.S7L.DISCONNECTED,
         quality: s.bFR.UNKNOWN,
         pings: [],
@@ -18,13 +18,14 @@ function c(e) {
     }), t
 }
 
-function u(e, t, n) {
-    let l = o[e = null != e ? e : "null"];
-    return null != l ? t(l) : n
+function o(e, t, n) {
+    let i = a[e = e ?? "null"];
+    return null != i ? t(i) : n
 }
-class d extends(r = i.Ay.Store) {
+class c extends i.Ay.Store {
+    static displayName = "OverlayRTCConnectionStore";
     getConnectionState(e) {
-        return u(e, e => {
+        return o(e, e => {
             let {
                 state: t
             } = e;
@@ -32,7 +33,7 @@ class d extends(r = i.Ay.Store) {
         }, s.S7L.DISCONNECTED)
     }
     getQuality(e) {
-        return u(e, e => {
+        return o(e, e => {
             let {
                 quality: t
             } = e;
@@ -40,7 +41,7 @@ class d extends(r = i.Ay.Store) {
         }, s.bFR.UNKNOWN)
     }
     getHostname(e) {
-        return u(e, e => {
+        return o(e, e => {
             let {
                 hostname: t
             } = e;
@@ -48,7 +49,7 @@ class d extends(r = i.Ay.Store) {
         }, null)
     }
     getPings(e) {
-        return u(e, e => {
+        return o(e, e => {
             let {
                 pings: t
             } = e;
@@ -60,38 +61,32 @@ class d extends(r = i.Ay.Store) {
         return 0 === t.length ? 0 : t.reduce((e, t) => e + t.value, 0) / t.length
     }
     getLastPing(e) {
-        var t;
-        let n = this.getPings(e);
-        return 0 === n.length ? 0 : null == (t = n[n.length - 1]) ? void 0 : t.value
+        let t = this.getPings(e);
+        return 0 === t.length ? 0 : t[t.length - 1]?.value
     }
     getOutboundLossRate(e) {
-        return u(e, e => {
+        return o(e, e => {
             let {
                 lossRate: t
             } = e;
             return t
         }, null)
     }
-}(l = "displayName") in d ? Object.defineProperty(d, l, {
-    value: "OverlayRTCConnectionStore",
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
-}) : d[l] = "OverlayRTCConnectionStore";
-let h = new d(a.h, {
+}
+let d = new c(l.h, {
     OVERLAY_INITIALIZE: function(e) {
-        o = e.rtcConnectionStates
+        a = e.rtcConnectionStates
     },
     RTC_CONNECTION_STATE: function(e) {
         if (null != e.streamKey) return !1;
-        let t = c(e.lobbyId);
+        let t = r(e.lobbyId);
         t.state = e.state, t.hostname = e.hostname
     },
     RTC_CONNECTION_PING: function(e) {
-        let t = c(e.lobbyId);
+        let t = r(e.lobbyId);
         t.pings = e.pings, t.quality = e.quality
     },
     RTC_CONNECTION_LOSS_RATE: function(e) {
-        c(e.lobbyId).lossRate = e.lossRate
+        r(e.lobbyId).lossRate = e.lossRate
     }
 })

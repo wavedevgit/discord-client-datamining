@@ -1,148 +1,145 @@
 /** chunk id: 91534, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => E
+    A: () => C
 });
-var r = n(627968),
-    i = n(311907),
+var i = n(627968),
+    s = n(311907),
     l = n(397927),
-    s = n(793574),
+    r = n(793574),
     a = n(688810),
     o = n(509536),
-    c = n(945086),
-    d = n(212637),
+    d = n(945086),
+    c = n(212637),
     u = n(864310),
-    g = n(679382),
-    m = n(577092),
-    p = n(255438),
-    f = n(473145),
-    h = n(975571),
-    b = n(555337),
-    x = n(652215);
+    m = n(679382),
+    g = n(577092),
+    x = n(255438),
+    h = n(473145),
+    _ = n(975571),
+    A = n(555337),
+    p = n(652215);
 n(823894);
-var j = n(985018),
-    _ = n(729168);
-let O = {
-        page: x.liQ.GUILD_SETTINGS,
-        section: x.JJy.GUILD_SETTINGS_STICKERS,
-        object: x.ZSU.BOOSTING_BANNER
+var f = n(985018),
+    j = n(729168);
+let N = {
+        page: p.liQ.GUILD_SETTINGS,
+        section: p.JJy.GUILD_SETTINGS_STICKERS,
+        object: p.ZSU.BOOSTING_BANNER
     },
-    v = e => {
+    E = e => {
         let {
             guild: t
         } = e, {
             analyticsLocations: n
-        } = (0, a.Ay)(), i = (0, u.A)(t.id).available, s = x.M2T[x.TVA.TIER_1] - i;
-        return (0, r.jsxs)("div", {
-            className: _.Zj,
-            children: [(0, r.jsx)(l.Heading, {
-                className: _.$P,
+        } = (0, a.Ay)(), s = (0, u.A)(t.id).available, r = p.M2T[p.TVA.TIER_1] - s;
+        return (0, i.jsxs)("div", {
+            className: j.Zj,
+            children: [(0, i.jsx)(l.Heading, {
+                className: j.$P,
                 variant: "heading-xl/semibold",
-                children: j.intl.string(j.t.hzCkyg)
-            }), (0, r.jsx)(l.Text, {
-                className: _.GR,
+                children: f.intl.string(f.t.hzCkyg)
+            }), (0, i.jsx)(l.Text, {
+                className: j.GR,
                 variant: "text-md/normal",
-                children: j.intl.string(j.t.jcesAE)
-            }), (0, r.jsxs)(l.ButtonGroup, {
-                className: _.JO,
-                children: [(0, r.jsx)(l.Button, {
+                children: f.intl.string(f.t.jcesAE)
+            }), (0, i.jsxs)(l.ButtonGroup, {
+                className: j.JO,
+                children: [(0, i.jsx)(l.Button, {
                     variant: "overlay-primary",
-                    text: j.intl.string(j.t.Q5dbTi),
-                    onClick: () => (0, d.A)({
+                    text: f.intl.string(f.t.Q5dbTi),
+                    onClick: () => (0, c.A)({
                         analyticsLocations: n,
-                        analyticsLocation: O,
+                        analyticsLocation: N,
                         guildId: t.id,
-                        totalNumberOfSlotsToAssign: s
+                        totalNumberOfSlotsToAssign: r
                     })
-                }), (0, r.jsx)(l.Button, {
+                }), (0, i.jsx)(l.Button, {
                     variant: "overlay-primary",
-                    text: j.intl.string(j.t.hvVgAZ),
+                    text: f.intl.string(f.t.hvVgAZ),
                     onClick: () => (0, o.K)({
                         guildId: t.id,
                         location: {
-                            section: x.JJy.GUILD_SETTINGS_STICKERS
+                            section: p.JJy.GUILD_SETTINGS_STICKERS
                         }
                     })
                 })]
             })]
         })
     },
-    y = () => (0, r.jsxs)(l.BJc, {
+    b = () => (0, i.jsxs)(l.BJc, {
         gap: 8,
-        children: [(0, r.jsx)(l.Text, {
+        children: [(0, i.jsx)(l.Text, {
             variant: "text-md/medium",
-            children: j.intl.string(j.t["9N2OWD"])
-        }), (0, r.jsx)(l.Text, {
+            children: f.intl.string(f.t["9N2OWD"])
+        }), (0, i.jsx)(l.Text, {
             variant: "text-sm/normal",
-            children: j.intl.format(j.t.hxLviw, {
-                fileSize: (0, p.up)(524288, {
+            children: f.intl.format(f.t.hxLviw, {
+                fileSize: (0, x.up)(524288, {
                     useKibibytes: !0
                 })
             })
-        }), (0, r.jsx)(l.Text, {
+        }), (0, i.jsx)(l.Text, {
             variant: "text-sm/normal",
-            children: j.intl.format(j.t.UBj0aX, {
-                articleUrl: h.A.getArticleURL(x.MVz.STICKERS_UPLOAD)
+            children: f.intl.format(f.t.UBj0aX, {
+                articleUrl: _.A.getArticleURL(p.MVz.STICKERS_UPLOAD)
             })
         })]
     }),
-    A = e => {
-        let t, n, i, {
+    T = e => {
+        let t, n, s, {
                 guild: l,
-                guildStickers: s
+                guildStickers: r
             } = e,
             a = l.premiumTier,
-            o = (0, f.yA)(s, a),
-            d = (0, f.ax)(a),
-            u = (0, f.aG)(a),
-            g = s.length;
-        return null == d || a === x.TVA.TIER_3 || o > 0 ? null : (g > u ? (t = j.intl.formatToPlainString(j.t.ZtAY1f, {
-            level: d
-        }), n = j.intl.formatToPlainString(j.t["13hOWm"], {
-            level: d
-        }), i = x.ZSU.BOOST_UPSELL_BANNER_LOST_LEVEL) : (t = j.intl.string(j.t.zT9SxY), n = j.intl.formatToPlainString(j.t.YaW9wI, {
-            level: d,
-            numAdditional: (0, f.Cp)(d)
-        }), i = x.ZSU.BOOST_UPSELL_BANNER_SLOTS_FULL), (0, r.jsx)(c.A, {
+            o = (0, h.yA)(r, a),
+            c = (0, h.ax)(a),
+            u = (0, h.aG)(a),
+            m = r.length;
+        return null == c || a === p.TVA.TIER_3 || o > 0 ? null : (m > u ? (t = f.intl.formatToPlainString(f.t.ZtAY1f, {
+            level: c
+        }), n = f.intl.formatToPlainString(f.t["13hOWm"], {
+            level: c
+        }), s = p.ZSU.BOOST_UPSELL_BANNER_LOST_LEVEL) : (t = f.intl.string(f.t.zT9SxY), n = f.intl.formatToPlainString(f.t.YaW9wI, {
+            level: c,
+            numAdditional: (0, h.Cp)(c)
+        }), s = p.ZSU.BOOST_UPSELL_BANNER_SLOTS_FULL), (0, i.jsx)(d.A, {
             header: t,
             text: n,
             guild: l,
             analyticsLocation: {
-                page: x.liQ.GUILD_SETTINGS,
-                section: x.JJy.GUILD_SETTINGS_STICKERS,
-                object: i,
-                objectType: (0, f.k1)(d)
+                page: p.liQ.GUILD_SETTINGS,
+                section: p.JJy.GUILD_SETTINGS_STICKERS,
+                object: s,
+                objectType: (0, h.k1)(c)
             }
         }))
     },
-    E = () => {
-        let e = (0, i.bG)([b.A], () => b.A.getGuild()),
-            t = (0, i.bG)([g.A], () => {
-                var t;
-                return null != e && null != (t = g.A.getStickersByGuildId(e.id)) ? t : []
-            }, [e]),
+    C = () => {
+        let e = (0, s.bG)([A.A], () => A.A.getGuild()),
+            t = (0, s.bG)([m.A], () => null != e ? m.A.getStickersByGuildId(e.id) ?? [] : [], [e]),
             {
                 analyticsLocations: n
-            } = (0, a.Ay)(s.A.STICKERS);
+            } = (0, a.Ay)(r.A.STICKERS);
         if (null == e) return null;
-        let o = e.premiumTier !== x.TVA.NONE || t.length > 0;
-        return (0, r.jsx)(a.f5, {
+        let o = e.premiumTier !== p.TVA.NONE || t.length > 0;
+        return (0, i.jsx)(a.f5, {
             value: n,
-            children: (0, r.jsxs)(l.BJc, {
+            children: (0, i.jsxs)(l.BJc, {
                 gap: 16,
-                children: [(0, r.jsx)(l.Heading, {
+                children: [(0, i.jsx)(l.Heading, {
                     variant: "heading-lg/semibold",
-                    children: j.intl.string(j.t.R5nQkS)
-                }), o ? (0, r.jsxs)("div", {
-                    children: [(0, r.jsx)(A, {
+                    children: f.intl.string(f.t.R5nQkS)
+                }), o ? (0, i.jsxs)("div", {
+                    children: [(0, i.jsx)(T, {
                         guild: e,
                         guildStickers: t
-                    }), (0, r.jsx)(y, {})]
-                }) : (0, r.jsx)(v, {
+                    }), (0, i.jsx)(b, {})]
+                }) : (0, i.jsx)(E, {
                     guild: e
-                }), (0, r.jsx)(l.cGx, {
-                    className: _.yF
-                }), (0, r.jsx)(m.A, {
+                }), (0, i.jsx)(l.cGx, {
+                    className: j.yF
+                }), (0, i.jsx)(g.A, {
                     guild: e
                 })]
             })

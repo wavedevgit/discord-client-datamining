@@ -3,13 +3,13 @@ n.d(t, {
     S: () => u
 });
 var a = n(64700),
-    l = n(731738),
-    r = n(831062),
-    i = n(260364),
-    s = n(341915),
+    i = n(731738),
+    s = n(831062),
+    l = n(260364),
+    r = n(341915),
     o = n(561844),
-    c = n(590202),
-    d = n(652215);
+    d = n(590202),
+    c = n(652215);
 
 function u(e) {
     let {
@@ -17,62 +17,53 @@ function u(e) {
         hasAssetsError: n,
         isEligibleForQuests: u,
         isQuestBarVisible: m,
-        isVisibilityAnimationAtRest: p,
-        isLoadingAssets: h,
-        currentQuestVisibleReason: x,
+        isVisibilityAnimationAtRest: h,
+        isLoadingAssets: x,
+        currentQuestVisibleReason: p,
         shouldShowQuestBar: g,
-        isQuestEnrollmentBlocked: f,
-        impressionRef: b
+        isQuestEnrollmentBlocked: _,
+        impressionRef: f
     } = e;
     a.useEffect(() => {
-        if (n) {
-            var e;
-            (0, o.av)({
-                questId: t.id,
-                event: d.HAw.QUEST_CONTENT_RENDERING_FAILURE,
-                properties: {
-                    content_id: s.uF.QUEST_BAR,
-                    content_name: (0, c.jO)(s.uF.QUEST_BAR),
-                    reason: "asset_loading_error",
-                    impression_id: null == (e = b.current) ? void 0 : e.getId()
-                },
-                sourceQuestContent: s.uF.QUEST_BAR_V2
-            }), r.A.increment({
-                name: l.K.QUEST_CONTENT_RENDERING_FAILURE,
-                tags: ["quest_id:".concat(t.id), "reason:asset_loading_error"]
-            })
-        }
-    }, [n, b, t.id]), a.useEffect(() => {
-        if (!u) {
-            var e;
-            (0, o.av)({
-                questId: t.id,
-                event: d.HAw.QUEST_CONTENT_RENDERING_FAILURE,
-                properties: {
-                    content_id: s.uF.QUEST_BAR,
-                    content_name: (0, c.jO)(s.uF.QUEST_BAR),
-                    reason: "not_eligible_for_quest",
-                    impression_id: null == (e = b.current) ? void 0 : e.getId()
-                },
-                sourceQuestContent: s.uF.QUEST_BAR_V2
-            })
-        }
-    }, [u, b, t.id]), a.useEffect(() => {
-        if (!m && p && !h) {
-            var e;
-            (0, o.av)({
-                questId: t.id,
-                event: d.HAw.QUEST_CONTENT_RENDERING_FAILURE,
-                properties: {
-                    content_id: s.uF.QUEST_BAR,
-                    content_name: (0, c.jO)(s.uF.QUEST_BAR),
-                    reason: x,
-                    impression_id: null == (e = b.current) ? void 0 : e.getId()
-                },
-                sourceQuestContent: s.uF.QUEST_BAR_V2
-            })
-        }
-    }, [m, p, h, t.id, x, b]), a.useEffect(() => {
-        (!g || f) && i.A.clearTracking(), m && p && !h && !n && u && i.A.stopTracking(t.id)
-    }, [g, f, m, p, h, n, u, t.id])
+        n && ((0, o.av)({
+            questId: t.id,
+            event: c.HAw.QUEST_CONTENT_RENDERING_FAILURE,
+            properties: {
+                content_id: r.uF.QUEST_BAR,
+                content_name: (0, d.jO)(r.uF.QUEST_BAR),
+                reason: "asset_loading_error",
+                impression_id: f.current?.getId()
+            },
+            sourceQuestContent: r.uF.QUEST_BAR_V2
+        }), s.A.increment({
+            name: i.K.QUEST_CONTENT_RENDERING_FAILURE,
+            tags: [`quest_id:${t.id}`, `quest_content:${(0,d.jO)(r.uF.QUEST_BAR)}`, "reason:asset_loading_error"]
+        }))
+    }, [n, f, t.id]), a.useEffect(() => {
+        u || (0, o.av)({
+            questId: t.id,
+            event: c.HAw.QUEST_CONTENT_RENDERING_FAILURE,
+            properties: {
+                content_id: r.uF.QUEST_BAR,
+                content_name: (0, d.jO)(r.uF.QUEST_BAR),
+                reason: "not_eligible_for_quest",
+                impression_id: f.current?.getId()
+            },
+            sourceQuestContent: r.uF.QUEST_BAR_V2
+        })
+    }, [u, f, t.id]), a.useEffect(() => {
+        m || !h || x || (0, o.av)({
+            questId: t.id,
+            event: c.HAw.QUEST_CONTENT_RENDERING_FAILURE,
+            properties: {
+                content_id: r.uF.QUEST_BAR,
+                content_name: (0, d.jO)(r.uF.QUEST_BAR),
+                reason: p,
+                impression_id: f.current?.getId()
+            },
+            sourceQuestContent: r.uF.QUEST_BAR_V2
+        })
+    }, [m, h, x, t.id, p, f]), a.useEffect(() => {
+        (!g || _) && l.A.clearTracking(), m && h && !x && !n && u && l.A.stopTracking(t.id)
+    }, [g, _, m, h, x, n, u, t.id])
 }

@@ -1,147 +1,144 @@
-/** chunk id: 824774, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    default: () => S
-}), n(896048);
-var r = n(627968),
-    l = n(64700),
-    s = n(158954),
-    a = n(311907),
-    i = n(397927),
-    u = n(843472),
-    o = n(342384),
-    c = n(429913),
-    d = n(451909),
-    f = n(223863),
-    b = n(151054),
-    p = n(734057),
-    m = n(287809),
-    g = n(957565),
-    h = n(403362),
-    y = n(550880),
-    x = n(997877),
-    j = n(381941),
-    A = n(985018),
-    v = n(667052),
-    O = n(119390);
+/** chunk id: 824774, original params: e,t,s (module,exports,require) **/
+s.d(t, {
+    default: () => C
+});
+var l = s(627968),
+    n = s(64700),
+    r = s(158954),
+    a = s(311907),
+    i = s(397927),
+    u = s(843472),
+    c = s(342384),
+    o = s(429913),
+    d = s(451909),
+    f = s(223863),
+    m = s(151054),
+    h = s(734057),
+    b = s(287809),
+    x = s(957565),
+    g = s(403362),
+    p = s(550880),
+    A = s(997877),
+    _ = s(381941),
+    S = s(985018),
+    T = s(667052),
+    y = s(119390);
 
-function S(e) {
+function C(e) {
     let {
         applicationId: t,
-        customId: n,
-        linkId: S,
-        message: _,
-        onClose: P,
-        onCopyLink: T,
-        onShare: w,
-        transitionState: E
-    } = e, [C] = (0, c.A)([t]), L = (0, a.bG)([m.default], () => m.default.getCurrentUser()), [N, k] = l.useState(!1), [D, R] = l.useState(""), [I, M] = l.useState("");
-    l.useEffect(() => {
-        M((0, o.W)({
+        customId: s,
+        linkId: C,
+        message: j,
+        onClose: v,
+        onCopyLink: E,
+        onShare: L,
+        transitionState: N
+    } = e, [k] = (0, o.A)([t]), P = (0, a.bG)([b.default], () => b.default.getCurrentUser()), [D, R] = n.useState(!1), [w, M] = n.useState(""), [G, U] = n.useState("");
+    n.useEffect(() => {
+        U((0, c.W)({
             applicationId: t,
-            referrerId: null == L ? void 0 : L.id,
-            customId: n,
-            linkId: S
+            referrerId: P?.id,
+            customId: s,
+            linkId: C
         }))
-    }, [t, L, n, S, M]);
-    let G = l.useRef(0),
-        [U, H] = l.useState([]),
-        V = U.length,
-        q = V >= 5;
-    l.useEffect(() => {
-        if ("" === D) {
-            var e;
-            null == (e = B.current) || e.focus()
-        }
-    }, [D]);
-    let z = l.useCallback(() => {
-            R("")
-        }, [R]),
-        B = l.useRef(null),
+    }, [t, P, s, C, U]);
+    let I = n.useRef(0),
+        [H, V] = n.useState([]),
+        q = H.length,
+        z = q >= 5;
+    n.useEffect(() => {
+        "" === w && F.current?.focus()
+    }, [w]);
+    let B = n.useCallback(() => {
+            M("")
+        }, [M]),
+        F = n.useRef(null),
         {
-            results: F,
-            updateSearchText: J
-        } = (0, b.R)({
-            selectedDestinations: U,
+            results: J,
+            updateSearchText: Q
+        } = (0, m.R)({
+            selectedDestinations: H,
             includeMissingDMs: !0
         }),
-        Q = l.useCallback(e => {
-            R(e), J(e)
-        }, [R, J]),
-        W = l.useCallback(e => {
-            H(t => {
-                let n = t.findIndex(t => {
+        W = n.useCallback(e => {
+            M(e), Q(e)
+        }, [M, Q]),
+        O = n.useCallback(e => {
+            V(t => {
+                let s = t.findIndex(t => {
                     let {
-                        type: n,
-                        id: r
+                        type: s,
+                        id: l
                     } = t;
-                    return n === e.type && r === e.id
+                    return s === e.type && l === e.id
                 });
-                if (-1 === n) return q ? t : (R(""), G.current += 1, [e, ...t]);
-                let r = [...t];
-                return r.splice(n, 1), G.current += 1, r
+                if (-1 === s) return z ? t : (M(""), I.current += 1, [e, ...t]);
+                let l = [...t];
+                return l.splice(s, 1), I.current += 1, l
             })
-        }, [q]),
-        Z = l.useCallback(async e => {
-            if (null == C) return;
-            let t = (0, y.r)(_, C, I);
-            k(!0), (await Promise.all(e.map(f.pk))).filter(h.Vq).forEach(async e => {
-                let n = p.A.getChannel(e);
-                null != n && await u.A.sendMessage(e, d.Ay.parse(n, t), !1, {
-                    location: j.Hx.ACTIVITY_SHARE
+        }, [z]),
+        Z = n.useCallback(async e => {
+            if (null == k) return;
+            let t = (0, p.r)(j, k, G);
+            R(!0), (await Promise.all(e.map(f.pk))).filter(g.Vq).forEach(async e => {
+                let s = h.A.getChannel(e);
+                null != s && await u.A.sendMessage(e, d.Ay.parse(s, t), !1, {
+                    location: _.Hx.ACTIVITY_SHARE
                 })
-            }), (0, i.showToast)((0, i.createToast)(A.intl.formatToPlainString(A.t.jQULqL, {
-                applicationName: C.name
-            }), i.ToastType.SUCCESS)), w(!0), P()
-        }, [_, I, P, w, C]),
-        K = l.useCallback(() => {
-            (0, g.C)(I, () => {
-                T(), (0, i.showToast)((0, i.createToast)(A.intl.string(A.t.t5VZ88), i.ToastType.SUCCESS))
+            }), (0, i.showToast)((0, i.createToast)(S.intl.formatToPlainString(S.t.jQULqL, {
+                applicationName: k.name
+            }), i.ToastType.SUCCESS)), L(!0), v()
+        }, [j, G, v, L, k]),
+        $ = n.useCallback(() => {
+            (0, x.C)(G, () => {
+                E(), (0, i.showToast)((0, i.createToast)(S.intl.string(S.t.t5VZ88), i.ToastType.SUCCESS))
             })
-        }, [I, T]),
-        X = F.length > 0 ? (0, r.jsx)(x.x, {
+        }, [G, E]),
+        X = J.length > 0 ? (0, l.jsx)(A.x, {
             paddingBottom: 8,
             paddingTop: 8,
-            rowData: F,
-            handleToggleDestination: W,
-            selectedDestinations: U,
-            disableSelection: q
-        }) : (0, r.jsxs)("div", {
-            className: v.wV,
-            children: [(0, r.jsx)("img", {
-                className: v.BJ,
-                src: O,
+            rowData: J,
+            handleToggleDestination: O,
+            selectedDestinations: H,
+            disableSelection: z
+        }) : (0, l.jsxs)("div", {
+            className: T.wV,
+            children: [(0, l.jsx)("img", {
+                className: T.BJ,
+                src: y,
                 alt: ""
-            }), (0, r.jsx)(i.Text, {
+            }), (0, l.jsx)(i.Text, {
                 variant: "text-md/normal",
                 color: "text-muted",
-                children: A.intl.string(A.t.V6nAfF)
+                children: S.intl.string(S.t.V6nAfF)
             })]
         });
-    return (0, r.jsx)(s.Modal, {
-        transitionState: E,
-        onClose: P,
-        title: A.intl.string(A.t.r9qKow),
-        subtitle: _,
+    return (0, l.jsx)(r.Modal, {
+        transitionState: N,
+        onClose: v,
+        title: S.intl.string(S.t.r9qKow),
+        subtitle: j,
         size: "md",
-        input: (0, r.jsx)(i.IWV, {
-            ref: B,
-            query: D,
-            onChange: Q,
-            onClear: z,
-            placeholder: A.intl.string(A.t["5h0QOP"]),
-            "aria-label": A.intl.string(A.t["5h0QOP"]),
+        input: (0, l.jsx)(i.IWV, {
+            ref: F,
+            query: w,
+            onChange: W,
+            onClear: B,
+            placeholder: S.intl.string(S.t["5h0QOP"]),
+            "aria-label": S.intl.string(S.t["5h0QOP"]),
             autoFocus: !0
         }),
         actions: [{
-            text: A.intl.string(A.t.WqhZss),
+            text: S.intl.string(S.t.WqhZss),
             variant: "secondary",
-            onClick: K
+            onClick: $
         }, {
-            text: A.intl.string(A.t.TXNS7S),
+            text: S.intl.string(S.t.TXNS7S),
             variant: "primary",
-            onClick: () => Z(U),
-            loading: N,
-            disabled: !(V > 0)
+            onClick: () => Z(H),
+            loading: D,
+            disabled: !(q > 0)
         }],
         children: X
     })

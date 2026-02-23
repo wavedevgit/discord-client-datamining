@@ -1,161 +1,116 @@
-/** chunk id: 321565, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    default: () => h
-}), n(896048);
-var r = n(627968),
-    i = n(64700),
-    l = n(503698),
-    o = n.n(l),
-    a = n(935462),
-    s = n(397927),
-    c = n(707685),
-    u = n(775121),
-    d = n(775602),
-    p = n(203982),
-    f = n(700331),
-    m = n(454290),
-    O = n(369254),
-    b = n(847816),
-    y = n(652215),
-    g = n(985018),
-    E = n(285953);
+/** chunk id: 321565, original params: e,t,a (module,exports,require) **/
+a.d(t, {
+    default: () => f
+});
+var n = a(627968),
+    i = a(64700),
+    l = a(503698),
+    s = a.n(l),
+    r = a(935462),
+    o = a(397927),
+    c = a(707685),
+    d = a(775121),
+    u = a(775602),
+    m = a(203982),
+    _ = a(700331),
+    p = a(454290),
+    A = a(369254),
+    h = a(847816),
+    g = a(652215),
+    E = a(985018),
+    T = a(285953);
 
-function _(e, t) {
-    let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
-    !0 === n || d.A.useReducedMotion ? e.set(t) : e.start(t)
+function S(e, t) {
+    let a = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
+    !0 === a || u.A.useReducedMotion ? e.set(t) : e.start(t)
 }
 
-function h(e) {
+function f(e) {
     let {
         onClose: t,
-        items: n,
+        items: a,
         startingIndex: l,
-        enabledContentHarmTypeFlags: h,
-        shouldHideMediaOptions: S = !1,
-        transitionState: A
-    } = e, j = function(e, t) {
-        if (null == e) return {};
-        var n, r, i, l = {};
-        if ("u" > typeof Reflect && Reflect.ownKeys) {
-            for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
-            return l
-        }
-        if (l = function(e, t) {
-                if (null == e) return {};
-                var n, r, i = {},
-                    l = Object.getOwnPropertyNames(e);
-                for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
-                return i
-            }(e, t), Object.getOwnPropertySymbols)
-            for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
-        return l
-    }(e, ["onClose", "items", "startingIndex", "enabledContentHarmTypeFlags", "shouldHideMediaOptions", "transitionState"]), [v, T] = i.useState(null != l ? l : 0), [w, P] = i.useState(!1), [C, D] = (0, s.zhh)(() => ({
-        scale: d.A.useReducedMotion ? 1 : .9,
+        enabledContentHarmTypeFlags: f,
+        shouldHideMediaOptions: y = !1,
+        transitionState: C,
+        ...I
+    } = e, [x, M] = i.useState(l ?? 0), [O, N] = i.useState(!1), [b, R] = (0, o.zhh)(() => ({
+        scale: u.A.useReducedMotion ? 1 : .9,
         x: 0,
         y: 0,
         config: {
             friction: 30,
             tension: 300
         }
-    })), I = i.useRef(null);
+    })), v = i.useRef(null);
     i.useEffect(() => {
-        if (null != t) return p._.subscribe(y.jej.MEDIA_MODAL_CLOSE, t), () => {
-            p._.unsubscribe(y.jej.MEDIA_MODAL_CLOSE, t)
+        if (null != t) return m._.subscribe(g.jej.MEDIA_MODAL_CLOSE, t), () => {
+            m._.unsubscribe(g.jej.MEDIA_MODAL_CLOSE, t)
         }
     }, [t]), i.useEffect(() => {
-        var e, t;
-        A === s.ip4.ENTERING && _(C.scale, 1), A === s.ip4.ENTERED && (u.A.disable(), u.A.enableTemp(c.w)), A === s.ip4.HIDDEN && (_(C.scale, .9), u.A.disable(), u.A.enableTemp(c.b)), A === s.ip4.EXITING && _(C.scale, .9);
-        let n = () => {
-                u.A.disable(), A === s.ip4.ENTERED ? u.A.enableTemp(c.w) : u.A.enableTemp(c.b)
+        C === o.ip4.ENTERING && S(b.scale, 1), C === o.ip4.ENTERED && (d.A.disable(), d.A.enableTemp(c.w)), C === o.ip4.HIDDEN && (S(b.scale, .9), d.A.disable(), d.A.enableTemp(c.b)), C === o.ip4.EXITING && S(b.scale, .9);
+        let e = () => {
+                d.A.disable(), C === o.ip4.ENTERED ? d.A.enableTemp(c.w) : d.A.enableTemp(c.b)
             },
-            r = () => {
-                u.A.disableTemp()
+            t = () => {
+                d.A.disableTemp()
             },
-            i = null == (t = I.current) || null == (e = t.ownerDocument) ? void 0 : e.defaultView;
-        return null == i || i.addEventListener("focus", n), null == i || i.addEventListener("blur", r), () => {
-            null == i || i.removeEventListener("focus", n), null == i || i.removeEventListener("blur", r), u.A.disableTemp()
+            a = v.current?.ownerDocument?.defaultView;
+        return a?.addEventListener("focus", e), a?.addEventListener("blur", t), () => {
+            a?.removeEventListener("focus", e), a?.removeEventListener("blur", t), d.A.disableTemp()
         }
-    }, [A, C]);
-    let R = i.useCallback(e => {
-            T(e), f.l.markActionPerformed(f.N.SELECTED_ITEM_CHANGE)
+    }, [C, b]);
+    let D = i.useCallback(e => {
+            M(e), _.l.markActionPerformed(_.N.SELECTED_ITEM_CHANGE)
         }, []),
-        N = i.useMemo(() => ({
-            scale: C.scale,
-            x: C.x,
-            y: C.y,
+        j = i.useMemo(() => ({
+            scale: b.scale,
+            x: b.x,
+            y: b.y,
             setScale(e, t) {
-                _(C.scale, e, null == t ? void 0 : t.immediate)
+                S(b.scale, e, t?.immediate)
             },
-            setOffset(e, t, n) {
-                _(C.x, e, null == n ? void 0 : n.immediate), _(C.y, t, null == n ? void 0 : n.immediate)
+            setOffset(e, t, a) {
+                S(b.x, e, a?.immediate), S(b.y, t, a?.immediate)
             },
-            zoomed: w,
+            zoomed: O,
             setZoomed(e) {
-                P(e), _(C.scale, e ? 2.5 : 1), e || (_(C.x, 0), _(C.y, 0))
+                N(e), S(b.scale, e ? 2.5 : 1), e || (S(b.x, 0), S(b.y, 0))
             }
-        }), [w, C]);
-    return (0, r.jsx)(s.NPJ, {
-        theme: y.NJ8.MIDNIGHT,
-        children: e => {
-            var i, l;
-            return (0, r.jsx)(s.EOs, (i = function(e) {
-                for (var t = 1; t < arguments.length; t++) {
-                    var n = null != arguments[t] ? arguments[t] : {},
-                        r = Object.keys(n);
-                    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                        return Object.getOwnPropertyDescriptor(n, e).enumerable
-                    }))), r.forEach(function(t) {
-                        var r;
-                        r = n[t], t in e ? Object.defineProperty(e, t, {
-                            value: r,
-                            enumerable: !0,
-                            configurable: !0,
-                            writable: !0
-                        }) : e[t] = r
-                    })
-                }
-                return e
-            }({
-                "data-migration-pending": !0,
-                hideShadow: !0,
-                className: o()(E.O, e),
-                transitionState: A
-            }, j), l = l = {
-                size: s.rIJ.DYNAMIC,
-                animation: a.WM.SUBTLE,
-                fullscreenOnMobile: !1,
-                onClick: t,
-                "aria-label": g.intl.string(g.t.AMTX3j),
-                parentComponent: "MediaViewerModal",
-                children: (0, r.jsxs)(m.f.Provider, {
-                    value: N,
-                    children: [(0, r.jsx)(b.A, {
-                        item: n[v],
-                        hideMediaOptions: S,
-                        onClose: t
-                    }), (0, r.jsx)("div", {
-                        style: {
-                            display: "none"
-                        },
-                        ref: I
-                    }), (0, r.jsx)(O.Ay, {
-                        items: n,
-                        startIndex: v,
-                        onIndexChange: R,
-                        enabledContentHarmTypeFlags: h,
-                        shouldHideMediaOptions: S
-                    })]
-                })
-            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
-                var n = Object.keys(e);
-                if (Object.getOwnPropertySymbols) {
-                    var r = Object.getOwnPropertySymbols(e);
-                    n.push.apply(n, r)
-                }
-                return n
-            })(Object(l)).forEach(function(e) {
-                Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
-            }), i))
-        }
+        }), [O, b]);
+    return (0, n.jsx)(o.NPJ, {
+        theme: g.NJ8.MIDNIGHT,
+        children: e => (0, n.jsx)(o.EOs, {
+            "data-migration-pending": !0,
+            hideShadow: !0,
+            className: s()(T.O, e),
+            transitionState: C,
+            ...I,
+            size: o.rIJ.DYNAMIC,
+            animation: r.WM.SUBTLE,
+            fullscreenOnMobile: !1,
+            onClick: t,
+            "aria-label": E.intl.string(E.t.AMTX3j),
+            parentComponent: "MediaViewerModal",
+            children: (0, n.jsxs)(p.f.Provider, {
+                value: j,
+                children: [(0, n.jsx)(h.A, {
+                    item: a[x],
+                    hideMediaOptions: y,
+                    onClose: t
+                }), (0, n.jsx)("div", {
+                    style: {
+                        display: "none"
+                    },
+                    ref: v
+                }), (0, n.jsx)(A.Ay, {
+                    items: a,
+                    startIndex: x,
+                    onIndexChange: D,
+                    enabledContentHarmTypeFlags: f,
+                    shouldHideMediaOptions: y
+                })]
+            })
+        })
     })
 }

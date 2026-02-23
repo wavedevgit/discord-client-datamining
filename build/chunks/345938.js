@@ -1,60 +1,32 @@
 /** chunk id: 345938, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    d: () => i
+    d: () => r
 });
-var r = n(627968),
-    l = n(397927),
-    a = n(294454);
-let i = e => {
+var a = n(627968),
+    s = n(397927),
+    i = n(294454);
+let r = e => {
     let {
         sku: t,
-        guildId: i,
-        source: o,
-        analyticsLocations: s,
-        analyticsContext: c
+        guildId: r,
+        source: l,
+        analyticsLocations: o,
+        analyticsContext: u
     } = e;
-    (0, l.mMO)(async () => {
+    (0, s.mMO)(async () => {
         let {
             default: e
-        } = await Promise.all([n.e("96758"), n.e("43622"), n.e("65787")]).then(n.bind(n, 763375));
-        return n => {
-            var l, a;
-            return (0, r.jsx)(e, (l = function(e) {
-                for (var t = 1; t < arguments.length; t++) {
-                    var n = null != arguments[t] ? arguments[t] : {},
-                        r = Object.keys(n);
-                    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                        return Object.getOwnPropertyDescriptor(n, e).enumerable
-                    }))), r.forEach(function(t) {
-                        var r;
-                        r = n[t], t in e ? Object.defineProperty(e, t, {
-                            value: r,
-                            enumerable: !0,
-                            configurable: !0,
-                            writable: !0
-                        }) : e[t] = r
-                    })
-                }
-                return e
-            }({}, n), a = a = {
-                sku: t,
-                guildId: i,
-                source: o,
-                analyticsLocations: s,
-                analyticsContext: c
-            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
-                var n = Object.keys(e);
-                if (Object.getOwnPropertySymbols) {
-                    var r = Object.getOwnPropertySymbols(e);
-                    n.push.apply(n, r)
-                }
-                return n
-            })(Object(a)).forEach(function(e) {
-                Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(a, e))
-            }), l))
-        }
+        } = await Promise.all([n.e("96758"), n.e("43622"), n.e("54970")]).then(n.bind(n, 763375));
+        return n => (0, a.jsx)(e, {
+            ...n,
+            sku: t,
+            guildId: r,
+            source: l,
+            analyticsLocations: o,
+            analyticsContext: u
+        })
     }, {
         stackingBehavior: "stack",
-        modalKey: a.aU
+        modalKey: i.aU
     })
 }

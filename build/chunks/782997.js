@@ -1,15 +1,15 @@
-/** chunk id: 782997, original params: e,t,a (module,exports,require) **/
-a.d(t, {
-    A: () => i
+/** chunk id: 782997, original params: e,a,t (module,exports,require) **/
+t.d(a, {
+    A: () => c
 });
-var n = a(954571),
-    c = a(652215);
+var n = t(954571),
+    i = t(652215);
 
-function i(e) {
+function c(e) {
     let {
-        rating: t = null
+        rating: a = null
     } = e;
-    n.default.track(c.HAw.SAFETY_USER_SENTIMENT_FEEDBACK_SUBMITTED, {
-        rating: t
+    n.default.track(i.HAw.SAFETY_USER_SENTIMENT_FEEDBACK_SUBMITTED, {
+        rating: a
     })
 }

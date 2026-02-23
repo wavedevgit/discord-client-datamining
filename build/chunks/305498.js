@@ -1,30 +1,30 @@
 /** chunk id: 305498, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => _
 });
-var r = n(627968),
-    i = n(64700),
+var i = n(627968),
+    r = n(64700),
     l = n(362599),
     a = n(342494),
     s = n(732955),
-    o = n(397927),
-    c = n(976860),
-    u = n(652215),
-    d = n(49999),
-    p = n(49370),
+    o = n(976860),
+    d = n(235365),
+    c = n(652215),
+    u = n(49999),
+    A = n(49370),
     h = n(985018);
 
-function f(e) {
+function _(e) {
     let {
         targetElementRef: t,
         dismissPopover: n,
-        lastGrantedRewardAmount: f,
-        children: g
-    } = e, m = i.useCallback(() => {
-        n(d.i.TAKE_ACTION), (0, c.pX)("".concat(u.BVt.NITRO_HOME, "?section=orbs"))
-    }, [n]), A = (0, r.jsx)(a.AM, {
+        lastGrantedRewardAmount: _,
+        children: m
+    } = e, p = r.useCallback(() => {
+        n(u.i.TAKE_ACTION), (0, o.pX)(`${c.BVt.NITRO_HOME}?section=${d.L}`)
+    }, [n]), g = (0, i.jsx)(a.AM, {
         targetElementRef: t,
-        onRequestClose: () => n(d.i.USER_DISMISS),
+        onRequestClose: () => n(u.i.USER_DISMISS),
         graphic: {
             type: "rive",
             rive: l.Z
@@ -40,24 +40,20 @@ function f(e) {
             align: "start"
         },
         size: "md",
-        title: h.intl.string(p.default["78+gLr"]),
-        body: h.intl.formatToPlainString(p.default.Ry1TXC, {
-            orbsCount: f
+        title: h.intl.string(A.default["78+gLr"]),
+        body: h.intl.formatToPlainString(A.default.Ry1TXC, {
+            orbsCount: _
         }),
         actions: [{
             text: h.intl.string(h.t.RzWDqY),
             icon: s.tvc,
-            onClick: m
+            onClick: p
         }],
-        gradientColor: {
-            type: "custom",
-            start: o.LU0.colors.EXPRESSIVE_GRADIENT_PURPLE_START,
-            end: o.LU0.colors.EXPRESSIVE_GRADIENT_PURPLE_END
-        }
+        gradientColor: "nitro-pink"
     });
-    return (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)("div", {
-            children: g
-        }), A]
+    return (0, i.jsxs)(i.Fragment, {
+        children: [(0, i.jsx)("div", {
+            children: m
+        }), g]
     })
 }

@@ -1,28 +1,27 @@
-/** chunk id: 256252, original params: e,t,n (module,exports,require) **/
-n.d(t, {
+/** chunk id: 256252, original params: e,t,i (module,exports,require) **/
+i.d(t, {
     lx: () => m,
-    wY: () => d,
-    xt: () => c,
-    zC: () => v
-}), n(228524), n(321073);
-var i = n(110259),
-    l = n(562465),
-    r = n(98919),
-    a = n(544028);
-n(723702);
-var o = n(499785),
-    s = n(652215),
-    u = n(985018);
-async function c() {
-    return (await l.Bo.get({
-        url: s.Rsh.BUG_REPORTS,
+    wY: () => c,
+    xt: () => d,
+    zC: () => h
+}), i(321073);
+var n = i(110259),
+    a = i(562465),
+    l = i(98919),
+    r = i(544028);
+i(723702);
+var s = i(499785),
+    o = i(652215),
+    u = i(985018);
+async function d() {
+    return (await a.Bo.get({
+        url: o.Rsh.BUG_REPORTS,
         rejectWithError: !1
     })).body
 }
 
-function d(e) {
-    var t;
-    return null != (t = null == e ? void 0 : e.name) ? t : "" + (null == e ? void 0 : e.squad)
+function c(e) {
+    return e?.name ?? "" + e?.squad
 }
 
 function m() {
@@ -48,75 +47,74 @@ function m() {
         value: 3
     }]
 }
-async function v(e, t, n) {
-    var l, u;
-    let c = [{
+async function h(e, t, i) {
+    let a = [{
         name: "name",
         value: e.name
     }, {
         name: "priority",
-        value: "".concat(e.priority)
+        value: `${e.priority}`
     }, {
         name: "override_platform_information",
-        value: "".concat(t.overridePlatformInformation)
+        value: `${t.overridePlatformInformation}`
     }, {
         name: "theme",
-        value: a.A.theme
+        value: r.A.theme
     }];
-    "" !== e.description && c.push({
+    "" !== e.description && a.push({
         name: "description",
         value: e.description
-    }), "" !== e.url && c.push({
+    }), "" !== e.url && a.push({
         name: "external_url",
         value: e.url
-    }), null != e.buildOverride && c.push({
+    }), null != e.buildOverride && a.push({
         name: "build_override",
         value: e.buildOverride
-    }), null != e.experimentOverrides && c.push({
+    }), null != e.experimentOverrides && a.push({
         name: "experiment_overrides",
-        value: e.experimentOverrides.map(e => "".concat(e.experimentId, ":").concat(e.variantId)).join(",")
+        value: e.experimentOverrides.map(e => `${e.experimentId}:${e.variantId}`).join(", ")
     });
-    let d = null == (l = e.feature) ? void 0 : l.asana_inbox_id;
-    null != d && "" !== d && c.push({
+    let u = e.feature?.asana_inbox_id;
+    null != u && "" !== u && a.push({
         name: "asana_inbox_id",
-        value: "".concat(d)
+        value: `${u}`
     });
-    let m = null == (u = e.feature) ? void 0 : u.name;
-    null != m && "" !== m && c.push({
+    let d = e.feature?.name;
+    null != d && "" !== d && a.push({
         name: "feature_name",
-        value: m
-    }), t.overridePlatformInformation && (c.push({
+        value: d
+    }), t.overridePlatformInformation && (a.push({
         name: "device",
         value: t.device
-    }), c.push({
+    }), a.push({
         name: "os",
         value: t.operatingSystem
-    }), c.push({
+    }), a.push({
         name: "os_version",
         value: t.operatingSystemVersion
-    }), c.push({
+    }), a.push({
         name: "client_version",
         value: t.clientVersion
-    }), c.push({
+    }), a.push({
         name: "client_build_number",
         value: t.clientBuildNumber
-    }), c.push({
+    }), a.push({
         name: "release_channel",
         value: window.GLOBAL_ENV.RELEASE_CHANNEL
-    }), c.push({
+    }), a.push({
         name: "locale",
         value: t.locale
-    })), (0, r.a)(s.Umv.WEB_APP);
+    })), (0, l.a)(o.Umv.WEB_APP);
     try {
-        return await o.A.post({
-            url: s.Rsh.BUG_REPORTS,
-            attachments: n,
-            fields: c,
+        return await s.A.post({
+            url: o.Rsh.BUG_REPORTS,
+            attachments: i,
+            fields: a,
             trackedActionData: {
-                event: i.NetworkActionNames.BUG_REPORT_SUBMIT,
+                event: n.NetworkActionNames.BUG_REPORT_SUBMIT,
                 properties: {
                     priority: e.priority,
-                    asana_inbox_id: d
+                    asana_inbox_id: u
                 }
             },
             rejectWithError: !1

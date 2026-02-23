@@ -1,4 +1,5 @@
 /** chunk id: 980017, original params: e,t,n (module,exports,require) **/
+"use strict";
 e.exports = {
     hs: "text-sm/normal__6ec1a",
     At: "topic__6ec1a text-sm/normal__6ec1a",

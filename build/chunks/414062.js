@@ -1,34 +1,34 @@
 /** chunk id: 414062, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    j: () => u
+    j: () => d
 });
-var r = n(64700),
-    l = n(284009),
-    a = n.n(l),
-    i = n(155718),
-    o = n(31717),
-    s = n(522602),
+var l = n(64700),
+    a = n(284009),
+    r = n.n(a),
+    s = n(155718),
+    i = n(31717),
+    o = n(522602),
     c = n(207963);
 
-function u(e) {
+function d(e) {
     let t = (0, c.jc)();
-    a()(null != t, "useFileUploadComponentState must be used within a ComponentStateContextProvider");
+    r()(null != t, "useFileUploadComponentState must be used within a ComponentStateContextProvider");
     let n = t.channelId;
-    a()(null != n, "useFileUploadComponentState must be used inside a channel");
+    r()(null != n, "useFileUploadComponentState must be used inside a channel");
     let {
-        state: l,
-        executeStateUpdate: u,
-        error: d
-    } = t.useComponentState(e), p = r.useMemo(() => (null == l ? void 0 : l.type) === i.I5.FILE_UPLOAD ? l.uploadIds : [], [l]), m = s.A.getUploads(n, o.C.InteractionModal), f = r.useMemo(() => p.map(e => m.find(t => t.id === e)).filter(e => null != e), [p, m]), O = r.useCallback(e => u({
-        type: i.I5.FILE_UPLOAD,
+        state: a,
+        executeStateUpdate: d,
+        error: u
+    } = t.useComponentState(e), m = l.useMemo(() => a?.type === s.I5.FILE_UPLOAD ? a.uploadIds : [], [a]), p = o.A.getUploads(n, i.C.InteractionModal), A = l.useMemo(() => m.map(e => p.find(t => t.id === e)).filter(e => null != e), [m, p]), h = l.useCallback(e => d({
+        type: s.I5.FILE_UPLOAD,
         uploadIds: e
-    }), [u]);
-    return r.useEffect(() => {
-        p.length > f.length && O(p.filter(e => f.some(t => t.id === e)))
-    }, [p, f, O]), {
-        uploadIds: p,
-        setUploadIds: O,
-        currentUploads: f,
-        error: d
+    }), [d]);
+    return l.useEffect(() => {
+        m.length > A.length && h(m.filter(e => A.some(t => t.id === e)))
+    }, [m, A, h]), {
+        uploadIds: m,
+        setUploadIds: h,
+        currentUploads: A,
+        error: u
     }
 }

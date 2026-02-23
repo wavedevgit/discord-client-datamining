@@ -1,23 +1,23 @@
 /** chunk id: 675722, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => a
+    A: () => r
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(143413),
-    l = n(672834);
+var l = n(143413),
+    a = n(672834);
 
-function a(e) {
+function r(e) {
     let {
         message: t,
         channel: n,
-        compact: a,
+        compact: r,
         disableInteraction: s
     } = e;
-    return (0, i.A)(t) ? (0, r.jsx)(l.A, {
+    return (0, l.A)(t) ? (0, i.jsx)(a.A, {
         message: t,
         channel: n,
-        compact: a,
+        compact: r,
         disableInteraction: s
     }) : null
 }

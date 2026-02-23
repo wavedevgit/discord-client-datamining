@@ -1,69 +1,52 @@
-/** chunk id: 547352, original params: e,t,r (module,exports,require) **/
-r.d(t, {
-    default: () => i
+/** chunk id: 547352, original params: t,e,n (module,exports,require) **/
+n.d(e, {
+    default: () => p
 });
-var n = r(627968);
-r(64700);
-var o = r(87719),
-    c = r(244975),
-    l = r(788868),
-    a = r(652215),
-    f = r(985018),
-    p = r(399703);
+var c = n(627968);
+n(64700);
+var i = n(87719),
+    o = n(414345),
+    a = n(244975),
+    s = n(788868),
+    r = n(652215),
+    l = n(985018),
+    d = n(399703);
 
-function i(e) {
+function p(t) {
     let {
-        onClose: t,
-        source: r
-    } = e, i = function(e, t) {
-        if (null == e) return {};
-        var r, n, o, c = {};
-        if ("u" > typeof Reflect && Reflect.ownKeys) {
-            for (o = 0, r = Reflect.ownKeys(e); o < r.length; o++) n = r[o], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (c[n] = e[n]);
-            return c
-        }
-        if (c = function(e, t) {
-                if (null == e) return {};
-                var r, n, o = {},
-                    c = Object.getOwnPropertyNames(e);
-                for (n = 0; n < c.length; n++) r = c[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (o[r] = e[r]);
-                return o
-            }(e, t), Object.getOwnPropertySymbols)
-            for (o = 0, r = Object.getOwnPropertySymbols(e); o < r.length; o++) n = r[o], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (c[n] = e[n]);
-        return c
-    }(e, ["onClose", "source"]), u = f.intl.format(f.t.WMO9po, {
+        onClose: e,
+        source: n,
+        ...p
+    } = t, b = l.intl.format(l.t.WMO9po, {
         onAndMore: function() {
-            t(), (0, o.e)()
+            e(), (0, i.e)()
         }
     });
-    return (0, n.jsx)(c.A, function(e) {
-        for (var t = 1; t < arguments.length; t++) {
-            var r = null != arguments[t] ? arguments[t] : {},
-                n = Object.keys(r);
-            "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-                return Object.getOwnPropertyDescriptor(r, e).enumerable
-            }))), n.forEach(function(t) {
-                var n;
-                n = r[t], t in e ? Object.defineProperty(e, t, {
-                    value: n,
-                    enumerable: !0,
-                    configurable: !0,
-                    writable: !0
-                }) : e[t] = n
-            })
-        }
-        return e
-    }({
-        artURL: p.A,
-        type: l.e.PREMIUM_GUILD_IDENTITY_MODAL,
-        title: f.intl.string(f.t.kOEBKP),
-        body: u,
-        glowUp: u,
-        analyticsSource: r,
-        analyticsLocation: {
-            section: a.JJy.PREMIUM_GUILD_MEMBER_PROFILE_UPSELL_MODAL,
-            object: a.ZSU.BUTTON_CTA
+    return (0, o.g)({
+        location: "PremiumGuildMemberProfileUpsell"
+    }) ? (0, c.jsx)(a.F, {
+        title: l.intl.string(l.t.kOEBKP),
+        subtitle: b,
+        graphic: {
+            src: d.A,
+            type: "image"
         },
-        onClose: t
-    }, i))
+        secondaryCTA: l.intl.string(l.t["13/7kX"]),
+        onSecondaryClick: e,
+        onClose: e,
+        ...p
+    }) : (0, c.jsx)(a.A, {
+        artURL: d.A,
+        type: s.e.PREMIUM_GUILD_IDENTITY_MODAL,
+        title: l.intl.string(l.t.kOEBKP),
+        body: b,
+        glowUp: b,
+        analyticsSource: n,
+        analyticsLocation: {
+            section: r.JJy.PREMIUM_GUILD_MEMBER_PROFILE_UPSELL_MODAL,
+            object: r.ZSU.BUTTON_CTA
+        },
+        onClose: e,
+        ...p
+    })
 }

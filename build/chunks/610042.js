@@ -1,202 +1,174 @@
 /** chunk id: 610042, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    y: () => y
-}), n(896048);
-var r = n(627968),
-    i = n(64700),
+    y: () => N
+});
+var i = n(627968),
+    s = n(64700),
     l = n(503698),
-    s = n.n(l),
+    r = n.n(l),
     a = n(934551),
     o = n(990078),
-    c = n(421380),
-    d = n(397927),
+    d = n(421380),
+    c = n(397927),
     u = n(477947),
-    g = n(81461),
-    m = n(342490),
-    p = n(743981),
-    f = n(583970),
-    h = n(985018),
-    b = n(690552),
-    x = n(175820);
+    m = n(81461),
+    g = n(342490),
+    x = n(743981),
+    h = n(583970),
+    _ = n(985018),
+    A = n(690552),
+    p = n(175820);
 
-function j(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = r
-        })
-    }
-    return e
-}
-
-function _(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
-        }
-        return n
-    })(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-
-function O(e) {
+function f(e) {
     let {
         badge: t,
         isSelected: n,
-        onClick: i
-    } = e, l = (0, c.Gx)({
+        onClick: s
+    } = e, l = (0, d.Gx)({
         isSelected: n,
         label: (0, u.A)(t.kind)
     });
-    return (0, r.jsx)(v, {
+    return (0, i.jsx)(j, {
         badge: t,
         selected: n,
-        onClick: i,
+        onClick: s,
         radioProps: l
     })
 }
 
-function v(e) {
+function j(e) {
     let {
         badge: t,
         locked: n = !1,
-        preview: i = !1,
+        preview: s = !1,
         selected: l = !1,
-        onClick: c,
+        onClick: d,
         radioProps: u
-    } = e, m = s()(x.Uh, {
-        [x.fT]: l,
-        [b.av]: n,
-        [b.WZ]: i
-    }), O = (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(g.J, {
+    } = e, g = r()(p.Uh, {
+        [p.fT]: l,
+        [A.av]: n,
+        [A.WZ]: s
+    }), f = (0, i.jsxs)(i.Fragment, {
+        children: [(0, i.jsx)(m.J, {
             badge: t.kind,
-            width: p.Sl.SIZE_32,
-            height: p.Sl.SIZE_32,
-            className: b.n2
-        }), n && !i && (0, r.jsx)("div", {
-            className: b.py,
-            children: (0, r.jsx)(a.LockIcon, {
+            width: x.Sl.SIZE_32,
+            height: x.Sl.SIZE_32,
+            className: A.n2
+        }), n && !s && (0, i.jsx)("div", {
+            className: A.py,
+            children: (0, i.jsx)(a.LockIcon, {
                 size: "md"
             })
         })]
     });
-    if (i) return (0, r.jsx)("div", {
-        className: m,
-        children: O
+    if (s) return (0, i.jsx)("div", {
+        className: g,
+        children: f
     });
     if (n && null != t.packName && "" !== t.packName) {
-        let e = h.intl.formatToPlainString(f.default.ECl8SQ, {
+        let e = _.intl.formatToPlainString(h.default.ECl8SQ, {
             packName: t.packName
         });
-        return (0, r.jsx)(o.m, {
+        return (0, i.jsx)(o.m, {
             delay: 100,
             text: e,
             "aria-label": e,
-            children: (0, r.jsx)(d.DUT, {
-                className: m,
+            children: (0, i.jsx)(c.DUT, {
+                className: g,
                 onClick: () => {
-                    null == c || c()
+                    d?.()
                 },
-                children: O
+                children: f
             })
         })
     }
-    return (0, r.jsx)(d.DUT, _(j({}, u), {
-        className: m,
-        onClick: c,
-        children: O
-    }))
+    return (0, i.jsx)(c.DUT, {
+        ...u,
+        className: g,
+        onClick: d,
+        children: f
+    })
 }
 
-function y(e) {
+function N(e) {
     let {
         badgeCollection: t,
         handleBoostUpsellClick: n,
         selectedBadge: l,
         onBadgeClicked: o,
         headingId: u
-    } = e, [g, p] = i.useState(!1), y = i.useId(), A = (0, c._u)({
+    } = e, [m, x] = s.useState(!1), N = s.useId(), E = (0, d._u)({
         orientation: "horizontal",
         isDisabled: !1,
         labelledBy: u
-    }), E = !g && t.lockedBadges.length > 0;
-    return (0, r.jsxs)("div", {
-        children: [(0, r.jsx)(d.AC4, {
-            id: y,
-            children: h.intl.string(h.t["5AQGuZ"])
-        }), (0, r.jsx)("div", _(j({}, A), {
-            "aria-describedby": y,
-            className: x.p3,
-            children: t.unlockedBadges.map(e => (0, r.jsx)(O, {
+    }), b = !m && t.lockedBadges.length > 0;
+    return (0, i.jsxs)("div", {
+        className: A.zr,
+        children: [(0, i.jsx)(c.AC4, {
+            id: N,
+            children: _.intl.string(_.t["5AQGuZ"])
+        }), (0, i.jsx)("div", {
+            ...E,
+            "aria-describedby": N,
+            className: p.p3,
+            children: t.unlockedBadges.map(e => (0, i.jsx)(f, {
                 badge: e,
                 isSelected: e.kind === l,
                 onClick: () => o(e.kind)
             }, e.kind))
-        })), g && (0, r.jsx)("ul", {
-            className: s()(x.p3, b.wA),
-            children: t.lockedBadges.map(e => (0, r.jsx)("li", {
-                children: (0, r.jsx)(v, {
+        }), m && (0, i.jsx)("ul", {
+            className: r()(p.p3, A.wA),
+            children: t.lockedBadges.map(e => (0, i.jsx)("li", {
+                children: (0, i.jsx)(j, {
                     locked: !0,
                     badge: e,
-                    onClick: () => null == n ? void 0 : n()
+                    onClick: () => n?.()
                 })
             }, e.kind))
-        }), E && (0, r.jsxs)("div", {
-            className: b.WC,
-            children: [(0, r.jsx)("div", {
-                className: x.p3,
-                children: t.lockedBadges.slice(0, 5).map(e => (0, r.jsx)(v, {
+        }), b && (0, i.jsxs)("div", {
+            className: A.WC,
+            children: [(0, i.jsx)("div", {
+                className: p.p3,
+                children: t.lockedBadges.slice(0, 5).map(e => (0, i.jsx)(j, {
                     locked: !0,
                     preview: !0,
                     badge: e
                 }, e.kind))
-            }), (0, r.jsxs)(d.DUT, {
-                className: s()(b.ZN, b.n7),
-                onClick: () => p(!0),
-                children: [(0, r.jsx)(d.Text, {
+            }), (0, i.jsxs)(c.DUT, {
+                className: r()(A.ZN, A.n7),
+                onClick: () => x(!0),
+                children: [(0, i.jsx)(c.Text, {
                     variant: "text-sm/semibold",
                     color: "text-subtle",
-                    children: h.intl.string(f.default["2tkPDy"])
-                }), (0, r.jsx)(a.ChevronSmallDownIcon, {
+                    children: _.intl.string(h.default["2tkPDy"])
+                }), (0, i.jsx)(a.ChevronSmallDownIcon, {
                     size: "sm"
                 })]
             })]
-        }), g && (0, r.jsxs)(r.Fragment, {
-            children: [null != n && (0, r.jsxs)("div", {
-                className: b.B7,
-                children: [(0, r.jsx)(d.Text, {
+        }), m && (0, i.jsxs)(i.Fragment, {
+            children: [null != n && (0, i.jsxs)("div", {
+                className: A.B7,
+                children: [(0, i.jsx)(c.Text, {
                     variant: "text-sm/normal",
                     color: "text-default",
-                    className: b.XY,
-                    children: h.intl.string(f.default.G3qiHu)
-                }), (0, r.jsx)("div", {
-                    className: b.WM,
-                    children: (0, r.jsx)(m.u, {
-                        onClick: n
+                    className: A.XY,
+                    children: _.intl.string(h.default.G3qiHu)
+                }), (0, i.jsx)("div", {
+                    className: A.WM,
+                    children: (0, i.jsx)(g.u, {
+                        onClick: n,
+                        size: "sm"
                     })
                 })]
-            }), (0, r.jsxs)(d.DUT, {
-                className: b.eO,
-                onClick: () => p(!1),
-                children: [(0, r.jsx)(d.Text, {
+            }), (0, i.jsxs)(c.DUT, {
+                className: A.eO,
+                onClick: () => x(!1),
+                children: [(0, i.jsx)(c.Text, {
                     variant: "text-sm/semibold",
                     color: "text-subtle",
-                    children: h.intl.string(f.default.idxnf7)
-                }), (0, r.jsx)(a.ChevronSmallUpIcon, {
+                    children: _.intl.string(h.default.idxnf7)
+                }), (0, i.jsx)(a.ChevronSmallUpIcon, {
                     size: "sm"
                 })]
             })]

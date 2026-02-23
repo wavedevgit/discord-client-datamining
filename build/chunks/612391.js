@@ -1,33 +1,36 @@
 /** chunk id: 612391, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => m,
-    g: () => f
+    A: () => h,
+    g: () => u
 });
-var r, i, l, a, s = n(627968),
-    o = n(64700),
-    c = n(311907),
-    u = n(73153),
-    d = n(830382),
-    p = n(79387),
-    h = n(985018),
-    f = ((r = {}).SHORT = "SHORT", r.LONG = "LONG", r);
-class g extends(a = o.PureComponent) {
+var i, r = n(627968),
+    l = n(64700),
+    a = n(311907),
+    s = n(73153),
+    o = n(830382),
+    d = n(79387),
+    c = n(985018),
+    u = ((i = {}).SHORT = "SHORT", i.LONG = "LONG", i);
+class A extends l.PureComponent {
+    static defaultProps = {
+        messageStyle: "LONG"
+    };
     getText(e, t) {
         if (429 === e.status) switch (t) {
             case "SHORT":
-                return h.intl.string(h.t.T15lqn);
+                return c.intl.string(c.t.T15lqn);
             case "LONG":
-                return h.intl.string(h.t.XFShdK)
+                return c.intl.string(c.t.XFShdK)
         }
         switch (t) {
             case "SHORT":
-                return h.intl.string(h.t["+XstB0"]);
+                return c.intl.string(c.t["+XstB0"]);
             case "LONG":
-                return h.intl.string(h.t.epyCuh)
+                return c.intl.string(c.t.epyCuh)
         }
     }
     componentWillUnmount() {
-        null != this.props.purchaseError && u.h.wait(() => d.T3())
+        null != this.props.purchaseError && s.h.wait(() => o.T3())
     }
     render() {
         let {
@@ -35,20 +38,12 @@ class g extends(a = o.PureComponent) {
             purchaseError: t,
             messageStyle: n
         } = this.props;
-        return null == t ? null : (0, s.jsx)("div", {
+        return null == t ? null : (0, r.jsx)("div", {
             className: e,
             children: this.getText(t, n)
         })
     }
 }
-l = {
-    messageStyle: "LONG"
-}, (i = "defaultProps") in g ? Object.defineProperty(g, i, {
-    value: l,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
-}) : g[i] = l;
-let m = c.Ay.connectStores([p.A], () => ({
-    purchaseError: p.A.error
-}))(g)
+let h = a.Ay.connectStores([d.A], () => ({
+    purchaseError: d.A.error
+}))(A)

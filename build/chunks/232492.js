@@ -1,35 +1,34 @@
-/** chunk id: 232492, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    A: () => d
+/** chunk id: 232492, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    A: () => u
 });
-var r = n(311907),
-    i = n(963027),
-    a = n(262763),
-    o = n(976860),
-    s = n(734057),
-    l = n(977997),
-    c = n(721592),
-    u = n(652215);
+var l = i(311907),
+    n = i(963027),
+    a = i(262763),
+    s = i(976860),
+    r = i(734057),
+    c = i(977997),
+    d = i(721592),
+    o = i(652215);
 
-function d(e, t) {
-    let n = (0, r.bG)([s.A], () => s.A.getChannel(t)),
+function u(e, t) {
+    let i = (0, l.bG)([r.A], () => r.A.getChannel(t)),
         {
-            needSubscriptionToAccess: d
-        } = (0, c.A)(null == n ? void 0 : n.id);
-    if (null == n || d) return null;
-    let f = n.isGuildVocal();
+            needSubscriptionToAccess: u
+        } = (0, d.A)(i?.id);
+    if (null == i || u) return null;
+    let m = i.isGuildVocal();
     return {
         navigateToChannel: () => {
-            f ? a.A.handleVoiceConnect({
-                channel: n,
-                connected: l.A.isInChannel(n.id),
+            m ? a.A.handleVoiceConnect({
+                channel: i,
+                connected: c.A.isInChannel(i.id),
                 needSubscriptionToAccess: !1,
                 routeDirectlyToChannel: !0
-            }) : (0, o.pX)(u.BVt.CHANNEL(e, n.id))
+            }) : (0, s.pX)(o.BVt.CHANNEL(e, i.id))
         },
-        ariaLabel: (0, i.Ay)({
-            channel: n
+        ariaLabel: (0, n.Ay)({
+            channel: i
         })
     }
 }

@@ -1,39 +1,39 @@
 /** chunk id: 219504, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => r
-}), n(896048);
+    A: () => l
+});
 var i = n(64700);
 
-function r(e, t) {
-    let [n, r] = i.useState(null), l = i.useCallback(e => {
-        r(e)
+function l(e, t) {
+    let [n, l] = i.useState(null), s = i.useCallback(e => {
+        l(e)
     }, []), a = i.useCallback(() => {
-        r(null)
-    }, []), s = i.useCallback(i => {
+        l(null)
+    }, []), r = i.useCallback(i => {
         a();
-        let r = e.find(e => {
+        let l = e.find(e => {
                 let {
                     id: t
                 } = e;
                 return n === t
             }),
-            l = e.find(e => {
+            s = e.find(e => {
                 let {
                     id: t
                 } = e;
                 return i === t
             });
-        if (null == r || null == l || r === l) return;
-        let s = [...e],
-            o = s.indexOf(r),
-            c = s.indexOf(l),
-            d = +(c - o > 0);
-        s.splice(o, 1), c = s.indexOf(l), s.splice(c + d, 0, r), t(s)
+        if (null == l || null == s || l === s) return;
+        let r = [...e],
+            o = r.indexOf(l),
+            d = r.indexOf(s),
+            c = +(d - o > 0);
+        r.splice(o, 1), d = r.indexOf(s), r.splice(d + c, 0, l), t(r)
     }, [e, n, a, t]);
     return {
         draggingId: n,
-        handleDragStart: l,
+        handleDragStart: s,
         handleDragReset: a,
-        handleDragComplete: s
+        handleDragComplete: r
     }
 }

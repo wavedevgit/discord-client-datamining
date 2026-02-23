@@ -1,61 +1,61 @@
-/** chunk id: 613566, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    Ay: () => d,
-    fh: () => u,
+/** chunk id: 613566, original params: e,t,r (module,exports,require) **/
+r.d(t, {
+    Ay: () => h,
+    fh: () => m,
     qP: () => c
 });
-var r = n(627968),
-    i = n(64700),
-    a = n(503698),
-    o = n.n(a);
-n(284009);
-var s = n(736653),
-    l = n(599556),
-    c = function(e) {
-        return e.UNSET = "unset", e.BLUE = "blue", e.ORANGE = "orange", e
-    }({}),
-    u = function(e) {
-        return e.LIGHT = "light", e.MEDIUM = "medium", e
-    }({});
-let d = e => {
-    var t;
+var n, a, s = r(627968),
+    l = r(64700),
+    i = r(503698),
+    d = r.n(i);
+r(284009);
+var o = r(736653),
+    u = r(599556),
+    c = ((n = {}).UNSET = "unset", n.BLUE = "blue", n.ORANGE = "orange", n),
+    m = ((a = {}).LIGHT = "light", a.MEDIUM = "medium", a);
+let h = e => {
     let {
-        progress: n,
-        minimum: a = 0,
-        maximum: c = 100,
-        weight: u = "light",
-        variant: d,
-        override: f,
-        labelledBy: p
-    } = e, _ = null != f && "unset" === d, h = (0, s.Ay)(), m = null != (t = null == f ? void 0 : f[h]) ? t : null == f ? void 0 : f.default, g = i.useMemo(() => (n - a) / (c - a) * 100, [n, a, c]), E = n === a, y = _ ? {
-        "--custom-background": null == m ? void 0 : m.background,
-        "--custom-gradient-start": null == m ? void 0 : m.gradientStart,
-        "--custom-gradient-end": null == m ? void 0 : m.gradientEnd,
-        "--custom-gradient-glow": null == m ? void 0 : m.gradientEnd
-    } : {};
-    return (0, r.jsx)("div", {
-        className: o()(l.progressContainer, l[u], l[d]),
-        style: y,
-        children: (0, r.jsxs)("div", {
-            className: o()(l.progress, {
-                [l.empty]: E
+        progress: t,
+        minimum: r = 0,
+        maximum: n = 100,
+        weight: a = "light",
+        variant: i,
+        override: c,
+        glowing: m = !0,
+        labelledBy: h
+    } = e, p = null != c && "unset" === i, x = (0, o.Ay)(), g = c?.[x] ?? c?.default, _ = l.useMemo(() => (t - r) / (n - r) * 100, [t, r, n]), f = t === r, b = {
+        ...p ? {
+            "--custom-background": g?.background,
+            "--custom-gradient-start": g?.gradientStart,
+            "--custom-gradient-end": g?.gradientEnd,
+            "--custom-gradient-glow": g?.gradientEnd
+        } : {},
+        ...!m && {
+            "--custom-gradient-glow": "transparent"
+        }
+    };
+    return (0, s.jsx)("div", {
+        className: d()(u.progressContainer, u[a], u[i]),
+        style: b,
+        children: (0, s.jsxs)("div", {
+            className: d()(u.progress, {
+                [u.empty]: f
             }),
             style: {
-                width: "".concat(g, "%")
+                width: `${_}%`
             },
             role: "meter",
-            "aria-valuenow": n,
-            "aria-valuemin": a,
-            "aria-valuemax": c,
-            "aria-labelledby": p,
-            children: [(0, r.jsx)("div", {
-                className: o()(l.glow, {
-                    [l.empty]: E
+            "aria-valuenow": t,
+            "aria-valuemin": r,
+            "aria-valuemax": n,
+            "aria-labelledby": h,
+            children: [(0, s.jsx)("div", {
+                className: d()(u.glow, {
+                    [u.empty]: f
                 })
-            }), (0, r.jsx)("div", {
-                className: o()(l.bar, l[d], {
-                    [l.empty]: E
+            }), (0, s.jsx)("div", {
+                className: d()(u.bar, u[i], {
+                    [u.empty]: f
                 })
             })]
         })

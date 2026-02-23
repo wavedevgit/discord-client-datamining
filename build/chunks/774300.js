@@ -1,39 +1,39 @@
 /** chunk id: 774300, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => u,
-    F: () => p
+    A: () => d,
+    F: () => c
 });
-var r, o = n(308528),
-    s = n(843472),
+var l, r = n(308528),
+    a = n(843472),
     i = n(626584),
-    a = n(734057),
-    c = n(927813),
-    l = n(513391);
-let d = +c.A.Millis.SECOND + 10;
-var p = ((r = {})[r.GROUP_DM = 0] = "GROUP_DM", r[r.USER = 1] = "USER", r[r.CHANNEL = 2] = "CHANNEL", r);
-class b extends l.A {
-    _sendInvite(e, t, n, r, o) {
-        s.A.sendInvite(e.id, t, n, r).then(() => o(null, !0), () => o(null, !1))
+    s = n(734057),
+    o = n(927813),
+    E = n(513391);
+let u = +o.A.Millis.SECOND + 10;
+var c = ((l = {})[l.GROUP_DM = 0] = "GROUP_DM", l[l.USER = 1] = "USER", l[l.CHANNEL = 2] = "CHANNEL", l);
+class _ extends E.A {
+    constructor() {
+        super(new i.A("InviteQueue"), u)
+    }
+    _sendInvite(e, t, n, l, r) {
+        a.A.sendInvite(e.id, t, n, l).then(() => r(null, !0), () => r(null, !1))
     }
     drain(e, t) {
         let {
             location: n,
-            inviteAnalyticsMetadata: r
+            inviteAnalyticsMetadata: l
         } = e;
         switch (e.type) {
             case 0:
             case 2:
-                this._sendInvite(e.channel, e.inviteKey, n, r, t);
+                this._sendInvite(e.channel, e.inviteKey, n, l, t);
                 break;
             case 1:
-                o.A.ensurePrivateChannel(e.user.id).then(o => {
-                    let s = a.A.getChannel(o);
-                    null != s && this._sendInvite(s, e.inviteKey, n, r, t)
+                r.A.ensurePrivateChannel(e.user.id).then(r => {
+                    let a = s.A.getChannel(r);
+                    null != a && this._sendInvite(a, e.inviteKey, n, l, t)
                 }, () => t(null, !1))
         }
     }
-    constructor() {
-        super(new i.A("InviteQueue"), d)
-    }
 }
-let u = new b
+let d = new _

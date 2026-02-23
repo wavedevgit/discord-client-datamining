@@ -1,27 +1,27 @@
 /** chunk id: 766201, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     n: () => l
-}), n(896048);
-var r = n(64700),
-    i = n(651162);
+});
+var i = n(64700),
+    r = n(651162);
 let l = (e, t, n) => {
-        let [i, l] = (0, r.useState)(!1);
-        return (0, r.useEffect)(() => {
-            let r = a(e);
-            if (t || n || null == r) return void l(!1);
-            let i = r - Date.now();
-            if (i <= 0) return void l(!0);
+        let [r, l] = (0, i.useState)(!1);
+        return (0, i.useEffect)(() => {
+            let i = a(e);
+            if (t || n || null == i) return void l(!1);
+            let r = i - Date.now();
+            if (r <= 0) return void l(!0);
             l(!1);
             let s = setTimeout(() => {
                 l(!0)
-            }, Math.min(0x7fffffff, i));
+            }, Math.min(0x7fffffff, r));
             return () => clearTimeout(s)
-        }, [t, n, e]), i
+        }, [t, n, e]), r
     },
     a = e => {
         let t = null;
         return e.forEach(e => {
             let n = null;
-            e.type === i.g.IMMERSIVE_BANNER ? n = null != e.endTime ? e.endTime.getTime() : null : e.type === i.g.COUNTDOWN_TIMER && (n = e.endTime.getTime()), (null == t || null != n && n < t) && (t = n)
+            e.type === r.g.IMMERSIVE_BANNER ? n = null != e.endTime ? e.endTime.getTime() : null : e.type === r.g.COUNTDOWN_TIMER && (n = e.endTime.getTime()), (null == t || null != n && n < t) && (t = n)
         }), t
     }

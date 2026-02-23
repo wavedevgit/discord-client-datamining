@@ -1,8 +1,8 @@
-/** chunk id: 853066, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    R: () => r
+/** chunk id: 853066, original params: t,e,n (module,exports,require) **/
+n.d(e, {
+    R: () => l
 });
-let r = (0, n(600975).C)({
+let l = (0, n(600975).C)({
     kind: "guild",
     id: "2022-12_mention_raid_limit",
     label: "Automod Mention Raid Limit",

@@ -1,15 +1,16 @@
 /** chunk id: 585342, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => s
+    A: () => r
 });
-var r = n(311907),
-    l = n(961350),
-    i = n(312006);
+var i = n(311907),
+    s = n(961350),
+    l = n(312006);
 
-function s(e) {
+function r(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-    return (0, r.cf)([i.Ay, l.default], () => {
-        let n = l.default.getId();
-        return i.Ay.getPermissionsForUser(n, e, t)
+    return (0, i.cf)([l.Ay, s.default], () => {
+        let n = s.default.getId();
+        return l.Ay.getPermissionsForUser(n, e, t)
     }, [e, t])
 }

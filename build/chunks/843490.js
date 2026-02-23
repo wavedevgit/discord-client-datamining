@@ -1,8 +1,8 @@
 /** chunk id: 843490, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    M: () => r
+    M: () => i
 });
-let r = (0, n(945810).mj)({
+let i = (0, n(945810).mj)({
     name: "2026-01-now-playing-api-call-experiment",
     kind: "user",
     defaultConfig: {

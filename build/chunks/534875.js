@@ -1,27 +1,27 @@
 /** chunk id: 534875, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => d
+    A: () => c
 });
-var r = n(64700),
-    i = n(311907),
+var i = n(64700),
+    s = n(311907),
     l = n(554375),
-    s = n(475743),
+    r = n(475743),
     a = n(885617),
     o = n(492494);
-let c = [];
+let d = [];
 
-function d(e) {
+function c(e) {
     let {
         revision: t,
         emojis: n
-    } = (0, i.cf)([a.A], () => ({
+    } = (0, s.cf)([a.A], () => ({
         revision: a.A.getEmojiRevision(e),
         emojis: a.A.getEmojis(e)
-    })), d = (0, s.A)(t);
-    return r.useEffect(() => {
+    })), c = (0, r.A)(t);
+    return i.useEffect(() => {
         (0, l.dZ)(e)
-    }, [e]), r.useEffect(() => {
-        null != d && d < t && (0, l.dZ)(e)
-    }, [t, d, e]), r.useMemo(() => null == n ? c : n.filter(t => (0, o.Eg)(t, e)), [n, e])
+    }, [e]), i.useEffect(() => {
+        null != c && c < t && (0, l.dZ)(e)
+    }, [t, c, e]), i.useMemo(() => null == n ? d : n.filter(t => (0, o.Eg)(t, e)), [n, e])
 }

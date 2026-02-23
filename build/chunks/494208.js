@@ -1,85 +1,60 @@
 /** chunk id: 494208, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => p
-}), n(896048);
-var r = n(627968),
-    l = n(64700),
-    i = n(397927),
-    s = n(323073),
+    A: () => h
+});
+var i = n(627968),
+    s = n(64700),
+    l = n(397927),
+    r = n(323073),
     a = n(58736),
     o = n(707539),
     c = n(617011),
-    u = n(985018),
-    d = n(498654);
+    d = n(985018),
+    u = n(498654);
 
-function p(e) {
+function h(e) {
     let {
         channel: t
-    } = e, [n, p] = l.useState(!1), h = l.useRef(null), g = (0, s.vL)(t), f = l.useCallback(() => {
-        p(!1)
-    }, []), m = l.useCallback(() => {
-        n || (0, o.D3)("Popout"), p(!n)
+    } = e, [n, h] = s.useState(!1), A = s.useRef(null), p = (0, r.vL)(t), g = s.useCallback(() => {
+        h(!1)
+    }, []), m = s.useCallback(() => {
+        n || (0, o.D3)("Popout"), h(!n)
     }, [n]);
-    return (0, r.jsx)(i.YNO, {
-        targetElementRef: h,
-        animation: i.YNO.Animation.NONE,
+    return (0, i.jsx)(l.YNO, {
+        targetElementRef: A,
+        animation: l.YNO.Animation.NONE,
         position: "bottom",
         align: "right",
         autoInvert: !1,
         shouldShow: n,
-        onRequestClose: f,
+        onRequestClose: g,
         renderPopout: function() {
-            return (0, r.jsx)(i.lGe, {
-                children: (0, r.jsx)(c.A, {
-                    className: d.T,
+            return (0, i.jsx)(l.lGe, {
+                children: (0, i.jsx)(c.A, {
+                    className: u.T,
                     channel: t,
-                    onClose: f,
+                    onClose: g,
                     context: "popout"
                 })
             })
         },
         clickTrap: !0,
         children: (e, t) => {
-            var n, l;
             let {
-                isShown: s
+                isShown: n
             } = t;
-            return (0, r.jsx)(a.In, (n = function(e) {
-                for (var t = 1; t < arguments.length; t++) {
-                    var n = null != arguments[t] ? arguments[t] : {},
-                        r = Object.keys(n);
-                    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                        return Object.getOwnPropertyDescriptor(n, e).enumerable
-                    }))), r.forEach(function(t) {
-                        var r;
-                        r = n[t], t in e ? Object.defineProperty(e, t, {
-                            value: r,
-                            enumerable: !0,
-                            configurable: !0,
-                            writable: !0
-                        }) : e[t] = r
-                    })
-                }
-                return e
-            }({}, e), l = l = {
-                ref: h,
-                className: d.Kk,
+            return (0, i.jsx)(a.In, {
+                ...e,
+                ref: A,
+                className: u.Kk,
                 onClick: m,
-                icon: i.ysw,
-                "aria-label": u.intl.string(u.t.B2panI),
-                tooltip: s ? null : u.intl.string(u.t.B2panI),
-                disabled: g,
-                selected: s
-            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
-                var n = Object.keys(e);
-                if (Object.getOwnPropertySymbols) {
-                    var r = Object.getOwnPropertySymbols(e);
-                    n.push.apply(n, r)
-                }
-                return n
-            })(Object(l)).forEach(function(e) {
-                Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(l, e))
-            }), n))
+                icon: l.ysw,
+                "aria-label": d.intl.string(d.t.B2panI),
+                tooltip: n ? null : d.intl.string(d.t.B2panI),
+                disabled: p,
+                selected: n
+            })
         }
     })
 }

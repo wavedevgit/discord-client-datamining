@@ -1,60 +1,59 @@
-/** chunk id: 931088, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    m: () => h
-}), n(896048);
-var r = n(627968),
-    i = n(64700),
-    a = n(793574),
-    o = n(688810),
-    s = n(95337),
-    l = n(412314),
-    c = n(456459),
-    u = n(473702),
-    d = n(916974),
-    f = n(347378),
-    p = n(606423),
-    _ = n(652215);
-let h = e => {
+/** chunk id: 931088, original params: e,t,l (module,exports,require) **/
+l.d(t, {
+    m: () => x
+});
+var a = l(627968),
+    n = l(64700),
+    r = l(793574),
+    i = l(688810),
+    s = l(95337),
+    o = l(412314),
+    u = l(456459),
+    c = l(473702),
+    d = l(916974),
+    p = l(347378),
+    m = l(606423),
+    h = l(652215);
+let x = e => {
         let {
             transitionState: t,
-            onClose: n,
+            onClose: l,
             premiumSubscription: s,
-            premiumType: l,
-            churnDiscount: c,
-            planId: u,
-            renewalInvoice: f,
-            renewalInvoiceDetails: p,
-            errorOnCancel: h,
+            premiumType: o,
+            churnDiscount: u,
+            planId: c,
+            renewalInvoice: p,
+            renewalInvoiceDetails: m,
+            errorOnCancel: x,
             errorOnRedeem: g,
-            setActiveStep: E,
-            activeStep: y
+            setActiveStep: y,
+            activeStep: f
         } = e, {
-            analyticsLocations: b
-        } = (0, o.Ay)(a.A.USER_SETTINGS), [O, v] = i.useState(m(y));
-        return (0, i.useEffect)(() => {
-            v(m(y))
-        }, [y]), (0, r.jsx)(d.CancellationContext.Provider, {
+            analyticsLocations: E
+        } = (0, i.Ay)(r.A.USER_SETTINGS), [v, S] = n.useState(b(f));
+        return (0, n.useEffect)(() => {
+            S(b(f))
+        }, [f]), (0, a.jsx)(d.CancellationContext.Provider, {
             value: {
-                setStep: E,
-                premiumType: l,
-                onClose: n,
+                setStep: y,
+                premiumType: o,
+                onClose: l,
                 transitionState: t,
                 premiumSubscription: s,
-                analyticsLocations: b,
-                analyticsLocation: _.ThZ.USER_SETTINGS,
+                analyticsLocations: E,
+                analyticsLocation: h.ThZ.USER_SETTINGS,
                 confettiCanvas: null,
-                churnUserDiscountOffer: c,
+                churnUserDiscountOffer: u,
                 isFetchingChurnDiscountOffer: !1,
                 fullPrice: "$9.99",
                 discountedPrice: "$4.99",
-                planId: u,
+                planId: c,
                 paymentsBlocked: !1,
-                renewalInvoice: f,
-                renewalInvoiceDetails: p,
+                renewalInvoice: p,
+                renewalInvoiceDetails: m,
                 handleCancellation: () => new Promise((e, t) => {
                     setTimeout(() => {
-                        h ? t() : e()
+                        x ? t() : e()
                     }, 1e3)
                 }),
                 applyOffer: () => new Promise((e, t) => {
@@ -65,21 +64,21 @@ let h = e => {
                 pauseDuration: null,
                 setPauseDuration: () => {}
             },
-            children: O
+            children: v
         })
     },
-    m = e => {
+    b = e => {
         switch (e) {
-            case u.g.DISCOUNT_APPLIED:
-                return (0, r.jsx)(c.V, {});
-            case u.g.CONFIRM_DISCOUNT:
-                return (0, r.jsx)(l.M, {});
-            case u.g.CONFIRM:
-                return (0, r.jsx)(s.r, {});
-            case u.g.PREVIEW:
-                return (0, r.jsx)(f.E, {});
-            case u.g.WHAT_YOU_LOSE:
+            case c.g.DISCOUNT_APPLIED:
+                return (0, a.jsx)(u.V, {});
+            case c.g.CONFIRM_DISCOUNT:
+                return (0, a.jsx)(o.M, {});
+            case c.g.CONFIRM:
+                return (0, a.jsx)(s.r, {});
+            case c.g.PREVIEW:
+                return (0, a.jsx)(p.E, {});
+            case c.g.WHAT_YOU_LOSE:
             default:
-                return (0, r.jsx)(p.Z, {})
+                return (0, a.jsx)(m.Z, {})
         }
     }

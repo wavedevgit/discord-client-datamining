@@ -1,69 +1,70 @@
 /** chunk id: 849134, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => u
+    A: () => d
 });
-var r = n(627968),
-    l = n(64700),
-    i = n(342494),
-    s = n(486318),
+var i = n(627968),
+    s = n(64700),
+    l = n(342494),
+    r = n(486318),
     a = n(985018),
     o = n(549724),
     c = n(585048);
 
-function u(e) {
+function d(e) {
     let {
         targetElementRef: t,
         onRender: n,
-        onRequestClose: u,
-        onActionClick: d,
-        onActionMouseDown: p,
-        position: h = "right",
-        align: g = "top",
-        caretConfig: f = {
+        onRequestClose: d,
+        onActionClick: u,
+        onActionMouseDown: h,
+        position: A = "right",
+        align: p = "top",
+        caretConfig: g = {
             align: "start"
         },
         skuImageDetails: m,
-        title: b,
-        body: A
+        title: _,
+        body: f
     } = e;
-    l.useEffect(() => {
-        null == n || n()
+    s.useEffect(() => {
+        n?.()
     }, [n]);
-    let y = l.useMemo(() => (null == m ? void 0 : m.imageUrl) == null ? {
+    let x = s.useMemo(() => m?.imageUrl == null ? {
         type: "image",
         src: c.A,
         aspectRatio: "6/4"
-    } : (0, s.e)({
-        imageUrl: null == m ? void 0 : m.imageUrl,
-        backgroundImageUrl: null == m ? void 0 : m.backgroundImageUrl,
+    } : (0, r.e)({
+        imageUrl: m?.imageUrl,
+        backgroundImageUrl: m?.backgroundImageUrl,
         altText: a.intl.string(a.t["ulQB+t"]),
         customClassNames: {
             containerClassName: o.z,
             foregroundImageClassName: o._
         }
-    }), [null == m ? void 0 : m.imageUrl, null == m ? void 0 : m.backgroundImageUrl]);
-    return (0, r.jsx)(i.AM, {
+    }), [m?.imageUrl, m?.backgroundImageUrl]);
+    return (0, i.jsx)(l.AM, {
         size: "lg",
         shouldShow: !0,
-        position: h,
-        caretConfig: f,
+        position: A,
+        caretConfig: g,
         gradientColor: "purple",
         alignmentStrategy: "edge",
-        align: g,
+        align: p,
         badge: {
             type: "new",
             variant: "default"
         },
-        onRequestClose: u,
+        onRequestClose: d,
         actions: [{
             text: a.intl.string(a.t.RzWDqY),
             variant: "primary",
-            onClick: d,
-            onMouseDown: p
+            onClick: u,
+            onMouseDown: h
         }],
         targetElementRef: t,
-        title: null != b ? b : a.intl.string(a.t.Ylu2JM),
-        body: null != A ? A : a.intl.string(a.t.vgylLQ),
-        graphic: y
+        title: _ ?? a.intl.string(a.t.Ylu2JM),
+        body: f ?? a.intl.string(a.t.vgylLQ),
+        graphic: x
     })
 }

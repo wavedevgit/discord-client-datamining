@@ -1,33 +1,31 @@
 /** chunk id: 659612, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => d
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(503698),
-    a = n.n(i),
+var l = n(503698),
+    r = n.n(l),
     o = n(827734),
-    s = n(565645),
-    l = n(206547),
-    c = n(35275),
-    u = n(299434);
+    a = n(565645),
+    s = n(206547),
+    u = n(35275),
+    c = n(299434);
 
 function d(e) {
-    var t;
     let {
-        guildId: n,
-        emojiId: i,
-        emojiName: d,
-        className: f
-    } = e, p = (0, l.A)(n, i);
-    return null != p || null != d ? (0, r.jsx)(s.A, {
-        emojiId: null == p ? void 0 : p.id,
-        emojiName: null != d ? d : null == p ? void 0 : p.name,
-        animated: null != (t = null == p ? void 0 : p.animated) && t,
-        className: a()(u.m, f)
-    }) : (0, r.jsx)(c.A, {
-        className: a()(u.m, f),
+        guildId: t,
+        emojiId: n,
+        emojiName: l,
+        className: d
+    } = e, m = (0, s.A)(t, n);
+    return null != m || null != l ? (0, i.jsx)(a.A, {
+        emojiId: m?.id,
+        emojiName: l ?? m?.name,
+        animated: m?.animated ?? !1,
+        className: r()(c.m, d)
+    }) : (0, i.jsx)(u.A, {
+        className: r()(c.m, d),
         color: o.A.colors.CREATOR_REVENUE_LOCKED_CHANNEL_ICON.css
     })
 }

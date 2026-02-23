@@ -1,31 +1,31 @@
-/** chunk id: 762370, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => b
+/** chunk id: 762370, original params: t,e,n (module,exports,require) **/
+n.d(e, {
+    A: () => A
 });
-var r = n(735438),
-    i = n.n(r),
-    l = n(311907),
-    o = n(734057),
-    a = n(696451),
-    c = n(317525),
-    u = n(576705),
-    s = n(488926),
-    d = n(652215);
+var i = n(735438),
+    l = n.n(i),
+    r = n(311907),
+    a = n(734057),
+    s = n(696451),
+    o = n(317525),
+    d = n(576705),
+    u = n(488926),
+    c = n(652215);
 
-function b(e, t) {
-    return (0, l.bG)([u.A, o.A, a.Ay, c.A], () => {
-        var n;
-        let r = o.A.getChannel(t);
-        if (null == r) return !1;
-        let l = u.A.can(d.xBc.SEND_MESSAGES, r),
-            b = a.Ay.getMember(r.guild_id, e),
-            f = i().keyBy(c.A.getManyRoles(r.guild_id, null != (n = null == b ? void 0 : b.roles) ? n : []), "id"),
-            p = s.$3({
-                permission: d.xBc.STREAM,
-                user: e,
-                context: r,
-                roles: f
+function A(t, e) {
+    return (0, r.bG)([d.A, a.A, s.Ay, o.A], () => {
+        if (null == e) return !1;
+        let n = a.A.getChannel(e);
+        if (null == n) return !1;
+        let i = d.A.can(c.xBc.SEND_MESSAGES, n),
+            r = s.Ay.getMember(n.guild_id, t),
+            A = l().keyBy(o.A.getManyRoles(n.guild_id, r?.roles ?? []), "id"),
+            p = u.$3({
+                permission: c.xBc.STREAM,
+                user: t,
+                context: n,
+                roles: A
             });
-        return l && p
+        return i && p
     })
 }

@@ -1,7 +1,7 @@
 /** chunk id: 146088, original params: t,e,s (module,exports,require) **/
 s.r(e), s.d(e, {
-    default: () => C
-}), s(747238);
+    default: () => N
+});
 var n = s(627968),
     i = s(64700),
     r = s(492462),
@@ -17,31 +17,32 @@ var n = s(627968),
     x = s(985018),
     j = s(922730),
     g = s(473169);
-
-function A(t, e, s) {
-    return e in t ? Object.defineProperty(t, e, {
-        value: s,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : t[e] = s, t
-}
 a.Ay.initialize();
-let m = "done",
-    y = "failed";
+let A = "done",
+    B = "failed";
 
-function B() {
+function C() {
     try {
         window.close()
     } catch (t) {}
 }
-class C extends i.PureComponent {
+class N extends i.PureComponent {
+    constructor(t) {
+        super(t);
+        const {
+            search: e
+        } = t.location, s = null != e && "" !== e ? (0, r.parse)(e) : {};
+        this.state = {
+            key: s.key ?? "",
+            stage: "true" === s.done ? A : "handoff"
+        }
+    }
     componentDidMount() {
         let {
             stage: t,
             key: e
         } = this.state;
-        t === m ? B() : u.default.isAuthenticated() ? l.Bo.post({
+        t === A ? C() : u.default.isAuthenticated() ? l.Bo.post({
             url: p.Rsh.HANDOFF,
             body: {
                 key: e
@@ -56,6 +57,19 @@ class C extends i.PureComponent {
             fingerprint: u.default.getFingerprint()
         }).then(this.done, this.failed)
     }
+    done = () => {
+        C(), this.setState({
+            stage: A
+        })
+    };
+    failed = () => {
+        this.setState({
+            stage: B
+        }), C()
+    };
+    handleOpenApp = () => {
+        (0, f.pX)(p.BVt.ME)
+    };
     renderDone() {
         return (0, n.jsxs)(o.Ay, {
             children: [(0, n.jsx)(o._V, {
@@ -107,10 +121,10 @@ class C extends i.PureComponent {
             stage: e
         } = this.state;
         switch (e) {
-            case m:
+            case A:
                 t = this.renderDone();
                 break;
-            case y:
+            case B:
                 t = this.renderFailed();
                 break;
             default:
@@ -122,26 +136,5 @@ class C extends i.PureComponent {
             className: j.i,
             children: t
         })
-    }
-    constructor(t) {
-        var e;
-        super(t), A(this, "done", () => {
-            B(), this.setState({
-                stage: m
-            })
-        }), A(this, "failed", () => {
-            this.setState({
-                stage: y
-            }), B()
-        }), A(this, "handleOpenApp", () => {
-            (0, f.pX)(p.BVt.ME)
-        });
-        const {
-            search: s
-        } = t.location, n = null != s && "" !== s ? (0, r.parse)(s) : {};
-        this.state = {
-            key: null != (e = n.key) ? e : "",
-            stage: "true" === n.done ? m : "handoff"
-        }
     }
 }

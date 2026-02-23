@@ -1,59 +1,57 @@
-/** chunk id: 194509, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    A: () => h,
-    U: () => _
+/** chunk id: 194509, original params: e,t,r (module,exports,require) **/
+r.d(t, {
+    A: () => x,
+    U: () => p
 });
-var r = n(627968);
-n(64700);
-var i = n(503698),
-    a = n.n(i),
-    o = n(582754),
-    s = n(421380),
-    l = n(397927),
-    c = n(736653),
-    u = n(783420),
-    d = n(788868),
-    f = n(985018),
-    p = n(194597);
-let _ = e => e === d.pe.TIER_0 ? f.intl.string(f.t.rk4Uu8) : f.intl.string(f.t.Ve9Ge6),
-    h = e => {
+var n = r(627968);
+r(64700);
+var a = r(503698),
+    s = r.n(a),
+    l = r(582754),
+    i = r(421380),
+    d = r(397927),
+    o = r(736653),
+    u = r(783420),
+    c = r(788868),
+    m = r(985018),
+    h = r(194597);
+let p = e => e === c.pe.TIER_0 ? m.intl.string(m.t.rk4Uu8) : m.intl.string(m.t.Ve9Ge6),
+    x = e => {
         let {
             className: t,
-            textOptions: n,
-            color: i,
-            look: d,
-            hideIcon: f,
-            subscriptionTier: h,
-            premiumModalAnalyticsLocation: m,
-            giftMessage: g,
-            onClick: E
-        } = e, y = (0, c.Ay)(), b = _(h);
-        return (0, r.jsx)(u.A, {
+            textOptions: r,
+            color: a,
+            look: c,
+            hideIcon: m,
+            subscriptionTier: x,
+            premiumModalAnalyticsLocation: g,
+            giftMessage: _,
+            onClick: f
+        } = e, b = (0, o.Ay)(), v = p(x);
+        return (0, n.jsx)(u.A, {
             isGift: !0,
-            subscriptionTier: h,
-            premiumModalAnalyticsLocation: m,
-            giftMessage: g,
-            onClick: E,
+            subscriptionTier: x,
+            premiumModalAnalyticsLocation: g,
+            giftMessage: _,
+            onClick: f,
             children: e => {
-                var c;
                 let {
-                    onClick: u
+                    onClick: o
                 } = e;
-                return (0, r.jsxs)(s.$n, {
+                return (0, n.jsxs)(i.$n, {
                     "data-migration-pending": !0,
-                    innerClassName: p.Nq,
-                    color: null != i ? i : (0, o.Mw)(y) ? s.XD.WHITE : s.XD.BRAND,
-                    look: null != d ? d : s.pR.OUTLINED,
-                    className: a()(t, p.xP),
-                    onClick: u,
-                    children: [!f && (0, r.jsx)(l.okO, {
+                    innerClassName: h.Nq,
+                    color: a ?? ((0, l.Mw)(b) ? i.XD.WHITE : i.XD.BRAND),
+                    look: c ?? i.pR.OUTLINED,
+                    className: s()(t, h.xP),
+                    onClick: o,
+                    children: [!m && (0, n.jsx)(d.okO, {
                         size: "md",
                         color: "currentColor",
-                        className: p.ez
-                    }), (0, r.jsx)("span", {
-                        className: a()(p._d, null == n ? void 0 : n.textClassName),
-                        children: null != (c = null == n ? void 0 : n.textOverride) ? c : b
+                        className: h.ez
+                    }), (0, n.jsx)("span", {
+                        className: s()(h._d, r?.textClassName),
+                        children: r?.textOverride ?? v
                     })]
                 })
             }

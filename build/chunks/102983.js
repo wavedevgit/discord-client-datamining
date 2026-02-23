@@ -1,90 +1,83 @@
 /** chunk id: 102983, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    h: () => d
+    h: () => c
 });
 var l = n(627968),
-    r = n(64700),
-    i = n(397927),
+    i = n(64700),
+    r = n(397927),
     s = n(571694),
     a = n(954376),
-    o = n(576692),
-    u = n(652215),
-    c = n(75379);
-let d = r.memo(function(e) {
+    u = n(576692),
+    o = n(652215),
+    d = n(75379);
+let c = i.memo(function(e) {
     let {
         channel: t,
         user: n,
-        mentionCount: d = 0,
+        mentionCount: c = 0,
         isMentionLowImportance: h,
-        size: g = i._3J.SIZE_32,
-        status: f,
-        isMobile: p,
-        isTyping: I = !1,
-        "aria-hidden": m = !1
-    } = e, E = (0, i.FT9)(g), A = r.useMemo(() => {
-        if ((null == t ? void 0 : t.isDM()) && null != n) return (0, l.jsx)(i.euF, {
-            src: n.getAvatarURL(null == t ? void 0 : t.getGuildId(), (0, i.FT9)(g), !1),
-            size: g,
-            "aria-hidden": m,
-            "aria-label": m ? void 0 : n.username,
-            status: f,
-            isMobile: !(d > 0) && p,
-            isTyping: I
-        });
-        if (null == t ? void 0 : t.isMultiUserDM()) {
-            var e;
-            return (null == t ? void 0 : t.recipients.length) >= 2 && null == t.icon ? (0, l.jsx)(a.A, {
-                "aria-hidden": m,
-                recipients: t.recipients,
-                size: function(e) {
-                    switch (e) {
-                        case i._3J.SIZE_16:
-                        case i._3J.SIZE_20:
-                        case i._3J.SIZE_24:
-                        case i._3J.SIZE_32:
-                            return e;
-                        case i._3J.SIZE_40:
-                        case i._3J.SIZE_48:
-                            return i._3J.SIZE_40;
-                        case i._3J.SIZE_56:
-                        case i._3J.SIZE_80:
-                        case i._3J.SIZE_96:
-                        case i._3J.SIZE_120:
-                            return e;
-                        default:
-                            return i._3J.SIZE_32
-                    }
-                }(g),
-                isTyping: I,
-                status: I ? u.clD.ONLINE : null
-            }) : (0, l.jsx)(i.euF, {
-                src: null != (e = (0, s.Y)(t)) ? e : void 0,
-                "aria-hidden": m,
-                size: g,
-                status: I ? u.clD.ONLINE : null,
-                isTyping: I
-            })
-        }
-        return (0, l.jsx)(i.euF, {
-            src: void 0,
-            "aria-hidden": m,
-            size: g
-        })
-    }, [m, t, p, I, d, g, f, n]);
-    return d <= 0 ? A : (0, l.jsx)(o.i, {
-        size: E,
-        rounded: null == t || !t.isMultiUserDM(),
-        lowerBadge: (0, l.jsx)(i.hVq, {
-            count: d,
-            color: h ? i.LU0.colors.BACKGROUND_ACCENT.css : i.LU0.colors.STATUS_DANGER.css,
+        size: g = r._3J.SIZE_32,
+        status: I,
+        isMobile: A,
+        isTyping: f = !1,
+        "aria-hidden": E = !1
+    } = e, m = (0, r.FT9)(g), S = i.useMemo(() => t?.isDM() && null != n ? (0, l.jsx)(r.euF, {
+        src: n.getAvatarURL(t?.getGuildId(), (0, r.FT9)(g), !1),
+        size: g,
+        "aria-hidden": E,
+        "aria-label": E ? void 0 : n.username,
+        status: I,
+        isMobile: !(c > 0) && A,
+        isTyping: f
+    }) : t?.isMultiUserDM() ? t?.recipients.length >= 2 && null == t.icon ? (0, l.jsx)(a.A, {
+        "aria-hidden": E,
+        recipients: t.recipients,
+        size: function(e) {
+            switch (e) {
+                case r._3J.SIZE_16:
+                case r._3J.SIZE_20:
+                case r._3J.SIZE_24:
+                case r._3J.SIZE_32:
+                    return e;
+                case r._3J.SIZE_40:
+                case r._3J.SIZE_48:
+                    return r._3J.SIZE_40;
+                case r._3J.SIZE_56:
+                case r._3J.SIZE_80:
+                case r._3J.SIZE_96:
+                case r._3J.SIZE_120:
+                    return e;
+                default:
+                    return r._3J.SIZE_32
+            }
+        }(g),
+        isTyping: f,
+        status: f ? o.clD.ONLINE : null
+    }) : (0, l.jsx)(r.euF, {
+        src: (0, s.Y)(t) ?? void 0,
+        "aria-hidden": E,
+        size: g,
+        status: f ? o.clD.ONLINE : null,
+        isTyping: f
+    }) : (0, l.jsx)(r.euF, {
+        src: void 0,
+        "aria-hidden": E,
+        size: g
+    }), [E, t, A, f, c, g, I, n]);
+    return c <= 0 ? S : (0, l.jsx)(u.i, {
+        size: m,
+        rounded: !t?.isMultiUserDM(),
+        lowerBadge: (0, l.jsx)(r.hVq, {
+            count: c,
+            color: h ? r.LU0.colors.BACKGROUND_ACCENT.css : r.LU0.colors.STATUS_DANGER.css,
             "aria-hidden": !0
         }),
         lowerBadgeSize: {
-            width: (0, i.o6S)(d)
+            width: (0, r.o6S)(c)
         },
         children: (0, l.jsx)("div", {
-            className: c.R,
-            children: A
+            className: d.R,
+            children: S
         })
     })
 })

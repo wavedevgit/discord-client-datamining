@@ -1,9 +1,9 @@
 /** chunk id: 702631, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    U: () => r
+    U: () => i
 });
 
-function r(e) {
+function i(e) {
     let {
         partySize: t,
         maxPartySize: n

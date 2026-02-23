@@ -2,14 +2,14 @@
 n.d(t, {
     A: () => g
 });
-var r = n(627968),
-    i = n(64700),
-    l = n(397927),
-    a = n(975807),
-    o = n(486503),
-    c = n(253932),
-    s = n(957565),
-    d = n(723702),
+var i = n(627968),
+    l = n(64700),
+    a = n(397927),
+    r = n(975807),
+    s = n(486503),
+    o = n(253932),
+    d = n(957565),
+    c = n(723702),
     u = n(985018);
 
 function g(e) {
@@ -17,64 +17,64 @@ function g(e) {
         messageId: t,
         itemId: n,
         type: g,
-        imageSrc: p
-    } = e, f = c.Q_.useSetting(), {
-        tidaWebformEnabled: y
-    } = o.A.useExperiment({
+        imageSrc: A
+    } = e, m = o.Q_.useSetting(), {
+        tidaWebformEnabled: p
+    } = s.A.useExperiment({
         location: "useMessageDetailsItem"
     }, {
         autoTrackExposure: !1
-    }), b = i.useCallback(() => {
-        (0, s.C)(t)
-    }, [t]), A = i.useCallback(() => {
-        null != n && (0, s.C)(n)
-    }, [n]), m = i.useCallback(() => {
-        null != p && (0, s.C)(p)
-    }, [p]), O = i.useCallback(() => {
-        null != p && (0, a.A)(p)
-    }, [p]), v = "sticker" === g;
-    if (!f || !s.p5 || !y || "emoji" !== g && !v || null == n) return null;
-    let j = v ? u.intl.string(u.t.SJ3249) : u.intl.string(u.t.Ap2oVy);
-    return (0, r.jsxs)(l.Drp, {
+    }), f = l.useCallback(() => {
+        (0, d.C)(t)
+    }, [t]), h = l.useCallback(() => {
+        null != n && (0, d.C)(n)
+    }, [n]), y = l.useCallback(() => {
+        null != A && (0, d.C)(A)
+    }, [A]), E = l.useCallback(() => {
+        null != A && (0, r.A)(A)
+    }, [A]), S = "sticker" === g;
+    if (!m || !d.p5 || !p || "emoji" !== g && !S || null == n) return null;
+    let _ = S ? u.intl.string(u.t.SJ3249) : u.intl.string(u.t.Ap2oVy);
+    return (0, i.jsxs)(a.Drp, {
         id: "message-details",
         label: u.intl.string(u.t.IqqJNI),
-        children: [(0, r.jsx)(l.Drp, {
+        children: [(0, i.jsx)(a.Drp, {
             id: "copy-message-id",
             label: u.intl.string(u.t.zBoHlf),
-            action: b,
+            action: f,
             leadingAccessory: {
                 type: "icon",
-                icon: l.L9S
+                icon: a.L9S
             },
-            icon: l.L9S
-        }), (0, r.jsx)(l.Drp, {
+            icon: a.L9S
+        }), (0, i.jsx)(a.Drp, {
             id: "copy-item-id",
-            label: j,
-            action: A,
+            label: _,
+            action: h,
             leadingAccessory: {
                 type: "icon",
-                icon: l.L9S
+                icon: a.L9S
             },
-            icon: l.L9S
-        }), null != p && (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsx)(l.Drp, {
+            icon: a.L9S
+        }), null != A && (0, i.jsxs)(i.Fragment, {
+            children: [(0, i.jsx)(a.Drp, {
                 id: "copy-image-link",
                 label: u.intl.string(u.t["8xHmxo"]),
-                action: m,
+                action: y,
                 leadingAccessory: {
                     type: "icon",
-                    icon: l.qYV
+                    icon: a.qYV
                 },
-                icon: l.qYV
-            }), d.isPlatformEmbedded && (0, r.jsx)(l.Drp, {
+                icon: a.qYV
+            }), c.isPlatformEmbedded && (0, i.jsx)(a.Drp, {
                 id: "open-image-link",
                 label: u.intl.string(u.t.w8ldGK),
-                action: O,
+                action: E,
                 leadingAccessory: {
                     type: "icon",
-                    icon: l.qYV
+                    icon: a.qYV
                 },
-                icon: l.qYV
+                icon: a.qYV
             })]
         })]
     })

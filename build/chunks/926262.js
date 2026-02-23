@@ -1,139 +1,123 @@
 /** chunk id: 926262, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => m
-}), n(896048);
-var l = n(627968),
-    r = n(64700),
-    i = n(827734),
+    A: () => g
+});
+var i = n(627968),
+    l = n(64700),
+    s = n(827734),
     a = n(582754),
-    s = n(397927),
+    r = n(397927),
     o = n(58149),
     c = n(544028),
-    u = n(954571),
-    d = n(652215),
+    d = n(954571),
+    u = n(652215),
     h = n(985018),
-    p = n(887008),
-    f = n(206314);
+    m = n(887008),
+    A = n(206314);
 
-function m(e) {
+function g(e) {
     let {
         onClose: t,
-        onConfirm: m,
-        onCancel: g,
-        channel: A,
-        analyticsType: b,
-        popoutText: _,
-        animation: y
+        onConfirm: g,
+        onCancel: p,
+        channel: f,
+        analyticsType: _,
+        popoutText: E,
+        animation: x
     } = e;
-    r.useEffect(() => {
-        u.default.track(d.HAw.OPEN_POPOUT, function(e) {
-            for (var t = 1; t < arguments.length; t++) {
-                var n = null != arguments[t] ? arguments[t] : {},
-                    l = Object.keys(n);
-                "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                    return Object.getOwnPropertyDescriptor(n, e).enumerable
-                }))), l.forEach(function(t) {
-                    var l;
-                    l = n[t], t in e ? Object.defineProperty(e, t, {
-                        value: l,
-                        enumerable: !0,
-                        configurable: !0,
-                        writable: !0
-                    }) : e[t] = l
-                })
-            }
-            return e
-        }({
-            type: b
-        }, (0, o.dI)(A)))
-    }, [b, A]);
-    let v = r.useCallback(() => {
-            null == m || m(), t()
-        }, [m, t]),
-        E = r.useCallback(() => {
-            null == g || g(), t()
+    l.useEffect(() => {
+        d.default.track(u.HAw.OPEN_POPOUT, {
+            type: _,
+            ...(0, o.dI)(f)
+        })
+    }, [_, f]);
+    let C = l.useCallback(() => {
+            g?.(), t()
         }, [g, t]),
-        O = r.useRef(null);
-    return r.useEffect(() => {
+        S = l.useCallback(() => {
+            p?.(), t()
+        }, [p, t]),
+        I = l.useRef(null);
+    return l.useEffect(() => {
         let e, t = c.A.theme,
-            l = !1;
-        return null != y && (async () => {
+            i = !1;
+        return null != x && (async () => {
             let [{
-                default: r
-            }, i] = await Promise.all([Promise.resolve().then(n.t.bind(n, 883885, 23)), (0, a.Mw)(t) ? y.dark() : y.light()]);
-            l || null == O.current || (e = r.loadAnimation({
-                container: O.current,
+                default: l
+            }, s] = await Promise.all([Promise.resolve().then(n.t.bind(n, 883885, 23)), (0, a.Mw)(t) ? x.dark() : x.light()]);
+            i || null == I.current || (e = l.loadAnimation({
+                container: I.current,
                 renderer: "svg",
                 loop: !0,
                 autoplay: !0,
-                animationData: i
+                animationData: s
             }))
         })(), () => {
-            l = !0, null != e && (e.destroy(), e = void 0)
+            i = !0, null != e && (e.destroy(), e = void 0)
         }
-    }, [y]), (0, l.jsx)(s.lGe, {
+    }, [x]), (0, i.jsx)(r.lGe, {
         "aria-labelledby": "content-warning-popout-label",
-        children: (0, l.jsxs)("form", {
-            className: p.$,
-            onSubmit: v,
-            children: [(0, l.jsxs)("div", {
-                className: p.rf,
-                children: [null != y && (0, l.jsx)("div", {
-                    className: p.lY,
-                    ref: O
-                }), (0, l.jsxs)("div", {
-                    className: p.Qs,
-                    children: [(0, l.jsx)("div", {
-                        className: p.wx,
+        children: (0, i.jsxs)("form", {
+            className: m.$,
+            onSubmit: C,
+            children: [(0, i.jsxs)("div", {
+                className: m.rf,
+                children: [null != x && (0, i.jsx)("div", {
+                    className: m.lY,
+                    ref: I
+                }), (0, i.jsxs)("div", {
+                    className: m.Qs,
+                    children: [(0, i.jsx)("div", {
+                        className: m.wx,
                         children: h.intl.string(h.t.mY3Y38)
-                    }), (0, l.jsx)(s.Text, {
+                    }), (0, i.jsx)(r.Text, {
                         id: "content-warning-popout-label",
-                        className: f.PT,
+                        className: A.PT,
                         variant: "text-sm/normal",
-                        children: _.body
-                    }), (0, l.jsxs)("div", {
-                        className: p._o,
-                        children: [(0, l.jsxs)("div", {
-                            className: p.UD,
-                            children: [(0, l.jsx)("div", {
-                                className: p.x6,
-                                children: (0, l.jsx)(s.Button, {
+                        children: E.body
+                    }), (0, i.jsxs)("div", {
+                        className: m._o,
+                        children: [(0, i.jsxs)("div", {
+                            className: m.UD,
+                            children: [(0, i.jsx)("div", {
+                                className: m.x6,
+                                children: (0, i.jsx)(r.Button, {
                                     variant: "secondary",
-                                    onClick: E,
+                                    onClick: S,
                                     text: h.intl.string(h.t.fsBWmS)
                                 })
-                            }), (0, l.jsx)(s.Text, {
+                            }), (0, i.jsx)(r.Text, {
                                 variant: "text-xs/normal",
-                                className: p.uK,
+                                className: m.uK,
                                 children: h.intl.format(h.t["0LzVPZ"], {})
                             })]
-                        }), (0, l.jsxs)("div", {
-                            className: p.UD,
-                            children: [(0, l.jsx)("div", {
-                                className: p.x6,
-                                children: (0, l.jsx)(s.Button, {
+                        }), (0, i.jsxs)("div", {
+                            className: m.UD,
+                            children: [(0, i.jsx)("div", {
+                                className: m.x6,
+                                children: (0, i.jsx)(r.Button, {
                                     variant: "primary",
-                                    onClick: v,
+                                    onClick: C,
                                     text: h.intl.string(h.t.KJnHq3),
                                     autoFocus: !0
                                 })
-                            }), (0, l.jsx)(s.Text, {
+                            }), (0, i.jsx)(r.Text, {
                                 variant: "text-xs/normal",
-                                className: p.uK,
+                                className: m.uK,
                                 children: h.intl.format(h.t.khjqdH, {})
                             })]
                         })]
                     })]
                 })]
-            }), null != _.footer && "" !== _.footer ? (0, l.jsxs)("div", {
-                className: p.qr,
-                children: [(0, l.jsx)(s.mir, {
+            }), null != E.footer && "" !== E.footer ? (0, i.jsxs)("div", {
+                className: m.qr,
+                children: [(0, i.jsx)(r.mir, {
                     size: "xs",
-                    color: i.A.unsafe_rawColors.PRIMARY_400.css,
-                    className: p.Kk
-                }), (0, l.jsx)(s.Text, {
+                    color: s.A.unsafe_rawColors.PRIMARY_400.css,
+                    className: m.Kk
+                }), (0, i.jsx)(r.Text, {
                     variant: "text-sm/normal",
-                    children: _.footer
+                    children: E.footer
                 })]
             }) : null]
         })

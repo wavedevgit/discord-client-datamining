@@ -1,15 +1,12 @@
-/** chunk id: 382913, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    B: () => i
+/** chunk id: 382913, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    B: () => n
 });
 
-function i(e) {
-    return e.map((e, t) => {
-        var n, i;
-        return {
-            file: e.file,
-            name: null != (n = e.id) ? n : "attachment_".concat(t),
-            filename: null == (i = e.file) ? void 0 : i.name
-        }
-    })
+function n(e) {
+    return e.map((e, t) => ({
+        file: e.file,
+        name: e.id ?? `attachment_${t}`,
+        filename: e.file?.name
+    }))
 }

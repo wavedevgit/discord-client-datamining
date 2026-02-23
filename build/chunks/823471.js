@@ -1,184 +1,155 @@
 /** chunk id: 823471, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => w
-}), n(896048);
-var r = n(627968),
-    l = n(64700),
-    i = n(397927),
-    s = n(182061),
+    A: () => R
+});
+var i = n(627968),
+    s = n(64700),
+    l = n(397927),
+    r = n(182061),
     a = n(886393),
     o = n(307623),
     c = n(660273),
-    u = n(707792),
-    d = n(41402),
-    p = n(271456),
-    h = n(200273),
-    g = n(565846),
-    f = n(57907),
+    d = n(707792),
+    u = n(41402),
+    h = n(271456),
+    A = n(200273),
+    p = n(565846),
+    g = n(57907),
     m = n(375500),
-    b = n(707653),
-    A = n(50268),
-    y = n(584682),
-    O = n(58736),
-    j = n(378570),
-    x = n(203982),
-    _ = n(170428),
-    v = n(933057),
-    E = n(747926),
-    C = n(652215),
-    S = n(985018);
+    _ = n(707653),
+    f = n(50268),
+    x = n(584682),
+    C = n(58736),
+    E = n(378570),
+    I = n(203982),
+    b = n(170428),
+    N = n(933057),
+    S = n(747926),
+    T = n(652215),
+    y = n(985018);
 
-function I(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = r
-        })
-    }
-    return e
-}
-
-function N(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
-        }
-        return n
-    })(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-
-function T(e) {
+function v(e) {
     let {
         channel: t
-    } = e, [n, s] = l.useState(!1), a = l.useRef(null);
+    } = e, [n, r] = s.useState(!1), a = s.useRef(null);
 
     function o() {
-        s(e => !e)
+        r(e => !e)
     }
-    let c = S.intl.string(S.t["UKOtz+"]);
-    return (0, r.jsx)(i.YNO, {
+    let c = y.intl.string(y.t["UKOtz+"]);
+    return (0, i.jsx)(l.YNO, {
         targetElementRef: a,
         shouldShow: n,
-        animation: i.YNO.Animation.NONE,
+        animation: l.YNO.Animation.NONE,
         position: "bottom",
         align: "right",
         autoInvert: !1,
-        onRequestClose: () => s(!1),
+        onRequestClose: () => r(!1),
         renderPopout: function(e) {
-            return (0, r.jsx)(P, N(I({}, e), {
+            return (0, i.jsx)(j, {
+                ...e,
                 channel: t
-            }))
+            })
         },
         children: (e, t) => {
             let {
                 isShown: n
             } = t;
-            return (0, r.jsx)(O.Ay.Icon, N(I({}, e), {
+            return (0, i.jsx)(C.Ay.Icon, {
+                ...e,
                 ref: a,
                 onClick: o,
                 tooltip: n ? null : c,
-                icon: i.jNK,
+                icon: l.jNK,
                 "aria-label": c,
                 selected: n
-            }))
+            })
         }
     })
 }
 
-function P(e) {
+function j(e) {
     let {
         channel: t,
         closePopout: n,
-        onSelect: l
-    } = e, y = (0, c.A)(t, "Sidebar Overflow"), O = (0, d.A)(t), _ = (0, f.A)(t), v = (0, m.A)(t), E = (0, s.A)(t), I = (0, u.A)(t), N = (0, g.A)(t.id), T = (0, h.A)(t), P = (0, o.A)(t), w = (0, a.A)(t), R = (0, A.A)({
+        onSelect: s
+    } = e, x = (0, c.A)(t, "Sidebar Overflow"), C = (0, u.A)(t), b = (0, g.A)(t), N = (0, m.A)(t), S = (0, r.A)(t), v = (0, d.A)(t), j = (0, p.A)(t.id), R = (0, A.A)(t), O = (0, o.A)(t), L = (0, a.A)(t), M = (0, f.A)({
         id: t.id,
-        label: S.intl.string(S.t.DQ797g)
-    }), D = (0, b.A)(t), L = (0, p.A)(t);
+        label: y.intl.string(y.t.DQ797g)
+    }), D = (0, _.A)(t), G = (0, h.A)(t);
 
-    function M() {
-        (0, j.iN)(t.id)
+    function U() {
+        (0, E.iN)(t.id)
     }
-    return (0, r.jsxs)(i.W1t, {
+    return (0, i.jsxs)(l.W1t, {
         "data-menu-migrated": !0,
         navId: "thread-context",
         onClose: n,
-        "aria-label": S.intl.string(S.t["1NBjqb"]),
-        onSelect: l,
-        children: [(0, r.jsxs)(i.rXV, {
-            children: [y, (0, r.jsx)(i.Drp, {
+        "aria-label": y.intl.string(y.t["1NBjqb"]),
+        onSelect: s,
+        children: [(0, i.jsxs)(l.rXV, {
+            children: [x, (0, i.jsx)(l.Drp, {
                 id: "open",
-                label: S.intl.string(S.t.IxVmZi),
-                action: M
+                label: y.intl.string(y.t.IxVmZi),
+                action: U
             })]
-        }), (0, r.jsxs)(i.rXV, {
-            children: [_, v]
-        }), (0, r.jsxs)(i.rXV, {
-            children: [T, O, N, L]
-        }), (0, r.jsxs)(i.rXV, {
-            children: [(0, r.jsx)(i.Drp, {
+        }), (0, i.jsxs)(l.rXV, {
+            children: [b, N]
+        }), (0, i.jsxs)(l.rXV, {
+            children: [R, C, j, G]
+        }), (0, i.jsxs)(l.rXV, {
+            children: [(0, i.jsx)(l.Drp, {
                 id: "search",
-                label: S.intl.string(S.t["5h0QOP"]),
-                icon: i.tfB,
+                label: y.intl.string(y.t["5h0QOP"]),
+                icon: l.tfB,
                 trailingIndicator: {
                     type: "icon",
-                    icon: i.tfB
+                    icon: l.tfB
                 },
                 action: function() {
-                    M(), setTimeout(() => {
-                        x._.dispatch(C.jej.FOCUS_SEARCH, {
+                    U(), setTimeout(() => {
+                        I._.dispatch(T.jej.FOCUS_SEARCH, {
                             prefillCurrentChannel: !1
                         })
                     }, 2e3)
                 }
-            }), (0, r.jsx)(i.Drp, {
+            }), (0, i.jsx)(l.Drp, {
                 id: "pins",
-                label: S.intl.string(S.t["2BSH7n"]),
-                icon: i.tfB,
+                label: y.intl.string(y.t["2BSH7n"]),
+                icon: l.tfB,
                 trailingIndicator: {
                     type: "icon",
-                    icon: i.tfB
+                    icon: l.tfB
                 },
                 action: function() {
-                    M(), x._.dispatch(C.jej.TOGGLE_CHANNEL_PINS)
+                    U(), I._.dispatch(T.jej.TOGGLE_CHANNEL_PINS)
                 }
             })]
-        }), (0, r.jsxs)(i.rXV, {
-            children: [D, E, I, P]
-        }), (0, r.jsxs)(i.rXV, {
-            children: [w, R]
+        }), (0, i.jsxs)(l.rXV, {
+            children: [D, S, v, O]
+        }), (0, i.jsxs)(l.rXV, {
+            children: [L, M]
         })]
     })
 }
 
-function w(e) {
+function R(e) {
     let {
         channel: t,
         baseChannelId: n
     } = e;
-    return (0, r.jsxs)(r.Fragment, {
-        children: [t.isForumPost() ? null : (0, r.jsx)(v.A, {
+    return (0, i.jsxs)(i.Fragment, {
+        children: [t.isForumPost() ? null : (0, i.jsx)(N.A, {
             channel: t
-        }), t.isModeratorReportChannel() ? (0, r.jsx)(_.A, {
+        }), t.isModeratorReportChannel() ? (0, i.jsx)(b.A, {
             channel: t
-        }) : null, (0, r.jsx)(T, {
+        }) : null, (0, i.jsx)(v, {
             channel: t
-        }), (0, r.jsx)(O.Ay.Icon, {
-            icon: i.PGe,
-            tooltip: S.intl.string(S.t.cpT0Cq),
-            onClick: () => (0, E.xu)((0, y.j)(t), null != n ? n : t.parent_id)
+        }), (0, i.jsx)(C.Ay.Icon, {
+            icon: l.PGe,
+            tooltip: y.intl.string(y.t.cpT0Cq),
+            onClick: () => (0, S.xu)((0, x.j)(t), n ?? t.parent_id)
         })]
     })
 }

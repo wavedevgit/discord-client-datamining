@@ -1,328 +1,291 @@
-/** chunk id: 572855, original params: e,t,n (module,exports,require) **/
-n.d(t, {
+/** chunk id: 572855, original params: e,t,a (module,exports,require) **/
+a.d(t, {
     A: () => G
-}), n(896048), n(65821);
-var r = n(627968),
-    i = n(64700),
-    l = n(503698),
-    o = n.n(l),
-    a = n(311907),
-    s = n(990078),
-    c = n(397927),
-    u = n(775602),
-    d = n(50268),
-    p = n(843626),
-    f = n(294454),
-    m = n(803316),
-    O = n(465856),
-    b = n(253932),
-    y = n(957565),
-    g = n(255438),
-    E = n(307600),
-    _ = n(723702),
-    h = n(837921),
-    S = n(700331),
-    A = n(454290),
-    j = n(358731),
-    v = n(256905),
-    T = n(985018),
-    w = n(256863);
+});
+var n = a(627968),
+    i = a(64700),
+    l = a(503698),
+    s = a.n(l),
+    r = a(311907),
+    o = a(990078),
+    c = a(397927),
+    d = a(775602),
+    u = a(50268),
+    m = a(843626),
+    _ = a(294454),
+    p = a(803316),
+    A = a(465856),
+    h = a(253932),
+    g = a(957565),
+    E = a(255438),
+    T = a(307600),
+    S = a(723702),
+    f = a(837921),
+    y = a(700331),
+    C = a(454290),
+    I = a(358731),
+    x = a(256905),
+    M = a(985018),
+    O = a(256863);
 
-function P(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = r
-        })
-    }
-    return e
+function N() {
+    (0, c.OoC)(x.K)
 }
 
-function C() {
-    (0, c.OoC)(v.K)
-}
-
-function D(e) {
+function b(e) {
     let {
-        tooltipText: t
-    } = e, n = function(e, t) {
-        if (null == e) return {};
-        var n, r, i, l = {};
-        if ("u" > typeof Reflect && Reflect.ownKeys) {
-            for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
-            return l
-        }
-        if (l = function(e, t) {
-                if (null == e) return {};
-                var n, r, i = {},
-                    l = Object.getOwnPropertyNames(e);
-                for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
-                return i
-            }(e, t), Object.getOwnPropertySymbols)
-            for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
-        return l
-    }(e, ["tooltipText"]);
-    return (0, r.jsx)(s.m, {
+        tooltipText: t,
+        ...a
+    } = e;
+    return (0, n.jsx)(o.m, {
         text: t,
         position: "bottom",
         asContainer: !0,
-        children: (0, r.jsx)(c.K0, P({
+        children: (0, n.jsx)(c.K0, {
             variant: "icon-only",
             "aria-label": t,
-            size: "sm"
-        }, n))
+            size: "sm",
+            ...a
+        })
     })
 }
 
-function I() {
+function R() {
     let {
         zoomed: e,
         setZoomed: t
-    } = (0, A.Q)();
-    return (0, r.jsx)(D, {
+    } = (0, C.Q)();
+    return (0, n.jsx)(b, {
         onClick: () => {
-            S.l.markActionPerformed(e ? S.N.ZOOM_OUT_BUTTON_PRESSED : S.N.ZOOM_IN_BUTTON_PRESSED), t(!e)
+            y.l.markActionPerformed(e ? y.N.ZOOM_OUT_BUTTON_PRESSED : y.N.ZOOM_IN_BUTTON_PRESSED), t(!e)
         },
-        tooltipText: e ? T.intl.string(T.t.vOFof8) : T.intl.string(T.t.Kt4gZ6),
+        tooltipText: e ? M.intl.string(M.t.vOFof8) : M.intl.string(M.t.Kt4gZ6),
         icon: e ? c.V0_ : c.r1u
     })
 }
 
-function R(e) {
-    var t, n;
+function v(e) {
     let {
-        item: l
-    } = e, o = null == (t = l.sourceMetadata) ? void 0 : t.message, a = null == (n = l.sourceMetadata) ? void 0 : n.identifier, s = i.useCallback(() => {
-        if (null != o && null != a) {
-            if (S.l.markActionPerformed(S.N.FORWARD_PRESSED), "embed" === a.type) return void(0, f.fO)({
-                message: o,
+        item: t
+    } = e, a = t.sourceMetadata?.message, l = t.sourceMetadata?.identifier, s = i.useCallback(() => {
+        if (null != a && null != l) {
+            if (y.l.markActionPerformed(y.N.FORWARD_PRESSED), "embed" === l.type) return void(0, _.fO)({
+                message: a,
                 source: "media-viewer",
                 forwardOptions: {
-                    onlyEmbedIndices: [a.embedIndex]
+                    onlyEmbedIndices: [l.embedIndex]
                 },
-                onRequestSent: C
+                onRequestSent: N
             });
-            (0, f.fO)({
-                message: o,
+            (0, _.fO)({
+                message: a,
                 source: "media-viewer",
                 forwardOptions: {
-                    onlyAttachmentIds: [a.attachmentId]
+                    onlyAttachmentIds: [l.attachmentId]
                 },
-                onRequestSent: C
+                onRequestSent: N
             })
         }
-    }, [o, a]);
-    return null != o && null != a && (0, p.p)(o) ? (0, r.jsx)(D, {
+    }, [a, l]);
+    return null != a && null != l && (0, m.p)(a) ? (0, n.jsx)(b, {
         onClick: s,
-        tooltipText: T.intl.string(T.t.I3ltXO),
+        tooltipText: M.intl.string(M.t.I3ltXO),
         icon: c.tuI
     }) : null
 }
 
-function N(e) {
+function D(e) {
     let {
         item: t
-    } = e, [n, l] = i.useState(!1), o = "VIDEO" === t.type, a = "IMAGE" === t.type, s = null != t.children, u = (0, m.e7)((0, m.bc)(t.original, t.url), t.contentType, t.originalContentType);
-    if (!(o || _.isPlatformEmbedded && !s && a && u)) return null;
-    let d = (0, m.XW)((0, m.bc)(t.original, t.url), t.contentType, t.originalContentType, m.N7);
-    async function p() {
-        if (S.l.markActionPerformed(S.N.SAVE_MEDIA_PRESSED), "VIDEO" === t.type && (0, E.h)({
-                href: d
+    } = e, [a, l] = i.useState(!1), s = "VIDEO" === t.type, r = "IMAGE" === t.type, o = null != t.children, d = (0, p.e7)((0, p.bc)(t.original, t.url), t.contentType, t.originalContentType);
+    if (!(s || S.isPlatformEmbedded && !o && r && d)) return null;
+    let u = (0, p.XW)((0, p.bc)(t.original, t.url), t.contentType, t.originalContentType, p.N7);
+    async function m() {
+        if (y.l.markActionPerformed(y.N.SAVE_MEDIA_PRESSED), "VIDEO" === t.type && (0, T.h)({
+                href: u
             }), "IMAGE" === t.type) {
             l(!0);
             try {
-                let e = await h.Ay.saveImage(d, t.contentType, m.N7);
-                if (e === h._0.ERRORED) throw Error("DesktopNativeUtils.saveImage errored for ".concat(d));
-                e === h._0.SAVED && (S.l.trackMediaViewerImageSaved({
-                    url: d,
+                let e = await f.Ay.saveImage(u, t.contentType, p.N7);
+                if (e === f._0.ERRORED) throw Error(`DesktopNativeUtils.saveImage errored for ${u}`);
+                e === f._0.SAVED && (y.l.trackMediaViewerImageSaved({
+                    url: u,
                     success: !0
-                }), (0, c.showToast)((0, c.createToast)(T.intl.string(T.t.cqpdJW), c.ToastType.SUCCESS)))
+                }), (0, c.showToast)((0, c.createToast)(M.intl.string(M.t.cqpdJW), c.ToastType.SUCCESS)))
             } catch (e) {
-                S.l.trackMediaViewerImageSaved({
-                    url: d,
+                y.l.trackMediaViewerImageSaved({
+                    url: u,
                     success: !1
-                }), (0, c.showToast)((0, c.createToast)(T.intl.string(T.t["8Ve/S0"]), c.ToastType.FAILURE))
+                }), (0, c.showToast)((0, c.createToast)(M.intl.string(M.t["8Ve/S0"]), c.ToastType.FAILURE))
             } finally {
                 l(!1)
             }
         }
     }
-    return (0, r.jsx)(D, {
-        onClick: p,
-        tooltipText: T.intl.string("VIDEO" === t.type ? T.t.JVuuz3 : T.t["S/xNKV"]),
-        loading: n,
+    return (0, n.jsx)(b, {
+        onClick: m,
+        tooltipText: M.intl.string("VIDEO" === t.type ? M.t.JVuuz3 : M.t["S/xNKV"]),
+        loading: a,
         icon: c.s3U
     })
 }
 
-function x(e) {
+function j(e) {
     let {
         item: t
     } = e;
-    if (!(0, m.fW)(t.url)) return null;
-    let n = (0, m.XW)((0, m.bc)(t.original, t.url), t.contentType, t.originalContentType);
-    return (0, r.jsx)(D, {
+    if (!(0, p.fW)(t.url)) return null;
+    let a = (0, p.XW)((0, p.bc)(t.original, t.url), t.contentType, t.originalContentType);
+    return (0, n.jsx)(b, {
         onClick: () => {
-            S.l.markActionPerformed(S.N.OPEN_LINK_PRESSED), S.l.trackMediaViewerLinkOpened({
-                href: n
-            }), (0, E.h)({
-                href: n
+            y.l.markActionPerformed(y.N.OPEN_LINK_PRESSED), y.l.trackMediaViewerLinkOpened({
+                href: a
+            }), (0, T.h)({
+                href: a
             })
         },
-        tooltipText: T.intl.string(T.t.q5jLJB),
+        tooltipText: M.intl.string(M.t.q5jLJB),
         icon: c.tfB
     })
 }
 
-function M(e) {
-    var t, n;
+function L(e) {
     let {
-        item: i,
-        canCopyImage: l,
-        canCopyLink: o,
-        onClose: a,
+        item: t,
+        canCopyImage: a,
+        canCopyLink: i,
+        onClose: l,
         onSelect: s
-    } = e, u = (null == (n = i.sourceMetadata) || null == (t = n.identifier) ? void 0 : t.type) === "attachment" ? i.sourceMetadata.identifier.attachmentId : null, p = (0, d.A)({
-        id: u,
-        label: T.intl.string(T.t.nwg3lR)
-    }), f = function(e) {
-        var t;
+    } = e, r = t.sourceMetadata?.identifier?.type === "attachment" ? t.sourceMetadata.identifier.attachmentId : null, o = (0, u.A)({
+        id: r,
+        label: M.intl.string(M.t.nwg3lR)
+    }), d = function(e) {
         let {
-            alt: n,
-            sourceMetadata: i,
-            width: l,
-            height: o
-        } = e, a = L(T.intl.string(T.t.ILJuBq), "name", {
+            alt: t,
+            sourceMetadata: a,
+            width: i,
+            height: l
+        } = e, s = w(M.intl.string(M.t.ILJuBq), "name", {
             subtextLineClamp: 1
-        }), s = L(T.intl.string(T.t["3Nf9u2"]), "size"), u = L(T.intl.string(T.t.eOB2eR), "alt", {
+        }), r = w(M.intl.string(M.t["3Nf9u2"]), "size"), o = w(M.intl.string(M.t.eOB2eR), "alt", {
             subtextLineClamp: 2
         });
-        if ((null == i || null == (t = i.identifier) ? void 0 : t.type) !== "attachment") return null;
-        let d = (0, O.A)(i.identifier),
-            p = (0, g.Xq)(i.identifier.size / 1e3);
-        return (0, r.jsxs)(c.Drp, {
+        if (a?.identifier?.type !== "attachment") return null;
+        let d = (0, A.A)(a.identifier),
+            u = (0, E.Xq)(a.identifier.size / 1e3);
+        return (0, n.jsxs)(c.Drp, {
             id: "media-viewer-details",
-            label: T.intl.string(T.t.sqBLa9),
-            children: [a(d), s(T.intl.formatToPlainString(T.t.DTdonA, {
-                width: l,
-                height: o,
-                fileSize: p
-            })), u(n)]
+            label: M.intl.string(M.t.sqBLa9),
+            children: [s(d), r(M.intl.formatToPlainString(M.t.DTdonA, {
+                width: i,
+                height: l,
+                fileSize: u
+            })), o(t)]
         }, "media-viewer-details")
-    }(i);
-    async function b() {
-        S.l.markActionPerformed(S.N.COPY_IMAGE_PRESSED);
-        let e = (0, m.XW)((0, m.bc)(i.original, i.url), i.contentType, i.originalContentType, m.N7);
+    }(t);
+    async function m() {
+        y.l.markActionPerformed(y.N.COPY_IMAGE_PRESSED);
+        let e = (0, p.XW)((0, p.bc)(t.original, t.url), t.contentType, t.originalContentType, p.N7);
         try {
-            var t;
-            await h.Ay.copyImage(e, null != (t = i.originalContentType) ? t : i.contentType), S.l.trackMediaViewerImageCopied({
+            await f.Ay.copyImage(e, t.originalContentType ?? t.contentType), y.l.trackMediaViewerImageCopied({
                 url: e,
                 success: !0
-            }), (0, c.showToast)((0, c.createToast)(T.intl.string(T.t.bhUpvC), c.ToastType.SUCCESS))
+            }), (0, c.showToast)((0, c.createToast)(M.intl.string(M.t.bhUpvC), c.ToastType.SUCCESS))
         } catch (t) {
-            S.l.trackMediaViewerImageCopied({
+            y.l.trackMediaViewerImageCopied({
                 url: e,
                 success: !1
-            }), (0, c.showToast)((0, c.createToast)(T.intl.string(T.t.PTPbjx), c.ToastType.FAILURE))
+            }), (0, c.showToast)((0, c.createToast)(M.intl.string(M.t.PTPbjx), c.ToastType.FAILURE))
         }
     }
-    return (0, r.jsxs)(c.W1t, {
+    return (0, n.jsxs)(c.W1t, {
         "data-menu-migrated": !0,
         navId: "image-menu",
         "aria-label": "placeholder",
-        onClose: a,
+        onClose: l,
         onSelect: s,
-        children: [(0, r.jsxs)(c.rXV, {
-            children: [l && (0, r.jsx)(c.Drp, {
-                label: T.intl.string(T.t.tvUqWn),
+        children: [(0, n.jsxs)(c.rXV, {
+            children: [a && (0, n.jsx)(c.Drp, {
+                label: M.intl.string(M.t.tvUqWn),
                 id: "media-viewer-copy-image",
                 icon: c.TdU,
                 leadingAccessory: {
                     type: "icon",
                     icon: c.TdU
                 },
-                action: b
-            }, "media-viewer-copy-image"), o && (0, r.jsx)(c.Drp, {
+                action: m
+            }, "media-viewer-copy-image"), i && (0, n.jsx)(c.Drp, {
                 id: "media-viewer-copy-link",
-                label: T.intl.string(T.t.WqhZss),
+                label: M.intl.string(M.t.WqhZss),
                 icon: c.qYV,
                 leadingAccessory: {
                     type: "icon",
                     icon: c.qYV
                 },
                 action: function() {
-                    S.l.markActionPerformed(S.N.COPY_LINK_PRESSED);
-                    let e = (0, m.XW)((0, m.bc)(i.original, i.url), i.contentType, i.originalContentType);
-                    (0, y.C)(e, () => {
-                        S.l.trackMediaViewerLinkCopied({
+                    y.l.markActionPerformed(y.N.COPY_LINK_PRESSED);
+                    let e = (0, p.XW)((0, p.bc)(t.original, t.url), t.contentType, t.originalContentType);
+                    (0, g.C)(e, () => {
+                        y.l.trackMediaViewerLinkCopied({
                             href: e,
                             success: !0
-                        }), (0, c.showToast)((0, c.createToast)(T.intl.string(T.t["L/PwZf"]), c.ToastType.SUCCESS))
+                        }), (0, c.showToast)((0, c.createToast)(M.intl.string(M.t["L/PwZf"]), c.ToastType.SUCCESS))
                     }, () => {
-                        S.l.trackMediaViewerLinkCopied({
+                        y.l.trackMediaViewerLinkCopied({
                             href: e,
                             success: !1
-                        }), (0, c.showToast)((0, c.createToast)(T.intl.string(T.t.uVV00B), c.ToastType.FAILURE))
+                        }), (0, c.showToast)((0, c.createToast)(M.intl.string(M.t.uVV00B), c.ToastType.FAILURE))
                     })
                 }
             }, "media-viewer-copy-link")]
-        }), f, p]
+        }), d, o]
     })
 }
 
-function L(e, t, n) {
+function w(e, t, a) {
     let l = i.useCallback(e => {
-        (0, y.C)(e, () => (0, c.showToast)({
-            message: T.intl.string(T.t.mGZ66D),
+        (0, g.C)(e, () => (0, c.showToast)({
+            message: M.intl.string(M.t.mGZ66D),
             type: c.ToastType.SUCCESS,
             id: "media-viewer-detail-copied"
         }))
     }, []);
-    return i => null != i ? (0, r.jsx)(c.Drp, P({
+    return i => null != i ? (0, n.jsx)(c.Drp, {
         action: () => l(i),
         label: e,
         subtext: i,
-        id: t
-    }, n), t) : null
+        id: t,
+        ...a
+    }, t) : null
 }
 
-function k(e) {
-    var t, n;
+function P(e) {
     let {
-        item: l
-    } = e, o = i.useRef(null), [a, s] = i.useState(!1), u = b.Q_.useSetting(), d = "IMAGE" === l.type, p = null == l.children, f = !l.animated, O = (0, m.PK)(l.url, l.contentType, l.originalContentType), y = d && p && f && O, g = (0, m.fW)(l.url);
-    return u || y || g || (null == (n = l.sourceMetadata) || null == (t = n.identifier) ? void 0 : t.type) === "attachment" ? (0, r.jsx)(c.YNO, {
-        targetElementRef: o,
-        shouldShow: a,
+        item: t
+    } = e, a = i.useRef(null), [l, s] = i.useState(!1), r = h.Q_.useSetting(), o = "IMAGE" === t.type, d = null == t.children, u = !t.animated, m = (0, p.PK)(t.url, t.contentType, t.originalContentType), _ = o && d && u && m, A = (0, p.fW)(t.url);
+    return r || _ || A || t.sourceMetadata?.identifier?.type === "attachment" ? (0, n.jsx)(c.YNO, {
+        targetElementRef: a,
+        shouldShow: l,
         align: "left",
         position: "top",
         spacing: 18,
         onRequestClose: () => s(!1),
         animation: c.YNO.Animation.NONE,
-        renderPopout: () => (0, r.jsx)(M, {
-            item: l,
-            canCopyImage: y,
-            canCopyLink: g,
+        renderPopout: () => (0, n.jsx)(L, {
+            item: t,
+            canCopyImage: _,
+            canCopyLink: A,
             onClose: () => s(!1)
         }),
         children: e => {
             let {
                 onClick: t
             } = e;
-            return (0, r.jsx)(D, {
-                buttonRef: o,
-                tooltipText: T.intl.string(T.t["UKOtz+"]),
+            return (0, n.jsx)(b, {
+                buttonRef: a,
+                tooltipText: M.intl.string(M.t["UKOtz+"]),
                 onClick: () => {
-                    S.l.markActionPerformed(S.N.MORE_BUTTON_PRESSED), s(!a)
+                    y.l.markActionPerformed(y.N.MORE_BUTTON_PRESSED), s(!l)
                 },
                 icon: c.jNK
             })
@@ -332,26 +295,25 @@ function k(e) {
 let G = i.memo(function(e) {
     let {
         item: t,
-        hideMediaOptions: n
-    } = e, l = (0, a.bG)([u.A], () => u.A.keyboardModeEnabled), s = i.useRef(null), c = i.useCallback(() => {
-        var e;
-        !l && (null == (e = s.current) ? void 0 : e.contains(document.activeElement)) && document.activeElement.blur()
+        hideMediaOptions: a
+    } = e, l = (0, r.bG)([d.A], () => d.A.keyboardModeEnabled), o = i.useRef(null), c = i.useCallback(() => {
+        !l && o.current?.contains(document.activeElement) && document.activeElement.blur()
     }, [l]);
-    return ("IMAGE" === t.type || !n) && (0, r.jsx)(j.Ay, {
-        mode: j.nY.FOCUS_SENSITIVE,
-        children: e => (0, r.jsxs)("div", {
-            ref: s,
-            className: o()(w.uu, e),
+    return ("IMAGE" === t.type || !a) && (0, n.jsx)(I.Ay, {
+        mode: I.nY.FOCUS_SENSITIVE,
+        children: e => (0, n.jsxs)("div", {
+            ref: o,
+            className: s()(O.uu, e),
             onClick: e => e.stopPropagation(),
             onMouseLeave: c,
-            children: ["IMAGE" === t.type && (0, r.jsx)(I, {}), !n && (0, r.jsxs)(r.Fragment, {
-                children: [(0, r.jsx)(R, {
+            children: ["IMAGE" === t.type && (0, n.jsx)(R, {}), !a && (0, n.jsxs)(n.Fragment, {
+                children: [(0, n.jsx)(v, {
                     item: t
-                }), (0, r.jsx)(N, {
+                }), (0, n.jsx)(D, {
                     item: t
-                }), (0, r.jsx)(x, {
+                }), (0, n.jsx)(j, {
                     item: t
-                }), (0, r.jsx)(k, {
+                }), (0, n.jsx)(P, {
                     item: t
                 })]
             })]

@@ -1,10 +1,10 @@
-/** chunk id: 335891, original params: t,e,n (module,exports,require) **/
-n.d(e, {
-    K: () => _
+/** chunk id: 335891, original params: t,e,E (module,exports,require) **/
+E.d(e, {
+    K: () => i
 });
-var E = n(311907),
-    i = n(207913);
+var n = E(311907),
+    _ = E(207913);
 
-function _() {
-    return (0, E.bG)([i.A], () => i.A.getAccountStanding())
+function i() {
+    return (0, n.bG)([_.A], () => _.A.getAccountStanding())
 }

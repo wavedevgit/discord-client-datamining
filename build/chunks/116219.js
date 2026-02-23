@@ -1,43 +1,43 @@
-/** chunk id: 116219, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => h
-}), n(321073);
-var r = n(627968),
-    l = n(64700),
-    i = n(230109),
-    a = n(397927),
-    s = n(735991),
-    o = n(486020),
-    c = n(841985),
-    d = n(569495),
-    u = n(985018),
-    p = n(240815);
-let h = function(e) {
+/** chunk id: 116219, original params: e,t,a (module,exports,require) **/
+a.d(t, {
+    A: () => m
+}), a(321073);
+var n = a(627968),
+    i = a(64700),
+    s = a(230109),
+    l = a(397927),
+    r = a(735991),
+    o = a(486020),
+    c = a(841985),
+    d = a(569495),
+    u = a(985018),
+    h = a(240815);
+let m = function(e) {
     let {
         application: t,
-        onButtonsVisibilityChange: n
-    } = e, h = l.useRef(null), m = l.useMemo(() => o.Ay.getApplicationIconURL({
+        onButtonsVisibilityChange: a
+    } = e, m = i.useRef(null), p = i.useMemo(() => o.Ay.getApplicationIconURL({
         id: t.id,
         icon: t.icon,
         size: 96
-    }), [t]), g = l.useMemo(() => {
+    }), [t]), _ = i.useMemo(() => {
         let e = [];
-        return (0, s.b7)(t) && e.push(u.intl.string(u.t.LO4f0P)), (0, s.K4)(t) && (0 !== e.length && e.push("•"), e.push(u.intl.string(u.t["8z5B2U"]))), (0, s.ME)(t) && (0 !== e.length && e.push("•"), e.push(u.intl.string(u.t["5khEk8"]))), e
+        return (0, r.b7)(t) && e.push(u.intl.string(u.t.LO4f0P)), (0, r.K4)(t) && (0 !== e.length && e.push("•"), e.push(u.intl.string(u.t["8z5B2U"]))), (0, r.ME)(t) && (0 !== e.length && e.push("•"), e.push(u.intl.string(u.t["5khEk8"]))), e
     }, [t]);
-    return (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(c.A, {
+    return (0, n.jsxs)(n.Fragment, {
+        children: [(0, n.jsx)(c.A, {
             application: t,
             bannerType: "detail",
-            iconURL: m
-        }), (0, r.jsx)("div", {
-            className: p.H,
+            iconURL: p
+        }), (0, n.jsx)("div", {
+            className: h.H,
             style: {
                 height: 52
             },
-            children: (0, r.jsx)("img", {
-                src: m,
+            children: (0, n.jsx)("img", {
+                src: p,
                 alt: "",
-                className: p.my,
+                className: h.my,
                 height: 96,
                 width: 96,
                 style: {
@@ -45,30 +45,30 @@ let h = function(e) {
                     marginLeft: 28
                 }
             })
-        }), (0, r.jsxs)("div", {
-            className: p.op,
-            children: [(0, r.jsxs)("div", {
-                className: p.tJ,
-                children: [(0, r.jsx)(a.Heading, {
+        }), (0, n.jsxs)("div", {
+            className: h.op,
+            children: [(0, n.jsxs)("div", {
+                className: h.tJ,
+                children: [(0, n.jsx)(l.Heading, {
                     variant: "heading-xxl/bold",
                     color: "text-strong",
                     lineClamp: 1,
                     children: t.name
-                }), (0, r.jsx)("div", {
-                    className: p.A7,
-                    children: g.map((e, t) => (0, r.jsx)(a.Text, {
-                        className: p.MO,
+                }), (0, n.jsx)("div", {
+                    className: h.A7,
+                    children: _.map((e, t) => (0, n.jsx)(l.Text, {
+                        className: h.MO,
                         variant: "text-xs/normal",
                         color: "text-muted",
                         children: e
                     }, t))
                 })]
-            }), (0, r.jsx)(i.L, {
-                innerRef: h,
-                onChange: n,
+            }), (0, n.jsx)(s.L, {
+                innerRef: m,
+                onChange: a,
                 active: !0,
-                children: (0, r.jsx)(d.A, {
-                    ref: h,
+                children: (0, n.jsx)(d.A, {
+                    ref: m,
                     application: t,
                     size: "md"
                 })

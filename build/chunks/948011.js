@@ -3,25 +3,25 @@ n.d(t, {
     A: () => u
 });
 var a = n(311907),
-    l = n(354328),
-    r = n(622543),
-    i = n(287809),
-    s = n(916023),
+    i = n(354328),
+    s = n(622543),
+    l = n(287809),
+    r = n(916023),
     o = n(816176),
-    c = n(501838),
-    d = n(188275);
+    d = n(501838),
+    c = n(188275);
 
 function u(e) {
     let {
         location: t
-    } = e, n = (0, s.kt)({
+    } = e, n = (0, r.kt)({
         location: t
     }), u = (0, o.d)({
         location: t
-    }), m = (0, a.bG)([i.default], () => i.default.getCurrentUser()), p = (0, a.bG)([r.A], () => null != m ? r.A.getFirstWishlistId(m.id) : null), h = (0, l.A)("wishlist_user_profile_account_popout_upsell"), x = (0, c.hJ)({
-        gameIds: d.sQ
-    }), g = (0, c.ok)({
-        gameIds: d.sQ
+    }), m = (0, a.bG)([l.default], () => l.default.getCurrentUser()), h = (0, a.bG)([s.A], () => null != m ? s.A.getFirstWishlistId(m.id) : null), x = (0, i.A)("wishlist_user_profile_account_popout_upsell"), p = (0, d.hJ)({
+        gameIds: c.sQ
+    }), g = (0, d.ok)({
+        gameIds: c.sQ
     });
-    return u && n && null == p && (g || x) || h
+    return u && n && null == h && (g || p) || x
 }

@@ -1,12 +1,12 @@
 /** chunk id: 194867, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
-}), n(896048), n(228524);
+    A: () => A
+});
 var r = n(627968),
     l = n(64700),
     i = n(311907),
-    o = n(990078),
-    s = n(397927),
+    s = n(990078),
+    o = n(397927),
     a = n(775602),
     u = n(600941),
     d = n(890942),
@@ -14,61 +14,60 @@ var r = n(627968),
     p = n(271484),
     m = n(628743);
 
-function f(e) {
-    var t, n, f;
+function A(e) {
     let {
-        guildId: v,
-        group: g,
+        guildId: t,
+        group: n,
         powerups: A
-    } = e, [_, x] = l.useState(!1), h = (0, i.bG)([a.A], () => a.A.useReducedMotion), b = (0, p.A)(g, v), j = !h && _ ? null == b || null == (n = b.image) ? void 0 : n.animatedUrl : null == b || null == (f = b.image) ? void 0 : f.staticUrl, E = (0, u.A)({
-        guildId: v,
+    } = e, [_, g] = l.useState(!1), f = (0, i.bG)([a.A], () => a.A.useReducedMotion), x = (0, p.A)(n, t), v = !f && _ ? x?.image?.animatedUrl : x?.image?.staticUrl, h = (0, u.A)({
+        guildId: t,
         powerups: A
     }), {
-        textColor: w
-    } = (0, c.A)(null != (t = null == E ? void 0 : E.isActive) && t);
-    if (null == E || null == b) return null;
+        textColor: j
+    } = (0, c.A)(h?.isActive ?? !1);
+    if (null == h || null == x) return null;
     let {
-        status: y,
-        cost: I,
-        costDecorator: S
-    } = E;
+        status: b,
+        cost: E,
+        costDecorator: I
+    } = h;
     return (0, r.jsxs)(d.NI, {
-        label: b.title,
-        isActive: (null == y ? void 0 : y.type) === "active",
-        isWarning: (null == y ? void 0 : y.type) === "expiring",
-        badge: b.badge,
-        onClick: () => b.openModal(A),
-        onMouseOver: () => x(!0),
-        onMouseLeave: () => x(!1),
+        label: x.title,
+        isActive: b?.type === "active",
+        isWarning: b?.type === "expiring",
+        badge: x.badge,
+        onClick: () => x.openModal(A),
+        onMouseOver: () => g(!0),
+        onMouseLeave: () => g(!1),
         children: [(0, r.jsx)("img", {
             alt: "",
-            src: j,
+            src: v,
             className: m.S
         }), (0, r.jsx)(d.Ft, {
-            title: b.title,
-            textColor: w,
+            title: x.title,
+            textColor: j,
             footer: (0, r.jsx)(d.$L, {
-                status: y,
-                cost: I,
-                costDecorator: S
+                status: b,
+                cost: E,
+                costDecorator: I
             }),
-            children: (0, r.jsx)(s.Text, {
+            children: (0, r.jsx)(o.Text, {
                 className: m.h,
-                color: w,
+                color: j,
                 variant: "text-sm/medium",
-                children: b.description
+                children: x.description
             })
         }), (0, r.jsx)(d.kd, {
-            children: (null == b ? void 0 : b.viewCtaTooltip) != null ? (0, r.jsx)(o.m, {
+            children: x?.viewCtaTooltip != null ? (0, r.jsx)(s.m, {
                 asContainer: !0,
-                text: b.viewCtaTooltip,
+                text: x.viewCtaTooltip,
                 delay: 100,
-                children: (0, r.jsx)(s.Button, {
-                    text: b.viewCta,
+                children: (0, r.jsx)(o.Button, {
+                    text: x.viewCta,
                     fullWidth: !0
                 })
-            }) : (0, r.jsx)(s.Button, {
-                text: b.viewCta,
+            }) : (0, r.jsx)(o.Button, {
+                text: x.viewCta,
                 fullWidth: !0
             })
         })]

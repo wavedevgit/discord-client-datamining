@@ -3,10 +3,10 @@ n.d(t, {
     A: () => a,
     J: () => s
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(21878),
-    l = n(756369);
+var l = n(21878),
+    r = n(756369);
 
 function a(e) {
     let {
@@ -17,55 +17,55 @@ function a(e) {
         },
         hasSpoilerEmbeds: s,
         hasBailedAst: o,
-        handleContextMenu: c,
-        isInteracting: u,
-        isAutomodBlockedMessage: d,
-        isMessageSnapshot: p,
+        handleContextMenu: d,
+        isInteracting: c,
+        isAutomodBlockedMessage: u,
+        isMessageSnapshot: _,
         renderThreadAccessory: m,
-        renderSuppressEmbeds: f,
-        renderReactions: g,
-        forceAddReactions: _,
-        disableComponentInteractivity: h,
-        className: b
+        renderSuppressEmbeds: h,
+        renderReactions: p,
+        forceAddReactions: g,
+        disableComponentInteractivity: A,
+        className: x
     } = e;
-    return d ? null : (0, r.jsx)(i.A, {
+    return u ? null : (0, i.jsx)(l.A, {
         message: t,
-        children: (0, r.jsx)(l.Ay, {
-            className: b,
-            isInteracting: u,
+        children: (0, i.jsx)(r.Ay, {
+            className: x,
+            isInteracting: c,
             message: t,
             channel: n,
             compact: a,
             hasSpoilerEmbeds: s,
             hasBailedAst: o,
-            isMessageSnapshot: p,
-            onMediaItemContextMenu: c,
+            isMessageSnapshot: _,
+            onMediaItemContextMenu: d,
             renderThreadAccessory: m,
-            disableComponentInteractivity: h,
-            renderSuppressEmbeds: f,
-            forceAddReactions: _,
-            renderReactions: g
+            disableComponentInteractivity: A,
+            renderSuppressEmbeds: h,
+            forceAddReactions: g,
+            renderReactions: p
         })
     })
 }
 
 function s(e, t, n) {
     let {
-        message: i,
+        message: l,
         channel: a,
         compact: s = !1,
         renderThreadAccessory: o,
-        disableReactionCreates: c,
-        disableReactionUpdates: u
+        disableReactionCreates: d,
+        disableReactionUpdates: c
     } = e;
-    return (0, r.jsx)(l.OC, {
-        message: i,
+    return (0, i.jsx)(r.OC, {
+        message: l,
         channel: a,
         compact: s,
         hasSpoilerEmbeds: t,
         hasBailedAst: n,
         renderThreadAccessory: o,
-        disableReactionCreates: c,
-        disableReactionUpdates: u
+        disableReactionCreates: d,
+        disableReactionUpdates: c
     })
 }

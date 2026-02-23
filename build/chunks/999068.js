@@ -1,21 +1,18 @@
 /** chunk id: 999068, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    y: () => c
+    y: () => d
 });
-var r = n(64700),
-    i = n(311907),
+var i = n(64700),
+    r = n(311907),
     l = n(73153),
     a = n(622543),
     s = n(576622),
     o = n(287809);
 
-function c(e) {
-    let t = (0, i.bG)([o.default], () => o.default.getUser(e)),
-        n = (0, i.yK)([a.A], () => {
-            var t, n;
-            return null != (t = null == (n = a.A.getMutualGuilds(e)) ? void 0 : n.map(e => e.guild)) ? t : []
-        });
-    return r.useEffect(() => {
+function d(e) {
+    let t = (0, r.bG)([o.default], () => o.default.getUser(e)),
+        n = (0, r.yK)([a.A], () => a.A.getMutualGuilds(e)?.map(e => e.guild) ?? []);
+    return i.useEffect(() => {
         0 === n.length && null != t && null == a.A.getMutualGuilds(e) && l.h.wait(() => (0, s.A)(e, void 0, {
             withMutualGuilds: !0
         }))

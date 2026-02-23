@@ -1,25 +1,24 @@
 /** chunk id: 833147, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => c
+    A: () => l
 });
-var l = n(627968),
-    r = n(536246),
-    i = n(398866),
-    o = n(360469),
-    a = n(416367);
+var a = n(627968),
+    i = n(536246),
+    o = n(398866),
+    r = n(416367);
 
-function c(e) {
+function l(e) {
     let {
         application: t,
         queryParams: n,
-        url: c
+        url: l
     } = e;
-    return (0, l.jsx)(i.o, {
-        allowPopups: (0, r.b)(t),
-        referrerPolicy: o.$J.has(t.id) ? "no-referrer" : "origin",
-        url: c,
+    return (0, a.jsx)(o.o, {
+        allowPopups: (0, i.b)(t),
+        referrerPolicy: "origin",
+        url: l,
         queryParams: n,
-        className: a.p,
+        className: r.p,
         shouldRefocus: !1
     })
 }

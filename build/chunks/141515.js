@@ -1,24 +1,25 @@
 /** chunk id: 141515, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => u
+    A: () => d
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var l = n(397927),
-    i = n(976860),
-    s = n(652793),
+var s = n(397927),
+    l = n(976860),
+    r = n(652793),
     a = n(652215),
     o = n(746080),
     c = n(985018);
 
-function u(e) {
+function d(e) {
     let {
         guild: t,
         selected: n
     } = e;
-    return (0, r.jsx)(s.G, {
-        id: "home-tab-".concat(t.id),
-        renderIcon: e => (0, r.jsx)(l.Zf8, {
+    return (0, i.jsx)(r.G, {
+        id: `home-tab-${t.id}`,
+        renderIcon: e => (0, i.jsx)(s.Zf8, {
             size: "md",
             color: "currentColor",
             className: e
@@ -26,7 +27,7 @@ function u(e) {
         text: c.intl.string(c.t.VbpLyU),
         selected: n,
         onClick: function() {
-            (0, i.pX)(a.BVt.CHANNEL(t.id, o.VV.GUILD_HOME))
+            (0, l.pX)(a.BVt.CHANNEL(t.id, o.VV.GUILD_HOME))
         }
     })
 }

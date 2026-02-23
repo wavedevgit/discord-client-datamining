@@ -1,113 +1,113 @@
 /** chunk id: 323970, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => O
+    A: () => y
 });
 var a = n(582754),
-    l = n(736653),
-    r = n(439174),
-    i = n(881141),
-    s = n(788868),
+    i = n(736653),
+    s = n(439174),
+    l = n(881141),
+    r = n(788868),
     o = n(164741),
-    c = n(118713),
-    d = n(115245),
+    d = n(341094),
+    c = n(115245),
     u = n(915880),
     m = n(203683),
-    p = n(187446),
-    h = n(935495),
-    x = n(651714),
+    h = n(187446),
+    x = n(935495),
+    p = n(651714),
     g = n(416307),
-    f = n(497783),
-    b = n(39579),
-    v = n(673554),
-    j = n(719401),
-    _ = n(128640),
-    y = n(146925),
+    _ = n(497783),
+    f = n(39579),
+    b = n(673554),
+    v = n(719401),
+    j = n(128640),
+    C = n(146925),
     A = n(789996);
-let C = {
-        [s.Ac.PREMIUM_TENURE_1_MONTH]: {
+let T = {
+        [r.Ac.PREMIUM_TENURE_1_MONTH]: {
             dark: " #D76C1F, #F79C53",
             light: " #8E2A0B, #D4681C"
         },
-        [s.Ac.PREMIUM_TENURE_3_MONTH]: {
+        [r.Ac.PREMIUM_TENURE_3_MONTH]: {
             dark: " #8F9E9E, #C0CBD1",
             light: " #53555F, #697979"
         },
-        [s.Ac.PREMIUM_TENURE_6_MONTH]: {
+        [r.Ac.PREMIUM_TENURE_6_MONTH]: {
             dark: " #ED8200, #FFCE46",
             light: " #744400, #CC7000"
         },
-        [s.Ac.PREMIUM_TENURE_12_MONTH]: {
+        [r.Ac.PREMIUM_TENURE_12_MONTH]: {
             dark: " #36AAFF, #7BE7CB",
             light: " #006394, #0089EB"
         },
-        [s.Ac.PREMIUM_TENURE_24_MONTH]: {
+        [r.Ac.PREMIUM_TENURE_24_MONTH]: {
             dark: " #8670FF, #C2BDFF",
             light: " #5423CC, #8670FF"
         },
-        [s.Ac.PREMIUM_TENURE_36_MONTH]: {
+        [r.Ac.PREMIUM_TENURE_36_MONTH]: {
             dark: " #009423, #67FF33",
             light: " #005C15, #009E25"
         },
-        [s.Ac.PREMIUM_TENURE_60_MONTH]: {
+        [r.Ac.PREMIUM_TENURE_60_MONTH]: {
             dark: " #E83068, #FF8F70",
             light: " #881141, #DD1852"
         },
-        [s.Ac.PREMIUM_TENURE_72_MONTH]: {
+        [r.Ac.PREMIUM_TENURE_72_MONTH]: {
             dark: " #829AE8, #DDB4FF, #A2D6FF",
             light: " #6881D4, #956CB8, #5491A0"
         }
     },
     S = {
-        [s.Ac.PREMIUM_TENURE_1_MONTH]: {
+        [r.Ac.PREMIUM_TENURE_1_MONTH]: {
             dark: o.A,
             light: g.A
         },
-        [s.Ac.PREMIUM_TENURE_3_MONTH]: {
+        [r.Ac.PREMIUM_TENURE_3_MONTH]: {
+            dark: d.A,
+            light: _.A
+        },
+        [r.Ac.PREMIUM_TENURE_6_MONTH]: {
             dark: c.A,
             light: f.A
         },
-        [s.Ac.PREMIUM_TENURE_6_MONTH]: {
-            dark: d.A,
+        [r.Ac.PREMIUM_TENURE_12_MONTH]: {
+            dark: u.A,
             light: b.A
         },
-        [s.Ac.PREMIUM_TENURE_12_MONTH]: {
-            dark: u.A,
+        [r.Ac.PREMIUM_TENURE_24_MONTH]: {
+            dark: m.A,
             light: v.A
         },
-        [s.Ac.PREMIUM_TENURE_24_MONTH]: {
-            dark: m.A,
+        [r.Ac.PREMIUM_TENURE_36_MONTH]: {
+            dark: h.A,
             light: j.A
         },
-        [s.Ac.PREMIUM_TENURE_36_MONTH]: {
-            dark: p.A,
-            light: _.A
-        },
-        [s.Ac.PREMIUM_TENURE_60_MONTH]: {
-            dark: h.A,
-            light: y.A
-        },
-        [s.Ac.PREMIUM_TENURE_72_MONTH]: {
+        [r.Ac.PREMIUM_TENURE_60_MONTH]: {
             dark: x.A,
+            light: C.A
+        },
+        [r.Ac.PREMIUM_TENURE_72_MONTH]: {
+            dark: p.A,
             light: A.A
         }
     };
 
-function O() {
-    let e = (0, i.A)(),
-        t = (0, a.Mw)((0, l.Ay)());
+function y() {
+    let e = (0, l.A)(),
+        t = (0, a.Mw)((0, i.Ay)());
     if (!e) return null;
-    let n = C[e],
+    let n = T[e],
         o = S[e],
-        c = {
-            currentBadge: (0, r.e0)(e),
-            currentBadgeTextGradient: t ? null == n ? void 0 : n.dark : null == n ? void 0 : n.light,
-            levelUpVideoSrc: t ? null == o ? void 0 : o.dark : null == o ? void 0 : o.light
+        d = {
+            currentBadge: (0, s.e0)(e),
+            currentBadgeTextGradient: t ? n?.dark : n?.light,
+            levelUpVideoSrc: t ? o?.dark : o?.light
         },
-        d = s.sp.indexOf(e);
-    if (d > 0) {
-        let e = s.sp[d - 1],
-            n = C[e];
-        c.prevBadge = (0, r.e0)(e), c.prevBadgeTextGradient = t ? null == n ? void 0 : n.dark : null == n ? void 0 : n.light
+        c = r.sp.indexOf(e);
+    if (c > 0) {
+        let e = r.sp[c - 1],
+            n = T[e];
+        d.prevBadge = (0, s.e0)(e), d.prevBadgeTextGradient = t ? n?.dark : n?.light
     }
-    return c
+    return d
 }

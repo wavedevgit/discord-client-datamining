@@ -1,161 +1,131 @@
 /** chunk id: 856220, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => A
+    A: () => f
 });
 var l = n(627968),
     i = n(64700),
-    r = n(503698),
-    s = n.n(r),
-    a = n(311907),
+    s = n(503698),
+    a = n.n(s),
+    r = n(311907),
     o = n(827734),
-    c = n(397927),
-    u = n(435183),
-    d = n(599119),
+    d = n(397927),
+    c = n(435183),
+    u = n(599119),
     h = n(219504),
     g = n(576705),
     m = n(376310);
 n(253913);
-var p = n(652215),
-    f = n(985018),
-    b = n(57046);
+var x = n(652215),
+    A = n(985018),
+    p = n(57046);
 
-function x(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            l = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), l.forEach(function(t) {
-            var l;
-            l = n[t], t in e ? Object.defineProperty(e, t, {
-                value: l,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = l
-        })
-    }
-    return e
-}
-
-function j(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var l = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, l)
-        }
-        return n
-    })(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-
-function A(e) {
+function f(e) {
     let {
         channel: t
-    } = e, r = (0, a.bG)([g.A], () => g.A.can(p.xBc.MANAGE_CHANNELS, t), [t]), d = t.availableTags.length >= 20, m = t.availableTags.length > 0, A = i.useCallback(() => {
+    } = e, s = (0, r.bG)([g.A], () => g.A.can(x.xBc.MANAGE_CHANNELS, t), [t]), u = t.availableTags.length >= 20, m = t.availableTags.length > 0, f = i.useCallback(() => {
         let e = t.availableTags.length >= 20;
-        r && !e && (0, c.mMO)(async () => {
+        s && !e && (0, d.mMO)(async () => {
             let {
                 default: e
             } = await n.e("47326").then(n.bind(n, 950989));
-            return n => (0, l.jsx)(e, j(x({}, n), {
+            return n => (0, l.jsx)(e, {
+                ...n,
                 channelId: t.id,
                 guildId: t.guild_id
-            }))
+            })
         })
-    }, [t, r]), v = i.useCallback(e => {
-        r && (0, c.mMO)(async () => {
+    }, [t, s]), C = i.useCallback(e => {
+        s && (0, d.mMO)(async () => {
             let {
                 default: i
             } = await n.e("47326").then(n.bind(n, 950989));
-            return n => (0, l.jsx)(i, j(x({}, n), {
+            return n => (0, l.jsx)(i, {
+                ...n,
                 channelId: t.id,
                 guildId: t.guild_id,
                 tag: e
-            }))
+            })
         })
-    }, [r, t]), {
-        handleDragStart: O,
-        handleDragReset: C,
-        handleDragComplete: N
+    }, [s, t]), {
+        handleDragStart: j,
+        handleDragReset: N,
+        handleDragComplete: v
     } = (0, h.A)(t.availableTags, e => {
-        (0, u.fy)({
+        (0, c.fy)({
             availableTags: e
         })
     });
     return (0, l.jsxs)("div", {
-        className: b._A,
-        children: [m ? t.availableTags.map(e => (0, l.jsx)(y, {
+        className: p._A,
+        children: [m ? t.availableTags.map(e => (0, l.jsx)(b, {
             tag: e,
             availableTags: t.availableTags,
-            canManageChannels: r,
-            onTagClick: v,
-            onDragComplete: N,
-            onDragReset: C,
-            onDragStart: O
-        }, e.id)) : null, m ? (0, l.jsx)(c.DUT, {
-            onClick: A,
-            className: s()(b.JE, {
-                [b.r9]: !r || d
+            canManageChannels: s,
+            onTagClick: C,
+            onDragComplete: v,
+            onDragReset: N,
+            onDragStart: j
+        }, e.id)) : null, m ? (0, l.jsx)(d.DUT, {
+            onClick: f,
+            className: a()(p.JE, {
+                [p.r9]: !s || u
             }),
-            children: (0, l.jsx)(c.j96, {
+            children: (0, l.jsx)(d.j96, {
                 size: "custom",
-                "aria-label": f.intl.string(f.t["/jubeD"]),
+                "aria-label": A.intl.string(A.t["/jubeD"]),
                 color: o.A.unsafe_rawColors.WHITE.css,
                 width: 20,
                 height: 20
             })
-        }) : (0, l.jsx)(c.Button, {
+        }) : (0, l.jsx)(d.Button, {
             variant: "primary",
-            text: f.intl.string(f.t["/jubeD"]),
-            disabled: !r,
-            onClick: A
+            text: A.intl.string(A.t["/jubeD"]),
+            disabled: !s,
+            onClick: f
         })]
     })
 }
 
-function y(e) {
+function b(e) {
     let {
         tag: t,
         availableTags: n,
         canManageChannels: i,
-        onTagClick: r,
-        onDragComplete: a,
+        onTagClick: s,
+        onDragComplete: r,
         onDragStart: o,
-        onDragReset: c
-    } = e, u = n.findIndex(e => e.id === t.id), {
+        onDragReset: d
+    } = e, c = n.findIndex(e => e.id === t.id), {
         drag: h,
         dragSourcePosition: g,
-        drop: p,
-        setIsDraggable: x
-    } = (0, d.A)({
+        drop: x,
+        setIsDraggable: f
+    } = (0, u.A)({
         type: "CHANNEL_SETTINGS_FORUM_TAGS",
-        index: u,
+        index: c,
         optionId: t.id,
         onDragStart: o,
-        onDragComplete: a,
-        onDragReset: c
+        onDragComplete: r,
+        onDragReset: d
     });
     return (0, l.jsx)("div", {
-        className: s()(b.kL, {
-            [b.A]: null != g && u < g,
-            [b.Ze]: null != g && u > g
+        className: a()(p.kL, {
+            [p.A]: null != g && c < g,
+            [p.Ze]: null != g && c > g
         }),
         ref: e => {
-            h(p(e))
+            h(x(e))
         },
-        onMouseEnter: () => x(i),
-        onMouseLeave: () => x(!1),
+        onMouseEnter: () => f(i),
+        onMouseLeave: () => f(!1),
         children: (0, l.jsx)(m.A, {
             tag: t,
             disabled: !i,
-            ariaLabel: f.intl.formatToPlainString(f.t.jhSvB9, {
+            ariaLabel: A.intl.formatToPlainString(A.t.jhSvB9, {
                 name: t.name
             }),
-            onClick: i ? () => r(t) : void 0
+            onClick: i ? () => s(t) : void 0
         })
     })
 }

@@ -1,21 +1,21 @@
-/** chunk id: 23724, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => s
+/** chunk id: 23724, original params: n,e,t (module,exports,require) **/
+t.d(e, {
+    A: () => c
 });
-var r = n(627968);
-n(64700);
-var i = n(311907),
-    l = n(397927),
-    a = n(914430),
-    c = n(924985),
-    o = n(985018);
+var i = t(627968);
+t(64700);
+var r = t(311907),
+    l = t(397927),
+    a = t(914430),
+    s = t(924985),
+    d = t(985018);
 
-function s(e) {
-    let t = (0, i.bG)([c.A], () => c.A.isCollapsed(e.id), [e.id]);
-    return (0, r.jsx)(l.sLh, {
+function c(n) {
+    let e = (0, r.bG)([s.A], () => s.A.isCollapsed(n.id), [n.id]);
+    return (0, i.jsx)(l.sLh, {
         id: "collapse-category",
-        label: o.intl.string(o.t.SvVRsj),
-        action: () => t ? (0, a.fh)(e.id) : (0, a.Gv)(e.id),
-        checked: t
+        label: d.intl.string(d.t.SvVRsj),
+        action: () => e ? (0, a.fh)(n.id) : (0, a.Gv)(n.id),
+        checked: e
     })
 }

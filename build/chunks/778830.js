@@ -1,24 +1,28 @@
 /** chunk id: 778830, original params: e,t,n (module,exports,require) **/
+let i;
 n.d(t, {
-    A: () => c
+    A: () => d
 });
 var r = n(148803),
-    i = n(73153),
-    l = n(272355),
-    a = n(115328),
+    l = n(73153),
+    a = n(272355),
     s = n(979286);
-class o extends l.A {
+{
+    let e = n(154323).A;
+    i = () => e.get("shop_include_unpublished")
+}
+class o extends a.A {
     _initialize() {
-        i.h.subscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen)
+        l.h.subscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen)
     }
     _terminate() {
-        i.h.unsubscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen)
+        l.h.unsubscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen)
     }
     handlePostConnectionOpen() {
-        let e = a.A.get("shop_include_unpublished");
+        let e = i();
         (0, s.LX)({
             release: e ? r.P.BETA : r.P.PROD
         })
     }
 }
-let c = new o
+let d = new o

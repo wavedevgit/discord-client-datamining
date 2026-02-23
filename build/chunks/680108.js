@@ -1,131 +1,128 @@
 /** chunk id: 680108, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => _
-}), n(896048), n(228524), n(747238), n(801460), n(508300), n(650828);
+    A: () => j
+}), n(508300);
 var a = n(627968),
-    l = n(64700),
-    r = n(503698),
-    i = n.n(r),
-    s = n(835245),
+    i = n(64700),
+    s = n(503698),
+    l = n.n(s),
+    r = n(835245),
     o = n(311907),
-    c = n(397927),
-    d = n(157559),
+    d = n(397927),
+    c = n(157559),
     u = n(817363),
     m = n(315949),
-    p = n(559474),
-    h = n(259248),
-    x = n(43708),
+    h = n(559474),
+    x = n(259248),
+    p = n(43708),
     g = n(14752),
-    f = n(103748),
-    b = n(553622);
-let v = "Make sure you're only uploading text files!",
-    j = e => {
-        var t, n, l;
+    _ = n(103748),
+    f = n(553622);
+let b = "Make sure you're only uploading text files!",
+    v = e => {
         let {
-            effect: r,
-            onClick: i
+            effect: t,
+            onClick: n
         } = e, {
-            deleteConfig: s
-        } = (0, x.wu)();
-        return (0, a.jsxs)(c.DUT, {
-            className: b.B0,
+            deleteConfig: i
+        } = (0, p.wu)();
+        return (0, a.jsxs)(d.DUT, {
+            className: f.B0,
             onClick: () => {
-                i(r)
+                n(t)
             },
             children: [(0, a.jsx)("div", {
-                className: b.yV,
+                className: f.yV,
                 style: {
-                    backgroundImage: "url(".concat(null == (l = r.config) || null == (n = l.effects) || null == (t = n[0]) ? void 0 : t.base64, ")")
+                    backgroundImage: `url(${t.config?.effects?.[0]?.base64})`
                 }
             }), (0, a.jsxs)("div", {
-                className: b.eL,
-                children: [(0, a.jsx)(c.Text, {
+                className: f.eL,
+                children: [(0, a.jsx)(d.Text, {
                     variant: "text-md/bold",
-                    children: r.name
-                }), (0, a.jsx)(c.Button, {
+                    children: t.name
+                }), (0, a.jsx)(d.Button, {
                     variant: "critical-secondary",
                     text: "Delete",
                     onClick: e => {
-                        e.preventDefault(), e.stopPropagation(), s(r.skuId)
+                        e.preventDefault(), e.stopPropagation(), i(t.skuId)
                     }
                 })]
             })]
         })
     };
 
-function _() {
+function j() {
     let {
         profileEffects: e,
         upsertConfig: t,
         clearAll: n
-    } = (0, x.wu)(), [r, _] = l.useState(), y = l.useRef(null), A = (0, o.yK)([h.A], () => h.A.getAllProfileEffects());
+    } = (0, p.wu)(), [s, j] = i.useState(), C = i.useRef(null), A = (0, o.yK)([x.A], () => x.A.getAllProfileEffects());
     (0, m.A)();
-    let [C, S] = l.useState(""), O = l.useMemo(() => "" === C ? A : A.filter(e => {
-        var t, n, a, l;
-        let r = C.toLowerCase(),
-            i = null != (t = null == (a = e.config.title) ? void 0 : a.toLowerCase()) ? t : "",
-            s = null != (n = null == (l = e.config.description) ? void 0 : l.toLowerCase()) ? n : "";
-        return i.includes(r) || s.includes(r)
-    }), [C, A]), T = l.useCallback((e, n) => {
-        if (null == n || !e.type.startsWith("text/")) return (0, p.Ni)(v);
-        let [a, l] = n.split(",");
-        if (!a.includes("text/plain")) return (0, p.Ni)(v);
-        let r = JSON.parse(atob(l));
-        r.skuId = (0, s.A)(), t(r), (0, p.GF)("Profile Effect (maybe??) imported!")
-    }, [t]), E = l.useCallback(e => {
-        var t;
-        (null == (t = e.currentTarget) ? void 0 : t.files) == null ? (0, p.Ni)("Error uploading file. Try again!") : (0, p.KE)(e.currentTarget.files, T, p.Ni)
-    }, [T]);
+    let [T, S] = i.useState(""), y = i.useMemo(() => "" === T ? A : A.filter(e => {
+        let t = T.toLowerCase(),
+            n = e.config.title?.toLowerCase() ?? "",
+            a = e.config.description?.toLowerCase() ?? "";
+        return n.includes(t) || a.includes(t)
+    }), [T, A]), E = i.useCallback((e, n) => {
+        if (null == n || !e.type.startsWith("text/")) return (0, h.Ni)(b);
+        let [a, i] = n.split(",");
+        if (!a.includes("text/plain")) return (0, h.Ni)(b);
+        let s = JSON.parse(atob(i));
+        s.skuId = (0, r.A)(), t(s), (0, h.GF)("Profile Effect (maybe??) imported!")
+    }, [t]), N = i.useCallback(e => {
+        e.currentTarget?.files == null ? (0, h.Ni)("Error uploading file. Try again!") : (0, h.KE)(e.currentTarget.files, E, h.Ni)
+    }, [E]);
     return (0, a.jsxs)("div", {
-        className: b.zr,
-        children: [null == r && (0, a.jsxs)(a.Fragment, {
+        className: f.zr,
+        children: [null == s && (0, a.jsxs)(a.Fragment, {
             children: [(0, a.jsxs)("div", {
-                className: b.nz,
+                className: f.nz,
                 children: [(0, a.jsxs)("div", {
-                    className: i()(b.uW, b.nM),
-                    children: [(0, a.jsx)(c.Heading, {
+                    className: l()(f.uW, f.nM),
+                    children: [(0, a.jsx)(d.Heading, {
                         variant: "heading-xl/bold",
                         children: "Custom Profile Effects"
-                    }), (0, a.jsx)(c.Button, {
+                    }), (0, a.jsx)(d.Button, {
                         variant: "critical-secondary",
                         text: "Clear All",
                         onClick: async () => {
-                            await d.A.confirm({
+                            await c.A.confirm({
                                 title: "Clear All Profile Effects",
                                 body: "Are you sure you want to clear all profile effects? This cannot be undone.",
                                 confirmText: "Clear All",
                                 confirmVariant: "critical-primary"
-                            }) && (n(), (0, p.GF)("All profile effects cleared!"))
+                            }) && (n(), (0, h.GF)("All profile effects cleared!"))
                         }
                     })]
                 }), (0, a.jsx)("div", {
-                    className: b.Iv,
-                    children: Object.values(e).map(e => (0, a.jsx)(j, {
+                    className: f.Iv,
+                    children: Object.values(e).map(e => (0, a.jsx)(v, {
                         effect: e,
                         onClick: e => {
-                            _(e)
+                            j(e)
                         }
                     }, e.skuId))
                 })]
             }), (0, a.jsxs)("div", {
-                className: i()(b.nM, b._N, b.uW),
+                className: l()(f.nM, f._N, f.uW),
                 children: [(0, a.jsxs)("div", {
-                    className: b.au,
-                    children: [(0, a.jsx)(c.Text, {
+                    className: f.au,
+                    children: [(0, a.jsx)(d.Text, {
                         variant: "text-md/normal",
                         color: "always-white",
                         children: "Import Shared Config"
                     }), (0, a.jsx)(u.A, {
-                        ref: y,
-                        onChange: E,
+                        ref: C,
+                        onChange: N,
                         multiple: !1
                     })]
-                }), (0, a.jsx)(c.Button, {
+                }), (0, a.jsx)(d.Button, {
                     variant: "primary",
                     text: "Create New Effect",
                     onClick: () => {
                         t({
-                            skuId: (0, s.A)(),
+                            skuId: (0, r.A)(),
                             name: "New Profile Effect",
                             config: {
                                 effects: []
@@ -134,21 +131,21 @@ function _() {
                     }
                 })]
             }), (0, a.jsx)("hr", {}), (0, a.jsxs)("div", {
-                className: b.uW,
-                children: [(0, a.jsx)(c.Heading, {
+                className: f.uW,
+                children: [(0, a.jsx)(d.Heading, {
                     variant: "heading-xl/bold",
                     children: "All Effects"
-                }), (0, a.jsx)(c.ksK, {
-                    value: C,
+                }), (0, a.jsx)(d.ksK, {
+                    value: T,
                     onChange: e => {
                         S(e)
                     }
                 }), (0, a.jsx)("div", {
-                    className: b.xm,
-                    children: O.map(e => (0, a.jsx)(c.DUT, {
-                        className: b.S5,
+                    className: f.xm,
+                    children: y.map(e => (0, a.jsx)(d.DUT, {
+                        className: f.S5,
                         style: {
-                            backgroundImage: "url(".concat(e.config.thumbnailPreviewSrc, ")")
+                            backgroundImage: `url(${e.config.thumbnailPreviewSrc})`
                         },
                         onClick: () => {
                             let t = {
@@ -168,7 +165,7 @@ function _() {
                                     base64: ""
                                 } : null
                             };
-                            _({
+                            j({
                                 skuId: e.skuId,
                                 name: e.config.title,
                                 readonly: !0,
@@ -179,8 +176,8 @@ function _() {
                             })
                         },
                         children: (0, a.jsx)("div", {
-                            className: b.Hd,
-                            children: (0, a.jsx)(c.Text, {
+                            className: f.Hd,
+                            children: (0, a.jsx)(d.Text, {
                                 variant: "text-md/normal",
                                 color: "always-white",
                                 children: e.config.title
@@ -189,8 +186,8 @@ function _() {
                     }, e.skuId))
                 })]
             })]
-        }), null != r && (0, a.jsx)(f.A, {
-            effect: r
+        }), null != s && (0, a.jsx)(_.A, {
+            effect: s
         })]
     })
 }

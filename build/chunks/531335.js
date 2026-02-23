@@ -1,100 +1,72 @@
-/** chunk id: 531335, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => b
+/** chunk id: 531335, original params: n,e,t (module,exports,require) **/
+t.d(e, {
+    A: () => s
 });
-var r = n(627968);
-n(64700);
-var c = n(311907),
-    i = n(397927),
-    o = n(855687),
-    l = n(576705),
-    a = n(652215),
-    u = n(985018);
+var l = t(627968);
+t(64700);
+var r = t(311907),
+    a = t(397927),
+    i = t(855687),
+    c = t(576705),
+    d = t(652215),
+    A = t(985018);
 
-function s(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = r
-        })
-    }
-    return e
-}
-
-function b(e) {
+function s(n) {
     let {
-        source: t,
-        guild: n,
-        channel: r,
-        stageInstance: i
-    } = e, a = (0, c.bG)([l.A], () => (0, o.K)(l.A, n, r, i)), u = O(t, n, r), s = y(t, r);
-    return a ? u : s
+        source: e,
+        guild: t,
+        channel: l,
+        stageInstance: a
+    } = n, d = (0, r.bG)([c.A], () => (0, i.K)(c.A, t, l, a)), A = o(e, t, l), s = E(e, l);
+    return d ? A : s
 }
 
-function p(e, t) {
-    return null != t && [a.PE1.GUILD_HEADER, a.PE1.GUILD_CONTEXT_MENU].includes(t) || null == e ? u.intl.string(u.t.Sd8Ixw) : e.type === a.rbe.GUILD_VOICE ? u.intl.string(u.t["EE+P0H"]) : u.intl.string(u.t["0jeAXt"])
+function u(n, e) {
+    return null != e && [d.PE1.GUILD_HEADER, d.PE1.GUILD_CONTEXT_MENU].includes(e) || null == n ? A.intl.string(A.t.Sd8Ixw) : n.type === d.rbe.GUILD_VOICE ? A.intl.string(A.t["EE+P0H"]) : A.intl.string(A.t["0jeAXt"])
 }
-let O = (e, t, c) => {
-        if (null == t) return null;
-        let o = p(c, e);
-        return (0, r.jsx)(i.Drp, {
+let o = (n, e, r) => {
+        if (null == e) return null;
+        let i = u(r, n);
+        return (0, l.jsx)(a.Drp, {
             id: "invite-people",
-            label: o,
+            label: i,
             color: "brand",
-            icon: e === a.PE1.GUILD_HEADER ? i.DpX : void 0,
-            leadingAccessory: e === a.PE1.GUILD_HEADER ? {
+            icon: n === d.PE1.GUILD_HEADER ? a.DpX : void 0,
+            leadingAccessory: n === d.PE1.GUILD_HEADER ? {
                 type: "icon",
-                icon: i.DpX
+                icon: a.DpX
             } : void 0,
-            action: () => (0, i.mMO)(async () => {
+            action: () => (0, a.mMO)(async () => {
                 let {
-                    default: i
-                } = await Promise.all([n.e("43600"), n.e("28136"), n.e("92779")]).then(n.bind(n, 234355));
-                return n => {
-                    var o, l;
-                    return (0, r.jsx)(i, (o = s({}, n), l = l = {
-                        guild: t,
-                        channel: c,
-                        source: e
-                    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
-                        var n = Object.keys(e);
-                        if (Object.getOwnPropertySymbols) {
-                            var r = Object.getOwnPropertySymbols(e);
-                            n.push.apply(n, r)
-                        }
-                        return n
-                    })(Object(l)).forEach(function(e) {
-                        Object.defineProperty(o, e, Object.getOwnPropertyDescriptor(l, e))
-                    }), o))
-                }
+                    default: a
+                } = await Promise.all([t.e("43600"), t.e("28136"), t.e("8421")]).then(t.bind(t, 234355));
+                return t => (0, l.jsx)(a, {
+                    ...t,
+                    guild: e,
+                    channel: r,
+                    source: n
+                })
             })
         })
     },
-    y = (e, t) => {
-        let c = p(t, e);
-        return (0, r.jsx)(i.Drp, {
+    E = (n, e) => {
+        let r = u(e, n);
+        return (0, l.jsx)(a.Drp, {
             id: "invite-people",
-            label: c,
+            label: r,
             color: "brand",
-            icon: e === a.PE1.GUILD_HEADER ? i.DpX : void 0,
-            leadingAccessory: e === a.PE1.GUILD_HEADER ? {
+            icon: n === d.PE1.GUILD_HEADER ? a.DpX : void 0,
+            leadingAccessory: n === d.PE1.GUILD_HEADER ? {
                 type: "icon",
-                icon: i.DpX
+                icon: a.DpX
             } : void 0,
-            action: () => (0, i.mMO)(async () => {
+            action: () => (0, a.mMO)(async () => {
                 let {
-                    default: e
-                } = await n.e("62751").then(n.bind(n, 132610));
-                return t => (0, r.jsx)(e, s({}, t))
+                    default: n
+                } = await t.e("62751").then(t.bind(t, 132610));
+                return e => (0, l.jsx)(n, {
+                    ...e
+                })
             })
         })
     }

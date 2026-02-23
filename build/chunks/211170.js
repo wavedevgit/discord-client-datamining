@@ -1,4 +1,5 @@
 /** chunk id: 211170, original params: e,t,n (module,exports,require) **/
+"use strict";
 e.exports = {
     qc: "folderGroup__48112",
     GO: "folderGroupBackground__48112",

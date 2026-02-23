@@ -1,13 +1,13 @@
 /** chunk id: 192501, original params: e,t,n (module,exports,require) **/
-function r(e) {
-    return "".concat("*".repeat(e.length - 4)).concat(e.slice(-4))
+function i(e) {
+    return `${"*".repeat(e.length-4)}${e.slice(-4)}`
 }
 
-function i(e) {
+function s(e) {
     let [t, n] = e.split("@");
-    return "".concat("*".repeat(t.length), "@").concat(n)
+    return `${"*".repeat(t.length)}@${n}`
 }
 n.d(t, {
-    B: () => i,
-    D: () => r
-}), n(896048), n(747238)
+    B: () => s,
+    D: () => i
+})

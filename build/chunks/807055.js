@@ -2,12 +2,12 @@
 n.d(t, {
     A: () => o
 });
-var r = n(64700),
-    i = n(989349),
-    l = n.n(i),
-    s = n(405269);
-let a = l().duration(30, "days");
+var i = n(64700),
+    s = n(989349),
+    a = n.n(s),
+    r = n(405269);
+let l = a().duration(30, "days");
 
 function o(e, t) {
-    return r.useMemo(() => (0, s.i$)(t ? null != e.outboundRedemptionEndDate ? l()(e.outboundRedemptionEndDate) : l()(e.endDate).add(a) : l()(e.endDate), "LL"), [e, t])
+    return i.useMemo(() => (0, r.i$)(t ? null != e.outboundRedemptionEndDate ? a()(e.outboundRedemptionEndDate) : a()(e.endDate).add(l) : a()(e.endDate), "LL"), [e, t])
 }

@@ -1,40 +1,40 @@
 /** chunk id: 535820, original params: e,t,n (module,exports,require) **/
 let l, i, s, a, r, o;
 n.d(t, {
-    A: () => M
-}), n(896048), n(638769);
-var u, d, c = n(311907),
-    g = n(73153),
-    h = n(174768),
-    p = n(21119),
-    v = n(403362),
+    A: () => b
+});
+var d = n(311907),
+    u = n(73153),
+    c = n(174768),
+    g = n(21119),
+    h = n(403362),
     A = n(735547),
-    I = n(734057),
-    m = n(576705),
-    S = n(994500),
+    p = n(734057),
+    I = n(576705),
+    m = n(994500),
     x = n(652215),
-    y = n(172799);
-let f = new Set,
-    E = [],
-    _ = new Map,
-    C = {
+    v = n(172799);
+let S = new Set,
+    y = [],
+    E = new Map,
+    f = {
         numFriends: 0,
         numDms: 0,
         numGroupDms: 0,
         numChannels: 0
     };
 
-function b(e) {
+function T(e) {
     let t = new Set,
-        n = (null == a ? void 0 : a.type) === x.rbe.GUILD_VOICE,
+        n = a?.type === x.rbe.GUILD_VOICE,
         l = null;
-    null == s || o === y.yV.EMBEDDED_APPLICATION || n || (l = s.id);
-    let i = (0, A.oW)(f, l);
-    for (let e of (null == i || S.A.isBlockedOrIgnored(i.id) || t.add(i.id), p.A.getUserAffinities())) t.add(e.otherUserId);
+    null == s || o === v.yV.EMBEDDED_APPLICATION || n || (l = s.id);
+    let i = (0, A.oW)(S, l);
+    for (let e of (null == i || m.A.isBlockedOrIgnored(i.id) || t.add(i.id), g.A.getUserAffinities())) t.add(e.otherUserId);
     let r = new Set;
-    return o === y.yV.EMBEDDED_APPLICATION && h.A.getChannelHistory().map(e => I.A.getChannel(e)).filter(v.Vq).filter(e => e.type === x.rbe.GUILD_TEXT).filter(e => m.A.can(x.xBc.SEND_MESSAGES, e)).slice(0, 3).forEach(e => r.add(e.id)), (0, A.Us)({
+    return o === v.yV.EMBEDDED_APPLICATION && c.A.getChannelHistory().map(e => p.A.getChannel(e)).filter(h.Vq).filter(e => e.type === x.rbe.GUILD_TEXT).filter(e => I.A.can(x.xBc.SEND_MESSAGES, e)).slice(0, 3).forEach(e => r.add(e.id)), (0, A.Us)({
         query: e,
-        omitUserIds: f,
+        omitUserIds: S,
         suggestedUserIds: t,
         maxRowsWithoutQuery: 100,
         omitGuildId: l,
@@ -43,53 +43,49 @@ function b(e) {
     })
 }
 
-function T(e) {
-    E = e, _ = new Map, e.forEach((e, t) => {
-        _.set(e, {
+function C(e) {
+    y = e, E = new Map, e.forEach((e, t) => {
+        E.set(e, {
             index: t
         })
     })
 }
-class N extends(u = c.Ay.Store) {
+class _ extends d.Ay.Store {
+    static displayName = "InviteSuggestionsStore";
     initialize() {
-        this.waitFor(I.A, m.A, h.A, S.A, p.A)
+        this.waitFor(p.A, I.A, c.A, m.A, g.A)
     }
     getInviteSuggestionRows() {
-        return E
+        return y
     }
     getTotalSuggestionsCount() {
         return l
     }
     getInitialCounts() {
-        return C
+        return f
     }
     getSelectedInviteMetadata(e) {
-        let t = _.get(e),
-            n = p.A.getUserAffinities().map(e => e.otherUserId);
+        let t = E.get(e),
+            n = g.A.getUserAffinities().map(e => e.otherUserId);
         if (null != t) return {
             rowNum: t.index,
             isAffinitySuggestion: e.isSuggested,
-            numTotal: E.length,
+            numTotal: y.length,
             numAffinityConnections: n.length,
             isFiltered: i
         }
     }
-}(d = "displayName") in N ? Object.defineProperty(N, d, {
-    value: "InviteSuggestionsStore",
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
-}) : N[d] = "InviteSuggestionsStore";
-let M = new N(g.h, {
+}
+let b = new _(u.h, {
     LOAD_INVITE_SUGGESTIONS: function(e) {
         let {
             omitUserIds: t,
             guild: n,
-            channel: u,
-            applicationId: d,
+            channel: d,
+            applicationId: u,
             inviteTargetType: c
         } = e;
-        s = null != u ? n : null, a = u, r = d, o = c, f = new Set([...t, ...S.A.getBlockedOrIgnoredIDs(), ...(0, A.Uo)({
+        s = null != d ? n : null, a = d, r = u, o = c, S = new Set([...t, ...m.A.getBlockedOrIgnoredIDs(), ...(0, A.Uo)({
             channel: a,
             applicationId: r,
             inviteTargetType: c
@@ -97,8 +93,8 @@ let M = new N(g.h, {
         let {
             rows: g,
             counts: h
-        } = b("");
-        T(g), C = h, l = E.length
+        } = T("");
+        C(g), f = h, l = y.length
     },
     INVITE_SUGGESTIONS_SEARCH: function(e) {
         let {
@@ -107,7 +103,7 @@ let M = new N(g.h, {
         i = "" !== t;
         let {
             rows: n
-        } = b(t);
-        n.sort((e, t) => null != e.score && null != t.score ? e.score - t.score : 0), T(n)
+        } = T(t);
+        n.sort((e, t) => null != e.score && null != t.score ? e.score - t.score : 0), C(n)
     }
 })

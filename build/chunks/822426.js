@@ -1,59 +1,59 @@
-/** chunk id: 822426, original params: e,n,t (module,exports,require) **/
-t.d(n, {
+/** chunk id: 822426, original params: e,t,n (module,exports,require) **/
+n.d(t, {
     K: () => E
 });
-var r = t(627968);
-t(64700);
-var l = t(284009),
-    i = t.n(l),
-    s = t(397927),
-    a = t(96304),
-    o = t(927578),
-    u = t(937008),
-    c = t(156312),
-    d = t(166532),
-    p = t(800471),
-    m = t(985018);
+var l = n(627968);
+n(64700);
+var i = n(284009),
+    s = n.n(i),
+    r = n(397927),
+    a = n(96304),
+    o = n(927578),
+    u = n(937008),
+    d = n(156312),
+    c = n(166532),
+    p = n(800471),
+    m = n(985018);
 
 function E(e) {
     let {
-        handleStepChange: n,
-        handleClose: t
+        handleStepChange: t,
+        handleClose: n
     } = e, {
-        activeSubscription: l,
+        activeSubscription: i,
         selectedSkuId: E,
-        setSelectedPlanId: g,
-        startedPaymentFlowWithPaymentSourcesRef: f
-    } = (0, c.P5)(), {
-        isGift: P
-    } = (0, u.Pv)(), j = null != l ? (0, o.EL)(l) : null, h = null != j ? (0, o.RH)(j.planId) : null, _ = null != j ? (0, o.m6)(j.planId) : null, x = (0, p.vT)({
+        setSelectedPlanId: _,
+        startedPaymentFlowWithPaymentSourcesRef: h
+    } = (0, d.P5)(), {
+        isGift: x
+    } = (0, u.Pv)(), P = null != i ? (0, o.EL)(i) : null, S = null != P ? (0, o.RH)(P.planId) : null, T = null != P ? (0, o.m6)(P.planId) : null, I = (0, p.vT)({
         isTrial: !1,
-        isGift: P,
+        isGift: x,
         selectedSkuId: E,
-        startedPaymentFlowWithPaymentSources: f.current
+        startedPaymentFlowWithPaymentSources: h.current
     });
-    return i()(null != _, "Expected premium type"), (0, r.jsx)(a.A, {
-        premiumType: _,
+    return s()(null != T, "Expected premium type"), (0, l.jsx)(a.A, {
+        premiumType: T,
         titleText: m.intl.string(m.t["7VcWW0"]),
         subtitleText: m.intl.format(m.t.Qk34Ik, {
-            subscriptionName: h
+            subscriptionName: S
         }),
-        footer: (0, r.jsxs)(s.ButtonGroup, {
+        footer: (0, l.jsxs)(r.ButtonGroup, {
             direction: "horizontal-reverse",
             align: "center",
-            children: [(0, r.jsx)(s.Button, {
+            children: [(0, l.jsx)(r.Button, {
                 variant: "primary",
                 text: m.intl.string(m.t["3PatSz"]),
                 onClick: () => {
-                    x ? (g((0, p.xT)(E, l)), n(d.pn.REVIEW)) : n(d.pn.PLAN_SELECT)
+                    I ? (_((0, p.xT)(E, i)), t(c.pn.REVIEW)) : t(c.pn.PLAN_SELECT)
                 }
-            }), (0, r.jsx)(s.Button, {
+            }), (0, l.jsx)(r.Button, {
                 variant: "secondary",
-                onClick: t,
+                onClick: n,
                 text: m.intl.string(m.t.h9tkAK)
             })]
         }),
-        onClose: t,
+        onClose: n,
         isDowngrade: !0
     })
 }

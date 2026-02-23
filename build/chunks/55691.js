@@ -1,23 +1,23 @@
 /** chunk id: 55691, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    U: () => a
+    U: () => l
 });
-var r = n(627968),
-    i = n(5661),
-    l = n(161319),
-    s = n(74019);
-let a = e => {
+var i = n(627968),
+    s = n(5661),
+    a = n(161319),
+    r = n(74019);
+let l = e => {
     let {
         percentage: t,
         isFNUserWithNoStandardSub: n
     } = e;
-    return (0, r.jsxs)("div", {
-        className: s.k,
-        children: [!1 === n && (0, r.jsx)(l.PR, {
+    return (0, i.jsxs)("div", {
+        className: r.k,
+        children: [!1 === n && (0, i.jsx)(a.PR, {
             percentage: t
-        }), (0, r.jsx)("div", {
-            className: s.Z,
-            children: (0, r.jsx)(i.G, {})
+        }), (0, i.jsx)("div", {
+            className: r.Z,
+            children: (0, i.jsx)(s.G, {})
         })]
     })
 }

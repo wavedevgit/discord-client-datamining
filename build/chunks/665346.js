@@ -2,17 +2,17 @@
 "use strict";
 n.d(t, {
     A: () => a
-}), n(896048);
-var r = n(64700),
-    i = n(311907),
+});
+var i = n(64700),
+    s = n(311907),
     l = n(775602),
-    s = n(555337);
+    r = n(555337);
 
 function a(e, t) {
-    let [n, a] = r.useState(!1), o = (0, i.bG)([s.A], () => s.A.getProps().subsection), c = (0, i.bG)([l.A], () => l.A.useReducedMotion);
-    r.useEffect(() => {
+    let [n, a] = i.useState(!1), o = (0, s.bG)([r.A], () => r.A.getProps().subsection), d = (0, s.bG)([l.A], () => l.A.useReducedMotion);
+    i.useEffect(() => {
         n || null !== e.current && o === t && (a(!0), e.current.scrollIntoView({
-            behavior: c ? "auto" : "smooth"
+            behavior: d ? "auto" : "smooth"
         }))
-    }, [n, o, t, c, e])
+    }, [n, o, t, d, e])
 }

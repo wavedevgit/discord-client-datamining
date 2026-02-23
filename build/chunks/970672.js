@@ -1,50 +1,23 @@
-/** chunk id: 970672, original params: e,t,r (module,exports,require) **/
-r.d(t, {
-    W: () => a,
-    h: () => i
+/** chunk id: 970672, original params: e,t,n (module,exports,require) **/
+"use strict";
+n.d(t, {
+    W: () => d,
+    h: () => o
 });
-var n = r(129014),
-    o = r(976860),
-    l = r(961350),
-    c = r(723702),
-    u = r(652215);
-let i = c.isPlatformEmbedded ? u.tEg : (e, t) => {
-        if (!(0, o.MX)()) return n.default.request(u.e$_.DEEP_LINK, {
+var i = n(129014),
+    s = n(976860),
+    r = n(961350),
+    l = n(723702),
+    a = n(652215);
+let o = l.isPlatformEmbedded ? a.tEg : (e, t) => {
+        if (!(0, s.MX)()) return i.default.request(a.e$_.DEEP_LINK, {
             type: e,
             params: t
         })
     },
-    a = c.isPlatformEmbedded ? u.tEg : (e, t) => {
-        if (!l.default.isAuthenticated()) {
-            var r, n;
-            return i(e, (r = function(e) {
-                for (var t = 1; t < arguments.length; t++) {
-                    var r = null != arguments[t] ? arguments[t] : {},
-                        n = Object.keys(r);
-                    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-                        return Object.getOwnPropertyDescriptor(r, e).enumerable
-                    }))), n.forEach(function(t) {
-                        var n;
-                        n = r[t], t in e ? Object.defineProperty(e, t, {
-                            value: n,
-                            enumerable: !0,
-                            configurable: !0,
-                            writable: !0
-                        }) : e[t] = n
-                    })
-                }
-                return e
-            }({}, t || {}), n = n = {
-                fingerprint: l.default.getFingerprint()
-            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
-                var r = Object.keys(e);
-                if (Object.getOwnPropertySymbols) {
-                    var n = Object.getOwnPropertySymbols(e);
-                    r.push.apply(r, n)
-                }
-                return r
-            })(Object(n)).forEach(function(e) {
-                Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(n, e))
-            }), r))
-        }
+    d = l.isPlatformEmbedded ? a.tEg : (e, t) => {
+        if (!r.default.isAuthenticated()) return o(e, {
+            ...t || {},
+            fingerprint: r.default.getFingerprint()
+        })
     }

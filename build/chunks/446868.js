@@ -2,48 +2,48 @@
 n.d(t, {
     A: () => h
 });
-var l = n(735438),
-    s = n.n(l),
-    a = n(652215),
-    i = n(985018);
+var s = n(735438),
+    a = n.n(s),
+    i = n(652215),
+    l = n(985018);
 let {
     CAPTCHA: o,
     EMAIL: r,
-    PHONE: u,
-    REVERIFY_EMAIL: E,
+    PHONE: E,
+    REVERIFY_EMAIL: d,
     REVERIFY_PHONE: c
-} = a.Fz7, d = {
-    [a.a3B.REQUIRE_VERIFIED_EMAIL]: [r],
-    [a.a3B.REQUIRE_VERIFIED_PHONE]: [u],
-    [a.a3B.REQUIRE_REVERIFIED_EMAIL]: [E],
-    [a.a3B.REQUIRE_REVERIFIED_PHONE]: [c],
-    [a.a3B.REQUIRE_VERIFIED_EMAIL_OR_VERIFIED_PHONE]: [r, u],
-    [a.a3B.REQUIRE_REVERIFIED_EMAIL_OR_VERIFIED_PHONE]: [u, E],
-    [a.a3B.REQUIRE_VERIFIED_EMAIL_OR_REVERIFIED_PHONE]: [r, c],
-    [a.a3B.REQUIRE_REVERIFIED_EMAIL_OR_REVERIFIED_PHONE]: [E, c],
-    [a.a3B.REQUIRE_CAPTCHA]: [o],
-    [a.a3B.AGREEMENTS]: [],
-    [a.a3B.REQUIRE_SAFETY_FLOWS]: []
+} = i.Fz7, u = {
+    [i.a3B.REQUIRE_VERIFIED_EMAIL]: [r],
+    [i.a3B.REQUIRE_VERIFIED_PHONE]: [E],
+    [i.a3B.REQUIRE_REVERIFIED_EMAIL]: [d],
+    [i.a3B.REQUIRE_REVERIFIED_PHONE]: [c],
+    [i.a3B.REQUIRE_VERIFIED_EMAIL_OR_VERIFIED_PHONE]: [r, E],
+    [i.a3B.REQUIRE_REVERIFIED_EMAIL_OR_VERIFIED_PHONE]: [E, d],
+    [i.a3B.REQUIRE_VERIFIED_EMAIL_OR_REVERIFIED_PHONE]: [r, c],
+    [i.a3B.REQUIRE_REVERIFIED_EMAIL_OR_REVERIFIED_PHONE]: [d, c],
+    [i.a3B.REQUIRE_CAPTCHA]: [o],
+    [i.a3B.AGREEMENTS]: [],
+    [i.a3B.REQUIRE_SAFETY_FLOWS]: []
 }, h = {
-    isPhoneReverification: (e, t) => void 0 !== e && e.isPhoneVerified() && (t === a.a3B.REQUIRE_REVERIFIED_PHONE || t === a.a3B.REQUIRE_REVERIFIED_EMAIL_OR_REVERIFIED_PHONE || t === a.a3B.REQUIRE_VERIFIED_EMAIL_OR_REVERIFIED_PHONE),
-    isEmailReverification: e => e === a.a3B.REQUIRE_REVERIFIED_EMAIL || e === a.a3B.REQUIRE_REVERIFIED_EMAIL_OR_REVERIFIED_PHONE || e === a.a3B.REQUIRE_REVERIFIED_EMAIL_OR_VERIFIED_PHONE,
+    isPhoneReverification: (e, t) => void 0 !== e && e.isPhoneVerified() && (t === i.a3B.REQUIRE_REVERIFIED_PHONE || t === i.a3B.REQUIRE_REVERIFIED_EMAIL_OR_REVERIFIED_PHONE || t === i.a3B.REQUIRE_VERIFIED_EMAIL_OR_REVERIFIED_PHONE),
+    isEmailReverification: e => e === i.a3B.REQUIRE_REVERIFIED_EMAIL || e === i.a3B.REQUIRE_REVERIFIED_EMAIL_OR_REVERIFIED_PHONE || e === i.a3B.REQUIRE_REVERIFIED_EMAIL_OR_VERIFIED_PHONE,
     isFullScreenVerification(e) {
-        return e === a.a3B.REQUIRE_CAPTCHA || e === a.a3B.REQUIRE_VERIFIED_EMAIL || e === a.a3B.REQUIRE_VERIFIED_PHONE || e === a.a3B.REQUIRE_REVERIFIED_PHONE || e === a.a3B.REQUIRE_REVERIFIED_EMAIL_OR_REVERIFIED_PHONE || e === a.a3B.REQUIRE_VERIFIED_EMAIL_OR_REVERIFIED_PHONE || this.isEmailReverification(e)
+        return e === i.a3B.REQUIRE_CAPTCHA || e === i.a3B.REQUIRE_VERIFIED_EMAIL || e === i.a3B.REQUIRE_VERIFIED_PHONE || e === i.a3B.REQUIRE_REVERIFIED_PHONE || e === i.a3B.REQUIRE_REVERIFIED_EMAIL_OR_REVERIFIED_PHONE || e === i.a3B.REQUIRE_VERIFIED_EMAIL_OR_REVERIFIED_PHONE || this.isEmailReverification(e)
     },
-    getVerificationTypes: e => null == e || "symbol" == typeof e ? [] : d[e],
+    getVerificationTypes: e => null == e || "symbol" == typeof e ? [] : u[e],
     getButtonTitle(e) {
         switch (e) {
-            case a.Fz7.EMAIL:
-                return i.intl.string(i.t["1MPz27"]);
-            case a.Fz7.PHONE:
-                return i.intl.string(i.t.mjJeco);
-            case a.Fz7.REVERIFY_EMAIL:
-                return i.intl.string(i.t.nmdPFX);
-            case a.Fz7.REVERIFY_PHONE:
-                return i.intl.string(i.t.of2125);
+            case i.Fz7.EMAIL:
+                return l.intl.string(l.t["1MPz27"]);
+            case i.Fz7.PHONE:
+                return l.intl.string(l.t.mjJeco);
+            case i.Fz7.REVERIFY_EMAIL:
+                return l.intl.string(l.t.nmdPFX);
+            case i.Fz7.REVERIFY_PHONE:
+                return l.intl.string(l.t.of2125);
             default:
-                return i.intl.string(i.t["oF6+Ww"])
+                return l.intl.string(l.t["oF6+Ww"])
         }
     },
-    areVerificationTypesEqual: (e, t) => s().isEqual(e, t)
+    areVerificationTypesEqual: (e, t) => a().isEqual(e, t)
 }

@@ -1,187 +1,179 @@
 /** chunk id: 282978, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => S
-}), n(896048);
-var r = n(627968),
-    l = n(64700),
-    i = n(735438),
-    s = n.n(i),
+    A: () => T
+});
+var i = n(627968),
+    s = n(64700),
+    l = n(735438),
+    r = n.n(l),
     a = n(311907),
     o = n(3026),
     c = n(990078),
-    u = n(397927),
-    d = n(104171),
-    p = n(793574),
-    h = n(688810),
-    g = n(919395),
-    f = n(657331),
+    d = n(397927),
+    u = n(104171),
+    h = n(793574),
+    A = n(688810),
+    p = n(919395),
+    g = n(657331),
     m = n(696451),
-    b = n(71393),
-    A = n(287809),
-    y = n(583613),
-    O = n(403362),
-    j = n(58736),
-    x = n(518477),
-    _ = n(985018),
-    v = n(940688);
-
-function E(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-class C {
-    updateData(e) {
-        let {
-            userId: t,
-            user: n,
-            channelId: r,
-            analyticsLocations: l
-        } = e;
-        this.userId = t, this.user = n, this.channelId = r, this.analyticsLocations = l
-    }
-    getNicknameGuildPairs() {
-        return this.generateNicknameGuildPairs(this.user)
-    }
-    renderNicknamePairs(e) {
-        return this.getNicknameGuildPairs().map((t, n) => {
-            let [i, s] = t, a = (0, r.jsx)(u.DUT, {
-                tag: "span",
-                onClick: this.handleClick,
-                children: i
-            });
-            return s.length > 0 && (a = (0, r.jsx)(c.m, {
-                asContainer: !0,
-                tag: "span",
-                text: s.join(", "),
-                position: "bottom",
-                shouldShow: e,
-                delay: 50,
-                children: a
-            })), (0, r.jsxs)(l.Fragment, {
-                children: [0 !== n ? ", " : null, a]
-            }, n)
-        })
-    }
+    _ = n(71393),
+    f = n(287809),
+    x = n(583613),
+    C = n(403362),
+    E = n(58736),
+    I = n(518477),
+    b = n(985018),
+    N = n(940688);
+class S {
+    userId;
+    user;
+    channelId;
+    analyticsLocations;
     constructor({
         userId: e,
         user: t,
         channelId: n,
-        analyticsLocations: l
+        analyticsLocations: i
     }) {
-        E(this, "userId", void 0), E(this, "user", void 0), E(this, "channelId", void 0), E(this, "analyticsLocations", void 0), E(this, "generateNicknameGuildPairs", (0, y.L_)(e => {
-            var t;
-            return s()(m.Ay.getNicknameGuildsMapping(null != (t = null == e ? void 0 : e.id) ? t : this.userId)).toPairs().map(e => {
-                let [t, n] = e;
-                return [t, n.map(e => {
-                    var t;
-                    return null == (t = b.A.getGuild(e)) ? void 0 : t.name
-                }).filter(O.Vq)]
-            }).filter(t => {
-                let [n] = t;
-                return n !== (null == e ? void 0 : e.globalName)
-            }).value()
-        })), E(this, "renderMoreAvatars", () => (0, r.jsx)(c.m, {
-            asContainer: !0,
-            tag: "span",
-            text: _.intl.string(_.t["UTjRE/"]),
-            position: "bottom",
-            children: (0, r.jsx)(u.DUT, {
-                className: v.OZ,
+        this.userId = e, this.user = t, this.channelId = n, this.analyticsLocations = i
+    }
+    updateData(e) {
+        let {
+            userId: t,
+            user: n,
+            channelId: i,
+            analyticsLocations: s
+        } = e;
+        this.userId = t, this.user = n, this.channelId = i, this.analyticsLocations = s
+    }
+    generateNicknameGuildPairs = (0, x.L_)(e => r()(m.Ay.getNicknameGuildsMapping(e?.id ?? this.userId)).toPairs().map(e => {
+        let [t, n] = e;
+        return [t, n.map(e => _.A.getGuild(e)?.name).filter(C.Vq)]
+    }).filter(t => {
+        let [n] = t;
+        return n !== e?.globalName
+    }).value());
+    getNicknameGuildPairs() {
+        return this.generateNicknameGuildPairs(this.user)
+    }
+    renderMoreAvatars = () => (0, i.jsx)(c.m, {
+        asContainer: !0,
+        tag: "span",
+        text: b.intl.string(b.t["UTjRE/"]),
+        position: "bottom",
+        children: (0, i.jsx)(d.DUT, {
+            className: N.OZ,
+            onClick: this.handleClick,
+            children: (0, i.jsx)(d.U1e, {
+                size: "xs",
+                color: "currentColor",
+                className: N.WW
+            })
+        })
+    }, "more-avatars");
+    renderNicknamePairs(e) {
+        return this.getNicknameGuildPairs().map((t, n) => {
+            let [l, r] = t, a = (0, i.jsx)(d.DUT, {
+                tag: "span",
                 onClick: this.handleClick,
-                children: (0, r.jsx)(u.U1e, {
-                    size: "xs",
-                    color: "currentColor",
-                    className: v.WW
-                })
-            })
-        }, "more-avatars")), E(this, "handleClick", () => {
-            (0, f.openUserProfileModal)({
-                userId: this.userId,
-                channelId: this.channelId,
-                sourceAnalyticsLocations: this.analyticsLocations,
-                tabSection: x.RP.MUTUAL_GUILDS
-            })
-        }), this.userId = e, this.user = t, this.channelId = n, this.analyticsLocations = l
+                children: l
+            });
+            return r.length > 0 && (a = (0, i.jsx)(c.m, {
+                asContainer: !0,
+                tag: "span",
+                text: r.join(", "),
+                position: "bottom",
+                shouldShow: e,
+                delay: 50,
+                children: a
+            })), (0, i.jsxs)(s.Fragment, {
+                children: [0 !== n ? ", " : null, a]
+            }, n)
+        })
+    }
+    handleClick = () => {
+        (0, g.openUserProfileModal)({
+            userId: this.userId,
+            channelId: this.channelId,
+            sourceAnalyticsLocations: this.analyticsLocations,
+            tabSection: I.RP.MUTUAL_GUILDS
+        })
     }
 }
 
-function S(e) {
+function T(e) {
     let {
         channel: t
-    } = e, n = t.getRecipientId(), i = (0, g.EI)(n), s = Array(i.length).fill(null), {
-        analyticsLocations: f
-    } = (0, h.Ay)(p.A.AKA), m = function(e) {
+    } = e, n = t.getRecipientId(), l = (0, p.EI)(n), r = Array(l.length).fill(null), {
+        analyticsLocations: g
+    } = (0, A.Ay)(h.A.AKA), m = function(e) {
         let {
             userId: t,
             channelId: n,
-            analyticsLocations: r
-        } = e, i = (0, a.bG)([A.default], () => A.default.getUser(t), [t]), [s] = l.useState(() => new C({
-            user: i,
+            analyticsLocations: i
+        } = e, l = (0, a.bG)([f.default], () => f.default.getUser(t), [t]), [r] = s.useState(() => new S({
+            user: l,
             userId: t,
             channelId: n,
-            analyticsLocations: r
+            analyticsLocations: i
         }));
-        return s.updateData({
+        return r.updateData({
             userId: t,
-            user: i,
+            user: l,
             channelId: n,
-            analyticsLocations: r
-        }), s
+            analyticsLocations: i
+        }), r
     }({
         userId: n,
-        analyticsLocations: f,
+        analyticsLocations: g,
         channelId: t.id
-    }), [y, O] = l.useState(!1), x = l.useCallback(() => {
-        O(!0)
-    }, [O]), E = l.useCallback(() => {
-        O(!1)
-    }, [O]);
-    return 0 === m.getNicknameGuildPairs().length && 0 === i.length ? (0, r.jsx)("div", {
-        className: v.jH
-    }) : (0, r.jsxs)(h.f5, {
-        value: f,
-        children: [(0, r.jsx)(j.cG, {
-            className: v.yF
-        }), (0, r.jsx)(u.LpS, {
-            text: _.intl.string(_.t.l1QVfj),
+    }), [x, C] = s.useState(!1), I = s.useCallback(() => {
+        C(!0)
+    }, [C]), T = s.useCallback(() => {
+        C(!1)
+    }, [C]);
+    return 0 === m.getNicknameGuildPairs().length && 0 === l.length ? (0, i.jsx)("div", {
+        className: N.jH
+    }) : (0, i.jsxs)(A.f5, {
+        value: g,
+        children: [(0, i.jsx)(E.cG, {
+            className: N.yF
+        }), (0, i.jsx)(d.LpS, {
+            text: b.intl.string(b.t.l1QVfj),
             disableColor: !0,
-            className: v.RV
-        }), i.length > 0 ? (0, r.jsx)(d.Ay, {
+            className: N.RV
+        }), l.length > 0 ? (0, i.jsx)(u.Ay, {
             size: 16,
-            users: s,
+            users: r,
             showUserPopout: !1,
             renderUser: (e, t, n) => {
-                var l;
                 let s = m.user,
-                    a = i[n];
-                return null == a || null == s ? null : (0, r.jsx)(c.m, {
+                    r = l[n];
+                return null == r || null == s ? null : (0, i.jsx)(c.m, {
                     asContainer: !0,
-                    text: null == (l = b.A.getGuild(a)) ? void 0 : l.name,
+                    text: _.A.getGuild(r)?.name,
                     position: "bottom",
-                    children: (0, r.jsx)("img", {
+                    children: (0, i.jsx)("img", {
                         alt: "",
-                        className: v.my,
+                        className: N.my,
                         onClick: m.handleClick,
-                        src: s.getAvatarURL(a, 16),
+                        src: s.getAvatarURL(r, 16),
                         "aria-hidden": !0
                     })
-                }, a[1])
+                }, r[1])
             },
             renderMoreUsers: m.renderMoreAvatars,
             guildId: void 0,
             max: 3,
-            className: v.HD
-        }) : null, m.getNicknameGuildPairs().length > 0 ? (0, r.jsx)(o.A, {
+            className: N.HD
+        }) : null, m.getNicknameGuildPairs().length > 0 ? (0, i.jsx)(o.A, {
             position: "bottom",
-            className: v.wm,
+            className: N.wm,
             delay: 0,
-            onTooltipShow: x,
-            onTooltipHide: E,
-            children: m.renderNicknamePairs(!y)
+            onTooltipShow: I,
+            onTooltipHide: T,
+            children: m.renderNicknamePairs(!x)
         }) : null]
     })
 }

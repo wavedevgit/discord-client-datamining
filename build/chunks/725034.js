@@ -1,62 +1,61 @@
-/** chunk id: 725034, original params: t,l,n (module,exports,require) **/
-n.d(l, {
+/** chunk id: 725034, original params: t,n,i (module,exports,require) **/
+i.d(n, {
     default: () => M
-}), n(896048);
-var i = n(627968),
-    e = n(64700),
-    u = n(158954),
-    r = n(417597),
-    A = n(964486),
-    a = n(793574),
-    d = n(688810),
-    o = n(961350),
-    f = n(696451),
-    s = n(71393),
-    E = n(954571),
-    _ = n(229527),
-    g = n(81400),
-    c = n(411335),
-    N = n(652215),
-    I = n(340837),
-    O = n(985018);
+});
+var l = i(627968),
+    e = i(64700),
+    r = i(158954),
+    u = i(417597),
+    A = i(964486),
+    a = i(793574),
+    d = i(688810),
+    o = i(961350),
+    s = i(696451),
+    E = i(71393),
+    _ = i(954571),
+    f = i(229527),
+    g = i(81400),
+    c = i(411335),
+    N = i(652215),
+    I = i(340837),
+    O = i(985018);
 
 function M(t) {
-    var l;
     let {
         onClose: n,
-        transitionState: M,
-        guildId: R
-    } = t, T = (0, r.bG)([o.default], () => o.default.getId()), U = (0, r.bG)([f.Ay], () => f.Ay.getMember(R, T), [R, T]), b = (0, r.bG)([s.A], () => s.A.getGuild(R), [R]), D = null != (l = null == b ? void 0 : b.name) ? l : "", G = (0, _.wj)(U), {
-        analyticsLocations: C
-    } = (0, d.Ay)(a.A.AUTOMOD_PROFILE_QUARANTINE_ALERT), [h, k] = (0, g.j8)({
-        guildId: R,
-        analyticsLocations: C
-    }), P = G.has(I.D.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) ? O.intl.formatToPlainString(O.t.Oh20JS, {
-        guildName: D
+        transitionState: i,
+        guildId: M
+    } = t, R = (0, u.bG)([o.default], () => o.default.getId()), T = (0, u.bG)([s.Ay], () => s.Ay.getMember(M, R), [M, R]), U = (0, u.bG)([E.A], () => E.A.getGuild(M), [M]), b = U?.name ?? "", D = (0, f.wj)(T), {
+        analyticsLocations: G
+    } = (0, d.Ay)(a.A.AUTOMOD_PROFILE_QUARANTINE_ALERT), [C, h] = (0, g.j8)({
+        guildId: M,
+        analyticsLocations: G
+    }), k = D.has(I.D.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) ? O.intl.formatToPlainString(O.t.Oh20JS, {
+        guildName: b
     }) : O.intl.formatToPlainString(O.t["+VAZ/Z"], {
-        guildName: D
+        guildName: b
     });
-    k || (P = O.intl.formatToPlainString(O.t.tcrtME, {
-        guildName: D
+    h || (k = O.intl.formatToPlainString(O.t.tcrtME, {
+        guildName: b
     }));
-    let m = k ? O.intl.string(O.t.Viksoo) : O.intl.string(O.t.WikgZ1);
+    let P = h ? O.intl.string(O.t.Viksoo) : O.intl.string(O.t.WikgZ1);
     return ((0, A.Ay)(() => {
-        E.default.track(N.HAw.OPEN_MODAL, {
+        _.default.track(N.HAw.OPEN_MODAL, {
             type: c.oN,
-            guild_id: R,
-            other_user_id: T
+            guild_id: M,
+            other_user_id: R
         })
     }), e.useEffect(() => {
-        if (null == b) return void n()
-    }, [b, n]), null == b) ? null : (0, i.jsx)(u.Modal, {
-        transitionState: M,
+        if (null == U) return void n()
+    }, [U, n]), null == U) ? null : (0, l.jsx)(r.Modal, {
+        transitionState: i,
         onClose: n,
         title: O.intl.string(O.t["P+6K9C"]),
-        subtitle: P,
+        subtitle: k,
         actions: [{
-            text: m,
+            text: P,
             onClick: () => {
-                h(), n()
+                C(), n()
             }
         }]
     })

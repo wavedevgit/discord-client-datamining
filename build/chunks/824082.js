@@ -1,5 +1,5 @@
 /** chunk id: 824082, original params: e,t,i (module,exports,require) **/
 i.d(t, {
-    t: () => n
+    t: () => s
 });
-let n = new(i(799984)).A
+let s = new(i(799984)).A

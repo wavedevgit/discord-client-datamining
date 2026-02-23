@@ -1,98 +1,98 @@
 /** chunk id: 843401, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => b,
-    I: () => f
+    A: () => p,
+    I: () => x
 });
-var r = n(627968),
-    i = n(503698),
-    l = n.n(i),
-    s = n(311907),
-    a = n(397927),
+var i = n(627968),
+    s = n(503698),
+    a = n.n(s),
+    r = n(311907),
+    l = n(397927),
     o = n(286237),
     c = n(769015),
     d = n(430452),
     u = n(975571),
     _ = n(942405),
-    p = n(652215),
-    m = n(985018),
+    m = n(652215),
+    A = n(985018),
     g = n(726097);
 
-function A(e) {
+function h(e) {
     let {
         game: t,
         application: n
     } = e;
-    return null == t || null == n ? (0, r.jsx)("div", {
+    return null == t || null == n ? (0, i.jsx)("div", {
         className: g.zc,
-        children: (0, r.jsx)(a.EpV, {
+        children: (0, i.jsx)(l.EpV, {
             size: "sm",
-            color: a.LU0.colors.TEXT_FEEDBACK_WARNING
+            color: l.LU0.colors.TEXT_FEEDBACK_WARNING
         })
-    }) : (0, r.jsxs)("div", {
+    }) : (0, i.jsxs)("div", {
         className: g.nt,
-        children: [(0, r.jsx)(c.A, {
+        children: [(0, i.jsx)(c.A, {
             game: n,
             pid: t.pid,
             size: c.M.MEDIUM
-        }), (0, r.jsx)("div", {
+        }), (0, i.jsx)("div", {
             className: g.Am,
-            children: (0, r.jsx)(a.EpV, {
+            children: (0, i.jsx)(l.EpV, {
                 size: "sm",
-                color: a.LU0.colors.TEXT_FEEDBACK_WARNING
+                color: l.LU0.colors.TEXT_FEEDBACK_WARNING
             })
         })]
     })
 }
 
-function f(e) {
-    let t = (0, s.bG)([d.A], () => d.A.getMode()),
+function x(e) {
+    let t = (0, r.bG)([d.Ay], () => d.Ay.getMode()),
         {
             runningGame: n,
-            runningGameApplication: r
+            runningGameApplication: i
         } = (0, o.A)();
-    null == n || n.elevated || (n = void 0, r = void 0);
-    let i = (0, _.NP)(),
-        l = i && null != n && t === p.TBI.PUSH_TO_TALK;
+    null == n || n.elevated || (n = void 0, i = void 0);
+    let s = (0, _.NP)(),
+        a = s && null != n && t === m.TBI.PUSH_TO_TALK;
     return {
-        canPrompt: "voice" === e ? l : i,
+        canPrompt: "voice" === e ? a : s,
         runningGame: n,
-        runningGameApplication: r
+        runningGameApplication: i
     }
 }
 
-function b(e) {
+function p(e) {
     let {
         className: t,
         sourcePage: n
     } = e, {
-        canPrompt: i,
-        runningGame: s,
+        canPrompt: s,
+        runningGame: r,
         runningGameApplication: o
-    } = f(n);
-    return i ? (0, r.jsxs)("div", {
-        className: l()(g.kL, t),
-        children: [(0, r.jsx)(A, {
-            game: s,
+    } = x(n);
+    return s ? (0, i.jsxs)("div", {
+        className: a()(g.kL, t),
+        children: [(0, i.jsx)(h, {
+            game: r,
             application: o
-        }), (0, r.jsxs)("div", {
+        }), (0, i.jsxs)("div", {
             className: g.FS,
-            children: [(0, r.jsx)(a.Text, {
+            children: [(0, i.jsx)(l.Text, {
                 variant: "text-sm/medium",
                 color: "text-strong",
-                children: "voice" === n ? m.intl.string(m.t.vxfv7v) : null != s ? m.intl.string(m.t.fAYU2G) : m.intl.string(m.t["9V4X/c"])
-            }), (0, r.jsx)(a.Text, {
+                children: "voice" === n ? A.intl.string(A.t.vxfv7v) : null != r ? A.intl.string(A.t.fAYU2G) : A.intl.string(A.t["9V4X/c"])
+            }), (0, i.jsx)(l.Text, {
                 variant: "text-xs/medium",
                 color: "text-muted",
-                children: m.intl.format(m.t["/y6htt"], {
-                    helpCenterLink: u.A.getArticleURL(p.MVz.SYSTEM_SERVICE)
+                children: A.intl.format(A.t["/y6htt"], {
+                    helpCenterLink: u.A.getArticleURL(m.MVz.SYSTEM_SERVICE)
                 })
             })]
-        }), (0, r.jsx)(a.Button, {
+        }), (0, i.jsx)(l.Button, {
             variant: "secondary",
             size: "sm",
-            text: m.intl.string(m.t["1iI46O"]),
+            text: A.intl.string(A.t["1iI46O"]),
             onClick: function() {
-                (0, _.sL)(n + (null != s ? "-with-game" : "-no-game"))
+                (0, _.sL)(n + (null != r ? "-with-game" : "-no-game"))
             }
         })]
     }) : null

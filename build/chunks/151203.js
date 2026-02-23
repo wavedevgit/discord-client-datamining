@@ -1,128 +1,98 @@
 /** chunk id: 151203, original params: e,t,r (module,exports,require) **/
 r.d(t, {
-    default: () => I
+    default: () => k
 });
-var n = r(627968),
-    i = r(64700),
+var i = r(627968),
+    n = r(64700),
     s = r(735438),
-    u = r.n(s),
-    l = r(158954),
-    o = r(311907),
+    d = r.n(s),
+    u = r(158954),
+    l = r(311907),
     c = r(397927),
-    d = r(442433),
+    o = r(442433),
     a = r(110574),
-    p = r(342296),
-    b = r(696451),
-    f = r(994500),
-    g = r(287809),
-    m = r(542986),
-    O = r(985018),
-    y = r(275167);
-
-function j(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var r = null != arguments[t] ? arguments[t] : {},
-            n = Object.keys(r);
-        "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(r, e).enumerable
-        }))), n.forEach(function(t) {
-            var n;
-            n = r[t], t in e ? Object.defineProperty(e, t, {
-                value: n,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = n
-        })
-    }
-    return e
-}
+    m = r(342296),
+    g = r(696451),
+    I = r(994500),
+    f = r(287809),
+    p = r(542986),
+    h = r(985018),
+    b = r(275167);
 
 function w(e) {
     let {
         guildId: t,
         guildOwnerId: s,
-        member: u
-    } = e, l = g.default.getUser(u.userId), o = i.useRef(null);
-    return (0, n.jsx)(p.A, {
-        targetElementRef: o,
-        userId: u.userId,
+        member: d
+    } = e, u = f.default.getUser(d.userId), l = n.useRef(null);
+    return (0, i.jsx)(m.A, {
+        targetElementRef: l,
+        userId: d.userId,
         guildId: t,
         spacing: 14,
         clickTrap: !0,
-        children: (e, i) => {
+        children: (e, n) => {
             let {
                 isShown: c
-            } = i;
-            return (0, n.jsx)(a.A, j({
-                ref: o,
-                className: y.Dc,
+            } = n;
+            return (0, i.jsx)(a.A, {
+                ref: l,
+                className: b.Dc,
                 selected: c,
-                colorString: u.colorString,
-                colorStrings: u.colorStrings,
-                user: l,
-                isOwner: u.userId === s,
-                nick: u.nick,
-                premiumSince: null == u.premiumSince ? null : new Date(u.premiumSince),
+                colorString: d.colorString,
+                colorStrings: d.colorStrings,
+                user: u,
+                isOwner: d.userId === s,
+                nick: d.nick,
+                premiumSince: null == d.premiumSince ? null : new Date(d.premiumSince),
                 guildId: t,
                 onContextMenu: e => {
-                    (0, d.L3)(e, async () => {
+                    (0, o.L3)(e, async () => {
                         let {
                             default: e
                         } = await Promise.all([r.e("97262"), r.e("91042"), r.e("55109")]).then(r.bind(r, 365689));
-                        return r => {
-                            var i, s;
-                            return (0, n.jsx)(e, (i = j({}, r), s = s = {
-                                user: l,
-                                guildId: t,
-                                showMediaItems: !0
-                            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
-                                var r = Object.keys(e);
-                                if (Object.getOwnPropertySymbols) {
-                                    var n = Object.getOwnPropertySymbols(e);
-                                    r.push.apply(r, n)
-                                }
-                                return r
-                            })(Object(s)).forEach(function(e) {
-                                Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(s, e))
-                            }), i))
-                        }
+                        return r => (0, i.jsx)(e, {
+                            ...r,
+                            user: u,
+                            guildId: t,
+                            showMediaItems: !0
+                        })
                     })
-                }
-            }, e), u.userId)
+                },
+                ...e
+            }, d.userId)
         }
-    }, l.id)
+    }, u.id)
 }
 
-function I(e) {
+function k(e) {
     let {
         guild: t,
         transitionState: r,
         onClose: s
-    } = e, d = i.useMemo(() => f.A.getFriendIDs(), []);
-    i.useEffect(() => {
-        m.A.fetchFriendMembersIfNotFetched(t.id, d)
-    }, [t.id, d]);
-    let a = (0, o.bG)([b.Ay], () => b.Ay.getMembers(t.id)),
-        p = i.useMemo(() => u()(a).filter(e => !!d.includes(e.userId) && null != g.default.getUser(e.userId)).sortBy(e => {
-            var t;
-            let r = g.default.getUser(e.userId);
-            return (null != r ? null != (t = e.nick) ? t : r.username : "").toLocaleLowerCase()
-        }).map(e => (0, n.jsx)(w, {
+    } = e, o = n.useMemo(() => I.A.getFriendIDs(), []);
+    n.useEffect(() => {
+        p.A.fetchFriendMembersIfNotFetched(t.id, o)
+    }, [t.id, o]);
+    let a = (0, l.bG)([g.Ay], () => g.Ay.getMembers(t.id)),
+        m = n.useMemo(() => d()(a).filter(e => !!o.includes(e.userId) && null != f.default.getUser(e.userId)).sortBy(e => {
+            let t = f.default.getUser(e.userId);
+            return (null != t ? e.nick ?? t.username : "").toLocaleLowerCase()
+        }).map(e => (0, i.jsx)(w, {
             guildId: t.id,
             guildOwnerId: t.ownerId,
             member: e
-        }, e.userId)).value(), [d, t.id, t.ownerId, a]),
-        y = m.A.isFetchingFriendsForGuild(t.id);
-    return (0, n.jsxs)(l.Modal, {
-        title: O.intl.string(O.t.kYxEcH),
-        subtitle: O.intl.format(y ? O.t.EtQnZi : O.t.OgMdNS, {
+        }, e.userId)).value(), [o, t.id, t.ownerId, a]),
+        b = p.A.isFetchingFriendsForGuild(t.id);
+    return (0, i.jsxs)(u.Modal, {
+        title: h.intl.string(h.t.kYxEcH),
+        subtitle: h.intl.format(b ? h.t.EtQnZi : h.t.OgMdNS, {
             guildName: t.name,
-            numFriends: p.length
+            numFriends: m.length
         }),
         actions: void 0,
         transitionState: r,
         onClose: s,
-        children: [y && (0, n.jsx)(c.y$y, {}), p]
+        children: [b && (0, i.jsx)(c.y$y, {}), m]
     })
 }

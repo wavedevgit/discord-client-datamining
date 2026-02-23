@@ -1,78 +1,64 @@
 /** chunk id: 359348, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => v
-}), n(896048);
-var r = n(627968),
-    l = n(64700),
-    i = n(417597),
-    s = n(342494),
+    A: () => N
+});
+var i = n(627968),
+    s = n(64700),
+    l = n(417597),
+    r = n(342494),
     a = n(397927),
     o = n(442433),
     c = n(688810),
-    u = n(384059),
-    d = n(42473),
-    p = n(186111),
-    h = n(532624),
-    g = n(350535),
-    f = n(274372),
+    d = n(384059),
+    u = n(42473),
+    h = n(186111),
+    A = n(532624),
+    p = n(350535),
+    g = n(274372),
     m = n(572164),
-    b = n(399925),
-    A = n(652215),
-    y = n(985018),
-    O = n(345314),
-    j = n(145394);
+    _ = n(399925),
+    f = n(652215),
+    x = n(985018),
+    C = n(345314),
+    E = n(145394);
 
-function x(e) {
+function I(e) {
     (0, o.L3)(e, async () => {
         let {
             default: e
         } = await n.e("44751").then(n.bind(n, 575538));
-        return t => (0, r.jsx)(e, function(e) {
-            for (var t = 1; t < arguments.length; t++) {
-                var n = null != arguments[t] ? arguments[t] : {},
-                    r = Object.keys(n);
-                "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                    return Object.getOwnPropertyDescriptor(n, e).enumerable
-                }))), r.forEach(function(t) {
-                    var r;
-                    r = n[t], t in e ? Object.defineProperty(e, t, {
-                        value: r,
-                        enumerable: !0,
-                        configurable: !0,
-                        writable: !0
-                    }) : e[t] = r
-                })
-            }
-            return e
-        }({}, t))
+        return t => (0, i.jsx)(e, {
+            ...t
+        })
     })
 }
-let _ = e => {
+let b = e => {
         let {
             keybindString: t,
             targetElementRef: n
-        } = e, [i, o] = l.useState(!1), c = l.useCallback(() => o(!1), []);
-        return (0, r.jsx)(s.AM, {
-            shouldShow: i,
+        } = e, [l, o] = s.useState(!1), c = s.useCallback(() => o(!1), []);
+        return (0, i.jsx)(r.AM, {
+            shouldShow: l,
             targetElementRef: n,
             position: "top",
-            title: y.intl.format(y.t["o+srEw"], {
+            title: x.intl.format(x.t["o+srEw"], {
                 keybind: t,
-                keybindHook: () => (0, r.jsx)("span", {
-                    className: O.E,
-                    children: (0, r.jsx)(a.e7I, {
-                        className: O.d,
+                keybindHook: () => (0, i.jsx)("span", {
+                    className: C.E,
+                    children: (0, i.jsx)(a.e7I, {
+                        className: C.d,
                         shortcut: t
                     })
                 })
             }),
-            body: y.intl.format(y.t.DWeRm1, {
+            body: x.intl.format(x.t.DWeRm1, {
                 keybindHook: () => t,
                 keybind: t
             }),
             graphic: {
                 type: "image",
-                src: j
+                src: E
             },
             caretConfig: {
                 align: "center"
@@ -80,31 +66,31 @@ let _ = e => {
             onRequestClose: c
         })
     },
-    v = () => {
-        let e = l.useRef(null),
+    N = () => {
+        let e = s.useRef(null),
             {
                 parentAnalyticsLocation: t
             } = (0, c.Ay)(),
-            n = (0, i.bG)([p.A], () => p.A.hasLayers()),
-            s = (0, m.Et)(),
-            o = (0, i.bG)([f.A], () => f.A.getIsAtMaxSaveClipOperations()),
-            O = (0, i.bG)([h.Ay], () => h.Ay.getKeybindForAction(A.hCu.SAVE_CLIP));
-        if (!s || null == O || n) return null;
-        let j = g.dI(O.shortcut, !0);
-        return (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsx)(_, {
-                keybindString: j,
+            n = (0, l.bG)([h.A], () => h.A.hasLayers()),
+            r = (0, m.Et)(),
+            o = (0, l.bG)([g.A], () => g.A.getIsAtMaxSaveClipOperations()),
+            C = (0, l.bG)([A.Ay], () => A.Ay.getKeybindForAction(f.hCu.SAVE_CLIP));
+        if (!r || null == C || n) return null;
+        let E = p.dI(C.shortcut, !0);
+        return (0, i.jsxs)(i.Fragment, {
+            children: [(0, i.jsx)(b, {
+                keybindString: E,
                 targetElementRef: e
-            }), (0, r.jsx)(d.A, {
+            }), (0, i.jsx)(u.A, {
                 ref: e,
                 disabled: o,
-                tooltipText: null != O ? y.intl.formatToPlainString(y.t.HIMcv1, {
-                    hotkey: g.dI(null == O ? void 0 : O.shortcut, !0)
-                }) : y.intl.string(y.t.s52pju),
+                tooltipText: null != C ? x.intl.formatToPlainString(x.t.HIMcv1, {
+                    hotkey: p.dI(C?.shortcut, !0)
+                }) : x.intl.string(x.t.s52pju),
                 onClick: () => {
-                    (0, b.l0)(), (0, u.X)(t, u.O.CLIP)
+                    (0, _.l0)(), (0, d.X)(t, d.O.CLIP)
                 },
-                onContextMenu: x,
+                onContextMenu: I,
                 icon: a.xgA
             })]
         })

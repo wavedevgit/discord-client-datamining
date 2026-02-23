@@ -1,4 +1,5 @@
 /** chunk id: 852570, original params: e,t,n (module,exports,require) **/
+"use strict";
 e.exports = {
     u1: "spinner__2692d",
     d$: "tutorial__2692d",

@@ -1,22 +1,23 @@
 /** chunk id: 132860, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
     A: () => c
-}), n(896048);
-var r = n(961350),
-    l = n(576705),
-    i = n(607567),
-    s = n(488926),
+});
+var i = n(961350),
+    s = n(576705),
+    l = n(607567),
+    r = n(488926),
     a = n(698441),
     o = n(219935);
 
 function c(e) {
-    if (!e.isGuildVoice() || a.Ay.getGuildScheduledEventsByIndex(a.ej.CHANNEL_EVENT_ACTIVE(e.id)).length < 1 || !l.A.can(o.EN, e)) return !1;
-    let t = new Set(i.Ay.getVoiceStatesForChannel(e).map(e => e.user.id)),
-        n = r.default.getId();
-    for (let r of t)
-        if (r !== n && s.$3({
+    if (!e.isGuildVoice() || a.Ay.getGuildScheduledEventsByIndex(a.ej.CHANNEL_EVENT_ACTIVE(e.id)).length < 1 || !s.A.can(o.EN, e)) return !1;
+    let t = new Set(l.Ay.getVoiceStatesForChannel(e).map(e => e.user.id)),
+        n = i.default.getId();
+    for (let i of t)
+        if (i !== n && r.$3({
                 permission: o.EN,
-                user: r,
+                user: i,
                 context: e
             })) return !1;
     return !0

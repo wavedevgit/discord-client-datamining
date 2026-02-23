@@ -1,65 +1,66 @@
 /** chunk id: 397036, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => b
-}), n(896048), n(228524);
-var r = n(627968),
-    l = n(64700),
-    i = n(311907),
-    s = n(397927),
+    A: () => _
+});
+var i = n(627968),
+    s = n(64700),
+    l = n(311907),
+    r = n(397927),
     a = n(734057),
     o = n(71393),
     c = n(599941),
-    u = n(251766),
-    d = n(950344),
-    p = n(136179),
-    h = n(250253),
-    g = n(652215),
-    f = n(985018),
+    d = n(251766),
+    u = n(950344),
+    h = n(136179),
+    A = n(250253),
+    p = n(652215),
+    g = n(985018),
     m = n(18318);
 
-function b(e) {
+function _(e) {
     let {
         guildId: t,
         channelId: n
-    } = e, b = (0, u.e)({
+    } = e, _ = (0, d.e)({
         guildId: t,
         channelId: n
-    }), A = (0, c.uk)(t), y = (0, c.Tq)(t), O = (0, i.bG)([o.A], () => o.A.getGuild(t), [t]), j = null == O ? void 0 : O.name, x = (0, i.bG)([a.A], () => a.A.getChannel(n)), _ = l.useMemo(() => {
+    }), f = (0, c.uk)(t), x = (0, c.Tq)(t), C = (0, l.bG)([o.A], () => o.A.getGuild(t), [t]), E = C?.name, I = (0, l.bG)([a.A], () => a.A.getChannel(n)), b = s.useMemo(() => {
         let e = {};
-        for (let t of A)
+        for (let t of f)
             for (let n of t.subscription_listings_ids) e[n] = t.id;
         return e
-    }, [A]);
-    return ((0, d.A)({
+    }, [f]);
+    return ((0, u.A)({
         guildId: t,
-        location: g.ThZ.ROLE_SUBSCRIPTION_GATED_CHANNEL,
-        relevantSubscriptionListingIds: b.map(e => e.id)
-    }), null == O) ? (0, r.jsx)("div", {
+        location: p.ThZ.ROLE_SUBSCRIPTION_GATED_CHANNEL,
+        relevantSubscriptionListingIds: _.map(e => e.id)
+    }), null == C) ? (0, i.jsx)("div", {
         className: m.__invalid_spinnerContainer,
-        children: (0, r.jsx)(s.y$y, {
+        children: (0, i.jsx)(r.y$y, {
             className: m.__invalid_spinner
         })
-    }) : (0, r.jsxs)(s.ArX, {
+    }) : (0, i.jsxs)(r.ArX, {
         className: m.$$,
-        children: [(0, r.jsx)(s.Heading, {
+        children: [(0, i.jsx)(r.Heading, {
             variant: "heading-xl/semibold",
             className: m.DX,
-            children: f.intl.format(f.t.xHMpym, {
-                serverName: j,
-                channelName: null == x ? void 0 : x.name
+            children: g.intl.format(g.t.xHMpym, {
+                serverName: E,
+                channelName: I?.name
             })
-        }), (0, r.jsx)(s.Text, {
+        }), (0, i.jsx)(r.Text, {
             className: m.Lv,
             variant: "text-md/normal",
             color: "text-default",
-            children: null == y ? void 0 : y.description
-        }), (0, r.jsx)(p.A, {
+            children: x?.description
+        }), (0, i.jsx)(h.A, {
             guildId: t,
-            children: b.filter(e => null != _[e.id]).map(e => (0, r.jsx)(h.A, {
+            children: _.filter(e => null != b[e.id]).map(e => (0, i.jsx)(A.A, {
                 guildId: t,
                 listingId: e.id,
-                groupListingId: _[e.id],
-                analyticsLocation: g.ThZ.ROLE_SUBSCRIPTION_GATED_CHANNEL
+                groupListingId: b[e.id],
+                analyticsLocation: p.ThZ.ROLE_SUBSCRIPTION_GATED_CHANNEL
             }, e.id))
         })]
     })

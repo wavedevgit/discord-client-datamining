@@ -1,69 +1,67 @@
 /** chunk id: 242907, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => A
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(158954),
-    l = n(311907),
+var l = n(158954),
+    r = n(311907),
     a = n(414798),
     s = n(529200),
     o = n(406704),
-    c = n(961350),
-    u = n(734057),
-    d = n(576705),
-    p = n(203982),
+    d = n(961350),
+    c = n(734057),
+    u = n(576705),
+    _ = n(203982),
     m = n(427262),
-    f = n(652215),
-    g = n(985018),
-    _ = n(563111);
+    h = n(652215),
+    p = n(985018),
+    g = n(563111);
 
-function h(e) {
-    let t, n, h, {
-            author: b,
-            banned: y,
-            channelId: A
+function A(e) {
+    let t, n, A, {
+            author: x,
+            banned: f,
+            channelId: C
         } = e,
-        v = (0, l.bG)([c.default], () => c.default.getId()),
-        O = m.Ay.useName(b),
-        x = v === b.id,
-        E = (0, l.bG)([u.A, d.A], () => {
-            let e = u.A.getChannel(A);
+        E = (0, r.bG)([d.default], () => d.default.getId()),
+        I = m.Ay.useName(x),
+        b = E === x.id,
+        T = (0, r.bG)([c.A, u.A], () => {
+            let e = c.A.getChannel(C);
             if (null == e) return !1;
             if (e.isPrivate()) return !0;
             if (e.isThread()) {
                 let t = (0, o.UJ)(e),
-                    n = d.A.can(f.xBc.SEND_MESSAGES_IN_THREADS, e);
+                    n = u.A.can(h.xBc.SEND_MESSAGES_IN_THREADS, e);
                 return !t && n
             }
-            return d.A.can(f.xBc.SEND_MESSAGES, e)
+            return u.A.can(h.xBc.SEND_MESSAGES, e)
         });
-    return x ? (t = g.intl.string(g.t["F/OLvL"]), h = g.intl.string(g.t.C89OLE)) : (h = g.intl.string(g.t.YVub5y), y ? t = g.intl.string(g.t["57nBty"]) : null != O && E ? (t = g.intl.formatToPlainString(g.t["9Akp1s"], {
-        username: O
-    }), n = (0, r.jsx)(i.$nd, {
+    return b ? (t = p.intl.string(p.t["F/OLvL"]), A = p.intl.string(p.t.C89OLE)) : (A = p.intl.string(p.t.YVub5y), f ? t = p.intl.string(p.t["57nBty"]) : null != I && T ? (t = p.intl.formatToPlainString(p.t["9Akp1s"], {
+        username: I
+    }), n = (0, i.jsx)(l.$nd, {
         onClick: function() {
             let {
                 id: e
-            } = b, t = "@".concat(m.Ay.getUserTag(b, {
-                decoration: "never"
-            }));
-            p._.dispatchToLastSubscribed(f.jej.INSERT_TEXT, {
+            } = x, t = `@${m.Ay.getUserTag(x,{decoration:"never"})}`, n = `<@${e}>`;
+            _._.dispatchToLastSubscribed(h.jej.INSERT_TEXT, {
                 plainText: t,
-                rawText: "<@".concat(e, ">")
-            }), null != A && a.A.startTyping(A)
+                rawText: n
+            }), null != C && a.A.startTyping(C)
         },
-        text: g.intl.string(g.t.P8tvKG)
-    })) : t = g.intl.string(g.t["SMJr+a"])), (0, r.jsxs)(s.A, {
-        children: [(0, r.jsx)(s.A.Header, {
-            text: h
-        }), (0, r.jsxs)(s.A.Body, {
-            children: [(0, r.jsxs)("div", {
-                className: _.iH,
-                children: [(0, r.jsx)(s.A.Icon, {
+        text: p.intl.string(p.t.P8tvKG)
+    })) : t = p.intl.string(p.t["SMJr+a"])), (0, i.jsxs)(s.A, {
+        children: [(0, i.jsx)(s.A.Header, {
+            text: A
+        }), (0, i.jsxs)(s.A.Body, {
+            children: [(0, i.jsxs)("div", {
+                className: g.iH,
+                children: [(0, i.jsx)(s.A.Icon, {
                     expired: !0
-                }), (0, r.jsx)(s.A.Info, {
+                }), (0, i.jsx)(s.A.Info, {
                     expired: !0,
-                    title: g.intl.string(g.t["Jhx/ud"]),
+                    title: p.intl.string(p.t["Jhx/ud"]),
                     children: t
                 })]
             }), n]

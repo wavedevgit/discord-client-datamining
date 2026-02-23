@@ -1,70 +1,70 @@
 /** chunk id: 916494, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     $G: () => h,
-    Mw: () => a,
-    UM: () => d,
-    Um: () => s,
+    Mw: () => r,
+    UM: () => c,
+    Um: () => o,
     cP: () => l,
-    eu: () => c,
-    kz: () => u,
-    uc: () => o
+    eu: () => u,
+    kz: () => d,
+    uc: () => a
 });
 let i = 9 / 16,
-    r = 16 / 9,
+    s = 16 / 9,
     l = (e, t) => e * t,
-    a = (e, t) => e * t,
-    o = e => l(e, i),
-    s = e => a(e, r);
+    r = (e, t) => e * t,
+    a = e => l(e, i),
+    o = e => r(e, s);
 
-function u(e, t) {
+function d(e, t) {
     return t * (Math.max(1, e) - 1)
 }
 
-function c(e) {
+function u(e) {
     let {
         width: t,
         height: n,
         containerOffset: i,
-        gapSize: r,
+        gapSize: s,
         tileCount: l,
-        isVertical: a
-    } = e, o = a ? t : t - u(l, r), s = a ? n - u(l, r) : n;
+        isVertical: r
+    } = e, a = r ? t : t - d(l, s), o = r ? n - d(l, s) : n;
     return {
-        verticalRatio: (s - i) / (o - i),
-        horizontalRatio: (o - i) / (s - i)
+        verticalRatio: (o - i) / (a - i),
+        horizontalRatio: (a - i) / (o - i)
     }
 }
 
-function d(e, t, n) {
+function c(e, t, n) {
     let {
         containerOffset: i,
-        gapSize: r,
-        tileCount: o,
-        isVertical: s
+        gapSize: s,
+        tileCount: a,
+        isVertical: o
     } = t, {
-        maxWidth: d,
+        maxWidth: c,
         maxHeight: h
-    } = n, p = Math.max(1, o), f = e.width > d, g = e.height > h;
-    if (!f && !g) return e;
-    let m = u(o, r),
+    } = n, g = Math.max(1, a), m = e.width > c, p = e.height > h;
+    if (!m && !p) return e;
+    let A = d(a, s),
         {
-            verticalRatio: A,
-            horizontalRatio: y
-        } = c({
+            verticalRatio: x,
+            horizontalRatio: E
+        } = u({
             width: e.width,
             height: e.height,
             containerOffset: i,
-            gapSize: r,
-            tileCount: p,
-            isVertical: s
+            gapSize: s,
+            tileCount: g,
+            isVertical: o
         }),
-        O = e.width - i,
-        v = e.height - i,
-        b = d - i,
-        E = h - i;
-    return s ? (E -= m, v -= m) : (b -= m, O -= m), f && g && (e.width > e.height ? v = l(O = b, A) : O = a(v = E, y), f = O > b, g = v > E), f && (v = l(O = b, A)), g && (O = a(v = E, y)), s ? v += u(o, r) : O += u(o, r), {
-        width: O + i,
-        height: v + i
+        f = e.width - i,
+        S = e.height - i,
+        I = c - i,
+        T = h - i;
+    return o ? (T -= A, S -= A) : (I -= A, f -= A), m && p && (e.width > e.height ? S = l(f = I, x) : f = r(S = T, E), m = f > I, p = S > T), m && (S = l(f = I, x)), p && (f = r(S = T, E)), o ? S += d(a, s) : f += d(a, s), {
+        width: f + i,
+        height: S + i
     }
 }
 

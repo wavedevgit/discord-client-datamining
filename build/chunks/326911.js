@@ -1,94 +1,122 @@
 /** chunk id: 326911, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => b
-}), n(896048), n(65821);
-var r = n(627968),
-    i = n(64700),
-    l = n(311907),
-    s = n(397927),
-    a = n(869038),
-    o = n(499454),
-    c = n(351906),
-    d = n(954571),
-    u = n(45938),
-    _ = n(652215),
-    p = n(985018);
-
-function m(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-
-function g(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            m(e, t, n[t])
-        })
-    }
-    return e
-}
-
-function A(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
-        }
-        return n
-    })(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-class f extends i.Component {
+    A: () => x
+});
+var i = n(627968),
+    s = n(64700),
+    a = n(311907),
+    r = n(397927),
+    l = n(869038),
+    o = n(459357),
+    c = n(99696),
+    d = n(499454),
+    u = n(351906),
+    _ = n(954571),
+    m = n(45938),
+    A = n(652215),
+    g = n(985018);
+class h extends s.Component {
+    state = {
+        codeInput: "",
+        submitting: !1,
+        hasError: !1,
+        isPromoCode: !1
+    };
     get analyticsLocation() {
         let {
             analyticsContext: {
                 location: e
             }
         } = this.props;
-        return A(g({}, e), {
-            object: _.ZSU.BUTTON_CTA
-        })
+        return {
+            ...e,
+            object: A.ZSU.BUTTON_CTA
+        }
     }
+    handleChange = e => {
+        this.setState({
+            codeInput: e,
+            hasError: !1
+        })
+    };
+    handleSubmit = async e => {
+        e.preventDefault();
+        let {
+            codeInput: t
+        } = this.state;
+        if ("" === t) return;
+        let n = t.trim();
+        this.setState({
+            submitting: !0
+        });
+        try {
+            if (this.props.acceptGiftCardRedemption) try {
+                await (0, c.Qp)(n), (0, c.HF)({
+                    initialCode: n
+                }), this.setState({
+                    codeInput: ""
+                });
+                return
+            } catch {}
+            let e = (0, m.Vd)(t);
+            if (null == e) return void this.setState({
+                hasError: !0
+            });
+            let i = await l.A.resolveGiftCode(e);
+            if (null != i && null != i.giftCode.promotion) throw this.setState({
+                isPromoCode: !0
+            }), Error("Cannnot redeem promotion code as gift");
+            _.default.track(A.HAw.OPEN_MODAL, {
+                type: "gift_accept",
+                location: {
+                    ...this.analyticsLocation,
+                    object: A.ZSU.BUTTON_CTA
+                }
+            }), (0, d.h)({
+                processedCode: e
+            }), this.setState({
+                codeInput: ""
+            })
+        } catch (e) {
+            this.setState({
+                hasError: !0
+            })
+        } finally {
+            this.setState({
+                submitting: !1
+            })
+        }
+    };
     render() {
         let {
             obscureInput: e
         } = this.props, {
             codeInput: t,
             submitting: n,
-            hasError: i,
-            isPromoCode: l
+            hasError: s,
+            isPromoCode: a
         } = this.state;
-        return (0, r.jsx)(s.nVY, {
-            label: p.intl.string(p.t["il+VCo"]),
-            children: (0, r.jsx)("form", {
+        return (0, i.jsx)(r.nVY, {
+            label: g.intl.string(g.t["il+VCo"]),
+            children: (0, i.jsx)("form", {
                 onSubmit: this.handleSubmit,
-                children: (0, r.jsxs)(s.M_l, {
-                    children: [(0, r.jsx)(s.ksK, {
-                        label: p.intl.string(p.t.SeKIoS),
+                children: (0, i.jsxs)(r.M_l, {
+                    children: [(0, i.jsx)(r.ksK, {
+                        label: g.intl.string(g.t.SeKIoS),
                         type: e ? "password" : "text",
                         value: t,
                         onChange: this.handleChange,
                         placeholder: "WUMP-AAAAA-BBBBB-CCCCC",
-                        error: !l && i ? p.intl.string(p.t.Y11a2u) : null,
-                        helperText: l ? p.intl.format(p.t.gPt3PE, {
+                        error: !a && s ? g.intl.string(g.t.Y11a2u) : null,
+                        helperText: a ? g.intl.format(g.t.gPt3PE, {
                             promoLink: () => {
-                                window.open("https://discord.com/billing/promotions/".concat(t))
+                                window.open(`https://discord.com/billing/promotions/${t}`)
                             }
                         }) : null,
                         fullWidth: !0
-                    }), (0, r.jsx)(s.Button, {
+                    }), (0, i.jsx)(r.Button, {
                         variant: "primary",
-                        text: p.intl.string(p.t.KIpp7M),
+                        text: g.intl.string(g.t.KIpp7M),
                         type: "submit",
                         loading: n
                     })]
@@ -96,63 +124,17 @@ class f extends i.Component {
             })
         })
     }
-    constructor(...e) {
-        super(...e), m(this, "state", {
-            codeInput: "",
-            submitting: !1,
-            hasError: !1,
-            isPromoCode: !1
-        }), m(this, "handleChange", e => {
-            this.setState({
-                codeInput: e,
-                hasError: !1
-            })
-        }), m(this, "handleSubmit", async e => {
-            e.preventDefault();
-            let {
-                codeInput: t
-            } = this.state;
-            if ("" === t) return;
-            let n = (0, u.Vd)(t);
-            if (null == n) return void this.setState({
-                hasError: !0
-            });
-            this.setState({
-                submitting: !0
-            });
-            try {
-                let e = await a.A.resolveGiftCode(n);
-                if (null != e && null != e.giftCode.promotion) throw this.setState({
-                    isPromoCode: !0
-                }), Error("Cannnot redeem promotion code as gift");
-                d.default.track(_.HAw.OPEN_MODAL, {
-                    type: "gift_accept",
-                    location: A(g({}, this.analyticsLocation), {
-                        object: _.ZSU.BUTTON_CTA
-                    })
-                }), (0, o.h)({
-                    processedCode: n
-                }), this.setState({
-                    codeInput: ""
-                })
-            } catch (e) {
-                this.setState({
-                    hasError: !0
-                })
-            } finally {
-                this.setState({
-                    submitting: !1
-                })
-            }
-        })
-    }
 }
 
-function b() {
-    let e = i.useContext(d.AnalyticsContext),
-        t = (0, l.bG)([c.A], () => c.A.enabled);
-    return (0, r.jsx)(f, {
-        analyticsContext: e,
-        obscureInput: t
+function x() {
+    let {
+        enabled: e
+    } = (0, o.c)({
+        location: "UserSettingsBilling"
+    }), t = s.useContext(_.AnalyticsContext), n = (0, a.bG)([u.A], () => u.A.enabled);
+    return (0, i.jsx)(h, {
+        analyticsContext: t,
+        obscureInput: n,
+        acceptGiftCardRedemption: e
     })
 }

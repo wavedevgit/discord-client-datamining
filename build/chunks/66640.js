@@ -1,95 +1,64 @@
 /** chunk id: 66640, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => h
+    A: () => x
 });
-var r = n(627968),
-    i = n(64700),
+var i = n(627968),
+    s = n(64700),
     l = n(858229),
-    s = n(702942),
+    r = n(702942),
     a = n(99787),
     o = n(255354),
-    c = n(957300),
-    d = n(378427),
+    d = n(957300),
+    c = n(378427),
     u = n(411335),
-    g = n(985018),
-    m = n(578551);
+    m = n(985018),
+    g = n(578551);
 
-function p(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = r
-        })
-    }
-    return e
-}
-
-function f(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
-        }
-        return n
-    })(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-
-function h(e) {
-    var t, n, h;
+function x(e) {
     let {
-        rule: b,
-        onChangeRule: x
-    } = e, j = i.useCallback(e => {
-        x(f(p({}, b), {
-            triggerMetadata: f(p({}, b.triggerMetadata), {
+        rule: t,
+        onChangeRule: n
+    } = e, x = s.useCallback(e => {
+        n({
+            ...t,
+            triggerMetadata: {
+                ...t.triggerMetadata,
                 allowList: e
-            })
-        }))
-    }, [x, b]);
-    return (0, r.jsxs)("div", {
-        className: m.sp,
-        children: [(0, r.jsxs)(c.A, {
+            }
+        })
+    }, [n, t]);
+    return (0, i.jsxs)("div", {
+        className: g.sp,
+        children: [(0, i.jsxs)(d.A, {
             step: 1,
-            header: g.intl.string(g.t.CX5Yfc),
-            children: [(0, r.jsx)(s.A, {
-                rule: b,
-                onChangeRule: x
-            }), (0, r.jsx)(l.A, {
-                onChange: j,
-                initialValue: null == (t = b.triggerMetadata) ? void 0 : t.allowList,
+            header: m.intl.string(m.t.CX5Yfc),
+            children: [(0, i.jsx)(r.A, {
+                rule: t,
+                onChangeRule: n
+            }), (0, i.jsx)(l.A, {
+                onChange: x,
+                initialValue: t.triggerMetadata?.allowList,
                 maxWordCount: u.hG,
-                collapsed: (null == (n = b.triggerMetadata) ? void 0 : n.allowList) == null || (null == (h = b.triggerMetadata) ? void 0 : h.allowList.length) === 0
+                collapsed: t.triggerMetadata?.allowList == null || t.triggerMetadata?.allowList.length === 0
             })]
-        }), (0, r.jsx)(d.A, {
-            type: d.A.Type.ARROW_DOWN
-        }), (0, r.jsx)(c.A, {
+        }), (0, i.jsx)(c.A, {
+            type: c.A.Type.ARROW_DOWN
+        }), (0, i.jsx)(d.A, {
             step: 2,
-            header: g.intl.string(g.t["18TOiQ"]),
-            children: (0, r.jsx)(a.A, {
-                rule: b,
-                onChangeRule: x
+            header: m.intl.string(m.t["18TOiQ"]),
+            children: (0, i.jsx)(a.A, {
+                rule: t,
+                onChangeRule: n
             })
-        }), (0, r.jsx)(d.A, {
-            type: d.A.Type.CROSS
-        }), (0, r.jsx)(c.A, {
+        }), (0, i.jsx)(c.A, {
+            type: c.A.Type.CROSS
+        }), (0, i.jsx)(d.A, {
             step: 3,
-            header: g.intl.string(g.t.eq3gjh),
-            children: (0, r.jsx)(o.A, {
-                rule: b,
-                onChangeRule: x
+            header: m.intl.string(m.t.eq3gjh),
+            children: (0, i.jsx)(o.A, {
+                rule: t,
+                onChangeRule: n
             })
         })]
     })

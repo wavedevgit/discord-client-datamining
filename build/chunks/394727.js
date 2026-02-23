@@ -1,55 +1,53 @@
 /** chunk id: 394727, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => g
-}), n(747238), n(896048), n(693327), n(554719), n(680155), n(323874), n(14289), n(35956);
-var r = n(64700),
-    i = n(311907),
+    A: () => m
+}), n(323874), n(14289), n(35956);
+var i = n(64700),
+    r = n(311907),
     l = n(157559),
     a = n(308528),
     s = n(793574),
     o = n(688810),
-    c = n(429913),
-    u = n(976860),
-    d = n(287809),
-    p = n(956549),
+    d = n(429913),
+    c = n(976860),
+    u = n(287809),
+    A = n(956549),
     h = n(257269),
-    f = n(985018);
+    _ = n(985018);
 
-function g(e) {
-    var t, n;
+function m(e) {
     let {
-        match: g
-    } = e, m = null != (t = (0, u.UC)()) ? t : [], {
-        analyticsLocations: A
-    } = (0, o.Ay)([...m, s.A.ACTIVITY_DETAIL_PAGE]), {
-        applicationId: _
-    } = g.params, [b] = (0, c.A)([_]), E = null == b || null == (n = b.bot) ? void 0 : n.id, O = (0, i.bG)([d.default], () => d.default.getCurrentUser());
-    return r.useEffect(() => {
-        null != E && null != O && (async () => {
+        match: t
+    } = e, n = (0, c.UC)() ?? [], {
+        analyticsLocations: m
+    } = (0, o.Ay)([...n, s.A.ACTIVITY_DETAIL_PAGE]), {
+        applicationId: p
+    } = t.params, [g] = (0, d.A)([p]), E = g?.bot?.id, I = (0, r.bG)([u.default], () => u.default.getCurrentUser());
+    return i.useEffect(() => {
+        null != E && null != I && (async () => {
             try {
-                var e;
-                let t = new URL(location.href),
-                    n = await a.A.openPrivateChannel({
+                let e = new URL(location.href),
+                    t = await a.A.openPrivateChannel({
                         recipientIds: E
                     }),
-                    r = null != (e = t.searchParams.get("referrer_id")) ? e : void 0,
+                    n = e.searchParams.get("referrer_id") ?? void 0,
                     {
                         customId: i
-                    } = await (0, h.d9)(_, t.searchParams.get("link_id"), t.searchParams.get("custom_id"));
-                await (0, p.A)({
-                    targetApplicationId: _,
-                    channelId: n,
-                    analyticsLocations: A,
+                    } = await (0, h.d9)(p, e.searchParams.get("link_id"), e.searchParams.get("custom_id"));
+                await (0, A.A)({
+                    targetApplicationId: p,
+                    channelId: t,
+                    analyticsLocations: m,
                     customId: i,
-                    referrerId: r
+                    referrerId: n
                 })
             } catch (e) {}
         })()
-    }, [A, _, E, O]), r.useEffect(() => {
+    }, [m, p, E, I]), i.useEffect(() => {
         let e = setTimeout(() => {
             null == E && l.A.show({
-                title: f.intl.string(f.t.PtobXW),
-                body: f.intl.string(f.t["IOy+I5"])
+                title: _.intl.string(_.t.PtobXW),
+                body: _.intl.string(_.t["IOy+I5"])
             })
         }, 5e3);
         return () => {

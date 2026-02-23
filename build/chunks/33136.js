@@ -1,71 +1,41 @@
-/** chunk id: 33136, original params: e,r,t (module,exports,require) **/
-t.r(r), t.d(r, {
-    default: () => O
+/** chunk id: 33136, original params: s,e,r (module,exports,require) **/
+r.r(e), r.d(e, {
+    default: () => _
 });
-var n = t(627968),
-    o = t(64700),
-    c = t(503698),
-    i = t.n(c),
-    s = t(868062),
-    a = t(247366),
-    u = t(464198);
+var i = r(627968),
+    a = r(64700),
+    t = r(503698),
+    n = r.n(t),
+    c = r(868062),
+    o = r(247366),
+    d = r(464198);
 
-function p(e) {
-    for (var r = 1; r < arguments.length; r++) {
-        var t = null != arguments[r] ? arguments[r] : {},
-            n = Object.keys(t);
-        "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(t, e).enumerable
-        }))), n.forEach(function(r) {
-            var n;
-            n = t[r], r in e ? Object.defineProperty(e, r, {
-                value: n,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[r] = n
-        })
-    }
-    return e
-}
-
-function l(e, r) {
-    return r = null != r ? r : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : (function(e, r) {
-        var t = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var n = Object.getOwnPropertySymbols(e);
-            t.push.apply(t, n)
-        }
-        return t
-    })(Object(r)).forEach(function(t) {
-        Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
-    }), e
-}
-
-function f() {
-    return (0, n.jsx)("div", {
-        className: u.HM
+function u() {
+    return (0, i.jsx)("div", {
+        className: d.HM
     })
 }
 
-function b() {
-    return (0, n.jsx)("div", {
-        className: i()(u.HM, u.Cj)
+function l() {
+    return (0, i.jsx)("div", {
+        className: n()(d.HM, d.Cj)
     })
 }
-let j = (0, s.kl)(e => (0, n.jsxs)("div", {
-        className: u.og,
-        children: [(0, n.jsx)("div", {
-            className: u.Lr,
-            children: (0, n.jsx)(a.Saturation, l(p({}, e), {
-                pointer: f
-            }))
-        }), (0, n.jsx)("div", {
-            className: u.lG,
-            children: (0, n.jsx)(a.Hue, l(p({}, e), {
+let p = (0, c.kl)(s => (0, i.jsxs)("div", {
+        className: d.og,
+        children: [(0, i.jsx)("div", {
+            className: d.Lr,
+            children: (0, i.jsx)(o.Saturation, {
+                ...s,
+                pointer: u
+            })
+        }), (0, i.jsx)("div", {
+            className: d.lG,
+            children: (0, i.jsx)(o.Hue, {
+                ...s,
                 direction: "horizontal",
-                pointer: b
-            }))
+                pointer: l
+            })
         })]
     })),
-    O = o.memo(j)
+    _ = a.memo(p)

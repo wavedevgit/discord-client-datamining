@@ -1,117 +1,101 @@
-/** chunk id: 386077, original params: t,e,n (module,exports,require) **/
-n.d(e, {
-    default: () => O
-}), n(896048);
-var i = n(627968),
-    a = n(64700),
-    l = n(158954),
-    r = n(397927),
-    s = n(384904),
-    c = n(793574),
-    o = n(688810),
-    _ = n(964404),
-    u = n(954571),
-    C = n(163437),
-    A = n(910804),
-    d = n(574475),
-    p = n(652215),
-    I = n(985018),
-    N = n(508025);
+/** chunk id: 386077, original params: t,e,i (module,exports,require) **/
+i.d(e, {
+    default: () => p
+});
+var a = i(627968),
+    n = i(64700),
+    s = i(158954),
+    l = i(397927),
+    r = i(384904),
+    c = i(793574),
+    _ = i(688810),
+    o = i(964404),
+    C = i(954571),
+    A = i(163437),
+    u = i(910804),
+    I = i(574475),
+    N = i(652215),
+    d = i(985018),
+    S = i(508025);
 
-function O(t) {
+function p(t) {
     let {
         transitionState: e,
-        application: n,
-        storeListing: O,
-        subscription: S,
-        guild: E,
+        application: i,
+        storeListing: p,
+        subscription: E,
+        guild: O,
         onClose: T
     } = t, {
         analyticsLocations: P
-    } = (0, o.Ay)(c.A.APPLICATION_SUBSCRIPTION_CANCELLATION_MODAL), {
+    } = (0, _.Ay)(c.A.APPLICATION_SUBSCRIPTION_CANCELLATION_MODAL), {
         cancelSubscription: m,
-        error: g,
-        submitting: b
+        error: L,
+        submitting: g
     } = (t => {
-        let [e, n] = a.useState(!1), [i, l] = a.useState(null);
+        let [e, i] = n.useState(!1), [a, s] = n.useState(null);
         return {
             cancelSubscription: async e => {
                 try {
-                    return n(!0), await s.M2(e, t), !0
+                    return i(!0), await r.M2(e, t), !0
                 } catch (t) {
-                    l(t)
+                    s(t)
                 } finally {
-                    n(!1)
+                    i(!1)
                 }
             },
-            error: i,
+            error: a,
             submitting: e
         }
-    })(P), f = async () => {
-        await m(S.id) && (_.Ay.disableApplicationSubscriptionCancellationSurvey ? T() : (0, r.mMO)(async () => (await T(), t => (0, i.jsx)(d.A, function(t) {
-            for (var e = 1; e < arguments.length; e++) {
-                var n = null != arguments[e] ? arguments[e] : {},
-                    i = Object.keys(n);
-                "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(t) {
-                    return Object.getOwnPropertyDescriptor(n, t).enumerable
-                }))), i.forEach(function(e) {
-                    var i;
-                    i = n[e], e in t ? Object.defineProperty(t, e, {
-                        value: i,
-                        enumerable: !0,
-                        configurable: !0,
-                        writable: !0
-                    }) : t[e] = i
-                })
-            }
-            return t
-        }({
-            application: n,
-            subscriptionId: S.id
-        }, t)))))
+    })(P), R = async () => {
+        await m(E.id) && (o.Ay.disableApplicationSubscriptionCancellationSurvey ? T() : (0, l.mMO)(async () => (await T(), t => (0, a.jsx)(I.A, {
+            application: i,
+            subscriptionId: E.id,
+            ...t
+        }))))
     };
-    a.useEffect(() => {
-        u.default.track(p.HAw.CANCELLATION_FLOW_STARTED, {
+    n.useEffect(() => {
+        C.default.track(N.HAw.CANCELLATION_FLOW_STARTED, {
             location_stack: P
         })
     }, [P]);
-    let L = (0, C.bg)(O.skuFlags);
-    return (0, i.jsx)(l.ExpressiveModal, {
+    let U = (0, A.bg)(p.skuFlags);
+    return (0, a.jsx)(s.ExpressiveModal, {
         actions: [{
-            loading: b,
-            onClick: f,
-            text: I.intl.string(I.t.KSqyfW),
+            loading: g,
+            onClick: R,
+            text: d.intl.string(d.t.KSqyfW),
             variant: "critical-primary"
         }],
         graphic: {
             type: "dynamic",
-            component: r.Z86.APPLICATION_IMAGE_HEADER,
+            component: l.Z86.APPLICATION_IMAGE_HEADER,
             aspectRatio: "16/9",
             props: {
-                application: n,
-                className: N.Sb
+                application: i,
+                className: S.Sb
             }
         },
-        title: I.intl.string(I.t.CeCHk1),
-        subtitle: L ? I.intl.format(I.t.fZP9QD, {
-            applicationName: n.name,
-            timestamp: S.currentPeriodEnd.getTime()
-        }) : I.intl.format(I.t["3LeWBF"], {
-            guild: null == E ? void 0 : E.name,
-            applicationName: n.name,
-            timestamp: S.currentPeriodEnd.getTime()
+        title: d.intl.string(d.t.CeCHk1),
+        subtitle: U ? d.intl.format(d.t.fZP9QD, {
+            applicationName: i.name,
+            timestamp: E.currentPeriodEnd.getTime()
+        }) : d.intl.format(d.t["3LeWBF"], {
+            guild: O?.name,
+            applicationName: i.name,
+            timestamp: E.currentPeriodEnd.getTime()
         }),
         transitionState: e,
         onClose: T,
-        children: (0, i.jsxs)("div", {
-            className: N.oV,
-            children: [null != g ? (0, i.jsx)(l.wx6, {
+        children: (0, a.jsxs)("div", {
+            className: S.oV,
+            children: [null != L ? (0, a.jsx)(s.wx6, {
                 type: "critical",
-                children: g.message
-            }) : null, (0, i.jsx)(A.iH, {
-                applicationId: n.id,
-                storeListingBenefits: O.benefits,
-                className: N.iq
+                children: L.message
+            }) : null, (0, a.jsx)(u.iH, {
+                applicationId: i.id,
+                storeListingBenefits: p.benefits,
+                className: S.iq
             })]
         })
     })

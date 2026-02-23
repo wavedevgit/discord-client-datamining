@@ -1,68 +1,38 @@
-/** chunk id: 311321, original params: e,n,t (module,exports,require) **/
-t.d(n, {
-    A: () => p
+/** chunk id: 311321, original params: n,i,e (module,exports,require) **/
+e.d(i, {
+    A: () => o
 });
-var l = t(627968);
-t(64700);
-var r = t(665260),
-    i = t(397927),
-    s = t(652215),
-    u = t(985018),
-    o = t(638329);
-
-function a(e) {
-    for (var n = 1; n < arguments.length; n++) {
-        var t = null != arguments[n] ? arguments[n] : {},
-            l = Object.keys(t);
-        "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(t, e).enumerable
-        }))), l.forEach(function(n) {
-            var l;
-            l = t[n], n in e ? Object.defineProperty(e, n, {
-                value: l,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[n] = l
-        })
-    }
-    return e
-}
-
-function c(e, n) {
-    return n = null != n ? n : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(e, n) {
-        var t = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var l = Object.getOwnPropertySymbols(e);
-            t.push.apply(t, l)
-        }
-        return t
-    })(Object(n)).forEach(function(t) {
-        Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
-    }), e
-}
-let d = {
+var t = e(627968);
+e(64700);
+var l = e(665260),
+    s = e(397927),
+    r = e(652215),
+    a = e(985018),
+    d = e(638329);
+let u = {
     size: "md",
-    color: i.LU0.colors.INTERACTIVE_TEXT_DEFAULT
+    color: s.LU0.colors.INTERACTIVE_TEXT_DEFAULT
 };
 
-function p(e) {
+function o(n) {
     let {
-        subscriptions: n,
-        color: t = "text-default"
-    } = e, p = n.some(e => (0, r.Lt)(e.skuFlags, s.d68.APPLICATION_GUILD_SUBSCRIPTION));
-    return (0, l.jsx)(i.Heading, {
+        subscriptions: i,
+        color: e = "text-default"
+    } = n, o = i.some(n => (0, l.Lt)(n.skuFlags, r.d68.APPLICATION_GUILD_SUBSCRIPTION));
+    return (0, t.jsx)(s.Heading, {
         variant: "heading-lg/semibold",
-        color: t,
-        className: o.R,
-        children: p ? (0, l.jsxs)(l.Fragment, {
-            children: [(0, l.jsx)(i.RR9, c(a({}, d), {
+        color: e,
+        className: d.R,
+        children: o ? (0, t.jsxs)(t.Fragment, {
+            children: [(0, t.jsx)(s.RR9, {
+                ...u,
                 color: "currentColor"
-            })), u.intl.string(u.t.XIhSoj)]
-        }) : (0, l.jsxs)(l.Fragment, {
-            children: [(0, l.jsx)(i.nys, c(a({}, d), {
+            }), a.intl.string(a.t.XIhSoj)]
+        }) : (0, t.jsxs)(t.Fragment, {
+            children: [(0, t.jsx)(s.nys, {
+                ...u,
                 color: "currentColor"
-            })), u.intl.string(u.t.dxfZph)]
+            }), a.intl.string(a.t.dxfZph)]
         })
     })
 }

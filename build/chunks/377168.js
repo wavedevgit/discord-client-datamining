@@ -3,10 +3,10 @@ n.d(t, {
     A: () => s,
     q: () => a
 });
-var r = n(600975),
-    i = n(996744),
+var i = n(600975),
+    r = n(996744),
     l = n(688151);
-let a = (0, r.C)({
+let a = (0, i.C)({
     kind: "user",
     id: "2025-06_voice_filters_ea",
     label: "Voice Filters EA",
@@ -38,9 +38,9 @@ function s(e) {
         location: t
     }, {
         autoTrackExposure: !1
-    }), r = (0, i.Cg)({
+    }), i = (0, r.Cg)({
         location: "VoiceFiltersEarlyAccess",
         autoTrackExposure: !0
     });
-    return n && r
+    return n && i
 }

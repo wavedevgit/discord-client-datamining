@@ -1,149 +1,130 @@
 /** chunk id: 163233, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => C
-}), n(321073), n(896048), n(492834);
+    A: () => T
+}), n(321073);
 var a = n(627968),
-    l = n(64700),
-    r = n(311907),
-    i = n(342494),
-    s = n(688810),
+    i = n(64700),
+    s = n(311907),
+    l = n(342494),
+    r = n(688810),
     o = n(704824),
-    c = n(362490),
-    d = n(395332),
+    d = n(362490),
+    c = n(395332),
     u = n(429913),
     m = n(379848),
-    p = n(183555),
-    h = n(633075),
-    x = n(735321),
+    h = n(183555),
+    x = n(633075),
+    p = n(735321),
     g = n(667049),
-    f = n(657331),
-    b = n(384377),
-    v = n(961350),
-    j = n(403362),
-    _ = n(49999),
-    y = n(518477),
+    _ = n(657331),
+    f = n(384377),
+    b = n(961350),
+    v = n(403362),
+    j = n(49999),
+    C = n(518477),
     A = n(985018);
 
-function C(e) {
+function T(e) {
     let {
         targetElementRef: t,
         onClose: n
-    } = e, [C, S] = l.useState(!1), {
-        trackUserProfileEditAction: O
-    } = (0, p.NJ)(), T = (0, r.bG)([v.default], () => v.default.getId()), E = function() {
-        let e, t, n = (0, r.bG)([v.default], () => v.default.getId()),
+    } = e, [T, S] = i.useState(!1), {
+        trackUserProfileEditAction: y
+    } = (0, h.NJ)(), E = (0, s.bG)([b.default], () => b.default.getId()), N = function() {
+        let e, t, n = (0, s.bG)([b.default], () => b.default.getId()),
             a = (0, g.A)(n),
-            i = l.useMemo(() => a.filter(e => e instanceof h.R), [a]),
-            s = (e = (0, d.ul)({
+            l = i.useMemo(() => a.filter(e => e instanceof x.R), [a]),
+            r = (e = (0, c.ul)({
                 location: "UserProfileAccountPopoutApplicationWidgetCoachmark"
-            }), l.useMemo(() => null == e ? void 0 : e.filter(e => e.isEligibleForEditProfileUpsell()), [e])),
-            m = l.useMemo(() => {
-                var e;
-                return null != (e = null == s ? void 0 : s.map(e => e.applicationId)) ? e : []
-            }, [s]),
-            p = (t = (0, u.A)(m), l.useMemo(() => t.filter(j.Vq), [t])),
+            }), i.useMemo(() => e?.filter(e => e.isEligibleForEditProfileUpsell()), [e])),
+            m = i.useMemo(() => r?.map(e => e.applicationId) ?? [], [r]),
+            h = (t = (0, u.A)(m), i.useMemo(() => t.filter(v.Vq), [t])),
             {
-                tokens: x,
-                fetched: f
+                tokens: p,
+                fetched: _
             } = (0, o.j)(m),
-            b = (0, c.U9)(p);
-        return l.useMemo(() => {
-            if (null == s || null == x || !f) return null;
+            f = (0, d.U9)(h);
+        return i.useMemo(() => {
+            if (null == r || null == p || !_) return null;
             let e = [],
                 t = [];
-            for (let n of s) {
-                let a = x.find(e => e.application.id === n.applicationId),
-                    l = i.find(e => e.applicationId === n.applicationId),
-                    r = p.find(e => e.id === n.applicationId),
-                    s = b.find(e => e.context.application.id === n.applicationId);
-                if (null == r) return null;
-                null != a && null == l ? e.push({
+            for (let n of r) {
+                let a = p.find(e => e.application.id === n.applicationId),
+                    i = l.find(e => e.applicationId === n.applicationId),
+                    s = h.find(e => e.id === n.applicationId),
+                    r = f.find(e => e.context.application.id === n.applicationId);
+                if (null == s) return null;
+                null != a && null == i ? e.push({
                     type: "linked",
                     config: n,
-                    application: r,
+                    application: s,
                     dismissibleContent: n.editProfileLinkedDc
-                }) : null == a && (null == s ? void 0 : s.preferredFlow) != null && t.push({
+                }) : null == a && r?.preferredFlow != null && t.push({
                     type: "unlinked",
                     config: n,
-                    application: r,
+                    application: s,
                     dismissibleContent: n.editProfileUnlinkedDc,
-                    authFlow: s.preferredFlow
+                    authFlow: r.preferredFlow
                 })
             }
             return [...e, ...t]
-        }, [s, x, f, i, p, b])
+        }, [r, p, _, l, h, f])
     }(), {
-        analyticsLocations: N
-    } = (0, s.Ay)();
-    return null == E || 0 === E.length ? null : (0, a.jsx)(m.Ay, {
-        contentTypes: E.map(e => e.dismissibleContent),
+        analyticsLocations: I
+    } = (0, r.Ay)();
+    return null == N || 0 === N.length ? null : (0, a.jsx)(m.Ay, {
+        contentTypes: N.map(e => e.dismissibleContent),
         children: e => {
             let {
-                visibleContent: l,
-                markAsDismissed: r
-            } = e, s = E.find(e => e.dismissibleContent === l);
-            if (null == s) return null;
-            let o = "linked" === s.type,
-                c = () => (0, f.openUserProfileModal)({
-                    userId: T,
-                    tabSection: y.RP.WIDGETS
+                visibleContent: i,
+                markAsDismissed: s
+            } = e, r = N.find(e => e.dismissibleContent === i);
+            if (null == r) return null;
+            let o = "linked" === r.type,
+                d = () => (0, _.openUserProfileModal)({
+                    userId: E,
+                    tabSection: C.RP.WIDGETS
                 }).then(() => {
-                    r(_.i.TAKE_ACTION), n()
+                    s(j.i.TAKE_ACTION), n()
                 });
-            return (0, a.jsx)(i.AM, {
+            return (0, a.jsx)(l.AM, {
                 targetElementRef: t,
                 position: "right",
                 gradientColor: "blue",
-                graphic: null != s.config.editProfileUpsellImage ? {
+                graphic: null != r.config.editProfileUpsellImage ? {
                     type: "image",
-                    src: s.config.editProfileUpsellImage
+                    src: r.config.editProfileUpsellImage
                 } : void 0,
                 title: A.intl.format(A.t.TXDztH, {
-                    applicationName: s.application.name
+                    applicationName: r.application.name
                 }),
                 body: o ? A.intl.string(A.t["63Kso0"]) : A.intl.string(A.t.HwXoeC),
-                onRequestClose: () => r(_.i.USER_DISMISS),
+                onRequestClose: () => s(j.i.USER_DISMISS),
                 actions: [o ? {
                     text: A.intl.string(A.t.VSLDly),
                     onClick: () => {
-                        S(!0), c().then(() => {
+                        S(!0), d().then(() => {
                             let e;
-                            return e = new h.R({
-                                applicationId: s.application.id
-                            }), void((0, x.Y5)(e), O(function(e) {
-                                for (var t = 1; t < arguments.length; t++) {
-                                    var n = null != arguments[t] ? arguments[t] : {},
-                                        a = Object.keys(n);
-                                    "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                                        return Object.getOwnPropertyDescriptor(n, e).enumerable
-                                    }))), a.forEach(function(t) {
-                                        var a;
-                                        a = n[t], t in e ? Object.defineProperty(e, t, {
-                                            value: a,
-                                            enumerable: !0,
-                                            configurable: !0,
-                                            writable: !0
-                                        }) : e[t] = a
-                                    })
-                                }
-                                return e
-                            }({
-                                action: "WIDGET_ADDED"
-                            }, e.getProfileEditAnalyticsOptions())), (0, b.XA)(y.jM.WIDGET_ADDED))
+                            return e = new x.R({
+                                applicationId: r.application.id
+                            }), void((0, p.Y5)(e), y({
+                                action: "WIDGET_ADDED",
+                                ...e.getProfileEditAnalyticsOptions()
+                            }), (0, f.XA)(C.jM.WIDGET_ADDED))
                         }).finally(() => S(!1))
                     },
-                    loading: C
+                    loading: T
                 } : {
                     text: A.intl.string(A.t["DSJi3+"]),
                     onClick: () => {
-                        s.authFlow.initiate({
+                        r.authFlow.initiate({
                             onConfirm: () => {
-                                S(!0), c().finally(() => S(!1))
+                                S(!0), d().finally(() => S(!1))
                             },
-                            analyticsLocations: N
+                            analyticsLocations: I
                         })
                     },
-                    loading: C
+                    loading: T
                 }]
             })
         }

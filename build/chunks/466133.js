@@ -1,70 +1,69 @@
 /** chunk id: 466133, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => x
-}), n(896048);
-var r = n(627968),
-    i = n(64700),
-    s = n(311907),
+    A: () => E
+});
+var i = n(627968),
+    s = n(64700),
+    r = n(311907),
     l = n(397927),
     a = n(830215),
     o = n(803306),
-    c = n(396681),
-    u = n(854378),
-    d = n(49463),
+    d = n(396681),
+    c = n(854378),
+    u = n(49463),
     h = n(369053),
-    p = n(158237),
-    g = n(210714),
-    f = n(961350),
-    _ = n(652215),
-    m = n(985018),
+    _ = n(158237),
+    p = n(210714),
+    g = n(961350),
+    m = n(652215),
+    f = n(985018),
     A = n(473169);
-s.Ay.initialize();
-let x = e => {
+r.Ay.initialize();
+let E = e => {
     let {
         location: t
-    } = e, n = (0, s.bG)([f.default], () => f.default.isAuthenticated()), x = (0, s.bG)([d.A], () => d.A.hasLoadedExperiments), E = (0, p.Jp)("RSL - Landing Page"), [v, y] = i.useState(!1), [b, j] = i.useState(m.intl.string(m.t["9exy+V"])), [O, I] = i.useState(!0), S = e => {
+    } = e, n = (0, r.bG)([g.default], () => g.default.isAuthenticated()), E = (0, r.bG)([u.A], () => u.A.hasLoadedExperiments), x = (0, _.Jp)("RSL - Landing Page"), [I, v] = s.useState(!1), [N, j] = s.useState(f.intl.string(f.t["9exy+V"])), [S, C] = s.useState(!0), y = e => {
         switch (e) {
-            case _.t02.INVALID_FORM_BODY:
-            case _.t02.DSA_RSL_REPORT_NOT_FOUND:
-                j(m.intl.string(m.t.bzXDfc));
+            case m.t02.INVALID_FORM_BODY:
+            case m.t02.DSA_RSL_REPORT_NOT_FOUND:
+                j(f.intl.string(f.t.bzXDfc));
                 break;
-            case _.t02.DSA_RSL_ALREADY_REQUESTED:
-                j(m.intl.string(m.t.rV00wq));
+            case m.t02.DSA_RSL_ALREADY_REQUESTED:
+                j(f.intl.string(f.t.rV00wq));
                 break;
-            case _.t02.DSA_RSL_LIMITED_TIME:
-                j(m.intl.string(m.t["0dI29h"]));
+            case m.t02.DSA_RSL_LIMITED_TIME:
+                j(f.intl.string(f.t["0dI29h"]));
                 break;
-            case _.t02.DSA_RSL_REPORT_INELIGIBLE:
-                j(m.intl.string(m.t["RGa/Gb"]));
+            case m.t02.DSA_RSL_REPORT_INELIGIBLE:
+                j(f.intl.string(f.t["RGa/Gb"]));
                 break;
             default:
-                j(m.intl.string(m.t["0QLzfv"]))
+                j(f.intl.string(f.t["0QLzfv"]))
         }
     };
-    return i.useEffect(() => {
-        n ? (I(!0), o.rQ({
+    return s.useEffect(() => {
+        n ? (C(!0), o.rQ({
             withAnalyticsToken: !0
-        }).then(() => I(!1)).catch(() => I(!1))) : I(!1)
-    }, [n]), i.useEffect(() => {
-        x || E || a.A.getExperiments()
-    }, [x, E]), i.useEffect(() => {
+        }).then(() => C(!1)).catch(() => C(!1))) : C(!1)
+    }, [n]), s.useEffect(() => {
+        E || x || a.A.getExperiments()
+    }, [E, x]), s.useEffect(() => {
         let e = async e => {
-            var t, n;
             try {
-                let n = null != e ? await (0, h.q)(e) : void 0;
-                null != n ? j(m.intl.string(m.t.e6mZMt)) : S(null == (t = n.body) ? void 0 : t.code)
+                let t = null != e ? await (0, h.q)(e) : void 0;
+                null != t ? j(f.intl.string(f.t.e6mZMt)) : y(t.body?.code)
             } catch (e) {
-                S(null == (n = e.body) ? void 0 : n.code)
+                y(e.body?.code)
             } finally {
-                y(!1)
+                v(!1)
             }
         };
-        y(!0), e((0, c.A)(t)), (0, g.d)("report_second_look")
-    }, [t]), E && !O && (0, r.jsxs)(u.Ay, {
-        children: [(0, r.jsx)(u.hE, {
+        v(!0), e((0, d.A)(t)), (0, p.d)("report_second_look")
+    }, [t]), x && !S && (0, i.jsxs)(c.Ay, {
+        children: [(0, i.jsx)(c.hE, {
             className: A.QB,
-            children: b
-        }), v && (0, r.jsx)(l.y$y, {})]
+            children: N
+        }), I && (0, i.jsx)(l.y$y, {})]
     })
 }

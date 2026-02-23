@@ -1,68 +1,64 @@
 /** chunk id: 615658, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => h
+    A: () => A
 });
-var r = n(627968),
-    l = n(64700),
-    i = n(311907),
-    s = n(118019),
+var i = n(627968),
+    s = n(64700),
+    l = n(311907),
+    r = n(118019),
     a = n(383501),
     o = n(728458),
     c = n(38050),
-    u = n(998740),
-    d = n(572808),
-    p = n(241080);
-let h = () => {
-    var e, t;
-    let n = (0, i.bG)([a.A], () => a.A.getChannelId()),
-        h = (0, i.bG)([u.A], () => null != n && u.A.isUserConnected(n)),
-        g = (0, c.n)(e => e.genre),
-        f = (0, c.n)(e => e.songIndex),
-        m = (0, c.n)(e => e.playRadio),
-        b = (0, c.n)(e => e.globalMute),
-        A = (0, c.n)(e => e.playNextSong),
-        y = (0, c.n)(e => e.volumes),
-        O = l.useRef(null),
-        j = l.useRef(null),
-        x = l.useRef(null),
-        _ = (0, p.A)(g, f),
-        v = (0, i.bG)([u.A], () => u.A.assets);
-    return (l.useEffect(() => {
-        let e = O.current;
-        if (null != e && (null == _ ? void 0 : _.src) != null && (e.pause(), e.src = _.src, !b && m && h)) {
-            var t;
-            null == (t = e.play()) || t.catch(e => {
-                o.A.captureException(e)
-            })
-        }
-    }, [null == _ ? void 0 : _.src, b, m, h]), l.useEffect(() => {
-        var e, t;
-        let n = j.current,
-            r = x.current;
-        null != n && (b || !h ? n.pause() : null == (e = n.play()) || e.catch(e => {
-            o.A.captureException(e)
-        })), null != r && (b || !h ? r.pause() : null == (t = r.play()) || t.catch(e => {
+    d = n(998740),
+    u = n(572808),
+    h = n(241080);
+let A = () => {
+    let e = (0, l.bG)([a.A], () => a.A.getChannelId()),
+        t = (0, l.bG)([d.A], () => null != e && d.A.isUserConnected(e)),
+        n = (0, c.n)(e => e.genre),
+        A = (0, c.n)(e => e.songIndex),
+        p = (0, c.n)(e => e.playRadio),
+        g = (0, c.n)(e => e.globalMute),
+        m = (0, c.n)(e => e.playNextSong),
+        _ = (0, c.n)(e => e.volumes),
+        f = s.useRef(null),
+        x = s.useRef(null),
+        C = s.useRef(null),
+        E = (0, h.A)(n, A),
+        I = (0, l.bG)([d.A], () => d.A.assets);
+    return (s.useEffect(() => {
+        let e = f.current;
+        null != e && E?.src != null && (e.pause(), e.src = E.src, !g && p && t && e.play()?.catch(e => {
             o.A.captureException(e)
         }))
-    }, [b, h]), h) ? (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(s.A, {
-            ref: O,
-            onEnded: A,
-            volume: b ? 0 : y.radio,
-            children: (0, r.jsx)("source", {
-                src: null == _ ? void 0 : _.src
+    }, [E?.src, g, p, t]), s.useEffect(() => {
+        let e = x.current,
+            n = C.current;
+        null != e && (g || !t ? e.pause() : e.play()?.catch(e => {
+            o.A.captureException(e)
+        })), null != n && (g || !t ? n.pause() : n.play()?.catch(e => {
+            o.A.captureException(e)
+        }))
+    }, [g, t]), t) ? (0, i.jsxs)(i.Fragment, {
+        children: [(0, i.jsx)(r.A, {
+            ref: f,
+            onEnded: m,
+            volume: g ? 0 : _.radio,
+            children: (0, i.jsx)("source", {
+                src: E?.src
             })
-        }), (0, r.jsx)(s.A, {
-            ref: j,
-            volume: b ? 0 : y.environment,
-            children: (0, r.jsx)("source", {
-                src: null == v || null == (e = v.sounds) ? void 0 : e[d.qi.ENVIRONMENT]
-            })
-        }), (0, r.jsx)(s.A, {
+        }), (0, i.jsx)(r.A, {
             ref: x,
-            volume: b ? 0 : y.campfire,
-            children: (0, r.jsx)("source", {
-                src: null == v || null == (t = v.sounds) ? void 0 : t[d.qi.CAMPFIRE]
+            volume: g ? 0 : _.environment,
+            children: (0, i.jsx)("source", {
+                src: I?.sounds?.[u.qi.ENVIRONMENT]
+            })
+        }), (0, i.jsx)(r.A, {
+            ref: C,
+            volume: g ? 0 : _.campfire,
+            children: (0, i.jsx)("source", {
+                src: I?.sounds?.[u.qi.CAMPFIRE]
             })
         })]
     }) : null

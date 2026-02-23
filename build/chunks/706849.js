@@ -1,26 +1,25 @@
 /** chunk id: 706849, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => s
+    A: () => r
 });
-var r = n(64700),
-    l = n(531685),
-    i = n(365971),
+var l = n(64700),
+    i = n(531685),
+    s = n(365971),
     a = n(613999);
-let s = {
+let r = {
     useForumChannelSeenManager: function(e) {
         let {
             guildId: t,
             channelId: n
-        } = e, s = r.useRef(null), o = (0, i.Xg)(), c = !l.A.isFocused(o);
-        return r.useLayoutEffect(() => (null == s.current && (s.current = new a.Ay({
+        } = e, r = l.useRef(null), o = (0, s.Xg)(), d = !i.A.isFocused(o);
+        return l.useLayoutEffect(() => (null == r.current && (r.current = new a.Ay({
             guildId: t,
             channelId: n,
-            isPaused: c,
+            isPaused: d,
             windowId: o
-        }), s.current.initialize()), () => {
-            var e;
-            null == (e = s.current) || e.terminate(), s.current = null
-        }), [n, t, c, o]), s.current
+        }), r.current.initialize()), () => {
+            r.current?.terminate(), r.current = null
+        }), [n, t, d, o]), r.current
     }
 }

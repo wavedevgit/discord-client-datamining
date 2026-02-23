@@ -1,37 +1,37 @@
-/** chunk id: 118101, original params: t,e,n (module,exports,require) **/
-n.d(e, {
-    default: () => s
+/** chunk id: 118101, original params: t,n,e (module,exports,require) **/
+e.d(n, {
+    default: () => o
 });
-var i = n(627968);
-n(64700);
-var l = n(158954),
-    r = n(956793),
-    a = n(849736),
-    o = n(985018);
+var i = e(627968);
+e(64700);
+var l = e(158954),
+    r = e(956793),
+    a = e(849736),
+    s = e(985018);
 
-function s(t) {
+function o(t) {
     let {
-        channel: e,
-        transitionState: n,
-        onClose: s
+        channel: n,
+        transitionState: e,
+        onClose: o
     } = t;
 
-    function u() {
-        r.default.disconnect(), s()
+    function d() {
+        r.default.disconnect(), o()
     }
     return (0, i.jsx)(l.Modal, {
-        transitionState: n,
-        title: o.intl.string(o.t.pADdJu),
-        subtitle: o.intl.string(o.t.mT7jwN),
-        onClose: s,
+        transitionState: e,
+        title: s.intl.string(s.t.pADdJu),
+        subtitle: s.intl.string(s.t.mT7jwN),
+        onClose: o,
         actions: [{
-            text: o.intl.string(o.t.xTwqz2),
-            onClick: u,
+            text: s.intl.string(s.t.xTwqz2),
+            onClick: d,
             variant: "secondary"
         }, {
-            text: o.intl.string(o.t["sBP/1s"]),
+            text: s.intl.string(s.t["sBP/1s"]),
             onClick: function() {
-                (0, a.OE)(e), u()
+                (0, a.OE)(n), d()
             },
             variant: "critical-primary"
         }]

@@ -1,62 +1,44 @@
 /** chunk id: 480680, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => U
-}), n(114821), n(339614), n(896048);
-var r = n(627968),
-    l = n(64700),
-    i = n(503698),
-    s = n.n(i),
-    a = n(92674),
+    A: () => w
+});
+var i = n(627968),
+    s = n(64700),
+    l = n(503698),
+    r = n.n(l),
+    a = n(475539),
     o = n(311907),
     c = n(827734);
 n(990078);
-var u = n(397927),
-    d = n(73153),
-    p = n(334738),
-    h = n(964486);
+var d = n(397927),
+    u = n(73153),
+    h = n(334738),
+    A = n(964486);
 n(793574), n(688810);
-var g = n(952790),
-    f = n(85109),
+var p = n(952790),
+    g = n(85109),
     m = n(734057),
-    b = n(71393),
-    A = n(320501),
-    y = n(222823),
-    O = n(661191),
-    j = n(851109),
-    x = n(706341),
-    _ = n(932883),
-    v = n(599486),
-    E = n(320697),
-    C = n(394953),
-    S = n(628325),
-    I = n(524628),
-    N = n(81435),
-    T = n(313452),
-    P = n(849077),
-    w = n(652215),
-    R = n(985018),
+    _ = n(71393),
+    f = n(320501),
+    x = n(222823),
+    C = n(661191),
+    E = n(851109),
+    I = n(706341),
+    b = n(932883),
+    N = n(599486),
+    S = n(320697),
+    T = n(394953),
+    y = n(628325),
+    v = n(524628),
+    j = n(81435),
+    R = n(313452),
+    O = n(849077),
+    L = n(652215),
+    M = n(985018),
     D = n(760362);
-
-function L(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = r
-        })
-    }
-    return e
-}
-let M = [],
-    G = {
+let G = [],
+    U = {
         controller: new a.Controller({
             value: 1,
             immediate: !0
@@ -65,210 +47,209 @@ let M = [],
         bannerVisible: !1,
         communityInfoVisible: !1,
         shouldShowSubscribeTooltip: !1,
-        bannerVisibleHeight: P.Sp,
+        bannerVisibleHeight: O.Sp,
         hasGuildSubheader: !1,
         disableBannerAnimation: !0
     };
 
-function k(e) {
+function P(e) {
     let {
         includePanelSpacing: t
-    } = e, n = (0, _.op)(), {
-        selectedFilter: i
-    } = (0, v.A)(), a = (0, o.bG)([E.A], () => E.A.oldestDisplayedMessageId), c = (0, o.yK)([E.A], () => E.A.getInboxMessages()), S = (0, o.yK)([y.Ay, b.A, E.A], () => c.filter(e => !(0, C.EJ)({
+    } = e, n = (0, b.op)(), {
+        selectedFilter: l
+    } = (0, N.A)(), a = (0, o.bG)([S.A], () => S.A.oldestDisplayedMessageId), c = (0, o.yK)([S.A], () => S.A.getInboxMessages()), y = (0, o.yK)([x.Ay, _.A, S.A], () => c.filter(e => !(0, T.EJ)({
         messageId: e.id,
         channelId: e.channelId,
         guildId: e.guildId,
-        ReadStateStore_: y.Ay,
-        GuildStore_: b.A
-    }) && !(0, C.zo)(e, E.A.selectedItemInfo))), I = (0, o.yK)([y.Ay, b.A, E.A], () => c.filter(e => (0, C.EJ)({
+        ReadStateStore_: x.Ay,
+        GuildStore_: _.A
+    }) && !(0, T.zo)(e, S.A.selectedItemInfo))), v = (0, o.yK)([x.Ay, _.A, S.A], () => c.filter(e => (0, T.EJ)({
         messageId: e.id,
         channelId: e.channelId,
         guildId: e.guildId,
-        ReadStateStore_: y.Ay,
-        GuildStore_: b.A
-    }) || (0, C.zo)(e, E.A.selectedItemInfo))), N = l.useCallback(e => {
-        i !== P.Io.BOOKMARKS && x.A.loadMoreInbox({
+        ReadStateStore_: x.Ay,
+        GuildStore_: _.A
+    }) || (0, T.zo)(e, S.A.selectedItemInfo))), j = s.useCallback(e => {
+        l !== O.Io.BOOKMARKS && I.A.loadMoreInbox({
             viewId: n,
             loadingTrigger: e
         })
-    }, [i, n]), {
-        hasLoadedEver: R,
-        canLoadMore: k
-    } = (0, o.cf)([E.A], () => ({
-        hasLoadedEver: E.A.hasLoadedEver,
-        canLoadMore: E.A.canLoadMore({})
+    }, [l, n]), {
+        hasLoadedEver: M,
+        canLoadMore: P
+    } = (0, o.cf)([S.A], () => ({
+        hasLoadedEver: S.A.hasLoadedEver,
+        canLoadMore: S.A.canLoadMore({})
     }));
-    l.useEffect(() => {
-            k && !R && N(P.VA.ON_OPEN)
-        }, [k, R, N]),
+    s.useEffect(() => {
+            P && !M && j(O.VA.ON_OPEN)
+        }, [P, M, j]),
         function(e) {
             let {
                 unreadChannelIds: t
-            } = (0, C.U4)();
-            l.useEffect(() => {
+            } = (0, T.U4)();
+            s.useEffect(() => {
                 null != e && t.forEach(e => {
-                    var t;
-                    let n = A.A.getMessages(e),
-                        r = null == (t = n.last()) ? void 0 : t.id,
-                        l = y.Ay.ackMessageId(e),
-                        i = n.hasPresent() && n.ready && !n.cached;
-                    null != r && null != l && i && O.default.compare(l, r) >= 0 && p.ack(e, {
-                        section: w.JJy.NOTIFICATIONS_INBOX,
-                        object: w.ZSU.ACK_INBOX_CHANNEL_NO_MESSAGES,
-                        objectType: w.AnalyticsObjectTypes.ACK_AUTOMATIC
+                    let t = f.A.getMessages(e),
+                        n = t.last()?.id,
+                        i = x.Ay.ackMessageId(e),
+                        s = t.hasPresent() && t.ready && !t.cached;
+                    null != n && null != i && s && C.default.compare(i, n) >= 0 && h.ack(e, {
+                        section: L.JJy.NOTIFICATIONS_INBOX,
+                        object: L.ZSU.ACK_INBOX_CHANNEL_NO_MESSAGES,
+                        objectType: L.AnalyticsObjectTypes.ACK_AUTOMATIC
                     }, !0)
                 })
             }, [e, t])
-        }(R ? I : null);
-    let U = (0, o.yK)([f.A], () => f.A.getSavedMessages()),
-        Y = l.useMemo(() => U.flatMap(e => {
-            var t;
+        }(M ? v : null);
+    let w = (0, o.yK)([g.A], () => g.A.getSavedMessages()),
+        F = s.useMemo(() => w.flatMap(e => {
             let {
-                message: n
+                message: t
             } = e;
-            return null == n ? M : [{
-                id: n.id,
-                channelId: n.channel_id,
-                guildId: null == (t = m.A.getBasicChannel(n.channel_id)) ? void 0 : t.guild_id,
-                kind: P.yL.BOOKMARK,
-                message: n
+            return null == t ? G : [{
+                id: t.id,
+                channelId: t.channel_id,
+                guildId: m.A.getBasicChannel(t.channel_id)?.guild_id,
+                kind: O.yL.BOOKMARK,
+                message: t
             }]
-        }), [U]),
-        K = V(S, i, a),
-        W = V(I, i, null);
-    (0, h.Ay)(() => {
-        var e;
-        d.h.dispatch({
+        }), [w]),
+        K = k(y, l, a),
+        W = k(v, l, null);
+    (0, A.Ay)(() => {
+        u.h.dispatch({
             type: "NOTIFICATIONS_INBOX_OPEN"
         });
-        let t = (0, j.GE)({
+        let e = (0, E.GE)({
                 location: "NotificationsInboxSidebar"
             }).notificationCenterVariant,
-            r = null == (e = E.A.getDevOverrides().navOnClick) || e;
-        if (t !== j.U5.SIDEBAR || !1 === r) return;
+            t = S.A.getDevOverrides().navOnClick ?? !0;
+        if (e !== E.U5.SIDEBAR || !1 === t) return;
         let {
-            message: l,
-            isUnread: i
+            message: i,
+            isUnread: s
         } = function(e, t) {
-            var n, r, l;
-            let i = null == (r = e[e.length - 1]) ? void 0 : r.message,
-                s = null == (l = t[t.length - 1]) ? void 0 : l.message,
-                a = null != s ? s : i;
-            if (null != a) return {
-                message: a,
-                isUnread: null != s
+            let n = e[e.length - 1]?.message,
+                i = t[t.length - 1]?.message,
+                s = i ?? n;
+            if (null != s) return {
+                message: s,
+                isUnread: null != i
             };
-            let o = E.A.getNotifyingChannelIds();
-            if (null == o || 0 === o.length) return {
+            let l = S.A.getNotifyingChannelIds();
+            if (null == l || 0 === l.length) return {
                 message: null,
                 isUnread: !1
             };
-            let c = o[0],
-                u = y.Ay.getTrackedAckMessageId(c);
-            return null == u ? {
+            let r = l[0],
+                a = x.Ay.getTrackedAckMessageId(r);
+            return null == a ? {
                 message: null,
                 isUnread: !1
             } : {
                 message: {
-                    id: O.default.atNextMillisecond(u),
-                    channel_id: c
+                    id: C.default.atNextMillisecond(a),
+                    channel_id: r
                 },
-                isUnread: null != (n = y.Ay.hasUnread(c)) && n
+                isUnread: x.Ay.hasUnread(r) ?? !1
             }
         }(K, W);
-        null != l && x.A.inboxItemClick({
-            message: l,
+        null != i && I.A.inboxItemClick({
+            message: i,
             channel: {
-                id: l.channel_id
+                id: i.channel_id
             },
-            isUnread: i,
+            isUnread: s,
             isSidebar: !0,
             track: !1,
             autoTriggeredOnInboxOpen: !0,
             viewId: n
         })
-    }), (0, h.l0)(() => {
-        d.h.dispatch({
+    }), (0, A.l0)(() => {
+        u.h.dispatch({
             type: "NOTIFICATIONS_INBOX_CLOSE"
         })
     });
     let {
-        filterStyle: z
-    } = (0, j.X8)({
+        filterStyle: Y
+    } = (0, E.X8)({
         location: "NotificationsInboxSidebar"
-    }), X = z === j.yF.DROPDOWN && i !== P.Io.ALL, q = (0, P.Yw)(i);
-    return (0, r.jsx)("nav", {
-        className: s()(D.kL, {
+    }), z = Y === E.yF.DROPDOWN && l !== O.Io.ALL, X = (0, O.Yw)(l);
+    return (0, i.jsx)("nav", {
+        className: r()(D.kL, {
             [D.Yu]: t
         }),
-        children: (0, r.jsxs)(u.Fmo, {
+        children: (0, i.jsxs)(d.Fmo, {
             forceLevel: 1,
-            component: (0, r.jsx)(g.Ay, L({
+            component: (0, i.jsx)(p.Ay, {
                 hasSubheader: !0,
-                guild: q
-            }, G)),
-            children: [i === P.Io.ALL && (0, r.jsx)(F, {
-                hideBanner: !R || i !== P.Io.ALL
-            }), X && (0, r.jsx)(u.hKd, {
+                guild: X,
+                ...U
+            }),
+            children: [l === O.Io.ALL && (0, i.jsx)(H, {
+                hideBanner: !M || l !== O.Io.ALL
+            }), z && (0, i.jsx)(d.hKd, {
                 size: 8
-            }), (0, r.jsx)(T.A, {
+            }), (0, i.jsx)(R.A, {
                 className: D.cl,
-                renderMessageGroup: H,
-                messages: i === P.Io.BOOKMARKS ? Y : K,
-                unreadMessages: i === P.Io.BOOKMARKS ? [] : W,
+                renderMessageGroup: B,
+                messages: l === O.Io.BOOKMARKS ? F : K,
+                unreadMessages: l === O.Io.BOOKMARKS ? [] : W,
                 listName: "notifications-inbox",
-                renderLoadingState: B,
-                ignoreGrouping: i === P.Io.BOOKMARKS,
-                loadMore: N
+                renderLoadingState: V,
+                ignoreGrouping: l === O.Io.BOOKMARKS,
+                loadMore: j
             })]
         })
     })
 }
 
-function U(e) {
-    return (0, r.jsx)(_.GM, {
-        children: (0, r.jsx)(k, L({}, e))
+function w(e) {
+    return (0, i.jsx)(b.GM, {
+        children: (0, i.jsx)(P, {
+            ...e
+        })
     })
 }
 
-function V(e, t, n) {
-    return l.useMemo(() => 0 === e.length || t === P.Io.BOOKMARKS ? M : e.filter(e => {
+function k(e, t, n) {
+    return s.useMemo(() => 0 === e.length || t === O.Io.BOOKMARKS ? G : e.filter(e => {
         let {
-            id: r
+            id: i
         } = e;
-        return !(O.default.age(r) > P.V$ || null != n && 0 >= O.default.compare(r, n)) && t === P.Io.ALL
+        return !(C.default.age(i) > O.V$ || null != n && 0 >= C.default.compare(i, n)) && t === O.Io.ALL
     }), [e, t, n])
 }
 
-function B() {
-    return (0, r.jsx)(I.A, {})
+function V() {
+    return (0, i.jsx)(v.A, {})
 }
 
-function H(e, t) {
-    return (0, r.jsx)(N.A, {
+function B(e, t) {
+    return (0, i.jsx)(j.A, {
         message: e[0],
         groupedMessages: e.slice(1),
         isUnread: t
     }, e[0].id)
 }
 
-function F(e) {
+function H(e) {
     let {
         hideBanner: t
-    } = e, n = (0, S.S)(e => e.shouldHide());
-    return (0, r.jsx)("div", {
-        className: s()(D.dl, {
+    } = e, n = (0, y.S)(e => e.shouldHide());
+    return (0, i.jsx)("div", {
+        className: r()(D.dl, {
             [D.jD]: n || t
         }),
-        children: (0, r.jsxs)("div", {
+        children: (0, i.jsxs)("div", {
             className: D.XD,
-            children: [(0, r.jsx)(u.Text, {
+            children: [(0, i.jsx)(d.Text, {
                 variant: "text-sm/medium",
                 color: "text-feedback-positive",
                 className: D.vi,
-                children: R.intl.string(R.t["6XMM+D"])
-            }), (0, r.jsx)(u.iA$, {
+                children: M.intl.string(M.t["6XMM+D"])
+            }), (0, i.jsx)(d.iA$, {
                 size: "sm",
                 color: c.A.colors.TEXT_FEEDBACK_POSITIVE.css
             })]

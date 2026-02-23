@@ -1,95 +1,99 @@
 /** chunk id: 692150, original params: e,t,n (module,exports,require) **/
 n.r(t), n.d(t, {
-    default: () => N
-}), n(896048);
-var r = n(627968),
-    a = n(64700),
-    i = n(934551),
-    l = n(311907),
-    s = n(397927),
-    o = n(544420),
-    c = n(58736),
-    d = n(801264),
+    default: () => S
+});
+var a = n(627968),
+    i = n(64700),
+    s = n(934551),
+    r = n(311907),
+    l = n(397927),
+    d = n(544420),
+    o = n(58736),
+    c = n(801264),
     u = n(975571),
-    m = n(363487),
-    f = n(665171),
-    g = n(397400),
-    _ = n(187549),
-    x = n(522055),
+    _ = n(363487),
+    m = n(665171),
+    x = n(397400),
+    g = n(187549),
+    f = n(522055),
     v = n(270424),
-    j = n(140033),
-    p = n(486180),
-    b = n(566704),
-    h = n(652215),
-    y = n(294726),
-    O = n(985018),
-    S = n(715896);
+    h = n(140033),
+    j = n(486180),
+    p = n(566704),
+    C = n(652215),
+    I = n(294726),
+    A = n(985018),
+    N = n(715896);
 
-function N(e) {
+function S(e) {
     let {
         guildId: t
     } = e;
-    (0, g.tR)(t), (0, b.A)(t);
-    let n = (0, _.U)("GameServerPage");
-    a.useEffect(() => {
-        (0, f.cq)(t), o.A.getDetectableGames()
+    (0, x.tR)(t), (0, p.A)(t);
+    let n = (0, g.U)("GameServerPage");
+    i.useEffect(() => {
+        (0, m.cq)(t), d.A.getDetectableGames()
     }, [t]);
-    let N = (0, m.A)(t),
-        A = (0, l.bG)([x.A], () => x.A.getStateForGuild(t)),
-        C = a.useMemo(() => (null == A ? void 0 : A.instances) == null ? void 0 : 0 === Object.values(A.instances).length ? null : Object.values(A.instances).map((e, n) => (0, r.jsx)(j.Ay, {
-            guildId: t,
-            instance: e
-        }, "".concat(e.gameId, "-").concat(n))), [null == A ? void 0 : A.instances, t]),
-        [I, E] = a.useState(!1);
-    return a.useEffect(() => {
-        (null == C || C.length > 0) && E(!0)
-    }, [C]), (0, r.jsxs)("div", {
-        className: S.kL,
-        children: [(0, r.jsxs)(c.Ay, {
-            className: S.KE,
-            toolbar: (0, r.jsx)("div", {}),
-            children: [(0, r.jsx)(c.Ay.Icon, {
-                icon: i.GameControllerIcon,
+    let S = (0, _.A)(t),
+        E = (0, r.bG)([f.A], () => f.A.getStateForGuild(t)),
+        b = i.useMemo(() => {
+            if (!E?.hasFetchedInstances) return;
+            let e = Object.values(E.instances ?? {});
+            return 0 === e.length ? null : e.map((e, n) => (0, a.jsx)(h.Ay, {
+                guildId: t,
+                instance: e
+            }, `${e.gameId}-${n}`))
+        }, [E?.instances, E?.hasFetchedInstances, t]),
+        [T, y] = i.useState(!1);
+    return i.useEffect(() => {
+        (null == b || b.length > 0) && y(!0)
+    }, [b]), (0, a.jsxs)("div", {
+        className: N.kL,
+        children: [(0, a.jsxs)(o.Ay, {
+            className: N.KE,
+            toolbar: (0, a.jsx)("div", {}),
+            children: [(0, a.jsx)(o.Ay.Icon, {
+                icon: s.GameControllerIcon,
                 "aria-label": ""
-            }), (0, r.jsx)(c.Ay.Title, {
-                children: O.intl.string(y.default.vCzwM7)
-            }), (0, r.jsx)(s.LpS, {
+            }), (0, a.jsx)(o.Ay.Title, {
+                children: A.intl.string(I.default.vCzwM7)
+            }), (0, a.jsx)(l.LpS, {
                 disableColor: !0,
-                text: O.intl.string(O.t.oW0eUd),
-                className: S.qS
-            }), (0, r.jsx)(c.Ay.Divider, {
-                className: S.yF
-            }), (0, r.jsx)(s.Text, {
+                text: A.intl.string(A.t.oW0eUd),
+                className: N.qS
+            }), (0, a.jsx)(o.Ay.Divider, {
+                className: N.yF
+            }), (0, a.jsx)(l.Text, {
                 variant: "text-sm/normal",
                 color: "text-muted",
-                children: O.intl.format(y.default.LiR4eN, {
-                    helpCenterUrl: u.A.getArticleURL(h.MVz.GAME_SERVER_HOSTING)
+                children: A.intl.format(I.default.LiR4eN, {
+                    helpCenterUrl: u.A.getArticleURL(C.MVz.GAME_SERVER_HOSTING)
                 })
             })]
-        }), (0, r.jsxs)("div", {
-            className: S.hQ,
-            children: [(null == A ? void 0 : A.instances) != null ? (0, r.jsxs)("div", {
-                className: S.nd,
-                children: [n && (0, r.jsx)("div", {
-                    className: S.MR,
-                    children: (0, r.jsx)(d.A, {
-                        look: d.k.WARNING,
-                        children: O.intl.format(y.default.XzXjK2, {})
+        }), (0, a.jsxs)("div", {
+            className: N.hQ,
+            children: [E?.hasFetchedInstances ? (0, a.jsxs)("div", {
+                className: N.nd,
+                children: [n && (0, a.jsx)("div", {
+                    className: N.MR,
+                    children: (0, a.jsx)(c.A, {
+                        look: c.k.WARNING,
+                        children: A.intl.format(I.default.XzXjK2, {})
                     })
-                }), (0, r.jsx)(s.IpV, {
-                    children: (0, r.jsxs)("div", {
-                        className: S.Y_,
-                        children: [C, I && (0, r.jsx)(v.A, {
+                }), (0, a.jsx)(l.IpV, {
+                    children: (0, a.jsxs)("div", {
+                        className: N.Y_,
+                        children: [b, T && (0, a.jsx)(v.A, {
                             guildId: t
                         })]
                     })
                 })]
-            }) : (0, r.jsx)("div", {
-                className: S.dc,
-                children: (0, r.jsx)(s.y$y, {
-                    type: s.tVU.SPINNING_CIRCLE
+            }) : (0, a.jsx)("div", {
+                className: N.dc,
+                children: (0, a.jsx)(l.y$y, {
+                    type: l.tVU.SPINNING_CIRCLE
                 })
-            }), N && (0, r.jsx)(p.A, {
+            }), S && (0, a.jsx)(j.A, {
                 guildId: t
             })]
         })]

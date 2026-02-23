@@ -1,17 +1,19 @@
-/** chunk id: 973925, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    Z: () => i
-}), n(938796);
-var l = n(647006);
+/** chunk id: 973925, original params: e,t,a (module,exports,require) **/
+a.d(t, {
+    Z: () => s
+});
+var n = a(20015),
+    i = a(647006);
 
-function i(e) {
-    let {
-        flags: t
-    } = e, n = (0, l.a)(t), i = null != n && ((null == n ? void 0 : n.messageContent) || (null == n ? void 0 : n.messageContentLimited)), r = null != n && ((null == n ? void 0 : n.guildPresences) || (null == n ? void 0 : n.guildPresencesLimited)), s = null != n && ((null == n ? void 0 : n.guildMembers) || (null == n ? void 0 : n.guildMembersLimited));
+function s(e) {
+    let t = (0, i.a)((0, n.K)(e)),
+        a = null != t && (t?.messageContent || t?.messageContentLimited),
+        s = null != t && (t?.guildPresences || t?.guildPresencesLimited),
+        l = null != t && (t?.guildMembers || t?.guildMembersLimited);
     return {
-        hasMessageContent: i,
-        hasGuildPresences: r,
-        hasGuildMembers: s,
-        hasIntents: i || r || s
+        hasMessageContent: a,
+        hasGuildPresences: s,
+        hasGuildMembers: l,
+        hasIntents: a || s || l
     }
 }

@@ -1,73 +1,73 @@
 /** chunk id: 540385, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    Ay: () => d,
-    bW: () => u
-}), n(65821), n(321073), n(896048);
-var l = n(627968),
-    r = n(64700),
-    i = n(735438),
-    a = n.n(i),
-    s = n(114212),
+    Ay: () => u,
+    bW: () => d
+}), n(321073);
+var i = n(627968),
+    l = n(64700),
+    s = n(735438),
+    a = n.n(s),
+    r = n(114212),
     o = n(652215),
     c = n(525853);
-
-function u(e) {
-    let {
-        compact: t,
-        messageGroups: n,
-        groupRange: l,
-        attachments: r,
-        fontSize: i,
-        groupSpacing: c
-    } = e;
-    if (r > n) throw Error("generateMessageSpecs: too many attachments relative to messageGroups: ".concat(n, ", ").concat(r));
-    let u = i / o.hH7.FONT_SIZE_DEFAULT,
-        d = t ? s.BP : s.B5,
-        h = t ? s.Uj : s._G,
-        p = 0,
-        f = Array(n).fill(null).map(() => {
-            let e = a().random(1, l);
-            return p += c * u, p += d * u, p += (e - 1) * h * u, e
-        }),
-        m = f.map((e, t) => t),
-        g = [];
-    for (; g.length < r;) {
-        let e = {
-            width: a().random(140, 400),
-            height: a().random(100, 320)
-        };
-        g.push([m.splice(a().random(0, m.length - 1), 1)[0], e]), p += e.height + s.VF * u
-    }
-    return {
-        messages: f,
-        attachmentSpecs: g,
-        totalHeight: p,
-        groupSpacing: c
-    }
-}
 
 function d(e) {
     let {
         compact: t,
+        messageGroups: n,
+        groupRange: i,
+        attachments: l,
+        fontSize: s,
+        groupSpacing: c
+    } = e;
+    if (l > n) throw Error(`generateMessageSpecs: too many attachments relative to messageGroups: ${n}, ${l}`);
+    let d = s / o.hH7.FONT_SIZE_DEFAULT,
+        u = t ? r.BP : r.B5,
+        h = t ? r.Uj : r._G,
+        m = 0,
+        A = Array(n).fill(null).map(() => {
+            let e = a().random(1, i);
+            return m += c * d, m += u * d, m += (e - 1) * h * d, e
+        }),
+        g = A.map((e, t) => t),
+        p = [];
+    for (; p.length < l;) {
+        let e = {
+            width: a().random(140, 400),
+            height: a().random(100, 320)
+        };
+        p.push([g.splice(a().random(0, g.length - 1), 1)[0], e]), m += e.height + r.VF * d
+    }
+    return {
+        messages: A,
+        attachmentSpecs: p,
+        totalHeight: m,
+        groupSpacing: c
+    }
+}
+
+function u(e) {
+    let {
+        compact: t,
         messages: n,
-        attachmentSpecs: i,
+        attachmentSpecs: s,
         totalHeight: a,
         groupSpacing: o
     } = e;
-    return r.useMemo(() => {
+    return l.useMemo(() => {
         let e = Array(n.length).fill(void 0);
-        for (let [t, n] of i) e[t] = n;
-        return (0, l.jsx)("div", {
+        for (let [t, n] of s) e[t] = n;
+        return (0, i.jsx)("div", {
             className: c.i,
             style: {
                 height: a
             },
-            children: n.map((n, r) => (0, l.jsx)(s.Ay, {
+            children: n.map((n, l) => (0, i.jsx)(r.Ay, {
                 groupSpacing: o,
                 compact: t,
                 messages: n,
-                attachmentSpecs: e[r]
-            }, r))
+                attachmentSpecs: e[l]
+            }, l))
         })
-    }, [t, n, i, a, o])
+    }, [t, n, s, a, o])
 }

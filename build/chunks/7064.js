@@ -2,11 +2,11 @@
 n.d(t, {
     A: () => _
 });
-var r = n(627968),
-    i = n(64700),
-    l = n(397927),
-    s = n(195043),
-    a = n(193658),
+var i = n(627968),
+    s = n(64700),
+    a = n(397927),
+    r = n(195043),
+    l = n(193658),
     o = n(355097),
     c = n(531525),
     d = n(985018),
@@ -17,32 +17,32 @@ function _(e) {
         currentUser: t,
         disabled: n,
         handleDisableAccount: _,
-        handleDeleteAccount: p
-    } = e, m = t.isClaimed(), g = i.useRef(null);
-    return (0, a.A)(g, o.Ew.AccountScrollPositions.DISABLE_ACCOUNT), (0, r.jsx)(s.x, {
+        handleDeleteAccount: m
+    } = e, A = t.isClaimed(), g = s.useRef(null);
+    return (0, l.A)(g, o.Ew.AccountScrollPositions.DISABLE_ACCOUNT), (0, i.jsx)(r.x, {
         setting: c.H.ACCOUNT_DISABLE_ACCOUNT,
-        children: (0, r.jsx)("div", {
+        children: (0, i.jsx)("div", {
             ref: g,
-            children: (0, r.jsx)(l.D0$, {
+            children: (0, i.jsx)(a.D0$, {
                 label: d.intl.string(d.t.ZKsIks),
-                description: m ? d.intl.string(d.t.TIh3Yj) : d.intl.string(d.t.czsGA8),
-                children: (0, r.jsxs)(l.ButtonGroup, {
+                description: A ? d.intl.string(d.t.TIh3Yj) : d.intl.string(d.t.czsGA8),
+                children: (0, i.jsxs)(a.ButtonGroup, {
                     size: "sm",
                     className: u.U,
-                    children: [m ? (0, r.jsx)(l.Button, {
+                    children: [A ? (0, i.jsx)(a.Button, {
                         variant: "critical-primary",
                         size: "sm",
                         text: d.intl.string(d.t.jf5GGb),
                         disabled: n,
                         onClick: _
-                    }) : null, (0, r.jsx)(s.x, {
+                    }) : null, (0, i.jsx)(r.x, {
                         setting: c.H.ACCOUNT_DELETE_ACCOUNT,
-                        children: (0, r.jsx)(l.Button, {
+                        children: (0, i.jsx)(a.Button, {
                             variant: "critical-secondary",
                             size: "sm",
                             text: d.intl.string(d.t["8lQ2rR"]),
                             disabled: n,
-                            onClick: p
+                            onClick: m
                         })
                     })]
                 })

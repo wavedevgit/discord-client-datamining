@@ -1,101 +1,72 @@
-/** chunk id: 773262, original params: e,t,r (module,exports,require) **/
-r.r(t), r.d(t, {
-    default: () => O
+/** chunk id: 773262, original params: e,t,s (module,exports,require) **/
+s.r(t), s.d(t, {
+    default: () => p
 });
-var n = r(627968),
-    o = r(64700),
-    c = r(158954),
-    l = r(311907),
-    s = r(397927),
-    a = r(162605),
-    i = r(798286),
-    u = r(814278),
-    p = r(998759),
-    d = r(75811),
-    f = r(930840);
-r(603266);
-var b = r(985018),
-    y = r(42768);
-let O = function(e) {
-    var t, r;
+var r = s(627968),
+    l = s(64700),
+    n = s(158954),
+    a = s(311907),
+    c = s(397927),
+    i = s(162605),
+    o = s(798286),
+    d = s(814278),
+    u = s(998759),
+    x = s(75811),
+    h = s(930840);
+s(603266);
+var m = s(985018),
+    _ = s(42768);
+let p = function(e) {
     let {
-        transitionState: O,
-        streamKey: j,
-        channelId: m,
-        onClose: g
-    } = e, h = (0, l.bG)([a.A], () => {
-        var e;
-        return null == (e = a.A.getSecureFramesState(j)) ? void 0 : e.epochAuthenticator
-    }), v = (0, p.z)({
-        fingerprintBase64: h,
+        transitionState: t,
+        streamKey: s,
+        channelId: p,
+        onClose: f
+    } = e, j = (0, a.bG)([i.A], () => i.A.getSecureFramesState(s)?.epochAuthenticator), T = (0, u.z)({
+        fingerprintBase64: j,
         chunkSize: 5,
         desiredLength: 30
-    }), x = o.useCallback(() => {
-        (0, i.y5)({
-            channelId: m
+    }), v = l.useCallback(() => {
+        (0, o.y5)({
+            channelId: p
         })
-    }, [m]), w = {
-        transitionState: O,
-        title: b.intl.string(b.t.QogHld),
-        subtitle: b.intl.string(b.t.qODBkW)
-    }, _ = (0, n.jsxs)(n.Fragment, {
-        children: [(0, n.jsxs)("div", {
-            className: y.Ot,
-            children: [(0, n.jsxs)("div", {
-                className: y.wx,
-                children: [(0, n.jsx)(s.Heading, {
+    }, [p]), g = {
+        transitionState: t,
+        title: m.intl.string(m.t.QogHld),
+        subtitle: m.intl.string(m.t.qODBkW)
+    }, k = (0, r.jsxs)(r.Fragment, {
+        children: [(0, r.jsxs)("div", {
+            className: _.Ot,
+            children: [(0, r.jsxs)("div", {
+                className: _.wx,
+                children: [(0, r.jsx)(c.Heading, {
                     variant: "text-sm/bold",
                     color: "text-strong",
-                    children: b.intl.string(b.t.cgBTyO)
-                }), null != v && (0, n.jsx)(f.c, {
-                    className: y.nJ,
-                    chunks: v,
-                    color: s.LU0.colors.INTERACTIVE_TEXT_DEFAULT,
-                    onCopy: x
+                    children: m.intl.string(m.t.cgBTyO)
+                }), null != T && (0, r.jsx)(h.c, {
+                    className: _.nJ,
+                    chunks: T,
+                    color: c.LU0.colors.INTERACTIVE_TEXT_DEFAULT,
+                    onCopy: v
                 })]
-            }), (0, n.jsx)(d.j, {
-                className: y.aY,
-                chunks: v,
+            }), (0, r.jsx)(x.j, {
+                className: _.aY,
+                chunks: T,
                 columns: 3
             })]
-        }), (0, n.jsx)(s.Text, {
-            className: y.qr,
+        }), (0, r.jsx)(c.Text, {
+            className: _.qr,
             variant: "text-sm/normal",
             color: "text-muted",
-            children: b.intl.format(b.t["H3+ktv"], {
-                helpArticle: (0, u.aW)()
+            children: m.intl.format(m.t["H3+ktv"], {
+                helpArticle: (0, d.aW)()
             })
         })]
     });
-    return (0, n.jsx)(c.Modal, (t = function(e) {
-        for (var t = 1; t < arguments.length; t++) {
-            var r = null != arguments[t] ? arguments[t] : {},
-                n = Object.keys(r);
-            "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-                return Object.getOwnPropertyDescriptor(r, e).enumerable
-            }))), n.forEach(function(t) {
-                var n;
-                n = r[t], t in e ? Object.defineProperty(e, t, {
-                    value: n,
-                    enumerable: !0,
-                    configurable: !0,
-                    writable: !0
-                }) : e[t] = n
-            })
-        }
-        return e
-    }({}, w), r = r = {
-        onClose: g,
+    return (0, r.jsx)(n.Modal, {
+        ...g,
+        onClose: f,
         actions: [],
-        children: _
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
-        var r = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var n = Object.getOwnPropertySymbols(e);
-            r.push.apply(r, n)
-        }
-        return r
-    })(Object(r)).forEach(function(e) {
-        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
-    }), t))
+        children: k
+    })
 }

@@ -1,174 +1,145 @@
 /** chunk id: 724591, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => P
-}), n(896048);
-var r = n(627968),
-    l = n(64700),
-    i = n(503698),
-    s = n.n(i),
+    A: () => L
+});
+var i = n(627968),
+    s = n(64700),
+    l = n(503698),
+    r = n.n(l),
     a = n(311907),
     o = n(554146),
     c = n(827734),
-    u = n(192308),
-    d = n(397927),
-    p = n(442433),
-    h = n(379848),
+    d = n(192308),
+    u = n(397927),
+    h = n(442433),
+    A = n(379848),
+    p = n(361158),
     g = n(976860),
-    f = n(871123),
-    m = n(733391),
-    b = n(832163),
-    A = n(938289),
-    y = n(44724),
-    O = n(849134),
-    j = n(874100),
-    x = n(203548),
-    _ = n(186111),
-    v = n(371794),
-    E = n(998218),
-    C = n(652793),
-    S = n(652215),
-    I = n(49999),
-    N = n(985018),
-    T = n(811094);
-let P = l.memo(function(e) {
-    var t;
+    m = n(871123),
+    _ = n(733391),
+    f = n(832163),
+    x = n(938289),
+    C = n(44724),
+    E = n(849134),
+    I = n(874100),
+    b = n(203548),
+    N = n(186111),
+    S = n(371794),
+    T = n(998218),
+    y = n(652793),
+    v = n(652215),
+    j = n(49999),
+    R = n(985018),
+    O = n(811094);
+let L = s.memo(function(e) {
     let {
-        guild: i,
-        selected: P
-    } = e, w = l.useRef(null), R = l.useRef(null), D = (0, u.useHasAnyModalOpen)(), L = (0, a.bG)([_.A], () => _.A.hasLayers()), M = (0, A.n)({
+        guild: t,
+        selected: l
+    } = e, L = s.useRef(null), M = s.useRef(null), D = (0, d.useHasAnyModalOpen)(), G = (0, a.bG)([N.A], () => N.A.hasLayers()), U = (0, p.xr)(e => e.fullScreenLayers.length > 0), P = (0, x.n)({
         location: "game_shop_channel_row"
     });
-    l.useEffect(() => {
-        (0, m.Kh)(i.id)
-    }, [i.id]);
-    let G = (0, a.bG)([b.A], () => b.A.getAnnouncement(i.id)),
-        k = (null == G ? void 0 : G.state) === "success" ? G.announcement : void 0,
-        [U, V] = (0, h.x_)(o.M.GAME_SHOP_NEW_BADGE, i.id, null != (t = null == k ? void 0 : k.id) ? t : ""),
-        B = U === o.M.GAME_SHOP_NEW_BADGE && null != k,
-        H = !M || null == G || "loading" === G.state || B || i.id !== (0, f.zf)(),
-        [F, Y] = (0, h.kn)(H ? [] : [o.M.SLAYER_STOREFRONT_XBOX_ANNOUNCEMENT]),
-        K = F === o.M.SLAYER_STOREFRONT_XBOX_ANNOUNCEMENT,
-        W = B || K,
-        z = l.useMemo(() => B ? V : Y, [B, V, Y]);
-    l.useEffect(() => {
-        P && W && z(I.i.INDIRECT_ACTION)
-    }, [z, P, W]);
-    let X = l.useCallback(() => {
-            var e, t;
-            z(I.i.TAKE_ACTION);
-            let n = null != (e = null == (t = b.A.getStorefrontState(i.id)) ? void 0 : t.activePage) ? e : 0;
-            (0, g.pX)(S.BVt.CHANNELS_GAME_SHOP(i.id, n))
-        }, [i.id, z]),
-        q = l.useCallback(() => {
-            (0, y.X)({
-                guildId: i.id,
-                forceFetch: B
+    s.useEffect(() => {
+        (0, _.Kh)(t.id)
+    }, [t.id]);
+    let w = (0, a.bG)([f.A], () => f.A.getAnnouncement(t.id)),
+        k = w?.state === "success" ? w.announcement : void 0,
+        [V, B] = (0, A.x_)(o.M.GAME_SHOP_NEW_BADGE, t.id, k?.id ?? ""),
+        H = V === o.M.GAME_SHOP_NEW_BADGE && null != k,
+        F = !P || null == w || "loading" === w.state || H || t.id !== (0, m.zf)(),
+        [K, W] = (0, A.kn)(F ? [] : [o.M.SLAYER_STOREFRONT_XBOX_ANNOUNCEMENT]),
+        Y = K === o.M.SLAYER_STOREFRONT_XBOX_ANNOUNCEMENT,
+        z = H || Y,
+        X = s.useMemo(() => H ? B : W, [H, B, W]);
+    s.useEffect(() => {
+        l && z && X(j.i.INDIRECT_ACTION)
+    }, [X, l, z]);
+    let q = s.useCallback(() => {
+            X(j.i.TAKE_ACTION);
+            let e = f.A.getStorefrontState(t.id)?.activePage ?? 0;
+            (0, g.pX)(v.BVt.CHANNELS_GAME_SHOP(t.id, e))
+        }, [t.id, X]),
+        J = s.useCallback(() => {
+            (0, C.X)({
+                guildId: t.id,
+                forceFetch: H
             })
-        }, [i.id, B]),
-        J = l.useCallback(() => {
-            z(I.i.USER_DISMISS)
-        }, [z]),
-        Q = l.useCallback(e => {
-            null != i && (0, p.L3)(e, async () => {
+        }, [t.id, H]),
+        Q = s.useCallback(() => {
+            X(j.i.USER_DISMISS)
+        }, [X]),
+        $ = s.useCallback(e => {
+            null != t && (0, h.L3)(e, async () => {
                 let {
                     default: e
                 } = await n.e("99523").then(n.bind(n, 41614));
-                return t => {
-                    var n, l;
-                    return (0, r.jsx)(e, (n = function(e) {
-                        for (var t = 1; t < arguments.length; t++) {
-                            var n = null != arguments[t] ? arguments[t] : {},
-                                r = Object.keys(n);
-                            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                                return Object.getOwnPropertyDescriptor(n, e).enumerable
-                            }))), r.forEach(function(t) {
-                                var r;
-                                r = n[t], t in e ? Object.defineProperty(e, t, {
-                                    value: r,
-                                    enumerable: !0,
-                                    configurable: !0,
-                                    writable: !0
-                                }) : e[t] = r
-                            })
-                        }
-                        return e
-                    }({}, t), l = l = {
-                        guild: i
-                    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
-                        var n = Object.keys(e);
-                        if (Object.getOwnPropertySymbols) {
-                            var r = Object.getOwnPropertySymbols(e);
-                            n.push.apply(n, r)
-                        }
-                        return n
-                    })(Object(l)).forEach(function(e) {
-                        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(l, e))
-                    }), n))
-                }
+                return n => (0, i.jsx)(e, {
+                    ...n,
+                    guild: t
+                })
             })
-        }, [i]),
-        Z = l.useCallback(() => {
-            var e;
-            null == (e = w.current) || e.onMouseEnter(null, 500)
-        }, [w]),
-        $ = l.useCallback((e, t, n, l) => (0, r.jsx)(C.G, {
+        }, [t]),
+        Z = s.useCallback(() => {
+            L.current?.onMouseEnter(null, 500)
+        }, [L]),
+        ee = s.useCallback((e, n, s, a) => (0, i.jsx)(y.G, {
             innerClassName: e,
-            ref: R,
-            id: "game-shop-".concat(i.id),
-            renderIcon: e => (0, r.jsx)(d.U1X, {
+            ref: M,
+            id: `game-shop-${t.id}`,
+            renderIcon: e => (0, i.jsx)(u.U1X, {
                 size: "custom",
                 color: "currentColor",
                 width: 20,
                 height: 20,
-                className: s()(e, n)
+                className: r()(e, s)
             }),
-            text: (0, r.jsx)(d.Text, {
+            text: (0, i.jsx)(u.Text, {
                 variant: "text-md/medium",
-                className: s()(T.UU, t),
-                children: (null == i ? void 0 : i.id) === (0, f.zf)() ? N.intl.string(N.t.xFQAPs) : N.intl.string(N.t.vyaWs7)
+                className: r()(O.UU, n),
+                children: t?.id === (0, m.zf)() ? R.intl.string(R.t.xFQAPs) : R.intl.string(R.t.vyaWs7)
             }),
-            selected: P,
-            onMouseDown: q,
-            onClick: X,
-            onContextMenu: Q,
-            trailing: (0, r.jsxs)(r.Fragment, {
-                children: [B && (0, r.jsx)(d.LpS, {
-                    text: N.intl.string(N.t.y2b7CA),
+            selected: l,
+            onMouseDown: J,
+            onClick: q,
+            onContextMenu: $,
+            trailing: (0, i.jsxs)(i.Fragment, {
+                children: [H && (0, i.jsx)(u.LpS, {
+                    text: R.intl.string(R.t.y2b7CA),
                     color: c.A.colors.BACKGROUND_BRAND.css
-                }), l]
+                }), a]
             })
-        }), [i.id, P, q, X, Q, B]),
-        ee = l.useMemo(() => {
+        }), [t.id, l, J, q, $, H]),
+        et = s.useMemo(() => {
             if (null == k) return;
-            let e = null != k.assetId ? E.A.toURLSafe((0, v.YE)(k.applicationId, k.assetId, 128, "webp")) : void 0,
-                t = null != k.backgroundImageAssetId ? E.A.toURLSafe((0, v.YE)(k.applicationId, k.backgroundImageAssetId, 128, "webp")) : void 0;
+            let e = null != k.assetId ? T.A.toURLSafe((0, S.YE)(k.applicationId, k.assetId, 128, "webp")) : void 0,
+                t = null != k.backgroundImageAssetId ? T.A.toURLSafe((0, S.YE)(k.applicationId, k.backgroundImageAssetId, 128, "webp")) : void 0;
             if (null != e) return {
                 imageUrl: e,
                 backgroundImageUrl: t
             }
         }, [k]),
-        et = l.useCallback(() => B ? (0, r.jsx)(O.A, {
-            onActionClick: X,
-            onActionMouseDown: q,
+        en = s.useCallback(() => H ? (0, i.jsx)(E.A, {
+            onActionClick: q,
+            onActionMouseDown: J,
             onRender: Z,
-            onRequestClose: J,
-            targetElementRef: R,
-            skuImageDetails: ee,
-            title: N.intl.string(N.t["7PvvS9"]),
-            body: N.intl.formatToPlainString(N.t["9J4h1a"], {
+            onRequestClose: Q,
+            targetElementRef: M,
+            skuImageDetails: et,
+            title: R.intl.string(R.t["7PvvS9"]),
+            body: R.intl.formatToPlainString(R.t["9J4h1a"], {
                 applicationName: k.applicationName
             })
-        }) : K ? (0, r.jsx)(j.A, {
-            onActionClick: X,
-            onActionMouseDown: q,
+        }) : Y ? (0, i.jsx)(I.A, {
+            onActionClick: q,
+            onActionMouseDown: J,
             onRender: Z,
-            onRequestClose: J,
-            targetElementRef: R
-        }) : null, [B, k, X, q, Z, J, ee, K]);
-    return (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(x.A, {
-            ref: w,
-            children: $
-        }), !D && !L && et()]
+            onRequestClose: Q,
+            targetElementRef: M
+        }) : null, [H, k, q, J, Z, Q, et, Y]);
+    return (0, i.jsxs)(i.Fragment, {
+        children: [(0, i.jsx)(b.A, {
+            ref: L,
+            children: ee
+        }), !D && !G && !U && en()]
     })
 })

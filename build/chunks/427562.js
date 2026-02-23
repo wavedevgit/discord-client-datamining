@@ -1,41 +1,25 @@
 /** chunk id: 427562, original params: e,t,i (module,exports,require) **/
 i.d(t, {
-    iv: () => s,
-    p3: () => a
+    iv: () => a,
+    p3: () => r
 });
 var n, l = i(58149),
     c = i(954571),
-    r = i(975571),
-    o = i(652215),
-    s = ((n = {}).DESCRIPTION = "description", n.CATEGORIES = "categories", n.TAGS = "tags", n.AGREE_TO_RULES = "agree_to_rules", n);
-let a = e => {
+    s = i(975571),
+    d = i(652215),
+    a = ((n = {}).DESCRIPTION = "description", n.CATEGORIES = "categories", n.TAGS = "tags", n.AGREE_TO_RULES = "agree_to_rules", n);
+let r = e => {
     let {
         articleId: t,
         guildId: i,
         modalStep: n = null,
-        pageView: s = null
+        pageView: a = null
     } = e;
-    open(r.A.getArticleURL(t)), c.default.track(o.HAw.DISCOVERY_SETUP_CTA_CLICKED, function(e) {
-        for (var t = 1; t < arguments.length; t++) {
-            var i = null != arguments[t] ? arguments[t] : {},
-                n = Object.keys(i);
-            "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(i).filter(function(e) {
-                return Object.getOwnPropertyDescriptor(i, e).enumerable
-            }))), n.forEach(function(t) {
-                var n;
-                n = i[t], t in e ? Object.defineProperty(e, t, {
-                    value: n,
-                    enumerable: !0,
-                    configurable: !0,
-                    writable: !0
-                }) : e[t] = n
-            })
-        }
-        return e
-    }({
-        cta_name: o.Mmu,
-        discovery_settings_view: s,
+    open(s.A.getArticleURL(t)), c.default.track(d.HAw.DISCOVERY_SETUP_CTA_CLICKED, {
+        cta_name: d.Mmu,
+        discovery_settings_view: a,
         help_center_article_id: t,
-        modal_step: n
-    }, (0, l.H$)(i)))
+        modal_step: n,
+        ...(0, l.H$)(i)
+    })
 }

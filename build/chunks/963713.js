@@ -1,11 +1,11 @@
 /** chunk id: 963713, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    C: () => i,
-    T: () => r
+    C: () => l,
+    T: () => s
 });
 var a = n(627968),
-    l = n(64700);
-let r = l.createContext({
+    i = n(64700);
+let s = i.createContext({
         onCtxMenuClose: () => {},
         onCtxMenuOpen: () => {},
         onCtxMenuSelect: () => {},
@@ -17,33 +17,33 @@ let r = l.createContext({
         quest: null,
         taskDetails: null
     }),
-    i = e => {
+    l = e => {
         let {
             children: t,
             isExpanded: n,
-            isExpansionAnimationComplete: i,
-            onCtxMenuClose: s,
+            isExpansionAnimationComplete: l,
+            onCtxMenuClose: r,
             onCtxMenuOpen: o,
-            onCtxMenuSelect: c,
-            onGameSheetOpen: d,
+            onCtxMenuSelect: d,
+            onGameSheetOpen: c,
             onGameSheetClose: u,
             collapsedHeight: m,
-            quest: p,
-            taskDetails: h
-        } = e, x = l.useMemo(() => ({
+            quest: h,
+            taskDetails: x
+        } = e, p = i.useMemo(() => ({
             isExpanded: n,
-            isExpansionAnimationComplete: i,
-            onCtxMenuClose: s,
+            isExpansionAnimationComplete: l,
+            onCtxMenuClose: r,
             onCtxMenuOpen: o,
-            onCtxMenuSelect: c,
-            onGameSheetOpen: d,
+            onCtxMenuSelect: d,
+            onGameSheetOpen: c,
             onGameSheetClose: u,
             collapsedHeight: m,
-            quest: p,
-            taskDetails: h
-        }), [n, i, s, o, c, d, u, m, p, h]);
-        return (0, a.jsx)(r.Provider, {
-            value: x,
+            quest: h,
+            taskDetails: x
+        }), [n, l, r, o, d, c, u, m, h, x]);
+        return (0, a.jsx)(s.Provider, {
+            value: p,
             children: t
         })
     }

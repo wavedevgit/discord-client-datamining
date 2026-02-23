@@ -1,11 +1,11 @@
-/** chunk id: 338234, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    Uw: () => i,
+/** chunk id: 338234, original params: t,e,n (module,exports,require) **/
+n.d(e, {
+    Uw: () => r,
     fC: () => l
 });
-let r = (0, n(600975).C)({
+let i = (0, n(600975).C)({
     kind: "guild",
-    id: "2025-01_voice_user_activities",
+    id: "2026-02_voice_user_hover_activities",
     label: "Voice User Activities on Hover",
     defaultConfig: {
         enableUserHoverActivities: !1
@@ -19,26 +19,26 @@ let r = (0, n(600975).C)({
     }]
 });
 
-function l(e) {
+function l(t) {
     let {
-        guildId: t,
+        guildId: e,
         location: n
-    } = e;
-    return r.useExperiment({
-        guildId: t,
+    } = t;
+    return i.useExperiment({
+        guildId: e,
         location: n
     }, {
         autoTrackExposure: !0
     })
 }
 
-function i(e) {
+function r(t) {
     let {
-        guildId: t,
+        guildId: e,
         location: n
-    } = e;
-    return r.getCurrentConfig({
-        guildId: t,
+    } = t;
+    return i.getCurrentConfig({
+        guildId: e,
         location: n
     }, {
         autoTrackExposure: !0

@@ -1,55 +1,55 @@
 /** chunk id: 310482, original params: t,e,n (module,exports,require) **/
 n.d(e, {
-    default: () => u
-}), n(896048);
+    default: () => c
+});
 var a = n(627968),
     i = n(64700),
     r = n(732955),
-    l = n(397927),
-    o = n(985018),
-    s = n(945280);
+    o = n(397927),
+    s = n(985018),
+    l = n(945280);
 
-function u(t) {
+function c(t) {
     let {
         onConfirm: e,
         onClose: n,
-        guildName: u,
-        transitionState: c
+        guildName: c,
+        transitionState: u
     } = t, [m, p] = i.useState(""), [d, x] = i.useState(null), f = i.useMemo(() => [{
-        text: o.intl.string(o.t["ETE/oC"]),
+        text: s.intl.string(s.t["ETE/oC"]),
         onClick: n,
         variant: "secondary"
     }, {
-        text: o.intl.string(o.t.l3hWP6),
+        text: s.intl.string(s.t.l3hWP6),
         variant: "critical-primary",
         type: "submit"
     }], [n]);
     return (0, a.jsx)("form", {
         onSubmit: function(t) {
-            (t.preventDefault(), m.toLowerCase() !== u.toLowerCase()) ? x(o.intl.string(o.t["c2/DS/"])): (null == e || e(), n())
+            (t.preventDefault(), m.toLowerCase() !== c.toLowerCase()) ? x(s.intl.string(s.t["c2/DS/"])): (e?.(), n())
         },
         children: (0, a.jsxs)(r.aFV, {
-            title: o.intl.formatToPlainString(o.t.us7mC1, {
-                name: u
+            title: s.intl.formatToPlainString(s.t.us7mC1, {
+                name: c
             }),
-            subtitle: o.intl.format(o.t["Zuo+Vd"], {
-                name: u
+            subtitle: s.intl.format(s.t["Zuo+Vd"], {
+                name: c
             }),
             actions: f,
             onClose: n,
-            transitionState: c,
-            children: [(0, a.jsx)(l.ksK, {
+            transitionState: u,
+            children: [(0, a.jsx)(o.ksK, {
                 id: "text-entry-confirm",
                 type: "text",
-                label: o.intl.string(o.t.abprOC),
+                label: s.intl.string(s.t.abprOC),
                 value: m,
                 autoComplete: "off",
                 onChange: p,
                 autoFocus: !0
-            }), null != d && "" !== d ? (0, a.jsx)(l.Text, {
+            }), null != d && "" !== d ? (0, a.jsx)(o.Text, {
                 color: "text-feedback-critical",
                 variant: "text-xs/normal",
-                className: s.z,
+                className: l.z,
                 children: d
             }) : null]
         })

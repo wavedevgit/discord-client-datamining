@@ -1,4 +1,5 @@
 /** chunk id: 971090, original params: e,t,n (module,exports,require) **/
+"use strict";
 e.exports = {
     rH: "pendingFolderButtonIcon__93fc9",
     kL: "container__93fc9",

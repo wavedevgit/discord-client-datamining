@@ -1,113 +1,82 @@
 /** chunk id: 716730, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => y
+    A: () => x
 }), n(321073);
-var r = n(627968),
-    l = n(64700),
-    i = n(735438),
-    s = n(311907),
+var i = n(627968),
+    s = n(64700),
+    l = n(735438),
+    r = n(311907),
     a = n(397927),
     o = n(315502),
     c = n(709562),
-    u = n(222823),
-    d = n(741961),
-    p = n(234320),
-    h = n(795816),
-    g = n(933958),
-    f = n(5867),
+    d = n(222823),
+    u = n(741961),
+    h = n(234320),
+    A = n(795816),
+    p = n(933958),
+    g = n(5867),
     m = n(652215),
-    b = n(985018),
-    A = n(766924);
+    _ = n(985018),
+    f = n(766924);
 
-function y(e) {
+function x(e) {
     let {
         channelId: t,
-        className: n
-    } = e, y = function(e, t) {
-        if (null == e) return {};
-        var n, r, l, i = {};
-        if ("u" > typeof Reflect && Reflect.ownKeys) {
-            for (l = 0, n = Reflect.ownKeys(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
-            return i
-        }
-        if (i = function(e, t) {
-                if (null == e) return {};
-                var n, r, l = {},
-                    i = Object.getOwnPropertyNames(e);
-                for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n]);
-                return l
-            }(e, t), Object.getOwnPropertySymbols)
-            for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
-        return i
-    }(e, ["channelId", "className"]), O = l.useRef(null), j = (0, s.bG)([g.Ay], () => g.Ay.getFocusedLayout() === f.E8.RESIZABLE), x = l.useCallback(() => {
-        let e = j ? f.E8.NO_CHAT : f.E8.RESIZABLE;
-        (0, h.i5)(e)
-    }, [j]), {
-        unreadCount: _,
-        mentionCount: v
+        className: n,
+        ...x
+    } = e, C = s.useRef(null), E = (0, r.bG)([p.Ay], () => p.Ay.getFocusedLayout() === g.E8.RESIZABLE), I = s.useCallback(() => {
+        let e = E ? g.E8.NO_CHAT : g.E8.RESIZABLE;
+        (0, A.i5)(e)
+    }, [E]), {
+        unreadCount: b,
+        mentionCount: N
     } = function(e) {
-        let t = (0, s.bG)([d.A], () => !(0, i.isEmpty)(d.A.getTypingUsers(e)), [e]),
+        let t = (0, r.bG)([u.A], () => !(0, l.isEmpty)(u.A.getTypingUsers(e)), [e]),
             {
                 unreadCount: n,
-                mentionCount: r
-            } = (0, s.cf)([u.Ay], () => ({
-                unreadCount: u.Ay.getUnreadCount(e),
-                mentionCount: u.Ay.getMentionCount(e)
+                mentionCount: i
+            } = (0, r.cf)([d.Ay], () => ({
+                unreadCount: d.Ay.getUnreadCount(e),
+                mentionCount: d.Ay.getMentionCount(e)
             }), [e]);
         return {
             unreadCount: n,
-            mentionCount: r,
+            mentionCount: i,
             isTyping: t
         }
-    }(t), E = l.useCallback(() => {
-        var e;
-        null == (e = O.current) || e.focus()
+    }(t), S = s.useCallback(() => {
+        C.current?.focus()
     }, []);
-    (0, p.Vo)({
+    (0, h.Vo)({
         event: m.jej.FOCUS_CHAT_BUTTON,
-        handler: E
+        handler: S
     });
-    let C = j ? b.intl.string(b.t["5MstTl"]) : b.intl.string(b.t.kkKapG),
-        S = [C];
-    v > 0 && S.push(b.intl.formatToPlainString(b.t["3l1GOx"], {
-        mentionCount: v
-    })), _ > 0 && S.push(b.intl.string(b.t.x5zAGZ));
-    let I = (0, s.bG)([g.Ay], () => g.Ay.getFocusedLayout()),
-        N = v > 0 ? v : _,
-        T = N > 0;
-    return (0, r.jsxs)("div", {
-        className: A.iE,
-        children: [(0, r.jsx)(c.l, function(e) {
-            for (var t = 1; t < arguments.length; t++) {
-                var n = null != arguments[t] ? arguments[t] : {},
-                    r = Object.keys(n);
-                "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                    return Object.getOwnPropertyDescriptor(n, e).enumerable
-                }))), r.forEach(function(t) {
-                    var r;
-                    r = n[t], t in e ? Object.defineProperty(e, t, {
-                        value: r,
-                        enumerable: !0,
-                        configurable: !0,
-                        writable: !0
-                    }) : e[t] = r
-                })
-            }
-            return e
-        }({
+    let T = E ? _.intl.string(_.t["5MstTl"]) : _.intl.string(_.t.kkKapG),
+        y = [T];
+    N > 0 && y.push(_.intl.formatToPlainString(_.t["3l1GOx"], {
+        mentionCount: N
+    })), b > 0 && y.push(_.intl.string(_.t.x5zAGZ));
+    let v = (0, r.bG)([p.Ay], () => p.Ay.getFocusedLayout()),
+        j = N > 0 ? N : b,
+        R = j > 0;
+    return (0, i.jsxs)("div", {
+        className: f.iE,
+        children: [(0, i.jsx)(c.l, {
             isTrayButton: !0,
-            buttonRef: O,
-            onClick: x,
-            label: C,
-            "aria-label": S.join(", "),
+            buttonRef: C,
+            onClick: I,
+            label: T,
+            "aria-label": y.join(", "),
             tooltipPosition: "top",
-            iconComponent: I === f.E8.NO_CHAT ? a.jQp : a.g8p,
+            iconComponent: v === g.E8.NO_CHAT ? a.jQp : a.g8p,
             themeable: !0,
-            className: n
-        }, y)), T ? (0, r.jsx)(o.A, {
-            hasMentions: v > 0,
-            truncatedCount: N > 99 ? "99+" : N,
-            className: A.qS
+            className: n,
+            ...x
+        }), R ? (0, i.jsx)(o.A, {
+            hasMentions: N > 0,
+            truncatedCount: j > 99 ? "99+" : j,
+            className: f.qS
         }) : null]
     })
 }

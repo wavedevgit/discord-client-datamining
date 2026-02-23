@@ -2,11 +2,11 @@
 n.d(t, {
     A: () => s
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(763754),
-    l = n(888675),
-    a = n(985018);
+var l = n(763754),
+    a = n(888675),
+    r = n(985018);
 
 function s(e) {
     let {
@@ -14,18 +14,18 @@ function s(e) {
         channel: s,
         targetUser: o,
         actorUsernameHook: c,
-        targetUsernameHook: u,
-        compact: d
-    } = e, p = (0, i.Ay)(t), m = (0, i.d8)(o, s), f = c(p), g = u(null != m ? m : void 0), _ = a.intl.format(a.t["32QI5/"], {
-        actorName: p.nick,
-        actorHook: f,
-        targetName: null == m ? void 0 : m.nick,
-        targetHook: g
+        targetUsernameHook: d,
+        compact: u
+    } = e, m = (0, l.Ay)(t), _ = (0, l.d8)(o, s), A = c(m), h = d(_ ?? void 0), f = r.intl.format(r.t["32QI5/"], {
+        actorName: m.nick,
+        actorHook: A,
+        targetName: _?.nick,
+        targetHook: h
     });
-    return (0, r.jsx)(l.A, {
+    return (0, i.jsx)(a.A, {
         icon: n(884797),
         timestamp: t.timestamp,
-        compact: d,
-        children: _
+        compact: u,
+        children: f
     })
 }

@@ -3,15 +3,15 @@
 n.d(t, {
     A: () => o
 });
-var r = n(64700),
+var s = n(64700),
     l = n(155999),
-    s = n.n(l),
+    r = n.n(l),
     a = n(311907),
     i = n(590180);
 
 function o() {
     let e = (0, a.bG)([i.A], () => i.A.products);
-    return (0, r.useCallback)(t => s()(t.map(t => {
+    return (0, s.useCallback)(t => r()(t.map(t => {
         let n = e.get(t);
         return null != n && null != n.variantGroupStoreListingId ? i.A.getProductByStoreListingId(n.variantGroupStoreListingId) : n
     }).filter(e => null != e), "storeListingId"), [e])

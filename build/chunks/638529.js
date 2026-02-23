@@ -1,27 +1,27 @@
 /** chunk id: 638529, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     b: () => d
-}), n(65821), n(321073);
-var r = n(64700),
-    l = n(311907),
-    i = n(665171),
-    s = n(588591),
-    a = n(513246);
+}), n(321073);
+var l = n(64700),
+    r = n(311907),
+    a = n(665171),
+    i = n(588591),
+    s = n(513246);
 
 function d(e) {
-    let t = (0, l.bG)([s.A], () => s.A.getRegionStateForPingUrl(e)),
-        n = r.useRef(null),
-        d = r.useCallback(async t => {
+    let t = (0, r.bG)([i.A], () => i.A.getRegionStateForPingUrl(e)),
+        n = l.useRef(null),
+        d = l.useCallback(async t => {
             if ("" === e) return;
-            let r = [],
-                l = !1;
+            let l = [],
+                r = !1;
             try {
                 if (await new Promise((e, n) => {
-                        let i = () => {
+                        let a = () => {
                                 t.readyState === WebSocket.OPEN && t.close()
                             },
-                            s = setTimeout(() => {
-                                l || (l = !0, i(), n(Error("WebSocket timeout")))
+                            i = setTimeout(() => {
+                                r || (r = !0, a(), n(Error("WebSocket timeout")))
                             }, 5e3);
                         t.onopen = () => {
                             if (t.readyState === WebSocket.OPEN)
@@ -30,28 +30,28 @@ function d(e) {
                                     t.send(e.toString())
                                 }
                         }, t.onmessage = t => {
-                            if (l) return;
+                            if (r) return;
                             let n = parseFloat(t.data);
                             if (!isNaN(n)) {
                                 let t = performance.now(),
-                                    a = Math.round(t - n);
-                                r.push(a), !l && r.length >= 3 && (l = !0, clearTimeout(s), i(), e())
+                                    s = Math.round(t - n);
+                                l.push(s), !r && l.length >= 3 && (r = !0, clearTimeout(i), a(), e())
                             }
                         }, t.onerror = () => {
-                            l || (l = !0, clearTimeout(s), i(), n(Error("WebSocket error")))
+                            r || (r = !0, clearTimeout(i), a(), n(Error("WebSocket error")))
                         }, t.onclose = () => {
-                            l || (l = !0, clearTimeout(s), n(Error("WebSocket closed")))
+                            r || (r = !0, clearTimeout(i), n(Error("WebSocket closed")))
                         }
-                    }), r.length > 0) {
-                    let t = Math.round(r.reduce((e, t) => e + t, 0) / r.length);
-                    (0, i.QK)(e, {
+                    }), l.length > 0) {
+                    let t = Math.round(l.reduce((e, t) => e + t, 0) / l.length);
+                    (0, a.QK)(e, {
                         rtt: t,
                         loading: !1,
                         error: !1
                     })
                 } else throw Error("No successful pings")
             } catch (t) {
-                (0, i.QK)(e, {
+                (0, a.QK)(e, {
                     rtt: null,
                     loading: !1,
                     error: !0
@@ -60,31 +60,31 @@ function d(e) {
                 n.current === t && (n.current = null)
             }
         }, [e, n]);
-    r.useEffect(() => () => {
+    l.useEffect(() => () => {
         null != n.current && (n.current.close(), n.current = null)
     }, []);
     let o = null != t;
-    return r.useEffect(() => {
+    return l.useEffect(() => {
         if ("" === e || o) return;
-        let t = s.A.getRegionStateForPingUrl(e);
-        if ((null == t ? void 0 : t.rtt) != null || (null == t ? void 0 : t.loading) === !0) return;
-        (0, i.QK)(e, {
+        let t = i.A.getRegionStateForPingUrl(e);
+        if (t?.rtt != null || t?.loading === !0) return;
+        (0, a.QK)(e, {
             rtt: null,
             loading: !0,
             error: !1
         });
-        let r = new WebSocket("wss://".concat(e));
-        n.current = r, d(r)
+        let l = new WebSocket(`wss://${e}`);
+        n.current = l, d(l)
     }, [e, d, o]), {
-        pingText: r.useMemo(() => null == t || t.loading ? "—" : t.error ? "Error" : null !== t.rtt ? "".concat(t.rtt, "ms") : "—", [t]),
-        pingCircleStyle: r.useMemo(() => {
-            if (null == t || t.loading) return a.N5;
-            if (t.error) return a.ZK;
+        pingText: l.useMemo(() => null == t || t.loading ? "—" : t.error ? "Error" : null !== t.rtt ? `${t.rtt}ms` : "—", [t]),
+        pingCircleStyle: l.useMemo(() => {
+            if (null == t || t.loading) return s.N5;
+            if (t.error) return s.ZK;
             if (null !== t.rtt)
-                if (t.rtt < 50) return a.n5;
-                else if (t.rtt < 100) return a.mM;
-            else if (t.rtt < 200) return a.d9;
-            else return a.Rg
+                if (t.rtt < 50) return s.n5;
+                else if (t.rtt < 100) return s.mM;
+            else if (t.rtt < 200) return s.d9;
+            else return s.Rg
         }, [t])
     }
 }

@@ -1,26 +1,26 @@
 /** chunk id: 696452, original params: t,e,n (module,exports,require) **/
 n.d(e, {
-    default: () => o
+    default: () => c
 });
-var a = n(627968);
+var r = n(627968);
 n(64700);
-var l = n(397927),
-    r = n(975807),
+var a = n(397927),
+    l = n(975807),
     s = n(900549),
     i = n(985018),
-    c = n(117816);
+    o = n(117816);
 
-function o(t) {
+function c(t) {
     let {
         url: e,
         onClose: n,
-        transitionState: o
+        transitionState: c
     } = t;
-    return (0, a.jsx)(l.kpP, {
-        transitionState: o,
+    return (0, r.jsx)(a.kpP, {
+        transitionState: c,
         onClose: n,
         graphic: {
-            src: c.A,
+            src: o.A,
             type: "image"
         },
         gradientColor: "blue",
@@ -31,14 +31,14 @@ function o(t) {
         actions: [{
             text: i.intl.string(i.t.gQrLtr),
             onClick: () => {
-                (0, r.A)(e, !0)
+                (0, l.A)(e, !0)
             },
             variant: "secondary"
         }, {
             text: i.intl.string(i.t["xl8R+2"]),
             onClick: n
         }],
-        children: (0, a.jsx)(s.w, {
+        children: (0, r.jsx)(s.w, {
             url: e
         })
     })

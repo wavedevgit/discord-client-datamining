@@ -1,31 +1,30 @@
 /** chunk id: 252362, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => _
 });
-var r = n(627968),
-    i = n(64700),
+var i = n(627968),
+    r = n(64700),
     l = n(342494),
     a = n(582754),
     s = n(736653),
     o = n(793574),
-    c = n(688810),
-    u = n(976860),
-    d = n(979286),
-    p = n(652215),
+    d = n(688810),
+    c = n(976860),
+    u = n(979286),
+    A = n(652215),
     h = n(985018);
-let f = e => {
+let _ = e => {
     let {
         displayOptions: t,
         targetElementRef: n,
-        onRequestClose: f,
-        onClick: g
+        onRequestClose: _,
+        onClick: m
     } = e, {
-        analyticsLocations: m
-    } = (0, c.Ay)(o.A.HOME_PAGE_SHOP_TAB), A = (0, s.Ay)(), _ = (0, a.Mw)(A) ? t.assetDark : t.assetLight, b = i.useRef(f);
-    return b.current = f, i.useEffect(() => () => {
-        var e;
-        null == (e = b.current) || e.call(b)
-    }, []), (0, r.jsx)(l.AM, {
+        analyticsLocations: p
+    } = (0, d.Ay)(o.A.HOME_PAGE_SHOP_TAB), g = (0, s.Ay)(), E = (0, a.Mw)(g) ? t.assetDark : t.assetLight, I = r.useRef(_);
+    return I.current = _, r.useEffect(() => () => {
+        I.current?.()
+    }, []), (0, i.jsx)(l.AM, {
         targetElementRef: n,
         position: "right",
         align: "top",
@@ -37,18 +36,18 @@ let f = e => {
         body: t.body(),
         graphic: {
             type: "image",
-            src: _
+            src: E
         },
         actions: [{
             text: h.intl.string(h.t.fYfGgK),
             variant: "primary",
             onClick: () => {
-                null == g || g(), (0, u.pX)(p.BVt.COLLECTIBLES_SHOP), (0, d.Cz)({
-                    analyticsLocations: m,
+                m?.(), (0, c.pX)(A.BVt.COLLECTIBLES_SHOP), (0, u.Cz)({
+                    analyticsLocations: p,
                     analyticsSource: o.A.HOME_PAGE_SHOP_TAB
                 })
             }
         }],
-        onRequestClose: f
+        onRequestClose: _
     })
 }

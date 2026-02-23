@@ -1,78 +1,79 @@
 /** chunk id: 535111, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    O: () => b
+    O: () => _
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var l = n(503698),
-    i = n.n(l),
-    s = n(397927),
+var s = n(503698),
+    l = n.n(s),
+    r = n(397927),
     a = n(275667),
     o = n(576437),
     c = n(408486),
-    u = n(769015),
-    d = n(409626),
-    p = n(692969),
-    h = n(485599),
-    g = n(985018),
-    f = n(237235);
+    d = n(769015),
+    u = n(409626),
+    h = n(692969),
+    A = n(485599),
+    p = n(985018),
+    g = n(237235);
 
 function m(e) {
     let {
         name: t,
         applicationId: n
-    } = e, l = (0, p.A)({
+    } = e, s = (0, h.A)({
         location: "ActivityPanelGameCard",
         applicationId: n,
-        source: d.Ob.RtcPanel,
+        source: u.Ob.RtcPanel,
         trackEntryPointImpression: !0
     });
-    return (0, r.jsx)(s.DUT, {
-        onClick: l,
-        className: i()(null != l && f.On),
-        children: (0, r.jsx)(h.A, {
-            className: f.mO,
+    return (0, i.jsx)(r.DUT, {
+        onClick: s,
+        className: l()(null != s && g.On),
+        children: (0, i.jsx)(A.A, {
+            className: g.mO,
             children: t
         })
     })
 }
 
-function b(e) {
+function _(e) {
     let {
         isStreaming: t,
         application: n,
-        game: l,
-        onClickNotSharing: i,
-        isForceShowSharingPopout: d,
-        setIsForceShowSharingPopout: p,
-        ref: h,
-        popoutTargetRef: b
-    } = e, A = null != n ? n.name : null != l ? l.name : g.intl.string(g.t["UQMV/E"]);
-    return (0, c.z)(), (0, r.jsxs)("div", {
-        className: f.cm,
-        children: [(0, r.jsxs)("div", {
-            className: f.f9,
-            children: [(0, r.jsx)(u.A, {
-                className: f.Gt,
+        game: s,
+        onClickNotSharing: l,
+        isForceShowSharingPopout: u,
+        setIsForceShowSharingPopout: h,
+        ref: A,
+        popoutTargetRef: _
+    } = e, f = null != n ? n.name : null != s ? s.name : p.intl.string(p.t["UQMV/E"]);
+    return (0, c.z)(), (0, i.jsxs)("div", {
+        className: g.cm,
+        children: [(0, i.jsxs)("div", {
+            className: g.f9,
+            children: [(0, i.jsx)(d.A, {
+                className: g.Gt,
                 game: n,
-                pid: null == l ? void 0 : l.pid,
-                ref: h
-            }), t ? (0, r.jsx)(s.npA, {
+                pid: s?.pid,
+                ref: A
+            }), t ? (0, i.jsx)(r.npA, {
                 size: "md",
                 color: "currentColor",
-                className: f.it
+                className: g.it
             }) : null]
-        }), (0, r.jsx)(o.M, {
-            popoutTargetRef: b,
-            isForceShowSharingPopout: d,
-            setIsForceShowSharingPopout: p,
-            children: (0, r.jsxs)("div", {
-                className: f.pq,
-                children: [null != A ? (0, r.jsx)(m, {
-                    name: A,
-                    applicationId: null == n ? void 0 : n.id
-                }) : null, (0, r.jsx)(a.G, {
-                    onClick: i
+        }), (0, i.jsx)(o.M, {
+            popoutTargetRef: _,
+            isForceShowSharingPopout: u,
+            setIsForceShowSharingPopout: h,
+            children: (0, i.jsxs)("div", {
+                className: g.pq,
+                children: [null != f ? (0, i.jsx)(m, {
+                    name: f,
+                    applicationId: n?.id
+                }) : null, (0, i.jsx)(a.G, {
+                    onClick: l
                 })]
             })
         })]

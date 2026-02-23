@@ -1,261 +1,209 @@
-/** chunk id: 773486, original params: e,t,r (module,exports,require) **/
-r.d(t, {
-    default: () => C
-}), r(896048), r(321073);
-var n = r(627968),
-    s = r(64700),
-    i = r(158954),
-    l = r(311907),
-    a = r(397927),
-    o = r(718213),
-    c = r(964486),
-    u = r(780964),
-    d = r(840065),
-    f = r(954571),
-    p = r(427262),
-    b = r(761546),
-    m = r(677185),
-    g = r(233317),
-    y = r(783437),
-    h = r(298492),
-    O = r(88001),
-    S = r(652215),
-    j = r(519412),
-    P = r(985018),
-    v = r(300296),
-    _ = r(788396);
-
-function I(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var r = null != arguments[t] ? arguments[t] : {},
-            n = Object.keys(r);
-        "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(r, e).enumerable
-        }))), n.forEach(function(t) {
-            var n;
-            n = r[t], t in e ? Object.defineProperty(e, t, {
-                value: n,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = n
-        })
-    }
-    return e
-}
-
-function w(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-        var r = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var n = Object.getOwnPropertySymbols(e);
-            r.push.apply(r, n)
-        }
-        return r
-    })(Object(t)).forEach(function(r) {
-        Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r))
-    }), e
-}
-
-function x(e, t) {
-    if (null == e) return {};
-    var r, n, s, i = {};
-    if ("u" > typeof Reflect && Reflect.ownKeys) {
-        for (s = 0, r = Reflect.ownKeys(e); s < r.length; s++) n = r[s], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
-        return i
-    }
-    if (i = function(e, t) {
-            if (null == e) return {};
-            var r, n, s = {},
-                i = Object.getOwnPropertyNames(e);
-            for (n = 0; n < i.length; n++) r = i[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (s[r] = e[r]);
-            return s
-        }(e, t), Object.getOwnPropertySymbols)
-        for (s = 0, r = Object.getOwnPropertySymbols(e); s < r.length; s++) n = r[s], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
-    return i
-}
-let E = e => {
-        let t, {
-                onInvite: r,
-                onClose: c,
-                subscriptionId: u
-            } = e,
-            d = x(e, ["onInvite", "onClose", "subscriptionId"]),
-            [m, h] = s.useState([]),
-            [_, E] = s.useState(""),
-            N = (0, o.A)(_, 400),
-            C = (0, l.bG)([g.A], () => g.A.getNumAvailableInvites()),
-            {
-                eligibleUsers: M,
-                getNextRows: R,
-                hasError: k,
-                isFetching: A
-            } = (0, y.A)({
-                subscriptionId: u,
-                searchQuery: N
-            }),
-            [U, D] = s.useState(!1),
-            T = s.useCallback(e => {
-                h(t => t.filter(t => !e.has(t.id)))
-            }, [h]),
-            z = s.useMemo(() => m.map(e => ({
-                id: e.id,
-                label: p.Ay.getName(e)
-            })), [m]);
-        return k ? (0, n.jsx)(i.Modal, I({
+/** chunk id: 773486, original params: e,t,s (module,exports,require) **/
+s.d(t, {
+    default: () => A
+}), s(321073);
+var a = s(627968),
+    i = s(64700),
+    l = s(158954),
+    r = s(311907),
+    n = s(397927),
+    c = s(718213),
+    d = s(964486),
+    o = s(780964),
+    u = s(840065),
+    m = s(954571),
+    x = s(427262),
+    _ = s(761546),
+    f = s(677185),
+    h = s(233317),
+    p = s(783437),
+    b = s(298492),
+    g = s(88001),
+    v = s(652215),
+    S = s(519412),
+    N = s(985018),
+    j = s(300296),
+    C = s(788396);
+let I = e => {
+        let {
+            onInvite: t,
+            onClose: s,
+            subscriptionId: d,
+            ...o
+        } = e, [u, f] = i.useState([]), [b, C] = i.useState(""), I = (0, c.A)(b, 400), k = (0, r.bG)([h.A], () => h.A.getNumAvailableInvites()), {
+            eligibleUsers: A,
+            getNextRows: E,
+            hasError: y,
+            isFetching: M
+        } = (0, p.A)({
+            subscriptionId: d,
+            searchQuery: I
+        }), [R, T] = i.useState(!1), P = i.useCallback(e => {
+            f(t => t.filter(t => !e.has(t.id)))
+        }, [f]), U = i.useMemo(() => u.map(e => ({
+            id: e.id,
+            label: x.Ay.getName(e)
+        })), [u]);
+        return y ? (0, a.jsx)(l.Modal, {
             size: "sm",
-            title: P.intl.string(j.default["54lM5y"]),
-            subtitle: P.intl.string(j.default.zrtwpV),
-            onClose: c,
-            actions: []
-        }, d)) : 0 !== M.length || A || 0 !== N.length ? (0, n.jsx)(i.Modal, w(I({
+            title: N.intl.string(S.default["54lM5y"]),
+            subtitle: N.intl.string(S.default.zrtwpV),
+            onClose: s,
+            actions: [],
+            ...o
+        }) : 0 !== A.length || M || 0 !== I.length ? (0, a.jsx)(l.Modal, {
             size: "md",
-            title: P.intl.string(j.default["Um/7BM"]),
-            subtitle: P.intl.format(j.default.qSWXaf, {
-                totalSeats: O.LM,
-                premiumGroupProductName: (0, O.DP)(),
-                helpCenterLink: O.TE
+            title: N.intl.string(S.default["Um/7BM"]),
+            subtitle: N.intl.format(S.default.qSWXaf, {
+                totalSeats: g.LM,
+                premiumGroupProductName: (0, g.DP)(),
+                helpCenterLink: g.TE
             }),
-            onClose: c,
-            input: (0, n.jsx)("div", {
-                className: v.c,
-                children: (0, n.jsx)(a.ksK, {
-                    value: _,
-                    onChange: E,
-                    placeholder: 0 === m.length ? P.intl.string(j.default.wRS8vo) : "",
+            onClose: s,
+            input: (0, a.jsx)("div", {
+                className: j.c,
+                children: (0, a.jsx)(n.ksK, {
+                    value: b,
+                    onChange: C,
+                    placeholder: 0 === u.length ? N.intl.string(S.default.wRS8vo) : "",
                     leading: {
                         type: "tags",
-                        label: P.intl.string(j.default["Um/7BM"]),
-                        items: z,
-                        onRemove: T
+                        label: N.intl.string(S.default["Um/7BM"]),
+                        items: U,
+                        onRemove: P
                     }
                 })
             }),
             actions: [],
-            actionBarInput: (t = N.length > 0 && 0 === M.length, (0, n.jsx)(a.Button, {
+            actionBarInput: (0, a.jsx)(n.Button, {
                 variant: "primary",
-                disabled: 0 === m.length && !t || U,
-                text: P.intl.string(j.default["5fZHp3"]),
+                disabled: 0 === u.length || R,
+                text: N.intl.string(S.default["5fZHp3"]),
                 size: "md",
                 fullWidth: !0,
                 onClick: async () => {
-                    t ? c() : (f.default.track(S.HAw.PREMIUM_GROUP_INVITE_FRIENDS_CTA_CLICKED, {
-                        invited_user_ids: m.map(e => e.id)
-                    }), D(!0), await r(m), D(!1))
+                    m.default.track(v.HAw.PREMIUM_GROUP_INVITE_FRIENDS_CTA_CLICKED, {
+                        invited_user_ids: u.map(e => e.id)
+                    }), T(!0), await t(u), T(!1)
                 }
-            }))
-        }, d), {
-            children: (0, n.jsx)(b.A, {
-                users: M,
-                isUserSelected: e => m.some(t => t.id === e.id),
+            }),
+            ...o,
+            children: (0, a.jsx)(_.A, {
+                users: A,
+                isUserSelected: e => u.some(t => t.id === e.id),
                 onSelectionChange: (e, t) => {
-                    h(r => t ? [...r, e] : r.filter(t => t.id !== e.id)), t && E("")
+                    f(s => t ? [...s, e] : s.filter(t => t.id !== e.id)), t && C("")
                 },
-                isUserDisabled: e => m.length >= C && !m.some(t => t.id === e.id) || !e.eligible,
-                isFetching: A,
-                onFetchMore: R,
-                searchQuery: N,
+                isUserDisabled: e => u.length >= k && !u.some(t => t.id === e.id) || !e.eligible,
+                isFetching: M,
+                onFetchMore: E,
+                searchQuery: I,
                 emptySearchContent: {
-                    header: P.intl.string(j.default.gaamNe),
-                    body: P.intl.string(j.default.nQcM39)
+                    header: N.intl.string(S.default.gaamNe),
+                    body: N.intl.string(S.default.nQcM39)
                 },
-                className: v.p_,
+                className: j.p_,
                 tooltipConfig: {
-                    text: e => P.intl.formatToPlainString(j.default["5tzM9V"], {
-                        disabledUserName: p.Ay.getName(e),
-                        premiumGroupProductName: (0, O.DP)()
+                    text: e => N.intl.formatToPlainString(S.default["5tzM9V"], {
+                        disabledUserName: x.Ay.getName(e),
+                        premiumGroupProductName: (0, g.DP)()
                     }),
                     isActive: (e, t) => !!(t && !e.eligible)
                 }
             })
-        })) : (0, n.jsx)(i.Modal, I({
+        }) : (0, a.jsx)(l.Modal, {
             size: "sm",
-            title: P.intl.string(j.default.ONaJLH),
-            subtitle: P.intl.format(j.default["0LHbPc"], {
-                helpCenterLink: O.TE
+            title: N.intl.string(S.default.ONaJLH),
+            subtitle: N.intl.format(S.default["0LHbPc"], {
+                helpCenterLink: g.TE
             }),
-            onClose: c,
-            actions: []
-        }, d))
+            onClose: s,
+            actions: [],
+            ...o
+        })
     },
-    N = e => {
+    k = e => {
         let {
             onClose: t,
-            inviteUsersResult: r
-        } = e, s = x(e, ["onClose", "inviteUsersResult"]);
-        return (0, n.jsx)(i.ExpressiveModal, w(I({
+            inviteUsersResult: s,
+            ...i
+        } = e;
+        return (0, a.jsx)(l.ExpressiveModal, {
             graphic: {
                 type: "image",
-                src: _.A
+                src: C.A
             },
             gradientColor: "nitro-pink",
-            title: P.intl.formatToPlainString(j.default.MIiPur, {
-                premiumGroupProductName: (0, O.DP)(),
-                sentCount: r.filter(e => e.isSuccess).length
+            title: N.intl.formatToPlainString(S.default.MIiPur, {
+                premiumGroupProductName: (0, g.DP)(),
+                sentCount: s.filter(e => e.isSuccess).length
             }),
-            subtitle: P.intl.format(j.default.olkQkj, {
+            subtitle: N.intl.format(S.default.olkQkj, {
                 onClick: () => {
-                    t(), (0, d.openUserSettings)(u.X.SUBSCRIPTIONS_PANEL, {
-                        section: S.nc_.SUBSCRIPTIONS
+                    t(), (0, u.openUserSettings)(o.X.SUBSCRIPTIONS_PANEL, {
+                        section: v.nc_.SUBSCRIPTIONS
                     })
                 }
             }),
-            onClose: t
-        }, s), {
-            children: (0, n.jsx)("div", {
-                className: v.yk,
-                children: r.map(e => (0, n.jsx)(h.q, {
+            onClose: t,
+            ...i,
+            children: (0, a.jsx)("div", {
+                className: j.yk,
+                children: s.map(e => (0, a.jsx)(b.q, {
                     recipient: e.user,
                     isSuccess: e.isSuccess,
                     onClose: t
                 }, e.user.id))
             })
-        }))
+        })
     },
-    C = e => {
+    A = e => {
         let {
             subscription: t,
-            isFromPurchaseFlow: r = !1
-        } = e, i = x(e, ["subscription", "isFromPurchaseFlow"]), [l, a] = s.useState([]);
-        (0, c.Ay)(() => {
-            f.default.track(S.HAw.PREMIUM_GROUP_INVITE_FRIENDS_MODAL_VIEWED, {
-                source: r ? "purchase_flow" : "subscription_card"
+            isFromPurchaseFlow: s = !1,
+            ...l
+        } = e, [r, n] = i.useState([]);
+        (0, d.Ay)(() => {
+            m.default.track(v.HAw.PREMIUM_GROUP_INVITE_FRIENDS_MODAL_VIEWED, {
+                source: s ? "purchase_flow" : "subscription_card"
             })
         });
-        let [o, u] = s.useState(1), d = async e => {
-            let r = new Map,
-                n = [];
-            for (let t of e) r.set(t.id, t), n.push(t.id);
-            let s = await (0, m.n2)(t.id, n);
-            if (null == s) {
-                f.default.track(S.HAw.PREMIUM_GROUP_INVITE_FRIENDS_RESULT, {
+        let [c, o] = i.useState(1), u = async e => {
+            let s = new Map,
+                a = [];
+            for (let t of e) s.set(t.id, t), a.push(t.id);
+            let i = await (0, f.n2)(t.id, a);
+            if (null == i) {
+                m.default.track(v.HAw.PREMIUM_GROUP_INVITE_FRIENDS_RESULT, {
                     successful_user_ids: [],
-                    failed_user_ids: n
-                }), a(e.map(e => ({
+                    failed_user_ids: a
+                }), n(e.map(e => ({
                     user: e,
                     isSuccess: !1
-                }))), u(2);
+                }))), o(2);
                 return
             }
             let {
-                invitedUsers: i,
-                ineligibleUsers: l
-            } = s;
-            f.default.track(S.HAw.PREMIUM_GROUP_INVITE_FRIENDS_RESULT, {
-                successful_user_ids: i,
-                failed_user_ids: l
-            }), a([...i.map(e => ({
-                user: r.get(e),
+                invitedUsers: l,
+                ineligibleUsers: r
+            } = i;
+            m.default.track(v.HAw.PREMIUM_GROUP_INVITE_FRIENDS_RESULT, {
+                successful_user_ids: l,
+                failed_user_ids: r
+            }), n([...l.map(e => ({
+                user: s.get(e),
                 isSuccess: !0
-            })), ...l.map(e => ({
-                user: r.get(e),
+            })), ...r.map(e => ({
+                user: s.get(e),
                 isSuccess: !1
-            }))]), u(2)
+            }))]), o(2)
         };
-        return 1 === o ? (0, n.jsx)(E, w(I({}, i), {
-            onInvite: d,
+        return 1 === c ? (0, a.jsx)(I, {
+            ...l,
+            onInvite: u,
             subscriptionId: t.id
-        })) : 2 === o ? (0, n.jsx)(N, w(I({}, i), {
-            inviteUsersResult: l
-        })) : void 0
+        }) : 2 === c ? (0, a.jsx)(k, {
+            ...l,
+            inviteUsersResult: r
+        }) : void 0
     }

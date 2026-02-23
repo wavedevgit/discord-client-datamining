@@ -1,53 +1,21 @@
 /** chunk id: 806235, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => m
-}), n(896048);
+    A: () => c
+});
 var a = n(627968),
-    l = n(64700),
-    r = n(311907),
-    i = n(397927),
-    s = n(274372),
+    i = n(64700),
+    s = n(311907),
+    l = n(397927),
+    r = n(274372),
     o = n(372684),
-    c = n(399925);
+    d = n(399925);
 
-function d(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            a = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), a.forEach(function(t) {
-            var a;
-            a = n[t], t in e ? Object.defineProperty(e, t, {
-                value: a,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = a
-        })
-    }
-    return e
-}
-
-function u(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var a = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, a)
-        }
-        return n
-    })(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-
-function m() {
+function c() {
     let {
         mlPipelinesEnabled: e
-    } = (0, r.cf)([s.A], () => ({
-        mlPipelinesEnabled: s.A.getSettings().mlPipelinesEnabled
-    })), [t, n] = l.useState(() => (void 0 === window.__CLIPS_DEBUG__ && (window.__CLIPS_DEBUG__ = {
+    } = (0, s.cf)([r.A], () => ({
+        mlPipelinesEnabled: r.A.getSettings().mlPipelinesEnabled
+    })), [t, n] = i.useState(() => (void 0 === window.__CLIPS_DEBUG__ && (window.__CLIPS_DEBUG__ = {
         emotion: !1,
         yell: !1,
         wakeWord: !1,
@@ -57,55 +25,56 @@ function m() {
         emotion: window.__CLIPS_DEBUG__.emotion,
         yell: window.__CLIPS_DEBUG__.yell,
         whisper: window.__CLIPS_DEBUG__.whisper
-    })), [m, p] = l.useState(o.rb.KILL), [h, x] = l.useState(1), [g, f] = l.useState(""), [b, v] = l.useState(""), j = l.useCallback(e => {
+    })), [c, u] = i.useState(o.rb.KILL), [m, h] = i.useState(1), [x, p] = i.useState(""), [g, _] = i.useState(""), f = i.useCallback(e => {
         let a = !t[e];
         void 0 === window.__CLIPS_DEBUG__ && (window.__CLIPS_DEBUG__ = {
             emotion: !1,
             yell: !1,
             wakeWord: !1,
             whisper: !1
-        }), window.__CLIPS_DEBUG__[e] = a, n(t => u(d({}, t), {
+        }), window.__CLIPS_DEBUG__[e] = a, n(t => ({
+            ...t,
             [e]: a
         }))
     }, [t]);
-    return (0, a.jsx)(i.HOs, {
-        children: (0, a.jsxs)(i.lVW, {
-            children: [(0, a.jsx)(i.nVY, {
+    return (0, a.jsx)(l.HOs, {
+        children: (0, a.jsxs)(l.lVW, {
+            children: [(0, a.jsx)(l.nVY, {
                 label: "Send Test Signals",
-                children: (0, a.jsxs)(i.M_l, {
-                    children: [(0, a.jsx)(i.Button, {
+                children: (0, a.jsxs)(l.M_l, {
+                    children: [(0, a.jsx)(l.Button, {
                         text: "Manual",
-                        onClick: () => c.Ts({
+                        onClick: () => d.Ts({
                             type: o.Gy.MANUAL
                         })
-                    }), (0, a.jsx)(i.Button, {
+                    }), (0, a.jsx)(l.Button, {
                         text: "Distributed",
-                        onClick: () => c.Ts({
+                        onClick: () => d.Ts({
                             type: o.Gy.DISTRIBUTED,
                             remoteTriggerUserId: "123",
                             remoteTriggerClipId: "456"
                         })
-                    }), (0, a.jsx)(i.Button, {
+                    }), (0, a.jsx)(l.Button, {
                         text: "Phrase: Clip",
-                        onClick: () => c.Ts({
+                        onClick: () => d.Ts({
                             type: o.Gy.PHRASE,
                             text: "clip"
                         })
-                    }), (0, a.jsx)(i.Button, {
+                    }), (0, a.jsx)(l.Button, {
                         text: "Yelling",
-                        onClick: () => c.Ts({
+                        onClick: () => d.Ts({
                             type: o.Gy.YELLING,
                             userId: "123"
                         })
                     })]
                 })
-            }), (0, a.jsxs)(i.nVY, {
+            }), (0, a.jsxs)(l.nVY, {
                 label: "Game Event Creator",
-                children: [(0, a.jsxs)(i.M_l, {
-                    children: [(0, a.jsx)(i.l6P, {
+                children: [(0, a.jsxs)(l.M_l, {
+                    children: [(0, a.jsx)(l.l6P, {
                         label: "Event Type",
-                        value: m,
-                        onSelectionChange: e => p(e),
+                        value: c,
+                        onSelectionChange: e => u(e),
                         options: [{
                             id: "kill",
                             label: "Kill",
@@ -149,10 +118,10 @@ function m() {
                         }],
                         selectionMode: "single",
                         fullWidth: !0
-                    }), (0, a.jsx)(i.l6P, {
+                    }), (0, a.jsx)(l.l6P, {
                         label: "Importance",
-                        value: h,
-                        onSelectionChange: x,
+                        value: m,
+                        onSelectionChange: h,
                         options: [{
                             id: "low",
                             label: "Low",
@@ -169,77 +138,81 @@ function m() {
                         selectionMode: "single",
                         fullWidth: !0
                     })]
-                }), (0, a.jsx)(i.ksK, {
+                }), (0, a.jsx)(l.ksK, {
                     label: "Title (optional)",
-                    value: g,
-                    onChange: f,
+                    value: x,
+                    onChange: p,
                     placeholder: "e.g., First Blood"
-                }), (0, a.jsx)(i.ksK, {
+                }), (0, a.jsx)(l.ksK, {
                     label: "Description (optional)",
-                    value: b,
-                    onChange: v,
+                    value: g,
+                    onChange: _,
                     placeholder: "e.g., Killed enemy ADC in bot lane"
-                }), (0, a.jsx)(i.Button, {
+                }), (0, a.jsx)(l.Button, {
                     text: "Create Game Event",
                     onClick: () => {
-                        c.Ts({
+                        d.Ts({
                             type: o.Gy.GAME_EVENT,
-                            eventType: m,
-                            importance: h,
-                            title: g,
-                            description: b
+                            eventType: c,
+                            importance: m,
+                            title: x,
+                            description: g
                         })
                     }
                 })]
-            }), (0, a.jsx)(i.cGx, {}), (0, a.jsxs)(i.nVY, {
+            }), (0, a.jsx)(l.cGx, {}), (0, a.jsxs)(l.nVY, {
                 label: "ML Pipelines Enabled",
-                children: [(0, a.jsx)(i.dOG, {
+                children: [(0, a.jsx)(l.dOG, {
                     label: "Emotion Classifier",
                     checked: e.emotionClassifier,
-                    onChange: t => c.dR(u(d({}, e), {
+                    onChange: t => d.dR({
+                        ...e,
                         emotionClassifier: t
-                    }))
-                }), (0, a.jsx)(i.dOG, {
+                    })
+                }), (0, a.jsx)(l.dOG, {
                     label: "Wake Word Detector",
                     checked: e.wakeWordDetector,
-                    onChange: t => c.dR(u(d({}, e), {
+                    onChange: t => d.dR({
+                        ...e,
                         wakeWordDetector: t
-                    }))
-                }), (0, a.jsx)(i.dOG, {
+                    })
+                }), (0, a.jsx)(l.dOG, {
                     label: "Yell Detector",
                     checked: e.yellDetector,
-                    onChange: t => c.dR(u(d({}, e), {
+                    onChange: t => d.dR({
+                        ...e,
                         yellDetector: t
-                    }))
-                }), (0, a.jsx)(i.dOG, {
+                    })
+                }), (0, a.jsx)(l.dOG, {
                     label: "Whisper Transcription",
                     checked: e.whisperTranscription,
-                    onChange: t => c.dR(u(d({}, e), {
+                    onChange: t => d.dR({
+                        ...e,
                         whisperTranscription: t
-                    }))
+                    })
                 })]
-            }), (0, a.jsxs)(i.nVY, {
+            }), (0, a.jsxs)(l.nVY, {
                 label: "ML Debug Logging (window.__CLIPS_DEBUG__)",
-                children: [(0, a.jsx)(i.dOG, {
+                children: [(0, a.jsx)(l.dOG, {
                     label: "Wake Word Debug",
                     description: "Log wake word detection events to console",
                     checked: t.wakeWord,
-                    onChange: () => j("wakeWord")
-                }), (0, a.jsx)(i.dOG, {
+                    onChange: () => f("wakeWord")
+                }), (0, a.jsx)(l.dOG, {
                     label: "Emotion Debug",
                     description: "Log emotion classification events to console",
                     checked: t.emotion,
-                    onChange: () => j("emotion")
-                }), (0, a.jsx)(i.dOG, {
+                    onChange: () => f("emotion")
+                }), (0, a.jsx)(l.dOG, {
                     label: "Yell Debug",
                     description: "Show yell classification events to console",
                     checked: t.yell,
-                    onChange: () => j("yell")
-                }), (0, a.jsx)(i.dOG, {
+                    onChange: () => f("yell")
+                }), (0, a.jsx)(l.dOG, {
                     label: "Whisper Debug",
                     description: "Log whisper transcription events to console",
                     checked: t.whisper,
-                    onChange: () => j("whisper")
+                    onChange: () => f("whisper")
                 })]
             })]
         })

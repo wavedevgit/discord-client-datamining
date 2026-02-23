@@ -1,72 +1,13 @@
-/** chunk id: 814904, original params: e,t,n (module,exports,require) **/
+/** chunk id: 814904, original params: e,t,l (module,exports,require) **/
 "use strict";
-n.d(t, {
-    D: () => p
+l.d(t, {
+    D: () => s
 });
-var r = n(627968);
-n(64700);
-var i = n(720462),
-    a = n(528226);
-
-function o(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-
-function s(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            o(e, t, n[t])
-        })
-    }
-    return e
-}
-
-function l(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-        var r = Object.getOwnPropertySymbols(e);
-        t && (r = r.filter(function(t) {
-            return Object.getOwnPropertyDescriptor(e, t).enumerable
-        })), n.push.apply(n, r)
-    }
-    return n
-}
-
-function c(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : l(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-
-function u(e, t) {
-    if (null == e) return {};
-    var n, r, i, a = {};
-    if ("u" > typeof Reflect && Reflect.ownKeys) {
-        for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
-        return a
-    }
-    if (a = d(e, t), Object.getOwnPropertySymbols)
-        for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
-    return a
-}
-
-function d(e, t) {
-    if (null == e) return {};
-    var n, r, i = {},
-        a = Object.getOwnPropertyNames(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
-    return i
-}
-let f = () => (0, r.jsx)("div", {
+var r = l(627968);
+l(64700);
+var a = l(720462),
+    n = l(528226);
+let i = () => (0, r.jsx)("div", {
         style: {
             height: 250,
             width: 250,
@@ -74,7 +15,7 @@ let f = () => (0, r.jsx)("div", {
             borderRadius: 6
         }
     }),
-    p = {
+    s = {
         title: "Contained Hero",
         stories: [{
             name: "ContainedHero",
@@ -82,17 +23,19 @@ let f = () => (0, r.jsx)("div", {
             component: e => {
                 let {
                     containerHeight: t,
-                    showChildren: n
-                } = e, o = u(e, ["containerHeight", "showChildren"]), l = () => n ? (0, r.jsxs)(i.A, {
-                    children: [(0, r.jsx)(f, {}), (0, r.jsx)(f, {}), (0, r.jsx)(f, {}), (0, r.jsx)(f, {}), (0, r.jsx)(f, {}), (0, r.jsx)(f, {}), (0, r.jsx)(f, {}), (0, r.jsx)(f, {}), (0, r.jsx)(f, {}), (0, r.jsx)(f, {})]
-                }) : null;
+                    showChildren: l,
+                    ...s
+                } = e;
                 return (0, r.jsx)("div", {
                     style: {
-                        height: n ? void 0 : t
+                        height: l ? void 0 : t
                     },
-                    children: (0, r.jsx)(a.A, c(s({}, o), {
-                        children: l()
-                    }))
+                    children: (0, r.jsx)(n.A, {
+                        ...s,
+                        children: l ? (0, r.jsxs)(a.A, {
+                            children: [(0, r.jsx)(i, {}), (0, r.jsx)(i, {}), (0, r.jsx)(i, {}), (0, r.jsx)(i, {}), (0, r.jsx)(i, {}), (0, r.jsx)(i, {}), (0, r.jsx)(i, {}), (0, r.jsx)(i, {}), (0, r.jsx)(i, {}), (0, r.jsx)(i, {})]
+                        }) : null
+                    })
                 })
             },
             controls: {

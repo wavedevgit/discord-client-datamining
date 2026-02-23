@@ -1,156 +1,128 @@
 /** chunk id: 671576, original params: e,t,l (module,exports,require) **/
 l.d(t, {
-    default: () => _
-}), l(896048);
+    default: () => T
+});
 var n = l(627968),
-    r = l(64700),
+    s = l(64700),
     i = l(158954),
-    s = l(311907),
-    a = l(435371),
-    o = l(397927),
+    a = l(311907),
+    r = l(435371),
+    d = l(397927),
     c = l(71393),
-    d = l(954571),
+    o = l(954571),
     u = l(554113),
     x = l(974103),
     m = l(903093),
-    j = l(610136),
-    b = l(336496),
-    h = l(218113),
-    f = l(652215),
+    h = l(610136),
+    j = l(336496),
+    _ = l(218113),
+    A = l(652215),
     g = l(985018),
-    v = l(651846);
+    b = l(651846);
 
-function _(e) {
+function T(e) {
     let {
         guildId: t,
         transitionState: l,
-        onClose: _,
-        analyticsData: A
-    } = e, p = (0, s.bG)([c.A], () => c.A.getGuild(t), [t]), T = !!(null == p ? void 0 : p.features.has(f.GuildFeatures.INVITES_DISABLED)), [E] = r.useState(!1), [S, y] = r.useState(h.f7), O = (0, s.bG)([j.A], () => j.A.getGuildIncident(t)), N = (0, x.w)(p), I = (0, m.r2)(O) || T, R = (0, m.di)(O), [C, D] = r.useState(I), [P, M] = r.useState(R), [w, G] = r.useState(!1), L = C !== I || P !== R || w, U = T && !N;
-    return null == p ? (_(), null) : (0, n.jsx)(i.Modal, {
+        onClose: T,
+        analyticsData: f
+    } = e, E = (0, a.bG)([c.A], () => c.A.getGuild(t), [t]), v = !!E?.features.has(A.GuildFeatures.INVITES_DISABLED), [S] = s.useState(!1), [N, I] = s.useState(_.f7), R = (0, a.bG)([h.A], () => h.A.getGuildIncident(t)), C = (0, x.w)(E), p = (0, m.r2)(R) || v, M = (0, m.di)(R), [D, G] = s.useState(p), [y, L] = s.useState(M), [U, P] = s.useState(!1), k = D !== p || y !== M || U, B = v && !C;
+    return null == E ? (T(), null) : (0, n.jsx)(i.Modal, {
         transitionState: l,
         title: g.intl.string(g.t.oCYAc7),
         actions: [{
             text: g.intl.string(g.t["ETE/oC"]),
-            onClick: _,
+            onClick: T,
             variant: "secondary",
-            disabled: E
+            disabled: S
         }, {
             text: g.intl.string(g.t["pwm/z0"]),
             onClick: () => {
-                (I || R) && !C && !P ? ((0, u.tr)(p.id, !1, !1), (0, o.mMO)(() => Promise.resolve(e => {
-                    var l, r;
-                    return (0, n.jsx)(b.default, (l = function(e) {
-                        for (var t = 1; t < arguments.length; t++) {
-                            var l = null != arguments[t] ? arguments[t] : {},
-                                n = Object.keys(l);
-                            "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(l).filter(function(e) {
-                                return Object.getOwnPropertyDescriptor(l, e).enumerable
-                            }))), n.forEach(function(t) {
-                                var n;
-                                n = l[t], t in e ? Object.defineProperty(e, t, {
-                                    value: n,
-                                    enumerable: !0,
-                                    configurable: !0,
-                                    writable: !0
-                                }) : e[t] = n
-                            })
-                        }
-                        return e
-                    }({}, e), r = r = {
-                        guildId: t
-                    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
-                        var l = Object.keys(e);
-                        if (Object.getOwnPropertySymbols) {
-                            var n = Object.getOwnPropertySymbols(e);
-                            l.push.apply(l, n)
-                        }
-                        return l
-                    })(Object(r)).forEach(function(e) {
-                        Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(r, e))
-                    }), l))
-                }))) : (0, u.tr)(p.id, C, P, S);
+                (p || M) && !D && !y ? ((0, u.tr)(E.id, !1, !1), (0, d.mMO)(() => Promise.resolve(e => (0, n.jsx)(j.default, {
+                    ...e,
+                    guildId: t
+                })))) : (0, u.tr)(E.id, D, y, N);
                 let {
                     source: e,
                     alertType: l,
-                    messageId: r
-                } = A;
-                d.default.track(f.HAw.GUILD_RAID_INTERVENTION_STATE_CHANGE, {
+                    messageId: s
+                } = f;
+                o.default.track(A.HAw.GUILD_RAID_INTERVENTION_STATE_CHANGE, {
                     guild_id: t,
                     source: e,
-                    raid_alert_id: r,
+                    raid_alert_id: s,
                     raid_alert_type: l,
-                    intervention_type_enabled: (0, m.mR)(C, P),
-                    intervention_type_disabled: (0, m.fi)(C, P),
-                    duration: 60 * S
-                }), _()
+                    intervention_type_enabled: (0, m.mR)(D, y),
+                    intervention_type_disabled: (0, m.fi)(D, y),
+                    duration: 60 * N
+                }), T()
             },
-            loading: E,
-            disabled: !L
+            loading: S,
+            disabled: !k
         }],
-        onClose: _,
+        onClose: T,
         children: (0, n.jsxs)("div", {
-            className: v.rs,
-            children: [(0, n.jsx)(o.l6P, {
+            className: b.rs,
+            children: [(0, n.jsx)(d.l6P, {
                 label: g.intl.string(g.t.vKYZzc),
                 hideLabel: !0,
                 placeholder: g.intl.string(g.t.vKYZzc),
-                options: (0, h.aE)(),
+                options: (0, _.aE)(),
                 onSelectionChange: function(e) {
-                    y(e), G(!0)
+                    I(e), P(!0)
                 },
-                value: S,
+                value: N,
                 selectionMode: "single",
                 fullWidth: !0
             }), (0, n.jsxs)("div", {
-                className: v.Qb,
+                className: b.Qb,
                 children: [(0, n.jsxs)("div", {
-                    className: v.Iy,
-                    children: [(0, n.jsx)(o.Text, {
+                    className: b.Iy,
+                    children: [(0, n.jsx)(d.Text, {
                         variant: "text-md/semibold",
                         color: "text-strong",
                         children: g.intl.string(g.t.Uwsjn6)
-                    }), (0, n.jsx)(o.Text, {
+                    }), (0, n.jsx)(d.Text, {
                         variant: "text-sm/normal",
                         color: "text-muted",
                         children: g.intl.string(g.t.qPJkZh)
                     })]
-                }), (0, n.jsx)(a.un, {
+                }), (0, n.jsx)(r.un, {
                     body: g.intl.string(g.t["9GPbsV"]),
-                    shouldShow: T,
+                    shouldShow: v,
                     asContainer: !0,
                     element: "div",
                     children: (0, n.jsx)("div", {
-                        className: v.L$,
-                        children: (0, n.jsx)(o.dOG, {
+                        className: b.L$,
+                        children: (0, n.jsx)(d.dOG, {
                             onChange: function() {
-                                D(e => !e)
+                                G(e => !e)
                             },
-                            checked: C,
-                            disabled: U
+                            checked: D,
+                            disabled: B
                         })
                     })
                 })]
             }), (0, n.jsxs)("div", {
-                className: v.Qb,
+                className: b.Qb,
                 children: [(0, n.jsxs)("div", {
-                    className: v.Iy,
-                    children: [(0, n.jsx)(o.Text, {
+                    className: b.Iy,
+                    children: [(0, n.jsx)(d.Text, {
                         variant: "text-md/semibold",
                         color: "text-strong",
                         children: g.intl.string(g.t["wrDmA/"])
-                    }), (0, n.jsx)(o.Text, {
+                    }), (0, n.jsx)(d.Text, {
                         variant: "text-sm/normal",
                         color: "text-muted",
                         children: g.intl.string(g.t.UQbJW7)
                     })]
                 }), (0, n.jsx)("div", {
-                    className: v.L$,
-                    children: (0, n.jsx)(o.dOG, {
+                    className: b.L$,
+                    children: (0, n.jsx)(d.dOG, {
                         onChange: function() {
-                            M(e => !e)
+                            L(e => !e)
                         },
-                        checked: P
+                        checked: y
                     })
                 })]
             })]

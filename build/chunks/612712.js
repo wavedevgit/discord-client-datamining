@@ -1,16 +1,16 @@
 /** chunk id: 612712, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => s
+    A: () => r
 });
-var r = n(311907),
-    l = n(71393),
-    i = n(652215);
+var i = n(311907),
+    s = n(71393),
+    l = n(652215);
 
-function s(e) {
-    return (0, r.bG)([l.A], () => {
-        var t;
+function r(e) {
+    return (0, i.bG)([s.A], () => {
         if (null == e) return !1;
-        let n = l.A.getGuild(e);
-        return null != (t = null == n ? void 0 : n.features.has(i.GuildFeatures.HUB)) && t
+        let t = s.A.getGuild(e);
+        return t?.features.has(l.GuildFeatures.HUB) ?? !1
     }, [e])
 }

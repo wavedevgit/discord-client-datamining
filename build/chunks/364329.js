@@ -1,17 +1,17 @@
 /** chunk id: 364329, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => s,
-    b: () => i
+    A: () => r,
+    b: () => l
 });
-var a, l = n(627968),
-    r = n(397927),
-    i = ((a = {})[a.UNENROLLED = 0] = "UNENROLLED", a[a.ENROLLED = 1] = "ENROLLED", a[a.COMPLETED_25 = 2] = "COMPLETED_25", a[a.COMPLETED_50 = 3] = "COMPLETED_50", a[a.COMPLETED_75 = 4] = "COMPLETED_75", a[a.COMPLETED_100 = 5] = "COMPLETED_100", a[a.CLAIMED = 6] = "CLAIMED", a);
-let s = function(e) {
+var a, i = n(627968),
+    s = n(397927),
+    l = ((a = {})[a.UNENROLLED = 0] = "UNENROLLED", a[a.ENROLLED = 1] = "ENROLLED", a[a.COMPLETED_25 = 2] = "COMPLETED_25", a[a.COMPLETED_50 = 3] = "COMPLETED_50", a[a.COMPLETED_75 = 4] = "COMPLETED_75", a[a.COMPLETED_100 = 5] = "COMPLETED_100", a[a.CLAIMED = 6] = "CLAIMED", a);
+let r = function(e) {
     let {
         onChange: t,
         value: n
     } = e;
-    return (0, l.jsx)(r.l6P, {
+    return (0, i.jsx)(s.l6P, {
         label: "User State",
         options: [{
             id: "unenrolled",

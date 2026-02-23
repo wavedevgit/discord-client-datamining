@@ -1,18 +1,14 @@
 /** chunk id: 562519, original params: e,t,s (module,exports,require) **/
 s.d(t, {
-    A: () => n
-}), s(896048);
+    A: () => r
+});
 var i = s(362474);
-
-function r(e, t, s) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: s,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = s, e
-}
-class n {
+class r {
+    _key;
+    _set;
+    constructor(e) {
+        this._key = `$persisted-set-${e}`, this._set = new Set, this._load()
+    }
     _load() {
         let e = i.u.get(this._key);
         null != e && (this._set = new Set(e))
@@ -39,8 +35,5 @@ class n {
     }
     has(e) {
         return this._set.has(e)
-    }
-    constructor(e) {
-        r(this, "_key", void 0), r(this, "_set", void 0), this._key = "$persisted-set-".concat(e), this._set = new Set, this._load()
     }
 }

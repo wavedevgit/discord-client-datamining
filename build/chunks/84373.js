@@ -2,18 +2,17 @@
 n.d(t, {
     o: () => c
 });
-var r = n(311907),
-    i = n(873298),
-    l = n(287809),
-    s = n(64313),
-    a = n(253932),
+var i = n(311907),
+    s = n(873298),
+    a = n(287809),
+    r = n(64313),
+    l = n(253932),
     o = n(656402);
 
 function c() {
-    var e;
-    let t = a.he.useSetting(),
-        n = a.cj.useSetting(),
-        c = (0, r.bG)([l.default], () => l.default.getCurrentUser()),
-        d = (0, s.j)("use_derived_dm_spam_filter_setting");
-    return t !== i.he.DEFAULT_UNSET ? t : (null == c ? void 0 : c.nsfwAllowed) === !1 && d ? i.he.FRIENDS_AND_NON_FRIENDS : null != (e = o.xY.get(n)) ? e : i.he.NON_FRIENDS
+    let e = l.he.useSetting(),
+        t = l.cj.useSetting(),
+        n = (0, i.bG)([a.default], () => a.default.getCurrentUser()),
+        c = (0, r.j)("use_derived_dm_spam_filter_setting");
+    return e !== s.he.DEFAULT_UNSET ? e : n?.nsfwAllowed === !1 && c ? s.he.FRIENDS_AND_NON_FRIENDS : o.xY.get(t) ?? s.he.NON_FRIENDS
 }

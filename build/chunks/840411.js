@@ -1,17 +1,17 @@
 /** chunk id: 840411, original params: e,t,n (module,exports,require) **/
-function r(e, t, n, r) {
-    var l, i, a, o, s, c, u, d;
-    let f = null,
-        p = null;
-    n < r ? (f = null != (l = null == (a = t[r]) ? void 0 : a.skuId) ? l : null, p = null != (i = null == (o = t[r + 1]) ? void 0 : o.skuId) ? i : null) : (f = null != (s = null == (u = t[r - 1]) ? void 0 : u.skuId) ? s : null, p = null != (c = null == (d = t[r]) ? void 0 : d.skuId) ? c : null);
-    let g = [...t],
-        [m] = g.splice(n, 1);
-    return g.splice(r, 0, m), {
-        newWishlistData: e.set("items", g),
-        previousSkuId: f,
-        nextSkuId: p
+n.d(t, {
+    A: () => i
+});
+
+function i(e, t, n, i) {
+    let l = null,
+        a = null;
+    n < i ? (l = t[i]?.skuId ?? null, a = t[i + 1]?.skuId ?? null) : (l = t[i - 1]?.skuId ?? null, a = t[i]?.skuId ?? null);
+    let s = [...t],
+        [r] = s.splice(n, 1);
+    return s.splice(i, 0, r), {
+        newWishlistData: e.set("items", s),
+        previousSkuId: l,
+        nextSkuId: a
     }
 }
-n.d(t, {
-    A: () => r
-}), n(896048)

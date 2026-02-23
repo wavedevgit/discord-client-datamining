@@ -1,69 +1,70 @@
-/** chunk id: 353157, original params: e,t,r (module,exports,require) **/
-r.d(t, {
-    A: () => d
+/** chunk id: 353157, original params: e,t,n (module,exports,require) **/
+"use strict";
+n.d(t, {
+    A: () => u
 });
-var n = r(627968);
-r(64700);
-var i = r(575593),
-    l = r(397927),
-    s = r(929283),
-    a = r(550111),
-    u = r(331402),
-    o = r(242640),
-    c = r(752276);
+var i = n(627968);
+n(64700);
+var s = n(575593),
+    l = n(397927),
+    a = n(929283),
+    r = n(550111),
+    o = n(331402),
+    d = n(798048),
+    c = n(752276);
 
-function d(e) {
+function u(e) {
     let {
         item: t,
-        profileOwner: r,
-        isHighlighted: d,
-        cardSize: f = o.Y.MEDIUM
-    } = e, h = t.collectiblesItem;
-    switch (h.type) {
-        case i.R.PROFILE_EFFECT:
-            return (0, n.jsx)("div", {
+        profileOwner: n,
+        isHighlighted: u,
+        cardSize: h = d.Y.MEDIUM
+    } = e, p = t.collectiblesItem;
+    switch (p.type) {
+        case s.R.PROFILE_EFFECT:
+            return (0, i.jsx)("div", {
                 className: c.xC,
-                children: (0, n.jsx)(u.A, {
-                    skuId: h.skuId,
-                    isHighlighted: d,
+                children: (0, i.jsx)(o.A, {
+                    skuId: p.skuId,
+                    isHighlighted: u,
                     removeSetHeight: !0
                 })
             });
-        case i.R.AVATAR_DECORATION:
-            return (0, n.jsx)("div", {
+        case s.R.AVATAR_DECORATION:
+            return (0, i.jsx)("div", {
                 className: c._P,
-                children: (0, n.jsx)(s.i, {
-                    item: h,
-                    user: r,
-                    isHighlighted: d,
-                    avatarSize: l._3J.SIZE_80
+                children: (0, i.jsx)(a.i, {
+                    item: p,
+                    user: n,
+                    isHighlighted: u,
+                    avatarSize: h === d.Y.MEDIUM_SQUARE ? l._3J.SIZE_96 : l._3J.SIZE_80
                 })
             });
-        case i.R.NAMEPLATE:
-            return (0, n.jsxs)("div", {
+        case s.R.NAMEPLATE:
+            return (0, i.jsxs)("div", {
                 className: c.M4,
-                children: [(0, n.jsx)("div", {
+                children: [(0, i.jsx)("div", {
                     className: c.Qt,
-                    children: (0, n.jsx)(a.A, {
-                        user: r,
-                        nameplate: h,
-                        isHighlighted: d,
+                    children: (0, i.jsx)(r.A, {
+                        user: n,
+                        nameplate: p,
+                        isHighlighted: u,
                         showPlaceholderUser: !0,
                         showStatus: !0,
-                        nameplatePreviewSize: "default",
-                        width: f === o.Y.SMALL ? 136 : 200
+                        nameplatePreviewSize: h === d.Y.MEDIUM_SQUARE ? "small" : "default",
+                        width: h === d.Y.MEDIUM_SQUARE ? 171 : h === d.Y.SMALL || h === d.Y.SMALL_SQUARE ? 136 : 200
                     })
-                }), (0, n.jsx)("div", {
+                }), (0, i.jsx)("div", {
                     className: c.BM,
                     "aria-hidden": !0,
-                    children: (0, n.jsx)(a.A, {
-                        user: r,
-                        nameplate: h,
-                        isHighlighted: d,
+                    children: (0, i.jsx)(r.A, {
+                        user: n,
+                        nameplate: p,
+                        isHighlighted: u,
                         showPlaceholderUser: !0,
                         showStatus: !0,
-                        nameplatePreviewSize: "default",
-                        width: f === o.Y.SMALL ? 136 : 200
+                        nameplatePreviewSize: h === d.Y.MEDIUM_SQUARE ? "small" : "default",
+                        width: h === d.Y.MEDIUM_SQUARE ? 171 : h === d.Y.SMALL || h === d.Y.SMALL_SQUARE ? 136 : 200
                     })
                 })]
             });

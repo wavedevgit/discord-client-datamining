@@ -1,64 +1,61 @@
-/** chunk id: 856103, original params: t,n,e (module,exports,require) **/
-e.d(n, {
-    default: () => h
+/** chunk id: 856103, original params: t,e,n (module,exports,require) **/
+n.d(e, {
+    default: () => b
 });
-var i = e(627968),
-    l = e(64700),
-    a = e(158954),
-    o = e(311907),
-    r = e(397927),
-    s = e(696451),
-    u = e(71393),
-    d = e(287809),
-    c = e(624458),
-    g = e(202384),
-    p = e(212455),
-    m = e(739985),
-    v = e(985018),
-    _ = e(400783);
-let h = function(t) {
+var i = n(627968),
+    a = n(64700),
+    l = n(158954),
+    r = n(311907),
+    s = n(397927),
+    o = n(696451),
+    c = n(71393),
+    d = n(287809),
+    u = n(624458),
+    g = n(202384),
+    p = n(212455),
+    m = n(739985),
+    _ = n(985018),
+    h = n(400783);
+let b = function(t) {
     let {
-        guildId: n,
-        transitionState: e,
-        onClose: h
-    } = t, b = (0, o.bG)([p.A], () => p.A.getRequest(n), [n]), f = (0, o.bG)([u.A], () => u.A.getGuild(n), [n]), x = (0, o.bG)([d.default], () => {
-        var t;
-        return null == (t = d.default.getCurrentUser()) ? void 0 : t.id
-    }), A = (0, o.bG)([s.Ay], () => null != x ? s.Ay.getMember(n, x) : null, [x, n]), j = l.useCallback(() => {
-        h(), null == A && (0, m.A)()
-    }, [A, h]), k = l.useCallback(async () => {
-        if (null == A ? void 0 : A.isPending) {
+        guildId: e,
+        transitionState: n,
+        onClose: b
+    } = t, f = (0, r.bG)([p.A], () => p.A.getRequest(e), [e]), x = (0, r.bG)([c.A], () => c.A.getGuild(e), [e]), A = (0, r.bG)([d.default], () => d.default.getCurrentUser()?.id), j = (0, r.bG)([o.Ay], () => null != A ? o.Ay.getMember(e, A) : null, [A, e]), k = a.useCallback(() => {
+        b(), null == j && (0, m.A)()
+    }, [j, b]), C = a.useCallback(async () => {
+        if (j?.isPending) {
             try {
-                await c.A.removeGuildJoinRequest(n)
+                await u.A.removeGuildJoinRequest(e)
             } catch (t) {
                 throw t
             }
-            h(), (0, g.Ze)(n)
-        } else c.A.resetGuildJoinRequest(n)
-    }, [n, null == A ? void 0 : A.isPending, h]), C = l.useMemo(() => [{
-        text: v.intl.string(v.t.I1LYVk),
+            b(), (0, g.Ze)(e)
+        } else u.A.resetGuildJoinRequest(e)
+    }, [e, j?.isPending, b]), R = a.useMemo(() => [{
+        text: _.intl.string(_.t.I1LYVk),
         variant: "secondary",
-        onClick: k
+        onClick: C
     }, {
-        text: v.intl.string(v.t.BddRzS),
+        text: _.intl.string(_.t.BddRzS),
         variant: "critical-primary",
-        onClick: j
-    }], [k, j]);
-    return (0, i.jsx)(a.Modal, {
-        transitionState: e,
-        onClose: h,
-        title: (null == f ? void 0 : f.name) != null ? v.intl.formatToPlainString(v.t["P+/gzA"], {
-            guildName: f.name
-        }) : v.intl.string(v.t.gBPcuP),
-        actions: C,
-        children: (null == b ? void 0 : b.rejectionReason) != null && (null == b ? void 0 : b.rejectionReason) !== "" ? (0, i.jsxs)(r.Text, {
+        onClick: k
+    }], [C, k]);
+    return (0, i.jsx)(l.Modal, {
+        transitionState: n,
+        onClose: b,
+        title: x?.name != null ? _.intl.formatToPlainString(_.t["P+/gzA"], {
+            guildName: x.name
+        }) : _.intl.string(_.t.gBPcuP),
+        actions: R,
+        children: f?.rejectionReason != null && f?.rejectionReason !== "" ? (0, i.jsxs)(s.Text, {
             variant: "text-md/medium",
             color: "text-default",
             children: [(0, i.jsx)("span", {
-                className: _.Wj,
-                children: v.intl.string(v.t.cf1psW)
+                className: h.Wj,
+                children: _.intl.string(_.t.cf1psW)
             }), (0, i.jsx)("span", {
-                children: null == b ? void 0 : b.rejectionReason
+                children: f?.rejectionReason
             })]
         }) : null
     })

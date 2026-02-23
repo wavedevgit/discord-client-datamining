@@ -1,9 +1,10 @@
 /** chunk id: 397274, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => i
+    A: () => s
 });
-var r = n(775602);
-let i = new class {
+var i = n(775602);
+let s = new class {
+    scrollListener = null;
     getPanelScrollerNode() {
         let e = document.querySelectorAll("[data-settings-panel-scroller]");
         return e.length > 0 ? e[0] : null
@@ -25,51 +26,40 @@ let i = new class {
         let {
             scrollerNode: t,
             target: n,
-            scrollBehavior: r,
-            scrollBlock: i
+            scrollBehavior: i,
+            scrollBlock: s
         } = e;
         return new Promise(e => {
-            let l = null,
-                s = () => {
-                    clearTimeout(l), e(!0)
+            let a = null,
+                r = () => {
+                    clearTimeout(a), e(!0)
                 };
             requestAnimationFrame(() => {
-                t.addEventListener("scroll", s, {
+                t.addEventListener("scroll", r, {
                     once: !0
                 }), n.scrollIntoView({
-                    behavior: r,
-                    block: i
-                }), l = setTimeout(() => {
-                    t.removeEventListener("scroll", s), e(!1)
+                    behavior: i,
+                    block: s
+                }), a = setTimeout(() => {
+                    t.removeEventListener("scroll", r), e(!1)
                 }, 50)
             })
         })
     }
     async scrollIntoView(e, t) {
-        var n;
-        let i = this.getPanelScrollerNode();
-        if (null == i) return;
-        let l = t.animate && !r.A.useReducedMotion,
-            s = null != (n = t.block) ? n : "start";
+        let n = this.getPanelScrollerNode();
+        if (null == n) return;
+        let s = t.animate && !i.A.useReducedMotion,
+            a = t.block ?? "start";
         await this.scroll({
-            scrollerNode: i,
+            scrollerNode: n,
             target: e,
-            scrollBehavior: l ? "smooth" : "auto",
-            scrollBlock: s
+            scrollBehavior: s ? "smooth" : "auto",
+            scrollBlock: a
         }) && await new Promise(e => {
-            i.addEventListener("scrollend", () => e(), {
+            n.addEventListener("scrollend", () => e(), {
                 once: !0
             })
         })
-    }
-    constructor() {
-        ! function(e, t, n) {
-            t in e ? Object.defineProperty(e, t, {
-                value: null,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = null
-        }(this, "scrollListener", 0)
     }
 }

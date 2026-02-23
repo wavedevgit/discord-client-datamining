@@ -1,8 +1,8 @@
 /** chunk id: 21181, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    I: () => r
+    I: () => i
 });
-let r = [{
+let i = [{
     id: "749054660769218631",
     format_type: 3,
     description: "Wumpus waves hello",

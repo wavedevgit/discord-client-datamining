@@ -1,68 +1,51 @@
-/** chunk id: 211145, original params: e,t,i (module,exports,require) **/
-i.d(t, {
+/** chunk id: 211145, original params: e,t,s (module,exports,require) **/
+s.d(t, {
     A: () => d
 });
-var s = i(627968);
-i(64700);
-var a = i(503698),
-    r = i.n(a),
-    l = i(397927),
-    n = i(854627),
-    C = i(391173);
+var i = s(627968);
+s(64700);
+var a = s(503698),
+    r = s.n(a),
+    l = s(397927),
+    n = s(854627),
+    C = s(391173);
 
 function d(e) {
-    var t;
     let {
-        user: i,
-        checked: a,
-        onChange: d,
-        disabled: o
+        user: t,
+        checked: s,
+        onChange: a,
+        disabled: d
     } = e, {
-        avatarSrc: c,
-        eventHandlers: x
+        avatarSrc: o,
+        eventHandlers: c
     } = (0, n.A)({
-        userId: null == i ? void 0 : i.id,
+        userId: t?.id,
         size: l._3J.SIZE_32
-    }), p = null != (t = i.globalName) ? t : i.username;
-    return (0, s.jsxs)("div", {
+    }), x = t.globalName ?? t.username;
+    return (0, i.jsxs)("div", {
         className: C.kL,
-        children: [(0, s.jsxs)("div", {
+        children: [(0, i.jsxs)("div", {
             className: C.kQ,
-            children: [(0, s.jsx)(l.euF, function(e) {
-                for (var t = 1; t < arguments.length; t++) {
-                    var i = null != arguments[t] ? arguments[t] : {},
-                        s = Object.keys(i);
-                    "function" == typeof Object.getOwnPropertySymbols && (s = s.concat(Object.getOwnPropertySymbols(i).filter(function(e) {
-                        return Object.getOwnPropertyDescriptor(i, e).enumerable
-                    }))), s.forEach(function(t) {
-                        var s;
-                        s = i[t], t in e ? Object.defineProperty(e, t, {
-                            value: s,
-                            enumerable: !0,
-                            configurable: !0,
-                            writable: !0
-                        }) : e[t] = s
-                    })
-                }
-                return e
-            }({
+            children: [(0, i.jsx)(l.euF, {
                 className: r()({
-                    [C.SU]: o
+                    [C.SU]: d
                 }),
-                src: c,
-                "aria-label": p,
-                size: l._3J.SIZE_32
-            }, x)), (0, s.jsx)(l.Text, {
-                color: o ? "text-muted" : "text-default",
+                src: o,
+                "aria-label": x,
+                size: l._3J.SIZE_32,
+                ...c
+            }), (0, i.jsx)(l.Text, {
+                color: d ? "text-muted" : "text-default",
                 variant: "text-md/semibold",
-                children: p
+                children: x
             })]
-        }), (0, s.jsx)("div", {
+        }), (0, i.jsx)("div", {
             className: C.kv,
-            children: (0, s.jsx)(l.Checkbox, {
-                disabled: o,
-                checked: a,
-                onChange: e => d(i, e),
+            children: (0, i.jsx)(l.Checkbox, {
+                disabled: d,
+                checked: s,
+                onChange: e => a(t, e),
                 label: ""
             })
         })]

@@ -1,67 +1,89 @@
-/** chunk id: 672551, original params: e,t,r (module,exports,require) **/
-r.d(t, {
+/** chunk id: 672551, original params: t,e,s (module,exports,require) **/
+s.d(e, {
     default: () => g
-}), r(896048);
-var n = r(627968),
-    o = r(64700),
-    s = r(732955),
-    i = r(397927),
-    l = r(817281),
-    a = r(268218),
-    c = r(711014),
-    h = r(652215),
-    p = r(114329),
-    u = r(985018),
-    d = r(48835);
-
-function b(e, t, r) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: r,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = r, e
-}
-let f = (0, a.Fe)({
-    createPromise: () => r.e("66147").then(r.bind(r, 48736)),
+});
+var l = s(627968),
+    a = s(64700),
+    r = s(732955),
+    n = s(397927),
+    i = s(817281),
+    o = s(268218),
+    h = s(711014),
+    d = s(652215),
+    p = s(114329),
+    c = s(985018),
+    u = s(48835);
+let m = (0, o.Fe)({
+    createPromise: () => s.e("66147").then(s.bind(s, 48736)),
     webpackId: 48736
 });
-class O extends o.PureComponent {
+class C extends a.PureComponent {
+    state = {
+        name: this.props.folderName ?? "",
+        color: this.props.folderColor
+    };
+    close = () => {
+        this.props.onClose()
+    };
+    handleNameChange = t => {
+        this.setState({
+            name: t
+        })
+    };
+    handleColorChange = t => {
+        this.setState({
+            color: t
+        })
+    };
+    handleSubmit = t => {
+        t.preventDefault();
+        let {
+            folderId: e
+        } = this.props, {
+            name: s,
+            color: l
+        } = this.state, a = h.Ay.getGuildFolders().map(t => t.folderId === e ? {
+            ...t,
+            folderName: s,
+            folderColor: l
+        } : t);
+        (0, i.um)(a), this.close()
+    };
     render() {
         let {
-            transitionState: e,
-            onClose: t
+            transitionState: t,
+            onClose: e
         } = this.props, {
-            name: r,
-            color: o
+            name: s,
+            color: a
         } = this.state;
-        return (0, n.jsx)("form", {
+        return (0, l.jsx)("form", {
             onSubmit: this.handleSubmit,
-            children: (0, n.jsx)(s.aFV, {
-                title: u.intl.string(u.t.Dx7im5),
+            children: (0, l.jsx)(r.aFV, {
+                title: c.intl.string(c.t.Dx7im5),
                 actions: [{
                     variant: "primary",
-                    text: u.intl.string(u.t.i4jeWR),
+                    text: c.intl.string(c.t.i4jeWR),
                     type: "submit"
                 }],
-                transitionState: e,
-                onClose: t,
-                children: (0, n.jsxs)(i.BJc, {
+                transitionState: t,
+                onClose: e,
+                children: (0, l.jsxs)(n.BJc, {
                     gap: 16,
-                    children: [(0, n.jsx)(i.ksK, {
-                        label: u.intl.string(u.t.tGRbjA),
-                        maxLength: h.F05,
-                        value: r,
+                    children: [(0, l.jsx)(n.ksK, {
+                        label: c.intl.string(c.t.tGRbjA),
+                        maxLength: d.F05,
+                        value: s,
                         onChange: this.handleNameChange,
-                        placeholder: u.intl.string(u.t.xV9hVh),
+                        placeholder: c.intl.string(c.t.xV9hVh),
                         autoFocus: !0
-                    }), (0, n.jsx)(i.D0$, {
-                        label: u.intl.string(u.t.xpurRF),
-                        children: (0, n.jsx)(f, {
-                            className: d.E,
+                    }), (0, l.jsx)(n.D0$, {
+                        label: c.intl.string(c.t.xpurRF),
+                        children: (0, l.jsx)(m, {
+                            className: u.E,
                             defaultColor: p.DO,
-                            colors: h._tK,
-                            value: null != o ? o : p.DO,
+                            colors: d._tK,
+                            value: null != a ? a : p.DO,
                             onChange: this.handleColorChange
                         })
                     })]
@@ -69,57 +91,5 @@ class O extends o.PureComponent {
             })
         })
     }
-    constructor(...e) {
-        var t;
-        super(...e), b(this, "state", {
-            name: null != (t = this.props.folderName) ? t : "",
-            color: this.props.folderColor
-        }), b(this, "close", () => {
-            this.props.onClose()
-        }), b(this, "handleNameChange", e => {
-            this.setState({
-                name: e
-            })
-        }), b(this, "handleColorChange", e => {
-            this.setState({
-                color: e
-            })
-        }), b(this, "handleSubmit", e => {
-            e.preventDefault();
-            let {
-                folderId: t
-            } = this.props, {
-                name: r,
-                color: n
-            } = this.state, o = c.Ay.getGuildFolders().map(e => {
-                var o, s;
-                return e.folderId === t ? (o = function(e) {
-                    for (var t = 1; t < arguments.length; t++) {
-                        var r = null != arguments[t] ? arguments[t] : {},
-                            n = Object.keys(r);
-                        "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-                            return Object.getOwnPropertyDescriptor(r, e).enumerable
-                        }))), n.forEach(function(t) {
-                            b(e, t, r[t])
-                        })
-                    }
-                    return e
-                }({}, e), s = s = {
-                    folderName: r,
-                    folderColor: n
-                }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
-                    var r = Object.keys(e);
-                    if (Object.getOwnPropertySymbols) {
-                        var n = Object.getOwnPropertySymbols(e);
-                        r.push.apply(r, n)
-                    }
-                    return r
-                })(Object(s)).forEach(function(e) {
-                    Object.defineProperty(o, e, Object.getOwnPropertyDescriptor(s, e))
-                }), o) : e
-            });
-            (0, l.um)(o), this.close()
-        })
-    }
 }
-let g = O
+let g = C

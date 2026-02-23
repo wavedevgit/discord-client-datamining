@@ -6,34 +6,34 @@ var n = i(311907),
     l = i(827343),
     s = i(419954),
     r = i(430452),
-    u = i(780964),
-    a = i(652215),
+    a = i(780964),
+    u = i(652215),
     o = i(985018);
-let d = (0, s.zD)(u.X.ADVANCED_VOICE_ACTIVITY_PROCESSING_SETTING, {
+let d = (0, s.zD)(a.X.ADVANCED_VOICE_ACTIVITY_PROCESSING_SETTING, {
     useTitle: () => o.intl.string(o.t.BbESsg),
     useSubtitle: () => o.intl.string(o.t.LoOB1F),
     useValue: function() {
-        return (0, n.bG)([r.A], () => {
+        return (0, n.bG)([r.Ay], () => {
             let {
                 vadUseKrisp: t
-            } = r.A.getModeOptions();
+            } = r.Ay.getModeOptions();
             return t
         })
     },
     setValue: function(t) {
-        let e = r.A.getMode();
+        let e = r.Ay.getMode();
         l.A.setMode(e, {
             vadUseKrisp: t
         })
     },
     useDisabled: function() {
-        return (0, n.bG)([r.A], () => {
-            let t = r.A.getMode(),
-                e = r.A.getModeOptions().autoThreshold;
-            return t === a.TBI.VOICE_ACTIVITY && e
+        return (0, n.bG)([r.Ay], () => {
+            let t = r.Ay.getMode(),
+                e = r.Ay.getModeOptions().autoThreshold;
+            return t === u.TBI.VOICE_ACTIVITY && e
         })
     },
     usePredicate: function() {
-        return (0, n.bG)([r.A], () => r.A.isAdvancedVoiceActivitySupported() && r.A.isInputProfileCustom())
+        return (0, n.bG)([r.Ay], () => r.Ay.isAdvancedVoiceActivitySupported() && r.Ay.isInputProfileCustom())
     }
 })

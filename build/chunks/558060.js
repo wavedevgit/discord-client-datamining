@@ -1,30 +1,30 @@
-/** chunk id: 558060, original params: e,t,r (module,exports,require) **/
-r.d(t, {
-    R: () => a,
-    default: () => d
-}), r(896048);
-var n = r(627968),
-    i = r(64700),
-    o = r(284009),
-    l = r.n(o),
-    s = r(284683);
-let c = i.createContext(void 0);
+/** chunk id: 558060, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    R: () => o,
+    default: () => c
+});
+var s = i(627968),
+    r = i(64700),
+    n = i(284009),
+    l = i.n(n),
+    d = i(284683);
+let a = r.createContext(void 0);
 
-function a() {
-    let e = i.useContext(c);
+function o() {
+    let e = r.useContext(a);
     return l()(null != e, "must use useGuildShopSortContext within a GuildShopSortOptionsContextProvider"), e
 }
 
-function d(e) {
+function c(e) {
     let {
         children: t,
-        defaultSortOption: r = s.p$.NEWEST_ARRIVALS
-    } = e, [o, l] = i.useState(r);
-    return (0, n.jsx)(c.Provider, {
+        defaultSortOption: i = d.p$.NEWEST_ARRIVALS
+    } = e, [n, l] = r.useState(i);
+    return (0, s.jsx)(a.Provider, {
         value: {
-            sortOption: o,
+            sortOption: n,
             setSortOption: l,
-            onReset: () => l(r)
+            onReset: () => l(i)
         },
         children: t
     })

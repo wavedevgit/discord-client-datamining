@@ -4,6 +4,5 @@ e.exports = {
     wV: "updateIconForeground__49676",
     $P: "search__49676",
     el: "downloadArrow__49676",
-    gg: "cloud__49676",
-    pc: "controlButtonWrapper__49676"
+    gg: "cloud__49676"
 }

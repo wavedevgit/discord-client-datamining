@@ -1,217 +1,264 @@
 /** chunk id: 767375, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => x
-}), n(896048), n(638769);
-var r, i = n(627968),
-    l = n(64700),
-    s = n(735438),
-    a = n.n(s),
-    o = n(732955),
-    c = n(397927),
-    d = n(384904),
-    u = n(391048),
-    _ = n(83617),
-    p = n(661191),
-    m = n(533808),
-    g = n(219887),
-    A = n(652215),
-    f = n(985018),
-    b = n(228851);
-
-function h(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-class E extends(r = l.PureComponent) {
+    A: () => f
+});
+var i = n(627968),
+    s = n(64700),
+    a = n(735438),
+    r = n.n(a),
+    l = n(732955),
+    o = n(397927),
+    c = n(384904),
+    d = n(391048),
+    u = n(99696),
+    _ = n(202613),
+    m = n(580630),
+    A = n(83617),
+    g = n(661191),
+    h = n(533808),
+    x = n(219887),
+    p = n(652215),
+    E = n(985018),
+    C = n(228851);
+class T extends s.PureComponent {
+    static defaultProps = {
+        isEditing: !1,
+        hideDivider: !1,
+        onEditClick: () => {}
+    };
+    handleEditClick = () => {
+        this.props.onEditClick(this.props.paymentSource.id)
+    };
     render() {
         let {
             paymentSource: e,
             isDefault: t,
             isEditing: n,
-            index: r,
-            hideDivider: l,
-            isForSubscription: s,
-            locale: a,
-            removing: d,
-            submitting: u,
-            onSubmit: _,
-            onCancel: p,
-            onDelete: A
+            hideDivider: s,
+            isForSubscription: a,
+            locale: r,
+            removing: c,
+            submitting: d,
+            onSubmit: u,
+            onCancel: _,
+            onDelete: m
         } = this.props;
-        return n ? (0, i.jsx)(m.A, {
+        return n ? (0, i.jsx)(h.A, {
             paymentSource: e,
             isDefault: t,
-            removing: d,
-            submitting: u,
-            locale: a,
-            isForSubscription: s,
-            onSubmit: _,
-            onCancel: p,
-            onDelete: A
+            removing: c,
+            submitting: d,
+            locale: r,
+            isForSubscription: a,
+            onSubmit: u,
+            onCancel: _,
+            onDelete: m
         }) : (0, i.jsxs)(i.Fragment, {
-            children: [r > 0 && !l ? (0, i.jsx)(c.cGx, {
-                className: b.__invalid_sourceDivider
-            }) : null, (0, i.jsxs)("div", {
-                className: b.Yb,
-                children: [(0, i.jsx)(g.A, {
+            children: [s ? null : (0, i.jsx)(o.cGx, {
+                className: C.__invalid_sourceDivider
+            }), (0, i.jsxs)("div", {
+                className: C.Yb,
+                children: [(0, i.jsx)(x.A, {
                     paymentSource: e,
                     isDefault: t,
-                    isForSubscription: s,
-                    locale: a,
+                    isForSubscription: a,
+                    locale: r,
                     showSubtext: !0,
                     showLabels: !0,
                     showPaymentSourceIcon: !0
-                }), n ? null : (0, i.jsx)(o.$nd, {
+                }), n ? null : (0, i.jsx)(l.$nd, {
                     variant: "secondary",
                     onClick: this.handleEditClick,
                     size: "sm",
-                    text: f.intl.string(f.t.bt75uw)
+                    text: E.intl.string(E.t.bt75uw)
                 })]
             })]
         })
     }
-    constructor(...e) {
-        super(...e), h(this, "handleEditClick", () => {
-            this.props.onEditClick(this.props.paymentSource.id)
-        })
-    }
 }
-h(E, "defaultProps", {
-    isEditing: !1,
-    hideDivider: !1,
-    onEditClick: () => {}
+let S = s.memo(function(e) {
+    let {
+        paymentSource: t,
+        hideDivider: n,
+        isForSubscription: a,
+        locale: r,
+        onRedeemClick: d
+    } = e, [u, _] = s.useState(null);
+    return s.useEffect(() => {
+        void 0 === t ? _({
+            amount: 0,
+            currency: p.Yri.USD
+        }) : c.YP(t.id).then(e => {
+            _(e)
+        })
+    }, [t]), (0, i.jsxs)(i.Fragment, {
+        children: [n ? null : (0, i.jsx)(o.cGx, {
+            className: C.__invalid_sourceDivider
+        }), (0, i.jsxs)("div", {
+            className: C.Yb,
+            children: [void 0 !== t ? (0, i.jsx)(x.A, {
+                paymentSource: t,
+                isDefault: !1,
+                isForSubscription: a,
+                locale: r,
+                showSubtext: !1,
+                showLabels: !1,
+                showPaymentSourceIcon: !0
+            }) : (0, i.jsx)(o.Text, {
+                variant: "text-sm/medium",
+                children: E.intl.string(E.t["6EEgNt"])
+            }), (0, i.jsxs)("div", {
+                className: C.zy,
+                children: [(0, i.jsx)("div", {
+                    className: C.Tq,
+                    children: null == u ? (0, i.jsx)(o.y$y, {
+                        type: o.y$y.Type.SPINNING_CIRCLE
+                    }) : (0, i.jsx)(o.Text, {
+                        variant: "text-sm/medium",
+                        children: (() => {
+                            let {
+                                amount: e,
+                                currency: t
+                            } = u ?? {}, n = t ?? p.Yri.USD, i = String(n).toUpperCase(), s = (0, m.$g)(e ?? 0, n);
+                            return `${i} ${s}`
+                        })()
+                    })
+                }), (0, i.jsx)(l.$nd, {
+                    variant: "secondary",
+                    onClick: d,
+                    size: "sm",
+                    text: E.intl.string(E.t.H2hHyf)
+                })]
+            })]
+        })]
+    })
 });
-class O extends l.PureComponent {
+class I extends s.PureComponent {
+    state = {
+        editingPayment: null
+    };
+    handleEditClick = async e => {
+        try {
+            await c.Gr(e), this.setState({
+                editingPayment: e
+            })
+        } catch (e) {}
+    };
+    handleCancel = () => {
+        this.setState({
+            editingPayment: null
+        })
+    };
+    handleDelete = async e => {
+        try {
+            await c.JQ(e), this.setState({
+                editingPayment: null
+            })
+        } catch (e) {}
+    };
+    handleSubmit = async (e, t) => {
+        if (null != e) try {
+            await c.Ps(e, t), this.setState({
+                editingPayment: null
+            })
+        } catch (e) {}
+    };
+    handlePaymentSourceAdded = async e => {
+        await (0, A.c_)(e.id)
+    };
+    handleAddPaymentMethod = () => {
+        (0, o.mMO)(async () => {
+            let {
+                default: e
+            } = await Promise.resolve().then(n.bind(n, 362111));
+            return t => (0, i.jsx)(e, {
+                ...t,
+                onAddPaymentSource: this.handlePaymentSourceAdded
+            })
+        }, {
+            onCloseCallback: () => {
+                (0, d.ET)()
+            },
+            onCloseRequest: p.tEg
+        })
+    };
     renderFooter() {
         let {
             paymentSources: e
         } = this.props;
         return (0, i.jsxs)("div", {
-            className: b.qr,
+            className: C.qr,
             children: [0 === Object.keys(e).length ? (0, i.jsxs)("div", {
-                className: b.z8,
-                children: [(0, i.jsx)(c.Text, {
+                className: C.z8,
+                children: [(0, i.jsx)(o.Text, {
                     variant: "text-sm/normal",
-                    children: f.intl.string(f.t.aRHpAB)
+                    children: E.intl.string(E.t.aRHpAB)
                 }), (0, i.jsx)("div", {
-                    className: b.Sv,
-                    children: f.intl.string(f.t.o9bOIl)
+                    className: C.Sv,
+                    children: E.intl.string(E.t.o9bOIl)
                 })]
-            }) : null, (0, i.jsx)(o.$nd, {
+            }) : null, (0, i.jsx)(l.$nd, {
                 onClick: this.handleAddPaymentMethod,
-                text: f.intl.string(f.t.CpOiEO)
+                text: E.intl.string(E.t.CpOiEO)
             })]
         })
     }
     render() {
-        let {
-            showHeader: e,
-            defaultPaymentSourceId: t,
-            paymentSources: n,
-            locale: r,
-            removing: l,
-            submitting: s,
-            premiumSubscriptionPaymentSourceId: o
-        } = this.props, d = a().values(n).sort((e, n) => e.id === t ? -1 : n.id === t ? 1 : p.default.compare(e.id, n.id)), u = this.state.editingPayment, _ = d.findIndex(e => e.id === u), m = d.map((e, n) => (0, i.jsx)(E, {
-            locale: r,
+        let e, {
+                showHeader: t,
+                defaultPaymentSourceId: n,
+                paymentSources: s,
+                locale: a,
+                removing: l,
+                submitting: c,
+                premiumSubscriptionPaymentSourceId: d,
+                showGiftCards: m
+            } = this.props,
+            A = r().values(s).sort((e, t) => e.id === n ? -1 : t.id === n ? 1 : g.default.compare(e.id, t.id)),
+            h = A.filter(e => !(e instanceof _.LQ)),
+            x = A.filter(e => e instanceof _.LQ),
+            p = this.state.editingPayment,
+            I = h.findIndex(e => e.id === p),
+            f = h.map((e, t) => (0, i.jsx)(T, {
+                locale: a,
+                paymentSource: e,
+                isDefault: n === e.id,
+                onCancel: this.handleCancel,
+                onDelete: this.handleDelete,
+                isForSubscription: e.id === d,
+                hideDivider: 0 === t || I === t - 1,
+                onSubmit: this.handleSubmit,
+                submitting: c,
+                removing: l,
+                isEditing: p === e.id,
+                onEditClick: this.handleEditClick
+            }, e.id));
+        return e = x.length > 0 ? x.map((e, t) => (0, i.jsx)(S, {
             paymentSource: e,
-            isDefault: t === e.id,
-            onCancel: this.handleCancel,
-            onDelete: this.handleDelete,
-            isForSubscription: e.id === o,
-            hideDivider: _ === n - 1,
-            onSubmit: this.handleSubmit,
-            index: n,
-            submitting: s,
-            removing: l,
-            isEditing: u === e.id,
-            onEditClick: this.handleEditClick
-        }, e.id));
-        return (0, i.jsxs)(i.Fragment, {
-            children: [e ? (0, i.jsxs)(i.Fragment, {
-                children: [(0, i.jsxs)(c.Heading, {
+            hideDivider: 0 === h.length || I === h.length - 1,
+            isForSubscription: e.id === d,
+            locale: a,
+            onRedeemClick: () => (0, u.HF)()
+        }, e.id)) : (0, i.jsx)(S, {
+            hideDivider: 0 === h.length || I === h.length - 1,
+            isForSubscription: !1,
+            locale: a,
+            onRedeemClick: () => (0, u.HF)()
+        }), (0, i.jsxs)(i.Fragment, {
+            children: [t ? (0, i.jsxs)(i.Fragment, {
+                children: [(0, i.jsxs)(o.Heading, {
                     variant: "heading-lg/semibold",
-                    children: [(0, i.jsx)(c.XAi, {
+                    children: [(0, i.jsx)(o.XAi, {
                         size: "sm",
-                        className: b.hz
-                    }), " ", f.intl.string(f.t.W26xGQ)]
-                }), (0, i.jsx)(c.Text, {
+                        className: C.hz
+                    }), " ", E.intl.string(E.t.W26xGQ)]
+                }), (0, i.jsx)(o.Text, {
                     variant: "text-sm/normal",
                     color: "text-subtle",
-                    children: f.intl.string(f.t.h6V3uK)
+                    children: E.intl.string(E.t.h6V3uK)
                 })]
-            }) : null, m, _ !== d.length - 1 ? (0, i.jsx)(c.cGx, {}) : null, this.renderFooter()]
-        })
-    }
-    constructor(...e) {
-        super(...e), h(this, "state", {
-            editingPayment: null
-        }), h(this, "handleEditClick", async e => {
-            try {
-                await d.Gr(e), this.setState({
-                    editingPayment: e
-                })
-            } catch (e) {}
-        }), h(this, "handleCancel", () => {
-            this.setState({
-                editingPayment: null
-            })
-        }), h(this, "handleDelete", async e => {
-            try {
-                await d.JQ(e), this.setState({
-                    editingPayment: null
-                })
-            } catch (e) {}
-        }), h(this, "handleSubmit", async (e, t) => {
-            if (null != e) try {
-                await d.Ps(e, t), this.setState({
-                    editingPayment: null
-                })
-            } catch (e) {}
-        }), h(this, "handlePaymentSourceAdded", async e => {
-            await (0, _.c_)(e.id)
-        }), h(this, "handleAddPaymentMethod", () => {
-            (0, c.mMO)(async () => {
-                let {
-                    default: e
-                } = await Promise.resolve().then(n.bind(n, 362111));
-                return t => {
-                    var n, r;
-                    return (0, i.jsx)(e, (n = function(e) {
-                        for (var t = 1; t < arguments.length; t++) {
-                            var n = null != arguments[t] ? arguments[t] : {},
-                                r = Object.keys(n);
-                            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                                return Object.getOwnPropertyDescriptor(n, e).enumerable
-                            }))), r.forEach(function(t) {
-                                h(e, t, n[t])
-                            })
-                        }
-                        return e
-                    }({}, t), r = r = {
-                        onAddPaymentSource: this.handlePaymentSourceAdded
-                    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
-                        var n = Object.keys(e);
-                        if (Object.getOwnPropertySymbols) {
-                            var r = Object.getOwnPropertySymbols(e);
-                            n.push.apply(n, r)
-                        }
-                        return n
-                    })(Object(r)).forEach(function(e) {
-                        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
-                    }), n))
-                }
-            }, {
-                onCloseCallback: () => {
-                    (0, u.ET)()
-                },
-                onCloseRequest: A.tEg
-            })
+            }) : null, f, m && e, I !== h.length - 1 || m && x.length > 0 ? (0, i.jsx)(o.cGx, {}) : null, this.renderFooter()]
         })
     }
 }
-let x = O
+let f = I

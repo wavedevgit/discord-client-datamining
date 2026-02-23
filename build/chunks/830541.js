@@ -1,230 +1,196 @@
-/** chunk id: 830541, original params: e,t,r (module,exports,require) **/
-r.d(t, {
-    default: () => K
-}), r(896048);
-var n = r(627968),
-    s = r(64700),
-    i = r(503698),
-    o = r.n(i),
-    a = r(735438),
-    l = r.n(a),
-    c = r(311907),
-    u = r(562465),
-    p = r(732955),
-    h = r(397927),
-    d = r(846293),
-    b = r(414079),
-    m = r(297413),
-    y = r(966327),
-    j = r(58149),
-    x = r(262295),
-    g = r(576470),
-    f = r(235986),
-    O = r(544028),
-    v = r(671759),
-    A = r(427157),
-    w = r(734057),
-    _ = r(351906),
-    N = r(954571),
-    P = r(652215),
-    C = r(985018),
-    E = r(693737),
-    I = r(506823),
-    k = r(473169);
-
-function S(e, t, r) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: r,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = r, e
-}
-
-function D(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var r = null != arguments[t] ? arguments[t] : {},
-            n = Object.keys(r);
-        "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(r, e).enumerable
-        }))), n.forEach(function(t) {
-            S(e, t, r[t])
-        })
-    }
-    return e
-}
-
-function R(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-        var r = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var n = Object.getOwnPropertySymbols(e);
-            r.push.apply(r, n)
-        }
-        return r
-    })(Object(t)).forEach(function(r) {
-        Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r))
-    }), e
-}
-class T extends s.PureComponent {
+/** chunk id: 830541, original params: e,s,t (module,exports,require) **/
+t.d(s, {
+    default: () => S
+});
+var i = t(627968),
+    n = t(64700),
+    r = t(503698),
+    a = t.n(r),
+    l = t(735438),
+    o = t.n(l),
+    c = t(311907),
+    d = t(562465),
+    h = t(732955),
+    x = t(397927),
+    m = t(846293),
+    u = t(414079),
+    p = t(297413),
+    A = t(966327),
+    j = t(58149),
+    v = t(262295),
+    g = t(576470),
+    _ = t(235986),
+    C = t(544028),
+    N = t(671759),
+    y = t(427157),
+    E = t(734057),
+    I = t(351906),
+    b = t(954571),
+    k = t(652215),
+    w = t(985018),
+    R = t(693737),
+    f = t(506823),
+    D = t(473169);
+class T extends n.PureComponent {
     render() {
         let {
             invite: e,
-            hideDiscriminator: t,
-            hideInviteCode: r
-        } = this.props, s = new A.A(e.inviter);
-        return (0, n.jsxs)(f.A, {
-            className: o()(E.nM, I.N),
-            children: [(0, n.jsxs)(f.A, {
-                align: f.A.Align.CENTER,
-                className: E.CE,
-                children: [(0, n.jsx)(y.A, {
-                    user: s,
-                    size: h._3J.SIZE_24,
-                    className: E.my
-                }), (0, n.jsx)(m.A, {
-                    user: s,
-                    hideDiscriminator: t,
-                    usernameClass: E.Xh,
-                    discriminatorClass: E.OM
+            hideDiscriminator: s,
+            hideInviteCode: t
+        } = this.props, n = new y.A(e.inviter);
+        return (0, i.jsxs)(_.A, {
+            className: a()(R.nM, f.N),
+            children: [(0, i.jsxs)(_.A, {
+                align: _.A.Align.CENTER,
+                className: R.CE,
+                children: [(0, i.jsx)(A.A, {
+                    user: n,
+                    size: x._3J.SIZE_24,
+                    className: R.my
+                }), (0, i.jsx)(p.A, {
+                    user: n,
+                    hideDiscriminator: s,
+                    usernameClass: R.Xh,
+                    discriminatorClass: R.OM
                 })]
-            }), (0, n.jsx)(f.A, {
-                align: f.A.Align.CENTER,
+            }), (0, i.jsx)(_.A, {
+                align: _.A.Align.CENTER,
                 grow: 0,
                 shrink: 0,
                 basis: 100,
-                className: E.Kf,
-                children: (0, n.jsx)(h.Text, {
-                    className: E.aY,
+                className: R.Kf,
+                children: (0, i.jsx)(x.Text, {
+                    className: R.aY,
                     variant: "text-sm/normal",
-                    children: r ? "..." : e.code
+                    children: t ? "..." : e.code
                 })
-            }), (0, n.jsxs)(f.A, {
+            }), (0, i.jsxs)(_.A, {
                 basis: 100,
                 grow: 0,
                 shrink: 0,
-                align: f.A.Align.CENTER,
-                justify: f.A.Justify.END,
-                className: E.Kf,
-                children: [(0, n.jsx)(h.Text, {
-                    className: E.qW,
+                align: _.A.Align.CENTER,
+                justify: _.A.Justify.END,
+                className: R.Kf,
+                children: [(0, i.jsx)(x.Text, {
+                    className: R.qW,
                     variant: "text-sm/normal",
-                    children: (0, n.jsx)(g.A, {
+                    children: (0, i.jsx)(g.A, {
                         deadline: e.getExpiresAt(),
                         showDays: !1
                     })
-                }), (0, n.jsx)(b.A, {
-                    className: E.eb,
+                }), (0, i.jsx)(u.A, {
+                    className: R.eb,
                     onClick: this.handleRevokeInvite
                 })]
             })]
         })
     }
-    constructor(...e) {
-        super(...e), S(this, "handleRevokeInvite", () => {
-            let {
-                onRevoke: e,
-                invite: t
-            } = this.props;
-            null != e && e(t)
-        })
+    handleRevokeInvite = () => {
+        let {
+            onRevoke: e,
+            invite: s
+        } = this.props;
+        null != e && e(s)
     }
 }
-class M extends s.PureComponent {
+class M extends n.PureComponent {
+    state = {
+        loading: !0,
+        invites: null
+    };
     componentDidMount() {
         let {
             channelId: e
         } = this.props;
-        u.Bo.get({
-            url: P.Rsh.INSTANT_INVITES(e),
+        d.Bo.get({
+            url: k.Rsh.INSTANT_INVITES(e),
             retries: 3,
             oldFormErrors: !0,
             rejectWithError: !0
         }).then(e => {
-            let t = e.body.map(e => new v.A(R(D({}, e), {
+            let s = e.body.map(e => new N.A({
+                ...e,
                 maxUses: e.max_uses,
                 maxAge: e.max_age,
                 createdAt: e.created_at
-            })));
+            }));
             this.setState({
                 loading: !1,
-                invites: t
+                invites: s
             })
-        }), N.default.track(P.HAw.OPEN_MODAL, R(D({}, (0, j.dI)(w.A.getChannel(e))), {
+        }), b.default.track(k.HAw.OPEN_MODAL, {
+            ...(0, j.dI)(E.A.getChannel(e)),
             type: "Group DM Invites",
             source: "Group DM Menu"
-        }))
+        })
     }
     renderContent() {
         let {
             loading: e,
-            invites: t
+            invites: s
         } = this.state, {
-            hideDiscriminators: r,
-            hideInviteCodes: s
+            hideDiscriminators: t,
+            hideInviteCodes: n
         } = this.props;
-        if (e || null == t) return (0, n.jsx)(h.y$y, {
-            className: k.QX,
-            type: h.y$y.Type.SPINNING_CIRCLE
+        if (e || null == s) return (0, i.jsx)(x.y$y, {
+            className: D.QX,
+            type: x.y$y.Type.SPINNING_CIRCLE
         });
-        if (l().isEmpty(t)) return this.renderEmpty();
-        let i = l()(t).sortBy(e => {
-            var t;
-            return (null != (t = e.inviter.username) ? t : "").toLocaleLowerCase()
-        }).value();
-        return (0, n.jsxs)(h.XIK, {
-            "aria-label": C.intl.string(C.t["9F90ic"]),
+        if (o().isEmpty(s)) return this.renderEmpty();
+        let r = o()(s).sortBy(e => (e.inviter.username ?? "").toLocaleLowerCase()).value();
+        return (0, i.jsxs)(x.XIK, {
+            "aria-label": w.intl.string(w.t["9F90ic"]),
             selectionMode: "none",
-            children: [(0, n.jsxs)(h.A0N, {
-                children: [(0, n.jsx)(h.VeA, {
-                    children: C.intl.string(C.t.EgHyKy)
-                }), (0, n.jsx)(h.VeA, {
-                    children: C.intl.string(C.t.LBlFEN)
-                }), (0, n.jsx)(h.VeA, {
-                    children: C.intl.string(C.t["1aM27d"])
+            children: [(0, i.jsxs)(x.A0N, {
+                children: [(0, i.jsx)(x.VeA, {
+                    children: w.intl.string(w.t.EgHyKy)
+                }), (0, i.jsx)(x.VeA, {
+                    children: w.intl.string(w.t.LBlFEN)
+                }), (0, i.jsx)(x.VeA, {
+                    children: w.intl.string(w.t["1aM27d"])
                 })]
-            }), (0, n.jsx)(h.BFY, {
-                items: i,
+            }), (0, i.jsx)(x.BFY, {
+                items: r,
                 children: e => {
-                    let t = new A.A(e.inviter);
-                    return (0, n.jsxs)(h.Hjg, {
+                    let s = new y.A(e.inviter);
+                    return (0, i.jsxs)(x.Hjg, {
                         id: e.code,
-                        children: [(0, n.jsx)(h.nA6, {
-                            children: (0, n.jsx)(x.A, {
-                                avatar: (0, n.jsx)(y.A, {
-                                    user: t,
-                                    size: h._3J.SIZE_24
+                        children: [(0, i.jsx)(x.nA6, {
+                            children: (0, i.jsx)(v.A, {
+                                avatar: (0, i.jsx)(A.A, {
+                                    user: s,
+                                    size: x._3J.SIZE_24
                                 }),
-                                name: (0, n.jsx)(m.A, {
-                                    user: t,
-                                    hideDiscriminator: r,
-                                    usernameClass: E.Xh,
-                                    discriminatorClass: E.OM
+                                name: (0, i.jsx)(p.A, {
+                                    user: s,
+                                    hideDiscriminator: t,
+                                    usernameClass: R.Xh,
+                                    discriminatorClass: R.OM
                                 })
                             })
-                        }), (0, n.jsx)(h.nA6, {
-                            children: (0, n.jsx)(h.Text, {
-                                className: E.aY,
+                        }), (0, i.jsx)(x.nA6, {
+                            children: (0, i.jsx)(x.Text, {
+                                className: R.aY,
                                 variant: "text-sm/normal",
-                                children: s ? "..." : e.code
+                                children: n ? "..." : e.code
                             })
-                        }), (0, n.jsx)(h.nA6, {
-                            children: (0, n.jsxs)(h.BJc, {
+                        }), (0, i.jsx)(x.nA6, {
+                            children: (0, i.jsxs)(x.BJc, {
                                 direction: "horizontal",
                                 align: "center",
                                 gap: 8,
-                                children: [(0, n.jsx)(h.Text, {
-                                    className: E.qW,
+                                children: [(0, i.jsx)(x.Text, {
+                                    className: R.qW,
                                     variant: "text-sm/normal",
-                                    children: (0, n.jsx)(g.A, {
+                                    children: (0, i.jsx)(g.A, {
                                         deadline: e.getExpiresAt(),
                                         showDays: !1
                                     })
-                                }), (0, n.jsx)(h.K0, {
+                                }), (0, i.jsx)(x.K0, {
                                     size: "sm",
-                                    "aria-label": C.intl.string(C.t.N86XcP),
+                                    "aria-label": w.intl.string(w.t.N86XcP),
                                     variant: "critical-secondary",
-                                    icon: h.ucK,
+                                    icon: x.ucK,
                                     onClick: () => this.handleRevoke(e)
                                 })]
                             })
@@ -235,72 +201,65 @@ class M extends s.PureComponent {
         })
     }
     renderEmpty() {
-        return (0, n.jsxs)(h.ppr, {
+        return (0, i.jsxs)(x.ppr, {
             theme: this.props.theme,
-            children: [(0, n.jsx)(h.G8R, {
-                darkSrc: r(774125),
-                lightSrc: r(151803),
+            children: [(0, i.jsx)(x.G8R, {
+                darkSrc: t(774125),
+                lightSrc: t(151803),
                 width: 256,
                 height: 130,
                 style: {
                     marginBottom: 0
                 }
-            }), (0, n.jsx)(h.SGT, {
-                className: k.QX,
-                children: C.intl.string(C.t["03/rlQ"])
+            }), (0, i.jsx)(x.SGT, {
+                className: D.QX,
+                children: w.intl.string(w.t["03/rlQ"])
             })]
         })
     }
     renderInvites() {
         let {
             hideDiscriminators: e,
-            hideInviteCodes: t
+            hideInviteCodes: s
         } = this.props;
-        return l()(this.state.invites).sortBy(e => {
-            var t;
-            return (null != (t = e.inviter.username) ? t : "").toLocaleLowerCase()
-        }).map(r => (0, n.jsx)(T, {
-            invite: r,
+        return o()(this.state.invites).sortBy(e => (e.inviter.username ?? "").toLocaleLowerCase()).map(t => (0, i.jsx)(T, {
+            invite: t,
             hideDiscriminator: e,
-            hideInviteCode: t,
+            hideInviteCode: s,
             onRevoke: this.handleRevoke
-        }, r.code)).value()
+        }, t.code)).value()
     }
     render() {
         let {
             onClose: e,
-            transitionState: t
+            transitionState: s
         } = this.props;
-        return (0, n.jsx)(p.aFV, {
-            title: C.intl.string(C.t["9F90ic"]),
-            subtitle: C.intl.string(C.t.WDw38H),
+        return (0, i.jsx)(h.aFV, {
+            title: w.intl.string(w.t["9F90ic"]),
+            subtitle: w.intl.string(w.t.WDw38H),
             actions: [{
-                text: C.intl.string(C.t.i4jeWR),
+                text: w.intl.string(w.t.i4jeWR),
                 onClick: this.handleClose
             }],
             onClose: e,
-            transitionState: t,
+            transitionState: s,
             children: this.renderContent()
         })
     }
-    constructor(...e) {
-        super(...e), S(this, "state", {
-            loading: !0,
-            invites: null
-        }), S(this, "handleRevoke", e => {
-            d.Ay.revokeInvite(e), this.setState({
-                invites: this.state.invites.filter(t => t !== e)
-            })
-        }), S(this, "handleClose", () => {
-            let {
-                onClose: e
-            } = this.props;
-            null == e || e()
+    handleRevoke = e => {
+        m.Ay.revokeInvite(e), this.setState({
+            invites: this.state.invites.filter(s => s !== e)
         })
+    };
+    handleClose = () => {
+        let {
+            onClose: e
+        } = this.props;
+        e?.()
     }
 }
-let K = c.Ay.connectStores([_.A, O.A], () => ({
-    hideDiscriminators: _.A.hidePersonalInformation,
-    hideInviteCodes: _.A.hideInstantInvites,
-    theme: O.A.theme
+let S = c.Ay.connectStores([I.A, C.A], () => ({
+    hideDiscriminators: I.A.hidePersonalInformation,
+    hideInviteCodes: I.A.hideInstantInvites,
+    theme: C.A.theme
 }))(M)

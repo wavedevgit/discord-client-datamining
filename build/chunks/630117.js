@@ -1,12 +1,12 @@
 /** chunk id: 630117, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => u
-}), n(896048), n(321073);
+}), n(321073);
 var r = n(512750),
     l = n(6316),
     i = n(141406),
-    o = n(294726),
-    s = n(333354),
+    s = n(294726),
+    o = n(333354),
     a = n(985018);
 
 function u(e) {
@@ -19,10 +19,10 @@ function u(e) {
         expiringPowerupNames: [],
         warnings: []
     };
-    let d = n.length > 0 ? a.intl.string(o.default["B3OfL/"]) : void 0,
+    let d = n.length > 0 ? a.intl.string(s.default["B3OfL/"]) : void 0,
         c = [...t.map(e => e.title), ...null != d ? [d] : []],
         p = [];
-    return t.some(e => e.skuId === r.FB) && p.push(a.intl.string(s.default.Sfr0Jw)), n.length > 0 && p.push(a.intl.string(o.default.wiungr)), {
+    return t.some(e => e.skuId === r.FB) && p.push(a.intl.string(o.default.Sfr0Jw)), n.length > 0 && p.push(a.intl.string(s.default.wiungr)), {
         shouldShow: u,
         expiringPowerups: t,
         expiringPowerupNames: c,

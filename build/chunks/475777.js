@@ -1,15 +1,15 @@
-/** chunk id: 475777, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => i
+/** chunk id: 475777, original params: n,e,t (module,exports,require) **/
+t.d(e, {
+    A: () => a
 });
-var r = n(531335),
-    c = n(652215);
+var l = t(531335),
+    r = t(652215);
 
-function i(e, t, n) {
-    return (0, r.A)({
-        guild: t,
-        channel: e,
-        stageInstance: n,
-        source: c.PE1.CONTEXT_MENU
+function a(n, e, t) {
+    return (0, l.A)({
+        guild: e,
+        channel: n,
+        stageInstance: t,
+        source: r.PE1.CONTEXT_MENU
     })
 }

@@ -1,15 +1,15 @@
 /** chunk id: 63543, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => s
+    A: () => o
 });
-var r = n(627968),
-    l = n(64700),
-    o = n(39255);
-let s = l.forwardRef(function(e, t) {
+var l = n(627968),
+    r = n(64700),
+    s = n(39255);
+let o = r.forwardRef(function(e, t) {
     let {
         query: n,
-        onQueryChange: l,
-        onRemoveTag: s,
+        onQueryChange: r,
+        onRemoveTag: o,
         onSelect: i,
         onSelectionChange: a,
         selectedSection: c,
@@ -17,16 +17,16 @@ let s = l.forwardRef(function(e, t) {
         tags: d,
         sections: x,
         placeholder: h = "",
-        focusAfterReady: f,
-        isReady: m,
-        "aria-labelledby": b,
-        "aria-controls": w
+        focusAfterReady: m,
+        isReady: w,
+        "aria-labelledby": g,
+        "aria-controls": R
     } = e;
-    return (0, r.jsx)(o.A, {
+    return (0, l.jsx)(s.A, {
         autoFocus: !0,
         maxHeight: 100,
-        onQueryChange: l,
-        onRemoveTag: s,
+        onQueryChange: r,
+        onRemoveTag: o,
         selectedSection: c,
         selectedRow: u,
         onSelect: i,
@@ -34,16 +34,16 @@ let s = l.forwardRef(function(e, t) {
         placeholder: 0 === d.length ? h : "",
         query: n,
         ref: t,
-        size: o.A.Sizes.MEDIUM,
+        size: s.A.Sizes.MEDIUM,
         tags: d,
         sections: x,
-        focusAfterReady: f,
-        isReady: m,
+        focusAfterReady: m,
+        isReady: w,
         inputProps: {
-            "aria-labelledby": b,
-            "aria-controls": w,
+            "aria-labelledby": g,
+            "aria-controls": R,
             "aria-expanded": !0,
-            "aria-activedescendant": "user-row-".concat(u)
+            "aria-activedescendant": `user-row-${u}`
         }
     })
 })

@@ -1,77 +1,72 @@
-/** chunk id: 382120, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => p
-}), n(228524), n(938796);
-var l = n(627968);
-n(64700);
-var i = n(158954),
-    r = n(311907),
-    s = n(397927),
-    o = n(973925),
-    a = n(622543),
-    d = n(985018),
-    c = n(437102);
+/** chunk id: 382120, original params: e,n,t (module,exports,require) **/
+t.d(n, {
+    A: () => A
+});
+var i = t(627968);
+t(64700);
+var s = t(158954),
+    l = t(311907),
+    a = t(397927),
+    r = t(973925),
+    d = t(622543),
+    c = t(985018),
+    o = t(437102);
 
 function u(e) {
     let {
-        icon: t,
-        title: n,
-        description: i
+        icon: n,
+        title: t,
+        description: s
     } = e;
-    return (0, l.jsxs)("div", {
-        className: c.nM,
-        children: [(0, l.jsx)("div", {
-            className: c.aL,
-            children: (0, l.jsx)(t, {
+    return (0, i.jsxs)("div", {
+        className: o.nM,
+        children: [(0, i.jsx)("div", {
+            className: o.aL,
+            children: (0, i.jsx)(n, {
                 size: "custom",
                 width: 20,
                 height: 20,
                 color: "currentColor"
             })
-        }), (0, l.jsxs)("div", {
-            className: c.qg,
-            children: [(0, l.jsx)(s.Heading, {
+        }), (0, i.jsxs)("div", {
+            className: o.qg,
+            children: [(0, i.jsx)(a.Heading, {
                 variant: "text-xs/semibold",
-                children: n
-            }), (0, l.jsx)(s.Text, {
+                children: t
+            }), (0, i.jsx)(a.Text, {
                 variant: "text-sm/normal",
-                children: i
+                children: s
             })]
         })]
     })
 }
 
-function p(e) {
+function A(e) {
     let {
-        user: t
-    } = e, n = (0, r.bG)([a.A], () => {
-        var e;
-        return null == (e = a.A.getUserProfile(t.id)) ? void 0 : e.application
-    }), {
-        hasMessageContent: p,
-        hasGuildPresences: f,
+        user: n
+    } = e, t = (0, l.bG)([d.A], () => d.A.getUserProfile(n.id)?.application), {
+        hasMessageContent: A,
+        hasGuildPresences: x,
         hasGuildMembers: m
-    } = (0, o.Z)({
-        flags: null == n ? void 0 : n.flags
-    });
-    return (0, l.jsxs)(i.IpV, {
+    } = (0, r.Z)(t);
+    return (0, i.jsxs)(s.IpV, {
         fade: !0,
-        className: c.XG,
-        children: [p && (0, l.jsx)(u, {
-            icon: s.oyn,
-            title: d.intl.string(d.t["7Tmhfu"]),
-            description: d.intl.string(d.t.eu5x7z)
-        }), f && (0, l.jsx)(u, {
-            icon: s._xR,
-            title: d.intl.string(d.t.awYSsM),
-            description: d.intl.string(d.t.TpsXoC)
-        }), m && (0, l.jsx)(u, {
-            icon: s.nFg,
-            title: d.intl.string(d.t.WuKeSJ),
-            description: d.intl.string(d.t.wOBmtV)
-        }), (0, l.jsx)(s.Text, {
+        className: o.XG,
+        children: [A && (0, i.jsx)(u, {
+            icon: a.oyn,
+            title: c.intl.string(c.t["7Tmhfu"]),
+            description: c.intl.string(c.t.eu5x7z)
+        }), x && (0, i.jsx)(u, {
+            icon: a._xR,
+            title: c.intl.string(c.t.awYSsM),
+            description: c.intl.string(c.t.TpsXoC)
+        }), m && (0, i.jsx)(u, {
+            icon: a.nFg,
+            title: c.intl.string(c.t.WuKeSJ),
+            description: c.intl.string(c.t.wOBmtV)
+        }), (0, i.jsx)(a.Text, {
             variant: "text-xs/normal",
-            children: d.intl.format(d.t.b6nqk0, {
+            children: c.intl.format(c.t.b6nqk0, {
                 helpCenterUrl: "https://support.discord.com/hc/articles/7933951485975"
             })
         })]

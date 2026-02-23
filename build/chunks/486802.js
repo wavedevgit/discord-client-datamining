@@ -1,18 +1,18 @@
 /** chunk id: 486802, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => i
+    A: () => s
 });
-var r = n(736456);
+var i = n(736456);
 
-function i() {
+function s() {
     let {
         createGuildApplication: e,
         submitting: t,
         error: n
-    } = (0, r.A)();
+    } = (0, i.A)();
     return {
-        enableGuildMonetizationForTeam: (t, n, r) => e(t, n, r, "guildcr".concat(t.id)),
+        enableGuildMonetizationForTeam: (t, n, i) => e(t, n, i, `guildcr${t.id}`),
         submitting: t,
         error: n
     }

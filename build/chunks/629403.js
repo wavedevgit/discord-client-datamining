@@ -1,13 +1,13 @@
-/** chunk id: 629403, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => r
+/** chunk id: 629403, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    A: () => s
 });
-var l = n(562465),
-    i = n(652215);
-let r = {
+var l = i(562465),
+    n = i(652215);
+let s = {
     updateNote(e, t) {
         l.Bo.put({
-            url: i.Rsh.NOTE(e),
+            url: n.Rsh.NOTE(e),
             body: {
                 note: t
             },

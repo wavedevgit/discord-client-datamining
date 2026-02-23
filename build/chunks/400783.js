@@ -1,4 +1,4 @@
-/** chunk id: 400783, original params: t,n,e (module,exports,require) **/
+/** chunk id: 400783, original params: t,e,n (module,exports,require) **/
 t.exports = {
     EL: "confirmation__1051d",
     P0: "iconWrapper__1051d",

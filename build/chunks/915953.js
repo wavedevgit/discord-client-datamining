@@ -1,53 +1,53 @@
 /** chunk id: 915953, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => a
-}), n(896048);
-var r = n(627968),
-    i = n(64700),
-    l = n(397927),
-    s = n(244242);
+    A: () => l
+});
+var i = n(627968),
+    s = n(64700),
+    a = n(397927),
+    r = n(244242);
 
-function a(e) {
+function l(e) {
     let {
         node: t
     } = e, {
         setValue: n,
-        getInitialValue: a,
+        getInitialValue: l,
         minValue: o,
         maxValue: c,
         useDefaultValue: d,
         useTitle: u,
         useSubtitle: _,
-        useHintText: p,
-        useDisabled: m,
+        useHintText: m,
+        useDisabled: A,
         onValueRender: g,
-        asValueChanges: A,
-        markers: f,
-        onMarkerRender: b,
-        stickToMarkers: h,
-        fieldLayout: E
-    } = t, [O] = i.useState(() => a()), x = u(), C = null == _ ? void 0 : _(), S = null == p ? void 0 : p(), T = null == m ? void 0 : m(), I = null == d ? void 0 : d();
-    return (0, r.jsxs)(s.L, {
-        children: [(0, r.jsx)(l.Apm, {
-            label: x,
-            description: C,
-            disabled: T,
-            initialValue: O,
+        asValueChanges: h,
+        markers: x,
+        onMarkerRender: p,
+        stickToMarkers: E,
+        fieldLayout: C
+    } = t, [T] = s.useState(() => l()), S = u(), I = _?.(), f = m?.(), N = A?.(), b = d?.();
+    return (0, i.jsxs)(r.L, {
+        children: [(0, i.jsx)(a.Apm, {
+            label: S,
+            description: I,
+            disabled: N,
+            initialValue: T,
             minValue: o,
             maxValue: c,
-            defaultValue: I,
+            defaultValue: b,
             onValueRender: g,
-            asValueChanges: A,
+            asValueChanges: h,
             onValueChange: n,
             orientation: "horizontal",
-            markers: f,
-            onMarkerRender: b,
-            stickToMarkers: h,
-            layout: E
-        }), null != S && (0, r.jsx)(l.Text, {
+            markers: x,
+            onMarkerRender: p,
+            stickToMarkers: E,
+            layout: C
+        }), null != f && (0, i.jsx)(a.Text, {
             variant: "text-xs/normal",
             color: "text-muted",
-            children: S
+            children: f
         })]
     })
 }

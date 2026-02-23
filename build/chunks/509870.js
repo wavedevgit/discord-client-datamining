@@ -1,24 +1,24 @@
-/** chunk id: 509870, original params: e,t,i (module,exports,require) **/
-i.d(t, {
+/** chunk id: 509870, original params: e,t,s (module,exports,require) **/
+s.d(t, {
     A: () => C
 });
-var s = i(284009),
-    a = i.n(s),
-    r = i(311907),
-    l = i(851746),
-    n = i(985018);
+var i = s(284009),
+    a = s.n(i),
+    r = s(311907),
+    l = s(851746),
+    n = s(985018);
 let C = e => {
     let {
         numNewSelected: t,
-        anySelected: i
-    } = e, s = (0, r.bG)([l.A], () => l.A.getReferralsRemaining());
-    a()(null != s, "Referrals remaining should not be null");
-    let C = s - t;
-    return 0 === s ? n.intl.string(n.t.mPmPri) : 0 !== t || i ? 1 === C ? n.intl.string(n.t.UfPk1t) : C > 0 ? n.intl.formatToPlainString(n.t.hZnIz4, {
+        anySelected: s
+    } = e, i = (0, r.bG)([l.A], () => l.A.getReferralsRemaining());
+    a()(null != i, "Referrals remaining should not be null");
+    let C = i - t;
+    return 0 === i ? n.intl.string(n.t.mPmPri) : 0 !== t || s ? 1 === C ? n.intl.string(n.t.UfPk1t) : C > 0 ? n.intl.formatToPlainString(n.t.hZnIz4, {
         numFriends: C
     }) : n.intl.formatToPlainString(n.t["3PJw6c"], {
-        numReferrals: s
+        numReferrals: i
     }) : n.intl.formatToPlainString(n.t.GcKM5Z, {
-        numReferrals: s
+        numReferrals: i
     })
 }

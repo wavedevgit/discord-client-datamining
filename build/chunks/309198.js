@@ -1,128 +1,100 @@
 /** chunk id: 309198, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => A
-}), n(896048);
-var r = n(627968),
-    i = n(64700),
-    l = n(397927),
-    s = n(98207),
-    a = n(557722),
+    A: () => g
+});
+var i = n(627968),
+    s = n(64700),
+    a = n(397927),
+    r = n(98207),
+    l = n(557722),
     o = n(662758),
     c = n(615715),
     d = n(87707),
     u = n(652215),
     _ = n(53516),
-    p = n(985018),
-    m = n(139674);
+    m = n(985018),
+    A = n(139674);
 
 function g(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = r
-        })
-    }
-    return e
-}
-
-function A(e) {
     let t, n, {
-            currentUser: A,
-            togglingSMS: f
+            currentUser: g,
+            togglingSMS: h
         } = e,
-        [b, h] = i.useState(!1),
-        E = i.useCallback(e => {
-            e.preventDefault(), h(!b)
-        }, [b]),
-        O = i.useCallback(function() {
+        [x, p] = s.useState(!1),
+        E = s.useCallback(e => {
+            e.preventDefault(), p(!x)
+        }, [x]),
+        C = s.useCallback(function() {
             let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-            (0, l.qfG)(t => (0, r.jsx)(c.default, g({
-                reason: a.d.USER_SETTINGS_UPDATE
-            }, t, e)), {
+            (0, a.qfG)(t => (0, i.jsx)(c.default, {
+                reason: l.d.USER_SETTINGS_UPDATE,
+                ...t,
+                ...e
+            }), {
                 modalKey: _.V
             })
         }, []),
-        x = i.useCallback(() => {
-            O()
-        }, [O]),
-        C = i.useCallback(() => {
-            null == A.phone ? O({
-                onAddedPhone: s.A.enableSMS
-            }) : s.A.enableSMS()
-        }, [A, O]),
-        S = i.useCallback(() => {
-            (0, l.qfG)(e => {
-                var t, n;
-                return (0, r.jsx)(o.default, (t = g({}, e), n = n = {
-                    handleSubmit: s.A.disableSMS,
-                    title: p.intl.string(p.t.KLWnit),
-                    children: p.intl.string(p.t["W0/Duf"])
-                }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
-                    var n = Object.keys(e);
-                    if (Object.getOwnPropertySymbols) {
-                        var r = Object.getOwnPropertySymbols(e);
-                        n.push.apply(n, r)
-                    }
-                    return n
-                })(Object(n)).forEach(function(e) {
-                    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-                }), t))
-            })
+        T = s.useCallback(() => {
+            C()
+        }, [C]),
+        S = s.useCallback(() => {
+            null == g.phone ? C({
+                onAddedPhone: r.A.enableSMS
+            }) : r.A.enableSMS()
+        }, [g, C]),
+        I = s.useCallback(() => {
+            (0, a.qfG)(e => (0, i.jsx)(o.default, {
+                ...e,
+                handleSubmit: r.A.disableSMS,
+                title: m.intl.string(m.t.KLWnit),
+                children: m.intl.string(m.t["W0/Duf"])
+            }))
         }, []),
-        T = i.useCallback(e => null == e ? "" : "".concat("*".repeat(e.length - 4)).concat(e.slice(-4)), []),
-        I = null != A.phone,
-        N = A.hasFlag(u.nhx.MFA_SMS);
-    if (I || N) {
-        let e = b ? A.phone : T(A.phone);
-        n = (0, r.jsxs)(l.Text, {
+        f = s.useCallback(e => null == e ? "" : `${"*".repeat(e.length-4)}${e.slice(-4)}`, []),
+        N = null != g.phone,
+        b = g.hasFlag(u.nhx.MFA_SMS);
+    if (N || b) {
+        let e = x ? g.phone : f(g.phone);
+        n = (0, i.jsxs)(a.Text, {
             variant: "text-sm/normal",
-            children: [p.intl.format(p.t.PXVoEO, {
+            children: [m.intl.format(m.t.PXVoEO, {
                 phoneNumber: e
-            }), (0, r.jsx)(l.MzZ, {
+            }), (0, i.jsx)(a.MzZ, {
                 onClick: E,
-                className: m.vN,
-                children: b ? p.intl.string(p.t.FfltIN) : p.intl.string(p.t.llArAg)
+                className: A.vN,
+                children: x ? m.intl.string(m.t.FfltIN) : m.intl.string(m.t.llArAg)
             })]
         })
     }
-    if (N) t = (0, r.jsx)(l.Button, {
+    if (b) t = (0, i.jsx)(a.Button, {
         variant: "critical-secondary",
         size: "sm",
-        text: p.intl.string(p.t.KLWnit),
-        loading: f,
-        onClick: S
+        text: m.intl.string(m.t.KLWnit),
+        loading: h,
+        onClick: I
     });
     else {
-        let e = (0, d.B)(A);
-        t = (0, r.jsxs)(l.ButtonGroup, {
+        let e = (0, d.B)(g);
+        t = (0, i.jsxs)(a.ButtonGroup, {
             size: "sm",
-            children: [(0, r.jsx)(l.Button, {
+            children: [(0, i.jsx)(a.Button, {
                 variant: "primary",
                 size: "sm",
-                text: null != e ? e : p.intl.string(p.t.DZQe23),
-                onClick: C,
-                loading: f,
+                text: e ?? m.intl.string(m.t.DZQe23),
+                onClick: S,
+                loading: h,
                 disabled: null != e
-            }), I ? (0, r.jsx)(l.Button, {
+            }), N ? (0, i.jsx)(a.Button, {
                 variant: "secondary",
                 size: "sm",
-                text: p.intl.string(p.t.Ulqq6K),
-                onClick: x
+                text: m.intl.string(m.t.Ulqq6K),
+                onClick: T
             }) : null]
         })
     }
-    return (0, r.jsxs)(l.D0$, {
-        label: p.intl.string(p.t.uHAJ5v),
-        description: p.intl.string(p.t.fspJ4H),
+    return (0, i.jsxs)(a.D0$, {
+        label: m.intl.string(m.t.uHAJ5v),
+        description: m.intl.string(m.t.fspJ4H),
         children: [n, t]
     })
 }

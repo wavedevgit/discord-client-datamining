@@ -1,128 +1,124 @@
-/** chunk id: 143582, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    Hc: () => f,
-    _R: () => p,
+/** chunk id: 143582, original params: t,e,i (module,exports,require) **/
+i.d(e, {
+    Hc: () => p,
+    _R: () => S,
     f5: () => d,
-    vz: () => u
-}), n(228524), n(896048);
-var r = n(73153),
-    i = n(73825),
-    a = n(337095),
-    o = n(652215);
+    vz: () => c
+});
+var n = i(73153),
+    l = i(73825),
+    s = i(337095),
+    r = i(652215);
 
-function s(e) {
+function a(t) {
     return {
-        id: e.id,
-        type: o.Puh.SUBSCRIPTION,
-        application_id: e.application_id,
-        product_line: o.EZt.APPLICATION,
-        name: e.name,
+        id: t.id,
+        type: r.Puh.SUBSCRIPTION,
+        application_id: t.application_id,
+        product_line: r.EZt.APPLICATION,
+        name: t.name,
         summary: "",
-        description: e.description,
-        flags: e.sku_flags,
+        description: t.description,
+        flags: t.sku_flags,
         manifests: [],
         available_regions: [],
         legal_notice: "",
-        deleted: e.soft_deleted,
+        deleted: t.soft_deleted,
         price_tier: 0,
         show_age_gate: !1,
         restricted: !1
     }
 }
 
-function l(e) {
-    var t;
+function u(t) {
     return {
-        id: e.id,
-        sku: s(e),
-        summary: e.description,
-        description: e.description,
-        benefits: null != (t = e.store_listing_benefits) ? t : [],
-        thumbnail: e.image_asset,
-        published: e.published
+        id: t.id,
+        sku: a(t),
+        summary: t.description,
+        description: t.description,
+        benefits: t.store_listing_benefits ?? [],
+        thumbnail: t.image_asset,
+        published: t.published
     }
 }
 
-function c(e) {
-    for (let t of (r.h.dispatch({
+function o(t) {
+    for (let e of (n.h.dispatch({
             type: "SKUS_FETCH_SUCCESS",
-            skus: e.map(s)
-        }), r.h.dispatch({
+            skus: t.map(a)
+        }), n.h.dispatch({
             type: "STORE_LISTINGS_FETCH_SUCCESS",
-            storeListings: e.map(l)
-        }), e)) r.h.dispatch({
+            storeListings: t.map(u)
+        }), t)) n.h.dispatch({
         type: "SUBSCRIPTION_PLANS_FETCH_SUCCESS",
-        skuId: t.id,
-        subscriptionPlans: t.subscription_plans
+        skuId: e.id,
+        subscriptionPlans: e.subscription_plans
     })
 }
-async function u(e, t) {
-    r.h.dispatch({
+async function c(t, e) {
+    n.h.dispatch({
         type: "APPLICATION_SUBSCRIPTIONS_FETCH_LISTINGS",
-        applicationId: e,
-        groupListingId: t
+        applicationId: t,
+        groupListingId: e
     });
     try {
-        var n;
-        let i = await a.fY(e, t);
-        return r.h.dispatch({
+        let i = await s.fY(t, e);
+        return n.h.dispatch({
             type: "APPLICATION_SUBSCRIPTIONS_FETCH_LISTINGS_SUCCESS",
-            applicationId: e,
+            applicationId: t,
             groupListing: i
-        }), c(null != (n = i.subscription_listings) ? n : []), i
-    } catch (t) {
-        r.h.dispatch({
+        }), o(i.subscription_listings ?? []), i
+    } catch (e) {
+        n.h.dispatch({
             type: "APPLICATION_SUBSCRIPTIONS_FETCH_LISTINGS_FAILURE",
-            applicationId: e
+            applicationId: t
         })
     }
 }
-async function d(e) {
-    r.h.dispatch({
+async function d(t) {
+    n.h.dispatch({
         type: "APPLICATION_SUBSCRIPTIONS_FETCH_ENTITLEMENTS",
-        guildId: e
+        guildId: t
     });
     try {
-        let t = await a.dU(e);
-        r.h.dispatch({
+        let e = await s.dU(t);
+        n.h.dispatch({
             type: "APPLICATION_SUBSCRIPTIONS_FETCH_ENTITLEMENTS_SUCCESS",
-            guildId: e,
-            entitlements: t
+            guildId: t,
+            entitlements: e
         })
-    } catch (t) {
-        r.h.dispatch({
+    } catch (e) {
+        n.h.dispatch({
             type: "APPLICATION_SUBSCRIPTIONS_FETCH_ENTITLEMENTS_FAILURE",
-            guildId: e
+            guildId: t
         })
     }
 }
 
-function f(e) {
-    r.h.dispatch({
+function p(t) {
+    n.h.dispatch({
         type: "APPLICATION_SUBSCRIPTIONS_CHANNEL_NOTICE_DISMISSED",
-        guildId: e
+        guildId: t
     })
 }
-async function p(e) {
-    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0;
-    r.h.dispatch({
+async function S(t) {
+    let e = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0;
+    n.h.dispatch({
         type: "APPLICATION_SUBSCRIPTIONS_FETCH_LISTING_FOR_PLAN",
-        planId: e
+        planId: t
     });
     try {
-        var n;
-        let t = await a.q$(e);
-        r.h.dispatch({
+        let e = await s.q$(t);
+        n.h.dispatch({
             type: "APPLICATION_SUBSCRIPTIONS_FETCH_LISTING_FOR_PLAN_SUCCESS",
-            groupListing: t
+            groupListing: e
         });
-        let o = null != (n = t.subscription_listings) ? n : [];
-        await Promise.all(o.map(t => {
-            if (t.subscription_plans[0].id === e) return i.ur(t.id, void 0, void 0, !0)
-        })), c(o)
-    } catch (n) {
-        if ("status" in n && 429 === n.status && t < 10) await p(e, ++t);
-        else throw n
+        let i = e.subscription_listings ?? [];
+        await Promise.all(i.map(e => {
+            if (e.subscription_plans[0].id === t) return l.ur(e.id, void 0, void 0, !0)
+        })), o(i)
+    } catch (i) {
+        if ("status" in i && 429 === i.status && e < 10) await S(t, ++e);
+        else throw i
     }
 }

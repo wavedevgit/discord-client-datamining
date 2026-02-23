@@ -1,27 +1,26 @@
-/** chunk id: 261439, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    a: () => o
+/** chunk id: 261439, original params: e,l,a (module,exports,require) **/
+a.d(l, {
+    a: () => i
 });
-var r = n(627968),
-    i = n(158954),
-    a = n(67098);
-let o = {
+var t = a(627968),
+    o = a(158954),
+    n = a(67098);
+let i = {
     title: "HelpMessage",
     stories: [{
         name: "HelpMessage",
         id: "help-message",
         component: function(e) {
             let {
-                text: t
+                text: l
             } = e;
-            return (0, r.jsx)(i.BJc, {
+            return (0, t.jsx)(o.BJc, {
                 gap: 16,
-                children: Object.values(a.Y).map(e => (0, r.jsx)(i.D0$, {
+                children: Object.values(n.Y).map(e => (0, t.jsx)(o.D0$, {
                     label: e,
-                    children: (0, r.jsx)(a.p, {
+                    children: (0, t.jsx)(n.p, {
                         messageType: e,
-                        children: t
+                        children: l
                     }, e)
                 }, e))
             })

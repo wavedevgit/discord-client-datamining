@@ -1,117 +1,81 @@
 /** chunk id: 522556, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => b
+    A: () => f
 });
-var r = n(627968),
-    l = n(64700),
-    i = n(503698),
-    s = n.n(i),
+var i = n(627968),
+    s = n(64700),
+    l = n(503698),
+    r = n.n(l),
     a = n(397927),
     o = n(686956),
     c = n(935649),
-    u = n(847599),
-    d = n(323073),
-    p = n(506164),
-    h = n(985018),
-    g = n(635510);
+    d = n(847599),
+    u = n(36149),
+    h = n(323073),
+    A = n(506164),
+    p = n(204925),
+    g = n(985018),
+    m = n(635510);
 
-function f(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = r
-        })
-    }
-    return e
-}
-
-function m(e) {
-    var t, n;
+function _(e) {
     let {
-        guild: i,
-        channelId: s
-    } = e, a = (0, d.k$)(i), {
-        modalType: g
-    } = a, m = function(e, t) {
-        if (null == e) return {};
-        var n, r, l, i = {};
-        if ("u" > typeof Reflect && Reflect.ownKeys) {
-            for (l = 0, n = Reflect.ownKeys(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
-            return i
-        }
-        if (i = function(e, t) {
-                if (null == e) return {};
-                var n, r, l = {},
-                    i = Object.getOwnPropertyNames(e);
-                for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n]);
-                return l
-            }(e, t), Object.getOwnPropertySymbols)
-            for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
-        return i
-    }(a, ["modalType"]), b = l.useCallback(() => {
-        null != i && o.A.nsfwReturnToSafety(i.id)
-    }, [i]), A = l.useCallback(() => {
-        null != i && o.A.nsfwAgree(i.id)
-    }, [i]), y = l.useCallback(() => {
+        guild: t,
+        channelId: n
+    } = e, {
+        modalType: l,
+        ...r
+    } = (0, h.k$)(t), a = s.useCallback(() => {
+        null != t && o.A.nsfwReturnToSafety(t.id)
+    }, [t]), m = s.useCallback(() => {
+        null != t && o.A.nsfwAgree(t.id)
+    }, [t]), _ = s.useCallback(() => {
         c.A.showAgeVerificationGetStartedModal({
-            entryPoint: u.q1.NSFW_GUILD
+            entryPoint: d.q1.NSFW_GUILD
         })
-    }, []), O = (t = f({}, m), n = n = {
-        guildId: null == i ? void 0 : i.id,
-        channelId: s,
-        disagreement: h.intl.string(h.t["/g10LC"])
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
-        }
-        return n
-    })(Object(n)).forEach(function(e) {
-        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-    }), t);
-    switch (g) {
-        case u.A5.NSFW_CHANNEL_AGE_VERIFY:
-        case u.A5.GUILD_LARGE_SERVER:
-            return (0, r.jsx)(p.A, f({
-                onAgree: y,
-                onDisagree: b,
-                modalType: g
-            }, O));
+    }, []);
+    (0, u.I7)(p.w_.NSFW_SERVER);
+    let f = {
+        ...r,
+        guildId: t?.id,
+        channelId: n,
+        disagreement: g.intl.string(g.t["/g10LC"])
+    };
+    switch (l) {
+        case d.A5.NSFW_CHANNEL_AGE_VERIFY:
+        case d.A5.GUILD_LARGE_SERVER:
+            return (0, i.jsx)(A.A, {
+                onAgree: _,
+                onDisagree: a,
+                modalType: l,
+                ...f
+            });
         default:
-            return (0, r.jsx)(p.A, f({
-                onAgree: A,
-                onDisagree: b,
-                modalType: g
-            }, O))
+            return (0, i.jsx)(A.A, {
+                onAgree: m,
+                onDisagree: a,
+                modalType: l,
+                ...f
+            })
     }
 }
-let b = function(e) {
+let f = function(e) {
     let {
         guild: t,
         channelId: n,
-        className: i
-    } = e, o = l.useRef(null);
-    return l.useEffect(() => {
+        className: l
+    } = e, o = s.useRef(null);
+    return s.useEffect(() => {
         let {
             current: e
         } = o;
-        null == e || e.scrollToBottom()
-    }, []), (0, r.jsx)(a.T7Y, {
+        e?.scrollToBottom()
+    }, []), (0, i.jsx)(a.T7Y, {
         ref: o,
-        className: g.X,
-        children: (0, r.jsx)("div", {
-            className: s()(i, g.i),
-            children: (0, r.jsx)(m, {
+        className: m.X,
+        children: (0, i.jsx)("div", {
+            className: r()(l, m.i),
+            children: (0, i.jsx)(_, {
                 guild: t,
                 channelId: n
             })

@@ -1,70 +1,70 @@
-/** chunk id: 166393, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => O
-}), n(896048);
-var r = n(627968),
-    l = n(64700),
-    i = n(503698),
-    a = n.n(i),
-    s = n(172218),
-    o = n(724002),
-    c = n(287174),
-    d = n(487899),
-    u = n(239314),
-    p = n(311907),
-    h = n(397927),
-    m = n(111162),
-    g = n(354138),
-    _ = n(111042),
-    b = n(412461),
-    f = n(867333),
-    x = n(487953),
-    v = n(111737),
-    j = n(652215),
-    A = n(789113);
-let y = c.K.APPLICATION_DIRECTORY;
+/** chunk id: 166393, original params: e,t,a (module,exports,require) **/
+a.d(t, {
+    A: () => E
+});
+var n = a(627968),
+    i = a(64700),
+    s = a(503698),
+    l = a.n(s),
+    r = a(172218),
+    o = a(724002),
+    c = a(287174),
+    d = a(487899),
+    u = a(239314),
+    h = a(311907),
+    m = a(397927),
+    p = a(111162),
+    _ = a(354138),
+    g = a(111042),
+    x = a(412461),
+    A = a(867333),
+    C = a(487953),
+    v = a(111737),
+    b = a(652215),
+    f = a(789113);
+let j = c.K.APPLICATION_DIRECTORY;
 
-function C(e) {
+function I(e) {
     let {
         collection: t,
-        index: n,
-        onSelectApplication: i
+        index: a,
+        onSelectApplication: s
     } = e, o = function(e) {
         let {
             collectionId: t,
-            index: n
-        } = e, [r, i] = l.useState(!1), a = (0, s.K)(e => {
-            e && i(!0)
+            index: a
+        } = e, [n, s] = i.useState(!1), l = (0, r.K)(e => {
+            e && s(!0)
         });
-        return l.useEffect(() => {
-            r && (0, b.TR)(j.HAw.APP_DIRECTORY_COLLECTION_VIEWED, {
+        return i.useEffect(() => {
+            n && (0, x.TR)(b.HAw.APP_DIRECTORY_COLLECTION_VIEWED, {
                 collection_id: t,
-                collection_position: n
+                collection_position: a
             })
-        }, [r, t, n]), a
+        }, [n, t, a]), l
     }({
         collectionId: t.id,
-        index: n
-    }), c = l.useCallback((e, r) => {
-        (0, b.TR)(j.HAw.APP_DIRECTORY_COLLECTION_ITEM_CLICKED, {
+        index: a
+    }), c = i.useCallback((e, n) => {
+        (0, x.TR)(b.HAw.APP_DIRECTORY_COLLECTION_ITEM_CLICKED, {
             collection_id: t.id,
-            item_position: r,
-            collection_position: n,
+            item_position: n,
+            collection_position: a,
             application_id: e
-        }), i(e)
-    }, [t.id, n, i]);
-    return (0, r.jsxs)("div", {
+        }), s(e)
+    }, [t.id, a, s]);
+    return (0, n.jsxs)("div", {
         ref: o,
-        children: [(0, r.jsx)(h.Heading, {
-            className: a()(A.Gf, {
-                [A.SH]: 0 === n
+        children: [(0, n.jsx)(m.Heading, {
+            className: l()(f.Gf, {
+                [f.SH]: 0 === a
             }),
             variant: "heading-lg/semibold",
             color: "text-strong",
             children: t.title
-        }), (0, r.jsx)("div", {
-            className: A.Qs,
-            children: t.application_directory_collection_items.map((e, t) => e.type !== d.L.APPLICATION || null == e.application ? null : (0, r.jsx)(x.A, {
+        }), (0, n.jsx)("div", {
+            className: f.Qs,
+            children: t.application_directory_collection_items.map((e, t) => e.type !== d.L.APPLICATION || null == e.application ? null : (0, n.jsx)(C.A, {
                 application: e.application,
                 onSelectApplication: () => c(e.application.id, t),
                 showCategory: !0
@@ -72,34 +72,34 @@ function C(e) {
         })]
     })
 }
-let O = function(e) {
+let E = function(e) {
     let {
         onSelectApplication: t
-    } = e, n = (0, p.bG)([m.default], () => m.default.onlyShowPreviewAppCollections) ? o.W.PREVIEW : o.W.ACTIVE, i = (0, p.bG)([_.A], () => _.A.getFetchState({
-        surface: y,
-        activeState: n
-    })), a = (0, p.bG)([_.A], () => _.A.getCollections({
-        surface: y,
-        activeState: n
+    } = e, a = (0, h.bG)([p.default], () => p.default.onlyShowPreviewAppCollections) ? o.W.PREVIEW : o.W.ACTIVE, s = (0, h.bG)([g.A], () => g.A.getFetchState({
+        surface: j,
+        activeState: a
+    })), l = (0, h.bG)([g.A], () => g.A.getCollections({
+        surface: j,
+        activeState: a
     }));
-    l.useEffect(() => {
-        g.An({
-            surface: y,
-            activeState: n
+    i.useEffect(() => {
+        _.An({
+            surface: j,
+            activeState: a
         })
-    }, [n]);
-    let s = l.useMemo(() => null == a ? void 0 : a.filter(e => e.type !== u.Y.GALLERY), [a]);
-    return i === _.e.ERROR ? (0, r.jsx)("div", {
-        className: A.Un,
-        children: (0, r.jsx)(v.A, {
-            className: A.z3
+    }, [a]);
+    let r = i.useMemo(() => l?.filter(e => e.type !== u.Y.GALLERY), [l]);
+    return s === g.e.ERROR ? (0, n.jsx)("div", {
+        className: f.Un,
+        children: (0, n.jsx)(v.A, {
+            className: f.z3
         })
-    }) : (0, r.jsx)(f.A, {
-        loading: i === _.e.FETCHING,
-        children: null == s ? void 0 : s.map((e, n) => (0, r.jsx)(C, {
+    }) : (0, n.jsx)(A.A, {
+        loading: s === g.e.FETCHING,
+        children: r?.map((e, a) => (0, n.jsx)(I, {
             collection: e,
-            index: n,
+            index: a,
             onSelectApplication: t
-        }, n))
+        }, a))
     })
 }

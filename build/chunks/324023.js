@@ -1,19 +1,19 @@
 /** chunk id: 324023, original params: e,t,l (module,exports,require) **/
 l.d(t, {
-    K: () => a
-}), l(896048), l(264879);
+    K: () => r
+});
 var n = l(64700),
-    r = l(311907),
+    s = l(311907),
     i = l(844944),
-    s = l(513461);
+    a = l(513461);
 
-function a(e) {
+function r(e) {
     let {
         guildId: t,
         applicationStatus: l,
-        sortOrder: a
-    } = e, o = (0, r.bG)([i.A], () => i.A.getRequests(t, l), [l, t]);
+        sortOrder: r
+    } = e, d = (0, s.bG)([i.A], () => i.A.getRequests(t, l), [l, t]);
     return {
-        guildJoinRequests: n.useMemo(() => a === s._e.TIMESTAMP_DESC ? [...o].reverse() : o, [a, o])
+        guildJoinRequests: n.useMemo(() => r === a._e.TIMESTAMP_DESC ? [...d].reverse() : d, [r, d])
     }
 }

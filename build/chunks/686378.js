@@ -1,6 +1,6 @@
 /** chunk id: 686378, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => N
+    A: () => m
 });
 var l = n(627968),
     r = n(64700),
@@ -8,51 +8,51 @@ var l = n(627968),
     i = n.n(a),
     s = n(417597),
     o = n(990078),
-    u = n(397927),
-    c = n(266047),
-    E = n(189552),
+    E = n(397927),
+    u = n(266047),
+    c = n(189552),
     _ = n(950072),
     d = n(317525),
-    g = n(71393),
-    A = n(576705),
+    A = n(71393),
+    g = n(576705),
     T = n(829887),
     I = n(652215),
-    O = n(985018),
+    N = n(985018),
     h = n(438536);
 
-function N(e) {
+function m(e) {
     let {
         member: t
-    } = e, n = (0, s.bG)([g.A], () => g.A.getGuild(t.guildId)), a = (0, s.bG)([d.A], () => d.A.getSortedRoles(t.guildId)), N = r.useMemo(() => a.filter(e => e.id !== t.highestRoleId && t.roles.includes(e.id)), [t.roles, t.highestRoleId, a]), m = (0, s.bG)([c.A], () => c.A.getEnhancedMember(t.guildId, t.userId), [t.guildId, t.userId]), f = (0, E.YH)(m), S = (0, E.Cy)(t), p = (0, s.bG)([A.A], () => A.A.can(I.xBc.MANAGE_ROLES, n), [n]);
-    return null == n ? null : (0, l.jsx)(u.D0$, {
-        label: O.intl.string(O.t["LPJmL/"]),
+    } = e, n = (0, s.bG)([A.A], () => A.A.getGuild(t.guildId)), a = (0, s.bG)([d.A], () => d.A.getSortedRoles(t.guildId)), m = r.useMemo(() => a.filter(e => e.id !== t.highestRoleId && t.roles.includes(e.id)), [t.roles, t.highestRoleId, a]), S = (0, s.bG)([u.A], () => u.A.getEnhancedMember(t.guildId, t.userId), [t.guildId, t.userId]), G = (0, c.YH)(S), O = (0, c.Cy)(t), R = (0, s.bG)([g.A], () => g.A.can(I.xBc.MANAGE_ROLES, n), [n]);
+    return null == n ? null : (0, l.jsx)(E.D0$, {
+        label: N.intl.string(N.t["LPJmL/"]),
         children: (0, l.jsx)(T.SQ, {
             children: (0, l.jsx)(T.RU, {
-                description: t.roles.length > 0 || p ? (0, l.jsxs)("div", {
+                description: t.roles.length > 0 || R ? (0, l.jsxs)("div", {
                     className: h.yk,
                     children: [(0, l.jsx)(o.m, {
                         asContainer: !0,
-                        "aria-label": O.intl.string(O.t["0g8Xd/"]),
-                        text: O.intl.string(O.t["93S+lG"]),
-                        children: (0, l.jsx)(u.DUT, {
+                        "aria-label": N.intl.string(N.t["0g8Xd/"]),
+                        text: N.intl.string(N.t["93S+lG"]),
+                        children: (0, l.jsx)(E.DUT, {
                             children: (0, l.jsx)(_.A, {
                                 className: i()(h.Zf, h.Lc),
-                                role: f,
+                                role: G,
                                 guildId: t.guildId
                             })
                         })
-                    }), N.map(e => (0, l.jsx)(_.A, {
+                    }), m.map(e => (0, l.jsx)(_.A, {
                         className: h.Zf,
                         role: e,
                         guildId: t.guildId
-                    }, e.id)), p && (0, l.jsx)(o.m, {
+                    }, e.id)), R && (0, l.jsx)(o.m, {
                         asContainer: !0,
-                        "aria-label": O.intl.string(O.t.ljnBlo),
-                        text: O.intl.string(O.t.ljnBlo),
-                        children: (0, l.jsx)(u.DUT, {
-                            onClick: S,
+                        "aria-label": N.intl.string(N.t.ljnBlo),
+                        text: N.intl.string(N.t.ljnBlo),
+                        children: (0, l.jsx)(E.DUT, {
+                            onClick: O,
                             className: h.$g,
-                            children: (0, l.jsx)(u.U1e, {
+                            children: (0, l.jsx)(E.U1e, {
                                 size: "custom",
                                 color: "currentColor",
                                 className: h.fd,
@@ -63,9 +63,9 @@ function N(e) {
                     })]
                 }) : (0, l.jsx)("div", {
                     className: h.pl,
-                    children: (0, l.jsx)(u.Text, {
+                    children: (0, l.jsx)(E.Text, {
                         variant: "text-sm/normal",
-                        children: O.intl.string(O.t.nZfHsf)
+                        children: N.intl.string(N.t.nZfHsf)
                     })
                 })
             })

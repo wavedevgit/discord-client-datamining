@@ -1,92 +1,93 @@
 /** chunk id: 467480, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => y
-}), n(896048);
-var r = n(627968),
-    l = n(64700),
-    i = n(311907),
-    s = n(192308),
+    A: () => x
+});
+var i = n(627968),
+    s = n(64700),
+    l = n(311907),
+    r = n(192308),
     a = n(435371),
     o = n(397927),
     c = n(964486),
-    u = n(544231),
-    d = n(338510),
-    p = n(151119),
-    h = n(278941),
-    g = n(665909),
-    f = n(186111),
+    d = n(544231),
+    u = n(338510),
+    h = n(151119),
+    A = n(278941),
+    p = n(665909),
+    g = n(186111),
     m = n(58736),
-    b = n(327337),
-    A = n(985018);
-let y = l.memo(function(e) {
+    _ = n(327337),
+    f = n(985018);
+let x = s.memo(function(e) {
     let {
         channel: t
-    } = e, y = (0, d.u)(t.id), O = (0, p.S)(t.id), j = (0, h.e)(t.id), x = (0, s.useHasAnyModalOpen)(), _ = (0, i.bG)([f.A], () => f.A.hasLayers()), v = l.useCallback(() => O ? A.intl.string(A.t["16QyDv"]) : null != j ? A.intl.string(A.t.kCN9i0) : null, [O, j]), E = l.useMemo(() => (O || null != j) && !x && !_, [O, j, x, _]), [C, S] = l.useState(v());
-    l.useEffect(() => {
-        null != j && null != y && (o.ORC.announce(A.intl.string(A.t.acsXuG)), setTimeout(() => {
-            (0, u.xi)(t.id, [j.id])
-        }, 5e3), (0, g.QF)({
+    } = e, x = (0, u.u)(t.id), C = (0, h.S)(t.id), E = (0, A.e)(t.id), I = (0, r.useHasAnyModalOpen)(), b = (0, l.bG)([g.A], () => g.A.hasLayers()), N = s.useCallback(() => C ? f.intl.string(f.t["16QyDv"]) : null != E ? f.intl.string(f.t.kCN9i0) : null, [C, E]), S = s.useMemo(() => (C || null != E) && !I && !b, [C, E, I, b]), [T, y] = s.useState(N());
+    s.useEffect(() => {
+        null != E && null != x && (o.ORC.announce(f.intl.string(f.t.acsXuG)), setTimeout(() => {
+            (0, d.xi)(t.id, [E.id])
+        }, 5e3), (0, p.QF)({
             channelId: t.id,
             senderId: t.getRecipientId(),
-            warningId: j.id,
-            warningType: j.type,
-            isNudgeWarning: null != j,
-            viewName: g.gN.SAFETY_TOOLS_NUDGE_TOOLTIP
-        })), O && (o.ORC.announce(A.intl.string(A.t["1dxCqG"])), setTimeout(() => {
-            (0, u.bg)(t.id)
+            warningId: E.id,
+            warningType: E.type,
+            isNudgeWarning: null != E,
+            viewName: p.gN.SAFETY_TOOLS_NUDGE_TOOLTIP
+        })), C && (o.ORC.announce(f.intl.string(f.t["1dxCqG"])), setTimeout(() => {
+            (0, d.bg)(t.id)
         }, 5e3))
-    }, [t, j, y, O]), (0, c.Ay)(() => {
-        null != y && (0, g.QF)({
+    }, [t, E, x, C]), (0, c.Ay)(() => {
+        null != x && (0, p.QF)({
             channelId: t.id,
             senderId: t.getRecipientId(),
-            warningId: y.id,
-            warningType: y.type,
-            isNudgeWarning: null != j,
-            viewName: g.gN.SAFETY_TOOLS_BUTTON
+            warningId: x.id,
+            warningType: x.type,
+            isNudgeWarning: null != E,
+            viewName: p.gN.SAFETY_TOOLS_BUTTON
         })
-    }), l.useEffect(() => {
-        let e = v();
-        null != e && S(e)
-    }, [O, j, v]);
-    let I = l.useCallback(() => {
-        null != j && (0, u.xi)(t.id, [j.id]), null != y && ((0, o.mMO)(async () => {
+    }), s.useEffect(() => {
+        let e = N();
+        null != e && y(e)
+    }, [C, E, N]);
+    let v = s.useCallback(() => {
+        null != E && (0, d.xi)(t.id, [E.id]), null != x && ((0, o.mMO)(async () => {
             let {
                 default: e
-            } = await Promise.all([n.e("45033"), n.e("46717"), n.e("13693")]).then(n.bind(n, 788099));
+            } = await Promise.all([n.e("45033"), n.e("46717"), n.e("86960")]).then(n.bind(n, 788099));
             return n => {
                 let {
-                    onClose: l,
-                    transitionState: i
+                    onClose: s,
+                    transitionState: l
                 } = n;
-                return (0, r.jsx)(e, {
+                return (0, i.jsx)(e, {
                     otherUserId: t.getRecipientId(),
                     channelId: t.id,
-                    warningId: y.id,
-                    warningType: y.type,
-                    onClose: l,
-                    transitionState: i
+                    warningId: x.id,
+                    warningType: x.type,
+                    onClose: s,
+                    transitionState: l
                 })
             }
         }, {
-            modalKey: b.V
-        }), (0, g._$)({
+            modalKey: _.V
+        }), (0, p._$)({
             channelId: t.id,
             senderId: t.getRecipientId(),
-            warningId: y.id,
-            warningType: y.type,
-            cta: g.Wm.USER_SAFETY_TOOLS_BUTTON_CLICK,
-            isNudgeWarning: null != j
+            warningId: x.id,
+            warningType: x.type,
+            cta: p.Wm.USER_SAFETY_TOOLS_BUTTON_CLICK,
+            isNudgeWarning: null != E
         }))
-    }, [j, y, t]);
-    return null == y ? null : (0, r.jsx)(a.m_, {
-        forceOpen: E,
-        text: C,
+    }, [E, x, t]);
+    return null == x ? null : (0, i.jsx)(a.m_, {
+        forceOpen: S,
+        text: T,
         position: "bottom",
-        children: (0, r.jsx)(m.Ay.Icon, {
+        children: (0, i.jsx)(m.Ay.Icon, {
             icon: o.lmn,
-            onClick: I,
-            tooltip: A.intl.string(A.t.rpc2qv),
-            tooltipDisabled: null != j
+            onClick: v,
+            tooltip: f.intl.string(f.t.rpc2qv),
+            tooltipDisabled: null != E
         })
     })
 })

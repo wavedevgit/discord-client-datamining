@@ -1,59 +1,56 @@
 /** chunk id: 297460, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => y
-}), n(896048);
+    A: () => h
+});
 var r = n(627968);
 n(64700);
 var i = n(311907),
     l = n(397927),
     a = n(442433),
-    u = n(734057),
-    o = n(576705),
-    c = n(589051),
-    s = n(145567),
-    d = n(187667),
-    f = n(34307),
-    A = n(652215),
-    b = n(895867),
+    d = n(734057),
+    u = n(576705),
+    s = n(589051),
+    o = n(145567),
+    c = n(187667),
+    A = n(34307),
+    E = n(652215),
+    f = n(895867),
     g = n(985018);
 
-function y(e, t) {
+function h(e, t) {
     let {
         hasChat: n
-    } = (0, c.M8)("useOverlayTextChatToggleMenuItem"), y = "DM_USER" === e.kind ? e.userId : null, v = (0, i.bG)([u.A], () => {
-        var e;
-        return null != y && null != (e = u.A.getDMFromUserId(y)) ? e : null
-    }, [y]), E = "CHANNEL" === e.kind ? e.channel.id : v, O = (0, i.bG)([d.A], () => {
-        if (null == E) return !1;
-        let [e] = d.A.getSessionEntries();
+    } = (0, s.M8)("useOverlayTextChatToggleMenuItem"), h = "DM_USER" === e.kind ? e.userId : null, v = (0, i.bG)([d.A], () => null != h ? d.A.getDMFromUserId(h) ?? null : null, [h]), I = "CHANNEL" === e.kind ? e.channel.id : v, N = (0, i.bG)([c.A], () => {
+        if (null == I) return !1;
+        let [e] = c.A.getSessionEntries();
         for (let t of e)
-            if (t.channelId === E) return !0;
-        return d.A.getSelectedChannelId() === E
-    }, [E]), h = "CHANNEL" === e.kind ? e.channel : null, p = (0, i.bG)([o.A], () => !!(null == h || h.isDM() || h.isMultiUserDM() || h.isPrivate()) || o.A.can(A.xBc.READ_MESSAGE_HISTORY, h), [h]);
-    return O && null != E ? (0, r.jsx)(l.Drp, {
+            if (t.channelId === I) return !0;
+        return c.A.getSelectedChannelId() === I
+    }, [I]), y = "CHANNEL" === e.kind ? e.channel : null, M = (0, i.bG)([u.A], () => !!(null == y || y.isDM() || y.isMultiUserDM() || y.isPrivate()) || u.A.can(E.xBc.READ_MESSAGE_HISTORY, y), [y]);
+    return N && null != I ? (0, r.jsx)(l.Drp, {
         id: "close-chat",
-        label: g.intl.string(b.default.ERApc4),
+        label: g.intl.string(f.default.ERApc4),
         action: () => {
-            (0, s.lu)({
-                channelId: E,
+            (0, o.lu)({
+                channelId: I,
                 widgetType: t,
                 secondaryValue: "context_menu_close_chat"
             }), (0, a.Z_)()
         }
-    }) : n && p ? (0, r.jsx)(l.Drp, {
+    }) : n && M ? (0, r.jsx)(l.Drp, {
         id: "open-chat",
-        label: g.intl.string(b.default.KWrMk5),
+        label: g.intl.string(f.default.KWrMk5),
         action: () => {
             switch (e.kind) {
                 case "CHANNEL":
-                    (0, s.D$)({
+                    (0, o.D$)({
                         target: {
-                            kind: s.bB.CHANNEL,
+                            kind: o.bB.CHANNEL,
                             channelId: e.channel.id,
                             guildId: e.guildId,
                             messageId: null
                         },
-                        source: f.B.MANUAL,
+                        source: A.B.MANUAL,
                         widgetType: t
                     });
                     break;
@@ -67,17 +64,17 @@ function y(e, t) {
                         return
                     }(async () => {
                         try {
-                            await (0, s.D$)({
+                            await (0, o.D$)({
                                 target: {
-                                    kind: s.bB.DM_USER,
+                                    kind: o.bB.DM_USER,
                                     userId: e.userId,
                                     messageId: null,
                                     existingChannelId: v
                                 },
-                                source: f.B.MANUAL,
+                                source: A.B.MANUAL,
                                 widgetType: t
                             })
-                        } catch (e) {} finally {
+                        } catch {} finally {
                             (0, a.Z_)()
                         }
                     })();

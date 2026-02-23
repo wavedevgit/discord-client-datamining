@@ -1,23 +1,23 @@
-/** chunk id: 915908, original params: e,t,r (module,exports,require) **/
-r.d(t, {
-    A: () => c
+/** chunk id: 915908, original params: t,e,i (module,exports,require) **/
+i.d(e, {
+    A: () => d
 });
-var n = r(627968);
-r(64700);
-var o = r(397927),
-    i = r(442433),
-    l = r(391973),
-    a = r(985018);
+var n = i(627968);
+i(64700);
+var a = i(397927),
+    l = i(442433),
+    r = i(391973),
+    o = i(985018);
 
-function c(e, t) {
-    return (0, n.jsx)(o.sLh, {
-        label: a.intl.string(a.t.XQQQFE),
-        checked: t,
+function d(t, e) {
+    return (0, n.jsx)(a.sLh, {
+        label: o.intl.string(o.t.XQQQFE),
+        checked: e,
         id: "widget-layout-type",
         action: () => {
-            (0, l.cC)(e, {
-                horizontal: !t
-            }), (0, i.Z_)()
+            (0, r.cC)(t, {
+                horizontal: !e
+            }), (0, l.Z_)()
         }
     }, "widget-layout-type")
 }

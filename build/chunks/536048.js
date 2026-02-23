@@ -1,9 +1,9 @@
 /** chunk id: 536048, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    I: () => i
+    I: () => s
 });
-let r = (0, n(600975).C)({
+let l = (0, n(600975).C)({
     id: "2025-04_native_markdown",
     kind: "user",
     label: "Native Markdown",
@@ -25,11 +25,11 @@ let r = (0, n(600975).C)({
     }]
 });
 
-function i(e) {
+function s(e) {
     let {
         location: t
     } = e;
-    return r.useExperiment({
+    return l.useExperiment({
         location: t
     })
 }

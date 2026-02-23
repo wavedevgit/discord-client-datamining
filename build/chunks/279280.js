@@ -1,37 +1,21 @@
 /** chunk id: 279280, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => l
+    A: () => a
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(397927);
-let l = {
+var s = n(397927);
+let a = {
     open: function(e, t) {
-        (0, i.mMO)(async () => {
+        (0, s.mMO)(async () => {
             let {
-                default: i
+                default: s
             } = await n.e("34138").then(n.bind(n, 206049));
-            return n => (0, r.jsx)(i, function(e) {
-                for (var t = 1; t < arguments.length; t++) {
-                    var n = null != arguments[t] ? arguments[t] : {},
-                        r = Object.keys(n);
-                    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                        return Object.getOwnPropertyDescriptor(n, e).enumerable
-                    }))), r.forEach(function(t) {
-                        var r;
-                        r = n[t], t in e ? Object.defineProperty(e, t, {
-                            value: r,
-                            enumerable: !0,
-                            configurable: !0,
-                            writable: !0
-                        }) : e[t] = r
-                    })
-                }
-                return e
-            }({
+            return n => (0, i.jsx)(s, {
                 payment: e,
-                paymentSource: t
-            }, n))
+                paymentSource: t,
+                ...n
+            })
         })
     }
 }

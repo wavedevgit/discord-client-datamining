@@ -10,7 +10,7 @@ var l = n(397927),
     a = n(985018);
 
 function o(e, t) {
-    return s.isPlatformEmbedded && (null == e ? void 0 : e.length) !== 0 ? (0, i.jsx)(l.Drp, {
+    return s.isPlatformEmbedded && e?.length !== 0 ? (0, i.jsx)(l.Drp, {
         id: "copy",
         label: a.intl.string(a.t.OpuAlK),
         shortcut: (0, s.isMac)() ? "⌘C" : "Ctrl+C",
@@ -19,7 +19,7 @@ function o(e, t) {
             icon: l.TdU
         },
         action: () => {
-            r.Ay.copy(e), null == t || t.focus()
+            r.Ay.copy(e), t?.focus()
         }
     }) : null
 }

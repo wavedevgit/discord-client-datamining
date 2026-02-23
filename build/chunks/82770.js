@@ -1,30 +1,30 @@
-/** chunk id: 82770, original params: e,n,t (module,exports,require) **/
-t.d(n, {
-    A: () => d
+/** chunk id: 82770, original params: e,i,n (module,exports,require) **/
+n.d(i, {
+    A: () => c
 });
-var i = t(627968);
-t(64700);
-var r = t(397927),
-    l = t(837057),
-    a = t(310419),
-    c = t(488995),
-    o = t(985018);
+var t = n(627968);
+n(64700);
+var l = n(397927),
+    a = n(837057),
+    r = n(310419),
+    d = n(488995),
+    s = n(985018);
 
-function d(e) {
-    return (0, i.jsx)(r.Drp, {
+function c(e) {
+    return (0, t.jsx)(l.Drp, {
         id: "application-directory",
-        label: o.intl.string(o.t.AKcFUj),
-        icon: r.k9F,
+        label: s.intl.string(s.t.AKcFUj),
+        icon: l.k9F,
         leadingAccessory: {
             type: "icon",
-            icon: r.k9F
+            icon: l.k9F
         },
         action: () => {
-            (0, l.transitionToGlobalDiscovery)({
-                tab: c.GlobalDiscoveryTab.APPS,
+            (0, a.transitionToGlobalDiscovery)({
+                tab: d.GlobalDiscoveryTab.APPS,
                 newSessionState: {
                     entrypoint: {
-                        name: a.sW.GUILD_HEADER_POPOUT
+                        name: r.sW.GUILD_HEADER_POPOUT
                     },
                     guildId: e.id
                 }

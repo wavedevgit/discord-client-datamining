@@ -1,198 +1,164 @@
 /** chunk id: 945777, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => P,
-    S: () => T
+    A: () => j,
+    S: () => v
 });
-var r = n(627968),
-    l = n(64700),
-    i = n(503698),
-    s = n.n(i),
+var i = n(627968),
+    s = n(64700),
+    l = n(503698),
+    r = n.n(l),
     a = n(284009),
     o = n.n(a),
     c = n(110259),
-    u = n(311907),
-    d = n(827734),
-    p = n(397927),
-    h = n(442433),
-    g = n(793574),
-    f = n(688810),
+    d = n(311907),
+    u = n(827734),
+    h = n(397927),
+    A = n(442433),
+    p = n(793574),
+    g = n(688810),
     m = n(139286),
-    b = n(480890),
-    A = n(267102),
-    y = n(342296),
-    O = n(961350),
-    j = n(696451),
-    x = n(562153),
-    _ = n(105530),
-    v = n(806931),
-    E = n(750201);
-
-function C(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = r
-        })
-    }
-    return e
-}
-
-function S(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
-        }
-        return n
-    })(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-let I = l.memo(function(e) {
+    _ = n(480890),
+    f = n(267102),
+    x = n(342296),
+    C = n(961350),
+    E = n(696451),
+    I = n(562153),
+    b = n(105530),
+    N = n(806931),
+    S = n(750201);
+let T = s.memo(function(e) {
         let {
             guildId: t,
             channelId: n,
-            user: l,
-            isPremium: i,
-            isBlocked: s,
+            user: s,
+            isPremium: l,
+            isBlocked: r,
             isIgnored: a
         } = e;
-        return (0, r.jsxs)("div", {
-            className: E.FS,
-            children: [s ? (0, r.jsx)(p.KTN, {
+        return (0, i.jsxs)("div", {
+            className: S.FS,
+            children: [r ? (0, i.jsx)(h.KTN, {
                 size: "lg",
-                className: E.Q6,
-                color: d.A.unsafe_rawColors.RED_400.css
-            }) : null, a ? (0, r.jsx)(p.G3N, {
+                className: S.Q6,
+                color: u.A.unsafe_rawColors.RED_400.css
+            }) : null, a ? (0, i.jsx)(h.G3N, {
                 size: "lg",
-                className: E.Q6
-            }) : null, (0, r.jsx)(p.Text, {
-                className: E.Qq,
+                className: S.Q6
+            }) : null, (0, i.jsx)(h.Text, {
+                className: S.Qq,
                 variant: "text-sm/normal",
                 color: "text-strong",
-                children: x.Ay.getName(t, n, l)
-            }), i ? (0, r.jsx)(p._Jp, {
-                className: E.EH,
-                color: d.A.unsafe_rawColors.GUILD_BOOSTING_PINK
+                children: I.Ay.getName(t, n, s)
+            }), l ? (0, i.jsx)(h._Jp, {
+                className: S.EH,
+                color: u.A.unsafe_rawColors.GUILD_BOOSTING_PINK
             }) : null]
         })
     }),
-    N = l.memo(function(e) {
-        var t;
+    y = s.memo(function(e) {
         let {
-            participant: n,
-            guildId: l,
-            channel: i,
-            isPremium: a
+            participant: t,
+            guildId: n,
+            channel: s,
+            isPremium: l
         } = e, {
-            user: o,
-            blocked: c,
-            ignored: u,
+            user: a,
+            blocked: o,
+            ignored: c,
             rtsState: d
-        } = n, h = d === _.zF.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK, g = d === _.zF.REQUESTED_TO_SPEAK || h;
-        return (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsxs)("div", {
-                className: E.H,
-                children: [g && (0, r.jsx)(p.E7M, {
+        } = t, u = d === b.zF.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK, A = d === b.zF.REQUESTED_TO_SPEAK || u;
+        return (0, i.jsxs)(i.Fragment, {
+            children: [(0, i.jsxs)("div", {
+                className: S.H,
+                children: [A && (0, i.jsx)(h.E7M, {
                     size: "md",
                     color: "currentColor",
-                    className: s()(E.Kk, {
-                        [E.MD]: h
+                    className: r()(S.Kk, {
+                        [S.MD]: u
                     })
-                }), (0, r.jsx)("img", {
-                    src: null != (t = o.getAvatarURL(i.guild_id, 56, !1)) ? t : void 0,
-                    alt: o.username,
-                    "aria-label": o.username,
-                    className: s()(E.my, {
-                        [E.zj]: c || u
+                }), (0, i.jsx)("img", {
+                    src: a.getAvatarURL(s.guild_id, 56, !1) ?? void 0,
+                    alt: a.username,
+                    "aria-label": a.username,
+                    className: r()(S.my, {
+                        [S.zj]: o || c
                     })
                 })]
-            }), (0, r.jsx)(I, {
-                guildId: l,
-                channelId: i.id,
-                user: o,
-                isPremium: a,
-                isBlocked: c,
-                isIgnored: u
+            }), (0, i.jsx)(T, {
+                guildId: n,
+                channelId: s.id,
+                user: a,
+                isPremium: l,
+                isBlocked: o,
+                isIgnored: c
             })]
         })
     }),
-    T = () => (0, r.jsx)("div", {
-        className: E.j8
+    v = () => (0, i.jsx)("div", {
+        className: S.j8
     }),
-    P = l.memo(function(e) {
+    j = s.memo(function(e) {
         let {
             participant: t,
-            channel: i
+            channel: l
         } = e, {
             user: a,
-            blocked: d
-        } = t, x = i.getGuildId(), _ = O.default.getId(), {
-            newestAnalyticsLocation: I
-        } = (0, f.Ay)(g.A.AUDIENCE_TILE), T = (0, A.Us)(), P = (0, u.bG)([j.Ay], () => {
-            var e;
-            return null != x && (null == (e = j.Ay.getMember(x, a.id)) ? void 0 : e.premiumSince) != null
-        }, [x, a.id]), w = l.useRef(null);
-        o()(null != x, "Channel cannot be guildless");
-        let R = l.useCallback(e => {
+            blocked: u
+        } = t, I = l.getGuildId(), b = C.default.getId(), {
+            newestAnalyticsLocation: T
+        } = (0, g.Ay)(p.A.AUDIENCE_TILE), v = (0, f.Us)(), j = (0, d.bG)([E.Ay], () => null != I && E.Ay.getMember(I, a.id)?.premiumSince != null, [I, a.id]), R = s.useRef(null);
+        o()(null != I, "Channel cannot be guildless");
+        let O = s.useCallback(e => {
             (0, m.x)({
                 type: c.ImpressionTypes.MENU,
                 name: c.ImpressionNames.CALL_TILE_CONTEXT_MENU,
                 properties: {
                     location: "AudienceTile",
-                    is_tile_owner: a.id === _,
-                    tile_type: v.qs.USER
+                    is_tile_owner: a.id === b,
+                    tile_type: N.qs.USER
                 }
-            }), (0, h.L3)(e, async () => {
+            }), (0, A.L3)(e, async () => {
                 let {
                     default: e
-                } = await Promise.all([n.e("97262"), n.e("29534"), n.e("55296"), n.e("84841"), n.e("31885")]).then(n.bind(n, 107632));
-                return t => (0, r.jsx)(e, S(C({}, t), {
+                } = await Promise.all([n.e("97262"), n.e("42128"), n.e("84841"), n.e("54266")]).then(n.bind(n, 107632));
+                return t => (0, i.jsx)(e, {
+                    ...t,
                     user: a,
-                    guildId: x,
-                    channel: i,
+                    guildId: I,
+                    channel: l,
                     showMediaItems: !0,
                     showStageChannelItems: !0,
                     showChatItems: !1,
-                    onInteraction: (0, b.s)("GuildChannelUserContextMenu", I, {
+                    onInteraction: (0, _.s)("GuildChannelUserContextMenu", T, {
                         targetUserId: a.id,
-                        tileType: v.qs.USER
+                        tileType: N.qs.USER
                     })
-                }))
-            }, {
-                context: T
-            })
-        }, [a, _, T, x, i, I]);
-        return (0, r.jsx)(y.A, {
-            targetElementRef: w,
-            user: a,
-            guildId: i.guild_id,
-            channelId: i.id,
-            clickTrap: !0,
-            children: e => (0, r.jsx)(p.DUT, S(C({
-                innerRef: w,
-                className: s()(E.iA, {
-                    [E.wP]: P || d,
-                    [E.fP]: P && d
-                }),
-                onContextMenu: R
-            }, e), {
-                children: (0, r.jsx)(N, {
-                    participant: t,
-                    guildId: x,
-                    channel: i,
-                    isPremium: P
                 })
-            }))
+            }, {
+                context: v
+            })
+        }, [a, b, v, I, l, T]);
+        return (0, i.jsx)(x.A, {
+            targetElementRef: R,
+            user: a,
+            guildId: l.guild_id,
+            channelId: l.id,
+            clickTrap: !0,
+            children: e => (0, i.jsx)(h.DUT, {
+                innerRef: R,
+                className: r()(S.iA, {
+                    [S.wP]: j || u,
+                    [S.fP]: j && u
+                }),
+                onContextMenu: O,
+                ...e,
+                children: (0, i.jsx)(y, {
+                    participant: t,
+                    guildId: I,
+                    channel: l,
+                    isPremium: j
+                })
+            })
         })
     })

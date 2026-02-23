@@ -1,15 +1,15 @@
-/** chunk id: 707685, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    b: () => o,
+/** chunk id: 707685, original params: e,t,a (module,exports,require) **/
+a.d(t, {
+    b: () => s,
     w: () => l
 });
-var r = n(803842),
-    i = n(652215);
+var n = a(803842),
+    i = a(652215);
 let l = {
-        [i.IWg.MODAL_CAROUSEL_NEXT]: r.$0,
-        [i.IWg.MODAL_CAROUSEL_PREV]: r.$4,
-        [i.IWg.CLOSE_MODAL]: r.cu
+        [i.IWg.MODAL_CAROUSEL_NEXT]: n.$0,
+        [i.IWg.MODAL_CAROUSEL_PREV]: n.$4,
+        [i.IWg.CLOSE_MODAL]: n.cu
     },
-    o = {
-        [i.IWg.CLOSE_MODAL]: r.cu
+    s = {
+        [i.IWg.CLOSE_MODAL]: n.cu
     }

@@ -1,99 +1,99 @@
 /** chunk id: 915644, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => b,
-    C: () => x
-}), n(228524);
+    A: () => f,
+    C: () => C
+});
 var l = n(627968);
 n(64700);
-var r = n(503698),
-    i = n.n(r),
+var i = n(503698),
+    s = n.n(i),
     a = n(554146),
-    s = n(397927),
-    o = n(826673),
+    r = n(397927),
+    d = n(826673),
     c = n(367727),
-    d = n(997509),
+    o = n(997509),
     u = n(307879),
-    h = n(395504),
-    p = n(652215),
-    f = n(49999),
-    _ = n(985018),
-    m = n(932726),
-    g = n(529732);
+    _ = n(395504),
+    h = n(652215),
+    x = n(49999),
+    m = n(985018),
+    g = n(932726),
+    A = n(529732);
 
-function x(e) {
-    return (0, h.Xn)(e) ? 250 : 152
+function C(e) {
+    return (0, _.Xn)(e) ? 250 : 152
 }
 
-function b(e) {
+function f(e) {
     let {
         guild: t
-    } = e, n = (0, h.Xn)(t.id), r = (0, o.JZ)(a.M.GUILD_HEADER_COMMUNITY_ONBOARDING_ADMIN_UPSELL), x = n && !r ? a.M.GUILD_HEADER_COMMUNITY_ONBOARDING_ADMIN_UPSELL : a.M.CHANNEL_BROWSER_NUX;
-    (0, c.Vh)(x);
-    let b = n ? (0, l.jsxs)(l.Fragment, {
+    } = e, n = (0, _.Xn)(t.id), i = (0, d.JZ)(a.M.GUILD_HEADER_COMMUNITY_ONBOARDING_ADMIN_UPSELL), C = n && !i ? a.M.GUILD_HEADER_COMMUNITY_ONBOARDING_ADMIN_UPSELL : a.M.CHANNEL_BROWSER_NUX;
+    (0, c.Vh)(C);
+    let f = n ? (0, l.jsxs)(l.Fragment, {
         children: [(0, l.jsxs)("div", {
-            children: [(0, l.jsx)(s.Heading, {
-                className: m.R_,
+            children: [(0, l.jsx)(r.Heading, {
+                className: g.R_,
                 color: "always-white",
                 variant: "heading-lg/semibold",
-                children: _.intl.string(_.t.AalzkJ)
-            }), (0, l.jsx)(s.Text, {
-                className: m.h_,
+                children: m.intl.string(m.t.AalzkJ)
+            }), (0, l.jsx)(r.Text, {
+                className: g.h_,
                 variant: "text-md/normal",
                 color: "always-white",
-                children: _.intl.string(_.t.CXh95Z)
-            }), (0, l.jsx)(s.Button, {
+                children: m.intl.string(m.t.CXh95Z)
+            }), (0, l.jsx)(r.Button, {
                 variant: "overlay-primary",
                 onClick: () => {
-                    d.A.open(t.id, p.BEX.ONBOARDING), (0, o.Dr)(x, {
-                        dismissAction: f.i.PRIMARY
+                    o.A.open(t.id, h.BEX.ONBOARDING), (0, d.Dr)(C, {
+                        dismissAction: x.i.PRIMARY
                     })
                 },
-                text: _.intl.string(_.t["+OtO4e"])
+                text: m.intl.string(m.t["+OtO4e"])
             })]
         }), (0, l.jsx)(u.M, {
             isTooltip: !0
         })]
     }) : (0, l.jsxs)("div", {
-        className: m.FQ,
+        className: g.FQ,
         children: [(0, l.jsx)("img", {
             width: 180,
-            className: m.Sl,
-            src: g,
+            className: g.Sl,
+            src: A,
             alt: "",
             "aria-hidden": !0
         }), (0, l.jsxs)("div", {
-            children: [(0, l.jsx)(s.Heading, {
-                className: m.R_,
+            children: [(0, l.jsx)(r.Heading, {
+                className: g.R_,
                 variant: "heading-lg/semibold",
                 color: "text-strong",
-                children: _.intl.string(_.t.utqWEC)
-            }), (0, l.jsx)(s.Text, {
+                children: m.intl.string(m.t.utqWEC)
+            }), (0, l.jsx)(r.Text, {
                 variant: "text-md/normal",
                 color: "text-default",
-                children: _.intl.string(_.t["+9etcM"])
-            }), (0, l.jsx)(s.Text, {
-                className: m.uN,
+                children: m.intl.string(m.t["+9etcM"])
+            }), (0, l.jsx)(r.Text, {
+                className: g.uN,
                 variant: "text-md/normal",
                 color: "text-default",
-                children: _.intl.format(_.t.Z0axjk, {})
+                children: m.intl.format(m.t.Z0axjk, {})
             })]
         })]
     });
     return (0, l.jsxs)("div", {
-        className: i()(m.kL, {
-            [m.xY]: n
+        className: s()(g.kL, {
+            [g.xY]: n
         }),
-        children: [(0, l.jsx)(s.DUT, {
-            className: m.b,
+        children: [(0, l.jsx)(r.DUT, {
+            className: g.b,
             onClick: () => {
-                (0, o.Dr)(x, {
-                    dismissAction: f.i.DISMISS
+                (0, d.Dr)(C, {
+                    dismissAction: x.i.DISMISS
                 })
             },
-            children: (0, l.jsx)(s.PGe, {
+            children: (0, l.jsx)(r.PGe, {
                 size: "md",
                 color: "currentColor"
             })
-        }), b]
+        }), f]
     })
 }

@@ -1,70 +1,69 @@
 /** chunk id: 823016, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    B: () => u,
+    B: () => d,
     r: () => c
-}), n(896048), n(638769);
-var r = n(627968),
+});
+var i = n(627968),
     l = n(64700),
-    i = n(775602),
-    a = n(818348);
-let o = l.createContext(null),
-    s = {
-        registerItemRef: () => a.tE,
-        registerDragHandleRef: () => a.tE,
-        manageFocusOnReorder: a.tE,
-        manageFocusOnDelete: a.tE
+    a = n(775602),
+    s = n(818348);
+let r = l.createContext(null),
+    o = {
+        registerItemRef: () => s.tE,
+        registerDragHandleRef: () => s.tE,
+        manageFocusOnReorder: s.tE,
+        manageFocusOnDelete: s.tE
     };
 
 function c() {
-    let e = l.useContext(o);
-    return null != e ? e : s
+    return l.useContext(r) ?? o
 }
 
-function u(e) {
+function d(e) {
     let {
         children: t,
         emptyListFallbackRef: n
-    } = e, a = l.useRef(new Map), s = l.useRef(new Map), c = l.useRef([]), u = l.useCallback(() => {
-        c.current = Array.from(a.current.keys()).sort((e, t) => {
-            let n = a.current.get(e),
-                r = a.current.get(t);
-            if (null == n || null == r) return 0;
-            let l = n.compareDocumentPosition(r);
+    } = e, s = l.useRef(new Map), o = l.useRef(new Map), c = l.useRef([]), d = l.useCallback(() => {
+        c.current = Array.from(s.current.keys()).sort((e, t) => {
+            let n = s.current.get(e),
+                i = s.current.get(t);
+            if (null == n || null == i) return 0;
+            let l = n.compareDocumentPosition(i);
             return (l & Node.DOCUMENT_POSITION_FOLLOWING) != 0 ? -1 : +((l & Node.DOCUMENT_POSITION_PRECEDING) != 0)
         })
-    }, []), d = l.useCallback(e => t => {
+    }, []), u = l.useCallback(e => t => {
+        null != t ? o.current.set(e, t) : o.current.delete(e)
+    }, []), g = l.useCallback(e => t => {
         null != t ? s.current.set(e, t) : s.current.delete(e)
-    }, []), f = l.useCallback(e => t => {
-        null != t ? a.current.set(e, t) : a.current.delete(e)
-    }, []), p = l.useCallback(e => {
-        i.A.keyboardModeEnabled && requestAnimationFrame(() => {
-            let t = s.current.get(e);
-            null == t || t.focus()
+    }, []), m = l.useCallback(e => {
+        a.A.keyboardModeEnabled && requestAnimationFrame(() => {
+            let t = o.current.get(e);
+            t?.focus()
         })
-    }, []), g = l.useCallback(e => {
-        if (!i.A.keyboardModeEnabled) return;
-        u();
+    }, []), x = l.useCallback(e => {
+        if (!a.A.keyboardModeEnabled) return;
+        d();
         let t = c.current,
-            r = t.indexOf(e);
-        if (-1 === r) return;
-        let l = r + 1 < t.length ? r + 1 : r - 1;
+            i = t.indexOf(e);
+        if (-1 === i) return;
+        let l = i + 1 < t.length ? i + 1 : i - 1;
         if (l >= 0) {
             let e = t[l];
             requestAnimationFrame(() => {
-                let t = a.current.get(e);
-                null == t || t.focus()
+                let t = s.current.get(e);
+                t?.focus()
             })
         } else requestAnimationFrame(() => {
-            null == n || n.focus()
+            n?.focus()
         })
-    }, [n, u]), m = l.useMemo(() => ({
-        registerDragHandleRef: d,
-        registerItemRef: f,
-        manageFocusOnReorder: p,
-        manageFocusOnDelete: g
-    }), [d, f, p, g]);
-    return (0, r.jsx)(o.Provider, {
-        value: m,
+    }, [n, d]), f = l.useMemo(() => ({
+        registerDragHandleRef: u,
+        registerItemRef: g,
+        manageFocusOnReorder: m,
+        manageFocusOnDelete: x
+    }), [u, g, m, x]);
+    return (0, i.jsx)(r.Provider, {
+        value: f,
         children: t
     })
 }

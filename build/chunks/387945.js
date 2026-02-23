@@ -1,23 +1,22 @@
-/** chunk id: 387945, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    A: () => s
+/** chunk id: 387945, original params: t,e,r (module,exports,require) **/
+r.d(e, {
+    A: () => a
 });
-var r = n(627968);
-n(64700);
-var i = n(397927),
-    a = n(645178),
-    o = n(561769);
-let s = e => {
+var i = r(627968);
+r(64700);
+var l = r(397927),
+    n = r(536572),
+    s = r(561769);
+let a = t => {
     let {
-        skuId: t,
-        className: n
-    } = e, s = (0, o.Vm)(t), l = (0, a.dH)(s);
-    return (0, r.jsx)(i.Heading, {
+        skuId: e,
+        className: r
+    } = t, a = (0, s.nY)(), u = (0, s.Vm)(e), o = a ? (0, n.VG)(u) : (0, n.sE)(u);
+    return (0, i.jsx)(l.Heading, {
         variant: "heading-md/medium",
         color: "text-strong",
-        className: n,
+        className: r,
         lineClamp: 1,
-        children: l
+        children: o
     })
 }

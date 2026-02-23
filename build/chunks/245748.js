@@ -1,26 +1,26 @@
 /** chunk id: 245748, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => o
-}), n(896048);
-var l = n(627968),
-    r = n(64700),
-    i = n(503698),
-    a = n.n(i),
-    s = n(606878);
+});
+var i = n(627968),
+    l = n(64700),
+    s = n(503698),
+    a = n.n(s),
+    r = n(606878);
 
 function o(e) {
     let {
         children: t,
         className: n,
-        flashKey: i
-    } = e, [o, c] = r.useState(!1), u = r.useRef(null);
-    return r.useEffect(() => (c(!0), u.current = window.setTimeout(() => {
+        flashKey: s
+    } = e, [o, c] = l.useState(!1), d = l.useRef(null);
+    return l.useEffect(() => (c(!0), d.current = window.setTimeout(() => {
         c(!1)
     }, 2e3), () => {
-        null != u.current && clearTimeout(u.current)
-    }), [i]), (0, l.jsx)("div", {
+        null != d.current && clearTimeout(d.current)
+    }), [s]), (0, i.jsx)("div", {
         "data-flash": o,
-        className: a()(s.j, n),
+        className: a()(r.j, n),
         children: t
     })
 }

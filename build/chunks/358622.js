@@ -1,16 +1,16 @@
 /** chunk id: 358622, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => x
-}), n(896048);
+    A: () => p
+});
 var a = n(627968);
 n(64700);
-var l = n(989349),
-    r = n.n(l),
-    i = n(311907),
-    s = n(554146),
+var i = n(989349),
+    s = n.n(i),
+    l = n(311907),
+    r = n(554146),
     o = n(105565),
-    c = n(771781),
-    d = n(303054),
+    d = n(771781),
+    c = n(303054),
     u = n(957196);
 let m = e => {
         switch (e) {
@@ -24,32 +24,32 @@ let m = e => {
                 return "UNKNOWN TYPE:"
         }
     },
-    p = [{
+    h = [{
         key: "events",
         render(e) {
             let {
                 event: t,
                 dismissibleContent: n
             } = e;
-            return "".concat(t, " ").concat(s.M[n])
+            return `${t} ${r.M[n]}`
         }
     }],
-    h = [{
+    x = [{
         key: "candidates",
         render(e) {
             let {
                 dismissibleContent: t
             } = e;
-            return "".concat(s.M[t])
+            return `${r.M[t]}`
         }
     }];
 
-function x() {
-    let e = (0, i.bG)([o.A], () => o.A.getDCFEvents()),
-        t = (0, c.Ay)(e => e.candidates),
-        n = (0, c.Ay)(e => e.lastWinnerTime),
-        l = 0 !== n ? r()(n).fromNow() : "n/a",
-        x = (0, c.Ay)(e => 0 === e.lastWinnerTime ? null : e.recentlyShown[0]),
+function p() {
+    let e = (0, l.bG)([o.A], () => o.A.getDCFEvents()),
+        t = (0, d.Ay)(e => e.candidates),
+        n = (0, d.Ay)(e => e.lastWinnerTime),
+        i = 0 !== n ? s()(n).fromNow() : "n/a",
+        p = (0, d.Ay)(e => 0 === e.lastWinnerTime ? null : e.recentlyShown[0]),
         g = e.map(e => {
             let {
                 eventType: t,
@@ -61,7 +61,7 @@ function x() {
                 dismissibleContent: n
             }
         }),
-        f = Array.from(t.keys()).map(e => ({
+        _ = Array.from(t.keys()).map(e => ({
             key: e.toString(),
             dismissibleContent: e
         }));
@@ -69,19 +69,19 @@ function x() {
         className: u.KE,
         children: [(0, a.jsxs)("div", {
             className: u.pq,
-            children: ["Last winner time: ", l]
+            children: ["Last winner time: ", i]
         }), (0, a.jsx)("br", {}), (0, a.jsxs)("div", {
             className: u.pq,
-            children: ["Last winner: ", null != x ? s.M[x] : "None"]
+            children: ["Last winner: ", null != p ? r.M[p] : "None"]
         }), (0, a.jsx)("br", {}), (0, a.jsx)("div", {
             className: u.uI,
-            children: (0, a.jsx)(d.A, {
+            children: (0, a.jsx)(c.A, {
                 className: u.Th,
-                columns: h,
-                data: f
+                columns: x,
+                data: _
             })
-        }), (0, a.jsx)("br", {}), (0, a.jsx)(d.A, {
-            columns: p,
+        }), (0, a.jsx)("br", {}), (0, a.jsx)(c.A, {
+            columns: h,
             data: g
         })]
     })

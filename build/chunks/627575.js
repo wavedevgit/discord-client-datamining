@@ -1,10 +1,10 @@
-/** chunk id: 627575, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    k: () => r
+/** chunk id: 627575, original params: t,e,i (module,exports,require) **/
+i.d(e, {
+    k: () => l
 });
-var a = n(397927),
-    l = n(830215);
+var n = i(397927),
+    r = i(830215);
 
-function r(e) {
-    (0, a.s7G)(), l.A.logout(e)
+function l(t) {
+    (0, n.s7G)(), r.A.logout(t)
 }

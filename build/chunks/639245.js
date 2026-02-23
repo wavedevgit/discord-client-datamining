@@ -2,10 +2,10 @@
 l.d(n, {
     A: () => i
 });
-var t = l(417597),
-    r = l(734057),
-    a = l(701785);
+var a = l(417597),
+    s = l(734057),
+    t = l(701785);
 
 function i(e) {
-    return (0, t.yK)([a.h, r.A], () => a.h.getResourceChannels(e).filter(e => null != r.A.getChannel(e.channelId)))
+    return (0, a.yK)([t.h, s.A], () => t.h.getResourceChannels(e).filter(e => null != s.A.getChannel(e.channelId)))
 }

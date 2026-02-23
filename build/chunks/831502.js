@@ -1,5 +1,6 @@
 /** chunk id: 831502, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    q: () => r
+    q: () => i
 });
-let r = "https://dis.gd/appeal"
+let i = "https://dis.gd/appeal"

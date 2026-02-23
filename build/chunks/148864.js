@@ -1,50 +1,41 @@
-/** chunk id: 148864, original params: e,t,r (module,exports,require) **/
-let n;
-r.d(t, {
-    A: () => d
+/** chunk id: 148864, original params: e,t,s (module,exports,require) **/
+let r;
+s.d(t, {
+    A: () => c
 });
-var s, i = r(311907),
-    l = r(73153),
-    a = r(518977);
+var n = s(311907),
+    a = s(73153),
+    i = s(518977);
+let l = (0, i.rE)();
 
-function o(e, t, r) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: r,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = r, e
-}
-let c = (0, a.rE)();
-
-function u(e) {
-    var t;
+function o(e) {
     let {
-        countryCode: r
+        countryCode: t
     } = e;
-    null != r && (c = null != (t = (0, a.XF)(r)) ? t : (0, a.rE)())
+    null != t && (l = (0, i.XF)(t) ?? (0, i.rE)())
 }
-class h extends(s = i.Ay.DeviceSettingsStore) {
+class h extends n.Ay.DeviceSettingsStore {
+    static displayName = "PhoneStore";
+    static persistKey = "PhoneStore";
     initialize(e) {
-        null != e && (n = e.selectedCountryCode)
+        null != e && (r = e.selectedCountryCode)
     }
     getUserAgnosticState() {
         return {
-            selectedCountryCode: n
+            selectedCountryCode: r
         }
     }
     getCountryCode() {
-        return null != n ? n : c
+        return null != r ? r : l
     }
 }
-o(h, "displayName", "PhoneStore"), o(h, "persistKey", "PhoneStore");
-let d = new h(l.h, {
+let c = new h(a.h, {
     PHONE_SET_COUNTRY_CODE: function(e) {
         let {
             countryCode: t
         } = e;
-        n = t
+        r = t
     },
-    CONNECTION_OPEN: u,
-    SET_LOCATION_METADATA: u
+    CONNECTION_OPEN: o,
+    SET_LOCATION_METADATA: o
 })

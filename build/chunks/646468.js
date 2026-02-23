@@ -1,63 +1,64 @@
 /** chunk id: 646468, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    Ay: () => A,
-    xc: () => O
-}), n(896048), n(638769);
-var r = n(627968),
-    l = n(64700),
-    i = n(311907),
-    s = n(435371),
+    Ay: () => f,
+    xc: () => C
+});
+var i = n(627968),
+    s = n(64700),
+    l = n(311907),
+    r = n(435371),
     a = n(397927),
     o = n(252431),
     c = n(322387),
-    u = n(995273),
-    d = n(325326),
-    p = n(208667),
-    h = n(253932),
-    g = n(954571),
-    f = n(661191),
+    d = n(995273),
+    u = n(325326),
+    h = n(208667),
+    A = n(253932),
+    p = n(954571),
+    g = n(661191),
     m = n(652215),
-    b = n(985018);
+    _ = n(985018);
 
-function A() {
+function f() {
     let {
         initialized: e,
         items: t,
         loading: n,
-        loadMore: l
-    } = (0, d.LF)(), s = y(t, (0, i.bG)([o.A], () => o.A.localItems));
-    return (0, r.jsx)(p.A, {
+        loadMore: s
+    } = (0, u.LF)(), r = x(t, (0, l.bG)([o.A], () => o.A.localItems));
+    return (0, i.jsx)(h.A, {
         initialized: e,
-        items: s,
+        items: r,
         loading: n,
-        loadMore: l
+        loadMore: s
     })
 }
 
-function y(e, t) {
-    return l.useMemo(() => [...[...e, ...t].sort((e, t) => -1 * f.default.compare(e.id, t.id))], [e, t])
+function x(e, t) {
+    return s.useMemo(() => [...[...e, ...t].sort((e, t) => -1 * g.default.compare(e.id, t.id))], [e, t])
 }
 
-function O() {
+function C() {
     let {
         items: e
-    } = (0, d.LF)(), t = e.length > 0 ? e[0] : null, n = y(e, (0, i.bG)([o.A], () => o.A.localItems)), p = h.ns.useSetting();
-    return l.useMemo(() => {
-        if (null != t && 0 >= f.default.compare(t.id, p)) return !1;
+    } = (0, u.LF)(), t = e.length > 0 ? e[0] : null, n = x(e, (0, l.bG)([o.A], () => o.A.localItems)), h = A.ns.useSetting();
+    return s.useMemo(() => {
+        if (null != t && 0 >= g.default.compare(t.id, h)) return !1;
         for (let e of n) {
-            if (0 >= f.default.compare(e.id, p)) break;
-            if (!(0, u.NW)(e, p)) return !0
+            if (0 >= g.default.compare(e.id, h)) break;
+            if (!(0, d.NW)(e, h)) return !0
         }
         return !1
-    }, [t, p, n]) ? (0, r.jsx)(s.m_, {
-        text: b.intl.string(b.t["8k+6QY"]),
-        children: (0, r.jsx)(a.K0, {
-            "aria-label": b.intl.string(b.t["8k+6QY"]),
+    }, [t, h, n]) ? (0, i.jsx)(r.m_, {
+        text: _.intl.string(_.t["8k+6QY"]),
+        children: (0, i.jsx)(a.K0, {
+            "aria-label": _.intl.string(_.t["8k+6QY"]),
             icon: a.iA$,
             variant: "secondary",
             size: "sm",
             onClick: () => {
-                null != t && (h.ns.updateSetting(t.id), g.default.track(m.HAw.NOTIFICATION_CENTER_ACTION, {
+                null != t && (A.ns.updateSetting(t.id), p.default.track(m.HAw.NOTIFICATION_CENTER_ACTION, {
                     action_type: c.e1.MARK_ALL_READ
                 }))
             }

@@ -1,34 +1,34 @@
 /** chunk id: 597936, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    BN: () => c,
-    li: () => E
+    BN: () => E,
+    li: () => _
 });
-var r = n(989349),
-    i = n.n(r),
+var i = n(989349),
+    r = n.n(i),
     l = n(335871),
-    a = n(594061),
-    o = n(617617),
-    s = n(431162);
-let c = e => {
-        var t;
-        if (!u(e)) return !1;
-        let n = null == (t = o.A.settings.userContent) ? void 0 : t.safetyUserSentimentNoticeDismissedAt,
-            r = null != n ? l.D.toDate(n) : void 0,
-            a = null != r ? i()().diff(r, "days") : null;
-        if (null != n && !(null != a && a > 30)) return !1;
+    s = n(594061),
+    a = n(617617),
+    o = n(431162);
+let E = e => {
+        if (!c(e)) return !1;
+        let t = a.A.settings.userContent?.safetyUserSentimentNoticeDismissedAt,
+            n = null != t ? l.D.toDate(t) : void 0,
+            i = null != n ? r()().diff(n, "days") : null;
+        if (null != t && !(null != i && i > 30)) return !1;
         let {
-            isEligible: c
-        } = s.O.getCurrentConfig({
+            isEligible: s
+        } = o.O.getCurrentConfig({
             location: "657a81_1"
         }, {
             autoTrackExposure: !0
         });
-        return c
+        return s
     },
-    u = e => null != e && Date.now() - e.createdAt.getTime() > 2592e6,
-    E = () => {
+    c = e => null != e && Date.now() - e.createdAt.getTime() > 2592e6,
+    _ = () => {
         let e = l.D.now();
-        a.wc.updateAsync("userContent", t => {
+        s.wc.updateAsync("userContent", t => {
             t.safetyUserSentimentNoticeDismissedAt = e
-        }, a.Sb.INFREQUENT_USER_ACTION)
+        }, s.Sb.INFREQUENT_USER_ACTION)
     }

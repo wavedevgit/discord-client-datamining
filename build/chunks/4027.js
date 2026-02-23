@@ -1,86 +1,70 @@
 /** chunk id: 4027, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    default: () => A
+    default: () => C
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(397927),
-    l = n(442433),
-    a = n(847767),
-    o = n(358367),
-    c = n(468389),
+var l = n(397927),
+    a = n(442433),
+    r = n(847767),
+    d = n(358367),
+    o = n(468389),
     s = n(793574),
     u = n(50268),
-    d = n(133238),
-    b = n(795144),
-    f = n(73028),
-    O = n(961350),
-    p = n(605691),
-    y = n(848977),
-    g = n(995102),
-    h = n(652215),
-    j = n(985018);
-let A = (0, o.A)((0, a.A)(function(e) {
+    c = n(133238),
+    f = n(795144),
+    A = n(73028),
+    v = n(961350),
+    h = n(605691),
+    g = n(848977),
+    _ = n(995102),
+    p = n(652215),
+    b = n(985018);
+let C = (0, d.A)((0, r.A)(function(e) {
     let {
         channel: t,
-        selected: a,
-        onSelect: o
-    } = e, h = t.isOwner(O.default.getId()), A = (0, y.A)(t), m = (0, g.Ay)(t), v = (0, p.A)(t, a), P = (0, u.A)({
+        selected: r,
+        onSelect: d
+    } = e, p = t.isOwner(v.default.getId()), C = (0, g.A)(t), m = (0, _.Ay)(t), O = (0, h.A)(t, r), E = (0, u.A)({
         id: t.id,
-        label: j.intl.string(j.t.gFHI3k)
-    }), w = (0, c.A)(t), _ = (0, d.m)(t), D = (0, d.y)(t), x = (0, b.A)(t), E = h ? (0, r.jsx)(i.Drp, {
+        label: b.intl.string(b.t.gFHI3k)
+    }), y = (0, o.A)(t), T = (0, c.m)(t), R = (0, c.y)(t), I = (0, f.A)(t), U = p ? (0, i.jsx)(l.Drp, {
         id: "instant-invites",
-        label: j.intl.string(j.t.ngRFjZ),
-        action: () => (0, i.mMO)(async () => {
+        label: b.intl.string(b.t.ngRFjZ),
+        action: () => (0, l.mMO)(async () => {
             let {
                 default: e
             } = await n.e("48574").then(n.bind(n, 830541));
-            return n => (0, r.jsx)(e, function(e) {
-                for (var t = 1; t < arguments.length; t++) {
-                    var n = null != arguments[t] ? arguments[t] : {},
-                        r = Object.keys(n);
-                    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                        return Object.getOwnPropertyDescriptor(n, e).enumerable
-                    }))), r.forEach(function(t) {
-                        var r;
-                        r = n[t], t in e ? Object.defineProperty(e, t, {
-                            value: r,
-                            enumerable: !0,
-                            configurable: !0,
-                            writable: !0
-                        }) : e[t] = r
-                    })
-                }
-                return e
-            }({
-                channelId: t.id
-            }, n))
+            return n => (0, i.jsx)(e, {
+                channelId: t.id,
+                ...n
+            })
         })
     }) : null;
-    return null == t || t.isManaged() ? null : (0, r.jsxs)(i.W1t, {
+    return null == t || t.isManaged() ? null : (0, i.jsxs)(l.W1t, {
         "data-menu-migrated-auto": !0,
         navId: "gdm-context",
-        "aria-label": j.intl.string(j.t.Xm41aV),
-        onClose: l.Z_,
-        onSelect: o,
-        children: [(0, r.jsxs)(i.rXV, {
-            children: [A, _, x]
-        }), (0, r.jsxs)(i.rXV, {
-            children: [E, (0, r.jsx)(i.Drp, {
+        "aria-label": b.intl.string(b.t.Xm41aV),
+        onClose: a.Z_,
+        onSelect: d,
+        children: [(0, i.jsxs)(l.rXV, {
+            children: [C, T, I]
+        }), (0, i.jsxs)(l.rXV, {
+            children: [U, (0, i.jsx)(l.Drp, {
                 id: "edit-gdm",
-                label: j.intl.string(j.t["5Q9+/L"]),
-                action: () => (0, f.U)(t.id, s.A.GROUP_DM_CONTEXT_MENU)
+                label: b.intl.string(b.t["5Q9+/L"]),
+                action: () => (0, A.U)(t.id, s.A.GROUP_DM_CONTEXT_MENU)
             })]
-        }), (0, r.jsx)(i.rXV, {
-            children: w
-        }), (0, r.jsx)(i.rXV, {
+        }), (0, i.jsx)(l.rXV, {
+            children: y
+        }), (0, i.jsx)(l.rXV, {
             children: m
-        }), (0, r.jsxs)(i.rXV, {
-            children: [D, v]
-        }), (0, r.jsx)(i.rXV, {
-            children: P
+        }), (0, i.jsxs)(l.rXV, {
+            children: [R, O]
+        }), (0, i.jsx)(l.rXV, {
+            children: E
         })]
     })
 }, {
-    object: h.ZSU.CONTEXT_MENU
+    object: p.ZSU.CONTEXT_MENU
 }), [s.A.CONTEXT_MENU, s.A.GROUP_DM_MENU])

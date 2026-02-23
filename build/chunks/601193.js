@@ -1,12 +1,12 @@
-/** chunk id: 601193, original params: e,t,l (module,exports,require) **/
-l.d(t, {
+/** chunk id: 601193, original params: e,t,n (module,exports,require) **/
+n.d(t, {
     A: () => r
 });
-var n = l(839214);
-let a = Object.freeze({
+var i = n(839214);
+let l = Object.freeze({
         selectedTab: null,
         isSearchVisible: !1,
         entrypoint: null,
-        searchBarState: l(488995).GlobalDiscoverySearchBarState.DEFAULT
+        searchBarState: n(488995).GlobalDiscoverySearchBarState.DEFAULT
     }),
-    r = (0, n.D)(() => a)
+    r = (0, i.D)(() => l)

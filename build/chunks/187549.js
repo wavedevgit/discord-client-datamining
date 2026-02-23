@@ -2,7 +2,7 @@
 n.d(t, {
     U: () => i
 });
-let l = (0, n(945810).mj)({
+let a = (0, n(945810).mj)({
     name: "2025-11-shockbyte-degraded",
     kind: "user",
     defaultConfig: {
@@ -16,7 +16,7 @@ let l = (0, n(945810).mj)({
 });
 
 function i(e) {
-    return l.useConfig({
+    return a.useConfig({
         location: e
     }).enabled
 }

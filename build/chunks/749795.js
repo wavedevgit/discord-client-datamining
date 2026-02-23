@@ -1,77 +1,77 @@
 /** chunk id: 749795, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => h
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(503698),
-    l = n.n(i),
-    a = n(397927),
+var l = n(503698),
+    a = n.n(l),
+    r = n(397927),
     s = n(709066),
     o = n(763754),
     c = n(643204),
-    u = n(809115),
-    d = n(888675),
-    p = n(705751),
-    m = n(985018),
-    f = n(234054);
+    d = n(809115),
+    u = n(888675),
+    m = n(705751),
+    _ = n(985018),
+    A = n(234054);
 
-function g(e) {
+function h(e) {
     let {
         message: t,
         compact: n,
-        usernameHook: i
-    } = e, g = (0, o.Ay)(t), _ = i(g), {
-        avatarSrc: h,
+        usernameHook: l
+    } = e, h = (0, o.Ay)(t), f = l(h), {
+        avatarSrc: E,
         eventHandlers: {
-            onMouseEnter: b,
-            onMouseLeave: y
+            onMouseEnter: g,
+            onMouseLeave: p
         }
-    } = (0, u.a)(!0);
-    return (0, r.jsx)("div", {
-        onMouseEnter: b,
-        onMouseLeave: y,
-        children: (0, r.jsx)(d.A, {
-            className: l()(f.rs, {
-                [f.oE]: n
+    } = (0, d.a)(!0);
+    return (0, i.jsx)("div", {
+        onMouseEnter: g,
+        onMouseLeave: p,
+        children: (0, i.jsx)(u.A, {
+            className: a()(A.rs, {
+                [A.oE]: n
             }),
-            iconNode: n ? null : (0, r.jsx)(u.l, {
-                src: h
+            iconNode: n ? null : (0, i.jsx)(d.l, {
+                src: E
             }),
-            iconContainerClassName: f.zc,
+            iconContainerClassName: A.zc,
             compact: n,
-            children: (0, r.jsxs)("div", {
-                className: l()(f.Qs, {
-                    [f.oE]: n
+            children: (0, i.jsxs)("div", {
+                className: a()(A.Qs, {
+                    [A.oE]: n
                 }),
-                children: [(0, r.jsx)(c.ix, {
+                children: [(0, i.jsx)(c.ix, {
                     message: t,
-                    messageClassname: f.he,
-                    className: l()(f.QV, f.he, {
-                        [f.oE]: n
+                    messageClassname: A.he,
+                    className: a()(A.QV, A.he, {
+                        [A.oE]: n
                     }),
-                    username: (0, r.jsxs)("div", {
-                        className: f.he,
-                        children: [(0, r.jsx)(a.Text, {
+                    username: (0, i.jsxs)("div", {
+                        className: A.he,
+                        children: [(0, i.jsx)(r.Text, {
                             variant: "text-md/normal",
                             color: "text-brand",
                             tag: "span",
-                            className: f.Xh,
-                            children: m.intl.string(m.t.hG1StD)
-                        }), (0, r.jsx)(s.A, {
-                            type: p.nu.SYSTEM_DM,
-                            className: f.Al
+                            className: A.Xh,
+                            children: _.intl.string(_.t.hG1StD)
+                        }), (0, i.jsx)(s.A, {
+                            type: m.nu.SYSTEM_DM,
+                            className: A.Al
                         })]
                     }),
                     compact: n,
                     showTimestamp: !0
-                }), (0, r.jsx)("div", {
-                    className: l()(f.__invalid_messageContent, {
-                        [f.oE]: n
+                }), (0, i.jsx)("div", {
+                    className: a()(A.__invalid_messageContent, {
+                        [A.oE]: n
                     }),
-                    children: m.intl.format(m.t.qntXNQ, {
-                        username: g.nick,
-                        usernameHook: _
+                    children: _.intl.format(_.t.qntXNQ, {
+                        username: h.nick,
+                        usernameHook: f
                     })
                 })]
             })

@@ -1,4 +1,4 @@
-/** chunk id: 544800, original params: e,t,r (module,exports,require) **/
-e.exports = {
+/** chunk id: 544800, original params: t,e,n (module,exports,require) **/
+t.exports = {
     Y: "spacing_a5537d"
 }

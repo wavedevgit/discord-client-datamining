@@ -1,11 +1,12 @@
 /** chunk id: 964459, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => l
+    A: () => s
 });
-var r = n(64700);
-let l = () => {
-    let e = r.useRef(!0);
-    return r.useEffect(() => () => {
+var i = n(64700);
+let s = () => {
+    let e = i.useRef(!0);
+    return i.useEffect(() => () => {
         e.current = !1
-    }, []), r.useCallback(() => e.current, [])
+    }, []), i.useCallback(() => e.current, [])
 }

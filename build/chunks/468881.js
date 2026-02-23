@@ -1,34 +1,49 @@
 /** chunk id: 468881, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    wC: () => N
+    wC: () => p
 });
 var n = i(934551),
     l = i(419954),
-    s = i(780964),
-    r = i(358776),
+    s = i(933297),
+    r = i(780964),
+    a = i(358776),
     u = i(805577),
-    a = i(41598),
-    o = i(640351),
-    d = i(623049),
-    T = i(661485),
-    A = i(581837),
-    S = i(666196),
-    c = i(654757),
-    E = i(556710),
-    g = i(531525),
-    _ = i(985018);
-let I = (0, l.t_)(s.X.ACCESSIBILITY_PANEL, {
-        useTitle: () => _.intl.string(_.t.G0neg7),
+    o = i(916335),
+    d = i(41598),
+    A = i(640351),
+    T = i(623049),
+    S = i(43119),
+    E = i(661485),
+    g = i(227373),
+    _ = i(581837),
+    c = i(666196),
+    I = i(654757),
+    N = i(556710),
+    C = i(305290),
+    O = i(8187),
+    L = i(531525),
+    b = i(985018);
+let D = (0, l.t_)(r.X.ACCESSIBILITY_PANEL, {
+        useTitle: () => b.intl.string(b.t.G0neg7),
         StronglyDiscouragedCustomComponent: u.Ay,
         buildLayout: () => []
     }),
-    O = (0, l.t_)(s.X.ACCESSIBILITY_PANEL, {
-        useTitle: () => _.intl.string(_.t.G0neg7),
-        buildLayout: () => [a.s, E._, A.b, c.T, T.V, S.G, o.v, d.T]
+    R = (0, l.t_)(r.X.ACCESSIBILITY_PANEL, {
+        useTitle: () => b.intl.string(b.t.G0neg7),
+        buildLayout: () => [d.s, N._, _.b, I.T, E.V, c.G, A.v, T.T]
     }),
-    N = (0, l.i4)(s.X.ACCESSIBILITY_SIDEBAR_ITEM, {
-        useTitle: () => _.intl.string(_.t.G0neg7),
-        getLegacySearchKey: () => (0, r.WJ)("AccessibilityPanel") ? void 0 : g.H.ACCESSIBILITY,
+    m = (0, l.t_)(r.X.ACCESSIBILITY_PANEL, {
+        useTitle: () => b.intl.string(b.t.G0neg7),
+        buildLayout: () => [C.U, O.P, g.c, I.T, S.X],
+        decoration: {
+            type: s.t9.STRONGLY_DISCOURAGED_CUSTOM,
+            component: o.A,
+            sticky: !0
+        }
+    }),
+    p = (0, l.i4)(r.X.ACCESSIBILITY_SIDEBAR_ITEM, {
+        useTitle: () => b.intl.string(b.t.G0neg7),
+        getLegacySearchKey: () => (0, a.WJ)("AccessibilityPanel") ? void 0 : L.H.ACCESSIBILITY,
         icon: n.AccessibilityIcon,
-        buildLayout: () => (0, r.WJ)("AccessibilityPanel") ? [O] : [I]
+        buildLayout: () => (0, a.Ci)("AccessibilityPanel") ? [m] : (0, a.WJ)("AccessibilityPanel") ? [R] : [D]
     })

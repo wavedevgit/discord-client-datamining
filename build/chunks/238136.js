@@ -1,5 +1,5 @@
 /** chunk id: 238136, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    i: () => l
+    i: () => a
 });
-var r, l = ((r = {}).USER = "user", r.ROLE = "role", r.CHANNEL = "channel", r)
+var l, a = ((l = {}).USER = "user", l.ROLE = "role", l.CHANNEL = "channel", l)

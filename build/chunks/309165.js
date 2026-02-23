@@ -1,9 +1,9 @@
 /** chunk id: 309165, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    lq: () => i
+    lq: () => s
 });
-let r = (0, n(600975).C)({
+let i = (0, n(600975).C)({
         kind: "user",
         id: "2025-09_one_time_login_client",
         label: "One Time Login",
@@ -18,7 +18,7 @@ let r = (0, n(600975).C)({
             }
         }]
     }),
-    i = e => r.useExperiment({
+    s = e => i.useExperiment({
         location: e
     }, {
         autoTrackExposure: !0

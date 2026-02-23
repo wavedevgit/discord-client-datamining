@@ -1,47 +1,47 @@
 /** chunk id: 399849, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => d
+    A: () => u
 });
-var l = n(627968);
+var i = n(627968);
 n(64700);
-var r = n(503698),
-    i = n.n(r),
+var l = n(503698),
+    s = n.n(l),
     a = n(990078),
-    s = n(397927),
+    r = n(397927),
     o = n(607407),
     c = n(985018),
-    u = n(707511);
+    d = n(707511);
 
-function d(e) {
+function u(e) {
     let {
         stream: t,
         isSmall: n,
-        selected: r,
-        isSelfStream: d
+        selected: l,
+        isSelfStream: u
     } = e;
-    return (0, l.jsxs)(l.Fragment, {
-        children: [(0, l.jsx)(o.A, {
-            className: i()(u.HL, u.gH),
+    return (0, i.jsxs)(i.Fragment, {
+        children: [(0, i.jsx)(o.A, {
+            className: s()(d.HL, d.gH),
             stream: t,
             noText: !0
-        }), !r && (0, l.jsxs)("div", {
-            className: i()(u.Qs, u.JK, {
-                [u.EX]: n
+        }), !l && (0, i.jsxs)("div", {
+            className: s()(d.Qs, d.JK, {
+                [d.EX]: n
             }),
-            children: [(0, l.jsx)(s.Text, {
-                className: u.gS,
+            children: [(0, i.jsx)(r.Text, {
+                className: d.gS,
                 color: "always-white",
                 variant: n ? "text-sm/semibold" : "text-md/semibold",
-                children: d ? c.intl.string(c.t.UeEwjy) : c.intl.string(c.t["1i3tSY"])
-            }), (0, l.jsx)(a.m, {
+                children: u ? c.intl.string(c.t.UeEwjy) : c.intl.string(c.t["1i3tSY"])
+            }), (0, i.jsx)(a.m, {
                 asContainer: !0,
-                text: d ? c.intl.string(c.t["ro/HN8"]) : c.intl.string(c.t.UPf6ZM),
-                children: (0, l.jsx)("div", {
-                    children: (0, l.jsx)(s.nkR, {
+                text: u ? c.intl.string(c.t["ro/HN8"]) : c.intl.string(c.t.UPf6ZM),
+                children: (0, i.jsx)("div", {
+                    children: (0, i.jsx)(r.nkR, {
                         size: "md",
                         color: "currentColor",
-                        className: u.uI,
-                        colorClass: u.g$
+                        className: d.uI,
+                        colorClass: d.g$
                     })
                 })
             })]

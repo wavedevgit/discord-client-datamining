@@ -1,103 +1,101 @@
 /** chunk id: 870006, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    u: () => v
-}), n(896048);
-var l = n(627968);
+    u: () => C
+});
+var i = n(627968);
 n(64700);
-var r = n(311907),
-    i = n(397927),
+var l = n(311907),
+    s = n(397927),
     a = n(793574),
-    s = n(688810),
+    r = n(688810),
     o = n(989985),
     c = n(206835),
-    u = n(961350),
-    d = n(696451),
+    d = n(961350),
+    u = n(696451),
     h = n(229527),
-    p = n(81400),
-    f = n(652215),
-    m = n(340837),
-    g = n(355097),
-    A = n(985018),
-    b = n(169880);
+    m = n(81400),
+    A = n(652215),
+    g = n(340837),
+    p = n(355097),
+    f = n(985018),
+    _ = n(169880);
 
-function _(e) {
-    var t;
+function E(e) {
     let {
-        guild: n
-    } = e, r = (0, c.A)({
-        scrollPosition: g._F.GUILD_TAG
+        guild: t
+    } = e, n = (0, c.A)({
+        scrollPosition: p._F.GUILD_TAG
     });
-    return (0, l.jsx)("div", {
-        children: (0, l.jsx)(o._, {
-            bannerIcon: (0, l.jsx)(i._mZ, {
+    return (0, i.jsx)("div", {
+        children: (0, i.jsx)(o._, {
+            bannerIcon: (0, i.jsx)(s._mZ, {
                 size: "lg",
                 color: "currentColor",
-                className: b.q3
+                className: _.q3
             }),
-            bannerHeader: A.intl.format(A.t.GgMwjk, {
-                guildName: null != (t = null == n ? void 0 : n.name) ? t : ""
+            bannerHeader: f.intl.format(f.t.GgMwjk, {
+                guildName: t?.name ?? ""
             }),
-            bannerSubtext: A.intl.string(A.t.ONjwD5),
-            textStyles: b.cI,
-            headerStyles: b.U_,
-            children: (0, l.jsx)(i.Button, {
+            bannerSubtext: f.intl.string(f.t.ONjwD5),
+            textStyles: _.cI,
+            headerStyles: _.U_,
+            children: (0, i.jsx)(s.Button, {
                 variant: "primary",
                 size: "sm",
-                text: A.intl.string(A.t.Viksoo),
-                onClick: () => r()
+                text: f.intl.string(f.t.Viksoo),
+                onClick: () => n()
             })
         })
     })
 }
 
-function y(e) {
-    var t, n;
+function x(e) {
     let {
-        guild: r
+        guild: t
     } = e, {
-        analyticsLocations: c
-    } = (0, s.Ay)(a.A.AUTOMOD_PROFILE_QUARANTINE_ALERT), [u, d] = (0, p.j8)({
-        guildId: null != (t = null == r ? void 0 : r.id) ? t : f.dJq,
-        analyticsLocations: c
-    }), h = d ? A.intl.string(A.t["9ph2v7"]) : A.intl.string(A.t.ldh9Cg), m = d ? A.intl.string(A.t["/PGQf0"]) : A.intl.string(A.t.WikgZ1);
-    return (0, l.jsx)("div", {
-        children: (0, l.jsx)(o._, {
-            bannerIcon: (0, l.jsx)(i._mZ, {
+        analyticsLocations: n
+    } = (0, r.Ay)(a.A.AUTOMOD_PROFILE_QUARANTINE_ALERT), [l, c] = (0, m.j8)({
+        guildId: t?.id ?? A.dJq,
+        analyticsLocations: n
+    }), d = c ? f.intl.string(f.t["9ph2v7"]) : f.intl.string(f.t.ldh9Cg), u = c ? f.intl.string(f.t["/PGQf0"]) : f.intl.string(f.t.WikgZ1);
+    return (0, i.jsx)("div", {
+        children: (0, i.jsx)(o._, {
+            bannerIcon: (0, i.jsx)(s._mZ, {
                 size: "lg",
                 color: "currentColor",
-                className: b.q3
+                className: _.q3
             }),
-            bannerHeader: A.intl.format(A.t.kcYdTq, {
-                guildName: null != (n = null == r ? void 0 : r.name) ? n : ""
+            bannerHeader: f.intl.format(f.t.kcYdTq, {
+                guildName: t?.name ?? ""
             }),
-            bannerSubtext: h,
-            textStyles: b.cI,
-            headerStyles: b.U_,
-            children: (0, l.jsx)(i.Button, {
+            bannerSubtext: d,
+            textStyles: _.cI,
+            headerStyles: _.U_,
+            children: (0, i.jsx)(s.Button, {
                 variant: "primary",
                 size: "sm",
-                text: m,
+                text: u,
                 onClick: () => {
-                    u()
+                    l()
                 }
             })
         })
     })
 }
 
-function v(e) {
+function C(e) {
     let {
         guild: t
-    } = e, n = (0, r.bG)([u.default, d.Ay], () => {
+    } = e, n = (0, l.bG)([d.default, u.Ay], () => {
         if (null == t) return new Set;
-        let e = u.default.getId();
-        return (0, h.wj)(d.Ay.getMember(t.id, e))
+        let e = d.default.getId();
+        return (0, h.wj)(u.Ay.getMember(t.id, e))
     }, [t]);
-    return n.has(m.D.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) || n.has(m.D.AUTOMOD_QUARANTINED_BIO) ? (0, l.jsx)(y, {
+    return n.has(g.D.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) || n.has(g.D.AUTOMOD_QUARANTINED_BIO) ? (0, i.jsx)(x, {
         guild: t
-    }) : n.has(m.D.AUTOMOD_QUARANTINED_SERVER_TAG) ? (0, l.jsx)(_, {
+    }) : n.has(g.D.AUTOMOD_QUARANTINED_SERVER_TAG) ? (0, i.jsx)(E, {
         guild: t
-    }) : (0, l.jsx)(y, {
+    }) : (0, i.jsx)(x, {
         guild: t
     })
 }

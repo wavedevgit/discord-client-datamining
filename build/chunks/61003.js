@@ -1,12 +1,11 @@
-/** chunk id: 61003, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    e: () => r
+/** chunk id: 61003, original params: e,a,l (module,exports,require) **/
+l.r(a), l.d(a, {
+    mfaPlaygroundConfig: () => t
 });
-let r = {
+let t = {
     collections: [{
         id: "mfa",
         name: "MFA",
-        groups: [n(35602).I]
+        groups: [l(35602).I]
     }]
 }

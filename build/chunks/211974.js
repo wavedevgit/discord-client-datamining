@@ -1,30 +1,30 @@
-/** chunk id: 211974, original params: A,t,e (module,exports,require) **/
-e.d(t, {
+/** chunk id: 211974, original params: A,v,h (module,exports,require) **/
+h.d(v, {
     V: () => f
 });
-var g = e(310784),
-    r = e.n(g);
+var g = h(310784),
+    B = h.n(g);
 
-function v(A, t, e) {
-    if (!r().valid(t)) return A.map(() => "#000000");
-    let g = r()(t),
-        v = g.luminance();
-    return A.map((A, t) => g.luminance((A * e[t].base + v * e[t].tint) / (e[t].base + e[t].tint)).hex())
+function C(A, v, h) {
+    if (!B().valid(v)) return A.map(() => "#000000");
+    let g = B()(v),
+        C = g.luminance();
+    return A.map((A, v) => g.luminance((A * h[v].base + C * h[v].tint) / (h[v].base + h[v].tint)).hex())
 }
 
 function f(A) {
     let {
-        primaryBaseColors: t,
-        primaryTintColor: e,
+        primaryBaseColors: v,
+        primaryTintColor: h,
         primaryTintLuminances: g,
-        primaryLuminanceWeights: r,
+        primaryLuminanceWeights: B,
         secondaryBaseColors: f,
-        secondaryTintColor: B,
-        secondaryTintLuminances: h,
-        secondaryLuminanceWeights: n
-    } = A, l = null != e ? v(g, e, r) : t, C = [];
-    return null != f && null != h && null != n && (C = null != B ? v(h, B, n) : f), {
-        primaryColorsTransformed: l,
-        secondaryColorsTransformed: C
+        secondaryTintColor: M,
+        secondaryTintLuminances: H,
+        secondaryLuminanceWeights: Q
+    } = A, w = null != h ? C(g, h, B) : v, t = [];
+    return null != f && null != H && null != Q && (t = null != M ? C(H, M, Q) : f), {
+        primaryColorsTransformed: w,
+        secondaryColorsTransformed: t
     }
 }

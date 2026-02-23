@@ -1,36 +1,33 @@
 /** chunk id: 110234, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => i
+    A: () => s
 });
-var l = n(51082),
-    r = n(806931);
+var i = n(51082),
+    l = n(806931);
 
-function i(e, t) {
-    var n, i;
-    let a = null,
+function s(e, t) {
+    let n = null,
         s = null,
-        o = null,
-        c = !1,
-        u = !1,
-        d = !1;
+        a = null,
+        r = !1,
+        o = !1;
     switch (e.type) {
-        case r.lp.ACTIVITY:
+        case l.lp.ACTIVITY:
             break;
-        case r.lp.USER:
-            a = e.streamId, o = e.voiceState, c = e.speaking, u = e.latched, d = e.ringing;
+        case l.lp.USER:
+            n = e.streamId, a = e.voiceState, r = e.speaking, o = e.ringing;
             break;
-        case r.lp.STREAM:
-            a = e.streamId, s = e.stream
+        case l.lp.STREAM:
+            n = e.streamId, s = e.stream
     }
     return {
-        streamId: a,
+        streamId: n,
         stream: s,
-        speaking: c,
-        latched: u,
-        ringing: d,
-        muted: null != (n = null == o ? void 0 : o.isVoiceMuted()) && n,
-        deafen: null != (i = null == o ? void 0 : o.isVoiceDeafened()) && i,
-        mirror: e.type === r.lp.USER && e.user.id === t,
-        hasVideo: (0, l.Ay)(e)
+        speaking: r,
+        ringing: o,
+        muted: a?.isVoiceMuted() ?? !1,
+        deafen: a?.isVoiceDeafened() ?? !1,
+        mirror: e.type === l.lp.USER && e.user.id === t,
+        hasVideo: (0, i.Ay)(e)
     }
 }

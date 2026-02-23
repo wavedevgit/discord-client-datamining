@@ -1,24 +1,24 @@
 /** chunk id: 754333, original params: t,e,n (module,exports,require) **/
 n.d(e, {
-    Y: () => d,
-    r: () => u
-}), n(896048), n(638769);
-var r = n(64700),
-    i = n(989349),
-    s = n.n(i),
-    a = n(311907),
-    c = n(961350),
-    o = n(620733),
-    l = n(985018);
+    Y: () => u,
+    r: () => d
+});
+var i = n(64700),
+    s = n(989349),
+    a = n.n(s),
+    r = n(311907),
+    l = n(961350),
+    c = n(620733),
+    o = n(985018);
 
-function u() {
-    let t = (0, a.cf)([o.A], () => o.A.getSessions());
-    return r.useMemo(() => {
+function d() {
+    let t = (0, r.cf)([c.A], () => c.A.getSessions());
+    return i.useMemo(() => {
         let e = [...t],
             n = null,
-            r = c.default.getAuthSessionIdHash();
-        if (null != r) {
-            let t = e.findIndex(t => t.id_hash === r);
+            i = l.default.getAuthSessionIdHash();
+        if (null != i) {
+            let t = e.findIndex(t => t.id_hash === i);
             t >= 0 && (n = e.splice(t, 1)[0])
         }
         return e.sort((t, e) => e.approx_last_used_time.valueOf() - t.approx_last_used_time.valueOf()), {
@@ -28,6 +28,6 @@ function u() {
     }, [t])
 }
 
-function d(t) {
-    return (Date.now() - t.valueOf()) / 1e3 / 60 / 60 < 1 ? l.intl.string(l.t.TXCmfL) : s()(t).fromNow()
+function u(t) {
+    return (Date.now() - t.valueOf()) / 1e3 / 60 / 60 < 1 ? o.intl.string(o.t.TXCmfL) : a()(t).fromNow()
 }

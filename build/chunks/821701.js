@@ -1,15 +1,15 @@
-/** chunk id: 821701, original params: e,t,r (module,exports,require) **/
-r.d(t, {
-    A: () => s
-}), r(896048);
-var n = r(417597),
-    l = r(590180),
-    i = r(4227);
-let s = e => {
-    let [t, r] = (0, n.yK)([l.A], () => [l.A.getCategoryForProduct(e), l.A.getProduct(e)]);
+/** chunk id: 821701, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    A: () => l
+});
+var r = n(417597),
+    i = n(590180),
+    s = n(4227);
+let l = e => {
+    let [t, n] = (0, r.yK)([i.A], () => [i.A.getCategoryForProduct(e), i.A.getProduct(e)]);
     return {
         category: t,
-        product: r,
-        purchase: (0, n.bG)([i.A], () => i.A.getPurchase(e))
+        product: n,
+        purchase: (0, r.bG)([s.A], () => s.A.getPurchase(e))
     }
 }

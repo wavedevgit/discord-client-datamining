@@ -2,19 +2,18 @@
 n.d(t, {
     T: () => l
 });
-var r = n(355443),
-    i = n(672162);
+var i = n(355443),
+    r = n(672162);
 
 function l(e, t) {
-    var n;
     let {
-        scope: l,
-        handler: a
-    } = t, s = {
-        scope: l,
-        handler: a
-    }, o = null == (n = r.H[e]) ? void 0 : n.request, c = null;
-    return null != o && (s.validation = function(e) {
-        return null == c && (c = (0, i.k5)(e.object(o(e)))), c
-    }), s
+        scope: n,
+        handler: l
+    } = t, a = {
+        scope: n,
+        handler: l
+    }, s = i.H[e]?.request, o = null;
+    return null != s && (a.validation = function(e) {
+        return null == o && (o = (0, r.k5)(e.object(s(e)))), o
+    }), a
 }

@@ -1,42 +1,38 @@
-/** chunk id: 10088, original params: e,t,r (module,exports,require) **/
-r.d(t, {
-    A: () => f
+/** chunk id: 10088, original params: a,l,s (module,exports,require) **/
+s.d(l, {
+    A: () => d
 });
-var n, o, l = r(311907),
-    c = r(73153),
-    u = r(652215);
+var t = s(311907),
+    c = s(73153),
+    e = s(652215);
 let i = null,
-    a = {};
-class p extends(o = l.Ay.Store) {
-    getState(e) {
-        return a[e]
+    f = {};
+class r extends t.Ay.Store {
+    static displayName = "CodedLinkNativeAppStateStore";
+    getState(a) {
+        return f[a]
     }
     getHighestState() {
         return i
     }
-}(n = "displayName") in p ? Object.defineProperty(p, n, {
-    value: "CodedLinkNativeAppStateStore",
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
-}) : p[n] = "CodedLinkNativeAppStateStore";
-let f = new p(c.h, {
-    NATIVE_APP_MODAL_OPENING: function(e) {
+}
+let d = new r(c.h, {
+    NATIVE_APP_MODAL_OPENING: function(a) {
         let {
-            code: t
-        } = e;
-        a[t] = u.fAW.OPENING, null === i && (i = u.fAW.OPENING)
+            code: l
+        } = a;
+        f[l] = e.fAW.OPENING, null === i && (i = e.fAW.OPENING)
     },
-    NATIVE_APP_MODAL_OPENED: function(e) {
+    NATIVE_APP_MODAL_OPENED: function(a) {
         let {
-            code: t
-        } = e;
-        a[t] = u.fAW.OPEN, i = u.fAW.OPEN
+            code: l
+        } = a;
+        f[l] = e.fAW.OPEN, i = e.fAW.OPEN
     },
-    NATIVE_APP_MODAL_OPEN_FAILED: function(e) {
+    NATIVE_APP_MODAL_OPEN_FAILED: function(a) {
         let {
-            code: t
-        } = e;
-        a[t] = u.fAW.OPEN_FAIL, (null === i || i === u.fAW.OPENING) && (i = u.fAW.OPEN_FAIL)
+            code: l
+        } = a;
+        f[l] = e.fAW.OPEN_FAIL, (null === i || i === e.fAW.OPENING) && (i = e.fAW.OPEN_FAIL)
     }
 })

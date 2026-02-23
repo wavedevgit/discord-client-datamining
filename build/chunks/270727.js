@@ -1,73 +1,13 @@
-/** chunk id: 270727, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    h2: () => h
-}), n(896048);
-var r = n(627968),
-    i = n(64700),
-    a = n(732955),
-    o = n(448362),
-    s = n(749226);
-
-function l(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-
-function c(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            l(e, t, n[t])
-        })
-    }
-    return e
-}
-
-function u(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-        var r = Object.getOwnPropertySymbols(e);
-        t && (r = r.filter(function(t) {
-            return Object.getOwnPropertyDescriptor(e, t).enumerable
-        })), n.push.apply(n, r)
-    }
-    return n
-}
-
-function d(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : u(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-
-function f(e, t) {
-    if (null == e) return {};
-    var n, r, i, a = {};
-    if ("u" > typeof Reflect && Reflect.ownKeys) {
-        for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
-        return a
-    }
-    if (a = p(e, t), Object.getOwnPropertySymbols)
-        for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
-    return a
-}
-
-function p(e, t) {
-    if (null == e) return {};
-    var n, r, i = {},
-        a = Object.getOwnPropertyNames(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
-    return i
-}
-let _ = {
+/** chunk id: 270727, original params: e,t,l (module,exports,require) **/
+l.d(t, {
+    h2: () => u
+});
+var a = l(627968),
+    n = l(64700),
+    r = l(732955),
+    i = l(448362),
+    s = l(749226);
+let o = {
         balance: {
             label: "Balance",
             type: "number",
@@ -78,12 +18,12 @@ let _ = {
             type: "select",
             options: [{
                 label: "Default",
-                value: o.k7.DEFAULT
+                value: i.k7.DEFAULT
             }, {
                 label: "Selected",
-                value: o.k7.SELECTED
+                value: i.k7.SELECTED
             }],
-            defaultValue: o.k7.DEFAULT
+            defaultValue: i.k7.DEFAULT
         },
         showNotificationBadge: {
             label: "Show Notification Badge",
@@ -101,7 +41,7 @@ let _ = {
             defaultValue: !1
         }
     },
-    h = {
+    u = {
         title: "Balance Widget Pill",
         stories: [{
             name: "Balance Widget Pill",
@@ -109,59 +49,65 @@ let _ = {
             component: e => {
                 let {
                     loading: t,
-                    shouldUseTabularNums: n
-                } = e, l = f(e, ["loading", "shouldUseTabularNums"]), [u, p] = (0, i.useState)(l.balance);
-                return (0, i.useEffect)(() => {
-                    null == u && null != l.balance && p(l.balance)
-                }, [l.balance, u]), (0, r.jsxs)("div", {
+                    shouldUseTabularNums: l,
+                    ...o
+                } = e, [u, c] = (0, n.useState)(o.balance);
+                return (0, n.useEffect)(() => {
+                    null == u && null != o.balance && c(o.balance)
+                }, [o.balance, u]), (0, a.jsxs)("div", {
                     className: s.YG,
-                    children: [(0, r.jsx)(o.Gy, d(c({}, l), {
+                    children: [(0, a.jsx)(i.Gy, {
+                        ...o,
                         balance: t ? null : u,
-                        className: n ? s.jG : void 0
-                    })), (0, r.jsx)(a.$nd, {
-                        onClick: () => p(l.balance),
+                        className: l ? s.jG : void 0
+                    }), (0, a.jsx)(r.$nd, {
+                        onClick: () => c(o.balance),
                         text: "Update Balance"
                     })]
                 })
             },
-            controls: c({
+            controls: {
                 loading: {
                     label: "Loading",
                     type: "boolean",
                     defaultValue: !1
-                }
-            }, _)
+                },
+                ...o
+            }
         }, {
             name: "Balance Widget Pill Loading State",
             id: "balance-widget-pill-loading",
             component: e => {
                 let {
                     loadingDuration: t,
-                    shouldUseTabularNums: n
-                } = e, l = f(e, ["loadingDuration", "shouldUseTabularNums"]), [u, p] = (0, i.useState)(l.balance);
-                return (0, i.useEffect)(() => {
-                    p(l.balance)
-                }, [l.balance]), (0, r.jsxs)("div", {
+                    shouldUseTabularNums: l,
+                    ...o
+                } = e, [u, c] = (0, n.useState)(o.balance);
+                return (0, n.useEffect)(() => {
+                    c(o.balance)
+                }, [o.balance]), (0, a.jsxs)("div", {
                     className: s.YG,
-                    children: [(0, r.jsx)(o.Gy, d(c({}, l), {
+                    children: [(0, a.jsx)(i.Gy, {
+                        ...o,
                         balance: u,
-                        className: n ? s.jG : void 0
-                    })), (0, r.jsx)(a.$nd, {
+                        className: l ? s.jG : void 0
+                    }), (0, a.jsx)(r.$nd, {
                         onClick: () => {
-                            p(null), setTimeout(() => {
-                                p(l.balance)
+                            c(null), setTimeout(() => {
+                                c(o.balance)
                             }, t)
                         },
                         text: "Simulate Loading State"
                     })]
                 })
             },
-            controls: c({
+            controls: {
                 loadingDuration: {
                     label: "Loading Duration (ms)",
                     type: "number",
                     defaultValue: 500
-                }
-            }, _)
+                },
+                ...o
+            }
         }]
     }

@@ -6,27 +6,27 @@ var n = i(827343),
     l = i(419954),
     s = i(430452),
     r = i(780964),
-    u = i(903427),
-    a = i(652215),
+    a = i(903427),
+    u = i(652215),
     o = i(985018);
 let d = (0, l.sN)(r.X.VOICE_PUSH_TO_TALK_RELEASE_DELAY_SETTING, {
     useTitle: () => o.intl.string(o.t.GCNMM8),
     useSearchTerms: () => [o.intl.string(o.t["pS+K2L"]), o.intl.string(o.t.nuFtHH)],
     setValue: function(t) {
-        n.A.setMode(a.TBI.PUSH_TO_TALK, {
+        n.A.setMode(u.TBI.PUSH_TO_TALK, {
             delay: t
         })
     },
     minValue: 0,
-    maxValue: a.IjB,
+    maxValue: u.IjB,
     getInitialValue: function() {
         let {
             delay: t
-        } = s.A.getModeOptions();
+        } = s.Ay.getModeOptions();
         return t
     },
     onValueRender: function(t) {
-        return t >= 1e3 ? (t /= 1e3, "".concat(t.toFixed(2), "s")) : "".concat(t.toFixed(0), "\xa0ms")
+        return t >= 1e3 ? (t /= 1e3, `${t.toFixed(2)}s`) : `${t.toFixed(0)}\u00A0ms`
     },
-    usePredicate: u.P
+    usePredicate: a.P
 })

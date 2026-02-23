@@ -1,10 +1,10 @@
 /** chunk id: 82005, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    C: () => c
+    C: () => d
 }), n(64700);
-var r = n(311907);
+var i = n(311907);
 n(63995), n(113783), n(69407);
-var i = n(446600),
+var r = n(446600),
     l = n(624265);
 n(616356);
 var a = n(734057);
@@ -13,26 +13,25 @@ var s = n(473019);
 n(539446);
 var o = n(508654);
 
-function c(e) {
-    var t;
-    let n = (0, l.Ay)(e),
-        c = a.A.getChannel(null == (t = n[0]) ? void 0 : t.id),
-        u = (0, r.bG)([i.A], () => i.A.getStageInstanceByChannel(null == c ? void 0 : c.id), [c]),
-        d = (0, o.BP)(e),
+function d(e) {
+    let t = (0, l.Ay)(e),
+        n = a.A.getChannel(t[0]?.id),
+        d = (0, i.bG)([r.A], () => r.A.getStageInstanceByChannel(n?.id), [n]),
+        c = (0, o.BP)(e),
         {
-            isStageNoticeHidden: p,
-            isEventNoticeHidden: h
-        } = (0, r.cf)([s.A], () => ({
+            isStageNoticeHidden: u,
+            isEventNoticeHidden: A
+        } = (0, i.cf)([s.A], () => ({
             isStageNoticeHidden: s.A.isLiveChannelNoticeHidden({
-                stageId: null == u ? void 0 : u.id
+                stageId: d?.id
             }),
             isEventNoticeHidden: s.A.isLiveChannelNoticeHidden({
-                eventId: null == d ? void 0 : d.id
+                eventId: c?.id
             })
-        }), [u, d]);
-    if (null != d)
-        if (null != u) return !p;
-        else return !h;
-    return null != u && !p
+        }), [d, c]);
+    if (null != c)
+        if (null != d) return !u;
+        else return !A;
+    return null != d && !u
 }
 n(988794), n(818348)

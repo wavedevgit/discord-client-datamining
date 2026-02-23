@@ -1,36 +1,32 @@
-/** chunk id: 294819, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    k: () => l
+/** chunk id: 294819, original params: e,a,t (module,exports,require) **/
+t.d(a, {
+    k: () => u
 });
-var r = n(908909),
-    i = n(853590),
-    a = n(47276),
-    o = n(64700);
+var r = t(908909),
+    n = t(853590),
+    i = t(47276),
+    o = t(64700);
 
-function s(e) {
-    return e && e.__esModule ? e.default : e
-}
-
-function l() {
+function u() {
+    var e;
     let {
-        locale: e
-    } = (0, i.Y)(), t = (0, a.e)(s(r.A), "@react-aria/datepicker");
+        locale: a
+    } = (0, n.Y)(), t = (0, i.e)((e = r.A) && e.__esModule ? e.default : e, "@react-aria/datepicker");
     return (0, o.useMemo)(() => {
         try {
-            return new Intl.DisplayNames(e, {
+            return new Intl.DisplayNames(a, {
                 type: "dateTimeField"
             })
         } catch {
-            return new c(e, t)
+            return new l(a, t)
         }
-    }, [e, t])
+    }, [a, t])
 }
-class c {
+class l {
     of(e) {
         return this.dictionary.getStringForLocale(e, this.locale)
     }
-    constructor(e, t) {
-        this.locale = e, this.dictionary = t
+    constructor(e, a) {
+        this.locale = e, this.dictionary = a
     }
 }

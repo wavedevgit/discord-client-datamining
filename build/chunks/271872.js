@@ -1,31 +1,30 @@
-/** chunk id: 271872, original params: e,t,r (module,exports,require) **/
+/** chunk id: 271872, original params: e,t,s (module,exports,require) **/
 "use strict";
-r.d(t, {
-    A: () => f
+s.d(t, {
+    A: () => p
 });
-var n = r(562465),
-    s = r(47167),
-    o = r(71393),
-    i = r(430452),
-    l = r(994500),
-    a = r(287809),
-    c = r(544105),
-    d = r(652215),
-    u = r(985018);
+var r = s(562465),
+    i = s(47167),
+    n = s(71393),
+    a = s(430452),
+    o = s(994500),
+    l = s(287809),
+    c = s(544105),
+    d = s(652215),
+    u = s(985018);
 
-function f(e, t) {
-    var r;
+function p(e, t) {
     let {
-        nonce: f,
+        nonce: s,
         forQRCode: p
-    } = t, m = e.getGuildId(), x = o.A.getGuild(m), y = (0, c.hw)({
-        guildId: null != m ? m : d.D0I,
+    } = t, f = e.getGuildId(), m = n.A.getGuild(f), _ = (0, c.hw)({
+        guildId: f ?? d.D0I,
         channelId: e.id,
-        channelName: (0, s.m1)(e, a.default, l.A),
-        guildName: null != (r = null == x ? void 0 : x.name) ? r : u.intl.string(u.t.LJpTRF),
-        muted: i.A.isSelfMute(),
-        deafened: i.A.isSelfDeaf(),
-        nonce: f
+        channelName: (0, i.m1)(e, l.default, o.A),
+        guildName: m?.name ?? u.intl.string(u.t.LJpTRF),
+        muted: a.Ay.isSelfMute(),
+        deafened: a.Ay.isSelfDeaf(),
+        nonce: s
     });
-    return p ? "".concat((0, n.TP)()).concat(d.Rsh.XBOX_HANDOFF, "?").concat(y.toString()) : "".concat(c.Gp, "?").concat(y.toString())
+    return p ? `${(0,r.TP)()}${d.Rsh.XBOX_HANDOFF}?${_.toString()}` : `${c.Gp}?${_.toString()}`
 }

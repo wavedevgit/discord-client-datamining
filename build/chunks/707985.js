@@ -1,22 +1,22 @@
-/** chunk id: 707985, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => i
+/** chunk id: 707985, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    A: () => n
 });
 
-function i(e) {
+function n(e) {
     let {
         channel: t,
-        canChat: n,
-        renderReactions: i,
+        canChat: i,
+        renderReactions: n,
         canAddNewReactions: l,
-        isLurking: r,
-        communicationDisabled: o,
-        isActiveChannelOrUnarchivableThread: a,
-        isAutomodQuarantined: s
-    } = e, u = t.isPrivate(), c = t.isSystemDM(), d = (n || u) && a;
+        isLurking: a,
+        communicationDisabled: s,
+        isActiveChannelOrUnarchivableThread: r,
+        isAutomodQuarantined: o
+    } = e, u = t.isPrivate(), d = t.isSystemDM(), c = (i || u) && r;
     return {
-        disableReactionReads: !i,
-        disableReactionCreates: r || !d || !((!0 === l || u) && !c && a),
-        disableReactionUpdates: r || !d || !0 === o || !0 === s
+        disableReactionReads: !n,
+        disableReactionCreates: a || !c || !((!0 === l || u) && !d && r),
+        disableReactionUpdates: a || !c || !0 === s || !0 === o
     }
 }

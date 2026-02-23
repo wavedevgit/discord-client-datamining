@@ -1,15 +1,16 @@
 /** chunk id: 916641, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => i
+    A: () => l
 });
-var r = n(544105),
-    l = n(985018);
+var i = n(544105),
+    s = n(985018);
 
-function i(e) {
+function l(e) {
     switch (e) {
-        case r.f$.XBOX:
-            return l.intl.string(l.t.T0uYK9);
-        case r.f$.PLAYSTATION:
-            return l.intl.string(l.t.FWAzS6)
+        case i.f$.XBOX:
+            return s.intl.string(s.t.T0uYK9);
+        case i.f$.PLAYSTATION:
+            return s.intl.string(s.t.FWAzS6)
     }
 }

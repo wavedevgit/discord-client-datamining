@@ -1,63 +1,62 @@
 /** chunk id: 105130, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    M: () => d
+    M: () => u
 });
-var r = n(933958),
-    i = n(663278),
+var i = n(933958),
+    r = n(663278),
     l = n(91242),
     a = n(859703),
     s = n(792620);
 n(590889);
 var o = n(592653),
-    c = n(652215),
-    u = n(360469);
+    d = n(652215),
+    c = n(360469);
 
-function d(e, t, n) {
-    var d, p, h, f, g, m, A, _;
+function u(e, t, n) {
     switch (t) {
-        case c.ZE4.ACTIVITY_PIP_MODE_UPDATE: {
-            let t = null == (d = e.application) ? void 0 : d.id,
-                n = null != t ? r.Ay.getLayoutModeForApp(t) : null;
+        case d.ZE4.ACTIVITY_PIP_MODE_UPDATE: {
+            let t = e.application?.id,
+                n = null != t ? i.Ay.getLayoutModeForApp(t) : null;
             return null != n ? {
-                is_pip_mode: n !== u.bN.FOCUSED
+                is_pip_mode: n !== c.bN.FOCUSED
             } : null
         }
-        case c.ZE4.ACTIVITY_LAYOUT_MODE_UPDATE: {
-            let t = null == (p = e.application) ? void 0 : p.id,
-                n = null != t ? r.Ay.getLayoutModeForApp(t) : null;
+        case d.ZE4.ACTIVITY_LAYOUT_MODE_UPDATE: {
+            let t = e.application?.id,
+                n = null != t ? i.Ay.getLayoutModeForApp(t) : null;
             return null != n ? {
                 layout_mode: n
             } : null
         }
-        case c.ZE4.FRAME_LAYOUT_MODE_UPDATE: {
-            let t = null != (null == (h = e.application) ? void 0 : h.id) ? null == (f = l.A.getConnectedFrame()) ? void 0 : f.layoutMode : null;
+        case d.ZE4.FRAME_LAYOUT_MODE_UPDATE: {
+            let t = null != e.application?.id ? l.A.getConnectedFrame()?.layoutMode : null;
             return null != t ? {
                 layout_mode: t
             } : null
         }
-        case c.ZE4.THERMAL_STATE_UPDATE: {
-            let e = (0, i.zw)();
-            if (e === i.MW.UNHANDLED) return null;
+        case d.ZE4.THERMAL_STATE_UPDATE: {
+            let e = (0, r.zw)();
+            if (e === r.MW.UNHANDLED) return null;
             return {
                 thermal_state: e
             }
         }
-        case c.ZE4.ORIENTATION_UPDATE:
+        case d.ZE4.ORIENTATION_UPDATE:
             return null;
-        case c.ZE4.ACTIVITY_INSTANCE_PARTICIPANTS_UPDATE:
+        case d.ZE4.ACTIVITY_INSTANCE_PARTICIPANTS_UPDATE:
             return (0, o.Y$)();
-        case c.ZE4.QUEST_ENROLLMENT_STATUS_UPDATE: {
+        case d.ZE4.QUEST_ENROLLMENT_STATUS_UPDATE: {
             let {
                 quest_id: t
             } = n;
             if (!t) return null;
-            let r = a.A.getQuest(t),
-                i = (0, s.TP)(r);
-            if (null == r || null == i || i !== (null == (m = e.application) ? void 0 : m.id)) return null;
+            let i = a.A.getQuest(t),
+                r = (0, s.TP)(i);
+            if (null == i || null == r || r !== e.application?.id) return null;
             return {
                 quest_id: t,
-                is_enrolled: (null == (A = r.userStatus) ? void 0 : A.enrolledAt) != null,
-                enrolled_at: null != (g = null == (_ = r.userStatus) ? void 0 : _.enrolledAt) ? g : null
+                is_enrolled: i.userStatus?.enrolledAt != null,
+                enrolled_at: i.userStatus?.enrolledAt ?? null
             }
         }
         default:

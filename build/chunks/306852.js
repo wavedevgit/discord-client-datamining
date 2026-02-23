@@ -1,80 +1,80 @@
 /** chunk id: 306852, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => y
-}), n(896048);
-var r = n(627968),
-    l = n(64700),
-    i = n(503698),
-    s = n.n(i),
+    A: () => x
+});
+var i = n(627968),
+    s = n(64700),
+    l = n(503698),
+    r = n.n(l),
     a = n(311907),
     o = n(506774),
     c = n(31728),
-    u = n(164617),
-    d = n(205297),
-    p = n(334463),
-    h = n(175203),
-    g = n(652215),
-    f = n(806931),
+    d = n(164617),
+    u = n(205297),
+    h = n(334463),
+    A = n(175203),
+    p = n(652215),
+    g = n(806931),
     m = n(697166),
-    b = n(976092);
-let A = "CameraPreviewPosition";
+    _ = n(976092);
+let f = "CameraPreviewPosition";
 
-function y(e) {
+function x(e) {
     let {
         width: t,
         onContextMenuParticipant: n,
-        height: i,
-        channel: y,
-        participants: O,
-        onSelectParticipant: j
-    } = e, [x, _] = function() {
-        let [e, t] = l.useState(() => o.w.get(A, g.CUs.BOTTOM_RIGHT));
-        return [e, l.useCallback(e => {
-            o.w.set(A, e), t(e)
+        height: l,
+        channel: x,
+        participants: C,
+        onSelectParticipant: E
+    } = e, [I, b] = function() {
+        let [e, t] = s.useState(() => o.w.get(f, p.CUs.BOTTOM_RIGHT));
+        return [e, s.useCallback(e => {
+            o.w.set(f, e), t(e)
         }, [])]
-    }(), v = l.useRef(null), E = null == y.getGuildId() ? 70 : 50, C = (0, a.bG)([p.A], () => p.A.pipWidth(f.R8.CAMERA_PREVIEW)), S = O.length, I = C * S + 8 * (S - 1), N = l.useMemo(() => ({
-        minWidth: f.mn[f.R8.CAMERA_PREVIEW] * S + 8 * (S - 1),
-        maxWidth: f.cF[f.R8.CAMERA_PREVIEW] * S + 8 * (S - 1)
-    }), [S]);
-    l.useLayoutEffect(() => {
-        var e;
-        null == (e = v.current) || e.ensureIsInPosition()
-    }, [O.length]);
-    let T = l.useCallback(e => {
-            let t = 0 === S ? e : (e - 8 * (S - 1)) / S;
-            c.EB(t, f.R8.CAMERA_PREVIEW)
-        }, [S]),
-        P = l.useCallback((e, t) => {
-            _(t)
-        }, [_]);
-    return (0, r.jsx)("div", {
+    }(), N = s.useRef(null), S = null == x.getGuildId() ? 70 : 50, T = (0, a.bG)([h.A], () => h.A.pipWidth(g.R8.CAMERA_PREVIEW)), y = C.length, v = T * y + 8 * (y - 1), j = s.useMemo(() => ({
+        minWidth: g.mn[g.R8.CAMERA_PREVIEW] * y + 8 * (y - 1),
+        maxWidth: g.cF[g.R8.CAMERA_PREVIEW] * y + 8 * (y - 1)
+    }), [y]);
+    s.useLayoutEffect(() => {
+        N.current?.ensureIsInPosition()
+    }, [C.length]);
+    let R = s.useCallback(e => {
+            let t = 0 === y ? e : (e - 8 * (y - 1)) / y;
+            c.EB(t, g.R8.CAMERA_PREVIEW)
+        }, [y]),
+        O = s.useCallback((e, t) => {
+            b(t)
+        }, [b]);
+    return (0, i.jsx)("div", {
         className: m.kL,
-        children: (0, r.jsx)(d.S, {
-            position: x,
+        children: (0, i.jsx)(u.S, {
+            position: I,
             id: 0,
-            width: I,
-            ref: v,
-            onMove: P,
-            onResize: T,
+            width: v,
+            ref: N,
+            onMove: O,
+            onResize: R,
             maxX: t,
-            maxY: i,
-            edgeOffsetTop: E,
+            maxY: l,
+            edgeOffsetTop: S,
             edgeOffsetBottom: 70,
             edgeOffsetLeft: 16,
             edgeOffsetRight: 16,
-            resizeConfig: N,
-            children: (0, r.jsx)("div", {
+            resizeConfig: j,
+            children: (0, i.jsx)("div", {
                 className: m.iA,
-                children: O.map(e => (0, r.jsx)(h.Ay, {
+                children: C.map(e => (0, i.jsx)(A.Ay, {
                     participant: e,
-                    channel: y,
+                    channel: x,
                     onContextMenu: n,
-                    className: s()(m.Vs, b.a8),
-                    fit: h.Yl.COVER,
+                    className: r()(m.Vs, _.a8),
+                    fit: A.Yl.COVER,
                     inCall: !0,
-                    popoutType: u.N.NO_POPOUT,
+                    popoutType: d.N.NO_POPOUT,
                     width: 160,
-                    onClick: j
+                    onClick: E
                 }, e.id))
             })
         })

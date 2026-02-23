@@ -1,77 +1,77 @@
 /** chunk id: 825869, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    v: () => f
+    v: () => _
 });
-var r = n(627968),
-    i = n(64700),
+var i = n(627968),
+    r = n(64700),
     l = n(397927),
     a = n(378570),
     s = n(138298),
     o = n(761640),
-    c = n(336590),
-    u = n(471271),
-    d = n(629199),
-    p = n(985018),
+    d = n(336590),
+    c = n(471271),
+    u = n(629199),
+    A = n(985018),
     h = n(173801);
 
-function f(e) {
+function _(e) {
     let {
         active: t,
         user: n,
-        channel: f
-    } = e, g = (0, c.k)(), m = i.useCallback(() => {
-        (0, l.showToast)((0, l.createToast)(p.intl.string(p.t["EDYbS+"]), l.ToastType.FAILURE))
-    }, []), A = i.useCallback(() => {
+        channel: _
+    } = e, m = (0, d.k)(), p = r.useCallback(() => {
+        (0, l.showToast)((0, l.createToast)(A.intl.string(A.t["EDYbS+"]), l.ToastType.FAILURE))
+    }, []), g = r.useCallback(() => {
         s.A.closeChannelSidebar(o.fe)
-    }, []), _ = i.useCallback(() => {
-        s.A.closeChannelSidebar(o.fe), g && (0, a.iN)(f.id)
-    }, [f.id, g]), {
-        acceptMessageRequest: b,
-        rejectMessageRequest: E,
-        isAcceptLoading: O,
-        isRejectLoading: y,
-        isUserProfileLoading: I,
-        isOptimisticAccepted: v,
-        isOptimisticRejected: S
-    } = (0, u.t)({
+    }, []), E = r.useCallback(() => {
+        s.A.closeChannelSidebar(o.fe), m && (0, a.iN)(_.id)
+    }, [_.id, m]), {
+        acceptMessageRequest: I,
+        rejectMessageRequest: f,
+        isAcceptLoading: C,
+        isRejectLoading: T,
+        isUserProfileLoading: N,
+        isOptimisticAccepted: S,
+        isOptimisticRejected: x
+    } = (0, c.t)({
         user: n,
-        onAcceptSuccess: _,
-        onRejectSuccess: A,
-        onError: m
-    }), C = O || y || I || v || S;
-    return (0, r.jsxs)("div", {
+        onAcceptSuccess: E,
+        onRejectSuccess: g,
+        onError: p
+    }), v = C || T || N || S || x;
+    return (0, i.jsxs)("div", {
         className: h.kL,
-        children: [(0, r.jsx)(d.A, {
-            channel: f,
+        children: [(0, i.jsx)(u.A, {
+            channel: _,
             otherUser: n,
             active: t
-        }), (0, r.jsxs)("div", {
+        }), (0, i.jsxs)("div", {
             className: h.o1,
-            children: [(0, r.jsx)("div", {
+            children: [(0, i.jsx)("div", {
                 "data-button-hoisted-classname-wrapper": !0,
                 className: h.x6,
-                children: (0, r.jsx)(l.Button, {
+                children: (0, i.jsx)(l.Button, {
                     variant: "secondary",
                     size: "sm",
-                    text: p.intl.string(p.t.B2nygW),
+                    text: A.intl.string(A.t.B2nygW),
                     onClick: e => {
-                        e.stopPropagation(), E(f.id)
+                        e.stopPropagation(), f(_.id)
                     },
-                    disabled: C,
-                    loading: y || S
+                    disabled: v,
+                    loading: T || x
                 })
-            }), (0, r.jsx)("div", {
+            }), (0, i.jsx)("div", {
                 "data-button-hoisted-classname-wrapper": !0,
                 className: h.x6,
-                children: (0, r.jsx)(l.Button, {
+                children: (0, i.jsx)(l.Button, {
                     variant: "primary",
                     size: "sm",
-                    text: p.intl.string(p.t.Kz8Pwr),
+                    text: A.intl.string(A.t.Kz8Pwr),
                     onClick: e => {
-                        e.stopPropagation(), b(f.id)
+                        e.stopPropagation(), I(_.id)
                     },
-                    disabled: C,
-                    loading: O || I || v
+                    disabled: v,
+                    loading: C || N || S
                 })
             })]
         })]

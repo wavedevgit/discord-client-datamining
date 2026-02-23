@@ -1,75 +1,74 @@
-/** chunk id: 878112, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    A: () => E
+/** chunk id: 878112, original params: t,e,a (module,exports,require) **/
+a.d(e, {
+    A: () => k
 });
-var r = n(627968),
-    i = n(64700),
-    a = n(575593),
-    o = n(635358),
-    s = n(990078),
-    l = n(397927),
-    c = n(688810),
-    u = n(44120),
-    d = n(954571),
-    f = n(440938),
-    p = n(238184),
-    _ = n(766172),
-    h = n(652215),
-    m = n(788868),
-    g = n(985018);
-let E = e => {
+var n = a(627968),
+    l = a(64700),
+    r = a(575593),
+    s = a(635358),
+    i = a(990078),
+    o = a(397927),
+    u = a(688810),
+    c = a(44120),
+    d = a(954571),
+    h = a(440938),
+    p = a(238184),
+    v = a(766172),
+    g = a(652215),
+    A = a(788868),
+    C = a(985018);
+let k = t => {
     let {
-        product: t,
-        primary: n,
-        selectedVariantIndex: E,
-        returnRef: y,
-        onSuccess: b,
-        tooltipDelay: O,
-        fullWidth: v = !1
-    } = e, {
-        analyticsLocations: A
-    } = (0, c.Ay)(), I = i.useRef(null), S = (0, f.uM)(), T = (0, p.A)(), C = e => {
-        e.stopPropagation(), d.default.track(h.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-            collectibles_shop_session_id: null == S ? void 0 : S.sessionId,
-            sku_id: t.skuId,
-            page_section: null == S ? void 0 : S.pageSection,
-            page_category: null == S ? void 0 : S.pageCategory,
-            tile_type: a.R[t.type],
-            tile_position: String(null == S ? void 0 : S.tilePosition),
+        product: e,
+        primary: a,
+        selectedVariantIndex: k,
+        returnRef: m,
+        onSuccess: x,
+        tooltipDelay: y,
+        fullWidth: b = !1
+    } = t, {
+        analyticsLocations: O
+    } = (0, u.Ay)(), _ = l.useRef(null), w = (0, h.uM)(), R = (0, p.A)(), f = t => {
+        t.stopPropagation(), d.default.track(g.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+            collectibles_shop_session_id: w?.sessionId,
+            sku_id: e.skuId,
+            page_section: w?.pageSection,
+            page_category: w?.pageCategory,
+            tile_type: r.R[e.type],
+            tile_position: String(w?.tilePosition),
             cta_name: "gift button",
-            page_type: T || "home"
-        }), (0, u.A)({
-            skuId: (0, _.Y)({
-                product: t,
-                selectedVariantIndex: E
+            page_type: R || "home"
+        }), (0, c.A)({
+            skuId: (0, v.Y)({
+                product: e,
+                selectedVariantIndex: k
             }),
             isGift: !0,
-            giftingOrigin: m.vQ.SHOP_PAGE,
-            analyticsLocations: A,
-            returnRef: y,
-            variantsReturnStyle: o.g.VARIANTS_GROUP,
-            onClose: null != b ? e => {
-                e && b()
+            giftingOrigin: A.vQ.SHOP_PAGE,
+            analyticsLocations: O,
+            returnRef: m,
+            variantsReturnStyle: s.g.VARIANTS_GROUP,
+            onClose: null != x ? t => {
+                t && x()
             } : void 0
         })
     };
-    return v ? (0, r.jsx)(l.Button, {
-        variant: n ? "primary" : "secondary",
-        icon: l.okO,
-        onClick: C,
-        text: g.intl.string(g.t.gmnzqM),
+    return b ? (0, n.jsx)(o.Button, {
+        variant: a ? "primary" : "secondary",
+        icon: o.okO,
+        onClick: f,
+        text: C.intl.string(C.t.gmnzqM),
         fullWidth: !0
-    }) : (0, r.jsx)(s.m, {
-        text: g.intl.string(g.t["JCFN/y"]),
-        delay: O,
-        children: (0, r.jsx)(l.K0, {
-            "aria-label": g.intl.string(g.t["JCFN/y"]),
-            buttonRef: I,
-            variant: n ? "primary" : "secondary",
-            icon: l.okO,
+    }) : (0, n.jsx)(i.m, {
+        text: C.intl.string(C.t["JCFN/y"]),
+        delay: y,
+        children: (0, n.jsx)(o.K0, {
+            "aria-label": C.intl.string(C.t["JCFN/y"]),
+            buttonRef: _,
+            variant: a ? "primary" : "secondary",
+            icon: o.okO,
             size: "md",
-            onClick: C
+            onClick: f
         })
     })
 }

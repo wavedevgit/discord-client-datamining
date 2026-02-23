@@ -1,37 +1,37 @@
-/** chunk id: 72563, original params: e,t,r (module,exports,require) **/
-r.d(t, {
-    i: () => o
+/** chunk id: 72563, original params: e,t,s (module,exports,require) **/
+s.d(t, {
+    i: () => u
 });
-var n = r(64700),
-    l = r(311907),
-    s = r(287809),
-    i = r(403362),
-    a = r(427262),
-    u = r(985018);
+var l = s(64700),
+    i = s(311907),
+    a = s(287809),
+    n = s(403362),
+    r = s(427262),
+    A = s(985018);
 
-function o(e) {
-    let t = (0, l.yK)([s.default], () => e.recipients.map(e => s.default.getUser(e)).filter(i.Vq).map(e => a.Ay.getName(e)));
-    return n.useMemo(() => {
+function u(e) {
+    let t = (0, i.yK)([a.default], () => e.recipients.map(e => a.default.getUser(e)).filter(n.Vq).map(e => r.Ay.getName(e)));
+    return l.useMemo(() => {
         if ("" === e.name) return null;
         if (0 === t.length) return null;
-        if (1 === t.length) return u.intl.formatToPlainString(u.t["J+Wpst"], {
+        if (1 === t.length) return A.intl.formatToPlainString(A.t["J+Wpst"], {
             first: t[0]
         });
-        if (2 === t.length) return u.intl.formatToPlainString(u.t.gwRP0Y, {
+        if (2 === t.length) return A.intl.formatToPlainString(A.t.gwRP0Y, {
             first: t[0],
             second: t[1]
         });
-        if (3 === t.length) return u.intl.formatToPlainString(u.t.QDB5et, {
+        if (3 === t.length) return A.intl.formatToPlainString(A.t.QDB5et, {
             first: t[0],
             second: t[1],
             third: t[2]
         });
-        let r = t.length - 3;
-        return u.intl.formatToPlainString(u.t.VYfueb, {
+        let s = t.length - 3;
+        return A.intl.formatToPlainString(A.t.VYfueb, {
             first: t[0],
             second: t[1],
             third: t[2],
-            count: r
+            count: s
         })
     }, [e, t])
 }

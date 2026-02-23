@@ -1,194 +1,153 @@
-/** chunk id: 159707, original params: e,t,r (module,exports,require) **/
-r.d(t, {
-    default: () => L
-}), r(896048);
-var n = r(627968),
-    i = r(64700),
-    a = r(284009),
-    o = r.n(a),
-    l = r(158954),
-    s = r(311907),
-    c = r(732955),
-    u = r(964486),
-    d = r(975807),
-    f = r(775602),
-    p = r(607470),
-    m = r(550111),
-    b = r(639289),
-    _ = r(976860),
-    O = r(287809),
-    P = r(954571),
-    S = r(676279),
-    g = r(677185),
-    I = r(88001),
-    y = r(652215),
-    x = r(519412),
-    h = r(985018),
-    N = r(329491),
-    j = r(42085),
-    E = r(49402),
-    w = r(27753),
-    C = r(136300);
-
-function T(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var r = null != arguments[t] ? arguments[t] : {},
-            n = Object.keys(r);
-        "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(r, e).enumerable
-        }))), n.forEach(function(t) {
-            var n;
-            n = r[t], t in e ? Object.defineProperty(e, t, {
-                value: n,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = n
-        })
-    }
-    return e
-}
-
-function U(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-        var r = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var n = Object.getOwnPropertySymbols(e);
-            r.push.apply(r, n)
-        }
-        return r
-    })(Object(t)).forEach(function(r) {
-        Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r))
-    }), e
-}
-
-function v(e, t) {
-    if (null == e) return {};
-    var r, n, i, a = {};
-    if ("u" > typeof Reflect && Reflect.ownKeys) {
-        for (i = 0, r = Reflect.ownKeys(e); i < r.length; i++) n = r[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n]);
-        return a
-    }
-    if (a = function(e, t) {
-            if (null == e) return {};
-            var r, n, i = {},
-                a = Object.getOwnPropertyNames(e);
-            for (n = 0; n < a.length; n++) r = a[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
-            return i
-        }(e, t), Object.getOwnPropertySymbols)
-        for (i = 0, r = Object.getOwnPropertySymbols(e); i < r.length; i++) n = r[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n]);
-    return a
-}
-let R = {
-    [I.Hy.BILLING_SUBSCRIPTION_GROUP_USER_ON_COOLDOWN]: 1,
-    [I.Hy.BILLING_SUBSCRIPTION_GROUP_USER_ACTIVE_BOOSTS]: 2,
-    [I.Hy.BILLING_SUBSCRIPTION_GROUP_USER_BOOST_ONLY]: 2,
-    [I.Hy.BILLING_SUBSCRIPTION_GROUP_USER_HAS_FRACTIONAL_NITRO]: 5,
-    [I.Hy.UNKNOWN_USER]: 3,
-    [I.Hy.BILLING_SUBSCRIPTION_GROUP_USER_ON_GIFT_SUBSCRIPTION]: 6,
-    [I.Hy.BILLING_SUBSCRIPTION_GROUP_USER_INVALID_SUBSCRIPTION]: 7
+/** chunk id: 159707, original params: e,t,a (module,exports,require) **/
+a.d(t, {
+    default: () => y
+});
+var n = a(627968),
+    i = a(64700),
+    r = a(284009),
+    s = a.n(r),
+    l = a(158954),
+    o = a(311907),
+    c = a(732955),
+    d = a(964486),
+    _ = a(975807),
+    u = a(775602),
+    f = a(607470),
+    I = a(550111),
+    m = a(639289),
+    S = a(976860),
+    p = a(287809),
+    P = a(954571),
+    b = a(676279),
+    N = a(677185),
+    U = a(88001),
+    O = a(652215),
+    R = a(519412),
+    T = a(985018),
+    C = a(329491),
+    g = a(42085),
+    E = a(49402),
+    A = a(27753),
+    x = a(136300);
+let h = {
+    [U.Hy.BILLING_SUBSCRIPTION_GROUP_USER_ON_COOLDOWN]: 1,
+    [U.Hy.BILLING_SUBSCRIPTION_GROUP_USER_ACTIVE_BOOSTS]: 2,
+    [U.Hy.BILLING_SUBSCRIPTION_GROUP_USER_BOOST_ONLY]: 2,
+    [U.Hy.BILLING_SUBSCRIPTION_GROUP_USER_HAS_FRACTIONAL_NITRO]: 5,
+    [U.Hy.UNKNOWN_USER]: 3,
+    [U.Hy.BILLING_SUBSCRIPTION_GROUP_USER_ON_GIFT_SUBSCRIPTION]: 6,
+    [U.Hy.BILLING_SUBSCRIPTION_GROUP_USER_INVALID_SUBSCRIPTION]: 7,
+    [U.Hy.BILLING_SUBSCRIPTION_GROUP_USER_HAS_MOBILE_SUBSCRIPTION]: 8,
+    [U.Hy.BILLING_SUBSCRIPTION_GROUP_USER_ACCOUNT_TOO_YOUNG]: 9,
+    [U.Hy.BILLING_SUBSCRIPTION_GROUP_USER_HAS_INELIGIBLE_PLAN]: 10,
+    [U.Hy.BILLING_SUBSCRIPTION_GROUP_INVITE_ALREADY_ACCEPTED]: 11,
+    [U.Hy.BILLING_SUBSCRIPTION_GROUP_USER_ALREADY_IN_GROUP]: 12,
+    [U.Hy.BILLING_SUBSCRIPTION_GROUP_USER_IS_BOT]: 13
 };
 
-function A(e) {
+function G(e) {
     let {
         onClose: t,
-        isExistingSub: r,
+        isExistingSub: a,
         premiumGroupPrimaryName: i,
-        currentUser: a
-    } = e, o = v(e, ["onClose", "isExistingSub", "premiumGroupPrimaryName", "currentUser"]), u = (0, s.bG)([f.A], () => f.A.useReducedMotion), d = (0, S.TM)() ? j.A : E.A;
-    return (0, n.jsx)(l.dWK, U(T({}, o), {
+        currentUser: r,
+        ...s
+    } = e, d = (0, o.bG)([u.A], () => u.A.useReducedMotion), _ = (0, b.TM)() ? g.A : E.A;
+    return (0, n.jsx)(l.dWK, {
+        ...s,
         onClose: t,
         children: (0, n.jsx)(l.cwr, {
             children: (0, n.jsxs)("div", {
-                className: N.hQ,
+                className: C.hQ,
                 children: [(0, n.jsx)("div", {
-                    className: N.ZB
+                    className: C.ZB
                 }), (0, n.jsx)(l.DZT, {
-                    className: N.wx,
+                    className: C.wx,
                     variant: "display-md",
                     color: "text-strong",
-                    children: h.intl.string(h.t.QWljxE)
+                    children: T.intl.string(T.t.QWljxE)
                 }), (0, n.jsxs)("div", {
-                    className: N.Dz,
-                    children: [u ? (0, n.jsx)("img", {
-                        src: w.A,
+                    className: C.Dz,
+                    children: [d ? (0, n.jsx)("img", {
+                        src: A.A,
                         alt: "",
-                        className: N.d9
-                    }) : (0, n.jsx)(p.A, {
+                        className: C.d9
+                    }) : (0, n.jsx)(f.A, {
                         playsInline: !0,
                         muted: !0,
                         autoPlay: !0,
                         loop: !0,
-                        className: N.d9,
+                        className: C.d9,
                         children: (0, n.jsx)("source", {
-                            src: d
+                            src: _
                         })
-                    }), (0, n.jsx)(m.A, {
-                        user: a,
+                    }), (0, n.jsx)(I.A, {
+                        user: r,
                         isHighlighted: !0,
                         nameplate: null,
-                        nameplateData: a.nameplate,
-                        className: N.M4,
+                        nameplateData: r.nameplate,
+                        className: C.M4,
                         nameplatePreviewSize: "large"
                     })]
                 }), (0, n.jsx)("div", {
-                    className: N.FS,
+                    className: C.FS,
                     children: (0, n.jsx)(l.EYj, {
                         variant: "text-md/medium",
                         color: "text-muted",
-                        children: h.intl.format(r ? x.default.axh0pl : x.default["+KAArL"], {
-                            premiumGroupProductName: (0, I.DP)(),
+                        children: T.intl.format(a ? R.default.axh0pl : R.default["+KAArL"], {
+                            premiumGroupProductName: (0, U.DP)(),
                             primaryName: i
                         })
                     })
                 }), (0, n.jsx)("div", {
-                    className: N.qr,
+                    className: C.qr,
                     children: (0, n.jsx)(c.$nd, {
                         variant: "primary",
                         fullWidth: !0,
-                        text: h.intl.string(x.default.EL9m2H),
+                        text: T.intl.string(R.default.EL9m2H),
                         onClick: () => {
-                            t(), (0, _.pX)(y.BVt.APPLICATION_STORE)
+                            t(), (0, S.pX)(O.BVt.APPLICATION_STORE)
                         }
                     })
                 })]
             })
         })
-    }))
+    })
 }
 
-function G(e) {
+function L(e) {
     let {
         setModalState: t,
-        onClose: r,
-        premiumGroupSubscriptionId: a,
-        premiumGroupInviteId: o,
-        isExistingSub: s,
+        onClose: a,
+        premiumGroupSubscriptionId: r,
+        premiumGroupInviteId: s,
+        isExistingSub: o,
         premiumGroupPrimaryName: c,
-        currentUser: f,
-        setError: p
-    } = e, m = v(e, ["setModalState", "onClose", "premiumGroupSubscriptionId", "premiumGroupInviteId", "isExistingSub", "premiumGroupPrimaryName", "currentUser", "setError"]), b = (0, I.DP)(), [_, O] = (0, i.useState)(!1);
-    (0, u.Ay)(() => {
-        P.default.track(y.HAw.PREMIUM_GROUP_ACCEPT_INVITE_MODAL_VIEWED, {
-            invite_id: o,
-            subscription_id: a,
-            is_existing_sub: s
+        currentUser: u,
+        setError: f,
+        ...I
+    } = e, m = (0, U.DP)(), [S, p] = (0, i.useState)(!1);
+    (0, d.Ay)(() => {
+        P.default.track(O.HAw.PREMIUM_GROUP_ACCEPT_INVITE_MODAL_VIEWED, {
+            invite_id: s,
+            subscription_id: r,
+            is_existing_sub: o
         })
     });
-    let S = async () => {
-        P.default.track(y.HAw.PREMIUM_GROUP_ACCEPT_INVITE_CTA_CLICKED, {
-            invite_id: o,
-            subscription_id: a,
-            is_existing_sub: s
-        }), O(!0);
-        let e = await (0, g.wc)(a, f.id, o);
-        if (O(!1), e.ok) t(1);
+    let b = async () => {
+        P.default.track(O.HAw.PREMIUM_GROUP_ACCEPT_INVITE_CTA_CLICKED, {
+            invite_id: s,
+            subscription_id: r,
+            is_existing_sub: o
+        }), p(!0);
+        let e = await (0, N.wc)(r, u.id, s);
+        if (p(!1), e.ok) t(1);
         else {
-            var r, n, i;
-            let l = null == (n = null == (r = e.body) ? void 0 : r.code) ? 0 : null != (i = R[n]) ? i : 0;
-            P.default.track(y.HAw.PREMIUM_GROUP_ACCEPT_INVITE_ERROR, {
-                invite_id: o,
-                subscription_id: a,
+            var a;
+            let n = null == (a = e.body?.code) ? 0 : h[a] ?? 0;
+            P.default.track(O.HAw.PREMIUM_GROUP_ACCEPT_INVITE_ERROR, {
+                invite_id: s,
+                subscription_id: r,
                 error_type: function(e) {
                     switch (e) {
                         case 1:
@@ -205,160 +164,179 @@ function G(e) {
                             return "has_gift_subscription";
                         case 7:
                             return "invalid_subscription";
+                        case 8:
+                            return "has_mobile_subscription";
+                        case 9:
+                            return "account_too_young";
+                        case 10:
+                            return "has_ineligible_plan";
+                        case 11:
+                            return "invite_already_accepted";
+                        case 12:
+                            return "already_in_group";
+                        case 13:
+                            return "is_bot";
                         default:
                             return "unknown"
                     }
-                }(l)
-            }), p(l), t(2)
+                }(n),
+                error_code: e.body?.code
+            }), f(n), t(2)
         }
     };
-    return (0, n.jsx)(l.ExpressiveModal, U(T({}, m), {
-        onClose: r,
+    return (0, n.jsx)(l.ExpressiveModal, {
+        ...I,
+        onClose: a,
         gradientColor: "nitro-pink",
         badge: {
             type: "beta",
             variant: "expressive"
         },
         graphic: {
-            src: C.A,
+            src: x.A,
             type: "image"
         },
-        title: h.intl.formatToPlainString(s ? x.default["0Yxz12"] : x.default.UjA5k8, {
-            premiumGroupProductName: b
+        title: T.intl.formatToPlainString(o ? R.default["0Yxz12"] : R.default.UjA5k8, {
+            premiumGroupProductName: m
         }),
-        subtitle: h.intl.format(s ? x.default.YjSsdH : x.default.qkFeBP, {
-            premiumGroupProductName: b,
-            cooldownMonths: I.wl,
+        subtitle: T.intl.format(o ? R.default.YjSsdH : R.default.qkFeBP, {
+            premiumGroupProductName: m,
+            cooldownMonths: U.wl,
             primaryName: c
         }),
         actions: [{
-            text: h.intl.string(x.default["IO+nlU"]),
+            text: T.intl.string(R.default["IO+nlU"]),
             onClick: () => {
-                (0, d.A)(I.TE)
+                (0, _.A)(U.TE)
             },
             variant: "secondary"
         }, {
-            text: h.intl.string(x.default.odQeh3),
-            onClick: S,
+            text: T.intl.string(R.default.odQeh3),
+            onClick: b,
             variant: "expressive",
             icon: l.tvc,
-            loading: _
+            loading: S
         }]
-    }))
+    })
 }
 
-function k(e) {
-    let t, r, {
+function B(e) {
+    let t, a, {
             error: i,
-            onClose: a
+            onClose: r,
+            ...s
         } = e,
-        o = v(e, ["error", "onClose"]),
-        s = (0, I.DP)();
+        o = (0, U.DP)();
     switch (i) {
         case 1:
-            t = h.intl.formatToPlainString(x.default["wMo6/n"], {
-                premiumGroupProductName: s
-            }), r = h.intl.formatToPlainString(x.default.C08r8L, {
-                premiumGroupProductName: s,
-                cooldownMonths: I.wl
+            t = T.intl.formatToPlainString(R.default["wMo6/n"], {
+                premiumGroupProductName: o
+            }), a = T.intl.formatToPlainString(R.default.C08r8L, {
+                premiumGroupProductName: o,
+                cooldownMonths: U.wl
             });
             break;
         case 2:
-            t = h.intl.formatToPlainString(x.default["Um4ml+"], {
-                premiumGroupProductName: s
-            }), r = h.intl.string(x.default.Fm8iss);
+            t = T.intl.formatToPlainString(R.default["Um4ml+"], {
+                premiumGroupProductName: o
+            }), a = T.intl.string(R.default.Fm8iss);
             break;
         case 3:
-            t = h.intl.string(x.default.yGTLxP), r = h.intl.formatToPlainString(x.default["7/qtoL"], {
-                premiumGroupProductName: s
+            t = T.intl.string(R.default.yGTLxP), a = T.intl.formatToPlainString(R.default["7/qtoL"], {
+                premiumGroupProductName: o
             });
             break;
         case 4:
-            t = h.intl.formatToPlainString(x.default["S+UfpQ"], {
-                premiumGroupProductName: s
-            }), r = h.intl.formatToPlainString(x.default.AKYhx6, {
-                premiumGroupProductName: s,
-                countryName: (0, I.mU)()
+            t = T.intl.formatToPlainString(R.default["S+UfpQ"], {
+                premiumGroupProductName: o
+            }), a = T.intl.formatToPlainString(R.default.AKYhx6, {
+                premiumGroupProductName: o,
+                countryName: (0, U.mU)()
             });
             break;
         case 5:
-            t = h.intl.formatToPlainString(x.default.anKEqI, {
-                premiumGroupProductName: s
-            }), r = h.intl.formatToPlainString(x.default["67BbUf"], {
-                premiumGroupProductName: s
+            t = T.intl.formatToPlainString(R.default.anKEqI, {
+                premiumGroupProductName: o
+            }), a = T.intl.formatToPlainString(R.default["67BbUf"], {
+                premiumGroupProductName: o
             });
             break;
         case 6:
-            t = h.intl.formatToPlainString(x.default.VH7zHG, {
-                premiumGroupProductName: s
-            }), r = h.intl.string(x.default.s47Jqb);
+            t = T.intl.formatToPlainString(R.default.VH7zHG, {
+                premiumGroupProductName: o
+            }), a = T.intl.string(R.default.s47Jqb);
             break;
         case 7:
-            t = h.intl.formatToPlainString(x.default.agSoQJ, {
-                premiumGroupProductName: s
-            }), r = h.intl.formatToPlainString(x.default.YhJsq4, {
-                premiumGroupProductName: s
+            t = T.intl.formatToPlainString(R.default.agSoQJ, {
+                premiumGroupProductName: o
+            }), a = T.intl.formatToPlainString(R.default.YhJsq4, {
+                premiumGroupProductName: o
             });
             break;
         default:
-            t = h.intl.formatToPlainString(x.default["Kpg/uU"], {
-                premiumGroupProductName: s
-            }), r = h.intl.formatToPlainString(x.default.GrEzlX, {
-                premiumGroupProductName: s
+            t = T.intl.formatToPlainString(R.default["Kpg/uU"], {
+                premiumGroupProductName: o
+            }), a = T.intl.formatToPlainString(R.default.GrEzlX, {
+                premiumGroupProductName: o
             })
     }
-    return (0, n.jsx)(l.Modal, T({
+    return (0, n.jsx)(l.Modal, {
         size: "md",
         title: t,
-        subtitle: r,
-        onClose: a,
+        subtitle: a,
+        onClose: r,
         actions: [{
-            text: h.intl.string(x.default["IO+nlU"]),
+            text: T.intl.string(R.default["IO+nlU"]),
             variant: "secondary",
             onClick: () => {
-                (0, d.A)(I.TE)
+                (0, _.A)(U.TE)
             }
-        }]
-    }, o))
+        }],
+        ...s
+    })
 }
 
-function L(e) {
+function y(e) {
     let {
         premiumGroupSubscriptionId: t,
-        premiumGroupInviteId: r,
-        isExistingSub: a,
-        premiumGroupPrimaryName: l
-    } = e, c = v(e, ["premiumGroupSubscriptionId", "premiumGroupInviteId", "isExistingSub", "premiumGroupPrimaryName"]), [u, d] = (0, i.useState)(0), [f, p] = (0, i.useState)(null), m = (0, s.bG)([O.default], () => O.default.getCurrentUser());
-    o()(null != m, "UserSettingsProfileCustomization: user cannot be undefined");
-    let _ = null;
-    switch (u) {
+        premiumGroupInviteId: a,
+        isExistingSub: r,
+        premiumGroupPrimaryName: l,
+        ...c
+    } = e, [d, _] = (0, i.useState)(0), [u, f] = (0, i.useState)(null), I = (0, o.bG)([p.default], () => p.default.getCurrentUser());
+    s()(null != I, "UserSettingsProfileCustomization: user cannot be undefined");
+    let S = null;
+    switch (d) {
         case 0:
-            _ = (0, n.jsx)(G, T({
-                setModalState: d,
+            S = (0, n.jsx)(L, {
+                setModalState: _,
                 premiumGroupSubscriptionId: t,
-                premiumGroupInviteId: r,
-                isExistingSub: a,
+                premiumGroupInviteId: a,
+                isExistingSub: r,
                 premiumGroupPrimaryName: l,
-                currentUser: m,
-                setError: p
-            }, c));
+                currentUser: I,
+                setError: f,
+                ...c
+            });
             break;
         case 1:
-            _ = (0, n.jsx)(A, U(T({}, c), {
-                isExistingSub: a,
+            S = (0, n.jsx)(G, {
+                ...c,
+                isExistingSub: r,
                 premiumGroupPrimaryName: l,
-                currentUser: m
-            }));
+                currentUser: I
+            });
             break;
         case 2:
-            _ = (0, n.jsx)(k, T({
-                error: f
-            }, c))
+            S = (0, n.jsx)(B, {
+                error: u,
+                ...c
+            })
     }
-    return (0, n.jsx)(b.A, {
-        isConfirmationStep: 1 === u,
+    return (0, n.jsx)(m.A, {
+        isConfirmationStep: 1 === d,
         isEligibleForWowMoment: !0,
         shouldPrefetchWowMoment: !0,
-        children: _
+        children: S
     })
 }

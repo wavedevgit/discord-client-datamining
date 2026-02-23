@@ -1,49 +1,49 @@
 /** chunk id: 430086, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    Fv: () => p,
-    GY: () => m,
-    M$: () => g,
-    Oc: () => _,
-    kF: () => u
+    Fv: () => A,
+    GY: () => g,
+    M$: () => E,
+    Oc: () => u,
+    kF: () => c
 });
-var r = n(949645),
-    i = n(265422),
-    l = n(963169),
+var i = n(949645),
+    r = n(265422),
+    a = n(963169),
     s = n(345942),
-    a = n(309010),
+    l = n(309010),
     o = n(967198),
-    c = n(723702),
-    d = n(652215);
-let u = {
+    d = n(723702),
+    _ = n(652215);
+let c = {
         binds: ["alt+down"],
         comboKeysBindGlobal: !0,
-        action: () => ((0, r.A)(), !1)
+        action: () => ((0, i.A)(), !1)
     },
-    _ = {
+    u = {
         binds: ["alt+up"],
         comboKeysBindGlobal: !0,
-        action: () => ((0, r.A)(-1), !1)
+        action: () => ((0, i.A)(-1), !1)
     },
-    p = {
+    A = {
         binds: ["mod+alt+right"],
         comboKeysBindGlobal: !0,
         action() {
             let e;
-            if (null != o.A.getGuildId()) e = d.ME;
+            if (null != o.A.getGuildId()) e = _.ME;
             else {
                 let t = o.A.getLastSelectedGuildId();
-                null != t && (e = t, (0, i.i)(t, a.A.getChannelId(t)))
+                null != t && (e = t, (0, r.i)(t, l.A.getChannelId(t)))
             }
             return null != e && (0, s.u)(e), !1
         }
     },
-    m = {
-        binds: (0, c.isMac)() ? ["mod+["] : ["alt+left"],
-        comboKeysBindGlobal: !0,
-        action: () => ((0, l.OE)("keybind"), !1)
-    },
     g = {
-        binds: (0, c.isMac)() ? ["mod+]"] : ["alt+right"],
+        binds: (0, d.isMac)() ? ["mod+["] : ["alt+left"],
         comboKeysBindGlobal: !0,
-        action: () => ((0, l.Qb)("keybind"), !1)
+        action: () => ((0, a.OE)("keybind"), !1)
+    },
+    E = {
+        binds: (0, d.isMac)() ? ["mod+]"] : ["alt+right"],
+        comboKeysBindGlobal: !0,
+        action: () => ((0, a.Qb)("keybind"), !1)
     }

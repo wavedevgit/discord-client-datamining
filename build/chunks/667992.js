@@ -1,129 +1,100 @@
 /** chunk id: 667992, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => j
+    A: () => x
 });
-var r = n(627968),
-    l = n(64700),
-    i = n(503698),
-    s = n.n(i),
+var i = n(627968),
+    s = n(64700),
+    l = n(503698),
+    r = n.n(l),
     a = n(990078),
     o = n(397927),
     c = n(442433),
-    u = n(717558),
-    d = n(688810),
-    p = n(480890),
-    h = n(267102),
-    g = n(342296),
-    f = n(636585),
+    d = n(717558),
+    u = n(688810),
+    h = n(480890),
+    A = n(267102),
+    p = n(342296),
+    g = n(636585),
     m = n(486020),
-    b = n(787750);
+    _ = n(787750);
 
-function A(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = r
-        })
-    }
-    return e
-}
-
-function y(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
-        }
-        return n
-    })(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-
-function O(e) {
+function f(e) {
     let {
         channel: t,
-        speaker: i,
-        className: f
-    } = e, O = l.useRef(null), {
-        newestAnalyticsLocation: j
-    } = (0, d.Ay)(), x = (0, h.Us)(), {
-        reducedMotion: _
-    } = l.useContext(o.CZY), v = (0, u.A)({
-        userId: i.id
-    }), E = null != i.member ? (0, m.xT)(i.member) : null, C = e => {
+        speaker: l,
+        className: g
+    } = e, f = s.useRef(null), {
+        newestAnalyticsLocation: x
+    } = (0, u.Ay)(), C = (0, A.Us)(), {
+        reducedMotion: E
+    } = s.useContext(o.CZY), I = (0, d.A)({
+        userId: l.id
+    }), b = null != l.member ? (0, m.xT)(l.member) : null, N = e => {
         (0, c.L3)(e, async () => {
             let {
                 default: e
-            } = await Promise.all([n.e("97262"), n.e("29534"), n.e("55296"), n.e("84841"), n.e("31885")]).then(n.bind(n, 107632));
-            return n => (0, r.jsx)(e, y(A({}, n), {
-                user: i.user,
+            } = await Promise.all([n.e("97262"), n.e("42128"), n.e("84841"), n.e("54266")]).then(n.bind(n, 107632));
+            return n => (0, i.jsx)(e, {
+                ...n,
+                user: l.user,
                 guildId: t.guild_id,
                 channel: t,
                 showMediaItems: !0,
                 showStageChannelItems: !0,
                 showChatItems: !1,
-                onInteraction: (0, p.s)("GuildChannelUserContextMenu", j)
-            }))
+                onInteraction: (0, h.s)("GuildChannelUserContextMenu", x)
+            })
         }, {
-            context: x
+            context: C
         })
     };
-    return (0, r.jsx)(g.A, {
-        targetElementRef: O,
-        user: i.user,
+    return (0, i.jsx)(p.A, {
+        targetElementRef: f,
+        user: l.user,
         guildId: t.guild_id,
         channelId: t.id,
         clickTrap: !0,
-        children: e => (0, r.jsx)(a.m, {
-            targetElementRef: O,
-            __unsupportedReactNodeAsText: i.userNick,
+        children: e => (0, i.jsx)(a.m, {
+            targetElementRef: f,
+            __unsupportedReactNodeAsText: l.userNick,
             position: "bottom",
-            children: (0, r.jsx)(o.DUT, y(A({}, e), {
-                innerRef: O,
+            children: (0, i.jsx)(o.DUT, {
+                ...e,
+                innerRef: f,
                 onClick: t => {
                     t.stopPropagation(), e.onClick(t)
                 },
-                onContextMenu: C,
-                children: (0, r.jsx)(o.euF, {
-                    src: null != E ? E : i.user.getAvatarURL(t.guild_id, 24),
+                onContextMenu: N,
+                children: (0, i.jsx)(o.euF, {
+                    src: b ?? l.user.getAvatarURL(t.guild_id, 24),
                     size: o._3J.SIZE_24,
-                    className: s()(b.my, f),
-                    "aria-label": i.userNick,
-                    isSpeaking: v && !_.enabled
+                    className: r()(_.my, g),
+                    "aria-label": l.userNick,
+                    isSpeaking: I && !E.enabled
                 })
-            }))
+            })
         })
     })
 }
 
-function j(e) {
+function x(e) {
     let {
         speakers: t,
         channel: n
     } = e;
-    return (0, r.jsx)(f.A, {
-        className: b.z,
+    return (0, i.jsx)(g.A, {
+        className: _.z,
         guildId: n.guild_id,
         users: t,
         max: 10,
-        renderUser: (e, t, l) => (0, r.jsx)(O, {
+        renderUser: (e, t, s) => (0, i.jsx)(f, {
             channel: n,
             speaker: e,
             className: t
-        }, l),
-        renderMoreUsers: (e, t, n) => (0, r.jsx)("div", {
-            className: s()(b.$U, t),
+        }, s),
+        renderMoreUsers: (e, t, n) => (0, i.jsx)("div", {
+            className: r()(_.$U, t),
             children: e
         }, n)
     })

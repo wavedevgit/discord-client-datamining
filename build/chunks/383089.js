@@ -2,14 +2,14 @@
 i.d(e, {
     m: () => d
 });
-var n = i(627968);
+var a = i(627968);
 i(64700);
-var a = i(158954),
+var n = i(158954),
     s = i(397927),
     l = i(665711),
     r = i(41032),
-    o = i(985018),
-    c = i(23337);
+    c = i(985018),
+    o = i(23337);
 
 function d(t) {
     let {
@@ -23,40 +23,40 @@ function d(t) {
         bodyText: f,
         title: p
     } = t;
-    return (0, n.jsxs)(a.dWK, {
+    return (0, a.jsxs)(n.dWK, {
         transitionState: d,
         onClose: _,
-        children: [(0, n.jsx)(r.z, {
+        children: [(0, a.jsx)(r.z, {
             sku: e,
             title: p
-        }), (0, n.jsxs)(a.cwr, {
-            children: [(0, n.jsxs)("div", {
-                className: c.S3,
-                children: [(0, n.jsx)(s.Text, {
+        }), (0, a.jsxs)(n.cwr, {
+            children: [(0, a.jsxs)("div", {
+                className: o.S3,
+                children: [(0, a.jsx)(s.Text, {
                     variant: "text-md/normal",
                     color: "text-subtle",
-                    className: c.jJ,
+                    className: o.jJ,
                     children: f
-                }), (0, n.jsx)(u, {
+                }), (0, a.jsx)(u, {
                     isConnected: x,
                     application: i
                 })]
-            }), !m && !x && (0, n.jsx)(s.Text, {
+            }), !m && !x && (0, a.jsx)(s.Text, {
                 variant: "text-md/normal",
-                className: c.tl,
+                className: o.tl,
                 color: "text-feedback-warning",
-                children: o.intl.string(o.t.GDL8wb)
-            }), !x && (0, n.jsx)("div", {
-                className: c.ZT,
-                children: (0, n.jsx)(s.Text, {
+                children: c.intl.string(c.t.GDL8wb)
+            }), !x && (0, a.jsx)("div", {
+                className: o.ZT,
+                children: (0, a.jsx)(s.Text, {
                     variant: "text-xs/normal",
                     color: "text-subtle",
-                    children: o.intl.formatToPlainString(o.t.TTj7ME, {
+                    children: c.intl.formatToPlainString(c.t.TTj7ME, {
                         numDays: 14
                     })
                 })
             })]
-        }), (0, n.jsx)(a.H7u, {
+        }), (0, a.jsx)(n.H7u, {
             actions: [l],
             actionsFullWidth: !0
         })]
@@ -68,37 +68,37 @@ function u(t) {
         isConnected: e,
         application: i
     } = t;
-    return e ? (0, n.jsx)("div", {
-        className: c.II,
-        children: (0, n.jsxs)("div", {
-            className: c.jf,
-            children: [(0, n.jsxs)("div", {
-                className: c.iN,
-                children: [(0, n.jsx)("div", {
-                    className: c.I8,
-                    children: (0, n.jsx)(a.Uzd, {
+    return e ? (0, a.jsx)("div", {
+        className: o.II,
+        children: (0, a.jsxs)("div", {
+            className: o.jf,
+            children: [(0, a.jsxs)("div", {
+                className: o.iN,
+                children: [(0, a.jsx)("div", {
+                    className: o.I8,
+                    children: (0, a.jsx)(n.Uzd, {
                         size: "xs",
                         color: "currentColor"
                     })
-                }), (0, n.jsx)(s.Text, {
+                }), (0, a.jsx)(s.Text, {
                     variant: "text-md/normal",
-                    className: c.qS,
+                    className: o.qS,
                     color: "text-subtle",
-                    children: o.intl.string(o.t["LV+CXH"])
+                    children: c.intl.string(c.t["LV+CXH"])
                 })]
-            }), (0, n.jsx)("div", {
-                className: c.vA,
-                children: (0, n.jsx)(l.W, {
+            }), (0, a.jsx)("div", {
+                className: o.vA,
+                children: (0, a.jsx)(l.W, {
                     application: i,
                     iconSize: 20
                 })
             })]
         })
-    }) : (0, n.jsx)(a.wx6, {
+    }) : (0, a.jsx)(n.wx6, {
         type: "warning",
-        children: (0, n.jsx)(s.Text, {
+        children: (0, a.jsx)(s.Text, {
             variant: "text-sm/medium",
-            children: o.intl.string(o.t.Plv1Xk)
+            children: c.intl.string(c.t.Plv1Xk)
         })
     })
 }

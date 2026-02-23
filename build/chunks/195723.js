@@ -1,4 +1,4 @@
-/** chunk id: 195723, original params: e,t,n (module,exports,require) **/
+/** chunk id: 195723, original params: e,n,t (module,exports,require) **/
 e.exports = {
     XG: "scroller_fcb628",
     oQ: "connections_fcb628",

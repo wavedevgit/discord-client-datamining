@@ -1,27 +1,27 @@
-/** chunk id: 231003, original params: e,t,r (module,exports,require) **/
-r.d(t, {
+/** chunk id: 231003, original params: e,t,n (module,exports,require) **/
+n.d(t, {
     A: () => s
 });
-var n = r(64700),
-    a = r(964486),
-    i = r(954571),
-    o = r(577015),
-    c = r(652215);
+var a = n(64700),
+    r = n(964486),
+    i = n(954571),
+    c = n(577015),
+    o = n(652215);
 
 function s(e) {
     let {
         onReject: t,
-        analyticsType: r = "Guild Join Captcha"
-    } = e, s = n.useRef(!0);
-    return (0, a.Ay)(() => () => {
-        s.current && (null == t || t(o.CaptchaError.CANCEL))
-    }), n.useEffect(() => (i.default.track(c.HAw.OPEN_MODAL, {
-        type: r
+        analyticsType: n = "Guild Join Captcha"
+    } = e, s = a.useRef(!0);
+    return (0, r.Ay)(() => () => {
+        s.current && t?.(c.CaptchaError.CANCEL)
+    }), a.useEffect(() => (i.default.track(o.HAw.OPEN_MODAL, {
+        type: n
     }), () => {
-        s.current && i.default.track(c.HAw.MODAL_DISMISSED, {
-            type: r
+        s.current && i.default.track(o.HAw.MODAL_DISMISSED, {
+            type: n
         })
-    }), [r]), () => {
+    }), [n]), () => {
         s.current = !1
     }
 }

@@ -1,56 +1,56 @@
 /** chunk id: 948729, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
-}), n(896048);
-var r = n(627968),
-    i = n(64700),
-    l = n(110259),
+    A: () => h
+});
+var i = n(627968),
+    l = n(64700),
+    r = n(110259),
     a = n(417597),
     s = n(793574),
     o = n(688810),
-    c = n(139286),
-    u = n(627363),
-    d = n(587895),
-    p = n(485724),
+    d = n(139286),
+    c = n(627363),
+    u = n(587895),
+    _ = n(485724),
     m = n(204776);
 
-function f(e) {
+function h(e) {
     let {
         applicationId: t,
         message: n
-    } = e, [l, s, o] = (0, a.yK)([d.A], () => [d.A.getApplication(t), d.A.isFetchingApplication(t), d.A.didFetchingApplicationFail(t)], [t]);
-    return (i.useEffect(() => {
-        null != l || s || o || u.Ay.fetchApplication(t)
-    }, [l, s, o, t]), null != l && (0, m.Ie)({
-        customInstallUrl: l.customInstallUrl,
-        installParams: l.installParams,
-        integrationTypesConfig: l.integrationTypesConfig
-    })) ? (0, r.jsx)(g, {
-        application: l,
+    } = e, [r, s, o] = (0, a.yK)([u.A], () => [u.A.getApplication(t), u.A.isFetchingApplication(t), u.A.didFetchingApplicationFail(t)], [t]);
+    return (l.useEffect(() => {
+        null != r || s || o || c.Ay.fetchApplication(t)
+    }, [r, s, o, t]), null != r && (0, m.Ie)({
+        customInstallUrl: r.customInstallUrl,
+        installParams: r.installParams,
+        integrationTypesConfig: r.integrationTypesConfig
+    })) ? (0, i.jsx)(p, {
+        application: r,
         message: n
     }) : null
 }
 
-function g(e) {
+function p(e) {
     let {
         application: t,
         message: n
-    } = e, a = i.useCallback(() => {
-        (0, c.x)({
-            type: l.ImpressionTypes.VIEW,
-            name: l.ImpressionNames.APP_OAUTH2_LINK_EMBED,
+    } = e, a = l.useCallback(() => {
+        (0, d.x)({
+            type: r.ImpressionTypes.VIEW,
+            name: r.ImpressionNames.APP_OAUTH2_LINK_EMBED,
             properties: {
                 application_id: t.id
             }
         })
     }, [t.id]), {
-        analyticsLocations: u
+        analyticsLocations: c
     } = (0, o.Ay)(s.A.APP_OAUTH2_LINK_EMBED);
-    return (0, r.jsx)(o.f5, {
-        value: u,
-        children: (0, r.jsx)(p.W, {
+    return (0, i.jsx)(o.f5, {
+        value: c,
+        children: (0, i.jsx)(_.W, {
             app: t,
-            linkType: p.J.OAUTH,
+            linkType: _.J.OAUTH,
             onView: a,
             message: n
         })

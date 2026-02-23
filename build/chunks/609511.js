@@ -1,47 +1,40 @@
 /** chunk id: 609511, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => c
-}), n(896048);
-var r, l = n(311907),
-    i = n(73153);
-
-function s(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-let a = {};
-class o extends(r = l.Ay.PersistedStore) {
+    A: () => a
+});
+var i = n(311907),
+    s = n(73153);
+let l = {};
+class r extends i.Ay.PersistedStore {
+    static displayName = "GuildPromptsStore";
+    static persistKey = "GuildPromptsStore";
     initialize(e) {
         for (let t in e) {
             let n = e[t];
-            a[t] = new Set(n)
+            l[t] = new Set(n)
         }
     }
     hasViewedPrompt(e, t) {
-        let n = a[t];
+        let n = l[t];
         return null != n && !!n.has(e)
     }
     getState() {
-        return a
+        return l
     }
 }
-s(o, "displayName", "GuildPromptsStore"), s(o, "persistKey", "GuildPromptsStore");
-let c = new o(i.h, {
+let a = new r(s.h, {
     GUILD_PROMPT_VIEWED: function(e) {
         let {
             prompt: t,
             guildId: n
-        } = e, r = a[n];
-        return null == r ? (a[n] = new Set, a[n].add(t), !0) : !r.has(t) && (r.add(t), !0)
+        } = e, i = l[n];
+        return null == i ? (l[n] = new Set, l[n].add(t), !0) : !i.has(t) && (i.add(t), !0)
     },
     GUILD_DELETE: function(e) {
         let {
             guild: t
         } = e;
-        return null != a[t.id] && !t.unavailable && (delete a[t.id], !0)
+        return null != l[t.id] && !t.unavailable && (delete l[t.id], !0)
     }
 })

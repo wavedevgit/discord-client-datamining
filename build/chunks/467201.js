@@ -1,39 +1,39 @@
 /** chunk id: 467201, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => O
+    A: () => C
 });
-var r = n(627968),
-    i = n(64700),
+var i = n(627968),
+    r = n(64700),
     l = n(503698),
     a = n.n(l),
     s = n(311907),
     o = n(804052),
-    c = n(783592),
-    u = n(351906),
-    d = n(287809),
-    p = n(609276),
+    d = n(783592),
+    c = n(351906),
+    u = n(287809),
+    A = n(609276),
     h = n(67480),
-    f = n(328968),
-    g = n(371794),
-    m = n(681613),
-    A = n(110434),
-    _ = n(985018),
-    b = n(589757);
-class E extends i.Component {
+    _ = n(328968),
+    m = n(371794),
+    p = n(681613),
+    g = n(110434),
+    E = n(985018),
+    I = n(589757);
+class f extends r.Component {
     renderReasons(e, t, n) {
-        return 0 === e.length && 0 === t.length ? null : (0, r.jsx)("div", {
-            className: b.uW,
-            children: (0, r.jsxs)("div", {
-                className: b.f5,
-                children: [e.map(e => (0, r.jsx)("div", {
-                    className: b.zA,
-                    children: (0, r.jsx)(m.A, {
+        return 0 === e.length && 0 === t.length ? null : (0, i.jsx)("div", {
+            className: I.uW,
+            children: (0, i.jsxs)("div", {
+                className: I.f5,
+                children: [e.map(e => (0, i.jsx)("div", {
+                    className: I.zA,
+                    children: (0, i.jsx)(p.A, {
                         reason: e,
                         hidePersonalInformation: n
                     })
-                }, e.type)), t.map(e => (0, r.jsx)("div", {
-                    className: b.zA,
-                    children: (0, r.jsx)(o.A, {
+                }, e.type)), t.map(e => (0, i.jsx)("div", {
+                    className: I.zA,
+                    children: (0, i.jsx)(o.A, {
                         reason: e
                     })
                 }, e.type))]
@@ -45,7 +45,7 @@ class E extends i.Component {
             storeListing: e
         } = this.props;
         return null != e.staffNotes ? {
-            type: A.A.Types.STAFF_NOTES,
+            type: g.A.Types.STAFF_NOTES,
             staffNotes: e.staffNotes
         } : null
     }
@@ -54,30 +54,30 @@ class E extends i.Component {
             socialReasons: e,
             nonSocialReasons: t,
             storeListing: n,
-            hidePersonalInformation: i,
+            hidePersonalInformation: r,
             className: l
         } = this.props;
         if (0 === e.length && 0 === t.length && null == n.staffNotes) return null;
         let s = this.getReviewToRender();
-        return (0, r.jsxs)("div", {
-            className: a()(b.zr, l),
-            children: [(0, r.jsx)("div", {
-                className: b.wx,
-                children: _.intl.string(_.t.qABFpX)
-            }), this.renderReasons(e, t, i), null != s ? (0, r.jsx)(A.A, {
+        return (0, i.jsxs)("div", {
+            className: a()(I.zr, l),
+            children: [(0, i.jsx)("div", {
+                className: I.wx,
+                children: E.intl.string(E.t.qABFpX)
+            }), this.renderReasons(e, t, r), null != s ? (0, i.jsx)(g.A, {
                 data: s,
-                className: b.NQ
+                className: I.NQ
             }) : null]
         })
     }
 }
-let O = s.Ay.connectStores([h.A, d.default, f.A, c.A, p.A, u.A], e => {
+let C = s.Ay.connectStores([h.A, u.default, _.A, d.A, A.A, c.A], e => {
     let {
         sku: t
     } = e;
     return {
-        socialReasons: (0, g.my)(t.id, h.A, d.default, c.A, p.A),
-        nonSocialReasons: (0, g.ZH)(t.id, h.A, f.A),
-        hidePersonalInformation: u.A.hidePersonalInformation
+        socialReasons: (0, m.my)(t.id, h.A, u.default, d.A, A.A),
+        nonSocialReasons: (0, m.ZH)(t.id, h.A, _.A),
+        hidePersonalInformation: c.A.hidePersonalInformation
     }
-})(E)
+})(f)

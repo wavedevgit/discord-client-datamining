@@ -1,45 +1,58 @@
 /** chunk id: 652234, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => E
-}), n(896048);
-var r = n(627968),
-    i = n(64700),
+    A: () => I
+});
+var i = n(627968),
+    r = n(64700),
     l = n(735438),
     a = n.n(l),
     s = n(311907),
     o = n(442433),
-    c = n(504337),
-    u = n(655116),
-    d = n(629016),
-    p = n(994500),
+    d = n(504337),
+    c = n(655116),
+    u = n(629016),
+    A = n(994500),
     h = n(287809),
-    f = n(403362),
-    g = n(901133),
-    m = n(507133),
-    A = n(985018);
-
-function _(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-class b extends i.PureComponent {
+    _ = n(403362),
+    m = n(901133),
+    p = n(507133),
+    g = n(985018);
+class E extends r.PureComponent {
     hasParty(e) {
         return e.length > 1
     }
     handleStopListening() {
-        (0, c.A)()
+        (0, d.A)()
     }
+    handleUserContextMenu = (e, t) => {
+        (0, o.L3)(e, async () => {
+            let {
+                default: e
+            } = await Promise.all([n.e("97262"), n.e("32418"), n.e("22252")]).then(n.bind(n, 668569));
+            return n => (0, i.jsx)(e, {
+                ...n,
+                user: t
+            })
+        })
+    };
+    renderOverflowPopout = () => {
+        let {
+            party: e
+        } = this.props;
+        return (0, i.jsx)(p.A, {
+            party: e,
+            header: g.intl.formatToPlainString(g.t.I9et1z, {
+                count: e.length
+            })
+        })
+    };
     render() {
         let {
             currentUser: e,
             host: t,
             party: n
         } = this.props;
-        return this.hasParty(n) && null != e ? (0, r.jsx)(g.A, {
+        return this.hasParty(n) && null != e ? (0, i.jsx)(m.A, {
             currentUser: e,
             host: t,
             party: n,
@@ -48,64 +61,15 @@ class b extends i.PureComponent {
             onUserContextMenu: this.handleUserContextMenu
         }) : null
     }
-    constructor(...e) {
-        super(...e), _(this, "handleUserContextMenu", (e, t) => {
-            (0, o.L3)(e, async () => {
-                let {
-                    default: e
-                } = await Promise.all([n.e("97262"), n.e("32418"), n.e("22252")]).then(n.bind(n, 668569));
-                return n => {
-                    var i, l;
-                    return (0, r.jsx)(e, (i = function(e) {
-                        for (var t = 1; t < arguments.length; t++) {
-                            var n = null != arguments[t] ? arguments[t] : {},
-                                r = Object.keys(n);
-                            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                                return Object.getOwnPropertyDescriptor(n, e).enumerable
-                            }))), r.forEach(function(t) {
-                                _(e, t, n[t])
-                            })
-                        }
-                        return e
-                    }({}, n), l = l = {
-                        user: t
-                    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
-                        var n = Object.keys(e);
-                        if (Object.getOwnPropertySymbols) {
-                            var r = Object.getOwnPropertySymbols(e);
-                            n.push.apply(n, r)
-                        }
-                        return n
-                    })(Object(l)).forEach(function(e) {
-                        Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
-                    }), i))
-                }
-            })
-        }), _(this, "renderOverflowPopout", () => {
-            let {
-                party: e
-            } = this.props;
-            return (0, r.jsx)(m.A, {
-                party: e,
-                header: A.intl.formatToPlainString(A.t.I9et1z, {
-                    count: e.length
-                })
-            })
-        })
-    }
 }
-let E = s.Ay.connectStores([u.A, h.default, p.A, d.A], () => {
-    let e, t, n = u.A.getSyncingWith(),
-        r = u.A.getActivity(),
-        i = h.default.getCurrentUser(),
+let I = s.Ay.connectStores([c.A, h.default, A.A, u.A], () => {
+    let e, t, n = c.A.getSyncingWith(),
+        i = c.A.getActivity(),
+        r = h.default.getCurrentUser(),
         l = [];
-    if (null != n ? (e = h.default.getUser(n.userId), t = n.partyId) : null != r && null != r.party && null != r.party.id && (e = i, t = r.party.id), null != t) {
-        var s;
-        l = a()(Array.from(null != (s = d.A.getParty(t)) ? s : [])).map(e => h.default.getUser(e)).filter(f.Vq).orderBy([t => null == e || e.id === t.id, e => p.A.isFriend(e.id)], ["desc", "desc"]).value()
-    }
-    return {
-        currentUser: i,
+    return null != n ? (e = h.default.getUser(n.userId), t = n.partyId) : null != i && null != i.party && null != i.party.id && (e = r, t = i.party.id), null != t && (l = a()(Array.from(u.A.getParty(t) ?? [])).map(e => h.default.getUser(e)).filter(_.Vq).orderBy([t => null == e || e.id === t.id, e => A.A.isFriend(e.id)], ["desc", "desc"]).value()), {
+        currentUser: r,
         host: e,
         party: l
     }
-})(b)
+})(E)

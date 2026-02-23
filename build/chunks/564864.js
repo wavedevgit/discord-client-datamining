@@ -1,12 +1,12 @@
 /** chunk id: 564864, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => i
+    A: () => s
 });
-var r = n(73153);
-let i = {
+var i = n(73153);
+let s = {
     setPendingInviteRules: function(e, t, n) {
-        r.h.dispatch({
+        i.h.dispatch({
             type: "GUILD_SETTINGS_JOIN_RULES_INVITE_SET_PENDING_RULES",
             guildId: e,
             requireTerms: t,
@@ -14,21 +14,21 @@ let i = {
         })
     },
     setPendingMemberVerificationRules: function(e, t) {
-        r.h.dispatch({
+        i.h.dispatch({
             type: "GUILD_SETTINGS_JOIN_RULES_APPLY_SET_PENDING_FORM_FIELDS",
             guildId: e,
             formFields: t
         })
     },
     setSelectedJoinType: function(e, t) {
-        r.h.dispatch({
+        i.h.dispatch({
             type: "GUILD_SETTINGS_JOIN_RULES_SET_SELECTED_TYPE",
             guildId: e,
             joinType: t
         })
     },
     setIsAgeRestricted: function(e, t) {
-        r.h.dispatch({
+        i.h.dispatch({
             type: "GUILD_SETTINGS_JOIN_RULES_SET_CONTENT_LEVEL",
             guildId: e,
             isAgeRestricted: t

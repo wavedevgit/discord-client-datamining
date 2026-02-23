@@ -2,17 +2,17 @@
 n.d(t, {
     A: () => c
 });
-var r = n(417597),
-    i = n(954571),
-    l = n(899847),
-    s = n(695515),
-    a = n(191627),
+var i = n(417597),
+    s = n(954571),
+    a = n(899847),
+    r = n(695515),
+    l = n(191627),
     o = n(652215);
 let c = () => ({
-    selectedTab: (0, r.bG)([s.A], () => s.A.getSelectedTab()),
+    selectedTab: (0, i.bG)([r.A], () => r.A.getSelectedTab()),
     handleTabChange: e => {
-        l.Ay.selectTab(e), i.default.track(o.HAw.FAMILY_CENTER_ACTION, {
-            action: a.qb.TabChange,
+        a.Ay.selectTab(e), s.default.track(o.HAw.FAMILY_CENTER_ACTION, {
+            action: l.qb.TabChange,
             tab: e
         })
     }

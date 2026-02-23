@@ -1,74 +1,74 @@
 /** chunk id: 180020, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => O
-}), n(896048);
-var r = n(627968),
-    i = n(64700),
-    l = n(554146),
-    s = n(397927),
-    a = n(631670),
+    A: () => T
+});
+var i = n(627968),
+    s = n(64700),
+    a = n(554146),
+    r = n(397927),
+    l = n(631670),
     o = n(688810),
     c = n(379848),
     d = n(259065),
     u = n(159001),
     _ = n(954571),
-    p = n(927578),
-    m = n(919395),
+    m = n(927578),
+    A = n(919395),
     g = n(128450),
-    A = n(652215),
-    f = n(49999),
-    b = n(985018),
-    h = n(927961),
-    E = n(109046);
+    h = n(652215),
+    x = n(49999),
+    p = n(985018),
+    E = n(927961),
+    C = n(109046);
 
-function O(e) {
+function T(e) {
     let {
         user: t,
         guildId: n,
-        className: O
-    } = e, x = p.Ay.canUsePremiumProfileCustomization(t), {
-        analyticsLocations: C
+        className: T
+    } = e, S = m.Ay.canUsePremiumProfileCustomization(t), {
+        analyticsLocations: I
     } = (0, o.Ay)(), {
-        userDisplayNameStyles: S,
-        guildDisplayNameStyles: T,
-        pendingDisplayNameStyles: I,
-        pendingErrors: N
-    } = (0, m.B0)(t, n), [y, j] = (0, c.kn)([l.M.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE]), v = y === l.M.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE, P = (0, i.useCallback)(() => {
-        j(f.i.TAKE_ACTION), _.default.track(A.HAw.DISPLAY_NAME_STYLES_FROM_SETTINGS), (0, d.L)({
-            analyticsLocations: C,
+        userDisplayNameStyles: f,
+        guildDisplayNameStyles: N,
+        pendingDisplayNameStyles: b,
+        pendingErrors: j
+    } = (0, A.B0)(t, n), [v, O] = (0, c.kn)([a.M.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE]), R = v === a.M.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE, y = (0, s.useCallback)(() => {
+        O(x.i.TAKE_ACTION), _.default.track(h.HAw.DISPLAY_NAME_STYLES_FROM_SETTINGS), (0, d.L)({
+            analyticsLocations: I,
             guildId: n
         })
-    }, [C, j, n]), R = (0, i.useCallback)(() => {
-        (0, a.dM)(null), _.default.track(A.HAw.DISPLAY_NAME_STYLES_REMOVED)
-    }, []), D = (0, i.useCallback)(() => {
+    }, [I, O, n]), P = (0, s.useCallback)(() => {
+        (0, l.dM)(null), _.default.track(h.HAw.DISPLAY_NAME_STYLES_REMOVED)
+    }, []), L = (0, s.useCallback)(() => {
         (0, u.mZ)(null)
-    }, []), L = void 0 !== I || (null != n ? null != T : null != S);
-    return (0, r.jsx)(g.A, {
-        title: b.intl.string(h.default["86GtGH"]),
-        titleIcon: v ? (0, r.jsx)(s.LpS, {
-            text: b.intl.string(b.t.y2b7CA),
-            className: E.A
+    }, []), D = void 0 !== b || (null != n ? null != N : null != f);
+    return (0, i.jsx)(g.A, {
+        title: p.intl.string(E.default["86GtGH"]),
+        titleIcon: R ? (0, i.jsx)(r.LpS, {
+            text: p.intl.string(p.t.y2b7CA),
+            className: C.A
         }) : void 0,
-        className: O,
-        showPremiumIcon: x,
-        errors: N,
-        children: (0, r.jsxs)("div", {
-            className: E.N,
-            children: [(0, r.jsx)(s.Button, {
+        className: T,
+        showPremiumIcon: S,
+        errors: j,
+        children: (0, i.jsxs)("div", {
+            className: C.N,
+            children: [(0, i.jsx)(r.Button, {
                 variant: "primary",
                 size: "sm",
-                text: b.intl.string(h.default.vJqrIg),
+                text: p.intl.string(E.default.vJqrIg),
+                onClick: y
+            }), null == n && D && (0, i.jsx)(r.Button, {
+                variant: "secondary",
+                size: "sm",
+                text: p.intl.string(E.default.ymq8WQ),
                 onClick: P
-            }), null == n && L && (0, r.jsx)(s.Button, {
+            }), null != n && null != (void 0 !== b ? b : N) && (0, i.jsx)(r.Button, {
                 variant: "secondary",
                 size: "sm",
-                text: b.intl.string(h.default.ymq8WQ),
-                onClick: R
-            }), null != n && null != (void 0 !== I ? I : T) && (0, r.jsx)(s.Button, {
-                variant: "secondary",
-                size: "sm",
-                text: b.intl.string(h.default["j/KRxc"]),
-                onClick: D
+                text: p.intl.string(E.default["j/KRxc"]),
+                onClick: L
             })]
         })
     })

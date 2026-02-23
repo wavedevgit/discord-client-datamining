@@ -28,5 +28,7 @@ e.exports = {
     H5: "cardButtonContainerHovered_abfd90",
     U6: "pulse_abfd90",
     Yf: "placeholderCard_abfd90",
-    RC: "placeholderText_abfd90"
+    RC: "placeholderText_abfd90",
+    pt: "orbsEarnedContainer_abfd90",
+    e$: "purchaseButtonFauxDisabled_abfd90"
 }

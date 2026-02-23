@@ -1,48 +1,45 @@
 /** chunk id: 603265, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => c
+    A: () => o
 });
-var r = n(636401),
-    i = n(440454),
+var i = n(636401),
+    r = n(440454),
     l = n(313731),
     a = n(613057),
     s = n(652215);
-
-function o(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-class c extends l.A {
+class o extends l.A {
+    origin;
+    frameId;
+    postMessageToRPCClient;
+    logger;
+    postClose;
+    onSendingToRPCClient;
+    closed;
+    constructor({
+        origin: e,
+        postMessageToRPCClient: t,
+        frameId: n,
+        version: r,
+        encoding: l,
+        logger: o,
+        postClose: d,
+        onSendingToRPCClient: c
+    }) {
+        if (super(a.z4.POST_MESSAGE, r, l), -1 === ["etf", "json"].indexOf(l)) throw new i.A({
+            closeCode: s.YI$.INVALID_ENCODING
+        }, `Invalid Encoding: ${l}`);
+        if ("etf" === l) throw new i.A({
+            closeCode: s.YI$.INVALID_ENCODING
+        }, "Erlpack cannot be used on this client");
+        this.origin = e, this.postMessageToRPCClient = t, this.frameId = n, this.logger = o, this.postClose = d, this.onSendingToRPCClient = c, this.closed = !1
+    }
     send(e) {
-        var t;
-        null == (t = this.onSendingToRPCClient) || t.call(this, e, this.id), this.postMessageToRPCClient([i.A.FRAME, e], this.origin)
+        this.onSendingToRPCClient?.(e, this.id), this.postMessageToRPCClient([r.A.FRAME, e], this.origin)
     }
     close(e, t) {
         this.closed || this.postClose(this.origin, {
             code: e,
             message: t
         }, this.postMessageToRPCClient), this.closed = !0
-    }
-    constructor({
-        origin: e,
-        postMessageToRPCClient: t,
-        frameId: n,
-        version: i,
-        encoding: l,
-        logger: c,
-        postClose: u,
-        onSendingToRPCClient: d
-    }) {
-        if (super(a.z4.POST_MESSAGE, i, l), o(this, "origin", void 0), o(this, "frameId", void 0), o(this, "postMessageToRPCClient", void 0), o(this, "logger", void 0), o(this, "postClose", void 0), o(this, "onSendingToRPCClient", void 0), o(this, "closed", void 0), -1 === ["etf", "json"].indexOf(l)) throw new r.A({
-            closeCode: s.YI$.INVALID_ENCODING
-        }, "Invalid Encoding: ".concat(l));
-        if ("etf" === l) throw new r.A({
-            closeCode: s.YI$.INVALID_ENCODING
-        }, "Erlpack cannot be used on this client");
-        this.origin = e, this.postMessageToRPCClient = t, this.frameId = n, this.logger = c, this.postClose = u, this.onSendingToRPCClient = d, this.closed = !1
     }
 }

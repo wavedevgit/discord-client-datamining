@@ -1,19 +1,18 @@
-/** chunk id: 935094, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    f: () => a
-}), n(896048);
-var r = n(64700),
-    i = n(575593);
-let a = e => {
-    let [t, n] = (0, r.useState)(null);
+/** chunk id: 935094, original params: t,e,a (module,exports,require) **/
+a.d(e, {
+    f: () => r
+});
+var n = a(64700),
+    l = a(575593);
+let r = t => {
+    let [e, a] = (0, n.useState)(null);
     return {
-        previewingVariantIndex: t,
-        handleEntering: (0, r.useCallback)(t => {
-            (null == e ? void 0 : e.type) !== i.R.VARIANTS_GROUP || n(t)
-        }, [null == e ? void 0 : e.type]),
-        handleLeaving: (0, r.useCallback)(() => {
-            (null == e ? void 0 : e.type) !== i.R.VARIANTS_GROUP || n(null)
-        }, [null == e ? void 0 : e.type])
+        previewingVariantIndex: e,
+        handleEntering: (0, n.useCallback)(e => {
+            t?.type !== l.R.VARIANTS_GROUP || a(e)
+        }, [t?.type]),
+        handleLeaving: (0, n.useCallback)(() => {
+            t?.type !== l.R.VARIANTS_GROUP || a(null)
+        }, [t?.type])
     }
 }

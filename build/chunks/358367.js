@@ -1,36 +1,21 @@
-/** chunk id: 358367, original params: t,e,i (module,exports,require) **/
-i.d(e, {
+/** chunk id: 358367, original params: i,t,e (module,exports,require) **/
+e.d(t, {
     A: () => a
 });
-var n = i(627968);
-i(64700);
-var l = i(688810);
+var n = e(627968);
+e(64700);
+var l = e(688810);
 
-function a(t, e) {
-    return function(i) {
+function a(i, t) {
+    return function(e) {
         let {
             analyticsLocations: a
-        } = (0, l.Ay)(e);
+        } = (0, l.Ay)(t);
         return (0, n.jsx)(l.f5, {
             value: a,
-            children: (0, n.jsx)(t, function(t) {
-                for (var e = 1; e < arguments.length; e++) {
-                    var i = null != arguments[e] ? arguments[e] : {},
-                        n = Object.keys(i);
-                    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(i).filter(function(t) {
-                        return Object.getOwnPropertyDescriptor(i, t).enumerable
-                    }))), n.forEach(function(e) {
-                        var n;
-                        n = i[e], e in t ? Object.defineProperty(t, e, {
-                            value: n,
-                            enumerable: !0,
-                            configurable: !0,
-                            writable: !0
-                        }) : t[e] = n
-                    })
-                }
-                return t
-            }({}, i))
+            children: (0, n.jsx)(i, {
+                ...e
+            })
         })
     }
 }

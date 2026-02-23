@@ -2,22 +2,19 @@
 n.d(t, {
     A: () => p,
     U: () => m
-}), n(896048), n(638769);
+});
 var r = n(64700),
     l = n(311907),
     i = n(923408),
-    o = n(80682),
-    s = n(859241),
+    s = n(80682),
+    o = n(859241),
     a = n(256587),
     u = n(696451),
     d = n(71393),
     c = n(661191);
 
 function p(e, t) {
-    let n = (0, l.yK)([s.A], () => {
-            var t;
-            return null != (t = s.A.getAppliedGuildBoostsForGuild(e)) ? t : []
-        }, [e]),
+    let n = (0, l.yK)([o.A], () => o.A.getAppliedGuildBoostsForGuild(e) ?? [], [e]),
         p = r.useMemo(() => [...n].sort((e, t) => c.default.extractTimestamp(e.id) < c.default.extractTimestamp(t.id) ? 1 : -1).slice(0, t), [n, t]),
         m = (0, l.yK)([u.Ay], () => {
             let t = new Set;
@@ -28,17 +25,14 @@ function p(e, t) {
     r.useEffect(() => {
         m.length > 0 && m.forEach(t => a.A.requestMember(e, t))
     }, [e, m]);
-    let f = r.useMemo(() => m.length > 0 ? {
+    let A = r.useMemo(() => m.length > 0 ? {
         [e]: m
     } : {}, [e, m]);
-    (0, o.E)(f, "GuildPowerupsRecentActivity");
-    let v = (0, l.bG)([d.A], () => {
-        var t;
-        return null == (t = d.A.getGuild(e)) ? void 0 : t.premiumSubscriberCount
-    });
+    (0, s.E)(A, "GuildPowerupsRecentActivity");
+    let _ = (0, l.bG)([d.A], () => d.A.getGuild(e)?.premiumSubscriberCount);
     return r.useEffect(() => {
-        v !== n.length && (0, i.VU)(e)
-    }, [e, v, n.length]), p
+        _ !== n.length && (0, i.VU)(e)
+    }, [e, _, n.length]), p
 }
 
 function m(e) {
@@ -48,12 +42,11 @@ function m(e) {
             roleColor: r,
             roleColorStrings: i
         } = (0, l.cf)([u.Ay], () => {
-            var t, n, r, l;
-            let i = u.Ay.getMember(e.guildId, e.userId);
+            let t = u.Ay.getMember(e.guildId, e.userId);
             return {
-                username: null != (t = u.Ay.getNick(e.guildId, e.userId)) ? t : null == (l = e.user) ? void 0 : l.username,
-                roleColor: null != (n = null == i ? void 0 : i.colorString) ? n : null,
-                roleColorStrings: null != (r = null == i ? void 0 : i.colorStrings) ? r : null
+                username: u.Ay.getNick(e.guildId, e.userId) ?? e.user?.username,
+                roleColor: t?.colorString ?? null,
+                roleColorStrings: t?.colorStrings ?? null
             }
         }, [e]);
     return {

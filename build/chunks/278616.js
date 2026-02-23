@@ -1,47 +1,41 @@
 /** chunk id: 278616, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    R: () => a,
+    R: () => l,
     g: () => o
 });
-var r = n(417597),
-    i = n(617617),
-    l = n(632119),
-    s = n(444802);
-let a = () => {
-        let e = (0, r.cf)([i.A], () => {
-            var e, t;
-            return null != (e = null == (t = i.A.settings.textAndImages) ? void 0 : t.explicitContentSettings) ? e : (0, l.C$)()
-        });
+var i = n(417597),
+    s = n(617617),
+    a = n(632119),
+    r = n(444802);
+let l = () => {
+        let e = (0, i.cf)([s.A], () => s.A.settings.textAndImages?.explicitContentSettings ?? (0, a.C$)());
         return {
-            explicitContentGuilds: (0, l.Ys)({
-                setting: null == e ? void 0 : e.explicitContentGuilds
+            explicitContentGuilds: (0, a.Ys)({
+                setting: e?.explicitContentGuilds
             }),
-            explicitContentNonFriendDm: (0, l.Ys)({
-                setting: null == e ? void 0 : e.explicitContentNonFriendDm,
+            explicitContentNonFriendDm: (0, a.Ys)({
+                setting: e?.explicitContentNonFriendDm,
                 isDm: !0
             }),
-            explicitContentFriendDm: (0, l.Ys)({
-                setting: null == e ? void 0 : e.explicitContentFriendDm,
+            explicitContentFriendDm: (0, a.Ys)({
+                setting: e?.explicitContentFriendDm,
                 isDm: !0,
                 isFriend: !0
             })
         }
     },
     o = () => {
-        let e = (0, r.cf)([i.A], () => {
-            var e, t;
-            return null != (e = null == (t = i.A.settings.textAndImages) ? void 0 : t.goreContentSettings) ? e : (0, s.T4)()
-        });
+        let e = (0, i.cf)([s.A], () => s.A.settings.textAndImages?.goreContentSettings ?? (0, r.T4)());
         return {
-            goreContentGuilds: (0, s.gC)({
-                setting: null == e ? void 0 : e.goreContentGuilds
+            goreContentGuilds: (0, r.gC)({
+                setting: e?.goreContentGuilds
             }),
-            goreContentNonFriendDm: (0, s.gC)({
-                setting: null == e ? void 0 : e.goreContentNonFriendDm,
+            goreContentNonFriendDm: (0, r.gC)({
+                setting: e?.goreContentNonFriendDm,
                 isDm: !0
             }),
-            goreContentFriendDm: (0, s.gC)({
-                setting: null == e ? void 0 : e.goreContentFriendDm,
+            goreContentFriendDm: (0, r.gC)({
+                setting: e?.goreContentFriendDm,
                 isDm: !0,
                 isFriend: !0
             })

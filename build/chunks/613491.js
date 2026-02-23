@@ -1,76 +1,76 @@
 /** chunk id: 613491, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => p
+    A: () => S
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(503698),
-    l = n.n(i),
-    a = n(397927),
-    o = n(935649),
-    s = n(847599),
-    c = n(734057),
-    u = n(309010),
-    E = n(849736),
+var r = n(503698),
+    l = n.n(r),
+    s = n(397927),
+    a = n(935649),
+    o = n(847599),
+    E = n(734057),
+    c = n(309010),
+    _ = n(849736),
     d = n(354583),
-    _ = n(366098),
-    A = n(418208),
+    A = n(366098),
+    u = n(418208),
     T = n(985018),
     I = n(496447);
 
-function O(e) {
-    if (!e && (0, A.Cf)()) return void o.A.showAgeVerificationGetStartedModal({
-        entryPoint: s.q1.STAGE_CHANNEL_RAISE_HAND
+function N(e) {
+    if (!e && (0, u.Cf)()) return void a.A.showAgeVerificationGetStartedModal({
+        entryPoint: o.q1.STAGE_CHANNEL_RAISE_HAND
     });
-    let t = u.A.getVoiceChannelId();
+    let t = c.A.getVoiceChannelId();
     if (null == t) return;
-    let n = c.A.getChannel(t);
-    null != n && (0, E.e7)(n, e)
+    let n = E.A.getChannel(t);
+    null != n && (0, _.e7)(n, e)
 }
 
-function N(e) {
-    var t, n;
+function R(e) {
     let {
-        channelId: i
-    } = e, a = null != (t = (0, _.D3)(i)) ? t : 0, o = null != (n = (0, _.Xk)(i)) ? n : 0;
-    return a > 0 && o > 0 ? (0, r.jsx)("div", {
+        channelId: t
+    } = e, n = (0, A.D3)(t) ?? 0, r = (0, A.Xk)(t) ?? 0;
+    return n > 0 && r > 0 ? (0, i.jsx)("div", {
         className: I.Z5,
-        children: (0, r.jsx)("div", {
+        children: (0, i.jsx)("div", {
             className: l()(I.qQ, I.lN),
             children: T.intl.string(T.t.xlJRfv)
         })
-    }) : a > 0 ? (0, r.jsx)("div", {
+    }) : n > 0 ? (0, i.jsx)("div", {
         className: I.Z5,
-        children: (0, r.jsx)("div", {
+        children: (0, i.jsx)("div", {
             className: l()(I.qQ, I.lN),
             children: T.intl.string(T.t.WYad9Z)
         })
-    }) : o > 0 ? (0, r.jsx)("div", {
+    }) : r > 0 ? (0, i.jsx)("div", {
         className: I.Z5,
-        children: (0, r.jsx)("div", {
+        children: (0, i.jsx)("div", {
             className: l()(I.qQ, I.lN),
             children: T.intl.string(T.t.eHq2OF)
         })
     }) : null
 }
 
-function p() {
+function S() {
     let e = (0, d.A)();
-    return null == e ? null : (0, r.jsxs)(a.$Td, {
+    return null == e ? null : (0, i.jsxs)(s.$Td, {
         className: I.kL,
-        color: a.Hv$.DEFAULT,
-        children: [T.intl.string(T.t.Ul1RJQ), (0, r.jsx)(N, {
+        color: s.Hv$.DEFAULT,
+        children: [T.intl.string(T.t.Ul1RJQ), (0, i.jsx)(R, {
             channelId: e.id
-        }), (0, r.jsxs)(a.ButtonGroup, {
+        }), (0, i.jsxs)(s.ButtonGroup, {
             size: "sm",
             className: I.GC,
-            children: [(0, r.jsx)(a.Button, {
+            children: [(0, i.jsx)(s.Button, {
                 variant: "overlay-primary",
                 text: T.intl.string(T.t.MpO0px),
-                onClick: () => O(!1)
-            }), (0, r.jsx)(a.Button, {
+                onClick: () => N(!1)
+            }), (0, i.jsx)(s.Button, {
                 variant: "secondary",
-                onClick: () => O(!0),
+                onClick: () => N(!0),
                 text: T.intl.string(T.t["1YDv7a"])
             })]
         })]

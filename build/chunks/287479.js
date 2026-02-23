@@ -1,91 +1,87 @@
 /** chunk id: 287479, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => A
-}), n(896048);
-var r, i, l = n(311907),
+    A: () => E
+});
+var i = n(311907),
     s = n(73153),
-    a = n(591552),
-    o = n(374084),
-    c = n(555337),
-    d = n(982832),
-    u = n(660496),
-    g = n(863694),
-    m = n(352821),
-    p = n(132514),
-    f = n(655943),
-    h = n(400812),
-    b = n(72533),
-    x = n(652215);
-let j = new Set,
-    _ = h.Hy.LANDING,
-    O = null;
+    l = n(591552),
+    r = n(374084),
+    a = n(555337),
+    o = n(982832),
+    d = n(660496),
+    c = n(863694),
+    u = n(352821),
+    m = n(132514),
+    g = n(655943),
+    x = n(400812),
+    h = n(72533),
+    _ = n(652215);
+let A = new Set,
+    p = x.Hy.LANDING,
+    f = null;
 
-function v(e) {
+function j(e) {
     let {
         subsection: t
     } = e;
-    if (c.A.getGuildId() === O) return !1;
-    _ = t === x.nd0.SERVER_GUIDE ? h.Hy.HOME_SETTINGS : h.Hy.LANDING, O = c.A.getGuildId()
+    if (a.A.getGuildId() === f) return !1;
+    p = t === _.nd0.SERVER_GUIDE ? x.Hy.HOME_SETTINGS : x.Hy.LANDING, f = a.A.getGuildId()
 }
-class y extends(r = l.Ay.Store) {
+class N extends i.Ay.Store {
+    static displayName = "GuildSettingsOnboardingStore";
     initialize() {
-        this.waitFor(a.A, g.A, f.A, p.A, m.A, d.A, c.A), this.syncWith([a.A, g.A, f.A, p.A, m.A, d.A], () => !0)
+        this.waitFor(l.A, c.A, g.A, m.A, u.A, o.A, a.A), this.syncWith([l.A, c.A, g.A, m.A, u.A, o.A], () => !0)
     }
     isEducationUpsellDismissed(e) {
-        return j.has(e)
+        return A.has(e)
     }
     getCurrentPage() {
-        return _
+        return p
     }
     hasChanges() {
-        if (null == O) return !1;
-        let e = a.A.isAdvancedMode(O);
-        if (_ === h.Hy.DEFAULT_CHANNELS)
-            if (e) return g.A.hasChanges() || f.A.hasChanges();
-            else return g.A.hasChanges();
-        return _ === h.Hy.CUSTOMIZATION_QUESTIONS ? f.A.hasChanges() || m.A.hasChanges() : _ === h.Hy.HOME_SETTINGS ? p.A.hasChanges() : _ === h.Hy.CONNECTIONS && m.A.hasChanges()
+        if (null == f) return !1;
+        let e = l.A.isAdvancedMode(f);
+        if (p === x.Hy.DEFAULT_CHANNELS)
+            if (e) return c.A.hasChanges() || g.A.hasChanges();
+            else return c.A.hasChanges();
+        return p === x.Hy.CUSTOMIZATION_QUESTIONS ? g.A.hasChanges() || u.A.hasChanges() : p === x.Hy.HOME_SETTINGS ? m.A.hasChanges() : p === x.Hy.CONNECTIONS && u.A.hasChanges()
     }
     hasConfiguredAnythingForCurrentStep() {
-        if (null == O) return !1;
-        if (_ === h.Hy.SAFETY_CHECK) return !0;
-        if (_ === h.Hy.DEFAULT_CHANNELS) return g.A.editedDefaultChannelIds.size > 0;
-        if (_ === h.Hy.CUSTOMIZATION_QUESTIONS) return f.A.editedOnboardingPrompts.length > 0 || m.A.getEditedConnections().length > 0;
-        if (_ === h.Hy.HOME_SETTINGS) return !(0, o.jJ)(p.A.getSettings());
-        if (_ === h.Hy.CONNECTIONS) return m.A.getEditedConnections().length > 0;
+        if (null == f) return !1;
+        if (p === x.Hy.SAFETY_CHECK) return !0;
+        if (p === x.Hy.DEFAULT_CHANNELS) return c.A.editedDefaultChannelIds.size > 0;
+        if (p === x.Hy.CUSTOMIZATION_QUESTIONS) return g.A.editedOnboardingPrompts.length > 0 || u.A.getEditedConnections().length > 0;
+        if (p === x.Hy.HOME_SETTINGS) return !(0, r.jJ)(m.A.getSettings());
+        if (p === x.Hy.CONNECTIONS) return u.A.getEditedConnections().length > 0;
         return !1
     }
     hasErrors() {
-        return _ === h.Hy.CUSTOMIZATION_QUESTIONS && null != f.A.errors.find(e => null != e)
+        return p === x.Hy.CUSTOMIZATION_QUESTIONS && null != g.A.errors.find(e => null != e)
     }
     showNotice() {
-        if (null == O) return !1;
-        if ((0, b.o)(O)) return this.hasChanges();
-        let e = d.A.getCurrentPage();
-        return (_ !== h.Hy.SAFETY_CHECK || e === u.C.OVERVIEW) && null != _ && _ !== h.Hy.LANDING
+        if (null == f) return !1;
+        if ((0, h.o)(f)) return this.hasChanges();
+        let e = o.A.getCurrentPage();
+        return (p !== x.Hy.SAFETY_CHECK || e === d.C.OVERVIEW) && null != p && p !== x.Hy.LANDING
     }
     canCloseEarly() {
-        return null == O || !this.hasErrors() && (!(0, b.o)(O) || !this.hasChanges())
+        return null == f || !this.hasErrors() && (!(0, h.o)(f) || !this.hasChanges())
     }
-}(i = "displayName") in y ? Object.defineProperty(y, i, {
-    value: "GuildSettingsOnboardingStore",
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
-}) : y[i] = "GuildSettingsOnboardingStore";
-let A = new y(s.h, {
-    GUILD_SETTINGS_INIT: v,
-    GUILD_SETTINGS_SET_SECTION: v,
+}
+let E = new N(s.h, {
+    GUILD_SETTINGS_INIT: j,
+    GUILD_SETTINGS_SET_SECTION: j,
     GUILD_SETTINGS_ONBOARDING_STEP: function(e) {
         let {
             step: t
         } = e;
-        _ = t
+        p = t
     },
     GUILD_SETTINGS_ONBOARDING_EDUCATION_UPSELL_DISMISSED: function(e) {
         let {
             upsellType: t
         } = e;
-        j.add(t)
+        A.add(t)
     }
 })

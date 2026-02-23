@@ -1,40 +1,40 @@
 /** chunk id: 76531, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => c
+    A: () => d
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(397927),
+var r = n(397927),
     l = n(892742),
     a = n(985018),
     s = n(816751),
     o = n(834491);
-let c = function(e) {
+let d = function(e) {
     let {
         questId: t
     } = e;
-    return (0, r.jsx)("div", {
+    return (0, i.jsx)("div", {
         className: s.x3,
-        children: (0, r.jsxs)("div", {
+        children: (0, i.jsxs)("div", {
             className: s.B0,
-            children: [(0, r.jsx)(i.Heading, {
+            children: [(0, i.jsx)(r.Heading, {
                 variant: "heading-md/semibold",
                 children: a.intl.string(a.t.IcljUu)
-            }), (0, r.jsx)("div", {
+            }), (0, i.jsx)("div", {
                 className: o.wu,
-                children: (0, r.jsx)("span", {
+                children: (0, i.jsx)("span", {
                     className: o.cy,
                     children: a.intl.string(a.t.q97mEu)
                 })
-            }), (0, r.jsx)("div", {
+            }), (0, i.jsx)("div", {
                 className: o.oU,
-                children: (0, r.jsx)("div", {
+                children: (0, i.jsx)("div", {
                     className: o.zx,
-                    children: (0, r.jsx)("div", {
+                    children: (0, i.jsx)("div", {
                         className: o.Lj,
-                        children: (0, r.jsx)("div", {
+                        children: (0, i.jsx)("div", {
                             className: o.n0,
-                            children: (0, r.jsx)(l.A, {
+                            children: (0, i.jsx)(l.A, {
                                 questId: t
                             })
                         })

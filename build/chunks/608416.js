@@ -2,33 +2,32 @@
 n.d(t, {
     $G: () => d,
     Ay: () => g,
-    MN: () => m,
+    MN: () => A,
     Mp: () => u,
     XN: () => _,
-    aV: () => p
-}), n(896048);
-var r, i, l = n(627968),
-    s = n(64700),
-    a = n(92674),
+    aV: () => m
+});
+var i, s, a = n(627968),
+    r = n(64700),
+    l = n(475539),
     o = n(397927),
     c = n(396583);
 let d = 3e3,
     u = 4e3,
     _ = 6e3;
-var p = ((r = {}).SINE = "sine", r.COSINE = "cosine", r),
-    m = ((i = {}).UP = "up", i.DOWN = "down", i);
+var m = ((i = {}).SINE = "sine", i.COSINE = "cosine", i),
+    A = ((s = {}).UP = "up", s.DOWN = "down", s);
 let g = e => {
-    var t, n;
     let {
-        blurAnimationData: r,
-        scaleAnimationData: i,
-        yAxisAnimationData: d,
-        parallaxAnimationData: u,
-        animateXAxisWiggle: _ = !1,
-        isMotionReduced: p = !1,
-        animationSpeedScale: m = 1,
-        children: g
-    } = e, A = (0, o.zhh)(null != d ? {
+        blurAnimationData: t,
+        scaleAnimationData: n,
+        yAxisAnimationData: i,
+        parallaxAnimationData: s,
+        animateXAxisWiggle: d = !1,
+        isMotionReduced: u = !1,
+        animationSpeedScale: _ = 1,
+        children: m
+    } = e, A = (0, o.zhh)(null != i ? {
         from: {
             y: 0
         },
@@ -36,39 +35,39 @@ let g = e => {
             y: 1
         },
         config: {
-            duration: d.duration * m
+            duration: i.duration * _
         },
         loop: !0
     } : {
         y: 0
-    }), f = (null == d ? void 0 : d.path) === "sine" ? Math.sin : Math.cos, [b, h] = (0, s.useState)(1), E = (0, o.zhh)(null != i ? {
+    }), g = i?.path === "sine" ? Math.sin : Math.cos, [h, x] = (0, r.useState)(1), p = (0, o.zhh)(null != n ? {
         from: {
-            scale: b > 0 ? i.startScale : i.endScale
+            scale: h > 0 ? n.startScale : n.endScale
         },
         to: {
-            scale: b > 0 ? i.endScale : i.startScale
+            scale: h > 0 ? n.endScale : n.startScale
         },
         config: {
-            duration: i.duration * m
-        },
-        onRest: () => h(e => -1 * e)
-    } : {
-        scale: 1
-    }), [O, x] = (0, s.useState)(1), C = (0, o.zhh)(null != r ? {
-        from: {
-            blur: O > 0 ? r.startBlurRadius : r.endBlurRadius
-        },
-        to: {
-            blur: O > 0 ? r.endBlurRadius : r.startBlurRadius
-        },
-        config: {
-            duration: r.duration * m
+            duration: n.duration * _
         },
         onRest: () => x(e => -1 * e)
     } : {
+        scale: 1
+    }), [E, C] = (0, r.useState)(1), T = (0, o.zhh)(null != t ? {
+        from: {
+            blur: E > 0 ? t.startBlurRadius : t.endBlurRadius
+        },
+        to: {
+            blur: E > 0 ? t.endBlurRadius : t.startBlurRadius
+        },
+        config: {
+            duration: t.duration * _
+        },
+        onRest: () => C(e => -1 * e)
+    } : {
         blur: 0
-    }), S = (0, s.useMemo)(() => Math.round((750 + (200 * Math.random() - 100)) * m), [m]), [T, I] = (0, s.useState)(0), [N, y] = (0, s.useState)(1), j = (0, o.zhh)({
-        xOffset: T,
+    }), S = (0, r.useMemo)(() => Math.round((750 + (200 * Math.random() - 100)) * _), [_]), [I, f] = (0, r.useState)(0), [N, b] = (0, r.useState)(1), j = (0, o.zhh)({
+        xOffset: I,
         config: {
             tension: 10,
             friction: 10,
@@ -76,24 +75,24 @@ let g = e => {
         }
     });
     return ((0, c.A)(() => {
-        I(N * (.5 * Math.random() * 5 + 2.5)), y(e => -1 * e)
-    }, S), p) ? g : (0, l.jsx)(a.animated.div, {
+        f(N * (.5 * Math.random() * 5 + 2.5)), b(e => -1 * e)
+    }, S), u) ? m : (0, a.jsx)(l.animated.div, {
         style: {
-            transform: null == (t = A.y) ? void 0 : t.to(e => {
-                if (null == d) return "translateY(0px)";
-                let t = f(e * Math.PI * 2) * d.range,
+            transform: A.y?.to(e => {
+                if (null == i) return "translateY(0px)";
+                let t = g(e * Math.PI * 2) * i.range,
                     n = 0;
-                if (null != u) {
-                    let e = u.range * (1 - u.containerVisibilityPercentage);
-                    n = "up" === u.pathDirection ? -e : e
+                if (null != s) {
+                    let e = s.range * (1 - s.containerVisibilityPercentage);
+                    n = "up" === s.pathDirection ? -e : e
                 }
-                return "translateY(".concat(t + n, "px)")
+                return `translateY(${t+n}px)`
             }),
-            translateX: _ ? j.xOffset.to(e => "".concat(e, "px")) : 0,
-            scale: E.scale,
-            filter: null == (n = C.blur) ? void 0 : n.to(e => "blur(".concat(e, "px)")),
-            opacity: null != u && u.changeOpacity ? u.containerVisibilityPercentage : 1
+            translateX: d ? j.xOffset.to(e => `${e}px`) : 0,
+            scale: p.scale,
+            filter: T.blur?.to(e => `blur(${e}px)`),
+            opacity: null != s && s.changeOpacity ? s.containerVisibilityPercentage : 1
         },
-        children: g
+        children: m
     })
 }

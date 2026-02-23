@@ -1,23 +1,23 @@
 /** chunk id: 503985, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => o
+    A: () => d
 });
 var l = n(627968);
 n(64700);
-var r = n(397927),
+var a = n(397927),
     i = n(730134),
-    a = n(985018),
+    r = n(985018),
     s = n(388889);
-let o = e => {
+let d = e => {
     let {
         user: t
     } = e;
     return (0, l.jsxs)("div", {
         className: s.kL,
-        children: [(0, l.jsx)(r.Heading, {
+        children: [(0, l.jsx)(a.Heading, {
             className: s.wx,
             variant: "heading-sm/semibold",
-            children: a.intl.string(a.t.Rsth7z)
+            children: r.intl.string(r.t.Rsth7z)
         }), (0, l.jsx)("div", {
             className: s.f1,
             children: (0, l.jsxs)("div", {
@@ -25,13 +25,13 @@ let o = e => {
                 children: [(0, l.jsx)(i.A, {
                     className: s.Hk,
                     user: t,
-                    size: r._3J.SIZE_40
+                    size: a._3J.SIZE_40
                 }), (0, l.jsxs)("div", {
-                    children: [null != t.globalName && (0, l.jsx)(r.Text, {
+                    children: [null != t.globalName && (0, l.jsx)(a.Text, {
                         variant: "text-md/semibold",
                         color: "text-strong",
                         children: t.globalName
-                    }), (0, l.jsx)(r.Text, {
+                    }), (0, l.jsx)(a.Text, {
                         color: "text-default",
                         variant: "text-sm/normal",
                         children: t.username

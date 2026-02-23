@@ -1,8 +1,8 @@
 /** chunk id: 83241, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    P: () => i
+    P: () => r
 });
-let r = (0, n(600975).C)({
+let i = (0, n(600975).C)({
     kind: "user",
     id: "2022-12_channel_notice_redesign",
     label: "Channel Notice Redesign",
@@ -34,12 +34,12 @@ let r = (0, n(600975).C)({
     }]
 });
 
-function i() {
+function r() {
     let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
         {
             showRedesignedChannelNotice: t,
             showRedesignedLiveChannelNotice: n
-        } = r.useExperiment({
+        } = i.useExperiment({
             location: "c0d6eb_1"
         }, {
             autoTrackExposure: e

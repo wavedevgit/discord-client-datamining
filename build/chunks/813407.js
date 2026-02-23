@@ -1,62 +1,62 @@
-/** chunk id: 813407, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    default: () => I
+/** chunk id: 813407, original params: e,n,t (module,exports,require) **/
+t.d(n, {
+    default: () => C
 });
-var r = n(627968);
-n(64700);
-var i = n(397927),
-    l = n(442433),
-    a = n(847767),
-    o = n(358367),
-    s = n(468389),
-    d = n(793574),
-    u = n(886393),
-    c = n(475777),
-    A = n(848977),
-    E = n(995102),
-    y = n(288104),
-    g = n(661504),
-    p = n(969128),
-    f = n(50268),
-    v = n(769591),
-    h = n(914853),
-    b = n(708653),
-    N = n(297460),
-    _ = n(652215),
-    O = n(985018);
-let I = (0, o.A)((0, a.A)(function(e) {
+var i = t(627968);
+t(64700);
+var r = t(397927),
+    l = t(442433),
+    a = t(847767),
+    d = t(358367),
+    s = t(468389),
+    o = t(793574),
+    u = t(886393),
+    c = t(475777),
+    A = t(848977),
+    E = t(995102),
+    g = t(288104),
+    y = t(661504),
+    N = t(969128),
+    _ = t(50268),
+    h = t(769591),
+    p = t(914853),
+    v = t(708653),
+    f = t(297460),
+    I = t(652215),
+    D = t(985018);
+let C = (0, d.A)((0, a.A)(function(e) {
     let {
-        channel: t,
-        guild: n,
+        channel: n,
+        guild: t,
         widgetType: a,
-        onSelect: o
-    } = e, d = (0, A.A)(t), _ = (0, u.A)(t), {
-        toggleFavoriteItem: I
-    } = (0, b.Ay)(h.x.MESSAGES, t, a), D = (0, N.A)({
+        onSelect: d
+    } = e, o = (0, A.A)(n), I = (0, u.A)(n), {
+        toggleFavoriteItem: C
+    } = (0, v.Ay)(p.x.MESSAGES, n, a), M = (0, f.A)({
         kind: "CHANNEL",
-        channel: t,
-        guildId: n.id
-    }, a), C = (0, c.A)(t, n), M = (0, p.A)(t), S = (0, E.Ay)(t), j = (0, y.A)(t), T = (0, f.A)({
-        id: t.id,
-        label: O.intl.string(O.t.gFHI3k)
-    }), x = (0, s.A)(t), U = (0, g.Ay)(t), m = (0, v.os)("OverlayChannelListTextChannelContextMenu");
-    return (0, r.jsxs)(i.W1t, {
+        channel: n,
+        guildId: t.id
+    }, a), T = (0, c.A)(n, t), b = (0, N.A)(n), S = (0, E.Ay)(n), x = (0, g.A)(n), U = (0, _.A)({
+        id: n.id,
+        label: D.intl.string(D.t.gFHI3k)
+    }), O = (0, s.A)(n), R = (0, y.Ay)(n), L = (0, h.os)("OverlayChannelListTextChannelContextMenu");
+    return (0, i.jsxs)(r.W1t, {
         navId: "overlay-channel-context",
         onClose: l.Z_,
-        "aria-label": O.intl.string(O.t.Xm41aV),
-        onSelect: o,
-        children: [(0, r.jsxs)(i.rXV, {
-            children: [d, D, I]
-        }, "mark-as-read-or-favorite"), (0, r.jsxs)(i.rXV, {
-            children: [C, M, _]
-        }, "channel-actions"), (0, r.jsxs)(i.rXV, {
-            children: [S, m ? U : j]
-        }, "notifications"), (0, r.jsx)(i.rXV, {
-            children: x
-        }, "activity"), (0, r.jsx)(i.rXV, {
-            children: T
+        "aria-label": D.intl.string(D.t.Xm41aV),
+        onSelect: d,
+        children: [(0, i.jsxs)(r.rXV, {
+            children: [o, M, C]
+        }, "mark-as-read-or-favorite"), (0, i.jsxs)(r.rXV, {
+            children: [T, b, I]
+        }, "channel-actions"), (0, i.jsxs)(r.rXV, {
+            children: [S, L ? R : x]
+        }, "notifications"), (0, i.jsx)(r.rXV, {
+            children: O
+        }, "activity"), (0, i.jsx)(r.rXV, {
+            children: U
         }, "developer-actions")]
     })
 }, {
-    object: _.ZSU.CONTEXT_MENU
-}), [d.A.CONTEXT_MENU, d.A.OVERLAY, d.A.CHANNEL_LIST_TEXT_CHANNEL_MENU])
+    object: I.ZSU.CONTEXT_MENU
+}), [o.A.CONTEXT_MENU, o.A.OVERLAY, o.A.CHANNEL_LIST_TEXT_CHANNEL_MENU])

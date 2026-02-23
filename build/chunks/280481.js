@@ -1,22 +1,22 @@
-/** chunk id: 280481, original params: e,t,r (module,exports,require) **/
-r.d(t, {
+/** chunk id: 280481, original params: e,t,s (module,exports,require) **/
+s.d(t, {
     A: () => c
 });
-var n = r(627968);
-r(64700);
-var i = r(397927),
-    l = r(793574),
-    s = r(688810),
-    a = r(213279),
-    o = r(357281);
+var r = s(627968);
+s(64700);
+var i = s(397927),
+    n = s(793574),
+    l = s(688810),
+    a = s(213279),
+    o = s(357281);
 
 function c(e) {
     let {
         onClose: t
     } = e, {
-        analyticsLocations: r
-    } = (0, s.Ay)(l.A.GO_LIVE_MODAL_V2);
-    return (0, n.jsx)(i.IzF, {
+        analyticsLocations: s
+    } = (0, l.Ay)(n.A.GO_LIVE_MODAL_V2);
+    return (0, r.jsx)(i.IzF, {
         options: [{
             name: "SD",
             value: "sd"
@@ -30,7 +30,7 @@ function c(e) {
         look: "pill",
         onChange: function(e) {
             "hd" === e.value && (0, a.p)({
-                analyticsLocation: null == r ? void 0 : r[0],
+                analyticsLocation: s?.[0],
                 onClose: t
             })
         }

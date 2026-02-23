@@ -1,75 +1,75 @@
 /** chunk id: 657364, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => E
-}), n(896048), n(492834);
-var r = n(627968),
-    i = n(64700),
-    l = n(989349),
-    s = n.n(l),
-    a = n(311907),
+    A: () => C
+});
+var i = n(627968),
+    s = n(64700),
+    a = n(989349),
+    r = n.n(a),
+    l = n(311907),
     o = n(397927),
     c = n(157559),
     d = n(287809),
     u = n(975571),
     _ = n(115063),
-    p = n(104954),
-    m = n(975648),
+    m = n(104954),
+    A = n(975648),
     g = n(871930),
-    A = n(531525),
-    f = n(652215),
-    b = n(985018),
-    h = n(937474);
+    h = n(531525),
+    x = n(652215),
+    p = n(985018),
+    E = n(937474);
 
-function E() {
-    let e = (0, a.bG)([d.default], () => d.default.getCurrentUser()),
+function C() {
+    let e = (0, l.bG)([d.default], () => d.default.getCurrentUser()),
         {
             currentHarvestType: t,
-            awaitingInitialRequest: l
-        } = (0, a.cf)([m.A], () => ({
-            currentHarvestType: m.A.harvestType,
-            awaitingInitialRequest: m.A.requestingHarvest
+            awaitingInitialRequest: a
+        } = (0, l.cf)([A.A], () => ({
+            currentHarvestType: A.A.harvestType,
+            awaitingInitialRequest: A.A.requestingHarvest
         })),
-        [E, O] = i.useState(!1);
+        [C, T] = s.useState(!1);
     if (null == e) return null;
-    let x = (0, _.Oj)(t, e) || l,
-        C = null != t && s()().diff(s()(t.created_at), "days") < f.n83,
-        S = x && C,
-        T = e.isStaff(),
-        I = !e.verified;
-    return (0, r.jsxs)(g.h, {
-        setting: A.H.PRIVACY_DATA_REQUEST_V2,
-        children: [(0, r.jsx)(g._, {
-            header: b.intl.string(b.t.XAHCgJ),
-            description: b.intl.format(b.t.P3kNfr, {
-                helpdeskArticle: u.A.getArticleURL(f.MVz.GDPR_REQUEST_DATA)
+    let S = (0, _.Oj)(t, e) || a,
+        I = null != t && r()().diff(r()(t.created_at), "days") < x.n83,
+        f = S && I,
+        N = e.isStaff(),
+        b = !e.verified;
+    return (0, i.jsxs)(g.h, {
+        setting: h.H.PRIVACY_DATA_REQUEST_V2,
+        children: [(0, i.jsx)(g._, {
+            header: p.intl.string(p.t.XAHCgJ),
+            description: p.intl.format(p.t.P3kNfr, {
+                helpdeskArticle: u.A.getArticleURL(x.MVz.GDPR_REQUEST_DATA)
             })
-        }), S ? (0, r.jsx)(o.ZpM, {
-            className: h.N,
-            children: (0, r.jsx)(o.Text, {
+        }), f ? (0, i.jsx)(o.ZpM, {
+            className: E.N,
+            children: (0, i.jsx)(o.Text, {
                 variant: "text-md/normal",
-                children: b.intl.format(b.t.RNDlV9, {
-                    date: s()(t.created_at).add(f.n83, "days").format("MMMM Do YYYY")
+                children: p.intl.format(p.t.RNDlV9, {
+                    date: r()(t.created_at).add(x.n83, "days").format("MMMM Do YYYY")
                 })
             })
-        }) : T ? (0, r.jsx)(o.ZpM, {
-            className: h.N,
-            children: (0, r.jsx)(o.Text, {
+        }) : N ? (0, i.jsx)(o.ZpM, {
+            className: E.N,
+            children: (0, i.jsx)(o.Text, {
                 variant: "text-md/normal",
-                children: b.intl.string(b.t.ZPQLH2)
+                children: p.intl.string(p.t.ZPQLH2)
             })
-        }) : (0, r.jsxs)(r.Fragment, {
-            children: [I ? (0, r.jsx)(o.ZpM, {
-                className: h.N,
-                children: (0, r.jsx)(o.Text, {
+        }) : (0, i.jsxs)(i.Fragment, {
+            children: [b ? (0, i.jsx)(o.ZpM, {
+                className: E.N,
+                children: (0, i.jsx)(o.Text, {
                     variant: "text-md/normal",
-                    children: b.intl.string(b.t.c1f88z)
+                    children: p.intl.string(p.t.c1f88z)
                 })
-            }) : null, (0, r.jsx)("div", {
-                className: h.x,
-                children: (0, r.jsx)(o.Button, {
+            }) : null, (0, i.jsx)("div", {
+                className: E.x,
+                children: (0, i.jsx)(o.Button, {
                     variant: "primary",
-                    text: b.intl.string(b.t.dmBSKo),
-                    disabled: x,
+                    text: p.intl.string(p.t.dmBSKo),
+                    disabled: S,
                     onClick: () => {
                         (e => {
                             let {
@@ -79,33 +79,32 @@ function E() {
                                 let {
                                     default: e
                                 } = await n.e("98171").then(n.bind(n, 481398));
-                                return n => (0, r.jsx)(e, {
+                                return n => (0, i.jsx)(e, {
                                     modalProps: n,
                                     onConfirm: t
                                 })
                             })
                         })({
                             onConfirm: e => {
-                                O(!0), (0, p.$)(e).then(e => {
+                                T(!0), (0, m.$)(e).then(e => {
                                     null != e && null != e.body ? c.A.show({
-                                        title: b.intl.string(b.t.i2iul5),
-                                        body: b.intl.string(b.t["6Nmv4i"])
+                                        title: p.intl.string(p.t.i2iul5),
+                                        body: p.intl.string(p.t["6Nmv4i"])
                                     }) : c.A.show({
-                                        title: b.intl.string(b.t.OjbtDm),
-                                        body: b.intl.string(b.t["0F5Jyt"])
+                                        title: p.intl.string(p.t.OjbtDm),
+                                        body: p.intl.string(p.t["0F5Jyt"])
                                     })
                                 }, e => {
-                                    var t;
-                                    let n = (null == e ? void 0 : e.message) || (null == e || null == (t = e.body) ? void 0 : t.message) || b.intl.string(b.t["0F5Jyt"]);
+                                    let t = e?.message || e?.body?.message || p.intl.string(p.t["0F5Jyt"]);
                                     c.A.show({
-                                        title: b.intl.string(b.t.OjbtDm),
-                                        body: n
+                                        title: p.intl.string(p.t.OjbtDm),
+                                        body: t
                                     })
-                                }).finally(() => O(!1))
+                                }).finally(() => T(!1))
                             }
                         })
                     },
-                    loading: E || l
+                    loading: C || a
                 })
             })]
         })]

@@ -1,4 +1,5 @@
 /** chunk id: 88465, original params: e,t,n (module,exports,require) **/
+"use strict";
 e.exports = {
     CR: "modalRoot__38ccf",
     jE: "modalContent__38ccf",
@@ -14,5 +15,6 @@ e.exports = {
     jU: "modalHeaderButton__38ccf",
     ij: "wishlistButton__38ccf",
     r$: "logoContainer__38ccf",
-    wm: "logo__38ccf"
+    wm: "logo__38ccf",
+    p6: "priceContainer__38ccf"
 }

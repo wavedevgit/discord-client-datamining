@@ -1,4 +1,5 @@
 /** chunk id: 626600, original params: e,t,n (module,exports,require) **/
+"use strict";
 e.exports = {
     Io: "pill__4f4b6",
     iZ: "notificationsIcon__4f4b6",

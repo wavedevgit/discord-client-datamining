@@ -1,4 +1,5 @@
 /** chunk id: 33925, original params: e,t,n (module,exports,require) **/
+"use strict";
 e.exports = {
     fx: "containerDefault__29444",
     mU: "containerDragAfter__29444",

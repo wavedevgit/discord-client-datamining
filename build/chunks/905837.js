@@ -3,17 +3,14 @@ i.r(t), i.d(t, {
     default: () => a
 });
 var l = i(69747);
-
-function r(e, t, i) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: i,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = i, e
-}
 i(64683);
-class n {
+class r {
+    pollIntervalId = null;
+    isPolling = !1;
+    eventPoller;
+    constructor(e) {
+        this.eventPoller = new l.A(e)
+    }
     start() {
         this.isPolling || (this.isPolling = !0, this.pollIntervalId = setInterval(() => {
             this.poll()
@@ -30,8 +27,5 @@ class n {
     async poll() {
         await this.eventPoller.poll()
     }
-    constructor(e) {
-        r(this, "pollIntervalId", null), r(this, "isPolling", !1), r(this, "eventPoller", void 0), this.eventPoller = new l.A(e)
-    }
 }
-let a = e => new n(e)
+let a = e => new r(e)

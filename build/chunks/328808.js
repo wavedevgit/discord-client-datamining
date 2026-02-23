@@ -1,130 +1,101 @@
 /** chunk id: 328808, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => I
-}), n(896048);
-var r = n(627968),
-    l = n(64700),
-    i = n(735438),
-    s = n.n(i),
+    A: () => T
+});
+var i = n(627968),
+    s = n(64700),
+    l = n(735438),
+    r = n.n(l),
     a = n(311907),
     o = n(397927),
     c = n(182061),
-    u = n(886393),
-    d = n(307623),
-    p = n(660273),
-    h = n(40389),
-    g = n(707792),
-    f = n(41402),
+    d = n(886393),
+    u = n(307623),
+    h = n(660273),
+    A = n(40389),
+    p = n(707792),
+    g = n(41402),
     m = n(271456),
-    b = n(200273),
-    A = n(565846),
-    y = n(707653),
-    O = n(50268),
-    j = n(58736),
-    x = n(253932),
-    _ = n(977997),
-    v = n(747926),
-    E = n(985018);
+    _ = n(200273),
+    f = n(565846),
+    x = n(707653),
+    C = n(50268),
+    E = n(58736),
+    I = n(253932),
+    b = n(977997),
+    N = n(747926),
+    S = n(985018);
 
-function C(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = r
-        })
-    }
-    return e
-}
-
-function S(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
-        }
-        return n
-    })(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-
-function I(e) {
+function T(e) {
     let {
         channel: t
-    } = e, [n, i] = l.useState(!1), s = l.useRef(null);
+    } = e, [n, l] = s.useState(!1), r = s.useRef(null);
 
     function a() {
-        i(e => !e)
+        l(e => !e)
     }
-    let c = E.intl.string(E.t["UKOtz+"]);
-    return (0, r.jsx)(o.YNO, {
-        targetElementRef: s,
+    let c = S.intl.string(S.t["UKOtz+"]);
+    return (0, i.jsx)(o.YNO, {
+        targetElementRef: r,
         shouldShow: n,
         animation: o.YNO.Animation.NONE,
         position: "bottom",
         align: "right",
         autoInvert: !1,
-        onRequestClose: () => i(!1),
+        onRequestClose: () => l(!1),
         renderPopout: function(e) {
-            return (0, r.jsx)(N, S(C({}, e), {
+            return (0, i.jsx)(y, {
+                ...e,
                 channel: t
-            }))
+            })
         },
         children: (e, t) => {
             let {
                 isShown: n
             } = t;
-            return (0, r.jsx)(j.Ay.Icon, S(C({}, e), {
-                ref: s,
+            return (0, i.jsx)(E.Ay.Icon, {
+                ...e,
+                ref: r,
                 onClick: a,
                 tooltip: n ? null : c,
                 icon: o.jNK,
                 "aria-label": c,
                 selected: n
-            }))
+            })
         }
     })
 }
 
-function N(e) {
+function y(e) {
     let {
         channel: t,
         closePopout: n,
-        onSelect: l
-    } = e, i = (0, c.A)(t), j = (0, g.A)(t), C = (0, A.A)(t.id), S = (0, b.A)(t), I = (0, O.A)({
+        onSelect: s
+    } = e, l = (0, c.A)(t), E = (0, p.A)(t), T = (0, f.A)(t.id), y = (0, _.A)(t), v = (0, C.A)({
         id: t.id,
-        label: E.intl.string(E.t.DQ797g)
-    }), N = (0, u.A)(t), T = (0, d.A)(t), P = (0, p.A)(t, "Toolbar Overflow"), w = (0, f.A)(t), R = (0, h.A)(t), D = (0, y.A)(t), L = (0, m.A)(t), M = x.SY.useSetting(), G = (0, a.bG)([_.A], () => !s().isEmpty(_.A.getVoiceStatesForChannel(t.id)));
-    return (0, r.jsxs)(o.W1t, {
+        label: S.intl.string(S.t.DQ797g)
+    }), j = (0, d.A)(t), R = (0, u.A)(t), O = (0, h.A)(t, "Toolbar Overflow"), L = (0, g.A)(t), M = (0, A.A)(t), D = (0, x.A)(t), G = (0, m.A)(t), U = I.SY.useSetting(), P = (0, a.bG)([b.A], () => !r().isEmpty(b.A.getVoiceStatesForChannel(t.id)));
+    return (0, i.jsxs)(o.W1t, {
         "data-menu-migrated": !0,
         navId: "thread-context",
         onClose: n,
-        "aria-label": E.intl.string(E.t["1NBjqb"]),
-        onSelect: l,
-        children: [(0, r.jsxs)(o.rXV, {
-            children: [P, R]
-        }), (0, r.jsxs)(o.rXV, {
-            children: [S, w, C, M && !G ? (0, r.jsx)(o.Drp, {
+        "aria-label": S.intl.string(S.t["1NBjqb"]),
+        onSelect: s,
+        children: [(0, i.jsxs)(o.rXV, {
+            children: [O, M]
+        }), (0, i.jsxs)(o.rXV, {
+            children: [y, L, T, U && !P ? (0, i.jsx)(o.Drp, {
                 id: "open",
-                label: E.intl.string(E.t.bX7EaG),
+                label: S.intl.string(S.t.bX7EaG),
                 action: function() {
-                    (0, v.JA)(t)
+                    (0, N.JA)(t)
                 }
-            }) : null, L]
-        }), (0, r.jsxs)(o.rXV, {
-            children: [D, i, j, T]
-        }), (0, r.jsxs)(o.rXV, {
-            children: [N, I]
+            }) : null, G]
+        }), (0, i.jsxs)(o.rXV, {
+            children: [D, l, E, R]
+        }), (0, i.jsxs)(o.rXV, {
+            children: [j, v]
         })]
     })
 }

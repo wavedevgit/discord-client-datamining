@@ -1,112 +1,130 @@
 /** chunk id: 115980, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    Ay: () => P,
-    HG: () => S,
-    OH: () => I,
-    ac: () => N
+    Ay: () => D,
+    HG: () => R,
+    OH: () => y,
+    ac: () => P
 });
-var r = n(627968),
-    l = n(64700),
-    i = n(311907),
-    s = n(397927),
-    a = n(384904),
+var i = n(627968),
+    s = n(64700),
+    a = n(311907),
+    r = n(397927),
+    l = n(384904),
     o = n(974544),
     c = n(971105),
-    u = n(767375),
-    d = n(459793),
-    p = n(195043),
-    h = n(351906),
-    g = n(287809),
-    f = n(615405),
-    m = n(295405),
-    b = n(166403),
-    A = n(773669),
-    y = n(780964),
-    O = n(840065),
-    j = n(531525),
-    x = n(652215),
-    _ = n(985018),
-    v = n(231182);
+    d = n(767375),
+    u = n(459357),
+    _ = n(813077),
+    m = n(459793),
+    A = n(195043),
+    g = n(351906),
+    h = n(287809),
+    x = n(615405),
+    p = n(295405),
+    E = n(166403),
+    C = n(773669),
+    T = n(780964),
+    S = n(493068),
+    I = n(840065),
+    f = n(531525),
+    N = n(652215),
+    b = n(985018),
+    j = n(231182);
 
-function E() {
-    return (0, r.jsx)("div", {
-        className: v.oE,
-        children: (0, r.jsx)(s.y$y, {})
+function v() {
+    return (0, i.jsx)("div", {
+        className: j.oE,
+        children: (0, i.jsx)(r.y$y, {})
     })
 }
 
-function C() {
-    (0, O.openUserSettings)(y.X.GIFT_PANEL, {
-        section: x.nc_.INVENTORY
+function O() {
+    (0, I.openUserSettings)(T.X.GIFT_PANEL, {
+        section: N.nc_.INVENTORY
     })
 }
 
-function S(e) {
+function R(e) {
     let {
         showHeader: t = !1
-    } = e, n = (0, i.bG)([f.A], () => f.A.isSyncing), s = (0, i.bG)([m.A], () => m.A.paymentSources), o = (0, i.bG)([m.A], () => m.A.defaultPaymentSourceId), c = (0, i.bG)([A.default], () => A.default.locale), d = (0, i.bG)([b.A], () => b.A.getPremiumTypeSubscription()), p = (0, i.bG)([f.A], () => f.A.isRemovingPaymentSource), h = (0, i.bG)([f.A], () => f.A.isUpdatingPaymentSource);
-    return (l.useEffect(() => {
-        a.$o(), a.hP()
-    }, []), n && 0 === Object.keys(s).length) ? (0, r.jsx)(E, {}) : (0, r.jsx)(u.A, {
+    } = e, n = (0, a.bG)([x.A], () => x.A.isSyncing), r = (0, a.bG)([p.A], () => p.A.paymentSources), o = (0, a.bG)([p.A], () => p.A.defaultPaymentSourceId), c = (0, a.bG)([C.default], () => C.default.locale), _ = (0, a.bG)([E.A], () => E.A.getPremiumTypeSubscription()), m = (0, a.bG)([x.A], () => x.A.isRemovingPaymentSource), A = (0, a.bG)([x.A], () => x.A.isUpdatingPaymentSource), {
+        enabled: g
+    } = (0, u.c)({
+        location: "UserSettingsBilling"
+    });
+    return (s.useEffect(() => {
+        l.$o(), l.hP()
+    }, []), n && 0 === Object.keys(r).length) ? (0, i.jsx)(v, {}) : (0, i.jsx)(d.A, {
         showHeader: t,
-        paymentSources: s,
+        paymentSources: r,
         defaultPaymentSourceId: o,
-        premiumSubscriptionPaymentSourceId: null != d && d.status !== x.Dmq.CANCELED ? d.paymentSourceId : null,
+        premiumSubscriptionPaymentSourceId: null != _ && _.status !== N.Dmq.CANCELED ? _.paymentSourceId : null,
         locale: c,
-        removing: p,
-        submitting: h
+        removing: m,
+        submitting: A,
+        showGiftCards: g
     })
 }
 
-function I(e) {
+function y(e) {
     let {
         className: t
     } = e;
-    return (0, r.jsx)(s.po8, {
-        messageType: s.YCn.INFO,
+    return (0, i.jsx)(r.po8, {
+        messageType: r.YCn.INFO,
         className: t,
-        children: _.intl.format(_.t["8b+FXG"], {
-            onClick: C
+        children: b.intl.format(b.t["8b+FXG"], {
+            onClick: O
         })
     })
 }
 
-function N() {
-    let e = (0, i.bG)([A.default], () => A.default.locale);
-    return (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(d.kb, {}), (0, r.jsx)(c.A, {
+function P() {
+    let e = (0, a.bG)([C.default], () => C.default.locale);
+    return (0, i.jsxs)(i.Fragment, {
+        children: [(0, i.jsx)(m.kb, {}), (0, i.jsx)(c.A, {
             locale: e
         })]
     })
 }
 
-function T() {
-    return (0, r.jsxs)("div", {
-        children: [(0, r.jsx)(p.x, {
-            setting: j.H.BILLING_PAYMENT_METHODS,
-            children: (0, r.jsx)(S, {
+function L() {
+    let e = (0, _.wI)("UserSettingsBilling");
+    return (0, i.jsxs)("div", {
+        children: [(0, i.jsx)(A.x, {
+            setting: f.H.BILLING_PAYMENT_METHODS,
+            children: (0, i.jsx)(R, {
                 showHeader: !0
             })
-        }), (0, r.jsx)(p.x, {
-            setting: j.H.BILLING_TRANSACTION_HISTORY,
-            children: (0, r.jsx)("div", {
-                className: v.TI,
-                children: (0, r.jsxs)(s.BJc, {
+        }), e && (0, i.jsx)(A.x, {
+            setting: f.H.BILLING_STORE_COUNTRY,
+            children: (0, i.jsxs)(r.BJc, {
+                gap: 16,
+                children: [(0, i.jsx)(r.Heading, {
+                    variant: "heading-lg/semibold",
+                    children: b.intl.string(b.t["3pIjBH"])
+                }), (0, i.jsx)(S.d, {})]
+            })
+        }), (0, i.jsx)(A.x, {
+            setting: f.H.BILLING_TRANSACTION_HISTORY,
+            children: (0, i.jsx)("div", {
+                className: j.TI,
+                children: (0, i.jsxs)(r.BJc, {
                     gap: 16,
-                    children: [(0, r.jsx)(s.Heading, {
+                    children: [(0, i.jsx)(r.Heading, {
                         variant: "heading-lg/semibold",
-                        children: _.intl.string(_.t.obLrcK)
-                    }), (0, r.jsx)(N, {})]
+                        children: b.intl.string(b.t.obLrcK)
+                    }), (0, i.jsx)(P, {})]
                 })
             })
-        }), (0, r.jsx)(I, {
-            className: v.Dt
+        }), (0, i.jsx)(y, {
+            className: j.Dt
         })]
     })
 }
 
-function P() {
-    let e = (0, i.bG)([g.default], () => null != g.default.getCurrentUser()),
-        t = (0, i.bG)([h.A], () => h.A.enabled);
-    return e ? t ? (0, r.jsx)(o.A, {}) : (0, r.jsx)(T, {}) : (0, r.jsx)(E, {})
+function D() {
+    let e = (0, a.bG)([h.default], () => null != h.default.getCurrentUser()),
+        t = (0, a.bG)([g.A], () => g.A.enabled);
+    return e ? t ? (0, i.jsx)(o.A, {}) : (0, i.jsx)(L, {}) : (0, i.jsx)(v, {})
 }

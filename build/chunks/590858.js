@@ -1,8 +1,8 @@
-/** chunk id: 590858, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    q: () => r
+/** chunk id: 590858, original params: e,t,a (module,exports,require) **/
+a.d(t, {
+    q: () => n
 });
-let r = Object.freeze({
+let n = Object.freeze({
     SMALL: "small",
     LARGE: "large"
 })

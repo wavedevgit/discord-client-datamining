@@ -1,69 +1,69 @@
 /** chunk id: 972007, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    i: () => u
-}), n(896048), n(321073);
-var r = n(64700),
-    i = n(284009),
-    l = n.n(i),
-    a = n(311907),
+    i: () => d
+}), n(321073);
+var i = n(64700),
+    l = n(284009),
+    a = n.n(l),
+    r = n(311907),
     s = n(803306),
     o = n(326084),
     c = n(851746);
-let u = e => {
+let d = e => {
     let {
         searchQuery: t,
         selectedUsers: n,
-        limit: i
-    } = e, u = (0, a.bG)([c.A], () => c.A.getRecipientStatus()), d = (0, a.bG)([c.A], () => c.A.getReferralsRemaining()), [p, m] = r.useState(0), [f, g] = r.useState([]), [_, h] = r.useState(!1), [b, y] = r.useState(!1), [A, v] = r.useState(new Map);
-    l()(null != d, "Referrals remaining should not be null");
-    let O = async (e, r) => {
-        if (!_ && !b && null != e && 0 !== d) try {
-            h(!0);
-            let i = [...A.values()];
-            for (let [e, t] of u)
-                if (t === o.aK.PENDING && !A.has(e)) {
+        limit: l
+    } = e, d = (0, r.bG)([c.A], () => c.A.getRecipientStatus()), u = (0, r.bG)([c.A], () => c.A.getReferralsRemaining()), [m, _] = i.useState(0), [A, h] = i.useState([]), [f, E] = i.useState(!1), [g, p] = i.useState(!1), [x, C] = i.useState(new Map);
+    a()(null != u, "Referrals remaining should not be null");
+    let I = async (e, i) => {
+        if (!f && !g && null != e && 0 !== u) try {
+            E(!0);
+            let l = [...x.values()];
+            for (let [e, t] of d)
+                if (t === o.aK.PENDING && !x.has(e)) {
                     let t = await (0, s.wz)(e);
-                    i.push(t)
-                } let l = await (0, o.P7)(e, t, r);
-            g(t => {
-                let r = l.users.filter(e => !n.has(e.id));
-                return (i = i.filter(e => !n.has(e.id)), 0 === e) ? [...n.values(), ...i.values(), ...r] : [...t, ...r]
-            }), v(e => {
+                    l.push(t)
+                } let a = await (0, o.P7)(e, t, i);
+            h(t => {
+                let i = a.users.filter(e => !n.has(e.id));
+                return (l = l.filter(e => !n.has(e.id)), 0 === e) ? [...n.values(), ...l.values(), ...i] : [...t, ...i]
+            }), C(e => {
                 let t = new Map(e);
-                for (let e of i) t.set(e.id, e);
+                for (let e of l) t.set(e.id, e);
                 return t
-            }), m(l.nextIndex)
+            }), _(a.nextIndex)
         } catch (e) {
-            y(!0)
+            p(!0)
         } finally {
-            h(!1)
+            E(!1)
         }
-    }, x = {
-        limit: i,
-        getNextRows: O,
+    }, T = {
+        limit: l,
+        getNextRows: I,
         getLocalReferrals: async () => {
             let e = new Map;
-            for (let [t, n] of u)
-                if (n === o.aK.PENDING && !A.has(t)) {
+            for (let [t, n] of d)
+                if (n === o.aK.PENDING && !x.has(t)) {
                     let n = await (0, s.wz)(t);
                     e.set(n.id, n)
-                } v(e), g(Array.from(e.values()))
+                } C(e), h(Array.from(e.values()))
         }
-    }, E = r.useRef(x);
-    return r.useEffect(() => {
-        E.current = x
-    }), r.useEffect(() => {
+    }, N = i.useRef(T);
+    return i.useEffect(() => {
+        N.current = T
+    }), i.useEffect(() => {
         let {
             getNextRows: e,
             limit: t,
             getLocalReferrals: n
-        } = E.current;
-        d > 0 ? e(0, t) : n()
-    }, [t, d]), {
-        eligibleUsers: f,
-        fetchUsers: () => O(p, i),
-        hasError: b,
-        isFetching: _,
-        resendUsers: A
+        } = N.current;
+        u > 0 ? e(0, t) : n()
+    }, [t, u]), {
+        eligibleUsers: A,
+        fetchUsers: () => I(m, l),
+        hasError: g,
+        isFetching: f,
+        resendUsers: x
     }
 }

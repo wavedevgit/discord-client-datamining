@@ -1,16 +1,16 @@
 /** chunk id: 904828, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    yv: () => l,
-    yx: () => i
+    yv: () => a,
+    yx: () => r
 });
-var r = n(270887);
-let i = {
+var i = n(270887);
+let r = {
         binds: ["mod+alt+down", "mod+shift+]", "ctrl+tab"],
         comboKeysBindGlobal: !0,
-        action: e => (e.preventDefault(), e.stopPropagation(), (0, r.A)(), !1)
+        action: e => (e.preventDefault(), e.stopPropagation(), (0, i.A)(), !1)
     },
-    l = {
+    a = {
         binds: ["mod+alt+up", "mod+shift+[", "ctrl+shift+tab"],
         comboKeysBindGlobal: !0,
-        action: e => (e.preventDefault(), e.stopPropagation(), (0, r.A)(-1), !1)
+        action: e => (e.preventDefault(), e.stopPropagation(), (0, i.A)(-1), !1)
     }

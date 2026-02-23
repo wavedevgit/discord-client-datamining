@@ -3,79 +3,79 @@
 n.d(t, {
     A: () => j
 });
-var r = n(627968),
-    i = n(64700),
-    s = n(503698),
-    l = n.n(s),
+var i = n(627968),
+    s = n(64700),
+    r = n(503698),
+    l = n.n(r),
     a = n(311907),
     o = n(397927),
-    c = n(587895),
-    u = n(854378),
-    d = n(769015),
+    d = n(587895),
+    c = n(854378),
+    u = n(769015),
     h = n(242874),
-    p = n(75825),
-    g = n(287809),
-    f = n(97352),
-    _ = n(67480),
-    m = n(615396),
+    _ = n(75825),
+    p = n(287809),
+    g = n(97352),
+    m = n(67480),
+    f = n(615396),
     A = n(652215),
-    x = n(788868),
-    E = n(985018),
-    v = n(440526),
-    y = n(20976),
-    b = n(473169);
-let j = a.Ay.connectStores([_.A, c.A, f.A, g.default], e => {
+    E = n(788868),
+    x = n(985018),
+    I = n(440526),
+    v = n(20976),
+    N = n(473169);
+let j = a.Ay.connectStores([m.A, d.A, g.A, p.default], e => {
     let {
         giftCode: t
-    } = e, n = _.A.get(t.skuId), {
-        subscriptionPlanId: r
+    } = e, n = m.A.get(t.skuId), {
+        subscriptionPlanId: i
     } = t;
     return {
         sku: n,
-        subscriptionPlan: null != r ? (0, m.c9)(r) : null,
-        application: c.A.getApplication(n.applicationId),
-        gifter: g.default.getUser(t.userId)
+        subscriptionPlan: null != i ? (0, f.c9)(i) : null,
+        application: d.A.getApplication(n.applicationId),
+        gifter: p.default.getUser(t.userId)
     }
 })(e => {
     let {
         error: t,
         giftCode: n,
-        gifter: s,
+        gifter: r,
         sku: a,
-        application: c,
-        subscriptionPlan: g
-    } = e, f = null == s ? E.intl.string(E.t.lTGZAl) : E.intl.formatToPlainString(E.t.TjWdPc, {
-        username: s.username
-    }), _ = a.name;
-    return null != g && (_ = E.intl.formatToPlainString(g.interval === x.WT.MONTH ? E.t.CTpcCZ : E.t["rgPWG/"], {
+        application: d,
+        subscriptionPlan: p
+    } = e, g = null == r ? x.intl.string(x.t.lTGZAl) : x.intl.formatToPlainString(x.t.TjWdPc, {
+        username: r.username
+    }), m = a.name;
+    return null != p && (m = x.intl.formatToPlainString(p.interval === E.WT.MONTH ? x.t.CTpcCZ : x.t["rgPWG/"], {
         skuName: a.name,
-        intervalCount: g.intervalCount
-    })), (0, r.jsxs)(i.Fragment, {
-        children: [null != n.giftStyle ? (0, r.jsx)(p.A, {
+        intervalCount: p.intervalCount
+    })), (0, i.jsxs)(s.Fragment, {
+        children: [null != n.giftStyle ? (0, i.jsx)(_.A, {
             defaultAnimationState: h.oA.LOOP,
             giftStyle: n.giftStyle,
-            className: v.e
-        }) : (0, r.jsx)(u.eu, {
-            src: null != s ? s.getAvatarURL(void 0, 100) : null,
+            className: I.e
+        }) : (0, i.jsx)(c.eu, {
+            src: null != r ? r.getAvatarURL(void 0, 100) : null,
             size: o._3J.DEPRECATED_SIZE_100,
-            className: b.SX
-        }), null != t ? (0, r.jsxs)(i.Fragment, {
-            children: [(0, r.jsx)(u.tK, {
-                children: E.intl.string(E.t.mDFGFj)
-            }), (0, r.jsx)(u.hE, {
+            className: N.SX
+        }), null != t ? (0, i.jsxs)(s.Fragment, {
+            children: [(0, i.jsx)(c.tK, {
+                children: x.intl.string(x.t.mDFGFj)
+            }), (0, i.jsx)(c.hE, {
                 children: t
             })]
-        }) : (0, r.jsxs)(i.Fragment, {
-            children: [(0, r.jsx)(u.tK, {
-                children: f
-            }), (0, r.jsxs)(u.hE, {
-                className: l()(b.Ot, y.tR),
-                children: [a.productLine !== A.EZt.COLLECTIBLES && (0, r.jsx)(d.A, {
-                    size: d.M.MEDIUM,
-                    className: v.I,
-                    game: c,
+        }) : (0, i.jsxs)(s.Fragment, {
+            children: [(0, i.jsx)(c.tK, {
+                children: g
+            }), (0, i.jsxs)(c.hE, {
+                className: l()(N.Ot, v.tR),
+                children: [a.productLine !== A.EZt.COLLECTIBLES && (0, i.jsx)(u.A, {
+                    size: u.M.MEDIUM,
+                    className: I.I,
+                    game: d,
                     skuId: a.id
-                }), _]
+                }), m]
             })]
         })]
     })

@@ -1,64 +1,64 @@
 /** chunk id: 730588, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => A
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(503698),
-    l = n.n(i),
-    s = n(421380),
-    a = n(397927),
+var s = n(503698),
+    a = n.n(s),
+    r = n(421380),
+    l = n(397927),
     o = n(688810),
     c = n(385612),
     d = n(128450),
     u = n(339984),
     _ = n(985018),
-    p = n(52506);
+    m = n(52506);
 
-function m(e) {
+function A(e) {
     let {
         showRemoveBannerButton: t,
         errors: n,
-        onBannerChange: i,
-        guildId: m,
+        onBannerChange: s,
+        guildId: A,
         className: g,
-        disabled: A = !1,
-        showPremiumIcon: f = !0,
-        isTryItOut: b = !1,
-        forcedDivider: h,
-        withHighlight: E = !1
+        disabled: h = !1,
+        showPremiumIcon: x = !0,
+        isTryItOut: p = !1,
+        forcedDivider: E,
+        withHighlight: C = !1
     } = e, {
-        newestAnalyticsLocation: O
-    } = (0, o.Ay)(), x = E ? a.wLn : s.$n;
-    return (0, r.jsx)(d.A, {
+        newestAnalyticsLocation: T
+    } = (0, o.Ay)(), S = C ? l.wLn : r.$n;
+    return (0, i.jsx)(d.A, {
         className: g,
         title: _.intl.string(_.t.Vgdusv),
-        showPremiumIcon: f,
+        showPremiumIcon: x,
         errors: n,
-        disabled: A,
-        forcedDivider: h,
-        children: (0, r.jsxs)("div", {
-            className: p.NC,
-            children: [(0, r.jsx)(x, {
-                className: l()({
-                    [p.yj]: E
+        disabled: h,
+        forcedDivider: E,
+        children: (0, i.jsxs)("div", {
+            className: m.NC,
+            children: [(0, i.jsx)(S, {
+                className: a()({
+                    [m.yj]: C
                 }),
-                size: s.$n.Sizes.SMALL,
+                size: r.$n.Sizes.SMALL,
                 onClick: () => (0, c.XD)({
                     uploadType: u.HL.BANNER,
-                    analyticsSource: O,
-                    guildId: m,
-                    isTryItOut: b
+                    analyticsSource: T,
+                    guildId: A,
+                    isTryItOut: p
                 }),
                 children: _.intl.string(_.t.N0bC3P)
-            }), t && (0, r.jsx)("div", {
+            }), t && (0, i.jsx)("div", {
                 "data-button-hoisted-classname-wrapper": !0,
-                className: p.DT,
-                children: (0, r.jsx)(a.Button, {
+                className: m.DT,
+                children: (0, i.jsx)(l.Button, {
                     variant: "secondary",
                     size: "sm",
-                    text: null != m ? _.intl.string(_.t.jHlJNS) : _.intl.string(_.t.tT9n7D),
-                    onClick: () => i(null)
+                    text: null != A ? _.intl.string(_.t.jHlJNS) : _.intl.string(_.t.tT9n7D),
+                    onClick: () => s(null)
                 })
             })]
         })

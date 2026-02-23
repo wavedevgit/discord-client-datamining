@@ -1,30 +1,31 @@
-/** chunk id: 318678, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    U: () => O
+/** chunk id: 318678, original params: e,l,a (module,exports,require) **/
+a.r(l), a.d(l, {
+    manaCollection: () => V,
+    playgroundConfig: () => C
 });
-var r = n(330741),
-    i = n(969628),
-    a = n(973107),
-    o = n(624575),
-    s = n(362124),
-    l = n(686071),
-    c = n(874783),
-    u = n(414319),
-    d = n(541236),
-    f = n(471936),
-    p = n(361500),
-    _ = n(102998),
-    h = n(19147),
-    m = n(746539),
-    g = n(566193),
-    E = n(932880),
-    y = n(5900),
-    b = n(32272);
-let O = {
-    collections: [{
+var t = a(330741),
+    o = a(747247),
+    n = a(973107),
+    i = a(624575),
+    s = a(362124),
+    r = a(686071),
+    d = a(874783),
+    u = a(414319),
+    c = a(541236),
+    b = a(471936),
+    p = a(361500),
+    m = a(102998),
+    x = a(19147),
+    v = a(746539),
+    h = a(566193),
+    y = a(932880),
+    f = a(5900),
+    g = a(32272);
+let V = {
         id: "mana",
         name: "Mana",
-        groups: [E.d, i.t, a.Q, o.i, s.h, l.E, c.g, _.C, m.M, f.t, d.Y, h.S, p.t, y.V, g.f, u.s, b.V]
-    }, r.v]
-}
+        groups: [y.d, o.t, n.Q, i.i, s.h, r.E, d.g, m.C, v.M, b.t, c.Y, x.S, p.t, f.V, h.f, u.s, g.V]
+    },
+    C = {
+        collections: [V, t.v]
+    }

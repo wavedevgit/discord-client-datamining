@@ -1,61 +1,43 @@
 /** chunk id: 863913, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => h,
-    f: () => m
+    A: () => x,
+    f: () => u
 });
-var r, i = n(627968),
+var i, s = n(627968),
     l = n(64700),
-    s = n(503698),
-    a = n.n(s),
+    r = n(503698),
+    a = n.n(r),
     o = n(615300),
-    c = n(73939),
-    d = n(209349);
-
-function u(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-
-function g(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            u(e, t, n[t])
-        })
-    }
-    return e
-}
-var m = ((r = {})[r.RIGHT = -1] = "RIGHT", r[r.LEFT = 1] = "LEFT", r);
-let p = {
+    d = n(73939),
+    c = n(209349),
+    u = ((i = {})[i.RIGHT = -1] = "RIGHT", i[i.LEFT = 1] = "LEFT", i);
+let m = {
     friction: 10,
     tension: 40,
     overshootClamping: !0
 };
-class f extends l.PureComponent {
+class g extends l.PureComponent {
+    _animated;
+    constructor(e) {
+        super(e), this._animated = new o.A.Value(-1 * e.direction)
+    }
     componentWillEnter(e) {
-        var t, n;
-        null == (t = (n = this.props).onAnimationStart) || t.call(n), this._animated.setValue(-this.props.direction), o.A.spring(this._animated, g({
-            toValue: 0
-        }, p)).start(() => {
-            var t, n;
-            e(), null == (t = (n = this.props).onAnimationEnd) || t.call(n)
+        this.props.onAnimationStart?.(), this._animated.setValue(-this.props.direction), o.A.spring(this._animated, {
+            toValue: 0,
+            ...m
+        }).start(() => {
+            e(), this.props.onAnimationEnd?.()
         })
     }
     componentDidAppear() {
         this._animated.setValue(0)
     }
     componentWillLeave(e) {
-        o.A.spring(this._animated, g({
-            toValue: this.props.direction
-        }, p)).start(e)
+        o.A.spring(this._animated, {
+            toValue: this.props.direction,
+            ...m
+        }).start(e)
     }
     getStyle() {
         return o.A.accelerate({
@@ -68,31 +50,28 @@ class f extends l.PureComponent {
         })
     }
     render() {
-        return (0, i.jsx)(o.A.div, {
+        return (0, s.jsx)(o.A.div, {
             style: this.getStyle(),
-            className: d.A,
+            className: c.A,
             children: this.props.children
         })
     }
-    constructor(e) {
-        super(e), u(this, "_animated", void 0), this._animated = new o.A.Value(-1 * e.direction)
-    }
 }
-let h = e => {
+let x = e => {
     let {
         children: t,
         step: n,
-        direction: r,
+        direction: i,
         className: l,
-        onAnimationStart: s,
+        onAnimationStart: r,
         onAnimationEnd: o
     } = e;
-    return (0, i.jsx)(c.F, {
+    return (0, s.jsx)(d.F, {
         component: "div",
-        className: a()(d.Q, l),
-        children: (0, i.jsx)(f, {
-            direction: r,
-            onAnimationStart: s,
+        className: a()(c.Q, l),
+        children: (0, s.jsx)(g, {
+            direction: i,
+            onAnimationStart: r,
             onAnimationEnd: o,
             children: t
         }, n)

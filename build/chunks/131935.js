@@ -1,44 +1,30 @@
 /** chunk id: 131935, original params: e,t,o (module,exports,require) **/
 o.d(t, {
-    A: () => l
+    A: () => _
 });
 var i = o(559633),
     n = o(430452),
     a = o(954571);
-async function l(e, t) {
+async function _(e, t) {
     let {
         rating: o,
-        category: l,
-        reasonCode: _,
-        reasonDescription: c,
-        variant: r,
-        feedback: s,
-        analyticsData: d
-    } = t, u = n.A.getSettings(), b = n.A.getInputDeviceId(), m = n.A.getInputDevices()[b], p = n.A.getOutputDeviceId(), v = n.A.getOutputDevices()[p], g = n.A.getVideoDeviceId(), A = n.A.getVideoDevices()[g], y = n.A.getNoiseCancellation(), h = n.A.getMediaEngine().getAudioSubsystem(), O = n.A.getMediaEngine().getAudioLayer(), f = await i.A.getKrispModel();
-    a.default.track(e, function(e) {
-        for (var t = 1; t < arguments.length; t++) {
-            var o = null != arguments[t] ? arguments[t] : {},
-                i = Object.keys(o);
-            "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(o).filter(function(e) {
-                return Object.getOwnPropertyDescriptor(o, e).enumerable
-            }))), i.forEach(function(t) {
-                var i;
-                i = o[t], t in e ? Object.defineProperty(e, t, {
-                    value: i,
-                    enumerable: !0,
-                    configurable: !0,
-                    writable: !0
-                }) : e[t] = i
-            })
-        }
-        return e
-    }({
-        rating: null != o ? o : "no response",
-        category: l,
-        reason_code: _,
-        reason_description: c,
-        reason_variant: r,
-        feedback: s,
+        category: _,
+        reasonCode: c,
+        reasonDescription: s,
+        variant: l,
+        feedback: d,
+        analyticsData: r
+    } = t, u = n.Ay.getSettings(), m = n.Ay.getInputDeviceId(), b = n.Ay.getInputDevices()[m], p = n.Ay.getOutputDeviceId(), v = n.Ay.getOutputDevices()[p], g = n.Ay.getVideoDeviceId(), y = n.Ay.getVideoDevices()[g], A = n.Ay.getNoiseCancellation(), h = n.Ay.getMediaEngine().getAudioSubsystem(), F = n.Ay.getMediaEngine().getAudioLayer(), C = await i.A.getKrispModel(), {
+        output_audio_route_type: D,
+        ...O
+    } = r ?? {};
+    a.default.track(e, {
+        rating: o ?? "no response",
+        category: _,
+        reason_code: c,
+        reason_description: s,
+        reason_variant: l,
+        feedback: d,
         audio_input_mode: u.mode,
         automatic_audio_input_sensitivity_enabled: u.modeOptions.autoThreshold,
         audio_input_sensitivity: u.modeOptions.threshold,
@@ -47,13 +33,15 @@ async function l(e, t) {
         noise_suppression_enabled: u.noiseSuppression,
         automatic_gain_control_enabled: u.automaticGainControl,
         voice_output_volume: u.outputVolume,
-        noise_cancellation_enabled: y,
-        input_device_name: null == m ? void 0 : m.name,
-        output_device_name: null == v ? void 0 : v.name,
-        video_device_name: null == A ? void 0 : A.name,
+        noise_cancellation_enabled: A,
+        input_device_name: b?.name,
+        output_device_name: v?.name,
+        video_device_name: y?.name,
         audio_subsystem: h,
-        audio_layer: O,
+        audio_layer: F,
         automatic_audio_subsystem: u.automaticAudioSubsystem,
-        krisp_nc_model: f
-    }, d))
+        krisp_nc_model: C,
+        audio_output_mode: D,
+        ...O
+    })
 }

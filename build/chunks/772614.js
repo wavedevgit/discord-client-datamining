@@ -1,8 +1,8 @@
 /** chunk id: 772614, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => r
+    A: () => i
 });
-let r = (0, n(268218).Fe)({
+let i = (0, n(268218).Fe)({
     createPromise: () => Promise.resolve().then(n.bind(n, 998515)),
     webpackId: 998515
 })

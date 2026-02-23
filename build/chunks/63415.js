@@ -1,43 +1,42 @@
 /** chunk id: 63415, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    p: () => y
-}), n(896048), n(457529), n(65821);
+    p: () => C
+});
 var a = n(627968),
-    l = n(64700),
-    r = n(353640),
-    i = n(311907),
-    s = n(562465),
+    i = n(64700),
+    s = n(353640),
+    l = n(311907),
+    r = n(562465),
     o = n(732955),
-    c = n(397927),
-    d = n(885293),
+    d = n(397927),
+    c = n(885293),
     u = n(10094),
     m = n(602450),
-    p = n(967370),
-    h = n(411683),
-    x = n(557571),
+    h = n(967370),
+    x = n(411683),
+    p = n(557571),
     g = n(252561),
-    f = n(459301),
-    b = n(287809),
-    v = n(788868);
-let j = l.forwardRef((e, t) => {
-    let [n, r] = l.useState(null), [i, c] = l.useState(null), [d, u] = l.useState(!1), m = l.useCallback(async () => {
-        u(!0), c(null), r(null);
+    _ = n(459301),
+    f = n(287809),
+    b = n(788868);
+let v = i.forwardRef((e, t) => {
+    let [n, s] = i.useState(null), [l, d] = i.useState(null), [c, u] = i.useState(!1), m = i.useCallback(async () => {
+        u(!0), d(null), s(null);
         try {
-            let e = await s.Bo.get({
+            let e = await r.Bo.get({
                 url: "/users/@me/debug/warp/license",
                 rejectWithError: !0
             });
-            r(e.body)
-        } catch (l) {
-            var e, t;
-            let n = (null == l || null == (e = l.body) ? void 0 : e.message) || (null == l ? void 0 : l.message) || "Unknown error occurred",
-                a = (null == l ? void 0 : l.status) || (null == l || null == (t = l.body) ? void 0 : t.code);
-            c("Error ".concat(a ? "(".concat(a, ")") : "", ": ").concat(n))
+            s(e.body)
+        } catch (n) {
+            let e = n?.body?.message || n?.message || "Unknown error occurred",
+                t = n?.status || n?.body?.code;
+            d(`Error ${t?`(${t})`:""}: ${e}`)
         } finally {
             u(!1)
         }
     }, []);
-    return l.useImperativeHandle(t, () => ({
+    return i.useImperativeHandle(t, () => ({
         refresh: m
     })), (0, a.jsxs)("div", {
         style: {
@@ -46,10 +45,10 @@ let j = l.forwardRef((e, t) => {
             gap: "12px"
         },
         children: [(0, a.jsx)(o.$nd, {
-            text: d ? "Loading..." : "Fetch WARP License Info",
+            text: c ? "Loading..." : "Fetch WARP License Info",
             onClick: m,
-            disabled: d
-        }), null != i && (0, a.jsx)("div", {
+            disabled: c
+        }), null != l && (0, a.jsx)("div", {
             style: {
                 padding: "12px",
                 backgroundColor: "#ed4245",
@@ -58,7 +57,7 @@ let j = l.forwardRef((e, t) => {
                 fontFamily: "monospace",
                 fontSize: "12px"
             },
-            children: i
+            children: l
         }), null != n && (0, a.jsx)("pre", {
             style: {
                 width: "100%",
@@ -79,33 +78,32 @@ let j = l.forwardRef((e, t) => {
         })]
     })
 });
-j.displayName = "DebugWarpLicenseInfo";
-let _ = e => {
+v.displayName = "DebugWarpLicenseInfo";
+let j = e => {
         let {
             onSuccess: t
-        } = e, [n, r] = l.useState(!1), [i, c] = l.useState(0), [d, u] = l.useState(null);
-        l.useEffect(() => {
-            if (i > 0) {
+        } = e, [n, s] = i.useState(!1), [l, d] = i.useState(0), [c, u] = i.useState(null);
+        i.useEffect(() => {
+            if (l > 0) {
                 let e = setTimeout(() => {
-                    c(i - 1), 1 === i && t()
+                    d(l - 1), 1 === l && t()
                 }, 1e3);
                 return () => clearTimeout(e)
             }
-        }, [i, t]);
+        }, [l, t]);
         let m = async () => {
-            r(!0), u(null);
+            s(!0), u(null);
             try {
-                await s.Bo.post({
+                await r.Bo.post({
                     url: "/users/@me/debug/warp/license/extension-task",
                     rejectWithError: !0
-                }), c(5)
-            } catch (l) {
-                var e, t;
-                let n = (null == l || null == (e = l.body) ? void 0 : e.message) || (null == l ? void 0 : l.message) || "Unknown error occurred",
-                    a = (null == l ? void 0 : l.status) || (null == l || null == (t = l.body) ? void 0 : t.code);
-                u("Error ".concat(a ? "(".concat(a, ")") : "", ": ").concat(n))
+                }), d(5)
+            } catch (n) {
+                let e = n?.body?.message || n?.message || "Unknown error occurred",
+                    t = n?.status || n?.body?.code;
+                u(`Error ${t?`(${t})`:""}: ${e}`)
             } finally {
-                r(!1)
+                s(!1)
             }
         };
         return (0, a.jsxs)("div", {
@@ -115,10 +113,10 @@ let _ = e => {
                 gap: "12px"
             },
             children: [(0, a.jsx)(o.$nd, {
-                text: n ? "Triggering Task..." : i > 0 ? "Refreshing in ".concat(i, "s...") : "Trigger License Extension Task",
+                text: n ? "Triggering Task..." : l > 0 ? `Refreshing in ${l}s...` : "Trigger License Extension Task",
                 onClick: m,
-                disabled: n || i > 0
-            }), null != d && (0, a.jsx)("div", {
+                disabled: n || l > 0
+            }), null != c && (0, a.jsx)("div", {
                 style: {
                     padding: "12px",
                     backgroundColor: "#ed4245",
@@ -127,20 +125,20 @@ let _ = e => {
                     fontFamily: "monospace",
                     fontSize: "12px"
                 },
-                children: d
+                children: c
             })]
         })
     },
-    y = () => {
-        let [e, t] = l.useState(-1), [n, s] = l.useState(-1), [y, A] = l.useState(!1), [C, S] = l.useState(5e3), [O, T] = l.useState(!1), E = l.useRef(null), N = (0, i.bG)([b.default], () => b.default.getCurrentUser()), w = (0, h.L)(), [I] = l.useState(() => (0, x.YQ)({
+    C = () => {
+        let [e, t] = i.useState(-1), [n, r] = i.useState(-1), [C, A] = i.useState(!1), [T, S] = i.useState(5e3), [y, E] = i.useState(!1), N = i.useRef(null), I = (0, l.bG)([f.default], () => f.default.getCurrentUser()), k = (0, x.L)(), [R] = i.useState(() => (0, p.YQ)({
             finishSetup: async () => !0,
-            perkAvailableToUser: w
+            perkAvailableToUser: k
         })), {
-            installationStatus: k,
-            setInstallationStatus: P,
-            connectionStatus: R,
-            setConnectionStatus: D,
-            setConnect: M,
+            installationStatus: O,
+            setInstallationStatus: w,
+            connectionStatus: D,
+            setConnectionStatus: M,
+            setConnect: P,
             setDisconnect: L,
             setInstall: U,
             setIsWeb: B,
@@ -150,35 +148,35 @@ let _ = e => {
             setGetWarpInstallationStatus: W,
             perkAvailableToUser: H,
             setPerkAvailableToUser: K
-        } = (0, r.P)(I), z = l.useCallback(async () => (D(m.l7.INITIALIZING), t(setTimeout(() => {
-            D(m.l7.CONNECTED)
-        }, 1e3)), !0), [D, t]);
-        l.useEffect(() => {
-            M(z)
-        }, [z, M]);
-        let q = l.useCallback(async () => m.Lk.INSTALLING, []);
-        l.useEffect(() => {
-            K(w)
-        }, [w, K]), l.useEffect(() => {
-            W(q)
-        }, [W, q]);
-        let Q = l.useCallback(async () => (clearTimeout(e), D(m.l7.DISCONNECTED), !0), [e, D]),
-            Y = l.useCallback(() => new Promise((e, t) => {
-                P(m.Lk.INSTALLING), s(setTimeout(() => {
-                    y ? t(Error("Installation failed")) : e()
-                }, C))
-            }), [y, C, P, s]);
-        return (l.useEffect(() => {
-            F && k !== m.Lk.UNKNOWN && P(m.Lk.UNKNOWN)
-        }, [F, P, k]), l.useEffect(() => {
-            L(Q)
-        }, [Q, L]), l.useEffect(() => {
-            U(Y)
-        }, [Y, U]), l.useEffect(() => {
-            k !== m.Lk.INSTALLING && clearTimeout(n)
-        }, [n, k]), l.useEffect(() => {
-            if (k !== m.Lk.INSTALLED && R !== m.l7.INITIALIZING) return void D(m.l7.INITIALIZING)
-        }, [k, R, D]), (0, p.lM)("private_browsing_perk_settings_page")) ? (0, a.jsxs)("div", {
+        } = (0, s.P)(R), z = i.useCallback(async () => (M(m.l7.INITIALIZING), t(setTimeout(() => {
+            M(m.l7.CONNECTED)
+        }, 1e3)), !0), [M, t]);
+        i.useEffect(() => {
+            P(z)
+        }, [z, P]);
+        let $ = i.useCallback(async () => m.Lk.INSTALLING, []);
+        i.useEffect(() => {
+            K(k)
+        }, [k, K]), i.useEffect(() => {
+            W($)
+        }, [W, $]);
+        let q = i.useCallback(async () => (clearTimeout(e), M(m.l7.DISCONNECTED), !0), [e, M]),
+            Q = i.useCallback(() => new Promise((e, t) => {
+                w(m.Lk.INSTALLING), r(setTimeout(() => {
+                    C ? t(Error("Installation failed")) : e()
+                }, T))
+            }), [C, T, w, r]);
+        return (i.useEffect(() => {
+            F && O !== m.Lk.UNKNOWN && w(m.Lk.UNKNOWN)
+        }, [F, w, O]), i.useEffect(() => {
+            L(q)
+        }, [q, L]), i.useEffect(() => {
+            U(Q)
+        }, [Q, U]), i.useEffect(() => {
+            O !== m.Lk.INSTALLING && clearTimeout(n)
+        }, [n, O]), i.useEffect(() => {
+            if (O !== m.Lk.INSTALLED && D !== m.l7.INITIALIZING) return void M(m.l7.INITIALIZING)
+        }, [O, D, M]), (0, h.lM)("private_browsing_perk_settings_page")) ? (0, a.jsxs)("div", {
             children: [(0, a.jsx)(o.DZT, {
                 variant: "heading-xl/semibold",
                 style: {
@@ -200,7 +198,7 @@ let _ = e => {
                             },
                             children: (0, a.jsx)(o.dOG, {
                                 onChange: () => {
-                                    H ? (0, u.O)(null, N) : (0, u.O)(v.$I, N)
+                                    H ? (0, u.O)(null, I) : (0, u.O)(b.$I, I)
                                 },
                                 checked: H
                             })
@@ -232,10 +230,10 @@ let _ = e => {
                             })
                         })]
                     }), (0, a.jsx)(g.MG, {
-                        children: (0, a.jsx)(c.l6P, {
+                        children: (0, a.jsx)(d.l6P, {
                             label: "Installation Status",
-                            onSelectionChange: P,
-                            value: k,
+                            onSelectionChange: w,
+                            value: O,
                             disabled: F,
                             options: [{
                                 id: "unknown",
@@ -277,11 +275,11 @@ let _ = e => {
                             selectionMode: "single",
                             fullWidth: !0
                         })
-                    }), k === m.Lk.INSTALLED && (0, a.jsx)(g.MG, {
-                        children: (0, a.jsx)(c.l6P, {
+                    }), O === m.Lk.INSTALLED && (0, a.jsx)(g.MG, {
+                        children: (0, a.jsx)(d.l6P, {
                             label: "Connection Status",
-                            onSelectionChange: D,
-                            value: R,
+                            onSelectionChange: M,
+                            value: D,
                             options: [{
                                 id: "initializing",
                                 label: "Initializing",
@@ -303,7 +301,7 @@ let _ = e => {
                             fullWidth: !0
                         })
                     })]
-                }), k === m.Lk.NOT_INSTALLED && (0, a.jsxs)(g.LB, {
+                }), O === m.Lk.NOT_INSTALLED && (0, a.jsxs)(g.LB, {
                     children: [(0, a.jsxs)(g.MG, {
                         children: [(0, a.jsx)(o.EYj, {
                             variant: "text-md/semibold",
@@ -313,15 +311,15 @@ let _ = e => {
                                 width: "45px"
                             },
                             children: (0, a.jsx)(o.dOG, {
-                                onChange: () => A(!y),
-                                checked: y
+                                onChange: () => A(!C),
+                                checked: C
                             })
                         })]
                     }), (0, a.jsx)(g.MG, {
-                        children: (0, a.jsx)(c.l6P, {
+                        children: (0, a.jsx)(d.l6P, {
                             label: "Install time",
                             onSelectionChange: S,
-                            value: C,
+                            value: T,
                             options: [{
                                 id: "1second",
                                 label: "1 second",
@@ -352,13 +350,13 @@ let _ = e => {
                         })
                     })]
                 })]
-            }), (0, a.jsxs)(x.y0.Provider, {
-                value: I,
+            }), (0, a.jsxs)(p.y0.Provider, {
+                value: R,
                 children: [(0, a.jsxs)(g.wn, {
                     children: [(0, a.jsx)(o.DZT, {
                         variant: "heading-lg/medium",
                         children: "Private Browsing Perk Settings Component"
-                    }), (0, a.jsx)(f.m, {})]
+                    }), (0, a.jsx)(_.m, {})]
                 }), (0, a.jsxs)(g.wn, {
                     children: [(0, a.jsx)(o.DZT, {
                         variant: "heading-lg/medium",
@@ -366,35 +364,34 @@ let _ = e => {
                     }), (0, a.jsx)(o.$nd, {
                         text: "Show exit modal",
                         onClick: () => {
-                            T(!0)
+                            E(!0)
                         }
-                    }), O && (0, a.jsx)(d.default, {
+                    }), y && (0, a.jsx)(c.default, {
                         url: "https://www.discord.com",
                         trustUrl: () => !1,
-                        onCancel: () => T(!1),
+                        onCancel: () => E(!1),
                         isProtocol: !1,
                         onConfirm: () => {},
                         onClose: async () => {
-                            T(!1)
+                            E(!1)
                         },
-                        transitionState: c.ip4.ENTERED
+                        transitionState: d.ip4.ENTERED
                     })]
                 }), (0, a.jsxs)(g.wn, {
                     children: [(0, a.jsx)(o.DZT, {
                         variant: "heading-lg/medium",
                         children: "Private Browsing Perk License Extension Task"
-                    }), (0, a.jsx)(_, {
+                    }), (0, a.jsx)(j, {
                         onSuccess: () => {
-                            var e;
-                            null == (e = E.current) || e.refresh()
+                            N.current?.refresh()
                         }
                     })]
                 }), (0, a.jsxs)(g.wn, {
                     children: [(0, a.jsx)(o.DZT, {
                         variant: "heading-lg/medium",
                         children: "Private Browsing Perk WARP License Info"
-                    }), (0, a.jsx)(j, {
-                        ref: E
+                    }), (0, a.jsx)(v, {
+                        ref: N
                     })]
                 })]
             })]

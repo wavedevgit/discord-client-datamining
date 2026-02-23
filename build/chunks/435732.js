@@ -1,100 +1,67 @@
 /** chunk id: 435732, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => b
+    A: () => h
 });
-var r = n(627968),
-    i = n(64700),
+var i = n(627968),
+    s = n(64700),
     l = n(417597),
-    s = n(397927),
+    r = n(397927),
     a = n(219504),
     o = n(374084),
-    c = n(199940),
-    d = n(132514),
+    d = n(199940),
+    c = n(132514),
     u = n(520761),
-    g = n(985018),
-    m = n(659233);
-
-function p(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = r
-        })
-    }
-    return e
-}
-
-function f(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
-        }
-        return n
-    })(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-let h = [],
-    b = function(e) {
+    m = n(985018),
+    g = n(659233);
+let x = [],
+    h = function(e) {
         let {
             guildId: t
-        } = e, b = (0, l.yK)([d.A], () => {
-            var e;
-            return null != (e = d.A.getSettings().resourceChannels) ? e : h
-        }), x = i.useMemo(() => b.map(e => f(p({}, e), {
+        } = e, h = (0, l.yK)([c.A], () => c.A.getSettings().resourceChannels ?? x), _ = s.useMemo(() => h.map(e => ({
+            ...e,
             id: e.channelId
-        })), [b]), {
-            handleDragStart: j,
-            handleDragReset: _,
-            handleDragComplete: O
-        } = (0, a.A)(x, c.WA), v = i.useCallback((e, n) => {
-            let r = d.A.getSettings();
-            null != r && ((0, c.px)(e), (0, c.W5)(t, r).then(() => {
-                (0, c.E0)(t, e.channelId, n)
+        })), [h]), {
+            handleDragStart: A,
+            handleDragReset: p,
+            handleDragComplete: f
+        } = (0, a.A)(_, d.WA), j = s.useCallback((e, n) => {
+            let i = c.A.getSettings();
+            null != i && ((0, d.px)(e), (0, d.W5)(t, i).then(() => {
+                (0, d.E0)(t, e.channelId, n)
             }))
-        }, [t]), y = i.useCallback(() => {
-            if (null != t) return (0, s.mMO)(async () => {
+        }, [t]), N = s.useCallback(() => {
+            if (null != t) return (0, r.mMO)(async () => {
                 let {
                     default: e
                 } = await n.e("36354").then(n.bind(n, 983161));
-                return n => (0, r.jsx)(e, f(p({}, n), {
+                return n => (0, i.jsx)(e, {
+                    ...n,
                     guildId: t,
-                    onSave: c.px,
-                    onIconUpload: v
-                }))
+                    onSave: d.px,
+                    onIconUpload: j
+                })
             })
-        }, [t, v]);
-        return (0, r.jsxs)("div", {
-            className: m.C5,
-            children: [b.map((e, n) => (0, r.jsx)(u.A, {
+        }, [t, j]);
+        return (0, i.jsxs)("div", {
+            className: g.C5,
+            children: [h.map((e, n) => (0, i.jsx)(u.A, {
                 guildId: t,
                 resourceChannel: e,
                 index: n,
-                onDragStart: j,
-                onDragReset: _,
-                onDragComplete: O
-            }, e.channelId)), b.length < o.CW && (0, r.jsxs)(s.DUT, {
-                className: m.Bw,
-                onClick: y,
-                children: [(0, r.jsx)(s.U1e, {
+                onDragStart: A,
+                onDragReset: p,
+                onDragComplete: f
+            }, e.channelId)), h.length < o.CW && (0, i.jsxs)(r.DUT, {
+                className: g.Bw,
+                onClick: N,
+                children: [(0, i.jsx)(r.U1e, {
                     size: "xs",
                     color: "currentColor"
-                }), (0, r.jsx)(s.Text, {
+                }), (0, i.jsx)(r.Text, {
                     variant: "text-md/normal",
                     color: "none",
-                    children: g.intl.string(g.t["w9/qGY"])
+                    children: m.intl.string(m.t["w9/qGY"])
                 })]
             })]
         })

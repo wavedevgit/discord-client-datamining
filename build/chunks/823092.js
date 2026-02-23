@@ -3,46 +3,42 @@ n.d(t, {
     L_: () => u,
     gl: () => c,
     ms: () => d
-}), n(896048), n(65821);
-var r = n(627968),
-    i = n(64700),
-    l = n(83257),
-    s = n(203982),
-    a = n(115063),
+});
+var i = n(627968),
+    s = n(64700),
+    a = n(83257),
+    r = n(203982),
+    l = n(115063),
     o = n(652215);
-let c = i.createContext(void 0);
+let c = s.createContext(void 0);
 
 function d(e) {
     let {
         children: t
-    } = e, n = i.useRef(l.n3), [d, u] = i.useState(!1), _ = i.useCallback(e => {
-        var t;
-        u(null != (t = null == e ? void 0 : e.some(e => {
-            var t;
-            return e.showNotice() && !(null == (t = e.canCloseEarly) ? void 0 : t.call(e))
-        })) && t), n.current = l.n3
-    }, []), p = i.useCallback(e => {
+    } = e, n = s.useRef(a.n3), [d, u] = s.useState(!1), _ = s.useCallback(e => {
+        u(e?.some(e => e.showNotice() && !e.canCloseEarly?.()) ?? !1), n.current = a.n3
+    }, []), m = s.useCallback(e => {
         if (d) {
-            (0, a.fO)({
+            (0, l.fO)({
                 duration: 300,
                 intensity: n.current
-            }), n.current = Math.min(n.current + l.pe, l.OZ), s._.dispatch(o.jej.EMPHASIZE_NOTICE);
+            }), n.current = Math.min(n.current + a.pe, a.OZ), r._.dispatch(o.jej.EMPHASIZE_NOTICE);
             return
         }
         e()
-    }, [d]), m = i.useMemo(() => ({
-        navigateWithValidation: p,
+    }, [d]), A = s.useMemo(() => ({
+        navigateWithValidation: m,
         showNotice: d,
         handleStoreUpdate: _
-    }), [p, d, _]);
-    return (0, r.jsx)(c.Provider, {
-        value: m,
+    }), [m, d, _]);
+    return (0, i.jsx)(c.Provider, {
+        value: A,
         children: t
     })
 }
 
 function u() {
-    let e = i.useContext(c);
+    let e = s.useContext(c);
     if (null == e) throw Error("useNoticeContext must be used within a NoticeProvider");
     return e
 }

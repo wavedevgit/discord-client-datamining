@@ -1,74 +1,41 @@
-/** chunk id: 179389, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => y,
-    i: () => x
-}), n(747238), n(896048), n(228524);
-var r = n(627968),
-    l = n(64700),
-    i = n(503698),
-    a = n.n(i),
-    s = n(791332),
-    o = n.n(s),
-    c = n(421380),
-    d = n(481859),
-    u = n(558179),
-    p = n(371794),
-    h = n(985018),
-    m = n(663533);
-
-function g(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-
-function _(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            g(e, t, n[t])
-        })
-    }
-    return e
-}
-
-function b(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
-        }
-        return n
-    })(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-let f = /^!\[([^\]]*)\]\(asset:\/\/(\d+)\)/,
-    x = b(_({}, u.A.rules), {
-        heading: b(_({}, u.A.rules.heading), {
-            react(e, t, n) {
-                let l = "h".concat(Math.min(Math.max(2, e.level + 1), 4));
-                return (0, r.jsx)(d.A, {
-                    tag: l,
-                    children: t(e.content, n)
-                }, n.key)
+/** chunk id: 179389, original params: e,t,a (module,exports,require) **/
+a.d(t, {
+    A: () => v,
+    i: () => g
+});
+var n = a(627968),
+    i = a(64700),
+    s = a(503698),
+    l = a.n(s),
+    r = a(791332),
+    o = a.n(r),
+    c = a(158954),
+    d = a(481859),
+    u = a(558179),
+    h = a(371794),
+    m = a(985018),
+    p = a(663533);
+let _ = /^!\[([^\]]*)\]\(asset:\/\/(\d+)\)/,
+    g = {
+        ...u.A.rules,
+        heading: {
+            ...u.A.rules.heading,
+            react(e, t, a) {
+                let i = `h${Math.min(Math.max(2,e.level+1),4)}`;
+                return (0, n.jsx)(d.A, {
+                    tag: i,
+                    children: t(e.content, a)
+                }, a.key)
             }
-        }),
+        },
         assetImage: {
             order: 5,
             match(e, t) {
-                let n = e.match(f);
-                if (null != n) {
-                    let e = n[2],
-                        r = t.assets.find(t => t.id === e);
-                    return null != r && [...n, r, t.applicationId]
+                let a = e.match(_);
+                if (null != a) {
+                    let e = a[2],
+                        n = t.assets.find(t => t.id === e);
+                    return null != n && [...a, n, t.applicationId]
                 }
                 return !1
             },
@@ -77,19 +44,24 @@ let f = /^!\[([^\]]*)\]\(asset:\/\/(\d+)\)/,
                 alt: e[1],
                 applicationId: e[4]
             }),
-            react: (e, t, n) => (0, r.jsx)("div", {
-                className: m.c6,
-                children: (0, r.jsx)("img", {
+            react: (e, t, a) => (0, n.jsx)("div", {
+                className: p.c6,
+                children: (0, n.jsx)("img", {
                     alt: e.alt,
-                    src: (0, p.YE)(e.applicationId, e.asset, 800),
-                    className: m.LY
+                    src: (0, h.YE)(e.applicationId, e.asset, 800),
+                    className: p.LY
                 })
-            }, n.key)
+            }, a.key)
         }
-    }),
-    v = o().parserFor(x),
-    j = o().reactFor(o().ruleOutput(x, "react"));
-class A extends l.PureComponent {
+    },
+    x = o().parserFor(g),
+    A = o().reactFor(o().ruleOutput(g, "react"));
+class C extends i.PureComponent {
+    state = {
+        collapsed: !0,
+        collapsable: !0
+    };
+    _container;
     componentDidMount() {
         if (null != this._container) {
             let {
@@ -100,58 +72,57 @@ class A extends l.PureComponent {
             })
         }
     }
+    handleToggleCollapse = () => {
+        this.setState({
+            collapsed: !this.state.collapsed
+        })
+    };
+    setContentContainerRef = e => {
+        this._container = e
+    };
     render() {
         let {
             applicationId: e,
             description: t,
-            blurb: n,
-            className: l,
-            assets: i
+            blurb: a,
+            className: i,
+            assets: s
         } = this.props, {
-            collapsed: s,
+            collapsed: r,
             collapsable: o
         } = this.state;
-        return (0, r.jsxs)("div", {
-            className: l,
-            children: [(0, r.jsx)("div", {
-                className: a()({
-                    [m.yZ]: o && s
+        return (0, n.jsxs)("div", {
+            className: i,
+            children: [(0, n.jsx)("div", {
+                className: l()({
+                    [p.yZ]: o && r
                 }),
-                children: (0, r.jsxs)("div", {
+                children: (0, n.jsxs)("div", {
                     ref: this.setContentContainerRef,
-                    children: [(0, r.jsx)("div", {
-                        className: m.I0,
-                        children: n
-                    }), (0, r.jsx)(u.A, {
-                        className: m.h_,
-                        parser: v,
-                        output: j,
+                    children: [(0, n.jsx)("div", {
+                        className: p.I0,
+                        children: a
+                    }), (0, n.jsx)(u.A, {
+                        className: p.h_,
+                        parser: x,
+                        output: A,
                         state: {
-                            assets: i,
+                            assets: s,
                             applicationId: e
                         },
                         children: t
                     })]
                 })
-            }), o ? (0, r.jsx)(c.$n, {
-                className: m.OZ,
-                onClick: this.handleToggleCollapse,
-                color: c.$n.Colors.PRIMARY,
-                children: s ? h.intl.string(h.t.DxcOXA) : h.intl.string(h.t.rD6EaA)
+            }), o ? (0, n.jsx)("div", {
+                className: p.OZ,
+                children: (0, n.jsx)(c.$nd, {
+                    variant: "secondary",
+                    onClick: this.handleToggleCollapse,
+                    text: r ? m.intl.string(m.t.DxcOXA) : m.intl.string(m.t.rD6EaA),
+                    fullWidth: !0
+                })
             }) : null]
         })
     }
-    constructor(...e) {
-        super(...e), g(this, "state", {
-            collapsed: !0,
-            collapsable: !0
-        }), g(this, "_container", void 0), g(this, "handleToggleCollapse", () => {
-            this.setState({
-                collapsed: !this.state.collapsed
-            })
-        }), g(this, "setContentContainerRef", e => {
-            this._container = e
-        })
-    }
 }
-let y = A
+let v = C

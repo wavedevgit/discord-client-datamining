@@ -1,51 +1,51 @@
-/** chunk id: 176019, original params: e,t,n (module,exports,require) **/
+/** chunk id: 176019, original params: e,t,a (module,exports,require) **/
 "use strict";
-n.r(t), n.d(t, {
-    default: () => D,
-    waitForCSSLoad: () => N
-}), n(896048), n(65821);
-var r = n(627968),
-    a = n(64700),
-    i = n(311907),
-    s = n(684013),
-    l = n(964486),
-    o = n(573435),
-    c = n(626584),
-    d = n(87001),
-    u = n(923917),
-    _ = n(555528),
-    p = n(309010),
-    f = n(531685),
-    b = n(723702),
-    m = n(837921),
-    g = n(9302),
-    h = n(365971),
-    A = n(777334),
-    x = n(41984),
-    v = n(200042),
-    y = n(833551),
-    I = n(395011),
-    C = n(682763),
-    T = n(222506),
-    w = n(203322),
-    O = n(644434),
-    j = n(652215);
-n(703552), n(921955);
-let E = !b.isPlatformEmbedded && !1,
-    S = new c.A("AppOverlay");
+a.r(t), a.d(t, {
+    default: () => O,
+    waitForCSSLoad: () => L
+});
+var n = a(627968),
+    r = a(64700),
+    i = a(311907),
+    s = a(684013),
+    l = a(964486),
+    o = a(573435),
+    c = a(626584),
+    _ = a(87001),
+    d = a(923917),
+    u = a(555528),
+    m = a(309010),
+    f = a(531685),
+    p = a(723702),
+    g = a(837921),
+    h = a(9302),
+    b = a(365971),
+    A = a(777334),
+    I = a(41984),
+    v = a(200042),
+    x = a(833551),
+    C = a(395011),
+    y = a(682763),
+    S = a(222506),
+    T = a(203322),
+    E = a(644434),
+    N = a(652215);
+a(703552), a(921955);
+let w = !p.isPlatformEmbedded && !1,
+    P = new c.A("AppOverlay");
 
-function N(e, t) {
-    return new Promise((n, r) => {
-        let a = Date.now();
+function L(e, t) {
+    return new Promise((a, n) => {
+        let r = Date.now();
         t.current = setInterval(() => {
             if (function() {
                     let t = Array.from(e.document.querySelectorAll('link[rel="stylesheet"]')),
-                        n = e.document.styleSheets,
-                        r = new Map;
-                    for (let e of n) null != e.href && r.set(e.href, e);
+                        a = e.document.styleSheets,
+                        n = new Map;
+                    for (let e of a) null != e.href && n.set(e.href, e);
                     for (let e of t) {
                         if (null == e.href) continue;
-                        let t = r.get(e.href);
+                        let t = n.get(e.href);
                         if (null == t) return !1;
                         try {
                             if (0 === t.cssRules.length) return !1
@@ -53,125 +53,124 @@ function N(e, t) {
                     }
                     return !0
                 }()) {
-                n(), clearInterval(t.current);
+                a(), clearInterval(t.current);
                 return
             }
-            Date.now() - a > 12e4 && (r(Error("Timed out waiting for CSS to load")), clearInterval(t.current))
+            Date.now() - r > 12e4 && (n(Error("Timed out waiting for CSS to load")), clearInterval(t.current))
         }, 200)
     })
 }
-async function P(e, t) {
-    let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 1e3,
-        r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 3;
-    if (b.isPlatformEmbedded) {
+async function R(e, t) {
+    let a = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 1e3,
+        n = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 3;
+    if (p.isPlatformEmbedded) {
         try {
-            await m.Ay.isAlwaysOnTop(t)
+            await g.Ay.isAlwaysOnTop(t)
         } catch (e) {
-            S.error("Window does not exist while trying to show inactive", e), (0, A.pj)(e, x.Ue.OutOfProcess)
+            P.error("Window does not exist while trying to show inactive", e), (0, A.pj)(e, I.Ue.OutOfProcess)
         }
-        for (let i = 0; i < r; i++) try {
-            if (!await m.Ay.waitForIPCReady(n, e)) throw Error("IPC not ready");
-            m.Ay.showInactive(t);
+        for (let r = 0; r < n; r++) try {
+            if (!await g.Ay.waitForIPCReady(a, e)) throw Error("IPC not ready");
+            g.Ay.showInactive(t);
             return
         } catch (e) {
-            var a;
-            if ((null == (a = e.message) ? void 0 : a.includes("IPC")) && i < r - 1) {
-                let t = n / 2 * Math.pow(2, i + 1);
-                S.error("Failed to show inactive, retrying in ".concat(t, "ms"), e), await new Promise(e => setTimeout(e, t))
-            } else throw (0, A.pj)(e, x.Ue.OutOfProcess), e
+            if (e.message?.includes("IPC") && r < n - 1) {
+                let t = a / 2 * Math.pow(2, r + 1);
+                P.error(`Failed to show inactive, retrying in ${t}ms`, e), await new Promise(e => setTimeout(e, t))
+            } else throw (0, A.pj)(e, I.Ue.OutOfProcess), e
         }
     }
 }
 
-function G() {
-    s.A.setFocusedPID(g.DEV_PID, null)
+function k() {
+    s.A.setFocusedPID(h.DEV_PID, null)
 }
 
-function k() {
+function M() {
     s.A.setFocusedPID(null, null)
 }
-let D = a.memo(function(e) {
+let O = r.memo(function(e) {
     let t, {
-        withTitleBar: n,
+        withTitleBar: a,
         windowKey: c
     } = e;
-    t = (0, i.bG)([d.A], () => d.A.getWindow(c)), (0, l.Ay)(() => {
-        if (null != t) return E && (t.document.hasFocus() && s.A.setFocusedPID(g.DEV_PID, null), t.addEventListener("focus", G), t.addEventListener("blur", k)), () => {
-            E && (t.removeEventListener("focus", G), t.removeEventListener("blur", k))
+    t = (0, i.bG)([_.A], () => _.A.getWindow(c)), (0, l.Ay)(() => {
+        if (null != t) return w && (t.document.hasFocus() && s.A.setFocusedPID(h.DEV_PID, null), t.addEventListener("focus", k), t.addEventListener("blur", M)), () => {
+            w && (t.removeEventListener("focus", k), t.removeEventListener("blur", M))
         }
     });
-    let m = function(e, t) {
-            let n, r, o = (0, i.bG)([I.A], () => !b.isPlatformEmbedded || I.A.isWindowHandleInitialized()),
-                c = (0, i.bG)([d.A], () => d.A.getWindow(e)),
-                u = (0, i.bG)([I.A], () => I.A.getFocusedPID()),
-                m = a.useMemo(() => !b.isPlatformEmbedded || null != u && u !== g.UNSET_PID, [u]),
-                [A, v] = a.useState(!1),
-                T = a.useRef(!1),
-                O = a.useCallback(() => {
-                    let e = I.A.getTargetPID(),
-                        n = null != p.A.getVoiceChannelId();
-                    s.A.track(j.HAw.OVERLAY_INITIALIZED, {
-                        voice_widget_connected: n,
-                        text_widget_connected: I.A.isPinned(j.uss.TEXT),
-                        overlay_render_method: x.Ue[y.default.getOverlayMethod(e)],
-                        unpinned_widget_types: _.A.getAllUnpinnedPinnedWidgets(t)
-                    }), (0, C.Fd)()
+    let g = function(e, t) {
+            let a, n, o = (0, i.bG)([C.A], () => !p.isPlatformEmbedded || C.A.isWindowHandleInitialized()),
+                c = (0, i.bG)([_.A], () => _.A.getWindow(e)),
+                d = (0, i.bG)([C.A], () => C.A.getFocusedPID()),
+                g = r.useMemo(() => !p.isPlatformEmbedded || null != d && d !== h.UNSET_PID, [d]),
+                [A, v] = r.useState(!1),
+                S = r.useRef(!1),
+                E = r.useCallback(() => {
+                    let e = C.A.getTargetPID(),
+                        a = null != m.A.getVoiceChannelId();
+                    s.A.track(N.HAw.OVERLAY_INITIALIZED, {
+                        voice_widget_connected: a,
+                        text_widget_connected: C.A.isPinned(N.uss.TEXT),
+                        overlay_render_method: I.Ue[x.default.getOverlayMethod(e)],
+                        unpinned_widget_types: u.A.getAllUnpinnedPinnedWidgets(t)
+                    }), (0, y.Fd)()
                 }, [t]),
-                E = a.useRef(!1),
-                G = a.useRef(null),
-                k = a.useCallback(async (e, t) => {
+                w = r.useRef(!1),
+                k = r.useRef(null),
+                M = r.useCallback(async (e, t) => {
                     try {
-                        if (await N(e, G), E.current) return;
-                        (0, w.A)("cssLoaded", !0)
+                        if (await L(e, k), w.current) return;
+                        (0, T.A)("cssLoaded", !0)
                     } catch (e) {
-                        S.error("Timed out waiting for CSS to load", e), s.A.setOverlayCrashed(I.A.getTargetPID(), e), (0, w.A)("errorMessage", "CSS failed load");
+                        P.error("Timed out waiting for CSS to load", e), s.A.setOverlayCrashed(C.A.getTargetPID(), e), (0, T.A)("errorMessage", "CSS failed load");
                         return
                     }
                     try {
-                        if (await P(e, t), E.current) return;
-                        (0, C.Mq)()
+                        if (await R(e, t), w.current) return;
+                        (0, y.Mq)()
                     } catch (e) {
-                        s.A.setOverlayCrashed(I.A.getTargetPID(), e), (0, w.A)("errorMessage", "showInactive failed");
+                        s.A.setOverlayCrashed(C.A.getTargetPID(), e), (0, T.A)("errorMessage", "showInactive failed");
                         return
                     }
                     await new Promise(t => {
                         e.setTimeout(() => t(), 100)
-                    }), E.current || (v(!0), O())
-                }, [O]),
-                D = a.useRef(!1);
-            return a.useEffect(() => {
-                if (!T.current && ((0, w.A)("hasUseEffectFired", !0), (0, w.A)("trackedPidFocused", m), o)) {
-                    if (null == c) return void(0, w.A)("errorMessage", "No targetOverlayWindow");
-                    if (!m) {
-                        D.current || (s.A.updateOverlayState(I.A.getTargetPID(), x.AR.WAITING_FOR_PID_FOCUS, "AppOverlay - not focused"), D.current = !0);
+                    }), w.current || (v(!0), E())
+                }, [E]),
+                O = r.useRef(!1);
+            return r.useEffect(() => {
+                if (!S.current && ((0, T.A)("hasUseEffectFired", !0), (0, T.A)("trackedPidFocused", g), o)) {
+                    if (null == c) return void(0, T.A)("errorMessage", "No targetOverlayWindow");
+                    if (!g) {
+                        O.current || (s.A.updateOverlayState(C.A.getTargetPID(), I.AR.WAITING_FOR_PID_FOCUS, "AppOverlay - not focused"), O.current = !0);
                         return
                     }
-                    T.current = !0, (0, w.A)("reactInitializationStarted", !0), k(c, e)
+                    S.current = !0, (0, T.A)("reactInitializationStarted", !0), M(c, e)
                 }
-            }, [k, m, e, c, o]), (0, l.l0)(() => {
-                clearInterval(G.current), E.current = !0
-            }), n = (0, i.bG)([f.A], () => f.A.windowSize(null != c ? (0, h.Q2)(c) : void 0)), r = (0, i.bG)([I.A], () => I.A.getFocusedWindowHandle()), a.useEffect(() => {
+            }, [M, g, e, c, o]), (0, l.l0)(() => {
+                clearInterval(k.current), w.current = !0
+            }), a = (0, i.bG)([f.A], () => f.A.windowSize(null != c ? (0, b.Q2)(c) : void 0)), n = (0, i.bG)([C.A], () => C.A.getFocusedWindowHandle()), r.useEffect(() => {
                 let e, t;
-                if (null != c && A && c.innerHeight === n.height && c.innerWidth === n.width) return e = c.requestAnimationFrame(() => {
+                if (null != c && A && c.innerHeight === a.height && c.innerWidth === a.width) return e = c.requestAnimationFrame(() => {
                     e = c.requestAnimationFrame(() => {
-                        c.clearTimeout(t), s.A.overlayUIFocusedPid(null != u ? u : g.UNSET_PID, r)
+                        c.clearTimeout(t), s.A.overlayUIFocusedPid(d ?? h.UNSET_PID, n)
                     })
                 }), t = c.setTimeout(() => {
-                    c.cancelAnimationFrame(e), s.A.overlayUIFocusedPid(null != u ? u : g.UNSET_PID, r)
+                    c.cancelAnimationFrame(e), s.A.overlayUIFocusedPid(d ?? h.UNSET_PID, n)
                 }, 500), () => {
                     c.cancelAnimationFrame(e), c.clearTimeout(t)
                 }
-            }, [A, c, u, r, n]), A
-        }(c, O.G),
-        A = (0, i.bG)([I.A], () => I.A.getFocusedPID()),
-        D = (0, i.bG)([T.A], () => T.A.isInputLocked(A), [A]);
-    return m ? (0, r.jsxs)(u.A, {
-        themeOverride: j.NJ8.MIDNIGHT,
-        appContext: j.BRT.OVERLAY,
-        withTitleBar: n,
+            }, [A, c, d, n, a]), A
+        }(c, E.G),
+        A = (0, i.bG)([C.A], () => C.A.getFocusedPID()),
+        O = (0, i.bG)([S.A], () => S.A.isInputLocked(A), [A]);
+    return g ? (0, n.jsxs)(d.A, {
+        themeOverride: N.NJ8.MIDNIGHT,
+        appContext: N.BRT.OVERLAY,
+        withTitleBar: a,
         windowKey: c,
         title: "Discord Overlay",
-        hideModals: D,
-        children: [(0, r.jsx)(v.A, {}), (0, r.jsx)(o.Al, {})]
+        hideModals: O,
+        children: [(0, n.jsx)(v.A, {}), (0, n.jsx)(o.Al, {})]
     }) : null
 })

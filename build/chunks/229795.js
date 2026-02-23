@@ -1,9 +1,9 @@
 /** chunk id: 229795, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => o
-}), n(896048);
-var r = n(73153),
-    i = n(636401),
+});
+var i = n(73153),
+    r = n(636401),
     l = n(629471),
     a = n(360469),
     s = n(818348);
@@ -23,19 +23,19 @@ let o = {
                     grid_lock_state: a
                 }
             } = e, o = t.application.id;
-            if (null != o) r.h.dispatch({
+            if (null != o) i.h.dispatch({
                 type: "FRAME_SET_ORIENTATION_LOCK_STATE",
                 applicationId: o,
                 lockState: n,
                 pictureInPictureLockState: l
-            }), r.h.dispatch({
+            }), i.h.dispatch({
                 type: "EMBEDDED_ACTIVITY_SET_ORIENTATION_LOCK_STATE",
                 applicationId: o,
                 lockState: n,
                 pictureInPictureLockState: l,
                 gridLockState: a
             });
-            else throw new i.A({
+            else throw new r.A({
                 errorCode: s.Lw.INVALID_COMMAND
             }, "No application.")
         }

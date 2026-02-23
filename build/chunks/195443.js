@@ -1,10 +1,10 @@
-/** chunk id: 195443, original params: e,n,t (module,exports,require) **/
-t.d(n, {
-    z: () => i
+/** chunk id: 195443, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    z: () => l
 });
-var l = t(311907),
-    r = t(157550);
+var i = n(311907),
+    r = n(157550);
 
-function i(e) {
-    return (0, l.bG)([r.A], () => r.A.isSpam(e), [e])
+function l(e) {
+    return (0, i.bG)([r.A], () => r.A.isSpam(e), [e])
 }

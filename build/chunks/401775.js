@@ -1,5 +1,6 @@
 /** chunk id: 401775, original params: e,t,n (module,exports,require) **/
 e.exports = {
-    V: "grid__80f54",
-    k: "container__80f54"
+    Vg: "grid__80f54",
+    e6: "hasSquareItems__80f54",
+    kL: "container__80f54"
 }

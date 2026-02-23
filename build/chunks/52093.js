@@ -1,78 +1,78 @@
 /** chunk id: 52093, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    Ay: () => d,
-    L5: () => c
+    Ay: () => c,
+    L5: () => d
 });
 var a = n(627968);
 n(64700);
-var l = n(503698),
-    r = n.n(l),
-    i = n(397927);
+var i = n(503698),
+    s = n.n(i),
+    l = n(397927);
 n(714510), n(92246), n(985018);
-var s = n(718493);
+var r = n(718493);
 
 function o(e) {
     let {
         children: t,
         isComplete: n,
-        hasNextStep: l
+        hasNextStep: i
     } = e;
     return (0, a.jsxs)("li", {
-        className: r()(s.gY, {
-            [s.HP]: n
+        className: s()(r.gY, {
+            [r.HP]: n
         }, {
-            [s.h4]: l
+            [r.h4]: i
         }),
         children: [(0, a.jsxs)("div", {
-            className: s.cJ,
+            className: r.cJ,
             children: [(0, a.jsx)("div", {
-                className: s.$P,
-                children: n && (0, a.jsx)(i.rOg, {
-                    className: s.ap,
-                    color: i.LU0.colors.WHITE
+                className: r.$P,
+                children: n && (0, a.jsx)(l.rOg, {
+                    className: r.ap,
+                    color: l.LU0.colors.WHITE
                 })
-            }), l && (0, a.jsx)("div", {
-                className: s.UK
+            }), i && (0, a.jsx)("div", {
+                className: r.UK
             })]
         }), (0, a.jsx)("div", {
-            className: s.M7,
+            className: r.M7,
             children: t
         })]
     })
 }
 
-function c(e) {
+function d(e) {
     let {
         children: t
     } = e;
-    return (0, a.jsx)(i.Text, {
+    return (0, a.jsx)(l.Text, {
         color: "text-muted",
         variant: "text-xs/medium",
         children: t
     })
 }
-let d = function(e) {
+let c = function(e) {
     let {
         children: t,
         heading: n,
-        steps: l
+        steps: i
     } = e;
     return (0, a.jsxs)("div", {
-        className: s.iE,
+        className: r.iE,
         children: [(0, a.jsx)("div", {
-            className: s.Mj,
-            children: (0, a.jsx)(i.Heading, {
-                className: s.R_,
+            className: r.Mj,
+            children: (0, a.jsx)(l.Heading, {
+                className: r.R_,
                 color: "text-strong",
                 variant: "text-xs/semibold",
                 children: n
             })
         }), (0, a.jsx)("div", {
-            className: s.lp,
+            className: r.lp,
             children: (0, a.jsx)("ul", {
-                children: l.map((e, t) => (0, a.jsx)(o, {
+                children: i.map((e, t) => (0, a.jsx)(o, {
                     isComplete: e.isComplete,
-                    hasNextStep: t < l.length - 1,
+                    hasNextStep: t < i.length - 1,
                     children: e.renderContent()
                 }, t))
             })

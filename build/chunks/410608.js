@@ -1,34 +1,34 @@
-/** chunk id: 410608, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => p
+/** chunk id: 410608, original params: e,t,a (module,exports,require) **/
+a.d(t, {
+    A: () => h
 });
-var r = n(627968);
-n(64700);
-var l = n(984516),
-    i = n(292455),
-    a = n(701508),
-    s = n(979590),
-    o = n(783531),
-    c = n(166393),
-    d = n(985018),
-    u = n(791218);
-let p = function(e) {
+var n = a(627968);
+a(64700);
+var i = a(984516),
+    s = a(292455),
+    l = a(701508),
+    r = a(979590),
+    o = a(783531),
+    c = a(166393),
+    d = a(985018),
+    u = a(791218);
+let h = function(e) {
     let {
         onScroll: t,
-        onSelectApplication: n
+        onSelectApplication: a
     } = e;
-    return (0, r.jsxs)(o.A, {
+    return (0, n.jsxs)(o.A, {
         onScroll: t,
-        children: [(0, r.jsx)(a.A, {
+        children: [(0, n.jsx)(l.A, {
             title: d.intl.format(d.t.kEcZ97, {}),
             description: d.intl.string(d.t.XxFts9),
-            children: (0, r.jsx)(i.A, {})
-        }), (0, r.jsx)(s.A, {
-            children: (0, r.jsxs)("div", {
+            children: (0, n.jsx)(s.A, {})
+        }), (0, n.jsx)(r.A, {
+            children: (0, n.jsxs)("div", {
                 className: u.h,
-                children: [(0, r.jsx)(c.A, {
-                    onSelectApplication: n
-                }), (0, r.jsx)(l.A, {
+                children: [(0, n.jsx)(c.A, {
+                    onSelectApplication: a
+                }), (0, n.jsx)(i.A, {
                     padding: !0
                 })]
             })

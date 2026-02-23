@@ -4,31 +4,31 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var r = n(503698),
-    l = n.n(r),
+var l = n(503698),
+    s = n.n(l),
     a = n(397927),
-    s = n(226551);
+    r = n(226551);
 
 function o(e) {
     let {
         bar: t,
         children: n,
-        className: r,
+        className: l,
         inModal: o,
-        title: c
+        title: d
     } = e;
     return (0, i.jsxs)(a.ZpM, {
         editable: !0,
-        className: l()(s.Nr, r, {
-            [s.zE]: o
+        className: s()(r.Nr, l, {
+            [r.zE]: o
         }),
         children: [(0, i.jsxs)("div", {
-            className: l()(s.MY, {
-                [s.zE]: o
+            className: s()(r.MY, {
+                [r.zE]: o
             }),
             children: [(0, i.jsx)(a.Text, {
                 variant: "text-sm/semibold",
-                children: c
+                children: d
             }), (0, i.jsx)("div", {
                 children: t
             })]

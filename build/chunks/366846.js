@@ -1,56 +1,56 @@
 /** chunk id: 366846, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    D: () => h
-}), n(896048);
-var r = n(627968),
-    i = n(64700),
+    D: () => _
+});
+var i = n(627968),
+    s = n(64700),
     l = n(503698),
-    s = n.n(l),
+    r = n.n(l),
     a = n(158954),
     o = n(311907),
-    c = n(397927),
-    d = n(241499),
+    d = n(397927),
+    c = n(241499),
     u = n(555337),
-    g = n(564864),
-    m = n(501381),
-    p = n(985018),
-    f = n(82196);
+    m = n(564864),
+    g = n(501381),
+    x = n(985018),
+    h = n(82196);
 
-function h(e) {
+function _(e) {
     let {
         requireTerms: t,
         rules: n
-    } = e, l = (0, o.bG)([u.A], () => u.A.getProps().guild), h = null == l ? void 0 : l.id, b = i.useCallback(e => {
-        if (null == h || null == n) return null;
-        g.A.setPendingInviteRules(h, e, [...n])
-    }, [h, n]), x = i.useCallback(e => {
-        if (null == h) return null;
-        g.A.setPendingInviteRules(h, t, e)
-    }, [h, t]);
-    return null == l ? null : null == n ? (0, r.jsx)(c.y$y, {}) : (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(c.dOG, {
-            label: p.intl.string(p.t.d21uOr),
-            description: p.intl.string(p.t.SzpUBF),
-            onChange: b,
+    } = e, l = (0, o.bG)([u.A], () => u.A.getProps().guild), _ = l?.id, A = s.useCallback(e => {
+        if (null == _ || null == n) return null;
+        m.A.setPendingInviteRules(_, e, [...n])
+    }, [_, n]), p = s.useCallback(e => {
+        if (null == _) return null;
+        m.A.setPendingInviteRules(_, t, e)
+    }, [_, t]);
+    return null == l ? null : null == n ? (0, i.jsx)(d.y$y, {}) : (0, i.jsxs)(i.Fragment, {
+        children: [(0, i.jsx)(d.dOG, {
+            label: x.intl.string(x.t.d21uOr),
+            description: x.intl.string(x.t.SzpUBF),
+            onChange: A,
             checked: t
-        }), t && (0, r.jsx)(m.o, {
+        }), t && (0, i.jsx)(g.o, {
             guildId: l.id
-        }), (0, r.jsx)("div", {
-            className: s()(f.aO, {
-                [f.r9]: !t
+        }), (0, i.jsx)("div", {
+            className: r()(h.aO, {
+                [h.r9]: !t
             }),
-            children: (0, r.jsxs)("div", {
+            children: (0, i.jsxs)("div", {
                 inert: t ? void 0 : "",
-                children: [(0, r.jsx)(a.DZT, {
+                children: [(0, i.jsx)(a.DZT, {
                     variant: "text-xs/bold",
                     color: "text-muted",
-                    className: f.lo,
-                    children: p.intl.string(p.t.XcAzbo)
-                }), (0, r.jsx)(d._, {
+                    className: h.lo,
+                    children: x.intl.string(x.t.XcAzbo)
+                }), (0, i.jsx)(c._, {
                     guild: l,
                     rules: n,
-                    setRules: x,
+                    setRules: p,
                     disabled: !t
                 })]
             })

@@ -1,83 +1,68 @@
-/** chunk id: 277978, original params: e,t,r (module,exports,require) **/
-r.d(t, {
-    CustomThemesShareModalWrapper: () => m
-}), r(896048), r(747238), r(812715);
-var n = r(627968),
-    l = r(64700),
-    a = r(353640),
-    o = r(478437),
-    s = r(311907),
-    i = r(141468),
-    c = r(963852),
-    u = r(544028),
-    d = r(95701),
-    f = r(954571),
-    b = r(467135),
-    p = r(739031),
-    g = r(457417),
-    _ = r(567951),
-    y = r(285188),
-    h = r(652215);
-let m = e => {
+/** chunk id: 277978, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    CustomThemesShareModalWrapper: () => b
+});
+var a = n(627968),
+    l = n(64700),
+    r = n(353640),
+    s = n(478437),
+    o = n(311907),
+    i = n(141468),
+    c = n(963852),
+    u = n(544028),
+    d = n(95701),
+    _ = n(954571),
+    h = n(467135),
+    f = n(739031),
+    p = n(457417),
+    m = n(567951),
+    g = n(285188),
+    C = n(652215);
+let b = e => {
     let {
         transitionState: t,
-        onClose: r
-    } = e, m = (0, l.useRef)((0, g.E3)()).current, {
-        selectedDestinations: O,
-        messageText: w,
-        canSend: j,
-        setSend: C,
-        updateMessage: v,
-        updateChannel: P
-    } = (0, a.P)(m), [S, k] = l.useState(!1), {
-        colors: E,
-        chassisMixAmount: x,
-        gradientAngle: A
-    } = (0, b.ko)(), M = (0, s.bG)([u.A], () => u.A.theme), D = (0, l.useMemo)(() => ({
-        colors: E.map(e => e.replace("#", "")),
-        gradient_angle: A,
-        base_mix: x,
-        base_theme: (0, p.O)(M)
-    }), [E, A, x, M]), I = l.useMemo(() => (0, d.createChannelRecord)({
+        onClose: n
+    } = e, b = (0, l.useRef)((0, p.E3)()).current, {
+        selectedDestinations: k,
+        messageText: A,
+        canSend: w,
+        setSend: x,
+        updateMessage: E,
+        updateChannel: M
+    } = (0, r.P)(b), [y, S] = l.useState(!1), {
+        colors: v,
+        chassisMixAmount: T,
+        gradientAngle: j
+    } = (0, h.ko)(), I = (0, o.bG)([u.A], () => u.A.theme), P = (0, l.useMemo)(() => ({
+        colors: v.map(e => e.replace("#", "")),
+        gradient_angle: j,
+        base_mix: T,
+        base_theme: (0, f.O)(I)
+    }), [v, j, T, I]), R = l.useMemo(() => (0, d.createChannelRecord)({
         id: "1",
-        type: o.r.DM
-    }), []), R = l.useMemo(() => (0, i.rh)(function(e) {
-        for (var t = 1; t < arguments.length; t++) {
-            var r = null != arguments[t] ? arguments[t] : {},
-                n = Object.keys(r);
-            "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-                return Object.getOwnPropertyDescriptor(r, e).enumerable
-            }))), n.forEach(function(t) {
-                var n;
-                n = r[t], t in e ? Object.defineProperty(e, t, {
-                    value: n,
-                    enumerable: !0,
-                    configurable: !0,
-                    writable: !0
-                }) : e[t] = n
-            })
-        }
-        return e
-    }({}, (0, c.Ay)({
-        channelId: I.id,
-        content: ""
-    }))), [I]);
+        type: s.r.DM
+    }), []), D = l.useMemo(() => (0, i.rh)({
+        ...(0, c.Ay)({
+            channelId: R.id,
+            content: ""
+        })
+    }), [R]);
     (0, l.useEffect)(() => {
-        v(R), P(I), k(!0)
-    }, [R, I, v, P]);
-    let T = l.useCallback(async () => {
-        if (!j()) return Promise.reject();
-        await (0, y.N)(O, D, w), f.default.track(h.HAw.CUSTOM_THEME_SHARED, {
-            num_destinations: O.length
-        }), await r()
-    }, [D, O, w, j, r]);
+        E(D), M(R), S(!0)
+    }, [D, R, E, M]);
+    let O = l.useCallback(async () => {
+        if (!w()) return Promise.reject();
+        await (0, g.N)(k, P, A), _.default.track(C.HAw.CUSTOM_THEME_SHARED, {
+            num_destinations: k.length
+        }), await n()
+    }, [P, k, A, w, n]);
     return ((0, l.useEffect)(() => {
-        C(T)
-    }, [T, C]), S) ? (0, n.jsx)(g.KH.Provider, {
-        value: m,
-        children: (0, n.jsx)(_.y, {
+        x(O)
+    }, [O, x]), y) ? (0, a.jsx)(p.KH.Provider, {
+        value: b,
+        children: (0, a.jsx)(m.y, {
             transitionState: t,
-            onClose: r
+            onClose: n
         })
     }) : null
 }

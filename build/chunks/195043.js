@@ -1,27 +1,26 @@
 /** chunk id: 195043, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    x: () => a
+    x: () => l
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(358776),
-    l = n(360619);
+var s = n(358776),
+    a = n(360619);
 
-function s(e) {
-    var t;
+function r(e) {
     let {
-        setting: n,
-        children: r
-    } = e, i = (0, l.PH)(), s = (0, l.AC)(n), a = i[n];
-    return null != a.predicate && (null == (t = a.predicate) ? void 0 : t.call(a)) !== !0 || s.size > 0 && !s.has(n) ? null : r
+        setting: t,
+        children: n
+    } = e, i = (0, a.PH)(), s = (0, a.AC)(t), r = i[t];
+    return null != r.predicate && r.predicate?.() !== !0 || s.size > 0 && !s.has(t) ? null : n
 }
 
-function a(e) {
+function l(e) {
     let {
         setting: t,
         children: n
     } = e;
-    return (0, i.dk)("AccountProfileCardSetting") ? n : (0, r.jsx)(s, {
+    return (0, s.dk)("AccountProfileCardSetting") ? n : (0, i.jsx)(r, {
         setting: t,
         children: n
     })

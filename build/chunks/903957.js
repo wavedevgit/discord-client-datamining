@@ -1,8 +1,10 @@
-/** chunk id: 903957, original params: e,t,n (module,exports,require) **/
-"use strict";
-var r = {
+/** chunk id: 903957, original params: e,a,t (module,exports,require) **/
+t.r(e.exports = {
     video: "video__1689b",
     container: "container__1689b",
+    paragraph: "paragraph__1689b",
+    list: "list__1689b",
+    listItem: "listItem__1689b",
     image: "image__1689b",
     title: "title__1689b",
     lead: "lead__1689b",
@@ -16,5 +18,4 @@ var r = {
     premiumBanner: "premiumBanner__1689b",
     premiumIcon: "premiumIcon__1689b",
     date: "date__1689b"
-};
-n.r(e.exports = r)
+})

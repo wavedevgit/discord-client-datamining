@@ -1,43 +1,43 @@
 /** chunk id: 133134, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => p
 });
 var l = n(627968),
-    r = n(64700),
+    a = n(64700),
     i = n(311907),
-    a = n(49229),
+    r = n(49229),
     s = n(58149),
-    o = n(662502),
-    d = n(632738),
+    d = n(662502),
+    o = n(632738),
     c = n(734057),
     u = n(994500),
-    m = n(562153),
-    p = n(652215),
-    b = n(985018);
-let _ = e => {
+    _ = n(562153),
+    m = n(652215),
+    x = n(985018);
+let p = e => {
     let {
         user: t,
         channelId: n,
-        reportId: _,
+        reportId: p,
         reportType: g
-    } = e, x = (0, i.bG)([u.A], () => u.A.isBlocked(t.id), [t.id]), h = (0, i.bG)([c.A], () => c.A.getChannel(n), [n]), v = r.useMemo(() => m.Ay.getName(null == h ? void 0 : h.guild_id, null == h ? void 0 : h.id, t), [h, t]), f = r.useCallback(() => {
-        s.Ay.trackWithMetadata(p.HAw.IAR_BLOCK_USER_BUTTON_CLICKED, {
+    } = e, h = (0, i.bG)([u.A], () => u.A.isBlocked(t.id), [t.id]), A = (0, i.bG)([c.A], () => c.A.getChannel(n), [n]), b = a.useMemo(() => _.Ay.getName(A?.guild_id, A?.id, t), [A, t]), v = a.useCallback(() => {
+        s.Ay.trackWithMetadata(m.HAw.IAR_BLOCK_USER_BUTTON_CLICKED, {
             other_user_id: t.id,
-            report_id: _
-        }), a.A.blockUser(t.id, {
+            report_id: p
+        }), r.A.blockUser(t.id, {
             location: "ReportMenuBlockUser-iOS"
         }).then(() => {
-            o.A.showBlockSuccessToast(t.id, n)
+            d.A.showBlockSuccessToast(t.id, n)
         })
-    }, [t, _, n]);
-    return (0, l.jsx)(d.PQ, {
-        title: b.intl.formatToPlainString(b.t["Q1o/f3"], {
-            username: v
+    }, [t, p, n]);
+    return (0, l.jsx)(o.PQ, {
+        title: x.intl.formatToPlainString(x.t["Q1o/f3"], {
+            username: b
         }),
-        description: b.intl.string(b.t.G08MKu),
-        buttonText: x ? b.intl.string(b.t.ot2tSp) : b.intl.string(b.t["l+7PZY"]),
-        buttonDisabled: x,
-        onButtonPress: f,
-        buttonVariant: "application" === g.name && x ? "secondary" : "critical-primary"
+        description: x.intl.string(x.t.G08MKu),
+        buttonText: h ? x.intl.string(x.t.ot2tSp) : x.intl.string(x.t["l+7PZY"]),
+        buttonDisabled: h,
+        onButtonPress: v,
+        buttonVariant: "application" === g.name && h ? "secondary" : "critical-primary"
     })
 }

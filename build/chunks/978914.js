@@ -1,30 +1,30 @@
 /** chunk id: 978914, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    I: () => f
-}), n(896048);
-var l = n(735438),
-    r = n.n(l),
-    i = n(311907),
+    I: () => A
+});
+var i = n(735438),
+    l = n.n(i),
+    s = n(311907),
     a = n(562465),
-    s = n(73153),
+    r = n(73153),
     o = n(320501),
     c = n(222823),
-    u = n(401565),
-    d = n(652215);
+    d = n(401565),
+    u = n(652215);
 let h = new Set,
-    p = null;
+    m = null;
 
-function f(e) {
+function A(e) {
     var t;
     let {
         id: n
     } = e, {
-        loaded: l,
-        message: r,
+        loaded: i,
+        message: l,
         error: a
-    } = (0, i.cf)([u.A, o.A, c.Ay], () => {
+    } = (0, s.cf)([d.A, o.A, c.Ay], () => {
         let e = c.Ay.lastMessageId(n),
-            t = u.A.getMessageRequestPreview(n);
+            t = d.A.getMessageRequestPreview(n);
         if (null == t.message && null != e) {
             let t = o.A.getMessage(n, e);
             if (null != t) return {
@@ -34,37 +34,37 @@ function f(e) {
             }
         }
         return t
-    }, [n]), s = (0, i.bG)([u.A], () => u.A.shouldLoadMessageRequestPreview(n), [n]);
-    return !l && null == r && s && (t = n, h.add(t), null == p && (p = setTimeout(m, 0))), {
-        loaded: l,
+    }, [n]), r = (0, s.bG)([d.A], () => d.A.shouldLoadMessageRequestPreview(n), [n]);
+    return !i && null == l && r && (t = n, h.add(t), null == m && (m = setTimeout(g, 0))), {
+        loaded: i,
         error: a,
-        message: r
-    }
-}
-async function m() {
-    try {
-        for (; !r().isEmpty(h);) await g()
-    } finally {
-        p = null
+        message: l
     }
 }
 async function g() {
+    try {
+        for (; !l().isEmpty(h);) await p()
+    } finally {
+        m = null
+    }
+}
+async function p() {
     let e = Array.from(h).slice(0, 25);
     try {
         let t = await a.Bo.get({
-            url: d.Rsh.MESSAGE_REQUESTS_SUPPLEMENTAL_DATA,
+            url: u.Rsh.MESSAGE_REQUESTS_SUPPLEMENTAL_DATA,
             query: {
                 channel_ids: e
             },
             rejectWithError: !0
         });
-        s.h.dispatch({
+        r.h.dispatch({
             type: "LOAD_MESSAGE_REQUESTS_SUPPLEMENTAL_DATA_SUCCESS",
             requestedChannelIds: e,
             supplementalData: t.body
         })
     } catch (t) {
-        s.h.dispatch({
+        r.h.dispatch({
             type: "LOAD_MESSAGE_REQUESTS_SUPPLEMENTAL_DATA_ERROR",
             requestedChannelIds: e
         })

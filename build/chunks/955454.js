@@ -1,31 +1,32 @@
 /** chunk id: 955454, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => O
-}), n(896048), n(638769);
-var r = n(627968),
-    l = n(64700),
-    i = n(735438),
-    s = n.n(i),
+    A: () => C
+});
+var i = n(627968),
+    s = n(64700),
+    l = n(735438),
+    r = n.n(l),
     a = n(311907),
     o = n(73153),
     c = n(334738),
-    u = n(835369),
-    d = n(218152),
-    p = n(970278),
-    h = n(747926),
-    g = n(734057),
-    f = n(403362),
+    d = n(835369),
+    u = n(218152),
+    h = n(970278),
+    A = n(747926),
+    p = n(734057),
+    g = n(403362),
     m = n(661191),
-    b = n(652215),
-    A = n(37411),
-    y = n(357976);
+    _ = n(652215),
+    f = n(37411),
+    x = n(357976);
 
-function O(e) {
+function C(e) {
     let {
         channel: t,
         channelRecord: n,
-        deleteChannel: i
-    } = e, O = (0, a.yK)([p.A, g.A], () => s()(p.A.getThreadsForParent(n.guild_id, n.id)).values().filter(e => {
+        deleteChannel: l
+    } = e, C = (0, a.yK)([h.A, p.A], () => r()(h.A.getThreadsForParent(n.guild_id, n.id)).values().filter(e => {
         let {
             id: n
         } = e;
@@ -34,26 +35,26 @@ function O(e) {
         let {
             id: t
         } = e;
-        return g.A.getChannel(t)
-    }).filter(f.Vq).sort((e, t) => m.default.compare(e.id, t.id)).value(), [t.oldestReadMessageId, n.guild_id, n.id]), j = l.useCallback((e, t) => {
-        (0, h.JA)(e, t, A.H9.INBOX)
+        return p.A.getChannel(t)
+    }).filter(g.Vq).sort((e, t) => m.default.compare(e.id, t.id)).value(), [t.oldestReadMessageId, n.guild_id, n.id]), E = s.useCallback((e, t) => {
+        (0, A.JA)(e, t, f.H9.INBOX)
     }, []);
-    return l.useEffect(() => {
-        null == n || !t.isFullyLoaded || t.hasError || t.collapsed || 0 !== O.length || o.h.wait(() => {
+    return s.useEffect(() => {
+        null == n || !t.isFullyLoaded || t.hasError || t.collapsed || 0 !== C.length || o.h.wait(() => {
             (0, c.ack)(t.channelId, {
-                section: b.JJy.INBOX,
-                object: b.ZSU.ACK_INBOX_FORUM_NO_POSTS,
-                objectType: b.AnalyticsObjectTypes.ACK_AUTOMATIC
-            }, !0), i(t.channelId)
+                section: _.JJy.INBOX,
+                object: _.ZSU.ACK_INBOX_FORUM_NO_POSTS,
+                objectType: _.AnalyticsObjectTypes.ACK_AUTOMATIC
+            }, !0), l(t.channelId)
         })
-    }), (0, r.jsx)("div", {
-        className: y.k,
-        children: O.map(e => (0, r.jsx)(d.Cp, {
+    }), (0, i.jsx)("div", {
+        className: x.k,
+        children: C.map(e => (0, i.jsx)(u.Cp, {
             channel: n,
-            children: (0, r.jsx)(u.Ay, {
-                className: y.u,
+            children: (0, i.jsx)(d.Ay, {
+                className: x.u,
                 threadId: e.id,
-                goToThread: j
+                goToThread: E
             })
         }, e.id))
     })

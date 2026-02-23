@@ -1,17 +1,17 @@
-/** chunk id: 659566, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => o
+/** chunk id: 659566, original params: n,t,e (module,exports,require) **/
+e.d(t, {
+    A: () => c
 });
-var r = n(627968);
-n(64700);
-var i = n(397927),
-    c = n(957565),
-    l = n(985018);
+var i = e(627968);
+e(64700);
+var l = e(397927),
+    r = e(957565),
+    a = e(985018);
 
-function o(e) {
-    return c.p5 ? (0, r.jsx)(i.Drp, {
+function c(n) {
+    return r.p5 ? (0, i.jsx)(l.Drp, {
         id: "copy-channel-topic",
-        label: l.intl.string(l.t.Tb3Vst),
-        action: () => (0, c.C)(e.topic)
+        label: a.intl.string(a.t.Tb3Vst),
+        action: () => (0, r.C)(n.topic)
     }) : null
 }

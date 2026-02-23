@@ -1,132 +1,106 @@
-/** chunk id: 518926, original params: e,t,r (module,exports,require) **/
-r.d(t, {
-    A: () => u
-}), r(896048);
-var n = r(627968),
-    i = r(64700),
-    l = r(106778),
-    s = r(21161),
-    a = r(851110);
+/** chunk id: 518926, original params: t,e,i (module,exports,require) **/
+i.d(e, {
+    A: () => d
+});
+var s = i(627968),
+    n = i(64700),
+    l = i(106778),
+    a = i(21161),
+    r = i(851110);
 let o = {
         xMin: -40,
         xMax: 40,
         yMin: -40,
         yMax: -70
     },
-    c = (e, t, r) => null == r ? t : e * r / 100,
-    u = i.memo(function(e) {
+    u = (t, e, i) => null == i ? e : t * i / 100,
+    d = n.memo(function(t) {
         let {
-            confettiTarget: t,
-            colors: r,
-            emojiURL: u,
-            numBursts: d,
-            particlesPerBurst: p,
-            offsetXPercentageMax: f,
+            confettiTarget: e,
+            colors: i,
+            emojiURL: d,
+            numBursts: c,
+            particlesPerBurst: f,
+            offsetXPercentageMax: p,
             offsetXPercentageMin: h,
             offsetYPercentageMax: m,
-            offsetYPercentageMin: y,
-            customConfettiCanvas: g,
-            speedValues: b = o,
-            dragCoefficientValue: O = 1.66,
-            onAnimationEnd: j
-        } = e, [A, x] = i.useState(null), {
-            confettiCanvas: v
-        } = i.useContext(s.x), P = (0, l.f9)(null != g ? g : v, A), [S, _] = i.useState(!1);
-        i.useEffect(() => {
-            S && (null == j || j())
+            offsetYPercentageMin: g,
+            customConfettiCanvas: A,
+            speedValues: x = o,
+            dragCoefficientValue: _ = 1.66,
+            onAnimationEnd: y
+        } = t, [R, S] = n.useState(null), {
+            confettiCanvas: C
+        } = n.useContext(a.x), T = (0, l.f9)(A ?? C, R), [I, b] = n.useState(!1);
+        n.useEffect(() => {
+            I && y?.()
         });
-        let w = i.useMemo(() => {
-            if (null != u) return [{
-                src: u,
+        let j = n.useMemo(() => {
+            if (null != d) return [{
+                src: d,
                 colorize: !1
             }]
-        }, [u]);
-        return i.useEffect(() => {
-            if (null == t) return;
-            let e = Array(null != d ? d : 4).fill(0);
-            return e = e.map((r, n) => setTimeout(() => {
-                P.createMultipleConfetti(function(e, t, r, n, i) {
-                    var l, s;
-                    let u = arguments.length > 5 && void 0 !== arguments[5] ? arguments[5] : o,
-                        d = arguments.length > 6 && void 0 !== arguments[6] ? arguments[6] : 1.66,
-                        p = c(e.width, 100, r),
-                        f = c(e.height, 75, i),
-                        h = c(e.width, 350, t),
-                        m = c(e.height, 75, n),
+        }, [d]);
+        return n.useEffect(() => {
+            if (null == e) return;
+            let t = Array(c ?? 4).fill(0);
+            return t = t.map((i, s) => setTimeout(() => {
+                T.createMultipleConfetti(function(t, e, i, s, n) {
+                    let l = arguments.length > 5 && void 0 !== arguments[5] ? arguments[5] : o,
+                        a = arguments.length > 6 && void 0 !== arguments[6] ? arguments[6] : 1.66,
+                        d = u(t.width, 100, i),
+                        c = u(t.height, 75, n),
+                        f = u(t.width, 350, e),
+                        p = u(t.height, 75, s),
                         {
-                            xMin: y,
-                            xMax: g,
-                            yMin: b,
-                            yMax: O
-                        } = u;
-                    return l = function(e) {
-                        for (var t = 1; t < arguments.length; t++) {
-                            var r = null != arguments[t] ? arguments[t] : {},
-                                n = Object.keys(r);
-                            "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-                                return Object.getOwnPropertyDescriptor(r, e).enumerable
-                            }))), n.forEach(function(t) {
-                                var n;
-                                n = r[t], t in e ? Object.defineProperty(e, t, {
-                                    value: n,
-                                    enumerable: !0,
-                                    configurable: !0,
-                                    writable: !0
-                                }) : e[t] = n
-                            })
-                        }
-                        return e
-                    }({}, a.Mw), s = s = {
+                            xMin: h,
+                            xMax: m,
+                            yMin: g,
+                            yMax: A
+                        } = l;
+                    return {
+                        ...r.Mw,
                         position: {
                             type: "static-random",
                             minValue: {
-                                x: e.left + p,
-                                y: e.top + f
+                                x: t.left + d,
+                                y: t.top + c
                             },
                             maxValue: {
-                                x: e.left + h,
-                                y: e.top + m
+                                x: t.left + f,
+                                y: t.top + p
                             }
                         },
                         velocity: {
                             type: "static-random",
                             minValue: {
-                                x: y,
-                                y: b
+                                x: h,
+                                y: g
                             },
                             maxValue: {
-                                x: g,
-                                y: O
+                                x: m,
+                                y: A
                             }
                         },
                         size: {
                             type: "static-random",
-                            minValue: a.wn,
-                            maxValue: a.wn
+                            minValue: r.wn,
+                            maxValue: r.wn
                         },
                         dragCoefficient: {
                             type: "static",
-                            value: d
+                            value: a
                         }
-                    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
-                        var r = Object.keys(e);
-                        if (Object.getOwnPropertySymbols) {
-                            var n = Object.getOwnPropertySymbols(e);
-                            r.push.apply(r, n)
-                        }
-                        return r
-                    })(Object(s)).forEach(function(e) {
-                        Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(s, e))
-                    }), l
-                }(t.getBoundingClientRect(), f, h, m, y, b, O), null != p ? p : 50), n === e.length - 1 && null != j && _(!0)
-            }, 60 * n)), () => {
-                for (let t of e) clearTimeout(t)
+                    }
+                }(e.getBoundingClientRect(), p, h, m, g, x, _), f ?? 50), s === t.length - 1 && null != y && b(!0)
+            }, 60 * s)), () => {
+                for (let e of t) clearTimeout(e)
             }
-        }, [P, t, d, p, f, h, m, y, b, O, j]), (0, n.jsx)(l.K_, {
-            ref: x,
-            sprites: null != w ? w : a.uI,
-            colors: null != r ? r : a._t,
-            spriteWidth: a.wn,
-            spriteHeight: a.wn
+        }, [T, e, c, f, p, h, m, g, x, _, y]), (0, s.jsx)(l.K_, {
+            ref: S,
+            sprites: j ?? r.uI,
+            colors: i ?? r._t,
+            spriteWidth: r.wn,
+            spriteHeight: r.wn
         })
     })

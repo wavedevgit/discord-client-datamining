@@ -1,38 +1,38 @@
 /** chunk id: 835121, original params: e,t,r (module,exports,require) **/
 r.d(t, {
-    A: () => l
-}), r(321073), r(896048);
-var n = r(64700);
+    A: () => n
+}), r(321073);
+var s = r(64700);
 
-function l(e) {
+function n(e) {
     let {
         autocompletes: t,
         mode: r
     } = e;
-    return n.useCallback(e => {
+    return s.useCallback(e => {
         let {
-            filterFn: n,
-            getAutocompleteRowItem: l,
-            getAutocompleteGroupItem: s
+            filterFn: s,
+            getAutocompleteRowItem: n,
+            getAutocompleteGroupItem: l
         } = e, a = 0, i = [], o = [];
         for (let e of t) {
             let t = [],
                 {
-                    group: c,
-                    results: u
+                    group: u,
+                    results: c
                 } = e;
-            if (n(e)) {
-                for (let e of u) {
-                    let n = l({
+            if (s(e)) {
+                for (let e of c) {
+                    let s = n({
                         result: e,
                         modeType: r.type,
-                        group: c
+                        group: u
                     });
-                    t.push(n)
+                    t.push(s)
                 }
-                a += u.length;
-                let e = s({
-                    group: c,
+                a += c.length;
+                let e = l({
+                    group: u,
                     rows: t
                 });
                 i.push(e), o.push(...t)

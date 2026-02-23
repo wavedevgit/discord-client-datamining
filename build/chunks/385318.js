@@ -33,59 +33,59 @@ function E(e) {
         renderInputDevices: E = !1,
         renderInputProfiles: S = !1,
         renderInputModes: x = !1,
-        renderInputVolume: C = !1,
-        renderOutputVolume: D = !1,
-        renderDeafen: V = !1,
-        minimal: j = !1,
-        onSelect: k,
-        appContext: L,
-        onInteraction: M
+        renderInputVolume: y = !1,
+        renderOutputVolume: C = !1,
+        renderDeafen: D = !1,
+        minimal: V = !1,
+        onSelect: j,
+        appContext: k,
+        onInteraction: L
     } = e, {
-        analyticsLocations: N
+        analyticsLocations: M
     } = (0, c.Ay)();
     (0, A.A)({
         type: l.ImpressionTypes.MENU,
         name: l.ImpressionNames.AUDIO_DEVICE_MENU,
         properties: {
-            location_stack: N
+            location_stack: M
         }
     });
-    let P = (0, g.A)(L),
-        y = (0, T.H)({
+    let N = (0, g.A)(k),
+        P = (0, T.H)({
             deviceType: v.oh.AUDIO_INPUT,
-            analyticsLocations: N,
-            asSubmenu: j
+            analyticsLocations: M,
+            asSubmenu: V
         }),
         B = (0, T.H)({
             deviceType: v.oh.AUDIO_OUTPUT,
-            analyticsLocations: N,
-            asSubmenu: j
+            analyticsLocations: M,
+            asSubmenu: V
         }),
-        H = (0, s.bG)([m.A], () => m.A.getActiveInputProfile()),
-        X = (0, p.A)(N),
-        K = (0, I.A)(N),
-        w = (0, u.A)(N),
-        G = (0, b.A)(N),
+        H = (0, s.bG)([m.Ay], () => m.Ay.getActiveInputProfile()),
+        X = (0, p.A)(M),
+        K = (0, I.A)(M),
+        w = (0, u.A)(M),
+        G = (0, b.A)(M),
         Y = d.x.DEFAULT,
-        F = m.A.isSelfDeaf(Y),
-        Q = (0, s.bG)([m.A], () => m.A.getMode()),
+        F = m.Ay.isSelfDeaf(Y),
+        Q = (0, s.bG)([m.Ay], () => m.Ay.getMode()),
         R = Q === h.TBI.VOICE_ACTIVITY ? h.TBI.PUSH_TO_TALK : h.TBI.VOICE_ACTIVITY;
     return (0, n.jsx)(r.A, {
         object: h.ZSU.CONTEXT_MENU,
         children: (0, n.jsxs)(a.W1t, {
             "data-menu-migrated": !0,
-            onSelect: k,
-            onInteraction: M,
+            onSelect: j,
+            onInteraction: L,
             className: O.MK,
             onClose: t,
             navId: "audio-device-context",
             variant: "fixed",
             "aria-label": f.intl.string(f.t.ZR1Ss6),
-            children: [E && y, i && B, S && X, !j && x && H !== U.my.STUDIO ? (0, n.jsx)(a.rXV, {
+            children: [E && P, i && B, S && X, !V && x && H !== U.m.STUDIO ? (0, n.jsx)(a.rXV, {
                 label: f.intl.string(f.t["pS+K2L"]),
                 children: K
             }) : null, (0, n.jsxs)(a.rXV, {
-                children: [C ? w : null, D ? G : null, j ? (0, n.jsx)(a.bXX, {}) : null, j && V ? (0, n.jsx)(a.sLh, {
+                children: [y ? w : null, C ? G : null, V ? (0, n.jsx)(a.bXX, {}) : null, V && D ? (0, n.jsx)(a.sLh, {
                     id: "deafen",
                     label: f.intl.string(f.t.wjcRFX),
                     action: () => o.A.toggleSelfDeaf({
@@ -93,15 +93,15 @@ function E(e) {
                         location: "AudioDeviceMenu"
                     }),
                     checked: F
-                }, "self-deafen") : null, j && E && _.isPlatformEmbedded ? (0, n.jsx)(a.sLh, {
+                }, "self-deafen") : null, V && E && _.isPlatformEmbedded ? (0, n.jsx)(a.sLh, {
                     checked: Q === h.TBI.PUSH_TO_TALK,
                     id: "input-mode",
                     label: f.intl.string(f.t.Q8gkVL),
                     action: () => o.A.setMode(R, void 0, void 0, {
-                        analyticsLocations: N
+                        analyticsLocations: M
                     }),
-                    disabled: H === U.my.STUDIO
-                }) : null, P]
+                    disabled: H === U.m.STUDIO
+                }) : null, N]
             })]
         })
     })

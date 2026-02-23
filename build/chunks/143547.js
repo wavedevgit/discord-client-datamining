@@ -1,180 +1,134 @@
-/** chunk id: 143547, original params: t,e,n (module,exports,require) **/
-n.d(e, {
-    default: () => E
+/** chunk id: 143547, original params: t,i,n (module,exports,require) **/
+n.d(i, {
+    default: () => A
 });
-var r = n(627968),
-    i = n(64700),
-    o = n(110259),
+var e = n(627968),
+    s = n(64700),
+    r = n(110259),
     l = n(421380),
-    s = n(397927),
-    c = n(49229),
-    a = n(754302),
+    a = n(397927),
+    o = n(49229),
+    c = n(754302),
     d = n(632738),
     u = n(954571),
-    f = n(975571),
-    O = n(562153),
-    p = n(994288),
-    m = n(235627),
-    g = n(652215),
-    j = n(985018),
-    x = n(107724);
+    x = n(975571),
+    m = n(562153),
+    I = n(994288),
+    E = n(235627),
+    N = n(652215),
+    g = n(985018),
+    f = n(107724);
 
-function b(t) {
-    for (var e = 1; e < arguments.length; e++) {
-        var n = null != arguments[e] ? arguments[e] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(t) {
-            return Object.getOwnPropertyDescriptor(n, t).enumerable
-        }))), r.forEach(function(e) {
-            var r;
-            r = n[e], e in t ? Object.defineProperty(t, e, {
-                value: r,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : t[e] = r
-        })
-    }
-    return t
-}
-
-function y(t, e) {
-    return e = null != e ? e : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(e)) : (function(t, e) {
-        var n = Object.keys(t);
-        if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(t);
-            n.push.apply(n, r)
-        }
-        return n
-    })(Object(e)).forEach(function(n) {
-        Object.defineProperty(t, n, Object.getOwnPropertyDescriptor(e, n))
-    }), t
-}
-
-function I() {
-    return (0, r.jsxs)(a.q, {
-        children: [(0, r.jsx)(a.B, {
-            title: j.intl.string(j.t.ruhGkg),
-            description: j.intl.string(j.t["/FWKKC"]),
-            icon: s.yr3
-        }), (0, r.jsx)(a.B, {
-            title: j.intl.string(j.t.N9v3eq),
-            description: j.intl.string(j.t.ddpuJg),
-            icon: s.yr3
-        }), (0, r.jsx)(a.B, {
-            title: j.intl.string(j.t["4ycGE0"]),
-            description: j.intl.string(j.t["5yfN+o"]),
-            icon: s.mir
+function _() {
+    return (0, e.jsxs)(c.q, {
+        children: [(0, e.jsx)(c.B, {
+            title: g.intl.string(g.t.ruhGkg),
+            description: g.intl.string(g.t["/FWKKC"]),
+            icon: a.yr3
+        }), (0, e.jsx)(c.B, {
+            title: g.intl.string(g.t.N9v3eq),
+            description: g.intl.string(g.t.ddpuJg),
+            icon: a.yr3
+        }), (0, e.jsx)(c.B, {
+            title: g.intl.string(g.t["4ycGE0"]),
+            description: g.intl.string(g.t["5yfN+o"]),
+            icon: a.mir
         })]
     })
 }
 
-function E(t) {
+function A(t) {
     let {
-        user: e,
+        user: i,
         guildId: n,
-        channelId: a,
-        onIgnore: E,
-        onBlock: h,
-        location: N = "ContextMenu"
-    } = t, v = function(t, e) {
-        if (null == t) return {};
-        var n, r, i, o = {};
-        if ("u" > typeof Reflect && Reflect.ownKeys) {
-            for (i = 0, n = Reflect.ownKeys(t); i < n.length; i++) r = n[i], !(e.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(t, r) && (o[r] = t[r]);
-            return o
-        }
-        if (o = function(t, e) {
-                if (null == t) return {};
-                var n, r, i = {},
-                    o = Object.getOwnPropertyNames(t);
-                for (r = 0; r < o.length; r++) n = o[r], !(e.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(t, n) && (i[n] = t[n]);
-                return i
-            }(t, e), Object.getOwnPropertySymbols)
-            for (i = 0, n = Object.getOwnPropertySymbols(t); i < n.length; i++) r = n[i], !(e.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(t, r) && (o[r] = t[r]);
-        return o
-    }(t, ["user", "guildId", "channelId", "onIgnore", "onBlock", "location"]);
-    return i.useLayoutEffect(() => () => {
-        u.default.track(g.HAw.USER_REMEDIATION_ACTION, {
-            action: m.p.DISMISS_IGNORE,
-            location: N
+        channelId: c,
+        onIgnore: A,
+        onBlock: j,
+        location: C = "ContextMenu",
+        ...h
+    } = t;
+    return s.useLayoutEffect(() => () => {
+        u.default.track(N.HAw.USER_REMEDIATION_ACTION, {
+            action: E.p.DISMISS_IGNORE,
+            location: C
         })
-    }, [N]), (0, r.jsx)(s.VoidConfirmModal, y(b({
-        confirmText: j.intl.string(j.t.ytCpKs),
-        cancelText: j.intl.string(j.t["ETE/oC"]),
+    }, [C]), (0, e.jsx)(a.VoidConfirmModal, {
+        confirmText: g.intl.string(g.t.ytCpKs),
+        cancelText: g.intl.string(g.t["ETE/oC"]),
         onConfirm: () => {
-            null == E || E(), c.A.ignoreUser(e.id, N, null != a ? a : void 0), u.default.track(g.HAw.IGNORE_USER_CONFIRMED)
+            A?.(), o.A.ignoreUser(i.id, C, c ?? void 0), u.default.track(N.HAw.IGNORE_USER_CONFIRMED)
         },
         onCancel: () => {
-            u.default.track(g.HAw.USER_REMEDIATION_ACTION, {
-                action: m.p.CANCEL_IGNORE,
-                location: N
+            u.default.track(N.HAw.USER_REMEDIATION_ACTION, {
+                action: E.p.CANCEL_IGNORE,
+                location: C
             })
         },
         impression: {
-            impressionName: o.ImpressionNames.IGNORE_USER_CONFIRMATION
+            impressionName: r.ImpressionNames.IGNORE_USER_CONFIRMATION
         },
-        confirmButtonColor: l.$n.Colors.BRAND
-    }, v), {
-        children: (0, r.jsxs)("div", {
-            className: x.kL,
-            children: [(0, r.jsxs)("div", {
-                className: x.RS,
-                children: [(0, r.jsxs)("div", {
-                    className: x.zc,
-                    children: [(0, r.jsx)(s.euF, {
-                        size: s._3J.SIZE_56,
-                        src: e.getAvatarURL(void 0, 64),
+        confirmButtonColor: l.$n.Colors.BRAND,
+        ...h,
+        children: (0, e.jsxs)("div", {
+            className: f.kL,
+            children: [(0, e.jsxs)("div", {
+                className: f.RS,
+                children: [(0, e.jsxs)("div", {
+                    className: f.zc,
+                    children: [(0, e.jsx)(a.euF, {
+                        size: a._3J.SIZE_56,
+                        src: i.getAvatarURL(void 0, 64),
                         "aria-hidden": !0
-                    }), (0, r.jsx)("div", {
-                        className: x.Kk,
-                        children: (0, r.jsx)(s.G3N, {})
+                    }), (0, e.jsx)("div", {
+                        className: f.Kk,
+                        children: (0, e.jsx)(a.G3N, {})
                     })]
-                }), (0, r.jsxs)("div", {
-                    children: [(0, r.jsx)(s.Heading, {
+                }), (0, e.jsxs)("div", {
+                    children: [(0, e.jsx)(a.Heading, {
                         variant: "heading-xl/bold",
                         color: "text-strong",
-                        children: j.intl.format(j.t["WrQD/Y"], {
-                            username: O.Ay.getName(n, a, e)
+                        children: g.intl.format(g.t["WrQD/Y"], {
+                            username: m.Ay.getName(n, c, i)
                         })
-                    }), (0, r.jsx)(s.Text, {
+                    }), (0, e.jsx)(a.Text, {
                         variant: "text-md/medium",
                         color: "text-default",
-                        children: j.intl.string(j.t.JKL1u1)
+                        children: g.intl.string(g.t.JKL1u1)
                     })]
                 })]
-            }), (0, r.jsx)(I, {}), (0, r.jsxs)("div", {
-                className: x.l_,
-                children: [(0, r.jsx)(d.Y0, {
-                    title: j.intl.string(j.t["1v01gh"]),
-                    children: (0, r.jsx)(d.PQ, {
-                        title: j.intl.string(j.t.bwxY30),
-                        description: j.intl.string(j.t.NTnf1T),
+            }), (0, e.jsx)(_, {}), (0, e.jsxs)("div", {
+                className: f.l_,
+                children: [(0, e.jsx)(d.Y0, {
+                    title: g.intl.string(g.t["1v01gh"]),
+                    children: (0, e.jsx)(d.PQ, {
+                        title: g.intl.string(g.t.bwxY30),
+                        description: g.intl.string(g.t.NTnf1T),
                         titleVariant: "text-md/medium",
                         descriptionVariant: "text-xs/medium",
-                        buttonText: j.intl.string(j.t.QdfUHE),
+                        buttonText: g.intl.string(g.t.QdfUHE),
                         onButtonPress: () => {
-                            u.default.track(g.HAw.USER_REMEDIATION_ACTION, {
-                                action: m.p.GOTO_BLOCK,
-                                location: N
-                            }), (0, s.s7G)(), (0, s.qfG)(t => (0, r.jsx)(p.default, y(b({}, t), {
-                                user: e,
+                            u.default.track(N.HAw.USER_REMEDIATION_ACTION, {
+                                action: E.p.GOTO_BLOCK,
+                                location: C
+                            }), (0, a.s7G)(), (0, a.qfG)(t => (0, e.jsx)(I.default, {
+                                ...t,
+                                user: i,
                                 guildId: n,
-                                channelId: a,
-                                onBlock: h,
-                                onIgnore: E,
-                                location: N
-                            })))
+                                channelId: c,
+                                onBlock: j,
+                                onIgnore: A,
+                                location: C
+                            }))
                         }
                     })
-                }), (0, r.jsx)(s.Text, {
+                }), (0, e.jsx)(a.Text, {
                     variant: "text-sm/medium",
-                    className: x.FV,
-                    children: j.intl.format(j.t.Hjvqr6, {
-                        articleLink: f.A.getArticleURL(g.MVz.STEALTH_REMEDIATION_FEATURE_GUIDE)
+                    className: f.FV,
+                    children: g.intl.format(g.t.Hjvqr6, {
+                        articleLink: x.A.getArticleURL(N.MVz.STEALTH_REMEDIATION_FEATURE_GUIDE)
                     })
                 })]
             })]
         })
-    }))
+    })
 }

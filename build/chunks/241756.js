@@ -1,18 +1,19 @@
 /** chunk id: 241756, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => s
+    A: () => r
 });
-var r = n(834757),
-    l = n(562153),
-    i = n(985018);
+var i = n(834757),
+    s = n(562153),
+    l = n(985018);
 
-function s(e, t, n) {
-    let s = (0, r.AO)(n),
-        a = l.Ay.getName(e.getGuildId(), e.id, t);
-    return null == n ? a : (null == s ? void 0 : s.name) != null ? i.intl.formatToPlainString(i.t["9jpVOZ"], {
-        applicationName: null == s ? void 0 : s.name,
+function r(e, t, n) {
+    let r = (0, i.AO)(n),
+        a = s.Ay.getName(e.getGuildId(), e.id, t);
+    return null == n ? a : r?.name != null ? l.intl.formatToPlainString(l.t["9jpVOZ"], {
+        applicationName: r?.name,
         username: a
-    }) : i.intl.formatToPlainString(i.t["+h0Z59"], {
+    }) : l.intl.formatToPlainString(l.t["+h0Z59"], {
         username: a
     })
 }

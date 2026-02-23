@@ -1,53 +1,54 @@
 /** chunk id: 227004, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => A
+    A: () => f
 });
-var r = n(627968),
-    l = n(64700),
-    i = n(311907),
-    s = n(554146),
+var i = n(627968),
+    s = n(64700),
+    l = n(311907),
+    r = n(554146),
     a = n(397927),
     o = n(533550),
     c = n(624458),
-    u = n(844944),
-    d = n(513461),
-    p = n(663997),
-    h = n(652793),
-    g = n(576705),
-    f = n(221950),
+    d = n(844944),
+    u = n(513461),
+    h = n(663997),
+    A = n(652793),
+    p = n(576705),
+    g = n(221950),
     m = n(652215),
-    b = n(985018);
+    _ = n(985018);
 
-function A(e) {
+function f(e) {
     let {
         guild: t,
         selected: n
-    } = e, A = (0, i.bG)([g.A], () => g.A.can(m.xBc.KICK_MEMBERS, t)), y = (0, i.bG)([u.A], () => u.A.getSubmittedGuildJoinRequestTotal(t.id)), O = A && null != y ? y : 0;
-    l.useEffect(() => {
-        A && t.features.has(m.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED) && t.features.has(m.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL) && c.A.fetchGuildJoinRequests({
+    } = e, f = (0, l.bG)([p.A], () => p.A.can(m.xBc.KICK_MEMBERS, t)), x = (0, l.bG)([d.A], () => d.A.getSubmittedGuildJoinRequestTotal(t.id)), C = f ? x ?? 0 : 0;
+    s.useEffect(() => {
+        f && t.features.has(m.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED) && t.features.has(m.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL) && c.A.fetchGuildJoinRequests({
             guildId: t.id,
-            status: d.B5.SUBMITTED,
-            limit: p.L
+            status: u.B5.SUBMITTED,
+            limit: h.L
         })
-    }, [A, t]);
-    let j = l.useCallback(() => {
-            (0, f.aZ)(t.id)
+    }, [f, t]);
+    let E = s.useCallback(() => {
+            (0, g.aZ)(t.id)
         }, [t.id]),
-        x = (0, o.q8)(t.id, s.M.MEMBERS_LAUNCH_UPSELL);
-    return (0, r.jsx)("div", {
-        ref: x,
-        children: (0, r.jsx)(h.G, {
-            id: "members-".concat(t.id),
-            renderIcon: e => (0, r.jsx)(a.nFg, {
+        I = (0, o.q8)(t.id, r.M.MEMBERS_LAUNCH_UPSELL);
+    return (0, i.jsx)("div", {
+        ref: I,
+        children: (0, i.jsx)(A.G, {
+            id: `members-${t.id}`,
+            renderIcon: e => (0, i.jsx)(a.nFg, {
                 size: "md",
                 color: "currentColor",
                 className: e
             }),
-            text: b.intl.string(b.t.oclz3Z),
+            text: _.intl.string(_.t.oclz3Z),
             selected: n,
-            onClick: j,
-            trailing: O > 0 ? (0, r.jsx)(a.hVq, {
-                count: O
+            onClick: E,
+            trailing: C > 0 ? (0, i.jsx)(a.hVq, {
+                count: C
             }) : null
         })
     })

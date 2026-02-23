@@ -1,53 +1,52 @@
-/** chunk id: 916727, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    v: () => f
+/** chunk id: 916727, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    v: () => m
 });
-var r = n(627968);
-n(64700);
-var i = n(311907),
-    a = n(732955),
-    o = n(397927),
-    s = n(701273),
-    l = n(71393),
-    c = n(602461),
-    u = n(985018),
-    d = n(432959);
-let f = e => {
+var l = i(627968);
+i(64700);
+var n = i(311907),
+    a = i(732955),
+    s = i(397927),
+    r = i(701273),
+    c = i(71393),
+    d = i(602461),
+    o = i(985018),
+    u = i(432959);
+let m = e => {
     let {
         onClose: t,
-        listing: n,
-        guildId: f
-    } = e, p = (0, i.bG)([l.A], () => l.A.getGuild(f), [f]), _ = (0, c.A)({
-        listing: n,
-        guildId: f
+        listing: i,
+        guildId: m
+    } = e, x = (0, n.bG)([c.A], () => c.A.getGuild(m), [m]), h = (0, d.A)({
+        listing: i,
+        guildId: m
     });
-    return (0, r.jsxs)("div", {
-        className: d.RP,
-        children: [(0, r.jsx)(o.Heading, {
-            className: d.RS,
+    return (0, l.jsxs)("div", {
+        className: u.RP,
+        children: [(0, l.jsx)(s.Heading, {
+            className: u.RS,
             variant: "heading-lg/extrabold",
-            children: u.intl.format(u.t.I5dYFs, {
-                serverName: null == p ? void 0 : p.name,
-                tierName: n.name
+            children: o.intl.format(o.t.I5dYFs, {
+                serverName: x?.name,
+                tierName: i.name
             })
-        }), !_.isEmpty() && (0, r.jsx)(o.Text, {
-            className: d.sT,
+        }), !h.isEmpty() && (0, l.jsx)(s.Text, {
+            className: u.sT,
             variant: "text-sm/normal",
             color: "text-default",
-            children: u.intl.format(u.t.TnhFHv, {
-                benefits: _.asString()
+            children: o.intl.format(o.t.TnhFHv, {
+                benefits: h.asString()
             })
-        }), (0, r.jsxs)("div", {
-            className: d.o1,
-            children: [(0, r.jsx)(a.$nd, {
+        }), (0, l.jsxs)("div", {
+            className: u.o1,
+            children: [(0, l.jsx)(a.$nd, {
                 variant: "primary",
-                text: u.intl.string(u.t.WWvswD),
+                text: o.intl.string(o.t.WWvswD),
                 fullWidth: !0,
-                onClick: () => (0, s.A)("role_sub_mweb_success_modal")
-            }), (0, r.jsx)(a.$nd, {
+                onClick: () => (0, r.A)("role_sub_mweb_success_modal")
+            }), (0, l.jsx)(a.$nd, {
                 variant: "secondary",
-                text: u.intl.string(u.t.y84Dhr),
+                text: o.intl.string(o.t.y84Dhr),
                 fullWidth: !0,
                 onClick: () => t(!0)
             })]

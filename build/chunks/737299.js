@@ -1,4 +1,5 @@
 /** chunk id: 737299, original params: e,t,n (module,exports,require) **/
+"use strict";
 e.exports = {
     zt: "searchResultsWrap_a98f3b",
     XG: "scroller_a98f3b",

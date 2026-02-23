@@ -1,39 +1,23 @@
 /** chunk id: 789290, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => o
-}), n(896048);
-var r = n(64700),
+    A: () => r
+});
+var i = n(64700),
     l = n(172218),
-    i = n(521741),
-    a = n(633075);
+    a = n(521741),
+    s = n(633075);
 
-function o(e) {
+function r(e) {
     let {
         widget: t,
         onAction: n
-    } = e, [o, s] = (0, r.useState)(!1), c = t instanceof a.R ? t.applicationId : null, {
-        fetched: u
-    } = (0, i.U)(c), d = (0, r.useCallback)(e => {
-        e && (n(function(e) {
-            for (var t = 1; t < arguments.length; t++) {
-                var n = null != arguments[t] ? arguments[t] : {},
-                    r = Object.keys(n);
-                "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                    return Object.getOwnPropertyDescriptor(n, e).enumerable
-                }))), r.forEach(function(t) {
-                    var r;
-                    r = n[t], t in e ? Object.defineProperty(e, t, {
-                        value: r,
-                        enumerable: !0,
-                        configurable: !0,
-                        writable: !0
-                    }) : e[t] = r
-                })
-            }
-            return e
-        }({
-            action: "VIEW_WIDGET"
-        }, t.getProfileAnalyticsOptions())), s(!0))
+    } = e, [r, o] = (0, i.useState)(!1), c = t instanceof s.R ? t.applicationId : null, {
+        fetched: d
+    } = (0, a.U)(c), u = (0, i.useCallback)(e => {
+        e && (n({
+            action: "VIEW_WIDGET",
+            ...t.getProfileAnalyticsOptions()
+        }), o(!0))
     }, [n, t]);
-    return (0, l.K)(d, void 0, !o && (null == c || u))
+    return (0, l.K)(u, void 0, !r && (null == c || d))
 }

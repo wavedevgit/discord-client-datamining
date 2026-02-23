@@ -1,27 +1,27 @@
 /** chunk id: 177392, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     H: () => h
-}), n(896048);
-var l = n(627968),
-    r = n(64700),
-    i = n(92674),
+});
+var i = n(627968),
+    l = n(64700),
+    s = n(475539),
     a = n(311907),
-    s = n(397927),
+    r = n(397927),
     o = n(971778),
     c = n(652215),
-    u = n(985018),
-    d = n(144958);
+    d = n(985018),
+    u = n(144958);
 
 function h() {
     let e = (0, a.bG)([o.A], () => o.A.getError());
-    return e ? (0, l.jsx)(p, {
+    return e ? (0, i.jsx)(m, {
         error: e
     }) : null
 }
-let p = e => {
+let m = e => {
     let {
         error: t
-    } = e, [n, a] = (0, r.useState)(!1), h = (0, s.pnh)(!n, {
+    } = e, [n, a] = (0, l.useState)(!1), h = (0, r.pnh)(!n, {
         from: {
             opacity: 0,
             translateY: 20
@@ -34,26 +34,26 @@ let p = e => {
             opacity: 0,
             translateY: 80
         }
-    }, "respect-motion-settings"), p = (() => {
+    }, "respect-motion-settings"), m = (() => {
         switch (t) {
             case o.L.ERROR_DOWNLOADING_DEPENDENCY:
-                return u.intl.string(u.t.D9neaH);
+                return d.intl.string(d.t.D9neaH);
             case o.L.ERROR_ACTIVATING_VOICE_FILTER:
-                return u.intl.string(u.t.mNMZZg);
+                return d.intl.string(d.t.mNMZZg);
             default:
-                return u.intl.string(u.t.F8FvUy)
+                return d.intl.string(d.t.F8FvUy)
         }
     })();
-    return h(e => n ? null : (0, l.jsx)(i.animated.div, {
+    return h(e => n ? null : (0, i.jsx)(s.animated.div, {
         style: e,
-        className: d.z,
-        children: (0, l.jsxs)("div", {
-            className: d.A,
-            children: [(0, l.jsx)(s.Text, {
+        className: u.z,
+        children: (0, i.jsxs)("div", {
+            className: u.A,
+            children: [(0, i.jsx)(r.Text, {
                 variant: "text-sm/semibold",
                 color: "always-white",
-                children: p
-            }), (0, l.jsx)(s.PMB, {
+                children: m
+            }), (0, i.jsx)(r.PMB, {
                 noticeType: c.kqX.VOICE_FILTERS_ERROR,
                 onClick: () => a(!0)
             })]

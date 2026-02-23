@@ -1,100 +1,73 @@
 /** chunk id: 650724, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    D: () => b
+    D: () => x
 });
-var r = n(64700),
-    i = n(417597),
-    l = n(717125),
+var i = n(64700),
+    l = n(417597),
+    r = n(717125),
     a = n(376943),
     s = n(961350),
     o = n(734057),
-    c = n(696451),
-    u = n(71393),
-    d = n(967198),
-    p = n(287809),
+    d = n(696451),
+    c = n(71393),
+    u = n(967198),
+    _ = n(287809),
     m = n(36491),
-    f = n(219444),
-    g = n(752755),
-    _ = n(461715),
-    h = n(652215);
+    h = n(219444),
+    p = n(752755),
+    g = n(461715),
+    A = n(652215);
 
-function b(e, t) {
-    let n = (0, f.$k)(),
-        b = (0, _.CI)(e),
-        y = (0, i.bG)([c.Ay, s.default], () => {
+function x(e, t) {
+    let n = (0, h.$k)(),
+        x = (0, g.CI)(e),
+        f = (0, l.bG)([d.Ay, s.default], () => {
             let e = s.default.getId();
-            return c.Ay.isMember(null == b ? void 0 : b.guildId, e)
-        }, [b]),
-        A = (0, i.bG)([l.A], () => null != b && (null == b ? void 0 : b.channelId) != null && l.A.isChannelGated(b.guildId, b.channelId), [b]),
-        v = t.hasFlag(h.pr7.IS_CROSSPOST),
+            return d.Ay.isMember(x?.guildId, e)
+        }, [x]),
+        C = (0, l.bG)([r.A], () => null != x && x?.channelId != null && r.A.isChannelGated(x.guildId, x.channelId), [x]),
+        E = t.hasFlag(A.pr7.IS_CROSSPOST),
         {
-            rawMediaPostEmbedData: O,
-            guild: x,
-            parentChannel: E,
-            user: j,
-            selectedGuildId: C,
-            canAccess: I
-        } = (0, i.cf)([g.A, u.A, o.A, p.default, d.A], () => {
-            var e;
-            let t = null == (e = g.A.getMediaPostEmbed(null == b ? void 0 : b.threadId)) ? void 0 : e.media,
-                n = u.A.getGuild(null == b ? void 0 : b.guildId),
-                r = o.A.getChannel(null == b ? void 0 : b.channelId),
-                i = p.default.getUser(null == t ? void 0 : t.author_id),
-                l = d.A.getGuildId(),
-                s = null != r && (0, a.nc)(r);
+            rawMediaPostEmbedData: I,
+            guild: b,
+            parentChannel: T,
+            user: v,
+            selectedGuildId: S,
+            canAccess: y
+        } = (0, l.cf)([p.A, c.A, o.A, _.default, u.A], () => {
+            let e = p.A.getMediaPostEmbed(x?.threadId)?.media,
+                t = c.A.getGuild(x?.guildId),
+                n = o.A.getChannel(x?.channelId),
+                i = _.default.getUser(e?.author_id),
+                l = u.A.getGuildId(),
+                r = null != n && (0, a.nc)(n);
             return {
-                rawMediaPostEmbedData: t,
-                guild: n,
-                parentChannel: r,
+                rawMediaPostEmbedData: e,
+                guild: t,
+                parentChannel: n,
                 user: i,
                 selectedGuildId: l,
-                canAccess: s
+                canAccess: r
             }
-        }, [b]),
-        S = r.useMemo(() => {
-            var e, t;
-            let n = (0, _.tU)({
-                mediaPostEmbedData: O,
-                guild: x,
-                parentChannel: E,
-                user: j,
-                selectedGuildId: C,
-                canAccess: I
+        }, [x]),
+        N = i.useMemo(() => {
+            let e = (0, g.tU)({
+                mediaPostEmbedData: I,
+                guild: b,
+                parentChannel: T,
+                user: v,
+                selectedGuildId: S,
+                canAccess: y
             });
-            return null == n ? null : (e = function(e) {
-                for (var t = 1; t < arguments.length; t++) {
-                    var n = null != arguments[t] ? arguments[t] : {},
-                        r = Object.keys(n);
-                    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                        return Object.getOwnPropertyDescriptor(n, e).enumerable
-                    }))), r.forEach(function(t) {
-                        var r;
-                        r = n[t], t in e ? Object.defineProperty(e, t, {
-                            value: r,
-                            enumerable: !0,
-                            configurable: !0,
-                            writable: !0
-                        }) : e[t] = r
-                    })
-                }
-                return e
-            }({}, n), t = t = {
-                user: j
-            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-                var n = Object.keys(e);
-                if (Object.getOwnPropertySymbols) {
-                    var r = Object.getOwnPropertySymbols(e);
-                    n.push.apply(n, r)
-                }
-                return n
-            })(Object(t)).forEach(function(n) {
-                Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-            }), e)
-        }, [O, x, E, j, C, I]);
-    return r.useEffect(() => {
-        if ((null == b ? void 0 : b.threadId) != null) {
-            let e = g.A.getEmbedFetchState(b.threadId);
-            !0 !== n || e !== g.e.NOT_FETCHED || y && !1 === A || !y && v || (0, m.O0)(null == b ? void 0 : b.threadId)
+            return null == e ? null : {
+                ...e,
+                user: v
+            }
+        }, [I, b, T, v, S, y]);
+    return i.useEffect(() => {
+        if (x?.threadId != null) {
+            let e = p.A.getEmbedFetchState(x.threadId);
+            !0 !== n || e !== p.e.NOT_FETCHED || f && !1 === C || !f && E || (0, m.O0)(x?.threadId)
         }
-    }, [b, n, y, A, v]), S
+    }, [x, n, f, C, E]), N
 }

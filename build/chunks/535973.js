@@ -1,97 +1,70 @@
 /** chunk id: 535973, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    I: () => s,
-    s: () => a
-}), n(896048);
-var l, r = n(64700);
+    I: () => r,
+    s: () => s
+});
+var l, i = n(64700),
+    r = ((l = {}).BEFORE = "before", l.AFTER = "after", l);
 
-function i(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            l = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), l.forEach(function(t) {
-            var l;
-            l = n[t], t in e ? Object.defineProperty(e, t, {
-                value: l,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = l
-        })
-    }
-    return e
-}
-var s = ((l = {}).BEFORE = "before", l.AFTER = "after", l);
-
-function a(e) {
+function s(e) {
     let {
         groupIds: t,
         isDisabled: n,
         onCommitNewOrder: l
-    } = e, s = r.useRef(t);
-    r.useEffect(() => {
-        s.current = t
+    } = e, r = i.useRef(t);
+    i.useEffect(() => {
+        r.current = t
     }, [t]);
-    let [a, o] = r.useState({
+    let [s, a] = i.useState({
         draggedGroupId: null,
         dropTargetGroupId: null,
         dropTargetPosition: null,
         didCommitDrop: !1
-    }), u = r.useRef(a), c = r.useCallback(e => {
-        o(t => {
-            let n = i({}, t, e);
+    }), u = i.useRef(s), o = i.useCallback(e => {
+        a(t => {
+            let n = {
+                ...t,
+                ...e
+            };
             return u.current = n, n
         })
-    }, []), d = r.useCallback((e, t) => {
+    }, []), d = i.useCallback((e, t) => {
         let {
-            draggedGroupId: r,
-            didCommitDrop: a
+            draggedGroupId: i,
+            didCommitDrop: s
         } = u.current;
-        if (a || n || null == r) return;
+        if (s || n || null == i) return;
         let d = function(e) {
             let {
                 groupIds: t,
                 draggedGroupId: n,
                 targetGroupId: l,
-                position: r
-            } = e, i = t.indexOf(n), s = t.indexOf(l);
-            if (-1 === i || -1 === s || n === l) return null;
+                position: i
+            } = e, r = t.indexOf(n), s = t.indexOf(l);
+            if (-1 === r || -1 === s || n === l) return null;
             let a = [...t];
-            a.splice(i, 1);
-            let o = i < s ? s - 1 : s;
-            return a.splice("before" === r ? o : o + 1, 0, n), a
+            a.splice(r, 1);
+            let u = r < s ? s - 1 : s;
+            return a.splice("before" === i ? u : u + 1, 0, n), a
         }({
-            groupIds: s.current,
-            draggedGroupId: r,
+            groupIds: r.current,
+            draggedGroupId: i,
             targetGroupId: e,
             position: t
         });
-        if (null != d) {
-            var h, g;
-            h = i({}, u.current), g = g = {
-                didCommitDrop: !0
-            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(h, Object.getOwnPropertyDescriptors(g)) : (function(e, t) {
-                var n = Object.keys(e);
-                if (Object.getOwnPropertySymbols) {
-                    var l = Object.getOwnPropertySymbols(e);
-                    n.push.apply(n, l)
-                }
-                return n
-            })(Object(g)).forEach(function(e) {
-                Object.defineProperty(h, e, Object.getOwnPropertyDescriptor(g, e))
-            }), u.current = h, o(u.current), l(d), c({
-                draggedGroupId: null,
-                dropTargetGroupId: null,
-                dropTargetPosition: null
-            })
-        }
-    }, [n, l, c]), h = r.useCallback((e, t) => ({
+        null != d && (u.current = {
+            ...u.current,
+            didCommitDrop: !0
+        }, a(u.current), l(d), o({
+            draggedGroupId: null,
+            dropTargetGroupId: null,
+            dropTargetPosition: null
+        }))
+    }, [n, l, o]), c = i.useCallback((e, t) => ({
         draggable: t && !n,
         "data-dnd-drag-handle": "true",
         onDragStart: l => {
-            n || t && (l.dataTransfer.setData("text/plain", e), l.dataTransfer.effectAllowed = "move", c({
+            n || t && (l.dataTransfer.setData("text/plain", e), l.dataTransfer.effectAllowed = "move", o({
                 draggedGroupId: e,
                 dropTargetGroupId: null,
                 dropTargetPosition: null,
@@ -104,10 +77,10 @@ function a(e) {
             } = u.current;
             if (n || null == l || l === e) return;
             t.preventDefault(), t.dataTransfer.dropEffect = "move";
-            let r = t.currentTarget.getBoundingClientRect();
-            c({
+            let i = t.currentTarget.getBoundingClientRect();
+            o({
                 dropTargetGroupId: e,
-                dropTargetPosition: t.clientY < r.top + r.height / 2 ? "before" : "after"
+                dropTargetPosition: t.clientY < i.top + i.height / 2 ? "before" : "after"
             })
         },
         onDrop: t => {
@@ -116,8 +89,8 @@ function a(e) {
             } = u.current;
             if (n || null == l || l === e) return;
             t.preventDefault();
-            let r = t.currentTarget.getBoundingClientRect();
-            d(e, t.clientY < r.top + r.height / 2 ? "before" : "after")
+            let i = t.currentTarget.getBoundingClientRect();
+            d(e, t.clientY < i.top + i.height / 2 ? "before" : "after")
         },
         onDragEnd: () => {
             let {
@@ -125,18 +98,18 @@ function a(e) {
                 dropTargetGroupId: t,
                 dropTargetPosition: n
             } = u.current;
-            e || null == t || null == n || d(t, n), c({
+            e || null == t || null == n || d(t, n), o({
                 draggedGroupId: null,
                 dropTargetGroupId: null,
                 dropTargetPosition: null,
                 didCommitDrop: !1
             })
         }
-    }), [d, n, c]);
+    }), [d, n, o]);
     return {
-        draggedGroupId: a.draggedGroupId,
-        dropTargetGroupId: a.dropTargetGroupId,
-        dropTargetPosition: a.dropTargetPosition,
-        getDragHandleProps: h
+        draggedGroupId: s.draggedGroupId,
+        dropTargetGroupId: s.dropTargetGroupId,
+        dropTargetPosition: s.dropTargetPosition,
+        getDragHandleProps: c
     }
 }

@@ -1,147 +1,103 @@
-/** chunk id: 626031, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    A: () => I
-}), n(896048);
-var r = n(627968),
-    i = n(64700),
-    a = n(503698),
-    o = n.n(a),
-    s = n(92674),
-    l = n(397927),
-    c = n(475743),
-    u = n(626584),
-    d = n(572009),
-    f = n(14115),
-    p = n(115093),
-    _ = n(467043);
-
-function h(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-
-function m(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            h(e, t, n[t])
-        })
-    }
-    return e
-}
-
-function g(e, t) {
-    if (null == e) return {};
-    var n, r, i, a = {};
-    if ("u" > typeof Reflect && Reflect.ownKeys) {
-        for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
-        return a
-    }
-    if (a = E(e, t), Object.getOwnPropertySymbols)
-        for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
-    return a
-}
-
-function E(e, t) {
-    if (null == e) return {};
-    var n, r, i = {},
-        a = Object.getOwnPropertyNames(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
-    return i
-}
-let y = new u.A("BalanceCounter"),
-    b = (0, d._$)(void 0) === p.B.PRODUCTION,
-    O = e => null == e ? 0 : "".concat(e.toFixed(0)).length,
-    v = (e, t, n) => null === n ? Math.max(e, t) : Math.max(t, n),
-    A = e => {
-        var t, n;
+/** chunk id: 626031, original params: e,t,l (module,exports,require) **/
+l.d(t, {
+    A: () => f
+});
+var a = l(627968),
+    n = l(64700),
+    r = l(503698),
+    i = l.n(r),
+    s = l(475539),
+    o = l(397927),
+    u = l(475743),
+    c = l(626584),
+    d = l(572009),
+    p = l(14115),
+    m = l(115093),
+    h = l(467043);
+let x = new c.A("BalanceCounter"),
+    b = (0, d._$)(void 0) === m.B.PRODUCTION,
+    g = e => null == e ? 0 : `${e.toFixed(0)}`.length,
+    y = e => {
         let {
-            value: a,
-            onSetDigitCount: o,
-            onValueChange: c,
-            onValueReached: u,
-            targetTotalCounterTime: d = 3e3
-        } = e, [p, _] = (0, i.useState)(0), h = (0, i.useRef)(null), m = (0, i.useRef)(null);
-        (0, i.useEffect)(() => {
-            if (null === a) return;
-            if (null === h.current) {
-                h.current = a;
+            value: t,
+            onSetDigitCount: l,
+            onValueChange: r,
+            onValueReached: i,
+            targetTotalCounterTime: u = 3e3
+        } = e, [c, d] = (0, n.useState)(0), m = (0, n.useRef)(null), h = (0, n.useRef)(null);
+        (0, n.useEffect)(() => {
+            if (null === t) return;
+            if (null === m.current) {
+                m.current = t;
                 return
             }
-            let e = null !== h.current ? a - h.current : a;
-            0 !== e && null !== h.current && c(e), m.current = {
+            let e = null !== m.current ? t - m.current : t;
+            0 !== e && null !== m.current && r(e), h.current = {
                 lastChangedAt: Date.now(),
                 totalDelta: Math.abs(e)
             }
-        }, [a, c]);
-        let g = null != a ? a : 0,
-            E = null != (t = h.current) ? t : g,
+        }, [t, r]);
+        let y = t ?? 0,
+            f = m.current ?? y,
             {
-                duration: v,
-                delay: A
-            } = (0, f.Y)(g - E, d),
+                duration: E,
+                delay: v
+            } = (0, p.Y)(y - f, u),
             {
-                number: I
-            } = (0, l.zhh)({
+                number: S
+            } = (0, o.zhh)({
                 from: {
-                    number: null != (n = h.current) ? n : g
+                    number: m.current ?? y
                 },
-                number: g,
+                number: y,
                 config: {
                     mass: 1,
                     tension: 20,
                     friction: 10,
-                    duration: v
+                    duration: E
                 },
-                delay: A,
+                delay: v,
                 onStart: () => {
-                    o(O(E))
+                    l(g(f))
                 },
                 onRest: () => {
-                    if (_(p + 1), u(), !b && null !== m.current && null !== h.current) {
+                    if (d(c + 1), i(), !b && null !== h.current && null !== m.current) {
                         let e = Date.now();
-                        y.log("Balance Counter finished updating: ", {
-                            time: e - m.current.lastChangedAt,
-                            delta: g - h.current
+                        x.log("Balance Counter finished updating: ", {
+                            time: e - h.current.lastChangedAt,
+                            delta: y - m.current
                         })
                     }
-                    o(O(g)), h.current = g
+                    l(g(y)), m.current = y
                 }
             }),
-            S = O(Math.max(null != a ? a : 0, I.get()));
-        return (0, r.jsx)(s.animated.div, {
+            j = g(Math.max(t ?? 0, S.get()));
+        return (0, a.jsx)(s.animated.div, {
             style: {
-                width: "calc(".concat(S, "ch)")
+                width: `calc(${j}ch)`
             },
-            children: I.to(e => "".concat(e.toFixed(0)))
+            children: S.to(e => `${e.toFixed(0)}`)
         })
     },
-    I = e => {
-        var t;
+    f = e => {
         let {
-            value: n,
-            className: a
-        } = e, s = g(e, ["value", "className"]), u = null === n, [d, f] = (0, i.useState)(null), p = (0, i.useMemo)(() => O(n), [n]), h = null != (t = (0, c.A)(p)) ? t : 0, E = (0, i.useMemo)(() => v(h, p, d), [h, p, d]), y = "".concat(u ? 0 : E, "ch");
-        return (0, r.jsx)(l.Text, {
+            value: t,
+            className: l,
+            ...r
+        } = e, s = null === t, [c, d] = (0, n.useState)(null), p = (0, n.useMemo)(() => g(t), [t]), m = (0, u.A)(p) ?? 0, x = (0, n.useMemo)(() => null === c ? Math.max(m, p) : Math.max(p, c), [m, p, c]), b = `${s?0:x}ch`;
+        return (0, a.jsx)(o.Text, {
             variant: "text-md/semibold",
-            className: o()(_.S, u ? void 0 : _.r, a),
+            className: i()(h.S, s ? void 0 : h.r, l),
             style: {
-                width: y,
-                opacity: u ? "0" : 1
+                width: b,
+                opacity: s ? "0" : 1
             },
-            children: u ? null : (0, r.jsx)(A, m({
+            children: s ? null : (0, a.jsx)(y, {
                 onSetDigitCount: e => {
-                    e !== d && f(e)
+                    e !== c && d(e)
                 },
-                value: n
-            }, s))
+                value: t,
+                ...r
+            })
         })
     }

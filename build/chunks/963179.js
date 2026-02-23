@@ -1,59 +1,58 @@
-/** chunk id: 963179, original params: t,e,r (module,exports,require) **/
-r.r(e), r.d(e, {
+/** chunk id: 963179, original params: t,e,l (module,exports,require) **/
+l.r(e), l.d(e, {
     ItemDetailsModal: () => j
-}), r(228524), r(733351);
-var n = r(627968);
-r(64700);
-var l = r(423090),
-    s = r(311907),
-    i = r(397927),
-    a = r(67480),
-    o = r(328968),
-    c = r(371794),
-    d = r(998218),
-    u = r(56754),
-    x = r(550732),
-    p = r(376374),
-    m = r(86889),
-    v = r(652215),
-    _ = r(985018);
+});
+var s = l(627968);
+l(64700);
+var r = l(423090),
+    n = l(311907),
+    i = l(397927),
+    a = l(67480),
+    o = l(328968),
+    c = l(371794),
+    d = l(998218),
+    x = l(56754),
+    u = l(550732),
+    _ = l(376374),
+    h = l(86889),
+    m = l(652215),
+    v = l(985018);
 
 function j(t) {
-    var e, r, j, f;
     let {
-        onClose: g,
-        transitionState: h,
-        skuId: y,
-        appId: E,
-        onHeaderTitleClick: b
-    } = t, A = (0, s.bG)([o.A], () => o.A.getForSKU(y), [y]), I = (0, s.bG)([a.A], () => a.A.get(y), [y]), O = (0, u.L)(y);
-    if (null == I) return null;
-    let S = null != (e = I.name) ? e : "",
-        T = null != (r = null == A || null == (f = A.description) ? void 0 : f.trim()) ? r : void 0,
-        R = (null == A ? void 0 : A.headerBackground) != null && null != (j = d.A.toURLSafe((0, c.YE)(E, A.headerBackground, 256))) ? j : void 0,
-        N = I.type === v.Puh.DURABLE && O,
-        P = I.type === v.Puh.DURABLE ? N ? _.intl.string(_.t.bm82mm) : _.intl.string(_.t["6gprwf"]) : void 0,
+        onClose: e,
+        transitionState: l,
+        skuId: j,
+        appId: g,
+        onHeaderTitleClick: p
+    } = t, A = (0, n.bG)([o.A], () => o.A.getForSKU(j), [j]), T = (0, n.bG)([a.A], () => a.A.get(j), [j]), E = (0, x.L)(j);
+    if (null == T) return null;
+    let I = T.name ?? "",
+        S = A?.description?.trim() ?? void 0,
+        R = A?.headerBackground != null ? d.A.toURLSafe((0, c.YE)(g, A.headerBackground, 256)) ?? void 0 : void 0,
+        f = T.type === m.Puh.DURABLE && E,
+        N = T.type === m.Puh.DURABLE ? f ? v.intl.string(v.t.bm82mm) : v.intl.string(v.t["6gprwf"]) : void 0,
         {
             price: k
-        } = I;
-    return null == k ? null : (0, n.jsx)(x.C, {
-        appId: E,
-        skuId: I.id,
-        transitionState: h,
-        onHeaderTitleClick: null != b ? b : g,
-        onClose: g,
-        footer: (0, n.jsx)(p.$P, {
-            appId: E,
-            sku: I
+        } = T;
+    return null == k ? null : (0, s.jsx)(u.C, {
+        appId: g,
+        skuId: T.id,
+        transitionState: l,
+        onHeaderTitleClick: p ?? e,
+        onClose: e,
+        footer: (0, s.jsx)(_.$P, {
+            appId: g,
+            sku: T
         }),
-        children: (0, n.jsx)(m.D, {
-            appId: E,
-            skuId: I.id,
-            title: S,
-            description: T,
+        children: (0, s.jsx)(h.D, {
+            appId: g,
+            skuId: T.id,
+            title: I,
+            description: S,
             imgSrc: R,
-            tag: null != P ? (0, n.jsx)(l.v, {
-                text: P
+            tag: null != N ? (0, s.jsx)(r.v, {
+                text: N
             }) : void 0,
             FallbackIcon: i.qyI
         })

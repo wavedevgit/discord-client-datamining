@@ -1,11 +1,12 @@
 /** chunk id: 713397, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
     A: () => c
 });
-var r = n(627968),
-    l = n(397927),
-    i = n(367513),
-    s = n(715989),
+var i = n(627968),
+    s = n(397927),
+    l = n(367513),
+    r = n(715989),
     a = n(985018),
     o = n(852887);
 
@@ -14,18 +15,18 @@ function c(e) {
         channelId: t,
         allPoppedOut: n = !1
     } = e;
-    return (0, r.jsxs)("div", {
+    return (0, i.jsxs)("div", {
         className: o.kL,
-        children: [(0, r.jsx)(s.A, {}), (0, r.jsxs)("div", {
+        children: [(0, i.jsx)(r.A, {}), (0, i.jsxs)("div", {
             className: o.Qs,
-            children: [(0, r.jsx)(l.Heading, {
+            children: [(0, i.jsx)(s.Heading, {
                 variant: "heading-lg/normal",
                 children: n ? a.intl.string(a.t.KIConm) : a.intl.format(a.t.ilLVLr, {})
-            }), !n && (0, r.jsx)(l.Button, {
+            }), !n && (0, i.jsx)(s.Button, {
                 variant: "secondary",
                 size: "md",
                 onClick: e => {
-                    e.stopPropagation(), i.A.toggleVoiceParticipantsHidden(t, !1)
+                    e.stopPropagation(), l.A.toggleVoiceParticipantsHidden(t, !1)
                 },
                 text: a.intl.string(a.t.kLQySL)
             })]

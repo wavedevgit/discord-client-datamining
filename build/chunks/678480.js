@@ -1,58 +1,58 @@
 /** chunk id: 678480, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    E: () => g
-}), n(65821);
-var r = n(627968);
+    E: () => p
+});
+var i = n(627968);
 n(64700);
-var i = n(503698),
-    l = n.n(i),
+var l = n(503698),
+    r = n.n(l),
     a = n(990078),
     s = n(547056),
     o = n(169295),
-    c = n(18301),
-    u = n(652215),
-    d = n(985018),
-    p = n(860894);
+    d = n(18301),
+    c = n(652215),
+    u = n(985018),
+    _ = n(860894);
 let m = {
-    [u.uje.WINDOWS]: {
-        icon: c.A,
-        getLabel: () => d.intl.string(d.t["0/xHFO"])
+    [c.uje.WINDOWS]: {
+        icon: d.A,
+        getLabel: () => u.intl.string(u.t["0/xHFO"])
     },
-    [u.uje.MACOS]: {
+    [c.uje.MACOS]: {
         icon: o.A,
-        getLabel: () => d.intl.string(d.t.E4u4n5)
+        getLabel: () => u.intl.string(u.t.E4u4n5)
     },
-    [u.uje.LINUX]: {
+    [c.uje.LINUX]: {
         icon: s.A,
-        getLabel: () => d.intl.string(d.t.tcawo3)
+        getLabel: () => u.intl.string(u.t.tcawo3)
     }
 };
 
-function f(e) {
+function h(e) {
     let {
         operatingSystem: t,
         className: n
-    } = e, i = m[t];
-    if (null == i) throw Error("Unexpected operating system: ".concat(t));
-    let l = i.icon;
-    return (0, r.jsx)(a.m, {
-        text: i.getLabel(),
-        children: (0, r.jsx)(l, {
+    } = e, l = m[t];
+    if (null == l) throw Error(`Unexpected operating system: ${t}`);
+    let r = l.icon;
+    return (0, i.jsx)(a.m, {
+        text: l.getLabel(),
+        children: (0, i.jsx)(r, {
             className: n
         })
     })
 }
-let g = e => {
+let p = e => {
     let {
         systems: t,
         className: n,
-        iconClassName: i
+        iconClassName: l
     } = e;
-    return (0, r.jsx)("div", {
-        className: l()(p.I, n),
-        children: t.map(e => (0, r.jsx)(f, {
+    return (0, i.jsx)("div", {
+        className: r()(_.I, n),
+        children: t.map(e => (0, i.jsx)(h, {
             operatingSystem: e,
-            className: l()(p.A, i)
+            className: r()(_.A, l)
         }, e))
     })
 }

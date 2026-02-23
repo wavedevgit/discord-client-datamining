@@ -1,31 +1,31 @@
 /** chunk id: 942156, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    A: () => p
-}), i(896048);
-var s, n = i(627968),
-    r = i(64700),
+    A: () => c
+});
+var s = i(627968),
+    n = i(64700),
     a = i(503698),
     h = i.n(a),
     l = i(615300),
-    o = i(397927),
-    c = i(652215),
+    r = i(397927),
+    o = i(652215),
     d = i(505802);
-
-function u(t, e, i) {
-    return e in t ? Object.defineProperty(t, e, {
-        value: i,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : t[e] = i, t
-}
-class p extends(s = r.Component) {
+class c extends n.Component {
+    static contextType = r.CZY;
+    anim = new l.A.Value(0);
     componentDidMount() {
         this.props.show && this.animate(1)
     }
     componentDidUpdate(t) {
         t.show !== this.props.show && this.animate(+!!this.props.show)
     }
+    animate = t => {
+        l.A.spring(this.anim, {
+            toValue: t,
+            friction: 10,
+            tension: 100
+        }).start()
+    };
     getAnimatedStyle() {
         let {
             anim: t
@@ -45,22 +45,12 @@ class p extends(s = r.Component) {
         }
     }
     render() {
-        return (0, n.jsx)(l.A.a, {
-            href: c.BVt.INDEX,
+        return (0, s.jsx)(l.A.a, {
+            href: o.BVt.INDEX,
             target: "_blank",
             rel: "noopener",
             className: h()(d.w, this.props.className),
             style: this.getAnimatedStyle()
         })
     }
-    constructor(...t) {
-        super(...t), u(this, "anim", new l.A.Value(0)), u(this, "animate", t => {
-            l.A.spring(this.anim, {
-                toValue: t,
-                friction: 10,
-                tension: 100
-            }).start()
-        })
-    }
 }
-u(p, "contextType", o.CZY)

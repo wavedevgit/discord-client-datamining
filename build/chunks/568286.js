@@ -1,102 +1,88 @@
 /** chunk id: 568286, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    q: () => b
-}), n(896048);
-var r = n(627968),
-    i = n(64700),
-    l = n(989349),
-    s = n.n(l),
-    a = n(158954),
+    q: () => p
+});
+var i = n(627968),
+    s = n(64700),
+    a = n(989349),
+    r = n.n(a),
+    l = n(158954),
     o = n(397927),
     c = n(384904),
     d = n(793574),
     u = n(688810),
     _ = n(915089),
-    p = n(250253),
-    m = n(2242),
+    m = n(250253),
+    A = n(2242),
     g = n(985018),
-    A = n(289324);
-let f = e => {
+    h = n(289324);
+let x = e => {
         let {
             transitionState: t,
             groupListing: n,
-            listing: l,
-            subscription: f,
-            onClose: b
-        } = e, h = (0, _.GV)(), {
-            analyticsLocations: E
+            listing: a,
+            subscription: x,
+            onClose: p
+        } = e, E = (0, _.GV)(), {
+            analyticsLocations: C
         } = (0, u.Ay)(d.A.GUILD_ROLE_SUBSCRIPTION_CANCELLATION_MODAL), {
-            cancelSubscription: O,
-            error: x,
-            submitting: C
+            cancelSubscription: T,
+            error: S,
+            submitting: I
         } = (e => {
-            let [t, n] = i.useState(!1), [r, l] = i.useState(null);
+            let [t, n] = s.useState(!1), [i, a] = s.useState(null);
             return {
                 cancelSubscription: async t => {
                     try {
                         return n(!0), await c.M2(t, e), !0
                     } catch (e) {
-                        l(e)
+                        a(e)
                     } finally {
                         n(!1)
                     }
                 },
-                error: r,
+                error: i,
                 submitting: t
             }
-        })(E), S = async () => {
-            await O(f.id) && b()
-        }, T = l.role_benefits.benefits.filter(e => e.ref_type === m.bN.CHANNEL), I = l.role_benefits.benefits.filter(e => e.ref_type === m.bN.INTANGIBLE), N = s()(f.currentPeriodEnd).format("MMMM Do, YYYY"), y = g.intl.formatToPlainString(g.t.KsMRP5, {
-            numChannels: T.length,
-            numAdditionalBenefits: I.length,
-            subscriptionEndDate: N
+        })(C), f = async () => {
+            await T(x.id) && p()
+        }, N = a.role_benefits.benefits.filter(e => e.ref_type === A.bN.CHANNEL), b = a.role_benefits.benefits.filter(e => e.ref_type === A.bN.INTANGIBLE), j = r()(x.currentPeriodEnd).format("MMMM Do, YYYY"), v = g.intl.formatToPlainString(g.t.KsMRP5, {
+            numChannels: N.length,
+            numAdditionalBenefits: b.length,
+            subscriptionEndDate: j
         });
-        return (0, r.jsx)(a.Modal, {
+        return (0, i.jsx)(l.Modal, {
             transitionState: t,
-            "aria-labelledby": h,
+            "aria-labelledby": E,
             actions: [{
                 text: g.intl.string(g.t.EP6EPb),
                 variant: "secondary",
-                onClick: b
+                onClick: p
             }, {
                 variant: "critical-primary",
                 text: g.intl.string(g.t.F6lUDF),
-                onClick: S,
-                loading: C
+                onClick: f,
+                loading: I
             }],
             title: g.intl.string(g.t.O6l5tM),
-            subtitle: y,
-            onClose: b,
-            children: (0, r.jsxs)(o.BJc, {
+            subtitle: v,
+            onClose: p,
+            children: (0, i.jsxs)(o.BJc, {
                 gap: 8,
-                children: [null != x ? (0, r.jsx)(o.wx6, {
+                children: [null != S ? (0, i.jsx)(o.wx6, {
                     type: "critical",
-                    children: x.message
-                }) : null, (0, r.jsx)(p.x, {
-                    listingId: l.id,
+                    children: S.message
+                }) : null, (0, i.jsx)(m.x, {
+                    listingId: a.id,
                     guildId: n.guild_id,
-                    className: A.P
+                    className: h.P
                 })]
             })
         })
     },
-    b = e => {
-        (0, o.qfG)(t => (0, r.jsx)(f, function(e) {
-            for (var t = 1; t < arguments.length; t++) {
-                var n = null != arguments[t] ? arguments[t] : {},
-                    r = Object.keys(n);
-                "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                    return Object.getOwnPropertyDescriptor(n, e).enumerable
-                }))), r.forEach(function(t) {
-                    var r;
-                    r = n[t], t in e ? Object.defineProperty(e, t, {
-                        value: r,
-                        enumerable: !0,
-                        configurable: !0,
-                        writable: !0
-                    }) : e[t] = r
-                })
-            }
-            return e
-        }({}, t, e)))
+    p = e => {
+        (0, o.qfG)(t => (0, i.jsx)(x, {
+            ...t,
+            ...e
+        }))
     }

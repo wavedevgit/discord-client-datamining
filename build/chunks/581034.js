@@ -1,38 +1,38 @@
 /** chunk id: 581034, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    l: () => h
+    l: () => A
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(989349),
-    l = n.n(i),
+var l = n(989349),
+    r = n.n(l),
     a = n(827734),
     s = n(397927),
     o = n(393033),
-    c = n(239093),
-    u = n(985018),
-    d = n(617184);
+    d = n(239093),
+    c = n(985018),
+    u = n(617184);
 
-function p(e) {
+function _(e) {
     let {
         classificationId: t
     } = e;
-    return (0, r.jsx)(s.MzZ, {
+    return (0, i.jsx)(s.MzZ, {
         onClick: () => {
             (0, s.mMO)(async () => {
                 let {
                     default: e
                 } = await Promise.all([n.e("83518"), n.e("9407"), n.e("1708")]).then(n.bind(n, 956450));
-                return n => (0, r.jsx)(e, {
+                return n => (0, i.jsx)(e, {
                     classificationId: t,
-                    source: c.XN.SystemDM,
+                    source: d.XN.SystemDM,
                     transitionState: n.transitionState,
                     onClose: n.onClose
                 })
             })
         },
-        className: d.zh,
-        children: u.intl.string(u.t.QsqdXC)
+        className: u.zh,
+        children: c.intl.string(c.t.QsqdXC)
     })
 }
 
@@ -40,106 +40,105 @@ function m(e) {
     let {
         learnMoreLink: t
     } = e;
-    return (0, r.jsx)(s.MzZ, {
-        className: d.zh,
+    return (0, i.jsx)(s.MzZ, {
+        className: u.zh,
         href: t,
-        children: u.intl.string(u.t["8/GdRB"])
+        children: c.intl.string(c.t["8/GdRB"])
     })
 }
 
-function f(e) {
+function h(e) {
     let {
         ctaType: t,
         classificationId: n,
-        learnMoreLink: i
+        learnMoreLink: l
     } = e;
     switch (t) {
-        case c.xw.POLICY_VIOLATION_DETAIL:
+        case d.xw.POLICY_VIOLATION_DETAIL:
             if (null == n) return null;
-            return (0, r.jsx)(p, {
+            return (0, i.jsx)(_, {
                 classificationId: n
             });
-        case c.xw.LEARN_MORE_LINK:
-            if (null == i) return null;
-            return (0, r.jsx)(m, {
-                learnMoreLink: i
+        case d.xw.LEARN_MORE_LINK:
+            if (null == l) return null;
+            return (0, i.jsx)(m, {
+                learnMoreLink: l
             });
         default:
             return null
     }
 }
 
-function g(e) {
+function p(e) {
     let {
         iconType: t
     } = e, n = {
-        default: (0, r.jsx)(s.koX, {
+        default: (0, i.jsx)(s.koX, {
             size: "xs",
             color: a.A.colors.TEXT_LINK.css
         }),
-        danger: (0, r.jsx)(s.id, {
+        danger: (0, i.jsx)(s.id, {
             color: a.A.colors.ICON_FEEDBACK_CRITICAL
         })
     };
-    return null != t && t in n ? (0, r.jsx)("div", {
-        className: d.Kk,
+    return null != t && t in n ? (0, i.jsx)("div", {
+        className: u.Kk,
         children: n[t]
     }) : null
 }
 
-function _(e) {
+function g(e) {
     let {
         children: t,
         theme: n
-    } = e, i = {
-        default: d._y,
-        danger: d.yk
+    } = e, l = {
+        default: u._y,
+        danger: u.yk
     };
-    return (0, r.jsx)("div", {
-        className: i[null != n ? n : "default"],
+    return (0, i.jsx)("div", {
+        className: l[n ?? "default"],
         children: t
     })
 }
 
-function h(e) {
-    var t, n;
-    let i;
+function A(e) {
+    let t;
     if (null == e.embed || null == e.embed.fields) return null;
-    let a = (0, o.f4)(e.embed);
-    return null == a ? null : (0, r.jsxs)(s.DUT, {
-        className: d.o3,
-        children: [(0, r.jsxs)("div", {
-            className: d.qZ,
-            children: [(0, r.jsxs)("div", {
-                className: d.U1,
-                children: [(0, r.jsx)(g, {
-                    iconType: a.icon
-                }), (0, r.jsx)(s.Text, {
+    let n = (0, o.f4)(e.embed);
+    return null == n ? null : (0, i.jsxs)(s.DUT, {
+        className: u.o3,
+        children: [(0, i.jsxs)("div", {
+            className: u.qZ,
+            children: [(0, i.jsxs)("div", {
+                className: u.U1,
+                children: [(0, i.jsx)(p, {
+                    iconType: n.icon
+                }), (0, i.jsx)(s.Text, {
                     variant: "text-md/semibold",
-                    children: a.header
+                    children: n.header
                 })]
-            }), (0, r.jsx)("div", {
-                className: d.VU,
-                children: (0, r.jsx)(s.Text, {
+            }), (0, i.jsx)("div", {
+                className: u.VU,
+                children: (0, i.jsx)(s.Text, {
                     variant: "text-xs/medium",
-                    children: u.intl.format(u.t.eevFb6, {
-                        daysAgo: (i = null != (t = a.timestamp) ? t : 0, l()().diff(l().unix(i), "days"))
+                    children: c.intl.format(c.t.eevFb6, {
+                        daysAgo: (t = n.timestamp ?? 0, r()().diff(r().unix(t), "days"))
                     })
                 })
-            }), (0, r.jsx)("div", {
-                className: d.vv,
-                children: (0, r.jsx)(s.Text, {
+            }), (0, i.jsx)("div", {
+                className: u.vv,
+                children: (0, i.jsx)(s.Text, {
                     variant: "text-md/normal",
                     color: "text-muted",
-                    children: a.body
+                    children: n.body
                 })
             })]
-        }), (0, r.jsx)(_, {
-            theme: a.theme,
-            children: null == (n = a.ctas) ? void 0 : n.map(e => (0, r.jsx)(f, {
+        }), (0, i.jsx)(g, {
+            theme: n.theme,
+            children: n.ctas?.map(e => (0, i.jsx)(h, {
                 ctaType: e,
-                classificationId: a.classification_id,
-                learnMoreLink: a.learn_more_link
+                classificationId: n.classification_id,
+                learnMoreLink: n.learn_more_link
             }, e))
         })]
     })

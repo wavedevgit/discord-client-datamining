@@ -1,12 +1,12 @@
 /** chunk id: 345812, original params: e,t,n (module,exports,require) **/
-function l(e) {
+function i(e) {
     return e <= 220
 }
 
-function r(e) {
+function l(e) {
     return e <= 124
 }
 n.d(t, {
-    V: () => l,
-    Y: () => r
+    V: () => i,
+    Y: () => l
 })

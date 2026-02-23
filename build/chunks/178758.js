@@ -2,15 +2,15 @@
 "use strict";
 n.d(t, {
     Oz: () => l,
-    jl: () => r,
-    lO: () => i
+    jl: () => i,
+    lO: () => s
 });
-let r = {
+let i = {
         primary_color: 0xa9c9ff,
         secondary_color: 0xffbbec,
         tertiary_color: 0xffc3a0
     },
-    i = {
+    s = {
         primary_color: 0x9e6bff,
         secondary_color: 0x9fc1ff,
         tertiary_color: null

@@ -1,5 +1,5 @@
 /** chunk id: 139613, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    K: () => r
+    K: () => i
 });
-let r = "guild-role-subscription-overview-notice"
+let i = "guild-role-subscription-overview-notice"

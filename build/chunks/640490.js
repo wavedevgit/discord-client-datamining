@@ -1,168 +1,89 @@
 /** chunk id: 640490, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    F: () => W
-}), n(638769), n(896048), n(733351), n(321073);
+    F: () => Y
+}), n(321073);
 var l = n(627968),
-    r = n(64700),
-    i = n(503698),
-    s = n.n(i),
+    i = n(64700),
+    r = n(503698),
+    s = n.n(r),
     a = n(735438),
-    o = n(837381),
-    u = n(311907),
-    c = n(435371),
-    d = n(397927),
+    u = n(837381),
+    o = n(311907),
+    d = n(435371),
+    c = n(397927),
     h = n(803306),
     g = n(928039),
-    f = n(485947),
-    p = n(545059),
-    I = n(290863),
-    m = n(994500),
-    E = n(287809),
-    A = n(256415),
-    y = n(996439),
-    S = n(810412),
-    v = n(914853),
-    O = n(483392),
-    b = n(236884),
-    N = n(542080),
-    T = n(67103),
-    _ = n(406595),
-    C = n(535973),
-    x = n(125117),
-    D = n(652215),
-    M = n(895867),
-    j = n(985018),
-    w = n(488494),
-    P = n(416001);
+    I = n(485947),
+    A = n(545059),
+    f = n(290863),
+    E = n(994500),
+    m = n(287809),
+    S = n(256415),
+    p = n(996439),
+    N = n(810412),
+    T = n(914853),
+    _ = n(483392),
+    C = n(236884),
+    y = n(542080),
+    x = n(179917),
+    M = n(419072),
+    v = n(67103),
+    D = n(554932),
+    R = n(406595),
+    U = n(557404),
+    O = n(535973),
+    G = n(125117),
+    F = n(652215),
+    w = n(895867),
+    L = n(985018),
+    b = n(488494),
+    k = n(416001);
 
-function R(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            l = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), l.forEach(function(t) {
-            var l;
-            l = n[t], t in e ? Object.defineProperty(e, t, {
-                value: l,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = l
-        })
-    }
-    return e
-}
-
-function U(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var l = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, l)
-        }
-        return n
-    })(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-
-function G(e, t) {
-    if (null == e) return {};
-    var n, l, r, i = {};
-    if ("u" > typeof Reflect && Reflect.ownKeys) {
-        for (r = 0, n = Reflect.ownKeys(e); r < n.length; r++) l = n[r], !(t.indexOf(l) >= 0) && Object.prototype.propertyIsEnumerable.call(e, l) && (i[l] = e[l]);
-        return i
-    }
-    if (i = function(e, t) {
-            if (null == e) return {};
-            var n, l, r = {},
-                i = Object.getOwnPropertyNames(e);
-            for (l = 0; l < i.length; l++) n = i[l], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n]);
-            return r
-        }(e, t), Object.getOwnPropertySymbols)
-        for (r = 0, n = Object.getOwnPropertySymbols(e); r < n.length; r++) l = n[r], !(t.indexOf(l) >= 0) && Object.prototype.propertyIsEnumerable.call(e, l) && (i[l] = e[l]);
-    return i
-}
-
-function L(e) {
-    let {
-        isCollapsed: t
-    } = e;
-    return (0, l.jsx)(O.C, {
-        isCollapsed: t,
-        size: "md",
-        className: P.t4
-    })
-}
-
-function k(e) {
+function P(e) {
     let {
         groupId: t,
         groupName: n,
-        displayText: r,
-        isCollapsed: i,
-        canCollapse: a,
-        onToggle: o,
+        displayText: i,
+        isCollapsed: r,
+        onToggle: a,
         onContextMenu: u,
-        isReorderDisabled: c,
-        draggedGroupId: h,
-        dropTargetGroupId: g,
-        dropTargetPosition: p,
-        getDragHandleProps: I
-    } = e, m = !c, E = null != g && g === t, A = E && p === C.I.BEFORE, y = E && p === C.I.AFTER;
-    return (0, l.jsx)(f.A, {
-        className: s()(P.uW, {
-            [w.EU]: m,
-            [w.Me]: null != h && h === t,
-            [w.hV]: E,
-            [w.nH]: A,
-            [w._M]: y
+        isReorderDisabled: o,
+        draggedGroupId: d,
+        dropTargetGroupId: h,
+        dropTargetPosition: g,
+        getDragHandleProps: A
+    } = e, f = !o, E = null != h && h === t, m = E && g === O.I.BEFORE, S = E && g === O.I.AFTER;
+    return (0, l.jsx)(I.A, {
+        className: s()(k.uW, {
+            [b.EU]: f,
+            [b.Me]: null != d && d === t,
+            [b.hV]: E,
+            [b.nH]: m,
+            [b._M]: S
         }),
-        children: (0, l.jsx)("div", U(R({}, I(t, m)), {
+        children: (0, l.jsx)("div", {
+            ...A(t, f),
             onContextMenu: u,
-            children: (0, l.jsxs)(d.DUT, {
-                onClick: () => a && o(),
+            children: (0, l.jsxs)(c.DUT, {
+                onClick: a,
                 "aria-hidden": !0,
-                className: a ? P.Ws : void 0,
-                children: [r, a ? (0, l.jsx)(L, {
-                    isCollapsed: i
-                }) : null]
+                className: k.Ws,
+                children: [i, (0, l.jsx)(_.C, {
+                    isCollapsed: r,
+                    size: "md",
+                    className: k.t4
+                })]
             })
-        }))
-    })
-}
-
-function F(e) {
-    let {
-        displayText: t,
-        isCollapsed: n,
-        canCollapse: r,
-        onToggle: i,
-        rightAccessory: s
-    } = e;
-    return (0, l.jsx)(f.A, {
-        className: P.uW,
-        children: (0, l.jsxs)("div", {
-            className: P.bV,
-            children: [(0, l.jsxs)(d.DUT, {
-                onClick: () => r && i(),
-                "aria-hidden": !0,
-                className: r ? P.Ws : void 0,
-                children: [t, r ? (0, l.jsx)(L, {
-                    isCollapsed: n
-                }) : null]
-            }), s]
         })
     })
 }
 
-function V(e) {
+function j(e) {
     return Array.from(e).sort()
 }
-let H = (0, a.throttle)(e => {
-    (0, S.Y)(D.uss.FRIENDS, {
-        locked: A.default.isInstanceLocked(),
+let V = (0, a.throttle)(e => {
+    (0, N.Y)(F.uss.FRIENDS, {
+        locked: S.default.isInstanceLocked(),
         shownUserIds: e.shownUserIds,
         liveUserIds: e.liveUserIds,
         contentInventoryIds: []
@@ -172,15 +93,15 @@ let H = (0, a.throttle)(e => {
     trailing: !1
 });
 
-function Y() {}
+function H() {}
 
-function W(e) {
+function Y(e) {
     let {
         onPrimaryAction: t,
         onContextMenu: n,
-        onFriendVisible: i
-    } = e, [s, f] = r.useState(new Set), [A, O] = r.useState(new Set), w = r.useCallback((e, t, n) => {
-        f(n => {
+        onFriendVisible: r
+    } = e, [s, I] = i.useState(new Set), [S, _] = i.useState(new Set), b = i.useCallback((e, t, n) => {
+        I(n => {
             if (t) {
                 if (n.has(e)) return n;
                 n.add(e)
@@ -189,7 +110,7 @@ function W(e) {
                 n.delete(e)
             }
             return new Set(n)
-        }), O(l => {
+        }), _(l => {
             if (n && t) {
                 if (l.has(e)) return l;
                 l.add(e)
@@ -198,103 +119,103 @@ function W(e) {
                 l.delete(e)
             }
             return new Set(l)
-        }), null == i || i(e, t, n)
-    }, [i]), L = (0, S.Dk)(() => s, [s]), W = (0, S.Dk)(() => A, [A]);
-    r.useEffect(() => {
-        0 !== L.size && H({
-            shownUserIds: V(L),
-            liveUserIds: V(W)
+        }), r?.(e, t, n)
+    }, [r]), Y = (0, N.Dk)(() => s, [s]), W = (0, N.Dk)(() => S, [S]);
+    i.useEffect(() => {
+        0 !== Y.size && V({
+            shownUserIds: j(Y),
+            liveUserIds: j(W)
         })
-    }, [L, W]);
-    let z = (0, x.b)(),
-        B = (0, x.n)(z),
+    }, [Y, W]);
+    let z = (0, G.b)(),
         {
-            searchQuery: K,
-            setSearchQuery: X,
-            clearSearch: Q
-        } = B,
-        Z = G(B, ["searchQuery", "setSearchQuery", "clearSearch"]),
+            searchQuery: $,
+            setSearchQuery: B,
+            clearSearch: K,
+            ...X
+        } = (0, G.n)(z),
         {
-            showSuggestions: q,
-            setShowSuggestions: J
-        } = (0, N.A)(),
-        $ = K.trim().length > 0,
-        ee = r.useMemo(() => Z.groups.filter(e => e.users.length > 0), [Z.groups]),
-        et = r.useMemo(() => z.groups.map(e => e.id), [z.groups]),
+            showSuggestions: Z,
+            setShowSuggestions: Q
+        } = (0, y.A)(),
+        J = $.trim().length > 0,
+        q = i.useMemo(() => X.groups.filter(e => e.users.length > 0), [X.groups]),
+        ee = i.useMemo(() => z.groups.map(e => e.id), [z.groups]),
         {
-            draggedGroupId: en,
-            dropTargetGroupId: el,
-            dropTargetPosition: er,
+            draggedGroupId: et,
+            dropTargetGroupId: en,
+            dropTargetPosition: el,
             getDragHandleProps: ei
-        } = (0, C.s)({
-            groupIds: et,
-            isDisabled: $,
-            onCommitNewOrder: p.A.reorderGroups
+        } = (0, O.s)({
+            groupIds: ee,
+            isDisabled: J,
+            onCommitNewOrder: A.A.reorderGroups
         }),
-        [es, ea] = (0, u.bG)([_.A], () => _.A.getFavoriteTargetIdsForTab(v.x.FRIENDS), [], y.D),
-        eo = (0, u.bG)([E.default, I.A, m.A], () => {
+        [er, es] = (0, o.bG)([R.A], () => R.A.getFavoriteTargetIdsForTab(T.x.FRIENDS), [], p.D),
+        ea = (0, o.bG)([m.default, f.A, E.A], () => {
             let e = [];
-            for (let t of es) {
-                let n = E.default.getUser(t);
+            for (let t of er) {
+                let n = m.default.getUser(t);
                 null != n && e.push({
                     user: n,
-                    activities: I.A.getActivities(t),
-                    nickname: m.A.getNickname(t)
+                    activities: f.A.getActivities(t),
+                    nickname: E.A.getNickname(t)
                 })
             }
             return e
-        }, [es]),
-        eu = r.useRef(new Set);
-    r.useEffect(() => {
-        for (let e of es) null == E.default.getUser(e) && (eu.current.has(e) || (eu.current.add(e), (0, h.wz)(e).catch(() => {
+        }, [er]),
+        eu = i.useRef(new Set);
+    i.useEffect(() => {
+        for (let e of er) null == m.default.getUser(e) && (eu.current.has(e) || (eu.current.add(e), (0, h.wz)(e).catch(() => {
             eu.current.delete(e)
         })))
-    }, [es]);
-    let ec = r.useMemo(() => {
-            let e = K.trim().toLowerCase();
-            return "" === e ? eo : eo.filter(t => {
+    }, [er]);
+    let eo = i.useMemo(() => {
+            let e = $.trim().toLowerCase();
+            return "" === e ? ea : ea.filter(t => {
                 let {
                     user: n,
                     activities: l,
-                    nickname: r
+                    nickname: i
                 } = t;
-                return [n.username, n.globalName, r, ...l.map(e => e.name)].filter(e => null != e && "" !== e.trim()).some(t => t.toLowerCase().includes(e))
+                return [n.username, n.globalName, i, ...l.map(e => e.name)].filter(e => null != e && "" !== e.trim()).some(t => t.toLowerCase().includes(e))
             })
-        }, [eo, K]),
-        ed = ea > 0 && ec.length > 0,
-        eh = !ed && 0 === ee.length && 0 === Z.friendRequests.length && (!q || 0 === Z.suggestions.length) && 0 === Z.sameActivity.length && 0 === Z.inGame.length && 0 === Z.activities.length && 0 === Z.online.length && 0 === Z.offline.length,
-        [eg, ef] = r.useState(["FRIEND_REQUESTS", "OFFLINE"]),
-        ep = r.useRef(null),
-        eI = (0, g.A)("friends-popout", ep),
-        em = r.useCallback(e => {
-            ef(t => t.includes(e) ? t.filter(t => t !== e) : [...t, e])
+        }, [ea, $]),
+        ed = es > 0 && eo.length > 0,
+        ec = !ed && 0 === q.length && 0 === X.friendRequests.length && (!Z || 0 === X.suggestions.length) && 0 === X.sameActivity.length && 0 === X.inGame.length && 0 === X.activities.length && 0 === X.online.length && 0 === X.offline.length,
+        eh = (0, o.bG)([M.A], () => M.A.getCollapsedSectionOverridesForTab(T.x.FRIENDS), []),
+        eg = i.useRef(null),
+        eI = (0, g.A)("friends-popout", eg),
+        eA = i.useCallback(e => {
+            (0, D.G)({
+                tab: T.x.FRIENDS,
+                sectionKey: e
+            })
         }, []),
-        eE = r.useCallback(e => {
-            e.stopPropagation(), J(!1)
-        }, [J]),
-        eA = r.useCallback((0, a.debounce)(() => {
-            null == t || t({
-                type: T.c.SEARCH_FRIENDS
+        ef = i.useCallback(e => eh[e] ?? M.A.isSectionCollapsedByDefault(T.x.FRIENDS, e), [eh]),
+        eE = i.useCallback(e => {
+            e.stopPropagation(), Q(!1)
+        }, [Q]),
+        em = i.useCallback((0, a.debounce)(() => {
+            t?.({
+                type: v.c.SEARCH_FRIENDS
             })
         }, 1e3, {
             leading: !0,
             trailing: !1
         }), [t]),
-        ey = r.useCallback(e => {
-            var t;
-            X(e), eA(), null == (t = ep.current) || t.scrollToTop()
-        }, [X, eA]),
-        eS = r.useCallback(() => {
-            var e;
-            Q(), eA(), null == (e = ep.current) || e.scrollToTop()
-        }, [Q, eA]),
-        ev = r.useMemo(() => {
-            let e = e => eg.includes(e),
-                t = e => {
-                    let t = I.A.getStatus(e);
-                    return t !== D.clD.ONLINE && t !== D.clD.IDLE && t !== D.clD.DND
-                };
-            if (eh) return [{
+        eS = i.useCallback(e => {
+            B(e), em(), eg.current?.scrollToTop()
+        }, [B, em]),
+        ep = i.useCallback(() => {
+            K(), em(), eg.current?.scrollToTop()
+        }, [K, em]),
+        eN = i.useMemo(() => {
+            let e = e => {
+                let t = f.A.getStatus(e);
+                return t !== F.clD.ONLINE && t !== F.clD.IDLE && t !== F.clD.DND
+            };
+            if (ec) return [{
                 kind: "EMPTY_STATE",
                 key: "EMPTY_STATE",
                 title: "",
@@ -302,174 +223,170 @@ function W(e) {
                 length: 1,
                 rows: []
             }];
-            let n = [];
+            let t = [];
             if (ed) {
-                let l = e("FAVORITES") ? ec.filter(e => !t(e.user.id)) : ec;
-                n.push({
+                let n = ef("FAVORITES") ? eo.filter(t => !e(t.user.id)) : eo;
+                t.push({
                     kind: "FAVORITES",
                     key: "FAVORITES",
-                    title: j.intl.string(M.default.GKTlS6),
-                    count: ec.length,
-                    rows: l,
-                    length: Math.max(l.length, 1)
+                    title: L.intl.string(w.default.GKTlS6),
+                    count: eo.length,
+                    rows: n,
+                    length: Math.max(n.length, 1)
                 })
             }
-            if (Z.friendRequests.length > 0) {
-                let t = Z.friendRequests,
-                    l = e("FRIEND_REQUESTS") ? [] : t;
-                n.push({
+            if (X.friendRequests.length > 0) {
+                let e = X.friendRequests,
+                    n = ef("FRIEND_REQUESTS") ? [] : e;
+                t.push({
                     kind: "FRIEND_REQUESTS",
                     key: "FRIEND_REQUESTS",
-                    title: j.intl.formatToPlainString(j.t.xxFCW8, {
-                        count: t.length
+                    title: L.intl.formatToPlainString(L.t.xxFCW8, {
+                        count: e.length
                     }),
-                    count: t.length,
-                    rows: l,
-                    length: Math.max(l.length, 1)
+                    count: e.length,
+                    rows: n,
+                    length: Math.max(n.length, 1)
                 })
             }
-            for (let l of ee) {
-                let r = "GROUP:".concat(l.id),
-                    i = l.users,
-                    s = e(r) ? i.filter(e => !t(e.user.id)) : i;
-                n.push({
+            for (let n of q) {
+                let l = `GROUP:${n.id}`,
+                    i = n.users,
+                    r = ef(l) ? i.filter(t => !e(t.user.id)) : i;
+                t.push({
                     kind: "GROUP",
-                    key: r,
-                    title: l.name,
+                    key: l,
+                    title: n.name,
                     count: i.length,
-                    rows: s,
-                    length: Math.max(s.length, 1),
-                    group: l
+                    rows: r,
+                    length: Math.max(r.length, 1),
+                    group: n
                 })
             }
-            if (Z.sameActivity.length > 0) {
-                let t = Z.sameActivity,
-                    l = e("SAME_ACTIVITY") ? [] : t;
-                n.push({
+            if (X.sameActivity.length > 0) {
+                let e = X.sameActivity,
+                    n = ef("SAME_ACTIVITY") ? [] : e;
+                t.push({
                     kind: "SAME_ACTIVITY",
                     key: "SAME_ACTIVITY",
                     title: z.currentActivityName,
-                    count: t.length,
-                    rows: l,
-                    length: Math.max(l.length, 1)
+                    count: e.length,
+                    rows: n,
+                    length: Math.max(n.length, 1)
                 })
             }
-            if (Z.inGame.length > 0) {
-                let t = Z.inGame,
-                    l = e("IN_GAME") ? [] : t;
-                n.push({
+            if (X.inGame.length > 0) {
+                let e = X.inGame,
+                    n = ef("IN_GAME") ? [] : e;
+                t.push({
                     kind: "IN_GAME",
                     key: "IN_GAME",
-                    title: j.intl.string(M.default.trKJoT),
-                    count: t.length,
-                    rows: l,
-                    length: Math.max(l.length, 1)
+                    title: L.intl.string(w.default.trKJoT),
+                    count: e.length,
+                    rows: n,
+                    length: Math.max(n.length, 1)
                 })
             }
-            if (Z.activities.length > 0) {
-                let t = Z.activities,
-                    l = e("ACTIVITIES") ? [] : t;
-                n.push({
+            if (X.activities.length > 0) {
+                let e = X.activities,
+                    n = ef("ACTIVITIES") ? [] : e;
+                t.push({
                     kind: "ACTIVITIES",
                     key: "ACTIVITIES",
-                    title: j.intl.string(j.t.TxqPQR),
-                    count: t.length,
-                    rows: l,
-                    length: Math.max(l.length, 1)
+                    title: L.intl.string(L.t.TxqPQR),
+                    count: e.length,
+                    rows: n,
+                    length: Math.max(n.length, 1)
                 })
             }
-            if (q && Z.suggestions.length > 0) {
-                let t = Z.suggestions,
-                    l = e("SUGGESTIONS") ? [] : t;
-                n.push({
+            if (Z && X.suggestions.length > 0) {
+                let e = X.suggestions,
+                    n = ef("SUGGESTIONS") ? [] : e;
+                t.push({
                     kind: "SUGGESTIONS",
                     key: "SUGGESTIONS",
-                    title: j.intl.string(j.t.qm9dSj),
-                    count: t.length,
-                    rows: l,
-                    length: Math.max(l.length, 1)
+                    title: L.intl.string(L.t.qm9dSj),
+                    count: e.length,
+                    rows: n,
+                    length: Math.max(n.length, 1)
                 })
             }
-            if (Z.online.length > 0) {
-                let t = Z.online,
-                    l = e("ONLINE") ? [] : t;
-                n.push({
+            if (X.online.length > 0) {
+                let e = X.online,
+                    n = ef("ONLINE") ? [] : e;
+                t.push({
                     kind: "ONLINE",
                     key: "ONLINE",
-                    title: j.intl.string(j.t.WbGtnH),
-                    count: t.length,
-                    rows: l,
-                    length: Math.max(l.length, 1)
+                    title: L.intl.string(L.t.WbGtnH),
+                    count: e.length,
+                    rows: n,
+                    length: Math.max(n.length, 1)
                 })
             }
-            if (Z.offline.length > 0) {
-                let t = Z.offline,
-                    l = e("OFFLINE") ? [] : t;
-                n.push({
+            if (X.offline.length > 0) {
+                let e = X.offline,
+                    n = ef("OFFLINE") ? [] : e;
+                t.push({
                     kind: "OFFLINE",
                     key: "OFFLINE",
-                    title: j.intl.string(j.t.Vv0abJ),
-                    count: t.length,
-                    rows: l,
-                    length: Math.max(l.length, 1)
+                    title: L.intl.string(L.t.Vv0abJ),
+                    count: e.length,
+                    rows: n,
+                    length: Math.max(n.length, 1)
                 })
             }
-            return n
-        }, [eg, Z.friendRequests, ee, Z.sameActivity, Z.activities, Z.inGame, Z.suggestions, Z.online, Z.offline, z.currentActivityName, eh, q, ed, ec]),
-        eO = r.useCallback(e => ev[e], [ev]),
-        eb = r.useCallback((e, t) => "EMPTY_STATE" !== e.kind, []),
-        eN = r.useCallback(e => {
-            var t, r;
+            return t
+        }, [ef, X.friendRequests, q, X.sameActivity, X.activities, X.inGame, X.suggestions, X.online, X.offline, z.currentActivityName, ec, Z, ed, eo]),
+        eT = i.useCallback(e => eN[e], [eN]),
+        e_ = i.useCallback(e => {
             let {
-                section: i
-            } = e, s = eO(i);
-            if (null == s || "EMPTY_STATE" === s.kind) return null;
-            let a = eg.includes(s.key),
-                o = s.title,
-                u = s.count,
-                h = "GROUP" === s.kind,
-                g = a && "FRIEND_REQUESTS" !== s.kind ? "".concat(o, " (").concat(u, ")") : o,
-                f = eb(s, eg),
-                p = h && null != n ? e => {
-                    var t, l;
+                section: t
+            } = e, i = eT(t);
+            if (null == i || "EMPTY_STATE" === i.kind) return null;
+            let r = ef(i.key),
+                s = i.title,
+                a = i.count,
+                u = "GROUP" === i.kind,
+                o = r && "FRIEND_REQUESTS" !== i.kind ? `${s} (${a})` : s,
+                h = u && null != n ? e => {
                     n({
-                        type: T.K.FRIEND_GROUP,
+                        type: v.K.FRIEND_GROUP,
                         event: e,
-                        groupId: null != (t = null == (l = s.group) ? void 0 : l.id) ? t : "",
-                        groupName: o
+                        groupId: i.group?.id ?? "",
+                        groupName: s
                     })
                 } : void 0;
             return (0, l.jsxs)(l.Fragment, {
-                children: [(0, l.jsx)(d.AC4, {
-                    children: j.intl.format(j.t.Uaqbke, {
-                        title: o,
-                        count: u
+                children: [(0, l.jsx)(c.AC4, {
+                    children: L.intl.format(L.t.Uaqbke, {
+                        title: s,
+                        count: a
                     })
-                }), h ? (0, l.jsx)(k, {
-                    groupId: null != (t = null == (r = s.group) ? void 0 : r.id) ? t : "",
-                    groupName: o,
-                    displayText: g,
-                    isCollapsed: a,
-                    canCollapse: f,
-                    onToggle: () => em(s.key),
-                    onContextMenu: p,
-                    isReorderDisabled: $,
-                    draggedGroupId: en,
-                    dropTargetGroupId: el,
-                    dropTargetPosition: er,
+                }), u ? (0, l.jsx)(P, {
+                    groupId: i.group?.id ?? "",
+                    groupName: s,
+                    displayText: o,
+                    isCollapsed: r,
+                    onToggle: () => eA(i.key),
+                    onContextMenu: h,
+                    isReorderDisabled: J,
+                    draggedGroupId: et,
+                    dropTargetGroupId: en,
+                    dropTargetPosition: el,
                     getDragHandleProps: ei
-                }) : (0, l.jsx)(F, {
-                    displayText: g,
-                    isCollapsed: a,
-                    canCollapse: f,
-                    onToggle: () => em(s.key),
-                    rightAccessory: "SUGGESTIONS" === s.kind ? (0, l.jsx)(c.m_, {
-                        text: j.intl.string(j.t.N86XcP),
-                        children: (0, l.jsx)(d.DUT, {
-                            className: P.LQ,
-                            "aria-label": j.intl.string(j.t.N86XcP),
+                }) : (0, l.jsx)(x.I, {
+                    title: s,
+                    count: "FRIEND_REQUESTS" === i.kind ? void 0 : a,
+                    isCollapsed: r,
+                    canCollapse: !0,
+                    onToggle: () => eA(i.key),
+                    rightAccessory: "SUGGESTIONS" === i.kind ? (0, l.jsx)(d.m_, {
+                        text: L.intl.string(L.t.N86XcP),
+                        children: (0, l.jsx)(c.DUT, {
+                            className: k.LQ,
+                            "aria-label": L.intl.string(L.t.N86XcP),
                             onClick: eE,
-                            children: (0, l.jsx)(d.aXh, {
+                            children: (0, l.jsx)(c.aXh, {
                                 size: "xs",
                                 color: "currentColor"
                             })
@@ -477,80 +394,105 @@ function W(e) {
                     }) : null
                 })]
             })
-        }, [eO, eg, em, $, en, el, er, ei, eb, eE, n]),
-        eT = r.useCallback(e => {
-            let r;
-            if (eh) return (0, l.jsx)("div", {
-                className: P.y7,
-                children: (0, l.jsx)(d.Text, {
+        }, [eT, ef, eA, J, et, en, el, ei, eE, n]),
+        eC = i.useCallback(e => {
+            let i;
+            if (ec) return (0, l.jsx)("div", {
+                className: k.y7,
+                children: (0, l.jsx)(c.Text, {
                     variant: "text-md/normal",
                     color: "text-muted",
-                    children: j.intl.string(j.t["7sW4h1"])
+                    children: L.intl.string(L.t["7sW4h1"])
                 })
             }, "friends-popout-empty");
-            let i = eO(e.section);
-            if (null == i) return null;
-            if ("GROUP" === i.kind) {
-                var s;
-                r = null == (s = i.group) ? void 0 : s.id
-            }
-            let a = i.rows[e.row];
-            return null == a || null == a.user ? null : (0, l.jsx)("div", {
-                children: (0, l.jsx)(b.Z, U(R({}, a), {
-                    closeParentPopout: Y,
-                    isSuggestion: "SUGGESTIONS" === i.kind,
-                    shouldHighlightIfRecentlyAdded: "FAVORITES" === i.kind,
-                    appContext: D.BRT.OVERLAY,
+            let r = eT(e.section);
+            if (null == r) return null;
+            "GROUP" === r.kind && (i = r.group?.id);
+            let s = r.rows[e.row];
+            return null == s || null == s.user ? null : (0, l.jsx)("div", {
+                children: (0, l.jsx)(C.Z, {
+                    ...s,
+                    closeParentPopout: H,
+                    isSuggestion: "SUGGESTIONS" === r.kind,
+                    shouldHighlightIfRecentlyAdded: "FAVORITES" === r.kind,
+                    appContext: F.BRT.OVERLAY,
                     onPrimaryAction: t,
                     onContextMenu: n,
-                    onFriendVisible: w,
-                    friendGroupId: r
-                }))
-            }, "".concat(e.section, ":").concat(a.user.id))
-        }, [eO, eh, Y, t, n, w]),
-        e_ = r.useMemo(() => ev.map(e => e.length), [ev]),
-        eC = r.useCallback(() => 40, []),
-        ex = r.useCallback(e => {
-            if (eh) return 300;
-            let t = eO(e);
+                    onFriendVisible: b,
+                    friendGroupId: i
+                })
+            }, `${e.section}:${s.user.id}`)
+        }, [eT, ec, H, t, n, b]),
+        ey = i.useMemo(() => eN.map(e => e.length), [eN]),
+        ex = i.useCallback(e => {
+            let t = eN.findIndex(e => "FAVORITES" === e.kind);
+            if (-1 === t) return null;
+            let n = eN[t],
+                l = n?.rows.findIndex(t => t.user.id === e) ?? -1;
+            return -1 !== l ? {
+                section: t,
+                row: l
+            } : null
+        }, [eN]),
+        eM = i.useCallback(() => {
+            let e = eN.findIndex(e => "FAVORITES" === e.kind);
+            return -1 === e ? null : {
+                section: e,
+                row: void 0
+            }
+        }, [eN]);
+    (0, U.$)({
+        scrollerRef: eg,
+        favoriteTargetIds: er,
+        getScrollTargetForTargetId: e => ex(e),
+        getFallbackScrollTarget: eM,
+        padding: 8,
+        animate: !1
+    });
+    let ev = i.useCallback(() => 40, []),
+        eD = i.useCallback(e => {
+            if (ec) return 300;
+            let t = eT(e);
             return null == t ? 50 : 50 * (0 !== t.rows.length)
-        }, [eO, eh]);
+        }, [eT, ec]);
     return (0, l.jsxs)("div", {
-        className: P.kL,
+        className: k.kL,
         children: [(0, l.jsx)("div", {
-            className: P.MT,
-            children: (0, l.jsx)(d.IWV, {
-                query: K,
-                onChange: ey,
-                onClear: eS,
-                placeholder: j.intl.string(j.t.lLDtTK),
+            className: k.MT,
+            children: (0, l.jsx)(c.IWV, {
+                query: $,
+                onChange: eS,
+                onClear: ep,
+                placeholder: L.intl.string(L.t.lLDtTK),
                 size: "md"
             })
-        }), (0, l.jsx)(o.hD, {
+        }), (0, l.jsx)(u.hD, {
             navigator: eI,
-            children: (0, l.jsx)(o.PR, {
+            children: (0, l.jsx)(u.PR, {
                 children: e => {
                     let {
                         ref: t,
-                        role: n
-                    } = e, r = G(e, ["ref", "role"]);
-                    return (0, l.jsx)(d.skg, {
-                        children: e => (0, l.jsx)(d.B8B, R({
+                        role: n,
+                        ...i
+                    } = e;
+                    return (0, l.jsx)(c.skg, {
+                        children: e => (0, l.jsx)(c.B8B, {
                             innerRole: n,
-                            innerAriaLabel: j.intl.string(j.t.TdEu5X),
+                            innerAriaLabel: L.intl.string(L.t.TdEu5X),
                             ref: e => {
-                                var n;
-                                ep.current = e, t.current = null != (n = null == e ? void 0 : e.getScrollerNode()) ? n : null
+                                eg.current = e, t.current = e?.getScrollerNode() ?? null
                             },
-                            className: P.p_,
-                            sectionHeight: eC,
-                            rowHeight: ex,
+                            className: k.p_,
+                            sectionHeight: ev,
+                            rowHeight: eD,
                             sidebarHeight: 0,
-                            renderSection: eN,
-                            renderRow: eT,
-                            sections: e_,
-                            paddingBottom: 8
-                        }, r, e))
+                            renderSection: e_,
+                            renderRow: eC,
+                            sections: ey,
+                            paddingBottom: 8,
+                            ...i,
+                            ...e
+                        })
                     })
                 }
             })

@@ -1,58 +1,57 @@
 /** chunk id: 420208, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    Q: () => b
-}), n(896048), n(864466), n(443073), n(638769);
-var r = n(843472),
-    i = n(508675),
-    l = n(451909),
-    a = n(361670),
+    Q: () => g
+});
+var i = n(843472),
+    l = n(508675),
+    a = n(451909),
+    r = n(361670),
     s = n(631576),
     o = n(679382),
     c = n(842086),
-    u = n(71393),
-    d = n(287809),
-    p = n(690521),
-    m = n(661191),
-    f = n(652215),
-    g = n(307731),
-    _ = n(381941);
+    d = n(71393),
+    u = n(287809),
+    m = n(690521),
+    _ = n(661191),
+    A = n(652215),
+    h = n(307731),
+    f = n(381941);
 
-function h(e) {
-    let t = u.A.getGuild(e);
-    return null != t && (t.nsfwLevel === f.ftr.DEFAULT || t.nsfwLevel === f.ftr.SAFE)
+function E(e) {
+    let t = d.A.getGuild(e);
+    return null != t && (t.nsfwLevel === A.ftr.DEFAULT || t.nsfwLevel === A.ftr.SAFE)
 }
-async function b(e, t) {
-    var n, f, b;
-    let y = t.getGuildId();
-    if (null == y || null == u.A.getGuild(y)) return;
-    let A = d.default.getCurrentUser();
+async function g(e, t) {
+    let n = t.getGuildId();
+    if (null == n || null == d.A.getGuild(n)) return;
+    let A = u.default.getCurrentUser();
     if (null == A) return;
     await (0, s.YB)();
-    let v = Array.from(o.A.getAllGuildStickers().values()).flat().filter(e => h(e.guild_id) && (0, a.G7)(e, A, t)).sort((e, t) => -m.default.compare(e.id, t.id));
-    if (v.length > 5) {
-        let n = [v[Math.floor(Math.pow(Math.random(), 2) * v.length)].id];
-        r.A.sendStickers(t.id, n, "", {
+    let g = Array.from(o.A.getAllGuildStickers().values()).flat().filter(e => E(e.guild_id) && (0, r.G7)(e, A, t)).sort((e, t) => -_.default.compare(e.id, t.id));
+    if (g.length > 5) {
+        let n = [g[Math.floor(Math.pow(Math.random(), 2) * g.length)].id];
+        i.A.sendStickers(t.id, n, "", {
             messageReference: {
-                guild_id: null != (f = t.getGuildId()) ? f : void 0,
+                guild_id: t.getGuildId() ?? void 0,
                 channel_id: t.id,
                 message_id: e
             },
-            location: _.Hx.CHANNEL_PROMPT
+            location: f.Hx.CHANNEL_PROMPT
         });
         return
     }
-    let O = u.A.getGuildIds().filter(h).map(e => i.Ay.getUsableGuildEmoji(e)).flat().filter(e => null == p.Ay.getEmojiUnavailableReason({
+    let p = d.A.getGuildIds().filter(E).map(e => l.Ay.getUsableGuildEmoji(e)).flat().filter(e => null == m.Ay.getEmojiUnavailableReason({
         emoji: e,
         channel: t,
-        guildId: y,
-        intention: g.b_.CHAT
-    })).sort((e, t) => -m.default.compare(e.id, t.id));
-    if (O.length > 10) {
-        let n = O[Math.floor(Math.pow(Math.random(), 2) * O.length)];
-        r.A.sendMessage(t.id, l.Ay.parse(t, (0, p.N)(n)), !1, {
-            location: _.Hx.CHANNEL_PROMPT,
+        guildId: n,
+        intention: h.b_.CHAT
+    })).sort((e, t) => -_.default.compare(e.id, t.id));
+    if (p.length > 10) {
+        let n = p[Math.floor(Math.pow(Math.random(), 2) * p.length)];
+        i.A.sendMessage(t.id, a.Ay.parse(t, (0, m.N)(n)), !1, {
+            location: f.Hx.CHANNEL_PROMPT,
             messageReference: {
-                guild_id: null != (b = t.getGuildId()) ? b : void 0,
+                guild_id: t.getGuildId() ?? void 0,
                 channel_id: t.id,
                 message_id: e
             }
@@ -60,13 +59,13 @@ async function b(e, t) {
         return
     }
     let x = Array.from(o.A.getAllPackStickers().values()).flat().filter(e => e.type === c.NL.STANDARD),
-        E = [x[Math.floor(Math.random() * x.length)].id];
-    r.A.sendStickers(t.id, E, "", {
+        C = [x[Math.floor(Math.random() * x.length)].id];
+    i.A.sendStickers(t.id, C, "", {
         messageReference: {
-            guild_id: null != (n = t.getGuildId()) ? n : void 0,
+            guild_id: t.getGuildId() ?? void 0,
             channel_id: t.id,
             message_id: e
         },
-        location: _.Hx.CHANNEL_PROMPT
+        location: f.Hx.CHANNEL_PROMPT
     })
 }

@@ -1,30 +1,30 @@
 /** chunk id: 851580, original params: e,t,r (module,exports,require) **/
 r.d(t, {
     v: () => h
-}), r(896048);
-var n = r(627968),
-    l = r(554146),
-    s = r(342494),
+});
+var s = r(627968),
+    n = r(554146),
+    l = r(342494),
     a = r(379848),
     i = r(966597),
     o = r(49999),
-    c = r(985018),
-    u = r(936037);
-let d = l.M.FOR_LATER_POPOUT_COACHMARK;
+    u = r(985018),
+    c = r(936037);
+let d = n.M.FOR_LATER_POPOUT_COACHMARK;
 
 function h(e) {
     let {
         location: t,
         targetElementRef: r
     } = e, {
-        enabled: l,
+        enabled: n,
         inInbox: h
     } = i.A.useExperiment({
         location: "ForLaterCoachmarkWeb"
     }, {
         autoTrackExposure: !1
-    }), [f, p] = (0, a.kn)(l && t === (h ? "inbox-button" : "bookmarks-button") ? [d] : [], void 0);
-    return f !== d ? null : (0, n.jsx)(s.AM, {
+    }), [_, E] = (0, a.kn)(n && t === (h ? "inbox-button" : "bookmarks-button") ? [d] : [], void 0);
+    return _ !== d ? null : (0, s.jsx)(l.AM, {
         targetElementRef: r,
         gradientColor: "purple",
         position: "bottom",
@@ -33,16 +33,16 @@ function h(e) {
         caretConfig: {
             align: "end"
         },
-        onRequestClose: () => p(o.i.USER_DISMISS),
-        title: c.intl.string(c.t.qPbFK2),
-        body: c.intl.string(c.t.URrJq1),
+        onRequestClose: () => E(o.i.USER_DISMISS),
+        title: u.intl.string(u.t.qPbFK2),
+        body: u.intl.string(u.t.URrJq1),
         actions: [{
-            text: c.intl.string(c.t["NX+WJN"]),
-            onClick: () => p(o.i.USER_DISMISS)
+            text: u.intl.string(u.t["NX+WJN"]),
+            onClick: () => E(o.i.USER_DISMISS)
         }],
         graphic: {
             type: "image",
-            src: u
+            src: c
         }
     })
 }

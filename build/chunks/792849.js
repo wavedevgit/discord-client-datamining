@@ -1,17 +1,17 @@
-/** chunk id: 792849, original params: e,t,n (module,exports,require) **/
+/** chunk id: 792849, original params: e,t,l (module,exports,require) **/
 "use strict";
-n.d(t, {
-    g: () => l
+l.d(t, {
+    g: () => o
 });
-var r = n(627968);
-n(64700);
-var i = n(397927),
-    a = n(261225),
-    o = n(970488);
+var r = l(627968);
+l(64700);
+var a = l(397927),
+    n = l(261225),
+    i = l(970488);
 let s = e => {
         let {
             color: t,
-            children: n
+            children: l
         } = e;
         return (0, r.jsx)("div", {
             style: {
@@ -25,39 +25,39 @@ let s = e => {
                 color: "white",
                 fontWeight: "bold"
             },
-            children: n
+            children: l
         })
     },
-    l = {
+    o = {
         name: "Grid",
         id: "grid",
         component: e => {
             let {
                 columns: t,
-                gridItemColumns: n,
-                gridItemRows: l
+                gridItemColumns: l,
+                gridItemRows: o
             } = e;
             return (0, r.jsxs)(r.Fragment, {
-                children: [(0, r.jsx)(i.Text, {
+                children: [(0, r.jsx)(a.Text, {
                     variant: "text-lg/semibold",
                     children: "Grid is used to create a responsive grid layout. It takes a columns prop to define the number of columns (1-6). The grid automatically becomes responsive on smaller screens."
-                }), (0, r.jsx)("br", {}), (0, r.jsx)(i.Text, {
+                }), (0, r.jsx)("br", {}), (0, r.jsx)(a.Text, {
                     variant: "text-lg/semibold",
                     children: "GridItem is (optionally) used to set the size of a grid itme in the grid."
                 }), (0, r.jsx)("div", {
                     style: {
                         marginTop: 24
                     },
-                    children: (0, r.jsxs)(a.A, {
+                    children: (0, r.jsxs)(n.A, {
                         columns: t,
                         children: [(0, r.jsx)(s, {
                             color: "red"
-                        }), (0, r.jsx)(o.A, {
-                            columns: n,
-                            rows: l,
+                        }), (0, r.jsx)(i.A, {
+                            columns: l,
+                            rows: o,
                             children: (0, r.jsx)(s, {
                                 color: "orange",
-                                children: (0, r.jsx)(i.Text, {
+                                children: (0, r.jsx)(a.Text, {
                                     variant: "text-lg/semibold",
                                     children: "GridItem"
                                 })

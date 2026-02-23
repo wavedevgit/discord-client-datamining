@@ -1,37 +1,37 @@
-/** chunk id: 461123, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => d
+/** chunk id: 461123, original params: e,t,l (module,exports,require) **/
+l.d(t, {
+    A: () => c
 });
-var l = n(627968),
-    i = n(64700),
-    a = n(397927),
-    r = n(582343),
-    s = n(236972),
-    u = n(637368),
-    o = n(985018),
-    c = n(83363);
-let d = i.memo(function(e) {
+var n = l(627968),
+    a = l(64700),
+    i = l(397927),
+    s = l(582343),
+    r = l(236972),
+    u = l(637368),
+    o = l(985018),
+    d = l(83363);
+let c = a.memo(function(e) {
     let {
         sound: t,
-        volume: n,
-        disabled: i = !1,
-        onChange: d
+        volume: l,
+        disabled: a = !1,
+        onChange: c
     } = e, {
-        file: f
-    } = (0, s.L)();
-    return (0, l.jsx)(a.D0$, {
+        file: m
+    } = (0, r.L)();
+    return (0, n.jsx)(i.D0$, {
         label: o.intl.string(o.t.CCRKNz),
-        children: (0, l.jsxs)("div", {
-            className: c.UV,
-            children: [null != t && (0, l.jsx)(u.A, {
+        children: (0, n.jsxs)("div", {
+            className: d.UV,
+            children: [null != t && (0, n.jsx)(u.A, {
                 sound: t,
-                volume: n,
-                disabled: i
-            }), null == t && null != f && (0, l.jsx)(r.A, {
-                className: c.lF,
-                volume: n,
-                disabled: i,
-                onChange: d
+                volume: l,
+                disabled: a
+            }), null == t && null != m && (0, n.jsx)(s.A, {
+                className: d.lF,
+                volume: l,
+                disabled: a,
+                onChange: c
             })]
         })
     })

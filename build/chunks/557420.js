@@ -1,42 +1,42 @@
 /** chunk id: 557420, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    d: () => c
+    d: () => a
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(990078),
+var s = n(990078),
     l = n(397927),
-    o = n(40462);
+    r = n(40462);
 
-function c(e) {
+function a(e) {
     let {
         text: t,
         tooltipText: n,
-        onClick: c,
-        disabled: s
+        onClick: a,
+        disabled: c
     } = e;
-    return s ? (0, r.jsxs)("div", {
-        className: o.k,
-        children: [(0, r.jsx)(l.j96, {
+    return c ? (0, i.jsxs)("div", {
+        className: r.k,
+        children: [(0, i.jsx)(l.j96, {
             size: "md",
             color: "currentColor",
-            className: o.K
-        }), (0, r.jsx)(l.Text, {
+            className: r.K
+        }), (0, i.jsx)(l.Text, {
             color: "interactive-text-active",
             variant: "text-md/semibold",
             children: t
         })]
-    }) : (0, r.jsx)(i.m, {
+    }) : (0, i.jsx)(s.m, {
         text: n,
         shouldShow: null != n,
-        children: (0, r.jsxs)(l.DUT, {
-            className: o.k,
-            onClick: c,
-            children: [(0, r.jsx)(l.j96, {
+        children: (0, i.jsxs)(l.DUT, {
+            className: r.k,
+            onClick: a,
+            children: [(0, i.jsx)(l.j96, {
                 size: "md",
                 color: "currentColor",
-                className: o.K
-            }), (0, r.jsx)(l.Text, {
+                className: r.K
+            }), (0, i.jsx)(l.Text, {
                 color: "interactive-text-active",
                 variant: "text-md/semibold",
                 children: t

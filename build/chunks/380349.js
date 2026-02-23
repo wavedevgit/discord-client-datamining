@@ -1,33 +1,33 @@
 /** chunk id: 380349, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => u
+    A: () => d
 });
-var r = n(211401),
-    l = n(500049),
-    a = n(429913),
-    i = n(355622),
-    o = n(583846),
-    s = n(360469),
+var l = n(211401),
+    a = n(500049),
+    r = n(429913),
+    s = n(355622),
+    i = n(583846),
+    o = n(360469),
     c = n(985018);
 
-function u(e) {
+function d(e) {
     let {
         entry: t
-    } = e, n = (0, a.h)(t.extra.application_id), u = null == n ? void 0 : n.getIconURL(s.iu.LARGE), d = t.extra.activity_name, p = (0, o.Hd)(t) ? c.t.vPg1JT : c.t.rPqqts, m = {
+    } = e, n = (0, r.h)(t.extra.application_id), d = n?.getIconURL(o.iu.LARGE), u = t.extra.activity_name, m = (0, i.Hd)(t) ? c.t.vPg1JT : c.t.rPqqts, p = {
         onClick: () => {
-            r.R(l.s4.TEXT, i.oU.NORMAL, {
+            l.R(a.s4.TEXT, s.oU.NORMAL, {
                 applicationId: t.extra.application_id
             })
         },
         ariaDescription: c.intl.formatToPlainString(c.t.NTHttN, {
-            title: d
+            title: u
         })
     };
     return {
-        thumbnailUrl: u,
-        title: d,
-        titleClickable: m,
-        thumbnailClickable: m,
-        userDescription: p
+        thumbnailUrl: d,
+        title: u,
+        titleClickable: p,
+        thumbnailClickable: p,
+        userDescription: m
     }
 }

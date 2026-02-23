@@ -1,124 +1,78 @@
 /** chunk id: 565265, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => O
-}), n(896048);
-var r = n(627968),
-    l = n(64700),
-    i = n(503698),
-    s = n.n(i),
+    A: () => _
+});
+var i = n(627968),
+    s = n(64700),
+    l = n(503698),
+    r = n.n(l),
     a = n(621466),
     o = n(397927),
     c = n(442433),
-    u = n(46054),
-    d = n(742589),
-    p = n(652215),
+    d = n(46054),
+    u = n(742589),
     h = n(985018),
-    g = n(980017),
-    f = n(206314);
+    A = n(980017),
+    p = n(206314);
 
-function m(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-
-function b(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            m(e, t, n[t])
-        })
-    }
-    return e
-}
-
-function A(e) {
+function g(e) {
     return e.matches("a") || "highlight" === e.className || e.className.includes("mention")
 }
-class y extends l.Component {
+class m extends s.Component {
+    handleOpenTopic = e => {
+        let t = e.target;
+        if ((0, a.vq)(t)) {
+            if (g(t)) return;
+            let e = t.parentNode;
+            if ((0, a.vq)(e) && g(e)) return
+        }(0, o.mMO)(async () => {
+            let {
+                default: e
+            } = await n.e("8939").then(n.bind(n, 181094));
+            return t => (0, i.jsx)(e, {
+                ...t,
+                ...this.props
+            })
+        })
+    };
+    handleContextMenu = e => {
+        let {
+            channel: t,
+            guild: s
+        } = this.props;
+        (0, c.L3)(e, async () => {
+            let {
+                default: e
+            } = await n.e("17425").then(n.bind(n, 340968));
+            return n => (0, i.jsx)(e, {
+                ...n,
+                channel: t,
+                guild: s,
+                includeTopic: !0
+            })
+        })
+    };
     render() {
         let {
             channel: e
         } = this.props;
         if (e.isMultiUserDM()) return null;
         let t = null != e.topic && e.topic.length > 0;
-        return null != e.linkedLobby || t ? (0, r.jsxs)(l.Fragment, {
-            children: [(0, r.jsx)(d.A.Divider, {}), (0, r.jsxs)("div", {
-                className: s()(g.At, g.lu, f.PT),
-                onMouseDown: this.onMouseDown,
-                onMouseMove: this.onMouseMove,
-                onMouseUp: this.onMouseUp,
+        return null != e.linkedLobby || t ? (0, i.jsxs)(s.Fragment, {
+            children: [(0, i.jsx)(u.A.Divider, {}), (0, i.jsxs)("div", {
+                className: r()(A.At, A.lu, p.PT),
                 onContextMenu: this.handleContextMenu,
-                onClick: this.handleClick,
-                children: [(0, r.jsx)(o.DUT, {
-                    onClick: this.handleClick,
+                onClick: this.handleOpenTopic,
+                children: [(0, i.jsx)(o.DUT, {
+                    onClick: this.handleOpenTopic,
                     "aria-label": h.intl.string(h.t.mKwsSp),
-                    className: g.h8
-                }), null == e.linkedLobby || t ? u.A.parseTopic(e.topic, !0, {
+                    className: A.h8
+                }), null == e.linkedLobby || t ? d.A.parseTopic(e.topic, !0, {
                     channelId: e.id
                 }) : h.intl.string(h.t["XJVlf/"])]
             })]
         }) : null
     }
-    constructor(...e) {
-        super(...e), m(this, "_mouseDown", !1), m(this, "_mouseUp", !1), m(this, "handleOpenTopic", e => {
-            let t = e.target;
-            if ((0, a.vq)(t)) {
-                if (A(t)) return;
-                let e = t.parentNode;
-                if ((0, a.vq)(e) && A(e)) return
-            }(0, o.mMO)(async () => {
-                let {
-                    default: e
-                } = await n.e("8939").then(n.bind(n, 181094));
-                return t => (0, r.jsx)(e, b({}, t, this.props))
-            })
-        }), m(this, "onMouseDown", () => {
-            this._mouseDown = !0
-        }), m(this, "onMouseMove", () => {
-            this._mouseDown && (this._mouseDown = !1)
-        }), m(this, "onMouseUp", e => {
-            this._mouseDown && e.button !== p.hE4.SECONDARY && this.handleOpenTopic(e), this._mouseUp = !0, this._mouseDown = !1
-        }), m(this, "handleContextMenu", e => {
-            let {
-                channel: t,
-                guild: l
-            } = this.props;
-            (0, c.L3)(e, async () => {
-                let {
-                    default: e
-                } = await Promise.all([n.e("17425"), n.e("14237")]).then(n.bind(n, 340968));
-                return n => {
-                    var i, s;
-                    return (0, r.jsx)(e, (i = b({}, n), s = s = {
-                        channel: t,
-                        guild: l,
-                        includeTopic: !0
-                    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
-                        var n = Object.keys(e);
-                        if (Object.getOwnPropertySymbols) {
-                            var r = Object.getOwnPropertySymbols(e);
-                            n.push.apply(n, r)
-                        }
-                        return n
-                    })(Object(s)).forEach(function(e) {
-                        Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(s, e))
-                    }), i))
-                }
-            })
-        }), m(this, "handleClick", e => {
-            if (this._mouseUp) {
-                this._mouseUp = !1;
-                return
-            }
-            this.handleOpenTopic(e)
-        })
-    }
 }
-let O = y
+let _ = m

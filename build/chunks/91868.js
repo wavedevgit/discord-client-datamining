@@ -1,161 +1,184 @@
 /** chunk id: 91868, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => x,
-    Y: () => A
-}), n(321073), n(896048);
-var l, r, i, s = n(311907),
-    a = n(713402),
-    o = n(73153),
-    u = n(174768),
-    c = n(95701),
-    d = n(734057),
-    h = n(222823),
-    g = n(645959),
-    f = n(661191),
-    p = n(914853),
-    I = n(956753),
-    m = n(648427),
+    A: () => R,
+    Y: () => S
+}), n(321073);
+var l, i = n(311907),
+    r = n(713402),
+    s = n(73153),
+    a = n(174768),
+    u = n(95701),
+    o = n(734057),
+    d = n(222823),
+    c = n(994500),
+    h = n(645959),
+    g = n(661191),
+    I = n(914853),
+    A = n(956753),
+    f = n(648427),
     E = n(316541),
-    A = ((r = {}).ACTIVE_NOW = "ACTIVE_NOW", r.DMS = "DMS", r.RECENT_TEXT = "RECENT_TEXT", r);
-let y = new a.J(function(e) {
+    m = n(652215),
+    S = ((l = {}).ACTIVE_NOW = "ACTIVE_NOW", l.DMS = "DMS", l.RECENT_TEXT = "RECENT_TEXT", l);
+let p = new r.J(function(e) {
         let t = [];
         return e.isInActiveNow && t.push("ACTIVE_NOW"), e.isInDmsList && t.push("DMS"), e.isInRecentTextList && t.push("RECENT_TEXT"), t
     }, function(e) {
         return e.sortKey
     }),
-    S = null,
-    v = new Set;
+    N = null,
+    T = new Set;
 
-function O(e) {
+function _(e) {
     return String(Math.max(0, Math.min(0x9184e729fff, 0x9184e729fff - Math.floor(e)))).padStart(13, "0")
 }
 
-function b(e) {
+function C(e) {
     let t = function(e) {
-        let t = d.A.getChannel(e);
+        let t = o.A.getChannel(e);
         if (null == t) return null;
         let n = t.isPrivate(),
-            l = !n && (0, c.ke)(t.type);
+            l = !n && (0, u.ke)(t.type);
         if (!n && !l) return null;
-        let r = E.A.hasActiveNowChannelId({
+        if (t.isDM()) {
+            let e = t.getRecipientId?.();
+            if (null != e && c.A.getRelationshipType(e) === m.eA$.PENDING_INCOMING && (c.A.isIgnored(e) || c.A.isSpam(e))) return null
+        }
+        let i = E.A.hasActiveNowChannelId({
                 kind: E.u.Text,
                 channelId: e
             }),
-            i = l && (u.A.getChannelHistory().includes(e) || m.A.getTextChannelHistory().includes(e)),
-            s = h.Ay.hasUnread(e) || h.Ay.getMentionCount(e) > 0,
-            a = null != t.lastMessageId ? f.default.extractTimestamp(t.lastMessageId) : 0,
-            o = (() => {
-                var t, l;
-                if (n) return "DM\0".concat(O(a), "\0").concat(e);
-                if (r) {
+            r = l && (a.A.getChannelHistory().includes(e) || f.A.getTextChannelHistory().includes(e)),
+            s = d.Ay.hasUnread(e) || d.Ay.getMentionCount(e) > 0,
+            h = null != t.lastMessageId ? g.default.extractTimestamp(t.lastMessageId) : 0,
+            I = (() => {
+                var t;
+                if (n) return `DM\0${_(h)}\0${e}`;
+                if (i) {
                     let n;
-                    return l = null != (t = E.A.getScoreForChannelId(e)) ? t : 0, n = Math.floor(Math.max(0, Math.min(0x2540be3ff, 1e6 * l))), "AN\0".concat(String(0x2540be3ff - n).padStart(10, "0"), "\0").concat(e)
+                    return t = E.A.getScoreForChannelId(e) ?? 0, n = Math.floor(Math.max(0, Math.min(0x2540be3ff, 1e6 * t))), `AN\0${String(0x2540be3ff-n).padStart(10,"0")}\0${e}`
                 }
-                return "GT\0".concat(s ? "0" : "1", "\0").concat(O(a), "\0").concat(e)
+                return `GT\0${s?"0":"1"}\0${_(h)}\0${e}`
             })();
         return {
             id: e,
             channelId: e,
-            isInActiveNow: r,
+            isInActiveNow: i,
             isInDmsList: n,
-            isInRecentTextList: i,
+            isInRecentTextList: r,
             hasUnread: s,
-            lastActivityAtMs: a,
-            sortKey: o
+            lastActivityAtMs: h,
+            sortKey: I
         }
     }(e);
-    return null == t ? y.delete(e) : y.set(e, t)
+    return null == t ? p.delete(e) : p.set(e, t)
 }
 
-function N() {
+function y() {
     let e = E.A.getActiveNowChannelIds({
             kind: E.u.Text
         }),
         t = new Set(e),
         n = !1;
-    for (let t of e) n = b(t) || n;
-    for (let e of [...y.values("ACTIVE_NOW")]) t.has(e.channelId) || (n = b(e.channelId) || n);
-    return v = t, n
+    for (let t of e) n = C(t) || n;
+    for (let e of [...p.values("ACTIVE_NOW")]) t.has(e.channelId) || (n = C(e.channelId) || n);
+    return T = t, n
 }
 
-function T() {
-    y.clear(), v = new Set;
+function x() {
+    p.clear(), T = new Set;
     let e = !1;
-    for (let t of g.A.getPrivateChannelIds()) e = b(t) || e;
-    for (let t of u.A.getChannelHistory()) e = b(t) || e;
-    for (let t of m.A.getTextChannelHistory()) e = b(t) || e;
+    for (let t of h.default.getPrivateChannelIds()) e = C(t) || e;
+    for (let t of a.A.getChannelHistory()) e = C(t) || e;
+    for (let t of f.A.getTextChannelHistory()) e = C(t) || e;
     let t = E.A.getActiveNowChannelIds({
         kind: E.u.Text
     });
-    for (let n of (v = new Set(t), t)) e = b(n) || e;
+    for (let n of (T = new Set(t), t)) e = C(n) || e;
     return e
 }
-class _ extends(l = s.Ay.Store) {
+
+function M(e) {
+    let t = o.A.getDMFromUserId(e);
+    return null != t && C(t)
+}
+class v extends i.Ay.Store {
+    static displayName = "FriendsWidgetMessagesStore";
     initialize() {
-        this.waitFor(d.A, E.A, u.A, h.Ay, g.A, m.A), T()
+        this.waitFor(o.A, E.A, a.A, d.Ay, c.A, h.default, f.A), x()
     }
     getRows(e) {
-        return [y.values(e), y.version]
+        return [p.values(e), p.version]
     }
     getChannel(e) {
-        return y.get(e)
+        return p.get(e)
     }
-}(i = "displayName") in _ ? Object.defineProperty(_, i, {
-    value: "FriendsWidgetMessagesStore",
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
-}) : _[i] = "FriendsWidgetMessagesStore";
-let C = e => (0, I.v$)(e, "FriendsWidgetMessagesStore"),
-    x = new _(o.h, __OVERLAY__ ? {} : {
-        OVERLAY_FRIENDS_WIDGET_SET_FAVORITE: C(function(e) {
-            return e.tab === p.x.MESSAGES && b(e.targetId)
+}
+let D = e => (0, A.v$)(e, "FriendsWidgetMessagesStore"),
+    R = new v(s.h, __OVERLAY__ ? {} : {
+        OVERLAY_FRIENDS_WIDGET_SET_FAVORITE: D(function(e) {
+            return e.tab === I.x.MESSAGES && C(e.targetId)
         }),
-        CHANNEL_SELECT: C(function(e) {
-            var t;
-            let n = null != (t = e.channelId) ? t : null,
-                l = S;
-            S = n;
-            let r = !1;
-            null != l && (r = b(l) || r), null != n && (r = b(n) || r);
-            let i = N();
-            return r || i
+        CHANNEL_SELECT: D(function(e) {
+            let t = e.channelId ?? null,
+                n = N;
+            N = t;
+            let l = !1;
+            null != n && (l = C(n) || l), null != t && (l = C(t) || l);
+            let i = y();
+            return l || i
         }),
-        MESSAGE_CREATE: C(function(e) {
+        MESSAGE_CREATE: D(function(e) {
             if (e.optimistic) return !1;
-            let t = b(e.channelId),
-                n = N();
+            let t = C(e.channelId),
+                n = y();
             return t || n
         }),
-        MESSAGE_ACK: C(function(e) {
-            return b(e.channelId)
+        MESSAGE_ACK: D(function(e) {
+            return C(e.channelId)
         }),
-        TYPING_START: C(function(e) {
+        TYPING_START: D(function(e) {
             var t = e.channelId;
             let n = new Set(E.A.getActiveNowChannelIds({
                     kind: E.u.Text
                 })),
                 l = !1;
-            for (let e of (l = b(t) || l, n)) v.has(e) || (l = b(e) || l);
-            for (let e of v) n.has(e) || (l = b(e) || l);
-            return v = n, l
+            for (let e of (l = C(t) || l, n)) T.has(e) || (l = C(e) || l);
+            for (let e of T) n.has(e) || (l = C(e) || l);
+            return T = n, l
         }),
-        RTC_CONNECTION_STATE: C(function() {
-            return N()
+        RTC_CONNECTION_STATE: D(function() {
+            return y()
         }),
-        VOICE_CHANNEL_SELECT: C(function() {
-            return N()
+        VOICE_CHANNEL_SELECT: D(function() {
+            return y()
         }),
-        USER_GUILD_SETTINGS_CHANNEL_UPDATE: C(N),
-        USER_GUILD_SETTINGS_GUILD_UPDATE: C(N),
-        USER_GUILD_SETTINGS_GUILD_AND_CHANNELS_UPDATE: C(N),
-        OVERLAY_INITIALIZE: C(T),
-        POST_CONNECTION_OPEN: C(T),
-        CACHE_LOADED: C(T),
-        CACHE_LOADED_LAZY: C(T),
-        FRIENDS_LIST_POPOUT_MOUNTED: C(T),
-        LOGOUT: C(function() {
-            let e = y.size() > 0;
-            return y.clear(), S = null, v = new Set, e
+        USER_GUILD_SETTINGS_CHANNEL_UPDATE: D(y),
+        USER_GUILD_SETTINGS_GUILD_UPDATE: D(y),
+        USER_GUILD_SETTINGS_GUILD_AND_CHANNELS_UPDATE: D(y),
+        RELATIONSHIP_ADD: D(function(e) {
+            return M(e.relationship.id)
+        }),
+        RELATIONSHIP_REMOVE: D(function(e) {
+            return M(e.relationship.id)
+        }),
+        RELATIONSHIP_UPDATE: D(function(e) {
+            return M(e.relationship.id)
+        }),
+        RELATIONSHIP_PENDING_INCOMING_REMOVED: D(function(e) {
+            let t = !1;
+            for (let e of h.default.getPrivateChannelIds()) {
+                let n = o.A.getChannel(e);
+                null != n && n.isDM() && (t = C(e) || t)
+            }
+            return t
+        }),
+        OVERLAY_INITIALIZE: D(x),
+        POST_CONNECTION_OPEN: D(x),
+        CACHE_LOADED: D(x),
+        CACHE_LOADED_LAZY: D(x),
+        FRIENDS_LIST_POPOUT_MOUNTED: D(x),
+        LOGOUT: D(function() {
+            let e = p.size() > 0;
+            return p.clear(), N = null, T = new Set, e
         })
     })

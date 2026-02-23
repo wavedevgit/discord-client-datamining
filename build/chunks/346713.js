@@ -1,13 +1,13 @@
-/** chunk id: 346713, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => o
+/** chunk id: 346713, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    A: () => r
 });
-var l = n(64700),
-    i = n(311907),
-    r = n(622543);
-let s = [];
+var l = i(64700),
+    n = i(311907),
+    s = i(622543);
+let a = [];
 
-function o(e) {
-    let t = (0, i.bG)([r.A], () => r.A.getUserProfile(e));
-    return (0, l.useMemo)(() => (null == t ? void 0 : t.applicationRoleConnections) == null ? s : t.applicationRoleConnections, [null == t ? void 0 : t.applicationRoleConnections])
+function r(e) {
+    let t = (0, n.bG)([s.A], () => s.A.getUserProfile(e));
+    return (0, l.useMemo)(() => t?.applicationRoleConnections == null ? a : t.applicationRoleConnections, [t?.applicationRoleConnections])
 }

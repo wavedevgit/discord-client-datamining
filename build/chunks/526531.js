@@ -1,9 +1,8 @@
-/** chunk id: 526531, original params: e,t,n (module,exports,require) **/
-"use strict";
-
-function r(e, t) {
-    return e - t * Math.floor(e / t)
-}
-n.d(t, {
+/** chunk id: 526531, original params: e,a,t (module,exports,require) **/
+t.d(a, {
     z: () => r
-})
+});
+
+function r(e, a) {
+    return e - a * Math.floor(e / a)
+}

@@ -2,10 +2,10 @@
 n.d(t, {
     g: () => o
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(341915),
-    l = n(665816),
+var l = n(341915),
+    r = n(665816),
     a = n(654487),
     s = n(985018);
 
@@ -13,10 +13,10 @@ function o(e) {
     let {
         questId: t
     } = e;
-    return (0, r.jsx)(l.i, {
+    return (0, i.jsx)(r.i, {
         questId: t,
         fallbackReason: a.eA.EXCLUDED_QUEST,
         bodyText: s.intl.string(s.t.NIliWX),
-        questContent: i.uF.EXCLUDED_QUEST_EMBED
+        questContent: l.uF.EXCLUDED_QUEST_EMBED
     })
 }

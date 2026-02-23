@@ -2,9 +2,9 @@
 n.d(t, {
     ER: () => _,
     Qi: () => d,
-    Wy: () => u,
-    gN: () => E,
-    jS: () => c
+    Wy: () => E,
+    gN: () => c,
+    jS: () => u
 });
 var l = n(562465),
     r = n(73153),
@@ -22,10 +22,10 @@ function o(e, t) {
             userId: n,
             targetId: l,
             action: r
-        } = e, s = null != n ? n : a.A.userIdFilter, o = null != r ? r : a.A.actionFilter, u = null != l ? l : a.A.targetIdFilter, c = {
+        } = e, s = n ?? a.A.userIdFilter, o = r ?? a.A.actionFilter, E = l ?? a.A.targetIdFilter, u = {
             limit: i.$jw
         };
-        return null != t && (c.before = t), null != s && (c.user_id = s), null != o && (c.action_type = o), null != u && (c.target_id = u), c
+        return null != t && (u.before = t), null != s && (u.user_id = s), null != o && (u.action_type = o), null != E && (u.target_id = E), u
     }(t);
     return l.Bo.get({
         url: i.Rsh.GUILD_AUDIT_LOG(e),
@@ -35,7 +35,7 @@ function o(e, t) {
     })
 }
 
-function u(e, t, n, l) {
+function E(e, t, n, l) {
     if (!s() && null != e) return r.h.dispatch({
         type: "AUDIT_LOG_FETCH_START"
     }), o(e, {
@@ -51,7 +51,7 @@ function u(e, t, n, l) {
             guild_scheduled_events: i,
             auto_moderation_rules: s,
             threads: o,
-            application_commands: u
+            application_commands: E
         } = e.body;
         r.h.dispatch({
             type: "AUDIT_LOG_FETCH_SUCCESS",
@@ -62,14 +62,14 @@ function u(e, t, n, l) {
             guildScheduledEvents: i,
             automodRules: s,
             threads: o,
-            applicationCommands: u
+            applicationCommands: E
         })
     }, () => r.h.dispatch({
         type: "AUDIT_LOG_FETCH_FAIL"
     }))
 }
 
-function c(e) {
+function u(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
     if (!a.A.hasOlderLogs || s() || null == e) return;
     let n = a.A.logs,
@@ -90,7 +90,7 @@ function c(e) {
             guild_scheduled_events: i,
             auto_moderation_rules: s,
             threads: o,
-            application_commands: u
+            application_commands: E
         } = e.body;
         r.h.dispatch({
             type: "AUDIT_LOG_FETCH_NEXT_PAGE_SUCCESS",
@@ -101,30 +101,30 @@ function c(e) {
             guildScheduledEvents: i,
             automodRules: s,
             threads: o,
-            applicationCommands: u
+            applicationCommands: E
         })
     }, () => r.h.dispatch({
         type: "AUDIT_LOG_FETCH_NEXT_PAGE_FAIL"
     }))
 }
 
-function E(e, t) {
+function c(e, t) {
     if (!s() && null != t) return r.h.dispatch({
         type: "AUDIT_LOG_FILTER_BY_ACTION",
         action: e
-    }), u(t, null, null, e)
+    }), E(t, null, null, e)
 }
 
 function _(e, t) {
     if (!s() && null != t) return r.h.dispatch({
         type: "AUDIT_LOG_FILTER_BY_USER",
         userId: e
-    }), u(t, e)
+    }), E(t, e)
 }
 
 function d(e, t) {
     if (!s() && null != t) return r.h.dispatch({
         type: "AUDIT_LOG_FILTER_BY_TARGET",
         targetId: e
-    }), u(t, null, e)
+    }), E(t, null, e)
 }

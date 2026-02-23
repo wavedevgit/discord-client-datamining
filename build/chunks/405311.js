@@ -1,45 +1,39 @@
 /** chunk id: 405311, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => d
+    A: () => c
 });
 var a = n(627968),
-    l = n(311907),
-    r = n(397927),
-    i = n(576470),
-    s = n(99753),
+    i = n(311907),
+    s = n(397927),
+    l = n(576470),
+    r = n(99753),
     o = n(693879),
-    c = n(424994);
+    d = n(424994);
 
-function d() {
-    let e = (0, l.bG)([s.A], () => {
-            var e;
-            return (null == (e = s.A.getFeed(c.X1.GLOBAL_FEED)) ? void 0 : e.refresh_stale_inbox_after_ms) != null
-        }),
+function c() {
+    let e = (0, i.bG)([r.A], () => r.A.getFeed(d.X1.GLOBAL_FEED)?.refresh_stale_inbox_after_ms != null),
         {
             loading: t,
             nextFetchDate: n
-        } = (0, l.cf)([s.A], () => {
-            var e;
-            return null != (e = s.A.getFeedState(c.X1.GLOBAL_FEED)) ? e : {
-                loading: !1
-            }
+        } = (0, i.cf)([r.A], () => r.A.getFeedState(d.X1.GLOBAL_FEED) ?? {
+            loading: !1
         }),
-        d = (0, l.bG)([s.A], () => s.A.getLastFeedFetchDate(c.X1.GLOBAL_FEED));
+        c = (0, i.bG)([r.A], () => r.A.getLastFeedFetchDate(d.X1.GLOBAL_FEED));
     return (0, a.jsxs)("div", {
-        children: [t ? (0, a.jsx)(r.Text, {
+        children: [t ? (0, a.jsx)(s.Text, {
             variant: "text-md/normal",
             children: "(fetching)"
-        }) : (0, a.jsxs)(r.Text, {
+        }) : (0, a.jsxs)(s.Text, {
             variant: "text-md/normal",
-            children: ["Next fetch: ", null != n ? (0, a.jsx)(i.A, {
+            children: ["Next fetch: ", null != n ? (0, a.jsx)(l.A, {
                 deadline: n
             }) : e ? "(awaiting push)" : "(unscheduled)"]
-        }), (0, a.jsxs)(r.Text, {
+        }), (0, a.jsxs)(s.Text, {
             variant: "text-md/normal",
-            children: ["Last fetch:", " ", null != d ? (0, a.jsx)(o.z, {
+            children: ["Last fetch:", " ", null != c ? (0, a.jsx)(o.z, {
                 inline: !0,
                 entry: {
-                    start: d.getTime()
+                    start: c.getTime()
                 }
             }) : "(never)"]
         })]

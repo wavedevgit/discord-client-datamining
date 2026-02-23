@@ -1,115 +1,86 @@
-/** chunk id: 641819, original params: e,n,t (module,exports,require) **/
-t.d(n, {
-    j: () => S
-}), t(896048);
-var r = t(627968),
-    l = t(64700),
-    i = t(284009),
-    s = t.n(i),
-    a = t(311907),
-    o = t(397927),
-    u = t(447784),
-    c = t(235986),
-    d = t(68545),
-    p = t(412260),
-    m = t(91053),
-    E = t(287809),
-    g = t(954571),
-    f = t(937008),
-    P = t(156312),
-    j = t(166532),
-    h = t(482132),
-    _ = t(652215),
-    x = t(985018),
-    T = t(907);
+/** chunk id: 641819, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    j: () => I
+});
+var l = n(627968),
+    i = n(64700),
+    s = n(284009),
+    r = n.n(s),
+    a = n(311907),
+    o = n(732955),
+    u = n(397927),
+    d = n(447784),
+    c = n(68545),
+    p = n(412260),
+    m = n(91053),
+    E = n(287809),
+    _ = n(937008),
+    h = n(156312),
+    x = n(166532),
+    P = n(482132),
+    S = n(985018),
+    T = n(907);
 
-function S(e) {
+function I(e) {
     let {
-        handleStepChange: n,
-        handleClose: t
+        handleStepChange: t
     } = e, {
-        selectedPlan: i,
-        selectedSkuId: S,
-        step: b
-    } = (0, P.P5)(), {
-        setSelectedGiftingPromotionReward: O,
-        selectedGiftingPromotionReward: y,
-        claimableRewards: A
-    } = (0, f.Pv)(), I = (0, a.bG)([E.default], () => E.default.getCurrentUser()), v = (0, a.bG)([p.A], () => p.A.getGiftPromotionRewardSkuIds()), R = (0, d.UY)(A, y), [C, M] = l.useState(R), [N, k] = l.useState(!1);
-    l.useEffect(() => {
-        N || null != y || null == R || (O(R), M(R))
-    }, [R, N, y, O]), s()(null != i, "Expected plan to selected"), s()(null != S, "Expected selectedSkuId"), s()(null != b, "Step should be set");
-    let w = l.useMemo(() => null != C && (null != A ? A : []).includes(C), [C, A]),
-        D = l.useMemo(() => 0 === v.length || null == C || !w, [v, C, w]);
-    l.useEffect(() => {
-        if (0 === v.length) {
-            M(void 0), O(void 0);
+        selectedPlan: n,
+        selectedSkuId: s,
+        step: I
+    } = (0, h.P5)(), {
+        setSelectedGiftingPromotionReward: g,
+        selectedGiftingPromotionReward: A,
+        claimableRewards: j
+    } = (0, _.Pv)(), f = (0, a.bG)([E.default], () => E.default.getCurrentUser()), M = (0, a.bG)([p.A], () => p.A.getGiftPromotionRewardSkuIds()), R = (0, c.U)(j, A), [C, y] = i.useState(R), [N, v] = i.useState(!1);
+    i.useEffect(() => {
+        N || null != A || null == R || (g(R), y(R))
+    }, [R, N, A, g]), r()(null != n, "Expected plan to selected"), r()(null != s, "Expected selectedSkuId"), r()(null != I, "Step should be set");
+    let O = i.useMemo(() => null != C && (j ?? []).includes(C), [C, j]),
+        b = i.useMemo(() => 0 === M.length || null == C || !O, [M, C, O]);
+    i.useEffect(() => {
+        if (0 === M.length) {
+            y(void 0), g(void 0);
             return
         }
-        null != C && w && v.includes(C) || null == C || (M(void 0), O(void 0))
-    }, [v, w, C, O]);
-    let U = e => {
-            O(e), M(e), k(!0)
+        null != C && O && M.includes(C) || null == C || (y(void 0), g(void 0))
+    }, [M, O, C, g]);
+    let k = e => {
+            g(e), y(e), v(!0)
         },
-        L = v.map(e => (0, r.jsx)(u.k, {
+        w = M.map(e => (0, l.jsx)(d.k, {
             skuId: e,
-            claimed: null != A && !A.includes(e),
-            user: I,
-            onSelect: U,
+            claimed: null != j && !j.includes(e),
+            user: f,
+            onSelect: k,
             selectedSkuId: C
         }, e)),
-        G = (0, r.jsx)(h.UX, {
-            children: (0, r.jsx)(o.jlY, {
-                "data-migration-pending": !0,
-                className: T.Hx,
-                children: (0, r.jsx)(m.Z, {
-                    onStepChange: e => {
-                        null != I && null != y && g.default.track(_.HAw.GIFT_PROMOTION_REWARD_SELECTED, {
-                            user_id: I.id,
-                            reward_sku_id: y
-                        }), n(e)
-                    },
-                    onBackClick: () => n(j.pn.PLAN_SELECT),
-                    shouldRenderUpdatedPaymentModal: !0,
-                    showBackButton: !0,
-                    planOptions: [i.id],
-                    selectedPlanId: i.id,
-                    isNextDisabled: D
-                })
+        U = (0, l.jsx)(P.UX, {
+            children: (0, l.jsx)(m.Z, {
+                onStepChange: t,
+                onBackClick: () => t(x.pn.PLAN_SELECT),
+                shouldRenderUpdatedPaymentModal: !0,
+                showBackButton: !0,
+                planOptions: [n.id],
+                selectedPlanId: n.id,
+                isNextDisabled: b
             })
         });
-    return (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsxs)(o.rQ0, {
-            "data-migration-pending": !0,
-            className: T.Hc,
-            direction: c.A.Direction.VERTICAL,
-            align: c.A.Align.START,
-            separator: !1,
-            children: [(0, r.jsx)(o.Heading, {
-                variant: "heading-lg/semibold",
-                color: "text-strong",
-                children: x.intl.string(x.t.OEtqpm)
-            }), (0, r.jsx)(o.Text, {
-                variant: "text-md/medium",
-                color: "text-subtle",
-                className: T.GQ,
-                children: x.intl.string(x.t.h2nMp0)
-            }), (0, r.jsx)(o.s_y, {
-                "data-migration-pending": !0,
-                className: T.b,
-                onClick: t
-            })]
-        }), (0, r.jsx)(o.$mQ, {
-            "data-migration-pending": !0,
-            children: (0, r.jsx)(o.BJc, {
+    return (0, l.jsxs)(l.Fragment, {
+        children: [(0, l.jsx)(o.rQ0, {
+            titleTextVariant: "heading-lg/semibold",
+            title: S.intl.string(S.t.OEtqpm),
+            subtitle: S.intl.string(S.t.h2nMp0)
+        }), (0, l.jsx)(o.cwr, {
+            children: (0, l.jsx)(u.BJc, {
                 direction: "vertical",
                 justify: "center",
                 align: "center",
-                children: (0, r.jsx)("div", {
+                children: (0, l.jsx)("div", {
                     className: T.Dq,
-                    children: L
+                    children: w
                 })
             })
-        }), G]
+        }), U]
     })
 }

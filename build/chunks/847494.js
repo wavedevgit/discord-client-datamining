@@ -1,31 +1,31 @@
-/** chunk id: 847494, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => u
-}), n(228524);
-var l = n(627968),
-    r = n(64700),
-    i = n(503698),
-    s = n.n(i),
-    a = n(435328),
-    c = n(342088),
-    o = n(206314);
+/** chunk id: 847494, original params: e,t,l (module,exports,require) **/
+l.d(t, {
+    A: () => d
+});
+var n = l(627968),
+    s = l(64700),
+    i = l(503698),
+    a = l.n(i),
+    r = l(435328),
+    c = l(342088),
+    u = l(206314);
 
-function u(e) {
+function d(e) {
     let {
         description: t,
-        className: n,
+        className: l,
         guildId: i,
-        truncate: u = !0
-    } = e, d = r.useMemo(() => (0, a.l)(t, !0, {
+        truncate: d = !0
+    } = e, o = s.useMemo(() => (0, r.l)(t, !0, {
         guildId: i,
         allowLinks: !0,
         allowHeading: !0,
         allowList: !0
     }), [t, i]);
-    return (0, l.jsx)("div", {
-        className: s()(c.i, n, o.PT, {
-            [c.x]: u
+    return (0, n.jsx)("div", {
+        className: a()(c.i, l, u.PT, {
+            [c.x]: d
         }),
-        children: d
+        children: o
     })
 }

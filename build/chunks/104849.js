@@ -1,103 +1,99 @@
 /** chunk id: 104849, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    default: () => T
+    default: () => U
 });
-var r = n(627968),
-    l = n(64700),
-    i = n(311907),
+var l = n(627968),
+    i = n(64700),
+    r = n(311907),
     a = n(397927),
     o = n(442433),
-    u = n(847767),
-    c = n(358367),
-    s = n(212245),
-    d = n(793574),
+    d = n(847767),
+    s = n(358367),
+    u = n(212245),
+    c = n(793574),
     A = n(688810),
-    O = n(50268),
-    b = n(346247),
-    E = n(504049),
-    g = n(696451),
-    y = n(977997),
-    f = n(291247),
-    p = n(239211),
-    _ = n(399476),
-    m = n(301541),
+    E = n(50268),
+    g = n(346247),
+    _ = n(504049),
+    M = n(696451),
+    O = n(977997),
+    I = n(291247),
+    m = n(239211),
+    f = n(399476),
+    y = n(301541),
     S = n(252726),
-    M = n(103629),
-    j = n(521819),
-    I = n(243949),
-    v = n(180798),
-    h = n(652215),
-    D = n(985018);
-let T = (0, c.A)((0, u.A)(function(e) {
-    var t;
+    b = n(103629),
+    N = n(521819),
+    h = n(243949),
+    p = n(180798),
+    T = n(652215),
+    C = n(985018);
+let U = (0, s.A)((0, d.A)(function(e) {
     let {
-        user: n,
-        guildId: u,
-        channelId: c,
-        context: h,
+        user: t,
+        guildId: n,
+        channelId: d,
+        context: s,
         onSelect: T,
-        moderationAlertId: N,
-        analyticsLocation: C,
-        analyticsLocations: P,
-        onCloseContextMenu: R,
-        showTransferOwnershipItem: U
+        moderationAlertId: U,
+        analyticsLocation: D,
+        analyticsLocations: R,
+        onCloseContextMenu: L,
+        showTransferOwnershipItem: G
     } = e, {
-        analyticsLocations: L
-    } = (0, A.Ay)(d.A.CONTEXT_MENU), w = (0, s.p)(), G = null != (t = null == P ? void 0 : P[0]) ? t : L[0], x = (0, E.$9)(u, {
-        location: G,
-        targetUserId: n.id
-    }), B = (0, i.bG)([y.A], () => {
-        var e;
-        return null != (e = y.A.getUserVoiceChannelId(u, n.id)) ? e : void 0
-    }, [u, n.id]), k = l.useCallback(() => {
-        x(E.Nj.COPY_ID)
-    }, [x]), V = (0, i.bG)([g.Ay], () => g.Ay.isMember(u, n.id), [u, n.id]), W = (0, I.A)({
-        userId: n.id,
-        guildId: u,
-        sourceAnalyticsLocations: P
-    }), F = (0, m.A)(n.id, h), K = (0, b.A)({
-        guildId: u,
-        userId: n.id,
-        analyticsLocation: null != C ? C : w.location,
-        analyticsLocations: [G],
-        context: h
-    }), H = (0, p.A)({
-        user: n,
-        guildId: u,
-        location: G,
-        channelId: c
-    }), Y = (0, _.A)({
-        user: n,
-        guildId: u,
-        location: G,
-        channelId: c
-    }), X = (0, f.A)(n, u, null != c ? c : B, G), q = (0, M.A)(c, N), Q = (0, j.A)(n, u), Z = (0, v.A)(n.id, u, !1, G), $ = (0, O.A)({
-        id: n.id,
-        label: D.intl.string(D.t["/AXYnE"]),
-        onSuccess: k
-    }), z = (0, S.A)(n, u), J = !!(null == n ? void 0 : n.isNonUserBot());
-    return (0, r.jsxs)(a.W1t, {
+        analyticsLocations: x
+    } = (0, A.Ay)(c.A.CONTEXT_MENU), j = (0, u.p)(), v = R?.[0] ?? x[0], B = (0, _.$9)(n, {
+        location: v,
+        targetUserId: t.id
+    }), P = (0, r.bG)([O.A], () => O.A.getUserVoiceChannelId(n, t.id) ?? void 0, [n, t.id]), w = i.useCallback(() => {
+        B(_.Nj.COPY_ID)
+    }, [B]), V = (0, r.bG)([M.Ay], () => M.Ay.isMember(n, t.id), [n, t.id]), W = (0, h.A)({
+        userId: t.id,
+        guildId: n,
+        sourceAnalyticsLocations: R
+    }), K = (0, y.A)(t.id, s), k = (0, g.A)({
+        guildId: n,
+        userId: t.id,
+        analyticsLocation: D ?? j.location,
+        analyticsLocations: [v],
+        context: s
+    }), F = (0, m.A)({
+        user: t,
+        guildId: n,
+        location: v,
+        channelId: d
+    }), Y = (0, f.A)({
+        user: t,
+        guildId: n,
+        location: v,
+        channelId: d
+    }), H = (0, I.A)(t, n, d ?? P, v), X = (0, b.A)(d, U), q = (0, N.A)(t, n), Z = (0, p.A)(t.id, n, !1, v), J = (0, E.A)({
+        id: t.id,
+        label: C.intl.string(C.t["/AXYnE"]),
+        onSuccess: w
+    }), Q = (0, S.A)(t, n), z = !!t?.isNonUserBot();
+    return (0, l.jsxs)(a.W1t, {
         "data-menu-migrated": !0,
         navId: "user-context",
         onClose: () => {
-            (0, o.Z_)(), null == R || R()
+            (0, o.Z_)(), L?.()
         },
-        "aria-label": D.intl.string(D.t.liqwPJ),
+        "aria-label": C.intl.string(C.t.liqwPJ),
         onSelect: T,
-        children: [!J && (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsxs)(a.rXV, {
-                children: [W, F]
-            }), (0, r.jsxs)(a.rXV, {
-                children: [K, Y, H]
-            }), V && (0, r.jsxs)(a.rXV, {
-                children: [Z, X, z]
-            }), null != N ? q : null, U && null != Q ? (0, r.jsx)(a.rXV, {
-                children: Q
+        children: [!z && (0, l.jsxs)(l.Fragment, {
+            children: [(0, l.jsxs)(a.rXV, {
+                children: [W, K]
+            }), (0, l.jsxs)(a.rXV, {
+                children: [k, Y, F]
+            }), V && (0, l.jsxs)(a.rXV, {
+                children: [Z, H, Q]
+            }), null != U ? X : null, G && null != q ? (0, l.jsx)(a.rXV, {
+                children: q
             }) : null]
-        }), (0, r.jsx)(a.rXV, {
-            children: $
+        }), (0, l.jsx)(a.rXV, {
+            children: J
         })]
     })
 }, {
-    object: h.ZSU.CONTEXT_MENU
-}), [d.A.CONTEXT_MENU, d.A.GUILD_MODERATION_USER_MENU])
+    object: T.ZSU.CONTEXT_MENU
+}), [c.A.CONTEXT_MENU, c.A.GUILD_MODERATION_USER_MENU])

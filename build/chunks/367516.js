@@ -1,24 +1,24 @@
-/** chunk id: 367516, original params: t,n,a (module,exports,require) **/
-a.d(n, {
+/** chunk id: 367516, original params: t,a,n (module,exports,require) **/
+n.d(a, {
     default: () => g
-}), a(896048);
-var e = a(627968),
-    i = a(64700),
-    l = a(158954),
-    s = a(397927),
-    o = a(843472),
-    c = a(855057),
-    r = a(309010),
-    d = a(954571),
-    u = a(652215),
-    C = a(381941),
-    _ = a(985018),
-    h = a(787790);
+});
+var e = n(627968),
+    i = n(64700),
+    l = n(158954),
+    s = n(397927),
+    o = n(843472),
+    c = n(855057),
+    r = n(309010),
+    d = n(954571),
+    u = n(652215),
+    C = n(381941),
+    _ = n(985018),
+    h = n(787790);
 
 function g(t) {
     let {
-        transitionState: n,
-        onClose: a,
+        transitionState: a,
+        onClose: n,
         onGIFSelected: g,
         hideFavorites: j = !1,
         modalTitle: p = _.intl.string(_.t["0VinIJ"]),
@@ -26,7 +26,7 @@ function g(t) {
         giftIntentType: m,
         analyticsLocationHistory: N
     } = t, [S, k] = i.useState(null), [I, T] = i.useState(""), f = i.useCallback(t => {
-        k(t), null == g || g(t)
+        k(t), g?.(t)
     }, [g]), v = i.useCallback(async () => {
         if (null != S) {
             let t = r.A.getChannelId();
@@ -47,12 +47,12 @@ function g(t) {
             }), null != m && d.default.track(u.HAw.GIFT_INTENT_MESSAGE_SENT, {
                 gift_intent_type: m,
                 location_stack: N
-            }), await a())
+            }), await n())
         }
-    }, [S, I, a, m, N]);
+    }, [S, I, n, m, N]);
     return (0, e.jsx)(l.Modal, {
-        transitionState: n,
-        onClose: a,
+        transitionState: a,
+        onClose: n,
         title: p,
         input: (0, e.jsx)(s.fs1, {
             value: I,
@@ -62,7 +62,7 @@ function g(t) {
         actions: [{
             variant: "secondary",
             text: _.intl.string(_.t["ETE/oC"]),
-            onClick: a
+            onClick: n
         }, {
             variant: "primary",
             text: _.intl.string(_.t.TXNS7S),

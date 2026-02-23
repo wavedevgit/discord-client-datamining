@@ -1,58 +1,59 @@
 /** chunk id: 779271, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => d
+    A: () => u
 });
-var r = n(627968),
-    l = n(64700),
-    i = n(503698),
-    s = n.n(i),
+var i = n(627968),
+    s = n(64700),
+    l = n(503698),
+    r = n.n(l),
     a = n(397927),
     o = n(402216),
     c = n(667992),
-    u = n(920660);
-let d = l.memo(function(e) {
+    d = n(920660);
+let u = s.memo(function(e) {
     let {
         label: t,
         participantCount: n,
-        onClick: l,
-        className: i,
-        collapsed: d,
-        speakers: p,
-        channel: h,
-        isStreamLive: g
+        onClick: s,
+        className: l,
+        collapsed: u,
+        speakers: h,
+        channel: A,
+        isStreamLive: p
     } = e;
-    return (0, r.jsxs)(a.DUT, {
-        onClick: l,
-        className: s()(u.kL, i),
-        children: [null == p ? (0, r.jsx)(a.nFg, {
+    return (0, i.jsxs)(a.DUT, {
+        onClick: s,
+        className: r()(d.kL, l),
+        children: [null == h ? (0, i.jsx)(a.nFg, {
             size: "custom",
             color: "currentColor",
             width: 20,
             height: 20,
-            className: u.Vo
-        }) : (0, r.jsx)(a.cNw, {
+            className: d.Vo
+        }) : (0, i.jsx)(a.cNw, {
             size: "custom",
             color: "currentColor",
             width: 20,
             height: 20,
-            className: u.Vo
-        }), (0, r.jsxs)(a.Text, {
+            className: d.Vo
+        }), (0, i.jsxs)(a.Text, {
             color: "text-strong",
             variant: "text-md/semibold",
-            className: u.Qq,
+            className: d.Qq,
             children: [t, " — ", n]
-        }), d && null != h && null != p && p.length > 0 && (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsx)(c.A, {
-                channel: h,
-                speakers: p
-            }), g && (0, r.jsx)(o.Ay, {})]
-        }), (0, r.jsx)(a.abt, {
+        }), u && null != A && null != h && h.length > 0 && (0, i.jsxs)(i.Fragment, {
+            children: [(0, i.jsx)(c.A, {
+                channel: A,
+                speakers: h
+            }), p && (0, i.jsx)(o.Ay, {})]
+        }), (0, i.jsx)(a.abt, {
             size: "custom",
             color: "currentColor",
             width: 20,
             height: 20,
-            className: s()(u.mw, {
-                [u.VU]: d
+            className: r()(d.mw, {
+                [d.VU]: u
             })
         })]
     })

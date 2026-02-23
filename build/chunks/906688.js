@@ -1,106 +1,88 @@
-/** chunk id: 906688, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => g
+/** chunk id: 906688, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    A: () => C
 });
-var r = n(627968);
-n(64700);
-var l = n(827734),
-    i = n(582754),
-    s = n(397927),
-    a = n(736653),
-    o = n(682174),
-    c = n(927018),
-    u = n(715438);
-
-function d(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = r
-        })
-    }
-    return e
-}
-let p = {
-        trophy: l.A.unsafe_rawColors.PRIMARY_400.css,
-        locked: l.A.unsafe_rawColors.PRIMARY_400.css,
-        unlocked: l.A.unsafe_rawColors.GREEN_330.css
+var n = i(627968);
+i(64700);
+var r = i(827734),
+    l = i(582754),
+    a = i(397927),
+    s = i(736653),
+    o = i(682174),
+    c = i(927018),
+    d = i(715438);
+let u = {
+        trophy: r.A.unsafe_rawColors.PRIMARY_400.css,
+        locked: r.A.unsafe_rawColors.PRIMARY_400.css,
+        unlocked: r.A.unsafe_rawColors.GREEN_330.css
     },
     h = {
-        trophy: l.A.unsafe_rawColors.PRIMARY_400.css,
-        locked: l.A.unsafe_rawColors.PRIMARY_400.css,
-        unlocked: l.A.unsafe_rawColors.GREEN_330.css
+        trophy: r.A.unsafe_rawColors.PRIMARY_400.css,
+        locked: r.A.unsafe_rawColors.PRIMARY_400.css,
+        unlocked: r.A.unsafe_rawColors.GREEN_330.css
     };
 
-function g(e) {
-    var t;
+function C(e) {
     let {
-        achievementId: n,
-        unlocked: l,
-        size: g = s._3J.SIZE_40
-    } = e, f = (0, a.Ay)(), m = (0, c.vM)(n);
-    if (null == m) return null;
-    let b = (0, s.KjH)(g),
+        achievementId: t,
+        unlocked: i,
+        size: r = a._3J.SIZE_40
+    } = e, C = (0, s.Ay)(), E = (0, c.vM)(t);
+    if (null == E) return null;
+    let A = (0, a.KjH)(r),
         {
-            name: A,
-            rarity: y
-        } = m,
+            name: g,
+            rarity: _
+        } = E,
         {
-            color: O
-        } = (0, c.ag)(y),
-        j = (0, i.Mw)(f) ? p : h,
-        x = (b.size - b.offset - 2 * b.stroke) * .8,
-        _ = b.size - b.stroke,
-        v = {
-            width: .4 * x,
-            height: .4 * x
+            color: p
+        } = (0, c.ag)(_),
+        m = (0, l.Mw)(C) ? u : h,
+        L = (A.size - A.offset - 2 * A.stroke) * .8,
+        O = A.size - A.stroke,
+        f = {
+            width: .4 * L,
+            height: .4 * L
         },
-        E = {
-            width: v.width + 1,
-            height: v.height + 1,
-            right: b.stroke + 1,
-            bottom: b.stroke + 1,
+        I = {
+            width: f.width + 1,
+            height: f.height + 1,
+            right: A.stroke + 1,
+            bottom: A.stroke + 1,
             padding: 0
         };
-    return (0, r.jsxs)("div", {
-        className: u.kL,
+    return (0, n.jsxs)("div", {
+        className: d.kL,
         style: {
-            width: _,
-            height: _,
-            padding: b.stroke
+            width: O,
+            height: O,
+            padding: A.stroke
         },
-        "aria-label": "".concat(null != (t = A()) ? t : ""),
-        children: [(0, r.jsx)("div", {
-            className: u.r5,
-            children: (0, r.jsx)(s.OR, {
+        "aria-label": `${g()??""}`,
+        children: [(0, n.jsx)("div", {
+            className: d.r5,
+            children: (0, n.jsx)(a.OR, {
                 size: "custom",
-                color: l ? O : j.trophy,
-                width: x,
-                height: x
+                color: i ? p : m.trophy,
+                width: L,
+                height: L
             })
-        }), !l && (0, r.jsx)("div", {
-            className: u.dq,
-            style: E,
-            children: (0, r.jsx)(s.XAi, d({
+        }), !i && (0, n.jsx)("div", {
+            className: d.dq,
+            style: I,
+            children: (0, n.jsx)(a.XAi, {
                 size: "custom",
-                color: j.locked
-            }, v))
-        }), l && y === c.md.LEGENDARY && (0, r.jsx)("div", {
-            className: u.dq,
-            style: E,
-            children: (0, r.jsx)(o.A, d({
-                className: u.ox
-            }, v))
+                color: m.locked,
+                ...f
+            })
+        }), i && _ === c.md.LEGENDARY && (0, n.jsx)("div", {
+            className: d.dq,
+            style: I,
+            children: (0, n.jsx)(o.A, {
+                className: d.ox,
+                ...f
+            })
         })]
     })
 }
-g.Sizes = s._3J
+C.Sizes = a._3J

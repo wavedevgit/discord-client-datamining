@@ -1,82 +1,71 @@
-/** chunk id: 248759, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    Y: () => h
+/** chunk id: 248759, original params: e,a,t (module,exports,require) **/
+t.d(a, {
+    Y: () => c
 });
-var r = n(99478),
-    i = n(526531);
-let a = 347997,
-    o = 25920,
-    s = 765433;
+var r = t(99478),
+    n = t(526531);
+let i = 765433;
 
-function l(e) {
-    return 7 > (0, i.z)(7 * e + 1, 19)
-}
-
-function c(e) {
-    let t = Math.floor((235 * e - 234) / 19),
-        n = 12084 + 13753 * t,
-        r = 29 * t + Math.floor(n / 25920);
-    return 3 > (0, i.z)(3 * (r + 1), 7) && (r += 1), r
+function o(e) {
+    return 7 > (0, n.z)(7 * e + 1, 19)
 }
 
 function u(e) {
-    let t = c(e - 1),
-        n = c(e);
-    return c(e + 1) - n == 356 ? 2 : +(n - t == 382)
+    let a = Math.floor((235 * e - 234) / 19),
+        t = 29 * a + Math.floor((12084 + 13753 * a) / 25920);
+    return 3 > (0, n.z)(3 * (t + 1), 7) && (t += 1), t
 }
 
-function d(e) {
-    return c(e) + u(e)
+function l(e) {
+    let a, t;
+    return u(e) + (a = u(e - 1), t = u(e), u(e + 1) - t == 356 ? 2 : +(t - a == 382))
 }
 
-function f(e) {
-    return d(e + 1) - d(e)
+function s(e) {
+    return l(e + 1) - l(e)
 }
 
-function p(e) {
-    let t = f(e);
-    switch (t > 380 && (t -= 30), t) {
-        case 353:
-            return 0;
-        case 354:
-            return 1;
-        case 355:
-            return 2
-    }
+function d(e, a) {
+    if (a >= 6 && !o(e) && a++, 4 === a || 7 === a || 9 === a || 11 === a || 13 === a) return 29;
+    let t = function(e) {
+        let a = s(e);
+        switch (a > 380 && (a -= 30), a) {
+            case 353:
+                return 0;
+            case 354:
+                return 1;
+            case 355:
+                return 2
+        }
+    }(e);
+    return 2 === a ? 2 === t ? 30 : 29 : 3 === a ? 0 === t ? 29 : 30 : 6 === a ? 30 * !!o(e) : 30
 }
-
-function _(e, t) {
-    if (t >= 6 && !l(e) && t++, 4 === t || 7 === t || 9 === t || 11 === t || 13 === t) return 29;
-    let n = p(e);
-    return 2 === t ? 2 === n ? 30 : 29 : 3 === t ? 0 === n ? 29 : 30 : 6 === t ? 30 * !!l(e) : 30
-}
-class h {
+class c {
     fromJulianDay(e) {
-        let t = e - a,
-            n = Math.floor((t * o / s * 19 + 234) / 235) + 1,
-            i = d(n),
-            l = Math.floor(t - i);
-        for (; l < 1;) l = Math.floor(t - (i = d(--n)));
-        let c = 1,
-            u = 0;
-        for (; u < l;) u += _(n, c), c++;
-        let f = l - (u -= _(n, --c));
-        return new(0, r.ng)(this, n, c, f)
+        let a = e - 347997,
+            t = Math.floor((25920 * a / i * 19 + 234) / 235) + 1,
+            n = l(t),
+            o = Math.floor(a - n);
+        for (; o < 1;) o = Math.floor(a - (n = l(--t)));
+        let u = 1,
+            s = 0;
+        for (; s < o;) s += d(t, u), u++;
+        let c = o - (s -= d(t, --u));
+        return new(0, r.ng)(this, t, u, c)
     }
     toJulianDay(e) {
-        let t = d(e.year);
-        for (let n = 1; n < e.month; n++) t += _(e.year, n);
-        return t + e.day + a
+        let a = l(e.year);
+        for (let t = 1; t < e.month; t++) a += d(e.year, t);
+        return a + e.day + 347997
     }
     getDaysInMonth(e) {
-        return _(e.year, e.month)
+        return d(e.year, e.month)
     }
     getMonthsInYear(e) {
-        return l(e.year) ? 13 : 12
+        return o(e.year) ? 13 : 12
     }
     getDaysInYear(e) {
-        return f(e.year)
+        return s(e.year)
     }
     getYearsInEra() {
         return 9999
@@ -84,8 +73,8 @@ class h {
     getEras() {
         return ["AM"]
     }
-    balanceYearMonth(e, t) {
-        t.year !== e.year && (l(t.year) && !l(e.year) && t.month > 6 ? e.month-- : !l(t.year) && l(e.year) && t.month > 6 && e.month++)
+    balanceYearMonth(e, a) {
+        a.year !== e.year && (o(a.year) && !o(e.year) && a.month > 6 ? e.month-- : !o(a.year) && o(e.year) && a.month > 6 && e.month++)
     }
     constructor() {
         this.identifier = "hebrew"

@@ -1,79 +1,50 @@
 /** chunk id: 478677, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => A
-}), n(896048);
-var r = n(627968),
-    i = n(64700),
+    A: () => g
+});
+var i = n(627968),
+    r = n(64700),
     l = n(503698),
     a = n.n(l),
     s = n(311907),
     o = n(397927),
-    c = n(87664),
-    u = n(287809),
-    d = n(427262),
-    p = n(198525),
+    d = n(87664),
+    c = n(287809),
+    u = n(427262),
+    A = n(198525),
     h = n(652215),
-    f = n(985018),
-    g = n(816751),
-    m = n(140869);
-let A = function(e) {
+    _ = n(985018),
+    m = n(816751),
+    p = n(140869);
+let g = function(e) {
     let {
         quest: t
-    } = e, [n, l] = i.useState(!1), A = i.useRef(null), _ = (0, s.bG)([u.default], () => u.default.getCurrentUser()), b = d.Ay.useName(_), E = (0, c.A)(null == _ ? void 0 : _.id), O = i.useCallback(e => {
-        var n, i;
-        return (0, r.jsx)(p.A, (n = function(e) {
-            for (var t = 1; t < arguments.length; t++) {
-                var n = null != arguments[t] ? arguments[t] : {},
-                    r = Object.keys(n);
-                "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                    return Object.getOwnPropertyDescriptor(n, e).enumerable
-                }))), r.forEach(function(t) {
-                    var r;
-                    r = n[t], t in e ? Object.defineProperty(e, t, {
-                        value: r,
-                        enumerable: !0,
-                        configurable: !0,
-                        writable: !0
-                    }) : e[t] = r
-                })
-            }
-            return e
-        }({
-            name: b,
-            quest: t,
-            memberListItemRef: A,
-            applicationStream: E
-        }, e), i = i = {
-            closePopout: () => {
-                l(!1)
-            }
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
-            var n = Object.keys(e);
-            if (Object.getOwnPropertySymbols) {
-                var r = Object.getOwnPropertySymbols(e);
-                n.push.apply(n, r)
-            }
-            return n
-        })(Object(i)).forEach(function(e) {
-            Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
-        }), n))
-    }, [t, E, b]);
-    return (0, r.jsx)("div", {
-        className: g.x3,
-        children: (0, r.jsxs)("div", {
-            className: g.B0,
-            children: [(0, r.jsx)(o.Heading, {
-                className: m.R_,
+    } = e, [n, l] = r.useState(!1), g = r.useRef(null), E = (0, s.bG)([c.default], () => c.default.getCurrentUser()), I = u.Ay.useName(E), f = (0, d.A)(E?.id), C = r.useCallback(e => (0, i.jsx)(A.A, {
+        name: I,
+        quest: t,
+        memberListItemRef: g,
+        applicationStream: f,
+        ...e,
+        closePopout: () => {
+            l(!1)
+        }
+    }), [t, f, I]);
+    return (0, i.jsx)("div", {
+        className: m.x3,
+        children: (0, i.jsxs)("div", {
+            className: m.B0,
+            children: [(0, i.jsx)(o.Heading, {
+                className: p.R_,
                 variant: "heading-md/semibold",
-                children: f.intl.string(f.t.jY7Zxg)
-            }), (0, r.jsx)("div", {
-                className: m.$Q,
-                children: f.intl.string(f.t.q3hbne)
-            }), (0, r.jsx)("div", {
-                className: m.k0,
-                children: (0, r.jsx)(o.YNO, {
-                    targetElementRef: A,
-                    renderPopout: O,
+                children: _.intl.string(_.t.jY7Zxg)
+            }), (0, i.jsx)("div", {
+                className: p.$Q,
+                children: _.intl.string(_.t.q3hbne)
+            }), (0, i.jsx)("div", {
+                className: p.k0,
+                children: (0, i.jsx)(o.YNO, {
+                    targetElementRef: g,
+                    renderPopout: C,
                     position: "bottom",
                     shouldShow: n,
                     onRequestClose: () => l(!1),
@@ -83,31 +54,31 @@ let A = function(e) {
                     spacing: -3,
                     fixed: !0,
                     scrollBehavior: "close",
-                    children: () => (0, r.jsx)("div", {
-                        ref: A,
-                        className: a()(m.Tn, {
-                            [m.wH]: n
+                    children: () => (0, i.jsx)("div", {
+                        ref: g,
+                        className: a()(p.Tn, {
+                            [p.wH]: n
                         }),
-                        children: (0, r.jsx)(o.DUT, {
+                        children: (0, i.jsx)(o.DUT, {
                             onClick: () => l(!n),
                             tabIndex: 0,
-                            children: (0, r.jsxs)("div", {
-                                className: m.lm,
-                                children: [(0, r.jsx)(o.euF, {
+                            children: (0, i.jsxs)("div", {
+                                className: p.lm,
+                                children: [(0, i.jsx)(o.euF, {
                                     size: o._3J.SIZE_32,
-                                    src: null == _ ? void 0 : _.getAvatarURL(void 0, 32),
+                                    src: E?.getAvatarURL(void 0, 32),
                                     status: h.clD.ONLINE,
-                                    "aria-label": null == _ ? void 0 : _.username
-                                }), (0, r.jsxs)("div", {
-                                    className: m.Fj,
-                                    children: [(0, r.jsx)(o.Text, {
+                                    "aria-label": E?.username
+                                }), (0, i.jsxs)("div", {
+                                    className: p.Fj,
+                                    children: [(0, i.jsx)(o.Text, {
                                         variant: "text-md/semibold",
                                         color: "text-strong",
-                                        children: b
-                                    }), (0, r.jsx)(o.Text, {
+                                        children: I
+                                    }), (0, i.jsx)(o.Text, {
                                         variant: "text-sm/normal",
                                         color: "text-muted",
-                                        children: f.intl.string(f.t.b9w3bO)
+                                        children: _.intl.string(_.t.b9w3bO)
                                     })]
                                 })]
                             })

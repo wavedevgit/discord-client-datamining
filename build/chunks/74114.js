@@ -1,23 +1,23 @@
-/** chunk id: 74114, original params: e,n,t (module,exports,require) **/
-t.d(n, {
-    l: () => u
+/** chunk id: 74114, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    l: () => c
 });
-var l = t(311907),
-    r = t(321404),
-    i = t(195443),
-    a = t(287809),
-    s = t(349435),
-    c = t(963555),
-    o = t(840387),
-    d = t(168447);
+var i = n(311907),
+    r = n(321404),
+    l = n(195443),
+    a = n(287809),
+    o = n(349435),
+    s = n(963555),
+    d = n(840387),
+    u = n(168447);
 
-function u(e) {
-    let n = (0, l.bG)([a.default], () => a.default.getCurrentUser()),
-        t = (0, i.z)(e),
-        u = (0, r.O)(e),
-        p = (0, c.F)(e, s._j.STRANGER_DANGER),
-        m = (0, o.Z)(),
-        h = (null == n ? void 0 : n.isStaff()) !== !0,
-        f = (0, d.Y)(e).length > 0;
-    if (!(!m && h) && !t && !u && !f) return p
+function c(e) {
+    let t = (0, i.bG)([a.default], () => a.default.getCurrentUser()),
+        n = (0, l.z)(e),
+        c = (0, r.O)(e),
+        A = (0, s.F)(e, o._j.STRANGER_DANGER),
+        f = (0, d.Z)(),
+        E = t?.isStaff() !== !0,
+        h = (0, u.Y)(e).length > 0;
+    if (!(!f && E) && !n && !c && !h) return A
 }

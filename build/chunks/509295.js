@@ -1,20 +1,20 @@
 /** chunk id: 509295, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    k: () => i
+    k: () => r
 });
 var l = n(73153),
-    r = n(576420);
-async function i(e) {
+    i = n(576420);
+async function r(e) {
     let {
         tab: t,
         targetId: n,
-        isFavorite: i
+        isFavorite: r
     } = e;
     await l.h.dispatch({
         type: "OVERLAY_FRIENDS_WIDGET_SET_FAVORITE",
         tab: t,
         targetId: n,
-        isFavorite: i,
-        addedTimestampMs: i ? Date.now() : void 0
-    }), i ? (r.Ay.getState().setActiveTab(t), r.Ay.getState().markFavoriteAdded(n)) : r.Ay.getState().clearFavoriteAdded(n)
+        isFavorite: r,
+        addedTimestampMs: r ? Date.now() : void 0
+    }), r ? (i.Ay.getState().setActiveTab(t), i.Ay.getState().markFavoriteAdded(n)) : i.Ay.getState().clearFavoriteAdded(n)
 }

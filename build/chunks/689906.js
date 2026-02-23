@@ -1,29 +1,32 @@
 /** chunk id: 689906, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
     A: () => c
 });
-var r = n(64700),
-    l = n(512750),
-    i = n(397927),
-    s = n(997509),
+var i = n(64700),
+    s = n(512750),
+    l = n(397927),
+    r = n(997509),
     a = n(568065),
     o = n(652215);
 
 function c(e, t) {
-    let n = r.useCallback(n => {
-        if (n.stopPropagation(), t.type !== a.o9.LEVEL) switch ((0, i.OoC)(a.Fq), t.skuId) {
-            case l.SL:
-                s.A.open(e, o.BEX.TAG, o.JJy.GUILD_POWERUPS_OVERVIEW_CARD);
+    let n = i.useCallback(n => {
+        if (n.stopPropagation(), t.type !== a.o9.LEVEL) switch ((0, l.OoC)(a.Fq), t.skuId) {
+            case s.SL:
+                r.A.open(e, o.BEX.TAG, o.JJy.GUILD_POWERUPS_OVERVIEW_CARD);
                 return;
-            case l.aN:
-                s.A.open(e, o.BEX.ROLES, o.JJy.GUILD_POWERUPS_OVERVIEW_CARD);
+            case s.aN:
+                r.A.open(e, o.BEX.ROLES, o.JJy.GUILD_POWERUPS_OVERVIEW_CARD);
                 return;
-            case l.FB:
-                s.A.open(e, o.BEX.BOOST_PERKS, o.JJy.GUILD_POWERUPS_OVERVIEW_CARD, o.nd0.BOOST_PERKS_VANITY_URL);
+            case s.FB:
+                r.A.open(e, o.BEX.BOOST_PERKS, o.JJy.GUILD_POWERUPS_OVERVIEW_CARD, o.nd0.BOOST_PERKS_VANITY_URL);
                 return;
-            case l.jF:
-            case l.OJ:
-                (0, i.s7G)(), s.A.open(e, o.BEX.TAG, o.JJy.GUILD_POWERUPS_OVERVIEW_CARD);
+            case s.jF:
+            case s.OJ:
+            case s.Ht:
+            case s.tv:
+                (0, l.s7G)(), r.A.open(e, o.BEX.TAG, o.JJy.GUILD_POWERUPS_OVERVIEW_CARD);
                 return;
             default:
                 return

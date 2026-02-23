@@ -1,95 +1,68 @@
 /** chunk id: 757942, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => b
-}), n(896048);
-var r = n(627968);
+    A: () => p
+});
+var i = n(627968);
 n(64700);
-var i = n(735438),
-    l = n.n(i),
+var r = n(735438),
+    a = n.n(r),
     s = n(397927),
-    a = n(310953),
+    l = n(310953),
     o = n(366811),
-    c = n(808728),
-    d = n(967198),
-    u = n(711014),
-    _ = n(645959),
-    p = n(203982),
-    m = n(265422),
-    g = n(652215),
-    A = n(790782);
+    d = n(808728),
+    _ = n(967198),
+    c = n(711014),
+    u = n(645959),
+    A = n(203982),
+    g = n(265422),
+    E = n(652215),
+    I = n(790782);
 
-function f(e, t) {
+function h(e, t) {
     return [{
         resourceId: e,
-        type: A.P.GUILD_EVENT
-    }, ...e === g.ME ? _.A.getPrivateChannelIds() : (0, a.A)(e, {
+        type: I.P.GUILD_EVENT
+    }, ...e === E.ME ? u.default.getPrivateChannelIds() : (0, l.A)(e, {
         withVoiceChannels: t,
         withCurrentVoiceChannel: !0
     }).map(e => e.id)]
 }
-let b = l().throttle(function(e, t) {
-    var i, l, a;
-    let _, A, b, {
-            channelPredicate: h = () => !0,
-            guildPredicate: E = () => !0,
-            guildFeaturePredicate: O = () => !1,
-            ensureChatIsVisible: x = () => !1,
-            withVoiceChannels: C = !1
+let p = a().throttle(function(e, t) {
+    var r;
+    let a, l, u, {
+            channelPredicate: I = () => !0,
+            guildPredicate: p = () => !0,
+            guildFeaturePredicate: C = () => !1,
+            ensureChatIsVisible: m = () => !1,
+            withVoiceChannels: b = !1
         } = t,
-        S = null != (i = o.A.getState().guildId) ? i : g.ME,
-        T = o.A.getState().channelId,
-        I = (a = S, A = (_ = [g.ME, ...u.Ay.getFlattenedGuildIds()]).indexOf(a), e > 0 ? _.slice(A).concat(_.slice(0, A), a) : (_.splice(A, 0, a), _.slice(A + 1).concat(_.slice(0, A + 1)))),
-        N = e > 0 ? 0 : I.length - 1,
-        y = f(S, C),
-        j = y.indexOf(T) + e;
+        S = o.A.getState().guildId ?? E.ME,
+        f = o.A.getState().channelId,
+        T = (r = S, l = (a = [E.ME, ...c.Ay.getFlattenedGuildIds()]).indexOf(r), e > 0 ? a.slice(l).concat(a.slice(0, l), r) : (a.splice(l, 0, r), a.slice(l + 1).concat(a.slice(0, l + 1)))),
+        L = e > 0 ? 0 : T.length - 1,
+        N = h(S, b),
+        O = N.indexOf(f) + e;
     for (; null != S && "" !== S;) {
-        if (b = y[j], E(S))
-            for (; null != b && "" !== b;) {
-                if ("string" == typeof b) {
-                    if (h(S, b)) return (0, m.i)(S, b, !1, x(S, b))
-                } else if ("object" == typeof b && O(b.resourceId, b.type)) return S !== d.A.getGuildId() && (0, m.i)(S, null == (l = c.Ay.getDefaultChannel(S)) ? void 0 : l.id), (0, s.mMO)(async () => {
+        if (u = N[O], p(S))
+            for (; null != u && "" !== u;) {
+                if ("string" == typeof u) {
+                    if (I(S, u)) return (0, g.i)(S, u, !1, m(S, u))
+                } else if ("object" == typeof u && C(u.resourceId, u.type)) return S !== _.A.getGuildId() && (0, g.i)(S, d.Ay.getDefaultChannel(S)?.id), (0, s.mMO)(async () => {
                     let {
                         default: e
                     } = await Promise.all([n.e("51354"), n.e("7453"), n.e("27728")]).then(n.bind(n, 926956));
-                    return t => (0, r.jsx)(e, function(e, t) {
-                        return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-                            var n = Object.keys(e);
-                            if (Object.getOwnPropertySymbols) {
-                                var r = Object.getOwnPropertySymbols(e);
-                                n.push.apply(n, r)
-                            }
-                            return n
-                        })(Object(t)).forEach(function(n) {
-                            Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-                        }), e
-                    }(function(e) {
-                        for (var t = 1; t < arguments.length; t++) {
-                            var n = null != arguments[t] ? arguments[t] : {},
-                                r = Object.keys(n);
-                            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                                return Object.getOwnPropertyDescriptor(n, e).enumerable
-                            }))), r.forEach(function(t) {
-                                var r;
-                                r = n[t], t in e ? Object.defineProperty(e, t, {
-                                    value: r,
-                                    enumerable: !0,
-                                    configurable: !0,
-                                    writable: !0
-                                }) : e[t] = r
-                            })
-                        }
-                        return e
-                    }({}, t), {
+                    return t => (0, i.jsx)(e, {
+                        ...t,
                         guildId: S
-                    }))
+                    })
                 });
-                j += e, b = y[j]
+                O += e, u = N[O]
             }
-        if (N += e, null == (S = I[N]) || "" === S) break;
-        y = f(S, C), j = e < 0 ? y.length - 1 : 0
+        if (L += e, null == (S = T[L]) || "" === S) break;
+        N = h(S, b), O = e < 0 ? N.length - 1 : 0
     }
-    p._.dispatch(g.jej.SHAKE_APP, {
+    A._.dispatch(E.jej.SHAKE_APP, {
         duration: 200,
         intensity: 2
     })
-}, g.ugG)
+}, E.ugG)

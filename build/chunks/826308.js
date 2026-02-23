@@ -1,27 +1,27 @@
-/** chunk id: 826308, original params: n,t,e (module,exports,require) **/
-e.d(t, {
+/** chunk id: 826308, original params: e,t,n (module,exports,require) **/
+n.d(t, {
     A: () => p
 });
-var l = e(627968),
-    o = e(64700),
-    a = e(284009),
-    c = e.n(a),
-    i = e(397927),
-    r = e(954571),
-    d = e(723702),
-    s = e(652215),
-    u = e(985018);
+var l = n(627968),
+    a = n(64700),
+    o = n(284009),
+    r = n.n(o),
+    c = n(397927),
+    i = n(954571),
+    s = n(723702),
+    d = n(652215),
+    u = n(985018);
 
-function p(n) {
-    let t = o.useCallback(() => {
-        c()(null != n, "text cannot be null"), r.default.track(s.HAw.MESSAGE_MENU_GOOGLE_SEARCHED), window.open("https://www.google.com/search?q=".concat(encodeURIComponent(n)), "_blank")
-    }, [n]);
-    return d.isPlatformEmbedded && null != n && (null == n ? void 0 : n.length) !== 0 ? [(0, l.jsx)(i.Drp, {
+function p(e) {
+    let t = a.useCallback(() => {
+        r()(null != e, "text cannot be null"), i.default.track(d.HAw.MESSAGE_MENU_GOOGLE_SEARCHED), window.open(`https://www.google.com/search?q=${encodeURIComponent(e)}`, "_blank")
+    }, [e]);
+    return s.isPlatformEmbedded && null != e && e?.length !== 0 ? [(0, l.jsx)(c.Drp, {
         id: "search-google",
         label: u.intl.string(u.t["Rd/Mko"]),
         leadingAccessory: {
             type: "icon",
-            icon: i.$p$
+            icon: c.$p$
         },
         action: t
     }, "search-google")] : null

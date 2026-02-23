@@ -1,12 +1,12 @@
 /** chunk id: 614676, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => o
-}), n(896048);
-var r = n(626584),
-    i = n(90924),
+});
+var i = n(626584),
+    r = n(90924),
     l = n(629471),
     a = n(652215);
-let s = new r.A(a.meB),
+let s = new i.A(a.meB),
     o = {
         [a.e$_.CAPTURE_LOG]: {
             validation: e => (0, l.A)(e).required().keys({
@@ -18,12 +18,12 @@ let s = new r.A(a.meB),
                     socket: t,
                     args: {
                         level: n,
-                        message: r
+                        message: i
                     }
                 } = e;
-                (0, i.lG)(t.transport);
+                (0, r.lG)(t.transport);
                 let l = t.application.id,
-                    a = "".concat(l, " - ").concat(r);
+                    a = `${l} - ${i}`;
                 switch (n) {
                     case "log":
                         s.log(a);

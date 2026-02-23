@@ -1,121 +1,87 @@
 /** chunk id: 810153, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => b
-}), n(896048);
-var r, l = n(311907),
-    i = n(73153),
-    s = n(187508),
-    a = n(927813),
-    o = n(661191),
-    c = n(322387);
-
-function u(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-
-function d(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            u(e, t, n[t])
-        })
-    }
-    return e
-}
-
-function p(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
-        }
-        return n
-    })(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-let h = 90 * a.A.Millis.DAY,
-    g = {
+    A: () => A
+});
+var i = n(311907),
+    s = n(73153),
+    l = n(187508),
+    r = n(927813),
+    a = n(661191),
+    o = n(322387);
+let c = 90 * r.A.Millis.DAY,
+    d = {
         tab: null,
         localItemAcks: {},
         hasNewMentions: !1,
         isDataStale: !1,
         isRefreshing: !1
     };
-class f extends(r = l.Ay.PersistedStore) {
+class u extends i.Ay.PersistedStore {
+    static displayName = "NotificationCenterStore";
+    static persistKey = "NotificationCenterStore";
     initialize(e) {
-        if (this.waitFor(s.Ay), null != e) {
-            var t;
-            (g = e).localItemAcks = function(e) {
-                let t = {};
-                for (let [n, r] of Object.entries(e)) Date.now() - r < h && (t[n] = r);
-                return t
-            }(null != (t = g.localItemAcks) ? t : {}), g.isDataStale = !0
-        }
+        this.waitFor(l.Ay), null != e && ((d = e).localItemAcks = function(e) {
+            let t = {};
+            for (let [n, i] of Object.entries(e)) Date.now() - i < c && (t[n] = i);
+            return t
+        }(d.localItemAcks ?? {}), d.isDataStale = !0)
     }
     getState() {
-        return g
+        return d
     }
     getTab() {
-        var e;
-        return null != (e = g.tab) ? e : c.$w.ForYou
+        return d.tab ?? o.$w.ForYou
     }
     isLocalItemAcked(e) {
-        return null != e.local_id && (null != g.localItemAcks[e.local_id] || o.default.age(e.id) > h)
+        return null != e.local_id && (null != d.localItemAcks[e.local_id] || a.default.age(e.id) > c)
     }
     hasNewMentions() {
-        return g.hasNewMentions
+        return d.hasNewMentions
     }
     isDataStale() {
-        return g.isDataStale
+        return d.isDataStale
     }
     isRefreshing() {
-        return g.isRefreshing
+        return d.isRefreshing
     }
     shouldReload() {
-        return g.hasNewMentions || g.isDataStale || g.isRefreshing
+        return d.hasNewMentions || d.isDataStale || d.isRefreshing
     }
 }
 
-function m() {
-    g.hasNewMentions = !1, g.isDataStale = !1, g.isRefreshing = !1
+function h() {
+    d.hasNewMentions = !1, d.isDataStale = !1, d.isRefreshing = !1
 }
-u(f, "displayName", "NotificationCenterStore"), u(f, "persistKey", "NotificationCenterStore");
-let b = new f(i.h, {
+let A = new u(s.h, {
     MESSAGE_CREATE: function(e) {
         let {
             message: t
         } = e
     },
     NOTIFICATION_CENTER_SET_TAB: function(e) {
-        g = p(d({}, g), {
+        d = {
+            ...d,
             tab: e.tab
-        })
+        }
     },
     NOTIFICATION_CENTER_ITEMS_LOCAL_ACK: function(e) {
         let {
             localIds: t
         } = e;
         t.forEach(e => {
-            g = p(d({}, g), {
-                localItemAcks: p(d({}, g.localItemAcks), {
+            d = {
+                ...d,
+                localItemAcks: {
+                    ...d.localItemAcks,
                     [e]: Date.now()
-                })
-            })
+                }
+            }
         })
     },
     NOTIFICATION_CENTER_REFRESH: function() {
-        g.isRefreshing = !0
+        d.isRefreshing = !0
     },
-    LOAD_NOTIFICATION_CENTER_ITEMS_FAILURE: m,
-    LOAD_NOTIFICATION_CENTER_ITEMS_SUCCESS: m
+    LOAD_NOTIFICATION_CENTER_ITEMS_FAILURE: h,
+    LOAD_NOTIFICATION_CENTER_ITEMS_SUCCESS: h
 })

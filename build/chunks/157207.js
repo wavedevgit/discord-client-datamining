@@ -1,63 +1,63 @@
 /** chunk id: 157207, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => m
 });
-var l = n(627968),
-    r = n(64700),
-    i = n(110259),
+var i = n(627968),
+    l = n(64700),
+    s = n(110259),
     a = n(397927),
-    s = n(139286),
+    r = n(139286),
     o = n(450510),
     c = n(399925),
-    u = n(237607),
-    d = n(985018),
+    d = n(237607),
+    u = n(985018),
     h = n(305711);
 
-function p(e) {
+function m(e) {
     let {
         onOpenClips: t,
         lastClipsSession: n,
-        closePopout: p
+        closePopout: m
     } = e;
-    return (r.useEffect(() => () => {
+    return (l.useEffect(() => () => {
         (0, c.jA)()
-    }, []), (0, s.A)({
-        type: i.ImpressionTypes.VIEW,
-        name: i.ImpressionNames.HOTSPOT,
+    }, []), (0, r.A)({
+        type: s.ImpressionTypes.VIEW,
+        name: s.ImpressionNames.HOTSPOT,
         properties: {
             hotspot_location: o._2.CLIPS_CHANNEL_ATTACH_REMINDER
         }
-    }), null == n) ? null : (0, l.jsxs)("div", {
+    }), null == n) ? null : (0, i.jsxs)("div", {
         className: h.WG,
-        children: [(0, l.jsx)("div", {
+        children: [(0, i.jsx)("div", {
             className: h.Yt,
-            children: (0, l.jsx)(u.A, {})
-        }), (0, l.jsx)(a.Heading, {
+            children: (0, i.jsx)(d.A, {})
+        }), (0, i.jsx)(a.Heading, {
             className: h.wx,
             color: "text-strong",
             variant: "heading-md/extrabold",
-            children: d.intl.format(d.t["+qxkzC"], {
+            children: u.intl.format(u.t["+qxkzC"], {
                 count: n.newClipIds.length
             })
-        }), (0, l.jsx)(a.Text, {
+        }), (0, i.jsx)(a.Text, {
             color: "text-default",
             className: h.__invalid_content,
             variant: "text-sm/medium",
-            children: d.intl.format(d.t["7XX0/X"], {
+            children: u.intl.format(u.t["7XX0/X"], {
                 applicationName: n.applicationName
             })
-        }), (0, l.jsx)("div", {
+        }), (0, i.jsx)("div", {
             className: h.NC,
-            children: (0, l.jsxs)(a.ButtonGroup, {
-                children: [(0, l.jsx)(a.Button, {
+            children: (0, i.jsxs)(a.ButtonGroup, {
+                children: [(0, i.jsx)(a.Button, {
                     variant: "secondary",
-                    text: d.intl.string(d.t["7r5Z19"]),
+                    text: u.intl.string(u.t["7r5Z19"]),
                     onClick: function() {
-                        (0, o.sF)(o._2.CLIPS_CHANNEL_ATTACH_REMINDER), p()
+                        (0, o.sF)(o._2.CLIPS_CHANNEL_ATTACH_REMINDER), m()
                     }
-                }), (0, l.jsx)(a.Button, {
+                }), (0, i.jsx)(a.Button, {
                     variant: "primary",
-                    text: d.intl.string(d.t.md4qKz),
+                    text: u.intl.string(u.t.md4qKz),
                     onClick: t
                 })]
             })

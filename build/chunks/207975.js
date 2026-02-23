@@ -1,29 +1,28 @@
-/** chunk id: 207975, original params: e,t,r (module,exports,require) **/
-r.d(t, {
+/** chunk id: 207975, original params: e,t,s (module,exports,require) **/
+s.d(t, {
     A: () => o
-}), r(896048);
-var n = r(64700),
-    i = r(677402),
-    l = r(639214),
-    s = r(830012),
-    a = r(654487);
+});
+var r = s(64700),
+    i = s(677402),
+    n = s(639214),
+    l = s(830012),
+    a = s(654487);
 
-function o(e, t, r) {
+function o(e, t, s) {
     let o = (0, i.H)({
         location: a.rE.STREAM_SOURCE_SELECT
     });
-    return n.useMemo(() => {
-        if (null == r || !o) return null;
-        for (let a of r) {
-            var n, i;
-            let r = t.find(e => (0, s.A)(a.id, e.windowHandle));
-            if ((null == r ? void 0 : r.id) == null) continue;
-            let o = (0, l.L7)(e, r.id);
-            if (null != o && (null == (n = o.userStatus) ? void 0 : n.enrolledAt) != null && (null == (i = o.userStatus) ? void 0 : i.completedAt) == null) return {
-                source: a,
-                quest: o
+    return r.useMemo(() => {
+        if (null == s || !o) return null;
+        for (let r of s) {
+            let s = t.find(e => (0, l.A)(r.id, e.windowHandle));
+            if (s?.id == null) continue;
+            let i = (0, n.L7)(e, s.id);
+            if (null != i && i.userStatus?.enrolledAt != null && i.userStatus?.completedAt == null) return {
+                source: r,
+                quest: i
             }
         }
         return null
-    }, [o, e, t, r])
+    }, [o, e, t, s])
 }

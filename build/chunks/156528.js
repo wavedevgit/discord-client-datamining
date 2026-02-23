@@ -1,4 +1,4 @@
-/** chunk id: 156528, original params: e,t,n (module,exports,require) **/
+/** chunk id: 156528, original params: e,t,s (module,exports,require) **/
 e.exports = {
     eF: "userInfo__0a06e",
     my: "avatar__0a06e",
@@ -9,5 +9,5 @@ e.exports = {
     Xh: "username__0a06e",
     D2: "discriminator__0a06e",
     yo: "hovered__0a06e",
-    ID: "alignPomelo__0a06e"
+    Nu: "alignUniqueUsername__0a06e"
 }

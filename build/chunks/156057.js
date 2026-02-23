@@ -1,9 +1,9 @@
 /** chunk id: 156057, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    x: () => r
+    x: () => i
 });
-let r = {
+let i = {
     facebook: {
         presentation: "Facebook",
         baseUrl: "https://facebook.com/"

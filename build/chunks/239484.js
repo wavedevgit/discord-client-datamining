@@ -1,28 +1,28 @@
 /** chunk id: 239484, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => d
+    A: () => c
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(417597),
+var s = n(417597),
     l = n(793574),
-    s = n(688810),
+    r = n(688810),
     a = n(351906),
     o = n(555337),
-    c = n(328650);
-let d = function() {
-    let e = (0, i.bG)([a.A], () => a.A.hideInstantInvites),
+    d = n(328650);
+let c = function() {
+    let e = (0, s.bG)([a.A], () => a.A.hideInstantInvites),
         {
             invites: t,
             guild: n
-        } = (0, i.cf)([o.A], () => o.A.getProps(), []),
+        } = (0, s.cf)([o.A], () => o.A.getProps(), []),
         {
-            analyticsLocations: d
-        } = (0, s.Ay)(l.A.GUILD_SETTINGS_PROFILE_PAGE);
-    return (0, r.jsx)(s.f5, {
-        value: d,
-        children: (0, r.jsx)(c.A, {
+            analyticsLocations: c
+        } = (0, r.Ay)(l.A.GUILD_SETTINGS_PROFILE_PAGE);
+    return (0, i.jsx)(r.f5, {
+        value: c,
+        children: (0, i.jsx)(d.A, {
             invites: t,
             guild: n,
             showChannel: !0,

@@ -1,16 +1,17 @@
 /** chunk id: 974175, original params: e,t,r (module,exports,require) **/
 r.d(t, {
     R: () => b,
-    q7: () => R
-}), r(896048), r(321073), r(134528), r(947204);
+    f8: () => u,
+    q7: () => D
+}), r(321073), r(134528), r(947204);
 var n = r(627968),
     a = r(64700),
     i = r(796873),
-    l = r.n(i),
-    s = r(412780),
+    s = r.n(i),
+    l = r(412780),
     o = r(229659),
     d = r(522278);
-let c = {
+let u = {
     accelerateRate: "Accelerate Rate",
     audioDetected: "Audio Detected",
     audioLevel: "Audio Level",
@@ -70,6 +71,7 @@ let c = {
     framesSent: "Frames Sent",
     freezeCount: "Freeze Count",
     hostname: "Hostname",
+    hdrFrames: "HDR Frames",
     hybridCaptureMethodSwitches: "Hybrid Capture Method Switches",
     hybridDxgiFrames: "Hybrid DXGI Frames",
     hybridGdiBitBltFrames: "Hybrid GDI BitBlt Frames",
@@ -120,6 +122,8 @@ let c = {
     routingFailures: "Routing Failures",
     sampleRateMismatchPercent: "Sample Rate Mismatch",
     screenCaptureKitFrames: "ScreenCaptureKit frames",
+    screenshareCapturedFps: "Captured FPS",
+    screenshareCapturedFpsUnique: "Unique Captured FPS",
     screenshareFrames: "WebRTC Frames",
     secondaryDecodedRate: "Secondary Decode Rate",
     secureFramesProtocolVersion: "DAVE Protocol",
@@ -136,42 +140,42 @@ let c = {
     videohookFrames: "Videohook Frames"
 };
 
-function u(e) {
-    return "".concat((e / 1e3).toFixed(2), " Kbps")
+function c(e) {
+    return `${(e/1e3).toFixed(2)} Kbps`
 }
 
 function m(e) {
-    return l().filesize(e)
+    return s().filesize(e)
 }
 
 function p(e) {
     return e
 }
 
-function y(e) {
-    return "".concat(e, " ms")
-}
-
 function h(e) {
-    return "".concat(e.toFixed(0), "%")
+    return `${e} ms`
 }
 
-function g(e) {
-    return e ? "Yes" : "No"
+function y(e) {
+    return `${e.toFixed(0)}%`
 }
 
 function A(e) {
-    return 20 * Math.log(e)
+    return e ? "Yes" : "No"
 }
 
 function f(e) {
+    return 20 * Math.log(e)
+}
+
+function g(e) {
     let {
         last: t
     } = e;
-    return "".concat(t, " ms")
+    return `${t} ms`
 }
 
-function v(e) {
+function F(e) {
     return e.toFixed(2)
 }
 let b = {
@@ -196,6 +200,7 @@ let b = {
         noiseCancellerProcessTime: !0,
         sinkWantAsInt: !0,
         sinkWantLocalAsInt: !0,
+        skipHistoryJson: !0,
         sumOfSquaredFramesDurations: !0,
         timestamp: !0,
         type: !0,
@@ -204,19 +209,19 @@ let b = {
         videoJitterTarget: !0,
         voiceActivityDetectorProcessTime: !0
     },
-    C = {
-        accelerateRate: h,
-        audioDetected: g,
+    v = {
+        accelerateRate: y,
+        audioDetected: A,
         audioLevel: function(e) {
-            return e <= 0 ? "-∞ dB" : "".concat(A(e).toFixed(2), " dB")
+            return e <= 0 ? "-∞ dB" : `${f(e).toFixed(2)} dB`
         },
-        availableOutgoingBitrate: u,
-        averageDecodeTime: y,
-        averageEncodeTime: y,
-        bandwidthLimitedFrameRate: g,
-        bandwidthLimitedResolution: g,
-        bitrate: u,
-        bitrateTarget: u,
+        availableOutgoingBitrate: c,
+        averageDecodeTime: h,
+        averageEncodeTime: h,
+        bandwidthLimitedFrameRate: A,
+        bandwidthLimitedResolution: A,
+        bitrate: c,
+        bitrateTarget: c,
         bytesReceived: m,
         bytesSent: m,
         codec: function(e) {
@@ -224,65 +229,67 @@ let b = {
                 id: t,
                 name: r
             } = e;
-            return r = null != (r = "" === r ? "unknown" : r) ? r : "unknown", "".concat(r[0].toUpperCase()).concat(r.slice(1), " (").concat(t, ")")
+            return r = (r = "" === r ? "unknown" : r) ?? "unknown", `${r[0].toUpperCase()}${r.slice(1)} (${t})`
         },
-        cpuLimitedResolution: g,
+        cpuLimitedResolution: A,
         currentSampleRate: function(e) {
-            return e % 100 == 0 ? "".concat(e / 1e3, " kHz") : "".concat(e, " Hz")
+            return e % 100 == 0 ? `${e/1e3} kHz` : `${e} Hz`
         },
-        currentDelay: y,
+        currentDelay: h,
         decoderImplementationName: p,
-        delayEstimate: y,
+        delayEstimate: h,
         encoderImplementationName: p,
         encoderQualityPsnr: function(e) {
-            return "".concat(Math.max(e, 0).toFixed(2), " dB")
+            return `${Math.max(e,0).toFixed(2)} dB`
         },
-        encoderQualityVmaf: v,
-        encodeUsage: h,
-        expandRate: h,
+        encoderQualityVmaf: F,
+        encodeUsage: y,
+        expandRate: y,
         filter: p,
-        fractionLost: h,
-        inboundBitrateEstimate: u,
-        jitter: y,
-        jitterBuffer: y,
-        jitterBufferPreferred: y,
-        keyFrameInterval: y,
-        minPlayoutDelay: y,
-        outboundBitrateEstimate: u,
-        pacerDelay: y,
-        ping: y,
-        preemptiveExpandRate: h,
-        receiverBitrateEstimate: u,
-        relativePlayoutDelay: f,
-        relativeReceptionDelay: f,
-        renderDelay: y,
+        fractionLost: y,
+        inboundBitrateEstimate: c,
+        jitter: h,
+        jitterBuffer: h,
+        jitterBufferPreferred: h,
+        keyFrameInterval: h,
+        minPlayoutDelay: h,
+        outboundBitrateEstimate: c,
+        pacerDelay: h,
+        ping: h,
+        preemptiveExpandRate: y,
+        receiverBitrateEstimate: c,
+        relativePlayoutDelay: g,
+        relativeReceptionDelay: g,
+        renderDelay: h,
         resolution: e => {
             let {
                 width: t,
                 height: r
             } = e;
-            return "".concat(t, "x").concat(r)
+            return `${t}x${r}`
         },
-        sampleRateMismatchPercent: h,
-        secondaryDecodedRate: h,
+        sampleRateMismatchPercent: y,
+        screenshareCapturedFps: F,
+        screenshareCapturedFpsUnique: F,
+        secondaryDecodedRate: y,
         secureFramesProtocolVersion: function(e) {
-            return e > 0 ? "Version ".concat(e) : "Disabled"
+            return e > 0 ? `Version ${e}` : "Disabled"
         },
-        speechExpandRate: h,
-        targetDelay: y,
-        videoEntropy: v,
+        speechExpandRate: y,
+        targetDelay: h,
+        videoEntropy: F,
         videohookBackend: function(e) {
             let t = ["N/A", "Direct3D 9", "Direct3D 10", "Direct3D 11", "Direct3D 12", "OpenGL", "Vulkan"];
             return e < t.length ? t[e] : "Unknown"
         }
     },
-    E = {
+    C = {
         audioLevel: function(e) {
-            return Math.max(A(e), -100) + 100
+            return Math.max(f(e), -100) + 100
         }
     },
     x = e => e,
-    D = e => {
+    E = e => {
         let [t] = a.useState([]);
         return t.push({
             value: e.value,
@@ -295,28 +302,27 @@ let b = {
         })
     };
 
-function R(e) {
-    var t, r, a;
+function D(e) {
     let {
-        label: i,
-        value: l,
-        section: u
-    } = e, m = null != (t = C[i]) ? t : x, p = E[i], y = s.iA[i] && (Array.isArray(l) && l.length > 0 && "number" == typeof l[0].value ? (0, n.jsx)(o.A, {
-        converter: p,
-        dataPoints: l,
+        label: t,
+        value: r,
+        section: a
+    } = e, i = v[t] ?? x, s = C[t], c = l.iA[t] && (Array.isArray(r) && r.length > 0 && "number" == typeof r[0].value ? (0, n.jsx)(o.A, {
+        converter: s,
+        dataPoints: r,
         width: 300,
         height: 100
-    }) : "number" == typeof l ? (0, n.jsx)(D, {
-        converter: p,
-        value: l,
+    }) : "number" == typeof r ? (0, n.jsx)(E, {
+        converter: s,
+        value: r,
         width: 300,
         height: 100
-    }) : void 0), h = Array.isArray(l) ? null == (a = l.at(-1)) ? void 0 : a.value : l;
+    }) : void 0), m = Array.isArray(r) ? r.at(-1)?.value : r;
     return (0, n.jsx)(d.A, {
-        label: i,
-        valueRendered: m(h),
-        section: u,
-        renderGraph: y,
-        children: null != (r = c[i]) ? r : i
+        label: t,
+        valueRendered: i(m),
+        section: a,
+        renderGraph: c,
+        children: u[t] ?? t
     })
 }

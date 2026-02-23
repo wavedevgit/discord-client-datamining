@@ -1,8 +1,8 @@
 /** chunk id: 751775, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    R: () => i
+    R: () => l
 });
-let r = (0, n(600975).C)({
+let i = (0, n(600975).C)({
     kind: "user",
     id: "2024-12_save_voice_message_menu_item",
     label: "Save voice message menu item on web",
@@ -18,9 +18,9 @@ let r = (0, n(600975).C)({
     }]
 });
 
-function i(e) {
+function l(e) {
     let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
-    return r.useExperiment({
+    return i.useExperiment({
         location: e
     }, {
         autoTrackExposure: t

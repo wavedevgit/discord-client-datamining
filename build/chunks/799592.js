@@ -1,8 +1,8 @@
 /** chunk id: 799592, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    b: () => r
+    b: () => i
 });
-let r = {
+let i = {
     binds: ["shift+f10"],
     comboKeysBindGlobal: !0,
     action() {

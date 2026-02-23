@@ -1,82 +1,82 @@
 /** chunk id: 986880, original params: e,t,n (module,exports,require) **/
-let r;
+let i;
 n.d(t, {
-    Ay: () => I
+    Ay: () => N
 });
-var i = n(73153),
+var r = n(73153),
     l = n(31728),
     a = n(272355),
     s = n(87001),
     o = n(734057),
-    c = n(186111),
-    u = n(334463),
-    d = n(383501),
-    p = n(309010),
+    d = n(186111),
+    c = n(334463),
+    u = n(383501),
+    A = n(309010),
     h = n(967198),
-    f = n(977997),
-    g = n(998740),
-    m = n(652215);
+    _ = n(977997),
+    m = n(998740),
+    p = n(652215);
 
-function A(e) {
-    return "haven:".concat(e)
-}
-
-function _() {
-    let e = r;
-    if (null == e) return !1;
-    let t = A(e);
-    if (!u.A.isOpen(t)) return !1;
-    let n = u.A.pipHavenWindow;
-    if (null == n || n.id !== t) return r = null, !1;
-    i.h.wait(() => l.VN(t)), r = null
-}
-
-function b() {
-    return c.A.hasLayers()
+function g(e) {
+    return `haven:${e}`
 }
 
 function E() {
-    let e, t, n = d.A.getChannelId(),
+    let e = i;
+    if (null == e) return !1;
+    let t = g(e);
+    if (!c.A.isOpen(t)) return !1;
+    let n = c.A.pipHavenWindow;
+    if (null == n || n.id !== t) return i = null, !1;
+    r.h.wait(() => l.VN(t)), i = null
+}
+
+function I() {
+    return d.A.hasLayers()
+}
+
+function f() {
+    let e, t, n = u.A.getChannelId(),
         a = null != n ? o.A.getChannel(n) : null;
-    if (e = d.A.getChannelId(), t = p.A.getChannelId(), null == e || !g.A.isUserConnected(e) || e === t || s.A.getWindowOpen(m.MLl.CHANNEL_CALL_POPOUT) || 0) return _();
-    if (null != a && g.A.isUserConnected(a.id)) {
-        if (r !== a.id) {
-            let e = A(a.id);
-            if (u.A.isOpen(e)) return !1;
-            if (null != r) {
-                let e = r;
-                i.h.wait(() => l.VN(e))
+    if (e = u.A.getChannelId(), t = A.A.getChannelId(), null == e || !m.A.isUserConnected(e) || e === t || s.A.getWindowOpen(p.MLl.CHANNEL_CALL_POPOUT) || 0) return E();
+    if (null != a && m.A.isUserConnected(a.id)) {
+        if (i !== a.id) {
+            let e = g(a.id);
+            if (c.A.isOpen(e)) return !1;
+            if (null != i) {
+                let e = i;
+                r.h.wait(() => l.VN(e))
             }
-            return i.h.wait(() => {
-                l.ho(e, m.o1q.HAVEN, {
+            return r.h.wait(() => {
+                l.ho(e, p.o1q.HAVEN, {
                     channel: a
-                }), b() && l.jD(e)
-            }), r = a.id, !0
+                }), I() && l.jD(e)
+            }), i = a.id, !0
         }
         return !1
     }
-    return _()
+    return E()
 }
 
-function O() {
-    if (b()) {
-        let e = r;
+function C() {
+    if (I()) {
+        let e = (void 0) ?? i;
         if (null == e) return;
-        let t = A(e);
-        u.A.isOpen(t) && i.h.wait(() => l.jD(t));
+        let t = g(e);
+        c.A.isOpen(t) && r.h.wait(() => l.jD(t));
         return
     }
-    let e = r;
+    let e = (void 0) ?? i;
     if (null == e) return;
-    let t = A(e);
-    u.A.isOpen(t) && i.h.wait(() => l.WU(t))
+    let t = g(e);
+    c.A.isOpen(t) && r.h.wait(() => l.WU(t))
 }
-class y extends a.A {
+class T extends a.A {
     _initialize() {
-        p.A.addChangeListener(E), h.A.addChangeListener(E), d.A.addChangeListener(E), f.A.addChangeListener(E), c.A.addChangeListener(O), g.A.addChangeListener(E), s.A.addChangeListener(E)
+        A.A.addChangeListener(f), h.A.addChangeListener(f), u.A.addChangeListener(f), _.A.addChangeListener(f), d.A.addChangeListener(C), m.A.addChangeListener(f), s.A.addChangeListener(f)
     }
     _terminate() {
-        p.A.removeChangeListener(E), h.A.removeChangeListener(E), d.A.removeChangeListener(E), f.A.removeChangeListener(E), c.A.removeChangeListener(O), g.A.removeChangeListener(E), s.A.removeChangeListener(E)
+        A.A.removeChangeListener(f), h.A.removeChangeListener(f), u.A.removeChangeListener(f), _.A.removeChangeListener(f), d.A.removeChangeListener(C), m.A.removeChangeListener(f), s.A.removeChangeListener(f)
     }
 }
-let I = new y
+let N = new T

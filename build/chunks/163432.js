@@ -1,147 +1,146 @@
 /** chunk id: 163432, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    Ay: () => b,
-    Vp: () => p,
-    i4: () => A
-}), n(896048), n(321073);
-var l = n(627968),
-    r = n(64700),
-    i = n(735438),
+    Ay: () => _,
+    Vp: () => m,
+    i4: () => f
+}), n(321073);
+var i = n(627968),
+    l = n(64700),
+    s = n(735438),
     a = n(90575),
-    s = n(961350),
+    r = n(961350),
     o = n(927813),
     c = n(403362),
-    u = n(175203),
-    d = n(806931),
+    d = n(175203),
+    u = n(806931),
     h = n(107826);
-let p = 112,
-    f = 16 / 9 * 112 + 8,
-    m = 10 * o.A.Millis.SECOND;
+let m = 112,
+    A = 16 / 9 * 112 + 8,
+    g = 10 * o.A.Millis.SECOND;
 
-function g(e) {
-    var t;
-    let n = s.default.getId();
-    return e.type === d.lp.USER && e.user.id === n && (null == (t = e.voiceState) ? void 0 : t.selfVideo)
+function p(e) {
+    let t = r.default.getId();
+    return e.type === u.lp.USER && e.user.id === t && e.voiceState?.selfVideo
 }
 
-function A(e, t) {
+function f(e, t) {
     let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {
-            tileWidth: f,
+            tileWidth: A,
             tileMinWidth: 124,
             tileMargin: 8,
             limit: 12,
             cropSelfVideo: !1
         },
         {
-            tileWidth: l,
-            tileMinWidth: s,
+            tileWidth: i,
+            tileMinWidth: r,
             tileMargin: o,
-            limit: u,
+            limit: d,
             cropSelfVideo: h,
-            version: p
+            version: m
         } = n,
-        [A, b] = r.useState(Date.now());
-    r.useEffect(() => {
+        [f, _] = l.useState(Date.now());
+    l.useEffect(() => {
         let e = setTimeout(() => {
-            b(Date.now())
-        }, m);
+            _(Date.now())
+        }, g);
         return () => {
             clearTimeout(e)
         }
     }, [t]);
-    let _ = r.useRef({}),
+    let E = l.useRef({}),
         {
-            visibleParticipants: y,
-            participantTileWidth: v
-        } = r.useMemo(() => {
+            visibleParticipants: x,
+            participantTileWidth: C
+        } = l.useMemo(() => {
             let n = Date.now(),
-                r = (0, i.sortBy)(t, e => (function(e) {
+                l = (0, s.sortBy)(t, e => (function(e) {
                     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : Date.now();
                     switch (e.type) {
-                        case d.lp.ACTIVITY:
-                            return "\x01".concat(e.sortKey);
-                        case d.lp.HIDDEN_STREAM:
-                        case d.lp.STREAM:
-                            return "\x02".concat((0, a.A)(e.userNick, e.user));
-                        case d.lp.USER:
-                            var n, l;
-                            let r, i = "\x06";
-                            return e.speaking ? i = "\x03" : t - e.lastSpoke < m ? i = "\x04" : (null == (n = e.voiceState) ? void 0 : n.selfVideo) && (i = "\x05"), "".concat(i).concat((l = e.lastSpoke, r = String(864e13).length, String(864e13 - l).padStart(r, "0"))).concat((0, a.A)(e.userNick, e.user))
+                        case u.lp.ACTIVITY:
+                            return `\x01${e.sortKey}`;
+                        case u.lp.HIDDEN_STREAM:
+                        case u.lp.STREAM:
+                            return `\x02${(0,a.A)(e.userNick,e.user)}`;
+                        case u.lp.USER:
+                            var n;
+                            let i, l = "\x06";
+                            return e.speaking ? l = "\x03" : t - e.lastSpoke < g ? l = "\x04" : e.voiceState?.selfVideo && (l = "\x05"), `${l}${n=e.lastSpoke,i=String(864e13).length,String(864e13-n).padStart(i,"0")}${(0,a.A)(e.userNick,e.user)}`
                     }
                 })(e, n)),
-                [p, f] = (0, i.partition)(r, d.Xw),
-                A = p.findIndex(g),
-                b = null; - 1 !== A && (b = p[A], p.splice(A, 1));
-            let y = null == b || h ? e : e - l - o,
-                v = Math.max(0, Math.min(Math.floor((y - o) / (s + o)), u, t.length)),
-                E = Math.min((y - o) / v - o, l),
-                O = Math.max(0, v - f.length),
-                C = f.slice(0, v),
-                S = p.slice(0, O),
-                x = Array(O);
-            if (O > 0) {
+                [m, A] = (0, s.partition)(l, u.Xw),
+                f = m.findIndex(p),
+                _ = null; - 1 !== f && (_ = m[f], m.splice(f, 1));
+            let x = null == _ || h ? e : e - i - o,
+                C = Math.max(0, Math.min(Math.floor((x - o) / (r + o)), d, t.length)),
+                S = Math.min((x - o) / C - o, i),
+                I = Math.max(0, C - A.length),
+                T = A.slice(0, C),
+                N = m.slice(0, I),
+                y = Array(I);
+            if (I > 0) {
                 let e = [];
-                for (let t of S) {
-                    let n = _.current[t.id];
-                    null != n && n < O ? x[n] = t : e.push(t)
+                for (let t of N) {
+                    let n = E.current[t.id];
+                    null != n && n < I ? y[n] = t : e.push(t)
                 }
-                for (let t = 0; t < x.length; t++) {
-                    if (null != x[t]) continue;
+                for (let t = 0; t < y.length; t++) {
+                    if (null != y[t]) continue;
                     let n = e.shift();
                     if (null == n) break;
-                    x[t] = n
+                    y[t] = n
                 }
             }
-            let j = x.filter(c.Vq);
-            _.current = (0, i.keyBy)((0, i.range)(j.length), e => j[e].id);
-            let I = [...C, ...j];
-            return null != b && (h && I.length >= v ? I[Math.max(0, I.length - 1)] = b : I.push(b)), {
-                visibleParticipants: I,
-                participantTileWidth: E
+            let v = y.filter(c.Vq);
+            E.current = (0, s.keyBy)((0, s.range)(v.length), e => v[e].id);
+            let b = [...T, ...v];
+            return null != _ && (h && b.length >= C ? b[Math.max(0, b.length - 1)] = _ : b.push(_)), {
+                visibleParticipants: b,
+                participantTileWidth: S
             }
-        }, [e, t, A, p, h, u, o, s, l]);
+        }, [e, t, f, m, h, d, o, r, i]);
     return {
-        visibleParticipants: y,
-        participantTileWidth: v
+        visibleParticipants: x,
+        participantTileWidth: C
     }
 }
 
-function b(e) {
+function _(e) {
     let {
         participants: t,
         participantTileWidth: n,
-        selectedParticipantId: r,
-        onDoubleClick: i,
+        selectedParticipantId: l,
+        onDoubleClick: s,
         onContextMenu: a,
-        onClick: s,
+        onClick: r,
         channel: o,
         inCall: c,
-        popoutType: d,
-        paused: p = !1
+        popoutType: u,
+        paused: m = !1
     } = e;
-    return (0, l.jsx)("div", {
+    return (0, i.jsx)("div", {
         className: h.zr,
         children: t.map(e => {
             if (null == e) return null;
-            let t = g(e);
-            return (0, l.jsx)("div", {
+            let t = p(e);
+            return (0, i.jsx)("div", {
                 className: h.eP,
                 style: t ? {
                     flexShrink: 0
                 } : void 0,
-                children: (0, l.jsx)(u.Ay, {
+                children: (0, i.jsx)(d.Ay, {
                     participant: e,
-                    selected: r === e.id,
+                    selected: l === e.id,
                     channel: o,
                     className: h.Vs,
-                    fit: u.Yl.COVER,
-                    onClick: s,
-                    onDoubleClick: i,
+                    fit: d.Yl.COVER,
+                    onClick: r,
+                    onDoubleClick: s,
                     onContextMenu: a,
-                    width: t ? f : n,
+                    width: t ? A : n,
                     inCall: c,
-                    paused: p,
-                    popoutType: d
+                    paused: m,
+                    popoutType: u
                 })
             }, e.id)
         })

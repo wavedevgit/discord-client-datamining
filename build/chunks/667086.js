@@ -1,161 +1,134 @@
 /** chunk id: 667086, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => T
-}), n(896048);
-var r = n(627968),
-    i = n(64700),
+    A: () => b
+});
+var i = n(627968),
+    r = n(64700),
     l = n(503698),
     a = n.n(l),
     s = n(877227),
     o = n(311907),
-    c = n(319354),
-    u = n(990078),
-    d = n(397927),
-    p = n(573435),
+    d = n(319354),
+    c = n(990078),
+    u = n(397927),
+    A = n(573435),
     h = n(545167),
-    f = n(418842),
-    g = n(309010),
-    m = n(723702),
-    A = n(851109),
-    _ = n(394953),
-    b = n(355216),
-    E = n(596540),
-    O = n(652215),
-    y = n(985018),
-    I = n(687836);
-let v = {
+    _ = n(418842),
+    m = n(309010),
+    p = n(723702),
+    g = n(851109),
+    E = n(394953),
+    I = n(355216),
+    f = n(596540),
+    C = n(652215),
+    T = n(985018),
+    N = n(687836);
+let S = {
         cozy: 0,
         default: 0,
         compact: 0
     },
-    S = {
+    x = {
         cozy: 36,
         default: 24,
         compact: 14
     },
-    C = {
+    v = {
         cozy: 95,
         default: 84,
         compact: 72
     };
 
-function N(e) {
-    var t, n;
+function y(e) {
     let {
-        onClick: l,
-        selectedOverride: s = !1,
-        popoutProps: o,
-        ref: g,
-        focusSectionProps: A
-    } = e, [E, O] = i.useState(!1), N = (0, _.lI)(), T = s || N, j = s || T, {
-        backForwardButtons: x,
-        titlebarIconSize: P,
-        titlebarHoverHighlight: w
+        onClick: t,
+        selectedOverride: n = !1,
+        popoutProps: l,
+        ref: s,
+        focusSectionProps: o
+    } = e, [m, g] = r.useState(!1), f = (0, E.lI)(), C = n || f, y = n || C, {
+        backForwardButtons: b,
+        titlebarIconSize: O,
+        titlebarHoverHighlight: L
     } = (0, h.pz)({
         location: "NotificationsInboxTitleBarButton"
-    }), L = (0, r.jsx)(d.XFE, {
-        className: I.icon,
-        color: E || j ? d.LU0.colors.ICON_STRONG : d.LU0.colors.ICON_MUTED,
-        size: P
+    }), R = (0, i.jsx)(u.XFE, {
+        className: N.icon,
+        color: m || y ? u.LU0.colors.ICON_STRONG : u.LU0.colors.ICON_MUTED,
+        size: O
     }), {
-        badge: R,
-        badgeType: D
-    } = (0, b.ux)({
-        isSelected: T
-    }), M = (0, m.isDesktop)() && x, k = (0, f.C)(), U = (0, m.isMac)() ? v[k] : M ? S[k] : C[k];
-    return (0, r.jsxs)(d.BJc, {
+        badge: P,
+        badgeType: j
+    } = (0, I.ux)({
+        isSelected: C
+    }), D = (0, p.isDesktop)() && b, M = (0, _.C)(), w = (0, p.isMac)() ? S[M] : D ? x[M] : v[M];
+    return (0, i.jsxs)(u.BJc, {
         gap: 0,
         direction: "horizontal",
-        children: [(0, r.jsx)(d.hKd, {
-            size: U,
+        children: [(0, i.jsx)(u.hKd, {
+            size: w,
             horizontal: !0
-        }), (0, r.jsx)(u.m, {
+        }), (0, i.jsx)(c.m, {
             asContainer: !0,
-            shouldShow: !j,
-            text: y.intl.string(y.t.HcoRu0),
-            children: (0, r.jsxs)(d.DUT, (t = function(e) {
-                for (var t = 1; t < arguments.length; t++) {
-                    var n = null != arguments[t] ? arguments[t] : {},
-                        r = Object.keys(n);
-                    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                        return Object.getOwnPropertyDescriptor(n, e).enumerable
-                    }))), r.forEach(function(t) {
-                        var r;
-                        r = n[t], t in e ? Object.defineProperty(e, t, {
-                            value: r,
-                            enumerable: !0,
-                            configurable: !0,
-                            writable: !0
-                        }) : e[t] = r
-                    })
-                }
-                return e
-            }({
-                innerRef: g,
-                className: a()(I.clickableContainer, {
-                    [I.withHoverHighlight]: w
-                })
-            }, A, o), n = n = {
+            shouldShow: !y,
+            text: T.intl.string(T.t.HcoRu0),
+            children: (0, i.jsxs)(u.DUT, {
+                innerRef: s,
+                className: a()(N.clickableContainer, {
+                    [N.withHoverHighlight]: L
+                }),
+                ...o,
+                ...l,
                 onMouseEnter: () => {
-                    O(!0)
+                    g(!0)
                 },
                 onMouseLeave: () => {
-                    O(!1)
+                    g(!1)
                 },
                 onClick: () => {
-                    var e;
-                    null == l || l(), null == o || null == (e = o.onClick) || e.call(o)
+                    t?.(), l?.onClick?.()
                 },
-                children: [(0, r.jsx)("div", {
-                    className: a()(I.iconWrapper, null),
-                    children: "unread" === D ? (0, r.jsxs)(r.Fragment, {
-                        children: [(0, r.jsx)(p.Ay, {
-                            width: c.E[P],
-                            height: c.E[P],
-                            mask: p.Ay.Masks.HEADER_BAR_BADGE_BOTTOM,
-                            children: L
-                        }), (0, r.jsx)("div", {
-                            className: a()(I.unreadDot, I[P])
+                children: [(0, i.jsx)("div", {
+                    className: a()(N.iconWrapper, null),
+                    children: "unread" === j ? (0, i.jsxs)(i.Fragment, {
+                        children: [(0, i.jsx)(A.Ay, {
+                            width: d.E[O],
+                            height: d.E[O],
+                            mask: A.Ay.Masks.HEADER_BAR_BADGE_BOTTOM,
+                            children: R
+                        }), (0, i.jsx)("div", {
+                            className: a()(N.unreadDot, N[O])
                         })]
-                    }) : L
-                }), R]
-            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
-                var n = Object.keys(e);
-                if (Object.getOwnPropertySymbols) {
-                    var r = Object.getOwnPropertySymbols(e);
-                    n.push.apply(n, r)
-                }
-                return n
-            })(Object(n)).forEach(function(e) {
-                Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-            }), t))
+                    }) : R
+                }), P]
+            })
         })]
     })
 }
 
-function T() {
+function b() {
     let {
         focusSectionProps: e
-    } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, t = i.useRef(null), {
+    } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, t = r.useRef(null), {
         notificationCenterVariant: n
-    } = (0, A.X8)({
+    } = (0, g.X8)({
         location: "NotificationsInboxButton"
-    }), l = (0, o.bG)([g.A], () => g.A.getChannelId()), a = i.useMemo(() => O.BVt.CHANNEL(O.gNP, null != l ? l : void 0), [l]), c = (0, b.HN)();
-    return n === A.U5.SIDEBAR ? (0, r.jsx)(N, {
+    }), l = (0, o.bG)([m.A], () => m.A.getChannelId()), a = r.useMemo(() => C.BVt.CHANNEL(C.gNP, l ?? void 0), [l]), d = (0, I.HN)();
+    return n === g.U5.SIDEBAR ? (0, i.jsx)(y, {
         onClick: () => {
-            c(), (0, s.pX)(a)
+            d(), (0, s.pX)(a)
         },
         focusSectionProps: e
-    }) : n === A.U5.POPOUT ? (0, r.jsx)(E.A, {
+    }) : n === g.U5.POPOUT ? (0, i.jsx)(f.A, {
         targetElementRef: t,
         popoutPosition: "bottom",
         popoutAlign: "left",
         spacing: 2,
-        children: (n, i, l) => (0, r.jsx)(N, {
+        children: (n, r, l) => (0, i.jsx)(y, {
             ref: t,
-            selectedOverride: i,
+            selectedOverride: r,
             onClick: () => {
-                c(), n()
+                d(), n()
             },
             popoutProps: l,
             focusSectionProps: e

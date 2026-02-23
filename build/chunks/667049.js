@@ -1,23 +1,22 @@
 /** chunk id: 667049, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => s
+    A: () => r
 });
-var r = n(311907),
-    i = n(961350),
-    l = n(622543),
-    a = n(61881);
+var i = n(311907),
+    l = n(961350),
+    a = n(622543),
+    s = n(61881);
 
-function s(e) {
-    let t = (0, r.bG)([i.default], () => {
-            let t = i.default.getId();
+function r(e) {
+    let t = (0, i.bG)([l.default], () => {
+            let t = l.default.getId();
             return null != e && t === e
         }, [e]),
-        n = (0, r.bG)([a.A], () => a.A.getPendingWidgets()),
-        s = (0, r.yK)([l.A], () => {
-            var t;
+        n = (0, i.bG)([s.A], () => s.A.getPendingWidgets()),
+        r = (0, i.yK)([a.A], () => {
             if (null == e) return [];
-            let n = l.A.getUserProfile(e);
-            return null != (t = null == n ? void 0 : n.widgets) ? t : []
+            let t = a.A.getUserProfile(e);
+            return t?.widgets ?? []
         }, [e]);
-    return t && null !== n ? n : s
+    return t && null !== n ? n : r
 }

@@ -2,34 +2,34 @@
 n.d(t, {
     A: () => c
 });
-var l = n(64700),
-    r = n(311907),
-    i = n(824552),
+var i = n(64700),
+    l = n(311907),
+    s = n(824552),
     a = n(627363),
-    s = n(587895),
+    r = n(587895),
     o = n(546183);
 
 function c(e) {
-    let t = (null == e ? void 0 : e.require_application_authorization) ? e.application_id : null,
+    let t = e?.require_application_authorization ? e.application_id : null,
         {
             authorizationsFetchState: n,
             applicationOAuth2Token: c
-        } = (0, r.cf)([o.default], () => ({
+        } = (0, l.cf)([o.default], () => ({
             authorizationsFetchState: o.default.getFetchState(),
             applicationOAuth2Token: o.default.getNewestTokenForApplication(t)
         })),
-        u = (0, r.bG)([s.A], () => s.A.getApplication(t)),
-        d = (0, r.bG)([s.A], () => s.A.getApplication(null == u ? void 0 : u.parentId));
-    (0, l.useEffect)(() => {
-        null != t && n === o.FetchState.NOT_FETCHED && i.A.fetch()
-    }, [n, t]), (0, l.useEffect)(() => {
-        null != t && null == u && n === o.FetchState.FETCHED && a.Ay.fetchApplications([t], !1)
-    }, [t, c, n, u]), (0, l.useEffect)(() => {
-        null != u && null != u.parentId && null == d && n === o.FetchState.FETCHED && a.Ay.fetchApplications([u.parentId], !1)
-    }, [u, n, d]);
-    let h = null != u && (null == u.parentId || null != d);
+        d = (0, l.bG)([r.A], () => r.A.getApplication(t)),
+        u = (0, l.bG)([r.A], () => r.A.getApplication(d?.parentId));
+    (0, i.useEffect)(() => {
+        null != t && n === o.FetchState.NOT_FETCHED && s.A.fetch()
+    }, [n, t]), (0, i.useEffect)(() => {
+        null != t && null == d && n === o.FetchState.FETCHED && a.Ay.fetchApplications([t], !1)
+    }, [t, c, n, d]), (0, i.useEffect)(() => {
+        null != d && null != d.parentId && null == u && n === o.FetchState.FETCHED && a.Ay.fetchApplications([d.parentId], !1)
+    }, [d, n, u]);
+    let h = null != d && (null == d.parentId || null != u);
     return {
-        showLinkedLobbyApplicationLoadingIndicator: null != t && (n !== o.FetchState.FETCHED || null == u || !h),
-        requiredLinkedLobbyApplication: null == c && null != u && h ? null != d ? d : u : null
+        showLinkedLobbyApplicationLoadingIndicator: null != t && (n !== o.FetchState.FETCHED || null == d || !h),
+        requiredLinkedLobbyApplication: null == c && null != d && h ? u ?? d : null
     }
 }

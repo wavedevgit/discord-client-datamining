@@ -1,123 +1,79 @@
-/** chunk id: 194085, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    $$: () => f,
-    Ay: () => A,
-    qv: () => d
-}), n(896048);
-var r = n(627968),
-    l = n(64700),
-    a = n(503698),
-    i = n.n(a),
-    s = n(990078),
-    o = n(101555),
-    c = n(930901);
-
-function u(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = r
-        })
-    }
-    return e
-}
-
-function p(e, t) {
-    if (null == e) return {};
-    var n, r, l, a = {};
-    if ("u" > typeof Reflect && Reflect.ownKeys) {
-        for (l = 0, n = Reflect.ownKeys(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
-        return a
-    }
-    if (a = function(e, t) {
-            if (null == e) return {};
-            var n, r, l = {},
-                a = Object.getOwnPropertyNames(e);
-            for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n]);
-            return l
-        }(e, t), Object.getOwnPropertySymbols)
-        for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
-    return a
-}
-let d = l.forwardRef(function(e, t) {
-    var n, l;
-    let [a, ...d] = [e, t], {
-        label: f,
-        ariaLabel: A,
-        tooltipText: h,
-        icon: O,
-        iconProps: y,
-        onClick: b,
-        onTooltipShow: g,
+/** chunk id: 194085, original params: e,t,l (module,exports,require) **/
+l.d(t, {
+    $$: () => d,
+    Ay: () => o,
+    qv: () => u
+});
+var a = l(627968),
+    n = l(64700),
+    s = l(503698),
+    i = l.n(s),
+    r = l(990078),
+    A = l(101555),
+    c = l(930901);
+let u = n.forwardRef(function(e, t) {
+    let {
+        label: l,
+        ariaLabel: n,
+        tooltipText: s,
+        icon: u,
+        iconProps: d,
+        onClick: o,
+        onTooltipShow: h,
         onTooltipHide: _,
-        disabled: m,
+        disabled: I,
         dangerous: E,
-        separator: I,
-        buttonClassName: j,
-        children: P
-    } = a, N = p(a, ["label", "ariaLabel", "tooltipText", "icon", "iconProps", "onClick", "onTooltipShow", "onTooltipHide", "disabled", "dangerous", "separator", "buttonClassName", "children"]), [L] = d;
-    return (0, r.jsx)(s.m, {
+        separator: L,
+        buttonClassName: N,
+        children: C,
+        ...g
+    } = e;
+    return (0, a.jsx)(r.m, {
         asContainer: !0,
-        __unsupportedReactNodeAsText: null != h ? h : f,
-        "aria-label": f,
-        onTooltipShow: g,
+        __unsupportedReactNodeAsText: s ?? l,
+        "aria-label": l,
+        onTooltipShow: h,
         onTooltipHide: _,
-        children: (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsxs)(o.$n, (n = u({
-                ref: L,
-                className: i()(c.W1, j),
+        children: (0, a.jsxs)(a.Fragment, {
+            children: [(0, a.jsxs)(A.$n, {
+                ref: t,
+                className: i()(c.W1, N),
                 onClick: e => {
-                    b(e)
+                    o(e)
                 },
-                "aria-label": null != A ? A : f,
-                disabled: m,
-                dangerous: E
-            }, N), l = l = {
-                children: [null != O ? (0, r.jsx)(O, u({
+                "aria-label": n ?? l,
+                disabled: I,
+                dangerous: E,
+                ...g,
+                children: [null != u ? (0, a.jsx)(u, {
                     className: c.Kk,
-                    color: "currentColor"
-                }, y)) : null, null != P ? (0, r.jsx)("div", {
+                    color: "currentColor",
+                    ...d
+                }) : null, null != C ? (0, a.jsx)("div", {
                     className: i()(c.Kk, c.IO),
-                    children: P
+                    children: C
                 }) : null]
-            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
-                var n = Object.keys(e);
-                if (Object.getOwnPropertySymbols) {
-                    var r = Object.getOwnPropertySymbols(e);
-                    n.push.apply(n, r)
-                }
-                return n
-            })(Object(l)).forEach(function(e) {
-                Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(l, e))
-            }), n)), I && (0, r.jsx)(o.wv, {})]
+            }), L && (0, a.jsx)(A.wv, {})]
         })
     })
 });
 
-function f(e) {
+function d(e) {
     let {
         className: t
     } = e;
-    return (0, r.jsx)("div", {
+    return (0, a.jsx)("div", {
         className: i()(c.me, t)
     })
 }
 
-function A(e) {
+function o(e) {
     let {
-        children: t
-    } = e, n = p(e, ["children"]);
-    return (0, r.jsx)(o.Ay, {
-        className: i()(n.className, c.oO),
+        children: t,
+        ...l
+    } = e;
+    return (0, a.jsx)(A.Ay, {
+        className: i()(l.className, c.oO),
         children: t
     })
 }

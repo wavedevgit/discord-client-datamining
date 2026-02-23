@@ -1,26 +1,26 @@
 /** chunk id: 544199, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    F: () => l,
+    F: () => r,
     G: () => a
 });
-var r = n(73153),
-    i = n(881268);
-async function l(e, t) {
-    r.h.dispatch({
+var i = n(73153),
+    l = n(881268);
+async function r(e, t) {
+    i.h.dispatch({
         type: "CREATOR_MONETIZATION_PRICE_TIERS_FETCH",
         guildId: e,
         priceTierType: t
     });
     try {
-        let n = await i.X(e, t);
-        r.h.dispatch({
+        let n = await l.X(e, t);
+        i.h.dispatch({
             type: "CREATOR_MONETIZATION_PRICE_TIERS_FETCH_SUCCESS",
             guildId: e,
             priceTierType: t,
             priceTiers: n
         })
     } catch (n) {
-        r.h.dispatch({
+        i.h.dispatch({
             type: "CREATOR_MONETIZATION_PRICE_TIERS_FETCH_FAILURE",
             guildId: e,
             priceTierType: t
@@ -29,7 +29,7 @@ async function l(e, t) {
 }
 
 function a(e) {
-    r.h.dispatch({
+    i.h.dispatch({
         type: "CREATOR_MONETIZATION_SET_HAS_SEEN_ONBOARDING_FOR_GUILD",
         guildId: e
     })

@@ -2,9 +2,9 @@
 n.d(t, {
     t: () => a
 });
-var r = n(600975),
-    i = n(723702);
-let l = (0, r.C)({
+var i = n(600975),
+    r = n(723702);
+let l = (0, i.C)({
     kind: "user",
     id: "2025-03_fast_travel",
     label: "Fast Travel",
@@ -43,6 +43,6 @@ let l = (0, r.C)({
 function a(e) {
     return l.useExperiment(e, {
         autoTrackExposure: !0,
-        disable: !(0, i.isDesktop)()
+        disable: !(0, r.isDesktop)()
     })
 }

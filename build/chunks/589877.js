@@ -1,62 +1,62 @@
-/** chunk id: 589877, original params: e,t,s (module,exports,require) **/
-s.r(t), s.d(t, {
+/** chunk id: 589877, original params: e,s,t (module,exports,require) **/
+t.r(s), t.d(s, {
     default: () => E
-}), s(896048), s(747238), s(680155), s(323874), s(14289), s(35956);
-var a = s(627968),
-    r = s(64700),
-    i = s(607399),
-    l = s(311907),
-    n = s(397927),
-    c = s(416298),
-    d = s(854378),
-    m = s(197111),
-    g = s(10088),
-    h = s(976860),
-    x = s(829219),
-    o = s(890687),
-    u = s(545986),
-    _ = s(654487),
-    N = s(652215),
-    j = s(613057),
-    p = s(985018),
-    v = s(667426),
-    f = s(604880),
-    k = s(318808);
+}), t(323874), t(14289), t(35956);
+var a = t(627968),
+    r = t(64700),
+    i = t(607399),
+    l = t(311907),
+    n = t(397927),
+    c = t(416298),
+    d = t(854378),
+    m = t(197111),
+    g = t(10088),
+    h = t(976860),
+    x = t(829219),
+    u = t(890687),
+    _ = t(545986),
+    o = t(654487),
+    N = t(652215),
+    j = t(613057),
+    p = t(985018),
+    v = t(667426),
+    f = t(604880),
+    k = t(318808);
 l.Ay.initialize();
 let A = i.Fr || i.v1;
 
 function E(e) {
     let {
-        match: t
-    } = e, s = (0, l.bG)([g.A], () => g.A.getState("quest-preview")), i = t.params.questId, E = function(e) {
-        let [t, s] = r.useState(null);
+        match: s
+    } = e, t = (0, l.bG)([g.A], () => g.A.getState("quest-preview")), i = s.params.questId, E = function(e) {
+        let [s, t] = r.useState(null);
         return r.useEffect(() => {
-            (0, x.xB)(e).then(e => s({
+            (0, x.xB)(e).then(e => t({
                 status: "ok",
                 value: e
-            })).catch(() => s({
+            })).catch(() => t({
                 status: "error"
             }))
-        }, [s, e]), t
+        }, [t, e]), s
     }(i);
     r.useEffect(() => {
         if (!A) {
-            if (null == s) m.A.openNativeAppModal("quest-preview", N.e$_.DEEP_LINK, {
+            if (null == t) m.A.openNativeAppModal("quest-preview", N.e$_.DEEP_LINK, {
                 type: j.XK.QUEST_PREVIEW_TOOL,
                 params: {
                     questId: i
                 }
             });
-            else if (s === N.fAW.OPEN_FAIL) {
+            else if (t === N.fAW.OPEN_FAIL) {
                 let e = new URLSearchParams;
-                e.set(o.L1.TAB, o.NC.PREVIEW_TOOL), e.set(o.L1.QUEST_ID, i), (0, h.bG)({
+                e.set(u.L1.TAB, u.NC.PREVIEW_TOOL), e.set(u.L1.QUEST_ID, i), (0, h.bG)({
                     pathname: N.BVt.QUEST_HOME_V2,
-                    search: "?".concat(e.toString())
+                    search: `?${e.toString()}`
                 })
             }
         }
-    }, [s, i]);
-    let T = r.useCallback(() => (0, u.q$)(i), [i]);
+    }, [t, i]);
+    let T = r.useCallback(() => (0, _.q$)(i), [i]);
     if (A) return (0, a.jsxs)("div", {
         className: v.MY,
         children: [(0, a.jsx)("img", {
@@ -75,7 +75,7 @@ function E(e) {
                 children: [(0, a.jsx)("div", {
                     className: v.rC,
                     children: (0, a.jsx)("img", {
-                        src: "".concat(_.CI).concat(i, "/dark/").concat(E.value.assets.gameTile),
+                        src: `${o.CI}${i}/dark/${E.value.assets.gameTile}`,
                         alt: "",
                         className: v.o4
                     })
@@ -108,7 +108,7 @@ function E(e) {
             })
         })]
     });
-    let C = null == s || s === N.fAW.OPENING || s === N.fAW.OPEN_FAIL;
+    let C = null == t || t === N.fAW.OPENING || t === N.fAW.OPEN_FAIL;
     return (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)(c.A, {
             className: v.Lq,

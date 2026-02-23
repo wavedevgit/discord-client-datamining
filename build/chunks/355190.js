@@ -1,21 +1,17 @@
-/** chunk id: 355190, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => o
+/** chunk id: 355190, original params: e,t,r (module,exports,require) **/
+r.d(t, {
+    A: () => i
 });
-var a, i, r = n(311907),
-    s = n(73153);
+var a = r(311907),
+    n = r(73153);
 let l = {};
-class d extends(i = r.Ay.Store) {
+class s extends a.Ay.Store {
+    static displayName = "EULAStore";
     getEULA(e) {
         return l[e]
     }
-}(a = "displayName") in d ? Object.defineProperty(d, a, {
-    value: "EULAStore",
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
-}) : d[a] = "EULAStore";
-let o = new d(s.h, {
+}
+let i = new s(n.h, {
     EULA_FETCH_SUCCESS: function(e) {
         let {
             eula: t

@@ -1,39 +1,39 @@
-/** chunk id: 45758, original params: e,t,n (module,exports,require) **/
-n.d(t, {
+/** chunk id: 45758, original params: e,t,a (module,exports,require) **/
+a.d(t, {
     A: () => o
 });
-var r = n(627968);
-n(64700);
-var l = n(503698),
-    i = n.n(l),
-    a = n(397927),
-    s = n(650964);
+var n = a(627968);
+a(64700);
+var i = a(503698),
+    s = a.n(i),
+    l = a(397927),
+    r = a(650964);
 let o = function(e) {
     let {
         tabs: t,
-        onTabSelect: n,
-        selectedTab: l,
+        onTabSelect: a,
+        selectedTab: i,
         className: o
     } = e;
-    return (0, r.jsx)(a.VQ0, {
+    return (0, n.jsx)(l.VQ0, {
         type: "top-pill",
-        selectedItem: l,
-        onItemSelect: n,
+        selectedItem: i,
+        onItemSelect: a,
         className: o,
         children: t.map((e, t) => {
             let {
-                id: n,
-                label: l,
+                id: a,
+                label: i,
                 count: o
             } = e;
-            return (0, r.jsx)(a.VQ0.Item, {
-                id: n,
-                className: i()(s.V, {
-                    [s.r]: 0 === t
+            return (0, n.jsx)(l.VQ0.Item, {
+                id: a,
+                className: s()(r.V, {
+                    [r.r]: 0 === t
                 }),
-                "aria-label": l,
-                children: null != o && o > 0 ? "".concat(l, " (").concat(o, ")") : l
-            }, n)
+                "aria-label": i,
+                children: null != o && o > 0 ? `${i} (${o})` : i
+            }, a)
         })
     })
 }

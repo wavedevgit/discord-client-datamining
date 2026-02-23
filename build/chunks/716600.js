@@ -1,92 +1,91 @@
 /** chunk id: 716600, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    t: () => g
+    t: () => m
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(934551),
+var r = n(934551),
     l = n(232582),
     a = n(732955),
     s = n(397927),
     o = n(954571),
-    c = n(975571),
-    u = n(795269),
-    d = n(498470),
-    p = n(652215),
+    d = n(975571),
+    c = n(795269),
+    u = n(498470),
+    A = n(652215),
     h = n(985018),
-    f = n(787076);
+    _ = n(787076);
 
-function g(e) {
-    var t, n, g, m;
+function m(e) {
     let {
-        componentId: A,
-        promotionId: _,
-        content: b,
-        renderModalProps: E,
-        analyticsLocations: O,
-        analyticsLocation: y,
+        componentId: t,
+        promotionId: n,
+        content: m,
+        renderModalProps: p,
+        analyticsLocations: g,
+        analyticsLocation: E,
         isLightTheme: I
-    } = e, v = "AnnouncementModalVariant1_".concat(A), {
-        onClose: S
-    } = E, C = null != (t = null == (n = b.button) ? void 0 : n.copy) ? t : h.intl.string(h.t.YScQSF), N = (null == (g = b.button) ? void 0 : g.buttonAction) === l.dz.OPEN_MARKETING_PAGE ? "jump_to_mkt_button" : "get_nitro_button", T = (0, d.h)({
-        buttonAction: null == (m = b.button) ? void 0 : m.buttonAction,
-        analyticsLocations: O,
-        analyticsLocation: y,
-        onClose: S
-    }), j = "" !== b.helpArticleId ? () => (0, r.jsxs)(r.Fragment, {
-        children: ["\xa0", (0, r.jsx)(s.MzZ, {
-            className: f.$T,
-            href: c.A.getArticleURL(b.helpArticleId),
+    } = e, f = `AnnouncementModalVariant1_${t}`, {
+        onClose: C
+    } = p, T = m.button?.copy ?? h.intl.string(h.t.YScQSF), N = m.button?.buttonAction === l.dz.OPEN_MARKETING_PAGE ? "jump_to_mkt_button" : "get_nitro_button", S = (0, u.h)({
+        buttonAction: m.button?.buttonAction,
+        analyticsLocations: g,
+        analyticsLocation: E,
+        onClose: C
+    }), x = "" !== m.helpArticleId ? () => (0, i.jsxs)(i.Fragment, {
+        children: ["\xa0", (0, i.jsx)(s.MzZ, {
+            className: _.$T,
+            href: d.A.getArticleURL(m.helpArticleId),
             children: h.intl.string(h.t["sBp+u0"])
         })]
-    }) : void 0, x = {
+    }) : void 0, v = {
         type: "video",
-        src: I ? b.heroArtVideoLinkLightTheme : b.videoLink
+        src: I ? m.heroArtVideoLinkLightTheme : m.videoLink
     };
-    null != b.heroArtVideoSubtitles && (x.subtitles = b.heroArtVideoSubtitles.map(e => ({
+    null != m.heroArtVideoSubtitles && (v.subtitles = m.heroArtVideoSubtitles.map(e => ({
         locale: e.locale,
         src: e.link,
         isDefault: !1
-    }))), ("" !== b.heroArtImageLinkDarkTheme || "" !== b.heroArtImageLinkLightTheme) && (x = {
+    }))), ("" !== m.heroArtImageLinkDarkTheme || "" !== m.heroArtImageLinkLightTheme) && (v = {
         type: "image",
-        src: I ? b.heroArtImageLinkLightTheme : b.heroArtImageLinkDarkTheme
+        src: I ? m.heroArtImageLinkLightTheme : m.heroArtImageLinkDarkTheme
     });
-    let P = "" !== b.modalTopPill ? () => (0, r.jsx)(u.R, {
-        text: b.modalTopPill,
-        className: f.ON
+    let y = "" !== m.modalTopPill ? () => (0, i.jsx)(c.R, {
+        text: m.modalTopPill,
+        className: _.ON
     }) : void 0;
     return {
-        componentId: A,
-        promotionId: _,
-        renderModalProps: E,
-        header: b.header,
-        modalTopExtra: P,
-        subHeader: b.subheader,
-        subHeaderExtra: j,
-        body: b.body,
-        heroArt: x,
-        featureCards: b.featureCards.map(e => ({
+        componentId: t,
+        promotionId: n,
+        renderModalProps: p,
+        header: m.header,
+        modalTopExtra: y,
+        subHeader: m.subheader,
+        subHeaderExtra: x,
+        body: m.body,
+        heroArt: v,
+        featureCards: m.featureCards.map(e => ({
             header: e.header,
             subHeader: e.body,
             imageSrc: I ? e.imageLinkLightTheme : e.imageLink,
             tagText: "" !== e.pill ? e.pill : void 0
         })),
-        changeLogId: v,
+        changeLogId: f,
         button: () => {
             let e = Date.now();
-            return (0, r.jsx)(a.$nd, {
+            return (0, i.jsx)(a.$nd, {
                 variant: "expressive",
                 size: "md",
                 onClick: () => {
-                    o.default.track(p.HAw.CHANGE_LOG_CTA_CLICKED, {
-                        change_log_id: v,
+                    o.default.track(A.HAw.CHANGE_LOG_CTA_CLICKED, {
+                        change_log_id: f,
                         cta_type: N,
                         seconds_open: Math.round((Date.now() - e) / 1e3),
-                        target: v
-                    }), T()
+                        target: f
+                    }), S()
                 },
-                text: C,
-                icon: i.NitroWheelIcon
+                text: T,
+                icon: r.NitroWheelIcon
             })
         }
     }

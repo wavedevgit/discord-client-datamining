@@ -1,23 +1,24 @@
 /** chunk id: 688895, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
     H: () => a
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var l = n(985018),
-    i = n(708607),
-    s = n(376393);
-let a = () => (0, r.jsxs)("div", {
-    className: i.kL,
-    children: [(0, r.jsx)("img", {
-        className: i.Sl,
+var s = n(985018),
+    l = n(708607),
+    r = n(376393);
+let a = () => (0, i.jsxs)("div", {
+    className: l.kL,
+    children: [(0, i.jsx)("img", {
+        className: l.Sl,
         alt: "",
-        src: s
-    }), (0, r.jsx)("div", {
-        className: i.DD,
-        children: l.intl.string(l.t.MwjTvn)
-    }), (0, r.jsx)("div", {
-        className: i.rf,
-        children: l.intl.string(l.t.AKBgPy)
+        src: r
+    }), (0, i.jsx)("div", {
+        className: l.DD,
+        children: s.intl.string(s.t.MwjTvn)
+    }), (0, i.jsx)("div", {
+        className: l.rf,
+        children: s.intl.string(s.t.AKBgPy)
     })]
 })

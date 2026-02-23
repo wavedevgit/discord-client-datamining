@@ -1,135 +1,134 @@
 /** chunk id: 179534, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => w
+    A: () => G
 });
-var r = n(627968),
-    i = n(64700),
+var i = n(627968),
+    s = n(64700),
     l = n(503698),
-    s = n.n(l),
+    r = n.n(l),
     a = n(417597),
     o = n(397927),
-    c = n(793574),
-    d = n(688810),
+    d = n(793574),
+    c = n(688810),
     u = n(985925),
-    g = n(547015),
-    m = n(997509),
-    p = n(138298),
-    f = n(657331),
-    h = n(761640),
-    b = n(71393),
-    x = n(266047),
-    j = n(221950),
-    _ = n(735937),
-    O = n(104685),
-    v = n(856768),
-    y = n(189552),
-    A = n(508160),
-    E = n(749060),
-    N = n(374963),
-    S = n(636670),
-    I = n(652215),
-    C = n(985018),
-    T = n(503377),
-    P = n(63135);
+    m = n(547015),
+    g = n(997509),
+    x = n(138298),
+    h = n(657331),
+    _ = n(761640),
+    A = n(71393),
+    p = n(266047),
+    f = n(221950),
+    j = n(735937),
+    N = n(104685),
+    E = n(856768),
+    b = n(189552),
+    T = n(508160),
+    C = n(749060),
+    I = n(374963),
+    v = n(636670),
+    S = n(652215),
+    y = n(985018),
+    R = n(503377),
+    O = n(63135);
 
-function w(e) {
+function G(e) {
     let {
         guildId: t
-    } = e, n = (0, a.bG)([b.A], () => b.A.getGuild(t)), {
+    } = e, n = (0, a.bG)([A.A], () => A.A.getGuild(t)), {
         analyticsLocations: l
-    } = (0, d.Ay)(c.A.GUILD_SETTINGS_MEMBERS_PAGE), w = (0, u.q)(t), R = (0, a.bG)([h.Ay], () => h.Ay.getGuildSidebarState(t), [t]), D = i.useCallback(() => {
-        p.A.closeGuildSidebar(t)
-    }, [t]), G = !1 == !!(null == n ? void 0 : n.features.has(I.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), L = (0, a.bG)([x.A], () => x.A.getEstimatedMemberSearchCountByGuildId(t), [t]), k = i.useCallback(e => {
-        null != e && (0, f.openUserProfileModal)({
+    } = (0, c.Ay)(d.A.GUILD_SETTINGS_MEMBERS_PAGE), G = (0, u.q)(t), L = (0, a.bG)([_.Ay], () => _.Ay.getGuildSidebarState(t), [t]), D = s.useCallback(() => {
+        x.A.closeGuildSidebar(t)
+    }, [t]), M = !1 == !!n?.features.has(S.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY), k = (0, a.bG)([p.A], () => p.A.getEstimatedMemberSearchCountByGuildId(t), [t]), U = s.useCallback(e => {
+        null != e && (0, h.openUserProfileModal)({
             userId: e.userId,
             guildId: e.guildId,
             sourceAnalyticsLocations: l
         })
-    }, [l]), M = i.useRef(null), U = i.useCallback(() => {
-        var e;
-        null == (e = M.current) || e.resetSearchText()
+    }, [l]), P = s.useRef(null), w = s.useCallback(() => {
+        P.current?.resetSearchText()
     }, []);
     if (null == n) return null;
-    let B = (0, y.ii)(!1, !1, L);
-    return (0, r.jsxs)(d.f5, {
+    let B = (0, b.ii)(!1, !1, k);
+    return (0, i.jsxs)(c.f5, {
         value: l,
-        children: [(0, r.jsx)("div", {
-            className: s()(P.customColumn, T.$Z, T.ed),
-            children: (0, r.jsx)("div", {
-                className: P.customContainer,
-                children: (0, r.jsx)(o.ArX, {
-                    className: s()(P.customScroller, T.cj),
+        children: [(0, i.jsx)("div", {
+            className: r()(O.customColumn, R.$Z, R.ed),
+            children: (0, i.jsx)("div", {
+                className: O.customContainer,
+                children: (0, i.jsx)(o.ArX, {
+                    className: r()(O.customScroller, R.cj),
                     orientation: "auto",
-                    children: (0, r.jsx)(o.ArX, {
-                        className: T.mh,
+                    children: (0, i.jsx)(o.ArX, {
+                        className: R.mh,
                         orientation: "auto",
-                        children: (0, r.jsxs)("main", {
-                            className: s()(P.customColumn, P.contentColumnDefault, T.$Z, T.ed, T.z1),
-                            children: [(0, r.jsx)("div", {
-                                className: T.wx,
-                                children: (0, r.jsx)(o.Heading, {
+                        children: (0, i.jsxs)("main", {
+                            className: r()(O.customColumn, O.contentColumnDefault, R.$Z, R.ed, R.z1),
+                            children: [(0, i.jsx)("div", {
+                                className: R.wx,
+                                children: (0, i.jsx)(o.Heading, {
                                     variant: "heading-lg/semibold",
-                                    children: C.intl.string(C.t.S40K66)
+                                    children: y.intl.string(y.t.S40K66)
                                 })
-                            }, "header"), (0, r.jsx)("div", {
-                                children: (0, r.jsxs)("div", {
-                                    className: T.CZ,
-                                    children: [(0, r.jsx)(O.A, {
+                            }, "header"), (0, i.jsx)("div", {
+                                children: (0, i.jsxs)("div", {
+                                    className: R.CZ,
+                                    children: [(0, i.jsx)(N.A, {
                                         guild: n
-                                    }), (0, r.jsx)(_.A, {
+                                    }), (0, i.jsx)(j.A, {
                                         guild: n
-                                    }), G ? (0, r.jsxs)("div", {
-                                        className: T.FV,
-                                        children: [(0, r.jsx)(N.A, {
+                                    }), M ? (0, i.jsxs)("div", {
+                                        className: R.FV,
+                                        children: [(0, i.jsx)(I.A, {
                                             guild: n,
-                                            ref: M
-                                        }), (0, r.jsx)(A.A, {
+                                            ref: P
+                                        }), (0, i.jsx)(T.A, {
                                             guild: n,
                                             searchState: B,
                                             compact: !0,
-                                            onSelectRow: k,
-                                            onResetForNewMembers: U
-                                        }), B !== y.IY.SUCCESS_STILL_INDEXING && (0, r.jsx)(E.A, {
+                                            onSelectRow: U,
+                                            onResetForNewMembers: w
+                                        }), B !== b.IY.SUCCESS_STILL_INDEXING && (0, i.jsx)(C.A, {
                                             guildId: n.id
                                         })]
-                                    }) : (0, r.jsx)("div", {
-                                        className: T.qQ,
-                                        children: (0, r.jsxs)("div", {
-                                            className: T.pb,
-                                            children: [(0, r.jsx)("div", {
-                                                children: (0, r.jsx)(S.A, {})
-                                            }), (0, r.jsx)(o.Text, {
+                                    }) : (0, i.jsx)("div", {
+                                        className: R.qQ,
+                                        children: (0, i.jsxs)("div", {
+                                            className: R.pb,
+                                            children: [(0, i.jsx)("div", {
+                                                children: (0, i.jsx)(v.A, {})
+                                            }), (0, i.jsx)(o.Text, {
                                                 variant: "text-md/normal",
                                                 color: "text-muted",
-                                                children: C.intl.format(C.t.Bf6yxB, {
+                                                children: y.intl.format(y.t.Bf6yxB, {
                                                     onClick: e => {
-                                                        null != n && (e.preventDefault(), m.A.close(), (0, j.aZ)(n.id))
+                                                        null != n && (e.preventDefault(), g.A.close(), (0, f.aZ)(n.id))
                                                     }
                                                 })
                                             })]
                                         })
                                     })]
                                 })
-                            }, "body"), (0, r.jsx)(v.A, {
+                            }, "body"), (0, i.jsx)(E.A, {
                                 guildId: n.id
                             })]
                         })
                     })
                 })
             })
-        }), w && null != R && (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsx)(o.pkL, {
+        }), G && null != L && (0, i.jsxs)(i.Fragment, {
+            children: [(0, i.jsx)(o.pkL, {
                 isVisible: !0,
                 onClick: D
-            }), (0, r.jsx)("div", {
-                className: T.zd,
+            }), (0, i.jsx)("div", {
+                className: R.zd,
                 style: {
-                    width: I.da6
+                    width: S.da6
                 },
-                children: (0, r.jsx)(g.A, {
-                    userId: R.details.userId,
-                    guildId: R.details.guildId,
+                children: (0, i.jsx)(m.A, {
+                    userId: L.details.userId,
+                    guildId: L.details.guildId,
                     onClose: D
                 })
             })]

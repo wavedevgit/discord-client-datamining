@@ -1,164 +1,122 @@
-/** chunk id: 342098, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    A: () => v,
-    l: () => I
-}), n(938796);
-var r = n(627968);
-n(64700);
-var i = n(284009),
-    a = n.n(i),
-    o = n(835245),
-    s = n(397927),
-    l = n(339048),
-    c = n(391048),
-    u = n(636099),
-    d = n(163437),
-    f = n(97352),
-    p = n(67480),
-    _ = n(954571),
-    h = n(937008),
-    m = n(491057),
-    g = n(652215);
+/** chunk id: 342098, original params: t,e,i (module,exports,require) **/
+i.d(e, {
+    A: () => E,
+    l: () => C
+}), i(938796);
+var n = i(627968);
+i(64700);
+var l = i(284009),
+    s = i.n(l),
+    r = i(835245),
+    a = i(397927),
+    u = i(339048),
+    o = i(391048),
+    c = i(636099),
+    d = i(163437),
+    p = i(97352),
+    S = i(67480),
+    I = i(954571),
+    A = i(937008),
+    _ = i(491057),
+    T = i(652215);
 
-function E(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-
-function y(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            E(e, t, n[t])
-        })
-    }
-    return e
-}
-
-function b(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-        var r = Object.getOwnPropertySymbols(e);
-        t && (r = r.filter(function(t) {
-            return Object.getOwnPropertyDescriptor(e, t).enumerable
-        })), n.push.apply(n, r)
-    }
-    return n
-}
-
-function O(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-
-function v(e) {
+function E(t) {
     let {
-        initialPlanId: t,
-        activeSubscription: i,
-        analyticsObject: a,
-        analyticsLocation: l,
+        initialPlanId: e,
+        activeSubscription: l,
+        analyticsObject: s,
+        analyticsLocation: u,
         analyticsLocations: d,
-        analyticsSubscriptionType: f,
-        renderHeader: p,
+        analyticsSubscriptionType: p,
+        renderHeader: S,
         planGroup: E,
-        skuId: b,
-        guildId: v,
-        reviewWarningMessage: A,
-        applicationId: I,
-        showBenefitsFirst: S,
-        onComplete: T,
-        forcesTransitionToGuild: C
-    } = e, N = (0, o.A)(), w = !1;
-    (0, s.mMO)(async () => {
+        skuId: f,
+        guildId: C,
+        reviewWarningMessage: N,
+        applicationId: h,
+        showBenefitsFirst: g,
+        onComplete: m,
+        forcesTransitionToGuild: P
+    } = t, L = (0, r.A)(), O = !1;
+    (0, a.mMO)(async () => {
         let {
-            PaymentContextProvider: e
-        } = await Promise.resolve().then(n.bind(n, 156312)), o = (await n.e("50371").then(n.bind(n, 97491))).default, {
-            getApplicationPaymentSteps: s
-        } = await n.e("50243").then(n.bind(n, 107854)), c = s({
-            guildId: v,
-            showBenefitsFirst: S
+            PaymentContextProvider: t
+        } = await Promise.resolve().then(i.bind(i, 156312)), r = (await i.e("50371").then(i.bind(i, 97491))).default, {
+            getApplicationPaymentSteps: a
+        } = await i.e("50243").then(i.bind(i, 107854)), o = a({
+            guildId: C,
+            showBenefitsFirst: g
         });
-        return n => (0, r.jsx)(e, {
-            loadId: N,
-            applicationId: I,
-            activeSubscription: i,
-            stepConfigs: c,
-            skuIDs: [b],
-            children: (0, r.jsx)(m.Qt, {
-                children: (0, r.jsx)(h.dX, {
-                    children: (0, r.jsx)(o, O(y({}, n), {
-                        initialPlanId: t,
-                        skuId: b,
+        return i => (0, n.jsx)(t, {
+            loadId: L,
+            applicationId: h,
+            activeSubscription: l,
+            stepConfigs: o,
+            skuIDs: [f],
+            children: (0, n.jsx)(_.Qt, {
+                children: (0, n.jsx)(A.dX, {
+                    children: (0, n.jsx)(r, {
+                        ...i,
+                        initialPlanId: e,
+                        skuId: f,
                         analyticsLocations: d,
-                        analyticsObject: a,
-                        analyticsLocation: l,
-                        analyticsSubscriptionType: f,
-                        renderHeader: p,
+                        analyticsObject: s,
+                        analyticsLocation: u,
+                        analyticsSubscriptionType: p,
+                        renderHeader: S,
                         planGroup: E,
-                        reviewWarningMessage: A,
-                        applicationId: I,
-                        guildId: null != v ? v : void 0,
+                        reviewWarningMessage: N,
+                        applicationId: h,
+                        guildId: C ?? void 0,
                         onComplete: () => {
-                            w = !0, null == T || T()
+                            O = !0, m?.()
                         },
-                        forcesTransitionToGuild: C
-                    }))
+                        forcesTransitionToGuild: P
+                    })
                 })
             })
         })
     }, {
         onCloseCallback: () => {
-            w || (_.default.track(g.HAw.PAYMENT_FLOW_CANCELED, {
-                load_id: N,
-                payment_type: g.frM[g.VVm.SUBSCRIPTION],
-                location: null != l ? l : a,
+            O || (I.default.track(T.HAw.PAYMENT_FLOW_CANCELED, {
+                load_id: L,
+                payment_type: T.frM[T.VVm.SUBSCRIPTION],
+                location: u ?? s,
                 is_gift: !1,
-                sku_id: b,
-                application_id: I,
+                sku_id: f,
+                application_id: h,
                 location_stack: d
-            }), (0, c.ET)(), (0, u.z)())
+            }), (0, o.ET)(), (0, c.z)())
         },
-        onCloseRequest: g.tEg
+        onCloseRequest: T.tEg
     })
 }
-let A = async (e, t) => {
-    let n = (await (0, l.LM)(e)).filter(e => null == e.ends_at || new Date(e.ends_at) > new Date).find(e => e.sku_id === t);
-    a()(null == n, "User already has an active subscription to this SKU")
+let f = async (t, e) => {
+    let i = (await (0, u.LM)(t)).filter(t => null == t.ends_at || new Date(t.ends_at) > new Date).find(t => t.sku_id === e);
+    s()(null == i, "User already has an active subscription to this SKU")
 };
-async function I(e) {
-    var t;
+async function C(t) {
     let {
-        applicationId: n,
-        skuId: r,
-        initialPlanId: i,
-        analyticsLocationObject: o,
-        analyticsLocations: s,
-        renderHeader: l
-    } = e, c = p.A.get(r), u = f.A.getForSKU(r);
-    a()(null != c, "Failed to find SKU");
-    let _ = (0, d.bg)(c.flags);
-    a()(_, "Guild application subscriptions unsupported!"), await A(n, r);
-    let h = {
-        initialPlanId: null != i ? i : null == (t = u[0]) ? void 0 : t.id,
+        applicationId: e,
+        skuId: i,
+        initialPlanId: n,
+        analyticsLocationObject: l,
+        analyticsLocations: r,
+        renderHeader: a
+    } = t, u = S.A.get(i), o = p.A.getForSKU(i);
+    s()(null != u, "Failed to find SKU");
+    let c = (0, d.bg)(u.flags);
+    s()(c, "Guild application subscriptions unsupported!"), await f(e, i), E({
+        initialPlanId: n ?? o[0]?.id,
         activeSubscription: null,
-        analyticsLocations: s,
-        analyticsLocationObject: o,
-        analyticsSubscriptionType: g.rzx.APPLICATION,
-        renderHeader: l,
+        analyticsLocations: r,
+        analyticsLocationObject: l,
+        analyticsSubscriptionType: T.rzx.APPLICATION,
+        renderHeader: a,
         planGroup: [],
-        skuId: r,
+        skuId: i,
         guildId: null,
         showBenefitsFirst: !1,
-        applicationId: n
-    };
-    v(h)
+        applicationId: e
+    })
 }

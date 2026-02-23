@@ -1,8 +1,8 @@
 /** chunk id: 723991, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    q: () => i
+    q: () => r
 });
-let r = (0, n(600975).C)({
+let i = (0, n(600975).C)({
     kind: "user",
     id: "2025-07_camera_toggle_sound",
     label: "Camera Toggle Sound",
@@ -24,10 +24,10 @@ let r = (0, n(600975).C)({
     }]
 });
 
-function i() {
+function r() {
     let {
         enabled: e
-    } = r.getCurrentConfig({
+    } = i.getCurrentConfig({
         location: "soundpacks"
     }, {
         autoTrackExposure: !0

@@ -1,16 +1,16 @@
 /** chunk id: 338957, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => c
-}), n(896048);
-var r = n(179771),
-    i = n(260509),
+    A: () => d
+});
+var i = n(179771),
+    r = n(260509),
     l = n(71393),
     a = n(636401),
     s = n(629471),
     o = n(652215);
-let c = {
+let d = {
     [o.e$_.GET_GUILD]: {
-        scope: r.F.RPC,
+        scope: i.F.RPC,
         validation: e => (0, s.A)(e).required().keys({
             guild_id: e.string(),
             timeout: e.number().min(0).max(60)
@@ -20,23 +20,22 @@ let c = {
                 socket: t,
                 server: n,
                 args: {
-                    guild_id: r,
+                    guild_id: i,
                     timeout: s = 0
                 }
             } = e;
-            return n.storeWait(t, () => l.A.getGuild(r), s).catch(() => {
+            return n.storeWait(t, () => l.A.getGuild(i), s).catch(() => {
                 throw new a.A({
                     errorCode: o.Lw6.GET_GUILD_TIMED_OUT
                 }, "Request to get guild timed out.")
             }).then(e => {
-                var t;
                 if (null == e) throw new a.A({
                     errorCode: o.Lw6.INVALID_GUILD
-                }, "Invalid guild id: ".concat(r));
+                }, `Invalid guild id: ${i}`);
                 return {
                     id: e.id,
                     name: e.name,
-                    icon_url: null != (t = (0, i.Iv)(e, 128)) ? t : null,
+                    icon_url: (0, r.Iv)(e, 128) ?? null,
                     members: [],
                     vanity_url_code: e.vanityURLCode
                 }
@@ -44,16 +43,13 @@ let c = {
         }
     },
     [o.e$_.GET_GUILDS]: {
-        scope: r.F.RPC,
+        scope: i.F.RPC,
         handler: () => ({
-            guilds: l.A.getGuildsArray().map(e => {
-                var t;
-                return {
-                    id: e.id,
-                    name: e.name,
-                    icon_url: null != (t = (0, i.Iv)(e, 128)) ? t : null
-                }
-            })
+            guilds: l.A.getGuildsArray().map(e => ({
+                id: e.id,
+                name: e.name,
+                icon_url: (0, r.Iv)(e, 128) ?? null
+            }))
         })
     }
 }

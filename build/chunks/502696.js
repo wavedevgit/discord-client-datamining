@@ -1,48 +1,45 @@
 /** chunk id: 502696, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => m
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(397927),
+var r = n(397927),
     l = n(964486),
     a = n(954571),
     s = n(217549),
     o = n(70856),
-    c = n(875922),
-    u = n(163518),
-    d = n(294132),
-    p = n(971203),
+    d = n(875922),
+    c = n(163518),
+    u = n(294132),
+    A = n(971203),
     h = n(652215),
-    f = n(985018);
+    _ = n(985018);
 
-function g(e) {
+function m(e) {
     let {
         party: t,
         close: n,
-        onSelect: g
-    } = e, m = (0, c.A)(t), A = (0, p.A)(t), _ = (0, d.A)(t), b = (0, u.A)(t), E = (0, s.A)(t), O = (0, o.A)(t);
+        onSelect: m
+    } = e, p = (0, d.A)(t), g = (0, A.A)(t), E = (0, u.A)(t), I = (0, c.A)(t), f = (0, s.A)(t), C = (0, o.A)(t);
     return (0, l.Ay)(() => {
-        let e = t.currentActivities.filter(e => {
-            var t, n;
-            return (null == (t = e.game) ? void 0 : t.name) != null && (0, a.isGameApplicationType)(null == (n = e.game) ? void 0 : n.type)
-        }).map(e => e.game.name);
+        let e = t.currentActivities.filter(e => e.game?.name != null && (0, a.isGameApplicationType)(e.game?.type)).map(e => e.game.name);
         a.default.track(h.HAw.OPEN_POPOUT, {
             type: "Now Playing Card Popout",
             games_detected: e
         })
-    }), (0, r.jsxs)(i.W1t, {
+    }), (0, i.jsxs)(r.W1t, {
         "data-menu-migrated": !0,
         navId: "now-playing-menu",
         onClose: n,
-        "aria-label": f.intl.string(f.t.ogxXGq),
-        onSelect: g,
-        children: [m, (0, r.jsxs)(i.rXV, {
-            children: [A, _]
-        }), (0, r.jsx)(i.rXV, {
-            children: b
-        }), (0, r.jsx)(i.rXV, {
-            children: E
-        }), O]
+        "aria-label": _.intl.string(_.t.ogxXGq),
+        onSelect: m,
+        children: [p, (0, i.jsxs)(r.rXV, {
+            children: [g, E]
+        }), (0, i.jsx)(r.rXV, {
+            children: I
+        }), (0, i.jsx)(r.rXV, {
+            children: f
+        }), C]
     })
 }

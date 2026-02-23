@@ -1,80 +1,79 @@
 /** chunk id: 497302, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => _
-}), n(228524);
-var r = n(627968),
-    i = n(64700),
+    A: () => E
+});
+var i = n(627968),
+    r = n(64700),
     l = n(311907),
     a = n(397927),
     s = n(713654),
     o = n(698441),
-    c = n(435328),
-    u = n(563312),
-    d = n(826383),
-    p = n(9448),
+    d = n(435328),
+    c = n(563312),
+    u = n(826383),
+    A = n(9448),
     h = n(974930),
-    f = n(734057),
-    g = n(71393),
-    m = n(985018),
-    A = n(659088);
+    _ = n(734057),
+    m = n(71393),
+    p = n(985018),
+    g = n(659088);
 
-function _(e) {
-    var t, n;
+function E(e) {
     let {
-        eventId: _
-    } = e, b = (0, l.bG)([o.Ay], () => o.Ay.getGuildScheduledEvent(_), [_]), E = (0, l.bG)([g.A], () => g.A.getGuild(null == b ? void 0 : b.guild_id), [b]), O = (0, l.bG)([f.A], () => f.A.getChannel(null == b ? void 0 : b.channel_id), [b]), y = (0, u.nh)(_, null), I = null != b && (0, o.Fd)(b), v = null != b ? (0, h.G3)(b) : null, S = (0, d.A)(null == b ? void 0 : b.guild_id, null == b ? void 0 : b.id, v), C = null == y ? void 0 : y.startTime.toISOString(), {
-        startDateTimeString: N
-    } = i.useMemo(() => I ? {
-        startDateTimeString: m.intl.string(m.t.TxqPQR)
-    } : (0, h.CC)(null != C ? C : new Date().toISOString()), [C, I]), T = null != b ? (0, p.oF)(b) : void 0, j = null != (t = null == O ? void 0 : O.name) ? t : T, x = null != O ? (0, s.gU)(O) : null;
-    if (null == b || null == E) return null;
-    let P = null != b.description && b.description.length > 0;
-    return (0, r.jsxs)("div", {
-        className: A.Qo,
-        children: [(0, r.jsx)("div", {
-            className: A.At,
-            children: (0, r.jsx)(a.Text, {
+        eventId: t
+    } = e, n = (0, l.bG)([o.Ay], () => o.Ay.getGuildScheduledEvent(t), [t]), E = (0, l.bG)([m.A], () => m.A.getGuild(n?.guild_id), [n]), I = (0, l.bG)([_.A], () => _.A.getChannel(n?.channel_id), [n]), f = (0, c.nh)(t, null), C = null != n && (0, o.Fd)(n), T = null != n ? (0, h.G3)(n) : null, N = (0, u.A)(n?.guild_id, n?.id, T), S = f?.startTime.toISOString(), {
+        startDateTimeString: x
+    } = r.useMemo(() => C ? {
+        startDateTimeString: p.intl.string(p.t.TxqPQR)
+    } : (0, h.CC)(S ?? new Date().toISOString()), [S, C]), v = null != n ? (0, A.oF)(n) : void 0, y = I?.name ?? v, b = null != I ? (0, s.gU)(I) : null;
+    if (null == n || null == E) return null;
+    let O = null != n.description && n.description.length > 0;
+    return (0, i.jsxs)("div", {
+        className: g.Qo,
+        children: [(0, i.jsx)("div", {
+            className: g.At,
+            children: (0, i.jsx)(a.Text, {
                 variant: "text-sm/semibold",
-                color: I ? "status-positive" : "text-brand",
-                children: N
+                color: C ? "status-positive" : "text-brand",
+                children: x
             })
-        }), (0, r.jsx)(a.Text, {
+        }), (0, i.jsx)(a.Text, {
             variant: "text-lg/semibold",
-            className: P ? A.X_ : void 0,
-            children: b.name
-        }), P && (0, r.jsx)(a.Text, {
+            className: O ? g.X_ : void 0,
+            children: n.name
+        }), O && (0, i.jsx)(a.Text, {
             variant: "text-md/normal",
             color: "text-subtle",
-            className: A.tj,
-            children: (0, c.l)(null != (n = b.description) ? n : "", !0, {
+            className: g.tj,
+            children: (0, d.l)(n.description ?? "", !0, {
                 guildId: E.id
             })
-        }), (0, r.jsx)("hr", {
-            className: A.Yl
-        }), (0, r.jsxs)("div", {
-            className: A.oo,
-            children: [(0, r.jsxs)("div", {
-                className: A.ik,
-                children: [(0, r.jsx)(a.nFg, {
+        }), (0, i.jsx)("hr", {
+            className: g.Yl
+        }), (0, i.jsxs)("div", {
+            className: g.oo,
+            children: [(0, i.jsxs)("div", {
+                className: g.ik,
+                children: [(0, i.jsx)(a.nFg, {
                     size: "xs",
                     color: "currentColor"
-                }), (0, r.jsx)(a.Text, {
+                }), (0, i.jsx)(a.Text, {
                     variant: "text-xs/normal",
                     color: "text-muted",
-                    children: m.intl.format(m.t["+DLsD8"], {
-                        count: S
+                    children: p.intl.format(p.t["+DLsD8"], {
+                        count: N
                     })
                 })]
-            }), (0, r.jsxs)("div", {
-                className: A.ik,
-                children: [null != x ? (0, r.jsx)(x, {
+            }), (0, i.jsxs)("div", {
+                className: g.ik,
+                children: [null != b ? (0, i.jsx)(b, {
                     size: "xs",
                     color: "currentColor"
-                }) : null, (0, r.jsx)(a.Text, {
+                }) : null, (0, i.jsx)(a.Text, {
                     variant: "text-xs/normal",
                     color: "text-muted",
-                    className: A.HA,
-                    children: null != j ? (0, c.l)(j, !0) : null
+                    className: g.HA,
+                    children: null != y ? (0, d.l)(y, !0) : null
                 })]
             })]
         })]

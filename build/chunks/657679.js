@@ -1,54 +1,53 @@
 /** chunk id: 657679, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => o
-}), n(896048);
+    A: () => d
+});
 var l = n(627968),
-    r = n(64700),
+    a = n(64700),
     i = n(397927),
-    a = n(473169);
+    r = n(473169);
 let s = e => {
         let {
             element: t,
             onChange: n,
             initialOption: s
-        } = e, [o, d] = r.useState("");
-        r.useEffect(() => {
-            d(null != s ? s : "")
+        } = e, [d, o] = a.useState("");
+        a.useEffect(() => {
+            o(s ?? "")
         }, [s]);
         let c = t.name,
             {
                 title: u,
-                options: m
+                options: _
             } = t.data,
-            p = r.useCallback(e => {
-                null != e && (d(e), n(e))
+            m = a.useCallback(e => {
+                null != e && (o(e), n(e))
             }, [n]);
         return (0, l.jsx)("div", {
-            className: a.QB,
+            className: r.QB,
             children: (0, l.jsx)(i.l6P, {
                 label: u,
-                value: o,
+                value: d,
                 required: t.should_submit_data,
-                onSelectionChange: p,
-                options: m,
+                onSelectionChange: m,
+                options: _,
                 selectionMode: "single",
                 fullWidth: !0
             })
         }, c)
     },
-    o = e => {
+    d = e => {
         let {
             elements: t,
             onChange: n,
-            state: r
+            state: a
         } = e, i = t.map(e => {
-            var t, i;
-            let a = e.name;
+            let t = e.name;
             return (0, l.jsx)(s, {
                 element: e,
-                initialOption: null != (t = null == r || null == (i = r[a]) ? void 0 : i.value) ? t : void 0,
-                onChange: e => n(a, e)
-            }, a)
+                initialOption: a?.[t]?.value ?? void 0,
+                onChange: e => n(t, e)
+            }, t)
         });
         return (0, l.jsx)("div", {
             children: i

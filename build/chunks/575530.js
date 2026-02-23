@@ -1,29 +1,28 @@
 /** chunk id: 575530, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
-}), n(896048);
-var i = n(627968);
-n(64700);
-var r = n(311907),
-    l = n(528772),
+    A: () => p
+});
+var i = n(627968),
+    s = n(64700),
+    l = n(311907),
+    r = n(528772),
     a = n(944775),
     o = n(927421),
-    s = n(734057),
+    d = n(734057),
     u = n(309010),
     c = n(427603),
-    d = n(302614),
-    h = n(980504),
-    p = n(32160);
-
-function f() {
-    let [e, t] = (0, r.yK)([l.A], () => [l.A.enabled, l.A.keepOpen]), n = (0, r.bG)([u.A], () => u.A.getVoiceChannelId()), f = (0, r.bG)([s.A], () => s.A.getChannel(n), [n]), g = null == f ? void 0 : f.getGuildId();
-    return e && null != f ? (0, i.jsx)(d.A, {
-        className: p.k,
+    h = n(302614),
+    g = n(980504),
+    m = n(32160);
+let p = s.memo(function() {
+    let [e, t] = (0, l.yK)([r.A], () => [r.A.enabled, r.A.keepOpen]), n = (0, l.bG)([u.A], () => u.A.getVoiceChannelId()), s = (0, l.bG)([d.A], () => d.A.getChannel(n), [n]), p = s?.getGuildId();
+    return e && null != s ? (0, i.jsx)(h.A, {
+        className: m.k,
         children: (0, i.jsx)(o.A, {
-            width: h.ed.width,
-            height: h.ed.height,
-            guildId: g,
-            channel: f,
+            width: g.ed.width,
+            height: g.ed.height,
+            guildId: p,
+            channel: s,
             keepOpen: t,
             onClose: function() {
                 let e = (0, c.A)();
@@ -32,4 +31,4 @@ function f() {
             analyticsSource: "overlay"
         })
     }) : null
-}
+})

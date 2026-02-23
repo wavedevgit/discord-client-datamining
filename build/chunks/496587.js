@@ -1,24 +1,24 @@
 /** chunk id: 496587, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => i
+    A: () => s
 });
-var r = n(627968),
-    a = n(376463);
+var a = n(627968),
+    i = n(376463);
 
-function i(e) {
+function s(e) {
     let {
         children: t,
         actions: n
     } = e;
-    return (0, r.jsx)("div", {
-        className: a.Nr,
-        children: (0, r.jsxs)("div", {
-            className: a.FG,
-            children: [t, null != n && (0, r.jsxs)(r.Fragment, {
-                children: [(0, r.jsx)("div", {
-                    className: a.yF
-                }), (0, r.jsx)("div", {
-                    className: a.fH,
+    return (0, a.jsx)("div", {
+        className: i.Nr,
+        children: (0, a.jsxs)("div", {
+            className: i.FG,
+            children: [t, null != n && (0, a.jsxs)(a.Fragment, {
+                children: [(0, a.jsx)("div", {
+                    className: i.yF
+                }), (0, a.jsx)("div", {
+                    className: i.fH,
                     children: n
                 })]
             })]

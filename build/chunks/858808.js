@@ -1,47 +1,47 @@
 /** chunk id: 858808, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => g
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
 var l = n(503698),
-    i = n.n(l),
-    a = n(990078),
-    o = n(397927),
-    s = n(183555),
+    a = n.n(l),
+    s = n(990078),
+    r = n(397927),
+    o = n(183555),
     c = n(735321),
-    u = n(985018),
-    d = n(794118);
+    d = n(985018),
+    u = n(794118);
 
-function f(e) {
+function g(e) {
     let {
         game: t,
         widgetType: n,
         iconSize: l = "refresh_sm",
-        className: f,
-        buttonRef: p,
-        onRemove: g
+        className: g,
+        buttonRef: m,
+        onRemove: x
     } = e, {
-        trackUserProfileEditAction: m
-    } = (0, s.NJ)();
-    return (0, r.jsx)(a.m, {
-        text: u.intl.string(u.t.HUvyDc),
+        trackUserProfileEditAction: f
+    } = (0, o.NJ)();
+    return (0, i.jsx)(s.m, {
+        text: d.intl.string(d.t.HUvyDc),
         ariaHidden: !0,
-        children: (0, r.jsx)(o.DUT, {
-            innerRef: p,
+        children: (0, i.jsx)(r.DUT, {
+            innerRef: m,
             onClick: () => {
-                (0, c.ef)(n, t.applicationId), o.ORC.announce(u.intl.string(u.t["08HmMj"])), m({
+                (0, c.ef)(n, t.applicationId), r.ORC.announce(d.intl.string(d.t["08HmMj"])), f({
                     action: "GAME_REMOVED",
                     gameId: t.applicationId,
                     widgetEdited: n
-                }), null == g || g()
+                }), x?.()
             },
-            "aria-label": u.intl.string(u.t.HUvyDc),
-            className: i()(f, d.v),
-            children: (0, r.jsx)(o.ucK, {
+            "aria-label": d.intl.string(d.t.HUvyDc),
+            className: a()(g, u.v),
+            children: (0, i.jsx)(r.ucK, {
                 size: l,
-                className: d.K,
-                color: o.LU0.colors.ICON_FEEDBACK_CRITICAL
+                className: u.K,
+                color: r.LU0.colors.ICON_FEEDBACK_CRITICAL
             })
         })
     })

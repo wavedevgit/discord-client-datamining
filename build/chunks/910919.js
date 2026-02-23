@@ -1,39 +1,39 @@
 /** chunk id: 910919, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => o
+    A: () => r
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(414626),
+var s = n(414626),
     l = n(243056);
-let o = function(e) {
+let r = function(e) {
     let {
         formField: t,
         index: n,
-        isDragEnabled: o,
-        isDropHovered: c,
-        onDrop: s,
-        onEdit: a,
-        onRemove: d,
+        isDragEnabled: r,
+        isDropHovered: a,
+        onDrop: c,
+        onEdit: d,
+        onRemove: o,
         canRemove: u,
-        actionsLocation: f,
-        fieldStyle: j
+        actionsLocation: x,
+        fieldStyle: m
     } = e, {
-        label: p
+        label: h
     } = t;
-    return (0, r.jsx)(l.A, {
+    return (0, i.jsx)(l.A, {
         field: t,
         index: n,
-        isDragEnabled: o,
-        isDropHovered: c,
-        onDrop: s,
-        onEdit: a,
-        onRemove: d,
-        title: p,
+        isDragEnabled: r,
+        isDropHovered: a,
+        onDrop: c,
+        onEdit: d,
+        onRemove: o,
+        title: h,
         canRemove: u,
-        actionsLocation: f,
-        fieldStyle: j,
-        children: (0, r.jsx)(i.mR, {
+        actionsLocation: x,
+        fieldStyle: m,
+        children: (0, i.jsx)(s.mR, {
             field: t,
             value: void 0,
             disabled: !1

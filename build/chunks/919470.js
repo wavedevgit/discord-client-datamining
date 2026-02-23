@@ -1,163 +1,124 @@
-/** chunk id: 919470, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    A: () => g
+/** chunk id: 919470, original params: e,t,l (module,exports,require) **/
+l.d(t, {
+    A: () => m
 });
-var r = n(627968),
-    i = n(64700),
-    a = n(827734),
-    o = n(116833),
-    s = n(397927),
-    l = n(301679),
-    c = n(149757),
-    u = n(788868),
-    d = n(985018);
-
-function f(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-
-function p(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            f(e, t, n[t])
-        })
-    }
-    return e
-}
-
-function _(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-        var r = Object.getOwnPropertySymbols(e);
-        t && (r = r.filter(function(t) {
-            return Object.getOwnPropertyDescriptor(e, t).enumerable
-        })), n.push.apply(n, r)
-    }
-    return n
-}
-
-function h(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-let m = {
+var a = l(627968),
+    n = l(64700),
+    r = l(827734),
+    i = l(116833),
+    s = l(397927),
+    o = l(301679),
+    u = l(149757),
+    c = l(788868),
+    d = l(985018);
+let p = {
         bronze: {
             type: "custom",
-            start: a.A.colors.EXPRESSIVE_GRADIENT_TENURE_BADGE_BRONZE_START,
-            end: a.A.colors.EXPRESSIVE_GRADIENT_TENURE_BADGE_BRONZE_END
+            start: r.A.colors.EXPRESSIVE_GRADIENT_TENURE_BADGE_BRONZE_START,
+            end: r.A.colors.EXPRESSIVE_GRADIENT_TENURE_BADGE_BRONZE_END
         },
         silver: {
             type: "custom",
-            start: a.A.colors.EXPRESSIVE_GRADIENT_TENURE_BADGE_SILVER_START,
-            end: a.A.colors.EXPRESSIVE_GRADIENT_TENURE_BADGE_SILVER_END
+            start: r.A.colors.EXPRESSIVE_GRADIENT_TENURE_BADGE_SILVER_START,
+            end: r.A.colors.EXPRESSIVE_GRADIENT_TENURE_BADGE_SILVER_END
         },
         gold: {
             type: "custom",
-            start: a.A.colors.EXPRESSIVE_GRADIENT_TENURE_BADGE_GOLD_START,
-            end: a.A.colors.EXPRESSIVE_GRADIENT_TENURE_BADGE_GOLD_END
+            start: r.A.colors.EXPRESSIVE_GRADIENT_TENURE_BADGE_GOLD_START,
+            end: r.A.colors.EXPRESSIVE_GRADIENT_TENURE_BADGE_GOLD_END
         },
         platinum: {
             type: "custom",
-            start: a.A.colors.EXPRESSIVE_GRADIENT_TENURE_BADGE_PLATINUM_START,
-            end: a.A.colors.EXPRESSIVE_GRADIENT_TENURE_BADGE_PLATINUM_END
+            start: r.A.colors.EXPRESSIVE_GRADIENT_TENURE_BADGE_PLATINUM_START,
+            end: r.A.colors.EXPRESSIVE_GRADIENT_TENURE_BADGE_PLATINUM_END
         },
         diamond: {
             type: "custom",
-            start: a.A.colors.EXPRESSIVE_GRADIENT_TENURE_BADGE_DIAMOND_START,
-            end: a.A.colors.EXPRESSIVE_GRADIENT_TENURE_BADGE_DIAMOND_END
+            start: r.A.colors.EXPRESSIVE_GRADIENT_TENURE_BADGE_DIAMOND_START,
+            end: r.A.colors.EXPRESSIVE_GRADIENT_TENURE_BADGE_DIAMOND_END
         },
         emerald: {
             type: "custom",
-            start: a.A.colors.EXPRESSIVE_GRADIENT_TENURE_BADGE_EMERALD_START,
-            end: a.A.colors.EXPRESSIVE_GRADIENT_TENURE_BADGE_EMERALD_END
+            start: r.A.colors.EXPRESSIVE_GRADIENT_TENURE_BADGE_EMERALD_START,
+            end: r.A.colors.EXPRESSIVE_GRADIENT_TENURE_BADGE_EMERALD_END
         },
         ruby: {
             type: "custom",
-            start: a.A.colors.EXPRESSIVE_GRADIENT_TENURE_BADGE_RUBY_START,
-            end: a.A.colors.EXPRESSIVE_GRADIENT_TENURE_BADGE_RUBY_END
+            start: r.A.colors.EXPRESSIVE_GRADIENT_TENURE_BADGE_RUBY_START,
+            end: r.A.colors.EXPRESSIVE_GRADIENT_TENURE_BADGE_RUBY_END
         },
         opal: {
             type: "custom",
-            start: a.A.colors.EXPRESSIVE_GRADIENT_TENURE_BADGE_OPAL_START,
-            end: a.A.colors.EXPRESSIVE_GRADIENT_TENURE_BADGE_OPAL_END
+            start: r.A.colors.EXPRESSIVE_GRADIENT_TENURE_BADGE_OPAL_START,
+            end: r.A.colors.EXPRESSIVE_GRADIENT_TENURE_BADGE_OPAL_END
         }
     },
-    g = e => {
+    m = e => {
         let {
             title: t,
-            body: n,
-            showGraphic: a,
-            showActions: f,
-            badgeId: _,
-            showProgress: g,
-            progressCircleText: E,
-            progressCirclePercent: y,
-            progressCircleUrgency: b,
-            delay: O,
-            size: v,
-            gradientColor: A,
-            estimatedTooltipHeight: I
-        } = e, S = i.useRef(null), T = i.useRef(null), C = i.useMemo(() => ({
-            bronze: u.Ac.PREMIUM_TENURE_1_MONTH,
-            silver: u.Ac.PREMIUM_TENURE_3_MONTH,
-            gold: u.Ac.PREMIUM_TENURE_6_MONTH,
-            platinum: u.Ac.PREMIUM_TENURE_12_MONTH,
-            diamond: u.Ac.PREMIUM_TENURE_24_MONTH,
-            emerald: u.Ac.PREMIUM_TENURE_36_MONTH,
-            ruby: u.Ac.PREMIUM_TENURE_60_MONTH,
-            opal: u.Ac.PREMIUM_TENURE_72_MONTH
-        })[_], [_]), N = null != C ? (0, c.I)(C) : null, w = i.useMemo(() => {
+            body: l,
+            showGraphic: r,
+            showActions: m,
+            badgeId: h,
+            showProgress: x,
+            progressCircleText: b,
+            progressCirclePercent: g,
+            progressCircleUrgency: y,
+            delay: f,
+            size: E,
+            gradientColor: v,
+            estimatedTooltipHeight: S
+        } = e, j = n.useRef(null), T = n.useRef(null), C = n.useMemo(() => ({
+            bronze: c.Ac.PREMIUM_TENURE_1_MONTH,
+            silver: c.Ac.PREMIUM_TENURE_3_MONTH,
+            gold: c.Ac.PREMIUM_TENURE_6_MONTH,
+            platinum: c.Ac.PREMIUM_TENURE_12_MONTH,
+            diamond: c.Ac.PREMIUM_TENURE_24_MONTH,
+            emerald: c.Ac.PREMIUM_TENURE_36_MONTH,
+            ruby: c.Ac.PREMIUM_TENURE_60_MONTH,
+            opal: c.Ac.PREMIUM_TENURE_72_MONTH
+        })[h], [h]), P = null != C ? (0, u.I)(C).standard : null, R = n.useMemo(() => {
             if (null == C) return "";
-            let e = u.VD[C];
+            let e = c.VD[C];
             return (d.intl.string(d.t.lG6a5x) + " " + d.intl.string(e.nameUnformatted)).toLocaleUpperCase()
-        }, [C]), R = i.useMemo(() => {
-            if (!a || null == N) return;
-            let e = g ? {
-                progressCircleText: E,
-                progressCirclePercent: y,
-                progressCircleUrgency: b
+        }, [C]), A = n.useMemo(() => {
+            if (!r || null == P) return;
+            let e = x ? {
+                progressCircleText: b,
+                progressCirclePercent: g,
+                progressCircleUrgency: y
             } : {};
             return {
                 type: "dynamic",
-                component: o.DynamicGraphicComponent.BADGE_IMAGE_WITH_PROGRESS_CIRCLE,
+                component: i.DynamicGraphicComponent.BADGE_IMAGE_WITH_PROGRESS_CIRCLE,
                 aspectRatio: "6/4",
-                props: p({
-                    src: N,
-                    alt: w
-                }, e)
+                props: {
+                    src: P,
+                    alt: R,
+                    ...e
+                }
             }
-        }, [a, N, w, g, E, y, b]), P = {
+        }, [r, P, R, x, b, g, y]), _ = {
             title: t,
-            body: n,
-            graphic: R,
-            actions: i.useMemo(() => {
-                if (f) return [{
+            body: l,
+            graphic: A,
+            actions: n.useMemo(() => {
+                if (m) return [{
                     text: "Got it",
                     variant: "primary"
                 }]
-            }, [f]),
-            delay: O,
-            size: v,
-            gradientColor: i.useMemo(() => "string" == typeof A && A in m ? m[A] : A, [A]),
-            estimatedTooltipHeight: I
+            }, [m]),
+            delay: f,
+            size: E,
+            gradientColor: n.useMemo(() => "string" == typeof v && v in p ? p[v] : v, [v]),
+            estimatedTooltipHeight: S
         };
-        return (0, r.jsxs)("div", {
-            children: [(0, r.jsx)(s.Text, {
+        return (0, a.jsxs)("div", {
+            children: [(0, a.jsx)(s.Text, {
                 variant: "text-md/normal",
                 color: "text-muted",
                 children: "Hover or focus these buttons."
-            }), (0, r.jsxs)("div", {
+            }), (0, a.jsxs)("div", {
                 style: {
                     display: "flex",
                     justifyContent: "space-between",
@@ -166,23 +127,23 @@ let m = {
                     width: "100%",
                     marginTop: "200px"
                 },
-                children: [(0, r.jsx)(l.L, h(p({
-                    targetElementRef: S
-                }, P), {
-                    children: (0, r.jsx)(s.Button, {
-                        buttonRef: S,
+                children: [(0, a.jsx)(o.L, {
+                    targetElementRef: j,
+                    ..._,
+                    children: (0, a.jsx)(s.Button, {
+                        buttonRef: j,
                         variant: "primary",
                         text: "Left"
                     })
-                })), (0, r.jsx)(l.L, h(p({
-                    targetElementRef: T
-                }, P), {
-                    children: (0, r.jsx)(s.Button, {
+                }), (0, a.jsx)(o.L, {
+                    targetElementRef: T,
+                    ..._,
+                    children: (0, a.jsx)(s.Button, {
                         buttonRef: T,
                         variant: "primary",
                         text: "Right"
                     })
-                }))]
+                })]
             })]
         })
     }

@@ -1,44 +1,45 @@
 /** chunk id: 377045, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => f
+    A: () => g
 });
-var r = n(627968),
-    l = n(64700),
-    i = n(607399),
-    s = n(311907),
+var i = n(627968),
+    s = n(64700),
+    l = n(607399),
+    r = n(311907),
     a = n(397927),
     o = n(58736),
     c = n(353202),
-    u = n(544028),
-    d = n(967198),
-    p = n(652215),
-    h = n(985018),
-    g = n(70461);
+    d = n(544028),
+    u = n(967198),
+    h = n(652215),
+    A = n(985018),
+    p = n(70461);
 
-function f(e) {
+function g(e) {
     let t, {
-        channelId: f
+        channelId: g
     } = e;
-    l.useEffect(() => {
-        c.A.loadThread(f)
+    s.useEffect(() => {
+        c.A.loadThread(g)
     });
-    let m = (0, s.bG)([d.A], () => d.A.getGuildId()) === p.YYv,
-        b = (0, s.bG)([u.A], () => u.A.theme);
-    return t = m ? (0, r.jsx)(a.SGT, {
-        note: h.intl.string(h.t["D5SN5/"]),
-        children: h.intl.string(h.t.xVTAdb)
-    }) : null != f ? (0, r.jsx)(a.y$y, {
+    let m = (0, r.bG)([u.A], () => u.A.getGuildId()) === h.YYv,
+        _ = (0, r.bG)([d.A], () => d.A.theme);
+    return t = m ? (0, i.jsx)(a.SGT, {
+        note: A.intl.string(A.t["D5SN5/"]),
+        children: A.intl.string(A.t.xVTAdb)
+    }) : null != g ? (0, i.jsx)(a.y$y, {
         type: a.y$y.Type.SPINNING_CIRCLE
-    }) : (0, r.jsx)(a.SGT, {
-        note: h.intl.string(h.t["LTr+x9"]),
-        children: h.intl.string(h.t.ai6Lbr)
-    }), (0, r.jsxs)("div", {
-        className: g.j,
-        children: [i.Fr && (0, r.jsx)(o.Ay, {
+    }) : (0, i.jsx)(a.SGT, {
+        note: A.intl.string(A.t["LTr+x9"]),
+        children: A.intl.string(A.t.ai6Lbr)
+    }), (0, i.jsxs)("div", {
+        className: p.j,
+        children: [l.Fr && (0, i.jsx)(o.Ay, {
             children: null
-        }), (0, r.jsxs)(a.ppr, {
-            theme: b,
-            children: [(0, r.jsx)(a.G8R, {
+        }), (0, i.jsxs)(a.ppr, {
+            theme: _,
+            children: [(0, i.jsx)(a.G8R, {
                 darkSrc: m ? n(556708) : n(355937),
                 lightSrc: m ? n(828140) : n(332327),
                 width: 272,

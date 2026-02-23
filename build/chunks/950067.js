@@ -1,178 +1,142 @@
 /** chunk id: 950067, original params: e,t,n (module,exports,require) **/
-let r;
+let i;
 n.d(t, {
-    A: () => w
-}), n(896048), n(264879);
-var i = n(627968);
+    A: () => L
+});
+var r = n(627968);
 n(64700);
 var l = n(397927),
     a = n(73153),
     s = n(272355),
     o = n(323073),
-    c = n(315982),
-    u = n(202384),
-    d = n(709977),
-    p = n(14509),
+    d = n(315982),
+    c = n(202384),
+    u = n(709977),
+    A = n(14509),
     h = n(894778),
-    f = n(447696),
-    g = n(684407),
-    m = n(919638),
-    A = n(71393),
-    _ = n(967198),
-    b = n(287809),
-    E = n(403362),
-    O = n(723702),
-    y = n(942614),
-    I = n(426620),
-    v = n(771016),
-    S = n(994277),
-    C = n(652215);
+    _ = n(447696),
+    m = n(684407),
+    p = n(919638),
+    g = n(71393),
+    E = n(967198),
+    I = n(287809),
+    f = n(403362),
+    C = n(723702),
+    T = n(942614),
+    N = n(426620),
+    S = n(771016),
+    x = n(994277),
+    v = n(652215);
 n(436317);
-var N = n(315290);
+var y = n(315290);
 
-function T(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = r
-        })
-    }
-    return e
+function b() {
+    null != i && (0, l.OoC)(i)
 }
-
-function j(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
-        }
-        return n
-    })(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-
-function x() {
-    null != r && (0, l.OoC)(r)
-}
-class P extends s.A {
+class O extends s.A {
     _initialize() {
-        a.h.subscribe("CONNECTION_OPEN", this.handleConnectionOpen), a.h.subscribe("LOGOUT", x)
+        a.h.subscribe("CONNECTION_OPEN", this.handleConnectionOpen), a.h.subscribe("LOGOUT", b)
     }
     _terminate() {
-        a.h.unsubscribe("CONNECTION_OPEN", this.handleConnectionOpen), a.h.unsubscribe("LOGOUT", x)
+        a.h.unsubscribe("CONNECTION_OPEN", this.handleConnectionOpen), a.h.unsubscribe("LOGOUT", b)
     }
     handleConnectionOpen() {
         var e;
-        let t, a = I.A.getType();
+        let t, a = N.A.getType();
         if (null == a) return;
         switch (a) {
-            case v.zY.INVITE_UNCLAIMED:
-                h.A.flowStart(N.do.INVITE, N.ju.NUF_STARTED);
+            case S.zY.INVITE_UNCLAIMED:
+                h.A.flowStart(y.do.INVITE, y.ju.NUF_STARTED);
                 break;
-            case v.zY.ORGANIC_REGISTERED:
-                h.A.flowStart(N.do.ORGANIC, N.ju.NUF_STARTED);
+            case S.zY.ORGANIC_REGISTERED:
+                h.A.flowStart(y.do.ORGANIC, y.ju.NUF_STARTED);
                 break;
-            case v.zY.MARKETING_UNCLAIMED:
-                h.A.flowStart(N.do.ORGANIC_MARKETING, N.ju.NUF_STARTED)
+            case S.zY.MARKETING_UNCLAIMED:
+                h.A.flowStart(y.do.ORGANIC_MARKETING, y.ju.NUF_STARTED)
         }
         let s = !1,
-            x = _.A.getGuildId();
-        if (a === v.zY.INVITE_UNCLAIMED) {
-            let e = A.A.getGuild(x);
-            null != e && (0, d.Qd)(e) && (s = !0, (0, f.Fy)(e.id))
+            b = E.A.getGuildId();
+        if (a === S.zY.INVITE_UNCLAIMED) {
+            let e = g.A.getGuild(b);
+            null != e && (0, u.Qd)(e) && (s = !0, (0, _.Fy)(e.id))
         }
-        let P = () => 0 === m.A.totalGuilds && !O.isPlatformEmbedded,
-            w = o.xq();
+        let O = () => 0 === p.A.totalGuilds && !C.isPlatformEmbedded,
+            L = o.xq();
         e = [{
             key: "Unified NUF Modal",
             open: async function(e) {
                 let t = e => {
                     switch (e) {
-                        case S.i.AGE_GATE:
-                            h.A.flowStep(N.do.ANY, N.ju.AGE_GATE);
+                        case x.i.AGE_GATE:
+                            h.A.flowStep(y.do.ANY, y.ju.AGE_GATE);
                             break;
-                        case S.i.CHOOSE_TEMPLATE:
-                            h.A.flowStep(N.do.ANY, N.jC.GUILD_TEMPLATES);
+                        case x.i.CHOOSE_TEMPLATE:
+                            h.A.flowStep(y.do.ANY, y.jC.GUILD_TEMPLATES);
                             break;
-                        case S.i.CUSTOMIZE_GUILD:
-                            h.A.flowStep(N.do.ANY, N.jC.GUILD_CREATE);
+                        case x.i.CUSTOMIZE_GUILD:
+                            h.A.flowStep(y.do.ANY, y.jC.GUILD_CREATE);
                             break;
-                        case S.i.CHANNEL_PROMPT:
-                            h.A.flowStep(N.do.ANY, N.jC.CHANNEL_PROMPT);
+                        case x.i.CHANNEL_PROMPT:
+                            h.A.flowStep(y.do.ANY, y.jC.CHANNEL_PROMPT);
                             break;
-                        case S.i.JOIN_GUILD:
-                            h.A.flowStep(N.do.ANY, N.jC.JOIN_GUILD);
+                        case x.i.JOIN_GUILD:
+                            h.A.flowStep(y.do.ANY, y.jC.JOIN_GUILD);
                             break;
-                        case S.i.CREATION_INTENT:
-                            h.A.flowStep(N.do.ANY, N.jC.CREATION_INTENT);
+                        case x.i.CREATION_INTENT:
+                            h.A.flowStep(y.do.ANY, y.jC.CREATION_INTENT);
                             break;
-                        case S.i.COMPLETE:
-                            h.A.flowStep(N.do.ANY, N.jC.SUCCESS);
+                        case x.i.COMPLETE:
+                            h.A.flowStep(y.do.ANY, y.jC.SUCCESS);
                             break;
                         case null:
                             break;
                         default:
-                            E.xb(e)
+                            f.xb(e)
                     }
                 };
-                r = await (0, l.mMO)(async () => {
+                i = await (0, l.mMO)(async () => {
                     let {
                         default: e
                     } = await Promise.all([n.e("86746"), n.e("81890")]).then(n.bind(n, 218318));
-                    return n => (0, i.jsx)(e, j(T({}, n), {
+                    return n => (0, r.jsx)(e, {
+                        ...n,
                         onSlideChange: t
-                    }))
+                    })
                 }, {
-                    onCloseRequest: C.tEg,
+                    onCloseRequest: v.tEg,
                     onCloseCallback: e,
-                    modalKey: r
+                    modalKey: i
                 })
             },
-            predicate: () => P() && !0
+            predicate: () => O() && !0
         }, {
             key: "New User Age Gate",
-            open: c.v,
-            predicate: () => w && !P() && !0
+            open: d.v,
+            predicate: () => L && !O() && !0
         }, {
             key: "Claim Account Modal",
-            open: e => c.R(O.isPlatformEmbedded, e),
-            predicate: () => {
-                var e;
-                return !s && null != b.default.getCurrentUser() && !(null == (e = b.default.getCurrentUser()) ? void 0 : e.isClaimed()) && !(0, p._9)()
-            }
+            open: e => d.R(C.isPlatformEmbedded, e),
+            predicate: () => !s && null != I.default.getCurrentUser() && !I.default.getCurrentUser()?.isClaimed() && !(0, A._9)()
         }, {
             key: "Verification Gate with Claim Account",
-            open: e => (0, u.Ze)(x, null != e ? e : void 0),
-            predicate: () => {
-                var e;
-                return s && !(null == (e = b.default.getCurrentUser()) ? void 0 : e.isClaimed()) && !0
-            }
+            open: e => (0, c.Ze)(b, e ?? void 0),
+            predicate: () => s && !I.default.getCurrentUser()?.isClaimed() && !0
         }, {
             key: "Guild Welcome Modal",
             open: e => (0, l.mMO)(async () => {
                 let {
                     default: e
                 } = await n.e("98063").then(n.bind(n, 143154));
-                return t => (0, i.jsx)(e, j(T({}, t), {
-                    guildId: x
-                }))
+                return t => (0, r.jsx)(e, {
+                    ...t,
+                    guildId: b
+                })
             }, {
                 onCloseCallback: e
             }),
-            predicate: () => null != x && null != g.A.get(x) && g.A.get(x) !== g.E
+            predicate: () => null != b && null != m.A.get(b) && m.A.get(b) !== m.E
         }], t = () => {
-            y.D(), h.A.flowStep(N.do.ANY, N.ju.NUF_COMPLETE, !0)
+            T.D(), h.A.flowStep(y.do.ANY, y.ju.NUF_COMPLETE, !0)
         }, [...e].reverse().forEach(e => {
             let n = t;
             t = () => {
@@ -181,4 +145,4 @@ class P extends s.A {
         }), t()
     }
 }
-let w = new P
+let L = new O

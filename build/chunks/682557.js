@@ -1,38 +1,39 @@
 /** chunk id: 682557, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => s
+    A: () => r
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var l = n(397927),
-    i = n(283354);
-let s = e => {
+var s = n(397927),
+    l = n(283354);
+let r = e => {
     let {
         entry: t,
         hideEditButton: n,
-        children: s,
+        children: r,
         onRequestOpen: a,
         onRequestClose: o,
         targetElementRef: c
     } = e;
-    return (0, r.jsx)(l.YNO, {
+    return (0, i.jsx)(s.YNO, {
         targetElementRef: c,
         onRequestOpen: a,
         onRequestClose: o,
-        animation: l.YNO.Animation.NONE,
+        animation: s.YNO.Animation.NONE,
         position: "bottom",
         spacing: 4,
         align: "right",
         renderPopout: e => {
             let {
-                closePopout: l
+                closePopout: s
             } = e;
-            return (0, r.jsx)(i.default, {
+            return (0, i.jsx)(l.default, {
                 entry: t,
-                closePopout: l,
+                closePopout: s,
                 hideEditButton: n
             })
         },
-        children: s
+        children: r
     })
 }

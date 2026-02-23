@@ -1,85 +1,83 @@
 /** chunk id: 912878, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => O
-}), n(896048);
+    A: () => y
+});
 var a = n(627968),
-    l = n(64700),
-    r = n(503698),
-    i = n.n(r),
-    s = n(253506),
+    i = n(64700),
+    s = n(503698),
+    l = n.n(s),
+    r = n(253506),
     o = n(665260),
-    c = n(311907),
-    d = n(397927),
+    d = n(311907),
+    c = n(397927),
     u = n(308528),
     m = n(571694),
-    p = n(47167),
-    h = n(704844),
-    x = n(734057),
+    h = n(47167),
+    x = n(704844),
+    p = n(734057),
     g = n(994500),
-    f = n(287809),
-    b = n(645959),
-    v = n(263834),
-    j = n(865116),
-    _ = n(716371),
-    y = n(701940),
+    _ = n(287809),
+    f = n(645959),
+    b = n(263834),
+    v = n(865116),
+    j = n(716371),
+    C = n(701940),
     A = n(661251);
 
-function C() {
-    var e;
-    let t = (0, c.yK)([b.A], () => b.A.getSortedChannels()[1]),
-        [n, r] = l.useState(t.length > 0 ? t[0].channelId : void 0),
+function T() {
+    let e = (0, d.yK)([f.default], () => f.default.getSortedChannels()[1]),
+        [t, n] = i.useState(e.length > 0 ? e[0].channelId : void 0),
         {
-            selectedChannel: i,
-            options: u
-        } = (0, c.cf)([x.A, f.default, g.A], () => ({
-            selectedChannel: x.A.getChannel(n),
-            options: t.map(e => {
-                let t = x.A.getChannel(e.channelId);
+            selectedChannel: s,
+            options: l
+        } = (0, d.cf)([p.A, _.default, g.A], () => ({
+            selectedChannel: p.A.getChannel(t),
+            options: e.map(e => {
+                let t = p.A.getChannel(e.channelId);
                 return {
                     id: e.channelId,
                     value: e.channelId,
-                    label: null != t ? (0, p.m1)(t, f.default, g.A) : e.channelId,
-                    leading: null != t ? (0, a.jsx)(d.euF, {
+                    label: null != t ? (0, h.m1)(t, _.default, g.A) : e.channelId,
+                    leading: null != t ? (0, a.jsx)(c.euF, {
                         src: (0, m.Y)(t),
                         "aria-hidden": !0,
-                        size: d._3J.SIZE_16
+                        size: c._3J.SIZE_16
                     }) : void 0
                 }
             })
         })),
-        v = l.useCallback(() => {
-            var e;
-            if (null == i || !i.isPrivate()) return;
-            let t = (0, o.PQ)(null != (e = i.recipientFlags) ? e : 0, s.o.DISMISSED_IN_GAME_MESSAGE_NUX);
-            h.A.updatePrivateChannelRecipientFlags(i.id, t)
-        }, [i]),
-        j = null != i && !!i.isPrivate() && (0, o.Lt)(null != (e = i.recipientFlags) ? e : 0, s.o.DISMISSED_IN_GAME_MESSAGE_NUX);
+        u = i.useCallback(() => {
+            if (null == s || !s.isPrivate()) return;
+            let e = (0, o.PQ)(s.recipientFlags ?? 0, r.o.DISMISSED_IN_GAME_MESSAGE_NUX);
+            x.A.updatePrivateChannelRecipientFlags(s.id, e)
+        }, [s]),
+        b = !!s?.isPrivate() && (0, o.Lt)(s.recipientFlags ?? 0, r.o.DISMISSED_IN_GAME_MESSAGE_NUX);
     return (0, a.jsxs)("div", {
-        className: y.gs,
-        children: [(0, a.jsx)(d.ZiE, {
+        className: C.gs,
+        children: [(0, a.jsx)(c.ZiE, {
             label: "In-Game NUX Message for DMs",
             selectionMode: "single",
-            options: u,
+            options: l,
             placeholder: "Select DM",
-            value: n,
-            onSelectionChange: r
-        }), (0, a.jsx)(d.Button, {
+            value: t,
+            onSelectionChange: n
+        }), (0, a.jsx)(c.Button, {
             variant: "primary",
             size: "sm",
-            text: j ? "Clear NUX Flag" : "Set NUX Flag",
-            onClick: v,
-            disabled: null == n
+            text: b ? "Clear NUX Flag" : "Set NUX Flag",
+            onClick: u,
+            disabled: null == t
         })]
     })
 }
 
 function S() {
-    let e = l.useCallback(() => {
+    let e = i.useCallback(() => {
         u.A.openPrivateChannel({
-            recipientIds: [_.K]
+            recipientIds: [j.K]
         })
     }, []);
-    return (0, a.jsx)(d.Button, {
+    return (0, a.jsx)(c.Button, {
         variant: "primary",
         size: "sm",
         text: "Open System DM",
@@ -87,24 +85,24 @@ function S() {
     })
 }
 
-function O() {
-    let e = (0, c.bG)([j.Ay], () => j.Ay.allByCategory(j.xW.MESSAGING), [], c.My).map(e => {
+function y() {
+    let e = (0, d.bG)([v.Ay], () => v.Ay.allByCategory(v.xW.MESSAGING), [], d.My).map(e => {
         let [t, n, {
-            label: l
+            label: i
         }] = e;
-        return (0, a.jsx)(d.dOG, {
-            label: l,
+        return (0, a.jsx)(c.dOG, {
+            label: i,
             description: t,
             checked: n,
-            onChange: e => (0, v.L)(t, e)
+            onChange: e => (0, b.L)(t, e)
         }, t)
     });
     return (0, a.jsxs)("div", {
-        className: i()(A.nd, y.nd),
+        className: l()(A.nd, C.nd),
         children: [e, (0, a.jsx)("div", {
-            className: y.yF
-        }), (0, a.jsx)(C, {}), (0, a.jsx)("div", {
-            className: y.yF
+            className: C.yF
+        }), (0, a.jsx)(T, {}), (0, a.jsx)("div", {
+            className: C.yF
         }), (0, a.jsx)(S, {})]
     })
 }

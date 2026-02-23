@@ -1,8 +1,8 @@
 /** chunk id: 483649, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => r
+    A: () => i
 });
-let r = (0, n(600975).C)({
+let i = (0, n(600975).C)({
     kind: "user",
     id: "2023-07_announcement_views",
     label: "Announcement Views",

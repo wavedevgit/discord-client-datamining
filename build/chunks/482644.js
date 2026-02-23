@@ -1,150 +1,125 @@
-/** chunk id: 482644, original params: e,t,n (module,exports,require) **/
+/** chunk id: 482644, original params: e,t,l (module,exports,require) **/
 "use strict";
-n.r(t), n.d(t, {
+l.r(t), l.d(t, {
     baseRules: () => C,
-    customRules: () => N
-}), n(747238), n(896048);
-var r = n(627968),
-    i = n(64700),
-    a = n(503698),
-    o = n.n(a),
-    s = n(791332),
-    l = n.n(s),
-    c = n(397927),
-    u = n(398590),
-    d = n(46054),
-    f = n(976860),
-    p = n(780964),
-    _ = n(840065),
-    h = n(954571),
-    m = n(652215),
-    g = n(559868);
-
-function E(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-
-function y(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            E(e, t, n[t])
-        })
-    }
-    return e
-}
-
-function b(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-        var r = Object.getOwnPropertySymbols(e);
-        t && (r = r.filter(function(t) {
-            return Object.getOwnPropertyDescriptor(e, t).enumerable
-        })), n.push.apply(n, r)
-    }
-    return n
-}
-
-function O(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-let v = l().defaultRules.link,
-    A = {
-        section: m.JJy.SETTINGS_CHANGELOG
-    };
-
-function I() {
-    h.default.track(m.HAw.PREMIUM_PROMOTION_OPENED, {
-        location: A
-    })
-}
-
-function S(e, t) {
-    return null == t ? [] : t.split(" ").map(t => e[t])
-}
-let T = e => {
+    customRules: () => y
+});
+var a = l(627968),
+    n = l(64700),
+    r = l(503698),
+    s = l.n(r),
+    i = l(791332),
+    o = l.n(i),
+    d = l(397927),
+    c = l(398590),
+    u = l(46054),
+    _ = l(976860),
+    m = l(780964),
+    h = l(840065),
+    p = l(954571),
+    g = l(652215),
+    b = l(559868),
+    f = l(60639);
+let x = o().defaultRules.link,
+    k = {
+        section: g.JJy.SETTINGS_CHANGELOG
+    },
+    A = e => {
         let {
             level: t,
-            children: n,
-            className: r = null,
-            styleSheet: a = {}
-        } = e, s = (0, c.$Il)(), l = parseInt(t, 10), u = s + (isNaN(l) ? 1 : l) - 1;
-        return i.createElement("h".concat(u), {
-            className: o()(...S(a, r))
-        }, n)
+            children: l,
+            className: a
+        } = e, r = (0, d.$Il)(), s = parseInt(t, 10), i = isNaN(s) ? 1 : s;
+        return n.createElement(`h${r+i-1}`, {
+            className: a
+        }, l)
     },
-    C = null != d.A ? d.A.defaultRules : null,
-    N = {
+    C = null != u.A ? u.A.defaultRules : null,
+    y = {
         link: {
-            parse(e, t, n) {
-                let r, i = e[2],
-                    a = i.startsWith("https://discordapp.com/nitro") || i.startsWith("https://discord.com/nitro"),
-                    o = i.startsWith("/activities");
-                return r = a ? e => {
-                    I(), (0, _.openUserSettings)(p.X.NITRO_PANEL, {
-                        section: m.nc_.PREMIUM
-                    }), n.changeLog.track(m.HAw.CHANGE_LOG_CTA_CLICKED, {
+            parse(e, t, l) {
+                let a, n = e[2],
+                    r = n.startsWith("https://discordapp.com/nitro") || n.startsWith("https://discord.com/nitro"),
+                    s = n.startsWith("/activities");
+                return a = r ? e => {
+                    p.default.track(g.HAw.PREMIUM_PROMOTION_OPENED, {
+                        location: k
+                    }), (0, h.openUserSettings)(m.X.NITRO_PANEL, {
+                        section: g.nc_.PREMIUM
+                    }), l.changeLog.track(g.HAw.CHANGE_LOG_CTA_CLICKED, {
                         cta_type: "nitro"
-                    }), (0, c.OoC)(g.lb), e.preventDefault()
-                } : o ? e => {
-                    (0, f.pX)(i), n.changeLog.track(m.HAw.CHANGE_LOG_CTA_CLICKED, y({}, h.default.getCampaignParams(i))), (0, u.bz)(), (0, c.OoC)(g.lb), e.preventDefault()
+                    }), (0, d.OoC)(b.lb), e.preventDefault()
+                } : s ? e => {
+                    (0, _.pX)(n), l.changeLog.track(g.HAw.CHANGE_LOG_CTA_CLICKED, {
+                        ...p.default.getCampaignParams(n)
+                    }), (0, c.bz)(), (0, d.OoC)(b.lb), e.preventDefault()
                 } : () => {
-                    n && "function" == typeof n.onLinkClick && n.onLinkClick(i), n.changeLog.track(m.HAw.CHANGE_LOG_CTA_CLICKED, y({
-                        target: i,
-                        cta_type: "inline_link"
-                    }, h.default.getCampaignParams(i)))
-                }, O(y({}, v.parse(e, t, n)), {
-                    callToAction: r
-                })
+                    l && "function" == typeof l.onLinkClick && l.onLinkClick(n), l.changeLog.track(g.HAw.CHANGE_LOG_CTA_CLICKED, {
+                        target: n,
+                        cta_type: "inline_link",
+                        ...p.default.getCampaignParams(n)
+                    })
+                }, {
+                    ...x.parse(e, t, l),
+                    callToAction: a
+                }
             },
-            react: (e, t, n) => (0, r.jsx)(c.MzZ, {
-                href: l().sanitizeUrl(e.target),
+            react: (e, t, l) => (0, a.jsx)(d.MzZ, {
+                href: o().sanitizeUrl(e.target),
                 title: e.title,
                 onClick: e.callToAction,
                 target: "_blank",
                 className: e.callToAction ? "cta" : void 0,
-                children: t(e.content, n)
-            }, n.key)
+                children: t(e.content, l)
+            }, l.key)
         },
         lheading: e => ({
-            react: (t, n, i) => (0, r.jsx)(T, {
-                level: t.level,
-                className: t.className,
-                styleSheet: e,
-                children: n(t.content, i)
-            }, i.key)
+            react: (t, l, n) => {
+                var r;
+                return (0, a.jsx)(A, {
+                    level: t.level,
+                    className: s()(f["heading-md/bold"], ...null == (r = t.className) ? [] : r.split(" ").map(t => e[t])),
+                    children: l(t.content, n)
+                }, n.key)
+            }
         }),
         heading: {
-            react: (e, t, n) => (0, r.jsx)(T, {
+            react: (e, t, l) => (0, a.jsx)(A, {
                 level: e.level,
-                children: t(e.content, n)
-            }, n.key)
+                className: f["heading-md/bold"],
+                children: t(e.content, l)
+            }, l.key)
         },
         image: {
-            react(e, t, i) {
-                let a = n(274516)("./".concat(e.target));
-                return (0, r.jsx)("img", {
+            react(e, t, n) {
+                let r = l(274516)(`./${e.target}`);
+                return (0, a.jsx)("img", {
                     alt: e.alt,
-                    src: a
-                }, i.key)
+                    src: r
+                }, n.key)
             }
         },
         blockQuote: {
-            react: null == C ? void 0 : C.blockQuote.react
+            react: C?.blockQuote.react
         },
-        paragraph: {
-            react: (e, t, n) => (0, r.jsx)("p", {
-                children: t(e.content, n)
+        list: e => ({
+            react(t, l, n) {
+                let r = t.ordered ? "ol" : "ul",
+                    i = t.items.map((t, r) => (0, a.jsx)("li", {
+                        className: s()(f["text-md/normal"], e.listItem),
+                        children: l(t, n)
+                    }, r));
+                return (0, a.jsx)(r, {
+                    className: e.list,
+                    start: t.start,
+                    children: i
+                }, n.key)
+            }
+        }),
+        paragraph: e => ({
+            react: (t, l, n) => (0, a.jsx)("p", {
+                className: s()(f["text-md/normal"], e.paragraph),
+                children: l(t.content, n)
             }, n.key)
-        }
+        })
     }

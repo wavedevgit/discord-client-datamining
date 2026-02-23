@@ -1,104 +1,97 @@
 /** chunk id: 516286, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
-}), n(638769), n(896048);
+    A: () => _
+});
 var a = n(627968),
-    l = n(64700),
-    r = n(397927),
-    i = n(669550),
-    s = n(963935),
+    i = n(64700),
+    s = n(397927),
+    l = n(669550),
+    r = n(963935),
     o = n(921854),
-    c = n(522958),
-    d = n(983078),
+    d = n(522958),
+    c = n(983078),
     u = n(159452);
 
 function m(e) {
-    if (e.type === s.Z6.PANEL && null != e.StronglyDiscouragedCustomComponent || (0, s.nW)(e) && e.type === s.Z6.SIDEBAR_ITEM && e.layout.some(e => (null == e ? void 0 : e.StronglyDiscouragedCustomComponent) != null)) return !0;
-    if ((0, s.nW)(e) && 0 === e.layout.length) {
-        var t, n, a;
-        if (null != (null == (a = e.parent) || null == (n = a.parent) || null == (t = n.getLegacySearchKey) ? void 0 : t.call(n))) return !0
-    }
-    return !1
-}
-
-function p(e) {
-    return !!m(e) || !!(0, s.nW)(e) && e.layout.some(e => p(e))
+    return !!(e.type === r.Z6.PANEL && null != e.StronglyDiscouragedCustomComponent || (0, r.nW)(e) && e.type === r.Z6.SIDEBAR_ITEM && e.layout.some(e => e?.StronglyDiscouragedCustomComponent != null) || (0, r.nW)(e) && 0 === e.layout.length && null != e.parent?.parent?.getLegacySearchKey?.()) || !1
 }
 
 function h(e) {
-    var t;
-    let {
-        setting: n,
-        depth: r,
-        highlightMode: i
-    } = e, s = null == (t = l.useContext(g)) ? void 0 : t.get(n), o = null;
-    return null != s && s.length > 0 && (o = s.sort((e, t) => e.localeCompare(t)).map(e => (0, a.jsx)(h, {
-        setting: e,
-        depth: r + 1,
-        highlightMode: i
-    }, e))), (0, a.jsx)(c.n, {
-        title: n,
-        initExpanded: r <= 2,
-        highlightMode: i,
-        children: o
-    })
+    return !!m(e) || !!(0, r.nW)(e) && e.layout.some(e => h(e))
 }
 
 function x(e) {
     let {
         setting: t,
         depth: n,
-        inheritedHighlightMode: l
-    } = e, r = function(e, t) {
+        highlightMode: s
+    } = e, l = i.useContext(g)?.get(t), r = null;
+    return null != l && l.length > 0 && (r = l.sort((e, t) => e.localeCompare(t)).map(e => (0, a.jsx)(x, {
+        setting: e,
+        depth: n + 1,
+        highlightMode: s
+    }, e))), (0, a.jsx)(d.n, {
+        title: t,
+        initExpanded: n <= 2,
+        highlightMode: s,
+        children: r
+    })
+}
+
+function p(e) {
+    let {
+        setting: t,
+        depth: n,
+        inheritedHighlightMode: i
+    } = e, s = function(e, t) {
         if ("migrated" === t) return "migrated";
         switch (e.type) {
-            case s.Z6.ROOT:
-                return p(e) ? "root" : "migrated-root";
-            case s.Z6.SECTION:
-                return p(e) ? "none" : "migrated";
-            case s.Z6.PANEL:
-            case s.Z6.SIDEBAR_ITEM:
+            case r.Z6.ROOT:
+                return h(e) ? "root" : "migrated-root";
+            case r.Z6.SECTION:
+                return h(e) ? "none" : "migrated";
+            case r.Z6.PANEL:
+            case r.Z6.SIDEBAR_ITEM:
                 return m(e) ? "legacy" : "migrated";
             default:
-                return null != t ? t : "migrated"
+                return t ?? "migrated"
         }
-    }(t, l), i = "migrated" === r ? "migrated" : void 0, o = null;
-    if ((0, s.nW)(t)) {
-        var d, u, g;
-        let e = null == (g = t.parent) || null == (u = g.parent) || null == (d = u.getLegacySearchKey) ? void 0 : d.call(u);
-        0 === t.layout.length && null != e ? o = (0, a.jsx)(h, {
+    }(t, i), l = "migrated" === s ? "migrated" : void 0, o = null;
+    if ((0, r.nW)(t)) {
+        let e = t.parent?.parent?.getLegacySearchKey?.();
+        0 === t.layout.length && null != e ? o = (0, a.jsx)(x, {
             setting: e,
             depth: n + 1,
-            highlightMode: null != i ? i : "legacy"
-        }) : t.layout.length > 0 && (o = t.layout.map(e => (0, a.jsx)(x, {
+            highlightMode: l ?? "legacy"
+        }) : t.layout.length > 0 && (o = t.layout.map(e => (0, a.jsx)(p, {
             setting: e,
             depth: n + 1,
-            inheritedHighlightMode: i
+            inheritedHighlightMode: l
         }, e.key)))
     }
-    return (0, a.jsx)(c.n, {
+    return (0, a.jsx)(d.n, {
         title: t.key,
         initExpanded: n <= 2,
-        highlightMode: r,
+        highlightMode: s,
         children: o
     })
 }
-let g = l.createContext(null);
+let g = i.createContext(null);
 
-function f() {
-    let [e, t] = l.useState(!1), {
+function _() {
+    let [e, t] = i.useState(!1), {
         legacySettingDirectory: n
-    } = (0, d.B)(), {
-        node: s
-    } = (0, i.Ay)(o.D, ""), c = (0, i.KA)();
-    return (0, a.jsxs)(r.nVY, {
+    } = (0, c.B)(), {
+        node: r
+    } = (0, l.Ay)(o.D, ""), d = (0, l.KA)();
+    return (0, a.jsxs)(s.nVY, {
         label: "Settings Tree",
-        children: [(0, a.jsx)(r.dOG, {
+        children: [(0, a.jsx)(s.dOG, {
             label: "Bypass Predicates",
             description: "Forces all migrated settings to be visible.",
-            checked: c,
-            onChange: i.jL
-        }), (0, a.jsx)(r.dOG, {
+            checked: d,
+            onChange: l.jL
+        }), (0, a.jsx)(s.dOG, {
             checked: e,
             onChange: e => t(e),
             label: "Show Legacy Settings Tree"
@@ -106,13 +99,13 @@ function f() {
             value: n,
             children: (0, a.jsxs)("div", {
                 className: u.B2,
-                children: [e && (0, a.jsx)(h, {
+                children: [e && (0, a.jsx)(x, {
                     setting: "root",
                     depth: 1
-                }, "root"), !e && (0, a.jsx)(x, {
-                    setting: s,
+                }, "root"), !e && (0, a.jsx)(p, {
+                    setting: r,
                     depth: 1
-                }, s.key)]
+                }, r.key)]
             })
         })]
     })

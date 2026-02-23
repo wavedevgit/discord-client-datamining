@@ -6,8 +6,8 @@ var n = r(627968);
 r(64700);
 var a = r(311907),
     i = r(412780),
-    l = r(828904),
-    s = r(985018);
+    s = r(828904),
+    l = r(985018);
 let o = a.Ay.connectStores([i.Ay], e => {
     let {
         context: t,
@@ -22,11 +22,11 @@ let o = a.Ay.connectStores([i.Ay], e => {
         context: r,
         index: a
     } = e;
-    return (0, n.jsx)(l.HI, {
+    return (0, n.jsx)(s.HI, {
         streams: t,
         context: r,
         index: a,
-        title: s.intl.string(s.t["3u0gII"]),
+        title: l.intl.string(l.t["3u0gII"]),
         showUserInfo: !1,
         showSimulcastOverride: !1
     })

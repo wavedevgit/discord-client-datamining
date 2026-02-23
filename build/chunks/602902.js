@@ -1,36 +1,36 @@
 /** chunk id: 602902, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    K: () => y
-}), n(321073), n(896048);
-var r = n(627968);
+    K: () => p
+}), n(321073);
+var i = n(627968);
 n(64700);
-var i = n(192308),
-    l = n(397927),
-    a = n(294454),
+var l = n(192308),
+    a = n(397927),
+    r = n(294454),
     s = n(118517),
     o = n(734057),
     c = n(31717),
-    u = n(320501),
-    d = n(954571),
-    p = n(661191),
-    m = n(518960),
-    f = n(372684),
-    g = n(439818),
-    _ = n(399925),
-    h = n(696016),
-    b = n(652215);
-async function y(e, t) {
+    d = n(320501),
+    u = n(954571),
+    m = n(661191),
+    _ = n(518960),
+    A = n(372684),
+    h = n(439818),
+    f = n(399925),
+    E = n(696016),
+    g = n(652215);
+async function p(e, t) {
     let {
-        channelId: y,
-        analyticsLocations: A,
-        messageReference: v
-    } = t, O = o.A.getChannel(y);
-    if (null != O) {
-        if (null != v) {
-            let e = u.A.getMessage(v.channel_id, v.message_id);
+        channelId: p,
+        analyticsLocations: x,
+        messageReference: C
+    } = t, I = o.A.getChannel(p);
+    if (null != I) {
+        if (null != C) {
+            let e = d.A.getMessage(C.channel_id, C.message_id);
             null != e && (0, s.Yf)({
                 message: e,
-                channel: O,
+                channel: I,
                 shouldMention: !1,
                 showMentionToggle: !1
             })
@@ -38,78 +38,49 @@ async function y(e, t) {
         try {
             let t = [],
                 n = [];
-            for (let r of e) {
-                var x;
-                let e = await (0, _.VO)(r),
-                    i = null != (x = r.name) ? x : (0, h.cM)(p.default.extractTimestamp(r.id)),
-                    l = (0, g.A)(i);
-                if (r.type === f.nQ.CLIP || r.type === f.nQ.VOICE_CLIP) {
-                    let i = "".concat("" !== l ? l : "clip", ".mp4");
-                    t.push(new File([e], i, {
+            for (let i of e) {
+                let e = await (0, f.VO)(i),
+                    l = i.name ?? (0, E.cM)(m.default.extractTimestamp(i.id)),
+                    a = (0, h.A)(l);
+                if (i.type === A.nQ.CLIP || i.type === A.nQ.VOICE_CLIP) {
+                    let l = `${""!==a?a:"clip"}.mp4`;
+                    t.push(new File([e], l, {
                         type: "video/mp4"
                     })), n.push({
-                        clip: r
+                        clip: i
                     })
-                } else if (r.type === f.nQ.SCREENSHOT) {
-                    let r = "".concat("" !== l ? l : "screenshot", ".jpeg");
-                    t.push(new File([e], r, {
+                } else if (i.type === A.nQ.SCREENSHOT) {
+                    let i = `${""!==a?a:"screenshot"}.jpeg`;
+                    t.push(new File([e], i, {
                         type: "image/jpeg"
                     })), n.push({})
                 }
-                d.default.track(b.HAw.CLIP_SHARED, {
-                    location_stack: A,
-                    guild_id: O.guild_id,
-                    channel_id: O.id,
-                    channel_type: O.type,
-                    application_id: r.applicationId,
-                    clip_id: r.id
+                u.default.track(g.HAw.CLIP_SHARED, {
+                    location_stack: x,
+                    guild_id: I.guild_id,
+                    channel_id: I.id,
+                    channel_type: I.type,
+                    application_id: i.applicationId,
+                    clip_id: i.id
                 })
-            }(0, m.R)(t, O, c.C.ChannelMessage, {
+            }(0, _.R)(t, I, c.C.ChannelMessage, {
                 filesMetadata: n,
                 origin: "unknown:clip_share"
-            }), i.closeAllModals()
+            }), l.closeAllModals()
         } catch (e) {
-            throw h.nx.error(e), e
+            throw E.nx.error(e), e
         }
-    } else(0, l.mMO)(async () => {
+    } else(0, a.mMO)(async () => {
         let {
             default: t
         } = await Promise.all([n.e("96758"), n.e("43622"), n.e("75838")]).then(n.bind(n, 243258));
-        return n => {
-            var i, l;
-            return (0, r.jsx)(t, (i = function(e) {
-                for (var t = 1; t < arguments.length; t++) {
-                    var n = null != arguments[t] ? arguments[t] : {},
-                        r = Object.keys(n);
-                    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                        return Object.getOwnPropertyDescriptor(n, e).enumerable
-                    }))), r.forEach(function(t) {
-                        var r;
-                        r = n[t], t in e ? Object.defineProperty(e, t, {
-                            value: r,
-                            enumerable: !0,
-                            configurable: !0,
-                            writable: !0
-                        }) : e[t] = r
-                    })
-                }
-                return e
-            }({}, n), l = l = {
-                clips: e,
-                analyticsLocations: A
-            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
-                var n = Object.keys(e);
-                if (Object.getOwnPropertySymbols) {
-                    var r = Object.getOwnPropertySymbols(e);
-                    n.push.apply(n, r)
-                }
-                return n
-            })(Object(l)).forEach(function(e) {
-                Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
-            }), i))
-        }
+        return n => (0, i.jsx)(t, {
+            ...n,
+            clips: e,
+            analyticsLocations: x
+        })
     }, {
         stackingBehavior: "stack",
-        modalKey: a.aU
+        modalKey: r.aU
     })
 }

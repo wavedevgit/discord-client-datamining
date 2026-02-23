@@ -1,152 +1,152 @@
 /** chunk id: 784309, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => C
-}), n(747238), n(896048), n(321073);
+    A: () => S
+}), n(321073);
 var i = n(627968),
-    r = n(64700),
-    l = n(503698),
-    a = n.n(l),
-    s = n(562465),
+    l = n(64700),
+    s = n(503698),
+    a = n.n(s),
+    r = n(562465),
     o = n(451988),
-    c = n(314116),
-    d = n(435371),
+    d = n(314116),
+    c = n(435371),
     u = n(397927),
-    p = n(157559),
-    m = n(282956),
-    g = n(824953),
-    b = n(235986),
-    f = n(342298),
-    h = n(427157),
-    x = n(147925),
-    j = n(486020),
-    O = n(957565),
-    y = n(661191),
-    A = n(427262),
-    v = n(447066),
-    _ = n(652215),
-    N = n(985018),
-    E = n(416337);
+    m = n(157559),
+    g = n(282956),
+    x = n(824953),
+    h = n(235986),
+    p = n(342298),
+    A = n(427157),
+    b = n(147925),
+    _ = n(486020),
+    f = n(957565),
+    N = n(661191),
+    j = n(427262),
+    T = n(447066),
+    v = n(652215),
+    C = n(985018),
+    I = n(416337);
 
-function T(e, t) {
-    return null != t && /^data:/.test(t) ? t : (0, j.ku)({
+function E(e, t) {
+    return null != t && /^data:/.test(t) ? t : (0, _.ku)({
         id: e.id,
         avatar: t,
-        discriminator: _.h3J
+        discriminator: v.h3J
     })
 }
 
-function C(e) {
+function S(e) {
     let {
         id: t,
         webhook: n,
-        editedWebhook: l,
-        channelOptions: j,
-        isExpanded: C,
-        isNew: w,
-        errors: S,
-        onToggleExpand: I
-    } = e, [P, k] = r.useState(!1), [R] = r.useState(new o.Ep);
-    r.useEffect(() => () => R.stop(), [R]);
-    let L = r.useMemo(() => T(n, n.avatar), [n]),
-        D = r.useCallback(() => {
-            let e = "".concat((0, s.TP)(!1)).concat(_.Rsh.WEBHOOK_INTEGRATION(n.id, n.token));
-            (0, O.C)(e)
+        editedWebhook: s,
+        channelOptions: _,
+        isExpanded: S,
+        isNew: y,
+        errors: O,
+        onToggleExpand: w
+    } = e, [R, k] = l.useState(!1), [L] = l.useState(new o.Ep);
+    l.useEffect(() => () => L.stop(), [L]);
+    let M = l.useMemo(() => E(n, n.avatar), [n]),
+        G = l.useCallback(() => {
+            let e = `${(0,r.TP)(!1)}${v.Rsh.WEBHOOK_INTEGRATION(n.id,n.token)}`;
+            (0, f.C)(e)
         }, [n]),
-        M = r.useCallback(() => {
-            (0, c.A)({
-                title: N.intl.formatToPlainString(N.t.QVFjHh, {
+        U = l.useCallback(() => {
+            (0, d.A)({
+                title: C.intl.formatToPlainString(C.t.QVFjHh, {
                     name: n.name
                 }),
-                subtitle: N.intl.format(N.t["rIWe+5"], {
+                subtitle: C.intl.format(C.t["rIWe+5"], {
                     name: n.name
                 }),
-                confirmText: N.intl.string(N.t["W+K1Fs"]),
-                cancelText: N.intl.string(N.t.xNhj0O),
+                confirmText: C.intl.string(C.t["W+K1Fs"]),
+                cancelText: C.intl.string(C.t.xNhj0O),
                 onConfirm: () => {
-                    g.A.delete(n.guild_id, n.id).catch(e => {
+                    x.A.delete(n.guild_id, n.id).catch(e => {
                         let {
                             status: t
                         } = e;
-                        429 === t ? p.A.show({
-                            title: N.intl.string(N.t.N5riYn),
-                            body: N.intl.string(N.t.eAxcCc)
-                        }) : p.A.show({
-                            title: N.intl.string(N.t.N5riYn),
-                            body: N.intl.string(N.t["/4TwKf"])
+                        429 === t ? m.A.show({
+                            title: C.intl.string(C.t.N5riYn),
+                            body: C.intl.string(C.t.eAxcCc)
+                        }) : m.A.show({
+                            title: C.intl.string(C.t.N5riYn),
+                            body: C.intl.string(C.t["/4TwKf"])
                         })
                     })
                 }
             })
         }, [n.guild_id, n.id, n.name]),
-        G = [];
-    null != n.user ? G.push({
+        D = [];
+    null != n.user ? D.push({
         icon: u.O4,
-        text: N.intl.formatToPlainString(N.t["7EcUbr"], {
+        text: C.intl.formatToPlainString(C.t["7EcUbr"], {
             user: (e => {
                 if (null == e) return null;
-                let t = new h.A(e);
-                return A.Ay.getUserTag(t)
+                let t = new A.A(e);
+                return j.Ay.getUserTag(t)
             })(n.user),
-            timestamp: y.default.extractTimestamp(n.id)
+            timestamp: N.default.extractTimestamp(n.id)
         })
-    }) : G.push({
+    }) : D.push({
         icon: u.O4,
-        text: N.intl.formatToPlainString(N.t["7mv59O"], {
-            timestamp: y.default.extractTimestamp(n.id)
+        text: C.intl.formatToPlainString(C.t["7mv59O"], {
+            timestamp: N.default.extractTimestamp(n.id)
         })
     });
-    let U = null;
-    return C && null != l && (U = (0, i.jsxs)("div", {
-        className: E.rf,
+    let P = null;
+    return S && null != s && (P = (0, i.jsxs)("div", {
+        className: I.rf,
         children: [(0, i.jsx)(u.cGx, {
-            className: E.fV
-        }), (0, i.jsxs)(b.A, {
-            children: [(0, i.jsx)(b.A.Child, {
+            className: I.fV
+        }), (0, i.jsxs)(h.A, {
+            children: [(0, i.jsx)(h.A.Child, {
                 shrink: 1,
                 grow: 0,
-                children: (0, i.jsxs)(b.A, {
-                    className: E.R3,
-                    direction: b.A.Direction.VERTICAL,
-                    children: [(0, i.jsx)(f.A, {
-                        image: l.avatar,
+                children: (0, i.jsxs)(h.A, {
+                    className: I.R3,
+                    direction: h.A.Direction.VERTICAL,
+                    children: [(0, i.jsx)(p.A, {
+                        image: s.avatar,
                         onChange: e => {
-                            m.A.updateWebhook({
+                            g.A.updateWebhook({
                                 avatar: e
                             })
                         },
-                        makeURL: e => T(n, e),
-                        imageClassName: E.mr,
+                        makeURL: e => E(n, e),
+                        imageClassName: I.mr,
                         showIcon: !0
-                    }), null != S.avatar && "" !== S.avatar ? (0, i.jsx)(u.Text, {
+                    }), null != O.avatar && "" !== O.avatar ? (0, i.jsx)(u.Text, {
                         color: "text-feedback-critical",
                         variant: "text-sm/normal",
-                        children: S.avatar
+                        children: O.avatar
                     }) : null]
                 })
-            }), (0, i.jsxs)(b.A, {
-                direction: b.A.Direction.VERTICAL,
-                children: [(0, i.jsxs)(b.A, {
-                    children: [(0, i.jsx)(b.A.Child, {
+            }), (0, i.jsxs)(h.A, {
+                direction: h.A.Direction.VERTICAL,
+                children: [(0, i.jsxs)(h.A, {
+                    children: [(0, i.jsx)(h.A.Child, {
                         wrap: !0,
                         basis: "50%",
                         children: (0, i.jsx)(u.ksK, {
-                            label: N.intl.string(N.t.ukdxuo),
-                            value: l.name,
+                            label: C.intl.string(C.t.ukdxuo),
+                            value: s.name,
                             onChange: e => {
-                                m.A.updateWebhook({
+                                g.A.updateWebhook({
                                     name: e
                                 })
                             },
                             maxLength: 80,
-                            error: S.name
+                            error: O.name
                         })
-                    }), (0, i.jsx)(b.A.Child, {
+                    }), (0, i.jsx)(h.A.Child, {
                         basis: "50%",
                         children: (0, i.jsx)("div", {
                             children: (0, i.jsx)(u.ZiE, {
-                                label: N.intl.string(N.t.GK18KJ),
-                                value: l.channel_id,
-                                options: j,
+                                label: C.intl.string(C.t.GK18KJ),
+                                value: s.channel_id,
+                                options: _,
                                 formatOption: e => {
                                     let {
                                         value: t,
@@ -159,31 +159,33 @@ function C(e) {
                                     }
                                 },
                                 onSelectionChange: e => {
-                                    m.A.updateWebhook({
+                                    g.A.updateWebhook({
                                         channelId: e
                                     })
                                 },
-                                placeholder: N.intl.string(N.t.r2ptsz),
+                                placeholder: C.intl.string(C.t.r2ptsz),
                                 selectionMode: "single"
                             })
                         })
                     })]
                 }), (0, i.jsx)(u.cGx, {
-                    className: E.Bd
-                }), (0, i.jsxs)(b.A, {
-                    children: [(0, i.jsx)(d.m_, {
-                        text: N.intl.string(N.t.wwdb3g),
-                        shouldShow: P,
+                    className: I.Bd
+                }), (0, i.jsxs)(h.A, {
+                    children: [(0, i.jsx)(c.m_, {
+                        text: C.intl.string(C.t.wwdb3g),
+                        shouldShow: R,
+                        hideOnClick: !1,
+                        forceOpen: R,
                         children: (0, i.jsx)("div", {
                             "data-button-hoisted-classname-wrapper": !0,
-                            className: E.cL,
+                            className: I.cL,
                             children: (0, i.jsx)(u.Button, {
                                 variant: "secondary",
                                 size: "sm",
-                                text: N.intl.string(N.t.Ae9rUW),
+                                text: C.intl.string(C.t.Ae9rUW),
                                 "aria-label": "",
                                 onClick: () => {
-                                    k(!0), u.ORC.announce(N.intl.string(N.t.wwdb3g)), R.start(1e3, () => k(!1)), D()
+                                    k(!0), u.ORC.announce(C.intl.string(C.t.wwdb3g)), L.start(1e3, () => k(!1)), G()
                                 },
                                 disabled: null == n.token || "" === n.token
                             })
@@ -191,8 +193,8 @@ function C(e) {
                     }), (0, i.jsx)(u.Button, {
                         variant: "critical-secondary",
                         size: "sm",
-                        text: N.intl.string(N.t.jVrUnC),
-                        onClick: M
+                        text: C.intl.string(C.t.jVrUnC),
+                        onClick: U
                     })]
                 })]
             })]
@@ -200,26 +202,26 @@ function C(e) {
     })), (0, i.jsx)(u.ZpM, {
         editable: !0,
         id: t,
-        className: a()(E.Nr, w ? E.U6 : null),
-        children: (0, i.jsxs)(b.A, {
-            direction: b.A.Direction.VERTICAL,
+        className: a()(I.Nr, y ? I.U6 : null),
+        children: (0, i.jsxs)(h.A, {
+            direction: h.A.Direction.VERTICAL,
             children: [(0, i.jsx)(u.DUT, {
-                className: E.wx,
-                "aria-expanded": C,
-                onClick: I,
-                children: (0, i.jsxs)(b.A, {
-                    align: b.A.Align.CENTER,
-                    children: [(0, i.jsx)(v.A, {
+                className: I.wx,
+                "aria-expanded": S,
+                onClick: w,
+                children: (0, i.jsxs)(h.A, {
+                    align: h.A.Align.CENTER,
+                    children: [(0, i.jsx)(T.A, {
                         name: n.name,
-                        imageSrc: L,
-                        details: G
-                    }), (0, i.jsx)(x.A, {
-                        className: E.eO,
-                        expanded: C,
+                        imageSrc: M,
+                        details: D
+                    }), (0, i.jsx)(b.A, {
+                        className: I.eO,
+                        expanded: S,
                         "aria-hidden": !0
                     })]
                 })
-            }), U]
+            }), P]
         })
     })
 }

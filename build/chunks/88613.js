@@ -1,75 +1,74 @@
 /** chunk id: 88613, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => b
-}), n(864466), n(443073);
-var r = n(627968),
-    i = n(64700),
+    A: () => A
+});
+var i = n(627968),
+    s = n(64700),
     l = n(397927),
-    s = n(928348),
+    r = n(928348),
     a = n(53594),
     o = n(979816),
-    c = n(403362),
-    d = n(203498),
+    d = n(403362),
+    c = n(203498),
     u = n(660496),
-    g = n(512122),
-    m = n(5558),
-    p = n(985018),
-    f = n(840701);
+    m = n(512122),
+    g = n(5558),
+    x = n(985018),
+    h = n(840701);
 
-function h(e) {
+function _(e) {
     let {
         title: t,
         subtitle: n,
-        icon: i,
-        page: s
+        icon: s,
+        page: r
     } = e;
-    return (0, r.jsxs)("div", {
-        className: f.Pu,
-        children: [(0, r.jsxs)("div", {
-            className: f.mh,
-            children: [(0, r.jsx)(l.euF, {
-                src: i,
+    return (0, i.jsxs)("div", {
+        className: h.Pu,
+        children: [(0, i.jsxs)("div", {
+            className: h.mh,
+            children: [(0, i.jsx)(l.euF, {
+                src: s,
                 size: l._3J.SIZE_40,
                 "aria-label": t
-            }), (0, r.jsxs)("div", {
-                children: [(0, r.jsx)(l.Heading, {
+            }), (0, i.jsxs)("div", {
+                children: [(0, i.jsx)(l.Heading, {
                     variant: "heading-md/semibold",
                     color: "text-strong",
                     children: t
-                }), (0, r.jsx)(l.Text, {
+                }), (0, i.jsx)(l.Text, {
                     variant: "text-xs/medium",
                     color: "text-default",
                     children: n
                 })]
             })]
-        }), (0, r.jsx)(l.Button, {
+        }), (0, i.jsx)(l.Button, {
             size: "sm",
             variant: "secondary",
-            onClick: () => (0, d.K)(s),
-            text: p.intl.string(p.t.bt75uw)
+            onClick: () => (0, c.K)(r),
+            text: x.intl.string(x.t.bt75uw)
         })]
     })
 }
 
-function b(e) {
+function A(e) {
     let {
         guild: t
     } = e;
-    (0, s.qv)(t.id);
-    let d = (0, a.ws)(t.id),
+    (0, r.qv)(t.id);
+    let c = (0, a.ws)(t.id),
         {
-            rulesByTriggerType: b
-        } = (0, s.wP)(t.id),
+            rulesByTriggerType: A
+        } = (0, r.wP)(t.id),
         {
-            numEnabledRules: x,
-            numRules: j
-        } = i.useMemo(() => {
+            numEnabledRules: p,
+            numRules: f
+        } = s.useMemo(() => {
             let e = 0,
                 t = 0;
-            return null == b || Object.values(d).flat().forEach(n => {
-                var r;
-                let i = null == (r = b[n]) ? void 0 : r.filter(c.Vq);
+            return null == A || Object.values(c).flat().forEach(n => {
+                let i = A[n]?.filter(d.Vq);
                 null == i || 0 === i.length ? t++ : i.forEach(n => {
                     n.enabled && e++, t++
                 })
@@ -77,60 +76,60 @@ function b(e) {
                 numEnabledRules: e,
                 numRules: t
             }
-        }, [d, b]),
-        _ = (0, m.N)(t),
-        O = _[u.C.CAPTCHA_AND_RAID_PROTECTION],
-        v = _[u.C.DM_AND_SPAM_PROTECTION],
-        y = _[u.C.PERMISSIONS],
-        A = (0, o.iI)(t.id);
-    return (0, r.jsxs)("div", {
-        children: [(0, r.jsx)(l.Heading, {
+        }, [c, A]),
+        j = (0, g.N)(t),
+        N = j[u.C.CAPTCHA_AND_RAID_PROTECTION],
+        E = j[u.C.DM_AND_SPAM_PROTECTION],
+        b = j[u.C.PERMISSIONS],
+        T = (0, o.iI)(t.id);
+    return (0, i.jsxs)("div", {
+        children: [(0, i.jsx)(l.Heading, {
             variant: "heading-lg/semibold",
             color: "text-strong",
-            className: f.wx,
-            children: p.intl.string(p.t["0A+VSA"])
-        }), (0, r.jsx)(g.p, {
+            className: h.wx,
+            children: x.intl.string(x.t["0A+VSA"])
+        }), (0, i.jsx)(m.p, {
             guild: t
-        }), (0, r.jsxs)("div", {
-            className: f.Xf,
-            children: [(0, r.jsx)(h, {
+        }), (0, i.jsxs)("div", {
+            className: h.Xf,
+            children: [(0, i.jsx)(_, {
                 icon: n(818774),
-                title: p.intl.string(p.t["53eF5o"]),
-                subtitle: p.intl.formatToPlainString(p.t.TG7NYK, {
-                    enabled: O.filter(e => e.enabled).length,
-                    total: O.length
+                title: x.intl.string(x.t["53eF5o"]),
+                subtitle: x.intl.formatToPlainString(x.t.TG7NYK, {
+                    enabled: N.filter(e => e.enabled).length,
+                    total: N.length
                 }),
                 page: u.C.CAPTCHA_AND_RAID_PROTECTION
-            }), (0, r.jsx)("div", {
-                className: f.yF
-            }), (0, r.jsx)(h, {
+            }), (0, i.jsx)("div", {
+                className: h.yF
+            }), (0, i.jsx)(_, {
                 icon: n(134635),
-                title: p.intl.string(p.t.O0SfFy),
-                subtitle: p.intl.formatToPlainString(p.t.TG7NYK, {
-                    enabled: v.filter(e => e.enabled).length,
-                    total: v.length
+                title: x.intl.string(x.t.O0SfFy),
+                subtitle: x.intl.formatToPlainString(x.t.TG7NYK, {
+                    enabled: E.filter(e => e.enabled).length,
+                    total: E.length
                 }),
                 page: u.C.DM_AND_SPAM_PROTECTION
-            }), (0, r.jsx)("div", {
-                className: f.yF
-            }), A && (0, r.jsxs)(r.Fragment, {
-                children: [(0, r.jsx)(h, {
+            }), (0, i.jsx)("div", {
+                className: h.yF
+            }), T && (0, i.jsxs)(i.Fragment, {
+                children: [(0, i.jsx)(_, {
                     icon: n(34853),
-                    title: p.intl.string(p.t.uRelgx),
-                    subtitle: p.intl.formatToPlainString(p.t.TG7NYK, {
-                        enabled: x,
-                        total: j
+                    title: x.intl.string(x.t.uRelgx),
+                    subtitle: x.intl.formatToPlainString(x.t.TG7NYK, {
+                        enabled: p,
+                        total: f
                     }),
                     page: u.C.AUTOMOD
-                }), (0, r.jsx)("div", {
-                    className: f.yF
+                }), (0, i.jsx)("div", {
+                    className: h.yF
                 })]
-            }), (0, r.jsx)(h, {
+            }), (0, i.jsx)(_, {
                 icon: n(638154),
-                title: p.intl.string(p.t.xrmhRX),
-                subtitle: p.intl.formatToPlainString(p.t.TG7NYK, {
-                    enabled: y.filter(e => e.enabled).length,
-                    total: y.length
+                title: x.intl.string(x.t.xrmhRX),
+                subtitle: x.intl.formatToPlainString(x.t.TG7NYK, {
+                    enabled: b.filter(e => e.enabled).length,
+                    total: b.length
                 }),
                 page: u.C.PERMISSIONS
             })]

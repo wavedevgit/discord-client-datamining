@@ -2,24 +2,24 @@
 n.d(t, {
     A: () => l
 });
-var r = n(73153),
-    i = n(613057);
+var i = n(73153),
+    r = n(613057);
 let l = {
     [n(652215).e$_.SET_SUPPRESS_NOTIFICATIONS]: {
-        scope: i.hj,
+        scope: r.hj,
         handler(e) {
             let {
                 socket: t,
                 args: {
                     suppress_notifications: n,
-                    target_user_id: i
+                    target_user_id: r
                 }
             } = e;
-            r.h.dispatch({
+            i.h.dispatch({
                 type: "SET_RPC_NOTIFICATION_SETTINGS",
                 socketId: t.id,
                 suppressNotifications: n,
-                targetUserId: i
+                targetUserId: r
             })
         }
     }

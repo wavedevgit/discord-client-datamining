@@ -1,23 +1,23 @@
 /** chunk id: 181940, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => i
-}), n(896048), n(492834);
-var r = n(64700),
-    l = n(942975);
+    A: () => l
+});
+var i = n(64700),
+    s = n(942975);
 
-function i(e, t) {
-    let [n, i] = r.useState(!1), [s, a] = r.useState(void 0);
+function l(e, t) {
+    let [n, l] = i.useState(!1), [r, a] = i.useState(void 0);
     return {
         isLoading: n,
-        error: s,
-        onToggle: r.useCallback(n => {
+        error: r,
+        onToggle: i.useCallback(n => {
             if (null == t) return Promise.resolve();
-            let r = n ? l.Qh : l.pz;
-            return i(!0), a(void 0), r(e, t.skuId).catch(e => {
-                var t;
-                throw a(null != (t = e.body.message) ? t : void 0), e
+            let i = n ? s.Qh : s.pz;
+            return l(!0), a(void 0), i(e, t.skuId).catch(e => {
+                throw a(e.body?.message ?? void 0), e
             }).finally(() => {
-                i(!1)
+                l(!1)
             })
         }, [e, t])
     }

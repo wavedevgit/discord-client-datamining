@@ -1,23 +1,23 @@
 /** chunk id: 878956, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => s
+    A: () => d
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(397927),
-    l = n(965407),
-    a = n(249700),
-    o = n(652215),
-    c = n(985018);
+var l = n(397927),
+    a = n(965407),
+    r = n(249700),
+    s = n(652215),
+    o = n(985018);
 
-function s(e, t) {
-    return e.state !== o.cmJ.SEND_FAILED ? null : (0, r.jsx)(i.Drp, {
+function d(e, t) {
+    return e.state !== s.cmJ.SEND_FAILED ? null : (0, i.jsx)(l.Drp, {
         id: "resend",
-        label: c.intl.string(c.t.lXHojr),
+        label: o.intl.string(o.t.lXHojr),
         leadingAccessory: {
             type: "icon",
-            icon: i.fNY
+            icon: l.fNY
         },
-        action: () => (0, a.A)(t, e, void 0, l.A.getOptions(e.id))
+        action: () => (0, r.A)(t, e, void 0, a.A.getOptions(e.id))
     })
 }

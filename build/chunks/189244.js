@@ -1,106 +1,105 @@
 /** chunk id: 189244, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => b
+    A: () => f
 });
 var a = n(627968);
 n(64700);
-var l = n(311907),
-    r = n(873298),
-    i = n(397927),
-    s = n(775602),
+var i = n(311907),
+    s = n(873298),
+    l = n(397927),
+    r = n(775602),
     o = n(590180),
-    c = n(4227),
-    d = n(993408),
+    d = n(4227),
+    c = n(993408),
     u = n(841702),
     m = n(544028),
-    p = n(253932),
-    h = n(287809),
-    x = n(850730),
+    h = n(253932),
+    x = n(287809),
+    p = n(850730),
     g = n(385803),
-    f = n(607335);
+    _ = n(607335);
 
-function b() {
-    var e, t, n, b, v, j, _, y;
+function f() {
     (0, u.Bf)();
-    let A = (0, l.bG)([h.default], () => h.default.getCurrentUser()),
-        C = p.eh.useSetting(),
-        S = (0, l.bG)([m.A], () => m.A.theme),
-        O = C.backgroundGradientPresetId,
-        T = (0, l.bG)([c.A], () => c.A.purchases),
-        E = (0, d.x9)(T),
-        N = (0, d.$W)(T),
-        w = null == A || null == (v = A.avatarDecoration) ? void 0 : v.skuId,
-        I = null == A || null == (_ = A.collectibles) || null == (j = _.nameplate) ? void 0 : j.skuId,
-        k = null != w && null != (e = E.find(e => e.skuId === w)) ? e : null,
-        P = null != I && null != (t = N.find(e => e.skuId === I)) ? t : null,
-        R = (0, l.bG)([o.A], () => o.A.getProduct(null == k ? void 0 : k.skuId)),
-        D = (0, l.bG)([o.A], () => o.A.getProduct(null == P ? void 0 : P.skuId)),
-        M = (0, l.bG)([s.A], () => s.A.fontSize),
-        L = (0, l.bG)([s.A], () => s.A.messageGroupSpacing),
-        U = p.Xi.useSetting();
-    return (0, x.DB)(), (0, a.jsxs)("div", {
-        className: f.kL,
+    let e = (0, i.bG)([x.default], () => x.default.getCurrentUser()),
+        t = h.eh.useSetting(),
+        n = (0, i.bG)([m.A], () => m.A.theme),
+        f = t.backgroundGradientPresetId,
+        b = (0, i.bG)([d.A], () => d.A.purchases),
+        v = (0, c.x9)(b),
+        j = (0, c.$W)(b),
+        C = e?.avatarDecoration?.skuId,
+        A = e?.collectibles?.nameplate?.skuId,
+        T = null != C ? v.find(e => e.skuId === C) ?? null : null,
+        S = null != A ? j.find(e => e.skuId === A) ?? null : null,
+        y = (0, i.bG)([o.A], () => o.A.getProduct(T?.skuId)),
+        E = (0, i.bG)([o.A], () => o.A.getProduct(S?.skuId)),
+        N = (0, i.bG)([r.A], () => r.A.fontSize),
+        I = (0, i.bG)([r.A], () => r.A.messageGroupSpacing),
+        k = h.Xi.useSetting();
+    return (0, p.DB)(), (0, a.jsxs)("div", {
+        className: _.kL,
         children: [(0, a.jsxs)("div", {
-            children: [(0, a.jsx)(i.Heading, {
+            children: [(0, a.jsx)(l.Heading, {
                 variant: "heading-lg/semibold",
                 children: "Randomize customization settings"
-            }), (0, a.jsx)(i.Text, {
+            }), (0, a.jsx)(l.Text, {
                 variant: "text-md/normal",
                 children: "Randomly sets appearance-related settings. Leaving this tab or closing devtools will reset to your initial state."
-            }), (0, a.jsx)(i.Button, {
+            }), (0, a.jsx)(l.Button, {
                 variant: "primary",
                 size: "sm",
                 text: "Randomize Theme",
-                onClick: x.t0
-            }), (0, a.jsx)(i.Button, {
+                onClick: p.t0
+            }), (0, a.jsx)(l.Button, {
                 variant: "primary",
                 size: "sm",
                 text: "Randomize Collectibles",
-                onClick: x.ZL
-            }), (0, a.jsx)(i.Button, {
+                onClick: p.ZL
+            }), (0, a.jsx)(l.Button, {
                 variant: "primary",
                 size: "sm",
                 text: "Randomize Appearance Settings",
-                onClick: x.ln
+                onClick: p.ln
             })]
         }), (0, a.jsxs)("div", {
-            children: [(0, a.jsx)(i.Heading, {
+            children: [(0, a.jsx)(l.Heading, {
                 variant: "heading-lg/semibold",
                 children: "Current Settings"
-            }), (0, a.jsxs)(i.Text, {
+            }), (0, a.jsxs)(l.Text, {
                 variant: "text-md/normal",
-                children: ["Theme: ", S]
-            }), (0, a.jsxs)(i.Text, {
+                children: ["Theme: ", n]
+            }), (0, a.jsxs)(l.Text, {
                 variant: "text-md/normal",
-                children: ["Client Theme ID:", " ", null != O ? null == (y = g.ag[O]) ? void 0 : y.getName() : "None"]
-            }), (0, a.jsxs)(i.Text, {
+                children: ["Client Theme ID:", " ", null != f ? g.ag[f]?.getName() : "None"]
+            }), (0, a.jsxs)(l.Text, {
                 variant: "text-md/normal",
-                children: ["Avatar Decoration: ", null != (n = null == R ? void 0 : R.name) ? n : "None"]
-            }), (0, a.jsxs)(i.Text, {
+                children: ["Avatar Decoration: ", y?.name ?? "None"]
+            }), (0, a.jsxs)(l.Text, {
                 variant: "text-md/normal",
-                children: ["Nameplate: ", null != (b = null == D ? void 0 : D.name) ? b : "None"]
-            }), (0, a.jsxs)(i.Text, {
+                children: ["Nameplate: ", E?.name ?? "None"]
+            }), (0, a.jsxs)(l.Text, {
                 variant: "text-md/normal",
-                children: ["Font Size: ", M, "px"]
-            }), (0, a.jsxs)(i.Text, {
+                children: ["Font Size: ", N, "px"]
+            }), (0, a.jsxs)(l.Text, {
                 variant: "text-md/normal",
-                children: ["Message Spacing: ", L]
-            }), (0, a.jsxs)(i.Text, {
+                children: ["Message Spacing: ", I]
+            }), (0, a.jsxs)(l.Text, {
                 variant: "text-md/normal",
-                children: ["UI Density: ", U, " (", function(e) {
+                children: ["UI Density: ", k, " (", function(e) {
                     switch (e) {
-                        case r.NS.COMPACT:
+                        case s.NS.COMPACT:
                             return "Compact";
-                        case r.NS.COZY:
+                        case s.NS.COZY:
                             return "Cozy";
-                        case r.NS.DEFAULT:
+                        case s.NS.DEFAULT:
                             return "Default";
-                        case r.NS.RESPONSIVE:
+                        case s.NS.RESPONSIVE:
                             return "Responsive";
                         default:
                             return "Unknown"
                     }
-                }(U), ")"]
+                }(k), ")"]
             })]
         })]
     })

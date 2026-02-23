@@ -1,71 +1,72 @@
 /** chunk id: 623413, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => O
+    A: () => C
 });
-var r = n(627968),
-    l = n(64700),
-    i = n(311907),
-    s = n(397927),
+var i = n(627968),
+    s = n(64700),
+    l = n(311907),
+    r = n(397927),
     a = n(956793),
     o = n(313961),
     c = n(164617),
-    u = n(202384),
-    d = n(51758),
-    p = n(175203),
-    h = n(426660),
-    g = n(403362),
-    f = n(69407),
+    d = n(202384),
+    u = n(51758),
+    h = n(175203),
+    A = n(426660),
+    p = n(403362),
+    g = n(69407),
     m = n(110618),
-    b = n(566388),
-    A = n(985018),
-    y = n(852887);
-let O = function(e) {
+    _ = n(566388),
+    f = n(985018),
+    x = n(852887);
+let C = function(e) {
     let {
         participants: t,
         channel: n,
-        hasConnectPermission: O
-    } = e, j = (0, d.H)(n.guild_id), x = l.useCallback(() => {
-        j ? (0, u.Ze)(n.guild_id, () => a.default.selectVoiceChannel(n.id)) : a.default.selectVoiceChannel(n.id)
-    }, [n.id, n.guild_id, j]), _ = t.filter(e => e.type === f.wY.VOICE), v = 4 === _.length ? 2 : 3, E = (0, i.yK)([o.A], () => _.map(e => o.A.getParticipant(n.id, e.id)).filter(g.Vq), [n.id, _]);
-    return (0, r.jsxs)("div", {
-        className: y.kL,
-        children: [(0, r.jsx)(h.A, {}), (0, r.jsx)("div", {
-            className: y.os,
+        hasConnectPermission: C
+    } = e, E = (0, u.H)(n.guild_id), I = s.useCallback(() => {
+        E ? (0, d.Ze)(n.guild_id, () => a.default.selectVoiceChannel(n.id)) : a.default.selectVoiceChannel(n.id)
+    }, [n.id, n.guild_id, E]), b = t.filter(e => e.type === g.wY.VOICE), N = 4 === b.length ? 2 : 3, S = (0, l.yK)([o.A], () => b.map(e => o.A.getParticipant(n.id, e.id)).filter(p.Vq), [n.id, b]);
+    return (0, i.jsxs)("div", {
+        className: x.kL,
+        children: [(0, i.jsx)(A.A, {}), (0, i.jsx)("div", {
+            className: x.os,
             style: {
-                maxWidth: 168 * v
+                maxWidth: 168 * N
             },
-            children: E.slice(0, 5).map(e => (0, r.jsx)(p.Ay, {
+            children: S.slice(0, 5).map(e => (0, i.jsx)(h.Ay, {
                 participant: e,
                 channel: n,
-                className: y.Vs,
+                className: x.Vs,
                 inCall: !0,
                 noVideoRender: !0,
                 popoutType: c.N.NO_POPOUT,
                 width: 48
             }, e.id))
-        }), (0, r.jsx)(s.Heading, {
-            className: y.HA,
+        }), (0, i.jsx)(r.Heading, {
+            className: x.HA,
             variant: "heading-xxl/normal",
             children: n.name
-        }), (0, r.jsx)("div", {
-            className: y.Nu,
-            children: (0, r.jsx)(s.Text, {
+        }), (0, i.jsx)("div", {
+            className: x.Nu,
+            children: (0, i.jsx)(r.Text, {
                 tag: "div",
                 color: "text-default",
                 variant: "heading-lg/normal",
-                children: (0, m.DO)(n, _)
+                children: (0, m.DO)(n, b)
             })
-        }), (0, r.jsxs)("div", {
-            className: y.UD,
-            children: [(0, r.jsx)("div", {
-                className: y.PD,
-                children: (0, r.jsx)(s.Button, {
+        }), (0, i.jsxs)("div", {
+            className: x.UD,
+            children: [(0, i.jsx)("div", {
+                className: x.PD,
+                children: (0, i.jsx)(r.Button, {
                     variant: "overlay-primary",
-                    text: O ? A.intl.string(A.t["7vb2cc"]) : A.intl.string(A.t.TVBCKZ),
-                    onClick: x,
-                    disabled: !O
+                    text: C ? f.intl.string(f.t["7vb2cc"]) : f.intl.string(f.t.TVBCKZ),
+                    onClick: I,
+                    disabled: !C
                 })
-            }), (0, r.jsx)(b.l, {
+            }), (0, i.jsx)(_.l, {
                 channel: n
             })]
         })]

@@ -1,97 +1,65 @@
 /** chunk id: 658446, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => S
-}), n(228524), n(896048);
-var r = n(627968),
-    i = n(64700),
+    A: () => C
+});
+var i = n(627968),
+    s = n(64700),
     l = n(503698),
-    s = n.n(l),
+    r = n.n(l),
     a = n(33851),
     o = n.n(a),
-    c = n(989349),
-    d = n.n(c),
+    d = n(989349),
+    c = n.n(d),
     u = n(311907),
-    g = n(827734),
-    m = n(421380),
-    p = n(397927),
-    f = n(808728),
-    h = n(975571),
-    b = n(661191),
-    x = n(997509),
-    j = n(834720),
-    _ = n(652215),
-    O = n(985018),
-    v = n(960552);
-
-function y(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = r
-        })
-    }
-    return e
-}
-
-function A(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
-        }
-        return n
-    })(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-let E = e => {
+    m = n(827734),
+    g = n(421380),
+    x = n(397927),
+    h = n(808728),
+    _ = n(975571),
+    A = n(661191),
+    p = n(997509),
+    f = n(834720),
+    j = n(652215),
+    N = n(985018),
+    E = n(960552);
+let b = e => {
     let {
         name: t,
         failingName: n,
-        description: i,
+        description: s,
         checked: l,
-        pending: s,
+        pending: r,
         pendingDescription: a,
         failingDescription: o
-    } = e, c = t, d = null, u = null;
-    return s ? (d = (0, r.jsx)(p.EpV, {
+    } = e, d = t, c = null, u = null;
+    return r ? (c = (0, i.jsx)(x.EpV, {
         size: "custom",
-        color: g.A.unsafe_rawColors.YELLOW_300.css,
+        color: m.A.unsafe_rawColors.YELLOW_300.css,
         width: 20,
         height: 20
-    }), u = null != a ? a : i) : l ? (d = (0, r.jsx)(m.Kj, {
+    }), u = null != a ? a : s) : l ? (c = (0, i.jsx)(g.Kj, {
         readOnly: !0,
-        shape: m.Ib.ROUND,
+        shape: g.Ib.ROUND,
         size: 20,
-        type: m.Xo.INVERTED,
+        type: g.Xo.INVERTED,
         value: !0
-    }), u = i) : (d = (0, r.jsx)(p.aXh, {
+    }), u = s) : (c = (0, i.jsx)(x.aXh, {
         size: "custom",
-        color: g.A.unsafe_rawColors.RED_400.css,
+        color: m.A.unsafe_rawColors.RED_400.css,
         width: 20,
         height: 20
-    }), c = null != n ? n : t, u = null != o ? o : i), (0, r.jsxs)("div", {
-        className: v.gd,
-        children: [(0, r.jsx)("div", {
-            className: v.aV,
-            children: d
-        }), (0, r.jsxs)("div", {
-            className: v.QL,
-            children: [(0, r.jsx)(p.Heading, {
+    }), d = null != n ? n : t, u = null != o ? o : s), (0, i.jsxs)("div", {
+        className: E.gd,
+        children: [(0, i.jsx)("div", {
+            className: E.aV,
+            children: c
+        }), (0, i.jsxs)("div", {
+            className: E.QL,
+            children: [(0, i.jsx)(x.Heading, {
                 variant: "heading-md/semibold",
-                children: c
-            }), (0, r.jsx)(p.Text, {
+                children: d
+            }), (0, i.jsx)(x.Text, {
                 color: "text-muted",
                 variant: "text-sm/normal",
                 children: u
@@ -100,213 +68,216 @@ let E = e => {
     })
 };
 
-function N(e, t) {
-    return o()(null == e ? void 0 : e.map(e => {
+function T(e, t) {
+    return o()(e?.map(e => {
         let [t, n] = e;
-        return null == t ? void 0 : t.id
-    }), null == t ? void 0 : t.map(e => {
+        return t?.id
+    }), t?.map(e => {
         let [t, n] = e;
-        return null == t ? void 0 : t.id
+        return t?.id
     }))
 }
-let S = e => {
+let C = e => {
     let t, {
             guild: l,
             guildId: a,
             className: o,
-            headerContent: c,
-            failedItemsOnly: g = !1
+            headerContent: d,
+            failedItemsOnly: m = !1
         } = e,
-        [S, I] = (0, u.yK)([j.Ay], () => [j.Ay.getDiscoveryChecklist(a), j.Ay.isLoading()], [a]),
+        [C, I] = (0, u.yK)([f.Ay], () => [f.Ay.getDiscoveryChecklist(a), f.Ay.isLoading()], [a]),
         {
-            nsfwProperties: C
-        } = null != S ? S : {},
-        T = null == l ? void 0 : l.features.has(_.GuildFeatures.PARTNERED),
-        P = null == C ? void 0 : C.channels_banned_keywords,
-        w = (0, u.bG)([f.Ay], () => {
-            var e, t, n;
-            if (null == P) return [];
-            let r = null != (e = (null != (t = f.Ay.getChannels(l.id)) ? t : {})[f.I6]) ? e : [],
-                i = null != (n = null == r ? void 0 : r.map(e => e.channel).reduce((e, t) => A(y({}, e), {
+            nsfwProperties: v
+        } = C ?? {},
+        S = l?.features.has(j.GuildFeatures.PARTNERED),
+        y = v?.channels_banned_keywords,
+        R = (0, u.bG)([h.Ay], () => {
+            if (null == y) return [];
+            let e = (h.Ay.getChannels(l.id) ?? {})[h.I6] ?? [],
+                t = e?.map(e => e.channel).reduce((e, t) => ({
+                    ...e,
                     [t.id]: t
-                }), {})) ? n : {};
-            return null == P ? [] : Object.entries(P).map(e => {
-                let [t, n] = e;
-                return [i[t], n]
+                }), {}) ?? {};
+            return null == y ? [] : Object.entries(y).map(e => {
+                let [n, i] = e;
+                return [t[n], i]
             })
-        }, [l.id, P], N);
-    if (I || null == S) return (0, r.jsxs)("div", {
-        className: s()(v.kL, v.NQ, o),
-        children: [(0, r.jsx)(p.Heading, {
-            className: v.KQ,
+        }, [l.id, y], T);
+    if (I || null == C) return (0, i.jsxs)("div", {
+        className: r()(E.kL, E.NQ, o),
+        children: [(0, i.jsx)(x.Heading, {
+            className: E.KQ,
             variant: "heading-md/semibold",
             color: "text-default",
-            children: O.intl.string(O.t.e1gm0f)
-        }), (0, r.jsx)(p.y$y, {
-            className: v.__invalid_spinner
+            children: N.intl.string(N.t.e1gm0f)
+        }), (0, i.jsx)(x.y$y, {
+            className: E.__invalid_spinner
         })]
     });
-    let R = T ? O.t["WH+1Yz"] : O.t.a4MYDO,
-        D = [{
-            name: O.intl.string(O.t.yvk9py),
-            failingName: O.intl.string(O.t["IY/UT/"]),
-            description: O.intl.string(O.t.hSLSM6),
-            failingDescription: O.intl.format(O.t.odsGgy, {
-                termsURL: _.X7G.TERMS,
-                guidelinesURL: h.A.getArticleURL(_.MVz.PUBLIC_GUILD_GUILDLINES)
+    let O = S ? N.t["WH+1Yz"] : N.t.a4MYDO,
+        G = [{
+            name: N.intl.string(N.t.yvk9py),
+            failingName: N.intl.string(N.t["IY/UT/"]),
+            description: N.intl.string(N.t.hSLSM6),
+            failingDescription: N.intl.format(N.t.odsGgy, {
+                termsURL: j.X7G.TERMS,
+                guidelinesURL: _.A.getArticleURL(j.MVz.PUBLIC_GUILD_GUILDLINES)
             }),
-            checked: null == S ? void 0 : S.safeEnvironment
+            checked: C?.safeEnvironment
         }, {
-            name: O.intl.formatToPlainString(O.t.NYovA2, {
-                minMembers: S.minimumGuildSize
+            name: N.intl.formatToPlainString(N.t.NYovA2, {
+                minMembers: C.minimumGuildSize
             }),
-            failingName: O.intl.formatToPlainString(O.t.wvJwYs, {
-                minMembers: S.minimumGuildSize.toLocaleString()
+            failingName: N.intl.formatToPlainString(N.t.wvJwYs, {
+                minMembers: C.minimumGuildSize.toLocaleString()
             }),
             description: null,
-            failingDescription: O.intl.format(R, {
-                minMembers: S.minimumGuildSize.toLocaleString()
+            failingDescription: N.intl.format(O, {
+                minMembers: C.minimumGuildSize.toLocaleString()
             }),
-            checked: null == S ? void 0 : S.size
+            checked: C?.size
         }, {
-            name: O.intl.string(O.t.PtxOCK),
-            failingName: O.intl.string(O.t.JPF5IL),
-            description: O.intl.formatToPlainString(O.t.VT0bQJ, {
-                minimumGuildAge: Math.ceil(S.minimumGuildAge / 7)
+            name: N.intl.string(N.t.PtxOCK),
+            failingName: N.intl.string(N.t.JPF5IL),
+            description: N.intl.formatToPlainString(N.t.VT0bQJ, {
+                minimumGuildAge: Math.ceil(C.minimumGuildAge / 7)
             }),
-            failingDescription: O.intl.formatToPlainString(O.t.jYwM1Y, {
-                minimumGuildAge: Math.ceil(S.minimumGuildAge / 7),
-                passDate: d()(b.default.extractTimestamp(a)).add(S.minimumGuildAge, "days").format("LL")
+            failingDescription: N.intl.formatToPlainString(N.t.jYwM1Y, {
+                minimumGuildAge: Math.ceil(C.minimumGuildAge / 7),
+                passDate: c()(A.default.extractTimestamp(a)).add(C.minimumGuildAge, "days").format("LL")
             }),
-            checked: null == S ? void 0 : S.age
+            checked: C?.age
         }, {
-            name: (null == S ? void 0 : S.healthScorePending) ? O.intl.string(O.t.G77ud0) : O.intl.string(O.t["95nW0H"]),
-            failingName: O.intl.string(O.t["+GHxPy"]),
-            description: O.intl.string(O.t.rTWJwX),
-            failingDescription: (0, r.jsxs)(r.Fragment, {
-                children: [(0, r.jsx)(p.Text, {
+            name: C?.healthScorePending ? N.intl.string(N.t.G77ud0) : N.intl.string(N.t["95nW0H"]),
+            failingName: N.intl.string(N.t["+GHxPy"]),
+            description: N.intl.string(N.t.rTWJwX),
+            failingDescription: (0, i.jsxs)(i.Fragment, {
+                children: [(0, i.jsx)(x.Text, {
                     color: "text-muted",
-                    className: v.t,
+                    className: E.t,
                     variant: "text-sm/normal",
-                    children: O.intl.string(O.t.LjqS0G)
-                }), (null == S ? void 0 : S.engagementHealthy) ? null : (0, r.jsx)(p.Text, {
+                    children: N.intl.string(N.t.LjqS0G)
+                }), C?.engagementHealthy ? null : (0, i.jsx)(x.Text, {
                     color: "text-feedback-critical",
                     variant: "text-sm/normal",
-                    children: O.intl.string(O.t.X8Lt77)
-                }), (null == S ? void 0 : S.retentionHealthy) ? null : (0, r.jsx)(p.Text, {
+                    children: N.intl.string(N.t.X8Lt77)
+                }), C?.retentionHealthy ? null : (0, i.jsx)(x.Text, {
                     color: "text-feedback-critical",
                     variant: "text-sm/normal",
-                    children: O.intl.string(O.t.esdy89)
+                    children: N.intl.string(N.t.esdy89)
                 }), (() => {
-                    if (null == S || null == S.healthScore) return !1;
+                    if (null == C || null == C.healthScore) return !1;
                     let {
                         retentionHealthy: e,
                         engagementHealthy: t,
                         healthScore: n
-                    } = S, {
-                        avg_nonnew_participators: r,
-                        avg_nonnew_communicators: i,
+                    } = C, {
+                        avg_nonnew_participators: i,
+                        avg_nonnew_communicators: s,
                         perc_ret_w1_intentful: l
                     } = n;
-                    return !e && null != l || !t && null != r && null != i
-                })() && (0, r.jsx)(m.$n, {
-                    className: v.zh,
-                    look: m.$n.Looks.LINK,
-                    size: m.$n.Sizes.NONE,
-                    color: m.$n.Colors.LINK,
-                    onClick: () => (0, p.mMO)(async () => {
+                    return !e && null != l || !t && null != i && null != s
+                })() && (0, i.jsx)(g.$n, {
+                    className: E.zh,
+                    look: g.$n.Looks.LINK,
+                    size: g.$n.Sizes.NONE,
+                    color: g.$n.Colors.LINK,
+                    onClick: () => (0, x.mMO)(async () => {
                         let {
                             default: e
                         } = await n.e("63401").then(n.bind(n, 247920));
-                        return t => (0, r.jsx)(e, A(y({}, t), {
-                            guildChecklist: S
-                        }))
+                        return t => (0, i.jsx)(e, {
+                            ...t,
+                            guildChecklist: C
+                        })
                     }),
-                    children: O.intl.string(O.t.qyiTH8)
+                    children: N.intl.string(N.t.qyiTH8)
                 })]
             }),
-            pendingDescription: (null == S ? void 0 : S.size) ? O.intl.format(O.t.ALtXIF, {
-                checkBackHook: (e, t) => (0, r.jsx)("strong", {
-                    className: v.eb,
+            pendingDescription: C?.size ? N.intl.format(N.t.ALtXIF, {
+                checkBackHook: (e, t) => (0, i.jsx)("strong", {
+                    className: E.eb,
                     children: e
                 }, t)
-            }) : O.intl.formatToPlainString(O.t["6S/96D"], {
+            }) : N.intl.formatToPlainString(N.t["6S/96D"], {
                 minMembers: 200
             }),
-            checked: null == S ? void 0 : S.healthy,
-            pending: null == S ? void 0 : S.healthScorePending
+            checked: C?.healthy,
+            pending: C?.healthScorePending
         }, {
-            name: O.intl.string(O.t["AUUV/x"]),
-            failingName: O.intl.string(O.t["jURyO+"]),
-            description: O.intl.string(O.t.wikb1q),
-            failingDescription: (0, r.jsxs)(r.Fragment, {
-                children: [(null == C ? void 0 : C.channels) != null ? (0, r.jsx)(p.Text, {
+            name: N.intl.string(N.t["AUUV/x"]),
+            failingName: N.intl.string(N.t["jURyO+"]),
+            description: N.intl.string(N.t.wikb1q),
+            failingDescription: (0, i.jsxs)(i.Fragment, {
+                children: [v?.channels != null ? (0, i.jsx)(x.Text, {
                     color: "text-muted",
                     variant: "text-sm/normal",
-                    children: O.intl.format(O.t["T+DQYY"], {
-                        channelHook: (e, t) => (0, r.jsx)("span", {
-                            className: v.ty,
+                    children: N.intl.format(N.t["T+DQYY"], {
+                        channelHook: (e, t) => (0, i.jsx)("span", {
+                            className: E.ty,
                             children: e
                         }, t)
                     })
-                }) : null, w.length > 0 ? (0, r.jsx)("div", {
-                    className: v.pZ,
-                    children: w.map(e => {
+                }) : null, R.length > 0 ? (0, i.jsx)("div", {
+                    className: E.pZ,
+                    children: R.map(e => {
                         let [t, n] = e;
-                        return null != t ? (0, r.jsxs)(p.Text, {
+                        return null != t ? (0, i.jsxs)(x.Text, {
                             color: "text-muted",
                             variant: "text-sm/normal",
                             children: ["#", t.name, ": ", n.join(", ")]
                         }, t.id) : null
                     })
-                }) : null, (null == C ? void 0 : C.name) != null ? (0, r.jsx)(p.Text, {
+                }) : null, v?.name != null ? (0, i.jsx)(x.Text, {
                     color: "text-muted",
                     variant: "text-sm/normal",
-                    children: O.intl.format(O.t.KVD8E3, {
-                        nameHook: (e, t) => (0, r.jsx)("span", {
-                            className: v.ty,
+                    children: N.intl.format(N.t.KVD8E3, {
+                        nameHook: (e, t) => (0, i.jsx)("span", {
+                            className: E.ty,
                             children: e
                         }, t)
                     })
-                }) : null, (null == C ? void 0 : C.description) != null ? (0, r.jsx)(p.Text, {
+                }) : null, v?.description != null ? (0, i.jsx)(x.Text, {
                     color: "text-muted",
                     variant: "text-sm/normal",
-                    children: O.intl.format(O.t["/W9Kel"], {
-                        descriptionHook: (e, t) => (0, r.jsx)("span", {
-                            className: v.ty,
+                    children: N.intl.format(N.t["/W9Kel"], {
+                        descriptionHook: (e, t) => (0, i.jsx)("span", {
+                            className: E.ty,
                             children: e
                         }, t)
                     })
-                }) : null, (null == C ? void 0 : C.icon) != null || (null == C ? void 0 : C.discovery_splash) != null || (null == C ? void 0 : C.invite_splash) != null || (null == C ? void 0 : C.banner) != null ? (0, r.jsx)(p.Text, {
+                }) : null, v?.icon != null || v?.discovery_splash != null || v?.invite_splash != null || v?.banner != null ? (0, i.jsx)(x.Text, {
                     color: "text-muted",
                     variant: "text-sm/normal",
-                    children: O.intl.string(O.t.WVKQ6q)
+                    children: N.intl.string(N.t.WVKQ6q)
                 }) : null]
             }),
-            checked: null == C || 0 === Object.keys(C).length
+            checked: null == v || 0 === Object.keys(v).length
         }, {
-            name: O.intl.string(O.t.lSXnL9),
-            failingName: O.intl.string(O.t.awA3Pb),
-            description: O.intl.string(O.t.QbBJ7R),
-            failingDescription: O.intl.format(O.t.kBXInb, {
-                onClick: () => x.A.setSection(_.BEX.SAFETY, _.nd0.SAFETY_PERMISSIONS)
+            name: N.intl.string(N.t.lSXnL9),
+            failingName: N.intl.string(N.t.awA3Pb),
+            description: N.intl.string(N.t.QbBJ7R),
+            failingDescription: N.intl.format(N.t.kBXInb, {
+                onClick: () => p.A.setSection(j.BEX.SAFETY, j.nd0.SAFETY_PERMISSIONS)
             }),
-            checked: null == S ? void 0 : S.protected
+            checked: C?.protected
         }];
-    return (0, r.jsxs)("div", {
-        className: s()(v.kL, o),
-        children: [(t = (null == S ? void 0 : S.sufficient) ? n(617416) : n(848887), null == c ? null : (0, r.jsxs)("div", {
-            className: v.wx,
-            children: [(0, r.jsx)("img", {
+    return (0, i.jsxs)("div", {
+        className: r()(E.kL, o),
+        children: [(t = C?.sufficient ? n(617416) : n(848887), null == d ? null : (0, i.jsxs)("div", {
+            className: E.wx,
+            children: [(0, i.jsx)("img", {
                 alt: "",
                 src: t,
-                className: v.nr,
+                className: E.nr,
                 width: 40
-            }), c]
-        })), D.filter(e => !g || null == e.checked || !e.checked).map((e, t) => (0, r.jsxs)(i.Fragment, {
-            children: [(0, r.jsx)(E, y({}, e)), t < D.length - 1 ? (0, r.jsx)("hr", {
-                className: v.me
+            }), d]
+        })), G.filter(e => !m || null == e.checked || !e.checked).map((e, t) => (0, i.jsxs)(s.Fragment, {
+            children: [(0, i.jsx)(b, {
+                ...e
+            }), t < G.length - 1 ? (0, i.jsx)("hr", {
+                className: E.me
             }) : null]
-        }, "".concat(e.name)))]
+        }, `${e.name}`))]
     })
 }

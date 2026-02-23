@@ -1,36 +1,36 @@
 /** chunk id: 773349, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => A
 });
-var r = n(627968),
-    i = n(64700),
-    l = n(503698),
-    s = n.n(l),
-    a = n(417597),
+var i = n(627968),
+    s = n(64700),
+    a = n(503698),
+    r = n.n(a),
+    l = n(417597),
     o = n(397927),
     c = n(287809),
     d = n(427262),
     u = n(283900),
     _ = n(975977);
-let p = i.memo(e => {
+let m = s.memo(e => {
     let {
         userId: t,
         subText: n,
-        className: i
-    } = e, l = (0, a.bG)([c.default], () => c.default.getUser(t));
-    return void 0 === l ? null : (0, r.jsxs)("div", {
-        className: s()(_.k, i),
-        children: [(0, r.jsx)(u.H, {
-            user: l,
+        className: s
+    } = e, a = (0, l.bG)([c.default], () => c.default.getUser(t));
+    return void 0 === a ? null : (0, i.jsxs)("div", {
+        className: r()(_.k, s),
+        children: [(0, i.jsx)(u.H, {
+            user: a,
             avatarSize: o._3J.SIZE_40
-        }), (0, r.jsx)("div", {
-            children: (0, r.jsxs)("div", {
+        }), (0, i.jsx)("div", {
+            children: (0, i.jsxs)("div", {
                 className: _.$,
-                children: [(0, r.jsx)(o.Text, {
+                children: [(0, i.jsx)(o.Text, {
                     variant: "text-md/semibold",
                     color: "interactive-text-active",
-                    children: d.Ay.getName(l)
-                }), null != n && (0, r.jsx)(o.Text, {
+                    children: d.Ay.getName(a)
+                }), null != n && (0, i.jsx)(o.Text, {
                     variant: "text-sm/medium",
                     color: "text-subtle",
                     children: n
@@ -39,5 +39,5 @@ let p = i.memo(e => {
         })]
     })
 });
-p.displayName = "FamilyCenterActivityUserRow";
-let m = p
+m.displayName = "FamilyCenterActivityUserRow";
+let A = m

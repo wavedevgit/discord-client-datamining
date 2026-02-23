@@ -2,31 +2,31 @@
 n.d(t, {
     A: () => o
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(503698),
-    l = n.n(i),
-    s = n(432334),
-    a = n(680020);
+var s = n(503698),
+    a = n.n(s),
+    r = n(432334),
+    l = n(680020);
 let o = function(e) {
     let {
         className: t,
-        hasCooldown: i,
+        hasCooldown: s,
         isCanceled: o,
         useReducedMotion: c
     } = e;
-    return (0, r.jsxs)("div", {
-        className: l()(a.sn, t),
-        children: [o ? (0, r.jsx)("img", {
-            className: l()(a.$J, a.qX),
+    return (0, i.jsxs)("div", {
+        className: a()(l.sn, t),
+        children: [o ? (0, i.jsx)("img", {
+            className: a()(l.$J, l.qX),
             src: n(208294),
             alt: ""
-        }) : (0, r.jsx)(s.A, {
-            className: a.$J,
-            boostInCooldown: i,
+        }) : (0, i.jsx)(r.A, {
+            className: l.$J,
+            boostInCooldown: s,
             useReducedMotion: c
-        }), !o && i && (0, r.jsx)("img", {
-            className: a.De,
+        }), !o && s && (0, i.jsx)("img", {
+            className: l.De,
             src: n(595454),
             alt: ""
         })]

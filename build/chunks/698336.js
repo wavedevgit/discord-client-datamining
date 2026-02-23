@@ -1,54 +1,53 @@
-/** chunk id: 698336, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    default: () => p
+/** chunk id: 698336, original params: e,t,r (module,exports,require) **/
+r.d(t, {
+    default: () => g
 });
-var a = n(627968),
-    i = n(64700),
-    r = n(311907),
-    s = n(397927),
-    l = n(888940),
-    d = n(235986),
-    o = n(558179),
-    c = n(355190),
-    u = n(985018),
-    E = n(592738);
+var a = r(627968),
+    n = r(64700),
+    l = r(311907),
+    s = r(397927),
+    i = r(888940),
+    d = r(235986),
+    c = r(558179),
+    o = r(355190),
+    u = r(985018),
+    h = r(592738);
 
-function p(e) {
-    var t;
+function g(e) {
     let {
-        eulaId: n,
-        transitionState: p,
+        eulaId: t,
+        transitionState: r,
         onClose: g
-    } = e, h = (0, r.bG)([c.A], () => c.A.getEULA(n));
-    i.useEffect(() => {
-        (0, l.E)(n)
-    }, [n]);
-    let A = null != (t = null == h ? void 0 : h.name) ? t : u.intl.string(u.t.ZTNur7),
-        m = null != h ? (0, a.jsx)(o.A, {
-            children: h.content,
-            className: E.w
+    } = e, p = (0, l.bG)([o.A], () => o.A.getEULA(t));
+    n.useEffect(() => {
+        (0, i.E)(t)
+    }, [t]);
+    let m = p?.name ?? u.intl.string(u.t.ZTNur7),
+        f = null != p ? (0, a.jsx)(c.A, {
+            children: p.content,
+            className: h.w
         }) : (0, a.jsx)(s.y$y, {
-            className: E.u
+            className: h.u
         });
     return (0, a.jsxs)(s.EOs, {
         "data-migration-pending": !0,
-        transitionState: p,
+        transitionState: r,
         size: s.rIJ.SMALL,
-        "aria-label": A,
+        "aria-label": m,
         parentComponent: "EULA",
         children: [(0, a.jsxs)(s.rQ0, {
             "data-migration-pending": !0,
             justify: d.A.Justify.BETWEEN,
             children: [(0, a.jsx)(s.Heading, {
                 variant: "heading-lg/semibold",
-                children: A
+                children: m
             }), (0, a.jsx)(s.s_y, {
                 "data-migration-pending": !0,
                 onClick: g
             })]
         }), (0, a.jsx)(s.$mQ, {
             "data-migration-pending": !0,
-            children: m
+            children: f
         })]
     })
 }

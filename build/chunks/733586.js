@@ -1,104 +1,102 @@
 /** chunk id: 733586, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => p
-}), n(896048);
-var r = n(627968),
-    l = n(64700),
-    i = n(503698),
-    s = n.n(i),
+    A: () => h
+});
+var i = n(627968),
+    s = n(64700),
+    l = n(503698),
+    r = n.n(l),
     a = n(962125),
     o = n(591329);
 let c = 16 / 9;
 
-function u(e, t) {
+function d(e, t) {
     return Math.max(1, Math.floor((t - e) / (8 + e)) + 1)
 }
 
-function d(e, t, n) {
-    let r = t - e;
-    for (; r > 0;) {
+function u(e, t, n) {
+    let i = t - e;
+    for (; i > 0;) {
         let t = e,
-            l = Math.floor(r / 2);
-        n(t += l) ? (e = t + 1, r -= l + 1) : r = l
+            s = Math.floor(i / 2);
+        n(t += s) ? (e = t + 1, i -= s + 1) : i = s
     }
     return e
 }
 
-function p(e) {
-    var t;
+function h(e) {
     let {
-        className: n,
-        children: i,
-        keyExtractor: p,
+        className: t,
+        children: n,
+        keyExtractor: l,
         paddingTop: h = 0,
-        paddingBottom: g = 0
-    } = e, [f, m] = l.useState({
+        paddingBottom: A = 0
+    } = e, [p, g] = s.useState({
         width: 0,
         height: 0
     }), {
-        width: b,
-        height: A
-    } = f, y = null != (t = null == i ? void 0 : i.length) ? t : 0, O = b - 16, j = A - (h + g), {
-        tileStyle: x,
-        tileWidth: _,
-        rows: v,
-        columns: E
-    } = l.useMemo(() => (function(e, t, n) {
-        var r, l, i;
-        let s, a, o, p, {
-            rows: h,
-            columns: g,
-            tileWidth: f
-        } = (r = e, l = t, i = n, a = Math.floor(l / 25), s = r > 25 ? d(a, l, e => {
+        width: m,
+        height: _
+    } = p, f = n?.length ?? 0, x = m - 16, C = _ - (h + A), {
+        tileStyle: E,
+        tileWidth: I,
+        rows: b,
+        columns: N
+    } = s.useMemo(() => (function(e, t, n) {
+        var i, s, l;
+        let r, a, o, h, {
+            rows: A,
+            columns: p,
+            tileWidth: g
+        } = (i = e, s = t, l = n, a = Math.floor(s / 25), r = i > 25 ? u(a, s, e => {
             let t;
-            return u(e, l) * (Math.ceil((i - (t = e / c)) / (8 + t)) + 1) > 25
-        }) : d(a, l, e => {
+            return d(e, s) * (Math.ceil((l - (t = e / c)) / (8 + t)) + 1) > 25
+        }) : u(a, s, e => {
             let t;
-            return u(e, l) * (Math.floor((i - (t = e / c)) / (8 + t)) + 1) >= r
-        }) - 1, p = Math.ceil(r / (o = u(s, l))), {
-            tileWidth: s,
+            return d(e, s) * (Math.floor((l - (t = e / c)) / (8 + t)) + 1) >= i
+        }) - 1, h = Math.ceil(i / (o = d(r, s))), {
+            tileWidth: r,
             columns: Math.max(1, o),
-            rows: p
+            rows: h
         });
         return {
             tileStyle: {
-                width: f
+                width: g
             },
-            tileWidth: f,
-            rows: h,
-            columns: g
+            tileWidth: g,
+            rows: A,
+            columns: p
         }
-    })(y, O, j), [y, O, j]), C = E + 1, S = C * _ + (C - 1) * 8 <= b, I = Math.floor(_ / c) + 8, N = Math.max(0, j - I * v) / 2;
-    return (0, r.jsx)(a.A, {
+    })(f, x, C), [f, x, C]), S = N + 1, T = S * I + (S - 1) * 8 <= m, y = Math.floor(I / c) + 8, v = Math.max(0, C - y * b) / 2;
+    return (0, i.jsx)(a.A, {
         fade: !0,
-        className: n,
-        listPadding: [h + N, 0, g + N - 8, 8],
+        className: t,
+        listPadding: [h + v, 0, A + v - 8, 8],
         renderRow: function(e) {
-            var t;
-            let n = e * E;
-            return (0, r.jsx)("div", {
+            let t = e * N;
+            return (0, i.jsx)("div", {
                 className: o.nM,
-                children: null == i || null == (t = i.slice(n, n + E)) ? void 0 : t.map((e, t) => {
-                    var l;
-                    let i = n + t;
-                    return (0, r.jsx)("div", {
-                        style: x,
-                        className: s()(o.Vs, {
-                            [o.E3]: S,
-                            [o.k4]: i >= (v - 1) * E,
-                            [o.Kk]: (i + 1) % E == 0 || i === y - 1
+                children: n?.slice(t, t + N)?.map((e, n) => {
+                    let s = t + n;
+                    return (0, i.jsx)("div", {
+                        style: E,
+                        className: r()(o.Vs, {
+                            [o.E3]: T,
+                            [o.k4]: s >= (b - 1) * N,
+                            [o.Kk]: (s + 1) % N == 0 || s === f - 1
                         }),
-                        children: (0, r.jsx)("div", {
+                        children: (0, i.jsx)("div", {
                             className: o.eP,
-                            children: e(_)
+                            children: e(I)
                         })
-                    }, null != (l = null == p ? void 0 : p(i)) ? l : i)
+                    }, l?.(s) ?? s)
                 })
             }, e)
         },
-        rowCount: v,
-        rowCountBySection: [v],
-        rowHeight: I,
-        onResize: m
+        rowCount: b,
+        rowCountBySection: [b],
+        rowHeight: y,
+        onResize: g
     })
 }

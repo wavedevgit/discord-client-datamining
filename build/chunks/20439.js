@@ -1,78 +1,57 @@
-/** chunk id: 20439, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    A: () => v
+/** chunk id: 20439, original params: e,t,l (module,exports,require) **/
+l.d(t, {
+    A: () => x
 });
-var r = n(64700),
-    i = n(311907),
-    a = n(594061),
-    o = n(967198),
-    s = n(927813),
-    l = n(661191),
-    c = n(541689),
-    u = n(256787),
-    d = n(826673),
-    f = n(367727),
-    p = n(357186);
+var a = l(64700),
+    n = l(311907),
+    r = l(594061),
+    i = l(967198),
+    s = l(927813),
+    o = l(661191),
+    u = l(541689),
+    c = l(256787),
+    d = l(826673),
+    p = l(367727),
+    m = l(357186);
 
-function _(e, t) {
-    (0, c.IR)(t ? null : e)
+function h(e, t, l) {
+    (0, u.IR)(t ? null : e, l ?? null)
 }
 
-function h(e, t) {
-    let n = (0, p.c)(e),
-        r = (0, f.J8)(e, {});
-    return (_(e, t), t) ? ((0, a._N)(e), !1) : ((0, f.bQ)(e, n, r), !0)
-}
-
-function m(e, t) {
-    let n = (0, f.J8)(e, {});
-    return (_(e, t), t) ? ((0, a._N)(e), !1) : ((0, f.Uu)(e, l.default.fromTimestamp(Date.now() + f.rw), n), !0)
-}
-
-function g(e, t) {
-    return (_(e, t), t) ? ((0, a._N)(e), !1) : ((0, f.ss)(e, (0, f.J8)(e, {})), !0)
-}
-
-function E(e, t) {
-    return (_(e, t), t) ? ((0, a.xB)(e), !1) : ((0, a.o_)(e), !0)
-}
-
-function y(e, t, n) {
-    if (null == t) return !1;
-    let r = null != t ? (0, f.Sx)(e, t) : 1;
-    return (_(e, n), n) ? ((0, f.R2)(e, t, r - 1), !1) : ((0, f.wH)(e, t, r), !0)
-}
-
-function b(e, t, n) {
-    if (null == t) return !1;
-    let r = null != t ? (0, f.Sx)(e, t) : 1;
-    return (_(e, n), n) ? ((0, f.rZ)(e, t, r - 1), !1) : ((0, f.gG)(e, t, r), !0)
-}
-
-function O(e, t, n) {
-    if (null == t) return !1;
-    let r = null != t ? (0, f.Sx)(e, t) : 1;
-    return (_(e, n), n) ? ((0, f.fb)(e, t, r - 1), !1) : ((0, f.G4)(e, l.default.fromTimestamp(Date.now() + f.rw), t, r), !0)
-}
-
-function v(e) {
-    let t = (0, i.bG)([o.A], () => o.A.getGuildId()),
-        n = (0, d.JZ)(e, {
+function x(e) {
+    let t = (0, n.bG)([i.A], () => i.A.getGuildId()),
+        l = (0, d.JZ)(e, {
             cooldownDurationMs: s.A.Millis.WEEK,
             guildId: t
         }),
-        a = (0, r.useCallback)(() => {
-            if ((0, u.L0)(e)) return h(e, n);
-            if ((0, u.IL)(e)) return m(e, n);
-            if ((0, u.ki)(e)) return g(e, n);
-            if ((0, u.ef)(e)) return y(e, t, n);
-            if ((0, u.XQ)(e)) return b(e, t, n);
-            else if ((0, u.PN)(e)) return O(e, t, n);
-            else return E(e, n)
-        }, [e, t, n]);
+        u = (0, a.useCallback)(() => {
+            if ((0, c.L0)(e)) {
+                let t, a;
+                return t = (0, m.c)(e), a = (0, p.J8)(e, {}), (h(e, l, null), l) ? ((0, r._N)(e), !1) : ((0, p.bQ)(e, t, a), !0)
+            }
+            if ((0, c.IL)(e)) {
+                let t;
+                return t = (0, p.J8)(e, {}), (h(e, l, null), l) ? ((0, r._N)(e), !1) : ((0, p.Uu)(e, o.default.fromTimestamp(Date.now() + p.rw), t), !0)
+            }
+            if ((0, c.ki)(e)) return (h(e, l, null), l) ? ((0, r._N)(e), !1) : ((0, p.ss)(e, (0, p.J8)(e, {})), !0);
+            if ((0, c.ef)(e)) {
+                if (null == t) return !1;
+                let a = null != t ? (0, p.Sx)(e, t) : 1;
+                return (h(e, l, t), l) ? ((0, p.R2)(e, t, a - 1), !1) : ((0, p.wH)(e, t, a), !0)
+            }
+            if ((0, c.XQ)(e)) {
+                if (null == t) return !1;
+                let a = null != t ? (0, p.Sx)(e, t) : 1;
+                return (h(e, l, t), l) ? ((0, p.rZ)(e, t, a - 1), !1) : ((0, p.gG)(e, t, a), !0)
+            } else {
+                if (!(0, c.PN)(e)) return (h(e, l, null), l) ? ((0, r.xB)(e), !1) : ((0, r.o_)(e), !0);
+                if (null == t) return !1;
+                let a = null != t ? (0, p.Sx)(e, t) : 1;
+                return (h(e, l, t), l) ? ((0, p.fb)(e, t, a - 1), !1) : ((0, p.G4)(e, o.default.fromTimestamp(Date.now() + p.rw), t, a), !0)
+            }
+        }, [e, t, l]);
     return {
-        isDismissed: n,
-        handleToggleDismissState: a
+        isDismissed: l,
+        handleToggleDismissState: u
     }
 }

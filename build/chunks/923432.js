@@ -1,58 +1,58 @@
 /** chunk id: 923432, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => y
+    A: () => x
 });
-var r = n(627968),
-    l = n(64700),
-    i = n(503698),
-    s = n.n(i),
-    a = n(92674),
+var i = n(627968),
+    s = n(64700),
+    l = n(503698),
+    r = n.n(l),
+    a = n(475539),
     o = n(311907),
     c = n(397927),
-    u = n(250719),
-    d = n(636585),
-    p = n(531685),
-    h = n(147036),
-    g = n(288989),
-    f = n(985018),
+    d = n(250719),
+    u = n(636585),
+    h = n(531685),
+    A = n(147036),
+    p = n(288989),
+    g = n(985018),
     m = n(317022);
-let b = {
+let _ = {
     friction: 30,
     tension: 300
 };
 
-function A(e) {
-    var t;
+function f(e) {
     let {
-        guildChannels: n,
-        jumpToVoiceChannels: i
-    } = e, a = n.getCategoryFromSection(n.voiceChannelsSectionNumber), o = (0, u.A)(n.id), p = l.useCallback(e => {
-        e.preventDefault(), e.stopPropagation(), i()
-    }, [i]), g = null != (t = null == a ? void 0 : a.getChannelRecords()) ? t : [], b = (0, h.fK)({
-        channels: g,
+        guildChannels: t,
+        jumpToVoiceChannels: n
+    } = e, l = t.getCategoryFromSection(t.voiceChannelsSectionNumber), a = (0, d.A)(t.id), o = s.useCallback(e => {
+        e.preventDefault(), e.stopPropagation(), n()
+    }, [n]), h = l?.getChannelRecords() ?? [], p = (0, A.fK)({
+        channels: h,
         selectedChannelId: null,
         selectedVoiceChannelId: null,
-        voiceStates: o
+        voiceStates: a
     });
-    return (0, r.jsxs)(c.DUT, {
-        className: s()(m.M0, m.OF),
-        onClick: p,
-        children: [(0, r.jsx)(c.HKD, {
+    return (0, i.jsxs)(c.DUT, {
+        className: r()(m.M0, m.OF),
+        onClick: o,
+        children: [(0, i.jsx)(c.HKD, {
             size: "custom",
             className: m.Gs,
             width: 14,
             height: 14,
             color: "currentColor"
-        }), (0, r.jsx)(c.Text, {
+        }), (0, i.jsx)(c.Text, {
             variant: "text-xs/semibold",
             className: m.pM,
-            children: f.intl.format(f.t["fDlr+F"], {
-                count: b.length
+            children: g.intl.format(g.t["fDlr+F"], {
+                count: p.length
             })
-        }), (0, r.jsx)(d.A, {
-            guildId: n.id,
+        }), (0, i.jsx)(u.A, {
+            guildId: t.id,
             className: m.J$,
-            users: b.slice(0, 4),
+            users: p.slice(0, 4),
             renderMoreUsers: () => null,
             max: 4,
             size: c._3J.SIZE_16
@@ -60,75 +60,75 @@ function A(e) {
     })
 }
 
-function y(e) {
+function x(e) {
     let {
         position: t,
         guildChannels: n,
-        guildChannelsVersion: i,
-        jumpToVoiceChannels: u,
-        jumpToChannel: d
+        guildChannelsVersion: l,
+        jumpToVoiceChannels: d,
+        jumpToChannel: u
     } = e, {
-        bottomBar: h,
-        topBar: y
-    } = (0, o.cf)([g.A], () => g.A.getUnreadStateForGuildId(n.id)), O = (0, o.bG)([p.A], () => p.A.isFocused()), {
-        mode: j,
-        mentionCount: x,
-        targetChannelId: _
-    } = "bottom" === t ? h : y, v = j === g.k.HIDDEN, E = (0, c.zhh)({
+        bottomBar: A,
+        topBar: x
+    } = (0, o.cf)([p.A], () => p.A.getUnreadStateForGuildId(n.id)), C = (0, o.bG)([h.A], () => h.A.isFocused()), {
+        mode: E,
+        mentionCount: I,
+        targetChannelId: b
+    } = "bottom" === t ? A : x, N = E === p.k.HIDDEN, S = (0, c.zhh)({
         to: {
-            transform: v ? "bottom" === t ? "translateY(180%)" : "translateY(-180%)" : "translateY(0%)"
+            transform: N ? "bottom" === t ? "translateY(180%)" : "translateY(-180%)" : "translateY(0%)"
         },
-        config: b
-    }, O ? "respect-motion-settings" : "animate-never"), C = l.useCallback(e => {
-        e.preventDefault(), e.stopPropagation(), null != _ && d(_)
-    }, [d, _]);
-    return (0, r.jsx)("div", {
-        className: s()(m.kL, {
+        config: _
+    }, C ? "respect-motion-settings" : "animate-never"), T = s.useCallback(e => {
+        e.preventDefault(), e.stopPropagation(), null != b && u(b)
+    }, [u, b]);
+    return (0, i.jsx)("div", {
+        className: r()(m.kL, {
             [m.Mn]: "top" === t,
             [m.sQ]: "bottom" === t
         }),
-        children: (0, r.jsx)(a.animated.div, {
+        children: (0, i.jsx)(a.animated.div, {
             className: m.pK,
-            style: E,
-            "aria-hidden": v,
-            children: j === g.k.HIDDEN ? (0, r.jsx)("div", {
-                className: s()(m.M0, m.Te)
-            }) : j === g.k.UNREAD ? (0, r.jsxs)(c.DUT, {
+            style: S,
+            "aria-hidden": N,
+            children: E === p.k.HIDDEN ? (0, i.jsx)("div", {
+                className: r()(m.M0, m.Te)
+            }) : E === p.k.UNREAD ? (0, i.jsxs)(c.DUT, {
                 className: m.M0,
-                onClick: C,
-                children: ["bottom" === t ? (0, r.jsx)(c.abt, {
+                onClick: T,
+                children: ["bottom" === t ? (0, i.jsx)(c.abt, {
                     size: "custom",
                     color: "currentColor",
                     className: m.z_,
                     height: 14,
                     width: 14
-                }) : (0, r.jsx)(c.tN5, {
+                }) : (0, i.jsx)(c.tN5, {
                     size: "custom",
                     color: "currentColor",
                     className: m.z_,
                     height: 14,
                     width: 14
-                }), (0, r.jsx)(c.Text, {
+                }), (0, i.jsx)(c.Text, {
                     variant: "text-xs/semibold",
                     color: "interactive-text-default",
                     className: m.pM,
-                    children: f.intl.string(f.t.FCRiT3)
+                    children: g.intl.string(g.t.FCRiT3)
                 })]
-            }) : j === g.k.MENTIONS ? (0, r.jsx)(c.DUT, {
-                className: s()(m.M0, m.vU),
-                onClick: C,
-                children: (0, r.jsx)(c.Text, {
+            }) : E === p.k.MENTIONS ? (0, i.jsx)(c.DUT, {
+                className: r()(m.M0, m.vU),
+                onClick: T,
+                children: (0, i.jsx)(c.Text, {
                     variant: "text-xs/semibold",
                     color: "badge-text-brand",
                     className: m.pM,
-                    children: f.intl.format(f.t.EQcLyp, {
-                        count: x
+                    children: g.intl.format(g.t.EQcLyp, {
+                        count: I
                     })
                 })
-            }) : j === g.k.VOICE_CHANNELS ? (0, r.jsx)(A, {
-                jumpToVoiceChannels: u,
+            }) : E === p.k.VOICE_CHANNELS ? (0, i.jsx)(f, {
+                jumpToVoiceChannels: d,
                 guildChannels: n,
-                guildChannelsVersion: i
+                guildChannelsVersion: l
             }) : void 0
         })
     })

@@ -1,54 +1,52 @@
 /** chunk id: 590089, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     U: () => c
-}), n(228524);
-var r = n(627968);
+});
+var i = n(627968);
 n(64700);
-var i = n(503698),
-    l = n.n(i),
-    s = n(158954),
-    a = n(397927),
+var s = n(503698),
+    a = n.n(s),
+    r = n(158954),
+    l = n(397927),
     o = n(411809);
 
 function c(e) {
     let {
-        headingColor: t = "text-strong",
+        ref: t,
         leadingElement: n,
-        primaryTrailingElement: i,
-        secondaryTrailingElement: c,
-        title: d,
-        description: u,
-        onClick: _,
-        ref: p,
-        style: m
+        trailingElement: s,
+        title: c,
+        description: d,
+        onClick: u,
+        style: _
     } = e;
-    return (0, r.jsxs)(a.DUT, {
-        className: l()(o.EA, {
-            [o.vk]: null != _
+    return (0, i.jsxs)(l.DUT, {
+        className: a()(o.EA, {
+            [o.vk]: null != u
         }),
-        onClick: _,
-        innerRef: p,
-        style: m,
-        children: [null != n && (0, r.jsx)("div", {
+        onClick: u,
+        innerRef: t,
+        style: _,
+        children: [null != n && (0, i.jsx)("div", {
             className: o._y,
             children: n
-        }), (0, r.jsxs)("div", {
+        }), (0, i.jsxs)("div", {
             className: o.jw,
-            children: [(0, r.jsx)("div", {
+            children: [(0, i.jsx)("div", {
                 className: o.eg,
-                children: (0, r.jsx)(s.DZT, {
+                children: (0, i.jsx)(r.DZT, {
                     variant: "heading-md/medium",
-                    color: t,
-                    children: d
+                    color: "text-strong",
+                    children: c
                 })
-            }), null != u && (0, r.jsx)(s.EYj, {
+            }), null != d && (0, i.jsx)(r.EYj, {
                 variant: "text-sm/normal",
                 color: "text-subtle",
-                children: u
+                children: d
             })]
-        }), (null != i || null != c) && (0, r.jsxs)("div", {
-            className: o.fW,
-            children: [i, c]
+        }), null != s && (0, i.jsx)("div", {
+            className: o.EY,
+            children: s
         })]
     })
 }

@@ -16,5 +16,8 @@ e.exports = {
     p0: "duration__49ef0",
     vR: "tabs__49ef0",
     Mf: "tab__49ef0",
-    jP: "tabSelected__49ef0"
+    jP: "tabSelected__49ef0",
+    OD: "unreadFavoritesDot__49ef0",
+    S: "unreadFavoritesDotPulsing__49ef0",
+    Me: "favoritesDotPulse__49ef0"
 }

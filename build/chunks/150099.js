@@ -1,62 +1,62 @@
 /** chunk id: 150099, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => _
 });
-var r = n(627968),
-    i = n(64700),
-    l = n(311907),
+var i = n(627968),
+    l = n(64700),
+    r = n(311907),
     a = n(397927),
     s = n(857182),
     o = n(572957),
-    c = n(419056),
-    u = n(985018),
-    d = n(420779);
-let p = e => {
+    d = n(419056),
+    c = n(985018),
+    u = n(420779);
+let _ = e => {
     let {
         channelId: t,
         messageId: n
-    } = e, p = (0, l.bG)([o.A], () => o.A.shouldShowBump(n), [n]), m = i.useCallback(() => {
-        s.A.dismissPublishBump(n), (0, c.A)(t, n)
-    }, [t, n]), f = i.useCallback(() => {
+    } = e, _ = (0, r.bG)([o.A], () => o.A.shouldShowBump(n), [n]), m = l.useCallback(() => {
+        s.A.dismissPublishBump(n), (0, d.A)(t, n)
+    }, [t, n]), h = l.useCallback(() => {
         s.A.dismissPublishBump(n)
-    }, [n]), g = i.useCallback(() => {
+    }, [n]), p = l.useCallback(() => {
         s.A.permanentlyHidePublishBump(t)
     }, [t]);
-    return p ? (0, r.jsxs)("div", {
-        className: d.kL,
-        children: [(0, r.jsxs)("div", {
-            className: d.mp,
-            children: [(0, r.jsx)(a.koX, {
+    return _ ? (0, i.jsxs)("div", {
+        className: u.kL,
+        children: [(0, i.jsxs)("div", {
+            className: u.mp,
+            children: [(0, i.jsx)(a.koX, {
                 size: "xs",
                 color: "currentColor",
-                className: d.Kk
-            }), (0, r.jsx)(a.Heading, {
+                className: u.Kk
+            }), (0, i.jsx)(a.Heading, {
                 variant: "heading-sm/normal",
-                className: d.dS,
-                children: u.intl.string(u.t.hasZoU)
-            }), (0, r.jsx)(a.Text, {
+                className: u.dS,
+                children: c.intl.string(c.t.hasZoU)
+            }), (0, i.jsx)(a.Text, {
                 color: "text-brand",
-                className: d.mk,
+                className: u.mk,
                 variant: "text-sm/normal",
-                children: (0, r.jsx)(a.DUT, {
+                children: (0, i.jsx)(a.DUT, {
                     onClick: m,
-                    children: u.intl.string(u.t.MFGE51)
+                    children: c.intl.string(c.t.MFGE51)
                 })
-            }), (0, r.jsx)(a.DUT, {
-                onClick: f,
-                children: (0, r.jsx)(a.aXh, {
+            }), (0, i.jsx)(a.DUT, {
+                onClick: h,
+                children: (0, i.jsx)(a.aXh, {
                     size: "xs",
                     color: "currentColor",
-                    className: d.ut
+                    className: u.ut
                 })
             })]
-        }), (0, r.jsx)(a.Text, {
+        }), (0, i.jsx)(a.Text, {
             color: "text-muted",
-            className: d.qx,
+            className: u.qx,
             variant: "text-sm/normal",
-            children: (0, r.jsx)(a.DUT, {
-                onClick: g,
-                children: u.intl.string(u.t.efSkDm)
+            children: (0, i.jsx)(a.DUT, {
+                onClick: p,
+                children: c.intl.string(c.t.efSkDm)
             })
         })]
     }) : null

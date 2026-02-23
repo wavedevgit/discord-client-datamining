@@ -1,57 +1,57 @@
-/** chunk id: 719335, original params: e,t,a (module,exports,require) **/
-a.d(t, {
-    A: () => x
+/** chunk id: 719335, original params: t,e,n (module,exports,require) **/
+n.d(e, {
+    A: () => R
 });
-var n = a(627968),
-    i = a(64700),
-    c = a(311907),
-    o = a(421380),
-    r = a(793574),
-    s = a(688810),
-    l = a(465794),
-    d = a(721127),
-    u = a(287809),
-    p = a(954571),
-    _ = a(927578),
-    m = a(652215),
-    A = a(339984),
-    f = a(788868),
-    g = a(985018),
-    h = a(560207);
+var i = n(627968),
+    a = n(64700),
+    o = n(311907),
+    r = n(421380),
+    s = n(793574),
+    l = n(688810),
+    A = n(465794),
+    c = n(721127),
+    d = n(287809),
+    _ = n(954571),
+    u = n(927578),
+    L = n(652215),
+    m = n(339984),
+    g = n(788868),
+    E = n(985018),
+    N = n(560207);
 
-function x(e) {
+function R(t) {
     let {
-        analyticsSection: t,
-        type: a
-    } = e, x = (0, c.bG)([u.default], () => u.default.getCurrentUser()), b = _.Ay.canUseAnimatedAvatar(x), N = _.Ay.canUsePremiumProfileCustomization(x), y = a === A.HL.BANNER && N || a === A.HL.AVATAR && b, {
-        sourceAnalyticsLocations: E
-    } = (0, s.Ay)(r.A.PREMIUM_PREVIEW_UPSELL_HEADER);
-    if (i.useEffect(() => {
-            y || p.default.track(m.HAw.PREMIUM_UPSELL_VIEWED, {
-                type: t,
-                location_stack: E
+        analyticsSection: e,
+        type: n
+    } = t, R = (0, o.bG)([d.default], () => d.default.getCurrentUser()), C = u.Ay.canUseAnimatedAvatar(R), f = u.Ay.canUsePremiumProfileCustomization(R), x = n === m.HL.BANNER && f || n === m.HL.AVATAR && C, {
+        sourceAnalyticsLocations: p
+    } = (0, l.Ay)(s.A.PREMIUM_PREVIEW_UPSELL_HEADER);
+    if (a.useEffect(() => {
+            x || _.default.track(L.HAw.PREMIUM_UPSELL_VIEWED, {
+                type: e,
+                location_stack: p
             })
-        }, [y, t, E]), y) return null;
-    let j = (0, n.jsx)(l.A, {
-        className: h.__invalid_getNitroLink,
-        size: o.$n.Sizes.SMALL,
-        look: o.$n.Looks.LINK,
-        color: o.$n.Colors.LINK,
-        subscriptionTier: f.pe.TIER_2,
+        }, [x, e, p]), x) return null;
+    let v = (0, i.jsx)(A.A, {
+        className: N.__invalid_getNitroLink,
+        size: r.$n.Sizes.SMALL,
+        look: r.$n.Looks.LINK,
+        color: r.$n.Colors.LINK,
+        subscriptionTier: g.pe.TIER_2,
         textOptions: {
-            textOverride: g.intl.format(g.t["944tDv"], {})
+            textOverride: E.intl.format(E.t["944tDv"], {})
         },
         showIcon: !1,
         premiumModalAnalyticsLocation: {
-            section: t,
-            object: m.ZSU.BUTTON_CTA
+            section: e,
+            object: L.ZSU.BUTTON_CTA
         },
         disableShine: !0
     });
-    return (0, n.jsx)(d.A, {
+    return (0, i.jsx)(c.A, {
         reducedRightPadding: !0,
-        className: h.C,
-        text: g.intl.format(g.t.Og803x, {}),
-        button: j
+        className: N.C,
+        text: E.intl.format(E.t.Og803x, {}),
+        button: v
     })
 }

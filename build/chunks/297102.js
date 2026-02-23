@@ -1,106 +1,89 @@
-/** chunk id: 297102, original params: t,e,n (module,exports,require) **/
-n.d(e, {
-    default: () => O
-}), n(321073);
-var i = n(627968),
-    r = n(64700),
-    l = n(835245),
-    o = n(158954),
-    s = n(397927),
-    a = n(632738),
-    c = n(975571),
-    d = n(935649),
-    u = n(847599),
-    g = n(870383),
-    p = n(81091),
-    m = n(36149),
-    f = n(737567),
-    _ = n(652215),
-    b = n(239093),
-    E = n(985018),
-    R = n(935568),
-    x = n(700129);
-let O = function(t) {
+/** chunk id: 297102, original params: t,e,i (module,exports,require) **/
+i.d(e, {
+    default: () => f
+}), i(321073);
+var n = i(627968),
+    s = i(64700),
+    r = i(835245),
+    l = i(158954),
+    o = i(397927),
+    a = i(632738),
+    d = i(975571),
+    u = i(935649),
+    c = i(847599),
+    g = i(870383),
+    R = i(36149),
+    m = i(737567),
+    p = i(652215),
+    E = i(239093),
+    _ = i(985018),
+    x = i(935568),
+    T = i(700129);
+let f = function(t) {
     let {
         transitionState: e,
-        entryPoint: n,
-        onClose: O
+        entryPoint: i,
+        onClose: f
     } = t, {
-        loading: T,
+        loading: A,
         initiateAgeVerification: h
-    } = (0, m.nn)({
-        onComplete: O,
-        entryPoint: u.q1.RETRY_MODAL,
+    } = (0, R.nn)({
+        onComplete: f,
+        entryPoint: c.q1.RETRY_MODAL,
         isRetry: !0
-    }), A = r.useMemo(() => (0, l.A)(), []), v = (0, f.I)("age_verification_retry_modal"), y = (0, p.t)("age_verification_retry_modal"), k = (0, g.W)(E.intl.string(E.t["5l3R/m"]), E.intl.string(E.t.JSdbBe)), L = (0, g.W)(E.intl.string(E.t.O7SO0D), E.intl.string(E.t.JNK1ue)), j = (0, g.W)(E.intl.string(E.t.RtOE1v), E.intl.string(E.t.mFvt9M));
-    r.useEffect(() => {
-        (0, u.Bs)(A, u.WU.RETRY, n)
-    }, [A, n]);
-    let M = r.useMemo(() => {
+    }), b = s.useMemo(() => (0, r.A)(), []), L = (0, m.I)("age_verification_retry_modal"), k = (0, g.W)(_.intl.string(_.t["5l3R/m"]), _.intl.string(_.t.JSdbBe)), M = (0, g.W)(_.intl.string(_.t.O7SO0D), _.intl.string(_.t.JNK1ue)), C = (0, g.W)(_.intl.string(_.t.RtOE1v), _.intl.string(_.t.mFvt9M));
+    s.useEffect(() => {
+        (0, c.Bs)(b, c.WU.RETRY, i)
+    }, [b, i]);
+    let O = s.useMemo(() => {
         let t = [{
-            title: E.intl.string(E.t.FYkioq),
-            description: y ? null : E.intl.string(E.t.xMfbRz),
-            buttonText: j,
-            buttonLoading: T,
+            title: _.intl.string(_.t.FYkioq),
+            description: _.intl.string(_.t.xMfbRz),
+            buttonText: C,
+            buttonLoading: A,
             onButtonPress: () => {
-                h(), (0, u.St)(A, u.WU.RETRY, u._7.GET_STARTED)
+                h(), (0, c.St)(b, c.WU.RETRY, c._7.GET_STARTED)
             }
         }];
-        return v || t.push({
-            title: E.intl.string(E.t["LZO+Hd"]),
-            description: E.intl.string(E.t.N2mHaK),
-            buttonText: E.intl.string(E.t["LZO+Hd"]),
-            buttonLoading: T,
+        return L || t.push({
+            title: _.intl.string(_.t["LZO+Hd"]),
+            description: _.intl.string(_.t.N2mHaK),
+            buttonText: _.intl.string(_.t["LZO+Hd"]),
+            buttonLoading: A,
             onButtonPress: () => {
-                d.A.openUrl(b.d$.APPEALS_LINK), (0, u.St)(A, u.WU.RETRY, u._7.MANUAL_REVIEW_REQUEST)
+                u.A.openUrl(E.d$.APPEALS_LINK), (0, c.St)(b, c.WU.RETRY, c._7.MANUAL_REVIEW_REQUEST)
             }
         }), t
-    }, [h, A, T, v, y, j]);
-    return (0, i.jsx)(o.ExpressiveModal, {
+    }, [h, b, A, L, C]);
+    return (0, n.jsx)(l.ExpressiveModal, {
         transitionState: e,
-        onClose: O,
+        onClose: f,
         gradientColor: "blue",
         graphic: {
-            src: x.A,
+            src: T.A,
             type: "image"
         },
         title: k,
-        subtitle: L,
-        children: (0, i.jsxs)(s.BJc, {
+        subtitle: M,
+        children: (0, n.jsxs)(o.BJc, {
             direction: "vertical",
             gap: 16,
-            children: [(0, i.jsx)(s.po8, {
-                messageType: s.YCn.INFO,
-                className: R.e,
+            children: [(0, n.jsx)(o.po8, {
+                messageType: o.YCn.INFO,
+                className: x.e,
                 textColor: "text-feedback-info",
                 textVariant: "text-sm/medium",
-                children: E.intl.string(E.t.El4aXl)
-            }), M.map((t, e) => (0, i.jsx)(a.PQ, function(t) {
-                for (var e = 1; e < arguments.length; e++) {
-                    var n = null != arguments[e] ? arguments[e] : {},
-                        i = Object.keys(n);
-                    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(t) {
-                        return Object.getOwnPropertyDescriptor(n, t).enumerable
-                    }))), i.forEach(function(e) {
-                        var i;
-                        i = n[e], e in t ? Object.defineProperty(t, e, {
-                            value: i,
-                            enumerable: !0,
-                            configurable: !0,
-                            writable: !0
-                        }) : t[e] = i
-                    })
-                }
-                return t
-            }({
-                variant: "clickable"
-            }, t), e)), (0, i.jsx)(s.Text, {
+                children: _.intl.string(_.t.El4aXl)
+            }), O.map((t, e) => (0, n.jsx)(a.PQ, {
+                variant: "clickable",
+                ...t
+            }, e)), (0, n.jsx)(o.Text, {
                 variant: "text-xs/medium",
                 color: "text-muted",
-                className: R.Z,
-                children: E.intl.format(E.t["L+FgkZ"], {
+                className: x.Z,
+                children: _.intl.format(_.t["L+FgkZ"], {
                     handleOnHelpUrlHook: () => {
-                        d.A.openUrl(c.A.getArticleURL(_.MVz.TIGGER_PAWTECT_LEARN_MORE)), (0, u.St)(A, u.WU.RETRY, u._7.LEARN_MORE)
+                        u.A.openUrl(d.A.getArticleURL(p.MVz.TIGGER_PAWTECT_LEARN_MORE)), (0, c.St)(b, c.WU.RETRY, c._7.LEARN_MORE)
                     }
                 })
             })]

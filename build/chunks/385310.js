@@ -2,88 +2,85 @@
 n.d(t, {
     A: () => h
 });
-var r = n(627968),
-    i = n(64700),
+var i = n(627968),
+    r = n(64700),
     l = n(311907),
     a = n(990078),
     s = n(397927),
     o = n(624458),
-    c = n(212455),
-    u = n(332118),
-    d = n(985018),
-    p = n(400783);
+    d = n(212455),
+    c = n(332118),
+    u = n(985018),
+    A = n(400783);
 let h = e => {
     let {
         headerId: t,
         reapplyText: n,
         onReapply: h,
-        confirmText: f,
-        onWithdrawApplication: g,
-        rejectionReason: m = null,
-        guild: A = null
-    } = e, _ = (0, l.bG)([c.A], () => {
-        var e;
-        return c.A.getCooldown(null != (e = null == A ? void 0 : A.id) ? e : "0")
-    }), {
-        canReapply: b,
-        isLoading: E
-    } = (0, u.f)(null == A ? void 0 : A.id);
-    i.useEffect(() => {
-        null == _ && null != A && o.A.fetchJoinRequestCooldown(A.id)
-    }, [_, A]);
-    let O = (null != _ ? _ : 0) > 0,
-        y = O && null != _ ? Math.ceil((1e3 * _ - Date.now()) / 864e5) : 0;
-    return (0, r.jsxs)("div", {
-        className: p.EL,
-        children: [(0, r.jsx)("div", {
-            className: p.P0,
-            children: (0, r.jsx)(s.aoi, {
+        confirmText: _,
+        onWithdrawApplication: m,
+        rejectionReason: p = null,
+        guild: g = null
+    } = e, E = (0, l.bG)([d.A], () => d.A.getCooldown(g?.id ?? "0")), {
+        canReapply: I,
+        isLoading: f
+    } = (0, c.f)(g?.id);
+    r.useEffect(() => {
+        null == E && null != g && o.A.fetchJoinRequestCooldown(g.id)
+    }, [E, g]);
+    let C = (E ?? 0) > 0,
+        T = C && null != E ? Math.ceil((1e3 * E - Date.now()) / 864e5) : 0;
+    return (0, i.jsxs)("div", {
+        className: A.EL,
+        children: [(0, i.jsx)("div", {
+            className: A.P0,
+            children: (0, i.jsx)(s.aoi, {
                 size: "md",
                 color: s.LU0.colors.INTERACTIVE_TEXT_ACTIVE
             })
-        }), (0, r.jsxs)("div", {
-            className: p.bc,
-            children: [(0, r.jsx)(s.Heading, {
+        }), (0, i.jsxs)("div", {
+            className: A.bc,
+            children: [(0, i.jsx)(s.Heading, {
                 id: t,
                 variant: "heading-lg/semibold",
                 color: "text-strong",
-                children: (null == A ? void 0 : A.name) != null ? d.intl.formatToPlainString(d.t["P+/gzA"], {
-                    guildName: A.name
-                }) : d.intl.string(d.t.gBPcuP)
-            }), null != m && "" !== m ? (0, r.jsxs)(s.Text, {
+                children: g?.name != null ? u.intl.formatToPlainString(u.t["P+/gzA"], {
+                    guildName: g.name
+                }) : u.intl.string(u.t.gBPcuP)
+            }), null != p && "" !== p ? (0, i.jsxs)(s.Text, {
                 variant: "text-md/medium",
                 color: "text-default",
-                children: [(0, r.jsx)("span", {
-                    className: p.Wj,
-                    children: d.intl.string(d.t.cf1psW)
-                }), (0, r.jsx)("span", {
-                    children: m
+                children: [(0, i.jsx)("span", {
+                    className: A.Wj,
+                    children: u.intl.string(u.t.cf1psW)
+                }), (0, i.jsx)("span", {
+                    children: p
                 })]
             }) : null]
-        }), (0, r.jsxs)("div", {
-            className: p.Ow,
-            children: [b || E ? (0, r.jsx)(a.m, {
+        }), (0, i.jsxs)("div", {
+            className: A.Ow,
+            children: [I || f ? (0, i.jsx)(a.m, {
                 asContainer: !0,
-                text: O ? d.intl.formatToPlainString(d.t.A0f0P7, {
-                    days: y
+                text: C ? u.intl.formatToPlainString(u.t.A0f0P7, {
+                    days: T
                 }) : null,
-                "aria-label": O ? d.intl.formatToPlainString(d.t.A0f0P7, {
-                    days: y
+                "aria-label": C ? u.intl.formatToPlainString(u.t.A0f0P7, {
+                    days: T
                 }) : void 0,
-                children: (0, r.jsx)(s.Button, {
+                children: (0, i.jsx)(s.Button, {
                     onClick: h,
                     variant: "secondary",
                     size: "md",
-                    loading: null == _ || E,
-                    disabled: O || E,
+                    loading: null == E || f,
+                    disabled: C || f,
                     text: n,
                     fullWidth: !0
                 })
-            }) : null, (0, r.jsx)(s.Button, {
-                onClick: () => g(b || E),
+            }) : null, (0, i.jsx)(s.Button, {
+                onClick: () => m(I || f),
                 variant: "critical-primary",
                 size: "md",
-                text: f,
+                text: _,
                 fullWidth: !0
             })]
         })]

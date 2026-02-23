@@ -1,33 +1,32 @@
 /** chunk id: 898612, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => p
+    A: () => f
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(397927),
-    a = n(963027),
+var l = n(397927),
+    r = n(963027),
     o = n(713654),
-    s = n(403362),
-    l = n(739455),
-    c = n(2242),
-    u = n(985018),
+    a = n(403362),
+    s = n(739455),
+    u = n(2242),
+    c = n(985018),
     d = n(758382);
 
-function f(e) {
+function m(e) {
     let {
         channelId: t
-    } = e, n = (0, l.fE)(t);
-    if (null == n) return "[".concat(u.intl.string(u.t.bz1PZX), "]");
-    let s = n.isMediaChannel() ? i.xfq : (0, o._U)(n.type);
-    return (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(i.AC4, {
-            children: (0, a.Ay)({
+    } = e, n = (0, s.fE)(t);
+    if (null == n) return `[${c.intl.string(c.t.bz1PZX)}]`;
+    let a = n.isMediaChannel() ? l.xfq : (0, o._U)(n.type);
+    return (0, i.jsxs)(i.Fragment, {
+        children: [(0, i.jsx)(l.AC4, {
+            children: (0, r.Ay)({
                 channel: n
             })
-        }), (0, r.jsxs)("div", {
+        }), (0, i.jsxs)("div", {
             "aria-hidden": !0,
-            children: [null != s && (0, r.jsx)(s, {
+            children: [null != a && (0, i.jsx)(a, {
                 className: d.K,
                 "aria-hidden": !0
             }), n.name]
@@ -35,15 +34,15 @@ function f(e) {
     })
 }
 
-function p(e) {
+function f(e) {
     switch (e.ref_type) {
-        case c.bN.CHANNEL:
-            return (0, r.jsx)(f, {
+        case u.bN.CHANNEL:
+            return (0, i.jsx)(m, {
                 channelId: e.ref_id
             });
-        case c.bN.INTANGIBLE:
+        case u.bN.INTANGIBLE:
             return e.name;
         default:
-            (0, s.xb)(e)
+            (0, a.xb)(e)
     }
 }

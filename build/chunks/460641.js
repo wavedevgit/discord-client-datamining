@@ -1,58 +1,58 @@
 /** chunk id: 460641, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => b
+    A: () => h
 });
 var i = n(627968),
-    r = n(582754),
-    l = n(397927),
+    l = n(582754),
+    s = n(397927),
     a = n(736653),
-    s = n(235986),
+    r = n(235986),
     o = n(975571),
-    c = n(267001),
-    d = n(652215),
+    d = n(267001),
+    c = n(652215),
     u = n(985018),
-    p = n(436057),
-    m = n(734087),
-    g = n(609621);
+    m = n(436057),
+    g = n(734087),
+    x = n(609621);
 
-function b(e) {
+function h(e) {
     var t;
     let n, {
-            followedChannelWebhooks: b,
-            editedWebhook: f,
-            selectableWebhookChannels: h,
-            errors: x,
-            canNavigate: j
+            followedChannelWebhooks: h,
+            editedWebhook: p,
+            selectableWebhookChannels: A,
+            errors: b,
+            canNavigate: _
         } = e,
-        O = (0, a.Ay)();
+        f = (0, a.Ay)();
     return (0, i.jsxs)("div", {
-        children: [(0, i.jsx)(l.Text, {
+        children: [(0, i.jsx)(s.Text, {
             variant: "text-sm/normal",
             children: u.intl.format(u.t["5u+aV1"], {
-                helpdeskArticle: o.A.getArticleURL(d.MVz.CHANNEL_FOLLOWING)
+                helpdeskArticle: o.A.getArticleURL(c.MVz.CHANNEL_FOLLOWING)
             })
-        }), (0, i.jsx)(l.cGx, {
-            className: p.zN
-        }), b.length > 0 ? (0, i.jsx)(c.A, {
-            webhooks: b,
-            editedWebhook: f,
-            selectableWebhookChannels: h,
-            errors: x,
-            canNavigate: j
-        }) : (t = () => open(o.A.getArticleURL(d.MVz.CHANNEL_FOLLOWING)), n = (0, r.Mw)(O) ? m : g, (0, i.jsxs)(s.A, {
-            direction: s.A.Direction.VERTICAL,
-            align: s.A.Align.CENTER,
+        }), (0, i.jsx)(s.cGx, {
+            className: m.zN
+        }), h.length > 0 ? (0, i.jsx)(d.A, {
+            webhooks: h,
+            editedWebhook: p,
+            selectableWebhookChannels: A,
+            errors: b,
+            canNavigate: _
+        }) : (t = () => open(o.A.getArticleURL(c.MVz.CHANNEL_FOLLOWING)), n = (0, l.Mw)(f) ? g : x, (0, i.jsxs)(r.A, {
+            direction: r.A.Direction.VERTICAL,
+            align: r.A.Align.CENTER,
             children: [(0, i.jsx)("img", {
                 alt: "",
                 src: n,
-                className: p.QT
-            }), (0, i.jsx)(l.Heading, {
+                className: m.QT
+            }), (0, i.jsx)(s.Heading, {
                 variant: "heading-md/semibold",
                 children: u.intl.string(u.t.gzuVH0)
             }), (0, i.jsx)("div", {
                 "data-button-hoisted-classname-wrapper": !0,
-                className: p.nM,
-                children: (0, i.jsx)(l.Button, {
+                className: m.nM,
+                children: (0, i.jsx)(s.Button, {
                     variant: "primary",
                     text: u.intl.string(u.t["ZwSt+T"]),
                     onClick: t

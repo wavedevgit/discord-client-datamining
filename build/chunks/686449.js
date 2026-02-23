@@ -1,11 +1,11 @@
-/** chunk id: 686449, original params: e,t,r (module,exports,require) **/
-r.d(t, {
-    A: () => c
+/** chunk id: 686449, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    A: () => r
 });
-var n = r(73153),
-    i = r(931260),
-    o = r(543465);
-let c = {
+var n = i(73153),
+    l = i(931260),
+    s = i(543465);
+let r = {
     update(e) {
         n.h.dispatch({
             type: "CHANNEL_COLLAPSE",
@@ -13,8 +13,8 @@ let c = {
         })
     },
     toggleCollapseGuild(e) {
-        i.A.saveUserGuildSettings(e, {
-            hide_muted_channels: !o.Ay.isGuildCollapsed(e)
+        l.A.saveUserGuildSettings(e, {
+            hide_muted_channels: !s.Ay.isGuildCollapsed(e)
         }), n.h.dispatch({
             type: "GUILD_TOGGLE_COLLAPSE_MUTED",
             guildId: e

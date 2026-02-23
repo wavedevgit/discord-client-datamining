@@ -1,15 +1,15 @@
-/** chunk id: 937409, original params: e,A,t (module,exports,require) **/
-t.d(A, {
-    D: () => l
+/** chunk id: 937409, original params: A,e,t (module,exports,require) **/
+t.d(e, {
+    D: () => r
 });
-var r = t(8424),
-    n = t(683182);
-let l = [{
+var n = t(8424),
+    a = t(683182);
+let r = [{
     name: "cool-frog",
     alt: "A cool frog",
-    data: r.A
+    data: n.A
 }, {
     name: "cute-bunny",
     alt: "A cute bunny",
-    data: n.A
+    data: a.A
 }]

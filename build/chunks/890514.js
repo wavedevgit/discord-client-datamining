@@ -1,67 +1,61 @@
 /** chunk id: 890514, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    S: () => m
+    S: () => o
 });
-var r = n(627968),
-    i = n(64700),
+var i = n(627968),
+    s = n(64700),
     l = n(397927),
-    s = n(997509),
+    r = n(997509),
     a = n(985018);
-let o = "".concat(60),
-    c = "".concat(300),
-    d = "".concat(900),
-    u = "".concat(1800),
-    g = "".concat(3600);
 
-function m(e) {
-    var t;
+function o(e) {
     let {
-        canManageGuild: n,
-        afkTimeout: m,
-        afkChannelId: p,
-        label: f
-    } = e, h = i.useMemo(() => [{
+        canManageGuild: t,
+        afkTimeout: n,
+        afkChannelId: o,
+        label: d
+    } = e, c = s.useMemo(() => [{
         id: "1min",
-        value: o,
+        value: "60",
         label: a.intl.formatToPlainString(a.t.iXLF9W, {
             minutes: 1
         })
     }, {
         id: "5min",
-        value: c,
+        value: "300",
         label: a.intl.formatToPlainString(a.t.iXLF9W, {
             minutes: 5
         })
     }, {
         id: "15min",
-        value: d,
+        value: "900",
         label: a.intl.formatToPlainString(a.t.iXLF9W, {
             minutes: 15
         })
     }, {
         id: "30min",
-        value: u,
+        value: "1800",
         label: a.intl.formatToPlainString(a.t.iXLF9W, {
             minutes: 30
         })
     }, {
         id: "1hr",
-        value: g,
+        value: "3600",
         label: a.intl.formatToPlainString(a.t.xCjYxK, {
             hours: 1
         })
-    }], []), b = i.useCallback(e => {
-        s.A.updateGuild({
+    }], []), u = s.useCallback(e => {
+        r.A.updateGuild({
             afkTimeout: parseInt(e, 10)
         })
     }, []);
-    return (0, r.jsx)(l.l6P, {
+    return (0, i.jsx)(l.l6P, {
         selectionMode: "single",
-        label: f,
-        value: null != (t = null == m ? void 0 : m.toString()) ? t : void 0,
-        options: h,
-        disabled: null == p || !n,
-        onSelectionChange: b
+        label: d,
+        value: n?.toString() ?? void 0,
+        options: c,
+        disabled: null == o || !t,
+        onSelectionChange: u
     })
 }

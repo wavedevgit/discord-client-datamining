@@ -1,8 +1,8 @@
 /** chunk id: 635344, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    n: () => r
+    n: () => i
 });
-let r = {
+let i = {
     LEAGUE_OF_LEGENDS: "1402418696126992445",
     VALORANT: "700136079562375258",
     PEAK: "1384276457596911676",
@@ -14,4 +14,4 @@ let r = {
     BATTLEFIELD_6: "1402692356343599254",
     SILKSONG: "1413176957381771337"
 };
-Object.values(r)
+Object.values(i)

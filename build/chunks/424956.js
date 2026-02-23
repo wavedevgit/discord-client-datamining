@@ -2,23 +2,23 @@
 n.d(t, {
     p: () => l
 });
-var r = n(64700),
-    i = n(965660);
+var i = n(64700),
+    r = n(965660);
 
 function l(e) {
     let {
         guildDiscoveryCardSeenManager: t,
         loadId: n
-    } = e, l = r.useCallback((e, r) => {
-        t.markAsSeen(r, e, n)
-    }, [t, n]), a = r.useCallback((e, t, r, l) => (0, i.Wl)({
+    } = e, l = i.useCallback((e, i) => {
+        t.markAsSeen(i, e, n)
+    }, [t, n]), a = i.useCallback((e, t, i, l) => (0, r.Wl)({
         loadId: n,
         guildId: e,
         index: t,
-        categoryId: r,
+        categoryId: i,
         analyticsLocation: l
     }), [n]);
-    return r.useMemo(() => ({
+    return i.useMemo(() => ({
         onGuildCardSeen: l,
         onGuildCardClick: a
     }), [a, l])

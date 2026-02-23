@@ -1,33 +1,31 @@
 /** chunk id: 286911, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => c
-}), n(114821), n(339614), n(896048), n(321073), n(693327), n(554719), n(680155), n(323874), n(14289), n(35956), n(228524);
-var r = n(64700),
-    l = n(417597),
-    i = n(355622),
+    A: () => d
+}), n(321073), n(323874), n(14289), n(35956);
+var l = n(64700),
+    i = n(417597),
+    s = n(355622),
     a = n(522602),
-    s = n(304162),
+    r = n(304162),
     o = n(835134);
 
-function c(e, t) {
-    var n, c;
+function d(e, t) {
     let {
-        mediaAttachments: d,
-        hasThumbnail: u
+        mediaAttachments: n,
+        hasThumbnail: d
     } = function(e) {
-        let [t, n] = r.useState(null), o = (0, l.yK)([a.A], () => {
-            let t = a.A.getUploads(e.id, i.oU.CREATE_FORUM_POST.drafts.type),
+        let [t, n] = l.useState(null), o = (0, i.yK)([a.A], () => {
+            let t = a.A.getUploads(e.id, s.oU.CREATE_FORUM_POST.drafts.type),
                 n = t.find(e => e.isThumbnail);
             return null != n ? [n] : t.filter(e => e.isVideo || e.isImage)
-        }), c = r.useMemo(() => o.some(e => e.isThumbnail), [o]);
-        return r.useEffect(() => {
+        }), d = l.useMemo(() => o.some(e => e.isThumbnail), [o]);
+        return l.useEffect(() => {
             let e = [];
-            return n(o.slice(0, s.A8).flatMap(t => {
-                var n;
-                let r = null == t || null == (n = t.item) ? void 0 : n.file;
-                if (null == r) return [];
-                let l = URL.createObjectURL(r);
+            return n(o.slice(0, r.A8).flatMap(t => {
+                let n = t?.item?.file;
+                if (null == n) return [];
+                let l = URL.createObjectURL(n);
                 return e.push(l), {
                     id: t.id,
                     src: l,
@@ -42,18 +40,18 @@ function c(e, t) {
             }
         }, [o]), {
             mediaAttachments: t,
-            hasThumbnail: c
+            hasThumbnail: d
         }
-    }(e), m = Math.max(s.A8 - (null != (n = null == d ? void 0 : d.length) ? n : 0), 0), {
-        embeds: h
-    } = (0, o.w)(u, m, t), g = r.useMemo(() => null == h ? void 0 : h.flatMap(e => {
-        let t = (0, s.m3)(e);
+    }(e), c = Math.max(r.A8 - (n?.length ?? 0), 0), {
+        embeds: u
+    } = (0, o.w)(d, c, t), m = l.useMemo(() => u?.flatMap(e => {
+        let t = (0, r.m3)(e);
         return null == t ? [] : {
             id: t,
             src: t,
             spoiler: !1,
             alt: e.title
         }
-    }), [h]), f = [...null != d ? d : []];
-    return !u && m > 0 && f.push(...null != (c = null == g ? void 0 : g.slice(0, m)) ? c : []), f
+    }), [u]), h = [...n ?? []];
+    return !d && c > 0 && h.push(...m?.slice(0, c) ?? []), h
 }

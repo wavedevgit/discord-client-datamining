@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(627968),
     l = n(158954),
     i = n(732955),
-    o = n(397927),
-    s = n(49999),
+    s = n(397927),
+    o = n(49999),
     a = n(333354),
     u = n(985018),
     d = n(279648),
@@ -37,9 +37,9 @@ function p(e) {
                 size: "md",
                 "aria-label": u.intl.string(u.t.cpT0Cq),
                 onClick: () => {
-                    t(s.i.USER_DISMISS)
+                    t(o.i.USER_DISMISS)
                 },
-                icon: o.PGe
+                icon: s.PGe
             })
         })]
     })

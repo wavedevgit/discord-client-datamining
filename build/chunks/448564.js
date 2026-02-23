@@ -1,36 +1,29 @@
 /** chunk id: 448564, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => c
-}), n(896048);
-var r, i = n(311907),
-    l = n(73153);
-
-function s(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-let a = {
+    A: () => a
+});
+var i = n(311907),
+    s = n(73153);
+let l = {
     canSeeEnableMonetizationForGuilds: new Set
 };
-class o extends(r = i.Ay.PersistedStore) {
+class r extends i.Ay.PersistedStore {
+    static displayName = "CreatorMonetizationPersistedStore";
+    static persistKey = "CreatorMonetizationPersistedStore";
+    static migrations = [];
     initialize(e) {
-        null != e && (a.canSeeEnableMonetizationForGuilds = new Set(e.canSeeEnableMonetizationForGuilds))
+        null != e && (l.canSeeEnableMonetizationForGuilds = new Set(e.canSeeEnableMonetizationForGuilds))
     }
     getState() {
-        return a
+        return l
     }
     hasSeenCreatorOnboardingForGuild(e) {
-        return a.canSeeEnableMonetizationForGuilds.has(e)
+        return l.canSeeEnableMonetizationForGuilds.has(e)
     }
 }
-s(o, "displayName", "CreatorMonetizationPersistedStore"), s(o, "persistKey", "CreatorMonetizationPersistedStore"), s(o, "migrations", []);
-let c = new o(l.h, {
+let a = new r(s.h, {
     CREATOR_MONETIZATION_SET_HAS_SEEN_ONBOARDING_FOR_GUILD: function(e) {
-        a.canSeeEnableMonetizationForGuilds.has(e.guildId) || (a.canSeeEnableMonetizationForGuilds = new Set(a.canSeeEnableMonetizationForGuilds).add(e.guildId))
+        l.canSeeEnableMonetizationForGuilds.has(e.guildId) || (l.canSeeEnableMonetizationForGuilds = new Set(l.canSeeEnableMonetizationForGuilds).add(e.guildId))
     }
 })

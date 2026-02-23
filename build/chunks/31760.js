@@ -1,38 +1,38 @@
 /** chunk id: 31760, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    J: () => C,
-    q: () => N
-}), i(228524), i(896048), i(747238);
+    J: () => O,
+    q: () => C
+});
 var n = i(627968),
     l = i(64700),
     s = i(397927),
     r = i(419954),
-    u = i(933297),
-    a = i(780964),
+    a = i(933297),
+    u = i(780964),
     o = i(143177),
     d = i(350017),
-    T = i(819188),
-    A = i(231137),
+    A = i(819188),
+    T = i(231137),
     S = i(151098),
-    c = i(716005),
-    E = i(144010),
-    g = i(175631),
-    _ = i(430443),
+    E = i(716005),
+    g = i(144010),
+    _ = i(175631),
+    c = i(430443),
     I = i(997442),
-    O = i(985018);
+    N = i(985018);
 
-function N(t) {
+function C(t) {
     let {
         label: e,
         description: i,
         placeholder: r,
-        overrideId: u,
-        setOverride: a,
+        overrideId: a,
+        setOverride: u,
         fetchOverride: o
-    } = t, [d, T] = l.useState(null != u ? u : ""), A = l.useRef(null), [S, c] = l.useState(0), E = () => {
-        null != A.current && (clearTimeout(A.current), A.current = null)
+    } = t, [d, A] = l.useState(a ?? ""), T = l.useRef(null), [S, E] = l.useState(0), g = () => {
+        null != T.current && (clearTimeout(T.current), T.current = null)
     };
-    return l.useEffect(() => E, []), (0, n.jsx)(s.D0$, {
+    return l.useEffect(() => g, []), (0, n.jsx)(s.D0$, {
         layout: "horizontal-responsive",
         label: e,
         description: i,
@@ -43,13 +43,13 @@ function N(t) {
             value: d,
             onChange: t => {
                 if (!(t.length > 0) || /^[0-9]+$/.test(t)) {
-                    if (T(t), E(), 0 === t.length) {
-                        c(0), a(null);
+                    if (A(t), g(), 0 === t.length) {
+                        E(0), u(null);
                         return
                     }
-                    A.current = setTimeout(() => {
-                        c(1), o(t).then(e => {
-                            c(null == e ? 2 : 3), null != e && a(t)
+                    T.current = setTimeout(() => {
+                        E(1), o(t).then(e => {
+                            E(null == e ? 2 : 3), null != e && u(t)
                         })
                     }, 500)
                 }
@@ -58,13 +58,13 @@ function N(t) {
         })
     })
 }
-let C = (0, r.zZ)(a.X.DEV_OVERRIDES, {
+let O = (0, r.zZ)(u.X.DEV_OVERRIDES, {
     useTitle: () => "Overrides",
-    buildLayout: () => [_.U, I.l, T.B, A.q, c.g, o.Y, g.s, S.t, E.T, d.s],
+    buildLayout: () => [c.U, I.l, A.B, T.q, E.g, o.Y, _.s, S.t, g.T, d.s],
     useInlineNotice: () => ({
-        type: u.W.INLINE_NOTICE,
+        type: a.lT.INLINE_NOTICE,
         noticeType: "info",
-        useText: () => O.intl.format(O.t.UeZJlg, {
+        useText: () => N.intl.format(N.t.UeZJlg, {
             link: "https://i.dis.gd/dev-settings-changes"
         })
     })

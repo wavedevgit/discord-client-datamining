@@ -1,16 +1,16 @@
 /** chunk id: 790147, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    z: () => T
+    z: () => A
 });
 var n = i(311907),
     l = i(926919),
     s = i(419954),
     r = i(111162),
-    u = i(253932),
-    a = i(780964),
+    a = i(253932),
+    u = i(780964),
     o = i(698723),
     d = i(985018);
-let T = (0, s.zD)(a.X.VOICE_AND_VIDEO_STREAM_INFO_OVERLAY, {
+let A = (0, s.zD)(u.X.VOICE_AND_VIDEO_STREAM_INFO_OVERLAY, {
     useTitle: () => d.intl.string(d.t["0CEP6e"]),
     useSubtitle: () => d.intl.string(d.t["kBXuW+"]),
     useValue: function() {
@@ -23,6 +23,6 @@ let T = (0, s.zD)(a.X.VOICE_AND_VIDEO_STREAM_INFO_OVERLAY, {
         })
     },
     usePredicate: function() {
-        return u.Q_.useSetting()
+        return a.Q_.useSetting()
     }
 })

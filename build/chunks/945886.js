@@ -1,62 +1,44 @@
 /** chunk id: 945886, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => p
-}), n(896048);
-var i, s = n(311907),
-    r = n(73153),
+    A: () => u
+});
+var i = n(311907),
+    s = n(73153),
     l = n(661191),
-    o = n(734057);
+    r = n(734057);
+let a = {},
+    d = a;
 
-function a(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-let d = {},
-    u = d;
-
-function c() {
-    l.default.keys(u).forEach(e => {
-        null == o.A.getChannel(e) && delete u[e]
+function h() {
+    l.default.keys(d).forEach(e => {
+        null == r.A.getChannel(e) && delete d[e]
     })
 }
-class h extends(i = s.Ay.PersistedStore) {
+class o extends i.Ay.PersistedStore {
+    static displayName = "CollapsedVoiceChannelStore";
+    static persistKey = "collapsedChannels";
     initialize(e) {
-        this.waitFor(o.A), u = null != e ? e : d
+        this.waitFor(r.A), d = e ?? a
     }
     getState() {
-        return u
+        return d
     }
     getCollapsed() {
-        return u
+        return d
     }
     isCollapsed(e) {
-        return u[e] || !1
+        return d[e] || !1
     }
 }
-a(h, "displayName", "CollapsedVoiceChannelStore"), a(h, "persistKey", "collapsedChannels");
-let p = new h(r.h, {
-    CONNECTION_OPEN: c,
-    OVERLAY_INITIALIZE: c,
+let u = new o(s.h, {
+    CONNECTION_OPEN: h,
+    OVERLAY_INITIALIZE: h,
     CHANNEL_COLLAPSE: function(e) {
         let {
             channelId: t
         } = e;
-        u[t] ? delete u[t] : u[t] = !0, u = function(e) {
-            for (var t = 1; t < arguments.length; t++) {
-                var n = null != arguments[t] ? arguments[t] : {},
-                    i = Object.keys(n);
-                "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                    return Object.getOwnPropertyDescriptor(n, e).enumerable
-                }))), i.forEach(function(t) {
-                    a(e, t, n[t])
-                })
-            }
-            return e
-        }({}, u)
+        d[t] ? delete d[t] : d[t] = !0, d = {
+            ...d
+        }
     }
 })

@@ -2,104 +2,78 @@
 "use strict";
 n.d(t, {
     A: () => A
-}), n(896048), n(747238), n(492834);
-var r = n(627968),
-    i = n(64700),
-    s = n(492462),
-    l = n(960488),
-    a = n(311907),
-    o = n(830215),
-    c = n(6981),
-    u = n(964486),
-    d = n(351671),
-    h = n(463347),
-    p = n(976860),
-    g = n(961350),
-    f = n(129851),
-    _ = n(652215),
-    m = n(746080);
+});
+var i = n(627968),
+    s = n(64700),
+    r = n(492462),
+    l = n(311907),
+    a = n(830215),
+    o = n(6981),
+    d = n(964486),
+    c = n(351671),
+    u = n(463347),
+    h = n(334465),
+    _ = n(976860),
+    p = n(961350),
+    g = n(129851),
+    m = n(652215),
+    f = n(746080);
 
 function A(e) {
-    var t, n;
-    let A = i.useCallback(t => {
-            var n, r;
-            let i; + ((null == (i = (0, l.B6)(t, {
-                path: _.BVt.CHANNEL(h.pv.guildId(), h.pv.channelId())
-            })) || null == (n = i.params) ? void 0 : n.channelId) !== m.VV.ROLE_SUBSCRIPTIONS) ? (null != (r = e.transitionTo) ? r : p.pX)(t) : p.bG(t)
+    let t = s.useCallback(t => {
+            let n;
+            (n = (0, h.B)(t, {
+                path: m.BVt.CHANNEL(u.pv.guildId(), u.pv.channelId())
+            }), +(n?.params?.channelId !== f.VV.ROLE_SUBSCRIPTIONS)) ? (e.transitionTo ?? _.pX)(t) : _.bG(t)
         }, [e.transitionTo]),
         {
-            isAuthenticated: x,
-            loginStatus: E
-        } = (0, a.cf)([g.default], () => ({
-            isAuthenticated: g.default.isAuthenticated(),
-            loginStatus: g.default.getLoginStatus()
+            isAuthenticated: n,
+            loginStatus: A
+        } = (0, l.cf)([p.default], () => ({
+            isAuthenticated: p.default.isAuthenticated(),
+            loginStatus: p.default.getLoginStatus()
         })),
         {
-            location: v,
-            redirectTo: y
+            location: E,
+            redirectTo: x
         } = e,
-        [b, j] = i.useState(x);
+        [I, v] = s.useState(n);
 
-    function O(e) {
+    function N(e) {
         let {
             handoffKey: t,
             handoffToken: n,
-            handoffSource: r
+            handoffSource: i
         } = e;
-        (0, c.Qh)({
+        (0, o.Qh)({
             handoffKey: t,
             handoffToken: n,
-            handoffSource: r
-        }), j(!1)
+            handoffSource: i
+        }), v(!1)
     }
-    return ((0, u.Ay)(() => {
-        if (null != v) {
+    return ((0, d.Ay)(() => {
+        if (null != E) {
             let {
                 handoff_key: e,
                 handoff_token: t
-            } = (0, s.parse)(v.search);
+            } = (0, r.parse)(E.search);
             if (null != e && null != t) {
-                let n = null != y ? (0, d.Q)(y) : void 0;
-                b ? o.A.logout("handoff", null).finally(() => {
-                    O({
+                let n = null != x ? (0, c.Q)(x) : void 0;
+                I ? a.A.logout("handoff", null).finally(() => {
+                    N({
                         handoffKey: e,
                         handoffToken: t,
                         handoffSource: n
                     })
-                }) : O({
+                }) : N({
                     handoffKey: e,
                     handoffToken: t,
                     handoffSource: n
                 })
             }
         }
-    }), b || E === _.aUe.LOGGING_IN) ? (0, r.jsx)(f.Z, {}) : (0, r.jsx)(f.A, (t = function(e) {
-        for (var t = 1; t < arguments.length; t++) {
-            var n = null != arguments[t] ? arguments[t] : {},
-                r = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                return Object.getOwnPropertyDescriptor(n, e).enumerable
-            }))), r.forEach(function(t) {
-                var r;
-                r = n[t], t in e ? Object.defineProperty(e, t, {
-                    value: r,
-                    enumerable: !0,
-                    configurable: !0,
-                    writable: !0
-                }) : e[t] = r
-            })
-        }
-        return e
-    }({}, e), n = n = {
-        transitionTo: A
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
-        }
-        return n
-    })(Object(n)).forEach(function(e) {
-        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-    }), t))
+    }), I || A === m.aUe.LOGGING_IN) ? (0, i.jsx)(g.Z, {}) : (0, i.jsx)(g.A, {
+        ...e,
+        transitionTo: t
+    })
 }

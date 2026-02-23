@@ -3,21 +3,21 @@ n.d(t, {
     E: () => a,
     T: () => s
 }), n(801541);
-var r = n(889137),
-    i = n(966974),
-    l = n(48693);
+var i = n(889137),
+    l = n(966974),
+    r = n(48693);
 
 function a(e, t) {
-    let n = (0, r.YW)(t).with(i.Z.IMAGE_ONLY_ANSWERS, () => l.EK).otherwise(() => l.fD);
+    let n = (0, i.YW)(t).with(l.Z.IMAGE_ONLY_ANSWERS, () => r.EK).otherwise(() => r.fD);
     return {
         styles: {
             loserSelected: n,
             normal: n,
             notVoted: n,
             selected: n,
-            voted: l.pq,
-            victorSelected: l.iu,
-            victorNotSelected: l.iu,
+            voted: r.pq,
+            victorSelected: r.iu,
+            victorNotSelected: r.iu,
             normalVote: n
         }
     }

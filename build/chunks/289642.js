@@ -1,72 +1,68 @@
 /** chunk id: 289642, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => v
 });
 var r = n(64700),
     l = n(512750),
     i = n(311907),
-    o = n(71393),
-    s = n(186111),
+    s = n(71393),
+    o = n(186111),
     a = n(645619),
     u = n(840120),
     d = n(363487),
     c = n(998418),
     p = n(162362),
     m = n(220628),
-    f = n(867060),
-    v = n(568065),
+    A = n(867060),
+    _ = n(568065),
     g = n(652215),
-    A = n(333354),
-    _ = n(985018);
+    f = n(333354),
+    x = n(985018);
 
-function x(e, t) {
-    var n, x, h, b;
-    let j = (0, i.bG)([o.A], () => o.A.getGuild(e)),
-        E = (0, i.bG)([s.A], () => s.A.hasLayers()),
-        w = null != (n = (0, d.A)(e)) && n,
-        y = (0, u.j$)(e, t),
-        I = (0, i.bG)([a.A], () => a.A.getStateForGuild(e)),
-        S = null == I || null == (h = I.allPowerups) ? void 0 : h[l.FB],
-        C = (0, c.Ay)(e, S),
-        N = null == S ? void 0 : S.storeRemovalDate,
-        O = null == I || null == (b = I.allPowerups) ? void 0 : b[l.YG],
-        L = (0, i.bG)([o.A], () => {
-            var t;
-            return null == (t = o.A.getGuild(e)) ? void 0 : t.features
-        }),
-        P = null != (x = null == L ? void 0 : L.has(g.GuildFeatures.PARTNERED)) && x,
+function v(e, t) {
+    let n = (0, i.bG)([s.A], () => s.A.getGuild(e)),
+        v = (0, i.bG)([o.A], () => o.A.hasLayers()),
+        h = (0, d.A)(e) ?? !1,
+        j = (0, u.j$)(e, t),
+        b = (0, i.bG)([a.A], () => a.A.getStateForGuild(e)),
+        E = b?.allPowerups?.[l.FB],
+        I = (0, c.Ay)(e, E),
+        S = E?.storeRemovalDate,
+        w = b?.allPowerups?.[l.YG],
+        C = (0, i.bG)([s.A], () => s.A.getGuild(e)?.features),
+        N = C?.has(g.GuildFeatures.PARTNERED) ?? !1,
         {
-            onActivate: k,
-            error: T
-        } = (0, m.A)(e, O);
-    (0, f.A)(T);
-    let G = !E && w && y && null != S && !P && C.type === v.b_.POWERUP_ACTIVATED && null != N && null != O && null != j,
-        R = r.useCallback(e => {
-            e.stopPropagation(), k()
-        }, [k]),
-        D = r.useMemo(() => {
-            if (!G) return null;
-            let e = (0, p.A)(N),
-                t = j.premiumTier === g.TVA.TIER_2 ? _.intl.string(A.default["0uo/LD"]) : void 0;
+            onActivate: L,
+            error: y
+        } = (0, m.A)(e, w);
+    (0, A.A)(y);
+    let T = !v && h && j && null != E && !N && I.type === _.b_.POWERUP_ACTIVATED && null != S && null != w && null != n,
+        k = r.useCallback(e => {
+            e.stopPropagation(), L()
+        }, [L]),
+        P = r.useMemo(() => {
+            if (!T) return null;
+            let e = (0, p.A)(S),
+                t = n.premiumTier === g.TVA.TIER_2 ? x.intl.string(f.default["0uo/LD"]) : void 0;
             return {
-                firstHeader: S.title,
-                secondHeader: _.intl.formatToPlainString(A.default["8imxAq"], {
+                firstHeader: E.title,
+                secondHeader: x.intl.formatToPlainString(f.default["8imxAq"], {
                     dateString: e
                 }),
-                firstBody: _.intl.formatToPlainString(A.default["/bW9tW"], {
-                    serverName: j.name
+                firstBody: x.intl.formatToPlainString(f.default["/bW9tW"], {
+                    serverName: n.name
                 }),
-                secondBody: _.intl.formatToPlainString(A.default.D09fdi, {
+                secondBody: x.intl.formatToPlainString(f.default.D09fdi, {
                     dateString: e,
-                    boostCount: S.cost
+                    boostCount: E.cost
                 }),
-                thirdBody: _.intl.string(A.default["+zvKPr"]),
+                thirdBody: x.intl.string(f.default["+zvKPr"]),
                 primaryButtonText: t,
-                onPrimaryClick: null != t ? R : void 0
+                onPrimaryClick: null != t ? k : void 0
             }
-        }, [G, S, N, j, R]);
+        }, [T, E, S, n, k]);
     return {
-        shouldShow: G,
-        modalConfig: D
+        shouldShow: T,
+        modalConfig: P
     }
 }

@@ -1,52 +1,46 @@
 /** chunk id: 890690, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    u: () => l
-}), n(896048), n(321073);
-var r = n(64700),
-    o = n(894858),
-    a = n(397274);
+    u: () => s
+}), n(321073);
+var a = n(64700),
+    r = n(894858),
+    i = n(397274);
 
-function l(e) {
-    let t = r.useRef(null),
-        n = r.useRef(new Set);
-    r.useEffect(() => {
-        let e = a.A.getPanelScrollerNode();
+function s(e) {
+    let t = a.useRef(null),
+        n = a.useRef(new Set);
+    a.useEffect(() => {
+        let e = i.A.getPanelScrollerNode();
         if (null == e) return;
-        let r = Array.from(e.querySelectorAll("[data-settings-category-key]")).filter(e => null != e.getAttribute("data-settings-category-key")),
-            l = new Map,
-            i = [];
-        return r.forEach(e => {
+        let a = Array.from(e.querySelectorAll("[data-settings-category-key]")).filter(e => null != e.getAttribute("data-settings-category-key")),
+            s = new Map,
+            l = [];
+        return a.forEach(e => {
             let t = e.getAttribute("data-settings-category-key");
-            null != t && (l.set(e, t), i.push(t))
+            null != t && (s.set(e, t), l.push(t))
         }), t.current = new IntersectionObserver(e => {
             if (e.forEach(e => {
                     let {
                         isIntersecting: t,
-                        target: r
-                    } = e, o = l.get(r);
-                    null != o && (t ? n.current.add(o) : n.current.delete(o))
-                }), o.A.getField("disableSidebarCategoryAutoSelect")) return;
+                        target: a
+                    } = e, r = s.get(a);
+                    null != r && (t ? n.current.add(r) : n.current.delete(r))
+                }), r.A.getField("disableSidebarCategoryAutoSelect")) return;
             let t = [];
-            if (i.forEach(e => {
+            if (l.forEach(e => {
                     n.current.has(e) && t.push(e)
                 }), 0 === t.length) return;
-            let r = t[0];
-            o.A.getField("currentCategoryKey") !== r && o.A.setState({
-                currentCategoryKey: r
+            let a = t[0];
+            r.A.getField("currentCategoryKey") !== a && r.A.setState({
+                currentCategoryKey: a
             })
         }, {
             root: e,
             rootMargin: "0px 100000px 0px 100000px",
             threshold: 1
-        }), r.forEach(e => {
-            var n;
-            return null == (n = t.current) ? void 0 : n.observe(e)
-        }), () => {
-            var e;
-            r.forEach(e => {
-                var n;
-                return null == (n = t.current) ? void 0 : n.unobserve(e)
-            }), null == (e = t.current) || e.disconnect(), t.current = null
+        }), a.forEach(e => t.current?.observe(e)), () => {
+            a.forEach(e => t.current?.unobserve(e)), t.current?.disconnect(), t.current = null
         }
     }, [e])
 }

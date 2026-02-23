@@ -1,42 +1,42 @@
-/** chunk id: 310721, original params: e,t,l (module,exports,require) **/
-l.d(t, {
-    A: () => s,
-    v: () => o
+/** chunk id: 310721, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    A: () => r,
+    v: () => c
 });
-var n = l(627968);
-l(64700);
-var i = l(158954),
-    a = l(985018),
-    r = l(851822);
+var l = i(627968);
+i(64700);
+var a = i(158954),
+    n = i(985018),
+    s = i(851822);
 
-function s(e) {
+function r(e) {
     let {
         detectedGame: t
     } = e;
-    return 0 === t.publishers.length ? null : (0, n.jsxs)("div", {
-        children: [(0, n.jsx)(i.DZT, {
-            className: r.bV,
+    return 0 === t.publishers.length ? null : (0, l.jsxs)("div", {
+        children: [(0, l.jsx)(a.DZT, {
+            className: s.bV,
             variant: "text-xs/semibold",
             color: "text-default",
-            children: a.intl.string(a.t["4Byy/G"])
-        }), (0, n.jsx)(i.EYj, {
+            children: n.intl.string(n.t["4Byy/G"])
+        }), (0, l.jsx)(a.EYj, {
             variant: "text-sm/normal",
             children: t.publishers.join(", ")
         })]
     })
 }
 
-function o(e) {
+function c(e) {
     let {
         detectedGame: t
     } = e;
-    return 0 === t.publishers.length ? null : (0, n.jsxs)("div", {
-        children: [(0, n.jsx)(i.DZT, {
-            className: r.bV,
+    return 0 === t.publishers.length ? null : (0, l.jsxs)("div", {
+        children: [(0, l.jsx)(a.DZT, {
+            className: s.bV,
             variant: "text-xs/semibold",
             color: "text-default",
-            children: a.intl.string(a.t["4Byy/G"])
-        }), (0, n.jsx)(i.EYj, {
+            children: n.intl.string(n.t["4Byy/G"])
+        }), (0, l.jsx)(a.EYj, {
             variant: "text-sm/normal",
             children: t.publishers.join(", ")
         })]

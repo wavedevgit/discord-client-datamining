@@ -1,23 +1,22 @@
 /** chunk id: 310345, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    dl: () => s,
+    dl: () => r,
     hV: () => a
 });
-var r = n(954571),
-    i = n(814758),
+var i = n(954571),
+    s = n(814758),
     l = n(652215);
 
-function s(e, t) {
+function r(e, t) {
     let n = !1,
-        i = {
+        s = {
             guild_id: e.id,
             automatic: !1
         };
-    (null == t || e.discoverySplash !== t.discoverySplash) && (i.discovery_splash_edit_type = null == e.discoverySplash ? "removed" : "uploaded", n = !0), (null == t || e.features.has(l.GuildFeatures.DISCOVERABLE) !== t.features.has(l.GuildFeatures.DISCOVERABLE)) && (i.is_discoverable = e.features.has(l.GuildFeatures.DISCOVERABLE), n = !0), (null == t || e.rulesChannelId !== t.rulesChannelId) && (i.rules_channel_id = e.rulesChannelId, n = !0), n && r.default.track(l.HAw.GUILD_SETTINGS_DISCOVERY_UPDATED, i)
+    (null == t || e.discoverySplash !== t.discoverySplash) && (s.discovery_splash_edit_type = null == e.discoverySplash ? "removed" : "uploaded", n = !0), (null == t || e.features.has(l.GuildFeatures.DISCOVERABLE) !== t.features.has(l.GuildFeatures.DISCOVERABLE)) && (s.is_discoverable = e.features.has(l.GuildFeatures.DISCOVERABLE), n = !0), (null == t || e.rulesChannelId !== t.rulesChannelId) && (s.rules_channel_id = e.rulesChannelId, n = !0), n && i.default.track(l.HAw.GUILD_SETTINGS_DISCOVERY_UPDATED, s)
 }
 
 function a(e) {
-    var t, n;
-    return null != (t = null == (n = i.Dz[e]) ? void 0 : n.map(e => e())) ? t : []
+    return s.Dz[e]?.map(e => e()) ?? []
 }

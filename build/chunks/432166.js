@@ -1,55 +1,53 @@
-/** chunk id: 432166, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => y
-}), n(896048);
-var r, l = n(627968),
-    i = n(64700),
-    a = n(503698),
-    s = n.n(a),
-    o = n(451988),
-    c = n(235986),
-    u = n(703740);
+/** chunk id: 432166, original params: t,e,n (module,exports,require) **/
+n.d(e, {
+    A: () => m
+});
+var i = n(627968),
+    l = n(64700),
+    r = n(503698),
+    a = n.n(r),
+    s = n(451988),
+    o = n(235986),
+    d = n(703740);
 
-function d(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-
-function p(e) {
+function u(t) {
     let {
-        percentage: t,
+        percentage: e,
         isSingleLine: n
-    } = e;
-    return (0, l.jsx)("div", {
-        className: s()({
-            [u.M0]: n,
-            [u.Sg]: !n
+    } = t;
+    return (0, i.jsx)("div", {
+        className: a()({
+            [d.M0]: n,
+            [d.Sg]: !n
         }),
-        children: (0, l.jsx)("div", {
-            className: u.qT,
+        children: (0, i.jsx)("div", {
+            className: d.qT,
             style: {
-                width: "".concat(100 * Math.max(Math.min(t, 1), 0), "%")
+                width: `${100*Math.max(Math.min(e,1),0)}%`
             }
         })
     })
 }
 
-function f(e) {
-    return String(e).padStart(2, "0")
+function c(t) {
+    return String(t).padStart(2, "0")
 }
 
-function m(e) {
+function A(t) {
     let {
-        time: t,
+        time: e,
         padLargestUnit: n
-    } = e, r = Math.floor(t) % 60, l = Math.floor(t / 60) % 60, i = Math.floor(t / 3600);
-    return 0 === i ? n ? "".concat(f(l), ":").concat(f(r)) : "".concat(l, ":").concat(f(r)) : n ? "".concat(f(i), ":").concat(f(l), ":").concat(f(r)) : "".concat(i, ":").concat(f(l), ":").concat(f(r))
+    } = t, i = Math.floor(e) % 60, l = Math.floor(e / 60) % 60, r = Math.floor(e / 3600);
+    return 0 === r ? n ? `${c(l)}:${c(i)}` : `${l}:${c(i)}` : n ? `${c(r)}:${c(l)}:${c(i)}` : `${r}:${c(l)}:${c(i)}`
 }
-class g extends(r = i.PureComponent) {
+class p extends l.PureComponent {
+    static defaultProps = {
+        themed: !1
+    };
+    timer = new s.IX;
+    state = {
+        now: Date.now()
+    };
     componentDidMount() {
         this.timer.start(500, () => {
             this.setState({
@@ -62,70 +60,62 @@ class g extends(r = i.PureComponent) {
     }
     render() {
         let {
-            start: e,
-            end: t,
+            start: t,
+            end: e,
             className: n,
-            themed: r,
-            singleLine: i = !1
+            themed: l,
+            singleLine: r = !1
         } = this.props, {
-            now: a
-        } = this.state, o = (t - e) / 1e3, d = Math.max(Math.min((a - e) / 1e3, o), 0);
-        return i ? (0, l.jsxs)("div", {
-            className: s()(n, {
-                [u.Sp]: r
-            }, u.Od),
-            children: [(0, l.jsx)("div", {
-                className: u.Iq,
-                children: m({
-                    time: d,
+            now: s
+        } = this.state, c = (e - t) / 1e3, p = Math.max(Math.min((s - t) / 1e3, c), 0);
+        return r ? (0, i.jsxs)("div", {
+            className: a()(n, {
+                [d.Sp]: l
+            }, d.Od),
+            children: [(0, i.jsx)("div", {
+                className: d.Iq,
+                children: A({
+                    time: p,
                     padLargestUnit: !0
                 })
-            }), (0, l.jsx)("div", {
-                className: u.h7,
-                children: (0, l.jsx)(p, {
-                    percentage: d / o,
+            }), (0, i.jsx)("div", {
+                className: d.h7,
+                children: (0, i.jsx)(u, {
+                    percentage: p / c,
                     isSingleLine: !0
                 })
-            }), (0, l.jsx)("div", {
-                className: u.EL,
-                children: m({
-                    time: o,
+            }), (0, i.jsx)("div", {
+                className: d.EL,
+                children: A({
+                    time: c,
                     padLargestUnit: !0
                 })
             })]
-        }) : (0, l.jsxs)("div", {
-            className: s()(n, {
-                [u.Sp]: r
+        }) : (0, i.jsxs)("div", {
+            className: a()(n, {
+                [d.Sp]: l
             }),
-            children: [(0, l.jsx)(p, {
-                percentage: d / o,
+            children: [(0, i.jsx)(u, {
+                percentage: p / c,
                 isSingleLine: !1
-            }), (0, l.jsxs)(c.A, {
-                children: [(0, l.jsx)(c.A.Child, {
+            }), (0, i.jsxs)(o.A, {
+                children: [(0, i.jsx)(o.A.Child, {
                     grow: 1,
-                    className: u.n_,
-                    children: m({
-                        time: d,
+                    className: d.n_,
+                    children: A({
+                        time: p,
                         padLargestUnit: !1
                     })
-                }), (0, l.jsx)(c.A.Child, {
+                }), (0, i.jsx)(o.A.Child, {
                     grow: 0,
-                    className: u.EL,
-                    children: m({
-                        time: o,
+                    className: d.EL,
+                    children: A({
+                        time: c,
                         padLargestUnit: !1
                     })
                 })]
             })]
         })
     }
-    constructor(...e) {
-        super(...e), d(this, "timer", new o.IX), d(this, "state", {
-            now: Date.now()
-        })
-    }
 }
-d(g, "defaultProps", {
-    themed: !1
-});
-let y = g
+let m = p

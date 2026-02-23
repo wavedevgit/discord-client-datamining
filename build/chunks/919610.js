@@ -2,15 +2,14 @@
 "use strict";
 n.d(t, {
     Z: () => l
-}), n(896048);
-var r = n(64700);
+});
+var s = n(64700);
 let l = e => {
-    let [t, n] = r.useState(1);
+    let [t, n] = s.useState(1);
     return {
         currentPage: t,
-        handlePageChange: r.useCallback(t => {
-            var r;
-            n(t), null == (r = e.current) || r.scrollTo({
+        handlePageChange: s.useCallback(t => {
+            n(t), e.current?.scrollTo({
                 to: 0
             })
         }, [e, n])

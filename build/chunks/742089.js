@@ -1,11 +1,11 @@
 /** chunk id: 742089, original params: t,e,s (module,exports,require) **/
 s.d(e, {
     default: () => u
-}), s(228524);
+});
 var a = s(627968);
 s(64700);
-var n = s(503698),
-    r = s.n(n),
+var r = s(503698),
+    n = s.n(r),
     i = s(421380),
     l = s(397927),
     c = s(386406),
@@ -17,7 +17,7 @@ let u = t => {
     let {
         onClose: e,
         transitionState: s,
-        showHideSuppressWarning: n = !1
+        showHideSuppressWarning: r = !1
     } = t;
     return (0, a.jsx)(l.EOs, {
         transitionState: s,
@@ -26,7 +26,7 @@ let u = t => {
         parentComponent: "HubStudyRoomSuppressModal",
         children: (0, a.jsxs)("form", {
             onSubmit: t => {
-                null == t || t.preventDefault(), c.A.clearSuppressWarning(), null == e || e()
+                t?.preventDefault(), c.A.clearSuppressWarning(), e?.()
             },
             className: m.Zd,
             children: [(0, a.jsxs)(l.$mQ, {
@@ -52,10 +52,10 @@ let u = t => {
                 children: [(0, a.jsx)(i.$n, {
                     type: "submit",
                     size: i.$n.Sizes.LARGE,
-                    className: r()(m.FS, m.cU),
+                    className: n()(m.FS, m.cU),
                     autoFocus: !0,
                     children: d.intl.string(d.t["NX+WJN"])
-                }), n && (0, a.jsx)(l.DUT, {
+                }), r && (0, a.jsx)(l.DUT, {
                     onClick: () => c.A.clearSuppressWarning(!0),
                     className: m.ZM,
                     children: (0, a.jsx)(l.Text, {

@@ -1,28 +1,30 @@
 /** chunk id: 266057, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    S: () => o
+    S: () => d
 });
 var n = i(652961),
     l = i(419954),
     s = i(253932),
     r = i(780964),
+    a = i(358776),
     u = i(823894),
-    a = i(985018);
-let o = (0, l.Qx)(r.X.ANIMATE_STICKERS, {
-    useTitle: () => a.intl.string(a.t["6NtAuJ"]),
+    o = i(985018);
+let d = (0, l.Qx)(r.X.ANIMATE_STICKERS, {
+    useTitle: () => (0, a.bp)("AnimateStickers") ? o.intl.string(o.t.sBHIh0) : o.intl.string(o.t["6NtAuJ"]),
     useSubtitle: () => {
-        var t;
-        return null != (t = (0, n.F)("animateStickers")) ? t : a.intl.string(a.t.GRa6U7)
+        let t = (0, n.F)("animateStickers"),
+            e = (0, a.bp)("AnimateStickers");
+        return t ?? (e ? void 0 : o.intl.string(o.t.GRa6U7))
     },
     useOptions: () => [{
-        name: a.intl.string(a.t["Xp+X2U"]),
+        name: o.intl.string(o.t["Xp+X2U"]),
         value: u.BJ.ALWAYS_ANIMATE
     }, {
-        name: a.intl.string(a.t.IlLT7e),
-        desc: a.intl.string(a.t.bIW9Tl),
+        name: o.intl.string(o.t.IlLT7e),
+        desc: o.intl.string(o.t.bIW9Tl),
         value: u.BJ.ANIMATE_ON_INTERACTION
     }, {
-        name: a.intl.string(a.t.IGu8x3),
+        name: o.intl.string(o.t.IGu8x3),
         value: u.BJ.NEVER_ANIMATE
     }],
     useValue: () => s.S0.useSetting(),

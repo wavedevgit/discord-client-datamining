@@ -1,24 +1,24 @@
 /** chunk id: 899860, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => i
-}), n(896048);
+    A: () => l
+});
 var a = n(627968),
-    l = n(64700),
-    r = n(397927);
-let i = function(e) {
+    i = n(64700),
+    s = n(397927);
+let l = function(e) {
     let {
         assetKey: t,
         initialValue: n,
-        onMessageChange: i,
-        title: s
-    } = e, [o, c] = l.useState("");
-    return l.useEffect(() => {
-        c(null != n ? n : "")
-    }, [n]), (0, a.jsx)(r.ksK, {
-        label: s,
+        onMessageChange: l,
+        title: r
+    } = e, [o, d] = i.useState("");
+    return i.useEffect(() => {
+        d(n ?? "")
+    }, [n]), (0, a.jsx)(s.ksK, {
+        label: r,
         value: o,
         onChange: function(e) {
-            c(e), i(t, e)
+            d(e), l(t, e)
         }
     })
 }

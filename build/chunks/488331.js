@@ -1,48 +1,48 @@
 /** chunk id: 488331, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => p
-}), n(896048);
-var r = n(627968);
+    A: () => _
+});
+var i = n(627968);
 n(64700);
-var i = n(793574),
-    l = n(688810),
+var l = n(793574),
+    r = n(688810),
     a = n(735991),
     s = n(485724),
     o = n(429913),
-    c = n(246097),
-    u = n(96440),
-    d = n(768349);
+    d = n(246097),
+    c = n(96440),
+    u = n(768349);
 
-function p(e) {
+function _(e) {
     let {
         applicationId: t,
         customId: n,
-        referrerId: p,
+        referrerId: _,
         linkId: m,
-        message: f
+        message: h
     } = e, {
-        analyticsLocations: g
-    } = (0, l.Ay)(i.A.ACTIVITY_BOOKMARK), [_] = (0, o.A)([t]), h = null != _ && (0, a.Ag)(_), {
-        data: b,
-        error: y
-    } = (0, c.K)(null == _ ? void 0 : _.id, m);
-    return null == _ || !1 === h ? null : null != m && null == y && null != b ? (0, r.jsx)(l.f5, {
-        value: g,
-        children: (0, r.jsx)(u.W, {
-            application: _,
+        analyticsLocations: p
+    } = (0, r.Ay)(l.A.ACTIVITY_BOOKMARK), [g] = (0, o.A)([t]), A = null != g && (0, a.Ag)(g), {
+        data: x,
+        error: f
+    } = (0, d.K)(g?.id, m);
+    return null == g || !1 === A ? null : null != m && null == f && null != x ? (0, i.jsx)(r.f5, {
+        value: p,
+        children: (0, i.jsx)(c.W, {
+            application: g,
             customId: n,
-            customLink: b,
-            referrerId: p,
-            message: f
+            customLink: x,
+            referrerId: _,
+            message: h
         })
-    }) : (0, r.jsx)(l.f5, {
-        value: g,
-        children: (0, r.jsx)(s.W, {
-            app: _,
-            linkType: d.J.ACTIVITY,
+    }) : (0, i.jsx)(r.f5, {
+        value: p,
+        children: (0, i.jsx)(s.W, {
+            app: g,
+            linkType: u.J.ACTIVITY,
             activityCustomId: n,
-            activityReferrerId: p,
-            message: f
+            activityReferrerId: _,
+            message: h
         })
     })
 }

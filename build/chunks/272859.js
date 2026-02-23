@@ -1,17 +1,14 @@
-/** chunk id: 272859, original params: t,e,r (module,exports,require) **/
-r.d(e, {
+/** chunk id: 272859, original params: t,e,l (module,exports,require) **/
+l.d(e, {
     d: () => a
 });
-var n = r(311907),
-    l = r(800342),
-    s = r(328968),
-    i = r(652215);
-let a = (0, n.UT)(s.A, {
+var s = l(311907),
+    r = l(800342),
+    n = l(328968),
+    i = l(652215);
+let a = (0, s.UT)(n.A, {
     getQueryId: i.fic.STORE_LISTING,
-    get: t => {
-        var e;
-        return null != t && null != (e = s.A.getForSKU(t)) ? e : null
-    },
-    load: t => null != t ? (0, l.QB)(t) : Promise.resolve(),
-    getIsLoading: t => null != t && s.A.isFetchingForSKU(t)
+    get: t => null != t ? n.A.getForSKU(t) ?? null : null,
+    load: t => null != t ? (0, r.QB)(t) : Promise.resolve(),
+    getIsLoading: t => null != t && n.A.isFetchingForSKU(t)
 })

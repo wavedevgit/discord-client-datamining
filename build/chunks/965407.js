@@ -1,58 +1,26 @@
 /** chunk id: 965407, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => d
+    A: () => o
 });
-var r, i = n(311907),
+var i = n(311907),
     l = n(73153),
     a = n(381941);
-
-function o(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-let c = {};
-class s extends(r = i.Ay.Store) {
+let r = {};
+class s extends i.Ay.Store {
+    static displayName = "SendMessageOptionsStore";
     getOptions(e) {
-        return c[e]
+        return r[e]
     }
 }
-o(s, "displayName", "SendMessageOptionsStore");
-let d = new s(l.h, {
+let o = new s(l.h, {
     MESSAGE_CREATE: function(e) {
         let {
             message: t,
             sendMessageOptions: n
         } = e;
-        if (null != n) {
-            var r, i, l;
-            c[t.id] = (i = function(e) {
-                for (var t = 1; t < arguments.length; t++) {
-                    var n = null != arguments[t] ? arguments[t] : {},
-                        r = Object.keys(n);
-                    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                        return Object.getOwnPropertyDescriptor(n, e).enumerable
-                    }))), r.forEach(function(t) {
-                        o(e, t, n[t])
-                    })
-                }
-                return e
-            }({}, n), l = l = {
-                location: null != (r = n.location) ? r : a.Hx.OTHER
-            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
-                var n = Object.keys(e);
-                if (Object.getOwnPropertySymbols) {
-                    var r = Object.getOwnPropertySymbols(e);
-                    n.push.apply(n, r)
-                }
-                return n
-            })(Object(l)).forEach(function(e) {
-                Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
-            }), i)
-        }
-        null != t.nonce && t.nonce in c && delete c[t.nonce]
+        null != n && (r[t.id] = {
+            ...n,
+            location: n.location ?? a.Hx.OTHER
+        }), null != t.nonce && t.nonce in r && delete r[t.nonce]
     }
 })

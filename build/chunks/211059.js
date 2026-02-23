@@ -1,12 +1,13 @@
 /** chunk id: 211059, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => l
+    A: () => s
 });
-var r = n(73153);
-let l = {
+var i = n(73153);
+let s = {
     viewPrompt: function(e, t) {
-        r.h.wait(() => {
-            r.h.dispatch({
+        i.h.wait(() => {
+            i.h.dispatch({
                 type: "GUILD_PROMPT_VIEWED",
                 prompt: e,
                 guildId: t

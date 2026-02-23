@@ -1,45 +1,45 @@
 /** chunk id: 258367, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => m
 });
-var l = n(64700),
-    r = n(311907),
-    i = n(256311),
+var i = n(64700),
+    l = n(311907),
+    s = n(256311),
     a = n(773669),
-    s = n(222823),
+    r = n(222823),
     o = n(954571),
     c = n(883600),
-    u = n(942366),
-    d = n(343328),
+    d = n(942366),
+    u = n(343328),
     h = n(652215);
 
-function p(e) {
-    let t = (0, u.A)(e),
-        n = (0, r.bG)([a.default], () => a.default.locale),
-        p = (0, r.bG)([c.A], () => c.A.getChangelog(null != t ? t : "", n), [t, n]),
-        f = (0, d.A)(e),
-        m = l.useRef(f ? Date.now() : null),
-        g = (0, r.bG)([s.Ay], () => s.Ay.getUnreadCount(e), [e]),
-        A = l.useRef(g);
-    l.useEffect(() => {
-        A.current = g
-    }), l.useEffect(() => {
-        m.current = Date.now()
-    }, [f]), l.useEffect(() => {
-        f && null != t && i.A.fetchChangelog(t, n, !0)
-    }, [t, n, f]), l.useEffect(() => {
-        f && null != p && o.default.track(h.HAw.CHANGE_LOG_OPENED, {
-            change_log_id: "".concat(p.date, ":").concat(p.revision),
-            unread_count: A.current
+function m(e) {
+    let t = (0, d.A)(e),
+        n = (0, l.bG)([a.default], () => a.default.locale),
+        m = (0, l.bG)([c.A], () => c.A.getChangelog(t ?? "", n), [t, n]),
+        A = (0, u.A)(e),
+        g = i.useRef(A ? Date.now() : null),
+        p = (0, l.bG)([r.Ay], () => r.Ay.getUnreadCount(e), [e]),
+        f = i.useRef(p);
+    i.useEffect(() => {
+        f.current = p
+    }), i.useEffect(() => {
+        g.current = Date.now()
+    }, [A]), i.useEffect(() => {
+        A && null != t && s.A.fetchChangelog(t, n, !0)
+    }, [t, n, A]), i.useEffect(() => {
+        A && null != m && o.default.track(h.HAw.CHANGE_LOG_OPENED, {
+            change_log_id: `${m.date}:${m.revision}`,
+            unread_count: f.current
         })
-    }, [f, p]), l.useEffect(() => {
-        let e = m.current;
+    }, [A, m]), i.useEffect(() => {
+        let e = g.current;
         return () => {
-            f && null != p && null != e && (o.default.track(h.HAw.CHANGE_LOG_CLOSED, {
+            A && null != m && null != e && (o.default.track(h.HAw.CHANGE_LOG_CLOSED, {
                 seconds_open: Math.round((Date.now() - e) / 1e3),
-                change_log_id: "".concat(p.date, ":").concat(p.revision),
-                unread_count: A.current
-            }), m.current = 0)
+                change_log_id: `${m.date}:${m.revision}`,
+                unread_count: f.current
+            }), g.current = 0)
         }
-    }, [f, p])
+    }, [A, m])
 }

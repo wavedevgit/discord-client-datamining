@@ -1,207 +1,180 @@
-/** chunk id: 520660, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    default: () => j
-}), n(896048), n(747238), n(812715), n(733351);
-var l = n(627968),
-    r = n(64700),
-    i = n(503698),
-    a = n.n(i),
-    c = n(131346),
-    o = n(522437),
-    s = n(827734),
-    u = n(397927),
-    d = n(198982),
-    p = n(44234),
-    b = n(513461),
-    h = n(242273),
-    g = n(260197),
-    f = n(985018),
-    m = n(285553);
-let y = "MULTIPLE_CHOICE",
-    x = e => {
+/** chunk id: 520660, original params: e,l,t (module,exports,require) **/
+t.d(l, {
+    default: () => f
+});
+var n = t(627968),
+    i = t(64700),
+    r = t(503698),
+    a = t.n(r),
+    s = t(131346),
+    c = t(522437),
+    o = t(827734),
+    d = t(397927),
+    u = t(198982),
+    h = t(44234),
+    x = t(513461),
+    m = t(242273),
+    g = t(260197),
+    p = t(985018),
+    _ = t(285553);
+let C = "MULTIPLE_CHOICE",
+    b = e => {
         let {
-            choice: t,
-            index: n,
-            onChange: i,
-            onClear: s,
-            onReorder: d,
-            isDropHovered: b
-        } = e, h = r.useRef(null), g = r.useRef(null), [, x, j] = (0, c.i)({
-            type: y,
+            choice: l,
+            index: t,
+            onChange: r,
+            onClear: o,
+            onReorder: u,
+            isDropHovered: x
+        } = e, m = i.useRef(null), g = i.useRef(null), [, b, f] = (0, s.i)({
+            type: C,
             item: {
-                choice: t,
-                index: n
+                choice: l,
+                index: t
             },
-            end: (e, t) => {
-                null == e || t.didDrop() || d(e.choice, null, !0)
+            end: (e, l) => {
+                null == e || l.didDrop() || u(e.choice, null, !0)
             }
-        }), [, v] = (0, o.H)({
-            accept: y,
-            hover: (e, t) => {
-                var l;
+        }), [, v] = (0, c.H)({
+            accept: C,
+            hover: (e, l) => {
                 let {
-                    index: r
-                } = e, i = null == (l = h.current) ? void 0 : l.getBoundingClientRect(), a = t.getClientOffset();
-                if (null == i || null == a) return;
-                let c = (i.bottom - i.top) / 2,
-                    o = a.y - i.top;
-                r < n && o < c || r > n && o > c || d(e.choice, n, !1)
+                    index: n
+                } = e, i = m.current?.getBoundingClientRect(), r = l.getClientOffset();
+                if (null == i || null == r) return;
+                let a = (i.bottom - i.top) / 2,
+                    s = r.y - i.top;
+                n < t && s < a || n > t && s > a || u(e.choice, t, !1)
             },
             drop: e => {
-                d(e.choice, n, !0)
+                u(e.choice, t, !0)
             }
         });
-        return r.useLayoutEffect(() => (x(g), j(v(h)), () => {
-            x(null), v(null)
-        }), [x, v, j]), (0, l.jsxs)("div", {
-            ref: h,
-            className: a()(m.XQ, {
-                [m.cB]: b
+        return i.useLayoutEffect(() => (b(g), f(v(m)), () => {
+            b(null), v(null)
+        }), [b, v, f]), (0, n.jsxs)("div", {
+            ref: m,
+            className: a()(_.XQ, {
+                [_.cB]: x
             }),
-            "data-dnd-name": t,
-            children: [(0, l.jsx)("div", {
-                className: m.R6,
-                children: (0, l.jsx)(p.A, {
+            "data-dnd-name": l,
+            children: [(0, n.jsx)("div", {
+                className: _.R6,
+                children: (0, n.jsx)(h.A, {
                     height: 20,
                     width: 20,
-                    className: m.IC
+                    className: _.IC
                 })
-            }), (0, l.jsxs)("div", {
-                className: m.I6,
-                children: [(0, l.jsx)(u.ksK, {
+            }), (0, n.jsxs)("div", {
+                className: _.I6,
+                children: [(0, n.jsx)(d.ksK, {
                     autoFocus: !0,
-                    onChange: e => i(e),
-                    placeholder: f.intl.formatToPlainString(f.t["Ep/pbH"], {
-                        index: n + 1
+                    onChange: e => r(e),
+                    placeholder: p.intl.formatToPlainString(p.t["Ep/pbH"], {
+                        index: t + 1
                     }),
-                    value: t
-                }), (0, l.jsx)("div", {
-                    className: m.mt,
-                    children: (0, l.jsx)(u.K0, {
-                        icon: u.aXh,
+                    value: l
+                }), (0, n.jsx)("div", {
+                    className: _.mt,
+                    children: (0, n.jsx)(d.K0, {
+                        icon: d.aXh,
                         size: "sm",
-                        "aria-label": f.intl.string(f.t.VkKicb),
+                        "aria-label": p.intl.string(p.t.VkKicb),
                         variant: "icon-only",
-                        onClick: s
+                        onClick: o
                     })
                 })]
-            }), (0, l.jsx)("div", {
+            }), (0, n.jsx)("div", {
                 ref: g,
-                className: m.cK,
-                "data-dnd-name": t,
-                children: (0, l.jsx)(u.WP0, {
+                className: _.cK,
+                "data-dnd-name": l,
+                children: (0, n.jsx)(d.WP0, {
                     size: "xs",
                     color: "currentColor",
-                    className: m.co
+                    className: _.co
                 })
             })]
         })
     },
-    j = function(e) {
-        var t, n, i, a;
+    f = function(e) {
         let {
-            field: c,
-            onSave: o,
-            onClose: p
-        } = e, [y, j] = r.useState(null != (t = null == c ? void 0 : c.label) ? t : ""), [v, _] = r.useState(null != (n = null == c ? void 0 : c.choices) ? n : [""]), [C, O] = r.useState(null), [w, k] = r.useState(null), I = (e, t, n) => {
-            if (null == v) return;
-            null != C && O(null);
-            let l = v.indexOf(e),
-                r = [...v];
-            null != t && t !== l && (r.splice(l, 1), r.splice(t, 0, e), _(r)), n ? null !== t && k(null) : t !== w && k(t)
-        }, E = async () => {
-            null != C && O(null);
-            let e = y.trim();
-            if ("" === e) return void O(f.intl.string(f.t["G+TI44"]));
-            if (0 === v.map(e => e.trim()).filter(e => "" !== e).length) return void O(f.intl.string(f.t.jZoHgI));
-            let t = {
-                field_type: b.rX.MULTIPLE_CHOICE,
+            field: l,
+            onSave: t,
+            onClose: r
+        } = e, [a, s] = i.useState(l?.label ?? ""), [c, h] = i.useState(l?.choices ?? [""]), [C, f] = i.useState(null), [v, j] = i.useState(null), y = (e, l, t) => {
+            if (null == c) return;
+            null != C && f(null);
+            let n = c.indexOf(e),
+                i = [...c];
+            null != l && l !== n && (i.splice(n, 1), i.splice(l, 0, e), h(i)), t ? null !== l && j(null) : l !== v && j(l)
+        }, I = async () => {
+            null != C && f(null);
+            let e = a.trim();
+            if ("" === e) return void f(p.intl.string(p.t["G+TI44"]));
+            if (0 === c.map(e => e.trim()).filter(e => "" !== e).length) return void f(p.intl.string(p.t.jZoHgI));
+            let l = {
+                field_type: x.rX.MULTIPLE_CHOICE,
                 label: e,
-                choices: v,
+                choices: c,
                 required: !0
             };
             try {
-                await o(t), p()
+                await t(l), r()
             } catch (e) {
-                O(new d.LG(e).getAnyErrorMessage())
+                f(new u.LG(e).getAnyErrorMessage())
             }
         };
-        return (0, l.jsxs)(h.A, (i = function(e) {
-            for (var t = 1; t < arguments.length; t++) {
-                var n = null != arguments[t] ? arguments[t] : {},
-                    l = Object.keys(n);
-                "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                    return Object.getOwnPropertyDescriptor(n, e).enumerable
-                }))), l.forEach(function(t) {
-                    var l;
-                    l = n[t], t in e ? Object.defineProperty(e, t, {
-                        value: l,
-                        enumerable: !0,
-                        configurable: !0,
-                        writable: !0
-                    }) : e[t] = l
-                })
-            }
-            return e
-        }({}, e), a = a = {
+        return (0, n.jsxs)(m.A, {
+            ...e,
             errorText: C,
-            title: f.intl.string(f.t.ooKh3m),
-            onConfirm: E,
-            onCancel: p,
-            children: [(0, l.jsx)("div", {
-                className: m.Ef,
-                children: (0, l.jsx)(u.ksK, {
+            title: p.intl.string(p.t.ooKh3m),
+            onConfirm: I,
+            onCancel: r,
+            children: [(0, n.jsx)("div", {
+                className: _.Ef,
+                children: (0, n.jsx)(d.ksK, {
                     autoFocus: !0,
                     onChange: e => {
-                        null != C && O(null);
-                        let t = e.replace(/(\r\n|\n|\r)/g, " ");
-                        t.length > g.Ty && (t = e.slice(0, g.Ty)), j(t)
+                        null != C && f(null);
+                        let l = e.replace(/(\r\n|\n|\r)/g, " ");
+                        l.length > g.Ty && (l = e.slice(0, g.Ty)), s(l)
                     },
-                    placeholder: f.intl.string(f.t.fqVmbL),
-                    value: y
+                    placeholder: p.intl.string(p.t.fqVmbL),
+                    value: a
                 })
-            }), (0, l.jsx)("div", {
-                className: m.yF
-            }), v.map((e, t) => (0, l.jsx)(x, {
+            }), (0, n.jsx)("div", {
+                className: _.yF
+            }), c.map((e, l) => (0, n.jsx)(b, {
                 choice: e,
-                index: t,
+                index: l,
                 onChange: e => {
-                    let n, l;
-                    return null != C && O(null), (n = e.replace(/(\r\n|\n|\r)/g, " ")).length > g.yR && (n = n.slice(0, g.yR)), void((l = [...v])[t] = n, _(l))
+                    let t, n;
+                    return null != C && f(null), (t = e.replace(/(\r\n|\n|\r)/g, " ")).length > g.yR && (t = t.slice(0, g.yR)), void((n = [...c])[l] = t, h(n))
                 },
                 onClear: () => {
                     let e;
-                    return null != C && O(null), void _(0 === (e = [...v.slice(0, t), ...v.slice(t + 1)]).length ? [""] : e)
+                    return null != C && f(null), void h(0 === (e = [...c.slice(0, l), ...c.slice(l + 1)]).length ? [""] : e)
                 },
-                onReorder: I,
-                isDropHovered: t === w
-            }, "choice-".concat(t))), v.length !== g.Hz && (0, l.jsx)("div", {
-                className: m.C5,
-                children: (0, l.jsxs)(u.DUT, {
-                    className: m.bK,
+                onReorder: y,
+                isDropHovered: l === v
+            }, `choice-${l}`)), c.length !== g.Hz && (0, n.jsx)("div", {
+                className: _.C5,
+                children: (0, n.jsxs)(d.DUT, {
+                    className: _.bK,
                     onClick: () => {
-                        null != C && O(null), v.length !== g.Hz && _([...v, ""])
+                        null != C && f(null), c.length !== g.Hz && h([...c, ""])
                     },
-                    children: [(0, l.jsx)(u.U1e, {
+                    children: [(0, n.jsx)(d.U1e, {
                         size: "custom",
                         height: 17,
                         width: 17,
-                        color: s.A.unsafe_rawColors.BLUE_345.css
-                    }), (0, l.jsx)(u.Text, {
+                        color: o.A.unsafe_rawColors.BLUE_345.css
+                    }), (0, n.jsx)(d.Text, {
                         color: "text-link",
                         variant: "text-md/normal",
-                        children: f.intl.string(f.t.sVfx9r)
+                        children: p.intl.string(p.t.sVfx9r)
                     })]
                 })
             })]
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
-            var n = Object.keys(e);
-            if (Object.getOwnPropertySymbols) {
-                var l = Object.getOwnPropertySymbols(e);
-                n.push.apply(n, l)
-            }
-            return n
-        })(Object(a)).forEach(function(e) {
-            Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(a, e))
-        }), i))
+        })
     }

@@ -1,99 +1,58 @@
-/** chunk id: 531461, original params: e,t,r (module,exports,require) **/
-r.d(t, {
-    A: () => y
-}), r(896048);
-var n = r(627968),
-    l = r(64700),
-    i = r(158954),
-    o = r(397927),
-    a = r(154672),
-    c = r(198982),
-    s = r(330936),
-    u = r(652215),
-    p = r(985018);
-let y = e => {
-    var t, r;
+/** chunk id: 531461, original params: t,e,i (module,exports,require) **/
+i.d(e, {
+    A: () => _
+});
+var a = i(627968),
+    l = i(64700),
+    n = i(158954),
+    r = i(397927),
+    s = i(154672),
+    o = i(198982),
+    c = i(330936),
+    d = i(652215),
+    u = i(985018);
+let _ = t => {
     let {
-        email: y,
-        setStep: f,
-        onBack: O,
-        school: b,
-        setSchool: d
-    } = e, g = function(e, t) {
-        if (null == e) return {};
-        var r, n, l, i = {};
-        if ("u" > typeof Reflect && Reflect.ownKeys) {
-            for (l = 0, r = Reflect.ownKeys(e); l < r.length; l++) n = r[l], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
-            return i
-        }
-        if (i = function(e, t) {
-                if (null == e) return {};
-                var r, n, l = {},
-                    i = Object.getOwnPropertyNames(e);
-                for (n = 0; n < i.length; n++) r = i[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
-                return l
-            }(e, t), Object.getOwnPropertySymbols)
-            for (l = 0, r = Object.getOwnPropertySymbols(e); l < r.length; l++) n = r[l], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
-        return i
-    }(e, ["email", "setStep", "onBack", "school", "setSchool"]), [j, m] = l.useState(null), [h, E] = l.useState(!1), v = async () => {
-        m(null), E(!0);
+        email: e,
+        setStep: i,
+        onBack: _,
+        school: I,
+        setSchool: E,
+        ...A
+    } = t, [g, h] = l.useState(null), [m, S] = l.useState(!1), y = async () => {
+        h(null), S(!0);
         try {
-            await a.A.signup(y, b), f(s.Di.EMAIL_WAITLIST)
-        } catch (e) {
-            m(new c.LG(e))
+            await s.A.signup(e, I), i(c.Di.EMAIL_WAITLIST)
+        } catch (t) {
+            h(new o.LG(t))
         } finally {
-            E(!1)
+            S(!1)
         }
-    }, I = async e => {
-        null != b && "" !== b && e.charCode === u.Ks6.ENTER && await v()
+    }, x = async t => {
+        null != I && "" !== I && t.charCode === d.Ks6.ENTER && await y()
     };
-    return (0, n.jsx)(i.Modal, (t = function(e) {
-        for (var t = 1; t < arguments.length; t++) {
-            var r = null != arguments[t] ? arguments[t] : {},
-                n = Object.keys(r);
-            "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-                return Object.getOwnPropertyDescriptor(r, e).enumerable
-            }))), n.forEach(function(t) {
-                var n;
-                n = r[t], t in e ? Object.defineProperty(e, t, {
-                    value: n,
-                    enumerable: !0,
-                    configurable: !0,
-                    writable: !0
-                }) : e[t] = n
-            })
-        }
-        return e
-    }({}, g), r = r = {
-        title: p.intl.string(p.t["2FNWBG"]),
-        subtitle: p.intl.string(p.t["/4y6ox"]),
+    return (0, a.jsx)(n.Modal, {
+        ...A,
+        title: u.intl.string(u.t["2FNWBG"]),
+        subtitle: u.intl.string(u.t["/4y6ox"]),
         actions: [{
             variant: "secondary",
-            onClick: O,
-            text: p.intl.string(p.t["13/7kX"])
+            onClick: _,
+            text: u.intl.string(u.t["13/7kX"])
         }, {
             variant: "primary",
-            text: p.intl.string(p.t.PDsYAo),
-            onClick: v,
-            loading: h
+            text: u.intl.string(u.t.PDsYAo),
+            onClick: y,
+            loading: m
         }],
-        children: (0, n.jsx)(o.ksK, {
-            label: p.intl.string(p.t["L+AfJr"]),
-            onKeyPress: I,
-            placeholder: p.intl.string(p.t.Y1btJd),
-            onChange: e => {
-                d(e)
+        children: (0, a.jsx)(r.ksK, {
+            label: u.intl.string(u.t["L+AfJr"]),
+            onKeyPress: x,
+            placeholder: u.intl.string(u.t.Y1btJd),
+            onChange: t => {
+                E(t)
             },
-            error: null == j ? void 0 : j.getAnyErrorMessage()
+            error: g?.getAnyErrorMessage()
         })
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
-        var r = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var n = Object.getOwnPropertySymbols(e);
-            r.push.apply(r, n)
-        }
-        return r
-    })(Object(r)).forEach(function(e) {
-        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
-    }), t))
+    })
 }

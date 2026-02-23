@@ -4,73 +4,45 @@ n.d(t, {
     A: () => h
 });
 var i = n(627968),
-    r = n(64700),
-    s = n(503698),
-    l = n.n(s),
-    o = n(397927),
-    a = n(855790),
-    c = n(652215),
-    d = n(985018),
+    s = n(64700),
+    l = n(503698),
+    a = n.n(l),
+    r = n(397927),
+    o = n(855790),
+    d = n(652215),
+    c = n(985018),
     u = n(694869);
 let h = function(e) {
     let t, {
             title: n,
-            header: s,
+            header: l,
             children: h,
             renderSettings: p,
-            onDragStart: f
+            onDragStart: A
         } = e,
-        g = r.useRef(null);
-    return t = null != n ? (0, i.jsxs)(a.Ay.Bar, {
-        className: l()(u.wx, u.bl),
-        onMouseDown: f,
-        children: [(0, i.jsx)(a.Ay.Content, {
-            className: l()(u.qd, u.bl),
+        f = s.useRef(null);
+    return t = null != n ? (0, i.jsxs)(o.Ay.Bar, {
+        className: a()(u.wx, u.bl),
+        onMouseDown: A,
+        children: [(0, i.jsx)(o.Ay.Content, {
+            className: a()(u.qd, u.bl),
             dynamicSize: !0,
             children: n
-        }), (0, i.jsx)(a.Ay.Content, {
-            children: (0, i.jsx)(o.YNO, {
-                targetElementRef: g,
+        }), (0, i.jsx)(o.Ay.Content, {
+            children: (0, i.jsx)(r.YNO, {
+                targetElementRef: f,
                 position: "right",
-                renderPopout: null != p ? p : c.tEg,
+                renderPopout: p ?? d.tEg,
                 autoInvert: !1,
-                children: e => {
-                    var t, n;
-                    return (0, i.jsx)(a.Ay.Icon, (t = function(e) {
-                        for (var t = 1; t < arguments.length; t++) {
-                            var n = null != arguments[t] ? arguments[t] : {},
-                                i = Object.keys(n);
-                            "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                                return Object.getOwnPropertyDescriptor(n, e).enumerable
-                            }))), i.forEach(function(t) {
-                                var i;
-                                i = n[t], t in e ? Object.defineProperty(e, t, {
-                                    value: i,
-                                    enumerable: !0,
-                                    configurable: !0,
-                                    writable: !0
-                                }) : e[t] = i
-                            })
-                        }
-                        return e
-                    }({}, e), n = n = {
-                        icon: o.Zes,
-                        label: d.intl.string(d.t["3D5yo/"]),
-                        ref: g
-                    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
-                        var n = Object.keys(e);
-                        if (Object.getOwnPropertySymbols) {
-                            var i = Object.getOwnPropertySymbols(e);
-                            n.push.apply(n, i)
-                        }
-                        return n
-                    })(Object(n)).forEach(function(e) {
-                        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-                    }), t))
-                }
+                children: e => (0, i.jsx)(o.Ay.Icon, {
+                    ...e,
+                    icon: r.Zes,
+                    label: c.intl.string(c.t["3D5yo/"]),
+                    ref: f
+                })
             })
         })]
-    }) : s, (0, i.jsxs)("div", {
+    }) : l, (0, i.jsxs)("div", {
         className: u.pz,
         children: [t, (0, i.jsx)("div", {
             className: u.Y_,

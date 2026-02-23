@@ -1,38 +1,38 @@
 /** chunk id: 170428, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => b
+    A: () => _
 });
-var r = n(627968),
-    l = n(64700),
-    i = n(397927),
-    s = n(473503),
+var i = n(627968),
+    s = n(64700),
+    l = n(397927),
+    r = n(473503),
     a = n(706752),
     o = n(58736),
     c = n(267102),
-    u = n(474397),
-    d = n(378570),
-    p = n(954571),
-    h = n(652215),
-    g = n(486974),
-    f = n(985018),
+    d = n(474397),
+    u = n(378570),
+    h = n(954571),
+    A = n(652215),
+    p = n(486974),
+    g = n(985018),
     m = n(641131);
 
-function b(e) {
-    var t, n;
+function _(e) {
     let {
-        channel: b
-    } = e, A = l.useContext(p.AnalyticsContext), y = (0, c.aL)(), O = f.intl.string(m.default["Beo/7v"]), {
-        firstMessage: j
-    } = (0, s.OA)(b), x = null == j || null == (t = j.messageSnapshots) ? void 0 : t[0], _ = null == x || null == (n = x.moderatorReport) ? void 0 : n.reported_user_id;
-    return b.isModeratorReportChannel() && null != _ ? (0, r.jsx)(o.Ay.Icon, {
+        channel: t
+    } = e, n = s.useContext(h.AnalyticsContext), _ = (0, c.aL)(), f = g.intl.string(m.default["Beo/7v"]), {
+        firstMessage: x
+    } = (0, r.OA)(t), C = x?.messageSnapshots?.[0], E = C?.moderatorReport?.reported_user_id;
+    return t.isModeratorReportChannel() && null != E ? (0, i.jsx)(o.Ay.Icon, {
         onClick: () => {
-            (0, d.iN)(b.id), (0, u.A)(), (0, a.z)(b.guild_id, _, b.id, {
-                modViewPanel: g.g.INFO,
-                sourceLocation: null != location ? location : A.location
-            }), y.dispatch(h.jej.POPOUT_CLOSE)
+            (0, u.iN)(t.id), (0, d.A)(), (0, a.z)(t.guild_id, E, t.id, {
+                modViewPanel: p.g.INFO,
+                sourceLocation: location ?? n.location
+            }), _.dispatch(A.jej.POPOUT_CLOSE)
         },
-        tooltip: O,
-        icon: i.quN,
-        "aria-label": O
+        tooltip: f,
+        icon: l.quN,
+        "aria-label": f
     }) : null
 }

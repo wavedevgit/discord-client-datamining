@@ -1,5 +1,5 @@
-/** chunk id: 792595, original params: _,b,a (module,exports,require) **/
-_.exports = {
+/** chunk id: 792595, original params: e,n,t (module,exports,require) **/
+e.exports = {
     Uh: "confirmModal__1b38b",
     xK: "discordTag__1b38b",
     jj: "avatarIcon__1b38b",

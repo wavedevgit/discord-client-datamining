@@ -1,111 +1,86 @@
-/** chunk id: 785330, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    A: () => m,
-    F: () => h
+/** chunk id: 785330, original params: e,t,r (module,exports,require) **/
+r.d(t, {
+    Ay: () => k,
+    F2: () => i,
+    Qs: () => m,
+    Z_: () => p
 });
-var r = n(627968),
-    i = n(64700),
-    a = n(835245),
-    o = n(604238);
+var l = r(627968),
+    d = r(64700),
+    c = r(835245),
+    a = r(204990),
+    n = r(604238),
+    o = r(856535),
+    u = r(55391);
 
-function s(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
+function s(e, t) {
+    return e.children.map(e => (function e(t, r) {
+        if ("string" == typeof t) return t;
+        let {
+            block: d,
+            ...n
+        } = t, o = r[d];
+        if (null == o) return null;
+        let u = (() => {
+                if ("children" in t) {
+                    if (!Array.isArray(t.children) && null != t.children) return e(t.children, r);
+                    if (null != t.children && t.children.length > 0) return t.children.map(t => e(t, r))
+                }
+                return null
+            })(),
+            s = a.E.has(d) ? {
+                ...n,
+                componentMap: r
+            } : n;
+        return (0, l.jsx)(o, {
+            ...s,
+            children: u
+        }, (0, c.A)())
+    })(e, t))
 }
 
-function l(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            s(e, t, n[t])
-        })
-    }
-    return e
-}
-
-function c(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-        var r = Object.getOwnPropertySymbols(e);
-        t && (r = r.filter(function(t) {
-            return Object.getOwnPropertyDescriptor(e, t).enumerable
-        })), n.push.apply(n, r)
-    }
-    return n
-}
-
-function u(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : c(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-
-function d(e, t) {
-    if (null == e) return {};
-    var n, r, i, a = {};
-    if ("u" > typeof Reflect && Reflect.ownKeys) {
-        for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
-        return a
-    }
-    if (a = f(e, t), Object.getOwnPropertySymbols)
-        for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
-    return a
-}
-
-function f(e, t) {
-    if (null == e) return {};
-    var n, r, i = {},
-        a = Object.getOwnPropertyNames(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
-    return i
-}
-
-function p(e, t) {
-    if ("string" == typeof e) return e;
-    let {
-        block: n
-    } = e, i = d(e, ["block"]), o = t[n];
-    if (null == o) return null;
-    let s = (() => {
-        if ("children" in e) {
-            if (!Array.isArray(e.children) && null != e.children) return p(e.children, t);
-            if (null != e.children && e.children.length > 0) return e.children.map(e => p(e, t))
-        }
-        return null
-    })();
-    return (0, r.jsx)(o, u(l({}, i), {
-        children: s
-    }), (0, a.A)())
-}
-
-function _(e, t) {
-    return e.children.map(e => p(e, t))
-}
-
-function h(e) {
-    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : o.E;
+function i(e) {
+    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : n.E;
     try {
-        return _(e, t), !0
+        return s(e, t), !0
     } catch (e) {
         return !1
     }
 }
-let m = e => {
-    let {
-        layout: t,
-        overrides: n
-    } = e, a = (0, o.e)({
-        overrides: n
-    }), s = i.useMemo(() => _(t, a), [t, a]);
-    return (0, r.jsx)("div", {
-        children: s
-    })
-}
+let h = e => {
+        let {
+            layout: t,
+            overrides: r
+        } = e, l = (0, n.e)({
+            overrides: r
+        });
+        return d.useMemo(() => s(t, l), [t, l])
+    },
+    m = e => {
+        let {
+            layoutId: t,
+            tenantId: r,
+            overrides: d
+        } = e, {
+            layout: c
+        } = (0, o.A)(r, t);
+        return null == c ? null : (0, l.jsx)(h, {
+            layout: c,
+            overrides: d
+        })
+    },
+    p = e => {
+        let {
+            templateId: t,
+            tenantId: r,
+            overrides: d,
+            requestParams: c
+        } = e, {
+            layout: a
+        } = (0, u.A)(r, t, c);
+        return null == a ? null : (0, l.jsx)(h, {
+            layout: a,
+            overrides: d
+        })
+    },
+    k = h

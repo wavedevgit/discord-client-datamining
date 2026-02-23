@@ -2,11 +2,11 @@
 n.d(t, {
     A: () => s
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(397927),
-    l = n(880652),
-    a = n(474071);
+var l = n(397927),
+    a = n(880652),
+    r = n(474071);
 
 function s(e) {
     let {
@@ -14,15 +14,15 @@ function s(e) {
         questionId: n,
         value: s,
         onValueChange: o
-    } = e, c = t.Selector !== l.BO.SINGLE_LINE;
-    return (0, r.jsx)("div", {
-        className: a.k,
-        children: c ? (0, r.jsx)(i.fs1, {
+    } = e, c = t.Selector !== a.BO.SINGLE_LINE;
+    return (0, i.jsx)("div", {
+        className: r.k,
+        children: c ? (0, i.jsx)(l.fs1, {
             value: s,
             onChange: e => o(n, e),
             placeholder: "Enter your response...",
             rows: 4
-        }) : (0, r.jsx)(i.ksK, {
+        }) : (0, i.jsx)(l.ksK, {
             value: s,
             onChange: e => o(n, e),
             placeholder: "Enter your response..."

@@ -1,17 +1,17 @@
 /** chunk id: 755039, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => s
+    A: () => r
 });
 var a = n(627968);
 n(64700);
-var l = n(92674),
-    r = n(397927),
-    i = n(717283);
+var i = n(475539),
+    s = n(397927),
+    l = n(717283);
 
-function s(e) {
+function r(e) {
     let {
         text: t
-    } = e, n = (0, r.pnh)(t, {
+    } = e, n = (0, s.pnh)(t, {
         from: {
             opacity: 0,
             transform: "translate3d(0, 107%, 0)"
@@ -26,9 +26,9 @@ function s(e) {
         }
     });
     return (0, a.jsx)("div", {
-        className: i.k,
-        children: n((e, t) => (0, a.jsx)(l.animated.div, {
-            className: i.H,
+        className: l.k,
+        children: n((e, t) => (0, a.jsx)(i.animated.div, {
+            className: l.H,
             style: e,
             children: t
         }))

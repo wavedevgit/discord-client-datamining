@@ -1,5 +1,4 @@
 /** chunk id: 485366, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.r(e.exports = {
     wrapper: "wrapper_d5f3cd",
     header: "header_d5f3cd",

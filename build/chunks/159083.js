@@ -1,7 +1,7 @@
 /** chunk id: 159083, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => _
-}), n(896048);
+    A: () => c
+});
 var l = n(627968),
     r = n(64700),
     a = n(481613),
@@ -9,16 +9,7 @@ var l = n(627968),
     s = n(615300),
     o = n(876575);
 
-function u(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-
-function c(e) {
+function E(e) {
     let t = e => e.interpolate({
         inputRange: [0, 1],
         outputRange: ["0px", "1px"]
@@ -31,7 +22,12 @@ function c(e) {
         }]
     }
 }
-class E extends r.Component {
+class u extends r.Component {
+    state = {
+        x: new s.A.Value(0),
+        y: new s.A.Value(0)
+    };
+    _isMounted = !1;
     componentDidMount() {
         this._isMounted = !0;
         let {
@@ -59,6 +55,7 @@ class E extends r.Component {
     componentWillUnmount() {
         this._isMounted = !1
     }
+    shouldLoop = () => this._isMounted;
     render() {
         return (0, l.jsxs)("div", {
             className: o.dJ,
@@ -84,7 +81,7 @@ class E extends r.Component {
                             id: "search-index-foreground-mask-b",
                             fill: "#fff",
                             children: (0, l.jsx)(s.A.use, {
-                                style: c(this.state),
+                                style: E(this.state),
                                 className: o.dK,
                                 xlinkHref: "#search-index-foreground-mask-a"
                             })
@@ -349,7 +346,7 @@ class E extends r.Component {
                         })]
                     }), (0, l.jsxs)(s.A.g, {
                         className: o.KS,
-                        style: c(this.state),
+                        style: E(this.state),
                         children: [(0, l.jsx)("path", {
                             fill: "#C9D2F0",
                             d: "M89.8311 190.9259c-2.441-2.441-2.441-6.4 0-8.841l36.771-36.771 8.841 8.841-36.771 36.771c-2.441 2.441-6.4 2.441-8.841 0"
@@ -391,11 +388,5 @@ class E extends r.Component {
             })]
         })
     }
-    constructor(...e) {
-        super(...e), u(this, "state", {
-            x: new s.A.Value(0),
-            y: new s.A.Value(0)
-        }), u(this, "_isMounted", !1), u(this, "shouldLoop", () => this._isMounted)
-    }
 }
-let _ = E
+let c = u

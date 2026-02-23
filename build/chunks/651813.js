@@ -1,14 +1,12 @@
 /** chunk id: 651813, original params: e,t,n (module,exports,require) **/
 function i(e, t) {
-    var n;
-    return null == e ? null : e.isDM() && null != (n = t.getUser(e.getRecipientId())) ? n : null
+    return null == e ? null : e.isDM() ? t.getUser(e.getRecipientId()) ?? null : null
 }
 
-function r(e, t) {
-    var n;
-    return null == e ? null : null != e.getGuildId() && null != (n = t.getGuild(e.getGuildId())) ? n : null
+function s(e, t) {
+    return null == e ? null : null != e.getGuildId() ? t.getGuild(e.getGuildId()) ?? null : null
 }
 n.d(t, {
-    P: () => r,
+    P: () => s,
     j: () => i
 })

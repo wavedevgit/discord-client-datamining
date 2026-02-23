@@ -1,29 +1,29 @@
 /** chunk id: 792866, original params: t,a,i (module,exports,require) **/
 i.d(a, {
-    default: () => e
+    default: () => n
 });
-var n = i(627968);
+var s = i(627968);
 i(64700);
-var s = i(158954);
+var e = i(158954);
 
-function e(t) {
+function n(t) {
     let {
         transitionState: a,
         header: i,
-        body: e,
+        body: n,
         confirmText: r,
-        onClose: l,
-        onConfirm: o
+        onClose: o,
+        onConfirm: c
     } = t;
-    return (0, n.jsx)(s.Modal, {
+    return (0, s.jsx)(e.Modal, {
         title: i,
-        subtitle: e,
+        subtitle: n,
         transitionState: a,
-        onClose: l,
+        onClose: o,
         actions: [{
             text: r,
             onClick: () => {
-                l(), null == o || o()
+                o(), c?.()
             },
             variant: "primary"
         }]

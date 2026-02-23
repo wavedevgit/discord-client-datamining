@@ -1,0 +1,43 @@
+/** chunk id: 432222, original params: e,t,l (module,exports,require) **/
+l.d(t, {
+    A: () => S,
+    w: () => h
+});
+var n = l(64700),
+    s = l(989349),
+    a = l.n(s),
+    i = l(311907),
+    r = l(397927),
+    o = l(843472),
+    u = l(976860),
+    c = l(74114),
+    d = l(994500),
+    m = l(954571),
+    A = l(405269),
+    p = l(661191),
+    x = l(652215),
+    E = l(381941),
+    f = l(985018);
+let h = "749054660769218631";
+
+function S(e, t) {
+    let [l, s] = n.useState(!1), S = n.useCallback(async () => {
+        if (!l) {
+            s(!0), (0, u.pX)(x.BVt.CHANNEL(x.ME, e.id));
+            try {
+                await o.A.sendStickers(e.id, [h], "", {
+                    location: E.Hx.SEND_WAVE
+                })
+            } catch (e) {
+                e.ok || 429 !== e.status || (0, r.showToast)((0, r.createToast)(f.intl.string(f.t.Whhv4w), r.ToastType.FAILURE))
+            }
+            m.default.track(x.HAw.WAVE_CTA_CLICKED, {
+                source: "DM Channel"
+            }), s(!1)
+        }
+    }, [e.id, l]), N = e.isDM() && !e.isSystemDM() && !e.rawRecipients.some(e => e.bot), T = N ? e.getRecipientId() : null, C = (0, i.bG)([d.A], () => null != T && d.A.isFriend(T)), v = (0, i.bG)([d.A], () => null != T && d.A.isIgnored(T)), _ = p.default.extractTimestamp(e.id), g = (0, A.v0)(a()(), a()(_), 18144e5), j = (0, c.l)(e.id);
+    return {
+        waveShouldShow: N && C && !v && null == t && g && null == j,
+        wavePressed: S
+    }
+}

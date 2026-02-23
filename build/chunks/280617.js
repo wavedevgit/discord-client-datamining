@@ -1,79 +1,79 @@
 /** chunk id: 280617, original params: e,t,a (module,exports,require) **/
 a.d(t, {
-    i: () => p
-}), a(896048);
-var r = a(627968),
-    s = a(64700),
-    l = a(503698),
-    n = a.n(l),
-    i = a(359459),
+    i: () => I
+});
+var s = a(627968),
+    l = a(64700),
+    i = a(503698),
+    r = a.n(i),
+    n = a(359459),
     o = a(137540),
     c = a(709808),
     d = a(464261),
-    u = a(818348),
-    _ = a(563853),
-    N = a(510057);
-let A = u.sE.MAIN_NAVIGATION_MENU;
+    _ = a(818348),
+    N = a(563853),
+    A = a(510057);
+let u = _.sE.MAIN_NAVIGATION_MENU;
 
-function p(e) {
+function I(e) {
     let {
         className: t,
         TrackClick: a,
-        onChangeLocale: l,
-        avoidRouter: p,
-        openNavAriaLabel: h,
-        hideNavAriaLabel: m
-    } = e, I = s.useId(), [k, g] = s.useState(!1), O = s.useCallback(() => g(!k), [k]), T = s.useCallback(e => {
-        ("Escape" === e.key || "Esc" === e.key) && (e.preventDefault(), k && O())
-    }, [k, O]);
-    return s.useEffect(() => (window.addEventListener("keydown", T), () => window.removeEventListener("keydown", T)), [T]), (0, r.jsx)("header", {
-        className: n()(N.header, t),
-        children: (0, r.jsxs)("nav", {
-            className: N.headerInner,
-            children: [(0, r.jsx)(a, {
+        onChangeLocale: i,
+        avoidRouter: I,
+        openNavAriaLabel: k,
+        hideNavAriaLabel: h
+    } = e, p = l.useId(), [m, g] = l.useState(!1), T = l.useCallback(() => g(!m), [m]), O = l.useCallback(e => {
+        ("Escape" === e.key || "Esc" === e.key) && (e.preventDefault(), m && T())
+    }, [m, T]);
+    return l.useEffect(() => (window.addEventListener("keydown", O), () => window.removeEventListener("keydown", O)), [O]), (0, s.jsx)("header", {
+        className: r()(A.header, t),
+        children: (0, s.jsxs)("nav", {
+            className: A.headerInner,
+            children: [(0, s.jsx)(a, {
                 tag: "div",
-                eventName: A,
-                className: N.headerLogo,
+                eventName: u,
+                className: A.headerLogo,
                 data: {
                     linkClicked: "logo"
                 },
-                children: (0, r.jsx)(o.A, {
-                    avoidRouter: p,
-                    className: N.logoWrapper,
-                    to: u.Tk.INDEX,
-                    from: u.sE.MAIN_NAVIGATION_MENU,
-                    children: (0, r.jsx)("img", {
-                        className: N.logo,
-                        src: _.T.ASSET_LOGO_DISCORD_SVG,
+                children: (0, s.jsx)(o.A, {
+                    avoidRouter: I,
+                    className: A.logoWrapper,
+                    to: _.Tk.INDEX,
+                    from: _.sE.MAIN_NAVIGATION_MENU,
+                    children: (0, s.jsx)("img", {
+                        className: A.logo,
+                        src: N.T.ASSET_LOGO_DISCORD_SVG,
                         alt: "Discord",
                         itemProp: "logo"
                     })
                 })
-            }), (0, r.jsx)(a, {
+            }), (0, s.jsx)(a, {
                 tag: "div",
-                className: N.hamburgerButton,
-                eventName: A,
+                className: A.hamburgerButton,
+                eventName: u,
                 data: {
                     linkClicked: "mobile-menu"
                 },
-                children: (0, r.jsx)(i._, {
-                    open: k,
+                children: (0, s.jsx)(n._, {
+                    open: m,
                     "aria-haspopup": "true",
-                    "aria-label": k ? m : h,
-                    "aria-expanded": k,
-                    "aria-controls": I,
-                    onClick: O
+                    "aria-label": m ? h : k,
+                    "aria-expanded": m,
+                    "aria-controls": p,
+                    onClick: T
                 })
-            }), (0, r.jsxs)("ul", {
-                className: k ? N.headerNavOpen : N.headerNav,
-                children: [(0, r.jsx)(d.C, {
-                    avoidRouter: p,
+            }), (0, s.jsxs)("ul", {
+                className: m ? A.headerNavOpen : A.headerNav,
+                children: [(0, s.jsx)(d.C, {
+                    avoidRouter: I,
                     TrackClick: a,
-                    styles: N,
+                    styles: A,
                     isMobile: !0,
-                    isVisible: k
-                }), (0, r.jsx)(c.B, {
-                    onChange: l
+                    isVisible: m
+                }), (0, s.jsx)(c.B, {
+                    onChange: i
                 })]
             })]
         })

@@ -1,40 +1,40 @@
 /** chunk id: 697122, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    Q: () => d
+    Q: () => u
 });
-var l = n(627968),
-    r = n(503698),
-    i = n.n(r),
+var i = n(627968),
+    l = n(503698),
+    s = n.n(l),
     a = n(990078),
-    s = n(397927),
+    r = n(397927),
     o = n(396787),
     c = n(985018),
-    u = n(876872);
+    d = n(876872);
 
-function d(e) {
+function u(e) {
     let {
         channel: t,
         children: n,
-        className: r,
-        editable: d,
+        className: l,
+        editable: u,
         location: h
     } = e;
-    return d ? (0, l.jsx)(a.m, {
+    return u ? (0, i.jsx)(a.m, {
         position: "bottom",
         text: c.intl.string(c.t["0qPSMV"]),
-        children: (0, l.jsxs)(s.DUT, {
-            className: i()(u.e, r),
+        children: (0, i.jsxs)(r.DUT, {
+            className: s()(d.e, l),
             onClick: () => (0, o.jv)(t.id, h),
-            children: [n, (0, l.jsx)("div", {
-                className: u.Z,
-                children: (0, l.jsx)(s.R2l, {
+            children: [n, (0, i.jsx)("div", {
+                className: d.Z,
+                children: (0, i.jsx)(r.R2l, {
                     size: "xs",
                     color: "currentColor"
                 })
             })]
         })
-    }) : (0, l.jsx)("div", {
-        className: r,
+    }) : (0, i.jsx)("div", {
+        className: l,
         children: n
     })
 }

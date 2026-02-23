@@ -1,180 +1,175 @@
 /** chunk id: 121914, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    _: () => N,
-    g: () => P
-}), n(896048);
-var i, r = n(627968),
+    _: () => b,
+    g: () => R
+});
+var i, s = n(627968),
     l = n(64700),
-    a = n(503698),
-    o = n.n(a),
-    s = n(311907),
-    u = n(459192),
-    c = n(397927),
-    d = n(47167),
+    r = n(503698),
+    a = n.n(r),
+    o = n(311907),
+    d = n(459192),
+    u = n(397927),
+    c = n(47167),
     h = n(713654),
-    p = n(941971),
-    f = n(734057),
-    g = n(71393),
-    m = n(222823),
-    A = n(994500),
-    y = n(485296),
-    O = n(741961),
-    v = n(287809),
-    b = n(145567),
-    E = n(187667),
-    _ = n(922611),
-    S = n(651813),
-    x = n(919843),
-    I = n(534765),
-    j = n(34307),
-    C = n(652215),
-    T = n(985018),
-    w = n(58812),
-    N = ((i = {}).DEFAULT = "DEFAULT", i.CHANNEL_TYPE = "CHANNEL_TYPE", i);
-let P = l.memo(function(e) {
-    var t, n;
+    g = n(941971),
+    m = n(734057),
+    p = n(71393),
+    A = n(222823),
+    x = n(994500),
+    E = n(485296),
+    f = n(741961),
+    S = n(287809),
+    I = n(145567),
+    T = n(187667),
+    v = n(922611),
+    C = n(651813),
+    j = n(919843),
+    y = n(534765),
+    w = n(34307),
+    O = n(652215),
+    _ = n(985018),
+    N = n(58812),
+    b = ((i = {}).DEFAULT = "DEFAULT", i.CHANNEL_TYPE = "CHANNEL_TYPE", i);
+let R = l.memo(function(e) {
     let {
-        channelId: i,
-        selectedVoiceChannelId: a,
-        iconVariant: N = "DEFAULT"
-    } = e, P = null != a && i === a, D = (0, s.bG)([E.A], () => E.A.getSelectedChannelId() === i, [i]), R = (0, s.bG)([E.A], () => E.A.getVoiceChatMinimized()), L = (0, c.rdh)(c.LU0.colors.ICON_STATUS_ONLINE), k = (0, s.bG)([y.A], () => !!P && !!(y.A.isAnyoneElseSpeaking() || y.A.isCurrentUserSpeaking()), [P]), [M, z] = l.useState(!1), {
-        mentionCount: V,
-        isMentionLowImportance: U
-    } = (0, s.cf)([m.Ay], () => null != i ? {
-        mentionCount: m.Ay.getMentionCount(i),
-        isMentionLowImportance: m.Ay.getIsMentionLowImportance(i)
+        channelId: t,
+        selectedVoiceChannelId: n,
+        iconVariant: i = "DEFAULT"
+    } = e, r = null != n && t === n, b = (0, o.bG)([T.A], () => T.A.getSelectedChannelId() === t, [t]), R = (0, o.bG)([T.A], () => T.A.getVoiceChatMinimized()), M = (0, u.rdh)(u.LU0.colors.ICON_STATUS_ONLINE), L = (0, o.bG)([E.A], () => !!r && !!(E.A.isAnyoneElseSpeaking() || E.A.isCurrentUserSpeaking()), [r]), [z, D] = l.useState(!1), {
+        mentionCount: k,
+        isMentionLowImportance: P
+    } = (0, o.cf)([A.Ay], () => null != t ? {
+        mentionCount: A.Ay.getMentionCount(t),
+        isMentionLowImportance: A.Ay.getIsMentionLowImportance(t)
     } : {
         mentionCount: 0,
         isMentionLowImportance: !1
-    }, [i]), {
+    }, [t]), {
         label: G,
-        user: H,
-        guild: Y,
-        channel: F
-    } = (0, s.cf)([f.A, g.A, v.default, A.A], () => {
-        var e;
-        let t = null != (e = f.A.getChannel(i)) ? e : null;
-        if (null == t) return {
-            label: T.intl.string(T.t.zLZPmk),
+        user: V,
+        guild: U,
+        channel: H
+    } = (0, o.cf)([m.A, p.A, S.default, x.A], () => {
+        let e = m.A.getChannel(t) ?? null;
+        if (null == e) return {
+            label: _.intl.string(_.t.zLZPmk),
             user: null,
             guild: null,
             channel: null
         };
-        let n = (0, d.m1)(t, v.default, A.A);
+        let n = (0, c.m1)(e, S.default, x.A);
         return {
             label: n,
-            user: (0, S.j)(t, v.default),
-            guild: (0, S.P)(t, g.A),
-            channel: t
+            user: (0, C.j)(e, S.default),
+            guild: (0, C.P)(e, p.A),
+            channel: e
         }
-    }, [i]);
+    }, [t]);
     l.useEffect(() => {
-        null == F && (0, x.b)(i)
-    }, [F, i]);
-    let W = (0, s.bG)([O.A, v.default], () => {
-            var e, t;
-            if (null == F) return !1;
-            let n = null != (e = null == (t = v.default.getCurrentUser()) ? void 0 : t.id) ? e : null,
-                i = O.A.getTypingUsers(F.id);
-            for (let e in i)
-                if (e !== n) return !0;
+        null == H && (0, j.b)(t)
+    }, [H, t]);
+    let Y = (0, o.bG)([f.A, S.default], () => {
+            if (null == H) return !1;
+            let e = S.default.getCurrentUser()?.id ?? null,
+                t = f.A.getTypingUsers(H.id);
+            for (let n in t)
+                if (n !== e) return !0;
             return !1
-        }, [F]),
-        K = (0, s.bG)([m.Ay], () => {
-            let e = null == F ? void 0 : F.id;
-            return null != e && m.Ay.hasUnread(e)
-        }, [F]),
-        Z = (0, r.jsx)("div", {
-            className: w.St,
+        }, [H]),
+        Z = (0, o.bG)([A.Ay], () => {
+            let e = H?.id;
+            return null != e && A.Ay.hasUnread(e)
+        }, [H]),
+        W = (0, s.jsx)("div", {
+            className: N.St,
             children: (() => {
-                var e;
-                let t = null != (e = null == F ? void 0 : F.isPrivate()) && e;
-                if ("CHANNEL_TYPE" === N && !t) {
-                    let e = (0, h.gU)(F, Y);
-                    null != e || (e = c.oyn);
-                    let t = P && !R && k,
+                let e = H?.isPrivate() ?? !1;
+                if ("CHANNEL_TYPE" === i && !e) {
+                    let e = (0, h.gU)(H, U);
+                    e ??= u.oyn;
+                    let t = r && !R && L,
                         n = {
                             boxShadow: "none"
                         },
-                        i = L.rgba({
+                        i = M.rgba({
                             opacity: .85
                         }),
-                        l = L.rgba({
+                        l = M.rgba({
                             opacity: .45
                         });
-                    return t && (n.boxShadow = "0 0 0 2px rgba(".concat(i, "), 0 0 12px 2px rgba(").concat(l, ")")), (0, r.jsx)("div", {
-                        className: o()(w.s, D && w.lJ),
+                    return t && (n.boxShadow = `0 0 0 2px rgba(${i}), 0 0 12px 2px rgba(${l})`), (0, s.jsx)("div", {
+                        className: a()(N.s, b && N.lJ),
                         style: n,
-                        children: (0, r.jsx)(e, {
-                            className: w.Yc,
+                        children: (0, s.jsx)(e, {
+                            className: N.Yc,
                             size: "sm",
-                            color: D ? c.LU0.colors.WHITE : c.LU0.colors.ICON_STATUS_ONLINE
+                            color: b ? u.LU0.colors.WHITE : u.LU0.colors.ICON_STATUS_ONLINE
                         })
                     })
                 }
-                return (0, r.jsx)(_.g, {
-                    channel: F,
-                    user: H,
-                    guild: Y,
-                    isSelected: D,
-                    size: _.c.SIZE_40,
-                    isTyping: W,
-                    mentionCount: V,
-                    isMentionLowImportance: U
+                return (0, s.jsx)(v.g, {
+                    channel: H,
+                    user: V,
+                    guild: U,
+                    isSelected: b,
+                    size: v.c.SIZE_40,
+                    isTyping: Y,
+                    mentionCount: k,
+                    isMentionLowImportance: P
                 })
             })()
         }),
-        B = (0, I.r)({
-            channel: F,
-            guild: Y,
-            user: H
+        X = (0, y.r)({
+            channel: H,
+            guild: U,
+            user: V
         }),
-        X = null != (t = null == F ? void 0 : F.isPrivate()) && t,
-        J = null != (n = null == Y ? void 0 : Y.name) ? n : "",
-        Q = X ? void 0 : G,
-        q = X ? G : "" !== J ? J : G,
-        $ = (() => {
-            if (null == F || X) return null;
-            let e = (0, h.gU)(F, Y);
-            return null != e || (e = c.oyn), (0, r.jsx)(e, {
+        F = H?.isPrivate() ?? !1,
+        K = U?.name ?? "",
+        B = F ? void 0 : G,
+        q = F ? G : "" !== K ? K : G,
+        Q = (() => {
+            if (null == H || F) return null;
+            let e = (0, h.gU)(H, U);
+            return e ??= u.oyn, (0, s.jsx)(e, {
                 size: "sm",
-                color: c.LU0.colors.INTERACTIVE_ICON_DEFAULT
+                color: u.LU0.colors.INTERACTIVE_ICON_DEFAULT
             })
         })();
-    return null == F ? (0, r.jsx)("div", {
-        className: w.R
-    }) : (0, r.jsx)(u.u, {
-        title: Q,
+    return null == H ? (0, s.jsx)("div", {
+        className: N.R
+    }) : (0, s.jsx)(d.u, {
+        title: B,
         body: q,
-        asset: $,
+        asset: Q,
         assetSize: 20,
         "aria-label": G,
-        children: (0, r.jsxs)(c.DUT, {
-            className: w.pc,
+        children: (0, s.jsxs)(u.DUT, {
+            className: N.pc,
             onClick: () => {
-                var e;
-                P && (0, b.S$)({
+                r && (0, I.S$)({
                     minimized: !1
-                }), (0, b.D$)({
+                }), (0, I.D$)({
                     target: {
-                        kind: b.bB.CHANNEL,
-                        channelId: i,
-                        guildId: null != (e = null == Y ? void 0 : Y.id) ? e : null,
+                        kind: I.bB.CHANNEL,
+                        channelId: t,
+                        guildId: U?.id ?? null,
                         messageId: null
                     },
-                    source: j.B.MANUAL,
-                    widgetType: C.uss.TEXT_CHAT_V3
+                    source: w.B.MANUAL,
+                    widgetType: O.uss.TEXT_CHAT_V3
                 })
             },
-            onContextMenu: B,
-            onMouseEnter: () => z(!0),
-            onMouseLeave: () => z(!1),
-            children: [Z, (0, r.jsx)("div", {
-                className: w.vT,
-                children: (0, r.jsx)(p.A, {
-                    selected: D,
-                    hovered: M,
-                    unread: K
+            onContextMenu: X,
+            onMouseEnter: () => D(!0),
+            onMouseLeave: () => D(!1),
+            children: [W, (0, s.jsx)("div", {
+                className: N.vT,
+                children: (0, s.jsx)(g.A, {
+                    selected: b,
+                    hovered: z,
+                    unread: Z
                 })
             })]
         })

@@ -1,97 +1,65 @@
-/** chunk id: 983685, original params: A,t,e (module,exports,require) **/
-e.d(t, {
-    $: () => n
+/** chunk id: 983685, original params: A,v,h (module,exports,require) **/
+h.d(v, {
+    $: () => Q
 });
-var g = e(627968);
-e(64700);
-var r = e(996682),
-    v = e(211974);
+var g = h(627968);
+h(64700);
+var B = h(996682),
+    C = h(211974);
 let f = ["#4282D8", "#00BBFF"],
-    B = [.15, .42],
-    h = [{
+    M = [.15, .42],
+    H = [{
         base: 7,
         tint: 1
     }, {
         base: 3,
         tint: 1
     }],
-    n = A => {
-        var t, e;
+    Q = A => {
         let {
-            width: n = 24,
-            height: l = 24,
-            primaryTintColor: C
-        } = A, w = function(A, t) {
-            if (null == A) return {};
-            var e, g, r, v = {};
-            if ("u" > typeof Reflect && Reflect.ownKeys) {
-                for (r = 0, e = Reflect.ownKeys(A); r < e.length; r++) g = e[r], !(t.indexOf(g) >= 0) && Object.prototype.propertyIsEnumerable.call(A, g) && (v[g] = A[g]);
-                return v
-            }
-            if (v = function(A, t) {
-                    if (null == A) return {};
-                    var e, g, r = {},
-                        v = Object.getOwnPropertyNames(A);
-                    for (g = 0; g < v.length; g++) e = v[g], !(t.indexOf(e) >= 0) && Object.prototype.propertyIsEnumerable.call(A, e) && (r[e] = A[e]);
-                    return r
-                }(A, t), Object.getOwnPropertySymbols)
-                for (r = 0, e = Object.getOwnPropertySymbols(A); r < e.length; r++) g = e[r], !(t.indexOf(g) >= 0) && Object.prototype.propertyIsEnumerable.call(A, g) && (v[g] = A[g]);
-            return v
-        }(A, ["width", "height", "primaryTintColor"]), {
-            primaryColorsTransformed: o
-        } = (0, v.V)({
+            width: v = 24,
+            height: h = 24,
+            primaryTintColor: Q,
+            ...w
+        } = A, {
+            primaryColorsTransformed: t
+        } = (0, C.V)({
             primaryBaseColors: f,
-            primaryTintColor: C,
-            primaryTintLuminances: B,
-            primaryLuminanceWeights: h
+            primaryTintColor: Q,
+            primaryTintLuminances: M,
+            primaryLuminanceWeights: H
         });
-        return (0, g.jsxs)("svg", (t = function(A) {
-            for (var t = 1; t < arguments.length; t++) {
-                var e = null != arguments[t] ? arguments[t] : {},
-                    g = Object.keys(e);
-                "function" == typeof Object.getOwnPropertySymbols && (g = g.concat(Object.getOwnPropertySymbols(e).filter(function(A) {
-                    return Object.getOwnPropertyDescriptor(e, A).enumerable
-                }))), g.forEach(function(t) {
-                    var g;
-                    g = e[t], t in A ? Object.defineProperty(A, t, {
-                        value: g,
-                        enumerable: !0,
-                        configurable: !0,
-                        writable: !0
-                    }) : A[t] = g
-                })
-            }
-            return A
-        }({}, (0, r.A)(w)), e = e = {
-            width: n,
-            height: l,
+        return (0, g.jsxs)("svg", {
+            ...(0, B.A)(w),
+            width: v,
+            height: h,
             viewBox: "0 0 16 16",
             fill: "none",
             xmlns: "http://www.w3.org/2000/svg",
             children: [(0, g.jsx)("path", {
                 d: "M12 2H4V3H3V4H2V5H1V8H2V9H3V10H4V11H5V12H6V13H7V14H9V13H10V12H11V11H12V10H13V9H14V8H15V5H14V4H13V3H12V2Z",
-                fill: o[1]
+                fill: t[1]
             }), (0, g.jsx)("path", {
                 d: "M8 13H7V14H8V13Z",
-                fill: o[0]
+                fill: t[0]
             }), (0, g.jsx)("path", {
                 d: "M7 12H6V13H7V12Z",
-                fill: o[0]
+                fill: t[0]
             }), (0, g.jsx)("path", {
                 d: "M6 11H5V12H6V11Z",
-                fill: o[0]
+                fill: t[0]
             }), (0, g.jsx)("path", {
                 d: "M5 10H4V11H5V10Z",
-                fill: o[0]
+                fill: t[0]
             }), (0, g.jsx)("path", {
                 d: "M4 9H3V10H4V9Z",
-                fill: o[0]
+                fill: t[0]
             }), (0, g.jsx)("path", {
                 d: "M3 8H2V9H3V8Z",
-                fill: o[0]
+                fill: t[0]
             }), (0, g.jsx)("path", {
                 d: "M2 7H1V8H2V7Z",
-                fill: o[0]
+                fill: t[0]
             }), (0, g.jsx)("path", {
                 d: "M4 3H3V4H4V3Z",
                 fill: "white"
@@ -100,7 +68,7 @@ let f = ["#4282D8", "#00BBFF"],
                 fill: "white"
             }), (0, g.jsx)("path", {
                 d: "M12 7.00001V8.00001H11V9.00001H9.99997V10H8.99997V11H7.99997V13H8.99997V12H9.99997V11H11V10H12V9.00001H13V8.00001H14V7.00001H12Z",
-                fill: o[0]
+                fill: t[0]
             }), (0, g.jsx)("path", {
                 opacity: "0.5",
                 d: "M4 7.00001V8.00001H5V9.00001H6V10H7V11H8V13H7V12H6V11H5V10H4V9.00001H3V8.00001H2V7.00001H4Z",
@@ -123,7 +91,7 @@ let f = ["#4282D8", "#00BBFF"],
                 fill: "white"
             }), (0, g.jsx)("path", {
                 d: "M3.99997 3.00001V6.00001H4.99997V5.00001H5.99997V4.00001H6.99997V3.00001H3.99997Z",
-                fill: o[0]
+                fill: t[0]
             }), (0, g.jsx)("path", {
                 d: "M2 4H1V5H2V4Z",
                 fill: "black"
@@ -191,14 +159,5 @@ let f = ["#4282D8", "#00BBFF"],
                 d: "M4 1V2L12 2V1L4 1Z",
                 fill: "black"
             })]
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(e)) : (function(A, t) {
-            var e = Object.keys(A);
-            if (Object.getOwnPropertySymbols) {
-                var g = Object.getOwnPropertySymbols(A);
-                e.push.apply(e, g)
-            }
-            return e
-        })(Object(e)).forEach(function(A) {
-            Object.defineProperty(t, A, Object.getOwnPropertyDescriptor(e, A))
-        }), t))
+        })
     }

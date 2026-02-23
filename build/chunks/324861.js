@@ -1,28 +1,27 @@
-/** chunk id: 324861, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    A: () => c
+/** chunk id: 324861, original params: e,t,l (module,exports,require) **/
+l.d(t, {
+    A: () => u
 });
-var r = n(64700),
-    i = n(554146),
-    a = n(73153),
-    o = n(20439),
-    s = n(890687),
-    l = n(654487);
-let c = () => {
-    let e = (0, o.A)(i.M.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL),
-        t = (0, o.A)(i.M.VIRTUAL_CURRENCY_DISCOVERY_ONBOARDING_COACHMARK),
-        n = (0, o.A)(i.M.VIRTUAL_CURRENCY_SHOP_ONBOARDING_COACHMARK),
-        c = r.useCallback(() => {
-            e.isDismissed && e.handleToggleDismissState(), t.isDismissed && t.handleToggleDismissState(), n.isDismissed && n.handleToggleDismissState(), a.h.dispatch({
+var a = l(64700),
+    n = l(554146),
+    r = l(73153),
+    i = l(20439),
+    s = l(890687),
+    o = l(654487);
+let u = () => {
+    let e = (0, i.A)(n.M.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL),
+        t = (0, i.A)(n.M.VIRTUAL_CURRENCY_DISCOVERY_ONBOARDING_COACHMARK),
+        l = (0, i.A)(n.M.VIRTUAL_CURRENCY_SHOP_ONBOARDING_COACHMARK),
+        u = a.useCallback(() => {
+            e.isDismissed && e.handleToggleDismissState(), t.isDismissed && t.handleToggleDismissState(), l.isDismissed && l.handleToggleDismissState(), r.h.dispatch({
                 type: "VIRTUAL_CURRENCY_ONBOARDING_MODAL_RESET"
             })
-        }, [t, n, e]),
+        }, [t, l, e]),
         {
-            handleResetStatusClick: u
-        } = (0, s.j$)(l.Fw);
+            handleResetStatusClick: c
+        } = (0, s.j$)(o.Fw);
     return {
-        resetOnboardingExperience: c,
-        resetQuestStatus: u
+        resetOnboardingExperience: u,
+        resetQuestStatus: c
     }
 }

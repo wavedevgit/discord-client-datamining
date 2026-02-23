@@ -1,33 +1,32 @@
-/** chunk id: 746539, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    M: () => o
-}), n(228524), n(896048);
-var r = n(627968),
-    i = n(64700),
-    a = n(158954);
-let o = {
+/** chunk id: 746539, original params: e,l,a (module,exports,require) **/
+a.d(l, {
+    M: () => i
+});
+var t = a(627968),
+    o = a(64700),
+    n = a(158954);
+let i = {
     title: "Switch",
     stories: [{
         id: "baseSwitch",
         name: "BaseSwitch",
         component: function(e) {
             let {
-                disabled: t,
-                hasIcon: n,
-                label: o,
+                disabled: l,
+                hasIcon: a,
+                label: i,
                 description: s,
-                required: l,
-                errorMessage: c
-            } = e, [u, d] = i.useState(!1);
-            return (0, r.jsx)(a.Ad5, {
-                label: o,
+                required: r,
+                errorMessage: d
+            } = e, [u, c] = o.useState(!1);
+            return (0, t.jsx)(n.Ad5, {
+                label: i,
                 description: s,
-                required: l,
-                errorMessage: c,
-                hasIcon: n,
-                onChange: d,
-                disabled: t,
+                required: r,
+                errorMessage: d,
+                hasIcon: a,
+                onChange: c,
+                disabled: l,
                 checked: u
             })
         },

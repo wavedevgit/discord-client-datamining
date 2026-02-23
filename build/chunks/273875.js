@@ -1,188 +1,183 @@
 /** chunk id: 273875, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => f
-}), n(896048), n(733351);
-var r = n(627968),
-    i = n(64700),
+    A: () => h
+});
+var i = n(627968),
+    s = n(64700),
     l = n(503698),
-    s = n.n(l),
+    r = n.n(l),
     a = n(311907),
     o = n(990078),
-    c = n(397927),
-    d = n(765671),
+    d = n(397927),
+    c = n(765671),
     u = n(775602),
-    g = n(530552),
-    m = n(318023);
-let p = i.forwardRef(function(e, t) {
-    var n, l;
+    m = n(530552),
+    g = n(318023);
+let x = s.forwardRef(function(e, t) {
     let {
-        value: a,
-        isSelected: c,
-        isEditing: d,
-        forceShowErrorTooltip: u = !1,
-        error: g
-    } = e, [p, f, h] = i.useMemo(() => {
-        if (null == g) return [];
+        value: n,
+        isSelected: l,
+        isEditing: a,
+        forceShowErrorTooltip: d = !1,
+        error: c
+    } = e, [u, m, x] = s.useMemo(() => {
+        if (null == c) return [];
         let {
             erroringCharacterOffset: e = 0,
-            erroringCharacterLength: t = a.length
-        } = null != g ? g : {};
-        return [a.slice(0, e), a.slice(e, e + t), a.slice(e + t)]
-    }, [a, g]);
-    return null == g ? (0, r.jsx)("div", {
-        className: s()(m.n5, {
-            [m.JN]: d,
-            [m.sp]: c
+            erroringCharacterLength: t = n.length
+        } = c ?? {};
+        return [n.slice(0, e), n.slice(e, e + t), n.slice(e + t)]
+    }, [n, c]);
+    return null == c ? (0, i.jsx)("div", {
+        className: r()(g.n5, {
+            [g.JN]: a,
+            [g.sp]: l
         }),
         ref: t,
-        children: a
-    }) : (null != (n = null == p ? void 0 : p.length) ? n : 0) + (null != (l = null == f ? void 0 : f.length) ? l : 0) > 70 ? (0, r.jsx)(o.m, {
-        "aria-label": g.message,
-        __unsupportedReactNodeAsText: (0, r.jsxs)("div", {
-            "aria-label": g.message,
-            children: [g.message, " ", (0, r.jsx)("span", {
-                className: m.io,
-                children: f
+        children: n
+    }) : (u?.length ?? 0) + (m?.length ?? 0) > 70 ? (0, i.jsx)(o.m, {
+        "aria-label": c.message,
+        __unsupportedReactNodeAsText: (0, i.jsxs)("div", {
+            "aria-label": c.message,
+            children: [c.message, " ", (0, i.jsx)("span", {
+                className: g.io,
+                children: m
             })]
         }),
         position: "left",
-        forceOpen: u || void 0,
-        children: (0, r.jsxs)("div", {
+        forceOpen: d || void 0,
+        children: (0, i.jsxs)("div", {
             ref: t,
-            className: s()(m.n5, {
-                [m.JN]: d,
-                [m.bJ]: null != g && !d,
-                [m.fR]: null != g && !d
+            className: r()(g.n5, {
+                [g.JN]: a,
+                [g.bJ]: null != c && !a,
+                [g.fR]: null != c && !a
             }),
-            children: [(0, r.jsx)("span", {
-                children: p
-            }), (0, r.jsx)("span", {
-                className: m.SD,
-                children: f
-            }), (0, r.jsx)("span", {
-                children: h
+            children: [(0, i.jsx)("span", {
+                children: u
+            }), (0, i.jsx)("span", {
+                className: g.SD,
+                children: m
+            }), (0, i.jsx)("span", {
+                children: x
             })]
         })
-    }) : (0, r.jsxs)("div", {
+    }) : (0, i.jsxs)("div", {
         ref: t,
-        className: s()(m.n5, {
-            [m.JN]: d,
-            [m.bJ]: null != g && !d
+        className: r()(g.n5, {
+            [g.JN]: a,
+            [g.bJ]: null != c && !a
         }),
-        children: [(0, r.jsx)("span", {
-            children: p
-        }), (0, r.jsx)(o.m, {
-            text: g.message,
+        children: [(0, i.jsx)("span", {
+            children: u
+        }), (0, i.jsx)(o.m, {
+            text: c.message,
             position: "top",
-            forceOpen: u || void 0,
-            children: (0, r.jsx)("span", {
-                className: m.SD,
-                children: f
+            forceOpen: d || void 0,
+            children: (0, i.jsx)("span", {
+                className: g.SD,
+                children: m
             })
-        }), (0, r.jsx)("span", {
-            children: h
+        }), (0, i.jsx)("span", {
+            children: x
         })]
     })
 });
 
-function f(e) {
+function h(e) {
     let {
         value: t,
         onChange: n,
         onBlur: l,
         onFocus: o,
-        onRemove: f,
-        isSelected: h,
-        isSelecting: b,
-        error: x,
-        forceShowErrorTooltip: j
-    } = e, _ = i.useRef(null), O = i.useRef(null), [v, y] = i.useState(!1), {
-        ref: A,
-        width: E = 0
-    } = (0, d.Ay)(v), {
-        ref: N,
-        width: S = 0
-    } = (0, d.Ay)(v), I = (0, a.bG)([u.A], () => u.A.useReducedMotion), [C, T] = i.useState(j), P = i.useRef(null), w = E > S ? E : S;
-    i.useEffect(() => {
-        j ? (T(!0), P.current = setTimeout(() => {
-            T(!1), P.current = null
-        }, g.Mw)) : T(!1)
-    }, [j]), i.useEffect(() => () => {
-        clearTimeout(P.current)
+        onRemove: h,
+        isSelected: _,
+        isSelecting: A,
+        error: p,
+        forceShowErrorTooltip: f
+    } = e, j = s.useRef(null), N = s.useRef(null), [E, b] = s.useState(!1), {
+        ref: T,
+        width: C = 0
+    } = (0, c.Ay)(E), {
+        ref: I,
+        width: v = 0
+    } = (0, c.Ay)(E), S = (0, a.bG)([u.A], () => u.A.useReducedMotion), [y, R] = s.useState(f), O = s.useRef(null), G = C > v ? C : v;
+    s.useEffect(() => {
+        f ? (R(!0), O.current = setTimeout(() => {
+            R(!1), O.current = null
+        }, 5e3)) : R(!1)
+    }, [f]), s.useEffect(() => () => {
+        clearTimeout(O.current)
     }, []);
-    let R = i.useCallback(e => {
+    let L = s.useCallback(e => {
             n(e.target.value)
         }, [n]),
-        D = i.useCallback(function() {
+        D = s.useCallback(function() {
             let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-            if (t.trim().length <= 0 && f(), null != _.current && null != A.current && null != O.current) {
-                var n;
-                _.current.scrollTo(0, 0), _.current.setSelectionRange(0, 0), _.current.scrollLeft = 0, A.current.scrollLeft = 0, (null == (n = O.current) ? void 0 : n.ref) != null && (O.current.ref.scrollLeft = 0)
-            }
-            y(!1), l(e)
-        }, [t, A, l, f]),
-        G = i.useCallback(e => {
+            t.trim().length <= 0 && h(), null != j.current && null != T.current && null != N.current && (j.current.scrollTo(0, 0), j.current.setSelectionRange(0, 0), j.current.scrollLeft = 0, T.current.scrollLeft = 0, N.current?.ref != null && (N.current.ref.scrollLeft = 0)), b(!1), l(e)
+        }, [t, T, l, h]),
+        M = s.useCallback(e => {
             let n = t.trim().length <= 0;
-            g.Wu.has(e.key) ? (e.preventDefault(), e.stopPropagation(), D(!0)) : "Backspace" === e.key && n && (e.preventDefault(), e.stopPropagation(), D(!0))
+            m.Wu.has(e.key) ? (e.preventDefault(), e.stopPropagation(), D(!0)) : "Backspace" === e.key && n && (e.preventDefault(), e.stopPropagation(), D(!0))
         }, [D, t]),
-        L = i.useCallback(e => {
+        k = s.useCallback(e => {
             let t = e.metaKey || e.ctrlKey;
-            o(t), t ? e.preventDefault() : y(!0), e.stopPropagation()
+            o(t), t ? e.preventDefault() : b(!0), e.stopPropagation()
         }, [o]),
-        k = i.useCallback(e => {
-            f()
-        }, [f]);
-    return (0, r.jsx)("div", {
-        className: m.G1,
-        children: (0, r.jsxs)("div", {
-            ref: N,
-            className: s()(m.Tm, {
-                [m.JN]: v,
-                [m.mV]: !v && !I,
-                [m.sp]: h,
-                [m.Pq]: b,
-                [m.bJ]: null != x && !v
+        U = s.useCallback(e => {
+            h()
+        }, [h]);
+    return (0, i.jsx)("div", {
+        className: g.G1,
+        children: (0, i.jsxs)("div", {
+            ref: I,
+            className: r()(g.Tm, {
+                [g.JN]: E,
+                [g.mV]: !E && !S,
+                [g.sp]: _,
+                [g.Pq]: A,
+                [g.bJ]: null != p && !E
             }),
-            children: [(0, r.jsxs)(c.DUT, {
+            children: [(0, i.jsxs)(d.DUT, {
                 tag: "div",
                 onBlur: () => D(!1),
-                onClick: L,
+                onClick: k,
                 ignoreKeyPress: !0,
-                onMouseEnter: () => T(!0),
-                onMouseLeave: () => T(!1),
-                className: s()(m.nz, {
-                    [m.Pq]: b,
-                    [m.JN]: v
+                onMouseEnter: () => R(!0),
+                onMouseLeave: () => R(!1),
+                className: r()(g.nz, {
+                    [g.Pq]: A,
+                    [g.JN]: E
                 }),
-                ref: O,
-                children: [(0, r.jsx)("input", {
-                    className: s()(m.uS, {
-                        [m.JN]: v,
-                        [m.Pq]: b
+                ref: N,
+                children: [(0, i.jsx)("input", {
+                    className: r()(g.uS, {
+                        [g.JN]: E,
+                        [g.Pq]: A
                     }),
-                    ref: _,
-                    onChange: R,
-                    onKeyDownCapture: G,
+                    ref: j,
+                    onChange: L,
+                    onKeyDownCapture: M,
                     value: t,
                     style: {
-                        width: w > 0 ? w : "calc(".concat(t.length, "ch + 10px)")
+                        width: G > 0 ? G : `calc(${t.length}ch + 10px)`
                     }
-                }), (0, r.jsx)(p, {
-                    ref: A,
+                }), (0, i.jsx)(x, {
+                    ref: T,
                     value: t,
-                    isEditing: v,
-                    isSelected: h,
-                    error: x,
-                    forceShowErrorTooltip: C || v
+                    isEditing: E,
+                    isSelected: _,
+                    error: p,
+                    forceShowErrorTooltip: y || E
                 })]
-            }), !v && (0, r.jsx)(c.DUT, {
-                className: m.Nk,
-                onClick: k,
-                children: (0, r.jsx)(c.PGe, {
+            }), !E && (0, i.jsx)(d.DUT, {
+                className: g.Nk,
+                onClick: U,
+                children: (0, i.jsx)(d.PGe, {
                     size: "xxs",
                     color: "currentColor",
-                    className: m.ut
+                    className: g.ut
                 })
             })]
         })

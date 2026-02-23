@@ -1,59 +1,31 @@
-/** chunk id: 533957, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => u
+/** chunk id: 533957, original params: n,e,t (module,exports,require) **/
+t.d(e, {
+    A: () => A
 });
-var r = n(627968);
-n(64700);
-var c = n(311907),
-    i = n(397927),
-    o = n(576705),
-    l = n(652215),
-    a = n(985018);
+var l = t(627968);
+t(64700);
+var r = t(311907),
+    a = t(397927),
+    i = t(576705),
+    c = t(652215),
+    d = t(985018);
 
-function u(e, t) {
-    let u = (0, c.bG)([o.A], () => o.A.can(l.xBc.MANAGE_CHANNELS, e), [e]);
-    return __OVERLAY__ || !u ? null : (0, r.jsx)(i.Drp, {
+function A(n, e) {
+    let A = (0, r.bG)([i.A], () => i.A.can(c.xBc.MANAGE_CHANNELS, n), [n]);
+    return __OVERLAY__ || !A ? null : (0, l.jsx)(a.Drp, {
         id: "clone-channel",
-        label: a.intl.string(a.t.dEaPc4),
-        action: () => (0, i.mMO)(async () => {
+        label: d.intl.string(d.t.dEaPc4),
+        action: () => (0, a.mMO)(async () => {
             let {
-                default: c
-            } = await Promise.all([n.e("72271"), n.e("64233"), n.e("29592")]).then(n.bind(n, 409200));
-            return n => {
-                var i, o;
-                return (0, r.jsx)(c, (i = function(e) {
-                    for (var t = 1; t < arguments.length; t++) {
-                        var n = null != arguments[t] ? arguments[t] : {},
-                            r = Object.keys(n);
-                        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                            return Object.getOwnPropertyDescriptor(n, e).enumerable
-                        }))), r.forEach(function(t) {
-                            var r;
-                            r = n[t], t in e ? Object.defineProperty(e, t, {
-                                value: r,
-                                enumerable: !0,
-                                configurable: !0,
-                                writable: !0
-                            }) : e[t] = r
-                        })
-                    }
-                    return e
-                }({}, n), o = o = {
-                    channelType: e.type,
-                    guildId: t.id,
-                    categoryId: e.parent_id,
-                    cloneChannelId: e.id
-                }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
-                    var n = Object.keys(e);
-                    if (Object.getOwnPropertySymbols) {
-                        var r = Object.getOwnPropertySymbols(e);
-                        n.push.apply(n, r)
-                    }
-                    return n
-                })(Object(o)).forEach(function(e) {
-                    Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(o, e))
-                }), i))
-            }
+                default: r
+            } = await Promise.all([t.e("93142"), t.e("64233"), t.e("56651")]).then(t.bind(t, 409200));
+            return t => (0, l.jsx)(r, {
+                ...t,
+                channelType: n.type,
+                guildId: e.id,
+                categoryId: n.parent_id,
+                cloneChannelId: n.id
+            })
         })
     })
 }

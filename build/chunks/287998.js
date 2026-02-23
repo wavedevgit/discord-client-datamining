@@ -1,51 +1,49 @@
-/** chunk id: 287998, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    b: () => l
+/** chunk id: 287998, original params: e,a,t (module,exports,require) **/
+t.d(a, {
+    b: () => u
 });
-var r = n(99478),
-    i = n(142922);
-let a = 1911;
+var r = t(99478),
+    n = t(142922);
+
+function i(e) {
+    return "minguo" === e.era ? e.year + 1911 : 1 - e.year + 1911
+}
 
 function o(e) {
-    return "minguo" === e.era ? e.year + a : 1 - e.year + a
+    let a = e - 1911;
+    return a > 0 ? ["minguo", a] : ["before_minguo", 1 - a]
 }
-
-function s(e) {
-    let t = e - a;
-    return t > 0 ? ["minguo", t] : ["before_minguo", 1 - t]
-}
-class l extends i.FG {
+class u extends n.FG {
     fromJulianDay(e) {
-        let t = super.fromJulianDay(e),
-            [n, a] = s((0, i.LA)(t.era, t.year));
-        return new(0, r.ng)(this, n, a, t.month, t.day)
+        let a = super.fromJulianDay(e),
+            [t, i] = o((0, n.LA)(a.era, a.year));
+        return new(0, r.ng)(this, t, i, a.month, a.day)
     }
     toJulianDay(e) {
-        return super.toJulianDay(c(e))
+        return super.toJulianDay(l(e))
     }
     getEras() {
         return ["before_minguo", "minguo"]
     }
     balanceDate(e) {
-        let [t, n] = s(o(e));
-        e.era = t, e.year = n
+        let [a, t] = o(i(e));
+        e.era = a, e.year = t
     }
     isInverseEra(e) {
         return "before_minguo" === e.era
     }
     getDaysInMonth(e) {
-        return super.getDaysInMonth(c(e))
+        return super.getDaysInMonth(l(e))
     }
     getYearsInEra(e) {
-        return "before_minguo" === e.era ? 9999 : 9999 - a
+        return "before_minguo" === e.era ? 9999 : 8088
     }
     constructor(...e) {
         super(...e), this.identifier = "roc"
     }
 }
 
-function c(e) {
-    let [t, n] = (0, i.f5)(o(e));
-    return new(0, r.ng)(t, n, e.month, e.day)
+function l(e) {
+    let [a, t] = (0, n.f5)(i(e));
+    return new(0, r.ng)(a, t, e.month, e.day)
 }

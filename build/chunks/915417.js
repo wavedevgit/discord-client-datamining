@@ -1,25 +1,25 @@
 /** chunk id: 915417, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    g: () => _
+    g: () => j
 });
-var r = n(627968),
-    i = n(64700),
+var i = n(627968),
+    s = n(64700),
     l = n(280513),
-    s = n(158954),
+    r = n(158954),
     a = n(311907),
     o = n(397927),
-    c = n(60175),
-    d = n(90084),
+    d = n(60175),
+    c = n(90084),
     u = n(42780),
-    g = n(997509),
-    m = n(555337),
-    p = n(583047),
-    f = n(501381),
-    h = n(652215),
-    b = n(985018),
-    x = n(5425);
-let j = {
+    m = n(997509),
+    g = n(555337),
+    x = n(583047),
+    h = n(501381),
+    _ = n(652215),
+    A = n(985018),
+    p = n(5425);
+let f = {
     id: "0",
     name: "",
     description: "",
@@ -39,91 +39,91 @@ let j = {
     badgeColorSecondary: null
 };
 
-function _(e) {
+function j(e) {
     let {
         pendingFields: t
     } = e, {
         guild: n,
-        guildProfile: _
-    } = (0, a.cf)([m.A], () => ({
-        guild: m.A.getGuild(),
-        guildProfile: m.A.getGuildProfile()
-    })), O = null == n ? void 0 : n.id, v = (0, a.bG)([c.A], () => c.A.get(O)), {
-        fetchGuildProfile: y
-    } = (0, d.u)(O), A = (null == _ ? void 0 : _.visibility) == null || !l.i.VISIBLE.has(null == _ ? void 0 : _.visibility), E = (null == _ ? void 0 : _.visibility) === l.n.PUBLIC_WITH_RECRUITMENT;
-    i.useEffect(() => {
-        null != O && y()
-    }, [O, y]);
-    let N = i.useMemo(() => null == n || null == _ ? j : _, [n, _]),
-        S = i.useCallback(() => {
-            (null == n ? void 0 : n.id) != null && (E ? g.A.updateGuildProfile(n.id, {
+        guildProfile: j
+    } = (0, a.cf)([g.A], () => ({
+        guild: g.A.getGuild(),
+        guildProfile: g.A.getGuildProfile()
+    })), N = n?.id, E = (0, a.bG)([d.A], () => d.A.get(N)), {
+        fetchGuildProfile: b
+    } = (0, c.u)(N), T = j?.visibility == null || !l.i.VISIBLE.has(j?.visibility), C = j?.visibility === l.n.PUBLIC_WITH_RECRUITMENT;
+    s.useEffect(() => {
+        null != N && b()
+    }, [N, b]);
+    let I = s.useMemo(() => null == n || null == j ? f : j, [n, j]),
+        v = s.useCallback(() => {
+            n?.id != null && (C ? m.A.updateGuildProfile(n.id, {
                 visibility: l.n.PUBLIC
-            }) : g.A.updateGuildProfile(n.id, {
+            }) : m.A.updateGuildProfile(n.id, {
                 visibility: l.n.PUBLIC_WITH_RECRUITMENT
             }))
-        }, [null == n ? void 0 : n.id, E]),
-        I = i.useCallback(() => {
-            g.A.setSection(h.BEX.PROFILE)
+        }, [n?.id, C]),
+        S = s.useCallback(() => {
+            m.A.setSection(_.BEX.PROFILE)
         }, []);
     if (null == n) return null;
-    let C = null != t ? t : null == v ? void 0 : v.formFields;
-    return (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(s.DZT, {
+    let y = t ?? E?.formFields;
+    return (0, i.jsxs)(i.Fragment, {
+        children: [(0, i.jsx)(r.DZT, {
             variant: "heading-md/semibold",
             color: "text-strong",
-            children: b.intl.string(b.t.AHJddL)
-        }), (0, r.jsx)(s.EYj, {
+            children: A.intl.string(A.t.AHJddL)
+        }), (0, i.jsx)(r.EYj, {
             tag: "p",
             variant: "text-sm/medium",
             color: "text-subtle",
-            className: x.nB,
-            children: b.intl.string(b.t.Z7TCtd)
-        }), (0, r.jsx)(f.o, {
+            className: p.nB,
+            children: A.intl.string(A.t.Z7TCtd)
+        }), (0, i.jsx)(h.o, {
             guildId: n.id
-        }), (0, r.jsx)("div", {
-            className: x.Zd,
-            children: null != C ? (0, r.jsx)(p.a, {
+        }), (0, i.jsx)("div", {
+            className: p.Zd,
+            children: null != y ? (0, i.jsx)(x.a, {
                 guild: n,
-                formFields: C
-            }) : (0, r.jsx)(o.y$y, {})
-        }), (0, r.jsx)("div", {
-            className: x.yF
-        }), (0, r.jsxs)("div", {
-            className: x.Im,
-            children: [(0, r.jsxs)("div", {
-                className: x.fi,
-                children: [(0, r.jsx)(o.dOG, {
-                    label: b.intl.string(b.t["N/0232"]),
-                    checked: E,
-                    onChange: S,
-                    disabled: A
-                }), (0, r.jsx)(s.EYj, {
+                formFields: y
+            }) : (0, i.jsx)(o.y$y, {})
+        }), (0, i.jsx)("div", {
+            className: p.yF
+        }), (0, i.jsxs)("div", {
+            className: p.Im,
+            children: [(0, i.jsxs)("div", {
+                className: p.fi,
+                children: [(0, i.jsx)(o.dOG, {
+                    label: A.intl.string(A.t["N/0232"]),
+                    checked: C,
+                    onChange: v,
+                    disabled: T
+                }), (0, i.jsx)(r.EYj, {
                     variant: "text-sm/normal",
                     color: "text-subtle",
-                    children: b.intl.string(b.t["3TSZYK"])
-                }), A && (0, r.jsx)(s.EYj, {
+                    children: A.intl.string(A.t["3TSZYK"])
+                }), T && (0, i.jsx)(r.EYj, {
                     variant: "text-xs/normal",
                     color: "text-muted",
-                    children: b.intl.format(b.t.Bk0VOi, {
-                        profileLink: (e, t) => (0, r.jsx)(o.MzZ, {
-                            onClick: I,
+                    children: A.intl.format(A.t.Bk0VOi, {
+                        profileLink: (e, t) => (0, i.jsx)(o.MzZ, {
+                            onClick: S,
                             children: e
                         }, t)
                     })
                 })]
-            }), (0, r.jsx)("div", {
-                className: x.fi,
-                children: (0, r.jsxs)("div", {
-                    className: x.cK,
-                    children: [(0, r.jsx)("div", {
-                        className: x.D7
-                    }), (0, r.jsx)(u.Ay, {
-                        className: x.VH,
-                        profile: N,
-                        CTAOverride: (0, r.jsx)(s.$nd, {
+            }), (0, i.jsx)("div", {
+                className: p.fi,
+                children: (0, i.jsxs)("div", {
+                    className: p.cK,
+                    children: [(0, i.jsx)("div", {
+                        className: p.D7
+                    }), (0, i.jsx)(u.Ay, {
+                        className: p.VH,
+                        profile: I,
+                        CTAOverride: (0, i.jsx)(r.$nd, {
                             variant: "active",
                             size: "sm",
-                            text: b.intl.string(b.t["7XdMW2"]),
+                            text: A.intl.string(A.t["7XdMW2"]),
                             fullWidth: !0
                         }),
                         disableGuildNameClick: !0

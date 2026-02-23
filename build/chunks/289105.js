@@ -1,20 +1,21 @@
 /** chunk id: 289105, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
     A: () => c
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var l = n(827734),
-    i = n(990078),
-    s = n(786889),
+var s = n(827734),
+    l = n(990078),
+    r = n(786889),
     a = n(985018),
     o = n(382945);
-let c = () => (0, r.jsx)(i.m, {
+let c = () => (0, i.jsx)(l.m, {
     text: a.intl.string(a.t.GMZqSi),
-    children: (0, r.jsx)("div", {
+    children: (0, i.jsx)("div", {
         className: o.k,
-        children: (0, r.jsx)(s.A, {
-            color: l.A.unsafe_rawColors.WHITE.css
+        children: (0, i.jsx)(r.A, {
+            color: s.A.unsafe_rawColors.WHITE.css
         })
     })
 })

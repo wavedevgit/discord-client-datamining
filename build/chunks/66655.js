@@ -1,57 +1,56 @@
-/** chunk id: 66655, original params: e,t,r (module,exports,require) **/
-r.d(t, {
-    default: () => R
-}), r(896048), r(733351);
-var a = r(627968),
-    i = r(64700),
-    n = r(158954),
-    s = r(311907),
-    l = r(397927),
-    o = r(39255),
-    c = r(198982),
-    d = r(845202),
-    u = r(695184),
-    m = r(427262),
-    b = r(545868),
-    _ = r(997509),
-    f = r(396816),
-    g = r(856644),
-    k = r(512031),
-    w = r(737045),
-    x = r(985018),
-    p = r(489715);
+/** chunk id: 66655, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    default: () => T
+});
+var r = n(627968),
+    l = n(64700),
+    s = n(158954),
+    i = n(311907),
+    o = n(397927),
+    a = n(39255),
+    c = n(198982),
+    d = n(845202),
+    u = n(695184),
+    x = n(427262),
+    h = n(545868),
+    m = n(997509),
+    w = n(396816),
+    g = n(856644),
+    f = n(512031),
+    S = n(737045),
+    b = n(985018),
+    R = n(489715);
 
-function R(e) {
+function T(e) {
     let {
         transitionState: t,
-        onClose: r,
-        roleId: R,
-        guildId: h
-    } = e, A = (0, s.bG)([f.A], () => f.A.getRole(R), [R]), [T, v] = i.useState(""), [M, S] = i.useState({}), [y, E] = i.useState(!1), [C, B] = i.useState(null), H = i.useRef(null);
-    i.useEffect(() => {
-        u.A.requestMembers(h, T.trim().toLowerCase(), g.uc)
-    }, [h, T]);
-    let O = i.useCallback(e => !e.roles.includes(R), [R]),
-        j = (0, g.SB)(h, O),
-        L = i.useMemo(() => j.filter(e => (0, g.EF)(T, e)), [T, j]),
-        G = i.useCallback(async () => {
-            let e = Object.values(M).map(e => e.row.id);
-            E(!0);
+        onClose: n,
+        roleId: T,
+        guildId: v
+    } = e, E = (0, i.bG)([w.A], () => w.A.getRole(T), [T]), [j, y] = l.useState(""), [p, k] = l.useState({}), [C, A] = l.useState(!1), [M, O] = l.useState(null), _ = l.useRef(null);
+    l.useEffect(() => {
+        u.A.requestMembers(v, j.trim().toLowerCase(), g.uc)
+    }, [v, j]);
+    let L = l.useCallback(e => !e.roles.includes(T), [T]),
+        I = (0, g.SB)(v, L),
+        N = l.useMemo(() => I.filter(e => (0, g.EF)(j, e)), [j, I]),
+        U = l.useCallback(async () => {
+            let e = Object.values(p).map(e => e.row.id);
+            A(!0);
             try {
-                await _.A.bulkAddMemberRoles(h, R, e), (0, b.a)(h, R, !1), r()
+                await m.A.bulkAddMemberRoles(v, T, e), (0, h.a)(v, T, !1), n()
             } catch (t) {
                 let e = new c.LG(t);
-                E(!1), B(e)
+                A(!1), O(e)
             }
-        }, [h, R, M, r]),
-        P = i.useMemo(() => L.map(e => {
-            var t;
-            let r = m.Ay.getUserTag(e.user);
+        }, [v, T, p, n]),
+        B = l.useMemo(() => N.map(e => {
+            let t = x.Ay.getUserTag(e.user);
             return {
-                rowType: w.T6.MEMBER,
-                name: null != (t = e.name) ? t : r,
+                rowType: S.T6.MEMBER,
+                name: e.name ?? t,
                 nickname: e.name,
-                username: r,
+                username: t,
                 id: e.id,
                 avatarURL: e.avatarURL,
                 bot: e.bot,
@@ -59,63 +58,63 @@ function R(e) {
                 disabled: !1,
                 key: e.id
             }
-        }), [L]),
-        q = d.A.useSections({
-            members: P
+        }), [N]),
+        P = d.A.useSections({
+            members: B
         }),
-        N = i.useCallback(e => e.rowType === w.T6.MEMBER || e.rowType === w.T6.OWNER ? {
-            type: o._.MEMBER,
+        H = l.useCallback(e => e.rowType === S.T6.MEMBER || e.rowType === S.T6.OWNER ? {
+            type: a._.MEMBER,
             label: e.name,
             avatar: e.avatarURL
         } : null, []),
-        U = i.useMemo(() => Object.keys(M).length, [M]);
-    return (0, a.jsx)(d.A.Provider, {
-        listRef: H,
-        query: T,
-        setQuery: v,
-        pendingAdditions: M,
-        setPendingAdditions: S,
-        members: P,
-        getRichTag: N,
-        maxPendingRows: k.$S,
-        children: (0, a.jsx)(n.Modal, {
-            onClose: r,
+        G = l.useMemo(() => Object.keys(p).length, [p]);
+    return (0, r.jsx)(d.A.Provider, {
+        listRef: _,
+        query: j,
+        setQuery: y,
+        pendingAdditions: p,
+        setPendingAdditions: k,
+        members: B,
+        getRichTag: H,
+        maxPendingRows: f.$S,
+        children: (0, r.jsx)(s.Modal, {
+            onClose: n,
             transitionState: t,
-            title: x.intl.string(x.t.ZYOK46),
-            subtitle: null != A ? x.intl.format(x.t["qP+nuZ"], {
-                numMembers: k.$S,
-                roleName: A.name
-            }) : x.intl.format(x.t["3OxP4q"], {
-                numMembers: k.$S
+            title: b.intl.string(b.t.ZYOK46),
+            subtitle: null != E ? b.intl.format(b.t["qP+nuZ"], {
+                numMembers: f.$S,
+                roleName: E.name
+            }) : b.intl.format(b.t["3OxP4q"], {
+                numMembers: f.$S
             }),
-            input: (0, a.jsxs)("div", {
-                children: [(0, a.jsx)(d.A.SearchBox, {
-                    placeholderText: x.intl.string(x.t.vMiCaQ)
-                }), null != C ? (0, a.jsx)(l.Text, {
-                    className: p.k,
+            input: (0, r.jsxs)("div", {
+                children: [(0, r.jsx)(d.A.SearchBox, {
+                    placeholderText: b.intl.string(b.t.vMiCaQ)
+                }), null != M ? (0, r.jsx)(o.Text, {
+                    className: R.k,
                     variant: "text-xs/normal",
                     color: "text-feedback-critical",
-                    children: C.getAnyErrorMessage()
+                    children: M.getAnyErrorMessage()
                 }) : null]
             }),
             listProps: {
-                ref: H,
+                ref: _,
                 sectionHeight: d.A.SECTION_HEIGHT,
                 renderSection: d.A.renderSection,
                 rowHeight: d.A.ROW_HEIGHT,
                 renderRow: d.A.renderRow,
-                sections: q
+                sections: P
             },
             actions: [{
-                text: x.intl.string(x.t["ETE/oC"]),
+                text: b.intl.string(b.t["ETE/oC"]),
                 variant: "secondary",
-                onClick: r
+                onClick: n
             }, {
-                text: x.intl.string(x.t.OYkgVk),
+                text: b.intl.string(b.t.OYkgVk),
                 variant: "primary",
-                onClick: G,
-                loading: y,
-                disabled: 0 === U || U > k.$S
+                onClick: U,
+                loading: C,
+                disabled: 0 === G || G > f.$S
             }]
         })
     })

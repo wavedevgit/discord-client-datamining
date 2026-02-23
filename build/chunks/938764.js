@@ -1,74 +1,37 @@
 /** chunk id: 938764, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => g
+    A: () => d
 }), n(321073);
-var r, l = n(311907),
-    i = n(73153),
-    s = n(370876);
-
-function a(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-
-function o(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            a(e, t, n[t])
-        })
-    }
-    return e
-}
-
-function c(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
-        }
-        return n
-    })(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-let u = [],
-    d = {},
-    p = {};
-class h extends(r = l.Ay.Store) {
+var i = n(311907),
+    s = n(73153),
+    l = n(370876);
+let r = [],
+    a = {},
+    o = {};
+class c extends i.Ay.Store {
+    static displayName = "GuildDirectorySearchStore";
     getSearchState(e) {
-        var t;
-        return null != (t = d[e]) ? t : {
+        return a[e] ?? {
             mostRecentQuery: "",
             fetching: !1
         }
     }
     getSearchResults(e, t) {
-        var n, r, l;
-        return null != (n = null == (l = p[e]) || null == (r = l[t]) ? void 0 : r.results) ? n : u
+        return o[e]?.[t]?.results ?? r
     }
     shouldFetch(e, t) {
-        var n, r;
-        let l = null == (r = p[e]) || null == (n = r[t]) ? void 0 : n.lastSearchedAt;
-        return null == l || Date.now() - l > 12e4
+        let n = o[e]?.[t]?.lastSearchedAt;
+        return null == n || Date.now() - n > 12e4
     }
 }
-a(h, "displayName", "GuildDirectorySearchStore");
-let g = new h(i.h, {
+let d = new c(s.h, {
     GUILD_DIRECTORY_SEARCH_START: function(e) {
         let {
             channelId: t,
             query: n
         } = e;
-        d[t] = {
+        a[t] = {
             fetching: !0,
             mostRecentQuery: n
         }
@@ -77,35 +40,38 @@ let g = new h(i.h, {
         let {
             channelId: t,
             query: n,
-            results: r
+            results: i
         } = e;
-        d[t] = c(o({}, d[t]), {
+        a[t] = {
+            ...a[t],
             fetching: !1
-        });
-        let l = [];
-        r.forEach(e => {
-            let t = (0, s.mR)(e);
-            l.push(t)
-        }), p[t] = c(o({}, p[t]), {
+        };
+        let s = [];
+        i.forEach(e => {
+            let t = (0, l.mR)(e);
+            s.push(t)
+        }), o[t] = {
+            ...o[t],
             [n]: {
-                results: (0, s.DN)(l),
+                results: (0, l.DN)(s),
                 lastSearchedAt: Date.now()
             }
-        })
+        }
     },
     GUILD_DIRECTORY_SEARCH_FAILURE: function(e) {
         let {
             channelId: t
         } = e;
-        d[t] = c(o({}, d[t]), {
+        a[t] = {
+            ...a[t],
             fetching: !1
-        })
+        }
     },
     GUILD_DIRECTORY_SEARCH_CLEAR: function(e) {
         let {
             channelId: t
         } = e;
-        d[t] = {
+        a[t] = {
             fetching: !1,
             mostRecentQuery: ""
         }
@@ -115,25 +81,26 @@ let g = new h(i.h, {
             channelId: t,
             query: n
         } = e;
-        d[t] = {
+        a[t] = {
             fetching: !1,
             mostRecentQuery: n
         }
     },
     GUILD_DIRECTORY_ENTRY_DELETE: function(e) {
-        var t;
         let {
-            channelId: n,
-            guildId: r
-        } = e, l = null == (t = d[n]) ? void 0 : t.mostRecentQuery;
-        if (null == l) return;
-        let i = p[n][l];
+            channelId: t,
+            guildId: n
+        } = e, i = a[t]?.mostRecentQuery;
         if (null == i) return;
-        let s = i.results.filter(e => e.guildId !== r);
-        p[n] = c(o({}, p[n]), {
-            [d[n].mostRecentQuery]: c(o({}, i), {
-                results: s
-            })
-        })
+        let s = o[t][i];
+        if (null == s) return;
+        let l = s.results.filter(e => e.guildId !== n);
+        o[t] = {
+            ...o[t],
+            [a[t].mostRecentQuery]: {
+                ...s,
+                results: l
+            }
+        }
     }
 })

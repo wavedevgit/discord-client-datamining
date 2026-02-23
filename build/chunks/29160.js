@@ -1,86 +1,40 @@
-/** chunk id: 29160, original params: e,t,n (module,exports,require) **/
-n.d(t, {
+/** chunk id: 29160, original params: t,e,n (module,exports,require) **/
+n.d(e, {
     A: () => d
 });
-var r, l = n(627968),
-    i = n(64700),
-    a = n(503698),
-    s = n.n(a),
-    o = n(842642);
-
-function c(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-class u extends(r = i.PureComponent) {
+var i = n(627968),
+    l = n(64700),
+    r = n(503698),
+    a = n.n(r),
+    s = n(842642);
+class o extends l.PureComponent {
+    static defaultProps = {
+        tag: "div",
+        forceHover: !1
+    };
     render() {
-        var e, t;
-        let n = this.props,
-            {
-                tag: r,
-                children: i,
-                hoverText: a,
-                className: u,
-                forceHover: d
-            } = n,
-            p = function(e, t) {
-                if (null == e) return {};
-                var n, r, l, i = {};
-                if ("u" > typeof Reflect && Reflect.ownKeys) {
-                    for (l = 0, n = Reflect.ownKeys(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
-                    return i
-                }
-                if (i = function(e, t) {
-                        if (null == e) return {};
-                        var n, r, l = {},
-                            i = Object.getOwnPropertyNames(e);
-                        for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n]);
-                        return l
-                    }(e, t), Object.getOwnPropertySymbols)
-                    for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
-                return i
-            }(n, ["tag", "children", "hoverText", "className", "forceHover"]);
-        return (0, l.jsxs)("div", (e = function(e) {
-            for (var t = 1; t < arguments.length; t++) {
-                var n = null != arguments[t] ? arguments[t] : {},
-                    r = Object.keys(n);
-                "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                    return Object.getOwnPropertyDescriptor(n, e).enumerable
-                }))), r.forEach(function(t) {
-                    c(e, t, n[t])
-                })
-            }
-            return e
-        }({}, p), t = t = {
-            className: s()(u, o.oM, {
-                [o.r9]: null == a,
-                [o.EE]: d
+        let {
+            tag: t,
+            children: e,
+            hoverText: n,
+            className: l,
+            forceHover: r,
+            ...o
+        } = this.props;
+        return (0, i.jsxs)("div", {
+            ...o,
+            className: a()(l, s.oM, {
+                [s.r9]: null == n,
+                [s.EE]: r
             }),
-            children: [(0, l.jsx)(r, {
-                className: o.yo,
-                children: a
-            }), (0, l.jsx)(r, {
-                className: o.Ay,
-                children: i
+            children: [(0, i.jsx)(t, {
+                className: s.yo,
+                children: n
+            }), (0, i.jsx)(t, {
+                className: s.Ay,
+                children: e
             })]
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-            var n = Object.keys(e);
-            if (Object.getOwnPropertySymbols) {
-                var r = Object.getOwnPropertySymbols(e);
-                n.push.apply(n, r)
-            }
-            return n
-        })(Object(t)).forEach(function(n) {
-            Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-        }), e))
+        })
     }
 }
-c(u, "defaultProps", {
-    tag: "div",
-    forceHover: !1
-});
-let d = u
+let d = o

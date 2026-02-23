@@ -13,10 +13,9 @@ e.exports = {
     xz: "roleMemberList__1a4ef",
     yF: "divider__1a4ef",
     TL: "memberRow__1a4ef",
-    iw: "rowHeight__1a4ef",
-    xZ: "rowLabel__1a4ef",
-    oN: "rowBotTag__1a4ef",
+    z7: "memberRowBody__1a4ef",
     Gq: "rowLabelSubText__1a4ef",
+    HI: "removeIconContainer__1a4ef",
     Yz: "removeIcon__1a4ef",
     _2: "disabledRemoveIcon__1a4ef"
 }

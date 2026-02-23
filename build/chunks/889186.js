@@ -1,73 +1,72 @@
 /** chunk id: 889186, original params: e,n,t (module,exports,require) **/
 t.d(n, {
-    default: () => A
-}), t(896048);
+    default: () => _
+});
 var r = t(627968),
     i = t(64700),
-    l = t(478437),
-    a = t(158954),
+    a = t(478437),
+    l = t(158954),
     d = t(311907),
-    c = t(397927),
-    u = t(713654),
-    o = t(687021),
-    s = t(769765),
+    s = t(397927),
+    c = t(713654),
+    u = t(687021),
+    o = t(769765),
     f = t(711014),
     h = t(543465),
-    v = t(422258),
-    m = t(93055),
-    g = t(231150),
+    m = t(422258),
+    g = t(93055),
+    v = t(231150),
     p = t(985018),
     x = t(233492);
 
-function A(e) {
+function _(e) {
     let {
         transitionState: n,
         onClose: t,
-        parentId: l
-    } = e, u = (0, d.bG)([f.Ay], () => f.Ay.getFlattenedGuildIds()[0]), [s, h] = i.useState(u), [v, m] = i.useState(!1);
-    return (0, r.jsx)(a.Modal, {
+        parentId: a
+    } = e, c = (0, d.bG)([f.Ay], () => f.Ay.getFlattenedGuildIds()[0]), [o, h] = i.useState(c), [m, g] = i.useState(!1);
+    return (0, r.jsx)(l.Modal, {
         title: p.intl.string(p.t["4wcdE/"]),
         actions: [],
         transitionState: n,
         onClose: t,
-        input: (0, r.jsx)(o.v, {
-            guildId: s,
+        input: (0, r.jsx)(u.v, {
+            guildId: o,
             onChange: function(e) {
                 null != e && h(e.id)
             }
         }),
-        actionBarInput: (0, r.jsx)(c.dOG, {
-            checked: v,
-            onChange: e => m(e),
+        actionBarInput: (0, r.jsx)(s.dOG, {
+            checked: m,
+            onChange: e => g(e),
             label: p.intl.string(p.t.UwOLJO)
         }),
-        children: (0, r.jsx)(_, {
-            guildId: s,
-            hideMutedChannels: v,
-            parentId: l
+        children: (0, r.jsx)(A, {
+            guildId: o,
+            hideMutedChannels: m,
+            parentId: a
         })
     })
 }
 
-function _(e) {
+function A(e) {
     let {
         guildId: n,
         hideMutedChannels: t,
-        parentId: a
-    } = e, c = (0, d.bG)([s.A], () => s.A.getCategories(n)), u = (0, g.A)(c), o = i.useRef(null);
+        parentId: l
+    } = e, s = (0, d.bG)([o.A], () => o.A.getCategories(n)), c = (0, v.A)(s), u = i.useRef(null);
     return i.useEffect(() => {
-        var e;
-        null == o || null == (e = o.current) || e.scroll({
+        u?.current?.scroll({
             top: 0
         })
     }, [n]), (0, r.jsx)("div", {
-        ref: o,
-        children: u.map(e => e.type === l.r.GUILD_CATEGORY ? (0, r.jsx)(b, {
+        ref: u,
+        children: c.map(e => e.type === a.r.GUILD_CATEGORY ? (0, r.jsx)(b, {
             name: e.name
         }, e.id) : (0, r.jsx)(j, {
             channel: e,
             hideMutedChannels: t,
-            parentId: a
+            parentId: l
         }, e.id))
     })
 }
@@ -76,7 +75,7 @@ function b(e) {
     let {
         name: n
     } = e;
-    return (0, r.jsx)(c.Text, {
+    return (0, r.jsx)(s.Text, {
         className: x.Fv,
         variant: "eyebrow",
         color: "interactive-text-default",
@@ -89,28 +88,28 @@ function j(e) {
         channel: n,
         hideMutedChannels: t,
         parentId: i
-    } = e, l = (0, m.Af)(n.id);
+    } = e, a = (0, g.Af)(n.id);
     if ((0, d.bG)([h.Ay], () => h.Ay.isChannelMuted(n.guild_id, n.id)) && t) return null;
-    let a = (0, u.gU)(n);
+    let l = (0, c.gU)(n);
     return (0, r.jsxs)("div", {
         className: x.WG,
         children: [(0, r.jsxs)("div", {
             className: x.HA,
-            children: [null != a && (0, r.jsx)("div", {
+            children: [null != l && (0, r.jsx)("div", {
                 className: x.uM,
-                children: (0, r.jsx)(a, {
+                children: (0, r.jsx)(l, {
                     className: x.p,
                     size: "custom",
                     color: "currentColor",
                     height: 20,
                     width: 20
                 })
-            }), (0, r.jsx)(c.Text, {
+            }), (0, r.jsx)(s.Text, {
                 variant: "text-md/medium",
                 color: "interactive-text-default",
                 children: n.name
             })]
-        }), null != l ? (0, r.jsx)(k, {
+        }), null != a ? (0, r.jsx)(k, {
             channelId: n.id
         }) : (0, r.jsx)(C, {
             channelId: n.id,
@@ -124,12 +123,12 @@ function C(e) {
         channelId: n,
         parentId: t
     } = e;
-    return (0, r.jsx)(c.Button, {
+    return (0, r.jsx)(s.Button, {
         variant: "primary",
         size: "sm",
         text: p.intl.string(p.t.OYkgVk),
         onClick: function() {
-            (0, v.Jz)(n, t)
+            (0, m.Jz)(n, t)
         }
     })
 }
@@ -138,12 +137,12 @@ function k(e) {
     let {
         channelId: n
     } = e;
-    return (0, r.jsx)(c.Button, {
+    return (0, r.jsx)(s.Button, {
         variant: "secondary",
         size: "sm",
         text: p.intl.string(p.t.N86XcP),
         onClick: function() {
-            (0, v.i_)(n)
+            (0, m.i_)(n)
         }
     })
 }

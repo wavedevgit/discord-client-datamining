@@ -1,138 +1,143 @@
 /** chunk id: 436805, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => T
 });
-var r = n(627968),
-    i = n(64700),
-    l = n(503698),
-    s = n.n(l),
-    a = n(575593),
+var i = n(627968),
+    s = n(64700),
+    a = n(503698),
+    r = n.n(a),
+    l = n(575593),
     o = n(397927),
     c = n(821701),
-    d = n(580630),
-    u = n(349439),
-    _ = n(959349);
-let p = e => {
+    d = n(302086),
+    u = n(369496),
+    _ = n(580630),
+    m = n(349439),
+    A = n(959349);
+let g = e => {
         let {
             displayName: t,
             product: n
-        } = e, i = (0, u.nF)(n);
-        return null == i ? null : (0, r.jsx)("img", {
-            src: i,
+        } = e, s = (0, m.nF)(n);
+        return null == s ? null : (0, i.jsx)("img", {
+            src: s,
             alt: t,
-            className: _._P
+            className: A._P
         })
     },
-    m = e => {
+    h = e => {
+        let {
+            displayName: t,
+            nameplateData: n
+        } = e, {
+            staticImageUrl: s
+        } = (0, d.K)(n);
+        return null == s ? null : (0, i.jsx)("img", {
+            src: s,
+            alt: t,
+            className: A.M4
+        })
+    },
+    x = e => {
         let {
             displayName: t,
             product: n
-        } = e, i = (0, u.rj)(n);
-        return null == i ? null : (0, r.jsx)("img", {
-            src: i,
+        } = e, s = (0, m.GQ)(n);
+        return null == s ? null : (0, i.jsx)("img", {
+            src: s,
             alt: t,
-            className: _.M4
+            className: A._P
         })
     },
-    g = e => {
-        let {
-            displayName: t,
-            product: n
-        } = e, i = (0, u.GQ)(n);
-        return null == i ? null : (0, r.jsx)("img", {
-            src: i,
-            alt: t,
-            className: _._P
-        })
-    },
-    A = e => {
+    p = e => {
         let {
             subscriptionPlanId: t
         } = e;
-        if (null == t) return (0, r.jsx)("div", {
-            className: _.T8,
-            children: (0, r.jsx)(o.U1X, {})
+        if (null == t) return (0, i.jsx)("div", {
+            className: A.T8,
+            children: (0, i.jsx)(o.U1X, {})
         });
-        let n = (0, u.il)(t);
-        return (0, r.jsx)("div", {
-            className: _.T8,
-            children: n ? (0, r.jsx)(o._Jp, {
+        let n = (0, m.il)(t);
+        return (0, i.jsx)("div", {
+            className: A.T8,
+            children: n ? (0, i.jsx)(o._Jp, {
                 size: "custom",
                 width: 20,
                 height: 20
-            }) : (0, r.jsx)(o.tvc, {
+            }) : (0, i.jsx)(o.tvc, {
                 size: "custom",
                 width: 20,
                 height: 20
             })
         })
     },
-    f = e => {
+    E = e => {
         let {
             displayName: t,
             product: n
         } = e;
-        if (null == n) return (0, r.jsx)("div", {
-            className: _.T8,
-            children: (0, r.jsx)(o.U1X, {})
+        if (null == n) return (0, i.jsx)("div", {
+            className: A.T8,
+            children: (0, i.jsx)(o.U1X, {})
         });
         switch (n.type) {
-            case a.R.AVATAR_DECORATION:
-                return (0, r.jsx)(p, {
+            case l.R.AVATAR_DECORATION:
+                return (0, i.jsx)(g, {
                     displayName: t,
                     product: n
                 });
-            case a.R.NAMEPLATE:
-                return (0, r.jsx)(m, {
+            case l.R.NAMEPLATE:
+                let s = (0, u.EQ)(n);
+                return null != s ? (0, i.jsx)(h, {
                     displayName: t,
-                    product: n
-                });
-            case a.R.PROFILE_EFFECT:
-                return (0, r.jsx)(g, {
+                    nameplateData: s
+                }) : null;
+            case l.R.PROFILE_EFFECT:
+                return (0, i.jsx)(x, {
                     displayName: t,
                     product: n
                 });
             default:
-                return (0, r.jsx)("div", {
-                    className: _.T8,
-                    children: (0, r.jsx)(o.U1X, {})
+                return (0, i.jsx)("div", {
+                    className: A.T8,
+                    children: (0, i.jsx)(o.U1X, {})
                 })
         }
     },
-    b = i.memo(e => {
+    C = s.memo(e => {
         let {
             skuId: t,
             subscriptionPlanId: n,
-            total: i,
-            currency: l,
-            className: a
+            total: s,
+            currency: a,
+            className: l
         } = e, {
-            product: p
+            product: d
         } = (0, c.A)(t), {
-            displayName: m,
+            displayName: u,
             typeName: g,
-            isSubscription: b
-        } = (0, u.GZ)(null != p ? p : null, n);
-        if (null != t && !b && null == p || null == m) return null;
-        let h = (0, d.$g)(i, l);
-        return (0, r.jsxs)("div", {
-            className: s()(_.kL, a),
-            children: [b ? (0, r.jsx)(A, {
+            isSubscription: h
+        } = (0, m.GZ)(d ?? null, n);
+        if (null != t && !h && null == d || null == u) return null;
+        let x = (0, _.$g)(s, a);
+        return (0, i.jsxs)("div", {
+            className: r()(A.kL, l),
+            children: [h ? (0, i.jsx)(p, {
                 subscriptionPlanId: n
-            }) : (0, r.jsx)(f, {
-                displayName: m,
-                product: null != p ? p : null
-            }), (0, r.jsxs)("div", {
-                children: [(0, r.jsx)(o.Text, {
+            }) : (0, i.jsx)(E, {
+                displayName: u,
+                product: d ?? null
+            }), (0, i.jsxs)("div", {
+                children: [(0, i.jsx)(o.Text, {
                     variant: "text-md/semibold",
-                    children: null != g ? "".concat(m, " • ").concat(g) : m
-                }), (0, r.jsx)(o.Text, {
+                    children: null != g ? `${u} • ${g}` : u
+                }), (0, i.jsx)(o.Text, {
                     variant: "text-sm/medium",
                     color: "text-subtle",
-                    children: h
+                    children: x
                 })]
             })]
         })
     });
-b.displayName = "FamilyCenterActivityPurchaseRow";
-let h = b
+C.displayName = "FamilyCenterActivityPurchaseRow";
+let T = C

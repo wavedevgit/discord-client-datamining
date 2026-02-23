@@ -3,14 +3,14 @@
 n.d(t, {
     GK: () => a,
     ZV: () => o
-}), n(65821);
-var r = n(627968),
-    i = n(64700),
+});
+var i = n(627968),
+    s = n(64700),
     l = n(465932);
-let s = i.createContext(void 0);
+let r = s.createContext(void 0);
 
 function a() {
-    let e = i.useContext(s);
+    let e = s.useContext(r);
     if (null == e) throw Error("useCreatorMonetizationSettingsDisabled must be used within a CreatorMonetizationSettingsDisabledContext");
     return e
 }
@@ -20,10 +20,10 @@ function o(e) {
         guildId: t,
         children: n
     } = e, {
-        shouldRestrictUpdatingCreatorMonetizationSettings: i
+        shouldRestrictUpdatingCreatorMonetizationSettings: s
     } = (0, l.nq)(t);
-    return (0, r.jsx)(s.Provider, {
-        value: i,
+    return (0, i.jsx)(r.Provider, {
+        value: s,
         children: n
     })
 }

@@ -1,26 +1,17 @@
 /** chunk id: 221688, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    X8: () => c,
-    dB: () => d,
-    gr: () => o
+    X8: () => a,
+    dB: () => r
 });
-var r = n(554146),
-    i = n(826673),
-    l = n(103411),
-    s = n(664654),
-    a = n(985018);
-let o = () => {
-        let e = (0, l.m)(),
-            t = (0, i.JZ)(r.M.REFERRAL_PROGRAM_PREMIUM_TAB_BADGE);
-        return e && !t
-    },
-    c = e => {
+var i = n(664654),
+    s = n(985018);
+let a = e => {
         let {
             hasSentAll: t
         } = e;
-        return a.intl.string(a.t.USo4s7)
+        return s.intl.string(s.t.USo4s7)
     },
-    d = e => {
+    r = e => {
         let {
             helpdeskArticle: t,
             referralsStatuses: n
@@ -29,15 +20,15 @@ let o = () => {
             let {
                 hasSentAll: t,
                 hasSentAtLeastOne: n,
-                helpdeskArticle: r
+                helpdeskArticle: i
             } = e;
-            return t ? a.intl.format(a.t["TYu+MH"], {
-                helpdeskArticle: r
-            }) : a.intl.format(a.t["omMr+V"], {
-                helpdeskArticle: r
+            return t ? s.intl.format(s.t["TYu+MH"], {
+                helpdeskArticle: i
+            }) : s.intl.format(s.t["omMr+V"], {
+                helpdeskArticle: i
             })
         })({
-            hasSentAll: n.sent >= s.Z,
+            hasSentAll: n.sent >= i.Z,
             hasSentAtLeastOne: n.sent >= 1,
             helpdeskArticle: t
         })

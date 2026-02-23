@@ -1,68 +1,79 @@
 /** chunk id: 959443, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => E,
+    L: () => C
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(110259),
+var s = n(503698),
+    a = n.n(s),
+    r = n(110259),
     l = n(732955),
-    s = n(397927),
-    a = n(688810),
-    o = n(139286),
-    c = n(793943),
-    d = n(996254),
-    u = n(12901),
-    _ = n(738419),
-    p = n(520650),
-    m = n(985018),
-    g = n(996554),
-    A = n(114149);
+    o = n(397927),
+    c = n(688810),
+    d = n(139286),
+    u = n(793943),
+    _ = n(996254),
+    m = n(12901),
+    A = n(738419),
+    g = n(520650),
+    h = n(985018),
+    x = n(996554),
+    p = n(114149);
 
-function f() {
+function E(e) {
     let {
-        analyticsLocations: e
-    } = (0, a.Ay)();
-    (0, o.A)({
-        name: i.ImpressionNames.CUSTOM_THEMES_APPEARANCE_SETTINGS_BANNER,
-        type: i.ImpressionTypes.VIEW,
+        className: t
+    } = e, {
+        analyticsLocations: n
+    } = (0, c.Ay)();
+    (0, d.A)({
+        name: r.ImpressionNames.CUSTOM_THEMES_APPEARANCE_SETTINGS_BANNER,
+        type: r.ImpressionTypes.VIEW,
         properties: {
-            location_stack: e
+            location_stack: n
         }
     });
-    let t = (0, d.X)({
-        "en-US": p.default["f/cLEi"],
-        "en-GB": p.default["f/cLEi"]
-    }, p.default.CARxAC);
-    return (0, r.jsxs)("div", {
-        className: g.kL,
-        children: [(0, r.jsx)("div", {
-            className: g.zc,
-            children: (0, r.jsx)("img", {
-                src: A.A,
-                className: g._e,
+    let s = (0, _.X)({
+        "en-US": g.default["f/cLEi"],
+        "en-GB": g.default["f/cLEi"]
+    }, g.default.CARxAC);
+    return (0, i.jsxs)("div", {
+        className: a()(x.kL, t),
+        children: [(0, i.jsx)("div", {
+            className: x.zc,
+            children: (0, i.jsx)("img", {
+                src: p.A,
+                className: x._e,
                 alt: ""
             })
-        }), (0, r.jsxs)("div", {
-            className: g.P_,
-            children: [(0, r.jsx)(s.Heading, {
+        }), (0, i.jsxs)("div", {
+            className: x.P_,
+            children: [(0, i.jsx)(o.Heading, {
                 variant: "heading-lg/semibold",
                 color: "text-strong",
-                children: t
-            }), (0, r.jsx)(s.Text, {
+                children: s
+            }), (0, i.jsx)(o.Text, {
                 variant: "text-sm/normal",
-                children: m.intl.string(p.default.nla4RG)
+                children: h.intl.string(g.default.nla4RG)
             })]
-        }), (0, r.jsx)("div", {
-            className: g.UD,
-            children: (0, r.jsx)(l.$nd, {
+        }), (0, i.jsx)("div", {
+            className: x.UD,
+            children: (0, i.jsx)(l.$nd, {
                 variant: "primary",
-                text: m.intl.string(m.t.uw9zI7),
+                text: h.intl.string(h.t.uw9zI7),
                 onClick: () => {
-                    (0, _.b0)(_.G8.APPEARANCE_SETTINGS), (0, c.nf)(c.HP.CUSTOM_THEME, {
-                        from: c.xv.SETTING
-                    }), (0, u.default)()
+                    (0, A.b0)(A.G8.APPEARANCE_SETTINGS), (0, u.nf)(u.HP.CUSTOM_THEME, {
+                        from: u.xv.SETTING
+                    }), (0, m.default)()
                 }
             })
         })]
+    })
+}
+
+function C() {
+    return (0, i.jsx)(E, {
+        className: x.YH
     })
 }

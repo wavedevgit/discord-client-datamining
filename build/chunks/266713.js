@@ -1,45 +1,45 @@
 /** chunk id: 266713, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => d
+    A: () => u
 });
-var r = n(627968),
+var i = n(627968),
     l = n(64700),
-    i = n(397927),
-    a = n(183555),
-    o = n(725386),
-    s = n(624160),
+    a = n(397927),
+    s = n(183555),
+    r = n(725386),
+    o = n(624160),
     c = n(985018),
-    u = n(190401);
+    d = n(190401);
 
-function d() {
+function u() {
     let {
         trackUserProfileAction: e,
         trackUserProfileEditAction: t
-    } = (0, a.NJ)(), n = l.useRef(!1), d = (0, o.A)({
+    } = (0, s.NJ)(), n = l.useRef(!1), u = (0, r.A)({
         location: "UserProfileModalV2WidgetsEmptyState"
     });
     return l.useEffect(() => {
         n.current || (e({
             action: "VIEW_WIDGETS_EMPTY_STATE"
         }), n.current = !0)
-    }, [e]), (0, r.jsxs)("div", {
-        className: u.Ie,
-        children: [(0, r.jsxs)("div", {
-            className: u.FS,
-            children: [(0, r.jsx)(i.Heading, {
+    }, [e]), (0, i.jsxs)("div", {
+        className: d.Ie,
+        children: [(0, i.jsxs)("div", {
+            className: d.FS,
+            children: [(0, i.jsx)(a.Heading, {
                 variant: "heading-md/medium",
                 color: "text-strong",
                 children: c.intl.string(c.t["oqalC+"])
-            }), (0, r.jsx)(i.Text, {
+            }), (0, i.jsx)(a.Text, {
                 variant: "text-sm/normal",
                 color: "text-default",
                 children: c.intl.string(c.t.O9SQ1c)
             })]
-        }), (0, r.jsx)("ul", {
-            className: u.ZW,
+        }), (0, i.jsx)("ul", {
+            className: d.ZW,
             "aria-label": c.intl.string(c.t["+EIBSA"]),
-            children: d.map(e => (0, r.jsx)("li", {
-                children: (0, r.jsx)(s.A, {
+            children: u.map(e => (0, i.jsx)("li", {
+                children: (0, i.jsx)(o.A, {
                     widget: e,
                     size: "small",
                     trackUserProfileEditAction: t

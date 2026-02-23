@@ -1,152 +1,146 @@
-/** chunk id: 354033, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    X: () => T,
-    Y: () => S
+/** chunk id: 354033, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    X: () => b,
+    Y: () => N
 });
-var r = n(627968);
-n(64700);
-var i = n(503698),
-    a = n.n(i),
-    o = n(311907),
-    s = n(732955),
-    l = n(397927),
-    c = n(565645),
-    u = n(241524),
-    d = n(166532),
-    f = n(71393),
-    p = n(371794),
-    _ = n(500345),
-    h = n(599941),
-    m = n(320137),
-    g = n(417360),
-    E = n(759625),
-    y = n(2242),
-    b = n(985018),
-    O = n(906489);
-let v = 440,
-    A = 80,
-    I = 4,
-    S = e => {
+var l = i(627968);
+i(64700);
+var n = i(503698),
+    a = i.n(n),
+    s = i(311907),
+    r = i(732955),
+    c = i(397927),
+    d = i(565645),
+    o = i(241524),
+    u = i(166532),
+    m = i(71393),
+    x = i(371794),
+    h = i(500345),
+    g = i(599941),
+    v = i(320137),
+    j = i(417360),
+    A = i(759625),
+    f = i(2242),
+    p = i(985018),
+    _ = i(906489);
+let N = e => {
         let {
             onClose: t,
-            listing: n,
-            step: i,
-            guildId: o
-        } = e, s = (0, h.Tq)(o), c = (0, u.A)(y.TQ), f = () => {
-            if (i !== d.pn.CONFIRM) return null;
-            let e = null == n.image_asset ? void 0 : (0, p.YE)(n.application_id, n.image_asset, A);
-            return (0, r.jsx)("div", {
-                className: O.z9,
-                children: (0, r.jsx)("img", {
-                    src: e,
-                    alt: "",
-                    className: O.ah
-                })
-            })
-        }, _ = (() => {
-            var e;
-            if (c) return null;
-            let t = (null == s || null == (e = s.cover_image_asset) ? void 0 : e.application_id) != null ? (0, p.YE)(s.cover_image_asset.application_id, s.cover_image_asset, v) : void 0;
-            return null == t && i !== d.pn.CONFIRM ? null : null == t ? (0, r.jsx)("div", {
-                className: O.gI
-            }) : (0, r.jsx)("img", {
-                src: t,
+            listing: i,
+            step: n,
+            guildId: s
+        } = e, r = (0, g.Tq)(s), d = (0, o.A)(f.TQ), m = (() => {
+            if (d) return null;
+            let e = r?.cover_image_asset?.application_id != null ? (0, x.YE)(r.cover_image_asset.application_id, r.cover_image_asset, 440) : void 0;
+            return null == e && n !== u.pn.CONFIRM ? null : null == e ? (0, l.jsx)("div", {
+                className: _.gI
+            }) : (0, l.jsx)("img", {
+                src: e,
                 alt: "",
-                className: O.F0
+                className: _.F0
             })
         })();
-        return (0, r.jsxs)("div", {
-            className: a()(O.N1, {
-                [O.TP]: c || null == _
+        return (0, l.jsxs)("div", {
+            className: a()(_.N1, {
+                [_.TP]: d || null == m
             }),
-            children: [_, f(), (0, r.jsx)(l.DUT, {
-                className: O.G3,
+            children: [m, (() => {
+                if (n !== u.pn.CONFIRM) return null;
+                let e = null == i.image_asset ? void 0 : (0, x.YE)(i.application_id, i.image_asset, 80);
+                return (0, l.jsx)("div", {
+                    className: _.z9,
+                    children: (0, l.jsx)("img", {
+                        src: e,
+                        alt: "",
+                        className: _.ah
+                    })
+                })
+            })(), (0, l.jsx)(c.DUT, {
+                className: _.G3,
                 onClick: () => t(!1),
-                "aria-label": b.intl.string(b.t.cpT0Cq),
-                children: (0, r.jsx)(l.PGe, {
+                "aria-label": p.intl.string(p.t.cpT0Cq),
+                children: (0, l.jsx)(c.PGe, {
                     size: "md",
                     color: "currentColor",
-                    className: O.ut
+                    className: _.ut
                 })
             })]
         })
     },
-    T = e => {
+    b = e => {
         let {
             onClose: t,
-            listing: n,
-            guildId: i
-        } = e, a = (0, o.bG)([f.A], () => f.A.getGuild(i), [i]), u = (0, m.A)(i).filter(e => e.roles.includes(n.role_id)), d = n.role_benefits.benefits.filter(_.B1).slice(0, null === u.length ? I : I - 1), p = (0, g.A)(d).slice(0, null === u.length ? I : I - 1), h = () => {
-            var e;
-            if (0 === u.length) return null;
-            let t = u[0];
-            return (0, r.jsxs)(r.Fragment, {
-                children: [(0, r.jsx)(l.Text, {
-                    variant: "text-xs/medium",
-                    color: "text-default",
-                    className: O.n2,
-                    children: b.intl.string(b.t["6Y1FLi"])
-                }), (0, r.jsxs)("div", {
-                    className: O.DI,
-                    children: [(0, r.jsx)(c.A, {
-                        emojiId: t.id,
-                        emojiName: t.name,
-                        animated: null != (e = t.animated) && e,
-                        className: O.mp
-                    }), (0, r.jsxs)("div", {
-                        children: [(0, r.jsx)(l.Text, {
-                            variant: "text-md/medium",
-                            color: "text-strong",
-                            className: O.cC,
-                            children: b.intl.string(b.t.PrKk4n)
-                        }), (0, r.jsx)(l.Text, {
-                            color: "interactive-text-default",
-                            variant: "text-sm/normal",
-                            children: b.intl.format(b.t["2ICUkG"], {
-                                count: u.length
-                            })
-                        })]
-                    })]
-                })]
-            })
-        };
-        return (0, r.jsxs)("div", {
-            className: O.RP,
-            children: [(0, r.jsx)(l.Heading, {
-                className: O.RS,
+            listing: i,
+            guildId: n
+        } = e, a = (0, s.bG)([m.A], () => m.A.getGuild(n), [n]), o = (0, v.A)(n).filter(e => e.roles.includes(i.role_id)), u = i.role_benefits.benefits.filter(h.B1).slice(0, null === o.length ? 4 : 3), x = (0, j.A)(u).slice(0, null === o.length ? 4 : 3);
+        return (0, l.jsxs)("div", {
+            className: _.RP,
+            children: [(0, l.jsx)(c.Heading, {
+                className: _.RS,
                 variant: "heading-xl/semibold",
                 color: "text-default",
-                children: b.intl.format(b.t["1HIsTk"], {
-                    serverName: null == a ? void 0 : a.name
+                children: p.intl.format(p.t["1HIsTk"], {
+                    serverName: a?.name
                 })
-            }), (0, r.jsx)(l.Text, {
-                className: O.sT,
+            }), (0, l.jsx)(c.Text, {
+                className: _.sT,
                 variant: "text-md/normal",
                 color: "text-default",
-                children: b.intl.format(b.t.oi3gip, {
-                    tier: n.name
+                children: p.intl.format(p.t.oi3gip, {
+                    tier: i.name
                 })
-            }), p.length > 0 && (0, r.jsxs)(r.Fragment, {
-                children: [(0, r.jsx)(l.Text, {
+            }), x.length > 0 && (0, l.jsxs)(l.Fragment, {
+                children: [(0, l.jsx)(c.Text, {
                     variant: "text-xs/normal",
                     color: "text-default",
-                    className: O.n2,
-                    children: b.intl.string(b.t.w0CQ01)
-                }), (0, r.jsx)("div", {
-                    className: O.M3,
-                    children: p.map(e => (0, r.jsx)(E.A, {
+                    className: _.n2,
+                    children: p.intl.string(p.t.w0CQ01)
+                }), (0, l.jsx)("div", {
+                    className: _.M3,
+                    children: x.map(e => (0, l.jsx)(A.A, {
                         benefit: e,
-                        guildId: i,
+                        guildId: n,
                         onClick: () => t(!0)
-                    }, (0, _.nh)(e)))
+                    }, (0, h.nh)(e)))
                 })]
-            }), h(), (0, r.jsx)("div", {
+            }), (() => {
+                if (0 === o.length) return null;
+                let e = o[0];
+                return (0, l.jsxs)(l.Fragment, {
+                    children: [(0, l.jsx)(c.Text, {
+                        variant: "text-xs/medium",
+                        color: "text-default",
+                        className: _.n2,
+                        children: p.intl.string(p.t["6Y1FLi"])
+                    }), (0, l.jsxs)("div", {
+                        className: _.DI,
+                        children: [(0, l.jsx)(d.A, {
+                            emojiId: e.id,
+                            emojiName: e.name,
+                            animated: e.animated ?? !1,
+                            className: _.mp
+                        }), (0, l.jsxs)("div", {
+                            children: [(0, l.jsx)(c.Text, {
+                                variant: "text-md/medium",
+                                color: "text-strong",
+                                className: _.cC,
+                                children: p.intl.string(p.t.PrKk4n)
+                            }), (0, l.jsx)(c.Text, {
+                                color: "interactive-text-default",
+                                variant: "text-sm/normal",
+                                children: p.intl.format(p.t["2ICUkG"], {
+                                    count: o.length
+                                })
+                            })]
+                        })]
+                    })]
+                })
+            })(), (0, l.jsx)("div", {
                 "data-button-hoisted-classname-wrapper": !0,
-                className: O.EJ,
-                children: (0, r.jsx)(s.$nd, {
+                className: _.EJ,
+                children: (0, l.jsx)(r.$nd, {
                     variant: "primary",
-                    text: b.intl.string(b.t["Ph+ecI"]),
+                    text: p.intl.string(p.t["Ph+ecI"]),
                     onClick: () => t(!0)
                 })
             })]

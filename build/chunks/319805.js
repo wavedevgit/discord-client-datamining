@@ -1,136 +1,107 @@
 /** chunk id: 319805, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => x
-}), n(228524);
-var r = n(627968);
+    A: () => _
+});
+var i = n(627968);
 n(64700);
-var i = n(397927),
+var s = n(397927),
     l = n(58149),
-    s = n(688810),
+    r = n(688810),
     a = n(753838),
     o = n(201275),
-    c = n(631305),
-    d = n(657048),
+    d = n(631305),
+    c = n(657048),
     u = n(636042),
-    g = n(652215),
-    m = n(874864),
-    p = n(985018),
-    f = n(636997);
-
-function h(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = r
-        })
-    }
-    return e
-}
-
-function b(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
-        }
-        return n
-    })(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-let x = function(e) {
+    m = n(652215),
+    g = n(874864),
+    x = n(985018),
+    h = n(636997);
+let _ = function(e) {
     let {
         guild: t,
-        disabled: x,
-        role: j
-    } = e, _ = (0, o.qE)(t.id, j), {
-        analyticsLocations: O
-    } = (0, s.Ay)(), v = t.features.has(g.GuildFeatures.ROLE_ICONS), y = e => {
-        v || ((0, l.zV)(g.HAw.PREMIUM_GUILD_PROMOTION_OPENED, {
-            location: b(h({}, e), {
-                section: g.JJy.CUSTOM_ROLE_ICONS_TOOLTIP
-            }),
-            guild_id: null == t ? void 0 : t.id,
-            location_stack: O
-        }), (0, c.A)({
-            analyticsLocations: O,
+        disabled: _,
+        role: A
+    } = e, p = (0, o.qE)(t.id, A), {
+        analyticsLocations: f
+    } = (0, r.Ay)(), j = t.features.has(m.GuildFeatures.ROLE_ICONS), N = e => {
+        j || ((0, l.zV)(m.HAw.PREMIUM_GUILD_PROMOTION_OPENED, {
+            location: {
+                ...e,
+                section: m.JJy.CUSTOM_ROLE_ICONS_TOOLTIP
+            },
+            guild_id: t?.id,
+            location_stack: f
+        }), (0, d.A)({
+            analyticsLocations: f,
             analyticsSourceLocation: {
-                page: g.liQ.GUILD_SETTINGS,
-                section: g.JJy.GUILD_ROLE_EDIT_UPSELL_MODAL,
-                object: g.ZSU.BADGE
+                page: m.liQ.GUILD_SETTINGS,
+                section: m.JJy.GUILD_ROLE_EDIT_UPSELL_MODAL,
+                object: m.ZSU.BADGE
             },
             guild: t,
-            perks: (0, m.$_)()
+            perks: (0, g.$_)()
         }))
-    }, A = (0, r.jsx)(a.A, {
-        className: f.Jz,
+    }, E = (0, i.jsx)(a.A, {
+        className: h.Jz,
         guild: t,
-        guildFeature: g.GuildFeatures.ROLE_ICONS,
+        guildFeature: m.GuildFeatures.ROLE_ICONS,
         tooltipPosition: "top",
-        hideTooltip: v,
-        onClick: () => y({
-            object: g.ZSU.LEARN_MORE,
-            objectType: g.AnalyticsObjectTypes.TIER_2
+        hideTooltip: j,
+        onClick: () => N({
+            object: m.ZSU.LEARN_MORE,
+            objectType: m.AnalyticsObjectTypes.TIER_2
         })
     });
-    return (0, r.jsxs)("div", {
-        className: f.kL,
-        children: [(0, r.jsxs)(i.zEo, {
-            className: f.Hc,
-            children: [(0, r.jsx)("div", {
-                children: p.intl.string(p.t.B9grJw)
-            }), A]
-        }), (0, r.jsx)(i.ayl, {
-            className: f.h_,
-            children: p.intl.string(p.t.I3YQeV)
-        }), (0, r.jsxs)("div", {
-            className: f.Mw,
-            children: [(0, r.jsx)("div", {
-                className: f.i1,
-                children: null != _ ? (0, r.jsx)(d.A, b(h({}, _), {
-                    className: f.s1,
+    return (0, i.jsxs)("div", {
+        className: h.kL,
+        children: [(0, i.jsxs)(s.zEo, {
+            className: h.Hc,
+            children: [(0, i.jsx)("div", {
+                children: x.intl.string(x.t.B9grJw)
+            }), E]
+        }), (0, i.jsx)(s.ayl, {
+            className: h.h_,
+            children: x.intl.string(x.t.I3YQeV)
+        }), (0, i.jsxs)("div", {
+            className: h.Mw,
+            children: [(0, i.jsx)("div", {
+                className: h.i1,
+                children: null != p ? (0, i.jsx)(c.A, {
+                    ...p,
+                    className: h.s1,
                     enableTooltip: !1
-                })) : (0, r.jsx)(i.XGR, {
+                }) : (0, i.jsx)(s.XGR, {
                     size: "custom",
                     color: "currentColor",
                     width: 24,
                     height: 24,
-                    className: f.VH
+                    className: h.VH
                 })
-            }), (0, r.jsx)(i.Button, {
-                onClick: () => t.features.has(g.GuildFeatures.ROLE_ICONS) ? void(0, i.mMO)(async () => {
+            }), (0, i.jsx)(s.Button, {
+                onClick: () => t.features.has(m.GuildFeatures.ROLE_ICONS) ? void(0, s.mMO)(async () => {
                     let {
                         default: e
                     } = await n.e("64939").then(n.bind(n, 836774));
-                    return n => (0, r.jsx)(e, b(h({}, n), {
+                    return n => (0, i.jsx)(e, {
+                        ...n,
                         guildId: t.id,
-                        onUploadIcon: e => (0, u.n3)(j.id, e, null),
-                        onSelectUnicodeEmoji: e => (0, u.n3)(j.id, null, e)
-                    }))
-                }) : y({
-                    object: g.ZSU.UPLOAD_IMAGE
+                        onUploadIcon: e => (0, u.n3)(A.id, e, null),
+                        onSelectUnicodeEmoji: e => (0, u.n3)(A.id, null, e)
+                    })
+                }) : N({
+                    object: m.ZSU.UPLOAD_IMAGE
                 }),
                 variant: "primary",
-                disabled: x,
-                text: p.intl.string(p.t.mD1oGB)
-            }), null != _ ? (0, r.jsx)(i.Button, {
+                disabled: _,
+                text: x.intl.string(x.t.mD1oGB)
+            }), null != p ? (0, i.jsx)(s.Button, {
                 onClick: () => {
-                    (0, u.n3)(j.id, null, null)
+                    (0, u.n3)(A.id, null, null)
                 },
                 variant: "critical-secondary",
-                disabled: x,
-                text: p.intl.string(p.t["uY+Nk/"])
+                disabled: _,
+                text: x.intl.string(x.t["uY+Nk/"])
             }) : null]
         })]
     })

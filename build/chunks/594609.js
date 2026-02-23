@@ -1,55 +1,40 @@
 /** chunk id: 594609, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    h: () => E
-}), n(896048);
-var r = n(627968),
-    i = n(64700),
+    h: () => c
+});
+var i = n(627968),
+    r = n(64700),
     l = n(158954),
-    a = n(397927),
-    o = n(827343),
-    s = n(985018);
+    s = n(397927),
+    a = n(827343),
+    o = n(985018);
 
-function c(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : e[t] = r
-        })
-    }
-    return e
-}
-
-function u(e) {
-    let [t, n] = i.useState(!1);
-    return (0, r.jsx)(l.Modal, c({
+function E(e) {
+    let [t, n] = r.useState(!1);
+    return (0, i.jsx)(l.Modal, {
         size: "md",
-        title: s.intl.string(s.t["zQ1+Jw"]),
-        subtitle: s.intl.string(s.t.K1gWXn),
+        title: o.intl.string(o.t["zQ1+Jw"]),
+        subtitle: o.intl.string(o.t.K1gWXn),
         actions: [{
-            text: s.intl.string(s.t.BddRzS),
+            text: o.intl.string(o.t.BddRzS),
             onClick: () => {
-                t && o.A.setSilenceWarning(!1), e.onClose()
+                t && a.A.setSilenceWarning(!1), e.onClose()
             },
             variant: "primary"
         }],
-        actionBarInput: (0, r.jsx)(l.Sc0, {
+        actionBarInput: (0, i.jsx)(l.Sc0, {
             checked: t,
             onChange: e => n(e),
-            label: s.intl.string(s.t.XAiAgD),
+            label: o.intl.string(o.t.XAiAgD),
             labelType: "secondary"
-        })
-    }, e))
+        }),
+        ...e
+    })
 }
 
-function E() {
-    (0, a.qfG)(e => (0, r.jsx)(u, c({}, e)))
+function c() {
+    (0, s.qfG)(e => (0, i.jsx)(E, {
+        ...e
+    }))
 }

@@ -1,23 +1,21 @@
-/** chunk id: 397309, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    A: () => g
+/** chunk id: 397309, original params: e,t,s (module,exports,require) **/
+s.d(t, {
+    A: () => d
 });
-var r = n(627968),
-    l = n(64700),
-    s = n(503698),
-    a = n.n(s),
-    i = n(397927),
-    o = n(938191),
-    c = n(758836),
-    u = n(985018),
-    d = n(816917);
+var r = s(627968),
+    l = s(64700),
+    n = s(503698),
+    a = s.n(n),
+    o = s(397927),
+    i = s(938191),
+    c = s(758836),
+    u = s(985018);
 
-function g(e) {
+function d(e) {
     let {
         handleTransition: t,
-        onClose: n
-    } = e, s = (0, o.y)("CollectiblesIndexPageContextMenu"), g = l.useMemo(() => [{
+        onClose: s
+    } = e, n = (0, i.yB)("CollectiblesIndexPageContextMenu"), d = l.useMemo(() => [{
         label: u.intl.string(u.t.dRZYNE),
         value: c.G2.AVATAR_DECORATIONS
     }, {
@@ -35,18 +33,18 @@ function g(e) {
     }], []);
     return (0, r.jsx)("div", {
         className: a()({
-            [d.T3]: s
+            [i.jP]: n
         }),
-        children: (0, r.jsx)(i.W1t, {
+        children: (0, r.jsx)(o.W1t, {
             "data-menu-migrated": !0,
             navId: "collectibles-index-page-menu",
             className: a()({
-                [d.T3]: s
+                [i.jP]: n
             }),
-            onClose: n,
+            onClose: s,
             "aria-label": u.intl.string(u.t.xFcotU),
             onSelect: () => {},
-            children: g.map(e => (0, r.jsx)(i.Drp, {
+            children: d.map(e => (0, r.jsx)(o.Drp, {
                 id: e.value,
                 label: e.label,
                 action: () => {

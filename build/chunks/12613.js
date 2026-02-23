@@ -1,25 +1,25 @@
 /** chunk id: 12613, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => s
-}), n(896048);
+});
 var l = n(627968);
 n(64700);
-var r = n(158954),
+var a = n(158954),
     i = n(746305);
-let a = e => {
+let r = e => {
         let {
             onChange: t,
             label: n,
-            subtitle: a,
+            subtitle: r,
             selected: s
         } = e;
         return (0, l.jsx)("div", {
             className: i.y,
-            children: (0, l.jsx)(r.Sc0, {
+            children: (0, l.jsx)(a.Sc0, {
                 checked: s,
                 onChange: t,
                 label: n,
-                description: a
+                description: r
             })
         })
     },
@@ -27,21 +27,21 @@ let a = e => {
         let {
             element: t,
             state: n,
-            onChange: r
+            onChange: a
         } = e;
-        if ((null == t ? void 0 : t.type) !== "checkbox") return null;
+        if (t?.type !== "checkbox") return null;
         let {
             data: i
         } = t;
         return (0, l.jsx)("div", {
             children: i.map((e, t) => {
-                let [i, s, o] = e;
-                return (0, l.jsx)(a, {
-                    onChange: () => r(i, s),
+                let [i, s, d] = e;
+                return (0, l.jsx)(r, {
+                    onChange: () => a(i, s),
                     selected: i in n,
                     label: s,
-                    subtitle: o
-                }, "".concat(t, "+button"))
+                    subtitle: d
+                }, `${t}+button`)
             })
         })
     }

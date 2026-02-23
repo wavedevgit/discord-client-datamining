@@ -1,35 +1,32 @@
 /** chunk id: 18422, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => d
-}), n(747238);
-var r = n(64700),
-    i = n(607399),
+    A: () => u
+});
+var i = n(64700),
+    r = n(607399),
     l = n(311907),
     a = n(197111),
     s = n(10088),
     o = n(961350),
-    c = n(652215);
-let u = i.Fr || i.v1;
+    d = n(652215);
+let c = r.Fr || r.v1;
 
-function d(e) {
+function u(e) {
     let {
         children: t,
         deepLinkType: n,
-        path: i,
-        paramsBuilder: d,
-        search: p
-    } = e, h = (0, l.bG)([o.default], () => {
-        var e;
-        return null != (e = o.default.getFingerprint()) ? e : o.default.getId()
-    }), f = (0, l.bG)([s.A], () => s.A.getState(i), [i]), g = r.useMemo(() => null == d ? {
-        path: i,
+        path: r,
+        paramsBuilder: u,
+        search: A
+    } = e, h = (0, l.bG)([o.default], () => o.default.getFingerprint() ?? o.default.getId()), _ = (0, l.bG)([s.A], () => s.A.getState(r), [r]), m = i.useMemo(() => null == u ? {
+        path: r,
         fingerprint: h,
-        search: p
-    } : d(i, h, p), [i, d, h, p]);
-    return r.useEffect(() => {
-        u || null == f && a.A.openNativeAppModal(i, c.e$_.DEEP_LINK, {
+        search: A
+    } : u(r, h, A), [r, u, h, A]);
+    return i.useEffect(() => {
+        c || null == _ && a.A.openNativeAppModal(r, d.e$_.DEEP_LINK, {
             type: n,
-            params: g
+            params: m
         })
-    }, [f, i, g, n]), t
+    }, [_, r, m, n]), t
 }

@@ -1,29 +1,29 @@
 /** chunk id: 320381, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    Cq: () => u,
-    If: () => d,
+    Cq: () => d,
+    If: () => u,
     Rk: () => o,
     wj: () => c
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(397927),
-    l = n(888675),
-    a = n(985018),
+var l = n(397927),
+    a = n(888675),
+    r = n(985018),
     s = n(930037);
 
 function o(e) {
     let {
         message: t,
-        compact: i,
+        compact: l,
         onClick: o
     } = e;
-    return (0, r.jsx)(l.A, {
+    return (0, i.jsx)(a.A, {
         icon: n(290388),
         timestamp: t.timestamp,
-        compact: i,
+        compact: l,
         contentClassName: s.B,
-        children: a.intl.format(a.t.bYdG3f, {
+        children: r.intl.format(r.t.bYdG3f, {
             onClick: o
         })
     })
@@ -32,34 +32,14 @@ function o(e) {
 function c(e) {
     let {
         message: t,
-        compact: i
+        compact: l
     } = e;
-    return (0, r.jsx)(l.A, {
+    return (0, i.jsx)(a.A, {
         icon: n(222548),
         timestamp: t.timestamp,
-        compact: i,
+        compact: l,
         contentClassName: s.B,
-        children: a.intl.string(a.t.tu6tOR)
-    })
-}
-
-function u(e) {
-    let {
-        message: t,
-        compact: n
-    } = e;
-    return (0, r.jsx)(l.A, {
-        iconNode: (0, r.jsx)(i.EpV, {
-            size: "custom",
-            width: 20,
-            height: 20,
-            color: "currentColor",
-            className: s.Q
-        }),
-        timestamp: t.timestamp,
-        compact: n,
-        contentClassName: s.B,
-        children: a.intl.string(a.t.vzfXql)
+        children: r.intl.string(r.t.tu6tOR)
     })
 }
 
@@ -68,8 +48,8 @@ function d(e) {
         message: t,
         compact: n
     } = e;
-    return (0, r.jsx)(l.A, {
-        iconNode: (0, r.jsx)(i.EpV, {
+    return (0, i.jsx)(a.A, {
+        iconNode: (0, i.jsx)(l.EpV, {
             size: "custom",
             width: 20,
             height: 20,
@@ -79,6 +59,26 @@ function d(e) {
         timestamp: t.timestamp,
         compact: n,
         contentClassName: s.B,
-        children: a.intl.string(a.t["/TfvyR"])
+        children: r.intl.string(r.t.vzfXql)
+    })
+}
+
+function u(e) {
+    let {
+        message: t,
+        compact: n
+    } = e;
+    return (0, i.jsx)(a.A, {
+        iconNode: (0, i.jsx)(l.EpV, {
+            size: "custom",
+            width: 20,
+            height: 20,
+            color: "currentColor",
+            className: s.Q
+        }),
+        timestamp: t.timestamp,
+        compact: n,
+        contentClassName: s.B,
+        children: r.intl.string(r.t["/TfvyR"])
     })
 }

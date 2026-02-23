@@ -1,12 +1,12 @@
 /** chunk id: 478407, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => u
-}), n(638769), n(896048);
-var r = n(627968),
-    i = n(64700),
-    l = n(311907),
-    s = n(397927),
-    a = n(166403),
+});
+var i = n(627968),
+    s = n(64700),
+    a = n(311907),
+    r = n(397927),
+    l = n(166403),
     o = n(510898),
     c = n(985018),
     d = n(104579);
@@ -14,23 +14,17 @@ var r = n(627968),
 function u(e) {
     let {
         onGoBack: t
-    } = e, n = (0, l.yK)([a.A], () => {
-        var e, t;
-        return null != (e = null == (t = a.A.getActiveApplicationSubscriptions()) ? void 0 : t.slice().sort((e, t) => {
-            var n, r, i, l;
-            return (null != (n = null == (i = e.createdAt) ? void 0 : i.getTime()) ? n : e.currentPeriodStart.getTime()) - (null != (r = null == (l = t.createdAt) ? void 0 : l.getTime()) ? r : t.currentPeriodStart.getTime())
-        })) ? e : []
-    }), [s, u] = i.useState();
-    return null == s && (s = (0, r.jsx)(_, {
+    } = e, n = (0, a.yK)([l.A], () => l.A.getActiveApplicationSubscriptions()?.slice().sort((e, t) => (e.createdAt?.getTime() ?? e.currentPeriodStart.getTime()) - (t.createdAt?.getTime() ?? t.currentPeriodStart.getTime())) ?? []), [r, u] = s.useState();
+    return null == r && (r = (0, i.jsx)(_, {
         onBack: t,
         title: c.intl.string(c.t["DB/m9a"])
-    })), (0, r.jsxs)("div", {
-        children: [s, (0, r.jsx)("div", {
+    })), (0, i.jsxs)("div", {
+        children: [r, (0, i.jsx)("div", {
             className: d.A,
-            children: (0, r.jsx)(o.A, {
+            children: (0, i.jsx)(o.A, {
                 subscriptions: n,
                 updateHeader: (e, t) => {
-                    u((0, r.jsx)(_, {
+                    u((0, i.jsx)(_, {
                         title: e,
                         onBack: () => {
                             t(), u(void 0)
@@ -47,16 +41,16 @@ function _(e) {
         onBack: t,
         title: n
     } = e;
-    return (0, r.jsxs)("div", {
+    return (0, i.jsxs)("div", {
         className: d.D,
-        children: [(0, r.jsx)(s.K0, {
+        children: [(0, i.jsx)(r.K0, {
             "aria-label": c.intl.string(c.t["13/7kX"]),
-            icon: () => (0, r.jsx)(s.Zge, {
+            icon: () => (0, i.jsx)(r.Zge, {
                 size: "sm"
             }),
             onClick: t,
             variant: "icon-only"
-        }), (0, r.jsx)(s.Heading, {
+        }), (0, i.jsx)(r.Heading, {
             variant: "heading-lg/semibold",
             children: n
         })]

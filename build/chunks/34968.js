@@ -1,128 +1,129 @@
 /** chunk id: 34968, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    CJ: () => _,
-    dY: () => v,
-    y8: () => E
-}), n(65821);
-var r = n(774603),
-    l = n(430086),
-    i = n(64460),
-    s = n(92960),
+    CJ: () => b,
+    dY: () => N,
+    y8: () => S
+});
+var i = n(774603),
+    s = n(430086),
+    l = n(64460),
+    r = n(92960),
     a = n(739008),
     o = n(314519),
     c = n(967497),
-    u = n(806964),
-    d = n(552049),
-    p = n(877991),
-    h = n(904828),
-    g = n(251494),
-    f = n(82038),
+    d = n(806964),
+    u = n(552049),
+    h = n(877991),
+    A = n(904828),
+    p = n(251494),
+    g = n(82038),
     m = n(14214),
-    b = n(151199),
-    A = n(512513),
-    y = n(801796),
-    O = n(652215),
-    j = n(985018);
+    _ = n(151199),
+    f = n(512513),
+    x = n(801796),
+    C = n(652215),
+    E = n(985018);
 
-function x() {
+function I() {
     for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
     return t.map(e => {
-        let t = _[e];
-        if (null == t) throw Error("getBindsFor(...): No bind for ".concat(t));
+        let t = b[e];
+        if (null == t) throw Error(`getBindsFor(...): No bind for ${t}`);
         return t.binds[0]
     })
 }
-let _ = {
-        [O.IWg.SERVER_NEXT]: h.yx,
-        [O.IWg.SERVER_PREV]: h.yv,
-        [O.IWg.CHANNEL_NEXT]: l.kF,
-        [O.IWg.CHANNEL_PREV]: l.Oc,
-        [O.IWg.NAVIGATE_BACK]: l.GY,
-        [O.IWg.NAVIGATE_FORWARD]: l.M$,
-        [O.IWg.UNREAD_NEXT]: y.mH,
-        [O.IWg.UNREAD_PREV]: y.US,
-        [O.IWg.MENTION_CHANNEL_NEXT]: y.BD,
-        [O.IWg.MENTION_CHANNEL_PREV]: y.X8,
-        [O.IWg.TOGGLE_PREVIOUS_GUILD]: l.Fv,
-        [O.IWg.JUMP_TO_GUILD]: i.J,
-        [O.IWg.SUBMIT]: g.X,
-        [O.IWg.TEXTAREA_FOCUS]: f.c,
-        [O.IWg.MARK_CHANNEL_READ]: s.D,
-        [O.IWg.MARK_SERVER_READ]: a.P,
-        [O.IWg.TOGGLE_MUTE]: m.VT,
-        [O.IWg.TOGGLE_DEAFEN]: m.rR,
-        [O.IWg.TOGGLE_CATEGORY_COLLAPSED]: b.y,
-        [O.IWg.SCROLL_UP]: d.U5,
-        [O.IWg.SCROLL_DOWN]: d.fz,
-        [O.IWg.SEARCH_EMOJIS]: p.L,
-        [O.IWg.TOGGLE_HOTKEYS]: A.z,
-        [O.IWg.JUMP_TO_FIRST_UNREAD]: o.s,
-        [O.IWg.RETURN_TO_AUDIO_CHANNEL]: u.u,
-        [O.IWg.CALL_ACCEPT]: r.Yo,
-        [O.IWg.CALL_START]: r.OX,
-        [O.IWg.QUICKSWITCHER_SHOW]: c.R
+let b = {
+        [C.IWg.SERVER_NEXT]: A.yx,
+        [C.IWg.SERVER_PREV]: A.yv,
+        [C.IWg.CHANNEL_NEXT]: s.kF,
+        [C.IWg.CHANNEL_PREV]: s.Oc,
+        [C.IWg.NAVIGATE_BACK]: s.GY,
+        [C.IWg.NAVIGATE_FORWARD]: s.M$,
+        [C.IWg.UNREAD_NEXT]: x.mH,
+        [C.IWg.UNREAD_PREV]: x.US,
+        [C.IWg.MENTION_CHANNEL_NEXT]: x.BD,
+        [C.IWg.MENTION_CHANNEL_PREV]: x.X8,
+        [C.IWg.TOGGLE_PREVIOUS_GUILD]: s.Fv,
+        [C.IWg.JUMP_TO_GUILD]: l.J,
+        [C.IWg.SUBMIT]: p.X,
+        [C.IWg.TEXTAREA_FOCUS]: g.c,
+        [C.IWg.MARK_CHANNEL_READ]: r.D,
+        [C.IWg.MARK_SERVER_READ]: a.P,
+        [C.IWg.TOGGLE_MUTE]: m.VT,
+        [C.IWg.TOGGLE_DEAFEN]: m.rR,
+        [C.IWg.TOGGLE_CATEGORY_COLLAPSED]: _.y,
+        [C.IWg.SCROLL_UP]: u.U5,
+        [C.IWg.SCROLL_DOWN]: u.fz,
+        [C.IWg.SEARCH_EMOJIS]: h.L,
+        [C.IWg.TOGGLE_HOTKEYS]: f.z,
+        [C.IWg.JUMP_TO_FIRST_UNREAD]: o.s,
+        [C.IWg.RETURN_TO_AUDIO_CHANNEL]: d.u,
+        [C.IWg.CALL_ACCEPT]: i.Yo,
+        [C.IWg.CALL_START]: i.OX,
+        [C.IWg.QUICKSWITCHER_SHOW]: c.R
     },
-    v = {
-        [O.IWg.QUICKSWITCHER_SHOW]: c.R
+    N = {
+        [C.IWg.QUICKSWITCHER_SHOW]: c.R
     };
 
-function E() {
+function S() {
     return [{
-        description: j.intl.string(j.t.bx4Uyz),
-        binds: x(O.IWg.SERVER_PREV, O.IWg.SERVER_NEXT)
+        description: E.intl.string(E.t.bx4Uyz),
+        binds: I(C.IWg.SERVER_PREV, C.IWg.SERVER_NEXT)
     }, {
-        description: j.intl.string(j.t["+Wem6h"]),
-        binds: x(O.IWg.CHANNEL_PREV, O.IWg.CHANNEL_NEXT)
+        description: E.intl.string(E.t["+Wem6h"]),
+        binds: I(C.IWg.CHANNEL_PREV, C.IWg.CHANNEL_NEXT)
     }, {
-        description: j.intl.string(j.t["+2fcdz"]),
-        binds: x(O.IWg.NAVIGATE_BACK, O.IWg.NAVIGATE_FORWARD)
+        description: E.intl.string(E.t["+2fcdz"]),
+        binds: I(C.IWg.NAVIGATE_BACK, C.IWg.NAVIGATE_FORWARD)
     }, {
-        description: j.intl.string(j.t.eVmj1H),
-        binds: x(O.IWg.UNREAD_PREV, O.IWg.UNREAD_NEXT)
+        description: E.intl.string(E.t.eVmj1H),
+        binds: I(C.IWg.UNREAD_PREV, C.IWg.UNREAD_NEXT)
     }, {
-        description: j.intl.string(j.t.EcqS7Y),
-        binds: x(O.IWg.MENTION_CHANNEL_PREV, O.IWg.MENTION_CHANNEL_NEXT),
+        description: E.intl.string(E.t.EcqS7Y),
+        binds: I(C.IWg.MENTION_CHANNEL_PREV, C.IWg.MENTION_CHANNEL_NEXT),
         groupEnd: !0
     }, {
-        description: j.intl.string(j.t.Bqss72),
-        binds: x(O.IWg.TOGGLE_PREVIOUS_GUILD)
+        description: E.intl.string(E.t.Bqss72),
+        binds: I(C.IWg.TOGGLE_PREVIOUS_GUILD)
     }, {
-        description: j.intl.string(j.t.UaXAPx),
-        binds: x(O.IWg.MARK_SERVER_READ)
+        description: E.intl.string(E.t.UaXAPx),
+        binds: I(C.IWg.MARK_SERVER_READ)
     }, {
-        description: j.intl.string(j.t["5X9vFj"]),
-        binds: x(O.IWg.MARK_CHANNEL_READ)
+        description: E.intl.string(E.t["5X9vFj"]),
+        binds: I(C.IWg.MARK_CHANNEL_READ)
     }, {
-        description: j.intl.string(j.t.JoxNnl),
-        binds: x(O.IWg.SEARCH_EMOJIS),
+        description: E.intl.string(E.t.JoxNnl),
+        binds: I(C.IWg.SEARCH_EMOJIS),
         groupEnd: !0
     }, {
-        description: j.intl.string(j.t.tL6eVW),
-        binds: x(O.IWg.TOGGLE_MUTE)
+        description: E.intl.string(E.t.tL6eVW),
+        binds: I(C.IWg.TOGGLE_MUTE)
     }, {
-        description: j.intl.string(j.t["QXe/7T"]),
-        binds: x(O.IWg.TOGGLE_DEAFEN)
+        description: E.intl.string(E.t["QXe/7T"]),
+        binds: I(C.IWg.TOGGLE_DEAFEN)
     }, {
-        description: j.intl.string(j.t.d6UIii),
-        binds: x(O.IWg.CALL_ACCEPT)
+        description: E.intl.string(E.t.d6UIii),
+        binds: I(C.IWg.CALL_ACCEPT)
     }, {
-        description: j.intl.string(j.t.IcEW06),
-        binds: x(O.IWg.MARK_CHANNEL_READ)
+        description: E.intl.string(E.t.IcEW06),
+        binds: I(C.IWg.MARK_CHANNEL_READ)
     }, {
-        description: j.intl.string(j.t.WN2dsS),
-        binds: x(O.IWg.CALL_START),
+        description: E.intl.string(E.t.WN2dsS),
+        binds: I(C.IWg.CALL_START),
         groupEnd: !0
     }, {
-        description: j.intl.string(j.t.L3RYYJ),
-        binds: x(O.IWg.SCROLL_UP, O.IWg.SCROLL_DOWN)
+        description: E.intl.string(E.t.L3RYYJ),
+        binds: I(C.IWg.SCROLL_UP, C.IWg.SCROLL_DOWN)
     }, {
-        description: j.intl.string(j.t["3HAurM"]),
-        binds: x(O.IWg.JUMP_TO_FIRST_UNREAD)
+        description: E.intl.string(E.t["3HAurM"]),
+        binds: I(C.IWg.JUMP_TO_FIRST_UNREAD)
     }, {
-        description: j.intl.string(j.t.rrYBEu),
-        binds: x(O.IWg.TEXTAREA_FOCUS)
+        description: E.intl.string(E.t.rrYBEu),
+        binds: I(C.IWg.TEXTAREA_FOCUS)
     }, {
-        description: j.intl.string(j.t.yYsRlD),
-        binds: x(O.IWg.QUICKSWITCHER_SHOW)
+        description: E.intl.string(E.t.yYsRlD),
+        binds: I(C.IWg.QUICKSWITCHER_SHOW)
     }]
 }

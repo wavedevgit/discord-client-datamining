@@ -1,11 +1,11 @@
 /** chunk id: 895163, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    Xn: () => a,
-    tz: () => l
+    Xn: () => l,
+    tz: () => a
 });
-var r, i = n(250105),
-    l = ((r = {}).PAYMENT_REVIEW = "control", r.PLAN_SELECTION = "plan_selection", r);
-let s = (0, i.Ay)({
+var i, s = n(250105),
+    a = ((i = {}).PAYMENT_REVIEW = "control", i.PLAN_SELECTION = "plan_selection", i);
+let r = (0, s.Ay)({
     name: "2026-01-marketing-banner-cta-action",
     kind: "user",
     defaultConfig: {
@@ -21,8 +21,8 @@ let s = (0, i.Ay)({
     }
 });
 
-function a(e) {
-    return s.useConfig({
+function l(e) {
+    return r.useConfig({
         location: e
     })
 }

@@ -1,28 +1,27 @@
 /** chunk id: 95905, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => s
+    A: () => r
 });
-var r = n(627968);
+var l = n(627968);
 n(64700);
-var l = n(397927),
-    i = n(763754),
+var i = n(397927),
+    s = n(763754),
     a = n(447215);
-let s = e => {
-    var t, n;
+let r = e => {
     let {
-        message: s,
-        originalAuthor: o,
-        channel: c
-    } = e, d = (0, i.d8)(o, c), u = null != (t = null != (n = null == d ? void 0 : d.nick) ? n : null == o ? void 0 : o.username) ? t : "", m = (0, a.P)({
-        user: null != o ? o : void 0,
-        channelId: c.id,
-        guildId: c.guild_id,
-        messageId: null == s ? void 0 : s.id,
+        message: t,
+        originalAuthor: n,
+        channel: r
+    } = e, o = (0, s.d8)(n, r), d = o?.nick ?? n?.username ?? "", c = (0, a.P)({
+        user: n ?? void 0,
+        channelId: r.id,
+        guildId: r.guild_id,
+        messageId: t?.id,
         stopPropagation: !0
-    })(null != d ? d : void 0)(u, c.id);
-    return (0, r.jsx)(l.Text, {
+    })(o ?? void 0)(d, r.id);
+    return (0, l.jsx)(i.Text, {
         variant: "text-md/semibold",
-        children: m
+        children: c
     })
 }

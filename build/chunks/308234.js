@@ -1,36 +1,36 @@
 /** chunk id: 308234, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => d
+    A: () => u
 });
-var r = n(627968),
-    i = n(64700),
-    l = n(503698),
-    a = n.n(l),
+var i = n(627968),
+    l = n(64700),
+    r = n(503698),
+    a = n.n(r),
     s = n(397927),
     o = n(415350),
-    c = n(366468),
-    u = n(206314);
+    d = n(366468),
+    c = n(206314);
 
-function d(e) {
+function u(e) {
     let {
         color: t,
         className: n,
-        variant: l,
-        text: d,
-        lineClamp: p
-    } = e, m = (0, s.$Il)(), f = i.useMemo(() => null == d ? null : (0, o.A)(d, !0, {
-        allowHeading: null == p,
-        allowList: null == p,
+        variant: r,
+        text: u,
+        lineClamp: _
+    } = e, m = (0, s.$Il)(), h = l.useMemo(() => null == u ? null : (0, o.A)(u, !0, {
+        allowHeading: null == _,
+        allowList: null == _,
         initialHeaderLevel: m
-    }), [d, p, m]);
-    return (0, r.jsx)(s.Text, {
-        className: a()(n, u.PT, {
-            [c.E]: null != p && p > 1,
-            [c.D]: 1 === p
+    }), [u, _, m]);
+    return (0, i.jsx)(s.Text, {
+        className: a()(n, c.PT, {
+            [d.E]: null != _ && _ > 1,
+            [d.D]: 1 === _
         }),
         color: t,
-        variant: l,
-        lineClamp: p,
-        children: f
+        variant: r,
+        lineClamp: _,
+        children: h
     })
 }

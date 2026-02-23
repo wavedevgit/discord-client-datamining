@@ -1,16 +1,10 @@
 /** chunk id: 937136, original params: e,t,n (module,exports,require) **/
-function l(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
 n.d(t, {
-    p: () => r
-}), n(896048);
-class r {
+    p: () => l
+});
+class l {
+    pending = new Set;
+    fetching = new Set;
     empty() {
         return 0 === this.pending.size && 0 === this.fetching.size
     }
@@ -44,8 +38,5 @@ class r {
         } catch (t) {
             throw this.markFailed(e), t
         }
-    }
-    constructor() {
-        l(this, "pending", new Set), l(this, "fetching", new Set)
     }
 }

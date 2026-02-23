@@ -1,27 +1,26 @@
 /** chunk id: 920603, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    v: () => a
+    v: () => l
 });
-var r = n(562465),
-    i = n(73153),
-    l = n(74396),
-    s = n(652215);
+var i = n(562465),
+    s = n(73153),
+    a = n(74396),
+    r = n(652215);
 
-function a() {
-    l.A.isFetching() || (i.h.dispatch({
+function l() {
+    a.A.isFetching() || (s.h.dispatch({
         type: "SAVED_CUSTOM_THEMES_FETCH_START"
-    }), r.Bo.get({
-        url: s.Rsh.USERS_ME_CUSTOM_THEMES,
+    }), i.Bo.get({
+        url: r.Rsh.USERS_ME_CUSTOM_THEMES,
         oldFormErrors: !0,
         rejectWithError: !0
     }).then(e => {
-        var t, n;
-        i.h.dispatch({
+        s.h.dispatch({
             type: "SAVED_CUSTOM_THEMES_FETCH_SUCCESS",
-            themes: null != (t = null == (n = e.body) ? void 0 : n.custom_themes) ? t : []
+            themes: e.body?.custom_themes ?? []
         })
     }).catch(e => {
-        i.h.dispatch({
+        s.h.dispatch({
             type: "SAVED_CUSTOM_THEMES_FETCH_FAILURE",
             error: e
         })

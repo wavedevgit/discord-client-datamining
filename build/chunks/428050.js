@@ -1,18 +1,18 @@
-/** chunk id: 428050, original params: e,t,r (module,exports,require) **/
-r.d(t, {
+/** chunk id: 428050, original params: e,t,s (module,exports,require) **/
+s.d(t, {
     A: () => u
-}), r(896048);
-var n = r(627968),
-    l = r(64700),
-    a = r(397927),
-    s = r(533148),
-    o = r(927573),
-    i = r(333354),
-    c = r(985018),
-    d = r(260484);
+});
+var n = s(627968),
+    a = s(64700),
+    r = s(397927),
+    l = s(533148),
+    i = s(927573),
+    o = s(333354),
+    c = s(985018),
+    d = s(260484);
 
 function u() {
-    let [e, t] = l.useState("");
+    let [e, t] = a.useState("");
     return (0, n.jsxs)("div", {
         className: d.kL,
         children: [(0, n.jsxs)("div", {
@@ -21,7 +21,7 @@ function u() {
                 className: d.B0,
                 children: [(0, n.jsx)("div", {
                     className: d.my,
-                    children: (0, n.jsx)(a.pVd, {
+                    children: (0, n.jsx)(r.pVd, {
                         size: "custom",
                         width: 24,
                         height: 24
@@ -37,12 +37,12 @@ function u() {
                         })]
                     }), (0, n.jsxs)("div", {
                         className: d.Qc,
-                        children: [(0, n.jsx)(a.Text, {
+                        children: [(0, n.jsx)(r.Text, {
                             variant: "text-sm/medium",
                             color: "text-muted",
                             className: d.pc,
-                            children: "".concat(o.mu, "/")
-                        }), (0, n.jsx)(a.Text, {
+                            children: `${i.mu}/`
+                        }), (0, n.jsx)(r.Text, {
                             variant: "text-sm/medium",
                             color: "text-link",
                             className: d.Po,
@@ -69,16 +69,16 @@ function u() {
                         })]
                     })]
                 })]
-            }), (0, n.jsx)(s.A, {
+            }), (0, n.jsx)(l.A, {
                 autoFocus: !0,
                 value: e,
                 onChange: t
             })]
-        }), (0, n.jsx)(a.Text, {
+        }), (0, n.jsx)(r.Text, {
             variant: "text-xs/normal",
             color: "text-muted",
             className: d.ed,
-            children: c.intl.string(i.default.u5iNbz)
+            children: c.intl.string(o.default.u5iNbz)
         })]
     })
 }

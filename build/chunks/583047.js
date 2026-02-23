@@ -1,126 +1,125 @@
 /** chunk id: 583047, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    a: () => f
-}), n(896048);
-var r = n(627968),
-    i = n(64700),
+    a: () => h
+});
+var i = n(627968),
+    s = n(64700),
     l = n(158954),
-    s = n(513461),
+    r = n(513461),
     a = n(786180),
     o = n(892921),
-    c = n(596484),
-    d = n(322388),
+    d = n(596484),
+    c = n(322388),
     u = n(564864),
-    g = n(260197),
-    m = n(985018),
-    p = n(35407);
+    m = n(260197),
+    g = n(985018),
+    x = n(35407);
 
-function f(e) {
-    var t;
+function h(e) {
     let {
-        guild: n,
-        formFields: c
-    } = e, [f, b] = i.useState(c);
-    i.useEffect(() => b(c), [c]);
-    let x = null != (t = (0, a.H)({
-            guildId: n.id
-        })) ? t : 0,
-        [j, _] = i.useState(null),
-        O = i.useMemo(() => null == f ? void 0 : f.some(e => (0, s.i7)(e)), [f]),
-        v = i.useMemo(() => f.length === g.OK, [f]),
-        y = i.useCallback(e => {
-            u.A.setPendingMemberVerificationRules(n.id, e), b(e), null != j && _(null)
-        }, [j, n.id]),
-        A = i.useCallback(e => {
-            y([...f, e])
-        }, [f, y]),
-        E = i.useCallback(e => {
-            y([...f.slice(0, e), ...f.slice(e + 1)])
-        }, [f, y]),
-        N = i.useCallback((e, t) => {
-            if (f[e] === t) return;
-            let n = [...f];
-            n[e] = t, y(n)
-        }, [f, y]),
-        S = i.useCallback((e, t, n) => {
-            let r = f.indexOf(e),
-                i = [...f];
-            null != t && t !== r && (i.splice(r, 1), i.splice(t, 0, e), b(i)), n ? (y(i), null !== j && _(null)) : j !== t && _(t)
-        }, [j, f, y]);
-    return (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(l.DZT, {
+        guild: t,
+        formFields: n
+    } = e, [d, h] = s.useState(n);
+    s.useEffect(() => h(n), [n]);
+    let A = (0, a.H)({
+            guildId: t.id
+        }) ?? 0,
+        [p, f] = s.useState(null),
+        j = s.useMemo(() => d?.some(e => (0, r.i7)(e)), [d]),
+        N = s.useMemo(() => d.length === m.OK, [d]),
+        E = s.useCallback(e => {
+            u.A.setPendingMemberVerificationRules(t.id, e), h(e), null != p && f(null)
+        }, [p, t.id]),
+        b = s.useCallback(e => {
+            E([...d, e])
+        }, [d, E]),
+        T = s.useCallback(e => {
+            E([...d.slice(0, e), ...d.slice(e + 1)])
+        }, [d, E]),
+        C = s.useCallback((e, t) => {
+            if (d[e] === t) return;
+            let n = [...d];
+            n[e] = t, E(n)
+        }, [d, E]),
+        I = s.useCallback((e, t, n) => {
+            let i = d.indexOf(e),
+                s = [...d];
+            null != t && t !== i && (s.splice(i, 1), s.splice(t, 0, e), h(s)), n ? (E(s), null !== p && f(null)) : p !== t && f(t)
+        }, [p, d, E]);
+    return (0, i.jsxs)(i.Fragment, {
+        children: [(0, i.jsx)(l.DZT, {
             variant: "text-xs/bold",
             color: "text-muted",
-            className: p.DD,
-            children: m.intl.format(m.t["sm+75n"], {
-                currentCount: f.length,
-                maxCount: g.OK
+            className: x.DD,
+            children: g.intl.format(g.t["sm+75n"], {
+                currentCount: d.length,
+                maxCount: m.OK
             })
-        }), f.map(e => (0, d.Td)({
-            dropHoveredIndex: j,
+        }), d.map(e => (0, c.Td)({
+            dropHoveredIndex: p,
             formField: e,
-            guild: n,
-            index: f.indexOf(e),
-            isDragEnabled: f.length > 1,
-            submittedGuildJoinRequestsCount: x,
-            removeFormField: E,
-            updateFormField: N,
-            updateFormFieldOrder: S,
-            canRemove: f.length > 1,
+            guild: t,
+            index: d.indexOf(e),
+            isDragEnabled: d.length > 1,
+            submittedGuildJoinRequestsCount: A,
+            removeFormField: T,
+            updateFormField: C,
+            updateFormFieldOrder: I,
+            canRemove: d.length > 1,
             actionsLocation: "side",
-            fieldStyle: s.Vf.COMPACT
-        })), !v && (0, r.jsx)("div", {
-            className: p.At,
-            children: (0, r.jsx)(o.A, {
-                addFormField: A,
-                guild: n,
-                allowTerms: !O
+            fieldStyle: r.Vf.COMPACT
+        })), !N && (0, i.jsx)("div", {
+            className: x.At,
+            children: (0, i.jsx)(o.A, {
+                addFormField: b,
+                guild: t,
+                allowTerms: !j
             })
-        }), !v && (0, r.jsx)(h, {
-            addFormField: A
+        }), !N && (0, i.jsx)(_, {
+            addFormField: b
         })]
     })
 }
 
-function h(e) {
+function _(e) {
     let {
         addFormField: t
-    } = e, n = i.useMemo(() => [{
-        text: m.intl.string(m.t.EOwiEk),
+    } = e, n = s.useMemo(() => [{
+        text: g.intl.string(g.t.EOwiEk),
         onClick: () => {
             t({
-                field_type: s.rX.TEXT_INPUT,
-                label: m.intl.string(m.t.EOwiEk),
+                field_type: r.rX.TEXT_INPUT,
+                label: g.intl.string(g.t.EOwiEk),
                 required: !0
             })
         }
     }, {
-        text: m.intl.string(m.t.jqrNDh),
+        text: g.intl.string(g.t.jqrNDh),
         onClick: () => {
             t({
-                field_type: s.rX.TEXT_INPUT,
-                label: m.intl.string(m.t.jqrNDh),
+                field_type: r.rX.TEXT_INPUT,
+                label: g.intl.string(g.t.jqrNDh),
                 required: !0
             })
         }
     }, {
-        text: m.intl.string(m.t.I5q8vp),
+        text: g.intl.string(g.t.I5q8vp),
         onClick: () => {
             t({
-                field_type: s.rX.TEXT_INPUT,
-                label: m.intl.string(m.t.I5q8vp),
+                field_type: r.rX.TEXT_INPUT,
+                label: g.intl.string(g.t.I5q8vp),
                 required: !0
             })
         }
     }], [t]);
-    return (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(l.DZT, {
+    return (0, i.jsxs)(i.Fragment, {
+        children: [(0, i.jsx)(l.DZT, {
             variant: "text-xs/bold",
             color: "text-muted",
-            className: p.hD,
-            children: m.intl.string(m.t.ID04cA)
-        }), (0, r.jsx)(c.z, {
+            className: x.hD,
+            children: g.intl.string(g.t.ID04cA)
+        }), (0, i.jsx)(d.z, {
             pills: n
         })]
     })

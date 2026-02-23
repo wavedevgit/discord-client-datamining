@@ -1,58 +1,58 @@
 /** chunk id: 863598, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    h: () => v,
-    y: () => O
-}), n(667532), n(228524);
-var r = n(627968),
-    i = n(64700),
+    h: () => E,
+    y: () => N
+}), n(667532);
+var i = n(627968),
+    s = n(64700),
     l = n(478437),
-    s = n(311907),
+    r = n(311907),
     a = n(417048),
     o = n(843282),
-    c = n(999903),
-    d = n(47167),
+    d = n(999903),
+    c = n(47167),
     u = n(713654),
-    g = n(734057),
-    m = n(769765),
-    p = n(994500),
-    f = n(287809),
-    h = n(997509),
-    b = n(985018);
-let x = "NO_CHANNEL";
+    m = n(734057),
+    g = n(769765),
+    x = n(994500),
+    h = n(287809),
+    _ = n(997509),
+    A = n(985018);
+let p = "NO_CHANNEL";
 
-function j(e) {
+function f(e) {
     return {
         value: e.id,
-        label: (0, d.m1)(e, f.default, p.A),
+        label: (0, c.m1)(e, h.default, x.A),
         channel: e,
-        category: g.A.getChannel(e.parent_id)
+        category: m.A.getChannel(e.parent_id)
     }
 }
 
-function _(e) {
+function j(e) {
     let {
         option: t
     } = e, {
         label: n,
         channel: l,
-        category: s
-    } = t, o = i.useMemo(() => (0, u.gU)(l), [l]), c = (0, d.Ay)(l);
-    return (0, r.jsx)(a.X, {
+        category: r
+    } = t, o = s.useMemo(() => (0, u.gU)(l), [l]), d = (0, c.Ay)(l);
+    return (0, i.jsx)(a.X, {
         title: n,
         icon: o,
-        subtitle: null != s ? c : null
+        subtitle: null != r ? d : null
     })
 }
 
-function O(e) {
+function N(e) {
     let {
         canManageGuild: t,
         guildId: n,
         afkChannelId: a,
         label: o
-    } = e, d = (0, s.bG)([m.A], () => m.A.getCategories(n)), u = i.useMemo(() => {
-        let e = (0, c.A)(d._categories, d).filter(e => {
+    } = e, c = (0, r.bG)([g.A], () => g.A.getCategories(n)), u = s.useMemo(() => {
+        let e = (0, d.A)(c._categories, c).filter(e => {
             let {
                 channel: t
             } = e;
@@ -61,37 +61,37 @@ function O(e) {
             let {
                 channel: t
             } = e;
-            return j(t)
+            return f(t)
         });
         return e.unshift({
-            value: x,
-            label: b.intl.string(b.t.wGiHkK)
+            value: p,
+            label: A.intl.string(A.t.wGiHkK)
         }), e
-    }, [d]), g = i.useCallback(e => {
-        let t = e === x ? null : e;
-        h.A.updateGuild({
+    }, [c]), m = s.useCallback(e => {
+        let t = e === p ? null : e;
+        _.A.updateGuild({
             afkChannelId: t
         })
     }, []);
-    return (0, r.jsx)(y, {
+    return (0, i.jsx)(b, {
         label: o,
-        value: null != a ? a : x,
+        value: a ?? p,
         options: u,
         canManageGuild: t,
-        onChange: g
+        onChange: m
     })
 }
 
-function v(e) {
+function E(e) {
     let {
         canManageGuild: t,
         guildId: n,
         systemChannelId: a,
         label: o,
-        description: d,
+        description: c,
         layout: u
-    } = e, g = (0, s.bG)([m.A], () => m.A.getCategories(n)), p = i.useMemo(() => {
-        let e = (0, c.A)(g._categories, g).filter(e => {
+    } = e, m = (0, r.bG)([g.A], () => g.A.getCategories(n)), x = s.useMemo(() => {
+        let e = (0, d.A)(m._categories, m).filter(e => {
             let {
                 channel: t
             } = e;
@@ -100,53 +100,53 @@ function v(e) {
             let {
                 channel: t
             } = e;
-            return j(t)
+            return f(t)
         });
         return e.unshift({
-            value: x,
-            label: b.intl.string(b.t.ibUhoa)
+            value: p,
+            label: A.intl.string(A.t.ibUhoa)
         }), e
-    }, [g]), f = i.useCallback(e => {
-        let t = e === x ? null : e;
-        h.A.updateGuild({
+    }, [m]), h = s.useCallback(e => {
+        let t = e === p ? null : e;
+        _.A.updateGuild({
             systemChannelId: t
         })
     }, []);
-    return (0, r.jsx)(y, {
+    return (0, i.jsx)(b, {
         label: o,
-        description: d,
+        description: c,
         layout: u,
-        value: null != a ? a : x,
-        options: p,
+        value: a ?? p,
+        options: x,
         canManageGuild: t,
-        onChange: f
+        onChange: h
     })
 }
 
-function y(e) {
+function b(e) {
     let {
         value: t,
         options: n,
         canManageGuild: l,
-        onChange: s,
+        onChange: r,
         label: a,
-        description: c,
-        layout: d
-    } = e, u = i.useCallback(e => {
-        if (null != e) return (0, r.jsx)(_, {
+        description: d,
+        layout: c
+    } = e, u = s.useCallback(e => {
+        if (null != e) return (0, i.jsx)(j, {
             option: e
         })
-    }, []), g = i.useCallback(e => u(e[0]), [u]);
-    return (0, r.jsx)(o.Te, {
+    }, []), m = s.useCallback(e => u(e[0]), [u]);
+    return (0, i.jsx)(o.Te, {
         label: a,
-        description: c,
+        description: d,
         value: t,
         options: n,
         isDisabled: !l,
-        onChange: s,
+        onChange: r,
         renderOptionLabel: u,
-        renderOptionValue: g,
-        layout: d,
+        renderOptionValue: m,
+        layout: c,
         "data-migration-pending": !0
     })
 }

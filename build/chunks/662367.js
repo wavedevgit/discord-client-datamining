@@ -1,8 +1,8 @@
 /** chunk id: 662367, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => l
+    A: () => i
 });
-let l = (0, n(600975).C)({
+let i = (0, n(600975).C)({
     kind: "user",
     id: "2021-04_longer_group_dm_invites",
     label: "Longer Group DM Invites",

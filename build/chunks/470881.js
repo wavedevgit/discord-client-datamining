@@ -1,41 +1,41 @@
 /** chunk id: 470881, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => d
+    A: () => u
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(681154),
+var r = n(681154),
     l = n(311907),
     a = n(397927),
     s = n(429913),
     o = n(287809),
-    c = n(985018),
-    u = n(707934);
+    d = n(985018),
+    c = n(707934);
 
-function d(e) {
+function u(e) {
     let {
         item: t
-    } = e, n = "contentInventory" === t.data.kind ? t.data.content : null, d = null == n ? void 0 : n.extra, p = null == n ? void 0 : n.author_id, h = null == n ? void 0 : n.content_type, f = (null == d ? void 0 : d.type) === "played_game_extra" || (null == d ? void 0 : d.type) === "launched_activity_extra" ? d.application_id : void 0, g = (0, s.h)(f), m = (0, l.bG)([o.default], () => null != p ? o.default.getUser(p) : null, [p]), A = h === i.ContentInventoryEntryType.TOP_GAME, _ = null == g ? void 0 : g.getIconURL(240);
-    return (null == d ? void 0 : d.type) !== "played_game_extra" || "contentInventory" !== t.data.kind || null == g || null == m || null == _ ? null : (0, r.jsx)("div", {
-        className: u.kL,
-        children: (0, r.jsxs)("div", {
-            className: u.Nr,
-            children: [(0, r.jsx)("img", {
-                src: _,
-                alt: g.name,
-                className: u.Gt
-            }), (0, r.jsxs)("div", {
-                className: u.Vx,
-                children: [(0, r.jsx)(a.Text, {
+    } = e, n = "contentInventory" === t.data.kind ? t.data.content : null, u = n?.extra, A = n?.author_id, h = n?.content_type, _ = u?.type === "played_game_extra" || u?.type === "launched_activity_extra" ? u.application_id : void 0, m = (0, s.h)(_), p = (0, l.bG)([o.default], () => null != A ? o.default.getUser(A) : null, [A]), g = h === r.ContentInventoryEntryType.TOP_GAME, E = m?.getIconURL(240);
+    return u?.type !== "played_game_extra" || "contentInventory" !== t.data.kind || null == m || null == p || null == E ? null : (0, i.jsx)("div", {
+        className: c.kL,
+        children: (0, i.jsxs)("div", {
+            className: c.Nr,
+            children: [(0, i.jsx)("img", {
+                src: E,
+                alt: m.name,
+                className: c.Gt
+            }), (0, i.jsxs)("div", {
+                className: c.Vx,
+                children: [(0, i.jsx)(a.Text, {
                     variant: "text-md/semibold",
                     color: "text-strong",
-                    children: g.name
-                }), A && (0, r.jsx)("div", {
-                    className: u.qS,
-                    children: (0, r.jsx)(a.Text, {
+                    children: m.name
+                }), g && (0, i.jsx)("div", {
+                    className: c.qS,
+                    children: (0, i.jsx)(a.Text, {
                         variant: "text-xs/semibold",
                         color: "text-brand",
-                        children: c.intl.string(c.t["/50eHi"])
+                        children: d.intl.string(d.t["/50eHi"])
                     })
                 })]
             })]

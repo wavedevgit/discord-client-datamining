@@ -1,46 +1,30 @@
-/** chunk id: 967740, original params: e,t,r (module,exports,require) **/
-r.d(t, {
-    A: () => a
+/** chunk id: 967740, original params: e,t,l (module,exports,require) **/
+l.d(t, {
+    A: () => o
 });
-var n = r(627968);
-r(64700);
-var l = r(201275),
-    i = r(657048),
-    o = r(63104);
+var i = l(627968);
+l(64700);
+var n = l(201275),
+    r = l(657048),
+    s = l(63104);
 
-function a(e) {
+function o(e) {
     let {
         guildId: t,
-        role: r,
-        size: a,
-        className: c
-    } = e, s = (0, l.$7)({
+        role: l,
+        size: o,
+        className: a
+    } = e, d = (0, n.$7)({
         guildId: t,
-        roleId: r.id,
-        size: a
+        roleId: l.id,
+        size: o
     });
-    return null != s ? (0, n.jsx)(i.A, function(e) {
-        for (var t = 1; t < arguments.length; t++) {
-            var r = null != arguments[t] ? arguments[t] : {},
-                n = Object.keys(r);
-            "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-                return Object.getOwnPropertyDescriptor(r, e).enumerable
-            }))), n.forEach(function(t) {
-                var n;
-                n = r[t], t in e ? Object.defineProperty(e, t, {
-                    value: n,
-                    enumerable: !0,
-                    configurable: !0,
-                    writable: !0
-                }) : e[t] = n
-            })
-        }
-        return e
-    }({
-        className: c
-    }, s)) : (0, n.jsx)(o.A, {
-        color: r.colorString,
-        className: c,
-        size: a
+    return null != d ? (0, i.jsx)(r.A, {
+        className: a,
+        ...d
+    }) : (0, i.jsx)(s.A, {
+        color: l.colorString,
+        className: a,
+        size: o
     })
 }

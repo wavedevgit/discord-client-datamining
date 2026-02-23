@@ -1,9 +1,9 @@
 /** chunk id: 158237, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    Jp: () => i
+    Jp: () => s
 });
-let r = (0, n(600975).C)({
+let i = (0, n(600975).C)({
     kind: "user",
     id: "2023-09_iar_dsa_webform",
     label: "Safety Experience Unauthenticated Report Form",
@@ -25,8 +25,8 @@ let r = (0, n(600975).C)({
     }]
 });
 
-function i(e) {
-    return r.useExperiment({
+function s(e) {
+    return i.useExperiment({
         location: e
     }, {
         autoTrackExposure: !0

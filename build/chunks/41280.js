@@ -1,52 +1,52 @@
 /** chunk id: 41280, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => x
-}), n(896048);
+    A: () => p
+});
 var a = n(627968),
-    l = n(64700),
-    r = n(503698),
-    i = n.n(r),
-    s = n(735438),
-    o = n.n(s),
-    c = n(92674),
-    d = n(311907),
+    i = n(64700),
+    s = n(503698),
+    l = n.n(s),
+    r = n(735438),
+    o = n.n(r),
+    d = n(475539),
+    c = n(311907),
     u = n(397927),
     m = n(775602),
-    p = n(314098);
-let h = {
+    h = n(314098);
+let x = {
     mass: 10,
     tension: 550,
     friction: 140
 };
 
-function x(e) {
+function p(e) {
     let {
         className: t,
         pageMultiplier: n
-    } = e, r = (0, d.bG)([m.A], () => m.A.useReducedMotion), [s, x] = l.useState({
+    } = e, s = (0, c.bG)([m.A], () => m.A.useReducedMotion), [r, p] = i.useState({
         x: 0,
         y: 0
-    }), g = l.useMemo(() => o().throttle(e => {
-        r || x({
+    }), g = i.useMemo(() => o().throttle(e => {
+        s || p({
             x: (window.innerWidth - e.pageX * n) / 90,
             y: (window.innerHeight - e.pageY * n) / 90
         })
-    }, 20), [n, r]);
-    l.useEffect(() => (window.addEventListener("mousemove", g), () => window.removeEventListener("mousemove", g)), [g]);
-    let [f, b] = (0, u.zhh)(() => ({
+    }, 20), [n, s]);
+    i.useEffect(() => (window.addEventListener("mousemove", g), () => window.removeEventListener("mousemove", g)), [g]);
+    let [_, f] = (0, u.zhh)(() => ({
         x: 0,
         y: 0,
-        config: h
+        config: x
     }));
-    return l.useEffect(() => {
-        b({
-            x: s.x,
-            y: s.y
+    return i.useEffect(() => {
+        f({
+            x: r.x,
+            y: r.y
         })
-    }, [s.x, s.y, b]), (0, a.jsx)(c.animated.div, {
+    }, [r.x, r.y, f]), (0, a.jsx)(d.animated.div, {
         style: {
-            transform: (0, c.to)([f.x, f.y], (e, t) => "translate3d(".concat(e, "px, ").concat(t, "px, 0)"))
+            transform: (0, d.to)([_.x, _.y], (e, t) => `translate3d(${e}px, ${t}px, 0)`)
         },
-        className: i()(p.T, t)
+        className: l()(h.T, t)
     })
 }

@@ -1,117 +1,75 @@
-/** chunk id: 391209, original params: e,t,r (module,exports,require) **/
-r.d(t, {
-    default: () => O
-}), r(896048);
-var n = r(627968),
-    o = r(64700),
-    a = r(503698),
-    s = r.n(a),
-    c = r(397927),
-    i = r(503852),
-    l = r(363487),
-    d = r(998418),
-    u = r(193157),
-    p = r(439156),
-    b = r(568065),
-    f = r(985018),
-    m = r(750845),
-    _ = r(107836);
+/** chunk id: 391209, original params: e,t,a (module,exports,require) **/
+a.d(t, {
+    default: () => k
+});
+var s = a(627968),
+    r = a(64700),
+    n = a(503698),
+    o = a.n(n),
+    c = a(397927),
+    i = a(503852),
+    l = a(363487),
+    d = a(998418),
+    u = a(193157),
+    m = a(439156),
+    _ = a(568065),
+    b = a(985018),
+    p = a(750845),
+    I = a(107836);
 
-function O(e) {
-    var t, r;
+function k(e) {
     let {
-        guildId: a,
-        powerup: O,
-        onClose: I
-    } = e, k = function(e, t) {
-        if (null == e) return {};
-        var r, n, o, a = {};
-        if ("u" > typeof Reflect && Reflect.ownKeys) {
-            for (o = 0, r = Reflect.ownKeys(e); o < r.length; o++) n = r[o], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n]);
-            return a
-        }
-        if (a = function(e, t) {
-                if (null == e) return {};
-                var r, n, o = {},
-                    a = Object.getOwnPropertyNames(e);
-                for (n = 0; n < a.length; n++) r = a[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (o[r] = e[r]);
-                return o
-            }(e, t), Object.getOwnPropertySymbols)
-            for (o = 0, r = Object.getOwnPropertySymbols(e); o < r.length; o++) n = r[o], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n]);
-        return a
-    }(e, ["guildId", "powerup", "onClose"]), [y, j] = o.useState(void 0), T = (0, d.Ay)(a, O), g = T.type === b.b_.TIER_OVERRIDE_ACTIVATED, P = (0, l.A)(a), E = null == T.sourceEntitlement || !P;
-    return (0, i.Z)(a, O, i.q.DETAIL), (0, n.jsxs)(c.EOs, (t = function(e) {
-        for (var t = 1; t < arguments.length; t++) {
-            var r = null != arguments[t] ? arguments[t] : {},
-                n = Object.keys(r);
-            "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-                return Object.getOwnPropertyDescriptor(r, e).enumerable
-            }))), n.forEach(function(t) {
-                var n;
-                n = r[t], t in e ? Object.defineProperty(e, t, {
-                    value: n,
-                    enumerable: !0,
-                    configurable: !0,
-                    writable: !0
-                }) : e[t] = n
-            })
-        }
-        return e
-    }({
+        guildId: t,
+        powerup: a,
+        onClose: n,
+        ...k
+    } = e, [f, T] = r.useState(void 0), N = (0, d.Ay)(t, a), E = N.type === _.b_.TIER_OVERRIDE_ACTIVATED, x = (0, l.A)(t), A = null == N.sourceEntitlement || !x;
+    return (0, i.Z)(t, a, i.q.DETAIL), (0, s.jsxs)(c.EOs, {
         "data-migration-pending": !0,
-        className: m.yl,
-        size: c.rIJ.DYNAMIC
-    }, k), r = r = {
+        className: p.yl,
+        size: c.rIJ.DYNAMIC,
+        ...k,
         parentComponent: "GuildPowerupLevelModal",
-        children: [(0, n.jsxs)(c.$mQ, {
+        children: [(0, s.jsxs)(c.$mQ, {
             "data-migration-pending": !0,
-            className: m._F,
+            className: p._F,
             scrollbarType: "none",
-            children: [(0, n.jsx)("img", {
+            children: [(0, s.jsx)("img", {
                 alt: "",
-                src: _,
-                className: m.v5
-            }), (0, n.jsxs)("div", {
-                className: m.hQ,
-                children: [(0, n.jsx)(c.Heading, {
+                src: I,
+                className: p.v5
+            }), (0, s.jsxs)("div", {
+                className: p.hQ,
+                children: [(0, s.jsx)(c.Heading, {
                     variant: "heading-xl/extrabold",
-                    children: O.title
-                }), (0, n.jsx)(u.A, {
-                    powerup: O
-                }), null != y && (0, n.jsx)(c.Text, {
+                    children: a.title
+                }), (0, s.jsx)(u.A, {
+                    powerup: a
+                }), null != f && (0, s.jsx)(c.Text, {
                     color: "text-feedback-critical",
                     variant: "text-sm/semibold",
-                    children: y
-                }), (0, n.jsxs)("div", {
-                    className: s()(m.qr, {
-                        [m.r9]: E
+                    children: f
+                }), (0, s.jsxs)("div", {
+                    className: o()(p.qr, {
+                        [p.r9]: A
                     }),
-                    children: [!g && P && (0, n.jsx)(p.A, {
-                        guildId: a,
-                        powerup: O,
-                        onError: j,
+                    children: [!E && x && (0, s.jsx)(m.A, {
+                        guildId: t,
+                        powerup: a,
+                        onError: T,
                         grow: !1,
-                        compact: !E
-                    }), (0, n.jsx)(c.Button, {
-                        variant: E ? "secondary" : "primary",
-                        onClick: I,
-                        text: f.intl.string(f.t.cpT0Cq)
+                        compact: !A
+                    }), (0, s.jsx)(c.Button, {
+                        variant: A ? "secondary" : "primary",
+                        onClick: n,
+                        text: b.intl.string(b.t.cpT0Cq)
                     })]
                 })]
             })]
-        }), (0, n.jsx)(c.s_y, {
+        }), (0, s.jsx)(c.s_y, {
             "data-migration-pending": !0,
-            className: m.VN,
-            onClick: I
+            className: p.VN,
+            onClick: n
         })]
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
-        var r = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-            var n = Object.getOwnPropertySymbols(e);
-            r.push.apply(r, n)
-        }
-        return r
-    })(Object(r)).forEach(function(e) {
-        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
-    }), t))
+    })
 }

@@ -1,57 +1,55 @@
-/** chunk id: 700206, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    A: () => d
-}), n(896048);
-var r = n(64700),
-    i = n(311907),
-    a = n(73825),
-    o = n(97352),
-    s = n(166403),
-    l = n(636194),
-    c = n(624456),
-    u = n(652215);
+/** chunk id: 700206, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    A: () => u
+});
+var l = i(64700),
+    n = i(311907),
+    a = i(73825),
+    s = i(97352),
+    r = i(166403),
+    c = i(636194),
+    d = i(624456),
+    o = i(652215);
 
-function d(e) {
-    let t = (0, i.bG)([s.A], () => s.A.getSubscriptions()),
-        n = r.useMemo(() => {
+function u(e) {
+    let t = (0, n.bG)([r.A], () => r.A.getSubscriptions()),
+        i = l.useMemo(() => {
             if (null == t) return {};
             let e = {};
-            for (let n of Object.values(t)) n.type === u.rzx.GUILD && (e[(0, c.M)(n)] = n);
+            for (let i of Object.values(t)) i.type === o.rzx.GUILD && (e[(0, d.M)(i)] = i);
             return e
         }, [t]),
         {
-            activeSubscription: d,
-            activeSubscriptionListing: f
-        } = (0, i.cf)([l.A], () => {
-            var t;
-            let r, i = null,
-                a = null != e ? l.A.getSubscriptionGroupListing(e) : null;
-            for (let e of null != (t = null == a ? void 0 : a.subscription_listings_ids) ? t : []) {
-                let t = l.A.getSubscriptionListing(e),
-                    a = null == t ? void 0 : t.subscription_plans[0].id;
+            activeSubscription: u,
+            activeSubscriptionListing: m
+        } = (0, n.cf)([c.A], () => {
+            let t, l = null,
+                n = null != e ? c.A.getSubscriptionGroupListing(e) : null;
+            for (let e of n?.subscription_listings_ids ?? []) {
+                let n = c.A.getSubscriptionListing(e),
+                    a = n?.subscription_plans[0].id;
                 if (null == a) continue;
-                let o = n[a];
-                if (null != o) {
-                    i = o, r = t;
+                let s = i[a];
+                if (null != s) {
+                    l = s, t = n;
                     break
                 }
             }
             return {
-                activeSubscription: i,
-                activeSubscriptionListing: r
+                activeSubscription: l,
+                activeSubscriptionListing: t
             }
         }),
-        p = null == f ? void 0 : f.subscription_plans[0],
-        _ = null == p ? void 0 : p.id,
-        h = null == p ? void 0 : p.sku_id,
-        m = (0, i.bG)([o.A], () => null != _ ? o.A.get(_) : null),
-        g = null == f ? void 0 : f.soft_deleted;
-    return r.useEffect(() => {
-        null != m || null == h || o.A.isFetchingForSKU(h) || (0, a.ur)(h, void 0, void 0, g)
-    }, [m, h, g]), {
-        activeSubscription: d,
-        activeSubscriptionListing: f,
-        activeSubscriptionPlanFromStore: m
+        x = m?.subscription_plans[0],
+        h = x?.id,
+        g = x?.sku_id,
+        v = (0, n.bG)([s.A], () => null != h ? s.A.get(h) : null),
+        j = m?.soft_deleted;
+    return l.useEffect(() => {
+        null != v || null == g || s.A.isFetchingForSKU(g) || (0, a.ur)(g, void 0, void 0, j)
+    }, [v, g, j]), {
+        activeSubscription: u,
+        activeSubscriptionListing: m,
+        activeSubscriptionPlanFromStore: v
     }
 }

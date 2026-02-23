@@ -1,4 +1,5 @@
 /** chunk id: 15267, original params: e,t,n (module,exports,require) **/
+"use strict";
 e.exports = {
     UJ: "autoThresholdSlider__39fa9",
     B4: "noInputDevicesDetectedWarning__39fa9",

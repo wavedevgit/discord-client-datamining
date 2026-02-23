@@ -1,57 +1,44 @@
 /** chunk id: 627011, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    B6: () => g,
-    bX: () => m,
-    rV: () => p
+    B6: () => m,
+    bX: () => g,
+    rV: () => x
 });
-var r = n(627968),
-    i = n(64700),
+var i = n(627968),
+    s = n(64700),
     l = n(688810),
-    s = n(753838),
+    r = n(753838),
     a = n(695800),
     o = n(652215),
-    c = n(874864),
-    d = n(196647);
+    d = n(874864),
+    c = n(196647);
 
 function u(e) {
     let {
         guild: t,
         guildFeature: n,
         analyticsSection: o,
-        analyticsObject: c,
+        analyticsObject: d,
         getPerks: u,
-        targetPremiumGuildTier: g
+        targetPremiumGuildTier: m
     } = e, {
-        analyticsLocations: m
-    } = (0, l.Ay)(), p = i.useCallback(e => {
+        analyticsLocations: g
+    } = (0, l.Ay)(), x = s.useCallback(e => {
         e.preventDefault(), e.stopPropagation(), (0, a.p_)({
             guild: t,
-            analyticsLocations: m,
+            analyticsLocations: g,
             analyticsSection: o,
-            analyticsObject: c,
+            analyticsObject: d,
             perks: u(),
-            targetPremiumGuildTier: g
+            targetPremiumGuildTier: m
         })
-    }, [m, c, o, t, u, g]);
-    return (0, r.jsx)(s.A, {
+    }, [g, d, o, t, u, m]);
+    return (0, i.jsx)(r.A, {
         guild: t,
         guildFeature: n,
-        className: d.M,
-        onClick: p
-    })
-}
-
-function g(e) {
-    let {
-        guild: t
-    } = e;
-    return (0, r.jsx)(u, {
-        guild: t,
-        guildFeature: o.GuildFeatures.BANNER,
-        analyticsSection: o.JJy.GUILD_BANNER,
-        analyticsObject: o.ZSU.BADGE,
-        getPerks: c.QR
+        className: c.M,
+        onClick: x
     })
 }
 
@@ -59,25 +46,38 @@ function m(e) {
     let {
         guild: t
     } = e;
-    return (0, r.jsx)(u, {
+    return (0, i.jsx)(u, {
+        guild: t,
+        guildFeature: o.GuildFeatures.BANNER,
+        analyticsSection: o.JJy.GUILD_BANNER,
+        analyticsObject: o.ZSU.BADGE,
+        getPerks: d.QR
+    })
+}
+
+function g(e) {
+    let {
+        guild: t
+    } = e;
+    return (0, i.jsx)(u, {
         guild: t,
         guildFeature: o.GuildFeatures.INVITE_SPLASH,
         analyticsSection: o.JJy.GUILD_INVITE_BACKGROUND,
         analyticsObject: o.ZSU.BADGE,
-        getPerks: c.Lp
+        getPerks: d.Lp
     })
 }
 
-function p(e) {
+function x(e) {
     let {
         guild: t
     } = e;
-    return (0, r.jsx)(u, {
+    return (0, i.jsx)(u, {
         guild: t,
         guildFeature: o.GuildFeatures.VANITY_URL,
         analyticsSection: o.JJy.GUILD_SETTINGS_VANITY_URL,
         analyticsObject: o.ZSU.BADGE,
-        getPerks: c.DU,
+        getPerks: d.DU,
         targetPremiumGuildTier: o.TVA.TIER_3
     })
 }
