@@ -22,7 +22,9 @@ function m() {
         }, [s, t]),
         x = i.useCallback(e => {
             m(e), n && t(e)
-        }, [n, t]);
+        }, [n, t]),
+        p = (0, o.i)(e => e.showSelfActivity),
+        g = (0, o.i)(e => e.setShowSelfActivity);
     return (0, a.jsx)("div", {
         className: l()(c.nd, u.n),
         children: (0, a.jsxs)("div", {
@@ -39,6 +41,10 @@ function m() {
                 value: s,
                 onChange: x,
                 disabled: !n
+            }), (0, a.jsx)(r.dOG, {
+                label: "Show own voice activity (bypass self check)",
+                checked: p,
+                onChange: g
             })]
         })
     })

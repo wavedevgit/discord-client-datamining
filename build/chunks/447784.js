@@ -25,15 +25,15 @@ let x = e => {
             selectedSkuId: T
         } = e,
         [I, g] = i.useState(null),
-        A = i.useCallback(e => {
+        j = i.useCallback(e => {
             g(e)
         }, []),
-        j = i.useMemo(() => ({
+        A = i.useMemo(() => ({
             current: I
         }), [I]),
         {
             isHoveringOrFocusing: f
-        } = (0, u.A)(j),
+        } = (0, u.A)(A),
         M = !P && f,
         {
             product: R
@@ -52,7 +52,7 @@ let x = e => {
         size: "small"
     })), (0, l.jsx)(o.vN3, {
         children: (0, l.jsxs)(o.sqX, {
-            ref: A,
+            ref: j,
             "aria-label": R.name ?? "",
             onClick: () => {
                 null == s || null == S || P || S(s)

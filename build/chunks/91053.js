@@ -36,8 +36,8 @@ function _(e) {
     s = s ?? P;
     let {
         variant: g,
-        text: A,
-        onClick: j,
+        text: j,
+        onClick: A,
         disabled: f
     } = h({
         onStepChange: t,
@@ -50,14 +50,14 @@ function _(e) {
         isNextDisabled: x
     }), M = i.useMemo(() => null != n && c.includes(n) ? [{
         variant: g,
-        text: A,
-        onClick: j,
+        text: j,
+        onClick: A,
         disabled: f
     }] : [{
         variant: "primary",
         text: E.intl.string(E.t.XqMe3N),
         disabled: !0
-    }], [g, A, j, f, n, c]);
+    }], [g, j, A, f, n, c]);
     return (0, l.jsx)(r.H7u, {
         leading: d && null != u ? (0, l.jsx)(p.A, {
             onClick: u

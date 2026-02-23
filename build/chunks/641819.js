@@ -30,13 +30,13 @@ function I(e) {
         step: I
     } = (0, h.P5)(), {
         setSelectedGiftingPromotionReward: g,
-        selectedGiftingPromotionReward: A,
-        claimableRewards: j
-    } = (0, _.Pv)(), f = (0, a.bG)([E.default], () => E.default.getCurrentUser()), M = (0, a.bG)([p.A], () => p.A.getGiftPromotionRewardSkuIds()), R = (0, c.U)(j, A), [C, y] = i.useState(R), [N, v] = i.useState(!1);
+        selectedGiftingPromotionReward: j,
+        claimableRewards: A
+    } = (0, _.Pv)(), f = (0, a.bG)([E.default], () => E.default.getCurrentUser()), M = (0, a.bG)([p.A], () => p.A.getGiftPromotionRewardSkuIds()), R = (0, c.U)(A, j), [C, y] = i.useState(R), [N, v] = i.useState(!1);
     i.useEffect(() => {
-        N || null != A || null == R || (g(R), y(R))
-    }, [R, N, A, g]), r()(null != n, "Expected plan to selected"), r()(null != s, "Expected selectedSkuId"), r()(null != I, "Step should be set");
-    let O = i.useMemo(() => null != C && (j ?? []).includes(C), [C, j]),
+        N || null != j || null == R || (g(R), y(R))
+    }, [R, N, j, g]), r()(null != n, "Expected plan to selected"), r()(null != s, "Expected selectedSkuId"), r()(null != I, "Step should be set");
+    let O = i.useMemo(() => null != C && (A ?? []).includes(C), [C, A]),
         b = i.useMemo(() => 0 === M.length || null == C || !O, [M, C, O]);
     i.useEffect(() => {
         if (0 === M.length) {
@@ -50,7 +50,7 @@ function I(e) {
         },
         w = M.map(e => (0, l.jsx)(d.k, {
             skuId: e,
-            claimed: null != j && !j.includes(e),
+            claimed: null != A && !A.includes(e),
             user: f,
             onSelect: k,
             selectedSkuId: C

@@ -22,8 +22,8 @@ var l = n(627968),
     T = n(203982),
     I = n(45938),
     g = n(615396),
-    A = n(937008),
-    j = n(156312),
+    j = n(937008),
+    A = n(156312),
     f = n(491057),
     M = n(482132),
     R = n(877156),
@@ -45,15 +45,15 @@ function O(e) {
         {
             activeSubscription: L,
             paymentSources: G,
-            paymentSourceId: H,
-            selectedPlan: F,
+            paymentSourceId: F,
+            selectedPlan: H,
             selectedSkuId: B,
             step: W,
             updatedSubscription: K,
             startingPremiumSubscriptionPlanIdRef: z,
             startingFractionalPremiumEndsAtRef: V,
             isPremiumGroupPurchase: Z
-        } = (0, j.P5)(),
+        } = (0, A.P5)(),
         {
             isGift: q,
             giftRecipient: Y,
@@ -63,20 +63,20 @@ function O(e) {
             sendGiftMessage: $,
             claimableRewards: ee,
             selectedGiftingPromotionReward: et
-        } = (0, A.Pv)(),
+        } = (0, j.Pv)(),
         {
             confirmationFooter: en
         } = (0, f.cG)(),
-        el = (0, _.px)(F, q, ee),
-        ei = (0, _.Mq)(F),
+        el = (0, _.px)(H, q, ee),
+        ei = (0, _.Mq)(H),
         es = (0, m.Mv)(et, !1),
         er = (0, u.bG)([x.A], () => {
             let e = x.A.getMarketingComponentByType(o.C.GIFT_REMINDER_NAGBAR);
             return null == e || "giftReminderNagbar" !== e.properties.properties.oneofKind ? null : e.properties.properties.giftReminderNagbar
         }),
-        ea = (0, C.g)(G, H),
+        ea = (0, C.g)(G, F),
         eo = q && null != et && null != es && ei;
-    r()(null != F, "Expected plan to selected"), r()(null != B, "Expected selectedSkuId"), r()(null != W, "Step should be set");
+    r()(null != H, "Expected plan to selected"), r()(null != B, "Expected selectedSkuId"), r()(null != W, "Step should be set");
     let eu = i.useCallback(() => {
         s(), b?.()
     }, [s, b]);
@@ -130,21 +130,21 @@ function O(e) {
         })
     }, [er, el]);
     let ed = null != D ? P.Rs.DEEPLINK_TO_DESKTOP_APP : void 0;
-    if (null != k) t = k(F, eu, K);
+    if (null != k) t = k(H, eu, K);
     else if (q) t = (0, l.jsx)(P.fw, {
-        planId: F.id,
+        planId: H.id,
         onClose: eu
     });
     else {
-        let e = z.current === F.id ? {
+        let e = z.current === H.id ? {
             postSuccessGuild: w
         } : {
             followupSKUInfo: U,
             startingPremiumSubscriptionPlanId: z.current,
-            isDowngrade: null != L && (0, g.vT)(L, F.id, O)
+            isDowngrade: null != L && (0, g.vT)(L, H.id, O)
         };
         t = (0, l.jsx)(P.Ay, {
-            planId: F.id,
+            planId: H.id,
             onClose: eu,
             paymentSourceType: ea,
             hideClose: null != en,

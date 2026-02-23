@@ -26,8 +26,8 @@ function g(e) {
     let {
         rewardSkuId: t,
         onClose: n
-    } = e, g = (0, s.bG)([x.default], () => x.default.getCurrentUser()), A = (0, s.bG)([o.A], () => o.A.useReducedMotion), {
-        analyticsLocations: j
+    } = e, g = (0, s.bG)([x.default], () => x.default.getCurrentUser()), j = (0, s.bG)([o.A], () => o.A.useReducedMotion), {
+        analyticsLocations: A
     } = (0, u.Ay)(), f = a._3J.SIZE_32, {
         product: M,
         isFetching: R
@@ -51,12 +51,12 @@ function g(e) {
     } : (0, p.T)(N) ? {
         isNameplateReward: !1,
         nameplateData: null,
-        rewardDeco: (0, d.A)(N.asset, f, !A)
+        rewardDeco: (0, d.A)(N.asset, f, !j)
     } : {
         isNameplateReward: !1,
         nameplateData: null,
         rewardDeco: void 0
-    }, [N, f, A]);
+    }, [N, f, j]);
     return (0, l.jsx)(P.UX, {
         children: (0, l.jsx)(r.jlY, {
             children: (0, l.jsxs)("div", {
@@ -76,7 +76,7 @@ function g(e) {
                 }) : (0, l.jsx)(a.JsQ, {
                     "aria-label": g?.username,
                     size: f,
-                    src: g?.getAvatarURL(void 0, (0, a.FT9)(f), !A),
+                    src: g?.getAvatarURL(void 0, (0, a.FT9)(f), !j),
                     avatarDecoration: b
                 }), (0, l.jsx)(r.$nd, {
                     variant: "primary",
@@ -86,7 +86,7 @@ function g(e) {
                         null != M && (n(), (0, E.A)({
                             product: M,
                             shouldShowPromotionalExperience: !0,
-                            analyticsLocations: j,
+                            analyticsLocations: A,
                             purchaseType: S.gs.PROMOTIONAL
                         }))
                     }

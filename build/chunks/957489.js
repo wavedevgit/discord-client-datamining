@@ -32,7 +32,7 @@ function x(e) {
     } = (0, d.P5)(), {
         isGift: T,
         claimableRewards: I
-    } = (0, u.Pv)(), g = T && null != I && I.length > 0, A = (0, s.V)(n);
+    } = (0, u.Pv)(), g = T && null != I && I.length > 0, j = (0, s.V)(n);
     return (0, l.jsx)(P, {
         selectSku: e => (function(e) {
             let {
@@ -72,7 +72,7 @@ function x(e) {
             setSelectedSkuId: i,
             handleStepChange: t,
             isGift: T,
-            userTrialOffer: A,
+            userTrialOffer: j,
             startedPaymentFlowWithPaymentSources: a.current,
             setSelectedPlanId: _,
             defaultPlanId: x
@@ -108,7 +108,9 @@ function P(e) {
         priceOptions: s,
         showPromotionalGiftBanner: u,
         onSelectPremiumGroup: d
-    } = e, c = (0, r.PA)() && !n;
+    } = e, c = (0, r.FY)({
+        isGift: n
+    });
     return (0, l.jsxs)(l.Fragment, {
         children: [(0, l.jsx)(i.rQ0, {
             titleTextVariant: "heading-lg/semibold",
