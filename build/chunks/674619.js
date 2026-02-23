@@ -206,7 +206,7 @@ let H = function() {
             renderStep: () => (0, l.jsx)(A.A, {})
         }, {
             key: S.pn.REVIEW,
-            renderStep: e => (0, l.jsx)(M._M, {
+            renderStep: e => (0, l.jsx)(M._, {
                 ...e
             }),
             options: {

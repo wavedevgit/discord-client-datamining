@@ -1,6 +1,6 @@
 /** chunk id: 480191, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => w
+    A: () => D
 });
 var i = n(627968),
     l = n(64700),
@@ -33,14 +33,14 @@ var i = n(627968),
     R = n(381941),
     P = n(985018),
     M = n(780247),
-    D = n(278664);
+    w = n(278664);
 
-function w(e) {
+function D(e) {
     let {
         embedUrl: t,
         message: n,
         channel: r
-    } = e, w = l.useRef(null), k = l.useRef(null), O = (0, j.D)(t, n), {
+    } = e, D = l.useRef(null), k = l.useRef(null), O = (0, j.D)(t, n), {
         setPopout: U
     } = (0, f.A)(n.id, R.Fd), G = (0, x.VL)(n, r, U, !0), B = I.kt.useSetting(), F = (0, y.j)(), [H, V] = l.useState(!1), [W, q] = l.useState(O?.coverImage == null), Y = (0, o.bG)([b.Ay, T.default], () => b.Ay.isMember(O?.guildId, T.default.getCurrentUser()?.id), [O]), z = (0, o.bG)([b.Ay], () => O?.authorId != null ? b.Ay.getMember(O.guildId, O.authorId) : null), K = (0, m.A)(z?.avatarDecoration != null ? z?.avatarDecoration : O?.user?.avatarDecoration), [Q, J, X] = l.useMemo(() => [z?.colorString ?? "inherit", z?.colorStrings ?? null, z?.colorRoleId], [z]), Z = (0, C.gn)(z?.guildId, O?.authorId ?? void 0, J), {
         reducedMotion: $
@@ -77,7 +77,7 @@ function w(e) {
             onMouseEnter: en,
             onMouseLeave: ei,
             children: [!W && (!0 === O.shouldShowBlurredThumbnailImage ? (0, i.jsx)("img", {
-                src: D,
+                src: w,
                 alt: P.intl.string(P.t.rIbh8H),
                 className: a()(M.xn, {
                     [M.p6]: O.shouldSpoiler
@@ -179,7 +179,7 @@ function w(e) {
                                 colorStrings: Z,
                                 className: M.fh
                             }) : (0, i.jsx)(E.A, {
-                                targetElementRef: w,
+                                targetElementRef: D,
                                 userId: O.authorId,
                                 guildId: O.guildId,
                                 channelId: r.id,
@@ -189,7 +189,7 @@ function w(e) {
                                 newAnalyticsLocations: [u.A.USERNAME],
                                 children: e => (0, i.jsx)(c.V30, {
                                     ...e,
-                                    ref: w,
+                                    ref: D,
                                     name: O.authorName,
                                     colorString: Q,
                                     colorStrings: Z,

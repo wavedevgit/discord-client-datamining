@@ -39,8 +39,8 @@ function L(e) {
         P = (0, C.wr)(e.quest),
         M = !0 === e.showShareLink && (0, b.E0)(e.quest.config),
         {
-            handleComplete: D,
-            handleProgress: w,
+            handleComplete: w,
+            handleProgress: D,
             handleResetDismissibilityClick: k,
             handleResetStatusClick: O,
             handleOverrideDeliveryClick: U
@@ -167,12 +167,12 @@ function L(e) {
                 id: "progress",
                 label: j.intl.string(j.t.cKSLr4),
                 action: () => {
-                    w(.9 * Math.random() + .03)
+                    D(.9 * Math.random() + .03)
                 }
             }), (0, i.jsx)(a.Drp, {
                 id: "complete",
                 label: j.intl.string(j.t.jQEfRT),
-                action: D
+                action: w
             }), (0, I.g5)(e.quest) && (0, i.jsxs)(a.Drp, {
                 id: "console",
                 label: "Console Heartbeat",

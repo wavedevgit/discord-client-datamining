@@ -83,8 +83,8 @@ function v(e) {
         showAuthButton: R,
         startAuthorization: P,
         accountLinkButtonRef: M,
-        renderAccountLinkUpsell: D
-    } = e, w = (0, s.bG)([g.A], () => g.A.getMessages(a.id)), {
+        renderAccountLinkUpsell: w
+    } = e, D = (0, s.bG)([g.A], () => g.A.getMessages(a.id)), {
         actions: k,
         hasAccountLinkButton: O
     } = l.useMemo(() => {
@@ -102,7 +102,7 @@ function v(e) {
                     })
                 }
             }] : null != b && (e = [b], i = !1), e.length > 0)
-            if (!(0, x.p)(t.id, w, n.id, j)) return {
+            if (!(0, x.p)(t.id, D, n.id, j)) return {
                 actions: [],
                 hasAccountLinkButton: !1
             };
@@ -122,7 +122,7 @@ function v(e) {
             actions: e,
             hasAccountLinkButton: l
         }
-    }, [p, h, b, w, j, n.id, t.id, R, P, L, M]), U = k.some(e => e.trackingArea === u.kY.CLOUD_PLAY);
+    }, [p, h, b, D, j, n.id, t.id, R, P, L, M]), U = k.some(e => e.trackingArea === u.kY.CLOUD_PLAY);
     (0, f.A)(U, L);
     let G = k.length > 0,
         B = l.useMemo(() => (0, i.jsx)(o.Text, {
@@ -161,6 +161,6 @@ function v(e) {
                 messageId: t.id,
                 isDeadEnd: !0
             }
-        }), O ? D() : null]
+        }), O ? w() : null]
     })
 }

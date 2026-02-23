@@ -19,7 +19,7 @@ var a = l(627968),
     g = l(749226);
 let y = [{
         key: i.pn.REVIEW,
-        renderStep: e => (0, a.jsx)(u._M, {
+        renderStep: e => (0, a.jsx)(u._, {
             ...e
         }),
         options: {

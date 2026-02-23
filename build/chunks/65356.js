@@ -1,65 +1,65 @@
 /** chunk id: 65356, original params: e,l,t (module,exports,require) **/
 t.d(l, {
-    b: () => r
+    b: () => d
 });
 var n = t(64700),
     s = t(59520),
-    a = t(954571),
-    i = t(652215);
+    i = t(954571),
+    a = t(652215);
 
-function d(e, l, t, n) {
+function r(e, l, t, n) {
     let {
         scrollTop: s = 0,
-        scrollOffset: i = 0,
-        scrollHeight: d = 0,
-        scrollWidth: r = 0
+        scrollOffset: a = 0,
+        scrollHeight: r = 0,
+        scrollWidth: d = 0
     } = n;
-    if (d > 0) {
-        let n = (s + i) / d;
+    if (r > 0) {
+        let n = (s + a) / r;
         if (n > 0) {
             let {
                 sessionId: s,
-                guildId: i,
+                guildId: a,
                 pageIndex: o,
                 pageTitle: c,
                 isUserGuildMember: u,
-                pageHasLeaderboard: g
+                pageHasLeaderboard: _
             } = l;
-            a.default.track(e, {
+            i.default.track(e, {
                 slayer_storefront_session_id: s,
-                guild_id: i,
+                guild_id: a,
                 page_index: o,
                 page_title: c,
                 is_user_guild_member: u,
-                page_has_leaderboard: g,
+                page_has_leaderboard: _,
                 scroll_visible_percent: n,
-                page_height: Math.round(d),
-                page_width: Math.round(r),
+                page_height: Math.round(r),
+                page_width: Math.round(d),
                 location_stack: t
             })
         }
     }
 }
-let r = (e, l, t) => {
-    let a = n.useRef(l);
+let d = (e, l, t) => {
+    let i = n.useRef(l);
     n.useEffect(() => {
-        a.current = l
+        i.current = l
     }, [l]);
-    let r = (0, s.I)(d, 5e3, [], {
+    let d = (0, s.I)(r, 5e3, [], {
         trailing: !0
     });
     return {
         handleScroll: n.useCallback(() => {
             if (null != e.current) {
                 let l = e.current.getScrollerNode(),
-                    n = a.current;
-                null != l && r(i.HAw.SLAYER_STOREFRONT_PAGE_SCROLLED, n, t, {
+                    n = i.current;
+                null != l && d(a.HAw.SLAYER_STOREFRONT_PAGE_SCROLLED, n, t, {
                     scrollTop: l.scrollTop,
                     scrollOffset: l.offsetHeight,
                     scrollHeight: l.scrollHeight,
                     scrollWidth: l.scrollWidth
                 })
             }
-        }, [r, t, e])
+        }, [d, t, e])
     }
 }

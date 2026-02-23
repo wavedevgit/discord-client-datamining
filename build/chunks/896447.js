@@ -4,10 +4,10 @@ t.d(l, {
 });
 var n = t(627968),
     s = t(64700),
-    a = t(397927),
-    i = t(439303),
-    d = t(183802),
-    r = t(205830),
+    i = t(397927),
+    a = t(439303),
+    r = t(183802),
+    d = t(205830),
     o = t(770887);
 
 function c(e) {
@@ -16,26 +16,26 @@ function c(e) {
         applicationId: t,
         guildId: c,
         sectionTitle: u,
-        skuIds: g,
-        variant: _ = d.s.SMALL
+        skuIds: _,
+        variant: g = r.s.SMALL
     } = e, p = s.useMemo(() => ({
         pageSection: l,
         pageSectionTitle: u
     }), [l, u]);
-    return null == g || 0 === g.length ? null : (0, n.jsx)(i.E9, {
+    return null == _ || 0 === _.length ? null : (0, n.jsx)(a.E9, {
         newValue: p,
         children: (0, n.jsxs)("div", {
             className: o.h,
-            children: [null != u && u.length > 0 && (0, n.jsx)(a.Heading, {
+            children: [null != u && u.length > 0 && (0, n.jsx)(i.Heading, {
                 variant: "heading-lg/semibold",
                 color: "text-strong",
                 lineClamp: 1,
                 className: o.G,
                 children: u
-            }), (0, n.jsx)(r.$, {
+            }), (0, n.jsx)(d.$, {
                 applicationId: t,
-                skuIds: g,
-                variant: _,
+                skuIds: _,
+                variant: g,
                 guildId: c
             })]
         })

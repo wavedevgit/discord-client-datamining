@@ -35,14 +35,14 @@ function E(e) {
         thumbnailHeight: y,
         descriptionTextVariant: N = "text-sm/normal",
         showOpaqueBackground: j = !1
-    } = e, L = (0, l.bG)([c.A], () => c.A.getGuild(n), [n]), R = (0, l.bG)([d.A], () => d.A.getRole(n, t?.role_id ?? C.dJq)), P = (0, a.R)(t, 600), M = (0, g.z)(t), D = (0, _.BB)(L), {
-        shouldHideGuildPurchaseEntryPoints: w
+    } = e, L = (0, l.bG)([c.A], () => c.A.getGuild(n), [n]), R = (0, l.bG)([d.A], () => d.A.getRole(n, t?.role_id ?? C.dJq)), P = (0, a.R)(t, 600), M = (0, g.z)(t), w = (0, _.BB)(L), {
+        shouldHideGuildPurchaseEntryPoints: D
     } = (0, o.MH)(n), k = (0, g.X)(t), O = (0, x.A)({
         guildId: n,
         guildProductListingId: t.id,
         sourceAnalyticsLocations: E
     });
-    if (null == L || w) return null;
+    if (null == L || D) return null;
     let U = () => (0, f.M)({
             guildId: n,
             guildProductListingId: t.id,
@@ -51,13 +51,13 @@ function E(e) {
         G = (0, i.jsx)(A.i, {
             product: t,
             guildId: n,
-            showEditProduct: D,
+            showEditProduct: w,
             showUnpublishProduct: !1,
             showCopyLink: !0,
             showTestDownload: !1,
             showDeleteProduct: !1,
             showReportProduct: !0,
-            onEditProduct: D ? () => {
+            onEditProduct: w ? () => {
                 h.q(L.id, t.id)
             } : () => {},
             onUnpublishProduct: () => {},

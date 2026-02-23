@@ -1,23 +1,23 @@
 /** chunk id: 793885, original params: e,l,t (module,exports,require) **/
 t.d(l, {
-    m: () => d
+    m: () => r
 });
 var n = t(627968),
     s = t(371794),
-    a = t(871123),
-    i = t(881421);
+    i = t(871123),
+    a = t(881421);
 
-function d(e) {
+function r(e) {
     let {
         applicationId: l,
         backgroundImageAssetId: t
-    } = e, d = null != t ? (0, s.YE)(l, t, 1024, a.pV) : null;
+    } = e, r = null != t ? (0, s.YE)(l, t, 1024, i.pV) : null;
     return (0, n.jsx)("div", {
-        className: i._,
-        children: null != d ? (0, n.jsx)("div", {
-            className: i.i,
+        className: a._,
+        children: null != r ? (0, n.jsx)("div", {
+            className: a.i,
             style: {
-                backgroundImage: `url(${d})`
+                backgroundImage: `url(${r})`
             }
         }) : null
     })

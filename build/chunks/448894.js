@@ -40,13 +40,13 @@ function b(e) {
             analyticsLocations: P
         } = (0, u.Ay)(c.A.INVITE_EMBED),
         M = null != r && r.target_type === C.yV.STREAM && null != r.target_user && null != L,
-        D = null != r && null != R && null != r.channel && null != r.guild && R.channelId === r.channel.id && R.guildId === r.guild.id;
+        w = null != r && null != R && null != r.channel && null != r.guild && R.channelId === r.channel.id && R.guildId === r.guild.id;
     a()(null != r, "Invite cannot be null");
     let {
-        target_type: w,
+        target_type: D,
         target_user: k
     } = r;
-    a()(w === C.yV.STREAM && null != k, "invalid streaming invite");
+    a()(D === C.yV.STREAM && null != k, "invalid streaming invite");
     let O = b === k.id,
         U = r.state === f.elq.ACCEPTING,
         G = l.useCallback(() => {
@@ -66,7 +66,7 @@ function b(e) {
     let F = null != r.channel ? (0, m.OY)(r.channel) : null,
         H = A.Ay.getName(k),
         V = "active";
-    B && !D ? n = O ? E.intl.string(E.t.oBLoZJ) : E.intl.formatToPlainString(E.t["0QJmA+"], {
+    B && !w ? n = O ? E.intl.string(E.t.oBLoZJ) : E.intl.formatToPlainString(E.t["0QJmA+"], {
         name: H
     }) : (t = E.intl.string(E.t.I6JG46), V = "active", M && (t = E.intl.string(E.t.Q1W99y), V = "secondary"), n = O ? E.intl.string(E.t["4hyaHu"]) : E.intl.formatToPlainString(E.t.QmlLEq, {
         name: H
@@ -84,13 +84,13 @@ function b(e) {
                 className: I.iH,
                 children: [(0, i.jsx)(_.A.Icon, {
                     guild: T,
-                    onClick: B && D ? G : void 0
+                    onClick: B && w ? G : void 0
                 }), (0, i.jsx)(_.A.Info, {
                     title: n,
-                    onClick: B && D ? G : void 0,
+                    onClick: B && w ? G : void 0,
                     children: W
                 })]
-            }), D ? (0, i.jsx)(s.$nd, {
+            }), w ? (0, i.jsx)(s.$nd, {
                 onClick: G,
                 loading: U,
                 disabled: M,

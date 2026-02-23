@@ -44,7 +44,7 @@ let C = [{
     renderStep: () => (0, r.jsx)(A.A, {})
 }, {
     key: u.pn.REVIEW,
-    renderStep: e => (0, r.jsx)(x._M, {
+    renderStep: e => (0, r.jsx)(x._, {
         ...e
     })
 }, {

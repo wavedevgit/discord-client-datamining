@@ -33,8 +33,8 @@ var i = n(627968),
     R = n(927813),
     P = n(403362),
     M = n(218394),
-    D = n(255345),
-    w = n(652215),
+    w = n(255345),
+    D = n(652215),
     k = n(360469),
     O = n(768349),
     U = n(985018),
@@ -95,7 +95,7 @@ let F = l.memo(function(e) {
             application: J
         }),
         Z = null == V,
-        $ = (0, D.I3)({
+        $ = (0, w.I3)({
             embeddedActivity: V,
             joinability: X,
             currentEmbeddedActivity: W,
@@ -104,7 +104,7 @@ let F = l.memo(function(e) {
         ee = l.useId(),
         et = null != q && q.isLaunching && q.componentId === ee,
         en = async () => {
-            j.default.track(w.HAw.ACTIVITY_INSTANCE_EMBED_CLICKED, {
+            j.default.track(D.HAw.ACTIVITY_INSTANCE_EMBED_CLICKED, {
                 application_id: n.id,
                 channel_id: r,
                 channel_type: M?.type,
@@ -125,7 +125,7 @@ let F = l.memo(function(e) {
                 componentId: ee
             })
         }, ei = $.disabled ? U.intl.string(U.t.JBnc7N) : U.intl.string(U.t.cX9uLZ), el = (0, I.F)(J, () => {
-            j.default.track(w.HAw.ACTIVITY_INSTANCE_EMBED_CLICKED, {
+            j.default.track(D.HAw.ACTIVITY_INSTANCE_EMBED_CLICKED, {
                 application_id: n.id,
                 channel_id: r,
                 channel_type: M?.type,

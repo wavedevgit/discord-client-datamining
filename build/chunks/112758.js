@@ -10,10 +10,10 @@ n.d(t, {
     T0: () => N,
     UY: () => k,
     U_: () => H,
-    VL: () => D,
+    VL: () => w,
     Yq: () => M,
     m: () => S,
-    r4: () => w,
+    r4: () => D,
     ri: () => U,
     yp: () => G
 }), n(938796);
@@ -99,7 +99,7 @@ function M(e, t) {
     return L(T("interactionAvatarProfile", e, t))
 }
 
-function D(e, t, r, o) {
+function w(e, t, r, o) {
     let {
         id: d
     } = t, {
@@ -143,7 +143,7 @@ function D(e, t, r, o) {
     }, [A, d, u, r, f, o])
 }
 
-function w(e, t) {
+function D(e, t) {
     return l.useCallback(n => {
         let i = p.default.getUser(e),
             l = _.A.getChannel(t);
