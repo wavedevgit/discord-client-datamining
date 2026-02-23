@@ -9,7 +9,7 @@ import { asset } from '../utils/requests.js';
 export default async function getLibDiscore(build: Build): Promise<void> {
     const { id } = build.libdiscore.match(
         /[\w_]+\.exports(\s+|)=(\s+|)[\w_]+\.v\([\w_]+,(\s+|)[\w_]+\.id,(\s+|)"(?<id>[a-f0-9]{16})",(\s+|){/,
-    ).groups;
+    )?.groups || { id: null };
     if (!id) {
         console.log('no libdiscore wasm file found');
         return;
