@@ -1,7 +1,7 @@
 /** chunk id: 802246, original params: e,t,i (module,exports,require) **/
 i.d(t, {
-    A: () => $,
-    s: () => X
+    A: () => K,
+    s: () => Q
 });
 var n = i(627968),
     s = i(64700),
@@ -103,7 +103,7 @@ function G() {
                 [U.e6]: e
             }),
             children: Array.from({
-                length: (0, L.Yu)(e)
+                length: (0, L.KQ)(e)
             }, e ? (e, t) => (0, n.jsx)(M.O, {}, `placeholder-${t}`) : (e, t) => (0, n.jsx)(w.A, {
                 cardSize: x.Y.SMALL
             }, `placeholder-${t}`))
@@ -111,7 +111,7 @@ function G() {
     })
 }
 
-function Y(e) {
+function D(e) {
     let {
         lastItem: t,
         remainingCount: i,
@@ -153,7 +153,7 @@ function Y(e) {
     }, `overflow-${t.item.skuId}`)
 }
 
-function D(e) {
+function Y(e) {
     let {
         items: t,
         hasOverflow: i,
@@ -241,7 +241,7 @@ function D(e) {
                         source: s
                     }, t)
                 }, i.skuId)
-            }), i && (0, n.jsx)(Y, {
+            }), i && (0, n.jsx)(D, {
                 lastItem: r,
                 remainingCount: o,
                 giftRecipient: c,
@@ -262,7 +262,7 @@ function z(e) {
         defaultWishlistId: h
     } = e, {
         analyticsLocations: g
-    } = (0, m.Ay)(c.A.WISHLIST_BANNER), C = (0, j.G)("wishlist_banner"), A = (0, L.Yu)(C), {
+    } = (0, m.Ay)(c.A.WISHLIST_BANNER), C = (0, j.G)("wishlist_banner"), A = (0, L.KQ)(C), {
         theme: x,
         primaryColor: w,
         secondaryColor: T
@@ -288,10 +288,10 @@ function z(e) {
             source: i
         } = e;
         return i === L.uS.POPULAR && (0, k.$)(t)
-    }) ? "SOCIAL_LAYER_STOREFRONT_RECOMMENDATIONS_ONLY" : "SHOP_ONLY", [a, A, d]), P = v.Ay.getName(t), Y = B[H], z = r?.getBannerURL({
+    }) ? "SOCIAL_LAYER_STOREFRONT_RECOMMENDATIONS_ONLY" : "SHOP_ONLY", [a, A, d]), P = v.Ay.getName(t), D = B[H], z = r?.getBannerURL({
         canAnimate: !1,
         size: 713
-    }), X = a > A, $ = s.useMemo(() => X ? d.slice(0, A - 1) : d, [d, X, A]), q = (0, E.bc)($, t), Q = X ? d[A - 1] : null, Z = a - A + 1, [V, J] = s.useState(!1), K = s.useCallback(e => {
+    }), Q = a > A, K = s.useMemo(() => Q ? d.slice(0, A - 1) : d, [d, Q, A]), X = (0, E.bc)(K, t), $ = Q ? d[A - 1] : null, q = a - A + 1, [Z, V] = s.useState(!1), J = s.useCallback(e => {
         if (e && !M && d.length > 0) {
             let e = d.map(e => {
                 let {
@@ -309,9 +309,9 @@ function z(e) {
                     } = e;
                     return t.skuProductLine
                 })))
-            }), J(!0)
+            }), V(!0)
         }
-    }, [M, d, t.id, g]), ee = (0, o.K)(K, void 0, !M && !V), {
+    }, [M, d, t.id, g]), ee = (0, o.K)(J, void 0, !M && !Z), {
         includedTypes: et,
         includedSources: ei
     } = s.useMemo(() => ({
@@ -345,23 +345,23 @@ function z(e) {
             disableAdaptiveTheme: !0,
             children: e => (0, n.jsxs)(n.Fragment, {
                 children: [(0, n.jsx)(F, {
-                    title: Y.title,
-                    subtitle: Y.getSubtitle(P),
+                    title: D.title,
+                    subtitle: D.getSubtitle(P),
                     themeClass: e,
                     renderOfferNotice: en
                 }), (0, n.jsx)("div", {
                     className: e,
-                    children: M || 0 === d.length ? (0, n.jsx)(G, {}) : (0, n.jsx)(D, {
-                        items: $,
-                        hasOverflow: X,
-                        overflowItem: Q,
-                        overflowCount: Z,
-                        showIcons: Y.showIcons,
+                    children: M || 0 === d.length ? (0, n.jsx)(G, {}) : (0, n.jsx)(Y, {
+                        items: K,
+                        hasOverflow: Q,
+                        overflowItem: $,
+                        overflowCount: q,
+                        showIcons: D.showIcons,
                         giftRecipient: t,
                         defaultWishlistId: h,
                         onOpenWishlist: y,
                         onWishlistItemClick: i,
-                        tooltipConfigs: q,
+                        tooltipConfigs: X,
                         analyticsLocations: g,
                         totalUnownedWishlistItems: a,
                         includedTypes: et,
@@ -373,7 +373,7 @@ function z(e) {
     })
 }
 
-function X(e) {
+function Q(e) {
     let {
         giftRecipient: t,
         onWishlistItemClick: i
@@ -385,7 +385,7 @@ function X(e) {
         defaultWishlistId: c
     } = (0, b.r)({
         userId: t.id,
-        numItems: (0, L.Yu)(r),
+        numItems: (0, L.KQ)(r),
         source: L.B5.USER_PROFILE,
         location: "Wishlist Banner New Recommendations"
     }), m = s.useMemo(() => o.map(e => ({
@@ -407,7 +407,7 @@ function X(e) {
         defaultWishlistId: c
     })
 }
-let $ = function(e) {
+let K = function(e) {
     let {
         giftRecipient: t,
         onWishlistItemClick: i
@@ -418,7 +418,7 @@ let $ = function(e) {
         defaultWishlistId: d
     } = (0, T.A)({
         user: t,
-        numItems: (0, L.Yu)(s),
+        numItems: (0, L.KQ)(s),
         location: "Wishlist Banner"
     });
     return (0, n.jsx)(z, {

@@ -33,8 +33,8 @@ var l = n(627968),
     U = n(557404),
     O = n(535973),
     G = n(125117),
-    F = n(652215),
-    w = n(895867),
+    w = n(652215),
+    F = n(895867),
     L = n(985018),
     b = n(488494),
     k = n(416001);
@@ -82,7 +82,7 @@ function j(e) {
     return Array.from(e).sort()
 }
 let V = (0, a.throttle)(e => {
-    (0, N.Y)(F.uss.FRIENDS, {
+    (0, N.Y)(w.uss.FRIENDS, {
         locked: S.default.isInstanceLocked(),
         shownUserIds: e.shownUserIds,
         liveUserIds: e.liveUserIds,
@@ -213,7 +213,7 @@ function Y(e) {
         eN = i.useMemo(() => {
             let e = e => {
                 let t = f.A.getStatus(e);
-                return t !== F.clD.ONLINE && t !== F.clD.IDLE && t !== F.clD.DND
+                return t !== w.clD.ONLINE && t !== w.clD.IDLE && t !== w.clD.DND
             };
             if (ec) return [{
                 kind: "EMPTY_STATE",
@@ -229,7 +229,7 @@ function Y(e) {
                 t.push({
                     kind: "FAVORITES",
                     key: "FAVORITES",
-                    title: L.intl.string(w.default.GKTlS6),
+                    title: L.intl.string(F.default.GKTlS6),
                     count: eo.length,
                     rows: n,
                     length: Math.max(n.length, 1)
@@ -281,7 +281,7 @@ function Y(e) {
                 t.push({
                     kind: "IN_GAME",
                     key: "IN_GAME",
-                    title: L.intl.string(w.default.trKJoT),
+                    title: L.intl.string(F.default.trKJoT),
                     count: e.length,
                     rows: n,
                     length: Math.max(n.length, 1)
@@ -415,7 +415,7 @@ function Y(e) {
                     closeParentPopout: H,
                     isSuggestion: "SUGGESTIONS" === r.kind,
                     shouldHighlightIfRecentlyAdded: "FAVORITES" === r.kind,
-                    appContext: F.BRT.OVERLAY,
+                    appContext: w.BRT.OVERLAY,
                     onPrimaryAction: t,
                     onContextMenu: n,
                     onFriendVisible: b,

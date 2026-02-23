@@ -1,6 +1,6 @@
 /** chunk id: 180720, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    T: () => b
+    T: () => k
 }), n(321073);
 var l = n(627968),
     i = n(64700),
@@ -26,19 +26,20 @@ var l = n(627968),
     C = n(179917),
     y = n(419072),
     x = n(294809),
-    M = n(554932),
-    v = n(406595),
-    D = n(557404),
-    R = n(652215),
-    U = n(895867),
-    O = n(985018),
-    G = n(416001);
+    M = n(316541),
+    v = n(554932),
+    D = n(406595),
+    R = n(557404),
+    U = n(652215),
+    O = n(895867),
+    G = n(985018),
+    w = n(416001);
 
 function F(e) {
     return Array.from(e).sort()
 }
-let w = (0, r.throttle)(e => {
-    (0, T.Y)(R.uss.FRIENDS, {
+let L = (0, r.throttle)(e => {
+    (0, T.Y)(U.uss.FRIENDS, {
         locked: p.default.isInstanceLocked(),
         shownUserIds: e.shownUserIds,
         liveUserIds: e.liveUserIds,
@@ -49,64 +50,69 @@ let w = (0, r.throttle)(e => {
     trailing: !1
 });
 
-function L(e) {
+function b(e) {
     let t = 0x811c9dc5;
     for (let n = 0; n < e.length; n += 1) t ^= e.charCodeAt(n), t = Math.imul(t, 0x1000193);
     return t >>> 0
 }
 
-function b() {
+function k() {
     let {
         onPrimaryAction: e,
         onContextMenu: t
-    } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, [n, r] = i.useState(""), p = n.trim().toLowerCase(), [R, b] = i.useState(() => new Set), k = (0, a.bG)([y.A], () => y.A.getCollapsedSectionOverridesForTab(_.x.VOICE), []), P = (0, h.qZ)(), j = i.useMemo(() => {
+    } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, [n, r] = i.useState(""), p = n.trim().toLowerCase(), [U, k] = i.useState(() => new Set), P = (0, a.bG)([y.A], () => y.A.getCollapsedSectionOverridesForTab(_.x.VOICE), []), j = (0, h.qZ)(), V = i.useMemo(() => {
         let e = new Map;
-        for (let t of P) e.set(t.channel.id, t.voiceStates);
+        for (let t of j) e.set(t.channel.id, t.voiceStates);
         return e
-    }, [P]), V = i.useCallback(e => {
-        b(t => {
+    }, [j]), H = i.useCallback(e => {
+        k(t => {
             let n = new Set(t);
             return n.has(e) ? n.delete(e) : n.add(e), n
         })
-    }, []), H = i.useCallback(e => {
-        (0, M.G)({
+    }, []), Y = i.useCallback(e => {
+        (0, v.G)({
             tab: _.x.VOICE,
             sectionKey: e
         })
-    }, []), Y = i.useMemo(() => new Set(P.map(e => e.channel.id)), [P]), [W, z] = i.useState([]);
-    (0, d.RT)(n, P, z, h.MV);
-    let $ = i.useRef(null),
-        B = (0, o.A)("friends-widget-voice", $),
-        [K, X] = (0, a.bG)([v.A], () => v.A.getFavoriteTargetIdsForTab(_.x.VOICE), [], N.D),
-        Z = i.useMemo(() => K.filter(e => Y.has(e)), [K, Y]),
+    }, []), W = i.useMemo(() => new Set(j.map(e => e.channel.id)), [j]), [z, $] = i.useState([]);
+    (0, d.RT)(n, j, $, h.MV);
+    let B = i.useRef(null),
+        K = (0, o.A)("friends-widget-voice", B),
+        [X, Z] = (0, a.bG)([D.A], () => D.A.getFavoriteTargetIdsForTab(_.x.VOICE), [], N.D),
+        Q = i.useMemo(() => X.filter(e => W.has(e)), [X, W]),
         {
-            friendVoiceChannelIds: Q,
-            recentVoiceChannelIds: J
+            friendVoiceChannelIds: J,
+            recentVoiceChannelIds: q
         } = (0, h.S4)(),
-        q = i.useMemo(() => Q.filter(e => Y.has(e)), [Q, Y]),
-        ee = i.useMemo(() => J.filter(e => Y.has(e)), [J, Y]),
-        et = (0, a.bG)([E.A], () => E.A.getVoiceChannelId(), []),
-        en = (0, a.bG)([A.A], () => A.A.affinities.filter(e => (e.score ?? 0) > 0).slice(0, 2).map(e => e.guildId), []),
-        el = i.useMemo(() => {
+        ee = i.useMemo(() => J.filter(e => W.has(e)), [J, W]),
+        et = i.useMemo(() => q.filter(e => W.has(e)), [q, W]),
+        en = (0, a.bG)([E.A], () => E.A.getVoiceChannelId(), []),
+        el = (0, a.bG)([M.A], () => M.A.getActiveNowChannelIds({
+            kind: M.u.Voice
+        }), []),
+        ei = (0, a.bG)([A.A], () => A.A.affinities.filter(e => (e.score ?? 0) > 0).slice(0, 2).map(e => e.guildId), []),
+        er = i.useMemo(() => {
             let e, t, n, l;
-            return t = String((e = new Date).getDate()).padStart(2, "0"), n = String(e.getMonth() + 1).padStart(2, "0"), l = String(e.getFullYear() % 100).padStart(2, "0"), L(`${t}${n}${l}`)
+            return t = String((e = new Date).getDate()).padStart(2, "0"), n = String(e.getMonth() + 1).padStart(2, "0"), l = String(e.getFullYear() % 100).padStart(2, "0"), b(`${t}${n}${l}`)
         }, []),
-        ei = i.useMemo(() => new Set(K), [K]),
-        er = i.useMemo(() => q.filter(e => !ei.has(e)), [q, ei]),
-        es = i.useMemo(() => ee.filter(e => !ei.has(e)), [ee, ei]),
-        ea = i.useMemo(() => {
+        es = i.useMemo(() => new Set(X), [X]),
+        ea = i.useMemo(() => ee.filter(e => !es.has(e)), [ee, es]),
+        eu = i.useMemo(() => et.filter(e => !es.has(e)), [et, es]),
+        eo = i.useMemo(() => new Set(ea), [ea]),
+        ed = i.useMemo(() => el.filter(e => !es.has(e) && !eo.has(e) && W.has(e)), [el, es, eo, W]),
+        ec = i.useMemo(() => {
             let e = [],
                 t = new Set,
                 n = n => {
-                    null == n || !Y.has(n) || ei.has(n) || t.has(n) || (t.add(n), e.push(n))
+                    null == n || !W.has(n) || es.has(n) || t.has(n) || (t.add(n), e.push(n))
                 };
-            for (let t of (null != et && I.A.getChannel(et)?.isVocal() && n(et), es)) {
+            for (let t of (null != en && I.A.getChannel(en)?.isVocal() && n(en), eu)) {
                 if (e.length >= 8) break;
                 n(t)
             }
-            let l = new Set(en),
-                i = new Set([...ei, ...er]),
-                r = P.filter(e => {
+            let l = new Set(ei),
+                i = new Set([...es, ...ea]),
+                r = j.filter(e => {
                     let n = e.channel;
                     if (!n?.isVocal?.()) return !1;
                     let r = n.getGuildId?.() ?? null;
@@ -116,7 +122,7 @@ function b() {
                     return {
                         channelId: e.channel.id,
                         voiceUserCount: e.voiceStates?.length ?? 0,
-                        shuffle: (t = e.channel.id, L(`${el}:${t}`))
+                        shuffle: (t = e.channel.id, b(`${er}:${t}`))
                     }
                 }),
                 s = r.filter(e => e.voiceUserCount > 0),
@@ -126,47 +132,32 @@ function b() {
                 n(t.channelId)
             }
             return e
-        }, [P, Y, et, ei, er, es, el, en]),
-        eu = i.useMemo(() => {
-            let e = e => !0 === k[e],
+        }, [j, W, en, es, ea, eu, er, ei]),
+        eh = i.useMemo(() => {
+            let e = e => !0 === P[e],
                 t = e => (e.voiceStates?.length ?? 0) > 0,
                 n = [];
             if ("" !== p) return n.push({
                 kind: "SEARCH_RESULTS",
                 key: "SEARCH_RESULTS",
-                title: O.intl.string(U.default.DUIbKP),
-                count: W.length,
-                rows: W.map(e => ({
+                title: G.intl.string(O.default.DUIbKP),
+                count: z.length,
+                rows: z.map(e => ({
                     channelId: e.channel.id,
                     voiceStates: e.voiceStates
                 })),
-                length: W.length
+                length: z.length
             }), n;
-            if (Z.length > 0 && X > 0) {
-                let l = Z.map(e => ({
+            if (Q.length > 0 && Z > 0) {
+                let l = Q.map(e => ({
                         channelId: e,
-                        voiceStates: j.get(e)
+                        voiceStates: V.get(e)
                     })),
                     i = e("FAVORITES") ? l.filter(t) : l;
                 n.push({
                     kind: "FAVORITES",
                     key: "FAVORITES",
-                    title: O.intl.string(U.default.OskevP),
-                    count: l.length,
-                    rows: i,
-                    length: Math.max(i.length, 1)
-                })
-            }
-            if (er.length > 0) {
-                let l = er.map(e => ({
-                        channelId: e,
-                        voiceStates: j.get(e)
-                    })),
-                    i = e("FRIENDS_IN_VOICE") ? l.filter(t) : l;
-                n.push({
-                    kind: "FRIENDS_IN_VOICE",
-                    key: "FRIENDS_IN_VOICE",
-                    title: O.intl.string(U.default["C+ojiQ"]),
+                    title: G.intl.string(O.default.OskevP),
                     count: l.length,
                     rows: i,
                     length: Math.max(i.length, 1)
@@ -175,61 +166,91 @@ function b() {
             if (ea.length > 0) {
                 let l = ea.map(e => ({
                         channelId: e,
-                        voiceStates: j.get(e)
+                        voiceStates: V.get(e)
+                    })),
+                    i = e("FRIENDS_IN_VOICE") ? l.filter(t) : l;
+                n.push({
+                    kind: "FRIENDS_IN_VOICE",
+                    key: "FRIENDS_IN_VOICE",
+                    title: G.intl.string(O.default["C+ojiQ"]),
+                    count: l.length,
+                    rows: i,
+                    length: Math.max(i.length, 1)
+                })
+            }
+            if (ed.length > 0) {
+                let l = ed.map(e => ({
+                        channelId: e,
+                        voiceStates: V.get(e)
+                    })),
+                    i = e("ACTIVE_NOW") ? l.filter(t) : l;
+                n.push({
+                    kind: "ACTIVE_NOW",
+                    key: "ACTIVE_NOW",
+                    title: G.intl.string(O.default.eiie2x),
+                    count: l.length,
+                    rows: i,
+                    length: Math.max(i.length, 1)
+                })
+            }
+            if (ec.length > 0) {
+                let l = ec.map(e => ({
+                        channelId: e,
+                        voiceStates: V.get(e)
                     })),
                     i = e("SUGGESTED_VOICE_CHANNELS") ? l.filter(t) : l;
                 n.push({
                     kind: "SUGGESTED_VOICE_CHANNELS",
                     key: "SUGGESTED_VOICE_CHANNELS",
-                    title: O.intl.string(U.default["9ME4wE"]),
+                    title: G.intl.string(O.default["9ME4wE"]),
                     count: l.length,
                     rows: i,
                     length: Math.max(i.length, 1)
                 })
             }
             return n
-        }, [k, p, Z, X, er, W, ea, j]),
-        eo = i.useMemo(() => eu.map(e => e.length), [eu]),
-        ed = i.useCallback(e => {
-            for (let t = 0; t < eu.length; t += 1) {
-                let n = eu[t].rows.findIndex(t => t.channelId === e);
+        }, [P, p, Q, Z, ed, ea, z, ec, V]),
+        eg = i.useMemo(() => eh.map(e => e.length), [eh]),
+        eI = i.useCallback(e => {
+            for (let t = 0; t < eh.length; t += 1) {
+                let n = eh[t].rows.findIndex(t => t.channelId === e);
                 if (-1 !== n) return {
                     section: t,
                     row: n
                 }
             }
             return null
-        }, [eu]),
-        ec = i.useCallback(() => {
-            let e = eu.findIndex(e => "FAVORITES" === e.kind);
+        }, [eh]),
+        eA = i.useCallback(() => {
+            let e = eh.findIndex(e => "FAVORITES" === e.kind);
             return -1 === e ? null : {
                 section: e,
                 row: void 0
             }
-        }, [eu]);
-    (0, D.$)({
-        scrollerRef: $,
-        favoriteTargetIds: Z,
-        getScrollTargetForTargetId: e => ed(e),
-        getFallbackScrollTarget: ec,
+        }, [eh]);
+    (0, R.$)({
+        scrollerRef: B,
+        favoriteTargetIds: Q,
+        getScrollTargetForTargetId: e => eI(e),
+        getFallbackScrollTarget: eA,
         padding: 8,
         animate: !1
     });
-    let eh = (0, T.Dk)(() => {
+    let ef = (0, T.Dk)(() => {
             let e = new Set;
-            for (let t of eu)
+            for (let t of eh)
                 for (let n of t.rows) e.add(n.channelId);
             return e
-        }, [eu]),
+        }, [eh]),
         {
-            shownUserIds: eg,
-            liveUserIds: eI
+            shownUserIds: eE,
+            liveUserIds: em
         } = (0, a.cf)([I.A, g.A], () => {
             let e = new Map;
-            for (let t of P) e.set(t.channel.id, t.voiceStates);
+            for (let t of j) e.set(t.channel.id, t.voiceStates);
             let t = new Set,
                 n = new Set;
-            for (let l of eh) {
+            for (let l of ef) {
                 let i = I.A.getChannel(l),
                     r = i?.getGuildId?.() ?? i?.guild_id ?? null;
                 for (let i of function(e, t) {
@@ -245,23 +266,23 @@ function b() {
                 shownUserIds: t,
                 liveUserIds: n
             }
-        }, [eh, P]),
-        eA = (0, T.Dk)(() => eg, [eg]),
-        ef = (0, T.Dk)(() => eI, [eI]);
+        }, [ef, j]),
+        eS = (0, T.Dk)(() => eE, [eE]),
+        ep = (0, T.Dk)(() => em, [em]);
     i.useEffect(() => {
-        (0 !== eA.size || 0 !== ef.size) && w({
-            shownUserIds: F(eA),
-            liveUserIds: F(ef)
+        (0 !== eS.size || 0 !== ep.size) && L({
+            shownUserIds: F(eS),
+            liveUserIds: F(ep)
         })
-    }, [eA, ef]);
-    let eE = i.useCallback(e => eu[e], [eu]),
-        em = i.useCallback(e => {
+    }, [eS, ep]);
+    let eN = i.useCallback(e => eh[e], [eh]),
+        eT = i.useCallback(e => {
             let {
                 section: t
-            } = e, n = eE(t);
+            } = e, n = eN(t);
             if (null == n) return null;
             let i = "SEARCH_RESULTS" !== n.kind,
-                r = i && !0 === k[n.key];
+                r = i && !0 === P[n.key];
             return (0, l.jsxs)(l.Fragment, {
                 children: [(0, l.jsx)(u.AC4, {
                     children: n.title
@@ -270,55 +291,55 @@ function b() {
                     count: n.count,
                     isCollapsed: r,
                     canCollapse: i,
-                    onToggle: () => H(n.key)
+                    onToggle: () => Y(n.key)
                 })]
             })
-        }, [k, eE, H]),
-        eS = i.useCallback(n => {
-            let i = eE(n.section);
+        }, [P, eN, Y]),
+        e_ = i.useCallback(n => {
+            let i = eN(n.section);
             if (null == i) return null;
             let r = i.rows[n.row];
             if (null == r) return null;
             let s = `${i.key}:${r.channelId}`,
-                a = R.has(r.channelId);
+                a = U.has(r.channelId);
             return (0, l.jsx)(x.C, {
                 channelId: r.channelId,
                 listItemId: s,
                 voiceStates: r.voiceStates,
                 isExpanded: a,
-                onToggleExpanded: V,
+                onToggleExpanded: H,
                 shouldHighlightIfRecentlyAdded: "FAVORITES" === i.kind,
                 onPrimaryAction: e,
                 onContextMenu: t
             }, s)
-        }, [R, eE, t, e, V]),
-        ep = i.useCallback(() => 40, []),
-        eN = i.useCallback((e, t) => {
-            let n = eE(e);
+        }, [U, eN, t, e, H]),
+        eC = i.useCallback(() => 40, []),
+        ey = i.useCallback((e, t) => {
+            let n = eN(e);
             if (null == n) return 50;
             if (0 === n.rows.length) return 0;
             let l = n.rows[t];
-            if (null == l || !R.has(l.channelId)) return 50;
+            if (null == l || !U.has(l.channelId)) return 50;
             let i = I.A.getChannel(l.channelId),
                 r = Math.min((null != i ? S.Ay.getVoiceStatesForChannel(i) : []).length, 25);
             return r <= 0 ? 50 : 50 + (32 * r + (r - 1) * 2 + 8)
-        }, [R, eE]),
-        eT = i.useCallback(e => {
-            r(e), $.current?.scrollToTop()
+        }, [U, eN]),
+        ex = i.useCallback(e => {
+            r(e), B.current?.scrollToTop()
         }, []);
     return (0, l.jsxs)("div", {
-        className: G.kL,
+        className: w.kL,
         children: [(0, l.jsx)("div", {
-            className: G.MT,
+            className: w.MT,
             children: (0, l.jsx)(u.IWV, {
                 query: n,
-                onChange: eT,
+                onChange: ex,
                 onClear: () => r(""),
-                placeholder: O.intl.string(U.default.OV3KfO),
+                placeholder: G.intl.string(O.default.OV3KfO),
                 size: "md"
             })
         }), (0, l.jsx)(s.hD, {
-            navigator: B,
+            navigator: K,
             children: (0, l.jsx)(s.PR, {
                 children: e => {
                     let {
@@ -329,17 +350,17 @@ function b() {
                     return (0, l.jsx)(u.skg, {
                         children: e => (0, l.jsx)(u.B8B, {
                             innerRole: n,
-                            innerAriaLabel: O.intl.string(O.t.OGiMXJ),
+                            innerAriaLabel: G.intl.string(G.t.OGiMXJ),
                             ref: e => {
-                                $.current = e, t.current = e?.getScrollerNode() ?? null
+                                B.current = e, t.current = e?.getScrollerNode() ?? null
                             },
-                            className: G.p_,
-                            sectionHeight: ep,
-                            rowHeight: eN,
+                            className: w.p_,
+                            sectionHeight: eC,
+                            rowHeight: ey,
                             sidebarHeight: 0,
-                            renderSection: em,
-                            renderRow: eS,
-                            sections: eo,
+                            renderSection: eT,
+                            renderRow: e_,
+                            sections: eg,
                             paddingBottom: 8,
                             ...i,
                             ...e

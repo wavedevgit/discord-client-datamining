@@ -95,7 +95,7 @@ function v(e) {
             channel: t,
             user: R ?? void 0
         })
-    }, [t, p, R]), F = t.isMultiUserDM() || t.isPrivate() && t.recipients.length >= 2, w = i.useCallback(() => {
+    }, [t, p, R]), w = t.isMultiUserDM() || t.isPrivate() && t.recipients.length >= 2, F = i.useCallback(() => {
         I?.({
             type: N.c.OPEN_TEXT_CHAT_CHANNEL,
             channelId: _,
@@ -107,7 +107,7 @@ function v(e) {
         leftIndicator: (0, l.jsx)(o.A, {
             unread: h
         }),
-        onClick: w,
+        onClick: F,
         onContextMenu: G,
         avatar: (0, l.jsx)(m.h, {
             channel: t,
@@ -138,7 +138,7 @@ function v(e) {
             })
         }) : null,
         rightActions: e => (0, l.jsxs)(l.Fragment, {
-            children: [u > 0 ? x(u) : null, e && F ? (0, l.jsx)(S.j, {
+            children: [u > 0 ? x(u) : null, e && w ? (0, l.jsx)(S.j, {
                 tab: f.x.MESSAGES,
                 targetId: _
             }) : null]
@@ -163,10 +163,10 @@ function D(e) {
         U = (0, C.X6)(n),
         O = (0, C.DL)(n),
         G = (0, d.A)(n, !1),
-        F = (0, s.rdh)(s.LU0.colors.TEXT_STRONG),
-        w = (0, s.rdh)(s.LU0.colors.TEXT_MUTED),
+        w = (0, s.rdh)(s.LU0.colors.TEXT_STRONG),
+        F = (0, s.rdh)(s.LU0.colors.TEXT_MUTED),
         L = I || g > 0 ? "text-strong" : "text-muted",
-        b = I || g > 0 ? F : w,
+        b = I || g > 0 ? w : F,
         k = i.useCallback(e => {
             _?.({
                 type: N.K.GUILD_TEXT_CHANNEL,

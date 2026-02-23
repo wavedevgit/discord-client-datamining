@@ -33,8 +33,8 @@ var l = n(627968),
     U = n(557404),
     O = n(652215),
     G = n(895867),
-    F = n(985018),
-    w = n(416001);
+    w = n(985018),
+    F = n(416001);
 
 function L(e) {
     return Array.from(e).sort()
@@ -144,7 +144,7 @@ function P() {
             if ("" !== c) return n.push({
                 kind: "SEARCH_RESULTS",
                 key: "SEARCH_RESULTS",
-                title: F.intl.string(G.default.HGimIS),
+                title: w.intl.string(G.default.HGimIS),
                 count: E.length,
                 channelIds: E.map(e => e.channel.id),
                 length: E.length
@@ -154,7 +154,7 @@ function P() {
                 n.push({
                     kind: "FAVORITES",
                     key: "FAVORITES",
-                    title: F.intl.string(G.default.GKTlS6),
+                    title: w.intl.string(G.default.GKTlS6),
                     count: O.length,
                     channelIds: l,
                     length: Math.max(l.length, 1)
@@ -166,7 +166,7 @@ function P() {
                 n.push({
                     kind: "ACTIVE_NOW",
                     key: "ACTIVE_NOW",
-                    title: F.intl.string(G.default.d3yO98),
+                    title: w.intl.string(G.default.d3yO98),
                     count: t.length,
                     channelIds: l,
                     length: Math.max(l.length, 1)
@@ -178,7 +178,7 @@ function P() {
                 n.push({
                     kind: "DMS",
                     key: "DMS",
-                    title: F.intl.string(F.t.YUU0RF),
+                    title: w.intl.string(w.t.YUU0RF),
                     count: l.length,
                     channelIds: i,
                     length: Math.max(i.length, 1)
@@ -190,7 +190,7 @@ function P() {
                 n.push({
                     kind: "TEXT_CHANNELS",
                     key: "TEXT_CHANNELS",
-                    title: F.intl.string(G.default.uC6Lhg),
+                    title: w.intl.string(G.default.uC6Lhg),
                     count: l.length,
                     channelIds: i,
                     length: Math.max(i.length, 1)
@@ -316,14 +316,14 @@ function P() {
             d(e), p.current?.scrollToTop()
         }, []);
     return (0, l.jsxs)("div", {
-        className: w.kL,
+        className: F.kL,
         children: [(0, l.jsx)("div", {
-            className: w.MT,
+            className: F.MT,
             children: (0, l.jsx)(u.IWV, {
                 query: r,
                 onChange: es,
                 onClear: () => d(""),
-                placeholder: F.intl.string(G.default["xB/0Z9"]),
+                placeholder: w.intl.string(G.default["xB/0Z9"]),
                 size: "md"
             })
         }), (0, l.jsx)(s.hD, {
@@ -338,11 +338,11 @@ function P() {
                     return (0, l.jsx)(u.skg, {
                         children: e => (0, l.jsx)(u.B8B, {
                             innerRole: n,
-                            innerAriaLabel: F.intl.string(F.t.OIgYlQ),
+                            innerAriaLabel: w.intl.string(w.t.OIgYlQ),
                             ref: e => {
                                 p.current = e, t.current = e?.getScrollerNode() ?? null
                             },
-                            className: w.p_,
+                            className: F.p_,
                             sectionHeight: ei,
                             rowHeight: er,
                             sidebarHeight: 0,

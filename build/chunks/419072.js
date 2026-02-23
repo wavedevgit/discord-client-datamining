@@ -13,7 +13,9 @@ let a = new Set(Object.values(r.x)),
             FRIEND_REQUESTS: !0,
             OFFLINE: !0
         },
-        [r.x.MESSAGES]: {},
+        [r.x.MESSAGES]: {
+            FAVORITES: !0
+        },
         [r.x.VOICE]: {}
     },
     o = {

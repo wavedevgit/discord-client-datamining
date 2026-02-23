@@ -126,8 +126,8 @@ let C = r.memo(function(e) {
                 }
             })(),
             G = 0 === (n = null != (t = o?.name ?? "") ? t.replace(/[-_]+/g, " ").replace(/'s /g, " ").replace(/\w+/g, e => e[0]).replace(/\s/g, "") : "").length ? "?" : n.slice(0, 3),
-            F = (0, c.Rb)(h),
-            w = (0, i.jsxs)("div", {
+            w = (0, c.Rb)(h),
+            F = (0, i.jsxs)("div", {
                 className: a()(I.zr, l),
                 role: "img",
                 style: {
@@ -149,11 +149,11 @@ let C = r.memo(function(e) {
                     }) : (0, i.jsx)("div", {
                         className: a()(I.TT, I.q9),
                         style: {
-                            fontSize: T(M, F),
+                            fontSize: T(M, w),
                             width: v,
                             height: v
                         },
-                        children: F
+                        children: w
                     })
                 }), (0, i.jsx)("div", {
                     className: a()(I._C, p[u], s),
@@ -227,7 +227,7 @@ let C = r.memo(function(e) {
                     height: L,
                     overflow: "visible",
                     mask: `url(#${x})`,
-                    children: w
+                    children: F
                 })]
             }), (0, i.jsx)("div", {
                 className: I.RL,
@@ -240,5 +240,5 @@ let C = r.memo(function(e) {
                     typingFillColor: y
                 })
             })]
-        }) : w
+        }) : F
     }

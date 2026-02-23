@@ -50,7 +50,7 @@ function L(e) {
                 width: 136
             }
         }
-    }), []), L = (0, _.Yu)(x), T = C === L - 1 && g > L, b = g - L + 1, O = s.useCallback(() => {
+    }), []), L = (0, _.KQ)(x), T = C === L - 1 && g > L, b = g - L + 1, O = s.useCallback(() => {
         if (T) return void r();
         let e = c === _.uS.WISHLIST ? "wishlist" : "shop";
         u.default.track(S.HAw.GIFTING_ITEM_CLICKED, {

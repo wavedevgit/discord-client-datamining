@@ -2,7 +2,7 @@
 n.d(t, {
     Ay: () => $,
     Dz: () => P,
-    MV: () => F,
+    MV: () => w,
     S4: () => b,
     qZ: () => k
 }), n(321073);
@@ -43,7 +43,7 @@ let G = e => [e.userId, ... function(e) {
             l = (0, A.jP)(t);
         return Array.from(new Set([n, l.nick, ...Object.values(l.names)].flat().filter(v.Vq)))
     }(e)],
-    F = {
+    w = {
         searchType: E.n.FUZZY,
         sortType: E.r.JARO_WINKLER,
         searchStringGenerator: e => {
@@ -55,7 +55,7 @@ let G = e => [e.userId, ... function(e) {
         },
         throttleMs: 100
     },
-    w = {
+    F = {
         searchType: E.n.FUZZY,
         sortType: E.r.JARO_WINKLER,
         searchStringGenerator: G,
@@ -66,7 +66,7 @@ let G = e => [e.userId, ... function(e) {
             channel: t,
             query: n
         } = e, [r] = (0, a.bG)([M.A], () => [M.A.getVoiceStatesForChannel(t.id), M.A.getVoiceStateVersion()], [t.id], D.D), [s, d] = i.useState([]);
-        (0, m.RT)(n, Object.values(r), d, w);
+        (0, m.RT)(n, Object.values(r), d, F);
         let c = (0, a.yK)([M.A, x.default, S.A, y.A], () => Object.values(M.A.getVoiceStatesForChannel(t.id)).map(e => x.default.getUser(e.userId)).filter(v.Vq).sort((e, t) => {
                 if (s.length > 0 && "" !== n.trim()) {
                     if (s.some(t => t.userId === e.id)) return -1;
@@ -319,7 +319,7 @@ function $(e) {
         onSelect: r,
         allAvailableChannelRows: s
     } = e, [a, u] = i.useState(""), [d, c] = i.useState([]);
-    (0, m.RT)(a, s, c, F);
+    (0, m.RT)(a, s, c, w);
     let h = i.useCallback(e => {
             "Escape" === e.key && n()
         }, [n]),

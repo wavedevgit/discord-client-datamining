@@ -33,8 +33,8 @@ var l = n(627968),
     U = n(616356),
     O = n(734057),
     G = n(71393),
-    F = n(290863),
-    w = n(222823),
+    w = n(290863),
+    F = n(222823),
     L = n(309010),
     b = n(461213),
     k = n(287809),
@@ -162,10 +162,10 @@ function J(e) {
         applicationStream: R,
         isMobile: O,
         newStatus: G
-    } = (0, a.cf)([F.A, U.A], () => {
-        let e = F.A.getStatus(t.id),
+    } = (0, a.cf)([w.A, U.A], () => {
+        let e = w.A.getStatus(t.id),
             l = U.A.getAnyStreamForUser(t.id),
-            i = F.A.isMobileOnline(t.id),
+            i = w.A.isMobileOnline(t.id),
             r = (0, d.A)(n ?? []) ? $.clD.STREAMING : e;
         return {
             status: e,
@@ -173,9 +173,9 @@ function J(e) {
             isMobile: i,
             newStatus: r
         }
-    }, [t.id, n]), w = x.length > 0, L = i.useCallback(e => {
-        E?.(N, e, w)
-    }, [E, N, w]), k = (0, s.K)(L), P = i.useCallback(() => {
+    }, [t.id, n]), F = x.length > 0, L = i.useCallback(e => {
+        E?.(N, e, F)
+    }, [E, N, F]), k = (0, s.K)(L), P = i.useCallback(() => {
         if (null != r) {
             let e = r.traits,
                 t = {
@@ -249,9 +249,9 @@ function J(e) {
 }
 
 function q(e) {
-    return (0, a.bG)([O.A, w.Ay], () => {
+    return (0, a.bG)([O.A, F.Ay], () => {
         let t = O.A.getDMFromUserId(e) ?? null;
-        return null != t && w.Ay.hasUnread(t)
+        return null != t && F.Ay.hasUnread(t)
     }, [e])
 }
 let ee = i.memo(e => {
@@ -278,8 +278,8 @@ let ee = i.memo(e => {
         isMobile: R,
         newStatus: U,
         status: G,
-        renderSubtext: F,
-        renderUserContextMenu: w
+        renderSubtext: w,
+        renderUserContextMenu: F
     } = J({
         user: t,
         activities: n,
@@ -330,7 +330,7 @@ let ee = i.memo(e => {
         isVisuallyOffline: el,
         recentlyAddedTimestampMs: f ? ei : null,
         onClick: et,
-        onContextMenu: w,
+        onContextMenu: F,
         avatar: (0, l.jsx)(o.euF, {
             ...y,
             size: X,
@@ -355,7 +355,7 @@ let ee = i.memo(e => {
                 disableGuildProfile: !0
             })]
         }),
-        secondaryText: F(),
+        secondaryText: w(),
         rightActions: e => e ? (0, l.jsxs)(l.Fragment, {
             children: [(0, l.jsx)(u.m_, {
                 text: B.intl.string(B.t.iXAna6),
@@ -421,9 +421,9 @@ let et = i.memo(e => {
     }), U = q(t.id), O = (0, N.A)({
         userId: t.id,
         guildId: null
-    }), G = P.Ay.useName(null, null, t), [F, w] = i.useState(!1), L = i.useRef(null), b = i.useCallback(() => {
-        w(!0), null != L.current && clearTimeout(L.current), L.current = setTimeout(() => {
-            w(!1), L.current = null
+    }), G = P.Ay.useName(null, null, t), [w, F] = i.useState(!1), L = i.useRef(null), b = i.useCallback(() => {
+        F(!0), null != L.current && clearTimeout(L.current), L.current = setTimeout(() => {
+            F(!1), L.current = null
         }, 2e3)
     }, []);
     i.useEffect(() => () => {
@@ -436,29 +436,29 @@ let et = i.memo(e => {
             })
         }, [h, t.id]),
         j = i.useCallback(e => {
-            e.preventDefault(), e.stopPropagation(), F || (b(), h?.({
+            e.preventDefault(), e.stopPropagation(), w || (b(), h?.({
                 type: W.c.ACCEPT_FRIEND_REQUEST,
                 userId: t.id
             }))
-        }, [t.id, h, F, b]),
+        }, [t.id, h, w, b]),
         H = i.useCallback(e => {
-            e.preventDefault(), e.stopPropagation(), F || (b(), h?.({
+            e.preventDefault(), e.stopPropagation(), w || (b(), h?.({
                 type: W.c.DECLINE_FRIEND_REQUEST,
                 userId: t.id
             }))
-        }, [t.id, h, F, b]),
+        }, [t.id, h, w, b]),
         z = i.useCallback(e => {
-            e.preventDefault(), e.stopPropagation(), F || (b(), h?.({
+            e.preventDefault(), e.stopPropagation(), w || (b(), h?.({
                 type: W.c.CANCEL_FRIEND_REQUEST,
                 userId: t.id
             }))
-        }, [t.id, h, F, b]),
+        }, [t.id, h, w, b]),
         Z = i.useCallback(e => {
-            e.preventDefault(), e.stopPropagation(), F || (b(), h?.({
+            e.preventDefault(), e.stopPropagation(), w || (b(), h?.({
                 type: W.c.SEND_FRIEND_REQUEST,
                 userId: t.id
             }))
-        }, [t.id, h, F, b]),
+        }, [t.id, h, w, b]),
         Q = n.some(e => {
             let {
                 type: t
@@ -512,7 +512,7 @@ let et = i.memo(e => {
                         variant: "secondary",
                         icon: o.A9s,
                         onClick: j,
-                        disabled: F
+                        disabled: w
                     })
                 }), (0, l.jsx)(u.m_, {
                     text: B.intl.string(B.t.ytCpKs),
@@ -522,7 +522,7 @@ let et = i.memo(e => {
                         variant: "secondary",
                         icon: o.PGe,
                         onClick: H,
-                        disabled: F
+                        disabled: w
                     })
                 })]
             }) : s === $.eA$.PENDING_OUTGOING ? (0, l.jsx)(u.m_, {
@@ -533,7 +533,7 @@ let et = i.memo(e => {
                     variant: "secondary",
                     icon: o.lI8,
                     onClick: z,
-                    disabled: F
+                    disabled: w
                 })
             }) : a ? (0, l.jsx)(u.m_, {
                 text: B.intl.string(B.t.w5uwoI),
@@ -543,7 +543,7 @@ let et = i.memo(e => {
                     variant: "secondary",
                     icon: o.Rvf,
                     onClick: Z,
-                    disabled: F
+                    disabled: w
                 })
             }) : null]
         })

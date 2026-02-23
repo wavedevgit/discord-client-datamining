@@ -95,11 +95,11 @@ function G() {
     return N.default.isAnyOverlayRendering()
 }
 
-function F(e) {
+function w(e) {
     return (!!e || !R) && v !== e && (v = e, !0)
 }
 
-function w() {
+function F() {
     let e = c.A.getChannelId();
     if (null == e) return null;
     let t = u.A.getChannel(e);
@@ -116,7 +116,7 @@ function L(e) {
     return !!(t || function(e, t) {
         if (null == e) return !1;
         if (null != D && e === D) return !0;
-        let n = w();
+        let n = F();
         return null != n && e === n || t.getNormalizedGuildAffinity(e) > C.u.MINIMUM_GUILD_AFFINITY
     }(n, i)) || !!(null != l && i.getNormalizedUserAffinity(l) > C.u.MINIMUM_USER_AFFINITY)
 }
@@ -145,7 +145,7 @@ function b(e) {
 
 function k(e, t) {
     let n = (0, T.aU)(e.candidate, {
-        voiceGuildId: w(),
+        voiceGuildId: F(),
         mostRecentGuildId: D
     });
     return e.score * (1 + n) * (e.candidate.kind === T.G.DirectMessage || e.candidate.kind === T.G.GroupDM ? 1 : 1 + (0, T.EB)(e.candidate, t))
@@ -244,7 +244,7 @@ function $() {
     let e = Date.now(),
         t = e - z,
         n = o.A.affinities.filter(e => (e.score ?? 0) > 0).slice(0, 3).map(e => e.guildId),
-        l = w();
+        l = F();
     null == l || n.includes(l) || n.push(l);
     let i = b({
             includeVcProbability: !1
@@ -335,7 +335,7 @@ class K extends i.Ay.Store {
                 includeVcProbability: t.candidate.kind === T.G.GuildVoice
             }),
             i = (0, T.aU)(t.candidate, {
-                voiceGuildId: w(),
+                voiceGuildId: F(),
                 mostRecentGuildId: D
             }),
             r = t.candidate.kind === T.G.DirectMessage || t.candidate.kind === T.G.GroupDM,
@@ -365,22 +365,22 @@ let X = e => (0, p.v$)(e, "OverlayActiveNowStore"),
             return !1
         }),
         OVERLAY_MOUNTED: X(function(e) {
-            return F(!0), $(), !0
+            return w(!0), $(), !0
         }),
         OVERLAY_UPDATE_OVERLAY_METHOD: X(function(e) {
             let {
                 overlayMethod: t
             } = e;
-            return t === S.Ue.OutOfProcess || t === S.Ue.OutOfProcessLimitedInteraction ? (F(!0), P(), !0) : !G() && F(!1)
+            return t === S.Ue.OutOfProcess || t === S.Ue.OutOfProcessLimitedInteraction ? (w(!0), P(), !0) : !G() && w(!1)
         }),
         OVERLAY_CRASHED: X(function(e) {
-            return !G() && F(!1)
+            return !G() && w(!1)
         }),
         OVERLAY_SET_INPUT_LOCKED: X(function(e) {
-            return !e.locked && (F(!0), P(), !0)
+            return !e.locked && (w(!0), P(), !0)
         }),
         FRIENDS_LIST_POPOUT_MOUNTED: X(function() {
-            return R = !0, F(!0), $(), !0
+            return R = !0, w(!0), $(), !0
         }),
         MESSAGE_CREATE: X(function(e) {
             if (!v || e.optimistic) return !1;
