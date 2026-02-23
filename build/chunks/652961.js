@@ -1,24 +1,2 @@
 /** chunk id: 652961, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => l,
-    F: () => o
-});
-var i = n(311907),
-    s = n(397438),
-    a = n(815968),
-    r = n(985018);
-
-function l(e) {
-    switch (e) {
-        case a._A.REDUCED_MOTION:
-            return r.intl.format(r.t["1dT9V4"], {});
-        case a._A.REDUCED_MOTION_STICKERS:
-            return r.intl.string(r.t["2ExvRu"]);
-        default:
-            return
-    }
-}
-
-function o(e) {
-    return (0, i.bG)([s.A], () => l(s.A.getAppliedOverrideReasonKey(e)))
-}
+n.d(t,{A:()=>l,F:()=>o});var i=n(311907),s=n(397438),a=n(815968),r=n(985018);function l(e){switch(e){case a._A.REDUCED_MOTION:return r.intl.format(r.t["1dT9V4"],{});case a._A.REDUCED_MOTION_STICKERS:return r.intl.string(r.t["2ExvRu"]);default:return}}function o(e){return(0,i.bG)([s.A],()=>l(s.A.getAppliedOverrideReasonKey(e)))}

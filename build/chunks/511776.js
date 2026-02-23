@@ -1,14 +1,2 @@
 /** chunk id: 511776, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => i
-});
-
-function i(e) {
-    return {
-        name: e.name,
-        id: e.id,
-        icon: e.icon,
-        cover_image: e.coverImage,
-        type: e.type
-    }
-}
+n.d(t,{A:()=>i});function i(e){return{name:e.name,id:e.id,icon:e.icon,cover_image:e.coverImage,type:e.type}}

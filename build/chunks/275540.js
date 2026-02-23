@@ -1,6 +1,2 @@
 /** chunk id: 275540, original params: e,t,n (module,exports,require) **/
-"use strict";
-e.exports = {
-    o1: "actions__4cd01",
-    IF: "panelButtonContainer__4cd01"
-}
+"use strict";e.exports={o1:"actions__4cd01",IF:"panelButtonContainer__4cd01"}

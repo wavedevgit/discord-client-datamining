@@ -1,28 +1,2 @@
 /** chunk id: 917987, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    J: () => r,
-    s: () => a
-});
-var s, l = n(64700),
-    r = ((s = {}).MOUNTED = "mounted", s.SORT_OUT = "sort-out", s.SORT_IN = "sort-in", s.SHUFFLE_OUT = "shuffle-out", s.SHUFFLE_IN = "shuffle-in", s.FINISHED = "finished", s);
-let a = () => {
-    let [e, t] = l.useState("mounted"), [n, s] = l.useState(!1), r = l.useRef(null);
-    return l.useEffect(() => {
-        n && "finished" === e && (null !== r.current && r.current.focus(), s(!1))
-    }, [e, n]), {
-        animationPhase: e,
-        startAnimation: l.useCallback(e => {
-            let {
-                isShuffling: n,
-                onOutroComplete: l,
-                returnRef: a
-            } = e;
-            a?.current != null && (r.current = a.current, s(!0)), t(n ? "shuffle-out" : "sort-out"), setTimeout(() => {
-                l(), t(n ? "shuffle-in" : "sort-in"), setTimeout(() => {
-                    t("finished")
-                }, n ? 200 : 300)
-            }, n ? 250 : 300)
-        }, [])
-    }
-}
+"use strict";n.d(t,{J:()=>r,s:()=>a});var s,l=n(64700),r=((s={}).MOUNTED="mounted",s.SORT_OUT="sort-out",s.SORT_IN="sort-in",s.SHUFFLE_OUT="shuffle-out",s.SHUFFLE_IN="shuffle-in",s.FINISHED="finished",s);let a=()=>{let[e,t]=l.useState("mounted"),[n,s]=l.useState(!1),r=l.useRef(null);return l.useEffect(()=>{n&&"finished"===e&&(null!==r.current&&r.current.focus(),s(!1))},[e,n]),{animationPhase:e,startAnimation:l.useCallback(e=>{let{isShuffling:n,onOutroComplete:l,returnRef:a}=e;a?.current!=null&&(r.current=a.current,s(!0)),t(n?"shuffle-out":"sort-out"),setTimeout(()=>{l(),t(n?"shuffle-in":"sort-in"),setTimeout(()=>{t("finished")},n?200:300)},n?250:300)},[])}}

@@ -1,19 +1,2 @@
 /** chunk id: 503852, original params: e,t,a (module,exports,require) **/
-a.d(t, {
-    Z: () => i,
-    q: () => c
-});
-var s, r = a(64700),
-    n = a(954571),
-    o = a(652215),
-    c = ((s = {}).DETAIL = "Boost Perk Shop Details", s.DEACTIVATE = "Boost Perk Shop Disable", s);
-
-function i(e, t, a) {
-    r.useEffect(() => {
-        n.default.track(o.HAw.OPEN_MODAL, {
-            type: a,
-            sku_id: t.skuId,
-            guild_id: e
-        })
-    }, [a, e, t.skuId])
-}
+a.d(t,{Z:()=>i,q:()=>c});var s,r=a(64700),n=a(954571),o=a(652215),c=((s={}).DETAIL="Boost Perk Shop Details",s.DEACTIVATE="Boost Perk Shop Disable",s);function i(e,t,a){r.useEffect(()=>{n.default.track(o.HAw.OPEN_MODAL,{type:a,sku_id:t.skuId,guild_id:e})},[a,e,t.skuId])}

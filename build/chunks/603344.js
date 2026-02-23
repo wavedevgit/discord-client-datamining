@@ -1,4 +1,2 @@
 /** chunk id: 603344, original params: e,t,n (module,exports,require) **/
-e.exports = {
-    ZZ: "field_db41ea"
-}
+e.exports={ZZ:"field_db41ea"}

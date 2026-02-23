@@ -1,5 +1,2 @@
 /** chunk id: 359511, original params: t,e,i (module,exports,require) **/
-t.exports = {
-    U7: "answerChoicesContainer_abfe37",
-    Xo: "otherField_abfe37"
-}
+t.exports={U7:"answerChoicesContainer_abfe37",Xo:"otherField_abfe37"}

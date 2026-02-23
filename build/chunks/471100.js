@@ -1,6 +1,2 @@
 /** chunk id: 471100, original params: e,t,a (module,exports,require) **/
-e.exports = {
-    kL: "container__5682d",
-    Sl: "image__5682d",
-    wx: "header__5682d"
-}
+e.exports={kL:"container__5682d",Sl:"image__5682d",wx:"header__5682d"}

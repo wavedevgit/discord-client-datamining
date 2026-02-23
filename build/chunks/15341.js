@@ -1,4 +1,2 @@
 /** chunk id: 15341, original params: e,t,n (module,exports,require) **/
-e.exports = {
-    O: "fixClipping_efbae7"
-}
+e.exports={O:"fixClipping_efbae7"}

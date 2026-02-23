@@ -1,7 +1,2 @@
 /** chunk id: 407943, original params: e,t,s (module,exports,require) **/
-e.exports = {
-    kL: "container__1ff2f",
-    Om: "dot__1ff2f",
-    Yg: "fileIcon__1ff2f",
-    Md: "fileName__1ff2f"
-}
+e.exports={kL:"container__1ff2f",Om:"dot__1ff2f",Yg:"fileIcon__1ff2f",Md:"fileName__1ff2f"}

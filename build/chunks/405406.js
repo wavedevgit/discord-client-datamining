@@ -1,15 +1,2 @@
 /** chunk id: 405406, original params: e,a,n (module,exports,require) **/
-n.d(a, {
-    A: () => r
-});
-var t = {
-    lastWeek: "'afgelopen' eeee 'om' p",
-    yesterday: "'gisteren om' p",
-    today: "'vandaag om' p",
-    tomorrow: "'morgen om' p",
-    nextWeek: "eeee 'om' p",
-    other: "P"
-};
-let r = function(e, a, n, r) {
-    return t[e]
-}
+n.d(a,{A:()=>r});var t={lastWeek:"'afgelopen' eeee 'om' p",yesterday:"'gisteren om' p",today:"'vandaag om' p",tomorrow:"'morgen om' p",nextWeek:"eeee 'om' p",other:"P"};let r=function(e,a,n,r){return t[e]}

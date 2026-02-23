@@ -1,12 +1,2 @@
 /** chunk id: 354093, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    L: () => a
-});
-var n = i(419954),
-    l = i(780964),
-    s = i(299116),
-    r = i(985018);
-let a = (0, n.E2)(l.X.ACCOUNT_CHANGE_PASSWORD_SETTING, {
-    useSearchTerms: () => [r.intl.string(r.t["FRep5/"])],
-    Component: s.A
-})
+i.d(e,{L:()=>a});var n=i(419954),l=i(780964),s=i(299116),r=i(985018);let a=(0,n.E2)(l.X.ACCOUNT_CHANGE_PASSWORD_SETTING,{useSearchTerms:()=>[r.intl.string(r.t["FRep5/"])],Component:s.A})

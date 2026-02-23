@@ -1,5 +1,2 @@
 /** chunk id: 241938, original params: e,t,n (module,exports,require) **/
-e.exports = {
-    b: "avatarPairContainer__30f35",
-    M: "avatarPair__30f35"
-}
+e.exports={b:"avatarPairContainer__30f35",M:"avatarPair__30f35"}

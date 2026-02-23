@@ -1,8 +1,2 @@
 /** chunk id: 527815, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    t: () => i
-});
-
-function i(e) {
-    e()
-}
+n.d(t,{t:()=>i});function i(e){e()}

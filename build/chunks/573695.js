@@ -1,12 +1,2 @@
 /** chunk id: 573695, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    B: () => l
-});
-var i = n(73153);
-
-function l(e) {
-    i.h.dispatch({
-        type: "PRESENCE_SUBSCRIPTIONS_ADD",
-        subscription: e
-    })
-}
+n.d(t,{B:()=>l});var i=n(73153);function l(e){i.h.dispatch({type:"PRESENCE_SUBSCRIPTIONS_ADD",subscription:e})}

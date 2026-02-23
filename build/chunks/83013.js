@@ -1,23 +1,2 @@
 /** chunk id: 83013, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => o
-});
-var i = n(627968);
-n(64700);
-var l = n(503698),
-    a = n.n(l),
-    s = n(900179),
-    r = n(581885);
-
-function o(e) {
-    let {
-        className: t,
-        ...n
-    } = e;
-    return (0, i.jsx)(s.A, {
-        className: a()(r.u, t),
-        headingVariant: "text-xs/medium",
-        headingColor: "currentColor",
-        ...n
-    })
-}
+n.d(t,{A:()=>o});var i=n(627968);n(64700);var l=n(503698),a=n.n(l),s=n(900179),r=n(581885);function o(e){let{className:t,...n}=e;return(0,i.jsx)(s.A,{className:a()(r.u,t),headingVariant:"text-xs/medium",headingColor:"currentColor",...n})}

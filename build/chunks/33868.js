@@ -1,12 +1,2 @@
 /** chunk id: 33868, original params: e,t,n (module,exports,require) **/
-"use strict";
-var r = n(834647),
-    a = n(308227),
-    o = n(987817)(a.setTimeout, !0);
-r({
-    global: !0,
-    bind: !0,
-    forced: a.setTimeout !== o
-}, {
-    setTimeout: o
-})
+"use strict";var r=n(834647),a=n(308227),o=n(987817)(a.setTimeout,!0);r({global:!0,bind:!0,forced:a.setTimeout!==o},{setTimeout:o})

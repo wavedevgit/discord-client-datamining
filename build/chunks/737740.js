@@ -1,6 +1,2 @@
 /** chunk id: 737740, original params: e,t,n (module,exports,require) **/
-e.exports = {
-    kL: "container__5d1be",
-    Qs: "content__5d1be",
-    $H: "tabBar__5d1be"
-}
+e.exports={kL:"container__5d1be",Qs:"content__5d1be",$H:"tabBar__5d1be"}

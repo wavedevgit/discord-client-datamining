@@ -1,25 +1,2 @@
 /** chunk id: 687837, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    H: () => o
-});
-var i = n(873298),
-    s = n(419954),
-    a = n(253932),
-    r = n(780964),
-    l = n(985018);
-let o = (0, s.Qx)(r.X.TIME_FORMAT_SETTING, {
-    useSearchTerms: () => [l.intl.string(l.t.dyamEI), l.intl.string(l.t.p8NOwi), l.intl.string(l.t["+o/sOo"])],
-    useTitle: () => l.intl.string(l.t.dyamEI),
-    useValue: () => a.PZ.useSetting(),
-    setValue: e => a.PZ.updateSetting(e),
-    useOptions: () => [{
-        name: l.intl.string(l.t.FMWYvb),
-        value: i.PZ.AUTO
-    }, {
-        name: l.intl.string(l.t.p8NOwi),
-        value: i.PZ.H12
-    }, {
-        name: l.intl.string(l.t["+o/sOo"]),
-        value: i.PZ.H23
-    }]
-})
+n.d(t,{H:()=>o});var i=n(873298),s=n(419954),a=n(253932),r=n(780964),l=n(985018);let o=(0,s.Qx)(r.X.TIME_FORMAT_SETTING,{useSearchTerms:()=>[l.intl.string(l.t.dyamEI),l.intl.string(l.t.p8NOwi),l.intl.string(l.t["+o/sOo"])],useTitle:()=>l.intl.string(l.t.dyamEI),useValue:()=>a.PZ.useSetting(),setValue:e=>a.PZ.updateSetting(e),useOptions:()=>[{name:l.intl.string(l.t.FMWYvb),value:i.PZ.AUTO},{name:l.intl.string(l.t.p8NOwi),value:i.PZ.H12},{name:l.intl.string(l.t["+o/sOo"]),value:i.PZ.H23}]})

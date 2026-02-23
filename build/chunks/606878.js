@@ -1,4 +1,2 @@
 /** chunk id: 606878, original params: e,t,n (module,exports,require) **/
-e.exports = {
-    j: "flash__03436"
-}
+e.exports={j:"flash__03436"}

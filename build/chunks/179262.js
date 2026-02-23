@@ -1,19 +1,2 @@
 /** chunk id: 179262, original params: e,t,l (module,exports,require) **/
-"use strict";
-l.d(t, {
-    A: () => s
-});
-var r = l(64700),
-    a = l(311907),
-    n = l(602823),
-    i = l(16667);
-let s = e => {
-    let [t, l, s] = (0, a.yK)([i.A], () => [i.A.getCollection(e), i.A.isFetching(e), i.A.getApiError(e)]), o = null == t && !l && null == s;
-    return (0, r.useEffect)(() => {
-        o && (0, n.y)(e)
-    }, [o, e]), {
-        collection: t,
-        isFetching: l,
-        apiError: s
-    }
-}
+"use strict";l.d(t,{A:()=>s});var r=l(64700),a=l(311907),n=l(602823),i=l(16667);let s=e=>{let[t,l,s]=(0,a.yK)([i.A],()=>[i.A.getCollection(e),i.A.isFetching(e),i.A.getApiError(e)]),o=null==t&&!l&&null==s;return(0,r.useEffect)(()=>{o&&(0,n.y)(e)},[o,e]),{collection:t,isFetching:l,apiError:s}}

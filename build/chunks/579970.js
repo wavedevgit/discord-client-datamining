@@ -1,23 +1,2 @@
 /** chunk id: 579970, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    q: () => a
-});
-var i = n(627968);
-n(64700);
-var l = n(397927),
-    r = n(500208);
-
-function a(e, t) {
-    (0, l.mMO)(async () => {
-        let {
-            default: l
-        } = await Promise.all([n.e("49862"), n.e("67096")]).then(n.bind(n, 559947));
-        return n => (0, i.jsx)(l, {
-            guildId: e,
-            productId: t,
-            ...n
-        })
-    }, {
-        modalKey: r.DG
-    })
-}
+n.d(t,{q:()=>a});var i=n(627968);n(64700);var l=n(397927),r=n(500208);function a(e,t){(0,l.mMO)(async()=>{let{default:l}=await Promise.all([n.e("49862"),n.e("67096")]).then(n.bind(n,559947));return n=>(0,i.jsx)(l,{guildId:e,productId:t,...n})},{modalKey:r.DG})}

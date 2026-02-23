@@ -1,19 +1,2 @@
 /** chunk id: 792728, original params: e,t,n (module,exports,require) **/
-"use strict";
-e.exports = {
-    d$: "tutorial__73f2a",
-    SP: "shown__73f2a",
-    XN: "arrowGroup__73f2a",
-    pG: "right__73f2a",
-    Hf: "arrowContainer__73f2a",
-    xM: "horizontal__73f2a",
-    JM: "diag1__73f2a",
-    QJ: "diag2__73f2a",
-    D6: "arrowIcon__73f2a",
-    Mm: "arrow-pulse__73f2a",
-    fi: "tutorialMessages__73f2a",
-    iU: "message__73f2a",
-    Iv: "searchMessage__73f2a message__73f2a",
-    kp: "selectMessage__73f2a message__73f2a",
-    tG: "hasQuery__73f2a"
-}
+"use strict";e.exports={d$:"tutorial__73f2a",SP:"shown__73f2a",XN:"arrowGroup__73f2a",pG:"right__73f2a",Hf:"arrowContainer__73f2a",xM:"horizontal__73f2a",JM:"diag1__73f2a",QJ:"diag2__73f2a",D6:"arrowIcon__73f2a",Mm:"arrow-pulse__73f2a",fi:"tutorialMessages__73f2a",iU:"message__73f2a",Iv:"searchMessage__73f2a message__73f2a",kp:"selectMessage__73f2a message__73f2a",tG:"hasQuery__73f2a"}

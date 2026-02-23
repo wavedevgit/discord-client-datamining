@@ -1,26 +1,2 @@
 /** chunk id: 67097, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    A: () => l
-});
-var i = n(64700),
-    s = n(985018);
-
-function l() {
-    return i.useMemo(() => [{
-        value: null,
-        label: s.intl.string(s.t.zHfL6o)
-    }, {
-        value: 10,
-        label: "10"
-    }, {
-        value: 25,
-        label: "25"
-    }, {
-        value: 50,
-        label: "50"
-    }, {
-        value: 100,
-        label: "100"
-    }], [])
-}
+"use strict";n.d(t,{A:()=>l});var i=n(64700),s=n(985018);function l(){return i.useMemo(()=>[{value:null,label:s.intl.string(s.t.zHfL6o)},{value:10,label:"10"},{value:25,label:"25"},{value:50,label:"50"},{value:100,label:"100"}],[])}

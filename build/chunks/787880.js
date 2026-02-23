@@ -1,20 +1,2 @@
 /** chunk id: 787880, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    g: () => s
-});
-var a = n(627968);
-n(64700);
-var i = n(397927);
-
-function s(e) {
-    (0, i.mMO)(async () => {
-        let {
-            default: e
-        } = await n.e("48817").then(n.bind(n, 424584));
-        return t => (0, a.jsx)(e, {
-            ...t
-        })
-    }, {
-        onCloseCallback: e
-    })
-}
+n.d(t,{g:()=>s});var a=n(627968);n(64700);var i=n(397927);function s(e){(0,i.mMO)(async()=>{let{default:e}=await n.e("48817").then(n.bind(n,424584));return t=>(0,a.jsx)(e,{...t})},{onCloseCallback:e})}

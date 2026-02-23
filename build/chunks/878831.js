@@ -1,18 +1,2 @@
 /** chunk id: 878831, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => r
-});
-var i = n(110259),
-    l = n(139286);
-
-function r(e, t) {
-    (0, l.A)({
-        name: i.ImpressionNames.CLOUD_PLAY_CTA,
-        type: i.ImpressionTypes.VIEW,
-        properties: {
-            location_stack: t
-        }
-    }, {
-        disableTrack: !e
-    })
-}
+n.d(t,{A:()=>r});var i=n(110259),l=n(139286);function r(e,t){(0,l.A)({name:i.ImpressionNames.CLOUD_PLAY_CTA,type:i.ImpressionTypes.VIEW,properties:{location_stack:t}},{disableTrack:!e})}

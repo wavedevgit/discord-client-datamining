@@ -1,4 +1,2 @@
 /** chunk id: 384687, original params: e,t,n (module,exports,require) **/
-e.exports = {
-    H: "hoverableStatus_cdcd10"
-}
+e.exports={H:"hoverableStatus_cdcd10"}

@@ -1,14 +1,2 @@
 /** chunk id: 255940, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    O: () => s
-});
-var i = n(73153);
-
-function s(e) {
-    i.h.dispatch({
-        type: "PREMIUM_REQUIRED_MODAL_CLOSE",
-        shouldContinue: e
-    })
-}
-n(166403), n(384904)
+"use strict";n.d(t,{O:()=>s});var i=n(73153);function s(e){i.h.dispatch({type:"PREMIUM_REQUIRED_MODAL_CLOSE",shouldContinue:e})}n(166403),n(384904)

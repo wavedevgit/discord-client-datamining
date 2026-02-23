@@ -1,20 +1,2 @@
 /** chunk id: 88465, original params: e,t,n (module,exports,require) **/
-"use strict";
-e.exports = {
-    CR: "modalRoot__38ccf",
-    jE: "modalContent__38ccf",
-    op: "infoContainer__38ccf",
-    HI: "labelIconContainer__38ccf",
-    IX: "labelIcon__38ccf",
-    NC: "buttonsContainer__38ccf",
-    wt: "detailsContainer__38ccf",
-    AX: "titleDescriptionContainer__38ccf",
-    Cf: "carouselContainer__38ccf",
-    Dk: "carousel__38ccf",
-    V7: "modalHeaderButtonsContainer__38ccf",
-    jU: "modalHeaderButton__38ccf",
-    ij: "wishlistButton__38ccf",
-    r$: "logoContainer__38ccf",
-    wm: "logo__38ccf",
-    p6: "priceContainer__38ccf"
-}
+"use strict";e.exports={CR:"modalRoot__38ccf",jE:"modalContent__38ccf",op:"infoContainer__38ccf",HI:"labelIconContainer__38ccf",IX:"labelIcon__38ccf",NC:"buttonsContainer__38ccf",wt:"detailsContainer__38ccf",AX:"titleDescriptionContainer__38ccf",Cf:"carouselContainer__38ccf",Dk:"carousel__38ccf",V7:"modalHeaderButtonsContainer__38ccf",jU:"modalHeaderButton__38ccf",ij:"wishlistButton__38ccf",r$:"logoContainer__38ccf",wm:"logo__38ccf",p6:"priceContainer__38ccf"}

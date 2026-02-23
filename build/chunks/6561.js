@@ -1,4 +1,2 @@
 /** chunk id: 6561, original params: e,t,l (module,exports,require) **/
-e.exports = {
-    p: "noResultsContainer__9c6d0"
-}
+e.exports={p:"noResultsContainer__9c6d0"}

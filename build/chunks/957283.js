@@ -1,16 +1,2 @@
 /** chunk id: 957283, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    N: () => a
-});
-var i = n(311907),
-    l = n(940382),
-    s = n(761640);
-
-function a() {
-    let e = (0, i.bG)([s.Ay], () => s.Ay.getSidebarState(s.fe)),
-        t = e?.type === l.PE.VIEW_MESSAGE_REQUEST ? e : null;
-    return {
-        channelId: t?.channelId,
-        hasSingleMessageRequest: t?.details != null && t.details.type === l.LU.MESSAGE_REQUEST && t.details.hasSingleMessageRequest
-    }
-}
+n.d(t,{N:()=>a});var i=n(311907),l=n(940382),s=n(761640);function a(){let e=(0,i.bG)([s.Ay],()=>s.Ay.getSidebarState(s.fe)),t=e?.type===l.PE.VIEW_MESSAGE_REQUEST?e:null;return{channelId:t?.channelId,hasSingleMessageRequest:t?.details!=null&&t.details.type===l.LU.MESSAGE_REQUEST&&t.details.hasSingleMessageRequest}}

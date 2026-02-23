@@ -1,6 +1,2 @@
 /** chunk id: 461132, original params: e,t,n (module,exports,require) **/
-"use strict";
-e.exports = {
-    U: "cardContent_f62fce",
-    L: "cardDescription_f62fce"
-}
+"use strict";e.exports={U:"cardContent_f62fce",L:"cardDescription_f62fce"}

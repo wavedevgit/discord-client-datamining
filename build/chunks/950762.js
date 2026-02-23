@@ -1,19 +1,2 @@
 /** chunk id: 950762, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => r
-});
-var l = n(315069),
-    i = n(427157);
-class r extends l.A {
-    id;
-    name;
-    managed;
-    roles;
-    requiredColons;
-    user;
-    animated;
-    available;
-    constructor(e) {
-        super(), this.id = e.id, this.name = e.name, this.managed = e.managed, this.roles = e.roles, this.requiredColons = e.requiredColons, this.user = new i.A(e.user), this.animated = e.animated, this.available = e.available
-    }
-}
+n.d(t,{A:()=>r});var l=n(315069),i=n(427157);class r extends l.A{id;name;managed;roles;requiredColons;user;animated;available;constructor(e){super(),this.id=e.id,this.name=e.name,this.managed=e.managed,this.roles=e.roles,this.requiredColons=e.requiredColons,this.user=new i.A(e.user),this.animated=e.animated,this.available=e.available}}

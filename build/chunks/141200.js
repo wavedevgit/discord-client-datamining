@@ -1,6 +1,2 @@
 /** chunk id: 141200, original params: e,t,n (module,exports,require) **/
-e.exports = {
-    kL: "container__44153",
-    DD: "title__44153",
-    h_: "description__44153"
-}
+e.exports={kL:"container__44153",DD:"title__44153",h_:"description__44153"}

@@ -1,22 +1,2 @@
 /** chunk id: 707985, original params: e,t,i (module,exports,require) **/
-i.d(t, {
-    A: () => n
-});
-
-function n(e) {
-    let {
-        channel: t,
-        canChat: i,
-        renderReactions: n,
-        canAddNewReactions: l,
-        isLurking: a,
-        communicationDisabled: s,
-        isActiveChannelOrUnarchivableThread: r,
-        isAutomodQuarantined: o
-    } = e, u = t.isPrivate(), d = t.isSystemDM(), c = (i || u) && r;
-    return {
-        disableReactionReads: !n,
-        disableReactionCreates: a || !c || !((!0 === l || u) && !d && r),
-        disableReactionUpdates: a || !c || !0 === s || !0 === o
-    }
-}
+i.d(t,{A:()=>n});function n(e){let{channel:t,canChat:i,renderReactions:n,canAddNewReactions:l,isLurking:a,communicationDisabled:s,isActiveChannelOrUnarchivableThread:r,isAutomodQuarantined:o}=e,u=t.isPrivate(),d=t.isSystemDM(),c=(i||u)&&r;return{disableReactionReads:!n,disableReactionCreates:a||!c||!((!0===l||u)&&!d&&r),disableReactionUpdates:a||!c||!0===s||!0===o}}

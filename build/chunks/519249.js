@@ -1,22 +1,2 @@
 /** chunk id: 519249, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    W: () => d
-});
-var i = n(64700),
-    s = n(735438),
-    r = n(417597),
-    l = n(493527),
-    a = n(544395),
-    o = n(352763);
-let d = function(e) {
-    let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
-        n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
-        d = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
-        c = (0, r.bG)([a.A], () => a.A.validate(e), [e]),
-        u = (0, r.bG)([a.A], () => a.A.isRateLimited()),
-        h = i.useMemo(() => (0, s.debounce)(e => l.A.attemptUsername(e, n ? "registration" : "modal", n, d), 800), [n, d]);
-    return i.useEffect(() => {
-        t && !u && null == c && "" !== e && h(e)
-    }, [t, u, c, e, h]), i.useMemo(() => null != c ? (0, o.z)(c) : void 0, [c])
-}
+"use strict";n.d(t,{W:()=>d});var i=n(64700),s=n(735438),r=n(417597),l=n(493527),a=n(544395),o=n(352763);let d=function(e){let t=!(arguments.length>1)||void 0===arguments[1]||arguments[1],n=arguments.length>2&&void 0!==arguments[2]&&arguments[2],d=arguments.length>3&&void 0!==arguments[3]&&arguments[3],c=(0,r.bG)([a.A],()=>a.A.validate(e),[e]),u=(0,r.bG)([a.A],()=>a.A.isRateLimited()),h=i.useMemo(()=>(0,s.debounce)(e=>l.A.attemptUsername(e,n?"registration":"modal",n,d),800),[n,d]);return i.useEffect(()=>{t&&!u&&null==c&&""!==e&&h(e)},[t,u,c,e,h]),i.useMemo(()=>null!=c?(0,o.z)(c):void 0,[c])}

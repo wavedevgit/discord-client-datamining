@@ -1,18 +1,2 @@
 /** chunk id: 643015, original params: t,e,n (module,exports,require) **/
-n.d(e, {
-    A: () => d
-});
-var i = n(64700),
-    l = n(311907),
-    r = n(287809),
-    a = n(966107),
-    s = n(380335);
-let o = new Set(["GB"]);
-
-function d() {
-    let t = (0, l.bG)([s.A], () => s.A.getUserCountryCode()),
-        e = !1 === (0, l.bG)([r.default], () => r.default.getCurrentUser()?.nsfwAllowed);
-    return i.useEffect(() => {
-        null == t && (0, a.xf)()
-    }, [t]), null != t && !!o.has(t.alpha2) && !!e
-}
+n.d(e,{A:()=>d});var i=n(64700),l=n(311907),r=n(287809),a=n(966107),s=n(380335);let o=new Set(["GB"]);function d(){let t=(0,l.bG)([s.A],()=>s.A.getUserCountryCode()),e=!1===(0,l.bG)([r.default],()=>r.default.getCurrentUser()?.nsfwAllowed);return i.useEffect(()=>{null==t&&(0,a.xf)()},[t]),null!=t&&!!o.has(t.alpha2)&&!!e}

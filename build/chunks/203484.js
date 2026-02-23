@@ -1,13 +1,2 @@
 /** chunk id: 203484, original params: e,t,l (module,exports,require) **/
-l.d(t, {
-    O: () => o
-});
-var a = l(226846),
-    n = l(159176),
-    r = l(948409),
-    i = l(750343),
-    s = l(102957);
-let o = {
-    title: "Miscellaneous",
-    stories: [n.A, r.F, i.$, a.q, s.r]
-}
+l.d(t,{O:()=>o});var a=l(226846),n=l(159176),r=l(948409),i=l(750343),s=l(102957);let o={title:"Miscellaneous",stories:[n.A,r.F,i.$,a.q,s.r]}

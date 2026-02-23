@@ -1,11 +1,2 @@
 /** chunk id: 285286, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => i
-});
-var l = n(281445),
-    r = n(294726),
-    a = n(985018);
-
-function i(e) {
-    return e === l.X.SHOCKBYTE ? a.intl.string(r.default.z5lesv) : null
-}
+n.d(t,{A:()=>i});var l=n(281445),r=n(294726),a=n(985018);function i(e){return e===l.X.SHOCKBYTE?a.intl.string(r.default.z5lesv):null}

@@ -1,4 +1,2 @@
 /** chunk id: 746305, original params: e,t,n (module,exports,require) **/
-e.exports = {
-    y: "checkboxRow_d1f0f0"
-}
+e.exports={y:"checkboxRow_d1f0f0"}

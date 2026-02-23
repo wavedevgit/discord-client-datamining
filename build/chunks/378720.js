@@ -1,6 +1,2 @@
 /** chunk id: 378720, original params: e,s,t (module,exports,require) **/
-e.exports = {
-    YK: "spacing_fd14e0",
-    Vc: "spacingTop_fd14e0",
-    iU: "message_fd14e0"
-}
+e.exports={YK:"spacing_fd14e0",Vc:"spacingTop_fd14e0",iU:"message_fd14e0"}

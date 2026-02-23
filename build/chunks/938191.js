@@ -1,18 +1,5 @@
 /** chunk id: 938191, original params: e,t,s (module,exports,require) **/
-s.d(t, {
-    gB: () => b,
-    jP: () => u,
-    yB: () => p
-});
-var r = s(64700),
-    l = s(311907),
-    n = s(775602),
-    a = s(652525),
-    o = s(749022),
-    i = s(787445);
-let c = "custom-cursors-styles",
-    u = "custom-cursors",
-    d = `
+s.d(t,{gB:()=>b,jP:()=>u,yB:()=>p});var r=s(64700),l=s(311907),n=s(775602),a=s(652525),o=s(749022),i=s(787445);let c="custom-cursors-styles",u="custom-cursors",d=`
   :root {
     --custom-cursor: url(${o.A}) 8 4, auto;
     --custom-cursor-pointer: url(${i.A}) 4 4, pointer;
@@ -63,21 +50,4 @@ let c = "custom-cursors-styles",
   .${u} [class*='labelClickable'] {
     cursor: var(--custom-cursor-pointer) !important;
   }
-`;
-
-function b() {
-    let e = p("useCustomCursorsCSS");
-    r.useLayoutEffect(() => {
-        if (!e) return;
-        let t = document.getElementById(c);
-        return null == t && ((t = document.createElement("style")).id = c, document.head.appendChild(t)), t.textContent = d, () => {
-            t.textContent = ""
-        }
-    }, [e])
-}
-
-function p(e) {
-    let t = (0, a.t)(e),
-        s = (0, l.bG)([n.A], () => n.A.enableCustomCursor ?? !0);
-    return t && s
-}
+`;function b(){let e=p("useCustomCursorsCSS");r.useLayoutEffect(()=>{if(!e)return;let t=document.getElementById(c);return null==t&&((t=document.createElement("style")).id=c,document.head.appendChild(t)),t.textContent=d,()=>{t.textContent=""}},[e])}function p(e){let t=(0,a.t)(e),s=(0,l.bG)([n.A],()=>n.A.enableCustomCursor??!0);return t&&s}

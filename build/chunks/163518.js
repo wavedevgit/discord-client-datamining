@@ -1,13 +1,2 @@
 /** chunk id: 163518, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => r
-});
-var i = n(697831);
-
-function r(e) {
-    let {
-        currentActivities: t,
-        isSpotifyActivity: n
-    } = e, r = t[0], l = (0, i.A)(r?.activity, r?.activityUser);
-    return n ? l : null
-}
+n.d(t,{A:()=>r});var i=n(697831);function r(e){let{currentActivities:t,isSpotifyActivity:n}=e,r=t[0],l=(0,i.A)(r?.activity,r?.activityUser);return n?l:null}

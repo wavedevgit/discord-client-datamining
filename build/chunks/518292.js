@@ -1,7 +1,2 @@
 /** chunk id: 518292, original params: e (module,exports,require) **/
-"use strict";
-e.exports = function(e, t) {
-    try {
-        1 == arguments.length ? console.error(e) : console.error(e, t)
-    } catch (e) {}
-}
+"use strict";e.exports=function(e,t){try{1==arguments.length?console.error(e):console.error(e,t)}catch(e){}}

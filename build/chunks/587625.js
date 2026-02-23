@@ -1,5 +1,2 @@
 /** chunk id: 587625, original params: e,t,n (module,exports,require) **/
-e.exports = {
-    x: "groupHeader__5df34",
-    H: "channelName__5df34"
-}
+e.exports={x:"groupHeader__5df34",H:"channelName__5df34"}

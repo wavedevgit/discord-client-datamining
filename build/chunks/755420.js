@@ -1,27 +1,2 @@
 /** chunk id: 755420, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    FL: () => a,
-    z4: () => o
-}), n(321073);
-var i, l = n(64700),
-    r = n(652215),
-    a = ((i = {}).DESKTOP = "desktop", i.MOBILE = "mobile", i.ANDROID = "android", i.IOS = "ios", i.PLAYSTATION = "playstation", i.XBOX = "xbox", i.VR = "vr", i);
-r.yTV.DESKTOP, r.yTV.ANDROID, r.yTV.IOS, r.yTV.XBOX, r.yTV.PS4, r.yTV.PS5, r.yTV.SAMSUNG, r.yTV.EMBEDDED, r.yTV.META_QUEST;
-let s = [];
-
-function o(e) {
-    let {
-        platforms: t,
-        currentPlatform: n
-    } = e;
-    return l.useMemo(() => (function(e) {
-        let {
-            platforms: t,
-            currentPlatform: n
-        } = e, i = new Set(t), l = [];
-        return null == t || 0 === t.length || null != n && i.has(n) ? s : (i.has(r.yTV.ANDROID) && i.has(r.yTV.IOS) ? l.push("mobile") : i.has(r.yTV.ANDROID) ? l.push("android") : i.has(r.yTV.IOS) && l.push("ios"), (i.has(r.yTV.PS4) || i.has(r.yTV.PS5)) && l.push("playstation"), i.has(r.yTV.XBOX) && l.push("xbox"), i.has(r.yTV.DESKTOP) && l.push("desktop"), i.has(r.yTV.META_QUEST) && l.push("vr"), l)
-    })({
-        platforms: t,
-        currentPlatform: n
-    }), [n, t])
-}
+n.d(t,{FL:()=>a,z4:()=>o}),n(321073);var i,l=n(64700),r=n(652215),a=((i={}).DESKTOP="desktop",i.MOBILE="mobile",i.ANDROID="android",i.IOS="ios",i.PLAYSTATION="playstation",i.XBOX="xbox",i.VR="vr",i);r.yTV.DESKTOP,r.yTV.ANDROID,r.yTV.IOS,r.yTV.XBOX,r.yTV.PS4,r.yTV.PS5,r.yTV.SAMSUNG,r.yTV.EMBEDDED,r.yTV.META_QUEST;let s=[];function o(e){let{platforms:t,currentPlatform:n}=e;return l.useMemo(()=>(function(e){let{platforms:t,currentPlatform:n}=e,i=new Set(t),l=[];return null==t||0===t.length||null!=n&&i.has(n)?s:(i.has(r.yTV.ANDROID)&&i.has(r.yTV.IOS)?l.push("mobile"):i.has(r.yTV.ANDROID)?l.push("android"):i.has(r.yTV.IOS)&&l.push("ios"),(i.has(r.yTV.PS4)||i.has(r.yTV.PS5))&&l.push("playstation"),i.has(r.yTV.XBOX)&&l.push("xbox"),i.has(r.yTV.DESKTOP)&&l.push("desktop"),i.has(r.yTV.META_QUEST)&&l.push("vr"),l)})({platforms:t,currentPlatform:n}),[n,t])}

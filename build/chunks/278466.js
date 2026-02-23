@@ -1,13 +1,2 @@
 /** chunk id: 278466, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    Z: () => s,
-    h: () => i
-});
-var a = n(64700);
-let i = a.createContext(null);
-
-function s() {
-    let e = a.useContext(i);
-    if (null == e) throw Error("useSafetyFlowTask must be used within a SafetyFlowTaskContext Provider");
-    return e
-}
+n.d(t,{Z:()=>s,h:()=>i});var a=n(64700);let i=a.createContext(null);function s(){let e=a.useContext(i);if(null==e)throw Error("useSafetyFlowTask must be used within a SafetyFlowTaskContext Provider");return e}

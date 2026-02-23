@@ -1,10 +1,2 @@
 /** chunk id: 361157, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    K: () => i
-});
-let i = (0, n(353640).v)(e => ({
-    clipsButtonRef: null,
-    setClipsButtonRef: t => e({
-        clipsButtonRef: t
-    })
-}))
+n.d(t,{K:()=>i});let i=(0,n(353640).v)(e=>({clipsButtonRef:null,setClipsButtonRef:t=>e({clipsButtonRef:t})}))

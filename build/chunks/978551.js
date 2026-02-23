@@ -1,18 +1,2 @@
 /** chunk id: 978551, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => r
-});
-var i = n(627968);
-n(64700);
-var s = n(397927),
-    a = n(985018);
-
-function r() {
-    return (0, i.jsx)(s.D0$, {
-        label: a.intl.string(a.t.EPVq00),
-        children: (0, i.jsx)(s.po8, {
-            messageType: s.YCn.INFO,
-            children: a.intl.string(a.t.PhHhsj)
-        })
-    })
-}
+n.d(t,{A:()=>r});var i=n(627968);n(64700);var s=n(397927),a=n(985018);function r(){return(0,i.jsx)(s.D0$,{label:a.intl.string(a.t.EPVq00),children:(0,i.jsx)(s.po8,{messageType:s.YCn.INFO,children:a.intl.string(a.t.PhHhsj)})})}

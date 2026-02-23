@@ -1,7 +1,2 @@
 /** chunk id: 693510, original params: r,e,t (module,exports,require) **/
-var n = t(101968);
-r.exports = function() {
-    var r = n(this),
-        e = "";
-    return r.hasIndices && (e += "d"), r.global && (e += "g"), r.ignoreCase && (e += "i"), r.multiline && (e += "m"), r.dotAll && (e += "s"), r.unicode && (e += "u"), r.unicodeSets && (e += "v"), r.sticky && (e += "y"), e
-}
+var n=t(101968);r.exports=function(){var r=n(this),e="";return r.hasIndices&&(e+="d"),r.global&&(e+="g"),r.ignoreCase&&(e+="i"),r.multiline&&(e+="m"),r.dotAll&&(e+="s"),r.unicode&&(e+="u"),r.unicodeSets&&(e+="v"),r.sticky&&(e+="y"),e}

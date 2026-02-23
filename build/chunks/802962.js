@@ -1,23 +1,2 @@
 /** chunk id: 802962, original params: e,t,n (module,exports,require) **/
-var i = n(264572).Buffer,
-    s = [255, 255, 26, 27, 28, 29, 30, 31, 255, 255, 255, 255, 255, 255, 255, 255, 255, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 255, 255, 255, 255, 255, 255, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 255, 255, 255, 255, 255];
-t.encode = function(e) {
-    i.isBuffer(e) || (e = new i(e));
-    for (var t, n, s = 0, r = 0, l = 0, a = 0, o = new i(8 * (n = Math.floor((t = e).length / 5), t.length % 5 == 0 ? n : n + 1)); s < e.length;) {
-        var d = e[s];
-        l > 3 ? (a = (a = d & 255 >> l) << (l = (l + 5) % 8) | (s + 1 < e.length ? e[s + 1] : 0) >> 8 - l, s++) : (a = d >> 8 - (l + 5) & 31, 0 == (l = (l + 5) % 8) && s++), o[r] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ234567".charCodeAt(a), r++
-    }
-    for (s = r; s < o.length; s++) o[s] = 61;
-    return o
-}, t.decode = function(e) {
-    var t, n = 0,
-        r = 0,
-        l = 0;
-    i.isBuffer(e) || (e = new i(e));
-    for (var a = new i(Math.ceil(5 * e.length / 8)), o = 0; o < e.length && 61 != e[o]; o++) {
-        var d = e[o] - 48;
-        if (d < s.length) r = s[d], n <= 3 ? 0 == (n = (n + 5) % 8) ? (t |= r, a[l] = t, l++, t = 0) : t |= 255 & r << 8 - n : (t |= 255 & r >>> (n = (n + 5) % 8), a[l] = t, l++, t = 255 & r << 8 - n);
-        else throw Error("Invalid input - it is not base32 encoded string")
-    }
-    return a.slice(0, l)
-}
+var i=n(264572).Buffer,s=[255,255,26,27,28,29,30,31,255,255,255,255,255,255,255,255,255,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,255,255,255,255,255,255,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,255,255,255,255,255];t.encode=function(e){i.isBuffer(e)||(e=new i(e));for(var t,n,s=0,r=0,l=0,a=0,o=new i(8*(n=Math.floor((t=e).length/5),t.length%5==0?n:n+1));s<e.length;){var d=e[s];l>3?(a=(a=d&255>>l)<<(l=(l+5)%8)|(s+1<e.length?e[s+1]:0)>>8-l,s++):(a=d>>8-(l+5)&31,0==(l=(l+5)%8)&&s++),o[r]="ABCDEFGHIJKLMNOPQRSTUVWXYZ234567".charCodeAt(a),r++}for(s=r;s<o.length;s++)o[s]=61;return o},t.decode=function(e){var t,n=0,r=0,l=0;i.isBuffer(e)||(e=new i(e));for(var a=new i(Math.ceil(5*e.length/8)),o=0;o<e.length&&61!=e[o];o++){var d=e[o]-48;if(d<s.length)r=s[d],n<=3?0==(n=(n+5)%8)?(t|=r,a[l]=t,l++,t=0):t|=255&r<<8-n:(t|=255&r>>>(n=(n+5)%8),a[l]=t,l++,t=255&r<<8-n);else throw Error("Invalid input - it is not base32 encoded string")}return a.slice(0,l)}

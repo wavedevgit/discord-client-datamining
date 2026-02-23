@@ -1,25 +1,2 @@
 /** chunk id: 984083, original params: t,e,r (module,exports,require) **/
-"use strict";
-r.d(e, {
-    Z: () => o
-});
-var n = r(630449),
-    s = r(272469),
-    i = r(83220);
-
-function o(t, e) {
-    let r = (0, n.KU)(),
-        o = (0, n.rm)();
-    if (!r) return;
-    let {
-        beforeBreadcrumb: a = null,
-        maxBreadcrumbs: c = 100
-    } = r.getOptions();
-    if (c <= 0) return;
-    let u = {
-            timestamp: (0, i.lu)(),
-            ...t
-        },
-        h = a ? (0, s.pq)(() => a(u, e)) : u;
-    null !== h && (r.emit && r.emit("beforeAddBreadcrumb", h, e), o.addBreadcrumb(h, c))
-}
+"use strict";r.d(e,{Z:()=>o});var n=r(630449),s=r(272469),i=r(83220);function o(t,e){let r=(0,n.KU)(),o=(0,n.rm)();if(!r)return;let{beforeBreadcrumb:a=null,maxBreadcrumbs:c=100}=r.getOptions();if(c<=0)return;let u={timestamp:(0,i.lu)(),...t},h=a?(0,s.pq)(()=>a(u,e)):u;null!==h&&(r.emit&&r.emit("beforeAddBreadcrumb",h,e),o.addBreadcrumb(h,c))}

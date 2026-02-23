@@ -1,19 +1,2 @@
 /** chunk id: 232246, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => s
-}), n(321073);
-var l = n(311907),
-    i = n(233993),
-    a = n(808728),
-    r = n(576705);
-
-function s(e) {
-    let t = e?.id ?? null;
-    return (0, l.yK)([a.Ay, r.A], () => a.Ay.getChannels(t)[a.vM].reduce((e, t) => {
-        let n = t.channel;
-        return n.isGuildStageVoice() && function(e) {
-            let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : r.A;
-            return !!e.isGuildStageVoice() && t.can(i.QY, e)
-        }(t.channel, r.A) && e.push(n), e
-    }, []), [t])
-}
+n.d(t,{A:()=>s}),n(321073);var l=n(311907),i=n(233993),a=n(808728),r=n(576705);function s(e){let t=e?.id??null;return(0,l.yK)([a.Ay,r.A],()=>a.Ay.getChannels(t)[a.vM].reduce((e,t)=>{let n=t.channel;return n.isGuildStageVoice()&&function(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:r.A;return!!e.isGuildStageVoice()&&t.can(i.QY,e)}(t.channel,r.A)&&e.push(n),e},[]),[t])}

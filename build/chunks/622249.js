@@ -1,25 +1,2 @@
 /** chunk id: 622249, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => r
-});
-var i = n(627968),
-    l = n(397927),
-    a = n(985018),
-    s = n(696778);
-
-function r(e) {
-    let {
-        onClick: t,
-        expanded: n
-    } = e;
-    return (0, i.jsx)(l.DUT, {
-        onClick: t,
-        className: s.x,
-        "aria-expanded": n,
-        children: (0, i.jsx)(l.Text, {
-            variant: "text-sm/medium",
-            color: "none",
-            children: n ? a.intl.string(a.t["6MwJo/"]) : a.intl.string(a.t.lBeKY2)
-        })
-    })
-}
+n.d(t,{A:()=>r});var i=n(627968),l=n(397927),a=n(985018),s=n(696778);function r(e){let{onClick:t,expanded:n}=e;return(0,i.jsx)(l.DUT,{onClick:t,className:s.x,"aria-expanded":n,children:(0,i.jsx)(l.Text,{variant:"text-sm/medium",color:"none",children:n?a.intl.string(a.t["6MwJo/"]):a.intl.string(a.t.lBeKY2)})})}

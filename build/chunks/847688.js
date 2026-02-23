@@ -1,10 +1,2 @@
 /** chunk id: 847688, original params: e,t,a (module,exports,require) **/
-"use strict";
-e.exports = {
-    kL: "container__44ee9",
-    Ui: "cardContainer__44ee9",
-    Vl: "alignLeft__44ee9",
-    Wk: "alignRight__44ee9",
-    R: "hidden__44ee9",
-    RK: "visible__44ee9"
-}
+"use strict";e.exports={kL:"container__44ee9",Ui:"cardContainer__44ee9",Vl:"alignLeft__44ee9",Wk:"alignRight__44ee9",R:"hidden__44ee9",RK:"visible__44ee9"}

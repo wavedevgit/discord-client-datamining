@@ -1,19 +1,2 @@
 /** chunk id: 486524, original params: n,e,t (module,exports,require) **/
-t.d(e, {
-    A: () => s
-});
-var i = t(627968);
-t(64700);
-var r = t(397927),
-    l = t(308528),
-    a = t(734057),
-    d = t(985018);
-
-function s(n, e) {
-    let t = a.A.getChannel(n);
-    return null == t || t.isMultiUserDM() ? null : (0, i.jsx)(r.Drp, {
-        id: "close-dm",
-        label: d.intl.string(d.t.jsvgc3),
-        action: () => l.A.closePrivateChannel(n, e)
-    })
-}
+t.d(e,{A:()=>s});var i=t(627968);t(64700);var r=t(397927),l=t(308528),a=t(734057),d=t(985018);function s(n,e){let t=a.A.getChannel(n);return null==t||t.isMultiUserDM()?null:(0,i.jsx)(r.Drp,{id:"close-dm",label:d.intl.string(d.t.jsvgc3),action:()=>l.A.closePrivateChannel(n,e)})}

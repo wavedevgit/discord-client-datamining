@@ -1,5 +1,2 @@
 /** chunk id: 342088, original params: e,t,n (module,exports,require) **/
-e.exports = {
-    i: "descriptionText__535f5",
-    x: "truncate__535f5"
-}
+e.exports={i:"descriptionText__535f5",x:"truncate__535f5"}

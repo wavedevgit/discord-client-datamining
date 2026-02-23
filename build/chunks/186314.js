@@ -1,8 +1,2 @@
 /** chunk id: 186314, original params: e,t,n (module,exports,require) **/
-e.exports = {
-    kL: "container_d03e0c",
-    C2: "emojiQuestionContainer_d03e0c",
-    lm: "notice_d03e0c",
-    Ux: "noticeMessage_d03e0c",
-    EP: "noticeIcon_d03e0c"
-}
+e.exports={kL:"container_d03e0c",C2:"emojiQuestionContainer_d03e0c",lm:"notice_d03e0c",Ux:"noticeMessage_d03e0c",EP:"noticeIcon_d03e0c"}

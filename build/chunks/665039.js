@@ -1,10 +1,2 @@
 /** chunk id: 665039, original params: e,_,t (module,exports,require) **/
-t.d(_, {
-    j: () => o
-});
-var a = t(64700),
-    c = t(77729);
-
-function o(e) {
-    return (0, a.useMemo)(() => null == e || null == c.A.clips.getClipProtocolURLFromPath ? null : c.A.clips.getClipProtocolURLFromPath(e.filepath), [e])
-}
+t.d(_,{j:()=>o});var a=t(64700),c=t(77729);function o(e){return(0,a.useMemo)(()=>null==e||null==c.A.clips.getClipProtocolURLFromPath?null:c.A.clips.getClipProtocolURLFromPath(e.filepath),[e])}

@@ -1,20 +1,2 @@
 /** chunk id: 53705, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    $: () => r,
-    L: () => a
-});
-var i = n(73153),
-    s = n(154323);
-
-function a(e, t) {
-    let n = "boolean" == typeof t ? t : !s.A.get(e);
-    i.h.dispatch({
-        type: "DEV_TOOLS_DESIGN_TOGGLE_WEB_SET",
-        toggle: e,
-        value: n
-    })
-}
-
-function r() {
-    for (let e in s.A.enabled()) a(e, !1)
-}
+n.d(t,{$:()=>r,L:()=>a});var i=n(73153),s=n(154323);function a(e,t){let n="boolean"==typeof t?t:!s.A.get(e);i.h.dispatch({type:"DEV_TOOLS_DESIGN_TOGGLE_WEB_SET",toggle:e,value:n})}function r(){for(let e in s.A.enabled())a(e,!1)}

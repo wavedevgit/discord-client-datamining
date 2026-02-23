@@ -1,19 +1,2 @@
 /** chunk id: 491057, original params: e,t,r (module,exports,require) **/
-r.d(t, {
-    Qt: () => i,
-    cG: () => _
-});
-var a = r(627968);
-r(64700);
-let [n, _] = (0, r(786300).A)();
-
-function i(e) {
-    let {
-        children: t,
-        ...r
-    } = e;
-    return (0, a.jsx)(n.Provider, {
-        value: r,
-        children: t
-    })
-}
+r.d(t,{Qt:()=>i,cG:()=>_});var a=r(627968);r(64700);let[n,_]=(0,r(786300).A)();function i(e){let{children:t,...r}=e;return(0,a.jsx)(n.Provider,{value:r,children:t})}

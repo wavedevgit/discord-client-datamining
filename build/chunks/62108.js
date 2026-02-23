@@ -1,6 +1,2 @@
 /** chunk id: 62108, original params: e,t,n (module,exports,require) **/
-e.exports = {
-    kL: "container__864dc",
-    s4: "waveformCanvas__864dc",
-    Lq: "loading__864dc"
-}
+e.exports={kL:"container__864dc",s4:"waveformCanvas__864dc",Lq:"loading__864dc"}

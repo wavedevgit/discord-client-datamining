@@ -1,8 +1,2 @@
 /** chunk id: 904482, original params: e,t,a (module,exports,require) **/
-e.exports = {
-    iE: "wrapper__21d85",
-    M6: "slide__21d85",
-    C$: "nav__21d85",
-    vi: "navPrev__21d85 nav__21d85",
-    f8: "navNext__21d85 nav__21d85"
-}
+e.exports={iE:"wrapper__21d85",M6:"slide__21d85",C$:"nav__21d85",vi:"navPrev__21d85 nav__21d85",f8:"navNext__21d85 nav__21d85"}

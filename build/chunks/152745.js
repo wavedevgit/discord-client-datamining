@@ -1,8 +1,2 @@
 /** chunk id: 152745, original params: e,a,t (module,exports,require) **/
-t.d(a, {
-    A: () => r
-});
-var r = {};
-r = {
-    Empty: "Prazno"
-}
+t.d(a,{A:()=>r});var r={};r={Empty:"Prazno"}

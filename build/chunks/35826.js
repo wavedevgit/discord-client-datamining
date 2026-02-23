@@ -1,16 +1,2 @@
 /** chunk id: 35826, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => r
-});
-var i = n(976860),
-    l = n(652215);
-
-function r(e) {
-    let {
-        guildId: t,
-        pageIndex: n,
-        skuId: r,
-        slug: a
-    } = e;
-    (0, i.bG)(l.BVt.CHANNELS_GAME_SHOP(t, n, r, a))
-}
+n.d(t,{A:()=>r});var i=n(976860),l=n(652215);function r(e){let{guildId:t,pageIndex:n,skuId:r,slug:a}=e;(0,i.bG)(l.BVt.CHANNELS_GAME_SHOP(t,n,r,a))}
