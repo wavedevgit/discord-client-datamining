@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(421380),
-    r = n(171316),
-    l = n(71393),
+    l = n(171316),
+    r = n(71393),
     o = n(954571),
     c = n(115063),
     d = n(762183),
@@ -28,7 +28,7 @@ function I(e) {
     let {
         ingress: t,
         guildId: n
-    } = e, p = (0, m.q9)(), I = u.$s.useSetting().includes(n), f = (0, d.K)(), N = (0, _.e)(), b = (0, r.uM)(), j = s.useCallback(e => {
+    } = e, p = (0, m.q9)(), I = u.$s.useSetting().includes(n), f = (0, d.K)(), N = (0, _.e)(), b = (0, l.uM)(), j = s.useCallback(e => {
         let i = (0, c.Tb)();
         e ? i.delete(n) : i.add(n), u.$s.updateSetting(Array.from(i)), o.default.track(C.HAw.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
             action: x.m.DIRECT_MESSAGES_TOGGLE,
@@ -62,7 +62,7 @@ function I(e) {
                         u.n6.updateSetting(t), v(t, !1)
                     },
                     onCancel: () => {
-                        u.n6.updateSetting(t), u.$s.updateSetting(t ? l.A.getGuildIds() : []), v(t, !0)
+                        u.n6.updateSetting(t), u.$s.updateSetting(t ? r.A.getGuildIds() : []), v(t, !0)
                     }
                 })
             },

@@ -47,8 +47,8 @@ let b = (0, r.memo)(function(e) {
             r = D.current.getBoundingClientRect();
         O((i.top - n.top - r.height) / 2)
     });
-    let z = (0, c.Mw)(G),
-        K = (0, r.useMemo)(() => null != t.config.cosponsorMetadata, [t]),
+    let K = (0, c.Mw)(G),
+        z = (0, r.useMemo)(() => null != t.config.cosponsorMetadata, [t]),
         $ = (0, r.useMemo)(() => (0, f.tW)(t, f.fY.REWARD), [t]),
         Q = n ? U + 8 : 0,
         {
@@ -116,8 +116,8 @@ let b = (0, r.memo)(function(e) {
                 onError: () => en($.url)
             }), (0, i.jsx)("div", {
                 className: a()(y.Lw, {
-                    [y.en]: z,
-                    [y.So]: !z
+                    [y.en]: K,
+                    [y.So]: !K
                 })
             }), (0, i.jsx)("div", {
                 ref: j,
@@ -127,7 +127,7 @@ let b = (0, r.memo)(function(e) {
                 },
                 children: (0, i.jsx)(S.Ay, {
                     logotypeClassName: a()(y.wm, {
-                        [y.A0]: K
+                        [y.A0]: z
                     }),
                     quest: t,
                     withGameTile: !1
@@ -144,9 +144,9 @@ let b = (0, r.memo)(function(e) {
                     })
                 }), (0, i.jsx)(u.Text, {
                     variant: "text-sm/medium",
-                    color: z ? "text-muted" : "always-white",
+                    color: K ? "text-muted" : "always-white",
                     style: {
-                        opacity: z ? 1 : .75
+                        opacity: K ? 1 : .75
                     },
                     children: v.intl.format(v.t["kXVcV+"], {
                         reward: B.name,

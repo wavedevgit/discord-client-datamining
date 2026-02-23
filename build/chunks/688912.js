@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(873298),
     a = n(86689),
-    r = n(639383),
-    l = n(704724),
+    l = n(639383),
+    r = n(704724),
     o = n(171316),
     c = n(500470),
     d = n(985018);
@@ -24,7 +24,7 @@ function u() {
         }];
     if (null == t || null == e) return null;
     let u = t => {
-            (0, l.Jz)(e, t)
+            (0, r.Jz)(e, t)
         },
         {
             explicitContentFriendDm: _,
@@ -32,14 +32,14 @@ function u() {
         } = t;
     return (0, i.jsxs)(a.E, {
         description: d.intl.string(d.t.Wnojv1),
-        children: [(0, i.jsx)(r.A, {
+        children: [(0, i.jsx)(l.A, {
             title: d.intl.string(d.t["+uI23H"]),
             value: _,
             onChange: e => u({
                 explicitContentFriendDm: e
             }),
             options: n
-        }), (0, i.jsx)(r.A, {
+        }), (0, i.jsx)(l.A, {
             title: d.intl.string(d.t["Yh+HX1"]),
             value: m,
             onChange: e => u({

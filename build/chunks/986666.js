@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(780964),
     a = n(358776),
-    r = n(782844),
-    l = n(840065),
+    l = n(782844),
+    r = n(840065),
     o = n(871930),
     c = n(355097),
     d = n(531525),
@@ -22,9 +22,9 @@ function m() {
             description: _.intl.format(_.t.R5N31P, {
                 onClick: () => {
                     let e = (0, a.WJ)("DataUsageDisclaimer");
-                    (0, l.openUserSettings)(e ? s.X.ACCOUNT_REMOVAL_SETTING : s.X.ACCOUNT_PANEL, {
+                    (0, r.openUserSettings)(e ? s.X.ACCOUNT_REMOVAL_SETTING : s.X.ACCOUNT_PANEL, {
                         section: u.nc_.ACCOUNT,
-                        subsection: r.D.SECURITY,
+                        subsection: l.D.SECURITY,
                         scrollPosition: e ? void 0 : c.Ew.AccountScrollPositions.DISABLE_ACCOUNT
                     })
                 }

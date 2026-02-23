@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(503698),
-    r = n.n(a),
-    l = n(475539),
+    l = n.n(a),
+    r = n(475539),
     o = n(615300),
     c = n(397927),
     d = n(311907),
@@ -54,8 +54,8 @@ function A(e) {
             targetColor: s,
             animationDelay: a
         } = T.current, {
-            useReducedMotion: r
-        } = u.A, l = 200 * !r;
+            useReducedMotion: l
+        } = u.A, r = 200 * !l;
         E({
             reset: !0,
             immediate: !1,
@@ -64,36 +64,36 @@ function A(e) {
                 borderColor: e
             },
             config: {
-                duration: l,
+                duration: r,
                 easing: o.A.Easing.ease
             }
         }), E({
             delay: a,
-            immediate: r,
+            immediate: l,
             to: [{
                 backgroundColor: s,
                 borderColor: i
             }],
             config: {
-                duration: l,
+                duration: r,
                 easing: o.A.Easing.ease
             }
         }), E({
             delay: a + 200 + 200,
-            immediate: r,
+            immediate: l,
             to: [{
                 backgroundColor: n,
                 borderColor: n
             }],
             config: {
-                duration: l,
+                duration: r,
                 easing: o.A.Easing.ease
             },
             onRest: t
         })
-    }, [E]), (0, i.jsx)(l.animated.div, {
+    }, [E]), (0, i.jsx)(r.animated.div, {
         style: p,
-        className: r()(m.h, n),
+        className: l()(m.h, n),
         children: t
     })
 }
@@ -103,10 +103,10 @@ function g(e) {
         children: t,
         scrollPosition: n,
         animationDelay: a
-    } = e, r = (0, d.bG)([_.A], () => _.A.getScrollPosition() === n), [l, o] = s.useState(!1);
+    } = e, l = (0, d.bG)([_.A], () => _.A.getScrollPosition() === n), [r, o] = s.useState(!1);
     return (s.useEffect(() => {
-        r && o(!0)
-    }, [r]), l) ? (0, i.jsx)(A, {
+        l && o(!0)
+    }, [l]), r) ? (0, i.jsx)(A, {
         animationDelay: a,
         onFlashEnd: () => o(!1),
         children: t

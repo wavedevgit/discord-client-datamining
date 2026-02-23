@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(503698),
-    r = n.n(a),
-    l = n(235986),
+    l = n.n(a),
+    r = n(235986),
     o = n(683754);
 let c = e => {
         let {
@@ -14,9 +14,9 @@ let c = e => {
             className: n,
             splashArtURL: s
         } = e;
-        return (0, i.jsxs)(l.A, {
-            className: r()(o.wx, n),
-            align: l.A.Align.CENTER,
+        return (0, i.jsxs)(r.A, {
+            className: l()(o.wx, n),
+            align: r.A.Align.CENTER,
             children: [(0, i.jsx)("div", {
                 className: o.Bn,
                 style: null != s ? {
@@ -31,7 +31,7 @@ let c = e => {
             className: n
         } = e;
         return (0, i.jsx)("div", {
-            className: r()(o.rf, n),
+            className: l()(o.rf, n),
             children: t
         })
     };
@@ -46,7 +46,7 @@ class u extends s.PureComponent {
             onMouseLeave: s
         } = this.props;
         return (0, i.jsx)("div", {
-            className: r()(o.Nr, t),
+            className: l()(o.Nr, t),
             onMouseEnter: n,
             onMouseLeave: s,
             children: e

@@ -7,8 +7,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(503698),
-    r = n.n(a),
-    l = n(158954),
+    l = n.n(a),
+    r = n(158954),
     o = n(311907),
     c = n(827734),
     d = n(990078),
@@ -47,7 +47,7 @@ let V = e => {
         {
             isJoining: s,
             joinErrorMessage: a,
-            showJoinErrorMessage: r
+            showJoinErrorMessage: l
         } = (0, o.cf)([f.A], () => ({
             isJoining: f.A.isJoining(n.id),
             joinErrorMessage: "" === f.A.joinErrorMessage(n.id) ? U.intl.string(U.t.j2d6Km) : f.A.joinErrorMessage(n.id),
@@ -84,7 +84,7 @@ let V = e => {
                     })
                 })]
             }), t]
-        }), r && (0, i.jsx)(_.Text, {
+        }), l && (0, i.jsx)(_.Text, {
             variant: "text-xs/normal",
             color: "text-feedback-critical",
             className: k.R,
@@ -94,7 +94,7 @@ let V = e => {
 };
 
 function w(e) {
-    let t, n, a, r, o, m, g, {
+    let t, n, a, l, o, m, g, {
             onDisconnect: h,
             account: S,
             theme: f,
@@ -129,7 +129,7 @@ function w(e) {
         null != e && (P(e), A.A.setVisibility(S.type, S.id, e), z(null)), null != t && (H(t), A.A.setMetadataVisibility(S.type, S.id, t), K(null))
     }, [S]), (0, i.jsxs)("div", {
         className: k.FI,
-        children: [(t = x.A.get(S.type), n = x.A.get(J), a = "1" === (S.metadata ?? {})[M.pK.TWITTER_VERIFIED], r = null, t.type === G.fg2.TWITTER && a && (r = (0, i.jsx)(d.m, {
+        children: [(t = x.A.get(S.type), n = x.A.get(J), a = "1" === (S.metadata ?? {})[M.pK.TWITTER_VERIFIED], l = null, t.type === G.fg2.TWITTER && a && (l = (0, i.jsx)(d.m, {
             text: U.intl.string(U.t.Jebrww),
             children: (0, i.jsx)(I.A, {
                 color: c.A.unsafe_rawColors.TWITTER.css,
@@ -152,9 +152,9 @@ function w(e) {
                         variant: "text-md/semibold",
                         className: k.RW,
                         children: S.name
-                    }), null != r && (0, i.jsx)("div", {
+                    }), null != l && (0, i.jsx)("div", {
                         className: k.cG,
-                        children: r
+                        children: l
                     })]
                 }), (0, i.jsx)(_.Text, {
                     variant: "text-xs/normal",
@@ -166,7 +166,7 @@ function w(e) {
                 className: k.uH,
                 onClick: function() {
                     let e = x.A.get(S.type);
-                    (0, _.qfG)(t => (0, i.jsx)(l.Modal, {
+                    (0, _.qfG)(t => (0, i.jsx)(r.Modal, {
                         title: U.intl.formatToPlainString(U.t.U5x12f, {
                             name: e.name
                         }),
@@ -239,7 +239,7 @@ function w(e) {
                 })
             }, "member-since")));
             let a = X.includes(e.id),
-                r = U.intl.string(U.t.wzzjk9);
+                l = U.intl.string(U.t.wzzjk9);
             if (null == n || 0 === n.length)
                 if (!0 !== x.A.get(e.type).hasMetadata) return null;
                 else n = [(0, i.jsx)(_.LpS, {
@@ -251,11 +251,11 @@ function w(e) {
                     children: U.intl.format(U.t.Up2ni7, {
                         helpdeskUrl: v.A.getArticleURL(G.MVz.CONNECTION_DETAILS)
                     })
-                }, "label")], r = U.intl.string(U.t["LVh3/5"]);
-            return a && (r = U.intl.string(U.t.i4jeWR)), n.push((0, i.jsx)("div", {
+                }, "label")], l = U.intl.string(U.t["LVh3/5"]);
+            return a && (l = U.intl.string(U.t.i4jeWR)), n.push((0, i.jsx)("div", {
                 className: k.jy,
                 children: (0, i.jsx)(_.Button, {
-                    text: r,
+                    text: l,
                     variant: "secondary",
                     size: "sm",
                     loading: Z,
@@ -325,8 +325,8 @@ function w(e) {
             }), g, m, o]
         })), function() {
             if (S.revoked || S.integrations.length > 0) return (0, i.jsx)(_.cGx, {})
-        }(), S.revoked ? (0, i.jsx)(l.po8, {
-            messageType: l.YCn.INFO,
+        }(), S.revoked ? (0, i.jsx)(r.po8, {
+            messageType: r.YCn.INFO,
             children: U.intl.format(U.t["6C4lgA"], {
                 onReconnect: function() {
                     (0, C.A)({
@@ -376,10 +376,10 @@ function Y() {
         }, e.type)), (0, i.jsx)(d.m, {
             text: U.intl.string(U.t.QqTz8b),
             children: (0, i.jsx)("div", {
-                className: r()(k.ej, k.__invalid_accountButton),
+                className: l()(k.ej, k.__invalid_accountButton),
                 children: (0, i.jsx)(_.vN3, {
                     children: (0, i.jsx)("button", {
-                        className: r()(k.R8, k.U$),
+                        className: l()(k.R8, k.U$),
                         type: "button",
                         onClick: function() {
                             m.h.dispatch({
@@ -405,7 +405,7 @@ function F(e) {
         fetching: n,
         accounts: s,
         theme: a,
-        locale: r
+        locale: l
     } = e;
     return t = n ? (0, i.jsx)(_.y$y, {
         type: _.y$y.Type.SPINNING_CIRCLE
@@ -418,7 +418,7 @@ function F(e) {
     }) : s.filter(e => x.A.isSupported(e.type)).map((e, t) => (0, i.jsx)(w, {
         theme: a,
         account: e,
-        locale: r,
+        locale: l,
         onDisconnect: () => (function(e) {
             let {
                 type: t,

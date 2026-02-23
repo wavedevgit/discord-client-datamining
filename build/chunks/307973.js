@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(503698),
     a = n.n(s),
-    r = n(608416),
-    l = n(285637),
+    l = n(608416),
+    r = n(285637),
     o = n(194225),
     c = n(104400),
     d = n(737968),
@@ -30,25 +30,25 @@ let m = e => {
     } = e;
     return (0, i.jsxs)(i.Fragment, {
         children: [null != s && (0, i.jsx)("div", {
-            className: a()(l.nJ, s),
-            children: (0, i.jsx)(r.Ay, {
+            className: a()(r.nJ, s),
+            children: (0, i.jsx)(l.Ay, {
                 blurAnimationData: {
                     startBlurRadius: 10,
                     endBlurRadius: 0,
-                    duration: r.$G
+                    duration: l.$G
                 },
                 scaleAnimationData: {
                     startScale: .85,
                     endScale: 1,
-                    duration: r.$G
+                    duration: l.$G
                 },
                 yAxisAnimationData: {
                     range: 15,
-                    duration: r.XN,
-                    path: r.aV.COSINE
+                    duration: l.XN,
+                    path: l.aV.COSINE
                 },
                 parallaxAnimationData: null != n ? {
-                    pathDirection: r.MN.UP,
+                    pathDirection: l.MN.UP,
                     range: 125,
                     containerVisibilityPercentage: n,
                     changeOpacity: !0
@@ -63,15 +63,15 @@ let m = e => {
                 })
             })
         }), null != m && (0, i.jsx)("div", {
-            className: a()(l.IN, m),
-            children: (0, i.jsx)(r.Ay, {
+            className: a()(r.IN, m),
+            children: (0, i.jsx)(l.Ay, {
                 yAxisAnimationData: {
                     range: 15,
-                    duration: r.XN,
-                    path: r.aV.COSINE
+                    duration: l.XN,
+                    path: l.aV.COSINE
                 },
                 parallaxAnimationData: null != n ? {
-                    pathDirection: r.MN.DOWN,
+                    pathDirection: l.MN.DOWN,
                     range: 50,
                     containerVisibilityPercentage: n,
                     changeOpacity: !0
@@ -86,15 +86,15 @@ let m = e => {
                 })
             })
         }), null != A && (0, i.jsx)("div", {
-            className: a()(l.Gj, A),
-            children: (0, i.jsx)(r.Ay, {
+            className: a()(r.Gj, A),
+            children: (0, i.jsx)(l.Ay, {
                 yAxisAnimationData: {
                     range: 15,
-                    duration: r.XN,
-                    path: r.aV.SINE
+                    duration: l.XN,
+                    path: l.aV.SINE
                 },
                 parallaxAnimationData: null != n ? {
-                    pathDirection: r.MN.DOWN,
+                    pathDirection: l.MN.DOWN,
                     range: 120,
                     containerVisibilityPercentage: n,
                     changeOpacity: !0
@@ -109,25 +109,25 @@ let m = e => {
                 })
             })
         }), null != g && (0, i.jsx)("div", {
-            className: a()(l.FV, g),
-            children: (0, i.jsx)(r.Ay, {
+            className: a()(r.FV, g),
+            children: (0, i.jsx)(l.Ay, {
                 blurAnimationData: {
                     startBlurRadius: 5,
                     endBlurRadius: 0,
-                    duration: r.Mp
+                    duration: l.Mp
                 },
                 scaleAnimationData: {
                     startScale: .85,
                     endScale: 1,
-                    duration: r.Mp
+                    duration: l.Mp
                 },
                 yAxisAnimationData: {
                     range: 15,
-                    duration: r.XN,
-                    path: r.aV.SINE
+                    duration: l.XN,
+                    path: l.aV.SINE
                 },
                 parallaxAnimationData: null != n ? {
-                    pathDirection: r.MN.UP,
+                    pathDirection: l.MN.UP,
                     range: 200,
                     containerVisibilityPercentage: n,
                     changeOpacity: !0
@@ -142,25 +142,25 @@ let m = e => {
                 })
             })
         }), null != h && (0, i.jsx)("div", {
-            className: a()(l.E1, h),
-            children: (0, i.jsx)(r.Ay, {
+            className: a()(r.E1, h),
+            children: (0, i.jsx)(l.Ay, {
                 blurAnimationData: {
                     startBlurRadius: 0,
                     endBlurRadius: 2,
-                    duration: r.$G
+                    duration: l.$G
                 },
                 scaleAnimationData: {
                     startScale: 1,
                     endScale: .85,
-                    duration: r.$G
+                    duration: l.$G
                 },
                 yAxisAnimationData: {
                     range: 20,
-                    duration: r.Mp,
-                    path: r.aV.COSINE
+                    duration: l.Mp,
+                    path: l.aV.COSINE
                 },
                 parallaxAnimationData: null != n ? {
-                    pathDirection: r.MN.UP,
+                    pathDirection: l.MN.UP,
                     range: 50,
                     containerVisibilityPercentage: n,
                     changeOpacity: !0

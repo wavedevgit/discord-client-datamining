@@ -8,8 +8,8 @@ n.d(t, {
 });
 var i, s = n(873298),
     a = n(253932),
-    r = n(498642),
-    l = n(71393),
+    l = n(498642),
+    r = n(71393),
     o = n(711014),
     c = n(115063),
     d = ((i = {}).RESTRICTING = "restricting", i.EXPANDING = "expanding", i);
@@ -47,16 +47,16 @@ function g(e, t) {
         d = o.Ay.getFlattenedGuildIds(),
         m = e === u.ACTIVITY_STATUS_OFF && t === u.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS || e === u.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS && t === u.ACTIVITY_STATUS_OFF ? "large_only" : e === u.ACTIVITY_STATUS_ON && t === u.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS || e === u.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS && t === u.ACTIVITY_STATUS_ON ? "small_only" : "all",
         A = d.filter(e => {
-            if (null == l.A.getGuild(e)) return !1;
+            if (null == r.A.getGuild(e)) return !1;
             let t = a.has(e);
             if ("restricting" === s && t || "expanding" === s && !t) return !1;
             if ("all" === m) return !0;
-            let n = r.A.getMemberCount(e);
+            let n = l.A.getMemberCount(e);
             return null == n ? "restricting" === s : "large_only" === m ? n > 200 : n <= 200
         });
     return 0 === A.length ? null : (A.sort((e, t) => {
-        let n = l.A.getGuild(e),
-            i = l.A.getGuild(t);
+        let n = r.A.getGuild(e),
+            i = r.A.getGuild(t);
         return n?.joinedAt == null && i?.joinedAt == null ? 0 : n?.joinedAt == null ? 1 : i?.joinedAt == null ? -1 : new Date(i.joinedAt).getTime() - new Date(n.joinedAt).getTime()
     }), {
         affectedGuildIds: A,

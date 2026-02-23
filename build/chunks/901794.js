@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(444802),
     a = n(524738),
-    r = n(871930),
-    l = n(975571),
+    l = n(871930),
+    r = n(975571),
     o = n(688912),
     c = n(443357),
     d = n(985018),
@@ -25,11 +25,11 @@ function _() {
             component: () => (0, i.jsx)(c.q, {}),
             orientation: "vertical"
         }];
-    return (0, i.jsxs)(r.h, {
-        children: [(0, i.jsx)(r._, {
+    return (0, i.jsxs)(l.h, {
+        children: [(0, i.jsx)(l._, {
             header: d.intl.string(d.t["Hj/But"]),
             description: d.intl.format(d.t["H/Icz+"], {
-                learnMoreLink: l.A.getArticleURL(e)
+                learnMoreLink: r.A.getArticleURL(e)
             })
         }), (0, i.jsx)(a._, {
             tabs: t,

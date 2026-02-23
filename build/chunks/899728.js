@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(311907),
     s = n(988506),
     a = n(97352),
-    r = n(166403),
-    l = n(927578),
+    l = n(166403),
+    r = n(927578),
     o = n(580630),
     c = n(231855),
     d = n(88001),
@@ -18,7 +18,7 @@ let m = (e, t) => {
             useCachedData: !0,
             fetch: m
         }),
-        g = (0, i.bG)([r.A], () => r.A.getPremiumGroupSubscription());
+        g = (0, i.bG)([l.A], () => l.A.getPremiumGroupSubscription());
     return e === s.qT.UNSPECIFIED ? null : {
         subheaderString: null == (n = e === s.qT.PRIMARY ? (e => {
             if (null == e) return null;
@@ -26,11 +26,11 @@ let m = (e, t) => {
             if (null == t) return null;
             let n = a.A.get(t);
             if (null == n) return null;
-            let i = l.Ay.getPrice(t),
+            let i = r.Ay.getPrice(t),
                 s = (0, o.$g)(i.amount, i.currency),
-                r = n.interval,
+                l = n.interval,
                 c = n.intervalCount;
-            return (0, o.CE)(s, r, c)
+            return (0, o.CE)(s, l, c)
         })(g) : null == A ? null : _.intl.format(u.default.Nu9LNm, {
             primaryName: A,
             premiumGroupProductName: (0, d.DP)()

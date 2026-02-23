@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(93857),
     a = n(871930),
-    r = n(578746),
-    l = n(975571),
+    l = n(578746),
+    r = n(975571),
     o = n(500470),
     c = n(652215),
     d = n(842130),
@@ -17,10 +17,10 @@ function _() {
     let e = (0, o.k)() ?? void 0,
         t = s.kf.useControlledSetting(e);
     return (0, i.jsx)(a.h, {
-        children: (0, i.jsx)(r.Ay, {
+        children: (0, i.jsx)(l.Ay, {
             title: u.intl.string(d.default.ZhaNu8),
             note: u.intl.format(d.default.cnCK6b, {
-                helpdeskArticle: l.A.getArticleURL(c.MVz.QUESTS_PRIVACY_CONTROLS)
+                helpdeskArticle: r.A.getArticleURL(c.MVz.QUESTS_PRIVACY_CONTROLS)
             }),
             value: !t,
             onChange: t => s.kf.updateControlledSetting(e, !t)

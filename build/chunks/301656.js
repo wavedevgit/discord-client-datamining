@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(311907),
-    r = n(827734),
-    l = n(397927),
+    l = n(827734),
+    r = n(397927),
     o = n(532197),
     c = n(403362),
     d = n(874486),
@@ -20,13 +20,13 @@ function g(e) {
         onBackClick: t
     } = e, n = (0, a.bG)([d.A], () => d.A.getAllUnlockedAchievements()), g = s.useMemo(() => Object.values(n).sort((e, t) => t.dateUnlocked - e.dateUnlocked), [n]), h = s.useMemo(() => Object.values(u.l0).filter(c.Vq).filter(e => null == n[e.id]).sort((e, t) => e.rarity - t.rarity), [n]);
     return (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsxs)(l.DUT, {
+        children: [(0, i.jsxs)(r.DUT, {
             onClick: t,
             className: A.vv,
             children: [(0, i.jsx)(o.A, {
                 direction: o.A.Directions.LEFT,
                 className: A.Kk
-            }), (0, i.jsx)(l.Text, {
+            }), (0, i.jsx)(r.Text, {
                 variant: "text-lg/normal",
                 color: "text-default",
                 children: m.intl.string(m.t["13/7kX"])
@@ -35,20 +35,20 @@ function g(e) {
             className: A.N1,
             children: [(0, i.jsxs)("div", {
                 className: A.if,
-                children: [(0, i.jsx)(l.Heading, {
+                children: [(0, i.jsx)(r.Heading, {
                     variant: "heading-lg/extrabold",
                     color: "text-strong",
                     children: m.intl.string(m.t["6jI0hd"])
-                }), (0, i.jsx)(l.Text, {
+                }), (0, i.jsx)(r.Text, {
                     variant: "text-md/normal",
                     color: "text-default",
                     children: m.intl.string(m.t.GuUItX)
                 })]
             }), (0, i.jsx)("div", {
                 className: A.nr,
-                children: (0, i.jsx)(l.OR, {
+                children: (0, i.jsx)(r.OR, {
                     size: "custom",
-                    color: r.A.unsafe_rawColors.ORANGE_345.css,
+                    color: l.A.unsafe_rawColors.ORANGE_345.css,
                     width: 40,
                     height: 40
                 })
@@ -72,7 +72,7 @@ function g(e) {
             className: A.yF,
             children: [(0, i.jsx)("div", {
                 className: A.if,
-                children: (0, i.jsx)(l.Text, {
+                children: (0, i.jsx)(r.Text, {
                     variant: "text-md/bold",
                     color: "text-default",
                     children: m.intl.string(m.t.GFyMg1)

@@ -9,7 +9,7 @@ let a = e => {
     let {
         initialSelectedEffect: t,
         analyticsLocations: a,
-        guild: r
+        guild: l
     } = e;
     (0, s.mMO)(async () => {
         let {
@@ -17,7 +17,7 @@ let a = e => {
         } = await n.e("92818").then(n.bind(n, 892873));
         return n => (0, i.jsx)(e, {
             ...n,
-            guild: r,
+            guild: l,
             initialSelectedEffect: t,
             analyticsLocations: a
         })

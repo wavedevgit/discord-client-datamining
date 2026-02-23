@@ -1,32 +1,32 @@
 /** chunk id: 622017, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => l
+    A: () => r
 });
 var i = n(64700),
     s = n(311907),
     a = n(73153),
-    r = n(233317);
+    l = n(233317);
 
-function l(e) {
+function r(e) {
     let {
         useCachedData: t = !1,
         fetch: n = !0
     } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, {
-        premiumGroupMembers: l,
+        premiumGroupMembers: r,
         isFetchingMembers: o,
         isUpdatingMembers: c
-    } = (0, s.cf)([r.A], () => ({
-        premiumGroupMembers: r.A.getMembers(),
-        isFetchingMembers: r.A.isFetchingMembers(),
-        isUpdatingMembers: r.A.isUpdatingMembers()
+    } = (0, s.cf)([l.A], () => ({
+        premiumGroupMembers: l.A.getMembers(),
+        isFetchingMembers: l.A.isFetchingMembers(),
+        isUpdatingMembers: l.A.isUpdatingMembers()
     }));
     return (0, i.useEffect)(() => {
-        !n || t && r.A.hasFetchedMembers() || null != e && a.h.dispatch({
+        !n || t && l.A.hasFetchedMembers() || null != e && a.h.dispatch({
             type: "PREMIUM_GROUP_MEMBERS_REQUEST",
             subscriptionId: e
         })
     }, [n, e, t]), {
-        premiumGroupMembers: l,
+        premiumGroupMembers: r,
         isLoading: o || c
     }
 }

@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(311907),
-    r = n(397927),
-    l = n(631670),
+    l = n(397927),
+    r = n(631670),
     o = n(793574),
     c = n(688810),
     d = n(422936),
@@ -66,7 +66,7 @@ function M(e) {
         newestAnalyticsLocation: Z,
         sourceAnalyticsLocations: q
     } = (0, c.Ay)(o.A.USER_SETTINGS_TRY_OUT_PREMIUM), X = e => {
-        e && ((0, l.zq)(B), (0, E.Zz)(H), (0, E.Dv)(Y), S.default.track(y.HAw.TRY_IT_OUT_PRESET_SELECTED, {
+        e && ((0, r.zq)(B), (0, E.Zz)(H), (0, E.Dv)(Y), S.default.track(y.HAw.TRY_IT_OUT_PRESET_SELECTED, {
             preset: F
         }))
     };
@@ -93,7 +93,7 @@ function M(e) {
             children: [(0, i.jsx)(f.A, {
                 layoutClassName: G.th,
                 profilePreviewTitle: (0, i.jsxs)(i.Fragment, {
-                    children: [(0, i.jsx)(r.tvc, {
+                    children: [(0, i.jsx)(l.tvc, {
                         size: "md",
                         color: "currentColor",
                         className: G.PC
@@ -110,10 +110,10 @@ function M(e) {
                 children: (0, i.jsxs)("div", {
                     className: G.EN,
                     children: [(0, i.jsxs)("div", {
-                        children: [(0, i.jsx)(r.Heading, {
+                        children: [(0, i.jsx)(l.Heading, {
                             variant: "heading-xl/extrabold",
                             children: D.intl.string(D.t["2zGdAW"])
-                        }), (0, i.jsx)(r.Text, {
+                        }), (0, i.jsx)(l.Text, {
                             className: G.h_,
                             variant: "text-sm/normal",
                             children: D.intl.string(D.t.xeEC20)
@@ -145,7 +145,7 @@ function M(e) {
                     }), (0, i.jsx)(b.A, {
                         user: t,
                         className: G.fz
-                    }), !Q && (0, i.jsx)(r.Text, {
+                    }), !Q && (0, i.jsx)(l.Text, {
                         variant: "text-sm/normal",
                         children: D.intl.string(D.t["smo74/"])
                     })]

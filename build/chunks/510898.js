@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(397927),
-    r = n(403362),
-    l = n(143582),
+    l = n(403362),
+    r = n(143582),
     o = n(915043),
     c = n(888848),
     d = n(331441),
@@ -60,7 +60,7 @@ function A(e) {
             null != t && (E(t => ({
                 ...t,
                 [e.id]: c.G.LOADING
-            })), (0, l._R)(t).then(() => {
+            })), (0, r._R)(t).then(() => {
                 E(t => ({
                     ...t,
                     [e.id]: c.G.DONE
@@ -97,6 +97,6 @@ function A(e) {
                 navigateToHome: h
             });
         default:
-            (0, r.xb)(g)
+            (0, l.xb)(g)
     }
 }

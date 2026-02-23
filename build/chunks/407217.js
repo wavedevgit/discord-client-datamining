@@ -7,8 +7,8 @@ var i = n(627968);
 n(64700);
 var s = n(397927),
     a = n(253604),
-    r = n(287809),
-    l = n(87719),
+    l = n(287809),
+    r = n(87719),
     o = n(244975),
     c = n(788868),
     d = n(652215),
@@ -19,13 +19,13 @@ function m(e) {
     let {
         analyticsSource: t,
         onSubscribeFinish: a
-    } = e, l = r.default.getCurrentUser();
-    null != l && (0, s.mMO)(async () => {
+    } = e, r = l.default.getCurrentUser();
+    null != r && (0, s.mMO)(async () => {
         let {
             default: e
         } = await Promise.resolve().then(n.bind(n, 407217));
         return n => (0, i.jsx)(e, {
-            user: l,
+            user: r,
             analyticsSource: t,
             analyticsLocation: {
                 section: d.JJy.USER_PROFILE,
@@ -51,7 +51,7 @@ function A(e) {
         body: u.intl.string(u.t.KckEj7),
         glowUp: u.intl.string(u.t.reVc0M),
         onSecondaryClick: () => {
-            (0, l.x)(n)
+            (0, r.x)(n)
         },
         secondaryCTA: u.intl.string(u.t.PcTCB7),
         onClose: n,

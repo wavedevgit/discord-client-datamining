@@ -6,9 +6,9 @@ n.d(t, {
 var i = n(562465),
     s = n(73153),
     a = n(652215),
-    r = n(985018);
+    l = n(985018);
 
-function l(e) {
+function r(e) {
     return null != e && null != e.body && s.h.dispatch({
         type: "UPDATE_CONSENTS",
         consents: {
@@ -18,7 +18,7 @@ function l(e) {
 }
 
 function o(e) {
-    throw Error(e.status >= 500 && e.status <= 599 ? r.intl.string(r.t.cvJdtg) : null != e && null != e.body && null != e.body.message ? e.body.message : r.intl.string(r.t.cvJdtg))
+    throw Error(e.status >= 500 && e.status <= 599 ? l.intl.string(l.t.cvJdtg) : null != e && null != e.body && null != e.body.message ? e.body.message : l.intl.string(l.t.cvJdtg))
 }
 
 function c() {
@@ -26,7 +26,7 @@ function c() {
         url: a.Rsh.SETTINGS_CONSENT,
         oldFormErrors: !0,
         rejectWithError: !1
-    }).then(l, e => Promise.reject(Error(e.body.message)))
+    }).then(r, e => Promise.reject(Error(e.body.message)))
 }
 
 function d(e, t) {
@@ -38,5 +38,5 @@ function d(e, t) {
         },
         oldFormErrors: !0,
         rejectWithError: !1
-    }).then(l, o)
+    }).then(r, o)
 }

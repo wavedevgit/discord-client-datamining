@@ -86,8 +86,8 @@ let H = r.memo(function() {
         w.Ay.setMinimumSize(800, 500)
     }, []);
     let q = (0, O.NC)(),
-        z = (0, o.bG)([M.A, y.A], () => (0, U._U)()),
-        K = function(e) {
+        K = (0, o.bG)([M.A, y.A], () => (0, U._U)()),
+        z = function(e) {
             let {
                 showBackForwardButtons: t,
                 showNotificationsInbox: n,
@@ -101,7 +101,7 @@ let H = r.memo(function() {
             titlebarFastTravel: n,
             showRecentsButton: W
         });
-    if (z) return null;
+    if (K) return null;
     let $ = a()(k.x, {
         [k.U]: "sm" === E
     });
@@ -112,15 +112,15 @@ let H = r.memo(function() {
                 className: t,
                 leading: (0, i.jsxs)(i.Fragment, {
                     children: [s && (0, i.jsx)(g.A, {
-                        firstElementFocusJumpSectionProps: "BACK_FORWARD_NAVIGATION" === K ? e : void 0
+                        firstElementFocusJumpSectionProps: "BACK_FORWARD_NAVIGATION" === z ? e : void 0
                     }), Y && (0, i.jsx)(v.A, {
-                        focusSectionProps: "NOTIFICATIONS_INBOX" === K ? e : void 0
+                        focusSectionProps: "NOTIFICATIONS_INBOX" === z ? e : void 0
                     })]
                 }),
                 title: (0, i.jsx)(B, {
                     withFastTravel: n,
                     quickSwitcherInsteadOfTitle: l,
-                    focusSectionProps: "TITLEBAR_FAST_TRAVEL" === K ? e : void 0
+                    focusSectionProps: "TITLEBAR_FAST_TRAVEL" === z ? e : void 0
                 }),
                 trailing: (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)(I.A, {
@@ -129,13 +129,13 @@ let H = r.memo(function() {
                         canShowReminder: !0,
                         className: $
                     }), W && (0, i.jsx)(b.A, {
-                        ..."RECENTS" === K ? e : {},
+                        ..."RECENTS" === z ? e : {},
                         className: $
                     }), S ? (0, i.jsx)(T.w, {
-                        focusSectionProps: "HELP" === K ? e : void 0,
+                        focusSectionProps: "HELP" === z ? e : void 0,
                         className: $
                     }) : (0, i.jsx)(C.A, {
-                        focusSectionProps: "HELP" === K ? e : void 0,
+                        focusSectionProps: "HELP" === z ? e : void 0,
                         className: $
                     }), V ? (0, i.jsx)(f.R, {
                         className: $

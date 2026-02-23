@@ -1,13 +1,13 @@
 /** chunk id: 100817, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => r
+    A: () => l
 });
 var i = n(627968);
 n(64700);
 var s = n(397927),
     a = n(985018);
 
-function r() {
+function l() {
     return (0, i.jsx)(s.D0$, {
         label: a.intl.string(a.t.EPVq00),
         children: (0, i.jsx)(s.po8, {

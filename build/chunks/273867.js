@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(136722),
     s = n(937724),
     a = n(626584),
-    r = n(142120),
-    l = n(95701),
+    l = n(142120),
+    r = n(95701),
     o = n(961350),
     c = n(734057),
     d = n(317525),
@@ -26,19 +26,19 @@ let p = new class {
         let t = performance.now(),
             [n, i] = await Promise.all([A.A.basicChannels(e).getKvEntries(), A.A.syncedBasicChannels(e).getKvEntries()]),
             s = performance.now() - t,
-            [a, r] = function(e) {
+            [a, l] = function(e) {
                 let t = [],
                     n = [];
                 for (let [i, s] of e)(s ? t : n).push(i);
                 return [t, n]
             }(i),
-            l = new Set(a);
-        return this.synced = l, h.verbose(`loaded in ${s}ms (guilds: ${n.length}, synced: ${l.size} unsynced: ${r.length})`), {
+            r = new Set(a);
+        return this.synced = r, h.verbose(`loaded in ${s}ms (guilds: ${n.length}, synced: ${r.size} unsynced: ${l.length})`), {
             all: n,
-            stale: r,
+            stale: l,
             channels: n.filter(e => {
                 let [t, n] = e;
-                return l.has(t)
+                return r.has(t)
             })
         }
     }
@@ -70,7 +70,7 @@ let p = new class {
             case "unavailable":
                 break;
             case "partial":
-                let e = e => (0, l.UE)(e, n.id);
+                let e = e => (0, r.UE)(e, n.id);
                 this.onGuildUpdate(n.id, n.partial_updates.channels?.map(e) ?? [], n.partial_updates.deleted_channel_ids ?? [], t);
                 break;
             default:
@@ -81,13 +81,13 @@ let p = new class {
         for (let n of e.guilds) this.handleOneGuildCreate(n, t)
     }
     async handlePostConnectionOpen() {
-        let e = r.A.lastTimeConnectedChanged(),
+        let e = l.A.lastTimeConnectedChanged(),
             t = A.A.database();
         if (null == this.synced || null == t || !(0, s.O)()) return;
         let n = u.A.getGuildIds(),
             i = n.filter(e => !this.synced.has(e));
         for (let s of (h.verbose(`scheduling basic_channel optimstic writes (guilds: ${i.length})`), n)) {
-            if (null == this.synced || t !== A.A.database() || e !== r.A.lastTimeConnectedChanged()) break;
+            if (null == this.synced || t !== A.A.database() || e !== l.A.lastTimeConnectedChanged()) break;
             if (!this.synced.has(s)) {
                 h.verbose(`optimstically writing basic_channels (guild: ${s})`);
                 try {

@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(397927),
     a = n(496431),
-    r = n(405269),
-    l = n(985018);
+    l = n(405269),
+    r = n(985018);
 let o = function(e) {
     let {
         className: t,
@@ -17,10 +17,10 @@ let o = function(e) {
         className: t,
         variant: "text-sm/medium",
         color: "text-muted",
-        children: (0, r.uN)(o, {
-            days: l.t.WUTPDc,
-            hours: l.t.c1qodV,
-            minutes: l.t["2+A3dv"]
+        children: (0, l.uN)(o, {
+            days: r.t.WUTPDc,
+            hours: r.t.c1qodV,
+            minutes: r.t["2+A3dv"]
         })
     })
 }

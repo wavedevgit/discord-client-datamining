@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(503698),
-    r = n.n(a),
-    l = n(827734),
+    l = n.n(a),
+    r = n(827734),
     o = n(397927),
     c = n(793574),
     d = n(688810),
@@ -29,7 +29,7 @@ let I = e => {
         return t ? (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(o.BNr, {
                 size: "sm",
-                color: l.A.colors.TEXT_STRONG,
+                color: r.A.colors.TEXT_STRONG,
                 "aria-hidden": !0
             }), (0, i.jsx)(o.AC4, {
                 children: E.intl.string(E.t["tq+6t/"])
@@ -37,7 +37,7 @@ let I = e => {
         }) : (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(o.aoi, {
                 size: "xs",
-                color: l.A.colors.TEXT_STRONG,
+                color: r.A.colors.TEXT_STRONG,
                 "aria-hidden": !0
             }), (0, i.jsx)(o.AC4, {
                 children: E.intl.string(E.t.l4qZrp)
@@ -51,7 +51,7 @@ let I = e => {
             tier2ColumnData: s
         } = e;
         return (0, i.jsxs)("tr", {
-            className: r()(C.nM, C.WQ),
+            className: l()(C.nM, C.WQ),
             children: [(0, i.jsx)("th", {
                 scope: "row",
                 className: C.nx,
@@ -85,7 +85,7 @@ let I = e => {
         } = e;
         return (0, i.jsxs)("tbody", {
             children: [(0, i.jsx)("tr", {
-                className: r()(C.nM, C.Gf),
+                className: l()(C.nM, C.Gf),
                 children: (0, i.jsx)("td", {
                     className: C.nx,
                     colSpan: 3,
@@ -126,7 +126,7 @@ let I = e => {
             tier2Price: n,
             shouldUseDiscountPrice: s,
             tier2DiscountedPriceString: a
-        } = e, r = s ? a : (0, _.$g)(n.amount, n.currency);
+        } = e, l = s ? a : (0, _.$g)(n.amount, n.currency);
         return (0, i.jsx)("thead", {
             children: (0, i.jsxs)("tr", {
                 className: C.U1,
@@ -149,7 +149,7 @@ let I = e => {
                     className: C.Hn,
                     children: (0, i.jsx)(b, {
                         premiumType: p.PremiumTypes.TIER_2,
-                        priceString: r
+                        priceString: l
                     })
                 })]
             })
@@ -159,7 +159,7 @@ let I = e => {
         let t, {
                 className: n,
                 hidePill: a = !1,
-                selectedPlanTier: l = p.PremiumTypes.TIER_2
+                selectedPlanTier: r = p.PremiumTypes.TIER_2
             } = e,
             {
                 analyticsLocations: _
@@ -177,15 +177,15 @@ let I = e => {
         else {
             let e = null != I ? E.intl.string(E.t.IBYG5U) : E.intl.string(E.t.TR2B4T);
             t = (0, i.jsx)(h.D, {
-                className: r()(C.Io, C.SP),
+                className: l()(C.Io, C.SP),
                 text: e
             })
         }
-        let D = f === p.pe.TIER_0 || l === p.PremiumTypes.TIER_0;
+        let D = f === p.pe.TIER_0 || r === p.PremiumTypes.TIER_0;
         return (0, i.jsx)(d.f5, {
             value: _,
             children: (0, i.jsxs)("div", {
-                className: r()(C.zr, n),
+                className: l()(C.zr, n),
                 children: [(0, i.jsx)(o.Heading, {
                     className: C.Qw,
                     variant: "display-md",
@@ -194,7 +194,7 @@ let I = e => {
                 }), (0, i.jsxs)("div", {
                     className: C.wY,
                     children: [(0, i.jsxs)("div", {
-                        className: r()(C.fO, {
+                        className: l()(C.fO, {
                             [C.Vd]: D,
                             [C.hA]: !D
                         }),

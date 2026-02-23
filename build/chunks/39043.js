@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(735438),
-    r = n(942381),
-    l = n(770178),
+    l = n(942381),
+    r = n(770178),
     o = n(894858),
     c = n(641324),
     d = n(78837);
@@ -32,7 +32,7 @@ let u = s.memo(function(e) {
             }
         }), h(!0))
     }, {
-        equalityFn: r.x,
+        equalityFn: l.x,
         fireImmediately: !0
     }), [m, t.key]);
     let p = s.useCallback(e => {
@@ -46,7 +46,7 @@ let u = s.memo(function(e) {
             }))
         }, [m, t.key]),
         E = s.useMemo(() => (0, a.debounce)(p, 50), [p]),
-        C = (0, l.w)(E),
+        C = (0, r.w)(E),
         T = n?.(m),
         S = _?.();
     return (0, i.jsx)(d.f, {

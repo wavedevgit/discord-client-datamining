@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(284009),
-    r = n.n(a),
-    l = n(311907),
+    l = n.n(a),
+    r = n(311907),
     o = n(230109),
     c = n(397927),
     d = n(73153),
@@ -38,18 +38,18 @@ var i = n(627968),
     M = n(166378);
 
 function U() {
-    let e = (0, l.bG)([O.default], () => {
+    let e = (0, r.bG)([O.default], () => {
             let e = O.default.getCurrentUser();
-            return r()(null != e, "UserSettingsProfileCustomization: user cannot be undefined"), e
+            return l()(null != e, "UserSettingsProfileCustomization: user cannot be undefined"), e
         }),
-        t = (0, l.bG)([v.A], () => v.A.hidePersonalInformation),
+        t = (0, r.bG)([v.A], () => v.A.hidePersonalInformation),
         {
             pendingBio: n,
             pendingAvatar: a,
             pendingNameplate: U,
             showNotice: k,
             ...V
-        } = (0, l.cf)([N.A], () => ({
+        } = (0, r.cf)([N.A], () => ({
             ...N.A.getPendingChanges(),
             showNotice: N.A.showNotice()
         })),

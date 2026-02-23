@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(503698),
     a = n.n(s),
-    r = n(421380),
-    l = n(397927),
+    l = n(421380),
+    r = n(397927),
     o = n(688810),
     c = n(507698),
     d = n(954921),
@@ -34,7 +34,7 @@ function x(e) {
     }), {
         pendingAvatarDecoration: I,
         errors: f
-    } = (0, m.CP)(n?.id), N = E ? l.wLn : r.$n;
+    } = (0, m.CP)(n?.id), N = E ? r.wLn : l.$n;
     return (0, i.jsxs)(A.A, {
         className: s,
         forcedDivider: x,
@@ -44,7 +44,7 @@ function x(e) {
         children: [(0, i.jsxs)("div", {
             className: h.NC,
             children: [(0, i.jsx)(N, {
-                size: r.$n.Sizes.SMALL,
+                size: l.$n.Sizes.SMALL,
                 onClick: () => {
                     (0, d.L)({
                         analyticsLocations: C,
@@ -58,7 +58,7 @@ function x(e) {
             }), (void 0 === I ? null != S : null != I) && (0, i.jsx)("div", {
                 "data-button-hoisted-classname-wrapper": !0,
                 className: h.DT,
-                children: (0, i.jsx)(l.Button, {
+                children: (0, i.jsx)(r.Button, {
                     variant: "secondary",
                     size: "sm",
                     text: (0, c.uZ)(t, n) ? g.intl.string(g.t.CHf9iJ) : g.intl.string(g.t.OrokWm),
@@ -78,7 +78,7 @@ let p = e => {
     } = e;
     return (0, i.jsxs)("div", {
         className: h.J_,
-        children: [(0, i.jsx)(l.Text, {
+        children: [(0, i.jsx)(r.Text, {
             variant: "text-xs/bold",
             children: "STAFF ONLY and Experimental. Upload a decoration to view throughout the app."
         }), (0, i.jsx)(_.A, {

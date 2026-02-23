@@ -5,17 +5,17 @@ n.d(t, {
 var i = n(64700),
     s = n(311907),
     a = n(824552),
-    r = n(875444),
-    l = n(546183);
+    l = n(875444),
+    r = n(546183);
 
 function o(e, t) {
-    let n = (0, s.bG)([l.default], () => l.default.getFetchState()),
-        o = (0, s.bG)([l.default], () => e ? l.default.getNewestTokensForNonChildrenApplications() : l.default.getNewestTokens()),
-        c = i.useMemo(() => null == o ? [] : o.filter(e => (0, r.A)(e.application)).map(e => e.application), [o]);
+    let n = (0, s.bG)([r.default], () => r.default.getFetchState()),
+        o = (0, s.bG)([r.default], () => e ? r.default.getNewestTokensForNonChildrenApplications() : r.default.getNewestTokens()),
+        c = i.useMemo(() => null == o ? [] : o.filter(e => (0, l.A)(e.application)).map(e => e.application), [o]);
     return i.useEffect(() => {
         t || a.A.fetch()
     }, [t]), {
-        showLoadingIndicator: n !== l.FetchState.FETCHED && (null == o || 0 === o.length),
+        showLoadingIndicator: n !== r.FetchState.FETCHED && (null == o || 0 === o.length),
         slayerSdkApplications: c
     }
 }

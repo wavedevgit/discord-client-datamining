@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(417597),
     s = n(582754),
     a = n(736653),
-    r = n(780964),
-    l = n(287809),
+    l = n(780964),
+    r = n(287809),
     o = n(255438),
     c = n(927578),
     d = n(788868),
@@ -40,8 +40,8 @@ let U = (e, t, n) => (0, s.Mw)(e) ? t : n,
     k = e => {
         let {
             styles: t
-        } = e, s = (0, a.Ay)(), k = (0, i.bG)([l.default], () => {
-            let e = l.default.getCurrentUser();
+        } = e, s = (0, a.Ay)(), k = (0, i.bG)([r.default], () => {
+            let e = r.default.getCurrentUser();
             return c.Ay.canUsePremiumProfileCustomization(e)
         }), V = (0, o.Xq)(d.f3 / 1024, {
             useKibibytes: !0
@@ -86,7 +86,7 @@ let U = (e, t, n) => (0, s.Mw)(e) ? t : n,
                             let {
                                 openUserSettings: t
                             } = n(840065);
-                            t(r.X.PROFILE_PANEL, {
+                            t(l.X.PROFILE_PANEL, {
                                 section: u.nc_.PROFILE_CUSTOMIZATION,
                                 scrollPosition: _._F.TRY_IT_OUT,
                                 analyticsLocations: e

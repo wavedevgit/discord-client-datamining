@@ -10,8 +10,8 @@ n.d(t, {
 var i = n(64700),
     s = n(311907),
     a = n(873298),
-    r = n(444802),
-    l = n(662502),
+    l = n(444802),
+    r = n(662502),
     o = n(93857),
     c = n(115063),
     d = n(899847),
@@ -45,10 +45,10 @@ let h = () => {
             goreContentFriendDm: i
         } = t ?? {};
         return {
-            goreContentNonFriendDm: (0, _.ky)(n) ? n : (0, r.jj)({
+            goreContentNonFriendDm: (0, _.ky)(n) ? n : (0, l.jj)({
                 isDm: !0
             }),
-            goreContentFriendDm: (0, _.ky)(i) ? i : (0, r.jj)({
+            goreContentFriendDm: (0, _.ky)(i) ? i : (0, l.jj)({
                 isDm: !0,
                 isFriend: !0
             }),
@@ -81,7 +81,7 @@ function T(e) {
             if (null != n) try {
                 await d.Ay.updateTeenConsents(n, t ? [e] : [], t ? [] : [e])
             } catch (e) {
-                l.A.showFailedToast(g.OB.GENERIC_ERROR)
+                r.A.showFailedToast(g.OB.GENERIC_ERROR)
             }
         }, [n, e]))
     }

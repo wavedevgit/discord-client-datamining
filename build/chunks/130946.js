@@ -6,8 +6,8 @@ n.d(t, {
 var i, s = n(627968);
 n(64700);
 var a = n(503698),
-    r = n.n(a),
-    l = n(421380),
+    l = n.n(a),
+    r = n(421380),
     o = n(397927),
     c = n(736653),
     d = n(793574),
@@ -27,7 +27,7 @@ var a = n(503698),
 let f = function(e) {
     let {
         variant: t
-    } = e, n = (0, m.cg)(), i = (0, c.Ay)(), a = (0, o.Mwr)(i) ? l.XD.BRAND_INVERTED : l.XD.BRAND;
+    } = e, n = (0, m.cg)(), i = (0, c.Ay)(), a = (0, o.Mwr)(i) ? r.XD.BRAND_INVERTED : r.XD.BRAND;
     return n ? "APPLICATION_NITRO_HOME" === t ? (0, s.jsx)(() => (0, s.jsx)(u.Y, {
         newLocations: [d.A.PREMIUM_MARKETING_PAGE_BANNER],
         children: (0, s.jsxs)("div", {
@@ -38,7 +38,7 @@ let f = function(e) {
                     className: p.N4
                 })
             }), (0, s.jsx)("div", {
-                className: r()(p.Fg, p.cj),
+                className: l()(p.Fg, p.cj),
                 children: (0, s.jsx)(o.Text, {
                     variant: "eyebrow",
                     color: "always-white",

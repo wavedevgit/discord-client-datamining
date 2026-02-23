@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(503698),
     a = n.n(s),
-    r = n(421380),
-    l = n(397927),
+    l = n(421380),
+    r = n(397927),
     o = n(688810),
     c = n(170887),
     d = n(194509),
@@ -29,16 +29,16 @@ let x = e => {
     } = (0, o.Ay)(n);
     return x ? (0, i.jsx)(o.f5, {
         value: p,
-        children: (0, i.jsxs)(l.hLv, {
+        children: (0, i.jsxs)(r.hLv, {
             className: a()(A.kL, A.pm, t),
             color: "purple",
             children: [(0, i.jsxs)("div", {
                 className: A.FS,
-                children: [(0, i.jsx)(l.Heading, {
+                children: [(0, i.jsx)(r.Heading, {
                     variant: "heading-xxl/bold",
                     className: A.R_,
                     children: _.intl.string(_.t.Ve9Ge6)
-                }), (0, i.jsx)(l.Text, {
+                }), (0, i.jsx)(r.Text, {
                     variant: "text-md/medium",
                     children: _.intl.string(_.t.yQ06u1)
                 }), (0, i.jsx)("div", {
@@ -61,11 +61,11 @@ let x = e => {
             className: a()(m.kL, t),
             children: [(0, i.jsxs)("div", {
                 className: m.FS,
-                children: [(0, i.jsx)(l.Heading, {
+                children: [(0, i.jsx)(r.Heading, {
                     variant: "heading-lg/extrabold",
                     className: m.R_,
                     children: _.intl.string(_.t.Ve9Ge6)
-                }), (0, i.jsx)(l.Text, {
+                }), (0, i.jsx)(r.Text, {
                     variant: "text-sm/medium",
                     children: _.intl.string(_.t.yQ06u1)
                 }), (0, i.jsx)(d.A, {
@@ -74,7 +74,7 @@ let x = e => {
                         textOverride: _.intl.string(_.t.Ve9Ge6),
                         textClassName: m.VV
                     },
-                    color: r.$n.Colors.CUSTOM,
+                    color: l.$n.Colors.CUSTOM,
                     premiumModalAnalyticsLocation: s
                 })]
             }), (0, i.jsx)("img", {

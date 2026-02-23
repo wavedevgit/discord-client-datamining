@@ -8,8 +8,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(311907),
-    r = n(554146),
-    l = n(582754),
+    l = n(554146),
+    r = n(582754),
     o = n(397927),
     c = n(955572),
     d = n(775602),
@@ -37,7 +37,7 @@ var i = n(627968),
     P = n(985018),
     L = n(21082);
 let D = () => {
-    (0, x.Dr)(r.M.CLIENT_THEMES_SPARKLE_PREVIEW, {
+    (0, x.Dr)(l.M.CLIENT_THEMES_SPARKLE_PREVIEW, {
         dismissAction: R.i.PRIMARY,
         forceTrack: !0
     }), (0, h.nf)(h.HP.CLIENT_THEMES), (0, v.default)()
@@ -76,14 +76,14 @@ function U(e) {
     let {
         children: t
     } = e, n = (0, a.bG)([m.A], () => m.A.isPreview), {
-        analyticsLocations: r
+        analyticsLocations: l
     } = (0, _.Ay)(u.A.USER_SETTINGS);
     return (s.useEffect(() => {
         n && f.default.track(O.HAw.PREMIUM_UPSELL_VIEWED, {
             type: y.e.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
-            location_stack: r
+            location_stack: l
         })
-    }, [n, r]), n) ? (0, i.jsx)("div", {
+    }, [n, l]), n) ? (0, i.jsx)("div", {
         className: L._$,
         children: t
     }) : t
@@ -139,14 +139,14 @@ function w() {
             useForcedColors: d.A.useForcedColors,
             gradientPreset: m.A.gradientPreset
         })),
-        r = null != b.eh.useSetting().customUserThemeSettings;
+        l = null != b.eh.useSetting().customUserThemeSettings;
     return t !== O.NJ8.LIGHT ? null : (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(o.cGx, {
             gap: 24
         }), (0, i.jsx)(o.dOG, {
             label: P.intl.string(P.t.yF54Ks),
-            checked: e && (0, l.qB)(t) && !n,
-            disabled: t !== O.NJ8.LIGHT || n || null != s || r,
+            checked: e && (0, r.qB)(t) && !n,
+            disabled: t !== O.NJ8.LIGHT || n || null != s || l,
             onChange: c.LO
         }), (0, i.jsx)(o.cGx, {
             gap: 24

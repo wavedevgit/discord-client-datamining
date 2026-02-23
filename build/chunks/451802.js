@@ -5,8 +5,8 @@ n.d(t, {
 });
 var i, s = n(627968),
     a = n(64700),
-    r = n(503698),
-    l = n.n(r),
+    l = n(503698),
+    r = n.n(l),
     o = n(507392),
     c = n.n(o),
     d = n(735438),
@@ -83,7 +83,7 @@ class E extends a.PureComponent {
                 onClick: this.handleClick,
                 onMouseDown: this.handleMouseDown,
                 ref: this._containerRef,
-                className: l()(h.Qm, p[t], {
+                className: r()(h.Qm, p[t], {
                     [h.Qz]: i
                 }),
                 children: (0, s.jsxs)(m.A, {

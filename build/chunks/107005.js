@@ -5,15 +5,15 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(397927),
-    r = n(379848),
-    l = n(49999),
+    l = n(379848),
+    r = n(49999),
     o = n(985018),
     c = n(784001);
 let d = e => {
         let {
             markAsDismissed: t
         } = e;
-        return s.useEffect(() => t(l.i.UNKNOWN), [t]), (0, i.jsx)(a.LpS, {
+        return s.useEffect(() => t(r.i.UNKNOWN), [t]), (0, i.jsx)(a.LpS, {
             className: c.Ad,
             text: o.intl.string(o.t.y2b7CA)
         })
@@ -23,7 +23,7 @@ let d = e => {
             title: t,
             body: n,
             img: s,
-            newIndicatorDismissibleContent: l,
+            newIndicatorDismissibleContent: r,
             onClick: u
         } = e;
         return (0, i.jsxs)("div", {
@@ -32,14 +32,14 @@ let d = e => {
                 className: c.FS,
                 children: [(0, i.jsxs)("div", {
                     className: c.TK,
-                    children: [(0, i.jsx)(r.Ay, {
-                        contentTypes: [l],
+                    children: [(0, i.jsx)(l.Ay, {
+                        contentTypes: [r],
                         children: e => {
                             let {
                                 visibleContent: t,
                                 markAsDismissed: n
                             } = e;
-                            return t === l ? (0, i.jsx)(d, {
+                            return t === r ? (0, i.jsx)(d, {
                                 markAsDismissed: n
                             }) : null
                         }

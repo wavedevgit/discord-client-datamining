@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(397927),
     a = n(854627),
-    r = n(778712),
-    l = n(985018),
+    l = n(778712),
+    r = n(985018),
     o = n(431543);
 
 function c(e) {
@@ -19,7 +19,7 @@ function c(e) {
         eventHandlers: d
     } = (0, a.A)({
         userId: t?.id,
-        size: n ? r._3.SIZE_24 : r._3.SIZE_32,
+        size: n ? l._3.SIZE_24 : l._3.SIZE_32,
         animateOnHover: !0
     });
     return (0, i.jsx)("div", {
@@ -32,14 +32,14 @@ function c(e) {
                     className: o.Kk,
                     src: c,
                     "aria-label": t.username,
-                    size: r._3.SIZE_32,
+                    size: l._3.SIZE_32,
                     ...d
                 })
             }), (0, i.jsx)(s.Heading, {
                 variant: "heading-sm/normal",
                 className: o.Mn,
                 color: "text-strong",
-                children: l.intl.format(l.t.IqxblS, {
+                children: r.intl.format(r.t.IqxblS, {
                     username: null != t.globalName ? t.globalName : t.username
                 })
             })]

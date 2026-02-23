@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(503698),
-    r = n.n(a),
-    l = n(735438),
+    l = n.n(a),
+    r = n(735438),
     o = n(732955),
     c = n(397927),
     d = n(241524),
@@ -52,16 +52,16 @@ let p = e => {
             size: O,
             backgroundVideoUrl: R,
             previewImageStyle: y = A.Tb.CONTAINED
-        } = e, P = (0, m.TM)(), L = s.useRef(null), D = s.useRef(0), G = (0, d.A)("(min-width: 1140px)"), M = y === A.Tb.OVERLAY && (O !== A.A0.LARGE || !G), U = O === A.A0.LARGE && G && y === A.Tb.OVERLAY, k = null != R && G && O === A.A0.LARGE, V = s.useMemo(() => (0, l.debounce)(() => {
+        } = e, P = (0, m.TM)(), L = s.useRef(null), D = s.useRef(0), G = (0, d.A)("(min-width: 1140px)"), M = y === A.Tb.OVERLAY && (O !== A.A0.LARGE || !G), U = O === A.A0.LARGE && G && y === A.Tb.OVERLAY, k = null != R && G && O === A.A0.LARGE, V = s.useMemo(() => (0, r.debounce)(() => {
             _.default.track(g.HAw.PREMIUM_WHATS_NEW_BOX_CTA_CLICKED, {
-                box_type: (0, l.snakeCase)(t)
+                box_type: (0, r.snakeCase)(t)
             })
         }, 800), [t]), w = () => {
             null == L.current || N || (L.current.currentTime = D.current, L.current.play())
         }, H = () => {
             null == L.current || N || (D.current = L.current.currentTime, L.current.pause())
         }, B = O === A.A0.LARGE ? "heading-xxl/bold" : "heading-xl/bold", Y = () => (0, i.jsxs)("div", {
-            className: r()(x.textBox, x[`${O}`], U && x.overlayTextBox),
+            className: l()(x.textBox, x[`${O}`], U && x.overlayTextBox),
             children: [(0, i.jsxs)("div", {
                 children: [null == j ? null : "gradient" === v ? (0, i.jsx)("div", {
                     className: x.badgeContainer,
@@ -98,14 +98,14 @@ let p = e => {
                 debouncedOnClickAnalytics: V
             })]
         }), F = () => (0, i.jsx)("div", {
-            className: r()(x.boxArtContainer, x[`${O}`]),
+            className: l()(x.boxArtContainer, x[`${O}`]),
             children: (0, i.jsx)(u.A, {
                 playsInline: !0,
                 preload: S ? "auto" : "none",
                 muted: !0,
                 poster: C,
                 loop: !0,
-                className: r()(U ? x.overlayImage : x.boxVideo, {
+                className: l()(U ? x.overlayImage : x.boxVideo, {
                     [f]: null != f
                 }),
                 ref: L,
@@ -117,7 +117,7 @@ let p = e => {
         }), z = I % 2 != 0;
         return (0, i.jsxs)(c.hLv, {
             id: t,
-            className: r()(x.backgroundColor, x.boxContainer, x[`${O}`], x.gradientBackground, M && x.overlayImageMode, U && x.overlayMode),
+            className: l()(x.backgroundColor, x.boxContainer, x[`${O}`], x.gradientBackground, M && x.overlayImageMode, U && x.overlayMode),
             onMouseEnter: w,
             onFocus: w,
             onBlur: H,

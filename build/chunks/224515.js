@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(503698),
-    r = n.n(a),
-    l = n(311907),
+    l = n.n(a),
+    r = n(311907),
     o = n(397927),
     c = n(73153),
     d = n(384904),
@@ -29,10 +29,10 @@ function C() {
     let {
         hasFetchedSubscriptions: e,
         premiumSubscription: t
-    } = (0, l.cf)([h.A], () => ({
+    } = (0, r.cf)([h.A], () => ({
         hasFetchedSubscriptions: h.A.hasFetchedSubscriptions(),
         premiumSubscription: h.A.getPremiumTypeSubscription()
-    })), n = (0, m.Y)(), a = (0, l.bG)([g.A], () => g.A.hasFetchedPaymentSources), C = (0, l.bG)([A.A], () => A.A.isFetchingCurrentUserAppliedBoosts);
+    })), n = (0, m.Y)(), a = (0, r.bG)([g.A], () => g.A.hasFetchedPaymentSources), C = (0, r.bG)([A.A], () => A.A.isFetchingCurrentUserAppliedBoosts);
     return e && n && a && !C ? (0, i.jsxs)("div", {
         className: E.kL,
         children: [(0, i.jsx)("div", {
@@ -44,7 +44,7 @@ function C() {
             })
         })]
     }) : (0, i.jsx)("div", {
-        className: r()(E.kL, E.Lq),
+        className: l()(E.kL, E.Lq),
         children: (0, i.jsx)(o.y$y, {})
     })
 }

@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(311907),
-    r = n(397927),
-    l = n(817281),
+    l = n(397927),
+    r = n(817281),
     o = n(773669),
     c = n(780964),
     d = n(840065),
@@ -46,12 +46,12 @@ function g() {
         }), []),
         x = s.useCallback(e => {
             g(e), A.nextTick(() => {
-                l.Ay.updateLocale(e), (0, r.OoC)(d.USER_SETTINGS_MODAL_KEY) && (0, d.openUserSettings)(c.X.LANGUAGE_AND_TIME_PANEL, {
+                r.Ay.updateLocale(e), (0, l.OoC)(d.USER_SETTINGS_MODAL_KEY) && (0, d.openUserSettings)(c.X.LANGUAGE_AND_TIME_PANEL, {
                     section: u.nc_.LANGUAGE
                 })
             })
         }, []);
-    return (0, i.jsx)(r.ZiE, {
+    return (0, i.jsx)(l.ZiE, {
         selectionMode: "single",
         label: _.intl.string(_.t["mx+sp7"]),
         description: _.intl.string(_.t.rTPlcq),

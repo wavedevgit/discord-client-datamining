@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(503698),
-    r = n.n(a),
-    l = n(877624),
+    l = n.n(a),
+    r = n(877624),
     o = n(311907),
     c = n(230109),
     d = n(582754),
@@ -67,7 +67,7 @@ let V = e => {
             et = (0, C.cg)(),
             en = et ?? !1,
             ei = (0, o.bG)([N.A], () => {
-                let e = N.A.getMarketingComponentByType(l.C.BILLING_SETTINGS_NITRO_GIFT_BANNER);
+                let e = N.A.getMarketingComponentByType(r.C.BILLING_SETTINGS_NITRO_GIFT_BANNER);
                 return null == e || "billingSettingsNitroGiftBanner" !== e.properties.properties.oneofKind ? null : e.properties.properties.billingSettingsNitroGiftBanner
             }),
             {
@@ -119,13 +119,13 @@ let V = e => {
             "data-cy": "tier-0-marketing-page",
             children: [(0, i.jsx)(O.A, {
                 premiumSubscription: Z,
-                className: r()(U.R3, {
+                className: l()(U.R3, {
                     [U.aZ]: ee
                 })
             }), (0, i.jsx)(V, {
                 inOfferExperience: ee
             }), (0, i.jsxs)("div", {
-                className: r()({
+                className: l()({
                     [U.V1]: !ee
                 }),
                 children: [null != ei && (0, i.jsx)(j.c, {
@@ -139,7 +139,7 @@ let V = e => {
                     children: (0, i.jsx)(f.Ay, {
                         ref: t,
                         subscriptionTier: Q,
-                        className: r()({
+                        className: l()({
                             [U.p7]: ee,
                             [U.Pw]: ee,
                             [U.AG]: et,

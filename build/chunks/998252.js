@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(397927),
     a = n(521933),
-    r = n(452357),
-    l = n(985018),
+    l = n(452357),
+    r = n(985018),
     o = n(139674);
 
 function c(e) {
@@ -18,12 +18,12 @@ function c(e) {
         type: "warning",
         children: [(0, i.jsx)(s.Heading, {
             variant: "heading-md/medium",
-            children: l.intl.string(l.t.tuGzBT)
+            children: r.intl.string(r.t.tuGzBT)
         }), (0, i.jsx)(s.Text, {
             variant: "text-sm/normal",
             className: o.PA,
-            children: l.intl.string(l.t.NAzplE)
-        }), (0, i.jsx)(r.A, {
+            children: r.intl.string(r.t.NAzplE)
+        }), (0, i.jsx)(l.A, {
             size: "sm",
             variant: "secondary"
         })]
@@ -31,15 +31,15 @@ function c(e) {
         type: "critical",
         children: [(0, i.jsx)(s.Heading, {
             variant: "heading-md/medium",
-            children: l.intl.string(l.t["/3qnL/"])
+            children: r.intl.string(r.t["/3qnL/"])
         }), (0, i.jsx)(s.Text, {
             variant: "text-sm/normal",
             className: o.PA,
-            children: l.intl.string(l.t.qKs3vg)
+            children: r.intl.string(r.t.qKs3vg)
         }), (0, i.jsx)(s.Button, {
             variant: "secondary",
             size: "sm",
-            text: l.intl.string(l.t["7psymi"]),
+            text: r.intl.string(r.t["7psymi"]),
             onClick: () => a.A.openClaimAccountModal()
         })]
     })

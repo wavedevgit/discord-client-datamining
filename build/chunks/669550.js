@@ -7,8 +7,8 @@ n.d(t, {
 var i = n(64700),
     s = n(839214),
     a = n(360619),
-    r = n(987281),
-    l = n(419954),
+    l = n(987281),
+    r = n(419954),
     o = n(236077),
     c = n(478686),
     d = n(124059);
@@ -27,11 +27,11 @@ function m() {
 }
 
 function A(e, t) {
-    let n = i.useMemo(() => (0, l.hl)(e), [e]),
+    let n = i.useMemo(() => (0, r.hl)(e), [e]),
         s = (0, a.PH)(),
         {
             searchResults: d
-        } = (0, r.V)(),
+        } = (0, l.V)(),
         u = new Set;
     for (let e of d) {
         let t = e;
@@ -66,14 +66,14 @@ function g(e, t, n) {
             legacyMatches: n,
             bypassPredicates: s
         }),
-        [r, l] = i.useState(a),
+        [l, r] = i.useState(a),
         o = function(e, t) {
             if (e.size !== t.size) return !0;
             for (let n of e)
                 if (!t.has(n)) return !0;
             return !1
-        }(r, a);
+        }(l, a);
     return i.useEffect(() => {
-        o && l(a)
-    }, [o, a]), r
+        o && r(a)
+    }, [o, a]), l
 }

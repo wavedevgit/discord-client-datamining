@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(503698),
-    r = n.n(a),
-    l = n(311907),
+    l = n.n(a),
+    r = n(311907),
     o = n(230109),
     c = n(397927),
     d = n(775602),
@@ -42,7 +42,7 @@ let b = e => {
             analyticsLocations: P
         } = (0, _.Ay)(u.A.PREMIUM_SUBSCRIBER_NITRO_HOME),
         [L, D] = s.useState(!1),
-        G = (0, l.bG)([d.A], () => d.A.useReducedMotion),
+        G = (0, r.bG)([d.A], () => d.A.useReducedMotion),
         M = (0, p.LQ)(),
         {
             fractionalState: U
@@ -57,14 +57,14 @@ let b = e => {
         })
     };
     return (0, i.jsx)(c.GtU, {
-        className: r()(f.NX, {
+        className: l()(f.NX, {
             [f.ho]: a,
             [f.LM]: G
         }),
         ref: O,
         children: (0, i.jsx)(c.hLv, {
             color: "nitro-pink",
-            className: r()(f.kL, f.Gd, {
+            className: l()(f.kL, f.Gd, {
                 [f.fv]: !v
             }),
             children: (0, i.jsxs)(_.f5, {
@@ -75,7 +75,7 @@ let b = e => {
                     className: f.v1,
                     onBackClick: V
                 }), (0, i.jsxs)("div", {
-                    className: r()(f.fi, {
+                    className: l()(f.fi, {
                         [f._9]: v
                     }),
                     children: [(0, i.jsx)(c.Heading, {

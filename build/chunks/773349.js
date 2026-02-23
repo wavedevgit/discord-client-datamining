@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(503698),
-    r = n.n(a),
-    l = n(417597),
+    l = n.n(a),
+    r = n(417597),
     o = n(397927),
     c = n(287809),
     d = n(427262),
@@ -17,9 +17,9 @@ let m = s.memo(e => {
         userId: t,
         subText: n,
         className: s
-    } = e, a = (0, l.bG)([c.default], () => c.default.getUser(t));
+    } = e, a = (0, r.bG)([c.default], () => c.default.getUser(t));
     return void 0 === a ? null : (0, i.jsxs)("div", {
-        className: r()(_.k, s),
+        className: l()(_.k, s),
         children: [(0, i.jsx)(u.H, {
             user: a,
             avatarSize: o._3J.SIZE_40

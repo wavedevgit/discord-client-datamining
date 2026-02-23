@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(417597),
     a = n(435371),
-    r = n(397927),
-    l = n(287809),
+    l = n(397927),
+    r = n(287809),
     o = n(923531),
     c = n(283900),
     d = n(478311);
@@ -15,7 +15,7 @@ let u = e => {
         userId: t,
         dmsSent: n,
         callCount: u
-    } = e, _ = (0, s.bG)([l.default], () => l.default.getUser(t));
+    } = e, _ = (0, s.bG)([r.default], () => r.default.getUser(t));
     return void 0 === _ ? null : (0, i.jsx)(a.un, {
         title: _.username,
         body: (0, o.fq)(n, u),
@@ -24,7 +24,7 @@ let u = e => {
             className: d.k,
             children: (0, i.jsx)(c.H, {
                 user: _,
-                avatarSize: r._3J.SIZE_40
+                avatarSize: l._3J.SIZE_40
             })
         })
     })

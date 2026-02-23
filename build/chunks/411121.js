@@ -5,9 +5,9 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(503698),
-    r = n.n(a),
-    l = n(989349),
-    o = n.n(l),
+    l = n.n(a),
+    r = n(989349),
+    o = n.n(r),
     c = n(311907),
     d = n(451988),
     u = n(421380),
@@ -164,7 +164,7 @@ class D extends s.PureComponent {
             application: n
         } = this.props;
         return (0, E.bF)(e) ? (0, i.jsxs)("div", {
-            className: r()(P.Oc, P.ic),
+            className: l()(P.Oc, P.ic),
             children: [(0, i.jsx)(x.A, {
                 game: n,
                 size: x.M.XSMALL,
@@ -226,8 +226,8 @@ class D extends s.PureComponent {
             application: t,
             giftCodes: n,
             className: a,
-            sku: r,
-            isFetching: l,
+            sku: l,
+            isFetching: r,
             hideCodes: o
         } = this.props, {
             isOpen: c
@@ -256,12 +256,12 @@ class D extends s.PureComponent {
                     })
                 })
             }), c ? (0, i.jsx)(A.A.Body, {
-                children: l ? (0, i.jsx)(_.y$y, {
+                children: r ? (0, i.jsx)(_.y$y, {
                     className: P.u1
                 }) : (0, i.jsxs)(s.Fragment, {
                     children: [n.length < e.length ? this.renderGenerateGiftCodeRow() : null, n.map(e => (0, i.jsx)(L, {
                         giftCode: e,
-                        sku: r,
+                        sku: l,
                         hideCode: o
                     }, e.code))]
                 })

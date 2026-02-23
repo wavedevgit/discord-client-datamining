@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(417597),
     a = n(397927),
-    r = n(736653),
-    l = n(775602),
+    l = n(736653),
+    r = n(775602),
     o = n(607470),
     c = n(676279),
     d = n(69091),
@@ -20,9 +20,9 @@ let h = e => {
     let t, {
             className: n
         } = e,
-        h = (0, s.bG)([l.A], () => l.A.useReducedMotion),
+        h = (0, s.bG)([r.A], () => r.A.useReducedMotion),
         x = (0, c.TM)(),
-        p = (0, a.qB1)((0, r.Ay)());
+        p = (0, a.qB1)((0, l.Ay)());
     if (h) {
         let e = p ? g.A : _.A;
         return (0, i.jsx)("div", {

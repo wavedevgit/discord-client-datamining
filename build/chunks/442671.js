@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(503698),
-    r = n.n(a),
-    l = n(615300),
+    l = n.n(a),
+    r = n(615300),
     o = n(837381),
     c = n(158954),
     d = n(688810),
@@ -37,11 +37,11 @@ let m = e => {
                 left: -8,
                 right: -8
             },
-            children: (0, i.jsx)(l.A.div, {
+            children: (0, i.jsx)(r.A.div, {
                 style: {
                     opacity: 1
                 },
-                className: r()(_.KG, m, {
+                className: l()(_.KG, m, {
                     [_.HV]: a,
                     [_.vu]: A
                 }),

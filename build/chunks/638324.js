@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(421380),
-    r = n(935649),
-    l = n(847599),
+    l = n(935649),
+    r = n(847599),
     o = n(171316),
     c = n(71393),
     d = n(954571),
@@ -49,8 +49,8 @@ function b(e) {
 
     function D(e, t) {
         var n;
-        !e && (0, m.w)() ? r.A.showAgeVerificationGetStartedModal({
-            entryPoint: l.q1.MESSAGE_REQUESTS_SETTINGS
+        !e && (0, m.w)() ? l.A.showAgeVerificationGetStartedModal({
+            entryPoint: r.q1.MESSAGE_REQUESTS_SETTINGS
         }) : t ? P(e) : (n = !e, (0, E.O)({
             header: f.intl.string(f.t.yAfu1p),
             body: f.intl.string(f.t.Ry2z74),

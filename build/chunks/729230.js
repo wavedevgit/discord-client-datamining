@@ -1,13 +1,13 @@
 /** chunk id: 729230, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => l
+    A: () => r
 });
 var i = n(627968);
 n(64700);
 var s = n(503698),
     a = n.n(s),
-    r = n(778300);
-let l = e => {
+    l = n(778300);
+let r = e => {
     let {
         lifted: t = !1
     } = e;
@@ -18,8 +18,8 @@ let l = e => {
         fill: "none",
         xmlns: "http://www.w3.org/2000/svg",
         preserveAspectRatio: "none",
-        className: a()(r.zr, {
-            [r.N]: t
+        className: a()(l.zr, {
+            [l.N]: t
         }),
         children: [(0, i.jsx)("path", {
             d: "M1175.02 650.847C567.943 650.847 449.538 793 0 793V0H2338V529.841C1912.54 529.841 1705.84 650.847 1175.02 650.847Z",
@@ -33,19 +33,19 @@ let l = e => {
                 y2: "975.136",
                 gradientUnits: "userSpaceOnUse",
                 children: [(0, i.jsx)("stop", {
-                    className: r.eq
+                    className: l.eq
                 }), (0, i.jsx)("stop", {
                     offset: "0.339235",
-                    className: r.l_
+                    className: l.l_
                 }), (0, i.jsx)("stop", {
                     offset: "0.492065",
-                    className: r.sM
+                    className: l.sM
                 }), (0, i.jsx)("stop", {
                     offset: "0.823236",
-                    className: r.zi
+                    className: l.zi
                 }), (0, i.jsx)("stop", {
                     offset: "0.899558",
-                    className: r.s1
+                    className: l.s1
                 })]
             })
         })]

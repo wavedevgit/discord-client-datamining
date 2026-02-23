@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(397927),
-    r = n(355622),
-    l = n(408018),
+    l = n(355622),
+    r = n(408018),
     o = n(133343),
     c = n(915089),
     d = n(840065),
@@ -31,10 +31,10 @@ function E(e) {
         placeholder: E,
         currentBio: C,
         disabled: T = !1
-    } = e, [S, I] = s.useState(u ?? C), [f, N] = s.useState((0, l.x7)(S)), b = s.useRef(C), j = s.useRef(!1);
+    } = e, [S, I] = s.useState(u ?? C), [f, N] = s.useState((0, r.x7)(S)), b = s.useRef(C), j = s.useRef(!1);
     return s.useEffect(() => {
         if (b.current !== C) {
-            let e = (0, l.x7)(C);
+            let e = (0, r.x7)(C);
             I(C), N(e)
         }
         b.current = C
@@ -59,7 +59,7 @@ function E(e) {
             richValue: f,
             emojiPickerCloseOnModalOuterClick: !0,
             parentModalKey: d.USER_SETTINGS_MODAL_KEY,
-            type: r.oU.PROFILE_BIO_INPUT,
+            type: l.oU.PROFILE_BIO_INPUT,
             onBlur: () => {
                 j.current = !1
             },

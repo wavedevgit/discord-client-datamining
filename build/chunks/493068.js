@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(311907),
-    r = n(732955),
-    l = n(397927),
+    l = n(732955),
+    r = n(397927),
     o = n(813077),
     c = n(500380),
     d = n(518977),
@@ -25,11 +25,11 @@ function h() {
         n = s.useCallback(() => {}, []);
     if (null == e) return (0, i.jsxs)("div", {
         className: g.OO,
-        children: [(0, i.jsx)(l.Text, {
+        children: [(0, i.jsx)(r.Text, {
             variant: "text-sm/normal",
             color: "text-subtle",
             children: A.intl.string(A.t.jGL0O5)
-        }), (0, i.jsx)(r.$nd, {
+        }), (0, i.jsx)(l.$nd, {
             variant: "secondary",
             size: "sm",
             text: A.intl.string(A.t.EeFkoB),
@@ -50,16 +50,16 @@ function h() {
                 })
             }), (0, i.jsxs)("div", {
                 className: g.d0,
-                children: [(0, i.jsx)(l.Text, {
+                children: [(0, i.jsx)(r.Text, {
                     variant: "text-md/semibold",
                     children: o
-                }), null != t ? (0, i.jsx)(l.Text, {
+                }), null != t ? (0, i.jsx)(r.Text, {
                     variant: "text-sm/normal",
                     color: "text-subtle",
                     children: t
                 }) : null]
             })]
-        }), (0, i.jsx)(r.$nd, {
+        }), (0, i.jsx)(l.$nd, {
             variant: "secondary",
             size: "sm",
             text: A.intl.string(A.t.EeFkoB),

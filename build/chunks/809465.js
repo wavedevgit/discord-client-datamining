@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(503698),
     a = n.n(s),
-    r = n(481613),
-    l = n.n(r),
+    l = n(481613),
+    r = n.n(l),
     o = n(397927),
     c = n(77729),
     d = n(521502),
@@ -20,13 +20,13 @@ var s = n(503698),
 function h(e) {
     let {
         compact: t = !1
-    } = e, n = (0, u.GV)(), s = window.GLOBAL_ENV.RELEASE_CHANNEL, r = "500716", h = "4ac05b4f4e90ebfa8ac3787cda96d06b3a15d849".substring(0, 7), x = c.A?.remoteApp.getVersion(), p = c.A?.remoteApp.getBuildNumber?.(), E = c.A?.remoteApp.getAppArch?.(), C = d.A.getCurrentBuildOverride().overrides?.discord_web, T = function() {
-        let e = l()?.os?.toString();
+    } = e, n = (0, u.GV)(), s = window.GLOBAL_ENV.RELEASE_CHANNEL, l = "500791", h = "c18f8582e76d6a65f6eeab3c54e7e86ee0a5b687".substring(0, 7), x = c.A?.remoteApp.getVersion(), p = c.A?.remoteApp.getBuildNumber?.(), E = c.A?.remoteApp.getAppArch?.(), C = d.A.getCurrentBuildOverride().overrides?.discord_web, T = function() {
+        let e = r()?.os?.toString();
         if (null == e || null == c.A) return null;
         let t = c.A.os.release,
             [n, i, s] = m.Ay.parsedOSRelease;
         return e.includes("Windows 10") && void 0 !== s && s >= 22e3 && (e = e.replace("Windows 10", "Windows 11")), e.includes("OS X 10.15.7") && void 0 !== n && n >= 20 && (e = `macOS ${n>=25?n+1:n-9}`), `${e} (${t})`
-    }(), S = [s, r, `(${h})`];
+    }(), S = [s, l, `(${h})`];
     return (null != x && (S.push(`Host ${x}`), null != E && S.push(E.toLowerCase()), null != p && S.push(`(${p})`)), S.push(`Build Override: ${null!=C?C.id:"N/A"}`), null != T && S.push(T), t) ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(_.A, {
             copyValue: S.join(" "),
@@ -44,7 +44,7 @@ function h(e) {
                         tag: "span",
                         variant: "text-xxs/normal",
                         color: "text-muted",
-                        children: [s, " ", r, " ", (0, i.jsxs)("span", {
+                        children: [s, " ", l, " ", (0, i.jsxs)("span", {
                             className: g.Pc,
                             children: ["(", h, ")"]
                         })]
@@ -91,7 +91,7 @@ function h(e) {
                         className: g.n8,
                         variant: "text-xs/normal",
                         color: "text-muted",
-                        children: [s, " ", r, " ", (0, i.jsxs)("span", {
+                        children: [s, " ", l, " ", (0, i.jsxs)("span", {
                             className: g.Pc,
                             children: ["(", h, ")"]
                         })]

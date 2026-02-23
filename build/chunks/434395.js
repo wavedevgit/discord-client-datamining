@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(503698),
     a = n.n(s),
-    r = n(397927),
-    l = n(531260),
+    l = n(397927),
+    r = n(531260),
     o = n(927578),
     c = n(788868),
     d = n(985018),
@@ -19,10 +19,10 @@ function _(e) {
         renewalMutations: s,
         className: _,
         analyticsLocation: m
-    } = e, A = (0, l.A)(), g = t.currentPeriodEnd;
+    } = e, A = (0, r.A)(), g = t.currentPeriodEnd;
     return A.fractionalState === c.xc.FP_SUB_PAUSED && (g = A.endsAt.toDate()), (0, i.jsxs)("div", {
         className: a()(u.zr, _),
-        children: [(0, i.jsx)(r.EpV, {
+        children: [(0, i.jsx)(l.EpV, {
             size: "custom",
             width: 20,
             height: 20,
@@ -34,9 +34,9 @@ function _(e) {
                 planName: t.hasExternalPlanChange ? (0, o.OU)(s) : o.Ay.getDisplayName(s.planId),
                 date: g
             })
-        }), t.isPurchasedExternally ? null : (0, i.jsx)(r.MzZ, {
+        }), t.isPurchasedExternally ? null : (0, i.jsx)(l.MzZ, {
             onClick: e => {
-                e.preventDefault(), (0, r.mMO)(async () => {
+                e.preventDefault(), (0, l.mMO)(async () => {
                     let {
                         default: e
                     } = await n.e("65975").then(n.bind(n, 702698));

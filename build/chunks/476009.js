@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(546140),
     a = n(776038),
-    r = n(975571),
-    l = n(871930),
+    l = n(975571),
+    r = n(871930),
     o = n(578746),
     c = n(355097),
     d = n(531525),
@@ -15,7 +15,7 @@ var i = n(627968),
 
 function m() {
     let e = (0, s.L)();
-    return (0, i.jsx)(l.h, {
+    return (0, i.jsx)(r.h, {
         setting: d.H.PRIVACY_SAFETY_ALERTS_V2,
         scrollPosition: c.d1.DM_SAFETY_ALERTS_V2,
         children: (0, i.jsx)(o.Ay, {
@@ -23,7 +23,7 @@ function m() {
             onChange: a.a,
             title: _.intl.string(_.t.qFsx5q),
             note: _.intl.format(_.t.lunaRv, {
-                learnMoreLink: r.A.getArticleURL(u.MVz.SAFETY_ALERTS)
+                learnMoreLink: l.A.getArticleURL(u.MVz.SAFETY_ALERTS)
             })
         })
     })

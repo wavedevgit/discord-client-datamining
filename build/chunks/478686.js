@@ -11,40 +11,40 @@ n.d(t, {
             parentCategoryKey: a.category?.key,
             parentAccordionKey: a.accordion?.key
         }), t;
-        let r = a;
-        t.type === i.Z6.SIDEBAR_ITEM && (r = {
+        let l = a;
+        t.type === i.Z6.SIDEBAR_ITEM && (l = {
             ...a,
             sidebarItem: t.key,
             panel: t.layout[0]
-        }), t.type === i.Z6.PANEL && (r = {
+        }), t.type === i.Z6.PANEL && (l = {
             ...a,
             panel: t
-        }), t.type === i.Z6.NESTED_PANEL && (r = {
+        }), t.type === i.Z6.NESTED_PANEL && (l = {
             ...a,
             panel: t.layout[0]
-        }), t.type === i.Z6.CATEGORY && (r = {
+        }), t.type === i.Z6.CATEGORY && (l = {
             ...a,
             category: t
-        }), t.type === i.Z6.ACCORDION && (r = {
+        }), t.type === i.Z6.ACCORDION && (l = {
             ...a,
             accordion: t
-        }), t.type === i.Z6.TAB_ITEM && (r = {
+        }), t.type === i.Z6.TAB_ITEM && (l = {
             ...a,
             tab: t
         });
-        let l = t.layout.map(t => e(t, n, s, r)).filter(e => null != e);
-        if (0 === l.length && !("StronglyDiscouragedCustomComponent" in t || t.type === i.Z6.SIDEBAR_ITEM && "onClick" in t)) return null;
+        let r = t.layout.map(t => e(t, n, s, l)).filter(e => null != e);
+        if (0 === r.length && !("StronglyDiscouragedCustomComponent" in t || t.type === i.Z6.SIDEBAR_ITEM && "onClick" in t)) return null;
         let o = {
             ...t,
-            layout: l
+            layout: r
         };
         return s.register({
             node: o,
-            parentSidebarItemKey: r.sidebarItem,
-            parentPanelKey: r.panel?.key,
-            parentTabKey: r.tab?.key,
-            parentCategoryKey: r.category?.key,
-            parentAccordionKey: r.accordion?.key
+            parentSidebarItemKey: l.sidebarItem,
+            parentPanelKey: l.panel?.key,
+            parentTabKey: l.tab?.key,
+            parentCategoryKey: l.category?.key,
+            parentAccordionKey: l.accordion?.key
         }), o
     }
 });

@@ -1,13 +1,13 @@
 /** chunk id: 521933, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => l
+    A: () => r
 });
 var i = n(627968);
 n(64700);
 var s = n(397927),
     a = n(204925),
-    r = n(818348);
-let l = {
+    l = n(818348);
+let r = {
     openNewUserAgeGateModal: e => {
         (0, s.mMO)(async () => {
             let {
@@ -18,7 +18,7 @@ let l = {
             })
         }, {
             modalKey: a.jc,
-            onCloseRequest: r.tE,
+            onCloseRequest: l.tE,
             onCloseCallback: e
         })
     },
@@ -34,7 +34,7 @@ let l = {
                 ...n
             })
         }, {
-            onCloseRequest: e ? r.tE : null,
+            onCloseRequest: e ? l.tE : null,
             onCloseCallback: t
         })
     }

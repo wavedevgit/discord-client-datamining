@@ -1,22 +1,22 @@
 /** chunk id: 44909, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => r
+    A: () => l
 });
 var i = n(627968),
     s = n(397927),
     a = n(244242);
 
-function r(e) {
+function l(e) {
     let {
         node: t
     } = e, {
         useValue: n,
-        setValue: r,
-        useTitle: l,
+        setValue: l,
+        useTitle: r,
         useSubtitle: o,
         useOptions: c,
         useBadge: d
-    } = t, u = l(), _ = o?.(), m = n(), A = c(), g = d?.();
+    } = t, u = r(), _ = o?.(), m = n(), A = c(), g = d?.();
     return (0, i.jsx)(a.L, {
         children: (0, i.jsx)(s.z6M, {
             label: u,
@@ -24,7 +24,7 @@ function r(e) {
             options: A,
             value: m,
             badge: g,
-            onChange: e => r(e)
+            onChange: e => l(e)
         })
     })
 }

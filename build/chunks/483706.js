@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(158954),
-    r = n(397927),
-    l = n(308528),
+    l = n(397927),
+    r = n(308528),
     o = n(922529),
     c = n(780964),
     d = n(12901),
@@ -39,7 +39,7 @@ let S = e => {
             children: [(0, i.jsx)(a.EYj, {
                 variant: "text-md/medium",
                 children: t
-            }), (0, i.jsx)(r.Button, {
+            }), (0, i.jsx)(l.Button, {
                 text: n,
                 onClick: s,
                 variant: "secondary",
@@ -69,18 +69,18 @@ let S = e => {
                     variant: "text-md/medium",
                     color: "text-muted",
                     children: C.intl.format(E.default.X9rW0j, {
-                        openSettingsHook: (e, n) => (0, i.jsx)(r.MzZ, {
+                        openSettingsHook: (e, n) => (0, i.jsx)(l.MzZ, {
                             onClick: t,
                             children: e
                         }, n)
                     })
                 })]
-            }), (0, i.jsx)(r.Button, {
+            }), (0, i.jsx)(l.Button, {
                 text: C.intl.formatToPlainString(E.default.ggcjPR, {
                     count: e.length
                 }),
                 onClick: () => {
-                    (0, d.default)(), l.A.openPrivateChannel({
+                    (0, d.default)(), r.A.openPrivateChannel({
                         recipientIds: e
                     })
                 },
@@ -98,7 +98,7 @@ let S = e => {
         s.useEffect(() => {
             e?.id != null && t && _.Ay.fetchTeenSettingsAndConsents(e?.id)
         }, [e?.id, t]);
-        let r = e => {
+        let l = e => {
             n(e)
         };
         return (0, i.jsxs)(i.Fragment, {
@@ -116,13 +116,13 @@ let S = e => {
             }), (0, i.jsx)(S, {
                 title: C.intl.string(C.t["+o1pDZ"]),
                 buttonText: C.intl.string(C.t.bt75uw),
-                onButtonPress: () => r(x.u9.CONTENT_AND_SOCIAL)
+                onButtonPress: () => l(x.u9.CONTENT_AND_SOCIAL)
             }), (0, i.jsx)(o.A, {
                 className: T.yF
             }), (0, i.jsx)(S, {
                 title: C.intl.string(C.t.OAuOHD),
                 buttonText: C.intl.string(C.t.bt75uw),
-                onButtonPress: () => r(x.u9.DATA_AND_PRIVACY)
+                onButtonPress: () => l(x.u9.DATA_AND_PRIVACY)
             })]
         })
     },

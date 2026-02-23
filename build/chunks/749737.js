@@ -6,9 +6,9 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(503698),
-    r = n.n(a),
-    l = n(735438),
-    o = n.n(l),
+    l = n.n(a),
+    r = n(735438),
+    o = n.n(r),
     c = n(158954),
     d = n(141931),
     u = n(311907),
@@ -92,9 +92,9 @@ class en extends s.Component {
         } = this.props;
         return (0, i.jsxs)(N.A, {
             direction: N.A.Direction.VERTICAL,
-            className: r()(X.oS, J.SX, Q.N, X.nM),
+            className: l()(X.oS, J.SX, Q.N, X.nM),
             children: [(0, i.jsx)(C.A, {
-                className: r()(X.lL, {
+                className: l()(X.lL, {
                     [X.zi]: s
                 }),
                 onClick: s ? void 0 : this.handleRemoveBuildOverride
@@ -260,7 +260,7 @@ class ei extends s.Component {
     renderEmpty() {
         return (0, i.jsx)(g.ppr, {
             theme: H.A.theme,
-            className: r()(J.eT, J.SX),
+            className: l()(J.eT, J.SX),
             children: (0, i.jsx)(g.SGT, {
                 children: "You have no build overrides configured."
             })
@@ -334,7 +334,7 @@ class ei extends s.Component {
             className: J.QX
         }) : null != s && 0 === Object.keys(s).length ? this.renderEmpty() : this.renderItems();
         let a = !n && !t && this.getAvailableProjects().length > 0,
-            r = et(s ?? {}) && "stable" !== window.GLOBAL_ENV.RELEASE_CHANNEL ? (0, i.jsx)(g.Text, {
+            l = et(s ?? {}) && "stable" !== window.GLOBAL_ENV.RELEASE_CHANNEL ? (0, i.jsx)(g.Text, {
                 color: "text-feedback-critical",
                 variant: "text-md/normal",
                 children: "Mobile build overrides must be generated using the desktop/web stable client for now!"
@@ -358,7 +358,7 @@ class ei extends s.Component {
                         })),
                         onSelectionChange: this.handleAddBuildOverride,
                         disabled: !a
-                    }), r, e, (0, i.jsxs)(g.ButtonGroup, {
+                    }), l, e, (0, i.jsxs)(g.ButtonGroup, {
                         justify: "end",
                         children: [this.renderRefreshButton(), this.renderLinkButton(), this.renderSaveButton()]
                     })]
@@ -507,8 +507,8 @@ class es extends s.Component {
             userIdEntry: n,
             userIdEntryError: s,
             allowedVersions: a,
-            allowedVersionEntry: r,
-            allowedVersionEntryError: l,
+            allowedVersionEntry: l,
+            allowedVersionEntryError: r,
             allowLoggedOut: o,
             experiments: c,
             experimentsError: d
@@ -536,9 +536,9 @@ class es extends s.Component {
                 children: [(0, i.jsx)(g.ksK, {
                     label: "Add allowed app version (required)",
                     autoFocus: !0,
-                    value: r,
+                    value: l,
                     onKeyDown: this.handleAllowedVersionEnter,
-                    error: l,
+                    error: r,
                     onChange: this.handleAllowedVersionEntry,
                     placeholder: "Example: 34",
                     trailing: {
@@ -629,8 +629,8 @@ function ea() {
     }, (e, t) => t), []), a = s.useMemo(() => Array.from({
         length: b.YR + 1
     }, (e, t) => t), []), {
-        cssDebuggingEnabled: r,
-        layoutDebuggingEnabled: l
+        cssDebuggingEnabled: l,
+        layoutDebuggingEnabled: r
     } = (0, u.cf)([M.default], () => ({
         cssDebuggingEnabled: M.default.cssDebuggingEnabled,
         layoutDebuggingEnabled: M.default.layoutDebuggingEnabled
@@ -642,7 +642,7 @@ function ea() {
             children: (0, i.jsx)(g.dOG, {
                 label: "Enable CSS Debugging",
                 description: "Display raw colors as pink. Toggling this will refresh the browser.",
-                checked: r,
+                checked: l,
                 onChange: e => {
                     (0, p.x)({
                         cssDebuggingEnabled: e
@@ -654,7 +654,7 @@ function ea() {
             children: (0, i.jsx)(g.dOG, {
                 label: "Enable Layout Debugging",
                 description: "Renders a grid on top of the app to help debug layout alignment issues.",
-                checked: l,
+                checked: r,
                 onChange: e => {
                     (0, p.x)({
                         layoutDebuggingEnabled: e
@@ -706,15 +706,15 @@ function ea() {
     })
 }
 
-function er() {
+function el() {
     let {
         isTracingRequests: e,
         isForcedCanary: t,
         isAxeEnabled: n,
         isSourceMapsEnabled: s,
         onlyShowPreviewAppCollections: a,
-        disableAppCollectionsCache: r,
-        preventPopoutClose: l,
+        disableAppCollectionsCache: l,
+        preventPopoutClose: r,
         logKeyboardMismatches: o
     } = (0, u.cf)([M.default], () => ({
         isTracingRequests: M.default.isTracingRequests,
@@ -789,7 +789,7 @@ function er() {
             children: (0, i.jsx)(g.dOG, {
                 label: "Prevent Popouts From Closing Automatically",
                 description: "This is to enable viewing console logs for popout crashes. This may leave your app/popout in a weird state.",
-                checked: l,
+                checked: r,
                 onChange: e => (0, p.x)({
                     preventPopoutClose: e
                 })
@@ -819,7 +819,7 @@ function er() {
             children: (0, i.jsx)(g.dOG, {
                 label: "Disable application collections cache",
                 description: "Disable application collections cache so that you can see updates to collections immediately.",
-                checked: r,
+                checked: l,
                 onChange: e => (0, p.x)({
                     disableAppCollectionsCache: e
                 })
@@ -843,7 +843,7 @@ function er() {
     })
 }
 
-function el() {
+function er() {
     let {
         isLoggingGatewayEvents: e,
         isLoggingOverlayEvents: t,
@@ -1138,11 +1138,11 @@ let eA = function() {
                 setting: K.H.DEVELOPER_OPTIONS_MANUAL_TRIGGERS_TAB
             }, {
                 title: "Developer Flags",
-                component: er,
+                component: el,
                 setting: K.H.DEVELOPER_OPTIONS_FLAGS_TAB
             }, {
                 title: "Logging",
-                component: el,
+                component: er,
                 setting: K.H.DEVELOPER_OPTIONS_LOGGING_TAB
             }, {
                 title: "Design Tools",

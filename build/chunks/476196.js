@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(735438),
     s = n.n(i),
     a = n(626584),
-    r = n(617617),
-    l = n(961350),
+    l = n(617617),
+    r = n(961350),
     o = n(723176),
     c = n(989950);
 let d = new a.A("UserSettingsProto");
@@ -27,16 +27,16 @@ class u {
         return s
     }
     handleUserSettingsProtoChange = () => {
-        let e = l.default.getId(),
+        let e = r.default.getId(),
             t = c.A.database(e);
         t?.transaction(e => {
-            let t = r.A.computeState(),
+            let t = l.A.computeState(),
                 n = o.A.userSettingsTransaction(e);
             for (let e in t) n.put({
                 id: Number(e),
                 value: t[e]
             });
-            let i = r.A.settings.versions?.dataVersion ?? -1;
+            let i = l.A.settings.versions?.dataVersion ?? -1;
             o.A.nonGuildVersionsTransaction(e).put({
                 id: "user_settings_version",
                 version: i

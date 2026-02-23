@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(503698),
     a = n.n(s),
-    r = n(33851),
-    l = n.n(r),
+    l = n(33851),
+    r = n.n(l),
     o = n(827734),
     c = n(397927),
     d = n(654107),
@@ -24,7 +24,7 @@ function p(e) {
         user: t,
         pendingAvatarSrc: n,
         pendingColors: s,
-        onThemeColorsChange: r,
+        onThemeColorsChange: l,
         preventDisabled: p,
         guildId: E,
         className: C,
@@ -42,7 +42,7 @@ function p(e) {
     }), j = m.Ay.canUsePremiumProfileCustomization(t), v = null != n ? n : t.getAvatarURL(E, 80), O = (0, c.rdh)(o.A.unsafe_rawColors.PRIMARY_530).hex(), R = (0, d.rh)(v, O, !1);
     if (null == N || null == b) return null;
     let y = e => {
-        r(l()(e, f?.themeColors) ? void 0 : e)
+        l(r()(e, f?.themeColors) ? void 0 : e)
     };
     return (0, i.jsx)(g.A, {
         title: h.intl.string(h.t.DMeO2X),

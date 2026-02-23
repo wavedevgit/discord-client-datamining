@@ -9,7 +9,7 @@ let a = e => {
     let {
         analyticsLocations: t,
         guildId: a,
-        initialSelectedNameplate: r
+        initialSelectedNameplate: l
     } = e;
     (0, s.mMO)(async () => {
         let {
@@ -19,7 +19,7 @@ let a = e => {
             ...n,
             guildId: a,
             analyticsLocations: t,
-            initialSelectedNameplate: r
+            initialSelectedNameplate: l
         })
     })
 }

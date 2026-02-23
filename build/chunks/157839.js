@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(503698),
-    r = n.n(a),
-    l = n(311907),
+    l = n.n(a),
+    r = n(311907),
     o = n(397927),
     c = n(531260),
     d = n(287809),
@@ -25,15 +25,15 @@ let C = e => {
             leftAlignHeaders: n,
             title: s,
             headerClassname: a
-        } = e, r = (0, i.jsx)(o.Heading, {
+        } = e, l = (0, i.jsx)(o.Heading, {
             variant: "heading-xxl/extrabold",
             color: "text-strong",
             className: null != a ? a : E.R_,
             children: s
         });
-        return null == t ? r : n ? (0, i.jsxs)("div", {
+        return null == t ? l : n ? (0, i.jsxs)("div", {
             className: E.bV,
-            children: [r, null != t && (0, i.jsx)("div", {
+            children: [l, null != t && (0, i.jsx)("div", {
                 className: E.W0,
                 children: t
             })]
@@ -41,7 +41,7 @@ let C = e => {
             className: E.kL,
             children: (0, i.jsx)("div", {
                 className: E.pr,
-                children: r
+                children: l
             })
         })
     },
@@ -53,7 +53,7 @@ let C = e => {
             leftAlignHeaders: T = !1,
             showAllPerksButton: S,
             headerClassname: I
-        } = e, f = s.useRef(null), N = n === x.cJ.WHATS_NEW, b = (0, l.bG)([d.default], () => d.default.getCurrentUser()), j = (0, g.E)();
+        } = e, f = s.useRef(null), N = n === x.cJ.WHATS_NEW, b = (0, r.bG)([d.default], () => d.default.getCurrentUser()), j = (0, g.E)();
         s.useEffect(() => {
             N && j()
         }, [j, N]);
@@ -82,7 +82,7 @@ let C = e => {
             M = G.some(e => null != e.pillText);
         return (0, i.jsxs)("div", {
             ref: f,
-            className: r()(E.uW, {
+            className: l()(E.uW, {
                 [E.qO]: !T,
                 [E.Uv]: T
             }, t),
@@ -94,7 +94,7 @@ let C = e => {
             }), (0, i.jsx)(o.Text, {
                 variant: "text-lg/normal",
                 color: "text-strong",
-                className: r()(E.VA, {
+                className: l()(E.VA, {
                     [E.VA]: null == S || T,
                     [E.Xx]: null != S && !T,
                     [E.Ij]: N || T,

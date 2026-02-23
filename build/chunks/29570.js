@@ -7,10 +7,10 @@ let s = function() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 5,
         [t, n] = i.useState(!1),
         [s, a] = i.useState(0),
-        [r, l] = i.useState(!1),
+        [l, r] = i.useState(!1),
         [o, c] = i.useState(0);
     return i.useEffect(() => {
-        s >= e && (l(!0), c(Math.floor(s / e)));
+        s >= e && (r(!0), c(Math.floor(s / e)));
         let t = setTimeout(() => {
             a(0)
         }, 1e3);
@@ -18,7 +18,7 @@ let s = function() {
     }, [s, e]), i.useEffect(() => {
         if (!t) {
             let e = setTimeout(() => {
-                l(!1), c(0)
+                r(!1), c(0)
             }, 1e3);
             return () => clearTimeout(e)
         }
@@ -30,7 +30,7 @@ let s = function() {
         onUnhover: () => {
             n(!1)
         },
-        isEasterEggTriggered: r,
+        isEasterEggTriggered: l,
         easterEggLevel: o
     }
 }

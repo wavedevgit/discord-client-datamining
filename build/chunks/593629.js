@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(317097),
     a = n(827734),
-    r = n(397927),
-    l = n(654107),
+    l = n(397927),
+    r = n(654107),
     o = n(911180),
     c = n(128450),
     d = n(985018);
@@ -18,7 +18,7 @@ function u(e) {
         savedUserColor: n,
         pendingColor: u,
         setPendingAccentColor: _
-    } = e, m = t.getAvatarURL(null, 80), A = (0, r.rdh)(a.A.unsafe_rawColors.PRIMARY_530).hex(), g = (0, l.rh)(m, A, !1), h = (0, s.LX)(g[0]);
+    } = e, m = t.getAvatarURL(null, 80), A = (0, l.rdh)(a.A.unsafe_rawColors.PRIMARY_530).hex(), g = (0, r.rh)(m, A, !1), h = (0, s.LX)(g[0]);
     return (0, i.jsx)(c.A, {
         title: d.intl.string(d.t["/X3fkf"]),
         children: (0, i.jsx)(o.A, {

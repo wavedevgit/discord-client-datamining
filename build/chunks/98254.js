@@ -1,21 +1,21 @@
 /** chunk id: 98254, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => r
+    A: () => l
 });
 var i = n(627968),
     s = n(397927),
     a = n(244242);
 
-function r(e) {
+function l(e) {
     let {
         node: t
     } = e, {
         useValue: n,
-        useTitle: r,
-        useSubtitle: l,
+        useTitle: l,
+        useSubtitle: r,
         useOptions: o,
         clearable: c
-    } = t, d = t.setValue, u = r(), _ = l?.(), m = n(), A = o();
+    } = t, d = t.setValue, u = l(), _ = r?.(), m = n(), A = o();
     return (0, i.jsx)(a.L, {
         children: (0, i.jsx)(s.l6P, {
             selectionMode: "single",

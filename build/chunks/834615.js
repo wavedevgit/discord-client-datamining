@@ -105,16 +105,16 @@ function M(e) {
         quest: n,
         questContent: h.uF.ACTIVITY_PANEL,
         sourceQuestContent: h.uF.ACTIVITY_PANEL
-    }), Y = n.userStatus?.enrolledAt != null, W = n.userStatus?.completedAt != null, q = (0, p.fc)(n), z = (0, m.mU)({
+    }), Y = n.userStatus?.enrolledAt != null, W = n.userStatus?.completedAt != null, q = (0, p.fc)(n), K = (0, m.mU)({
         quest: n,
         taskDetails: q,
         location: L.rE.ACTIVITY_PANEL,
         questContent: h.uF.ACTIVITY_PANEL,
         sourceQuestContent: h.uF.ACTIVITY_PANEL,
         gameProfileSource: d.Ob.QuestActivityPanel
-    }), K = (0, C.vA)(n), $ = (0, m.NA)({
+    }), z = (0, C.vA)(n), $ = (0, m.NA)({
         quest: n
-    }), Q = K ? $ : P.intl.string(P.t.l7E81v);
+    }), Q = z ? $ : P.intl.string(P.t.l7E81v);
     return (0, i.jsxs)("div", {
         ref: e => {
             t.current = e
@@ -156,7 +156,7 @@ function M(e) {
                 children: (0, i.jsx)(o.Text, {
                     variant: "text-sm/normal",
                     color: "text-default",
-                    children: z
+                    children: K
                 })
             })]
         }), Y && !W && (0, i.jsx)(b.A, {
@@ -172,7 +172,7 @@ function M(e) {
             className: j.uz,
             children: [!Y && (0, i.jsxs)(o.ButtonGroup, {
                 size: "sm",
-                direction: K ? "vertical" : "horizontal",
+                direction: z ? "vertical" : "horizontal",
                 fullWidth: !0,
                 children: [(0, i.jsx)(o.Button, {
                     variant: "secondary",

@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(311907),
     a = n(554146),
-    r = n(397927),
-    l = n(793574),
+    l = n(397927),
+    r = n(793574),
     o = n(379848),
     c = n(657331),
     d = n(961350),
@@ -21,19 +21,19 @@ let x = () => {
     return (0, i.jsx)(u.A, {
         title: g.intl.string(g.t.Jzj9q4),
         description: g.intl.string(g.t.lfF1Sp),
-        titleIcon: n ? (0, i.jsx)(r.LpS, {
+        titleIcon: n ? (0, i.jsx)(l.LpS, {
             className: h.A,
             text: g.intl.string(g.t.y2b7CA)
         }) : null,
         borderType: _.i.LIMITED,
         showBorder: n,
         hasBackground: n,
-        children: (0, i.jsx)(r.Button, {
+        children: (0, i.jsx)(l.Button, {
             text: g.intl.string(g.t.Geikwq),
             onClick: () => {
                 n && t(m.i.TAKE_ACTION), (0, c.openUserProfileModal)({
                     userId: x,
-                    sourceAnalyticsLocations: [l.A.USER_SETTINGS_USER_PROFILE],
+                    sourceAnalyticsLocations: [r.A.USER_SETTINGS_USER_PROFILE],
                     hideRestrictedProfile: !0,
                     tabSection: A.RP.WIDGETS
                 })

@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(503698),
-    r = n.n(a),
-    l = n(873263),
+    l = n.n(a),
+    r = n(873263),
     o = n(311907),
     c = n(230109),
     d = n(582754),
@@ -49,7 +49,7 @@ var i = n(627968),
     K = n(157650),
     Z = n(122402);
 let q = () => {
-    let e = (0, l.zy)();
+    let e = (0, r.zy)();
     (0, x.P)(h.b);
     let t = s.useRef(null),
         n = s.useRef(null),
@@ -62,8 +62,8 @@ let q = () => {
         ee = (0, d.Mw)($),
         [et, en] = s.useState(!1),
         [ei, es] = s.useState(!1),
-        [ea, er] = s.useState(!1),
-        [el, eo] = s.useState(!1),
+        [ea, el] = s.useState(!1),
+        [er, eo] = s.useState(!1),
         [ec, ed] = s.useState(!1),
         eu = (0, o.bG)([C.A], () => C.A.getPremiumTypeSubscription()),
         e_ = null != eu ? (0, S.EL)(eu) : null,
@@ -98,7 +98,7 @@ let q = () => {
         } = eI,
         eR = ep ? W : K,
         ey = (0, i.jsxs)("div", {
-            className: r()(eR.container, eR.responsiveContainer, {
+            className: l()(eR.container, eR.responsiveContainer, {
                 [eR.containerBackground]: ep || ee,
                 [W.fadeInFromTop]: !J && ep
             }),
@@ -166,7 +166,7 @@ let q = () => {
                     ref: ev.ref,
                     children: (0, i.jsx)(c.L, {
                         innerRef: a,
-                        onChange: e => er(e),
+                        onChange: e => el(e),
                         threshold: .1,
                         active: !0,
                         children: ep ? (0, i.jsx)(j.hy, {
@@ -189,7 +189,7 @@ let q = () => {
             }), (0, i.jsx)(c.L, {
                 innerRef: X,
                 onChange: e => {
-                    e && !el && (T.default.track(F.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+                    e && !er && (T.default.track(F.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
                         location_stack: ex
                     }), eo(!0))
                 },
@@ -224,7 +224,7 @@ let q = () => {
     return (0, i.jsx)(u.NPJ, {
         theme: ep ? z.NJ.DARKER : $,
         children: e => (0, i.jsx)(u.GtU, {
-            className: r()(eR.scroller, e),
+            className: l()(eR.scroller, e),
             ref: t,
             children: ey
         })

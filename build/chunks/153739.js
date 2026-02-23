@@ -7,13 +7,13 @@ n.d(t, {
 var i = n(417597),
     s = n(287809),
     a = n(842144),
-    r = n(695515),
-    l = n(438732);
+    l = n(695515),
+    r = n(438732);
 let o = () => {
-        let e = (0, l.A)();
-        return (0, i.bG)([r.A, s.default], () => {
+        let e = (0, r.A)();
+        return (0, i.bG)([l.A, s.default], () => {
             if (!0 !== e) return s.default.getCurrentUser();
-            let t = r.A.getSelectedTeenId();
+            let t = l.A.getSelectedTeenId();
             if (null !== t) return s.default.getUser(t)
         })
     },
@@ -22,7 +22,7 @@ let o = () => {
         if (null != t) return t
     }),
     d = () => {
-        let e = r.A.getSelectedTeenId(),
+        let e = l.A.getSelectedTeenId(),
             {
                 hasLoadedSettings: t,
                 isLoading: n

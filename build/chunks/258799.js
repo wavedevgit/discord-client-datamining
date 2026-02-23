@@ -1,11 +1,11 @@
 /** chunk id: 258799, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => r
+    A: () => l
 });
 var i = n(627968),
     s = n(307973),
     a = n(969923);
-let r = e => {
+let l = e => {
     let {
         isMotionReduced: t,
         containerVisibilityPercentage: n

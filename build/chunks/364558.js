@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(397927),
     a = n(975807),
-    r = n(95035),
-    l = n(975571),
+    l = n(95035),
+    r = n(975571),
     o = n(975662),
     c = n(88001),
     d = n(652215),
@@ -14,7 +14,7 @@ var i = n(627968),
     _ = n(985018),
     m = n(817577);
 let A = () => {
-        (0, a.A)(l.A.getArticleURL(d.MVz.PREMIUM_GROUP_ABOUT))
+        (0, a.A)(r.A.getArticleURL(d.MVz.PREMIUM_GROUP_ABOUT))
     },
     g = () => ({
         name: o.U.PREMIUM_GROUP,
@@ -23,7 +23,7 @@ let A = () => {
             totalSeats: c.aw,
             premiumGroupProductName: (0, c.DP)()
         }),
-        description: (0, i.jsx)(r.A, {
+        description: (0, i.jsx)(l.A, {
             onClick: A,
             children: _.intl.string(u.default.yYyGJH)
         }),

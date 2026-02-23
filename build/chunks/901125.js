@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(503698),
     a = n.n(s),
-    r = n(397927),
-    l = n(780964),
+    l = n(397927),
+    r = n(780964),
     o = n(840065),
     c = n(975571),
     d = n(927578),
@@ -26,16 +26,16 @@ let h = e => {
     if (null == s) return null;
     let E = null != s ? d.Ay.getPremiumPlanItem(s) : null;
     if (d.Ay.isBoostOnlySubscription(s) ? t = A.intl.string(A.t.Uj0md3) : null != E && (t = d.Ay.getTierDisplayNameByPlanId(E.planId)), null == t) return null;
-    let C = () => (0, o.openUserSettings)(l.X.SUBSCRIPTIONS_PANEL, {
+    let C = () => (0, o.openUserSettings)(r.X.SUBSCRIPTIONS_PANEL, {
             section: m.nc_.SUBSCRIPTIONS
         }),
         T = (null != E ? d.Ay.getSkuIdForPlan(E.planId) : null) === _.pe.TIER_1;
-    return n = null != x ? x : p ? "always-white" : "text-default", (0, i.jsxs)(r.ZpM, {
+    return n = null != x ? x : p ? "always-white" : "text-default", (0, i.jsxs)(l.ZpM, {
         className: a()(g.kL, h, {
             [g.He]: p
         }),
-        type: r.ZpM.Types.CUSTOM,
-        children: [(0, i.jsx)(r.EpV, {
+        type: l.ZpM.Types.CUSTOM,
+        children: [(0, i.jsx)(l.EpV, {
             size: "custom",
             width: 20,
             height: 20,
@@ -43,7 +43,7 @@ let h = e => {
             className: a()(g.Kk, {
                 [g.Pt]: p
             })
-        }), (0, i.jsx)(r.Text, {
+        }), (0, i.jsx)(l.Text, {
             variant: "text-sm/medium",
             color: n,
             children: T ? A.intl.format(A.t["tYuv+T"], {

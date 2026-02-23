@@ -8,8 +8,8 @@ n.d(t, {
 var i = n(64700),
     s = n(311907),
     a = n(361739),
-    r = n(406360),
-    l = n(86379),
+    l = n(406360),
+    r = n(86379),
     o = n(968011),
     c = n(643015),
     d = n(945276),
@@ -55,7 +55,7 @@ function D() {
         D = (0, x.Rv)({
             location: "settings"
         }),
-        G = (0, l.H)(),
+        G = (0, r.H)(),
         M = (0, A.H)({
             location: P.rE.USER_SETTINGS_SEARCH_GIFT_INVENTORY
         }),
@@ -80,7 +80,7 @@ function D() {
         } = (0, o.us)("useGenerateUserSettingsSections", {
             autoTrackExposure: !1
         }),
-        q = (0, r.i)("useGenerateUserSettingsSections");
+        q = (0, l.i)("useGenerateUserSettingsSections");
     return i.useMemo(() => (0, v.zj)({
         unseenGiftCount: e,
         showPrepaidPaymentPastDueWarning: t,
@@ -127,16 +127,16 @@ function G(e) {
             }] = e;
             return [t, n]
         })),
-        r = new Set,
-        l = e => {
+        l = new Set,
+        r = e => {
             let t = s[e];
             if (null == t) return;
-            r.add(e);
+            l.add(e);
             let n = t.parent;
-            null != n && l(n)
+            null != n && r(n)
         },
         o = e => {
-            for (let t of (r.add(e), Object.entries(a).filter(t => {
+            for (let t of (l.add(e), Object.entries(a).filter(t => {
                     let [n, i] = t;
                     return i === e
                 }).map(e => {
@@ -145,13 +145,13 @@ function G(e) {
                 }))) o(t)
         };
     for (let e of t.filter(e => e in s))
-        if (!r.has(e)) {
+        if (!l.has(e)) {
             if (null != s[e].element && null == s[e].parent) {
-                r.clear();
+                l.clear();
                 break
             }
-            Object.values(a).includes(e) && o(e), l(e)
-        } return r
+            Object.values(a).includes(e) && o(e), r(e)
+        } return l
 }
 
 function M() {
@@ -199,13 +199,13 @@ function M() {
         }), [t]);
     return i.useMemo(() => {
         var t, i;
-        let s, r, l;
-        return s = [], r = U(e), t = e, i = new Set(Array.from((void 0) ?? []).filter(e => r.has(e))), l = new Map, null != i && i.forEach(e => {
+        let s, l, r;
+        return s = [], l = U(e), t = e, i = new Set(Array.from((void 0) ?? []).filter(e => l.has(e))), r = new Map, null != i && i.forEach(e => {
             let n = t[e].parent;
             for (; null != n && null != t[n].parent;) n = t[n].parent;
             if (null != n) {
-                let e = l.get(n) ?? 0;
-                l.set(n, e + 1)
+                let e = r.get(n) ?? 0;
+                r.set(n, e + 1)
             }
         }), n.forEach(t => {
             0 !== t.settings.length && (!0 === t.divider && s.push({

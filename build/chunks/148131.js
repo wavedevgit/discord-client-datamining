@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(284009),
-    r = n.n(a),
-    l = n(417597),
+    l = n.n(a),
+    r = n(417597),
     o = n(397927),
     c = n(287809),
     d = n(53719),
@@ -19,8 +19,8 @@ var i = n(627968),
 function h(e) {
     let {
         user: t
-    } = e, a = (0, l.bG)([c.default], () => c.default.getCurrentUser()), h = s.useCallback(() => {
-        r()(void 0 !== a, "User must be logged in to accept a link request"), (0, o.mMO)(async () => {
+    } = e, a = (0, r.bG)([c.default], () => c.default.getCurrentUser()), h = s.useCallback(() => {
+        l()(void 0 !== a, "User must be logged in to accept a link request"), (0, o.mMO)(async () => {
             let {
                 default: e
             } = await n.e("43139").then(n.bind(n, 179950));

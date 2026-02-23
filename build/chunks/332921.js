@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(311907),
     a = n(397927),
-    r = n(670470),
-    l = n(253932),
+    l = n(670470),
+    r = n(253932),
     o = n(430452),
     c = n(274372),
     d = n(915618),
@@ -15,10 +15,10 @@ var s = n(311907),
     _ = n(985018);
 
 function m() {
-    let e = l.Q$.useSetting(),
+    let e = r.Q$.useSetting(),
         {
             enableViewerClipping: t
-        } = r.A.useExperiment({
+        } = l.A.useExperiment({
             location: "Clips Settings"
         }, {
             autoTrackExposure: !1

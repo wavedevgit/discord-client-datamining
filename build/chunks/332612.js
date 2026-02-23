@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(311907),
-    r = n(397927),
-    l = n(803306),
+    l = n(397927),
+    r = n(803306),
     o = n(966327),
     c = n(688810);
 n(936388), n(714763);
@@ -32,34 +32,34 @@ function x(e) {
         sourceAnalyticsLocations: u
     }), [t, u]);
     return s.useEffect(() => {
-        (0, l.wz)(t)
+        (0, r.wz)(t)
     }, [t]), (0, i.jsxs)("div", {
         className: h.uW,
         children: [null != x && (0, i.jsx)(o.A, {
             className: h.my,
             user: x,
-            size: r._3J.SIZE_40
+            size: l._3J.SIZE_40
         }), (0, i.jsxs)("div", {
             className: h.Qq,
-            children: [(0, i.jsx)(r.DUT, {
+            children: [(0, i.jsx)(l.DUT, {
                 className: h.Xh,
                 onClick: C,
-                children: (0, i.jsx)(r.Text, {
+                children: (0, i.jsx)(l.Text, {
                     variant: "text-md/semibold",
                     color: "interactive-text-active",
                     children: p
                 })
-            }), (0, i.jsx)(r.Text, {
+            }), (0, i.jsx)(l.Text, {
                 variant: "text-md/medium",
                 color: "text-default",
                 children: g.intl.format(g.t["/MBjYF"], {
                     count: n
                 })
             })]
-        }), (0, i.jsx)(r.DUT, {
+        }), (0, i.jsx)(l.DUT, {
             onClick: E,
             className: h.Qz,
-            children: (0, i.jsx)(r.ucK, {
+            children: (0, i.jsx)(l.ucK, {
                 size: "xs"
             })
         })]
@@ -71,7 +71,7 @@ function p(e) {
         className: t,
         userId: n,
         verification: a,
-        index: l
+        index: r
     } = e, o = (0, d.tC)(a.timestamp), c = s.useCallback(() => {
         (0, d.W0)(n, a.verifiedKey)
     }, [a.verifiedKey, n]);
@@ -79,23 +79,23 @@ function p(e) {
         className: t,
         children: [(0, i.jsxs)("div", {
             className: h.Qq,
-            children: [(0, i.jsx)(r.Text, {
+            children: [(0, i.jsx)(l.Text, {
                 variant: "text-sm/semibold",
                 color: "interactive-text-active",
                 children: g.intl.format(g.t.N4qBBO, {
-                    index: l + 1
+                    index: r + 1
                 })
-            }), (0, i.jsx)(r.Text, {
+            }), (0, i.jsx)(l.Text, {
                 variant: "text-sm/medium",
                 color: "text-default",
                 children: o
             })]
-        }), (0, i.jsx)(r.DUT, {
+        }), (0, i.jsx)(l.DUT, {
             className: h.Kk,
             onClick: c,
-            children: (0, i.jsx)(r.PGe, {
+            children: (0, i.jsx)(l.PGe, {
                 size: "md",
-                color: r.LU0.colors.INTERACTIVE_TEXT_DEFAULT
+                color: l.LU0.colors.INTERACTIVE_TEXT_DEFAULT
             })
         })]
     })

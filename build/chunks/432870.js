@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(607470),
     a = n(608416),
-    r = n(48415),
-    l = n(592151),
+    l = n(48415),
+    r = n(592151),
     o = n(844738);
 let c = e => {
     let {
@@ -44,7 +44,7 @@ let c = e => {
             },
             animateXAxisWiggle: !0,
             children: t ? (0, i.jsx)("img", {
-                src: r.A,
+                src: l.A,
                 alt: "",
                 className: u
             }) : (0, i.jsx)(s.A, {
@@ -54,9 +54,9 @@ let c = e => {
                 loop: !0,
                 className: u,
                 children: (0, i.jsx)("source", {
-                    src: l.A
+                    src: r.A
                 })
-            }, l.A)
+            }, r.A)
         })
     })
 }

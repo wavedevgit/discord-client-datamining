@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(626584),
     s = n(260509),
     a = n(961350),
-    r = n(696451),
-    l = n(317525),
+    l = n(696451),
+    r = n(317525),
     o = n(71393),
     c = n(860689),
     d = n(9865),
@@ -40,9 +40,9 @@ let m = new i.A("Guilds"),
                 if ("unavailable" === n.data_mode) return;
                 let e = o.A.getGuild(n.id);
                 if (null != e) {
-                    let i = l.A.getUnsafeMutableRoles(n.id),
+                    let i = r.A.getUnsafeMutableRoles(n.id),
                         s = "partial" === n.data_mode ? u.ly(n.id, i, n.partial_updates.roles, n.partial_updates.deleted_role_ids) : d.hd(n.id, n.roles);
-                    this.put(c.Me(c.kI(n, e), d.cH(s), r.Ay.getSelfMember(n.id)), t)
+                    this.put(c.Me(c.kI(n, e), d.cH(s), l.Ay.getSelfMember(n.id)), t)
                 }
             }
         }
@@ -55,27 +55,27 @@ let m = new i.A("Guilds"),
         handleGuildUpdate(e, t) {
             let n = o.A.getGuild(e.guild.id),
                 i = c.Y1(e.guild, n);
-            this.put(c.Me(i, d.cH(d.hd(e.guild.id, e.guild.roles)), r.Ay.getSelfMember(e.guild.id)), t)
+            this.put(c.Me(i, d.cH(d.hd(e.guild.id, e.guild.roles)), l.Ay.getSelfMember(e.guild.id)), t)
         }
         handleGuildDelete(e, t) {
             this.delete(e.guild.id, t)
         }
         handleGuildRoleChange(e, t) {
             let n = o.A.getGuild(e.guildId),
-                i = l.A.getUnsafeMutableRoles(e.guildId);
+                i = r.A.getUnsafeMutableRoles(e.guildId);
             null != n && this.put(c.Me(n, d.cH({
                 ...i,
                 [e.role.id]: d.Wj(e.guildId, e.role)
-            }), r.Ay.getSelfMember(e.guildId)), t)
+            }), l.Ay.getSelfMember(e.guildId)), t)
         }
         handleGuildRoleDelete(e, t) {
             let n = o.A.getGuild(e.guildId);
             if (null != n) {
                 let i = {
-                    ...l.A.getUnsafeMutableRoles(e.guildId)
+                    ...r.A.getUnsafeMutableRoles(e.guildId)
                 };
                 delete i[e.roleId];
-                let s = r.Ay.getSelfMember(e.guildId);
+                let s = l.Ay.getSelfMember(e.guildId);
                 null != s && (s = {
                     ...s,
                     roles: s.roles.filter(t => t !== e.roleId)
@@ -85,13 +85,13 @@ let m = new i.A("Guilds"),
         handleGuildMemberAdd(e, t) {
             if (null != e.joinedAt && e.user.id === a.default.getId()) {
                 let n = o.A.getGuild(e.guildId);
-                null != n && this.put(c.Me((0, s.kn)(n, e.joinedAt), d.cH(l.A.getUnsafeMutableRoles(n.id)), r.Ay.getSelfMember(n.id)), t)
+                null != n && this.put(c.Me((0, s.kn)(n, e.joinedAt), d.cH(r.A.getUnsafeMutableRoles(n.id)), l.Ay.getSelfMember(n.id)), t)
             }
         }
         handleGuildMemberUpdate(e, t) {
             if (e.user.id !== a.default.getId()) return;
             let n = o.A.getGuild(e.guildId);
-            null != n && this.put(c.Me(n, d.cH(l.A.getUnsafeMutableRoles(n.id)), {
+            null != n && this.put(c.Me(n, d.cH(r.A.getUnsafeMutableRoles(n.id)), {
                 roles: e.roles,
                 userId: e.user.id
             }), t)
@@ -100,12 +100,12 @@ let m = new i.A("Guilds"),
         putOne(e, t) {
             let n = e.members.find(e => e.user.id === a.default.getId()),
                 i = o.A.getGuild(e.id),
-                s = d.j_(e.id, e.roles, l.A.getUnsafeMutableRoles(e.id)),
-                r = c.Me(c.Wj(e, i), d.cH(s), null != n ? {
+                s = d.j_(e.id, e.roles, r.A.getUnsafeMutableRoles(e.id)),
+                l = c.Me(c.Wj(e, i), d.cH(s), null != n ? {
                     userId: n.user.id,
                     roles: n.roles
                 } : null);
-            this.put(r, t)
+            this.put(l, t)
         }
         put(e, t) {
             _.A.guildsTransaction(t).put(e)

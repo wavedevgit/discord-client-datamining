@@ -7,17 +7,17 @@ var i = n(627968);
 n(64700);
 var s = n(397927),
     a = n(854627),
-    r = n(837921),
-    l = n(842130),
+    l = n(837921),
+    r = n(842130),
     o = n(985018),
     c = n(241938);
-let d = r.Ay.getEnableHardwareAcceleration() ? s.JsQ : s.euF,
+let d = l.Ay.getEnableHardwareAcceleration() ? s.JsQ : s.euF,
     u = e => {
         let {
             user: t,
             avatarSize: n = s._3J.SIZE_48
         } = e, {
-            avatarSrc: r,
+            avatarSrc: l,
             avatarDecorationSrc: c,
             eventHandlers: u
         } = (0, a.A)({
@@ -27,10 +27,10 @@ let d = r.Ay.getEnableHardwareAcceleration() ? s.JsQ : s.euF,
         return (0, i.jsx)("div", {
             ...u,
             children: (0, i.jsx)(d, {
-                src: r,
+                src: l,
                 avatarDecoration: c,
                 size: n,
-                "aria-label": o.intl.formatToPlainString(l.default.kFj4h1, {
+                "aria-label": o.intl.formatToPlainString(r.default.kFj4h1, {
                     name: t.username
                 })
             })

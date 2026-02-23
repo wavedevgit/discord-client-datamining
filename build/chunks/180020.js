@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(554146),
-    r = n(397927),
-    l = n(631670),
+    l = n(397927),
+    r = n(631670),
     o = n(688810),
     c = n(379848),
     d = n(259065),
@@ -39,13 +39,13 @@ function T(e) {
             guildId: n
         })
     }, [I, O, n]), P = (0, s.useCallback)(() => {
-        (0, l.dM)(null), _.default.track(h.HAw.DISPLAY_NAME_STYLES_REMOVED)
+        (0, r.dM)(null), _.default.track(h.HAw.DISPLAY_NAME_STYLES_REMOVED)
     }, []), L = (0, s.useCallback)(() => {
         (0, u.mZ)(null)
     }, []), D = void 0 !== b || (null != n ? null != N : null != f);
     return (0, i.jsx)(g.A, {
         title: p.intl.string(E.default["86GtGH"]),
-        titleIcon: R ? (0, i.jsx)(r.LpS, {
+        titleIcon: R ? (0, i.jsx)(l.LpS, {
             text: p.intl.string(p.t.y2b7CA),
             className: C.A
         }) : void 0,
@@ -54,17 +54,17 @@ function T(e) {
         errors: j,
         children: (0, i.jsxs)("div", {
             className: C.N,
-            children: [(0, i.jsx)(r.Button, {
+            children: [(0, i.jsx)(l.Button, {
                 variant: "primary",
                 size: "sm",
                 text: p.intl.string(E.default.vJqrIg),
                 onClick: y
-            }), null == n && D && (0, i.jsx)(r.Button, {
+            }), null == n && D && (0, i.jsx)(l.Button, {
                 variant: "secondary",
                 size: "sm",
                 text: p.intl.string(E.default.ymq8WQ),
                 onClick: P
-            }), null != n && null != (void 0 !== b ? b : N) && (0, i.jsx)(r.Button, {
+            }), null != n && null != (void 0 !== b ? b : N) && (0, i.jsx)(l.Button, {
                 variant: "secondary",
                 size: "sm",
                 text: p.intl.string(E.default["j/KRxc"]),

@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(843282),
     a = n(435371),
-    r = n(397927),
-    l = n(371509),
+    l = n(397927),
+    r = n(371509),
     o = n(721267);
 
 function c(e) {
@@ -20,7 +20,7 @@ function c(e) {
     } = e;
     return (0, i.jsxs)("div", {
         className: o.ar,
-        children: [(0, i.jsx)(r.Text, {
+        children: [(0, i.jsx)(l.Text, {
             variant: "text-md/medium",
             color: d ? "text-muted" : "text-strong",
             className: o.DD,
@@ -33,11 +33,11 @@ function c(e) {
             onChange: e => a(e),
             renderOptionValue: e => {
                 let [t] = e;
-                return (0, i.jsx)(l.A, {
+                return (0, i.jsx)(r.A, {
                     option: t
                 })
             },
-            renderOptionLabel: e => (0, i.jsx)(l.A, {
+            renderOptionLabel: e => (0, i.jsx)(r.A, {
                 option: e
             }),
             isDisabled: d,

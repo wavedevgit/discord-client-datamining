@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(989349),
-    r = n.n(a),
-    l = n(158954),
+    l = n.n(a),
+    r = n(158954),
     o = n(397927),
     c = n(384904),
     d = n(793574),
@@ -46,12 +46,12 @@ let x = e => {
             }
         })(C), f = async () => {
             await T(x.id) && p()
-        }, N = a.role_benefits.benefits.filter(e => e.ref_type === A.bN.CHANNEL), b = a.role_benefits.benefits.filter(e => e.ref_type === A.bN.INTANGIBLE), j = r()(x.currentPeriodEnd).format("MMMM Do, YYYY"), v = g.intl.formatToPlainString(g.t.KsMRP5, {
+        }, N = a.role_benefits.benefits.filter(e => e.ref_type === A.bN.CHANNEL), b = a.role_benefits.benefits.filter(e => e.ref_type === A.bN.INTANGIBLE), j = l()(x.currentPeriodEnd).format("MMMM Do, YYYY"), v = g.intl.formatToPlainString(g.t.KsMRP5, {
             numChannels: N.length,
             numAdditionalBenefits: b.length,
             subscriptionEndDate: j
         });
-        return (0, i.jsx)(l.Modal, {
+        return (0, i.jsx)(r.Modal, {
             transitionState: t,
             "aria-labelledby": E,
             actions: [{

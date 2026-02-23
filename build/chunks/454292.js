@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(735438),
-    r = n(311907),
-    l = n(827734),
+    l = n(311907),
+    r = n(827734),
     o = n(314116),
     c = n(397927),
     d = n(775602),
@@ -40,7 +40,7 @@ function O(e) {
         locations: n,
         settingsLocations: s,
         onChange: a
-    } = e, r = n.map(e => (0, i.jsx)(c.dOG, {
+    } = e, l = n.map(e => (0, i.jsx)(c.dOG, {
         label: e.title,
         description: e.description,
         checked: s[e.location],
@@ -52,7 +52,7 @@ function O(e) {
     }, e.location));
     return (0, i.jsx)(c.nVY, {
         label: S.intl.string(S.t.bWVN1D),
-        children: r
+        children: l
     })
 }
 
@@ -75,7 +75,7 @@ function y(e) {
             warningSeen: n
         },
         updateSettings: s
-    } = e, a = (0, r.bG)([d.A], () => d.A.useReducedMotion);
+    } = e, a = (0, l.bG)([d.A], () => d.A.useReducedMotion);
     return (0, i.jsx)(c.dOG, {
         label: S.intl.string(S.t.vuiXm9),
         description: S.intl.string(S.t.KuYbWN),
@@ -103,9 +103,9 @@ function P(e) {
             confettiEnabled: n,
             confettiCount: s,
             confettiSize: a,
-            confettiEnabledLocations: r
+            confettiEnabledLocations: l
         },
-        updateSettings: l
+        updateSettings: r
     } = e, o = !t || !n;
     return (0, i.jsxs)(c.nVY, {
         label: S.intl.string(S.t.mqxwJO),
@@ -114,7 +114,7 @@ function P(e) {
             description: S.intl.string(S.t.O1Vflg),
             checked: n,
             disabled: !t,
-            onChange: e => l({
+            onChange: e => r({
                 confettiEnabled: e
             }, 0)
         }), (0, i.jsxs)("div", {
@@ -132,7 +132,7 @@ function P(e) {
                 minValue: j[0],
                 maxValue: j[j.length - 1],
                 initialValue: s,
-                onValueChange: e => l({
+                onValueChange: e => r({
                     confettiCount: e
                 }, 0),
                 onValueRender: e => `${e}`
@@ -152,7 +152,7 @@ function P(e) {
                 minValue: v[0],
                 maxValue: v[v.length - 1],
                 initialValue: a,
-                onValueChange: e => l({
+                onValueChange: e => r({
                     confettiSize: e
                 }, 0),
                 onValueRender: e => `${e}`
@@ -176,8 +176,8 @@ function P(e) {
                 title: S.intl.string(S.t.V66giQ),
                 description: S.intl.string(S.t.fiHV7u)
             }],
-            settingsLocations: r,
-            onChange: e => l({
+            settingsLocations: l,
+            onChange: e => r({
                 confettiEnabledLocations: e
             }, 0)
         })]
@@ -192,8 +192,8 @@ function L(e) {
             comboSoundsEnabled: s,
             combosRequiredCount: a
         },
-        updateSettings: r
-    } = e, l = !t || !n;
+        updateSettings: l
+    } = e, r = !t || !n;
     return (0, i.jsxs)(c.nVY, {
         label: S.intl.string(S.t.Xz0ole),
         children: [(0, i.jsx)(c.dOG, {
@@ -201,7 +201,7 @@ function L(e) {
             description: S.intl.string(S.t["31Z8Ee"]),
             checked: n,
             disabled: !t,
-            onChange: e => r({
+            onChange: e => l({
                 combosEnabled: e
             })
         }), (0, i.jsx)(c.dOG, {
@@ -209,25 +209,25 @@ function L(e) {
             description: S.intl.string(S.t["9rgQEr"]),
             checked: s,
             disabled: !t,
-            onChange: e => r({
+            onChange: e => l({
                 comboSoundsEnabled: e
             })
         }), (0, i.jsxs)("div", {
             children: [(0, i.jsx)(c.Text, {
                 variant: "text-md/semibold",
-                color: l ? "text-muted" : "text-strong",
+                color: r ? "text-muted" : "text-strong",
                 className: I.KF,
                 children: S.intl.string(S.t.L0oQuh)
             }), (0, i.jsx)(R, {
                 children: S.intl.string(S.t["/OOFpL"])
             }), (0, i.jsx)(c.Apm, {
-                disabled: l,
+                disabled: r,
                 markers: N,
                 stickToMarkers: !0,
                 minValue: N[0],
                 maxValue: N[N.length - 1],
                 initialValue: a,
-                onValueChange: e => r({
+                onValueChange: e => l({
                     combosRequiredCount: e
                 }),
                 onValueRender: e => `${e}`
@@ -244,8 +244,8 @@ function D(e) {
             shakeIntensity: s,
             screenshakeEnabledLocations: a
         },
-        updateSettings: l
-    } = e, o = (0, r.bG)([d.A], () => d.A.useReducedMotion), u = !t || !n || o;
+        updateSettings: r
+    } = e, o = (0, l.bG)([d.A], () => d.A.useReducedMotion), u = !t || !n || o;
     return (0, i.jsxs)(c.nVY, {
         label: S.intl.string(S.t.wVS5Sd),
         children: [(0, i.jsx)(c.dOG, {
@@ -253,7 +253,7 @@ function D(e) {
             description: o ? S.intl.string(S.t.GckHGw) : S.intl.string(S.t.Qq5W3v),
             checked: n && !o,
             disabled: !t || o,
-            onChange: e => l({
+            onChange: e => r({
                 screenshakeEnabled: e
             }, 1)
         }), (0, i.jsxs)("div", {
@@ -276,7 +276,7 @@ function D(e) {
                     var t;
                     null != (t = {
                         shakeIntensity: e
-                    }).shakeIntensity && t.shakeIntensity > s && (0, g._)(h.sn.MORE), l(t, 1)
+                    }).shakeIntensity && t.shakeIntensity > s && (0, g._)(h.sn.MORE), r(t, 1)
                 },
                 onMarkerRender: e => e === b[b.length - 1] ? S.intl.string(S.t["4rbMWc"]) : `${100*e}%`
             })]
@@ -296,7 +296,7 @@ function D(e) {
                 description: S.intl.string(S.t["mqfw/H"])
             }],
             settingsLocations: a,
-            onChange: e => l({
+            onChange: e => r({
                 screenshakeEnabledLocations: e
             }, 1)
         })]
@@ -343,7 +343,7 @@ function M(e) {
             className: I.w1,
             children: (0, i.jsx)(c.OR, {
                 size: "md",
-                color: l.A.unsafe_rawColors.ORANGE_345.css
+                color: r.A.unsafe_rawColors.ORANGE_345.css
             })
         }), (0, i.jsxs)("div", {
             className: I.qL,
@@ -375,17 +375,17 @@ function k(e) {
     let {
         onChangePage: t,
         setShowEnableAnimation: n
-    } = e, a = (0, r.cf)([p.A], () => p.A.getState()), [l, o] = s.useState({
+    } = e, a = (0, l.cf)([p.A], () => p.A.getState()), [r, o] = s.useState({
         x: 0,
         y: 0
     }), d = (0, C.A)(), u = (e, t) => {
-        var i, s, r, o, c, u, m, g;
+        var i, s, l, o, c, u, m, g;
         if (e.enabled && !1 === a.enabled && (n(!0), (0, _.Ak)("poggermode_enabled"), (0, A.fO)({
                 duration: 2e3,
                 intensity: e.shakeIntensity ?? a.shakeIntensity
             })), (0, x.O9)(e), null == t) return;
-        let h = (i = a.confettiEnabled, s = e.confettiEnabled, r = a.enabled, o = e.enabled, (s ?? i) && (o ?? r));
-        0 === t && h && d.fire(l.x, l.y, {
+        let h = (i = a.confettiEnabled, s = e.confettiEnabled, l = a.enabled, o = e.enabled, (s ?? i) && (o ?? l));
+        0 === t && h && d.fire(r.x, r.y, {
             settings: e
         });
         let p = (c = a.screenshakeEnabled, u = e.screenshakeEnabled, m = a.enabled, g = e.enabled, (u ?? c) && (g ?? m));
@@ -423,7 +423,7 @@ function k(e) {
 let V = e => 0 === e ? u.f.LEFT : u.f.RIGHT;
 
 function w() {
-    let [e, t] = s.useState(0), [n, a] = s.useState(V(e)), [l, o] = s.useState(!1), _ = (0, r.bG)([d.A], () => d.A.useReducedMotion), m = l && !_;
+    let [e, t] = s.useState(0), [n, a] = s.useState(V(e)), [r, o] = s.useState(!1), _ = (0, l.bG)([d.A], () => d.A.useReducedMotion), m = r && !_;
     return s.useEffect(() => {
         let t = setTimeout(() => {
             a(V(e))

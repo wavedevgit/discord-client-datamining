@@ -5,8 +5,8 @@ n.d(t, {
 });
 var i, s = n(627968),
     a = n(64700),
-    r = n(284009),
-    l = n.n(r),
+    l = n(284009),
+    r = n.n(l),
     o = n(311907),
     c = n(397927),
     d = n(98207),
@@ -39,7 +39,7 @@ var i, s = n(627968),
 function M() {
     let e = (0, o.bG)([C.default], () => {
             let e = C.default.getCurrentUser();
-            return l()(null != e, "SecuritySettingsTab: currentUser cannot be undefined"), e
+            return r()(null != e, "SecuritySettingsTab: currentUser cannot be undefined"), e
         }),
         t = (0, o.bG)([x.A], () => x.A.getBackupCodes()),
         {

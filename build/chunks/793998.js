@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(503698),
-    r = n.n(a),
-    l = n(607399),
+    l = n.n(a),
+    r = n(607399),
     o = n(417597),
     c = n(397927),
     d = n(944791),
@@ -97,8 +97,8 @@ function U(e) {
     return (0, i.jsx)(c.NPJ, {
         theme: t,
         children: e => (0, i.jsxs)(g.A, {
-            className: r()(e, P.ZB),
-            scrollable: l.Fr,
+            className: l()(e, P.ZB),
+            scrollable: r.Fr,
             role: "navigation",
             "aria-labelledby": a,
             toolbar: !0,
@@ -145,7 +145,7 @@ function k() {
             }
         });
     if (a) return null;
-    let r = L[n];
+    let l = L[n];
     return (0, i.jsxs)("main", {
         className: P.kL,
         "aria-label": y.intl.string(R.default.RZqaJn),
@@ -160,7 +160,7 @@ function k() {
             id: n,
             "aria-labelledby": e,
             className: P.Us,
-            children: t ? (0, i.jsx)(G, {}) : (0, i.jsx)(r, {})
+            children: t ? (0, i.jsx)(G, {}) : (0, i.jsx)(l, {})
         })]
     })
 }
@@ -168,7 +168,7 @@ function k() {
 function V() {
     let {
         analyticsLocations: e
-    } = (0, _.Ay)(u.A.FAMILY_CENTER), t = (0, C.A)(), n = (0, o.bG)([E.A], () => E.A.getIsInitialized()), a = (0, o.bG)([h.A], () => h.A.theme), l = (0, A.GV)(), {
+    } = (0, _.Ay)(u.A.FAMILY_CENTER), t = (0, C.A)(), n = (0, o.bG)([E.A], () => E.A.getIsInitialized()), a = (0, o.bG)([h.A], () => h.A.theme), r = (0, A.GV)(), {
         isLoading: g,
         selectedTab: T,
         handleTabChange: S,
@@ -188,7 +188,7 @@ function V() {
     return (0, i.jsx)(_.f5, {
         value: e,
         children: (0, i.jsxs)("main", {
-            className: r()(P.kL, P.ei),
+            className: l()(P.kL, P.ei),
             "aria-label": y.intl.string(R.default.RZqaJn),
             children: [(0, i.jsx)(m.HI, {
                 location: y.intl.string(R.default.RZqaJn)
@@ -200,7 +200,7 @@ function V() {
                 }
             }), (0, i.jsx)(c.VQ0.Panel, {
                 id: f,
-                "aria-labelledby": l,
+                "aria-labelledby": r,
                 className: P.Om,
                 children: (0, i.jsx)(c.HOs, {
                     children: (0, i.jsx)("div", {

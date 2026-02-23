@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(311907),
-    r = n(843282),
-    l = n(397927),
+    l = n(843282),
+    r = n(397927),
     o = n(915089),
     c = n(145497),
     d = n(685073),
@@ -78,11 +78,11 @@ let C = (0, o.Ld)(),
             title: p.intl.string(p.t.Pdd1nd),
             titleId: C,
             ref: L,
-            children: [(0, i.jsx)(l.Text, {
+            children: [(0, i.jsx)(r.Text, {
                 className: E.VA,
                 variant: "text-sm/normal",
                 children: p.intl.string(p.t.mlZ6Jx)
-            }), (0, i.jsx)(r.Pw, {
+            }), (0, i.jsx)(l.Pw, {
                 className: E.Lt,
                 optionClassName: E.S0,
                 isSelected: R,

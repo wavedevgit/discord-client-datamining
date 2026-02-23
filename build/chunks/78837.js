@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(503698),
-    r = n.n(a),
-    l = n(386181),
+    l = n.n(a),
+    r = n(386181),
     o = n(650682),
     c = n(934551),
     d = n(827734),
@@ -26,7 +26,7 @@ function A(e) {
     } = e, p = s.useRef(null), [E, C] = s.useState(null), T = A && null != E;
     return s.useLayoutEffect(() => {
         null != p.current && null == E && C(p.current.clientHeight)
-    }, [E]), (0, i.jsxs)(l.EN, {
+    }, [E]), (0, i.jsxs)(r.EN, {
         ref: t,
         isExpanded: A,
         onExpandedChange: g,
@@ -42,7 +42,7 @@ function A(e) {
                     slot: "trigger",
                     className: m.bW,
                     children: (0, i.jsx)(c.ChevronLargeUpIcon, {
-                        className: r()(m.Kk, {
+                        className: l()(m.Kk, {
                             [m.kX]: !A
                         }),
                         color: d.A.colors.ICON_STRONG
@@ -50,8 +50,8 @@ function A(e) {
                 })
             }),
             onClick: () => g(!A)
-        }), (0, i.jsx)(l.kS, {
-            className: r()(m.nd, {
+        }), (0, i.jsx)(r.kS, {
+            className: l()(m.nd, {
                 [m.t5]: !x
             }),
             children: (0, i.jsx)(u.BJc, {

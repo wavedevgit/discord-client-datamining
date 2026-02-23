@@ -5,8 +5,8 @@ n.d(t, {
 });
 var i, s = n(627968),
     a = n(64700),
-    r = n(503698),
-    l = n.n(r),
+    l = n(503698),
+    r = n.n(l),
     o = n(311907),
     c = n(397927),
     d = n(775602),
@@ -39,7 +39,7 @@ let x = e => {
             iconClassName: n,
             staticPercentage: i,
             innerCircleClassName: a,
-            progressCircleStrokeSize: r,
+            progressCircleStrokeSize: l,
             backgroundCircleSize: c,
             percentage: u,
             initialPercentage: h,
@@ -52,14 +52,14 @@ let x = e => {
             circleStroke: f
         } = e, N = (0, o.bG)([d.A], () => d.A.useReducedMotion), b = t && !N;
         return (0, s.jsx)("div", {
-            className: l()(g.G3, n),
+            className: r()(g.G3, n),
             children: (0, s.jsx)(A.A, {
-                animationClassName: l()(g._0, {
+                animationClassName: r()(g._0, {
                     [g.uJ]: b,
                     [S ?? ""]: b
                 }),
                 progressCircleStroke: f,
-                progressCircleStrokeSize: r,
+                progressCircleStrokeSize: l,
                 percentage: i ?? u,
                 initialPercentage: i ?? h,
                 progressCircleVariation: p,
@@ -68,7 +68,7 @@ let x = e => {
                         case 0:
                             return (0, s.jsx)(_.A, {
                                 className: b ? g.Ow : void 0,
-                                backgroundColor: l()(g.vH, a),
+                                backgroundColor: r()(g.vH, a),
                                 backgroundCircleSize: c
                             });
                         case 1:

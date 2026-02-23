@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(158954),
     a = n(894858),
-    r = n(688897),
-    l = n(590089),
+    l = n(688897),
+    r = n(590089),
     o = n(876813),
     c = n(191563);
 
@@ -21,10 +21,10 @@ function d(e) {
     } = t, m = d?.(), A = _?.(), {
         parentPanelNode: g,
         parentSidebarItemNode: h
-    } = (0, r.x)(n), x = u?.(), p = g?.useTitle?.(), E = x ?? p;
+    } = (0, l.x)(n), x = u?.(), p = g?.useTitle?.(), E = x ?? p;
     if (null == g || null == E) return null;
     let C = null != h ? h.icon : void 0;
-    return (0, i.jsx)(l.U, {
+    return (0, i.jsx)(r.U, {
         title: E,
         description: A,
         leadingElement: null != C && (0, i.jsx)("div", {

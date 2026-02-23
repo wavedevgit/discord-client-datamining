@@ -5,16 +5,16 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(397927),
-    r = n(793574),
-    l = n(688810),
+    l = n(793574),
+    r = n(688810),
     o = n(463042),
     c = n(985018),
     d = n(794034);
 let u = s.forwardRef((e, t) => {
     let {
         analyticsLocations: n
-    } = (0, l.Ay)(r.A.PREMIUM_MARKETING_FOOTER_CTA);
-    return (0, i.jsx)(l.f5, {
+    } = (0, r.Ay)(l.A.PREMIUM_MARKETING_FOOTER_CTA);
+    return (0, i.jsx)(r.f5, {
         value: n,
         children: (0, i.jsx)("div", {
             ref: t,

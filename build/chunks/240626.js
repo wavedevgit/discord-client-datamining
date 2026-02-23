@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(503698),
-    r = n.n(a),
-    l = n(311907),
+    l = n.n(a),
+    r = n(311907),
     o = n(502572),
     c = n(732955),
     d = n(397927),
@@ -33,11 +33,11 @@ function v(e) {
         guildBoostSlot: t,
         isCancellable: n,
         onCancel: a,
-        onUncancel: r,
-        premiumSubscription: l,
+        onUncancel: l,
+        premiumSubscription: r,
         useReducedMotion: u,
         fractionalState: _
-    } = e, m = s.useMemo(() => null != t.cooldownEndsAt ? new Date(t.cooldownEndsAt) : null, [t]), A = (0, E.I5)(t), g = l?.isPaused === !0 && _ === N.xc.NONE, h = b.intl.string(b.t.mOWsF1);
+    } = e, m = s.useMemo(() => null != t.cooldownEndsAt ? new Date(t.cooldownEndsAt) : null, [t]), A = (0, E.I5)(t), g = r?.isPaused === !0 && _ === N.xc.NONE, h = b.intl.string(b.t.mOWsF1);
     return (0, i.jsxs)("li", {
         className: j.Hp,
         children: [(0, i.jsxs)("div", {
@@ -47,11 +47,11 @@ function v(e) {
                 hasCooldown: t.isOnCooldown(),
                 isCanceled: A,
                 useReducedMotion: u
-            }), A && null != l ? (0, i.jsx)(d.Text, {
+            }), A && null != r ? (0, i.jsx)(d.Text, {
                 color: "text-muted",
                 variant: "text-sm/medium",
                 children: b.intl.format(b.t.Z4ULRD, {
-                    date: l.currentPeriodEnd
+                    date: r.currentPeriodEnd
                 })
             }) : t.isOnCooldown() && null != m ? (0, i.jsx)(S.A, {
                 cooldown: m.getTime()
@@ -88,7 +88,7 @@ function v(e) {
                         ...e,
                         variant: "primary",
                         text: b.intl.string(b.t["2glQNp"]),
-                        onClick: () => r(t),
+                        onClick: () => l(t),
                         disabled: g,
                         size: "sm"
                     })
@@ -115,13 +115,13 @@ let y = function(e) {
     let t, n, a, {
             guildBoostSlots: c
         } = e,
-        A = (0, l.bG)([p.A], () => p.A.getPremiumTypeSubscription()),
+        A = (0, r.bG)([p.A], () => p.A.getPremiumTypeSubscription()),
         g = A?.isPausedOrPausePending === !0,
         {
             fractionalState: S
         } = (0, _.A)(),
-        I = (0, l.bG)([u.A], () => u.A.useReducedMotion),
-        y = (0, l.bG)([x.default], () => x.default.getCurrentUser()),
+        I = (0, r.bG)([u.A], () => u.A.useReducedMotion),
+        y = (0, r.bG)([x.default], () => x.default.getCurrentUser()),
         P = S === N.xc.FP_SUB_PAUSED,
         L = g && !P,
         {
@@ -187,7 +187,7 @@ let y = function(e) {
     return a = g && S === N.xc.NONE ? b.intl.string(b.t.mOWsF1) : b.intl.string(b.t.xr4m5B), (0, i.jsx)("div", {
         className: j.iE,
         children: (0, i.jsxs)("div", {
-            className: r()(j.Qs, [j.Yq]),
+            className: l()(j.Qs, [j.Yq]),
             children: [(0, i.jsxs)("div", {
                 className: j.wx,
                 children: [(0, i.jsxs)("div", {

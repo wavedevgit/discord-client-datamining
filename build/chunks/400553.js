@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(417597),
     a = n(435371),
-    r = n(397927),
-    l = n(695515),
+    l = n(397927),
+    r = n(695515),
     o = n(923531),
     c = n(397808),
     d = n(254847),
@@ -17,13 +17,13 @@ var s = n(417597),
     A = n(985018),
     g = n(721757);
 let h = () => {
-    let e = (0, s.bG)([l.A], () => l.A.getTopUserActivities()),
-        t = (0, s.bG)([l.A], () => l.A.getTopGuildActivities());
+    let e = (0, s.bG)([r.A], () => r.A.getTopUserActivities()),
+        t = (0, s.bG)([r.A], () => r.A.getTopGuildActivities());
     return 0 === e.length && 0 === t.length ? null : (0, i.jsxs)("div", {
         className: g.kL,
         children: [e.length > 0 && (0, i.jsxs)("div", {
             className: g.A2,
-            children: [(0, i.jsx)(r.Heading, {
+            children: [(0, i.jsx)(l.Heading, {
                 variant: "text-md/medium",
                 className: g.bV,
                 children: A.intl.string(m.default.BxbvS7)
@@ -41,7 +41,7 @@ let h = () => {
             })]
         }), t.length > 0 && (0, i.jsxs)("div", {
             className: g.A2,
-            children: [(0, i.jsx)(r.Heading, {
+            children: [(0, i.jsx)(l.Heading, {
                 variant: "text-md/medium",
                 className: g.bV,
                 children: A.intl.string(m.default.Lq9Set)
@@ -52,7 +52,7 @@ let h = () => {
             }) : (0, i.jsx)("div", {
                 className: g.Ce,
                 children: t.map(e => {
-                    let t = l.A.getGuild(e.guild_id),
+                    let t = r.A.getGuild(e.guild_id),
                         n = t?.name ?? "Unknown Server";
                     return (0, i.jsx)(a.un, {
                         title: n,

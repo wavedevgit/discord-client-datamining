@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(311907),
-    r = n(397927),
-    l = n(263063),
+    l = n(397927),
+    r = n(263063),
     o = n(71393),
     c = n(711014),
     d = n(403362),
@@ -37,10 +37,10 @@ function h() {
                 id: t.id,
                 label: t.name,
                 value: t.id,
-                leading: (0, i.jsx)(l.A, {
+                leading: (0, i.jsx)(r.A, {
                     className: A.cl,
                     guild: t,
-                    size: l.A.Sizes.SMALLER,
+                    size: r.A.Sizes.SMALLER,
                     active: !0
                 })
             }
@@ -51,7 +51,7 @@ function h() {
             label: g.label(),
             leading: (0, i.jsx)("div", {
                 className: A.KP,
-                children: (0, i.jsx)(r.pVd, {
+                children: (0, i.jsx)(l.pVd, {
                     size: "sm",
                     color: "white",
                     "aria-hidden": !0,
@@ -60,7 +60,7 @@ function h() {
             })
         }), e
     }, [h, n, x, m]);
-    return (0, i.jsx)(r.ZiE, {
+    return (0, i.jsx)(l.ZiE, {
         selectionMode: "single",
         onSelectionChange: e => {
             t(e)

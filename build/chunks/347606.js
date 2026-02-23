@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(503698),
-    r = n.n(a),
-    l = n(172218),
+    l = n.n(a),
+    r = n(172218),
     o = n(775602),
     c = n(963935),
     d = n(894858),
@@ -17,7 +17,7 @@ function m(e) {
     let {
         node: t,
         children: n
-    } = e, a = s.useRef(!1), [m, A] = s.useState(!1), g = (0, l.K)(e => {
+    } = e, a = s.useRef(!1), [m, A] = s.useState(!1), g = (0, r.K)(e => {
         a.current = e, e && A(!1)
     }, .5), h = s.useCallback(async e => {
         null == g.current || null == e || e.targetKey !== t.key || null != e.targetAccordionKey || (e.animateScroll && !o.A.useReducedMotion || t.type === c.Z6.CATEGORY || A(!0), a.current && A(!1), d.A.setState({
@@ -49,7 +49,7 @@ function m(e) {
     }, [h]), (0, i.jsx)("div", {
         ref: g,
         "data-debug-key": t.key,
-        className: r()(_.k, m && _.j),
+        className: l()(_.k, m && _.j),
         children: n
     })
 }

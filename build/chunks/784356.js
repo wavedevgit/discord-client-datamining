@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(503698),
     a = n.n(s),
-    r = n(421380),
-    l = n(397927),
+    l = n(421380),
+    r = n(397927),
     o = n(543233),
     c = n(76707),
     d = n(296388);
@@ -48,7 +48,7 @@ let u = e => {
                 className: _ ? S ? d.ls : d.gu : ""
             }), S ? (0, i.jsx)("div", {
                 className: d.Yh,
-                children: (0, i.jsx)(l.Text, {
+                children: (0, i.jsx)(r.Text, {
                     className: d.nj,
                     variant: "text-md/bold",
                     children: C
@@ -56,7 +56,7 @@ let u = e => {
             }) : null]
         }), null != A && (0, i.jsxs)("div", {
             className: d.wX,
-            children: [A, null != h && null != m && (0, i.jsx)(r.$n, {
+            children: [A, null != h && null != m && (0, i.jsx)(l.$n, {
                 "data-migration-pending": !0,
                 className: s,
                 fullWidth: !0,

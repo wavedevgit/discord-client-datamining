@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(158954),
-    r = n(311907),
-    l = n(397927),
+    l = n(311907),
+    r = n(397927),
     o = n(631670),
     c = n(836602),
     d = n(592074),
@@ -22,7 +22,7 @@ function m(e) {
     } = e, [g, h] = s.useState(""), [x, p] = s.useState(""), [E, C] = s.useState(""), [T, S] = s.useState(null), [I, f] = s.useState(null), {
         formState: N,
         errors: b
-    } = (0, r.cf)([c.A], () => ({
+    } = (0, l.cf)([c.A], () => ({
         formState: c.A.getFormState(),
         errors: c.A.getErrors()
     })), j = s.useRef(null);
@@ -37,7 +37,7 @@ function m(e) {
         i?.ok ? n() : i?.body?.username != null && (0, d.E)()
     }
     return s.useEffect(() => {
-        t === l.ip4.ENTERED && j.current?.focus()
+        t === r.ip4.ENTERED && j.current?.focus()
     }, [t]), (0, i.jsx)("form", {
         onSubmit: v,
         children: (0, i.jsx)(a.Modal, {
@@ -55,9 +55,9 @@ function m(e) {
                 loading: N === u.XlH.SUBMITTING,
                 type: "submit"
             }],
-            children: (0, i.jsxs)(l.BJc, {
+            children: (0, i.jsxs)(r.BJc, {
                 gap: 20,
-                children: [(0, i.jsx)(l.ksK, {
+                children: [(0, i.jsx)(r.ksK, {
                     label: _.intl.string(_.t.WBqMRQ),
                     error: b?.password?.[0],
                     type: "password",
@@ -66,7 +66,7 @@ function m(e) {
                     inputRef: j,
                     autoComplete: "current-password",
                     required: !0
-                }), (0, i.jsx)(l.ksK, {
+                }), (0, i.jsx)(r.ksK, {
                     label: _.intl.string(_.t["8dM4FO"]),
                     error: b?.new_password?.[0] ?? T ?? void 0,
                     type: "password",
@@ -74,7 +74,7 @@ function m(e) {
                     onChange: p,
                     autoComplete: "new-password",
                     required: !0
-                }), (0, i.jsx)(l.ksK, {
+                }), (0, i.jsx)(r.ksK, {
                     label: _.intl.string(_.t.iQG2KC),
                     error: I ?? void 0,
                     type: "password",

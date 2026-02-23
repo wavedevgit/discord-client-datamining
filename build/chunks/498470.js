@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(232582),
     s = n(532794),
     a = n(976860),
-    r = n(788868),
-    l = n(652215);
+    l = n(788868),
+    r = n(652215);
 
 function o(e) {
     let {
@@ -18,16 +18,16 @@ function o(e) {
     switch (t) {
         case i.dz.OPEN_MARKETING_PAGE:
             return () => {
-                (0, a.pX)(l.BVt.APPLICATION_STORE), c?.()
+                (0, a.pX)(r.BVt.APPLICATION_STORE), c?.()
             };
         case i.dz.OPEN_TIER_1_PAYMENT_MODAL:
             return () => (0, s.A)({
-                subscriptionTier: r.pe.TIER_1,
+                subscriptionTier: l.pe.TIER_1,
                 analyticsLocations: n,
                 analyticsObject: {
                     ...o,
-                    object: l.ZSU.BUTTON_CTA,
-                    objectType: l.AnalyticsObjectTypes.TIER_1
+                    object: r.ZSU.BUTTON_CTA,
+                    objectType: r.AnalyticsObjectTypes.TIER_1
                 },
                 onClose: e => {
                     e && c?.()
@@ -41,12 +41,12 @@ function o(e) {
         case i.dz.OPEN_TIER_2_PAYMENT_MODAL_CUSTOM_CONFIRMATION_FOOTER:
         default:
             return () => (0, s.A)({
-                subscriptionTier: r.pe.TIER_2,
+                subscriptionTier: l.pe.TIER_2,
                 analyticsLocations: n,
                 analyticsObject: {
                     ...o,
-                    object: l.ZSU.BUTTON_CTA,
-                    objectType: l.AnalyticsObjectTypes.TIER_2
+                    object: r.ZSU.BUTTON_CTA,
+                    objectType: r.AnalyticsObjectTypes.TIER_2
                 },
                 onClose: e => {
                     e && c?.()

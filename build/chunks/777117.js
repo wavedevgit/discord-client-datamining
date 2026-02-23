@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(311907),
     a = n(397927),
-    r = n(252452),
-    l = n(628965),
+    l = n(252452),
+    r = n(628965),
     o = n(513664),
     c = n(768908),
     d = n(790076),
@@ -19,7 +19,7 @@ var s = n(311907),
 
 function h() {
     let e = (0, u.b)(),
-        t = (0, s.bG)([l.A], () => l.A.getSubsection()),
+        t = (0, s.bG)([r.A], () => r.A.getSubsection()),
         n = null != t && e.some(e => e.id === t) ? t : e[0].id;
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(a.Heading, {
@@ -30,7 +30,7 @@ function h() {
             className: g.$H,
             selectedItem: n,
             onItemSelect: e => {
-                r.A.setSection(m.nc_.GAMES, e)
+                l.A.setSection(m.nc_.GAMES, e)
             },
             orientation: "horizontal",
             type: "top",

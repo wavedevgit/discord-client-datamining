@@ -1,11 +1,11 @@
 /** chunk id: 236077, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => r
+    A: () => l
 });
 var i = n(284009),
     s = n.n(i),
     a = n(963935);
-class r {
+class l {
     map = new Map;
     defaultPanel;
     register(e) {
@@ -15,7 +15,7 @@ class r {
             parentPanelKey: i,
             parentTabKey: s,
             parentCategoryKey: a,
-            parentAccordionKey: r
+            parentAccordionKey: l
         } = e;
         this.map.set(t.key, {
             node: t,
@@ -23,7 +23,7 @@ class r {
             parentPanelKey: i,
             parentTabKey: s,
             parentCategoryKey: a,
-            parentAccordionKey: r
+            parentAccordionKey: l
         })
     }
     entry(e) {

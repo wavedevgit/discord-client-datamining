@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(284009),
-    r = n.n(a),
-    l = n(311907),
+    l = n.n(a),
+    r = n(311907),
     o = n(397927),
     c = n(195043),
     d = n(359990),
@@ -65,9 +65,9 @@ class S extends s.PureComponent {
 }
 
 function I(e) {
-    let t = (0, l.bG)([m.default], () => m.default.getCurrentUser());
-    r()(null != t, "TwoFactorAuth: currentUser cannot be undefined");
-    let n = (0, l.cf)([_.A, u.default], () => ({
+    let t = (0, r.bG)([m.default], () => m.default.getCurrentUser());
+    l()(null != t, "TwoFactorAuth: currentUser cannot be undefined");
+    let n = (0, r.cf)([_.A, u.default], () => ({
         togglingSMS: _.A.togglingSMS,
         hasTOTPEnabled: u.default.hasTOTPEnabled()
     }));

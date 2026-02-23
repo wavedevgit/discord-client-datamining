@@ -46,8 +46,8 @@ var i = n(627968),
     Y = n(880144),
     W = n(338771),
     q = n(421838),
-    z = n(891540),
-    K = n(164956),
+    K = n(891540),
+    z = n(164956),
     $ = n(267102),
     Q = n(3527),
     X = n(976860),
@@ -100,7 +100,7 @@ var i = n(627968),
     eY = n(509381),
     eW = n(985018),
     eq = n(255259);
-let ez = {
+let eK = {
     offset: {
         left: -1,
         top: -1,
@@ -109,7 +109,7 @@ let ez = {
     }
 };
 
-function eK(e) {
+function ez(e) {
     let t = e.currentTarget;
     ej.default.track(eV.HAw.NOISE_CANCELLATION_LINK_CLICKED, {
         text: t.text,
@@ -178,14 +178,14 @@ function e$() {
                 className: eq.__invalid_footer,
                 children: [(0, i.jsx)(I.MzZ, {
                     href: eV.X7G.KRISP,
-                    onClick: e => eK(e),
+                    onClick: e => ez(e),
                     children: (0, i.jsx)("div", {
                         className: eq.zQ
                     })
                 }), (0, i.jsx)(I.MzZ, {
                     href: eD.A.getArticleURL(eV.MVz.NOISE_SUPPRESSION),
                     className: eq.W,
-                    onClick: e => eK(e),
+                    onClick: e => ez(e),
                     children: eW.intl.string(eW.t.hvVgAZ)
                 })]
             })
@@ -302,7 +302,7 @@ function eX(e) {
                             innerClassName: eq.bk,
                             wrapperClassName: eq.x6,
                             fullWidth: !0,
-                            focusProps: ez,
+                            focusProps: eK,
                             children: S ? u : (0, i.jsxs)(k.A, {
                                 align: k.A.Align.CENTER,
                                 children: [u, eW.intl.string(eW.t.FlNoSV)]
@@ -374,7 +374,7 @@ function eZ(e) {
                     }),
                     innerClassName: eq.bk,
                     wrapperClassName: eq.x6,
-                    focusProps: ez,
+                    focusProps: eK,
                     children: [n === u.M.ACTIVITIES_VOICE_LAUNCHER_BADGE && (0, i.jsx)(L.a, {
                         top: -1,
                         right: -1
@@ -442,7 +442,7 @@ function eJ(e) {
                 className: a()(eq.x6, eq.Sq),
                 innerClassName: eq.bk,
                 wrapperClassName: eq.x6,
-                focusProps: ez,
+                focusProps: eK,
                 children: [p === u.M.GAME_SHOP_RTC_GIFTING_NEW_BADGE && (0, i.jsx)(L.a, {
                     top: -4,
                     right: -4,
@@ -547,7 +547,7 @@ function e0(e) {
                     },
                     innerClassName: eq.bk,
                     wrapperClassName: eq.x6,
-                    focusProps: ez,
+                    focusProps: eK,
                     children: O ? M : (0, i.jsxs)(k.A, {
                         align: k.A.Align.CENTER,
                         children: [M, eW.intl.string(eW.t["r0/+v7"])]
@@ -715,7 +715,7 @@ class e1 extends r.PureComponent {
                 channel: e
             }) : null, (0, en.Ay)(e) ? (0, i.jsx)(ei.A, {
                 channel: e,
-                focusProps: ez
+                focusProps: eK
             }) : null]
         })
     }
@@ -733,7 +733,7 @@ class e1 extends r.PureComponent {
             fullWidth: !0,
             onClick: this.handleCloseVoicePanelIntroduction,
             text: eW.intl.string(eW.t.shaBeH),
-            focusProps: ez
+            focusProps: eK
         })]
     });
     render() {
@@ -832,11 +832,11 @@ let e6 = (0, N.A)(function(e) {
             noiseCancellationError: ev.Ay.isNoiseCancellationError(),
             canGoLive: (0, Y.A)(ev.Ay)
         })),
-        h = (0, c.bG)([ev.Ay, z.A], () => z.A.hasHotspot(eF._.VOICE_PANEL_INTRODUCTION) && (0, eM.mv)(l) && !ev.Ay.isInteractionRequired() && !o?.isGuildStageVoice()),
+        h = (0, c.bG)([ev.Ay, K.A], () => K.A.hasHotspot(eF._.VOICE_PANEL_INTRODUCTION) && (0, eM.mv)(l) && !ev.Ay.isInteractionRequired() && !o?.isGuildStageVoice()),
         _ = (0, c.bG)([eR.A], () => null != a && eR.A.hasVideo(a), [a]),
         m = (0, c.bG)([eC.A], () => eC.A.getCurrentUserActiveStream()),
         p = (0, c.bG)([ex.A], () => ex.A.hasLayers()),
-        g = (0, c.bG)([K.A], () => K.A.isViewingRoles(d)),
+        g = (0, c.bG)([z.A], () => z.A.isViewingRoles(d)),
         E = (0, c.bG)([ey.A], () => g && !ey.A.can(eV.xBc.VIEW_CHANNEL, o), [g, o]),
         f = eu.vL.useSetting(),
         [C, T, N] = (0, c.yK)([eP.Ay, er.A], () => o?.isGuildStageVoice() ? [er.A.getMutableParticipants(o.id, el.ip.SPEAKER), er.A.getParticipantsVersion(o.id), null] : [null, null, null != o ? eP.Ay.getVoiceStatesForChannel(o) : null], [o]),
@@ -901,7 +901,7 @@ let e6 = (0, N.A)(function(e) {
                         y(!0)
                     },
                     text: eW.intl.string(eW.t.WAI6xu),
-                    focusProps: ez
+                    focusProps: eK
                 })]
             }) : null]
         })

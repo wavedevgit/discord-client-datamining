@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(284009),
-    r = n.n(a),
-    l = n(158954),
+    l = n.n(a),
+    r = n(158954),
     o = n(311907),
     c = n(397927),
     d = n(384904),
@@ -78,7 +78,7 @@ function f(e) {
             if (null != C) try {
                 j(!0), O(null);
                 let e = (0, h.v)(C, 1);
-                r()((0, p.bx)(e) <= (0, p.bx)(C.additionalPlans), "Uncanceling should not increase the number of guild subscriptions"), await T(C, e, t, u), N(2)
+                l()((0, p.bx)(e) <= (0, p.bx)(C.additionalPlans), "Uncanceling should not increase the number of guild subscriptions"), await T(C, e, t, u), N(2)
             } catch (t) {
                 let e = t instanceof _.Ey ? t : new _.Ey(t, t.code);
                 O(E.intl.string(e.code === m.tG.BILLING_PAUSE_INVALID_UPDATE ? E.t.dq4vq7 : E.t["5mlOCW"])), j(!1)
@@ -86,7 +86,7 @@ function f(e) {
         }, [C, t, u]);
     return (0, i.jsx)(g.f5, {
         value: u,
-        children: (0, i.jsx)(l.Modal, {
+        children: (0, i.jsx)(r.Modal, {
             transitionState: n,
             onClose: async () => await a(),
             size: "sm",

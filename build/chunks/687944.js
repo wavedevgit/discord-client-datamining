@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(990078),
     a = n(397927),
-    r = n(793574),
-    l = n(688810),
+    l = n(793574),
+    r = n(688810),
     o = n(532794),
     c = n(832946),
     d = n(97352),
@@ -33,8 +33,8 @@ function I(e) {
         premiumSubscription: t,
         discountInfo: n,
         invoicePreview: s,
-        isDiscountActive: r
-    } = e, l = _.Ay.getPlanIdFromInvoice(t, s), o = d.A.get(l);
+        isDiscountActive: l
+    } = e, r = _.Ay.getPlanIdFromInvoice(t, s), o = d.A.get(r);
     if (null == o || null == s || null == n || null == n.duration || null == n.percentage) return null;
     let c = s.invoiceItems.find(e => {
         let {
@@ -59,7 +59,7 @@ function I(e) {
         }), (0, i.jsx)(a.Text, {
             variant: "text-sm/medium",
             color: "text-default",
-            children: r ? E.intl.format(E.t["3ZiutU"], {
+            children: l ? E.intl.format(E.t["3ZiutU"], {
                 percent: n.percentage,
                 numMonths: n.duration,
                 regularPrice: g
@@ -108,7 +108,7 @@ let N = function(e) {
         } = e,
         {
             analyticsLocations: O
-        } = (0, l.Ay)(r.A.CHURN_DISCOUNT_SUBSCRIPTION_HEADER),
+        } = (0, r.Ay)(l.A.CHURN_DISCOUNT_SUBSCRIPTION_HEADER),
         R = e => {
             (0, a.mMO)(async () => {
                 let {

@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(665260),
-    r = n(93857),
-    l = n(772927),
+    l = n(93857),
+    r = n(772927),
     o = n(871930),
     c = n(578746),
     d = n(115063),
@@ -16,26 +16,26 @@ var i = n(627968),
 
 function A() {
     let e = (0, u.k)() ?? void 0,
-        t = r.up.useControlledSetting(e),
+        t = l.up.useControlledSetting(e),
         n = s.useMemo(() => (0, d.Lx)(t), [t]);
-    return null == e ? null : (0, i.jsxs)(l.A, {
+    return null == e ? null : (0, i.jsxs)(r.A, {
         children: [(0, i.jsx)(o.h, {
             children: (0, i.jsx)(c.Ay, {
                 title: m.intl.string(m.t["7x9dyE"]),
                 value: n.all,
-                onChange: t => r.up.updateControlledSetting(e, t ? _.yKI : _.yKI & ~_.dzt.NO_RELATION)
+                onChange: t => l.up.updateControlledSetting(e, t ? _.yKI : _.yKI & ~_.dzt.NO_RELATION)
             })
         }), (0, i.jsx)(o.h, {
             children: (0, i.jsx)(c.Ay, {
                 title: m.intl.string(m.t.NfeuZ3),
                 value: n.all || n.mutualFriends,
-                onChange: n => r.up.updateControlledSetting(e, n ? a.UI(t, _.dzt.MUTUAL_FRIENDS) : a.iE(t, _.dzt.MUTUAL_FRIENDS, _.dzt.NO_RELATION))
+                onChange: n => l.up.updateControlledSetting(e, n ? a.UI(t, _.dzt.MUTUAL_FRIENDS) : a.iE(t, _.dzt.MUTUAL_FRIENDS, _.dzt.NO_RELATION))
             })
         }), (0, i.jsx)(o.h, {
             children: (0, i.jsx)(c.Ay, {
                 title: m.intl.string(m.t.qsMfsH),
                 value: n.all || n.mutualGuilds,
-                onChange: n => r.up.updateControlledSetting(e, n ? a.UI(t, _.dzt.MUTUAL_GUILDS) : a.iE(t, _.dzt.MUTUAL_GUILDS, _.dzt.NO_RELATION))
+                onChange: n => l.up.updateControlledSetting(e, n ? a.UI(t, _.dzt.MUTUAL_GUILDS) : a.iE(t, _.dzt.MUTUAL_GUILDS, _.dzt.NO_RELATION))
             })
         })]
     })

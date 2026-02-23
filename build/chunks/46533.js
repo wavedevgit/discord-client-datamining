@@ -46,8 +46,8 @@ var i = n(627968),
     Y = n(71393),
     W = n(186111),
     q = n(576705),
-    z = n(584569),
-    K = n(383501),
+    K = n(584569),
+    z = n(383501),
     $ = n(287809),
     Q = n(927578),
     X = n(885631),
@@ -406,7 +406,7 @@ function eA(e) {
         guildId: t,
         hideSelectedChannel: n,
         selectedChannelId: l
-    } = e, d = (0, s.bG)([Y.A], () => Y.A.getGuild(t)), c = (0, C.A)(t), A = (0, s.bG)([B.A], () => B.A.getGuildDimensions(t).scrollTo), h = (0, s.bG)([K.A], () => K.A.getChannelId()), v = (0, s.bG)([q.A], () => q.A.can(ei.xBc.MANAGE_GUILD, d)), O = (0, s.bG)([H.A], () => H.A.isUnavailable(t)), U = (0, s.bG)([$.default], () => $.default.getCurrentUser()), {
+    } = e, d = (0, s.bG)([Y.A], () => Y.A.getGuild(t)), c = (0, C.A)(t), A = (0, s.bG)([B.A], () => B.A.getGuildDimensions(t).scrollTo), h = (0, s.bG)([z.A], () => z.A.getChannelId()), v = (0, s.bG)([q.A], () => q.A.can(ei.xBc.MANAGE_GUILD, d)), O = (0, s.bG)([H.A], () => H.A.isUnavailable(t)), U = (0, s.bG)([$.default], () => $.default.getCurrentUser()), {
         enableStudyGroup: G
     } = (0, b.y)(d), F = (0, E.Ay)(e => e.currentlyShown.has(o.M.NAGBAR_NOTICE_CONNECT_PLAYSTATION)), [X, Z] = r.useState(!F), J = (0, _.A)(t), {
         analyticsLocations: ee
@@ -420,8 +420,8 @@ function eA(e) {
     (0, N.A)(d);
     let eT = (0, I.JZ)(o.M.PREMIUM_TUTORIAL_SERVER_MENU_TOOLTIP),
         eN = (0, S.A)(t),
-        eS = (0, s.bG)([K.A], () => K.A.getChannelId()),
-        ex = (0, s.bG)([z.A], () => z.A.desyncedVoiceStatesCount),
+        eS = (0, s.bG)([z.A], () => z.A.getChannelId()),
+        ex = (0, s.bG)([K.A], () => K.A.desyncedVoiceStatesCount),
         ev = (0, M.A)(t),
         ey = (0, R.C$)(t, "GuildSidebar"),
         eb = (0, s.bG)([Y.A], () => Y.A.getGuild(t)?.features.has(ei.GuildFeatures.GAME_SERVERS) ?? !1, [t]),

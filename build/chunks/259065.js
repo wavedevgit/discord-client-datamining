@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(397927),
     a = n(954571),
-    r = n(652215);
-let l = "display-name-styles-modal",
+    l = n(652215);
+let r = "display-name-styles-modal",
     o = e => {
         let {
             analyticsLocations: t,
@@ -23,9 +23,9 @@ let l = "display-name-styles-modal",
                 analyticsLocations: t
             })
         }, {
-            modalKey: l,
+            modalKey: r,
             onCloseRequest: () => {
-                a.default.track(r.HAw.DISPLAY_NAME_STYLES_CLOSED), (0, s.OoC)(l)
+                a.default.track(l.HAw.DISPLAY_NAME_STYLES_CLOSED), (0, s.OoC)(r)
             }
         })
     }

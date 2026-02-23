@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(503698),
     a = n.n(s),
-    r = n(397927),
-    l = n(296388);
+    l = n(397927),
+    r = n(296388);
 let o = e => {
     let {
         title: t,
@@ -19,16 +19,16 @@ let o = e => {
         isOverlay: u
     } = e, _ = null != c && !(u && n?.subtitle?.hideOnOverlay === !0), m = null != s;
     return (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(r.Heading, {
+        children: [(0, i.jsx)(l.Heading, {
             variant: "heading-xl/extrabold",
-            className: a()(l.Jf, o),
+            className: a()(r.Jf, o),
             children: t
         }), (_ || m) && (0, i.jsxs)("div", {
             className: d,
-            children: [_ && (0, i.jsx)(r.Text, {
+            children: [_ && (0, i.jsx)(l.Text, {
                 variant: n?.subtitle?.textVariant ?? "text-sm/normal",
                 children: c
-            }), m && (0, i.jsxs)(r.Text, {
+            }), m && (0, i.jsxs)(l.Text, {
                 variant: n?.description?.textVariant ?? "text-sm/normal",
                 children: [_ && (0, i.jsx)("br", {}), s]
             })]

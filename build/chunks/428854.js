@@ -5,8 +5,8 @@ n.d(t, {
 });
 var i, s = n(627968),
     a = n(64700),
-    r = n(36149),
-    l = n(923531),
+    l = n(36149),
+    r = n(923531),
     o = n(207560),
     c = n(287809),
     d = n(64313),
@@ -16,13 +16,13 @@ var i, s = n(627968),
 let A = {
     CONTENT_AND_SOCIAL: [{
         order: 100,
-        predicate: l.$h,
+        predicate: r.$h,
         Component: _.A
     }, {
         order: 200,
         predicate: () => {
             let e = (0, d.o)("SensitiveContentFiltersNotice");
-            return ((0, o.TR)() || e) && !(0, r.Q9)()
+            return ((0, o.TR)() || e) && !(0, l.Q9)()
         },
         Component: u.Ow
     }, {
@@ -32,7 +32,7 @@ let A = {
     }],
     DATA_AND_PRIVACY: [{
         order: 100,
-        predicate: l.$h,
+        predicate: r.$h,
         Component: _.A
     }]
 };

@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(284009),
-    r = n.n(a),
-    l = n(311907),
+    l = n.n(a),
+    r = n(311907),
     o = n(397927),
     c = n(73153),
     d = n(974544),
@@ -53,14 +53,14 @@ function L(e) {
         onGuildChange: n
     } = e, {
         analyticsLocations: a
-    } = (0, _.Ay)(u.A.USER_SETTINGS_GUILD_PROFILE), L = (0, l.bG)([S.default], () => {
+    } = (0, _.Ay)(u.A.USER_SETTINGS_GUILD_PROFILE), L = (0, r.bG)([S.default], () => {
         let e = S.default.getCurrentUser();
-        return r()(null != e, "GuildIdentitySettingsPage: user cannot be undefined"), e
-    }), D = (0, l.bG)([C.Ay], () => null != t ? C.Ay.getMember(t.id, L.id) : null), G = (0, l.bG)([E.A], () => !E.A.isFetchingProfile(L.id, t?.id)), M = (0, l.bG)([T.A], () => T.A.hidePersonalInformation), {
+        return l()(null != e, "GuildIdentitySettingsPage: user cannot be undefined"), e
+    }), D = (0, r.bG)([C.Ay], () => null != t ? C.Ay.getMember(t.id, L.id) : null), G = (0, r.bG)([E.A], () => !E.A.isFetchingProfile(L.id, t?.id)), M = (0, r.bG)([T.A], () => T.A.hidePersonalInformation), {
         pendingAvatar: U,
         pendingNameplate: k,
         ...V
-    } = (0, l.cf)([p.A], () => p.A.getPendingChanges(t?.id)), w = (0, x.V7)({
+    } = (0, r.cf)([p.A], () => p.A.getPendingChanges(t?.id)), w = (0, x.V7)({
         userId: L.id,
         image: U
     }), H = (0, A.lw)({

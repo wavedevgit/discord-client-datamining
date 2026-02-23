@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(397927),
-    r = n(793574),
-    l = n(688810),
+    l = n(793574),
+    r = n(688810),
     o = n(46054),
     c = n(753806),
     d = n(145331),
@@ -34,7 +34,7 @@ function p() {
         j = m.Hu.useSetting(),
         {
             analyticsLocations: v
-        } = (0, l.Ay)(r.A.TEXT_AND_IMAGES),
+        } = (0, r.Ay)(l.A.TEXT_AND_IMAGES),
         O = s.useCallback(e => {
             let t = 1 === e;
             t ? c.A.cleanUpPrivateChannelSearchState() : c.A.cleanUpSearchState({

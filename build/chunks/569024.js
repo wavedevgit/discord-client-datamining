@@ -6,8 +6,8 @@ var i = n(61090);
 n(237751);
 var s = n(311907),
     a = n(506774),
-    r = n(73153),
-    l = n(154049),
+    l = n(73153),
+    r = n(154049),
     o = n(273867),
     c = n(773686),
     d = n(324827),
@@ -71,10 +71,10 @@ async function Y(e, t, n) {
     L.verbose("loading early cache");
     let a = C.A.getSocket();
     a.connect();
-    let l = b.A.getGuildId() ?? null,
+    let r = b.A.getGuildId() ?? null,
         o = N.A.getChannelId() ?? null,
         c = performance.now(),
-        d = I.A.loadCachedMessages.measureAsyncWithoutNesting(() => B(e, l, o)),
+        d = I.A.loadCachedMessages.measureAsyncWithoutNesting(() => B(e, r, o)),
         u = I.A.fetchGuildCache.measureAsync(() => z(e, n)),
         _ = I.A.fetchGuildCache.measureAsync(() => W(e, n)),
         x = null != e ? i.A.timeAsync("\uD83D\uDCBE", "cache: private_channels", () => h.A.getAsync(e, null)) : Promise.resolve([]),
@@ -91,7 +91,7 @@ async function Y(e, t, n) {
             d = null != v.guildId && null != v.channels,
             u = v.guildId;
         return s.Ay.Emitter.batched(() => {
-            i.A.time("\uD83D\uDCBE", "Dispatch Mini Cache", () => r.h.dispatch({
+            i.A.time("\uD83D\uDCBE", "Dispatch Mini Cache", () => l.h.dispatch({
                 type: "CACHE_LOADED",
                 guilds: j,
                 privateChannels: O,
@@ -111,7 +111,7 @@ async function Y(e, t, n) {
         ok: true
         meta:
           auth_user_id: ${t}
-          selected_guild: ${l}
+          selected_guild: ${r}
           selected_channel: ${o}
           navigation_state: ${JSON.stringify(n)}
           database: ${null!=e}
@@ -145,10 +145,10 @@ async function z(e, t) {
         case "other":
             "@me" === t.guildId && (F = !0)
     }
-    if (F) return await (0, l.kk)(() => i.A.timeAsync("\uD83D\uDCBE", "cache: guilds", () => c.A.getAsync(e))) ?? [];
+    if (F) return await (0, r.kk)(() => i.A.timeAsync("\uD83D\uDCBE", "cache: guilds", () => c.A.getAsync(e))) ?? [];
     let n = (await _.A.getCommittedVersions()).initial_guild_id ?? t.guildId;
     if (null == n || "@me" === n) return [];
-    let s = await (0, l.kk)(() => c.A.getOneAsync(e, n));
+    let s = await (0, r.kk)(() => c.A.getOneAsync(e, n));
     return null != s ? [s] : []
 }
 async function W(e, t) {
@@ -163,17 +163,17 @@ async function W(e, t) {
     });
     let i = n;
     return {
-        channels: await (0, l.kk)(() => h.A.getAsync(e, i)),
+        channels: await (0, r.kk)(() => h.A.getAsync(e, i)),
         guildId: n
     }
 }
 async function K(e, t, n, s) {
     L.verbose("loading late lazy cache");
-    let [a, u, _] = await I.A.fetchLazyCache.measureAsync(() => Promise.all([(0, l.kk)(() => null != e ? i.A.timeAsync("\uD83D\uDCBE", "cache: cache_version", () => d.A.okAsync(e)) : Promise.resolve(!0)), (0, l.kk)(() => null == e || F ? Promise.resolve([]) : i.A.timeAsync("\uD83D\uDCBE", "cache: lazy guilds", () => c.A.getAsync(e))), (0, l.kk)(() => null != e ? i.A.timeAsync("\uD83D\uDCBE", "cache: basic_channels", () => o.A.getAsync(e)) : Promise.resolve({
+    let [a, u, _] = await I.A.fetchLazyCache.measureAsync(() => Promise.all([(0, r.kk)(() => null != e ? i.A.timeAsync("\uD83D\uDCBE", "cache: cache_version", () => d.A.okAsync(e)) : Promise.resolve(!0)), (0, r.kk)(() => null == e || F ? Promise.resolve([]) : i.A.timeAsync("\uD83D\uDCBE", "cache: lazy guilds", () => c.A.getAsync(e))), (0, r.kk)(() => null != e ? i.A.timeAsync("\uD83D\uDCBE", "cache: basic_channels", () => o.A.getAsync(e)) : Promise.resolve({
         all: [],
         stale: [],
         channels: []
-    }))])), m = await I.A.fetchStaleChannels.measureAsync(() => null != e && null != _ && _.stale.length > 0 ? (0, l.kk)(() => {
+    }))])), m = await I.A.fetchStaleChannels.measureAsync(() => null != e && null != _ && _.stale.length > 0 ? (0, r.kk)(() => {
         var t;
         return t = _.stale, L.verbose(`loading stale guild channels (count: ${t.length}, ids: ${t.join(", ")})`), Promise.all(t.map(t => h.A.getAsync(e, t).then(e => [t, e])))
     }) : Promise.resolve([]));
@@ -182,10 +182,10 @@ async function K(e, t, n, s) {
     Z(() => {
         let i = performance.now();
         if (!1 === a) {
-            (0, y.A)("database:not_ok"), r.h.dispatch({
+            (0, y.A)("database:not_ok"), l.h.dispatch({
                 type: "CLEAR_CACHES",
                 reason: "database:not_ok"
-            }), r.h.dispatch({
+            }), l.h.dispatch({
                 type: "CACHE_LOADED_LAZY_NO_CACHE"
             });
             return
@@ -196,25 +196,25 @@ async function K(e, t, n, s) {
           basic_channels: ${null!=_}
           guild_channels: ${null!=m}
           guilds: ${null!=u}
-        )`), r.h.dispatch({
+        )`), l.h.dispatch({
                 type: "CLEAR_CACHES",
                 reason: "database:load_failed"
-            }), r.h.dispatch({
+            }), l.h.dispatch({
                 type: "CACHE_LOADED_LAZY_NO_CACHE"
             });
             return
         }
         if (null == a && (u.length > 0 || _.all.length > 0)) {
-            (0, y.A)("database:versionless"), L.log("kv_cache was not ok (null version with values)"), r.h.dispatch({
+            (0, y.A)("database:versionless"), L.log("kv_cache was not ok (null version with values)"), l.h.dispatch({
                 type: "CLEAR_CACHES",
                 reason: "database:versionless"
-            }), r.h.dispatch({
+            }), l.h.dispatch({
                 type: "CACHE_LOADED_LAZY_NO_CACHE"
             });
             return
         }
         if (V) {
-            (0, y.A)("already_connected"), L.log("Skipping lazy cache; already connected."), r.h.dispatch({
+            (0, y.A)("already_connected"), L.log("Skipping lazy cache; already connected."), l.h.dispatch({
                 type: "CACHE_LOADED_LAZY_NO_CACHE"
             });
             return
@@ -222,7 +222,7 @@ async function K(e, t, n, s) {
         A.addAnalytics({
             hadCacheAtStartup: !0
         });
-        let l = {
+        let r = {
             type: "CACHE_LOADED_LAZY",
             guilds: u,
             guildChannels: m,
@@ -230,8 +230,8 @@ async function K(e, t, n, s) {
             initialGuildId: n
         };
         I.A.deserializeCache.measure(() => {
-            null != l.channels && (0, R.Ay)(l.channels), null != l.privateChannels && (0, R.Ay)(l.privateChannels), null != l.guildChannels && (0, R.X3)(l.guildChannels)
-        }), I.A.dispatchLazyCache.measure(() => r.h.dispatch(l)), L.verbose(`late lazy cache loaded (ok: true, took: ${performance.now()-i}ms)`), A.addAnalytics({
+            null != r.channels && (0, R.Ay)(r.channels), null != r.privateChannels && (0, R.Ay)(r.privateChannels), null != r.guildChannels && (0, R.X3)(r.guildChannels)
+        }), I.A.dispatchLazyCache.measure(() => l.h.dispatch(r)), L.verbose(`late lazy cache loaded (ok: true, took: ${performance.now()-i}ms)`), A.addAnalytics({
             usedCacheAtStartup: !0
         });
         let o = m.reduce((e, t) => {
@@ -290,7 +290,7 @@ function Z(e) {
                 L.verbose("Unpausing Dispatch Queue"), t.dispatcher.unpauseDispatchQueue()
             }, 100)
         } catch (e) {
-            L.warn("Lazy cache has encountered error", e), r.h.dispatch({
+            L.warn("Lazy cache has encountered error", e), l.h.dispatch({
                 type: "RESET_SOCKET",
                 args: {
                     error: e,
@@ -326,12 +326,12 @@ class q extends s.Ay.Store {
         try {
             let t = f.default.getId(),
                 i = x.A.carefullyOpenDatabase(t),
-                [s, a, l] = await I.A.loadMiniCache.measureAsync(() => Y(i, t, e));
-            s ? (n(), await K(i, t, a, l)) : (n(), await (Z(() => r.h.dispatch({
+                [s, a, r] = await I.A.loadMiniCache.measureAsync(() => Y(i, t, e));
+            s ? (n(), await K(i, t, a, r)) : (n(), await (Z(() => l.h.dispatch({
                 type: "CACHE_LOADED_LAZY_NO_CACHE"
             })), Promise.resolve()))
         } catch (e) {
-            L.error("clearing cache. exception encountered while loading cache.", e, e.stack), (0, y.A)("cache:exception"), n(), r.h.dispatch({
+            L.error("clearing cache. exception encountered while loading cache.", e, e.stack), (0, y.A)("cache:exception"), n(), l.h.dispatch({
                 type: "RESET_SOCKET",
                 args: {
                     error: e,
@@ -341,7 +341,7 @@ class q extends s.Ay.Store {
         }
     }
 }
-new q(r.h, D ? {
+new q(l.h, D ? {
     CONNECTION_OPEN: function() {
         return V = !0, w = !0, !1
     },

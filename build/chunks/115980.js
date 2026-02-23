@@ -8,8 +8,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(311907),
-    r = n(397927),
-    l = n(384904),
+    l = n(397927),
+    r = n(384904),
     o = n(974544),
     c = n(971105),
     d = n(767375),
@@ -34,7 +34,7 @@ var i = n(627968),
 function v() {
     return (0, i.jsx)("div", {
         className: j.oE,
-        children: (0, i.jsx)(r.y$y, {})
+        children: (0, i.jsx)(l.y$y, {})
     })
 }
 
@@ -47,16 +47,16 @@ function O() {
 function R(e) {
     let {
         showHeader: t = !1
-    } = e, n = (0, a.bG)([x.A], () => x.A.isSyncing), r = (0, a.bG)([p.A], () => p.A.paymentSources), o = (0, a.bG)([p.A], () => p.A.defaultPaymentSourceId), c = (0, a.bG)([C.default], () => C.default.locale), _ = (0, a.bG)([E.A], () => E.A.getPremiumTypeSubscription()), m = (0, a.bG)([x.A], () => x.A.isRemovingPaymentSource), A = (0, a.bG)([x.A], () => x.A.isUpdatingPaymentSource), {
+    } = e, n = (0, a.bG)([x.A], () => x.A.isSyncing), l = (0, a.bG)([p.A], () => p.A.paymentSources), o = (0, a.bG)([p.A], () => p.A.defaultPaymentSourceId), c = (0, a.bG)([C.default], () => C.default.locale), _ = (0, a.bG)([E.A], () => E.A.getPremiumTypeSubscription()), m = (0, a.bG)([x.A], () => x.A.isRemovingPaymentSource), A = (0, a.bG)([x.A], () => x.A.isUpdatingPaymentSource), {
         enabled: g
     } = (0, u.c)({
         location: "UserSettingsBilling"
     });
     return (s.useEffect(() => {
-        l.$o(), l.hP()
-    }, []), n && 0 === Object.keys(r).length) ? (0, i.jsx)(v, {}) : (0, i.jsx)(d.A, {
+        r.$o(), r.hP()
+    }, []), n && 0 === Object.keys(l).length) ? (0, i.jsx)(v, {}) : (0, i.jsx)(d.A, {
         showHeader: t,
-        paymentSources: r,
+        paymentSources: l,
         defaultPaymentSourceId: o,
         premiumSubscriptionPaymentSourceId: null != _ && _.status !== N.Dmq.CANCELED ? _.paymentSourceId : null,
         locale: c,
@@ -70,8 +70,8 @@ function y(e) {
     let {
         className: t
     } = e;
-    return (0, i.jsx)(r.po8, {
-        messageType: r.YCn.INFO,
+    return (0, i.jsx)(l.po8, {
+        messageType: l.YCn.INFO,
         className: t,
         children: b.intl.format(b.t["8b+FXG"], {
             onClick: O
@@ -98,9 +98,9 @@ function L() {
             })
         }), e && (0, i.jsx)(A.x, {
             setting: f.H.BILLING_STORE_COUNTRY,
-            children: (0, i.jsxs)(r.BJc, {
+            children: (0, i.jsxs)(l.BJc, {
                 gap: 16,
-                children: [(0, i.jsx)(r.Heading, {
+                children: [(0, i.jsx)(l.Heading, {
                     variant: "heading-lg/semibold",
                     children: b.intl.string(b.t["3pIjBH"])
                 }), (0, i.jsx)(S.d, {})]
@@ -109,9 +109,9 @@ function L() {
             setting: f.H.BILLING_TRANSACTION_HISTORY,
             children: (0, i.jsx)("div", {
                 className: j.TI,
-                children: (0, i.jsxs)(r.BJc, {
+                children: (0, i.jsxs)(l.BJc, {
                     gap: 16,
-                    children: [(0, i.jsx)(r.Heading, {
+                    children: [(0, i.jsx)(l.Heading, {
                         variant: "heading-lg/semibold",
                         children: b.intl.string(b.t.obLrcK)
                     }), (0, i.jsx)(P, {})]

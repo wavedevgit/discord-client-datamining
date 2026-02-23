@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(421380),
-    r = n(397927),
-    l = n(736653),
+    l = n(397927),
+    r = n(736653),
     o = n(793574),
     c = n(688810),
     d = n(465794),
@@ -24,7 +24,7 @@ function E(e) {
         user: t,
         showOverlay: n,
         children: E
-    } = e, C = (0, l.Ay)(), {
+    } = e, C = (0, r.Ay)(), {
         analyticsLocations: T
     } = (0, c.Ay)(o.A.PREMIUM_UPSELL_OVERLAY);
     return (s.useEffect(() => {
@@ -55,11 +55,11 @@ function E(e) {
                 }(C)
             }), (0, i.jsxs)("div", {
                 className: h._9,
-                children: [(0, i.jsx)(r.Text, {
+                children: [(0, i.jsx)(l.Text, {
                     variant: "text-lg/semibold",
                     color: "always-white",
                     children: g.intl.string(g.t.dMaDFX)
-                }), (0, i.jsx)(r.Text, {
+                }), (0, i.jsx)(l.Text, {
                     variant: "text-sm/normal",
                     color: "always-white",
                     children: g.intl.string(g.t.F7sgFH)

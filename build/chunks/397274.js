@@ -31,17 +31,17 @@ let s = new class {
         } = e;
         return new Promise(e => {
             let a = null,
-                r = () => {
+                l = () => {
                     clearTimeout(a), e(!0)
                 };
             requestAnimationFrame(() => {
-                t.addEventListener("scroll", r, {
+                t.addEventListener("scroll", l, {
                     once: !0
                 }), n.scrollIntoView({
                     behavior: i,
                     block: s
                 }), a = setTimeout(() => {
-                    t.removeEventListener("scroll", r), e(!1)
+                    t.removeEventListener("scroll", l), e(!1)
                 }, 50)
             })
         })

@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(873298),
     a = n(935649),
-    r = n(847599),
-    l = n(390248),
+    l = n(847599),
+    r = n(390248),
     o = n(632119),
     c = n(278616),
     d = n(771888),
@@ -31,8 +31,8 @@ function E() {
         } = (0, c.R)(),
         S = e => {
             let t = Object.values(e);
-            (0, l.hK)() && t.includes(s.TO.SHOW) ? a.A.showAgeVerificationGetStartedModal({
-                entryPoint: r.q1.SENSITIVE_MEDIA_FILTER_SETTINGS
+            (0, r.hK)() && t.includes(s.TO.SHOW) ? a.A.showAgeVerificationGetStartedModal({
+                entryPoint: l.q1.SENSITIVE_MEDIA_FILTER_SETTINGS
             }) : (0, o.Jz)(e)
         },
         I = [{

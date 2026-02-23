@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(397927),
-    r = n(641324),
-    l = n(577806),
+    l = n(641324),
+    r = n(577806),
     o = n(279423);
 let c = s.memo(function(e) {
     let {
@@ -21,7 +21,7 @@ let c = s.memo(function(e) {
         useHeaderDecoration: m
     } = t, A = n?.(), g = d?.(), h = _?.(), x = m?.(), p = null != n || null != c;
     return (0, i.jsxs)(i.Fragment, {
-        children: [null != A && (0, i.jsx)(l._, {
+        children: [null != A && (0, i.jsx)(r._, {
             title: A,
             icon: s,
             subtitle: g,
@@ -36,7 +36,7 @@ let c = s.memo(function(e) {
             gap: "md",
             children: [null != h && (0, i.jsx)(o.A, {
                 notice: h
-            }), u.map(e => (0, i.jsx)(r.A, {
+            }), u.map(e => (0, i.jsx)(l.A, {
                 node: e
             }, e.key))]
         })]

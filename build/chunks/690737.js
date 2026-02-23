@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(503698),
     a = n.n(s),
-    r = n(475539),
-    l = n(421380),
+    l = n(475539),
+    r = n(421380),
     o = n(397927),
     c = n(736653),
     d = n(194509),
@@ -30,7 +30,7 @@ let A = function(e) {
     }), h = {
         section: _.JJy.MARKETING_FLOATING_CTA
     }, x = (0, c.Ay)(), p = (0, o.Mwr)(x);
-    return (0, i.jsx)(r.animated.div, {
+    return (0, i.jsx)(l.animated.div, {
         className: a()(m.iE, {
             [m.H8]: s,
             [m.q4]: !t
@@ -39,7 +39,7 @@ let A = function(e) {
         children: (0, i.jsxs)("div", {
             className: s ? m.zW : m.iJ,
             children: [(0, i.jsx)(u.A, {
-                color: p ? l.XD.BRAND_INVERTED : void 0,
+                color: p ? r.XD.BRAND_INVERTED : void 0,
                 className: a()(m.x6, {
                     [m.Ph]: p
                 }),

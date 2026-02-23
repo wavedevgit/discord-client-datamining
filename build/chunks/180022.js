@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(503698),
-    r = n.n(a),
-    l = n(735438),
+    l = n.n(a),
+    r = n(735438),
     o = n(110259),
     c = n(417597),
     d = n(397927),
@@ -36,14 +36,14 @@ let N = s.memo(e => {
         isEasterEggTriggered: U,
         onHover: k,
         onUnhover: V
-    } = (0, h.A)(5), w = s.useMemo(() => (0, l.debounce)(() => {
+    } = (0, h.A)(5), w = s.useMemo(() => (0, r.debounce)(() => {
         A.default.track(T.HAw.PREMIUM_MARKETING_WHAT_IS_NEW_CARD_HOVERED, {
-            card_type: (0, l.snakeCase)(t)
+            card_type: (0, r.snakeCase)(t)
         })
-    }, 800), [t]), H = s.useMemo(() => (0, l.debounce)(() => {
+    }, 800), [t]), H = s.useMemo(() => (0, r.debounce)(() => {
         null != C && A.default.track(T.HAw.PERK_DISCOVERABILITY_CARD_CTA_CLICKED, {
-            card_type: (0, l.snakeCase)(t),
-            function_name: (0, l.snakeCase)(C.name)
+            card_type: (0, r.snakeCase)(t),
+            function_name: (0, r.snakeCase)(C.name)
         })
     }, 800), [t, C]);
     e = {
@@ -71,11 +71,11 @@ let N = s.memo(e => {
         onMouseLeave: V,
         onBlur: V,
         children: (0, i.jsx)("div", {
-            className: r()(f.Rz, {
+            className: l()(f.Rz, {
                 [f.sT]: g
             }),
             children: (0, i.jsxs)("div", {
-                className: r()(f.Ci, {
+                className: l()(f.Ci, {
                     [f.BX]: !U,
                     [f.yg]: U,
                     [f.Ud]: U && 3 === M,
@@ -99,7 +99,7 @@ let N = s.memo(e => {
     }) : B ? (0, i.jsx)("div", {
         className: f.iQ,
         children: (0, i.jsx)("div", {
-            className: r()({
+            className: l()({
                 [f.u9]: !P,
                 [f.E$]: P,
                 [f.sT]: g,
@@ -112,12 +112,12 @@ let N = s.memo(e => {
     }) : (0, i.jsx)("div", {
         className: f.iQ,
         children: (0, i.jsx)("div", {
-            className: r()(f.Rz, {
+            className: l()(f.Rz, {
                 [f.sT]: g
             }),
             children: (0, i.jsxs)(d.DUT, {
                 onClick: () => O(!0),
-                className: r()(f.Ci, f.vk, {
+                className: l()(f.Ci, f.vk, {
                     [f.zq]: v,
                     [f.BX]: !R && !v,
                     [f.VN]: j
@@ -166,7 +166,7 @@ let b = s.forwardRef((e, t) => {
         title: n,
         titleClassName: s,
         subtitle: a,
-        description: l,
+        description: r,
         descriptionCta: o,
         customContent: c,
         isPremiumGetCta: u,
@@ -182,9 +182,9 @@ let b = s.forwardRef((e, t) => {
         perkImage: b,
         imageOverlayText: j,
         hasNitroGradientBackground: v
-    } = e, O = T === p.cJ.CARD_CAROUSEL_FIRST_ROW || T === p.cJ.CARD_CAROUSEL_SECOND_ROW || T === p.cJ.CARD_CAROUSEL_THIRD_ROW, R = null != l || null != o, y = (0, g.Q)(x);
+    } = e, O = T === p.cJ.CARD_CAROUSEL_FIRST_ROW || T === p.cJ.CARD_CAROUSEL_SECOND_ROW || T === p.cJ.CARD_CAROUSEL_THIRD_ROW, R = null != r || null != o, y = (0, g.Q)(x);
     return (0, i.jsxs)(d.DUT, {
-        className: r()(f.Nr, A, y.cardContainer?.className, {
+        className: l()(f.Nr, A, y.cardContainer?.className, {
             [f.vk]: null != S,
             [f.JP]: O,
             [f.NT]: v
@@ -219,14 +219,14 @@ let b = s.forwardRef((e, t) => {
             title: n,
             titleClassName: s,
             subtitle: a,
-            description: l,
+            description: r,
             descriptionCta: o,
             isPremiumGetCta: u,
             onCtaClick: _,
             cardVariant: x,
             perkComponent: h
         }), (0, i.jsx)("div", {
-            className: r()(f.Iv, f.G1),
+            className: l()(f.Iv, f.G1),
             ref: t
         })]
     })

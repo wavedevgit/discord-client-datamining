@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(397927),
-    r = n(780964),
-    l = n(840065),
+    l = n(780964),
+    r = n(840065),
     o = n(473145),
     c = n(652215),
     d = n(788868),
@@ -48,7 +48,7 @@ function _(e) {
     let p = s.useMemo(() => A.isPausedOrPausePending && h === d.xc.NONE ? (0, i.jsx)(a.Drp, {
         id: "manage-subscription",
         label: u.intl.string(u.t.obRG6Y),
-        action: () => (0, l.openUserSettings)(r.X.SUBSCRIPTIONS_PANEL, {
+        action: () => (0, r.openUserSettings)(l.X.SUBSCRIPTIONS_PANEL, {
             section: c.nc_.SUBSCRIPTIONS
         }),
         iconLeft: a.xmO,

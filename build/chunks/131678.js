@@ -6,14 +6,14 @@ var i = n(627968);
 n(64700);
 var s = n(554146),
     a = n(882997),
-    r = n(975571),
-    l = n(107005),
+    l = n(975571),
+    r = n(107005),
     o = n(652215),
     c = n(985018),
     d = n(729632);
 let u = () => {
-    let e = r.A.getArticleURL(o.MVz.PS_CONNECTION);
-    return (0, i.jsx)(l.Z, {
+    let e = l.A.getArticleURL(o.MVz.PS_CONNECTION);
+    return (0, i.jsx)(r.Z, {
         title: c.intl.string(c.t.v20wwm),
         body: c.intl.format(c.t.lTZBit, {
             help_article: e

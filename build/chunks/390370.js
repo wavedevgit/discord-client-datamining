@@ -6,17 +6,17 @@ var i = n(627968);
 n(64700);
 var s = n(397927),
     a = n(854627),
-    r = n(837921),
-    l = n(834981),
+    l = n(837921),
+    r = n(834981),
     o = n(475833),
     c = n(694164);
-let d = r.Ay.getEnableHardwareAcceleration() ? s.JsQ : s.euF;
+let d = l.Ay.getEnableHardwareAcceleration() ? s.JsQ : s.euF;
 
 function u(e) {
     let {
         otherUser: t,
         status: n
-    } = e, r = (0, l.XC)(t.id, n), {
+    } = e, l = (0, r.XC)(t.id, n), {
         avatarSrc: u,
         avatarDecorationSrc: _,
         eventHandlers: m
@@ -45,7 +45,7 @@ function u(e) {
             }), (0, i.jsx)(s.Text, {
                 color: "text-muted",
                 variant: "text-xs/normal",
-                children: r
+                children: l
             })]
         })]
     })

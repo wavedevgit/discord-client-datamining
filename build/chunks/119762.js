@@ -8,8 +8,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(503698),
-    r = n.n(a),
-    l = n(311907),
+    l = n.n(a),
+    r = n(311907),
     o = n(397927),
     c = n(793574),
     d = n(200921),
@@ -80,28 +80,28 @@ function N() {
             currentSession: t,
             otherSessions: n
         } = (0, u.r)(),
-        a = (0, l.bG)([_.default], () => _.default.getCurrentUser()),
-        [r, c] = s.useState(new Set);
+        a = (0, r.bG)([_.default], () => _.default.getCurrentUser()),
+        [l, c] = s.useState(new Set);
     return null == t && 0 === n.length || 0 === n.length && a?.mfaEnabled ? null : n.length > 0 || !a?.mfaEnabled ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)(o.nVY, {
             label: C.intl.string(C.t.xx1MWc),
             children: [n.map(e => (0, i.jsx)(j, {
                 session: e,
-                useChecks: r.size > 0,
-                checked: r.has(e.id_hash),
+                useChecks: l.size > 0,
+                checked: l.has(e.id_hash),
                 setChecked: t => {
-                    let n = new Set(r);
+                    let n = new Set(l);
                     t ? n.add(e.id_hash) : n.delete(e.id_hash), c(n)
                 }
             }, e.id_hash)), a?.mfaEnabled ? null : (0, i.jsx)(v, {})]
         }), n.length > 0 && (e ? (0, i.jsx)("div", {
             className: T.hI,
             children: (0, i.jsx)(f, {
-                checked: r,
+                checked: l,
                 otherSessions: n
             })
         }) : (0, i.jsx)(f, {
-            checked: r,
+            checked: l,
             otherSessions: n
         }))]
     }) : null
@@ -126,7 +126,7 @@ function j(e) {
         current: n,
         setChecked: s,
         checked: a,
-        useChecks: l
+        useChecks: r
     } = e, c = t.client_info?.location ?? t.client_info?.ip, _ = t.client_info?.platform, {
         text: m,
         icon: g
@@ -154,7 +154,7 @@ function j(e) {
         }
     }(t.client_info?.os), h = n ? null : (0, u.Y)(t.approx_last_used_time), x = [m, _].filter(A.Vq), p = [c, h].filter(A.Vq);
     return (0, i.jsxs)("div", {
-        className: r()(T.dZ, {
+        className: l()(T.dZ, {
             [T.gg]: n
         }),
         children: [(0, i.jsxs)("div", {
@@ -192,7 +192,7 @@ function j(e) {
                         })]
                     })]
                 })]
-            }), n ? null : l ? (0, i.jsx)("div", {
+            }), n ? null : r ? (0, i.jsx)("div", {
                 className: T.GR,
                 children: (0, i.jsx)(o.JuY, {
                     onChange: e => {
@@ -219,7 +219,7 @@ function j(e) {
 
 function v() {
     return (0, i.jsxs)("div", {
-        className: r()(T.dZ, T.EC),
+        className: l()(T.dZ, T.EC),
         children: [(0, i.jsxs)("div", {
             className: T.OC,
             children: [(0, i.jsx)("div", {

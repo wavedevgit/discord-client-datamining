@@ -1,11 +1,11 @@
 /** chunk id: 895163, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    Xn: () => l,
+    Xn: () => r,
     tz: () => a
 });
 var i, s = n(250105),
     a = ((i = {}).PAYMENT_REVIEW = "control", i.PLAN_SELECTION = "plan_selection", i);
-let r = (0, s.Ay)({
+let l = (0, s.Ay)({
     name: "2026-01-marketing-banner-cta-action",
     kind: "user",
     defaultConfig: {
@@ -21,8 +21,8 @@ let r = (0, s.Ay)({
     }
 });
 
-function l(e) {
-    return r.useConfig({
+function r(e) {
+    return l.useConfig({
         location: e
     })
 }

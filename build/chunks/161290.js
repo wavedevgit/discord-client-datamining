@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(284009),
     a = n.n(s),
-    r = n(311907),
-    l = n(631670),
+    l = n(311907),
+    r = n(631670),
     o = n(81400),
     c = n(185955),
     d = n(318785),
@@ -35,11 +35,11 @@ var s = n(284009),
     P = n(264671);
 
 function L() {
-    let e = (0, r.bG)([O.default], () => {
+    let e = (0, l.bG)([O.default], () => {
             let e = O.default.getCurrentUser();
             return a()(null != e, "DefaultCustomizationSections: user cannot be undefined"), e
         }),
-        t = (0, r.bG)([j.A], () => j.A.getUserProfile(e.id)),
+        t = (0, l.bG)([j.A], () => j.A.getUserProfile(e.id)),
         {
             pendingAvatar: n,
             pendingGlobalName: s,
@@ -51,7 +51,7 @@ function L() {
             pendingLegacyUsernameDisabled: k,
             pendingPrimaryGuildId: V,
             errors: w
-        } = (0, r.cf)([b.A], () => {
+        } = (0, l.cf)([b.A], () => {
             let e = b.A.getPendingChanges(),
                 t = b.A.getErrors();
             return {
@@ -79,7 +79,7 @@ function L() {
             errors: Z,
             currentGlobalName: e.globalName,
             pendingGlobalName: s,
-            onGlobalNameChange: l.U6,
+            onGlobalNameChange: r.U6,
             user: e
         }), (0, i.jsx)(I.A, {
             sectionTitle: y.intl.string(y.t["+T3RI/"]),
@@ -88,7 +88,7 @@ function L() {
             pendingPronouns: G,
             currentPronouns: t?.pronouns ?? ""
         }, "pronouns"), (0, i.jsx)(S.A, {}), (0, i.jsx)(A.A, {
-            onAvatarChange: l.zq,
+            onAvatarChange: r.zq,
             showRemoveAvatarButton: F,
             errors: w.avatar,
             sectionTitle: y.intl.string(y.t.lqaIxI),
@@ -128,7 +128,7 @@ function L() {
         }, "bio"), X.length > 0 && (0, i.jsx)(c.A, {
             availablePrimaryGuilds: X,
             pendingPrimaryGuildId: V,
-            onChange: e => (0, l.Ch)(e)
+            onChange: e => (0, r.Ch)(e)
         }), null != K && (0, i.jsx)(h.A, {
             legacyUsername: K,
             pendingLegacyUsernameDisabled: k

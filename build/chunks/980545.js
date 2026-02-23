@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(503698),
-    r = n.n(a),
-    l = n(835245),
+    l = n.n(a),
+    r = n(835245),
     o = n(582754),
     c = n(397927),
     d = n(736653),
@@ -30,13 +30,13 @@ function C(e) {
             fromContent: m.uF.QUEST_HOME_MOVE_CALLOUT
         }), _.default.track(h.HAw.QUEST_CONTENT_CLICKED, {
             cta_name: A.Cy.VIEW_QUESTS,
-            click_id: (0, l.A)(),
+            click_id: (0, r.A)(),
             is_targeted: !1,
             ...(0, A.fF)(m.uF.QUEST_HOME_MOVE_CALLOUT)
         })
     }, []);
     return (0, i.jsx)("div", {
-        className: r()(p.kL, {
+        className: l()(p.kL, {
             [p.Zd]: t
         }),
         style: a,

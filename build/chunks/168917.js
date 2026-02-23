@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(311907),
     a = n(397927),
-    r = n(757036),
-    l = n(128450),
+    l = n(757036),
+    r = n(128450),
     o = n(180020),
     c = n(576705),
     d = n(684732),
@@ -23,8 +23,8 @@ function g(e) {
         username: h,
         user: x,
         guild: p
-    } = e, E = n ?? g, C = (0, s.bG)([c.A], () => c.A.can(u.xBc.CHANGE_NICKNAME, p) || c.A.can(u.xBc.MANAGE_NICKNAMES, p)), T = (0, r.L)(_.PremiumTypes.TIER_2);
-    return (0, i.jsxs)(l.A, {
+    } = e, E = n ?? g, C = (0, s.bG)([c.A], () => c.A.can(u.xBc.CHANGE_NICKNAME, p) || c.A.can(u.xBc.MANAGE_NICKNAMES, p)), T = (0, l.L)(_.PremiumTypes.TIER_2);
+    return (0, i.jsxs)(r.A, {
         title: m.intl.string(m.t.me1lRk),
         errors: t,
         children: [(0, i.jsx)(a.ksK, {

@@ -5,31 +5,31 @@ n.d(t, {
 var i = n(397927),
     s = n(723702),
     a = n(360619),
-    r = n(682262),
-    l = n(531525),
+    l = n(682262),
+    r = n(531525),
     o = n(857266),
     c = n(985018);
 
 function d() {
-    let e = (0, r.b_)(),
-        t = (0, a.AC)(l.H.GAMES),
+    let e = (0, l.b_)(),
+        t = (0, a.AC)(r.H.GAMES),
         n = [{
             id: o.J.MY_GAMES,
             title: c.intl.string(c.t["5DMgp9"]),
             icon: i.LVO,
             predicate: () => !s.isPlatformEmbedded,
-            setting: l.H.GAMES_MY_GAMES
+            setting: r.H.GAMES_MY_GAMES
         }, {
             id: o.J.OVERLAY,
             title: c.intl.string(c.t.bNqkD9),
             icon: i.vH5,
             predicate: () => !e,
-            setting: l.H.GAMES_OVERLAY
+            setting: r.H.GAMES_OVERLAY
         }, {
             id: o.J.ACTIVITY_PRIVACY,
             title: c.intl.string(c.t.Cq98yL),
             icon: i.gXB,
-            setting: l.H.GAMES_ACTIVITY_PRIVACY
+            setting: r.H.GAMES_ACTIVITY_PRIVACY
         }].filter(e => null == e.predicate || !e.predicate());
     if (null != t && t.size > 0) {
         let e = n.filter(e => t.has(e.setting));

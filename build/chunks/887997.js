@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(503698),
     a = n.n(s),
-    r = n(397927),
-    l = n(366999),
+    l = n(397927),
+    r = n(366999),
     o = n(927578),
     c = n(788868),
     d = n(519412),
@@ -17,7 +17,7 @@ var s = n(503698),
 function m(e) {
     let t, n, {
         showChargingUpState: s,
-        rowValueText: l,
+        rowValueText: r,
         endsAt: o,
         fractionalState: m,
         activationDate: A,
@@ -43,11 +43,11 @@ function m(e) {
         className: _.r6,
         children: [(0, i.jsxs)("div", {
             className: _.Nv,
-            children: [(0, i.jsx)(r.Heading, {
+            children: [(0, i.jsx)(l.Heading, {
                 variant: "heading-md/semibold",
                 className: p,
                 children: t
-            }), null !== n && (0, i.jsx)(r.Text, {
+            }), null !== n && (0, i.jsx)(l.Text, {
                 variant: "text-sm/normal",
                 children: n
             })]
@@ -55,10 +55,10 @@ function m(e) {
             className: _.ZS,
             children: (0, i.jsx)("div", {
                 className: h,
-                children: (0, i.jsx)(r.Text, {
+                children: (0, i.jsx)(l.Text, {
                     variant: "text-sm/semibold",
                     className: x,
-                    children: l
+                    children: r
                 })
             })
         })]
@@ -70,7 +70,7 @@ let A = function(e) {
         className: n,
         activationDate: s,
         hasPremiumGroup: c
-    } = e, d = (0, o.kX)(t), A = d.length > 0, g = (0, l.Ay)(t.endsAt, l.yE.SHORT_TIME), h = A ? d : g;
+    } = e, d = (0, o.kX)(t), A = d.length > 0, g = (0, r.Ay)(t.endsAt, r.yE.SHORT_TIME), h = A ? d : g;
     return (0, i.jsx)("div", {
         children: (0, i.jsxs)("div", {
             className: a()(n, _.f8),
@@ -80,18 +80,18 @@ let A = function(e) {
                     className: _.Bh,
                     children: [(0, i.jsx)("div", {
                         className: _.xt,
-                        children: (0, i.jsx)(r.tvc, {
+                        children: (0, i.jsx)(l.tvc, {
                             size: "md",
                             color: "white",
                             className: _.T8
                         })
                     }), (0, i.jsx)("div", {
                         className: _.pt,
-                        children: (0, i.jsx)(r.Heading, {
+                        children: (0, i.jsx)(l.Heading, {
                             variant: "heading-md/semibold",
                             children: u.intl.string(u.t.DFMPWS)
                         })
-                    }), (0, i.jsx)(r.Text, {
+                    }), (0, i.jsx)(l.Text, {
                         className: _.PJ,
                         variant: "text-md/semibold",
                         children: d.length > 0 ? d : u.intl.string(u.t["B66Z+f"])

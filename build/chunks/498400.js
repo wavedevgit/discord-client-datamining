@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(503698),
-    r = n.n(a),
-    l = n(311907),
+    l = n.n(a),
+    r = n(311907),
     o = n(397927),
     c = n(73153),
     d = n(384904),
@@ -46,9 +46,9 @@ let U = function(e) {
             sourceAnalyticsLocations: a,
             analyticsLocations: U
         } = (0, g.Ay)(A.A.PREMIUM_MARKETING),
-        k = (0, l.bG)([f.A], () => f.A.hasFetchedSubscriptions()),
-        V = (0, l.bG)([I.A], () => I.A.hasFetchedPaymentSources),
-        w = (0, l.bG)([S.default], () => S.default.getCurrentUser()),
+        k = (0, r.bG)([f.A], () => f.A.hasFetchedSubscriptions()),
+        V = (0, r.bG)([I.A], () => I.A.hasFetchedPaymentSources),
+        w = (0, r.bG)([S.default], () => S.default.getCurrentUser()),
         H = w?.id,
         B = (0, P.V)(),
         Y = (0, y.O)(),
@@ -59,7 +59,7 @@ let U = function(e) {
         q = (0, O.A)({
             location: "PremiumHomePage"
         }),
-        X = (0, l.bG)([j.A], () => j.A.hasFetched);
+        X = (0, r.bG)([j.A], () => j.A.hasFetched);
     s.useEffect(() => {
         X || d.xG()
     }, [X]), s.useEffect(() => {
@@ -75,7 +75,7 @@ let U = function(e) {
     }, [a, z]), s.useEffect(() => {
         n && (null != B || null != Y) && (0, v.u1)(B, Y)
     }, [n, B, Y]);
-    let Q = (0, l.bG)([T.A], () => T.A.enabled),
+    let Q = (0, r.bG)([T.A], () => T.A.enabled),
         J = t === D.Mf.ApplicationStoreHome,
         $ = Q ? (0, i.jsx)(_.A, {}) : n ? (0, i.jsx)(p.uK, {}) : J && Z ? (0, i.jsx)(g.f5, {
             value: U,
@@ -83,7 +83,7 @@ let U = function(e) {
                 userId: H
             })
         }) : k && F && V ? null : (0, i.jsx)("div", {
-            className: r()(M.kL, M.Lq),
+            className: l()(M.kL, M.Lq),
             children: (0, i.jsx)(o.y$y, {})
         });
     return null != $ ? (0, i.jsxs)(i.Fragment, {

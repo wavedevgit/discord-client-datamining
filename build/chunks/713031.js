@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(311907),
-    r = n(290595),
-    l = n(171316),
+    l = n(290595),
+    r = n(171316),
     o = n(153488),
     c = n(975571),
     d = n(871930),
@@ -20,7 +20,7 @@ var i = n(627968),
 function x() {
     let e = (0, a.cf)([o.A], () => o.A.hasConsented(A.YAq.PERSONALIZATION)),
         [t, n] = s.useState(e),
-        x = (0, l.uM)();
+        x = (0, r.uM)();
     return (0, i.jsx)(d.h, {
         setting: m.H.PRIVACY_DATA_PERSONALIZE_V2,
         children: (0, i.jsx)(u.Ay, {
@@ -30,12 +30,12 @@ function x() {
             }),
             value: t,
             onChange: e => {
-                e ? (0, r.U)([A.YAq.PERSONALIZATION], []).catch(_.i).then(() => n(!0)) : (0, _.O)({
+                e ? (0, l.U)([A.YAq.PERSONALIZATION], []).catch(_.i).then(() => n(!0)) : (0, _.O)({
                     header: g.intl.string(g.t["9SNpzv"]),
                     confirmText: g.intl.string(g.t["9g5UGw"]),
                     cancelText: g.intl.string(g.t["+ZLPw9"]),
                     onConfirm: () => {
-                        (0, r.U)([], [A.YAq.PERSONALIZATION]).catch(_.i).then(() => n(!1))
+                        (0, l.U)([], [A.YAq.PERSONALIZATION]).catch(_.i).then(() => n(!1))
                     },
                     body: g.intl.string(g.t.gJvDDh)
                 })

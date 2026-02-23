@@ -1,12 +1,12 @@
 /** chunk id: 445176, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    e: () => r
+    e: () => l
 });
 var i = n(64700),
     s = n(115063),
     a = n(253932);
 
-function r() {
+function l() {
     let e = a.FA.useSetting(),
         t = i.useMemo(() => (0, s.Lx)(e), [e]);
     return t.mutualGuilds && !t.all

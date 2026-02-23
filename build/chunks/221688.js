@@ -1,7 +1,7 @@
 /** chunk id: 221688, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     X8: () => a,
-    dB: () => r
+    dB: () => l
 });
 var i = n(664654),
     s = n(985018);
@@ -11,7 +11,7 @@ let a = e => {
         } = e;
         return s.intl.string(s.t.USo4s7)
     },
-    r = e => {
+    l = e => {
         let {
             helpdeskArticle: t,
             referralsStatuses: n

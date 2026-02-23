@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(397927),
     a = n(976860),
-    r = n(12901),
-    l = n(652215),
+    l = n(12901),
+    r = n(652215),
     o = n(985018),
     c = n(299758),
     d = n(168482);
@@ -33,7 +33,7 @@ function u() {
             variant: "secondary",
             text: o.intl.string(o.t.JFlifp),
             onClick: () => {
-                (0, a.pX)(l.BVt.GUILD_DISCOVERY), (0, r.default)()
+                (0, a.pX)(r.BVt.GUILD_DISCOVERY), (0, l.default)()
             }
         })]
     })

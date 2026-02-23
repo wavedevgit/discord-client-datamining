@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(503698),
     a = n.n(s),
-    r = n(311907),
-    l = n(582754),
+    l = n(311907),
+    r = n(582754),
     o = n(397927),
     c = n(820284),
     d = n(490415),
@@ -19,22 +19,22 @@ var s = n(503698),
     h = n(788868),
     x = n(985018),
     p = n(187585);
-let E = r.Ay.connectStores([m.default], () => ({
+let E = l.Ay.connectStores([m.default], () => ({
     user: m.default.getCurrentUser()
 }))((0, d.A)(e => {
     let {
         isAuthenticated: t,
         user: n
-    } = e, s = (0, A.TW)(n, h.PremiumTypes.TIER_2), r = (0, u.Ay)();
+    } = e, s = (0, A.TW)(n, h.PremiumTypes.TIER_2), l = (0, u.Ay)();
     return (0, i.jsx)(c.A, {
         section: g.JJy.NAVIGATION,
         children: (0, i.jsx)(o.NPJ, {
-            theme: r,
+            theme: l,
             children: e => (0, i.jsxs)(_.A, {
                 isAuthenticated: t,
                 className: a()(e, {
-                    [p.xD]: !s && !(0, l.Mw)(r),
-                    [p.lO]: !s && (0, l.Mw)(r)
+                    [p.xD]: !s && !(0, r.Mw)(l),
+                    [p.lO]: !s && (0, r.Mw)(l)
                 }),
                 role: "navigation",
                 children: [(0, i.jsx)(_.A.Icon, {

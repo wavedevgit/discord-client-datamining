@@ -8,8 +8,8 @@ n.d(t, {
     aV: () => m
 });
 var i, s, a = n(627968),
-    r = n(64700),
-    l = n(475539),
+    l = n(64700),
+    r = n(475539),
     o = n(397927),
     c = n(396583);
 let d = 3e3,
@@ -40,7 +40,7 @@ let g = e => {
         loop: !0
     } : {
         y: 0
-    }), g = i?.path === "sine" ? Math.sin : Math.cos, [h, x] = (0, r.useState)(1), p = (0, o.zhh)(null != n ? {
+    }), g = i?.path === "sine" ? Math.sin : Math.cos, [h, x] = (0, l.useState)(1), p = (0, o.zhh)(null != n ? {
         from: {
             scale: h > 0 ? n.startScale : n.endScale
         },
@@ -53,7 +53,7 @@ let g = e => {
         onRest: () => x(e => -1 * e)
     } : {
         scale: 1
-    }), [E, C] = (0, r.useState)(1), T = (0, o.zhh)(null != t ? {
+    }), [E, C] = (0, l.useState)(1), T = (0, o.zhh)(null != t ? {
         from: {
             blur: E > 0 ? t.startBlurRadius : t.endBlurRadius
         },
@@ -66,7 +66,7 @@ let g = e => {
         onRest: () => C(e => -1 * e)
     } : {
         blur: 0
-    }), S = (0, r.useMemo)(() => Math.round((750 + (200 * Math.random() - 100)) * _), [_]), [I, f] = (0, r.useState)(0), [N, b] = (0, r.useState)(1), j = (0, o.zhh)({
+    }), S = (0, l.useMemo)(() => Math.round((750 + (200 * Math.random() - 100)) * _), [_]), [I, f] = (0, l.useState)(0), [N, b] = (0, l.useState)(1), j = (0, o.zhh)({
         xOffset: I,
         config: {
             tension: 10,
@@ -76,7 +76,7 @@ let g = e => {
     });
     return ((0, c.A)(() => {
         f(N * (.5 * Math.random() * 5 + 2.5)), b(e => -1 * e)
-    }, S), u) ? m : (0, a.jsx)(l.animated.div, {
+    }, S), u) ? m : (0, a.jsx)(r.animated.div, {
         style: {
             transform: A.y?.to(e => {
                 if (null == i) return "translateY(0px)";

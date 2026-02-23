@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(311907),
-    r = n(36525),
-    l = n(631670),
+    l = n(36525),
+    r = n(631670),
     o = n(933725),
     c = n(587600),
     d = n(207803),
@@ -32,14 +32,14 @@ function x() {
             i = (0, c.yg)(e),
             s = !0;
         if (Object.keys(t).length > 0) {
-            let n = await (0, l._L)(t);
+            let n = await (0, r._L)(t);
             if (s = s && (n?.ok ?? !1), n?.ok) {
                 let i = n.body;
                 void 0 !== e.pendingAvatar && (0, _.t)({
                     avatarHash: i.avatar,
                     avatarId: t.avatarId,
                     avatarAssetOrigin: e.pendingAvatar?.assetOrigin
-                }), (0, l.pZ)()
+                }), (0, r.pZ)()
             } else n?.body?.username != null && (0, g.E)()
         }
         if (Object.keys(n).length > 0) {
@@ -47,7 +47,7 @@ function x() {
             s = s && (e?.ok ?? !1), e?.ok ? (0, d.RE)() : (0, A.m)()
         }
         if (void 0 !== e.pendingLegacyUsernameDisabled) try {
-            await m.m$.updateSetting(e.pendingLegacyUsernameDisabled), (0, l._e)()
+            await m.m$.updateSetting(e.pendingLegacyUsernameDisabled), (0, r._e)()
         } catch {
             (0, A.m)(), s = !1
         }
@@ -57,14 +57,14 @@ function x() {
             } = i;
             if (void 0 !== e) {
                 let t = await (0, o.m)(e, null !== e);
-                s = s && (t?.ok ?? !1), t?.ok ? (0, l.fw)() : (0, A.m)()
+                s = s && (t?.ok ?? !1), t?.ok ? (0, r.fw)() : (0, A.m)()
             }
         }
-        s && (0, l.x8)(), x(!1)
+        s && (0, r.x8)(), x(!1)
     }, []), C = s.useCallback(() => {
-        (0, l.IM)()
+        (0, r.IM)()
     }, []);
-    return (0, i.jsx)(r.A, {
+    return (0, i.jsx)(l.A, {
         submitting: n,
         onSave: E,
         onReset: C,

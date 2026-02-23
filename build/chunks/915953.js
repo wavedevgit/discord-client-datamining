@@ -1,18 +1,18 @@
 /** chunk id: 915953, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => l
+    A: () => r
 });
 var i = n(627968),
     s = n(64700),
     a = n(397927),
-    r = n(244242);
+    l = n(244242);
 
-function l(e) {
+function r(e) {
     let {
         node: t
     } = e, {
         setValue: n,
-        getInitialValue: l,
+        getInitialValue: r,
         minValue: o,
         maxValue: c,
         useDefaultValue: d,
@@ -26,8 +26,8 @@ function l(e) {
         onMarkerRender: p,
         stickToMarkers: E,
         fieldLayout: C
-    } = t, [T] = s.useState(() => l()), S = u(), I = _?.(), f = m?.(), N = A?.(), b = d?.();
-    return (0, i.jsxs)(r.L, {
+    } = t, [T] = s.useState(() => r()), S = u(), I = _?.(), f = m?.(), N = A?.(), b = d?.();
+    return (0, i.jsxs)(l.L, {
         children: [(0, i.jsx)(a.Apm, {
             label: S,
             description: I,

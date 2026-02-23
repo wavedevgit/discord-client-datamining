@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(110259),
     a = n(877624),
-    r = n(934551),
-    l = n(158954),
+    l = n(934551),
+    r = n(158954),
     o = n(232582),
     c = n(732955),
     d = n(397927),
@@ -53,11 +53,11 @@ let C = e => {
             })
         }), (0, i.jsxs)("div", {
             className: E.IH,
-            children: [(0, i.jsx)(l.DZT, {
+            children: [(0, i.jsx)(r.DZT, {
                 variant: "heading-md/semibold",
                 color: "text-strong",
                 children: n.header
-            }), (0, i.jsxs)(l.EYj, {
+            }), (0, i.jsxs)(r.EYj, {
                 variant: "text-md/medium",
                 color: "text-subtle",
                 className: E.tb,
@@ -76,7 +76,7 @@ let C = e => {
                 size: "md",
                 onClick: I,
                 text: n.button.copy,
-                icon: r.NitroWheelIcon
+                icon: l.NitroWheelIcon
             })
         })]
     })

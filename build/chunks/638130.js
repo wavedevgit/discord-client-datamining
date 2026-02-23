@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(444802),
     a = n(975571),
-    r = n(524738),
-    l = n(421248),
+    l = n(524738),
+    r = n(421248),
     o = n(42765),
     c = n(871930),
     d = n(355097),
@@ -20,7 +20,7 @@ function g() {
     let e = (0, s.WX)(),
         t = [{
             title: m.intl.string(m.t.GYpoAq),
-            component: l.Z,
+            component: r.Z,
             orientation: "vertical",
             setting: u.H.SEXUALLY_EXPLICIT_MEDIA_REDACTION
         }, {
@@ -37,7 +37,7 @@ function g() {
             description: m.intl.format(m.t.dliU4j, {
                 learnMoreLink: a.A.getArticleURL(e)
             })
-        }), (0, i.jsx)(r.A, {
+        }), (0, i.jsx)(l.A, {
             parentSetting: u.H.CONTENT_SOCIAL,
             settingsSection: _.nc_.CONTENT_AND_SOCIAL,
             tabs: t,

@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(64700),
     s = n(731738),
     a = n(417597),
-    r = n(964486),
-    l = n(612200),
+    l = n(964486),
+    r = n(612200),
     o = n(831062),
     c = n(210714),
     d = n(287809),
@@ -34,7 +34,7 @@ function C(e) {
         selectedTab: N,
         handleTabChange: b
     } = (0, m.A)(), j = d.default.getCurrentUser(), v = null != C, O = S && null != j && !v;
-    (0, r.Ay)(() => {
+    (0, l.Ay)(() => {
         (0, c.d)("family-center"), null != n && n()
     });
     let R = {
@@ -65,7 +65,7 @@ function C(e) {
             })
         }
     }, [S, v, t]), i.useEffect(() => {
-        O && (0, l.yO)(E.w_.FAMILY_CENTER)
+        O && (0, r.yO)(E.w_.FAMILY_CENTER)
     }, [O]), {
         isLoading: I,
         selectedTab: N,

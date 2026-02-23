@@ -1,33 +1,33 @@
 /** chunk id: 564152, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => l
+    A: () => r
 });
 var i = n(627968);
 n(64700);
 var s = n(397927),
     a = n(985018),
-    r = n(87078);
-let l = function(e) {
+    l = n(87078);
+let r = function(e) {
     let {
         hasGuildBoostSlots: t,
-        hasAppliedGuildBoosts: l,
+        hasAppliedGuildBoosts: r,
         hasBoostPerk: o,
         canAddBoosts: c
     } = e;
     return (0, i.jsxs)("div", {
-        className: r.iE,
+        className: l.iE,
         children: [(0, i.jsx)("div", {
-            className: r.bj,
+            className: l.bj,
             children: (0, i.jsx)("img", {
                 alt: "",
-                className: r.KV,
+                className: l.KV,
                 src: n(960954)
             })
         }), (0, i.jsxs)("div", {
-            className: r.D7,
+            className: l.D7,
             children: [(0, i.jsx)(s.Heading, {
                 variant: "display-md",
-                className: r.R_,
+                className: l.R_,
                 children: function(e) {
                     let {
                         hasGuildBoostSlots: t,
@@ -39,12 +39,12 @@ let l = function(e) {
                 }({
                     hasGuildBoostSlots: t,
                     hasBoostPerk: o,
-                    hasAppliedGuildBoosts: l,
+                    hasAppliedGuildBoosts: r,
                     canAddBoosts: c
                 })
             }), (0, i.jsx)("svg", {
                 viewBox: "0 0 660 210",
-                className: r.Mz,
+                className: l.Mz,
                 children: (0, i.jsx)("path", {
                     d: "M101.3,45.5C57.5,45.9,15.9,82.2,0,99.5V210h660V53.5c-164-137-265.2,32.4-385.8,33.6  C177.7,88.1,158.1,45,101.3,45.5z"
                 })

@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(934551),
-    r = n(873298),
-    l = n(397927),
+    l = n(873298),
+    r = n(397927),
     o = n(308757);
 
 function c(e) {
@@ -15,11 +15,11 @@ function c(e) {
         label: n
     } = e, c = s.useMemo(() => {
         switch (t) {
-            case r.TO.BLUR:
+            case l.TO.BLUR:
                 return a.ImageIcon;
-            case r.TO.BLOCK:
+            case l.TO.BLOCK:
                 return a.DenyIcon;
-            case r.TO.SHOW:
+            case l.TO.SHOW:
                 return a.EyeIcon;
             default:
                 return null
@@ -30,7 +30,7 @@ function c(e) {
         children: [null != c && (0, i.jsx)(c, {
             size: "xs",
             color: "currentColor"
-        }), (0, i.jsx)(l.Text, {
+        }), (0, i.jsx)(r.Text, {
             variant: "text-md/normal",
             color: "text-default",
             children: n

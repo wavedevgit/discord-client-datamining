@@ -10,8 +10,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(503698),
-    r = n.n(a),
-    l = n(311907),
+    l = n.n(a),
+    r = n(311907),
     o = n(873298),
     c = n(582754),
     d = n(397927),
@@ -127,7 +127,7 @@ let B = {
             {
                 theme: a,
                 messageGroupSpacing: o
-            } = (0, l.cf)([v.A, g.A], () => ({
+            } = (0, r.cf)([v.A, g.A], () => ({
                 theme: v.A.theme,
                 messageGroupSpacing: g.A.messageGroupSpacing
             })),
@@ -137,7 +137,7 @@ let B = {
             A = (0, c.Mw)(a) ? u : _;
         return (0, i.jsx)(d.M1G, {
             children: (0, i.jsx)(d.ZpM, {
-                className: r()(w.VH, H.C2, e ? w.Me : void 0, `group-spacing-${null!=o?o:e?k.y5:k.ES}`),
+                className: l()(w.VH, H.C2, e ? w.Me : void 0, `group-spacing-${null!=o?o:e?k.y5:k.ES}`),
                 outline: !0,
                 "aria-hidden": !0,
                 children: A.map((t, n) => (0, i.jsx)(I.A, {
@@ -303,7 +303,7 @@ class Q extends s.Component {
             }), (0, i.jsx)(d.cGx, {
                 className: w.yF
             })]
-        }), r = (0, i.jsxs)(f.x, {
+        }), l = (0, i.jsxs)(f.x, {
             setting: M.H.APPEARANCE_MESSAGE_DISPLAY_COMPACT,
             children: [(0, i.jsxs)(d.nVY, {
                 label: V.intl.string(V.t["2ed/sA"]),
@@ -330,7 +330,7 @@ class Q extends s.Component {
             }), (0, i.jsx)(d.cGx, {
                 className: w.yF
             })]
-        }), l = (0, i.jsxs)(f.x, {
+        }), r = (0, i.jsxs)(f.x, {
             setting: M.H.APPEARANCE_SCALING_SPACING,
             children: [(0, i.jsxs)(d.nVY, {
                 label: V.intl.string(V.t["0Yh+ZX"]),
@@ -345,7 +345,7 @@ class Q extends s.Component {
         });
         return (0, i.jsxs)(D.A, {
             title: V.intl.string(V.t["iHH+ky"]),
-            children: [t, n, a, r, l, c]
+            children: [t, n, a, l, r, c]
         })
     }
 }
@@ -359,8 +359,8 @@ function J() {
     (0, _.Ay)(() => {
         (0, p.v)()
     });
-    let r = (0, N.qo)(),
-        o = (0, l.cf)([v.A, O.Ay, g.A, b.default, x.A], () => ({
+    let l = (0, N.qo)(),
+        o = (0, r.cf)([v.A, O.Ay, g.A, b.default, x.A], () => ({
             theme: v.A.theme,
             useForcedColors: g.A.useForcedColors,
             useSystemTheme: O.Ay.useSystemTheme,
@@ -376,7 +376,7 @@ function J() {
         hideSimpleEmbedContent: t && n,
         clientTheme: s,
         density: a,
-        darkSidebar: r,
+        darkSidebar: l,
         ...o
     })
 }

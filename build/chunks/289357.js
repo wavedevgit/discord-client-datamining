@@ -286,7 +286,7 @@ function q(e) {
     })
 }
 
-function z(e) {
+function K(e) {
     let {
         channel: t,
         label: n
@@ -306,7 +306,7 @@ function z(e) {
     })
 }
 
-function K(e) {
+function z(e) {
     let {
         stageInstance: t,
         channel: n
@@ -377,7 +377,7 @@ function Q(e) {
                 className: V.c8,
                 children: (0, E.c)(a, u, t?.id, n.length)
             })]
-        }) : null, A && null == h && (0, r.jsx)(z, {
+        }) : null, A && null == h && (0, r.jsx)(K, {
             channel: t,
             label: _
         })]
@@ -402,10 +402,10 @@ let X = l.memo(function(e) {
     if (n) return (0, r.jsx)(h.A, {
         guild: t
     });
-    null == l || c ? _ && (u = (0, r.jsx)(K, {
+    null == l || c ? _ && (u = (0, r.jsx)(z, {
         stageInstance: s,
         channel: i
-    })) : l.entity_type === U.Ps.STAGE_INSTANCE && _ ? u = (0, r.jsx)(K, {
+    })) : l.entity_type === U.Ps.STAGE_INSTANCE && _ ? u = (0, r.jsx)(z, {
         stageInstance: s,
         channel: i
     }) : l.entity_type === U.Ps.EXTERNAL ? u = (0, r.jsx)(W, {

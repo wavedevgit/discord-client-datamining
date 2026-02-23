@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(503698),
-    r = n.n(a),
-    l = n(311907),
+    l = n.n(a),
+    r = n(311907),
     o = n(582754),
     c = n(421380),
     d = n(397927),
@@ -70,11 +70,11 @@ let U = () => {
                 children: y.intl.string(y.t.Ipxkog)
             });
         t = n === R.PremiumTypes.TIER_0 ? (0, o.Mw)(a) ? L : D : (0, o.Mw)(a) ? G : M;
-        let r = (0, p.Dd)(n);
+        let l = (0, p.Dd)(n);
         return (0, i.jsx)("img", {
             src: t,
             className: P.wm,
-            alt: r
+            alt: l
         })
     },
     w = e => {
@@ -84,7 +84,7 @@ let U = () => {
             column2: s
         } = e;
         return (0, i.jsxs)("tr", {
-            className: r()(P.U1, P.YI, P.Y9),
+            className: l()(P.U1, P.YI, P.Y9),
             children: [(0, i.jsx)("th", {
                 scope: "col",
                 className: P.Cr,
@@ -95,7 +95,7 @@ let U = () => {
                 children: n
             }), (0, i.jsx)("th", {
                 scope: "col",
-                className: r()(P.e4, P.Y9),
+                className: l()(P.e4, P.Y9),
                 children: s
             })]
         })
@@ -106,15 +106,15 @@ let U = () => {
             column1: n,
             column2: s,
             withBottomBorder: a = !0,
-            withTopBorderRadius: l = !1,
+            withTopBorderRadius: r = !1,
             withBottomBorderRadius: o = !1,
             buttonsRow: c = !1,
             shortRow: d = !1
         } = e;
         return (0, i.jsxs)("tr", {
-            className: r()(P.nM, {
+            className: l()(P.nM, {
                 [P.EE]: c,
-                [P.Y9]: l,
+                [P.Y9]: r,
                 [P.kS]: o,
                 [P.YI]: a,
                 [P.vs]: d
@@ -124,13 +124,13 @@ let U = () => {
                 className: P.nx,
                 children: t
             }), (0, i.jsx)("td", {
-                className: r()(P.Hn, {
+                className: l()(P.Hn, {
                     [P.SD]: c
                 }),
                 children: n
             }), (0, i.jsx)("td", {
-                className: r()(P.Hn, {
-                    [P.Y9]: l,
+                className: l()(P.Hn, {
+                    [P.Y9]: r,
                     [P.kS]: o,
                     [P.SD]: c
                 }),
@@ -150,11 +150,11 @@ let U = () => {
             {
                 analyticsLocations: M
             } = (0, m.Ay)(_.A.PREMIUM_MARKETING_PLAN_COMPARISON),
-            B = (0, l.bG)([x.A], () => x.A.hasFetchedSubscriptions()),
+            B = (0, r.bG)([x.A], () => x.A.hasFetchedSubscriptions()),
             Y = (0, g.Y)(R.T7),
             F = (0, u.Ay)(),
             z = (0, o.qB)(F),
-            W = (0, l.bG)([h.default], () => h.default.getCurrentUser()),
+            W = (0, r.bG)([h.default], () => h.default.getCurrentUser()),
             K = null != W && W.isPremiumWithPremiumGroup(),
             Z = (0, p.YE)(W, R.PremiumTypes.TIER_2),
             q = (0, S.V)(),
@@ -168,9 +168,9 @@ let U = () => {
             ei = (0, p.JM)(R.gD.PREMIUM_MONTH_TIER_2),
             es = (0, A.A)(),
             ea = (0, O.R)(en, ei, $, et, es.fractionalState),
-            er = (0, E.cg)();
+            el = (0, E.cg)();
         if (!B || !Y) return null;
-        let el = {
+        let er = {
             label: (0, i.jsx)(d.Heading, {
                 className: P.__invalid_textColor,
                 variant: "heading-lg/extrabold",
@@ -196,7 +196,7 @@ let U = () => {
         }) : ea.push({
             label: null,
             column1: (0, i.jsxs)(i.Fragment, {
-                children: [X === R.pe.TIER_2 || er ? (0, i.jsx)(N.A, {
+                children: [X === R.pe.TIER_2 || el ? (0, i.jsx)(N.A, {
                     className: P.x6,
                     subscriptionTier: R.pe.TIER_0,
                     showIcon: !1,
@@ -222,7 +222,7 @@ let U = () => {
                     className: P.x6,
                     subscriptionTier: R.pe.TIER_2,
                     showIcon: !1,
-                    hasActivePromotion: er
+                    hasActivePromotion: el
                 }), Q === R.PremiumTypes.TIER_0 || null != X ? null : (0, i.jsx)(f.A, {
                     className: P.x6,
                     subscriptionTier: R.pe.TIER_2
@@ -235,15 +235,15 @@ let U = () => {
             text: null != X ? y.intl.string(y.t.IBYG5U) : y.intl.string(y.t.ce1v3V),
             className: P.ls,
             colorOptions: X === R.pe.TIER_0 ? z ? v.at.PREMIUM_TIER_0_GRADIENT_FILL : v.at.PREMIUM_TIER_0_WHITE_FILL : z ? Z ? v.at.PREMIUM_TIER_2_OLD_GRADIENT_FILL : v.at.PREMIUM_TIER_2_NEW_GRADIENT_FILL : v.at.PREMIUM_TIER_2_WHITE_FILL
-        }) : er ? (0, i.jsx)(U, {}) : (0, i.jsx)(k, {});
+        }) : el ? (0, i.jsx)(U, {}) : (0, i.jsx)(k, {});
         let eo = X === R.pe.TIER_0 || Q === R.PremiumTypes.TIER_0 || G === R.PremiumTypes.TIER_0;
         return (0, i.jsx)(m.f5, {
             value: M,
             children: (0, i.jsxs)("div", {
-                className: r()(P.zr, n),
+                className: l()(P.zr, n),
                 "data-testid": "v2-marketing-page-comparison-table",
                 children: [(0, i.jsx)(d.Heading, {
-                    className: r()(P.Qw, P.__invalid_textColor),
+                    className: l()(P.Qw, P.__invalid_textColor),
                     variant: "heading-xxl/extrabold",
                     children: j ?? y.intl.string(y.t.FIbMh9)
                 }), K && (0, i.jsx)(I.A, {
@@ -252,7 +252,7 @@ let U = () => {
                 }), (0, i.jsxs)("div", {
                     className: P.wY,
                     children: [(0, i.jsx)("div", {
-                        className: r()(D, {
+                        className: l()(D, {
                             [P.A9]: eo,
                             [P.ce]: !eo && !K
                         }),
@@ -261,7 +261,7 @@ let U = () => {
                         className: P.tp,
                         children: [(0, i.jsx)("thead", {
                             children: (0, i.jsx)(w, {
-                                ...el
+                                ...er
                             })
                         }), (0, i.jsx)("tbody", {
                             children: ea.map((e, t) => (0, s.createElement)(H, {

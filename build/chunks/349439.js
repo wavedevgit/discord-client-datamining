@@ -8,14 +8,14 @@ n.d(t, {
 var i = n(575593),
     s = n(898461),
     a = n(203632),
-    r = n(486020),
-    l = n(788868),
+    l = n(486020),
+    r = n(788868),
     o = n(842130),
     c = n(985018);
 let d = e => {
         if (0 === e.items.length) return null;
         let t = e.items[0];
-        return (0, s.T)(t) ? (0, r.F_)({
+        return (0, s.T)(t) ? (0, l.F_)({
             avatarDecoration: {
                 asset: t.asset
             },
@@ -30,8 +30,8 @@ let d = e => {
     },
     _ = e => {
         if (null == e) return !1;
-        let t = l.hd[e];
-        return t?.skuId === l.pe.GUILD
+        let t = r.hd[e];
+        return t?.skuId === r.pe.GUILD
     },
     m = (e, t) => {
         let n, s, a = null != t;
@@ -50,7 +50,7 @@ let d = e => {
             }
         })(e.type);
         else if (a && null != t) {
-            let e = l.hd[t];
+            let e = r.hd[t];
             n = e?.name
         }
         return {

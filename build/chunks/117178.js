@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(695497),
-    r = n.n(a),
-    l = n(313869),
+    l = n.n(a),
+    r = n(313869),
     o = n(451802),
     c = n(723702),
     d = n(837921),
@@ -51,7 +51,7 @@ class m extends s.PureComponent {
         }))
     }
     recordStart = () => {
-        c.isPlatformEmbedded && !_ && (this.gs = new l.A, this.gs.on("change", this.handleGSChange)), this.setState({
+        c.isPlatformEmbedded && !_ && (this.gs = new r.A, this.gs.on("change", this.handleGSChange)), this.setState({
             mode: o.E.RECORDING
         })
     };
@@ -65,7 +65,7 @@ class m extends s.PureComponent {
     };
     handleComboKeys = (e, t, n) => {
         if (n.preventDefault(), "keydown" === n.type) {
-            let e = t.map(e => [u.zY.KEYBOARD_KEY, r()(e), u.g$.BROWSER]),
+            let e = t.map(e => [u.zY.KEYBOARD_KEY, l()(e), u.g$.BROWSER]),
                 {
                     keyCode: i
                 } = n;

@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(311907),
-    r = n(397927),
-    l = n(869038),
+    l = n(397927),
+    r = n(869038),
     o = n(459357),
     c = n(99696),
     d = n(499454),
@@ -62,7 +62,7 @@ class h extends s.Component {
             if (null == e) return void this.setState({
                 hasError: !0
             });
-            let i = await l.A.resolveGiftCode(e);
+            let i = await r.A.resolveGiftCode(e);
             if (null != i && null != i.giftCode.promotion) throw this.setState({
                 isPromoCode: !0
             }), Error("Cannnot redeem promotion code as gift");
@@ -96,12 +96,12 @@ class h extends s.Component {
             hasError: s,
             isPromoCode: a
         } = this.state;
-        return (0, i.jsx)(r.nVY, {
+        return (0, i.jsx)(l.nVY, {
             label: g.intl.string(g.t["il+VCo"]),
             children: (0, i.jsx)("form", {
                 onSubmit: this.handleSubmit,
-                children: (0, i.jsxs)(r.M_l, {
-                    children: [(0, i.jsx)(r.ksK, {
+                children: (0, i.jsxs)(l.M_l, {
+                    children: [(0, i.jsx)(l.ksK, {
                         label: g.intl.string(g.t.SeKIoS),
                         type: e ? "password" : "text",
                         value: t,
@@ -114,7 +114,7 @@ class h extends s.Component {
                             }
                         }) : null,
                         fullWidth: !0
-                    }), (0, i.jsx)(r.Button, {
+                    }), (0, i.jsx)(l.Button, {
                         variant: "primary",
                         text: g.intl.string(g.t.KIpp7M),
                         type: "submit",

@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(158954),
-    r = n(421380),
-    l = n(397927),
+    l = n(421380),
+    r = n(397927),
     o = n(416052),
     c = n(793574),
     d = n(688810),
@@ -35,10 +35,10 @@ function g(e) {
         transitionState: n,
         children: (0, i.jsxs)("div", {
             className: A.t4,
-            children: [(0, i.jsx)(l.Heading, {
+            children: [(0, i.jsx)(r.Heading, {
                 variant: "heading-xl/semibold",
                 children: m.intl.string(m.t.iufib1)
-            }), (0, i.jsx)(l.Text, {
+            }), (0, i.jsx)(r.Text, {
                 variant: "text-md/normal",
                 className: A.G3,
                 children: m.intl.string(m.t.eAn6z2)
@@ -64,7 +64,7 @@ let h = function(e) {
     }, [h, x.id, n, S]), null != E) ? (0, i.jsx)(g, {
         onClose: t,
         transitionState: p
-    }) : null == h ? (0, i.jsx)(l.y$y, {
+    }) : null == h ? (0, i.jsx)(r.y$y, {
         className: A.Lq
     }) : (0, i.jsx)(a.Modal, {
         title: "",
@@ -74,10 +74,10 @@ let h = function(e) {
             className: A.N1,
             children: [(0, i.jsx)("div", {
                 className: A.Qw
-            }), (0, i.jsx)(l.Heading, {
+            }), (0, i.jsx)(r.Heading, {
                 variant: "heading-xl/semibold",
                 children: m.intl.string(m.t["23BfZh"])
-            }), (0, i.jsx)(l.Text, {
+            }), (0, i.jsx)(r.Text, {
                 variant: "text-md/normal",
                 className: A.G3,
                 children: x.outboundRedemptionModalBody
@@ -98,15 +98,15 @@ let h = function(e) {
         transitionState: p,
         "aria-label": T,
         children: (0, i.jsxs)("div", {
-            children: [(0, i.jsx)(l.cGx, {
+            children: [(0, i.jsx)(r.cGx, {
                 className: A.M5
             }), (0, i.jsx)(a.D0$, {
                 label: m.intl.string(m.t.s9LFQh),
                 helperText: m.intl.string(m.t["F+nFTZ"]),
                 children: (0, i.jsx)(o.A, {
                     value: h,
-                    buttonColor: r.$n.Colors.BRAND,
-                    buttonLook: r.$n.Looks.FILLED,
+                    buttonColor: l.$n.Colors.BRAND,
+                    buttonLook: l.$n.Looks.FILLED,
                     delay: 1e3
                 })
             })]

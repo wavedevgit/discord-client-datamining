@@ -5,28 +5,28 @@ n.d(t, {
 var i = n(311907),
     s = n(73153);
 let a = {},
-    r = null;
+    l = null;
 
-function l() {
-    a = {}, r = null
+function r() {
+    a = {}, l = null
 }
 class o extends i.Ay.Store {
     static displayName = "EmailSettingsStore";
     getEmailSettings() {
         return {
             categories: a,
-            initialized: r
+            initialized: l
         }
     }
 }
 let c = new o(s.h, {
-    CONNECTION_OPEN: l,
-    LOGOUT: l,
+    CONNECTION_OPEN: r,
+    LOGOUT: r,
     EMAIL_SETTINGS_FETCH_SUCCESS: function(e) {
         let {
             settings: t
         } = e;
-        a = t.categories, r = t.initialized
+        a = t.categories, l = t.initialized
     },
     EMAIL_SETTINGS_UPDATE_SUCCESS: function(e) {
         let {

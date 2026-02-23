@@ -1,11 +1,11 @@
 /** chunk id: 535762, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => r
+    A: () => l
 }), n(321073);
 var i = n(91871),
     s = n.n(i),
     a = n(18108);
-class r {
+class l {
     terms;
     cache;
     cacheScored;
@@ -53,15 +53,15 @@ class r {
         return this.preprocessed.forEach(e => {
             let [n, {
                 normalizedTokens: s,
-                normalizedSearchTerms: r
-            }] = e, l = 0;
-            r.some(e => e === t) ? l = 1 : s.some(e => e.startsWith(t)) ? l = .95 : r.forEach(e => {
+                normalizedSearchTerms: l
+            }] = e, r = 0;
+            l.some(e => e === t) ? r = 1 : s.some(e => e.startsWith(t)) ? r = .95 : l.forEach(e => {
                 let n = 0,
                     i = (0, a.g)(t, e);
-                i >= .8 && (n = i), l = Math.max(l, n)
-            }), l > 0 && i.push({
+                i >= .8 && (n = i), r = Math.max(r, n)
+            }), r > 0 && i.push({
                 setting: n,
-                score: l
+                score: r
             })
         }), this.cacheScored.set(t, i), i
     }

@@ -2,32 +2,32 @@
 n.d(t, {
     J6: () => c,
     Jz: () => d,
-    ky: () => l,
+    ky: () => r,
     qY: () => o
 });
 var i = n(873298),
     s = n(632119),
     a = n(444802),
-    r = n(93857);
-let l = e => null != e && e !== i.TO.UNSET_EXPLICIT_CONTENT_REDACTION,
+    l = n(93857);
+let r = e => null != e && e !== i.TO.UNSET_EXPLICIT_CONTENT_REDACTION,
     o = (e, t) => {
         let n = (e => {
             let {
                 goreContentNonFriendDm: t,
                 goreContentFriendDm: n
-            } = r.oQ.getControlledSetting(e) ?? {};
+            } = l.oQ.getControlledSetting(e) ?? {};
             return {
-                goreContentNonFriendDm: l(t) ? t : (0, a.jj)({
+                goreContentNonFriendDm: r(t) ? t : (0, a.jj)({
                     isDm: !0
                 }),
-                goreContentFriendDm: l(n) ? n : (0, a.jj)({
+                goreContentFriendDm: r(n) ? n : (0, a.jj)({
                     isDm: !0,
                     isFriend: !0
                 }),
                 goreContentGuilds: i.TO.BLUR
             }
         })(e);
-        r.oQ.updateControlledSetting(e, {
+        l.oQ.updateControlledSetting(e, {
             ...n,
             ...t
         })
@@ -38,12 +38,12 @@ let l = e => null != e && e !== i.TO.UNSET_EXPLICIT_CONTENT_REDACTION,
             setting: n,
             isFriend: i = !1
         } = e;
-        if (l(n)) return n;
-        let a = r.sM.getControlledSetting(t);
+        if (r(n)) return n;
+        let a = l.sM.getControlledSetting(t);
         return i ? s.Bb[a] : s.fu[a]
     },
     d = (e, t) => {
-        let n, s = (n = r.p7.getControlledSetting(e), {
+        let n, s = (n = l.p7.getControlledSetting(e), {
             explicitContentNonFriendDm: c({
                 teenId: e,
                 setting: n?.explicitContentNonFriendDm
@@ -55,7 +55,7 @@ let l = e => null != e && e !== i.TO.UNSET_EXPLICIT_CONTENT_REDACTION,
             }),
             explicitContentGuilds: i.TO.BLUR
         });
-        r.p7.updateControlledSetting(e, {
+        l.p7.updateControlledSetting(e, {
             ...s,
             ...t
         })

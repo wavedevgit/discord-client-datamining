@@ -10,7 +10,7 @@ let a = e => {
         className: t,
         backgroundColor: n,
         backgroundCircleSize: a,
-        ...r
+        ...l
     } = e;
     return (0, i.jsxs)("svg", {
         width: "100%",
@@ -22,7 +22,7 @@ let a = e => {
         },
         xmlns: "http://www.w3.org/2000/svg",
         ...(0, s.A)({
-            ...r
+            ...l
         }),
         children: [(0, i.jsx)("circle", {
             r: a ?? "40%",

@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(503698),
-    r = n.n(a),
-    l = n(311907),
+    l = n.n(a),
+    r = n(311907),
     o = n(582754),
     c = n(397927),
     d = n(736653),
@@ -90,7 +90,7 @@ let j = () => (0, i.jsx)("div", {
             withBottomMargin: a
         } = e;
         return (0, i.jsxs)("tr", {
-            className: r()(S.nM, S.YI, {
+            className: l()(S.nM, S.YI, {
                 [S.ML]: a
             }),
             children: [(0, i.jsx)("th", {
@@ -154,7 +154,7 @@ let j = () => (0, i.jsx)("div", {
     },
     D = () => (0, i.jsx)("thead", {
         children: (0, i.jsxs)("tr", {
-            className: r()(S.U1, S.Y9),
+            className: l()(S.U1, S.Y9),
             children: [(0, i.jsx)("th", {
                 scope: "col",
                 className: S.Cr,
@@ -171,7 +171,7 @@ let j = () => (0, i.jsx)("div", {
                 })
             }), (0, i.jsx)("th", {
                 scope: "col",
-                className: r()(S.e4, S.Y9),
+                className: l()(S.e4, S.Y9),
                 children: (0, i.jsx)(L, {
                     premiumType: C.PremiumTypes.TIER_2
                 })
@@ -186,7 +186,7 @@ let j = () => (0, i.jsx)("div", {
             tier2DiscountedPriceString: a
         } = e;
         return (0, i.jsxs)("tr", {
-            className: r()(S.nM, S.YI, S.ML),
+            className: l()(S.nM, S.YI, S.ML),
             children: [(0, i.jsx)("th", {
                 scope: "row",
                 className: S.nx,
@@ -217,7 +217,7 @@ let j = () => (0, i.jsx)("div", {
             {
                 analyticsLocations: d
             } = (0, _.Ay)(u.A.PREMIUM_MARKETING_PLAN_COMPARISON),
-            T = (0, l.bG)([A.A], () => A.A.hasFetchedSubscriptions()),
+            T = (0, r.bG)([A.A], () => A.A.hasFetchedSubscriptions()),
             I = (0, m.Y)(C.T7),
             f = (0, x.V)(),
             N = f?.subscription_trial?.sku_id,
@@ -234,17 +234,17 @@ let j = () => (0, i.jsx)("div", {
         return (0, i.jsx)(_.f5, {
             value: d,
             children: (0, i.jsx)("div", {
-                className: r()(S.zr, n),
+                className: l()(S.zr, n),
                 "data-testid": "application-home-marketing-page-comparison-table",
                 children: (0, i.jsxs)("div", {
                     className: S.wY,
                     children: [(0, i.jsxs)("div", {
-                        className: r()(o, {
+                        className: l()(o, {
                             [S.sO]: k,
                             [S.Yr]: !k
                         }),
                         children: [!k && t, (0, i.jsx)("div", {
-                            className: r()({
+                            className: l()({
                                 [S.A9]: k,
                                 [S.ce]: !k
                             })

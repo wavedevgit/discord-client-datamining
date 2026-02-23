@@ -6,9 +6,9 @@ var i = n(627968);
 n(64700);
 var s = n(419954),
     a = n(780964),
-    r = n(373169),
-    l = n(985018);
+    l = n(373169),
+    r = n(985018);
 let o = (0, s.E2)(a.X.LANGUAGE_SELECT_SETTING, {
-    useSearchTerms: () => [l.intl.string(l.t.IHMsPn)],
-    Component: () => (0, i.jsx)(r.p, {})
+    useSearchTerms: () => [r.intl.string(r.t.IHMsPn)],
+    Component: () => (0, i.jsx)(l.p, {})
 })

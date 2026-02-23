@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(503698),
     a = n.n(s),
-    r = n(397927),
-    l = n(327479),
+    l = n(397927),
+    r = n(327479),
     o = n(985018),
     c = n(869678),
     d = n(595654),
@@ -19,16 +19,16 @@ function _(e) {
         count: n
     } = e;
     return (0, i.jsxs)("div", {
-        children: [(0, i.jsx)(r.Heading, {
+        children: [(0, i.jsx)(l.Heading, {
             variant: "heading-md/bold",
             children: o.intl.string(o.t["48ywCu"])
-        }), (0, i.jsx)(r.hKd, {
+        }), (0, i.jsx)(l.hKd, {
             size: 4
-        }), (0, i.jsx)(r.Text, {
+        }), (0, i.jsx)(l.Text, {
             variant: "text-md/normal",
             className: c.yV,
             children: o.intl.string(o.t.VWxmSo)
-        }), (0, i.jsx)(r.hKd, {
+        }), (0, i.jsx)(l.hKd, {
             size: 24
         }), (0, i.jsxs)("div", {
             className: a()(d.Qn, c.Nr),
@@ -38,18 +38,18 @@ function _(e) {
                 className: c._e
             }), (0, i.jsxs)("div", {
                 className: c.FS,
-                children: [(0, i.jsx)(r.Heading, {
+                children: [(0, i.jsx)(l.Heading, {
                     variant: "heading-xl/semibold",
                     className: c.wx,
                     children: o.intl.string(o.t["48ywCu"])
-                }), (0, i.jsx)(r.Text, {
+                }), (0, i.jsx)(l.Text, {
                     variant: "text-md/normal",
                     className: c.h_,
                     children: o.intl.format(o.t["/esXLj"], {
                         numSubscriptions: n
                     })
                 })]
-            }), (0, i.jsx)(l.A, {
+            }), (0, i.jsx)(r.A, {
                 onClick: t,
                 text: o.intl.string(o.t["z5YcJ+"])
             })]

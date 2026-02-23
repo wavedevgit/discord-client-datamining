@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(873298),
     a = n(86689),
-    r = n(639383),
-    l = n(704724),
+    l = n(639383),
+    r = n(704724),
     o = n(171316),
     c = n(500470),
     d = n(985018);
@@ -20,7 +20,7 @@ function u() {
         goreContentFriendDm: n,
         goreContentNonFriendDm: u
     } = t, _ = t => {
-        (0, l.qY)(e, t)
+        (0, r.qY)(e, t)
     }, m = [{
         value: s.TO.BLUR,
         label: d.intl.string(d.t.S49Uad)
@@ -30,14 +30,14 @@ function u() {
     }];
     return (0, i.jsxs)(a.E, {
         description: d.intl.string(d.t.XgH9eh),
-        children: [(0, i.jsx)(r.A, {
+        children: [(0, i.jsx)(l.A, {
             title: d.intl.string(d.t["+uI23H"]),
             value: n,
             onChange: e => _({
                 goreContentFriendDm: e
             }),
             options: m
-        }), (0, i.jsx)(r.A, {
+        }), (0, i.jsx)(l.A, {
             title: d.intl.string(d.t["Yh+HX1"]),
             value: u,
             onChange: e => _({

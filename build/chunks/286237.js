@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(812729),
     s = n.n(i),
     a = n(311907),
-    r = n(587895),
-    l = n(429913),
+    l = n(587895),
+    r = n(429913),
     o = n(616356),
     c = n(15285);
 
@@ -22,7 +22,7 @@ function u() {
         i = d(e, n);
     return {
         runningGame: n ?? void 0,
-        runningGameApplication: r.A.getApplication(i) ?? void 0
+        runningGameApplication: l.A.getApplication(i) ?? void 0
     }
 }
 
@@ -32,7 +32,7 @@ function _() {
             let e = c.Ay.getVisibleGame();
             return null != e ? c.Ay.getGameOrTransformedSubgameForPID(e.pid) : null
         }, [], s()),
-        [n] = (0, l.A)([d(e, t)]);
+        [n] = (0, r.A)([d(e, t)]);
     return {
         runningGame: t ?? void 0,
         runningGameApplication: n ?? void 0

@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(421380),
     a = n(397927),
-    r = n(631670),
-    l = n(985018);
+    l = n(631670),
+    r = n(985018);
 
 function o(e) {
     let {
@@ -15,14 +15,14 @@ function o(e) {
     } = e;
     return (0, i.jsx)(a.MJ3, {
         dismissable: !0,
-        header: l.intl.string(l.t.UNGZDI),
-        confirmText: l.intl.string(l.t.BddRzS),
+        header: r.intl.string(r.t.UNGZDI),
+        confirmText: r.intl.string(r.t.BddRzS),
         confirmButtonColor: s.XD.BRAND,
         onCancel: t,
         onConfirm: t,
         children: (0, i.jsx)(a.Text, {
             variant: "text-md/normal",
-            children: l.intl.string(l.t.alpAUm)
+            children: r.intl.string(r.t.alpAUm)
         })
     })
 }
@@ -33,14 +33,14 @@ function c(e) {
     } = e;
     return (0, i.jsx)(a.MJ3, {
         dismissable: !0,
-        header: l.intl.string(l.t.I5UrbV),
-        confirmText: l.intl.string(l.t.BddRzS),
+        header: r.intl.string(r.t.I5UrbV),
+        confirmText: r.intl.string(r.t.BddRzS),
         confirmButtonColor: s.XD.BRAND,
         onCancel: t,
         onConfirm: t,
         children: (0, i.jsx)(a.Text, {
             variant: "text-md/normal",
-            children: l.intl.string(l.t.UyVVan)
+            children: r.intl.string(r.t.UyVVan)
         })
     })
 }
@@ -51,14 +51,14 @@ function d(e) {
     } = e;
     return (0, i.jsx)(a.MJ3, {
         dismissable: !0,
-        header: l.intl.string(l.t["8lQ2rR"]),
-        confirmText: l.intl.string(l.t["8lQ2rR"]),
-        cancelText: l.intl.string(l.t["ETE/oC"]),
+        header: r.intl.string(r.t["8lQ2rR"]),
+        confirmText: r.intl.string(r.t["8lQ2rR"]),
+        cancelText: r.intl.string(r.t["ETE/oC"]),
         onCancel: t,
-        onConfirm: () => (0, r.U_)("", !0).then(t),
+        onConfirm: () => (0, l.U_)("", !0).then(t),
         children: (0, i.jsx)(a.Text, {
             variant: "text-md/normal",
-            children: l.intl.string(l.t.FB4H1D)
+            children: r.intl.string(r.t.FB4H1D)
         })
     })
 }
@@ -70,8 +70,8 @@ function u(e) {
     } = e;
     return (0, i.jsx)(a.MJ3, {
         dismissable: !0,
-        header: l.intl.string(l.t.LX0nT8),
-        confirmText: l.intl.string(l.t.BddRzS),
+        header: r.intl.string(r.t.LX0nT8),
+        confirmText: r.intl.string(r.t.BddRzS),
         confirmButtonColor: s.XD.BRAND,
         onCancel: t,
         onConfirm: t,
@@ -88,20 +88,20 @@ function _(e) {
         shouldRenderOwnedGuildsModal: n,
         shouldRenderDeleteAccountConfirmModal: s,
         shouldRenderDisableAccountErrorModal: a,
-        disableAccountErrorMessage: r,
-        onOwnedTeamsWarningModalClose: l,
+        disableAccountErrorMessage: l,
+        onOwnedTeamsWarningModalClose: r,
         onOwnedGuildsWarningModalClose: _,
         onDeleteAccountConfirmModalClose: m,
         onDisableAccountErrorModalClose: A
     } = e;
     return t ? (0, i.jsx)(o, {
-        onClose: l
+        onClose: r
     }) : n ? (0, i.jsx)(c, {
         onClose: _
     }) : s ? (0, i.jsx)(d, {
         onClose: m
     }) : a ? (0, i.jsx)(u, {
         onClose: A,
-        errorMessage: r
+        errorMessage: l
     }) : null
 }

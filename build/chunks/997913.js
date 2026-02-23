@@ -1,13 +1,13 @@
 /** chunk id: 997913, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    O: () => r,
-    i: () => l
+    O: () => l,
+    i: () => r
 });
 var i = n(627968),
     s = n(397927),
     a = n(985018);
 
-function r(e) {
+function l(e) {
     let {
         body: t,
         ...a
@@ -27,11 +27,11 @@ function r(e) {
     })
 }
 
-function l(e) {
+function r(e) {
     let {
         message: t
     } = e;
-    r({
+    l({
         header: a.intl.string(a.t.OjbtDm),
         confirmText: a.intl.string(a.t.BddRzS),
         body: t

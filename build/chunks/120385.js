@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(562465),
-    r = n(397927),
-    l = n(279280),
+    l = n(397927),
+    r = n(279280),
     o = n(652215),
     c = n(818348),
     d = n(985018),
@@ -41,36 +41,36 @@ function m(e) {
     }, g = null != t.paymentSource && t.status === c.__.COMPLETED, h = n?.invoiceLink, x = n?.refundInvoiceLinks;
     return t.hasInvoiceURL && null == n ? (0, i.jsxs)("div", {
         className: u.It,
-        children: [(0, i.jsx)(r.MzZ, {
+        children: [(0, i.jsx)(l.MzZ, {
             onClick: () => A(!1),
             children: d.intl.formatToPlainString(d.t.R0xzCN, {})
-        }), t.hasRefundInvoiceURLs ? (0, i.jsx)(r.MzZ, {
+        }), t.hasRefundInvoiceURLs ? (0, i.jsx)(l.MzZ, {
             className: u.oe,
             onClick: () => A(!0),
             children: d.intl.formatToPlainString(d.t["3x6NGw"], {})
-        }) : null, null != o && "" !== o && (0, i.jsx)(r.wx6, {
+        }) : null, null != o && "" !== o && (0, i.jsx)(l.wx6, {
             type: "critical",
             children: o
         })]
     }) : t.hasInvoiceURL && null != n ? (0, i.jsxs)("div", {
         className: u.It,
-        children: [(0, i.jsx)(r.MzZ, {
+        children: [(0, i.jsx)(l.MzZ, {
             href: h,
             children: d.intl.formatToPlainString(d.t.R0xzCN, {})
-        }), null != x ? x.map((e, t) => (0, i.jsx)(r.MzZ, {
+        }), null != x ? x.map((e, t) => (0, i.jsx)(l.MzZ, {
             className: u.oe,
             href: e,
             children: d.intl.formatToPlainString(d.t["3x6NGw"], {})
-        }, t)) : null, null != o && "" !== o && (0, i.jsx)(r.wx6, {
+        }, t)) : null, null != o && "" !== o && (0, i.jsx)(l.wx6, {
             type: "critical",
             children: o
         })]
     }) : g ? (0, i.jsx)("div", {
         className: u.It,
-        children: (0, i.jsx)(r.MzZ, {
+        children: (0, i.jsx)(l.MzZ, {
             onClick: () => {
                 var e;
-                e = t.paymentSource, l.A.open(t, e)
+                e = t.paymentSource, r.A.open(t, e)
             },
             children: d.intl.formatToPlainString(d.t.onRIxS, {})
         })

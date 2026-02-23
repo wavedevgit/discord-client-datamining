@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(397927),
-    r = n(98207),
-    l = n(557722),
+    l = n(98207),
+    r = n(557722),
     o = n(662758),
     c = n(615715),
     d = n(87707),
@@ -27,7 +27,7 @@ function g(e) {
         C = s.useCallback(function() {
             let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
             (0, a.qfG)(t => (0, i.jsx)(c.default, {
-                reason: l.d.USER_SETTINGS_UPDATE,
+                reason: r.d.USER_SETTINGS_UPDATE,
                 ...t,
                 ...e
             }), {
@@ -39,13 +39,13 @@ function g(e) {
         }, [C]),
         S = s.useCallback(() => {
             null == g.phone ? C({
-                onAddedPhone: r.A.enableSMS
-            }) : r.A.enableSMS()
+                onAddedPhone: l.A.enableSMS
+            }) : l.A.enableSMS()
         }, [g, C]),
         I = s.useCallback(() => {
             (0, a.qfG)(e => (0, i.jsx)(o.default, {
                 ...e,
-                handleSubmit: r.A.disableSMS,
+                handleSubmit: l.A.disableSMS,
                 title: m.intl.string(m.t.KLWnit),
                 children: m.intl.string(m.t["W0/Duf"])
             }))

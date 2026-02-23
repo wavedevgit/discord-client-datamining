@@ -5,31 +5,31 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(503698),
-    r = n.n(a),
-    l = n(112303),
+    l = n.n(a),
+    r = n(112303),
     o = n(50567);
 let c = {
-        VERTICAL: l.yG,
-        HORIZONTAL: l.OZ,
-        HORIZONTAL_REVERSE: l.y0
+        VERTICAL: r.yG,
+        HORIZONTAL: r.OZ,
+        HORIZONTAL_REVERSE: r.y0
     },
     d = {
-        START: l.KF,
-        END: l.HA,
-        CENTER: l.pb,
-        BETWEEN: l.G1,
-        AROUND: l.nm
+        START: r.KF,
+        END: r.HA,
+        CENTER: r.pb,
+        BETWEEN: r.G1,
+        AROUND: r.nm
     },
     u = {
-        NO_WRAP: l.B,
-        WRAP: l.aR,
-        WRAP_REVERSE: l.KM
+        NO_WRAP: r.B,
+        WRAP: r.aR,
+        WRAP_REVERSE: r.KM
     },
     _ = {
-        START: l.j$,
-        END: l.S_,
-        CENTER: l.YO,
-        STRETCH: l.ai
+        START: r.j$,
+        END: r.S_,
+        CENTER: r.YO,
+        STRETCH: r.ai
     },
     m = {
         SMALL: o.sf,
@@ -47,7 +47,7 @@ class A extends s.PureComponent {
             className: t,
             shrink: n,
             grow: a,
-            basis: l,
+            basis: r,
             style: c,
             wrap: d,
             ...u
@@ -55,10 +55,10 @@ class A extends s.PureComponent {
             style: {
                 flexGrow: a,
                 flexShrink: n,
-                flexBasis: l,
+                flexBasis: r,
                 ...c
             },
-            className: t === o.Gu ? t : r()(o.Gu, t),
+            className: t === o.Gu ? t : l()(o.Gu, t),
             ...u
         };
         if (!d && "string" != typeof e && 1 === s.Children.count(e)) {
@@ -66,7 +66,7 @@ class A extends s.PureComponent {
             return _.style = {
                 ..._.style,
                 ...n.props.style
-            }, _.className = r()(n.props.className, t), s.cloneElement(n, _)
+            }, _.className = l()(n.props.className, t), s.cloneElement(n, _)
         }
         return (0, i.jsx)("div", {
             ..._,
@@ -98,7 +98,7 @@ class g extends s.PureComponent {
             direction: n,
             justify: s,
             align: a,
-            wrap: l,
+            wrap: r,
             shrink: c,
             grow: d,
             basis: u,
@@ -113,7 +113,7 @@ class g extends s.PureComponent {
         };
         return (0, i.jsx)("div", {
             style: g,
-            className: r()(o.Uu, n, s, a, l, m, t),
+            className: l()(o.Uu, n, s, a, r, m, t),
             ...A,
             children: e
         })

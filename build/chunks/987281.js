@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(64700),
     s = n(964486),
     a = n(839214),
-    r = n(535762),
-    l = n(152056),
+    l = n(535762),
+    r = n(152056),
     o = n(360619),
     c = n(531525);
 let d = (0, a.D)(() => ({
@@ -16,9 +16,9 @@ let d = (0, a.D)(() => ({
 }));
 
 function u() {
-    let e = l.A.useField("query"),
+    let e = r.A.useField("query"),
         t = (0, o.PH)(),
-        n = i.useRef(new r.A((0, o.NI)(t))),
+        n = i.useRef(new l.A((0, o.NI)(t))),
         a = i.useCallback(async e => {
             let t = await n.current.search(e.trim());
             d.setState({
@@ -29,7 +29,7 @@ function u() {
     i.useEffect(() => {
         "" === e || e.length < 2 ? d.resetState() : a(e)
     }, [e, a]), (0, s.Ay)(() => () => {
-        d.resetState(), l.A.setState({
+        d.resetState(), r.A.setState({
             query: ""
         })
     });

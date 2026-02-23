@@ -7,8 +7,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(735438),
-    r = n.n(a),
-    l = n(311907),
+    l = n.n(a),
+    r = n(311907),
     o = n(554146),
     c = n(397927),
     d = n(964486),
@@ -53,10 +53,10 @@ var i = n(627968),
 let q = (0, E.Ld)(),
     X = (0, E.Ld)(),
     Q = (0, E.Ld)(),
-    J = r().debounce(e => {
+    J = l().debounce(e => {
         (0, _.HU)(e)
     }, 250),
-    $ = r().debounce(e => {
+    $ = l().debounce(e => {
         (0, O.zU)(e)
     }, 250);
 
@@ -82,13 +82,13 @@ function ee(e) {
             }), t ? (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)(v.x, {
                     setting: H.H.ACCESSIBILITY_CUSTOM_CURSOR,
-                    children: (0, i.jsx)(er, {})
+                    children: (0, i.jsx)(el, {})
                 }), (0, i.jsx)(c.cGx, {})]
             }) : null, (0, i.jsxs)(v.x, {
                 setting: H.H.ACCESSIBILITY_ROLE_STYLE,
                 children: [(0, i.jsx)(eo, {}), (0, i.jsx)(c.cGx, {})]
             }), s && (0, i.jsxs)(i.Fragment, {
-                children: [(0, i.jsx)(el, {}), (0, i.jsx)(c.cGx, {
+                children: [(0, i.jsx)(er, {}), (0, i.jsx)(c.cGx, {
                     gap: 4
                 })]
             }), (0, i.jsxs)(v.x, {
@@ -189,7 +189,7 @@ function et() {
 }
 
 function en() {
-    let e = (0, l.bG)([m.A], () => m.A.isHighContrastModeEnabled);
+    let e = (0, r.bG)([m.A], () => m.A.isHighContrastModeEnabled);
 
     function t(e) {
         (0, _.uh)(e ? m._.HIGH : m._.DEFAULT)
@@ -212,7 +212,7 @@ function en() {
 }
 
 function ei() {
-    let e = (0, l.bG)([m.A], () => m.A.isSwitchIconsEnabled);
+    let e = (0, r.bG)([m.A], () => m.A.isSwitchIconsEnabled);
     return (0, i.jsx)(c.dOG, {
         label: z.intl.string(z.t["S3z+pV"]),
         description: z.intl.string(z.t["3QuI9+"]),
@@ -226,7 +226,7 @@ function es() {
     let {
         saturation: e,
         desaturateUserColors: t
-    } = (0, l.cf)([m.A], () => ({
+    } = (0, r.cf)([m.A], () => ({
         saturation: m.A.saturation,
         desaturateUserColors: m.A.desaturateUserColors
     }));
@@ -258,7 +258,7 @@ function es() {
 }
 
 function ea() {
-    let e = (0, l.bG)([m.A], () => m.A.alwaysShowLinkDecorations);
+    let e = (0, r.bG)([m.A], () => m.A.alwaysShowLinkDecorations);
     return (0, i.jsx)(c.dOG, {
         label: z.intl.string(z.t.OLZFB8),
         description: z.intl.string(z.t["72i5GI"]),
@@ -269,8 +269,8 @@ function ea() {
     })
 }
 
-function er() {
-    let e = (0, l.bG)([m.A], () => m.A.enableCustomCursor ?? !0);
+function el() {
+    let e = (0, r.bG)([m.A], () => m.A.enableCustomCursor ?? !0);
     return (0, i.jsx)(c.dOG, {
         label: z.intl.string(z.t["+Isihb"]),
         description: z.intl.string(z.t.nNZ1Tz),
@@ -279,8 +279,8 @@ function er() {
     })
 }
 
-function el() {
-    let e = (0, l.bG)([L.Ay], () => L.Ay.hdrDynamicRange);
+function er() {
+    let e = (0, r.bG)([L.Ay], () => L.Ay.hdrDynamicRange);
     return (0, i.jsx)(v.x, {
         setting: H.H.ACCESSIBILITY_HDR_DYNAMIC_RANGE,
         children: (0, i.jsx)(c.z6M, {
@@ -305,7 +305,7 @@ function el() {
 }
 
 function eo() {
-    let e = (0, l.bG)([m.A], () => m.A.roleStyle);
+    let e = (0, r.bG)([m.A], () => m.A.roleStyle);
     return (0, i.jsx)(c.z6M, {
         label: z.intl.string(z.t.uSOPWm),
         description: z.intl.string(z.t["86hjzQ"]),
@@ -327,7 +327,7 @@ function eo() {
 }
 
 function ec() {
-    let e = (0, l.bG)([m.A], () => m.A.displayNameStylesEnabled),
+    let e = (0, r.bG)([m.A], () => m.A.displayNameStylesEnabled),
         {
             analyticsLocations: t
         } = (0, x.Ay)();
@@ -350,7 +350,7 @@ function ec() {
 }
 
 function ed() {
-    let e = (0, l.bG)([m.A], () => m.A.syncProfileThemeWithUserTheme);
+    let e = (0, r.bG)([m.A], () => m.A.syncProfileThemeWithUserTheme);
     return (0, i.jsx)(c.nVY, {
         label: z.intl.string(z.t.BT8Bmp),
         children: (0, i.jsx)(v.x, {
@@ -372,7 +372,7 @@ function ed() {
 }
 
 function eu() {
-    let [e] = (0, l.yK)([m.A], () => [m.A.syncForcedColors, m.A.systemForcedColors]), [t, n] = s.useState(e);
+    let [e] = (0, r.yK)([m.A], () => [m.A.syncForcedColors, m.A.systemForcedColors]), [t, n] = s.useState(e);
     s.useEffect(() => {
         n(e)
     }, [e]);
@@ -380,7 +380,7 @@ function eu() {
     s.useEffect(() => {
         null != a.current && (clearTimeout(a.current), a.current = null), t !== e && (a.current = setTimeout(() => (0, _.D3)(t), 150))
     }, [t, e]);
-    let r = z.intl.format(z.t.GwEVE2, {
+    let l = z.intl.format(z.t.GwEVE2, {
         learnMoreLink: P.A.getArticleURL(B.MVz.FORCED_COLORS)
     });
     return (0, i.jsxs)(c.nVY, {
@@ -392,7 +392,7 @@ function eu() {
             setting: H.H.ACCESSIBILITY_CONTRAST_SYNC_FORCED_COLORS,
             children: (0, i.jsx)(c.dOG, {
                 label: z.intl.string(z.t.cguiec),
-                description: r,
+                description: l,
                 checked: t,
                 onChange: n
             })
@@ -406,10 +406,10 @@ function e_() {
         {
             useReducedMotion: n,
             rawPrefersReducedMotion: a,
-            systemPrefersReducedMotion: r,
+            systemPrefersReducedMotion: l,
             gifAutoPlayOverrideReason: o,
             animateEmojiOverrideReason: d
-        } = (0, l.cf)([m.A, M.A], () => ({
+        } = (0, r.cf)([m.A, M.A], () => ({
             systemPrefersReducedMotion: m.A.systemPrefersReducedMotion,
             rawPrefersReducedMotion: m.A.rawPrefersReducedMotion,
             useReducedMotion: m.A.useReducedMotion,
@@ -417,8 +417,8 @@ function e_() {
             animateEmojiOverrideReason: M.A.getAppliedOverrideReasonKey("animateEmoji")
         })),
         u = s.useCallback(e => {
-            (0, _.qz)(e ? "auto" : r)
-        }, [r]),
+            (0, _.qz)(e ? "auto" : l)
+        }, [l]),
         A = s.useCallback(e => {
             (0, _.qz)(e ? "reduce" : "no-preference")
         }, []);
@@ -467,7 +467,7 @@ function e_() {
 
 function em() {
     let e = D.S0.useSetting(),
-        t = (0, l.bG)([M.A], () => M.A.getAppliedOverrideReasonKey("animateStickers")),
+        t = (0, r.bG)([M.A], () => M.A.getAppliedOverrideReasonKey("animateStickers")),
         n = s.useCallback(e => {
             D.S0.updateSetting(e)
         }, []);
@@ -491,7 +491,7 @@ function em() {
 }
 
 function eA() {
-    let e = (0, l.bG)([m.A], () => m.A.isSubmitButtonEnabled),
+    let e = (0, r.bG)([m.A], () => m.A.isSubmitButtonEnabled),
         t = D.D_.useSetting(),
         n = s.useRef(null);
     return (0, U.A)(n, w.Yu.LEGACY_CHAT_INPUT), (0, i.jsx)("div", {
@@ -526,7 +526,7 @@ function eA() {
 }
 
 function eg() {
-    let e = (0, l.bG)([R.A], () => R.A.speechRate);
+    let e = (0, r.bG)([R.A], () => R.A.speechRate);
     return (0, i.jsxs)(c.BJc, {
         gap: 16,
         children: [(0, i.jsx)(c.Apm, {

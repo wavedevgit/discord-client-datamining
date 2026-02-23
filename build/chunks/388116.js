@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(503698),
-    r = n.n(a),
-    l = n(397927),
+    l = n.n(a),
+    r = n(397927),
     o = n(793574),
     c = n(688810),
     d = n(607470),
@@ -35,8 +35,8 @@ let C = s.forwardRef((e, t) => {
         value: I,
         children: (0, i.jsxs)("div", {
             ref: t,
-            className: r()(h.kL, n),
-            children: [(0, i.jsx)(l.Heading, {
+            className: l()(h.kL, n),
+            children: [(0, i.jsx)(r.Heading, {
                 className: h.RH,
                 variant: "display-md",
                 color: "text-strong",

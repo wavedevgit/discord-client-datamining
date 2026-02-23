@@ -46,8 +46,8 @@ var i = n(627968),
     Y = n(890687),
     W = n(590202),
     q = n(885459),
-    z = n(545986),
-    K = n(419818),
+    K = n(545986),
+    z = n(419818),
     $ = n(203879),
     Q = n(409389),
     X = n(881172),
@@ -206,7 +206,7 @@ let eI = function(e) {
     let {
         onScroll: U,
         scrollPosition: H
-    } = (0, S.G)(), q = K.A.getState().getUtmCurrentContext(), $ = (0, Z.W)(e => e.registerAssetLoad), Q = r.useRef(q);
+    } = (0, S.G)(), q = z.A.getState().getUtmCurrentContext(), $ = (0, Z.W)(e => e.registerAssetLoad), Q = r.useRef(q);
     r.useEffect(() => {
         Q.current = q
     }), r.useEffect(() => {
@@ -291,7 +291,7 @@ let eI = function(e) {
         t && (0, T.Dr)(u.M.QUEST_HOME_ENTRYPOINT_ONBOARDING)
     }, [t]);
     let eh = r.useCallback(() => {
-            (0, z.navigateToQuestHome)({
+            (0, K.navigateToQuestHome)({
                 fromContent: V.uF.QUEST_HOME_MOVE_CALLOUT_DISCOVER
             }), w.default.track(er.HAw.QUEST_CONTENT_CLICKED, {
                 cta_name: W.Cy.VIEW_QUESTS,

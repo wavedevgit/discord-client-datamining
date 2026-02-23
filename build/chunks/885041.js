@@ -46,8 +46,8 @@ var i = n(627968),
     Y = n(746094),
     W = n(257402),
     q = n(216954),
-    z = n(735831),
-    K = n(913953),
+    K = n(735831),
+    z = n(913953),
     $ = n(142120),
     Q = n(507263),
     X = n(998345),
@@ -100,8 +100,8 @@ var i = n(627968),
     eY = n(32294),
     eW = n(639823),
     eq = n(961350),
-    ez = n(761640),
-    eK = n(734057),
+    eK = n(761640),
+    ez = n(734057),
     e$ = n(650048),
     eQ = n(71393),
     eX = n(189081),
@@ -211,7 +211,7 @@ let ti = (0, p.z)(e => {
             });
             if (e) {
                 let e = tu(t);
-                return null == e || (e.params.guildId === e4.ME || null != eQ.A.getGuild(e.params.guildId)) && null != eK.A.getChannel(e.params.channelId) ? (0, i.jsx)(a.rd, {
+                return null == e || (e.params.guildId === e4.ME || null != eQ.A.getGuild(e.params.guildId)) && null != ez.A.getChannel(e.params.channelId) ? (0, i.jsx)(a.rd, {
                     to: t
                 }) : (0, i.jsx)(a.rd, {
                     to: r
@@ -511,13 +511,13 @@ function tA(e) {
     let {
         location: r
     } = (0, ev.JK)();
-    r.pathname === i && (null == eK.A.getChannel(t) ? (0, ev.bG)(e4.BVt.CHANNEL(n)) : (0, ev.bG)(i))
+    r.pathname === i && (null == ez.A.getChannel(t) ? (0, ev.bG)(e4.BVt.CHANNEL(n)) : (0, ev.bG)(i))
 }
 class th extends r.PureComponent {
     historyUnlisten = () => {};
     rewriterUnlisten = () => {};
     componentDidMount() {
-        e2.Ay.setZoomFactor(g.A.zoom), eb.A.init(), O.A.initialize(), eg.A.initialize(), W.A.initialize(), eW.A.initialize(), q.A.initialize(), ef.A.initialize(), G.A.initialize(), ea.A.initialize(), E.A.init(), K.A.init(), z.A.init(), eu.A.initialize(), S.A.initialize(), B.A.initialize(), eC.A.initialize(), T.Ay.initialize(), H.Ay.initialize(), eY.A.initialize(), ei.Ay.initialize(), ep.A.initialize(), C.A.initialize(), er.A.init(), P.A.init(), e6.A.init(), f.A.initialize(), ew.A.init(), e1.A.init(), ek.A.init(), eP.A.initialize(), ej.A.initialize(), eG.A.initialize(), eB.A.init(), V.A.initialize(), I.A.initialize(), eR.A.initialize(), e_.A.initialize(), eh.A.initialize(), em.A.initialize(), j.A.initialize(), D.A.initialize(), Y.A.initialize(), el.A.initialize(), es.A.initialize(), eT.A.initialize(), eE.A.initialize(), U.A.initialize(), R.A.initialize(), x.A.initialize(), this.rewriterUnlisten = eN.A.addRouteRewriter(this.ensureChannelMatchesGuild), this.historyUnlisten = eN.A.addRouteChangeListener(this.handleHistoryChange)
+        e2.Ay.setZoomFactor(g.A.zoom), eb.A.init(), O.A.initialize(), eg.A.initialize(), W.A.initialize(), eW.A.initialize(), q.A.initialize(), ef.A.initialize(), G.A.initialize(), ea.A.initialize(), E.A.init(), z.A.init(), K.A.init(), eu.A.initialize(), S.A.initialize(), B.A.initialize(), eC.A.initialize(), T.Ay.initialize(), H.Ay.initialize(), eY.A.initialize(), ei.Ay.initialize(), ep.A.initialize(), C.A.initialize(), er.A.init(), P.A.init(), e6.A.init(), f.A.initialize(), ew.A.init(), e1.A.init(), ek.A.init(), eP.A.initialize(), ej.A.initialize(), eG.A.initialize(), eB.A.init(), V.A.initialize(), I.A.initialize(), eR.A.initialize(), e_.A.initialize(), eh.A.initialize(), em.A.initialize(), j.A.initialize(), D.A.initialize(), Y.A.initialize(), el.A.initialize(), es.A.initialize(), eT.A.initialize(), eE.A.initialize(), U.A.initialize(), R.A.initialize(), x.A.initialize(), this.rewriterUnlisten = eN.A.addRouteRewriter(this.ensureChannelMatchesGuild), this.historyUnlisten = eN.A.addRouteChangeListener(this.handleHistoryChange)
     }
     componentWillUnmount() {
         eb.A.terminate(), eW.A.terminate(), ef.A.terminate(), eg.A.terminate(), O.A.terminate(), T.Ay.terminate(), H.Ay.terminate(), eY.A.terminate(), C.A.terminate(), eC.A.terminate(), ep.A.terminate(), eG.A.terminate(), f.A.terminate(), V.A.terminate(), es.A.terminate(), I.A.terminate(), eT.A.terminate(), eR.A.terminate(), e_.A.terminate(), eh.A.terminate(), em.A.terminate(), j.A.terminate(), D.A.terminate(), eE.A.terminate(), U.A.terminate(), F.A.terminate(), R.A.terminate(), x.A.terminate(), Y.A.terminate(), el.A.terminate(), this.historyUnlisten(), this.rewriterUnlisten()
@@ -544,7 +544,7 @@ class th extends r.PureComponent {
             if (o && _ && A.A.selectGuild(i), o && d) {
                 let n = eZ.A.getChannelId(u),
                     o = n !== r,
-                    d = null != ez.Ay.getGuildSidebarState(i);
+                    d = null != eK.Ay.getGuildSidebarState(i);
                 if (!tn || _ || o || null != a) {
                     tn = !0, h.default.selectChannel({
                         guildId: i,
@@ -556,8 +556,8 @@ class th extends r.PureComponent {
                     } = (0, l.parse)(t);
                     null != e && eD.Ay.setSelectedSummary(r, e)
                 }
-                if (d && o && null != r && null != ez.Ay.getCurrentSidebarChannelId(r) && eO.A.closeChannelSidebar(r), null != s && c) {
-                    let e = ez.Ay.getCurrentSidebarChannelId(n),
+                if (d && o && null != r && null != eK.Ay.getCurrentSidebarChannelId(r) && eO.A.closeChannelSidebar(r), null != s && c) {
+                    let e = eK.Ay.getCurrentSidebarChannelId(n),
                         t = e !== s;
                     if (null != r && null != s && t)
                         if (d)(0, ev.bG)(e4.BVt.CHANNEL(i, s, a));
@@ -599,7 +599,7 @@ class th extends r.PureComponent {
             threadId: l
         } = td(n), a = (0, eS.nn)(i) && i !== e4.ME && i !== e4.YYv;
         if (null != r && (0, eS.ts)(r) && !(0, e8.jq)(r) && a) {
-            let n = eK.A.getChannel(r);
+            let n = ez.A.getChannel(r);
             if (null == n) eM.A.loadThread(r).then(() => tA({
                 channelId: r,
                 guildId: i,
@@ -611,7 +611,7 @@ class th extends r.PureComponent {
             };
             if (null != l) {
                 if (!((0, eS.ts)(l) && !(0, e8.jq)(r))) return null;
-                let n = eK.A.getChannel(l);
+                let n = ez.A.getChannel(l);
                 if (null == n) eM.A.loadThread(l).then(() => tA({
                     channelId: l,
                     guildId: i,

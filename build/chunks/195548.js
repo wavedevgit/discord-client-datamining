@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(397927),
     a = n(290595),
-    r = n(964486),
-    l = n(332921),
+    l = n(964486),
+    r = n(332921),
     o = n(814278),
     c = n(890164),
     d = n(104954),
@@ -62,13 +62,13 @@ function O() {
         webSetting: f.H.PRIVACY_AND_SAFETY_DISCORD_DATA_USAGE_CATEGORY,
         children: [(0, i.jsx)(x.A, {}), (0, i.jsx)(h.A, {}), (0, i.jsx)(g.A, {}), (0, i.jsx)(A.A, {}), (0, i.jsx)(E.h, {
             setting: f.H.PRIVACY_DATA_CLIPS,
-            children: (0, i.jsx)(l.A, {})
+            children: (0, i.jsx)(r.A, {})
         }), (0, i.jsx)(m.z, {})]
     })
 }
 
 function R() {
-    return (0, r.Ay)(() => {
+    return (0, l.Ay)(() => {
         (0, a.Q)(), (0, d.s)()
     }), (0, i.jsx)(u.R, {
         header: N.intl.string(N.t.OAuOHD),

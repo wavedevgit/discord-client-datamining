@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(311907),
     a = n(397927),
-    r = n(775602),
-    l = n(235986),
+    l = n(775602),
+    r = n(235986),
     o = n(899343),
     c = n(796012),
     d = n(752472);
@@ -24,10 +24,10 @@ function u(e) {
         purchaseScene: c.V1.Scenes.STARS,
         errorScene: c.V1.Scenes.ERROR,
         successScene: c.V1.Scenes.SUCCESS
-    }), A = (0, s.bG)([r.A], () => r.A.useReducedMotion);
+    }), A = (0, s.bG)([l.A], () => l.A.useReducedMotion);
     return (0, i.jsxs)(a.rQ0, {
         "data-migration-pending": !0,
-        align: l.A.Align.START,
+        align: r.A.Align.START,
         className: d.wx,
         separator: !1,
         children: [(0, i.jsx)(c.V1, {

@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(311907),
     a = n(195043),
-    r = n(628965),
-    l = n(740625),
+    l = n(628965),
+    r = n(740625),
     o = n(524738),
     c = n(378631),
     d = n(962789),
@@ -50,7 +50,7 @@ let v = () => (0, i.jsxs)(g.A, {
     });
 
 function P() {
-    let e = (0, s.bG)([r.A], () => r.A.getSubsection()),
+    let e = (0, s.bG)([l.A], () => l.A.getSubsection()),
         t = [{
             title: j.intl.string(j.t["/7xJCF"]),
             component: y,
@@ -60,7 +60,7 @@ function P() {
             component: d.A,
             setting: f.H.CONTENT_SOCIAL_CONNECTED_GAMES
         }];
-    return (0, i.jsx)(l.R, {
+    return (0, i.jsx)(r.R, {
         header: j.intl.string(j.t["+o1pDZ"]),
         notice: (0, i.jsx)(I.A, {
             page: I.R.CONTENT_AND_SOCIAL

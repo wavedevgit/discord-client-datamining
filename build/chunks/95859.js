@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(503698),
     a = n.n(s),
-    r = n(158954),
-    l = n(998304),
+    l = n(158954),
+    r = n(998304),
     o = n(764231),
     c = n(112848),
     d = n(149757),
@@ -24,7 +24,7 @@ let m = () => {
         tenureReqNumMonths: A,
         hasWideArt: g
     } = e, h = u.intl.string(m), x = (0, o.T)(s, A), p = {
-        "--custom-badge-glow-color": (0, l.KU)(e.glowColor, .5)
+        "--custom-badge-glow-color": (0, r.KU)(e.glowColor, .5)
     };
     return (0, i.jsxs)("div", {
         className: _.kL,
@@ -38,15 +38,15 @@ let m = () => {
             })
         }), (0, i.jsxs)("div", {
             className: _._u,
-            children: [(0, i.jsx)(r.EYj, {
+            children: [(0, i.jsx)(l.EYj, {
                 variant: "text-lg/semibold",
                 className: _.Vv,
                 children: h
-            }), (0, i.jsx)(r.EYj, {
+            }), (0, i.jsx)(l.EYj, {
                 variant: "text-md/normal",
                 className: _.Vv,
                 children: x
-            }), (0, i.jsx)(r.EYj, {
+            }), (0, i.jsx)(l.EYj, {
                 variant: "text-xs/normal",
                 children: e?.status === c.Wo.EARNED ? u.intl.format(u.t.Hu4jfi, {
                     date: t ?? new Date

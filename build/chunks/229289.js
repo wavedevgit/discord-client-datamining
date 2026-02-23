@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(417597),
     a = n(775602),
-    r = n(608416),
-    l = n(307973),
+    l = n(608416),
+    r = n(307973),
     o = n(369877),
     c = n(180894);
 let d = e => {
@@ -16,21 +16,21 @@ let d = e => {
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
             className: o.BI,
-            children: (0, i.jsx)(r.Ay, {
+            children: (0, i.jsx)(l.Ay, {
                 scaleAnimationData: {
                     startScale: .9,
                     endScale: 1,
-                    duration: r.$G
+                    duration: l.$G
                 },
                 yAxisAnimationData: {
                     range: 20,
-                    duration: r.Mp,
-                    path: r.aV.SINE
+                    duration: l.Mp,
+                    path: l.aV.SINE
                 },
                 animateXAxisWiggle: !0,
                 isMotionReduced: n,
                 parallaxAnimationData: {
-                    pathDirection: r.MN.UP,
+                    pathDirection: l.MN.UP,
                     range: 125,
                     containerVisibilityPercentage: t,
                     changeOpacity: !0
@@ -42,7 +42,7 @@ let d = e => {
                     className: o.Q
                 })
             })
-        }), (0, i.jsx)(l.A, {
+        }), (0, i.jsx)(r.A, {
             isMotionReduced: n,
             containerVisibilityPercentage: t,
             hammerContainerClassName: o.Gj,

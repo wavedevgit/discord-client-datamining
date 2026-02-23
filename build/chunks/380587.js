@@ -9,8 +9,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(687123),
-    r = n(397927),
-    l = n(935649),
+    l = n(397927),
+    r = n(935649),
     o = n(847599),
     c = n(36149),
     d = n(444802),
@@ -39,7 +39,7 @@ function T() {
     return (0, i.jsx)(m.e, {
         label: E.t.OX4ybh,
         labelHook: () => {
-            l.A.showAgeVerificationGetStartedModal({
+            r.A.showAgeVerificationGetStartedModal({
                 entryPoint: o.q1.CONTENT_AND_SOCIAL_NOTICE
             })
         },
@@ -62,7 +62,7 @@ function S() {
             noticeType: "info",
             trackView: a,
             useText: () => E.intl.format(E.t.EUo0yj, {
-                hook: (e, t) => (0, i.jsx)(r.MzZ, {
+                hook: (e, t) => (0, i.jsx)(l.MzZ, {
                     onClick: n,
                     children: e
                 }, t)
@@ -77,7 +77,7 @@ function I() {
         n = (0, c.b8)(),
         a = (e || t) && !n,
         d = s.useCallback(() => {
-            l.A.showAgeVerificationGetStartedModal({
+            r.A.showAgeVerificationGetStartedModal({
                 entryPoint: o.q1.CONTENT_AND_SOCIAL_NOTICE
             }), (0, _.N)(p.YA.SENSITIVE_CONTENT_FILTER_AGE_VERIFICATION_NOTICE, p.YX.LEARN_MORE)
         }, []),
@@ -90,7 +90,7 @@ function I() {
             noticeType: "info",
             trackView: m,
             useText: () => E.intl.format(E.t.OX4ybh, {
-                hook: (e, t) => (0, i.jsx)(r.MzZ, {
+                hook: (e, t) => (0, i.jsx)(l.MzZ, {
                     onClick: d,
                     children: e
                 }, t)
@@ -108,13 +108,13 @@ function f() {
             window.open(h.A.getArticleURL(e), "_blank"), (0, _.N)(p.YA.AGE_CONFIRMATION_NOTICE, p.YX.LEARN_MORE)
         }, [e]),
         n = s.useCallback(() => {
-            l.A.showAgeVerificationGetStartedModal({
+            r.A.showAgeVerificationGetStartedModal({
                 entryPoint: o.q1.CONTENT_AND_SOCIAL_NOTICE
             }), (0, _.N)(p.YA.AGE_CONFIRMATION_NOTICE, p.YX.CONFIRM_AGE)
         }, []);
-    return (0, i.jsx)(r.po8, {
-        messageType: r.YCn.INFO,
-        action: (0, i.jsx)(r.QWc, {
+    return (0, i.jsx)(l.po8, {
+        messageType: l.YCn.INFO,
+        action: (0, i.jsx)(l.QWc, {
             variant: "secondary",
             size: "sm",
             textVariant: "text-sm/medium",
@@ -122,7 +122,7 @@ function f() {
             onClick: n
         }),
         children: E.intl.format(E.t.mFgsfg, {
-            hook: (e, n) => (0, i.jsx)(r.MzZ, {
+            hook: (e, n) => (0, i.jsx)(l.MzZ, {
                 onClick: t,
                 children: e
             }, n)

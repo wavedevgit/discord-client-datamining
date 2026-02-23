@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(397927),
-    r = n(641324),
-    l = n(46373),
+    l = n(641324),
+    r = n(46373),
     o = n(78837),
     c = n(985018),
     d = n(115686);
@@ -33,12 +33,12 @@ function u(e) {
     return (0, i.jsxs)(a.BJc, {
         gap: 8,
         children: [x.map((e, t) => (0, i.jsxs)(s.Fragment, {
-            children: [(0, i.jsx)(r.A, {
+            children: [(0, i.jsx)(l.A, {
                 node: e
-            }), t !== x.length - 1 && (0, i.jsx)(l.A, {})]
+            }), t !== x.length - 1 && (0, i.jsx)(r.A, {})]
         }, e.key)), p.length > 0 && (0, i.jsxs)("div", {
             className: d.CT,
-            children: [(0, i.jsx)(l.A, {
+            children: [(0, i.jsx)(r.A, {
                 className: d.mn
             }), (0, i.jsx)(o.f, {
                 title: E,
@@ -48,9 +48,9 @@ function u(e) {
                 children: (0, i.jsx)(a.BJc, {
                     gap: 8,
                     children: p.map((e, t) => (0, i.jsxs)(s.Fragment, {
-                        children: [(0, i.jsx)(r.A, {
+                        children: [(0, i.jsx)(l.A, {
                             node: e
-                        }), t !== p.length - 1 && (0, i.jsx)(l.A, {})]
+                        }), t !== p.length - 1 && (0, i.jsx)(r.A, {})]
                     }, e.key))
                 })
             })]

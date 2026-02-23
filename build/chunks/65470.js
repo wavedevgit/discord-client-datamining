@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(732955),
     a = n(397927),
-    r = n(194509),
-    l = n(783420);
+    l = n(194509),
+    r = n(783420);
 let o = e => {
     let {
         subscriptionTier: t,
@@ -17,7 +17,7 @@ let o = e => {
         buttonTextOverride: d,
         ...u
     } = e;
-    return (0, i.jsx)(l.A, {
+    return (0, i.jsx)(r.A, {
         isGift: !0,
         subscriptionTier: t,
         premiumModalAnalyticsLocation: n,
@@ -26,12 +26,12 @@ let o = e => {
         children: e => {
             let {
                 onClick: n
-            } = e, l = d ?? (0, r.U)(t);
+            } = e, r = d ?? (0, l.U)(t);
             return (0, i.jsx)(s.$nd, {
                 onClick: n,
                 icon: a.okO,
                 ...u,
-                text: l
+                text: r
             })
         }
     })

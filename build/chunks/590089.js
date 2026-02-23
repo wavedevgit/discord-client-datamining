@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(503698),
     a = n.n(s),
-    r = n(158954),
-    l = n(397927),
+    l = n(158954),
+    r = n(397927),
     o = n(411809);
 
 function c(e) {
@@ -20,7 +20,7 @@ function c(e) {
         onClick: u,
         style: _
     } = e;
-    return (0, i.jsxs)(l.DUT, {
+    return (0, i.jsxs)(r.DUT, {
         className: a()(o.EA, {
             [o.vk]: null != u
         }),
@@ -34,12 +34,12 @@ function c(e) {
             className: o.jw,
             children: [(0, i.jsx)("div", {
                 className: o.eg,
-                children: (0, i.jsx)(r.DZT, {
+                children: (0, i.jsx)(l.DZT, {
                     variant: "heading-md/medium",
                     color: "text-strong",
                     children: c
                 })
-            }), null != d && (0, i.jsx)(r.EYj, {
+            }), null != d && (0, i.jsx)(l.EYj, {
                 variant: "text-sm/normal",
                 color: "text-subtle",
                 children: d

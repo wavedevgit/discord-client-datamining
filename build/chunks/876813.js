@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(503698),
-    r = n.n(a),
-    l = n(573435),
+    l = n.n(a),
+    r = n(573435),
     o = n(933297),
     c = n(535717);
 
@@ -29,11 +29,11 @@ function d(e) {
     switch (t.shape) {
         case o.NF.SQUIRCLE:
             return (0, i.jsx)("div", {
-                className: r()(c.Gt, a),
+                className: l()(c.Gt, a),
                 style: u,
-                children: (0, i.jsx)(l.Ay, {
+                children: (0, i.jsx)(r.Ay, {
                     className: c.uk,
-                    mask: l.Ay.Masks.SQUIRCLE,
+                    mask: r.Ay.Masks.SQUIRCLE,
                     width: n,
                     height: n,
                     children: (0, i.jsx)("div", {
@@ -47,7 +47,7 @@ function d(e) {
             });
         case o.NF.ROUNDED:
             return (0, i.jsx)("div", {
-                className: r()(c.Gt, a, d),
+                className: l()(c.Gt, a, d),
                 style: u,
                 children: (0, i.jsx)("div", {
                     className: c.ZY,

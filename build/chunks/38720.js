@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(397927),
     a = n(773669),
-    r = n(927578),
-    l = n(580630),
+    l = n(927578),
+    r = n(580630),
     o = n(788868),
     c = n(652215),
     d = n(985018),
@@ -67,10 +67,10 @@ let m = e => {
                         text: d.intl.string(d.t["09yRK3"])
                     }),
                     column1: (0, i.jsx)(A, {
-                        text: r.Ay.formatPriceString(e, o.WT.MONTH)
+                        text: l.Ay.formatPriceString(e, o.WT.MONTH)
                     }),
                     column2: (0, i.jsx)(A, {
-                        text: n ? h : r.Ay.formatPriceString(t, o.WT.MONTH)
+                        text: n ? h : l.Ay.formatPriceString(t, o.WT.MONTH)
                     }),
                     withBottomBorder: !0
                 },
@@ -123,10 +123,10 @@ let m = e => {
                         text: d.intl.string(d.t["ufhQC+"])
                     }),
                     column1: (0, i.jsx)(A, {
-                        text: (0, r.EJ)(o.PremiumTypes.TIER_0)
+                        text: (0, l.EJ)(o.PremiumTypes.TIER_0)
                     }),
                     column2: (0, i.jsx)(A, {
-                        text: (0, r.EJ)(o.PremiumTypes.TIER_2)
+                        text: (0, l.EJ)(o.PremiumTypes.TIER_2)
                     })
                 },
                 6: {
@@ -144,7 +144,7 @@ let m = e => {
                     label: (0, i.jsx)(m, {
                         text: d.intl.formatToPlainString(d.t.nyhDpw, {
                             numBoosts: o.M4,
-                            percentageOff: (0, l.l9)(a.default.locale, o.oX / 100)
+                            percentageOff: (0, r.l9)(a.default.locale, o.oX / 100)
                         })
                     }),
                     column1: (0, i.jsx)(g, {

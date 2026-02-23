@@ -5,8 +5,8 @@ n.d(t, {
     NI: () => es,
     Tb: () => en
 });
-var i, s, a, r = n(627968),
-    l = n(64700),
+var i, s, a, l = n(627968),
+    r = n(64700),
     o = n(192308),
     c = n(793574),
     d = n(688810),
@@ -64,7 +64,7 @@ let ea = () => {
     } = (0, d.Ay)(c.A.PREMIUM_MARKETING_BENTO_BOX), t = (0, m.A)({
         scrollPosition: I._F.TRY_IT_OUT,
         analyticsLocations: e
-    }), i = (0, C.O9)(), s = (0, l.useCallback)(() => {
+    }), i = (0, C.O9)(), s = (0, r.useCallback)(() => {
         (0, x.openUserSettings)(h.X.PROFILE_PANEL, {
             section: S.nc_.PROFILE_CUSTOMIZATION,
             analyticsLocations: e
@@ -128,7 +128,7 @@ let ea = () => {
         }),
         previewImage: ei.referralProgram.thumbnail,
         videoUrl: ei.referralProgram.assetUrl
-    }, er = {
+    }, el = {
         name: "customThemes",
         title: b.intl.string(j.default.XokIHM),
         description: b.intl.string(j.default["7esQMC"]),
@@ -138,7 +138,7 @@ let ea = () => {
             (0, u.nf)(u.HP.CUSTOM_THEME)
         },
         videoUrl: ei.customThemes.assetUrl
-    }, el = {
+    }, er = {
         name: "displayNameStyles",
         title: b.intl.string(v.default.ABtBDQ),
         description: b.intl.string(v.default.MFNXZh),
@@ -164,7 +164,7 @@ let ea = () => {
                 let {
                     default: e
                 } = await n.e("69595").then(n.bind(n, 526710));
-                return t => (0, r.jsx)(e, {
+                return t => (0, l.jsx)(e, {
                     ...t
                 })
             })
@@ -234,8 +234,8 @@ let ea = () => {
             [eA],
             [es, ea]
         ] : [
-            [el],
-            [er, ea]
+            [er],
+            [el, ea]
         ],
         bestOfBoxes: [
             [ec],

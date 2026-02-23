@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(503698),
-    r = n.n(a),
-    l = n(475539),
+    l = n.n(a),
+    r = n(475539),
     o = n(397927),
     c = n(180022),
     d = n(915693);
@@ -41,7 +41,7 @@ let u = e => {
                 onClick: x ? () => {
                     m(e => 0 === e ? h - A : e - 1)
                 } : void 0,
-                className: r()({
+                className: l()({
                     [d.v5]: x,
                     [d.$T]: !x
                 }),
@@ -55,7 +55,7 @@ let u = e => {
                     let {
                         x: s
                     } = e;
-                    return (0, i.jsx)(l.animated.div, {
+                    return (0, i.jsx)(r.animated.div, {
                         className: d.Nr,
                         style: {
                             transform: s?.to(e => `translate3d(${e}%,0,0)`)

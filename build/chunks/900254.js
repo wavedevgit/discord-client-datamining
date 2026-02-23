@@ -6,17 +6,17 @@ var i = n(627968);
 n(64700);
 var s = n(397927),
     a = n(631670),
-    r = n(253932),
-    l = n(985018);
+    l = n(253932),
+    r = n(985018);
 
 function o(e) {
     let {
         legacyUsername: t,
         pendingLegacyUsernameDisabled: n
-    } = e, o = r.m$.useSetting(), c = void 0 !== n ? n : o;
+    } = e, o = l.m$.useSetting(), c = void 0 !== n ? n : o;
     return (0, i.jsx)(s.dOG, {
-        label: l.intl.string(l.t["3cWDuO"]),
-        description: c ? null : l.intl.formatToPlainString(l.t.aYhclf, {
+        label: r.intl.string(r.t["3cWDuO"]),
+        description: c ? null : r.intl.formatToPlainString(r.t.aYhclf, {
             username: t
         }),
         checked: !c,

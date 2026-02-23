@@ -81,13 +81,13 @@ function j(e) {
     let Y = V.width / Math.max(V.height, 1) < O.B5,
         W = 0,
         q = 0,
-        z = (0, h.A)(n?.id);
-    if (!z) {
+        K = (0, h.A)(n?.id);
+    if (!K) {
         let e = V.width,
             t = V.height;
         Y ? ((t = V.width / O.B5) > V.height && (e = (t = V.height) * O.B5), q = (V.height - t) / 2) : ((e = Math.min(V.height * O.B5, V.width)) > V.width && (t = (e = V.width) / O.B5), W = (V.width - e) / 2)
     }
-    let K = O.E8.NO_CHAT,
+    let z = O.E8.NO_CHAT,
         $ = (0, m.G)();
     if (null == n) return null;
     let Q = (w ?? b.da6) + U,
@@ -95,7 +95,7 @@ function j(e) {
     return (0, i.jsx)(c.NPJ, {
         theme: b.NJ8.DARK,
         children: e => (0, i.jsxs)("div", {
-            className: a()(R.iE, P[K], e),
+            className: a()(R.iE, P[z], e),
             ref: G,
             style: {
                 right: M && !Number.isNaN(Q) ? Q : 0
@@ -104,7 +104,7 @@ function j(e) {
                 className: R.lq,
                 children: (0, i.jsx)("div", {
                     className: a()(R.ht, {
-                        [R.kK]: z
+                        [R.kK]: K
                     }),
                     style: {
                         paddingLeft: W,

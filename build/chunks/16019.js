@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(503698),
-    r = n.n(a),
-    l = n(877624),
+    l = n.n(a),
+    r = n(877624),
     o = n(311907),
     c = n(397927),
     d = n(775602),
@@ -38,12 +38,12 @@ let O = s.memo(s.forwardRef((e, t) => {
     } = (0, _.Ay)(u.A.PREMIUM_MARKETING_HERO_CTA), R = (0, T.N)(), y = (0, g.A)(), P = null != y, L = (0, o.bG)([d.A], () => d.A.useReducedMotion), {
         visibilityPercentageRef: D,
         visibilityPercentage: G
-    } = (0, f.U)(!L), M = (0, o.bG)([m.A], () => m.A.affinities), U = !P && M.length > 0, k = (0, h.c)(l.C.MARKETING_PAGE_BANNER), V = null != k && "marketingPageBanner" === k.properties.properties.oneofKind, w = (0, A.ar)() && !V;
+    } = (0, f.U)(!L), M = (0, o.bG)([m.A], () => m.A.affinities), U = !P && M.length > 0, k = (0, h.c)(r.C.MARKETING_PAGE_BANNER), V = null != k && "marketingPageBanner" === k.properties.properties.oneofKind, w = (0, A.ar)() && !V;
     return (0, i.jsx)(_.f5, {
         value: O,
         children: (0, i.jsx)("div", {
             ref: t,
-            className: r()(v.kL, n),
+            className: l()(v.kL, n),
             "data-testid": "marketing-page-hero-header",
             children: (0, i.jsx)("div", {
                 ref: D,

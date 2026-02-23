@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(503698),
     a = n.n(s),
-    r = n(311907),
-    l = n(397927),
+    l = n(311907),
+    r = n(397927),
     o = n(854627),
     c = n(954571),
     d = n(975571),
@@ -28,13 +28,13 @@ let C = e => {
             eventHandlers: s
         } = (0, o.A)({
             userId: t.id,
-            size: l._3J.SIZE_24
+            size: r._3J.SIZE_24
         });
-        return (0, i.jsx)(l.euF, {
+        return (0, i.jsx)(r.euF, {
             className: p.bj,
             src: n,
             "aria-label": (0, u.mG)(t),
-            size: l._3J.SIZE_24,
+            size: r._3J.SIZE_24,
             ...s
         }, t.id)
     },
@@ -74,14 +74,14 @@ let C = e => {
         let {
             nReferralsSent: t
         } = e;
-        return (0, i.jsx)(l.a3E, {
+        return (0, i.jsx)(r.a3E, {
             percent: 33.3 * t,
             colorOverride: "#53ac66",
             background: p.cq,
             strokeSize: .8,
             ringColorOverrideClassName: p.e0,
             overlayClassName: t === A.Z ? p.ys : void 0,
-            children: (0, i.jsx)(l._V3, {
+            children: (0, i.jsx)(r._V3, {
                 src: E.A,
                 height: 93,
                 width: 93,
@@ -94,7 +94,7 @@ let C = e => {
             className: t
         } = e, {
             referralSentUsers: s
-        } = (0, A.J)(), o = (0, r.bG)([m.A], () => m.A.getRecipientStatus()), u = (0, r.bG)([m.A], () => m.A.getHasEligibleFriends()), E = o.size === A.Z && [...o.values()].every(e => e === _.aK.REDEEMED), C = o.size === A.Z;
+        } = (0, A.J)(), o = (0, l.bG)([m.A], () => m.A.getRecipientStatus()), u = (0, l.bG)([m.A], () => m.A.getHasEligibleFriends()), E = o.size === A.Z && [...o.values()].every(e => e === _.aK.REDEEMED), C = o.size === A.Z;
         return (0, i.jsxs)("div", {
             className: a()(p.kL, t),
             children: [(0, i.jsx)("div", {
@@ -108,11 +108,11 @@ let C = e => {
                     referralSentUsers: s
                 }), (0, i.jsxs)("div", {
                     className: p.n4,
-                    children: [(0, i.jsx)(l.Heading, {
+                    children: [(0, i.jsx)(r.Heading, {
                         variant: "heading-lg/semibold",
                         color: "text-strong",
                         children: x.intl.string(x.t.USo4s7)
-                    }), (0, i.jsx)(l.Text, {
+                    }), (0, i.jsx)(r.Text, {
                         variant: "text-md/medium",
                         color: "text-subtle",
                         children: !1 === u ? x.intl.format(x.t["zWhX/Q"], {
@@ -125,7 +125,7 @@ let C = e => {
                             helpdeskArticle: d.A.getArticleURL(h.MVz.REFERRAL_PROGRAM)
                         })
                     })]
-                }), (0, i.jsx)(l.Button, {
+                }), (0, i.jsx)(r.Button, {
                     variant: "primary",
                     disabled: !1 === u || !0 === C,
                     text: x.intl.string(x.t.Lm2nFc),
@@ -136,7 +136,7 @@ let C = e => {
                         } = e;
                         c.default.track(h.HAw.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
                             location_stack: s
-                        }), (0, l.mMO)(async () => {
+                        }), (0, r.mMO)(async () => {
                             let {
                                 default: e
                             } = await Promise.resolve().then(n.bind(n, 303682));

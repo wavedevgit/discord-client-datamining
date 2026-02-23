@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(503698),
-    r = n.n(a),
-    l = n(397927),
+    l = n.n(a),
+    r = n(397927),
     o = n(985018),
     c = n(997021);
 let d = s.createContext({
@@ -17,12 +17,12 @@ let d = s.createContext({
 function u(e) {
     let {
         children: t
-    } = e, [n, a] = s.useReducer(e => !e, !1), r = s.useMemo(() => ({
+    } = e, [n, a] = s.useReducer(e => !e, !1), l = s.useMemo(() => ({
         isOpen: n,
         toggleOpen: a
     }), [n]);
     return (0, i.jsx)(d.Provider, {
-        value: r,
+        value: l,
         children: t(n)
     })
 }
@@ -33,11 +33,11 @@ u.Toggle = function(e) {
     } = e, {
         isOpen: a,
         toggleOpen: u
-    } = s.useContext(d), _ = a ? l.tN5 : l.abt, m = null != n ? n : a ? o.intl.string(o.t.fgq1gs) : o.intl.string(o.t.XJuakA);
-    return (0, i.jsxs)(l.DUT, {
-        className: r()(c.L, t),
+    } = s.useContext(d), _ = a ? r.tN5 : r.abt, m = null != n ? n : a ? o.intl.string(o.t.fgq1gs) : o.intl.string(o.t.XJuakA);
+    return (0, i.jsxs)(r.DUT, {
+        className: l()(c.L, t),
         onClick: u,
-        children: [(0, i.jsx)(l.Text, {
+        children: [(0, i.jsx)(r.Text, {
             variant: "heading-sm/semibold",
             tag: "div",
             color: "currentColor",

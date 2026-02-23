@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(503698),
-    r = n.n(a),
-    l = n(311907),
+    l = n.n(a),
+    r = n(311907),
     o = n(421380),
     c = n(397927),
     d = n(775602),
@@ -39,11 +39,11 @@ let R = s.forwardRef((e, t) => {
         videoRef: P
     } = e, {
         analyticsLocations: L
-    } = (0, _.Ay)(u.A.PREMIUM_MARKETING_HERO_CTA), D = (0, x.QQ)(), G = (0, h.ar)(), M = (0, l.bG)([g.A], () => g.A.affinities), U = (0, p.A)(), k = null != U, V = R ? o.XD.WHITE : o.XD.BRAND, w = M.length > 0, H = N.intl.string(N.t.YCZldK), B = (0, A.TM)(), Y = (0, l.bG)([d.A], () => d.A.useReducedMotion);
+    } = (0, _.Ay)(u.A.PREMIUM_MARKETING_HERO_CTA), D = (0, x.QQ)(), G = (0, h.ar)(), M = (0, r.bG)([g.A], () => g.A.affinities), U = (0, p.A)(), k = null != U, V = R ? o.XD.WHITE : o.XD.BRAND, w = M.length > 0, H = N.intl.string(N.t.YCZldK), B = (0, A.TM)(), Y = (0, r.bG)([d.A], () => d.A.useReducedMotion);
     return (0, i.jsx)(_.f5, {
         value: L,
         children: (0, i.jsxs)("div", {
-            className: r()(b.kL, b.qY, n),
+            className: l()(b.kL, b.qY, n),
             ref: t,
             "data-testid": "marketing-page-hero-header",
             children: [(0, i.jsx)("div", {
@@ -65,17 +65,17 @@ let R = s.forwardRef((e, t) => {
                             isApplicationHome: !0
                         })
                     }), D ? (0, i.jsx)("div", {
-                        className: r()(b.UD, b.$F, {
+                        className: l()(b.UD, b.$F, {
                             [b.In]: !(w || k)
                         }),
                         children: (0, i.jsx)(E.A, {
-                            className: r()(b.x6, s),
+                            className: l()(b.x6, s),
                             color: V
                         })
                     }) : (0, i.jsx)(I.KN, {
                         subscriptionTier: a,
                         inOfferExperience: G,
-                        containerClassName: r()(b.$F, {
+                        containerClassName: l()(b.$F, {
                             [b.In]: !(w || k)
                         }),
                         buttonClassName: s,

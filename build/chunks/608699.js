@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(607399),
     a = n(732955),
-    r = n(397927),
-    l = n(9113),
+    l = n(397927),
+    r = n(9113),
     o = n(599941),
     c = n(590632),
     d = n(146528),
@@ -18,15 +18,15 @@ let m = e => {
     } = e, n = (0, c.A)(), {
         loading: m
     } = (0, o.eb)(n);
-    return ((0, l.A)(s.Fr ? "role-subscriptions-user-setting" : void 0), m) ? (0, i.jsx)(r.y$y, {}) : 0 === n.length ? null : (0, i.jsxs)("div", {
+    return ((0, r.A)(s.Fr ? "role-subscriptions-user-setting" : void 0), m) ? (0, i.jsx)(l.y$y, {}) : 0 === n.length ? null : (0, i.jsxs)("div", {
         children: [(0, i.jsx)(a.$nd, {
             text: u.intl.string(u.t.hqyhKQ),
-            icon: r.z$m,
+            icon: l.z$m,
             variant: "secondary",
             onClick: t
-        }), (0, i.jsx)(r.hKd, {
+        }), (0, i.jsx)(l.hKd, {
             size: 10
-        }), (0, i.jsx)(r.nVY, {
+        }), (0, i.jsx)(l.nVY, {
             label: u.intl.string(u.t["KzCF/6"]),
             description: u.intl.string(u.t["Y+ucR7"]),
             children: (0, i.jsx)("div", {

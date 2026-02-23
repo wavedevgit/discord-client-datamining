@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(503698),
-    r = n.n(a),
-    l = n(311907),
+    l = n.n(a),
+    r = n(311907),
     o = n(397927),
     c = n(83257),
     d = n(159001),
@@ -32,13 +32,13 @@ var i = n(627968),
 
 function R() {
     let e = (0, A.dk)("ProfileCustomizationSettingsPage"),
-        t = (0, l.bG)([E.A, C.Ay, _.A], () => {
+        t = (0, r.bG)([E.A, C.Ay, _.A], () => {
             let e = _.A.selectedGuildId ?? E.A.getGuildId();
             return null == e || _._.has(e) ? C.Ay.getFlattenedGuildIds().find(e => !_._.has(e)) : e
         }),
-        n = (0, l.bG)([p.A], () => p.A.getGuild(t)),
-        a = (0, l.bG)([_.A], () => _.A.showNotice()),
-        R = (0, l.bG)([T.default], () => T.default.getCurrentUser()),
+        n = (0, r.bG)([p.A], () => p.A.getGuild(t)),
+        a = (0, r.bG)([_.A], () => _.A.showNotice()),
+        R = (0, r.bG)([T.default], () => T.default.getCurrentUser()),
         {
             subsection: y,
             setSubsection: P
@@ -78,7 +78,7 @@ function R() {
                 id: b.Eq.USER_PROFILE,
                 children: v.intl.string(v.t["2p07FR"])
             }, b.Eq.USER_PROFILE) : null, M || e ? (0, i.jsx)(o.VQ0.Item, {
-                className: r()(O.YU, O.HY),
+                className: l()(O.YU, O.HY),
                 "aria-label": v.intl.string(v.t.kPHroX),
                 id: b.Eq.GUILD,
                 children: v.intl.string(v.t.kPHroX)

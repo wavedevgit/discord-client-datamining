@@ -12,9 +12,9 @@ function a(e) {
     } = e, {
         useTitle: n,
         useSubtitle: a
-    } = t, r = n(), l = a?.();
+    } = t, l = n(), r = a?.();
     return (0, i.jsx)(s.U, {
-        title: r,
-        description: l
+        title: l,
+        description: r
     })
 }

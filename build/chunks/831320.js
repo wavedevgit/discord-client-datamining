@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(665260),
-    r = n(171316),
-    l = n(115063),
+    l = n(171316),
+    r = n(115063),
     o = n(253932),
     c = n(871930),
     d = n(578746),
@@ -17,8 +17,8 @@ var i = n(627968),
 
 function g() {
     let e = o.FA.useSetting(),
-        t = s.useMemo(() => (0, l.Lx)(e), [e]),
-        n = (0, r.uM)();
+        t = s.useMemo(() => (0, r.Lx)(e), [e]),
+        n = (0, l.uM)();
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(c.h, {
             setting: u.H.PRIVACY_AND_SAFETY_FRIEND_REQUESTS,

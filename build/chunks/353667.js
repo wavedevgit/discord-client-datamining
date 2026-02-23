@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(503698),
-    r = n.n(a),
-    l = n(311907),
+    l = n.n(a),
+    r = n(311907),
     o = n(73939),
     c = n(397927),
     d = n(974544),
@@ -26,18 +26,18 @@ function C(e) {
         children: n
     } = e, {
         showNotice: a,
-        handleStoreUpdate: r
+        handleStoreUpdate: l
     } = (0, m.L_)(), d = t?.stores;
     s.useEffect(() => {
         if (null != d) {
-            let e = new l.ru(d, () => {
-                r(d)
+            let e = new r.ru(d, () => {
+                l(d)
             });
-            return e.attach("SettingPanelNotice"), r(d), () => {
+            return e.attach("SettingPanelNotice"), l(d), () => {
                 e.detach()
             }
         }
-    }, [d, r]);
+    }, [d, l]);
     let u = s.useMemo(() => {
         if (null == t || !a) return null;
         let {
@@ -61,7 +61,7 @@ function T(e) {
         decoration: t
     } = e, n = t.component;
     return (0, i.jsx)("div", {
-        className: r()(E.oK, t.sticky && E.qf),
+        className: l()(E.oK, t.sticky && E.qf),
         children: (0, i.jsx)(n, {})
     })
 }
@@ -71,8 +71,8 @@ function S(e) {
         scrollerRef: t,
         panelKey: n,
         notice: a,
-        children: r
-    } = e, l = s.useRef(null);
+        children: l
+    } = e, r = s.useRef(null);
     return s.useEffect(() => g.A.subscribe(e => {
         let {
             navTransition: t
@@ -94,10 +94,10 @@ function S(e) {
             ref: t,
             children: (0, i.jsx)("div", {
                 className: E.nd,
-                ref: l,
+                ref: r,
                 children: (0, i.jsx)(c.xpW, {
-                    containerRef: l,
-                    children: r
+                    containerRef: r,
+                    children: l
                 })
             })
         }, n)
@@ -128,8 +128,8 @@ function f(e) {
         panelKey: t,
         layout: n,
         notice: a,
-        decoration: r
-    } = e, l = g.A.useState(e => {
+        decoration: l
+    } = e, r = g.A.useState(e => {
         let {
             currentTabKeys: n
         } = e;
@@ -145,16 +145,16 @@ function f(e) {
             currentTabKeys: i
         })
     }, [n, t]);
-    let d = n.find(e => e.key === l) ?? n[0];
+    let d = n.find(e => e.key === r) ?? n[0];
     return (0, i.jsxs)(S, {
         panelKey: t,
         notice: a,
         children: [(0, i.jsx)(c.VQ0, {
             className: E.$H,
-            selectedItem: l,
+            selectedItem: r,
             onItemSelect: e => {
                 o(() => {
-                    if (e === l) return;
+                    if (e === r) return;
                     let i = new Map(g.A.getField("currentTabKeys"));
                     i.set(t, e), g.A.setState({
                         currentTabKeys: i
@@ -177,10 +177,10 @@ function f(e) {
                 }, t)
             })
         }), (0, i.jsx)(c.VQ0.Panel, {
-            id: l,
+            id: r,
             children: null != d.StronglyDiscouragedCustomComponent ? (0, i.jsx)(d.StronglyDiscouragedCustomComponent, {}) : (0, i.jsx)(I, {
                 layout: d.layout,
-                decoration: r
+                decoration: l
             })
         })]
     })
@@ -221,7 +221,7 @@ function j(e) {
         node: t
     } = e, {
         layout: n
-    } = t, a = (0, l.bG)([_.A], () => _.A.hidePersonalInformation);
+    } = t, a = (0, r.bG)([_.A], () => _.A.hidePersonalInformation);
     if (s.useEffect(() => {
             if (t.parent?.type !== A.Z6.SIDEBAR_ITEM || null == t.parent.trailing) return;
             let {

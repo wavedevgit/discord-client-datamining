@@ -9,8 +9,8 @@ n.d(t, {
 var i = n(627968),
     s = n(110259),
     a = n(554146),
-    r = n(827734),
-    l = n(314116),
+    l = n(827734),
+    r = n(314116),
     o = n(397927),
     c = n(830215),
     d = n(631670),
@@ -63,8 +63,8 @@ var i = n(627968),
     ei = n(16986),
     es = n(62218),
     ea = n(640068),
-    er = n(682262),
-    el = n(777117),
+    el = n(682262),
+    er = n(777117),
     eo = n(604151),
     ec = n(531525),
     ed = n(652215),
@@ -246,7 +246,7 @@ let eh = () => [a.M.CLIENT_THEMES_SETTINGS_BADGE, a.M.DEKSTOP_CUSTOM_APP_ICON_BA
                 searchableTitles: [eu.intl.string(eu.t.URyqtP)],
                 label: eu.intl.string(eu.t.URyqtP),
                 ariaLabel: eu.intl.string(eu.t.URyqtP),
-                element: el.A,
+                element: er.A,
                 predicate: () => eb
             },
             [ec.H.GAMES_MY_GAMES]: {
@@ -499,7 +499,7 @@ let eh = () => [a.M.CLIENT_THEMES_SETTINGS_BADGE, a.M.DEKSTOP_CUSTOM_APP_ICON_BA
                 badgeCount: ef,
                 newIndicator: (0, i.jsx)(o.LpS, {
                     text: eu.intl.string(eu.t.y2b7CA),
-                    color: r.A.colors.BACKGROUND_BRAND.css
+                    color: l.A.colors.BACKGROUND_BRAND.css
                 }),
                 newIndicatorDismissibleContentTypes: [a.M.FAMILY_CENTER_NEW_BADGE]
             },
@@ -595,7 +595,7 @@ let eh = () => [a.M.CLIENT_THEMES_SETTINGS_BADGE, a.M.DEKSTOP_CUSTOM_APP_ICON_BA
                 element: S.A,
                 icon: p ? (0, i.jsx)(o.EpV, {
                     size: "xs",
-                    color: r.A.unsafe_rawColors.YELLOW_300.css
+                    color: l.A.unsafe_rawColors.YELLOW_300.css
                 }) : null
             },
             [ec.H.SUBSCRIPTIONS_CREDITS]: {
@@ -693,7 +693,7 @@ let eh = () => [a.M.CLIENT_THEMES_SETTINGS_BADGE, a.M.DEKSTOP_CUSTOM_APP_ICON_BA
                 parent: ec.H.APPEARANCE,
                 newIndicator: (0, i.jsx)(o.LpS, {
                     text: eu.intl.string(eu.t.y2b7CA),
-                    color: r.A.colors.BACKGROUND_BRAND.css
+                    color: l.A.colors.BACKGROUND_BRAND.css
                 })
             },
             [ec.H.APPEARANCE_SCALING_SPACING]: {
@@ -1055,7 +1055,7 @@ let eh = () => [a.M.CLIENT_THEMES_SETTINGS_BADGE, a.M.DEKSTOP_CUSTOM_APP_ICON_BA
                 searchableTitles: [eu.intl.string(eu.t.AVDyEj)],
                 label: eu.intl.string(eu.t.AVDyEj),
                 element: q.Ay,
-                predicate: () => !eb && (0, er.Pi)()
+                predicate: () => !eb && (0, el.Pi)()
             },
             [ec.H.OVERLAY]: {
                 section: ed.nc_.OVERLAY,
@@ -1326,7 +1326,7 @@ let eh = () => [a.M.CLIENT_THEMES_SETTINGS_BADGE, a.M.DEKSTOP_CUSTOM_APP_ICON_BA
             [ec.H.LOGOUT]: {
                 section: "logout",
                 onClick: () => {
-                    (0, l.A)({
+                    (0, r.A)({
                         title: eu.intl.string(eu.t["2jxGer"]),
                         subtitle: eu.intl.string(eu.t.SUnWBB),
                         confirmText: eu.intl.string(eu.t["2jxGer"]),

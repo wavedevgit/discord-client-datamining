@@ -7,8 +7,8 @@ var i = n(627968);
 n(64700);
 var s = n(503698),
     a = n.n(s),
-    r = n(110259),
-    l = n(732955),
+    l = n(110259),
+    r = n(732955),
     o = n(397927),
     c = n(688810),
     d = n(139286),
@@ -28,8 +28,8 @@ function E(e) {
         analyticsLocations: n
     } = (0, c.Ay)();
     (0, d.A)({
-        name: r.ImpressionNames.CUSTOM_THEMES_APPEARANCE_SETTINGS_BANNER,
-        type: r.ImpressionTypes.VIEW,
+        name: l.ImpressionNames.CUSTOM_THEMES_APPEARANCE_SETTINGS_BANNER,
+        type: l.ImpressionTypes.VIEW,
         properties: {
             location_stack: n
         }
@@ -59,7 +59,7 @@ function E(e) {
             })]
         }), (0, i.jsx)("div", {
             className: x.UD,
-            children: (0, i.jsx)(l.$nd, {
+            children: (0, i.jsx)(r.$nd, {
                 variant: "primary",
                 text: h.intl.string(h.t.uw9zI7),
                 onClick: () => {

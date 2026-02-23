@@ -7,8 +7,8 @@ var i = n(627968);
 n(64700);
 var s = n(503698),
     a = n.n(s),
-    r = n(397927),
-    l = n(195043),
+    l = n(397927),
+    r = n(195043),
     o = n(725010),
     c = n(446541),
     d = n(480357),
@@ -19,25 +19,25 @@ function _(e) {
         header: t,
         description: n,
         relatedId: s,
-        disabled: l
+        disabled: r
     } = e;
     return (0, i.jsxs)("div", {
         className: u.wx,
-        children: [(0, i.jsx)(r.Heading, {
+        children: [(0, i.jsx)(l.Heading, {
             variant: "text-md/medium",
             color: "text-strong",
             children: (0, i.jsx)("label", {
                 htmlFor: s,
                 className: a()(u.DD, {
-                    [u.r9]: l
+                    [u.r9]: r
                 }),
                 children: t
             })
-        }), (0, i.jsx)(r.Text, {
+        }), (0, i.jsx)(l.Text, {
             variant: "text-sm/normal",
             color: "text-default",
             className: a()(u.h_, {
-                [u.r9]: l
+                [u.r9]: r
             }),
             children: n
         })]
@@ -61,7 +61,7 @@ function A(e) {
         className: n,
         children: s
     } = e;
-    return (0, i.jsx)(l.x, {
+    return (0, i.jsx)(r.x, {
         setting: t,
         children: (0, i.jsx)("div", {
             className: a()(u.kL, n),
@@ -75,19 +75,19 @@ function g(e) {
         setting: t,
         className: n,
         children: s,
-        scrollPosition: r,
+        scrollPosition: l,
         scrollHighlightDelay: _
-    } = e, m = (0, o.s)(r);
-    return (0, i.jsx)(l.x, {
+    } = e, m = (0, o.s)(l);
+    return (0, i.jsx)(r.x, {
         setting: t,
         children: (0, i.jsxs)("div", {
             className: a()(u.kL, n, {
-                [d.m]: null != r
+                [d.m]: null != l
             }),
             ref: m,
-            children: [s, null != r ? (0, i.jsx)(c.A, {
+            children: [s, null != l ? (0, i.jsx)(c.A, {
                 animationDelay: _,
-                scrollPosition: r
+                scrollPosition: l
             }) : null]
         })
     })

@@ -1,24 +1,24 @@
 /** chunk id: 43146, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    v: () => r
+    v: () => l
 });
 var i = n(627968),
     s = n(397927),
     a = n(244242);
 
-function r(e) {
+function l(e) {
     let {
         node: t
     } = e, {
         useValue: n,
-        setValue: r,
-        useTitle: l,
+        setValue: l,
+        useTitle: r,
         useSubtitle: o,
         useDisabled: c,
         useDisabledMessage: d,
         useBadge: u,
         hasIcon: _
-    } = t, m = l(), A = o?.(), g = n(), h = c?.() ?? !1, x = d?.(), p = u?.();
+    } = t, m = r(), A = o?.(), g = n(), h = c?.() ?? !1, x = d?.(), p = u?.();
     return (0, i.jsxs)(a.L, {
         children: [(0, i.jsx)(s.dOG, {
             label: m,
@@ -26,7 +26,7 @@ function r(e) {
             badge: p,
             checked: g,
             hasIcon: _,
-            onChange: e => r(e),
+            onChange: e => l(e),
             disabled: h
         }), h && null != x ? (0, i.jsx)(s.po8, {
             messageType: s.YCn.WARNING,

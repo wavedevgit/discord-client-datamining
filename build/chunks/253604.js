@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(311907),
-    r = n(397927),
-    l = n(101058),
+    l = n(397927),
+    r = n(101058),
     o = n(836602),
     c = n(287070),
     d = n(83118);
@@ -18,7 +18,7 @@ function u(e) {
         containerClassName: _
     } = e, {
         reducedMotion: m
-    } = s.useContext(r.CZY), {
+    } = s.useContext(l.CZY), {
         pendingAvatar: A,
         pendingBanner: g,
         pendingAvatarDecoration: h,
@@ -39,7 +39,7 @@ function u(e) {
             ...e,
             ...t
         }
-    }), j = (0, l.V7)({
+    }), j = (0, r.V7)({
         userId: t.id,
         image: I ?? A
     });

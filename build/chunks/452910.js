@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(503698),
     a = n.n(s),
-    r = n(421380),
-    l = n(927578),
+    l = n(421380),
+    r = n(927578),
     o = n(545334),
     c = n(422936),
     d = n(234419),
@@ -28,7 +28,7 @@ let x = e => {
         isPremiumGetCta: C,
         onCtaClick: T,
         cardVariant: S
-    } = e, I = (0, d.V)(), f = I?.subscription_trial, N = (0, c.O)(), b = (0, l.FY)({
+    } = e, I = (0, d.V)(), f = I?.subscription_trial, N = (0, c.O)(), b = (0, r.FY)({
         intervalType: f?.interval,
         intervalCount: f?.interval_count
     }), j = (0, o.G)({
@@ -51,14 +51,14 @@ let x = e => {
             isOverlay: !0
         }), C && (0, i.jsx)(u.A, {
             className: s,
-            look: r.$n.Looks.BLANK,
-            color: r.$n.Colors.CUSTOM,
+            look: l.$n.Looks.BLANK,
+            color: l.$n.Colors.CUSTOM,
             subscriptionTier: A.pe.TIER_2,
             textOptions: {
                 textOverride: j
             },
             showGradient: !0
-        }), null != E && null != T && (0, i.jsx)(r.$n, {
+        }), null != E && null != T && (0, i.jsx)(l.$n, {
             "data-migration-pending": !0,
             className: s,
             onClick: T,

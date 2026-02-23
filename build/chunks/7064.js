@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     a = n(397927),
-    r = n(195043),
-    l = n(193658),
+    l = n(195043),
+    r = n(193658),
     o = n(355097),
     c = n(531525),
     d = n(985018),
@@ -19,7 +19,7 @@ function _(e) {
         handleDisableAccount: _,
         handleDeleteAccount: m
     } = e, A = t.isClaimed(), g = s.useRef(null);
-    return (0, l.A)(g, o.Ew.AccountScrollPositions.DISABLE_ACCOUNT), (0, i.jsx)(r.x, {
+    return (0, r.A)(g, o.Ew.AccountScrollPositions.DISABLE_ACCOUNT), (0, i.jsx)(l.x, {
         setting: c.H.ACCOUNT_DISABLE_ACCOUNT,
         children: (0, i.jsx)("div", {
             ref: g,
@@ -35,7 +35,7 @@ function _(e) {
                         text: d.intl.string(d.t.jf5GGb),
                         disabled: n,
                         onClick: _
-                    }) : null, (0, i.jsx)(r.x, {
+                    }) : null, (0, i.jsx)(l.x, {
                         setting: c.H.ACCOUNT_DELETE_ACCOUNT,
                         children: (0, i.jsx)(a.Button, {
                             variant: "critical-secondary",
