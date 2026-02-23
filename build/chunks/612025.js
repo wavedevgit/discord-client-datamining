@@ -1,2 +1,2 @@
 /** chunk id: 612025, original params: e,t,n (module,exports,require) **/
-n.d(t,{YG:()=>s,xk:()=>r});var i=n(353640);let s="0",a={selectedGuildId:s},r=(0,i.v)(e=>({...a,setSelectedGuildId:t=>{e({selectedGuildId:t})},reset:()=>{e(a)}}))
+n.d(t,{YG:()=>s,xk:()=>l});var i=n(353640);let s="0",a={selectedGuildId:s},l=(0,i.v)(e=>({...a,setSelectedGuildId:t=>{e({selectedGuildId:t})},reset:()=>{e(a)}}))

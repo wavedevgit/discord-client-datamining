@@ -1,2 +1,2 @@
 /** chunk id: 807055, original params: e,t,n (module,exports,require) **/
-n.d(t,{A:()=>o});var i=n(64700),s=n(989349),a=n.n(s),r=n(405269);let l=a().duration(30,"days");function o(e,t){return i.useMemo(()=>(0,r.i$)(t?null!=e.outboundRedemptionEndDate?a()(e.outboundRedemptionEndDate):a()(e.endDate).add(l):a()(e.endDate),"LL"),[e,t])}
+n.d(t,{A:()=>o});var i=n(64700),s=n(989349),a=n.n(s),l=n(405269);let r=a().duration(30,"days");function o(e,t){return i.useMemo(()=>(0,l.i$)(t?null!=e.outboundRedemptionEndDate?a()(e.outboundRedemptionEndDate):a()(e.endDate).add(r):a()(e.endDate),"LL"),[e,t])}
