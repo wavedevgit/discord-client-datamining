@@ -83,7 +83,7 @@ let c = [{
         name: "Interactive H Scroll",
         id: "interactive-h-scroll",
         component: () => {
-            let [e, t] = a.useState(15), [l, u] = a.useState(8), [h, m] = a.useState("xl"), [x, p] = a.useState(!0), b = a.useMemo(() => [...Array(e)].map((e, t) => (0, r.jsx)(i.DUT, {
+            let [e, t] = a.useState(15), [l, u] = a.useState(8), [m, h] = a.useState("xl"), [x, p] = a.useState(!0), b = a.useMemo(() => [...Array(e)].map((e, t) => (0, r.jsx)(i.DUT, {
                 className: d.j,
                 onClick: () => console.log(t),
                 children: (0, r.jsxs)(i.BJc, {
@@ -101,7 +101,7 @@ let c = [{
             return (0, r.jsxs)("div", {
                 children: [(0, r.jsx)(o.A, {
                     gap: l,
-                    edgeFade: h,
+                    edgeFade: m,
                     hideActionsWhenDisabled: x,
                     children: b
                 }), (0, r.jsx)(s.nB, {}), (0, r.jsxs)(s.MG, {
@@ -129,9 +129,9 @@ let c = [{
                     })
                 }), (0, r.jsx)(s.MG, {
                     children: (0, r.jsx)(i.l6P, {
-                        value: h,
+                        value: m,
                         options: c,
-                        onSelectionChange: m,
+                        onSelectionChange: h,
                         label: "Edge Fade Space",
                         selectionMode: "single",
                         fullWidth: !0

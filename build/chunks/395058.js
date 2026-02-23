@@ -2,7 +2,7 @@
 "use strict";
 l.r(t), l.d(t, {
     cmsCollection: () => u,
-    cmsConfig: () => h
+    cmsConfig: () => m
 });
 var r = l(814904),
     a = l(363040),
@@ -17,6 +17,6 @@ let u = {
         name: "CMS",
         groups: [i.t, s.F, a.z, n.U, r.D, o.K, d.j, c.Y]
     },
-    h = {
+    m = {
         collections: [u]
     }
