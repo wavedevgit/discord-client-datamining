@@ -67,6 +67,8 @@ class T {
     offsetHeightCache = 0;
     scrollHeightCache = 0;
     scrollTopCache = -1;
+    scrollHeightBeforeLoad = 0;
+    loadMorePausedUntilUserScroll = !1;
     _bottomAnchor = null;
     _automaticAnchorCallbacks = [];
     _scrollCompleteCallbacks = [];
@@ -96,7 +98,7 @@ class T {
         return void 0 === this.initialScrollTop
     }
     isScrollLoadingDisabled() {
-        return this.isLoading() || !this.isInitialized() || this.isJumping() || this.isDragging() || !this.props.canLoadMore
+        return !!this.loadMorePausedUntilUserScroll || this.isLoading() || !this.isInitialized() || this.isJumping() || this.isDragging() || !this.props.canLoadMore
     }
     isActivelyScrolling() {
         return this.scrollCounter >= 5
@@ -134,7 +136,11 @@ class T {
             offsetHeight: i,
             scrollHeight: l
         } = this.getScrollerState(), s = this.isHeightChange(i, l);
-        if (this.offsetHeightCache = i, this.scrollHeightCache = l, this.loading = e.messages.loadingMore, this.isInitialized() || this.isReady()) {
+        if (this.offsetHeightCache = i, this.scrollHeightCache = l, this.loading = e.messages.loadingMore, t.loadingMore && !e.messages.loadingMore) {
+            let e = Math.abs(l - this.scrollHeightBeforeLoad);
+            this.loadMorePausedUntilUserScroll = e < 100
+        }
+        if (this.isInitialized() || this.isReady()) {
             if (!this.isInitialized()) return void this.restoreScroll()
         } else {
             null == e.messages.jumpTargetId && this.scrollTo(Number.MAX_SAFE_INTEGER);
@@ -301,7 +307,7 @@ class T {
         if (n !== this.isAtBottom && (n ? (this.isAtBottom = !0, this.props.handleScrollToBottom()) : (this.isAtBottom = !1, this.props.handleScrollFromBottom())), t.offsetHeight !== this.offsetHeightCache || t.scrollHeight !== this.scrollHeightCache) this.scrollCounter = 0, clearTimeout(this.anchorTimeout), this.isPinned() || (null == this.automaticAnchor ? this.setAutomaticAnchor(this.findAnchor()) : this.updateAutomaticAnchor(t.scrollTop, !0)), clearTimeout(this.anchorTimeout), this.fixScrollPosition(t.offsetHeight, t.scrollHeight), this.scrollTopCache = t.scrollTop;
         else {
             if (null != e && e.target !== this.ref.current?.getScrollerNode()) return;
-            this.scrollTopCache !== t.scrollTop && (this.pinned = n, this.scrollCounter = Math.min(this.scrollCounter + 1, 5), this.pinned ? this.cleanAutomaticAnchor() : null != this.automaticAnchor ? this.updateAutomaticAnchor(t.scrollTop, !0) : this.setAutomaticAnchor(this.findAnchor()), this.scrollTopCache = t.scrollTop, clearTimeout(this.anchorTimeout), this.anchorTimeout = setTimeout(() => {
+            this.scrollTopCache !== t.scrollTop && (this.loadMorePausedUntilUserScroll && null != e && (this.loadMorePausedUntilUserScroll = !1), this.pinned = n, this.scrollCounter = Math.min(this.scrollCounter + 1, 5), this.pinned ? this.cleanAutomaticAnchor() : null != this.automaticAnchor ? this.updateAutomaticAnchor(t.scrollTop, !0) : this.setAutomaticAnchor(this.findAnchor()), this.scrollTopCache = t.scrollTop, clearTimeout(this.anchorTimeout), this.anchorTimeout = setTimeout(() => {
                 this.scrollCounter = 0, this.anchorTimeout = null, this.prevScrollTop = null;
                 let {
                     scrollHeight: e,
@@ -446,7 +452,7 @@ class T {
                 let e = l.first();
                 null != e && (t = e.id)
             }
-            e.messageFetchAnchor = e.findFetchAnchor(i), e.loading = !0, o.A.fetchMessages({
+            e.messageFetchAnchor = e.findFetchAnchor(i), e.scrollHeightBeforeLoad = e.scrollHeightCache, e.loading = !0, o.A.fetchMessages({
                 channelId: e.props.channel.id,
                 before: t,
                 after: n,

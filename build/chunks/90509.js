@@ -1,14 +1,14 @@
-/** chunk id: 90509, original params: n,e,t (module,exports,require) **/
-t.d(e, {
-    A: () => s
+/** chunk id: 90509, original params: n,t,e (module,exports,require) **/
+e.d(t, {
+    A: () => d
 });
-var i = t(627968);
-t(64700);
-var r = t(397927),
-    l = t(422258),
-    a = t(985018);
+var i = e(627968);
+e(64700);
+var r = e(397927),
+    l = e(422258),
+    a = e(985018);
 
-function s(n) {
+function d(n) {
     return (0, i.jsx)(r.Drp, {
         id: "delete-channel",
         label: a.intl.string(a.t.Jg0R7Q),
@@ -16,12 +16,12 @@ function s(n) {
         color: "danger",
         action: () => (0, r.mMO)(async () => {
             let {
-                default: e
-            } = await t.e("52210").then(t.bind(t, 862377));
-            return t => (0, i.jsx)(e, {
-                ...t,
+                default: t
+            } = await e.e("52210").then(e.bind(e, 862377));
+            return e => (0, i.jsx)(t, {
+                ...e,
                 onConfirm: () => {
-                    t.onClose(), (0, l.fv)(n.id)
+                    e.onClose(), (0, l.fv)(n.id)
                 },
                 channel: n
             })

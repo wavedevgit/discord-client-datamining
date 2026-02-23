@@ -1,31 +1,31 @@
-/** chunk id: 969128, original params: n,e,t (module,exports,require) **/
-t.d(e, {
+/** chunk id: 969128, original params: n,t,e (module,exports,require) **/
+e.d(t, {
     A: () => o
 });
-var i = t(627968);
-t(64700);
-var r = t(311907),
-    l = t(397927),
-    a = t(816662),
-    s = t(395504),
-    d = t(543465),
-    c = t(652215),
-    A = t(985018);
+var i = e(627968);
+e(64700);
+var r = e(311907),
+    l = e(397927),
+    a = e(816662),
+    d = e(395504),
+    s = e(543465),
+    c = e(652215),
+    A = e(985018);
 
 function o(n) {
-    let e = (0, s.jN)(n.guild_id),
-        t = (0, r.bG)([d.Ay], () => d.Ay.isChannelOptedIn(n.guild_id, n.id)),
-        o = (0, r.bG)([d.Ay], () => null != n.parent_id && d.Ay.isChannelOptedIn(n.guild_id, n.parent_id)),
-        u = (0, r.bG)([d.Ay], () => d.Ay.isFavorite(n.guild_id, n.id)),
+    let t = (0, d.jN)(n.guild_id),
+        e = (0, r.bG)([s.Ay], () => s.Ay.isChannelOptedIn(n.guild_id, n.id)),
+        o = (0, r.bG)([s.Ay], () => null != n.parent_id && s.Ay.isChannelOptedIn(n.guild_id, n.parent_id)),
+        u = (0, r.bG)([s.Ay], () => s.Ay.isFavorite(n.guild_id, n.id)),
         g = () => {
-            (0, a.AC)(n.guild_id, n.id, !t, {
+            (0, a.AC)(n.guild_id, n.id, !e, {
                 section: c.JJy.CONTEXT_MENU
             })
         };
-    if (!e || n.isThread()) return null;
+    if (!t || n.isThread()) return null;
     if (n.isCategory()) return (0, i.jsx)(l.Drp, {
         id: "opt-into-category",
-        label: t ? A.intl.string(A.t["3zySTA"]) : A.intl.string(A.t["9mysCh"]),
+        label: e ? A.intl.string(A.t["3zySTA"]) : A.intl.string(A.t["9mysCh"]),
         action: () => g()
     });
     let h = u ? A.intl.string(A.t.z7I3gd) : A.intl.string(A.t["N2c/Un"]);
@@ -46,7 +46,7 @@ function o(n) {
             }))
         }) : (0, i.jsx)(l.Drp, {
             id: "opt-into-channel",
-            label: t ? A.intl.string(A.t["3zySTA"]) : A.intl.string(A.t["9mysCh"]),
+            label: e ? A.intl.string(A.t["3zySTA"]) : A.intl.string(A.t["9mysCh"]),
             action: () => g()
         })]
     })

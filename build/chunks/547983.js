@@ -220,7 +220,7 @@ function W(e) {
             children: [eP, eU, ek, eF, eX, eV]
         });
     return (0, i.jsxs)(r.W1t, {
-        "data-menu-needs-review": !0,
+        "data-menu-migrated": !0,
         navId: el,
         onClose: ei,
         "aria-label": ea,
