@@ -22,7 +22,10 @@ export default function getChunksByCode(
     moduleId: string,
     moduleFileName: string,
 ): Record<string, string> {
-    const ast: Program = parse(code, { next: true, ranges: true }) as Program;
+    const ast: Program = parse(code, {
+        next: true,
+        ranges: true,
+    }) as Program;
     const result = {};
     try {
         walk.simple(ast, {
@@ -31,9 +34,13 @@ export default function getChunksByCode(
                 if (
                     node.callee.type === 'MemberExpression' &&
                     node.callee?.object?.type === 'AssignmentExpression' &&
-                    // @ts-expect-error
-                    node.callee?.object?.right?.left?.property?.name ===
-                        'webpackChunkdiscord_app' &&
+                    [
+                        'webpackChunkdiscord_app',
+                        'webpackChunkdiscord_developers',
+                    ].includes(
+                        // @ts-expect-error
+                        node.callee?.object?.right?.left?.property?.name,
+                    ) &&
                     // @ts-expect-error
                     node.callee?.property?.name === 'push' &&
                     // @ts-expect-error

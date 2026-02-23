@@ -2,6 +2,32 @@ type DepGraph = {
     [chunkId: string]: DepGraph;
 };
 
+export interface Experiment {
+    kind: 'user' | 'guild';
+    id: string;
+    label: string;
+    defaultConfig: Record<string, string | boolean | string[]>;
+    treatments: Treatment[];
+}
+
+export interface Treatment {
+    id: number;
+    label: string;
+    config: Record<string, string | boolean | string[]>;
+}
+
+export interface ApexExperiment {
+    name: string;
+    kind: 'user' | 'guild';
+    defaultConfig?: Variant;
+    variations: Record<number, Variant>;
+}
+
+export interface Variant {
+    enabled: boolean;
+    variant: number;
+}
+
 export interface Build {
     /**
      * Deleted after we are done from using webjs contents
@@ -39,6 +65,10 @@ export interface Build {
      * Endpoints
      */
     endpoints: Record<string, string>;
+    /**
+     * Experiments
+     */
+    experiments: Experiment | ApexExperiment[];
 
     /**
      * Dependency graph

@@ -4,6 +4,7 @@ import getChunks from './tasks/getChunks.js';
 import getClassesNames from './tasks/getClassesNames.js';
 import getDepGraph from './tasks/getDepGraph.js';
 import getEndpoints from './tasks/getEndpoints.js';
+import getExperiments from './tasks/getExperiments.js';
 import getIntlStrings from './tasks/getIntlStrings.js';
 import getLibDiscore from './tasks/getLibDiscore.js';
 import { Build } from './types.js';
@@ -23,7 +24,7 @@ async function main() {
     await perf<void>(
         'downloading js files & css files',
         async () => {
-            //await downloadAllFiles(build);
+            await downloadAllFiles(build);
         },
         tasks,
     );
@@ -31,7 +32,7 @@ async function main() {
     await perf<void>(
         'get chunks contents',
         async () => {
-//            await getChunks(build);
+            await getChunks(build);
         },
         tasks,
     );
@@ -39,7 +40,7 @@ async function main() {
     await perf<void>(
         'get en-us intl strings',
         async () => {
-  //          await getIntlStrings(build);
+            await getIntlStrings(build);
         },
         tasks,
     );
@@ -47,7 +48,14 @@ async function main() {
     await perf<void>(
         'get endpoints',
         async () => {
-    //        await getEndpoints(build);
+            await getEndpoints(build);
+        },
+        tasks,
+    );
+    await perf<void>(
+        'get experiments',
+        async () => {
+            await getExperiments(build);
         },
         tasks,
     );
@@ -55,7 +63,7 @@ async function main() {
     await perf<void>(
         'get classes names from css files',
         async () => {
-      //      await getClassesNames(build);
+            await getClassesNames(build);
         },
         tasks,
     );
