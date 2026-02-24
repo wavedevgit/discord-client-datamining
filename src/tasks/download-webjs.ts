@@ -19,7 +19,15 @@ export default async function downloadWebjs(): Promise<Build> {
         ),
         versionHash: html.match(/VERSION_HASH":"(?<versionHash>[a-f0-9]{40})"/)
             .groups?.versionHash,
-        webjs: await getText(asset(html.match(/web\.[a-f0-9]{16}\.js/)[0])),
+        webjs: await getText(
+            asset(
+                html.match(
+                    IS_DEVPORTAL
+                        ? /index\.[a-f0-9]{16}\.js/
+                        : /web\.[a-f0-9]{16}\.js/,
+                )[0],
+            ),
+        ),
         libdiscore: IS_DEVPORTAL
             ? await getText(
                   asset(
