@@ -1,6 +1,6 @@
 /** chunk id: 38198, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => b
+    A: () => y
 });
 var i = n(627968),
     l = n(64700),
@@ -23,40 +23,39 @@ var i = n(627968),
     C = n(652215),
     S = n(49999),
     I = n(412136),
-    T = n(985018),
-    N = n(159622);
-let y = /(.*)```(\w+)\n(.*)```(.*)/s;
+    T = n(985018);
+let N = /(.*)```(\w+)\n(.*)```(.*)/s;
 
-function b(e) {
+function y(e) {
     let {
         channel: t,
-        options: b,
-        onFileUpload: v,
-        onClose: j,
-        onSelect: R,
-        draftType: M,
-        editorTextContent: D,
-        setValue: O,
-        openClips: L
+        options: y,
+        onFileUpload: b,
+        onClose: v,
+        onSelect: j,
+        draftType: R,
+        editorTextContent: M,
+        setValue: D,
+        openClips: O
     } = e, {
-        analyticsLocations: P
-    } = (0, c.Ay)(), k = (0, u.s)({
+        analyticsLocations: L
+    } = (0, c.Ay)(), P = (0, u.s)({
         channel: t
-    }), w = (0, s.bG)([m.A], () => m.A.isInProgress());
+    }), k = (0, s.bG)([m.A], () => m.A.isInProgress());
 
-    function U() {
+    function w() {
         (0, A.Tv)(t, void 0, "Plus Button")
     }
 
+    function U() {
+        g.default.track(C.HAw.CHANNEL_ATTACH_MENU_USE_APPS_CLICKED), D("/", (0, E.x7)("/"))
+    }
+
     function G() {
-        g.default.track(C.HAw.CHANNEL_ATTACH_MENU_USE_APPS_CLICKED), O("/", (0, E.x7)("/"))
+        O()
     }
 
     function F() {
-        L()
-    }
-
-    function H() {
         (0, d.Dr)(a.M.POLLS_CHAT_INPUT_COACHMARK, {
             dismissAction: S.i.TAKE_ACTION
         }), (0, r.mMO)(async () => {
@@ -72,14 +71,14 @@ function b(e) {
         })
     }
 
-    function B() {
-        let e = D,
+    function H() {
+        let e = M,
             n = "txt",
             i = "",
-            l = D.match(y);
+            l = M.match(N);
         null != l && (i = l[1], n = l[2], e = l[3], i += l[4]), (0, _.R)([(0, f.VE)(new Blob([e], {
             type: "text/plain"
-        }), `message.${n}`, "text/plain")], t, M), p._.dispatchToLastSubscribed(C.jej.CLEAR_TEXT), "" !== i && p._.dispatchToLastSubscribed(C.jej.INSERT_TEXT, {
+        }), `message.${n}`, "text/plain")], t, R), p._.dispatchToLastSubscribed(C.jej.CLEAR_TEXT), "" !== i && p._.dispatchToLastSubscribed(C.jej.INSERT_TEXT, {
             plainText: i
         })
     }
@@ -90,13 +89,12 @@ function b(e) {
             guild_id: t.guild_id
         })
     }, [t.guild_id, t.id]), (0, i.jsx)(r.W1t, {
-        "data-menu-needs-migration": !0,
-        onSelect: R,
+        "data-menu-migrated": !0,
+        onSelect: j,
         navId: "channel-attach",
-        onClose: j,
+        onClose: v,
         "aria-label": T.intl.string(T.t.Xm41aV),
-        className: N.MK,
-        children: b.map(function(e) {
+        children: y.map(function(e) {
             switch (e.type) {
                 case x.v.UPLOAD_A_FILE:
                     return (0, i.jsx)(r.Drp, {
@@ -107,10 +105,10 @@ function b(e) {
                             type: "icon",
                             icon: e.icon
                         },
-                        action: v
+                        action: b
                     }, "upload-file");
                 case x.v.UPLOAD_TEXT_AS_FILE:
-                    if ("" === D) return null;
+                    if ("" === M) return null;
                     return (0, i.jsx)(r.Drp, {
                         id: "upload-text-as-file",
                         label: e.display,
@@ -119,7 +117,7 @@ function b(e) {
                             type: "icon",
                             icon: e.icon
                         },
-                        action: B
+                        action: H
                     }, "upload-text-as-file");
                 case x.v.CLIPS:
                     return (0, i.jsx)(r.Drp, {
@@ -133,7 +131,7 @@ function b(e) {
                         badge: null != e.badgeVal && e.badgeVal > 0 ? {
                             text: e.badgeVal.toString()
                         } : void 0,
-                        action: F
+                        action: G
                     }, "clips");
                 case x.v.POLL:
                     return (0, i.jsx)(r.Drp, {
@@ -144,7 +142,7 @@ function b(e) {
                             type: "icon",
                             icon: e.icon
                         },
-                        action: H
+                        action: F
                     }, "poll");
                 case x.v.INVITE_TO_PLAY_GAME:
                     return (0, i.jsx)(r.Drp, {
@@ -161,7 +159,7 @@ function b(e) {
                                 channelId: t.id,
                                 type: C.xL.JOIN,
                                 activity: n,
-                                location: P[P.length - 1]
+                                location: L[L.length - 1]
                             })
                         }
                     }, "play");
@@ -180,7 +178,7 @@ function b(e) {
                                 channelId: t.id,
                                 type: C.xL.LISTEN,
                                 activity: n,
-                                location: P[P.length - 1]
+                                location: L[L.length - 1]
                             })
                         }
                     }, "listen");
@@ -199,7 +197,7 @@ function b(e) {
                                 channelId: t.id,
                                 type: C.xL.WATCH,
                                 activity: n,
-                                location: P[P.length - 1]
+                                location: L[L.length - 1]
                             })
                         }
                     }, "watch");
@@ -212,7 +210,7 @@ function b(e) {
                             type: "icon",
                             icon: e.icon
                         },
-                        action: U
+                        action: w
                     }, "THREAD");
                 case x.v.SLASH_COMMAND:
                     return (0, i.jsx)(r.Drp, {
@@ -223,7 +221,7 @@ function b(e) {
                             type: "icon",
                             icon: e.icon
                         },
-                        action: G
+                        action: U
                     }, "SLASH_COMMAND");
                 case x.v.SCHEDULED_MESSAGE:
                     return (0, i.jsx)(r.Drp, {
@@ -237,7 +235,7 @@ function b(e) {
                         action: () => (0, u.e0)({
                             channel: t
                         }),
-                        children: k
+                        children: P
                     }, "scheduled_message");
                 case x.v.SUMMARIZE_THREAD:
                     return (0, i.jsx)(r.Drp, {
@@ -249,9 +247,9 @@ function b(e) {
                             icon: e.icon
                         },
                         action: () => h.A.summarizeThread(t),
-                        loading: w,
-                        disabled: w,
-                        children: w ? null : (0, i.jsxs)(i.Fragment, {
+                        loading: k,
+                        disabled: k,
+                        children: k ? null : (0, i.jsxs)(i.Fragment, {
                             children: [(0, i.jsx)(r.Drp, {
                                 id: "summarize_thread_for_everyone",
                                 label: T.intl.string(T.t.eCzSdd),

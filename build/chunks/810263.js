@@ -8,8 +8,8 @@ var n = i(627968),
     r = i.n(s),
     a = i(397927),
     d = i(50268),
-    o = i(253932),
-    c = i(260509),
+    c = i(253932),
+    o = i(260509),
     u = i(486020),
     A = i(957565),
     g = i(486503),
@@ -17,7 +17,7 @@ var n = i(627968),
     h = i(985018);
 
 function p(e) {
-    let t = o.Q_.useSetting(),
+    let t = c.Q_.useSetting(),
         {
             tidaWebformEnabled: i
         } = g.A.useExperiment({
@@ -30,7 +30,7 @@ function p(e) {
             label: h.intl.string(h.t["94lLD7"])
         }),
         p = l.useCallback(() => {
-            let t = (0, c.Iv)(e, E.XAf, !0);
+            let t = (0, o.Iv)(e, E.XAf, !0);
             r()(null != t, "cannot copy null icon URL"), (0, A.C)(t)
         }, [e]),
         _ = l.useCallback(() => {

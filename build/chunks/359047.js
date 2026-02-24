@@ -12,7 +12,7 @@ var l = i(397927),
 function d(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
         d = (0, s.A)(e),
-        o = (0, r.A)();
+        c = (0, r.A)();
     return d ? (0, n.jsx)(l.Drp, {
         id: "create-event",
         label: a.intl.string(a.t["60lJ0C"]),
@@ -30,7 +30,7 @@ function d(e) {
                     ...i,
                     guildId: e
                 })
-            }, o)
+            }, c)
         }
     }) : null
 }

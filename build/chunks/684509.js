@@ -9,14 +9,14 @@ var l = i(397927),
     r = i(310419),
     a = i(997509),
     d = i(5298),
-    o = i(266648),
-    c = i(267102),
+    c = i(266648),
+    o = i(267102),
     u = i(652215),
     A = i(488995),
     g = i(985018);
 
 function E(e) {
-    let t = (0, c.aL)(),
+    let t = (0, o.aL)(),
         i = (0, d.A)(e);
     if (__OVERLAY__ || !i) return null;
     let E = i => {
@@ -26,12 +26,12 @@ function E(e) {
         id: "guild-settings",
         label: g.intl.string(g.t["154/bL"]),
         action: () => E(),
-        children: (0, o.P)(e).map(t => {
+        children: (0, c.P)(e).map(t => {
             let {
                 section: i,
-                label: a
+                label: a,
+                ariaLabel: d
             } = t;
-            if (null == a) return null;
             switch (i) {
                 case u.BEX.DELETE:
                     return null;
@@ -55,13 +55,20 @@ function E(e) {
                                 }
                             })
                         },
-                        void_label: a
+                        leadingAccessory: {
+                            type: "icon",
+                            icon: l.tfB
+                        },
+                        iconLeft: l.tfB,
+                        label: g.intl.string(g.t.AKcFUj)
                     }, i);
                 default:
+                    let c = "string" == typeof a ? a : d;
+                    if (null == c) return null;
                     return (0, n.jsx)(l.Drp, {
                         id: i,
                         action: () => E(i),
-                        void_label: a
+                        label: c
                     }, i)
             }
         })

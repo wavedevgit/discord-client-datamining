@@ -9,19 +9,19 @@ var l = i(311907),
     r = i(832712),
     a = i(568873),
     d = i(543465),
-    o = i(477427),
-    c = i(652215),
+    c = i(477427),
+    o = i(652215),
     u = i(985018);
 
 function A() {
     return [{
-        setting: c.orn.ALL_MESSAGES,
+        setting: o.orn.ALL_MESSAGES,
         label: u.intl.string(u.t["n/bTaY"])
     }, {
-        setting: c.orn.ONLY_MENTIONS,
+        setting: o.orn.ONLY_MENTIONS,
         label: u.intl.format(u.t.L2hmYy, {})
     }, {
-        setting: c.orn.NO_MESSAGES,
+        setting: o.orn.NO_MESSAGES,
         label: u.intl.string(u.t.CtVGyQ)
     }]
 }
@@ -40,7 +40,7 @@ function g(e) {
                 mobilePush: d.Ay.isMobilePushEnabled(e.id),
                 messageNotifications: d.Ay.getMessageNotifications(e.id),
                 notifyHighlights: d.Ay.getNotifyHighlights(e.id)
-            }), [e.id]), p = h === c.guM.DISABLED, _ = (0, a.A)(e.id);
+            }), [e.id]), p = h === o.guM.DISABLED, _ = (0, a.A)(e.id);
 
             function S(t, i) {
                 r.A.updateGuildNotificationSettings(e.id, t, i)
@@ -58,7 +58,7 @@ function g(e) {
                             label: i,
                             action: () => S({
                                 message_notifications: t
-                            }, o.G_.notifications(t)),
+                            }, c.G_.notifications(t)),
                             checked: t === E
                         }, t)
                     })
@@ -68,22 +68,22 @@ function g(e) {
                         label: u.intl.format(u.t.OWiWAp, {}),
                         action: () => S({
                             suppress_everyone: !t
-                        }, o.G_.suppressEveryone(!t)),
+                        }, c.G_.suppressEveryone(!t)),
                         checked: t
                     }), (0, n.jsx)(s.sLh, {
                         id: "suppress-roles",
                         label: u.intl.string(u.t["O/QdoD"]),
                         action: () => S({
                             suppress_roles: !i
-                        }, o.G_.suppressRoles(!i)),
+                        }, c.G_.suppressRoles(!i)),
                         checked: i
                     }), (0, n.jsx)(s.sLh, {
                         id: "suppress-highlights",
                         label: u.intl.string(u.t.gPuteJ),
                         action: () => {
                             S({
-                                notify_highlights: p ? c.guM.ENABLED : c.guM.DISABLED
-                            }, o.G_.highlights(p))
+                                notify_highlights: p ? o.guM.ENABLED : o.guM.DISABLED
+                            }, c.G_.highlights(p))
                         },
                         checked: p
                     }), _]
@@ -93,7 +93,7 @@ function g(e) {
                         label: u.intl.string(u.t.h1DL66),
                         action: () => S({
                             mobile_push: !g
-                        }, o.G_.mobilePush(!g)),
+                        }, c.G_.mobilePush(!g)),
                         checked: g
                     })
                 })]

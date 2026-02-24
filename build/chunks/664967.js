@@ -8,8 +8,8 @@ var n = i(627968),
     r = i(585510),
     a = i(834409),
     d = i(903093),
-    o = i(652215),
-    c = i(985018);
+    c = i(652215),
+    o = i(985018);
 
 function u(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
@@ -34,9 +34,9 @@ function u(e) {
                 })
             })
         }, [e.id, g]);
-    return e.features.has(o.GuildFeatures.COMMUNITY) && u ? (0, n.jsx)(s.Drp, {
+    return e.features.has(c.GuildFeatures.COMMUNITY) && u ? (0, n.jsx)(s.Drp, {
         id: "server-lockdown",
-        label: A ? c.intl.string(c.t["+tSVi3"]) : c.intl.string(c.t.EPlEdu),
+        label: A ? o.intl.string(o.t["+tSVi3"]) : o.intl.string(o.t.EPlEdu),
         icon: t ? A ? s.wUM : s.XAi : void 0,
         leadingAccessory: t ? {
             type: "icon",

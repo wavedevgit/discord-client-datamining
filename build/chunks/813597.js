@@ -8,8 +8,8 @@ var n = i(627968),
     r = i(397927),
     a = i(832712),
     d = i(585510),
-    o = i(610136),
-    c = i(393432),
+    c = i(610136),
+    o = i(393432),
     u = i(910323),
     A = i(24873),
     g = i(594061),
@@ -43,16 +43,16 @@ function N(e) {
                 let i = {
                     message_notifications: t
                 };
-                t === p.orn.ALL_MESSAGES && G !== _.e.ALL_MESSAGES && (i.flags = (0, c.md)(E.Ay.getGuildFlags(e), S.n3.UNREADS_ALL_MESSAGES)), a.A.updateGuildNotificationSettings(e, i, h.G_.notifications(t))
+                t === p.orn.ALL_MESSAGES && G !== _.e.ALL_MESSAGES && (i.flags = (0, o.md)(E.Ay.getGuildFlags(e), S.n3.UNREADS_ALL_MESSAGES)), a.A.updateGuildNotificationSettings(e, i, h.G_.notifications(t))
             }, x = t => {
                 f(!1);
                 let i = E.Ay.getGuildFlags(e);
                 a.A.updateGuildNotificationSettings(e, {
-                    flags: (0, c.md)(i, t === _.e.ALL_MESSAGES ? S.n3.UNREADS_ALL_MESSAGES : S.n3.UNREADS_ONLY_MENTIONS)
+                    flags: (0, o.md)(i, t === _.e.ALL_MESSAGES ? S.n3.UNREADS_ALL_MESSAGES : S.n3.UNREADS_ONLY_MENTIONS)
                 }, h.G_.unreads(t))
             }, v = function(e) {
                 let t = (0, d._g)(e),
-                    i = (0, s.bG)([o.A], () => o.A.getGuildAlertSettings()[e]);
+                    i = (0, s.bG)([c.A], () => c.A.getGuildAlertSettings()[e]);
                 if (t && null != i) return (0, n.jsxs)(r.Drp, {
                     id: "activity_alerts",
                     label: b.intl.string(b.t.D9yVAH),

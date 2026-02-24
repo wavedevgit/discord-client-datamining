@@ -1,6 +1,6 @@
 /** chunk id: 911612, original params: e,t,i (module,exports,require) **/
 i.d(t, {
-    A: () => c
+    A: () => o
 });
 var n = i(627968);
 i(64700);
@@ -9,13 +9,13 @@ var l = i(311907),
     r = i(576705),
     a = i(652215),
     d = i(349828),
-    o = i(985018);
+    c = i(985018);
 
-function c(e) {
+function o(e) {
     let t = (0, l.bG)([r.A], () => r.A.can(a.xBc.MANAGE_CHANNELS, e));
     return __OVERLAY__ ? null : e.id === d.Vc ? (0, n.jsx)(s.Drp, {
         id: "create-category",
-        label: o.intl.string(o.t["ISN+NM"]),
+        label: c.intl.string(c.t["ISN+NM"]),
         action: () => (0, s.mMO)(async () => {
             let {
                 default: e
@@ -26,7 +26,7 @@ function c(e) {
         })
     }) : t ? [(0, n.jsx)(s.Drp, {
         id: "create-channel",
-        label: o.intl.string(o.t["fUYU+j"]),
+        label: c.intl.string(c.t["fUYU+j"]),
         action: () => (0, s.mMO)(async () => {
             let {
                 default: t
@@ -39,7 +39,7 @@ function c(e) {
         })
     }, "create-channel"), (0, n.jsx)(s.Drp, {
         id: "create-category",
-        label: o.intl.string(o.t["ISN+NM"]),
+        label: c.intl.string(c.t["ISN+NM"]),
         action: () => (0, s.mMO)(async () => {
             let {
                 default: t

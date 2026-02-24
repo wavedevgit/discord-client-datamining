@@ -1,6 +1,6 @@
 /** chunk id: 21605, original params: e,t,i (module,exports,require) **/
 i.d(t, {
-    c: () => o
+    c: () => c
 });
 var n = i(627968);
 i(64700);
@@ -10,7 +10,7 @@ var l = i(311907),
     a = i(928658),
     d = i(287809);
 
-function o(e) {
+function c(e) {
     let t = (0, l.bG)([r.Ay], () => r.Ay.get("iar_testing")),
         i = (0, l.bG)([d.default], () => d.default.getCurrentUser());
     return null != i && i.isStaff() && t ? (0, n.jsx)(s.Drp, {

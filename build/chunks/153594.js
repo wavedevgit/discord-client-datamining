@@ -1,6 +1,6 @@
 /** chunk id: 153594, original params: e,t,i (module,exports,require) **/
 i.d(t, {
-    A: () => o
+    A: () => c
 });
 var n = i(627968);
 i(64700);
@@ -10,7 +10,7 @@ var l = i(311907),
     a = i(543465),
     d = i(985018);
 
-function o(e) {
+function c(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
         i = (0, l.bG)([a.Ay], () => a.Ay.isGuildCollapsed(e), [e]);
     return (0, n.jsx)(s.sLh, {
