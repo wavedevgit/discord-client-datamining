@@ -1,2 +1,2 @@
-/** chunk id: 83611, original params: p (module,exports,require) **/
-p.exports=JSON.parse('{"01Jl9Z":["Nie, dzięki"]}')
+/** chunk id: 83611, original params: i (module,exports,require) **/
+i.exports=JSON.parse('{"bGygJZ":["Wygląda na to, że przez całą rozmowę mogłeś(-aś) mieć wyciszony mikrofon. Chcesz dowiedzieć się, jak wyłączyć wyciszenie, aby inni mogli Cię słyszeć?"],"8VIRzR":["Aby inni mogli Cię słyszeć, naciśnij ten przycisk, aby wyłączyć wyciszenie mikrofonu. Następnie możesz nacisnąć go ponownie, aby ponownie wyciszyć mikrofon."],"VG4zAf":["Wyłącz wyciszenie mikrofonu"],"5wYjyW":["Samouczek wyciszania"],"01Jl9Z":["Nie, dziękuję"],"DxcYYG":["Pokaż!"]}')
