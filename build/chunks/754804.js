@@ -9,32 +9,45 @@ var n = i(627968),
 
 function l(e) {
     let {
-        icon: t
+        spec: t,
+        icon: i
     } = e;
     return (0, n.jsx)("div", {
         className: r.Fx,
-        children: t
+        style: {
+            top: t.iconInset,
+            insetInlineEnd: t.iconInset
+        },
+        children: i
     })
 }
 
-function o() {
+function o(e) {
+    let {
+        spec: t
+    } = e;
     return (0, n.jsx)(l, {
+        spec: t,
         icon: (0, n.jsx)(s.C3E, {
             size: "custom",
-            width: 20,
-            height: 20,
+            width: t.iconSize,
+            height: t.iconSize,
             color: "currentColor",
             colorClass: r.Be
         })
     })
 }
 
-function a() {
+function a(e) {
+    let {
+        spec: t
+    } = e;
     return (0, n.jsx)(l, {
+        spec: t,
         icon: (0, n.jsx)(s.Y3C, {
             size: "custom",
-            width: 20,
-            height: 20,
+            width: t.iconSize,
+            height: t.iconSize,
             color: "currentColor",
             colorClass: r.rY
         })

@@ -24,9 +24,9 @@ var s = n(205369),
     C = n(343360),
     E = n(488926),
     I = n(652215);
-let b = "DRAGGABLE_GUILD_CHANNEL";
+let N = "DRAGGABLE_GUILD_CHANNEL";
 
-function N(e, t) {
+function b(e, t) {
     if (null == e || null == t) return null;
     if (e !== I.YYv) return p.A.getChannel(t);
     let n = m.Ay.getChannels(e),
@@ -35,18 +35,18 @@ function N(e, t) {
 }
 
 function S(e) {
-    return (0, s.T)(b, {
+    return (0, s.T)(N, {
         drop(e, t) {
             let n, s = x.A.getGuildId(),
                 l = t.getItem(),
-                o = (0, C.QO)(N(s, l.id), l.position, e.channel, e.position, l.channelList);
+                o = (0, C.QO)(b(s, l.id), l.position, e.channel, e.position, l.channelList);
             if (null == o) return;
-            let u = N(s, l.id);
+            let u = b(s, l.id);
             if (null == u) return;
             let h = g.A.getCategories(s),
                 A = _.A.getGuild(s);
             if (null == A) return;
-            let m = (0, C.Zj)(u, N(s, o.referenceId), o.parentId, h);
+            let m = (0, C.Zj)(u, b(s, o.referenceId), o.parentId, h);
             if (0 !== m.length) {
                 if (s === I.YYv) return void(0, d.S_)(m);
                 if (m = m.filter(e => {
@@ -110,7 +110,7 @@ function S(e) {
             sortingPosition: t.isOver() && t.canDrop() ? n.position : null,
             sortingParent: t.isOver() && t.canDrop() ? n.parentId : null
         }
-    })((0, l.I)(b, {
+    })((0, l.I)(N, {
         canDrag(e) {
             let {
                 channel: t

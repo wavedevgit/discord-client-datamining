@@ -23,8 +23,8 @@ var i = n(627968),
     C = n(884415),
     E = n(775946),
     I = n(588224),
-    b = n(652215),
-    N = n(37411),
+    N = n(652215),
+    b = n(37411),
     S = n(985018),
     T = n(728444),
     y = n(811094),
@@ -112,7 +112,7 @@ let R = s.memo(function(e) {
         mentionCount: m.Ay.getMentionCount(t.id),
         isMentionLowImportance: m.Ay.getIsMentionLowImportance(t.id)
     })), P = (0, o.bG)([A.A], () => A.A.isMuted(t.id)), w = s.useCallback(e => {
-        (0, p.JA)(t, !e.shiftKey, N.H9.CHANNEL_LIST)
+        (0, p.JA)(t, !e.shiftKey, b.H9.CHANNEL_LIST)
     }, [t]), k = s.useCallback(() => {
         u.A.preload(t.guild_id, t.id)
     }, [t.guild_id, t.id]), V = s.useCallback(e => {
@@ -203,7 +203,7 @@ let R = s.memo(function(e) {
             collapsed: !v && 1 !== L.length,
             collapsedMax: 6,
             voiceStates: L,
-            location: b.ThZ.GUILD_CHANNEL_LIST,
+            location: N.ThZ.GUILD_CHANNEL_LIST,
             isThread: !0
         })]
     })

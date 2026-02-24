@@ -25,10 +25,10 @@ var i = n(627968),
 function E(e) {
     let {
         channelId: t
-    } = e, E = (0, l.bG)([g.A], () => g.A.getChannel(t)), I = (0, l.bG)([g.A], () => g.A.getChannel(E?.parent_id)), b = (0, l.bG)([_.A], () => _.A.getGuild(E?.getGuildId())), N = (0, o.Ay)(E), S = s.useRef(!1);
+    } = e, E = (0, l.bG)([g.A], () => g.A.getChannel(t)), I = (0, l.bG)([g.A], () => g.A.getChannel(E?.parent_id)), N = (0, l.bG)([_.A], () => _.A.getGuild(E?.getGuildId())), b = (0, o.Ay)(E), S = s.useRef(!1);
     if (s.useEffect(() => {
             null == E || S.current || (S.current = !0, (0, f.rH)(E))
-        }, [E]), null == E || null == b) return null;
+        }, [E]), null == E || null == N) return null;
     let T = (0, i.jsx)(p.A, {
         channel: E
     });
@@ -42,8 +42,8 @@ function E(e) {
             children: (0, h.zF)({
                 channel: E,
                 parentChannel: I,
-                channelName: N,
-                guild: b,
+                channelName: b,
+                guild: N,
                 inSidebar: !0,
                 handleContextMenu: function(e) {
                     (0, r.L3)(e, async () => {
@@ -64,7 +64,7 @@ function E(e) {
             className: C.T,
             children: (0, i.jsx)(c.A, {
                 channel: E,
-                guild: b,
+                guild: N,
                 chatInputType: d.oU.SIDEBAR
             }, t)
         })]

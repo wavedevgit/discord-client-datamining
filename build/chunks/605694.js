@@ -29,10 +29,10 @@ var i = n(627968),
     N = n(339580),
     S = n(961350),
     C = n(760751),
-    R = n(403362),
-    k = n(183555),
-    L = n(622543),
-    O = n(466853),
+    k = n(403362),
+    R = n(183555),
+    O = n(622543),
+    L = n(466853),
     w = n(985018),
     P = n(442716);
 let D = /{{(.*?)}}/g,
@@ -475,7 +475,7 @@ let Q = Object.assign(function(e) {
     var t, n;
     let a, r, u, p, I, {
             trackUserProfileAction: j
-        } = (0, k.NJ)(),
+        } = (0, R.NJ)(),
         {
             user: v,
             widget: E,
@@ -539,7 +539,7 @@ let Q = Object.assign(function(e) {
             isLoading: en,
             hasData: ei,
             components: el
-        } = (t = v.id, n = E.applicationId, a = (0, f.A)(), r = (0, c.bG)([N.A], () => N.A.getUserIdentityByApplication(t, n)), u = (0, c.bG)([L.A], () => L.A.getApplicationWidgetConfig(n)), p = (0, c.bG)([N.A, L.A], () => null == N.A.getUserIdentities(t) || null == L.A.applicationWidgetConfigs), I = l.useMemo(() => {
+        } = (t = v.id, n = E.applicationId, a = (0, f.A)(), r = (0, c.bG)([N.A], () => N.A.getUserIdentityByApplication(t, n)), u = (0, c.bG)([O.A], () => O.A.getApplicationWidgetConfig(n)), p = (0, c.bG)([N.A, O.A], () => null == N.A.getUserIdentities(t) || null == O.A.applicationWidgetConfigs), I = l.useMemo(() => {
             var e, t;
             if (null == u) return null;
             let n = G[u.widgetTemplateId];
@@ -559,10 +559,10 @@ let Q = Object.assign(function(e) {
                 }] : e.type === o.f.MEDIA ? [e.name, {
                     type: "unfurled_media",
                     media: (0, b.Uv)(e.value)
-                }] : (0, R.xb)(e)) ?? [], ...Object.entries({
+                }] : (0, k.xb)(e)) ?? [], ...Object.entries({
                     username: e.profile?.username,
                     ...e.profile?.data?.primary
-                }).filter(R.QE).map(e => {
+                }).filter(k.QE).map(e => {
                     let [t, n] = e;
                     if ("object" == typeof n) {
                         if ("url" in n && "proxy_url" in n && "loading_state" in n) return [t, {
@@ -578,7 +578,7 @@ let Q = Object.assign(function(e) {
                         value: n
                     }];
                     return null
-                }).filter(R.Vq)]),
+                }).filter(k.Vq)]),
                 config: t,
                 numberFormat: a
             });
@@ -613,7 +613,7 @@ let Q = Object.assign(function(e) {
             hasData: null != r,
             components: I
         });
-    return null == el ? null : (0, i.jsxs)(O.A, {
+    return null == el ? null : (0, i.jsxs)(L.A, {
         ...e,
         userId: v.id,
         widget: E,

@@ -1,6 +1,6 @@
 /** chunk id: 228053, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => R
+    A: () => k
 });
 var i = n(627968),
     l = n(64700),
@@ -86,7 +86,7 @@ function C(e) {
     })
 }
 
-function R(e) {
+function k(e) {
     let {
         wishlist: t,
         handleOpenUserProfileModal: n,
@@ -100,13 +100,13 @@ function R(e) {
         applicationId: b.XR,
         userIds: A,
         includeWishlists: !1
-    }), N = l.useMemo(() => new Set(t?.items.map(e => e.skuId) ?? []), [t]), R = y.recommendations.filter(e => !N.has(e.skuId)).slice(0, c);
+    }), N = l.useMemo(() => new Set(t?.items.map(e => e.skuId) ?? []), [t]), k = y.recommendations.filter(e => !N.has(e.skuId)).slice(0, c);
     return "success" !== y.state ? (0, i.jsx)("div", {
         className: S.g4,
         children: (0, i.jsx)(f.k, {})
-    }) : 0 === R.length ? null : (0, i.jsx)("ul", {
+    }) : 0 === k.length ? null : (0, i.jsx)("ul", {
         className: s()(S.Vg, d),
-        children: R.map(e => E ? h ? (0, i.jsx)(I.J, {
+        children: k.map(e => E ? h ? (0, i.jsx)(I.J, {
             sku: e.sku,
             wishlistId: t?.id,
             wishlistOwner: x,

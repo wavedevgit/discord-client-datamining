@@ -23,8 +23,8 @@ var i = n(627968),
     C = n(694318),
     E = n(143413),
     I = n(763754),
-    b = n(467073),
-    N = n(491182),
+    N = n(467073),
+    b = n(491182),
     S = n(860227),
     T = n(756369),
     y = n(538355),
@@ -62,7 +62,7 @@ let k = s.memo(function e(t) {
         $ = (0, u.A)(s?.id),
         {
             disableReactionCreates: Z
-        } = (0, b.A)(s),
+        } = (0, N.A)(s),
         {
             content: ee,
             hasSpoilerEmbeds: et,
@@ -97,7 +97,7 @@ let k = s.memo(function e(t) {
         compact: o,
         count: 1,
         collapsedReason: n
-    }) : (0, i.jsx)(N.A, {
+    }) : (0, i.jsx)(b.A, {
         compact: o,
         className: r()(D, {
             [w.M1]: (0, x.ec)(l),
@@ -156,7 +156,7 @@ function V(e) {
         compact: s,
         collapsedReason: l
     } = e;
-    return (0, i.jsx)(N.A, {
+    return (0, i.jsx)(b.A, {
         className: t,
         compact: s,
         role: "group",

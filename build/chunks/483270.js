@@ -23,8 +23,8 @@ var i = n(627968),
     C = n(509536),
     E = n(201275),
     I = n(111864),
-    b = n(657048),
-    N = n(561010),
+    N = n(657048),
+    b = n(561010),
     S = n(219065),
     T = n(342296),
     y = n(616356),
@@ -53,7 +53,7 @@ let W = k.Ay.getEnableHardwareAcceleration(),
             sectionId: l,
             userId: r,
             guildOwnerId: a
-        } = e, o = s.useRef(null), d = (0, h.bG)([L.A], () => L.A.isTyping(t.id, r)), A = (0, h.bG)([v.Ay], () => v.Ay.getMember(t.guild_id, r)), m = (0, h.bG)([j.A], () => A?.colorRoleId != null ? j.A.getRole(t.guild_id, A.colorRoleId)?.name : void 0, [t.guild_id, A]), _ = (0, h.bG)([M.default], () => M.default.getUser(r)), f = (0, h.bG)([M.default], () => M.default.getCurrentUser()), x = _?.id === f?.id, E = (0, h.bG)([R.A, O.A], () => x ? O.A.getStatus() : R.A.getStatus(r, t.guild_id)), b = (0, h.bG)([R.A], () => R.A.isMobileOnline(r)), N = (0, h.bG)([R.A, O.A], () => x ? O.A.getActivities() : R.A.getActivities(r, t.guild_id)), D = (0, h.bG)([y.A], () => y.A.getAnyStreamForUser(r)), G = (0, c.rm)(r), P = (0, h.bG)([S.A], () => S.A.canUserViewChannel(t.id, l, r)), k = _?.id != null && _.id === a, F = s.useCallback(e => {
+        } = e, o = s.useRef(null), d = (0, h.bG)([L.A], () => L.A.isTyping(t.id, r)), A = (0, h.bG)([v.Ay], () => v.Ay.getMember(t.guild_id, r)), m = (0, h.bG)([j.A], () => A?.colorRoleId != null ? j.A.getRole(t.guild_id, A.colorRoleId)?.name : void 0, [t.guild_id, A]), _ = (0, h.bG)([M.default], () => M.default.getUser(r)), f = (0, h.bG)([M.default], () => M.default.getCurrentUser()), x = _?.id === f?.id, E = (0, h.bG)([R.A, O.A], () => x ? O.A.getStatus() : R.A.getStatus(r, t.guild_id)), N = (0, h.bG)([R.A], () => R.A.isMobileOnline(r)), b = (0, h.bG)([R.A, O.A], () => x ? O.A.getActivities() : R.A.getActivities(r, t.guild_id)), D = (0, h.bG)([y.A], () => y.A.getAnyStreamForUser(r)), G = (0, c.rm)(r), P = (0, h.bG)([S.A], () => S.A.canUserViewChannel(t.id, l, r)), k = _?.id != null && _.id === a, F = s.useCallback(e => {
             null != _ && (0, p.L3)(e, async () => {
                 let {
                     default: e
@@ -113,14 +113,14 @@ let W = k.Ay.getEnableHardwareAcceleration(),
                     currentUser: f,
                     nick: A?.nick,
                     status: E,
-                    activities: N,
+                    activities: b,
                     colorString: A?.colorString,
                     colorStrings: A?.colorStrings,
                     colorRoleName: m,
                     isTyping: d,
                     channel: t,
                     guildId: t.guild_id,
-                    isMobile: b,
+                    isMobile: N,
                     selected: X,
                     applicationStream: D,
                     premiumSince: null == J ? null : new Date(J),
@@ -162,7 +162,7 @@ let W = k.Ay.getEnableHardwareAcceleration(),
                 title: n,
                 count: s
             }),
-            children: [null != r ? (0, i.jsx)(b.A, {
+            children: [null != r ? (0, i.jsx)(N.A, {
                 className: K.UT,
                 ...r
             }) : null, (0, i.jsxs)("span", {
@@ -205,8 +205,8 @@ function J(e) {
         {
             analyticsLocations: I
         } = (0, f.Ay)(_.A.MEMBER_LIST),
-        b = (0, N.q)(x.id, C),
-        S = b.filter(e => e.userIds.length > 0).reverse()[0],
+        N = (0, b.q)(x.id, C),
+        S = N.filter(e => e.userIds.length > 0).reverse()[0],
         {
             navigator: T,
             listRef: y
@@ -250,7 +250,7 @@ function J(e) {
             }),
             listRef: a
         }),
-        v = 0 === b.length || b.every(e => 0 === e.userIds.length);
+        v = 0 === N.length || N.every(e => 0 === e.userIds.length);
     if (s.useEffect(() => {
             G.default.track(B.HAw.MEMBER_LIST_VIEWED, {
                 channel_id: x.id,
@@ -277,7 +277,7 @@ function J(e) {
                         renderSection: e => {
                             let {
                                 section: t
-                            } = e, n = b[t];
+                            } = e, n = N[t];
                             return (0, i.jsx)(X, {
                                 id: n.id,
                                 label: n.label,
@@ -293,7 +293,7 @@ function J(e) {
                             } = e, {
                                 userIds: s,
                                 id: l
-                            } = b[t];
+                            } = N[t];
                             return (0, i.jsx)(z, {
                                 channel: x,
                                 sectionId: l,
@@ -301,13 +301,13 @@ function J(e) {
                                 guildOwnerId: R
                             }, s[n])
                         },
-                        footerHeight: e => 80 * (b[e] === S && x.type === B.rbe.PRIVATE_THREAD),
-                        renderFooter: e => b[e.section] === S ? (0, i.jsx)(q, {
+                        footerHeight: e => 80 * (N[e] === S && x.type === B.rbe.PRIVATE_THREAD),
+                        renderFooter: e => N[e.section] === S ? (0, i.jsx)(q, {
                             channel: x
                         }, "footer") : null,
                         innerAriaLabel: H.intl.string(H.t["9Oq93m"]),
                         innerTag: "ul",
-                        sections: b.map(e => e.userIds.length),
+                        sections: N.map(e => e.userIds.length),
                         fade: !0,
                         ...j,
                         ...e

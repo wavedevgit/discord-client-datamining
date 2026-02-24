@@ -1,6 +1,6 @@
 /** chunk id: 232516, original params: e,t,i (module,exports,require) **/
 i.d(t, {
-    A: () => u
+    A: () => c
 });
 var n = i(627968);
 i(64700);
@@ -10,12 +10,12 @@ var s = i(937008),
     o = i(802246),
     a = i(788868),
     d = i(751690);
-let u = function(e) {
+let c = function(e) {
     let {
         onSelectSku: t,
         priceOptions: i,
-        giftRecipient: u,
-        onWishlistItemClick: c
+        giftRecipient: c,
+        onWishlistItemClick: u
     } = e, {
         claimableRewards: m
     } = (0, s.Pv)(), _ = null != m && m.length > 0, f = (0, r.T)("Select Gift Option");
@@ -35,11 +35,11 @@ let u = function(e) {
                 removeTopMargin: !0
             })]
         }), f ? (0, n.jsx)(o.s, {
-            giftRecipient: u,
-            onWishlistItemClick: c
+            giftRecipient: c,
+            onWishlistItemClick: u
         }) : (0, n.jsx)(o.A, {
-            giftRecipient: u,
-            onWishlistItemClick: c
+            giftRecipient: c,
+            onWishlistItemClick: u
         })]
     })
 }

@@ -23,8 +23,8 @@ var i = n(627968),
     C = n(734057),
     E = n(696451),
     I = n(71393),
-    b = n(576705),
-    N = n(383501),
+    N = n(576705),
+    b = n(383501),
     S = n(222823),
     T = n(543465),
     y = n(287809),
@@ -194,9 +194,9 @@ class P extends R.Ay {
             forceTopLevelThread: C,
             embeddedApps: E,
             resolvedUnreadSetting: I,
-            withGuildIcon: b,
-            enableActivities: N
-        } = this.props, S = N && null != E && E.length > 0, T = (0, m.M)(x), {
+            withGuildIcon: N,
+            enableActivities: b
+        } = this.props, S = b && null != E && E.length > 0, T = (0, m.M)(x), {
             standardPopoverGap: y
         } = (0, v.eP)({
             guildId: e.getGuildId() ?? void 0,
@@ -234,7 +234,7 @@ class P extends R.Ay {
                     isFavoriteSuggestion: f,
                     channelTypeOverride: C ? D.rbe.GUILD_TEXT : void 0,
                     resolvedUnreadSetting: I,
-                    withGuildIcon: b,
+                    withGuildIcon: N,
                     "aria-label": (0, g.Ay)({
                         channel: e,
                         unread: l,
@@ -269,11 +269,11 @@ function k(e) {
         unread: S.Ay.hasUnread(t.id),
         ackMessageId: S.Ay.ackMessageId(t.id),
         isLowImportanceMention: S.Ay.getIsMentionLowImportance(t.id)
-    })), g = (0, a.bG)([T.Ay], () => T.Ay.resolveUnreadSetting(t)), m = (0, a.cf)([C.A, b.A], () => {
+    })), g = (0, a.bG)([T.Ay], () => T.Ay.resolveUnreadSetting(t)), m = (0, a.cf)([C.A, N.A], () => {
         let e = C.A.getChannel(t.parent_id);
         return {
-            canManageChannel: b.A.can(D.xBc.MANAGE_CHANNELS, t),
-            canReorderChannel: !0 !== s && (n.id === G.Vc || (null != e ? b.A.can(D.xBc.MANAGE_CHANNELS, e) : b.A.can(D.xBc.MANAGE_CHANNELS, n)))
+            canManageChannel: N.A.can(D.xBc.MANAGE_CHANNELS, t),
+            canReorderChannel: !0 !== s && (n.id === G.Vc || (null != e ? N.A.can(D.xBc.MANAGE_CHANNELS, e) : N.A.can(D.xBc.MANAGE_CHANNELS, n)))
         }
     }), I = (0, a.bG)([f.A], () => f.A.shouldIndicateNewChannel(n.id, t.id)), {
         needSubscriptionToAccess: y,
@@ -289,7 +289,7 @@ function k(e) {
         enableActivities: L,
         resolvedUnreadSetting: g
     }), U = (0, A.Ay)(t);
-    return (0, a.bG)([N.A, E.Ay], () => N.A.getChannelId() !== t.id && E.Ay.isCurrentUserGuest(t.getGuildId())) ? null : (0, i.jsx)(w, {
+    return (0, a.bG)([b.A, E.Ay], () => b.A.getChannelId() !== t.id && E.Ay.isCurrentUserGuest(t.getGuildId())) ? null : (0, i.jsx)(w, {
         ...u,
         ...m,
         ...e,

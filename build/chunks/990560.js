@@ -51,8 +51,8 @@ function N(e) {
             analyticsLocations: M
         } = (0, o.Ay)(),
         w = (0, r.bG)([p.A], () => j?.guild != null ? p.A.getGuild(j.guild.id) : null, [j]),
-        D = (0, r.bG)([h.default], () => h.default.getId()),
-        k = (0, r.bG)([c.Ay], () => c.Ay.getGuildScheduledEvent(P.guild_scheduled_event?.id), [P]),
+        k = (0, r.bG)([h.default], () => h.default.getId()),
+        D = (0, r.bG)([c.Ay], () => c.Ay.getGuildScheduledEvent(P.guild_scheduled_event?.id), [P]),
         O = () => {
             null != P.channel && a.Ay.transitionToInviteSync(P)
         },
@@ -70,7 +70,7 @@ function N(e) {
         G = (0, i.jsx)(I.A, {
             onTransitionToInviteChannel: O,
             onAcceptInstantInvite: U,
-            currentUserId: D,
+            currentUserId: k,
             guild: w,
             invite: P,
             message: n
@@ -99,7 +99,7 @@ function N(e) {
                     G = (0, i.jsx)(E.A, {
                         onTransitionToInviteChannel: O,
                         onAcceptInstantInvite: U,
-                        currentUserId: D,
+                        currentUserId: k,
                         invite: P,
                         message: n
                     });
@@ -116,7 +116,7 @@ function N(e) {
                         G = (0, i.jsx)(S.A, {
                             onTransitionToInviteChannel: O,
                             onAcceptInstantInvite: U,
-                            currentUserId: D,
+                            currentUserId: k,
                             message: n,
                             guild: w,
                             invite: P
@@ -125,7 +125,7 @@ function N(e) {
                     }
                     if ((0, _.ly)(P)) {
                         G = (0, i.jsx)(u.Ay, {
-                            guildScheduledEvent: k,
+                            guildScheduledEvent: D,
                             guild: P.guild,
                             channel: P.channel,
                             isMember: null != w,

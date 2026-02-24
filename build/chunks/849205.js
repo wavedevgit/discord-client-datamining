@@ -30,7 +30,7 @@ function m(e) {
         I = (0, a.a)({
             displayNameStyles: m?.displayNameStyles
         }),
-        b = (0, o.bG)({
+        N = (0, o.bG)({
             channelId: e.channel.id
         });
     return (0, i.jsxs)(i.Fragment, {
@@ -59,7 +59,7 @@ function m(e) {
                         className: I,
                         children: C ?? h.Ay.getName(m)
                     })
-                }), b && (0, i.jsx)(l.m, {
+                }), N && (0, i.jsx)(l.m, {
                     text: p.intl.string(p.t.QyZ4Td),
                     children: (0, i.jsx)(r.m5V, {
                         size: "xs",

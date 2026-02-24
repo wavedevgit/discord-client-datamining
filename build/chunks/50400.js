@@ -23,8 +23,8 @@ var i = n(627968),
     C = n(531685),
     E = n(941971),
     I = n(375855),
-    b = n(900848),
-    N = n(65611),
+    N = n(900848),
+    b = n(65611),
     S = n(652215),
     T = n(985018),
     y = n(308294);
@@ -195,7 +195,7 @@ class R extends s.PureComponent {
         });
         return (0, i.jsx)(l.animated.div, {
             style: this.getAnimatedStyle(),
-            children: (0, i.jsxs)(b.c, {
+            children: (0, i.jsxs)(N.c, {
                 children: [(0, i.jsx)(E.A, {
                     hovered: !g && p,
                     selected: !g && n,
@@ -206,8 +206,8 @@ class R extends s.PureComponent {
                     children: (0, i.jsx)(o.Qk9, {
                         rounded: !0,
                         selected: !1,
-                        lowerBadge: s > 0 ? (0, N.wN)(s, void 0, !0) : null,
-                        upperBadge: (0, N.oi)({
+                        lowerBadge: s > 0 ? (0, b.wN)(s, void 0, !0) : null,
+                        upperBadge: (0, b.oi)({
                             audio: r,
                             video: a,
                             screenshare: c,
@@ -234,9 +234,9 @@ let O = s.forwardRef(function(e, t) {
         C = (0, a.bG)([_.A], () => _.A.getChannelId(), []),
         E = (0, a.bG)([m.Ay], () => m.Ay.getMentionCount(n), [n]),
         I = c === n,
-        b = !1,
-        N = !1;
-    (I || f) && (b = u === S._Of.VOICE, N = u === S._Of.VIDEO);
+        N = !1,
+        b = !1;
+    (I || f) && (N = u === S._Of.VOICE, b = u === S._Of.VIDEO);
     let T = (0, o.rdh)(o.LU0.modules.guildbar.AVATAR_SIZE);
     return (0, i.jsx)(R, {
         ...e,
@@ -245,8 +245,8 @@ let O = s.forwardRef(function(e, t) {
         unread: E > 0,
         selected: C === n,
         badge: E,
-        audio: b,
-        video: N,
+        audio: N,
+        video: b,
         stream: A,
         isCurrentUserInThisDMCall: I,
         size: T,

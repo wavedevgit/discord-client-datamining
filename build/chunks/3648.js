@@ -24,8 +24,8 @@ var i = n(627968),
     C = n(49999),
     E = n(788868),
     I = n(985018),
-    b = n(407494),
-    N = n(101616),
+    N = n(407494),
+    b = n(101616),
     S = n(585048);
 
 function T(e) {
@@ -71,7 +71,7 @@ function y(e) {
         x(C.i.USER_DISMISS), o()
     }, [o, x]), I = s.useCallback(() => {
         x(C.i.USER_DISMISS)
-    }, [x]), b = s.useCallback(() => {
+    }, [x]), N = s.useCallback(() => {
         x(C.i.USER_DISMISS), n()
     }, [n, x]);
     return (0, i.jsxs)(i.Fragment, {
@@ -82,7 +82,7 @@ function y(e) {
         }), t && f === r.M.GAME_SHOP_WISHLIST_POPOVER && !u && !h && (0, i.jsx)(T, {
             targetElementRef: d,
             onRequestClose: I,
-            onActionClick: b
+            onActionClick: N
         })]
     })
 }
@@ -117,9 +117,9 @@ function v(e, t) {
         tooltipConfig: p,
         shouldScalePreview: !1,
         renderPreview: () => (0, i.jsx)(f.e, {
-            containerClassName: b.Nr,
-            backgroundImageClassName: b.GC,
-            foregroundImageClassName: b.wP,
+            containerClassName: N.Nr,
+            backgroundImageClassName: N.GC,
+            foregroundImageClassName: N.wP,
             sku: e.sku,
             shape: "custom"
         }),
@@ -142,9 +142,9 @@ function j(e) {
         data: r
     } = (0, u.YY)(t.sku.applicationId);
     return (0, i.jsxs)("div", {
-        className: N.D5,
+        className: b.D5,
         children: [n, (0, i.jsx)("div", {
-            className: N.S7,
+            className: b.S7,
             children: (0, i.jsxs)(c.DUT, {
                 onClick: () => {
                     (0, _.a)(t.sku, {
@@ -155,7 +155,7 @@ function j(e) {
                         analyticsLocations: [...s, d.A.SLAYER_STOREFRONT_BREADCRUMB_WISHLIST_ITEM_CARD_GIFT_BUTTON]
                     })
                 },
-                className: N.Hh,
+                className: b.Hh,
                 "aria-label": I.intl.string(I.t.pLPjsb),
                 children: [(0, i.jsx)(c.Text, {
                     variant: "text-sm/semibold",

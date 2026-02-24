@@ -25,7 +25,7 @@ let m = s.memo(function(e) {
         name: f,
         color: x,
         children: C
-    } = t, E = C.map(e => e.id), I = (0, o.A)(e => e.guildId), b = (0, l.bG)([c.A], () => c.A.isFolderExpanded(_)), N = function(e) {
+    } = t, E = C.map(e => e.id), I = (0, o.A)(e => e.guildId), N = (0, l.bG)([c.A], () => c.A.isFolderExpanded(_)), b = function(e) {
         let t = e.children.map(e => {
                 let t = e.id,
                     n = u.A.getGuild(t);
@@ -62,13 +62,13 @@ let m = s.memo(function(e) {
     return (0, i.jsx)(A.A, {
         ...m,
         folderNode: t,
-        expanded: b,
+        expanded: N,
         selected: null != I && E.includes(I),
         mentionCount: T,
         isMentionLowImportance: y,
         unread: v,
         mediaState: S,
-        defaultFolderName: N,
+        defaultFolderName: b,
         onExpandCollapse: j,
         onContextMenu: R
     })

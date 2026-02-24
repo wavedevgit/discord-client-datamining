@@ -36,29 +36,29 @@ function T(e) {
     } = e, {
         live: S,
         recent: C,
-        stream: R
+        stream: k
     } = (0, u.A)(t.id), {
-        voiceChannel: k,
-        voiceActivity: L
+        voiceChannel: R,
+        voiceActivity: O
     } = (0, g.A)({
         userId: t.id,
         guildId: b
-    }), O = (0, l.bG)([s.A], () => s.A.isFetchingUserOutbox(t.id)), w = t.id === n.id, P = (0, l.bG)([c.A, o.A], () => {
+    }), L = (0, l.bG)([s.A], () => s.A.isFetchingUserOutbox(t.id)), w = t.id === n.id, P = (0, l.bG)([c.A, o.A], () => {
         let e = w ? c.A.getStatus() : o.A.getStatus(t.id);
         return e === a.clD.OFFLINE || e === a.clD.INVISIBLE
-    }), D = S.length > 0 || null != R, G = T?.private !== !0 && null == R && null == L && null != k, U = !P && (D || G), M = C.length > 0;
-    return U || M || !O ? U || M || O ? (0, i.jsxs)(A.K, {
+    }), D = S.length > 0 || null != k, G = T?.private !== !0 && null == k && null == O && null != R, U = !P && (D || G), M = C.length > 0;
+    return U || M || !L ? U || M || L ? (0, i.jsxs)(A.K, {
         className: E.XG,
         fade: !0,
         children: [U ? (0, i.jsx)(_.A, {
             heading: v.intl.string(v.t.J6STd9),
             children: (0, i.jsxs)("ul", {
                 className: E.kR,
-                children: [null != R && (0, i.jsx)("li", {
+                children: [null != k && (0, i.jsx)("li", {
                     children: (0, i.jsx)(f.A, {
                         user: t,
                         currentUser: n,
-                        stream: R,
+                        stream: k,
                         onClose: N
                     })
                 }), S.map((e, l) => (0, i.jsx)("li", {
@@ -72,7 +72,7 @@ function T(e) {
                     children: (0, i.jsx)(p.A, {
                         user: t,
                         currentUser: n,
-                        voiceChannel: k,
+                        voiceChannel: R,
                         onClose: N
                     })
                 })]

@@ -24,8 +24,8 @@ var s = n(503698),
     C = n(71393),
     E = n(954571),
     I = n(652793),
-    b = n(652215),
-    N = n(746080),
+    N = n(652215),
+    b = n(746080),
     S = n(634654),
     T = n(985018),
     y = n(568187);
@@ -35,7 +35,7 @@ function v(e) {
         guildId: t,
         selected: n,
         handleClick: s
-    } = e, d = (0, p.YZ)(t, "guild_shop_channel_row"), g = (0, r.bG)([C.A], () => C.A.getGuild(t)), N = g?.features.has(b.GuildFeatures.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE) === !0, v = "false" === o.w.get(S.bJ, "false"), j = (0, r.bG)([u.A], () => u.A.useReducedMotion);
+    } = e, d = (0, p.YZ)(t, "guild_shop_channel_row"), g = (0, r.bG)([C.A], () => C.A.getGuild(t)), b = g?.features.has(N.GuildFeatures.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE) === !0, v = "false" === o.w.get(S.bJ, "false"), j = (0, r.bG)([u.A], () => u.A.useReducedMotion);
     return (0, i.jsx)(I.G, {
         id: `shop-${t}`,
         className: l()(y.A2, {
@@ -64,10 +64,10 @@ function v(e) {
             }), n && (0, i.jsx)(c.DUT, {
                 className: y.b,
                 onClick: e => {
-                    e.stopPropagation(), (0, _.Dr)(a.M.SERVER_SHOP_PHANTOM_PREVIEW), E.default.track(b.HAw.GUILD_SHOP_PREVIEW_CLICK, {
+                    e.stopPropagation(), (0, _.Dr)(a.M.SERVER_SHOP_PHANTOM_PREVIEW), E.default.track(N.HAw.GUILD_SHOP_PREVIEW_CLICK, {
                         ...(0, h.H$)(t),
                         action_taken: S.hN.DISMISS_CHANNEL_ROW
-                    }), d && N || (0, f.bG)(b.BVt.CHANNEL(t, x.Ay.getDefaultChannel(t)?.id))
+                    }), d && b || (0, f.bG)(N.BVt.CHANNEL(t, x.Ay.getDefaultChannel(t)?.id))
                 },
                 "aria-label": T.intl.string(T.t.cpT0Cq),
                 children: (0, i.jsx)(c.aXh, {
@@ -84,7 +84,7 @@ function j(e) {
         guild: t,
         selected: s
     } = e, l = (0, g.P)(t, "guild_shop_channel_row"), r = () => {
-        o.w.set(S.bJ, "true"), (0, f.pX)(b.BVt.CHANNEL(t.id, N.VV.GUILD_SHOP))
+        o.w.set(S.bJ, "true"), (0, f.pX)(N.BVt.CHANNEL(t.id, b.VV.GUILD_SHOP))
     };
     return l ? (0, i.jsx)(v, {
         guildId: t.id,

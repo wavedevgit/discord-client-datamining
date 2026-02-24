@@ -23,11 +23,11 @@ var i = n(627968),
     C = n(652215),
     E = n(985018),
     I = n(359884);
-let b = {
+let N = {
         left: 4,
         right: -12
     },
-    N = [C.lAJ.THREAD_CREATED];
+    b = [C.lAJ.THREAD_CREATED];
 
 function S(e) {
     let {
@@ -39,9 +39,9 @@ function S(e) {
         gotoChannel: d
     } = e, u = (0, a.rm)(n.id ?? ""), h = s.useCallback(e => {
         "ArrowLeft" === e.key && document.querySelector(`[data-recents-channel="${t.id}"]`)?.focus()
-    }, [t.id]), p = N.includes(n.type);
+    }, [t.id]), p = b.includes(n.type);
     return (0, i.jsx)(o.vN3, {
-        offset: b,
+        offset: N,
         children: (0, i.jsxs)("div", {
             className: I.zC,
             onKeyDown: h,
@@ -75,13 +75,13 @@ function T(e) {
         location: "20e3b0_1"
     }, {
         autoTrackExposure: !1
-    }), a = p.hH.useSetting(), A = (0, u.iJ)(n), f = !1, b = 0 === t.messages.length || r()(t.messages[0].timestamp).isSame(r()(), "day"), N = m.default.getUser(g.default.getId())?.hasFlag(C.nhx.SPAMMER) ?? !1, T = [];
+    }), a = p.hH.useSetting(), A = (0, u.iJ)(n), f = !1, N = 0 === t.messages.length || r()(t.messages[0].timestamp).isSame(r()(), "day"), b = m.default.getUser(g.default.getId())?.hasFlag(C.nhx.SPAMMER) ?? !1, T = [];
     if (!t.collapsed) {
         let e = null,
             c = null,
             p = t.messages.slice(0, x.sz);
         p.forEach(t => {
-            if (!b && (null == e || !e.isSame(t.timestamp, "day"))) {
+            if (!N && (null == e || !e.isSame(t.timestamp, "day"))) {
                 let n = (0, _.i$)(t.timestamp, "LL");
                 T.push((0, i.jsx)(h.A, {
                     className: I.yF,
@@ -94,7 +94,7 @@ function T(e) {
                 message: t,
                 compact: a,
                 isGroupStart: o,
-                treatSpam: !N && l && (0, u.kf)(t) && A,
+                treatSpam: !b && l && (0, u.kf)(t) && A,
                 gotoChannel: s
             }, t.id))
         }), t.messages.length >= x.sz && T.push((0, i.jsx)("div", {

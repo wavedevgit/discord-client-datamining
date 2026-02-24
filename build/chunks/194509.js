@@ -6,8 +6,8 @@ r.d(t, {
 var n = r(627968);
 r(64700);
 var a = r(503698),
-    s = r.n(a),
-    l = r(582754),
+    l = r.n(a),
+    s = r(582754),
     i = r(421380),
     d = r(397927),
     o = r(736653),
@@ -27,7 +27,7 @@ let p = e => e === c.pe.TIER_0 ? m.intl.string(m.t.rk4Uu8) : m.intl.string(m.t.V
             premiumModalAnalyticsLocation: g,
             giftMessage: _,
             onClick: f
-        } = e, b = (0, o.Ay)(), v = p(x);
+        } = e, b = (0, o.Ay)(), N = p(x);
         return (0, n.jsx)(u.A, {
             isGift: !0,
             subscriptionTier: x,
@@ -41,17 +41,17 @@ let p = e => e === c.pe.TIER_0 ? m.intl.string(m.t.rk4Uu8) : m.intl.string(m.t.V
                 return (0, n.jsxs)(i.$n, {
                     "data-migration-pending": !0,
                     innerClassName: h.Nq,
-                    color: a ?? ((0, l.Mw)(b) ? i.XD.WHITE : i.XD.BRAND),
+                    color: a ?? ((0, s.Mw)(b) ? i.XD.WHITE : i.XD.BRAND),
                     look: c ?? i.pR.OUTLINED,
-                    className: s()(t, h.xP),
+                    className: l()(t, h.xP),
                     onClick: o,
                     children: [!m && (0, n.jsx)(d.okO, {
                         size: "md",
                         color: "currentColor",
                         className: h.ez
                     }), (0, n.jsx)("span", {
-                        className: s()(h._d, r?.textClassName),
-                        children: r?.textOverride ?? v
+                        className: l()(h._d, r?.textClassName),
+                        children: r?.textOverride ?? N
                     })]
                 })
             }

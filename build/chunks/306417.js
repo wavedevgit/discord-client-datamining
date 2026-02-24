@@ -3,9 +3,9 @@ n.d(t, {
     Dt: () => w,
     Fb: () => P,
     Fh: () => j,
-    Vx: () => D,
+    Vx: () => k,
     e5: () => O,
-    k$: () => k
+    k$: () => D
 }), n(801541);
 var i = n(627968),
     l = n(64700),
@@ -272,7 +272,7 @@ function w(e) {
     })) : void 0 !== a ? a : null
 }
 
-function D(e) {
+function k(e) {
     let {
         isVictor: t,
         isExpired: n,
@@ -311,7 +311,7 @@ function D(e) {
     })
 }
 
-function k(e) {
+function D(e) {
     let {
         isSelected: t,
         size: n,

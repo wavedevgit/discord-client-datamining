@@ -37,14 +37,14 @@ function j(e) {
     } = (0, a.cf)([x.A], () => ({
         activities: x.A.getActivities(t.id),
         isMobileOnline: x.A.isMobileOnline(t.id)
-    })), R = (0, m.A)(t.id), {
-        voiceActivityStatusEnabled: k
+    })), k = (0, m.A)(t.id), {
+        voiceActivityStatusEnabled: R
     } = (0, c.g)({
         location: "UserProfileMutualFriendRow"
     }), {
-        voiceChannel: L
+        voiceChannel: O
     } = (0, d.A)({
-        userId: k ? t.id : void 0,
+        userId: R ? t.id : void 0,
         guildId: v
     });
     return (0, i.jsxs)(s.DUT, {
@@ -89,8 +89,8 @@ function j(e) {
             }), (0, i.jsx)(u.A, {
                 user: t,
                 activities: S,
-                applicationStream: R,
-                voiceChannel: L
+                applicationStream: k,
+                voiceChannel: O
             })]
         })]
     })

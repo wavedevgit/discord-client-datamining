@@ -1,6 +1,6 @@
 /** chunk id: 742710, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => L
+    A: () => O
 });
 var i = n(627968),
     l = n(64700),
@@ -112,7 +112,7 @@ function C(e) {
     })
 }
 
-function R(e) {
+function k(e) {
     let {
         text: t,
         user: n,
@@ -137,7 +137,7 @@ function R(e) {
     })
 }
 
-function k(e) {
+function R(e) {
     let {
         text: t,
         user: n,
@@ -152,7 +152,7 @@ function k(e) {
             action: "PRESS_ADD_COMMENTARY",
             widgetEdited: d
         }), _("editing")
-    }, [d, p]), R = l.useCallback(() => {
+    }, [d, p]), k = l.useCallback(() => {
         let e = A.trim(),
             n = e !== (t ?? "").trim();
         (0, f.oc)(d, u, "" !== e ? e : void 0), _("completed"), n && p({
@@ -160,7 +160,7 @@ function k(e) {
             widgetEdited: d,
             gameId: u
         })
-    }, [d, u, A, t, p]), k = l.useCallback(e => {
+    }, [d, u, A, t, p]), R = l.useCallback(e => {
         I(e)
     }, []);
     return l.useEffect(() => {
@@ -177,12 +177,12 @@ function k(e) {
             id: g,
             value: A,
             placeholder: T,
-            onChange: k,
-            onBlur: R,
+            onChange: R,
+            onBlur: k,
             rows: 3,
             autoFocus: "editing" === h,
             onKeyDown: e => {
-                "Enter" !== e.key || e.shiftKey || (e.preventDefault(), R())
+                "Enter" !== e.key || e.shiftKey || (e.preventDefault(), k())
             },
             maxLength: 200
         })]
@@ -217,7 +217,7 @@ function k(e) {
     })
 }
 
-function L(e) {
+function O(e) {
     let {
         user: t,
         guildId: n,
@@ -232,9 +232,9 @@ function L(e) {
     } = e, {
         applicationId: S,
         comment: C,
-        tags: L
+        tags: O
     } = a, {
-        coverImageUrl: O,
+        coverImageUrl: L,
         gameName: w,
         isLoading: P
     } = (0, c.A)(S), D = {
@@ -246,8 +246,8 @@ function L(e) {
     if (P) return (0, i.jsx)(A.E, {});
     let X = () => (0, i.jsx)(_.A, {
             coverRef: x,
-            className: null == O || d ? void 0 : T.iL,
-            imageSrc: O,
+            className: null == L || d ? void 0 : T.iL,
+            imageSrc: L,
             gameName: w,
             applicationId: S,
             userId: t.id,
@@ -272,20 +272,20 @@ function L(e) {
                     userId: t.id,
                     gameName: w,
                     ...D
-                }), W ? (0, i.jsx)(k, {
+                }), W ? (0, i.jsx)(R, {
                     text: C,
                     user: t,
                     guildId: n,
                     channelId: l,
                     widgetType: o,
                     applicationId: S
-                }) : (0, i.jsx)(R, {
+                }) : (0, i.jsx)(k, {
                     text: C,
                     user: t,
                     guildId: n,
                     channelId: l
                 }), (0, i.jsx)(I.A, {
-                    tags: L,
+                    tags: O,
                     isCurrentUser: U,
                     widgetType: o,
                     applicationId: S,

@@ -24,8 +24,8 @@ var i = n(627968),
     C = n(379848),
     E = n(625180),
     I = n(338771),
-    b = n(44621),
-    N = n(823748),
+    N = n(44621),
+    b = n(823748),
     S = n(395019),
     T = n(453774),
     y = n(44724),
@@ -68,9 +68,9 @@ let V = s.memo(function(e) {
             analyticsLocations: J
         } = (0, m.Ay)(), Q = (0, T.A)(G, "rtc-activity-panel"), $ = k(G, v, S), {
             enabled: Z
-        } = b._.useConfig({
+        } = N._.useConfig({
             location: "activity-panel"
-        }), ee = (0, N.Bp)("activity-panel"), et = (0, o.bG)([R.A], () => R.A.hasConsented(D.YAq.PERSONALIZATION)), en = (0, N.TF)(C?.id, {
+        }), ee = (0, b.Bp)("activity-panel"), et = (0, o.bG)([R.A], () => R.A.hasConsented(D.YAq.PERSONALIZATION)), en = (0, b.TF)(C?.id, {
             shouldFetch: ee
         }), ei = Z && ee && et && en, es = s.useCallback(() => {
             r()(null != v, "Received null activity"), L.default.track(D.HAw.ACTIVITY_PANEL_BUTTON_CLICKED, {

@@ -18,20 +18,20 @@ function u(e) {
         onError: c
     } = e, {
         analyticsLocations: _
-    } = (0, i.Ay)(), h = (0, s.bG)([r.A], () => null != t ? r.A.getFirstWishlistId(t.id) : null), m = (0, o.rJ)(h, n), [T, p] = a.useState(null), [A, f] = a.useState(!1), O = null !== T ? T : m;
+    } = (0, i.Ay)(), h = (0, s.bG)([r.A], () => null != t ? r.A.getFirstWishlistId(t.id) : null), m = (0, o.rJ)(h, n), [T, p] = a.useState(null), [A, O] = a.useState(!1), f = null !== T ? T : m;
     a.useEffect(() => {
-        p(null), f(!1)
+        p(null), O(!1)
     }, [n]);
     let E = a.useCallback(async () => {
         if (null != t && !A)
-            if (f(!0), O && null != h) {
+            if (O(!0), f && null != h) {
                 p(!1);
                 try {
                     await l.A.removeSkuFromWishlist(h, n, _), d?.()
                 } catch (e) {
                     c?.(e)
                 } finally {
-                    p(null), f(!1)
+                    p(null), O(!1)
                 }
             } else {
                 p(!0);
@@ -40,12 +40,12 @@ function u(e) {
                 } catch (e) {
                     c?.(e)
                 } finally {
-                    p(null), f(!1)
+                    p(null), O(!1)
                 }
             }
-    }, [t, A, O, h, n, _, u, d, c]);
+    }, [t, A, f, h, n, _, u, d, c]);
     return {
-        isWishlisted: O,
+        isWishlisted: f,
         isBusy: A,
         handleToggle: E
     }

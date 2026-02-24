@@ -23,8 +23,8 @@ var i = n(627968),
     C = n(686502),
     E = n(175203),
     I = n(263854),
-    b = n(794927),
-    N = n(652215),
+    N = n(794927),
+    b = n(652215),
     S = n(439197);
 
 function T(e) {
@@ -38,7 +38,7 @@ function T(e) {
         inCall: R,
         totalNumberOfParticipants: O,
         popoutType: L
-    } = e, M = (0, g.Us)() === N.BRT.POPOUT, D = (0, a.bG)([f.A], () => f.A.getGuild(v.guild_id), [v.guild_id]), {
+    } = e, M = (0, g.Us)() === b.BRT.POPOUT, D = (0, a.bG)([f.A], () => f.A.getGuild(v.guild_id), [v.guild_id]), {
         dismissedActivityEntryPointTileChannel: G
     } = (0, I.P)(), U = (0, a.bG)([h.A], () => h.A.getUserParticipantCount(v.id), [v]), P = (0, _.vp)(v.id, t), w = s.useCallback(() => {
         (0, r.r)(() => {
@@ -90,7 +90,7 @@ function T(e) {
         inPopout: M,
         handleClose: w,
         userParticipantCount: U
-    })) : Y.push(e => (0, i.jsx)(b.A, {
+    })) : Y.push(e => (0, i.jsx)(N.A, {
         width: e,
         channel: v,
         guild: D,

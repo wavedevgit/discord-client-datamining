@@ -24,7 +24,7 @@ var i = n(627968),
     C = n(652215),
     E = n(985018),
     I = n(391523);
-let b = {
+let N = {
     [C.WTw.INSTALLING]: {
         [p.pJ.NONE]: (e, t) => E.intl.formatToPlainString(E.t["p+2sE+"], {
             name: e
@@ -77,7 +77,7 @@ let b = {
         })
     }
 };
-class N extends s.PureComponent {
+class b extends s.PureComponent {
     renderProgressBody = (e, t) => {
         let {
             state: n,
@@ -91,7 +91,7 @@ class N extends s.PureComponent {
         if (null == l || null == r || null == s) return null;
         let o = e[e.length - 1] / t * 1e3,
             c = 0 !== o ? Math.max(1, (r - l) / o) : null,
-            d = b[a],
+            d = N[a],
             u = null != d ? Object.keys(d) : [],
             {
                 unit: h,
@@ -157,7 +157,7 @@ class S extends s.PureComponent {
             firstState: t,
             isPaused: n
         } = this.props;
-        return null == e || null == t ? E.intl.string(E.t.cw57ar) : (0, i.jsx)(N, {
+        return null == e || null == t ? E.intl.string(E.t.cw57ar) : (0, i.jsx)(b, {
             application: e,
             state: t,
             isPaused: n

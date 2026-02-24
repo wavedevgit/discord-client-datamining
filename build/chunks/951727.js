@@ -124,8 +124,8 @@ function j(e, t) {
         canShowVoteCounts: P,
         canSubmitVote: M,
         expirationLabel: w = T.intl.string(T.t["e+J3JZ"]),
-        hasSelectedAnswer: D,
-        hasVoted: k,
+        hasSelectedAnswer: k,
+        hasVoted: D,
         isEditingVote: O,
         isExpired: U,
         isInteractive: G,
@@ -146,10 +146,10 @@ function j(e, t) {
             c = 0 === q ? 0 : d / q,
             u = F.has(r),
             _ = d >= z && 0 !== d,
-            m = k && (o?.me_vote ?? !1),
+            m = D && (o?.me_vote ?? !1),
             g = (t = {
                 didSelfVote: m,
-                hasVoted: k,
+                hasVoted: D,
                 isExpired: U,
                 isSelected: u,
                 isLeader: _,
@@ -222,7 +222,7 @@ function j(e, t) {
     }), Q = (0, i.YW)({
         isExpired: U,
         canSubmitVote: M,
-        hasVoted: k,
+        hasVoted: D,
         isEditingVote: O,
         canRemoveVote: R,
         isInteractive: G,
@@ -236,7 +236,7 @@ function j(e, t) {
     }, () => ({
         label: T.intl.string(T.t.JwkNU4),
         presentation: "button",
-        enabled: D,
+        enabled: k,
         type: "submit"
     })).with({
         canRemoveVote: !0
@@ -283,7 +283,7 @@ function j(e, t) {
         presentation: "text",
         enabled: !0,
         type: "showVoterDetails"
-    })), Z = !G || U || k || W ? void 0 : {
+    })), Z = !G || U || D || W ? void 0 : {
         label: T.intl.string(T.t["/KHAUF"]),
         presentation: "textButton",
         enabled: !0,
@@ -327,9 +327,9 @@ function j(e, t) {
         isInteractive: G,
         canTapAnswers: L,
         canSelectMultipleAnswers: $,
-        hasSelectedAnswer: D,
+        hasSelectedAnswer: k,
         canShowVoteCounts: P,
-        hasVoted: k,
+        hasVoted: D,
         isExpired: U,
         myAvatarUrl: b,
         secondaryAction: X,

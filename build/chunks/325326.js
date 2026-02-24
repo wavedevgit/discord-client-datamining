@@ -31,8 +31,8 @@ let h = () => {
             loading: C,
             items: E,
             hasMore: I,
-            cursor: b,
-            errored: N
+            cursor: N,
+            errored: b
         } = (0, s.cf)([c.A], () => ({
             initialized: c.A.initialized,
             loading: c.A.loading,
@@ -52,8 +52,8 @@ let h = () => {
         }, [t, x]);
         let y = (0, r.A)();
         i.useEffect(() => () => {
-            h ? !y() && (N || E.length > 100) && (0, o.S3)() : n && E.length > 100 && (0, o.S3)()
-        }, [n, E, h, y, N]), i.useEffect(() => {
+            h ? !y() && (b || E.length > 100) && (0, o.S3)() : n && E.length > 100 && (0, o.S3)()
+        }, [n, E, h, y, b]), i.useEffect(() => {
             let e = g && t;
             (!x || e) && (0, o.ni)({
                 limit: p ?? (A ? 8 : 20),
@@ -63,8 +63,8 @@ let h = () => {
             })
         }, [x, g, t, A, S, T, p]);
         let v = i.useCallback(async e => {
-            !m.current && x && I && null != b && (e || !N) && (m.current = !0, f(!0), await (0, o.ni)({
-                after: b,
+            !m.current && x && I && null != N && (e || !b) && (m.current = !0, f(!0), await (0, o.ni)({
+                after: N,
                 with_mentions: A,
                 roles_filter: S,
                 everyone_filter: T,
@@ -72,7 +72,7 @@ let h = () => {
             }, () => {
                 m.current = !1
             }), f(!1))
-        }, [x, I, b, N, A, S, T]);
+        }, [x, I, N, b, A, S, T]);
         return {
             initialized: x,
             loading: C,
@@ -83,7 +83,7 @@ let h = () => {
             setReadNotifItemToAcked: e => {
                 e.acked || (e.acked = !0)
             },
-            errored: N
+            errored: b
         }
     })({
         isFocused: !0,

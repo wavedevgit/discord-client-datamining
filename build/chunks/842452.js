@@ -23,8 +23,8 @@ var i = n(627968),
     C = n(531053),
     E = n(107385),
     I = n(900848),
-    b = n(550591),
-    N = n(114329),
+    N = n(550591),
+    b = n(114329),
     S = n(985018),
     T = n(211170),
     y = n(837021);
@@ -104,7 +104,7 @@ let v = (0, m.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
                 selected: R,
                 unread: G,
                 className: y.Io
-            }), (0, i.jsx)(b.A, {
+            }), (0, i.jsx)(N.A, {
                 text: ea,
                 disabled: w,
                 selected: R,
@@ -144,7 +144,7 @@ let v = (0, m.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
                 targetNode: u,
                 onDragOverChanged: el
             }) : null]
-        }), ep = null != u.color ? u.color : N.DO, eg = ep === N.DO ? void 0 : (0, d.Hl)(ep);
+        }), ep = null != u.color ? u.color : b.DO, eg = ep === b.DO ? void 0 : (0, d.Hl)(ep);
         return (0, i.jsxs)("div", {
             ref: eh,
             className: r()(T.qc, {

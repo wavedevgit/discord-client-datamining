@@ -52,7 +52,7 @@ function j(e) {
     }, []), l.useEffect(() => {
         b && c.ORC.announce(A.intl.string(A.t["0Y/qkL"]))
     }, [b]);
-    let R = l.useCallback(async () => {
+    let k = l.useCallback(async () => {
             if (f.A.canSaveChanges()) {
                 try {
                     await x.A.savePendingWidgets(v)
@@ -73,7 +73,7 @@ function j(e) {
                 })
             }
         }, [v, E, T, n]),
-        k = l.useCallback(() => {
+        R = l.useCallback(() => {
             x.A.clearPendingWidgets()
         }, []);
     return C((e, n) => n ? (0, i.jsx)(r.animated.div, {
@@ -95,13 +95,13 @@ function j(e) {
                     size: "sm",
                     variant: "secondary",
                     text: A.intl.string(A.t.yBZMsQ),
-                    onClick: k,
+                    onClick: R,
                     disabled: !b || N
                 }), (0, i.jsx)(c.Button, {
                     size: "sm",
                     variant: "primary",
                     text: A.intl.string(A.t["R3BPH+"]),
-                    onClick: R,
+                    onClick: k,
                     loading: N,
                     disabled: !y || !b || N
                 })]

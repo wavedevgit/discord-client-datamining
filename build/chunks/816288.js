@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
     A: () => S,
-    n: () => b
+    n: () => N
 });
 var i = n(627968),
     s = n(64700),
@@ -24,7 +24,7 @@ var i = n(627968),
     C = n(333354),
     E = n(985018),
     I = n(375395);
-let b = s.forwardRef((e, t) => {
+let N = s.forwardRef((e, t) => {
     let {
         appliedBoostCount: n,
         maxBoostCount: l,
@@ -87,7 +87,7 @@ let b = s.forwardRef((e, t) => {
     })
 });
 
-function N(e) {
+function b(e) {
     let {
         guild: t,
         withMargin: l
@@ -97,7 +97,7 @@ function N(e) {
     s.useEffect(() => {
         E !== t.premiumSubscriberCount && (0, A.u)(t.id, t.premiumSubscriberCount)
     }, [t.id, E, t.premiumSubscriberCount]);
-    let N = s.useCallback(e => {
+    let b = s.useCallback(e => {
         g && (0, u.L3)(e, async () => {
             let {
                 default: e
@@ -122,8 +122,8 @@ function N(e) {
             className: r()(I.kL, {
                 [I.aF]: l
             }),
-            onContextMenu: N,
-            children: (0, i.jsx)(b, {
+            onContextMenu: b,
+            children: (0, i.jsx)(N, {
                 ref: a,
                 appliedBoostCount: E,
                 maxBoostCount: o,
@@ -141,9 +141,9 @@ function S(e) {
         guild: t,
         withMargin: n
     } = e;
-    return (0, i.jsx)(N, {
+    return (0, i.jsx)(b, {
         guild: t,
         withMargin: n
     })
 }
-b.displayName = "GuildPowerupsProgressBarUI"
+N.displayName = "GuildPowerupsProgressBarUI"

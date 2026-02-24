@@ -24,7 +24,7 @@ var i = n(627968),
     E = n(985018),
     I = n(529471);
 
-function b(e) {
+function N(e) {
     let {
         onClick: t,
         className: n
@@ -48,7 +48,7 @@ function b(e) {
     })
 }
 
-function N(e) {
+function b(e) {
     let {
         channel: t
     } = e, {
@@ -120,12 +120,12 @@ function S(e) {
             }) : null, d ? (0, i.jsx)(h.A, {
                 className: I.fN,
                 guildId: o
-            }) : null, l ? (0, i.jsx)(b, {
+            }) : null, l ? (0, i.jsx)(N, {
                 className: r()({
                     [I.fN]: !0
                 }),
                 onClick: n
-            }) : null, (0, i.jsx)(N, {
+            }) : null, (0, i.jsx)(b, {
                 channel: t
             })]
         })]

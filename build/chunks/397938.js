@@ -25,18 +25,18 @@ var C = n(652215),
     E = n(790782),
     I = n(626600);
 
-function b() {
+function N() {
     let e = (0, r.bG)([p.default], () => p.default.getCurrentUser());
     return (0, r.bG)([h.Ay], () => e?.id != null && h.Ay.getMentionCount(e.id, E.P.NOTIFICATION_CENTER) > 0)
 }
 
-function N(e) {
+function b(e) {
     let {
         onClick: t,
         selectedOverride: n = !1,
         popoutProps: u,
         ref: h
-    } = e, p = (0, l.Vd)("notifications-inbox"), [f, E] = s.useState(!1), N = (0, m.lI)(), S = n || N, {
+    } = e, p = (0, l.Vd)("notifications-inbox"), [f, E] = s.useState(!1), b = (0, m.lI)(), S = n || b, {
         notificationCenterVariant: T
     } = (0, g.X8)({
         location: "NotificationsInboxButtonInner"
@@ -51,7 +51,7 @@ function N(e) {
             location: "NotificationsInboxButtonInner"
         }), {
             unreadChannelIds: n
-        } = (0, m.U4)(), s = b(), {
+        } = (0, m.U4)(), s = N(), {
             badge: l,
             dimensions: r
         } = (0, _.ux)({
@@ -120,15 +120,15 @@ function S() {
         } = (0, g.X8)({
             location: "NotificationsInboxButton"
         }),
-        n = b(),
+        n = N(),
         l = (0, _.HN)();
-    return t === g.U5.SIDEBAR ? (0, i.jsx)(N, {
+    return t === g.U5.SIDEBAR ? (0, i.jsx)(b, {
         onClick: l
     }) : t === g.U5.POPOUT ? (0, i.jsx)(f.A, {
         targetElementRef: e,
         popoutPosition: "right",
         popoutAlign: "bottom",
-        children: (t, n, s) => (0, i.jsx)(N, {
+        children: (t, n, s) => (0, i.jsx)(b, {
             ref: e,
             selectedOverride: n,
             onClick: () => {
@@ -144,7 +144,7 @@ function S() {
         targetElementRef: e,
         popoutPosition: "right",
         popoutAlign: "top",
-        children: (t, n, s) => (0, i.jsx)(N, {
+        children: (t, n, s) => (0, i.jsx)(b, {
             ref: e,
             selectedOverride: n,
             onClick: () => {

@@ -1,6 +1,6 @@
 /** chunk id: 729904, original params: e,t,i (module,exports,require) **/
 i.d(t, {
-    A: () => _
+    A: () => g
 }), i(667532);
 var n = i(311907),
     r = i(73153),
@@ -20,11 +20,7 @@ let d = [c.BVt.CHANNEL_THREAD_VIEW(l.pv.guildId(), l.pv.channelId({
     h = 0,
     C = !!(null != window && "navigation" in window) && (window.navigation.canGoBack ?? !1),
     E = !!(null != window && "navigation" in window) && (window.navigation.canGoForward ?? !1);
-
-function A() {
-    "navigation" in window && (C = window.navigation.canGoBack ?? !1, E = window.navigation.canGoForward ?? !1)
-}
-class g extends n.Ay.Store {
+class A extends n.Ay.Store {
     static displayName = "BackForwardNavStore";
     initialize() {
         u = [], h = 0
@@ -49,13 +45,13 @@ class g extends n.Ay.Store {
         return this.canGoForward ? u[h - 1] : null
     }
 }
-let _ = new g(r.h, {
+let g = new A(r.h, {
     ROUTE_CHANGED: function(e) {
         let {
             location: t,
             action: i
         } = e;
-        if (A(), "POP" === i) {
+        if ("navigation" in window && (C = window.navigation.canGoBack ?? !1, E = window.navigation.canGoForward ?? !1), "POP" === i) {
             let e = u.findIndex(e => e.path === t.pathname);
             if (-1 !== e) {
                 h = e;
@@ -96,8 +92,5 @@ let _ = new g(r.h, {
                 params: r.params
             })
         }
-    },
-    LOGOUT: function() {
-        u = [], h = 0, A()
     }
 })

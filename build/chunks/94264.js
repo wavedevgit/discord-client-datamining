@@ -5,8 +5,8 @@ r.d(t, {
 var n = r(627968);
 r(64700);
 var a = r(503698),
-    s = r.n(a),
-    l = r(892227),
+    l = r.n(a),
+    s = r(892227),
     i = r(311907),
     d = r(827734),
     o = r(732955),
@@ -37,12 +37,12 @@ let p = {
             totalDays: c.A.getTotalDaysInDuration(m.W.NITRO)
         }));
         if (!r || null == a || null == d) return null;
-        let x = (0, l.default)(new Date(a.next_reward_date), new Date),
+        let x = (0, s.default)(new Date(a.next_reward_date), new Date),
             g = a.program_current_state === m.L.PREMIUM_CHURNING,
             _ = g ? p.churning.start : p.active.start,
             f = g ? p.churning.end : p.active.end;
         return (0, n.jsxs)("div", {
-            className: s()(h.k, t),
+            className: l()(h.k, t),
             children: [(0, n.jsx)(u.Ay, {
                 variant: u.qP.UNSET,
                 progress: d - x,

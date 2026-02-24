@@ -1,7 +1,7 @@
 /** chunk id: 698126, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => N
+    A: () => b
 });
 var i = n(627968),
     s = n(64700),
@@ -87,8 +87,8 @@ class I extends m.Ay {
         return a ? n(s(o)) : o
     }
 }
-let b = (0, d.a)(I),
-    N = s.memo(function(e) {
+let N = (0, d.a)(I),
+    b = s.memo(function(e) {
         let {
             channel: t,
             guild: n,
@@ -100,7 +100,7 @@ let b = (0, d.a)(I),
                 canReorderChannel: !0 !== s && null != e ? g.A.can(f.xBc.MANAGE_CHANNELS, e) : g.A.can(f.xBc.MANAGE_CHANNELS, n)
             }
         });
-        return (0, i.jsx)(b, {
+        return (0, i.jsx)(N, {
             ...l,
             ...e
         })

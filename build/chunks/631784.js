@@ -9,8 +9,8 @@ var n = i(64700),
     o = i(950191),
     a = i(927813),
     d = i(403362),
-    u = i(808247),
-    c = i(133025),
+    c = i(808247),
+    u = i(133025),
     m = i(310209),
     _ = i(594832),
     f = i(652215),
@@ -31,8 +31,8 @@ function I(e) {
         displayProfile: S,
         location: I
     }), {
-        wishlistAndRecommendations: A,
-        skusToUserAndReason: x,
+        wishlistAndRecommendations: x,
+        skusToUserAndReason: A,
         status: w
     } = function(e) {
         let {
@@ -45,10 +45,10 @@ function I(e) {
                 userIds: t,
                 numItems: i,
                 applicationIds: r
-            } = e, l = (0, s.bG)([c.A], () => c.A.getRecommendations(t, r));
+            } = e, l = (0, s.bG)([u.A], () => u.A.getRecommendations(t, r));
             return n.useEffect(() => {
-                let e = c.A.getRecommendations(t, r);
-                null != e && ("loading" === e.state || e.fetchedAt >= Date.now() - p) || u.A.fetchWishlistRecommendations(r, t, i)
+                let e = u.A.getRecommendations(t, r);
+                null != e && ("loading" === e.state || e.fetchedAt >= Date.now() - p) || c.A.fetchWishlistRecommendations(r, t, i)
             }, [t, r, i]), l
         }({
             userIds: n.useMemo(() => t.map(e => {
@@ -106,8 +106,8 @@ function I(e) {
             filteredRecommendations: o.data.skus.filter(e => !(e.id in f)),
             skusToUserAndReasonRecommendations: o.data.skusToUserAndReason
         }, [o, f]), {
-            combinedSkus: A,
-            combinedSkusToUserAndReason: x
+            combinedSkus: x,
+            combinedSkusToUserAndReason: A
         } = n.useMemo(() => {
             let e = {
                 ...C
@@ -122,8 +122,8 @@ function I(e) {
             }
         }, [a, g, h, C]);
         return {
-            wishlistAndRecommendations: A,
-            skusToUserAndReason: x,
+            wishlistAndRecommendations: x,
+            skusToUserAndReason: A,
             status: n.useMemo(() => I || null == o || null != o && "loading" === o.state ? "loading" : S.filter(d.Vq).length > 0 || "error" === o.state ? "error" : "success", [I, o, S])
         }
     }({
@@ -134,10 +134,10 @@ function I(e) {
         applicationIds: n.useMemo(() => C ? [f.FYj, h.XR] : [f.FYj], [C]),
         numItems: i,
         source: a
-    }), j = n.useMemo(() => A.filter(e => null != x[e.id] && x[e.id][t] === m.j.WISHLIST).length, [A, t, x]);
+    }), j = n.useMemo(() => x.filter(e => null != A[e.id] && A[e.id][t] === m.j.WISHLIST).length, [x, t, A]);
     return {
-        wishlistAndRecommendations: n.useMemo(() => A.slice(0, i), [A, i]),
-        skusToUserAndReason: x,
+        wishlistAndRecommendations: n.useMemo(() => x.slice(0, i), [x, i]),
+        skusToUserAndReason: A,
         status: w,
         defaultWishlistId: g,
         totalUnownedWishlistItemCount: j

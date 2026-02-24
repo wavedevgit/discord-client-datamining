@@ -29,9 +29,9 @@ function f(e) {
     } = d.Ay.useExperiment({
         guildId: t.id,
         location: "progress-bar-coachmark"
-    }), E = (0, a.A)(), I = (0, d._E)(t, C), b = C && I && !E, N = [];
-    return null != f && f && b && N.push(s.M.BOOST_PROGRESS_BAR_ADMIN_COACHMARK), x && null != f && !f && b && N.push(s.M.BOOST_PROGRESS_BAR_MEMBER_COACHMARK), (0, i.jsx)(c.Ay, {
-        contentTypes: N,
+    }), E = (0, a.A)(), I = (0, d._E)(t, C), N = C && I && !E, b = [];
+    return null != f && f && N && b.push(s.M.BOOST_PROGRESS_BAR_ADMIN_COACHMARK), x && null != f && !f && N && b.push(s.M.BOOST_PROGRESS_BAR_MEMBER_COACHMARK), (0, i.jsx)(c.Ay, {
+        contentTypes: b,
         children: e => {
             let {
                 visibleContent: a,

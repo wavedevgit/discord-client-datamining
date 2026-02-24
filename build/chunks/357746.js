@@ -1,7 +1,7 @@
 /** chunk id: 357746, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => N
+    A: () => b
 });
 var i = n(627968),
     s = n(64700),
@@ -43,7 +43,7 @@ function I(e) {
             return null
     }
 }
-let b = {
+let N = {
         animation: {
             BEG: 0,
             END: 75
@@ -53,65 +53,65 @@ let b = {
             END: 376
         }
     },
-    N = s.memo(function(e) {
+    b = s.memo(function(e) {
         let {
             guildId: t,
             selected: l
-        } = e, N = (0, g.Ay)(t), S = s.useCallback(() => {
-            (0, A.Zm)(t), (0, m.A)(t, c.A.GUILD_POWERUPS_CHANNEL_LIST_ROW), N?.popout?.markAsDismissed(f.i.INDIRECT_ACTION)
-        }, [t, N]), T = s.useRef(null), y = (0, o.red)(o.DXt), v = (0, a.bG)([h.A], () => h.A.hasLayers()), j = (0, u.xr)(e => e.fullScreenLayers.length > 0), R = y || v || j, O = s.useCallback(() => {
-            if (N?.popout == null || R) return null;
-            switch (N?.popout?.type) {
+        } = e, b = (0, g.Ay)(t), S = s.useCallback(() => {
+            (0, A.Zm)(t), (0, m.A)(t, c.A.GUILD_POWERUPS_CHANNEL_LIST_ROW), b?.popout?.markAsDismissed(f.i.INDIRECT_ACTION)
+        }, [t, b]), T = s.useRef(null), y = (0, o.red)(o.DXt), v = (0, a.bG)([h.A], () => h.A.hasLayers()), j = (0, u.xr)(e => e.fullScreenLayers.length > 0), R = y || v || j, O = s.useCallback(() => {
+            if (b?.popout == null || R) return null;
+            switch (b?.popout?.type) {
                 case p.o.LEVEL_REACHED:
                     return (0, i.jsx)(_.HW, {
                         guildId: t,
                         channelRowRef: T,
-                        ...N.popout
+                        ...b.popout
                     });
                 case p.o.PERKS_AVAILABLE:
                     return (0, i.jsx)(_.UB, {
                         guildId: t,
                         channelRowRef: T,
-                        ...N.popout
+                        ...b.popout
                     });
                 case p.o.PERKS_PURCHASABLE:
                     return (0, i.jsx)(_.lw, {
                         guildId: t,
                         channelRowRef: T,
-                        ...N.popout
+                        ...b.popout
                     });
                 case p.o.NEW_PERK_AVAILABLE:
                     return (0, i.jsx)(_.bo, {
                         guildId: t,
                         channelRowRef: T,
-                        ...N.popout
+                        ...b.popout
                     });
                 case p.o.BOOST_TO_UNLOCK:
                     return (0, i.jsx)(_.Gw, {
                         guildId: t,
                         channelRowRef: T,
-                        ...N.popout
+                        ...b.popout
                     });
                 case p.o.EXPIRING_PERK:
                     return (0, i.jsx)(_.Mr, {
                         guildId: t,
                         channelRowRef: T,
-                        ...N.popout
+                        ...b.popout
                     });
                 case p.o.GAME_SERVER_HOSTING_AVAILABLE:
                 case p.o.GAME_SERVER_HOSTING_GUILD_ELIGIBLE:
                     return (0, i.jsx)(_.jz, {
                         guildId: t,
                         channelRowRef: T,
-                        ...N.popout
+                        ...b.popout
                     });
                 default:
                     return (0, i.jsx)("div", {})
             }
-        }, [t, N?.popout, T, R]), [L, M] = s.useState(null);
+        }, [t, b?.popout, T, R]), [L, M] = s.useState(null);
         s.useEffect(() => {
-            N?.popout == null && M(null)
-        }, [N?.popout]);
+            b?.popout == null && M(null)
+        }, [b?.popout]);
         let D = s.useCallback(e => {
             M(e)
         }, []);
@@ -125,12 +125,12 @@ let b = {
                     className: e,
                     color: "currentColor"
                 }),
-                background: N?.popout != null && (0, i.jsx)("div", {
+                background: b?.popout != null && (0, i.jsx)("div", {
                     className: E.Fi,
                     children: (0, i.jsx)(o.tvC, {
                         nextScene: null == L ? "animation" : "LOOP",
                         className: E.UU,
-                        sceneSegments: b,
+                        sceneSegments: N,
                         importData: () => n.e("67807").then(n.t.bind(n, 217762, 19)),
                         onScenePlay: D,
                         rendererSettings: {
@@ -140,15 +140,15 @@ let b = {
                 }),
                 text: (0, i.jsx)("span", {
                     className: r()({
-                        [E.A7]: N?.showUnread === !0
+                        [E.A7]: b?.showUnread === !0
                     }),
                     children: C.intl.string(x.default.yv3DJJ)
                 }),
                 selected: l,
                 onClick: S,
-                showUnread: N?.showUnread === !0,
+                showUnread: b?.showUnread === !0,
                 trailing: (0, i.jsx)(I, {
-                    indicator: N?.indicator
+                    indicator: b?.indicator
                 })
             }), O()]
         })

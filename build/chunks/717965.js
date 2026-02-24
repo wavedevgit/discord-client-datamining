@@ -23,8 +23,8 @@ var i = n(627968),
     C = n(643501),
     E = n(880144),
     I = n(698441),
-    b = n(394412),
-    N = n(859894),
+    N = n(394412),
+    b = n(859894),
     S = n(267102),
     T = n(931991),
     y = n(151476),
@@ -161,8 +161,8 @@ function ep(e) {
     } = (0, T.nr)(t), d = (0, l.bG)([J.A], () => J.A.getStageInstanceByChannel(t.id), [t.id]), u = (0, l.bG)([I.Ay], () => I.Ay.getGuildScheduledEvent(d?.guild_scheduled_event_id)), {
         suppress: p
     } = (0, R.A)(t), g = V.default.getId(), [m] = (0, er.A)(t), _ = q.Ay.isModerator(g, t.id), C = (0, z.Ni)(t.id), E = c(u), {
-        parentAnalyticsLocation: b
-    } = (0, A.Ay)(), N = s.useRef(null), y = () => (function(e) {
+        parentAnalyticsLocation: N
+    } = (0, A.Ay)(), b = s.useRef(null), y = () => (function(e) {
         let {
             channel: t,
             appContext: n
@@ -173,7 +173,7 @@ function ep(e) {
         appContext: r
     });
     return (_ || E) && null != d ? (0, i.jsx)(a.YNO, {
-        targetElementRef: N,
+        targetElementRef: b,
         renderPopout: e => {
             let {
                 closePopout: s
@@ -185,7 +185,7 @@ function ep(e) {
                     "aria-label": eo.intl.string(eo.t["3Uj+2p"]),
                     onClose: s,
                     onSelect: n,
-                    onInteraction: (0, x.s)("End Stage", b, {
+                    onInteraction: (0, x.s)("End Stage", N, {
                         entrypoint: ea.GK.CARET
                     }),
                     children: (0, i.jsx)(a.Drp, {
@@ -213,7 +213,7 @@ function ep(e) {
                 isShown: s
             } = t;
             return (0, i.jsx)(P.A, {
-                ref: N,
+                ref: b,
                 label: eo.intl.string(eo.t.c6qKwr),
                 onClick: y,
                 onPopoutClick: n,
@@ -284,9 +284,9 @@ let e_ = s.memo(function(e) {
         cameraUnavailable: h,
         enabled: f
     } = (0, y.A)(), I = (0, j.A)(t), {
-        limit: b,
-        reachedLimit: N
-    } = (0, v.A)(t), S = (0, l.bG)([K.default], () => K.default.getCurrentUser()), T = (0, l.bG)([B.Ay], () => (0, E.A)(B.Ay)), D = (0, l.bG)([F.A], () => F.A.getVoiceChannelId() === t.id, [t.id]), U = (0, l.bG)([p.A], () => p.A.getStreamParticipants(t.id)[0], [t.id]), P = (0, Q.qT)(t.id), V = b > 0, H = N && !P || null != U && U.user.id !== S?.id, W = (0, x.s)("AudioDeviceMenu", n, {
+        limit: N,
+        reachedLimit: b
+    } = (0, v.A)(t), S = (0, l.bG)([K.default], () => K.default.getCurrentUser()), T = (0, l.bG)([B.Ay], () => (0, E.A)(B.Ay)), D = (0, l.bG)([F.A], () => F.A.getVoiceChannelId() === t.id, [t.id]), U = (0, l.bG)([p.A], () => p.A.getStreamParticipants(t.id)[0], [t.id]), P = (0, Q.qT)(t.id), V = N > 0, H = b && !P || null != U && U.user.id !== S?.id, W = (0, x.s)("AudioDeviceMenu", n, {
         entrypoint: ea.GK.CARET
     }), Y = s.useRef(null), X = s.useRef(null);
     if (null == S) return null;
@@ -324,8 +324,8 @@ let e_ = s.memo(function(e) {
                 cameraUnavailable: h,
                 onChange: O.SZ,
                 onCameraUnavailable: M.A,
-                channelLimitReached: N,
-                channelLimit: b,
+                channelLimitReached: b,
+                channelLimit: N,
                 popoutOpen: s,
                 onPopoutClick: n
             })
@@ -431,11 +431,11 @@ let ex = s.memo(function(e) {
         className: ec.My,
         children: [(0, i.jsxs)("div", {
             className: ec.Ac,
-            children: [u ? (0, i.jsx)(b.A, {
+            children: [u ? (0, i.jsx)(N.A, {
                 channelId: t?.id
             }) : null, (0, i.jsx)("div", {
                 className: ec.me
-            }), u && a && !o ? (0, i.jsx)(N.A, {
+            }), u && a && !o ? (0, i.jsx)(b.A, {
                 highlight: !0,
                 channel: t
             }) : null, (0, i.jsx)("div", {

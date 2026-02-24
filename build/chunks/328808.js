@@ -23,8 +23,8 @@ var i = n(627968),
     C = n(50268),
     E = n(58736),
     I = n(253932),
-    b = n(977997),
-    N = n(747926),
+    N = n(977997),
+    b = n(747926),
     S = n(985018);
 
 function T(e) {
@@ -75,7 +75,7 @@ function y(e) {
     } = e, l = (0, c.A)(t), E = (0, p.A)(t), T = (0, f.A)(t.id), y = (0, _.A)(t), v = (0, C.A)({
         id: t.id,
         label: S.intl.string(S.t.DQ797g)
-    }), j = (0, d.A)(t), R = (0, u.A)(t), O = (0, h.A)(t, "Toolbar Overflow"), L = (0, g.A)(t), M = (0, A.A)(t), D = (0, x.A)(t), G = (0, m.A)(t), U = I.SY.useSetting(), P = (0, a.bG)([b.A], () => !r().isEmpty(b.A.getVoiceStatesForChannel(t.id)));
+    }), j = (0, d.A)(t), R = (0, u.A)(t), O = (0, h.A)(t, "Toolbar Overflow"), L = (0, g.A)(t), M = (0, A.A)(t), D = (0, x.A)(t), G = (0, m.A)(t), U = I.SY.useSetting(), P = (0, a.bG)([N.A], () => !r().isEmpty(N.A.getVoiceStatesForChannel(t.id)));
     return (0, i.jsxs)(o.W1t, {
         "data-menu-migrated": !0,
         navId: "thread-context",
@@ -89,7 +89,7 @@ function y(e) {
                 id: "open",
                 label: S.intl.string(S.t.bX7EaG),
                 action: function() {
-                    (0, N.JA)(t)
+                    (0, b.JA)(t)
                 }
             }) : null, G]
         }), (0, i.jsxs)(o.rXV, {

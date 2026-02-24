@@ -29,8 +29,8 @@ function x(e) {
         let e = E ? g.E8.NO_CHAT : g.E8.RESIZABLE;
         (0, A.i5)(e)
     }, [E]), {
-        unreadCount: b,
-        mentionCount: N
+        unreadCount: N,
+        mentionCount: b
     } = function(e) {
         let t = (0, r.bG)([u.A], () => !(0, l.isEmpty)(u.A.getTypingUsers(e)), [e]),
             {
@@ -54,11 +54,11 @@ function x(e) {
     });
     let T = E ? _.intl.string(_.t["5MstTl"]) : _.intl.string(_.t.kkKapG),
         y = [T];
-    N > 0 && y.push(_.intl.formatToPlainString(_.t["3l1GOx"], {
-        mentionCount: N
-    })), b > 0 && y.push(_.intl.string(_.t.x5zAGZ));
+    b > 0 && y.push(_.intl.formatToPlainString(_.t["3l1GOx"], {
+        mentionCount: b
+    })), N > 0 && y.push(_.intl.string(_.t.x5zAGZ));
     let v = (0, r.bG)([p.Ay], () => p.Ay.getFocusedLayout()),
-        j = N > 0 ? N : b,
+        j = b > 0 ? b : N,
         R = j > 0;
     return (0, i.jsxs)("div", {
         className: f.iE,
@@ -74,7 +74,7 @@ function x(e) {
             className: n,
             ...x
         }), R ? (0, i.jsx)(o.A, {
-            hasMentions: N > 0,
+            hasMentions: b > 0,
             truncatedCount: j > 99 ? "99+" : j,
             className: f.qS
         }) : null]

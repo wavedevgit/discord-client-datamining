@@ -23,8 +23,8 @@ var i = n(627968),
     C = n(403362),
     E = n(661191),
     I = n(181079),
-    b = n(652215),
-    N = n(985018),
+    N = n(652215),
+    b = n(985018),
     S = n(653750);
 
 function T(e, t) {
@@ -44,8 +44,8 @@ function T(e, t) {
 function y() {
     let e = (0, c.yK)([I.A, _.A], () => E.default.keys(I.A.getFavoriteChannels()).map(e => _.A.getChannel(e)).filter(C.Vq)),
         t = e.map(e => e.id),
-        n = e.filter(e => e.type === b.rbe.GUILD_VOICE),
-        s = e.filter(e => e.type === b.rbe.GUILD_STAGE_VOICE).map(e => e.id),
+        n = e.filter(e => e.type === N.rbe.GUILD_VOICE),
+        s = e.filter(e => e.type === N.rbe.GUILD_STAGE_VOICE).map(e => e.id),
         l = (0, c.yK)([x.Ay], () => o().flatMap(n, e => x.Ay.getVoiceStatesForChannel(e).map(e => {
             let {
                 user: t
@@ -64,15 +64,15 @@ function y() {
             return e
         }),
         d = (0, c.yK)([m.A], () => m.A.getAllApplicationStreams().filter(e => t.includes(e.channelId)).map(e => e.ownerId), [t]),
-        N = (0, c.yK)([h.Ay], () => {
+        b = (0, c.yK)([h.Ay], () => {
             let e = h.Ay.getEmbeddedActivitiesByChannel(),
                 n = [];
             for (let i of t) n.push(...e.get(i)?.flatMap(e => Array.from(e.userIds)) ?? []);
             return n
         }, [t]),
-        y = (0, c.yK)([f.default], () => N.map(e => f.default.getUser(e)), [N]),
+        y = (0, c.yK)([f.default], () => b.map(e => f.default.getUser(e)), [b]),
         v = (0, c.yK)([f.default], () => d.map(e => f.default.getUser(e)), [d]),
-        j = T(u.HKD, l.filter(e => !d.includes(e.id) && !N.includes(e.id))),
+        j = T(u.HKD, l.filter(e => !d.includes(e.id) && !b.includes(e.id))),
         R = 0 === r.length ? null : (0, i.jsxs)("div", {
             className: S.nM,
             children: [(0, i.jsx)(u.qux, {
@@ -96,7 +96,7 @@ function y() {
                 })]
             })]
         }),
-        O = T(u.Fzq, v.filter(e => null != e && !N.includes(e.id))),
+        O = T(u.Fzq, v.filter(e => null != e && !b.includes(e.id))),
         L = T(u.k9F, y);
     return (0, i.jsxs)(i.Fragment, {
         children: [R, j, O, L]
@@ -109,7 +109,7 @@ function v() {
             className: r()(S.nM, S.Dl),
             children: (0, i.jsx)("span", {
                 className: r()(S.cN, S.NT),
-                children: N.intl.string(N.t.wMWyci)
+                children: b.intl.string(b.t.wMWyci)
             })
         }), (0, i.jsx)(y, {})]
     })

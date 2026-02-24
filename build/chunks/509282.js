@@ -159,8 +159,8 @@ function M(e) {
         initialSubscribeForGuild: x
     });
     if (!E || null == A || null == c) return null;
-    let D = c.type === S.Puh.SUBSCRIPTION,
-        k = !!D && (0, m.bg)(c.flags),
+    let k = c.type === S.Puh.SUBSCRIPTION,
+        D = !!k && (0, m.bg)(c.flags),
         O = () => {
             (0, o.mMO)(async () => {
                 let {
@@ -176,8 +176,8 @@ function M(e) {
         },
         U = () => {
             (0, o.mMO)(async () => {
-                let e = D ? (await Promise.resolve().then(n.bind(n, 168393))).SubscriptionDetailsModal : null,
-                    t = D ? null : (await Promise.resolve().then(n.bind(n, 963179))).ItemDetailsModal;
+                let e = k ? (await Promise.resolve().then(n.bind(n, 168393))).SubscriptionDetailsModal : null,
+                    t = k ? null : (await Promise.resolve().then(n.bind(n, 963179))).ItemDetailsModal;
                 return n => {
                     let l = () => {
                         n.onClose(), O()
@@ -187,7 +187,7 @@ function M(e) {
                         appId: A.id,
                         skuId: c.id,
                         guildId: x,
-                        subscriptionType: k ? "user" : "guild",
+                        subscriptionType: D ? "user" : "guild",
                         onClose: n.onClose,
                         onHeaderTitleClick: l
                     }) : null != t ? (0, i.jsx)(t, {
@@ -200,7 +200,7 @@ function M(e) {
                 }
             })
         },
-        G = D ? k ? (0, i.jsxs)(i.Fragment, {
+        G = k ? D ? (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(o.nys, {
                 size: "custom",
                 width: 12,
@@ -249,10 +249,10 @@ function M(e) {
                     })
                 },
                 text: N.intl.string(N.t.DXYfjO)
-            }), D ? null != _ ? (0, i.jsx)(v.rc, {
+            }), k ? null != _ ? (0, i.jsx)(v.rc, {
                 onClick: P,
                 appId: A.id,
-                subscriptionType: k ? "user" : "guild",
+                subscriptionType: D ? "user" : "guild",
                 skuId: c.id,
                 icon: o.U1X,
                 onHasClicked: B,

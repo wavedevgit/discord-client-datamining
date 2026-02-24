@@ -23,8 +23,8 @@ var i = n(627968),
     C = n(533562),
     E = n(760716),
     I = n(93879),
-    b = n(178213),
-    N = n(616356),
+    N = n(178213),
+    b = n(616356),
     S = n(961350),
     T = n(71393),
     y = n(576705),
@@ -57,7 +57,7 @@ function P(e) {
         W = Array.from((0, u.Rz)(K).values()),
         Y = (0, C.W)(),
         z = (0, E.i)(e => e.showSelfActivity),
-        [X, q] = (0, a.yK)([N.A], () => [N.A.getStreamForUser(n.id, t.getGuildId()), N.A.getActiveStreamForUser(n.id, t.getGuildId())], [t, n.id]),
+        [X, q] = (0, a.yK)([b.A], () => [b.A.getStreamForUser(n.id, t.getGuildId()), b.A.getActiveStreamForUser(n.id, t.getGuildId())], [t, n.id]),
         [J, Q] = (0, a.yK)([j.A, T.A, y.A, A.default], () => (0, p.eo)(t, j.A, T.A, y.A, A.default)),
         $ = (0, a.bG)([S.default], () => S.default.getId()),
         Z = (0, a.bG)([v.A], () => (0, g.nr)(X, v.A), [X]),
@@ -76,7 +76,7 @@ function P(e) {
             guildId: t.guild_id,
             location: "VoiceUserActivities"
         }),
-        el = (0, b.G)("voice_channel_activities"),
+        el = (0, N.G)("voice_channel_activities"),
         er = (0, x.m)({
             location: "voice_channel_activities"
         }),

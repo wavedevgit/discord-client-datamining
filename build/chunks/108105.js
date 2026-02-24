@@ -106,12 +106,11 @@ function F(e) {
                 variant: "text-sm/normal",
                 color: "text-subtle",
                 children: B.intl.string(B.t.IqlPbQ)
-            }), (0, a.jsx)(c.Button, {
+            }), m && (0, a.jsx)(c.Button, {
                 variant: "primary",
                 onClick: p,
                 text: B.intl.string(B.t.boqtTA),
-                fullWidth: !0,
-                disabled: !m
+                fullWidth: !0
             }), (0, a.jsxs)(c.ButtonGroup, {
                 wrap: !1,
                 fullWidth: !0,

@@ -23,8 +23,8 @@ var i = n(627968),
     C = n(734057),
     E = n(309010),
     I = n(977997),
-    b = n(661191),
-    N = n(181079),
+    N = n(661191),
+    b = n(181079),
     S = n(93055),
     T = n(210082),
     y = n(595567),
@@ -50,9 +50,9 @@ function M() {
         {
             favoriteServerMuted: z,
             favoriteChannels: X
-        } = (0, o.cf)([N.A], () => ({
-            favoriteChannels: N.A.getFavoriteChannels(),
-            favoriteServerMuted: N.A.favoriteServerMuted
+        } = (0, o.cf)([b.A], () => ({
+            favoriteChannels: b.A.getFavoriteChannels(),
+            favoriteServerMuted: b.A.favoriteServerMuted
         })),
         q = (0, o.bG)([E.A], () => E.A.getChannelId(j.YYv)),
         J = (0, o.bG)([C.A], () => C.A.getChannel(q)),
@@ -65,7 +65,7 @@ function M() {
             if (!t) return !1;
             let e = x.A.getCurrentUserActiveStream();
             return null != e && null != X[e.channelId]
-        }), M = (0, o.bG)([x.A], () => x.A.getAllApplicationStreams().some(e => null != X[e.channelId])), D = (0, o.bG)([I.A], () => t && null != e && I.A.hasVideo(e), [t, e]), G = (0, o.yK)([h.Ay], () => b.default.keys(X).reduce((e, t) => (e.push(...h.Ay.getEmbeddedActivitiesForChannel(t)), e), [])), U = (0, o.bG)([h.Ay], () => Array.from(h.Ay.getSelfEmbeddedActivities().values()).some(e => {
+        }), M = (0, o.bG)([x.A], () => x.A.getAllApplicationStreams().some(e => null != X[e.channelId])), D = (0, o.bG)([I.A], () => t && null != e && I.A.hasVideo(e), [t, e]), G = (0, o.yK)([h.Ay], () => N.default.keys(X).reduce((e, t) => (e.push(...h.Ay.getEmbeddedActivitiesForChannel(t)), e), [])), U = (0, o.bG)([h.Ay], () => Array.from(h.Ay.getSelfEmbeddedActivities().values()).some(e => {
             let {
                 location: t
             } = e, n = (0, A.H)(t);

@@ -23,8 +23,8 @@ var i = n(627968),
     C = n(309010),
     E = n(187508),
     I = n(576456),
-    b = n(572448),
-    N = n(963702),
+    N = n(572448),
+    b = n(963702),
     S = n(652215),
     T = n(985018),
     y = n(318136);
@@ -68,10 +68,10 @@ function R(e) {
         everyoneFilter: E.Ay.everyoneFilter
     })), I = (0, m.Sc)({
         location: "RecentMentions"
-    }), b = (0, u.A)(p), N = (0, u.A)(_), v = (0, u.A)(x);
+    }), N = (0, u.A)(p), b = (0, u.A)(_), v = (0, u.A)(x);
     s.useEffect(() => {
-        E.Ay.hasLoadedEver ? (null != b && p !== b || null != N && _ !== N || null != v && x !== v) && j(n, !0) : j(n, !0)
-    }, [b, p, N, _, v, x, n, !0]), (0, d.Ay)(() => {
+        E.Ay.hasLoadedEver ? (null != N && p !== N || null != b && _ !== b || null != v && x !== v) && j(n, !0) : j(n, !0)
+    }, [N, p, b, _, v, x, n, !0]), (0, d.Ay)(() => {
         l?.some(A.$r) && (c.A.clearMentions(), j(n, !0))
     }), s.useEffect(() => () => {
         c.A.truncateMentions(S.Ue3)
@@ -125,7 +125,7 @@ function L(e) {
         a = !!(0, h.Gc)(l) && !r;
     return (0, i.jsxs)("div", {
         className: y.kL,
-        children: [(0, i.jsx)(b.A, {
+        children: [(0, i.jsx)(N.A, {
             channel: l,
             gotoChannel: n,
             children: null != s ? (0, i.jsx)(o.JnF, {
@@ -152,7 +152,7 @@ function L(e) {
 }
 
 function M() {
-    return (0, i.jsx)(N.A, {
+    return (0, i.jsx)(b.A, {
         Icon: o.XxR,
         header: T.intl.string(T.t.bgDz74),
         tip: T.intl.string(T.t.NS15vk)

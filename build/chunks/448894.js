@@ -43,11 +43,11 @@ function b(e) {
         w = null != r && null != R && null != r.channel && null != r.guild && R.channelId === r.channel.id && R.guildId === r.guild.id;
     a()(null != r, "Invite cannot be null");
     let {
-        target_type: D,
-        target_user: k
+        target_type: k,
+        target_user: D
     } = r;
-    a()(D === C.yV.STREAM && null != k, "invalid streaming invite");
-    let O = b === k.id,
+    a()(k === C.yV.STREAM && null != D, "invalid streaming invite");
+    let O = b === D.id,
         U = r.state === f.elq.ACCEPTING,
         G = l.useCallback(() => {
             let e = "noop";
@@ -64,7 +64,7 @@ function b(e) {
         T = (0, g.DY)(r.guild)
     }
     let F = null != r.channel ? (0, m.OY)(r.channel) : null,
-        H = A.Ay.getName(k),
+        H = A.Ay.getName(D),
         V = "active";
     B && !w ? n = O ? E.intl.string(E.t.oBLoZJ) : E.intl.formatToPlainString(E.t["0QJmA+"], {
         name: H
