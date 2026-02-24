@@ -139,29 +139,34 @@ function G() {
             questsByPartyId: t,
             questIdsByPartyId: n
         }
-    }, [e, s, o]), v = r.useMemo(() => new Set(Array.from(S.values())), [S]);
+    }, [e, s, o]), v = (0, d.bG)([h.A], () => h.A.earnedQuestForPlacement.get(_.uF.ACTIVITY_PANEL), []), y = r.useRef([]), b = r.useMemo(() => {
+        let e = Array.from(S.values()),
+            t = y.current;
+        return t.length === e.length && e.every((e, n) => e === t[n]) ? t : (y.current = e, e)
+    }, [S]);
     r.useEffect(() => {
-        I && v.size > 0 && (0, A.yO)(Array.from(v), _.uF.ACTIVITY_PANEL, "NowPlaying")
-    }, [v, I]);
-    let y = (0, d.bG)([h.A], () => h.A.earnedQuestForPlacement.get(_.uF.ACTIVITY_PANEL), []),
-        b = r.useMemo(() => {
+        if (!I || 0 === b.length) return;
+        let e = v?.quests;
+        null != e && e.size === b.length && b.every(t => e.has(t)) || (0, A.yO)(b, _.uF.ACTIVITY_PANEL, "NowPlaying")
+    }, [b, I, v]);
+    let O = r.useMemo(() => {
             if (!I) return N;
-            if (null == y) return new Map;
+            if (null == v) return new Map;
             let e = new Map;
             for (let [t, n] of S.entries()) {
-                let i = y.quests.get(n);
+                let i = v.quests.get(n);
                 null != i && e.set(t, i)
             }
             return e
-        }, [I, y, N, S]),
-        O = null;
-    return t ? O = e.length > 0 ? e.map(e => {
+        }, [I, v, N, S]),
+        L = null;
+    return t ? L = e.length > 0 ? e.map(e => {
         let {
             party: t
         } = e;
         return (0, i.jsx)(w, {
             party: t,
-            quest: b.get(t.id)
+            quest: O.get(t.id)
         }, t.id)
     }) : (0, i.jsxs)("div", {
         className: D.aM,
