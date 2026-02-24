@@ -119,7 +119,7 @@ let A = {
             effect: t
         } = e, {
             upsertConfig: n
-        } = (0, p.wu)(), s = (0, o.bG)([x.default], () => x.default.getCurrentUser()), [j, C] = i.useState(!0), S = i.useRef({}), [y, N] = i.useState(!1), [I, k] = i.useState(!1), [R, O] = i.useState([]), [w, D] = i.useState(A), M = i.useRef([]), [P, L] = i.useState(t.name), U = P.toLowerCase().replace(/\s+/g, "_"), B = i.useMemo(() => ({
+        } = (0, p.wu)(), s = (0, o.bG)([x.default], () => x.default.getCurrentUser()), [j, C] = i.useState(!0), S = i.useRef({}), [y, N] = i.useState(!1), [I, k] = i.useState(!1), [R, O] = i.useState(8), [w, D] = i.useState([]), [M, P] = i.useState(A), L = i.useRef([]), [U, B] = i.useState(t.name), G = U.toLowerCase().replace(/\s+/g, "_"), F = i.useMemo(() => ({
             id: T,
             skuId: T,
             title: T,
@@ -127,15 +127,15 @@ let A = {
             accessibilityLabel: T,
             reducedMotionSrc: "",
             thumbnailPreviewSrc: "",
-            effects: R,
+            effects: w,
             animationType: r.l.ANIMATION_TYPE_UNSPECIFIED
-        }), [R]), G = e => {
+        }), [w]), V = e => {
             let t = e.currentTarget.files;
             return null == t ? null : t[0]
-        }, F = (e, t) => {
-            let n = G(t);
+        }, W = (e, t) => {
+            let n = V(t);
             null != n && (0, g.Mz)(n, t => {
-                D(a => ({
+                P(a => ({
                     ...a,
                     [e]: (0, g.GT)(t, n)
                 }))
@@ -143,19 +143,19 @@ let A = {
         };
         i.useEffect(() => {
             let e = t.config.effects;
-            e.length > 0 && O(e)
+            e.length > 0 && D(e)
         }, [t.config.effects]), i.useEffect(() => {
             let e = t.config.stillFrames;
             null != e && Object.entries(e).forEach(e => {
                 let [t, n] = e;
                 if (null != n) {
-                    if ("" !== n.src && null != n.src && ("" === n.base64 || null == n.base64)) D(e => ({
+                    if ("" !== n.src && null != n.src && ("" === n.base64 || null == n.base64)) P(e => ({
                         ...e,
                         [t]: n
                     }));
                     else if ("" !== n.base64 && null != n.base64) {
                         let e = (0, g.fB)(n.base64);
-                        n.src = e, M.current.push(e), D(e => ({
+                        n.src = e, L.current.push(e), P(e => ({
                             ...e,
                             [t]: n
                         }))
@@ -163,30 +163,30 @@ let A = {
                 }
             })
         }, [t.config.stillFrames]);
-        let V = {
+        let H = {
                 effect: t,
                 upsertConfig: n
             },
-            W = i.useRef(V);
+            K = i.useRef(H);
         return (i.useEffect(() => {
-            W.current = V
+            K.current = H
         }), i.useEffect(() => {
             let {
                 effect: e,
                 upsertConfig: t
-            } = W.current;
+            } = K.current;
             e.readonly || t({
                 skuId: e.skuId,
-                name: P,
+                name: U,
                 config: {
-                    effects: R,
-                    stillFrames: w
+                    effects: w,
+                    stillFrames: M
                 }
             })
-        }, [R, w, P]), i.useEffect(() => () => {
-            M.current.forEach(e => {
+        }, [w, M, U]), i.useEffect(() => () => {
+            L.current.forEach(e => {
                 URL.revokeObjectURL(e)
-            }), M.current = []
+            }), L.current = []
         }, []), null == s) ? (0, a.jsx)("div", {}) : (0, a.jsxs)("div", {
             className: f.zr,
             children: [(0, a.jsxs)("div", {
@@ -198,10 +198,10 @@ let A = {
                         S.current.animated = e
                     },
                     onChange: e => {
-                        let t = G(e);
+                        let t = V(e);
                         null != t && (0, g.Mz)(t, async e => {
-                            let n = await (0, g.Ay)(e, t, R.length);
-                            O(e => [...e, n])
+                            let n = await (0, g.Ay)(e, t, w.length);
+                            D(e => [...e, n])
                         })
                     },
                     multiple: !1
@@ -209,19 +209,19 @@ let A = {
                     ref: e => {
                         S.current.thumbnail = e
                     },
-                    onChange: e => F(g.qH.THUMBNAIL, e),
+                    onChange: e => W(g.qH.THUMBNAIL, e),
                     multiple: !1
                 }), (0, a.jsx)(u.A, {
                     ref: e => {
                         S.current.static = e
                     },
-                    onChange: e => F(g.qH.STATIC, e),
+                    onChange: e => W(g.qH.STATIC, e),
                     multiple: !1
                 }), (0, a.jsx)(u.A, {
                     ref: e => {
                         S.current.reducedMotion = e
                     },
-                    onChange: e => F(g.qH.REDUCED_MOTION, e),
+                    onChange: e => W(g.qH.REDUCED_MOTION, e),
                     multiple: !1
                 })]
             }), (0, a.jsxs)("div", {
@@ -233,10 +233,10 @@ let A = {
                         children: "Profile Effect Name"
                     }), (0, a.jsx)("input", {
                         type: "text",
-                        value: P,
+                        value: U,
                         className: f.hF,
                         onChange: e => {
-                            L(e.target.value)
+                            B(e.target.value)
                         }
                     })]
                 }), (0, a.jsxs)("div", {
@@ -263,7 +263,26 @@ let A = {
                         }
                     })]
                 }), (0, a.jsxs)("div", {
+                    className: f.nM,
+                    children: [(0, a.jsx)(d.Text, {
+                        variant: "text-md/normal",
+                        children: "Border Radius"
+                    }), (0, a.jsx)("input", {
+                        type: "range",
+                        min: 4,
+                        max: 24,
+                        step: 2,
+                        value: R,
+                        onChange: e => O(+e.target.value)
+                    }), (0, a.jsxs)(d.Text, {
+                        variant: "text-sm/normal",
+                        children: [R, "px"]
+                    })]
+                }), (0, a.jsxs)("div", {
                     className: l()(f.nz, f.VH),
+                    style: {
+                        borderRadius: R
+                    },
                     children: [I ? (0, a.jsx)("div", {
                         className: f.jq,
                         children: (0, a.jsx)(h.A, {
@@ -280,12 +299,15 @@ let A = {
                     }), j && (0, a.jsx)("div", {
                         className: f.KJ,
                         children: (0, a.jsx)(_.A, {
-                            config: B
+                            config: F
                         })
                     })]
                 }), (0, a.jsx)("div", {
                     children: I && (0, a.jsxs)("div", {
                         className: l()(f.f5, f.VH),
+                        style: {
+                            borderRadius: R
+                        },
                         children: [(0, a.jsx)(m.A, {
                             user: s,
                             pendingAvatar: void 0,
@@ -293,7 +315,7 @@ let A = {
                             canUsePremiumCustomization: !0,
                             isTryItOut: !0
                         }), (0, a.jsx)(_.A, {
-                            config: B
+                            config: F
                         })]
                     })
                 }), (0, a.jsxs)("div", {
@@ -347,9 +369,9 @@ let A = {
                         }), (0, a.jsxs)("div", {
                             className: f.nM,
                             children: [(0, a.jsx)(c.A, {
-                                fileContents: () => (0, g.rs)(R),
+                                fileContents: () => (0, g.rs)(w),
                                 contentType: "text/plain",
-                                fileName: `${U}_timing_config.txt`,
+                                fileName: `${G}_timing_config.txt`,
                                 children: (0, a.jsx)(d.Button, {
                                     variant: "primary",
                                     size: "sm",
@@ -358,16 +380,16 @@ let A = {
                             }), (0, a.jsx)(c.A, {
                                 fileContents: () => JSON.stringify({
                                     ...t,
-                                    name: P,
+                                    name: U,
                                     readonly: !1,
                                     config: {
                                         ...t.config,
-                                        effects: R,
-                                        stillFrames: w
+                                        effects: w,
+                                        stillFrames: M
                                     }
                                 }),
                                 contentType: "text/plain",
-                                fileName: `${U}_config.txt`,
+                                fileName: `${G}_config.txt`,
                                 children: (0, a.jsx)(d.Button, {
                                     variant: "primary",
                                     size: "sm",
@@ -382,14 +404,14 @@ let A = {
                             children: "Still Frames"
                         }), (0, a.jsx)("div", {
                             className: f.mv,
-                            children: Object.entries(w).map(e => {
+                            children: Object.entries(M).map(e => {
                                 let [t, n] = e;
                                 return (0, a.jsx)(E, {
                                     type: t,
                                     frame: n,
                                     showDarkTheme: y,
                                     onClear: () => {
-                                        D(e => ({
+                                        P(e => ({
                                             ...e,
                                             [t]: null
                                         }))
@@ -397,7 +419,7 @@ let A = {
                                 }, t)
                             })
                         })]
-                    }), R.some(e => (e.randomizedSources ?? []).length > 0) && (0, a.jsxs)("div", {
+                    }), w.some(e => (e.randomizedSources ?? []).length > 0) && (0, a.jsxs)("div", {
                         className: l()(f.uW, f.l7),
                         children: [(0, a.jsx)(d.Text, {
                             variant: "text-md/bold",
@@ -422,10 +444,10 @@ let A = {
                             variant: "critical-secondary",
                             text: "Clear Assets",
                             onClick: () => {
-                                O([]), D(A)
+                                D([]), P(A)
                             }
                         })
-                    }), R.map((e, t) => (0, a.jsxs)("div", {
+                    }), w.map((e, t) => (0, a.jsxs)("div", {
                         className: f.ec,
                         children: [(0, a.jsxs)("div", {
                             className: f.D1,
@@ -463,7 +485,7 @@ let A = {
                                     value: e.start,
                                     className: f.hF,
                                     onChange: e => {
-                                        O(n => {
+                                        D(n => {
                                             let a = [...n],
                                                 i = n[t];
                                             return i.start = +e.target.value, a[t] = i, a
@@ -481,7 +503,7 @@ let A = {
                                     value: e.duration,
                                     className: f.hF,
                                     onChange: e => {
-                                        O(n => {
+                                        D(n => {
                                             let a = [...n],
                                                 i = n[t];
                                             return i.duration = +e.target.value, a[t] = i, a
@@ -502,7 +524,7 @@ let A = {
                                     checked: e.loop,
                                     className: f.OO,
                                     onChange: e => {
-                                        O(n => {
+                                        D(n => {
                                             let a = [...n],
                                                 i = n[t];
                                             return i.loop = e.target.checked, a[t] = i, a
@@ -520,7 +542,7 @@ let A = {
                                         value: e.loopDelay,
                                         className: f.hF,
                                         onChange: e => {
-                                            O(n => {
+                                            D(n => {
                                                 let a = [...n],
                                                     i = n[t];
                                                 return i.loopDelay = +e.target.value, a[t] = i, a
@@ -540,8 +562,8 @@ let A = {
                                 },
                                 onChange: e => {
                                     let n;
-                                    null != (n = G(e)) && (0, g.Mz)(n, e => {
-                                        O(a => {
+                                    null != (n = V(e)) && (0, g.Mz)(n, e => {
+                                        D(a => {
                                             let i = [...a],
                                                 s = a[t];
                                             if (null == s) return a;
@@ -567,7 +589,7 @@ let A = {
                                 variant: "critical-secondary",
                                 text: "Remove Layer",
                                 onClick: () => {
-                                    O(t => t.filter(t => t !== e))
+                                    D(t => t.filter(t => t !== e))
                                 }
                             })]
                         })]

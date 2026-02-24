@@ -584,15 +584,11 @@ let e_ = s.memo(e => {
                 [eu.EX]: l < 195
             }),
             children: [(0, i.jsxs)(h.Text, {
-                className: r()(eu.ac, {
-                    [eu.N7]: t
-                }),
+                className: eu.ac,
                 color: "none",
                 variant: Q ? "text-sm/normal" : "text-md/normal",
                 children: [null != et && E === ea.lp.USER && (0, i.jsx)(et, {
-                    className: r()(eu.fh, {
-                        [eu.oE]: Q
-                    }),
+                    className: eu.gr,
                     size: "xs",
                     color: "currentColor"
                 }), m ? (0, i.jsx)("div", {
@@ -608,16 +604,14 @@ let e_ = s.memo(e => {
                         size: "lg",
                         className: eu.Q6
                     })
-                }) : null, (0, i.jsx)(ep, {
+                }) : null, t ? null : (0, i.jsx)(ep, {
                     participantType: E,
                     platform: v,
-                    className: r()(eu.fh, {
-                        [eu.oE]: Q
-                    })
-                }), null != n && "" !== n ? (0, i.jsx)("span", {
+                    className: eu.gr
+                }), null == n || "" === n || t ? null : (0, i.jsx)("span", {
                     className: r()(eu.Wk, q),
                     children: n
-                }) : null, R && (0, i.jsx)(u.m, {
+                }), R && (0, i.jsx)(u.m, {
                     text: ed.intl.string(ed.t.ZEem6O),
                     children: (0, i.jsx)(h.m5V, {
                         className: eu.vW,
