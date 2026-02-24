@@ -26,11 +26,11 @@ var i = n(627968),
     T = n(985018),
     N = n(176273);
 let y = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
-    v = {
+    b = {
         opacity: 0,
         transform: "translate3d(100%, 0, 0)"
     },
-    b = {
+    v = {
         opacity: 1,
         transform: "translate3d(0%, 0, 0)"
     },
@@ -58,8 +58,8 @@ let y = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
                 isUpsellEnabled: o,
                 shape: h,
                 size: y,
-                didTrackUpsellViewed: v,
-                setDidTrackUpsellViewed: b,
+                didTrackUpsellViewed: b,
+                setDidTrackUpsellViewed: v,
                 className: j,
                 premiumIndicator: R,
                 quality: M
@@ -96,13 +96,13 @@ let y = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
                 })
             }, [w, L, P]);
         if (l.useEffect(() => {
-                !v && L && (_.default.track(S.HAw.PREMIUM_UPSELL_VIEWED, {
+                !b && L && (_.default.track(S.HAw.PREMIUM_UPSELL_VIEWED, {
                     type: I.e.STREAM_QUALITY_INDICATOR,
                     has_premium_stream_fps: t,
                     has_premium_stream_resolution: s,
                     location_stack: D
-                }), b(!0))
-            }, [t, s, L, v, b, D]), null == M) return null;
+                }), v(!0))
+            }, [t, s, L, b, v, D]), null == M) return null;
         let G = (0, i.jsx)(u.m, {
             text: O ? T.intl.string(T.t.q8TiVt) : L ? T.intl.string(T.t.IHgpEn) : T.intl.string(T.t.vLb0VW),
             position: "bottom",
@@ -144,10 +144,10 @@ let y = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
             reducedMotion: g
         } = l.useContext(m.CZY), f = n && null != A, _ = (0, m.pnh)(f, {
             enter: {
-                from: g.enabled ? j : v,
-                to: g.enabled ? R : b
+                from: g.enabled ? j : b,
+                to: g.enabled ? R : v
             },
-            leave: g.enabled ? j : v,
+            leave: g.enabled ? j : b,
             config: O
         }, "animate-always"), E = (0, m.zhh)({
             to: f ? D : M,

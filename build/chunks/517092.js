@@ -44,8 +44,8 @@ let f = [{
     T = 0;
 
 function N() {
-    if (null == S || !b(S)) return !1;
-    let e = v(S);
+    if (null == S || !v(S)) return !1;
+    let e = b(S);
     if (e.lastActionTime > Date.now() - u.A.Millis.DAY && e.viewDuration > _) return !1;
     let t = Date.now();
     e.lastActionTime = t, e.viewDuration += t - I, I = t
@@ -57,7 +57,7 @@ function y() {
     }, 15 * u.A.Millis.SECOND)), !1
 }
 
-function v(e) {
+function b(e) {
     return e in x.channels || (x.channels[e] = {
         lastActionTime: 0,
         viewDuration: 0,
@@ -65,7 +65,7 @@ function v(e) {
     }), x.channels[e]
 }
 
-function b(e) {
+function v(e) {
     if (!d.Ay.useNewNotifications || C.has(e)) return !1;
     let t = r.A.getBasicChannel(e);
     if (null == t || null == t.guild_id || d.Ay.isGuildOrCategoryOrChannelMuted(t.guild_id, t.id) || j(t.guild_id, t.id) || j(t.guild_id, t.parent_id)) return !1;
@@ -91,7 +91,7 @@ class R extends l.Ay.PersistedStore {
         return x.channels[e]?.lastActionTime ?? 0
     }
     maybeAutoUpgradeChannel(e) {
-        if (!b(e)) return !1;
+        if (!v(e)) return !1;
         let t = r.A.getBasicChannel(e);
         return null != t && null != t.guild_id && !! function(e) {
             let t = o.A.getGuild(e.guild_id),
@@ -121,8 +121,8 @@ let M = new R(s.h, {
             })
         },
         MESSAGE_CREATE: function(e) {
-            if (e.optimistic || e.isPushNotification || e.message.author?.id !== a.default.getId() || !b(e.channelId)) return !1;
-            let t = v(e.channelId);
+            if (e.optimistic || e.isPushNotification || e.message.author?.id !== a.default.getId() || !v(e.channelId)) return !1;
+            let t = b(e.channelId);
             t.lastActionTime = Date.now(), t.numSends++
         }
     }),

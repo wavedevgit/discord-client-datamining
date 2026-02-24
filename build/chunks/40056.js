@@ -64,15 +64,15 @@ let m = {
         } = e, [d, u] = l.useState(n), [h, p] = l.useState(!1), [f, _] = l.useState(!1), [E, x] = l.useState(!1), [C, S] = l.useState(!1), [I, T] = l.useState(16 / 9), [N, y] = l.useState({
             x: 0,
             y: 0
-        }), v = l.useRef(null), b = l.useRef(null);
+        }), b = l.useRef(null), v = l.useRef(null);
         (0, r.l0)(() => {
-            b.current?.stop()
+            v.current?.stop()
         });
         let j = l.useCallback((e, t) => {
-                if (null == v.current) return m;
+                if (null == b.current) return m;
                 let n = t ?? d,
-                    i = v.current.clientWidth,
-                    l = v.current.clientHeight,
+                    i = b.current.clientWidth,
+                    l = b.current.clientHeight,
                     a = i * (n - 1) / 2,
                     r = l * (n - 1) / 2;
                 return {
@@ -88,7 +88,7 @@ let m = {
                 y(e => j({
                     x: (e.x - i.x) * c + i.x,
                     y: (e.y - i.y) * c + i.y
-                }, r)), u(r), g(r, l, t), null == b.current && (b.current = new a.Ep), b.current.start(2e3, () => {
+                }, r)), u(r), g(r, l, t), null == v.current && (v.current = new a.Ep), v.current.start(2e3, () => {
                     p(!1)
                 })
             }, [j, o, n, t, d]),
@@ -111,7 +111,7 @@ let m = {
                 doZoom: R,
                 panOffset: N,
                 setPanOffset: y,
-                wrapperRef: v,
+                wrapperRef: b,
                 clampPanOffset: j
             }), [j, R, f, C, E, h, o, n, N, I, d]);
         return (0, i.jsx)(A.Provider, {

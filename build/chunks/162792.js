@@ -30,8 +30,8 @@ let I = l.memo(function(e) {
         compact: T = !1,
         referencedUsernameProfile: N,
         referencedAvatarProfile: y,
-        setPopout: v,
-        isReplySpineClickable: b,
+        setPopout: b,
+        isReplySpineClickable: v,
         showReplySpine: j
     } = e, R = n.state === m.a.LOADED ? n.message : void 0, M = (0, f.X4)(R), D = o.m.useExperiment({
         location: "repliedMessage"
@@ -87,12 +87,12 @@ let I = l.memo(function(e) {
     } = (0, s.cf)([A.A], () => ({
         isReplyAuthorBlocked: null != R && A.A.isBlockedForMessage(R),
         isReplyAuthorIgnored: null != R && A.A.isIgnoredForMessage(R)
-    }), [R]), w = (0, x.r4)(R?.author.id, I.id), U = (0, x.Ck)(t, R), G = (0, x.H9)(R, I, N, v), F = (0, x.Ge)(y, v), H = l.useCallback(() => {
-        v({
+    }), [R]), w = (0, x.r4)(R?.author.id, I.id), U = (0, x.Ck)(t, R), G = (0, x.H9)(R, I, N, b), F = (0, x.Ge)(y, b), H = l.useCallback(() => {
+        b({
             referencedUsernameProfile: !1,
             referencedAvatarProfile: !1
         })
-    }, [v]), B = (0, f.X4)(t);
+    }, [b]), B = (0, f.X4)(t);
     return (0, i.jsx)(_.A, {
         repliedAuthor: M,
         baseMessage: t,
@@ -111,7 +111,7 @@ let I = l.memo(function(e) {
         onClickReply: U,
         onContextMenu: w,
         onPopoutRequestClose: H,
-        isReplySpineClickable: b,
+        isReplySpineClickable: v,
         showReplySpine: j
     })
 });

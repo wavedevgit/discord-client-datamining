@@ -26,8 +26,8 @@ var i = n(627968),
     T = n(649963),
     N = n(815807),
     y = n(429433),
-    v = n(517997),
-    b = n(966597),
+    b = n(517997),
+    v = n(966597),
     j = n(85109),
     R = n(406704),
     M = n(253932),
@@ -185,7 +185,7 @@ function el(e) {
         } = (0, d.cf)([k.A], () => ({
             canAddNewReactions: T && k.A.can($.xBc.ADD_REACTIONS, t),
             canManageMessages: k.A.can($.xBc.MANAGE_MESSAGES, t)
-        }), [t, T]), O = (0, v.u)(t, n), w = (0, R.n)(t, n), G = (0, R.R)(n), F = (0, d.bG)([I.A], () => null != t.guild_id && I.A.isLurking(t.guild_id), [t]), z = u.id === g, Y = (N || n.canDeleteOwnMessage(g)) && p && !$.MRS.UNDELETABLE.has(n.type);
+        }), [t, T]), O = (0, b.u)(t, n), w = (0, R.n)(t, n), G = (0, R.R)(n), F = (0, d.bG)([I.A], () => null != t.guild_id && I.A.isLurking(t.guild_id), [t]), z = u.id === g, Y = (N || n.canDeleteOwnMessage(g)) && p && !$.MRS.UNDELETABLE.has(n.type);
         n.type === $.lAJ.AUTO_MODERATION_ACTION && (Y = Y && N), t.isModeratorReportChannel() && (Y = Y && n.id !== x?.id && !(0, K.A)(n));
         let q = (0, H.ul)(n),
             J = (0, V.A)(n, t),
@@ -208,7 +208,7 @@ function el(e) {
             en = (0, E.m)(n),
             {
                 enabled: ei
-            } = b.A.useExperiment({
+            } = v.A.useExperiment({
                 location: "message_utilities"
             }),
             el = (0, d.bG)([j.A], () => null != j.A.getSavedMessage(t.id, n.id)),

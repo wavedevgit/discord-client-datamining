@@ -27,8 +27,8 @@ var i = n(627968),
     T = n(688810),
     N = n(698141),
     y = n(429913),
-    v = n(87001),
-    b = n(961350),
+    b = n(87001),
+    v = n(961350),
     j = n(186111),
     R = n(287809),
     M = n(403362),
@@ -70,19 +70,19 @@ function w(e) {
         application: n,
         channel: s,
         width: o
-    } = e, A = o > 400 ? 2 : +(o > 300), [p] = o > 400 ? [c._3J.SIZE_56, 56] : o > 300 ? [c._3J.SIZE_32, 32] : [c._3J.SIZE_24, 24], f = (0, r.yK)([R.default, b.default], () => Array.from(t).map(e => (0, m.S)(e, b.default) ? null : R.default.getUser(e.userId)).filter(M.Vq)), _ = (0, r.bG)([u.Ay], () => u.Ay.getEmbeddedActivitiesForChannel(s.id).find(e => e.applicationId === n.id) ?? u.Ay.getEmbeddedActivitiesForStartingChannel(s.id).find(e => e.applicationId === n.id)), {
+    } = e, A = o > 400 ? 2 : +(o > 300), [p] = o > 400 ? [c._3J.SIZE_56, 56] : o > 300 ? [c._3J.SIZE_32, 32] : [c._3J.SIZE_24, 24], f = (0, r.yK)([R.default, v.default], () => Array.from(t).map(e => (0, m.S)(e, v.default) ? null : R.default.getUser(e.userId)).filter(M.Vq)), _ = (0, r.bG)([u.Ay], () => u.Ay.getEmbeddedActivitiesForChannel(s.id).find(e => e.applicationId === n.id) ?? u.Ay.getEmbeddedActivitiesForStartingChannel(s.id).find(e => e.applicationId === n.id)), {
         analyticsLocations: E
     } = (0, T.Ay)(), x = (0, d.p)(), C = D.Ay.getName(s.getGuildId(), s.id, f?.[0]), S = (0, g.vG)({
         userId: R.default.getCurrentUser()?.id,
         channelId: s.id,
         application: n
-    }) === g.Gy.CAN_JOIN, I = s.getGuildId() ?? void 0, y = l.useId(), v = n.id, j = l.useMemo(() => ({
+    }) === g.Gy.CAN_JOIN, I = s.getGuildId() ?? void 0, y = l.useId(), b = n.id, j = l.useMemo(() => ({
         channel: s,
         type: "channel"
     }), [s]), {
         submitting: P
     } = (0, N.A)({
-        applicationId: v,
+        applicationId: b,
         context: j,
         launchingComponentId: y
     });
@@ -150,9 +150,9 @@ function U(e) {
         applicationId: d,
         names: P,
         size: 1024
-    }), x = !s && h, N = !h, b = !h && !s, R = (0, r.bG)([j.A, v.A], () => (0, S.A)({
+    }), x = !s && h, N = !h, v = !h && !s, R = (0, r.bG)([j.A, b.A], () => (0, S.A)({
         LayerStore: j.A,
-        PopoutWindowStore: v.A
+        PopoutWindowStore: b.A
     }));
     return l.useEffect(() => {
         if (x && null != u && !R) {
@@ -170,7 +170,7 @@ function U(e) {
                 className: L.j0,
                 alt: m.name,
                 src: g
-            }) : null, b && null != m && (0, i.jsx)(w, {
+            }) : null, v && null != m && (0, i.jsx)(w, {
                 width: n,
                 channel: o,
                 participants: t.participants,

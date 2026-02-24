@@ -15,23 +15,24 @@ var i = n(627968),
 function m(e) {
     let {
         guild: t,
-        closeLayer: n
-    } = e, [m, _] = l.useState(!1), {
-        analyticsLocations: A
-    } = (0, s.Ay)(), h = (0, a.bG)([o.default], () => o.default.getCurrentUser()), f = h?.isPremiumGroupMember();
-    async function E() {
-        _(!0), await (0, c.g)({
-            analyticsLocations: A,
+        analyticsLocation: n,
+        analyticsLocations: m,
+        closeLayer: _
+    } = e, [A, h] = l.useState(!1), {
+        analyticsLocations: f
+    } = (0, s.Ay)(m ?? []), E = (0, a.bG)([o.default], () => o.default.getCurrentUser()), g = E?.isPremiumGroupMember();
+    async function p() {
+        h(!0), await (0, c.g)({
+            analyticsLocations: f,
             analyticsLocation: {
-                page: d.liQ.PREMIUM_GUILD_USER_MODAL,
-                section: d.JJy.PREMIUM_GUILD_USER_MODAL_CTA_BAR,
                 object: d.ZSU.BUTTON_CTA,
-                objectType: d.AnalyticsObjectTypes.BUY
+                objectType: d.AnalyticsObjectTypes.BUY,
+                ...n
             },
             guild: t,
-            closeLayer: n,
+            closeLayer: _,
             onClose: () => {
-                _(!1)
+                h(!1)
             }
         })
     }
@@ -40,8 +41,8 @@ function m(e) {
         size: "md",
         icon: r._Jp,
         text: u.intl.string(u.t.gKmQ1G),
-        onClick: E,
-        loading: m,
-        disabled: f
+        onClick: p,
+        loading: A,
+        disabled: g
     })
 }

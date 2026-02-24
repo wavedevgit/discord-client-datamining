@@ -83,7 +83,7 @@ let I = function(e) {
         setHasPendingChanges: a,
         closeOrShowDiscardChangesAlert: A,
         location: I
-    } = e, T = (0, o.bG)([p.A], () => p.A.getChannel(t)), N = T?.name, y = (0, g.e5)(T), [v, b] = l.useState(N ?? ""), [j, R] = l.useState(void 0), M = void 0 !== j, {
+    } = e, T = (0, o.bG)([p.A], () => p.A.getChannel(t)), N = T?.name, y = (0, g.e5)(T), [b, v] = l.useState(N ?? ""), [j, R] = l.useState(void 0), M = void 0 !== j, {
         analyticsLocations: D
     } = (0, m.Ay)(I, h.A.GROUP_DM_EDIT_MODAL), O = {
         channel_id: t,
@@ -94,8 +94,8 @@ let I = function(e) {
         old_icon_set: T?.icon != null
     };
     return (l.useEffect(() => {
-        a(v !== N || M)
-    }, [v, N, M, a]), (0, u.Ay)(() => (f.default.track(E.HAw.GDM_EDIT_INTERACTED, {
+        a(b !== N || M)
+    }, [b, N, M, a]), (0, u.Ay)(() => (f.default.track(E.HAw.GDM_EDIT_INTERACTED, {
         ...O,
         action: "opened"
     }), () => {
@@ -108,18 +108,18 @@ let I = function(e) {
         children: (0, i.jsx)("form", {
             onSubmit: e => {
                 e.preventDefault();
-                let i = v !== N,
+                let i = b !== N,
                     l = void 0 !== j;
                 if (f.default.track(E.HAw.GDM_EDIT_INTERACTED, {
                         ...O,
                         action: "saved",
-                        new_name_set: "" !== v,
+                        new_name_set: "" !== b,
                         new_icon_set: (l ? j : T?.icon) != null,
                         name_changed: i,
                         icon_changed: l
                     }), i || l) {
                     let e = {};
-                    i && (e.name = v), l && (e.icon = j), d.A.updateChannel(t, e, I).catch(_.XA)
+                    i && (e.name = b), l && (e.icon = j), d.A.updateChannel(t, e, I).catch(_.XA)
                 }
                 n()
             },
@@ -133,7 +133,7 @@ let I = function(e) {
                     text: x.intl.string(x.t["R3BPH+"]),
                     variant: "primary",
                     type: "submit",
-                    disabled: v === N && !M
+                    disabled: b === N && !M
                 }],
                 onClose: () => Promise.resolve(A()),
                 transitionState: s,
@@ -148,8 +148,8 @@ let I = function(e) {
                     }), (0, i.jsx)(c.ksK, {
                         "aria-label": x.intl.string(x.t.GEGW3P),
                         placeholder: y ?? "",
-                        value: v,
-                        onChange: b,
+                        value: b,
+                        onChange: v,
                         autoFocus: !0
                     })]
                 })

@@ -28,13 +28,13 @@ let C = e => {
     } = e, {
         activeVoice: C,
         mostRecentlyRequestedVoiceId: S
-    } = (0, p.f)(), I = (0, g.e)(t.id), T = t.id === C, N = !t.available && !t.temporarilyAvailable, y = t.temporarilyAvailable && !n && !T, v = !T && t.id === S, [b, j] = l.useState(!1);
+    } = (0, p.f)(), I = (0, g.e)(t.id), T = t.id === C, N = !t.available && !t.temporarilyAvailable, y = t.temporarilyAvailable && !n && !T, b = !T && t.id === S, [v, j] = l.useState(!1);
     l.useEffect(() => {
-        let e = v ? setTimeout(() => j(v), 200) : void 0;
+        let e = b ? setTimeout(() => j(b), 200) : void 0;
         return () => {
             clearTimeout(e), j(!1)
         }
-    }, [v]);
+    }, [b]);
     let R = I?.previewSoundURLs,
         [M, D] = l.useState(0),
         {
@@ -118,7 +118,7 @@ let C = e => {
                             colorClass: x.clockIcon
                         })
                     })
-                }), b && (0, i.jsx)("div", {
+                }), v && (0, i.jsx)("div", {
                     className: x.spinnerWrapper,
                     children: (0, i.jsx)(c.y$y, {
                         type: c.y$y.Type.CHASING_DOTS,

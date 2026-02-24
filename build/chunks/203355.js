@@ -27,8 +27,8 @@ var i = n(627968),
     T = n(919706),
     N = n(616356),
     y = n(961350),
-    v = n(734057),
-    b = n(430452),
+    b = n(734057),
+    v = n(430452),
     j = n(531685),
     R = n(200749),
     M = n(70171),
@@ -78,11 +78,11 @@ function W(e) {
         width: S,
         wrapperClassName: k,
         paused: w = !1
-    } = e, K = b.Ay.getVideoComponent(), W = (0, r.bG)([y.default], () => y.default.getId()), z = (0, _.A)(), {
+    } = e, K = v.Ay.getVideoComponent(), W = (0, r.bG)([y.default], () => y.default.getId()), z = (0, _.A)(), {
         stream: Y,
         user: q,
         streamId: J
-    } = t, $ = (0, r.bG)([v.A], () => v.A.getChannel(Y.channelId)), Z = (0, r.bG)([N.A], () => N.A.getActiveStreamForUser(q.id, Y.guildId), [q.id, Y.guildId]), {
+    } = t, $ = (0, r.bG)([b.A], () => b.A.getChannel(Y.channelId)), Z = (0, r.bG)([N.A], () => N.A.getActiveStreamForUser(q.id, Y.guildId), [q.id, Y.guildId]), {
         defaultWatchMultipleStreams: X
     } = (0, E.W)({
         location: "StreamTile"
@@ -92,7 +92,7 @@ function W(e) {
     });
     let es = (0, f.u)(F.x.STREAM, t.user.id);
     if (l.useEffect(() => {
-            V.info(`Stream Tile State - activeStream: ${null!=Z} | selected: ${n} | Video: ${null!=K} | MediaEngine: ${b.Ay.supports(F.O5.VIDEO)}`)
+            V.info(`Stream Tile State - activeStream: ${null!=Z} | selected: ${n} | Video: ${null!=K} | MediaEngine: ${v.Ay.supports(F.O5.VIDEO)}`)
         }, [K, Z, n]), z) return (0, i.jsx)(P.A, {
         stream: t.stream,
         isSmall: el,
@@ -116,7 +116,7 @@ function W(e) {
         participant: t,
         width: S
     });
-    if (!(null != Z && !n && null != K && b.Ay.supports(F.O5.VIDEO))) return (0, i.jsxs)("div", {
+    if (!(null != Z && !n && null != K && v.Ay.supports(F.O5.VIDEO))) return (0, i.jsxs)("div", {
         className: a()(B.Qs, B.Rh, {
             [B.EX]: el
         }),

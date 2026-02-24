@@ -58,11 +58,11 @@ function x(e) {
         childrenAsSubtitle: S,
         connectionStatusTextVariant: I,
         hasVideo: T
-    } = e, N = l.useRef(null), y = s === A.S7L.RTC_CONNECTED, v = l.useCallback(e => (0, i.jsx)(h.A, {
+    } = e, N = l.useRef(null), y = s === A.S7L.RTC_CONNECTED, b = l.useCallback(e => (0, i.jsx)(h.A, {
         ...e,
         channelId: C
     }), [C]), {
-        connectionStatus: b,
+        connectionStatus: v,
         connectionStatusText: j
     } = u.A.getStatus(s, T);
     return (0, i.jsxs)("div", {
@@ -72,7 +72,7 @@ function x(e) {
             ref: N,
             children: (0, i.jsx)(o.YNO, {
                 targetElementRef: N,
-                renderPopout: v,
+                renderPopout: b,
                 position: "top",
                 children: e => {
                     let {
@@ -101,7 +101,7 @@ function x(e) {
                                     text: j,
                                     textVariant: I,
                                     hasVideo: T,
-                                    className: p[b],
+                                    className: p[v],
                                     hasConnectedChannel: null != C
                                 })
                             }), S ? x : null]

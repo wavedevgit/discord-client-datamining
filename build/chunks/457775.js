@@ -3,16 +3,16 @@ n.d(t, {
     f: () => c
 });
 var r = n(846293),
-    l = n(167189),
-    i = n(833291),
-    s = n(299091),
+    i = n(167189),
+    s = n(833291),
+    l = n(299091),
     a = n(711014),
     o = n(998218);
 async function u(e) {
     try {
-        let t = (0, i.br)(e);
-        if (null == t || t.type !== l.I.INVITE) return !1;
-        let n = s.A.getInvite(t.code);
+        let t = (0, s.br)(e);
+        if (null == t || t.type !== i.I.INVITE) return !1;
+        let n = l.A.getInvite(t.code);
         if (null == n) {
             let {
                 invite: e

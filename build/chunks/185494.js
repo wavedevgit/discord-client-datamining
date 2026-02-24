@@ -55,7 +55,7 @@ function T(e) {
             isLoopbackEnabled: t,
             toggleLoopback: n
         }
-    }(), y = N ? d.GOW : d.uik, v = l.useCallback(() => (0, g.O)(null), []), b = (0, d.rdh)(d.LU0.colors.BACKGROUND_BASE_LOWER).hex(), j = (0, d.rdh)(d.LU0.colors.WHITE).hex(), R = l.useRef(0), M = t !== n ? R.current + 1 : R.current;
+    }(), y = N ? d.GOW : d.uik, b = l.useCallback(() => (0, g.O)(null), []), v = (0, d.rdh)(d.LU0.colors.BACKGROUND_BASE_LOWER).hex(), j = (0, d.rdh)(d.LU0.colors.WHITE).hex(), R = l.useRef(0), M = t !== n ? R.current + 1 : R.current;
     l.useEffect(() => {
         R.current = M
     }, [M]);
@@ -67,7 +67,7 @@ function T(e) {
             opacity: +!!D,
             height: 72 * !!D,
             pointerEvents: D ? "auto" : "none",
-            backgroundColor: s?.baseColor ?? b,
+            backgroundColor: s?.baseColor ?? v,
             config: e => "backgroundColor" === e ? {
                 easing: x,
                 duration: 200
@@ -253,7 +253,7 @@ function T(e) {
                             enabled: D
                         },
                         tabIndex: D ? 0 : -1,
-                        onClick: v,
+                        onClick: b,
                         children: (0, i.jsx)(d.aXh, {
                             size: "custom",
                             width: 20,

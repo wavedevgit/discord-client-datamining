@@ -26,8 +26,8 @@ var i = n(627968),
     T = n(186111),
     N = n(576705),
     y = n(461213),
-    v = n(203982),
-    b = n(723702),
+    b = n(203982),
+    v = n(723702),
     j = n(518960),
     R = n(545428),
     M = n(38198),
@@ -77,13 +77,13 @@ let w = l.memo(function(e) {
             } = e;
             t === s.id && B.current?.activateUploadDialogue()
         };
-        return v._.subscribe(O.jej.UPLOAD_FILE, e), () => {
-            v._.unsubscribe(O.jej.UPLOAD_FILE, e)
+        return b._.subscribe(O.jej.UPLOAD_FILE, e), () => {
+            b._.unsubscribe(O.jej.UPLOAD_FILE, e)
         }
     });
     let eo = (0, C.n)(s),
         ec = (0, C.Tb)(s),
-        ed = !S.D_.useSetting() && !(0, b.isAndroidWeb)() && null != window.ResizeObserver,
+        ed = !S.D_.useSetting() && !(0, v.isAndroidWeb)() && null != window.ResizeObserver,
         eu = (0, E.I7)(s ?? void 0),
         eh = (0, x.Sc)({
             location: "ChannelAttachButton"
@@ -169,7 +169,7 @@ let w = l.memo(function(e) {
                     t = e.currentTarget.files, null != (n = e.currentTarget.err) && "ETOOLARGE" === n.code ? (0, j.V)(s, []) : (0, j.R)(t, s, w, {
                         requireConfirm: !0,
                         origin: "file_picker"
-                    }), v._.dispatchToLastSubscribed(O.jej.TEXTAREA_FOCUS), e.currentTarget.value = ""
+                    }), b._.dispatchToLastSubscribed(O.jej.TEXTAREA_FOCUS), e.currentTarget.value = ""
                 },
                 multiple: s.rateLimitPerUser <= 0,
                 tabIndex: -1,
