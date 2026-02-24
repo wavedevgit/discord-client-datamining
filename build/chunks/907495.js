@@ -35,8 +35,8 @@ var i = n(627968),
     O = n(580745),
     L = n(71393),
     P = n(834942),
-    k = n(576705),
-    w = n(954571),
+    w = n(576705),
+    k = n(954571),
     U = n(957565),
     G = n(690521),
     F = n(403362),
@@ -182,10 +182,10 @@ function el(e) {
         } = (0, d.bG)([_.A], () => _.A.getMessage(t.id), [t.id]), C = M.jW.useSetting(), S = M.Q_.useSetting(), T = (0, d.bG)([P.A], () => null == t.guild_id || P.A.canChatInGuild(t.guild_id), [t]), {
             canManageMessages: N,
             canAddNewReactions: y
-        } = (0, d.cf)([k.A], () => ({
-            canAddNewReactions: T && k.A.can($.xBc.ADD_REACTIONS, t),
-            canManageMessages: k.A.can($.xBc.MANAGE_MESSAGES, t)
-        }), [t, T]), O = (0, v.u)(t, n), w = (0, R.n)(t, n), G = (0, R.R)(n), F = (0, d.bG)([I.A], () => null != t.guild_id && I.A.isLurking(t.guild_id), [t]), z = u.id === g, Y = (N || n.canDeleteOwnMessage(g)) && p && !$.MRS.UNDELETABLE.has(n.type);
+        } = (0, d.cf)([w.A], () => ({
+            canAddNewReactions: T && w.A.can($.xBc.ADD_REACTIONS, t),
+            canManageMessages: w.A.can($.xBc.MANAGE_MESSAGES, t)
+        }), [t, T]), O = (0, v.u)(t, n), k = (0, R.n)(t, n), G = (0, R.R)(n), F = (0, d.bG)([I.A], () => null != t.guild_id && I.A.isLurking(t.guild_id), [t]), z = u.id === g, Y = (N || n.canDeleteOwnMessage(g)) && p && !$.MRS.UNDELETABLE.has(n.type);
         n.type === $.lAJ.AUTO_MODERATION_ACTION && (Y = Y && N), t.isModeratorReportChannel() && (Y = Y && n.id !== x?.id && !(0, K.A)(n));
         let q = (0, H.ul)(n),
             J = (0, V.A)(n, t),
@@ -202,7 +202,7 @@ function el(e) {
             }),
             Q = t.type === $.rbe.GUILD_ANNOUNCEMENT && null != h && h.features.has($.GuildFeatures.NEWS) && (z || N) && (0, A.A)(n),
             ee = t.getGuildId(),
-            et = null != ee && n.type === $.lAJ.USER_JOIN && k.A.canWithPartialContext($.xBc.MANAGE_GUILD, {
+            et = null != ee && n.type === $.lAJ.USER_JOIN && w.A.canWithPartialContext($.xBc.MANAGE_GUILD, {
                 guildId: ee
             }),
             en = (0, E.m)(n),
@@ -222,7 +222,7 @@ function el(e) {
             canDelete: Y,
             canReport: q,
             canReply: O,
-            canStartThread: w,
+            canStartThread: k,
             canViewThread: G,
             canForward: en,
             canCopy: U.p5,
@@ -240,7 +240,7 @@ function el(e) {
             isFocused: o
         }
     }(e), et = l.useRef(null), el = l.useCallback(() => {
-        O || w.default.track($.HAw.MESSAGE_POPOUT_MENU_OPENED_DESKTOP, {
+        O || k.default.track($.HAw.MESSAGE_POPOUT_MENU_OPENED_DESKTOP, {
             message_id: n.id,
             channel: n.channel_id,
             location: "expanding_buttons"

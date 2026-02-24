@@ -4,13 +4,13 @@ r.d(e, {
     f: () => o,
     r: () => i
 });
-var n = r(690094);
-let s = "_sentrySpan";
+var s = r(690094);
+let n = "_sentrySpan";
 
 function i(t, e) {
-    e ? (0, n.my)(t, s, e) : delete t[s]
+    e ? (0, s.my)(t, n, e) : delete t[n]
 }
 
 function o(t) {
-    return t[s]
+    return t[n]
 }

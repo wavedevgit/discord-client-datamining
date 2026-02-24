@@ -11,8 +11,8 @@ var l = n(627968),
     a = n(815502),
     o = n(947737),
     d = n(314428),
-    c = n(542229),
-    u = n(467181),
+    u = n(542229),
+    c = n(467181),
     h = n(365126),
     g = n(985018);
 
@@ -57,13 +57,13 @@ function m(e) {
             })
         }), (0, l.jsx)(r.q7S, {
             id: "totp",
-            children: (0, l.jsx)(u.A, {
+            children: (0, l.jsx)(c.A, {
                 ...y,
                 isSlideReady: "totp" === j
             })
         }), (0, l.jsx)(r.q7S, {
             id: "sms",
-            children: (0, l.jsx)(c.A, {
+            children: (0, l.jsx)(u.A, {
                 ...y,
                 isSlideReady: "sms" === j
             })

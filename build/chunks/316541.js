@@ -88,18 +88,18 @@ class M {
 let v = !1,
     D = null,
     R = !1,
-    U = new M(100),
-    O = new M(100);
+    O = new M(100),
+    U = new M(100);
 
 function G() {
     return N.default.isAnyOverlayRendering()
 }
 
-function w(e) {
+function F(e) {
     return (!!e || !R) && v !== e && (v = e, !0)
 }
 
-function F() {
+function w() {
     let e = c.A.getChannelId();
     if (null == e) return null;
     let t = u.A.getChannel(e);
@@ -116,7 +116,7 @@ function L(e) {
     return !!(t || function(e, t) {
         if (null == e) return !1;
         if (null != D && e === D) return !0;
-        let n = F();
+        let n = w();
         return null != n && e === n || t.getNormalizedGuildAffinity(e) > C.u.MINIMUM_GUILD_AFFINITY
     }(n, i)) || !!(null != l && i.getNormalizedUserAffinity(l) > C.u.MINIMUM_USER_AFFINITY)
 }
@@ -145,7 +145,7 @@ function b(e) {
 
 function k(e, t) {
     let n = (0, T.aU)(e.candidate, {
-        voiceGuildId: F(),
+        voiceGuildId: w(),
         mostRecentGuildId: D
     });
     return e.score * (1 + n) * (e.candidate.kind === T.G.DirectMessage || e.candidate.kind === T.G.GroupDM ? 1 : 1 + (0, T.EB)(e.candidate, t))
@@ -158,7 +158,7 @@ function P() {
         t = b({
             includeVcProbability: !0
         });
-    U.rebuildSortedIndexIfDirty(t => k(t, e)), O.rebuildSortedIndexIfDirty(e => k(e, t))
+    O.rebuildSortedIndexIfDirty(t => k(t, e)), U.rebuildSortedIndexIfDirty(e => k(e, t))
 }
 
 function j() {
@@ -213,10 +213,10 @@ function Y(e, t, n) {
         isVocal: () => l.isVocal?.() ?? !1
     });
     if (null == i || i.kind !== T.G.GuildText) return null;
-    let r = U.getChannel(e);
+    let r = O.getChannel(e);
     if (null != r) return r;
     let s = new T.Qb(i, t, n);
-    return U.upsert(s), s
+    return O.upsert(s), s
 }
 
 function W(e, t, n) {
@@ -233,10 +233,10 @@ function W(e, t, n) {
         isVocal: () => l.isVocal?.() ?? !1
     });
     if (null == i || i.kind !== T.G.GuildVoice) return null;
-    let r = O.getChannel(e);
+    let r = U.getChannel(e);
     if (null != r) return r;
     let s = new T.Qb(i, t, n);
-    return O.upsert(s), s
+    return U.upsert(s), s
 }
 let z = 30 * f.A.Millis.MINUTE;
 
@@ -244,7 +244,7 @@ function $() {
     let e = Date.now(),
         t = e - z,
         n = o.A.affinities.filter(e => (e.score ?? 0) > 0).slice(0, 3).map(e => e.guildId),
-        l = F();
+        l = w();
     null == l || n.includes(l) || n.push(l);
     let i = b({
             includeVcProbability: !1
@@ -261,12 +261,12 @@ function $() {
                     let e = s.lastMessageId;
                     if (null == e) continue;
                     let n = E.default.extractTimestamp(e);
-                    if (n < t || null != U.getChannel(l)) continue;
+                    if (n < t || null != O.getChannel(l)) continue;
                     let r = j();
                     r.lastMessageAtMs = n, r.unread = h.Ay.hasUnread(l), r.mentionCount = h.Ay.getMentionCount(l), r.unread && (r.lastUnreadAtMs = n), r.mentionCount > 0 && (r.lastDirectMentionAtMs = n), Y(l, r, i)
                 }
                 if (s.isVocal()) {
-                    if (null != O.getChannel(l)) continue;
+                    if (null != U.getChannel(l)) continue;
                     let t = Object.entries(A.A.getVoiceStatesForChannel(l));
                     if (0 === t.length) continue;
                     let n = new Map;
@@ -288,9 +288,9 @@ function B(e) {
     if (null == t) return !1;
     let n = t.getGuildId?.() ?? null;
     if (null == n || !g.Ay.isGuildOrCategoryOrChannelMuted(n, e)) return !1;
-    let l = null != U.getChannel(e),
-        i = null != O.getChannel(e);
-    return l && U.delete(e), i && O.delete(e), l || i
+    let l = null != O.getChannel(e),
+        i = null != U.getChannel(e);
+    return l && O.delete(e), i && U.delete(e), l || i
 }
 class K extends i.Ay.Store {
     static displayName = "OverlayActiveNowStore";
@@ -298,29 +298,29 @@ class K extends i.Ay.Store {
         this.waitFor(u.A, o.A, _.A, N.default, d.A, h.Ay, c.A, s.A, I.default, g.Ay, A.A)
     }
     getActiveNowChannelByChannelId(e, t) {
-        return "TEXT" === t ? U.getChannel(e) : O.getChannel(e)
+        return "TEXT" === t ? O.getChannel(e) : U.getChannel(e)
     }
     getActiveNowChannels(e) {
         let {
             kind: t
         } = e;
-        return "VOICE" === t ? O.getSortedChannels() : U.getSortedChannels()
+        return "VOICE" === t ? U.getSortedChannels() : O.getSortedChannels()
     }
     getActiveNowChannelIds(e) {
         let {
             kind: t
         } = e;
-        return "VOICE" === t ? O.getSortedChannelIds() : U.getSortedChannelIds()
+        return "VOICE" === t ? U.getSortedChannelIds() : O.getSortedChannelIds()
     }
     hasActiveNowChannelId(e) {
         let {
             kind: t,
             channelId: n
         } = e;
-        return "VOICE" === t ? O.hasSortedChannelId(n) : U.hasSortedChannelId(n)
+        return "VOICE" === t ? U.hasSortedChannelId(n) : O.hasSortedChannelId(n)
     }
     getScoreForChannelId(e) {
-        let t = U.getChannel(e) ?? O.getChannel(e);
+        let t = O.getChannel(e) ?? U.getChannel(e);
         if (null == t) return null;
         let n = b({
             includeVcProbability: t.candidate.kind === T.G.GuildVoice
@@ -328,14 +328,14 @@ class K extends i.Ay.Store {
         return k(t, n)
     }
     getScoreBreakdownForChannelId(e) {
-        let t = U.getChannel(e) ?? O.getChannel(e) ?? null;
+        let t = O.getChannel(e) ?? U.getChannel(e) ?? null;
         if (null == t) return null;
         let n = t.candidate.kind === T.G.GuildVoice ? "VOICE" : "TEXT",
             l = b({
                 includeVcProbability: t.candidate.kind === T.G.GuildVoice
             }),
             i = (0, T.aU)(t.candidate, {
-                voiceGuildId: F(),
+                voiceGuildId: w(),
                 mostRecentGuildId: D
             }),
             r = t.candidate.kind === T.G.DirectMessage || t.candidate.kind === T.G.GroupDM,
@@ -358,29 +358,29 @@ let X = e => (0, p.v$)(e, "OverlayActiveNowStore"),
             if (e.tab !== m.x.MESSAGES) return !1;
             let t = e.targetId;
             if (e.isFavorite) {
-                let e = null != U.getChannel(t),
-                    n = null != O.getChannel(t);
-                return e && U.delete(t), n && O.delete(t), e || n
+                let e = null != O.getChannel(t),
+                    n = null != U.getChannel(t);
+                return e && O.delete(t), n && U.delete(t), e || n
             }
             return !1
         }),
         OVERLAY_MOUNTED: X(function(e) {
-            return w(!0), $(), !0
+            return F(!0), $(), !0
         }),
         OVERLAY_UPDATE_OVERLAY_METHOD: X(function(e) {
             let {
                 overlayMethod: t
             } = e;
-            return t === S.Ue.OutOfProcess || t === S.Ue.OutOfProcessLimitedInteraction ? (w(!0), P(), !0) : !G() && w(!1)
+            return t === S.Ue.OutOfProcess || t === S.Ue.OutOfProcessLimitedInteraction ? (F(!0), P(), !0) : !G() && F(!1)
         }),
         OVERLAY_CRASHED: X(function(e) {
-            return !G() && w(!1)
+            return !G() && F(!1)
         }),
         OVERLAY_SET_INPUT_LOCKED: X(function(e) {
-            return !e.locked && (w(!0), P(), !0)
+            return !e.locked && (F(!0), P(), !0)
         }),
         FRIENDS_LIST_POPOUT_MOUNTED: X(function() {
-            return R = !0, w(!0), $(), !0
+            return R = !0, F(!0), $(), !0
         }),
         MESSAGE_CREATE: X(function(e) {
             if (!v || e.optimistic) return !1;
@@ -400,7 +400,7 @@ let X = e => (0, p.v$)(e, "OverlayActiveNowStore"),
                 }),
                 s = l.getGuildId?.() ?? null;
             if (!L({
-                    isAlreadyTracked: null != U.getChannel(e.channelId),
+                    isAlreadyTracked: null != O.getChannel(e.channelId),
                     guildId: s,
                     updatingUserId: n,
                     providers: r
@@ -420,18 +420,18 @@ let X = e => (0, p.v$)(e, "OverlayActiveNowStore"),
                 recentMessageAuthorId: n,
                 recentMessageAuthorIds: A
             };
-            return (d || h) && (f.mentionCount = Math.max(g.mentionCount, +!!d + +!!h), d && (f.lastDirectMentionAtMs = i), h && (f.lastRoleMentionAtMs = i)), o.updateSignalsAndRescore(f, i), o.prunable && U.delete(e.channelId), P(), !0
+            return (d || h) && (f.mentionCount = Math.max(g.mentionCount, +!!d + +!!h), d && (f.lastDirectMentionAtMs = i), h && (f.lastRoleMentionAtMs = i)), o.updateSignalsAndRescore(f, i), o.prunable && O.delete(e.channelId), P(), !0
         }),
         MESSAGE_ACK: X(function(e) {
             if (!v) return !1;
-            let t = U.getChannel(e.channelId);
+            let t = O.getChannel(e.channelId);
             if (null == t) return !1;
             let n = Date.now(),
                 l = {
                     unread: !1,
                     lastUnreadAtMs: null
                 };
-            return null != e.newMentionCount && (e.newMentionCount > 0 ? (l.mentionCount = e.newMentionCount, null == t.signals.lastDirectMentionAtMs && (l.lastDirectMentionAtMs = n)) : (l.mentionCount = 0, l.lastDirectMentionAtMs = null, l.lastRoleMentionAtMs = null)), t.updateSignalsAndRescore(l, n), t.prunable && U.delete(e.channelId), P(), !0
+            return null != e.newMentionCount && (e.newMentionCount > 0 ? (l.mentionCount = e.newMentionCount, null == t.signals.lastDirectMentionAtMs && (l.lastDirectMentionAtMs = n)) : (l.mentionCount = 0, l.lastDirectMentionAtMs = null, l.lastRoleMentionAtMs = null)), t.updateSignalsAndRescore(l, n), t.prunable && O.delete(e.channelId), P(), !0
         }),
         TYPING_START: X(function(e) {
             if (!v) return !1;
@@ -445,7 +445,7 @@ let X = e => (0, p.v$)(e, "OverlayActiveNowStore"),
                 }),
                 r = n.getGuildId?.() ?? null;
             if (!L({
-                    isAlreadyTracked: null != U.getChannel(e.channelId),
+                    isAlreadyTracked: null != O.getChannel(e.channelId),
                     guildId: r,
                     updatingUserId: e.userId,
                     providers: i
@@ -459,7 +459,7 @@ let X = e => (0, p.v$)(e, "OverlayActiveNowStore"),
                 typingUserIdsWithTimestampMs: o,
                 typingUserIds: d,
                 isTyping: d.length > 0
-            }, l), s.prunable && U.delete(e.channelId), P(), !0
+            }, l), s.prunable && O.delete(e.channelId), P(), !0
         }),
         VOICE_STATE_UPDATES: X(function(e) {
             if (!v) return !1;
@@ -468,13 +468,13 @@ let X = e => (0, p.v$)(e, "OverlayActiveNowStore"),
                     includeVcProbability: !0
                 }),
                 l = !1;
-            return O.applyBatch(() => {
+            return U.applyBatch(() => {
                 for (let i of e.voiceStates) {
                     let e = i.userId,
                         r = i.channelId ?? null,
                         s = i.oldChannelId ?? null,
                         a = n => {
-                            let i = O.getChannel(n);
+                            let i = U.getChannel(n);
                             if (null == i) return;
                             let r = i.signals,
                                 s = new Map(r.voiceUsersWithJoinTimestampMs);
@@ -492,13 +492,13 @@ let X = e => (0, p.v$)(e, "OverlayActiveNowStore"),
                                 videoUsersWithTimestampMs: u,
                                 lastUnmuteActivityAtMs: o,
                                 lastUndeafenActivityAtMs: d
-                            }, t), i.prunable && O.delete(n), l = !0
+                            }, t), i.prunable && U.delete(n), l = !0
                         };
                     if (null != s && s !== r && a(s), null != r) {
                         let a = u.A.getChannel(r),
                             o = a?.getGuildId?.() ?? null;
                         if (!L({
-                                isAlreadyTracked: null != O.getChannel(r),
+                                isAlreadyTracked: null != U.getChannel(r),
                                 guildId: o,
                                 updatingUserId: e,
                                 providers: n
@@ -530,7 +530,7 @@ let X = e => (0, p.v$)(e, "OverlayActiveNowStore"),
                             videoUsersWithTimestampMs: A,
                             lastUnmuteActivityAtMs: f,
                             lastUndeafenActivityAtMs: E
-                        }, t), d.prunable && O.delete(r), l = !0
+                        }, t), d.prunable && U.delete(r), l = !0
                     }
                 }
             }), l && P(), l
@@ -555,19 +555,19 @@ let X = e => (0, p.v$)(e, "OverlayActiveNowStore"),
         USER_GUILD_SETTINGS_GUILD_UPDATE: X(function(e) {
             let t = e.guildId,
                 n = !1;
-            for (let e of U.getSortedChannels()) e.candidate.guildId === t && (n = B(e.candidate.channelId) || n);
             for (let e of O.getSortedChannels()) e.candidate.guildId === t && (n = B(e.candidate.channelId) || n);
+            for (let e of U.getSortedChannels()) e.candidate.guildId === t && (n = B(e.candidate.channelId) || n);
             return n
         }),
         USER_GUILD_SETTINGS_GUILD_AND_CHANNELS_UPDATE: X(function(e) {
             let t = e.guildId,
                 n = !1;
-            for (let e of U.getSortedChannels()) e.candidate.guildId === t && (n = B(e.candidate.channelId) || n);
             for (let e of O.getSortedChannels()) e.candidate.guildId === t && (n = B(e.candidate.channelId) || n);
+            for (let e of U.getSortedChannels()) e.candidate.guildId === t && (n = B(e.candidate.channelId) || n);
             return n
         }),
         LOGOUT: X(function() {
-            let e = U.size > 0 || O.size > 0;
-            return U.clear(), O.clear(), v = !1, R = !1, D = null, e
+            let e = O.size > 0 || U.size > 0;
+            return O.clear(), U.clear(), v = !1, R = !1, D = null, e
         })
     })

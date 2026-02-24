@@ -73,15 +73,15 @@ let E = s.forwardRef(function(e, t) {
             onPopulated: E,
             error: x,
             autoFocus: I,
-            required: v,
-            onFocus: N,
+            required: N,
+            onFocus: v,
             onBlur: j,
             name: S
         } = e,
         {
             day: C,
-            setDay: y,
-            month: T,
+            setDay: T,
+            month: y,
             setMonth: b,
             year: R,
             setYear: O
@@ -100,12 +100,12 @@ let E = s.forwardRef(function(e, t) {
                 setYear: c
             }
         }(a),
-        w = s.useMemo(() => null != C && null != T && null != R ? o()(`${C}/${T}/${R}`, "DD/MM/YYYY") : null, [C, T, R]);
+        L = s.useMemo(() => null != C && null != y && null != R ? o()(`${C}/${y}/${R}`, "DD/MM/YYYY") : null, [C, y, R]);
     s.useEffect(() => {
-        m(w?.isValid() ? w : null)
-    }, [w, m]);
-    let L = x;
-    null == w || w.isValid() || (L = u.intl.string(u.t.udnqh6));
+        m(L?.isValid() ? L : null)
+    }, [L, m]);
+    let w = x;
+    null == L || L.isValid() || (w = u.intl.string(u.t.udnqh6));
     let k = (n = new Date().getFullYear(), r = s.useRef(Array.from(Array(150).keys()).map(e => ({
             value: n - e - 3,
             label: `${n-e-3}`
@@ -115,11 +115,11 @@ let E = s.forwardRef(function(e, t) {
                 label: `${n-e-3}`
             }))
         }, [n]), r.current),
-        [D, U] = s.useState(I ? 0 : -1),
-        B = s.useMemo(A, []),
+        [D, B] = s.useState(I ? 0 : -1),
+        U = s.useMemo(A, []),
         P = {
             onPopulated: E,
-            sortedInputs: B
+            sortedInputs: U
         },
         G = s.useRef(P);
     s.useEffect(() => {
@@ -135,14 +135,14 @@ let E = s.forwardRef(function(e, t) {
     for (let e = 0; e < 3; e++) {
         let {
             type: t
-        } = B[e];
+        } = U[e];
         switch (t) {
             case "day":
                 F.push({
                     key: "day",
                     input: (0, i.jsx)(f, {
                         options: p,
-                        selectOption: y,
+                        selectOption: T,
                         children: (0, i.jsx)(d.Te, {
                             "aria-label": u.intl.string(u.t.Voklre),
                             popoutPosition: "top",
@@ -150,11 +150,11 @@ let E = s.forwardRef(function(e, t) {
                             options: p,
                             value: C,
                             onChange: t => {
-                                y(t), U(e + 1)
+                                T(t), B(e + 1)
                             },
                             maxVisibleItems: 6,
                             autoFocus: D === e,
-                            onOpen: () => N?.(`${S}_${t}`),
+                            onOpen: () => v?.(`${S}_${t}`),
                             onClose: () => j?.(`${S}_${t}`),
                             "data-migration-pending": !0
                         })
@@ -172,13 +172,13 @@ let E = s.forwardRef(function(e, t) {
                             popoutPosition: "top",
                             placeholder: u.intl.string(u.t.UDlN8W),
                             options: g,
-                            value: T,
+                            value: y,
                             onChange: t => {
-                                b(t), U(e + 1)
+                                b(t), B(e + 1)
                             },
                             maxVisibleItems: 6,
                             autoFocus: D === e,
-                            onOpen: () => N?.(`${S}_${t}`),
+                            onOpen: () => v?.(`${S}_${t}`),
                             onClose: () => j?.(`${S}_${t}`),
                             "data-migration-pending": !0
                         })
@@ -198,11 +198,11 @@ let E = s.forwardRef(function(e, t) {
                             options: k,
                             value: R,
                             onChange: t => {
-                                O(t), U(e + 1)
+                                O(t), B(e + 1)
                             },
                             maxVisibleItems: 6,
                             autoFocus: D === e,
-                            onOpen: () => N?.(`${S}_${t}`),
+                            onOpen: () => v?.(`${S}_${t}`),
                             onClose: () => j?.(`${S}_${t}`),
                             "data-migration-pending": !0
                         })
@@ -214,8 +214,8 @@ let E = s.forwardRef(function(e, t) {
         className: l()(h.container, _),
         children: (0, i.jsx)(c.D0$, {
             label: u.intl.string(u.t.xNpFJ6),
-            required: v,
-            errorMessage: L ?? void 0,
+            required: N,
+            errorMessage: w ?? void 0,
             children: (0, i.jsx)("div", {
                 className: h.inputs,
                 children: F.map((e, t) => {

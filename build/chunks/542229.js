@@ -1,6 +1,6 @@
 /** chunk id: 542229, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => u
+    A: () => c
 });
 var l = n(627968),
     s = n(64700),
@@ -9,13 +9,13 @@ var l = n(627968),
     a = n(397927),
     o = n(398450),
     d = n(652215),
-    c = n(985018);
+    u = n(985018);
 
-function u(e) {
+function c(e) {
     let {
         mfaChallenge: t,
         finish: n,
-        setSlide: u,
+        setSlide: c,
         onClose: h,
         isSlideReady: g,
         headerAlignStart: m
@@ -38,7 +38,7 @@ function u(e) {
     }, [t.ticket]), s.useEffect(() => {
         g && v.current?.focus()
     }, [g]);
-    let w = null == S ? c.intl.string(c.t.LQdCQE) : c.intl.formatToPlainString(c.t["8r6h7+"], {
+    let w = null == S ? u.intl.string(u.t.LQdCQE) : u.intl.formatToPlainString(u.t["8r6h7+"], {
         phoneNumber: S
     });
     return (0, l.jsxs)("form", {
@@ -59,10 +59,10 @@ function u(e) {
         }), (0, l.jsxs)(o.A.SlideContent, {
             children: [(0, l.jsxs)(a.M_l, {
                 children: [(0, l.jsx)(a.ksK, {
-                    label: c.intl.string(c.t.HZPBOd),
+                    label: u.intl.string(u.t.HZPBOd),
                     inputRef: v,
                     onChange: k,
-                    placeholder: c.intl.string(c.t.tARzgo),
+                    placeholder: u.intl.string(u.t.tARzgo),
                     maxLength: 10,
                     value: C,
                     autoComplete: "one-time-code",
@@ -70,7 +70,7 @@ function u(e) {
                     disabled: j
                 }), (0, l.jsx)(a.Button, {
                     variant: "secondary",
-                    text: c.intl.string(c.t.ZF29L6),
+                    text: u.intl.string(u.t.ZF29L6),
                     loading: f,
                     onClick: () => {
                         i.Bo.post({
@@ -92,7 +92,7 @@ function u(e) {
             })]
         }), (0, l.jsx)(o.A.SlideFooter, {
             mfaChallenge: t,
-            setSlide: u,
+            setSlide: c,
             showConfirm: !0,
             disabled: C.length !== r.$A,
             submitting: j

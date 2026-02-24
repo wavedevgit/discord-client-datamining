@@ -1,7 +1,7 @@
 /** chunk id: 148864, original params: e,t,s (module,exports,require) **/
 let r;
 s.d(t, {
-    A: () => c
+    A: () => h
 });
 var n = s(311907),
     a = s(73153),
@@ -14,7 +14,7 @@ function o(e) {
     } = e;
     null != t && (l = (0, i.XF)(t) ?? (0, i.rE)())
 }
-class h extends n.Ay.DeviceSettingsStore {
+class c extends n.Ay.DeviceSettingsStore {
     static displayName = "PhoneStore";
     static persistKey = "PhoneStore";
     initialize(e) {
@@ -29,7 +29,7 @@ class h extends n.Ay.DeviceSettingsStore {
         return null != r ? r : l
     }
 }
-let c = new h(a.h, {
+let h = new c(a.h, {
     PHONE_SET_COUNTRY_CODE: function(e) {
         let {
             countryCode: t

@@ -1,34 +1,34 @@
 /** chunk id: 916494, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     $G: () => h,
-    Mw: () => r,
+    Mw: () => s,
     UM: () => c,
     Um: () => o,
-    cP: () => l,
-    eu: () => u,
-    kz: () => d,
+    cP: () => r,
+    eu: () => d,
+    kz: () => u,
     uc: () => a
 });
 let i = 9 / 16,
-    s = 16 / 9,
-    l = (e, t) => e * t,
+    l = 16 / 9,
     r = (e, t) => e * t,
-    a = e => l(e, i),
-    o = e => r(e, s);
+    s = (e, t) => e * t,
+    a = e => r(e, i),
+    o = e => s(e, l);
 
-function d(e, t) {
+function u(e, t) {
     return t * (Math.max(1, e) - 1)
 }
 
-function u(e) {
+function d(e) {
     let {
         width: t,
         height: n,
         containerOffset: i,
-        gapSize: s,
-        tileCount: l,
-        isVertical: r
-    } = e, a = r ? t : t - d(l, s), o = r ? n - d(l, s) : n;
+        gapSize: l,
+        tileCount: r,
+        isVertical: s
+    } = e, a = s ? t : t - u(r, l), o = s ? n - u(r, l) : n;
     return {
         verticalRatio: (o - i) / (a - i),
         horizontalRatio: (a - i) / (o - i)
@@ -38,32 +38,32 @@ function u(e) {
 function c(e, t, n) {
     let {
         containerOffset: i,
-        gapSize: s,
+        gapSize: l,
         tileCount: a,
         isVertical: o
     } = t, {
         maxWidth: c,
         maxHeight: h
-    } = n, g = Math.max(1, a), m = e.width > c, p = e.height > h;
-    if (!m && !p) return e;
-    let A = d(a, s),
+    } = n, m = Math.max(1, a), g = e.width > c, p = e.height > h;
+    if (!g && !p) return e;
+    let A = u(a, l),
         {
-            verticalRatio: x,
-            horizontalRatio: E
-        } = u({
+            verticalRatio: f,
+            horizontalRatio: x
+        } = d({
             width: e.width,
             height: e.height,
             containerOffset: i,
-            gapSize: s,
-            tileCount: g,
+            gapSize: l,
+            tileCount: m,
             isVertical: o
         }),
-        f = e.width - i,
+        E = e.width - i,
         S = e.height - i,
-        I = c - i,
-        T = h - i;
-    return o ? (T -= A, S -= A) : (I -= A, f -= A), m && p && (e.width > e.height ? S = l(f = I, x) : f = r(S = T, E), m = f > I, p = S > T), m && (S = l(f = I, x)), p && (f = r(S = T, E)), o ? S += d(a, s) : f += d(a, s), {
-        width: f + i,
+        v = c - i,
+        C = h - i;
+    return o ? (C -= A, S -= A) : (v -= A, E -= A), g && p && (e.width > e.height ? S = r(E = v, f) : E = s(S = C, x), g = E > v, p = S > C), g && (S = r(E = v, f)), p && (E = s(S = C, x)), o ? S += u(a, l) : E += u(a, l), {
+        width: E + i,
         height: S + i
     }
 }

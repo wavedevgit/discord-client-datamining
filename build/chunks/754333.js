@@ -1,24 +1,24 @@
 /** chunk id: 754333, original params: t,e,n (module,exports,require) **/
 n.d(e, {
     Y: () => u,
-    r: () => d
+    r: () => o
 });
-var i = n(64700),
-    s = n(989349),
-    a = n.n(s),
+var s = n(64700),
+    i = n(989349),
+    a = n.n(i),
     r = n(311907),
     l = n(961350),
     c = n(620733),
-    o = n(985018);
+    d = n(985018);
 
-function d() {
+function o() {
     let t = (0, r.cf)([c.A], () => c.A.getSessions());
-    return i.useMemo(() => {
+    return s.useMemo(() => {
         let e = [...t],
             n = null,
-            i = l.default.getAuthSessionIdHash();
-        if (null != i) {
-            let t = e.findIndex(t => t.id_hash === i);
+            s = l.default.getAuthSessionIdHash();
+        if (null != s) {
+            let t = e.findIndex(t => t.id_hash === s);
             t >= 0 && (n = e.splice(t, 1)[0])
         }
         return e.sort((t, e) => e.approx_last_used_time.valueOf() - t.approx_last_used_time.valueOf()), {
@@ -29,5 +29,5 @@ function d() {
 }
 
 function u(t) {
-    return (Date.now() - t.valueOf()) / 1e3 / 60 / 60 < 1 ? o.intl.string(o.t.TXCmfL) : a()(t).fromNow()
+    return (Date.now() - t.valueOf()) / 1e3 / 60 / 60 < 1 ? d.intl.string(d.t.TXCmfL) : a()(t).fromNow()
 }

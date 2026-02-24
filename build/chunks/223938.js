@@ -35,8 +35,8 @@ var i = n(627968),
     O = n(31717),
     L = n(638128),
     P = n(522602),
-    k = n(515718),
-    w = n(723702),
+    w = n(515718),
+    k = n(723702),
     U = n(518960),
     G = n(486319),
     F = n(355622),
@@ -82,7 +82,7 @@ let X = l.memo(l.forwardRef(function(e, t) {
             channel: v,
             type: b,
             focused: j,
-            onChange: k,
+            onChange: w,
             onResize: U,
             onBlur: K,
             onFocus: Y,
@@ -122,12 +122,12 @@ let X = l.memo(l.forwardRef(function(e, t) {
         disabled: eR,
         canAttachFiles: eM,
         canEveryoneSendMessages: eD
-    } = (0, V.Sk)(v, b, ev, f), eO = !D.D_.useSetting() && !(0, w.isAndroidWeb)() && null != window.ResizeObserver, eL = !eO || !b.commands?.enabled || !j || "/" !== s, eP = (0, R.A)(), {
-        fontSize: ek
+    } = (0, V.Sk)(v, b, ev, f), eO = !D.D_.useSetting() && !(0, k.isAndroidWeb)() && null != window.ResizeObserver, eL = !eO || !b.commands?.enabled || !j || "/" !== s, eP = (0, R.A)(), {
+        fontSize: ew
     } = (0, u.cf)([_.A], () => ({
         fontSize: _.A.fontSize,
         isSubmitButtonEnabled: _.A.isSubmitButtonEnabled
-    })), ew = (0, u.bG)([L.A], () => L.A.isEnabled()), eU = (0, M.n)(v);
+    })), ek = (0, u.bG)([L.A], () => L.A.isEnabled()), eU = (0, M.n)(v);
     (0, V.N_)(b, eR, v.id);
     let {
         eventEmitter: eG,
@@ -207,7 +207,7 @@ let X = l.memo(l.forwardRef(function(e, t) {
     } = (0, V.MD)(b, eT, v.id), e2 = (0, V.BX)(s), {
         currentAutocompleteType: e3,
         handleAutocompleteVisibilityChange: e7
-    } = (0, V.uW)(b, v.id), e5 = (0, V.NO)(eT), e6 = (0, V.Vu)(eB, b, eT), e9 = (0, V.C)({
+    } = (0, V.uW)(b, v.id), e5 = (0, V.NO)(eT), e9 = (0, V.Vu)(eB, b, eT), e6 = (0, V.C)({
         editorRef: eT,
         disabled: eR,
         textValue: s,
@@ -315,7 +315,7 @@ let X = l.memo(l.forwardRef(function(e, t) {
                                         maxCharacterCount: er ?? eP,
                                         allowNewLines: !0,
                                         "aria-describedby": ec,
-                                        onChange: k,
+                                        onChange: w,
                                         onResize: eJ,
                                         onBlur: K,
                                         onFocus: Y,
@@ -328,8 +328,8 @@ let X = l.memo(l.forwardRef(function(e, t) {
                                         onMaybeShowAutocomplete: eW,
                                         onHideAutocomplete: ez,
                                         promptToUpload: el,
-                                        fontSize: ek,
-                                        spellcheckEnabled: ew,
+                                        fontSize: ew,
+                                        spellcheckEnabled: ek,
                                         canOnlyUseTextCommands: !1,
                                         isEditorIdle: e2,
                                         currentAutocompleteType: e3,
@@ -433,15 +433,15 @@ let X = l.memo(l.forwardRef(function(e, t) {
                     onSendSticker: () => {},
                     onVisibilityChange: e7,
                     editorHeight: eq,
-                    setValue: (e, t) => k?.(null, e, t),
+                    setValue: (e, t) => w?.(null, e, t),
                     position: eh
                 })]
             }), e0 ? null : (0, i.jsx)(y.A, {
                 positionTargetRef: eS,
                 type: b,
-                onSelectGIF: e6,
+                onSelectGIF: e9,
                 onSelectEmoji: e5,
-                onSelectSticker: e9,
+                onSelectSticker: e6,
                 channel: v,
                 closeOnModalOuterClick: eA,
                 parentModalKey: eg,
@@ -556,7 +556,7 @@ function en(e) {
         onImageUploaded: n,
         onFocus: s
     } = e, a = l.useRef(null), r = async (e, i) => {
-        let l = await (0, k.bX)(e, i.name, i.type),
+        let l = await (0, w.bX)(e, i.name, i.type),
             s = {
                 id: (0, d.A)(),
                 file: l,

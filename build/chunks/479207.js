@@ -1,206 +1,206 @@
 /** chunk id: 479207, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => P,
-    r: () => k
+    r: () => z
 });
 var i = n(627968),
-    s = n(64700),
-    l = n(503698),
-    r = n.n(l),
+    l = n(64700),
+    r = n(503698),
+    s = n.n(r),
     a = n(311907),
     o = n(397927),
-    d = n(442433),
-    u = n(391973),
+    u = n(442433),
+    d = n(391973),
     c = n(765671),
     h = n(313961),
-    g = n(164617),
-    m = n(401901),
+    m = n(164617),
+    g = n(401901),
     p = n(87001),
     A = n(175203),
-    x = n(163432),
-    E = n(734057),
-    f = n(430452),
+    f = n(163432),
+    x = n(734057),
+    E = n(430452),
     S = n(309010),
-    I = n(256415),
-    T = n(996439),
-    v = n(810412),
-    C = n(799808),
-    j = n(129537),
+    v = n(256415),
+    C = n(996439),
+    I = n(810412),
+    T = n(799808),
+    _ = n(129537),
     y = n(412477),
-    w = n(916494),
-    O = n(897720),
-    _ = n(392164),
-    N = n(652215),
-    b = n(731854),
-    R = n(985018),
-    M = n(384339);
-let L = s.memo(function(e) {
+    j = n(916494),
+    b = n(897720),
+    w = n(392164),
+    O = n(652215),
+    N = n(731854),
+    M = n(985018),
+    R = n(384339);
+let k = l.memo(function(e) {
         let {
             participant: t,
             channel: n,
-            context: s
-        } = e, l = t.user?.id;
-        return (0, a.bG)([f.Ay], () => null != t.user && null != s && null != n && f.Ay.isLocalVideoDisabled(l, s), [l, t.user, s, n]) ? null : (0, i.jsx)(A.Ay, {
+            context: l
+        } = e, r = t.user?.id;
+        return (0, a.bG)([E.Ay], () => null != t.user && null != l && null != n && E.Ay.isLocalVideoDisabled(r, l), [r, t.user, l, n]) ? null : (0, i.jsx)(A.Ay, {
             ...e
         })
     }),
-    z = s.memo(function(e) {
+    L = l.memo(function(e) {
         let {
-            context: t = b.x.DEFAULT,
-            participants: l,
-            locked: r,
+            context: t = N.x.DEFAULT,
+            participants: r,
+            locked: s,
             channel: a,
             width: o,
-            height: u,
+            height: d,
             shouldDisplay: c
-        } = e, h = s.useCallback((e, s) => {
-            let l = e.user;
-            (0, v.YX)(N.uss.VIDEO, {
-                type: v.Z5.CAMERA,
-                value: v.IP.SETTINGS_OPENED,
-                userId: l?.id
-            }), (0, d.L3)(s, async () => {
+        } = e, h = l.useCallback((e, l) => {
+            let r = e.user;
+            (0, I.YX)(O.uss.VIDEO, {
+                type: I.Z5.CAMERA,
+                value: I.IP.SETTINGS_OPENED,
+                userId: r?.id
+            }), (0, u.L3)(l, async () => {
                 let {
                     default: e
                 } = await Promise.all([n.e("97262"), n.e("87997"), n.e("99871")]).then(n.bind(n, 180812));
                 return n => (0, i.jsx)(e, {
                     ...n,
-                    user: l,
+                    user: r,
                     mediaEngineContext: t,
                     onWatchStream: () => {
-                        (0, v.YX)(N.uss.VIDEO, {
-                            type: v.Z5.GO_LIVE,
-                            value: v.IP.ENABLED,
-                            userId: l?.id
+                        (0, I.YX)(O.uss.VIDEO, {
+                            type: I.Z5.GO_LIVE,
+                            value: I.IP.ENABLED,
+                            userId: r?.id
                         })
                     }
                 })
             })
-        }, [t]), p = (0, v.Dk)(() => new Set(l.map(e => e.user?.id)), [l]);
-        s.useEffect(() => {
-            c && (0, v.Y)(N.uss.VIDEO, {
-                locked: I.default.isInstanceLocked(),
+        }, [t]), p = (0, I.Dk)(() => new Set(r.map(e => e.user?.id)), [r]);
+        l.useEffect(() => {
+            c && (0, I.Y)(O.uss.VIDEO, {
+                locked: v.default.isInstanceLocked(),
                 shownUserIds: Array.from(p),
                 liveUserIds: Array.from(p),
                 contentInventoryIds: []
             })
         }, [p, c]);
-        let A = s.useMemo(() => ({
+        let A = l.useMemo(() => ({
             width: o,
-            height: u
-        }), [o, u]);
+            height: d
+        }), [o, d]);
         return (0, i.jsx)(i.Fragment, {
-            children: l.map(e => (0, i.jsx)(L, {
+            children: r.map(e => (0, i.jsx)(k, {
                 participant: e,
                 width: o,
-                className: M.Vs,
+                className: R.Vs,
                 containerStyle: A,
-                fit: m.$.COVER,
+                fit: g.$.COVER,
                 channel: a,
-                popoutType: g.N.OVERLAY,
+                popoutType: m.N.OVERLAY,
                 inCall: !0,
                 noBorder: !0,
-                onContextMenu: r ? void 0 : h,
-                forceIdle: r,
+                onContextMenu: s ? void 0 : h,
+                forceIdle: s,
                 paused: !c,
                 context: t
             }, e.id))
         })
     }),
-    D = s.memo(function(e) {
+    D = l.memo(function(e) {
         let {
-            context: t = b.x.DEFAULT,
+            context: t = N.x.DEFAULT,
             participants: n,
-            participantsVersion: l,
+            participantsVersion: r,
             locked: a,
-            widget: d,
-            channel: u,
+            widget: u,
+            channel: d,
             width: c,
             height: h,
-            showEmpty: g = !0,
-            containerRef: m
-        } = e, p = "boolean" != typeof d.meta.horizontal || d.meta.horizontal, A = n.length > 0 && null != t && null != u && (!a || d.pinned);
-        s.useEffect(() => {
-            (0, C.j_)({
+            showEmpty: m = !0,
+            containerRef: g
+        } = e, p = "boolean" != typeof u.meta.horizontal || u.meta.horizontal, A = n.length > 0 && null != t && null != d && (!a || u.pinned);
+        l.useEffect(() => {
+            (0, T.j_)({
                 locked: a,
-                pinned: d.pinned,
-                widget: d.type,
+                pinned: u.pinned,
+                widget: u.type,
                 isPreviewingInGame: !1
             }, A)
-        }, [a, d, A]);
-        let x = s.useMemo(() => ({
-                opacity: d.opacity
-            }), [d.opacity]),
-            E = s.useMemo(() => r()({
-                [M.wb]: !0,
-                [M.Vd]: !p,
-                [M.R]: !A && a
+        }, [a, u, A]);
+        let f = l.useMemo(() => ({
+                opacity: u.opacity
+            }), [u.opacity]),
+            x = l.useMemo(() => s()({
+                [R.wb]: !0,
+                [R.Vd]: !p,
+                [R.R]: !A && a
             }), [p, A, a]);
-        return 0 !== n.length || a ? null == u ? null : (0, i.jsx)("div", {
-            ref: m,
-            className: E,
-            style: x,
-            children: (0, i.jsx)(z, {
+        return 0 !== n.length || a ? null == d ? null : (0, i.jsx)("div", {
+            ref: g,
+            className: x,
+            style: f,
+            children: (0, i.jsx)(L, {
                 context: t,
                 participants: n,
                 locked: a,
-                channel: u,
+                channel: d,
                 width: c,
                 height: h,
                 shouldDisplay: A,
-                participantsVersion: l
+                participantsVersion: r
             })
-        }) : g ? (0, i.jsx)("div", {
-            ref: m,
+        }) : m ? (0, i.jsx)("div", {
+            ref: g,
             children: (0, i.jsx)(y.g, {
-                emptyText: R.intl.string(R.t.aTiM42),
+                emptyText: M.intl.string(M.t.aTiM42),
                 icon: o.npA,
                 absolute: !0
             })
         }) : null
     }),
-    k = e => {
+    z = e => {
         let {
             widget: t,
             computedSize: n,
             borderWidth: i,
-            padding: s,
-            containerSpecs: l
+            padding: l,
+            containerSpecs: r
         } = e;
-        if (!(0, O.cv)(t)) return n;
-        let r = "boolean" != typeof t.meta.horizontal || t.meta.horizontal,
-            a = 2 * i + 2 * s,
-            o = r ? {
+        if (!(0, b.cv)(t)) return n;
+        let s = "boolean" != typeof t.meta.horizontal || t.meta.horizontal,
+            a = 2 * i + 2 * l,
+            o = s ? {
                 width: Math.max(n.width, 192),
                 height: Math.min(n.height, 240 + a)
             } : {
                 height: Math.max(n.height, 192),
                 width: Math.min(n.width, 240 + a)
             },
-            d = {
-                maxWidth: .75 * l.maxX,
-                maxHeight: .75 * l.maxY
+            u = {
+                maxWidth: .75 * r.maxX,
+                maxHeight: .75 * r.maxY
             };
-        return (0, w.$G)(o, d)
+        return (0, j.$G)(o, u)
     };
 
 function P(e) {
-    let t = (0, a.bG)([S.A, E.A], () => E.A.getChannel(S.A.getVoiceChannelId())),
+    let t = (0, a.bG)([S.A, x.A], () => x.A.getChannel(S.A.getVoiceChannelId())),
         n = 2 * e.padding + 2 * e.borderWidth,
-        l = t?.id,
-        [r, o] = (0, a.bG)([h.A], () => null == l ? [
+        r = t?.id,
+        [s, o] = (0, a.bG)([h.A], () => null == r ? [
             [], 0
-        ] : [h.A.getVideoParticipants(l), h.A.getParticipantsVersion(l)], [l], T.D),
-        d = "boolean" != typeof e.widget.meta.horizontal || e.widget.meta.horizontal,
+        ] : [h.A.getVideoParticipants(r), h.A.getParticipantsVersion(r)], [r], C.D),
+        u = "boolean" != typeof e.widget.meta.horizontal || e.widget.meta.horizontal,
         {
-            width: g = e.width - n,
-            height: m = e.height - n,
+            width: m = e.width - n,
+            height: g = e.height - n,
             ref: A
         } = (0, c.Ay)(e.locked, e.widget.pinned),
         {
-            participantTileWidth: f,
-            visibleParticipants: I
-        } = (0, x.i4)(d ? g : m, r, {
+            participantTileWidth: E,
+            visibleParticipants: v
+        } = (0, f.i4)(u ? m : g, s, {
             tileWidth: 192,
             tileMinWidth: 120,
             tileMargin: 4,
@@ -208,19 +208,19 @@ function P(e) {
             cropSelfVideo: !0,
             version: o
         }),
-        v = (0, a.bG)([p.A], () => p.A.getWindowState(_.f)),
-        C = {
+        I = (0, a.bG)([p.A], () => p.A.getWindowState(w.f)),
+        T = {
             id: e.widget.id,
             containerSize: {
-                containerHeight: m,
-                containerWidth: g
+                containerHeight: g,
+                containerWidth: m
             },
             sizeOffset: n,
             padding: e.padding,
             borderWidth: e.borderWidth,
             containerSpecs: {
-                maxX: v?.width ?? e.width - n,
-                maxY: v?.height ?? e.height - n,
+                maxX: I?.width ?? e.width - n,
+                maxY: I?.height ?? e.height - n,
                 minX: 0,
                 minY: 0
             },
@@ -228,8 +228,8 @@ function P(e) {
             orientedPosition: {
                 top: 0,
                 left: 0,
-                bottom: v?.height ?? e.height,
-                right: v?.width ?? e.width
+                bottom: I?.height ?? e.height,
+                right: I?.width ?? e.width
             }
         };
     return ! function(e) {
@@ -237,60 +237,60 @@ function P(e) {
             horizontal: t,
             widget: n,
             widgetLayoutSpecs: i
-        } = e, l = {
+        } = e, r = {
             id: n.id,
             size: n.size,
             containerWidth: i.containerSize.containerWidth,
             containerHeight: i.containerSize.containerHeight,
             widget: n,
             widgetLayoutSpecs: i
-        }, r = s.useRef(l);
-        s.useLayoutEffect(() => void(r.current = l)), s.useLayoutEffect(() => {
+        }, s = l.useRef(r);
+        l.useLayoutEffect(() => void(s.current = r)), l.useLayoutEffect(() => {
             let {
                 size: e,
                 id: n,
                 containerWidth: i,
-                containerHeight: s,
-                widget: l,
+                containerHeight: l,
+                widget: r,
                 widgetLayoutSpecs: a
-            } = r.current;
+            } = s.current;
             if (!(t && e.height > e.width || !t && e.width > e.height)) return;
             let {
                 width: o,
-                height: d
-            } = k({
+                height: u
+            } = z({
                 ...a,
-                widget: l,
-                operation: j.P.RESIZE_NORTH,
+                widget: r,
+                operation: _.P.RESIZE_NORTH,
                 computedSize: {
-                    width: s,
+                    width: l,
                     height: i
                 },
                 originSize: {
-                    width: s,
+                    width: l,
                     height: i
                 }
             });
-            (0, u.Ju)({
+            (0, d.Ju)({
                 widgetId: n,
                 size: {
                     fixed: !0,
                     width: o,
-                    height: d
+                    height: u
                 }
             })
         }, [t])
     }({
-        horizontal: d,
+        horizontal: u,
         widget: e.widget,
-        widgetLayoutSpecs: C
+        widgetLayoutSpecs: T
     }), (0, i.jsx)(D, {
         ...e,
         channel: t,
-        participants: I,
+        participants: v,
         participantsVersion: o,
-        width: d ? f : g ?? e.width,
-        height: d ? m ?? e.height : f,
+        width: u ? E : m ?? e.width,
+        height: u ? g ?? e.height : E,
         containerRef: A
     })
 }

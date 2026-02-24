@@ -30,17 +30,17 @@ var l = n(627968),
     v = n(91868),
     D = n(554932),
     R = n(406595),
-    U = n(557404),
-    O = n(652215),
+    O = n(557404),
+    U = n(652215),
     G = n(895867),
-    w = n(985018),
-    F = n(416001);
+    F = n(985018),
+    w = n(416001);
 
 function L(e) {
     return Array.from(e).sort()
 }
 let b = (0, r.throttle)(e => {
-        (0, _.Y)(O.uss.FRIENDS, {
+        (0, _.Y)(U.uss.FRIENDS, {
             locked: p.default.isInstanceLocked(),
             shownUserIds: e.shownUserIds,
             liveUserIds: [],
@@ -97,7 +97,7 @@ function P() {
     (0, h.RT)(r, A, m, k);
     let p = i.useRef(null),
         N = (0, o.A)("friends-widget-messages", p),
-        [O, P] = (0, a.bG)([R.A], () => R.A.getFavoriteTargetIdsForTab(C.x.MESSAGES), [], T.D),
+        [U, P] = (0, a.bG)([R.A], () => R.A.getFavoriteTargetIdsForTab(C.x.MESSAGES), [], T.D),
         [j, V] = (0, a.bG)([v.A], () => {
             let [e, t] = v.A.getRows(v.Y.ACTIVE_NOW), [n] = v.A.getRows(v.Y.DMS), [l] = v.A.getRows(v.Y.RECENT_TEXT), i = n.slice(0, 5), r = l.slice(0, 8);
             return [{
@@ -115,12 +115,12 @@ function P() {
         }, []),
         W = i.useMemo(() => {
             let e = new Set;
-            for (let t of O) e.add(t);
+            for (let t of U) e.add(t);
             for (let t of j.dmRows) e.add(t.channelId);
             for (let t of j.activeNowRows) e.add(t.channelId);
             for (let t of j.recentTextRows) e.add(t.channelId);
             return Array.from(e)
-        }, [O, j.activeNowRows, j.dmRows, j.recentTextRows]),
+        }, [U, j.activeNowRows, j.dmRows, j.recentTextRows]),
         {
             unreadOrMentionChannels: z
         } = (0, a.cf)([f.Ay], () => {
@@ -144,18 +144,18 @@ function P() {
             if ("" !== c) return n.push({
                 kind: "SEARCH_RESULTS",
                 key: "SEARCH_RESULTS",
-                title: w.intl.string(G.default.HGimIS),
+                title: F.intl.string(G.default.HGimIS),
                 count: E.length,
                 channelIds: E.map(e => e.channel.id),
                 length: E.length
             }), n;
-            if (O.length > 0 && P > 0) {
-                let l = e("FAVORITES") ? O.filter(t) : O;
+            if (U.length > 0 && P > 0) {
+                let l = e("FAVORITES") ? U.filter(t) : U;
                 n.push({
                     kind: "FAVORITES",
                     key: "FAVORITES",
-                    title: w.intl.string(G.default.GKTlS6),
-                    count: O.length,
+                    title: F.intl.string(G.default.GKTlS6),
+                    count: U.length,
                     channelIds: l,
                     length: Math.max(l.length, 1)
                 })
@@ -166,7 +166,7 @@ function P() {
                 n.push({
                     kind: "ACTIVE_NOW",
                     key: "ACTIVE_NOW",
-                    title: w.intl.string(G.default.d3yO98),
+                    title: F.intl.string(G.default.d3yO98),
                     count: t.length,
                     channelIds: l,
                     length: Math.max(l.length, 1)
@@ -178,7 +178,7 @@ function P() {
                 n.push({
                     kind: "DMS",
                     key: "DMS",
-                    title: w.intl.string(w.t.YUU0RF),
+                    title: F.intl.string(F.t.YUU0RF),
                     count: l.length,
                     channelIds: i,
                     length: Math.max(i.length, 1)
@@ -190,14 +190,14 @@ function P() {
                 n.push({
                     kind: "TEXT_CHANNELS",
                     key: "TEXT_CHANNELS",
-                    title: w.intl.string(G.default.uC6Lhg),
+                    title: F.intl.string(G.default.uC6Lhg),
                     count: l.length,
                     channelIds: i,
                     length: Math.max(i.length, 1)
                 })
             }
             return n
-        }, [H, z, c, O, j.activeNowRows, j.dmRows, j.recentTextRows, P, E, V]),
+        }, [H, z, c, U, j.activeNowRows, j.dmRows, j.recentTextRows, P, E, V]),
         B = i.useMemo(() => $.map(e => e.length), [$]),
         K = i.useCallback(e => {
             let t = $.findIndex(e => "FAVORITES" === e.kind);
@@ -225,9 +225,9 @@ function P() {
                 row: void 0
             }
         }, [$]);
-    (0, U.$)({
+    (0, O.$)({
         scrollerRef: p,
-        favoriteTargetIds: O,
+        favoriteTargetIds: U,
         getScrollTargetForTargetId: e => K(e),
         getFallbackScrollTarget: X,
         padding: 8,
@@ -316,14 +316,14 @@ function P() {
             d(e), p.current?.scrollToTop()
         }, []);
     return (0, l.jsxs)("div", {
-        className: F.kL,
+        className: w.kL,
         children: [(0, l.jsx)("div", {
-            className: F.MT,
+            className: w.MT,
             children: (0, l.jsx)(u.IWV, {
                 query: r,
                 onChange: es,
                 onClear: () => d(""),
-                placeholder: w.intl.string(G.default["xB/0Z9"]),
+                placeholder: F.intl.string(G.default["xB/0Z9"]),
                 size: "md"
             })
         }), (0, l.jsx)(s.hD, {
@@ -338,11 +338,11 @@ function P() {
                     return (0, l.jsx)(u.skg, {
                         children: e => (0, l.jsx)(u.B8B, {
                             innerRole: n,
-                            innerAriaLabel: w.intl.string(w.t.OIgYlQ),
+                            innerAriaLabel: F.intl.string(F.t.OIgYlQ),
                             ref: e => {
                                 p.current = e, t.current = e?.getScrollerNode() ?? null
                             },
-                            className: F.p_,
+                            className: w.p_,
                             sectionHeight: ei,
                             rowHeight: er,
                             sidebarHeight: 0,

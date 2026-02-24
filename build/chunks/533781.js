@@ -1,87 +1,43 @@
 /** chunk id: 533781, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    T: () => d
+    T: () => a
 });
-var r = n(627968),
-    i = n(64700),
-    a = n(744682);
-
-function o(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-
-function s(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            o(e, t, n[t])
-        })
-    }
-    return e
-}
-
-function l(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-        var r = Object.getOwnPropertySymbols(e);
-        t && (r = r.filter(function(t) {
-            return Object.getOwnPropertyDescriptor(e, t).enumerable
-        })), n.push.apply(n, r)
-    }
-    return n
-}
-
-function c(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : l(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-let u = {
+var i = n(627968),
+    s = n(64700),
+    l = n(744682);
+let r = {
         all: {
             name: "all",
             start: 0,
             duration: 66
         }
     },
-    d = () => {
-        let e = i.useRef(null),
-            t = i.useCallback(() => {
+    a = () => {
+        let e = s.useRef(null),
+            t = s.useCallback(() => {
                 null != e.current && e.current.play("all")
             }, []),
-            o = i.useCallback(() => {
+            a = s.useCallback(() => {
                 null != e.current && e.current.play("all")
             }, []),
-            l = i.useCallback(() => {
+            o = s.useCallback(() => {
                 null != e.current && e.current.stopIfPlaying("all")
             }, []),
-            d = i.useCallback(t => (0, r.jsx)(a.P, c(s({}, t), {
+            c = s.useCallback(t => (0, i.jsx)(l.P, {
+                ...t,
                 src: () => n.e("56591").then(n.t.bind(n, 640114, 19)),
                 ref: e,
-                markers: u
-            })), []);
+                markers: r
+            }), []);
         return {
             events: {
-                onMouseEnter: o,
-                onMouseLeave: l
+                onMouseEnter: a,
+                onMouseLeave: o
             },
             play: t,
-            getDuration: i.useCallback(() => {
-                var t;
-                return null == (t = e.current) ? void 0 : t.getDuration()
-            }, []),
-            getCurrentFrame: i.useCallback(() => {
-                var t, n;
-                return null != (t = null == (n = e.current) ? void 0 : n.getCurrentFrame()) ? t : null
-            }, []),
-            Component: d
+            getDuration: s.useCallback(() => e.current?.getDuration(), []),
+            getCurrentFrame: s.useCallback(() => e.current?.getCurrentFrame() ?? null, []),
+            Component: c
         }
     }

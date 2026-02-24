@@ -3,13 +3,13 @@
 r.d(e, {
     Z: () => o
 });
-var n = r(630449),
-    s = r(272469),
+var s = r(630449),
+    n = r(272469),
     i = r(83220);
 
 function o(t, e) {
-    let r = (0, n.KU)(),
-        o = (0, n.rm)();
+    let r = (0, s.KU)(),
+        o = (0, s.rm)();
     if (!r) return;
     let {
         beforeBreadcrumb: a = null,
@@ -20,6 +20,6 @@ function o(t, e) {
             timestamp: (0, i.lu)(),
             ...t
         },
-        h = a ? (0, s.pq)(() => a(u, e)) : u;
+        h = a ? (0, n.pq)(() => a(u, e)) : u;
     null !== h && (r.emit && r.emit("beforeAddBreadcrumb", h, e), o.addBreadcrumb(h, c))
 }

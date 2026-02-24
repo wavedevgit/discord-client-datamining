@@ -4,10 +4,10 @@ n.d(t, {
     B_: () => I,
     FC: () => A,
     Fk: () => j,
-    IK: () => y,
-    PX: () => v,
+    IK: () => T,
+    PX: () => N,
     TZ: () => b,
-    ji: () => T,
+    ji: () => y,
     zN: () => C
 });
 var i = n(627968),
@@ -35,8 +35,8 @@ let A = 100,
     },
     x = e => e.target_type === _.yV.STREAM && null != e.target_user,
     I = e => e.channel?.type === p.rbe.GROUP_DM,
-    v = e => null == e.channel && null == e.guild && null != e.inviter,
-    N = e => e.state === p.elq.ACCEPTED,
+    N = e => null == e.channel && null == e.guild && null != e.inviter,
+    v = e => e.state === p.elq.ACCEPTED,
     j = e => {
         let {
             guild_scheduled_event: t
@@ -45,7 +45,7 @@ let A = 100,
     },
     S = e => {
         let t;
-        return !j(e) && (!!v(e) || null != e.inviter && !N(e) && (t = E(e), !((t?.memberCount ?? 0) > A)))
+        return !j(e) && (!!N(e) || null != e.inviter && !v(e) && (t = E(e), !((t?.memberCount ?? 0) > A)))
     },
     C = e => {
         let {
@@ -69,7 +69,7 @@ let A = 100,
         }) : null
     };
 
-function y(e) {
+function T(e) {
     let {
         invite: t,
         textClassName: n,
@@ -84,7 +84,7 @@ function y(e) {
     })
 }
 
-function T(e) {
+function y(e) {
     let {
         invite: t,
         showBigUserIcon: n
@@ -93,7 +93,7 @@ function T(e) {
         username: t.inviter.username
     }) : m.intl.string(m.t.OsdY8B) : x(t) && null != t.target_user ? l = m.intl.formatToPlainString(m.t.x2L32Q, {
         username: t.target_user.username
-    }) : N(t) ? l = m.intl.string(m.t["FDsl+J"]) : S(t) && null != t.inviter && (l = m.intl.format(m.t.spU2mI, {
+    }) : v(t) ? l = m.intl.string(m.t["FDsl+J"]) : S(t) && null != t.inviter && (l = m.intl.format(m.t.spU2mI, {
         username: h.Ay.getFormattedName(t.inviter)
     })), (0, i.jsxs)("div", {
         className: f.JB,

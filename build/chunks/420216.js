@@ -137,7 +137,7 @@ let U = e => {
                                     (0, l.mMO)(async () => {
                                         let {
                                             RegisterWebAuthnCredentialModal: e
-                                        } = await Promise.all([n.e("44667"), n.e("84673")]).then(n.bind(n, 359990));
+                                        } = await Promise.all([n.e("44667"), n.e("89045")]).then(n.bind(n, 359990));
                                         return n => (0, i.jsx)(e, {
                                             ...n,
                                             ticket: t,

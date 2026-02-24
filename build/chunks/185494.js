@@ -63,7 +63,7 @@ function T(e) {
         O = !D,
         L = D && null != n,
         P = null == t && null != n,
-        k = (0, d.zhh)({
+        w = (0, d.zhh)({
             opacity: +!!D,
             height: 72 * !!D,
             pointerEvents: D ? "auto" : "none",
@@ -74,7 +74,7 @@ function T(e) {
             } : C,
             delay: 100 * !!L
         }, "respect-motion-settings"),
-        w = (0, d.pnh)(s?.id, {
+        k = (0, d.pnh)(s?.id, {
             key: M,
             from: {
                 opacity: 0,
@@ -171,10 +171,10 @@ function T(e) {
     return (0, i.jsxs)(r.animated.div, {
         className: E.TC,
         "aria-hidden": O,
-        style: k,
+        style: w,
         children: [(0, i.jsx)("div", {
             className: a()([E.ab, E.k])
-        }), w(e => (0, i.jsx)(r.animated.div, {
+        }), k(e => (0, i.jsx)(r.animated.div, {
             className: E.ab,
             style: e
         })), (0, i.jsx)("div", {

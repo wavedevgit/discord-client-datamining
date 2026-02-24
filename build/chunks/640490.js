@@ -30,11 +30,11 @@ var l = n(627968),
     v = n(67103),
     D = n(554932),
     R = n(406595),
-    U = n(557404),
-    O = n(535973),
+    O = n(557404),
+    U = n(535973),
     G = n(125117),
-    w = n(652215),
-    F = n(895867),
+    F = n(652215),
+    w = n(895867),
     L = n(985018),
     b = n(488494),
     k = n(416001);
@@ -52,7 +52,7 @@ function P(e) {
         dropTargetGroupId: h,
         dropTargetPosition: g,
         getDragHandleProps: A
-    } = e, f = !o, E = null != h && h === t, m = E && g === O.I.BEFORE, S = E && g === O.I.AFTER;
+    } = e, f = !o, E = null != h && h === t, m = E && g === U.I.BEFORE, S = E && g === U.I.AFTER;
     return (0, l.jsx)(I.A, {
         className: s()(k.uW, {
             [b.EU]: f,
@@ -82,7 +82,7 @@ function j(e) {
     return Array.from(e).sort()
 }
 let V = (0, a.throttle)(e => {
-    (0, N.Y)(w.uss.FRIENDS, {
+    (0, N.Y)(F.uss.FRIENDS, {
         locked: S.default.isInstanceLocked(),
         shownUserIds: e.shownUserIds,
         liveUserIds: e.liveUserIds,
@@ -146,7 +146,7 @@ function Y(e) {
             dropTargetGroupId: en,
             dropTargetPosition: el,
             getDragHandleProps: ei
-        } = (0, O.s)({
+        } = (0, U.s)({
             groupIds: ee,
             isDisabled: J,
             onCommitNewOrder: A.A.reorderGroups
@@ -213,7 +213,7 @@ function Y(e) {
         eN = i.useMemo(() => {
             let e = e => {
                 let t = f.A.getStatus(e);
-                return t !== w.clD.ONLINE && t !== w.clD.IDLE && t !== w.clD.DND
+                return t !== F.clD.ONLINE && t !== F.clD.IDLE && t !== F.clD.DND
             };
             if (ec) return [{
                 kind: "EMPTY_STATE",
@@ -229,7 +229,7 @@ function Y(e) {
                 t.push({
                     kind: "FAVORITES",
                     key: "FAVORITES",
-                    title: L.intl.string(F.default.GKTlS6),
+                    title: L.intl.string(w.default.GKTlS6),
                     count: eo.length,
                     rows: n,
                     length: Math.max(n.length, 1)
@@ -281,7 +281,7 @@ function Y(e) {
                 t.push({
                     kind: "IN_GAME",
                     key: "IN_GAME",
-                    title: L.intl.string(F.default.trKJoT),
+                    title: L.intl.string(w.default.trKJoT),
                     count: e.length,
                     rows: n,
                     length: Math.max(n.length, 1)
@@ -415,7 +415,7 @@ function Y(e) {
                     closeParentPopout: H,
                     isSuggestion: "SUGGESTIONS" === r.kind,
                     shouldHighlightIfRecentlyAdded: "FAVORITES" === r.kind,
-                    appContext: w.BRT.OVERLAY,
+                    appContext: F.BRT.OVERLAY,
                     onPrimaryAction: t,
                     onContextMenu: n,
                     onFriendVisible: b,
@@ -441,7 +441,7 @@ function Y(e) {
                 row: void 0
             }
         }, [eN]);
-    (0, U.$)({
+    (0, O.$)({
         scrollerRef: eg,
         favoriteTargetIds: er,
         getScrollTargetForTargetId: e => ex(e),

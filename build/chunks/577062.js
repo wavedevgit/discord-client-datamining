@@ -1,7 +1,7 @@
 /** chunk id: 577062, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => u
+    A: () => d
 });
 var i = n(627968),
     s = n(64700),
@@ -9,42 +9,50 @@ var i = n(627968),
     r = n(688810),
     a = n(980923),
     o = n(384059),
-    c = n(277342),
-    d = n(709562);
+    c = n(709562);
 
-function u(e) {
+function d(e) {
+    var t, n;
     let {
-        selfMute: t,
-        serverMute: n,
-        suppress: u,
-        centerButton: h = !1,
-        awaitingRemote: A,
-        onMouseEnter: p,
-        onMouseLeave: g,
-        onClick: m,
-        ..._
+        selfMute: d,
+        serverMute: u,
+        suppress: h,
+        centerButton: A = !1,
+        awaitingRemote: p,
+        onMouseEnter: g,
+        onMouseLeave: m,
+        onClick: _,
+        ...f
     } = e, {
-        parentAnalyticsLocation: f
-    } = (0, r.Ay)(), x = t || n || u, C = h ? d.l : d.A, E = (0, a.A)(t, n, u, A), {
-        events: I,
-        play: N,
-        Component: b
-    } = (0, c.q)(x), S = n || u ? l.O1p : b;
-    return s.useEffect(() => () => N(), [N, x]), (0, i.jsx)(C, {
-        iconComponent: S,
-        isTrayButton: !0,
-        caretColor: x ? "red" : "primaryDark",
-        color: x ? "red" : void 0,
-        label: E,
-        onMouseEnter: e => {
-            p?.(e), I.onMouseEnter()
+        parentAnalyticsLocation: x
+    } = (0, r.Ay)(), C = d || u || h, E = A ? c.l : c.A, I = (0, a.A)(d, u, h, p), N = s.useRef(null), b = (t = C, n = N, s.useMemo(() => (0, i.jsx)(l.F0F, {
+        defaultViewModelInstance: t ? "Off" : "On",
+        allowAnimationWhileUnfocused: !0,
+        eventTargetRef: n,
+        dataBinding: {
+            on: !t,
+            fill: "currentColor"
         },
-        onMouseLeave: e => {
-            g?.(e), I.onMouseLeave()
-        },
-        onClick: e => {
-            m?.(e), (0, o.X)(f, o.O.MIC, t)
-        },
-        ..._
+        className: l.d5l.refresh_sm
+    }), [t, n]));
+    return (0, i.jsx)("div", {
+        ref: N,
+        children: (0, i.jsx)(E, {
+            iconComponent: u || h ? l.O1p : b,
+            isTrayButton: !0,
+            caretColor: C ? "red" : "primaryDark",
+            color: C ? "red" : void 0,
+            label: I,
+            onMouseEnter: e => {
+                g?.(e)
+            },
+            onMouseLeave: e => {
+                m?.(e)
+            },
+            onClick: e => {
+                _?.(e), (0, o.X)(x, o.O.MIC, d)
+            },
+            ...f
+        })
     })
 }

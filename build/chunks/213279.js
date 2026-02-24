@@ -1,10 +1,10 @@
-/** chunk id: 213279, original params: e,t,s (module,exports,require) **/
-s.d(t, {
+/** chunk id: 213279, original params: e,t,r (module,exports,require) **/
+r.d(t, {
     p: () => n
 });
-var r = s(627968);
-s(64700);
-var i = s(397927);
+var s = r(627968);
+r(64700);
+var i = r(397927);
 let n = e => {
     let {
         analyticsLocation: t,
@@ -13,11 +13,11 @@ let n = e => {
     (0, i.mMO)(async () => {
         let {
             default: e
-        } = await s.e("18630").then(s.bind(s, 826789));
-        return s => (0, r.jsx)(e, {
-            ...s,
+        } = await r.e("18630").then(r.bind(r, 826789));
+        return r => (0, s.jsx)(e, {
+            ...r,
             analyticsSource: t,
-            onClose: () => (n?.(), s.onClose?.())
+            onClose: () => (n?.(), r.onClose?.())
         })
     })
 }

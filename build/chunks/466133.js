@@ -23,7 +23,7 @@ r.Ay.initialize();
 let E = e => {
     let {
         location: t
-    } = e, n = (0, r.bG)([g.default], () => g.default.isAuthenticated()), E = (0, r.bG)([u.A], () => u.A.hasLoadedExperiments), x = (0, _.Jp)("RSL - Landing Page"), [I, v] = s.useState(!1), [N, j] = s.useState(f.intl.string(f.t["9exy+V"])), [S, C] = s.useState(!0), y = e => {
+    } = e, n = (0, r.bG)([g.default], () => g.default.isAuthenticated()), E = (0, r.bG)([u.A], () => u.A.hasLoadedExperiments), x = (0, _.Jp)("RSL - Landing Page"), [I, N] = s.useState(!1), [v, j] = s.useState(f.intl.string(f.t["9exy+V"])), [S, C] = s.useState(!0), T = e => {
         switch (e) {
             case m.t02.INVALID_FORM_BODY:
             case m.t02.DSA_RSL_REPORT_NOT_FOUND:
@@ -52,18 +52,18 @@ let E = e => {
         let e = async e => {
             try {
                 let t = null != e ? await (0, h.q)(e) : void 0;
-                null != t ? j(f.intl.string(f.t.e6mZMt)) : y(t.body?.code)
+                null != t ? j(f.intl.string(f.t.e6mZMt)) : T(t.body?.code)
             } catch (e) {
-                y(e.body?.code)
+                T(e.body?.code)
             } finally {
-                v(!1)
+                N(!1)
             }
         };
-        v(!0), e((0, d.A)(t)), (0, p.d)("report_second_look")
+        N(!0), e((0, d.A)(t)), (0, p.d)("report_second_look")
     }, [t]), x && !S && (0, i.jsxs)(c.Ay, {
         children: [(0, i.jsx)(c.hE, {
             className: A.QB,
-            children: N
+            children: v
         }), I && (0, i.jsx)(l.y$y, {})]
     })
 }

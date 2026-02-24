@@ -1,6 +1,6 @@
 /** chunk id: 219716, original params: e,t,s (module,exports,require) **/
 s.d(t, {
-    A: () => g
+    A: () => S
 });
 var r = s(627968),
     n = s(64700),
@@ -8,16 +8,16 @@ var r = s(627968),
     i = s.n(a),
     l = s(91871),
     o = s.n(l),
-    h = s(735438),
-    c = s.n(h),
+    c = s(735438),
+    h = s.n(c),
     d = s(96337),
     u = s(397927),
     p = s(235986),
     m = s(518977),
     C = s(985018),
     A = s(492933),
-    S = s(976092);
-class g extends n.PureComponent {
+    g = s(976092);
+class S extends n.PureComponent {
     constructor(e) {
         super(e), this.state = {
             query: ""
@@ -56,7 +56,7 @@ class g extends n.PureComponent {
                     })]
                 })
             }))
-        }), s = c()(t).filter(t => 0 === e.length || o()(e.toLowerCase(), t.name.toLowerCase()) || o()(e.toLowerCase(), t.translatedName.toLowerCase())).map(e => (0, n.createElement)(u.i6n.Item, {
+        }), s = h()(t).filter(t => 0 === e.length || o()(e.toLowerCase(), t.name.toLowerCase()) || o()(e.toLowerCase(), t.translatedName.toLowerCase())).map(e => (0, n.createElement)(u.i6n.Item, {
             ...e,
             key: e.key,
             onClick: () => this.onClick(e.countryData)
@@ -73,7 +73,7 @@ class g extends n.PureComponent {
             className: e
         } = this.props;
         return (0, r.jsxs)(u.i6n, {
-            className: i()(A.eQ, S.Cw, e),
+            className: i()(A.eQ, g.Cw, e),
             children: [(0, r.jsx)(u.i6n.SearchBar, {
                 query: this.state.query,
                 placeholder: C.intl.string(C.t.hGOODh),

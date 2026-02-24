@@ -62,14 +62,14 @@ function R() {
     return t > 0 ? t : 1
 }
 
-function U(e) {
+function O(e) {
     return {
         hasMention: h.Ay.getMentionCount(e) > 0,
         hasUnread: h.Ay.hasUnread(e)
     }
 }
 
-function O(e, t) {
+function U(e, t) {
     let n = u.A.getChannel(t);
     if (null == n) return !1;
     switch (e) {
@@ -112,7 +112,7 @@ function G(e) {
     return d.sortKey = [(t = d).tab, x(t.isOnline), C(Math.round((1 - _(t.affinityScore, 0, 1)) * 1e6), 7), x(t.hasMention), x(t.hasUnread), (n = _(t.addedTimestampMs, 0, m), C(m - n, 16)), t.rowId].join("\0"), d
 }
 
-function w(e) {
+function F(e) {
     let {
         tab: t,
         targetId: n,
@@ -138,7 +138,7 @@ function w(e) {
                 {
                     hasMention: o,
                     hasUnread: d
-                } = null != a ? U(a) : {
+                } = null != a ? O(a) : {
                     hasMention: !1,
                     hasUnread: !1
                 };
@@ -164,13 +164,13 @@ function w(e) {
     if (null == u.A.getChannel(n)) return {
         kind: "NOT_READY_YET"
     };
-    if (!O(t, n)) return r ? {
+    if (!U(t, n)) return r ? {
         kind: "INVALID"
     } : {
         kind: "NOT_READY_YET"
     };
     let d = function(e, t, n, l) {
-        if (!O(e, t)) return null;
+        if (!U(e, t)) return null;
         let i = u.A.getChannel(t);
         if (null == i) return null;
         let r = i.getGuildId() ?? null,
@@ -178,7 +178,7 @@ function w(e) {
             {
                 hasMention: d,
                 hasUnread: c
-            } = (0, a.ke)(i.type) || i.isDM() || i.isMultiUserDM() || i.isPrivate() ? U(t) : {
+            } = (0, a.ke)(i.type) || i.isDM() || i.isMultiUserDM() || i.isPrivate() ? O(t) : {
                 hasMention: !1,
                 hasUnread: !1
             };
@@ -202,7 +202,7 @@ function w(e) {
     }
 }
 
-function F(e, t) {
+function w(e, t) {
     return e.rowId !== t.rowId || e.tab !== t.tab || e.targetId !== t.targetId || e.isOnline !== t.isOnline || e.affinityScore !== t.affinityScore || e.hasMention !== t.hasMention || e.hasUnread !== t.hasUnread || e.addedTimestampMs !== t.addedTimestampMs || e.sortKey !== t.sortKey
 }
 
@@ -214,7 +214,7 @@ function L(e) {
         let r = v(e);
         for (let [s, a] of r.entries()) {
             let u = M(e, s),
-                o = w({
+                o = F({
                     tab: e,
                     targetId: s,
                     addedTimestampMs: a.addedTimestampMs,
@@ -225,7 +225,7 @@ function L(e) {
                 case "BUILT": {
                     let e = o.row,
                         t = S.get(e.rowId);
-                    (null == t || F(t, e)) && (i = S.set(e.rowId, e) || i);
+                    (null == t || w(t, e)) && (i = S.set(e.rowId, e) || i);
                     break
                 }
                 case "NOT_READY_YET":
@@ -257,7 +257,7 @@ function k(e) {
         guildAffinityNormalizationMax: i
     } = e, r = v(t), s = r.get(n), a = M(t, n);
     if (null == s) return S.delete(a);
-    let u = w({
+    let u = F({
         tab: t,
         targetId: n,
         addedTimestampMs: s.addedTimestampMs,
@@ -268,7 +268,7 @@ function k(e) {
         case "BUILT": {
             let e = u.row,
                 t = S.get(e.rowId);
-            return !!(null == t || F(t, e)) && S.set(e.rowId, e)
+            return !!(null == t || w(t, e)) && S.set(e.rowId, e)
         }
         case "NOT_READY_YET":
             return S.delete(a);
@@ -397,7 +397,7 @@ let W = e => (0, f.v$)(e, "OverlayFriendsWidgetFavoritesStore"),
                 addedTimestampMs: n
             });
             let i = R(),
-                r = w({
+                r = F({
                     tab: e.tab,
                     targetId: e.targetId,
                     addedTimestampMs: n,
@@ -408,7 +408,7 @@ let W = e => (0, f.v$)(e, "OverlayFriendsWidgetFavoritesStore"),
                 case "BUILT": {
                     let e = r.row,
                         t = S.get(e.rowId);
-                    (null == t || F(t, e)) && S.set(e.rowId, e);
+                    (null == t || w(t, e)) && S.set(e.rowId, e);
                     break
                 }
                 case "NOT_READY_YET":
