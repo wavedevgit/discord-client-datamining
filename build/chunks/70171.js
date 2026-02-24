@@ -42,7 +42,7 @@ function x(e) {
     l.useEffect(() => () => {
         (0, u.MI)(I)
     }, [I]);
-    let v = e => {
+    let b = e => {
             if (n !== c.N.NO_POPOUT) return p;
             let t = S?.getBoundingClientRect();
             if (y.current = t, e.timestamp !== T || null == t) return p;
@@ -57,10 +57,10 @@ function x(e) {
                 width: 268
             }
         },
-        b = (0, l.useRef)(null),
+        v = (0, l.useRef)(null),
         j = (0, o.pnh)(N, {
             keys: e => e.timestamp,
-            ref: b,
+            ref: v,
             from: {
                 opacity: .2
             },
@@ -77,7 +77,7 @@ function x(e) {
                 position: "fixed",
                 visibility: "hidden",
                 opacity: 1,
-                ...x.enabled ? v(e) : (() => {
+                ...x.enabled ? b(e) : (() => {
                     if (n !== c.N.NO_POPOUT) return p;
                     let e = C.current?.getBoundingClientRect();
                     return null == e ? p : {
@@ -91,7 +91,7 @@ function x(e) {
             enter: e => [{
                 opacity: 1,
                 visibility: "visible",
-                ...v(e)
+                ...b(e)
             }],
             leave: {
                 opacity: 0,
@@ -111,7 +111,7 @@ function x(e) {
                 null != t.item && null != N.find(e => e.timestamp === t.item.timestamp) && (0, u.MI)(I, t.item.timestamp)
             }
         }, "animate-always");
-    return (0, s.useChain)([b, R], [0, .1], 3e3), (0, i.jsxs)(i.Fragment, {
+    return (0, s.useChain)([v, R], [0, .1], 3e3), (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
             className: g.R,
             ref: C

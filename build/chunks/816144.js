@@ -26,8 +26,8 @@ var i = n(627968),
     T = n(803622),
     N = n(314307),
     y = n(393194),
-    v = n(455067),
-    b = n(432817),
+    b = n(455067),
+    v = n(432817),
     j = n(324799),
     R = n(635157),
     M = n(379768),
@@ -101,7 +101,7 @@ function H(e) {
             null != L && (n.push((0, i.jsx)(j.X, {
                 channel: t,
                 user: _
-            }, "mute")), n.push((0, i.jsx)(b.L, {
+            }, "mute")), n.push((0, i.jsx)(v.L, {
                 user: _,
                 application: O,
                 channel: t,
@@ -142,7 +142,7 @@ function H(e) {
                 children: w.intl.string(w.t.M8Ao6I)
             })]
         });
-        else if (t.hasFlag(k.lx.IS_JOIN_REQUEST_INTERVIEW_CHANNEL)) return (0, i.jsx)(v.A, {
+        else if (t.hasFlag(k.lx.IS_JOIN_REQUEST_INTERVIEW_CHANNEL)) return (0, i.jsx)(b.A, {
         channel: t
     });
     else return (0, i.jsx)(R.A, {

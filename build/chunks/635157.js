@@ -32,8 +32,8 @@ function S(e) {
         N = (0, u.Ay)(n) ?? "",
         {
             avatarDecorationSrc: y,
-            eventHandlers: v,
-            isAnimating: b
+            eventHandlers: b,
+            isAnimating: v
         } = (0, _.A)({
             userId: I?.id,
             size: r._3J.SIZE_80,
@@ -41,17 +41,17 @@ function S(e) {
         }),
         [j, R] = l.useState(!1),
         M = l.useCallback(() => {
-            v.onMouseEnter(), R(!0)
-        }, [v]),
+            b.onMouseEnter(), R(!0)
+        }, [b]),
         D = l.useCallback(() => {
-            v.onMouseLeave(), R(!1)
-        }, [v]),
+            b.onMouseLeave(), R(!1)
+        }, [b]),
         O = !n.isMultiUserDM() && I?.displayNameStyles != null;
     return (0, i.jsxs)(E.Ay, {
         channelId: n.id,
         onMouseEnter: M,
         onMouseLeave: D,
-        children: [(t = !T && b, n.isMultiUserDM() ? (0, i.jsx)(g.Q, {
+        children: [(t = !T && v, n.isMultiUserDM() ? (0, i.jsx)(g.Q, {
             channel: n,
             editable: !0,
             location: c.A.EMPTY_GROUP_DM,

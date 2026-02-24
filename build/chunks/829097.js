@@ -1,10 +1,10 @@
 /** chunk id: 829097, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    _: () => s
+    _: () => l
 });
 var r = n(945810),
-    l = n(332628);
-let i = (0, r.mj)({
+    i = n(332628);
+let s = (0, r.mj)({
     name: "2025-09-video-qoe-metrics-tracking",
     kind: "user",
     defaultConfig: {
@@ -20,19 +20,19 @@ let i = (0, r.mj)({
     }
 });
 
-function s(e) {
+function l(e) {
     let {
         location: t
     } = e, {
         isInHoldout: n
-    } = l.i.getCurrentConfig({
+    } = i.i.getCurrentConfig({
         location: t
     }, {
         autoTrackExposure: !0
     });
     return n ? {
         externalAnalyticsEnabled: !1
-    } : i.getConfig({
+    } : s.getConfig({
         location: t
     })
 }

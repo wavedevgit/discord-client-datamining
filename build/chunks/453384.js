@@ -1,6 +1,6 @@
 /** chunk id: 453384, original params: e,t,r (module,exports,require) **/
 r.d(t, {
-    A: () => u
+    A: () => p
 });
 var o = r(627968),
     a = r(64700),
@@ -11,25 +11,25 @@ var o = r(627968),
     d = r(398025),
     _ = r(419367),
     c = r(638322);
-let p = "var(--background-mod-strong)",
-    u = a.forwardRef((e, t) => {
+let u = "var(--background-mod-strong)",
+    p = a.forwardRef((e, t) => {
         let {
             percentComplete: r,
             size: n = 42,
-            style: u = "default",
+            style: p = "default",
             percentCompleteText: f,
             percentCompleteTextVariant: b = "text-lg/medium",
             children: m
         } = e, {
             strokeWidth: C
-        } = "small" === u ? {
+        } = "small" === p ? {
             strokeWidth: 3
         } : {
             strokeWidth: 4
-        }, g = n / 2, v = n / 2 - C / 2, h = 2 * Math.PI * v, y = h - r * h, x = a.useMemo(() => ({
+        }, g = n / 2, v = n / 2 - C / 2, h = 2 * Math.PI * v, x = h - r * h, y = a.useMemo(() => ({
             strokeDasharray: `${h} ${h}`,
-            strokeDashoffset: y
-        }), [h, y]), {
+            strokeDashoffset: x
+        }), [h, x]), {
             progressTextAnimation: S
         } = (0, l.zhh)({
             progressTextAnimation: +(null != f && 1 !== r),
@@ -71,7 +71,7 @@ let p = "var(--background-mod-strong)",
                     r: v,
                     cx: g,
                     cy: g,
-                    stroke: p
+                    stroke: u
                 }), (0, o.jsx)("circle", {
                     className: c.qB,
                     strokeWidth: C,
@@ -79,7 +79,7 @@ let p = "var(--background-mod-strong)",
                     r: v,
                     cx: g,
                     cy: g,
-                    stroke: p
+                    stroke: u
                 }), (0, o.jsx)("circle", {
                     className: c.qB,
                     strokeWidth: C,
@@ -88,7 +88,7 @@ let p = "var(--background-mod-strong)",
                     cx: g,
                     cy: g,
                     stroke: "rgba(98, 196, 101, 1)",
-                    style: x
+                    style: y
                 })]
             })]
         })

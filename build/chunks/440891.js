@@ -1,11 +1,11 @@
 /** chunk id: 440891, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => S
+    A: () => g
 });
 var r = n(627968),
-    l = n(64700),
-    i = n(311907),
-    s = n(990078),
+    i = n(64700),
+    s = n(311907),
+    l = n(990078),
     a = n(397927),
     o = n(775602),
     u = n(341915),
@@ -17,23 +17,23 @@ var r = n(627968),
     f = n(717415),
     v = n(985018),
     h = n(500271);
-let g = async () => await n.e("40119").then(n.t.bind(n, 718698, 19));
+let x = async () => await n.e("40119").then(n.t.bind(n, 718698, 19));
 
-function S() {
+function g() {
     let {
         quest: e,
         sourceQuestContent: t,
         onClose: n
-    } = l.useContext(f.VideoQuestModalContext), [S, C] = l.useState(!1), A = (0, i.bG)([o.A], () => o.A.useReducedMotion), x = l.useRef(e.userStatus?.completedAt), [_, b] = l.useState(!1), T = (0, d.mq)(e.config), {
+    } = i.useContext(f.VideoQuestModalContext), [g, S] = i.useState(!1), C = (0, s.bG)([o.A], () => o.A.useReducedMotion), A = i.useRef(e.userStatus?.completedAt), [_, b] = i.useState(!1), T = (0, d.mq)(e.config), {
         completedRatio: y,
         completedRatioDisplay: N
-    } = (0, c.O9)(e), D = e.userStatus?.completedAt != null, L = e.userStatus?.claimedAt != null, I = v.intl.formatToPlainString(D && !L ? v.t.NRp4K4 : v.t["12IWP2"], {
+    } = (0, c.O9)(e), D = e.userStatus?.completedAt != null, L = e.userStatus?.claimedAt != null, j = v.intl.formatToPlainString(D && !L ? v.t.NRp4K4 : v.t["12IWP2"], {
         rewardName: T
     });
-    l.useEffect(() => {
-        null == x.current && e.userStatus?.completedAt != null && b(!0), x.current = e.userStatus?.completedAt
+    i.useEffect(() => {
+        null == A.current && e.userStatus?.completedAt != null && b(!0), A.current = e.userStatus?.completedAt
     }, [e.userStatus?.completedAt]);
-    let j = (0, E.v)({
+    let I = (0, E.v)({
         quest: e,
         questContent: u.uF.QUEST_HOME_DESKTOP,
         sourceQuestContent: t,
@@ -43,19 +43,19 @@ function S() {
     return (0, r.jsxs)("div", {
         className: h.Tr,
         children: [D && (0, r.jsx)(a.akl, {
-            importData: g,
+            importData: x,
             className: h.t_,
             loop: !1,
             autoplay: !1,
-            shouldAnimate: _ && !A
-        }), (0, r.jsx)(s.m, {
+            shouldAnimate: _ && !C
+        }), (0, r.jsx)(l.m, {
             position: "top",
-            text: I,
+            text: j,
             onTooltipShow: () => {
-                C(!0)
+                S(!0)
             },
             onTooltipHide: () => {
-                C(!1)
+                S(!1)
             },
             children: (0, r.jsx)(a.DUT, {
                 className: h.md,
@@ -63,12 +63,12 @@ function S() {
                     cursor: "pointer"
                 } : void 0,
                 onClick: e => {
-                    D && j(e)
+                    D && I(e)
                 },
                 children: (0, r.jsx)(m.A, {
                     size: 48,
                     percentComplete: y,
-                    percentCompleteText: S ? N : void 0,
+                    percentCompleteText: g ? N : void 0,
                     percentCompleteTextVariant: "text-sm/medium",
                     children: (0, r.jsx)(p.A, {
                         fullWidth: !0,

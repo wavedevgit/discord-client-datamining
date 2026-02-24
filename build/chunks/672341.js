@@ -26,8 +26,8 @@ var i = n(627968),
     T = n(221059),
     N = n(513272),
     y = n(881020),
-    v = n(637384),
-    b = n(383233),
+    b = n(637384),
+    v = n(383233),
     j = n(222823),
     R = n(309010),
     M = n(287809),
@@ -68,7 +68,7 @@ let ee = l.memo(function(e) {
         compact: a,
         isGroupStart: s,
         channel: n,
-        message: new b.Ay({
+        message: new v.Ay({
             id: t.id,
             key: `pending-upload-${t.id}`,
             type: $.lAJ.DEFAULT,
@@ -139,10 +139,10 @@ function et(e) {
     (0, Y.A)();
     let eN = null,
         ey = [],
-        ev = ei.map((e, t) => {
+        eb = ei.map((e, t) => {
             if (e.type === $.TZK.DIVIDER) {
                 let n = null != e.unreadId;
-                return null != er ? null : e.isSummaryDivider ? (0, i.jsx)(v.A, {
+                return null != er ? null : e.isSummaryDivider ? (0, i.jsx)(b.A, {
                     index: t,
                     item: e,
                     channel: l,
@@ -187,10 +187,10 @@ function et(e) {
                 renderContentOnly: eI || s
             }, e.content.id)
         });
-    ey.push(...ev);
-    let eb = ei[ei.length - 1];
+    ey.push(...eb);
+    let ev = ei[ei.length - 1];
     if (null != eu && el.forEach((e, t) => {
-            let n = 0 === t && (0, w.l)(l, eb, new b.Ay({
+            let n = 0 === t && (0, w.l)(l, ev, new v.Ay({
                 type: $.lAJ.DEFAULT,
                 author: eu
             }));

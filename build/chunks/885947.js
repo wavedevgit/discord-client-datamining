@@ -1,11 +1,11 @@
 /** chunk id: 885947, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => C
+    A: () => S
 });
 var r = n(627968),
-    l = n(64700),
-    i = n(503698),
-    s = n.n(i),
+    i = n(64700),
+    s = n(503698),
+    l = n.n(s),
     a = n(435371),
     o = n(397927),
     u = n(713517),
@@ -17,40 +17,40 @@ var r = n(627968),
     f = n(717415),
     v = n(583235),
     h = n(985018),
-    g = n(438655),
-    S = n(681636);
+    x = n(438655),
+    g = n(681636);
 
-function C() {
+function S() {
     let {
         quest: e,
         sourceQuestContent: t,
         isPortrait: n,
-        onClose: i
-    } = l.useContext(f.VideoQuestModalContext), C = (0, E.go)(), A = (0, m.LS)(e), x = l.useRef(null), {
+        onClose: s
+    } = i.useContext(f.VideoQuestModalContext), S = (0, E.go)(), C = (0, m.LS)(e), A = i.useRef(null), {
         isHoveringOrFocusing: _
-    } = (0, u.A)(x), b = (0, v.H)({
+    } = (0, u.A)(A), b = (0, v.H)({
         quest: e,
-        onClose: i,
+        onClose: s,
         sourceQuestContent: t,
-        impressionId: C
+        impressionId: S
     }), T = e.config.ctaConfig.subtitle, y = void 0 !== T && !(0, c.uJ)(T);
     return (0, r.jsx)(a.m_, {
         text: h.intl.string(h.t.EuHF34),
         children: (0, r.jsx)(o.DUT, {
             onClick: () => b(d.uF.VIDEO_MODAL, p.Cy.OPEN_GAME_LINK),
-            className: g._S,
+            className: x._S,
             children: (0, r.jsxs)("div", {
-                className: s()(S.hA, g.t8, {
-                    [g.Mc]: A
+                className: l()(g.hA, x.t8, {
+                    [x.Mc]: C
                 }),
-                ref: x,
+                ref: A,
                 children: [(0, r.jsx)("div", {
-                    className: g.sB,
+                    className: x.sB,
                     children: (0, r.jsx)(o.Heading, {
                         variant: "heading-md/medium",
                         color: "text-strong",
-                        className: s()(g.xw, {
-                            [g._L]: n
+                        className: l()(x.xw, {
+                            [x._L]: n
                         }),
                         lineClamp: n ? void 0 : 1,
                         children: h.intl.format(h.t.EQa7os, {
@@ -58,13 +58,13 @@ function C() {
                         })
                     })
                 }), (0, r.jsxs)("div", {
-                    className: s()(g.sB, {
-                        [g.fi]: n
+                    className: l()(x.sB, {
+                        [x.fi]: n
                     }),
                     children: [(0, r.jsx)("div", {
-                        className: s()(g.PV, {
-                            [g.WV]: n,
-                            [g.mq]: n
+                        className: l()(x.PV, {
+                            [x.WV]: n,
+                            [x.mq]: n
                         }),
                         children: (0, r.jsx)(o.yr3, {
                             size: "xs",
@@ -72,9 +72,9 @@ function C() {
                         })
                     }), (0, r.jsx)(o.Heading, {
                         variant: "heading-sm/medium",
-                        className: s()(g.PV, {
-                            [g.WV]: n,
-                            [g.mq]: n
+                        className: l()(x.PV, {
+                            [x.WV]: n,
+                            [x.mq]: n
                         }),
                         color: _ ? "text-strong" : "text-subtle",
                         lineClamp: 1,
@@ -82,12 +82,12 @@ function C() {
                     }), y ? (0, r.jsxs)(r.Fragment, {
                         children: [(0, r.jsx)("div", {
                             "aria-hidden": "true",
-                            className: s()(g.SC, {
-                                [g.b2]: n
+                            className: l()(x.SC, {
+                                [x.b2]: n
                             })
                         }), (0, r.jsx)(o.Heading, {
-                            className: s()(g.xw, {
-                                [g._L]: n
+                            className: l()(x.xw, {
+                                [x._L]: n
                             }),
                             variant: "heading-sm/medium",
                             lineClamp: n ? void 0 : 1,

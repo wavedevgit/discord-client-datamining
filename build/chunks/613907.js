@@ -34,7 +34,7 @@ function I(e) {
         T = (0, r.bG)([g.default], () => g.default.getUser(t.isPrivate() ? t.getRecipientId() : null)),
         N = f.Ay.useName(T) ?? x.intl.string(x.t.y1Wu2f),
         y = (0, r.bG)([u.A], () => u.A.getStickerById(S)),
-        v = l.useCallback(async () => {
+        b = l.useCallback(async () => {
             if (null == n || "" === n) try {
                 await c.A.sendGreetMessage(t.id, S), p.default.track(E.HAw.DM_EMPTY_ACTION, {
                     channel_id: t.id,
@@ -46,7 +46,7 @@ function I(e) {
                 e.ok || 429 !== e.status || s(x.intl.string(x.t.Whhv4w))
             }
         }, [t.id, t.type, n]),
-        b = x.intl.formatToPlainString(x.t.m0zYbV, {
+        v = x.intl.formatToPlainString(x.t.m0zYbV, {
             username: N
         }),
         j = null != n && "" !== n ? (0, i.jsx)(o.Text, {
@@ -60,14 +60,14 @@ function I(e) {
         children: [(0, i.jsxs)(o.DUT, {
             className: null != n && "" !== n ? C.AO : C.Iq,
             "aria-label": x.intl.string(x.t.pJObYI),
-            onClick: v,
+            onClick: b,
             children: [(0, i.jsx)(h.A, {
                 sticker: y,
                 size: 24
             }), (0, i.jsx)(o.Text, {
                 className: C.Qq,
                 variant: "text-md/medium",
-                children: b
+                children: v
             })]
         }), j]
     }) : (0, i.jsxs)("div", {
@@ -80,9 +80,9 @@ function I(e) {
             fullWidth: !0,
             variant: "primary",
             size: "md",
-            onClick: v,
+            onClick: b,
             disabled: !!n,
-            text: b
+            text: v
         }), j]
     })
 }

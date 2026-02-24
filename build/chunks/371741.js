@@ -28,8 +28,8 @@ var i = n(627968),
     T = n(141468),
     N = n(375901),
     y = n(143413),
-    v = n(763754),
-    b = n(245748),
+    b = n(763754),
+    v = n(245748),
     j = n(491182),
     R = n(860227),
     M = n(112758),
@@ -70,7 +70,7 @@ function J(e) {
     } = (0, c.rm)(e.id ?? ""), h = (0, d.bG)([f.A], () => f.A.getMessageByReference(l)), {
         popouts: m,
         setPopout: A
-    } = (0, O.A)(n.id, K.Fd), g = (0, v.Ay)(n), p = (0, R.fF)(n), _ = (0, R.ZD)(n);
+    } = (0, O.A)(n.id, K.Fd), g = (0, b.Ay)(n), p = (0, R.fF)(n), _ = (0, R.ZD)(n);
     return n.type === W.lAJ.THREAD_STARTER_MESSAGE && null != h && h.state === f.a.LOADED ? (0, i.jsx)($, {
         ...e,
         viewingChannelId: n.channel_id,
@@ -119,7 +119,7 @@ function $(e) {
         viewingChannelId: S
     } = e, I = n.type === W.lAJ.REPLY ? n.messageReference : void 0, {
         onFocus: N,
-        ...b
+        ...v
     } = (0, c.rm)(e.id ?? ""), {
         isFocused: P,
         handleFocus: w,
@@ -150,7 +150,7 @@ function $(e) {
         allowDevLinks: ea,
         previewLinkTarget: !0,
         viewingChannelId: S
-    }), ed = (0, D.A)(s, r, ei), eu = (0, v.Ay)(n), eh = (0, R.fF)(n, x), em = (0, R.ZD)(n), eA = (0, F.A)(e, er, !1), eg = l.useCallback(() => (0, _.uh)(o, r, s), [o, r, s]), ep = (0, A.$7)({
+    }), ed = (0, D.A)(s, r, ei), eu = (0, b.Ay)(n), eh = (0, R.fF)(n, x), em = (0, R.ZD)(n), eA = (0, F.A)(e, er, !1), eg = l.useCallback(() => (0, _.uh)(o, r, s), [o, r, s]), ep = (0, A.$7)({
         guildId: o,
         roleId: eu.iconRoleId
     });
@@ -162,7 +162,7 @@ function $(e) {
             "aria-label": z.intl.string(z.t.k5WiPf),
             children: z.intl.string(z.t.k5WiPf)
         }), (0, i.jsx)(j.A, {
-            ...b,
+            ...v,
             id: t,
             compact: m,
             className: a()(p, {
@@ -278,8 +278,8 @@ let Z = l.memo(function(e) {
         eT = eI || eA,
         eN = (0, d.bG)([x.A], () => r.hasFlag(W.pr7.HAS_THREAD) && x.A.getChannel(I.default.castMessageIdAsChannelId(r.id))),
         ey = r.isFirstMessageInForumPost(N),
-        ev = (0, g.S)((r.editedTimestamp ?? r.timestamp).valueOf()),
-        eb = (0, d.bG)([C.A], () => C.A.isDeveloper),
+        eb = (0, g.S)((r.editedTimestamp ?? r.timestamp).valueOf()),
+        ev = (0, d.bG)([C.A], () => C.A.isDeveloper),
         {
             content: ej,
             hasSpoilerEmbeds: eR,
@@ -288,14 +288,14 @@ let Z = l.memo(function(e) {
             hideSimpleEmbedContent: ei && el,
             isInteracting: eT,
             formatInline: !1,
-            allowList: ey || ev,
-            allowHeading: ey || ev,
+            allowList: ey || eb,
+            allowHeading: ey || eb,
             allowLinks: !0,
-            allowDevLinks: eb,
+            allowDevLinks: ev,
             previewLinkTarget: !0
         }),
         eD = (0, D.A)(_, q, eS),
-        eO = (0, v.Ay)(r),
+        eO = (0, b.Ay)(r),
         eL = (0, d.bG)([p.A], () => p.A.getPendingReply(q)),
         eP = (t = l.useRef(Z), l.useEffect(() => {
             t.current = Z ?? t.current
@@ -400,7 +400,7 @@ let Z = l.memo(function(e) {
                 })
             })
         });
-    return null != eP ? (0, i.jsx)(b.A, {
+    return null != eP ? (0, i.jsx)(v.A, {
         flashKey: eP,
         className: a()({
             [Y.bB]: !0,

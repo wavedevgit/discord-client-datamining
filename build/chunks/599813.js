@@ -29,8 +29,8 @@ function S(e) {
         voiceListRef: l,
         showSectionHeaders: s = !1,
         query: a
-    } = e, r = T(), S = (0, o.bG)([h.default], () => (0, m.ki)(h.default.getCurrentUser())), y = N(a, S), v = Math.ceil(y.length / t), {
-        isNativeModuleLoaded: b,
+    } = e, r = T(), S = (0, o.bG)([h.default], () => (0, m.ki)(h.default.getCurrentUser())), y = N(a, S), b = Math.ceil(y.length / t), {
+        isNativeModuleLoaded: v,
         isNativeModuleLoading: j,
         catalogLastFetchTime: R
     } = (0, o.cf)([g.A], () => ({
@@ -65,7 +65,7 @@ function S(e) {
             variant: "text-sm/normal",
             color: "text-muted",
             children: _.intl.format(_.t["5afO9U"], {
-                onClick: b ? p.st : p.md
+                onClick: v ? p.st : p.md
             })
         })]
     }) : j || null == R ? (0, i.jsx)("div", {
@@ -86,7 +86,7 @@ function S(e) {
                     hasNitro: S,
                     analyticsContext: {
                         reason: A.O.USER_SELECTION,
-                        gridRows: v,
+                        gridRows: b,
                         gridColumns: t,
                         interactedRow: e,
                         interactedColumn: l
@@ -101,7 +101,7 @@ function S(e) {
             children: _.intl.string(C[e])
         }),
         sectionHeaderHeight: !1 === s ? void 0 : e => x[e],
-        rowCount: v,
+        rowCount: b,
         rowHeight: 130,
         onScroll: n,
         ref: l,

@@ -45,7 +45,7 @@ function S(e) {
         newChannel: u,
         inSettings: h,
         ...m
-    } = e, [_, C] = l.useState(""), [S, I] = l.useState({}), [T, N] = l.useState(!1), [y, v] = l.useState(null), b = l.useRef(null), {
+    } = e, [_, C] = l.useState(""), [S, I] = l.useState({}), [T, N] = l.useState(!1), [y, b] = l.useState(null), v = l.useRef(null), {
         roles: j,
         members: R,
         getRichTag: M
@@ -67,12 +67,12 @@ function S(e) {
             }), (0, o.R$)(e.id, l, i)), a(), N(!1)
         } catch (t) {
             let e = new c.LG(t);
-            N(!1), v(e)
+            N(!1), b(e)
         }
     }
     let P = (0, d.ke)(n.type) ? r.I$d : r.trU;
     return (0, i.jsx)(g.A.Provider, {
-        listRef: b,
+        listRef: v,
         query: _,
         setQuery: C,
         pendingAdditions: S,
@@ -113,7 +113,7 @@ function S(e) {
                 }) : null]
             }),
             listProps: {
-                ref: b,
+                ref: v,
                 sectionHeight: g.A.SECTION_HEIGHT,
                 renderSection: g.A.renderSection,
                 rowHeight: g.A.ROW_HEIGHT,

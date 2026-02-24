@@ -26,8 +26,8 @@ var i = n(627968),
     T = n(486020),
     N = n(302975),
     y = n(652215),
-    v = n(518477),
-    b = n(985018),
+    b = n(518477),
+    v = n(985018),
     j = n(228288);
 let R = e => {
         let {
@@ -59,7 +59,7 @@ let R = e => {
         return null == s || 0 === s.length ? (0, i.jsx)(c.Text, {
             color: "text-default",
             variant: "text-sm/normal",
-            children: b.intl.string(b.t.zjVh8h)
+            children: v.intl.string(v.t.zjVh8h)
         }) : (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)("div", {
                 className: j.H,
@@ -69,14 +69,14 @@ let R = e => {
                     (0, x.openUserProfileModal)({
                         userId: t,
                         channelId: n,
-                        tabSection: v.RP.MUTUAL_GUILDS,
+                        tabSection: b.RP.MUTUAL_GUILDS,
                         sourceAnalyticsLocations: [u.A.DM_CHANNEL]
                     })
                 },
                 children: (0, i.jsx)(c.Text, {
                     className: j.tE,
                     variant: "text-sm/normal",
-                    children: b.intl.format(b.t.eE3oep, {
+                    children: v.intl.format(v.t.eE3oep, {
                         count: s.length
                     })
                 })
@@ -103,7 +103,7 @@ let R = e => {
                     location: y.liQ.DM_CHANNEL
                 })
             },
-            text: b.intl.string(b.t.l4Emac)
+            text: v.intl.string(v.t.l4Emac)
         }), o = (0, m.D)(n);
         switch (t) {
             case y.eA$.NONE:
@@ -125,7 +125,7 @@ let R = e => {
                                 location: y.liQ.DM_CHANNEL
                             })
                         },
-                        text: b.intl.string(b.t.cvSt1J)
+                        text: v.intl.string(v.t.cvSt1J)
                     }), r]
                 });
             case y.eA$.BLOCKED:
@@ -137,7 +137,7 @@ let R = e => {
                             location: y.liQ.DM_CHANNEL
                         })
                     },
-                    text: b.intl.string(b.t.XyHpKH)
+                    text: v.intl.string(v.t.XyHpKH)
                 });
             case y.eA$.PENDING_INCOMING:
                 return (0, i.jsxs)(i.Fragment, {
@@ -145,7 +145,7 @@ let R = e => {
                         size: "sm",
                         variant: "primary",
                         onClick: a,
-                        text: b.intl.string(b.t["+WbSn5"])
+                        text: v.intl.string(v.t["+WbSn5"])
                     }), (0, i.jsx)(c.Button, {
                         size: "sm",
                         variant: "secondary",
@@ -154,7 +154,7 @@ let R = e => {
                                 location: y.liQ.DM_CHANNEL
                             })
                         },
-                        text: b.intl.string(b.t.rQSndv)
+                        text: v.intl.string(v.t.rQSndv)
                     }), r]
                 });
             case y.eA$.PENDING_OUTGOING:
@@ -163,7 +163,7 @@ let R = e => {
                         size: "sm",
                         variant: "primary",
                         disabled: !0,
-                        text: b.intl.string(b.t.xMH6vD)
+                        text: v.intl.string(v.t.xMH6vD)
                     }), r]
                 });
             default:
@@ -175,7 +175,7 @@ let R = e => {
             channelId: t,
             otherUserId: n
         } = e, s = l.useCallback(() => {
-            (0, c.showToast)((0, c.createToast)(b.intl.string(b.t.a2j0hv), c.ToastType.FAILURE))
+            (0, c.showToast)((0, c.createToast)(v.intl.string(v.t.a2j0hv), c.ToastType.FAILURE))
         }, []), a = l.useCallback(() => {
             _.A.closeChannelSidebar(C.fe)
         }, []), r = l.useCallback(() => {
@@ -200,14 +200,14 @@ let R = e => {
                 disabled: p,
                 onClick: () => o(t),
                 loading: u,
-                text: b.intl.string(b.t.Kz8Pwr)
+                text: v.intl.string(v.t.Kz8Pwr)
             }), (0, i.jsx)(c.Button, {
                 variant: "secondary",
                 size: "sm",
                 disabled: p,
                 onClick: () => d(t),
                 loading: h,
-                text: b.intl.string(b.t.B2nygW)
+                text: v.intl.string(v.t.B2nygW)
             })]
         })
     },
@@ -240,7 +240,7 @@ let R = e => {
         }), E = u !== y.eA$.PENDING_INCOMING || d || h ? null : (0, i.jsx)(c.Text, {
             color: "text-default",
             variant: "text-sm/normal",
-            children: b.intl.string(b.t.c2v5nO)
+            children: v.intl.string(v.t.c2v5nO)
         });
         return (0, i.jsxs)("div", {
             className: g ? j.AA : j.kL,

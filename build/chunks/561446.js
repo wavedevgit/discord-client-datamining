@@ -40,8 +40,8 @@ function E(e) {
             maxMembers: t?.maxMembers
         }
     }), N = (0, l.bG)([c.A], () => null != I ? c.A.getMemberCount(I) : 0), y = null != T && (N ?? 0) >= T, {
-        approveRequest: v,
-        rejectRequest: b,
+        approveRequest: b,
+        rejectRequest: v,
         submitting: j
     } = (0, g.W)(C?.guildId, C?.userId, C?.joinRequestId);
     return null != C && C.applicationStatus === A.B5.SUBMITTED && S ? (0, i.jsxs)("div", {
@@ -54,14 +54,14 @@ function E(e) {
                 size: "sm",
                 text: f.intl.string(f.t.BzjDQJ),
                 loading: j,
-                onClick: v,
+                onClick: b,
                 disabled: y
             })
         }), (0, i.jsx)(a.Button, {
             variant: "critical-primary",
             size: "sm",
             text: f.intl.string(f.t.hDtbsz),
-            onClick: b,
+            onClick: v,
             disabled: j || C.applicationStatus !== A.B5.SUBMITTED
         }), n && (0, i.jsx)(a.Button, {
             onClick: () => {

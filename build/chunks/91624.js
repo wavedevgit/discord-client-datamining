@@ -47,8 +47,8 @@ function I(e) {
         id: d
     } = n, g = t.getGuildId(), p = (0, a.bG)([m.A], () => m.A.getGuild(g), [g]), _ = t.type === x.rbe.GUILD_ANNOUNCEMENT, I = null != p && p.features.has(x.GuildFeatures.NEWS), N = _ && I, {
         editingMessage: y,
-        editingTextValue: v,
-        editingRichValue: b
+        editingTextValue: b,
+        editingRichValue: v
     } = (0, a.cf)([h.A], () => ({
         editingMessage: h.A.getEditingMessage(c),
         editingTextValue: h.A.getEditingTextValue(c),
@@ -75,12 +75,12 @@ function I(e) {
         className: C.gM,
         key: d
     }), [d]);
-    return null != v && null != b ? (0, i.jsx)(E.A, {
+    return null != b && null != v ? (0, i.jsx)(E.A, {
         ref: void 0,
         channel: t,
         message: n,
-        textValue: v,
-        richValue: b,
+        textValue: b,
+        richValue: v,
         onCancel: r.A.endEditMessage,
         onChange: r.A.updateEditMessage,
         onConfirmDelete: f.A.confirmDelete,

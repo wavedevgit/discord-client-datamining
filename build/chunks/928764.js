@@ -26,8 +26,8 @@ var i = n(627968),
     T = n(376708),
     N = n(715757),
     y = n(390897),
-    v = n(704860),
-    b = n(152007),
+    b = n(704860),
+    v = n(152007),
     j = n(867455),
     R = n(734057),
     M = n(147036),
@@ -89,7 +89,7 @@ function V(e) {
         width: T
     } = (0, m.Ay)(), [y, U] = l.useState(3), [V, K] = l.useState(!n), [W, z] = (0, A.A)(!1, 2e3), Y = (0, r.bG)([R.A], () => R.A.getChannel(t), [t]), {
         firstMessage: q
-    } = (0, L.OA)(Y), J = (0, r.bG)([b.A], () => b.A.hasJoined(t)), {
+    } = (0, L.OA)(Y), J = (0, r.bG)([v.A], () => v.A.hasJoined(t)), {
         disableReactionUpdates: $,
         disableReactionCreates: Z,
         isLurking: X,
@@ -134,7 +134,7 @@ function V(e) {
             ref: I,
             children: [ee ? (0, i.jsx)("div", {
                 className: G.kX,
-                children: (0, i.jsx)(v.A, {
+                children: (0, i.jsx)(b.A, {
                     message: q,
                     channel: Y
                 })

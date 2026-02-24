@@ -52,9 +52,9 @@ function p(e) {
         }, !1)
     }, [x, S]), y = l.useCallback(() => {
         x.stop(), S(!0)
-    }, [x, S]), v = l.useCallback(() => {
+    }, [x, S]), b = l.useCallback(() => {
         T(!0)
-    }, []), b = l.useCallback(() => {
+    }, []), v = l.useCallback(() => {
         T(!1)
     }, []);
     return (0, i.jsx)(o.YNO, {
@@ -81,8 +81,8 @@ function p(e) {
                     tabIndex: 0,
                     onMouseEnter: y,
                     onMouseLeave: N,
-                    onFocus: v,
-                    onBlur: b,
+                    onFocus: b,
+                    onBlur: v,
                     className: a()(n, g.zr),
                     "aria-label": f,
                     ...e,

@@ -26,8 +26,8 @@ var i = n(627968),
     T = n(857071),
     N = n(552227),
     y = n(698405),
-    v = n(557722),
-    b = n(976860),
+    b = n(557722),
+    v = n(976860),
     j = n(544028),
     R = n(560010),
     M = n(696451),
@@ -121,7 +121,7 @@ class K extends l.PureComponent {
                 default: e
             } = await Promise.all([n.e("84704"), n.e("45668")]).then(n.bind(n, 615715));
             return t => (0, i.jsx)(e, {
-                reason: v.d.GUILD_PHONE_REQUIRED,
+                reason: b.d.GUILD_PHONE_REQUIRED,
                 ...t
             })
         }, {
@@ -164,7 +164,7 @@ class K extends l.PureComponent {
     handleGoBack = () => {
         this.setState({
             submitting: !0
-        }), (0, b.JK)().goBack()
+        }), (0, v.JK)().goBack()
     };
     handleFollowAnnouncement = () => {
         let {
