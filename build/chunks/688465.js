@@ -1,25 +1,25 @@
-/** chunk id: 688465, original params: e,t,r (module,exports,require) **/
-r.d(t, {
+/** chunk id: 688465, original params: e,t,s (module,exports,require) **/
+s.d(t, {
     KL: () => y,
     tS: () => b,
     yB: () => C
 });
-var s = r(627968),
-    i = r(64700),
-    n = r(735438),
-    l = r.n(n),
-    a = r(72978),
-    o = r(141931),
-    c = r(311907),
-    d = r(77729),
-    u = r(674966),
-    f = r(253932),
-    h = r(929921),
-    x = r(430452),
-    p = r(258585),
-    m = r(874124),
-    _ = r(753070),
-    g = r(765682);
+var r = s(627968),
+    i = s(64700),
+    n = s(735438),
+    l = s.n(n),
+    a = s(72978),
+    o = s(141931),
+    c = s(311907),
+    d = s(77729),
+    u = s(674966),
+    f = s(253932),
+    h = s(929921),
+    x = s(430452),
+    p = s(258585),
+    m = s(874124),
+    _ = s(753070),
+    g = s(765682);
 let j = {
         screenSources: [],
         windowSources: [],
@@ -67,13 +67,13 @@ function S(e, t) {
                 ...e, preset: t.preset
             };
         case "set_source_type":
-            let r = {
+            let s = {
                 sourceType: t.sourceType,
                 selectedSource: void 0
             };
-            return t.sourceType === o.fS.CAMERA ? ((e.preset === _.jQ.PRESET_DOCUMENTS || e.preset === _.jQ.PRESET_AUTO) && (r.preset = _.jQ.PRESET_VIDEO), e.resolution === _.on.RESOLUTION_SOURCE && (r.resolution = _.on.RESOLUTION_720)) : r.selectedSource = null, {
+            return t.sourceType === o.fS.CAMERA ? ((e.preset === _.jQ.PRESET_DOCUMENTS || e.preset === _.jQ.PRESET_AUTO) && (s.preset = _.jQ.PRESET_VIDEO), e.resolution === _.on.RESOLUTION_SOURCE && (s.resolution = _.on.RESOLUTION_720)) : s.selectedSource = null, {
                 ...e,
-                ...r
+                ...s
             };
         case "set_native_source_type":
             return {
@@ -92,17 +92,17 @@ function S(e, t) {
                 ...e, hidePreview: t.hidePreview
             };
         case "set_selected_source": {
-            let r = t.source,
-                s = {
+            let s = t.source,
+                r = {
                     ...e,
-                    selectedSource: r
+                    selectedSource: s
                 },
-                i = r?.name;
-            if (null != r && r.id?.startsWith(o.fS.CAMERA) && null != i) {
+                i = s?.name;
+            if (null != s && s.id?.startsWith(o.fS.CAMERA) && null != i) {
                 let e = l().maxBy(Object.values(x.Ay.getInputDevices()), e => (0, a.default)(i, e.name));
-                s.audioSourceId = e?.id ?? x.Ay.getInputDeviceId()
+                r.audioSourceId = e?.id ?? x.Ay.getInputDeviceId()
             }
-            return s
+            return r
         }
         case "set_audio_source":
             return {
@@ -124,21 +124,21 @@ function S(e, t) {
 function y(e) {
     let {
         dispatch: t,
-        state: r,
+        state: s,
         children: i
     } = e;
-    return (0, s.jsx)(A.Provider, {
+    return (0, r.jsx)(A.Provider, {
         value: t,
-        children: (0, s.jsx)(v.Provider, {
-            value: r,
+        children: (0, r.jsx)(v.Provider, {
+            value: s,
             children: i
         })
     })
 }
 
-function C(e, t, r) {
+function C(e, t, s) {
     let {
-        defaultAutoQuality: s,
+        defaultAutoQuality: r,
         allowAutoQuality: n
     } = (0, p.X5)({
         location: "useCreateGoLiveModalState"
@@ -148,11 +148,11 @@ function C(e, t, r) {
         fps: o,
         soundshareEnabled: v
     } = (0, c.cf)([h.A], () => h.A.getState());
-    s && (l = _.jQ.PRESET_AUTO);
+    r && (l = _.jQ.PRESET_AUTO);
     let A = (0, c.bG)([x.Ay], () => x.Ay.getInputDeviceId()),
         y = f.uh.useSetting() ?? !1,
         C = f.wv.useSetting() ?? !1;
-    l in _.jQ && (l !== _.jQ.PRESET_AUTO || n) || (l = _.jQ.PRESET_VIDEO), (0, m.A)(_.jQ.PRESET_CUSTOM, a, o, t, r) || (a = _.on.RESOLUTION_720, o = _.kn.FPS_30);
+    l in _.jQ && (l !== _.jQ.PRESET_AUTO || n) || (l = _.jQ.PRESET_VIDEO), (0, m.A)(_.jQ.PRESET_CUSTOM, a, o, t, s) || (a = _.on.RESOLUTION_720, o = _.kn.FPS_30);
     let [b, w] = i.useReducer(S, {
         ...j,
         muteStreamAudio: !v,

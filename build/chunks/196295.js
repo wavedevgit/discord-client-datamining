@@ -1,82 +1,82 @@
 /** chunk id: 196295, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => C
+    A: () => T
 }), n(321073);
 var i = n(627968),
-    l = n(64700),
-    r = n(311907),
-    s = n(397927),
+    s = n(64700),
+    l = n(311907),
+    r = n(397927),
     a = n(412477),
     o = n(592598),
-    u = n(243612),
-    d = n(545807),
+    d = n(243612),
+    u = n(545807),
     c = n(672910),
     h = n(57019),
-    m = n(703552),
-    g = n(672396),
+    g = n(703552),
+    m = n(672396),
     p = n(652215),
     A = n(985018),
-    f = n(288507);
-let x = [];
+    x = n(288507);
+let E = [];
 
-function E(e) {
+function f(e) {
     return e.notification.id
 }
 
-function S(e, t, n, l) {
+function S(e, t, n, s) {
     let {
-        index: r,
-        notification: s,
+        index: l,
+        notification: r,
         locked: a,
         pinned: o
     } = t;
     return (0, i.jsx)(c.A, {
-        index: r,
-        notification: s,
+        index: l,
+        notification: r,
         locked: a,
         pinned: o,
         transitionState: n,
-        cleanUp: l
+        cleanUp: s
     }, e)
 }
 
-function v(e) {
+function I(e) {
     return (0, i.jsx)("div", {
-        className: f.k,
+        className: x.k,
         children: e
     })
 }
-let C = l.memo(function(e) {
+let T = s.memo(function(e) {
     let {
         locked: t,
         pinned: n,
         showEmpty: c = !0
-    } = e, f = (0, r.bG)([m.A, o.A], () => {
-        if (o.A.isNotificationDisabled(g.KS.TextChat)) return x;
+    } = e, x = (0, l.bG)([g.A, o.A], () => {
+        if (o.A.isNotificationDisabled(m.KS.TextChat)) return E;
         let e = [],
             i = 0;
-        for (let l of m.A.getNotifications()) {
+        for (let s of g.A.getNotifications()) {
             if (i > 4) break;
-            (!t || l.status !== p.yFH.TIMED_OUT) && (e.push({
+            (!t || s.status !== p.yFH.TIMED_OUT) && (e.push({
                 index: i,
                 locked: t,
                 pinned: n,
-                notification: l
+                notification: s
             }), i++)
         }
         return e
-    }, [t, n], u.oQ), C = l.useState(() => new h.Fn(t))[0];
-    return (l.useLayoutEffect(() => C.updateState(f, t)), l.useLayoutEffect(() => (C.initialize((0, d.b)()), () => C.cleanUp()), [C]), 0 !== f.length || t) ? (0, i.jsx)(h.Gt.Provider, {
-        value: C,
-        children: (0, i.jsx)(s.Fai, {
-            items: f,
+    }, [t, n], d.oQ), T = s.useState(() => new h.Fn(t))[0];
+    return (s.useLayoutEffect(() => T.updateState(x, t)), s.useLayoutEffect(() => (T.initialize((0, u.b)()), () => T.cleanUp()), [T]), 0 !== x.length || t) ? (0, i.jsx)(h.Gt.Provider, {
+        value: T,
+        children: (0, i.jsx)(r.Fai, {
+            items: x,
             renderItem: S,
-            getItemKey: E,
-            wrapChildren: v
+            getItemKey: f,
+            wrapChildren: I
         })
     }) : c ? t ? null : (0, i.jsx)(a.g, {
         emptyText: A.intl.string(A.t.O1Nbjq),
-        icon: s.XFE,
+        icon: r.XFE,
         absolute: !0
     }) : null
 })

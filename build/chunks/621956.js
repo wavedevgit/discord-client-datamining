@@ -1,43 +1,43 @@
 /** chunk id: 621956, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    E: () => a
+    E: () => r
 });
 var i = n(627968),
     l = n(64700),
-    r = n(744682);
-let s = {
+    s = n(744682);
+let a = {
         all: {
             name: "all",
             start: 0,
             duration: 66
         }
     },
-    a = () => {
+    r = () => {
         let e = l.useRef(null),
             t = l.useCallback(() => {
                 null != e.current && e.current.play("all")
             }, []),
-            a = l.useCallback(() => {
+            r = l.useCallback(() => {
                 null != e.current && e.current.play("all")
             }, []),
             o = l.useCallback(() => {
                 null != e.current && e.current.stopIfPlaying("all")
             }, []),
-            u = l.useCallback(t => (0, i.jsx)(r.P, {
+            c = l.useCallback(t => (0, i.jsx)(s.P, {
                 ...t,
                 src: () => n.e("5506").then(n.t.bind(n, 429286, 19)),
                 ref: e,
-                markers: s
+                markers: a
             }), []);
         return {
             events: {
                 onClick: t,
-                onMouseEnter: a,
+                onMouseEnter: r,
                 onMouseLeave: o
             },
             play: t,
             getDuration: l.useCallback(() => e.current?.getDuration(), []),
             getCurrentFrame: l.useCallback(() => e.current?.getCurrentFrame() ?? null, []),
-            Component: u
+            Component: c
         }
     }

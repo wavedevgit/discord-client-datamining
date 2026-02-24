@@ -1,11 +1,11 @@
-/** chunk id: 348858, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    I: () => a
+/** chunk id: 348858, original params: e,t,r (module,exports,require) **/
+r.d(t, {
+    I: () => s
 });
-var i = n(627968),
-    l = n(64700),
-    r = n(744682);
-let s = {
+var n = r(627968),
+    a = r(64700),
+    c = r(744682);
+let l = {
         deafen: {
             name: "deafen",
             start: 0,
@@ -27,39 +27,39 @@ let s = {
             duration: 70
         }
     },
-    a = e => {
-        let t = l.useRef(null),
-            a = l.useRef(e);
-        a.current = e;
-        let o = l.useMemo(() => () => {
+    s = e => {
+        let t = a.useRef(null),
+            s = a.useRef(e);
+        s.current = e;
+        let u = a.useMemo(() => () => {
                 null != t.current && t.current.play(e)
             }, [e]),
-            u = l.useCallback(() => {
+            i = a.useCallback(() => {
                 if (null == t.current) return;
-                let n = "deafen" === e ? "hover_undeafened" : "hover_deafened";
-                t.current.play(n)
+                let r = "deafen" === e ? "hover_undeafened" : "hover_deafened";
+                t.current.play(r)
             }, [e]),
-            d = l.useCallback(() => {
+            o = a.useCallback(() => {
                 if (null == t.current) return;
-                let n = "deafen" === e ? "hover_undeafened" : "hover_deafened";
-                t.current.stopIfPlaying(n)
+                let r = "deafen" === e ? "hover_undeafened" : "hover_deafened";
+                t.current.stopIfPlaying(r)
             }, [e]),
-            c = l.useCallback(e => (0, i.jsx)(r.P, {
+            d = a.useCallback(e => (0, n.jsx)(c.P, {
                 ...e,
-                src: () => n.e("93768").then(n.t.bind(n, 894619, 19)),
+                src: () => r.e("93768").then(r.t.bind(r, 894619, 19)),
                 ref: t,
-                initialAnimation: a.current,
-                markers: s
+                initialAnimation: s.current,
+                markers: l
             }), []);
         return {
             events: {
-                onClick: o,
-                onMouseEnter: u,
-                onMouseLeave: d
+                onClick: u,
+                onMouseEnter: i,
+                onMouseLeave: o
             },
-            play: o,
-            getDuration: l.useCallback(() => t.current?.getDuration(), []),
-            getCurrentFrame: l.useCallback(() => t.current?.getCurrentFrame() ?? null, []),
-            Component: c
+            play: u,
+            getDuration: a.useCallback(() => t.current?.getDuration(), []),
+            getCurrentFrame: a.useCallback(() => t.current?.getCurrentFrame() ?? null, []),
+            Component: d
         }
     }

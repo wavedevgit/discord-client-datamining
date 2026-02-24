@@ -1,39 +1,39 @@
 /** chunk id: 24933, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => A
+    A: () => d
 });
-var i = n(627968);
+var r = n(627968);
 n(64700);
-var r = n(311907),
-    l = n(397927),
-    s = n(827343),
-    a = n(430452),
-    o = n(77735),
-    c = n(509381),
-    d = n(985018);
+var a = n(311907),
+    i = n(397927),
+    l = n(827343),
+    u = n(430452),
+    s = n(77735),
+    o = n(509381),
+    c = n(985018);
 
-function A(e) {
+function d(e) {
     let {
         enabledInputProfiles: t
-    } = (0, o.d)({
+    } = (0, s.d)({
         location: "useInputProfileItems"
     }), n = {
-        [c.m.VOICE_ISOLATION]: d.intl.string(d.t.cjPbpT),
-        [c.m.STUDIO]: d.intl.string(d.t.VZPR0R),
-        [c.m.CUSTOM]: d.intl.string(d.t["N/PQjv"])
-    }, A = (0, r.bG)([a.Ay], () => a.Ay.getActiveInputProfile()), u = t.map(t => (0, i.jsx)(l.iDA, {
+        [o.m.VOICE_ISOLATION]: c.intl.string(c.t.cjPbpT),
+        [o.m.STUDIO]: c.intl.string(c.t.VZPR0R),
+        [o.m.CUSTOM]: c.intl.string(c.t["N/PQjv"])
+    }, d = (0, a.bG)([u.Ay], () => u.Ay.getActiveInputProfile()), m = t.map(t => (0, r.jsx)(i.iDA, {
         id: t,
         group: "input-profiles",
         label: n[t],
-        checked: t === (A ?? c.m.CUSTOM),
-        action: () => s.A.setActiveInputProfile(t, {
+        checked: t === (d ?? o.m.CUSTOM),
+        action: () => l.A.setActiveInputProfile(t, {
             analyticsLocations: e
         })
     }, t));
-    return (0, i.jsx)(l.Drp, {
+    return (0, r.jsx)(i.Drp, {
         id: "input-profiles",
-        label: d.intl.string(d.t.LM3U3k),
-        subtext: n[A ?? c.m.CUSTOM],
-        children: u
+        label: c.intl.string(c.t.LM3U3k),
+        subtext: n[d ?? o.m.CUSTOM],
+        children: m
     })
 }

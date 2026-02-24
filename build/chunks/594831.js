@@ -2,7 +2,7 @@
 n.d(t, {
     Ay: () => $,
     Dz: () => P,
-    MV: () => F,
+    MV: () => w,
     S4: () => b,
     qZ: () => k
 }), n(321073);
@@ -34,8 +34,8 @@ var l = n(627968),
     v = n(403362),
     D = n(996439),
     R = n(652215),
-    O = n(985018),
-    U = n(953679);
+    U = n(985018),
+    O = n(953679);
 let G = e => [e.userId, ... function(e) {
         let t = x.default.getUser(e.userId);
         if (null == t) return [];
@@ -43,7 +43,7 @@ let G = e => [e.userId, ... function(e) {
             l = (0, A.jP)(t);
         return Array.from(new Set([n, l.nick, ...Object.values(l.names)].flat().filter(v.Vq)))
     }(e)],
-    F = {
+    w = {
         searchType: E.n.FUZZY,
         sortType: E.r.JARO_WINKLER,
         searchStringGenerator: e => {
@@ -55,7 +55,7 @@ let G = e => [e.userId, ... function(e) {
         },
         throttleMs: 100
     },
-    w = {
+    F = {
         searchType: E.n.FUZZY,
         sortType: E.r.JARO_WINKLER,
         searchStringGenerator: G,
@@ -66,7 +66,7 @@ let G = e => [e.userId, ... function(e) {
             channel: t,
             query: n
         } = e, [r] = (0, a.bG)([M.A], () => [M.A.getVoiceStatesForChannel(t.id), M.A.getVoiceStateVersion()], [t.id], D.D), [s, d] = i.useState([]);
-        (0, m.RT)(n, Object.values(r), d, w);
+        (0, m.RT)(n, Object.values(r), d, F);
         let c = (0, a.yK)([M.A, x.default, S.A, y.A], () => Object.values(M.A.getVoiceStatesForChannel(t.id)).map(e => x.default.getUser(e.userId)).filter(v.Vq).sort((e, t) => {
                 if (s.length > 0 && "" !== n.trim()) {
                     if (s.some(t => t.userId === e.id)) return -1;
@@ -81,10 +81,10 @@ let G = e => [e.userId, ... function(e) {
             guildId: h,
             maxUsers: Math.min(g, 4),
             size: o._3J.SIZE_24,
-            overflowCountClassName: U.mB,
+            overflowCountClassName: O.mB,
             overflowCountVariant: "text-xs/semibold",
             disableUserPopout: !0,
-            "aria-label": O.intl.string(O.t.TxqPQR)
+            "aria-label": U.intl.string(U.t.TxqPQR)
         })
     });
 
@@ -158,10 +158,10 @@ let j = i.memo(function(e) {
             width: 32,
             height: 32,
             children: (0, l.jsx)("div", {
-                className: U.Ko,
+                className: O.Ko,
                 children: (0, l.jsx)(g.j, {
                     guildId: i.id,
-                    guildName: i.name ?? O.intl.string(O.t.DmIUGK),
+                    guildName: i.name ?? U.intl.string(U.t.DmIUGK),
                     guildIcon: i.icon,
                     iconSize: 32
                 })
@@ -180,28 +180,28 @@ let j = i.memo(function(e) {
             showVoiceAvatars: I = !0
         } = e, A = (0, a.bG)([N.A], () => N.A.getChannel(t), [t]), f = A?.getGuildId(), E = (0, a.bG)([_.A], () => _.A.getGuild(f), [f]), m = (0, c.gU)(A, E), S = i?.id === t, p = S ? "text-feedback-positive" : n ? "interactive-text-active" : "text-muted", T = S ? o.LU0.colors.TEXT_FEEDBACK_POSITIVE : n ? o.LU0.colors.INTERACTIVE_TEXT_ACTIVE : o.LU0.colors.ICON_MUTED;
         return null == A ? null : (0, l.jsxs)(o.sqX, {
-            className: s()(U.Uw, n && U.gt),
+            className: s()(O.Uw, n && O.gt),
             "aria-label": A.name,
             onClick: () => r(t),
             onMouseOver: () => u(t),
             onMouseLeave: () => h(t),
             children: [(0, l.jsx)("div", {
-                className: U._N,
+                className: O._N,
                 children: (0, l.jsx)(j, {
                     channel: A
                 })
             }), (0, l.jsxs)("div", {
-                className: U.rg,
+                className: O.rg,
                 children: [(0, l.jsxs)("div", {
-                    className: U.Ks,
+                    className: O.Ks,
                     children: [null != m ? (0, l.jsx)(m, {
                         color: T,
                         size: "xs",
-                        className: U.p
+                        className: O.p
                     }) : void 0, (0, l.jsx)(o.Text, {
                         variant: S ? "text-sm/semibold" : "text-sm/medium",
                         color: p,
-                        className: U.rU,
+                        className: O.rU,
                         children: (0, d.m1)(A, x.default, y.A)
                     })]
                 }), (0, l.jsx)(o.Text, {
@@ -210,7 +210,7 @@ let j = i.memo(function(e) {
                     children: E?.name ?? A.name
                 })]
             }), (0, l.jsx)("div", {
-                className: U.vU,
+                className: O.vU,
                 children: I ? (0, l.jsx)(L, {
                     channel: A,
                     currentVoiceChannel: i,
@@ -224,7 +224,7 @@ let j = i.memo(function(e) {
             emptyText: t
         } = e;
         return (0, l.jsx)("div", {
-            className: U.KJ,
+            className: O.KJ,
             children: (0, l.jsx)(o.Text, {
                 variant: "text-md/normal",
                 color: "text-strong",
@@ -249,16 +249,16 @@ let j = i.memo(function(e) {
         }, f = d ? o.IpV : "div";
         return (0, l.jsxs)("div", {
             children: [(0, l.jsx)("div", {
-                className: U.qs,
+                className: O.qs,
                 children: (0, l.jsx)(o.Text, {
                     variant: "text-sm/semibold",
                     color: "text-muted",
                     children: t
                 })
             }), (0, l.jsxs)(f, {
-                className: U.o5,
+                className: O.o5,
                 children: [a && 0 === n.length && (0, l.jsx)(H, {
-                    emptyText: O.intl.string(O.t.nxSS03)
+                    emptyText: U.intl.string(U.t.nxSS03)
                 }), n.map(e => (0, l.jsx)(V, {
                     channelId: e,
                     isHighlighted: e === h,
@@ -285,9 +285,9 @@ function W(e) {
         friendVoiceChannelIds: a
     } = b();
     return r.length > 0 || a.length > 0 ? (0, l.jsxs)(o.IpV, {
-        className: s()(U.o5, U.Hc),
+        className: s()(O.o5, O.Hc),
         children: [r.length > 0 && (0, l.jsx)(Y, {
-            sectionHeader: O.intl.string(O.t.lnk2NQ),
+            sectionHeader: U.intl.string(U.t.lnk2NQ),
             channelIds: r.slice(0, 3),
             hasQuery: !1,
             query: t,
@@ -295,7 +295,7 @@ function W(e) {
             onSelect: e => i(e, "recent channel"),
             scrollable: !1
         }), a.length > 0 && (0, l.jsx)(Y, {
-            sectionHeader: O.intl.string(O.t["0lvb9O"]),
+            sectionHeader: U.intl.string(U.t["0lvb9O"]),
             channelIds: a.slice(0, 8),
             hasQuery: !1,
             query: t,
@@ -304,7 +304,7 @@ function W(e) {
             scrollable: !1
         })]
     }) : (0, l.jsx)(H, {
-        emptyText: O.intl.string(O.t["3ET7Ay"])
+        emptyText: U.intl.string(U.t["3ET7Ay"])
     })
 }
 
@@ -319,7 +319,7 @@ function $(e) {
         onSelect: r,
         allAvailableChannelRows: s
     } = e, [a, u] = i.useState(""), [d, c] = i.useState([]);
-    (0, m.RT)(a, s, c, F);
+    (0, m.RT)(a, s, c, w);
     let h = i.useCallback(e => {
             "Escape" === e.key && n()
         }, [n]),
@@ -342,14 +342,14 @@ function $(e) {
             onMouseLeave: z
         }), []);
     return (0, l.jsxs)("div", {
-        className: U.Dz,
+        className: O.Dz,
         ...E,
         children: [(0, l.jsx)("div", {
-            className: U.PP,
+            className: O.PP,
             children: (0, l.jsx)(o.IWV, {
                 autoFocus: !0,
                 query: a,
-                placeholder: O.intl.string(O.t.UyA6ST),
+                placeholder: U.intl.string(U.t.UyA6ST),
                 onClear: () => {
                     u("")
                 },
@@ -358,11 +358,11 @@ function $(e) {
                     u(e)
                 },
                 inputProps: {
-                    "aria-label": O.intl.string(O.t.UyA6ST)
+                    "aria-label": U.intl.string(U.t.UyA6ST)
                 }
             })
         }), I ? (0, l.jsx)(Y, {
-            sectionHeader: A ? O.intl.format(O.t.qdXiQ1, f) : O.intl.format(O.t["Aq+8wB"], f),
+            sectionHeader: A ? U.intl.format(U.t.qdXiQ1, f) : U.intl.format(U.t["Aq+8wB"], f),
             channelIds: d.map(e => {
                 let {
                     channel: t

@@ -35,8 +35,8 @@ var i = n(627968),
     O = n(652215),
     L = n(806931),
     P = n(788868),
-    w = n(731854),
-    k = n(734317),
+    k = n(731854),
+    w = n(734317),
     U = n(985018),
     G = n(632998);
 
@@ -57,7 +57,7 @@ function F(e) {
         onElementResizeEnd: e => {},
         orientation: u.R.VERTICAL_TOP
     });
-    (0, U.useSyncMessages)(k.messagesLoader);
+    (0, U.useSyncMessages)(w.messagesLoader);
     let Y = (0, o.bG)([C.default], () => (0, I.ki)(C.default.getCurrentUser())),
         q = (0, o.bG)([N.A], () => N.A.getCatalogUpdateTime()),
         [J, $] = l.useState(!1),
@@ -178,7 +178,7 @@ function F(e) {
                     [G.rd]: null != Q
                 }),
                 children: [(0, i.jsx)(f.U, {
-                    deviceType: w.oh.AUDIO_INPUT,
+                    deviceType: k.oh.AUDIO_INPUT,
                     location: "VoiceFiltersPopout",
                     onOpen: () => {
                         S.default.track(O.HAw.VOICE_FILTER_MIC_SELECTOR_OPENED, {
@@ -187,7 +187,7 @@ function F(e) {
                     },
                     popoutPosition: "top"
                 }), s && (0, i.jsx)(f.U, {
-                    deviceType: w.oh.AUDIO_OUTPUT,
+                    deviceType: k.oh.AUDIO_OUTPUT,
                     location: "VoiceFiltersPopout",
                     popoutPosition: "top"
                 }), (0, i.jsx)(c.YNO, {

@@ -137,13 +137,13 @@ function y(e) {
         disabled: x
     });
     let P = (0, r.rm)(String(n.id)),
-        w = !x && l === E.A.FRIENDS || O;
+        k = !x && l === E.A.FRIENDS || O;
     return (0, i.jsx)(d.DUT, {
         id: `user-row-${s}`,
         className: a()(T.Se, {
-            [T.r9]: !w
+            [T.r9]: !k
         }),
-        onClick: w ? () => {
+        onClick: k ? () => {
             R(l, s, "select"), S?.(n.id)
         } : void 0,
         onMouseEnter: () => {

@@ -48,8 +48,8 @@ let x = l.memo(function(e) {
         videoAspectRatio: O,
         wrapperRef: L,
         panOffset: P,
-        setPanOffset: w,
-        clampPanOffset: k
+        setPanOffset: k,
+        clampPanOffset: w
     } = l.useContext(A.e9), [U, G] = l.useState(!1), F = l.useRef(null), H = T > N, B = l.useCallback(() => {
         C("interact")
     }, [C]), V = l.useCallback(() => {
@@ -67,11 +67,11 @@ let x = l.memo(function(e) {
             i = L.current.clientHeight,
             l = e.x - t.left,
             s = e.y - t.top;
-        w(k({
+        k(w({
             x: (.5 - l / t.width) * n * T,
             y: (.5 - s / t.height) * i * T
         }))
-    }, [k, T, L, w]), z = l.useCallback(e => {
+    }, [w, T, L, k]), z = l.useCallback(e => {
         E(e) && (e.preventDefault(), e.stopPropagation(), G(!0), W({
             x: e.clientX,
             y: e.clientY
