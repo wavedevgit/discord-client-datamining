@@ -1,2 +1,204 @@
 /** chunk id: 466410, original params: e,n,t (module,exports,require) **/
-t.d(n,{A:()=>E});var i=t(627968);t(64700);var l=t(311907),a=t(397927),s=t(926919),r=t(172272),o=t(540999),c=t(111162),d=t(253932),u=t(780964),g=t(840065),p=t(652215);function E(){let{layoutDebuggingEnabled:e,isDeveloper:n,isLoggingGatewayEvents:t,isLoggingOverlayEvents:E,isLoggingAnalyticsEvents:A,isTracingRequests:v,isForcedCanary:b,isAxeEnabled:h,preventPopoutClose:y,onlyShowPreviewAppCollections:S,disableAppCollectionsCache:x}=(0,l.cf)([c.default,o.A],()=>({layoutDebuggingEnabled:c.default.layoutDebuggingEnabled,isDeveloper:o.A.isDeveloper,isLoggingGatewayEvents:c.default.isLoggingGatewayEvents,isLoggingOverlayEvents:c.default.isLoggingOverlayEvents,isLoggingAnalyticsEvents:c.default.isLoggingAnalyticsEvents,isTracingRequests:c.default.isTracingRequests,isForcedCanary:c.default.isForcedCanary,isSourceMapsEnabled:c.default.sourceMapsEnabled,isAxeEnabled:c.default.isAxeEnabled,preventPopoutClose:c.default.preventPopoutClose,onlyShowPreviewAppCollections:c.default.onlyShowPreviewAppCollections,disableAppCollectionsCache:c.default.disableAppCollectionsCache})),{horizontalSpacing:C,verticalSpacing:O}=(0,r.Or)(),{setHorizontalSpacing:_,setVerticalSpacing:f}=r.Or.getState(),I=d.HZ.useSetting();return n?[(0,i.jsxs)(a.Drp,{id:"overrides",label:"Overrides",action:()=>{(0,g.openUserSettings)(u.X.DEV_OVERRIDES,{section:p.nc_.DEVELOPER_OPTIONS})},children:[(0,i.jsx)(a.sLh,{id:"always-deliver",label:"Always Deliver Ads",checked:I,action:()=>{d.HZ.updateSetting(!I)}},"always-deliver"),(0,i.jsx)(a.sLh,{id:"forced-canary",label:"Forced Canary",checked:b,action:()=>{(0,s.x)({canary:!b})}},"forced-canary"),(0,i.jsx)(a.sLh,{id:"preview-collections",label:"Preview Unpublished Collections",checked:S,action:()=>{(0,s.x)({onlyShowPreviewAppCollections:!S})}},"preview-collections"),(0,i.jsx)(a.sLh,{id:"disable-collections-cache",label:"Disable Collections Cache",checked:x,action:()=>{(0,s.x)({disableAppCollectionsCache:!x})}},"disable-collections-cache")]},"overrides"),(0,i.jsxs)(a.Drp,{id:"logging",label:"Logging",action:()=>{(0,g.openUserSettings)(u.X.LOGGING,{section:p.nc_.DEVELOPER_OPTIONS})},children:[(0,i.jsx)(a.sLh,{id:"gateway-events",label:"Gateway Events",checked:t,action:()=>{(0,s.x)({logGatewayEvents:!t})}},"gateway-events"),(0,i.jsx)(a.sLh,{id:"overlay-events",label:"Overlay RPC Events",checked:E,action:()=>{(0,s.x)({logOverlayEvents:!E})}},"overlay-events"),(0,i.jsx)(a.sLh,{id:"analytics-events",label:"Analytics Events",checked:A,action:()=>{(0,s.x)({logAnalyticsEvents:!A})}},"analytics-events"),(0,i.jsx)(a.sLh,{id:"tracing-requests",label:"Tracing Requests",checked:v,action:()=>{(0,s.x)({trace:!v})}},"tracing-requests"),(0,i.jsx)(a.sLh,{id:"prevent-popout-close",label:"Prevent Popouts From Closing",checked:y,action:()=>{(0,s.x)({preventPopoutClose:!y})}},"prevent-popout-close")]},"logging"),(0,i.jsxs)(a.Drp,{id:"design-tools",label:"Design/A11y Tools",action:()=>{(0,g.openUserSettings)(u.X.DESIGN_TOOLS,{section:p.nc_.DEVELOPER_OPTIONS})},children:[(0,i.jsx)(a.sLh,{id:"accessibility-auditing",label:"Accessibility Auditing",checked:h,action:()=>{(0,s.x)({axeEnabled:!h})}},"accessibility-auditing"),(0,i.jsx)(a.sLh,{id:"layout-debugging",label:"Enable Layout Debugging",checked:e,action:()=>{(0,s.x)({layoutDebuggingEnabled:!e})}},"layout-debugging"),e&&(0,i.jsxs)(i.Fragment,{children:[(0,i.jsx)(a.aK1,{id:"horizontal-spacing",label:"Horizontal Spacing",control:(e,n)=>(0,i.jsx)(a.i42,{...e,ref:n,value:C,minValue:0,maxValue:r.YR,onChange:e=>_(e),renderValue:e=>`${Math.round(e)}px`,"aria-label":"Horizontal Spacing"})},"horizontal-spacing"),(0,i.jsx)(a.aK1,{id:"vertical-spacing",label:"Vertical Spacing",control:(e,n)=>(0,i.jsx)(a.i42,{...e,ref:n,value:O,minValue:0,maxValue:r.YR,onChange:e=>f(e),"aria-label":"Vertical Spacing",renderValue:e=>`${Math.round(e)}px`})},"vertical-spacing")]})]},"design-tools")]:null}
+t.d(n, {
+    A: () => E
+});
+var i = t(627968);
+t(64700);
+var l = t(311907),
+    a = t(397927),
+    s = t(926919),
+    r = t(172272),
+    o = t(540999),
+    c = t(111162),
+    d = t(253932),
+    u = t(780964),
+    g = t(840065),
+    p = t(652215);
+
+function E() {
+    let {
+        layoutDebuggingEnabled: e,
+        isDeveloper: n,
+        isLoggingGatewayEvents: t,
+        isLoggingOverlayEvents: E,
+        isLoggingAnalyticsEvents: A,
+        isTracingRequests: v,
+        isForcedCanary: b,
+        isAxeEnabled: h,
+        preventPopoutClose: y,
+        onlyShowPreviewAppCollections: S,
+        disableAppCollectionsCache: x
+    } = (0, l.cf)([c.default, o.A], () => ({
+        layoutDebuggingEnabled: c.default.layoutDebuggingEnabled,
+        isDeveloper: o.A.isDeveloper,
+        isLoggingGatewayEvents: c.default.isLoggingGatewayEvents,
+        isLoggingOverlayEvents: c.default.isLoggingOverlayEvents,
+        isLoggingAnalyticsEvents: c.default.isLoggingAnalyticsEvents,
+        isTracingRequests: c.default.isTracingRequests,
+        isForcedCanary: c.default.isForcedCanary,
+        isSourceMapsEnabled: c.default.sourceMapsEnabled,
+        isAxeEnabled: c.default.isAxeEnabled,
+        preventPopoutClose: c.default.preventPopoutClose,
+        onlyShowPreviewAppCollections: c.default.onlyShowPreviewAppCollections,
+        disableAppCollectionsCache: c.default.disableAppCollectionsCache
+    })), {
+        horizontalSpacing: C,
+        verticalSpacing: O
+    } = (0, r.Or)(), {
+        setHorizontalSpacing: _,
+        setVerticalSpacing: f
+    } = r.Or.getState(), I = d.HZ.useSetting();
+    return n ? [(0, i.jsxs)(a.Drp, {
+        id: "overrides",
+        label: "Overrides",
+        action: () => {
+            (0, g.openUserSettings)(u.X.DEV_OVERRIDES, {
+                section: p.nc_.DEVELOPER_OPTIONS
+            })
+        },
+        children: [(0, i.jsx)(a.sLh, {
+            id: "always-deliver",
+            label: "Always Deliver Ads",
+            checked: I,
+            action: () => {
+                d.HZ.updateSetting(!I)
+            }
+        }, "always-deliver"), (0, i.jsx)(a.sLh, {
+            id: "forced-canary",
+            label: "Forced Canary",
+            checked: b,
+            action: () => {
+                (0, s.x)({
+                    canary: !b
+                })
+            }
+        }, "forced-canary"), (0, i.jsx)(a.sLh, {
+            id: "preview-collections",
+            label: "Preview Unpublished Collections",
+            checked: S,
+            action: () => {
+                (0, s.x)({
+                    onlyShowPreviewAppCollections: !S
+                })
+            }
+        }, "preview-collections"), (0, i.jsx)(a.sLh, {
+            id: "disable-collections-cache",
+            label: "Disable Collections Cache",
+            checked: x,
+            action: () => {
+                (0, s.x)({
+                    disableAppCollectionsCache: !x
+                })
+            }
+        }, "disable-collections-cache")]
+    }, "overrides"), (0, i.jsxs)(a.Drp, {
+        id: "logging",
+        label: "Logging",
+        action: () => {
+            (0, g.openUserSettings)(u.X.LOGGING, {
+                section: p.nc_.DEVELOPER_OPTIONS
+            })
+        },
+        children: [(0, i.jsx)(a.sLh, {
+            id: "gateway-events",
+            label: "Gateway Events",
+            checked: t,
+            action: () => {
+                (0, s.x)({
+                    logGatewayEvents: !t
+                })
+            }
+        }, "gateway-events"), (0, i.jsx)(a.sLh, {
+            id: "overlay-events",
+            label: "Overlay RPC Events",
+            checked: E,
+            action: () => {
+                (0, s.x)({
+                    logOverlayEvents: !E
+                })
+            }
+        }, "overlay-events"), (0, i.jsx)(a.sLh, {
+            id: "analytics-events",
+            label: "Analytics Events",
+            checked: A,
+            action: () => {
+                (0, s.x)({
+                    logAnalyticsEvents: !A
+                })
+            }
+        }, "analytics-events"), (0, i.jsx)(a.sLh, {
+            id: "tracing-requests",
+            label: "Tracing Requests",
+            checked: v,
+            action: () => {
+                (0, s.x)({
+                    trace: !v
+                })
+            }
+        }, "tracing-requests"), (0, i.jsx)(a.sLh, {
+            id: "prevent-popout-close",
+            label: "Prevent Popouts From Closing",
+            checked: y,
+            action: () => {
+                (0, s.x)({
+                    preventPopoutClose: !y
+                })
+            }
+        }, "prevent-popout-close")]
+    }, "logging"), (0, i.jsxs)(a.Drp, {
+        id: "design-tools",
+        label: "Design/A11y Tools",
+        action: () => {
+            (0, g.openUserSettings)(u.X.DESIGN_TOOLS, {
+                section: p.nc_.DEVELOPER_OPTIONS
+            })
+        },
+        children: [(0, i.jsx)(a.sLh, {
+            id: "accessibility-auditing",
+            label: "Accessibility Auditing",
+            checked: h,
+            action: () => {
+                (0, s.x)({
+                    axeEnabled: !h
+                })
+            }
+        }, "accessibility-auditing"), (0, i.jsx)(a.sLh, {
+            id: "layout-debugging",
+            label: "Enable Layout Debugging",
+            checked: e,
+            action: () => {
+                (0, s.x)({
+                    layoutDebuggingEnabled: !e
+                })
+            }
+        }, "layout-debugging"), e && (0, i.jsxs)(i.Fragment, {
+            children: [(0, i.jsx)(a.aK1, {
+                id: "horizontal-spacing",
+                label: "Horizontal Spacing",
+                control: (e, n) => (0, i.jsx)(a.i42, {
+                    ...e,
+                    ref: n,
+                    value: C,
+                    minValue: 0,
+                    maxValue: r.YR,
+                    onChange: e => _(e),
+                    renderValue: e => `${Math.round(e)}px`,
+                    "aria-label": "Horizontal Spacing"
+                })
+            }, "horizontal-spacing"), (0, i.jsx)(a.aK1, {
+                id: "vertical-spacing",
+                label: "Vertical Spacing",
+                control: (e, n) => (0, i.jsx)(a.i42, {
+                    ...e,
+                    ref: n,
+                    value: O,
+                    minValue: 0,
+                    maxValue: r.YR,
+                    onChange: e => f(e),
+                    "aria-label": "Vertical Spacing",
+                    renderValue: e => `${Math.round(e)}px`
+                })
+            }, "vertical-spacing")]
+        })]
+    }, "design-tools")] : null
+}

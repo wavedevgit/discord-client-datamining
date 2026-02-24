@@ -1,2 +1,30 @@
 /** chunk id: 620999, original params: e,t,n (module,exports,require) **/
-n.d(t,{r:()=>d,t:()=>o});var i=n(627968),l=n(64700),r=n(503698),a=n.n(r),s=n(610084);function o(){let[e]=l.useState(()=>Math.floor(1600*Math.random())/1e3);return(0,i.jsx)("div",{className:a()(s.Vl,s.Yf),style:{animationDelay:`${e}s`}})}function d(){let[e]=l.useState(()=>Math.floor(60*Math.random())+20);return(0,i.jsx)("div",{className:s.RC,style:{width:`${e}%`}})}
+n.d(t, {
+    r: () => d,
+    t: () => o
+});
+var i = n(627968),
+    l = n(64700),
+    r = n(503698),
+    a = n.n(r),
+    s = n(610084);
+
+function o() {
+    let [e] = l.useState(() => Math.floor(1600 * Math.random()) / 1e3);
+    return (0, i.jsx)("div", {
+        className: a()(s.Vl, s.Yf),
+        style: {
+            animationDelay: `${e}s`
+        }
+    })
+}
+
+function d() {
+    let [e] = l.useState(() => Math.floor(60 * Math.random()) + 20);
+    return (0, i.jsx)("div", {
+        className: s.RC,
+        style: {
+            width: `${e}%`
+        }
+    })
+}

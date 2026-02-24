@@ -1,2 +1,71 @@
 /** chunk id: 521489, original params: e,t,n (module,exports,require) **/
-"use strict";n.d(t,{N:()=>g});var a=n(627968),r=n(64700),i=n(503698),s=n.n(i),l=n(475539),o=n(110259),c=n(158954),u=n(397927),d=n(97469),_=n(538029),m=n(22789);function g(e){let{transitionState:t,animationVariant:n="default",returnRef:i,"aria-label":g,onClose:p,trackingProps:b,children:f}=e,h=r.useId(),x=r.useMemo(()=>({id:h,headingId:`heading-${h}`,onClose:p,dismissable:!0}),[h,p]),y=(0,d.NC)(),{theme:C}=(0,u.wRf)(),A=(0,c.kSI)(t,n);return(0,a.jsx)(c.Vs9.Provider,{value:x,children:(0,a.jsx)(u.lGe,{id:h,role:"dialog","aria-label":g,"aria-labelledby":null!=g?void 0:x.headingId,returnRef:i,...b,impressionType:b?.impressionType??o.ImpressionTypes.MODAL,children:(0,a.jsx)(c.Fmo,{forceLevel:1,children:(0,a.jsx)("div",{className:_.nw,children:(0,a.jsx)(u.NPJ,{theme:y,children:e=>(0,a.jsx)(l.animated.div,{"data-mana-component":"layer-modal",className:s()(m.container,_.yl,e),style:A,children:(0,a.jsx)("div",{className:_.jE,children:(0,a.jsx)(u.NPJ,{theme:C,children:e=>(0,a.jsx)("div",{className:s()(e,_.h_),children:f})})})})})})})})})}
+"use strict";
+n.d(t, {
+    N: () => g
+});
+var a = n(627968),
+    r = n(64700),
+    i = n(503698),
+    s = n.n(i),
+    l = n(475539),
+    o = n(110259),
+    c = n(158954),
+    u = n(397927),
+    d = n(97469),
+    _ = n(538029),
+    m = n(22789);
+
+function g(e) {
+    let {
+        transitionState: t,
+        animationVariant: n = "default",
+        returnRef: i,
+        "aria-label": g,
+        onClose: p,
+        trackingProps: b,
+        children: f
+    } = e, h = r.useId(), x = r.useMemo(() => ({
+        id: h,
+        headingId: `heading-${h}`,
+        onClose: p,
+        dismissable: !0
+    }), [h, p]), y = (0, d.NC)(), {
+        theme: C
+    } = (0, u.wRf)(), A = (0, c.kSI)(t, n);
+    return (0, a.jsx)(c.Vs9.Provider, {
+        value: x,
+        children: (0, a.jsx)(u.lGe, {
+            id: h,
+            role: "dialog",
+            "aria-label": g,
+            "aria-labelledby": null != g ? void 0 : x.headingId,
+            returnRef: i,
+            ...b,
+            impressionType: b?.impressionType ?? o.ImpressionTypes.MODAL,
+            children: (0, a.jsx)(c.Fmo, {
+                forceLevel: 1,
+                children: (0, a.jsx)("div", {
+                    className: _.nw,
+                    children: (0, a.jsx)(u.NPJ, {
+                        theme: y,
+                        children: e => (0, a.jsx)(l.animated.div, {
+                            "data-mana-component": "layer-modal",
+                            className: s()(m.container, _.yl, e),
+                            style: A,
+                            children: (0, a.jsx)("div", {
+                                className: _.jE,
+                                children: (0, a.jsx)(u.NPJ, {
+                                    theme: C,
+                                    children: e => (0, a.jsx)("div", {
+                                        className: s()(e, _.h_),
+                                        children: f
+                                    })
+                                })
+                            })
+                        })
+                    })
+                })
+            })
+        })
+    })
+}

@@ -1,2 +1,5 @@
 /** chunk id: 592738, original params: e,t,r (module,exports,require) **/
-e.exports={u:"spinner__8a394",w:"markdown__8a394"}
+e.exports = {
+    u: "spinner__8a394",
+    w: "markdown__8a394"
+}

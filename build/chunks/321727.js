@@ -1,8 +1,0 @@
-/** chunk id: 321727, original params: e,t,n (module,exports,require) **/
-"use strict";
-var r = n(652320),
-    i = TypeError;
-e.exports = function(e) {
-    if (r(e)) throw new i("Can't call method on " + e);
-    return e
-}

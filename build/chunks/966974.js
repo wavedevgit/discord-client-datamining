@@ -1,2 +1,5 @@
 /** chunk id: 966974, original params: e,t,n (module,exports,require) **/
-n.d(t,{Z:()=>l});var i,l=((i={})[i.UNKNOWN=0]="UNKNOWN",i[i.DEFAULT=1]="DEFAULT",i[i.IMAGE_ONLY_ANSWERS=2]="IMAGE_ONLY_ANSWERS",i)
+n.d(t, {
+    Z: () => l
+});
+var i, l = ((i = {})[i.UNKNOWN = 0] = "UNKNOWN", i[i.DEFAULT = 1] = "DEFAULT", i[i.IMAGE_ONLY_ANSWERS = 2] = "IMAGE_ONLY_ANSWERS", i)

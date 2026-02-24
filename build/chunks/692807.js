@@ -1,2 +1,17 @@
 /** chunk id: 692807, original params: t,e,r (module,exports,require) **/
-"use strict";var n=r(869639);t.exports=function(t){var e=t.getSelection(),r=e.getStartKey();return n.set(t,{selection:e.merge({anchorKey:r,anchorOffset:0,focusKey:r,focusOffset:0,isBackward:!1}),forceSelection:!0})}
+"use strict";
+var n = r(869639);
+t.exports = function(t) {
+    var e = t.getSelection(),
+        r = e.getStartKey();
+    return n.set(t, {
+        selection: e.merge({
+            anchorKey: r,
+            anchorOffset: 0,
+            focusKey: r,
+            focusOffset: 0,
+            isBackward: !1
+        }),
+        forceSelection: !0
+    })
+}

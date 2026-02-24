@@ -1,2 +1,6 @@
 /** chunk id: 12544, original params: e,t,n (module,exports,require) **/
-"use strict";n.d(t,{i:()=>l});var s,l=((s={}).RECOMMENDED="recommended",s.POPULAR="popular",s.RECENT="recent",s.PRICE_LOW_TO_HIGH="price_low_to_high",s.RANDOM="random",s)
+"use strict";
+n.d(t, {
+    i: () => l
+});
+var s, l = ((s = {}).RECOMMENDED = "recommended", s.POPULAR = "popular", s.RECENT = "recent", s.PRICE_LOW_TO_HIGH = "price_low_to_high", s.RANDOM = "random", s)

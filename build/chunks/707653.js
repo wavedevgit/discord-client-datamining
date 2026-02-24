@@ -1,2 +1,22 @@
 /** chunk id: 707653, original params: t,n,e (module,exports,require) **/
-e.d(n,{A:()=>o});var i=e(627968);e(64700);var a=e(397927),l=e(867455),r=e(406704),s=e(652215),d=e(985018);function o(t){if(!(0,r.H_)(t)||t.type!==s.rbe.PRIVATE_THREAD)return null;let n=t.threadMetadata?.invitable??!0;return(0,i.jsx)(a.sLh,{id:"toggle-thread-invitable",label:d.intl.string(d.t.s2rpNf),checked:n,action:()=>l.A.setInvitable(t,!n)})}
+e.d(n, {
+    A: () => o
+});
+var i = e(627968);
+e(64700);
+var a = e(397927),
+    l = e(867455),
+    r = e(406704),
+    s = e(652215),
+    d = e(985018);
+
+function o(t) {
+    if (!(0, r.H_)(t) || t.type !== s.rbe.PRIVATE_THREAD) return null;
+    let n = t.threadMetadata?.invitable ?? !0;
+    return (0, i.jsx)(a.sLh, {
+        id: "toggle-thread-invitable",
+        label: d.intl.string(d.t.s2rpNf),
+        checked: n,
+        action: () => l.A.setInvitable(t, !n)
+    })
+}

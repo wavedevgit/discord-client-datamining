@@ -1,2 +1,14 @@
 /** chunk id: 717695, original params: e,t,n (module,exports,require) **/
-n.d(t,{A:()=>s,Z:()=>i});var a=n(627968);let i=n(64700).createContext(!1);function s(e){return(0,a.jsx)(i.Provider,{value:!0,children:e.children})}
+n.d(t, {
+    A: () => s,
+    Z: () => i
+});
+var a = n(627968);
+let i = n(64700).createContext(!1);
+
+function s(e) {
+    return (0, a.jsx)(i.Provider, {
+        value: !0,
+        children: e.children
+    })
+}

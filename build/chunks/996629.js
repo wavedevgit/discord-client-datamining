@@ -1,2 +1,5 @@
 /** chunk id: 996629, original params: e,t,n (module,exports,require) **/
-e.exports={GC:"captchaContainer_deee3a",P:"manaDesktopModal_deee3a"}
+e.exports = {
+    GC: "captchaContainer_deee3a",
+    P: "manaDesktopModal_deee3a"
+}

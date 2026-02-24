@@ -1,2 +1,204 @@
 /** chunk id: 659533, original params: e,t,n (module,exports,require) **/
-n.d(t,{A:()=>O});var i=n(627968),s=n(64700),a=n(503698),l=n.n(a),r=n(311907),o=n(435371),c=n(421380),d=n(397927),u=n(793574),_=n(688810),m=n(854627),A=n(427157),g=n(954571),h=n(975571),x=n(326084),p=n(851746),E=n(664654),C=n(344904),T=n(221688),S=n(652215),I=n(985018),f=n(509117),N=n(6336);let b=e=>{let{userRecord:t,placement:n}=e,{avatarSrc:s,eventHandlers:a}=(0,m.A)({userId:t?.id,size:d._3J.SIZE_32,animateOnHover:!0}),l=null!=t,r=l?(0,i.jsx)(d.euF,{src:s,"aria-label":t.username,size:d._3J.SIZE_32,...a}):(0,i.jsx)(d.Heading,{variant:"heading-md/semibold",className:f.n5,children:n});return(0,i.jsx)(o.m_,{text:I.intl.string(I.t.UnKHdo),shouldShow:!l,children:(0,i.jsx)("div",{className:f.Lg,children:r})})},j=e=>{let{numSentReferrals:t,placement:n}=e;return(0,i.jsxs)("div",{className:f.Ip,children:[(0,i.jsx)("div",{className:f.Ej}),(0,i.jsx)("div",{className:l()({[f.ch]:t>n,[f.q_]:t===n})})]})},v=e=>{let{userRecords:t}=e,n=t.length,s=n<1?null:t[0],a=n<2?null:t[1],l=n<3?null:t[2];return(0,i.jsxs)("div",{className:f.ZM,children:[(0,i.jsx)(b,{userRecord:s,placement:1}),(0,i.jsx)(j,{numSentReferrals:n,placement:1}),(0,i.jsx)(b,{userRecord:a,placement:2}),(0,i.jsx)(j,{numSentReferrals:n,placement:2}),(0,i.jsx)(b,{userRecord:l,placement:3})]})},O=e=>{let{isInSettings:t=!1}=e,a=(0,r.bG)([p.A],()=>p.A.getRecipientStatus()),{referralSentUsers:o}=(0,E.J)(),m=s.useMemo(()=>o.map(e=>new A.A(e)),[o]),b={redeemed:0,converted:0,sent:a.size};a.forEach(e=>{e===x.aK.REDEEMED&&b.redeemed++,e===x.aK.CONVERTED&&(b.redeemed++,b.converted++)});let j=b.sent===E.Z,O=h.A.getArticleURL(S.MVz.REFERRAL_PROGRAM),{analyticsLocations:R}=(0,_.Ay)(u.A.PREMIUM_MARKETING_REFERALL_PROGRAM_PROGRESS_BAR),y=s.useRef(null),P=b.sent/E.Z*100,L=(0,i.jsxs)("div",{className:f.hE,children:[(0,i.jsx)(C.Ay,{percentage:P,progressCircleVariation:C.BN.NITRO_LOGO,iconClassName:l()({[f.VC]:!t,[f.ER]:t})}),(0,i.jsxs)("div",{className:f.Ns,children:[(0,i.jsx)(d.Heading,{variant:t?"heading-xl/extrabold":"heading-xxl/extrabold",className:f.R0,children:(0,T.X8)({hasSentAll:j})}),(0,i.jsx)(v,{userRecords:m}),(0,i.jsx)(d.Text,{variant:t?"text-sm/normal":"text-lg/medium",children:(0,T.dB)({helpdeskArticle:O,referralsStatuses:b})}),(0,i.jsx)("div",{className:l()(f.Fb,{[f.jv]:!t}),children:(0,i.jsx)(d.wLn,{"data-migration-pending":!0,className:f.r$,color:c.XD.CUSTOM,onClick:()=>(e=>{let{analyticsLocations:t}=e;g.default.track(S.HAw.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED,{location_stack:t}),(0,d.mMO)(async()=>{let{default:e}=await n.e("26489").then(n.bind(n,477088));return n=>(0,i.jsx)(e,{...n,sourceAnalyticsLocations:t})})})({analyticsLocations:R}),onlyShineOnHover:!0,children:(0,i.jsxs)("div",{className:f.Zn,children:[(0,i.jsx)("img",{src:N,alt:"",className:f.QH}),j?I.intl.string(I.t.SY9tyI):I.intl.string(I.t.Lm2nFc)]})})})]})]}),D=b.redeemed===E.Z;return(0,i.jsx)(_.f5,{value:R,children:(0,i.jsx)("div",{className:l()({[f.f5]:D,[f.JY]:!D,[f.VX]:!t,[f.m$]:D&&t}),children:(0,i.jsx)("div",{ref:y,className:l()({[f.dn]:!t,[f.d_]:t,[f.kS]:D}),children:L})})})}
+n.d(t, {
+    A: () => O
+});
+var i = n(627968),
+    s = n(64700),
+    a = n(503698),
+    l = n.n(a),
+    r = n(311907),
+    o = n(435371),
+    c = n(421380),
+    d = n(397927),
+    u = n(793574),
+    _ = n(688810),
+    m = n(854627),
+    A = n(427157),
+    g = n(954571),
+    h = n(975571),
+    x = n(326084),
+    p = n(851746),
+    E = n(664654),
+    C = n(344904),
+    T = n(221688),
+    S = n(652215),
+    I = n(985018),
+    f = n(509117),
+    N = n(6336);
+let b = e => {
+        let {
+            userRecord: t,
+            placement: n
+        } = e, {
+            avatarSrc: s,
+            eventHandlers: a
+        } = (0, m.A)({
+            userId: t?.id,
+            size: d._3J.SIZE_32,
+            animateOnHover: !0
+        }), l = null != t, r = l ? (0, i.jsx)(d.euF, {
+            src: s,
+            "aria-label": t.username,
+            size: d._3J.SIZE_32,
+            ...a
+        }) : (0, i.jsx)(d.Heading, {
+            variant: "heading-md/semibold",
+            className: f.n5,
+            children: n
+        });
+        return (0, i.jsx)(o.m_, {
+            text: I.intl.string(I.t.UnKHdo),
+            shouldShow: !l,
+            children: (0, i.jsx)("div", {
+                className: f.Lg,
+                children: r
+            })
+        })
+    },
+    j = e => {
+        let {
+            numSentReferrals: t,
+            placement: n
+        } = e;
+        return (0, i.jsxs)("div", {
+            className: f.Ip,
+            children: [(0, i.jsx)("div", {
+                className: f.Ej
+            }), (0, i.jsx)("div", {
+                className: l()({
+                    [f.ch]: t > n,
+                    [f.q_]: t === n
+                })
+            })]
+        })
+    },
+    v = e => {
+        let {
+            userRecords: t
+        } = e, n = t.length, s = n < 1 ? null : t[0], a = n < 2 ? null : t[1], l = n < 3 ? null : t[2];
+        return (0, i.jsxs)("div", {
+            className: f.ZM,
+            children: [(0, i.jsx)(b, {
+                userRecord: s,
+                placement: 1
+            }), (0, i.jsx)(j, {
+                numSentReferrals: n,
+                placement: 1
+            }), (0, i.jsx)(b, {
+                userRecord: a,
+                placement: 2
+            }), (0, i.jsx)(j, {
+                numSentReferrals: n,
+                placement: 2
+            }), (0, i.jsx)(b, {
+                userRecord: l,
+                placement: 3
+            })]
+        })
+    },
+    O = e => {
+        let {
+            isInSettings: t = !1
+        } = e, a = (0, r.bG)([p.A], () => p.A.getRecipientStatus()), {
+            referralSentUsers: o
+        } = (0, E.J)(), m = s.useMemo(() => o.map(e => new A.A(e)), [o]), b = {
+            redeemed: 0,
+            converted: 0,
+            sent: a.size
+        };
+        a.forEach(e => {
+            e === x.aK.REDEEMED && b.redeemed++, e === x.aK.CONVERTED && (b.redeemed++, b.converted++)
+        });
+        let j = b.sent === E.Z,
+            O = h.A.getArticleURL(S.MVz.REFERRAL_PROGRAM),
+            {
+                analyticsLocations: R
+            } = (0, _.Ay)(u.A.PREMIUM_MARKETING_REFERALL_PROGRAM_PROGRESS_BAR),
+            y = s.useRef(null),
+            P = b.sent / E.Z * 100,
+            L = (0, i.jsxs)("div", {
+                className: f.hE,
+                children: [(0, i.jsx)(C.Ay, {
+                    percentage: P,
+                    progressCircleVariation: C.BN.NITRO_LOGO,
+                    iconClassName: l()({
+                        [f.VC]: !t,
+                        [f.ER]: t
+                    })
+                }), (0, i.jsxs)("div", {
+                    className: f.Ns,
+                    children: [(0, i.jsx)(d.Heading, {
+                        variant: t ? "heading-xl/extrabold" : "heading-xxl/extrabold",
+                        className: f.R0,
+                        children: (0, T.X8)({
+                            hasSentAll: j
+                        })
+                    }), (0, i.jsx)(v, {
+                        userRecords: m
+                    }), (0, i.jsx)(d.Text, {
+                        variant: t ? "text-sm/normal" : "text-lg/medium",
+                        children: (0, T.dB)({
+                            helpdeskArticle: O,
+                            referralsStatuses: b
+                        })
+                    }), (0, i.jsx)("div", {
+                        className: l()(f.Fb, {
+                            [f.jv]: !t
+                        }),
+                        children: (0, i.jsx)(d.wLn, {
+                            "data-migration-pending": !0,
+                            className: f.r$,
+                            color: c.XD.CUSTOM,
+                            onClick: () => (e => {
+                                let {
+                                    analyticsLocations: t
+                                } = e;
+                                g.default.track(S.HAw.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
+                                    location_stack: t
+                                }), (0, d.mMO)(async () => {
+                                    let {
+                                        default: e
+                                    } = await n.e("26489").then(n.bind(n, 477088));
+                                    return n => (0, i.jsx)(e, {
+                                        ...n,
+                                        sourceAnalyticsLocations: t
+                                    })
+                                })
+                            })({
+                                analyticsLocations: R
+                            }),
+                            onlyShineOnHover: !0,
+                            children: (0, i.jsxs)("div", {
+                                className: f.Zn,
+                                children: [(0, i.jsx)("img", {
+                                    src: N,
+                                    alt: "",
+                                    className: f.QH
+                                }), j ? I.intl.string(I.t.SY9tyI) : I.intl.string(I.t.Lm2nFc)]
+                            })
+                        })
+                    })]
+                })]
+            }),
+            D = b.redeemed === E.Z;
+        return (0, i.jsx)(_.f5, {
+            value: R,
+            children: (0, i.jsx)("div", {
+                className: l()({
+                    [f.f5]: D,
+                    [f.JY]: !D,
+                    [f.VX]: !t,
+                    [f.m$]: D && t
+                }),
+                children: (0, i.jsx)("div", {
+                    ref: y,
+                    className: l()({
+                        [f.dn]: !t,
+                        [f.d_]: t,
+                        [f.kS]: D
+                    }),
+                    children: L
+                })
+            })
+        })
+    }

@@ -1,2 +1,20 @@
 /** chunk id: 569921, original params: e,t,n (module,exports,require) **/
-n.d(t,{A:()=>r});var l=n(253932),i=n(403918);let a=[i.yt.MINUTES_30,i.yt.HOURS_1,i.yt.HOURS_4];function r(){let e=l.G2.getSetting();if(null==e||""===e.expiresAtMs)return i.yt.TODAY;let t=Number(e.expiresAtMs);if(isNaN(t))return i.yt.TODAY;if(0===t)return i.yt.DONT_CLEAR;let n=new Date,r=new Date(t);if(n.getFullYear()!==r.getFullYear()||n.getMonth()!==r.getMonth()||n.getDate()!==r.getDate())return i.yt.TODAY;let s=Number(t)-Date.now();return a.find(e=>s<=e)??i.yt.TODAY}
+n.d(t, {
+    A: () => r
+});
+var l = n(253932),
+    i = n(403918);
+let a = [i.yt.MINUTES_30, i.yt.HOURS_1, i.yt.HOURS_4];
+
+function r() {
+    let e = l.G2.getSetting();
+    if (null == e || "" === e.expiresAtMs) return i.yt.TODAY;
+    let t = Number(e.expiresAtMs);
+    if (isNaN(t)) return i.yt.TODAY;
+    if (0 === t) return i.yt.DONT_CLEAR;
+    let n = new Date,
+        r = new Date(t);
+    if (n.getFullYear() !== r.getFullYear() || n.getMonth() !== r.getMonth() || n.getDate() !== r.getDate()) return i.yt.TODAY;
+    let s = Number(t) - Date.now();
+    return a.find(e => s <= e) ?? i.yt.TODAY
+}

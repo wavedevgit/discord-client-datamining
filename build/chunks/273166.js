@@ -1,2 +1,33 @@
 /** chunk id: 273166, original params: e,t,n (module,exports,require) **/
-n.d(t,{q:()=>o});var i=n(627968),s=n(64700),a=n(503698),l=n.n(a),r=n(252052);function o(e){let{className:t,header:n,headerClassName:a,children:o}=e,c=s.useMemo(()=>{let e=!1;return s.Children.forEach(o,t=>{null!=t&&(e=!0)}),e},[o]);return(0,i.jsxs)("div",{className:l()(r.iE,t),children:[(0,i.jsx)("div",{className:l()(r.wx,a),children:n}),c&&(0,i.jsx)("div",{className:r.Qs,children:o})]})}
+n.d(t, {
+    q: () => o
+});
+var i = n(627968),
+    s = n(64700),
+    a = n(503698),
+    l = n.n(a),
+    r = n(252052);
+
+function o(e) {
+    let {
+        className: t,
+        header: n,
+        headerClassName: a,
+        children: o
+    } = e, c = s.useMemo(() => {
+        let e = !1;
+        return s.Children.forEach(o, t => {
+            null != t && (e = !0)
+        }), e
+    }, [o]);
+    return (0, i.jsxs)("div", {
+        className: l()(r.iE, t),
+        children: [(0, i.jsx)("div", {
+            className: l()(r.wx, a),
+            children: n
+        }), c && (0, i.jsx)("div", {
+            className: r.Qs,
+            children: o
+        })]
+    })
+}

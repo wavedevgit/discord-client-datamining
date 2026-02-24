@@ -1,2 +1,35 @@
 /** chunk id: 386952, original params: e,t,l (module,exports,require) **/
-l.d(t,{e:()=>a});var i=l(627968),n=l(64700),r=l(503698),s=l.n(r),u=l(968338);function a(){let[e,t]=n.useState(!1);return{isTruncated:e,ExpandableTextContainer:n.memo(function(e){let{showAll:l=!1,className:n,children:r,lineClamp:a=2}=e;return(0,i.jsx)("div",{ref:e=>{null!=e&&t(e.scrollHeight-e.clientHeight>1)},className:s()(u.I,n),style:l?void 0:{lineClamp:a,WebkitLineClamp:a},children:r})})}}
+l.d(t, {
+    e: () => a
+});
+var i = l(627968),
+    n = l(64700),
+    r = l(503698),
+    s = l.n(r),
+    u = l(968338);
+
+function a() {
+    let [e, t] = n.useState(!1);
+    return {
+        isTruncated: e,
+        ExpandableTextContainer: n.memo(function(e) {
+            let {
+                showAll: l = !1,
+                className: n,
+                children: r,
+                lineClamp: a = 2
+            } = e;
+            return (0, i.jsx)("div", {
+                ref: e => {
+                    null != e && t(e.scrollHeight - e.clientHeight > 1)
+                },
+                className: s()(u.I, n),
+                style: l ? void 0 : {
+                    lineClamp: a,
+                    WebkitLineClamp: a
+                },
+                children: r
+            })
+        })
+    }
+}

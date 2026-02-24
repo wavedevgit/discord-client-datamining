@@ -1,2 +1,4 @@
 /** chunk id: 93587, original params: e,t,n (module,exports,require) **/
-e.exports={Z:"taskPresetSelect_a8dbb2"}
+e.exports = {
+    Z: "taskPresetSelect_a8dbb2"
+}

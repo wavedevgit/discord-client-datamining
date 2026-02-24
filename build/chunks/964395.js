@@ -1,2 +1,125 @@
 /** chunk id: 964395, original params: e,l,t (module,exports,require) **/
-t.d(l,{A:()=>R});var n=t(627968),s=t(64700),i=t(503698),a=t.n(i),r=t(158954),d=t(311907),o=t(736653),c=t(793574),u=t(688810),_=t(742589),g=t(657331),p=t(287809),I=t(954571),x=t(975571),A=t(371794),f=t(439303),h=t(44724),m=t(995393),E=t(652215),j=t(518477),S=t(985018),k=t(848464);function b(e){let{content:l,onClick:t,ariaLabel:s,className:i}=e;return(0,n.jsx)(r.DUT,{className:a()(k.gb,i),onClick:t,"aria-label":s,children:l})}function R(e){let{guildId:l,storefront:t,selectedPageIndex:i}=e,R=(0,r.Mwr)((0,o.Ay)()),N=(0,d.bG)([p.default],()=>p.default.getCurrentUser()),v=(0,f.jM)(),{analyticsLocations:C}=(0,u.Ay)(),L=s.useCallback(()=>{N?.id!=null&&(0,g.openUserProfileModal)({userId:N.id,tabSection:j.RP.WISHLIST,showGuildProfile:!1,sourceAnalyticsLocations:[c.A.SOCIAL_LAYER_STOREFRONT]})},[N]),M=s.useCallback(()=>{I.default.track(E.HAw.SLAYER_STOREFRONT_PAGE_ELEMENT_CLICKED,{slayer_storefront_session_id:v?.sessionId,cta_type:m.ST.LEARN_MORE,location_stack:C}),window.open(x.A.getArticleURL(E.MVz.SOCIAL_LAYER_STOREFRONT))},[v,C]);if(null==t)return null;let T=null!=t.logoAssetId?(0,A.YE)(t.applicationId,t.logoAssetId,75):null,y=null!=t.lightThemeLogoAssetId?(0,A.YE)(t.applicationId,t.lightThemeLogoAssetId,75):null,O=null;return O=R?T??y:y??T,(0,n.jsxs)(_.A,{disableDoubleClick:!0,className:k.N1,children:[(0,n.jsxs)(r.DUT,{onClick:()=>{(0,h.default)({guildId:l,pageIndex:0})},className:k.gn,children:[null!=O&&(0,n.jsx)("img",{className:k.wm,src:O,alt:t.title}),(0,n.jsx)(_.A.Title,{children:t.title})]}),(0,n.jsx)("div",{className:k.YC,children:t.pages.map((e,t)=>(0,n.jsx)(_.A.Title,{onClick:()=>{(0,h.default)({guildId:l,pageIndex:t})},wrapperClassName:k.oB,className:a()(k.xT,{[k.ys]:i===t}),children:(0,n.jsx)(r.EYj,{variant:"text-sm/medium",children:e.title})},`${e.title}-${t}`))}),(0,n.jsxs)("div",{className:k.sZ,children:[(0,n.jsx)(b,{content:(0,n.jsx)(r.C3E,{size:"xs",color:"currentColor"}),onClick:L,ariaLabel:S.intl.string(S.t["7lZ31J"]),className:k.ij}),(0,n.jsx)(b,{onClick:M,ariaLabel:S.intl.string(S.t.hvVgAZ),content:(0,n.jsx)(r.EYj,{variant:"text-sm/medium",children:S.intl.string(S.t.hvVgAZ)}),className:k.AJ})]})]})}
+t.d(l, {
+    A: () => R
+});
+var n = t(627968),
+    s = t(64700),
+    i = t(503698),
+    a = t.n(i),
+    r = t(158954),
+    d = t(311907),
+    o = t(736653),
+    c = t(793574),
+    u = t(688810),
+    _ = t(742589),
+    g = t(657331),
+    p = t(287809),
+    I = t(954571),
+    x = t(975571),
+    A = t(371794),
+    f = t(439303),
+    h = t(44724),
+    m = t(995393),
+    E = t(652215),
+    j = t(518477),
+    S = t(985018),
+    k = t(848464);
+
+function b(e) {
+    let {
+        content: l,
+        onClick: t,
+        ariaLabel: s,
+        className: i
+    } = e;
+    return (0, n.jsx)(r.DUT, {
+        className: a()(k.gb, i),
+        onClick: t,
+        "aria-label": s,
+        children: l
+    })
+}
+
+function R(e) {
+    let {
+        guildId: l,
+        storefront: t,
+        selectedPageIndex: i
+    } = e, R = (0, r.Mwr)((0, o.Ay)()), N = (0, d.bG)([p.default], () => p.default.getCurrentUser()), v = (0, f.jM)(), {
+        analyticsLocations: C
+    } = (0, u.Ay)(), L = s.useCallback(() => {
+        N?.id != null && (0, g.openUserProfileModal)({
+            userId: N.id,
+            tabSection: j.RP.WISHLIST,
+            showGuildProfile: !1,
+            sourceAnalyticsLocations: [c.A.SOCIAL_LAYER_STOREFRONT]
+        })
+    }, [N]), M = s.useCallback(() => {
+        I.default.track(E.HAw.SLAYER_STOREFRONT_PAGE_ELEMENT_CLICKED, {
+            slayer_storefront_session_id: v?.sessionId,
+            cta_type: m.ST.LEARN_MORE,
+            location_stack: C
+        }), window.open(x.A.getArticleURL(E.MVz.SOCIAL_LAYER_STOREFRONT))
+    }, [v, C]);
+    if (null == t) return null;
+    let T = null != t.logoAssetId ? (0, A.YE)(t.applicationId, t.logoAssetId, 75) : null,
+        y = null != t.lightThemeLogoAssetId ? (0, A.YE)(t.applicationId, t.lightThemeLogoAssetId, 75) : null,
+        O = null;
+    return O = R ? T ?? y : y ?? T, (0, n.jsxs)(_.A, {
+        disableDoubleClick: !0,
+        className: k.N1,
+        children: [(0, n.jsxs)(r.DUT, {
+            onClick: () => {
+                (0, h.default)({
+                    guildId: l,
+                    pageIndex: 0
+                })
+            },
+            className: k.gn,
+            children: [null != O && (0, n.jsx)("img", {
+                className: k.wm,
+                src: O,
+                alt: t.title
+            }), (0, n.jsx)(_.A.Title, {
+                children: t.title
+            })]
+        }), (0, n.jsx)("div", {
+            className: k.YC,
+            children: t.pages.map((e, t) => (0, n.jsx)(_.A.Title, {
+                onClick: () => {
+                    (0, h.default)({
+                        guildId: l,
+                        pageIndex: t
+                    })
+                },
+                wrapperClassName: k.oB,
+                className: a()(k.xT, {
+                    [k.ys]: i === t
+                }),
+                children: (0, n.jsx)(r.EYj, {
+                    variant: "text-sm/medium",
+                    children: e.title
+                })
+            }, `${e.title}-${t}`))
+        }), (0, n.jsxs)("div", {
+            className: k.sZ,
+            children: [(0, n.jsx)(b, {
+                content: (0, n.jsx)(r.C3E, {
+                    size: "xs",
+                    color: "currentColor"
+                }),
+                onClick: L,
+                ariaLabel: S.intl.string(S.t["7lZ31J"]),
+                className: k.ij
+            }), (0, n.jsx)(b, {
+                onClick: M,
+                ariaLabel: S.intl.string(S.t.hvVgAZ),
+                content: (0, n.jsx)(r.EYj, {
+                    variant: "text-sm/medium",
+                    children: S.intl.string(S.t.hvVgAZ)
+                }),
+                className: k.AJ
+            })]
+        })]
+    })
+}

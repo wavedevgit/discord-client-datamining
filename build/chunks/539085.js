@@ -1,2 +1,115 @@
 /** chunk id: 539085, original params: e,a,s (module,exports,require) **/
-s.d(a,{A:()=>g});var t=s(627968),i=s(64700),r=s(503698),n=s.n(r),d=s(397927),o=s(470934),l=s(998418),c=s(813847),x=s(890942),u=s(490557),m=s(439156),p=s(220628),v=s(867060),h=s(985018),j=s(235545);function g(e){let{canUseBoosts:a,guildId:s,powerup:r,isNewPerk:g,forceStaticImages:_}=e,[I,C]=i.useState(!1),f=(0,l.Ay)(s,r),N=(0,c.e)(r,f,!1),k=(0,l.dy)(f),{disabled:A}=(0,o.A)(s,r,k),{onActivate:b,error:S}=(0,p.A)(s,r);(0,v.A)(S);let w=!a||A,T=k&&!w,y=(0,t.jsxs)(t.Fragment,{children:[(0,t.jsxs)("div",{className:j.R9,children:[(0,t.jsx)("div",{className:n()(j._W,{[j.vu]:k}),children:(0,t.jsx)(u.l,{powerup:r,isHovering:!w&&I,forceStaticImage:_})}),g&&(0,t.jsx)(d.LpS,{className:j.qS,text:h.intl.string(h.t.y2b7CA)})]}),(0,t.jsxs)("div",{className:j.xQ,children:[(0,t.jsxs)("div",{className:j.U7,children:[(0,t.jsx)("div",{children:(0,t.jsx)(d.Text,{variant:"text-sm/medium",color:(k||I)&&!w?"text-strong":"text-subtle",children:r.description})}),(0,t.jsxs)("div",{children:[N?.type==="expiring"&&(0,t.jsx)(x.P5,{dateString:N.expiringAt}),N?.type==="removing"&&(0,t.jsx)(x.Yq,{removingAt:N.removingAt}),N?.type==="active"&&(0,t.jsx)(x.TG,{text:N.statusText}),null==N&&(0,t.jsxs)("div",{className:j.II,children:[(0,t.jsx)(d._Jp,{size:"sm",color:d.LU0.unsafe_rawColors.GUILD_BOOSTING_PINK}),(0,t.jsx)(d.Text,{variant:"text-sm/medium",color:"text-subtle",children:h.intl.formatToPlainString(h.t.t2Wbo1,{required:r.cost,decorator:""})})]})]})]}),T&&(0,t.jsx)(m.A,{compact:!0,iconSize:"md",guildId:s,powerup:r,className:j.Rm})]})]});return k?(0,t.jsx)("div",{className:n()(j.nK,j.RO,{[j.r9]:w}),onMouseEnter:()=>C(!0),onMouseLeave:()=>C(!1),children:y}):(0,t.jsx)(d.DUT,{className:n()(j.nK,{[j.r9]:w}),onMouseEnter:()=>C(!0),onMouseLeave:()=>C(!1),"aria-disabled":w,onClick:e=>{e.stopPropagation(),w||b?.({shouldCloseAllModals:!1})},children:y})}
+s.d(a, {
+    A: () => g
+});
+var t = s(627968),
+    i = s(64700),
+    r = s(503698),
+    n = s.n(r),
+    d = s(397927),
+    o = s(470934),
+    l = s(998418),
+    c = s(813847),
+    x = s(890942),
+    u = s(490557),
+    m = s(439156),
+    p = s(220628),
+    v = s(867060),
+    h = s(985018),
+    j = s(235545);
+
+function g(e) {
+    let {
+        canUseBoosts: a,
+        guildId: s,
+        powerup: r,
+        isNewPerk: g,
+        forceStaticImages: _
+    } = e, [I, C] = i.useState(!1), f = (0, l.Ay)(s, r), N = (0, c.e)(r, f, !1), k = (0, l.dy)(f), {
+        disabled: A
+    } = (0, o.A)(s, r, k), {
+        onActivate: b,
+        error: S
+    } = (0, p.A)(s, r);
+    (0, v.A)(S);
+    let w = !a || A,
+        T = k && !w,
+        y = (0, t.jsxs)(t.Fragment, {
+            children: [(0, t.jsxs)("div", {
+                className: j.R9,
+                children: [(0, t.jsx)("div", {
+                    className: n()(j._W, {
+                        [j.vu]: k
+                    }),
+                    children: (0, t.jsx)(u.l, {
+                        powerup: r,
+                        isHovering: !w && I,
+                        forceStaticImage: _
+                    })
+                }), g && (0, t.jsx)(d.LpS, {
+                    className: j.qS,
+                    text: h.intl.string(h.t.y2b7CA)
+                })]
+            }), (0, t.jsxs)("div", {
+                className: j.xQ,
+                children: [(0, t.jsxs)("div", {
+                    className: j.U7,
+                    children: [(0, t.jsx)("div", {
+                        children: (0, t.jsx)(d.Text, {
+                            variant: "text-sm/medium",
+                            color: (k || I) && !w ? "text-strong" : "text-subtle",
+                            children: r.description
+                        })
+                    }), (0, t.jsxs)("div", {
+                        children: [N?.type === "expiring" && (0, t.jsx)(x.P5, {
+                            dateString: N.expiringAt
+                        }), N?.type === "removing" && (0, t.jsx)(x.Yq, {
+                            removingAt: N.removingAt
+                        }), N?.type === "active" && (0, t.jsx)(x.TG, {
+                            text: N.statusText
+                        }), null == N && (0, t.jsxs)("div", {
+                            className: j.II,
+                            children: [(0, t.jsx)(d._Jp, {
+                                size: "sm",
+                                color: d.LU0.unsafe_rawColors.GUILD_BOOSTING_PINK
+                            }), (0, t.jsx)(d.Text, {
+                                variant: "text-sm/medium",
+                                color: "text-subtle",
+                                children: h.intl.formatToPlainString(h.t.t2Wbo1, {
+                                    required: r.cost,
+                                    decorator: ""
+                                })
+                            })]
+                        })]
+                    })]
+                }), T && (0, t.jsx)(m.A, {
+                    compact: !0,
+                    iconSize: "md",
+                    guildId: s,
+                    powerup: r,
+                    className: j.Rm
+                })]
+            })]
+        });
+    return k ? (0, t.jsx)("div", {
+        className: n()(j.nK, j.RO, {
+            [j.r9]: w
+        }),
+        onMouseEnter: () => C(!0),
+        onMouseLeave: () => C(!1),
+        children: y
+    }) : (0, t.jsx)(d.DUT, {
+        className: n()(j.nK, {
+            [j.r9]: w
+        }),
+        onMouseEnter: () => C(!0),
+        onMouseLeave: () => C(!1),
+        "aria-disabled": w,
+        onClick: e => {
+            e.stopPropagation(), w || b?.({
+                shouldCloseAllModals: !1
+            })
+        },
+        children: y
+    })
+}

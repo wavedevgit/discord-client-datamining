@@ -1,2 +1,7 @@
 /** chunk id: 192311, original params: t,e,s (module,exports,require) **/
-s.d(e,{W:()=>l});var a=s(311907),n=s(320501);let l=t=>(0,a.bG)([n.A],()=>n.A.getLastNonCurrentUserMessage(t)??n.A.getLastMessage(t))
+s.d(e, {
+    W: () => l
+});
+var a = s(311907),
+    n = s(320501);
+let l = t => (0, a.bG)([n.A], () => n.A.getLastNonCurrentUserMessage(t) ?? n.A.getLastMessage(t))

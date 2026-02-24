@@ -1,2 +1,123 @@
 /** chunk id: 848752, original params: e,t,n (module,exports,require) **/
-"use strict";n.d(t,{Ay:()=>h,Oj:()=>m,Q8:()=>_});var a=n(627968),l=n(64700),r=n(503698),s=n.n(r),i=n(397927),o=n(532197),d=n(331026);let c={CENTER:d.Hu,LEFT:d.Vl};class u extends l.PureComponent{static Align=c;static defaultProps={scrollToPadding:{top:0,left:0,bottom:0,right:0},align:c.CENTER};_scrollerRef=null;_paginationItemRefs=[];componentDidUpdate(e){let{selectedIndex:t}=this.props;e.selectedIndex!==t&&this.handleSelectedIndexChange(t)}handleSetScrollerRef=e=>{this._scrollerRef=e};handleSelectedIndexChange=e=>{let t=this._scrollerRef;if(null==t)return;let n=this._paginationItemRefs[e];null!=n&&t.scrollIntoViewNode({node:n,animate:!0,padding:this.props.scrollToPadding})};handlePageClick=e=>{let{onSetItem:t}=this.props;t(e)};render(){let{renderItem:e,items:t,vertical:n,paginationContainerClass:r,align:o}=this.props,c=n?d.XA:d.BU;return(0,a.jsx)(i.GtU,{orientation:n?"vertical":"horizontal",className:s()(c,r,o),ref:this.handleSetScrollerRef,children:t.map((t,n)=>l.cloneElement(e(t,n),{onClick:()=>this.handlePageClick(n),key:n,ref:e=>{this._paginationItemRefs[n]=e}}))})}}class _ extends l.PureComponent{handlePrevClick=e=>{e.stopPropagation(),e.preventDefault();let{onClick:t}=this.props;t?.(e)};render(){let{className:e}=this.props;return(0,a.jsx)(i.DUT,{className:s()(d.t1,e),onClick:this.handlePrevClick,children:(0,a.jsx)(o.A,{className:d.UE,direction:o.A.Directions.LEFT})})}}class m extends l.PureComponent{handleNextClick=e=>{e.stopPropagation(),e.preventDefault();let{onClick:t}=this.props;t?.(e)};render(){let{className:e}=this.props;return(0,a.jsx)(i.DUT,{className:s()(d.XS,e),onClick:this.handleNextClick,children:(0,a.jsx)(o.A,{className:d.UE,direction:o.A.Directions.RIGHT})})}}let h=u
+"use strict";
+n.d(t, {
+    Ay: () => h,
+    Oj: () => m,
+    Q8: () => _
+});
+var a = n(627968),
+    l = n(64700),
+    r = n(503698),
+    s = n.n(r),
+    i = n(397927),
+    o = n(532197),
+    d = n(331026);
+let c = {
+    CENTER: d.Hu,
+    LEFT: d.Vl
+};
+class u extends l.PureComponent {
+    static Align = c;
+    static defaultProps = {
+        scrollToPadding: {
+            top: 0,
+            left: 0,
+            bottom: 0,
+            right: 0
+        },
+        align: c.CENTER
+    };
+    _scrollerRef = null;
+    _paginationItemRefs = [];
+    componentDidUpdate(e) {
+        let {
+            selectedIndex: t
+        } = this.props;
+        e.selectedIndex !== t && this.handleSelectedIndexChange(t)
+    }
+    handleSetScrollerRef = e => {
+        this._scrollerRef = e
+    };
+    handleSelectedIndexChange = e => {
+        let t = this._scrollerRef;
+        if (null == t) return;
+        let n = this._paginationItemRefs[e];
+        null != n && t.scrollIntoViewNode({
+            node: n,
+            animate: !0,
+            padding: this.props.scrollToPadding
+        })
+    };
+    handlePageClick = e => {
+        let {
+            onSetItem: t
+        } = this.props;
+        t(e)
+    };
+    render() {
+        let {
+            renderItem: e,
+            items: t,
+            vertical: n,
+            paginationContainerClass: r,
+            align: o
+        } = this.props, c = n ? d.XA : d.BU;
+        return (0, a.jsx)(i.GtU, {
+            orientation: n ? "vertical" : "horizontal",
+            className: s()(c, r, o),
+            ref: this.handleSetScrollerRef,
+            children: t.map((t, n) => l.cloneElement(e(t, n), {
+                onClick: () => this.handlePageClick(n),
+                key: n,
+                ref: e => {
+                    this._paginationItemRefs[n] = e
+                }
+            }))
+        })
+    }
+}
+class _ extends l.PureComponent {
+    handlePrevClick = e => {
+        e.stopPropagation(), e.preventDefault();
+        let {
+            onClick: t
+        } = this.props;
+        t?.(e)
+    };
+    render() {
+        let {
+            className: e
+        } = this.props;
+        return (0, a.jsx)(i.DUT, {
+            className: s()(d.t1, e),
+            onClick: this.handlePrevClick,
+            children: (0, a.jsx)(o.A, {
+                className: d.UE,
+                direction: o.A.Directions.LEFT
+            })
+        })
+    }
+}
+class m extends l.PureComponent {
+    handleNextClick = e => {
+        e.stopPropagation(), e.preventDefault();
+        let {
+            onClick: t
+        } = this.props;
+        t?.(e)
+    };
+    render() {
+        let {
+            className: e
+        } = this.props;
+        return (0, a.jsx)(i.DUT, {
+            className: s()(d.XS, e),
+            onClick: this.handleNextClick,
+            children: (0, a.jsx)(o.A, {
+                className: d.UE,
+                direction: o.A.Directions.RIGHT
+            })
+        })
+    }
+}
+let h = u

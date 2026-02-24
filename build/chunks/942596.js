@@ -1,2 +1,66 @@
 /** chunk id: 942596, original params: e,t,n (module,exports,require) **/
-"use strict";n.d(t,{Z:()=>u});var a=n(627968),r=n(397927),i=n(933297),s=n(985018);function l(e){let{useCount:t}=e,n=t();return 0===n?null:(0,a.jsx)(r.hVq,{count:n})}function o(e){let{getDismissibleContentTypes:t,stronglyDiscouragedBadgeComponent:n,visibleContent:i,isSelected:l}=e,o=t?.(),c=null!=i&&o.includes(i)&&!l,u=null!=n?(0,a.jsx)(n,{}):(0,a.jsx)(r.LpS,{text:s.intl.string(s.t.y2b7CA)});return c?u:null}function c(e){let{useCustomDecoration:t,visibleContent:n,isSelected:a}=e;return t(n,a)}function u(e){let{trailing:t,visibleContent:n,isSelected:r}=e;if(null==t)return null;switch(t.type){case i.Si.BADGE_COUNT:return(0,a.jsx)(l,{...t});case i.Si.BADGE_NEW:return(0,a.jsx)(o,{...t,visibleContent:n,isSelected:r});case i.Si.STRONGLY_DISCOURAGED_CUSTOM:return(0,a.jsx)(c,{...t,visibleContent:n,isSelected:r})}}
+"use strict";
+n.d(t, {
+    Z: () => u
+});
+var a = n(627968),
+    r = n(397927),
+    i = n(933297),
+    s = n(985018);
+
+function l(e) {
+    let {
+        useCount: t
+    } = e, n = t();
+    return 0 === n ? null : (0, a.jsx)(r.hVq, {
+        count: n
+    })
+}
+
+function o(e) {
+    let {
+        getDismissibleContentTypes: t,
+        stronglyDiscouragedBadgeComponent: n,
+        visibleContent: i,
+        isSelected: l
+    } = e, o = t?.(), c = null != i && o.includes(i) && !l, u = null != n ? (0, a.jsx)(n, {}) : (0, a.jsx)(r.LpS, {
+        text: s.intl.string(s.t.y2b7CA)
+    });
+    return c ? u : null
+}
+
+function c(e) {
+    let {
+        useCustomDecoration: t,
+        visibleContent: n,
+        isSelected: a
+    } = e;
+    return t(n, a)
+}
+
+function u(e) {
+    let {
+        trailing: t,
+        visibleContent: n,
+        isSelected: r
+    } = e;
+    if (null == t) return null;
+    switch (t.type) {
+        case i.Si.BADGE_COUNT:
+            return (0, a.jsx)(l, {
+                ...t
+            });
+        case i.Si.BADGE_NEW:
+            return (0, a.jsx)(o, {
+                ...t,
+                visibleContent: n,
+                isSelected: r
+            });
+        case i.Si.STRONGLY_DISCOURAGED_CUSTOM:
+            return (0, a.jsx)(c, {
+                ...t,
+                visibleContent: n,
+                isSelected: r
+            })
+    }
+}

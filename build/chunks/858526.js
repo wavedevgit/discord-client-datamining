@@ -1,2 +1,22 @@
 /** chunk id: 858526, original params: e,t,n (module,exports,require) **/
-n.d(t,{A:()=>r});var i=n(627968);n(64700);var s=n(397927),a=n(179690),l=n(985018);function r(){return(0,i.jsx)(s.D0$,{label:l.intl.string(l.t.EPVq00),description:l.intl.string(l.t["8aDa1t"]),children:(0,i.jsx)(s.Button,{variant:"primary",size:"sm",text:l.intl.string(l.t.cDgKte),onClick:a.Ay.enableMFA})})}
+n.d(t, {
+    A: () => r
+});
+var i = n(627968);
+n(64700);
+var s = n(397927),
+    a = n(179690),
+    l = n(985018);
+
+function r() {
+    return (0, i.jsx)(s.D0$, {
+        label: l.intl.string(l.t.EPVq00),
+        description: l.intl.string(l.t["8aDa1t"]),
+        children: (0, i.jsx)(s.Button, {
+            variant: "primary",
+            size: "sm",
+            text: l.intl.string(l.t.cDgKte),
+            onClick: a.Ay.enableMFA
+        })
+    })
+}

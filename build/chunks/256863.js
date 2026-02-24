@@ -1,2 +1,4 @@
 /** chunk id: 256863, original params: e,t,a (module,exports,require) **/
-e.exports={uu:"actionButtons_cc1819"}
+e.exports = {
+    uu: "actionButtons_cc1819"
+}

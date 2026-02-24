@@ -1,2 +1,59 @@
 /** chunk id: 452357, original params: t,e,n (module,exports,require) **/
-n.d(e,{A:()=>k,S:()=>g});var i=n(627968),l=n(64700),a=n(284009),r=n.n(a),s=n(158954),u=n(311907),d=n(139033),o=n(397927),c=n(830215),m=n(287809),f=n(985018);function g(t){return c.A.verifyResend().then(()=>{(0,d.A)({title:f.intl.string(f.t.LykQYk),subtitle:f.intl.format(f.t.azKEPy,{email:t.email})})}).catch(t=>{let{body:e}=t,n=f.intl.string(f.t.XcrQN5);null!=e&&e.email&&(n=e.email),(0,o.qfG)(t=>(0,i.jsx)(s.Modal,{actions:[{variant:"primary",text:f.intl.string(f.t.BddRzS),onClick:t.onClose}],title:f.intl.string(f.t.VbTh0E),subtitle:n,...t}))})}function k(t){let{size:e,variant:n}=t,a=(0,u.bG)([m.default],()=>m.default.getCurrentUser());r()(null!=a,"ResendEmailVerificationButton: currentUser cannot be undefined");let[s,d]=l.useState(!1),c=l.useCallback(()=>{d(!0),g(a).then(()=>d(!1))},[a]);return(0,i.jsx)(o.Button,{size:e,variant:n,onClick:c,text:f.intl.string(f.t.lm1UKt),disabled:s})}
+n.d(e, {
+    A: () => k,
+    S: () => g
+});
+var i = n(627968),
+    l = n(64700),
+    a = n(284009),
+    r = n.n(a),
+    s = n(158954),
+    u = n(311907),
+    d = n(139033),
+    o = n(397927),
+    c = n(830215),
+    m = n(287809),
+    f = n(985018);
+
+function g(t) {
+    return c.A.verifyResend().then(() => {
+        (0, d.A)({
+            title: f.intl.string(f.t.LykQYk),
+            subtitle: f.intl.format(f.t.azKEPy, {
+                email: t.email
+            })
+        })
+    }).catch(t => {
+        let {
+            body: e
+        } = t, n = f.intl.string(f.t.XcrQN5);
+        null != e && e.email && (n = e.email), (0, o.qfG)(t => (0, i.jsx)(s.Modal, {
+            actions: [{
+                variant: "primary",
+                text: f.intl.string(f.t.BddRzS),
+                onClick: t.onClose
+            }],
+            title: f.intl.string(f.t.VbTh0E),
+            subtitle: n,
+            ...t
+        }))
+    })
+}
+
+function k(t) {
+    let {
+        size: e,
+        variant: n
+    } = t, a = (0, u.bG)([m.default], () => m.default.getCurrentUser());
+    r()(null != a, "ResendEmailVerificationButton: currentUser cannot be undefined");
+    let [s, d] = l.useState(!1), c = l.useCallback(() => {
+        d(!0), g(a).then(() => d(!1))
+    }, [a]);
+    return (0, i.jsx)(o.Button, {
+        size: e,
+        variant: n,
+        onClick: c,
+        text: f.intl.string(f.t.lm1UKt),
+        disabled: s
+    })
+}

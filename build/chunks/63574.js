@@ -1,2 +1,23 @@
 /** chunk id: 63574, original params: e,t,n (module,exports,require) **/
-n.d(t,{A:()=>c});var a=n(627968),r=n(158954),i=n(298072),s=n(623373),l=n(561769);let c=e=>{let{skuId:t,overrideVariantIndex:n,className:c}=e,o=(0,l.Vm)(t),d=(0,i.Q)(o);return null!=o&&(0,s.B1)(o)?(0,a.jsx)(r.EYj,{variant:"text-xs/medium",color:"text-subtle",className:c,lineClamp:1,children:o.variants[n??d].variantLabel}):null}
+n.d(t, {
+    A: () => c
+});
+var a = n(627968),
+    r = n(158954),
+    i = n(298072),
+    s = n(623373),
+    l = n(561769);
+let c = e => {
+    let {
+        skuId: t,
+        overrideVariantIndex: n,
+        className: c
+    } = e, o = (0, l.Vm)(t), d = (0, i.Q)(o);
+    return null != o && (0, s.B1)(o) ? (0, a.jsx)(r.EYj, {
+        variant: "text-xs/medium",
+        color: "text-subtle",
+        className: c,
+        lineClamp: 1,
+        children: o.variants[n ?? d].variantLabel
+    }) : null
+}

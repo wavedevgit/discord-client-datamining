@@ -1,2 +1,58 @@
 /** chunk id: 901125, original params: e,t,n (module,exports,require) **/
-n.d(t,{A:()=>h});var i=n(627968);n(64700);var s=n(503698),a=n.n(s),l=n(397927),r=n(780964),o=n(840065),c=n(975571),d=n(927578),u=n(526292),_=n(788868),m=n(652215),A=n(985018),g=n(158793);let h=e=>{let t,n,{premiumSubscription:s,className:h,textColor:x}=e,p=(0,u.ar)();if(null==s)return null;let E=null!=s?d.Ay.getPremiumPlanItem(s):null;if(d.Ay.isBoostOnlySubscription(s)?t=A.intl.string(A.t.Uj0md3):null!=E&&(t=d.Ay.getTierDisplayNameByPlanId(E.planId)),null==t)return null;let C=()=>(0,o.openUserSettings)(r.X.SUBSCRIPTIONS_PANEL,{section:m.nc_.SUBSCRIPTIONS}),T=(null!=E?d.Ay.getSkuIdForPlan(E.planId):null)===_.pe.TIER_1;return n=null!=x?x:p?"always-white":"text-default",(0,i.jsxs)(l.ZpM,{className:a()(g.kL,h,{[g.He]:p}),type:l.ZpM.Types.CUSTOM,children:[(0,i.jsx)(l.EpV,{size:"custom",width:20,height:20,color:"currentColor",className:a()(g.Kk,{[g.Pt]:p})}),(0,i.jsx)(l.Text,{variant:"text-sm/medium",color:n,children:T?A.intl.format(A.t["tYuv+T"],{helpdeskArticle:c.A.getArticleURL(m.MVz.PREMIUM_DETAILS),onSubscriptionsClick:C}):A.intl.format(A.t.xHRgU2,{subscriptionName:t,onSubscriptionsClick:C})})]})}
+n.d(t, {
+    A: () => h
+});
+var i = n(627968);
+n(64700);
+var s = n(503698),
+    a = n.n(s),
+    l = n(397927),
+    r = n(780964),
+    o = n(840065),
+    c = n(975571),
+    d = n(927578),
+    u = n(526292),
+    _ = n(788868),
+    m = n(652215),
+    A = n(985018),
+    g = n(158793);
+let h = e => {
+    let t, n, {
+            premiumSubscription: s,
+            className: h,
+            textColor: x
+        } = e,
+        p = (0, u.ar)();
+    if (null == s) return null;
+    let E = null != s ? d.Ay.getPremiumPlanItem(s) : null;
+    if (d.Ay.isBoostOnlySubscription(s) ? t = A.intl.string(A.t.Uj0md3) : null != E && (t = d.Ay.getTierDisplayNameByPlanId(E.planId)), null == t) return null;
+    let C = () => (0, o.openUserSettings)(r.X.SUBSCRIPTIONS_PANEL, {
+            section: m.nc_.SUBSCRIPTIONS
+        }),
+        T = (null != E ? d.Ay.getSkuIdForPlan(E.planId) : null) === _.pe.TIER_1;
+    return n = null != x ? x : p ? "always-white" : "text-default", (0, i.jsxs)(l.ZpM, {
+        className: a()(g.kL, h, {
+            [g.He]: p
+        }),
+        type: l.ZpM.Types.CUSTOM,
+        children: [(0, i.jsx)(l.EpV, {
+            size: "custom",
+            width: 20,
+            height: 20,
+            color: "currentColor",
+            className: a()(g.Kk, {
+                [g.Pt]: p
+            })
+        }), (0, i.jsx)(l.Text, {
+            variant: "text-sm/medium",
+            color: n,
+            children: T ? A.intl.format(A.t["tYuv+T"], {
+                helpdeskArticle: c.A.getArticleURL(m.MVz.PREMIUM_DETAILS),
+                onSubscriptionsClick: C
+            }) : A.intl.format(A.t.xHRgU2, {
+                subscriptionName: t,
+                onSubscriptionsClick: C
+            })
+        })]
+    })
+}

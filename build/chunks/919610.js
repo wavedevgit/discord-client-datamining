@@ -1,2 +1,17 @@
 /** chunk id: 919610, original params: e,t,n (module,exports,require) **/
-"use strict";n.d(t,{Z:()=>l});var s=n(64700);let l=e=>{let[t,n]=s.useState(1);return{currentPage:t,handlePageChange:s.useCallback(t=>{n(t),e.current?.scrollTo({to:0})},[e,n])}}
+"use strict";
+n.d(t, {
+    Z: () => l
+});
+var s = n(64700);
+let l = e => {
+    let [t, n] = s.useState(1);
+    return {
+        currentPage: t,
+        handlePageChange: s.useCallback(t => {
+            n(t), e.current?.scrollTo({
+                to: 0
+            })
+        }, [e, n])
+    }
+}

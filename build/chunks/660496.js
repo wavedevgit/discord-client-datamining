@@ -1,2 +1,6 @@
 /** chunk id: 660496, original params: e,t,n (module,exports,require) **/
-"use strict";n.d(t,{C:()=>s});var i,s=((i={})[i.OVERVIEW=0]="OVERVIEW",i[i.CAPTCHA_AND_RAID_PROTECTION=1]="CAPTCHA_AND_RAID_PROTECTION",i[i.DM_AND_SPAM_PROTECTION=2]="DM_AND_SPAM_PROTECTION",i[i.AUTOMOD=3]="AUTOMOD",i[i.PERMISSIONS=4]="PERMISSIONS",i)
+"use strict";
+n.d(t, {
+    C: () => s
+});
+var i, s = ((i = {})[i.OVERVIEW = 0] = "OVERVIEW", i[i.CAPTCHA_AND_RAID_PROTECTION = 1] = "CAPTCHA_AND_RAID_PROTECTION", i[i.DM_AND_SPAM_PROTECTION = 2] = "DM_AND_SPAM_PROTECTION", i[i.AUTOMOD = 3] = "AUTOMOD", i[i.PERMISSIONS = 4] = "PERMISSIONS", i)

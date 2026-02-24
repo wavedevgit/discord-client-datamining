@@ -1,2 +1,139 @@
 /** chunk id: 708202, original params: e,n,t (module,exports,require) **/
-t.d(n,{default:()=>B});var l=t(627968);t(64700);var i=t(311907),r=t(397927),a=t(442433),d=t(847767),s=t(358367),o=t(155718),u=t(468389),c=t(793574),A=t(688810),g=t(50268),m=t(346247),f=t(222311),p=t(164891),x=t(734057),b=t(309010),E=t(803664),h=t(29293),_=t(509302),C=t(497600),T=t(773699),N=t(239211),G=t(707378),I=t(399476),v=t(889460),O=t(448290),j=t(301541),y=t(252726),M=t(460597),U=t(313998),S=t(146359),R=t(243949),P=t(180798),D=t(77544),V=t(652215),k=t(985018);let B=(0,s.A)((0,d.A)(function(e){let{user:n,guildId:t,channel:d,context:s,onSelect:B,onHeightUpdate:L}=e,H=d.id,w=(0,R.A)({userId:n.id,guildId:t,channelId:H}),W=(0,O.A)(n,t,s),K=(0,j.A)(n.id,s),F=(0,D.A)(n.id),X=(0,G.A)({user:n,context:s}),q=(0,i.bG)([b.A,x.A],()=>{let e=b.A.getVoiceChannelId();return x.A.getChannel(e)}),{enabled:J}=p.A.useExperiment({guildId:q?.guild_id,location:"ThreadUserContextMenu"}),Y=J?q?.id:null,Z=(0,U.A)(n,Y),Q=(0,C.A)({user:n,guildId:t,channelId:H,context:s}),$=(0,h.A)({user:n}),{analyticsLocations:z}=(0,A.Ay)(c.A.THREAD_USER_MENU),ee=(0,m.A)({guildId:t,userId:n.id,analyticsLocation:{page:V.liQ.GUILD_CHANNEL,section:V.JJy.CHAT_USERNAME,object:V.ZSU.CONTEXT_MENU_ITEM},analyticsLocations:z,context:s}),en=(0,v.A)({user:n,guildId:t}),et=(0,u.A)(null,n),el=(0,E.A)({user:n}),ei=(0,_.A)({user:n}),er=(0,M.A)({user:n}),ea=(0,N.A)({user:n,guildId:t,channelId:H,location:"ThreadUserContextMenu"}),ed=(0,I.A)({user:n,guildId:t,channelId:H,location:"ThreadUserContextMenu"}),es=(0,S.A)(n,t,H),eo=(0,P.A)(n.id,t),eu=(0,y.A)(n,t),ec=(0,g.A)({id:n.id,label:k.intl.string(k.t["/AXYnE"])}),eA=(0,f.A)(n),eg=(0,T.A)({commandType:o.kc.USER,commandTargetId:n.id,channel:d,guildId:t,onHeightUpdate:L}),em=n.isNonUserBot();return(0,l.jsxs)(r.W1t,{"data-menu-migrated":!0,navId:"user-context",onClose:a.Z_,"aria-label":k.intl.string(k.t.liqwPJ),onSelect:B,children:[!em&&(0,l.jsxs)(l.Fragment,{children:[(0,l.jsx)(r.rXV,{children:eA}),(0,l.jsxs)(r.rXV,{children:[w,W,K,X,Z,Q,$,F]}),(0,l.jsx)(r.rXV,{children:et}),(0,l.jsxs)(r.rXV,{children:[ee,eg,en,el,ei,er,ed,ea]}),(0,l.jsx)(r.rXV,{children:es}),(0,l.jsxs)(r.rXV,{children:[eo,eu]})]}),(0,l.jsx)(r.rXV,{children:ec})]})},{object:V.ZSU.CONTEXT_MENU}),[c.A.CONTEXT_MENU,c.A.THREAD_USER_MENU])
+t.d(n, {
+    default: () => B
+});
+var l = t(627968);
+t(64700);
+var i = t(311907),
+    r = t(397927),
+    a = t(442433),
+    d = t(847767),
+    s = t(358367),
+    o = t(155718),
+    u = t(468389),
+    c = t(793574),
+    A = t(688810),
+    g = t(50268),
+    m = t(346247),
+    f = t(222311),
+    p = t(164891),
+    x = t(734057),
+    b = t(309010),
+    E = t(803664),
+    h = t(29293),
+    _ = t(509302),
+    C = t(497600),
+    T = t(773699),
+    N = t(239211),
+    G = t(707378),
+    I = t(399476),
+    v = t(889460),
+    O = t(448290),
+    j = t(301541),
+    y = t(252726),
+    M = t(460597),
+    U = t(313998),
+    S = t(146359),
+    R = t(243949),
+    P = t(180798),
+    D = t(77544),
+    V = t(652215),
+    k = t(985018);
+let B = (0, s.A)((0, d.A)(function(e) {
+    let {
+        user: n,
+        guildId: t,
+        channel: d,
+        context: s,
+        onSelect: B,
+        onHeightUpdate: L
+    } = e, H = d.id, w = (0, R.A)({
+        userId: n.id,
+        guildId: t,
+        channelId: H
+    }), W = (0, O.A)(n, t, s), K = (0, j.A)(n.id, s), F = (0, D.A)(n.id), X = (0, G.A)({
+        user: n,
+        context: s
+    }), q = (0, i.bG)([b.A, x.A], () => {
+        let e = b.A.getVoiceChannelId();
+        return x.A.getChannel(e)
+    }), {
+        enabled: J
+    } = p.A.useExperiment({
+        guildId: q?.guild_id,
+        location: "ThreadUserContextMenu"
+    }), Y = J ? q?.id : null, Z = (0, U.A)(n, Y), Q = (0, C.A)({
+        user: n,
+        guildId: t,
+        channelId: H,
+        context: s
+    }), $ = (0, h.A)({
+        user: n
+    }), {
+        analyticsLocations: z
+    } = (0, A.Ay)(c.A.THREAD_USER_MENU), ee = (0, m.A)({
+        guildId: t,
+        userId: n.id,
+        analyticsLocation: {
+            page: V.liQ.GUILD_CHANNEL,
+            section: V.JJy.CHAT_USERNAME,
+            object: V.ZSU.CONTEXT_MENU_ITEM
+        },
+        analyticsLocations: z,
+        context: s
+    }), en = (0, v.A)({
+        user: n,
+        guildId: t
+    }), et = (0, u.A)(null, n), el = (0, E.A)({
+        user: n
+    }), ei = (0, _.A)({
+        user: n
+    }), er = (0, M.A)({
+        user: n
+    }), ea = (0, N.A)({
+        user: n,
+        guildId: t,
+        channelId: H,
+        location: "ThreadUserContextMenu"
+    }), ed = (0, I.A)({
+        user: n,
+        guildId: t,
+        channelId: H,
+        location: "ThreadUserContextMenu"
+    }), es = (0, S.A)(n, t, H), eo = (0, P.A)(n.id, t), eu = (0, y.A)(n, t), ec = (0, g.A)({
+        id: n.id,
+        label: k.intl.string(k.t["/AXYnE"])
+    }), eA = (0, f.A)(n), eg = (0, T.A)({
+        commandType: o.kc.USER,
+        commandTargetId: n.id,
+        channel: d,
+        guildId: t,
+        onHeightUpdate: L
+    }), em = n.isNonUserBot();
+    return (0, l.jsxs)(r.W1t, {
+        "data-menu-migrated": !0,
+        navId: "user-context",
+        onClose: a.Z_,
+        "aria-label": k.intl.string(k.t.liqwPJ),
+        onSelect: B,
+        children: [!em && (0, l.jsxs)(l.Fragment, {
+            children: [(0, l.jsx)(r.rXV, {
+                children: eA
+            }), (0, l.jsxs)(r.rXV, {
+                children: [w, W, K, X, Z, Q, $, F]
+            }), (0, l.jsx)(r.rXV, {
+                children: et
+            }), (0, l.jsxs)(r.rXV, {
+                children: [ee, eg, en, el, ei, er, ed, ea]
+            }), (0, l.jsx)(r.rXV, {
+                children: es
+            }), (0, l.jsxs)(r.rXV, {
+                children: [eo, eu]
+            })]
+        }), (0, l.jsx)(r.rXV, {
+            children: ec
+        })]
+    })
+}, {
+    object: V.ZSU.CONTEXT_MENU
+}), [c.A.CONTEXT_MENU, c.A.THREAD_USER_MENU])

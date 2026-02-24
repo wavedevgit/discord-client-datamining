@@ -1,2 +1,56 @@
 /** chunk id: 442671, original params: e,t,n (module,exports,require) **/
-n.d(t,{A:()=>m});var i=n(627968),s=n(64700),a=n(503698),l=n.n(a),r=n(615300),o=n(837381),c=n(158954),d=n(688810),u=n(657331),_=n(331011);let m=e=>{let{userId:t,children:n,isLast:a,className:m}=e,[A,g]=s.useState(!1),{analyticsLocations:h}=(0,d.Ay)(),x=s.useCallback(()=>{(0,u.openUserProfileModal)({userId:t,sourceAnalyticsLocations:h})},[t,h]),p=()=>{g(!0)},E=()=>{g(!1)};return(0,i.jsx)(o.tG,{id:t,children:e=>(0,i.jsx)(c.vN3,{offset:{left:-8,right:-8},children:(0,i.jsx)(r.A.div,{style:{opacity:1},className:l()(_.KG,m,{[_.HV]:a,[_.vu]:A}),onMouseEnter:p,onMouseLeave:E,onClick:x,...e,children:n(A)})})})}
+n.d(t, {
+    A: () => m
+});
+var i = n(627968),
+    s = n(64700),
+    a = n(503698),
+    l = n.n(a),
+    r = n(615300),
+    o = n(837381),
+    c = n(158954),
+    d = n(688810),
+    u = n(657331),
+    _ = n(331011);
+let m = e => {
+    let {
+        userId: t,
+        children: n,
+        isLast: a,
+        className: m
+    } = e, [A, g] = s.useState(!1), {
+        analyticsLocations: h
+    } = (0, d.Ay)(), x = s.useCallback(() => {
+        (0, u.openUserProfileModal)({
+            userId: t,
+            sourceAnalyticsLocations: h
+        })
+    }, [t, h]), p = () => {
+        g(!0)
+    }, E = () => {
+        g(!1)
+    };
+    return (0, i.jsx)(o.tG, {
+        id: t,
+        children: e => (0, i.jsx)(c.vN3, {
+            offset: {
+                left: -8,
+                right: -8
+            },
+            children: (0, i.jsx)(r.A.div, {
+                style: {
+                    opacity: 1
+                },
+                className: l()(_.KG, m, {
+                    [_.HV]: a,
+                    [_.vu]: A
+                }),
+                onMouseEnter: p,
+                onMouseLeave: E,
+                onClick: x,
+                ...e,
+                children: n(A)
+            })
+        })
+    })
+}

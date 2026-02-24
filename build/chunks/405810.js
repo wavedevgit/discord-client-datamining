@@ -1,2 +1,43 @@
 /** chunk id: 405810, original params: e,n,t (module,exports,require) **/
-t.d(n,{A:()=>s});var a=t(627968),i=t(64700),r=t(397927),o=t(946274),l=t(872752);function s(e){let{onChange:n,onFileSizeError:t,multiple:s=!1,disabled:c=!1,maxFileSizeBytes:_,filters:d,...u}=e,h=i.useRef(null);return(0,a.jsxs)("div",{children:[(0,a.jsx)("div",{className:l.l,children:(0,a.jsx)(o.Ay,{ref:h,onChange:n,onFileSizeError:t,multiple:s,maxFileSizeBytes:_,filters:d,disabled:c,tabIndex:-1,"aria-hidden":!0})}),(0,a.jsx)(r.Button,{...u,disabled:c,onClick:()=>{h.current?.activateUploadDialogue()}})]})}
+t.d(n, {
+    A: () => s
+});
+var a = t(627968),
+    i = t(64700),
+    r = t(397927),
+    o = t(946274),
+    l = t(872752);
+
+function s(e) {
+    let {
+        onChange: n,
+        onFileSizeError: t,
+        multiple: s = !1,
+        disabled: c = !1,
+        maxFileSizeBytes: _,
+        filters: d,
+        ...u
+    } = e, h = i.useRef(null);
+    return (0, a.jsxs)("div", {
+        children: [(0, a.jsx)("div", {
+            className: l.l,
+            children: (0, a.jsx)(o.Ay, {
+                ref: h,
+                onChange: n,
+                onFileSizeError: t,
+                multiple: s,
+                maxFileSizeBytes: _,
+                filters: d,
+                disabled: c,
+                tabIndex: -1,
+                "aria-hidden": !0
+            })
+        }), (0, a.jsx)(r.Button, {
+            ...u,
+            disabled: c,
+            onClick: () => {
+                h.current?.activateUploadDialogue()
+            }
+        })]
+    })
+}

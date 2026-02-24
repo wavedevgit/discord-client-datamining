@@ -1,2 +1,17 @@
 /** chunk id: 851830, original params: e,t,n (module,exports,require) **/
-"use strict";e.exports={om:"block__8dcfb",vk:"clickable__8dcfb",wx:"header__8dcfb",ZR:"controlPopout__8dcfb",R:"hidden__8dcfb",D$:"songBlock__8dcfb",wH:"selected__8dcfb",BW:"visualizer__8dcfb",he:"playing__8dcfb",Om:"dot__8dcfb",z9:"bounce__8dcfb",Ft:"paused__8dcfb",SU:"muted__8dcfb"}
+"use strict";
+e.exports = {
+    om: "block__8dcfb",
+    vk: "clickable__8dcfb",
+    wx: "header__8dcfb",
+    ZR: "controlPopout__8dcfb",
+    R: "hidden__8dcfb",
+    D$: "songBlock__8dcfb",
+    wH: "selected__8dcfb",
+    BW: "visualizer__8dcfb",
+    he: "playing__8dcfb",
+    Om: "dot__8dcfb",
+    z9: "bounce__8dcfb",
+    Ft: "paused__8dcfb",
+    SU: "muted__8dcfb"
+}

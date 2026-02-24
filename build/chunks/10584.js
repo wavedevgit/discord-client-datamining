@@ -1,2 +1,13 @@
 /** chunk id: 10584, original params: e,t,n (module,exports,require) **/
-n.d(t,{z:()=>r});var i=n(73153);function r(e,t){i.h.dispatch({type:"CERTIFIED_DEVICES_SET",applicationId:e,devices:t})}
+n.d(t, {
+    z: () => r
+});
+var i = n(73153);
+
+function r(e, t) {
+    i.h.dispatch({
+        type: "CERTIFIED_DEVICES_SET",
+        applicationId: e,
+        devices: t
+    })
+}

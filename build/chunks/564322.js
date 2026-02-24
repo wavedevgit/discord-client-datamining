@@ -1,2 +1,49 @@
 /** chunk id: 564322, original params: e,t,n (module,exports,require) **/
-"use strict";n.d(t,{X:()=>d});var s=n(64700),l=n(59520),r=n(440938),a=n(790297),i=n(954571),o=n(652215);let c=(e,t,n,s)=>{let{scrollTop:l=0,scrollOffset:r=0,scrollHeight:a=0,scrollWidth:o=0}=s;if(a>0){let s=(l+r)/a;s>0&&i.default.track(e,{scroll_visible_percent:s,source:n,page_height:Math.round(a),page_width:Math.round(o),page_session_id:t})}},d=(e,t)=>{let{analyticsSource:n}=(0,a.lC)(t),i=(0,l.I)(c,5e3,[],{trailing:!0}),d=(0,r.uM)(),u=d?.sessionId;return{handleScroll:s.useCallback(()=>{if(null!=e.current){let t=e.current.getScrollerNode();null!=t&&i(o.HAw.COLLECTIBLES_SHOP_SCROLLED,null!=u?u:"",n,{scrollTop:t.scrollTop,scrollOffset:t.offsetHeight,scrollHeight:t.scrollHeight,scrollWidth:t.scrollWidth})}},[i,n,u,e])}}
+"use strict";
+n.d(t, {
+    X: () => d
+});
+var s = n(64700),
+    l = n(59520),
+    r = n(440938),
+    a = n(790297),
+    i = n(954571),
+    o = n(652215);
+let c = (e, t, n, s) => {
+        let {
+            scrollTop: l = 0,
+            scrollOffset: r = 0,
+            scrollHeight: a = 0,
+            scrollWidth: o = 0
+        } = s;
+        if (a > 0) {
+            let s = (l + r) / a;
+            s > 0 && i.default.track(e, {
+                scroll_visible_percent: s,
+                source: n,
+                page_height: Math.round(a),
+                page_width: Math.round(o),
+                page_session_id: t
+            })
+        }
+    },
+    d = (e, t) => {
+        let {
+            analyticsSource: n
+        } = (0, a.lC)(t), i = (0, l.I)(c, 5e3, [], {
+            trailing: !0
+        }), d = (0, r.uM)(), u = d?.sessionId;
+        return {
+            handleScroll: s.useCallback(() => {
+                if (null != e.current) {
+                    let t = e.current.getScrollerNode();
+                    null != t && i(o.HAw.COLLECTIBLES_SHOP_SCROLLED, null != u ? u : "", n, {
+                        scrollTop: t.scrollTop,
+                        scrollOffset: t.offsetHeight,
+                        scrollHeight: t.scrollHeight,
+                        scrollWidth: t.scrollWidth
+                    })
+                }
+            }, [i, n, u, e])
+        }
+    }

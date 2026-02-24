@@ -1,2 +1,58 @@
 /** chunk id: 258836, original params: e,t,n (module,exports,require) **/
-n.d(t,{A:()=>x});var a=n(627968),i=n(64700),s=n(311907),l=n(990078),r=n(397927),o=n(775602),d=n(832248),c=n(323970),u=n(985018),m=n(876402);let h=i.lazy(()=>n.e("24832").then(n.bind(n,748579)));function x(){let e=(0,s.bG)([o.A],()=>o.A.useReducedMotion),t=(0,d.A)(e=>e.shouldRenderTenureLevelUp),n=(0,c.A)();return e||!t||null==n?null:(0,a.jsx)(p,{levelUpData:n})}function p(e){let{levelUpData:t}=e,n=i.useRef(null),s=i.useCallback(()=>{d.A.setState({shouldRenderTenureLevelUp:!1})},[]);return i.useEffect(()=>s,[s]),(0,a.jsx)(r.Oky,{containerRef:n,children:(0,a.jsxs)("div",{className:m.i,children:[(0,a.jsx)("div",{className:m.b,children:(0,a.jsx)(l.m,{text:u.intl.string(u.t.cpT0Cq),children:(0,a.jsx)(r.K0,{icon:r.PGe,variant:"secondary",size:"sm",onClick:s,"aria-label":u.intl.string(u.t.cpT0Cq)})})}),(0,a.jsx)(i.Suspense,{fallback:null,children:(0,a.jsx)(h,{levelUpData:t})})]})})}
+n.d(t, {
+    A: () => x
+});
+var a = n(627968),
+    i = n(64700),
+    s = n(311907),
+    l = n(990078),
+    r = n(397927),
+    o = n(775602),
+    d = n(832248),
+    c = n(323970),
+    u = n(985018),
+    m = n(876402);
+let h = i.lazy(() => n.e("24832").then(n.bind(n, 748579)));
+
+function x() {
+    let e = (0, s.bG)([o.A], () => o.A.useReducedMotion),
+        t = (0, d.A)(e => e.shouldRenderTenureLevelUp),
+        n = (0, c.A)();
+    return e || !t || null == n ? null : (0, a.jsx)(p, {
+        levelUpData: n
+    })
+}
+
+function p(e) {
+    let {
+        levelUpData: t
+    } = e, n = i.useRef(null), s = i.useCallback(() => {
+        d.A.setState({
+            shouldRenderTenureLevelUp: !1
+        })
+    }, []);
+    return i.useEffect(() => s, [s]), (0, a.jsx)(r.Oky, {
+        containerRef: n,
+        children: (0, a.jsxs)("div", {
+            className: m.i,
+            children: [(0, a.jsx)("div", {
+                className: m.b,
+                children: (0, a.jsx)(l.m, {
+                    text: u.intl.string(u.t.cpT0Cq),
+                    children: (0, a.jsx)(r.K0, {
+                        icon: r.PGe,
+                        variant: "secondary",
+                        size: "sm",
+                        onClick: s,
+                        "aria-label": u.intl.string(u.t.cpT0Cq)
+                    })
+                })
+            }), (0, a.jsx)(i.Suspense, {
+                fallback: null,
+                children: (0, a.jsx)(h, {
+                    levelUpData: t
+                })
+            })]
+        })
+    })
+}

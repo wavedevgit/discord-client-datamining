@@ -1,2 +1,24 @@
 /** chunk id: 652961, original params: e,t,n (module,exports,require) **/
-n.d(t,{A:()=>r,F:()=>o});var i=n(311907),s=n(397438),a=n(815968),l=n(985018);function r(e){switch(e){case a._A.REDUCED_MOTION:return l.intl.format(l.t["1dT9V4"],{});case a._A.REDUCED_MOTION_STICKERS:return l.intl.string(l.t["2ExvRu"]);default:return}}function o(e){return(0,i.bG)([s.A],()=>r(s.A.getAppliedOverrideReasonKey(e)))}
+n.d(t, {
+    A: () => r,
+    F: () => o
+});
+var i = n(311907),
+    s = n(397438),
+    a = n(815968),
+    l = n(985018);
+
+function r(e) {
+    switch (e) {
+        case a._A.REDUCED_MOTION:
+            return l.intl.format(l.t["1dT9V4"], {});
+        case a._A.REDUCED_MOTION_STICKERS:
+            return l.intl.string(l.t["2ExvRu"]);
+        default:
+            return
+    }
+}
+
+function o(e) {
+    return (0, i.bG)([s.A], () => r(s.A.getAppliedOverrideReasonKey(e)))
+}

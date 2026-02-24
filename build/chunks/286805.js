@@ -1,2 +1,20 @@
 /** chunk id: 286805, original params: e,t,n (module,exports,require) **/
-n.d(t,{A:()=>s});var i=n(311907),l=n(73153);let r={matureAgree:!1};class a extends i.Ay.Store{static displayName="ApplicationStoreSettingsStore";get didMatureAgree(){return r.matureAgree}}let s=new a(l.h,{APPLICATION_STORE_MATURE_AGREE:function(){r.matureAgree=!0}})
+n.d(t, {
+    A: () => s
+});
+var i = n(311907),
+    l = n(73153);
+let r = {
+    matureAgree: !1
+};
+class a extends i.Ay.Store {
+    static displayName = "ApplicationStoreSettingsStore";
+    get didMatureAgree() {
+        return r.matureAgree
+    }
+}
+let s = new a(l.h, {
+    APPLICATION_STORE_MATURE_AGREE: function() {
+        r.matureAgree = !0
+    }
+})

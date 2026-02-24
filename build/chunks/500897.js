@@ -1,2 +1,24 @@
 /** chunk id: 500897, original params: e,t,n (module,exports,require) **/
-n.d(t,{A:()=>c});var a=n(64700),i=n(857250),s=n(397927),r=n(957565),l=n(927813),d=n(397400),o=n(985018);function c(e,t,n,c){let u=a.useRef(null),[_,m]=a.useState(!1);return{handleCopyServerIp:a.useCallback(()=>(null!=u.current&&clearTimeout(u.current),(0,d.ed)(e,t,n),(0,r.C)(c??""),(0,s.showToast)((0,i.o)(o.intl.string(o.t["+5kSoW"]),s.ToastType.SUCCESS)),m(!0),u.current=setTimeout(()=>{m(!1)},2*l.A.Millis.SECOND),()=>{null!=u.current&&clearTimeout(u.current)}),[e,t,n,c]),animateCopyIcon:_}}
+n.d(t, {
+    A: () => c
+});
+var a = n(64700),
+    i = n(857250),
+    s = n(397927),
+    r = n(957565),
+    l = n(927813),
+    d = n(397400),
+    o = n(985018);
+
+function c(e, t, n, c) {
+    let u = a.useRef(null),
+        [_, m] = a.useState(!1);
+    return {
+        handleCopyServerIp: a.useCallback(() => (null != u.current && clearTimeout(u.current), (0, d.ed)(e, t, n), (0, r.C)(c ?? ""), (0, s.showToast)((0, i.o)(o.intl.string(o.t["+5kSoW"]), s.ToastType.SUCCESS)), m(!0), u.current = setTimeout(() => {
+            m(!1)
+        }, 2 * l.A.Millis.SECOND), () => {
+            null != u.current && clearTimeout(u.current)
+        }), [e, t, n, c]),
+        animateCopyIcon: _
+    }
+}

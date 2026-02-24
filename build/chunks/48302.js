@@ -1,2 +1,4 @@
 /** chunk id: 48302, original params: e,t,n (module,exports,require) **/
-e.exports={D:"containerScrollGradient__956c6"}
+e.exports = {
+    D: "containerScrollGradient__956c6"
+}

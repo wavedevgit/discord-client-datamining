@@ -1,2 +1,65 @@
 /** chunk id: 604238, original params: e,t,r (module,exports,require) **/
-r.d(t,{E:()=>y,e:()=>v});var l=r(64700),d=r(735438),c=r(528226),a=r(653793),n=r(118713),o=r(261225),u=r(970488),s=r(720462),i=r(673277),h=r(700263),m=r(304973),p=r(18769),k=r(458306),b=r(282203),A=r(22519),S=r(607795),f=r(954644),C=r(634791);let y={ContainedHero:c.A,BasicHero:e=>{let{bannerSrc:t}=e;return null},PromotionalHero:()=>null,InteractiveHScroll:s.A,Carousel:n.A,Grid:o.A,GridItem:u.A,Section:i.A,Card:a.A,Skeleton:h.A,FeaturedChip:m.A,FeaturedCollection:p.A,FeaturedProduct:()=>null,ShopProductCard:f.A,SkuList:b.A,SubLayout:A.A,SubTemplate:S.A,Button:k.ar,Heading:k.Oo,Stack:k.Kp,Text:k.t,Any1:C.A,Any2:C.A,Any3:C.A},v=function(){let{overrides:e}=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};return l.useMemo(()=>{let t=(0,d.cloneDeep)(y);if(null!=e)for(let[r,l]of Object.entries(e))null!=l&&(t[r]=l);return t},[e])}
+r.d(t, {
+    E: () => y,
+    e: () => v
+});
+var l = r(64700),
+    d = r(735438),
+    c = r(528226),
+    a = r(653793),
+    n = r(118713),
+    o = r(261225),
+    u = r(970488),
+    s = r(720462),
+    i = r(673277),
+    h = r(700263),
+    m = r(304973),
+    p = r(18769),
+    k = r(458306),
+    b = r(282203),
+    A = r(22519),
+    S = r(607795),
+    f = r(954644),
+    C = r(634791);
+let y = {
+        ContainedHero: c.A,
+        BasicHero: e => {
+            let {
+                bannerSrc: t
+            } = e;
+            return null
+        },
+        PromotionalHero: () => null,
+        InteractiveHScroll: s.A,
+        Carousel: n.A,
+        Grid: o.A,
+        GridItem: u.A,
+        Section: i.A,
+        Card: a.A,
+        Skeleton: h.A,
+        FeaturedChip: m.A,
+        FeaturedCollection: p.A,
+        FeaturedProduct: () => null,
+        ShopProductCard: f.A,
+        SkuList: b.A,
+        SubLayout: A.A,
+        SubTemplate: S.A,
+        Button: k.ar,
+        Heading: k.Oo,
+        Stack: k.Kp,
+        Text: k.t,
+        Any1: C.A,
+        Any2: C.A,
+        Any3: C.A
+    },
+    v = function() {
+        let {
+            overrides: e
+        } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
+        return l.useMemo(() => {
+            let t = (0, d.cloneDeep)(y);
+            if (null != e)
+                for (let [r, l] of Object.entries(e)) null != l && (t[r] = l);
+            return t
+        }, [e])
+    }

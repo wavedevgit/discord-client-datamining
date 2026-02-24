@@ -1,2 +1,62 @@
 /** chunk id: 936044, original params: e,t,n (module,exports,require) **/
-n.d(t,{A:()=>u});var i=n(627968);n(64700);var l=n(503698),a=n.n(l),r=n(763754),s=n(491182),o=n(291812),c=n(643204),d=n(759522);function u(e){let{message:t,channel:n,content:l,className:u,compact:m,popoutProps:_,hideTimestamp:A=!1,withFooter:h=!1,...f}=e,E=(0,r.Ay)(t);return(0,i.jsx)("div",{className:a()({[d.Ym]:h},d.gD,{[d.oE]:m},u),children:(0,i.jsx)(s.A,{...f,className:a()(d.zC,{[d.oE]:m}),childrenMessageContent:(0,i.jsx)(o.Ay,{className:a()(d.__invalid_messageContent,{[d.oE]:m}),message:t,content:l,compact:m??!1}),childrenHeader:(0,i.jsx)(c.Ay,{message:t,channel:n,author:E,guildId:n?.guild_id,compact:m,hideTimestamp:A,className:a()(d.wx,{[d.oE]:m}),..._??{}}),compact:m,author:E})})}
+n.d(t, {
+    A: () => u
+});
+var i = n(627968);
+n(64700);
+var l = n(503698),
+    a = n.n(l),
+    r = n(763754),
+    s = n(491182),
+    o = n(291812),
+    c = n(643204),
+    d = n(759522);
+
+function u(e) {
+    let {
+        message: t,
+        channel: n,
+        content: l,
+        className: u,
+        compact: m,
+        popoutProps: _,
+        hideTimestamp: A = !1,
+        withFooter: h = !1,
+        ...f
+    } = e, E = (0, r.Ay)(t);
+    return (0, i.jsx)("div", {
+        className: a()({
+            [d.Ym]: h
+        }, d.gD, {
+            [d.oE]: m
+        }, u),
+        children: (0, i.jsx)(s.A, {
+            ...f,
+            className: a()(d.zC, {
+                [d.oE]: m
+            }),
+            childrenMessageContent: (0, i.jsx)(o.Ay, {
+                className: a()(d.__invalid_messageContent, {
+                    [d.oE]: m
+                }),
+                message: t,
+                content: l,
+                compact: m ?? !1
+            }),
+            childrenHeader: (0, i.jsx)(c.Ay, {
+                message: t,
+                channel: n,
+                author: E,
+                guildId: n?.guild_id,
+                compact: m,
+                hideTimestamp: A,
+                className: a()(d.wx, {
+                    [d.oE]: m
+                }),
+                ..._ ?? {}
+            }),
+            compact: m,
+            author: E
+        })
+    })
+}

@@ -1,2 +1,9 @@
 /** chunk id: 272111, original params: e,t,n (module,exports,require) **/
-n.d(t,{V1:()=>a,r3:()=>s,us:()=>i});let a="#00000000",i="#CDD8FF1A",s="#51BC9D"
+n.d(t, {
+    V1: () => a,
+    r3: () => s,
+    us: () => i
+});
+let a = "#00000000",
+    i = "#CDD8FF1A",
+    s = "#51BC9D"

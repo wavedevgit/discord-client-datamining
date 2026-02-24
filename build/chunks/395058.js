@@ -1,2 +1,22 @@
 /** chunk id: 395058, original params: e,t,l (module,exports,require) **/
-"use strict";l.r(t),l.d(t,{cmsCollection:()=>u,cmsConfig:()=>m});var r=l(814904),a=l(363040),n=l(799200),i=l(920324),s=l(876333),o=l(653006),d=l(251301),c=l(436174);let u={id:"cms",name:"CMS",groups:[i.t,s.F,a.z,n.U,r.D,o.K,d.j,c.Y]},m={collections:[u]}
+"use strict";
+l.r(t), l.d(t, {
+    cmsCollection: () => u,
+    cmsConfig: () => m
+});
+var r = l(814904),
+    a = l(363040),
+    n = l(799200),
+    i = l(920324),
+    s = l(876333),
+    o = l(653006),
+    d = l(251301),
+    c = l(436174);
+let u = {
+        id: "cms",
+        name: "CMS",
+        groups: [i.t, s.F, a.z, n.U, r.D, o.K, d.j, c.Y]
+    },
+    m = {
+        collections: [u]
+    }

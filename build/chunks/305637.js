@@ -1,2 +1,71 @@
 /** chunk id: 305637, original params: t,e,n (module,exports,require) **/
-n.d(e,{A:()=>E});var i=n(627968);n(64700);var l=n(311907),r=n(990078),a=n(397927),s=n(630054),o=n(956793),d=n(401843),u=n(315606),c=n(279250),A=n(267102),p=n(616356),m=n(734057),h=n(203982),g=n(652215),f=n(985018);function E(t){let{isCurrentUser:e,applicationStream:n,onAction:E}=t,{defaultWatchMultipleStreams:C}=(0,u.W)({location:"WatchStreamButton"}),{activeStream:S,watchingOtherStream:T}=(0,l.cf)([p.A],()=>({activeStream:p.A.getActiveStreamForApplicationStream(n),watchingOtherStream:null!=n&&p.A.getAllActiveStreamsForChannel(n.channelId).filter(t=>{let{ownerId:e}=t;return e!==n.ownerId}).length>0})),v=(0,l.bG)([m.A],()=>m.A.getChannel(n?.channelId)),[y,x]=(0,c.zP)(v),N=(0,A.aL)(),_=null!=S&&null!=n&&S.state!==g.XYD.ENDED&&S.ownerId===n.ownerId,I=t=>{null!=n&&(E?.(),o.default.selectVoiceChannel(n.channelId),_||(0,d.Nl)(n,{forceMultiple:t}),N.dispatch(g.jej.POPOUT_CLOSE),h._.dispatch(g.jej.MODAL_CLOSE),s.A.popAll())};if(null==n)return null;let j=(0,c.CT)(x);return e?j=f.intl.string(f.t.XvBdeT):_&&(j=f.intl.string(f.t["JH1SJ+"])),(0,i.jsxs)(i.Fragment,{children:[(0,i.jsx)(a.Button,{size:"sm",variant:_?"secondary":"active",icon:a.Fzq,text:j,disabled:e||_||!y,onClick:()=>I(!1),fullWidth:!0}),!T||_||C?null:(0,i.jsx)(r.m,{text:f.intl.string(f.t.wCrzut),children:(0,i.jsx)(a.K0,{variant:"secondary",size:"sm",icon:a.vAm,"aria-label":f.intl.string(f.t.wCrzut),onClick:()=>{I(!0)}})})]})}
+n.d(e, {
+    A: () => E
+});
+var i = n(627968);
+n(64700);
+var l = n(311907),
+    r = n(990078),
+    a = n(397927),
+    s = n(630054),
+    o = n(956793),
+    d = n(401843),
+    u = n(315606),
+    c = n(279250),
+    A = n(267102),
+    p = n(616356),
+    m = n(734057),
+    h = n(203982),
+    g = n(652215),
+    f = n(985018);
+
+function E(t) {
+    let {
+        isCurrentUser: e,
+        applicationStream: n,
+        onAction: E
+    } = t, {
+        defaultWatchMultipleStreams: C
+    } = (0, u.W)({
+        location: "WatchStreamButton"
+    }), {
+        activeStream: S,
+        watchingOtherStream: T
+    } = (0, l.cf)([p.A], () => ({
+        activeStream: p.A.getActiveStreamForApplicationStream(n),
+        watchingOtherStream: null != n && p.A.getAllActiveStreamsForChannel(n.channelId).filter(t => {
+            let {
+                ownerId: e
+            } = t;
+            return e !== n.ownerId
+        }).length > 0
+    })), v = (0, l.bG)([m.A], () => m.A.getChannel(n?.channelId)), [y, x] = (0, c.zP)(v), N = (0, A.aL)(), _ = null != S && null != n && S.state !== g.XYD.ENDED && S.ownerId === n.ownerId, I = t => {
+        null != n && (E?.(), o.default.selectVoiceChannel(n.channelId), _ || (0, d.Nl)(n, {
+            forceMultiple: t
+        }), N.dispatch(g.jej.POPOUT_CLOSE), h._.dispatch(g.jej.MODAL_CLOSE), s.A.popAll())
+    };
+    if (null == n) return null;
+    let j = (0, c.CT)(x);
+    return e ? j = f.intl.string(f.t.XvBdeT) : _ && (j = f.intl.string(f.t["JH1SJ+"])), (0, i.jsxs)(i.Fragment, {
+        children: [(0, i.jsx)(a.Button, {
+            size: "sm",
+            variant: _ ? "secondary" : "active",
+            icon: a.Fzq,
+            text: j,
+            disabled: e || _ || !y,
+            onClick: () => I(!1),
+            fullWidth: !0
+        }), !T || _ || C ? null : (0, i.jsx)(r.m, {
+            text: f.intl.string(f.t.wCrzut),
+            children: (0, i.jsx)(a.K0, {
+                variant: "secondary",
+                size: "sm",
+                icon: a.vAm,
+                "aria-label": f.intl.string(f.t.wCrzut),
+                onClick: () => {
+                    I(!0)
+                }
+            })
+        })]
+    })
+}

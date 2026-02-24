@@ -1,2 +1,73 @@
 /** chunk id: 133238, original params: n,e,t (module,exports,require) **/
-t.d(e,{m:()=>f,y:()=>b});var i=t(627968);t(64700);var r=t(735438),a=t.n(r),l=t(311907),c=t(397927),s=t(808728),o=t(181079),d=t(422258),A=t(93055),u=t(652215),h=t(985018);function _(n,e){return n.type===u.rbe.GROUP_DM?e?h.intl.string(h.t["0BWmSM"]):h.intl.string(h.t.uuVTOK):n.type===u.rbe.DM?e?h.intl.string(h.t["2wfKGo"]):h.intl.string(h.t.wPbAse):e?h.intl.string(h.t.Bou7lT):h.intl.string(h.t["4wcdE/"])}function f(n){let e=(0,l.bG)([s.Ay],()=>s.Ay.getChannels(u.YYv))[u.rbe.GUILD_CATEGORY],{notifyFavoriteAdded:t}=(0,A.CJ)();if(!(0,A.pe)(n))return null;let[[r],o]=a().partition(e,n=>"null"===n.channel.id);function h(e){t(),(0,d.Jz)(n.id,e)}return 0===o.length?(0,i.jsx)(c.Drp,{id:"favorite-channel",label:_(n,!1),action:()=>h(null)}):(0,i.jsxs)(c.Drp,{id:"favorite-channel",label:_(n,!1),action:()=>h(null),children:[!1,(0,i.jsx)(c.rXV,{children:o.map(n=>(0,i.jsx)(c.Drp,{id:`favorite-${n.channel.id}`,label:n.channel.name,action:()=>h(n.channel.id)},n.channel.id))})]})}function b(n){let e=(0,l.bG)([o.A],()=>o.A.isFavorite(n.id));return __OVERLAY__||!e?null:(0,i.jsx)(c.Drp,{id:"favorite-channel",label:_(n,!0),color:"danger",action:()=>n.type===u.rbe.GUILD_CATEGORY?(0,c.mMO)(async()=>{let{default:e}=await t.e("52210").then(t.bind(t,862377));return t=>(0,i.jsx)(e,{...t,onConfirm:()=>{t.onClose(),(0,d.i_)(n.id)},channel:n})}):(0,d.i_)(n.id)})}
+t.d(e, {
+    m: () => f,
+    y: () => b
+});
+var i = t(627968);
+t(64700);
+var r = t(735438),
+    a = t.n(r),
+    l = t(311907),
+    c = t(397927),
+    s = t(808728),
+    o = t(181079),
+    d = t(422258),
+    A = t(93055),
+    u = t(652215),
+    h = t(985018);
+
+function _(n, e) {
+    return n.type === u.rbe.GROUP_DM ? e ? h.intl.string(h.t["0BWmSM"]) : h.intl.string(h.t.uuVTOK) : n.type === u.rbe.DM ? e ? h.intl.string(h.t["2wfKGo"]) : h.intl.string(h.t.wPbAse) : e ? h.intl.string(h.t.Bou7lT) : h.intl.string(h.t["4wcdE/"])
+}
+
+function f(n) {
+    let e = (0, l.bG)([s.Ay], () => s.Ay.getChannels(u.YYv))[u.rbe.GUILD_CATEGORY],
+        {
+            notifyFavoriteAdded: t
+        } = (0, A.CJ)();
+    if (!(0, A.pe)(n)) return null;
+    let [
+        [r], o
+    ] = a().partition(e, n => "null" === n.channel.id);
+
+    function h(e) {
+        t(), (0, d.Jz)(n.id, e)
+    }
+    return 0 === o.length ? (0, i.jsx)(c.Drp, {
+        id: "favorite-channel",
+        label: _(n, !1),
+        action: () => h(null)
+    }) : (0, i.jsxs)(c.Drp, {
+        id: "favorite-channel",
+        label: _(n, !1),
+        action: () => h(null),
+        children: [!1, (0, i.jsx)(c.rXV, {
+            children: o.map(n => (0, i.jsx)(c.Drp, {
+                id: `favorite-${n.channel.id}`,
+                label: n.channel.name,
+                action: () => h(n.channel.id)
+            }, n.channel.id))
+        })]
+    })
+}
+
+function b(n) {
+    let e = (0, l.bG)([o.A], () => o.A.isFavorite(n.id));
+    return __OVERLAY__ || !e ? null : (0, i.jsx)(c.Drp, {
+        id: "favorite-channel",
+        label: _(n, !0),
+        color: "danger",
+        action: () => n.type === u.rbe.GUILD_CATEGORY ? (0, c.mMO)(async () => {
+            let {
+                default: e
+            } = await t.e("52210").then(t.bind(t, 862377));
+            return t => (0, i.jsx)(e, {
+                ...t,
+                onConfirm: () => {
+                    t.onClose(), (0, d.i_)(n.id)
+                },
+                channel: n
+            })
+        }) : (0, d.i_)(n.id)
+    })
+}

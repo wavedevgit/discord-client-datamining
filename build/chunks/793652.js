@@ -1,2 +1,2 @@
 /** chunk id: 793652, original params: o (module,exports,require) **/
-o.exports=JSON.parse('{"yfwZuy":["Wyświetl moją odznakę"],"UnPGii":["Odznaka została dodana do Twojego profilu."],"nvaTQq":["Zdobyto odznakę profilową „Orbs”!"]}')
+o.exports = JSON.parse('{"yfwZuy":["Wyświetl moją odznakę"],"UnPGii":["Odznaka została dodana do Twojego profilu."],"nvaTQq":["Zdobyto odznakę profilową „Orbs”!"]}')

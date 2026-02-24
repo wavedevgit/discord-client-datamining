@@ -1,2 +1,89 @@
 /** chunk id: 479026, original params: e,t,n (module,exports,require) **/
-n.d(t,{T:()=>p,_:()=>f});var i=n(635358),l=n(793574),a=n(590180),s=n(572595),r=n(57020),o=n(44120),c=n(976860),d=n(44724),u=n(317560),g=n(533406),m=n(657331),x=n(901123);function f(e){let{isOwner:t,isItemOwned:n,onWishlistItemClick:d,profileOwner:u,sku:g,analyticsLocations:f,giftingOrigin:p}=e,h=location.pathname.startsWith(x.BV.COLLECTIBLES_SHOP);if(t||n){let e=!t&&n;if(h){let t=a.A.getProduct(g.id),n=a.A.getCategoryForProduct(g.id);if(null!=t&&null!=n){e||(0,m.closeUserProfileModal)(),(0,s.t)({product:t,category:n,shouldCheckoutWithOrbs:(0,r.A)({product:t}),analyticsLocations:f,analyticsSource:l.A.USER_PROFILE_WISHLIST,returnRef:void 0,tab:void 0});return}}e||(0,m.closeUserProfileModal)(),(0,c.pX)(`${x.BV.COLLECTIBLES_SHOP}#itemSkuId=${g.id}`)}else d?.(),(0,o.A)({skuId:g.id,isGift:!0,giftingOrigin:p,analyticsLocations:f,giftRecipient:u,variantsReturnStyle:i.g.VARIANTS_GROUP})}function p(e){let{isOwner:t,giftingOrigin:n,profileOwner:i,isItemOwned:a,application:s,sku:r,analyticsLocations:o,additionalUserIds:c}=e;t||a?s?.guildId!=null&&(t?((0,m.closeUserProfileModal)(),(0,d.default)({guildId:s.guildId,skuId:r.id,slug:r.slug})):(0,u.R)({skuId:r.id,applicationId:s.id,guildId:s.guildId,isStorefront:!1,analyticsLocations:o})):(0,g.a)(r,{isGift:!0,giftRecipient:i,additionalUserIds:c,giftingOrigin:n},{analyticsLocations:[...o,l.A.SLAYER_STOREFRONT_WISHLIST_ITEM_CARD_GIFT_BUTTON]})}
+n.d(t, {
+    T: () => p,
+    _: () => f
+});
+var i = n(635358),
+    l = n(793574),
+    a = n(590180),
+    s = n(572595),
+    r = n(57020),
+    o = n(44120),
+    c = n(976860),
+    d = n(44724),
+    u = n(317560),
+    g = n(533406),
+    m = n(657331),
+    x = n(901123);
+
+function f(e) {
+    let {
+        isOwner: t,
+        isItemOwned: n,
+        onWishlistItemClick: d,
+        profileOwner: u,
+        sku: g,
+        analyticsLocations: f,
+        giftingOrigin: p
+    } = e, h = location.pathname.startsWith(x.BV.COLLECTIBLES_SHOP);
+    if (t || n) {
+        let e = !t && n;
+        if (h) {
+            let t = a.A.getProduct(g.id),
+                n = a.A.getCategoryForProduct(g.id);
+            if (null != t && null != n) {
+                e || (0, m.closeUserProfileModal)(), (0, s.t)({
+                    product: t,
+                    category: n,
+                    shouldCheckoutWithOrbs: (0, r.A)({
+                        product: t
+                    }),
+                    analyticsLocations: f,
+                    analyticsSource: l.A.USER_PROFILE_WISHLIST,
+                    returnRef: void 0,
+                    tab: void 0
+                });
+                return
+            }
+        }
+        e || (0, m.closeUserProfileModal)(), (0, c.pX)(`${x.BV.COLLECTIBLES_SHOP}#itemSkuId=${g.id}`)
+    } else d?.(), (0, o.A)({
+        skuId: g.id,
+        isGift: !0,
+        giftingOrigin: p,
+        analyticsLocations: f,
+        giftRecipient: u,
+        variantsReturnStyle: i.g.VARIANTS_GROUP
+    })
+}
+
+function p(e) {
+    let {
+        isOwner: t,
+        giftingOrigin: n,
+        profileOwner: i,
+        isItemOwned: a,
+        application: s,
+        sku: r,
+        analyticsLocations: o,
+        additionalUserIds: c
+    } = e;
+    t || a ? s?.guildId != null && (t ? ((0, m.closeUserProfileModal)(), (0, d.default)({
+        guildId: s.guildId,
+        skuId: r.id,
+        slug: r.slug
+    })) : (0, u.R)({
+        skuId: r.id,
+        applicationId: s.id,
+        guildId: s.guildId,
+        isStorefront: !1,
+        analyticsLocations: o
+    })) : (0, g.a)(r, {
+        isGift: !0,
+        giftRecipient: i,
+        additionalUserIds: c,
+        giftingOrigin: n
+    }, {
+        analyticsLocations: [...o, l.A.SLAYER_STOREFRONT_WISHLIST_ITEM_CARD_GIFT_BUTTON]
+    })
+}

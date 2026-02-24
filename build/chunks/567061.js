@@ -1,2 +1,18 @@
 /** chunk id: 567061, original params: e,t,n (module,exports,require) **/
-n.d(t,{E:()=>a});var i=n(64700),r=n(4106),l=n(105971);function a(e){return i.useCallback(async()=>{l.k.trackFeedShown({variant:e?"DotShown":"NoDotShown",homeSessionId:"gravity_refresh"}),await r.A.fetchDehydrated({isReloading:!0}),await r.A.reloadICYMITab(),await r.A.getGuildChannelScores(),r.A.getRecommendedGuilds()},[e])}
+n.d(t, {
+    E: () => a
+});
+var i = n(64700),
+    r = n(4106),
+    l = n(105971);
+
+function a(e) {
+    return i.useCallback(async () => {
+        l.k.trackFeedShown({
+            variant: e ? "DotShown" : "NoDotShown",
+            homeSessionId: "gravity_refresh"
+        }), await r.A.fetchDehydrated({
+            isReloading: !0
+        }), await r.A.reloadICYMITab(), await r.A.getGuildChannelScores(), r.A.getRecommendedGuilds()
+    }, [e])
+}

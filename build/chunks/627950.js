@@ -1,2 +1,39 @@
 /** chunk id: 627950, original params: e,t,n (module,exports,require) **/
-n.d(t,{A:()=>c});var i=n(686956),l=n(22007),r=n(734057),a=n(71393),s=n(954571),o=n(449054),d=n(652215);async function c(e){if(null==e.messageReference)return;let t=e.messageReference.guild_id,n=e.messageReference.channel_id,c=e.messageReference.message_id,u=r.A.getChannel(n),_=!1;if(null==u&&null!=t&&null==a.A.getGuild(t))try{await (0,o.Z2)(t,{object:d.ZSU.FORWARD_BREADCRUMB},{shouldNavigate:!1}),_=!0,await (0,i.k)(t),u=r.A.getChannel(n)}catch{}s.default.track(d.HAw.FORWARD_BREADCRUMB_CLICKED,{guild_id:r.A.getBasicChannel(e.channel_id)?.guild_id,channel_id:e.channel_id,message_id:e.id,breadcrumb_guild_id:t,breadcrumb_channel_id:n,breadcrumb_message_id:c,did_lurk:_});let m=_?n:void 0;(0,l.A)(d.BVt.CHANNEL(t,n,c),{welcomeModalChannelId:m})}
+n.d(t, {
+    A: () => c
+});
+var i = n(686956),
+    l = n(22007),
+    r = n(734057),
+    a = n(71393),
+    s = n(954571),
+    o = n(449054),
+    d = n(652215);
+async function c(e) {
+    if (null == e.messageReference) return;
+    let t = e.messageReference.guild_id,
+        n = e.messageReference.channel_id,
+        c = e.messageReference.message_id,
+        u = r.A.getChannel(n),
+        _ = !1;
+    if (null == u && null != t && null == a.A.getGuild(t)) try {
+        await (0, o.Z2)(t, {
+            object: d.ZSU.FORWARD_BREADCRUMB
+        }, {
+            shouldNavigate: !1
+        }), _ = !0, await (0, i.k)(t), u = r.A.getChannel(n)
+    } catch {}
+    s.default.track(d.HAw.FORWARD_BREADCRUMB_CLICKED, {
+        guild_id: r.A.getBasicChannel(e.channel_id)?.guild_id,
+        channel_id: e.channel_id,
+        message_id: e.id,
+        breadcrumb_guild_id: t,
+        breadcrumb_channel_id: n,
+        breadcrumb_message_id: c,
+        did_lurk: _
+    });
+    let m = _ ? n : void 0;
+    (0, l.A)(d.BVt.CHANNEL(t, n, c), {
+        welcomeModalChannelId: m
+    })
+}

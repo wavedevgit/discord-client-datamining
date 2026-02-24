@@ -1,2 +1,5 @@
 /** chunk id: 661551, original params: t (module,exports,require) **/
-"use strict";t.exports=function(t){return"u">typeof window&&!!window.__DRAFT_GKX&&!!window.__DRAFT_GKX[t]}
+"use strict";
+t.exports = function(t) {
+    return "u" > typeof window && !!window.__DRAFT_GKX && !!window.__DRAFT_GKX[t]
+}

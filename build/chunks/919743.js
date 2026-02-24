@@ -1,2 +1,12 @@
 /** chunk id: 919743, original params: t,e,r (module,exports,require) **/
-"use strict";var n=r(668118);t.exports=function(t){var e=n(t);return{x:e.left,y:e.top,width:e.right-e.left,height:e.bottom-e.top}}
+"use strict";
+var n = r(668118);
+t.exports = function(t) {
+    var e = n(t);
+    return {
+        x: e.left,
+        y: e.top,
+        width: e.right - e.left,
+        height: e.bottom - e.top
+    }
+}

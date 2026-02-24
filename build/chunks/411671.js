@@ -1,2 +1,10 @@
 /** chunk id: 411671, original params: e,t,n (module,exports,require) **/
-"use strict";n.d(t,{y:()=>s});var i=n(290349);function s(e,t){return t.owner_user_id===e||t.members.find(t=>t.user.id===e)?.role===i.D.ADMIN}
+"use strict";
+n.d(t, {
+    y: () => s
+});
+var i = n(290349);
+
+function s(e, t) {
+    return t.owner_user_id === e || t.members.find(t => t.user.id === e)?.role === i.D.ADMIN
+}

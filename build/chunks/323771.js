@@ -1,2 +1,2 @@
 /** chunk id: 323771, original params: p (module,exports,require) **/
-p.exports=JSON.parse('{"M6cPwB":["Snekugle"]}')
+p.exports = JSON.parse('{"M6cPwB":["Snekugle"]}')

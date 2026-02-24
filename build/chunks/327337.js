@@ -1,2 +1,22 @@
 /** chunk id: 327337, original params: t,e,n (module,exports,require) **/
-n.d(e,{CL:()=>s,Ht:()=>o,RU:()=>A,Rx:()=>l,V:()=>d,cb:()=>u,eT:()=>c,jR:()=>a,x7:()=>r});var i=n(985018);let l="SAFETY_WARNING_BANNER_WEB",r="https://www.crisistextline.org/",a="https://nofiltr.org/resources-hub/",s="https://discord.findahelpline.com/",o="InappropriateConversationModal-web",d="PRIVATE_DM_SAFETY_TOOLS_MODAL",u="SafetyToolsActionSheet-web",c=()=>[i.intl.string(i.t["26fDv4"]),i.intl.string(i.t.togDfk),i.intl.string(i.t.O4Ljca)],A=()=>[i.intl.string(i.t.bCWw8l),i.intl.string(i.t.mzSucz),i.intl.string(i.t.ZkmC7s)]
+n.d(e, {
+    CL: () => s,
+    Ht: () => o,
+    RU: () => A,
+    Rx: () => l,
+    V: () => d,
+    cb: () => u,
+    eT: () => c,
+    jR: () => a,
+    x7: () => r
+});
+var i = n(985018);
+let l = "SAFETY_WARNING_BANNER_WEB",
+    r = "https://www.crisistextline.org/",
+    a = "https://nofiltr.org/resources-hub/",
+    s = "https://discord.findahelpline.com/",
+    o = "InappropriateConversationModal-web",
+    d = "PRIVATE_DM_SAFETY_TOOLS_MODAL",
+    u = "SafetyToolsActionSheet-web",
+    c = () => [i.intl.string(i.t["26fDv4"]), i.intl.string(i.t.togDfk), i.intl.string(i.t.O4Ljca)],
+    A = () => [i.intl.string(i.t.bCWw8l), i.intl.string(i.t.mzSucz), i.intl.string(i.t.ZkmC7s)]

@@ -1,2 +1,55 @@
 /** chunk id: 234957, original params: e,t,n (module,exports,require) **/
-n.d(t,{A:()=>A});var i=n(627968),l=n(64700),a=n(311907),r=n(352505),s=n(9842),o=n(994500),c=n(465364),d=n(763754),u=n(448368),m=n(652215);let _=l.memo(function(e){let{baseMessage:t,channel:n,referencedMessage:m,compact:_=!1}=e,A=m.state===s.a.LOADED?m.message:void 0,h=r.m.useExperiment({location:"repliedMessage"}).enabled,f=l.useMemo(()=>A?.content!=null&&""!==A.content?(0,c.Ay)(A,{formatInline:!0,allowGameMentions:h}).content:null,[A,h]),{isReplyAuthorBlocked:E,isReplyAuthorIgnored:g}=(0,a.cf)([o.A],()=>({isReplyAuthorBlocked:null!=A&&o.A.isBlockedForMessage(A),isReplyAuthorIgnored:null!=A&&o.A.isIgnoredForMessage(A)}),[A]),p=(0,d.X4)(A),x=(0,d.X4)(t);return(0,i.jsx)(u.A,{repliedAuthor:p,baseAuthor:x,baseMessage:t,channel:n,referencedMessage:m,content:f,compact:_,isReplyAuthorBlocked:E,isReplyAuthorIgnored:g,isReplySpineClickable:!1,showReplySpine:!0})});function A(e,t,n,l,a){return e.type!==m.lAJ.REPLY||null==n?null:(0,i.jsx)(_,{baseMessage:e,channel:t,referencedMessage:l,compact:a})}
+n.d(t, {
+    A: () => A
+});
+var i = n(627968),
+    l = n(64700),
+    a = n(311907),
+    r = n(352505),
+    s = n(9842),
+    o = n(994500),
+    c = n(465364),
+    d = n(763754),
+    u = n(448368),
+    m = n(652215);
+let _ = l.memo(function(e) {
+    let {
+        baseMessage: t,
+        channel: n,
+        referencedMessage: m,
+        compact: _ = !1
+    } = e, A = m.state === s.a.LOADED ? m.message : void 0, h = r.m.useExperiment({
+        location: "repliedMessage"
+    }).enabled, f = l.useMemo(() => A?.content != null && "" !== A.content ? (0, c.Ay)(A, {
+        formatInline: !0,
+        allowGameMentions: h
+    }).content : null, [A, h]), {
+        isReplyAuthorBlocked: E,
+        isReplyAuthorIgnored: g
+    } = (0, a.cf)([o.A], () => ({
+        isReplyAuthorBlocked: null != A && o.A.isBlockedForMessage(A),
+        isReplyAuthorIgnored: null != A && o.A.isIgnoredForMessage(A)
+    }), [A]), p = (0, d.X4)(A), x = (0, d.X4)(t);
+    return (0, i.jsx)(u.A, {
+        repliedAuthor: p,
+        baseAuthor: x,
+        baseMessage: t,
+        channel: n,
+        referencedMessage: m,
+        content: f,
+        compact: _,
+        isReplyAuthorBlocked: E,
+        isReplyAuthorIgnored: g,
+        isReplySpineClickable: !1,
+        showReplySpine: !0
+    })
+});
+
+function A(e, t, n, l, a) {
+    return e.type !== m.lAJ.REPLY || null == n ? null : (0, i.jsx)(_, {
+        baseMessage: e,
+        channel: t,
+        referencedMessage: l,
+        compact: a
+    })
+}

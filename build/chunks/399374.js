@@ -1,8 +1,0 @@
-/** chunk id: 399374, original params: e,t,n (module,exports,require) **/
-"use strict";
-e.exports = {
-    kL: "container__871cd",
-    fi: "column__871cd",
-    nX: "gif__871cd",
-    c8: "categoryLoader__871cd"
-}

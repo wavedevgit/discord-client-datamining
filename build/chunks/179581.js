@@ -1,2 +1,15 @@
 /** chunk id: 179581, original params: t,e,n (module,exports,require) **/
-n.d(e,{N:()=>l});var a=n(309010),i=n(746080);function l(){let t=a.A.getCurrentlySelectedChannelId()??void 0;return null!=t&&(0,i.jq)(t)?{channel_static_route:t}:{channel_id:t}}
+n.d(e, {
+    N: () => l
+});
+var a = n(309010),
+    i = n(746080);
+
+function l() {
+    let t = a.A.getCurrentlySelectedChannelId() ?? void 0;
+    return null != t && (0, i.jq)(t) ? {
+        channel_static_route: t
+    } : {
+        channel_id: t
+    }
+}

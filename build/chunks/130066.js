@@ -1,2 +1,75 @@
 /** chunk id: 130066, original params: e,t,n (module,exports,require) **/
-n.d(t,{A:()=>P});var i=n(627968),s=n(311907),a=n(195043),l=n(628965),r=n(740625),o=n(524738),c=n(378631),d=n(962789),u=n(476009),_=n(585052),m=n(831320),A=n(965563),g=n(320134),h=n(604151),x=n(638130),p=n(389242),E=n(772538),C=n(61610),T=n(751461),S=n(638324),I=n(428854),f=n(531525),N=n(190363),b=n(652215),j=n(985018);let v=()=>(0,i.jsxs)(g.A,{title:j.intl.string(j.t.xVRG4P),webSetting:f.H.PRIVACY_AND_SAFETY_CONTENT_CATEGORY,children:[(0,i.jsx)(x.f,{}),(0,i.jsx)(_.A,{}),(0,i.jsx)(u.A,{}),(0,i.jsx)(c.A,{}),(0,i.jsx)(p.A,{})]}),O=()=>(0,i.jsxs)(g.A,{title:j.intl.string(j.t["y62Z/d"]),webSetting:f.H.PRIVACY_AND_SAFETY_SOCIAL_PERMISSIONS_CATEGORY,children:[(0,i.jsx)(a.x,{setting:f.H.PRIVACY_AND_SAFETY_SERVER_SELECTOR,children:(0,i.jsx)(A.A,{})}),(0,i.jsx)(T.A,{}),(0,i.jsx)(S.A,{}),(0,i.jsx)(C.A,{}),(0,i.jsx)(E.A,{})]}),R=()=>(0,i.jsxs)(g.A,{title:j.intl.string(j.t["1Qn8iV"]),webSetting:f.H.PRIVACY_AND_SAFETY_FRIEND_REQUESTS_CATEGORY,children:[(0,i.jsx)(m.A,{}),(0,i.jsx)(h.Ay,{})]}),y=()=>(0,i.jsxs)(i.Fragment,{children:[(0,i.jsx)(v,{}),(0,i.jsx)(O,{}),(0,i.jsx)(R,{})]});function P(){let e=(0,s.bG)([l.A],()=>l.A.getSubsection()),t=[{title:j.intl.string(j.t["/7xJCF"]),component:y,setting:f.H.CONTENT_SOCIAL_DISCORD_TAB},{title:j.intl.string(j.t.YpCiMt),component:d.A,setting:f.H.CONTENT_SOCIAL_CONNECTED_GAMES}];return(0,i.jsx)(r.R,{header:j.intl.string(j.t["+o1pDZ"]),notice:(0,i.jsx)(I.A,{page:I.R.CONTENT_AND_SOCIAL}),children:(0,i.jsx)(o.A,{parentSetting:f.H.CONTENT_SOCIAL,settingsSection:b.nc_.CONTENT_AND_SOCIAL,tabs:t,defaultTabIndex:e===N.k?1:void 0})})}
+n.d(t, {
+    A: () => P
+});
+var i = n(627968),
+    s = n(311907),
+    a = n(195043),
+    l = n(628965),
+    r = n(740625),
+    o = n(524738),
+    c = n(378631),
+    d = n(962789),
+    u = n(476009),
+    _ = n(585052),
+    m = n(831320),
+    A = n(965563),
+    g = n(320134),
+    h = n(604151),
+    x = n(638130),
+    p = n(389242),
+    E = n(772538),
+    C = n(61610),
+    T = n(751461),
+    S = n(638324),
+    I = n(428854),
+    f = n(531525),
+    N = n(190363),
+    b = n(652215),
+    j = n(985018);
+let v = () => (0, i.jsxs)(g.A, {
+        title: j.intl.string(j.t.xVRG4P),
+        webSetting: f.H.PRIVACY_AND_SAFETY_CONTENT_CATEGORY,
+        children: [(0, i.jsx)(x.f, {}), (0, i.jsx)(_.A, {}), (0, i.jsx)(u.A, {}), (0, i.jsx)(c.A, {}), (0, i.jsx)(p.A, {})]
+    }),
+    O = () => (0, i.jsxs)(g.A, {
+        title: j.intl.string(j.t["y62Z/d"]),
+        webSetting: f.H.PRIVACY_AND_SAFETY_SOCIAL_PERMISSIONS_CATEGORY,
+        children: [(0, i.jsx)(a.x, {
+            setting: f.H.PRIVACY_AND_SAFETY_SERVER_SELECTOR,
+            children: (0, i.jsx)(A.A, {})
+        }), (0, i.jsx)(T.A, {}), (0, i.jsx)(S.A, {}), (0, i.jsx)(C.A, {}), (0, i.jsx)(E.A, {})]
+    }),
+    R = () => (0, i.jsxs)(g.A, {
+        title: j.intl.string(j.t["1Qn8iV"]),
+        webSetting: f.H.PRIVACY_AND_SAFETY_FRIEND_REQUESTS_CATEGORY,
+        children: [(0, i.jsx)(m.A, {}), (0, i.jsx)(h.Ay, {})]
+    }),
+    y = () => (0, i.jsxs)(i.Fragment, {
+        children: [(0, i.jsx)(v, {}), (0, i.jsx)(O, {}), (0, i.jsx)(R, {})]
+    });
+
+function P() {
+    let e = (0, s.bG)([l.A], () => l.A.getSubsection()),
+        t = [{
+            title: j.intl.string(j.t["/7xJCF"]),
+            component: y,
+            setting: f.H.CONTENT_SOCIAL_DISCORD_TAB
+        }, {
+            title: j.intl.string(j.t.YpCiMt),
+            component: d.A,
+            setting: f.H.CONTENT_SOCIAL_CONNECTED_GAMES
+        }];
+    return (0, i.jsx)(r.R, {
+        header: j.intl.string(j.t["+o1pDZ"]),
+        notice: (0, i.jsx)(I.A, {
+            page: I.R.CONTENT_AND_SOCIAL
+        }),
+        children: (0, i.jsx)(o.A, {
+            parentSetting: f.H.CONTENT_SOCIAL,
+            settingsSection: b.nc_.CONTENT_AND_SOCIAL,
+            tabs: t,
+            defaultTabIndex: e === N.k ? 1 : void 0
+        })
+    })
+}

@@ -1,2 +1,6 @@
 /** chunk id: 545290, original params: e,t,n (module,exports,require) **/
-"use strict";e.exports={Or:"chatIcon__233f8",qS:"badge__233f8"}
+"use strict";
+e.exports = {
+    Or: "chatIcon__233f8",
+    qS: "badge__233f8"
+}

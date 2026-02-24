@@ -1,2 +1,15 @@
 /** chunk id: 821701, original params: e,t,n (module,exports,require) **/
-n.d(t,{A:()=>l});var r=n(417597),i=n(590180),s=n(4227);let l=e=>{let[t,n]=(0,r.yK)([i.A],()=>[i.A.getCategoryForProduct(e),i.A.getProduct(e)]);return{category:t,product:n,purchase:(0,r.bG)([s.A],()=>s.A.getPurchase(e))}}
+n.d(t, {
+    A: () => l
+});
+var r = n(417597),
+    i = n(590180),
+    s = n(4227);
+let l = e => {
+    let [t, n] = (0, r.yK)([i.A], () => [i.A.getCategoryForProduct(e), i.A.getProduct(e)]);
+    return {
+        category: t,
+        product: n,
+        purchase: (0, r.bG)([s.A], () => s.A.getPurchase(e))
+    }
+}

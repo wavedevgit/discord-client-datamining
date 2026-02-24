@@ -1,2 +1,51 @@
 /** chunk id: 148131, original params: e,t,n (module,exports,require) **/
-n.d(t,{w:()=>h});var i=n(627968),s=n(64700),a=n(284009),l=n.n(a),r=n(417597),o=n(397927),c=n(287809),d=n(53719),u=n(390370),_=n(191627),m=n(842130),A=n(985018),g=n(487693);function h(e){let{user:t}=e,a=(0,r.bG)([c.default],()=>c.default.getCurrentUser()),h=s.useCallback(()=>{l()(void 0!==a,"User must be logged in to accept a link request"),(0,o.mMO)(async()=>{let{default:e}=await n.e("43139").then(n.bind(n,179950));return n=>(0,i.jsx)(e,{...n,currentUser:a,otherUser:t})})},[a,t]);return(0,i.jsxs)("div",{className:g.kL,children:[(0,i.jsx)("div",{className:g.zH,children:(0,i.jsx)(u.A,{otherUser:t,status:_.Ef.ACTIVE})}),(0,i.jsx)("div",{className:g.o1,children:(0,i.jsx)(d.A,{icon:o.PGe,tooltip:A.intl.string(m.default.l20ZZp),onClick:h})})]})}
+n.d(t, {
+    w: () => h
+});
+var i = n(627968),
+    s = n(64700),
+    a = n(284009),
+    l = n.n(a),
+    r = n(417597),
+    o = n(397927),
+    c = n(287809),
+    d = n(53719),
+    u = n(390370),
+    _ = n(191627),
+    m = n(842130),
+    A = n(985018),
+    g = n(487693);
+
+function h(e) {
+    let {
+        user: t
+    } = e, a = (0, r.bG)([c.default], () => c.default.getCurrentUser()), h = s.useCallback(() => {
+        l()(void 0 !== a, "User must be logged in to accept a link request"), (0, o.mMO)(async () => {
+            let {
+                default: e
+            } = await n.e("43139").then(n.bind(n, 179950));
+            return n => (0, i.jsx)(e, {
+                ...n,
+                currentUser: a,
+                otherUser: t
+            })
+        })
+    }, [a, t]);
+    return (0, i.jsxs)("div", {
+        className: g.kL,
+        children: [(0, i.jsx)("div", {
+            className: g.zH,
+            children: (0, i.jsx)(u.A, {
+                otherUser: t,
+                status: _.Ef.ACTIVE
+            })
+        }), (0, i.jsx)("div", {
+            className: g.o1,
+            children: (0, i.jsx)(d.A, {
+                icon: o.PGe,
+                tooltip: A.intl.string(m.default.l20ZZp),
+                onClick: h
+            })
+        })]
+    })
+}

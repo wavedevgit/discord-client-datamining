@@ -1,2 +1,6 @@
 /** chunk id: 529414, original params: e,t,n (module,exports,require) **/
-"use strict";e.exports={v:"raisedHandIcon__15cd2",F:"raisedHandCount__15cd2"}
+"use strict";
+e.exports = {
+    v: "raisedHandIcon__15cd2",
+    F: "raisedHandCount__15cd2"
+}

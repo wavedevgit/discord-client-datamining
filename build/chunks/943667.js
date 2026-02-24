@@ -1,2 +1,9 @@
 /** chunk id: 943667, original params: e,t,n (module,exports,require) **/
-n.d(t,{A:()=>i});var a=n(652215);function i(e){return e.type===a.lAJ.DEFAULT&&null!=e.messageReference&&e.messageReference.type!==a.SH7.FORWARD}
+n.d(t, {
+    A: () => i
+});
+var a = n(652215);
+
+function i(e) {
+    return e.type === a.lAJ.DEFAULT && null != e.messageReference && e.messageReference.type !== a.SH7.FORWARD
+}

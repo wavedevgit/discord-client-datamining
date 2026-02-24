@@ -1,3 +1,0 @@
-/** chunk id: 972881, original params: e (module,exports,require) **/
-"use strict";
-e.exports = "/assets/4294b5486dcb5dee.svg"

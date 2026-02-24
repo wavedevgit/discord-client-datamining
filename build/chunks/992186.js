@@ -1,2 +1,2 @@
 /** chunk id: 992186, original params: e (module,exports,require) **/
-e.exports="/assets/7992de8b563ad80a.png"
+e.exports = "/assets/7992de8b563ad80a.png"

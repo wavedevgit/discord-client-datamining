@@ -1,2 +1,29 @@
 /** chunk id: 86889, original params: t,e,l (module,exports,require) **/
-l.d(e,{D:()=>c});var s=l(627968),r=l(64700),n=l(217905),i=l(688810),a=l(954571),o=l(652215);function c(t){let{appId:e,skuId:l,...c}=t,{analyticsLocations:d}=(0,i.Ay)();return r.useEffect(()=>{a.default.track(o.HAw.VIEW_PREMIUM_APP_EXPANDED_PRODUCT_CARD,{application_id:e,sku_id:l,location_stack:d})},[d,e,l]),(0,s.jsx)(n.F,{...c})}
+l.d(e, {
+    D: () => c
+});
+var s = l(627968),
+    r = l(64700),
+    n = l(217905),
+    i = l(688810),
+    a = l(954571),
+    o = l(652215);
+
+function c(t) {
+    let {
+        appId: e,
+        skuId: l,
+        ...c
+    } = t, {
+        analyticsLocations: d
+    } = (0, i.Ay)();
+    return r.useEffect(() => {
+        a.default.track(o.HAw.VIEW_PREMIUM_APP_EXPANDED_PRODUCT_CARD, {
+            application_id: e,
+            sku_id: l,
+            location_stack: d
+        })
+    }, [d, e, l]), (0, s.jsx)(n.F, {
+        ...c
+    })
+}

@@ -1,2 +1,47 @@
 /** chunk id: 396375, original params: e,t,n (module,exports,require) **/
-n.d(t,{A:()=>m});var r=n(627968);n(64700);var a=n(582754),l=n(421380),i=n(736653),s=n(234419),u=n(465794),d=n(145310),c=n(275403);let m=e=>{let{textOptions:t,subscriptionTier:n,hasActivePromotion:m=!1,isPersistentCTA:o=!1,useShorterCTA:E=!1,showGradient:_,confirmationFooter:p,color:N,...T}=e,g=(0,i.Ay)(),{buttonText:x,marketingSubscriptionTierSkuId:A}=(0,d.s)({hasActivePromotion:m,subscriptionTier:n,useShorterCTA:E,isPersistentCTA:o}),b=(0,s.V)(),h=b?.subscription_trial,f=null!=h&&A===h.sku_id,j=N??((0,a.Mw)(g)?l.XD.BRAND_INVERTED:l.XD.BRAND);return(0,r.jsx)(u.A,{color:j,textOptions:{textOverride:x,textClassName:f?c.A:void 0,...t},onlyShineOnHover:!0,subscriptionTier:A,showGradient:_,confirmationFooter:p,...T})}
+n.d(t, {
+    A: () => m
+});
+var r = n(627968);
+n(64700);
+var a = n(582754),
+    l = n(421380),
+    i = n(736653),
+    s = n(234419),
+    u = n(465794),
+    d = n(145310),
+    c = n(275403);
+let m = e => {
+    let {
+        textOptions: t,
+        subscriptionTier: n,
+        hasActivePromotion: m = !1,
+        isPersistentCTA: o = !1,
+        useShorterCTA: E = !1,
+        showGradient: _,
+        confirmationFooter: p,
+        color: N,
+        ...T
+    } = e, g = (0, i.Ay)(), {
+        buttonText: x,
+        marketingSubscriptionTierSkuId: A
+    } = (0, d.s)({
+        hasActivePromotion: m,
+        subscriptionTier: n,
+        useShorterCTA: E,
+        isPersistentCTA: o
+    }), b = (0, s.V)(), h = b?.subscription_trial, f = null != h && A === h.sku_id, j = N ?? ((0, a.Mw)(g) ? l.XD.BRAND_INVERTED : l.XD.BRAND);
+    return (0, r.jsx)(u.A, {
+        color: j,
+        textOptions: {
+            textOverride: x,
+            textClassName: f ? c.A : void 0,
+            ...t
+        },
+        onlyShineOnHover: !0,
+        subscriptionTier: A,
+        showGradient: _,
+        confirmationFooter: p,
+        ...T
+    })
+}

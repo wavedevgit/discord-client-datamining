@@ -1,2 +1,48 @@
 /** chunk id: 638130, original params: e,t,n (module,exports,require) **/
-n.d(t,{f:()=>g});var i=n(627968);n(64700);var s=n(444802),a=n(975571),l=n(524738),r=n(421248),o=n(42765),c=n(871930),d=n(355097),u=n(531525),_=n(652215),m=n(985018),A=n(456144);function g(){let e=(0,s.WX)(),t=[{title:m.intl.string(m.t.GYpoAq),component:r.Z,orientation:"vertical",setting:u.H.SEXUALLY_EXPLICIT_MEDIA_REDACTION},{title:m.intl.string(m.t["16/3Bi"]),component:o.q,orientation:"vertical",setting:u.H.GORE_MEDIA_REDACTION}];return(0,i.jsxs)(c.h,{setting:u.H.SENSITIVE_CONTENT_FILTERS,scrollPosition:d.d1.EXPLICIT_MEDIA_REDACTION_V2,children:[(0,i.jsx)(c._,{header:m.intl.string(m.t["Hj/But"]),description:m.intl.format(m.t.dliU4j,{learnMoreLink:a.A.getArticleURL(e)})}),(0,i.jsx)(l.A,{parentSetting:u.H.CONTENT_SOCIAL,settingsSection:_.nc_.CONTENT_AND_SOCIAL,tabs:t,orientation:"vertical",tabsClassName:A.v})]})}
+n.d(t, {
+    f: () => g
+});
+var i = n(627968);
+n(64700);
+var s = n(444802),
+    a = n(975571),
+    l = n(524738),
+    r = n(421248),
+    o = n(42765),
+    c = n(871930),
+    d = n(355097),
+    u = n(531525),
+    _ = n(652215),
+    m = n(985018),
+    A = n(456144);
+
+function g() {
+    let e = (0, s.WX)(),
+        t = [{
+            title: m.intl.string(m.t.GYpoAq),
+            component: r.Z,
+            orientation: "vertical",
+            setting: u.H.SEXUALLY_EXPLICIT_MEDIA_REDACTION
+        }, {
+            title: m.intl.string(m.t["16/3Bi"]),
+            component: o.q,
+            orientation: "vertical",
+            setting: u.H.GORE_MEDIA_REDACTION
+        }];
+    return (0, i.jsxs)(c.h, {
+        setting: u.H.SENSITIVE_CONTENT_FILTERS,
+        scrollPosition: d.d1.EXPLICIT_MEDIA_REDACTION_V2,
+        children: [(0, i.jsx)(c._, {
+            header: m.intl.string(m.t["Hj/But"]),
+            description: m.intl.format(m.t.dliU4j, {
+                learnMoreLink: a.A.getArticleURL(e)
+            })
+        }), (0, i.jsx)(l.A, {
+            parentSetting: u.H.CONTENT_SOCIAL,
+            settingsSection: _.nc_.CONTENT_AND_SOCIAL,
+            tabs: t,
+            orientation: "vertical",
+            tabsClassName: A.v
+        })]
+    })
+}

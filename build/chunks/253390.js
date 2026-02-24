@@ -1,2 +1,25 @@
 /** chunk id: 253390, original params: e,t,n (module,exports,require) **/
-n.d(t,{v:()=>c});var i=n(284009),s=n.n(i),a=n(97352),l=n(927578),r=n(788868),o=n(652215);function c(e,t){let n=a.A.get(e.planId);s()(null!=n,"missing premium subscription plan");let i=a.A.getForSkuAndInterval((0,l.mH)(r.pe.GUILD),n.interval,n.intervalCount);s()(null!=i,"missing premium guild plan");let c=null!=e.renewalMutations?e.renewalMutations.additionalPlans:e.additionalPlans,d=(e.status===o.Dmq.CANCELED?0:(0,l.bx)(c))+t,u=c.filter(e=>e.planId!==i.id);if(d<0)throw Error("Invalid adjustment");return 0===d?u:[...u,{planId:i.id,quantity:d}]}
+n.d(t, {
+    v: () => c
+});
+var i = n(284009),
+    s = n.n(i),
+    a = n(97352),
+    l = n(927578),
+    r = n(788868),
+    o = n(652215);
+
+function c(e, t) {
+    let n = a.A.get(e.planId);
+    s()(null != n, "missing premium subscription plan");
+    let i = a.A.getForSkuAndInterval((0, l.mH)(r.pe.GUILD), n.interval, n.intervalCount);
+    s()(null != i, "missing premium guild plan");
+    let c = null != e.renewalMutations ? e.renewalMutations.additionalPlans : e.additionalPlans,
+        d = (e.status === o.Dmq.CANCELED ? 0 : (0, l.bx)(c)) + t,
+        u = c.filter(e => e.planId !== i.id);
+    if (d < 0) throw Error("Invalid adjustment");
+    return 0 === d ? u : [...u, {
+        planId: i.id,
+        quantity: d
+    }]
+}

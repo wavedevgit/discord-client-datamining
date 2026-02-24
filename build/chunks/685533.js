@@ -1,2 +1,126 @@
 /** chunk id: 685533, original params: e,t,n (module,exports,require) **/
-"use strict";n.d(t,{A:()=>L});var s=n(627968),l=n(64700),r=n(503698),a=n.n(r),i=n(417597),o=n(397927),c=n(287809),d=n(954571),u=n(440938),g=n(590180),_=n(511265),m=n(365491),h=n(856686),p=n(100057),f=n(751304),x=n(561769),E=n(484469),C=n(998694),A=n(438166),b=n(652215),S=n(695865);let v={flattenProductVariants:!0};function L(e){let{isFetchingCategories:t,scrollerRef:n,tab:r}=e,L=(0,u.uM)(),I=L?.sessionId??"",{noCache:j,includeUnpublished:k}=(0,C.A)(),T=(0,i.bG)([c.default],()=>c.default.getCurrentUser()),{skus:O,currentPage:N,totalCount:y,isFetchingResults:R}=(0,h.S)(),B=(0,i.yK)([g.A],()=>g.A.getProductsBySkus(O)),M=l.useCallback(()=>{n?.current?.scrollToTop({animate:!0})},[n]),P=O?.join("");l.useEffect(()=>{M()},[P,M]);let D=(0,_.p)(),H=l.useMemo(()=>D(B),[D,B]);l.useEffect(()=>{t||(0,p.z)({sessionId:I,checkpoint:p.t.SHOP_RENDERED,tab:r,unpublishedCategoriesShown:k,cacheDisabled:j})},[I,k,j,t,r]);let w=l.useRef(null),{setQueryPageSize:U,setQueryPageOffset:G,queryPageSize:F}=(0,m.v)(),[V,K]=l.useState(!1),W=t||R||null==T;l.useEffect(()=>{W?K(!1):H.length>0&&K(!0)},[W,H.length]);let z=F>0&&!W&&0===H.length;l.useEffect(()=>{let e=new ResizeObserver(()=>{null==w.current||U(Math.floor(5*getComputedStyle(w.current).gridTemplateColumns.split(/\s+/).length))});if(null!=w.current)return e.observe(w.current),()=>e.disconnect()},[U]);let Y=l.useCallback(e=>{d.default.track(b.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED,{collectibles_shop_session_id:L?.sessionId,page_section:L?.pageSection,page_category:L?.pageCategory,page_index:e,page_size:F,cta_name:`filter results page ${e}`,page_type:"catalog"}),G((e-1)*F)},[L,F,G]);return(0,s.jsxs)(x.v3.Provider,{value:v,children:[(0,s.jsxs)("div",{className:a()({[S.oE]:z}),children:[z&&(0,s.jsx)(A.A,{}),(0,s.jsxs)("div",{className:a()(S.ZE,{[S.Kp]:V}),ref:w,children:[W&&[...Array(F)].map((e,t)=>(0,s.jsx)(E.A,{},t)),!W&&H.map((e,t)=>null==g.A.getCategory(e.categorySkuId)?null:(0,s.jsx)(u.R9,{newValue:{tilePosition:t},children:(0,s.jsx)(f.A,{skuId:e.skuId,onClickAnalytics:(0,x.UU)(e,r,L)},e.skuId)},e.skuId))]})]}),y>F&&(0,s.jsx)("div",{className:S.Ej,children:(0,s.jsx)("div",{children:(0,s.jsx)(o.mgR,{currentPage:N,totalCount:y,pageSize:F,onPageChange:Y,disablePaginationGap:!0})})})]})}
+"use strict";
+n.d(t, {
+    A: () => L
+});
+var s = n(627968),
+    l = n(64700),
+    r = n(503698),
+    a = n.n(r),
+    i = n(417597),
+    o = n(397927),
+    c = n(287809),
+    d = n(954571),
+    u = n(440938),
+    g = n(590180),
+    _ = n(511265),
+    m = n(365491),
+    h = n(856686),
+    p = n(100057),
+    f = n(751304),
+    x = n(561769),
+    E = n(484469),
+    C = n(998694),
+    A = n(438166),
+    b = n(652215),
+    S = n(695865);
+let v = {
+    flattenProductVariants: !0
+};
+
+function L(e) {
+    let {
+        isFetchingCategories: t,
+        scrollerRef: n,
+        tab: r
+    } = e, L = (0, u.uM)(), I = L?.sessionId ?? "", {
+        noCache: j,
+        includeUnpublished: k
+    } = (0, C.A)(), T = (0, i.bG)([c.default], () => c.default.getCurrentUser()), {
+        skus: O,
+        currentPage: N,
+        totalCount: y,
+        isFetchingResults: R
+    } = (0, h.S)(), B = (0, i.yK)([g.A], () => g.A.getProductsBySkus(O)), M = l.useCallback(() => {
+        n?.current?.scrollToTop({
+            animate: !0
+        })
+    }, [n]), P = O?.join("");
+    l.useEffect(() => {
+        M()
+    }, [P, M]);
+    let D = (0, _.p)(),
+        H = l.useMemo(() => D(B), [D, B]);
+    l.useEffect(() => {
+        t || (0, p.z)({
+            sessionId: I,
+            checkpoint: p.t.SHOP_RENDERED,
+            tab: r,
+            unpublishedCategoriesShown: k,
+            cacheDisabled: j
+        })
+    }, [I, k, j, t, r]);
+    let w = l.useRef(null),
+        {
+            setQueryPageSize: U,
+            setQueryPageOffset: G,
+            queryPageSize: F
+        } = (0, m.v)(),
+        [V, K] = l.useState(!1),
+        W = t || R || null == T;
+    l.useEffect(() => {
+        W ? K(!1) : H.length > 0 && K(!0)
+    }, [W, H.length]);
+    let z = F > 0 && !W && 0 === H.length;
+    l.useEffect(() => {
+        let e = new ResizeObserver(() => {
+            null == w.current || U(Math.floor(5 * getComputedStyle(w.current).gridTemplateColumns.split(/\s+/).length))
+        });
+        if (null != w.current) return e.observe(w.current), () => e.disconnect()
+    }, [U]);
+    let Y = l.useCallback(e => {
+        d.default.track(b.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+            collectibles_shop_session_id: L?.sessionId,
+            page_section: L?.pageSection,
+            page_category: L?.pageCategory,
+            page_index: e,
+            page_size: F,
+            cta_name: `filter results page ${e}`,
+            page_type: "catalog"
+        }), G((e - 1) * F)
+    }, [L, F, G]);
+    return (0, s.jsxs)(x.v3.Provider, {
+        value: v,
+        children: [(0, s.jsxs)("div", {
+            className: a()({
+                [S.oE]: z
+            }),
+            children: [z && (0, s.jsx)(A.A, {}), (0, s.jsxs)("div", {
+                className: a()(S.ZE, {
+                    [S.Kp]: V
+                }),
+                ref: w,
+                children: [W && [...Array(F)].map((e, t) => (0, s.jsx)(E.A, {}, t)), !W && H.map((e, t) => null == g.A.getCategory(e.categorySkuId) ? null : (0, s.jsx)(u.R9, {
+                    newValue: {
+                        tilePosition: t
+                    },
+                    children: (0, s.jsx)(f.A, {
+                        skuId: e.skuId,
+                        onClickAnalytics: (0, x.UU)(e, r, L)
+                    }, e.skuId)
+                }, e.skuId))]
+            })]
+        }), y > F && (0, s.jsx)("div", {
+            className: S.Ej,
+            children: (0, s.jsx)("div", {
+                children: (0, s.jsx)(o.mgR, {
+                    currentPage: N,
+                    totalCount: y,
+                    pageSize: F,
+                    onPageChange: Y,
+                    disablePaginationGap: !0
+                })
+            })
+        })]
+    })
+}

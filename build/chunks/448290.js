@@ -1,2 +1,42 @@
 /** chunk id: 448290, original params: e,n,t (module,exports,require) **/
-t.d(n,{A:()=>m,C:()=>g});var i=t(627968);t(64700);var l=t(311907),r=t(397927),a=t(414798),s=t(734057),d=t(576705),o=t(309010),c=t(203982),u=t(427262),h=t(652215),A=t(985018);function g(e,n){let{id:t}=e,i=`@${u.Ay.getUserTag(e,{decoration:"never"})}`,l=`<@${t}>`;c._.dispatchToLastSubscribed(h.jej.INSERT_TEXT,{plainText:i,rawText:l}),null!=n&&a.A.startTyping(n)}function m(e,n,t){let[a,c]=(0,l.yK)([o.A,s.A,d.A],()=>{let e=o.A.getChannelId(n),t=s.A.getChannel(e);return[e,null!=t&&(t.isMultiUserDM()||d.A.can(h.xBc.SEND_MESSAGES,t))]},[n]),u=t===h.BRT.POPOUT;return!c||u?null:(0,i.jsx)(r.Drp,{id:"mention",label:A.intl.string(A.t.P8tvKG),action:function(){g(e,a)}})}
+t.d(n, {
+    A: () => m,
+    C: () => g
+});
+var i = t(627968);
+t(64700);
+var l = t(311907),
+    r = t(397927),
+    a = t(414798),
+    s = t(734057),
+    d = t(576705),
+    o = t(309010),
+    c = t(203982),
+    u = t(427262),
+    h = t(652215),
+    A = t(985018);
+
+function g(e, n) {
+    let {
+        id: t
+    } = e, i = `@${u.Ay.getUserTag(e,{decoration:"never"})}`, l = `<@${t}>`;
+    c._.dispatchToLastSubscribed(h.jej.INSERT_TEXT, {
+        plainText: i,
+        rawText: l
+    }), null != n && a.A.startTyping(n)
+}
+
+function m(e, n, t) {
+    let [a, c] = (0, l.yK)([o.A, s.A, d.A], () => {
+        let e = o.A.getChannelId(n),
+            t = s.A.getChannel(e);
+        return [e, null != t && (t.isMultiUserDM() || d.A.can(h.xBc.SEND_MESSAGES, t))]
+    }, [n]), u = t === h.BRT.POPOUT;
+    return !c || u ? null : (0, i.jsx)(r.Drp, {
+        id: "mention",
+        label: A.intl.string(A.t.P8tvKG),
+        action: function() {
+            g(e, a)
+        }
+    })
+}

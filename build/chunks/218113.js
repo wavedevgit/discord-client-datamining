@@ -1,2 +1,38 @@
 /** chunk id: 218113, original params: t,e,n (module,exports,require) **/
-n.d(e,{Qs:()=>d,Sz:()=>s,aE:()=>u,f7:()=>r});var i=n(136722),l=n(818348),a=n(985018);let d=2,r=2,u=()=>[{id:"1",value:1,label:a.intl.string(a.t["GA/d4I"])},{id:"2",value:2,label:a.intl.string(a.t["+rHFej"])},{id:"4",value:4,label:a.intl.string(a.t["5CNt/M"])},{id:"6",value:6,label:a.intl.string(a.t.oQ4PNE)},{id:"12",value:12,label:a.intl.string(a.t.LOQ0j6)},{id:"24",value:24,label:a.intl.string(a.t["W0+LsV"])}],s=i.kg(l.xB.ADMINISTRATOR,l.xB.MANAGE_GUILD,l.xB.BAN_MEMBERS,l.xB.KICK_MEMBERS,l.xB.MODERATE_MEMBERS)
+n.d(e, {
+    Qs: () => d,
+    Sz: () => s,
+    aE: () => u,
+    f7: () => r
+});
+var i = n(136722),
+    l = n(818348),
+    a = n(985018);
+let d = 2,
+    r = 2,
+    u = () => [{
+        id: "1",
+        value: 1,
+        label: a.intl.string(a.t["GA/d4I"])
+    }, {
+        id: "2",
+        value: 2,
+        label: a.intl.string(a.t["+rHFej"])
+    }, {
+        id: "4",
+        value: 4,
+        label: a.intl.string(a.t["5CNt/M"])
+    }, {
+        id: "6",
+        value: 6,
+        label: a.intl.string(a.t.oQ4PNE)
+    }, {
+        id: "12",
+        value: 12,
+        label: a.intl.string(a.t.LOQ0j6)
+    }, {
+        id: "24",
+        value: 24,
+        label: a.intl.string(a.t["W0+LsV"])
+    }],
+    s = i.kg(l.xB.ADMINISTRATOR, l.xB.MANAGE_GUILD, l.xB.BAN_MEMBERS, l.xB.KICK_MEMBERS, l.xB.MODERATE_MEMBERS)

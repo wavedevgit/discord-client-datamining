@@ -1,2 +1,61 @@
 /** chunk id: 432817, original params: e,t,n (module,exports,require) **/
-n.d(t,{L:()=>m});var i=n(627968),l=n(311907),s=n(732955),a=n(397927),r=n(824552),o=n(933958),c=n(869003),d=n(954571),u=n(652215),h=n(985018);let m=e=>{let{channel:t,user:n,application:m,oauth2Token:A}=e,g=(0,l.bG)([o.Ay],()=>o.Ay.getSelfEmbeddedActivities());if(!n.bot||null==m)return null;function p(){r.A.delete(A.id);let e=g.get(m.id);null!=e&&c.A.leaveActivity({location:e.location,applicationId:m.id})}return(0,i.jsx)(a.Button,{variant:"secondary",size:"sm",text:h.intl.string(h.t["5S3sQF"]),onClick:()=>{(0,a.qfG)(e=>(0,i.jsx)(s.aFV,{title:h.intl.string(h.t["DT39A+"]),subtitle:h.intl.formatToPlainString(h.t.QWGvxA,{applicationName:m.name}),actions:[{text:h.intl.string(h.t["ETE/oC"]),variant:"secondary",onClick:e.onClose},{text:h.intl.string(h.t.xUqheM),variant:"critical-primary",onClick:()=>{p(),e.onClose()}}],...e})),d.default.track(u.HAw.APP_MANAGE_CTA_CLICKED,{application_id:m.id,channel_id:t.id,channel_type:t.type})}})}
+n.d(t, {
+    L: () => m
+});
+var i = n(627968),
+    l = n(311907),
+    s = n(732955),
+    a = n(397927),
+    r = n(824552),
+    o = n(933958),
+    c = n(869003),
+    d = n(954571),
+    u = n(652215),
+    h = n(985018);
+let m = e => {
+    let {
+        channel: t,
+        user: n,
+        application: m,
+        oauth2Token: A
+    } = e, g = (0, l.bG)([o.Ay], () => o.Ay.getSelfEmbeddedActivities());
+    if (!n.bot || null == m) return null;
+
+    function p() {
+        r.A.delete(A.id);
+        let e = g.get(m.id);
+        null != e && c.A.leaveActivity({
+            location: e.location,
+            applicationId: m.id
+        })
+    }
+    return (0, i.jsx)(a.Button, {
+        variant: "secondary",
+        size: "sm",
+        text: h.intl.string(h.t["5S3sQF"]),
+        onClick: () => {
+            (0, a.qfG)(e => (0, i.jsx)(s.aFV, {
+                title: h.intl.string(h.t["DT39A+"]),
+                subtitle: h.intl.formatToPlainString(h.t.QWGvxA, {
+                    applicationName: m.name
+                }),
+                actions: [{
+                    text: h.intl.string(h.t["ETE/oC"]),
+                    variant: "secondary",
+                    onClick: e.onClose
+                }, {
+                    text: h.intl.string(h.t.xUqheM),
+                    variant: "critical-primary",
+                    onClick: () => {
+                        p(), e.onClose()
+                    }
+                }],
+                ...e
+            })), d.default.track(u.HAw.APP_MANAGE_CTA_CLICKED, {
+                application_id: m.id,
+                channel_id: t.id,
+                channel_type: t.type
+            })
+        }
+    })
+}

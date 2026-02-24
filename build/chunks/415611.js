@@ -1,2 +1,9 @@
 /** chunk id: 415611, original params: t,r,e (module,exports,require) **/
-"use strict";var n=e(715804),o=e(664957),s=Array.prototype;t.exports=function(t){var r=t.slice;return t===s||n(s,t)&&r===s.slice?o:r}
+"use strict";
+var n = e(715804),
+    o = e(664957),
+    s = Array.prototype;
+t.exports = function(t) {
+    var r = t.slice;
+    return t === s || n(s, t) && r === s.slice ? o : r
+}

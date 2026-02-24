@@ -1,2 +1,21 @@
 /** chunk id: 673277, original params: e,t,r (module,exports,require) **/
-r.d(t,{A:()=>d});var l=r(627968);r(64700);let d=e=>{let{verticalMargin:t=16,padding:r=0,children:d}=e;return(0,l.jsx)("section",{style:{marginTop:t,marginBottom:t,padding:r},children:d})}
+r.d(t, {
+    A: () => d
+});
+var l = r(627968);
+r(64700);
+let d = e => {
+    let {
+        verticalMargin: t = 16,
+        padding: r = 0,
+        children: d
+    } = e;
+    return (0, l.jsx)("section", {
+        style: {
+            marginTop: t,
+            marginBottom: t,
+            padding: r
+        },
+        children: d
+    })
+}

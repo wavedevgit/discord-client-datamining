@@ -1,2 +1,34 @@
 /** chunk id: 221094, original params: e,t,n (module,exports,require) **/
-n.d(t,{y:()=>s});var i=n(64700),r=n(600975),l=n(652215);let a=(0,r.C)({kind:"guild",id:"2021-10_study_group",label:"Student hub study group",defaultConfig:{enableStudyGroup:!1},treatments:[{id:1,label:"Enables study group sidebar",config:{enableStudyGroup:!0}}]}),s=e=>(i.useEffect(()=>{null!=e&&e.features.has(l.GuildFeatures.HUB)&&a.trackExposure({guildId:e.id,location:"467c32_1"})},[e]),a.useExperiment({guildId:e?.id??l.dJq,location:"467c32_2"},{autoTrackExposure:!1,disable:null==e||!e.features.has(l.GuildFeatures.HUB)}))
+n.d(t, {
+    y: () => s
+});
+var i = n(64700),
+    r = n(600975),
+    l = n(652215);
+let a = (0, r.C)({
+        kind: "guild",
+        id: "2021-10_study_group",
+        label: "Student hub study group",
+        defaultConfig: {
+            enableStudyGroup: !1
+        },
+        treatments: [{
+            id: 1,
+            label: "Enables study group sidebar",
+            config: {
+                enableStudyGroup: !0
+            }
+        }]
+    }),
+    s = e => (i.useEffect(() => {
+        null != e && e.features.has(l.GuildFeatures.HUB) && a.trackExposure({
+            guildId: e.id,
+            location: "467c32_1"
+        })
+    }, [e]), a.useExperiment({
+        guildId: e?.id ?? l.dJq,
+        location: "467c32_2"
+    }, {
+        autoTrackExposure: !1,
+        disable: null == e || !e.features.has(l.GuildFeatures.HUB)
+    }))

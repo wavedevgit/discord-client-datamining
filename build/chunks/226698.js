@@ -1,2 +1,17 @@
 /** chunk id: 226698, original params: t,e,n (module,exports,require) **/
-n.d(e,{A:()=>l});var a=n(562465),i=n(652215);let l={resolveFlag:t=>a.Bo.post({url:i.Rsh.MODERATOR_REPORT_CLOSE(t),body:{},rejectWithError:!0}),reopenModReport:t=>a.Bo.put({url:i.Rsh.REPORT_TO_MOD_REOPEN(t),rejectWithError:!0})}
+n.d(e, {
+    A: () => l
+});
+var a = n(562465),
+    i = n(652215);
+let l = {
+    resolveFlag: t => a.Bo.post({
+        url: i.Rsh.MODERATOR_REPORT_CLOSE(t),
+        body: {},
+        rejectWithError: !0
+    }),
+    reopenModReport: t => a.Bo.put({
+        url: i.Rsh.REPORT_TO_MOD_REOPEN(t),
+        rejectWithError: !0
+    })
+}

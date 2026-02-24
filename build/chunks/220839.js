@@ -1,2 +1,15 @@
 /** chunk id: 220839, original params: t,e,i (module,exports,require) **/
-i.d(e,{A:()=>n});var s=i(64700);let n=(t,e)=>{let i=(0,s.useRef)(t);(0,s.useEffect)(()=>{i.current=t},[t]),(0,s.useEffect)(()=>{if(null===e)return;let t=setTimeout(()=>i.current(),e);return()=>clearTimeout(t)},[e,i])}
+i.d(e, {
+    A: () => n
+});
+var s = i(64700);
+let n = (t, e) => {
+    let i = (0, s.useRef)(t);
+    (0, s.useEffect)(() => {
+        i.current = t
+    }, [t]), (0, s.useEffect)(() => {
+        if (null === e) return;
+        let t = setTimeout(() => i.current(), e);
+        return () => clearTimeout(t)
+    }, [e, i])
+}

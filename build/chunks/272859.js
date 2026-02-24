@@ -1,2 +1,14 @@
 /** chunk id: 272859, original params: t,e,l (module,exports,require) **/
-l.d(e,{d:()=>a});var s=l(311907),r=l(800342),n=l(328968),i=l(652215);let a=(0,s.UT)(n.A,{getQueryId:i.fic.STORE_LISTING,get:t=>null!=t?n.A.getForSKU(t)??null:null,load:t=>null!=t?(0,r.QB)(t):Promise.resolve(),getIsLoading:t=>null!=t&&n.A.isFetchingForSKU(t)})
+l.d(e, {
+    d: () => a
+});
+var s = l(311907),
+    r = l(800342),
+    n = l(328968),
+    i = l(652215);
+let a = (0, s.UT)(n.A, {
+    getQueryId: i.fic.STORE_LISTING,
+    get: t => null != t ? n.A.getForSKU(t) ?? null : null,
+    load: t => null != t ? (0, r.QB)(t) : Promise.resolve(),
+    getIsLoading: t => null != t && n.A.isFetchingForSKU(t)
+})

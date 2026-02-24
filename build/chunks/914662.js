@@ -1,2 +1,49 @@
 /** chunk id: 914662, original params: e,t,n (module,exports,require) **/
-n.d(t,{A:()=>r});var i=n(627968);n(64700);var l=n(397927),s=n(985018),a=n(135716);function r(e){let{onClose:t,guildName:n}=e;return(0,i.jsxs)("div",{className:a.kL,children:[(0,i.jsx)("div",{className:a.zc,children:(0,i.jsx)(l.gQi,{size:"custom",color:"currentColor",className:a.Kk,width:20,height:20})}),(0,i.jsxs)("div",{className:a.wx,children:[(0,i.jsx)(l.Heading,{variant:"heading-md/semibold",className:a.TK,children:s.intl.string(s.t.LIIyeE)}),(0,i.jsx)(l.Text,{variant:"text-sm/normal",children:s.intl.format(s.t["4/6vQh"],{guildName:n})}),(0,i.jsx)("div",{"data-button-hoisted-classname-wrapper":!0,className:a.x6,children:(0,i.jsx)(l.Button,{variant:"primary",text:s.intl.string(s.t.BddRzS),onClick:t})})]})]})}
+n.d(t, {
+    A: () => r
+});
+var i = n(627968);
+n(64700);
+var l = n(397927),
+    s = n(985018),
+    a = n(135716);
+
+function r(e) {
+    let {
+        onClose: t,
+        guildName: n
+    } = e;
+    return (0, i.jsxs)("div", {
+        className: a.kL,
+        children: [(0, i.jsx)("div", {
+            className: a.zc,
+            children: (0, i.jsx)(l.gQi, {
+                size: "custom",
+                color: "currentColor",
+                className: a.Kk,
+                width: 20,
+                height: 20
+            })
+        }), (0, i.jsxs)("div", {
+            className: a.wx,
+            children: [(0, i.jsx)(l.Heading, {
+                variant: "heading-md/semibold",
+                className: a.TK,
+                children: s.intl.string(s.t.LIIyeE)
+            }), (0, i.jsx)(l.Text, {
+                variant: "text-sm/normal",
+                children: s.intl.format(s.t["4/6vQh"], {
+                    guildName: n
+                })
+            }), (0, i.jsx)("div", {
+                "data-button-hoisted-classname-wrapper": !0,
+                className: a.x6,
+                children: (0, i.jsx)(l.Button, {
+                    variant: "primary",
+                    text: s.intl.string(s.t.BddRzS),
+                    onClick: t
+                })
+            })]
+        })]
+    })
+}

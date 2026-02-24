@@ -1,9 +1,0 @@
-/** chunk id: 949626, original params: t,e,r (module,exports,require) **/
-var n = r(108591),
-    o = r(739305),
-    i = o.aTypedArray,
-    a = o.exportTypedArrayMethod,
-    u = o.getTypedArrayConstructor;
-a("toReversed", function() {
-    return n(i(this), u(this))
-})

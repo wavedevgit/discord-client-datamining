@@ -1,2 +1,2 @@
 /** chunk id: 890007, original params: p,s,t (module,exports,require) **/
-p.exports=t.p+"29027d6e6b9f89f2.lottie"
+p.exports = t.p + "29027d6e6b9f89f2.lottie"

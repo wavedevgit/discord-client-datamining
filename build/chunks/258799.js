@@ -1,2 +1,22 @@
 /** chunk id: 258799, original params: e,t,n (module,exports,require) **/
-n.d(t,{A:()=>l});var i=n(627968),s=n(307973),a=n(969923);let l=e=>{let{isMotionReduced:t,containerVisibilityPercentage:n}=e;return(0,i.jsx)(s.A,{isMotionReduced:t,containerVisibilityPercentage:n,hammerContainerClassName:a.Gj,keyContainerClassName:a.FV,hammerAssetClassName:a.Wv,keyAssetClassName:a.rs,animationSpeedScale:2})}
+n.d(t, {
+    A: () => l
+});
+var i = n(627968),
+    s = n(307973),
+    a = n(969923);
+let l = e => {
+    let {
+        isMotionReduced: t,
+        containerVisibilityPercentage: n
+    } = e;
+    return (0, i.jsx)(s.A, {
+        isMotionReduced: t,
+        containerVisibilityPercentage: n,
+        hammerContainerClassName: a.Gj,
+        keyContainerClassName: a.FV,
+        hammerAssetClassName: a.Wv,
+        keyAssetClassName: a.rs,
+        animationSpeedScale: 2
+    })
+}

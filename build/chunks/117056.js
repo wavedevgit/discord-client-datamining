@@ -1,2 +1,49 @@
 /** chunk id: 117056, original params: e,t,n (module,exports,require) **/
-n.d(t,{A:()=>_});var l=n(627968),a=n(64700),i=n(314116),r=n(58149),s=n(997509),d=n(632738),o=n(71393),c=n(652215),u=n(985018);let _=e=>{let{guildId:t,reportId:n}=e,[_,m]=a.useState(!1),x=o.A.getGuild(t),p=null!=x;a.useEffect(()=>{m(!p)},[p]);let g=a.useCallback(()=>{m(!0),r.Ay.trackWithMetadata(c.HAw.IAR_LEAVE_GUILD_BUTTON_CLICKED,{guild_id:t,report_id:n}),s.A.leaveGuild(t)},[t,n]);return null==x?null:(0,l.jsx)(d.PQ,{title:u.intl.string(u.t.cU96ip),description:u.intl.formatToPlainString(u.t["26mR6/"],{guildName:x?.name}),buttonText:_?u.intl.string(u.t["9Ak99h"]):u.intl.string(u.t.F3qExp),buttonDisabled:_,buttonVariant:"critical-primary",onButtonPress:()=>{(0,i.A)({title:u.intl.formatToPlainString(u.t["1GX6P/"],{name:x.name}),subtitle:u.intl.format(u.t.ZEXC0r,{name:x.name}),confirmText:u.intl.string(u.t.J2TBi3),onConfirm:g})}})}
+n.d(t, {
+    A: () => _
+});
+var l = n(627968),
+    a = n(64700),
+    i = n(314116),
+    r = n(58149),
+    s = n(997509),
+    d = n(632738),
+    o = n(71393),
+    c = n(652215),
+    u = n(985018);
+let _ = e => {
+    let {
+        guildId: t,
+        reportId: n
+    } = e, [_, m] = a.useState(!1), x = o.A.getGuild(t), p = null != x;
+    a.useEffect(() => {
+        m(!p)
+    }, [p]);
+    let g = a.useCallback(() => {
+        m(!0), r.Ay.trackWithMetadata(c.HAw.IAR_LEAVE_GUILD_BUTTON_CLICKED, {
+            guild_id: t,
+            report_id: n
+        }), s.A.leaveGuild(t)
+    }, [t, n]);
+    return null == x ? null : (0, l.jsx)(d.PQ, {
+        title: u.intl.string(u.t.cU96ip),
+        description: u.intl.formatToPlainString(u.t["26mR6/"], {
+            guildName: x?.name
+        }),
+        buttonText: _ ? u.intl.string(u.t["9Ak99h"]) : u.intl.string(u.t.F3qExp),
+        buttonDisabled: _,
+        buttonVariant: "critical-primary",
+        onButtonPress: () => {
+            (0, i.A)({
+                title: u.intl.formatToPlainString(u.t["1GX6P/"], {
+                    name: x.name
+                }),
+                subtitle: u.intl.format(u.t.ZEXC0r, {
+                    name: x.name
+                }),
+                confirmText: u.intl.string(u.t.J2TBi3),
+                onConfirm: g
+            })
+        }
+    })
+}

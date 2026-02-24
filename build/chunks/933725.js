@@ -1,2 +1,29 @@
 /** chunk id: 933725, original params: e,t,n (module,exports,require) **/
-n.d(t,{m:()=>o});var i=n(562465),s=n(73153),r=n(287809),l=n(652215);async function o(e,t){try{let n=await i.Bo.put({url:l.Rsh.USER_SET_GUILD_IDENTITY,body:{identity_guild_id:e,identity_enabled:t},rejectWithError:!1});return n.ok&&s.h.dispatch({type:"CURRENT_USER_UPDATE",user:{...r.default.getCurrentUser(),...n.body}}),n}catch(e){return e}}
+n.d(t, {
+    m: () => o
+});
+var i = n(562465),
+    s = n(73153),
+    r = n(287809),
+    l = n(652215);
+async function o(e, t) {
+    try {
+        let n = await i.Bo.put({
+            url: l.Rsh.USER_SET_GUILD_IDENTITY,
+            body: {
+                identity_guild_id: e,
+                identity_enabled: t
+            },
+            rejectWithError: !1
+        });
+        return n.ok && s.h.dispatch({
+            type: "CURRENT_USER_UPDATE",
+            user: {
+                ...r.default.getCurrentUser(),
+                ...n.body
+            }
+        }), n
+    } catch (e) {
+        return e
+    }
+}

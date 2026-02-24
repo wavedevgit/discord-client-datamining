@@ -1,2 +1,44 @@
 /** chunk id: 556445, original params: t,e,n (module,exports,require) **/
-n.d(e,{A:()=>o});var i=n(627968);n(64700);var l=n(990078),r=n(397927),a=n(562153),s=n(353411);function o(t){let{activity:e,user:n,channelId:o,guildId:d,source:u,size:c="sm",variant:A="secondary",onAction:p,...m}=t,{tooltip:h,loading:g,disabled:f,onClick:E}=(0,s.J$)(e,n,u,a.Ay.getNickname(d,o,n));return(0,i.jsx)(l.m,{text:h,children:(0,i.jsx)(r.K0,{icon:r.J2m,size:c,variant:A,onClick:()=>{p?.(),E()},disabled:f,loading:g,"aria-label":h??e.name,...m})})}
+n.d(e, {
+    A: () => o
+});
+var i = n(627968);
+n(64700);
+var l = n(990078),
+    r = n(397927),
+    a = n(562153),
+    s = n(353411);
+
+function o(t) {
+    let {
+        activity: e,
+        user: n,
+        channelId: o,
+        guildId: d,
+        source: u,
+        size: c = "sm",
+        variant: A = "secondary",
+        onAction: p,
+        ...m
+    } = t, {
+        tooltip: h,
+        loading: g,
+        disabled: f,
+        onClick: E
+    } = (0, s.J$)(e, n, u, a.Ay.getNickname(d, o, n));
+    return (0, i.jsx)(l.m, {
+        text: h,
+        children: (0, i.jsx)(r.K0, {
+            icon: r.J2m,
+            size: c,
+            variant: A,
+            onClick: () => {
+                p?.(), E()
+            },
+            disabled: f,
+            loading: g,
+            "aria-label": h ?? e.name,
+            ...m
+        })
+    })
+}

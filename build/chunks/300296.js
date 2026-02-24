@@ -1,2 +1,6 @@
 /** chunk id: 300296, original params: e,t,s (module,exports,require) **/
-e.exports={c:"searchbar_e449ff",p_:"list_e449ff",yk:"inviteUsersResultContainer_e449ff"}
+e.exports = {
+    c: "searchbar_e449ff",
+    p_: "list_e449ff",
+    yk: "inviteUsersResultContainer_e449ff"
+}

@@ -1,2 +1,60 @@
 /** chunk id: 842716, original params: e,t,r (module,exports,require) **/
-r.d(t,{A:()=>d}),r(667532);var s=r(311907),n=r(506774),l=r(73153),a=r(768570);let i=a.nC,o=!1,u={};class c extends s.Ay.Store{static displayName=a.yQ;initialize(){var e;let t=n.w.get(i);t?.history!=null&&(Object.keys(e=t.history).forEach(t=>{Array.isArray(e[t])&&(e[t]=e[t].filter(e=>"string"==typeof e&&e.trim())),Array.isArray(e[t])&&0!==e[t].length||delete e[t]}),u=e),o=!!n.w.get("tokenized")}isTokenized(){return o}getHistory(e){return u[e]}}let d=new c(l.h,{SEARCH_HISTORY_WEB_CLEAR_ITEMS:function(e){let{id:t}=e;delete u[t],n.w.set(a.nC,{history:u})},SEARCH_HISTORY_WEB_REMOVE_ITEM:function(e){let{id:t,query:r}=e;null!=u[t]&&(u[t]=u[t].filter(e=>e!==r),n.w.set(a.nC,{history:u}))},SEARCH_HISTORY_WEB_ADD_ITEM:function(e){let{id:t,query:r}=e;if("string"!=typeof r||""===(r=r.trim()))return;let s=u[t]=u[t]??[],l=s.indexOf(r);-1!==l?(s.splice(l,1),s.unshift(r)):null!=s[0]&&""!==s[0]&&r.startsWith(s[0])?s[0]=r:l<0&&s.unshift(r),s.length>5&&s.splice(5,s.length),n.w.set(a.nC,{history:u})},LOGOUT:function(){n.w.remove(a.nC),u={}}})
+r.d(t, {
+    A: () => d
+}), r(667532);
+var s = r(311907),
+    n = r(506774),
+    l = r(73153),
+    a = r(768570);
+let i = a.nC,
+    o = !1,
+    u = {};
+class c extends s.Ay.Store {
+    static displayName = a.yQ;
+    initialize() {
+        var e;
+        let t = n.w.get(i);
+        t?.history != null && (Object.keys(e = t.history).forEach(t => {
+            Array.isArray(e[t]) && (e[t] = e[t].filter(e => "string" == typeof e && e.trim())), Array.isArray(e[t]) && 0 !== e[t].length || delete e[t]
+        }), u = e), o = !!n.w.get("tokenized")
+    }
+    isTokenized() {
+        return o
+    }
+    getHistory(e) {
+        return u[e]
+    }
+}
+let d = new c(l.h, {
+    SEARCH_HISTORY_WEB_CLEAR_ITEMS: function(e) {
+        let {
+            id: t
+        } = e;
+        delete u[t], n.w.set(a.nC, {
+            history: u
+        })
+    },
+    SEARCH_HISTORY_WEB_REMOVE_ITEM: function(e) {
+        let {
+            id: t,
+            query: r
+        } = e;
+        null != u[t] && (u[t] = u[t].filter(e => e !== r), n.w.set(a.nC, {
+            history: u
+        }))
+    },
+    SEARCH_HISTORY_WEB_ADD_ITEM: function(e) {
+        let {
+            id: t,
+            query: r
+        } = e;
+        if ("string" != typeof r || "" === (r = r.trim())) return;
+        let s = u[t] = u[t] ?? [],
+            l = s.indexOf(r); - 1 !== l ? (s.splice(l, 1), s.unshift(r)) : null != s[0] && "" !== s[0] && r.startsWith(s[0]) ? s[0] = r : l < 0 && s.unshift(r), s.length > 5 && s.splice(5, s.length), n.w.set(a.nC, {
+            history: u
+        })
+    },
+    LOGOUT: function() {
+        n.w.remove(a.nC), u = {}
+    }
+})

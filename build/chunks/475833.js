@@ -1,2 +1,31 @@
 /** chunk id: 475833, original params: e,t,n (module,exports,require) **/
-n.d(t,{A:()=>c});var i=n(627968);n(64700);var s=n(503698),a=n.n(s),l=n(397927),r=n(427262),o=n(585665);let c=e=>{let{user:t,fill:n,hideUserTag:s}=e,c=`\xa0(@${r.Ay.getUserTag(t,{decoration:"never"})})`;return(0,i.jsxs)(l.Text,{className:a()([{[o.GS]:n}]),variant:"text-md/medium",children:[(0,i.jsx)("span",{className:o.Xh,children:r.Ay.getName(t)}),s?null:(0,i.jsx)("span",{className:o.D2,children:c})]})}
+n.d(t, {
+    A: () => c
+});
+var i = n(627968);
+n(64700);
+var s = n(503698),
+    a = n.n(s),
+    l = n(397927),
+    r = n(427262),
+    o = n(585665);
+let c = e => {
+    let {
+        user: t,
+        fill: n,
+        hideUserTag: s
+    } = e, c = `\xa0(@${r.Ay.getUserTag(t,{decoration:"never"})})`;
+    return (0, i.jsxs)(l.Text, {
+        className: a()([{
+            [o.GS]: n
+        }]),
+        variant: "text-md/medium",
+        children: [(0, i.jsx)("span", {
+            className: o.Xh,
+            children: r.Ay.getName(t)
+        }), s ? null : (0, i.jsx)("span", {
+            className: o.D2,
+            children: c
+        })]
+    })
+}

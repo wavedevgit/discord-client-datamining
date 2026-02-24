@@ -1,2 +1,11 @@
 /** chunk id: 761847, original params: e,t,r (module,exports,require) **/
-"use strict";function a(e){return(a=Object.setPrototypeOf?Object.getPrototypeOf.bind():function(e){return e.__proto__||Object.getPrototypeOf(e)})(e)}r.d(t,{A:()=>a})
+"use strict";
+
+function a(e) {
+    return (a = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(e) {
+        return e.__proto__ || Object.getPrototypeOf(e)
+    })(e)
+}
+r.d(t, {
+    A: () => a
+})

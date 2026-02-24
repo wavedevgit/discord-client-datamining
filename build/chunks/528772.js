@@ -1,2 +1,22 @@
 /** chunk id: 528772, original params: e,t,n (module,exports,require) **/
-n.d(t,{A:()=>s});var r=n(311907),a=n(73153);let i=!1,l=!1;class u extends r.Ay.Store{static displayName="SoundboardOverlayStore";get keepOpen(){return l}get enabled(){return i}}let s=new u(a.h,{SOUNDBOARD_SET_OVERLAY_ENABLED:function(e){i=e.enabled,e.enabled&&(l=e.keepOpen??!1)}})
+n.d(t, {
+    A: () => s
+});
+var r = n(311907),
+    a = n(73153);
+let i = !1,
+    l = !1;
+class u extends r.Ay.Store {
+    static displayName = "SoundboardOverlayStore";
+    get keepOpen() {
+        return l
+    }
+    get enabled() {
+        return i
+    }
+}
+let s = new u(a.h, {
+    SOUNDBOARD_SET_OVERLAY_ENABLED: function(e) {
+        i = e.enabled, e.enabled && (l = e.keepOpen ?? !1)
+    }
+})

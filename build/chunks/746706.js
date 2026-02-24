@@ -1,2 +1,77 @@
 /** chunk id: 746706, original params: e,t,n (module,exports,require) **/
-n.d(t,{A:()=>E});var i=n(627968),s=n(64700),a=n(421380),l=n(397927),r=n(736653),o=n(793574),c=n(688810),d=n(465794),u=n(954571),_=n(927578),m=n(652215),A=n(788868),g=n(985018),h=n(547568),x=n(896237),p=n(448085);function E(e){let{user:t,showOverlay:n,children:E}=e,C=(0,r.Ay)(),{analyticsLocations:T}=(0,c.Ay)(o.A.PREMIUM_UPSELL_OVERLAY);return(s.useEffect(()=>{n&&u.default.track(m.HAw.PREMIUM_UPSELL_VIEWED,{location_stack:T,type:A.e.PREMIUM_GUILD_MEMBER_PROFILE_UPSELL_INLINE})},[n,T]),n)?(0,i.jsxs)("div",{className:h.ry,children:[(0,i.jsx)("div",{children:E}),(0,i.jsxs)("div",{className:h.Wc,children:[(0,i.jsx)("img",{className:h.Tn,alt:g.intl.string(g.t.LHFZQy),src:function(e){switch(e){case m.NJ8.DARK:case m.NJ8.DARKER:case m.NJ8.MIDNIGHT:return x;case m.NJ8.LIGHT:return p;default:return x}}(C)}),(0,i.jsxs)("div",{className:h._9,children:[(0,i.jsx)(l.Text,{variant:"text-lg/semibold",color:"always-white",children:g.intl.string(g.t.dMaDFX)}),(0,i.jsx)(l.Text,{variant:"text-sm/normal",color:"always-white",children:g.intl.string(g.t.F7sgFH)})]}),(0,i.jsx)(d.A,{size:a.$n.Sizes.LARGE,color:a.$n.Colors.GREEN,textOptions:{textOverride:_.Ay.isPremium(t)?g.intl.string(g.t.AfRWI8):g.intl.string(g.t.nkdUym)},subscriptionTier:A.pe.TIER_2})]})]}):E}
+n.d(t, {
+    A: () => E
+});
+var i = n(627968),
+    s = n(64700),
+    a = n(421380),
+    l = n(397927),
+    r = n(736653),
+    o = n(793574),
+    c = n(688810),
+    d = n(465794),
+    u = n(954571),
+    _ = n(927578),
+    m = n(652215),
+    A = n(788868),
+    g = n(985018),
+    h = n(547568),
+    x = n(896237),
+    p = n(448085);
+
+function E(e) {
+    let {
+        user: t,
+        showOverlay: n,
+        children: E
+    } = e, C = (0, r.Ay)(), {
+        analyticsLocations: T
+    } = (0, c.Ay)(o.A.PREMIUM_UPSELL_OVERLAY);
+    return (s.useEffect(() => {
+        n && u.default.track(m.HAw.PREMIUM_UPSELL_VIEWED, {
+            location_stack: T,
+            type: A.e.PREMIUM_GUILD_MEMBER_PROFILE_UPSELL_INLINE
+        })
+    }, [n, T]), n) ? (0, i.jsxs)("div", {
+        className: h.ry,
+        children: [(0, i.jsx)("div", {
+            children: E
+        }), (0, i.jsxs)("div", {
+            className: h.Wc,
+            children: [(0, i.jsx)("img", {
+                className: h.Tn,
+                alt: g.intl.string(g.t.LHFZQy),
+                src: function(e) {
+                    switch (e) {
+                        case m.NJ8.DARK:
+                        case m.NJ8.DARKER:
+                        case m.NJ8.MIDNIGHT:
+                            return x;
+                        case m.NJ8.LIGHT:
+                            return p;
+                        default:
+                            return x
+                    }
+                }(C)
+            }), (0, i.jsxs)("div", {
+                className: h._9,
+                children: [(0, i.jsx)(l.Text, {
+                    variant: "text-lg/semibold",
+                    color: "always-white",
+                    children: g.intl.string(g.t.dMaDFX)
+                }), (0, i.jsx)(l.Text, {
+                    variant: "text-sm/normal",
+                    color: "always-white",
+                    children: g.intl.string(g.t.F7sgFH)
+                })]
+            }), (0, i.jsx)(d.A, {
+                size: a.$n.Sizes.LARGE,
+                color: a.$n.Colors.GREEN,
+                textOptions: {
+                    textOverride: _.Ay.isPremium(t) ? g.intl.string(g.t.AfRWI8) : g.intl.string(g.t.nkdUym)
+                },
+                subscriptionTier: A.pe.TIER_2
+            })]
+        })]
+    }) : E
+}

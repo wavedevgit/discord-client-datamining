@@ -1,2 +1,78 @@
 /** chunk id: 148702, original params: e,t,l (module,exports,require) **/
-"use strict";l.d(t,{A:()=>d});var r=l(627968),a=l(64700),n=l(503698),i=l.n(n),s=l(752238),o=l(781992);function d(e){let{value:t,onChange:l}=e,n="json",d=a.useRef(null),[c,u]=a.useState("");return a.useEffect(()=>{if(null!=t&&s.default.hasLanguage(n)){let e=s.default.highlight(n,t,!0);null!=e?u(e.value+"\n"):u(t+"\n")}else u(t+"\n")},[t,n]),(0,r.jsxs)("div",{className:o.t,children:[(0,r.jsx)("pre",{className:o.c5,"aria-hidden":"true",children:(0,r.jsx)("code",{className:i()("hljs",n),dangerouslySetInnerHTML:{__html:c??""}})}),(0,r.jsx)("textarea",{ref:d,className:o.mW,value:t,onChange:e=>{l(e.target.value)},onScroll:e=>{let t=e.target,l=t.previousElementSibling;null!=l&&(l.scrollTop=t.scrollTop,l.scrollLeft=t.scrollLeft)},onKeyDown:e=>{if("Tab"===e.key){e.preventDefault();let r=e.target,a=r.selectionStart,n=r.selectionEnd;if(e.shiftKey){let e=t.lastIndexOf("\n",a-1)+1,r=t.indexOf("\n",a),n=t.substring(e,-1===r?t.length:r),i=0;for(let e=0;e<Math.min(2,n.length);e++)if(" "===n[e])i++;else break;i>0&&(l(t.substring(0,e)+t.substring(e+i)),setTimeout(()=>{if(null!=d.current){let t=Math.max(e,a-i);d.current.selectionStart=d.current.selectionEnd=t}},0))}else l(t.substring(0,a)+"  "+t.substring(n)),setTimeout(()=>{null!=d.current&&(d.current.selectionStart=d.current.selectionEnd=a+2)},0)}},spellCheck:!1,autoCapitalize:"off",autoComplete:"off",autoCorrect:"off",rows:30})]})}
+"use strict";
+l.d(t, {
+    A: () => d
+});
+var r = l(627968),
+    a = l(64700),
+    n = l(503698),
+    i = l.n(n),
+    s = l(752238),
+    o = l(781992);
+
+function d(e) {
+    let {
+        value: t,
+        onChange: l
+    } = e, n = "json", d = a.useRef(null), [c, u] = a.useState("");
+    return a.useEffect(() => {
+        if (null != t && s.default.hasLanguage(n)) {
+            let e = s.default.highlight(n, t, !0);
+            null != e ? u(e.value + "\n") : u(t + "\n")
+        } else u(t + "\n")
+    }, [t, n]), (0, r.jsxs)("div", {
+        className: o.t,
+        children: [(0, r.jsx)("pre", {
+            className: o.c5,
+            "aria-hidden": "true",
+            children: (0, r.jsx)("code", {
+                className: i()("hljs", n),
+                dangerouslySetInnerHTML: {
+                    __html: c ?? ""
+                }
+            })
+        }), (0, r.jsx)("textarea", {
+            ref: d,
+            className: o.mW,
+            value: t,
+            onChange: e => {
+                l(e.target.value)
+            },
+            onScroll: e => {
+                let t = e.target,
+                    l = t.previousElementSibling;
+                null != l && (l.scrollTop = t.scrollTop, l.scrollLeft = t.scrollLeft)
+            },
+            onKeyDown: e => {
+                if ("Tab" === e.key) {
+                    e.preventDefault();
+                    let r = e.target,
+                        a = r.selectionStart,
+                        n = r.selectionEnd;
+                    if (e.shiftKey) {
+                        let e = t.lastIndexOf("\n", a - 1) + 1,
+                            r = t.indexOf("\n", a),
+                            n = t.substring(e, -1 === r ? t.length : r),
+                            i = 0;
+                        for (let e = 0; e < Math.min(2, n.length); e++)
+                            if (" " === n[e]) i++;
+                            else break;
+                        i > 0 && (l(t.substring(0, e) + t.substring(e + i)), setTimeout(() => {
+                            if (null != d.current) {
+                                let t = Math.max(e, a - i);
+                                d.current.selectionStart = d.current.selectionEnd = t
+                            }
+                        }, 0))
+                    } else l(t.substring(0, a) + "  " + t.substring(n)), setTimeout(() => {
+                        null != d.current && (d.current.selectionStart = d.current.selectionEnd = a + 2)
+                    }, 0)
+                }
+            },
+            spellCheck: !1,
+            autoCapitalize: "off",
+            autoComplete: "off",
+            autoCorrect: "off",
+            rows: 30
+        })]
+    })
+}

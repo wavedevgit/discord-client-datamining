@@ -1,2 +1,27 @@
 /** chunk id: 176634, original params: e,t,i (module,exports,require) **/
-i.d(t,{A:()=>r});var n=i(64700),a=i(621466),l=i(654108);function r(e){let{onPasteFiles:t,onPasteBackgroundText:i}=e;n.useEffect(()=>{let e=e=>{let n=e.clipboardData?.files;if(null!=n&&n.length>0)null!=t&&(e.preventDefault(),e.stopPropagation(),t(n));else if(null!=i&&!(0,l.A)((0,a.BF)(e))){let t=e.clipboardData?.getData("text");null!=t&&(e.preventDefault(),e.stopPropagation(),i(t))}};return document.addEventListener("paste",e,!0),()=>{document.removeEventListener("paste",e,!0)}},[t,i])}
+i.d(t, {
+    A: () => r
+});
+var n = i(64700),
+    a = i(621466),
+    l = i(654108);
+
+function r(e) {
+    let {
+        onPasteFiles: t,
+        onPasteBackgroundText: i
+    } = e;
+    n.useEffect(() => {
+        let e = e => {
+            let n = e.clipboardData?.files;
+            if (null != n && n.length > 0) null != t && (e.preventDefault(), e.stopPropagation(), t(n));
+            else if (null != i && !(0, l.A)((0, a.BF)(e))) {
+                let t = e.clipboardData?.getData("text");
+                null != t && (e.preventDefault(), e.stopPropagation(), i(t))
+            }
+        };
+        return document.addEventListener("paste", e, !0), () => {
+            document.removeEventListener("paste", e, !0)
+        }
+    }, [t, i])
+}

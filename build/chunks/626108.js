@@ -1,2 +1,6 @@
 /** chunk id: 626108, original params: r,e,a (module,exports,require) **/
-r.exports={mI:"badgeImageContainer__9953c",pq:"badgeImage__9953c",$t:"progressCircleContainer__9953c"}
+r.exports = {
+    mI: "badgeImageContainer__9953c",
+    pq: "badgeImage__9953c",
+    $t: "progressCircleContainer__9953c"
+}

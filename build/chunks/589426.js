@@ -1,2 +1,2 @@
 /** chunk id: 589426, original params: i (module,exports,require) **/
-i.exports=JSON.parse('{"yfwZuy":["Rozetimi G\xf6r\xfcnt\xfcle"],"UnPGii":["Rozet profiline eklendi."],"nvaTQq":["Orbs Profil Rozeti\'ni Topladın!"]}')
+i.exports = JSON.parse('{"yfwZuy":["Rozetimi G\xf6r\xfcnt\xfcle"],"UnPGii":["Rozet profiline eklendi."],"nvaTQq":["Orbs Profil Rozeti\'ni Topladın!"]}')

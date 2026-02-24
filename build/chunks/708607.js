@@ -1,2 +1,8 @@
 /** chunk id: 708607, original params: e,t,n (module,exports,require) **/
-"use strict";e.exports={kL:"container_a54d1d",Sl:"image_a54d1d",DD:"title_a54d1d",rf:"body_a54d1d"}
+"use strict";
+e.exports = {
+    kL: "container_a54d1d",
+    Sl: "image_a54d1d",
+    DD: "title_a54d1d",
+    rf: "body_a54d1d"
+}

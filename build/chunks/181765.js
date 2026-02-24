@@ -1,2 +1,6 @@
 /** chunk id: 181765, original params: e,t,n (module,exports,require) **/
-"use strict";e.exports={i:"message__51673",n:"saveNoticeContainer__51673"}
+"use strict";
+e.exports = {
+    i: "message__51673",
+    n: "saveNoticeContainer__51673"
+}

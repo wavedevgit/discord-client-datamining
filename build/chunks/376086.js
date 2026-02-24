@@ -1,2 +1,6 @@
 /** chunk id: 376086, original params: e,t,n (module,exports,require) **/
-"use strict";n.d(t,{P:()=>s});var i,s=((i={}).ACTIVITY="ACTIVITY",i.SOUNDBOARD="SOUNDBOARD",i.EMOJI="EMOJI",i.GIFTING="GIFTING",i)
+"use strict";
+n.d(t, {
+    P: () => s
+});
+var i, s = ((i = {}).ACTIVITY = "ACTIVITY", i.SOUNDBOARD = "SOUNDBOARD", i.EMOJI = "EMOJI", i.GIFTING = "GIFTING", i)

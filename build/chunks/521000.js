@@ -1,2 +1,43 @@
 /** chunk id: 521000, original params: e,t,n (module,exports,require) **/
-"use strict";n.d(t,{VA:()=>r});var s=n(627968);n(64700);let l=e=>{let{clientX:t,clientY:n,currentTarget:s}=e;s.style.pointerEvents="none";let l=document.elementFromPoint(t,n);return s.style.pointerEvents="auto",{elementBelow:l,button:l?.closest("button")??null}},r=e=>{let{isCustomCursorEnabled:t,className:n,riveEventTargetRef:r}=e,a=e=>{let{button:n}=l(e),s=e.currentTarget;t?s.style.cursor=null!=n?"var(--custom-cursor-pointer)":"var(--custom-cursor)":s.style.cursor=null!=n?"pointer":"default"};return(0,s.jsx)("div",{ref:r,className:n,onMouseMove:a,onMouseDown:e=>{let{button:t}=l(e);null!=t&&t.click()}})}
+"use strict";
+n.d(t, {
+    VA: () => r
+});
+var s = n(627968);
+n(64700);
+let l = e => {
+        let {
+            clientX: t,
+            clientY: n,
+            currentTarget: s
+        } = e;
+        s.style.pointerEvents = "none";
+        let l = document.elementFromPoint(t, n);
+        return s.style.pointerEvents = "auto", {
+            elementBelow: l,
+            button: l?.closest("button") ?? null
+        }
+    },
+    r = e => {
+        let {
+            isCustomCursorEnabled: t,
+            className: n,
+            riveEventTargetRef: r
+        } = e, a = e => {
+            let {
+                button: n
+            } = l(e), s = e.currentTarget;
+            t ? s.style.cursor = null != n ? "var(--custom-cursor-pointer)" : "var(--custom-cursor)" : s.style.cursor = null != n ? "pointer" : "default"
+        };
+        return (0, s.jsx)("div", {
+            ref: r,
+            className: n,
+            onMouseMove: a,
+            onMouseDown: e => {
+                let {
+                    button: t
+                } = l(e);
+                null != t && t.click()
+            }
+        })
+    }

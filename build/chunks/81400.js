@@ -1,2 +1,72 @@
 /** chunk id: 81400, original params: t,n,i (module,exports,require) **/
-i.d(n,{EC:()=>I,j8:()=>O,uZ:()=>N}),i(938796);var l=i(64700),e=i(417597),r=i(159001),u=i(780964),A=i(961350),a=i(696451),d=i(71393),o=i(576705),s=i(967198),E=i(229527),_=i(652215),f=i(340837),g=i(355097),c=i(985018);function N(t){return(0,e.bG)([A.default,a.Ay],()=>{if(null==t)return!1;let n=A.default.getId();return(0,E.TR)(a.Ay.getMember(t,n))},[t])}function I(t){return(0,e.cf)([A.default,a.Ay,s.A,d.A],()=>{let n={nick:void 0,bio:void 0},i=s.A.getGuildId(),l=t??i,e=d.A.getGuild(l);if(null==e||null==l)return n;let r=A.default.getId(),u=a.Ay.getMember(l,r),o=(0,E.wR)(u?.flags);return 0===o.size||(o.has(f.D.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME)&&(null==t?n.nick=[c.intl.formatToPlainString(c.t.WBUh3O,{guildName:e.name??""})]:n.nick=[c.intl.string(c.t.EPZCrM)]),o.has(f.D.AUTOMOD_QUARANTINED_BIO)&&(n.bio=[c.intl.string(c.t.dZh1vz)])),n},[t])}function O(t){let{guildId:n,scrollPosition:A,analyticsLocations:a}=t,s=(0,e.bG)([d.A],()=>d.A.getGuild(n),[n]),E=(0,e.bG)([o.A],()=>null!=s&&o.A.can(_.xBc.CHANGE_NICKNAME,s),[s]);return[l.useCallback(()=>{if(null==s)return;let t=_.nc_.PROFILE_CUSTOMIZATION,n=g.Eq.GUILD;E?(0,r.V2)(s.id):n=g.Eq.USER_PROFILE;{let{openUserSettings:l}=i(840065);l(u.X.PROFILE_PANEL,{section:t,subsection:n,scrollPosition:A,analyticsLocations:a})}},[E,A,a,s]),E]}
+i.d(n, {
+    EC: () => I,
+    j8: () => O,
+    uZ: () => N
+}), i(938796);
+var l = i(64700),
+    e = i(417597),
+    r = i(159001),
+    u = i(780964),
+    A = i(961350),
+    a = i(696451),
+    d = i(71393),
+    o = i(576705),
+    s = i(967198),
+    E = i(229527),
+    _ = i(652215),
+    f = i(340837),
+    g = i(355097),
+    c = i(985018);
+
+function N(t) {
+    return (0, e.bG)([A.default, a.Ay], () => {
+        if (null == t) return !1;
+        let n = A.default.getId();
+        return (0, E.TR)(a.Ay.getMember(t, n))
+    }, [t])
+}
+
+function I(t) {
+    return (0, e.cf)([A.default, a.Ay, s.A, d.A], () => {
+        let n = {
+                nick: void 0,
+                bio: void 0
+            },
+            i = s.A.getGuildId(),
+            l = t ?? i,
+            e = d.A.getGuild(l);
+        if (null == e || null == l) return n;
+        let r = A.default.getId(),
+            u = a.Ay.getMember(l, r),
+            o = (0, E.wR)(u?.flags);
+        return 0 === o.size || (o.has(f.D.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) && (null == t ? n.nick = [c.intl.formatToPlainString(c.t.WBUh3O, {
+            guildName: e.name ?? ""
+        })] : n.nick = [c.intl.string(c.t.EPZCrM)]), o.has(f.D.AUTOMOD_QUARANTINED_BIO) && (n.bio = [c.intl.string(c.t.dZh1vz)])), n
+    }, [t])
+}
+
+function O(t) {
+    let {
+        guildId: n,
+        scrollPosition: A,
+        analyticsLocations: a
+    } = t, s = (0, e.bG)([d.A], () => d.A.getGuild(n), [n]), E = (0, e.bG)([o.A], () => null != s && o.A.can(_.xBc.CHANGE_NICKNAME, s), [s]);
+    return [l.useCallback(() => {
+        if (null == s) return;
+        let t = _.nc_.PROFILE_CUSTOMIZATION,
+            n = g.Eq.GUILD;
+        E ? (0, r.V2)(s.id) : n = g.Eq.USER_PROFILE;
+        {
+            let {
+                openUserSettings: l
+            } = i(840065);
+            l(u.X.PROFILE_PANEL, {
+                section: t,
+                subsection: n,
+                scrollPosition: A,
+                analyticsLocations: a
+            })
+        }
+    }, [E, A, a, s]), E]
+}

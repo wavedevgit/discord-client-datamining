@@ -1,2 +1,20 @@
 /** chunk id: 559, original params: e,t,n (module,exports,require) **/
-n.d(t,{N:()=>i});var a=n(315069);class i extends a.A{id;summary;userIds;password;constructor(e){super(),this.id=e.pool_id,this.summary=e.summary,this.userIds=e.user_ids}static fromServer(e){return new i(e)}setPassword(e){return this.password=e,this}}
+n.d(t, {
+    N: () => i
+});
+var a = n(315069);
+class i extends a.A {
+    id;
+    summary;
+    userIds;
+    password;
+    constructor(e) {
+        super(), this.id = e.pool_id, this.summary = e.summary, this.userIds = e.user_ids
+    }
+    static fromServer(e) {
+        return new i(e)
+    }
+    setPassword(e) {
+        return this.password = e, this
+    }
+}

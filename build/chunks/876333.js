@@ -1,2 +1,13 @@
 /** chunk id: 876333, original params: e,t,l (module,exports,require) **/
-"use strict";l.d(t,{F:()=>s});var r=l(585026),a=l(580766),n=l(950966),i=l(86962);let s={title:"Mana",stories:[r.r,a.r,n.Z,i.O]}
+"use strict";
+l.d(t, {
+    F: () => s
+});
+var r = l(585026),
+    a = l(580766),
+    n = l(950966),
+    i = l(86962);
+let s = {
+    title: "Mana",
+    stories: [r.r, a.r, n.Z, i.O]
+}

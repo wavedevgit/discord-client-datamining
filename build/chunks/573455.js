@@ -1,2 +1,95 @@
 /** chunk id: 573455, original params: e,t,n (module,exports,require) **/
-"use strict";n.d(t,{A:()=>m});var s=n(627968);n(64700);var l=n(503698),r=n.n(l),a=n(424918),i=n(440938),o=n(993408),c=n(196231),d=n(985018),u=n(201073);let g=e=>{let{handleTransition:t,featuredBlockRecord:n}=e;return(0,s.jsx)("div",{className:r()(u.n9,u.YB),children:n?.subblocks.map((e,n)=>e.type===a.u.CATEGORY?(0,s.jsx)(i.R9,{newValue:{categoryPosition:1,pageCategory:e.name,pageSection:"featured_block",tilePosition:n},children:(0,s.jsx)(c.S,{subblock:e,badgeText:(0,o.HF)(e.unpublishedAt)?d.intl.string(d.t["h/uBCR"]):void 0,handleTransition:t},e.categoryStoreListingId)},e.categoryStoreListingId):null)})},_=e=>{let{handleTransition:t,categories:n}=e;if(null==n||n.length<2)return null;let[l,a]=n;return(0,s.jsx)("div",{className:r()(u.n9,u.YB),children:(0,s.jsxs)(i.R9,{newValue:{categoryPosition:1,pageCategory:null!=l?l.name:a?.name,pageSection:"featured_block",tilePosition:+(null==l)},children:[null!=l&&(0,s.jsx)(c.S,{category:l,badgeText:(0,o.HF)(l.unpublishedAt)?d.intl.string(d.t["h/uBCR"]):void 0,handleTransition:t}),null!=a&&(0,s.jsx)(c.S,{category:a,badgeText:(0,o.HF)(a.unpublishedAt)?d.intl.string(d.t["h/uBCR"]):void 0,handleTransition:t})]})})},m=e=>{let{isLoading:t,handleTransition:n,categories:l,featuredBlockRecord:a}=e;return t?(0,s.jsxs)("div",{className:r()(u.n9,u.YB),children:[(0,s.jsx)("div",{className:r()(u.Jn,u.oT),children:(0,s.jsx)("div",{className:u.uy})}),(0,s.jsx)("div",{className:r()(u.Jn,u.oT),children:(0,s.jsx)("div",{className:u.uy})})]}):null!=a?(0,s.jsx)(g,{featuredBlockRecord:a,handleTransition:n,isLoading:!1}):(0,s.jsx)(_,{categories:l,handleTransition:n,isLoading:!1})}
+"use strict";
+n.d(t, {
+    A: () => m
+});
+var s = n(627968);
+n(64700);
+var l = n(503698),
+    r = n.n(l),
+    a = n(424918),
+    i = n(440938),
+    o = n(993408),
+    c = n(196231),
+    d = n(985018),
+    u = n(201073);
+let g = e => {
+        let {
+            handleTransition: t,
+            featuredBlockRecord: n
+        } = e;
+        return (0, s.jsx)("div", {
+            className: r()(u.n9, u.YB),
+            children: n?.subblocks.map((e, n) => e.type === a.u.CATEGORY ? (0, s.jsx)(i.R9, {
+                newValue: {
+                    categoryPosition: 1,
+                    pageCategory: e.name,
+                    pageSection: "featured_block",
+                    tilePosition: n
+                },
+                children: (0, s.jsx)(c.S, {
+                    subblock: e,
+                    badgeText: (0, o.HF)(e.unpublishedAt) ? d.intl.string(d.t["h/uBCR"]) : void 0,
+                    handleTransition: t
+                }, e.categoryStoreListingId)
+            }, e.categoryStoreListingId) : null)
+        })
+    },
+    _ = e => {
+        let {
+            handleTransition: t,
+            categories: n
+        } = e;
+        if (null == n || n.length < 2) return null;
+        let [l, a] = n;
+        return (0, s.jsx)("div", {
+            className: r()(u.n9, u.YB),
+            children: (0, s.jsxs)(i.R9, {
+                newValue: {
+                    categoryPosition: 1,
+                    pageCategory: null != l ? l.name : a?.name,
+                    pageSection: "featured_block",
+                    tilePosition: +(null == l)
+                },
+                children: [null != l && (0, s.jsx)(c.S, {
+                    category: l,
+                    badgeText: (0, o.HF)(l.unpublishedAt) ? d.intl.string(d.t["h/uBCR"]) : void 0,
+                    handleTransition: t
+                }), null != a && (0, s.jsx)(c.S, {
+                    category: a,
+                    badgeText: (0, o.HF)(a.unpublishedAt) ? d.intl.string(d.t["h/uBCR"]) : void 0,
+                    handleTransition: t
+                })]
+            })
+        })
+    },
+    m = e => {
+        let {
+            isLoading: t,
+            handleTransition: n,
+            categories: l,
+            featuredBlockRecord: a
+        } = e;
+        return t ? (0, s.jsxs)("div", {
+            className: r()(u.n9, u.YB),
+            children: [(0, s.jsx)("div", {
+                className: r()(u.Jn, u.oT),
+                children: (0, s.jsx)("div", {
+                    className: u.uy
+                })
+            }), (0, s.jsx)("div", {
+                className: r()(u.Jn, u.oT),
+                children: (0, s.jsx)("div", {
+                    className: u.uy
+                })
+            })]
+        }) : null != a ? (0, s.jsx)(g, {
+            featuredBlockRecord: a,
+            handleTransition: n,
+            isLoading: !1
+        }) : (0, s.jsx)(_, {
+            categories: l,
+            handleTransition: n,
+            isLoading: !1
+        })
+    }

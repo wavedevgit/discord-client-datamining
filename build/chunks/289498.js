@@ -1,2 +1,55 @@
 /** chunk id: 289498, original params: e,t,n (module,exports,require) **/
-n.d(t,{A:()=>h});var i=n(627968);n(64700);var s=n(503698),a=n.n(s),l=n(990078),r=n(582754),o=n(397927),c=n(736653),d=n(573648),u=n(681819),_=n(882997),m=n(954571),A=n(652215),g=n(277816);let h=e=>{let{disabled:t=!1,type:n,className:s,innerClassName:h,onConnect:x}=e,p=(0,c.Ay)(),E=d.A.get((0,u.ML)(n));return(0,i.jsx)(l.m,{text:E.name,children:(0,i.jsx)("div",{className:a()(g.iE,s),children:(0,i.jsx)(o.vN3,{children:(0,i.jsx)("button",{className:a()(g.vW,h),type:"button",disabled:t,style:{backgroundImage:`url('${(0,r.Mw)(p)?E.icon.darkSVG:E.icon.lightSVG}')`},onClick:null!=x?x:()=>{let e;return e=d.A.get(n),void((0,_.A)({platformType:e.type,location:"Friends List"}),m.default.track(A.HAw.ACCOUNT_LINK_STEP,{previous_step:"desktop connections",current_step:"desktop oauth",platform_type:e.type}))},"aria-label":E.name})})})})}
+n.d(t, {
+    A: () => h
+});
+var i = n(627968);
+n(64700);
+var s = n(503698),
+    a = n.n(s),
+    l = n(990078),
+    r = n(582754),
+    o = n(397927),
+    c = n(736653),
+    d = n(573648),
+    u = n(681819),
+    _ = n(882997),
+    m = n(954571),
+    A = n(652215),
+    g = n(277816);
+let h = e => {
+    let {
+        disabled: t = !1,
+        type: n,
+        className: s,
+        innerClassName: h,
+        onConnect: x
+    } = e, p = (0, c.Ay)(), E = d.A.get((0, u.ML)(n));
+    return (0, i.jsx)(l.m, {
+        text: E.name,
+        children: (0, i.jsx)("div", {
+            className: a()(g.iE, s),
+            children: (0, i.jsx)(o.vN3, {
+                children: (0, i.jsx)("button", {
+                    className: a()(g.vW, h),
+                    type: "button",
+                    disabled: t,
+                    style: {
+                        backgroundImage: `url('${(0,r.Mw)(p)?E.icon.darkSVG:E.icon.lightSVG}')`
+                    },
+                    onClick: null != x ? x : () => {
+                        let e;
+                        return e = d.A.get(n), void((0, _.A)({
+                            platformType: e.type,
+                            location: "Friends List"
+                        }), m.default.track(A.HAw.ACCOUNT_LINK_STEP, {
+                            previous_step: "desktop connections",
+                            current_step: "desktop oauth",
+                            platform_type: e.type
+                        }))
+                    },
+                    "aria-label": E.name
+                })
+            })
+        })
+    })
+}

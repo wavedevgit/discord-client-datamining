@@ -1,2 +1,19 @@
 /** chunk id: 146995, original params: e,t,n (module,exports,require) **/
-n.d(t,{m:()=>s});var a=n(627968),i=n(397927);function s(e,t){(0,i.mMO)(async()=>{let{default:i}=await n.e("32140").then(n.bind(n,608391));return n=>(0,a.jsx)(i,{guildId:e,gameInstance:t,...n})})}
+n.d(t, {
+    m: () => s
+});
+var a = n(627968),
+    i = n(397927);
+
+function s(e, t) {
+    (0, i.mMO)(async () => {
+        let {
+            default: i
+        } = await n.e("32140").then(n.bind(n, 608391));
+        return n => (0, a.jsx)(i, {
+            guildId: e,
+            gameInstance: t,
+            ...n
+        })
+    })
+}

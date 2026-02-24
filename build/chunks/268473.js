@@ -1,2 +1,205 @@
 /** chunk id: 268473, original params: e,t,n (module,exports,require) **/
-n.d(t,{default:()=>I});var s=n(627968),a=n(64700),i=n(503698),r=n.n(i),l=n(311907),o=n(397927),c=n(736653),d=n(775602),u=n(793574),m=n(979286),x=n(607470),f=n(318346),_=n(761705),h=n(106799),p=n(829219),j=n(341915),g=n(890687),A=n(92246),b=n(109174),C=n(524728),v=n(654487),y=n(652215),N=n(758836),E=n(985018),L=n(176741),R=n(627898),S=n(341744),T=n(484252),O=n(460290),w=n(181713);function D(e){let{onVideoLoaded:t}=e;return(0,s.jsx)(x.A,{className:L.d0,playsInline:!0,controls:!1,autoPlay:!0,loop:!0,onCanPlayThrough:t,children:(0,s.jsx)("source",{src:w.A,type:"video/webm"})})}function W(e){let{onVideoLoaded:t,isLoading:n}=e,i=(0,l.bG)([d.A],()=>d.A.useReducedMotion),[u,m]=a.useState(!i),f=(0,c.Ay)(),_=(0,o.qB1)(f),h=_?S.A:R.A,p=_?O.A:T.A,j=a.useRef(null),g=a.useRef(null),[A,b]=a.useState(!1),[C,v]=a.useState(!1),[y,N]=a.useState(!1);a.useEffect(()=>{A&&C&&y&&t()},[A,C,y,t]),a.useEffect(()=>{n||i||setTimeout(()=>{j.current?.play()},200)},[n,i]);let E=a.useCallback(()=>{i||(m(!1),g.current?.play())},[i]);return(0,s.jsxs)("div",{className:L.GF,children:[(0,s.jsx)(x.A,{ref:g,autoPlay:!1,loop:!0,muted:!0,playsInline:!0,className:r()(L.nH,L.EZ,{[L.R]:u}),controls:!1,onCanPlayThrough:a.useCallback(()=>v(!0),[]),children:(0,s.jsx)("source",{src:p,type:"video/webm"})}),(0,s.jsx)(x.A,{ref:j,autoPlay:!1,muted:!0,playsInline:!0,className:L.nH,controls:!1,onCanPlayThrough:a.useCallback(()=>b(!0),[]),onEnded:E,children:(0,s.jsx)("source",{src:h,type:"video/webm"})}),(0,s.jsxs)("div",{className:L.Se,children:[(0,s.jsx)(D,{onVideoLoaded:a.useCallback(()=>N(!0),[])}),(0,s.jsx)(D,{}),(0,s.jsx)(D,{}),(0,s.jsx)(D,{})]})]})}function k(e){let{isLoading:t,onClose:n,orbsEarned:a,orbsBalance:i,onVideoLoaded:r}=e,l=async()=>{(0,f.Y)({pageType:y.liQ.GLOBAL_DISCOVERY_QUESTS,sectionType:y.JJy.ORBS_REWARD_MODAL,ctaObject:y.ZSU.CTA_TO_ORBS_SHOP}),await n(),(0,m.Cz)({tab:N.G2.ORBS,analyticsLocations:[],analyticsSource:u.A.QUEST_REWARD_MODAL})};return(0,s.jsxs)("div",{className:L.hQ,children:[(0,s.jsx)(W,{isLoading:t,onVideoLoaded:r}),(0,s.jsxs)("div",{className:L.dD,children:[(0,s.jsxs)("div",{className:L.R_,children:[(0,s.jsx)(h.B,{shouldUseThemeColor:!0,className:L.Uu}),(0,s.jsx)(o.Heading,{variant:"heading-xl/semibold",color:"text-strong",children:E.intl.formatToPlainString(E.t.YMor7k,{count:a})})]}),null!=i?(0,s.jsx)(o.Text,{variant:"text-sm/medium",color:"text-subtle",children:E.intl.format(E.t.g4t9aw,{orbsBalance:i,orbsBalanceHook:(e,t)=>(0,s.jsx)(o.Text,{variant:"text-sm/medium",color:"text-strong",tag:"span",children:e},t)})}):null]}),(0,s.jsx)(o.Button,{variant:"secondary",size:"sm",text:E.intl.string(E.t.WYchde),onClick:l,fullWidth:!0})]})}function I(e){let{initialQuest:t,onClose:n,transitionState:i,sourceQuestContent:r,location:l}=e,o=(0,g.C5)(t.id)??t,c=o.userStatus?.claimedAt!=null,{balance:d,error:u}=(0,_.W)(),m=(0,A._Z)(o.config),[x,f]=a.useState(c?"success":"loading"),[h,y]=a.useState(!1),N=a.useCallback(()=>{y(!0)},[]);a.useEffect(()=>{c||"loading"!==x||(0,p.Oq)(o.id,j.pY.CROSS_PLATFORM,l).then(()=>f("success")).catch(()=>f("error"))},[o.id,c,x,l]);let L=!h||"loading"===x||null==d&&null==u,R="error"===x||null==m||null==d&&null!=u;return(0,s.jsx)(C.A,{onClose:n,transitionState:i,quest:o,sourceQuestContent:r,location:v.rE.ORBS_REWARD_MODAL,isRewardContentLoading:L,rewardContentHasError:R,rewardContent:R?null:(0,s.jsx)(b.A,{rewardName:E.intl.string(E.t.Lmysvd),children:(0,s.jsx)(k,{onClose:n,orbsEarned:m,orbsBalance:d,isLoading:L,onVideoLoaded:N})})})}
+n.d(t, {
+    default: () => I
+});
+var s = n(627968),
+    a = n(64700),
+    i = n(503698),
+    r = n.n(i),
+    l = n(311907),
+    o = n(397927),
+    c = n(736653),
+    d = n(775602),
+    u = n(793574),
+    m = n(979286),
+    x = n(607470),
+    f = n(318346),
+    _ = n(761705),
+    h = n(106799),
+    p = n(829219),
+    j = n(341915),
+    g = n(890687),
+    A = n(92246),
+    b = n(109174),
+    C = n(524728),
+    v = n(654487),
+    y = n(652215),
+    N = n(758836),
+    E = n(985018),
+    L = n(176741),
+    R = n(627898),
+    S = n(341744),
+    T = n(484252),
+    O = n(460290),
+    w = n(181713);
+
+function D(e) {
+    let {
+        onVideoLoaded: t
+    } = e;
+    return (0, s.jsx)(x.A, {
+        className: L.d0,
+        playsInline: !0,
+        controls: !1,
+        autoPlay: !0,
+        loop: !0,
+        onCanPlayThrough: t,
+        children: (0, s.jsx)("source", {
+            src: w.A,
+            type: "video/webm"
+        })
+    })
+}
+
+function W(e) {
+    let {
+        onVideoLoaded: t,
+        isLoading: n
+    } = e, i = (0, l.bG)([d.A], () => d.A.useReducedMotion), [u, m] = a.useState(!i), f = (0, c.Ay)(), _ = (0, o.qB1)(f), h = _ ? S.A : R.A, p = _ ? O.A : T.A, j = a.useRef(null), g = a.useRef(null), [A, b] = a.useState(!1), [C, v] = a.useState(!1), [y, N] = a.useState(!1);
+    a.useEffect(() => {
+        A && C && y && t()
+    }, [A, C, y, t]), a.useEffect(() => {
+        n || i || setTimeout(() => {
+            j.current?.play()
+        }, 200)
+    }, [n, i]);
+    let E = a.useCallback(() => {
+        i || (m(!1), g.current?.play())
+    }, [i]);
+    return (0, s.jsxs)("div", {
+        className: L.GF,
+        children: [(0, s.jsx)(x.A, {
+            ref: g,
+            autoPlay: !1,
+            loop: !0,
+            muted: !0,
+            playsInline: !0,
+            className: r()(L.nH, L.EZ, {
+                [L.R]: u
+            }),
+            controls: !1,
+            onCanPlayThrough: a.useCallback(() => v(!0), []),
+            children: (0, s.jsx)("source", {
+                src: p,
+                type: "video/webm"
+            })
+        }), (0, s.jsx)(x.A, {
+            ref: j,
+            autoPlay: !1,
+            muted: !0,
+            playsInline: !0,
+            className: L.nH,
+            controls: !1,
+            onCanPlayThrough: a.useCallback(() => b(!0), []),
+            onEnded: E,
+            children: (0, s.jsx)("source", {
+                src: h,
+                type: "video/webm"
+            })
+        }), (0, s.jsxs)("div", {
+            className: L.Se,
+            children: [(0, s.jsx)(D, {
+                onVideoLoaded: a.useCallback(() => N(!0), [])
+            }), (0, s.jsx)(D, {}), (0, s.jsx)(D, {}), (0, s.jsx)(D, {})]
+        })]
+    })
+}
+
+function k(e) {
+    let {
+        isLoading: t,
+        onClose: n,
+        orbsEarned: a,
+        orbsBalance: i,
+        onVideoLoaded: r
+    } = e, l = async () => {
+        (0, f.Y)({
+            pageType: y.liQ.GLOBAL_DISCOVERY_QUESTS,
+            sectionType: y.JJy.ORBS_REWARD_MODAL,
+            ctaObject: y.ZSU.CTA_TO_ORBS_SHOP
+        }), await n(), (0, m.Cz)({
+            tab: N.G2.ORBS,
+            analyticsLocations: [],
+            analyticsSource: u.A.QUEST_REWARD_MODAL
+        })
+    };
+    return (0, s.jsxs)("div", {
+        className: L.hQ,
+        children: [(0, s.jsx)(W, {
+            isLoading: t,
+            onVideoLoaded: r
+        }), (0, s.jsxs)("div", {
+            className: L.dD,
+            children: [(0, s.jsxs)("div", {
+                className: L.R_,
+                children: [(0, s.jsx)(h.B, {
+                    shouldUseThemeColor: !0,
+                    className: L.Uu
+                }), (0, s.jsx)(o.Heading, {
+                    variant: "heading-xl/semibold",
+                    color: "text-strong",
+                    children: E.intl.formatToPlainString(E.t.YMor7k, {
+                        count: a
+                    })
+                })]
+            }), null != i ? (0, s.jsx)(o.Text, {
+                variant: "text-sm/medium",
+                color: "text-subtle",
+                children: E.intl.format(E.t.g4t9aw, {
+                    orbsBalance: i,
+                    orbsBalanceHook: (e, t) => (0, s.jsx)(o.Text, {
+                        variant: "text-sm/medium",
+                        color: "text-strong",
+                        tag: "span",
+                        children: e
+                    }, t)
+                })
+            }) : null]
+        }), (0, s.jsx)(o.Button, {
+            variant: "secondary",
+            size: "sm",
+            text: E.intl.string(E.t.WYchde),
+            onClick: l,
+            fullWidth: !0
+        })]
+    })
+}
+
+function I(e) {
+    let {
+        initialQuest: t,
+        onClose: n,
+        transitionState: i,
+        sourceQuestContent: r,
+        location: l
+    } = e, o = (0, g.C5)(t.id) ?? t, c = o.userStatus?.claimedAt != null, {
+        balance: d,
+        error: u
+    } = (0, _.W)(), m = (0, A._Z)(o.config), [x, f] = a.useState(c ? "success" : "loading"), [h, y] = a.useState(!1), N = a.useCallback(() => {
+        y(!0)
+    }, []);
+    a.useEffect(() => {
+        c || "loading" !== x || (0, p.Oq)(o.id, j.pY.CROSS_PLATFORM, l).then(() => f("success")).catch(() => f("error"))
+    }, [o.id, c, x, l]);
+    let L = !h || "loading" === x || null == d && null == u,
+        R = "error" === x || null == m || null == d && null != u;
+    return (0, s.jsx)(C.A, {
+        onClose: n,
+        transitionState: i,
+        quest: o,
+        sourceQuestContent: r,
+        location: v.rE.ORBS_REWARD_MODAL,
+        isRewardContentLoading: L,
+        rewardContentHasError: R,
+        rewardContent: R ? null : (0, s.jsx)(b.A, {
+            rewardName: E.intl.string(E.t.Lmysvd),
+            children: (0, s.jsx)(k, {
+                onClose: n,
+                orbsEarned: m,
+                orbsBalance: d,
+                isLoading: L,
+                onVideoLoaded: N
+            })
+        })
+    })
+}

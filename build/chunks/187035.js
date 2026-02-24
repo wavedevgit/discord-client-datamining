@@ -1,2 +1,195 @@
 /** chunk id: 187035, original params: e,t,n (module,exports,require) **/
-"use strict";n.d(t,{A:()=>U});var i=n(627968),s=n(64700),r=n(503698),l=n.n(r),a=n(284009),o=n.n(a),d=n(311907),c=n(397927),u=n(854378),h=n(10088),_=n(122906),p=n(225858),g=n(121623),m=n(895600),f=n(768397),A=n(942614),E=n(210714),x=n(894778),I=n(961350),v=n(650048),N=n(877062),j=n(129851),S=n(538796),C=n(229),y=n(652215),T=n(401755),b=n(771016),R=n(315290),O=n(396574),w=n(985018),L=n(256651),k=n(473169);d.Ay.initialize();class D extends s.PureComponent{componentDidMount(){(0,E.d)("guildTemplate"),O.VP||N.A.launch("discord://"+y.BVt.GUILD_TEMPLATE(this.props.code),()=>void 0)}componentDidUpdate(e){this.props.code!==e.code&&g.A.resolveGuildTemplate(this.props.code)}handleContinue=()=>{let{defaultRoute:e,transitionTo:t}=this.props;t(e)};renderButton(e,t){return O.VP?(0,i.jsx)("div",{className:k.eT,children:(0,i.jsx)(c.Button,{text:e,fullWidth:!0,onClick:t})}):(0,i.jsx)(u.KE,{className:k.eT})}renderSpinner(e){return(0,i.jsxs)(u.Ay,{children:[(0,i.jsx)(u.hE,{children:e}),(0,i.jsx)(u.CK,{})]})}renderInvalidGuildTemplate(){return(0,i.jsxs)(u.Ay,{children:[(0,i.jsx)(u._V,{src:n(428721),className:k.QB}),(0,i.jsx)(u.hE,{className:l()(k.Ot,k.QB),children:w.intl.string(w.t.C7ZRNw)}),(0,i.jsx)(u.tK,{children:w.intl.string(w.t.A6MwXE)}),this.renderButton(w.intl.string(w.t.fIv16B),this.handleContinue)]})}renderAppOpened(){return(0,i.jsxs)(u.Ay,{children:[(0,i.jsx)(u.hE,{className:k.QB,children:w.intl.string(w.t.csrAMJ)}),(0,i.jsx)(u.tK,{children:w.intl.string(w.t["m1+IBn"])}),this.renderButton(w.intl.string(w.t.fIv16B),this.handleContinue)]})}renderAuthenticatedOrDownload(){let{guildTemplate:e}=this.props;return(o()(null!=e,"guild template must not be null"),e.state===T.QB.RESOLVING)?(0,i.jsx)(u.Ay,{className:L.sL,children:(0,i.jsx)(f.A,{guildTemplate:e})}):(0,i.jsx)(B,{guildTemplate:e})}renderContinue(){return(0,i.jsxs)(u.Ay,{children:[(0,i.jsx)(u.hE,{children:w.intl.string(w.t.fOc4gn)}),this.renderButton(w.intl.string(w.t.fIv16B),this.handleContinue)]})}render(){let{guildTemplate:e,nativeAppState:t,authenticated:n,transitionTo:s,location:r}=this.props;if(null==e)return this.renderSpinner(w.intl.string(w.t.ZTNur7));if(t===y.fAW.OPEN)return this.renderAppOpened();if(t===y.fAW.OPENING)return this.renderSpinner(w.intl.string(w.t["Z+hCVU"]));switch(e.state){case T.QB.RESOLVING:return this.renderSpinner(w.intl.string(w.t["Z+hCVU"]));case T.QB.RESOLVED:if(n||!O.VP)return this.renderAuthenticatedOrDownload();if(this.props.login)return(0,i.jsx)(j.A,{guildTemplate:e,transitionTo:s,location:r});return(0,i.jsx)(C.A,{guildTemplate:e,transitionTo:s,location:r,onRegister:()=>{(0,A.C)(b.zY.ORGANIC_REGISTERED_GUILD_TEMPLATE),x.A.flowStart(R.do.ORGANIC_GUILD_TEMPLATES,R.ju.NUF_STARTED)}});case T.QB.EXPIRED:return this.renderInvalidGuildTemplate();default:return null}}}function U(e){let t={guildTemplate:(0,d.bG)([_.A],()=>_.A.getGuildTemplate(e.code)),nativeAppState:(0,d.bG)([h.A],()=>h.A.getState(e.code)),authenticated:(0,d.bG)([I.default],()=>I.default.isAuthenticated()),defaultRoute:(0,d.bG)([v.A],()=>v.A.defaultRoute)};return(0,i.jsx)(D,{...e,...t})}function B(e){let{guildTemplate:t}=e,{form:n,handleSubmit:s}=(0,p.A)(t,!1);x.A.flowStep(R.do.ORGANIC_GUILD_TEMPLATES,R.jC.GUILD_CREATE);let r=(0,i.jsxs)(i.Fragment,{children:[(0,i.jsx)(u.hE,{className:L.wx,children:w.intl.string(w.t.UNFvtM)}),n,(0,i.jsx)("div",{className:L.Tf,children:(0,i.jsx)(c.Button,{text:w.intl.string(w.t.xr59t7),fullWidth:!0,onClick:s})})]});return(0,i.jsx)(S.A,{className:L.sL,children:()=>[(0,i.jsx)(m.A,{guildTemplate:t},"template"),(0,i.jsx)("div",{className:L.KJ,children:r},"contents")]})}
+"use strict";
+n.d(t, {
+    A: () => U
+});
+var i = n(627968),
+    s = n(64700),
+    r = n(503698),
+    l = n.n(r),
+    a = n(284009),
+    o = n.n(a),
+    d = n(311907),
+    c = n(397927),
+    u = n(854378),
+    h = n(10088),
+    _ = n(122906),
+    p = n(225858),
+    g = n(121623),
+    m = n(895600),
+    f = n(768397),
+    A = n(942614),
+    E = n(210714),
+    x = n(894778),
+    I = n(961350),
+    v = n(650048),
+    N = n(877062),
+    j = n(129851),
+    S = n(538796),
+    C = n(229),
+    y = n(652215),
+    T = n(401755),
+    b = n(771016),
+    R = n(315290),
+    O = n(396574),
+    w = n(985018),
+    L = n(256651),
+    k = n(473169);
+d.Ay.initialize();
+class D extends s.PureComponent {
+    componentDidMount() {
+        (0, E.d)("guildTemplate"), O.VP || N.A.launch("discord://" + y.BVt.GUILD_TEMPLATE(this.props.code), () => void 0)
+    }
+    componentDidUpdate(e) {
+        this.props.code !== e.code && g.A.resolveGuildTemplate(this.props.code)
+    }
+    handleContinue = () => {
+        let {
+            defaultRoute: e,
+            transitionTo: t
+        } = this.props;
+        t(e)
+    };
+    renderButton(e, t) {
+        return O.VP ? (0, i.jsx)("div", {
+            className: k.eT,
+            children: (0, i.jsx)(c.Button, {
+                text: e,
+                fullWidth: !0,
+                onClick: t
+            })
+        }) : (0, i.jsx)(u.KE, {
+            className: k.eT
+        })
+    }
+    renderSpinner(e) {
+        return (0, i.jsxs)(u.Ay, {
+            children: [(0, i.jsx)(u.hE, {
+                children: e
+            }), (0, i.jsx)(u.CK, {})]
+        })
+    }
+    renderInvalidGuildTemplate() {
+        return (0, i.jsxs)(u.Ay, {
+            children: [(0, i.jsx)(u._V, {
+                src: n(428721),
+                className: k.QB
+            }), (0, i.jsx)(u.hE, {
+                className: l()(k.Ot, k.QB),
+                children: w.intl.string(w.t.C7ZRNw)
+            }), (0, i.jsx)(u.tK, {
+                children: w.intl.string(w.t.A6MwXE)
+            }), this.renderButton(w.intl.string(w.t.fIv16B), this.handleContinue)]
+        })
+    }
+    renderAppOpened() {
+        return (0, i.jsxs)(u.Ay, {
+            children: [(0, i.jsx)(u.hE, {
+                className: k.QB,
+                children: w.intl.string(w.t.csrAMJ)
+            }), (0, i.jsx)(u.tK, {
+                children: w.intl.string(w.t["m1+IBn"])
+            }), this.renderButton(w.intl.string(w.t.fIv16B), this.handleContinue)]
+        })
+    }
+    renderAuthenticatedOrDownload() {
+        let {
+            guildTemplate: e
+        } = this.props;
+        return (o()(null != e, "guild template must not be null"), e.state === T.QB.RESOLVING) ? (0, i.jsx)(u.Ay, {
+            className: L.sL,
+            children: (0, i.jsx)(f.A, {
+                guildTemplate: e
+            })
+        }) : (0, i.jsx)(B, {
+            guildTemplate: e
+        })
+    }
+    renderContinue() {
+        return (0, i.jsxs)(u.Ay, {
+            children: [(0, i.jsx)(u.hE, {
+                children: w.intl.string(w.t.fOc4gn)
+            }), this.renderButton(w.intl.string(w.t.fIv16B), this.handleContinue)]
+        })
+    }
+    render() {
+        let {
+            guildTemplate: e,
+            nativeAppState: t,
+            authenticated: n,
+            transitionTo: s,
+            location: r
+        } = this.props;
+        if (null == e) return this.renderSpinner(w.intl.string(w.t.ZTNur7));
+        if (t === y.fAW.OPEN) return this.renderAppOpened();
+        if (t === y.fAW.OPENING) return this.renderSpinner(w.intl.string(w.t["Z+hCVU"]));
+        switch (e.state) {
+            case T.QB.RESOLVING:
+                return this.renderSpinner(w.intl.string(w.t["Z+hCVU"]));
+            case T.QB.RESOLVED:
+                if (n || !O.VP) return this.renderAuthenticatedOrDownload();
+                if (this.props.login) return (0, i.jsx)(j.A, {
+                    guildTemplate: e,
+                    transitionTo: s,
+                    location: r
+                });
+                return (0, i.jsx)(C.A, {
+                    guildTemplate: e,
+                    transitionTo: s,
+                    location: r,
+                    onRegister: () => {
+                        (0, A.C)(b.zY.ORGANIC_REGISTERED_GUILD_TEMPLATE), x.A.flowStart(R.do.ORGANIC_GUILD_TEMPLATES, R.ju.NUF_STARTED)
+                    }
+                });
+            case T.QB.EXPIRED:
+                return this.renderInvalidGuildTemplate();
+            default:
+                return null
+        }
+    }
+}
+
+function U(e) {
+    let t = {
+        guildTemplate: (0, d.bG)([_.A], () => _.A.getGuildTemplate(e.code)),
+        nativeAppState: (0, d.bG)([h.A], () => h.A.getState(e.code)),
+        authenticated: (0, d.bG)([I.default], () => I.default.isAuthenticated()),
+        defaultRoute: (0, d.bG)([v.A], () => v.A.defaultRoute)
+    };
+    return (0, i.jsx)(D, {
+        ...e,
+        ...t
+    })
+}
+
+function B(e) {
+    let {
+        guildTemplate: t
+    } = e, {
+        form: n,
+        handleSubmit: s
+    } = (0, p.A)(t, !1);
+    x.A.flowStep(R.do.ORGANIC_GUILD_TEMPLATES, R.jC.GUILD_CREATE);
+    let r = (0, i.jsxs)(i.Fragment, {
+        children: [(0, i.jsx)(u.hE, {
+            className: L.wx,
+            children: w.intl.string(w.t.UNFvtM)
+        }), n, (0, i.jsx)("div", {
+            className: L.Tf,
+            children: (0, i.jsx)(c.Button, {
+                text: w.intl.string(w.t.xr59t7),
+                fullWidth: !0,
+                onClick: s
+            })
+        })]
+    });
+    return (0, i.jsx)(S.A, {
+        className: L.sL,
+        children: () => [(0, i.jsx)(m.A, {
+            guildTemplate: t
+        }, "template"), (0, i.jsx)("div", {
+            className: L.KJ,
+            children: r
+        }, "contents")]
+    })
+}

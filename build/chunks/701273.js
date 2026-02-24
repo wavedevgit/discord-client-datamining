@@ -1,2 +1,44 @@
 /** chunk id: 701273, original params: e,t,n (module,exports,require) **/
-"use strict";n.d(t,{A:()=>m});var i=n(481613),s=n.n(i),r=n(400253),l=n(49485),a=n(80703),o=n(803306),d=n(976860),c=n(961350),u=n(650048),h=n(954571),_=n(877062),p=n(652215);async function g(e){let t=s().os?.family;if("Android"===t||"iOS"===t){let t=c.default.getFingerprint()??c.default.getId(),n=(0,l.I_)();if(null==t&&c.default.isAuthenticated())try{await (0,o.rQ)(),t=c.default.getId()}catch{}return(0,l.Ay)((0,r.BH)(),{utmSource:e,fingerprint:t,attemptId:n})}return"discord://"}async function m(e){let t=await g(e),n=(0,l.X7)(t);null!=n&&h.default.track(p.HAw.DEEP_LINK_CLICKED,{fingerprint:(0,a.v)(n.fingerprint),attempt_id:n.attemptId,source:n.utmSource}),_.A.launch(t,e=>{e||(0,d.bG)(u.A.fallbackRoute)})}
+"use strict";
+n.d(t, {
+    A: () => m
+});
+var i = n(481613),
+    s = n.n(i),
+    r = n(400253),
+    l = n(49485),
+    a = n(80703),
+    o = n(803306),
+    d = n(976860),
+    c = n(961350),
+    u = n(650048),
+    h = n(954571),
+    _ = n(877062),
+    p = n(652215);
+async function g(e) {
+    let t = s().os?.family;
+    if ("Android" === t || "iOS" === t) {
+        let t = c.default.getFingerprint() ?? c.default.getId(),
+            n = (0, l.I_)();
+        if (null == t && c.default.isAuthenticated()) try {
+            await (0, o.rQ)(), t = c.default.getId()
+        } catch {}
+        return (0, l.Ay)((0, r.BH)(), {
+            utmSource: e,
+            fingerprint: t,
+            attemptId: n
+        })
+    }
+    return "discord://"
+}
+async function m(e) {
+    let t = await g(e),
+        n = (0, l.X7)(t);
+    null != n && h.default.track(p.HAw.DEEP_LINK_CLICKED, {
+        fingerprint: (0, a.v)(n.fingerprint),
+        attempt_id: n.attemptId,
+        source: n.utmSource
+    }), _.A.launch(t, e => {
+        e || (0, d.bG)(u.A.fallbackRoute)
+    })
+}

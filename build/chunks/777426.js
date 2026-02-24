@@ -1,2 +1,156 @@
 /** chunk id: 777426, original params: e,t,n (module,exports,require) **/
-n.d(t,{A:()=>v});var i=n(627968),r=n(64700),l=n(503698),a=n.n(l),s=n(110259),o=n(311907),d=n(3203),c=n(397927),u=n(793574),A=n(688810),h=n(139286),_=n(414711),m=n(187696),p=n(723690),g=n(21119),E=n(994500),I=n(954571),f=n(45787),C=n(275759),T=n(979474),N=n(652215);n(646363);var S=n(985018),x=n(847295);function v(e){let{ref:t,isFocused:l,isActive:v,status:y,activities:b,applicationStream:O,isGameRelationship:L,isMobile:R,isVR:P,onOtherHover:j,onClick:D,recipientUser:M,giftIntentType:w}=e,{analyticsLocations:U}=(0,A.Ay)(u.A.PREMIUM_GIFT_INTENT_FRIEND_ROW),{Component:G}=(0,d.V)(),k=(0,o.bG)([C.Ay],()=>C.Ay.getFriendAnniversaryYears(M.id)),{openGiftModal:V}=(0,T.$)({giftRecipient:M,analyticsLocations:U,analyticsLocation:N.ThZ.FRIEND_ANNIVERSARIES_ACTION_BUTTON,analyticsObject:{page:N.liQ.FRIENDS_LIST,section:N.JJy.FRIENDS_LIST_FRIEND_ROW,object:N.ZSU.BUTTON_CTA,objectType:N.AnalyticsObjectTypes.GIFT},location:"gift-intent-friend-row"});r.useEffect(()=>{let e=g.A.getUserAffinity(M.id);(0,h.x)({name:s.ImpressionNames.GIFT_INTENT_ACTION_BUTTON,type:s.ImpressionTypes.VIEW,properties:{gift_intent_type:w,affinity:e?.communicationProbability}})},[M,w]);let B=e=>{e.stopPropagation();let t=g.A.getUserAffinity(M.id);I.default.track(N.HAw.GIFT_INTENT_ACTION_BUTTON_CLICKED,{gift_intent_type:w,affinity:t?.dmProbability,location_stack:U}),V()};return(0,i.jsx)(_.A,{ref:t,isFocused:l,isActive:v,user:M,onOtherHover:j,onClick:D,height:72,children:e=>(0,i.jsxs)("div",{className:a()(x.a4,x.Z$),children:[(0,i.jsx)(p.A,{className:x.Cv,user:M,status:y,isMobile:R,isVR:P,subText:(0,i.jsxs)(i.Fragment,{children:[(0,i.jsx)(m.A,{hovered:e,activities:b,applicationStream:O,status:y,user:M,userIgnored:E.A.isIgnored(M.id)}),(0,i.jsxs)("div",{className:x.K3,children:[(0,i.jsx)(c.$yI,{size:"xxs",color:"currentColor"}),(0,i.jsx)(c.Text,{variant:"text-xs/normal",color:"text-subtle",children:S.intl.formatToPlainString(S.t.S3fdq7,{numberOfYears:k})})]})]}),hovered:e,showAccountIdentifier:!L&&!M.isProvisional}),(0,i.jsxs)("div",{className:x.o1,children:[(0,i.jsx)(c.K0,{size:"sm",variant:"secondary",icon:G,"aria-label":S.intl.string(S.t.I61IsE),onClick:()=>{I.default.track(N.HAw.GIFT_INTENT_CARD_SECONDARY_CTA_CLICKED,{gift_intent_type:w,cta_type:"send_message",location_stack:U}),(0,f.xs)(M.id),(0,c.mMO)(async()=>{let{default:e}=await n.e("95501").then(n.bind(n,367516));return t=>(0,i.jsx)(e,{...t,giftIntentType:w??void 0,analyticsLocationHistory:U})})}}),(0,i.jsx)(c.Button,{size:"sm",text:S.intl.string(S.t.PEjaCx),icon:c.okO,"aria-label":S.intl.string(S.t.PEjaCx),onClick:B})]})]})})}
+n.d(t, {
+    A: () => v
+});
+var i = n(627968),
+    r = n(64700),
+    l = n(503698),
+    a = n.n(l),
+    s = n(110259),
+    o = n(311907),
+    d = n(3203),
+    c = n(397927),
+    u = n(793574),
+    A = n(688810),
+    h = n(139286),
+    _ = n(414711),
+    m = n(187696),
+    p = n(723690),
+    g = n(21119),
+    E = n(994500),
+    I = n(954571),
+    f = n(45787),
+    C = n(275759),
+    T = n(979474),
+    N = n(652215);
+n(646363);
+var S = n(985018),
+    x = n(847295);
+
+function v(e) {
+    let {
+        ref: t,
+        isFocused: l,
+        isActive: v,
+        status: y,
+        activities: b,
+        applicationStream: O,
+        isGameRelationship: L,
+        isMobile: R,
+        isVR: P,
+        onOtherHover: j,
+        onClick: D,
+        recipientUser: M,
+        giftIntentType: w
+    } = e, {
+        analyticsLocations: U
+    } = (0, A.Ay)(u.A.PREMIUM_GIFT_INTENT_FRIEND_ROW), {
+        Component: G
+    } = (0, d.V)(), k = (0, o.bG)([C.Ay], () => C.Ay.getFriendAnniversaryYears(M.id)), {
+        openGiftModal: V
+    } = (0, T.$)({
+        giftRecipient: M,
+        analyticsLocations: U,
+        analyticsLocation: N.ThZ.FRIEND_ANNIVERSARIES_ACTION_BUTTON,
+        analyticsObject: {
+            page: N.liQ.FRIENDS_LIST,
+            section: N.JJy.FRIENDS_LIST_FRIEND_ROW,
+            object: N.ZSU.BUTTON_CTA,
+            objectType: N.AnalyticsObjectTypes.GIFT
+        },
+        location: "gift-intent-friend-row"
+    });
+    r.useEffect(() => {
+        let e = g.A.getUserAffinity(M.id);
+        (0, h.x)({
+            name: s.ImpressionNames.GIFT_INTENT_ACTION_BUTTON,
+            type: s.ImpressionTypes.VIEW,
+            properties: {
+                gift_intent_type: w,
+                affinity: e?.communicationProbability
+            }
+        })
+    }, [M, w]);
+    let B = e => {
+        e.stopPropagation();
+        let t = g.A.getUserAffinity(M.id);
+        I.default.track(N.HAw.GIFT_INTENT_ACTION_BUTTON_CLICKED, {
+            gift_intent_type: w,
+            affinity: t?.dmProbability,
+            location_stack: U
+        }), V()
+    };
+    return (0, i.jsx)(_.A, {
+        ref: t,
+        isFocused: l,
+        isActive: v,
+        user: M,
+        onOtherHover: j,
+        onClick: D,
+        height: 72,
+        children: e => (0, i.jsxs)("div", {
+            className: a()(x.a4, x.Z$),
+            children: [(0, i.jsx)(p.A, {
+                className: x.Cv,
+                user: M,
+                status: y,
+                isMobile: R,
+                isVR: P,
+                subText: (0, i.jsxs)(i.Fragment, {
+                    children: [(0, i.jsx)(m.A, {
+                        hovered: e,
+                        activities: b,
+                        applicationStream: O,
+                        status: y,
+                        user: M,
+                        userIgnored: E.A.isIgnored(M.id)
+                    }), (0, i.jsxs)("div", {
+                        className: x.K3,
+                        children: [(0, i.jsx)(c.$yI, {
+                            size: "xxs",
+                            color: "currentColor"
+                        }), (0, i.jsx)(c.Text, {
+                            variant: "text-xs/normal",
+                            color: "text-subtle",
+                            children: S.intl.formatToPlainString(S.t.S3fdq7, {
+                                numberOfYears: k
+                            })
+                        })]
+                    })]
+                }),
+                hovered: e,
+                showAccountIdentifier: !L && !M.isProvisional
+            }), (0, i.jsxs)("div", {
+                className: x.o1,
+                children: [(0, i.jsx)(c.K0, {
+                    size: "sm",
+                    variant: "secondary",
+                    icon: G,
+                    "aria-label": S.intl.string(S.t.I61IsE),
+                    onClick: () => {
+                        I.default.track(N.HAw.GIFT_INTENT_CARD_SECONDARY_CTA_CLICKED, {
+                            gift_intent_type: w,
+                            cta_type: "send_message",
+                            location_stack: U
+                        }), (0, f.xs)(M.id), (0, c.mMO)(async () => {
+                            let {
+                                default: e
+                            } = await n.e("95501").then(n.bind(n, 367516));
+                            return t => (0, i.jsx)(e, {
+                                ...t,
+                                giftIntentType: w ?? void 0,
+                                analyticsLocationHistory: U
+                            })
+                        })
+                    }
+                }), (0, i.jsx)(c.Button, {
+                    size: "sm",
+                    text: S.intl.string(S.t.PEjaCx),
+                    icon: c.okO,
+                    "aria-label": S.intl.string(S.t.PEjaCx),
+                    onClick: B
+                })]
+            })]
+        })
+    })
+}

@@ -1,6 +1,0 @@
-/** chunk id: 360116, original params: e (module,exports,require) **/
-e.exports = function(e) {
-    return function(t) {
-        return null == e ? void 0 : e[t]
-    }
-}

@@ -1,2 +1,24 @@
 /** chunk id: 483558, original params: e,t,n (module,exports,require) **/
-n.d(t,{q:()=>o});var i=n(64700),l=n(311907),a=n(961350),s=n(622543),r=n(735321);function o(e){let[t,n]=i.useState(!1),o=e.type,c=(0,l.bG)([a.default,s.A],()=>{let e=a.default.getId();if(null==e)return!1;let t=s.A.getUserProfile(e);return(t?.widgets??[]).some(e=>e.type===o)}),d=(0,r.uA)(e);return{shouldShowSuggestions:!c&&!t&&!d,handleDismissSuggestions:i.useCallback(()=>{n(!0)},[])}}
+n.d(t, {
+    q: () => o
+});
+var i = n(64700),
+    l = n(311907),
+    a = n(961350),
+    s = n(622543),
+    r = n(735321);
+
+function o(e) {
+    let [t, n] = i.useState(!1), o = e.type, c = (0, l.bG)([a.default, s.A], () => {
+        let e = a.default.getId();
+        if (null == e) return !1;
+        let t = s.A.getUserProfile(e);
+        return (t?.widgets ?? []).some(e => e.type === o)
+    }), d = (0, r.uA)(e);
+    return {
+        shouldShowSuggestions: !c && !t && !d,
+        handleDismissSuggestions: i.useCallback(() => {
+            n(!0)
+        }, [])
+    }
+}

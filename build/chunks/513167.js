@@ -1,2 +1,6 @@
 /** chunk id: 513167, original params: e,t,n (module,exports,require) **/
-e.exports={lj:"socialLinks__7df54",nf:"link__7df54",CU:"foreground__7df54"}
+e.exports = {
+    lj: "socialLinks__7df54",
+    nf: "link__7df54",
+    CU: "foreground__7df54"
+}

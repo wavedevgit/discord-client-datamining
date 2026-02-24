@@ -1,8 +1,0 @@
-/** chunk id: 900923, original params: t,e,r (module,exports,require) **/
-var n = r(374316),
-    o = TypeError;
-t.exports = function(t) {
-    var e = n(t, "number");
-    if ("number" == typeof e) throw new o("Can't convert number to bigint");
-    return BigInt(e)
-}

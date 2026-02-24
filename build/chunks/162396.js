@@ -1,2 +1,109 @@
 /** chunk id: 162396, original params: e,t,n (module,exports,require) **/
-"use strict";n.d(t,{A:()=>b});var a=n(627968),r=n(64700),i=n(503698),s=n.n(i),l=n(397927),o=n(975807),c=n(212031),u=n(975571),d=n(809465),_=n(652215),m=n(985018),g=n(535790);function p(e){let{onClose:t}=e;return(0,a.jsx)(l.W1t,{"data-menu-migrated-auto":!0,navId:"settings-footer-more-menu",onClose:t,onSelect:()=>{},"aria-label":"More options",children:(0,a.jsxs)(l.rXV,{children:[(0,a.jsx)(l.Drp,{id:"changelog",label:m.intl.string(m.t.LRmNAl),action:()=>(0,c.j)(!0)}),(0,a.jsx)(l.Drp,{id:"acknowledgements",label:m.intl.string(m.t["0nUKy3"]),action:()=>(0,o.A)(_.X7G.ACKNOWLEDGEMENTS)}),(0,a.jsx)(l.Drp,{id:"support",label:m.intl.string(m.t["Yl/Riu"]),action:()=>(0,o.A)(u.C)})]})})}function b(){let e=r.useRef(null);return(0,a.jsxs)("div",{children:[(0,a.jsx)(d.A,{compact:!0}),(0,a.jsxs)("div",{className:g.yJ,children:[(0,a.jsx)(l.MzZ,{href:_.X7G.PRIVACY,children:(0,a.jsx)(l.Text,{tag:"span",variant:"text-xxs/normal",color:"currentColor",children:m.intl.string(m.t["Knf/f/"])})}),(0,a.jsx)("span",{className:g.xE,"aria-hidden":"true",children:"•"}),(0,a.jsx)(l.MzZ,{href:_.X7G.TERMS,children:(0,a.jsx)(l.Text,{tag:"span",variant:"text-xxs/normal",color:"currentColor",children:m.intl.string(m.t.uFSTGq)})}),(0,a.jsx)("span",{className:g.xE,"aria-hidden":"true",children:"•"}),(0,a.jsx)(l.YNO,{targetElementRef:e,position:"top",align:"center",spacing:0,animation:l.YNO.Animation.NONE,renderPopout:e=>{let{closePopout:t}=e;return(0,a.jsx)(p,{onClose:t})},children:(t,n)=>(0,a.jsx)(l.MzZ,{...t,ref:e,useDefaultUnderlineStyles:!1,className:s()(g.Mj,{[g.vu]:n.isShown}),children:(0,a.jsx)(l.Text,{tag:"span",variant:"text-xxs/normal",color:"currentColor",children:m.intl.string(m.t["UKOtz+"])})})})]})]})}
+"use strict";
+n.d(t, {
+    A: () => b
+});
+var a = n(627968),
+    r = n(64700),
+    i = n(503698),
+    s = n.n(i),
+    l = n(397927),
+    o = n(975807),
+    c = n(212031),
+    u = n(975571),
+    d = n(809465),
+    _ = n(652215),
+    m = n(985018),
+    g = n(535790);
+
+function p(e) {
+    let {
+        onClose: t
+    } = e;
+    return (0, a.jsx)(l.W1t, {
+        "data-menu-migrated-auto": !0,
+        navId: "settings-footer-more-menu",
+        onClose: t,
+        onSelect: () => {},
+        "aria-label": "More options",
+        children: (0, a.jsxs)(l.rXV, {
+            children: [(0, a.jsx)(l.Drp, {
+                id: "changelog",
+                label: m.intl.string(m.t.LRmNAl),
+                action: () => (0, c.j)(!0)
+            }), (0, a.jsx)(l.Drp, {
+                id: "acknowledgements",
+                label: m.intl.string(m.t["0nUKy3"]),
+                action: () => (0, o.A)(_.X7G.ACKNOWLEDGEMENTS)
+            }), (0, a.jsx)(l.Drp, {
+                id: "support",
+                label: m.intl.string(m.t["Yl/Riu"]),
+                action: () => (0, o.A)(u.C)
+            })]
+        })
+    })
+}
+
+function b() {
+    let e = r.useRef(null);
+    return (0, a.jsxs)("div", {
+        children: [(0, a.jsx)(d.A, {
+            compact: !0
+        }), (0, a.jsxs)("div", {
+            className: g.yJ,
+            children: [(0, a.jsx)(l.MzZ, {
+                href: _.X7G.PRIVACY,
+                children: (0, a.jsx)(l.Text, {
+                    tag: "span",
+                    variant: "text-xxs/normal",
+                    color: "currentColor",
+                    children: m.intl.string(m.t["Knf/f/"])
+                })
+            }), (0, a.jsx)("span", {
+                className: g.xE,
+                "aria-hidden": "true",
+                children: "•"
+            }), (0, a.jsx)(l.MzZ, {
+                href: _.X7G.TERMS,
+                children: (0, a.jsx)(l.Text, {
+                    tag: "span",
+                    variant: "text-xxs/normal",
+                    color: "currentColor",
+                    children: m.intl.string(m.t.uFSTGq)
+                })
+            }), (0, a.jsx)("span", {
+                className: g.xE,
+                "aria-hidden": "true",
+                children: "•"
+            }), (0, a.jsx)(l.YNO, {
+                targetElementRef: e,
+                position: "top",
+                align: "center",
+                spacing: 0,
+                animation: l.YNO.Animation.NONE,
+                renderPopout: e => {
+                    let {
+                        closePopout: t
+                    } = e;
+                    return (0, a.jsx)(p, {
+                        onClose: t
+                    })
+                },
+                children: (t, n) => (0, a.jsx)(l.MzZ, {
+                    ...t,
+                    ref: e,
+                    useDefaultUnderlineStyles: !1,
+                    className: s()(g.Mj, {
+                        [g.vu]: n.isShown
+                    }),
+                    children: (0, a.jsx)(l.Text, {
+                        tag: "span",
+                        variant: "text-xxs/normal",
+                        color: "currentColor",
+                        children: m.intl.string(m.t["UKOtz+"])
+                    })
+                })
+            })]
+        })]
+    })
+}

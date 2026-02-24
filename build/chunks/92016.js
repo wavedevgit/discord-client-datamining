@@ -1,2 +1,153 @@
 /** chunk id: 92016, original params: e,n,t (module,exports,require) **/
-t.d(n,{default:()=>W});var r=t(627968);t(64700);var i=t(397927),l=t(442433),a=t(847767),d=t(358367),s=t(155718),u=t(468389),o=t(793574),c=t(810845),A=t(854182),g=t(734337),f=t(855187),h=t(479335),E=t(343328),I=t(848977),p=t(995102),v=t(50268),_=t(222311),x=t(803664),b=t(29293),S=t(509302),y=t(497600),D=t(773699),N=t(239211),m=t(707378),j=t(486524),M=t(631637),C=t(984894),R=t(399476),U=t(889460),T=t(460597),O=t(313998),V=t(198229),F=t(243949),G=t(972432),k=t(77544),L=t(566396),P=t(571964),X=t(708653),w=t(297460),B=t(652215),H=t(985018);let W=(0,d.A)((0,a.A)(function(e){let{user:n,channel:t,channelSelected:a=!1,showMute:d=!0,showMediaItems:o=!1,showChannelCallItems:B=!1,showModalItems:W=!0,targetIsUser:Y=!1,context:J,onSelect:Z,onHeightUpdate:K,onInteraction:$,widgetType:q}=e,z=(0,w.A)({kind:"DM_USER",userId:n.id},q),Q=(0,F.A)({userId:n.id,guildId:null}),ee=(0,m.A)({user:n,context:J}),en=(0,L.A)(n.id),et=(0,y.A)({user:n,channelId:t.id,context:J}),er=(0,b.A)({user:n}),ei=(0,k.A)(n.id),el=(0,j.A)(t.id,a),ea=(0,U.A)({user:n}),ed=(0,u.A)(null,n),es=(0,G.A)(n.id),eu=(0,O.g)(t.id,"OverlayDMUserContextMenu"),eo=(0,O.A)(n,eu),ec=(0,x.A)({user:n}),eA=(0,S.A)({user:n}),eg=(0,T.A)({user:n}),ef=(0,P.A)({user:n}),eh=(0,V.A)(n.id),eE=(0,h.u)({userId:n.id,channelId:t.id,guildId:t.getGuildId()}),eI=(0,C.A)(n.id,t.id),ep=(0,N.A)({user:n,location:"OverlayDMUserContextMenu"}),ev=(0,R.A)({user:n,location:"OverlayDMUserContextMenu"}),e_=(0,p.Ay)(t),ex=(0,v.A)({id:n.id,label:H.intl.string(H.t["/AXYnE"])}),eb=(0,v.A)({id:t.id,label:H.intl.string(H.t.gFHI3k)}),eS=(0,I.A)(t),ey=(0,g.A)(n.id),eD=(0,A.A)(t.id),eN=(0,_.A)(n),em=(0,f.A)(n.id),ej=(0,c.A)(t.id,n.id),eM=(0,D.A)({commandType:s.kc.USER,commandTargetId:n.id,channel:t,guildId:void 0,onHeightUpdate:K}),{toggleFavoriteItem:eC}=(0,X.As)(n.id,q),eR=(0,M.A)({channel:t}),eU=t.isManaged(),eT=n.isNonUserBot();return(0,r.jsxs)(i.W1t,{navId:"overlay-user-context",onClose:l.Z_,"aria-label":H.intl.string(H.t.liqwPJ),onSelect:Z,onInteraction:$,children:[(0,r.jsxs)(i.rXV,{children:[z,!(eT&&!(0,E.A)(t.id))&&eS,!eT&&(0,r.jsxs)(r.Fragment,{children:[ee,en,!eU&&eo,ei]})]}),(0,r.jsx)(i.rXV,{children:!eT&&eN}),(0,r.jsxs)(i.rXV,{children:[!eT&&(0,r.jsxs)(r.Fragment,{children:[W&&Q,W&&et,W&&er,eC,ef]}),el]}),!eT&&(0,r.jsxs)(r.Fragment,{children:[(0,r.jsx)(i.rXV,{children:o&&es}),(0,r.jsx)(i.rXV,{children:W&&ed}),(0,r.jsxs)(i.rXV,{children:[o&&eh,W&&eE,o&&eI,eM,W&&ea,ec,eA,eg,W&&ev,W&&ep,o&&em]}),(0,r.jsx)(i.rXV,{children:d&&e_}),B&&(0,r.jsxs)(i.rXV,{children:[ej,eD,ey]})]}),(0,E.A)(t.id)&&(0,r.jsx)(i.rXV,{children:d&&e_}),(0,r.jsx)(i.rXV,{children:eR}),(0,r.jsxs)(i.rXV,{children:[ex,!Y&&eb]})]})},{object:B.ZSU.CONTEXT_MENU}),[o.A.CONTEXT_MENU,o.A.OVERLAY,o.A.DM_USER_MENU])
+t.d(n, {
+    default: () => W
+});
+var r = t(627968);
+t(64700);
+var i = t(397927),
+    l = t(442433),
+    a = t(847767),
+    d = t(358367),
+    s = t(155718),
+    u = t(468389),
+    o = t(793574),
+    c = t(810845),
+    A = t(854182),
+    g = t(734337),
+    f = t(855187),
+    h = t(479335),
+    E = t(343328),
+    I = t(848977),
+    p = t(995102),
+    v = t(50268),
+    _ = t(222311),
+    x = t(803664),
+    b = t(29293),
+    S = t(509302),
+    y = t(497600),
+    D = t(773699),
+    N = t(239211),
+    m = t(707378),
+    j = t(486524),
+    M = t(631637),
+    C = t(984894),
+    R = t(399476),
+    U = t(889460),
+    T = t(460597),
+    O = t(313998),
+    V = t(198229),
+    F = t(243949),
+    G = t(972432),
+    k = t(77544),
+    L = t(566396),
+    P = t(571964),
+    X = t(708653),
+    w = t(297460),
+    B = t(652215),
+    H = t(985018);
+let W = (0, d.A)((0, a.A)(function(e) {
+    let {
+        user: n,
+        channel: t,
+        channelSelected: a = !1,
+        showMute: d = !0,
+        showMediaItems: o = !1,
+        showChannelCallItems: B = !1,
+        showModalItems: W = !0,
+        targetIsUser: Y = !1,
+        context: J,
+        onSelect: Z,
+        onHeightUpdate: K,
+        onInteraction: $,
+        widgetType: q
+    } = e, z = (0, w.A)({
+        kind: "DM_USER",
+        userId: n.id
+    }, q), Q = (0, F.A)({
+        userId: n.id,
+        guildId: null
+    }), ee = (0, m.A)({
+        user: n,
+        context: J
+    }), en = (0, L.A)(n.id), et = (0, y.A)({
+        user: n,
+        channelId: t.id,
+        context: J
+    }), er = (0, b.A)({
+        user: n
+    }), ei = (0, k.A)(n.id), el = (0, j.A)(t.id, a), ea = (0, U.A)({
+        user: n
+    }), ed = (0, u.A)(null, n), es = (0, G.A)(n.id), eu = (0, O.g)(t.id, "OverlayDMUserContextMenu"), eo = (0, O.A)(n, eu), ec = (0, x.A)({
+        user: n
+    }), eA = (0, S.A)({
+        user: n
+    }), eg = (0, T.A)({
+        user: n
+    }), ef = (0, P.A)({
+        user: n
+    }), eh = (0, V.A)(n.id), eE = (0, h.u)({
+        userId: n.id,
+        channelId: t.id,
+        guildId: t.getGuildId()
+    }), eI = (0, C.A)(n.id, t.id), ep = (0, N.A)({
+        user: n,
+        location: "OverlayDMUserContextMenu"
+    }), ev = (0, R.A)({
+        user: n,
+        location: "OverlayDMUserContextMenu"
+    }), e_ = (0, p.Ay)(t), ex = (0, v.A)({
+        id: n.id,
+        label: H.intl.string(H.t["/AXYnE"])
+    }), eb = (0, v.A)({
+        id: t.id,
+        label: H.intl.string(H.t.gFHI3k)
+    }), eS = (0, I.A)(t), ey = (0, g.A)(n.id), eD = (0, A.A)(t.id), eN = (0, _.A)(n), em = (0, f.A)(n.id), ej = (0, c.A)(t.id, n.id), eM = (0, D.A)({
+        commandType: s.kc.USER,
+        commandTargetId: n.id,
+        channel: t,
+        guildId: void 0,
+        onHeightUpdate: K
+    }), {
+        toggleFavoriteItem: eC
+    } = (0, X.As)(n.id, q), eR = (0, M.A)({
+        channel: t
+    }), eU = t.isManaged(), eT = n.isNonUserBot();
+    return (0, r.jsxs)(i.W1t, {
+        navId: "overlay-user-context",
+        onClose: l.Z_,
+        "aria-label": H.intl.string(H.t.liqwPJ),
+        onSelect: Z,
+        onInteraction: $,
+        children: [(0, r.jsxs)(i.rXV, {
+            children: [z, !(eT && !(0, E.A)(t.id)) && eS, !eT && (0, r.jsxs)(r.Fragment, {
+                children: [ee, en, !eU && eo, ei]
+            })]
+        }), (0, r.jsx)(i.rXV, {
+            children: !eT && eN
+        }), (0, r.jsxs)(i.rXV, {
+            children: [!eT && (0, r.jsxs)(r.Fragment, {
+                children: [W && Q, W && et, W && er, eC, ef]
+            }), el]
+        }), !eT && (0, r.jsxs)(r.Fragment, {
+            children: [(0, r.jsx)(i.rXV, {
+                children: o && es
+            }), (0, r.jsx)(i.rXV, {
+                children: W && ed
+            }), (0, r.jsxs)(i.rXV, {
+                children: [o && eh, W && eE, o && eI, eM, W && ea, ec, eA, eg, W && ev, W && ep, o && em]
+            }), (0, r.jsx)(i.rXV, {
+                children: d && e_
+            }), B && (0, r.jsxs)(i.rXV, {
+                children: [ej, eD, ey]
+            })]
+        }), (0, E.A)(t.id) && (0, r.jsx)(i.rXV, {
+            children: d && e_
+        }), (0, r.jsx)(i.rXV, {
+            children: eR
+        }), (0, r.jsxs)(i.rXV, {
+            children: [ex, !Y && eb]
+        })]
+    })
+}, {
+    object: B.ZSU.CONTEXT_MENU
+}), [o.A.CONTEXT_MENU, o.A.OVERLAY, o.A.DM_USER_MENU])

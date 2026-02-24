@@ -1,2 +1,30 @@
 /** chunk id: 822517, original params: e,n,t (module,exports,require) **/
-t.d(n,{A:()=>i});let i=(0,t(945810).mj)({name:"2025-09-cmc-refresh",kind:"user",defaultConfig:{newUIEnabled:!1,searchEnabled:!1,desktopSendIconEnabled:!1},variations:{1:{newUIEnabled:!0,searchEnabled:!1,desktopSendIconEnabled:!0},2:{newUIEnabled:!0,searchEnabled:!0,desktopSendIconEnabled:!0},3:{newUIEnabled:!0,searchEnabled:!0,desktopSendIconEnabled:!1}}})
+t.d(n, {
+    A: () => i
+});
+let i = (0, t(945810).mj)({
+    name: "2025-09-cmc-refresh",
+    kind: "user",
+    defaultConfig: {
+        newUIEnabled: !1,
+        searchEnabled: !1,
+        desktopSendIconEnabled: !1
+    },
+    variations: {
+        1: {
+            newUIEnabled: !0,
+            searchEnabled: !1,
+            desktopSendIconEnabled: !0
+        },
+        2: {
+            newUIEnabled: !0,
+            searchEnabled: !0,
+            desktopSendIconEnabled: !0
+        },
+        3: {
+            newUIEnabled: !0,
+            searchEnabled: !0,
+            desktopSendIconEnabled: !1
+        }
+    }
+})

@@ -1,2 +1,26 @@
 /** chunk id: 278576, original params: e,t,n (module,exports,require) **/
-"use strict";n.d(t,{tR:()=>o}),n(323874),n(14289),n(35956);var s=n(64700),l=n(873263),r=n(976860),a=n(840065),i=n(652215);function o(){let{search:e}=(0,l.zy)(),t=(0,l.g)(),n=s.useMemo(()=>new URLSearchParams(e),[e]).get("source"),o=null!=n?parseInt(n,10):null;return{onClose:s.useCallback(()=>{if(0===o){(0,r.aX)(),(0,a.openUserSettings)();return}(0,r.EL)()?(0,r.aX)():(0,r.pX)(i.BVt.APP)},[o]),source:o,...t}}
+"use strict";
+n.d(t, {
+    tR: () => o
+}), n(323874), n(14289), n(35956);
+var s = n(64700),
+    l = n(873263),
+    r = n(976860),
+    a = n(840065),
+    i = n(652215);
+
+function o() {
+    let {
+        search: e
+    } = (0, l.zy)(), t = (0, l.g)(), n = s.useMemo(() => new URLSearchParams(e), [e]).get("source"), o = null != n ? parseInt(n, 10) : null;
+    return {
+        onClose: s.useCallback(() => {
+            if (0 === o) {
+                (0, r.aX)(), (0, a.openUserSettings)();
+                return
+            }(0, r.EL)() ? (0, r.aX)() : (0, r.pX)(i.BVt.APP)
+        }, [o]),
+        source: o,
+        ...t
+    }
+}

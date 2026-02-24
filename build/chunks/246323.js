@@ -1,2 +1,26 @@
 /** chunk id: 246323, original params: t,i,n (module,exports,require) **/
-n.d(i,{default:()=>p});var e=n(627968),o=n(397927),a=n(887092),r=n(652215),l=n(985018);function p(t){let{onClose:i,onSelect:n,application:p,channelId:c}=t,d=(0,a.A)(p,c,r.BRT.POPOUT);return(0,e.jsx)(o.W1t,{"data-menu-migrated":!0,navId:"activity-popout-overflow-popout",onClose:i,onSelect:n,"aria-label":l.intl.string(l.t.SS9Y6P),children:d})}
+n.d(i, {
+    default: () => p
+});
+var e = n(627968),
+    o = n(397927),
+    a = n(887092),
+    r = n(652215),
+    l = n(985018);
+
+function p(t) {
+    let {
+        onClose: i,
+        onSelect: n,
+        application: p,
+        channelId: c
+    } = t, d = (0, a.A)(p, c, r.BRT.POPOUT);
+    return (0, e.jsx)(o.W1t, {
+        "data-menu-migrated": !0,
+        navId: "activity-popout-overflow-popout",
+        onClose: i,
+        onSelect: n,
+        "aria-label": l.intl.string(l.t.SS9Y6P),
+        children: d
+    })
+}

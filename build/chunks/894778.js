@@ -1,2 +1,125 @@
 /** chunk id: 894778, original params: e,t,n (module,exports,require) **/
-"use strict";n.d(t,{A:()=>A});var i=n(353640),s=n(499867),r=n(121894),l=n(506774),a=n(626584),o=n(954571),d=n(315290),c=n(652215);let u="UserFlowAnalyticsStore_current",h="UserFlowAnalyticsStore";function _(e){if(e===d.do.UNKNOWN)return null;let t=l.w.get(`${h}-${e}`);if(null==t)return null;let{version:n,...i}=t;return 1!==n?null:i}new a.A("UserFlowAnalytics");let p=(0,i.v)()((0,s.eh)((e,t)=>({flows:{},currentFlow:null,activeFlow:()=>{let e=t().currentFlow??l.w.get(u);if(null==e)return null;let{[e]:n}=t().flows,i=n??_(e);return i?.currentStep!=null?e:null}})));function g(e,t){let{[e]:n,...i}=p.getState().flows,s=n??_(e);(s?.currentStep==null||s.currentStep!==t)&&(0,r.r)(()=>{p.setState({flows:{...i,[e]:{type:e,lastStep:null,lastTimestamp:null,currentStep:t,currentTimestamp:new Date,skipped:!1}},currentFlow:e})})}function m(e,t){let n=arguments.length>2&&void 0!==arguments[2]&&arguments[2],i=e;e===d.do.ANY&&(i=p.getState().activeFlow()??d.do.UNKNOWN);let{[i]:s,...l}=p.getState().flows,a=s??_(i);null==a||null==a.currentStep||a.currentStep!==t&&(0,r.r)(()=>{p.setState({flows:{...l,[i]:{...a,lastStep:a.currentStep,lastTimestamp:a.currentTimestamp,currentStep:t,currentTimestamp:new Date,ended:n}},currentFlow:i})})}function f(){return null!=p.getState().activeFlow()}p.subscribe(e=>null!=e.currentFlow?e.flows[e.currentFlow]:void 0,e=>{if(null!=e&&(!function(e){if(e.type===d.do.UNKNOWN)return;let t=`${h}-${e.type}`;e.ended?(l.w.remove(t),l.w.remove(u)):(l.w.set(`${h}-${e.type}`,{...e,version:1}),l.w.set(u,e.type))}(e),o.default.track(c.HAw.NUO_TRANSITION,{flow_type:e.type,from_step:e.lastStep,to_step:e.currentStep,seconds_on_from_step:"function"!=typeof e.lastTimestamp?.getTime?0:(e.currentTimestamp.getTime()-e.lastTimestamp.getTime())/1e3},{flush:!0}),e.ended)){let t={...p.getState().flows};delete t[e.type],(0,r.r)(()=>{p.setState({flows:t,currentFlow:null})})}});let A={flowStart:g,flowStepOrStart:function(e,t){f()?m(e,t):g(e,t)},flowStep:m,hasActiveFlow:f}
+"use strict";
+n.d(t, {
+    A: () => A
+});
+var i = n(353640),
+    s = n(499867),
+    r = n(121894),
+    l = n(506774),
+    a = n(626584),
+    o = n(954571),
+    d = n(315290),
+    c = n(652215);
+let u = "UserFlowAnalyticsStore_current",
+    h = "UserFlowAnalyticsStore";
+
+function _(e) {
+    if (e === d.do.UNKNOWN) return null;
+    let t = l.w.get(`${h}-${e}`);
+    if (null == t) return null;
+    let {
+        version: n,
+        ...i
+    } = t;
+    return 1 !== n ? null : i
+}
+new a.A("UserFlowAnalytics");
+let p = (0, i.v)()((0, s.eh)((e, t) => ({
+    flows: {},
+    currentFlow: null,
+    activeFlow: () => {
+        let e = t().currentFlow ?? l.w.get(u);
+        if (null == e) return null;
+        let {
+            [e]: n
+        } = t().flows, i = n ?? _(e);
+        return i?.currentStep != null ? e : null
+    }
+})));
+
+function g(e, t) {
+    let {
+        [e]: n, ...i
+    } = p.getState().flows, s = n ?? _(e);
+    (s?.currentStep == null || s.currentStep !== t) && (0, r.r)(() => {
+        p.setState({
+            flows: {
+                ...i,
+                [e]: {
+                    type: e,
+                    lastStep: null,
+                    lastTimestamp: null,
+                    currentStep: t,
+                    currentTimestamp: new Date,
+                    skipped: !1
+                }
+            },
+            currentFlow: e
+        })
+    })
+}
+
+function m(e, t) {
+    let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
+        i = e;
+    e === d.do.ANY && (i = p.getState().activeFlow() ?? d.do.UNKNOWN);
+    let {
+        [i]: s, ...l
+    } = p.getState().flows, a = s ?? _(i);
+    null == a || null == a.currentStep || a.currentStep !== t && (0, r.r)(() => {
+        p.setState({
+            flows: {
+                ...l,
+                [i]: {
+                    ...a,
+                    lastStep: a.currentStep,
+                    lastTimestamp: a.currentTimestamp,
+                    currentStep: t,
+                    currentTimestamp: new Date,
+                    ended: n
+                }
+            },
+            currentFlow: i
+        })
+    })
+}
+
+function f() {
+    return null != p.getState().activeFlow()
+}
+p.subscribe(e => null != e.currentFlow ? e.flows[e.currentFlow] : void 0, e => {
+    if (null != e && (! function(e) {
+            if (e.type === d.do.UNKNOWN) return;
+            let t = `${h}-${e.type}`;
+            e.ended ? (l.w.remove(t), l.w.remove(u)) : (l.w.set(`${h}-${e.type}`, {
+                ...e,
+                version: 1
+            }), l.w.set(u, e.type))
+        }(e), o.default.track(c.HAw.NUO_TRANSITION, {
+            flow_type: e.type,
+            from_step: e.lastStep,
+            to_step: e.currentStep,
+            seconds_on_from_step: "function" != typeof e.lastTimestamp?.getTime ? 0 : (e.currentTimestamp.getTime() - e.lastTimestamp.getTime()) / 1e3
+        }, {
+            flush: !0
+        }), e.ended)) {
+        let t = {
+            ...p.getState().flows
+        };
+        delete t[e.type], (0, r.r)(() => {
+            p.setState({
+                flows: t,
+                currentFlow: null
+            })
+        })
+    }
+});
+let A = {
+    flowStart: g,
+    flowStepOrStart: function(e, t) {
+        f() ? m(e, t) : g(e, t)
+    },
+    flowStep: m,
+    hasActiveFlow: f
+}

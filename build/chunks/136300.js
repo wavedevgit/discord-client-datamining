@@ -1,2 +1,5 @@
 /** chunk id: 136300, original params: e,t,a (module,exports,require) **/
-a.d(t,{A:()=>n});let n="https://cdn.discordapp.com/assets/content/e73f685093cfc29d516c588ba27f23a1e03e9dbe02edcbe92a7ac79170c1931d.png"
+a.d(t, {
+    A: () => n
+});
+let n = "https://cdn.discordapp.com/assets/content/e73f685093cfc29d516c588ba27f23a1e03e9dbe02edcbe92a7ac79170c1931d.png"

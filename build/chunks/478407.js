@@ -1,2 +1,58 @@
 /** chunk id: 478407, original params: e,t,n (module,exports,require) **/
-n.d(t,{A:()=>u});var i=n(627968),s=n(64700),a=n(311907),l=n(397927),r=n(166403),o=n(510898),c=n(985018),d=n(104579);function u(e){let{onGoBack:t}=e,n=(0,a.yK)([r.A],()=>r.A.getActiveApplicationSubscriptions()?.slice().sort((e,t)=>(e.createdAt?.getTime()??e.currentPeriodStart.getTime())-(t.createdAt?.getTime()??t.currentPeriodStart.getTime()))??[]),[l,u]=s.useState();return null==l&&(l=(0,i.jsx)(_,{onBack:t,title:c.intl.string(c.t["DB/m9a"])})),(0,i.jsxs)("div",{children:[l,(0,i.jsx)("div",{className:d.A,children:(0,i.jsx)(o.A,{subscriptions:n,updateHeader:(e,t)=>{u((0,i.jsx)(_,{title:e,onBack:()=>{t(),u(void 0)}}))}})})]})}function _(e){let{onBack:t,title:n}=e;return(0,i.jsxs)("div",{className:d.D,children:[(0,i.jsx)(l.K0,{"aria-label":c.intl.string(c.t["13/7kX"]),icon:()=>(0,i.jsx)(l.Zge,{size:"sm"}),onClick:t,variant:"icon-only"}),(0,i.jsx)(l.Heading,{variant:"heading-lg/semibold",children:n})]})}
+n.d(t, {
+    A: () => u
+});
+var i = n(627968),
+    s = n(64700),
+    a = n(311907),
+    l = n(397927),
+    r = n(166403),
+    o = n(510898),
+    c = n(985018),
+    d = n(104579);
+
+function u(e) {
+    let {
+        onGoBack: t
+    } = e, n = (0, a.yK)([r.A], () => r.A.getActiveApplicationSubscriptions()?.slice().sort((e, t) => (e.createdAt?.getTime() ?? e.currentPeriodStart.getTime()) - (t.createdAt?.getTime() ?? t.currentPeriodStart.getTime())) ?? []), [l, u] = s.useState();
+    return null == l && (l = (0, i.jsx)(_, {
+        onBack: t,
+        title: c.intl.string(c.t["DB/m9a"])
+    })), (0, i.jsxs)("div", {
+        children: [l, (0, i.jsx)("div", {
+            className: d.A,
+            children: (0, i.jsx)(o.A, {
+                subscriptions: n,
+                updateHeader: (e, t) => {
+                    u((0, i.jsx)(_, {
+                        title: e,
+                        onBack: () => {
+                            t(), u(void 0)
+                        }
+                    }))
+                }
+            })
+        })]
+    })
+}
+
+function _(e) {
+    let {
+        onBack: t,
+        title: n
+    } = e;
+    return (0, i.jsxs)("div", {
+        className: d.D,
+        children: [(0, i.jsx)(l.K0, {
+            "aria-label": c.intl.string(c.t["13/7kX"]),
+            icon: () => (0, i.jsx)(l.Zge, {
+                size: "sm"
+            }),
+            onClick: t,
+            variant: "icon-only"
+        }), (0, i.jsx)(l.Heading, {
+            variant: "heading-lg/semibold",
+            children: n
+        })]
+    })
+}

@@ -1,2 +1,44 @@
 /** chunk id: 609276, original params: e,t,n (module,exports,require) **/
-let i,r,l;n.d(t,{A:()=>c});var a=n(311907),s=n(73153);function o(){r={},i={},l=new Set}o();class d extends a.Ay.Store{static displayName="ApplicationStatisticsStore";getStatisticsForApplication(e){return i[e]}shouldFetchStatisticsForApplication(e){let t=r[e];return!l.has(e)&&(null==t||Date.now()-t>36e5)}}let c=new d(s.h,{APPLICATION_ACTIVITY_STATISTICS_FETCH_START:function(e){let{applicationId:t}=e;l.add(t)},APPLICATION_ACTIVITY_STATISTICS_FETCH_FAIL:function(e){let{applicationId:t}=e;l.delete(t)},APPLICATION_ACTIVITY_STATISTICS_FETCH_SUCCESS:function(e){let{statistics:t,applicationId:n}=e;r[n]=Date.now(),l.delete(n),i[n]=t},LOGOUT:o})
+let i, r, l;
+n.d(t, {
+    A: () => c
+});
+var a = n(311907),
+    s = n(73153);
+
+function o() {
+    r = {}, i = {}, l = new Set
+}
+o();
+class d extends a.Ay.Store {
+    static displayName = "ApplicationStatisticsStore";
+    getStatisticsForApplication(e) {
+        return i[e]
+    }
+    shouldFetchStatisticsForApplication(e) {
+        let t = r[e];
+        return !l.has(e) && (null == t || Date.now() - t > 36e5)
+    }
+}
+let c = new d(s.h, {
+    APPLICATION_ACTIVITY_STATISTICS_FETCH_START: function(e) {
+        let {
+            applicationId: t
+        } = e;
+        l.add(t)
+    },
+    APPLICATION_ACTIVITY_STATISTICS_FETCH_FAIL: function(e) {
+        let {
+            applicationId: t
+        } = e;
+        l.delete(t)
+    },
+    APPLICATION_ACTIVITY_STATISTICS_FETCH_SUCCESS: function(e) {
+        let {
+            statistics: t,
+            applicationId: n
+        } = e;
+        r[n] = Date.now(), l.delete(n), i[n] = t
+    },
+    LOGOUT: o
+})

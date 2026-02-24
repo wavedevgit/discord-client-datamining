@@ -1,2 +1,41 @@
 /** chunk id: 479335, original params: e,n,t (module,exports,require) **/
-t.d(n,{u:()=>g});var l=t(627968),i=t(64700),r=t(311907),a=t(397927),s=t(267102),o=t(144485),d=t(814278),c=t(259374),u=t(961350),A=t(985018);function g(e){let{userId:n,channelId:t,guildId:g,minimal:h=!1}=e,p=(0,c.k)({channelId:t}),f=(0,r.bG)([u.default],()=>u.default.getId()===n),I=(0,s.Us)(),m=i.useCallback(()=>{o.A.openSecureFramesUserVerificationModal(n,t,()=>(0,d.z4)({userId:n,channelId:t,guildId:g}),I)},[I,t,g,n]);return!p||f?null:(0,l.jsx)(a.Drp,{id:"secure-frames-user-verification",label:A.intl.string(A.t["8ErYvY"]),action:m,icon:h?a.V1C:null,leadingAccessory:h?{type:"icon",icon:a.V1C}:void 0})}
+t.d(n, {
+    u: () => g
+});
+var l = t(627968),
+    i = t(64700),
+    r = t(311907),
+    a = t(397927),
+    s = t(267102),
+    o = t(144485),
+    d = t(814278),
+    c = t(259374),
+    u = t(961350),
+    A = t(985018);
+
+function g(e) {
+    let {
+        userId: n,
+        channelId: t,
+        guildId: g,
+        minimal: h = !1
+    } = e, p = (0, c.k)({
+        channelId: t
+    }), f = (0, r.bG)([u.default], () => u.default.getId() === n), I = (0, s.Us)(), m = i.useCallback(() => {
+        o.A.openSecureFramesUserVerificationModal(n, t, () => (0, d.z4)({
+            userId: n,
+            channelId: t,
+            guildId: g
+        }), I)
+    }, [I, t, g, n]);
+    return !p || f ? null : (0, l.jsx)(a.Drp, {
+        id: "secure-frames-user-verification",
+        label: A.intl.string(A.t["8ErYvY"]),
+        action: m,
+        icon: h ? a.V1C : null,
+        leadingAccessory: h ? {
+            type: "icon",
+            icon: a.V1C
+        } : void 0
+    })
+}

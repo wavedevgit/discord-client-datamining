@@ -1,2 +1,70 @@
 /** chunk id: 571964, original params: e,t,n (module,exports,require) **/
-n.d(t,{A:()=>c}),n(321073);var l=n(627968);n(64700);var i=n(311907),r=n(397927),a=n(545059),d=n(870391),o=n(994500),s=n(589051),u=n(985018);function c(e){let{user:t,onAction:c,groupId:A}=e,{hasFriendList:g}=(0,s.M8)("useManageFriendGroupsItems"),f=t.id,[E,b]=(0,i.yK)([o.A,d.A],()=>[o.A.isFriend(f),d.A.getGroups()],[f]);if(!g||!E)return null;let h=[];return b.length>0?h.push((0,l.jsxs)(r.Drp,{id:"add-to-group",label:"Add to Group",children:[b.map(e=>(0,l.jsx)(r.Drp,{id:`add-${e.id}`,label:e.name,action:()=>{c?.(),a.A.addUsersToGroup(e.id,f)}},e.id)),(0,l.jsx)(r.bXX,{},"add-to-group-separator"),(0,l.jsx)(r.Drp,{id:"create-new-group",label:u.intl.string(u.t["3hF1W4"]),action:()=>{c?.(),(0,r.mMO)(async()=>{let{default:e}=await n.e("51080").then(n.bind(n,519528));return t=>(0,l.jsx)(e,{...t,initialUserIds:[f]})})}},"create-new-group")]},"add-to-group")):0===b.length&&h.push((0,l.jsx)(r.Drp,{id:"create-new-group",label:u.intl.string(u.t["3hF1W4"]),action:()=>{c?.(),(0,r.mMO)(async()=>{let{default:e}=await n.e("51080").then(n.bind(n,519528));return t=>(0,l.jsx)(e,{...t,initialUserIds:[f]})})}},"create-new-group")),null!=A&&h.push((0,l.jsx)(r.Drp,{id:"remove-from-group",label:"Remove from Group",action:()=>{c?.(),a.A.removeUsersFromGroup(A,f)}},"remove-from-group")),h}
+n.d(t, {
+    A: () => c
+}), n(321073);
+var l = n(627968);
+n(64700);
+var i = n(311907),
+    r = n(397927),
+    a = n(545059),
+    d = n(870391),
+    o = n(994500),
+    s = n(589051),
+    u = n(985018);
+
+function c(e) {
+    let {
+        user: t,
+        onAction: c,
+        groupId: A
+    } = e, {
+        hasFriendList: g
+    } = (0, s.M8)("useManageFriendGroupsItems"), f = t.id, [E, b] = (0, i.yK)([o.A, d.A], () => [o.A.isFriend(f), d.A.getGroups()], [f]);
+    if (!g || !E) return null;
+    let h = [];
+    return b.length > 0 ? h.push((0, l.jsxs)(r.Drp, {
+        id: "add-to-group",
+        label: "Add to Group",
+        children: [b.map(e => (0, l.jsx)(r.Drp, {
+            id: `add-${e.id}`,
+            label: e.name,
+            action: () => {
+                c?.(), a.A.addUsersToGroup(e.id, f)
+            }
+        }, e.id)), (0, l.jsx)(r.bXX, {}, "add-to-group-separator"), (0, l.jsx)(r.Drp, {
+            id: "create-new-group",
+            label: u.intl.string(u.t["3hF1W4"]),
+            action: () => {
+                c?.(), (0, r.mMO)(async () => {
+                    let {
+                        default: e
+                    } = await n.e("51080").then(n.bind(n, 519528));
+                    return t => (0, l.jsx)(e, {
+                        ...t,
+                        initialUserIds: [f]
+                    })
+                })
+            }
+        }, "create-new-group")]
+    }, "add-to-group")) : 0 === b.length && h.push((0, l.jsx)(r.Drp, {
+        id: "create-new-group",
+        label: u.intl.string(u.t["3hF1W4"]),
+        action: () => {
+            c?.(), (0, r.mMO)(async () => {
+                let {
+                    default: e
+                } = await n.e("51080").then(n.bind(n, 519528));
+                return t => (0, l.jsx)(e, {
+                    ...t,
+                    initialUserIds: [f]
+                })
+            })
+        }
+    }, "create-new-group")), null != A && h.push((0, l.jsx)(r.Drp, {
+        id: "remove-from-group",
+        label: "Remove from Group",
+        action: () => {
+            c?.(), a.A.removeUsersFromGroup(A, f)
+        }
+    }, "remove-from-group")), h
+}

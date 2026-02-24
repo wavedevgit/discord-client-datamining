@@ -1,2 +1,19 @@
 /** chunk id: 597217, original params: e,t,n (module,exports,require) **/
-"use strict";e.exports={my:"avatar__49508",yF:"divider__49508",WH:"channelStatusClickable__49508",Gh:"channelStatus__49508",BI:"hoverable__49508",SC:"subtitleContainer__49508",rD:"pencilIcon__49508",vW:"secureFramesIcon__49508",W$:"playingText__49508",kL:"container__49508",RI:"activityIcon__49508",jr:"headerBar__49508",gi:"headerBarChildren__49508",DD:"title__49508",KE:"toolbar__49508"}
+"use strict";
+e.exports = {
+    my: "avatar__49508",
+    yF: "divider__49508",
+    WH: "channelStatusClickable__49508",
+    Gh: "channelStatus__49508",
+    BI: "hoverable__49508",
+    SC: "subtitleContainer__49508",
+    rD: "pencilIcon__49508",
+    vW: "secureFramesIcon__49508",
+    W$: "playingText__49508",
+    kL: "container__49508",
+    RI: "activityIcon__49508",
+    jr: "headerBar__49508",
+    gi: "headerBarChildren__49508",
+    DD: "title__49508",
+    KE: "toolbar__49508"
+}

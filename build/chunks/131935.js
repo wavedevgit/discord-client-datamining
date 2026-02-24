@@ -1,2 +1,47 @@
 /** chunk id: 131935, original params: e,t,o (module,exports,require) **/
-o.d(t,{A:()=>_});var i=o(559633),n=o(430452),a=o(954571);async function _(e,t){let{rating:o,category:_,reasonCode:c,reasonDescription:s,variant:l,feedback:d,analyticsData:r}=t,u=n.Ay.getSettings(),m=n.Ay.getInputDeviceId(),b=n.Ay.getInputDevices()[m],p=n.Ay.getOutputDeviceId(),v=n.Ay.getOutputDevices()[p],g=n.Ay.getVideoDeviceId(),y=n.Ay.getVideoDevices()[g],A=n.Ay.getNoiseCancellation(),h=n.Ay.getMediaEngine().getAudioSubsystem(),F=n.Ay.getMediaEngine().getAudioLayer(),C=await i.A.getKrispModel(),{output_audio_route_type:D,...O}=r??{};a.default.track(e,{rating:o??"no response",category:_,reason_code:c,reason_description:s,reason_variant:l,feedback:d,audio_input_mode:u.mode,automatic_audio_input_sensitivity_enabled:u.modeOptions.autoThreshold,audio_input_sensitivity:u.modeOptions.threshold,vad_use_advanced_voice_activity:u.modeOptions.vadUseKrisp,echo_cancellation_enabled:u.echoCancellation,noise_suppression_enabled:u.noiseSuppression,automatic_gain_control_enabled:u.automaticGainControl,voice_output_volume:u.outputVolume,noise_cancellation_enabled:A,input_device_name:b?.name,output_device_name:v?.name,video_device_name:y?.name,audio_subsystem:h,audio_layer:F,automatic_audio_subsystem:u.automaticAudioSubsystem,krisp_nc_model:C,audio_output_mode:D,...O})}
+o.d(t, {
+    A: () => _
+});
+var i = o(559633),
+    n = o(430452),
+    a = o(954571);
+async function _(e, t) {
+    let {
+        rating: o,
+        category: _,
+        reasonCode: c,
+        reasonDescription: s,
+        variant: l,
+        feedback: d,
+        analyticsData: r
+    } = t, u = n.Ay.getSettings(), m = n.Ay.getInputDeviceId(), b = n.Ay.getInputDevices()[m], p = n.Ay.getOutputDeviceId(), v = n.Ay.getOutputDevices()[p], g = n.Ay.getVideoDeviceId(), y = n.Ay.getVideoDevices()[g], A = n.Ay.getNoiseCancellation(), h = n.Ay.getMediaEngine().getAudioSubsystem(), F = n.Ay.getMediaEngine().getAudioLayer(), C = await i.A.getKrispModel(), {
+        output_audio_route_type: D,
+        ...O
+    } = r ?? {};
+    a.default.track(e, {
+        rating: o ?? "no response",
+        category: _,
+        reason_code: c,
+        reason_description: s,
+        reason_variant: l,
+        feedback: d,
+        audio_input_mode: u.mode,
+        automatic_audio_input_sensitivity_enabled: u.modeOptions.autoThreshold,
+        audio_input_sensitivity: u.modeOptions.threshold,
+        vad_use_advanced_voice_activity: u.modeOptions.vadUseKrisp,
+        echo_cancellation_enabled: u.echoCancellation,
+        noise_suppression_enabled: u.noiseSuppression,
+        automatic_gain_control_enabled: u.automaticGainControl,
+        voice_output_volume: u.outputVolume,
+        noise_cancellation_enabled: A,
+        input_device_name: b?.name,
+        output_device_name: v?.name,
+        video_device_name: y?.name,
+        audio_subsystem: h,
+        audio_layer: F,
+        automatic_audio_subsystem: u.automaticAudioSubsystem,
+        krisp_nc_model: C,
+        audio_output_mode: D,
+        ...O
+    })
+}

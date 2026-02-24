@@ -1,4 +1,0 @@
-/** chunk id: 308505, original params: e (module,exports,require) **/
-e.exports = function(e) {
-    return e && "object" == typeof e && "function" == typeof e.copy && "function" == typeof e.fill && "function" == typeof e.readUInt8
-}

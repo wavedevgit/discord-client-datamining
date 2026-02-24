@@ -1,2 +1,89 @@
 /** chunk id: 903093, original params: t,e,n (module,exports,require) **/
-n.d(e,{$5:()=>D,P$:()=>c,Qm:()=>o,_J:()=>E,di:()=>m,fi:()=>_,k$:()=>s,mR:()=>A,ql:()=>f,r2:()=>g,yc:()=>u}),n(321073);var i=n(989349),l=n.n(i),a=n(834409),d=n(218113),r=n(985018);let u={month:"numeric",day:"numeric",hour:"numeric",minute:"2-digit"};function s(t){return null!=t.dmSpamDetectedAt&&l()(t.dmSpamDetectedAt).add(d.Qs,"hours")>l()()||null!=t.raidDetectedAt&&l()(t.raidDetectedAt).add(d.Qs,"hours")>l()()}function c(t){return null!=t.raidDetectedAt&&l()(t.raidDetectedAt).add(d.Qs,"hours")>l()()}function o(t){return null!=t.dmSpamDetectedAt&&l()(t.dmSpamDetectedAt).add(d.Qs,"hours")>l()()}function D(t){return null==t?void 0:c(t)?a.V.JOIN_RAID:a.V.DM_RAID}function A(t,e){let n=[];return t&&n.push(a.ZE.INVITES_DISABLED),e&&n.push(a.ZE.DMS_DISABLED),n}function _(t,e){let n=[];return t||n.push(a.ZE.INVITES_DISABLED),e||n.push(a.ZE.DMS_DISABLED),n}function E(t){return null!=t.dmsDisabledUntil&&new Date(t.dmsDisabledUntil)>new Date||null!=t.invitesDisabledUntil&&new Date(t.invitesDisabledUntil)>new Date}function m(t){return t?.dmsDisabledUntil!=null&&new Date(t.dmsDisabledUntil)>new Date}function g(t){return t?.invitesDisabledUntil!=null&&new Date(t.invitesDisabledUntil)>new Date}function f(t,e){let n=t.dmsDisabledUntil??t.invitesDisabledUntil;if(null==n)return"";let i=null!=t.dmsDisabledUntil,l=null!=t.invitesDisabledUntil;switch(!0){case i&&l:return r.intl.formatToPlainString(r.t.hCZitf,{guildName:e,time:new Date(n).toLocaleString(r.intl.currentLocale,u)});case i:return r.intl.formatToPlainString(r.t["HNKxf+"],{guildName:e,time:new Date(n).toLocaleString(r.intl.currentLocale,u)});case l:return r.intl.formatToPlainString(r.t.M3iSyL,{guildName:e,time:new Date(n).toLocaleString(r.intl.currentLocale,u)});default:return""}}
+n.d(e, {
+    $5: () => D,
+    P$: () => c,
+    Qm: () => o,
+    _J: () => E,
+    di: () => m,
+    fi: () => _,
+    k$: () => s,
+    mR: () => A,
+    ql: () => f,
+    r2: () => g,
+    yc: () => u
+}), n(321073);
+var i = n(989349),
+    l = n.n(i),
+    a = n(834409),
+    d = n(218113),
+    r = n(985018);
+let u = {
+    month: "numeric",
+    day: "numeric",
+    hour: "numeric",
+    minute: "2-digit"
+};
+
+function s(t) {
+    return null != t.dmSpamDetectedAt && l()(t.dmSpamDetectedAt).add(d.Qs, "hours") > l()() || null != t.raidDetectedAt && l()(t.raidDetectedAt).add(d.Qs, "hours") > l()()
+}
+
+function c(t) {
+    return null != t.raidDetectedAt && l()(t.raidDetectedAt).add(d.Qs, "hours") > l()()
+}
+
+function o(t) {
+    return null != t.dmSpamDetectedAt && l()(t.dmSpamDetectedAt).add(d.Qs, "hours") > l()()
+}
+
+function D(t) {
+    return null == t ? void 0 : c(t) ? a.V.JOIN_RAID : a.V.DM_RAID
+}
+
+function A(t, e) {
+    let n = [];
+    return t && n.push(a.ZE.INVITES_DISABLED), e && n.push(a.ZE.DMS_DISABLED), n
+}
+
+function _(t, e) {
+    let n = [];
+    return t || n.push(a.ZE.INVITES_DISABLED), e || n.push(a.ZE.DMS_DISABLED), n
+}
+
+function E(t) {
+    return null != t.dmsDisabledUntil && new Date(t.dmsDisabledUntil) > new Date || null != t.invitesDisabledUntil && new Date(t.invitesDisabledUntil) > new Date
+}
+
+function m(t) {
+    return t?.dmsDisabledUntil != null && new Date(t.dmsDisabledUntil) > new Date
+}
+
+function g(t) {
+    return t?.invitesDisabledUntil != null && new Date(t.invitesDisabledUntil) > new Date
+}
+
+function f(t, e) {
+    let n = t.dmsDisabledUntil ?? t.invitesDisabledUntil;
+    if (null == n) return "";
+    let i = null != t.dmsDisabledUntil,
+        l = null != t.invitesDisabledUntil;
+    switch (!0) {
+        case i && l:
+            return r.intl.formatToPlainString(r.t.hCZitf, {
+                guildName: e,
+                time: new Date(n).toLocaleString(r.intl.currentLocale, u)
+            });
+        case i:
+            return r.intl.formatToPlainString(r.t["HNKxf+"], {
+                guildName: e,
+                time: new Date(n).toLocaleString(r.intl.currentLocale, u)
+            });
+        case l:
+            return r.intl.formatToPlainString(r.t.M3iSyL, {
+                guildName: e,
+                time: new Date(n).toLocaleString(r.intl.currentLocale, u)
+            });
+        default:
+            return ""
+    }
+}

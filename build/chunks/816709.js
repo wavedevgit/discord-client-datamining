@@ -1,2 +1,29 @@
 /** chunk id: 816709, original params: t,e,i (module,exports,require) **/
-i.d(e,{A:()=>a});var n=i(627968);i(64700);var l=i(9578),s=i(985018),r=i(202509);function a(t){let{termsOfServiceUrl:e,privacyPolicyUrl:i}=t;return null==e&&null==i?null:(0,n.jsxs)("span",{className:r.Q,children:[null!=e&&(0,n.jsx)(l.A,{href:e,children:s.intl.string(s.t["8S0kcM"])}),null!=e&&null!=i&&(0,n.jsx)("span",{"aria-disabled":"true",children:"•"}),null!=i&&(0,n.jsx)(l.A,{href:i,children:s.intl.string(s.t.ZpyeCm)})]})}
+i.d(e, {
+    A: () => a
+});
+var n = i(627968);
+i(64700);
+var l = i(9578),
+    s = i(985018),
+    r = i(202509);
+
+function a(t) {
+    let {
+        termsOfServiceUrl: e,
+        privacyPolicyUrl: i
+    } = t;
+    return null == e && null == i ? null : (0, n.jsxs)("span", {
+        className: r.Q,
+        children: [null != e && (0, n.jsx)(l.A, {
+            href: e,
+            children: s.intl.string(s.t["8S0kcM"])
+        }), null != e && null != i && (0, n.jsx)("span", {
+            "aria-disabled": "true",
+            children: "•"
+        }), null != i && (0, n.jsx)(l.A, {
+            href: i,
+            children: s.intl.string(s.t.ZpyeCm)
+        })]
+    })
+}

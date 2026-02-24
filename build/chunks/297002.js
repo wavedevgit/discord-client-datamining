@@ -1,2 +1,5 @@
 /** chunk id: 297002, original params: t,s,a (module,exports,require) **/
-t.exports={h_:"description_ad198f",YL:"tooltip_ad198f"}
+t.exports = {
+    h_: "description_ad198f",
+    YL: "tooltip_ad198f"
+}

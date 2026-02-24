@@ -1,2 +1,47 @@
 /** chunk id: 467073, original params: e,t,n (module,exports,require) **/
-n.d(t,{A:()=>m});var a=n(311907),i=n(229527),r=n(870136),l=n(857071),s=n(406704),o=n(696451),c=n(834942),d=n(576705),u=n(707985),_=n(652215);function m(e){let t=e?.guild_id,n=(0,a.bG)([c.A],()=>null==t||c.A.canChatInGuild(t),[t]),m=(0,a.bG)([l.A],()=>null!=t&&l.A.isLurking(t),[t]),p=(0,a.bG)([o.Ay],()=>null!=t&&o.Ay.isCurrentUserGuest(t),[t]),f=(0,a.bG)([d.A],()=>n&&d.A.can(_.xBc.ADD_REACTIONS,e),[n,e]),b=(0,i.ix)(t),[,h]=(0,r.c)(t),g=(0,s.Id)(e);return null==e?{disableReactionReads:!0,disableReactionCreates:!0,disableReactionUpdates:!0,isLurking:!1,isGuest:!1,isPendingMember:!1}:{...(0,u.A)({channel:e,canChat:n,renderReactions:!0,canAddNewReactions:f,isLurking:m,communicationDisabled:h,isActiveChannelOrUnarchivableThread:g,isAutomodQuarantined:b}),isLurking:m,isGuest:p,isPendingMember:!1}}
+n.d(t, {
+    A: () => m
+});
+var a = n(311907),
+    i = n(229527),
+    r = n(870136),
+    l = n(857071),
+    s = n(406704),
+    o = n(696451),
+    c = n(834942),
+    d = n(576705),
+    u = n(707985),
+    _ = n(652215);
+
+function m(e) {
+    let t = e?.guild_id,
+        n = (0, a.bG)([c.A], () => null == t || c.A.canChatInGuild(t), [t]),
+        m = (0, a.bG)([l.A], () => null != t && l.A.isLurking(t), [t]),
+        p = (0, a.bG)([o.Ay], () => null != t && o.Ay.isCurrentUserGuest(t), [t]),
+        f = (0, a.bG)([d.A], () => n && d.A.can(_.xBc.ADD_REACTIONS, e), [n, e]),
+        b = (0, i.ix)(t),
+        [, h] = (0, r.c)(t),
+        g = (0, s.Id)(e);
+    return null == e ? {
+        disableReactionReads: !0,
+        disableReactionCreates: !0,
+        disableReactionUpdates: !0,
+        isLurking: !1,
+        isGuest: !1,
+        isPendingMember: !1
+    } : {
+        ...(0, u.A)({
+            channel: e,
+            canChat: n,
+            renderReactions: !0,
+            canAddNewReactions: f,
+            isLurking: m,
+            communicationDisabled: h,
+            isActiveChannelOrUnarchivableThread: g,
+            isAutomodQuarantined: b
+        }),
+        isLurking: m,
+        isGuest: p,
+        isPendingMember: !1
+    }
+}

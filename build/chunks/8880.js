@@ -1,2 +1,64 @@
 /** chunk id: 8880, original params: t,e,n (module,exports,require) **/
-n.d(e,{A:()=>o});var i=n(311907),a=n(73153);let r={speechRate:1,currentMessage:null},s=r;class l extends i.Ay.DeviceSettingsStore{static displayName="TTSStore";static persistKey="TTSStore";static migrations=[];initialize(t){s={...r,...t??null}}isSpeakingMessage(t,e){let{currentMessage:n}=s;return null!==n&&n.channelId===t&&n.messageId===e}get currentMessage(){return s.currentMessage}get speechRate(){return s.speechRate}getUserAgnosticState(){return s}}let o=new l(a.h,__OVERLAY__?{}:{SPEAKING_MESSAGE:function(t){let{messageId:e,channelId:n}=t;s={...s,currentMessage:{messageId:e,channelId:n}}},STOP_SPEAKING:function(){s={...s,currentMessage:null}},SET_TTS_SPEECH_RATE:function(t){s={...s,speechRate:t.speechRate}}})
+n.d(e, {
+    A: () => o
+});
+var i = n(311907),
+    a = n(73153);
+let r = {
+        speechRate: 1,
+        currentMessage: null
+    },
+    s = r;
+class l extends i.Ay.DeviceSettingsStore {
+    static displayName = "TTSStore";
+    static persistKey = "TTSStore";
+    static migrations = [];
+    initialize(t) {
+        s = {
+            ...r,
+            ...t ?? null
+        }
+    }
+    isSpeakingMessage(t, e) {
+        let {
+            currentMessage: n
+        } = s;
+        return null !== n && n.channelId === t && n.messageId === e
+    }
+    get currentMessage() {
+        return s.currentMessage
+    }
+    get speechRate() {
+        return s.speechRate
+    }
+    getUserAgnosticState() {
+        return s
+    }
+}
+let o = new l(a.h, __OVERLAY__ ? {} : {
+    SPEAKING_MESSAGE: function(t) {
+        let {
+            messageId: e,
+            channelId: n
+        } = t;
+        s = {
+            ...s,
+            currentMessage: {
+                messageId: e,
+                channelId: n
+            }
+        }
+    },
+    STOP_SPEAKING: function() {
+        s = {
+            ...s,
+            currentMessage: null
+        }
+    },
+    SET_TTS_SPEECH_RATE: function(t) {
+        s = {
+            ...s,
+            speechRate: t.speechRate
+        }
+    }
+})

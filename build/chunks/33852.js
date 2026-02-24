@@ -1,2 +1,38 @@
 /** chunk id: 33852, original params: t,e,n (module,exports,require) **/
-n.d(e,{A:()=>d});var i=n(627968);n(64700);var l=n(311907),r=n(397927),a=n(882997),s=n(962173),o=n(985018);function d(t){let{platform:e,variant:n="secondary",size:d="sm",onAction:u,icon:c,...A}=t;return(0,l.bG)([s.A],()=>s.A.getAccounts().some(t=>t.type===e.type))?null:(0,i.jsx)(r.Button,{onClick:()=>{u?.(),(0,a.A)({platformType:e.type,location:"Activity Action"})},variant:n,size:d,icon:c,text:o.intl.format(o.t.XWSHTb,{platform:e.name}),fullWidth:!0,...A})}
+n.d(e, {
+    A: () => d
+});
+var i = n(627968);
+n(64700);
+var l = n(311907),
+    r = n(397927),
+    a = n(882997),
+    s = n(962173),
+    o = n(985018);
+
+function d(t) {
+    let {
+        platform: e,
+        variant: n = "secondary",
+        size: d = "sm",
+        onAction: u,
+        icon: c,
+        ...A
+    } = t;
+    return (0, l.bG)([s.A], () => s.A.getAccounts().some(t => t.type === e.type)) ? null : (0, i.jsx)(r.Button, {
+        onClick: () => {
+            u?.(), (0, a.A)({
+                platformType: e.type,
+                location: "Activity Action"
+            })
+        },
+        variant: n,
+        size: d,
+        icon: c,
+        text: o.intl.format(o.t.XWSHTb, {
+            platform: e.name
+        }),
+        fullWidth: !0,
+        ...A
+    })
+}

@@ -1,2 +1,7 @@
 /** chunk id: 690990, original params: t,e,n (module,exports,require) **/
-t.exports={RP:"confirmationContainer_f473af",RS:"confirmationHeader_f473af",sT:"confirmationSubtitle_f473af",UD:"buttonContainer_f473af"}
+t.exports = {
+    RP: "confirmationContainer_f473af",
+    RS: "confirmationHeader_f473af",
+    sT: "confirmationSubtitle_f473af",
+    UD: "buttonContainer_f473af"
+}

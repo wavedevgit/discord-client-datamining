@@ -1,2 +1,9 @@
 /** chunk id: 114329, original params: t,e,s (module,exports,require) **/
-s.d(e,{DO:()=>r});var l=s(317097),a=s(374994);let r=(0,l.LX)((0,a.nt)("BRAND_500",{saturation:1}))
+s.d(e, {
+    DO: () => r
+});
+var l = s(317097),
+    a = s(374994);
+let r = (0, l.LX)((0, a.nt)("BRAND_500", {
+    saturation: 1
+}))

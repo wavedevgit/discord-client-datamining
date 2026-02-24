@@ -1,2 +1,89 @@
 /** chunk id: 739693, original params: e,t,n (module,exports,require) **/
-n.d(t,{default:()=>m});var i=n(627968),s=n(64700),a=n(158954),l=n(311907),r=n(397927),o=n(631670),c=n(836602),d=n(592074),u=n(652215),_=n(985018);function m(e){let{transitionState:t,onSuccess:n,onClose:m,requirementsUpdated:A}=e,[g,h]=s.useState(""),[x,p]=s.useState(""),[E,C]=s.useState(""),[T,S]=s.useState(null),[I,f]=s.useState(null),{formState:N,errors:b}=(0,l.cf)([c.A],()=>({formState:c.A.getFormState(),errors:c.A.getErrors()})),j=s.useRef(null);async function v(e){e.preventDefault(),(0,o.x8)();let t=!1;if(""===x?(S(_.intl.string(_.t["/7/oPU"])),t=!0):S(null),x!==E?(f(_.intl.string(_.t["IEKYZ/"])),t=!0):f(null),t)return;let i=await (0,o._L)({password:g,newPassword:x});i?.ok?n():i?.body?.username!=null&&(0,d.E)()}return s.useEffect(()=>{t===r.ip4.ENTERED&&j.current?.focus()},[t]),(0,i.jsx)("form",{onSubmit:v,children:(0,i.jsx)(a.Modal,{transitionState:t,onClose:m,title:_.intl.string(_.t.geta79),subtitle:A?_.intl.string(_.t["37iHbZ"]):_.intl.string(_.t.iOurYj),actions:[{variant:"secondary",text:_.intl.string(_.t["ETE/oC"]),onClick:m},{variant:"primary",text:_.intl.string(_.t.i4jeWR),loading:N===u.XlH.SUBMITTING,type:"submit"}],children:(0,i.jsxs)(r.BJc,{gap:20,children:[(0,i.jsx)(r.ksK,{label:_.intl.string(_.t.WBqMRQ),error:b?.password?.[0],type:"password",value:g,onChange:h,inputRef:j,autoComplete:"current-password",required:!0}),(0,i.jsx)(r.ksK,{label:_.intl.string(_.t["8dM4FO"]),error:b?.new_password?.[0]??T??void 0,type:"password",value:x,onChange:p,autoComplete:"new-password",required:!0}),(0,i.jsx)(r.ksK,{label:_.intl.string(_.t.iQG2KC),error:I??void 0,type:"password",value:E,onChange:C,autoComplete:"new-password",required:!0})]})})})}
+n.d(t, {
+    default: () => m
+});
+var i = n(627968),
+    s = n(64700),
+    a = n(158954),
+    l = n(311907),
+    r = n(397927),
+    o = n(631670),
+    c = n(836602),
+    d = n(592074),
+    u = n(652215),
+    _ = n(985018);
+
+function m(e) {
+    let {
+        transitionState: t,
+        onSuccess: n,
+        onClose: m,
+        requirementsUpdated: A
+    } = e, [g, h] = s.useState(""), [x, p] = s.useState(""), [E, C] = s.useState(""), [T, S] = s.useState(null), [I, f] = s.useState(null), {
+        formState: N,
+        errors: b
+    } = (0, l.cf)([c.A], () => ({
+        formState: c.A.getFormState(),
+        errors: c.A.getErrors()
+    })), j = s.useRef(null);
+    async function v(e) {
+        e.preventDefault(), (0, o.x8)();
+        let t = !1;
+        if ("" === x ? (S(_.intl.string(_.t["/7/oPU"])), t = !0) : S(null), x !== E ? (f(_.intl.string(_.t["IEKYZ/"])), t = !0) : f(null), t) return;
+        let i = await (0, o._L)({
+            password: g,
+            newPassword: x
+        });
+        i?.ok ? n() : i?.body?.username != null && (0, d.E)()
+    }
+    return s.useEffect(() => {
+        t === r.ip4.ENTERED && j.current?.focus()
+    }, [t]), (0, i.jsx)("form", {
+        onSubmit: v,
+        children: (0, i.jsx)(a.Modal, {
+            transitionState: t,
+            onClose: m,
+            title: _.intl.string(_.t.geta79),
+            subtitle: A ? _.intl.string(_.t["37iHbZ"]) : _.intl.string(_.t.iOurYj),
+            actions: [{
+                variant: "secondary",
+                text: _.intl.string(_.t["ETE/oC"]),
+                onClick: m
+            }, {
+                variant: "primary",
+                text: _.intl.string(_.t.i4jeWR),
+                loading: N === u.XlH.SUBMITTING,
+                type: "submit"
+            }],
+            children: (0, i.jsxs)(r.BJc, {
+                gap: 20,
+                children: [(0, i.jsx)(r.ksK, {
+                    label: _.intl.string(_.t.WBqMRQ),
+                    error: b?.password?.[0],
+                    type: "password",
+                    value: g,
+                    onChange: h,
+                    inputRef: j,
+                    autoComplete: "current-password",
+                    required: !0
+                }), (0, i.jsx)(r.ksK, {
+                    label: _.intl.string(_.t["8dM4FO"]),
+                    error: b?.new_password?.[0] ?? T ?? void 0,
+                    type: "password",
+                    value: x,
+                    onChange: p,
+                    autoComplete: "new-password",
+                    required: !0
+                }), (0, i.jsx)(r.ksK, {
+                    label: _.intl.string(_.t.iQG2KC),
+                    error: I ?? void 0,
+                    type: "password",
+                    value: E,
+                    onChange: C,
+                    autoComplete: "new-password",
+                    required: !0
+                })]
+            })
+        })
+    })
+}

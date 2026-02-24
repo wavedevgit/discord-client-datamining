@@ -1,7 +1,0 @@
-/** chunk id: 166212, original params: e,t,n (module,exports,require) **/
-"use strict";
-e.exports = {
-    vK: "banner__68edb",
-    pH: "gifTag__68edb",
-    dK: "mask__68edb"
-}

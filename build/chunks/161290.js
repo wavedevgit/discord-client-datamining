@@ -1,2 +1,137 @@
 /** chunk id: 161290, original params: e,t,n (module,exports,require) **/
-n.d(t,{A:()=>L});var i=n(627968);n(64700);var s=n(284009),a=n.n(s),l=n(311907),r=n(631670),o=n(81400),c=n(185955),d=n(318785),u=n(919395),_=n(124064),m=n(200790),A=n(230084),g=n(339442),h=n(900254),x=n(431982),p=n(730588),E=n(593629),C=n(164599),T=n(63675),S=n(617514),I=n(546849),f=n(101058),N=n(207803),b=n(836602),j=n(622543),v=n(950191),O=n(287809),R=n(927578),y=n(985018),P=n(264671);function L(){let e=(0,l.bG)([O.default],()=>{let e=O.default.getCurrentUser();return a()(null!=e,"DefaultCustomizationSections: user cannot be undefined"),e}),t=(0,l.bG)([j.A],()=>j.A.getUserProfile(e.id)),{pendingAvatar:n,pendingGlobalName:s,pendingBanner:L,pendingBio:D,pendingPronouns:G,pendingAccentColor:M,pendingThemeColors:U,pendingLegacyUsernameDisabled:k,pendingPrimaryGuildId:V,errors:w}=(0,l.cf)([b.A],()=>{let e=b.A.getPendingChanges(),t=b.A.getErrors();return{...e,errors:t}}),H=(0,f.V7)({userId:e.id,image:n}),B=(0,o.EC)(),Y=R.Ay.canUsePremiumProfileCustomization(e),F=(0,u.z5)(n,e.avatar),z=(0,u.Ac)(L,t?.banner),W=(0,v.Ay)(e.id),K=W?.getLegacyUsername(),Z=(w.global_name?.length??0)>0?w.global_name:B?.nick??[],q=(w.bio?.length??0)>0?w.bio:B?.bio??[],X=(0,d.b)();return(0,i.jsxs)("div",{className:P.Q,children:[(0,i.jsx)(g.A,{placeholder:e.username,errors:Z,currentGlobalName:e.globalName,pendingGlobalName:s,onGlobalNameChange:r.U6,user:e}),(0,i.jsx)(I.A,{sectionTitle:y.intl.string(y.t["+T3RI/"]),errors:w.pronouns,onPronounsChange:N.Oz,pendingPronouns:G,currentPronouns:t?.pronouns??""},"pronouns"),(0,i.jsx)(S.A,{}),(0,i.jsx)(A.A,{onAvatarChange:r.zq,showRemoveAvatarButton:F,errors:w.avatar,sectionTitle:y.intl.string(y.t.lqaIxI),forcedDivider:!0},"avatar"),(0,i.jsx)(m.A,{user:e,sectionTitle:y.intl.string(y.t["7v0T9P"])},"decoration"),(0,i.jsx)(x.A,{user:e}),(0,i.jsx)(C.A,{user:e,sectionTitle:y.intl.string(y.t.wR5wOo)},"effect"),Y?(0,i.jsxs)(i.Fragment,{children:[(0,i.jsx)(p.A,{showRemoveBannerButton:z,errors:w.banner,onBannerChange:N.Iz,forcedDivider:!0},"banner"),(0,i.jsx)(T.A,{user:e,pendingAvatarSrc:H,pendingColors:U,onThemeColorsChange:N.Zz,forcedDivider:!0})]}):(0,i.jsx)(E.A,{user:e,savedUserColor:t?.accentColor,pendingColor:M,setPendingAccentColor:N.XW},"color"),(0,i.jsx)(_.A,{sectionTitle:y.intl.string(y.t.ZzAR2Y),errors:q,onBioChange:e=>(0,u.Ru)(e,t?.bio),pendingBio:D,currentBio:t?.bio??""},"bio"),X.length>0&&(0,i.jsx)(c.A,{availablePrimaryGuilds:X,pendingPrimaryGuildId:V,onChange:e=>(0,r.Ch)(e)}),null!=K&&(0,i.jsx)(h.A,{legacyUsername:K,pendingLegacyUsernameDisabled:k},"legacy_username")]})}
+n.d(t, {
+    A: () => L
+});
+var i = n(627968);
+n(64700);
+var s = n(284009),
+    a = n.n(s),
+    l = n(311907),
+    r = n(631670),
+    o = n(81400),
+    c = n(185955),
+    d = n(318785),
+    u = n(919395),
+    _ = n(124064),
+    m = n(200790),
+    A = n(230084),
+    g = n(339442),
+    h = n(900254),
+    x = n(431982),
+    p = n(730588),
+    E = n(593629),
+    C = n(164599),
+    T = n(63675),
+    S = n(617514),
+    I = n(546849),
+    f = n(101058),
+    N = n(207803),
+    b = n(836602),
+    j = n(622543),
+    v = n(950191),
+    O = n(287809),
+    R = n(927578),
+    y = n(985018),
+    P = n(264671);
+
+function L() {
+    let e = (0, l.bG)([O.default], () => {
+            let e = O.default.getCurrentUser();
+            return a()(null != e, "DefaultCustomizationSections: user cannot be undefined"), e
+        }),
+        t = (0, l.bG)([j.A], () => j.A.getUserProfile(e.id)),
+        {
+            pendingAvatar: n,
+            pendingGlobalName: s,
+            pendingBanner: L,
+            pendingBio: D,
+            pendingPronouns: G,
+            pendingAccentColor: M,
+            pendingThemeColors: U,
+            pendingLegacyUsernameDisabled: k,
+            pendingPrimaryGuildId: V,
+            errors: w
+        } = (0, l.cf)([b.A], () => {
+            let e = b.A.getPendingChanges(),
+                t = b.A.getErrors();
+            return {
+                ...e,
+                errors: t
+            }
+        }),
+        H = (0, f.V7)({
+            userId: e.id,
+            image: n
+        }),
+        B = (0, o.EC)(),
+        Y = R.Ay.canUsePremiumProfileCustomization(e),
+        F = (0, u.z5)(n, e.avatar),
+        z = (0, u.Ac)(L, t?.banner),
+        W = (0, v.Ay)(e.id),
+        K = W?.getLegacyUsername(),
+        Z = (w.global_name?.length ?? 0) > 0 ? w.global_name : B?.nick ?? [],
+        q = (w.bio?.length ?? 0) > 0 ? w.bio : B?.bio ?? [],
+        X = (0, d.b)();
+    return (0, i.jsxs)("div", {
+        className: P.Q,
+        children: [(0, i.jsx)(g.A, {
+            placeholder: e.username,
+            errors: Z,
+            currentGlobalName: e.globalName,
+            pendingGlobalName: s,
+            onGlobalNameChange: r.U6,
+            user: e
+        }), (0, i.jsx)(I.A, {
+            sectionTitle: y.intl.string(y.t["+T3RI/"]),
+            errors: w.pronouns,
+            onPronounsChange: N.Oz,
+            pendingPronouns: G,
+            currentPronouns: t?.pronouns ?? ""
+        }, "pronouns"), (0, i.jsx)(S.A, {}), (0, i.jsx)(A.A, {
+            onAvatarChange: r.zq,
+            showRemoveAvatarButton: F,
+            errors: w.avatar,
+            sectionTitle: y.intl.string(y.t.lqaIxI),
+            forcedDivider: !0
+        }, "avatar"), (0, i.jsx)(m.A, {
+            user: e,
+            sectionTitle: y.intl.string(y.t["7v0T9P"])
+        }, "decoration"), (0, i.jsx)(x.A, {
+            user: e
+        }), (0, i.jsx)(C.A, {
+            user: e,
+            sectionTitle: y.intl.string(y.t.wR5wOo)
+        }, "effect"), Y ? (0, i.jsxs)(i.Fragment, {
+            children: [(0, i.jsx)(p.A, {
+                showRemoveBannerButton: z,
+                errors: w.banner,
+                onBannerChange: N.Iz,
+                forcedDivider: !0
+            }, "banner"), (0, i.jsx)(T.A, {
+                user: e,
+                pendingAvatarSrc: H,
+                pendingColors: U,
+                onThemeColorsChange: N.Zz,
+                forcedDivider: !0
+            })]
+        }) : (0, i.jsx)(E.A, {
+            user: e,
+            savedUserColor: t?.accentColor,
+            pendingColor: M,
+            setPendingAccentColor: N.XW
+        }, "color"), (0, i.jsx)(_.A, {
+            sectionTitle: y.intl.string(y.t.ZzAR2Y),
+            errors: q,
+            onBioChange: e => (0, u.Ru)(e, t?.bio),
+            pendingBio: D,
+            currentBio: t?.bio ?? ""
+        }, "bio"), X.length > 0 && (0, i.jsx)(c.A, {
+            availablePrimaryGuilds: X,
+            pendingPrimaryGuildId: V,
+            onChange: e => (0, r.Ch)(e)
+        }), null != K && (0, i.jsx)(h.A, {
+            legacyUsername: K,
+            pendingLegacyUsernameDisabled: k
+        }, "legacy_username")]
+    })
+}

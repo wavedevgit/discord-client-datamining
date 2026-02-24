@@ -1,2 +1,4 @@
 /** chunk id: 281743, original params: e,t,n (module,exports,require) **/
-e.exports={r:"suggestedGames_dbb349"}
+e.exports = {
+    r: "suggestedGames_dbb349"
+}

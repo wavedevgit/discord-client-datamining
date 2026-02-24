@@ -1,2 +1,16 @@
 /** chunk id: 718213, original params: e,t,s (module,exports,require) **/
-s.d(t,{A:()=>i});var a=s(64700);let i=function(e,t){let[s,i]=a.useState(e);return a.useEffect(()=>{let s=setTimeout(()=>{i(e)},t);return()=>{clearTimeout(s)}},[e,t]),s}
+s.d(t, {
+    A: () => i
+});
+var a = s(64700);
+let i = function(e, t) {
+    let [s, i] = a.useState(e);
+    return a.useEffect(() => {
+        let s = setTimeout(() => {
+            i(e)
+        }, t);
+        return () => {
+            clearTimeout(s)
+        }
+    }, [e, t]), s
+}

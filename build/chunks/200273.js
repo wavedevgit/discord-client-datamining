@@ -1,2 +1,23 @@
 /** chunk id: 200273, original params: t,n,e (module,exports,require) **/
-e.d(n,{A:()=>d});var i=e(627968);e(64700);var a=e(397927),l=e(435183),r=e(406704),s=e(985018);function d(t){let n=(0,r.NI)(t),e=(0,r.Id)(t),d=(0,r.s5)(t);return!n||!e||d||t.isModeratorReportChannel()||__OVERLAY__?null:(0,i.jsx)(a.Drp,{id:"edit-thread",label:t.isForumPost()?s.intl.string(s.t.NP1yHG):s.intl.string(s.t["2Mk1TP"]),action:()=>{(0,a.s7G)(),l.Ay.open(t.id)}})}
+e.d(n, {
+    A: () => d
+});
+var i = e(627968);
+e(64700);
+var a = e(397927),
+    l = e(435183),
+    r = e(406704),
+    s = e(985018);
+
+function d(t) {
+    let n = (0, r.NI)(t),
+        e = (0, r.Id)(t),
+        d = (0, r.s5)(t);
+    return !n || !e || d || t.isModeratorReportChannel() || __OVERLAY__ ? null : (0, i.jsx)(a.Drp, {
+        id: "edit-thread",
+        label: t.isForumPost() ? s.intl.string(s.t.NP1yHG) : s.intl.string(s.t["2Mk1TP"]),
+        action: () => {
+            (0, a.s7G)(), l.Ay.open(t.id)
+        }
+    })
+}

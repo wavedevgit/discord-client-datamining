@@ -1,2 +1,8 @@
 /** chunk id: 644861, original params: e,t,r (module,exports,require) **/
-"use strict";r.d(t,{A:()=>n});let n=function(e,t){if(("constructor"!==t||"function"!=typeof e[t])&&"__proto__"!=t)return e[t]}
+"use strict";
+r.d(t, {
+    A: () => n
+});
+let n = function(e, t) {
+    if (("constructor" !== t || "function" != typeof e[t]) && "__proto__" != t) return e[t]
+}

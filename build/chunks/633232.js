@@ -1,2 +1,4 @@
 /** chunk id: 633232, original params: e,t,n (module,exports,require) **/
-e.exports={i:"previewContainer_dd7e13"}
+e.exports = {
+    i: "previewContainer_dd7e13"
+}

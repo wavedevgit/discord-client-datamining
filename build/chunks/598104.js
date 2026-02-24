@@ -1,2 +1,36 @@
 /** chunk id: 598104, original params: e,t,s (module,exports,require) **/
-s.d(t,{A:()=>A});var l=s(627968),i=s(64700),a=s(397927),n=s(571694),r=s(954376);let A=i.memo(function(e){let{channel:t,size:s,facepileSizeOverride:i,isTyping:A,status:u,className:_,animated:c=!1,...h}=e;return t.recipients.length>=2&&null==t.icon?(0,l.jsx)(r.A,{"aria-label":h["aria-label"],"aria-hidden":h["aria-hidden"],className:_,recipients:t.recipients,size:i??s,isTyping:A,status:u}):(0,l.jsx)(a.euF,{"aria-hidden":h["aria-hidden"],"aria-label":h["aria-label"],className:_,size:s,src:(0,n.Y)(t,80,c)})})
+s.d(t, {
+    A: () => A
+});
+var l = s(627968),
+    i = s(64700),
+    a = s(397927),
+    n = s(571694),
+    r = s(954376);
+let A = i.memo(function(e) {
+    let {
+        channel: t,
+        size: s,
+        facepileSizeOverride: i,
+        isTyping: A,
+        status: u,
+        className: _,
+        animated: c = !1,
+        ...h
+    } = e;
+    return t.recipients.length >= 2 && null == t.icon ? (0, l.jsx)(r.A, {
+        "aria-label": h["aria-label"],
+        "aria-hidden": h["aria-hidden"],
+        className: _,
+        recipients: t.recipients,
+        size: i ?? s,
+        isTyping: A,
+        status: u
+    }) : (0, l.jsx)(a.euF, {
+        "aria-hidden": h["aria-hidden"],
+        "aria-label": h["aria-label"],
+        className: _,
+        size: s,
+        src: (0, n.Y)(t, 80, c)
+    })
+})

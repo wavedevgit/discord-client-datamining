@@ -1,2 +1,63 @@
 /** chunk id: 39043, original params: e,t,n (module,exports,require) **/
-n.d(t,{A:()=>u});var i=n(627968),s=n(64700),a=n(735438),l=n(942381),r=n(770178),o=n(894858),c=n(641324),d=n(78837);let u=s.memo(function(e){let{node:t}=e,{useTitle:n,layout:u,useCollapsedSubtitle:_}=t,[m,A]=s.useState(!1),[g,h]=s.useState(!0),x=s.useRef(m);s.useEffect(()=>o.A.subscribe(e=>{let{navTransition:t}=e;return t},e=>{let n=e?.targetAccordionKey===t.key;n&&!m&&(x.current=!0,A(!0),h(!1)),n&&m&&(o.A.setState({navTransition:{...e,targetAccordionKey:void 0}}),h(!0))},{equalityFn:l.x,fireImmediately:!0}),[m,t.key]);let p=s.useCallback(e=>{null==e.target||x.current===m||(x.current=m,m&&o.A.setState({navTransition:{targetKey:t.key,targetAccordionKey:t.key,animateScroll:!0,scrollBlock:"nearest"}}))},[m,t.key]),E=s.useMemo(()=>(0,a.debounce)(p,50),[p]),C=(0,r.w)(E),T=n?.(m),S=_?.();return(0,i.jsx)(d.f,{ref:C,title:T,collapsedSubtitle:S,isExpanded:m,onExpandedChange:A,animate:g,children:u.map(e=>(0,i.jsx)(c.A,{node:e},e.key))})})
+n.d(t, {
+    A: () => u
+});
+var i = n(627968),
+    s = n(64700),
+    a = n(735438),
+    l = n(942381),
+    r = n(770178),
+    o = n(894858),
+    c = n(641324),
+    d = n(78837);
+let u = s.memo(function(e) {
+    let {
+        node: t
+    } = e, {
+        useTitle: n,
+        layout: u,
+        useCollapsedSubtitle: _
+    } = t, [m, A] = s.useState(!1), [g, h] = s.useState(!0), x = s.useRef(m);
+    s.useEffect(() => o.A.subscribe(e => {
+        let {
+            navTransition: t
+        } = e;
+        return t
+    }, e => {
+        let n = e?.targetAccordionKey === t.key;
+        n && !m && (x.current = !0, A(!0), h(!1)), n && m && (o.A.setState({
+            navTransition: {
+                ...e,
+                targetAccordionKey: void 0
+            }
+        }), h(!0))
+    }, {
+        equalityFn: l.x,
+        fireImmediately: !0
+    }), [m, t.key]);
+    let p = s.useCallback(e => {
+            null == e.target || x.current === m || (x.current = m, m && o.A.setState({
+                navTransition: {
+                    targetKey: t.key,
+                    targetAccordionKey: t.key,
+                    animateScroll: !0,
+                    scrollBlock: "nearest"
+                }
+            }))
+        }, [m, t.key]),
+        E = s.useMemo(() => (0, a.debounce)(p, 50), [p]),
+        C = (0, r.w)(E),
+        T = n?.(m),
+        S = _?.();
+    return (0, i.jsx)(d.f, {
+        ref: C,
+        title: T,
+        collapsedSubtitle: S,
+        isExpanded: m,
+        onExpandedChange: A,
+        animate: g,
+        children: u.map(e => (0, i.jsx)(c.A, {
+            node: e
+        }, e.key))
+    })
+})

@@ -1,2 +1,30 @@
 /** chunk id: 90509, original params: n,t,e (module,exports,require) **/
-e.d(t,{A:()=>d});var i=e(627968);e(64700);var r=e(397927),l=e(422258),a=e(985018);function d(n){return(0,i.jsx)(r.Drp,{id:"delete-channel",label:a.intl.string(a.t.Jg0R7Q),subtext:a.intl.string(a.t["+mNKM9"]),color:"danger",action:()=>(0,r.mMO)(async()=>{let{default:t}=await e.e("52210").then(e.bind(e,862377));return e=>(0,i.jsx)(t,{...e,onConfirm:()=>{e.onClose(),(0,l.fv)(n.id)},channel:n})})})}
+e.d(t, {
+    A: () => d
+});
+var i = e(627968);
+e(64700);
+var r = e(397927),
+    l = e(422258),
+    a = e(985018);
+
+function d(n) {
+    return (0, i.jsx)(r.Drp, {
+        id: "delete-channel",
+        label: a.intl.string(a.t.Jg0R7Q),
+        subtext: a.intl.string(a.t["+mNKM9"]),
+        color: "danger",
+        action: () => (0, r.mMO)(async () => {
+            let {
+                default: t
+            } = await e.e("52210").then(e.bind(e, 862377));
+            return e => (0, i.jsx)(t, {
+                ...e,
+                onConfirm: () => {
+                    e.onClose(), (0, l.fv)(n.id)
+                },
+                channel: n
+            })
+        })
+    })
+}

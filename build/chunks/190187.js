@@ -1,2 +1,24 @@
 /** chunk id: 190187, original params: e,t,n (module,exports,require) **/
-n.d(t,{i:()=>m});var i=n(64700),l=n(311907),a=n(531260),r=n(287809),s=n(474090),o=n(526292),c=n(89366),d=n(851746),u=n(788868);let m=function(){let e=arguments.length>0&&void 0!==arguments[0]&&arguments[0],t=(0,l.bG)([r.default],()=>r.default.getCurrentUser()),n=(0,o.k5)(),m=(0,c.QQ)(),_=(0,a.A)(),A=t?.verified===!0&&(0,s.YE)(t,u.PremiumTypes.TIER_2)&&_.fetched&&_.fractionalState!==u.xc.FP_ONLY&&!n&&!m;i.useEffect(()=>{A&&!e&&d.A.checkAndFetchReferralsRemaining()},[A,e])}
+n.d(t, {
+    i: () => m
+});
+var i = n(64700),
+    l = n(311907),
+    a = n(531260),
+    r = n(287809),
+    s = n(474090),
+    o = n(526292),
+    c = n(89366),
+    d = n(851746),
+    u = n(788868);
+let m = function() {
+    let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
+        t = (0, l.bG)([r.default], () => r.default.getCurrentUser()),
+        n = (0, o.k5)(),
+        m = (0, c.QQ)(),
+        _ = (0, a.A)(),
+        A = t?.verified === !0 && (0, s.YE)(t, u.PremiumTypes.TIER_2) && _.fetched && _.fractionalState !== u.xc.FP_ONLY && !n && !m;
+    i.useEffect(() => {
+        A && !e && d.A.checkAndFetchReferralsRemaining()
+    }, [A, e])
+}

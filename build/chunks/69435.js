@@ -1,2 +1,97 @@
 /** chunk id: 69435, original params: e,t,n (module,exports,require) **/
-n.d(t,{A:()=>C,D:()=>E});var i=n(627968),s=n(64700),a=n(311907),l=n(314116),r=n(397927),o=n(271866),c=n(195043),d=n(147964),u=n(837921),_=n(253932),m=n(801264),A=n(912615),g=n(790174),h=n(531525),x=n(652215),p=n(985018);function E(){let[e]=s.useState(()=>u.Ay.getEnableHardwareAcceleration()),t=s.useCallback(e=>{let t=e?p.intl.format(p.t.LYXRxL,{}):p.intl.format(p.t.uDP3Kz,{});(0,l.A)({title:p.intl.string(p.t.aqpAvn),subtitle:t,confirmText:p.intl.string(p.t.vT7ckk),onConfirm:()=>u.Ay.setEnableHardwareAcceleration(e)})},[]);return(0,i.jsxs)(r.BJc,{children:[(0,i.jsx)(r.dOG,{label:p.intl.string(p.t["eOC/F2"]),description:p.intl.string(p.t.Afc7l6),checked:e,onChange:t}),!e&&(0,i.jsx)(m.A,{look:m.k.WARNING,children:p.intl.string(p.t.j7S6IX)})]})}function C(){let e=_.l_.useSetting(),t=_.Q_.useSetting(),n=(0,a.bG)([d.A],()=>d.A.testModeApplicationId),l=s.useCallback(e=>{_.l_.updateSetting(!e)},[]),u=s.useCallback(e=>{e?(0,r.qfG)(e=>(0,i.jsx)(A.A,{...e})):o.cL()},[]);return(0,i.jsx)(g.A,{title:p.intl.string(p.t["8/udY0"]),children:(0,i.jsxs)(r.BJc,{gap:16,children:[(0,i.jsxs)(c.x,{setting:h.H.SETTINGS_ADVANCED_DEVELOPER_MODE,children:[(0,i.jsx)(r.dOG,{label:p.intl.string(p.t.ObIb1Q),description:p.intl.format(p.t["CY6q/Q"],{apiDocsUrl:x.X7G.API_DOCS}),checked:t,onChange:_.Q_.updateSetting}),(0,i.jsx)(r.cGx,{})]}),(0,i.jsx)(c.x,{setting:h.H.SETTINGS_ADVANCED_HARDWARE_ACCELERATION,children:(0,i.jsxs)(r.BJc,{gap:16,children:[(0,i.jsx)(E,{}),(0,i.jsx)(r.cGx,{})]})}),(0,i.jsxs)(c.x,{setting:h.H.SETTINGS_ADVANCED_SHOW_GAME_LIBRARY,children:[(0,i.jsx)(r.dOG,{label:p.intl.string(p.t.fi3UQN),description:p.intl.string(p.t["8mYp37"]),checked:!e,onChange:l}),(0,i.jsx)(r.cGx,{})]}),(0,i.jsxs)(c.x,{setting:h.H.SETTINGS_ADVANCED_APPLICATION_TEST_MODE,children:[(0,i.jsx)(r.dOG,{label:p.intl.string(p.t.erOqlh),description:p.intl.string(p.t["52hMnD"]),checked:null!=n,onChange:u}),(0,i.jsx)(r.cGx,{})]})]})})}
+n.d(t, {
+    A: () => C,
+    D: () => E
+});
+var i = n(627968),
+    s = n(64700),
+    a = n(311907),
+    l = n(314116),
+    r = n(397927),
+    o = n(271866),
+    c = n(195043),
+    d = n(147964),
+    u = n(837921),
+    _ = n(253932),
+    m = n(801264),
+    A = n(912615),
+    g = n(790174),
+    h = n(531525),
+    x = n(652215),
+    p = n(985018);
+
+function E() {
+    let [e] = s.useState(() => u.Ay.getEnableHardwareAcceleration()), t = s.useCallback(e => {
+        let t = e ? p.intl.format(p.t.LYXRxL, {}) : p.intl.format(p.t.uDP3Kz, {});
+        (0, l.A)({
+            title: p.intl.string(p.t.aqpAvn),
+            subtitle: t,
+            confirmText: p.intl.string(p.t.vT7ckk),
+            onConfirm: () => u.Ay.setEnableHardwareAcceleration(e)
+        })
+    }, []);
+    return (0, i.jsxs)(r.BJc, {
+        children: [(0, i.jsx)(r.dOG, {
+            label: p.intl.string(p.t["eOC/F2"]),
+            description: p.intl.string(p.t.Afc7l6),
+            checked: e,
+            onChange: t
+        }), !e && (0, i.jsx)(m.A, {
+            look: m.k.WARNING,
+            children: p.intl.string(p.t.j7S6IX)
+        })]
+    })
+}
+
+function C() {
+    let e = _.l_.useSetting(),
+        t = _.Q_.useSetting(),
+        n = (0, a.bG)([d.A], () => d.A.testModeApplicationId),
+        l = s.useCallback(e => {
+            _.l_.updateSetting(!e)
+        }, []),
+        u = s.useCallback(e => {
+            e ? (0, r.qfG)(e => (0, i.jsx)(A.A, {
+                ...e
+            })) : o.cL()
+        }, []);
+    return (0, i.jsx)(g.A, {
+        title: p.intl.string(p.t["8/udY0"]),
+        children: (0, i.jsxs)(r.BJc, {
+            gap: 16,
+            children: [(0, i.jsxs)(c.x, {
+                setting: h.H.SETTINGS_ADVANCED_DEVELOPER_MODE,
+                children: [(0, i.jsx)(r.dOG, {
+                    label: p.intl.string(p.t.ObIb1Q),
+                    description: p.intl.format(p.t["CY6q/Q"], {
+                        apiDocsUrl: x.X7G.API_DOCS
+                    }),
+                    checked: t,
+                    onChange: _.Q_.updateSetting
+                }), (0, i.jsx)(r.cGx, {})]
+            }), (0, i.jsx)(c.x, {
+                setting: h.H.SETTINGS_ADVANCED_HARDWARE_ACCELERATION,
+                children: (0, i.jsxs)(r.BJc, {
+                    gap: 16,
+                    children: [(0, i.jsx)(E, {}), (0, i.jsx)(r.cGx, {})]
+                })
+            }), (0, i.jsxs)(c.x, {
+                setting: h.H.SETTINGS_ADVANCED_SHOW_GAME_LIBRARY,
+                children: [(0, i.jsx)(r.dOG, {
+                    label: p.intl.string(p.t.fi3UQN),
+                    description: p.intl.string(p.t["8mYp37"]),
+                    checked: !e,
+                    onChange: l
+                }), (0, i.jsx)(r.cGx, {})]
+            }), (0, i.jsxs)(c.x, {
+                setting: h.H.SETTINGS_ADVANCED_APPLICATION_TEST_MODE,
+                children: [(0, i.jsx)(r.dOG, {
+                    label: p.intl.string(p.t.erOqlh),
+                    description: p.intl.string(p.t["52hMnD"]),
+                    checked: null != n,
+                    onChange: u
+                }), (0, i.jsx)(r.cGx, {})]
+            })]
+        })
+    })
+}

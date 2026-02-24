@@ -1,2 +1,21 @@
 /** chunk id: 165655, original params: e,t,n (module,exports,require) **/
-n.d(t,{T:()=>s});var a=n(627968),i=n(583087);function s(e){let{imageUrl:t}=e;return(0,a.jsx)("div",{className:i.k,children:(0,a.jsx)("div",{className:i.d,style:{backgroundImage:`url(${t})`}})})}
+n.d(t, {
+    T: () => s
+});
+var a = n(627968),
+    i = n(583087);
+
+function s(e) {
+    let {
+        imageUrl: t
+    } = e;
+    return (0, a.jsx)("div", {
+        className: i.k,
+        children: (0, a.jsx)("div", {
+            className: i.d,
+            style: {
+                backgroundImage: `url(${t})`
+            }
+        })
+    })
+}

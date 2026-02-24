@@ -1,2 +1,99 @@
 /** chunk id: 923121, original params: e,t,n (module,exports,require) **/
-"use strict";n.d(t,{Bq:()=>x,fH:()=>p,p2:()=>h,q3:()=>_,sF:()=>u,yM:()=>g,zN:()=>m}),n(321073);var i=n(73153),s=n(157559),l=n(198982),r=n(403362),a=n(352821),o=n(107795),d=n(539916),c=n(985018);function u(e){i.h.dispatch({type:"GUILD_SETTINGS_ONBOARDING_CONNECTIONS_ADD",connection:e})}function m(e){i.h.dispatch({type:"GUILD_SETTINGS_ONBOARDING_CONNECTIONS_REMOVE",index:e})}function g(e,t){i.h.dispatch({type:"GUILD_SETTINGS_ONBOARDING_CONNECTIONS_UPDATE",index:e,updates:t})}function x(e){i.h.dispatch({type:"GUILD_SETTINGS_ONBOARDING_CONNECTIONS_REORDER",connections:e})}function h(){i.h.dispatch({type:"GUILD_SETTINGS_ONBOARDING_CONNECTIONS_RESET"})}async function _(e){let t=a.A.getEditedConnections(),n=[];if(t.forEach(e=>{let t=(0,d.Ii)(e);n.push(...t)}),n.length>0)throw A(n),s.A.show({title:c.intl.string(c.t.ISppXw),body:n.join("\n")}),Error("failed to validate connections");i.h.dispatch({type:"GUILD_SETTINGS_ONBOARDING_CONNECTIONS_SUBMIT"});try{var u,m;await (0,o.YN)(e,{connections:t}),u=e,m=t,i.h.dispatch({type:"GUILD_SETTINGS_ONBOARDING_CONNECTIONS_SAVE_SUCCESS",guildId:u,connections:m})}catch(i){let{fieldName:e,error:t}=new l.LG(i).getAnyErrorMessageAndField()??{},n=[e,t].filter(r.Vq).join(": ");throw A([n]),s.A.show({title:c.intl.string(c.t.iLdiqY),body:n}),i}}function A(e){i.h.dispatch({type:"GUILD_SETTINGS_ONBOARDING_CONNECTIONS_SAVE_FAILED",errors:e})}function p(e){let t=arguments.length>1&&void 0!==arguments[1]&&arguments[1];return t||a.A.hasChanges()?_(e):Promise.resolve()}
+"use strict";
+n.d(t, {
+    Bq: () => x,
+    fH: () => p,
+    p2: () => h,
+    q3: () => _,
+    sF: () => u,
+    yM: () => g,
+    zN: () => m
+}), n(321073);
+var i = n(73153),
+    s = n(157559),
+    l = n(198982),
+    r = n(403362),
+    a = n(352821),
+    o = n(107795),
+    d = n(539916),
+    c = n(985018);
+
+function u(e) {
+    i.h.dispatch({
+        type: "GUILD_SETTINGS_ONBOARDING_CONNECTIONS_ADD",
+        connection: e
+    })
+}
+
+function m(e) {
+    i.h.dispatch({
+        type: "GUILD_SETTINGS_ONBOARDING_CONNECTIONS_REMOVE",
+        index: e
+    })
+}
+
+function g(e, t) {
+    i.h.dispatch({
+        type: "GUILD_SETTINGS_ONBOARDING_CONNECTIONS_UPDATE",
+        index: e,
+        updates: t
+    })
+}
+
+function x(e) {
+    i.h.dispatch({
+        type: "GUILD_SETTINGS_ONBOARDING_CONNECTIONS_REORDER",
+        connections: e
+    })
+}
+
+function h() {
+    i.h.dispatch({
+        type: "GUILD_SETTINGS_ONBOARDING_CONNECTIONS_RESET"
+    })
+}
+async function _(e) {
+    let t = a.A.getEditedConnections(),
+        n = [];
+    if (t.forEach(e => {
+            let t = (0, d.Ii)(e);
+            n.push(...t)
+        }), n.length > 0) throw A(n), s.A.show({
+        title: c.intl.string(c.t.ISppXw),
+        body: n.join("\n")
+    }), Error("failed to validate connections");
+    i.h.dispatch({
+        type: "GUILD_SETTINGS_ONBOARDING_CONNECTIONS_SUBMIT"
+    });
+    try {
+        var u, m;
+        await (0, o.YN)(e, {
+            connections: t
+        }), u = e, m = t, i.h.dispatch({
+            type: "GUILD_SETTINGS_ONBOARDING_CONNECTIONS_SAVE_SUCCESS",
+            guildId: u,
+            connections: m
+        })
+    } catch (i) {
+        let {
+            fieldName: e,
+            error: t
+        } = new l.LG(i).getAnyErrorMessageAndField() ?? {}, n = [e, t].filter(r.Vq).join(": ");
+        throw A([n]), s.A.show({
+            title: c.intl.string(c.t.iLdiqY),
+            body: n
+        }), i
+    }
+}
+
+function A(e) {
+    i.h.dispatch({
+        type: "GUILD_SETTINGS_ONBOARDING_CONNECTIONS_SAVE_FAILED",
+        errors: e
+    })
+}
+
+function p(e) {
+    let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
+    return t || a.A.hasChanges() ? _(e) : Promise.resolve()
+}

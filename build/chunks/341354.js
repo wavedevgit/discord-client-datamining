@@ -1,2 +1,112 @@
 /** chunk id: 341354, original params: e,t,n (module,exports,require) **/
-n.d(t,{default:()=>U});var l=n(627968);n(64700);var i=n(397927),r=n(442433),a=n(847767),d=n(358367),o=n(468389),s=n(793574),u=n(50268),c=n(222311),A=n(803664),g=n(29293),f=n(509302),E=n(497600),b=n(239211),h=n(707378),v=n(399476),I=n(889460),p=n(460597),m=n(198229),x=n(243949),D=n(972432),N=n(77544),y=n(566396),_=n(571964),S=n(708653),C=n(297460),M=n(652215),j=n(985018);let U=(0,d.A)((0,a.A)(function(e){let{user:t,guildId:n,channelId:a,showMediaItems:d=!1,mediaEngineContext:s,onSelect:U,onInteraction:O,appContext:L=M.BRT.OVERLAY,friendGroupId:V,showManageFriendGroupsItems:k=!1,onMessageUser:R,widgetType:T}=e,G=(0,x.A)({userId:t.id,guildId:n,channelId:a}),F=(0,C.A)({kind:"DM_USER",userId:t.id,onOpenOverride:R},T),{toggleFavoriteItem:w}=(0,S.As)(t.id,T),B=(0,h.A)({user:t}),P=(0,y.A)(t.id),H=(0,E.A)({user:t,guildId:n,channelId:a,context:L}),X=(0,g.A)({user:t}),W=(0,_.A)({user:t,groupId:V}),Y=(0,N.A)(t.id),K=(0,D.A)(t.id),Z=(0,m.A)(t.id,s),J=(0,I.A)({user:t}),$=(0,o.A)(null,t),z=(0,A.A)({user:t}),q=(0,f.A)({user:t}),Q=(0,p.A)({user:t}),ee=(0,b.A)({user:t}),et=(0,v.A)({user:t}),en=(0,u.A)({id:t.id,label:j.intl.string(j.t["/AXYnE"])}),el=(0,c.A)(t),ei=t.isNonUserBot();return(0,l.jsxs)(i.W1t,{navId:"overlay-user-context",onClose:r.Z_,"aria-label":j.intl.string(j.t.liqwPJ),onSelect:U,onInteraction:O,children:[!ei&&(0,l.jsxs)(l.Fragment,{children:[(0,l.jsx)(i.rXV,{children:el}),(0,l.jsxs)(i.rXV,{children:[F,B,P,Y]}),(0,l.jsxs)(i.rXV,{children:[G,H,X,w,k?W:null]}),d&&(0,l.jsx)(i.rXV,{children:K}),(0,l.jsx)(i.rXV,{children:$}),(0,l.jsxs)(i.rXV,{children:[d&&Z,J,z,q,Q,et,ee]})]}),(0,l.jsx)(i.rXV,{children:en})]})},{object:M.ZSU.CONTEXT_MENU}),[s.A.CONTEXT_MENU,s.A.OVERLAY,s.A.USER_GENERIC_MENU])
+n.d(t, {
+    default: () => U
+});
+var l = n(627968);
+n(64700);
+var i = n(397927),
+    r = n(442433),
+    a = n(847767),
+    d = n(358367),
+    o = n(468389),
+    s = n(793574),
+    u = n(50268),
+    c = n(222311),
+    A = n(803664),
+    g = n(29293),
+    f = n(509302),
+    E = n(497600),
+    b = n(239211),
+    h = n(707378),
+    v = n(399476),
+    I = n(889460),
+    p = n(460597),
+    m = n(198229),
+    x = n(243949),
+    D = n(972432),
+    N = n(77544),
+    y = n(566396),
+    _ = n(571964),
+    S = n(708653),
+    C = n(297460),
+    M = n(652215),
+    j = n(985018);
+let U = (0, d.A)((0, a.A)(function(e) {
+    let {
+        user: t,
+        guildId: n,
+        channelId: a,
+        showMediaItems: d = !1,
+        mediaEngineContext: s,
+        onSelect: U,
+        onInteraction: O,
+        appContext: L = M.BRT.OVERLAY,
+        friendGroupId: V,
+        showManageFriendGroupsItems: k = !1,
+        onMessageUser: R,
+        widgetType: T
+    } = e, G = (0, x.A)({
+        userId: t.id,
+        guildId: n,
+        channelId: a
+    }), F = (0, C.A)({
+        kind: "DM_USER",
+        userId: t.id,
+        onOpenOverride: R
+    }, T), {
+        toggleFavoriteItem: w
+    } = (0, S.As)(t.id, T), B = (0, h.A)({
+        user: t
+    }), P = (0, y.A)(t.id), H = (0, E.A)({
+        user: t,
+        guildId: n,
+        channelId: a,
+        context: L
+    }), X = (0, g.A)({
+        user: t
+    }), W = (0, _.A)({
+        user: t,
+        groupId: V
+    }), Y = (0, N.A)(t.id), K = (0, D.A)(t.id), Z = (0, m.A)(t.id, s), J = (0, I.A)({
+        user: t
+    }), $ = (0, o.A)(null, t), z = (0, A.A)({
+        user: t
+    }), q = (0, f.A)({
+        user: t
+    }), Q = (0, p.A)({
+        user: t
+    }), ee = (0, b.A)({
+        user: t
+    }), et = (0, v.A)({
+        user: t
+    }), en = (0, u.A)({
+        id: t.id,
+        label: j.intl.string(j.t["/AXYnE"])
+    }), el = (0, c.A)(t), ei = t.isNonUserBot();
+    return (0, l.jsxs)(i.W1t, {
+        navId: "overlay-user-context",
+        onClose: r.Z_,
+        "aria-label": j.intl.string(j.t.liqwPJ),
+        onSelect: U,
+        onInteraction: O,
+        children: [!ei && (0, l.jsxs)(l.Fragment, {
+            children: [(0, l.jsx)(i.rXV, {
+                children: el
+            }), (0, l.jsxs)(i.rXV, {
+                children: [F, B, P, Y]
+            }), (0, l.jsxs)(i.rXV, {
+                children: [G, H, X, w, k ? W : null]
+            }), d && (0, l.jsx)(i.rXV, {
+                children: K
+            }), (0, l.jsx)(i.rXV, {
+                children: $
+            }), (0, l.jsxs)(i.rXV, {
+                children: [d && Z, J, z, q, Q, et, ee]
+            })]
+        }), (0, l.jsx)(i.rXV, {
+            children: en
+        })]
+    })
+}, {
+    object: M.ZSU.CONTEXT_MENU
+}), [s.A.CONTEXT_MENU, s.A.OVERLAY, s.A.USER_GENERIC_MENU])

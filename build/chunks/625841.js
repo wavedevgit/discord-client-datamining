@@ -1,2 +1,182 @@
 /** chunk id: 625841, original params: e,t,n (module,exports,require) **/
-n.d(t,{U:()=>D});var i=n(627968),a=n(64700),o=n(503698),l=n.n(o),c=n(311907),s=n(843282),r=n(582754),d=n(397927),_=n(827343),u=n(688810),g=n(544028),p=n(825468),m=n(347481),v=n(430452),b=n(954571),k=n(74848),h=n(652215),C=n(731854),I=n(985018),O=n(534393);let x="SHOW_MORE";function D(e){let{deviceType:t,location:o,showAllDevices:D=!1,selectedDeviceId:f,onSelectDevice:A,hideDeviceTypeIcon:S=!1,label:w,...E}=e,{setDevice:T,Icon:U,getCanSetDevice:j,getWarningMessage:N,getLocation:L}={[C.oh.AUDIO_INPUT]:{setDevice:_.A.setInputDevice,Icon:d.cNw,getCanSetDevice:e=>e.supports(C.O5.AUDIO_INPUT_DEVICE),getWarningMessage:()=>I.intl.format(I.t["1iK6UW"],{onDownloadClick:()=>(0,p._)("Help Text Input Devices")}),getLocation:e=>`${e}.SingleSelectInputDevices`},[C.oh.AUDIO_OUTPUT]:{setDevice:_.A.setOutputDevice,Icon:d.LoC,getCanSetDevice:e=>e.supports(C.O5.AUDIO_OUTPUT_DEVICE),getWarningMessage:()=>I.intl.format(I.t.Ow0dbF,{onDownloadClick:()=>(0,p._)("Help Text Output Devices")}),getLocation:e=>`${e}.SingleSelectOutputDevices`},[C.oh.VIDEO_INPUT]:{setDevice:_.A.setVideoDevice,Icon:d.xpe,getCanSetDevice:e=>e.isVideoAvailable(),getWarningMessage:()=>I.intl.format(I.t["1iK6UW"],{onDownloadClick:()=>(0,p._)("Help Text Video Devices")}),getLocation:e=>`${e}.SingleSelectVideoDevices`}}[t],{analyticsLocations:y}=(0,u.Ay)(),M=(0,c.bG)([g.A],()=>g.A.theme),[P,V]=a.useState(D),B=L(o),[R,W]=(0,k.tR)(t,{location:B}),{id:H}=(0,k.x5)(t),K=(0,c.bG)([v.Ay],()=>j(v.Ay)),G=(0,i.jsx)(d.po8,{messageType:d.YCn.WARNING,children:N()}),Q=a.useCallback(e=>{e===x?(V(!0),b.default.track(h.HAw.DEVICES_LIST_SHOW_MORE_CLICKED,{device_type:t,location:B,location_stack:y,shown_device_count:R.length,hidden_device_count:W.length})):(A?.(e)??!0)&&T(e,{location:B,analyticsLocations:y})},[t,B,R.length,W.length,y,A,T]);function $(e){let t,a,{label:o,value:c}=e,s=arguments.length>1&&void 0!==arguments[1]&&arguments[1],_=o,u=(0,k.d)(o);null!=u&&(_=u.prefix,t=u.subName);let g=m.A.getCertifiedDeviceName(c,_);if(m.A.isCertified(c)){let e=(0,r.qB)(M)?n(961392):n(848672);a=(0,i.jsx)("img",{src:e,alt:I.intl.string(I.t.smSKsj)})}return(0,i.jsxs)("div",{className:l()(O.Mg,{[O.S2]:s&&null!=t,[O.Sy]:!S}),children:[!S&&(0,i.jsx)("div",{className:O.Kt,children:(0,i.jsx)(U,{size:"custom",width:20,height:20,color:d.LU0.colors.ICON_MUTED})}),(0,i.jsx)(d.Text,{lineClamp:2,variant:"text-md/medium",color:s?"text-subtle":"text-default",className:O.hV,children:g}),null!=t&&(0,i.jsx)(d.Text,{lineClamp:2,variant:s?"text-xs/medium":"text-md/medium",color:"text-muted",className:O.VT,children:t}),null!=a&&(0,i.jsx)("div",{className:O.pN,children:a})]})}return(0,i.jsxs)(i.Fragment,{children:[(0,i.jsx)(s.Te,{label:w,value:f??H,onChange:Q,options:function(){let e=e=>{let{id:t,name:n}=e;return{value:t,label:n}},t=R.map(e);if(P||0===W.length){let n=W.map(e);return t.concat(n)}{let e={value:x,label:I.intl.string(I.t.E99UMh),preventCloseOnSelect:!0};return t.concat(e)}}(),isDisabled:!K,popoutPosition:"bottom",renderOptionLabel:e=>$(e,!0),renderOptionValue:e=>{let[t]=e;return $(t)},optionClassName:O.OS,...E,"data-migration-pending":!0}),!K&&G]})}
+n.d(t, {
+    U: () => D
+});
+var i = n(627968),
+    a = n(64700),
+    o = n(503698),
+    l = n.n(o),
+    c = n(311907),
+    s = n(843282),
+    r = n(582754),
+    d = n(397927),
+    _ = n(827343),
+    u = n(688810),
+    g = n(544028),
+    p = n(825468),
+    m = n(347481),
+    v = n(430452),
+    b = n(954571),
+    k = n(74848),
+    h = n(652215),
+    C = n(731854),
+    I = n(985018),
+    O = n(534393);
+let x = "SHOW_MORE";
+
+function D(e) {
+    let {
+        deviceType: t,
+        location: o,
+        showAllDevices: D = !1,
+        selectedDeviceId: f,
+        onSelectDevice: A,
+        hideDeviceTypeIcon: S = !1,
+        label: w,
+        ...E
+    } = e, {
+        setDevice: T,
+        Icon: U,
+        getCanSetDevice: j,
+        getWarningMessage: N,
+        getLocation: L
+    } = {
+        [C.oh.AUDIO_INPUT]: {
+            setDevice: _.A.setInputDevice,
+            Icon: d.cNw,
+            getCanSetDevice: e => e.supports(C.O5.AUDIO_INPUT_DEVICE),
+            getWarningMessage: () => I.intl.format(I.t["1iK6UW"], {
+                onDownloadClick: () => (0, p._)("Help Text Input Devices")
+            }),
+            getLocation: e => `${e}.SingleSelectInputDevices`
+        },
+        [C.oh.AUDIO_OUTPUT]: {
+            setDevice: _.A.setOutputDevice,
+            Icon: d.LoC,
+            getCanSetDevice: e => e.supports(C.O5.AUDIO_OUTPUT_DEVICE),
+            getWarningMessage: () => I.intl.format(I.t.Ow0dbF, {
+                onDownloadClick: () => (0, p._)("Help Text Output Devices")
+            }),
+            getLocation: e => `${e}.SingleSelectOutputDevices`
+        },
+        [C.oh.VIDEO_INPUT]: {
+            setDevice: _.A.setVideoDevice,
+            Icon: d.xpe,
+            getCanSetDevice: e => e.isVideoAvailable(),
+            getWarningMessage: () => I.intl.format(I.t["1iK6UW"], {
+                onDownloadClick: () => (0, p._)("Help Text Video Devices")
+            }),
+            getLocation: e => `${e}.SingleSelectVideoDevices`
+        }
+    } [t], {
+        analyticsLocations: y
+    } = (0, u.Ay)(), M = (0, c.bG)([g.A], () => g.A.theme), [P, V] = a.useState(D), B = L(o), [R, W] = (0, k.tR)(t, {
+        location: B
+    }), {
+        id: H
+    } = (0, k.x5)(t), K = (0, c.bG)([v.Ay], () => j(v.Ay)), G = (0, i.jsx)(d.po8, {
+        messageType: d.YCn.WARNING,
+        children: N()
+    }), Q = a.useCallback(e => {
+        e === x ? (V(!0), b.default.track(h.HAw.DEVICES_LIST_SHOW_MORE_CLICKED, {
+            device_type: t,
+            location: B,
+            location_stack: y,
+            shown_device_count: R.length,
+            hidden_device_count: W.length
+        })) : (A?.(e) ?? !0) && T(e, {
+            location: B,
+            analyticsLocations: y
+        })
+    }, [t, B, R.length, W.length, y, A, T]);
+
+    function $(e) {
+        let t, a, {
+                label: o,
+                value: c
+            } = e,
+            s = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
+            _ = o,
+            u = (0, k.d)(o);
+        null != u && (_ = u.prefix, t = u.subName);
+        let g = m.A.getCertifiedDeviceName(c, _);
+        if (m.A.isCertified(c)) {
+            let e = (0, r.qB)(M) ? n(961392) : n(848672);
+            a = (0, i.jsx)("img", {
+                src: e,
+                alt: I.intl.string(I.t.smSKsj)
+            })
+        }
+        return (0, i.jsxs)("div", {
+            className: l()(O.Mg, {
+                [O.S2]: s && null != t,
+                [O.Sy]: !S
+            }),
+            children: [!S && (0, i.jsx)("div", {
+                className: O.Kt,
+                children: (0, i.jsx)(U, {
+                    size: "custom",
+                    width: 20,
+                    height: 20,
+                    color: d.LU0.colors.ICON_MUTED
+                })
+            }), (0, i.jsx)(d.Text, {
+                lineClamp: 2,
+                variant: "text-md/medium",
+                color: s ? "text-subtle" : "text-default",
+                className: O.hV,
+                children: g
+            }), null != t && (0, i.jsx)(d.Text, {
+                lineClamp: 2,
+                variant: s ? "text-xs/medium" : "text-md/medium",
+                color: "text-muted",
+                className: O.VT,
+                children: t
+            }), null != a && (0, i.jsx)("div", {
+                className: O.pN,
+                children: a
+            })]
+        })
+    }
+    return (0, i.jsxs)(i.Fragment, {
+        children: [(0, i.jsx)(s.Te, {
+            label: w,
+            value: f ?? H,
+            onChange: Q,
+            options: function() {
+                let e = e => {
+                        let {
+                            id: t,
+                            name: n
+                        } = e;
+                        return {
+                            value: t,
+                            label: n
+                        }
+                    },
+                    t = R.map(e);
+                if (P || 0 === W.length) {
+                    let n = W.map(e);
+                    return t.concat(n)
+                } {
+                    let e = {
+                        value: x,
+                        label: I.intl.string(I.t.E99UMh),
+                        preventCloseOnSelect: !0
+                    };
+                    return t.concat(e)
+                }
+            }(),
+            isDisabled: !K,
+            popoutPosition: "bottom",
+            renderOptionLabel: e => $(e, !0),
+            renderOptionValue: e => {
+                let [t] = e;
+                return $(t)
+            },
+            optionClassName: O.OS,
+            ...E,
+            "data-migration-pending": !0
+        }), !K && G]
+    })
+}

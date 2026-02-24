@@ -1,2 +1,18 @@
 /** chunk id: 225180, original params: e,t,n (module,exports,require) **/
-n.d(t,{A:()=>l});var a=n(311907),i=n(760751),s=n(486020);function l(e,t){let n=(0,a.bG)([i.A],()=>i.A.getDetectableGame(e??""));if(null==n)return;let l="cover"===t?n.cover_image_hash:n.icon;return s.Ay.getApplicationIconURL({id:n.id,icon:l,keepAspectRatio:!0})}
+n.d(t, {
+    A: () => l
+});
+var a = n(311907),
+    i = n(760751),
+    s = n(486020);
+
+function l(e, t) {
+    let n = (0, a.bG)([i.A], () => i.A.getDetectableGame(e ?? ""));
+    if (null == n) return;
+    let l = "cover" === t ? n.cover_image_hash : n.icon;
+    return s.Ay.getApplicationIconURL({
+        id: n.id,
+        icon: l,
+        keepAspectRatio: !0
+    })
+}

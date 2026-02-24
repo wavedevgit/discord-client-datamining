@@ -1,2 +1,48 @@
 /** chunk id: 890908, original params: e,t,l (module,exports,require) **/
-l.r(t),l.d(t,{RevenuePlaygroundCollectionId:()=>g,nitroCollection:()=>v,paymentsCollection:()=>f,playgroundConfig:()=>S,virtualCurrencyCollection:()=>E});var a,n=l(397927),r=l(777595),i=l(527518),s=l(270727),o=l(473106),u=l(423396),c=l(987274),d=l(886532),p=l(931433),m=l(391622),h=l(203484),x=l(445736),b=l(504312),g=((a={}).PAYMENTS="payments",a.VIRTUAL_CURRENCY="virtual-currency",a.NITRO="nitro",a);let y=["Revenue Storybook","Revenue Playground"],f={id:"payments",name:"Payments",groups:[o._,b.Y,x.Wo,r.v,u.Gu,h.O],tags:y,IconComponent:n.d2Y},E={id:"virtual-currency",name:"Virtual Currency",groups:[s.h2,i.c$,p.V,m.e],tags:y,IconComponent:n.Cp8},v={id:"nitro",name:"Nitro",groups:[c.I7,d.H],tags:y,IconComponent:n.tvc},S={playgroundBaseUrl:"revenue",collections:[f,E,v]}
+l.r(t), l.d(t, {
+    RevenuePlaygroundCollectionId: () => g,
+    nitroCollection: () => v,
+    paymentsCollection: () => f,
+    playgroundConfig: () => S,
+    virtualCurrencyCollection: () => E
+});
+var a, n = l(397927),
+    r = l(777595),
+    i = l(527518),
+    s = l(270727),
+    o = l(473106),
+    u = l(423396),
+    c = l(987274),
+    d = l(886532),
+    p = l(931433),
+    m = l(391622),
+    h = l(203484),
+    x = l(445736),
+    b = l(504312),
+    g = ((a = {}).PAYMENTS = "payments", a.VIRTUAL_CURRENCY = "virtual-currency", a.NITRO = "nitro", a);
+let y = ["Revenue Storybook", "Revenue Playground"],
+    f = {
+        id: "payments",
+        name: "Payments",
+        groups: [o._, b.Y, x.Wo, r.v, u.Gu, h.O],
+        tags: y,
+        IconComponent: n.d2Y
+    },
+    E = {
+        id: "virtual-currency",
+        name: "Virtual Currency",
+        groups: [s.h2, i.c$, p.V, m.e],
+        tags: y,
+        IconComponent: n.Cp8
+    },
+    v = {
+        id: "nitro",
+        name: "Nitro",
+        groups: [c.I7, d.H],
+        tags: y,
+        IconComponent: n.tvc
+    },
+    S = {
+        playgroundBaseUrl: "revenue",
+        collections: [f, E, v]
+    }

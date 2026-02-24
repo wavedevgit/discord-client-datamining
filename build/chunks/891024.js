@@ -1,2 +1,12 @@
 /** chunk id: 891024, original params: e,t,n (module,exports,require) **/
-n.d(t,{A:()=>a});var i=n(311907),r=n(320501),l=n(287809);let a=e=>(0,i.bG)([r.A,l.default],()=>{if(null==e)return!1;let t=l.default.getCurrentUser();return null!=r.A.getMessages(e).findNewest(e=>e.author.id===t?.id)})
+n.d(t, {
+    A: () => a
+});
+var i = n(311907),
+    r = n(320501),
+    l = n(287809);
+let a = e => (0, i.bG)([r.A, l.default], () => {
+    if (null == e) return !1;
+    let t = l.default.getCurrentUser();
+    return null != r.A.getMessages(e).findNewest(e => e.author.id === t?.id)
+})

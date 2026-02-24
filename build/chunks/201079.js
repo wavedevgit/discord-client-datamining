@@ -1,2 +1,9 @@
 /** chunk id: 201079, original params: e,t,n (module,exports,require) **/
-"use strict";var r=n(715804),a=n(447145),o=Array.prototype;e.exports=function(e){var t=e.reverse;return e===o||r(o,e)&&t===o.reverse?a:t}
+"use strict";
+var r = n(715804),
+    a = n(447145),
+    o = Array.prototype;
+e.exports = function(e) {
+    var t = e.reverse;
+    return e === o || r(o, e) && t === o.reverse ? a : t
+}

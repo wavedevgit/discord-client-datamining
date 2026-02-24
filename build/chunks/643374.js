@@ -1,2 +1,51 @@
 /** chunk id: 643374, original params: e,t,l (module,exports,require) **/
-l.d(t,{A:()=>d});var n=l(627968),a=l(64700),i=l(503698),s=l.n(i),r=l(397927),u=l(817363),o=l(93064);function d(e){let{filename:t,className:l,filters:i,buttonText:d,placeholder:c,onFileSelect:m}=e,f=a.useRef(null),h=a.useRef(null);return(0,n.jsx)(r.vN3,{ringTarget:f,within:!0,children:(0,n.jsxs)(r.FON,{ref:f,className:s()(l,o.U),children:[(0,n.jsx)(r.JMY,{size:"sm"}),(0,n.jsx)(r.Text,{variant:"text-md/normal",color:""!==t?"text-default":"text-muted",lineClamp:1,children:""!==t?t:c}),(0,n.jsx)(r.Button,{"aria-hidden":!0,variant:"secondary",size:"sm",text:d,tabIndex:-1}),(0,n.jsx)(u.A,{ref:h,onChange:e=>{m(e.currentTarget.files?.[0])},multiple:!1,filters:i})]})})}
+l.d(t, {
+    A: () => d
+});
+var n = l(627968),
+    a = l(64700),
+    i = l(503698),
+    s = l.n(i),
+    r = l(397927),
+    u = l(817363),
+    o = l(93064);
+
+function d(e) {
+    let {
+        filename: t,
+        className: l,
+        filters: i,
+        buttonText: d,
+        placeholder: c,
+        onFileSelect: m
+    } = e, f = a.useRef(null), h = a.useRef(null);
+    return (0, n.jsx)(r.vN3, {
+        ringTarget: f,
+        within: !0,
+        children: (0, n.jsxs)(r.FON, {
+            ref: f,
+            className: s()(l, o.U),
+            children: [(0, n.jsx)(r.JMY, {
+                size: "sm"
+            }), (0, n.jsx)(r.Text, {
+                variant: "text-md/normal",
+                color: "" !== t ? "text-default" : "text-muted",
+                lineClamp: 1,
+                children: "" !== t ? t : c
+            }), (0, n.jsx)(r.Button, {
+                "aria-hidden": !0,
+                variant: "secondary",
+                size: "sm",
+                text: d,
+                tabIndex: -1
+            }), (0, n.jsx)(u.A, {
+                ref: h,
+                onChange: e => {
+                    m(e.currentTarget.files?.[0])
+                },
+                multiple: !1,
+                filters: i
+            })]
+        })
+    })
+}

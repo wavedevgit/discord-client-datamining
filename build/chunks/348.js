@@ -1,2 +1,14 @@
 /** chunk id: 348, original params: e,t,n (module,exports,require) **/
-n.d(t,{b:()=>s});var a=n(311907),l=n(218727);function s(){return(0,a.cf)([l.A],()=>({avatars:l.A.getAvatars(),loading:l.A.isFetching,error:l.A.fetchError}))}
+n.d(t, {
+    b: () => s
+});
+var a = n(311907),
+    l = n(218727);
+
+function s() {
+    return (0, a.cf)([l.A], () => ({
+        avatars: l.A.getAvatars(),
+        loading: l.A.isFetching,
+        error: l.A.fetchError
+    }))
+}

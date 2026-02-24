@@ -1,2 +1,53 @@
 /** chunk id: 854818, original params: e,t,n (module,exports,require) **/
-"use strict";n.d(t,{e:()=>d}),n(321073);var s=n(627968);n(64700);var l=n(503698),r=n.n(l),a=n(397927),i=n(496431),o=n(985018),c=n(487604);let d=e=>{let t,n,{endDate:l,size:d="md",className:u,showSeconds:g=!1}=e,{days:_,hours:m,minutes:h,seconds:p}=(0,i.A)(l),f=(n=[(t=e=>`${e.toString().padStart(2,"0")}`)(_),t(m),t(h)],g&&n.push(t(p)),n.join(":"));return(0,s.jsxs)("div",{className:r()(c.kL,u),role:"timer",children:[f.split("").map((e,t)=>":"===e?(0,s.jsx)(a.Text,{color:"none",variant:"md"===d?"heading-lg/extrabold":"heading-xxl/extrabold",className:c.eC,"aria-hidden":!0,tag:"div",children:e},t):(0,s.jsx)(a.Text,{color:"always-white",variant:"md"===d?"heading-md/bold":"heading-xl/bold",className:c.ai,"aria-hidden":!0,tag:"div",children:e},t)),(0,s.jsx)(a.AC4,{children:o.intl.format(o.t.j6IyVe,{days:_,hours:m,minutes:h})})]})}
+"use strict";
+n.d(t, {
+    e: () => d
+}), n(321073);
+var s = n(627968);
+n(64700);
+var l = n(503698),
+    r = n.n(l),
+    a = n(397927),
+    i = n(496431),
+    o = n(985018),
+    c = n(487604);
+let d = e => {
+    let t, n, {
+            endDate: l,
+            size: d = "md",
+            className: u,
+            showSeconds: g = !1
+        } = e,
+        {
+            days: _,
+            hours: m,
+            minutes: h,
+            seconds: p
+        } = (0, i.A)(l),
+        f = (n = [(t = e => `${e.toString().padStart(2,"0")}`)(_), t(m), t(h)], g && n.push(t(p)), n.join(":"));
+    return (0, s.jsxs)("div", {
+        className: r()(c.kL, u),
+        role: "timer",
+        children: [f.split("").map((e, t) => ":" === e ? (0, s.jsx)(a.Text, {
+            color: "none",
+            variant: "md" === d ? "heading-lg/extrabold" : "heading-xxl/extrabold",
+            className: c.eC,
+            "aria-hidden": !0,
+            tag: "div",
+            children: e
+        }, t) : (0, s.jsx)(a.Text, {
+            color: "always-white",
+            variant: "md" === d ? "heading-md/bold" : "heading-xl/bold",
+            className: c.ai,
+            "aria-hidden": !0,
+            tag: "div",
+            children: e
+        }, t)), (0, s.jsx)(a.AC4, {
+            children: o.intl.format(o.t.j6IyVe, {
+                days: _,
+                hours: m,
+                minutes: h
+            })
+        })]
+    })
+}

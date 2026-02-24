@@ -1,2 +1,239 @@
 /** chunk id: 572211, original params: e,t,n (module,exports,require) **/
-n.d(t,{h:()=>I,u:()=>C}),n(323874),n(14289),n(35956);var i,l=n(627968),r=n(64700),a=n(503698),s=n.n(a),o=n(299619),d=n(172218),c=n(158954),u=n(311907),_=n(435371),m=n(775602),h=n(176563),p=n(961350),g=n(354287),A=n(768349),x=n(838541),f=n(112247),C=((i={})[i.BOT=0]="BOT",i[i.ACTIVITY=1]="ACTIVITY",i);function E(e){let{onClick:t,children:n,className:i}=e;return null!=t?(0,l.jsx)(c.DUT,{onClick:t,className:s()({[f.or]:null!=t},i),children:n}):(0,l.jsx)("div",{className:i,children:n})}function I(e){var t;let{title:n,header:i,footer:a,info:C,staticBannerSrc:I,videoBannerSrc:b,bannerAspectRatio:T=0,iconSrc:v,actions:S=[],primaryActionFirst:y=!1,trackingConfig:N,onClickContent:j,onClickBanner:L}=e;t=N,N={id:t?.id??"0",linkType:t?.linkType??A.J.UNKNOWN,referrerId:t?.referrerId??p.default.getId(),activityCustomId:t?.activityCustomId,onView:t?.onView,onLinkCopied:t?.onLinkCopied,guildId:t?.guildId,channelId:t?.channelId,messageId:t?.messageId,isDeadEnd:t?.isDeadEnd??!1};let{primaryColor:R,secondaryColor:P}=(0,h.A)(v??I),M=`linear-gradient(45deg, ${R}, ${P})`,w=(0,u.bG)([m.A],()=>m.A.useReducedMotion),k=r.useRef(!1),D=(0,d.K)(e=>{!1===k.current&&e&&(N?.onView?.(),(0,g.wV)({appId:N.id,linkType:N.linkType,referrerId:N.referrerId,customId:N.activityCustomId,guildId:N.guildId,channelId:N.channelId,messageId:N.messageId}),k.current=!0)},void 0),O=null!=I,U=null!=b&&!1===w,G=O||U,B=0===T?f.pv:f.$g,F=r.useRef(null),H=r.useCallback(()=>{let e=F.current;null==e||("hidden"===getComputedStyle(e).visibility?e.pause():e.play())},[]),V=r.useMemo(()=>!!U&&new URL(b).pathname.endsWith(".gif"),[U,b]),W=r.useMemo(()=>{if(null!=j)return e=>{j(e),(0,g.gx)({applicationId:N.id,linkType:N.linkType,area:g.kY.CONTENT,referrerId:N.referrerId,customId:N.activityCustomId,isDeadEnd:N.isDeadEnd})}},[j,N]),q=r.useMemo(()=>{if(null!=L)return e=>{L(e),(0,g.gx)({applicationId:N.id,linkType:N.linkType,area:g.kY.BANNER,referrerId:N.referrerId,customId:N.activityCustomId,isDeadEnd:N.isDeadEnd})}},[L,N]);return(0,l.jsxs)("div",{ref:D,className:f.E6,children:[G&&(0,l.jsxs)(E,{onClick:q,className:s()(f.cy,B,{[f.wk]:U}),children:[U&&(V?(0,l.jsx)("div",{className:f.O9,style:{backgroundImage:`url(${b})`}}):(0,l.jsx)(o.A,{ref:F,src:b,mediaLayoutType:x.dG.MOSAIC,loop:!0,muted:!0,className:f.O9})),O&&(0,l.jsx)("div",{className:f.LR,style:{backgroundImage:`url(${I})`},onTransitionEnd:H})]}),(0,l.jsxs)("div",{style:{background:M},children:[(0,l.jsxs)("div",{className:f.hQ,children:[null!=i&&(0,l.jsx)(c.EYj,{variant:"text-sm/semibold",color:"none",className:f.wx,children:i}),(0,l.jsxs)(E,{onClick:W,className:s()(f.FG,{[f.ry]:null!=W}),children:[null!=v&&(0,l.jsx)("div",{className:f._8,style:{backgroundImage:`url(${v})`}}),(0,l.jsxs)("div",{className:f.Qs,children:[(0,l.jsx)(c.EYj,{variant:"text-md/semibold",color:"none",lineClamp:1,className:f.eu,children:n}),(0,l.jsx)("div",{className:f.rj,children:C})]})]}),S.length>0&&(0,l.jsx)("div",{className:s()(f.AC,y?f.ad:null),children:S.map((e,t)=>{let{label:n,icon:i,onClick:r,disabled:a,disabledReason:s,submitting:o,trackingArea:d,isDeadEnd:u,iconButton:m,buttonRef:h}=e,p=0===t;return m?(0,l.jsx)(_.m_,{text:n,targetElementRef:h,children:(0,l.jsx)(c.K0,{variant:p?"overlay-primary":"overlay-secondary",disabled:a||null!=s,loading:o,icon:i,"aria-label":n,buttonRef:h,onClick:e=>{r(e),(0,g.gx)({applicationId:N.id,linkType:N.linkType,area:d,referrerId:N.referrerId,customId:N.activityCustomId,isDeadEnd:u})}})},n):(0,l.jsxs)("div",{className:f.uc,children:[(0,l.jsx)(c.$nd,{variant:p?"overlay-primary":"overlay-secondary",disabled:a||null!=s,loading:o,icon:i,text:n,buttonRef:h,onClick:e=>{r(e),(0,g.gx)({applicationId:N.id,linkType:N.linkType,area:d,referrerId:N.referrerId,customId:N.activityCustomId,isDeadEnd:u})},fullWidth:!0}),null!=s&&(0,l.jsx)(c.EYj,{variant:"text-xs/medium",color:"none",className:f.H$,children:s})]},n)})})]}),null!=a&&a]})]})}
+n.d(t, {
+    h: () => I,
+    u: () => C
+}), n(323874), n(14289), n(35956);
+var i, l = n(627968),
+    r = n(64700),
+    a = n(503698),
+    s = n.n(a),
+    o = n(299619),
+    d = n(172218),
+    c = n(158954),
+    u = n(311907),
+    _ = n(435371),
+    m = n(775602),
+    h = n(176563),
+    p = n(961350),
+    g = n(354287),
+    A = n(768349),
+    x = n(838541),
+    f = n(112247),
+    C = ((i = {})[i.BOT = 0] = "BOT", i[i.ACTIVITY = 1] = "ACTIVITY", i);
+
+function E(e) {
+    let {
+        onClick: t,
+        children: n,
+        className: i
+    } = e;
+    return null != t ? (0, l.jsx)(c.DUT, {
+        onClick: t,
+        className: s()({
+            [f.or]: null != t
+        }, i),
+        children: n
+    }) : (0, l.jsx)("div", {
+        className: i,
+        children: n
+    })
+}
+
+function I(e) {
+    var t;
+    let {
+        title: n,
+        header: i,
+        footer: a,
+        info: C,
+        staticBannerSrc: I,
+        videoBannerSrc: b,
+        bannerAspectRatio: T = 0,
+        iconSrc: v,
+        actions: S = [],
+        primaryActionFirst: y = !1,
+        trackingConfig: N,
+        onClickContent: j,
+        onClickBanner: L
+    } = e;
+    t = N, N = {
+        id: t?.id ?? "0",
+        linkType: t?.linkType ?? A.J.UNKNOWN,
+        referrerId: t?.referrerId ?? p.default.getId(),
+        activityCustomId: t?.activityCustomId,
+        onView: t?.onView,
+        onLinkCopied: t?.onLinkCopied,
+        guildId: t?.guildId,
+        channelId: t?.channelId,
+        messageId: t?.messageId,
+        isDeadEnd: t?.isDeadEnd ?? !1
+    };
+    let {
+        primaryColor: R,
+        secondaryColor: P
+    } = (0, h.A)(v ?? I), M = `linear-gradient(45deg, ${R}, ${P})`, w = (0, u.bG)([m.A], () => m.A.useReducedMotion), k = r.useRef(!1), D = (0, d.K)(e => {
+        !1 === k.current && e && (N?.onView?.(), (0, g.wV)({
+            appId: N.id,
+            linkType: N.linkType,
+            referrerId: N.referrerId,
+            customId: N.activityCustomId,
+            guildId: N.guildId,
+            channelId: N.channelId,
+            messageId: N.messageId
+        }), k.current = !0)
+    }, void 0), O = null != I, U = null != b && !1 === w, G = O || U, B = 0 === T ? f.pv : f.$g, F = r.useRef(null), H = r.useCallback(() => {
+        let e = F.current;
+        null == e || ("hidden" === getComputedStyle(e).visibility ? e.pause() : e.play())
+    }, []), V = r.useMemo(() => !!U && new URL(b).pathname.endsWith(".gif"), [U, b]), W = r.useMemo(() => {
+        if (null != j) return e => {
+            j(e), (0, g.gx)({
+                applicationId: N.id,
+                linkType: N.linkType,
+                area: g.kY.CONTENT,
+                referrerId: N.referrerId,
+                customId: N.activityCustomId,
+                isDeadEnd: N.isDeadEnd
+            })
+        }
+    }, [j, N]), q = r.useMemo(() => {
+        if (null != L) return e => {
+            L(e), (0, g.gx)({
+                applicationId: N.id,
+                linkType: N.linkType,
+                area: g.kY.BANNER,
+                referrerId: N.referrerId,
+                customId: N.activityCustomId,
+                isDeadEnd: N.isDeadEnd
+            })
+        }
+    }, [L, N]);
+    return (0, l.jsxs)("div", {
+        ref: D,
+        className: f.E6,
+        children: [G && (0, l.jsxs)(E, {
+            onClick: q,
+            className: s()(f.cy, B, {
+                [f.wk]: U
+            }),
+            children: [U && (V ? (0, l.jsx)("div", {
+                className: f.O9,
+                style: {
+                    backgroundImage: `url(${b})`
+                }
+            }) : (0, l.jsx)(o.A, {
+                ref: F,
+                src: b,
+                mediaLayoutType: x.dG.MOSAIC,
+                loop: !0,
+                muted: !0,
+                className: f.O9
+            })), O && (0, l.jsx)("div", {
+                className: f.LR,
+                style: {
+                    backgroundImage: `url(${I})`
+                },
+                onTransitionEnd: H
+            })]
+        }), (0, l.jsxs)("div", {
+            style: {
+                background: M
+            },
+            children: [(0, l.jsxs)("div", {
+                className: f.hQ,
+                children: [null != i && (0, l.jsx)(c.EYj, {
+                    variant: "text-sm/semibold",
+                    color: "none",
+                    className: f.wx,
+                    children: i
+                }), (0, l.jsxs)(E, {
+                    onClick: W,
+                    className: s()(f.FG, {
+                        [f.ry]: null != W
+                    }),
+                    children: [null != v && (0, l.jsx)("div", {
+                        className: f._8,
+                        style: {
+                            backgroundImage: `url(${v})`
+                        }
+                    }), (0, l.jsxs)("div", {
+                        className: f.Qs,
+                        children: [(0, l.jsx)(c.EYj, {
+                            variant: "text-md/semibold",
+                            color: "none",
+                            lineClamp: 1,
+                            className: f.eu,
+                            children: n
+                        }), (0, l.jsx)("div", {
+                            className: f.rj,
+                            children: C
+                        })]
+                    })]
+                }), S.length > 0 && (0, l.jsx)("div", {
+                    className: s()(f.AC, y ? f.ad : null),
+                    children: S.map((e, t) => {
+                        let {
+                            label: n,
+                            icon: i,
+                            onClick: r,
+                            disabled: a,
+                            disabledReason: s,
+                            submitting: o,
+                            trackingArea: d,
+                            isDeadEnd: u,
+                            iconButton: m,
+                            buttonRef: h
+                        } = e, p = 0 === t;
+                        return m ? (0, l.jsx)(_.m_, {
+                            text: n,
+                            targetElementRef: h,
+                            children: (0, l.jsx)(c.K0, {
+                                variant: p ? "overlay-primary" : "overlay-secondary",
+                                disabled: a || null != s,
+                                loading: o,
+                                icon: i,
+                                "aria-label": n,
+                                buttonRef: h,
+                                onClick: e => {
+                                    r(e), (0, g.gx)({
+                                        applicationId: N.id,
+                                        linkType: N.linkType,
+                                        area: d,
+                                        referrerId: N.referrerId,
+                                        customId: N.activityCustomId,
+                                        isDeadEnd: u
+                                    })
+                                }
+                            })
+                        }, n) : (0, l.jsxs)("div", {
+                            className: f.uc,
+                            children: [(0, l.jsx)(c.$nd, {
+                                variant: p ? "overlay-primary" : "overlay-secondary",
+                                disabled: a || null != s,
+                                loading: o,
+                                icon: i,
+                                text: n,
+                                buttonRef: h,
+                                onClick: e => {
+                                    r(e), (0, g.gx)({
+                                        applicationId: N.id,
+                                        linkType: N.linkType,
+                                        area: d,
+                                        referrerId: N.referrerId,
+                                        customId: N.activityCustomId,
+                                        isDeadEnd: u
+                                    })
+                                },
+                                fullWidth: !0
+                            }), null != s && (0, l.jsx)(c.EYj, {
+                                variant: "text-xs/medium",
+                                color: "none",
+                                className: f.H$,
+                                children: s
+                            })]
+                        }, n)
+                    })
+                })]
+            }), null != a && a]
+        })]
+    })
+}

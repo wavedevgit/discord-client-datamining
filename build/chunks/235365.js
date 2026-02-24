@@ -1,2 +1,64 @@
 /** chunk id: 235365, original params: e,t,r (module,exports,require) **/
-r.d(t,{A:()=>v,L:()=>N});var n=r(627968),a=r(64700),l=r(503698),s=r.n(l),i=r(311907),d=r(230109),o=r(732955),u=r(688810),c=r(895944),m=r(649032),h=r(954571),p=r(570627),x=r(128620),g=r(652215),_=r(49370),f=r(985018),b=r(609195);let N="orbs",v=e=>{let{className:t,location:r}=e,l=p.m.useConfig({location:"PremiumTenureRewardsOrbsSection"}).enabled,{analyticsLocations:v}=(0,u.Ay)(r),R=a.useRef(null),A=a.useRef(!1),E=(0,i.bG)([c.A],()=>c.A.getRewardForProgram(m.W.NITRO));return(0,i.bG)([c.A],()=>c.A.passesGeneralUIInvariant(m.W.NITRO))?(0,n.jsx)(u.f5,{value:v,children:(0,n.jsx)(d.L,{innerRef:R,onChange:e=>{e&&!A.current&&(A.current=!0,h.default.track(g.HAw.PREMIUM_TENURE_REWARDS_ORBS_SECTION_IMPRESSION,{program_state:E?.program_current_state}))},threshold:.5,children:(0,n.jsxs)("div",{ref:R,id:N,className:s()(b.uW,b.Uv,b.qr,t,{[b.J4]:l}),children:[(0,n.jsx)(o.DZT,{variant:l?"display-sm":"heading-xxl/extrabold",className:b.R_,style:{textAlign:"start"},children:f.intl.string(_.default.EdGvBM)}),(0,n.jsx)(o.EYj,{variant:l?"text-md/medium":"text-lg/normal",className:s()(b.VA,b.dO),children:f.intl.string(_.default["2KoHRF"])}),(0,n.jsx)(x.A,{})]})})}):null}
+r.d(t, {
+    A: () => v,
+    L: () => N
+});
+var n = r(627968),
+    a = r(64700),
+    l = r(503698),
+    s = r.n(l),
+    i = r(311907),
+    d = r(230109),
+    o = r(732955),
+    u = r(688810),
+    c = r(895944),
+    m = r(649032),
+    h = r(954571),
+    p = r(570627),
+    x = r(128620),
+    g = r(652215),
+    _ = r(49370),
+    f = r(985018),
+    b = r(609195);
+let N = "orbs",
+    v = e => {
+        let {
+            className: t,
+            location: r
+        } = e, l = p.m.useConfig({
+            location: "PremiumTenureRewardsOrbsSection"
+        }).enabled, {
+            analyticsLocations: v
+        } = (0, u.Ay)(r), R = a.useRef(null), A = a.useRef(!1), E = (0, i.bG)([c.A], () => c.A.getRewardForProgram(m.W.NITRO));
+        return (0, i.bG)([c.A], () => c.A.passesGeneralUIInvariant(m.W.NITRO)) ? (0, n.jsx)(u.f5, {
+            value: v,
+            children: (0, n.jsx)(d.L, {
+                innerRef: R,
+                onChange: e => {
+                    e && !A.current && (A.current = !0, h.default.track(g.HAw.PREMIUM_TENURE_REWARDS_ORBS_SECTION_IMPRESSION, {
+                        program_state: E?.program_current_state
+                    }))
+                },
+                threshold: .5,
+                children: (0, n.jsxs)("div", {
+                    ref: R,
+                    id: N,
+                    className: s()(b.uW, b.Uv, b.qr, t, {
+                        [b.J4]: l
+                    }),
+                    children: [(0, n.jsx)(o.DZT, {
+                        variant: l ? "display-sm" : "heading-xxl/extrabold",
+                        className: b.R_,
+                        style: {
+                            textAlign: "start"
+                        },
+                        children: f.intl.string(_.default.EdGvBM)
+                    }), (0, n.jsx)(o.EYj, {
+                        variant: l ? "text-md/medium" : "text-lg/normal",
+                        className: s()(b.VA, b.dO),
+                        children: f.intl.string(_.default["2KoHRF"])
+                    }), (0, n.jsx)(x.A, {})]
+                })
+            })
+        }) : null
+    }

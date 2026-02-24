@@ -1,2 +1,22 @@
 /** chunk id: 64588, original params: e,t,r (module,exports,require) **/
-r.d(t,{U:()=>l});var n=r(64700),a=r(954571),o=r(501957),i=r(473702),s=r(652215);let l=(e,t,r)=>{let[l,_]=n.useState(e),[c,u]=n.useState(Date.now()),[d]=n.useState(Date.now()),m=n.useCallback(e=>{a.default.track(s.HAw.CANCELLATION_FLOW_STEP,{from_step:i.T[l],to_step:i.T[e],step_duration_ms:Date.now()-c,flow_duration_ms:Date.now()-d,location_stack:r,...(0,o.j)(t)}),_(e),u(Date.now())},[r,d,c,l,t]);return[l,m,c,d]}
+r.d(t, {
+    U: () => l
+});
+var n = r(64700),
+    a = r(954571),
+    o = r(501957),
+    i = r(473702),
+    s = r(652215);
+let l = (e, t, r) => {
+    let [l, _] = n.useState(e), [c, u] = n.useState(Date.now()), [d] = n.useState(Date.now()), m = n.useCallback(e => {
+        a.default.track(s.HAw.CANCELLATION_FLOW_STEP, {
+            from_step: i.T[l],
+            to_step: i.T[e],
+            step_duration_ms: Date.now() - c,
+            flow_duration_ms: Date.now() - d,
+            location_stack: r,
+            ...(0, o.j)(t)
+        }), _(e), u(Date.now())
+    }, [r, d, c, l, t]);
+    return [l, m, c, d]
+}

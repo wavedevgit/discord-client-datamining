@@ -1,2 +1,188 @@
 /** chunk id: 933378, original params: e,t,n (module,exports,require) **/
-n.d(t,{A:()=>N});var a=n(627968),i=n(64700),s=n(503698),l=n.n(s),r=n(114046),o=n(311907),d=n(397927),c=n(775602),u=n(962173),m=n(733788),h=n(341915),x=n(890687),p=n(18437),g=n(590202),_=n(971649),f=n(901406),b=n(792620),v=n(814793),j=n(201805),C=n(495242),A=n(52093),T=n(985018),S=n(883476);function y(e){return(0,a.jsx)(d.Text,{className:S.eW,color:"text-muted",variant:"text-xxs/normal",children:e.children})}function E(e){let{quest:t,useReducedMotion:n}=e,s=(0,m.J)(),o=(0,j.H1)(t.id,h.uF.QUEST_BAR_V2,h.uF.QUEST_BAR_V2),c=(0,j.Xf)({useReducedMotion:n}),b=(0,p.Ut)(),C=(0,_.go)(),{errorHints:A,startingConsoleQuest:E,startConsoleQuest:N}=(0,x.Wj)({questId:t.id,beforeRequest:()=>{b({questId:t.id,questContent:h.uF.QUEST_BAR_V2,questContentCTA:g.Cy.DEFIBRILLATOR,sourceQuestContent:h.uF.QUEST_BAR_V2}),c.startAnimation()},afterRequest:c.stopAnimation}),{header:I,renderBody:k}=i.useMemo(()=>{let e=A.length>0,n=t.config.messages.gameTitle;return{header:e?(0,v.ui)(t)?T.intl.string(T.t.N33EuL):T.intl.formatToPlainString(T.t["28Ql27"],{gameTitle:n}):(0,v.ui)(t)?T.intl.string(T.t.YstzGO):T.intl.formatToPlainString(T.t.gX0Qcx,{gameTitle:n}),renderBody:e?()=>(0,a.jsx)(a.Fragment,{children:A.map((e,n)=>{if(e.type===r._.EXPIRED_CREDENTIAL&&s){let i=u.A.getAccount(e.connected_account_id,e.connected_account_type),s=(0,f.IG)(e),l=(0,f.$J)(e);return(0,a.jsx)(y,{children:T.intl.format(s,{account_name:i?.name,onClick:()=>{(0,f.v0)({quest:t,platformType:l},{content:h.uF.QUEST_BAR,ctaContent:g.Cy.DEFIBRILLATOR_RECONNECT_CONSOLE,impressionId:C,sourceQuestContent:h.uF.QUEST_BAR_V2})}})},n)}return(0,a.jsx)(y,{children:e.message},n)})}):()=>(0,a.jsx)(d.Text,{className:S.eW,color:"text-muted",variant:"text-xxs/normal",children:(0,v.ui)(t)?T.intl.string(T.t.bUyEZZ):T.intl.format(T.t.GXqvC1,{gameTitle:n})})}},[A,t,s,C]);return(0,a.jsxs)("div",{className:S.XK,children:[(0,a.jsxs)("div",{className:S.oK,children:[(0,a.jsx)(d.EpV,{size:"custom",color:"currentColor",className:0===A.length?S.pH:S.JA,width:16,height:16}),(0,a.jsx)(d.Text,{variant:"text-xs/medium",children:I}),(0,a.jsx)(d.DUT,{className:l()(S.w,{[S.r9]:E}),onClick:()=>N(),children:c.render()})]}),(0,a.jsxs)("div",{className:l()({[S.Iu]:E}),children:[k(),0===A.length?null:(0,a.jsx)(y,{children:o})]})]})}let N=function(e){let{quest:t,taskDetails:n}=e,s=(0,o.bG)([c.A],()=>c.A.useReducedMotion),l=(0,x.Du)(),r=i.useMemo(()=>(0,f.bg)(t).filter(e=>l.xboxAndPlaystationAccounts.find(t=>t.type===e)),[l.xboxAndPlaystationAccounts,t]),{steps:d,hasConnectedAccounts:u,isProgressingQuestForLaunchedGame:m,isQuestComplete:p}=i.useMemo(()=>{let e=r.length>0,i=e&&(0,b.YL)(t),s=t.config.messages.gameTitle,o=t.userStatus?.completedAt!=null;return{steps:[{renderContent:()=>(0,a.jsx)(C.Z,{...l,quest:t,sourceQuestContent:h.uF.QUEST_BAR_V2}),isComplete:e||i||o},{renderContent:()=>(0,a.jsx)(A.L5,{children:(0,v.ui)(t)?T.intl.string(T.t["5tXqFe"]):T.intl.formatToPlainString(T.t["+8JB6Y"],{gameTitle:s})}),isComplete:i||o},{renderContent:()=>(0,a.jsx)(A.L5,{children:T.intl.formatToPlainString(T.t.HhfrYS,{numMinutes:n.targetMinutes})}),isComplete:o}],hasConnectedAccounts:e,isProgressingQuestForLaunchedGame:i,isQuestComplete:o}},[l,r.length,t,n.targetMinutes]);return(0,a.jsx)(A.Ay,{heading:T.intl.string(T.t.UPWlJu),steps:d,children:u&&!m&&!p&&(0,a.jsx)(E,{useReducedMotion:s,quest:t})})}
+n.d(t, {
+    A: () => N
+});
+var a = n(627968),
+    i = n(64700),
+    s = n(503698),
+    l = n.n(s),
+    r = n(114046),
+    o = n(311907),
+    d = n(397927),
+    c = n(775602),
+    u = n(962173),
+    m = n(733788),
+    h = n(341915),
+    x = n(890687),
+    p = n(18437),
+    g = n(590202),
+    _ = n(971649),
+    f = n(901406),
+    b = n(792620),
+    v = n(814793),
+    j = n(201805),
+    C = n(495242),
+    A = n(52093),
+    T = n(985018),
+    S = n(883476);
+
+function y(e) {
+    return (0, a.jsx)(d.Text, {
+        className: S.eW,
+        color: "text-muted",
+        variant: "text-xxs/normal",
+        children: e.children
+    })
+}
+
+function E(e) {
+    let {
+        quest: t,
+        useReducedMotion: n
+    } = e, s = (0, m.J)(), o = (0, j.H1)(t.id, h.uF.QUEST_BAR_V2, h.uF.QUEST_BAR_V2), c = (0, j.Xf)({
+        useReducedMotion: n
+    }), b = (0, p.Ut)(), C = (0, _.go)(), {
+        errorHints: A,
+        startingConsoleQuest: E,
+        startConsoleQuest: N
+    } = (0, x.Wj)({
+        questId: t.id,
+        beforeRequest: () => {
+            b({
+                questId: t.id,
+                questContent: h.uF.QUEST_BAR_V2,
+                questContentCTA: g.Cy.DEFIBRILLATOR,
+                sourceQuestContent: h.uF.QUEST_BAR_V2
+            }), c.startAnimation()
+        },
+        afterRequest: c.stopAnimation
+    }), {
+        header: I,
+        renderBody: k
+    } = i.useMemo(() => {
+        let e = A.length > 0,
+            n = t.config.messages.gameTitle;
+        return {
+            header: e ? (0, v.ui)(t) ? T.intl.string(T.t.N33EuL) : T.intl.formatToPlainString(T.t["28Ql27"], {
+                gameTitle: n
+            }) : (0, v.ui)(t) ? T.intl.string(T.t.YstzGO) : T.intl.formatToPlainString(T.t.gX0Qcx, {
+                gameTitle: n
+            }),
+            renderBody: e ? () => (0, a.jsx)(a.Fragment, {
+                children: A.map((e, n) => {
+                    if (e.type === r._.EXPIRED_CREDENTIAL && s) {
+                        let i = u.A.getAccount(e.connected_account_id, e.connected_account_type),
+                            s = (0, f.IG)(e),
+                            l = (0, f.$J)(e);
+                        return (0, a.jsx)(y, {
+                            children: T.intl.format(s, {
+                                account_name: i?.name,
+                                onClick: () => {
+                                    (0, f.v0)({
+                                        quest: t,
+                                        platformType: l
+                                    }, {
+                                        content: h.uF.QUEST_BAR,
+                                        ctaContent: g.Cy.DEFIBRILLATOR_RECONNECT_CONSOLE,
+                                        impressionId: C,
+                                        sourceQuestContent: h.uF.QUEST_BAR_V2
+                                    })
+                                }
+                            })
+                        }, n)
+                    }
+                    return (0, a.jsx)(y, {
+                        children: e.message
+                    }, n)
+                })
+            }) : () => (0, a.jsx)(d.Text, {
+                className: S.eW,
+                color: "text-muted",
+                variant: "text-xxs/normal",
+                children: (0, v.ui)(t) ? T.intl.string(T.t.bUyEZZ) : T.intl.format(T.t.GXqvC1, {
+                    gameTitle: n
+                })
+            })
+        }
+    }, [A, t, s, C]);
+    return (0, a.jsxs)("div", {
+        className: S.XK,
+        children: [(0, a.jsxs)("div", {
+            className: S.oK,
+            children: [(0, a.jsx)(d.EpV, {
+                size: "custom",
+                color: "currentColor",
+                className: 0 === A.length ? S.pH : S.JA,
+                width: 16,
+                height: 16
+            }), (0, a.jsx)(d.Text, {
+                variant: "text-xs/medium",
+                children: I
+            }), (0, a.jsx)(d.DUT, {
+                className: l()(S.w, {
+                    [S.r9]: E
+                }),
+                onClick: () => N(),
+                children: c.render()
+            })]
+        }), (0, a.jsxs)("div", {
+            className: l()({
+                [S.Iu]: E
+            }),
+            children: [k(), 0 === A.length ? null : (0, a.jsx)(y, {
+                children: o
+            })]
+        })]
+    })
+}
+let N = function(e) {
+    let {
+        quest: t,
+        taskDetails: n
+    } = e, s = (0, o.bG)([c.A], () => c.A.useReducedMotion), l = (0, x.Du)(), r = i.useMemo(() => (0, f.bg)(t).filter(e => l.xboxAndPlaystationAccounts.find(t => t.type === e)), [l.xboxAndPlaystationAccounts, t]), {
+        steps: d,
+        hasConnectedAccounts: u,
+        isProgressingQuestForLaunchedGame: m,
+        isQuestComplete: p
+    } = i.useMemo(() => {
+        let e = r.length > 0,
+            i = e && (0, b.YL)(t),
+            s = t.config.messages.gameTitle,
+            o = t.userStatus?.completedAt != null;
+        return {
+            steps: [{
+                renderContent: () => (0, a.jsx)(C.Z, {
+                    ...l,
+                    quest: t,
+                    sourceQuestContent: h.uF.QUEST_BAR_V2
+                }),
+                isComplete: e || i || o
+            }, {
+                renderContent: () => (0, a.jsx)(A.L5, {
+                    children: (0, v.ui)(t) ? T.intl.string(T.t["5tXqFe"]) : T.intl.formatToPlainString(T.t["+8JB6Y"], {
+                        gameTitle: s
+                    })
+                }),
+                isComplete: i || o
+            }, {
+                renderContent: () => (0, a.jsx)(A.L5, {
+                    children: T.intl.formatToPlainString(T.t.HhfrYS, {
+                        numMinutes: n.targetMinutes
+                    })
+                }),
+                isComplete: o
+            }],
+            hasConnectedAccounts: e,
+            isProgressingQuestForLaunchedGame: i,
+            isQuestComplete: o
+        }
+    }, [l, r.length, t, n.targetMinutes]);
+    return (0, a.jsx)(A.Ay, {
+        heading: T.intl.string(T.t.UPWlJu),
+        steps: d,
+        children: u && !m && !p && (0, a.jsx)(E, {
+            useReducedMotion: s,
+            quest: t
+        })
+    })
+}

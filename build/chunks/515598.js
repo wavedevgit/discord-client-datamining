@@ -1,2 +1,65 @@
 /** chunk id: 515598, original params: t,e,n (module,exports,require) **/
-n.d(e,{A:()=>m});var i=n(627968);n(64700);var a=n(311907),o=n(397927),r=n(688810),s=n(503566),l=n(631305),A=n(71393),c=n(967198),d=n(652215),_=n(874864),u=n(985018),L=n(234518);function m(t){let{analyticsSection:e,analyticsPage:n,isGIF:m,banner:g}=t,E=(0,a.bG)([c.A],()=>c.A.getGuildId()),N=(0,a.bG)([A.A],()=>A.A.getGuild(E)),{analyticsLocations:R}=(0,r.Ay)();return null==N||N.features.has(d.GuildFeatures.ANIMATED_BANNER)||!m&&N.features.has(d.GuildFeatures.BANNER)?null:(0,i.jsxs)("div",{className:L.kL,children:[(0,i.jsx)(o._Jp,{color:o.LU0.unsafe_rawColors.GUILD_BOOSTING_PINK,className:L.qC}),(0,i.jsx)(o.Text,{color:"text-strong",variant:"text-sm/semibold",children:u.intl.string(u.t["56M7xe"])}),(0,i.jsx)("div",{className:L.xF,children:(0,i.jsx)(o.QWc,{text:u.intl.string(u.t.WUHdZV),onClick:()=>{if(null==N)return;let t={section:e,page:n,object:d.ZSU.UPSELL_HEADER};null!=g?(0,s._)({analyticsLocations:R,analyticsLocation:t,guild:N,isGIF:m,banner:g}):(0,l.A)({analyticsLocations:R,analyticsSourceLocation:t,guild:N,perks:m?(0,_.Pf)():(0,_.QR)()})},textVariant:"text-sm/semibold"})})]})}
+n.d(e, {
+    A: () => m
+});
+var i = n(627968);
+n(64700);
+var a = n(311907),
+    o = n(397927),
+    r = n(688810),
+    s = n(503566),
+    l = n(631305),
+    A = n(71393),
+    c = n(967198),
+    d = n(652215),
+    _ = n(874864),
+    u = n(985018),
+    L = n(234518);
+
+function m(t) {
+    let {
+        analyticsSection: e,
+        analyticsPage: n,
+        isGIF: m,
+        banner: g
+    } = t, E = (0, a.bG)([c.A], () => c.A.getGuildId()), N = (0, a.bG)([A.A], () => A.A.getGuild(E)), {
+        analyticsLocations: R
+    } = (0, r.Ay)();
+    return null == N || N.features.has(d.GuildFeatures.ANIMATED_BANNER) || !m && N.features.has(d.GuildFeatures.BANNER) ? null : (0, i.jsxs)("div", {
+        className: L.kL,
+        children: [(0, i.jsx)(o._Jp, {
+            color: o.LU0.unsafe_rawColors.GUILD_BOOSTING_PINK,
+            className: L.qC
+        }), (0, i.jsx)(o.Text, {
+            color: "text-strong",
+            variant: "text-sm/semibold",
+            children: u.intl.string(u.t["56M7xe"])
+        }), (0, i.jsx)("div", {
+            className: L.xF,
+            children: (0, i.jsx)(o.QWc, {
+                text: u.intl.string(u.t.WUHdZV),
+                onClick: () => {
+                    if (null == N) return;
+                    let t = {
+                        section: e,
+                        page: n,
+                        object: d.ZSU.UPSELL_HEADER
+                    };
+                    null != g ? (0, s._)({
+                        analyticsLocations: R,
+                        analyticsLocation: t,
+                        guild: N,
+                        isGIF: m,
+                        banner: g
+                    }) : (0, l.A)({
+                        analyticsLocations: R,
+                        analyticsSourceLocation: t,
+                        guild: N,
+                        perks: m ? (0, _.Pf)() : (0, _.QR)()
+                    })
+                },
+                textVariant: "text-sm/semibold"
+            })
+        })]
+    })
+}
