@@ -41,11 +41,11 @@ let C = e => {
             isPlaying: O,
             playSound: L,
             stopSound: P,
-            preloadSound: w
+            preloadSound: k
         } = (0, u.A)(null != R ? R[M] : null, {
             soundId: t.id
         }),
-        k = x[t.styleKey],
+        w = x[t.styleKey],
         U = l.useCallback(() => {
             n || !N ? ((0, m.O)(C === t.id ? null : t.id, s), y && h.default.track(f.HAw.VOICE_FILTER_LIMITED_TIME_VOICE_SELECTED, {
                 voice_filter_id: t.id,
@@ -63,7 +63,7 @@ let C = e => {
         }, [s, L, M, R, t.id]),
         F = null != I ? E.intl.string(I.name) : "";
     return (0, i.jsxs)("div", {
-        className: a()(x.filter, k, {
+        className: a()(x.filter, w, {
             [x.selected]: T,
             [x.locked]: N && !T
         }),
@@ -73,7 +73,7 @@ let C = e => {
                 U()
             },
             onMouseEnter: () => {
-                w()
+                k()
             },
             children: [(0, i.jsxs)("div", {
                 className: x.iconTreatmentsWrapper,

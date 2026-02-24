@@ -37,8 +37,8 @@ var i = n(627968),
     O = n(754459),
     L = n(538355),
     P = n(522871),
-    w = n(699352),
-    k = n(426153),
+    k = n(699352),
+    w = n(426153),
     U = n(444529),
     G = n(241874),
     F = n(91624),
@@ -122,7 +122,7 @@ function $(e) {
         ...b
     } = (0, c.rm)(e.id ?? ""), {
         isFocused: P,
-        handleFocus: k,
+        handleFocus: w,
         handleBlur: U
     } = (0, M.G8)(N), {
         popouts: H,
@@ -176,7 +176,7 @@ function $(e) {
             }),
             zalgo: !0,
             onKeyDown: ed,
-            onFocus: k,
+            onFocus: w,
             onBlur: U,
             childrenRepliedMessage: n.type === W.lAJ.REPLY && (0, B.A)({
                 ...e,
@@ -196,7 +196,7 @@ function $(e) {
                 repliedMessage: X,
                 roleIcon: ep
             }),
-            childrenAccessories: (0, w.A)({
+            childrenAccessories: (0, k.A)({
                 channelMessageProps: e,
                 hasSpoilerEmbeds: eo,
                 hasBailedAst: ec,
@@ -300,11 +300,11 @@ let Z = l.memo(function(e) {
         eP = (t = l.useRef(Z), l.useEffect(() => {
             t.current = Z ?? t.current
         }), Z ?? t.current),
-        ew = (0, A.$7)({
+        ek = (0, A.$7)({
             guildId: N.guild_id,
             roleId: eO.iconRoleId
         }),
-        ek = (0, R.fF)(r, X),
+        ew = (0, R.fF)(r, X),
         eU = (0, R.ZD)(r),
         eG = (0, d.bG)([m.A], () => m.A.getMessage(_), [_]),
         eF = (0, P.A)({
@@ -313,7 +313,7 @@ let Z = l.memo(function(e) {
         }),
         eH = l.useRef(window),
         eB = null != eG;
-    n = r.type === W.lAJ.CUSTOM_GIFT ? "" : !eC && eB ? (0, k.A)(e, ej) : (0, F.A)(e, ej, eC);
+    n = r.type === W.lAJ.CUSTOM_GIFT ? "" : !eC && eB ? (0, w.A)(e, ej) : (0, F.A)(e, ej, eC);
     let eV = r.id === X,
         eK = (0, i.jsx)(u.vN3, {
             offset: {
@@ -328,7 +328,7 @@ let Z = l.memo(function(e) {
                     ...en,
                     "aria-setsize": -1,
                     "aria-roledescription": z.intl.string(z.t.BAB0yK),
-                    "aria-labelledby": ek,
+                    "aria-labelledby": ew,
                     "aria-describedby": eU,
                     onFocus: eE,
                     onBlur: ex,
@@ -368,9 +368,9 @@ let Z = l.memo(function(e) {
                         replyReference: ee,
                         author: eO,
                         repliedMessage: es,
-                        roleIcon: ew
+                        roleIcon: ek
                     }),
-                    childrenAccessories: (0, w.A)({
+                    childrenAccessories: (0, k.A)({
                         channelMessageProps: e,
                         hasSpoilerEmbeds: eR,
                         hasBailedAst: eM,

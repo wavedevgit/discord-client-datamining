@@ -1,15 +1,15 @@
-/** chunk id: 146793, original params: e,t,r (module,exports,require) **/
-r.d(t, {
+/** chunk id: 146793, original params: e,t,s (module,exports,require) **/
+s.d(t, {
     A: () => l
 });
-var s = r(64700),
-    i = r(444927),
-    n = r(629357);
+var r = s(64700),
+    i = s(444927),
+    n = s(629357);
 
 function l(e) {
     let {
         searchOptions: t
-    } = e, [r, l] = s.useState({
+    } = e, [s, l] = r.useState({
         results: [],
         query: ""
     }), a = (0, i.A)(() => {
@@ -21,17 +21,17 @@ function l(e) {
         });
         return e.setLimit(20), e.search(""), e
     });
-    return s.useEffect(() => () => a.destroy(), [a]), s.useEffect(() => {
+    return r.useEffect(() => () => a.destroy(), [a]), r.useEffect(() => {
         null != t && t !== a.options && a.setOptions(t)
     }, [a, t]), {
-        search: s.useCallback(e => {
+        search: r.useCallback(e => {
             var t;
             let {
-                query: r,
-                resultTypes: s
+                query: s,
+                resultTypes: r
             } = e;
-            null != a.resultTypes && (t = a.resultTypes, s.length === t.size && s.every(e => t.has(e))) || (a.setResultTypes(s), a.setLimit(1 === s.length ? 50 : 20)), a.search("" === r.trim() ? "" : r)
+            null != a.resultTypes && (t = a.resultTypes, r.length === t.size && r.every(e => t.has(e))) || (a.setResultTypes(r), a.setLimit(1 === r.length ? 50 : 20)), a.search("" === s.trim() ? "" : s)
         }, [a]),
-        ...r
+        ...s
     }
 }

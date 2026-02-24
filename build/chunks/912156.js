@@ -112,8 +112,8 @@ let C = r.memo(function(e) {
             v = E[u],
             D = f[u],
             R = (0, c.Iv)(h, 48),
-            O = N[u],
-            U = (() => {
+            U = N[u],
+            O = (() => {
                 switch (u) {
                     case "TINY_24":
                         return g._3.SIZE_24;
@@ -126,8 +126,8 @@ let C = r.memo(function(e) {
                 }
             })(),
             G = 0 === (n = null != (t = o?.name ?? "") ? t.replace(/[-_]+/g, " ").replace(/'s /g, " ").replace(/\w+/g, e => e[0]).replace(/\s/g, "") : "").length ? "?" : n.slice(0, 3),
-            F = (0, c.Rb)(h),
-            w = (0, i.jsxs)("div", {
+            w = (0, c.Rb)(h),
+            F = (0, i.jsxs)("div", {
                 className: a()(I.zr, l),
                 role: "img",
                 style: {
@@ -149,19 +149,19 @@ let C = r.memo(function(e) {
                     }) : (0, i.jsx)("div", {
                         className: a()(I.TT, I.q9),
                         style: {
-                            fontSize: T(M, F),
+                            fontSize: T(M, w),
                             width: v,
                             height: v
                         },
-                        children: F
+                        children: w
                     })
                 }), (0, i.jsx)("div", {
                     className: a()(I._C, p[u], s),
                     "aria-hidden": !0,
                     children: (0, i.jsx)(d.Ay, {
                         mask: d.hW.SQUIRCLE,
-                        width: O,
-                        height: O,
+                        width: U,
+                        height: U,
                         children: (0, i.jsx)("div", {
                             className: a()(p[u], I.q9),
                             style: {
@@ -182,7 +182,7 @@ let C = r.memo(function(e) {
                 indicatorX: H,
                 indicatorY: Y
             } = _({
-                size: U
+                size: O
             });
         return A ? (0, i.jsxs)("div", {
             className: I.J4,
@@ -227,7 +227,7 @@ let C = r.memo(function(e) {
                     height: L,
                     overflow: "visible",
                     mask: `url(#${x})`,
-                    children: w
+                    children: F
                 })]
             }), (0, i.jsx)("div", {
                 className: I.RL,
@@ -236,9 +236,9 @@ let C = r.memo(function(e) {
                     top: Y
                 },
                 children: (0, i.jsx)(C, {
-                    avatarSize: U,
+                    avatarSize: O,
                     typingFillColor: y
                 })
             })]
-        }) : w
+        }) : F
     }

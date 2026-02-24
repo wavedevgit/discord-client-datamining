@@ -1,17 +1,17 @@
-/** chunk id: 905552, original params: e,t,s (module,exports,require) **/
-let l;
-s.d(t, {
-    A: () => a
+/** chunk id: 905552, original params: e,t,a (module,exports,require) **/
+let r;
+a.d(t, {
+    A: () => l
 });
-var n = s(9302);
+var n = a(9302);
 
-function a(e, t) {
+function l(e, t) {
     if (__OVERLAY__) {
         let e = t.getGame(),
-            s = (0, n.getPID)();
-        return null == e || null == s ? null : l?.id === e.id && l?.pid === s ? l : l = {
+            a = (0, n.getPID)();
+        return null == e || null == a ? null : r?.id === e.id && r?.pid === a ? r : r = {
             id: e.id,
-            pid: s,
+            pid: a,
             pidPath: [],
             nativeProcessObserverId: 0,
             hidden: !1,

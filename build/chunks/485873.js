@@ -1,29 +1,29 @@
 /** chunk id: 485873, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => d
+    A: () => c
 });
-var i = n(627968);
+var r = n(627968);
 n(64700);
-var r = n(311907),
-    l = n(397927),
-    s = n(827343),
-    a = n(430452),
-    o = n(824744),
-    c = n(985018);
+var a = n(311907),
+    i = n(397927),
+    l = n(827343),
+    u = n(430452),
+    s = n(824744),
+    o = n(985018);
 
-function d(e) {
-    let t = (0, r.bG)([a.Ay], () => (0, o.M)(a.Ay.getInputVolume()));
-    return (0, i.jsx)(l.aK1, {
+function c(e) {
+    let t = (0, a.bG)([u.Ay], () => (0, s.M)(u.Ay.getInputVolume()));
+    return (0, r.jsx)(i.aK1, {
         id: "input",
-        label: c.intl.string(c.t.OX2Bnr),
-        control: (n, r) => (0, i.jsx)(l.i42, {
+        label: o.intl.string(o.t.OX2Bnr),
+        control: (n, a) => (0, r.jsx)(i.i42, {
             ...n,
-            ref: r,
+            ref: a,
             value: t,
-            onChange: t => s.A.setInputVolume((0, o.w)(t), {
+            onChange: t => l.A.setInputVolume((0, s.w)(t), {
                 analyticsLocations: e
             }),
-            "aria-label": c.intl.string(c.t.OX2Bnr)
+            "aria-label": o.intl.string(o.t.OX2Bnr)
         })
     })
 }

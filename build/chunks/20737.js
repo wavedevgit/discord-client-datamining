@@ -1,6 +1,6 @@
 /** chunk id: 20737, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => k
+    A: () => w
 });
 var i = n(627968),
     l = n(64700),
@@ -35,12 +35,12 @@ var i = n(627968),
     O = n(652215),
     L = n(696016),
     P = n(985018),
-    w = n(275825);
-let k = l.memo(function(e) {
+    k = n(275825);
+let w = l.memo(function(e) {
     let {
         className: t,
         channel: s,
-        draftType: k,
+        draftType: w,
         editorTextContent: U,
         setValue: G,
         canOnlyUseTextCommands: F
@@ -108,7 +108,7 @@ let k = l.memo(function(e) {
     let ep = (0, i.jsx)(o.pa$, {
             size: "refresh_sm",
             color: "currentColor",
-            colorClass: w.dW
+            colorClass: k.dW
         }),
         ef = (0, i.jsx)(o.YNO, {
             targetElementRef: V,
@@ -138,7 +138,7 @@ let k = l.memo(function(e) {
                             options: eg,
                             channel: s,
                             onFileUpload: () => B.current?.activateUploadDialogue(),
-                            draftType: k,
+                            draftType: w,
                             editorTextContent: U,
                             setValue: G,
                             openClips: er
@@ -149,8 +149,8 @@ let k = l.memo(function(e) {
             },
             children: e => (0, i.jsx)(R.A, {
                 ref: V,
-                className: a()(w.g$, t),
-                childClassName: w.wh,
+                className: a()(k.g$, t),
+                childClassName: k.wh,
                 isActive: !1,
                 "aria-label": P.intl.string(P.t.d56gCa),
                 onDoubleClick: es ? () => B.current?.activateUploadDialogue() : void 0,
@@ -161,12 +161,12 @@ let k = l.memo(function(e) {
         });
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
-            className: w.EJ,
+            className: k.EJ,
             children: (0, i.jsx)(c.A, {
                 ref: B,
                 onChange: e => {
                     var t, n;
-                    t = e.currentTarget.files, null != (n = e.currentTarget.err) && "ETOOLARGE" === n.code ? (0, j.V)(s, []) : (0, j.R)(t, s, k, {
+                    t = e.currentTarget.files, null != (n = e.currentTarget.err) && "ETOOLARGE" === n.code ? (0, j.V)(s, []) : (0, j.R)(t, s, w, {
                         requireConfirm: !0,
                         origin: "file_picker"
                     }), v._.dispatchToLastSubscribed(O.jej.TEXTAREA_FOCUS), e.currentTarget.value = ""
@@ -176,7 +176,7 @@ let k = l.memo(function(e) {
                 "aria-hidden": !0
             })
         }), (0, i.jsx)("div", {
-            className: w.Jd,
+            className: k.Jd,
             children: ef
         })]
     })

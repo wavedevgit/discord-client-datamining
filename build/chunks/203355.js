@@ -36,8 +36,8 @@ var i = n(627968),
     O = n(768088),
     L = n(256195),
     P = (n(729365), n(399849)),
-    w = n(275731),
-    k = n(345812),
+    k = n(275731),
+    w = n(345812),
     U = n(652215),
     G = n(806931),
     F = n(731854),
@@ -53,9 +53,9 @@ function K(e) {
         idle: s,
         width: a,
         premiumIndicator: o
-    } = e, c = (0, r.bG)([N.A], () => N.A.getActiveStreamForUser(t.user.id, t.stream.guildId)), d = (0, k.V)(a);
+    } = e, c = (0, r.bG)([N.A], () => N.A.getActiveStreamForUser(t.user.id, t.stream.guildId)), d = (0, w.V)(a);
     return (0, i.jsxs)(i.Fragment, {
-        children: [n || l ? null : (0, i.jsx)(w.A, {
+        children: [n || l ? null : (0, i.jsx)(k.A, {
             participant: t
         }), l || null == c || c.state === U.XYD.ENDED || c.state === U.XYD.FAILED ? null : (0, i.jsx)(S.A, {
             size: g.Ay.Sizes.SMALL,
@@ -76,8 +76,8 @@ function W(e) {
         fit: g,
         popoutType: p,
         width: S,
-        wrapperClassName: w,
-        paused: k = !1
+        wrapperClassName: k,
+        paused: w = !1
     } = e, K = b.Ay.getVideoComponent(), W = (0, r.bG)([y.default], () => y.default.getId()), z = (0, _.A)(), {
         stream: Y,
         user: q,
@@ -157,12 +157,12 @@ function W(e) {
     else return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(I.A, {
             onResize: s,
-            wrapperClassName: a()(p !== A.N.CALL_TILE ? B.tN : void 0, w),
+            wrapperClassName: a()(p !== A.N.CALL_TILE ? B.tN : void 0, k),
             className: B.Qs,
             streamId: J,
             videoComponent: K,
             fit: g,
-            paused: k || Z?.state === U.XYD.PAUSED || en,
+            paused: w || Z?.state === U.XYD.PAUSED || en,
             videoSpinnerContext: et ? m.u.SELF_STREAM : m.u.REMOTE_STREAM,
             userId: q.id,
             streamKey: t.id

@@ -35,8 +35,8 @@ var i = n(627968),
     O = n(914835),
     L = n(825244),
     P = n(652215),
-    w = n(746080),
-    k = n(985018),
+    k = n(746080),
+    w = n(985018),
     U = n(82842),
     G = n(473169);
 
@@ -92,7 +92,7 @@ function H(e) {
             _?.bot && H === E.FetchState.NOT_FETCHED && o.A.fetch()
         }, [_?.bot, H]), t.isSystemDM()) return (0, i.jsx)(R.A, {
         channel: t,
-        children: k.intl.string(k.t.Rzvnig)
+        children: w.intl.string(w.t.Rzvnig)
     });
     if (m === P.rbe.DM) {
         let e;
@@ -124,7 +124,7 @@ function H(e) {
                 variant: "heading-xl/medium",
                 className: G.SX,
                 children: x
-            }), k.intl.format(k.t["Qvg+6+"], {
+            }), w.intl.format(w.t["Qvg+6+"], {
                 username: h
             }), _?.isProvisional && (0, i.jsx)(g.Y, {
                 userId: _.id
@@ -135,19 +135,19 @@ function H(e) {
         if (t.isManaged()) return (0, i.jsxs)(N.Ay, {
             channelId: t.id,
             children: [(0, i.jsx)(N.cr, {
-                children: k.intl.format(k.t.I3R7Vn, {
+                children: w.intl.format(w.t.I3R7Vn, {
                     channelName: h
                 })
             }), (0, i.jsx)(N.j1, {
-                children: k.intl.string(k.t.M8Ao6I)
+                children: w.intl.string(w.t.M8Ao6I)
             })]
         });
-        else if (t.hasFlag(w.lx.IS_JOIN_REQUEST_INTERVIEW_CHANNEL)) return (0, i.jsx)(v.A, {
+        else if (t.hasFlag(k.lx.IS_JOIN_REQUEST_INTERVIEW_CHANNEL)) return (0, i.jsx)(v.A, {
         channel: t
     });
     else return (0, i.jsx)(R.A, {
         channel: t,
-        children: k.intl.format(k.t.MFwcqO, {
+        children: w.intl.format(w.t.MFwcqO, {
             name: h
         })
     });
@@ -157,7 +157,7 @@ function H(e) {
     }) : (0, i.jsx)(N.Ay, {
         channelId: t.id,
         children: (0, i.jsx)(N.j1, {
-            children: k.intl.format(k.t.hPVEQG, {
+            children: w.intl.format(w.t.hPVEQG, {
                 channelName: h
             })
         })

@@ -1,7 +1,7 @@
 /** chunk id: 83982, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => k,
-    s: () => w
+    A: () => w,
+    s: () => k
 });
 var i = n(627968),
     l = n(64700),
@@ -37,7 +37,7 @@ var i = n(627968),
 let L = c._3J.SIZE_80,
     P = c._3J.SIZE_40;
 
-function w(e) {
+function k(e) {
     let {
         channelId: t,
         participant: n
@@ -56,7 +56,7 @@ function w(e) {
     })
 }
 
-function k(e) {
+function w(e) {
     let {
         participant: t,
         channel: n,
@@ -65,8 +65,8 @@ function k(e) {
         selected: c,
         popoutType: C,
         fit: j,
-        onVideoResize: w,
-        blocked: k,
+        onVideoResize: k,
+        blocked: w,
         ignored: U,
         noVideoRender: G = !1,
         pulseSpeakingIndicator: F = !1,
@@ -103,7 +103,7 @@ function k(e) {
         width: o,
         selected: c
     }) : (0, i.jsx)(_.A, {
-        onResize: w,
+        onResize: k,
         wrapperClassName: C !== A.N.CALL_TILE ? O.tN : void 0,
         className: O.Qs,
         mirror: Y,
@@ -115,7 +115,7 @@ function k(e) {
         userId: K.id
     }, W) : (0, i.jsx)("div", {
         className: a()(O.Qs, {
-            [O.Kx]: k || U
+            [O.Kx]: w || U
         }),
         children: (0, i.jsx)(f.A, {
             "aria-label": Q,

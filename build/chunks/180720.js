@@ -30,16 +30,16 @@ var l = n(627968),
     v = n(554932),
     D = n(406595),
     R = n(557404),
-    O = n(652215),
-    U = n(895867),
+    U = n(652215),
+    O = n(895867),
     G = n(985018),
-    F = n(416001);
+    w = n(416001);
 
-function w(e) {
+function F(e) {
     return Array.from(e).sort()
 }
 let L = (0, r.throttle)(e => {
-    (0, T.Y)(O.uss.FRIENDS, {
+    (0, T.Y)(U.uss.FRIENDS, {
         locked: p.default.isInstanceLocked(),
         shownUserIds: e.shownUserIds,
         liveUserIds: e.liveUserIds,
@@ -60,7 +60,7 @@ function k() {
     let {
         onPrimaryAction: e,
         onContextMenu: t
-    } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, [n, r] = i.useState(""), p = n.trim().toLowerCase(), [O, k] = i.useState(() => new Set), P = (0, a.bG)([y.A], () => y.A.getCollapsedSectionOverridesForTab(_.x.VOICE), []), j = (0, h.qZ)(), V = i.useMemo(() => {
+    } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, [n, r] = i.useState(""), p = n.trim().toLowerCase(), [U, k] = i.useState(() => new Set), P = (0, a.bG)([y.A], () => y.A.getCollapsedSectionOverridesForTab(_.x.VOICE), []), j = (0, h.qZ)(), V = i.useMemo(() => {
         let e = new Map;
         for (let t of j) e.set(t.channel.id, t.voiceStates);
         return e
@@ -140,7 +140,7 @@ function k() {
             if ("" !== p) return n.push({
                 kind: "SEARCH_RESULTS",
                 key: "SEARCH_RESULTS",
-                title: G.intl.string(U.default.DUIbKP),
+                title: G.intl.string(O.default.DUIbKP),
                 count: z.length,
                 rows: z.map(e => ({
                     channelId: e.channel.id,
@@ -157,7 +157,7 @@ function k() {
                 n.push({
                     kind: "FAVORITES",
                     key: "FAVORITES",
-                    title: G.intl.string(U.default.OskevP),
+                    title: G.intl.string(O.default.OskevP),
                     count: l.length,
                     rows: i,
                     length: Math.max(i.length, 1)
@@ -172,7 +172,7 @@ function k() {
                 n.push({
                     kind: "FRIENDS_IN_VOICE",
                     key: "FRIENDS_IN_VOICE",
-                    title: G.intl.string(U.default["C+ojiQ"]),
+                    title: G.intl.string(O.default["C+ojiQ"]),
                     count: l.length,
                     rows: i,
                     length: Math.max(i.length, 1)
@@ -187,7 +187,7 @@ function k() {
                 n.push({
                     kind: "ACTIVE_NOW",
                     key: "ACTIVE_NOW",
-                    title: G.intl.string(U.default.eiie2x),
+                    title: G.intl.string(O.default.eiie2x),
                     count: l.length,
                     rows: i,
                     length: Math.max(i.length, 1)
@@ -202,7 +202,7 @@ function k() {
                 n.push({
                     kind: "SUGGESTED_VOICE_CHANNELS",
                     key: "SUGGESTED_VOICE_CHANNELS",
-                    title: G.intl.string(U.default["9ME4wE"]),
+                    title: G.intl.string(O.default["9ME4wE"]),
                     count: l.length,
                     rows: i,
                     length: Math.max(i.length, 1)
@@ -271,8 +271,8 @@ function k() {
         ep = (0, T.Dk)(() => em, [em]);
     i.useEffect(() => {
         (0 !== eS.size || 0 !== ep.size) && L({
-            shownUserIds: w(eS),
-            liveUserIds: w(ep)
+            shownUserIds: F(eS),
+            liveUserIds: F(ep)
         })
     }, [eS, ep]);
     let eN = i.useCallback(e => eh[e], [eh]),
@@ -301,7 +301,7 @@ function k() {
             let r = i.rows[n.row];
             if (null == r) return null;
             let s = `${i.key}:${r.channelId}`,
-                a = O.has(r.channelId);
+                a = U.has(r.channelId);
             return (0, l.jsx)(x.C, {
                 channelId: r.channelId,
                 listItemId: s,
@@ -312,30 +312,30 @@ function k() {
                 onPrimaryAction: e,
                 onContextMenu: t
             }, s)
-        }, [O, eN, t, e, H]),
+        }, [U, eN, t, e, H]),
         eC = i.useCallback(() => 40, []),
         ey = i.useCallback((e, t) => {
             let n = eN(e);
             if (null == n) return 50;
             if (0 === n.rows.length) return 0;
             let l = n.rows[t];
-            if (null == l || !O.has(l.channelId)) return 50;
+            if (null == l || !U.has(l.channelId)) return 50;
             let i = I.A.getChannel(l.channelId),
                 r = Math.min((null != i ? S.Ay.getVoiceStatesForChannel(i) : []).length, 25);
             return r <= 0 ? 50 : 50 + (32 * r + (r - 1) * 2 + 8)
-        }, [O, eN]),
+        }, [U, eN]),
         ex = i.useCallback(e => {
             r(e), B.current?.scrollToTop()
         }, []);
     return (0, l.jsxs)("div", {
-        className: F.kL,
+        className: w.kL,
         children: [(0, l.jsx)("div", {
-            className: F.MT,
+            className: w.MT,
             children: (0, l.jsx)(u.IWV, {
                 query: n,
                 onChange: ex,
                 onClear: () => r(""),
-                placeholder: G.intl.string(U.default.OV3KfO),
+                placeholder: G.intl.string(O.default.OV3KfO),
                 size: "md"
             })
         }), (0, l.jsx)(s.hD, {
@@ -354,7 +354,7 @@ function k() {
                             ref: e => {
                                 B.current = e, t.current = e?.getScrollerNode() ?? null
                             },
-                            className: F.p_,
+                            className: w.p_,
                             sectionHeight: eC,
                             rowHeight: ey,
                             sidebarHeight: 0,

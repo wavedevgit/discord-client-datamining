@@ -3,17 +3,17 @@ n.d(t, {
     p: () => a
 });
 var i = n(311907),
-    l = n(429913),
-    r = n(290863),
-    s = n(652215);
+    s = n(429913),
+    l = n(290863),
+    r = n(652215);
 
 function a(e) {
-    let t = (0, i.bG)([r.A], () => {
+    let t = (0, i.bG)([l.A], () => {
         if (null != e) return function(e) {
             for (let t of e)
-                if (t.type === s.$pd.PLAYING && null != t.application_id) return t.application_id;
+                if (t.type === r.$pd.PLAYING && null != t.application_id) return t.application_id;
             return null
-        }(r.A.getActivities(e)) ?? void 0
+        }(l.A.getActivities(e)) ?? void 0
     }, [e]);
-    return (0, l.h)(t) ?? void 0
+    return (0, s.h)(t) ?? void 0
 }

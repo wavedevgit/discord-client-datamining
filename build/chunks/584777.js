@@ -74,7 +74,7 @@ function P() {
                 user: n,
                 comparator: A.Ay.getName(n)
             }), e
-        }, []).sort(k)
+        }, []).sort(w)
     }(e), !0;
     let t = null != e ? e.recipients : [];
     if (null != i) {
@@ -108,13 +108,13 @@ function P() {
     return !1
 }
 
-function w() {
+function k() {
     if (!I) return !1;
     let e = b;
     return (b = E.A.getFriendCount() > 0) !== e
 }
 
-function k(e, t) {
+function w(e, t) {
     if (p.A.hasConsented(C.YAq.PERSONALIZATION)) {
         let n = u.A.getUserAffinity(e.user.id)?.communicationProbability ?? 0,
             i = u.A.getUserAffinity(t.user.id)?.communicationProbability ?? 0;
@@ -152,7 +152,7 @@ function G() {
 
 function F(e) {
     if (e.key !== C.TLS) return !1;
-    I = !0, w(), i = G(), R = null, L("")
+    I = !0, k(), i = G(), R = null, L("")
 }
 
 function H(e) {
@@ -166,7 +166,7 @@ function B() {
 class V extends s.Ay.Store {
     static displayName = "PrivateChannelRecipientsInviteStore";
     initialize() {
-        this.waitFor(g.A, p.A, c.A, f.A, E.A, u.A, x.default, _.Ay), this.syncWith([x.default, g.A], P), this.syncWith([E.A], w)
+        this.waitFor(g.A, p.A, c.A, f.A, E.A, u.A, x.default, _.Ay), this.syncWith([x.default, g.A], P), this.syncWith([E.A], k)
     }
     getResults() {
         return v
@@ -211,7 +211,7 @@ let K = new V(r.h, {
         MODAL_PUSH: F,
         SHOW_ACTION_SHEET: F,
         PRIVATE_CHANNEL_RECIPIENTS_INVITE_OPEN: function(e) {
-            I = !0, w(), i = G(), R = e.channelId, L("")
+            I = !0, k(), i = G(), R = e.channelId, L("")
         },
         MODAL_POP: H,
         HIDE_ACTION_SHEET: H,

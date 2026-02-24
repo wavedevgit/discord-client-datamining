@@ -1,36 +1,36 @@
-/** chunk id: 864057, original params: e,t,r (module,exports,require) **/
-r.d(t, {
+/** chunk id: 864057, original params: e,t,s (module,exports,require) **/
+s.d(t, {
     A: () => S
 });
-var s = r(627968);
-r(64700);
-var i = r(503698),
-    n = r.n(i),
-    l = r(299855),
-    a = r.n(l),
-    o = r(158954),
-    c = r(397927),
-    d = r(77729),
-    u = r(430452),
-    f = r(723702),
-    h = r(571044),
-    x = r(624130),
-    p = r(688465),
-    m = r(297524),
-    _ = r(502075),
-    g = r(818348),
-    j = r(985018),
-    v = r(687637);
+var r = s(627968);
+s(64700);
+var i = s(503698),
+    n = s.n(i),
+    l = s(299855),
+    a = s.n(l),
+    o = s(158954),
+    c = s(397927),
+    d = s(77729),
+    u = s(430452),
+    f = s(723702),
+    h = s(571044),
+    x = s(624130),
+    p = s(688465),
+    m = s(297524),
+    _ = s(502075),
+    g = s(818348),
+    j = s(985018),
+    v = s(687637);
 
 function A(e) {
     let {
         id: t,
-        text: r,
+        text: s,
         icon: i,
         selected: l,
         onClick: a
     } = e;
-    return (0, s.jsx)(c.DUT, {
+    return (0, r.jsx)(c.DUT, {
         role: "radio",
         "aria-checked": l,
         onClick: () => a(t),
@@ -38,14 +38,14 @@ function A(e) {
         className: n()(v.tp, v.ey, {
             [v.wH]: l
         }),
-        children: (0, s.jsxs)("div", {
+        children: (0, r.jsxs)("div", {
             className: v.DD,
-            children: [(0, s.jsx)(i, {
+            children: [(0, r.jsx)(i, {
                 size: "lg"
-            }), (0, s.jsx)(o.EYj, {
+            }), (0, r.jsx)(o.EYj, {
                 variant: "text-sm/medium",
                 color: "none",
-                children: r
+                children: s
             })]
         })
     })
@@ -57,28 +57,28 @@ function S(e) {
     } = e;
     (0, h.jd)(), (0, x.A)(t, g.FX);
     let [{
-        nativeSourceType: r
+        nativeSourceType: s
     }, i] = (0, p.tS)(), n = (0, f.isMac)() && a().satisfies(d.A?.os.release, _.WZ), l = u.Ay.getUseGamescopeCapture(), S = l ? "gamescope" : "screen";
-    return (0, s.jsxs)("div", {
+    return (0, r.jsxs)("div", {
         className: v.zr,
-        children: [(0, s.jsx)(o.DZT, {
+        children: [(0, r.jsx)(o.DZT, {
             className: v.wx,
             variant: "heading-lg/semibold",
             color: "text-default",
             children: j.intl.string(j.t.XyYoFc)
-        }), n ? (0, s.jsxs)(s.Fragment, {
-            children: [(0, s.jsx)(o.EYj, {
+        }), n ? (0, r.jsxs)(r.Fragment, {
+            children: [(0, r.jsx)(o.EYj, {
                 className: v.rf,
                 variant: "text-sm/medium",
                 color: "text-subtle",
                 children: j.intl.format(j.t.sbbPhW, {
                     buttonName: j.intl.string(j.t.FiBjwU)
                 })
-            }), (0, s.jsx)(m.A, {})]
-        }) : (0, s.jsxs)("div", {
+            }), (0, r.jsx)(m.A, {})]
+        }) : (0, r.jsxs)("div", {
             className: v.Ro,
-            children: [(0, s.jsx)(A, {
-                selected: r === S,
+            children: [(0, r.jsx)(A, {
+                selected: s === S,
                 onClick: () => {
                     i({
                         type: "set_native_source_type",
@@ -88,8 +88,8 @@ function S(e) {
                 id: "screen",
                 text: j.intl.string(j.t.cVUFXY),
                 icon: c.kN9
-            }), !l && (0, s.jsx)(A, {
-                selected: "window" === r,
+            }), !l && (0, r.jsx)(A, {
+                selected: "window" === s,
                 onClick: () => {
                     i({
                         type: "set_native_source_type",

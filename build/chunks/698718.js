@@ -35,8 +35,8 @@ var i = n(627968),
     O = n(972995),
     L = n(355622),
     P = n(408018),
-    w = n(223938),
-    k = n(811501),
+    k = n(223938),
+    w = n(811501),
     U = n(20737),
     G = n(133343),
     F = n(35277),
@@ -89,8 +89,8 @@ var i = n(627968),
     eO = n(203982),
     eL = n(661191),
     eP = n(460350),
-    ew = n(518960),
-    ek = n(382287),
+    ek = n(518960),
+    ew = n(382287),
     eU = n(137577),
     eG = n(480870),
     eF = n(390756),
@@ -404,8 +404,8 @@ class eQ extends l.PureComponent {
                 shouldRefocus: !0
             };
             if (null != n && n.length > 0) {
-                let e = (0, ek.LJ)(n);
-                if ((0, ek.fJ)(e, d?.id)) return (0, ew.V)(h, e), {
+                let e = (0, ew.LJ)(n);
+                if ((0, ew.fJ)(e, d?.id)) return (0, ek.V)(h, e), {
                     shouldClear: !1,
                     shouldRefocus: !1
                 };
@@ -467,7 +467,7 @@ class eQ extends l.PureComponent {
         setValue: this.handleSetValue,
         canOnlyUseTextCommands: e
     });
-    renderApplicationCommandIcon = (e, t, n) => (0, i.jsx)(k.A, {
+    renderApplicationCommandIcon = (e, t, n) => (0, i.jsx)(w.A, {
         className: n,
         command: e,
         section: t,
@@ -491,7 +491,7 @@ class eQ extends l.PureComponent {
             announcementComposerEnabled: p
         } = this.props, {
             contentWarningProps: f
-        } = this.state, _ = e.type === eW.rbe.GUILD_ANNOUNCEMENT && p ? (0, i.jsx)(w.A, {
+        } = this.state, _ = e.type === eW.rbe.GUILD_ANNOUNCEMENT && p ? (0, i.jsx)(k.A, {
             ref: this.props.refInstance,
             textValue: this.state.textValue,
             richValue: this.state.richValue,
@@ -510,7 +510,7 @@ class eQ extends l.PureComponent {
             onKeyDown: this.handleKeyDown,
             renderAttachButton: this.renderAttachButton,
             renderApplicationCommandIcon: this.renderApplicationCommandIcon,
-            promptToUpload: ew.R,
+            promptToUpload: ek.R,
             highlighted: a,
             setEditorRef: e => this.editorRef = e
         }) : (0, i.jsx)(G.Ay, {
@@ -532,7 +532,7 @@ class eQ extends l.PureComponent {
             onKeyDown: this.handleKeyDown,
             renderAttachButton: this.renderAttachButton,
             renderApplicationCommandIcon: this.renderApplicationCommandIcon,
-            promptToUpload: ew.R,
+            promptToUpload: ek.R,
             highlighted: a,
             setEditorRef: e => this.editorRef = e,
             pendingScheduledMessage: g

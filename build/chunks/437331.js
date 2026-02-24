@@ -72,8 +72,8 @@ function v(e) {
         onContextMenu: p
     } = e, _ = t.id, M = (0, a.Ay)(t, !1) ?? "???", v = (0, C.X6)(t), D = (0, d.A)(t, !1), {
         user: R,
-        status: O,
-        isMobile: U
+        status: U,
+        isMobile: O
     } = (0, r.cf)([A.default, g.A], () => {
         if (!t.isDM()) return {
             user: null,
@@ -95,7 +95,7 @@ function v(e) {
             channel: t,
             user: R ?? void 0
         })
-    }, [t, p, R]), F = t.isMultiUserDM() || t.isPrivate() && t.recipients.length >= 2, w = i.useCallback(() => {
+    }, [t, p, R]), w = t.isMultiUserDM() || t.isPrivate() && t.recipients.length >= 2, F = i.useCallback(() => {
         I?.({
             type: N.c.OPEN_TEXT_CHAT_CHANNEL,
             channelId: _,
@@ -107,15 +107,15 @@ function v(e) {
         leftIndicator: (0, l.jsx)(o.A, {
             unread: h
         }),
-        onClick: w,
+        onClick: F,
         onContextMenu: G,
         avatar: (0, l.jsx)(m.h, {
             channel: t,
             user: R,
             "aria-hidden": !0,
             size: s._3J.SIZE_32,
-            status: O,
-            isMobile: U,
+            status: U,
+            isMobile: O,
             isTyping: v,
             mentionCount: u,
             isMentionLowImportance: c
@@ -138,7 +138,7 @@ function v(e) {
             })
         }) : null,
         rightActions: e => (0, l.jsxs)(l.Fragment, {
-            children: [u > 0 ? x(u) : null, e && F ? (0, l.jsx)(S.j, {
+            children: [u > 0 ? x(u) : null, e && w ? (0, l.jsx)(S.j, {
                 tab: f.x.MESSAGES,
                 targetId: _
             }) : null]
@@ -160,13 +160,13 @@ function D(e) {
         v = n.getGuildId?.() ?? null,
         D = (0, r.bG)([h.A], () => null != v ? h.A.getGuild(v) ?? null : null, [v]),
         R = (0, a.Ay)(n, !1) ?? "???",
-        O = (0, C.X6)(n),
-        U = (0, C.DL)(n),
+        U = (0, C.X6)(n),
+        O = (0, C.DL)(n),
         G = (0, d.A)(n, !1),
-        F = (0, s.rdh)(s.LU0.colors.TEXT_STRONG),
-        w = (0, s.rdh)(s.LU0.colors.TEXT_MUTED),
+        w = (0, s.rdh)(s.LU0.colors.TEXT_STRONG),
+        F = (0, s.rdh)(s.LU0.colors.TEXT_MUTED),
         L = I || g > 0 ? "text-strong" : "text-muted",
-        b = I || g > 0 ? F : w,
+        b = I || g > 0 ? w : F,
         k = i.useCallback(e => {
             _?.({
                 type: N.K.GUILD_TEXT_CHANNEL,
@@ -194,8 +194,8 @@ function D(e) {
             channel: n,
             guild: D ?? void 0,
             size: p.Q.SMALL_32,
-            isTyping: O,
-            typingFillColor: U ?? void 0
+            isTyping: U,
+            typingFillColor: O ?? void 0
         }),
         primaryText: (0, l.jsxs)("div", {
             className: y.QV,
