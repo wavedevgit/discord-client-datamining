@@ -25,8 +25,8 @@ var i = r(627968),
     M = r(111085),
     x = r(594832),
     U = r(657331),
-    p = r(353157),
-    _ = r(798048),
+    _ = r(353157),
+    p = r(798048),
     v = r(652215),
     R = r(788868),
     j = r(985018),
@@ -46,7 +46,7 @@ let C = e => {
 
 function P(e) {
     let {
-        cardSize: t = _.Y.MEDIUM
+        cardSize: t = p.Y.MEDIUM
     } = e, r = l.useRef(null), s = l.useRef(null);
     return (0, i.jsx)("div", {
         ref: r,
@@ -54,9 +54,9 @@ function P(e) {
         children: (0, i.jsx)("div", {
             ref: s,
             className: n()(w.Nr, w.Yf, {
-                [w.IU]: t === _.Y.SMALL,
-                [w.D]: t === _.Y.MEDIUM_SQUARE,
-                [w.Sd]: t === _.Y.LARGE
+                [w.IU]: t === p.Y.SMALL,
+                [w.D]: t === p.Y.MEDIUM_SQUARE,
+                [w.Sd]: t === p.Y.LARGE
             }),
             children: (0, i.jsx)("div", {
                 className: w.ho,
@@ -74,7 +74,7 @@ function P(e) {
 function T(e) {
     let {
         item: t,
-        cardSize: r = _.Y.SMALL,
+        cardSize: r = p.Y.SMALL,
         remainingCount: s,
         onClick: u,
         renderItemPreview: a
@@ -89,7 +89,7 @@ function T(e) {
             innerRef: c,
             onClick: u,
             className: n()(w.Nr, w.xJ, {
-                [w.IU]: r === _.Y.SMALL
+                [w.IU]: r === p.Y.SMALL
             }),
             children: (0, i.jsxs)("div", {
                 className: n()(w.ho, w.jP),
@@ -116,7 +116,7 @@ function O(e) {
         giftingOrigin: n = R.vQ.USER_PROFILE_WISHLIST,
         heartColor: k = "red",
         onWishlistItemClick: C,
-        cardSize: P = _.Y.MEDIUM,
+        cardSize: P = p.Y.MEDIUM,
         analyticsLocations: T,
         isDragging: O = !1,
         ...Y
@@ -158,10 +158,10 @@ function O(e) {
             giftRecipient: t,
             variantsReturnStyle: a.g.VARIANTS_GROUP
         })
-    }, [H.pathname, N.skuId, y, b, G, t, n, C]), q = P === _.Y.MEDIUM_SQUARE, V = l.useCallback(() => {
+    }, [H.pathname, N.skuId, y, b, G, t, n, C]), q = P === p.Y.MEDIUM_SQUARE, V = l.useCallback(() => {
         if (!r || Q && !q) return null;
         if (s === x.uS.WISHLIST) {
-            let e = "white" === k ? w.aP : w.Be;
+            let e = "white" === k ? w.e_ : w.Be;
             return (0, i.jsx)("div", {
                 className: w.Fx,
                 children: (0, i.jsx)(o.C3E, {
@@ -197,14 +197,14 @@ function O(e) {
                 })
             })
         }
-        return (0, i.jsx)(p.A, {
+        return (0, i.jsx)(_.A, {
             item: N,
             profileOwner: t,
             isHighlighted: F && !O,
             cardSize: P
         })
     }, [Q, N, t, F, P, O]);
-    return (0, i.jsx)(_.A, {
+    return (0, i.jsx)(p.A, {
         ...Y,
         cardRef: D,
         accessibleLabel: Z,
