@@ -1,19 +1,19 @@
 /** chunk id: 748959, original params: e,l,t (module,exports,require) **/
 t.d(l, {
-    I: () => o
+    I: () => d
 });
 var n = t(627968),
     s = t(64700),
     i = t(397927),
     a = t(439303),
     r = t(183802),
-    d = t(963879);
+    o = t(963879);
 
-function o(e) {
+function d(e) {
     let {
         leaderboard: l,
         skuId: t,
-        applicationId: o,
+        applicationId: d,
         guildId: c,
         analyticsLocations: u,
         analyticsSectionId: _
@@ -23,9 +23,9 @@ function o(e) {
     return null == l ? null : (0, n.jsx)(a.E9, {
         newValue: g,
         children: (0, n.jsxs)("div", {
-            className: d.kL,
+            className: o.kL,
             children: [(0, n.jsxs)("div", {
-                className: d.FS,
+                className: o.FS,
                 children: [(0, n.jsx)(i.Heading, {
                     variant: "display-lg",
                     color: "text-strong",
@@ -36,10 +36,10 @@ function o(e) {
                     children: l.description
                 })]
             }), null != t && (0, n.jsx)("div", {
-                className: d.Ui,
+                className: o.Ui,
                 children: (0, n.jsx)(r.A, {
                     positionInSection: 0,
-                    applicationId: o,
+                    applicationId: d,
                     skuId: t,
                     variant: r.s.MEDIUM,
                     guildId: c,

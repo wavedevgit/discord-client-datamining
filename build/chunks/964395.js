@@ -7,8 +7,8 @@ var n = t(627968),
     i = t(503698),
     a = t.n(i),
     r = t(158954),
-    d = t(311907),
-    o = t(736653),
+    o = t(311907),
+    d = t(736653),
     c = t(793574),
     u = t(688810),
     _ = t(742589),
@@ -16,8 +16,8 @@ var n = t(627968),
     p = t(287809),
     I = t(954571),
     x = t(975571),
-    A = t(371794),
-    f = t(439303),
+    f = t(371794),
+    A = t(439303),
     h = t(44724),
     m = t(995393),
     E = t(652215),
@@ -45,7 +45,7 @@ function R(e) {
         guildId: l,
         storefront: t,
         selectedPageIndex: i
-    } = e, R = (0, r.Mwr)((0, o.Ay)()), N = (0, d.bG)([p.default], () => p.default.getCurrentUser()), v = (0, f.jM)(), {
+    } = e, R = (0, r.Mwr)((0, d.Ay)()), N = (0, o.bG)([p.default], () => p.default.getCurrentUser()), v = (0, A.jM)(), {
         analyticsLocations: C
     } = (0, u.Ay)(), L = s.useCallback(() => {
         N?.id != null && (0, g.openUserProfileModal)({
@@ -62,8 +62,8 @@ function R(e) {
         }), window.open(x.A.getArticleURL(E.MVz.SOCIAL_LAYER_STOREFRONT))
     }, [v, C]);
     if (null == t) return null;
-    let T = null != t.logoAssetId ? (0, A.YE)(t.applicationId, t.logoAssetId, 75) : null,
-        y = null != t.lightThemeLogoAssetId ? (0, A.YE)(t.applicationId, t.lightThemeLogoAssetId, 75) : null,
+    let T = null != t.logoAssetId ? (0, f.YE)(t.applicationId, t.logoAssetId, 75) : null,
+        y = null != t.lightThemeLogoAssetId ? (0, f.YE)(t.applicationId, t.lightThemeLogoAssetId, 75) : null,
         O = null;
     return O = R ? T ?? y : y ?? T, (0, n.jsxs)(_.A, {
         disableDoubleClick: !0,

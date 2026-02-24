@@ -14,7 +14,7 @@ var n = i(934551),
     T = i(623049),
     S = i(43119),
     E = i(661485),
-    g = i(227373),
+    g = i(411669),
     _ = i(581837),
     c = i(666196),
     I = i(654757),
@@ -34,7 +34,7 @@ let D = (0, l.t_)(r.X.ACCESSIBILITY_PANEL, {
     }),
     m = (0, l.t_)(r.X.ACCESSIBILITY_PANEL, {
         useTitle: () => b.intl.string(b.t.G0neg7),
-        buildLayout: () => [N.U, O.P, g.c, I.T, S.X],
+        buildLayout: () => [N.U, O.P, g.l, I.T, S.X],
         decoration: {
             type: s.t9.STRONGLY_DISCOURAGED_CUSTOM,
             component: o.A,

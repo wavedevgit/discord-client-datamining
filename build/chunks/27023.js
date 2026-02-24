@@ -24,7 +24,7 @@ var a = n(627968),
 let [A, h] = (0, c.A)();
 
 function S(e) {
-    return e?.plans[Math.floor((e?.plans.length - 1) / 2)]?.id
+    return e?.plans[Math.ceil((e?.plans.length - 1) / 2)]?.id
 }
 
 function N(e) {
