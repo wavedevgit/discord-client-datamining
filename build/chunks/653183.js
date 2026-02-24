@@ -33,7 +33,7 @@ function b(e) {
         fractionalState: U
     } = (0, l.A)({
         forceFetch: !0
-    }), k = j?.isPremiumGroupMember(), V = t?.isPausedOrPausePending === !0 && U === f.xc.NONE, H = t?.isPausedOrPausePending !== !0 && U === f.xc.NONE && !k, w = v && U === f.xc.FP_SUB_PAUSED, B = U === f.xc.NONE && !k;
+    }), k = j?.isPremiumGroupMember(), V = t?.isPausedOrPausePending === !0 && U === f.xc.NONE, w = t?.isPausedOrPausePending !== !0 && U === f.xc.NONE && !k, H = v && U === f.xc.FP_SUB_PAUSED, B = U === f.xc.NONE && !k;
     return (0, i.jsxs)("div", {
         className: N.GO,
         children: [(0, i.jsx)(r.kb, {
@@ -41,11 +41,11 @@ function b(e) {
         }), (0, i.jsx)(E.A, {
             hasGuildBoostSlots: P,
             hasAppliedGuildBoosts: D,
-            hasBoostPerk: w,
-            canAddBoosts: H
+            hasBoostPerk: H,
+            canAddBoosts: w
         }), B && (0, i.jsx)(S.A, {
             hasAppliedGuildBoosts: D,
-            hasBoostPerk: w,
+            hasBoostPerk: H,
             hasGuildAffinitiesOrInGuild: y,
             subscriptionIsPausedOrPausePending: V
         }), k && (0, i.jsx)(u.A, {}), !y && (0, i.jsx)(C.A, {}), t?.isPaused && U !== f.xc.FP_SUB_PAUSED ? (0, i.jsx)(p.N, {
@@ -58,7 +58,7 @@ function b(e) {
             guildBoostSlots: b,
             fractionalPremiumState: U
         }), (0, i.jsx)(T.A, {
-            canAddBoosts: D && H,
+            canAddBoosts: D && w,
             canApplyBoosts: G
         }), (0, i.jsx)(d.A, {
             className: N.e4,

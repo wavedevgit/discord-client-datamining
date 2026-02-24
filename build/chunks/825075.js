@@ -39,7 +39,7 @@ let R = s.forwardRef((e, t) => {
         videoRef: P
     } = e, {
         analyticsLocations: L
-    } = (0, _.Ay)(u.A.PREMIUM_MARKETING_HERO_CTA), D = (0, x.QQ)(), G = (0, h.ar)(), M = (0, r.bG)([g.A], () => g.A.affinities), U = (0, p.A)(), k = null != U, V = R ? o.XD.WHITE : o.XD.BRAND, H = M.length > 0, w = N.intl.string(N.t.YCZldK), B = (0, A.TM)(), Y = (0, r.bG)([d.A], () => d.A.useReducedMotion);
+    } = (0, _.Ay)(u.A.PREMIUM_MARKETING_HERO_CTA), D = (0, x.QQ)(), G = (0, h.ar)(), M = (0, r.bG)([g.A], () => g.A.affinities), U = (0, p.A)(), k = null != U, V = R ? o.XD.WHITE : o.XD.BRAND, w = M.length > 0, H = N.intl.string(N.t.YCZldK), B = (0, A.TM)(), Y = (0, r.bG)([d.A], () => d.A.useReducedMotion);
     return (0, i.jsx)(_.f5, {
         value: L,
         children: (0, i.jsxs)("div", {
@@ -54,10 +54,10 @@ let R = s.forwardRef((e, t) => {
                         className: b.WT,
                         variant: "display-sm",
                         color: "text-strong",
-                        children: w
+                        children: H
                     }), k ? (0, i.jsx)(T.A, {
                         referrer: U
-                    }) : H && (0, i.jsx)("div", {
+                    }) : w && (0, i.jsx)("div", {
                         className: b.kb,
                         children: (0, i.jsx)(C.A, {
                             textColor: "text-default",
@@ -66,7 +66,7 @@ let R = s.forwardRef((e, t) => {
                         })
                     }), D ? (0, i.jsx)("div", {
                         className: l()(b.UD, b.$F, {
-                            [b.In]: !(H || k)
+                            [b.In]: !(w || k)
                         }),
                         children: (0, i.jsx)(E.A, {
                             className: l()(b.x6, s),
@@ -76,7 +76,7 @@ let R = s.forwardRef((e, t) => {
                         subscriptionTier: a,
                         inOfferExperience: G,
                         containerClassName: l()(b.$F, {
-                            [b.In]: !(H || k)
+                            [b.In]: !(w || k)
                         }),
                         buttonClassName: s,
                         isApplicationHome: !0,

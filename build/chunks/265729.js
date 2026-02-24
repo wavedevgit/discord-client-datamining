@@ -139,12 +139,12 @@ let M = function(e) {
         claimedEndedOutboundPromotions: U,
         claimedOutboundPromotionCodeMap: k,
         addClaimedOutboundPromotionCode: V
-    } = (0, p.y7)(), H = M.length + U.length > 0, w = g.m.useExperiment({
+    } = (0, p.y7)(), w = M.length + U.length > 0, H = g.m.useExperiment({
         location: "EntitlementGifts"
     }, {
         autoTrackExposure: !1,
         disable: m
-    }).enabled && H;
+    }).enabled && w;
     return h && E ? (0, i.jsxs)(i.Fragment, {
         children: [function() {
             let e = r.find(e => e.giftCodeBatchId === P.FB && !e.consumed),
@@ -157,9 +157,9 @@ let M = function(e) {
                 }),
                 c = (0, i.jsx)(d.Heading, {
                     variant: "heading-md/semibold",
-                    children: H ? L.intl.string(L.t.wFsj3B) : void 0
+                    children: w ? L.intl.string(L.t.wFsj3B) : void 0
                 }),
-                u = w ? (0, i.jsxs)("div", {
+                u = H ? (0, i.jsxs)("div", {
                     className: D.uo,
                     children: [(0, i.jsx)(d.tvc, {
                         size: "md",
@@ -184,16 +184,16 @@ let M = function(e) {
                 }) : null;
             return (0, i.jsxs)("div", {
                 className: t ? D.sW : void 0,
-                children: [c, H ? (0, i.jsx)(d.cGx, {
+                children: [c, w ? (0, i.jsx)(d.cGx, {
                     className: D.yF
                 }) : null, (0, i.jsx)(T.A, {
                     className: D.Yj,
-                    isShown: w,
+                    isShown: H,
                     type: T.i.PREMIUM,
                     hasBackground: !0,
                     children: (0, i.jsxs)("div", {
                         className: l()({
-                            [D.sW]: !w
+                            [D.sW]: !H
                         }),
                         children: [u, U.map(e => {
                             let {

@@ -53,11 +53,11 @@ function U() {
             ...N.A.getPendingChanges(),
             showNotice: N.A.showNotice()
         })),
-        H = (0, f.V7)({
+        w = (0, f.V7)({
             userId: e.id,
             image: a
         }),
-        w = (0, C.lw)({
+        H = (0, C.lw)({
             pendingValue: U,
             userValue: e?.collectibles?.nameplate
         }),
@@ -80,13 +80,13 @@ function U() {
                 onUpsellClick: P.A,
                 pendingBio: B,
                 ...V,
-                pendingAvatar: H
+                pendingAvatar: w
             }),
             nameplatePreview: (0, i.jsx)(x.A, {
                 user: e,
-                nameplate: w,
+                nameplate: H,
                 ...V,
-                className: null == w ? M.tJ : void 0,
+                className: null == H ? M.tJ : void 0,
                 isHighlighted: !0
             }),
             children: (0, i.jsx)(L.A, {})

@@ -40,11 +40,11 @@ function O(e) {
         disabled: P = !1
     } = e, L = (0, c.bG)([p.A], () => p.A.hidePersonalInformation), [D, G] = (0, c.yK)([E.A], () => [E.A.paymentSources, E.A.hasFetchedPaymentSources]), M = (0, x.Y)((0, I.MP)(t)), {
         analyticsLocations: U
-    } = (0, h.Ay)(), k = s.useMemo(() => Object.values(D).filter(e => !e.invalid), [D]), [V, H] = s.useState(!1), [w, B] = s.useState(t.currency), Y = async (e, n, i) => {
+    } = (0, h.Ay)(), k = s.useMemo(() => Object.values(D).filter(e => !e.invalid), [D]), [V, w] = s.useState(!1), [H, B] = s.useState(t.currency), Y = async (e, n, i) => {
         if (null == t) throw Error("missing subscription and paymentSource");
-        null == e ? await _.r6(t, n, i, U, O) : await _.uK(t, e, n, i, U, O), H(!1), B(n)
+        null == e ? await _.r6(t, n, i, U, O) : await _.uK(t, e, n, i, U, O), w(!1), B(n)
     }, F = async (e, n, i) => {
-        H(!0);
+        w(!0);
         let s = await (0, f.OQ)({
                 subscriptionId: t.id,
                 paymentSourceId: e?.id,
@@ -60,7 +60,7 @@ function O(e) {
         y.currency !== s.currency || y.currency === s.currency && y.total !== s.total ? await R(s, () => {
             i(e, n, a)
         }, () => {
-            H(!1)
+            w(!1)
         }) : i(e, n, a)
     }, z = e => {
         let n = C.A.get(t.planIdForCurrencies);
@@ -130,7 +130,7 @@ function O(e) {
                     className: l()(j.Gl, v.Uu, v.Hu),
                     children: (0, i.jsx)(A.A, {
                         label: b.intl.string(b.t["0YjaXf"]),
-                        selectedCurrency: w,
+                        selectedCurrency: H,
                         currencies: s,
                         onChange: e => {
                             F(void 0, e, Y)

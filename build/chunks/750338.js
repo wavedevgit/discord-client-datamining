@@ -56,9 +56,9 @@ let p = e => {
             _.default.track(g.HAw.PREMIUM_WHATS_NEW_BOX_CTA_CLICKED, {
                 box_type: (0, r.snakeCase)(t)
             })
-        }, 800), [t]), H = () => {
+        }, 800), [t]), w = () => {
             null == L.current || N || (L.current.currentTime = D.current, L.current.play())
-        }, w = () => {
+        }, H = () => {
             null == L.current || N || (D.current = L.current.currentTime, L.current.pause())
         }, B = O === A.A0.LARGE ? "heading-xxl/bold" : "heading-xl/bold", Y = () => (0, i.jsxs)("div", {
             className: l()(x.textBox, x[`${O}`], U && x.overlayTextBox),
@@ -118,10 +118,10 @@ let p = e => {
         return (0, i.jsxs)(c.hLv, {
             id: t,
             className: l()(x.backgroundColor, x.boxContainer, x[`${O}`], x.gradientBackground, M && x.overlayImageMode, U && x.overlayMode),
-            onMouseEnter: H,
-            onFocus: H,
-            onBlur: w,
-            onMouseLeave: w,
+            onMouseEnter: w,
+            onFocus: w,
+            onBlur: H,
+            onMouseLeave: H,
             color: "purple",
             children: [k && (0, i.jsx)("div", {
                 className: x.backgroundVideoContainer,

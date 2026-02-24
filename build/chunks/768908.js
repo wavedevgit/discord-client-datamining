@@ -2,8 +2,8 @@
 n.d(t, {
     Ay: () => Y,
     T: () => B,
-    Wx: () => w,
-    cH: () => H
+    Wx: () => H,
+    cH: () => w
 }), n(321073);
 var i = n(627968),
     s = n(64700),
@@ -95,7 +95,7 @@ function M(e) {
         isCurrentGameDetectionEnabled: A.Ay.isDetectionEnabled(f)
     })), P = (0, r.bG)([A.Ay], () => A.Ay.getVisibleGame()), [L, G] = s.useState(!1), U = s.useMemo(() => (0, p.n1)(f) ? S ? f.gameName : v.intl.formatToPlainString(v.t.G6BGdx, {
         subgameName: f.gameName
-    }) : f.name, [f, S]), [k, V] = s.useState(U ?? "???"), H = l()(y.tR, {
+    }) : f.name, [f, S]), [k, V] = s.useState(U ?? "???"), w = l()(y.tR, {
         [O.LO]: !a,
         [O.Rw]: a,
         [O.FB]: null != f && a,
@@ -103,7 +103,7 @@ function M(e) {
         [O.fG]: null != x && x.length > 0
     });
 
-    function w() {
+    function H() {
         null != x && x.length > 0 && R ? (0, d.mMO)(async () => {
             let {
                 Modal: e
@@ -134,7 +134,7 @@ function M(e) {
         Y = null != I && I.id === P?.id || B || null != x && x.some(e => e.id === P?.id);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)("div", {
-            className: H,
+            className: w,
             children: [(0, i.jsxs)("div", {
                 className: l()(O.$K, y.Vd),
                 children: [f.verified && !g ? (0, i.jsxs)("div", {
@@ -240,7 +240,7 @@ function M(e) {
                         children: N ? (0, i.jsx)(d.DUT, {
                             "aria-label": v.intl.string(v.t.QmitzM),
                             className: O.ym,
-                            onClick: w,
+                            onClick: H,
                             children: t
                         }) : t
                     })
@@ -339,7 +339,7 @@ let V = (0, S.L_)(function() {
         for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
         return new Set(t.map(e => e.exePath))
     }),
-    H = () => {
+    w = () => {
         let e = (0, r.yK)([A.Ay], () => A.Ay.getGamesSeen(!1)),
             {
                 runningGame: t,
@@ -357,7 +357,7 @@ let V = (0, S.L_)(function() {
             subgames: t.id === x.a7 ? a : void 0
         }, (0, A.Es)(t)) : (0, i.jsx)(U, {})
     },
-    w = () => {
+    H = () => {
         let e = s.useRef(null);
         return (0, i.jsxs)("div", {
             className: l()(O.ax, P.Gf),
@@ -423,7 +423,7 @@ let V = (0, S.L_)(function() {
         return (0, i.jsxs)(N.A, {
             title: n ? v.intl.string(v.t.AVDyEj) : null,
             className: t,
-            children: [(0, i.jsx)(H, {}), (0, i.jsx)(w, {}), (0, i.jsx)(d.cGx, {
+            children: [(0, i.jsx)(w, {}), (0, i.jsx)(H, {}), (0, i.jsx)(d.cGx, {
                 gap: 20
             }), (0, i.jsx)(B, {})]
         })

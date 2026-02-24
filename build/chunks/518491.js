@@ -40,8 +40,8 @@ var s = n(503698),
     U = n(473702),
     k = n(505559),
     V = n(722274),
-    H = n(103733),
-    w = n(229289),
+    w = n(103733),
+    H = n(229289),
     B = n(253558),
     Y = n(788868),
     F = n(652215),
@@ -96,7 +96,7 @@ let X = (e, t, s) => {
             {
                 visibilityPercentageRef: ee,
                 visibilityPercentage: et
-            } = (0, H.U)(!$);
+            } = (0, w.U)(!$);
         return (0, i.jsx)("div", {
             className: a()(K.kL, t),
             "data-testid": "subscriber-nitro-home-hero-header",
@@ -106,7 +106,7 @@ let X = (e, t, s) => {
                 ref: ee,
                 children: [x && A, (0, i.jsxs)("div", {
                     className: K.N1,
-                    children: [(0, i.jsx)(w.A, {
+                    children: [(0, i.jsx)(H.A, {
                         containerVisibilityPercentage: et
                     }), M && null != p.expires_at && (0, i.jsx)(G.A, {
                         expiresAt: p.expires_at,

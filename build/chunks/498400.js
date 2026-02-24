@@ -48,14 +48,14 @@ let U = function(e) {
         } = (0, g.Ay)(A.A.PREMIUM_MARKETING),
         k = (0, r.bG)([f.A], () => f.A.hasFetchedSubscriptions()),
         V = (0, r.bG)([I.A], () => I.A.hasFetchedPaymentSources),
-        H = (0, r.bG)([S.default], () => S.default.getCurrentUser()),
-        w = H?.id,
+        w = (0, r.bG)([S.default], () => S.default.getCurrentUser()),
+        H = w?.id,
         B = (0, P.V)(),
         Y = (0, y.O)(),
         F = (0, x.Y)(D.T7),
         [z, W] = s.useState(!0),
         K = s.useRef(0),
-        Z = (0, b.YE)(H, D.PremiumTypes.TIER_2),
+        Z = (0, b.YE)(w, D.PremiumTypes.TIER_2),
         q = (0, O.A)({
             location: "PremiumHomePage"
         }),
@@ -80,7 +80,7 @@ let U = function(e) {
         $ = Q ? (0, i.jsx)(_.A, {}) : n ? (0, i.jsx)(p.uK, {}) : J && Z ? (0, i.jsx)(g.f5, {
             value: U,
             children: (0, i.jsx)(R.A, {
-                userId: w
+                userId: H
             })
         }) : k && F && V ? null : (0, i.jsx)("div", {
             className: l()(M.kL, M.Lq),

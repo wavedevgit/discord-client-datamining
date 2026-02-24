@@ -1,6 +1,6 @@
 /** chunk id: 454292, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => H
+    A: () => w
 });
 var i = n(627968),
     s = n(64700),
@@ -422,7 +422,7 @@ function k(e) {
 }
 let V = e => 0 === e ? u.f.LEFT : u.f.RIGHT;
 
-function H() {
+function w() {
     let [e, t] = s.useState(0), [n, a] = s.useState(V(e)), [r, o] = s.useState(!1), _ = (0, l.bG)([d.A], () => d.A.useReducedMotion), m = r && !_;
     return s.useEffect(() => {
         let t = setTimeout(() => {

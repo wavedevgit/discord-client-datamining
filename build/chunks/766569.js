@@ -60,10 +60,10 @@ function L(e) {
         pendingAvatar: U,
         pendingNameplate: k,
         ...V
-    } = (0, r.cf)([p.A], () => p.A.getPendingChanges(t?.id)), H = (0, x.V7)({
+    } = (0, r.cf)([p.A], () => p.A.getPendingChanges(t?.id)), w = (0, x.V7)({
         userId: L.id,
         image: U
-    }), w = (0, A.lw)({
+    }), H = (0, A.lw)({
         pendingValue: k,
         userValue: L?.collectibles?.nameplate,
         guildValue: D?.collectibles?.nameplate,
@@ -92,7 +92,7 @@ function L(e) {
                 }),
                 profilePreview: (0, i.jsx)(h.A, {
                     ...V,
-                    pendingAvatar: H,
+                    pendingAvatar: w,
                     pendingDisplayNameStyles: B,
                     user: L,
                     guild: t,
@@ -104,8 +104,8 @@ function L(e) {
                     pendingDisplayNameStyles: B,
                     user: L,
                     guildId: t?.id,
-                    nameplate: w,
-                    className: null == w ? y.t : void 0,
+                    nameplate: H,
+                    className: null == H ? y.t : void 0,
                     isHighlighted: !0
                 }),
                 children: (0, i.jsx)(j.A, {})

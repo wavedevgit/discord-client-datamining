@@ -51,21 +51,21 @@ function M() {
         pendingBanner: U,
         pendingBio: k,
         pendingPronouns: V,
-        pendingThemeColors: H,
-        errors: w
+        pendingThemeColors: w,
+        errors: H
     } = (0, l.cf)([S.A], () => ({
         ...S.A.getPendingChanges(n.id),
         errors: S.A.getErrors(n.id)
     })), B = (0, T.V7)({
         userId: e.id,
         image: s
-    }), Y = (0, c.EC)(n.id), F = (0, l.bG)([f.Ay], () => null == n.id ? null : f.Ay.getMember(n.id, e.id)), z = (0, l.bG)([I.A], () => I.A.getGuildMemberProfile(e.id, n.id)), W = j.Ay.canUsePremiumProfileCustomization(e), K = (0, u.z5)(s, F?.avatar), Z = (0, u.Ac)(U, z?.banner), q = (0, R.lS)(H, z?.themeColors), X = z?.bio ?? "", Q = z?.pronouns ?? "", J = (e, t, n) => {
+    }), Y = (0, c.EC)(n.id), F = (0, l.bG)([f.Ay], () => null == n.id ? null : f.Ay.getMember(n.id, e.id)), z = (0, l.bG)([I.A], () => I.A.getGuildMemberProfile(e.id, n.id)), W = j.Ay.canUsePremiumProfileCustomization(e), K = (0, u.z5)(s, F?.avatar), Z = (0, u.Ac)(U, z?.banner), q = (0, R.lS)(w, z?.themeColors), X = z?.bio ?? "", Q = z?.pronouns ?? "", J = (e, t, n) => {
         n(e ?? (null != t ? null : void 0))
     };
     return (0, i.jsxs)("div", {
         className: G.Q,
         children: [(0, i.jsx)(y.A, {
-            errors: w?.nick ?? Y?.nick,
+            errors: H?.nick ?? Y?.nick,
             username: v.Ay.getName(e),
             pendingNick: M,
             currentNick: F?.nick,
@@ -73,7 +73,7 @@ function M() {
             guild: n
         }, "nick"), (0, i.jsx)(C.A, {
             sectionTitle: D.intl.string(D.t["+T3RI/"]),
-            errors: w?.pronouns,
+            errors: H?.pronouns,
             onPronounsChange: e => {
                 (0, R.d7)(e, Q)
             },
@@ -95,7 +95,7 @@ function M() {
                 }),
                 showRemoveAvatarButton: K,
                 onAvatarChange: e => J(e, F?.avatar, O.zq),
-                errors: w?.avatar,
+                errors: H?.avatar,
                 guildId: n.id,
                 disabled: !W
             }, "avatar"), (0, i.jsx)(m.A, {
@@ -140,14 +140,14 @@ function M() {
                 guild: n
             }, "effect"), (0, i.jsx)(x.A, {
                 showRemoveBannerButton: Z,
-                errors: w?.banner,
+                errors: H?.banner,
                 onBannerChange: e => J(e, z?.banner, O.Iz),
                 guildId: n?.id,
                 disabled: !W
             }, "banner"), (0, i.jsx)(E.A, {
                 user: e,
                 pendingAvatarSrc: B,
-                pendingColors: H,
+                pendingColors: w,
                 onThemeColorsChange: e => {
                     (0, R.wx)(e, z?.themeColors)
                 },
@@ -166,7 +166,7 @@ function M() {
                     })]
                 }),
                 onBioChange: e => (0, R.Rn)(e, X),
-                errors: w?.bio ?? Y?.bio,
+                errors: H?.bio ?? Y?.bio,
                 pendingBio: k,
                 currentBio: X,
                 disabled: !W

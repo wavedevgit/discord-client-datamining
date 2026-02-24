@@ -147,10 +147,10 @@ let y = function(e) {
             }
         }, [c]),
         V = null != A ? C.Ay.getNumIncludedPremiumGuildSubscriptionSlots(A.planId) : 0,
-        H = Math.max(0, V - D.length),
-        w = M > V,
+        w = Math.max(0, V - D.length),
+        H = M > V,
         B = V === c.length,
-        Y = B ? H : 1,
+        Y = B ? w : 1,
         F = s.useMemo(() => {
             let e = [];
             for (let t = 0; t < Y; t++) e.push((0, i.jsx)(T.A, {
@@ -233,7 +233,7 @@ let y = function(e) {
                 className: j.LU,
                 children: G.map(e => (0, i.jsx)(v, {
                     guildBoostSlot: e,
-                    isCancellable: w,
+                    isCancellable: H,
                     onCancel: O,
                     onUncancel: R,
                     premiumSubscription: A,
