@@ -34,7 +34,7 @@ jobs:
               run: export IS_DEVPORTAL=true
 
             - name: Run script
-              run: npm run build && npm run start
+              run: rm -rf build/chunks && mkdir -p build/chunks && npm run build && npm run start
 
             - name: Set git identity
               run: |
