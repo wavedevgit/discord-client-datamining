@@ -7,8 +7,8 @@ var n = t(627968),
     i = t(503698),
     a = t.n(i),
     r = t(835245),
-    d = t(311907),
-    o = t(397927),
+    o = t(311907),
+    d = t(397927),
     c = t(444927),
     u = t(793574),
     _ = t(688810),
@@ -16,8 +16,8 @@ var n = t(627968),
     p = t(594832),
     I = t(961350),
     x = t(696451),
-    A = t(71393),
-    f = t(67480),
+    f = t(71393),
+    A = t(67480),
     h = t(449054),
     m = t(733391),
     E = t(439303),
@@ -35,19 +35,19 @@ function C(e) {
         guildId: t,
         selectedPageIndex: i,
         selectedSku: a
-    } = e, r = (0, E.jM)(), d = s.useRef(r);
+    } = e, r = (0, E.jM)(), o = s.useRef(r);
     s.useEffect(() => {
-        d.current = r
+        o.current = r
     }, [r]);
-    let o = a?.id;
+    let d = a?.id;
     return s.useEffect(() => {
-        if (null != o) return (0, k.R)({
-            skuId: o,
+        if (null != d) return (0, k.R)({
+            skuId: d,
             applicationId: l.applicationId,
             guildId: t,
             isStorefront: !0,
             analyticsLocations: [u.A.SOCIAL_LAYER_STOREFRONT],
-            analyticsContext: d.current,
+            analyticsContext: o.current,
             onClose: () => {
                 (0, g.JK)().location.pathname.indexOf(N.BVt.CHANNELS_GAME_SHOP(t, i)) >= 0 && (0, j.A)({
                     guildId: t,
@@ -57,7 +57,7 @@ function C(e) {
         }), () => {
             (0, k.j)()
         }
-    }, [t, i, o, l.applicationId]), (0, n.jsxs)("div", {
+    }, [t, i, d, l.applicationId]), (0, n.jsxs)("div", {
         className: v.k,
         children: [(0, n.jsx)(b.A, {
             guildId: t,
@@ -83,10 +83,10 @@ function L(e) {
     } = (0, _.Ay)(u.A.SOCIAL_LAYER_STOREFRONT), k = (0, S.A)({
         guildId: t,
         location: "Social Layer Storefront"
-    }), b = (0, d.bG)([I.default], () => I.default.getSessionId(), []), R = (0, d.bG)([f.A], () => f.A.get(g), [g]);
+    }), b = (0, o.bG)([I.default], () => I.default.getSessionId(), []), R = (0, o.bG)([A.A], () => A.A.get(g), [g]);
     (0, p.pE)();
     let N = (0, c.A)((0, r.A)()),
-        L = (0, d.bG)([x.Ay, I.default], () => x.Ay.isMember(t, I.default.getId())),
+        L = (0, o.bG)([x.Ay, I.default], () => x.Ay.isMember(t, I.default.getId())),
         M = s.useMemo(() => {
             if (null == i) return 0;
             let e = parseInt(i, 10);
@@ -105,12 +105,12 @@ function L(e) {
     return (s.useEffect(() => {
         null != t && (0, m.SP)(t, M, null != g ? g : null)
     }, [t, M, g]), s.useEffect(() => {
-        null == t || null == b || null == A.A.getGuild(t) && (0, h.Z2)(t, {}, {
+        null == t || null == b || null == f.A.getGuild(t) && (0, h.Z2)(t, {}, {
             shouldNavigate: !1
         })
     }, [t, b]), null == t || k?.storefront == null) ? (0, n.jsx)("div", {
         className: a()(v.u, v.k),
-        children: (0, n.jsx)(o.y$y, {})
+        children: (0, n.jsx)(d.y$y, {})
     }) : (0, n.jsx)(_.f5, {
         value: j,
         children: (0, n.jsx)(E.E9, {

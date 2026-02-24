@@ -1,6 +1,6 @@
 /** chunk id: 205830, original params: e,l,t (module,exports,require) **/
 t.d(l, {
-    $: () => d
+    $: () => o
 });
 var n = t(627968);
 t(64700);
@@ -9,13 +9,13 @@ var s = t(503698),
     a = t(183802),
     r = t(660592);
 
-function d(e) {
+function o(e) {
     let {
         applicationId: l,
         skuIds: t,
         variant: s = a.s.SMALL,
-        guildId: d,
-        analyticsLocations: o
+        guildId: o,
+        analyticsLocations: d
     } = e;
     return null == t || 0 === t.length ? null : (0, n.jsx)("div", {
         className: i()(r.kL, r.$2, {
@@ -26,8 +26,8 @@ function d(e) {
             applicationId: l,
             skuId: e,
             variant: s,
-            guildId: d,
-            analyticsLocations: o
+            guildId: o,
+            analyticsLocations: d
         }, `${e}-${t}`))
     })
 }
