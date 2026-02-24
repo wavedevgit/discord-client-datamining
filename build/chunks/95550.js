@@ -189,12 +189,8 @@ class eo extends l.PureComponent {
             channel: e
         } = this.props;
         if (null == e || !e.isMultiUserDM() || this.isPartyFull()) return;
-        let {
-            inviteMaxAgeSeconds: t
-        } = X.A.getCurrentConfig({
+        let t = (0, X.i)({
             location: "5326c5_1"
-        }, {
-            autoTrackExposure: !1
         });
         p.Ay.createInvite(e.id, {
             max_age: t
