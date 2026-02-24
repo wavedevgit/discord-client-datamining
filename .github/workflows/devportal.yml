@@ -30,12 +30,11 @@ jobs:
             - name: Install npm dependencies
               run: npm install
 
-            - name: Set IS_DEVPORTAL to true
-              run: export IS_DEVPORTAL=true
 
             - name: Run script
               run: rm -rf build/chunks && mkdir -p build/chunks && npm run scrape
-
+              env:
+                IS_DEVPORTAL: true
             - name: Set git identity
               run: |
                   git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
