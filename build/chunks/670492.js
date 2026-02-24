@@ -1,22 +1,22 @@
-/** chunk id: 670492, original params: e,t,r (module,exports,require) **/
+/** chunk id: 670492, original params: e,t,s (module,exports,require) **/
 "use strict";
-r.d(t, {
-    A: () => _
+s.d(t, {
+    A: () => u
 });
-var s = r(735438),
-    n = r.n(s),
-    o = r(247775),
-    i = r(311907),
-    a = r(73153);
+var r = s(735438),
+    n = s.n(r),
+    i = s(247775),
+    o = s(311907),
+    a = s(73153);
 let c = !1,
     l = [],
     d = "",
     h = !1,
-    p = {
+    _ = {
         viewNonce: "",
         regenerateNonce: ""
     };
-class u extends i.Ay.Store {
+class p extends o.Ay.Store {
     static displayName = "MFAStore";
     getVerificationKey() {
         return d
@@ -28,25 +28,25 @@ class u extends i.Ay.Store {
         return c
     }
     getNonces() {
-        return p
+        return _
     }
     get hasSeenBackupPrompt() {
         return h
     }
 }
-let _ = new u(a.h, {
+let u = new p(a.h, {
     MFA_ENABLE_SUCCESS: function(e) {
         let {
             token: t,
-            codes: r
+            codes: s
         } = e;
-        void 0 !== t && o.setToken(t), l = r
+        void 0 !== t && i.setToken(t), l = s
     },
     MFA_DISABLE_SUCCESS: function(e) {
         let {
             token: t
         } = e;
-        o.setToken(t)
+        i.setToken(t)
     },
     MFA_SMS_TOGGLE: function() {
         c = !0
@@ -60,15 +60,15 @@ let _ = new u(a.h, {
     MFA_VIEW_BACKUP_CODES: function(e) {
         let {
             codes: t,
-            key: r
+            key: s
         } = e;
-        l = n().sortBy(t, "code"), d = r
+        l = n().sortBy(t, "code"), d = s
     },
     MFA_SEND_VERIFICATION_KEY: function(e) {
         let {
             nonces: t
         } = e;
-        p = t
+        _ = t
     },
     MFA_SEEN_BACKUP_CODE_PROMPT: function() {
         h = !0

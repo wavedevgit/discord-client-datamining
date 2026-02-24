@@ -35,8 +35,8 @@ var i = n(627968),
     O = n(834942),
     L = n(576705),
     P = n(287809),
-    k = n(488926),
-    w = n(137577),
+    w = n(488926),
+    k = n(137577),
     U = n(786051),
     G = n(652215),
     F = n(360469),
@@ -308,13 +308,13 @@ function W(e) {
     } = e, l = t.getGuildId(), s = (0, r.bG)([D.A], () => D.A.getGuild(l)), a = (0, r.bG)([O.A], () => O.A.getCheck(l)), o = t.type === G.rbe.GUILD_ANNOUNCEMENT && null != s && s.features.has(G.GuildFeatures.NEWS), c = (0, r.bG)([R.A], () => o ? R.A.getFollowerStatsForChannel(t.id) : null), d = (0, r.bG)([T.A], () => T.A.isLurking(l)), u = (0, r.bG)([P.default], () => P.default.getCurrentUser()), h = u?.isStaff() ?? !1, m = (0, r.bG)([M.Ay], () => null != u && (M.Ay.getMember(l, u.id)?.isPending ?? !1)), g = !!(0, x.Qd)(s), p = (0, r.bG)([I.A], () => I.A.shouldShowPopout(l)), f = (0, r.bG)([L.A], () => L.A.can(G.xBc.SEND_MESSAGES, t)), _ = (0, r.bG)([C.A], () => C.A.getRequest(l)), {
         showLinkedLobbyApplicationLoadingIndicator: S,
         requiredLinkedLobbyApplication: N
-    } = (0, w.A)(t.linkedLobby), y = {
+    } = (0, k.A)(t.linkedLobby), y = {
         ...a,
         guild: s,
         isLurking: d,
         isFollowable: o,
         shouldShowLurkerModeSuccessPopout: p,
-        showLurkerModeUpsellPopout: d && null != s && k.MJ(G.xBc.SEND_MESSAGES, t),
+        showLurkerModeUpsellPopout: d && null != s && w.MJ(G.xBc.SEND_MESSAGES, t),
         theme: j.A.theme,
         canSendMessages: f,
         channelFollowingUsersSeen: null != c ? c.usersSeenEver : null,

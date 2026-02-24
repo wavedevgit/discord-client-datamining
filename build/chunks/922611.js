@@ -1,19 +1,19 @@
 /** chunk id: 922611, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     c: () => h,
-    g: () => m
+    g: () => g
 });
-var i, s = n(627968),
-    l = n(64700),
-    r = n(311907),
+var i, l = n(627968),
+    r = n(64700),
+    s = n(311907),
     a = n(397927),
     o = n(263063),
-    d = n(290863),
-    u = n(102983),
+    u = n(290863),
+    d = n(102983),
     c = n(912156),
     h = ((i = {})[i.SIZE_24 = 24] = "SIZE_24", i[i.SIZE_40 = 40] = "SIZE_40", i);
 
-function g(e, t) {
+function m(e, t) {
     switch (t) {
         case "user":
         case "groupDm":
@@ -26,45 +26,45 @@ function g(e, t) {
             throw Error(`Unhandled icon type: ${String(t)}`)
     }
 }
-let m = l.memo(function(e) {
+let g = r.memo(function(e) {
     let {
         channel: t,
         user: n,
         guild: i,
-        isSelected: l = !1,
+        isSelected: r = !1,
         size: h = 24,
-        isTyping: m = !1,
+        isTyping: g = !1,
         mentionCount: p = 0,
         isMentionLowImportance: A = !1
-    } = e, x = t?.isPrivate() ?? !1, E = t?.isMultiUserDM() ?? !1, f = n?.id, S = (0, r.bG)([d.A], () => null != f ? d.A.getStatus(f) : null, [f]), I = (0, r.bG)([d.A], () => null != f && d.A.isMobileOnline(f), [f]);
-    if (x || E) return (0, s.jsx)(u.h, {
+    } = e, f = t?.isPrivate() ?? !1, x = t?.isMultiUserDM() ?? !1, E = n?.id, S = (0, s.bG)([u.A], () => null != E ? u.A.getStatus(E) : null, [E]), v = (0, s.bG)([u.A], () => null != E && u.A.isMobileOnline(E), [E]);
+    if (f || x) return (0, l.jsx)(d.h, {
         channel: t ?? null,
         user: n,
         "aria-hidden": !0,
-        size: g(h, "user"),
+        size: m(h, "user"),
         status: S,
-        isMobile: I,
-        isTyping: m,
+        isMobile: v,
+        isTyping: g,
         mentionCount: p,
         isMentionLowImportance: A
     });
-    if (null == i) return (0, s.jsx)(a.oyn, {
-        size: g(h, "default"),
+    if (null == i) return (0, l.jsx)(a.oyn, {
+        size: m(h, "default"),
         color: a.LU0.colors.INTERACTIVE_ICON_DEFAULT
     });
     {
-        if (null == t) return (0, s.jsx)(o.A, {
+        if (null == t) return (0, l.jsx)(o.A, {
             guild: i,
-            size: g(h, "guild"),
+            size: m(h, "guild"),
             active: !0,
             showTooltip: !1
         });
         let e = 40 === h ? c.Q.MEDIUM_40 : c.Q.TINY_24;
-        return (0, s.jsx)(c.A, {
+        return (0, l.jsx)(c.A, {
             channel: t,
             guild: i,
             size: e,
-            isTyping: m
+            isTyping: g
         })
     }
 })

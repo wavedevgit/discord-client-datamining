@@ -4,13 +4,13 @@ r.d(e, {
     q: () => o,
     r: () => i
 });
-var n = r(128377),
-    s = r(978862);
+var s = r(128377),
+    n = r(978862);
 
 function i() {
-    return (0, s.B)("defaultCurrentScope", () => new n.H)
+    return (0, n.B)("defaultCurrentScope", () => new s.H)
 }
 
 function o() {
-    return (0, s.B)("defaultIsolationScope", () => new n.H)
+    return (0, n.B)("defaultIsolationScope", () => new s.H)
 }

@@ -2,20 +2,20 @@
 n.d(e, {
     A: () => c
 });
-var i = n(311907),
-    s = n(73153);
+var s = n(311907),
+    i = n(73153);
 let a = [];
 
 function r() {
     a = []
 }
-class l extends i.Ay.Store {
+class l extends s.Ay.Store {
     static displayName = "AuthSessionsStore";
     getSessions() {
         return a
     }
 }
-let c = new l(s.h, {
+let c = new l(i.h, {
     LOGOUT: r,
     LOGIN_SUCCESS: r,
     FETCH_AUTH_SESSIONS_SUCCESS: function(t) {
@@ -30,12 +30,12 @@ let c = new l(s.h, {
     LOGOUT_AUTH_SESSIONS_SUCCESS: function(t) {
         let {
             sessionIdHashes: e
-        } = t, n = [...a], i = !1;
+        } = t, n = [...a], s = !1;
         for (let t of e) {
             let e = n.findIndex(e => e.id_hash === t);
-            e >= 0 && (n.splice(e, 1), i = !0)
+            e >= 0 && (n.splice(e, 1), s = !0)
         }
-        if (!i) return !1;
+        if (!s) return !1;
         a = n
     }
 })

@@ -8,27 +8,27 @@ var r = s(627968),
     i = s.n(a),
     l = s(492462),
     o = s(607399),
-    h = s(311907),
-    c = s(397927),
+    c = s(311907),
+    h = s(397927),
     d = s(73153),
     u = s(830215),
     p = s(396681),
     m = s(15552),
     C = s(854378),
     A = s(701273),
-    S = s(720353),
-    g = s(976860),
+    g = s(720353),
+    S = s(976860),
     E = s(210714),
     f = s(961350),
-    x = s(203982),
-    w = s(652215),
+    w = s(203982),
+    x = s(652215),
     y = s(985018),
     N = s(473169);
-h.Ay.initialize();
+c.Ay.initialize();
 class j extends n.PureComponent {
     static defaultProps = {
-        transitionTo: g.pX,
-        replaceWith: g.bG
+        transitionTo: S.pX,
+        replaceWith: S.bG
     };
     constructor(e) {
         super(e);
@@ -60,7 +60,7 @@ class j extends n.PureComponent {
         if (e.preventDefault(), 0 === a.length) {
             this.setState({
                 error: y.intl.string(y.t.R98xD5)
-            }), x._.dispatch(w.jej.WAVE_EMPHASIZE);
+            }), w._.dispatch(x.jej.WAVE_EMPHASIZE);
             return
         }
         null != i && this.setState({
@@ -78,16 +78,16 @@ class j extends n.PureComponent {
                     webauthn: n,
                     ticket: i,
                     token: o,
-                    totp: h,
-                    backup: c
+                    totp: c,
+                    backup: h
                 } = await u.A.resetPassword(l, a, r);
                 e === u.W.MFA ? d.h.dispatch({
                     type: "LOGIN_MFA_STEP",
                     ticket: i,
                     sms: t,
                     webauthn: n,
-                    totp: h,
-                    backup: c
+                    totp: c,
+                    backup: h
                 }) : null != s ? s(o) : (d.h.dispatch({
                     type: "LOGIN_SUCCESS",
                     token: o
@@ -148,13 +148,13 @@ class j extends n.PureComponent {
         } = this.props;
         o.v1 || o.Fr ? this.setState({
             success: !0
-        }) : e(w.BVt.APP)
+        }) : e(x.BVt.APP)
     };
     handleGoToLogin = () => {
         let {
             transitionTo: e
         } = this.props;
-        u.A.loginReset(), e(w.BVt.LOGIN, {
+        u.A.loginReset(), e(x.BVt.LOGIN, {
             source: "reset_password"
         })
     };
@@ -207,14 +207,14 @@ class j extends n.PureComponent {
                     type: "password",
                     autoComplete: "new-password",
                     required: !0
-                }), (0, r.jsxs)(c.ButtonGroup, {
+                }), (0, r.jsxs)(h.ButtonGroup, {
                     direction: "vertical",
                     fullWidth: !0,
-                    children: [(0, r.jsx)(c.Button, {
+                    children: [(0, r.jsx)(h.Button, {
                         text: y.intl.string(y.t["FRep5/"]),
                         type: "submit",
                         loading: a
-                    }), n && (0, r.jsx)(c.Button, {
+                    }), n && (0, r.jsx)(h.Button, {
                         text: y.intl.string(y.t["ETE/oC"]),
                         variant: "secondary",
                         onClick: this.handleGoToLogin,
@@ -244,7 +244,7 @@ class j extends n.PureComponent {
             },
             theme: s,
             className: n,
-            children: (0, r.jsx)(S.t, {
+            children: (0, r.jsx)(g.t, {
                 mfaFinish: i,
                 mfaChallenge: {
                     ticket: e,
@@ -274,7 +274,7 @@ class j extends n.PureComponent {
             }), (0, r.jsx)(C.hE, {
                 className: N.C2,
                 children: y.intl.string(y.t.WAUOoK)
-            }), (0, r.jsx)(c.Button, {
+            }), (0, r.jsx)(h.Button, {
                 text: y.intl.string(y.t["uJWIj/"]),
                 fullWidth: !0,
                 onClick: this.handleOpenApp
@@ -286,7 +286,7 @@ class j extends n.PureComponent {
     }
 }
 let k = function(e) {
-    let t = (0, h.cf)([f.default], () => ({
+    let t = (0, c.cf)([f.default], () => ({
         mfaTicket: f.default.getMFATicket(),
         mfaMethods: f.default.getMFAMethods()
     }));

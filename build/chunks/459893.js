@@ -37,9 +37,9 @@ function A(e) {
             location: E,
             redirectTo: x
         } = e,
-        [I, v] = s.useState(n);
+        [I, N] = s.useState(n);
 
-    function N(e) {
+    function v(e) {
         let {
             handoffKey: t,
             handoffToken: n,
@@ -49,7 +49,7 @@ function A(e) {
             handoffKey: t,
             handoffToken: n,
             handoffSource: i
-        }), v(!1)
+        }), N(!1)
     }
     return ((0, d.Ay)(() => {
         if (null != E) {
@@ -60,12 +60,12 @@ function A(e) {
             if (null != e && null != t) {
                 let n = null != x ? (0, c.Q)(x) : void 0;
                 I ? a.A.logout("handoff", null).finally(() => {
-                    N({
+                    v({
                         handoffKey: e,
                         handoffToken: t,
                         handoffSource: n
                     })
-                }) : N({
+                }) : v({
                     handoffKey: e,
                     handoffToken: t,
                     handoffSource: n

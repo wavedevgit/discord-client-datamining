@@ -23,22 +23,22 @@ var i = n(627968),
     E = n(854378),
     x = n(952116),
     I = n(235986),
-    v = n(491509),
-    N = n(895600),
+    N = n(491509),
+    v = n(895600),
     j = n(720353),
     S = n(559568),
     C = n(274303),
-    y = n(13437),
-    T = n(557722),
+    T = n(13437),
+    y = n(557722),
     b = n(148864),
     R = n(146571),
     O = n(976860),
-    w = n(913612),
-    L = n(210714),
+    L = n(913612),
+    w = n(210714),
     k = n(933924),
     D = n(961350),
-    U = n(115036),
-    B = n(650048),
+    B = n(115036),
+    U = n(650048),
     P = n(954571),
     G = n(203982),
     F = n(723702),
@@ -103,7 +103,7 @@ class X extends s.PureComponent {
             location: null != i ? "Invite Login Page" : "Non-Invite Login Page",
             login_source: this.loginSource,
             authenticated: t,
-            ...null != n ? (0, v.A)(n, !1, !1) : {},
+            ...null != n ? (0, N.A)(n, !1, !1) : {},
             source: (0, O.PR)()
         }, {
             flush: !0
@@ -111,7 +111,7 @@ class X extends s.PureComponent {
             abortController: this.state.conditionalMediationAbortController,
             loginSource: this.loginSource,
             giftCodeSKUId: this.giftCodeSKUId
-        }), p.A.getLocationMetadata(), (0, L.d)("login")
+        }), p.A.getLocationMetadata(), (0, w.d)("login")
     }
     componentDidUpdate(e, t) {
         let {
@@ -466,7 +466,7 @@ class X extends s.PureComponent {
             onSubmit: this.handleLogin,
             tag: "form",
             className: l()(this.props.authBoxClassName, q.Sy),
-            children: () => [(0, i.jsx)(N.A, {
+            children: () => [(0, i.jsx)(v.A, {
                 guildTemplate: e
             }, "template"), this.renderDefaultForm(!1)]
         })
@@ -539,7 +539,7 @@ class X extends s.PureComponent {
                 dismissedChooseAccount: !0
             }))
         };
-        return (0, i.jsx)(y.A, {
+        return (0, i.jsx)(T.A, {
             onDismiss: e
         })
     }
@@ -612,7 +612,7 @@ class X extends s.PureComponent {
         try {
             let {
                 token: n
-            } = await T.A.verifyPhone(t, e, !1);
+            } = await y.A.verifyPhone(t, e, !1);
             await p.A.authorizeIPAddress(n), this.handleLogin()
         } catch (e) {
             null != e.body && null != e.body.message && this.setState({
@@ -630,7 +630,7 @@ class X extends s.PureComponent {
         try {
             let {
                 token: n
-            } = await T.A.verifyPhone(this.getFullLogin(), e, !1);
+            } = await y.A.verifyPhone(this.getFullLogin(), e, !1);
             t(K.BVt.RESET, {
                 search: (0, a.stringify)({
                     token: n,
@@ -697,7 +697,7 @@ class X extends s.PureComponent {
         }
     };
     handleResendCode = () => {
-        T.A.resendCode(this.getFullLogin())
+        y.A.resendCode(this.getFullLogin())
     };
     handleReset = e => {
         null != e && e.preventDefault(), p.A.loginReset(), this.setState({
@@ -736,15 +736,15 @@ class X extends s.PureComponent {
     }
 }
 let $ = function(e) {
-    (0, w.K)();
-    let t = (0, c.cf)([U.A, B.A, D.default, C.A, b.A], () => ({
+    (0, L.K)();
+    let t = (0, c.cf)([B.A, U.A, D.default, C.A, b.A], () => ({
         authenticated: D.default.isAuthenticated(),
-        handoffAvailable: U.A.isHandoffAvailable(),
-        user: U.A.user,
+        handoffAvailable: B.A.isHandoffAvailable(),
+        user: B.A.user,
         loginStatus: D.default.getLoginStatus(),
         mfaTicket: D.default.getMFATicket(),
         mfaMethods: D.default.getMFAMethods(),
-        defaultRoute: B.A.defaultRoute,
+        defaultRoute: U.A.defaultRoute,
         country: b.A.getCountryCode(),
         hasLoggedInAccounts: C.A.getHasLoggedInAccounts()
     }));

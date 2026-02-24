@@ -1,7 +1,7 @@
 /** chunk id: 804980, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     Ay: () => U,
-    LN: () => k
+    LN: () => w
 });
 var i = n(627968),
     l = n(64700),
@@ -37,7 +37,7 @@ var i = n(627968),
     L = n(677406);
 let P = ["embedded_background"];
 
-function k(e) {
+function w(e) {
     let {
         avatarSize: t,
         guildId: n,
@@ -64,7 +64,7 @@ function k(e) {
     })
 }
 
-function w(e) {
+function k(e) {
     let {
         participants: t,
         application: n,
@@ -88,7 +88,7 @@ function w(e) {
     });
     return (0, i.jsxs)("div", {
         className: L.Yi,
-        children: [(0, i.jsx)(k, {
+        children: [(0, i.jsx)(w, {
             avatarSize: p,
             guildId: I,
             channelId: s.id,
@@ -170,7 +170,7 @@ function U(e) {
                 className: L.j0,
                 alt: m.name,
                 src: g
-            }) : null, b && null != m && (0, i.jsx)(w, {
+            }) : null, b && null != m && (0, i.jsx)(k, {
                 width: n,
                 channel: o,
                 participants: t.participants,

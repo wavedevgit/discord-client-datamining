@@ -30,11 +30,11 @@ var l = n(627968),
     v = n(912156),
     D = n(67103),
     R = n(195435),
-    U = n(576420),
-    O = n(336148),
+    O = n(576420),
+    U = n(336148),
     G = n(652215),
-    w = n(985018),
-    F = n(783346),
+    F = n(985018),
+    w = n(783346),
     L = n(416001),
     b = n(905777);
 
@@ -73,7 +73,7 @@ function j(e) {
             maxUsers: Math.min(i.length, 4),
             size: u._3J.SIZE_24,
             disableUserPopout: !0,
-            "aria-label": w.intl.string(w.t.TxqPQR)
+            "aria-label": F.intl.string(F.t.TxqPQR)
         })
     })
 }
@@ -99,8 +99,8 @@ function V(e) {
             [], 0
         ] : [p.Ay.getVoiceStatesForChannel(L), p.Ay.getVoiceStateVersion(H)], [L, H], T.D),
         B = null != $ && $.length > 0,
-        K = (0, U.A2)(n),
-        X = (0, O.X6)(L),
+        K = (0, O.A2)(n),
+        X = (0, U.X6)(L),
         Z = i.useRef(null),
         Q = i.useCallback(() => {
             let e = Z.current;
@@ -164,7 +164,7 @@ function V(e) {
             }
         } = (0, s.O)(),
         eg = () => {
-            let e = W ? w.intl.string(w.t["6vrfgt"]) : w.intl.string(w.t.S0W8Z5),
+            let e = W ? F.intl.string(F.t["6vrfgt"]) : F.intl.string(F.t.S0W8Z5),
                 t = W ? es.hex() : er.hex(),
                 n = W ? ed : u._jp;
             return (0, l.jsx)("div", {
@@ -195,13 +195,13 @@ function V(e) {
                 size: v.Q.SMALL_32
             }) : null,
             primaryText: (0, l.jsxs)("div", {
-                className: F.QV,
+                className: w.QV,
                 children: [null == (t = (0, d.gU)(L, Y)) ? null : (0, l.jsx)(t, {
                     color: eo.hex(),
                     size: "xxs",
-                    className: F.p
+                    className: w.p
                 }), (0, l.jsx)(u.Text, {
-                    className: F.Xh,
+                    className: w.Xh,
                     variant: "text-sm/medium",
                     color: W ? "status-positive-text" : ei > 0 ? "text-strong" : "text-muted",
                     children: V

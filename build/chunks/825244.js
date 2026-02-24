@@ -75,8 +75,8 @@ function D(e) {
             channel: L
         } = e,
         P = (0, o.bG)([E.A], () => null != L ? E.A.getGuild(L.getGuildId()) : null, [L]),
-        k = null != P && N.default.extractTimestamp(P.id) < Date.now() - v.NOr,
-        w = (0, o.bG)([_.default], () => P?.ownerId === _.default.getId(), [P]),
+        w = null != P && N.default.extractTimestamp(P.id) < Date.now() - v.NOr,
+        k = (0, o.bG)([_.default], () => P?.ownerId === _.default.getId(), [P]),
         {
             canInvite: U,
             canManageGuild: G,
@@ -207,7 +207,7 @@ function D(e) {
             })()
         }, [P?.id]), null == P) return null;
     let en = [];
-    k || (U && en.push((0, i.jsx)(r.A.div, {
+    w || (U && en.push((0, i.jsx)(r.A.div, {
         className: R.cW,
         style: $ ? {
             opacity: X[en.length]
@@ -263,8 +263,8 @@ function D(e) {
             onClick: J
         })
     }, "addapp")));
-    let ei = w ? j.intl.string(j.t["1ach9C"]) : j.intl.string(j.t["ezm+/j"]);
-    k && (ei = j.intl.string(j.t["gwyU/J"]));
+    let ei = k ? j.intl.string(j.t["1ach9C"]) : j.intl.string(j.t["ezm+/j"]);
+    w && (ei = j.intl.string(j.t["gwyU/J"]));
     let el = `${I.A.getArticleURL(v.MVz.GUILD_GETTING_STARTED)}?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-new-user&utm_content=--t%3Apm`;
     return (0, i.jsx)(y.Ay, {
         channelId: L.id,

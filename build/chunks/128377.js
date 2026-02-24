@@ -3,8 +3,8 @@
 r.d(e, {
     H: () => l
 });
-var n = r(680753),
-    s = r(875565),
+var s = r(680753),
+    n = r(875565),
     i = r(272469),
     o = r(231577),
     a = r(834932),
@@ -58,7 +58,7 @@ class d {
             id: void 0,
             ip_address: void 0,
             username: void 0
-        }, this._session && (0, n.qO)(this._session, {
+        }, this._session && (0, s.qO)(this._session, {
             user: t
         }), this._notifyScopeListeners(), this
     }
@@ -116,7 +116,7 @@ class d {
     update(t) {
         if (!t) return this;
         let e = "function" == typeof t ? t(this) : t,
-            [r, n] = e instanceof l ? [e.getScopeData(), e.getRequestSession()] : (0, s.Qd)(e) ? [t, t.requestSession] : [],
+            [r, s] = e instanceof l ? [e.getScopeData(), e.getRequestSession()] : (0, n.Qd)(e) ? [t, t.requestSession] : [],
             {
                 tags: i,
                 extra: o,
@@ -135,7 +135,7 @@ class d {
         }, this._contexts = {
             ...this._contexts,
             ...c
-        }, a && Object.keys(a).length && (this._user = a), u && (this._level = u), h.length && (this._fingerprint = h), d && (this._propagationContext = d), n && (this._requestSession = n), this
+        }, a && Object.keys(a).length && (this._user = a), u && (this._level = u), h.length && (this._fingerprint = h), d && (this._propagationContext = d), s && (this._requestSession = s), this
     }
     clear() {
         return this._breadcrumbs = [], this._tags = {}, this._extra = {}, this._user = {}, this._contexts = {}, this._level = void 0, this._transactionName = void 0, this._fingerprint = void 0, this._requestSession = void 0, this._session = void 0, (0, h.r)(this, void 0), this._attachments = [], this.setPropagationContext({
@@ -145,11 +145,11 @@ class d {
     addBreadcrumb(t, e) {
         let r = "number" == typeof e ? e : 100;
         if (r <= 0) return this;
-        let n = {
+        let s = {
             timestamp: (0, c.lu)(),
             ...t
         };
-        return this._breadcrumbs.push(n), this._breadcrumbs.length > r && (this._breadcrumbs = this._breadcrumbs.slice(-r), this._client && this._client.recordDroppedEvent("buffer_overflow", "log_item")), this._notifyScopeListeners(), this
+        return this._breadcrumbs.push(s), this._breadcrumbs.length > r && (this._breadcrumbs = this._breadcrumbs.slice(-r), this._client && this._client.recordDroppedEvent("buffer_overflow", "log_item")), this._notifyScopeListeners(), this
     }
     getLastBreadcrumb() {
         return this._breadcrumbs[this._breadcrumbs.length - 1]
@@ -195,24 +195,24 @@ class d {
     captureException(t, e) {
         let r = e && e.event_id ? e.event_id : (0, o.eJ)();
         if (!this._client) return i.vF.warn("No client configured on scope - will not capture exception!"), r;
-        let n = Error("Sentry syntheticException");
+        let s = Error("Sentry syntheticException");
         return this._client.captureException(t, {
             originalException: t,
-            syntheticException: n,
+            syntheticException: s,
             ...e,
             event_id: r
         }, this), r
     }
     captureMessage(t, e, r) {
-        let n = r && r.event_id ? r.event_id : (0, o.eJ)();
-        if (!this._client) return i.vF.warn("No client configured on scope - will not capture message!"), n;
-        let s = Error(t);
+        let s = r && r.event_id ? r.event_id : (0, o.eJ)();
+        if (!this._client) return i.vF.warn("No client configured on scope - will not capture message!"), s;
+        let n = Error(t);
         return this._client.captureMessage(t, e, {
             originalException: t,
-            syntheticException: s,
+            syntheticException: n,
             ...r,
-            event_id: n
-        }, this), n
+            event_id: s
+        }, this), s
     }
     captureEvent(t, e) {
         let r = e && e.event_id ? e.event_id : (0, o.eJ)();

@@ -14,12 +14,12 @@ function o(e) {
         finish: n,
         setSlide: o,
         onClose: d,
-        isSlideReady: c,
-        headerAlignStart: u
+        isSlideReady: u,
+        headerAlignStart: c
     } = e, [h, g] = s.useState(!1), [m, f] = s.useState(null), [x, S] = s.useState(""), p = s.useRef(null);
     return s.useEffect(() => {
-        c && p.current?.focus()
-    }, [c]), (0, l.jsxs)("form", {
+        u && p.current?.focus()
+    }, [u]), (0, l.jsxs)("form", {
         onSubmit: e => {
             e.preventDefault(), g(!0), n({
                 mfaType: "password",
@@ -32,7 +32,7 @@ function o(e) {
         },
         children: [(0, l.jsx)(i.A.SlideHeader, {
             onClose: d,
-            headerAlignStart: u
+            headerAlignStart: c
         }), (0, l.jsxs)(i.A.SlideContent, {
             children: [(0, l.jsx)(r.ksK, {
                 label: a.intl.string(a.t["CIGa+7"]),

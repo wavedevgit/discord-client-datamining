@@ -1,7 +1,7 @@
 /** chunk id: 344961, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => L
+    A: () => w
 });
 var i = n(627968),
     s = n(64700),
@@ -22,13 +22,13 @@ var i = n(627968),
     E = n(723702),
     x = n(337905),
     I = n(427262),
-    v = n(837921),
-    N = n(652215),
+    N = n(837921),
+    v = n(652215),
     j = n(818348),
     S = n(985018),
     C = n(947089),
-    y = n(473169);
-let T = n(906118),
+    T = n(473169);
+let y = n(906118),
     b = new g.A("LoginQRSocket");
 
 function R(e) {
@@ -37,8 +37,8 @@ function R(e) {
     } = e, [n, r] = s.useState(!1);
     return s.useEffect(() => {
         let e = new Image;
-        e.src = T, e.onload = () => r(!0), e.onerror = () => r(!0)
-    }, [T]), s.useEffect(() => {
+        e.src = y, e.onload = () => r(!0), e.onerror = () => r(!0)
+    }, [y]), s.useEffect(() => {
         n && o.ORC.announce(S.intl.string(S.t.j2p125))
     }, [n]), (0, i.jsx)("div", {
         className: C.Ac,
@@ -50,7 +50,7 @@ function R(e) {
             }), (0, i.jsx)("div", {
                 className: C.R6,
                 children: (0, i.jsx)("img", {
-                    src: T,
+                    src: y,
                     alt: ""
                 })
             })]
@@ -79,7 +79,7 @@ let O = e => {
     })
 };
 
-function w(e) {
+function L(e) {
     let {
         state: t,
         cancel: n,
@@ -94,7 +94,7 @@ function w(e) {
                 children: [(0, i.jsx)(R, {
                     text: 1 === t.step ? `https://discord.com/ra/${t.fingerprint}` : ""
                 }), (0, i.jsx)(_.hE, {
-                    className: y.QB,
+                    className: T.QB,
                     children: S.intl.string(S.t.UPiHaL)
                 }), null != s ? (0, i.jsx)(O, {
                     children: s
@@ -108,7 +108,7 @@ function w(e) {
                         textVariant: "text-sm/normal",
                         onClick: () => {
                             let e;
-                            return e = E.isPlatformEmbedded && v.Ay.supportsFeature(N.BYE.WEBAUTHN) ? v.Ay.webAuthnAuthenticate : m.J, void d.A.authenticatePasswordless({
+                            return e = E.isPlatformEmbedded && N.Ay.supportsFeature(v.BYE.WEBAUTHN) ? N.Ay.webAuthnAuthenticate : m.J, void d.A.authenticatePasswordless({
                                 authenticateFunc: e,
                                 conditionalMediationAbortController: r
                             }).catch(() => {})
@@ -130,7 +130,7 @@ function w(e) {
                     isMobile: !0,
                     status: j.cl.ONLINE
                 }), (0, i.jsx)(_.hE, {
-                    className: y.QB,
+                    className: T.QB,
                     children: S.intl.string(S.t.apGCUT)
                 }), (0, i.jsx)(_.tK, {
                     children: S.intl.format(S.t.Cbl5JK, {
@@ -154,7 +154,7 @@ function w(e) {
     }
 }
 
-function L(e) {
+function w(e) {
     let {
         authTokenCallback: t,
         conditionalMediationAbortController: n
@@ -214,7 +214,7 @@ function L(e) {
                         return
                     }
                     case "pending_remote_init": {
-                        p.succeed(), A._.dispatch(N.jej.WAVE_EMPHASIZE);
+                        p.succeed(), A._.dispatch(v.jej.WAVE_EMPHASIZE);
                         let e = await (0, x.Fs)(h());
                         if (e !== r.fingerprint) throw Error(`bad fingerprint ${e} !== ${r.fingerprint}`);
                         s("handshake complete awaiting remote auth."), o({
@@ -232,7 +232,7 @@ function L(e) {
                         return
                     }
                     case "pending_ticket": {
-                        A._.dispatch(N.jej.WAVE_EMPHASIZE), s("remote auth handshake started, awaiting ticket/cancel.");
+                        A._.dispatch(v.jej.WAVE_EMPHASIZE), s("remote auth handshake started, awaiting ticket/cancel.");
                         let e = r.encrypted_user_payload;
                         o({
                             step: 3,
@@ -241,7 +241,7 @@ function L(e) {
                         return
                     }
                     case "pending_finish": {
-                        A._.dispatch(N.jej.WAVE_EMPHASIZE), s("remote auth handshake started, awaiting finish/cancel.");
+                        A._.dispatch(v.jej.WAVE_EMPHASIZE), s("remote auth handshake started, awaiting finish/cancel.");
                         let e = r.encrypted_user_payload;
                         o({
                             step: 2,
@@ -250,7 +250,7 @@ function L(e) {
                         return
                     }
                     case "finish": {
-                        A._.dispatch(N.jej.WAVE_EMPHASIZE), s("remote auth handshake finished.");
+                        A._.dispatch(v.jej.WAVE_EMPHASIZE), s("remote auth handshake finished.");
                         let t = r.encrypted_token;
                         o({
                             step: 5
@@ -305,7 +305,7 @@ function L(e) {
     }(c.step);
     return s.useEffect(() => {
         4 === c.step && null != c.ticket && a.Bo.post({
-            url: N.Rsh.REMOTE_AUTH_LOGIN,
+            url: v.Rsh.REMOTE_AUTH_LOGIN,
             body: {
                 ticket: c.ticket
             },
@@ -332,7 +332,7 @@ function L(e) {
             steps: [0, 1],
             children: (0, i.jsx)("div", {
                 className: C.vP,
-                children: (0, i.jsx)(w, {
+                children: (0, i.jsx)(L, {
                     state: c,
                     cancel: p,
                     conditionalMediationAbortController: n,

@@ -1,7 +1,7 @@
 /** chunk id: 957622, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => N
+    A: () => v
 });
 var i = n(627968),
     s = n(64700),
@@ -47,15 +47,15 @@ let I = e => {
     })
 };
 
-function v(e) {
+function N(e) {
     let {
         match: t,
         location: l
-    } = e, o = (0, r.parse)(l.search).token, [u, v] = s.useState("loading"), N = s.useRef(!1), j = s.useCallback(async e => {
+    } = e, o = (0, r.parse)(l.search).token, [u, N] = s.useState("loading"), v = s.useRef(!1), j = s.useCallback(async e => {
         try {
             p.default.track(A.HAw.ONE_TIME_LOGIN_ATTEMPTED, {
                 source: "web_page"
-            }), await d.A.oneTimeLogin(e), v("login_success"), p.default.track(A.HAw.LOGIN_SUCCESSFUL, {
+            }), await d.A.oneTimeLogin(e), N("login_success"), p.default.track(A.HAw.LOGIN_SUCCESSFUL, {
                 source: "web_page",
                 login_method: "one_time_login"
             }), n.g.location.assign(A.BVt.APP)
@@ -65,7 +65,7 @@ function v(e) {
                 source: "web_page",
                 error_reason: "api_error",
                 error_message: e
-            }), v("error")
+            }), N("error")
         }
     }, []), S = s.useCallback(e => {
         let t = _.default.getFingerprint() ?? _.default.getId(),
@@ -76,7 +76,7 @@ function v(e) {
                 destination: "discord://login/one-time",
                 deep_link_provider: "protocol",
                 fingerprint: t
-            }), v("app_launched")) : v("app_launch_not_supported")
+            }), N("app_launched")) : N("app_launch_not_supported")
         })
     }, []), C = s.useCallback(e => {
         let t = _.default.getFingerprint() ?? _.default.getId();
@@ -96,7 +96,7 @@ function v(e) {
                     destination: "one_time_login_modal",
                     deep_link_provider: "rpc",
                     fingerprint: t
-                }), v("app_launched")) : S(e)
+                }), N("app_launched")) : S(e)
             }).catch(() => {
                 S(e)
             }).then(() => i.disconnect())
@@ -108,7 +108,7 @@ function v(e) {
             if (p.default.track(A.HAw.ONE_TIME_LOGIN_PAGE_VIEWED, {
                     has_token: e,
                     device_type: t
-                }), !e) return void v("error");
+                }), !e) return void N("error");
             if (a.Fr || a.v1) {
                 let e = p.default.getSuperProperties()?.os;
                 p.default.track(A.HAw.ONE_TIME_LOGIN_APP_DETECTION_ATTEMPTED, {
@@ -117,7 +117,7 @@ function v(e) {
                     platform: e
                 });
                 return
-            }(0, g.isDesktop)() ? j(o): N.current || (N.current = !0, v("rpc_attempting"), C(o))
+            }(0, g.isDesktop)() ? j(o): v.current || (v.current = !0, N("rpc_attempting"), C(o))
         }, [o, l, j, C]), a.Fr || a.v1) {
         let e = null == o || "string" != typeof o ? "missing_token" : "invalid_token";
         return (0, i.jsx)(f.W, {
@@ -160,11 +160,11 @@ function v(e) {
         children: (0, i.jsx)(c.CK, {})
     })
 }
-let N = function(e) {
+let v = function(e) {
     let {
         enabled: t
     } = (0, u.lq)("OneTimeLoginCardWrapper");
-    return t ? (0, i.jsx)(v, {
+    return t ? (0, i.jsx)(N, {
         ...e
     }) : (0, i.jsx)(l.rd, {
         to: A.BVt.LOGIN

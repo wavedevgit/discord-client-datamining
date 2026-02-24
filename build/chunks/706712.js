@@ -2,11 +2,11 @@
 r.d(t, {
     Ay: () => E,
     DQ: () => w,
-    Dj: () => j,
-    F5: () => v,
+    Dj: () => v,
+    F5: () => j,
     Jc: () => g,
-    L6: () => x,
-    ZX: () => S,
+    L6: () => h,
+    ZX: () => F,
     km: () => k
 });
 var n = r(627968),
@@ -19,9 +19,9 @@ var n = r(627968),
     o = r(964486),
     d = r(142120),
     m = r(132262),
-    f = r(661251);
-let x = 1e3 / 60,
-    h = 1e3 / 30,
+    x = r(661251);
+let h = 1e3 / 60,
+    f = 1e3 / 30,
     g = 5e3,
     p = 1e3 / 60 * 3,
     b = Math.ceil(3e3 / (1e3 / 60));
@@ -50,7 +50,7 @@ function k(e, t) {
     }, [u, i]), u]
 }
 
-function v(e) {
+function j(e) {
     let t = a.useRef(Array(b).fill(0)),
         r = a.useRef(performance.now()),
         n = a.useRef(0),
@@ -74,7 +74,7 @@ function v(e) {
     }]
 }
 
-function j(e, t) {
+function v(e, t) {
     let r = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
         n = a.useRef(Array(b).fill(0)),
         c = a.useRef(performance.now()),
@@ -87,28 +87,28 @@ function j(e, t) {
         m = a.useCallback(() => {
             n.current.fill(0), l.current = 0, s.current = 0, i.current = 0, o.current = 0, c.current = performance.now(), u.current = 0
         }, []),
-        f = a.useCallback(function() {
+        x = a.useCallback(function() {
             let a = performance.now(),
                 m = a - c.current;
             if (c.current = a, t.current && !r) return;
             if (s.current -= n.current[o.current], n.current[o.current] = m, s.current += m, i.current < b && (i.current += 1), o.current = (o.current + 1) % b, m > p) {
-                let t = 0 === i.current ? x : s.current / i.current,
-                    r = Math.min(2 * x, t),
-                    n = Math.floor(m / (e ? r : x));
+                let t = 0 === i.current ? h : s.current / i.current,
+                    r = Math.min(2 * h, t),
+                    n = Math.floor(m / (e ? r : h));
                 n > 0 && (d.current = performance.now()), l.current += n
             }
-            let f = 0 === i.current ? x : s.current / i.current;
-            u.current += m / f
+            let x = 0 === i.current ? h : s.current / i.current;
+            u.current += m / x
         }, [e, t, r]),
-        h = 0 === i.current ? 0 : s.current / i.current;
+        f = 0 === i.current ? 0 : s.current / i.current;
     return {
-        currentFPS: 0 === h ? 0 : x / h * 60,
-        averageFrameTime: h,
+        currentFPS: 0 === f ? 0 : h / f * 60,
+        averageFrameTime: f,
         timeSinceLastDrop: (performance.now() - d.current) / 1e3,
         droppedFramesRef: l,
         bufferFramecountRef: i,
         renderedFrameCount: u,
-        frameCheckerEffect: f,
+        frameCheckerEffect: x,
         onResetFrameData: m
     }
 }
@@ -130,19 +130,19 @@ function T(e) {
     } = e, [c, l] = w(t), {
         currentFPS: s,
         averageFrameTime: d,
-        timeSinceLastDrop: f,
-        onResetFrameData: h,
+        timeSinceLastDrop: x,
+        onResetFrameData: f,
         droppedFramesRef: p,
         renderedFrameCount: b,
         bufferFramecountRef: T,
         frameCheckerEffect: R
-    } = j(r, c), [C, F, S] = v(t), [E, y] = k(C, R), I = performance.now() - l.current < g, A = F(d, T.current);
+    } = v(r, c), [C, S, F] = j(t), [E, I] = k(C, R), N = performance.now() - l.current < g, y = S(d, T.current);
     (0, o.Ay)(() => (E(), () => {
-        y()
+        I()
     }));
-    let N = a.useCallback(() => {
-        h(), S(), E()
-    }, [h, S, E]);
+    let A = a.useCallback(() => {
+        f(), F(), E()
+    }, [f, F, E]);
     return (0, n.jsxs)("div", {
         className: m.st,
         children: [(0, n.jsxs)(i.Text, {
@@ -160,7 +160,7 @@ function T(e) {
             children: ["Dropped Frames:", " ", (0, n.jsx)(i.Text, {
                 tag: "span",
                 variant: "text-md/bold",
-                color: f < 2 ? "text-feedback-critical" : f < 5 ? "text-feedback-warning" : "text-strong",
+                color: x < 2 ? "text-feedback-critical" : x < 5 ? "text-feedback-warning" : "text-strong",
                 children: p.current
             }), (0, n.jsxs)(i.Text, {
                 tag: "span",
@@ -168,7 +168,7 @@ function T(e) {
                 color: "text-muted",
                 className: m.af,
                 children: ["(Dropped: ", (p.current / b.current * 100).toFixed(4), "%)"]
-            }), I && (0, n.jsx)(u.m, {
+            }), N && (0, n.jsx)(u.m, {
                 position: "left",
                 text: "We don't track frames while the app is in the background, because requestAnimationFrame doesn't fire in the background",
                 asContainer: !0,
@@ -195,7 +195,7 @@ function T(e) {
             children: ["Frame Times (~3sec):", " ", (0, n.jsxs)(i.Text, {
                 tag: "span",
                 variant: "text-md/semibold",
-                color: d > 1.1 * x ? "text-feedback-warning" : "text-subtle",
+                color: d > 1.1 * h ? "text-feedback-warning" : "text-subtle",
                 children: [d.toFixed(2), "ms"]
             })]
         }), (0, n.jsx)(u.m, {
@@ -208,9 +208,9 @@ function T(e) {
                 children: ["Idle Frame Delta (~3sec):", " ", (0, n.jsxs)(i.Text, {
                     tag: "span",
                     variant: "text-md/semibold",
-                    color: A > 1 ? "text-feedback-critical" : "text-subtle",
-                    children: [A.toFixed(2), "ms"]
-                }), I && (0, n.jsx)(u.m, {
+                    color: y > 1 ? "text-feedback-critical" : "text-subtle",
+                    children: [y.toFixed(2), "ms"]
+                }), N && (0, n.jsx)(u.m, {
                     position: "left",
                     text: "We don't track frames while the app is in the background, because requestAnimationFrame doesn't fire in the background",
                     asContainer: !0,
@@ -229,7 +229,7 @@ function T(e) {
                 variant: "primary",
                 size: "sm",
                 text: "Reset Frame Data",
-                onClick: N
+                onClick: A
             })
         })]
     })
@@ -243,7 +243,7 @@ function R(e) {
     } = e, [l, s] = a.useState(t.dispatcher.getIsRequestIdleCallbackEnabled()), o = a.useRef(null);
     return a.useEffect(() => (o.current = setInterval(() => {
         s(t.dispatcher.getIsRequestIdleCallbackEnabled())
-    }, h), () => {
+    }, f), () => {
         null != o.current && clearInterval(o.current)
     }), [t.dispatcher]), (0, n.jsxs)("div", {
         className: m.st,
@@ -318,7 +318,7 @@ function C(e) {
     })
 }
 
-function F(e) {
+function S(e) {
     let {
         socket: t
     } = e, r = t.dispatcher.getSchedulerTelemetry(), [c, s] = a.useState(r.isTelemetryEnabled), [u, o] = a.useState(r.isTelemetryEnabled), d = e => {
@@ -383,12 +383,12 @@ function F(e) {
     })
 }
 
-function S() {
+function F() {
     let [, e] = a.useState({});
     a.useEffect(() => {
         let t = setInterval(() => {
             e({})
-        }, h);
+        }, f);
         return () => {
             clearInterval(t)
         }
@@ -398,8 +398,8 @@ function S() {
 function E() {
     let e = (0, s.bG)([d.A], () => d.A.getSocket()),
         [t, r] = a.useState(!1);
-    return S(), (0, n.jsx)("div", {
-        className: l()(f.nd, m.nd),
+    return F(), (0, n.jsx)("div", {
+        className: l()(x.nd, m.nd),
         children: (0, n.jsxs)(i.IpV, {
             className: m.nd,
             children: [(0, n.jsx)(T, {
@@ -411,7 +411,7 @@ function E() {
                 onToggleAverageFrameTime: r
             }), (0, n.jsx)(C, {
                 socket: e
-            }), (0, n.jsx)(F, {
+            }), (0, n.jsx)(S, {
                 socket: e
             })]
         })

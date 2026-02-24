@@ -35,8 +35,8 @@ var i = n(627968),
     O = n(234320),
     L = n(863439),
     P = n(504136),
-    k = n(662433),
-    w = n(540385),
+    w = n(662433),
+    k = n(540385),
     U = n(830178),
     G = n(722432),
     F = n(258024),
@@ -69,10 +69,10 @@ let W = (0, r.animated)(d.fKU),
                 typingGradient: z
             } = e,
             [Y, q] = l.useState(N.A.isAtBottom(f.id) ?? !1),
-            J = (0, k.I)(S, R),
+            J = (0, w.I)(S, R),
             $ = S ? J : Math.round(.87 * J),
             Z = Math.max(1, Math.round($ / 30 * 8)),
-            X = l.useMemo(() => (0, w.bW)({
+            X = l.useMemo(() => (0, k.bW)({
                 compact: S,
                 messageGroups: $,
                 groupRange: 4,
@@ -229,8 +229,8 @@ let W = (0, r.animated)(d.fKU),
             messageGroupSpacing: I,
             fontSize: N,
             messageDisplayCompact: O,
-            renderSpoilers: k,
-            keyboardModeEnabled: w
+            renderSpoilers: w,
+            keyboardModeEnabled: k
         } = function() {
             let e = S.hH.useSetting(),
                 t = S.gs.useSetting(),
@@ -301,7 +301,7 @@ let W = (0, r.animated)(d.fKU),
             }
         }(t);
         return (0, i.jsx)(x.Bs.Provider, {
-            value: (0, L.A)(k, u),
+            value: (0, L.A)(w, u),
             children: (0, i.jsx)(U.t, {
                 children: (0, i.jsx)(z, {
                     ...d,
@@ -318,7 +318,7 @@ let W = (0, r.animated)(d.fKU),
                     canChat: E,
                     editingMessageId: V,
                     fontSize: N,
-                    keyboardModeEnabled: w,
+                    keyboardModeEnabled: k,
                     showingQuarantineBanner: n,
                     hideSummaries: s,
                     typingGradient: o

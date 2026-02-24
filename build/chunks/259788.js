@@ -1,33 +1,33 @@
 /** chunk id: 259788, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     Ay: () => h,
-    GI: () => d,
+    GI: () => u,
     J5: () => a,
     g_: () => c,
     jc: () => o,
-    nj: () => u,
-    nl: () => r
+    nj: () => d,
+    nl: () => s
 });
 var i = n(839214);
-let s = {
+let l = {
         timeToLiveMs: 5e3,
         reappearTimeMs: 1e4
     },
-    l = (0, i.D)(() => s),
-    r = 1e4,
+    r = (0, i.D)(() => l),
+    s = 1e4,
     a = 2e4,
     o = 500,
-    d = 1e3;
+    u = 1e3;
 
-function u(e) {
-    l.setState({
+function d(e) {
+    r.setState({
         timeToLiveMs: e
     })
 }
 
 function c(e) {
-    l.setState({
+    r.setState({
         reappearTimeMs: e
     })
 }
-let h = l
+let h = r

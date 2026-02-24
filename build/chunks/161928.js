@@ -22,8 +22,8 @@ var i = n(627968),
     E = n(788868),
     x = n(985018),
     I = n(440526),
-    v = n(20976),
-    N = n(473169);
+    N = n(20976),
+    v = n(473169);
 let j = a.Ay.connectStores([m.A, d.A, g.A, p.default], e => {
     let {
         giftCode: t
@@ -58,7 +58,7 @@ let j = a.Ay.connectStores([m.A, d.A, g.A, p.default], e => {
         }) : (0, i.jsx)(c.eu, {
             src: null != r ? r.getAvatarURL(void 0, 100) : null,
             size: o._3J.DEPRECATED_SIZE_100,
-            className: N.SX
+            className: v.SX
         }), null != t ? (0, i.jsxs)(s.Fragment, {
             children: [(0, i.jsx)(c.tK, {
                 children: x.intl.string(x.t.mDFGFj)
@@ -69,7 +69,7 @@ let j = a.Ay.connectStores([m.A, d.A, g.A, p.default], e => {
             children: [(0, i.jsx)(c.tK, {
                 children: g
             }), (0, i.jsxs)(c.hE, {
-                className: l()(N.Ot, v.tR),
+                className: l()(v.Ot, N.tR),
                 children: [a.productLine !== A.EZt.COLLECTIBLES && (0, i.jsx)(u.A, {
                     size: u.M.MEDIUM,
                     className: I.I,

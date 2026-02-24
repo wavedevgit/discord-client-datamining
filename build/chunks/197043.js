@@ -1,55 +1,55 @@
 /** chunk id: 197043, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => f
 });
 var i = n(627968),
-    s = n(64700),
-    l = n(311907),
-    r = n(843472),
+    l = n(64700),
+    r = n(311907),
+    s = n(843472),
     a = n(698718),
     o = n(355622),
-    d = n(734057),
-    u = n(71393),
+    u = n(734057),
+    d = n(71393),
     c = n(320501),
     h = n(576705),
-    g = n(203982),
-    m = n(545807),
+    m = n(203982),
+    g = n(545807),
     p = n(652215),
     A = n(128727);
 
-function x(e) {
-    let t, n, x, E, f, S, {
-            selectedChannelId: I
+function f(e) {
+    let t, n, f, x, E, S, {
+            selectedChannelId: v
         } = e,
-        T = (0, l.bG)([d.A], () => d.A.getChannel(I), [I]),
-        v = (0, m.A)(),
-        C = (0, l.bG)([u.A], () => (function(e, t) {
+        C = (0, r.bG)([u.A], () => u.A.getChannel(v), [v]),
+        I = (0, g.A)(),
+        T = (0, r.bG)([d.A], () => (function(e, t) {
             if (null == e) return null;
             let n = e.getGuildId();
             return null == n ? null : t.getGuild(n) ?? null
-        })(T, u.A), [T]);
-    return (t = T?.id ?? null, n = s.useRef(new Set), x = (0, l.bG)([c.A], () => null != t ? c.A.getMessages(t) : null, [t]), E = (0, l.bG)([h.A], () => h.A.can(p.xBc.READ_MESSAGE_HISTORY, T), [T]), f = x?.first() ?? null, S = null != T && null == f && null != x && !x.loadingMore && !x.ready && !x.hasFetched && E, s.useEffect(() => {
-        null == t || !n.current.has(t) && S && (n.current.add(t), r.A.fetchMessages({
+        })(C, d.A), [C]);
+    return (t = C?.id ?? null, n = l.useRef(new Set), f = (0, r.bG)([c.A], () => null != t ? c.A.getMessages(t) : null, [t]), x = (0, r.bG)([h.A], () => h.A.can(p.xBc.READ_MESSAGE_HISTORY, C), [C]), E = f?.first() ?? null, S = null != C && null == E && null != f && !f.loadingMore && !f.ready && !f.hasFetched && x, l.useEffect(() => {
+        null == t || !n.current.has(t) && S && (n.current.add(t), s.A.fetchMessages({
             channelId: t,
             limit: 50
         }))
-    }, [t, S]), s.useEffect(() => {
-        if (null == I) return;
-        let e = v.requestAnimationFrame(() => {
-            g._.dispatchToLastSubscribed(p.jej.TEXTAREA_FOCUS, {
-                channelId: I
+    }, [t, S]), l.useEffect(() => {
+        if (null == v) return;
+        let e = I.requestAnimationFrame(() => {
+            m._.dispatchToLastSubscribed(p.jej.TEXTAREA_FOCUS, {
+                channelId: v
             })
         });
-        return () => v.cancelAnimationFrame(e)
-    }, [I, v]), null != T) ? (0, i.jsx)("div", {
+        return () => I.cancelAnimationFrame(e)
+    }, [v, I]), null != C) ? (0, i.jsx)("div", {
         className: A.Q,
         children: (0, i.jsx)("div", {
             className: A.T,
             children: (0, i.jsx)(a.A, {
-                channel: T,
-                guild: C,
+                channel: C,
+                guild: T,
                 chatInputType: o.oU.OVERLAY
-            }, T.id)
+            }, C.id)
         })
     }) : null
 }

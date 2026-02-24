@@ -3,17 +3,17 @@ n.d(t, {
     A: () => p
 });
 var i = n(627968),
-    s = n(64700),
-    l = n(503698),
-    r = n.n(l),
+    l = n(64700),
+    r = n(503698),
+    s = n.n(r),
     a = n(812729),
     o = n.n(a),
-    d = n(475539),
-    u = n(397927),
+    u = n(475539),
+    d = n(397927),
     c = n(259788),
     h = n(302614),
-    g = n(751747);
-let m = {
+    m = n(751747);
+let g = {
     mass: 1,
     tension: 600,
     friction: 60,
@@ -24,35 +24,35 @@ function p(e) {
     let {
         locked: t,
         pinned: n
-    } = e, [l, a] = s.useState(0), [p, A] = s.useState(0), [x, E] = s.useState(0), f = s.useRef(0), [S, I] = s.useState(0), {
-        timeToLiveMs: T,
-        reappearTimeMs: v
+    } = e, [r, a] = l.useState(0), [p, A] = l.useState(0), [f, x] = l.useState(0), E = l.useRef(0), [S, v] = l.useState(0), {
+        timeToLiveMs: C,
+        reappearTimeMs: I
     } = c.Ay.useState(e => ({
         timeToLiveMs: e.timeToLiveMs,
         reappearTimeMs: e.reappearTimeMs
-    }), o()), C = {
-        timeToLiveMs: T,
-        reappearTimeMs: v
-    }, j = s.useRef(C);
-    s.useEffect(() => {
-        j.current = C
-    }), s.useEffect(() => (f.current = setInterval(() => {
+    }), o()), T = {
+        timeToLiveMs: C,
+        reappearTimeMs: I
+    }, _ = l.useRef(T);
+    l.useEffect(() => {
+        _.current = T
+    }), l.useEffect(() => (E.current = setInterval(() => {
         let e = Date.now();
-        A(e), E(t => {
+        A(e), x(t => {
             if (0 === t) return e;
             let n = e - t,
-                i = j.current.timeToLiveMs,
-                s = i + j.current.reappearTimeMs;
-            return n > i ? t + s : t
+                i = _.current.timeToLiveMs,
+                l = i + _.current.reappearTimeMs;
+            return n > i ? t + l : t
         })
     }, 100), () => {
-        clearInterval(f.current)
+        clearInterval(E.current)
     }), []);
     let y = () => {
-            a(Date.now()), I(e => e + 1)
+            a(Date.now()), v(e => e + 1)
         },
-        w = l > 0 && p - l < 1e3,
-        O = (0, u.pnh)(x > 0 && x < p && p - x < T, {
+        j = r > 0 && p - r < 1e3,
+        b = (0, d.pnh)(f > 0 && f < p && p - f < C, {
             from: {
                 opacity: 0
             },
@@ -62,22 +62,22 @@ function p(e) {
             leave: {
                 opacity: 0
             },
-            config: m
+            config: g
         }),
-        [_, N] = s.useState(!1);
-    if (s.useEffect(() => {
-            S > 10 && N(!0)
-        }, [S]), _) throw Error("ClickZoneDebugWidget crashed, too many clicks");
+        [w, O] = l.useState(!1);
+    if (l.useEffect(() => {
+            S > 10 && O(!0)
+        }, [S]), w) throw Error("ClickZoneDebugWidget crashed, too many clicks");
     return t && !n ? null : (0, i.jsx)(i.Fragment, {
-        children: O((e, t) => t && (0, i.jsx)(d.animated.div, {
+        children: b((e, t) => t && (0, i.jsx)(u.animated.div, {
             style: e,
-            className: g.r2,
+            className: m.r2,
             children: (0, i.jsx)(h.A, {
-                className: r()(g.VC, w && g.Nd),
-                children: (0, i.jsx)(u.DUT, {
+                className: s()(m.VC, j && m.Nd),
+                children: (0, i.jsx)(d.DUT, {
                     onClick: y,
-                    className: g.vk,
-                    children: (0, i.jsxs)(u.Text, {
+                    className: m.vk,
+                    children: (0, i.jsxs)(d.Text, {
                         variant: "text-md/semibold",
                         color: "always-white",
                         children: ["Click Me (", S, ")"]

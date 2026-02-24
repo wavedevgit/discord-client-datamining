@@ -1,7 +1,7 @@
 /** chunk id: 170159, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => L
+    A: () => w
 });
 var i = n(627968),
     s = n(64700),
@@ -22,18 +22,18 @@ var i = n(627968),
     E = n(650048),
     x = n(30793),
     I = n(189081),
-    v = n(67480),
-    N = n(45938),
+    N = n(67480),
+    v = n(45938),
     j = n(975571),
     S = n(427262),
     C = n(161928),
-    y = n(129851),
-    T = n(229),
+    T = n(129851),
+    y = n(229),
     b = n(652215),
     R = n(985018),
     O = n(473169);
 a.Ay.initialize();
-class w extends s.PureComponent {
+class L extends s.PureComponent {
     state = {
         error: null,
         continueOnWeb: !1,
@@ -280,12 +280,12 @@ class w extends s.PureComponent {
                 let e = this.state.currentUser;
                 return d || null == e ? this.renderSpinner(R.intl.string(R.t.bYb2nS)) : this.requiresVerification && null != e ? this.renderVerification(e) : this.renderAuthenticated(s, e, t)
             }
-            return "login" === this.getMode() ? (0, i.jsx)(y.A, {
+            return "login" === this.getMode() ? (0, i.jsx)(T.A, {
                 giftCodeSKU: t,
                 giftCode: s,
                 transitionTo: a,
                 location: o
-            }) : (0, i.jsx)(T.A, {
+            }) : (0, i.jsx)(y.A, {
                 giftCodeSKU: t,
                 giftCode: s,
                 transitionTo: a,
@@ -295,14 +295,14 @@ class w extends s.PureComponent {
         return null
     }
 }
-let L = a.Ay.connectStores([x.A, I.A, A.default, v.A, E.A, g.A], e => {
+let w = a.Ay.connectStores([x.A, I.A, A.default, N.A, E.A, g.A], e => {
         let t = e.match.params.giftCode,
             n = x.A.get(t),
-            i = null != n ? v.A.get(n.skuId) : null;
+            i = null != n ? N.A.get(n.skuId) : null;
         return {
             giftCode: n,
             sku: i,
-            libraryApplication: null != i && n?.entitlementBranches != null ? N.YI(n.entitlementBranches, i, I.A) : null,
+            libraryApplication: null != i && n?.entitlementBranches != null ? v.YI(n.entitlementBranches, i, I.A) : null,
             authenticated: A.default.isAuthenticated(),
             defaultRoute: E.A.defaultRoute,
             isResolved: x.A.getIsResolved(t),
@@ -310,7 +310,7 @@ let L = a.Ay.connectStores([x.A, I.A, A.default, v.A, E.A, g.A], e => {
             libraryApplicationsFetched: I.A.fetched,
             nativeAppState: g.A.getState(t)
         }
-    })(w),
+    })(L),
     k = e => {
         let {
             sku: t,

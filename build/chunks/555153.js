@@ -3,66 +3,66 @@ n.d(t, {
     A: () => c
 });
 var i = n(627968),
-    s = n(64700),
-    l = n(554146),
-    r = n(397927),
+    l = n(64700),
+    r = n(554146),
+    s = n(397927),
     a = n(379848),
     o = n(49999),
-    d = n(985018),
-    u = n(477545);
+    u = n(985018),
+    d = n(477545);
 
 function c(e) {
     let {
         locked: t
-    } = e, [n, c] = (0, a.kn)(t ? [] : [l.M.OVERLAY_OOP_WELCOME_BACKGROUND_NUX], void 0, !0);
-    return (s.useEffect(() => {
-        if (!t && n === l.M.OVERLAY_OOP_WELCOME_BACKGROUND_NUX) return () => {
-            n === l.M.OVERLAY_OOP_WELCOME_BACKGROUND_NUX && c(o.i.AUTO_DISMISS)
+    } = e, [n, c] = (0, a.kn)(t ? [] : [r.M.OVERLAY_OOP_WELCOME_BACKGROUND_NUX], void 0, !0);
+    return (l.useEffect(() => {
+        if (!t && n === r.M.OVERLAY_OOP_WELCOME_BACKGROUND_NUX) return () => {
+            n === r.M.OVERLAY_OOP_WELCOME_BACKGROUND_NUX && c(o.i.AUTO_DISMISS)
         }
-    }, [t, c, n]), t || n !== l.M.OVERLAY_OOP_WELCOME_BACKGROUND_NUX) ? null : (0, i.jsx)("div", {
-        className: u.A,
+    }, [t, c, n]), t || n !== r.M.OVERLAY_OOP_WELCOME_BACKGROUND_NUX) ? null : (0, i.jsx)("div", {
+        className: d.A,
         children: (0, i.jsxs)("div", {
-            className: u.rs,
+            className: d.rs,
             children: [(0, i.jsxs)("div", {
-                className: u.vJ,
-                children: [(0, i.jsx)(r.Heading, {
+                className: d.vJ,
+                children: [(0, i.jsx)(s.Heading, {
                     variant: "heading-xl/medium",
                     color: "text-strong",
-                    children: d.intl.string(d.t.jzjJQg)
-                }), (0, i.jsx)(r.Text, {
+                    children: u.intl.string(u.t.jzjJQg)
+                }), (0, i.jsx)(s.Text, {
                     variant: "text-md/normal",
                     color: "text-muted",
-                    children: d.intl.string(d.t["5dOfxb"])
+                    children: u.intl.string(u.t["5dOfxb"])
                 })]
             }), (0, i.jsxs)("div", {
-                className: u.S1,
+                className: d.S1,
                 children: [(0, i.jsxs)("div", {
-                    className: u.bS,
-                    children: [(0, i.jsx)(r.XeY, {}), (0, i.jsx)(r.Text, {
+                    className: d.bS,
+                    children: [(0, i.jsx)(s.XeY, {}), (0, i.jsx)(s.Text, {
                         variant: "text-md/medium",
                         color: "interactive-text-default",
-                        children: d.intl.string(d.t.S6VRyK)
+                        children: u.intl.string(u.t.S6VRyK)
                     })]
                 }), (0, i.jsxs)("div", {
-                    className: u.bS,
-                    children: [(0, i.jsx)(r.XFE, {}), (0, i.jsx)(r.Text, {
+                    className: d.bS,
+                    children: [(0, i.jsx)(s.XFE, {}), (0, i.jsx)(s.Text, {
                         variant: "text-md/medium",
                         color: "interactive-text-default",
-                        children: d.intl.string(d.t.xq8CKY)
+                        children: u.intl.string(u.t.xq8CKY)
                     })]
                 }), (0, i.jsxs)("div", {
-                    className: u.bS,
-                    children: [(0, i.jsx)(r.npA, {}), (0, i.jsx)(r.Text, {
+                    className: d.bS,
+                    children: [(0, i.jsx)(s.npA, {}), (0, i.jsx)(s.Text, {
                         variant: "text-md/medium",
                         color: "interactive-text-default",
-                        children: d.intl.string(d.t.GwpRe0)
+                        children: u.intl.string(u.t.GwpRe0)
                     })]
                 }), (0, i.jsxs)("div", {
-                    className: u.bS,
-                    children: [(0, i.jsx)(r.JMI, {}), (0, i.jsx)(r.Text, {
+                    className: d.bS,
+                    children: [(0, i.jsx)(s.JMI, {}), (0, i.jsx)(s.Text, {
                         variant: "text-md/medium",
                         color: "interactive-text-default",
-                        children: d.intl.string(d.t.VUoC5F)
+                        children: u.intl.string(u.t.VUoC5F)
                     })]
                 })]
             })]

@@ -1,39 +1,30 @@
 /** chunk id: 168754, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => r
+    A: () => a
 });
-var i = n(627968);
-n(64700);
-var s = n(697744),
-    l = n(709562);
+var i = n(627968),
+    s = n(64700),
+    l = n(397927),
+    r = n(709562);
 
-function r(e) {
+function a(e) {
     let {
         isActivityActive: t,
-        onMouseEnter: n,
-        onMouseLeave: r,
-        onClick: a,
-        ...o
-    } = e, {
-        Component: c,
-        events: d,
-        play: u
-    } = (0, s.c)();
-    return (0, i.jsx)(l.l, {
+        ...n
+    } = e, a = s.useRef(null);
+    return (0, i.jsx)(r.l, {
+        ref: a,
         isTrayButton: !0,
         isActive: t,
         color: t ? "green" : void 0,
-        iconComponent: c,
-        onMouseEnter: e => {
-            n?.(e), d.onMouseEnter()
-        },
-        onMouseLeave: e => {
-            r?.(e), d.onMouseLeave()
-        },
-        onClick: e => {
-            a?.(e), u()
-        },
-        ...o
+        iconComponent: (0, i.jsx)(l.lmr, {
+            eventTargetRef: a,
+            dataBinding: {
+                fill: "currentColor"
+            },
+            className: l.d5l.refresh_sm
+        }),
+        ...n
     })
 }

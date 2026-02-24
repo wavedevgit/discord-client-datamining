@@ -40,12 +40,12 @@ let o = {
             showConfirm: a = !1,
             disabled: o,
             submitting: d
-        } = e, c = t.methods.length > 1;
-        return null != r || c || a ? (0, l.jsx)(s.jlY, {
+        } = e, u = t.methods.length > 1;
+        return null != r || u || a ? (0, l.jsx)(s.jlY, {
             "data-migration-pending": !0,
             children: (0, l.jsxs)(s.ButtonGroup, {
                 fullWidth: !0,
-                children: [c && (0, l.jsx)(s.Button, {
+                children: [u && (0, l.jsx)(s.Button, {
                     variant: "secondary",
                     text: i.intl.string(i.t.Tot4EC),
                     onClick: () => n("select")

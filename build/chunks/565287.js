@@ -24,7 +24,7 @@ let E = e => {
         let {
             transitionState: t,
             onClose: n
-        } = e, [i, A] = r.useState(!0), [x, I] = r.useState([]), [v, N] = r.useState("selection"), j = (0, l.bG)([_.default], () => _.default.isAuthenticated()), S = (0, l.bG)([c.A], () => c.A.hasLoadedExperiments), C = r.useCallback(() => {
+        } = e, [i, A] = r.useState(!0), [x, I] = r.useState([]), [N, v] = r.useState("selection"), j = (0, l.bG)([_.default], () => _.default.isAuthenticated()), S = (0, l.bG)([c.A], () => c.A.hasLoadedExperiments), C = r.useCallback(() => {
             (0, h.OY)().then(e => {
                 let {
                     body: {
@@ -45,22 +45,22 @@ let E = e => {
                 S || (await o.A.getLocationMetadata(), o.A.getExperiments())
             })()
         }, [S]);
-        let y = x.filter(e => e !== u.tY.MEDIA_TAKEDOWN),
-            T = x.includes(u.tY.MEDIA_TAKEDOWN),
-            b = y.length > 0,
-            R = b && T;
+        let T = x.filter(e => e !== u.tY.MEDIA_TAKEDOWN),
+            y = x.includes(u.tY.MEDIA_TAKEDOWN),
+            b = T.length > 0,
+            R = b && y;
         r.useEffect(() => {
-            !i && S && !R && (b ? N("dsa") : T && N("tida"))
-        }, [i, S, R, b, T]), r.useEffect(() => {
-            i || !S || b || T || n()
-        }, [i, S, b, T, n]);
+            !i && S && !R && (b ? v("dsa") : y && v("tida"))
+        }, [i, S, R, b, y]), r.useEffect(() => {
+            i || !S || b || y || n()
+        }, [i, S, b, y, n]);
         let O = r.useCallback(e => {
-                N(e)
-            }, []),
-            w = r.useCallback(() => {
-                N("selection")
+                v(e)
             }, []),
             L = r.useCallback(() => {
+                v("selection")
+            }, []),
+            w = r.useCallback(() => {
                 (0, a.mMO)(() => Promise.resolve(e => (0, s.jsx)(E, {
                     ...e
                 })), {
@@ -89,7 +89,7 @@ let E = e => {
                     children: (0, s.jsx)(a.y$y, {})
                 }) : (0, s.jsxs)(a.tN_, {
                     width: "100%",
-                    activeSlide: v,
+                    activeSlide: N,
                     centered: !1,
                     children: [(0, s.jsx)(a.q7S, {
                         id: "selection",
@@ -100,20 +100,20 @@ let E = e => {
                         id: "dsa",
                         children: (0, s.jsx)(p.c, {
                             showBackButton: R,
-                            onBack: R ? w : void 0,
-                            dsaCapabilities: y,
+                            onBack: R ? L : void 0,
+                            dsaCapabilities: T,
                             renderFooter: k,
                             onClose: n,
-                            onReopen: L
+                            onReopen: w
                         })
                     }), (0, s.jsx)(a.q7S, {
                         id: "tida",
                         children: (0, s.jsx)(m.K, {
                             showBackButton: R,
-                            onBack: R ? w : void 0,
+                            onBack: R ? L : void 0,
                             renderFooter: k,
                             onClose: n,
-                            onReopen: L
+                            onReopen: w
                         })
                     })]
                 })

@@ -30,11 +30,11 @@ var l = n(627968),
     v = n(486020),
     D = n(914853),
     R = n(545807),
-    U = n(406595),
-    O = n(652215),
+    O = n(406595),
+    U = n(652215),
     G = n(985018),
-    w = n(742466);
-let F = i.memo(function(e) {
+    F = n(742466);
+let w = i.memo(function(e) {
     let {
         startTimestampMs: t
     } = e, n = (0, R.A)(), [l, r] = i.useState(() => Date.now());
@@ -45,7 +45,7 @@ let F = i.memo(function(e) {
     let s = Math.max(0, (l - t) / 1e3);
     return (0, m.f)(s)
 });
-F.displayName = "OverlayElapsedTime";
+w.displayName = "OverlayElapsedTime";
 let L = i.memo(function() {
     let e = (0, R.A)(),
         [t, n] = i.useState(() => Date.now());
@@ -83,8 +83,8 @@ function b(e) {
         M = (0, a.bG)([p.A], () => null != x ? p.A.getChannel(x) : null, [x]),
         D = (0, h.Ay)(M),
         R = (0, g.A)(m ?? "0") ?? null,
-        U = null != m ? R : null,
-        b = null == (n = (0, c.A)(s, !0).text ?? d) ? null : s?.type === O.$pd.PLAYING || null == s ? G.intl.formatToPlainString(G.t.lFApmz, {
+        O = null != m ? R : null,
+        b = null == (n = (0, c.A)(s, !0).text ?? d) ? null : s?.type === U.$pd.PLAYING || null == s ? G.intl.formatToPlainString(G.t.lFApmz, {
             game: n
         }) : n,
         k = s?.timestamps?.start != null ? (t = s.timestamps.start) < 1e12 ? 1e3 * t : t : null,
@@ -112,8 +112,8 @@ function b(e) {
             activityLabel: b,
             activityStartTimestampMs: k,
             voiceCallName: D,
-            customStatusActivity: U
-        }), [b, k, D, U]);
+            customStatusActivity: O
+        }), [b, k, D, O]);
     if (null == r) return null;
     let j = null == r.banner ? null : (0, v.z)({
             id: r.id,
@@ -123,40 +123,40 @@ function b(e) {
         }) ?? null,
         V = r.globalName ?? r.username;
     return (0, l.jsxs)("div", {
-        className: w.cI,
+        className: F.cI,
         children: [(0, l.jsx)("div", {
-            className: w.CK,
+            className: F.CK,
             style: {
                 backgroundImage: null != j ? `url(${j})` : void 0
             }
         }), (0, l.jsxs)("div", {
-            className: w.vK,
+            className: F.vK,
             children: [(0, l.jsxs)("div", {
-                className: w.iy,
+                className: F.iy,
                 children: [(0, l.jsx)(o.A, {
                     user: r,
                     isMobile: _,
                     status: y,
-                    className: w.my,
+                    className: F.my,
                     size: u._3J.SIZE_40
                 }), (0, l.jsxs)("div", {
-                    className: w.ic,
+                    className: F.ic,
                     children: [(0, l.jsx)(E.A, {
                         userName: V,
-                        textClassName: w.Xh,
+                        textClassName: F.Xh,
                         displayNameStyles: T,
                         effectDisplayType: f.G.ANIMATED
                     }), (() => {
                         switch (P.type) {
                             case "activity":
                                 return (0, l.jsxs)("div", {
-                                    className: w.nU,
+                                    className: F.nU,
                                     children: [(0, l.jsx)(u._xR, {
                                         size: "xxs",
                                         color: "currentColor",
-                                        className: w.Wo
+                                        className: F.Wo
                                     }), (0, l.jsx)(u.Text, {
-                                        className: w.Yg,
+                                        className: F.Yg,
                                         variant: "text-xs/medium",
                                         color: "text-subtle",
                                         children: P.label
@@ -164,13 +164,13 @@ function b(e) {
                                 });
                             case "voice_call":
                                 return (0, l.jsxs)("div", {
-                                    className: w.nU,
+                                    className: F.nU,
                                     children: [(0, l.jsx)(u.HKD, {
                                         size: "xxs",
                                         color: "currentColor",
-                                        className: w.Wo
+                                        className: F.Wo
                                     }), (0, l.jsx)(u.Text, {
-                                        className: w.Yg,
+                                        className: F.Yg,
                                         variant: "text-xs/medium",
                                         color: "text-subtle",
                                         children: P.label
@@ -178,12 +178,12 @@ function b(e) {
                                 });
                             case "custom_status":
                                 return (0, l.jsx)("div", {
-                                    className: w.nU,
+                                    className: F.nU,
                                     children: (0, l.jsx)(I.A, {
                                         activity: P.customStatusActivity,
-                                        className: w.tR,
-                                        emojiClassName: w.qp,
-                                        textClassName: w.Yg,
+                                        className: F.tR,
+                                        emojiClassName: F.qp,
+                                        textClassName: F.Yg,
                                         hideTooltip: !0
                                     })
                                 });
@@ -193,14 +193,14 @@ function b(e) {
                     })()]
                 })]
             }), "activity" === P.type ? null == P.startTimestampMs ? null : (0, l.jsx)(u.Text, {
-                className: w.p0,
+                className: F.p0,
                 variant: "code",
                 tag: "div",
-                children: (0, l.jsx)(F, {
+                children: (0, l.jsx)(w, {
                     startTimestampMs: P.startTimestampMs
                 })
             }) : "voice_call" === P.type ? null == x ? null : (0, l.jsx)(u.Text, {
-                className: w.p0,
+                className: F.p0,
                 variant: "code",
                 tag: "div",
                 children: (0, l.jsx)(L, {})
@@ -222,11 +222,11 @@ function k(e) {
         voiceHasActiveFavorites: h,
         friendsHasTypingInFavorites: g,
         messagesHasTypingInFavorites: I
-    } = (0, a.cf)([U.A, _.Ay, p.A, M.A, y.A, x.default], () => {
+    } = (0, a.cf)([O.A, _.Ay, p.A, M.A, y.A, x.default], () => {
         let e = x.default.getCurrentUser()?.id ?? null,
-            [t] = U.A.getFavoriteTargetIdsForTab(D.x.FRIENDS),
-            [n] = U.A.getFavoriteTargetIdsForTab(D.x.MESSAGES),
-            [l] = U.A.getFavoriteTargetIdsForTab(D.x.VOICE),
+            [t] = O.A.getFavoriteTargetIdsForTab(D.x.FRIENDS),
+            [n] = O.A.getFavoriteTargetIdsForTab(D.x.MESSAGES),
+            [l] = O.A.getFavoriteTargetIdsForTab(D.x.VOICE),
             i = e => _.Ay.hasUnread(e) || _.Ay.getMentionCount(e) > 0,
             r = t => {
                 let n = y.A.getTypingUsers(t);
@@ -266,13 +266,13 @@ function k(e) {
         [D.x.VOICE]: !1
     }), [f, g, I]);
     return (0, l.jsxs)("div", {
-        className: w.kL,
+        className: F.kL,
         children: [(0, l.jsx)(b, {
             currentUser: t,
             activity: n,
             currentGameName: r
         }), (0, l.jsx)("div", {
-            className: w.vR,
+            className: F.vR,
             role: "tablist",
             "aria-label": G.intl.string(G.t.TdEu5X),
             children: [{
@@ -311,11 +311,11 @@ function P(e) {
         shouldPulseDot: a = !1,
         onSelect: o,
         className: d
-    } = e, c = r ? s()(w.OD, a && w.S) : null;
+    } = e, c = r ? s()(F.OD, a && F.S) : null;
     return (0, l.jsxs)(u.DUT, {
         role: "tab",
         "aria-selected": i,
-        className: s()(w.Mf, i && w.jP, d),
+        className: s()(F.Mf, i && F.jP, d),
         onClick: () => o(t),
         children: [null != c ? (0, l.jsx)("span", {
             className: c,

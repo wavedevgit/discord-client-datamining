@@ -34,7 +34,7 @@ let T = i.memo(function(e) {
     }(t, T), R = (0, a.A)({
         userId: T,
         guildId: n
-    }), U = (0, r.bG)([g.A], () => null != n && null != g.A.getStreamForUser(T, n), [n, T]), O = (0, E.tx)(n ?? void 0, t, v), G = i.useCallback(e => {
+    }), O = (0, r.bG)([g.A], () => null != n && null != g.A.getStreamForUser(T, n), [n, T]), U = (0, E.tx)(n ?? void 0, t, v), G = i.useCallback(e => {
         (0, f.Vq)(v) && null != D && C?.({
             type: S.K.VOICE_USER,
             event: e,
@@ -65,13 +65,13 @@ let T = i.memo(function(e) {
                 children: [(0, l.jsx)(s.euF, {
                     src: v.getAvatarURL(n ?? void 0, 24),
                     size: s._3J.SIZE_24,
-                    "aria-label": O
+                    "aria-label": U
                 }), (0, l.jsxs)(s.Text, {
                     className: N.rg,
                     variant: "text-sm/medium",
                     color: "text-subtle",
                     children: [(0, l.jsx)(o.A, {
-                        userName: O,
+                        userName: U,
                         displayNameStyles: R,
                         effectDisplayType: u.G.STATIC,
                         textClassName: N.m2
@@ -86,7 +86,7 @@ let T = i.memo(function(e) {
                         guildId: n ?? void 0,
                         user: v,
                         video: D.selfVideo,
-                        isStreaming: U,
+                        isStreaming: O,
                         className: N.ZA,
                         iconClassName: N.Ow,
                         isWatching: !1,

@@ -1,23 +1,23 @@
-/** chunk id: 98207, original params: e,t,r (module,exports,require) **/
+/** chunk id: 98207, original params: e,t,s (module,exports,require) **/
 "use strict";
-r.d(t, {
+s.d(t, {
     A: () => a
 });
-var s = r(562465),
-    n = r(73153),
-    o = r(670492),
-    i = r(652215);
+var r = s(562465),
+    n = s(73153),
+    i = s(670492),
+    o = s(652215);
 let a = {
     enable(e) {
         let {
             code: t,
-            secret: r
+            secret: s
         } = e;
-        return s.Bo.post({
-            url: i.Rsh.MFA_TOTP_ENABLE,
+        return r.Bo.post({
+            url: o.Rsh.MFA_TOTP_ENABLE,
             body: {
                 code: t,
-                secret: r
+                secret: s
             },
             oldFormErrors: !0,
             rejectWithError: !1
@@ -28,8 +28,8 @@ let a = {
         }))
     },
     disable() {
-        s.Bo.post({
-            url: i.Rsh.MFA_TOTP_DISABLE,
+        r.Bo.post({
+            url: o.Rsh.MFA_TOTP_DISABLE,
             oldFormErrors: !0,
             rejectWithError: !1
         }).then(e => {
@@ -46,8 +46,8 @@ let a = {
     },
     enableSMS: () => (n.h.dispatch({
         type: "MFA_SMS_TOGGLE"
-    }), s.Bo.post({
-        url: i.Rsh.MFA_SMS_ENABLE,
+    }), r.Bo.post({
+        url: o.Rsh.MFA_SMS_ENABLE,
         oldFormErrors: !0,
         rejectWithError: !1
     }).then(e => (n.h.dispatch({
@@ -59,8 +59,8 @@ let a = {
     })),
     disableSMS: e => (n.h.dispatch({
         type: "MFA_SMS_TOGGLE"
-    }), s.Bo.post({
-        url: i.Rsh.MFA_SMS_DISABLE,
+    }), r.Bo.post({
+        url: o.Rsh.MFA_SMS_DISABLE,
         body: {
             password: e
         },
@@ -73,8 +73,8 @@ let a = {
             type: "MFA_SMS_TOGGLE_COMPLETE"
         }), e
     })),
-    sendMFABackupCodesVerificationKeyEmail: e => s.Bo.post({
-        url: i.Rsh.MFA_SEND_VERIFICATION_KEY,
+    sendMFABackupCodesVerificationKeyEmail: e => r.Bo.post({
+        url: o.Rsh.MFA_SEND_VERIFICATION_KEY,
         body: {
             password: e
         },
@@ -91,14 +91,14 @@ let a = {
     }),
     confirmViewBackupCodes(e, t) {
         let {
-            viewNonce: r,
+            viewNonce: s,
             regenerateNonce: a
-        } = o.A.getNonces();
-        return s.Bo.post({
-            url: i.Rsh.MFA_CODES_VERIFICATION,
+        } = i.A.getNonces();
+        return r.Bo.post({
+            url: o.Rsh.MFA_CODES_VERIFICATION,
             body: {
                 key: e,
-                nonce: t ? a : r,
+                nonce: t ? a : s,
                 regenerate: t
             },
             oldFormErrors: !0,

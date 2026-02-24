@@ -14,13 +14,13 @@ function d(e) {
         mfaChallenge: t,
         finish: n,
         setSlide: d,
-        onClose: c,
-        isSlideReady: u,
+        onClose: u,
+        isSlideReady: c,
         headerAlignStart: h
     } = e, [g, m] = s.useState(!1), [f, x] = s.useState(null), [S, p] = s.useState(""), j = s.useRef(null);
     return s.useEffect(() => {
-        u && j.current?.focus()
-    }, [u]), (0, l.jsxs)("form", {
+        c && j.current?.focus()
+    }, [c]), (0, l.jsxs)("form", {
         onSubmit: e => {
             e.preventDefault(), m(!0), x(null), n({
                 mfaType: "totp",
@@ -32,7 +32,7 @@ function d(e) {
             })
         },
         children: [(0, l.jsx)(a.A.SlideHeader, {
-            onClose: c,
+            onClose: u,
             headerAlignStart: h
         }), (0, l.jsxs)(a.A.SlideContent, {
             scrollbarType: "none",
