@@ -8,8 +8,8 @@ var n = r(627968),
     s = r.n(l),
     i = r(524007),
     d = r(844222),
-    o = r(786558),
-    u = r(799226),
+    u = r(786558),
+    o = r(799226),
     c = r(397927),
     m = r(92949);
 let h = {
@@ -33,37 +33,37 @@ let h = {
             className: r,
             cardClassName: l,
             cardStyle: x = p,
-            cardType: g,
-            artboard: _ = "BaseGlowRemapped",
-            fit: f = "layout",
-            glowAmount: b = 8,
-            blurAmount: N = 30,
+            cardType: f,
+            artboard: g = "BaseGlowRemapped",
+            fit: _ = "layout",
+            glowAmount: N = 8,
+            blurAmount: b = 30,
             hueRotate: v = 0,
             isReducedMotion: R
-        } = e, A = a.useRef(null), E = a.useRef(null), {
+        } = e, E = a.useRef(null), A = a.useRef(null), {
             status: C,
             buffer: T
-        } = (0, u.CE)(i.A), j = a.useContext(d.C), I = R ?? j.reducedMotion.enabled, y = {
-            "--custom-glow-amount": `${b}px`,
-            "--custom-blur-amount": `${N}px`,
+        } = (0, o.CE)(i.A), j = a.useContext(d.C), P = R ?? j.reducedMotion.enabled, y = {
+            "--custom-glow-amount": `${N}px`,
+            "--custom-blur-amount": `${b}px`,
             "--custom-hue-rotate": `${v}deg`,
-            "--custom-glow-opacity": +(0 !== b)
+            "--custom-glow-opacity": +(0 !== N)
         };
         return (0, n.jsxs)("div", {
-            ref: A,
+            ref: E,
             className: s()(m.k, r),
             style: y,
-            children: [C !== u.BW.Loading && (0, n.jsx)(o.w, {
+            children: [C !== o.BW.Loading && (0, n.jsx)(u.w, {
                 buffer: T,
-                artboard: _,
+                artboard: g,
                 artboardProperties: h,
-                eventTargetRef: A,
+                eventTargetRef: E,
                 className: m.Q,
-                ref: E,
-                fit: f,
-                withReducedMotion: I ? "halt" : "play"
+                ref: A,
+                fit: _,
+                withReducedMotion: P ? "halt" : "play"
             }), (0, n.jsx)(c.ZpM, {
-                type: g ?? c.sl2.CUSTOM,
+                type: f ?? c.sl2.CUSTOM,
                 className: l,
                 style: x,
                 children: t

@@ -1,66 +1,61 @@
 /** chunk id: 94264, original params: e,t,r (module,exports,require) **/
 r.d(t, {
-    A: () => x
+    A: () => p
 });
 var n = r(627968);
 r(64700);
 var a = r(503698),
     l = r.n(a),
     s = r(892227),
-    i = r(311907),
-    d = r(827734),
-    o = r(732955),
+    i = r(827734),
+    d = r(732955),
     u = r(613566),
-    c = r(895944),
-    m = r(649032),
-    h = r(837902);
-let p = {
+    o = r(649032),
+    c = r(320118),
+    m = r(837902);
+let h = {
         churning: {
-            start: d.A.unsafe_rawColors.OPACITY_RED_80.css,
-            end: d.A.unsafe_rawColors.RED_NEW_30.css
+            start: i.A.unsafe_rawColors.OPACITY_RED_80.css,
+            end: i.A.unsafe_rawColors.RED_NEW_30.css
         },
         active: {
-            start: d.A.unsafe_rawColors.OPACITY_GREEN_80.css,
-            end: d.A.unsafe_rawColors.GREEN_NEW_30.css
+            start: i.A.unsafe_rawColors.OPACITY_GREEN_80.css,
+            end: i.A.unsafe_rawColors.GREEN_NEW_30.css
         }
     },
-    x = e => {
+    p = e => {
         let {
             className: t
         } = e, {
             passesProgressBarInvariant: r,
             programReward: a,
-            totalDays: d
-        } = (0, i.cf)([c.A], () => ({
-            passesProgressBarInvariant: c.A.passesProgressBarInvariant(m.W.NITRO),
-            programReward: c.A.getRewardForProgram(m.W.NITRO),
-            totalDays: c.A.getTotalDaysInDuration(m.W.NITRO)
-        }));
-        if (!r || null == a || null == d) return null;
-        let x = (0, s.default)(new Date(a.next_reward_date), new Date),
-            g = a.program_current_state === m.L.PREMIUM_CHURNING,
-            _ = g ? p.churning.start : p.active.start,
-            f = g ? p.churning.end : p.active.end;
+            totalDays: i
+        } = (0, c.F)();
+        if (!r || null == a || null == i) return null;
+        let p = (0, s.default)(new Date(a.next_reward_date), new Date),
+            x = a.program_current_state === o.L.PREMIUM_CHURNING,
+            f = x ? h.churning.start : h.active.start,
+            g = x ? h.churning.end : h.active.end;
         return (0, n.jsxs)("div", {
-            className: l()(h.k, t),
+            className: l()(m.k, t),
             children: [(0, n.jsx)(u.Ay, {
                 variant: u.qP.UNSET,
-                progress: d - x,
-                maximum: d,
+                progress: i - p,
+                maximum: i,
                 override: {
                     default: {
-                        gradientStart: _,
-                        gradientEnd: f
+                        gradientStart: f,
+                        gradientEnd: g
                     }
                 }
-            }), g ? (0, n.jsx)(o.tvc, {
+            }), x ? (0, n.jsx)(d.tvc, {
                 size: "sm",
                 color: "currentColor",
-                className: h.K
-            }) : (0, n.jsx)(o.Cp8, {
+                className: m.K
+            }) : (0, n.jsx)(d.Cp8, {
                 size: "sm",
                 color: "currentColor",
-                className: h.K
+                className: m.K
             })]
         })
     }

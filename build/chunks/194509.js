@@ -10,8 +10,8 @@ var a = r(503698),
     s = r(582754),
     i = r(421380),
     d = r(397927),
-    o = r(736653),
-    u = r(783420),
+    u = r(736653),
+    o = r(783420),
     c = r(788868),
     m = r(985018),
     h = r(194597);
@@ -24,34 +24,34 @@ let p = e => e === c.pe.TIER_0 ? m.intl.string(m.t.rk4Uu8) : m.intl.string(m.t.V
             look: c,
             hideIcon: m,
             subscriptionTier: x,
-            premiumModalAnalyticsLocation: g,
-            giftMessage: _,
-            onClick: f
-        } = e, b = (0, o.Ay)(), N = p(x);
-        return (0, n.jsx)(u.A, {
+            premiumModalAnalyticsLocation: f,
+            giftMessage: g,
+            onClick: _
+        } = e, N = (0, u.Ay)(), b = p(x);
+        return (0, n.jsx)(o.A, {
             isGift: !0,
             subscriptionTier: x,
-            premiumModalAnalyticsLocation: g,
-            giftMessage: _,
-            onClick: f,
+            premiumModalAnalyticsLocation: f,
+            giftMessage: g,
+            onClick: _,
             children: e => {
                 let {
-                    onClick: o
+                    onClick: u
                 } = e;
                 return (0, n.jsxs)(i.$n, {
                     "data-migration-pending": !0,
                     innerClassName: h.Nq,
-                    color: a ?? ((0, s.Mw)(b) ? i.XD.WHITE : i.XD.BRAND),
+                    color: a ?? ((0, s.Mw)(N) ? i.XD.WHITE : i.XD.BRAND),
                     look: c ?? i.pR.OUTLINED,
                     className: l()(t, h.xP),
-                    onClick: o,
+                    onClick: u,
                     children: [!m && (0, n.jsx)(d.okO, {
                         size: "md",
                         color: "currentColor",
                         className: h.ez
                     }), (0, n.jsx)("span", {
                         className: l()(h._d, r?.textClassName),
-                        children: r?.textOverride ?? N
+                        children: r?.textOverride ?? b
                     })]
                 })
             }
