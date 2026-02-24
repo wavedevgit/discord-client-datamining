@@ -78,31 +78,31 @@ function P() {
     }(e), !0;
     let t = null != e ? e.recipients : [];
     if (null != i) {
-        let e, n, l, s = x.default.getCurrentUser(),
-            a = s?.isStaff() ?? !1,
-            r = d.A.getConfig({
+        let n, l, s, a = x.default.getCurrentUser(),
+            r = a?.isStaff() ?? !1,
+            o = d.A.getConfig({
                 location: "PrivateChannelRecipientsInviteStore"
             }).enabled;
         i.setQuery({
             query: T,
-            filters: r ? void 0 : {
+            filters: o && null == e ? void 0 : {
                 friends: !0,
-                staff: a,
+                staff: r,
                 provisional: !1
             },
             blacklist: t,
-            boosters: (n = Math.max(...(e = f.A.getFrequentlyWithoutFetchingLatest().filter(e => e instanceof h.cq && e.isDM())).map(e => {
+            boosters: (l = Math.max(...(n = f.A.getFrequentlyWithoutFetchingLatest().filter(e => e instanceof h.cq && e.isDM())).map(e => {
                 let {
                     id: t
                 } = e;
                 return f.A.getScoreWithoutFetchingLatest(t)
-            })), l = {}, e.forEach(e => {
+            })), s = {}, n.forEach(e => {
                 let t = f.A.getScoreWithoutFetchingLatest(e.id),
-                    i = e.getRecipientId(),
-                    s = .2 * !!E.A.isFriend(i),
-                    a = .1 * (null != g.A.getDMFromUserId(i));
-                l[i] = 1 + t / n + s + a
-            }), l)
+                    n = e.getRecipientId(),
+                    i = .2 * !!E.A.isFriend(n),
+                    a = .1 * (null != g.A.getDMFromUserId(n));
+                s[n] = 1 + t / l + i + a
+            }), s)
         })
     }
     return !1
