@@ -1,6 +1,6 @@
 /** chunk id: 166913, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => w
+    A: () => H
 });
 var i = n(627968),
     s = n(64700),
@@ -46,14 +46,14 @@ let V = e => {
             lifted: t
         }) : null
     },
-    w = () => {
+    H = () => {
         (0, h.P)(g.b);
         let e = s.useRef(null),
             t = s.useRef(null),
             n = s.useRef(null),
             a = (0, _.Ay)(),
             R = (0, d.Mw)(a),
-            [w, H] = s.useState(!1),
+            [H, w] = s.useState(!1),
             [B, Y] = s.useState(!1),
             [F, z] = s.useState(!1),
             [W, K] = s.useState(!1),
@@ -133,7 +133,7 @@ let V = e => {
                     config: ei
                 }), (0, i.jsx)(c.L, {
                     innerRef: t,
-                    onChange: e => H(e),
+                    onChange: e => w(e),
                     threshold: 0,
                     active: !0,
                     children: (0, i.jsx)(f.Ay, {
@@ -159,7 +159,7 @@ let V = e => {
             }), (0, i.jsx)("div", {
                 className: U.hz
             }), (0, i.jsx)(I.A, {
-                isVisible: !w && !B && W,
+                isVisible: !H && !B && W,
                 subscriptionTier: Q,
                 isApplicationHome: !1,
                 isEligibleForBogoPromotion: et

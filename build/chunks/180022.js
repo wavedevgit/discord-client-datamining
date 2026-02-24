@@ -36,21 +36,21 @@ let N = s.memo(e => {
         isEasterEggTriggered: U,
         onHover: k,
         onUnhover: V
-    } = (0, h.A)(5), w = s.useMemo(() => (0, r.debounce)(() => {
+    } = (0, h.A)(5), H = s.useMemo(() => (0, r.debounce)(() => {
         A.default.track(T.HAw.PREMIUM_MARKETING_WHAT_IS_NEW_CARD_HOVERED, {
             card_type: (0, r.snakeCase)(t)
         })
-    }, 800), [t]), H = s.useMemo(() => (0, r.debounce)(() => {
+    }, 800), [t]), w = s.useMemo(() => (0, r.debounce)(() => {
         null != C && A.default.track(T.HAw.PERK_DISCOVERABILITY_CARD_CTA_CLICKED, {
             card_type: (0, r.snakeCase)(t),
             function_name: (0, r.snakeCase)(C.name)
         })
     }, 800), [t, C]);
     e = {
-        onMouseEnter: w,
+        onMouseEnter: H,
         ...e,
         onCtaClick: null != C ? () => {
-            C?.(), H()
+            C?.(), w()
         } : void 0
     };
     let B = D !== a || null == a || R;

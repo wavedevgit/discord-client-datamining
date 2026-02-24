@@ -1,6 +1,6 @@
 /** chunk id: 598998, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => H
+    A: () => w
 });
 var i = n(627968),
     s = n(64700),
@@ -39,14 +39,14 @@ var i = n(627968),
     U = n(419455),
     k = n(288604),
     V = n(174872),
-    w = n(509442);
+    H = n(509442);
 
-function H() {
+function w() {
     let {
         analyticsLocations: e
     } = (0, d.Ay)(c.A.PREMIUM_MARKETING_PERK_CARD), t = (0, E.O9)(), a = p.A.useExperiment({
         location: "PremiumWhatsNewSection"
-    }).enabled, H = (0, A.A)({
+    }).enabled, w = (0, A.A)({
         scrollPosition: R._F.TRY_IT_OUT,
         analyticsLocations: e
     }), B = (0, s.useCallback)(() => {
@@ -146,7 +146,7 @@ function H() {
                 description: P.intl.formatToPlainString(P.t.WQazjs, {
                     themeCount: 20
                 }),
-                primaryAsset: w.A,
+                primaryAsset: H.A,
                 ctaText: P.intl.string(P.t.jVcuVY),
                 onCtaClick: () => {
                     (0, _.nf)(_.HP.CUSTOM_THEME)
@@ -160,7 +160,7 @@ function H() {
                     ariaHidden: !0
                 }),
                 ctaText: P.intl.string(P.t.jVcuVY),
-                onCtaClick: H
+                onCtaClick: w
             }, {
                 id: b.WL,
                 title: P.intl.string(P.t.rkb1vA),
@@ -172,5 +172,5 @@ function H() {
             d = (c = c.filter(e => null != e))[0].featured,
             u = d ? 5 : 6;
         return c.splice(+!!d, 0, s), c.length > u && c.splice(u, c.length - u), c
-    }, [W, q, Z, K, t, a, J, Q, e, B, Y, H, X, z])
+    }, [W, q, Z, K, t, a, J, Q, e, B, Y, w, X, z])
 }

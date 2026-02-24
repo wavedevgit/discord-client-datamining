@@ -2,8 +2,8 @@
 n.d(t, {
     A: () => S
 });
-var s = n(311907),
-    i = n(73153);
+var i = n(311907),
+    s = n(73153);
 let r = {},
     l = null,
     o = [],
@@ -15,7 +15,7 @@ let r = {},
 function h() {
     c = !0
 }
-class _ extends s.Ay.Store {
+class _ extends i.Ay.Store {
     static displayName = "AppliedGuildBoostStore";
     getAppliedGuildBoostsForGuild(e) {
         return null != r[e] ? r[e].subscriptions : null
@@ -45,7 +45,7 @@ class _ extends s.Ay.Store {
         return a
     }
 }
-let S = new _(i.h, {
+let S = new _(s.h, {
     GUILD_APPLIED_BOOSTS_FETCH_SUCCESS: function(e) {
         let {
             guildId: t,

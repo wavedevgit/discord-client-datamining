@@ -1,76 +1,76 @@
-/** chunk id: 228855, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    default: () => D
+/** chunk id: 228855, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    default: () => f
 });
 var n = i(627968),
-    l = i(64700),
+    s = i(64700),
     a = i(731738),
     r = i(158954),
-    s = i(311907),
-    u = i(397927),
-    d = i(263063),
-    o = i(831062),
-    c = i(253932),
+    l = i(311907),
+    d = i(397927),
+    u = i(263063),
+    c = i(831062),
+    o = i(253932),
     S = i(71393),
-    A = i(115063),
-    g = i(360966),
-    _ = i(386936),
-    f = i(985018),
-    m = i(818639);
+    h = i(115063),
+    _ = i(360966),
+    A = i(386936),
+    E = i(985018),
+    T = i(818639);
 
-function D(t) {
+function f(e) {
     let {
-        transitionState: e,
+        transitionState: t,
         guildId: i,
-        onClose: D
-    } = t, p = (0, s.bG)([S.A], () => S.A.getGuild(i));
-    if (l.useEffect(() => {
-            (0, g.Q)(i), (0, _.$)(_.s.MODAL_VIEWED, i), o.A.increment({
+        onClose: f
+    } = e, g = (0, l.bG)([S.A], () => S.A.getGuild(i));
+    if (s.useEffect(() => {
+            (0, _.Q)(i), (0, A.$)(A.s.MODAL_VIEWED, i), c.A.increment({
                 name: a.K.DM_SETTINGS_UPSELL_VIEW
             })
-        }, [i]), null == p) return null;
-    let T = t => {
-        t.preventDefault();
-        let e = (0, A.Tb)();
-        e.add(i), c.$s.updateSetting(Array.from(e)).then(() => (0, u.showToast)((0, u.createToast)(f.intl.string(f.t.rlYD1W), u.ToastType.SUCCESS))), D(), (0, _.$)(_.s.MODAL_DISABLED_DMS, i)
+        }, [i]), null == g) return null;
+    let m = e => {
+        e.preventDefault();
+        let t = (0, h.Tb)();
+        t.add(i), o.$s.updateSetting(Array.from(t)).then(() => (0, d.showToast)((0, d.createToast)(E.intl.string(E.t.rlYD1W), d.ToastType.SUCCESS))), f(), (0, A.$)(A.s.MODAL_DISABLED_DMS, i)
     };
     return (0, n.jsx)("form", {
-        onSubmit: T,
+        onSubmit: m,
         children: (0, n.jsx)(r.Modal, {
-            transitionState: e,
-            onClose: D,
-            title: f.intl.string(f.t.w2BvnL),
-            subtitle: f.intl.format(f.t.Depjkv, {
-                guild_name: p.name
+            transitionState: t,
+            onClose: f,
+            title: E.intl.string(E.t.w2BvnL),
+            subtitle: E.intl.format(E.t.Depjkv, {
+                guild_name: g.name
             }),
             actions: [{
-                text: f.intl.string(f.t.PsWbcp),
+                text: E.intl.string(E.t.PsWbcp),
                 onClick: () => {
-                    D(), (0, _.$)(_.s.MODAL_DISMISSED, i)
+                    f(), (0, A.$)(A.s.MODAL_DISMISSED, i)
                 },
                 variant: "secondary"
             }, {
-                text: f.intl.string(f.t.TD7iUx),
-                onClick: T
+                text: E.intl.string(E.t.TD7iUx),
+                onClick: m
             }],
-            children: (0, n.jsxs)(u.BJc, {
+            children: (0, n.jsxs)(d.BJc, {
                 direction: "vertical",
                 gap: 8,
-                children: [(0, n.jsx)(u.Text, {
+                children: [(0, n.jsx)(d.Text, {
                     variant: "text-md/medium",
                     color: "text-muted",
-                    children: f.intl.string(f.t.KPB2iw)
+                    children: E.intl.string(E.t.KPB2iw)
                 }), (0, n.jsx)("div", {
-                    className: m.bo,
+                    className: T.bo,
                     children: (0, n.jsxs)("div", {
-                        className: m.OA,
-                        children: [(0, n.jsx)(d.A, {
-                            guild: p,
-                            size: d.A.Sizes.SMALL
-                        }), (0, n.jsx)(u.Text, {
-                            className: m.J5,
+                        className: T.OA,
+                        children: [(0, n.jsx)(u.A, {
+                            guild: g,
+                            size: u.A.Sizes.SMALL
+                        }), (0, n.jsx)(d.Text, {
+                            className: T.J5,
                             variant: "text-md/semibold",
-                            children: p.name
+                            children: g.name
                         })]
                     })
                 })]

@@ -124,14 +124,14 @@ let M = e => {
             handleToggleExpanded: g,
             subscriptionInfo: E
         } = (0, b.A)(t), [C, N] = s.useState(!1), V = (0, h.GV)(), {
-            analyticsLocations: w
+            analyticsLocations: H
         } = (0, A.Ay)(), {
-            shouldHideGuildPurchaseEntryPoints: H
+            shouldHideGuildPurchaseEntryPoints: w
         } = (0, x.MH)(r?.id), B = t?.isPurchasedViaAppleGeneric;
         if (null == a || null == n || null == E) return null;
         let Y = async () => {
             try {
-                N(!0), await u.QP(t, w), (0, R.q)()
+                N(!0), await u.QP(t, H), (0, R.q)()
             } finally {
                 N(!1)
             }
@@ -246,7 +246,7 @@ let M = e => {
                     isTrial: X,
                     isCancelled: F,
                     isResubscribing: C,
-                    shouldHideRoleSubscriptionEntryPoints: H,
+                    shouldHideRoleSubscriptionEntryPoints: w,
                     onCancelSubscriptionClick: () => {
                         null != r && (0, O.q)({
                             groupListing: a,

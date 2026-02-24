@@ -2,8 +2,8 @@
 n.d(t, {
     A: () => o
 });
-var s = n(64700),
-    i = n(607399),
+var i = n(64700),
+    s = n(607399),
     r = n(437852),
     l = n(657515);
 
@@ -13,5 +13,5 @@ function o() {
     } = r.Ay.useConfig({
         location: "useGiftingPromotionConfig"
     });
-    return s.useMemo(() => i.Fr || i.v1 ? null : e ? l.zH : null, [e])
+    return i.useMemo(() => s.Fr || s.v1 ? null : e ? l.zH : null, [e])
 }

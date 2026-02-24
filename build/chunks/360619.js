@@ -62,8 +62,8 @@ function D() {
         U = (0, s.bG)([T.A], () => T.A.hasLibraryApplication()),
         k = (0, s.bG)([E.default], () => E.default.hasTOTPEnabled()),
         V = j.Q_.useSetting(),
-        w = (0, c.A)(),
-        H = (0, d.A)() ?? !0,
+        H = (0, c.A)(),
+        w = (0, d.A)() ?? !0,
         B = (0, h.G)()?.length > 0,
         {
             hasBlockedUsers: Y,
@@ -93,18 +93,18 @@ function D() {
         isInapproprateConversationsDefaultOn: D,
         paymentsBlocked: G,
         isEligibleForQuests: M,
-        isStricterMessageRequestsEnabled: w,
+        isStricterMessageRequestsEnabled: H,
         hasLibraryApplication: U,
         hasTOTPEnabled: k,
         developerMode: V,
-        isAdultUser: H,
+        isAdultUser: w,
         hasSecureFramesVerifiedUserIds: B,
         hasIgnoredUsers: F,
         hasBlockedUsers: Y,
         hasAgeGatedFeature: K,
         isChatMentionSuggestionsSettingEnabled: Z,
         isHDRAccessibilitySettingExperimentEnabled: q
-    }), [V, Y, F, U, B, k, n, H, M, D, L, C, y, w, a, G, R, t, e, K, Z, q])
+    }), [V, Y, F, U, B, k, n, w, M, D, L, C, y, H, a, G, R, t, e, K, Z, q])
 }
 
 function G(e) {

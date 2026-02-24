@@ -39,8 +39,8 @@ var i = n(627968),
     U = n(577174),
     k = n(127493),
     V = n(23003),
-    w = n(16019),
-    H = n(825075),
+    H = n(16019),
+    w = n(825075),
     B = n(768229),
     Y = n(788868),
     F = n(652215),
@@ -128,11 +128,11 @@ let q = () => {
                         onChange: e => en(e),
                         threshold: 0,
                         active: !0,
-                        children: ep ? (0, i.jsx)(w.A, {
+                        children: ep ? (0, i.jsx)(H.A, {
                             ref: q,
                             subscriptionTier: eA,
                             isEligibleForBogoPromotion: eg
-                        }) : (0, i.jsx)(H.A, {
+                        }) : (0, i.jsx)(w.A, {
                             ref: q,
                             subscriptionTier: eA,
                             isDarkMode: ee,

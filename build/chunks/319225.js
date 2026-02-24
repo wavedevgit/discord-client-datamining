@@ -2,9 +2,9 @@
 n.d(t, {
     E: () => a
 });
-var s = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(158954),
+var s = n(158954),
     r = n(397927),
     l = n(985018);
 
@@ -15,7 +15,7 @@ function o(e) {
         body: r,
         onClose: o
     } = e;
-    return (0, s.jsx)(i.Modal, {
+    return (0, i.jsx)(s.Modal, {
         title: n,
         actions: [{
             text: l.intl.string(l.t["NX+WJN"]),
@@ -28,7 +28,7 @@ function o(e) {
 }
 
 function a(e) {
-    (0, r.qfG)(t => (0, s.jsx)(o, {
+    (0, r.qfG)(t => (0, i.jsx)(o, {
         ...t,
         ...e
     }))

@@ -39,8 +39,8 @@ var i, s = n(627968),
     U = n(355097),
     k = n(985018),
     V = n(520650),
-    w = n(927961),
-    H = n(561852),
+    H = n(927961),
+    w = n(561852),
     B = n(522799),
     Y = n(795710),
     F = n(484813),
@@ -88,10 +88,13 @@ let eh = () => {
     }, eb = () => {
         (0, x.pX)(G.BVt.COLLECTIBLES_SHOP)
     }, ej = () => {
-        let e = (0, E.WJ)("openCustomAppSettings");
-        (0, C.openUserSettings)(e ? p.X.APPEARANCE_IN_APP_ICON : p.X.APPEARANCE_PANEL, {
+        let e = (0, E.Ci)("openCustomAppSettings"),
+            t = (0, E.WJ)("openCustomAppSettings"),
+            n = p.X.APPEARANCE_PANEL,
+            i = U.kq.CUSTOM_APP_ICONS;
+        e ? (n = p.X.DISPLAY_IN_APP_ICON_CATEGORY, i = void 0) : t && (n = p.X.APPEARANCE_IN_APP_ICON, i = void 0), (0, C.openUserSettings)(n, {
             section: G.nc_.APPEARANCE,
-            scrollPosition: e ? void 0 : U.kq.CUSTOM_APP_ICONS
+            scrollPosition: i
         })
     }, ev = a.useCallback(() => {
         (0, C.openUserSettings)(p.X.PROFILE_PANEL, {
@@ -108,7 +111,8 @@ let eh = () => {
             description: k.intl.string(k.t.jBTTws),
             descriptionCta: k.intl.string(k.t.jVcuVY),
             onCtaClick: () => {
-                (0, C.openUserSettings)(p.X.APPEARANCE_PANEL, {
+                let t = (0, E.Ci)("openClientThemes");
+                (0, C.openUserSettings)(t ? p.X.DISPLAY_THEME_CATEGORY : p.X.APPEARANCE_PANEL, {
                     section: G.nc_.APPEARANCE,
                     analyticsLocations: e
                 })
@@ -274,7 +278,7 @@ let eh = () => {
             name: "badge",
             title: k.intl.string(k.t.dcFfSJ),
             subtitle: k.intl.string(k.t["37MFFq"]),
-            perkImage: H,
+            perkImage: w,
             description: k.intl.string(k.t.T1IS4j)
         },
         greyBadge: {
@@ -392,8 +396,8 @@ let eh = () => {
         },
         displayNameStyles: {
             name: "displayNameStyles",
-            title: k.intl.string(w.default.ABtBDQ),
-            subtitle: k.intl.string(w.default.jhmU5E),
+            title: k.intl.string(H.default.ABtBDQ),
+            subtitle: k.intl.string(H.default.jhmU5E),
             descriptionCta: k.intl.string(k.t.jVcuVY),
             onCtaClick: ev,
             dismissibleContentType: r.M.DISPLAY_NAME_STYLES_NITRO_HOME_TILE,

@@ -2,13 +2,13 @@
 n.d(t, {
     m: () => o
 });
-var s = n(562465),
-    i = n(73153),
+var i = n(562465),
+    s = n(73153),
     r = n(287809),
     l = n(652215);
 async function o(e, t) {
     try {
-        let n = await s.Bo.put({
+        let n = await i.Bo.put({
             url: l.Rsh.USER_SET_GUILD_IDENTITY,
             body: {
                 identity_guild_id: e,
@@ -16,7 +16,7 @@ async function o(e, t) {
             },
             rejectWithError: !1
         });
-        return n.ok && i.h.dispatch({
+        return n.ok && s.h.dispatch({
             type: "CURRENT_USER_UPDATE",
             user: {
                 ...r.default.getCurrentUser(),

@@ -43,8 +43,8 @@ function M(e) {
         shouldShow: M
     } = e, U = I.Ay.isPremium(t), k = I.Ay.canUseAnimatedAvatar(t), {
         pendingAvatar: V,
-        pendingThemeColors: w,
-        tryItOutThemeColors: H,
+        pendingThemeColors: H,
+        tryItOutThemeColors: w,
         tryItOutAvatar: B,
         tryItOutBanner: Y
     } = (0, a.cf)([C.A], () => {
@@ -66,7 +66,7 @@ function M(e) {
         newestAnalyticsLocation: Z,
         sourceAnalyticsLocations: q
     } = (0, c.Ay)(o.A.USER_SETTINGS_TRY_OUT_PREMIUM), X = e => {
-        e && ((0, r.zq)(B), (0, E.Zz)(H), (0, E.Dv)(Y), S.default.track(y.HAw.TRY_IT_OUT_PRESET_SELECTED, {
+        e && ((0, r.zq)(B), (0, E.Zz)(w), (0, E.Dv)(Y), S.default.track(y.HAw.TRY_IT_OUT_PRESET_SELECTED, {
             preset: F
         }))
     };
@@ -125,7 +125,7 @@ function M(e) {
                             userId: t.id,
                             image: B ?? V
                         }),
-                        pendingColors: H ?? w,
+                        pendingColors: w ?? H,
                         onThemeColorsChange: E.a,
                         showPremiumIcon: !1,
                         preventDisabled: !0

@@ -44,8 +44,8 @@ var i = n(627968),
     U = n(652215),
     k = n(381941),
     V = n(985018),
-    w = n(944255),
-    H = n(473169);
+    H = n(944255),
+    w = n(473169);
 let B = {
         COZY: "cozy",
         COMPACT: "compact"
@@ -93,9 +93,9 @@ let B = {
         })]
     },
     K = () => (0, i.jsxs)("div", {
-        className: w.cF,
+        className: H.cF,
         children: [(0, i.jsxs)("div", {
-            className: w.ZT,
+            className: H.ZT,
             children: [(0, i.jsxs)(d.Text, {
                 variant: "text-md/medium",
                 children: [" ", V.intl.string(V.t["0EzVst"])]
@@ -137,7 +137,7 @@ let B = {
             A = (0, c.Mw)(a) ? u : _;
         return (0, i.jsx)(d.M1G, {
             children: (0, i.jsx)(d.ZpM, {
-                className: l()(w.VH, H.C2, e ? w.Me : void 0, `group-spacing-${null!=o?o:e?k.y5:k.ES}`),
+                className: l()(H.VH, w.C2, e ? H.Me : void 0, `group-spacing-${null!=o?o:e?k.y5:k.ES}`),
                 outline: !0,
                 "aria-hidden": !0,
                 children: A.map((t, n) => (0, i.jsx)(I.A, {
@@ -145,7 +145,7 @@ let B = {
                     message: t,
                     compact: e,
                     isGroupStart: n % 2 == 0,
-                    className: 0 === n ? w.Ck : void 0,
+                    className: 0 === n ? H.Ck : void 0,
                     hideSimpleEmbedContent: m
                 }, t.id))
             })
@@ -301,7 +301,7 @@ class Q extends s.Component {
                 }),
                 value: e
             }), (0, i.jsx)(d.cGx, {
-                className: w.yF
+                className: H.yF
             })]
         }), l = (0, i.jsxs)(f.x, {
             setting: M.H.APPEARANCE_MESSAGE_DISPLAY_COMPACT,
@@ -328,7 +328,7 @@ class Q extends s.Component {
                     onChange: e => this.handleDisplayCompactAvatarsChanged(!e)
                 }), this.renderMessageGroupSpacingSlider()]
             }), (0, i.jsx)(d.cGx, {
-                className: w.yF
+                className: H.yF
             })]
         }), r = (0, i.jsxs)(f.x, {
             setting: M.H.APPEARANCE_SCALING_SPACING,
@@ -336,11 +336,11 @@ class Q extends s.Component {
                 label: V.intl.string(V.t["0Yh+ZX"]),
                 children: [this.renderFontScaleSlider(), this.renderZoomSlider()]
             }), (0, i.jsx)(d.cGx, {
-                className: w.yF
+                className: H.yF
             })]
         }), c = (0, i.jsx)(d.Text, {
             variant: "text-md/normal",
-            className: w.fK,
+            className: H.fK,
             children: (0, i.jsx)(q, {})
         });
         return (0, i.jsxs)(D.A, {

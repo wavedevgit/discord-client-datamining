@@ -2,24 +2,24 @@
 n.d(t, {
     A: () => r
 });
-var s = n(64700),
-    i = n(425587);
+var i = n(64700),
+    s = n(425587);
 let r = function() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
         {
             refreshOnDepChange: t
         } = e,
-        [n, r] = s.useState([]),
-        [l, o] = s.useState(!0),
+        [n, r] = i.useState([]),
+        [l, o] = i.useState(!0),
         a = async () => {
             o(!0);
             try {
-                let e = await i.A.fetchTeams(!0);
+                let e = await s.A.fetchTeams(!0);
                 r(e.body)
             } catch (e) {}
             o(!1)
-        }, c = s.useRef(!0);
-    return s.useEffect(() => {
+        }, c = i.useRef(!0);
+    return i.useEffect(() => {
         (c.current || t) && (c.current = !1, a())
     }, [t]), {
         teams: n,

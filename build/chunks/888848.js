@@ -109,7 +109,7 @@ function G(e) {
                 })]
             }), (0, s.jsx)("div", {
                 className: L.Pz,
-                children: null != G && null != C && null != v && !1 === X && (0, s.jsx)(w, {
+                children: null != G && null != C && null != v && !1 === X && (0, s.jsx)(H, {
                     subscription: t,
                     app: G,
                     guild: b,
@@ -184,7 +184,7 @@ function G(e) {
             loadingState: i,
             isDeleted: F,
             isCancelled: R
-        }), null != G && C?.benefits != null && C.benefits.length > 0 && (0, s.jsx)(H, {
+        }), null != G && C?.benefits != null && C.benefits.length > 0 && (0, s.jsx)(w, {
             appId: G.id,
             listingBenefits: C.benefits
         })]
@@ -293,7 +293,7 @@ function V(e) {
     })
 }
 
-function w(e) {
+function H(e) {
     let {
         app: t,
         storeListing: i,
@@ -370,7 +370,7 @@ function w(e) {
     })
 }
 
-function H(e) {
+function w(e) {
     let {
         appId: t,
         listingBenefits: n

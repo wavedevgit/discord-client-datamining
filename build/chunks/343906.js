@@ -1,7 +1,7 @@
 /** chunk id: 343906, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => Y,
-    O: () => w
+    O: () => H
 });
 var i = n(627968),
     s = n(64700),
@@ -169,7 +169,7 @@ let V = () => {
             })]
         })
     },
-    w = s.memo(e => {
+    H = s.memo(e => {
         let {
             userId: t,
             subText: n,
@@ -194,8 +194,8 @@ let V = () => {
             })]
         })
     });
-w.displayName = "FamilyCenterActivityCardAccountRow";
-let H = () => {
+H.displayName = "FamilyCenterActivityCardAccountRow";
+let w = () => {
         let e = (0, S.GR)(),
             t = (0, c.bG)([A.A], () => A.A.getSelectedTeenId()),
             {
@@ -205,7 +205,7 @@ let H = () => {
                 label: e.id,
                 value: e.id
             })),
-            l = s.useCallback(e => (0, i.jsx)(w, {
+            l = s.useCallback(e => (0, i.jsx)(H, {
                 userId: e.value,
                 avatarSize: u._3J.SIZE_24
             }), []);
@@ -233,7 +233,7 @@ let H = () => {
             n = (0, S.vx)(),
             s = (0, g.cV)(!!t),
             a = (0, S.v4)(s);
-        return null === e ? null : t && 1 !== n.length ? (0, i.jsx)(H, {}) : (0, i.jsx)(w, {
+        return null === e ? null : t && 1 !== n.length ? (0, i.jsx)(w, {}) : (0, i.jsx)(H, {
             userId: e,
             subText: a
         })
