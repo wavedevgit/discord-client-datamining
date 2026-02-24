@@ -18,14 +18,14 @@ var n = i(934551),
     _ = i(136451),
     c = i(531525),
     I = i(985018);
-let N = (0, s.t_)(a.X.APPEARANCE_PANEL, {
+let C = (0, s.t_)(a.X.APPEARANCE_PANEL, {
         useTitle: () => I.intl.string(I.t["iHH+ky"]),
         initialize: () => {
             (0, l.v)()
         },
         buildLayout: () => [g.S, T._, _.u, S.U, E.M, A.d]
     }),
-    C = (0, s.t_)(a.X.APPEARANCE_PANEL, {
+    N = (0, s.t_)(a.X.APPEARANCE_PANEL, {
         useTitle: () => I.intl.string(I.t["iHH+ky"]),
         StronglyDiscouragedCustomComponent: d.Ay,
         buildLayout: () => []
@@ -40,5 +40,5 @@ let N = (0, s.t_)(a.X.APPEARANCE_PANEL, {
             stronglyDiscouragedBadgeComponent: o.AW
         },
         usePredicate: () => !(0, u.bp)("AppearanceSidebarItem"),
-        buildLayout: () => (0, u.WJ)("AppearanceSidebarItem") ? [N] : [C]
+        buildLayout: () => (0, u.WJ)("AppearanceSidebarItem") ? [C] : [N]
     })

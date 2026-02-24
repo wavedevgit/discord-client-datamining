@@ -18,8 +18,8 @@ var n = i(64700),
     _ = i(338145),
     c = i(299752),
     I = i(180491),
-    N = i(903427),
-    C = i(509381),
+    C = i(903427),
+    N = i(509381),
     O = i(985018);
 let L = (0, a.Qx)(A.X.VOICE_INPUT_PROFILE_SETTING, {
         useTitle: () => O.intl.string(O.t.LM3U3k),
@@ -33,7 +33,7 @@ let L = (0, a.Qx)(A.X.VOICE_INPUT_PROFILE_SETTING, {
         },
         useSearchTerms: () => [O.intl.string(O.t.nuFtHH), O.intl.string(O.t.VZPR0R), O.intl.string(O.t.cjPbpT)],
         useValue: function() {
-            return (0, l.bG)([d.Ay], () => d.Ay.getActiveInputProfile() ?? C.m.CUSTOM)
+            return (0, l.bG)([d.Ay], () => d.Ay.getActiveInputProfile() ?? N.m.CUSTOM)
         },
         setValue: function(t) {
             let e = [r.A.USER_SETTINGS_VOICE_AND_VIDEO];
@@ -48,15 +48,15 @@ let L = (0, a.Qx)(A.X.VOICE_INPUT_PROFILE_SETTING, {
                 location: "InputProfileCategory"
             });
             return [{
-                value: C.m.VOICE_ISOLATION,
+                value: N.m.VOICE_ISOLATION,
                 name: O.intl.string(O.t.cjPbpT),
                 desc: O.intl.string(O.t.CzhvnE)
             }, {
-                value: C.m.STUDIO,
+                value: N.m.STUDIO,
                 name: O.intl.string(O.t.VZPR0R),
                 desc: O.intl.string(O.t.ZaJksS)
             }, {
-                value: C.m.CUSTOM,
+                value: N.m.CUSTOM,
                 name: O.intl.string(O.t["N/PQjv"]),
                 desc: O.intl.string(O.t.SnBmuY)
             }].filter(e => {
@@ -81,5 +81,5 @@ let L = (0, a.Qx)(A.X.VOICE_INPUT_PROFILE_SETTING, {
                 }
             }, [t])
         },
-        buildLayout: () => [L, g.O, _.w, E.h, N.K, c.C, I.m, S.U]
+        buildLayout: () => [L, g.O, _.w, E.h, C.K, c.C, I.m, S.U]
     })

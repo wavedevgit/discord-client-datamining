@@ -18,8 +18,8 @@ var n = i(627968),
     _ = i(144605),
     c = i(927766),
     I = i(557571),
-    N = i(18640),
-    C = i(236698),
+    C = i(18640),
+    N = i(236698),
     O = i(976860),
     L = i(392943),
     b = i(954571),
@@ -94,7 +94,7 @@ let X = () => {
             setInstallationStatus: i
         } = (0, I.lV)(), u = (0, E.L)(), d = (0, l.useRef)(!1);
         if ((0, l.useEffect)(() => () => {
-                d.current || C.Ay.fireSurveyAction(u ? s.w.WARP_VPN_SETTINGS_BOUNCE_NITRO : s.w.WARP_VPN_SETTINGS_BOUNCE_NON_NITRO)
+                d.current || N.Ay.fireSurveyAction(u ? s.w.WARP_VPN_SETTINGS_BOUNCE_NITRO : s.w.WARP_VPN_SETTINGS_BOUNCE_NON_NITRO)
             }, [d, u]), e) return (0, n.jsx)(c.X, {
             onClick: () => {
                 d.current = !0
@@ -129,7 +129,7 @@ let X = () => {
                     onClick: () => d.current = !0
                 });
             case g.Lk.INSTALLED:
-                return (0, n.jsx)(N.X, {});
+                return (0, n.jsx)(C.X, {});
             case g.Lk.ZERO_TRUST:
                 break;
             case g.Lk.EXISTING_INSTALLATION:

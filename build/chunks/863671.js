@@ -1,6 +1,6 @@
 /** chunk id: 863671, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    $: () => N,
+    $: () => C,
     C: () => I
 });
 var n = i(64700),
@@ -41,7 +41,7 @@ let _ = (0, a.zZ)(o.X.SESSIONS_CATEGORY, {
         hideInStreamerMode: !0,
         buildLayout: () => [_]
     }),
-    N = (0, a.i4)(o.X.SESSIONS_SIDEBAR_ITEM, {
+    C = (0, a.i4)(o.X.SESSIONS_SIDEBAR_ITEM, {
         useTitle: () => g.intl.string(g.t["+1h0k/"]),
         getLegacySearchKey: () => (0, d.WJ)("SessionsPanel") ? void 0 : E.H.PRIVACY_ENCRYPTION_VERIFIED_DEVICES_V2,
         icon: l.LaptopPhoneIcon,

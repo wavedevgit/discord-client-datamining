@@ -1,6 +1,6 @@
 /** chunk id: 338145, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    w: () => C
+    w: () => N
 }), i(321073);
 var n = i(627968),
     l = i(64700),
@@ -22,7 +22,7 @@ let _ = i(993830),
         section: E.JJy.SETTINGS_VOICE_AND_VIDEO
     };
 
-function N() {
+function C() {
     let t = (0, r.bG)([T.A], () => (0, s.qB1)(T.A.theme));
     return (0, n.jsx)("img", {
         src: t ? _ : c,
@@ -31,7 +31,7 @@ function N() {
         alt: ""
     })
 }
-let C = (0, o.E2)(S.X.VOICE_NOISE_SUPPRESSION_SETTING, {
+let N = (0, o.E2)(S.X.VOICE_NOISE_SUPPRESSION_SETTING, {
     useSearchTerms: () => [g.intl.string(g.t.t8Qhib), g.intl.string(g.t.hmfkCi)],
     usePredicate: function() {
         return (0, r.bG)([d.Ay], () => d.Ay.isInputProfileCustom() && d.Ay.isNoiseSuppressionSupported())
@@ -82,7 +82,7 @@ let C = (0, o.E2)(S.X.VOICE_NOISE_SUPPRESSION_SETTING, {
                 options: S,
                 selectionMode: "single",
                 fullWidth: !0
-            }), T && (0, n.jsx)(N, {})]
+            }), T && (0, n.jsx)(C, {})]
         })
     }
 })

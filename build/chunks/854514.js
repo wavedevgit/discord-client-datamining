@@ -112,7 +112,7 @@ function b(e) {
         j(S.i.INDIRECT_ACTION)
     }, [j]), (0, i.jsx)(f.R, {
         adContentId: t.campaignId,
-        adCreativeType: o.p.QUEST_HOME_HEROES,
+        adCreativeType: o.p.QUEST_HOME_HERO,
         questContent: m.uF.QUEST_HOME_HERO,
         sourceQuestContent: m.uF.QUEST_HOME_HERO,
         children: e => (0, i.jsx)("div", {
@@ -163,7 +163,7 @@ function b(e) {
                                 onClick: () => {
                                     (0, A.A)(t.ctaSponsorUrl.url), (0, g.vK)({
                                         adContentId: t.campaignId,
-                                        adCreativeType: o.p.QUEST_HOME_HEROES,
+                                        adCreativeType: o.p.QUEST_HOME_HERO,
                                         questContent: m.uF.QUEST_HOME_HERO,
                                         questContentCTA: E.Cy.OPEN_GAME_LINK,
                                         sourceQuestContent: m.uF.QUEST_HOME_HERO
@@ -183,7 +183,7 @@ function b(e) {
                                         })
                                     }), (0, g.vK)({
                                         adContentId: t.campaignId,
-                                        adCreativeType: o.p.QUEST_HOME_HEROES,
+                                        adCreativeType: o.p.QUEST_HOME_HERO,
                                         questContent: m.uF.QUEST_HOME_HERO,
                                         questContentCTA: E.Cy.VIEW_QUESTS,
                                         sourceQuestContent: m.uF.QUEST_HOME_HERO

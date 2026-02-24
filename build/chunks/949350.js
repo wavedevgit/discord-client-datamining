@@ -1,6 +1,6 @@
 /** chunk id: 949350, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    Q: () => N
+    Q: () => C
 });
 var n = i(934551),
     l = i(35587),
@@ -29,7 +29,7 @@ let _ = (0, s.zZ)(a.X.GIFT_INVENTORY_CATEGORY, {
         useTitle: () => g.intl.string(g.t["jcSP+g"]),
         buildLayout: () => [_]
     }),
-    N = (0, s.i4)(a.X.GIFT_SIDEBAR_ITEM, {
+    C = (0, s.i4)(a.X.GIFT_SIDEBAR_ITEM, {
         useTitle: () => g.intl.string(g.t["jcSP+g"]),
         getLegacySearchKey: () => (0, u.WJ)("GiftPanel") ? void 0 : E.H.GIFT_INVENTORY,
         icon: n.GiftIcon,

@@ -18,20 +18,20 @@ var n = i(421380),
     _ = i(542457),
     c = i(355097),
     I = i(652215),
-    N = i(985018);
-let C = (t, e) => {
+    C = i(985018);
+let N = (t, e) => {
         a.default.track(I.HAw.GUILD_DEFAULT_DMS_UPDATED, {
             default_guilds_restricted: t,
             applied_to_existing_guilds: e
         })
     },
     O = (0, s.zD)(A.X.CONTENT_AND_SOCIAL_PERMISSIONS_DMS_SETTING, {
-        useTitle: () => (0, S.e)() ? N.intl.string(N.t.PMsfcH) : N.intl.string(N.t.RAQUSN),
+        useTitle: () => (0, S.e)() ? C.intl.string(C.t.PMsfcH) : C.intl.string(C.t.RAQUSN),
         useSubtitle: () => {
             let t = (0, E.Tx)(),
                 e = (0, E.q9)(),
                 i = (0, S.e)();
-            return t === T.YG ? i ? N.intl.string(N.t.XXGmuB) : N.intl.string(N.t.wbYDfT) : e ? N.intl.string(N.t.V0ka0Q) : i ? N.intl.string(N.t.F9WY3f) : N.intl.string(N.t.G7c3Xo)
+            return t === T.YG ? i ? C.intl.string(C.t.XXGmuB) : C.intl.string(C.t.wbYDfT) : e ? C.intl.string(C.t.V0ka0Q) : i ? C.intl.string(C.t.F9WY3f) : C.intl.string(C.t.G7c3Xo)
         },
         useValue: () => {
             let t = (0, E.Tx)(),
@@ -48,16 +48,16 @@ let C = (t, e) => {
             if (e === T.YG) {
                 var i;
                 i = !t, (0, g.O)({
-                    header: N.intl.string(N.t["uUr+GR"]),
-                    body: N.intl.string(N.t.hjGJBp),
-                    confirmText: N.intl.string(N.t.gm1Vej),
-                    cancelText: N.intl.string(N.t.p89ACt),
+                    header: C.intl.string(C.t["uUr+GR"]),
+                    body: C.intl.string(C.t.hjGJBp),
+                    confirmText: C.intl.string(C.t.gm1Vej),
+                    cancelText: C.intl.string(C.t.p89ACt),
                     confirmButtonColor: n.$n.Colors.BRAND,
                     onConfirm: () => {
-                        d.n6.updateSetting(i), C(i, !1)
+                        d.n6.updateSetting(i), N(i, !1)
                     },
                     onCancel: () => {
-                        d.n6.updateSetting(i), d.$s.updateSetting(i ? r.A.getGuildIds() : []), C(i, !0)
+                        d.n6.updateSetting(i), d.$s.updateSetting(i ? r.A.getGuildIds() : []), N(i, !0)
                     }
                 })
             } else {

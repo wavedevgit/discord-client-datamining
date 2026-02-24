@@ -1,6 +1,6 @@
 /** chunk id: 728699, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    T: () => N
+    T: () => C
 });
 var n = i(627968),
     l = i(934551),
@@ -27,7 +27,7 @@ let c = (0, o.t_)(A.X.FAMILY_CENTER_PANEL, {
         useTitle: () => g.intl.string(_.default.RZqaJn),
         buildLayout: () => [S.g]
     }),
-    N = (0, o.i4)(A.X.FAMILY_CENTER_SIDEBAR_ITEM, {
+    C = (0, o.i4)(A.X.FAMILY_CENTER_SIDEBAR_ITEM, {
         useTitle: () => g.intl.string(_.default.RZqaJn),
         getLegacySearchKey: () => (0, T.WJ)("FamilyCenterPanel") ? void 0 : E.H.PRIVACY_FAMILY_CENTER,
         icon: l.GroupIcon,

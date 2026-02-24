@@ -18,8 +18,8 @@ var n = i(421380),
     _ = i(612025),
     c = i(112469),
     I = i(997913),
-    N = i(542457),
-    C = i(355097),
+    C = i(542457),
+    N = i(355097),
     O = i(652215),
     L = i(985018);
 let b = (t, e) => {
@@ -73,8 +73,8 @@ let b = (t, e) => {
             } else {
                 let i = (0, A.xo)();
                 t ? i.delete(e) : i.add(e), E.Zr.updateSetting(Array.from(i)), o.default.track(O.HAw.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
-                    action: N.m.RESTRICT_GUILD_MESSAGE_REQUEST_TOGGLE,
-                    ingress: C.bf.USER_SETTINGS_PRIVACY_SAFETY,
+                    action: C.m.RESTRICT_GUILD_MESSAGE_REQUEST_TOGGLE,
+                    ingress: N.bf.USER_SETTINGS_PRIVACY_SAFETY,
                     guild_id: e
                 })
             }

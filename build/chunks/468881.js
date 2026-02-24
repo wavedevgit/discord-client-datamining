@@ -18,8 +18,8 @@ var n = i(934551),
     _ = i(581837),
     c = i(666196),
     I = i(654757),
-    N = i(556710),
-    C = i(305290),
+    C = i(556710),
+    N = i(305290),
     O = i(8187),
     L = i(531525),
     b = i(985018);
@@ -30,11 +30,11 @@ let D = (0, l.t_)(r.X.ACCESSIBILITY_PANEL, {
     }),
     R = (0, l.t_)(r.X.ACCESSIBILITY_PANEL, {
         useTitle: () => b.intl.string(b.t.G0neg7),
-        buildLayout: () => [d.s, N._, _.b, I.T, E.V, c.G, A.v, T.T]
+        buildLayout: () => [d.s, C._, _.b, I.T, E.V, c.G, A.v, T.T]
     }),
     m = (0, l.t_)(r.X.ACCESSIBILITY_PANEL, {
         useTitle: () => b.intl.string(b.t.G0neg7),
-        buildLayout: () => [C.U, O.P, g.c, I.T, S.X],
+        buildLayout: () => [N.U, O.P, g.c, I.T, S.X],
         decoration: {
             type: s.t9.STRONGLY_DISCOURAGED_CUSTOM,
             component: o.A,

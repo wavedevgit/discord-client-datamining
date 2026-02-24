@@ -18,9 +18,9 @@ var n = i(934551),
     _ = i(281225),
     c = i(531525),
     I = i(652215),
-    N = i(985018);
-let C = (0, r.dT)(d.X.ACCOUNT_STANDING_TAB, {
-        getTitle: () => N.intl.string(N.t["Vov/9o"]),
+    C = i(985018);
+let N = (0, r.dT)(d.X.ACCOUNT_STANDING_TAB, {
+        getTitle: () => C.intl.string(C.t["Vov/9o"]),
         onItemSelect: () => {
             o.default.track(I.HAw.MY_ACCOUNT_PAGE_TAB_NAVIGATE, {
                 target_tab_name: T.D.STANDING
@@ -29,7 +29,7 @@ let C = (0, r.dT)(d.X.ACCOUNT_STANDING_TAB, {
         buildLayout: () => [_.Q]
     }),
     O = (0, r.dT)(d.X.ACCOUNT_SECURITY_TAB, {
-        getTitle: () => N.intl.string(N.t.Am9YHi),
+        getTitle: () => C.intl.string(C.t.Am9YHi),
         onItemSelect: () => {
             o.default.track(I.HAw.MY_ACCOUNT_PAGE_TAB_NAVIGATE, {
                 target_tab_name: T.D.SECURITY
@@ -38,7 +38,7 @@ let C = (0, r.dT)(d.X.ACCOUNT_STANDING_TAB, {
         buildLayout: () => [E.P, S.o, g.s]
     }),
     L = (0, r.t_)(d.X.ACCOUNT_PANEL, {
-        useTitle: () => N.intl.string(N.t["JAIM/m"]),
+        useTitle: () => C.intl.string(C.t["JAIM/m"]),
         initialize: function() {
             let t = u.default.getCurrentUser();
             return null != t && (0, a.A)(t.id, t.getAvatarURL(void 0, 80)), () => {
@@ -46,15 +46,15 @@ let C = (0, r.dT)(d.X.ACCOUNT_STANDING_TAB, {
             }
         },
         hideInStreamerMode: !0,
-        buildLayout: () => [O, C]
+        buildLayout: () => [O, N]
     }),
     b = (0, r.t_)(d.X.ACCOUNT_PANEL, {
-        useTitle: () => N.intl.string(N.t["JAIM/m"]),
+        useTitle: () => C.intl.string(C.t["JAIM/m"]),
         StronglyDiscouragedCustomComponent: T.A,
         buildLayout: () => []
     }),
     D = (0, r.i4)(d.X.ACCOUNT_SIDEBAR_ITEM, {
-        useTitle: () => N.intl.string(N.t["JAIM/m"]),
+        useTitle: () => C.intl.string(C.t["JAIM/m"]),
         getLegacySearchKey: () => (0, A.WJ)("AccountPanel") ? void 0 : c.H.ACCOUNT,
         icon: n.UserIcon,
         buildLayout: () => (0, A.WJ)("AccountPanel") ? [L] : [b]

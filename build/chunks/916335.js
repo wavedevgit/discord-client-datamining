@@ -23,7 +23,7 @@ let I = new T.nA({
         type: g.rbe.GUILD_TEXT,
         name: "preview"
     }),
-    N = [{
+    C = [{
         status: r.clD.IDLE,
         discriminator: "2"
     }, {
@@ -35,7 +35,7 @@ let I = new T.nA({
         discriminator: "4"
     }];
 
-function C(t) {
+function N(t) {
     let e = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [];
     return (0, u.rh)({
         ...(0, o.Ay)({
@@ -49,7 +49,7 @@ function C(t) {
 
 function O() {
     let t = E.hH.useSetting(),
-        e = l.useMemo(() => [C(_.intl.formatToPlainString(_.t.BknJRT, {}), [{
+        e = l.useMemo(() => [N(_.intl.formatToPlainString(_.t.BknJRT, {}), [{
             emoji: {
                 id: null,
                 name: "\uD83E\uDD40",
@@ -69,7 +69,7 @@ function O() {
             count: 1,
             me_burst: !1,
             burst_count: 0
-        }]), C(_.intl.formatToPlainString(_.t["4rDfgM"], {}))], []),
+        }]), N(_.intl.formatToPlainString(_.t["4rDfgM"], {}))], []),
         i = (0, s.bG)([a.A], () => a.A.messageGroupSpacing);
     return (0, n.jsx)(r.M1G, {
         children: (0, n.jsxs)("div", {
@@ -90,7 +90,7 @@ function O() {
                 }, e.id))
             }), (0, n.jsxs)("div", {
                 className: c.HD,
-                children: [N.map(t => {
+                children: [C.map(t => {
                     let {
                         status: e,
                         discriminator: i,

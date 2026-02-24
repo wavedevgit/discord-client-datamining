@@ -1,6 +1,6 @@
 /** chunk id: 211639, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    TC: () => C
+    TC: () => N
 });
 var n = i(934551),
     l = i(824552),
@@ -32,14 +32,14 @@ let _ = (0, s.t_)(r.X.CONTENT_AND_SOCIAL_PANEL, {
         getTitle: () => g.intl.string(g.t.YpCiMt),
         buildLayout: () => [o.j]
     }),
-    N = (0, s.t_)(r.X.CONTENT_AND_SOCIAL_PANEL, {
+    C = (0, s.t_)(r.X.CONTENT_AND_SOCIAL_PANEL, {
         useTitle: () => g.intl.string(g.t["+o1pDZ"]),
         usePredicate: () => (0, a.dk)("ContentAndSocialPanel"),
         buildLayout: () => [c, I]
     }),
-    C = (0, s.i4)(r.X.CONTENT_AND_SOCIAL_SIDEBAR_ITEM, {
+    N = (0, s.i4)(r.X.CONTENT_AND_SOCIAL_SIDEBAR_ITEM, {
         useTitle: () => g.intl.string(g.t["+o1pDZ"]),
         getLegacySearchKey: () => (0, a.WJ)("ContentAndSocialPanel") ? void 0 : E.H.CONTENT_SOCIAL,
         icon: n.ShieldUserIcon,
-        buildLayout: () => (0, a.WJ)("ContentAndSocialPanel") ? [N] : [_]
+        buildLayout: () => (0, a.WJ)("ContentAndSocialPanel") ? [C] : [_]
     })

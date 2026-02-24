@@ -18,8 +18,8 @@ var n = i(627968),
     _ = i(287809),
     c = i(780964),
     I = i(358776),
-    N = i(368631),
-    C = i(633817),
+    C = i(368631),
+    N = i(633817),
     O = i(531525),
     L = i(652215),
     b = i(985018),
@@ -47,7 +47,7 @@ let R = (0, T.t_)(c.X.PROFILE_PANEL, {
         initialize: () => () => a.h.wait(() => {
             (0, u.F7)(), o.A.clearSubsection(L.nc_.PROFILE_CUSTOMIZATION)
         }),
-        buildLayout: () => [C.I]
+        buildLayout: () => [N.I]
     }),
     p = (0, T.i4)(c.X.PROFILE_SIDEBAR_ITEM, {
         useTitle: () => b.intl.string(b.t["vi7f+q"]),
@@ -93,7 +93,7 @@ let R = (0, T.t_)(c.X.PROFILE_PANEL, {
         },
         trailing: {
             type: S.Si.BADGE_NEW,
-            getDismissibleContentTypes: N.Jn
+            getDismissibleContentTypes: C.Jn
         },
         buildLayout: () => (0, I.WJ)("ProfilePanel") ? [m] : [R]
     })

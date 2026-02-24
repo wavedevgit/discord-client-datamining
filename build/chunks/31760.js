@@ -1,7 +1,7 @@
 /** chunk id: 31760, original params: t,e,i (module,exports,require) **/
 i.d(e, {
     J: () => O,
-    q: () => C
+    q: () => N
 });
 var n = i(627968),
     l = i(64700),
@@ -19,9 +19,9 @@ var n = i(627968),
     _ = i(175631),
     c = i(430443),
     I = i(997442),
-    N = i(985018);
+    C = i(985018);
 
-function C(t) {
+function N(t) {
     let {
         label: e,
         description: i,
@@ -64,7 +64,7 @@ let O = (0, r.zZ)(u.X.DEV_OVERRIDES, {
     useInlineNotice: () => ({
         type: a.lT.INLINE_NOTICE,
         noticeType: "info",
-        useText: () => N.intl.format(N.t.UeZJlg, {
+        useText: () => C.intl.format(C.t.UeZJlg, {
             link: "https://i.dis.gd/dev-settings-changes"
         })
     })

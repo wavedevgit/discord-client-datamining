@@ -18,11 +18,11 @@ var n = i(934551),
     _ = i(411476),
     c = i(531525),
     I = i(985018);
-let N = (0, l.t_)(s.X.CHAT_PANEL, {
+let C = (0, l.t_)(s.X.CHAT_PANEL, {
         useTitle: () => I.intl.string(I.t["/VQax8"]),
         buildLayout: () => [d.M, u.f, o.z, E.J, T.n, g.p, _.U, A.W, S.o]
     }),
-    C = (0, l.t_)(s.X.CHAT_PANEL, {
+    N = (0, l.t_)(s.X.CHAT_PANEL, {
         useTitle: () => I.intl.string(I.t["/VQax8"]),
         StronglyDiscouragedCustomComponent: a.A,
         buildLayout: () => []
@@ -32,5 +32,5 @@ let N = (0, l.t_)(s.X.CHAT_PANEL, {
         getLegacySearchKey: () => (0, r.WJ)("ChatPanel") ? void 0 : c.H.CHAT,
         icon: n.ChatIcon,
         usePredicate: () => !(0, r.Ci)("ChatSidebarItem"),
-        buildLayout: () => [(0, r.WJ)("ChatPanel") ? N : C]
+        buildLayout: () => [(0, r.WJ)("ChatPanel") ? C : N]
     })

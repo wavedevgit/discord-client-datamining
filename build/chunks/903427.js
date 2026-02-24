@@ -1,6 +1,6 @@
 /** chunk id: 903427, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    K: () => N,
+    K: () => C,
     P: () => I
 });
 var n = i(627968),
@@ -22,7 +22,7 @@ let c = !s.Av;
 function I() {
     return (0, r.bG)([A.Ay], () => A.Ay.getMode() === g.TB.PUSH_TO_TALK)
 }
-let N = (0, d.zD)(T.X.VOICE_PUSH_TO_TALK_SETTING, {
+let C = (0, d.zD)(T.X.VOICE_PUSH_TO_TALK_SETTING, {
     useTitle: function() {
         return s.Av ? _.intl.string(_.t.tG4Np5) : _.intl.string(_.t.JMyQin)
     },

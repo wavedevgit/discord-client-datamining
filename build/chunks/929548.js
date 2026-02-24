@@ -18,8 +18,8 @@ var n = i(627968),
     _ = i(419954),
     c = i(430452),
     I = i(353835),
-    N = i(780964),
-    C = i(652215),
+    C = i(780964),
+    N = i(652215),
     O = i(731854),
     L = i(985018);
 let b = (0, S.D)(() => ({
@@ -51,7 +51,7 @@ async function m(t) {
             message: {
                 message: "User Live Dump"
             }
-        }), await (0, E.a)(C.Umv.RTC), t = L.intl.string(L.t["fKBB8+"]), e = L.intl.string(L.t.BvyxE7), (0, a.A)({
+        }), await (0, E.a)(N.Umv.RTC), t = L.intl.string(L.t["fKBB8+"]), e = L.intl.string(L.t.BvyxE7), (0, a.A)({
             title: t,
             subtitle: e
         })
@@ -99,7 +99,7 @@ async function p() {
         })
     })
 }
-let y = (0, _.E2)(N.X.VOICE_AND_VIDEO_DEBUG_LOGGING, {
+let y = (0, _.E2)(C.X.VOICE_AND_VIDEO_DEBUG_LOGGING, {
     useSearchTerms: () => [L.intl.string(L.t["726JHL"]), L.intl.string(L.t.EbwFfR), L.intl.string(L.t.nuPtYi)],
     usePredicate: function() {
         let t = (0, r.bG)([c.Ay], () => c.Ay.supports(O.O5.DEBUG_LOGGING));
