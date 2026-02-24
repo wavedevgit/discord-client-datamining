@@ -9,8 +9,8 @@ var n, a, l = r(627968),
     i = r(503698),
     d = r.n(i);
 r(284009);
-var o = r(736653),
-    u = r(599556),
+var u = r(736653),
+    o = r(599556),
     c = ((n = {}).UNSET = "unset", n.BLUE = "blue", n.ORANGE = "orange", n),
     m = ((a = {}).LIGHT = "light", a.MEDIUM = "medium", a);
 let h = e => {
@@ -23,26 +23,26 @@ let h = e => {
         override: c,
         glowing: m = !0,
         labelledBy: h
-    } = e, p = null != c && "unset" === i, x = (0, o.Ay)(), g = c?.[x] ?? c?.default, _ = s.useMemo(() => (t - r) / (n - r) * 100, [t, r, n]), f = t === r, b = {
+    } = e, p = null != c && "unset" === i, x = (0, u.Ay)(), f = c?.[x] ?? c?.default, g = s.useMemo(() => (t - r) / (n - r) * 100, [t, r, n]), _ = t === r, N = {
         ...p ? {
-            "--custom-background": g?.background,
-            "--custom-gradient-start": g?.gradientStart,
-            "--custom-gradient-end": g?.gradientEnd,
-            "--custom-gradient-glow": g?.gradientEnd
+            "--custom-background": f?.background,
+            "--custom-gradient-start": f?.gradientStart,
+            "--custom-gradient-end": f?.gradientEnd,
+            "--custom-gradient-glow": f?.gradientEnd
         } : {},
         ...!m && {
             "--custom-gradient-glow": "transparent"
         }
     };
     return (0, l.jsx)("div", {
-        className: d()(u.progressContainer, u[a], u[i]),
-        style: b,
+        className: d()(o.progressContainer, o[a], o[i]),
+        style: N,
         children: (0, l.jsxs)("div", {
-            className: d()(u.progress, {
-                [u.empty]: f
+            className: d()(o.progress, {
+                [o.empty]: _
             }),
             style: {
-                width: `${_}%`
+                width: `${g}%`
             },
             role: "meter",
             "aria-valuenow": t,
@@ -50,12 +50,12 @@ let h = e => {
             "aria-valuemax": n,
             "aria-labelledby": h,
             children: [(0, l.jsx)("div", {
-                className: d()(u.glow, {
-                    [u.empty]: f
+                className: d()(o.glow, {
+                    [o.empty]: _
                 })
             }), (0, l.jsx)("div", {
-                className: d()(u.bar, u[i], {
-                    [u.empty]: f
+                className: d()(o.bar, o[i], {
+                    [o.empty]: _
                 })
             })]
         })

@@ -1,12 +1,12 @@
 /** chunk id: 566119, original params: e,t,r (module,exports,require) **/
 r.d(t, {
     CC: () => i,
-    Jv: () => o,
+    Jv: () => u,
     RQ: () => m,
     WD: () => s,
     b: () => h,
     gP: () => c,
-    o8: () => u,
+    o8: () => o,
     ue: () => d
 });
 var n = r(954571),
@@ -27,10 +27,10 @@ let s = e => {
     d = e => {
         l("update_billing", e)
     },
-    o = e => {
+    u = e => {
         l("resubscribe", e)
     },
-    u = e => {
+    o = e => {
         l("orbs_card_helpdesk", e)
     },
     c = () => {
