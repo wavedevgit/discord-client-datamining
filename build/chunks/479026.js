@@ -1,89 +1,89 @@
-/** chunk id: 479026, original params: e,t,n (module,exports,require) **/
-n.d(t, {
+/** chunk id: 479026, original params: e,t,i (module,exports,require) **/
+i.d(t, {
     T: () => p,
-    _: () => f
+    _: () => h
 });
-var i = n(635358),
-    l = n(793574),
-    a = n(590180),
-    s = n(572595),
-    r = n(57020),
-    o = n(44120),
-    c = n(976860),
-    d = n(44724),
-    u = n(317560),
-    g = n(533406),
-    m = n(657331),
-    x = n(901123);
+var n = i(635358),
+    s = i(793574),
+    r = i(590180),
+    l = i(572595),
+    o = i(57020),
+    a = i(44120),
+    d = i(976860),
+    c = i(44724),
+    u = i(317560),
+    m = i(533406),
+    _ = i(657331),
+    f = i(901123);
 
-function f(e) {
+function h(e) {
     let {
         isOwner: t,
-        isItemOwned: n,
-        onWishlistItemClick: d,
+        isItemOwned: i,
+        onWishlistItemClick: c,
         profileOwner: u,
-        sku: g,
-        analyticsLocations: f,
+        sku: m,
+        analyticsLocations: h,
         giftingOrigin: p
-    } = e, h = location.pathname.startsWith(x.BV.COLLECTIBLES_SHOP);
-    if (t || n) {
-        let e = !t && n;
-        if (h) {
-            let t = a.A.getProduct(g.id),
-                n = a.A.getCategoryForProduct(g.id);
-            if (null != t && null != n) {
-                e || (0, m.closeUserProfileModal)(), (0, s.t)({
+    } = e, I = location.pathname.startsWith(f.BV.COLLECTIBLES_SHOP);
+    if (t || i) {
+        let e = !t && i;
+        if (I) {
+            let t = r.A.getProduct(m.id),
+                i = r.A.getCategoryForProduct(m.id);
+            if (null != t && null != i) {
+                e || (0, _.closeUserProfileModal)(), (0, l.t)({
                     product: t,
-                    category: n,
-                    shouldCheckoutWithOrbs: (0, r.A)({
+                    category: i,
+                    shouldCheckoutWithOrbs: (0, o.A)({
                         product: t
                     }),
-                    analyticsLocations: f,
-                    analyticsSource: l.A.USER_PROFILE_WISHLIST,
+                    analyticsLocations: h,
+                    analyticsSource: s.A.USER_PROFILE_WISHLIST,
                     returnRef: void 0,
                     tab: void 0
                 });
                 return
             }
         }
-        e || (0, m.closeUserProfileModal)(), (0, c.pX)(`${x.BV.COLLECTIBLES_SHOP}#itemSkuId=${g.id}`)
-    } else d?.(), (0, o.A)({
-        skuId: g.id,
+        e || (0, _.closeUserProfileModal)(), (0, d.pX)(`${f.BV.COLLECTIBLES_SHOP}#itemSkuId=${m.id}`)
+    } else c?.(), (0, a.A)({
+        skuId: m.id,
         isGift: !0,
         giftingOrigin: p,
-        analyticsLocations: f,
+        analyticsLocations: h,
         giftRecipient: u,
-        variantsReturnStyle: i.g.VARIANTS_GROUP
+        variantsReturnStyle: n.g.VARIANTS_GROUP
     })
 }
 
 function p(e) {
     let {
         isOwner: t,
-        giftingOrigin: n,
-        profileOwner: i,
-        isItemOwned: a,
-        application: s,
-        sku: r,
-        analyticsLocations: o,
-        additionalUserIds: c
+        giftingOrigin: i,
+        profileOwner: n,
+        isItemOwned: r,
+        application: l,
+        sku: o,
+        analyticsLocations: a,
+        additionalUserIds: d
     } = e;
-    t || a ? s?.guildId != null && (t ? ((0, m.closeUserProfileModal)(), (0, d.default)({
-        guildId: s.guildId,
-        skuId: r.id,
-        slug: r.slug
+    t || r ? l?.guildId != null && (t ? ((0, _.closeUserProfileModal)(), (0, c.default)({
+        guildId: l.guildId,
+        skuId: o.id,
+        slug: o.slug
     })) : (0, u.R)({
-        skuId: r.id,
-        applicationId: s.id,
-        guildId: s.guildId,
+        skuId: o.id,
+        applicationId: l.id,
+        guildId: l.guildId,
         isStorefront: !1,
-        analyticsLocations: o
-    })) : (0, g.a)(r, {
+        analyticsLocations: a
+    })) : (0, m.a)(o, {
         isGift: !0,
-        giftRecipient: i,
-        additionalUserIds: c,
-        giftingOrigin: n
+        giftRecipient: n,
+        additionalUserIds: d,
+        giftingOrigin: i
     }, {
-        analyticsLocations: [...o, l.A.SLAYER_STOREFRONT_WISHLIST_ITEM_CARD_GIFT_BUTTON]
+        analyticsLocations: [...a, s.A.SLAYER_STOREFRONT_WISHLIST_ITEM_CARD_GIFT_BUTTON]
     })
 }

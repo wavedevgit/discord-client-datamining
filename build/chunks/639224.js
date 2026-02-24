@@ -1,0 +1,5 @@
+/** chunk id: 639224, original params: e,t,n (module,exports,require) **/
+e.exports = {
+    b: "avatarPairContainer__30f35",
+    M: "avatarPair__30f35"
+}

@@ -1,0 +1,8 @@
+/** chunk id: 704417, original params: e,a,t (module,exports,require) **/
+e.exports = {
+    sq: "forwardPreview_f4b524",
+    kx: "linkContainer_f4b524",
+    ds: "linkIcon_f4b524",
+    Bo: "applicationInfo_f4b524",
+    wP: "cardImage_f4b524"
+}

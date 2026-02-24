@@ -12,7 +12,7 @@ var l = n(503698),
     o = n(775602),
     c = n(607470),
     d = n(531685),
-    u = n(402314);
+    u = n(24212);
 let g = e => {
     let {
         bannerStatic: t,

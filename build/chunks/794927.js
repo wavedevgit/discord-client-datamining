@@ -10,7 +10,7 @@ var s = n(397927),
     r = n(200749),
     a = n(652215),
     o = n(985018),
-    c = n(492955),
+    c = n(728481),
     d = n(828230);
 
 function u(e) {
@@ -29,7 +29,7 @@ function u(e) {
             onCTAClick: () => (0, s.mMO)(async () => {
                 let {
                     default: e
-                } = await Promise.all([n.e("43600"), n.e("28136"), n.e("74918")]).then(n.bind(n, 234355));
+                } = await Promise.all([n.e("43600"), n.e("28136"), n.e("97710")]).then(n.bind(n, 234355));
                 return n => (0, i.jsx)(e, {
                     ...n,
                     guild: u,

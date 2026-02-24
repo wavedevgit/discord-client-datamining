@@ -14,9 +14,9 @@ var i = n(627968),
     d = n(115063),
     u = n(704037),
     h = n(652215),
-    A = n(536482),
+    A = n(730844),
     p = n(985018),
-    g = n(259533);
+    g = n(247307);
 let m = () => {
     (0, o.openUserSettings)(a.X.ACTIVITY_PRIVACY_PANEL, {
         section: h.nc_.ACTIVITY_PRIVACY

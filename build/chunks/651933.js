@@ -1,0 +1,2 @@
+/** chunk id: 651933, original params: s (module,exports,require) **/
+s.exports = JSON.parse('{"yfwZuy":["Преглед на значката ми"],"UnPGii":["Значката е добавена към профила ти."],"nvaTQq":["Ти взе бадж за профила Orbs!"]}')

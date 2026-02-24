@@ -8,7 +8,7 @@ var i = n(627968),
     s = n(64700),
     l = n(503698),
     r = n.n(l),
-    a = n(475539),
+    a = n(442215),
     o = n(934551),
     c = n(311907),
     d = n(827734),
@@ -66,7 +66,7 @@ var i = n(627968),
     eo = n(31408),
     ec = n(731854),
     ed = n(985018),
-    eu = n(707511);
+    eu = n(257277);
 let eh = [ea.lp.ACTIVITY],
     eA = s.memo(e => {
         var t, n, l;
@@ -178,12 +178,12 @@ let eh = [ea.lp.ACTIVITY],
             e1 = s.useCallback((e, t, n) => {
                 I?.(u, e, t, n)
             }, [I, u]),
-            e9 = null,
             e7 = null,
+            e9 = null,
             e6 = "";
         switch (u.type) {
             case ea.lp.STREAM:
-                e9 = (0, i.jsx)(en.A, {
+                e7 = (0, i.jsx)(en.A, {
                     participant: u,
                     selected: Q,
                     popoutType: g,
@@ -191,7 +191,7 @@ let eh = [ea.lp.ACTIVITY],
                     fit: ef,
                     onVideoResize: q,
                     paused: ex
-                }), e7 = (0, i.jsx)(en.D, {
+                }), e9 = (0, i.jsx)(en.D, {
                     participant: u,
                     selected: Q,
                     width: X,
@@ -203,7 +203,7 @@ let eh = [ea.lp.ACTIVITY],
                 });
                 break;
             case ea.lp.USER:
-                e9 = (0, i.jsx)(ei.A, {
+                e7 = (0, i.jsx)(ei.A, {
                     channel: z,
                     inCall: J,
                     participant: u,
@@ -217,7 +217,7 @@ let eh = [ea.lp.ACTIVITY],
                     ignored: em,
                     noVideoRender: eA || eU,
                     pulseSpeakingIndicator: eC
-                }), e7 = (0, i.jsx)(ei.s, {
+                }), e9 = (0, i.jsx)(ei.s, {
                     participant: u,
                     channelId: z.id
                 }), e6 = ed.intl.formatToPlainString(ed.t["iC/x/Q"], {
@@ -225,7 +225,7 @@ let eh = [ea.lp.ACTIVITY],
                 });
                 break;
             case ea.lp.ACTIVITY:
-                e9 = (0, i.jsx)(ee.Ay, {
+                e7 = (0, i.jsx)(ee.Ay, {
                     interactible: ep,
                     participant: u,
                     selected: Q,
@@ -236,7 +236,7 @@ let eh = [ea.lp.ACTIVITY],
                 });
                 break;
             case ea.lp.HIDDEN_STREAM:
-                e9 = (0, i.jsx)(en.A, {
+                e7 = (0, i.jsx)(en.A, {
                     participant: u,
                     selected: Q,
                     width: X,
@@ -312,9 +312,9 @@ let eh = [ea.lp.ACTIVITY],
                                             height: e2?.current?.clientHeight ?? 0
                                         }
                                     })
-                                }) : null, e9, es ? null : (0, i.jsx)("div", {
+                                }) : null, e7, es ? null : (0, i.jsx)("div", {
                                     className: eu.hD,
-                                    children: e7
+                                    children: e9
                                 }), Q ? (0, i.jsx)("div", {
                                     className: eu._Q,
                                     children: (0, i.jsx)(e8, {

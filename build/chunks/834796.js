@@ -1,17 +1,18 @@
-/** chunk id: 834796, original params: e,t,i (module,exports,require) **/
-i.d(t, {
-    A: () => l
+/** chunk id: 834796, original params: t,e,n (module,exports,require) **/
+"use strict";
+n.d(e, {
+    A: () => r
 });
-var n = i(627968);
-i(64700);
-var s = i(804870),
-    r = i(798048);
+var i = n(627968);
+n(64700);
+var a = n(804870),
+    s = n(798048);
 
-function l(e) {
+function r(t) {
     let {
-        cardSize: t = r.Y.MEDIUM
-    } = e;
-    return (0, n.jsx)(s.Zu, {
-        cardSize: t
+        cardSize: e = s.Y.MEDIUM
+    } = t;
+    return (0, i.jsx)(a.Zu, {
+        cardSize: e
     })
 }

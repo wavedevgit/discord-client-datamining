@@ -55,7 +55,7 @@ function A(e) {
         messageId: t.id
     }), h = _(l, t);
     return (0, i.jsx)(o.A, {
-        icon: n(394803),
+        icon: n(617184),
         timestamp: t.timestamp,
         compact: a,
         children: (0, u.eu)({

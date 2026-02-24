@@ -12,7 +12,7 @@ var l = i(417597),
     o = i(652215),
     d = i(731854),
     A = i(985018),
-    T = i(835818);
+    T = i(579164);
 let S = `${u.A.getArticleURL(o.MVz.VOICE_VIDEO_TROUBLESHOOTING)}?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-voice-video&utm_content=--t%3Apm`;
 
 function E() {

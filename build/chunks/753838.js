@@ -1,61 +1,61 @@
-/** chunk id: 753838, original params: e,t,n (module,exports,require) **/
-n.d(t, {
+/** chunk id: 753838, original params: e,n,t (module,exports,require) **/
+t.d(n, {
     A: () => p
 });
-var i = n(627968);
-n(64700);
-var r = n(503698),
-    a = n.n(r),
-    _ = n(990078),
-    l = n(397927),
-    o = n(840120),
-    d = n(473145),
-    s = n(652215),
-    c = n(985018),
-    f = n(483116);
+var i = t(627968);
+t(64700);
+var r = t(503698),
+    a = t.n(r),
+    l = t(990078),
+    _ = t(397927),
+    o = t(840120),
+    d = t(473145),
+    s = t(652215),
+    c = t(985018),
+    f = t(673006);
 let p = e => {
-    let t, n, r, {
+    let n, t, r, {
             guildFeature: p,
             guild: u,
-            className: h,
-            hideTooltip: m = !1,
-            tooltipPosition: x = "left",
-            onClick: v
+            className: m,
+            hideTooltip: h = !1,
+            tooltipPosition: g = "left",
+            onClick: x
         } = e,
-        g = u.features.has(p),
-        j = (0, o.Bl)(u.id, "GuildSettingsBoostPerks"),
-        k = (0, d.Ys)(p);
-    return !g && p === s.GuildFeatures.VANITY_URL && j ? null : (g ? (null != k && (r = c.intl.string(c.t.hUgjyP)), t = (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(l._Jp, {
-            color: l.LU0.unsafe_rawColors.GUILD_BOOSTING_PINK,
+        v = u.features.has(p),
+        k = (0, o.Bl)(u.id, "GuildSettingsBoostPerks"),
+        j = (0, d.Ys)(p);
+    return !v && p === s.GuildFeatures.VANITY_URL && k ? null : (v ? (null != j && (r = c.intl.string(c.t.hUgjyP)), n = (0, i.jsxs)(i.Fragment, {
+        children: [(0, i.jsx)(_._Jp, {
+            color: _.LU0.unsafe_rawColors.GUILD_BOOSTING_PINK,
             className: f.RQ
-        }), (0, i.jsx)(l.Heading, {
+        }), (0, i.jsx)(_.Heading, {
             variant: "eyebrow",
             className: f.h_,
             children: c.intl.string(c.t["0O+87i"])
         })]
-    })) : (null != k && (r = c.intl.string(c.t.L2wYYj)), t = (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(l._Jp, {
+    })) : (null != j && (r = c.intl.string(c.t.L2wYYj)), n = (0, i.jsxs)(i.Fragment, {
+        children: [(0, i.jsx)(_._Jp, {
             color: "currentColor",
             className: f.Kk
-        }), (0, i.jsx)(l.Heading, {
+        }), (0, i.jsx)(_.Heading, {
             variant: "eyebrow",
             className: f.h_,
-            children: null != k && (0, d.Qu)(k)
+            children: null != j && (0, d.Qu)(j)
         })]
-    })), n = m || null == r ? (0, i.jsx)("div", {
-        className: a()(f.Jz, h),
-        children: t
-    }) : (0, i.jsx)(_.m, {
-        position: x,
+    })), t = h || null == r ? (0, i.jsx)("div", {
+        className: a()(f.Jz, m),
+        children: n
+    }) : (0, i.jsx)(l.m, {
+        position: g,
         text: r,
         children: (0, i.jsx)("div", {
-            className: a()(f.Jz, h),
-            children: t
+            className: a()(f.Jz, m),
+            children: n
         })
-    }), null == v || g) ? n : (0, i.jsx)(l.DUT, {
-        onClick: v,
+    }), null == x || v) ? t : (0, i.jsx)(_.DUT, {
+        onClick: x,
         className: f.vk,
-        children: n
+        children: t
     })
 }

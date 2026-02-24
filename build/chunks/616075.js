@@ -1,8 +1,8 @@
-/** chunk id: 616075, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    w: () => i
+/** chunk id: 616075, original params: e,n,t (module,exports,require) **/
+t.d(n, {
+    w: () => r
 });
-let i = (0, n(945810).mj)({
+let r = (0, t(945810).mj)({
     name: "2026-01-favorites-server",
     kind: "user",
     defaultConfig: {

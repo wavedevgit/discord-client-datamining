@@ -16,7 +16,7 @@ var n = i(627968),
     E = i(780964),
     g = i(652215),
     _ = i(985018),
-    c = i(280973);
+    c = i(456491);
 let I = (0, T.E2)(E.X.CLIPS_SCREENSHOT_KEYBIND, {
     useSearchTerms: () => [_.intl.string(_.t["0U/hj7"]), _.intl.string(_.t["5zxkdo"])],
     usePredicate: A.BW,

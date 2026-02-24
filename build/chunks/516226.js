@@ -3,7 +3,7 @@ n.d(t, {
     M: () => r
 });
 var i = n(64700),
-    l = n(818348);
+    a = n(818348);
 let r = i.createContext({
-    onAssetLoadComplete: l.tE
+    onAssetLoadComplete: a.tE
 })

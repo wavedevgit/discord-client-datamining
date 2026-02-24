@@ -1,0 +1,5 @@
+/** chunk id: 987134, original params: e,t,n (module,exports,require) **/
+e.exports = {
+    G: "sectionTitle_f0d60d",
+    Q: "content_f0d60d"
+}

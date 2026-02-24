@@ -1,32 +1,32 @@
-/** chunk id: 301541, original params: e,n,t (module,exports,require) **/
-t.d(n, {
-    A: () => h
+/** chunk id: 301541, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    A: () => A
 });
-var i = t(627968);
-t(64700);
-var l = t(311907),
-    r = t(397927),
-    a = t(308528),
-    s = t(267102),
-    d = t(474397),
-    o = t(961350),
-    c = t(652215),
-    u = t(985018);
+var l = n(627968);
+n(64700);
+var i = n(311907),
+    a = n(397927),
+    r = n(308528),
+    d = n(267102),
+    o = n(474397),
+    s = n(961350),
+    u = n(652215),
+    c = n(985018);
 
-function h(e, n, t) {
-    let h = (0, s.aL)();
-    return (0, l.bG)([o.default], () => o.default.getId() === e) || n === c.BRT.POPOUT ? null : (0, i.jsx)(r.Drp, {
+function A(e, t, n) {
+    let A = (0, d.aL)();
+    return (0, i.bG)([s.default], () => s.default.getId() === e) || t === u.BRT.POPOUT ? null : (0, l.jsx)(a.Drp, {
         id: "message-user",
-        label: u.intl.string(u.t.OAJQlP),
+        label: c.intl.string(c.t.OAJQlP),
         action: () => {
-            (0, d.A)(n, !0), a.A.openPrivateChannel({
+            (0, o.A)(t, !0), r.A.openPrivateChannel({
                 recipientIds: e
-            }), h.dispatch(c.jej.POPOUT_CLOSE), (0, r.s7G)()
+            }), A.dispatch(u.jej.POPOUT_CLOSE), (0, a.s7G)()
         },
-        icon: t,
-        leadingAccessory: null != t ? {
+        icon: n,
+        leadingAccessory: null != n ? {
             type: "icon",
-            icon: t
+            icon: n
         } : void 0
     })
 }

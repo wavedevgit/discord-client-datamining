@@ -111,14 +111,14 @@ var f = n(483270),
     eZ = n(402216),
     e0 = n(746080),
     e1 = n(652215),
-    e9 = n(5867),
-    e7 = n(806931),
+    e7 = n(5867),
+    e9 = n(806931),
     e6 = n(49999),
     e2 = n(165610),
     e3 = n(957173),
     e5 = n(516607),
     e8 = n(985018),
-    e4 = n(638990);
+    e4 = n(370808);
 let te = (0, G.Fe)({
     createPromise: () => n.e("46875").then(n.bind(n, 625846)),
     webpackId: 625846,
@@ -221,7 +221,7 @@ class tt extends s.PureComponent {
         o()(null != s, "Missing user in Channel.openDMContextMenu"), (0, _.L3)(e, async () => {
             let {
                 default: e
-            } = await Promise.all([n.e("97262"), n.e("42128"), n.e("39778"), n.e("31885")]).then(n.bind(n, 385913));
+            } = await Promise.all([n.e("97262"), n.e("42128"), n.e("39778"), n.e("16141")]).then(n.bind(n, 385913));
             return n => (0, i.jsx)(e, {
                 ...n,
                 user: s,
@@ -253,7 +253,7 @@ class tt extends s.PureComponent {
             selectedParticipant: e,
             premiumIndicatorEnabled: t
         } = this.props;
-        return e?.type !== e7.lp.STREAM ? null : (0, i.jsx)(H.A, {
+        return e?.type !== e9.lp.STREAM ? null : (0, i.jsx)(H.A, {
             size: eZ.Ay.Sizes.LARGE,
             participant: e,
             showQuality: !0,
@@ -793,7 +793,7 @@ let tn = (0, C.A)(tt),
         }, [D, o, v, O]);
         let G = (0, h.bG)([N.Ay], () => N.Ay.getCurrentEmbeddedActivity()),
             U = (0, h.bG)([N.Ay], () => N.Ay.getActivityPanelMode()),
-            P = null != G && !(0, S.A)(o?.id) && U === e9.Gd.PANEL,
+            P = null != G && !(0, S.A)(o?.id) && U === e7.Gd.PANEL,
             k = (0, h.bG)([eY.A], () => null != o && o.isVocalThread() && !d().isEmpty(eY.A.getVoiceStatesForChannel(o.id)), [o]),
             H = null != o && o.isPrivate() && !P && C,
             F = o?.isGuildVocal() || H || k,
@@ -803,7 +803,7 @@ let tn = (0, C.A)(tt),
             } = (0, u.zy)(),
             Y = (0, h.bG)([eu.A], () => null != o && eu.A.isLurking(o.guild_id), [o]),
             X = (0, h.bG)([eD.A], () => eD.A.hasSeen(o?.guild_id, Y), [o, Y]),
-            q = (0, h.bG)([R.A, N.Ay], () => null != N.Ay.getConnectedActivityLocation() && N.Ay.getActivityPanelMode() === e9.Gd.PANEL ? N.Ay.getFocusedLayout() === e9.E8.NO_CHAT ? e1.DUB.NO_CHAT : e1.DUB.NORMAL : null != r ? R.A.getLayout(r) : e1.DUB.NORMAL, [r]),
+            q = (0, h.bG)([R.A, N.Ay], () => null != N.Ay.getConnectedActivityLocation() && N.Ay.getActivityPanelMode() === e7.Gd.PANEL ? N.Ay.getFocusedLayout() === e7.E8.NO_CHAT ? e1.DUB.NO_CHAT : e1.DUB.NORMAL : null != r ? R.A.getLayout(r) : e1.DUB.NORMAL, [r]),
             Q = (0, h.bG)([R.A], () => null != o ? R.A.getSelectedParticipant(o.id) : null),
             $ = (0, y.vL)(o),
             Z = (0, ec.A)(f?.id),

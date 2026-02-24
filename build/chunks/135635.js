@@ -1,35 +1,35 @@
-/** chunk id: 135635, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => d
+/** chunk id: 135635, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    A: () => u
 });
-var l = n(64700),
-    r = n(158954),
-    a = n(311907),
-    i = n(827734),
-    s = n(387755),
-    o = n(313961),
-    E = n(325909),
-    u = n(994500),
-    c = n(806931),
-    _ = n(985018);
+var n = i(64700),
+    o = i(158954),
+    s = i(311907),
+    a = i(827734),
+    d = i(387755),
+    r = i(313961),
+    l = i(325909),
+    _ = i(994500),
+    c = i(806931),
+    p = i(985018);
 
-function d(e) {
+function u(e) {
     let {
         user: t,
-        channel: n,
-        location: d
-    } = e, A = (0, E.oP)(t, d, n.id), g = (0, E.lQ)(t, d, n), T = t.bot || t.system || t.isProvisional, I = (0, a.bG)([o.A], () => o.A.getParticipant(n.id, t.id)), N = null == I, h = null != I && I.type === c.lp.USER && I.ringing, m = (0, a.bG)([u.A], () => u.A.isFriend(t.id)), S = !A && (!g || T), G = (0, l.useCallback)(() => {
-        if (A) {
-            if (N) return void s.A.ring(n.id, [t.id], d);
-            h && s.A.stopRinging(n.id, [t.id])
+        channel: i,
+        location: u
+    } = e, b = (0, l.oP)(t, u, i.id), h = (0, l.lQ)(t, u, i), C = t.bot || t.system || t.isProvisional, g = (0, s.bG)([r.A], () => r.A.getParticipant(i.id, t.id)), v = null == g, A = null != g && g.type === c.lp.USER && g.ringing, S = (0, s.bG)([_.A], () => _.A.isFriend(t.id)), R = !b && (!h || C), E = (0, n.useCallback)(() => {
+        if (b) {
+            if (v) return void d.A.ring(i.id, [t.id], u);
+            A && d.A.stopRinging(i.id, [t.id])
         }
-    }, [N, h, A, d, n.id, t.id]);
+    }, [v, A, b, u, i.id, t.id]);
     return {
-        iconColor: h ? i.A.colors.ICON_FEEDBACK_CRITICAL : void 0,
-        icon: h ? r.zWQ : r._jp,
-        tooltipText: m ? N ? _.intl.string(_.t["3Hv9qQ"]) : h ? _.intl.string(_.t.ygslb0) : null : _.intl.string(_.t.TGqF9g),
-        disabled: !A,
-        shouldHideButton: S,
-        onClick: G
+        iconColor: A ? a.A.colors.ICON_FEEDBACK_CRITICAL : void 0,
+        icon: A ? o.zWQ : o._jp,
+        tooltipText: S ? v ? p.intl.string(p.t["3Hv9qQ"]) : A ? p.intl.string(p.t.ygslb0) : null : p.intl.string(p.t.TGqF9g),
+        disabled: !b,
+        shouldHideButton: R,
+        onClick: E
     }
 }

@@ -12,7 +12,7 @@ var l = i(311907),
     o = i(430452),
     d = i(948641),
     A = i(985018),
-    T = i(613844);
+    T = i(233274);
 
 function S() {
     let t = o.Ay.getCameraComponent(),

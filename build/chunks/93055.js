@@ -1,53 +1,53 @@
-/** chunk id: 93055, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    Af: () => f,
-    CJ: () => p,
-    Fe: () => h,
-    Rm: () => E,
-    pe: () => A
-}), n(321073);
-var i = n(64700),
-    r = n(478437),
-    l = n(311907);
-n(734057);
-var a = n(808728),
-    o = n(967198);
-n(661191);
-var s = n(181079),
-    d = n(924703),
-    u = n(781489),
-    c = n(652215);
-
-function A(e) {
-    let {
-        isEnabled: t,
-        hasStaffPrivileges: n
-    } = (0, u.e)("useCanFavoriteChannel"), i = (0, l.bG)([s.A], () => s.A.isFavorite(e.id)), r = e.isThread();
-    return t && !__OVERLAY__ && !i && (!r || n)
-}
+/** chunk id: 93055, original params: e,n,t (module,exports,require) **/
+t.d(n, {
+    Af: () => h,
+    CJ: () => v,
+    Fe: () => g,
+    Rm: () => m,
+    pe: () => f
+}), t(321073);
+var r = t(64700),
+    i = t(478437),
+    a = t(311907);
+t(734057);
+var l = t(808728),
+    d = t(967198);
+t(661191);
+var s = t(181079),
+    c = t(924703),
+    u = t(781489),
+    o = t(652215);
 
 function f(e) {
-    return (0, l.bG)([s.A], () => s.A.getFavorite(e))
+    let {
+        isEnabled: n,
+        hasStaffPrivileges: t
+    } = (0, u.e)("useCanFavoriteChannel"), r = (0, a.bG)([s.A], () => s.A.isFavorite(e.id)), i = e.isThread();
+    return n && !__OVERLAY__ && !r && (!i || t)
 }
 
-function E() {
-    return (0, l.bG)([a.Ay], () => a.Ay.getChannels(c.YYv))[r.r.GUILD_CATEGORY].map(e => ({
+function h(e) {
+    return (0, a.bG)([s.A], () => s.A.getFavorite(e))
+}
+
+function m() {
+    return (0, a.bG)([l.Ay], () => l.Ay.getChannels(o.YYv))[i.r.GUILD_CATEGORY].map(e => ({
         id: "null" === e.channel.id ? null : e.channel.id,
         name: e.channel.name
     }))
 }
 
-function h() {
-    return (0, l.bG)([o.A], () => o.A.getGuildId()) === c.YYv
+function g() {
+    return (0, a.bG)([d.A], () => d.A.getGuildId()) === o.YYv
 }
 
-function p() {
-    let e = (0, d.T)(),
-        t = i.useCallback(() => {}, [e]),
-        n = i.useCallback(() => {}, [e]);
+function v() {
+    let e = (0, c.T)(),
+        n = r.useCallback(() => {}, [e]),
+        t = r.useCallback(() => {}, [e]);
     return {
         favoriteAdded: e.favoriteAdded,
-        notifyFavoriteAdded: t,
-        clearFavoriteAdded: n
+        notifyFavoriteAdded: n,
+        clearFavoriteAdded: t
     }
 }

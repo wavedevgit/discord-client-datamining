@@ -15,7 +15,7 @@ var r = i(607399),
     u = i(837921),
     h = i(58736),
     C = i(746080),
-    E = i(892513);
+    E = i(512147);
 async function A(e) {
     if (!e && (0, d.isMac)() && d.isPlatformEmbedded) {
         let e = await window.DiscordNative.remoteApp.getDefaultDoubleClickAction?.() ?? "Maximize";

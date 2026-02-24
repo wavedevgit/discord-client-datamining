@@ -1,0 +1,5 @@
+/** chunk id: 141351, original params: e,t,n (module,exports,require) **/
+e.exports = {
+    GC: "captchaContainer_deee3a",
+    P: "manaDesktopModal_deee3a"
+}

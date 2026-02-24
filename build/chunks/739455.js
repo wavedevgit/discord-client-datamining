@@ -1,159 +1,160 @@
-/** chunk id: 739455, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    Fx: () => C,
-    JH: () => T,
-    SY: () => x,
-    aV: () => N,
-    fE: () => E,
-    pF: () => I,
+/** chunk id: 739455, original params: e,t,a (module,exports,require) **/
+"use strict";
+a.d(t, {
+    Fx: () => A,
+    JH: () => E,
+    SY: () => y,
+    aV: () => S,
+    fE: () => C,
+    pF: () => x,
     zu: () => g
-}), n(321073);
-var i = n(975975),
-    l = n.n(i),
-    a = n(417597),
-    r = n(73153),
-    s = n(755584),
-    o = n(734057),
-    c = n(567305),
-    d = n(636194),
-    u = n(846922),
-    m = n(555325),
-    _ = n(74399),
-    A = n(652215),
-    h = n(746080);
-l().shim();
-let f = {};
+}), a(321073);
+var r = a(975975),
+    n = a.n(r),
+    i = a(417597),
+    o = a(73153),
+    s = a(755584),
+    l = a(734057),
+    c = a(567305),
+    _ = a(636194),
+    d = a(846922),
+    u = a(555325),
+    p = a(74399),
+    f = a(652215),
+    m = a(746080);
+n().shim();
+let h = {};
 
-function E(e) {
-    let t = (0, a.bG)([o.A], () => o.A.getChannel(e)),
-        n = (0, a.bG)([_.A], () => _.A.getChannel(e));
-    return t ?? n
+function C(e) {
+    let t = (0, i.bG)([l.A], () => l.A.getChannel(e)),
+        a = (0, i.bG)([p.A], () => p.A.getChannel(e));
+    return t ?? a
 }
 
-function g(e, t, n) {
-    let i = (0, a.bG)([d.A], () => d.A.getSubscriptionListingsForGuild(e)),
-        l = (0, u.y)(t => t.editStateIdsForGroup[e]),
-        r = (0, u.y)(e => e.listings);
-    if (void 0 === n || void 0 === t) return null;
-    let s = i.filter(e => !e.soft_deleted && !e.archived).map(e => e.subscription_plans[0].price),
-        o = [];
-    void 0 !== l && l.forEach(e => {
-        let t = r[e],
-            n = t?.priceTier;
-        null != n && o.push(n)
+function g(e, t, a) {
+    let r = (0, i.bG)([_.A], () => _.A.getSubscriptionListingsForGuild(e)),
+        n = (0, d.y)(t => t.editStateIdsForGroup[e]),
+        o = (0, d.y)(e => e.listings);
+    if (void 0 === a || void 0 === t) return null;
+    let s = r.filter(e => !e.soft_deleted && !e.archived).map(e => e.subscription_plans[0].price),
+        l = [];
+    void 0 !== n && n.forEach(e => {
+        let t = o[e],
+            a = t?.priceTier;
+        null != a && l.push(a)
     });
-    let c = new Set(o.concat(s));
-    if (!c.has(n)) return null;
-    let m = t.indexOf(n);
-    if (-1 === m) return null;
-    let _ = [];
-    for (let e = m + 1; e < t.length && (c.has(t[e]) || _.push(t[e]), 3 !== _.length); e++);
-    return _
+    let c = new Set(l.concat(s));
+    if (!c.has(a)) return null;
+    let u = t.indexOf(a);
+    if (-1 === u) return null;
+    let p = [];
+    for (let e = u + 1; e < t.length && (c.has(t[e]) || p.push(t[e]), 3 !== p.length); e++);
+    return p
 }
 
-function p(e) {
-    let t = u.y.getState().editStateIdsForGroup[e],
-        n = u.y.getState().listings,
-        i = new Set;
+function b(e) {
+    let t = d.y.getState().editStateIdsForGroup[e],
+        a = d.y.getState().listings,
+        r = new Set;
     null != t && t.forEach(e => {
-        let t = n[e]?.channelBenefits;
+        let t = a[e]?.channelBenefits;
         t?.forEach(e => {
-            null != _.A.getChannel(e.ref_id) && i.add(e.ref_id)
+            null != p.A.getChannel(e.ref_id) && r.add(e.ref_id)
         })
     });
-    let l = [];
-    for (let t of i) {
-        let n = _.A.getChannel(t);
-        if (null != n) {
-            let t = n.set("guild_id", e);
-            l.push(t)
+    let n = [];
+    for (let t of r) {
+        let a = p.A.getChannel(t);
+        if (null != a) {
+            let t = a.set("guild_id", e);
+            n.push(t)
         }
     }
-    return l
+    return n
 }
 
-function x(e) {
-    let t = p(e);
-    f[e] = t, t.forEach(e => {
-        let t = e.set("flags", h.lx.IS_ROLE_SUBSCRIPTION_TEMPLATE_PREVIEW_CHANNEL);
-        r.h.dispatch({
+function y(e) {
+    let t = b(e);
+    h[e] = t, t.forEach(e => {
+        let t = e.set("flags", m.lx.IS_ROLE_SUBSCRIPTION_TEMPLATE_PREVIEW_CHANNEL);
+        o.h.dispatch({
             type: "CHANNEL_CREATE",
             channel: t
         })
     })
 }
 
-function C(e) {
-    (f[e] ?? p(e)).forEach(e => {
-        r.h.dispatch({
+function A(e) {
+    (h[e] ?? b(e)).forEach(e => {
+        o.h.dispatch({
             type: "CHANNEL_DELETE",
             channel: e
         })
     })
 }
-async function I(e, t) {
-    let n = [],
-        i = [];
+async function x(e, t) {
+    let a = [],
+        r = [];
     t.forEach(t => {
-        let l = _.A.getChannel(t.ref_id);
-        null != l && (n.push(s.A.createRoleSubscriptionTemplateChannel(e, l.name, l.type, l.topic)), i.push(l))
-    }), 0 === n.length || (await Promise.allSettled(n)).forEach((n, l) => {
-        let a = i[l].id;
-        if ("fulfilled" === n.status) {
-            let t = n.value.body,
-                i = u.y.getState().editStateIdsForGroup[e],
-                l = u.y.getState().listings;
-            null != i && i.forEach(e => {
-                let n = l[e]?.channelBenefits;
-                n?.forEach(e => {
-                    e.ref_id === a && (e.ref_id = t.id)
+        let n = p.A.getChannel(t.ref_id);
+        null != n && (a.push(s.A.createRoleSubscriptionTemplateChannel(e, n.name, n.type, n.topic)), r.push(n))
+    }), 0 === a.length || (await Promise.allSettled(a)).forEach((a, n) => {
+        let i = r[n].id;
+        if ("fulfilled" === a.status) {
+            let t = a.value.body,
+                r = d.y.getState().editStateIdsForGroup[e],
+                n = d.y.getState().listings;
+            null != r && r.forEach(e => {
+                let a = n[e]?.channelBenefits;
+                a?.forEach(e => {
+                    e.ref_id === i && (e.ref_id = t.id)
                 })
             })
         } else if (null != t) {
-            let e = t.findIndex(e => e.ref_id === a); - 1 !== e && t?.splice(e, 1)
+            let e = t.findIndex(e => e.ref_id === i); - 1 !== e && t?.splice(e, 1)
         }
     })
 }
 
-function T(e, t) {
-    let n = u.y.getState().listings[e],
-        i = n?.usedTemplate;
-    if (null == i) return {
+function E(e, t) {
+    let a = d.y.getState().listings[e],
+        r = a?.usedTemplate;
+    if (null == r) return {
         templateCategory: null,
         hasChangeFromTemplate: null
     };
-    let l = _.A.getTemplateWithCategory(t, i);
-    if (null == l) return {
+    let n = p.A.getTemplateWithCategory(t, r);
+    if (null == n) return {
         templateCategory: null,
         hasChangeFromTemplate: null
     };
-    let a = l.listings[0];
-    if (n?.name !== a.name || n?.description !== a.description || n?.priceTier !== a.price_tier || n?.image !== a.image || n?.roleColor !== a.role_color || n?.channelBenefits?.length !== a.channels.length || n?.intangibleBenefits?.length !== a.additional_perks.length) return {
-        templateCategory: l.category,
+    let i = n.listings[0];
+    if (a?.name !== i.name || a?.description !== i.description || a?.priceTier !== i.price_tier || a?.image !== i.image || a?.roleColor !== i.role_color || a?.channelBenefits?.length !== i.channels.length || a?.intangibleBenefits?.length !== i.additional_perks.length) return {
+        templateCategory: n.category,
         hasChangeFromTemplate: !0
     };
-    for (let e = 0; e < a.channels.length; e++) {
-        let t = n.channelBenefits[e],
-            i = a.channels[e];
-        if (t.name !== i.name || t.description !== i.description || t.emoji_name !== i.emoji_name) return {
-            templateCategory: l.category,
+    for (let e = 0; e < i.channels.length; e++) {
+        let t = a.channelBenefits[e],
+            r = i.channels[e];
+        if (t.name !== r.name || t.description !== r.description || t.emoji_name !== r.emoji_name) return {
+            templateCategory: n.category,
             hasChangeFromTemplate: !0
         }
     }
-    for (let e = 0; e < a.additional_perks.length; e++) {
-        let t = n.intangibleBenefits[e],
-            i = a.additional_perks[e];
-        if (t.name !== i.name || t.description !== i.description || t.emoji_name !== i.emoji_name) return {
-            templateCategory: l.category,
+    for (let e = 0; e < i.additional_perks.length; e++) {
+        let t = a.intangibleBenefits[e],
+            r = i.additional_perks[e];
+        if (t.name !== r.name || t.description !== r.description || t.emoji_name !== r.emoji_name) return {
+            templateCategory: n.category,
             hasChangeFromTemplate: !0
         }
     }
     return {
-        templateCategory: l.category,
+        templateCategory: n.category,
         hasChangeFromTemplate: !1
     }
 }
 
-function N(e) {
-    return (0, m.X9)(e) && e.features.has(A.GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED) && (0, c.D3)() && (0, c.TG)(e.id)
+function S(e) {
+    return (0, u.X9)(e) && e.features.has(f.GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED) && (0, c.D3)() && (0, c.TG)(e.id)
 }

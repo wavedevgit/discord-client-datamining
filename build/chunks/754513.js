@@ -14,7 +14,7 @@ var i = n(627968),
     u = n(411335),
     m = n(652215),
     g = n(985018),
-    x = n(256893);
+    x = n(875231);
 let h = o.A.getArticleURL(m.MVz.GUILD_AUTOMOD_REGEX);
 
 function _(e) {

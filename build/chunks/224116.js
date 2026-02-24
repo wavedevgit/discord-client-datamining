@@ -13,7 +13,7 @@ var t = s(627968),
     w = s(877062),
     b = s(652215),
     m = s(985018),
-    p = s(599098);
+    p = s(374880);
 let _ = [{
         id: "discord",
         getName: () => m.intl.string(m.t.uON9Ui),

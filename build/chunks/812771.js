@@ -15,7 +15,7 @@ var i, s = n(627968),
     h = n(761929),
     A = n(964404),
     p = n(743898),
-    g = n(3651),
+    g = n(83181),
     m = ((i = {})[i.PostSidebar = 0] = "PostSidebar", i[i.ThreadSidebar = 1] = "ThreadSidebar", i[i.CallChatSidebar = 2] = "CallChatSidebar", i[i.MessageRequestSidebar = 3] = "MessageRequestSidebar", i[i.HomeSidebar = 4] = "HomeSidebar", i);
 
 function _(e) {

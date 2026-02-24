@@ -10,8 +10,8 @@ var a = n(627968),
     o = n(397927),
     d = n(73153),
     c = n(236899),
-    u = n(661251),
-    m = n(665646);
+    u = n(930821),
+    m = n(639280);
 
 function h() {
     let [e, t] = i.useState(""), n = (0, r.bG)([c.A], () => c.A.getAllWordsSorted().map((e, t) => {

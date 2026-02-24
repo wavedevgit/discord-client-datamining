@@ -1,0 +1,2 @@
+/** chunk id: 211720, original params: e (module,exports,require) **/
+e.exports = JSON.parse('{"yfwZuy":["Mijn badge bekijken"],"UnPGii":["De badge is toegevoegd aan je profiel."],"nvaTQq":["Je hebt de Orbs-profielbadge verzameld!"]}')

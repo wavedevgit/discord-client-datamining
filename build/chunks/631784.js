@@ -134,12 +134,12 @@ function I(e) {
         applicationIds: n.useMemo(() => C ? [f.FYj, h.XR] : [f.FYj], [C]),
         numItems: i,
         source: a
-    }), j = n.useMemo(() => x.filter(e => null != A[e.id] && A[e.id][t] === m.j.WISHLIST).length, [x, t, A]);
+    }), T = n.useMemo(() => x.filter(e => null != A[e.id] && A[e.id][t] === m.j.WISHLIST).length, [x, t, A]);
     return {
         wishlistAndRecommendations: n.useMemo(() => x.slice(0, i), [x, i]),
         skusToUserAndReason: A,
         status: w,
         defaultWishlistId: g,
-        totalUnownedWishlistItemCount: j
+        totalUnownedWishlistItemCount: T
     }
 }

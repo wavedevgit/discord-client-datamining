@@ -13,8 +13,8 @@ var i = n(627968),
     d = n(46054),
     u = n(742589),
     h = n(985018),
-    A = n(980017),
-    p = n(206314);
+    A = n(734911),
+    p = n(830412);
 
 function g(e) {
     return e.matches("a") || "highlight" === e.className || e.className.includes("mention")

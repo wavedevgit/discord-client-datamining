@@ -1,23 +1,22 @@
-/** chunk id: 848752, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    Ay: () => h,
+/** chunk id: 848752, original params: e,t,a (module,exports,require) **/
+a.d(t, {
+    Ay: () => p,
     Oj: () => m,
-    Q8: () => _
+    Q8: () => h
 });
-var a = n(627968),
-    l = n(64700),
-    r = n(503698),
-    s = n.n(r),
-    i = n(397927),
-    o = n(532197),
-    d = n(331026);
-let c = {
-    CENTER: d.Hu,
-    LEFT: d.Vl
+var n = a(627968),
+    i = a(64700),
+    s = a(503698),
+    l = a.n(s),
+    r = a(397927),
+    o = a(532197),
+    c = a(627988);
+let d = {
+    CENTER: c.Hu,
+    LEFT: c.Vl
 };
-class u extends l.PureComponent {
-    static Align = c;
+class u extends i.PureComponent {
+    static Align = d;
     static defaultProps = {
         scrollToPadding: {
             top: 0,
@@ -25,7 +24,7 @@ class u extends l.PureComponent {
             bottom: 0,
             right: 0
         },
-        align: c.CENTER
+        align: d.CENTER
     };
     _scrollerRef = null;
     _paginationItemRefs = [];
@@ -41,9 +40,9 @@ class u extends l.PureComponent {
     handleSelectedIndexChange = e => {
         let t = this._scrollerRef;
         if (null == t) return;
-        let n = this._paginationItemRefs[e];
-        null != n && t.scrollIntoViewNode({
-            node: n,
+        let a = this._paginationItemRefs[e];
+        null != a && t.scrollIntoViewNode({
+            node: a,
             animate: !0,
             padding: this.props.scrollToPadding
         })
@@ -58,25 +57,25 @@ class u extends l.PureComponent {
         let {
             renderItem: e,
             items: t,
-            vertical: n,
-            paginationContainerClass: r,
+            vertical: a,
+            paginationContainerClass: s,
             align: o
-        } = this.props, c = n ? d.XA : d.BU;
-        return (0, a.jsx)(i.GtU, {
-            orientation: n ? "vertical" : "horizontal",
-            className: s()(c, r, o),
+        } = this.props, d = a ? c.XA : c.BU;
+        return (0, n.jsx)(r.GtU, {
+            orientation: a ? "vertical" : "horizontal",
+            className: l()(d, s, o),
             ref: this.handleSetScrollerRef,
-            children: t.map((t, n) => l.cloneElement(e(t, n), {
-                onClick: () => this.handlePageClick(n),
-                key: n,
+            children: t.map((t, a) => i.cloneElement(e(t, a), {
+                onClick: () => this.handlePageClick(a),
+                key: a,
                 ref: e => {
-                    this._paginationItemRefs[n] = e
+                    this._paginationItemRefs[a] = e
                 }
             }))
         })
     }
 }
-class _ extends l.PureComponent {
+class h extends i.PureComponent {
     handlePrevClick = e => {
         e.stopPropagation(), e.preventDefault();
         let {
@@ -88,17 +87,17 @@ class _ extends l.PureComponent {
         let {
             className: e
         } = this.props;
-        return (0, a.jsx)(i.DUT, {
-            className: s()(d.t1, e),
+        return (0, n.jsx)(r.DUT, {
+            className: l()(c.t1, e),
             onClick: this.handlePrevClick,
-            children: (0, a.jsx)(o.A, {
-                className: d.UE,
+            children: (0, n.jsx)(o.A, {
+                className: c.UE,
                 direction: o.A.Directions.LEFT
             })
         })
     }
 }
-class m extends l.PureComponent {
+class m extends i.PureComponent {
     handleNextClick = e => {
         e.stopPropagation(), e.preventDefault();
         let {
@@ -110,14 +109,14 @@ class m extends l.PureComponent {
         let {
             className: e
         } = this.props;
-        return (0, a.jsx)(i.DUT, {
-            className: s()(d.XS, e),
+        return (0, n.jsx)(r.DUT, {
+            className: l()(c.XS, e),
             onClick: this.handleNextClick,
-            children: (0, a.jsx)(o.A, {
-                className: d.UE,
+            children: (0, n.jsx)(o.A, {
+                className: c.UE,
                 direction: o.A.Directions.RIGHT
             })
         })
     }
 }
-let h = u
+let p = u

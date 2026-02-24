@@ -1,17 +1,17 @@
-/** chunk id: 781489, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    e: () => a
+/** chunk id: 781489, original params: e,n,t (module,exports,require) **/
+t.d(n, {
+    e: () => l
 });
-var i = n(311907),
-    r = n(287809),
-    l = n(616075);
+var r = t(311907),
+    i = t(287809),
+    a = t(616075);
 
-function a(e) {
-    let t = (0, i.bG)([r.default], () => r.default.getCurrentUser());
+function l(e) {
+    let n = (0, r.bG)([i.default], () => i.default.getCurrentUser());
     return {
-        isEnabled: l.w.useConfig({
+        isEnabled: a.w.useConfig({
             location: e
         }).enabled,
-        hasStaffPrivileges: null != t && (t.hasAnyStaffLevel() || t.isStaffPersonal())
+        hasStaffPrivileges: null != n && (n.hasAnyStaffLevel() || n.isStaffPersonal())
     }
 }

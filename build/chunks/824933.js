@@ -1,0 +1,6 @@
+/** chunk id: 824933, original params: e,t,n (module,exports,require) **/
+e.exports = {
+    JD: "chatHeaderBar_dc83f5",
+    E5: "chatHeaderBarText_dc83f5",
+    sc: "narrow_dc83f5"
+}

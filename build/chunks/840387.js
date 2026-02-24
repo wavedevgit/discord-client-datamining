@@ -2,9 +2,9 @@
 n.d(t, {
     Z: () => l
 });
-var i = n(311907),
-    r = n(287809);
+var r = n(311907),
+    a = n(287809);
 
 function l() {
-    return !1 === (0, i.bG)([r.default], () => r.default.getCurrentUser()?.nsfwAllowed)
+    return !1 === (0, r.bG)([a.default], () => a.default.getCurrentUser()?.nsfwAllowed)
 }

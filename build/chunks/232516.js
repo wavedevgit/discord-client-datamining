@@ -9,7 +9,7 @@ var s = i(937008),
     l = i(672525),
     o = i(802246),
     a = i(788868),
-    d = i(751690);
+    d = i(329632);
 let c = function(e) {
     let {
         onSelectSku: t,

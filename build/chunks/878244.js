@@ -1,7 +1,7 @@
 /** chunk id: 878244, original params: e,t,i (module,exports,require) **/
 i.d(t, {
     A: () => k,
-    O: () => T
+    O: () => j
 });
 var n = i(627968),
     s = i(64700),
@@ -22,13 +22,13 @@ var n = i(627968),
     g = i(652215),
     C = i(788868),
     x = i(985018),
-    A = i(804810);
+    A = i(607216);
 let w = C.vQ.DM_CHANNEL_WISHLIST,
-    j = S.Z.SIZE_133;
+    T = S.Z.SIZE_133;
 
-function T() {
+function j() {
     return (0, n.jsx)(f.$, {
-        spec: j
+        spec: T
     })
 }
 
@@ -51,7 +51,7 @@ function L(e) {
                 width: 136
             }
         }
-    }), []), T = (0, _.KQ)(A), L = C === T - 1 && S > T, b = S - T + 1, O = s.useCallback(() => {
+    }), []), j = (0, _.KQ)(A), L = C === j - 1 && S > j, b = S - j + 1, O = s.useCallback(() => {
         if (L) return void r();
         let e = u === _.uS.WISHLIST ? "wishlist" : "shop";
         c.default.track(g.HAw.GIFTING_ITEM_CLICKED, {
@@ -64,14 +64,14 @@ function L(e) {
         let e = (0, n.jsxs)(f.A, {
             sku: t,
             user: l,
-            spec: j,
+            spec: T,
             skuPreviewStyle: x,
             options: w,
             onClick: O,
             children: [I && u === _.uS.POPULAR && (0, n.jsx)(p.o, {
-                spec: j
+                spec: T
             }), I && u === _.uS.WISHLIST && (0, n.jsx)(p.k, {
-                spec: j
+                spec: T
             }), L && (0, n.jsx)(h.Yb, {
                 count: b
             })]

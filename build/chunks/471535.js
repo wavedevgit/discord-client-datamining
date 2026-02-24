@@ -7,7 +7,7 @@ var r = n(627968),
     s = n(503698),
     l = n.n(s),
     a = n(771253),
-    o = n(475539),
+    o = n(442215),
     u = n(942381),
     c = n(311907),
     d = n(645577),
@@ -42,7 +42,7 @@ var r = n(627968),
     U = n(654487),
     B = n(838541),
     F = n(985018),
-    G = n(681636);
+    G = n(221190);
 let $ = {
     tension: 250,
     friction: 5,
@@ -77,7 +77,7 @@ function K(e) {
     }, []), [eS, eC] = i.useState(!1), [eA, e_] = i.useState(!0), [eb, eT] = i.useState(!1), [ey, eN] = i.useState([]), [eD, eL] = i.useState(h.A.getEffectiveConnectionSpeed()), [ej, eI] = i.useState(0), [eM, ek] = i.useState(0), [eR, ew] = i.useState(!1), [eO, eP] = i.useState(!1), [eV, eQ] = i.useState(null), eU = i.useRef(!0), eB = i.useRef(null), eF = i.useRef(null), eG = (0, C.Kr)(e => e.videoProgress[q.id] ?? {
         timestampSec: 0,
         duration: 10
-    }, u.x), e$ = (0, C.Kr)(e => e.setVideoProgress), eK = (0, C.Kr)(e => e.muted), eY = (0, C.Kr)(e => e.volume), eH = (0, c.bG)([E.A], () => E.A.useReducedMotion), ez = (0, i.useRef)(null), eW = (0, i.useRef)(null), eq = i.useRef(!0), eX = q.userStatus?.completedAt != null, eJ = i.useMemo(() => q.config.features.includes(U.Li.FULL_EPISODE_VIDEO_QUEST), [q.config.features]), eZ = i.useRef(!1), [e0, e1] = i.useState(null), [e6, e7] = i.useState(!1), [e2, e4] = i.useState(!1), [e9, e8] = i.useState(null), e3 = eX ? ez.current?.duration ?? 0 : Math.max(eG.maxTimestampSec, ev.progressSeconds), e5 = i.useMemo(() => (0, _.L)({
+    }, u.x), e$ = (0, C.Kr)(e => e.setVideoProgress), eK = (0, C.Kr)(e => e.muted), eY = (0, C.Kr)(e => e.volume), eH = (0, c.bG)([E.A], () => E.A.useReducedMotion), ez = (0, i.useRef)(null), eW = (0, i.useRef)(null), eq = i.useRef(!0), eX = q.userStatus?.completedAt != null, eJ = i.useMemo(() => q.config.features.includes(U.Li.FULL_EPISODE_VIDEO_QUEST), [q.config.features]), eZ = i.useRef(!1), [e0, e1] = i.useState(null), [e2, e6] = i.useState(!1), [e7, e4] = i.useState(!1), [e9, e8] = i.useState(null), e3 = eX ? ez.current?.duration ?? 0 : Math.max(eG.maxTimestampSec, ev.progressSeconds), e5 = i.useMemo(() => (0, _.L)({
         quest: q,
         location: U.rE.VIDEO_MODAL
     }), [q]), te = (0, d.g)(eX, eG, ev.progressSeconds), {
@@ -134,8 +134,8 @@ function K(e) {
         } = (0, b.A)({
             getCurrentVideoTime: t_,
             isPlaying: ec === w.Q6.PLAYING,
-            isMetadataLoaded: e6,
-            isInitialSeekComplete: e2,
+            isMetadataLoaded: e2,
+            isInitialSeekComplete: e7,
             onAnalytics: tx,
             emitIntervalMs: 4e3,
             minSegmentDurationMs: 2e3
@@ -308,7 +308,7 @@ function K(e) {
         tZ = eX || eG.maxTimestampSec >= (ez.current?.currentTime ?? 0) + 1,
         t0 = i.useMemo(() => null === (0, T.tW)(q, T.fY.VIDEO_PLAYER_TRANSCRIPT, void 0, !1), [q]),
         t1 = tt ? 20 : 12,
-        t6 = 20 * !!tt;
+        t2 = 20 * !!tt;
     return (0, r.jsx)(m.DUT, {
         className: G.W6,
         "data-fullscreen": Z,
@@ -367,7 +367,7 @@ function K(e) {
                     e5.info(`[QV] | handleLoadedData: loadingFirstChunk: ${eA}`), eA && (tc(null != eB.current ? performance.now() - eB.current : null), e_(!1), to())
                 },
                 onLoadedMetadata: e => {
-                    null != ez.current && (e5.info(`[QV] | handleLoadedMetadata | videoAssetId: ${tl}`), e7(!0), tl !== T.fY.VIDEO_PLAYER_VIDEO_HLS && tP(te), eK ? ez.current.volume = 0 : ez.current.volume = eY)
+                    null != ez.current && (e5.info(`[QV] | handleLoadedMetadata | videoAssetId: ${tl}`), e6(!0), tl !== T.fY.VIDEO_PLAYER_VIDEO_HLS && tP(te), eK ? ez.current.volume = 0 : ez.current.volume = eY)
                 },
                 onLoadStart: () => {
                     eB.current = performance.now(), tu(eD), e5.info(`[QV] | handleLoadStart | loadingStartTime: ${eB.current}`)
@@ -497,7 +497,7 @@ function K(e) {
                 style: {
                     translateY: (0, o.to)([tK.to({
                         range: [0, 1],
-                        output: [-t6, -ti[tn]]
+                        output: [-t2, -ti[tn]]
                     })], e => `${e}px`)
                 },
                 children: (0, r.jsx)(m.Text, {
@@ -519,7 +519,7 @@ function K(e) {
                         transform: (0, o.to)([tK.to({
                             range: [1, 0],
                             output: [0, 1]
-                        })], e => `translateY(-${e*t6}px)`)
+                        })], e => `translateY(-${e*t2}px)`)
                     },
                     children: (0, r.jsx)(k.A, {
                         percent: null != eV ? eV : eh,

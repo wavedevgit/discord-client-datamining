@@ -1,12 +1,12 @@
-/** chunk id: 602674, original params: _,e,r (module,exports,require) **/
-r.d(e, {
-    v: () => t
+/** chunk id: 602674, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    v: () => r
 });
-let i = null;
+let a = null;
 
-function t() {
-    if (null == i) try {
-        i = new AudioContext
-    } catch (_) {}
-    return i
+function r() {
+    if (null == a) try {
+        a = new AudioContext
+    } catch (e) {}
+    return a
 }

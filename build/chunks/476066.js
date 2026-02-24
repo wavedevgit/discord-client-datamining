@@ -6,7 +6,7 @@ var r = n(627968),
     i = n(64700),
     s = n(503698),
     l = n.n(s),
-    a = n(475539),
+    a = n(442215),
     o = n(311907),
     u = n(876230),
     c = n(397927),
@@ -21,7 +21,7 @@ var r = n(627968),
     g = n(60907),
     S = n(267956),
     C = n(838541),
-    A = n(681636);
+    A = n(221190);
 let _ = {
     tension: 250,
     friction: 5,
@@ -114,12 +114,12 @@ function b(e) {
             null != eJ.current && clearTimeout(eJ.current)
         }
     }, [J, e0]);
-    let e6 = !eq && (en || ee || J === u.Q6.ENDED),
-        e7 = i.useCallback(() => {
+    let e2 = !eq && (en || ee || J === u.Q6.ENDED),
+        e6 = i.useCallback(() => {
             let e = (0, E.qf)(eO.current?.parentNode, eO.current);
-            null == e || (0, E._U)(e) || (e.removeEventListener(E.Wb, e7), eR(!1), U?.(!1), eH(u.oA.MD))
+            null == e || (0, E._U)(e) || (e.removeEventListener(E.Wb, e6), eR(!1), U?.(!1), eH(u.oA.MD))
         }, [U]),
-        e2 = () => {
+        e7 = () => {
             null == eO.current || (e9(Math.max(eO.current.currentTime - 10, 0)), J === u.Q6.ENDED && eW(u.Q6.PAUSED))
         },
         e4 = () => {
@@ -131,9 +131,9 @@ function b(e) {
         let e = eO.current;
         return () => {
             let t = (0, E.qf)(e?.parentNode, e);
-            null != t && t.removeEventListener(E.Wb, e7)
+            null != t && t.removeEventListener(E.Wb, e6)
         }
-    }, [e7]);
+    }, [e6]);
     let e9 = i.useCallback(e => {
             null != eO.current && (ea(e / (eO.current.duration ?? 1) * 100), ec(!0), eF(!1), eO.current.currentTime = e)
         }, []),
@@ -217,11 +217,11 @@ function b(e) {
     }), () => {
         tl.stop()
     }), [eI, ta, ew, eG, tl]), i.useEffect(() => (ti({
-        controlBarAnimSpring: e6 || eh ? 1 : 0,
+        controlBarAnimSpring: e2 || eh ? 1 : 0,
         immediate: ew
     }), () => {
         tr.stop()
-    }), [e6, ti, ew, eh, tr]);
+    }), [e2, ti, ew, eh, tr]);
     let to = J === u.Q6.ENDED;
     return (0, r.jsx)(c.DUT, {
         className: A.W6,
@@ -409,16 +409,16 @@ function b(e) {
                         percent: null != el ? el : ei,
                         animate: !0 !== eV.current && !eu,
                         interactionEnabled: !w && eg,
-                        backgroundColor: e6 ? void 0 : "rgba(0, 0, 0, 0.0)",
+                        backgroundColor: e2 ? void 0 : "rgba(0, 0, 0, 0.0)",
                         playerState: J,
-                        preloadedBuffers: e6 ? ef : void 0,
+                        preloadedBuffers: e2 ? ef : void 0,
                         duration: eO.current?.duration ?? 1,
-                        isFullyVisible: e6 && eg,
-                        maxSeekableTime: e6 && eg ? eK : void 0,
+                        isFullyVisible: e2 && eg,
+                        maxSeekableTime: e2 && eg ? eK : void 0,
                         onClick: e => {
                             e9(e), J === u.Q6.ENDED && eW(u.Q6.PLAYING)
                         },
-                        onScrubBack: e2,
+                        onScrubBack: e7,
                         onScrubForward: e4,
                         "data-testid": "discord-web-video-player-timeline"
                     })
@@ -445,7 +445,7 @@ function b(e) {
                         videoRef: eO,
                         playerState: J,
                         animSpring: tr,
-                        visible: e6,
+                        visible: e2,
                         seekForwardEnabled: !w,
                         hideCaptionBtn: null == O,
                         hideTranscriptBtn: null == P,
@@ -466,9 +466,9 @@ function b(e) {
                         handleFullScreenBtnClick: () => {
                             let e = !ek,
                                 t = (0, E.qf)(eO.current?.parentNode, eO.current);
-                            e && null != t ? ((0, E.tl)(t), t.addEventListener(E.Wb, e7), U?.(!0), eH(u.oA.LG)) : e || null == t || (t.removeEventListener(E.Wb, e7), U?.(!1), (0, E.sP)(t), eH(u.oA.MD)), eR(e)
+                            e && null != t ? ((0, E.tl)(t), t.addEventListener(E.Wb, e6), U?.(!0), eH(u.oA.LG)) : e || null == t || (t.removeEventListener(E.Wb, e6), U?.(!1), (0, E.sP)(t), eH(u.oA.MD)), eR(e)
                         },
-                        handleSeekBackBtnClick: e2,
+                        handleSeekBackBtnClick: e7,
                         handleSeekForwardBtnClick: e4,
                         handleControlBarPendingInteraction: ex,
                         onVolumeChange: e => {

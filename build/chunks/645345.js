@@ -1,0 +1,6 @@
+/** chunk id: 645345, original params: t,e,s (module,exports,require) **/
+t.exports = {
+    OK: "targetList_deebfa",
+    gt: "upperBodyText_deebfa",
+    hD: "targetItem_deebfa"
+}

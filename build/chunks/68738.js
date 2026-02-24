@@ -10,8 +10,8 @@ var a = n(627968),
     o = n(734057),
     d = n(71393),
     c = n(287809),
-    u = n(815907),
-    m = n(661251);
+    u = n(872985),
+    m = n(930821);
 let h = {
         ClipsContextMenu: async () => {
             let {
@@ -59,7 +59,7 @@ let h = {
         GuildContextMenu: async () => {
             let {
                 default: e
-            } = await Promise.all([n.e("49681"), n.e("43600"), n.e("68587"), n.e("28136"), n.e("63379"), n.e("56026"), n.e("16301"), n.e("22191"), n.e("25961"), n.e("8018"), n.e("21968"), n.e("35894"), n.e("50796"), n.e("24202"), n.e("8458"), n.e("11810"), n.e("39048"), n.e("17537"), n.e("33105"), n.e("56475"), n.e("54469"), n.e("59461")]).then(n.bind(n, 544676)), t = Object.values(d.A.getGuilds())[0];
+            } = await Promise.all([n.e("49681"), n.e("43600"), n.e("68587"), n.e("28136"), n.e("63379"), n.e("56026"), n.e("16301"), n.e("22191"), n.e("25961"), n.e("8018"), n.e("96760"), n.e("35894"), n.e("50796"), n.e("24202"), n.e("8458"), n.e("11810"), n.e("52848"), n.e("17537"), n.e("2717"), n.e("56475"), n.e("54469"), n.e("92719")]).then(n.bind(n, 544676)), t = Object.values(d.A.getGuilds())[0];
             return null == t ? () => null : n => (0, a.jsx)(e, {
                 ...n,
                 guild: t
@@ -131,7 +131,7 @@ let h = {
         StaffOnlyEntryDebugMenu: async () => {
             let {
                 default: e
-            } = await n.e("89346").then(n.bind(n, 949881)), {
+            } = await n.e("66965").then(n.bind(n, 949881)), {
                 ContentInventoryEntryType: t
             } = await Promise.resolve().then(n.bind(n, 681154)), {
                 ContentInventoryAuthorType: i
@@ -156,7 +156,7 @@ let h = {
         AddQuestionsContextMenu: async () => {
             let {
                 AddQuestionsContextMenu: e
-            } = await Promise.all([n.e("11810"), n.e("23342")]).then(n.bind(n, 892921)), t = Object.values(d.A.getGuilds())[0];
+            } = await Promise.all([n.e("11810"), n.e("76210")]).then(n.bind(n, 892921)), t = Object.values(d.A.getGuilds())[0];
             return null == t ? () => null : n => (0, a.jsx)(e, {
                 ...n,
                 addFormField: e => {

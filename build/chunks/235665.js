@@ -1,19 +1,19 @@
-/** chunk id: 235665, original params: e,t,l (module,exports,require) **/
-l.d(t, {
+/** chunk id: 235665, original params: e,t,n (module,exports,require) **/
+n.d(t, {
     A: () => r
 });
-var i = l(627968);
-l(64700);
-var n = l(192308);
+var i = n(627968);
+n(64700);
+var l = n(192308);
 
 function r(e) {
-    (0, n.openModalLazy)(async () => {
+    (0, l.openModalLazy)(async () => {
         let {
             default: t
-        } = await l.e("60222").then(l.bind(l, 13197));
-        return l => (0, i.jsx)(t, {
+        } = await n.e("60222").then(n.bind(n, 13197));
+        return n => (0, i.jsx)(t, {
             ...e,
-            ...l
+            ...n
         })
     })
 }

@@ -1,0 +1,4 @@
+/** chunk id: 269372, original params: e,t,n (module,exports,require) **/
+e.exports = {
+    q: "footer__47d89"
+}

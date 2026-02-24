@@ -1,12 +1,13 @@
 /** chunk id: 714126, original params: e,t,l (module,exports,require) **/
+"use strict";
 l.d(t, {
     W: () => s
 });
-var a = l(627968),
-    n = l(64700),
-    r = l(397927),
-    i = l(798233);
-class s extends n.PureComponent {
+var r = l(627968),
+    a = l(64700),
+    n = l(397927),
+    i = l(14503);
+class s extends a.PureComponent {
     state = {
         error: null,
         info: null
@@ -18,8 +19,8 @@ class s extends n.PureComponent {
         })
     }
     render() {
-        return null != this.state.error ? (0, a.jsx)("div", {
-            children: (0, a.jsx)(r.Text, {
+        return null != this.state.error ? (0, r.jsx)("div", {
+            children: (0, r.jsx)(n.Text, {
                 color: "text-feedback-critical",
                 variant: "text-md/normal",
                 className: i.cW,

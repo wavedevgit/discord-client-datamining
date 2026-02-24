@@ -1,57 +1,57 @@
-/** chunk id: 792831, original params: e,t,l (module,exports,require) **/
-l.d(t, {
-    A: () => T
+/** chunk id: 792831, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    A: () => E
 });
-var a, n = l(627968);
-l(64700);
-var s = l(503698),
-    r = l.n(s),
-    i = l(953727),
-    c = l(106199),
-    o = ((a = {}).LEFT = "LEFT", a.RIGHT = "RIGHT", a.UP = "UP", a.DOWN = "DOWN", a.UP_LEFT = "UP_LEFT", a.DOWN_RIGHT = "DOWN_RIGHT", a);
-let u = e => {
+var i, l = n(627968);
+n(64700);
+var r = n(503698),
+    a = n.n(r),
+    s = n(953727),
+    o = n(59937),
+    c = ((i = {}).LEFT = "LEFT", i.RIGHT = "RIGHT", i.UP = "UP", i.DOWN = "DOWN", i.UP_LEFT = "UP_LEFT", i.DOWN_RIGHT = "DOWN_RIGHT", i);
+let _ = e => {
     let {
         width: t = 24,
-        height: l = 24,
-        color: a = "currentColor",
-        direction: s,
-        foreground: o,
-        className: u,
-        title: T,
+        height: n = 24,
+        color: i = "currentColor",
+        direction: r,
+        foreground: c,
+        className: _,
+        title: E,
         ...d
     } = e;
-    return (0, n.jsxs)("svg", {
-        ...(0, i.A)(d),
+    return (0, l.jsxs)("svg", {
+        ...(0, s.A)(d),
         width: t,
-        height: l,
-        className: r()(u, function(e) {
+        height: n,
+        className: a()(_, function(e) {
             switch (e) {
                 case "LEFT":
-                    return c.kb;
+                    return o.kb;
                 case "RIGHT":
-                    return c.pG;
+                    return o.pG;
                 case "UP":
                     return null;
                 case "DOWN":
-                    return c.TR;
+                    return o.TR;
                 case "UP_LEFT":
-                    return c.l0;
+                    return o.l0;
                 case "DOWN_RIGHT":
-                    return c.Nu;
+                    return o.Nu;
                 default:
                     throw Error(`Invalid Direction ${e}`)
             }
-        }(s)),
+        }(r)),
         viewBox: "0 0 24 24",
-        children: [null != T ? (0, n.jsx)("title", {
-            children: T
-        }) : null, (0, n.jsx)("polygon", {
-            className: o,
-            fill: a,
+        children: [null != E ? (0, l.jsx)("title", {
+            children: E
+        }) : null, (0, l.jsx)("polygon", {
+            className: c,
+            fill: i,
             fillRule: "nonzero",
             points: "13 20 11 20 11 8 5.5 13.5 4.08 12.08 12 4.16 19.92 12.08 18.5 13.5 13 8"
         })]
     })
 };
-u.Directions = o;
-let T = u
+_.Directions = c;
+let E = _

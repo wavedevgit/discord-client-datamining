@@ -31,7 +31,7 @@ var i = n(627968),
     v = n(652215),
     j = n(49999),
     R = n(985018),
-    O = n(811094);
+    O = n(516632);
 let L = s.memo(function(e) {
     let {
         guild: t,

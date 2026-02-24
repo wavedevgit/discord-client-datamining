@@ -1,39 +1,39 @@
-/** chunk id: 774300, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => d,
+/** chunk id: 774300, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    A: () => u,
     F: () => c
 });
-var l, r = n(308528),
-    a = n(843472),
-    i = n(626584),
-    s = n(734057),
-    o = n(927813),
-    E = n(513391);
-let u = +o.A.Millis.SECOND + 10;
-var c = ((l = {})[l.GROUP_DM = 0] = "GROUP_DM", l[l.USER = 1] = "USER", l[l.CHANNEL = 2] = "CHANNEL", l);
-class _ extends E.A {
+var n, o = i(308528),
+    s = i(843472),
+    a = i(626584),
+    d = i(734057),
+    r = i(927813),
+    l = i(513391);
+let _ = +r.A.Millis.SECOND + 10;
+var c = ((n = {})[n.GROUP_DM = 0] = "GROUP_DM", n[n.USER = 1] = "USER", n[n.CHANNEL = 2] = "CHANNEL", n);
+class p extends l.A {
     constructor() {
-        super(new i.A("InviteQueue"), u)
+        super(new a.A("InviteQueue"), _)
     }
-    _sendInvite(e, t, n, l, r) {
-        a.A.sendInvite(e.id, t, n, l).then(() => r(null, !0), () => r(null, !1))
+    _sendInvite(e, t, i, n, o) {
+        s.A.sendInvite(e.id, t, i, n).then(() => o(null, !0), () => o(null, !1))
     }
     drain(e, t) {
         let {
-            location: n,
-            inviteAnalyticsMetadata: l
+            location: i,
+            inviteAnalyticsMetadata: n
         } = e;
         switch (e.type) {
             case 0:
             case 2:
-                this._sendInvite(e.channel, e.inviteKey, n, l, t);
+                this._sendInvite(e.channel, e.inviteKey, i, n, t);
                 break;
             case 1:
-                r.A.ensurePrivateChannel(e.user.id).then(r => {
-                    let a = s.A.getChannel(r);
-                    null != a && this._sendInvite(a, e.inviteKey, n, l, t)
+                o.A.ensurePrivateChannel(e.user.id).then(o => {
+                    let s = d.A.getChannel(o);
+                    null != s && this._sendInvite(s, e.inviteKey, i, n, t)
                 }, () => t(null, !1))
         }
     }
 }
-let d = new _
+let u = new p

@@ -6,7 +6,7 @@ var i = n(627968),
     s = n(64700),
     a = n(397927),
     l = n(985018),
-    r = n(69940);
+    r = n(170822);
 let o = s.forwardRef(function(e, t) {
     let {
         currentPageIndex: n,

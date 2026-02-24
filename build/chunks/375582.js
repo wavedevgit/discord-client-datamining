@@ -9,8 +9,8 @@ var a = n(627968),
     r = n(158954),
     o = n(397927),
     d = n(63415),
-    c = n(661251),
-    u = n(737740);
+    c = n(930821),
+    u = n(847710);
 let m = [{
         id: "private_browsing_perk",
         name: "Privacy Perk Components"

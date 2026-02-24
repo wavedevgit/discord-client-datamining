@@ -8,7 +8,7 @@ var i = n(627968),
     a = n(115884),
     s = n(120006),
     o = n(985018),
-    d = n(97276);
+    d = n(31282);
 
 function c() {
     return (0, i.jsxs)("header", {

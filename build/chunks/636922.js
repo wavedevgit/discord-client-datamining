@@ -27,7 +27,7 @@ var i = n(627968),
     D = n(268719),
     U = n(234957),
     g = n(652215),
-    M = n(119907);
+    M = n(50397);
 let m = r.memo(function(e) {
     let {
         message: t,

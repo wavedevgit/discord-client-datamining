@@ -4,12 +4,12 @@ var a = n(557939),
     i = n(108591),
     r = n(581390),
     o = n(633228),
-    l = Array;
+    c = Array;
 a({
     target: "Array",
     proto: !0
 }, {
     toReversed: function() {
-        return i(r(this), l)
+        return i(r(this), c)
     }
 }), o("toReversed")

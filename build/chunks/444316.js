@@ -1,47 +1,46 @@
-/** chunk id: 444316, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    A: () => c
+/** chunk id: 444316, original params: e,l,t (module,exports,require) **/
+t.d(l, {
+    A: () => d
 });
-var i = n(627968);
-n(64700);
-var s = n(417597),
-    r = n(397927),
-    l = n(966327),
-    a = n(287809),
-    o = n(985018),
-    d = n(36522);
+var n = t(627968);
+t(64700);
+var i = t(417597),
+    s = t(397927),
+    a = t(966327),
+    r = t(287809),
+    c = t(985018),
+    u = t(290616);
 
-function c(e) {
+function d(e) {
     let {
-        friendMemberIds: t
-    } = e, n = (0, s.yK)([a.default], () => t.slice(0, 3).map(e => a.default.getUser(e)).filter(e => null != e));
-    if (0 === n.length) return null;
-    let c = n[0],
-        u = {
-            count: t.length - 1,
-            username: c.username,
-            username2: 2 === t.length && n.length >= 2 ? n[1].username : ""
+        friendMemberIds: l
+    } = e, t = (0, i.yK)([r.default], () => l.slice(0, 3).map(e => r.default.getUser(e)).filter(e => null != e));
+    if (0 === t.length) return null;
+    let d = t[0],
+        o = {
+            count: l.length - 1,
+            username: d.username,
+            username2: 2 === l.length && t.length >= 2 ? t[1].username : ""
         },
-        h = o.intl.format(o.t["5NHEPu"], u);
-    return (0, i.jsxs)("div", {
-        className: d.kL,
-        children: [(0, i.jsx)("div", {
-            className: d.yA,
-            children: n.map((e, t) => (0, i.jsx)("div", {
-                className: d.R3,
+        m = c.intl.format(c.t["5NHEPu"], o);
+    return (0, n.jsxs)("div", {
+        className: u.kL,
+        children: [(0, n.jsx)("div", {
+            className: u.yA,
+            children: t.map((e, l) => (0, n.jsx)("div", {
+                className: u.R3,
                 style: {
-                    zIndex: n.length - t
+                    zIndex: t.length - l
                 },
-                children: (0, i.jsx)(l.A, {
+                children: (0, n.jsx)(a.A, {
                     user: e,
-                    size: r._3J.SIZE_16
+                    size: s._3J.SIZE_16
                 })
             }, e.id))
-        }), (0, i.jsx)(r.Text, {
+        }), (0, n.jsx)(s.Text, {
             variant: "text-sm/medium",
             color: "text-subtle",
-            children: h
+            children: m
         })]
     })
 }

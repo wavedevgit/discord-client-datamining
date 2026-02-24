@@ -31,7 +31,7 @@ var i = n(627968),
     v = n(332396),
     j = n(652215),
     R = n(985018),
-    O = n(299446);
+    O = n(4720);
 let L = {
     analyticsSource: {
         page: j.liQ.GUILD_CHANNEL,
