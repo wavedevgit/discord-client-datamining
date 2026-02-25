@@ -31,8 +31,8 @@ function N(e) {
         onClose: t,
         renderOutputDevices: n = !1,
         renderInputDevices: N = !1,
-        renderInputProfiles: y = !1,
-        renderInputModes: b = !1,
+        renderInputProfiles: b = !1,
+        renderInputModes: y = !1,
         renderInputVolume: v = !1,
         renderOutputVolume: j = !1,
         renderDeafen: R = !1,
@@ -81,7 +81,7 @@ function N(e) {
             navId: "audio-device-context",
             variant: "fixed",
             "aria-label": I.intl.string(I.t.ZR1Ss6),
-            children: [N && w, n && U, y && F, !M && b && G !== C.m.STUDIO ? (0, i.jsx)(r.rXV, {
+            children: [N && w, n && U, b && F, !M && y && G !== C.m.STUDIO ? (0, i.jsx)(r.rXV, {
                 label: I.intl.string(I.t["pS+K2L"]),
                 children: H
             }) : null, (0, i.jsxs)(r.rXV, {

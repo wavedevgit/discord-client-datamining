@@ -27,8 +27,8 @@ var i = n(627968),
     I = n(688810),
     T = n(571694),
     N = n(47167),
-    y = n(915089),
-    b = n(66442),
+    b = n(915089),
+    y = n(66442),
     v = n(279208),
     j = n(267102),
     R = n(976860),
@@ -60,7 +60,7 @@ var i = n(627968),
     en = n(650583),
     ei = n(985018),
     el = n(892622);
-let es = (0, y.Ld)(),
+let es = (0, b.Ld)(),
     ea = e => {
         let {
             channel: t,
@@ -918,7 +918,7 @@ function ec(e) {
     } = (0, I.Ay)(C.A.NEW_GROUP_DM_INVITE_MODAL), c = (0, N.Jo)(Array.from(t), B.default, F.A);
     return (0, i.jsxs)("div", {
         className: el.zj,
-        children: [(0, i.jsx)(b.X, {
+        children: [(0, i.jsx)(y.X, {
             className: el.r9,
             channel: null,
             previewIcon: l,

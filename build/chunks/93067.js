@@ -50,9 +50,9 @@ function p(e) {
         x.start(250, () => {
             S(!1)
         }, !1)
-    }, [x, S]), y = l.useCallback(() => {
-        x.stop(), S(!0)
     }, [x, S]), b = l.useCallback(() => {
+        x.stop(), S(!0)
+    }, [x, S]), y = l.useCallback(() => {
         T(!0)
     }, []), v = l.useCallback(() => {
         T(!1)
@@ -61,7 +61,7 @@ function p(e) {
         renderPopout: () => (0, i.jsx)(h.A, {
             children: (0, i.jsxs)("div", {
                 className: g.SW,
-                onMouseEnter: y,
+                onMouseEnter: b,
                 onMouseLeave: N,
                 children: [t, null != E && (0, i.jsx)(o.Text, {
                     variant: "text-sm/semibold",
@@ -79,9 +79,9 @@ function p(e) {
                 children: (0, i.jsx)("div", {
                     ref: p,
                     tabIndex: 0,
-                    onMouseEnter: y,
+                    onMouseEnter: b,
                     onMouseLeave: N,
-                    onFocus: b,
+                    onFocus: y,
                     onBlur: v,
                     className: a()(n, g.zr),
                     "aria-label": f,

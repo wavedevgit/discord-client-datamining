@@ -26,8 +26,8 @@ var i = n(627968),
     I = n(793574),
     T = n(688810),
     N = n(698141),
-    y = n(429913),
-    b = n(87001),
+    b = n(429913),
+    y = n(87001),
     v = n(961350),
     j = n(186111),
     R = n(287809),
@@ -76,15 +76,15 @@ function w(e) {
         userId: R.default.getCurrentUser()?.id,
         channelId: s.id,
         application: n
-    }) === g.Gy.CAN_JOIN, I = s.getGuildId() ?? void 0, y = l.useId(), b = n.id, j = l.useMemo(() => ({
+    }) === g.Gy.CAN_JOIN, I = s.getGuildId() ?? void 0, b = l.useId(), y = n.id, j = l.useMemo(() => ({
         channel: s,
         type: "channel"
     }), [s]), {
         submitting: P
     } = (0, N.A)({
-        applicationId: b,
+        applicationId: y,
         context: j,
-        launchingComponentId: y
+        launchingComponentId: b
     });
     return (0, i.jsxs)("div", {
         className: L.Yi,
@@ -122,7 +122,7 @@ function w(e) {
                         activityChannelId: s.id,
                         locationObject: x.location,
                         analyticsLocations: E,
-                        componentId: y
+                        componentId: b
                     })
                 },
                 loading: P,
@@ -144,15 +144,15 @@ function U(e) {
         analyticsLocations: c
     } = (0, T.Ay)(I.A.ACTIVITY_TILE), {
         applicationId: d
-    } = t, u = (0, p.A)(), h = null != u && (0, A.H)(u.location) === o.id && u.applicationId === d, [m] = (0, y.A)([d]), {
+    } = t, u = (0, p.A)(), h = null != u && (0, A.H)(u.location) === o.id && u.applicationId === d, [m] = (0, b.A)([d]), {
         url: g
     } = (0, f.A)({
         applicationId: d,
         names: P,
         size: 1024
-    }), x = !s && h, N = !h, v = !h && !s, R = (0, r.bG)([j.A, b.A], () => (0, S.A)({
+    }), x = !s && h, N = !h, v = !h && !s, R = (0, r.bG)([j.A, y.A], () => (0, S.A)({
         LayerStore: j.A,
-        PopoutWindowStore: b.A
+        PopoutWindowStore: y.A
     }));
     return l.useEffect(() => {
         if (x && null != u && !R) {

@@ -26,8 +26,8 @@ var i = n(627968),
     I = n(901690),
     T = n(919706),
     N = n(616356),
-    y = n(961350),
-    b = n(734057),
+    b = n(961350),
+    y = n(734057),
     v = n(430452),
     j = n(531685),
     R = n(200749),
@@ -78,11 +78,11 @@ function W(e) {
         width: S,
         wrapperClassName: k,
         paused: w = !1
-    } = e, K = v.Ay.getVideoComponent(), W = (0, r.bG)([y.default], () => y.default.getId()), z = (0, _.A)(), {
+    } = e, K = v.Ay.getVideoComponent(), W = (0, r.bG)([b.default], () => b.default.getId()), z = (0, _.A)(), {
         stream: Y,
         user: q,
         streamId: J
-    } = t, $ = (0, r.bG)([b.A], () => b.A.getChannel(Y.channelId)), Z = (0, r.bG)([N.A], () => N.A.getActiveStreamForUser(q.id, Y.guildId), [q.id, Y.guildId]), {
+    } = t, $ = (0, r.bG)([y.A], () => y.A.getChannel(Y.channelId)), Z = (0, r.bG)([N.A], () => N.A.getActiveStreamForUser(q.id, Y.guildId), [q.id, Y.guildId]), {
         defaultWatchMultipleStreams: X
     } = (0, E.W)({
         location: "StreamTile"

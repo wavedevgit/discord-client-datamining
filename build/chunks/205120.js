@@ -1,6 +1,6 @@
 /** chunk id: 205120, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => m
 });
 var i = n(627968),
     l = n(64700),
@@ -15,27 +15,7 @@ var i = n(627968),
 function h(e) {
     e.stopPropagation()
 }
-
-function m() {
-    let e = window.getSelection();
-    if (null == e) return {
-        selection: null,
-        rangeStartContainer: null,
-        rangeStartOffset: null
-    };
-    let t = e.getRangeAt(0);
-    return {
-        selection: e,
-        rangeStartContainer: t.startContainer,
-        rangeStartOffset: t.startOffset
-    }
-}
-
-function A(e, t, n) {
-    let i = document.createRange();
-    i.setStart(t, n), i.collapse(!0), e.removeAllRanges(), e.addRange(i)
-}
-class g extends l.PureComponent {
+class m extends l.PureComponent {
     node = l.createRef();
     onClickSave = () => {
         let {
@@ -101,28 +81,6 @@ class g extends l.PureComponent {
                 onCancel: n
             } = this.props;
             e.preventDefault(), e.stopPropagation(), n(t.id)
-        }
-        if (e.key === c.dh.HOME && !(e.shiftKey || e.ctrlKey)) {
-            e.preventDefault();
-            let {
-                selection: t,
-                rangeStartContainer: n,
-                rangeStartOffset: i
-            } = m();
-            if (null == t || null == n || null == i) return;
-            A(t, n, 0)
-        }
-        if (e.key === c.dh.END && !(e.shiftKey || e.ctrlKey)) {
-            e.preventDefault();
-            let {
-                selection: t,
-                rangeStartContainer: n,
-                rangeStartOffset: i
-            } = m();
-            if (null == t || null == n || null == i) return;
-            let l = n.textContent;
-            if (null == l) return;
-            A(t, n, l.length)
         }
     };
     render() {

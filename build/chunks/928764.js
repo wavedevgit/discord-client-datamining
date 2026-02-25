@@ -25,8 +25,8 @@ var i = n(627968),
     I = n(226698),
     T = n(376708),
     N = n(715757),
-    y = n(390897),
-    b = n(704860),
+    b = n(390897),
+    y = n(704860),
     v = n(152007),
     j = n(867455),
     R = n(734057),
@@ -55,7 +55,7 @@ function B(e) {
         variant: "secondary",
         text: s ? w.intl.string(U.default["2Y4vkk"]) : w.intl.string(U.default.YIbR4r),
         onClick: () => {
-            !0 === o.w.get(y.f) ? u() : (0, d.mMO)(async () => {
+            !0 === o.w.get(b.f) ? u() : (0, d.mMO)(async () => {
                 let {
                     default: e
                 } = await Promise.resolve().then(n.bind(n, 390897));
@@ -87,7 +87,7 @@ function V(e) {
     } = e, {
         ref: I,
         width: T
-    } = (0, m.Ay)(), [y, U] = l.useState(3), [V, K] = l.useState(!n), [W, z] = (0, A.A)(!1, 2e3), Y = (0, r.bG)([R.A], () => R.A.getChannel(t), [t]), {
+    } = (0, m.Ay)(), [b, U] = l.useState(3), [V, K] = l.useState(!n), [W, z] = (0, A.A)(!1, 2e3), Y = (0, r.bG)([R.A], () => R.A.getChannel(t), [t]), {
         firstMessage: q
     } = (0, L.OA)(Y), J = (0, r.bG)([v.A], () => v.A.hasJoined(t)), {
         disableReactionUpdates: $,
@@ -134,7 +134,7 @@ function V(e) {
             ref: I,
             children: [ee ? (0, i.jsx)("div", {
                 className: G.kX,
-                children: (0, i.jsx)(b.A, {
+                children: (0, i.jsx)(y.A, {
                     message: q,
                     channel: Y
                 })
@@ -166,7 +166,7 @@ function V(e) {
                     disableReactionUpdates: $,
                     isLurking: X,
                     isPendingMember: Q,
-                    maxReactions: y,
+                    maxReactions: b,
                     className: G.Br,
                     useChatFontScaling: !1,
                     isForumToolbar: !0,

@@ -1,6 +1,6 @@
 /** chunk id: 802085, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => y
+    A: () => b
 });
 var i = n(627968),
     l = n(64700),
@@ -71,7 +71,7 @@ let N = l.memo(function(e) {
             })]
         })
     }),
-    y = l.memo(function(e) {
+    b = l.memo(function(e) {
         let {
             className: t,
             compact: n,
@@ -79,7 +79,7 @@ let N = l.memo(function(e) {
             children: r,
             content: d,
             onUpdate: A
-        } = e, g = s.editedTimestamp?.toString(), p = l.useRef(!1), x = (0, c.bG)([m.A], () => m.A.getMessage(s.id), [s.id]), y = l.useCallback(() => {
+        } = e, g = s.editedTimestamp?.toString(), p = l.useRef(!1), x = (0, c.bG)([m.A], () => m.A.getMessage(s.id), [s.id]), b = l.useCallback(() => {
             x?.isBlockedEdit ? (0, h.j)(s.id) : u.A.deleteMessage(s.channel_id, s.id, !0)
         }, [s, x]);
         return l.useLayoutEffect(() => {
@@ -106,7 +106,7 @@ let N = l.memo(function(e) {
                 notice: x?.errorMessage ?? C.intl.string(C.t.zQ69pv),
                 message: s,
                 compact: n,
-                onDismiss: y
+                onDismiss: b
             })]
         })
     }, _.sP)

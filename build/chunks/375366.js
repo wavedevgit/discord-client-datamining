@@ -104,20 +104,20 @@ let g = l.memo(function(e) {
         interactive: C = !0,
         onClose: S,
         children: I
-    } = e, T = l.useRef(null), N = l.useRef([]), y = l.useRef(!1), b = l.useRef(null), [v, j] = l.useState(0), [R, M] = l.useState({
+    } = e, T = l.useRef(null), N = l.useRef([]), b = l.useRef(!1), y = l.useRef(null), [v, j] = l.useState(0), [R, M] = l.useState({
         x: 0,
         y: 0
     }), D = Math.abs(R.x) + Math.abs(R.y) > 0, O = l.useMemo(() => a().chunk(I, m), [I]), L = l.useCallback((e, t) => {
         null == N.current[v] ? N.current[v] = [] : N.current[v][t] = e
     }, [v]), P = l.useCallback((e, t) => {
-        b.current = t, E(m * e + t)
+        y.current = t, E(m * e + t)
     }, [E]), k = l.useCallback(() => {
-        b.current = null, E(null)
+        y.current = null, E(null)
     }, [E]), w = l.useCallback(e => {
-        k(), y.current = e
+        k(), b.current = e
     }, [k]), U = l.useCallback((e, t, n) => {
         let i, l, s;
-        if (y.current) return void M({
+        if (b.current) return void M({
             x: 0,
             y: 0
         });
@@ -136,7 +136,7 @@ let g = l.memo(function(e) {
             y: (o ? Math.max(a.y, -c.y) : Math.min(a.y, c.y)) / 2
         })
     }, []), G = l.useCallback(e => {
-        null != b.current && (e.preventDefault(), e.stopPropagation(), x?.(m * v + b.current))
+        null != y.current && (e.preventDefault(), e.stopPropagation(), x?.(m * v + y.current))
     }, [x, v]), F = l.useMemo(() => (0, s.throttle)(e => {
         if (null == T.current) return;
         let i = T.current.getBoundingClientRect(),
@@ -148,7 +148,7 @@ let g = l.memo(function(e) {
                 x: e.clientX,
                 y: e.clientY
             };
-        if (U(s, l, Math.max(t, n)), y.current) {
+        if (U(s, l, Math.max(t, n)), b.current) {
             null != _ && k();
             return
         }
@@ -163,7 +163,7 @@ let g = l.memo(function(e) {
     }, 16), [_, U, k, P, v, n, t]), H = l.useCallback(e => {
         if (!C) return;
         let t = v + (e.deltaY > 0 ? 1 : -1);
-        t >= 0 && t < O.length && (null != b.current && (O[t].length > b.current ? P(t, b.current) : k()), j(t))
+        t >= 0 && t < O.length && (null != y.current && (O[t].length > y.current ? P(t, y.current) : k()), j(t))
     }, [C, v, O, P, k]), B = l.useMemo(() => O[v].map((e, l) => {
         let s = h[l];
         if (null == s) throw Error(`Too many items supplied ${I.length} expected max of ${h.length}`);

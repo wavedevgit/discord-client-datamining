@@ -50,8 +50,8 @@ function u(e) {
             content: N,
             contentKey: N
         }), t = N);
-        let y = _[_.length - 1],
-            b = null,
+        let b = _[_.length - 1],
+            y = null,
             v = (0, o.kf)(e);
         E = E || v;
         let j = function(e, t, n) {
@@ -62,11 +62,11 @@ function u(e) {
             else if ((0, o.iJ)(e) && n) return d.TZK.MESSAGE_GROUP_SPAMMER;
             return null
         }(h, e, v && g);
-        (null !== j && ([b, y] = (T = l = y, null == l || l.type !== j ? (I = {
+        (null !== j && ([y, b] = (T = l = b, null == l || l.type !== j ? (I = {
             type: j,
             content: [],
             key: e.id
-        }, _.push(I)) : T = (I = l).content[I.content.length - 1], [I, T])), A === e.id && null != x) ? (null != y && y.type === d.TZK.DIVIDER ? y.unreadId = e.id : null !== b ? (S = b, e.isFirstMessageInForumPost(h) || S.content.push({
+        }, _.push(I)) : T = (I = l).content[I.content.length - 1], [I, T])), A === e.id && null != x) ? (null != b && b.type === d.TZK.DIVIDER ? b.unreadId = e.id : null !== y ? (S = y, e.isFirstMessageInForumPost(h) || S.content.push({
             type: d.TZK.DIVIDER,
             unreadId: e.id
         }), S.hasUnread = !0) : e.isFirstMessageInForumPost(h) || _.push({
@@ -82,7 +82,7 @@ function u(e) {
             content: R.message,
             groupId: R.message.id
         });
-        let M = y?.type === d.TZK.MESSAGE ? u : y;
+        let M = b?.type === d.TZK.MESSAGE ? u : b;
         (0, r.l)(h, M, e) && (n = e.id);
         let D = {
             type: e.type === d.lAJ.THREAD_STARTER_MESSAGE ? d.TZK.THREAD_STARTER_MESSAGE : d.TZK.MESSAGE,
@@ -100,7 +100,7 @@ function u(e) {
             content: f.topic,
             contentKey: f.startId,
             isSummaryDivider: !0
-        }), null !== b ? (b.content.push(D), D.jumpTarget && (b.hasJumpTarget = !0)) : _.push(D), e.isFirstMessageInForumPost(h) && _.push({
+        }), null !== y ? (y.content.push(D), D.jumpTarget && (y.hasJumpTarget = !0)) : _.push(D), e.isFirstMessageInForumPost(h) && _.push({
             type: d.TZK.FORUM_POST_ACTION_BAR
         }), null != R && "after" === R.position && _.push({
             type: d.TZK.MESSAGE,

@@ -25,8 +25,8 @@ var i = n(627968),
     I = n(761640),
     T = n(186111),
     N = n(576705),
-    y = n(461213),
-    b = n(203982),
+    b = n(461213),
+    y = n(203982),
     v = n(723702),
     j = n(518960),
     R = n(545428),
@@ -44,7 +44,7 @@ let w = l.memo(function(e) {
         editorTextContent: U,
         setValue: G,
         canOnlyUseTextCommands: F
-    } = e, H = (0, _.Us)(), B = l.useRef(null), V = l.useRef(null), K = (0, r.bG)([y.A], () => y.A.getActivities()), W = (0, A.Et)(), z = (0, r.bG)([m.A], () => m.A.getLastClipsSession()), Y = (0, r.yK)([m.A], () => m.A.getNewClipIds()), q = (0, r.bG)([I.Ay], () => null == I.Ay.getCurrentSidebarChannelId(s.id)), {
+    } = e, H = (0, _.Us)(), B = l.useRef(null), V = l.useRef(null), K = (0, r.bG)([b.A], () => b.A.getActivities()), W = (0, A.Et)(), z = (0, r.bG)([m.A], () => m.A.getLastClipsSession()), Y = (0, r.yK)([m.A], () => m.A.getNewClipIds()), q = (0, r.bG)([I.Ay], () => null == I.Ay.getCurrentSidebarChannelId(s.id)), {
         showClipsHeaderEntrypoint: J
     } = h.L_.useExperiment({
         location: "ChannelAttachButton"
@@ -77,8 +77,8 @@ let w = l.memo(function(e) {
             } = e;
             t === s.id && B.current?.activateUploadDialogue()
         };
-        return b._.subscribe(O.jej.UPLOAD_FILE, e), () => {
-            b._.unsubscribe(O.jej.UPLOAD_FILE, e)
+        return y._.subscribe(O.jej.UPLOAD_FILE, e), () => {
+            y._.unsubscribe(O.jej.UPLOAD_FILE, e)
         }
     });
     let eo = (0, C.n)(s),
@@ -169,7 +169,7 @@ let w = l.memo(function(e) {
                     t = e.currentTarget.files, null != (n = e.currentTarget.err) && "ETOOLARGE" === n.code ? (0, j.V)(s, []) : (0, j.R)(t, s, w, {
                         requireConfirm: !0,
                         origin: "file_picker"
-                    }), b._.dispatchToLastSubscribed(O.jej.TEXTAREA_FOCUS), e.currentTarget.value = ""
+                    }), y._.dispatchToLastSubscribed(O.jej.TEXTAREA_FOCUS), e.currentTarget.value = ""
                 },
                 multiple: s.rateLimitPerUser <= 0,
                 tabIndex: -1,

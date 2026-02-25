@@ -38,14 +38,14 @@ function x(e) {
         popoutType: n
     } = e, {
         reducedMotion: x
-    } = l.useContext(r.CZ), C = (0, l.useRef)(null), S = h.K.getState().clipsButtonRef, I = (0, m._z)(t), T = (0, a.bG)([d.A], () => d.A.getActiveAnimation()), N = (0, a.yK)([d.A], () => d.A.getStreamClipAnimations(I)), y = (0, l.useRef)(void 0);
+    } = l.useContext(r.CZ), C = (0, l.useRef)(null), S = h.K.getState().clipsButtonRef, I = (0, m._z)(t), T = (0, a.bG)([d.A], () => d.A.getActiveAnimation()), N = (0, a.yK)([d.A], () => d.A.getStreamClipAnimations(I)), b = (0, l.useRef)(void 0);
     l.useEffect(() => () => {
         (0, u.MI)(I)
     }, [I]);
-    let b = e => {
+    let y = e => {
             if (n !== c.N.NO_POPOUT) return p;
             let t = S?.getBoundingClientRect();
-            if (y.current = t, e.timestamp !== T || null == t) return p;
+            if (b.current = t, e.timestamp !== T || null == t) return p;
             let {
                 top: i,
                 left: l
@@ -77,7 +77,7 @@ function x(e) {
                 position: "fixed",
                 visibility: "hidden",
                 opacity: 1,
-                ...x.enabled ? b(e) : (() => {
+                ...x.enabled ? y(e) : (() => {
                     if (n !== c.N.NO_POPOUT) return p;
                     let e = C.current?.getBoundingClientRect();
                     return null == e ? p : {
@@ -91,7 +91,7 @@ function x(e) {
             enter: e => [{
                 opacity: 1,
                 visibility: "visible",
-                ...b(e)
+                ...y(e)
             }],
             leave: {
                 opacity: 0,
@@ -99,9 +99,9 @@ function x(e) {
                     height: 0,
                     width: 0,
                     ...(() => {
-                        if (null != y.current) return {
-                            top: y.current.top + 12,
-                            left: y.current.left + 12
+                        if (null != b.current) return {
+                            top: b.current.top + 12,
+                            left: b.current.left + 12
                         }
                     })()
                 }

@@ -25,8 +25,8 @@ var i = n(64700),
     I = n(661191),
     T = n(697470),
     N = n(492841),
-    y = n(707985),
-    b = n(519222),
+    b = n(707985),
+    y = n(519222),
     v = n(652215);
 let j = function(e, t, n) {
     let j = i.useRef(n);
@@ -43,16 +43,16 @@ let j = function(e, t, n) {
         let k = A.default.getId();
         switch (n.key.toLowerCase()) {
             case "backspace":
-                i && (E.A.can(v.xBc.MANAGE_MESSAGES, P) || L.canDeleteOwnMessage(k)) && (n.preventDefault(), (0, b.RC)(P, L, n));
+                i && (E.A.can(v.xBc.MANAGE_MESSAGES, P) || L.canDeleteOwnMessage(k)) && (n.preventDefault(), (0, y.RC)(P, L, n));
                 break;
             case "c":
                 ((0, S.isMac)() ? D : M) && x.p5 && (n.preventDefault(), (0, x.C)(L.content));
                 break;
             case "e":
-                i && !P.isSystemDM() && (0, T.A)(L, k) && (n.preventDefault(), (0, b.u_)(P, L));
+                i && !P.isSystemDM() && (0, T.A)(L, k) && (n.preventDefault(), (0, y.u_)(P, L));
                 break;
             case "p":
-                (i || O) && (0, N.A)(L, P) && (n.preventDefault(), (0, b.rS)(P, L, n));
+                (i || O) && (0, N.A)(L, P) && (n.preventDefault(), (0, y.rS)(P, L, n));
                 break;
             case "+":
                 (i || O) && function(e) {
@@ -60,7 +60,7 @@ let j = function(e, t, n) {
                         n = m.jW.getSetting(),
                         {
                             disableReactionCreates: i
-                        } = (0, y.A)({
+                        } = (0, b.A)({
                             channel: e,
                             canChat: t,
                             renderReactions: n,
@@ -74,7 +74,7 @@ let j = function(e, t, n) {
                 }));
                 break;
             case "r":
-                (i || O) && (0, o.r)(P, L) && (n.preventDefault(), (0, b.$b)(P, L, n));
+                (i || O) && (0, o.r)(P, L) && (n.preventDefault(), (0, y.$b)(P, L, n));
                 break;
             case "f":
                 (i || O) && (0, s.p)(L) && (n.preventDefault(), (0, a.fO)({
@@ -93,7 +93,7 @@ let j = function(e, t, n) {
                 }
                 break;
             case "enter":
-                R && (n.preventDefault(), (0, b.cl)(P, L));
+                R && (n.preventDefault(), (0, y.cl)(P, L));
                 break;
             case "escape":
                 p.A.isEditing(P.id, L.id) ? l.A.endEditMessage(P.id) : C._.dispatch(v.jej.TEXTAREA_FOCUS)

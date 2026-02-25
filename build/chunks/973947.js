@@ -28,13 +28,13 @@ let C = e => {
     } = e, {
         activeVoice: C,
         mostRecentlyRequestedVoiceId: S
-    } = (0, p.f)(), I = (0, g.e)(t.id), T = t.id === C, N = !t.available && !t.temporarilyAvailable, y = t.temporarilyAvailable && !n && !T, b = !T && t.id === S, [v, j] = l.useState(!1);
+    } = (0, p.f)(), I = (0, g.e)(t.id), T = t.id === C, N = !t.available && !t.temporarilyAvailable, b = t.temporarilyAvailable && !n && !T, y = !T && t.id === S, [v, j] = l.useState(!1);
     l.useEffect(() => {
-        let e = b ? setTimeout(() => j(b), 200) : void 0;
+        let e = y ? setTimeout(() => j(y), 200) : void 0;
         return () => {
             clearTimeout(e), j(!1)
         }
-    }, [b]);
+    }, [y]);
     let R = I?.previewSoundURLs,
         [M, D] = l.useState(0),
         {
@@ -47,11 +47,11 @@ let C = e => {
         }),
         w = x[t.styleKey],
         U = l.useCallback(() => {
-            n || !N ? ((0, m.O)(C === t.id ? null : t.id, s), y && h.default.track(f.HAw.VOICE_FILTER_LIMITED_TIME_VOICE_SELECTED, {
+            n || !N ? ((0, m.O)(C === t.id ? null : t.id, s), b && h.default.track(f.HAw.VOICE_FILTER_LIMITED_TIME_VOICE_SELECTED, {
                 voice_filter_id: t.id,
                 ...(0, A.A)(s)
             })) : (0, d.n)()
-        }, [n, N, C, t.id, s, y]),
+        }, [n, N, C, t.id, s, b]),
         G = l.useCallback(() => {
             h.default.track(f.HAw.VOICE_FILTER_PREVIEW_PLAYED, {
                 voice_filter_id: t.id,
@@ -106,7 +106,7 @@ let C = e => {
                         color: "currentColor",
                         colorClass: x.lockedIcon
                     })
-                }), y && (0, i.jsx)("div", {
+                }), b && (0, i.jsx)("div", {
                     className: a()([x.iconCircle, x.iconBorder]),
                     children: (0, i.jsx)("div", {
                         className: a()([x.clockCircle]),

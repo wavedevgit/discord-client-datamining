@@ -36,8 +36,8 @@ let p = l.memo(function(e) {
         setPanOffset: I,
         zoomLevel: T,
         isWheeling: N,
-        setIsWheeling: y,
-        isSlidering: b,
+        setIsWheeling: b,
+        isSlidering: y,
         setVideoAspectRatio: v,
         wrapperRef: j,
         doZoom: R,
@@ -82,10 +82,10 @@ let p = l.memo(function(e) {
     }, [Y, L, k, D]), ee = l.useCallback(() => {
         C(!1), H(null), G(null)
     }, [C]), et = l.useCallback(e => {
-        _ && (y(!0), R(T - e.deltaY / 100, J(e), "wheel"), f(), K.current.start(100, () => {
-            y(!1)
+        _ && (b(!0), R(T - e.deltaY / 100, J(e), "wheel"), f(), K.current.start(100, () => {
+            b(!1)
         }))
-    }, [_, R, T, J, f, y]);
+    }, [_, R, T, J, f, b]);
     (0, o.i4)(j, l.useCallback(e => {
         let {
             width: t,
@@ -130,9 +130,9 @@ let p = l.memo(function(e) {
             "--custom-zoom-scale": T,
             "--custom-pan-x": `${e.x}px`,
             "--custom-pan-y": `${e.y}px`,
-            "--custom-zoom-transition": x || B || N || b ? "none" : "transform 0.15s ease-out"
+            "--custom-zoom-transition": x || B || N || y ? "none" : "transform 0.15s ease-out"
         }
-    }, [M, x, B, N, b, S, T]);
+    }, [M, x, B, N, y, S, T]);
     return (0, i.jsx)("div", {
         ref: j,
         className: a()(A.iE, p, {

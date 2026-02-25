@@ -25,8 +25,8 @@ var i = n(627968),
     I = n(427262),
     T = n(803622),
     N = n(314307),
-    y = n(393194),
-    b = n(455067),
+    b = n(393194),
+    y = n(455067),
     v = n(432817),
     j = n(324799),
     R = n(635157),
@@ -46,7 +46,7 @@ function F(e) {
         channel: n
     } = e, l = t && (0, h.Ae)(n), a = (0, s.bG)([x.Ay], () => null != n.guild_id && n === x.Ay.getDefaultChannel(n.guild_id), [n]);
     if ((0, m.A)(n.id)) return null;
-    if (n.isForumPost()) return (0, i.jsx)(y.A, {
+    if (n.isForumPost()) return (0, i.jsx)(b.A, {
         channel: n
     });
     if (_.Le.has(n.type)) return (0, i.jsx)(O.A, {
@@ -70,7 +70,7 @@ function H(e) {
     } = e, h = (0, u.Ay)(t), {
         type: m
     } = t, _ = (0, s.bG)([S.default], () => t.isPrivate() ? S.default.getUser(t.getRecipientId()) : null), x = I.Ay.useUserTag(_), {
-        canManageRoles: y,
+        canManageRoles: b,
         canReadMessageHistory: M
     } = (0, s.cf)([C.A], () => ({
         canManageRoles: C.A.can(P.xBc.MANAGE_ROLES, t),
@@ -142,7 +142,7 @@ function H(e) {
                 children: w.intl.string(w.t.M8Ao6I)
             })]
         });
-        else if (t.hasFlag(k.lx.IS_JOIN_REQUEST_INTERVIEW_CHANNEL)) return (0, i.jsx)(b.A, {
+        else if (t.hasFlag(k.lx.IS_JOIN_REQUEST_INTERVIEW_CHANNEL)) return (0, i.jsx)(y.A, {
         channel: t
     });
     else return (0, i.jsx)(R.A, {
@@ -153,7 +153,7 @@ function H(e) {
     });
     return M ? (0, i.jsx)(F, {
         channel: t,
-        canManageRoles: y
+        canManageRoles: b
     }) : (0, i.jsx)(N.Ay, {
         channelId: t.id,
         children: (0, i.jsx)(N.j1, {

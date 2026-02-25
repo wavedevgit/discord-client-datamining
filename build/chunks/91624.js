@@ -46,8 +46,8 @@ function I(e) {
     } = t, {
         id: d
     } = n, g = t.getGuildId(), p = (0, a.bG)([m.A], () => m.A.getGuild(g), [g]), _ = t.type === x.rbe.GUILD_ANNOUNCEMENT, I = null != p && p.features.has(x.GuildFeatures.NEWS), N = _ && I, {
-        editingMessage: y,
-        editingTextValue: b,
+        editingMessage: b,
+        editingTextValue: y,
         editingRichValue: v
     } = (0, a.cf)([h.A], () => ({
         editingMessage: h.A.getEditingMessage(c),
@@ -56,7 +56,7 @@ function I(e) {
     }), [c]), j = (0, a.bG)([u.default], () => u.default.getId()), R = l.useCallback((e, i, l) => {
         let {
             content: a
-        } = l, c = A.A.can(x.xBc.MANAGE_MESSAGES, t), d = null != y && null != y.author ? y.author.id : null, u = N && (d === j || c), h = {
+        } = l, c = A.A.can(x.xBc.MANAGE_MESSAGES, t), d = null != b && null != b.author ? b.author.id : null, u = N && (d === j || c), h = {
             content: a,
             components: void 0
         };
@@ -69,17 +69,17 @@ function I(e) {
                 id: "82744"
             }), h.content = "", h.components = t
         }
-        return u && null != y && (0, s.Lt)(y.flags, x.pr7.CROSSPOSTED) ? f.A.confirmEdit(e, i, h) : r.A.editMessage(e, i, h), Promise.resolve()
-    }, [y, N, j, t, n]), M = l.useCallback(e => (0, l.createElement)(T, {
+        return u && null != b && (0, s.Lt)(b.flags, x.pr7.CROSSPOSTED) ? f.A.confirmEdit(e, i, h) : r.A.editMessage(e, i, h), Promise.resolve()
+    }, [b, N, j, t, n]), M = l.useCallback(e => (0, l.createElement)(T, {
         ...e,
         className: C.gM,
         key: d
     }), [d]);
-    return null != b && null != v ? (0, i.jsx)(E.A, {
+    return null != y && null != v ? (0, i.jsx)(E.A, {
         ref: void 0,
         channel: t,
         message: n,
-        textValue: b,
+        textValue: y,
         richValue: v,
         onCancel: r.A.endEditMessage,
         onChange: r.A.updateEditMessage,

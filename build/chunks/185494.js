@@ -55,7 +55,7 @@ function T(e) {
             isLoopbackEnabled: t,
             toggleLoopback: n
         }
-    }(), y = N ? d.GOW : d.uik, b = l.useCallback(() => (0, g.O)(null), []), v = (0, d.rdh)(d.LU0.colors.BACKGROUND_BASE_LOWER).hex(), j = (0, d.rdh)(d.LU0.colors.WHITE).hex(), R = l.useRef(0), M = t !== n ? R.current + 1 : R.current;
+    }(), b = N ? d.GOW : d.uik, y = l.useCallback(() => (0, g.O)(null), []), v = (0, d.rdh)(d.LU0.colors.BACKGROUND_BASE_LOWER).hex(), j = (0, d.rdh)(d.LU0.colors.WHITE).hex(), R = l.useRef(0), M = t !== n ? R.current + 1 : R.current;
     l.useEffect(() => {
         R.current = M
     }, [M]);
@@ -232,7 +232,7 @@ function T(e) {
                         },
                         tabIndex: D ? 0 : -1,
                         onClick: () => T(),
-                        children: (0, i.jsx)(y, {
+                        children: (0, i.jsx)(b, {
                             size: "custom",
                             width: 20,
                             height: 20,
@@ -253,7 +253,7 @@ function T(e) {
                             enabled: D
                         },
                         tabIndex: D ? 0 : -1,
-                        onClick: b,
+                        onClick: y,
                         children: (0, i.jsx)(d.aXh, {
                             size: "custom",
                             width: 20,
