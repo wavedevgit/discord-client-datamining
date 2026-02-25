@@ -23,8 +23,8 @@ var i = n(627968),
     C = n(793574),
     E = n(688810),
     I = n(313961),
-    N = n(832275),
-    b = n(730253),
+    b = n(832275),
+    N = n(730253),
     S = n(633965),
     T = n(857071),
     y = n(851109),
@@ -172,13 +172,13 @@ function es(e) {
         hideDms: t,
         scrollToTop: n,
         lurkingGuildIds: s
-    } = e, l = (0, N.A)(), r = (0, h.yK)([M.A, L.Ay], () => M.A.getGuildIds().filter(e => L.Ay.isCurrentUserGuest(e))), a = s.concat(r), {
+    } = e, l = (0, b.A)(), r = (0, h.yK)([M.A, L.Ay], () => M.A.getGuildIds().filter(e => L.Ay.isCurrentUserGuest(e))), a = s.concat(r), {
         entrypoint: o
     } = (0, y.X8)({
         location: "GuildsBar"
     });
     return (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(W.C, {}), o === y.RK.SERVER_RAIL_TOP && (0, i.jsx)(v.A, {}), l ? (0, i.jsx)(b.A, {}) : null, !t && (0, i.jsx)(V.A, {}), a.map(e => (0, i.jsx)(Q.A, {
+        children: [(0, i.jsx)(W.C, {}), o === y.RK.SERVER_RAIL_TOP && (0, i.jsx)(v.A, {}), l ? (0, i.jsx)(N.A, {}) : null, !t && (0, i.jsx)(V.A, {}), a.map(e => (0, i.jsx)(Q.A, {
             guildId: e
         }, e)), (0, i.jsx)(J.A, {
             onActivate: n
@@ -225,12 +225,12 @@ function er(e) {
         return [e, e.version]
     }), u = (0, h.bG)([T.A], () => T.A.lurkingGuildIds()), A = s.useMemo(() => n ? [] : u, [u, n]), _ = (0, h.bG)([I.A], () => I.A.isFullscreenInContext()), {
         isSorting: x,
-        startSorting: b,
+        startSorting: N,
         stopSorting: S
     } = (0, U.A)(), O = s.useRef(!1), [L] = s.useState(() => new p.Ep), M = s.useRef(null), V = s.useRef(null), {
         ref: B,
         ...H
-    } = (0, d.$y)(), F = (0, m.R7z)(), [W, z] = s.useState(!1), J = (0, m.rdh)(g.A.modules.guildbar.AVATAR_SIZE), Q = (0, m.rdh)(g.A.space.SPACE_XS), er = (0, N.A)(), {
+    } = (0, d.$y)(), F = (0, m.R7z)(), [W, z] = s.useState(!1), J = (0, m.rdh)(g.A.modules.guildbar.AVATAR_SIZE), Q = (0, m.rdh)(g.A.space.SPACE_XS), er = (0, b.A)(), {
         pathname: ea
     } = (0, c.zy)(), {
         entrypoint: eo
@@ -295,7 +295,7 @@ function er(e) {
                         setNodeRef: ed.setNodeRef,
                         draggable: !0,
                         sorting: x,
-                        onDragStart: b,
+                        onDragStart: N,
                         onDragEnd: S,
                         renderChildNode: e,
                         "aria-setsize": s,
@@ -307,7 +307,7 @@ function er(e) {
                         setRef: ed.setNodeRef,
                         draggable: !0,
                         sorting: x,
-                        onDragStart: b,
+                        onDragStart: N,
                         onDragEnd: S,
                         "aria-setsize": s,
                         "aria-posinset": void 0 !== n ? n + 1 : void 0
@@ -315,7 +315,7 @@ function er(e) {
                 default:
                     return null
             }
-        }, [b, S, x, ed.setNodeRef]),
+        }, [N, S, x, ed.setNodeRef]),
         eg = (0, i.jsx)(K.A, {
             selected: eh,
             className: ee.ai

@@ -29,9 +29,9 @@ function x(e) {
         size: C,
         grow: E,
         className: I,
-        onError: N
+        onError: b
     } = e, {
-        onActivate: b,
+        onActivate: N,
         isLoading: S,
         error: T
     } = (0, A.A)(t, n), {
@@ -55,8 +55,8 @@ function x(e) {
         })
     } : null;
     return s.useEffect(() => {
-        N?.(T ?? v)
-    }, [T, v, N]), (0, i.jsx)(a.un, {
+        b?.(T ?? v)
+    }, [T, v, b]), (0, i.jsx)(a.un, {
         body: D?.body ?? "",
         title: D?.title ?? void 0,
         shouldShow: null != D,
@@ -106,7 +106,7 @@ function x(e) {
                     "aria-label": _.intl.string(O ? m.default.TZsu1U : m.default.gSxlHf),
                     disabled: L,
                     onClick: e => {
-                        e.stopPropagation(), O ? j() : b()
+                        e.stopPropagation(), O ? j() : N()
                     },
                     loading: S || y,
                     fullWidth: E,

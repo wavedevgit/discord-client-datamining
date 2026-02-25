@@ -10,10 +10,10 @@ var i = n(627968),
     o = n(397927),
     c = n(793574),
     d = n(688810),
-    u = n(531260),
-    _ = n(793943),
-    m = n(259065),
-    A = n(206835),
+    u = n(954921),
+    _ = n(531260),
+    m = n(793943),
+    A = n(259065),
     g = n(780964),
     h = n(358776),
     x = n(840065),
@@ -46,14 +46,18 @@ function H() {
         analyticsLocations: e
     } = (0, d.Ay)(c.A.PREMIUM_MARKETING_PERK_CARD), t = (0, E.O9)(), a = p.A.useExperiment({
         location: "PremiumWhatsNewSection"
-    }).enabled, H = (0, A.A)({
-        scrollPosition: R._F.TRY_IT_OUT,
-        analyticsLocations: e
-    }), B = (0, s.useCallback)(() => {
+    }).enabled, H = (0, s.useCallback)(() => {
         (0, x.openUserSettings)(g.X.PROFILE_PANEL, {
             section: O.nc_.PROFILE_CUSTOMIZATION,
             analyticsLocations: e
-        }, () => (0, m.L)({
+        }, () => (0, A.L)({
+            analyticsLocations: e
+        }))
+    }, [e]), B = (0, s.useCallback)(() => {
+        (0, x.openUserSettings)(g.X.PROFILE_PANEL, {
+            section: O.nc_.PROFILE_CUSTOMIZATION,
+            analyticsLocations: e
+        }, () => (0, u.L)({
             analyticsLocations: e
         }))
     }, [e]), Y = (0, s.useCallback)(() => {
@@ -64,7 +68,7 @@ function H() {
         })
     }, []), {
         fractionalState: F
-    } = (0, u.A)(), z = F === j.xc.FP_ONLY, W = (0, I.$F)(), K = (0, I.Xb)(), Z = W?.status === I.Wo.UPCOMING || z, q = (0, f.N)(W?.id), X = (0, T.z)(), {
+    } = (0, _.A)(), z = F === j.xc.FP_ONLY, W = (0, I.$F)(), K = (0, I.Xb)(), Z = W?.status === I.Wo.UPCOMING || z, q = (0, f.N)(W?.id), X = (0, T.z)(), {
         currentDate: Q,
         nDaysInMonth: J
     } = (0, s.useMemo)(() => {
@@ -119,14 +123,17 @@ function H() {
             } : null, a ? {
                 id: "3p",
                 title: P.intl.string(P.t.m7PucM),
-                description: P.intl.format(P.t.zh1X7u, {}),
+                description: P.intl.formatToPlainString(P.t["43kZKL"], {
+                    days: J - Q.getDate() + 1
+                }),
+                subscriptionRequired: !0,
                 pillText: P.intl.string(P.t.oW0eUd),
                 caption: (0, i.jsx)("img", {
                     src: D,
                     alt: "SteelSeries"
                 }),
                 backgroundAssetUrl: V.A,
-                progress: Q.getDate() / J,
+                progress: (Q.getDate() - 1) / J,
                 ctaText: P.intl.string(P.t.w7s5Qr),
                 onCtaClick: () => (0, C.uE)({
                     analyticsLocations: e
@@ -136,7 +143,7 @@ function H() {
                 id: b.vl,
                 title: P.intl.string(P.t.OLtTrt),
                 description: P.intl.string(P.t["di/pXR"]),
-                onCtaClick: B,
+                onCtaClick: H,
                 primaryAsset: U.A,
                 ctaText: P.intl.string(P.t.jVcuVY),
                 pillText: P.intl.string(P.t.y2b7CA)
@@ -149,7 +156,7 @@ function H() {
                 primaryAsset: w.A,
                 ctaText: P.intl.string(P.t.jVcuVY),
                 onCtaClick: () => {
-                    (0, _.nf)(_.HP.CUSTOM_THEME)
+                    (0, m.nf)(m.HP.CUSTOM_THEME)
                 }
             }, {
                 id: b.BA,
@@ -160,7 +167,7 @@ function H() {
                     ariaHidden: !0
                 }),
                 ctaText: P.intl.string(P.t.jVcuVY),
-                onCtaClick: H
+                onCtaClick: B
             }, {
                 id: b.WL,
                 title: P.intl.string(P.t.rkb1vA),
@@ -172,5 +179,5 @@ function H() {
             d = (c = c.filter(e => null != e))[0].featured,
             u = d ? 5 : 6;
         return c.splice(+!!d, 0, s), c.length > u && c.splice(u, c.length - u), c
-    }, [W, q, Z, K, t, a, J, Q, e, B, Y, H, X, z])
+    }, [W, q, Z, K, t, a, J, Q, e, H, Y, B, X, z])
 }

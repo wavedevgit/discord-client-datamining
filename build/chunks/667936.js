@@ -1,7 +1,7 @@
 /** chunk id: 667936, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => b
+    A: () => N
 });
 var i = n(627968),
     s = n(64700),
@@ -41,7 +41,7 @@ function I(e) {
     })
 }
 
-function N(e) {
+function b(e) {
     let {
         members: t,
         guildId: n
@@ -62,7 +62,7 @@ function N(e) {
         }, n)
     })
 }
-let b = e => {
+let N = e => {
     let {
         channel: t,
         presenceActivity: n,
@@ -71,20 +71,20 @@ let b = e => {
         onAction: o,
         enableUserHoverActivities: c
     } = e, p = null != r, f = p ? Array.from(r.embeddedActivity.userIds) : [], x = (0, a.bG)([_.default, m.default], () => p ? _.default.getUser(f[0]) : null != l ? l.length <= 0 ? null : l.find(e => e.user.id !== m.default.getId())?.user ?? l[0].user : void 0), I = s.useCallback(() => {
-        if (!c && null != l) return () => (0, i.jsx)(N, {
+        if (!c && null != l) return () => (0, i.jsx)(b, {
             guildId: t.guild_id,
             members: l
         })
     }, [c, l, t.guild_id])();
     if (null == x) return null;
-    let b = p || (0, u.A)(n),
+    let N = p || (0, u.A)(n),
         S = (0, g.gV)(t.type),
         T = c ? C.z : C.A;
     return (0, i.jsxs)("div", {
         className: c ? void 0 : E.Eb,
         children: [(0, i.jsx)("div", {
             className: c ? void 0 : E.Il,
-            children: b ? (0, i.jsx)(T, {
+            children: N ? (0, i.jsx)(T, {
                 activity: n,
                 embeddedApp: r,
                 user: x,

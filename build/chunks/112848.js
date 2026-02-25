@@ -1,8 +1,8 @@
 /** chunk id: 112848, original params: e,t,r (module,exports,require) **/
 r.d(t, {
     $F: () => N,
-    Lh: () => x,
-    Wo: () => p,
+    Lh: () => p,
+    Wo: () => x,
     Xb: () => g,
     bu: () => _,
     p3: () => b,
@@ -18,9 +18,9 @@ var n, a = r(989349),
     c = r(474090),
     m = r(416654),
     h = r(788868),
-    p = ((n = {}).UPCOMING = "upcoming", n.EARNED = "earned", n);
+    x = ((n = {}).UPCOMING = "upcoming", n.EARNED = "earned", n);
 
-function x() {
+function p() {
     let e = (0, s.bG)([u.default], () => u.default.getCurrentUser());
     return (0, m.v)(e?.id) ?? null
 }
@@ -59,7 +59,7 @@ let _ = () => {
     N = () => {
         let e, t, r = (0, s.bG)([u.default], () => u.default.getCurrentUser()),
             n = b(r?.id),
-            a = (e = x(), t = (0, s.bG)([o.A], () => o.A.getPremiumTypeSubscription()), null == e || null == t || null == t.premiumSince ? null : (0, i.Xr)(e, t.premiumSince)),
+            a = (e = p(), t = (0, s.bG)([o.A], () => o.A.getPremiumTypeSubscription()), null == e || null == t || null == t.premiumSince ? null : (0, i.Xr)(e, t.premiumSince)),
             d = (() => {
                 let e = g(),
                     t = Object.values(h.VD);

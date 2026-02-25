@@ -24,8 +24,8 @@ var s = n(311907),
     C = n(892896),
     E = n(246084),
     I = n(436133),
-    N = n(884415),
-    b = n(775946),
+    b = n(884415),
+    N = n(775946),
     S = n(652215),
     T = n(790782),
     y = n(985018);
@@ -49,7 +49,7 @@ function v(e) {
         video: (H || F) && null == B,
         selected: n
     }), W = (0, s.bG)([A.A], () => A.A.getNewThreadCount(t.guild_id, t.id)), Y = (0, d.ed)(t.guild_id, t.id), z = (0, s.bG)([p.A], () => p.A.getGuild(t.guild_id)?.features.has(S.GuildFeatures.COMMUNITY) ?? !1);
-    if ((0, C.A)(P)) return (0, i.jsx)(b.A, {
+    if ((0, C.A)(P)) return (0, i.jsx)(N.A, {
         mentionsCount: P,
         isMentionLowImportance: w
     });
@@ -73,7 +73,7 @@ function v(e) {
         children: (0, r.Gub)(Y)
     });
     let X = j?.length ?? 0;
-    return null != R && R && K ? (0, i.jsx)(N.A, {
+    return null != R && R && K ? (0, i.jsx)(b.A, {
         userCount: X,
         video: H || F,
         channel: t

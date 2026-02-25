@@ -14,8 +14,8 @@ var n = r(627968),
     c = r(954571),
     m = r(570627),
     h = r(128620),
-    p = r(652215),
-    x = r(723468),
+    x = r(652215),
+    p = r(723468),
     f = r(985018),
     g = r(204593);
 let _ = "orbs",
@@ -38,7 +38,7 @@ let _ = "orbs",
             children: (0, n.jsx)(i.L, {
                 innerRef: b,
                 onChange: e => {
-                    e && !v.current && (v.current = !0, c.default.track(p.HAw.PREMIUM_TENURE_REWARDS_ORBS_SECTION_IMPRESSION, {
+                    e && !v.current && (v.current = !0, c.default.track(x.HAw.PREMIUM_TENURE_REWARDS_ORBS_SECTION_IMPRESSION, {
                         program_state: E?.program_current_state
                     }))
                 },
@@ -55,11 +55,11 @@ let _ = "orbs",
                         style: {
                             textAlign: "start"
                         },
-                        children: f.intl.string(x.default.EdGvBM)
+                        children: f.intl.string(p.default.EdGvBM)
                     }), (0, n.jsx)(d.EYj, {
                         variant: l ? "text-md/medium" : "text-lg/normal",
                         className: s()(g.VA, g.dO),
-                        children: f.intl.string(x.default["2KoHRF"])
+                        children: f.intl.string(p.default["2KoHRF"])
                     }), (0, n.jsx)(h.A, {})]
                 })
             })

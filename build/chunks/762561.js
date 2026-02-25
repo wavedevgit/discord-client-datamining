@@ -23,8 +23,8 @@ var i = n(627968),
     C = n(657331),
     E = n(718019),
     I = n(915614),
-    N = n(439053),
-    b = n(312381),
+    b = n(439053),
+    N = n(312381),
     S = n(379654),
     T = n(946356),
     y = n(490752),
@@ -92,7 +92,7 @@ function k(e) {
                     displayProfile: B,
                     themeType: U.d.SIDEBAR,
                     themeOverride: H,
-                    privateBanner: B?.private === !0 ? (0, i.jsx)(b.A, {}) : void 0,
+                    privateBanner: B?.private === !0 ? (0, i.jsx)(N.A, {}) : void 0,
                     children: [null != q.interactionType && (0, i.jsx)(l.animated.div, {
                         style: J,
                         className: w.tB
@@ -114,7 +114,7 @@ function k(e) {
                                 themeType: U.d.SIDEBAR,
                                 animateOnHoverOrFocusOnly: !z,
                                 className: w.vK
-                            }), (0, i.jsx)(N.A, {
+                            }), (0, i.jsx)(b.A, {
                                 userId: t.id,
                                 className: w.oR
                             }), (0, i.jsx)(E.A, {

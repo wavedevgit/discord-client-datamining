@@ -27,18 +27,18 @@ function C(e) {
     } = e, {
         parentAnalyticsLocation: n
     } = (0, a.Ay)(), C = (0, l.bG)([g.A], () => g.A.getSelectedParticipant(t.id)), E = C?.type === _.lp.STREAM, I = (0, l.bG)([A.A], () => E ? A.A.getActiveStreamForStreamKey(C.id) : null), {
-        ignoreSenderPreference: N
+        ignoreSenderPreference: b
     } = u.A.useExperiment({
         location: "ActionBarClipsButton"
     }, {
         autoTrackExposure: !1
     }), {
-        viewerClippingAllowed: b,
+        viewerClippingAllowed: N,
         isAtMaxSavingClipOperations: S
     } = (0, l.cf)([o.A], () => ({
-        viewerClippingAllowed: null != I && (o.A.isViewerClippingAllowedForUser(I.ownerId) || N),
+        viewerClippingAllowed: null != I && (o.A.isViewerClippingAllowedForUser(I.ownerId) || b),
         isAtMaxSavingClipOperations: o.A.getIsAtMaxSaveClipOperations()
-    })), T = (0, c.Et)(), y = I?.ownerId === p.default.getId(), v = !T || !(y || b) || S || null == C, j = s.useCallback(e => (0, i.jsx)(r.xpe, {
+    })), T = (0, c.Et)(), y = I?.ownerId === p.default.getId(), v = !T || !(y || N) || S || null == C, j = s.useCallback(e => (0, i.jsx)(r.xpe, {
         ...e,
         color: "currentColor"
     }), []);
@@ -49,7 +49,7 @@ function C(e) {
         },
         disabled: v,
         iconComponent: j,
-        label: null == I ? f.intl.string(f.t.eg5qtV) : y || b ? T ? S ? void 0 : f.intl.string(f.t.U4URzP) : f.intl.string(f.t.wSS1yN) : f.intl.string(f.t.aRifJX),
+        label: null == I ? f.intl.string(f.t.eg5qtV) : y || N ? T ? S ? void 0 : f.intl.string(f.t.U4URzP) : f.intl.string(f.t.wSS1yN) : f.intl.string(f.t.aRifJX),
         grow: !1
     })
 }

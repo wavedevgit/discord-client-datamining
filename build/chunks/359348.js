@@ -1,7 +1,7 @@
 /** chunk id: 359348, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => b
+    A: () => N
 });
 var i = n(627968),
     s = n(64700),
@@ -33,7 +33,7 @@ function I(e) {
         })
     })
 }
-let N = e => {
+let b = e => {
         let {
             keybindString: t,
             targetElementRef: n
@@ -66,7 +66,7 @@ let N = e => {
             onRequestClose: c
         })
     },
-    b = () => {
+    N = () => {
         let e = s.useRef(null),
             {
                 parentAnalyticsLocation: t
@@ -78,7 +78,7 @@ let N = e => {
         if (!r || null == C || n) return null;
         let E = p.dI(C.shortcut, !0);
         return (0, i.jsxs)(i.Fragment, {
-            children: [(0, i.jsx)(N, {
+            children: [(0, i.jsx)(b, {
                 keybindString: E,
                 targetElementRef: e
             }), (0, i.jsx)(u.A, {

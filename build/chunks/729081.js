@@ -23,8 +23,8 @@ var i = n(627968),
     C = n(568751),
     E = n(620406),
     I = n(84511),
-    N = n(188275),
-    b = n(652215),
+    b = n(188275),
+    N = n(652215),
     S = n(806931),
     T = n(985018),
     y = n(430071);
@@ -42,7 +42,7 @@ function j(e) {
         t || n()
     }, [n, t]);
     let O = (0, A.G)("social_layer_storefront_gifting_mini_shelf"),
-        L = (0, o.bG)([c.A], () => c.A.getApplication(N.XR)),
+        L = (0, o.bG)([c.A], () => c.A.getApplication(b.XR)),
         [M] = (0, o.bG)([u.A], () => null != R.id ? [u.A.getParticipants(R.id), u.A.getParticipantsVersion(R.id)] : [
             [], 0
         ], [R.id], d.hS),
@@ -66,7 +66,7 @@ function j(e) {
             recommendations: P,
             skuIdToUserIdsReasons: w
         } = (0, x.A)({
-            applicationId: N.XR,
+            applicationId: b.XR,
             numWishlistItems: x.o,
             userIds: G,
             location: "Social Layer Gifting Mini Shelf",
@@ -81,7 +81,6 @@ function j(e) {
                     source: n.length > 0 ? p.uS.WISHLIST : p.uS.POPULAR,
                     guildId: R.guild_id,
                     channelId: R.id,
-                    contextContainerClassName: y.RL,
                     userIdsForGifting: G,
                     userIdsForRecommendation: n
                 }, t.skuId) : (0, i.jsx)(E.A, {
@@ -96,7 +95,7 @@ function j(e) {
             })
         }, [R.guild_id, R.id, P, w, G, O]);
     return s.useEffect(() => {
-        0 !== P.length && m.default.track(b.HAw.COMMERCE_SHOP_VC_GIFT_BUTTON_VIEWED, {
+        0 !== P.length && m.default.track(N.HAw.COMMERCE_SHOP_VC_GIFT_BUTTON_VIEWED, {
             guild_id: R.guild_id,
             channel_id: R.id,
             sku_ids: P.map(e => e.skuId)

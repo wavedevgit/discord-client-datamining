@@ -24,8 +24,8 @@ var i, s, l = n(64700),
     C = n(970278),
     E = n(152007),
     I = n(607508),
-    N = n(594061),
-    b = n(617617),
+    b = n(594061),
+    N = n(617617),
     S = n(95701),
     T = n(734057),
     y = n(808728),
@@ -161,9 +161,9 @@ class H extends r.EventEmitter {
             collapsedChannels: s,
             loadState: l
         } = this.state, r = d().findIndex(i, e => e.channelId === t), a = i[r], o = !a.collapsed;
-        s[t] = o, (0, N.ji)(n, t, e => {
+        s[t] = o, (0, b.ji)(n, t, e => {
             e.collapsedInInbox = o
-        }, N.Sb.FREQUENT_USER_ACTION), this.setState({
+        }, b.Sb.FREQUENT_USER_ACTION), this.setState({
             scrollToChannelIndex: r,
             collapsedChannels: s,
             loadState: "done" !== l || o || a.isFullyLoaded ? l : "loaded",
@@ -282,7 +282,7 @@ function K() {
     var e;
     let t, n = function() {
             let e = {},
-                t = b.A.settings.guilds?.guilds ?? {};
+                t = N.A.settings.guilds?.guilds ?? {};
             for (let n in t)
                 for (let i in t[n].channels) {
                     let s = T.A.getChannel(i);

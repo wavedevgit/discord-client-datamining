@@ -23,8 +23,8 @@ let h = e => {
         override: c,
         glowing: m = !0,
         labelledBy: h
-    } = e, p = null != c && "unset" === i, x = (0, u.Ay)(), f = c?.[x] ?? c?.default, g = s.useMemo(() => (t - r) / (n - r) * 100, [t, r, n]), _ = t === r, N = {
-        ...p ? {
+    } = e, x = null != c && "unset" === i, p = (0, u.Ay)(), f = c?.[p] ?? c?.default, g = s.useMemo(() => (t - r) / (n - r) * 100, [t, r, n]), _ = t === r, N = {
+        ...x ? {
             "--custom-background": f?.background,
             "--custom-gradient-start": f?.gradientStart,
             "--custom-gradient-end": f?.gradientEnd,

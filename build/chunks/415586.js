@@ -23,8 +23,8 @@ var i = n(627968),
     C = n(734057),
     E = n(31717),
     I = n(71393),
-    N = n(977997),
-    b = n(823471),
+    b = n(977997),
+    N = n(823471),
     S = n(37411),
     T = n(652215),
     y = n(985018),
@@ -40,7 +40,7 @@ function j(e) {
         L = (0, a.bG)([C.A], () => C.A.getChannel(j)),
         M = (0, a.bG)([I.A], () => I.A.getGuild(L?.getGuildId())),
         D = (0, p.Ay)(L);
-    t = L, l = (0, a.bG)([N.A], () => null != t && !r().isEmpty(N.A.getVoiceStatesForChannel(t.id))), s.useEffect(() => {
+    t = L, l = (0, a.bG)([b.A], () => null != t && !r().isEmpty(b.A.getVoiceStatesForChannel(t.id))), s.useEffect(() => {
         l && null != t && (o.h.dispatch({
             type: "SIDEBAR_CLOSE",
             baseChannelId: t.parent_id
@@ -61,7 +61,7 @@ function j(e) {
                 channelId: L.id
             })
         }, [L, O]), null == L || null == M) return null;
-    let U = (0, i.jsx)(b.A, {
+    let U = (0, i.jsx)(N.A, {
         channel: L,
         baseChannelId: R
     });

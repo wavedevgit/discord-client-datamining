@@ -1,6 +1,6 @@
 /** chunk id: 94264, original params: e,t,r (module,exports,require) **/
 r.d(t, {
-    A: () => p
+    A: () => x
 });
 var n = r(627968);
 r(64700);
@@ -23,7 +23,7 @@ let h = {
             end: i.A.unsafe_rawColors.GREEN_NEW_30.css
         }
     },
-    p = e => {
+    x = e => {
         let {
             className: t
         } = e, {
@@ -32,15 +32,15 @@ let h = {
             totalDays: i
         } = (0, c.F)();
         if (!r || null == a || null == i) return null;
-        let p = (0, s.default)(new Date(a.next_reward_date), new Date),
-            x = a.program_current_state === o.L.PREMIUM_CHURNING,
-            f = x ? h.churning.start : h.active.start,
-            g = x ? h.churning.end : h.active.end;
+        let x = (0, s.default)(new Date(a.next_reward_date), new Date),
+            p = a.program_current_state === o.L.PREMIUM_CHURNING,
+            f = p ? h.churning.start : h.active.start,
+            g = p ? h.churning.end : h.active.end;
         return (0, n.jsxs)("div", {
             className: l()(m.k, t),
             children: [(0, n.jsx)(u.Ay, {
                 variant: u.qP.UNSET,
-                progress: i - p,
+                progress: i - x,
                 maximum: i,
                 override: {
                     default: {
@@ -48,7 +48,7 @@ let h = {
                         gradientEnd: g
                     }
                 }
-            }), x ? (0, n.jsx)(d.tvc, {
+            }), p ? (0, n.jsx)(d.tvc, {
                 size: "sm",
                 color: "currentColor",
                 className: m.K

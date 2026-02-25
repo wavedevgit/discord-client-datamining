@@ -44,8 +44,8 @@ var i = n(627968),
     z = n(256415),
     H = n(996439),
     W = n(427262),
-    B = n(9302),
-    K = n(31284),
+    K = n(9302),
+    B = n(31284),
     Y = n(799808),
     F = n(855790),
     Z = n(652215),
@@ -372,7 +372,7 @@ class $ extends s.PureComponent {
         return s && (o = Z.UVF.PINNED), l && (o = Z.UVF.IN_GAME_PREVIEW), n && (o = Z.UVF.IN_GAME), (0, i.jsxs)(F.Ay, {
             type: o,
             width: 380,
-            children: [n ? null : this.renderHeader(), this.renderVoiceUsers(), this.renderStreamerSettings(), n ? null : (0, i.jsx)(K.A, {
+            children: [n ? null : this.renderHeader(), this.renderVoiceUsers(), this.renderStreamerSettings(), n ? null : (0, i.jsx)(B.A, {
                 className: a()({
                     [Q.VH]: l
                 }),
@@ -403,7 +403,7 @@ function ee(e) {
         l = (0, r.bG)([w.A], () => w.A.getStreamerActiveStreamMetadata()),
         a = (0, r.bG)([x.Ay, U.A, M.A], () => {
             let e = (0, I.A)(x.Ay, U.A);
-            return null != e ? M.A.getGameByGameData(e)?.id : null
+            return null != e ? M.A.findGame(e)?.id : null
         }),
         o = (0, _.h)(a),
         d = (0, r.cf)([x.Ay, U.A, w.A, z.default], () => {
@@ -413,7 +413,7 @@ function ee(e) {
                 displayUserMode: z.default.getDisplayUserMode(),
                 displayNameMode: z.default.getDisplayNameMode(),
                 avatarSizeMode: z.default.getAvatarSizeMode(),
-                streamApplication: l?.pid === (0, B.getPID)() ? (0, N.A)(e) : null,
+                streamApplication: l?.pid === (0, K.getPID)() ? (0, N.A)(e) : null,
                 stream: t
             }
         });

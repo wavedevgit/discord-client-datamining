@@ -28,8 +28,8 @@ function u(e) {
         p || (_(String(I.current)), x(void 0 !== C && C < (E.current?.clientHeight ?? 300) + 24), I.current += 1)
     }, [C, E, p]);
     let {
-        preventIdle: N,
-        allowIdle: b
+        preventIdle: b,
+        allowIdle: N
     } = (0, d.o)("popup");
     return t?.current == null ? null : (0, i.jsx)(a.Ay, {
         children: (0, i.jsx)(r.QCO, {
@@ -41,10 +41,10 @@ function u(e) {
             nudgeAlignIntoViewport: A,
             children: () => (0, i.jsx)("div", {
                 ref: E,
-                onMouseOver: N,
-                onFocus: N,
-                onBlur: b,
-                onMouseLeave: b,
+                onMouseOver: b,
+                onFocus: b,
+                onBlur: N,
+                onMouseLeave: N,
                 children: h({
                     hidden: f || g || n,
                     onDismiss: u

@@ -25,8 +25,8 @@ var i = n(627968),
     C = n(576622),
     E = n(994500),
     I = n(967198),
-    N = n(287809),
-    b = n(486020),
+    b = n(287809),
+    N = n(486020),
     S = n(975571),
     T = n(282978),
     y = n(95655),
@@ -44,7 +44,7 @@ function G(e) {
         children: n
     } = e, s = (0, u.h)(t.linkedLobby?.application_id), [l, r] = (0, g.kn)([o.M.CHANNEL_LINKED_LOBBY_EDUCATION_TOOLTIP], void 0, !0);
     if (null == s) return null;
-    let a = b.Ay.getApplicationIconURL({
+    let a = N.Ay.getApplicationIconURL({
             id: s.id,
             icon: s.icon,
             size: 14
@@ -210,13 +210,13 @@ function U(e) {
                         onContextMenu: g,
                         onClick: h,
                         className: r()(D.rg, D.or),
-                        children: (0, A.m1)(l, N.default, E.A)
+                        children: (0, A.m1)(l, b.default, E.A)
                     }), (0, i.jsx)(j.A.Caret, {})]
                 })
             }
-            let b = l?.type != null && O.kvI.GUILD_THREADS_ONLY.has(l.type);
+            let N = l?.type != null && O.kvI.GUILD_THREADS_ONLY.has(l.type);
             return (0, i.jsxs)(s.Fragment, {
-                children: [I, k(b ? null : _, M.intl.string(M.t["7Xm5QI"])), (0, i.jsx)(j.A.Title, {
+                children: [I, k(N ? null : _, M.intl.string(M.t["7Xm5QI"])), (0, i.jsx)(j.A.Title, {
                     level: x,
                     onContextMenu: u,
                     onClick: c,
@@ -250,7 +250,7 @@ function U(e) {
 let P = e => {
     let {
         channel: t
-    } = e, n = (0, a.bG)([N.default], () => N.default.getCurrentUser()), l = (0, a.bG)([N.default], () => N.default.getUser(t.getRecipientId())), r = (0, a.bG)([x.A], () => null != l ? x.A.getUserProfile(l.id) : null), o = null != r && (r?.fetchEndedAt ?? 0) > 0;
+    } = e, n = (0, a.bG)([b.default], () => b.default.getCurrentUser()), l = (0, a.bG)([b.default], () => b.default.getUser(t.getRecipientId())), r = (0, a.bG)([x.A], () => null != l ? x.A.getUserProfile(l.id) : null), o = null != r && (r?.fetchEndedAt ?? 0) > 0;
     return (s.useEffect(() => {
         n?.isStaff() && null != l && !l.isStaff() && (0, C.A)(l.id, l.getAvatarURL(void 0, 80), {
             dispatchWait: !0,

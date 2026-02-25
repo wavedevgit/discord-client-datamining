@@ -44,8 +44,8 @@ var i = n(627968),
     z = n(287809),
     H = n(532624),
     W = n(256415),
-    B = n(203982),
-    K = n(460350),
+    K = n(203982),
+    B = n(460350),
     Y = n(350535),
     F = n(401955),
     Z = n(799808),
@@ -66,7 +66,7 @@ class ei extends s.Component {
             ...(0, S.ur)(t),
             focused: !1,
             contentWarningProps: null
-        }, B._.subscribe(q.jej.TEXTAREA_FOCUS, this.focusInput), B._.subscribe(q.jej.TEXTAREA_BLUR, this.blurInput)
+        }, K._.subscribe(q.jej.TEXTAREA_FOCUS, this.focusInput), K._.subscribe(q.jej.TEXTAREA_BLUR, this.blurInput)
     }
     componentDidUpdate(e) {
         e.channel.id !== this.props.channel.id && this.draftDidChange(this.props), (this.props.channel !== e.channel || this.props.isTemporarilyActive && !e.isTemporarilyActive) && this.setState({
@@ -74,7 +74,7 @@ class ei extends s.Component {
         })
     }
     componentWillUnmount() {
-        M.A.removeChangeListener(this.draftDidChange), B._.unsubscribe(q.jej.TEXTAREA_FOCUS, this.focusInput), B._.unsubscribe(q.jej.TEXTAREA_BLUR, this.blurInput)
+        M.A.removeChangeListener(this.draftDidChange), K._.unsubscribe(q.jej.TEXTAREA_FOCUS, this.focusInput), K._.unsubscribe(q.jej.TEXTAREA_BLUR, this.blurInput)
     }
     draftDidChange = (() => {
         var e = this;
@@ -118,7 +118,7 @@ class ei extends s.Component {
         return 0 === t.length ? Promise.resolve({
             shouldClear: !1,
             shouldRefocus: !0
-        }) : (0, K.i)({
+        }) : (0, B.i)({
             openWarningPopout: e => this.setState({
                 contentWarningProps: e
             }),
@@ -130,7 +130,7 @@ class ei extends s.Component {
                 valid: l,
                 failureReason: a
             } = e;
-            if (!l) return a === q.X8x.SLOWMODE_COOLDOWN ? (B._.dispatch(q.jej.EMPHASIZE_SLOWMODE_COOLDOWN), {
+            if (!l) return a === q.X8x.SLOWMODE_COOLDOWN ? (K._.dispatch(q.jej.EMPHASIZE_SLOWMODE_COOLDOWN), {
                 shouldClear: !1,
                 shouldRefocus: !0
             }) : {

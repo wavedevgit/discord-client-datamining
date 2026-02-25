@@ -23,8 +23,8 @@ var i = n(627968),
     C = n(290863),
     E = n(461213),
     I = n(977997),
-    N = n(954571),
-    b = n(403362),
+    b = n(954571),
+    N = n(403362),
     S = n(246084),
     T = n(667936),
     y = n(101730),
@@ -56,7 +56,7 @@ function G(e) {
     }, [l, x]), (0, c.E)(t, "VoiceChannelActivities");
     let v = (0, u.Ay)(l),
         j = Array.from((0, u.Rz)(v).values()),
-        D = x?.filter(b.Vq) ?? [],
+        D = x?.filter(N.Vq) ?? [],
         G = (0, a.bG)([E.A, C.A, _.default], () => {
             let e = {};
             return D.forEach(t => {
@@ -76,7 +76,7 @@ function G(e) {
         }),
         w = G.length + j.length > 0;
     return (s.useEffect(() => {
-        w && N.default.track(R.HAw.OPEN_POPOUT, {
+        w && b.default.track(R.HAw.OPEN_POPOUT, {
             type: "Voice Channel Activities",
             channel_id: l.id
         })

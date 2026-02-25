@@ -71,8 +71,8 @@ function C(e) {
         name: l,
         description: C,
         rarity: E,
-        hideDescriptionUntilUnlock: A,
-        onAction: g
+        hideDescriptionUntilUnlock: g,
+        onAction: A
     } = t, {
         color: _
     } = (0, o.ag)(E);
@@ -84,12 +84,12 @@ function C(e) {
             clearTimeout(e)
         }
     }, []);
-    let p = null != g && i,
+    let p = null != A && i,
         m = p ? s.DUT : "div";
     return (0, n.jsxs)(m, {
         className: a()(u.kL, p && u.b),
         onClick: () => {
-            p && g()
+            p && A()
         },
         children: [(0, n.jsx)("div", {
             className: u.zc,
@@ -107,7 +107,7 @@ function C(e) {
             }), (0, n.jsx)(s.Text, {
                 variant: "text-xs/medium",
                 color: "text-default",
-                children: A && !i ? "?????" : C()
+                children: g && !i ? "?????" : C()
             })]
         }), (0, n.jsx)("div", {
             className: u.Db,

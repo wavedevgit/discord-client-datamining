@@ -23,8 +23,8 @@ var i = n(627968),
     C = n(171593),
     E = n(915089),
     I = n(314307),
-    N = n(58736),
-    b = n(636922),
+    b = n(58736),
+    N = n(636922),
     S = n(931664),
     T = n(631576),
     y = n(253932),
@@ -95,17 +95,17 @@ function X(e) {
             }
         }) : (0, k.bA)(t)
     }, [t]);
-    return (0, i.jsxs)(N.Ay, {
-        toolbar: (0, i.jsx)(N.Ay.Icon, {
+    return (0, i.jsxs)(b.Ay, {
+        toolbar: (0, i.jsx)(b.Ay.Icon, {
             icon: o.PGe,
             tooltip: F.intl.string(F.t.cpT0Cq),
             onClick: n
         }),
-        children: [(0, i.jsx)(N.Ay.Icon, {
+        children: [(0, i.jsx)(b.Ay.Icon, {
             icon: o.ysw,
             disabled: !0,
             "aria-label": F.intl.string(F.t["7Xm5QI"])
-        }), (0, i.jsx)(N.Ay.Title, {
+        }), (0, i.jsx)(b.Ay.Title, {
             children: F.intl.string(F.t["4WNcpu"])
         })]
     })
@@ -163,8 +163,8 @@ function q(e) {
         }(n, m),
         E = (0, P.EN)(n),
         {
-            isGeneratingAI: N,
-            enableAIFeatures: b,
+            isGeneratingAI: b,
+            enableAIFeatures: N,
             getThreadNameInputAccessory: y
         } = (0, V.C)({
             parentChannel: n,
@@ -247,7 +247,7 @@ function q(e) {
             privateThreadMode: E,
             textAreaState: x,
             location: d,
-            enableAIFeatures: b
+            enableAIFeatures: N
         }),
         w = (0, P.Iy)(g, E) ? o.tn0 : o.ysw;
     return (0, i.jsx)("div", {
@@ -281,8 +281,8 @@ function q(e) {
                                     updateThreadSettings: _,
                                     error: v,
                                     disabled: G,
-                                    isGeneratingAI: N,
-                                    enableAIFeatures: b,
+                                    isGeneratingAI: b,
+                                    enableAIFeatures: N,
                                     getThreadNameInputAccessory: y
                                 }), n.type === H.rbe.GUILD_TEXT ? (0, i.jsx)(J, {
                                     startedFromMessage: null != l,
@@ -440,7 +440,7 @@ function Z(e) {
         parentChannel: t,
         parentMessageId: n
     } = e, s = (0, a.bG)([R.A], () => null == n ? null : R.A.getMessage(t.id, n)), l = y.hH.useSetting();
-    return null != s ? (0, i.jsx)(b.A, {
+    return null != s ? (0, i.jsx)(N.A, {
         className: K.IL,
         message: s,
         channel: t,

@@ -27,8 +27,8 @@ var i = n(627968),
     C = n(543465),
     E = n(551851),
     I = n(879124),
-    N = n(652215),
-    b = n(985018),
+    b = n(652215),
+    N = n(985018),
     S = n(587079);
 
 function T(e) {
@@ -47,7 +47,7 @@ let y = s.memo(function(e) {
             } = e,
             R = (0, o.bG)([C.Ay], () => C.Ay.isChannelMuted(l.getGuildId(), l.id)),
             O = (0, o.bG)([_.A], () => _.A.isCollapsed(l.id)),
-            L = (0, o.bG)([x.A], () => x.A.can(N.xBc.MANAGE_CHANNELS, l));
+            L = (0, o.bG)([x.A], () => x.A.can(b.xBc.MANAGE_CHANNELS, l));
         t = null != y ? I > y ? S.mU : S.TR : S.fx;
         let M = s.useCallback(() => {
                 O ? (0, A.fh)(l.id) : (0, A.Gv)(l.id)
@@ -68,7 +68,7 @@ let y = s.memo(function(e) {
                 }
             }, [l]),
             G = s.useCallback(() => {
-                let e = l.type === N.rbe.GUILD_CATEGORY ? null : l.type,
+                let e = l.type === b.rbe.GUILD_CATEGORY ? null : l.type,
                     t = l.getGuildId();
                 null != t && (0, h.mMO)(async () => {
                     let {
@@ -113,7 +113,7 @@ let y = s.memo(function(e) {
                             tabIndex: P,
                             ...w,
                             onClick: M,
-                            "aria-label": b.intl.formatToPlainString(b.t.y5l3J2, {
+                            "aria-label": N.intl.formatToPlainString(N.t.y5l3J2, {
                                 categoryName: l.name
                             }),
                             "aria-expanded": !O,
@@ -134,13 +134,13 @@ let y = s.memo(function(e) {
                             onClick: T,
                             className: S.Y_,
                             children: L && !E ? (0, i.jsx)(d.m, {
-                                text: b.intl.string(b.t["fUYU+j"]),
+                                text: N.intl.string(N.t["fUYU+j"]),
                                 children: (0, i.jsx)(h.DUT, {
                                     className: r()(S.c9, S.ih),
                                     onClick: G,
                                     tabIndex: P,
                                     role: "button",
-                                    "aria-label": b.intl.string(b.t["fUYU+j"]),
+                                    "aria-label": N.intl.string(N.t["fUYU+j"]),
                                     children: (0, i.jsx)(h.TIR, {
                                         size: "xs",
                                         color: "currentColor",
@@ -175,7 +175,7 @@ let y = s.memo(function(e) {
                     })
                 }), null != n ? (0, i.jsx)(d.m, {
                     asContainer: !0,
-                    text: b.intl.string(b.t["5qNmsU"]),
+                    text: N.intl.string(N.t["5qNmsU"]),
                     children: (0, i.jsx)(h.DUT, {
                         className: S.r,
                         onClick: n,
@@ -202,7 +202,7 @@ let y = s.memo(function(e) {
                 fullWidth: !0,
                 onClick: l,
                 icon: h.HKD,
-                text: n ? b.intl.string(b.t["/eB9Bg"]) : b.intl.string(b.t.Q2gPWl)
+                text: n ? N.intl.string(N.t["/eB9Bg"]) : N.intl.string(N.t.Q2gPWl)
             })
         })
     }),
@@ -211,14 +211,14 @@ let y = s.memo(function(e) {
             category: t,
             channel: n
         } = e, s = (0, o.bG)([E.A], () => E.A.isVoiceCategoryCollapsed(t.guild.id));
-        return s || null == n || n.record.type === N.rbe.GUILD_CATEGORY ? s ? (0, i.jsx)("li", {
+        return s || null == n || n.record.type === b.rbe.GUILD_CATEGORY ? s ? (0, i.jsx)("li", {
             className: S.fx,
             children: (0, i.jsx)("div", {
                 className: r()(S.Ki, S._V),
                 children: (0, i.jsx)(m.A, {
                     className: S.UU,
                     children: (0, i.jsx)(c.A, {
-                        children: b.intl.string(b.t["V/u9Dy"])
+                        children: N.intl.string(N.t["V/u9Dy"])
                     })
                 })
             })

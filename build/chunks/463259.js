@@ -27,14 +27,14 @@ var i = n(627968),
     T = n(357541),
     b = n(236599),
     y = n(192),
-    N = n(128988),
-    S = n(795755),
+    S = n(128988),
+    N = n(795755),
     C = n(53977),
     k = n(982599),
     R = n(515054),
     O = n(266713),
-    L = n(985018),
-    w = n(519653);
+    w = n(985018),
+    L = n(519653);
 
 function P(e) {
     let {
@@ -44,7 +44,7 @@ function P(e) {
     return t instanceof _.R ? (0, i.jsx)(E.A, {
         widget: t,
         ...n
-    }) : t instanceof A.Yy ? (0, i.jsx)(S.A, {
+    }) : t instanceof A.Yy ? (0, i.jsx)(N.A, {
         widget: t,
         ...n
     }) : null
@@ -52,14 +52,14 @@ function P(e) {
 
 function D() {
     return (0, i.jsxs)("div", {
-        className: w.mJ,
+        className: L.mJ,
         children: [(0, i.jsx)(o.mir, {
             size: "xs"
         }), (0, i.jsx)(o.Text, {
-            "aria-label": L.intl.string(L.t["7blcz6"]),
+            "aria-label": w.intl.string(w.t["7blcz6"]),
             variant: "text-xs/normal",
             color: "text-muted",
-            children: L.intl.string(L.t["7blcz6"])
+            children: w.intl.string(w.t["7blcz6"])
         })]
     })
 }
@@ -113,10 +113,10 @@ function U(e) {
             s.current && (s.current = !1, a())
         }, [a])
     })(t.id, T);
-    let N = () => (0, i.jsxs)(i.Fragment, {
+    let S = () => (0, i.jsxs)(i.Fragment, {
         children: [o && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(b.A, {
-                className: w.cG
+                className: L.cG
             }), u && (0, i.jsx)(D, {}), m && (0, i.jsx)(G, {})]
         }), s.map((e, l) => (0, i.jsx)(P, {
             widget: e,
@@ -130,8 +130,8 @@ function U(e) {
         if (m) return (0, i.jsx)(C.A, {});
         else return (0, i.jsx)(O.A, {});
     return o ? (0, i.jsx)(y.D, {
-        children: N()
-    }) : N()
+        children: S()
+    }) : S()
 }
 
 function M(e) {
@@ -146,11 +146,11 @@ function M(e) {
     return (0, i.jsxs)(R.K, {
         "data-scroller": !0,
         scrollerRef: a,
-        className: s()(w.XG, {
-            [w.az]: r
+        className: s()(L.XG, {
+            [L.az]: r
         }),
         fade: !0,
-        children: [(0, i.jsx)(N.A, {
+        children: [(0, i.jsx)(S.A, {
             scrollerRef: a
         }), (0, i.jsx)(U, {
             user: t,

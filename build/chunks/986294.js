@@ -104,7 +104,7 @@ function w() {
         })),
         d = (0, u.bG)([T.A], () => T.A.getFeedState(N.X1.GLOBAL_FEED)?.loading === !0),
         [O, w] = i.useState(""),
-        M = (0, u.bG)([v.A, p.A], () => parseInt(O) > 0 ? O : v.A.getGameByName_DEPRECATED_DO_NOT_USE(O)?.id ?? p.A.getApplicationByName(O)?.id, [O]),
+        M = (0, u.bG)([v.A, p.A], () => parseInt(O) > 0 ? O : v.A.searchGamesByName(O)[0] ?? p.A.getApplicationByName(O)?.id, [O]),
         P = (0, b.A)({
             applicationId: M,
             location: "DevToolsContentInventory",

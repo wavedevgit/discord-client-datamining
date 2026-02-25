@@ -16,22 +16,22 @@ var n = i(64700),
     h = i(584569),
     C = i(383501),
     E = i(287809),
-    A = i(977997),
-    g = i(403362);
+    g = i(977997),
+    A = i(403362);
 
 function _(e, t) {
     let i = (0, l.bG)([h.A, C.A], () => e === C.A.getChannelId() ? h.A.getDesyncedVoiceStates() : null),
         a = (0, l.yK)([s.A], () => null == e ? [] : [...s.A.getGuildRingingUsers(e)]),
-        c = (0, l.yK)([E.default], () => a.map(e => E.default.getUser(e)).filter(g.Vq)),
-        A = (0, l.bG)([d.A], () => d.A.getBasicChannel(e)),
+        c = (0, l.yK)([E.default], () => a.map(e => E.default.getUser(e)).filter(A.Vq)),
+        g = (0, l.bG)([d.A], () => d.A.getBasicChannel(e)),
         _ = n.useMemo(() => c.map(e => ({
             voiceState: new o.A(e.id),
             user: e,
-            member: A?.guild_id != null ? u.Ay.getMember(A?.guild_id, e.id) : null,
+            member: g?.guild_id != null ? u.Ay.getMember(g?.guild_id, e.id) : null,
             nick: e.globalName,
             comparator: e.globalName,
             _isPlaceholder: !1
-        })), [c, A?.guild_id]);
+        })), [c, g?.guild_id]);
     return n.useMemo(() => (function(e, t, i) {
         if ((null == e || 0 === e.length) && 0 === i.length) return t;
         let n = [],
@@ -72,8 +72,8 @@ function m(e, t) {
         a = n.useRef(null),
         [s, o] = n.useState(!1),
         [d, u] = n.useState(!1),
-        h = (0, l.bG)([C.A, A.A], () => null != t && null != e && C.A.getChannelId() === e && null != A.A.isInChannel(e, t) && C.A.isUserConnected(t)),
-        E = (0, l.bG)([C.A, A.A], () => null != t && null != e && C.A.getChannelId() === e && null != A.A.isInChannel(e, t) && !C.A.isUserConnected(t));
+        h = (0, l.bG)([C.A, g.A], () => null != t && null != e && C.A.getChannelId() === e && null != g.A.isInChannel(e, t) && C.A.isUserConnected(t)),
+        E = (0, l.bG)([C.A, g.A], () => null != t && null != e && C.A.getChannelId() === e && null != g.A.isInChannel(e, t) && !C.A.isUserConnected(t));
     return n.useEffect(() => {
         h && u(!0)
     }, [h]), n.useEffect(() => {

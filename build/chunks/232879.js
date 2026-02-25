@@ -21,15 +21,15 @@ let _ = s.memo(function(e) {
     let {
         guildNode: t,
         lowerBadge: n
-    } = e, _ = t.id, f = (0, l.bG)([h.A], () => h.A.getGuild(_)), x = (0, a.a)(f), C = (0, l.bG)([A.A], () => A.A.isFocused()), E = (0, l.bG)([d.A], () => d.A.isUnavailable(_)), I = (0, c.A)(e => e.guildId), N = (0, p.A)(_), {
-        badge: b,
+    } = e, _ = t.id, f = (0, l.bG)([h.A], () => h.A.getGuild(_)), x = (0, a.a)(f), C = (0, l.bG)([A.A], () => A.A.isFocused()), E = (0, l.bG)([d.A], () => d.A.isUnavailable(_)), I = (0, c.A)(e => e.guildId), b = (0, p.A)(_), {
+        badge: N,
         unread: S,
         isMentionLowImportance: T
     } = (0, l.cf)([u.default], () => ({
         badge: u.default.getMentionCount(_),
         isMentionLowImportance: u.default.getIsMentionLowImportance(_),
         unread: u.default.hasUnread(_)
-    })), y = (0, o.Ig)(f) && 0 === b, v = s.useMemo(() => null != n ? n : y ? (0, i.jsx)("div", {
+    })), y = (0, o.Ig)(f) && 0 === N, v = s.useMemo(() => null != n ? n : y ? (0, i.jsx)("div", {
         className: m.j,
         children: (0, i.jsx)(r.E$n, {
             size: "custom",
@@ -45,11 +45,11 @@ let _ = s.memo(function(e) {
         unavailable: E,
         animatable: C,
         selected: I === _,
-        badge: b,
+        badge: N,
         isMentionLowImportance: T,
         lowerBadge: v,
         unread: S,
-        mediaState: N,
+        mediaState: b,
         guildJoinRequestStatus: x
     })
 })

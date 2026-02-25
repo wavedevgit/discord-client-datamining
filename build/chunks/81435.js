@@ -23,8 +23,8 @@ var i = n(627968),
     C = n(449859),
     E = n(812299),
     I = n(943220),
-    N = n(538355),
-    b = n(995273),
+    b = n(538355),
+    N = n(995273),
     S = n(854627),
     T = n(95701),
     y = n(260509),
@@ -54,8 +54,8 @@ function B(e) {
         nick: x,
         colorString: C
     } = (0, f.Ay)(t), {
-        avatarSrc: N,
-        eventHandlers: b
+        avatarSrc: b,
+        eventHandlers: N
     } = (0, S.A)({
         userId: t.author.id,
         size: u._3J.SIZE_32,
@@ -83,8 +83,8 @@ function B(e) {
     }, [_, t.author.id]), (0, i.jsx)(u.vN3, {
         ...l,
         children: (0, i.jsxs)("div", {
-            onMouseLeave: b.onMouseLeave,
-            onMouseEnter: b.onMouseEnter,
+            onMouseLeave: N.onMouseLeave,
+            onMouseEnter: N.onMouseEnter,
             className: V.zC,
             children: [o && !a && (0, i.jsx)("div", {
                 className: V.Zm
@@ -96,7 +96,7 @@ function B(e) {
                 },
                 children: T ? (0, i.jsx)(U.e, {
                     "aria-label": "User Avatar",
-                    src: N,
+                    src: b,
                     size: u._3J.SIZE_32,
                     cornerIconUrl: null != _ ? (0, y.Iv)(_, 24) : void 0,
                     cornerIconOffsetX: 4,
@@ -227,7 +227,7 @@ function H(e) {
 function F(e) {
     let {
         message: t
-    } = e, n = (0, b.jb)(t.timestamp.getTime());
+    } = e, n = (0, N.jb)(t.timestamp.getTime());
     return (0, i.jsx)(C.A, {
         timestamp: t.timestamp,
         className: V.vE,
@@ -253,7 +253,7 @@ function K(e) {
             isSelected: l
         } = e, {
             content: a
-        } = (0, N.A)(t, {
+        } = (0, b.A)(t, {
             hideSimpleEmbedContent: !0,
             allowList: !1,
             allowHeading: !0,

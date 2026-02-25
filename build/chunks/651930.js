@@ -1,7 +1,7 @@
 /** chunk id: 651930, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    default: () => G,
-    i: () => S
+    default: () => S,
+    i: () => G
 }), n(321073);
 var a = n(627968),
     l = n(64700),
@@ -63,7 +63,7 @@ let N = l.memo(function(e) {
         throttleMs: 100,
         maxSearchResults: 20
     },
-    S = l.memo(function(e) {
+    G = l.memo(function(e) {
         let {
             games: t,
             selectedGame: n,
@@ -115,23 +115,23 @@ let N = l.memo(function(e) {
         })
     });
 
-function G(e) {
+function S(e) {
     let {
         onClose: t,
         transitionState: n,
         onSubmitted: d,
         detectedActivity: c,
         defaultStep: m = "issue_selection"
-    } = e, [f, p] = l.useState(m), [N, I] = l.useState(null), [G, E] = l.useState(""), [j, k] = l.useState(null), [w, T] = l.useState(""), D = l.useMemo(() => (0, g.u9)(), []), C = (0, s.bG)([h.A], () => h.A.games), O = null != c, M = (0, s.bG)([o.A], () => c?.application_id != null ? o.A.getApplication(c.application_id) : null), P = () => {
+    } = e, [f, p] = l.useState(m), [N, I] = l.useState(null), [S, E] = l.useState(""), [j, k] = l.useState(null), [w, T] = l.useState(""), C = l.useMemo(() => (0, g.u9)(), []), D = (0, s.bG)([h.A], () => h.A.games), M = null != c, O = (0, s.bG)([o.A], () => c?.application_id != null ? o.A.getApplication(c.application_id) : null), L = () => {
         (0, g.K6)({
-            viewId: D,
+            viewId: C,
             applicationId: c?.application_id ?? "",
-            suggestedGameName: "" !== G.trim() ? G.trim() : void 0,
+            suggestedGameName: "" !== S.trim() ? S.trim() : void 0,
             suggestedGameApplicationId: j?.id ?? null,
             feedback: "" !== w.trim() ? w.trim() : void 0,
             submitted: !0
         }), d?.(j ?? null), t()
-    }, R = (() => {
+    }, P = (() => {
         switch (f) {
             case "issue_selection":
                 return {
@@ -139,18 +139,18 @@ function G(e) {
                 };
             case "game_search":
                 return {
-                    title: O ? A.intl.string(A.t.TZgkxY) : A.intl.string(A.t["+ie+wX"]), actions: [{
+                    title: M ? A.intl.string(A.t.TZgkxY) : A.intl.string(A.t["+ie+wX"]), actions: [{
                         text: A.intl.string(A.t.geKm7t),
-                        onClick: P,
+                        onClick: L,
                         variant: "primary",
-                        disabled: "" === G.trim()
+                        disabled: "" === S.trim()
                     }]
                 };
             case "other_feedback":
                 return {
                     title: A.intl.string(A.t.tdDpJj), actions: [{
                         text: A.intl.string(A.t.geKm7t),
-                        onClick: P,
+                        onClick: L,
                         variant: "primary",
                         disabled: "" === w.trim()
                     }]
@@ -162,7 +162,7 @@ function G(e) {
         }
     })();
     return (0, a.jsx)(r.Modal, {
-        ...R,
+        ...P,
         transitionState: n,
         onClose: t,
         trackingProps: {
@@ -191,7 +191,7 @@ function G(e) {
                                         "game_not_detected" === e || "wrong_game_shown" === e ? p("game_search") : p("other_feedback")
                                     }, 100)
                                 },
-                                options: O ? [{
+                                options: M ? [{
                                     name: A.intl.string(A.t.TZgkxY),
                                     value: "wrong_game_shown"
                                 }, {
@@ -214,16 +214,16 @@ function G(e) {
                         children: [(0, a.jsx)(u.Text, {
                             variant: "text-sm/normal",
                             color: "text-muted",
-                            children: O ? A.intl.string(A.t["79o/iq"]) : A.intl.string(A.t["r/2pZy"])
-                        }), O && (0, a.jsxs)(a.Fragment, {
+                            children: M ? A.intl.string(A.t["79o/iq"]) : A.intl.string(A.t["r/2pZy"])
+                        }), M && (0, a.jsxs)(a.Fragment, {
                             children: [(0, a.jsxs)("div", {
                                 className: b.Gr,
                                 children: [null != (e = _.Ay.getApplicationIconURL({
                                     id: c.application_id ?? "",
-                                    icon: M?.icon ?? null
+                                    icon: O?.icon ?? null
                                 })) ? (0, a.jsx)("img", {
                                     src: e,
-                                    alt: null != c.name && "" !== c.name ? c.name : M?.name ?? "",
+                                    alt: null != c.name && "" !== c.name ? c.name : O?.name ?? "",
                                     className: b.q_
                                 }) : (0, a.jsx)("div", {
                                     className: `${b.q_} ${b.x_}`,
@@ -239,15 +239,15 @@ function G(e) {
                                 }), (0, a.jsx)(u.Text, {
                                     variant: "text-md/semibold",
                                     color: "text-strong",
-                                    children: null != c.name && "" !== c.name ? c.name : M?.name
+                                    children: null != c.name && "" !== c.name ? c.name : O?.name
                                 })]
                             }), (0, a.jsx)(y.A, {})]
-                        }), (0, a.jsx)(S, {
-                            games: C,
+                        }), (0, a.jsx)(G, {
+                            games: D,
                             selectedGame: j,
                             onGameSelected: k,
                             onGameSearchQueryChange: E,
-                            placeholder: O ? A.intl.string(A.t["/SGi7v"]) : A.intl.string(A.t.ss9Zwa)
+                            placeholder: M ? A.intl.string(A.t["/SGi7v"]) : A.intl.string(A.t.ss9Zwa)
                         })]
                     });
                 case "other_feedback":

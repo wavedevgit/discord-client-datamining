@@ -23,17 +23,17 @@ var i = n(627968),
     C = n(287809),
     E = n(607567),
     I = n(985018),
-    N = n(770992);
+    b = n(770992);
 
-function b(e) {
+function N(e) {
     let {
         icon: t,
         users: n
     } = e;
     return 0 === n.length ? null : (0, i.jsxs)("div", {
-        className: N.nM,
+        className: b.nM,
         children: [(0, i.jsx)(t, {
-            className: N.RI,
+            className: b.RI,
             color: "currentColor"
         }), (0, i.jsx)(u.Ay, {
             users: n,
@@ -83,15 +83,15 @@ function T(e) {
             streamUsers: y,
             activityUsers: A
         }),
-        U = (0, i.jsx)(b, {
+        U = (0, i.jsx)(N, {
             icon: c.HKD,
             users: G
         }),
-        P = (0, i.jsx)(b, {
+        P = (0, i.jsx)(N, {
             icon: c.Fzq,
             users: D
         }),
-        w = (0, i.jsx)(b, {
+        w = (0, i.jsx)(N, {
             icon: c.k9F,
             users: M
         }),
@@ -105,8 +105,8 @@ function T(e) {
     return (0, i.jsxs)(i.Fragment, {
         children: [U, P, w, k ? (0, i.jsx)(S, {
             muteConfig: V,
-            className: r()(N.LM, {
-                [N.Sx]: null != U || null != P
+            className: r()(b.LM, {
+                [b.Sx]: null != U || null != P
             })
         }) : null]
     })
@@ -118,9 +118,9 @@ function y(e) {
     } = e, n = (0, A.Ay)(t);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
-            className: r()(N.nM, N.Dl),
+            className: r()(b.nM, b.Dl),
             children: (0, i.jsx)("span", {
-                className: r()(N.cN, N.NT),
+                className: r()(b.cN, b.NT),
                 children: n
             })
         }), (0, i.jsx)(T, {
@@ -134,7 +134,7 @@ function v(e) {
         channel: t,
         children: n
     } = e, l = (0, A.Ay)(t), r = s.useMemo(() => (0, i.jsx)("div", {
-        className: N.A_,
+        className: b.A_,
         children: (0, i.jsx)(y, {
             channel: t
         })

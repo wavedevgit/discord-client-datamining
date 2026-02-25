@@ -25,7 +25,7 @@ var i = n(627968),
     E = n(52734);
 let I = h.DN.SIZE_24;
 
-function N(e) {
+function b(e) {
     let {
         activity: t,
         user: n,
@@ -71,7 +71,7 @@ function N(e) {
     })) : _
 }
 
-function b(e) {
+function N(e) {
     let {
         activity: t,
         embeddedApp: n,
@@ -174,14 +174,14 @@ function v(e) {
         className: E.ec,
         children: [(0, i.jsxs)("div", {
             className: E.Wh,
-            children: [(0, i.jsx)(N, {
+            children: [(0, i.jsx)(b, {
                 activity: t,
                 user: l,
                 embeddedApp: n,
                 onOpenSpotifyAlbum: g
             }), (0, i.jsxs)("div", {
                 className: E.X0,
-                children: [(0, i.jsx)(b, {
+                children: [(0, i.jsx)(N, {
                     activity: t,
                     embeddedApp: n,
                     onOpenSpotifyTrack: u
@@ -243,7 +243,7 @@ function j(e) {
             })
         }), (0, i.jsxs)("div", {
             className: E.Wh,
-            children: [(0, i.jsx)(N, {
+            children: [(0, i.jsx)(b, {
                 activity: t,
                 user: s,
                 embeddedApp: n,
@@ -251,7 +251,7 @@ function j(e) {
                 compact: !0
             }), (0, i.jsxs)("div", {
                 className: E.Be,
-                children: [(0, i.jsx)(b, {
+                children: [(0, i.jsx)(N, {
                     activity: t,
                     embeddedApp: n,
                     onOpenSpotifyTrack: l,

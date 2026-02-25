@@ -23,8 +23,8 @@ var i = n(627968),
     C = n(253932),
     E = n(383233),
     I = n(734057),
-    N = n(287809),
-    b = n(403362),
+    b = n(287809),
+    N = n(403362),
     S = n(572448),
     T = n(963702),
     y = n(652215),
@@ -119,7 +119,7 @@ let D = s.memo(function(e) {
     } = e, a = new E.Ay({
         id: t.scheduledMessageId,
         content: t.scheduledMessage.content,
-        author: N.default.getUser(t.userId),
+        author: b.default.getUser(t.userId),
         timestamp: o()(t.sendAtTimestamp).toDate(),
         channel_id: t.scheduledMessage.channelId
     }), {
@@ -152,7 +152,7 @@ let D = s.memo(function(e) {
                     isError: !0, stateMessage: v.intl.string(v.t.j8uIfG)
                 };
             default:
-                (0, b.xb)(e)
+                (0, N.xb)(e)
         }
     }(t.state), A = s.useCallback(() => {
         (0, m.mk)(t.scheduledMessageId).then(() => {

@@ -23,8 +23,8 @@ var i = n(627968),
     C = n(915614),
     E = n(389996),
     I = n(743987),
-    N = n(900179),
-    b = n(946356),
+    b = n(900179),
+    N = n(946356),
     S = n(810396),
     T = n(35241),
     y = n(587168),
@@ -61,7 +61,7 @@ function L(e) {
             fetchStartedAt: M?.fetchStartedAt,
             fetchEndedAt: M?.fetchEndedAt,
             isLoaded: M?.isLoaded,
-            children: (0, i.jsxs)(b.A, {
+            children: (0, i.jsxs)(N.A, {
                 ref: w,
                 user: t,
                 displayProfile: M,
@@ -98,9 +98,9 @@ function L(e) {
                                 displayProfile: M,
                                 themeType: v.d.SIDEBAR
                             })
-                        }), (0, i.jsxs)(b.A.Overlay, {
+                        }), (0, i.jsxs)(N.A.Overlay, {
                             className: O.Lw,
-                            children: [(0, i.jsx)(N.A, {
+                            children: [(0, i.jsx)(b.A, {
                                 heading: j.intl.string(j.t.ZzAR2Y),
                                 headingColor: "text-strong",
                                 children: (0, i.jsx)(E.A, {
@@ -109,7 +109,7 @@ function L(e) {
                                     animateOnHoverOrFocusOnly: !0,
                                     isHoveringOrFocusing: k
                                 })
-                            }), (0, i.jsx)(N.A, {
+                            }), (0, i.jsx)(b.A, {
                                 heading: j.intl.string(j.t["A//N4k"]),
                                 headingColor: "text-strong",
                                 children: (0, i.jsx)(I.A, {

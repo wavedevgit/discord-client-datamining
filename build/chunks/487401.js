@@ -24,8 +24,8 @@ var i = n(627968),
     C = n(395504),
     E = n(770904),
     I = n(357746),
-    N = n(816288),
-    b = n(455234),
+    b = n(816288),
+    N = n(455234),
     S = n(649247),
     T = n(787541),
     y = n(482361),
@@ -255,7 +255,7 @@ class eo extends s.PureComponent {
                 channel: r,
                 category: a
             } = l;
-            return !!(0, v.ig)(r.record.type) && (!a.isCollapsed || !a.isMuted) && !r.isMuted && !!t.isItemVisible(i, s, !0) && (0, b.Y)(r.record)
+            return !!(0, v.ig)(r.record.type) && (!a.isCollapsed || !a.isMuted) && !r.isMuted && !!t.isItemVisible(i, s, !0) && (0, N.Y)(r.record)
         })
     }
     updateChannelListScroll = r().throttle(e => {
@@ -396,7 +396,7 @@ class eo extends s.PureComponent {
                     }, en.n.GUILD_HUB_HEADER_OPTIONS);
                 case en.n.GUILD_PREMIUM_PROGRESS_BAR:
                     let s = e.getRows();
-                    return (0, i.jsx)(N.A, {
+                    return (0, i.jsx)(b.A, {
                         guild: l,
                         withMargin: s.length > 1
                     }, en.n.GUILD_PREMIUM_PROGRESS_BAR);
@@ -465,7 +465,7 @@ class eo extends s.PureComponent {
         let {
             category: x,
             channel: C
-        } = m, b = x instanceof M.xu, S = C.record, T = `${t}${C.id}`;
+        } = m, N = x instanceof M.xu, S = C.record, T = `${t}${C.id}`;
         switch (S.type) {
             case ei.rbe.GUILD_ANNOUNCEMENT:
             case ei.rbe.GUILD_TEXT:
@@ -483,7 +483,7 @@ class eo extends s.PureComponent {
                         subtitle: C.subtitle,
                         disableManageChannels: h,
                         canBeNewChannel: p && t === d.recentsSectionNumber,
-                        isFavoriteCategory: b,
+                        isFavoriteCategory: N,
                         withGuildIcon: g
                     }), C.threadCount > 0 ? (0, i.jsx)(X.A, {
                         withGuildIcon: g,
@@ -504,7 +504,7 @@ class eo extends s.PureComponent {
                     voiceStates: u[C.id] ?? [],
                     speakerVoiceStates: A[C.id] ?? [],
                     disableManageChannels: h,
-                    isFavoriteCategory: b
+                    isFavoriteCategory: N
                 }, T);
             case ei.rbe.GUILD_VOICE:
                 return (0, i.jsx)(et.A, {
@@ -518,7 +518,7 @@ class eo extends s.PureComponent {
                     subtitle: C.subtitle,
                     disableManageChannels: h,
                     showTutorial: C.isFirstVoiceChannel,
-                    isFavoriteCategory: b,
+                    isFavoriteCategory: N,
                     withGuildIcon: g
                 }, T);
             case ei.rbe.GUILD_STORE:
@@ -746,18 +746,18 @@ let ec = e => {
         let t = x.current;
         if (null == t) return e();
         t.scrollTo(0, () => requestAnimationFrame(() => e()))
-    }), []), N = s.useCallback(() => new Promise(e => {
+    }), []), b = s.useCallback(() => new Promise(e => {
         let t = x.current;
         if (null == t) return e();
         t.scrollTo(Number.MAX_SAFE_INTEGER, () => requestAnimationFrame(() => e()))
-    }), []), b = (0, o.Ay)({
+    }), []), N = (0, o.Ay)({
         id: "channels",
         defaultFocused: n ?? void 0,
         isEnabled: r,
         setFocus: E,
         scrollToStart: I,
-        scrollToEnd: N
-    }), T = b.setFocus;
+        scrollToEnd: b
+    }), T = N.setFocus;
     s.useEffect(() => {
         null != n && T(n)
     }, [n, T]);
@@ -767,10 +767,10 @@ let ec = e => {
         children: (0, i.jsx)(h.A, {
             section: ei.JJy.GUILD_CHANNEL_LIST,
             children: (0, i.jsx)(a.hD, {
-                navigator: b,
+                navigator: N,
                 children: (0, i.jsx)(eo, {
                     ...e,
-                    listNavigator: b,
+                    listNavigator: N,
                     ref: x,
                     selectedChannel: u,
                     selectedVoiceChannel: m,

@@ -1,7 +1,7 @@
 /** chunk id: 533978, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => b
+    A: () => N
 });
 var i = n(627968),
     s = n(64700),
@@ -23,12 +23,12 @@ var i = n(627968),
     C = n(246356),
     E = n(709562),
     I = n(376086),
-    N = n(985018);
+    b = n(985018);
 
-function b(e) {
+function N(e) {
     let {
         channel: t,
-        themeable: b,
+        themeable: N,
         whichPopoutIsOpen: S,
         setWhichPopoutIsOpen: T
     } = e, {
@@ -107,8 +107,8 @@ function b(e) {
         children: () => (0, i.jsx)(E.l, {
             ref: z,
             isTrayButton: !0,
-            themeable: b,
-            label: M ? N.intl.string(N.t["Ox4/zU"]) : D ? N.intl.string(N.t["+YBKYI"]) : G ? N.intl.string(N.t.X1lQli) : void 0,
+            themeable: N,
+            label: M ? b.intl.string(b.t["Ox4/zU"]) : D ? b.intl.string(b.t["+YBKYI"]) : G ? b.intl.string(b.t.X1lQli) : void 0,
             iconComponent: v,
             disabled: U,
             onContextMenu: W,

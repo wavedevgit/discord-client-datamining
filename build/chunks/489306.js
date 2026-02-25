@@ -24,8 +24,8 @@ var i = n(64700),
     C = n(904629),
     E = n(229548),
     I = n(139032),
-    N = n(52260),
-    b = n(294384),
+    b = n(52260),
+    N = n(294384),
     S = n(864310),
     T = n(553103),
     y = n(568065),
@@ -98,7 +98,7 @@ function R(e) {
                 U = (0, I.A)(e),
                 [P, w] = (0, E.ww)(null != t && !T && !G && null != U, e),
                 k = P === r.M.BOOST_TO_UNLOCK_COACHMARK,
-                V = (0, N.A)(e),
+                V = (0, b.A)(e),
                 [B, H] = (0, E.W2)(null != t && !T && !G && !k && null != V, e),
                 F = B === r.M.EXPIRING_POWERUP_COACHMARK,
                 K = i.useMemo(() => {
@@ -131,7 +131,7 @@ function R(e) {
                                 return null != n && !!(i >= n)
                             }) ? [] : s.map(i => {
                                 let s = t.allPowerups[i];
-                                return null == s || n < s.cost || !s.dependencies.every(e => null != t.unlockedPowerups[e]) || (0, b.t)(e, s, "maybeGetPerkPurchaseablePopoutDCF") ? null : s
+                                return null == s || n < s.cost || !s.dependencies.every(e => null != t.unlockedPowerups[e]) || (0, N.t)(e, s, "maybeGetPerkPurchaseablePopoutDCF") ? null : s
                             })).filter(d.Vq);
                         if (0 !== s.length) {
                             if (1 === s.length && !(0, o.zs)(r.V.GUILD_POWERUP_SINGLE_SKU_PURCHASE_COACHMARK, e)) return {

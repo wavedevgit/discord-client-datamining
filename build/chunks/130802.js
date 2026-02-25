@@ -1,8 +1,8 @@
 /** chunk id: 130802, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    u5: () => N,
-    zd: () => b
+    u5: () => b,
+    zd: () => N
 });
 var i, s = n(627968),
     l = n(64700),
@@ -163,9 +163,9 @@ function I(e) {
         })]
     })
 }
-var N = ((i = {})[i.ActivityNux = 0] = "ActivityNux", i[i.StatusNux = 1] = "StatusNux", i[i.ActivityAndStatusNux = 2] = "ActivityAndStatusNux", i[i.Activity = 3] = "Activity", i[i.Status = 4] = "Status", i[i.ActivityAndStatus = 5] = "ActivityAndStatus", i);
+var b = ((i = {})[i.ActivityNux = 0] = "ActivityNux", i[i.StatusNux = 1] = "StatusNux", i[i.ActivityAndStatusNux = 2] = "ActivityAndStatusNux", i[i.Activity = 3] = "Activity", i[i.Status = 4] = "Status", i[i.ActivityAndStatus = 5] = "ActivityAndStatus", i);
 
-function b(e) {
+function N(e) {
     let {
         showPopout: t,
         popoutState: n,
@@ -227,9 +227,9 @@ function b(e) {
             default:
                 return null
         }
-    }(g), N = (0, l.useRef)(t);
+    }(g), b = (0, l.useRef)(t);
     if ((0, l.useEffect)(() => {
-            t && !N.current && _(n), t !== N.current && (N.current = t)
+            t && !b.current && _(n), t !== b.current && (b.current = t)
         }, [n, t]), null == x || !t) return u;
     if ("popover" === x.type) {
         let {
@@ -263,7 +263,7 @@ function b(e) {
         })
     }
     let {
-        children: b
+        children: N
     } = x;
     return (0, s.jsx)(o.YNO, {
         targetElementRef: f,
@@ -275,7 +275,7 @@ function b(e) {
             let {
                 closePopout: t
             } = e;
-            return (0, s.jsx)(b, {
+            return (0, s.jsx)(N, {
                 closePopout: t
             })
         },

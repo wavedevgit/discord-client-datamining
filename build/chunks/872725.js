@@ -1,6 +1,6 @@
 /** chunk id: 872725, original params: e,t,r (module,exports,require) **/
 r.d(t, {
-    A: () => x
+    A: () => p
 });
 var n = r(627968),
     a = r(64700),
@@ -26,13 +26,13 @@ let h = {
         BaseGlowRemapped: {},
         ButtonFillDarkmode: {}
     },
-    p = {},
-    x = e => {
+    x = {},
+    p = e => {
         let {
             children: t,
             className: r,
             cardClassName: l,
-            cardStyle: x = p,
+            cardStyle: p = x,
             cardType: f,
             artboard: g = "BaseGlowRemapped",
             fit: _ = "layout",
@@ -65,7 +65,7 @@ let h = {
             }), (0, n.jsx)(c.ZpM, {
                 type: f ?? c.sl2.CUSTOM,
                 className: l,
-                style: x,
+                style: p,
                 children: t
             })]
         })

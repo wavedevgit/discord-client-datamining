@@ -1,7 +1,7 @@
 /** chunk id: 592982, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => b
+    A: () => N
 });
 var i = n(627968);
 n(64700);
@@ -24,26 +24,26 @@ var s = n(311907),
     C = n(470743),
     E = n(806931),
     I = n(652215),
-    N = n(985018);
+    b = n(985018);
 
-function b(e) {
+function N(e) {
     let {
         onClose: t,
         onSelect: n,
-        channel: b,
+        channel: N,
         remoteMode: S,
         onInteraction: T
     } = e, y = (0, o.Us)(), {
         id: v,
         type: j
-    } = b, R = (0, s.bG)([d.A], () => d.A.getGuild(b.guild_id), [b.guild_id]), O = (0, s.bG)([u.A], () => u.A.getSelectedParticipant(v)), L = O?.type === E.lp.STREAM ? O.stream : null, M = (0, s.bG)([r.A], () => O?.type === E.lp.ACTIVITY ? r.A.getApplication(O.applicationId) : void 0), D = (0, p.A)(v), G = (0, x.A)(v), U = (0, m.A)(b, R, L?.ownerId, M?.id), P = (0, A.A)(v), w = (0, C.A)(), k = (0, c.RQ)(v), V = (0, c.dA)(v), B = (0, f.A)(L, y), H = (0, _.A)(M, v), F = (0, g.A)(), K = (0, a.A)(b), W = (0, h.f)(v);
+    } = N, R = (0, s.bG)([d.A], () => d.A.getGuild(N.guild_id), [N.guild_id]), O = (0, s.bG)([u.A], () => u.A.getSelectedParticipant(v)), L = O?.type === E.lp.STREAM ? O.stream : null, M = (0, s.bG)([r.A], () => O?.type === E.lp.ACTIVITY ? r.A.getApplication(O.applicationId) : void 0), D = (0, p.A)(v), G = (0, x.A)(v), U = (0, m.A)(N, R, L?.ownerId, M?.id), P = (0, A.A)(v), w = (0, C.A)(), k = (0, c.RQ)(v), V = (0, c.dA)(v), B = (0, f.A)(L, y), H = (0, _.A)(M, v), F = (0, g.A)(), K = (0, a.A)(N), W = (0, h.f)(v);
     return (0, i.jsxs)(l.W1t, {
         "data-menu-migrated": !0,
         onClose: t,
         onSelect: n,
         onInteraction: T,
         navId: "more-settings-context",
-        "aria-label": N.intl.string(N.t.FTLzdR),
+        "aria-label": b.intl.string(b.t.FTLzdR),
         children: [(0, i.jsx)(l.rXV, {
             children: j !== I.rbe.GUILD_STAGE_VOICE ? U : null
         }), (0, i.jsxs)(l.rXV, {
@@ -51,7 +51,7 @@ function b(e) {
         }), (0, i.jsx)(l.rXV, {
             children: K
         }), (0, i.jsxs)(l.rXV, {
-            children: [w, !b.isManaged() && b.isPrivate() ? W : null]
+            children: [w, !N.isManaged() && N.isPrivate() ? W : null]
         }), (0, i.jsxs)(l.rXV, {
             children: [null != L ? B : null, null != M ? H : null]
         })]

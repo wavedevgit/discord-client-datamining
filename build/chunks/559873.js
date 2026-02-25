@@ -30,7 +30,7 @@ let I = {
     [f.Th.MESSAGE]: [f.kR.SETTINGS]
 };
 
-function N(e) {
+function b(e) {
     let {
         label: t,
         onClick: n,
@@ -62,7 +62,7 @@ function N(e) {
     })
 }
 
-function b(e) {
+function N(e) {
     let {
         channel: t,
         message: n,
@@ -242,13 +242,13 @@ function T(e) {
             let t = S[e];
             switch (t.type) {
                 case "standard":
-                    return (0, i.jsx)(N, {
+                    return (0, i.jsx)(b, {
                         ...t,
                         actionType: e,
                         message: n
                     }, e);
                 case "menu":
-                    return (0, i.jsx)(b, {
+                    return (0, i.jsx)(N, {
                         ...t,
                         actionType: e,
                         channel: l,

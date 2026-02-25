@@ -23,8 +23,8 @@ var i = n(627968),
     C = n(39324),
     E = n(320697),
     I = n(394953),
-    N = n(628325),
-    b = n(524628),
+    b = n(628325),
+    N = n(524628),
     S = n(849077),
     T = n(652215),
     y = n(21786),
@@ -215,7 +215,7 @@ function D(e) {
         }, [n, l, A, W, Y, q, G, p, J, Q, U]),
         Z = $[$.length - 1],
         ee = s.isValidElement(Z) && Z.type === O,
-        et = (0, N.S)(e => e.setInboxReadState);
+        et = (0, b.S)(e => e.setInboxReadState);
     s.useEffect(() => {
         Q || et(0 === q.UNREAD.length)
     }, [q, Q, et]);
@@ -244,7 +244,7 @@ function D(e) {
     }, [ei, a, Q, B, ee, z]);
     let es = s.useMemo(() => {
         let e = Math.min(Math.max(2, ei()), 20);
-        return (0, i.jsx)(b.A, {
+        return (0, i.jsx)(N.A, {
             withHeader: !1,
             size: e
         })

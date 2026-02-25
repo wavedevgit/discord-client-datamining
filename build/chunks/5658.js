@@ -60,12 +60,12 @@ let I = s.memo(function(e) {
         return (0, i.jsx)(l.animated.div, {
             ref: r,
             style: p,
-            children: (0, i.jsx)(N, {
+            children: (0, i.jsx)(b, {
                 ...e
             })
         })
     }),
-    N = s.memo(function(e) {
+    b = s.memo(function(e) {
         let {
             channel: t,
             onJump: n,
@@ -105,7 +105,7 @@ let I = s.memo(function(e) {
                         className: E.GC,
                         children: [(0, i.jsx)(g.A, {
                             channel: o
-                        }), (0, i.jsx)(b, {
+                        }), (0, i.jsx)(N, {
                             ...e
                         })]
                     })
@@ -123,7 +123,7 @@ let I = s.memo(function(e) {
         })
     });
 
-function b(e) {
+function N(e) {
     let {
         channel: t,
         markChannelRead: n,

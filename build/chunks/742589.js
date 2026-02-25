@@ -1,7 +1,7 @@
 /** chunk id: 742589, original params: e,t,i (module,exports,require) **/
 i.d(t, {
     A: () => m,
-    I: () => A
+    I: () => g
 });
 var n = i(627968);
 i(64700);
@@ -16,14 +16,14 @@ var r = i(607399),
     h = i(58736),
     C = i(746080),
     E = i(512147);
-async function A(e) {
+async function g(e) {
     if (!e && (0, d.isMac)() && d.isPlatformEmbedded) {
         let e = await window.DiscordNative.remoteApp.getDefaultDoubleClickAction?.() ?? "Maximize";
         "Minimize" === e ? u.Ay.minimize() : "Maximize" === e && u.Ay.maximize()
     }
 }
 
-function g(e) {
+function A(e) {
     let {
         children: t,
         className: i,
@@ -31,7 +31,7 @@ function g(e) {
         guildId: a,
         innerClassname: d,
         transparent: u = !1,
-        hidden: g = !1,
+        hidden: A = !1,
         toolbar: _,
         mobileToolbar: p,
         "aria-label": m,
@@ -62,8 +62,8 @@ function g(e) {
             })
         }(),
         transparent: u,
-        hidden: g,
-        onDoubleClick: () => A(S),
+        hidden: A,
+        onDoubleClick: () => g(S),
         "aria-label": m,
         "aria-labelledby": L,
         role: f,
@@ -83,7 +83,7 @@ function _(e) {
     } = e;
     return (0, n.jsx)(h.Ay, {
         className: i,
-        onDoubleClick: () => A(s),
+        onDoubleClick: () => g(s),
         "aria-label": r,
         "aria-labelledby": l,
         role: a,
@@ -100,7 +100,7 @@ function p(e) {
     } = (0, a.Ay)(l.A.HEADER_BAR);
     return (0, n.jsx)(a.f5, {
         value: r,
-        children: t ? (0, n.jsx)(g, {
+        children: t ? (0, n.jsx)(A, {
             ...i,
             className: i.className
         }) : (0, n.jsx)(_, {

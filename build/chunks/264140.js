@@ -24,8 +24,8 @@ var f = n(483270),
     C = n(456412),
     E = n(432371),
     I = n(475743),
-    N = n(933958),
-    b = n(156579),
+    b = n(933958),
+    N = n(156579),
     S = n(108959),
     T = n(480720),
     y = n(323073),
@@ -78,8 +78,8 @@ var f = n(483270),
     eC = n(940382),
     eE = n(323443),
     eI = n(566388),
-    eN = n(168675),
-    eb = n(170428),
+    eb = n(168675),
+    eN = n(170428),
     eS = n(494208),
     eT = n(933057),
     ey = n(328808),
@@ -312,7 +312,7 @@ class tt extends s.PureComponent {
             case e1.rbe.ANNOUNCEMENT_THREAD:
             case e1.rbe.PRIVATE_THREAD:
             case e1.rbe.PUBLIC_THREAD:
-                e.isModeratorReportChannel() && a.push((0, i.jsx)(eb.A, {
+                e.isModeratorReportChannel() && a.push((0, i.jsx)(eN.A, {
                     channel: e
                 })), null == t || t.isForumLikeChannel() || a.push((0, i.jsx)(eS.A, {
                     channel: t
@@ -526,7 +526,7 @@ class tt extends s.PureComponent {
         } = this.props, t = this.shouldRenderCall();
         if (o()(null != e, "Missing channel in Channel.renderEmbeddedActivityPanel"), t) return null;
         let n = this.props.height - 200;
-        return (0, i.jsx)(b.A, {
+        return (0, i.jsx)(N.A, {
             maxHeight: n,
             renderExternalHeader: this.renderHeaderBar
         })
@@ -670,7 +670,7 @@ class tt extends s.PureComponent {
             switch (s.type) {
                 case eC.PE.CREATE_THREAD:
                     if (t?.isForumLikeChannel()) return null;
-                    e = (0, i.jsx)(eN.A, {
+                    e = (0, i.jsx)(eb.A, {
                         parentChannelId: s.parentChannelId,
                         parentMessageId: s.parentMessageId,
                         location: s.location
@@ -784,15 +784,15 @@ let tn = (0, C.A)(tt),
             let e = null != r ? R.A.getParticipants(r) : [],
                 t = null != r ? R.A.getActivityParticipants(r) : [];
             return e.length - t.length > 0
-        }, [r]), b = (0, B.A)(), v = (0, h.bG)([eF.A], () => (b?.channelId ?? eF.A.getVoiceChannelId()) === o?.id), O = (0, h.bG)([N.Ay], () => null != o ? N.Ay.getSelfEmbeddedActivityForChannel(o.id) : null, [o]), L = (0, h.bG)([eH.A], () => eH.A.isConnected()), M = (0, I.A)(L), D = L && !1 === M;
+        }, [r]), N = (0, B.A)(), v = (0, h.bG)([eF.A], () => (N?.channelId ?? eF.A.getVoiceChannelId()) === o?.id), O = (0, h.bG)([b.Ay], () => null != o ? b.Ay.getSelfEmbeddedActivityForChannel(o.id) : null, [o]), L = (0, h.bG)([eH.A], () => eH.A.isConnected()), M = (0, I.A)(L), D = L && !1 === M;
         s.useEffect(() => {
             v && D && null != O && null != o && m.A.selectParticipant(o.id, (0, j.Qt)({
                 applicationId: O.applicationId,
                 instanceId: O.compositeInstanceId
             }))
         }, [D, o, v, O]);
-        let G = (0, h.bG)([N.Ay], () => N.Ay.getCurrentEmbeddedActivity()),
-            U = (0, h.bG)([N.Ay], () => N.Ay.getActivityPanelMode()),
+        let G = (0, h.bG)([b.Ay], () => b.Ay.getCurrentEmbeddedActivity()),
+            U = (0, h.bG)([b.Ay], () => b.Ay.getActivityPanelMode()),
             P = null != G && !(0, S.A)(o?.id) && U === e7.Gd.PANEL,
             k = (0, h.bG)([eY.A], () => null != o && o.isVocalThread() && !d().isEmpty(eY.A.getVoiceStatesForChannel(o.id)), [o]),
             H = null != o && o.isPrivate() && !P && C,
@@ -803,7 +803,7 @@ let tn = (0, C.A)(tt),
             } = (0, u.zy)(),
             Y = (0, h.bG)([eu.A], () => null != o && eu.A.isLurking(o.guild_id), [o]),
             X = (0, h.bG)([eD.A], () => eD.A.hasSeen(o?.guild_id, Y), [o, Y]),
-            q = (0, h.bG)([R.A, N.Ay], () => null != N.Ay.getConnectedActivityLocation() && N.Ay.getActivityPanelMode() === e7.Gd.PANEL ? N.Ay.getFocusedLayout() === e7.E8.NO_CHAT ? e1.DUB.NO_CHAT : e1.DUB.NORMAL : null != r ? R.A.getLayout(r) : e1.DUB.NORMAL, [r]),
+            q = (0, h.bG)([R.A, b.Ay], () => null != b.Ay.getConnectedActivityLocation() && b.Ay.getActivityPanelMode() === e7.Gd.PANEL ? b.Ay.getFocusedLayout() === e7.E8.NO_CHAT ? e1.DUB.NO_CHAT : e1.DUB.NORMAL : null != r ? R.A.getLayout(r) : e1.DUB.NORMAL, [r]),
             Q = (0, h.bG)([R.A], () => null != o ? R.A.getSelectedParticipant(o.id) : null),
             $ = (0, y.vL)(o),
             Z = (0, ec.A)(f?.id),
@@ -859,8 +859,8 @@ let tn = (0, C.A)(tt),
                 dismissAction: e6.i.AUTO
             })
         }, [o?.id, eI, ex, eC]);
-        let eN = (0, p.useHasAnyModalOpen)(),
-            eb = J.A.useConfig({
+        let eb = (0, p.useHasAnyModalOpen)(),
+            eN = J.A.useConfig({
                 location: "Channel"
             }).enabled;
         return (0, i.jsx)(tn, {
@@ -874,7 +874,7 @@ let tn = (0, C.A)(tt),
             layout: q,
             needSubscriptionToAccess: x,
             isLurking: Y,
-            hasModalOpen: eN,
+            hasModalOpen: eb,
             section: et,
             channelSidebarState: en,
             guildSidebarState: es,
@@ -899,6 +899,6 @@ let tn = (0, C.A)(tt),
             premiumIndicatorEnabled: !1,
             hasTextActivityInPanelMode: P,
             embeddedActivity: G,
-            isGdmCopyExperimentEnabled: eb
+            isGdmCopyExperimentEnabled: eN
         })
     })

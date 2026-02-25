@@ -23,8 +23,8 @@ var i = n(627968),
     C = n(688810),
     E = n(139286),
     I = n(47167),
-    N = n(713517),
-    b = n(854627),
+    b = n(713517),
+    N = n(854627),
     S = n(10862),
     T = n(164891),
     y = n(135635),
@@ -49,7 +49,7 @@ function H(e) {
         onHoverOrFocus: l,
         setPopoutRef: a,
         closePopout: d
-    } = e, u = s.useRef(null), A = (0, N.A)(u), p = (0, G.k)({
+    } = e, u = s.useRef(null), A = (0, b.A)(u), p = (0, G.k)({
         channel: t
     }), {
         enabled: g
@@ -132,7 +132,7 @@ function F(e) {
         ringingEnabled: l
     } = e, a = t.guild_id, o = s.useRef(null), c = (0, d.bG)([v.Ay], () => v.Ay.getMember(a, n.id), [a, n.id]), {
         isHoveringOrFocusing: x
-    } = (0, N.A)(o), [C, E] = s.useState(null), {
+    } = (0, b.A)(o), [C, E] = s.useState(null), {
         icon: T,
         iconColor: j,
         tooltipText: G,
@@ -209,7 +209,7 @@ function F(e) {
         avatarDecorationSrc: en,
         avatarSrc: ei,
         eventHandlers: es
-    } = (0, b.A)({
+    } = (0, N.A)({
         userId: n.id,
         size: h._3J.SIZE_24,
         animateOnHover: !x,

@@ -28,8 +28,8 @@ let E = (0, r.A)(e => {
         selectedParticipant: r,
         participantsVersion: E,
         layout: I,
-        onSelectParticipant: N,
-        onContextMenuParticipant: b,
+        onSelectParticipant: b,
+        onContextMenuParticipant: N,
         onFullscreenParticipant: S,
         channel: T,
         hasConnectPermission: y,
@@ -67,7 +67,7 @@ let E = (0, r.A)(e => {
         width: O,
         className: C.Er,
         participants: t,
-        onContextMenu: b
+        onContextMenu: N
     });
     if (null == r) {
         if (0 === n.length) {
@@ -86,9 +86,9 @@ let E = (0, r.A)(e => {
                 className: C.g9,
                 participants: w,
                 totalNumberOfParticipants: t.length,
-                onClick: N,
+                onClick: b,
                 onDoubleClick: S,
-                onContextMenu: b,
+                onContextMenu: N,
                 inCall: j,
                 popoutType: G
             })
@@ -96,8 +96,8 @@ let E = (0, r.A)(e => {
     }
     return (0, i.jsx)(m.A, {
         onFullscreenParticipant: S,
-        onContextMenuParticipant: b,
-        onSelectParticipant: N,
+        onContextMenuParticipant: N,
+        onSelectParticipant: b,
         selectedParticipant: r,
         filteredParticipants: w,
         participants: t,

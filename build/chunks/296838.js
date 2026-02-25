@@ -23,8 +23,8 @@ var i = n(627968),
     C = n(203982),
     E = n(635914),
     I = n(652215),
-    N = n(985018),
-    b = n(427718);
+    b = n(985018),
+    N = n(427718);
 let S = {
     UP: d().throttle(() => (0, x.Ak)("ddr-up"), 100),
     DOWN: d().throttle(() => (0, x.Ak)("ddr-down"), 100),
@@ -53,8 +53,8 @@ function v(e) {
         showBackdrop: t
     } = e;
     return (0, i.jsx)("div", {
-        className: r()(b.tB, {
-            [b.WU]: t
+        className: r()(N.tB, {
+            [N.WU]: t
         })
     })
 }
@@ -62,33 +62,33 @@ function v(e) {
 function j() {
     let e = s.useMemo(() => d()((0, g.Bx)()).groupBy(e => e.group).value(), []);
     return (0, i.jsx)("div", {
-        className: b.Io,
+        className: N.Io,
         children: y.map(t => {
             let n = e[t],
                 s = (0, g.Gm)(t),
                 l = (0, g.zF)(t);
             return (0, i.jsxs)("div", {
-                className: b.ZK,
+                className: N.ZK,
                 children: [(0, i.jsxs)("div", {
                     children: [(0, i.jsx)(p.Heading, {
                         variant: "heading-lg/semibold",
                         children: s
                     }), null != l && (0, i.jsx)(p.Text, {
-                        className: b.UX,
+                        className: N.UX,
                         variant: "text-sm/normal",
                         children: l
                     })]
                 }), (0, i.jsx)("div", {
-                    className: b.tI,
+                    className: N.tI,
                     children: n.map((e, t) => e.predicate?.() === !1 ? null : (0, i.jsxs)("div", {
-                        className: b.YI,
+                        className: N.YI,
                         children: [(0, i.jsx)(p.Text, {
                             variant: "text-sm/normal",
                             children: e.description
                         }), (0, i.jsx)("div", {
                             className: "keybind-shortcuts",
                             children: e.binds.map(e => (0, i.jsx)(p.e7I, {
-                                className: b.Me,
+                                className: N.Me,
                                 shortcut: e
                             }, e))
                         })]
@@ -209,40 +209,40 @@ class R extends s.PureComponent {
             RIGHT: s
         } = this.state;
         return (0, i.jsxs)(u.A.div, {
-            className: b.UV,
+            className: N.UV,
             style: this.getStyles(),
             children: [(0, i.jsxs)(p.H, {
-                className: b.GK,
+                className: N.GK,
                 children: [(0, i.jsx)("div", {
-                    className: b.Qs,
-                    children: N.intl.string(N.t["1BdUtx"])
+                    className: N.Qs,
+                    children: b.intl.string(b.t["1BdUtx"])
                 }), (0, i.jsx)(p.e7I, {
                     shortcut: "mod+/"
                 })]
             }), (0, i.jsx)("div", {
-                className: b.KV,
-                children: N.intl.string(N.t["2t19lU"])
+                className: N.KV,
+                children: b.intl.string(b.t["2t19lU"])
             }), (0, i.jsxs)("div", {
-                className: b.Pg,
+                className: N.Pg,
                 children: [(0, i.jsx)(O, {
                     arrow: "LEFT",
                     isActive: n,
-                    className: b.kb,
+                    className: N.kb,
                     children: "left"
                 }), (0, i.jsx)(O, {
                     arrow: "DOWN",
                     isActive: t,
-                    className: b.TR,
+                    className: N.TR,
                     children: "down"
                 }), (0, i.jsx)(O, {
                     arrow: "UP",
                     isActive: e,
-                    className: b.up,
+                    className: N.up,
                     children: "up"
                 }), (0, i.jsx)(O, {
                     arrow: "RIGHT",
                     isActive: s,
-                    className: b.pG,
+                    className: N.pG,
                     children: "right"
                 })]
             }), (0, i.jsx)(p.GtU, {
@@ -272,8 +272,8 @@ function O(e) {
         }
     }, [o]), (0, i.jsx)(p.DUT, {
         onClick: d,
-        className: r()(b.UE, l, {
-            [b.vu]: t || o
+        className: r()(N.UE, l, {
+            [N.vu]: t || o
         }),
         children: a
     })
@@ -294,11 +294,11 @@ function L(e) {
         children: [(0, i.jsx)(v, {
             showBackdrop: o
         }), (0, i.jsx)(p.EOs, {
-            className: r()(b._$, {
-                [b.O9]: l
+            className: r()(N._$, {
+                [N.O9]: l
             }),
             size: p.rIJ.DYNAMIC,
-            "aria-label": N.intl.string(N.t.T9DA2K),
+            "aria-label": b.intl.string(b.t.T9DA2K),
             transitionState: t,
             parentComponent: "KeyboardShortcutsModal",
             children: (0, i.jsx)(A.F, {

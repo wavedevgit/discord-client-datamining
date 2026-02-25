@@ -24,12 +24,12 @@ var i = n(627968),
     C = n(320501),
     E = n(994500),
     I = n(486020),
-    N = n(927813),
-    b = n(403362),
+    b = n(927813),
+    N = n(403362),
     S = n(652215),
     T = n(838541),
     y = n(262159);
-let v = 10 * N.A.Millis.SECOND;
+let v = 10 * b.A.Millis.SECOND;
 
 function j(e) {
     let {
@@ -40,20 +40,20 @@ function j(e) {
     } = (0, c.cf)([E.A], () => ({
         isBlocked: E.A.isBlockedForMessage(t),
         isIgnored: E.A.isIgnoredForMessage(t)
-    }), [t]), a = (0, m.X4)(t), o = s.useContext(p.A), [u, C] = s.useState(!1), N = s.useCallback(e => {
+    }), [t]), a = (0, m.X4)(t), o = s.useContext(p.A), [u, C] = s.useState(!1), b = s.useCallback(e => {
         "A" !== e.target.nodeName && (h.A.updateChatOpen(t.channel_id, !0), A.A.jumpToMessage({
             channelId: t.channel_id,
             messageId: t.id,
             flash: !0
         }))
-    }, [t.channel_id, t.id]), b = null != t.content && "" !== t.content ? (0, g.Ay)(t, {
+    }, [t.channel_id, t.id]), N = null != t.content && "" !== t.content ? (0, g.Ay)(t, {
         isInteracting: u
     }).content : null, {
         contentPlaceholder: S,
         renderedContent: v,
         trailingIcon: j,
         leadingIcon: R
-    } = (0, _.o)(t, b, n, l, y.BK, {
+    } = (0, _.o)(t, N, n, l, y.BK, {
         trailingIconClass: y.sl,
         leadingIconClass: y.aG,
         iconSize: T.eJ
@@ -71,7 +71,7 @@ function j(e) {
         onMouseLeave: () => {
             C(!1)
         },
-        onClick: N,
+        onClick: b,
         children: [(0, i.jsxs)("div", {
             className: r()(y.kn, {
                 [y.mK]: t.mentioned
@@ -130,7 +130,7 @@ function R(e) {
         let g = h.current ?? r;
         return {
             toastsHidden: o,
-            toastMessages: (0, c.yK)([C.A], () => g.map(e => C.A.getMessage(t, e)), [t, g]).filter(b.Vq)
+            toastMessages: (0, c.yK)([C.A], () => g.map(e => C.A.getMessage(t, e)), [t, g]).filter(N.Vq)
         }
     }({
         channelId: t,

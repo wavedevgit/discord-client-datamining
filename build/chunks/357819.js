@@ -31,8 +31,8 @@ let C = (0, r.A)(e => {
             popoutType: I
         } = e,
         {
-            selectedParticipantId: N,
-            largeStream: b,
+            selectedParticipantId: b,
+            largeStream: N,
             chatOpen: S
         } = (0, l.cf)([a.A], () => ({
             selectedParticipantId: a.A.getSelectedParticipantId(r.id),
@@ -41,7 +41,7 @@ let C = (0, r.A)(e => {
         }), [r.id]),
         T = (0, c.uy)(r.id),
         y = (0, c.zy)(r.id, d.ip.AUDIENCE),
-        v = (0, l.bG)([o.A], () => null != N ? o.A.getParticipant(r.id, N) : null),
+        v = (0, l.bG)([o.A], () => null != b ? o.A.getParticipant(r.id, b) : null),
         j = (0, c.E5)(r.id, d.ip.SPEAKER),
         R = j.filter(x),
         O = null != j.find(e => e.type === d.wY.STREAM),
@@ -62,7 +62,7 @@ let C = (0, r.A)(e => {
             speakerTileWidth: t,
             speakerTileHeight: n
         }),
-        B = b ? C - 32 : Math.min(C - 64, 3 * k + 8),
+        B = N ? C - 32 : Math.min(C - 64, 3 * k + 8),
         H = e => e === U.length - 1 || 0 === y && 1 === e,
         [F, K] = s.useState(!1),
         [W, Y] = s.useState(!1);

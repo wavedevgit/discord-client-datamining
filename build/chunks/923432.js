@@ -73,15 +73,15 @@ function x(e) {
     } = (0, o.cf)([p.A], () => p.A.getUnreadStateForGuildId(n.id)), C = (0, o.bG)([h.A], () => h.A.isFocused()), {
         mode: E,
         mentionCount: I,
-        targetChannelId: N
-    } = "bottom" === t ? A : x, b = E === p.k.HIDDEN, S = (0, c.zhh)({
+        targetChannelId: b
+    } = "bottom" === t ? A : x, N = E === p.k.HIDDEN, S = (0, c.zhh)({
         to: {
-            transform: b ? "bottom" === t ? "translateY(180%)" : "translateY(-180%)" : "translateY(0%)"
+            transform: N ? "bottom" === t ? "translateY(180%)" : "translateY(-180%)" : "translateY(0%)"
         },
         config: _
     }, C ? "respect-motion-settings" : "animate-never"), T = s.useCallback(e => {
-        e.preventDefault(), e.stopPropagation(), null != N && u(N)
-    }, [u, N]);
+        e.preventDefault(), e.stopPropagation(), null != b && u(b)
+    }, [u, b]);
     return (0, i.jsx)("div", {
         className: r()(m.kL, {
             [m.Mn]: "top" === t,
@@ -90,7 +90,7 @@ function x(e) {
         children: (0, i.jsx)(a.animated.div, {
             className: m.pK,
             style: S,
-            "aria-hidden": b,
+            "aria-hidden": N,
             children: E === p.k.HIDDEN ? (0, i.jsx)("div", {
                 className: r()(m.M0, m.Te)
             }) : E === p.k.UNREAD ? (0, i.jsxs)(c.DUT, {

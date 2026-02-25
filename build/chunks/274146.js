@@ -1,7 +1,7 @@
 /** chunk id: 274146, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => N
+    A: () => b
 });
 var i = n(627968),
     s = n(64700),
@@ -23,12 +23,12 @@ var i = n(627968),
     C = n(652215),
     E = n(650583),
     I = n(875514);
-let N = e => {
+let b = e => {
     let {
         channel: t,
-        guild: N
+        guild: b
     } = e, {
-        currentCategoryId: b,
+        currentCategoryId: N,
         directoryEntries: S,
         categoryCounts: T,
         allEntriesCount: y,
@@ -54,7 +54,7 @@ let N = e => {
             }, !0, !0, e)
         })
     }, [t.id]);
-    let j = s.useMemo(() => null != S ? (0, _._)(Object.values(S), b) : null, [S, b]),
+    let j = s.useMemo(() => null != S ? (0, _._)(Object.values(S), N) : null, [S, N]),
         {
             mostRecentQuery: R,
             searchFetching: O,
@@ -86,10 +86,10 @@ let N = e => {
     }, [t.id]), s.useEffect(() => {
         d.default.track(C.HAw.GUILD_DIRECTORY_CHANNEL_VIEWED, {
             directory_channel_id: t.id,
-            directory_guild_id: N.id,
-            primary_category_id: b
+            directory_guild_id: b.id,
+            primary_category_id: N
         })
-    }, [t.id, N.id, b]);
+    }, [t.id, b.id, N]);
     let w = (0, p.b)(t),
         k = s.useMemo(() => w ? () => {
             (0, r.mMO)(async () => {
@@ -98,17 +98,17 @@ let N = e => {
                 } = await n.e("6759").then(n.bind(n, 953722));
                 return n => (0, i.jsx)(e, {
                     ...n,
-                    directoryGuildName: N.name,
-                    directoryGuildId: N.id,
+                    directoryGuildName: b.name,
+                    directoryGuildId: b.id,
                     directoryChannelId: t.id,
-                    currentCategoryId: b === x.mU.ALL ? null : b
+                    currentCategoryId: N === x.mU.ALL ? null : N
                 })
             })
-        } : void 0, [w, N.name, N.id, t.id, b]),
+        } : void 0, [w, b.name, b.id, t.id, N]),
         V = e => {
             0 !== M.trim().length && e.key === E.dh.ENTER && (u.Se(t.id, M), d.default.track(C.HAw.GUILD_DIRECTORY_SEARCH, {
                 directory_channel_id: t.id,
-                directory_guild_id: N.id
+                directory_guild_id: b.id
             }))
         },
         B = () => {
@@ -123,15 +123,15 @@ let N = e => {
         handleCreateOrAddGuild: k,
         searchResults: L,
         searchFetching: O
-    }) : null == j && null == b ? (0, i.jsx)("div", {
+    }) : null == j && null == N ? (0, i.jsx)("div", {
         className: I.$$,
         children: (0, i.jsx)(r.y$y, {
             className: I.u1
         })
-    }) : j?.length === 0 && null == b ? (0, i.jsx)("div", {
+    }) : j?.length === 0 && null == N ? (0, i.jsx)("div", {
         className: I.$$,
         children: (0, i.jsx)(g.A, {
-            guild: N,
+            guild: b,
             onAddGuild: k
         })
     }) : (0, i.jsx)(m.A, {
@@ -141,7 +141,7 @@ let N = e => {
         handleSearchKeyPress: V,
         handleClearSearch: B,
         handleCreateOrAddGuild: k,
-        currentCategoryId: b,
+        currentCategoryId: N,
         handleSelectCategory: e => {
             u.uU(t.id, e)
         },

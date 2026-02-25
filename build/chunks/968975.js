@@ -28,8 +28,8 @@ function I(e) {
         unownedWishlistItems: t = [],
         profileOwner: n,
         onClick: I,
-        wishlistId: N,
-        cardSize: b,
+        wishlistId: b,
+        cardSize: N,
         title: S
     } = e, {
         analyticsLocations: T
@@ -78,18 +78,18 @@ function I(e) {
                 profileOwner: n,
                 analyticsLocations: T,
                 onViewWishlist: I,
-                wishlistId: N,
+                wishlistId: b,
                 showTypeTooltip: L,
-                cardSize: b
+                cardSize: N
             }))) : (0, h.$)(l) && (s.add(l.skuProductLine), e.push((0, c.Z)(l, {
                 index: i,
                 moreCount: r ? t.length - j + 1 : void 0,
                 profileOwner: n,
                 analyticsLocations: T,
                 onViewWishlist: I,
-                wishlistId: N,
+                wishlistId: b,
                 showTypeTooltip: L,
-                cardSize: b
+                cardSize: N
             })))
         }
         return 1 === O.length && (i = O[0]), {
@@ -97,30 +97,30 @@ function I(e) {
             singleItem: i,
             productLines: s
         }
-    }, [t, n, T, I, N, b, O, L, j]), U = (0, g.A)({
-        wishlistId: N ?? null,
+    }, [t, n, T, I, b, N, O, L, j]), U = (0, g.A)({
+        wishlistId: b ?? null,
         onAction: R,
         productLines: G
     }), P = (0, s.useMemo)(() => v ? O.map((e, t) => null == e.sku ? null : (0, i.jsx)(A.A, {
         sku: e.sku,
         index: t,
         wishlistOwner: n,
-        wishlistId: N,
+        wishlistId: b,
         analyticsLocations: T,
         onViewWishlist: I,
         showTypeTooltip: L
-    }, e.skuId)) : null, [T, v, I, n, L, O, N]);
+    }, e.skuId)) : null, [T, v, I, n, L, O, b]);
     if (0 === M.length) return null;
     let w = M;
     return null != D && ((0, u.L)(D) ? w = (0, _.z)(D, {
         profileOwner: n,
         analyticsLocations: T,
-        wishlistId: N,
+        wishlistId: b,
         onViewWishlist: I
     }) : (0, h.$)(D) && (w = (0, c.A)(D, {
         profileOwner: n,
         analyticsLocations: T,
-        wishlistId: N,
+        wishlistId: b,
         onViewWishlist: I
     }))), (0, i.jsxs)(m.A.Overlay, {
         ref: U,

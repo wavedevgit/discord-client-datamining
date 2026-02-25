@@ -23,8 +23,8 @@ var i = n(627968),
     C = n(267102),
     E = n(246356),
     I = n(111162),
-    N = n(954571),
-    b = n(795816),
+    b = n(954571),
+    N = n(795816),
     S = n(887700),
     T = n(855446),
     y = n(652215),
@@ -58,27 +58,27 @@ function L(e) {
             }))[0]
         }),
         E = m === f.e.FETCHING,
-        N = s.useMemo(() => {
+        b = s.useMemo(() => {
             let e = C?.application_directory_collection_items[0];
             return null == e ? null : e.type === o.L.APPLICATION_BANNER ? e : null
         }, [C?.application_directory_collection_items]),
         {
-            trackItemImpressionRef: b
+            trackItemImpressionRef: N
         } = (0, p.A)({
-            applicationId: N?.application.id ?? "",
-            applicationFlags: N?.application.flags,
+            applicationId: b?.application.id ?? "",
+            applicationFlags: b?.application.flags,
             sectionName: "app_launcher_in_voice_banner",
-            sectionPosition: N?.position,
+            sectionPosition: b?.position,
             sectionOverallPosition: 0,
-            promotionalLabel: null != N ? (0, A.Ii)(N.application) : void 0
+            promotionalLabel: null != b ? (0, A.Ii)(b.application) : void 0
         });
-    return null == N || null == C || E ? null : (null != N.id && null != N.image_hash && (n = (0, x.DH)({
-        itemId: N.id,
-        hash: N.image_hash,
+    return null == b || null == C || E ? null : (null != b.id && null != b.image_hash && (n = (0, x.DH)({
+        itemId: b.id,
+        hash: b.image_hash,
         containerWidth: 584
     })), (0, i.jsxs)(d.DUT, {
         className: j.V8,
-        innerRef: b,
+        innerRef: N,
         onClick: () => {
             h(), (0, g.A)({
                 context: {
@@ -88,12 +88,12 @@ function L(e) {
                 openInPopout: a,
                 analyticsLocation: u.A.APP_LAUNCHER_IN_VOICE_BANNER,
                 initialState: {
-                    applicationId: N.application.id
+                    applicationId: b.application.id
                 }
             })
         },
         children: [(0, i.jsx)("img", {
-            alt: N.description,
+            alt: b.description,
             src: n,
             className: j.W_
         }), (0, i.jsx)("div", {
@@ -116,7 +116,7 @@ let M = s.forwardRef(function(e, t) {
         guild_id: f
     } = l;
     s.useEffect(() => {
-        N.default.track(y.HAw.ACTIVITIES_CENTER_CONTROL_TRAY_BUTTON_HOVERED, {
+        b.default.track(y.HAw.ACTIVITIES_CENTER_CONTROL_TRAY_BUTTON_HOVERED, {
             channel_id: _,
             guild_id: f
         })
@@ -133,7 +133,7 @@ let M = s.forwardRef(function(e, t) {
             guildId: n
         }).slice(0, 5));
     s.useEffect(() => {
-        let e = setTimeout(() => b.LK(), 1e3);
+        let e = setTimeout(() => N.LK(), 1e3);
         return () => clearTimeout(e)
     }, []);
     let G = s.useCallback(() => {
@@ -149,7 +149,7 @@ let M = s.forwardRef(function(e, t) {
             }), c(), A()
         }, [l, R, A, c, M]),
         U = s.useCallback(e => {
-            o(), N.default.track(y.HAw.ACTIVITIES_MINI_SHELF_HOVERED, {
+            o(), b.default.track(y.HAw.ACTIVITIES_MINI_SHELF_HOVERED, {
                 channel_id: l.id,
                 guild_id: l.getGuildId()
             })

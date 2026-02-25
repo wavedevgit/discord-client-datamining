@@ -31,8 +31,8 @@ function A(e) {
         specs: C,
         cornerIconUrl: E,
         cornerIconOffsetX: I,
-        cornerIconOffsetY: N,
-        ariaLabel: b
+        cornerIconOffsetY: b,
+        ariaLabel: N
     } = e, S = {
         width: (0, o.FT9)(n),
         height: (0, o.FT9)(n)
@@ -81,7 +81,7 @@ function A(e) {
                     rx: e.stroke,
                     fill: "black"
                 })
-            }(C, y, I, N)]
+            }(C, y, I, b)]
         }), (0, i.jsx)("foreignObject", {
             x: 0,
             y: 0,
@@ -105,7 +105,7 @@ function A(e) {
         onKeyDown: u,
         onMouseEnter: p ?? void 0,
         onMouseLeave: g ?? void 0,
-        "aria-label": b ?? void 0,
+        "aria-label": N ?? void 0,
         "aria-hidden": f,
         children: [t, v]
     }) : (0, i.jsxs)("div", {
@@ -115,7 +115,7 @@ function A(e) {
         onMouseEnter: p ?? void 0,
         onMouseLeave: g ?? void 0,
         role: "img",
-        "aria-label": b ?? void 0,
+        "aria-label": N ?? void 0,
         "aria-hidden": f,
         children: [t, v]
     })
@@ -200,7 +200,7 @@ function g(e) {
         cornerIconUrl: o,
         cornerIconOffsetX: d = 0,
         cornerIconOffsetY: p = 0
-    } = e, g = (0, s.useId)(), f = (0, s.useId)(), x = (0, u.Kj)(n), C = x.size + d, E = x.size + p, I = _(x, d, p), N = m(x, d, p);
+    } = e, g = (0, s.useId)(), f = (0, s.useId)(), x = (0, u.Kj)(n), C = x.size + d, E = x.size + p, I = _(x, d, p), b = m(x, d, p);
     return (0, i.jsx)(A, {
         ...e,
         ariaLabel: a,
@@ -230,9 +230,9 @@ function g(e) {
             }), (0, i.jsx)("mask", {
                 id: f,
                 children: (0, i.jsx)("circle", {
-                    cx: N.x + N.width / 2,
-                    cy: N.y + N.height / 2,
-                    r: N.width / 2,
+                    cx: b.x + b.width / 2,
+                    cy: b.y + b.height / 2,
+                    r: b.width / 2,
                     fill: "white"
                 })
             }), (0, i.jsx)("foreignObject", {
@@ -251,7 +251,7 @@ function g(e) {
                     })
                 }, t)
             }), null != o && (0, i.jsx)("foreignObject", {
-                ...N,
+                ...b,
                 mask: `url(#${f})`,
                 children: (0, i.jsx)("img", {
                     src: o,

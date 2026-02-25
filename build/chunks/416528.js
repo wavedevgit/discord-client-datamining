@@ -23,8 +23,8 @@ var i = n(627968),
     C = n(246356),
     E = n(977851),
     I = n(772475),
-    N = n(481947),
-    b = n(485296),
+    b = n(481947),
+    N = n(485296),
     S = n(313961),
     T = n(195007),
     y = n(806931),
@@ -35,9 +35,9 @@ function R(e) {
     let {
         channelId: t,
         guildId: n
-    } = e, s = (0, a.yK)([b.A, S.A], () => {
+    } = e, s = (0, a.yK)([N.A, S.A], () => {
         let e = Date.now();
-        return r()(b.A.getSpeakers()).map(e => S.A.getParticipant(t, e)).filter(e => null != e && e.type === y.lp.USER && e.speaking && !(0, _.Ay)(e)).sortBy(t => -b.A.getSpeakingDuration(t.user.id, e)).slice(0, 3).value()
+        return r()(N.A.getSpeakers()).map(e => S.A.getParticipant(t, e)).filter(e => null != e && e.type === y.lp.USER && e.speaking && !(0, _.Ay)(e)).sortBy(t => -N.A.getSpeakingDuration(t.user.id, e)).slice(0, 3).value()
     });
     return 0 === s.length ? null : (0, i.jsx)("div", {
         className: j.$U,
@@ -46,7 +46,7 @@ function R(e) {
             text: v.intl.formatToPlainString(v.t.JjdizN, {
                 username: e.user.username
             }),
-            children: (0, i.jsx)(N.Ay, {
+            children: (0, i.jsx)(b.Ay, {
                 user: e.user,
                 speaking: !0,
                 collapsed: !0,
@@ -64,8 +64,8 @@ function O(e) {
         analyticsLocations: r
     } = (0, u.Ay)(d.A.VOICE_CHANNEL_HEADER), o = t.id, {
         voiceParticipantsHidden: _,
-        selectedParticipant: N,
-        userParticipantCount: b
+        selectedParticipant: b,
+        userParticipantCount: N
     } = (0, a.cf)([S.A], () => ({
         selectedParticipant: S.A.getSelectedParticipant(o),
         voiceParticipantsHidden: S.A.getVoiceParticipantsHidden(o),
@@ -82,18 +82,18 @@ function O(e) {
     }, "current-speaker")), M.push((0, i.jsx)(A.A, {
         className: j.x6,
         channelId: o
-    }, "clips-enabled-indicator")), N?.type === y.lp.STREAM && (M.push((0, i.jsx)(f.A, {
+    }, "clips-enabled-indicator")), b?.type === y.lp.STREAM && (M.push((0, i.jsx)(f.A, {
         className: j.x6,
-        participant: N
+        participant: b
     }, "warning")), M.push((0, i.jsx)(p.A, {
         size: h.Ay.Sizes.LARGE,
         className: j.x6,
-        participant: N,
+        participant: b,
         showQuality: !0,
         premiumIndicator: !1
-    }, "live-indicator"))), N?.type === y.lp.USER && M.push((0, i.jsx)(x.A, {
+    }, "live-indicator"))), b?.type === y.lp.USER && M.push((0, i.jsx)(x.A, {
         className: j.x6,
-        userId: N.id
+        userId: b.id
     }, "video-warning")), _ && M.push((0, i.jsx)(c.YNO, {
         targetElementRef: l,
         position: "bottom",
@@ -110,7 +110,7 @@ function O(e) {
                 ...e,
                 buttonRef: l,
                 isActive: n,
-                count: b,
+                count: N,
                 key: "call-members",
                 className: j.x6
             })

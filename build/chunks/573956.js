@@ -1,7 +1,7 @@
 /** chunk id: 573956, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    G: () => N
+    G: () => b
 });
 var i = n(627968),
     s = n(64700),
@@ -24,19 +24,19 @@ var i = n(627968),
     E = n(790782),
     I = n(985018);
 
-function N(e) {
+function b(e) {
     let {
         guild: t,
-        selected: N
-    } = e, b = (0, h.A)(t), S = (0, d.JZ)(r.M.CHANNEL_BROWSER_NEW_BADGE_NUX), T = (0, l.yK)([A.A], () => Array.from(A.A.getNewChannelIds(t.id)).filter(e => A.A.shouldIndicateNewChannel(t.id, e))), y = (0, l.bG)([g.Ay], () => g.Ay.hasUnread(t.id, E.P.GUILD_ONBOARDING_QUESTION)), v = T.length > _.rR, j = (0, l.bG)([u.A, g.Ay], () => {
+        selected: b
+    } = e, N = (0, h.A)(t), S = (0, d.JZ)(r.M.CHANNEL_BROWSER_NEW_BADGE_NUX), T = (0, l.yK)([A.A], () => Array.from(A.A.getNewChannelIds(t.id)).filter(e => A.A.shouldIndicateNewChannel(t.id, e))), y = (0, l.bG)([g.Ay], () => g.Ay.hasUnread(t.id, E.P.GUILD_ONBOARDING_QUESTION)), v = T.length > _.rR, j = (0, l.bG)([u.A, g.Ay], () => {
         let e = u.A.lastFetchedAt(t.id),
             n = g.Ay.lastMessageId(t.id, E.P.GUILD_ONBOARDING_QUESTION);
         if (null == n) return !1;
         let i = m.default.extractTimestamp(n);
         return null != e && e > i
     }), R = s.useCallback(() => {
-        (0, p.pX)(x.BVt.CHANNEL(t.id, b ? C.VV.CUSTOMIZE_COMMUNITY : C.VV.CHANNEL_BROWSER))
-    }, [t.id, b]), O = s.useCallback(e => {
+        (0, p.pX)(x.BVt.CHANNEL(t.id, N ? C.VV.CUSTOMIZE_COMMUNITY : C.VV.CHANNEL_BROWSER))
+    }, [t.id, N]), O = s.useCallback(e => {
         (0, c.L3)(e, async () => {
             let {
                 default: e
@@ -47,7 +47,7 @@ function N(e) {
             })
         })
     }, [t]), L = null;
-    return S && !y && !v || N || j || (L = (0, i.jsx)(o.LpS, {
+    return S && !y && !v || b || j || (L = (0, i.jsx)(o.LpS, {
         color: a.A.colors.BADGE_BACKGROUND_BRAND.css,
         text: I.intl.string(I.t.y2b7CA)
     })), (0, i.jsx)(f.G, {
@@ -57,8 +57,8 @@ function N(e) {
             color: "currentColor",
             className: e
         }),
-        text: b ? I.intl.string(I.t.h9mGOP) : I.intl.string(I.t.et6wav),
-        selected: N,
+        text: N ? I.intl.string(I.t.h9mGOP) : I.intl.string(I.t.et6wav),
+        selected: b,
         onClick: R,
         onContextMenu: O,
         trailing: L

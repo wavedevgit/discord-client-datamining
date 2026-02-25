@@ -61,6 +61,7 @@ let b = e => {
             [f.ho]: a,
             [f.LM]: G
         }),
+        inert: !a,
         ref: O,
         children: (0, i.jsx)(c.hLv, {
             color: "nitro-pink",

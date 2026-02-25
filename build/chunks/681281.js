@@ -24,8 +24,8 @@ var s = n(503698),
     C = n(742589),
     E = n(353428),
     I = n(267102),
-    N = n(46054),
-    b = n(164203),
+    b = n(46054),
+    N = n(164203),
     S = n(665691),
     T = n(123973),
     y = n(241756),
@@ -178,7 +178,7 @@ function F(e) {
                     className: l()(w.Gh, k.PT, {
                         [w.BI]: G
                     }),
-                    children: N.A.parseVoiceChannelStatus(v, !0, {
+                    children: b.A.parseVoiceChannelStatus(v, !0, {
                         channelId: t.id
                     })
                 }), G && (0, i.jsx)(o.R2l, {
@@ -236,7 +236,7 @@ function F(e) {
                     channel: t
                 })]
             })
-        }), (0, i.jsx)(b.A, {
+        }), (0, i.jsx)(N.A, {
             channelId: t.id
         })]
     })

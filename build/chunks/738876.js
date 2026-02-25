@@ -27,7 +27,7 @@ let E = function(e) {
         style: n,
         channel: E,
         draftType: I
-    } = e, [N, b] = s.useState(!0), S = (0, l.bG)([u.A], () => u.A.hasLayers()), T = (0, l.bG)([h.A], () => null != E && h.A.can(x.xBc.ATTACH_FILES, E), [E]), y = null != (0, l.bG)([a.A], () => a.A.getActiveCommand(E.id)), v = E.getGuildId(), j = I === c.C.FirstThreadMessage, R = (0, r.vL)(E), O = s.useMemo(() => !S && (E.isPrivate() && !E.isManaged() || null != v && !R && T && d.A.canChatInGuild(v)), [T, R, E, v, S]), L = j ? x.kvI.GUILD_THREADS_ONLY.has(E.type) ? C.intl.string(C.t.RBBLhL) : C.intl.string(C.t.gUx4eu) : N ? C.intl.format(C.t.dYP2Fc, {
+    } = e, [b, N] = s.useState(!0), S = (0, l.bG)([u.A], () => u.A.hasLayers()), T = (0, l.bG)([h.A], () => null != E && h.A.can(x.xBc.ATTACH_FILES, E), [E]), y = null != (0, l.bG)([a.A], () => a.A.getActiveCommand(E.id)), v = E.getGuildId(), j = I === c.C.FirstThreadMessage, R = (0, r.vL)(E), O = s.useMemo(() => !S && (E.isPrivate() && !E.isManaged() || null != v && !R && T && d.A.canChatInGuild(v)), [T, R, E, v, S]), L = j ? x.kvI.GUILD_THREADS_ONLY.has(E.type) ? C.intl.string(C.t.RBBLhL) : C.intl.string(C.t.gUx4eu) : b ? C.intl.format(C.t.dYP2Fc, {
         destination: (0, o.m1)(E, p.default, A.A, !0)
     }) : C.intl.string(C.t.h76ulG);
     return y || !O ? null : (0, i.jsx)(_.A, {
@@ -39,14 +39,14 @@ let E = function(e) {
         onDrop: e => {
             if (y) return !1;
             O && null != E && ((0, m.R)(e, E, I, {
-                requireConfirm: N,
+                requireConfirm: b,
                 origin: "drag_drop"
             }), g._.dispatchToLastSubscribed(x.jej.TEXTAREA_FOCUS))
         },
-        onDragClear: () => b(!0),
+        onDragClear: () => N(!0),
         onDragOver: e => {
             if (y) return !1;
-            j || e.shiftKey !== N || b(!e.shiftKey)
+            j || e.shiftKey !== b || N(!e.shiftKey)
         }
     })
 }

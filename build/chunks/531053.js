@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
     Ay: () => E,
-    g4: () => N,
+    g4: () => b,
     qv: () => I
 });
 var i = n(627968),
@@ -161,7 +161,7 @@ function I(e) {
     })
 }
 
-function N(e) {
+function b(e) {
     let {
         children: t
     } = e, [, n] = (0, c.H)({

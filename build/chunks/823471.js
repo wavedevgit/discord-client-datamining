@@ -23,8 +23,8 @@ var i = n(627968),
     C = n(58736),
     E = n(378570),
     I = n(203982),
-    N = n(170428),
-    b = n(933057),
+    b = n(170428),
+    N = n(933057),
     S = n(747926),
     T = n(652215),
     y = n(985018);
@@ -74,7 +74,7 @@ function j(e) {
         channel: t,
         closePopout: n,
         onSelect: s
-    } = e, x = (0, c.A)(t, "Sidebar Overflow"), C = (0, u.A)(t), N = (0, g.A)(t), b = (0, m.A)(t), S = (0, r.A)(t), v = (0, d.A)(t), j = (0, p.A)(t.id), R = (0, A.A)(t), O = (0, o.A)(t), L = (0, a.A)(t), M = (0, f.A)({
+    } = e, x = (0, c.A)(t, "Sidebar Overflow"), C = (0, u.A)(t), b = (0, g.A)(t), N = (0, m.A)(t), S = (0, r.A)(t), v = (0, d.A)(t), j = (0, p.A)(t.id), R = (0, A.A)(t), O = (0, o.A)(t), L = (0, a.A)(t), M = (0, f.A)({
         id: t.id,
         label: y.intl.string(y.t.DQ797g)
     }), D = (0, _.A)(t), G = (0, h.A)(t);
@@ -95,7 +95,7 @@ function j(e) {
                 action: U
             })]
         }), (0, i.jsxs)(l.rXV, {
-            children: [N, b]
+            children: [b, N]
         }), (0, i.jsxs)(l.rXV, {
             children: [R, C, j, G]
         }), (0, i.jsxs)(l.rXV, {
@@ -140,9 +140,9 @@ function R(e) {
         baseChannelId: n
     } = e;
     return (0, i.jsxs)(i.Fragment, {
-        children: [t.isForumPost() ? null : (0, i.jsx)(b.A, {
+        children: [t.isForumPost() ? null : (0, i.jsx)(N.A, {
             channel: t
-        }), t.isModeratorReportChannel() ? (0, i.jsx)(N.A, {
+        }), t.isModeratorReportChannel() ? (0, i.jsx)(b.A, {
             channel: t
         }) : null, (0, i.jsx)(v, {
             channel: t

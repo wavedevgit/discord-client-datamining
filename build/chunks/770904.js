@@ -25,7 +25,7 @@ let E = s.memo(function(e) {
     let {
         guildId: t,
         selected: n
-    } = e, E = (0, a.useHasAnyModalOpen)(), I = (0, l.bG)([A.A], () => A.A.hasLayers()), N = (0, u.xr)(e => e.fullScreenLayers.length > 0), [b, S] = (0, c.ww)([r.M.GAME_SERVER_HOSTING_NEW_BADGE], t), T = b === r.M.GAME_SERVER_HOSTING_NEW_BADGE, [y, v] = (0, c.ww)(E || I || N || !T ? [] : [r.M.GAME_SERVER_HOSTING_NEW_COACHMARK], t), j = s.useCallback(e => {
+    } = e, E = (0, a.useHasAnyModalOpen)(), I = (0, l.bG)([A.A], () => A.A.hasLayers()), b = (0, u.xr)(e => e.fullScreenLayers.length > 0), [N, S] = (0, c.ww)([r.M.GAME_SERVER_HOSTING_NEW_BADGE], t), T = N === r.M.GAME_SERVER_HOSTING_NEW_BADGE, [y, v] = (0, c.ww)(E || I || b || !T ? [] : [r.M.GAME_SERVER_HOSTING_NEW_COACHMARK], t), j = s.useCallback(e => {
         S(e), v(e)
     }, [S, v]), R = s.useCallback(() => {
         j(_.i.USER_DISMISS), (0, h.pX)(g.BVt.CHANNEL(t, m.VV.GAME_SERVERS))

@@ -23,8 +23,8 @@ var i = n(627968),
     C = n(954571),
     E = n(272812),
     I = n(652215),
-    N = n(985018),
-    b = n(556614),
+    b = n(985018),
+    N = n(556614),
     S = n(867010);
 
 function T(e) {
@@ -70,10 +70,10 @@ function y(e) {
     return (0, i.jsx)(g.f5, {
         value: l,
         children: (0, i.jsxs)(E.A, {
-            className: b.zr,
+            className: N.zr,
             children: [(0, i.jsx)(c.m, {
                 asContainer: !0,
-                text: N.intl.string(N.t.qJvTKQ),
+                text: b.intl.string(b.t.qJvTKQ),
                 children: (0, i.jsx)(d.DUT, {
                     onClick: () => {
                         (0, m.A)({
@@ -87,9 +87,9 @@ function y(e) {
                             analyticsLocation: a
                         })
                     },
-                    className: b.F1,
+                    className: N.F1,
                     children: (0, i.jsx)("div", {
-                        className: b.zc,
+                        className: N.zc,
                         children: (0, i.jsx)(d.k9F, {
                             size: "custom",
                             color: "currentColor",
@@ -102,11 +102,11 @@ function y(e) {
                 theme: I.NJ8.DARK,
                 children: e => (0, i.jsx)(d.DUT, {
                     onClick: s,
-                    className: r()(e, b.lg),
+                    className: r()(e, N.lg),
                     children: (0, i.jsx)(d.aXh, {
                         size: "md",
                         color: "currentColor",
-                        className: b.yP,
+                        className: N.yP,
                         secondaryColor: o.A.colors.INTERACTIVE_TEXT_DEFAULT.css
                     })
                 })
@@ -166,10 +166,10 @@ function v(e) {
             disableAdaptiveTheme: !0,
             theme: I.NJ8.MIDNIGHT,
             children: e => (0, i.jsxs)(E.A, {
-                className: r()(b.zr, b.co, e),
+                className: r()(N.zr, N.co, e),
                 children: [(0, i.jsx)("img", {
                     src: S,
-                    className: b.Qw,
+                    className: N.Qw,
                     alt: ""
                 }), (0, i.jsxs)(d.ButtonGroup, {
                     justify: "center",
@@ -177,12 +177,12 @@ function v(e) {
                     children: [(0, i.jsx)(d.Button, {
                         variant: "secondary",
                         icon: d.Rvf,
-                        text: N.intl.string(N.t["EE+P0H"]),
+                        text: b.intl.string(b.t["EE+P0H"]),
                         onClick: u
                     }), (0, i.jsx)(d.Button, {
                         variant: "secondary",
                         icon: d.k9F,
-                        text: N.intl.string(N.t.qnFavR),
+                        text: b.intl.string(b.t.qnFavR),
                         onClick: h
                     })]
                 })]
@@ -218,24 +218,24 @@ function j(e) {
     return (0, i.jsx)(g.f5, {
         value: S,
         children: (0, i.jsxs)(E.A, {
-            className: b.zr,
+            className: N.zr,
             children: [o > 300 ? (0, i.jsx)(d.Text, {
-                className: b.R_,
+                className: N.R_,
                 variant: o > 550 ? "text-md/semibold" : "text-sm/semibold",
-                children: N.intl.string(N.t["7BKMcG"])
+                children: b.intl.string(b.t["7BKMcG"])
             }) : null, (0, i.jsx)("div", {
-                className: r()(b.Di, {
-                    [b.qy]: o <= 300
+                className: r()(N.Di, {
+                    [N.qy]: o <= 300
                 }),
                 children: m.map(e => (0, i.jsx)(A.C, {
                     context: T,
                     activityItem: e,
                     aspectRatio: A.C.AspectRatio.SIXTEEN_BY_NINE,
-                    animatedDivClass: b.KU,
+                    animatedDivClass: N.KU,
                     commandOrigin: _.iw.VOICE_TILE_ACTIVITY_SUGGESTIONS
                 }, e.application.id))
             }), (0, i.jsxs)(d.DUT, {
-                className: b.HI,
+                className: N.HI,
                 onClick: function() {
                     C.default.track(I.HAw.VC_TILE_ACTIVITIES_ENTRY_POINT_CLOSED, {
                         tile_type: "activity suggestion",
@@ -245,10 +245,10 @@ function j(e) {
                 },
                 children: [(0, i.jsx)(x.A, {}), (0, i.jsx)(d.Text, {
                     variant: "text-sm/medium",
-                    children: N.intl.string(N.t["5E9SB9"])
+                    children: b.intl.string(b.t["5E9SB9"])
                 })]
             }), (0, i.jsx)(d.DUT, {
-                className: b.cG,
+                className: N.cG,
                 onClick: function() {
                     C.default.track(I.HAw.VC_TILE_ACTIVITIES_ENTRY_POINT_CLOSED, {
                         tile_type: "activity suggestion",
@@ -259,7 +259,7 @@ function j(e) {
                 children: (0, i.jsx)(d.PGe, {
                     size: "md",
                     color: "currentColor",
-                    className: b.b
+                    className: N.b
                 })
             })]
         })

@@ -172,7 +172,7 @@ let z = e => {
                 churnDiscountOffer: en,
                 discountedPrice: ec
             })]
-        }), (0, i.jsx)(M.A, {
+        }), !n && (0, i.jsx)(M.A, {
             isAllPerksVisible: es,
             setIsAllPerksVisible: ea,
             previousComponent: v.A2.HOME,

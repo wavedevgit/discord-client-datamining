@@ -29,16 +29,16 @@ let A = s.forwardRef(function(e, t) {
         skuProductLine: C
     } = _, {
         trackUserProfileWishlistAction: E
-    } = (0, d.NJ)(), I = l ? h.ho : h.C8, N = g ? h.pr : h.Nr, b = null != p && p > 0, S = (0, i.jsxs)(o.DUT, {
+    } = (0, d.NJ)(), I = l ? h.ho : h.C8, b = g ? h.pr : h.Nr, N = null != p && p > 0, S = (0, i.jsxs)(o.DUT, {
         onClick: () => {
             n(), E({
-                action: b ? "PRESS_WISHLIST_BREADCRUMB_OVERFLOW_CARD" : "PRESS_WISHLIST_BREADCRUMB_CARD",
-                skuId: b ? null : x,
+                action: N ? "PRESS_WISHLIST_BREADCRUMB_OVERFLOW_CARD" : "PRESS_WISHLIST_BREADCRUMB_CARD",
+                skuId: N ? null : x,
                 wishlistId: m,
                 productLines: new Set([C])
             })
         },
-        className: r()(N, {
+        className: r()(b, {
             [h.ax]: f === u.Y.SMALL
         }),
         "aria-label": s.title ?? "",
@@ -46,7 +46,7 @@ let A = s.forwardRef(function(e, t) {
         children: [(0, i.jsx)("div", {
             className: I,
             children: A()
-        }), b && (0, i.jsx)("div", {
+        }), N && (0, i.jsx)("div", {
             className: h.sv,
             children: (0, i.jsxs)(o.Text, {
                 variant: "text-xs/medium",

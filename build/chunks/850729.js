@@ -23,8 +23,8 @@ var i = n(627968),
     C = n(619921),
     E = n(194871),
     I = n(966846),
-    N = n(674378),
-    b = n(87941),
+    b = n(674378),
+    N = n(87941),
     S = n(941971),
     T = n(900848),
     y = n(550591),
@@ -54,8 +54,8 @@ function G(e) {
         badge: r,
         link: u,
         showProgressBadge: A
-    } = e, [p, _] = s.useState(!1), [f, x] = s.useState(!1), [C, E] = s.useState(null), [I, N] = s.useState(0), b = (0, l.Vd)("home"), R = (0, h.fy)().activePanel === h.HP.APP_ICON, G = () => {
-        E(null), N(0), clearTimeout(C)
+    } = e, [p, _] = s.useState(!1), [f, x] = s.useState(!1), [C, E] = s.useState(null), [I, b] = s.useState(0), N = (0, l.Vd)("home"), R = (0, h.fy)().activePanel === h.HP.APP_ICON, G = () => {
+        E(null), b(0), clearTimeout(C)
     };
     if (null == n) return null;
     let U = L.intl.string(L.t.YUU0RF);
@@ -77,7 +77,7 @@ function G(e) {
                 onMouseEnter: () => _(!0),
                 onMouseLeave: () => _(!1),
                 onClick: () => {
-                    if (!__OVERLAY__ && (null != C && clearTimeout(C), E(setTimeout(G, 500)), N(I + 1), 15 === I)) {
+                    if (!__OVERLAY__ && (null != C && clearTimeout(C), E(setTimeout(G, 500)), b(I + 1), 15 === I)) {
                         G();
                         let e = !a.w.get(j.wqg);
                         a.w.set(j.wqg, e), e && a.w.set(O.L, !0), e ? (0, g.Ak)("discodo") : (0, g.Ak)("user_leave"), x(!0), setTimeout(() => {
@@ -89,7 +89,7 @@ function G(e) {
                 ariaLabel: L.intl.string(L.t.YUU0RF),
                 "aria-owns": "guild-list-unread-dms",
                 "aria-selected": t,
-                ...b,
+                ...N,
                 to: {
                     pathname: u,
                     state: {
@@ -126,14 +126,14 @@ function G(e) {
 }
 
 function U() {
-    let e = (0, b.q)(),
+    let e = (0, N.q)(),
         t = (0, r.bG)([I.A, E.A], () => {
             let e = (0, c.v)(I.A.activeItems, E.A),
                 {
                     total: t,
                     progress: n
-                } = N.zY(e),
-                i = N.uA(n, t);
+                } = b.zY(e),
+                i = b.uA(n, t);
             return i > 0 && i < 100
         }),
         n = (0, p.kX)(),

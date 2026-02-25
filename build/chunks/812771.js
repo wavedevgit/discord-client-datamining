@@ -67,10 +67,10 @@ function f(e) {
     }, [f]), I = (0, p.P)({
         maxWidth: n,
         minWidth: 450
-    }), N = (0, d.rdh)(c.A.modules.chat.RESIZE_HANDLE_WIDTH), b = (0, o.clamp)(x, 450, n), S = I ? b : b + N;
+    }), b = (0, d.rdh)(c.A.modules.chat.RESIZE_HANDLE_WIDTH), N = (0, o.clamp)(x, 450, n), S = I ? N : N + b;
     l.useEffect(() => {
-        i?.(b, I)
-    }, [b, i, I]);
+        i?.(N, I)
+    }, [N, i, I]);
     let T = h ?? l.Fragment;
     return (0, s.jsxs)(s.Fragment, {
         children: [!I && (0, s.jsx)("div", {
@@ -102,7 +102,7 @@ function f(e) {
                         [g.DU]: I
                     }),
                     style: {
-                        width: b
+                        width: N
                     },
                     children: r
                 })]

@@ -1,6 +1,6 @@
 /** chunk id: 599466, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    default: () => P
+    default: () => L
 });
 var a = n(627968),
     l = n(64700),
@@ -24,23 +24,23 @@ var a = n(627968),
     b = n(181435),
     N = n(78878),
     I = n(729292),
-    S = n(833551),
-    G = n(395011),
+    G = n(833551),
+    S = n(395011),
     E = n(127242),
     j = n(680243),
     k = n(554311),
     w = n(652215),
     T = n(985018),
-    D = n(977522);
+    C = n(977522);
 
-function C(e, t) {
+function D(e, t) {
     return r()(e, t)
 }
-let O = new Set([m.aI.BORDERLESS_FULLSCREEN, m.aI.FULLSCREEN, m.aI.WINDOWED, m.aI.MAXIMIZED, m.aI.MINIMIZED, m.aI.UNKNOWN]),
-    M = {
+let M = new Set([m.aI.BORDERLESS_FULLSCREEN, m.aI.FULLSCREEN, m.aI.WINDOWED, m.aI.MAXIMIZED, m.aI.MINIMIZED, m.aI.UNKNOWN]),
+    O = {
         HandleFocusChanged: (e, t) => {
             if (!(0, b.$8)(e, "HandleFocusChanged")) return !0;
-            let n = null != t ? G.A.getKnownWindowHandlesForPID(t) ?? new Set : new Set,
+            let n = null != t ? S.A.getKnownWindowHandlesForPID(t) ?? new Set : new Set,
                 {
                     focusedPid: a,
                     focusedWindowHandle: l
@@ -49,7 +49,7 @@ let O = new Set([m.aI.BORDERLESS_FULLSCREEN, m.aI.FULLSCREEN, m.aI.WINDOWED, m.a
         },
         EventHook: (e, t) => {
             if (!(0, b.$8)(e, "EventHook")) return !0;
-            let n = null != t ? G.A.getKnownWindowHandlesForPID(t) ?? new Set : new Set;
+            let n = null != t ? S.A.getKnownWindowHandlesForPID(t) ?? new Set : new Set;
             try {
                 let {
                     receivedWindow: a,
@@ -62,13 +62,13 @@ let O = new Set([m.aI.BORDERLESS_FULLSCREEN, m.aI.FULLSCREEN, m.aI.WINDOWED, m.a
         }
     };
 
-function P(e) {
+function L(e) {
     let {
         onClose: t,
         transitionState: i,
         location: r,
-        appContext: P
-    } = e, R = (0, u.bG)([v.default], () => v.default.getFocusedPID()) ?? (0, x.getPID)(), L = (0, u.bG)([S.default], () => S.default.getTrackedGameByPid(R), [R]), [F, U] = l.useState(null), [W, B] = l.useState(""), K = (0, k.tX)(), [Z, q] = l.useState(K?.fullscreenType ?? L?.fullscreenType ?? null), [H, z] = l.useState(K), [J, X] = l.useState(!1), [Q, Y] = l.useState(!1), [$, V] = l.useState(!1), {
+        appContext: L
+    } = e, P = (0, u.bG)([v.default], () => v.default.getFocusedPID()) ?? (0, x.getPID)(), R = (0, u.bG)([G.default], () => G.default.getTrackedGameByPid(P), [P]), [F, U] = l.useState(null), [W, K] = l.useState(""), B = (0, k.tX)(), [Z, q] = l.useState(B?.fullscreenType ?? R?.fullscreenType ?? null), [H, z] = l.useState(B), [J, X] = l.useState(!1), [Q, Y] = l.useState(!1), [$, V] = l.useState(!1), {
         nativeState: ee,
         breadcrumbs: [et]
     } = ((0, g.Ay)(() => (c.A.setModuleLogging(!0), c.A.setStateDebugging(!0), () => {
@@ -76,7 +76,7 @@ function P(e) {
     })), (0, u.bG)([E.A], () => ({
         nativeState: E.A.getDebuggingState(),
         breadcrumbs: E.A.getOverlayLoggingBreadcrumbs()
-    }), [], C)), en = l.useMemo(() => {
+    }), [], D)), en = l.useMemo(() => {
         let e = {
             game_crashes_occurred: T.t["1UWmCV"],
             poor_performance: T.t["4owu+4"],
@@ -101,7 +101,7 @@ function P(e) {
             [m.aI.MAXIMIZED]: T.t["MUX2+G"],
             [m.aI.UNKNOWN]: T.t.QPOep8
         };
-        return [...O].map(t => ({
+        return [...M].map(t => ({
             id: t.toString(),
             label: T.intl.string(e[t]),
             value: t
@@ -115,12 +115,12 @@ function P(e) {
         }
         X(!0);
         let e = v.default.getFocusedPID() ?? (0, x.getPID)(),
-            l = S.default.getTrackedGameByPid(e),
-            i = G.A.getPopoutInitializationStages(),
+            l = G.default.getTrackedGameByPid(e),
+            i = S.A.getPopoutInitializationStages(),
             s = l?.overlayMethod != null ? A.Ue[l.overlayMethod] : null,
             u = l?.fullscreenType ?? m.aI.UNKNOWN,
             c = (0, b.tn)(et, t => {
-                for (let n of Object.values(M)) try {
+                for (let n of Object.values(O)) try {
                     if (!n(t, e)) return !1
                 } catch (e) {
                     return !1
@@ -164,7 +164,7 @@ function P(e) {
                 ...t
             })
         }, {
-            contextKey: (0, d.TId)(P)
+            contextKey: (0, d.TId)(L)
         })
     };
     return (0, g.Ay)(() => {
@@ -188,9 +188,9 @@ function P(e) {
         }],
         onClose: t,
         children: (0, a.jsxs)("div", {
-            className: D.jE,
+            className: C.jE,
             children: [(0, a.jsxs)("div", {
-                className: D.DB,
+                className: C.DB,
                 children: [(0, a.jsx)(d.bfh, {
                     isShaking: Q,
                     intensity: 1.5,
@@ -216,7 +216,7 @@ function P(e) {
                     children: T.intl.string(T.t["5cqa9J"])
                 })]
             }), (0, a.jsxs)("div", {
-                className: D.DB,
+                className: C.DB,
                 children: [(0, a.jsx)(d.Text, {
                     variant: "text-md/medium",
                     color: "text-strong",
@@ -227,16 +227,16 @@ function P(e) {
                     maxLength: 1e3,
                     showCharacterCount: !1,
                     placeholder: T.intl.string(T.t["68mJXW"]),
-                    onChange: B
+                    onChange: K
                 }), (0, a.jsx)(d.Text, {
                     variant: "text-xs/normal",
                     color: "text-muted",
                     children: T.intl.string(T.t.TzkM2a)
                 })]
             }), (0, a.jsx)("div", {
-                className: D.hr
+                className: C.hr
             }), (0, a.jsxs)("div", {
-                className: D.DB,
+                className: C.DB,
                 children: [(0, a.jsx)(d.Text, {
                     variant: "text-md/medium",
                     color: "text-strong",

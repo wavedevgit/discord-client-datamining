@@ -1,7 +1,7 @@
 /** chunk id: 766319, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => N
+    A: () => b
 });
 var i = n(627968),
     s = n(64700),
@@ -91,15 +91,15 @@ function I(e) {
     }
 }
 
-function N(e) {
+function b(e) {
     let {
         userId: t,
         channel: n
     } = e, o = (0, a.bG)([g.default], () => g.default.getUser(t)), c = (0, _.Ay)(t, n.guild_id), u = (0, m.A)(t, n.id), p = s.useMemo(() => l.uniqWith(c, (e, t) => {
         if (e.application_id === t.application_id) return !0;
-        let n = A.A.getGameByName_DEPRECATED_DO_NOT_USE(e.name),
-            i = A.A.getGameByName_DEPRECATED_DO_NOT_USE(t.name);
-        return null != n && n === i || e.name === t.name
+        let n = A.A.searchGamesByName(e.name),
+            i = new Set(A.A.searchGamesByName(t.name));
+        return !!(n.length > 0 && n.length === i.size && n.every(e => i.has(e))) || e.name === t.name
     }), [c]), f = null == o || !u || 0 === p.length;
     return ((0, d.A)({
         type: r.ImpressionTypes.POPOUT,

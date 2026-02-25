@@ -23,8 +23,8 @@ var i = n(627968),
     C = n(998218),
     E = n(245205),
     I = n(322387),
-    N = n(995273),
-    b = n(96511),
+    b = n(995273),
+    N = n(96511),
     S = n(160098),
     T = n(429604),
     y = n(9905),
@@ -147,7 +147,7 @@ let k = s.memo(function(e) {
             applicationId: t.applicationId
         }));
         let m = null != t.local_id,
-            _ = (0, b.A)({
+            _ = (0, N.A)({
                 item: t,
                 renderApplication: e => (0, i.jsx)(w, {
                     applicationId: e
@@ -190,7 +190,7 @@ let k = s.memo(function(e) {
                     }) : null, (0, i.jsx)(r.Text, {
                         variant: "text-xs/medium",
                         color: d ? "text-muted" : "text-default",
-                        children: (0, N.jb)(x.default.extractTimestamp(t.id))
+                        children: (0, b.jb)(x.default.extractTimestamp(t.id))
                     }), g]
                 })]
             }), m ? null : (0, i.jsx)(j.e, {

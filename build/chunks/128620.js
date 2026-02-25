@@ -13,8 +13,8 @@ var n = r(627968),
     c = r(241524),
     m = r(736653),
     h = r(607470),
-    p = r(649032),
-    x = r(320118),
+    x = r(649032),
+    p = r(320118),
     f = r(976860),
     g = r(780964),
     _ = r(840065),
@@ -42,7 +42,7 @@ let L = e => {
     } = e, {
         passesGeneralUIInvariant: r,
         programReward: l
-    } = (0, x.F)({
+    } = (0, p.F)({
         location: "PremiumTenureRewardsOrbsCard"
     }), N = R.m.useConfig({
         location: "PremiumTenureRewardsOrbsCard"
@@ -57,7 +57,7 @@ let L = e => {
             a = null != e.next_reward_date && "" !== e.next_reward_date ? (0, i.default)(new Date(e.next_reward_date), new Date) : null,
             l = e?.total_rewarded_from_program;
         switch (r) {
-            case p.L.ACTIVE:
+            case x.L.ACTIVE:
                 if (null == a || a < 0) return null;
                 return {
                     displayTotalLifetimeRewards: null != l, displayProgressBar: !0, actionButton: (0, n.jsx)(d.$nd, {
@@ -73,7 +73,7 @@ let L = e => {
                         helpdeskArticle: () => w(r)
                     })
                 };
-            case p.L.PAYMENT_PROCESSING:
+            case x.L.PAYMENT_PROCESSING:
                 return {
                     displayTotalLifetimeRewards: !1, displayProgressBar: !1, actionButton: (0, n.jsx)(d.$nd, {
                         text: P.intl.string(j.default.KVCfnE),
@@ -87,7 +87,7 @@ let L = e => {
                         helpdeskArticle: () => w(r)
                     })
                 };
-            case p.L.PAYMENT_ERROR:
+            case x.L.PAYMENT_ERROR:
                 return {
                     displayTotalLifetimeRewards: null != l, displayProgressBar: !1, actionButton: (0, n.jsx)(d.NPJ, {
                         theme: t ? A.NJ8.DARKER : void 0,
@@ -107,7 +107,7 @@ let L = e => {
                         helpdeskArticle: () => w(r)
                     })
                 };
-            case p.L.PROGRAM_ROLLBACK:
+            case x.L.PROGRAM_ROLLBACK:
                 return {
                     displayTotalLifetimeRewards: null != l, displayProgressBar: null != a, actionButton: (0, n.jsx)(d.$nd, {
                         text: P.intl.string(j.default["wLAd/+"]),
@@ -119,7 +119,7 @@ let L = e => {
                         helpdeskArticle: () => w(r)
                     })
                 };
-            case p.L.PREMIUM_CHURNING:
+            case x.L.PREMIUM_CHURNING:
                 return {
                     displayTotalLifetimeRewards: null != l, displayProgressBar: null != a, actionButton: (0, n.jsx)(d.$nd, {
                         text: P.intl.string(j.default.FToh6D),

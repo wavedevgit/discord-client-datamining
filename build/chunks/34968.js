@@ -1,8 +1,8 @@
 /** chunk id: 34968, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    CJ: () => N,
-    dY: () => b,
+    CJ: () => b,
+    dY: () => N,
     y8: () => S
 });
 var i = n(774603),
@@ -28,12 +28,12 @@ var i = n(774603),
 function I() {
     for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
     return t.map(e => {
-        let t = N[e];
+        let t = b[e];
         if (null == t) throw Error(`getBindsFor(...): No bind for ${t}`);
         return t.binds[0]
     })
 }
-let N = {
+let b = {
         [C.IWg.SERVER_NEXT]: A.yx,
         [C.IWg.SERVER_PREV]: A.yv,
         [C.IWg.CHANNEL_NEXT]: s.kF,
@@ -63,7 +63,7 @@ let N = {
         [C.IWg.CALL_START]: i.OX,
         [C.IWg.QUICKSWITCHER_SHOW]: c.R
     },
-    b = {
+    N = {
         [C.IWg.QUICKSWITCHER_SHOW]: c.R
     };
 

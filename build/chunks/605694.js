@@ -26,14 +26,14 @@ var i = n(627968),
     T = n(61266),
     b = n(731068),
     y = n(619517),
-    N = n(339580),
-    S = n(961350),
+    S = n(339580),
+    N = n(961350),
     C = n(760751),
     k = n(403362),
     R = n(183555),
     O = n(622543),
-    L = n(466853),
-    w = n(985018),
+    w = n(466853),
+    L = n(985018),
     P = n(935454);
 let D = /{{(.*?)}}/g,
     G = {
@@ -451,7 +451,7 @@ function J(e) {
             children: [e.showSuggestedForYou && (0, i.jsx)(d.Text, {
                 variant: "text-xs/medium",
                 color: "text-default",
-                children: w.intl.string(w.t.zMUr6Z)
+                children: L.intl.string(L.t.zMUr6Z)
             }), (0, i.jsx)(d.Heading, {
                 variant: "heading-sm/medium",
                 color: "text-default",
@@ -482,7 +482,7 @@ let Q = Object.assign(function(e) {
             cta: T,
             subtle: y = !1
         } = e,
-        D = (0, c.bG)([S.default], () => S.default.getId()) === v.id,
+        D = (0, c.bG)([N.default], () => N.default.getId()) === v.id,
         M = (0, h.h)(E.applicationId),
         F = M?.getIconURL(16),
         W = (0, c.bG)([C.A], () => null != M ? C.A.getGameByApplication(M) : null),
@@ -539,7 +539,7 @@ let Q = Object.assign(function(e) {
             isLoading: en,
             hasData: ei,
             components: el
-        } = (t = v.id, n = E.applicationId, a = (0, f.A)(), r = (0, c.bG)([N.A], () => N.A.getUserIdentityByApplication(t, n)), u = (0, c.bG)([O.A], () => O.A.getApplicationWidgetConfig(n)), p = (0, c.bG)([N.A, O.A], () => null == N.A.getUserIdentities(t) || null == O.A.applicationWidgetConfigs), I = l.useMemo(() => {
+        } = (t = v.id, n = E.applicationId, a = (0, f.A)(), r = (0, c.bG)([S.A], () => S.A.getUserIdentityByApplication(t, n)), u = (0, c.bG)([O.A], () => O.A.getApplicationWidgetConfig(n)), p = (0, c.bG)([S.A, O.A], () => null == S.A.getUserIdentities(t) || null == O.A.applicationWidgetConfigs), I = l.useMemo(() => {
             var e, t;
             if (null == u) return null;
             let n = G[u.widgetTemplateId];
@@ -613,7 +613,7 @@ let Q = Object.assign(function(e) {
             hasData: null != r,
             components: I
         });
-    return null == el ? null : (0, i.jsxs)(L.A, {
+    return null == el ? null : (0, i.jsxs)(w.A, {
         ...e,
         userId: v.id,
         widget: E,
@@ -640,13 +640,13 @@ let Q = Object.assign(function(e) {
                 }), (0, i.jsx)(d.Text, {
                     variant: "text-sm/medium",
                     color: "text-subtle",
-                    children: w.intl.string(w.t.z5K4Uv)
+                    children: L.intl.string(L.t.z5K4Uv)
                 })]
             }), $ ? (0, i.jsx)(J, {
-                heading: w.intl.string(w.t.UDPRLO),
-                content: w.intl.string(w.t["OW/2al"]),
+                heading: L.intl.string(L.t.UDPRLO),
+                content: L.intl.string(L.t["OW/2al"]),
                 buttons: (0, i.jsx)(d.Button, {
-                    text: w.intl.string(w.t.S0W8Z5),
+                    text: L.intl.string(L.t.S0W8Z5),
                     onClick: Z
                 })
             }) : T]

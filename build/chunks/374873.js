@@ -23,8 +23,8 @@ var i = n(627968),
     C = n(576705),
     E = n(290863),
     I = n(849736),
-    N = n(113783),
-    b = n(925931),
+    b = n(113783),
+    N = n(925931),
     S = n(105530),
     T = n(699970),
     y = n(345687),
@@ -65,17 +65,17 @@ let O = s.memo(function(e) {
             let e = setTimeout(() => C(!1), 1e3);
             return () => clearTimeout(e)
         });
-        let N = t.getGuildId();
-        o()(null != N, "Channel cannot be guildless");
+        let b = t.getGuildId();
+        o()(null != b, "Channel cannot be guildless");
         let {
             isMobile: T,
             status: y
         } = (0, c.cf)([E.A], () => ({
             isMobile: E.A.isMobileOnline(l.user.id),
-            status: E.A.getStatus(l.user.id, N)
-        })), v = (0, c.bG)([x.Ay], () => x.Ay.getMember(N, l.user.id)), O = (0, _.gn)(t.guild_id, v?.userId, v?.colorStrings ?? null), L = s.useMemo(() => ({
-            [N]: [l.user.id]
-        }), [N, l.user.id]);
+            status: E.A.getStatus(l.user.id, b)
+        })), v = (0, c.bG)([x.Ay], () => x.Ay.getMember(b, l.user.id)), O = (0, _.gn)(t.guild_id, v?.userId, v?.colorStrings ?? null), L = s.useMemo(() => ({
+            [b]: [l.user.id]
+        }), [b, l.user.id]);
         (0, g.E)(L, "RequestToSpeakSidebar");
         let M = l.rtsState === S.zF.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK,
             D = e => {
@@ -86,7 +86,7 @@ let O = s.memo(function(e) {
                     return n => (0, i.jsx)(e, {
                         ...n,
                         user: l.user,
-                        guildId: N,
+                        guildId: b,
                         channel: t,
                         showMediaItems: !0
                     })
@@ -123,7 +123,7 @@ let O = s.memo(function(e) {
                         }), (0, i.jsx)(u.Text, {
                             variant: "text-xs/normal",
                             color: "text-default",
-                            children: (0, b.g)(l)
+                            children: (0, N.g)(l)
                         })]
                     })]
                 })
@@ -188,7 +188,7 @@ function G(e) {
         channel: t,
         toggleRequestToSpeakSidebar: n,
         chatOpen: s
-    } = e, l = (0, N.J2)(t.id), a = [+!!(0, c.bG)([C.A], () => C.A.can(v.xB.MANAGE_CHANNELS, t) || C.A.can(v.xB.MANAGE_ROLES, t)), Math.max(1, l.length)];
+    } = e, l = (0, b.J2)(t.id), a = [+!!(0, c.bG)([C.A], () => C.A.can(v.xB.MANAGE_CHANNELS, t) || C.A.can(v.xB.MANAGE_ROLES, t)), Math.max(1, l.length)];
     return (0, i.jsxs)("div", {
         className: r()(R.kL, {
             [R.X_]: s

@@ -1,7 +1,7 @@
 /** chunk id: 194509, original params: e,t,r (module,exports,require) **/
 r.d(t, {
-    A: () => x,
-    U: () => p
+    A: () => p,
+    U: () => x
 });
 var n = r(627968);
 r(64700);
@@ -15,22 +15,22 @@ var a = r(503698),
     c = r(788868),
     m = r(985018),
     h = r(975347);
-let p = e => e === c.pe.TIER_0 ? m.intl.string(m.t.rk4Uu8) : m.intl.string(m.t.Ve9Ge6),
-    x = e => {
+let x = e => e === c.pe.TIER_0 ? m.intl.string(m.t.rk4Uu8) : m.intl.string(m.t.Ve9Ge6),
+    p = e => {
         let {
             className: t,
             textOptions: r,
             color: a,
             look: c,
             hideIcon: m,
-            subscriptionTier: x,
+            subscriptionTier: p,
             premiumModalAnalyticsLocation: f,
             giftMessage: g,
             onClick: _
-        } = e, N = (0, u.Ay)(), b = p(x);
+        } = e, N = (0, u.Ay)(), b = x(p);
         return (0, n.jsx)(o.A, {
             isGift: !0,
-            subscriptionTier: x,
+            subscriptionTier: p,
             premiumModalAnalyticsLocation: f,
             giftMessage: g,
             onClick: _,

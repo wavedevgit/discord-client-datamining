@@ -1,7 +1,7 @@
 /** chunk id: 636920, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    Z: () => N
+    Z: () => b
 });
 var i = n(627968),
     s = n(64700),
@@ -24,12 +24,12 @@ var i = n(627968),
     E = n(985018),
     I = n(652172);
 
-function N(e) {
+function b(e) {
     let {
         hangStatusActivity: t,
         channel: n,
-        userId: N,
-        isSelf: b = !1,
+        userId: b,
+        isSelf: N = !1,
         analyticsSource: S,
         onAction: T,
         className: y,
@@ -39,21 +39,21 @@ function N(e) {
     s.useEffect(() => {
         h.default.track(C.HAw.VIEW_HANG_STATUS, {
             source: S,
-            other_user_id: N,
+            other_user_id: b,
             ...(0, m.A)(n.id)
         })
-    }, [S, n.id, N]);
+    }, [S, n.id, b]);
     let M = s.useCallback(() => {
             !R && O && (c.default.selectVoiceChannel(n.id), T?.(), h.default.track(C.HAw.HANG_STATUS_CTA_CLICKED, {
                 source: S,
                 ...(0, m.A)(n.id),
-                other_user_id: N,
+                other_user_id: b,
                 cta_type: "join"
             }))
-        }, [R, O, n.id, N, S, T]),
+        }, [R, O, n.id, b, S, T]),
         D = s.useCallback(() => {
             if (!R || !L || null == t.state) return;
-            let [e] = (0, _.e)(N, t.state);
+            let [e] = (0, _.e)(b, t.state);
             if (null != e) {
                 if (e === x.Kk.CUSTOM) {
                     if (null == t.details || null == t.emoji) return;
@@ -62,16 +62,16 @@ function N(e) {
                 T?.(), h.default.track(C.HAw.HANG_STATUS_CTA_CLICKED, {
                     source: S,
                     ...(0, m.A)(n.id),
-                    other_user_id: N,
+                    other_user_id: b,
                     cta_type: "swipe"
                 })
             }
-        }, [R, L, t, n.id, N, S, T]),
-        G = (0, p.Au)(N, t);
+        }, [R, L, t, n.id, b, S, T]),
+        G = (0, p.Au)(b, t);
     return (0, i.jsxs)("div", {
         className: y ?? I.kL,
         children: [(0, i.jsx)(f.A, {
-            userId: N,
+            userId: b,
             size: 32,
             className: v ?? I.Kk,
             hangStatusActivity: t
@@ -82,7 +82,7 @@ function N(e) {
                 delay: 0,
                 children: G
             })
-        }), R && !b ? (0, i.jsx)(a.m_, {
+        }), R && !N ? (0, i.jsx)(a.m_, {
             text: L ? void 0 : E.intl.string(E.t["0LMpW+"]),
             children: (0, i.jsx)("div", {
                 children: (0, i.jsx)(o.Button, {
@@ -93,7 +93,7 @@ function N(e) {
                     disabled: !L
                 })
             })
-        }) : !b && O && (0, i.jsx)(o.Button, {
+        }) : !N && O && (0, i.jsx)(o.Button, {
             size: "sm",
             variant: "secondary",
             text: E.intl.string(E.t["B/dHXL"]),

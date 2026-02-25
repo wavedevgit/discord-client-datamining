@@ -23,8 +23,8 @@ var i = n(627968),
     C = n(242919),
     E = n(886019),
     I = n(806246),
-    N = n(60821),
-    b = n(391786),
+    b = n(60821),
+    N = n(391786),
     S = n(50122),
     T = n(132970),
     y = n(129104),
@@ -51,7 +51,7 @@ function P(e) {
     } = (0, x.$j)({
         guildId: t.guild_id,
         location: "HangStatusPicker"
-    }), F = (0, E.hy)(B), K = s.useRef(null), [W, Y] = s.useState(w?.status ?? ""), [z, X] = s.useState(w?.emoji ?? null), [q, J] = s.useState(!1), Q = (0, d.bG)([C.A], () => C.A.getCurrentHangStatus()), $ = F[Q], Z = V.length > 0, ee = null == W || "" === W.trim(), et = (0, b.A)(t), en = W.trim().length > 0 && W.trim() !== w?.status?.trim() || null != z && !o()(z, w?.emoji), [ei, es] = s.useState(!1), el = (0, d.bG)([C.A], () => C.A.getFavoritedStatuses().length >= C.x), er = W.length > 0 || null != z, [ea, eo] = (0, g.kn)([u.M.HANG_STATUS_POPOVER_NUX]);
+    }), F = (0, E.hy)(B), K = s.useRef(null), [W, Y] = s.useState(w?.status ?? ""), [z, X] = s.useState(w?.emoji ?? null), [q, J] = s.useState(!1), Q = (0, d.bG)([C.A], () => C.A.getCurrentHangStatus()), $ = F[Q], Z = V.length > 0, ee = null == W || "" === W.trim(), et = (0, N.A)(t), en = W.trim().length > 0 && W.trim() !== w?.status?.trim() || null != z && !o()(z, w?.emoji), [ei, es] = s.useState(!1), el = (0, d.bG)([C.A], () => C.A.getFavoritedStatuses().length >= C.x), er = W.length > 0 || null != z, [ea, eo] = (0, g.kn)([u.M.HANG_STATUS_POPOVER_NUX]);
     s.useEffect(() => {
         _.default.track(O.HAw.HANG_STATUS_PICKER_OPENED, {
             ...(0, I.A)(t.id),
@@ -104,7 +104,7 @@ function P(e) {
             null != n && e?.name != null && (X(n), Y(e.name), J(!0), P.current?.focus(), _.default.track(O.HAw.HANG_STATUS_RANDOMIZER_CLICKED, (0, I.A)(t.id)))
         }, [et, z, t.id]),
         ep = s.useCallback((e, n) => {
-            let i = (0, N.A)(n);
+            let i = (0, b.A)(n);
             (!el || e) && ((0, f.My)(i ? n : n.status, i ? null : n.emoji), _.default.track(O.HAw.HANG_STATUS_FAVORITE_CLICKED, {
                 ...(0, I.A)(t.id),
                 favorited: !e
@@ -117,7 +117,7 @@ function P(e) {
             n(!0)
         }, [n]),
         e_ = s.useCallback((e, t, n) => {
-            let s = (0, N.A)(e),
+            let s = (0, b.A)(e),
                 l = s ? F[e] : null,
                 r = C.A.isFavorited(e),
                 a = s ? (0, i.jsx)(v.A, {

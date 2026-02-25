@@ -14,8 +14,8 @@ var a = r(503698),
     c = r(531260),
     m = r(613566),
     h = r(872725),
-    p = r(857586),
-    x = r(788868),
+    x = r(857586),
+    p = r(788868),
     f = r(652215),
     g = r(985018),
     _ = r(355313);
@@ -39,7 +39,7 @@ let N = e => {
         blurTint: O
     } = e, w = (0, o.DP)(), {
         fractionalState: L
-    } = (0, c.A)(), D = j && L === x.xc.FP_ONLY, U = !(0, s.isEmpty)(E), B = U && (0, d.q)(w), M = (0, u.rdh)(u.LU0.colors.BACKGROUND_BASE_LOW).hex(), k = D || !(0, s.isEmpty)(C);
+    } = (0, c.A)(), D = j && L === p.xc.FP_ONLY, U = !(0, s.isEmpty)(E), B = U && (0, d.q)(w), M = (0, u.rdh)(u.LU0.colors.BACKGROUND_BASE_LOW).hex(), k = D || !(0, s.isEmpty)(C);
     return (0, n.jsx)(i.NPJ, {
         theme: B ? f.NJ8.DARKER : void 0,
         children: e => (0, n.jsxs)(h.A, {
@@ -87,7 +87,7 @@ let N = e => {
                     "aria-hidden": !0
                 }), (0, n.jsxs)("div", {
                     className: _.P_,
-                    tabIndex: k ? void 0 : 0,
+                    tabIndex: 0,
                     children: [D && (0, n.jsxs)("div", {
                         className: _.d_,
                         children: [(0, n.jsx)(u.tvc, {
@@ -108,11 +108,20 @@ let N = e => {
                     }), (0, n.jsx)(u.Heading, {
                         variant: "heading-lg/semibold",
                         children: t
-                    }), !(0, s.isEmpty)(r) && (0, n.jsx)(u.Text, {
-                        variant: "text-sm/normal",
-                        color: "text-default",
-                        className: _.h_,
-                        children: r
+                    }), !(0, s.isEmpty)(r) && (0, n.jsxs)("div", {
+                        className: _.Wi,
+                        children: [(0, n.jsx)(u.Text, {
+                            variant: "text-sm/normal",
+                            color: "text-default",
+                            className: _.h_,
+                            children: r
+                        }), (0, n.jsx)(u.Text, {
+                            variant: "text-sm/normal",
+                            color: "text-default",
+                            className: _.XV,
+                            "aria-hidden": "true",
+                            children: r
+                        })]
                     }), null != A && (0, n.jsx)("div", {
                         className: _.oU,
                         children: (0, n.jsx)(m.Ay, {
@@ -126,7 +135,7 @@ let N = e => {
                     })]
                 }), k && (0, n.jsxs)("div", {
                     className: _.yk,
-                    children: [D && (0, n.jsx)(p.A, {
+                    children: [D && (0, n.jsx)(x.A, {
                         fullWidth: !0,
                         defaultTextOverride: g.intl.string(g.t.sEAnVH)
                     }), !D && (0, n.jsx)(i.$nd, {
