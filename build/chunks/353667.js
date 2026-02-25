@@ -61,7 +61,10 @@ function T(e) {
         decoration: t
     } = e, n = t.component;
     return (0, i.jsx)("div", {
-        className: l()(E.oK, t.sticky && E.qf),
+        className: l()(E.oK, {
+            [E.qf]: t.sticky
+        }),
+        "data-settings-panel-sticky-decoration": t.sticky || void 0,
         children: (0, i.jsx)(n, {})
     })
 }

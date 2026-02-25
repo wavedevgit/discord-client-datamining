@@ -46,9 +46,16 @@ let s = new class {
             })
         })
     }
+    updateScrollPaddingForStickyDecoration(e) {
+        let t = e.querySelector("[data-settings-panel-sticky-decoration]");
+        if (null == t) return;
+        let n = Math.max(0, t.getBoundingClientRect().bottom - e.getBoundingClientRect().top);
+        e.style.scrollPaddingTop = `${n}px`
+    }
     async scrollIntoView(e, t) {
         let n = this.getPanelScrollerNode();
         if (null == n) return;
+        this.updateScrollPaddingForStickyDecoration(n);
         let s = t.animate && !i.A.useReducedMotion,
             a = t.block ?? "start";
         await this.scroll({
@@ -56,10 +63,12 @@ let s = new class {
             target: e,
             scrollBehavior: s ? "smooth" : "auto",
             scrollBlock: a
-        }) && await new Promise(e => {
-            n.addEventListener("scrollend", () => e(), {
+        }) ? await new Promise(e => {
+            n.addEventListener("scrollend", () => {
+                n.style.scrollPaddingTop = "", e()
+            }, {
                 once: !0
             })
-        })
+        }) : n.style.scrollPaddingTop = ""
     }
 }

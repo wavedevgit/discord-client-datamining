@@ -39,5 +39,8 @@ let u = "lastHiddenChannelNotice",
     }, {
         type: c.n5X.LINKED_ROLES_ADMIN,
         dismissibleContentType: i.M.LINKED_ROLE_ADMIN_GUILD
+    }, {
+        type: c.n5X.GAME_CLAIM,
+        dismissibleContentType: i.M.GAME_CLAIM_COACHMARK
     }],
     h = A.map(e => e.store).filter(d.Vq)
