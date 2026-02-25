@@ -141,7 +141,7 @@ class eR extends s.PureComponent {
         if (n) return null;
         let E = (0, ex.W)(s, l, r),
             I = [];
-        return e && x ? E && null == r ? I.push(u.M.ACCOUNT_LINK_INVITE_FRIENDS) : I.push(u.M.POST_ACCOUNT_CONNECTION_RTC_POPOVER) : g && null != s && I.push(u.M.ACCOUNT_LINK_PROMPT), null != C && c?.name != null && I.push(u.M.JOIN_GAME_COMMUNITY_RTC_CTA), (0, i.jsx)(P.Ay, {
+        return e && x ? E && null == r ? I.push(u.M.ACCOUNT_LINK_INVITE_FRIENDS) : I.push(u.M.POST_ACCOUNT_CONNECTION_RTC_POPOVER) : g && null != s && I.push(u.M.ACCOUNT_LINK_PROMPT), null != C && c?.id != null && c?.name != null && I.push(u.M.JOIN_GAME_COMMUNITY_RTC_CTA), (0, i.jsx)(P.Ay, {
             contentTypes: I,
             groupName: eN.m.ACCOUNT_NAME_ZONE,
             bypassAutoDismiss: !0,
@@ -219,8 +219,9 @@ class eR extends s.PureComponent {
                             })
                         }
                     }]
-                }) : n === u.M.JOIN_GAME_COMMUNITY_RTC_CTA && null != C && c?.name != null ? (0, i.jsx)(V.A, {
+                }) : n === u.M.JOIN_GAME_COMMUNITY_RTC_CTA && null != C && c?.id != null && c?.name != null ? (0, i.jsx)(V.A, {
                     targetElementRef: this.activityPopoutTargetRef,
+                    gameId: c.id,
                     gameName: c.name,
                     gameCommunityGuildId: C,
                     markAsDismissed: r
