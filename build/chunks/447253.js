@@ -91,8 +91,8 @@ function m(e) {
             onFocus: E,
             ...I
         },
-        "aria-setsize": b,
-        "aria-posinset": N
+        "aria-setsize": N,
+        "aria-posinset": b
     } = e, [S, T] = s.useState(!1), y = s.useCallback(() => {
         l || T(!0), x?.(!0)
     }, [l, x]), v = s.useCallback(() => {
@@ -112,8 +112,8 @@ function m(e) {
             },
             ...I,
             role: "treeitem",
-            "aria-setsize": b,
-            "aria-posinset": N,
+            "aria-setsize": N,
+            "aria-posinset": b,
             "aria-expanded": n,
             "aria-owns": p,
             children: [(0, i.jsx)(o.AC4, {

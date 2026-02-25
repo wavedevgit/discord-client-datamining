@@ -27,10 +27,10 @@ function u(e) {
         parentAnalyticsLocation: f
     } = (0, r.Ay)(), x = t || n || u, C = h ? d.l : d.A, E = (0, a.A)(t, n, u, A), {
         events: I,
-        play: b,
-        Component: N
-    } = (0, c.q)(x), S = n || u ? l.O1p : N;
-    return s.useEffect(() => () => b(), [b, x]), (0, i.jsx)(C, {
+        play: N,
+        Component: b
+    } = (0, c.q)(x), S = n || u ? l.O1p : b;
+    return s.useEffect(() => () => N(), [N, x]), (0, i.jsx)(C, {
         iconComponent: S,
         isTrayButton: !0,
         caretColor: x ? "red" : "primaryDark",

@@ -24,8 +24,8 @@ var i = n(627968),
     C = n(164617),
     E = n(66004),
     I = n(958005),
-    b = n(384059),
-    N = n(609425),
+    N = n(384059),
+    b = n(609425),
     S = n(73392),
     T = n(529020),
     y = n(401901),
@@ -75,8 +75,8 @@ let eh = [ea.lp.ACTIVITY],
                 popoutType: g,
                 onDoubleClick: C,
                 onContextMenu: I,
-                onClick: b,
-                onMouseDown: N,
+                onClick: N,
+                onMouseDown: b,
                 onKeyDown: S,
                 className: j,
                 style: L,
@@ -97,8 +97,8 @@ let eh = [ea.lp.ACTIVITY],
                 forceIdle: eE = !1,
                 controlsBottom: eI
             } = e,
-            eb = s.useContext(P.vG) || eE,
-            [eN, eS] = s.useState(!1),
+            eN = s.useContext(P.vG) || eE,
+            [eb, eS] = s.useState(!1),
             eT = U.Q_.useSetting(),
             ey = (0, c.bG)([H.default], () => H.default.isStreamInfoOverlayEnabled),
             [ev, ej] = s.useState(!1),
@@ -170,8 +170,8 @@ let eh = [ea.lp.ACTIVITY],
                 null != eL && A.A.toggleLocalMute(eL, ec.x.STREAM)
             }, [eL]),
             eZ = s.useCallback(e => {
-                b?.(u, e)
-            }, [b, u]),
+                N?.(u, e)
+            }, [N, u]),
             e0 = s.useCallback(e => {
                 C?.(u, e)
             }, [C, u]),
@@ -196,7 +196,7 @@ let eh = [ea.lp.ACTIVITY],
                     selected: Q,
                     width: X,
                     focused: ep,
-                    idle: eb,
+                    idle: eN,
                     premiumIndicator: !1
                 }), e6 = ed.intl.formatToPlainString(ed.t.gHPz3Q, {
                     streamerName: u.user.username
@@ -280,8 +280,8 @@ let eh = [ea.lp.ACTIVITY],
                             ref: e2,
                             className: r()(eu.Vs, {
                                 [eu.E7]: es,
-                                [eu.k_]: null == b,
-                                [eu.N7]: eb
+                                [eu.k_]: null == N,
+                                [eu.N7]: eN
                             }),
                             noBorder: es,
                             style: L,
@@ -292,7 +292,7 @@ let eh = [ea.lp.ACTIVITY],
                                 onDoubleClick: e0,
                                 onContextMenu: e => e1(e, u.type === ea.lp.STREAM),
                                 onClick: eZ,
-                                onMouseDown: N,
+                                onMouseDown: b,
                                 onKeyDown: S,
                                 focusProps: {
                                     offset: 1
@@ -330,7 +330,7 @@ let eh = [ea.lp.ACTIVITY],
                                     participantType: u.type,
                                     hasVideo: ek ?? !1,
                                     ...eB,
-                                    idle: eb,
+                                    idle: eN,
                                     platform: eK,
                                     title: (0, $.A)(z, u),
                                     blocked: eg,
@@ -360,7 +360,7 @@ let eh = [ea.lp.ACTIVITY],
                             currentUserId: eR,
                             participant: u
                         }), (0, i.jsx)(R.A, {
-                            isFiring: eN,
+                            isFiring: eb,
                             callTileRef: e2.current
                         })]
                     })
@@ -443,7 +443,7 @@ function em(e) {
         hideWhenInactive: l,
         idle: r
     } = e, a = s.useMemo(() => (0, I.A)(t, n), [t, n]), o = (0, c.bG)([L.A], () => L.A.getIsAlwaysOnTop(a)), d = s.useCallback(() => {
-        (0, b.X)(g.A.CALL_TILE_POPOUT, b.O.STAY_ON_TOP, !o), M.setAlwaysOnTop(a, !o)
+        (0, N.X)(g.A.CALL_TILE_POPOUT, N.O.STAY_ON_TOP, !o), M.setAlwaysOnTop(a, !o)
     }, [a, o]);
     return J.isPlatformEmbedded && Q.Ay.supportsFeature(er.BYE.POPOUT_WINDOWS) ? (0, i.jsx)(eg, {
         onClick: d,
@@ -482,7 +482,7 @@ let e_ = s.memo(e => {
         paused: H,
         controlsBottom: K,
         streamId: W
-    } = e, Y = (0, c.bG)([F.Ay], () => null != T && F.Ay.isLocalVideoAutoDisabled(T, (0, f.A)(E)), [T, E]), X = (0, N.A)({
+    } = e, Y = (0, c.bG)([F.Ay], () => null != T && F.Ay.isLocalVideoAutoDisabled(T, (0, f.A)(E)), [T, E]), X = (0, b.A)({
         userId: T,
         guildId: y.getGuildId()
     }), q = (0, S.a)({
@@ -530,7 +530,7 @@ let e_ = s.memo(e => {
         idle: t
     }, "stay-on-top")), ei.push((0, i.jsx)(eg, {
         onClick: () => {
-            (0, b.X)(g.A.CALL_TILE_POPOUT, b.O.POPOUT_RETURN), M.close((0, I.A)(y.id, x))
+            (0, N.X)(g.A.CALL_TILE_POPOUT, N.O.POPOUT_RETURN), M.close((0, I.A)(y.id, x))
         },
         tooltipText: ed.intl.string(ed.t["7Dwcnj"]),
         icon: o.WindowReturnIcon,

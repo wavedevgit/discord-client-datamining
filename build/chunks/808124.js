@@ -1,7 +1,7 @@
 /** chunk id: 808124, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => N
+    A: () => b
 });
 var i = n(627968),
     s = n(64700),
@@ -23,20 +23,20 @@ var i = n(627968),
     C = n(952057),
     E = n(985018),
     I = n(760968);
-let b = e => {
+let N = e => {
         let {
             channel: t,
             idle: n,
             className: l,
             participants: a
-        } = e, h = (0, p.A)(t.id), [A, b] = s.useState(!1), N = s.useCallback(e => {
+        } = e, h = (0, p.A)(t.id), [A, N] = s.useState(!1), b = s.useCallback(e => {
             u.Ay.update(t.id, {
                 seat: e
             })
         }, [t.id]), [S, T] = (0, c.V)("haven-show-chat", !1);
         s.useEffect(() => {
             setTimeout(() => {
-                b(!0)
+                N(!0)
             }, 2500)
         }, []);
         let [y, v] = s.useState(.65), [j, R] = s.useState(.65), [O, L] = s.useState(.65), [M, D] = s.useState({
@@ -149,7 +149,7 @@ let b = e => {
                         channel: t,
                         idle: n,
                         skipNewUserEducation: !A,
-                        onSeatClick: N
+                        onSeatClick: b
                     })
                 }), (0, i.jsxs)("div", {
                     className: r()(I.nM, I.vf),
@@ -229,14 +229,14 @@ let b = e => {
             })
         })
     },
-    N = e => {
+    b = e => {
         let t = h.s.useConfig({
                 location: "Haven"
             }).enabled,
             n = (0, a.bG)([A.A], () => A.A.isUserConnected(e.channel.id));
         return (s.useEffect(() => {
             !t || n || u.Ay.connect(e.channel.id)
-        }, [e.channel.id, n, t]), t) ? (0, i.jsx)(b, {
+        }, [e.channel.id, n, t]), t) ? (0, i.jsx)(N, {
             ...e
         }) : null
     }

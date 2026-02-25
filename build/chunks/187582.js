@@ -23,8 +23,8 @@ var i = n(627968),
     C = n(741961),
     E = n(287809),
     I = n(954571),
-    b = n(203982),
-    N = n(398219),
+    N = n(203982),
+    b = n(398219),
     S = n(427262),
     T = n(837921),
     y = n(652215),
@@ -39,7 +39,7 @@ function L(e) {
         channel: a,
         status: u,
         activities: h
-    } = e, A = (0, r.bG)([C.A], () => null != C.A.getTypingUsers(a.id)[t.id]), g = (0, r.bG)([E.default], () => E.default.getCurrentUser()), I = (0, r.bG)([f.A], () => f.A.isMobileOnline(t.id)), N = (0, r.bG)([x.A], () => x.A.getNickname(t.id)), T = (0, p.A)(t.id), j = s.useRef(null), R = e => {
+    } = e, A = (0, r.bG)([C.A], () => null != C.A.getTypingUsers(a.id)[t.id]), g = (0, r.bG)([E.default], () => E.default.getCurrentUser()), I = (0, r.bG)([f.A], () => f.A.isMobileOnline(t.id)), b = (0, r.bG)([x.A], () => x.A.getNickname(t.id)), T = (0, p.A)(t.id), j = s.useRef(null), R = e => {
         (0, o.L3)(e, async () => {
             let {
                 default: e
@@ -53,9 +53,9 @@ function L(e) {
     }, L = () => {
         let e = `@${S.Ay.getUserTag(t,{decoration:"never"})}`,
             n = `<@${t.id}>`;
-        b._.dispatch(y.jej.TEXTAREA_FOCUS, {
+        N._.dispatch(y.jej.TEXTAREA_FOCUS, {
             channelId: a.id
-        }), b._.dispatchToLastSubscribed(y.jej.INSERT_TEXT, {
+        }), N._.dispatchToLastSubscribed(y.jej.INSERT_TEXT, {
             plainText: e,
             rawText: n
         }), c.A.startTyping(a.id)
@@ -92,7 +92,7 @@ function L(e) {
                 onContextMenu: R,
                 selected: D,
                 isMobile: I,
-                nick: N,
+                nick: b,
                 nameplate: M,
                 onClick: e => {
                     e.shiftKey ? L?.() : G(e => !e)
@@ -124,7 +124,7 @@ function D(e) {
     } = (0, h.Ay)(u.A.MEMBER_LIST), {
         listItems: c
     } = (0, r.bG)([x.A, E.default, f.A], () => {
-        let e = (0, N.F)(t.recipients, E.default),
+        let e = (0, b.F)(t.recipients, E.default),
             n = {};
         for (let t of e) x.A.isFriend(t.id) || t.id === E.default.getCurrentUser()?.id ? n[t.id] = {
             status: f.A.getStatus(t.id) ?? y.clD.OFFLINE,

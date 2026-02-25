@@ -61,8 +61,8 @@ function f(e) {
         analyticsLocation: x,
         className: C,
         size: E = "sm"
-    } = e, I = s?.getGuildId(), b = s?.id, N = (0, o.bG)([h.A], () => null != I ? h.A.getGuild(I) : null, [I]), S = (0, o.bG)([d.Ay], () => d.Ay.getActiveEventByChannel(b), [b]);
-    if (!(null != N && null != s && A.A.can(p.xBc.CREATE_INSTANT_INVITE, s))) return null;
+    } = e, I = s?.getGuildId(), N = s?.id, b = (0, o.bG)([h.A], () => null != I ? h.A.getGuild(I) : null, [I]), S = (0, o.bG)([d.Ay], () => d.Ay.getActiveEventByChannel(N), [N]);
+    if (!(null != b && null != s && A.A.can(p.xBc.CREATE_INSTANT_INVITE, s))) return null;
     let T = g.intl.string(g.t.VINpSK);
     return null != t ? T = g.intl.string(g.t["6VQaqd"]) : null != n && (T = g.intl.string(g.t["OzOM/q"])), (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
@@ -72,8 +72,8 @@ function f(e) {
                 variant: "secondary",
                 text: T,
                 onClick: () => {
-                    a()(null != N, "guild cannot be null"), a()(null != s, "channel cannot be null"), _({
-                        guild: N,
+                    a()(null != b, "guild cannot be null"), a()(null != s, "channel cannot be null"), _({
+                        guild: b,
                         channel: s,
                         streamUserId: t?.ownerId,
                         applicationId: n,

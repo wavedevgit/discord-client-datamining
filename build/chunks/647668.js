@@ -23,8 +23,8 @@ var i = n(627968),
     C = n(347951),
     E = n(164956),
     I = n(392567),
-    b = n(63995),
-    N = n(69407),
+    N = n(63995),
+    b = n(69407),
     S = n(624265),
     T = n(970278),
     y = n(21119),
@@ -99,18 +99,18 @@ function V(e) {
                 return t
             });
             return (0, p.aw)(t, g)
-        }), _ = (0, c.yK)([b.A], () => o().flatMap(a, e => {
+        }), _ = (0, c.yK)([N.A], () => o().flatMap(a, e => {
             if (e === Y.afkChannelId) return [];
-            let t = b.A.getMutableParticipants(e, N.ip.SPEAKER).filter(e => e.type === N.wY.VOICE).map(e => {
+            let t = N.A.getMutableParticipants(e, b.ip.SPEAKER).filter(e => e.type === b.wY.VOICE).map(e => {
                 let {
                     user: t
                 } = e;
                 return t
             });
             return (0, p.aw)(t, g)
-        })), f = (0, c.bG)([b.A], () => {
+        })), f = (0, c.bG)([N.A], () => {
             let e = 0;
-            for (let t of a) e += b.A.getParticipantCount(t, N.ip.AUDIENCE);
+            for (let t of a) e += N.A.getParticipantCount(t, b.ip.AUDIENCE);
             return e
         }), x = (0, c.yK)([j.A], () => {
             let e = j.A.getAllApplicationStreams().filter(e => e.guildId === t).map(e => e.ownerId);

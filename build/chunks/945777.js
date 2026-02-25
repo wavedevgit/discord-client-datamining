@@ -24,8 +24,8 @@ var i = n(627968),
     C = n(961350),
     E = n(696451),
     I = n(562153),
-    b = n(105530),
-    N = n(806931),
+    N = n(105530),
+    b = n(806931),
     S = n(565135);
 let T = s.memo(function(e) {
         let {
@@ -67,7 +67,7 @@ let T = s.memo(function(e) {
             blocked: o,
             ignored: c,
             rtsState: d
-        } = t, u = d === b.zF.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK, A = d === b.zF.REQUESTED_TO_SPEAK || u;
+        } = t, u = d === N.zF.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK, A = d === N.zF.REQUESTED_TO_SPEAK || u;
         return (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsxs)("div", {
                 className: S.H,
@@ -105,7 +105,7 @@ let T = s.memo(function(e) {
         } = e, {
             user: a,
             blocked: u
-        } = t, I = l.getGuildId(), b = C.default.getId(), {
+        } = t, I = l.getGuildId(), N = C.default.getId(), {
             newestAnalyticsLocation: T
         } = (0, g.Ay)(p.A.AUDIENCE_TILE), v = (0, f.Us)(), j = (0, d.bG)([E.Ay], () => null != I && E.Ay.getMember(I, a.id)?.premiumSince != null, [I, a.id]), R = s.useRef(null);
         o()(null != I, "Channel cannot be guildless");
@@ -115,8 +115,8 @@ let T = s.memo(function(e) {
                 name: c.ImpressionNames.CALL_TILE_CONTEXT_MENU,
                 properties: {
                     location: "AudienceTile",
-                    is_tile_owner: a.id === b,
-                    tile_type: N.qs.USER
+                    is_tile_owner: a.id === N,
+                    tile_type: b.qs.USER
                 }
             }), (0, A.L3)(e, async () => {
                 let {
@@ -132,13 +132,13 @@ let T = s.memo(function(e) {
                     showChatItems: !1,
                     onInteraction: (0, _.s)("GuildChannelUserContextMenu", T, {
                         targetUserId: a.id,
-                        tileType: N.qs.USER
+                        tileType: b.qs.USER
                     })
                 })
             }, {
                 context: v
             })
-        }, [a, b, v, I, l, T]);
+        }, [a, N, v, I, l, T]);
         return (0, i.jsx)(x.A, {
             targetElementRef: R,
             user: a,

@@ -25,7 +25,7 @@ function _(e) {
     } = e, _ = (0, d.e)({
         guildId: t,
         channelId: n
-    }), f = (0, c.uk)(t), x = (0, c.Tq)(t), C = (0, l.bG)([o.A], () => o.A.getGuild(t), [t]), E = C?.name, I = (0, l.bG)([a.A], () => a.A.getChannel(n)), b = s.useMemo(() => {
+    }), f = (0, c.uk)(t), x = (0, c.Tq)(t), C = (0, l.bG)([o.A], () => o.A.getGuild(t), [t]), E = C?.name, I = (0, l.bG)([a.A], () => a.A.getChannel(n)), N = s.useMemo(() => {
         let e = {};
         for (let t of f)
             for (let n of t.subscription_listings_ids) e[n] = t.id;
@@ -56,10 +56,10 @@ function _(e) {
             children: x?.description
         }), (0, i.jsx)(h.A, {
             guildId: t,
-            children: _.filter(e => null != b[e.id]).map(e => (0, i.jsx)(A.A, {
+            children: _.filter(e => null != N[e.id]).map(e => (0, i.jsx)(A.A, {
                 guildId: t,
                 listingId: e.id,
-                groupListingId: b[e.id],
+                groupListingId: N[e.id],
                 analyticsLocation: p.ThZ.ROLE_SUBSCRIPTION_GATED_CHANNEL
             }, e.id))
         })]

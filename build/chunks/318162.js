@@ -1,7 +1,7 @@
 /** chunk id: 318162, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => N
+    A: () => b
 });
 var i = n(627968),
     s = n(64700),
@@ -23,13 +23,13 @@ var i = n(627968),
     C = n(996988),
     E = n(985018),
     I = n(133786),
-    b = n(724693);
+    N = n(724693);
 
-function N(e) {
+function b(e) {
     let {
         user: t,
         channel: n,
-        onHide: N
+        onHide: b
     } = e, S = (0, g.Ay)(t.id), T = (0, o.Ay)(), y = (0, r.bG)([u.A], () => u.A.isBlocked(t.id)), {
         analyticsLocations: v
     } = (0, d.Ay)(y ? c.A.BLOCKED_PROFILE_PANEL : c.A.IGNORED_PROFILE_PANEL), j = (0, A.pb)({
@@ -55,7 +55,7 @@ function N(e) {
                         className: I.kL,
                         children: [(0, i.jsx)("img", {
                             alt: "",
-                            src: b,
+                            src: N,
                             className: I.VH,
                             "aria-hidden": !0
                         }), (0, i.jsxs)("div", {
@@ -78,7 +78,7 @@ function N(e) {
                                 children: [(0, i.jsx)(x.A, {
                                     isBlocked: y,
                                     onClick: () => {
-                                        N(), (0, p.Wn)({
+                                        b(), (0, p.Wn)({
                                             action: y ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
                                             analyticsLocations: v,
                                             ...j
@@ -87,7 +87,7 @@ function N(e) {
                                 }), (0, i.jsx)(f.A, {
                                     userId: t.id,
                                     onClick: () => {
-                                        N(), (0, p.Wn)({
+                                        b(), (0, p.Wn)({
                                             action: "DONT_SHOW_AGAIN_IGNORED_PROFILE",
                                             analyticsLocations: v,
                                             ...j

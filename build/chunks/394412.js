@@ -26,9 +26,9 @@ function f(e) {
         showDismiss: f = !0
     } = e, x = (0, s.bG)([o.A], () => o.A.getChannel(t), [t]), C = (0, A.RO)(t), E = null != (0, A.Qs)(t), {
         canManageGuildEvent: I
-    } = (0, a.nr)(x), b = (0, s.bG)([c.A], () => C.filter(e => !c.A.isEventDismissed(e.id)), [C]), N = (0, s.cf)([u.Ay], () => b.reduce((e, t) => (e[t.id] = u.Ay.getUserCount(t.id, (0, p.G3)(t)), e), {}), [b]);
-    return b.length < 1 || E ? null : (0, i.jsx)(i.Fragment, {
-        children: b.map(e => (0, i.jsx)(g.A, {
+    } = (0, a.nr)(x), N = (0, s.bG)([c.A], () => C.filter(e => !c.A.isEventDismissed(e.id)), [C]), b = (0, s.cf)([u.Ay], () => N.reduce((e, t) => (e[t.id] = u.Ay.getUserCount(t.id, (0, p.G3)(t)), e), {}), [N]);
+    return N.length < 1 || E ? null : (0, i.jsx)(i.Fragment, {
+        children: N.map(e => (0, i.jsx)(g.A, {
             icon: (0, i.jsx)(r.CTc, {
                 size: "custom",
                 color: "currentColor",
@@ -59,7 +59,7 @@ function f(e) {
                 var t;
                 return t = e.id, void(0, h.Nt)(t)
             } : void 0,
-            userCount: N[e.id],
+            userCount: b[e.id],
             className: _.f
         }, e.id))
     })

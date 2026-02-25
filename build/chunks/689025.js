@@ -23,8 +23,8 @@ var i = n(627968),
     C = n(378570),
     E = n(323443),
     I = n(113783),
-    b = n(69407),
-    N = n(446600),
+    N = n(69407),
+    b = n(446600),
     S = n(96566),
     T = n(175452),
     y = n(924985),
@@ -201,7 +201,7 @@ class W extends U.Ay {
             isFavoriteSuggestion: E
         } = this.props, {
             shouldShowGuildVerificationPopout: I
-        } = this.state, b = this.getVoiceStatesCount(), N = (0, i.jsxs)("li", {
+        } = this.state, N = this.getVoiceStatesCount(), b = (0, i.jsxs)("li", {
             className: r()(this.getModeClass(), {
                 [F.r9]: this.isDisabled()
             }),
@@ -240,7 +240,7 @@ class W extends U.Ay {
                             channel: e,
                             unread: f,
                             mentionCount: C,
-                            userCount: b,
+                            userCount: N,
                             isSubscriptionGated: m,
                             needSubscriptionToAccess: _
                         }),
@@ -249,7 +249,7 @@ class W extends U.Ay {
                 })
             }), this.renderVoiceUsers()]
         });
-        return A && (N = o(N)), h && (N = l(a(N))), N
+        return A && (b = o(b)), h && (b = l(a(b))), b
     }
 }
 let Y = (0, A.a)((0, p.F)(W));
@@ -276,7 +276,7 @@ function z(e) {
             bypassLimit: O.A.can(V.xBc.MOVE_MEMBERS, n),
             unverifiedAccount: !i.canChat
         }
-    }), h = (0, a.bG)([y.A], () => y.A.isCollapsed(n.parent_id)), A = (0, T.Ay)(n.id), p = (0, a.bG)([N.A], () => N.A.getStageInstanceByChannel(n.id), [n.id]), g = (0, I.zy)(n.id, b.ip.AUDIENCE), {
+    }), h = (0, a.bG)([y.A], () => y.A.isCollapsed(n.parent_id)), A = (0, T.Ay)(n.id), p = (0, a.bG)([b.A], () => b.A.getStageInstanceByChannel(n.id), [n.id]), g = (0, I.zy)(n.id, N.ip.AUDIENCE), {
         isSubscriptionGated: m,
         needSubscriptionToAccess: _
     } = (0, f.A)(n.id), x = (0, a.bG)([M.Ay], () => M.Ay.isFavorite(t.id, n.id)), C = (0, S.xn)(n.id), E = (0, P.A)({

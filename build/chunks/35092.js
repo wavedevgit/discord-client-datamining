@@ -23,8 +23,8 @@ var i = n(627968),
     C = n(916023),
     E = n(533406),
     I = n(183555),
-    b = n(186111),
-    N = n(594832),
+    N = n(186111),
+    b = n(594832),
     S = n(146423),
     T = n(699976),
     y = n(652215),
@@ -62,7 +62,7 @@ let G = s.forwardRef(function(e, t) {
         children: (0, i.jsx)(A.un, {
             asContainer: !0,
             asset: u,
-            assetSize: N.Q8,
+            assetSize: b.Q8,
             title: _,
             body: f,
             children: (0, i.jsx)("div", {
@@ -124,7 +124,7 @@ function P(e) {
         analyticsLocations: A
     } = (0, g.Ay)(...a ?? [], p.A.SLAYER_STOREFRONT_BREADCRUMB_WISHLIST_ITEM_CARD_GIFT_BUTTON), x = (0, C.Jw)({
         location: "dm-side-panel-social-layer-storefront-wishlist-item-card"
-    }), I = (0, u.useHasAnyModalOpen)(), N = (0, c.bG)([b.A], () => b.A.hasLayers()), [S, T] = (0, f.kn)(!x || 0 !== l || t.applicationId !== R.XR || I || N ? [] : [d.M.GAME_SHOP_WISHLIST_POPOVER], v.m.SIDEBAR, !0), y = s.useRef(null), O = s.useCallback(() => {
+    }), I = (0, u.useHasAnyModalOpen)(), b = (0, c.bG)([N.A], () => N.A.hasLayers()), [S, T] = (0, f.kn)(!x || 0 !== l || t.applicationId !== R.XR || I || b ? [] : [d.M.GAME_SHOP_WISHLIST_POPOVER], v.m.SIDEBAR, !0), y = s.useRef(null), O = s.useCallback(() => {
         T(v.i.USER_DISMISS), (0, E.a)(t, {
             isGift: !0,
             giftRecipient: n,

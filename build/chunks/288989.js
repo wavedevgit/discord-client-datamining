@@ -27,11 +27,11 @@ let I = {
         mentionCount: 0,
         targetChannelId: null
     },
-    b = {
+    N = {
         topBar: I,
         bottomBar: I
     },
-    N = {},
+    b = {},
     S = {};
 
 function T(e) {
@@ -87,18 +87,18 @@ function j(e) {
             if (!c && !o) break;
             (T(t.id) || l().some(t.threadIds, T)) && (null == a && (a = t.id), E = !0), (y(t.id) || l().some(t.threadIds, y)) && (null == r && (r = t.id), C += p.Ay.getMentionCount(t.id), C += l().sumBy(t.threadIds, p.Ay.getMentionCount))
         }
-    let b = null,
+    let N = null,
         j = null,
         R = u?.getChannelRecords() ?? [];
-    o && C > 0 ? b = {
+    o && C > 0 ? N = {
         mode: "mentions",
         mentionCount: C,
         targetChannelId: r
-    } : !d && l().some(R, v) ? b = {
+    } : !d && l().some(R, v) ? N = {
         mode: "voice-channels",
         mentionCount: 0,
         targetChannelId: null
-    } : c && E && (b = {
+    } : c && E && (N = {
         mode: "unread",
         mentionCount: 0,
         targetChannelId: a
@@ -111,11 +111,11 @@ function j(e) {
         mentionCount: 0,
         targetChannelId: s
     });
-    let O = null != j && (null == b || "mentions" !== b.mode && "mentions" === j.mode),
-        L = null != b && ("mentions" === b.mode || !O);
-    return N[e] = {
+    let O = null != j && (null == N || "mentions" !== N.mode && "mentions" === j.mode),
+        L = null != N && ("mentions" === N.mode || !O);
+    return b[e] = {
         topBar: O ? j ?? I : I,
-        bottomBar: L ? b ?? I : I
+        bottomBar: L ? N ?? I : I
     }, !0
 }
 let R = l().throttle(j, 200);
@@ -166,7 +166,7 @@ class U extends r.Ay.Store {
         this.waitFor(x.A, h.A, A.A, u.A, p.Ay, g.A, _.Ay, c.A, m.Ay)
     }
     getUnreadStateForGuildId(e) {
-        return N[e] ?? b
+        return b[e] ?? N
     }
 }
 let P = new U(a.h, {
@@ -217,7 +217,7 @@ let P = new U(a.h, {
             voiceStates: t
         } = e, n = g.A.getGuildId();
         if (null == n || !new Set(t.map(e => e.guildId)).has(n)) return !1;
-        let i = N[n];
+        let i = b[n];
         return null != i && "voice-channels" === i.bottomBar.mode && R(n)
     },
     USER_GUILD_SETTINGS_CHANNEL_UPDATE: G,

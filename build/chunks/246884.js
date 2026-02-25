@@ -1,7 +1,7 @@
 /** chunk id: 246884, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => N
+    A: () => b
 });
 var i = n(627968),
     s = n(64700),
@@ -35,7 +35,7 @@ let I = {
     }
 };
 
-function b(e) {
+function N(e) {
     (0, a.L3)(e, async () => {
         let {
             default: e
@@ -46,11 +46,11 @@ function b(e) {
     })
 }
 
-function N(e) {
+function b(e) {
     let {
         disableTooltip: t,
         lastTargetNode: n
-    } = e, a = (0, l.yK)([p.A], () => p.A.getGuildsArray()), N = (0, l.bG)([g.default], () => g.default.getCurrentUser()), S = s.useMemo(() => a.some(e => (0, A.bM)(e, N)), [a, N]), T = (0, r.red)(e => (0, r.fDT)(e, x.fc)), {
+    } = e, a = (0, l.yK)([p.A], () => p.A.getGuildsArray()), b = (0, l.bG)([g.default], () => g.default.getCurrentUser()), S = s.useMemo(() => a.some(e => (0, A.bM)(e, b)), [a, b]), T = (0, r.red)(e => (0, r.fDT)(e, x.fc)), {
         analyticsLocations: y
     } = (0, o.Ay)(), v = (0, i.jsx)(_.A, {
         showPill: !1,
@@ -70,7 +70,7 @@ function N(e) {
             })
         },
         selected: T,
-        onContextMenu: b,
+        onContextMenu: N,
         tooltip: C.intl.string(C.t.l5WIbf),
         icon: r.U1e
     });

@@ -1,7 +1,7 @@
 /** chunk id: 976966, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => b
+    A: () => N
 });
 var i = n(627968),
     s = n(64700),
@@ -24,7 +24,7 @@ var i = n(627968),
     E = n(985018),
     I = n(828966);
 
-function b(e) {
+function N(e) {
     let {
         searchContext: t,
         searchMode: n,
@@ -34,18 +34,18 @@ function b(e) {
         isSearching: h,
         documentsIndexed: A,
         selectedChannelId: _
-    } = e, b = (0, m.H)(t), {
+    } = e, N = (0, m.H)(t), {
         totalFilters: S
-    } = (0, f.vj)(b, t), T = s.useMemo(() => {
+    } = (0, f.vj)(N, t), T = s.useMemo(() => {
         if (t.type === x.I4_.DMS) {
-            let e = (0, p.Zf)(b),
+            let e = (0, p.Zf)(N),
                 t = e.channel_id?.length ?? 0;
             return t > 0 ? E.intl.format(E.t.A2dqWG, {
                 filterCount: t
             }) : E.intl.string(E.t.tc619d)
         }
         return null
-    }, [t.type, b]), [y, v] = s.useState(null), O = s.useMemo(() => h ? [] : [a.M.CROSS_DM_SEARCH_SETTING_EDUCATION_POPOVER], [h]), [L, M] = (0, u.kn)(O), D = L === a.M.CROSS_DM_SEARCH_SETTING_EDUCATION_POPOVER, G = s.useCallback(e => {
+    }, [t.type, N]), [y, v] = s.useState(null), O = s.useMemo(() => h ? [] : [a.M.CROSS_DM_SEARCH_SETTING_EDUCATION_POPOVER], [h]), [L, M] = (0, u.kn)(O), D = L === a.M.CROSS_DM_SEARCH_SETTING_EDUCATION_POPOVER, G = s.useCallback(e => {
         null != e && D && M(C.i.USER_DISMISS), v(e)
     }, [D, M, v]), U = s.useCallback(e => {
         M("user:explicit" === e ? C.i.USER_DISMISS : C.i.AUTO_DISMISS)
@@ -61,7 +61,7 @@ function b(e) {
         children: [(0, i.jsx)("div", {
             className: I.TN,
             role: "status",
-            children: (0, i.jsx)(N, {
+            children: (0, i.jsx)(b, {
                 totalResults: o,
                 subtitle: T,
                 isIndexing: c,
@@ -93,7 +93,7 @@ function b(e) {
     })
 }
 
-function N(e) {
+function b(e) {
     let {
         totalResults: t,
         subtitle: n,

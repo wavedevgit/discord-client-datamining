@@ -23,8 +23,8 @@ var i = n(627968),
     C = n(844262),
     E = n(47167),
     I = n(262763),
-    b = n(5932),
-    N = n(857253),
+    N = n(5932),
+    b = n(857253),
     S = n(202384),
     T = n(51758),
     y = n(721592),
@@ -186,7 +186,7 @@ class et extends W.Ay {
             channel: e,
             connected: t,
             showEmptyChannelTopic: n
-        } = this.props, s = (0, b.M)(this.props.subtitle)?.subtitle, {
+        } = this.props, s = (0, N.M)(this.props.subtitle)?.subtitle, {
             hovered: l
         } = this.state;
         return (0, i.jsx)(q.A, {
@@ -315,8 +315,8 @@ class et extends W.Ay {
             canMoveMembers: f,
             showTutorial: E,
             hasActiveEvent: I,
-            embeddedApps: b,
-            isSubscriptionGated: N,
+            embeddedApps: N,
+            isSubscriptionGated: b,
             isFavoriteSuggestion: S,
             withGuildIcon: T,
             hasStartTime: y,
@@ -387,12 +387,12 @@ class et extends W.Ay {
                                 unread: s,
                                 mentionCount: a,
                                 userCount: G,
-                                embeddedActivitiesCount: b.length,
-                                isSubscriptionGated: N
+                                embeddedActivitiesCount: N.length,
+                                isSubscriptionGated: b
                             }),
                             "aria-describedby": (0, C.A)({
                                 channel: e,
-                                embeddedApps: b
+                                embeddedApps: N
                             }),
                             withGuildIcon: T,
                             children: [S && (0, i.jsxs)(i.Fragment, {
@@ -441,8 +441,8 @@ function ei(e) {
         }
     }), A = (0, a.bG)([B.A], () => B.A.hasVideo(n.id)), p = (0, g.Ay)(n), m = (0, E.Ay)(n), x = (0, v.Qs)(n.id), C = (0, a.bG)([f.A], () => null != f.A.getStartTime(n), [n]), {
         isSubscriptionGated: I,
-        needSubscriptionToAccess: b
-    } = (0, y.A)(n.id), S = (0, N.A)(), T = (0, a.bG)([V.Ay], () => V.Ay.isFavorite(t.id, n.id)), j = e.connected || S?.channelId === n.id, {
+        needSubscriptionToAccess: N
+    } = (0, y.A)(n.id), S = (0, b.A)(), T = (0, a.bG)([V.Ay], () => V.Ay.isFavorite(t.id, n.id)), j = e.connected || S?.channelId === n.id, {
         enableHangStatus: L,
         showEmptyChannelTopic: M
     } = (0, R.$j)({
@@ -464,7 +464,7 @@ function ei(e) {
         isChannelCollapsed: o,
         voiceStates: c,
         isSubscriptionGated: I,
-        needSubscriptionToAccess: b,
+        needSubscriptionToAccess: N,
         enableConnectedUserLimit: !0,
         enableActivities: !0
     }), X = j && null == z;
@@ -475,7 +475,7 @@ function ei(e) {
         video: A,
         hasActiveEvent: null != x,
         isSubscriptionGated: I,
-        needSubscriptionToAccess: b,
+        needSubscriptionToAccess: N,
         ...d,
         ...h,
         ...e,

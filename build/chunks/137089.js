@@ -75,11 +75,11 @@ let I = s.memo(function(e) {
         guildId: C,
         selectedChannelId: E,
         selectedVoiceChannelId: I,
-        optInEnabled: b
+        optInEnabled: N
     } = e, {
-        hasDivider: N,
+        hasDivider: b,
         canHaveVoiceSummary: S
-    } = s.useMemo(() => (0, g.B3)(n, b, t), [n, b, t, l]), T = s.useMemo(() => t === p.PU ? null : n.getCategoryFromSection(t), [n, t, l]), y = (0, u.jN)(C), {
+    } = s.useMemo(() => (0, g.B3)(n, N, t), [n, N, t, l]), T = s.useMemo(() => t === p.PU ? null : n.getCategoryFromSection(t), [n, t, l]), y = (0, u.jN)(C), {
         enableWaveformIcon: v
     } = (0, c.b)(C, "ChannelListSectionFooter"), j = (0, a.yK)([h.Ay], () => {
         if (null == T || !T.isCollapsed || !S) return [];
@@ -101,7 +101,7 @@ let I = s.memo(function(e) {
         guildChannels: n,
         guildChannelsVersion: l
     });
-    let O = N ? (0, i.jsx)("div", {
+    let O = b ? (0, i.jsx)("div", {
         className: f.ts
     }) : null;
     return S && 0 !== R.length ? (0, i.jsxs)(i.Fragment, {

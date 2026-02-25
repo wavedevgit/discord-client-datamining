@@ -34,8 +34,8 @@ function I(e) {
         animatedDivClass: E,
         commandOrigin: I
     } = e, {
-        onActivityItemSelected: b,
-        imageBackground: N,
+        onActivityItemSelected: N,
+        imageBackground: b,
         activityAction: S,
         labelType: T
     } = (0, h.Ay)({
@@ -91,7 +91,7 @@ function I(e) {
         }
     }, [S]);
     return (0, s.jsx)(d.DUT, {
-        onClick: b,
+        onClick: N,
         onFocus: j,
         onBlur: R,
         onMouseEnter: j,
@@ -124,7 +124,7 @@ function I(e) {
                                 transform: t.to([0, 1], [1, 1.05]).to(e => `scale(${e})`)
                             },
                             children: [(0, s.jsx)(A.A, {
-                                imageBackground: N,
+                                imageBackground: b,
                                 applicationName: n.application.name,
                                 imageClassName: f.jj,
                                 imageNotFoundClassName: f.v_

@@ -23,8 +23,8 @@ var i = n(627968),
     C = n(470710),
     E = n(186111),
     I = n(430452),
-    b = n(994500),
-    N = n(287809),
+    N = n(994500),
+    b = n(287809),
     S = n(977997),
     T = n(203982),
     y = n(58736),
@@ -162,10 +162,10 @@ function D(e) {
     })), p = t.getRecipientId(), {
         notFriend: g,
         isBlocked: f
-    } = (0, l.cf)([b.A], () => ({
-        notFriend: t.type === v.rbe.DM && null != p && !b.A.isFriend(p),
-        isBlocked: t.type === v.rbe.DM && null != p && b.A.isBlocked(p)
-    })), x = (0, l.bG)([N.default], () => N.default.getUser(p)), I = (0, _.Us)(), T = [], y = (0, h.A)(t.id), j = (0, l.bG)([E.A], () => E.A.hasLayers());
+    } = (0, l.cf)([N.A], () => ({
+        notFriend: t.type === v.rbe.DM && null != p && !N.A.isFriend(p),
+        isBlocked: t.type === v.rbe.DM && null != p && N.A.isBlocked(p)
+    })), x = (0, l.bG)([b.default], () => b.default.getUser(p)), I = (0, _.Us)(), T = [], y = (0, h.A)(t.id), j = (0, l.bG)([E.A], () => E.A.hasLayers());
     return (y && !j && T.push(r.M.ACTIVITY_GDM_CALL_TOOLTIP), n || x?.bot) ? null : (0, i.jsx)(M, {
         channel: t,
         mode: s,

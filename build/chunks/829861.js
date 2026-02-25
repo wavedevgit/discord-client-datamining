@@ -23,8 +23,8 @@ var i = n(627968),
     C = n(128286),
     E = n(734057),
     I = n(696451),
-    b = n(309010),
-    N = n(287809),
+    N = n(309010),
+    b = n(287809),
     S = n(203982),
     T = n(427262),
     y = n(795816),
@@ -84,7 +84,7 @@ function W(e) {
         ea ? ((t = el.width / k.B5) > el.height && (e = (t = el.height) * k.B5), ec = (el.height - t) / 2) : ((e = Math.min(el.height * k.B5)) > el.width && (t = (e = el.width) / k.B5), eo = (el.width - e) / 2)
     }
     let eu = J.get(W?.id ?? ""),
-        eh = (0, a.bG)([b.A], () => b.A.getChannelId()),
+        eh = (0, a.bG)([N.A], () => N.A.getChannelId()),
         eA = (0, a.yK)([I.Ay], () => null == X ? [] : Array.from(eu?.embeddedActivity.userIds ?? []).map(e => I.Ay.getMember(X.guild_id, e)), [eu, X]),
         ep = s.useMemo(() => {
             let e = new Map;
@@ -119,7 +119,7 @@ function W(e) {
         em = (0, P.G)();
     if ((0, m.ns)(W?.id), null == W) return null;
     let e_ = [];
-    null != eu && (e_ = Array.from(eu.embeddedActivity.userIds).map(e => N.default.getUser(e)).filter(e => null != e && void 0 !== e));
+    null != eu && (e_ = Array.from(eu.embeddedActivity.userIds).map(e => b.default.getUser(e)).filter(e => null != e && void 0 !== e));
     let ef = e => {
         if (null == e || void 0 === e || e === D.mt) return null;
         let t = ep.get(e.id),

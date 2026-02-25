@@ -23,8 +23,8 @@ var i = n(627968),
     C = n(44724),
     E = n(94484),
     I = n(849134),
-    b = n(203548),
-    N = n(186111),
+    N = n(203548),
+    b = n(186111),
     S = n(371794),
     T = n(998218),
     y = n(652793),
@@ -36,7 +36,7 @@ let L = s.memo(function(e) {
     let {
         guild: t,
         selected: l
-    } = e, L = s.useRef(null), M = s.useRef(null), D = (0, d.useHasAnyModalOpen)(), G = (0, a.bG)([N.A], () => N.A.hasLayers()), U = (0, p.xr)(e => e.fullScreenLayers.length > 0), P = (0, x.n)({
+    } = e, L = s.useRef(null), M = s.useRef(null), D = (0, d.useHasAnyModalOpen)(), G = (0, a.bG)([b.A], () => b.A.hasLayers()), U = (0, p.xr)(e => e.fullScreenLayers.length > 0), P = (0, x.n)({
         location: "GameShopChannelRow"
     });
     s.useEffect(() => {
@@ -138,7 +138,7 @@ let L = s.memo(function(e) {
             applicationName: R.intl.string(R.t.Uu8hke)
         }) : null, [H, k, q, J, Z, Q, et, Y]);
     return (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(b.A, {
+        children: [(0, i.jsx)(N.A, {
             ref: L,
             children: ee
         }), !D && !G && !U && en()]

@@ -23,8 +23,8 @@ var i = n(627968),
     C = n(551826),
     E = n(159426),
     I = n(25528),
-    b = n(530804),
-    N = n(481947),
+    N = n(530804),
+    b = n(481947),
     S = n(616356),
     T = n(961350),
     y = n(696451),
@@ -47,7 +47,7 @@ let k = s.memo(e => {
         channel: l,
         sessionId: r,
         nick: o
-    } = e, f = s.id, x = (0, a.bG)([T.default], () => T.default.getId() === f, [f]), [N, j, R] = (0, a.yK)([v.Ay], () => x ? [!v.Ay.isSupported() || v.Ay.isSelfMute() || v.Ay.isSelfMutedTemporarily(), v.Ay.isSelfDeaf(), !1] : [!v.Ay.isSupported() || v.Ay.isLocalMute(f), !1, v.Ay.isLocalVideoDisabled(f)], [x, f]), w = (0, a.bG)([L.A], () => L.A.isPrioritySpeaker(f)), k = (0, c.A)({
+    } = e, f = s.id, x = (0, a.bG)([T.default], () => T.default.getId() === f, [f]), [b, j, R] = (0, a.yK)([v.Ay], () => x ? [!v.Ay.isSupported() || v.Ay.isSelfMute() || v.Ay.isSelfMutedTemporarily(), v.Ay.isSelfDeaf(), !1] : [!v.Ay.isSupported() || v.Ay.isLocalMute(f), !1, v.Ay.isLocalVideoDisabled(f)], [x, f]), w = (0, a.bG)([L.A], () => L.A.isPrioritySpeaker(f)), k = (0, c.A)({
         userId: f,
         checkSoundSharing: !0
     }), V = (0, a.bG)([y.Ay], () => y.Ay.isGuestOrLurker(l.guild_id, f)), B = (0, a.bG)([A.A], () => A.A.getGuildRingingUsers(l.id).has(f)), H = (0, a.bG)([d.Ay], () => d.Ay.getEmbeddedActivitiesForChannel(l.id).find(e => {
@@ -60,7 +60,7 @@ let k = s.memo(e => {
     } = (0, g.$j)({
         guildId: l.guild_id,
         location: "VoiceUsers"
-    }), $ = (0, p.Ay)(l, !0, s), Z = (0, a.bG)([m.A], () => x ? m.A.getHangStatusActivity() : null, [x]), ee = (0, _.h)(f), et = (0, b.uy)(l.id, f), {
+    }), $ = (0, p.Ay)(l, !0, s), Z = (0, a.bG)([m.A], () => x ? m.A.getHangStatusActivity() : null, [x]), ee = (0, _.h)(f), et = (0, N.uy)(l.id, f), {
         enableVCStatusIcons: en,
         enableRequestToStream: ei
     } = E.m.useExperiment({
@@ -79,9 +79,9 @@ let k = s.memo(e => {
             disconnected: et,
             otherClientSessionType: X?.clientInfo?.os,
             voicePlatform: J,
-            localMute: N && !x,
+            localMute: b && !x,
             localVideoDisabled: R,
-            mute: t || N,
+            mute: t || b,
             deaf: n || j,
             speaking: k,
             ringing: B,
@@ -115,7 +115,7 @@ let V = [],
             className: C,
             children: E,
             isThread: I = !1
-        } = e, [S, y] = s.useState(null), [v, O] = s.useState(!1), L = s.useRef(null), M = (0, b.$n)(l.id, c ?? V), {
+        } = e, [S, y] = s.useState(null), [v, O] = s.useState(!1), L = s.useRef(null), M = (0, N.$n)(l.id, c ?? V), {
             shouldShow: D,
             dismiss: P
         } = (0, x.Z)(l, {
@@ -182,7 +182,7 @@ let V = [],
                 numUsers: M.length - u
             })), s
         })();
-        return null == Y && null == E ? null : (0, i.jsxs)(N.Wr, {
+        return null == Y && null == E ? null : (0, i.jsxs)(b.Wr, {
             className: r()(C, w.p_, {
                 [w.yZ]: d,
                 [w.lY]: _,

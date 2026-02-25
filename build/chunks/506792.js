@@ -28,8 +28,8 @@ let f = (0, c.a)(function(e) {
         sortingType: C,
         sortingPosition: E,
         connectChannelDragSource: I,
-        connectChannelDropTarget: b,
-        tabIndex: N
+        connectChannelDropTarget: N,
+        tabIndex: b
     } = e, S = (0, a.bG)([d.A, u.Ay], () => {
         let e = u.Ay.getDirectoryChannelIds(t.id);
         return 0 === e.length ? null : d.A.getChannel(e[0])
@@ -63,13 +63,13 @@ let f = (0, c.a)(function(e) {
                 resolvedUnreadSetting: m.e.ONLY_MENTIONS,
                 children: [(0, i.jsx)(A.gQ, {
                     channel: S,
-                    tabIndex: N
+                    tabIndex: b
                 }), (0, i.jsx)(A.Jd, {
                     channel: S,
                     disableManageChannels: f,
-                    tabIndex: N
+                    tabIndex: b
                 })]
             })
         });
-    return v && (L = b(I(L))), L
+    return v && (L = N(I(L))), L
 })

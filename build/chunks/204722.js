@@ -24,8 +24,8 @@ var i = n(627968),
     C = n(379848),
     E = n(625180),
     I = n(338771),
-    b = n(212637),
-    N = n(488803),
+    N = n(212637),
+    b = n(488803),
     S = n(44621),
     T = n(823748),
     y = n(997692),
@@ -73,7 +73,7 @@ let H = s.memo(function(e) {
             enabled: el
         } = S._.useConfig({
             location: "activity-panel"
-        }), er = (0, T.Bp)("activity-panel"), ea = (0, N.C$)(a ?? void 0, "activity-panel"), eo = (0, o.bG)([L.A], () => L.A.hasConsented(U.YAq.PERSONALIZATION)), ec = (0, T.TF)(j?.id, {
+        }), er = (0, T.Bp)("activity-panel"), ea = (0, b.C$)(a ?? void 0, "activity-panel"), eo = (0, o.bG)([L.A], () => L.A.hasConsented(U.YAq.PERSONALIZATION)), ec = (0, T.TF)(j?.id, {
             shouldFetch: er || ea
         }), ed = el && eo && ec, eu = ed && er, eh = ed && ea, eA = s.useCallback(() => {
             r()(null != Y, "Received null activity"), D.default.track(U.HAw.ACTIVITY_PANEL_BUTTON_CLICKED, {
@@ -121,18 +121,18 @@ let H = s.memo(function(e) {
                 })
             })
         }, [ef, j?.id]), eC = s.useCallback(() => {
-            r()(null != a, "Received null guildId"), (0, b.A)({
+            r()(null != a, "Received null guildId"), (0, N.A)({
                 analyticsLocations: en,
                 analyticsLocation: X.location,
                 guildId: a
             })
-        }, [a, en, X.location]), eE = s.useRef(null), [eI, eb] = s.useState(!1);
+        }, [a, en, X.location]), eE = s.useRef(null), [eI, eN] = s.useState(!1);
         s.useEffect(() => () => {
             null != eE.current && clearTimeout(eE.current)
         }, []), s.useEffect(() => {
-            Z && (eb(!1), null != eE.current && (clearTimeout(eE.current), eE.current = null))
+            Z && (eN(!1), null != eE.current && (clearTimeout(eE.current), eE.current = null))
         }, [Z]);
-        let eN = ei?.guildId == null || null == z ? null : (0, i.jsx)(W, {
+        let eb = ei?.guildId == null || null == z ? null : (0, i.jsx)(W, {
                 guildId: ei.guildId,
                 applicationId: ei.id
             }),
@@ -219,8 +219,8 @@ let H = s.memo(function(e) {
                 startAuthorization: () => {
                     Q({
                         analyticsLocations: en
-                    }) === _._M.RPC && (eb(!0), null != eE.current && clearTimeout(eE.current), eE.current = setTimeout(() => {
-                        eb(!1)
+                    }) === _._M.RPC && (eN(!0), null != eE.current && clearTimeout(eE.current), eE.current = setTimeout(() => {
+                        eN(!1)
                     }, 9e4))
                 },
                 connectionApp: ee,
@@ -237,12 +237,12 @@ let H = s.memo(function(e) {
                 },
                 shouldShow: eI,
                 onRequestClose: () => {
-                    eb(!1), null != eE.current && (clearTimeout(eE.current), eE.current = null)
+                    eN(!1), null != eE.current && (clearTimeout(eE.current), eE.current = null)
                 }
             });
-        return null == eT && null == ey && null == ev && null == ej && null == eO && null == eN && null == eS ? null : (0, i.jsxs)("div", {
+        return null == eT && null == ey && null == ev && null == ej && null == eO && null == eb && null == eS ? null : (0, i.jsxs)("div", {
             className: V.o1,
-            children: [eN ?? eO ?? ey, eS, eT, ev ?? ej ?? eR, eL]
+            children: [eb ?? eO ?? ey, eS, eT, ev ?? ej ?? eR, eL]
         })
     }),
     F = s.forwardRef(function(e, t) {
@@ -274,14 +274,19 @@ function K(e) {
         o(P.i.TAKE_ACTION), n()
     }, [o, n]);
     return (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)("div", {
+        children: [(0, i.jsxs)("div", {
             className: V.IF,
-            children: (0, i.jsx)(G.A, {
+            children: [(0, i.jsx)("div", {
+                className: V.uD,
+                children: (0, i.jsx)("div", {
+                    className: V.Z9
+                })
+            }), (0, i.jsx)(G.A, {
                 ref: r,
                 tooltipText: t,
                 onClick: d,
                 icon: u._xR
-            })
+            })]
         }), null != a && l({
             targetElementRef: r,
             markAsDismissed: o

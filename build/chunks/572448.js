@@ -24,8 +24,8 @@ var s = n(503698),
     C = n(616356),
     E = n(734057),
     I = n(71393),
-    b = n(290863),
-    N = n(222823),
+    N = n(290863),
+    b = n(222823),
     S = n(287809),
     T = n(147925),
     y = n(652215),
@@ -157,7 +157,7 @@ function U(e) {
         channel: t,
         gotoChannel: n,
         mentionCount: s
-    } = e, r = (0, a.bG)([I.A], () => I.A.getGuild(t.guild_id)), c = (0, a.bG)([E.A], () => E.A.getChannel(t.parent_id)), u = (0, a.bG)([N.Ay], () => N.Ay.getIsMentionLowImportance(t.id)), h = (0, _.gU)(t, r), A = (0, m.Ay)(t, !1), p = null == c ? r?.name : `${r?.name} › ${c.name}`, g = t.isMultiUserDM() ? v.intl.formatToPlainString(v.t.CxSA5N, {
+    } = e, r = (0, a.bG)([I.A], () => I.A.getGuild(t.guild_id)), c = (0, a.bG)([E.A], () => E.A.getChannel(t.parent_id)), u = (0, a.bG)([b.Ay], () => b.Ay.getIsMentionLowImportance(t.id)), h = (0, _.gU)(t, r), A = (0, m.Ay)(t, !1), p = null == c ? r?.name : `${r?.name} › ${c.name}`, g = t.isMultiUserDM() ? v.intl.formatToPlainString(v.t.CxSA5N, {
         members: t.recipients.length + 1
     }) : t.isPrivate() ? (0, i.jsx)(P, {
         channel: t
@@ -208,12 +208,12 @@ function P(e) {
         status: s,
         activities: l,
         applicationStream: r
-    } = (0, a.cf)([S.default, b.A, C.A], () => {
+    } = (0, a.cf)([S.default, N.A, C.A], () => {
         let e = S.default.getUser(t.getRecipientId());
         return {
             user: e,
-            status: null != e ? b.A.getStatus(e.id) : null,
-            activities: null != e ? b.A.getActivities(e.id) : null,
+            status: null != e ? N.A.getStatus(e.id) : null,
+            activities: null != e ? N.A.getActivities(e.id) : null,
             applicationStream: null != e ? C.A.getAnyStreamForUser(e.id) : null
         }
     }), {

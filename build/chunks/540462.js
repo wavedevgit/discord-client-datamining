@@ -23,8 +23,8 @@ var i = n(627968),
     C = n(820284),
     E = n(765671),
     I = n(475743),
-    b = n(646865),
-    N = n(10716),
+    N = n(646865),
+    b = n(10716),
     S = n(795816),
     T = n(933958),
     y = n(967812),
@@ -77,8 +77,8 @@ var i = n(627968),
     eC = n(147036),
     eE = n(203982),
     eI = n(723702),
-    eb = n(837921),
-    eN = n(475815),
+    eN = n(837921),
+    eb = n(475815),
     eS = n(134047),
     eT = n(313961),
     ey = n(520698),
@@ -127,13 +127,13 @@ class eF extends s.PureComponent {
             channel: e,
             layout: t
         } = this.props;
-        this.currentDocument.addEventListener(eN.Wb, this.handleFullScreenChange), ef.default.track(ew.HAw.VIDEO_LAYOUT_TOGGLED, {
+        this.currentDocument.addEventListener(eb.Wb, this.handleFullScreenChange), ef.default.track(ew.HAw.VIDEO_LAYOUT_TOGGLED, {
             video_layout: this.inPopout ? "popout" : t,
             ...(0, R.QS)(e.id)
         })
     }
     componentWillUnmount() {
-        this._videoBackgroundTooltipTimeout.stop(), this.currentDocument.removeEventListener(eN.Wb, this.handleFullScreenChange), this.inPopout && (0, eI.isMac)() || this.maybeLeaveFullScreen()
+        this._videoBackgroundTooltipTimeout.stop(), this.currentDocument.removeEventListener(eb.Wb, this.handleFullScreenChange), this.inPopout && (0, eI.isMac)() || this.maybeLeaveFullScreen()
     }
     componentDidUpdate(e) {
         let {
@@ -142,10 +142,10 @@ class eF extends s.PureComponent {
             mode: i,
             layout: s
         } = this.props, l = this.getRootNode();
-        null != l && e.mode === ew._Of.VIDEO && i === ew._Of.VOICE && (0, eN._U)(l, this.currentDocument) && (0, eN.sP)(l, this.currentDocument), (e.participantsOpen !== t || s !== e.layout) && this._contentRef.current?.triggerResize(), e.inCall && !n && this.inPopout && p.h.wait(() => this.handleClosePopout())
+        null != l && e.mode === ew._Of.VIDEO && i === ew._Of.VOICE && (0, eb._U)(l, this.currentDocument) && (0, eb.sP)(l, this.currentDocument), (e.participantsOpen !== t || s !== e.layout) && this._contentRef.current?.triggerResize(), e.inCall && !n && this.inPopout && p.h.wait(() => this.handleClosePopout())
     }
     get nativePopoutSupported() {
-        return eI.isPlatformEmbedded && eb.Ay.supportsFeature(ew.BYE.POPOUT_WINDOWS)
+        return eI.isPlatformEmbedded && eN.Ay.supportsFeature(ew.BYE.POPOUT_WINDOWS)
     }
     get popoutSupported() {
         return !eI.isPlatformEmbedded || this.nativePopoutSupported
@@ -211,15 +211,15 @@ class eF extends s.PureComponent {
     }
     handleFullScreenChange = () => {
         let e = this.getRootNode();
-        null != e && ((0, eN._U)(e, this.currentDocument) || this.props.layout !== ew.DUB.FULL_SCREEN || this.handleFullScreen())
+        null != e && ((0, eb._U)(e, this.currentDocument) || this.props.layout !== ew.DUB.FULL_SCREEN || this.handleFullScreen())
     };
     handleFullScreen = () => {
         let e = this.getRootNode();
-        null != e && (this.props.layout !== ew.DUB.FULL_SCREEN ? (this._prevLayout = this.props.layout, this.handleChangeLayout(ew.DUB.FULL_SCREEN), (0, eN.tl)(e)) : this.maybeLeaveFullScreen())
+        null != e && (this.props.layout !== ew.DUB.FULL_SCREEN ? (this._prevLayout = this.props.layout, this.handleChangeLayout(ew.DUB.FULL_SCREEN), (0, eb.tl)(e)) : this.maybeLeaveFullScreen())
     };
     maybeLeaveFullScreen = () => {
         let e = this.getRootNode();
-        null == e || this.props.layout === ew.DUB.FULL_SCREEN && (this.handleChangeLayout(this._prevLayout), (0, eN.sP)(e, this.currentDocument))
+        null == e || this.props.layout === ew.DUB.FULL_SCREEN && (this.handleChangeLayout(this._prevLayout), (0, eb.sP)(e, this.currentDocument))
     };
     handleToggleLayout = () => {
         this.handleChangeLayout(this.props.layout === ew.DUB.NORMAL ? ew.DUB.NO_CHAT : ew.DUB.NORMAL)
@@ -377,7 +377,7 @@ class eF extends s.PureComponent {
             let n = e.getGuildId();
             null == n || eu.Ay.isCurrentUserGuest(n) || (0, K.pX)((0, eC.vJ)(n)), H.openChannelCallPopout(e)
         };
-        null == t || (0, b.f)() ? n() : (0, v.A)({
+        null == t || (0, N.f)() ? n() : (0, v.A)({
             onConfirm: n
         })
     };
@@ -705,7 +705,7 @@ let eK = function(e) {
         ref: m
     } = (0, E.Ay)(), {
         ref: _
-    } = (0, E.Ay)(), f = (0, B.Us)(), b = (0, U.A)(), S = (0, d.bG)([eg.A], () => (b?.channelId ?? eg.A.getVoiceChannelId()) === t.id), {
+    } = (0, E.Ay)(), f = (0, B.Us)(), N = (0, U.A)(), S = (0, d.bG)([eg.A], () => (N?.channelId ?? eg.A.getVoiceChannelId()) === t.id), {
         participants: v,
         filteredParticipants: R,
         participantsVersion: L,
@@ -744,18 +744,18 @@ let eK = function(e) {
         x.Ay.updatedUnsyncedSettings({
             callHeaderHeight: e
         })
-    }, []), es = X?.id ?? null, el = (0, y.A)(es, t.id), er = (0, d.bG)([N.A], () => N.A.getFetchState(), []), ea = (0, I.A)(er);
+    }, []), es = X?.id ?? null, el = (0, y.A)(es, t.id), er = (0, d.bG)([b.A], () => b.A.getFetchState(), []), ea = (0, I.A)(er);
     s.useEffect(() => {
-        er === N.$.ERROR && ea !== N.$.ERROR && (0, A.showToast)((0, A.createToast)(ek.intl.string(ek.t["AlJyI+"]), A.ToastType.FAILURE))
+        er === b.$.ERROR && ea !== b.$.ERROR && (0, A.showToast)((0, A.createToast)(ek.intl.string(ek.t["AlJyI+"]), A.ToastType.FAILURE))
     }, [er, ea]);
     let eu = (0, d.bG)([T.Ay], () => T.Ay.getSelfEmbeddedActivityForChannel(t.id), [t]);
     s.useEffect(() => {
         let e = !1,
             t = null;
         return (async () => {
-            S && M === ew._Of.VIDEO && (t = await eb.Ay.blockDisplaySleep(), e && null != t && eb.Ay.unblockDisplaySleep(t))
+            S && M === ew._Of.VIDEO && (t = await eN.Ay.blockDisplaySleep(), e && null != t && eN.Ay.unblockDisplaySleep(t))
         })(), () => {
-            null != t ? eb.Ay.unblockDisplaySleep(t) : e = !0
+            null != t ? eN.Ay.unblockDisplaySleep(t) : e = !0
         }
     }, [S, M]);
     let em = (0, W.$F)(t),
@@ -770,18 +770,18 @@ let eK = function(e) {
         } = V.s.useConfig({
             location: "ChannelCall"
         }),
-        eN = (0, eS.T)({
+        eb = (0, eS.T)({
             channel: t,
             location: "ChannelCall"
         });
     s.useEffect(() => {
-        if (!eN || !S || null != eT.A.getAllChatOpen()[t.id] || o <= 0) return;
+        if (!eb || !S || null != eT.A.getAllChatOpen()[t.id] || o <= 0) return;
         let e = !(0, ex.P)({
             maxWidth: eC,
             minWidth: 450
         });
         g.A.updateChatOpen(t.id, e, "auto open screen width")
-    }, [eN, eC, o, t.id, S]);
+    }, [eb, eC, o, t.id, S]);
     let {
         theme: ey
     } = (0, A.wRf)();

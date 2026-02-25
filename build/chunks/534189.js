@@ -24,8 +24,8 @@ var s = n(934551),
     C = n(743987),
     E = n(383448),
     I = n(900179),
-    b = n(646986),
-    N = n(946356),
+    N = n(646986),
+    b = n(946356),
     S = n(810396),
     T = n(243166),
     y = n(652215),
@@ -69,13 +69,13 @@ function O(e) {
                 isVisible: M,
                 onOpenProfile: D
             })
-        }), G === y.eA$.PENDING_INCOMING && (0, i.jsx)(N.A.Overlay, {
+        }), G === y.eA$.PENDING_INCOMING && (0, i.jsx)(b.A.Overlay, {
             children: (0, i.jsx)(x.A, {
                 user: t,
                 channelId: L.id,
                 applicationId: U
             })
-        }), P.map(e => (0, i.jsx)(N.A.Overlay, {
+        }), P.map(e => (0, i.jsx)(b.A.Overlay, {
             children: (0, i.jsx)(x.A, {
                 user: t,
                 isGameRelationship: !0,
@@ -84,7 +84,7 @@ function O(e) {
             })
         }, e.applicationId)), (0, i.jsx)(E.A, {
             user: t
-        }), t.isProvisional && (0, i.jsx)(N.A.Overlay, {
+        }), t.isProvisional && (0, i.jsx)(b.A.Overlay, {
             children: (0, i.jsx)(I.A, {
                 heading: j.intl.string(j.t.Iyka0U),
                 headingIcon: (0, i.jsx)(s.CircleErrorIcon, {
@@ -96,11 +96,11 @@ function O(e) {
                     userId: t.id
                 })
             })
-        }), (0, i.jsx)(b.A, {
+        }), (0, i.jsx)(N.A, {
             user: t,
             currentUser: n,
             onOpenUserProfileModal: D
-        }), (0, i.jsxs)(N.A.Overlay, {
+        }), (0, i.jsxs)(b.A.Overlay, {
             className: R.Lw,
             children: [!k && O?.bio != null && O?.bio !== "" && (0, i.jsx)(I.A, {
                 heading: j.intl.string(j.t.ZzAR2Y),

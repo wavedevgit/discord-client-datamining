@@ -25,8 +25,8 @@ var i = n(627968),
     C = n(963702),
     E = n(792967),
     I = n(712209),
-    b = n(652215),
-    N = n(985018),
+    N = n(652215),
+    b = n(985018),
     S = n(442672);
 
 function T(e) {
@@ -67,8 +67,8 @@ function T(e) {
             let e = a.channels.find(e => !e.collapsed);
             null != e && x.markChannelRead(e)
         };
-        return _._.subscribe(b.jej.MARK_TOP_INBOX_CHANNEL_READ, e), () => {
-            _._.unsubscribe(b.jej.MARK_TOP_INBOX_CHANNEL_READ, e)
+        return _._.subscribe(N.jej.MARK_TOP_INBOX_CHANNEL_READ, e), () => {
+            _._.unsubscribe(N.jej.MARK_TOP_INBOX_CHANNEL_READ, e)
         }
     }, [x, a.channels]), T = D, s.useEffect(() => {
         let e = e => {
@@ -78,19 +78,19 @@ function T(e) {
             document.removeEventListener("keydown", e)
         }
     }, [T]), s.useEffect(() => {
-        m.default.track(b.HAw.OPEN_POPOUT, {
+        m.default.track(N.HAw.OPEN_POPOUT, {
             type: "Inbox"
         })
     }, []), s.useEffect(() => (h.h.subscribe("CONNECTION_OPEN", O), () => {
         h.h.unsubscribe("CONNECTION_OPEN", O)
-    }), [O]), (0, A.Ay)(() => (_._.subscribe(b.jej.INBOX_MARK_ALL_UNREADS_READ, D.markAllRead), () => {
-        _._.unsubscribe(b.jej.INBOX_MARK_ALL_UNREADS_READ, D.markAllRead)
+    }), [O]), (0, A.Ay)(() => (_._.subscribe(N.jej.INBOX_MARK_ALL_UNREADS_READ, D.markAllRead), () => {
+        _._.unsubscribe(N.jej.INBOX_MARK_ALL_UNREADS_READ, D.markAllRead)
     }));
     let k = (0, g.A)("unreads", L);
     return 0 === U.length ? (0, i.jsx)(C.A, {
         Icon: u.K$s,
-        header: N.intl.string(N.t["6XMM+D"]),
-        tip: o().os?.family === "OS X" ? N.intl.string(N.t.w9uDOW) : N.intl.string(N.t.BiUJC6)
+        header: b.intl.string(b.t["6XMM+D"]),
+        tip: o().os?.family === "OS X" ? b.intl.string(b.t.w9uDOW) : b.intl.string(b.t.BiUJC6)
     }) : (0, i.jsx)(c.hD, {
         navigator: k,
         children: (0, i.jsx)(c.PR, {
@@ -133,18 +133,18 @@ function y(e) {
             children: [(0, i.jsx)(u.Heading, {
                 className: S.__invalid_tutorialHeader,
                 variant: "heading-md/semibold",
-                children: N.intl.string(N.t.vZPktJ)
+                children: b.intl.string(b.t.vZPktJ)
             }), (0, i.jsx)(u.Text, {
                 color: "text-default",
                 variant: "text-sm/normal",
-                children: N.intl.string(N.t.vWkIII)
+                children: b.intl.string(b.t.vWkIII)
             }), (0, i.jsx)("div", {
                 "data-button-hoisted-classname-wrapper": !0,
                 className: S.dh,
                 children: (0, i.jsx)(u.Button, {
                     variant: "primary",
                     size: "sm",
-                    text: N.intl.string(N.t["+IrDzN"]),
+                    text: b.intl.string(b.t["+IrDzN"]),
                     onClick: t
                 })
             })]
@@ -156,10 +156,10 @@ function v() {
     return (0, i.jsx)(C.A, {
         Icon: u.K$s,
         disableStars: !0,
-        header: N.intl.string(N.t["KG/ynf"]),
-        tip: N.intl.string(N.t.cvcKzX)
+        header: b.intl.string(b.t["KG/ynf"]),
+        tip: b.intl.string(b.t.cvcKzX)
     })
 }
 let j = () => (0, i.jsx)(x.A, {
-    onClick: () => _._.dispatch(b.jej.INBOX_MARK_ALL_UNREADS_READ)
+    onClick: () => _._.dispatch(N.jej.INBOX_MARK_ALL_UNREADS_READ)
 })

@@ -23,8 +23,8 @@ var i = n(627968),
     C = n(646468),
     E = n(492498),
     I = n(765627),
-    b = n(547945),
-    N = n(412484),
+    N = n(547945),
+    b = n(412484),
     S = n(652215),
     T = n(985018),
     y = n(868192);
@@ -113,9 +113,9 @@ function v(e) {
                                 onJump: X
                             }) : W && Y && k === c.Y2.BOOKMARKS ? (0, i.jsx)(g.J, {
                                 closePopout: F
-                            }) : k === c.Y2.SCHEDULED ? (0, i.jsx)(b.w, {}) : (0, i.jsx)(a.tH, {
-                                fallback: (0, i.jsx)(N.T, {}),
-                                children: (0, i.jsx)(N.Ay, {
+                            }) : k === c.Y2.SCHEDULED ? (0, i.jsx)(N.w, {}) : (0, i.jsx)(a.tH, {
+                                fallback: (0, i.jsx)(b.T, {}),
+                                children: (0, i.jsx)(b.Ay, {
                                     onJump: X,
                                     showTutorial: B,
                                     setSeenTutorial: H,

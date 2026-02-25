@@ -26,9 +26,9 @@ let E = function(e) {
         participants: t,
         channel: n,
         hasConnectPermission: E
-    } = e, I = (0, h.H)(n.guild_id), b = s.useCallback(() => {
+    } = e, I = (0, h.H)(n.guild_id), N = s.useCallback(() => {
         I ? (0, u.Ze)(n.guild_id, () => a.default.selectVoiceChannel(n.id)) : a.default.selectVoiceChannel(n.id)
-    }, [n.id, n.guild_id, I]), N = t.filter(e => e.type === m.wY.VOICE), S = (0, d.Ay)(n), T = 4 === N.length ? 2 : 3, y = (0, l.yK)([o.A], () => N.map(e => o.A.getParticipant(n.id, e.id)).filter(g.Vq), [n.id, N]);
+    }, [n.id, n.guild_id, I]), b = t.filter(e => e.type === m.wY.VOICE), S = (0, d.Ay)(n), T = 4 === b.length ? 2 : 3, y = (0, l.yK)([o.A], () => b.map(e => o.A.getParticipant(n.id, e.id)).filter(g.Vq), [n.id, b]);
     return (0, i.jsxs)("div", {
         className: C.kL,
         children: [(0, i.jsx)(p.A, {}), (0, i.jsx)("div", {
@@ -55,7 +55,7 @@ let E = function(e) {
                 tag: "div",
                 color: "text-default",
                 variant: "heading-lg/normal",
-                children: (0, _.DO)(n, N)
+                children: (0, _.DO)(n, b)
             })
         }), (0, i.jsxs)("div", {
             className: C.UD,
@@ -64,7 +64,7 @@ let E = function(e) {
                 children: (0, i.jsx)(r.Button, {
                     variant: "overlay-primary",
                     text: E ? x.intl.string(x.t["7vb2cc"]) : x.intl.string(x.t.TVBCKZ),
-                    onClick: b,
+                    onClick: N,
                     disabled: !E
                 })
             }), (0, i.jsx)(f.l, {

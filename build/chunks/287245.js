@@ -23,8 +23,8 @@ var i = n(627968),
     C = n(320501),
     E = n(203982),
     I = n(427262),
-    b = n(652215),
-    N = n(985018),
+    N = n(652215),
+    b = n(985018),
     S = n(739699);
 let T = e => {
         let {
@@ -82,7 +82,7 @@ let T = e => {
                         src: e.url,
                         width: 128,
                         className: S.oh,
-                        alt: N.intl.string(N.t.X4IxWL)
+                        alt: b.intl.string(b.t.X4IxWL)
                     }, e.id))
                 })]
             })]
@@ -93,7 +93,7 @@ let T = e => {
             channel: t,
             idle: n,
             showChat: l
-        } = e, A = s.useRef(new Set), [p, g] = s.useState([]), [_, f] = s.useState(0), I = s.useRef(null), N = s.useRef(!1), [y, v] = s.useState(!0), [j, R] = s.useState(""), [O, L] = s.useState((0, u.x7)(j));
+        } = e, A = s.useRef(new Set), [p, g] = s.useState([]), [_, f] = s.useState(0), I = s.useRef(null), b = s.useRef(!1), [y, v] = s.useState(!0), [j, R] = s.useState(""), [O, L] = s.useState((0, u.x7)(j));
         s.useEffect(() => {
             let e = A.current;
             return () => {
@@ -102,8 +102,8 @@ let T = e => {
         }, []), s.useEffect(() => {
             let e = () => v(!0),
                 t = () => v(!1);
-            return E._.subscribe(b.jej.TEXTAREA_FOCUS, e), E._.subscribe(b.jej.TEXTAREA_BLUR, t), () => {
-                E._.unsubscribe(b.jej.TEXTAREA_FOCUS, e), E._.unsubscribe(b.jej.TEXTAREA_BLUR, t)
+            return E._.subscribe(N.jej.TEXTAREA_FOCUS, e), E._.subscribe(N.jej.TEXTAREA_BLUR, t), () => {
+                E._.unsubscribe(N.jej.TEXTAREA_FOCUS, e), E._.unsubscribe(N.jej.TEXTAREA_BLUR, t)
             }
         }, []), s.useEffect(() => {
             let e = I.current;
@@ -161,8 +161,8 @@ let T = e => {
             className: r()(S.X2, {
                 [S.R]: !l
             }),
-            onMouseEnter: () => N.current = !0,
-            onMouseLeave: () => N.current = !1,
+            onMouseEnter: () => b.current = !0,
+            onMouseLeave: () => b.current = !1,
             onWheel: e => {
                 e.preventDefault(), e.stopPropagation()
             },
