@@ -36,8 +36,8 @@ var a = n(627968),
     w = n(576622),
     L = n(151252),
     B = n(652165),
-    U = n(287809),
-    D = n(954571),
+    D = n(287809),
+    U = n(954571),
     M = n(975571),
     G = n(927578),
     V = n(580630),
@@ -115,7 +115,7 @@ let ek = e => {
             children: (0, a.jsx)(T.A, {
                 className: eS.M4,
                 nameplate: t,
-                showPlaceholderUser: !0,
+                user: i,
                 nameplatePreviewSize: "large",
                 pendingAvatarDecoration: c,
                 isHighlighted: !0
@@ -212,8 +212,8 @@ let ek = e => {
                 isPartiallyOwnedBundle: w
             } = (0, J.h)(S),
             {
-                isDisabled: U,
-                disabledReason: D
+                isDisabled: D,
+                disabledReason: U
             } = (0, q.I)(S.skuId),
             M = (0, W.Zu)({
                 product: S,
@@ -243,8 +243,8 @@ let ek = e => {
             eO = (t.variants?.length ?? 0) > 8,
             {
                 checkoutEligiblePrices: eB,
-                isOrbExclusive: eU,
-                hasSufficientOrbs: eD
+                isOrbExclusive: eD,
+                hasSufficientOrbs: eU
             } = (0, eI.F)({
                 product: S,
                 isPremiumUser: j,
@@ -275,7 +275,7 @@ let ek = e => {
                     children: [(0, a.jsx)(er.A, {
                         product: S,
                         isDarkText: !Q,
-                        isOrbExclusive: eU
+                        isOrbExclusive: eD
                     }), (0, a.jsx)(h.Heading, {
                         variant: "heading-xl/extrabold",
                         className: eS.v7,
@@ -297,8 +297,8 @@ let ek = e => {
                         product: S,
                         isPremiumUser: j,
                         discount: em,
-                        hasSufficientOrbs: eD,
-                        isProductDisabled: U,
+                        hasSufficientOrbs: eU,
+                        isProductDisabled: D,
                         discountOfferAmount: ej
                     }) : (0, a.jsxs)("div", {
                         className: eS.pw,
@@ -334,10 +334,10 @@ let ek = e => {
                             className: eS.L$
                         })]
                     })
-                }), null !== D && (0, a.jsx)(h.Text, {
+                }), null !== U && (0, a.jsx)(h.Text, {
                     variant: "text-xs/normal",
                     className: eS.H$,
-                    children: D
+                    children: U
                 }), (0, a.jsx)(h.BJc, {
                     direction: "vertical",
                     gap: 8,
@@ -394,7 +394,7 @@ let ek = e => {
                                 let n, r = 0 === t;
                                 if (e.currency === eE.Yr.DISCORD_ORB) {
                                     let t, n, i, s;
-                                    return t = U ? eP.intl.string(eP.t.cTdr3x) : eP.intl.string(eP.t.zqh7ZM), n = !eD || U, i = eP.intl.formatToPlainString(eP.t.yi41qQ, {
+                                    return t = D ? eP.intl.string(eP.t.cTdr3x) : eP.intl.string(eP.t.zqh7ZM), n = !eU || D, i = eP.intl.formatToPlainString(eP.t.yi41qQ, {
                                         orbPrice: e.amount
                                     }), s = n ? `${i}, ${t}` : i, (0, a.jsx)(p.m, {
                                         position: "top",
@@ -470,7 +470,7 @@ let ek = e => {
             })]
         })
     },
-    eU = e => {
+    eD = e => {
         let {
             user: t,
             innerClassName: n
@@ -489,7 +489,7 @@ let ek = e => {
             })
         })
     },
-    eD = e => {
+    eU = e => {
         let {
             user: t,
             nameplate: n,
@@ -500,14 +500,14 @@ let ek = e => {
             role: "img",
             "aria-label": eP.intl.string(eP.t.SZeUdR),
             children: (0, a.jsxs)(h.M1G, {
-                children: [(0, a.jsx)(eU, {
+                children: [(0, a.jsx)(eD, {
                     user: i.mallow,
                     innerClassName: eS.ab
                 }), (0, a.jsxs)(h.Text, {
                     variant: "text-sm/semibold",
                     className: eS.OS,
                     children: [eP.intl.string(eP.t["yzW/fZ"]), " - 3"]
-                }), (0, a.jsx)(eU, {
+                }), (0, a.jsx)(eD, {
                     user: i.phibi,
                     innerClassName: eS.e9
                 }), (0, a.jsx)("div", {
@@ -522,17 +522,17 @@ let ek = e => {
                         skipEffectDisplayName: !0,
                         pendingAvatarDecoration: r
                     })
-                }), (0, a.jsx)(eU, {
+                }), (0, a.jsx)(eD, {
                     user: i.locke,
                     innerClassName: eS.e9
                 }), (0, a.jsxs)(h.Text, {
                     variant: "text-sm/semibold",
                     className: eS.OS,
                     children: [eP.intl.string(eP.t["NG43/6"]), " - 12"]
-                }), (0, a.jsx)(eU, {
+                }), (0, a.jsx)(eD, {
                     user: i.boom,
                     innerClassName: eS.bD
-                }), (0, a.jsx)(eU, {
+                }), (0, a.jsx)(eD, {
                     user: i.cherry,
                     innerClassName: eS.bD
                 })]
@@ -572,7 +572,7 @@ let ek = e => {
             }), _ && (0, a.jsx)(eG, {
                 user: n
             })]
-        }), N = e => (0, a.jsx)(eD, {
+        }), N = e => (0, a.jsx)(eU, {
             user: n,
             nameplate: e,
             avatarDecoration: x
@@ -665,7 +665,7 @@ let ek = e => {
             analyticsLocations: _,
             shouldCheckoutWithOrbs: x,
             tab: g
-        } = e, A = (0, m.bG)([U.default], () => U.default.getCurrentUser()), C = (0, ej.f)(i), {
+        } = e, A = (0, m.bG)([D.default], () => D.default.getCurrentUser()), C = (0, ej.f)(i), {
             previewingVariantIndex: N
         } = C, j = (0, z.Q)(i), I = (0, ev.q)(i, N), b = (0, Z.rb)(i, j);
         c()(null != b, "Selected product should not be null");
@@ -679,7 +679,7 @@ let ek = e => {
         }, [A]);
         let y = r.useMemo(() => (0, W.V6)(i.type, i.skuId), [i.type, i.skuId]);
         r.useEffect(() => {
-            D.default.track(eR.HAw.OPEN_MODAL, {
+            U.default.track(eR.HAw.OPEN_MODAL, {
                 type: eR.JJy.COLLECTIBLES_SHOP_DETAILS_MODAL,
                 source: p,
                 location_stack: T,

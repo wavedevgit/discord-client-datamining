@@ -38,12 +38,12 @@ let c = {
         }
     },
     g = {
-        binds: (0, d.isMac)() ? ["mod+["] : ["alt+left"],
+        binds: (0, d.isMac)() || (0, d.isMacWeb)() ? ["mod+["] : ["alt+left"],
         comboKeysBindGlobal: !0,
         action: () => ((0, a.OE)("keybind"), !1)
     },
     I = {
-        binds: (0, d.isMac)() ? ["mod+]"] : ["alt+right"],
+        binds: (0, d.isMac)() || (0, d.isMacWeb)() ? ["mod+]"] : ["alt+right"],
         comboKeysBindGlobal: !0,
         action: () => ((0, a.Qb)("keybind"), !1)
     }
