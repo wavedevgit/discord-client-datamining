@@ -56,7 +56,7 @@ let z = e => {
             null != t && e.push((0, T.A)(t)), await Promise.all(e)
         })
     }, [t]), s.useEffect(() => {
-        et(!0)
+        en(!0)
     }, []), (0, b.j)(), (0, g.P)(A.b);
     let z = s.useRef(null),
         W = s.useRef(null),
@@ -72,7 +72,8 @@ let z = e => {
         {
             scrollTargetId: Q,
             glowingPerkId: J,
-            scrollBlock: $
+            scrollBlock: $,
+            scrollInline: ee
         } = s.useMemo(() => {
             let e = new URLSearchParams(a.search),
                 t = e.get("perk"),
@@ -80,19 +81,20 @@ let z = e => {
             return null != t ? {
                 scrollTargetId: t,
                 glowingPerkId: t,
-                scrollBlock: "center"
+                scrollBlock: "center",
+                scrollInline: "center"
             } : null != n ? {
                 scrollTargetId: n,
                 scrollBlock: "start"
             } : {}
         }, [a.search]);
-    (0, V.z)(Q ?? "", null != Q, $);
-    let [ee, et] = s.useState(!1), en = (0, N.p)(), ei = s.useRef(null), [es, ea] = s.useState(!1), [el, er] = s.useState(!1), eo = null != en && null != K && K.status === w.Dmq.CANCELED, ec = (0, j.iU)(H.gD.PREMIUM_MONTH_TIER_2, en, K), ed = !el && eo, {
-        analyticsLocations: eu
-    } = (0, m.Ay)(_.A.PREMIUM_SUBSCRIBER_NITRO_HOME), [e_, em] = s.useState(!1), eA = (0, o.bG)([C.A], () => null != t ? C.A.getUserProfile(t) : null), eg = (0, f.A)({
+    (0, V.z)(Q ?? "", null != Q, $, ee);
+    let [et, en] = s.useState(!1), ei = (0, N.p)(), es = s.useRef(null), [ea, el] = s.useState(!1), [er, eo] = s.useState(!1), ec = null != ei && null != K && K.status === w.Dmq.CANCELED, ed = (0, j.iU)(H.gD.PREMIUM_MONTH_TIER_2, ei, K), eu = !er && ec, {
+        analyticsLocations: e_
+    } = (0, m.Ay)(_.A.PREMIUM_SUBSCRIBER_NITRO_HOME), [em, eA] = s.useState(!1), eg = (0, o.bG)([C.A], () => null != t ? C.A.getUserProfile(t) : null), eh = (0, f.A)({
         location: "PremiumSubscriberHome"
     });
-    return null != eA && (Z || null != q) ? (0, i.jsxs)(i.Fragment, {
+    return null != eg && (Z || null != q) ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)(d.GtU, {
             className: l()(Y.xW, {
                 [Y.J4]: n
@@ -101,22 +103,22 @@ let z = e => {
             children: [(0, i.jsx)(d.hLv, {
                 color: "nitro-pink",
                 className: l()(Y.kL, Y.Gd, {
-                    [Y.fv]: !eg
+                    [Y.fv]: !eh
                 }),
                 offsetBottom: .8 * !!n,
                 children: (0, i.jsxs)(m.f5, {
-                    value: eu,
+                    value: e_,
                     children: [(0, i.jsx)(c.L, {
-                        innerRef: ei,
-                        onChange: e => er(e),
+                        innerRef: es,
+                        onChange: e => eo(e),
                         threshold: .1,
                         active: !0,
                         children: (0, i.jsx)(y.A, {
-                            buttonVisibilityRef: ei,
+                            buttonVisibilityRef: es,
                             className: Y.v1,
-                            enablePremiumBrandRefresh: eg,
-                            userDiscountOffer: en,
-                            discountedPrice: ec
+                            enablePremiumBrandRefresh: eh,
+                            userDiscountOffer: ei,
+                            discountedPrice: ed
                         })
                     }), n && (0, i.jsx)(M.A, {
                         glowingPerkId: J
@@ -135,7 +137,7 @@ let z = e => {
                         noBackground: !0,
                         leftAlignHeaders: !0,
                         showAllPerksButton: (0, i.jsx)(U.A, {
-                            setIsAllPerksVisible: ea,
+                            setIsAllPerksVisible: el,
                             previousComponent: v.A2.HOME
                         })
                     }), (0, i.jsx)(R.A, {
@@ -150,9 +152,9 @@ let z = e => {
                     }), (0, i.jsx)(c.L, {
                         innerRef: W,
                         onChange: e => {
-                            e && !e_ && (I.default.track(w.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
-                                location_stack: eu
-                            }), em(!0))
+                            e && !em && (I.default.track(w.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+                                location_stack: e_
+                            }), eA(!0))
                         },
                         children: (0, i.jsx)("div", {
                             ref: W,
@@ -166,17 +168,17 @@ let z = e => {
                         alt: B.intl.string(B.t.X4IxWL)
                     })]
                 })
-            }), eo && null != ec && (0, i.jsx)(P.A, {
-                isVisible: ed && ee,
+            }), ec && null != ed && (0, i.jsx)(P.A, {
+                isVisible: eu && et,
                 premiumSubscription: K,
-                churnDiscountOffer: en,
-                discountedPrice: ec
+                churnDiscountOffer: ei,
+                discountedPrice: ed
             })]
         }), !n && (0, i.jsx)(G.A, {
-            isAllPerksVisible: es,
-            setIsAllPerksVisible: ea,
+            isAllPerksVisible: ea,
+            setIsAllPerksVisible: el,
             previousComponent: v.A2.HOME,
-            enablePremiumBrandRefresh: eg
+            enablePremiumBrandRefresh: eh
         })]
     }) : (0, i.jsx)("div", {
         className: l()(Y.kL, Y.Lq),

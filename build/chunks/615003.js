@@ -45,8 +45,8 @@ var i = n(627968),
     H = n(328717),
     F = n(953062),
     Y = n(105390),
-    W = n(796878),
-    q = n(156393),
+    q = n(796878),
+    W = n(156393),
     K = n(513570),
     z = n(622037),
     $ = n(788868),
@@ -114,17 +114,17 @@ let J = e => {
         (0, _.Tc)() && (ef && eU.push(o.M.RECURRING_3P_PROMOTION_POPOVER), e_ && eU.push(o.M.BOGO_2025_NITRO_TAB_BADGE), eM && eU.push(o.M.VOICE_FILTER_EARLY_ACCESS_PREMIUM_TAB_BADGE), eh && eU.push(o.M.Q2_2025_MARKETING_MOMENT_NITRO_TAB_BADGE_V2));
         let [ek, eV] = (0, m.kn)(eU, void 0, !0);
         eO && eG.push(o.M.CHURN_DISCOUNT_PREMIUM_TAB_COACHMARK), ep && eG.push(o.M.PREMIUM_GROUP_POPOVER), eT && eG.push(o.M.PREMIUM_ORBS_UPSELL_POPOVER), eb && eG.push(o.M.PREMIUM_ORBS_REWARDS_INTRO_POPOVER);
-        let [eB, eH] = (0, m.kn)(eG, void 0, !0), eF = (0, P.c)(a.C.PREMIUM_TAB), eY = (0, P.c)(a.C.PREMIUM_TAB_TOOLTIP), [eW, eq] = (0, m.Cc)(null != eF && "premiumTab" === eF.properties.properties.oneofKind ? o.M.PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE : null, eF?.promotionId ?? "", void 0, !0), [eK, ez] = (0, m.Cc)(ey ? o.M.PREMIUM_ORBS_REWARDS_DROP_POPOVER : null, eS ?? "", void 0, !0), e$ = null != eY && "premiumTabTooltip" === eY.properties.properties.oneofKind && eW === o.M.PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE;
+        let [eB, eH] = (0, m.kn)(eG, void 0, !0), eF = (0, P.c)(a.C.PREMIUM_TAB), eY = (0, P.c)(a.C.PREMIUM_TAB_TOOLTIP), [eq, eW] = (0, m.Cc)(null != eF && "premiumTab" === eF.properties.properties.oneofKind ? o.M.PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE : null, eF?.promotionId ?? "", void 0, !0), [eK, ez] = (0, m.Cc)(ey ? o.M.PREMIUM_ORBS_REWARDS_DROP_POPOVER : null, eS ?? "", void 0, !0), e$ = null != eY && "premiumTabTooltip" === eY.properties.properties.oneofKind && eq === o.M.PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE;
         if (r.useEffect(() => {
-                !0 === ee && null != ek && eV(X.i.AUTO_DISMISS), !0 === ee && null != eB && eH(X.i.AUTO_DISMISS), !0 === ee && null != eW && eq(X.i.AUTO_DISMISS), !0 === ee && null != eK && ez(X.i.AUTO_DISMISS)
-            }, [eV, ee, ek, eH, eB, eW, eq, eK, ez]), !J({
+                !0 === ee && null != ek && eV(X.i.AUTO_DISMISS), !0 === ee && null != eB && eH(X.i.AUTO_DISMISS), !0 === ee && null != eq && eW(X.i.AUTO_DISMISS), !0 === ee && null != eK && ez(X.i.AUTO_DISMISS)
+            }, [eV, ee, ek, eH, eB, eq, eW, eK, ez]), !J({
                 selected: ee
             })) return null;
         let eQ = () => {
             ej === o.M.FRACTIONAL_NITRO_DURATION_LEFT_PILL && eD(X.i.TAKE_ACTION), C.default.track(Q.HAw.NITRO_TAB_VISITED, {
                 badge_decorator: N,
                 has_premium: es
-            }), null != ek && eV(X.i.USER_DISMISS), null != eW && eq(X.i.USER_DISMISS), eB === o.M.PREMIUM_GROUP_POPOVER && eH(X.i.USER_DISMISS)
+            }), null != ek && eV(X.i.USER_DISMISS), null != eq && eW(X.i.USER_DISMISS), eB === o.M.PREMIUM_GROUP_POPOVER && eH(X.i.USER_DISMISS)
         };
         eL === $.xc.NONE || eh || (N = 7, n = (0, i.jsx)(b.A, {
             className: "",
@@ -142,7 +142,7 @@ let J = e => {
             componentId: eF.id,
             badgeCopy: eF.properties.properties.premiumTab.badgeLabel,
             acknowledgedBadgeCopy: eF.properties.properties.premiumTab.acknowledgedBadgeLabel,
-            isDismissed: eW !== o.M.PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE
+            isDismissed: eq !== o.M.PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE
         }), N = 9;
         else if (e_) n = (0, i.jsx)(M.A, {}), N = 0;
         else if (em) {
@@ -164,7 +164,7 @@ let J = e => {
             isTabSelected: ee,
             badgeCopy: Z.intl.string(Z.t.y2b7CA),
             offerExpiresAt: null
-        }), N = 2) : eh ? (n = (0, i.jsx)(q.d, {
+        }), N = 2) : eh ? (n = (0, i.jsx)(W.d, {
             expiresAt: eP
         }), N = 4) : null != eg ? (n = (0, i.jsx)(z.A, {
             copy: eg,
@@ -234,7 +234,7 @@ let J = e => {
             dismissPopover: ez,
             lastGrantedRewardAmount: ex,
             children: eZ
-        }) : e$ ? (0, i.jsx)(W.A, {
+        }) : e$ ? (0, i.jsx)(q.A, {
             children: eZ
         }) : eZ
     }

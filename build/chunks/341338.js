@@ -44,8 +44,8 @@ var i = n(627968),
     H = n(957565),
     F = n(580630),
     Y = n(371794),
-    W = n(970672),
-    q = n(109495),
+    q = n(970672),
+    W = n(109495),
     K = n(179389),
     z = n(893638),
     $ = n(283508),
@@ -104,7 +104,7 @@ class ed extends r.PureComponent {
             storeListing: s,
             fetchStoreListing: o
         } = this.props;
-        if (s !== e.storeListing && null != s && (0, W.W)(ea.XK.STORE_LISTING, {
+        if (s !== e.storeListing && null != s && (0, q.W)(ea.XK.STORE_LISTING, {
                 skuId: r,
                 slug: a
             }), (t !== e.locale || r !== e.skuId) && o(), i && !e.shouldFetchStatistics) {
@@ -429,7 +429,7 @@ class ed extends r.PureComponent {
         })
     }
     renderApplicationContentRating(e) {
-        return (0, i.jsx)(q.A, {
+        return (0, i.jsx)(W.A, {
             sku: e,
             className: eo.ZL
         })

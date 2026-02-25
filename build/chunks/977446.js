@@ -223,7 +223,8 @@ function P() {
             primaryAsset: null != n ? (0, s.jsx)("img", {
                 src: n,
                 alt: "",
-                width: 160
+                width: 160,
+                draggable: "false"
             }) : (0, s.jsx)(l.vXC, {
                 color: r.A.colors.ICON_MUTED,
                 "aria-hidden": !0

@@ -105,9 +105,9 @@ function M(e) {
         quest: n,
         questContent: h.uF.ACTIVITY_PANEL,
         sourceQuestContent: h.uF.ACTIVITY_PANEL
-    }), Y = n.userStatus?.enrolledAt != null, W = n.userStatus?.completedAt != null, q = (0, p.fc)(n), K = (0, m.mU)({
+    }), Y = n.userStatus?.enrolledAt != null, q = n.userStatus?.completedAt != null, W = (0, p.fc)(n), K = (0, m.mU)({
         quest: n,
-        taskDetails: q,
+        taskDetails: W,
         location: L.rE.ACTIVITY_PANEL,
         questContent: h.uF.ACTIVITY_PANEL,
         sourceQuestContent: h.uF.ACTIVITY_PANEL,
@@ -159,13 +159,13 @@ function M(e) {
                     children: K
                 })
             })]
-        }), Y && !W && (0, i.jsx)(b.A, {
+        }), Y && !q && (0, i.jsx)(b.A, {
             autoplay: g,
             className: j.t3,
             quest: n,
             questContent: h.uF.ACTIVITY_PANEL,
             location: L.rE.ACTIVITY_PANEL,
-            taskDetails: q,
+            taskDetails: W,
             sourceQuestContent: h.uF.ACTIVITY_PANEL,
             gameProfileSource: d.Ob.QuestActivityPanel
         }), (0, i.jsxs)("div", {
@@ -191,13 +191,13 @@ function M(e) {
                     loading: c,
                     icon: (0, O.Oz)(n)
                 })]
-            }), Y && !W && (0, i.jsx)(o.Button, {
+            }), Y && !q && (0, i.jsx)(o.Button, {
                 variant: "primary",
                 size: "sm",
                 fullWidth: !0,
                 text: P.intl.string(P.t.VN1Ajl),
                 onClick: B
-            }), W && (0, i.jsx)(o.Button, {
+            }), q && (0, i.jsx)(o.Button, {
                 variant: "primary",
                 size: "sm",
                 fullWidth: !0,

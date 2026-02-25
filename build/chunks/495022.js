@@ -35,6 +35,7 @@ function u(e) {
             }, e.id))
         }), (0, i.jsx)(l.A, {
             gap: 20,
+            className: d.jG,
             children: A.map(e => {
                 if (null != e) return (0, i.jsx)("div", {
                     id: e.id,

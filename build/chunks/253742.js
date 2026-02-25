@@ -139,7 +139,7 @@ function L(e) {
         })
     }
     let Y = (0, s.bG)([N.A], () => N.A.getVoiceVolume(h.id)),
-        W = (0, p.v)({
+        q = (0, p.v)({
             isSpeaking: M,
             voiceDb: Y,
             spreadDirection: p.O.INSET_ONLY,
@@ -169,7 +169,7 @@ function L(e) {
                         className: y.my,
                         style: {
                             backgroundImage: `url(${U})`,
-                            ...W
+                            ...q
                         },
                         children: null != k ? (0, i.jsx)(k, {
                             className: a()(y.tr, {

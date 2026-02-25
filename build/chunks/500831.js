@@ -81,11 +81,11 @@ let H = r.memo(function() {
         hasBugReporterAccess: S
     } = h.A.useConfig({
         location: "HeaderBar"
-    }), V = (0, o.bG)([j.A], () => j.A.isDeveloper), H = (0, R.Uk)("VoiceDareTitleBarButton"), F = (0, o.bG)([D.A, u.A], () => L.Q_.getSetting() && null != D.A.testModeApplicationId && null != u.A.getApplication(D.A.testModeApplicationId) && (0, A.A)(u.A.getApplication(D.A.testModeApplicationId))), Y = null !== e && t === x.RK.TITLE_BAR_LEFT, W = null === e;
+    }), V = (0, o.bG)([j.A], () => j.A.isDeveloper), H = (0, R.Uk)("VoiceDareTitleBarButton"), F = (0, o.bG)([D.A, u.A], () => L.Q_.getSetting() && null != D.A.testModeApplicationId && null != u.A.getApplication(D.A.testModeApplicationId) && (0, A.A)(u.A.getApplication(D.A.testModeApplicationId))), Y = null !== e && t === x.RK.TITLE_BAR_LEFT, q = null === e;
     r.useLayoutEffect(() => {
         w.Ay.setMinimumSize(800, 500)
     }, []);
-    let q = (0, O.NC)(),
+    let W = (0, O.NC)(),
         K = (0, o.bG)([M.A, y.A], () => (0, U._U)()),
         z = function(e) {
             let {
@@ -99,7 +99,7 @@ let H = r.memo(function() {
             showBackForwardButtons: s,
             showNotificationsInbox: Y,
             titlebarFastTravel: n,
-            showRecentsButton: W
+            showRecentsButton: q
         });
     if (K) return null;
     let $ = a()(k.x, {
@@ -107,7 +107,7 @@ let H = r.memo(function() {
     });
     return (0, i.jsx)(d.skg, {
         children: e => (0, i.jsx)(d.NPJ, {
-            theme: q,
+            theme: W,
             children: t => (0, i.jsx)(G.cq, {
                 className: t,
                 leading: (0, i.jsxs)(i.Fragment, {
@@ -128,7 +128,7 @@ let H = r.memo(function() {
                     }), H ? (0, i.jsx)(P.A, {}) : null, (0, i.jsx)(_.A, {
                         canShowReminder: !0,
                         className: $
-                    }), W && (0, i.jsx)(b.A, {
+                    }), q && (0, i.jsx)(b.A, {
                         ..."RECENTS" === z ? e : {},
                         className: $
                     }), S ? (0, i.jsx)(T.w, {
