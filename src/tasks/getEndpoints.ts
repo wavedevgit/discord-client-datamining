@@ -11,7 +11,7 @@ export default async function getEndpoints(build: Build): Promise<void> {
         if (chunkId === 'readme.md' || chunkId === 'libdiscore') continue;
         const content = await chunk(chunkId.replace('.js', ''));
         // skip ones without a createLoader reference
-        if (!content.includes('ME:"/users/@me",')) continue;
+        if (!content.includes('"/users/@me",')) continue;
         build.endpoints = await getEndpointsByCode(content);
     }
 }
