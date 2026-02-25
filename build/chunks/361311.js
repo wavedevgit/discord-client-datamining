@@ -1,48 +1,48 @@
-/** chunk id: 361311, original params: e,t,s (module,exports,require) **/
-s.d(t, {
-    A: () => o
+/** chunk id: 361311, original params: e,t,l (module,exports,require) **/
+l.d(t, {
+    A: () => u
 });
-var l = s(627968);
-s(64700);
-var n = s(397927),
-    a = s(429913),
-    i = s(102876),
-    r = s(985018);
+var s = l(627968);
+l(64700);
+var n = l(397927),
+    a = l(429913),
+    i = l(102876),
+    r = l(985018);
 
-function o(e) {
+function u(e) {
     let {
         applicationIds: t
-    } = e, s = (0, a.A)(t).filter(e => null != e);
-    if (0 === s.length) return null;
-    let o = null;
-    if (1 === s.length) o = r.intl.format(r.t.wQ6urw, {
-        applicationName: () => (0, l.jsx)(i.A, {
-            application: s[0]
-        }, s[0].id)
+    } = e, l = (0, a.A)(t).filter(e => null != e);
+    if (0 === l.length) return null;
+    let u = null;
+    if (1 === l.length) u = r.intl.format(r.t.wQ6urw, {
+        applicationName: () => (0, s.jsx)(i.A, {
+            application: l[0]
+        }, l[0].id)
     });
-    else if (2 === s.length) o = r.intl.format(r.t.C98CSN, {
-        applicationName: () => (0, l.jsx)(i.A, {
-            application: s[0]
-        }, s[0].id),
-        applicationName2: () => (0, l.jsx)(i.A, {
-            application: s[1]
-        }, s[1].id)
+    else if (2 === l.length) u = r.intl.format(r.t.C98CSN, {
+        applicationName: () => (0, s.jsx)(i.A, {
+            application: l[0]
+        }, l[0].id),
+        applicationName2: () => (0, s.jsx)(i.A, {
+            application: l[1]
+        }, l[1].id)
     });
     else {
-        let e = s[s.length - 1],
-            t = s.slice(0, -1);
-        o = r.intl.format(r.t.UxpwAh, {
-            applications: () => t.map(e => (0, l.jsx)(i.A, {
+        let e = l[l.length - 1],
+            t = l.slice(0, -1);
+        u = r.intl.format(r.t.UxpwAh, {
+            applications: () => t.map(e => (0, s.jsx)(i.A, {
                 application: e,
                 useComma: !0
             }, e.id)),
-            applicationNameLast: () => (0, l.jsx)(i.A, {
+            applicationNameLast: () => (0, s.jsx)(i.A, {
                 application: e
             }, e.id)
         })
     }
-    return (0, l.jsx)(n.Text, {
+    return (0, s.jsx)(n.Text, {
         variant: "text-sm/normal",
-        children: o
+        children: u
     })
 }

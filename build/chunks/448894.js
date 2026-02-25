@@ -44,10 +44,10 @@ function b(e) {
     a()(null != n, "Invite cannot be null");
     let {
         target_type: w,
-        target_user: k
+        target_user: D
     } = n;
-    a()(w === C.yV.STREAM && null != k, "invalid streaming invite");
-    let D = r === k.id,
+    a()(w === C.yV.STREAM && null != D, "invalid streaming invite");
+    let k = r === D.id,
         O = n.state === f.elq.ACCEPTING,
         U = l.useCallback(() => {
             let e = "noop";
@@ -58,23 +58,23 @@ function b(e) {
                 invite_message_id: T.id
             }, R)
         }, [n, T, R, P, v, S]),
-        G = null != b;
+        B = null != b;
     if (null == b) {
         if (null == n.guild) return (0, i.jsx)(x.A, {});
         b = (0, g.DY)(n.guild)
     }
-    let B = null != n.channel ? (0, m.OY)(n.channel) : null,
-        F = A.Ay.getName(k),
-        H = P || !M && G,
+    let G = null != n.channel ? (0, m.OY)(n.channel) : null,
+        F = A.Ay.getName(D),
+        H = P || !M && B,
         V = E.intl.string(E.t.I6JG46),
         W = "active";
-    G && !M ? (t = D ? E.intl.string(E.t.oBLoZJ) : E.intl.formatToPlainString(E.t["0QJmA+"], {
+    B && !M ? (t = k ? E.intl.string(E.t.oBLoZJ) : E.intl.formatToPlainString(E.t["0QJmA+"], {
         name: F
-    }), V = E.intl.string(E.t.Wdi5E1)) : (W = "active", P && (V = E.intl.string(E.t.Q1W99y), W = "secondary"), t = D ? E.intl.string(E.t["4hyaHu"]) : E.intl.formatToPlainString(E.t.QmlLEq, {
+    }), V = E.intl.string(E.t.Wdi5E1)) : (W = "active", P && (V = E.intl.string(E.t.Q1W99y), W = "secondary"), t = k ? E.intl.string(E.t["4hyaHu"]) : E.intl.formatToPlainString(E.t.QmlLEq, {
         name: F
     }));
-    let q = N === b.id && null != B ? (0, i.jsx)(_.A.Channel, {
-        channel: B
+    let q = N === b.id && null != G ? (0, i.jsx)(_.A.Channel, {
+        channel: G
     }) : E.intl.formatToPlainString(E.t.u0vaDE, {
         guildName: b.name
     });
@@ -86,10 +86,10 @@ function b(e) {
                 className: I.iH,
                 children: [(0, i.jsx)(_.A.Icon, {
                     guild: b,
-                    onClick: G && M ? U : void 0
+                    onClick: B && M ? U : void 0
                 }), (0, i.jsx)(_.A.Info, {
                     title: t,
-                    onClick: G && M ? U : void 0,
+                    onClick: B && M ? U : void 0,
                     children: q
                 })]
             }), (0, i.jsx)(s.$nd, {

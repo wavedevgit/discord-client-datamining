@@ -47,12 +47,12 @@ function T(e) {
         if (t === v.id) return !0;
         let n = p.A.getGameByApplication(v);
         return null != n && t === n.id
-    })), w = (0, l.bG)([h.A], () => h.A.getCurrentUserActiveStream()), k = (0, l.bG)([g.A], () => g.A.getChannelId()), D = f.default.extractTimestamp(T.id) + C.M < Date.now(), O = (0, i.jsx)(i.Fragment, {
+    })), w = (0, l.bG)([h.A], () => h.A.getCurrentUserActiveStream()), D = (0, l.bG)([g.A], () => g.A.getChannelId()), k = f.default.extractTimestamp(T.id) + C.M < Date.now(), O = (0, i.jsx)(i.Fragment, {
         children: (0, a.Wf)(T, S, t)
     }), {
         analyticsLocations: U
-    } = (0, o.Ay)(y, s.A.REQUEST_TO_STREAM_INVITE_EMBED), G = b.intl.string(I.default["5+172e"]), B = !1;
-    return D ? (G = b.intl.string(I.default.u4QmWl), B = !0) : null != w ? (G = b.intl.string(I.default.P0wwmM), B = !0) : k !== S.id ? (G = b.intl.string(I.default.qRXats), B = !0) : null == M && (G = b.intl.string(I.default["43zohO"]), B = !0), (0, i.jsx)(d.h, {
+    } = (0, o.Ay)(y, s.A.REQUEST_TO_STREAM_INVITE_EMBED), B = b.intl.string(I.default["5+172e"]), G = !1;
+    return k ? (B = b.intl.string(I.default.u4QmWl), G = !0) : null != w ? (B = b.intl.string(I.default.P0wwmM), G = !0) : D !== S.id ? (B = b.intl.string(I.default.qRXats), G = !0) : null == M && (B = b.intl.string(I.default["43zohO"]), G = !0), (0, i.jsx)(d.h, {
         header: b.intl.string(I.default.nAyuPp),
         title: v.name,
         staticBannerSrc: j,
@@ -61,9 +61,9 @@ function T(e) {
         iconSrc: P ?? void 0,
         info: O,
         actions: T.author.id === t ? [] : [{
-            label: G,
+            label: B,
             trackingArea: c.kY.STREAM,
-            disabled: B,
+            disabled: G,
             onClick: () => {
                 null != M && ((0, x.isWindows)() ? (0, m.A)(M.pid) : (0, r.mMO)(async () => {
                     let {
@@ -83,7 +83,7 @@ function T(e) {
             channelId: S.id,
             messageId: T.id,
             onView: N,
-            isDeadEnd: D
+            isDeadEnd: k
         }
     })
 }

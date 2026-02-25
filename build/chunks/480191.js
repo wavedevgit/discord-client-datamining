@@ -1,6 +1,6 @@
 /** chunk id: 480191, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => k
+    A: () => D
 });
 var i = n(627968),
     l = n(64700),
@@ -35,14 +35,14 @@ var i = n(627968),
     M = n(720401),
     w = n(278664);
 
-function k(e) {
+function D(e) {
     let {
         embedUrl: t,
         message: n,
         channel: r
-    } = e, k = l.useRef(null), D = l.useRef(null), O = (0, j.D)(t, n), {
+    } = e, D = l.useRef(null), k = l.useRef(null), O = (0, j.D)(t, n), {
         setPopout: U
-    } = (0, f.A)(n.id, R.Fd), G = (0, x.VL)(n, r, U, !0), B = I.kt.useSetting(), F = (0, y.j)(), [H, V] = l.useState(!1), [W, q] = l.useState(O?.coverImage == null), Y = (0, o.bG)([b.Ay, T.default], () => b.Ay.isMember(O?.guildId, T.default.getCurrentUser()?.id), [O]), z = (0, o.bG)([b.Ay], () => O?.authorId != null ? b.Ay.getMember(O.guildId, O.authorId) : null), K = (0, m.A)(z?.avatarDecoration != null ? z?.avatarDecoration : O?.user?.avatarDecoration), [Q, J, X] = l.useMemo(() => [z?.colorString ?? "inherit", z?.colorStrings ?? null, z?.colorRoleId], [z]), Z = (0, C.gn)(z?.guildId, O?.authorId ?? void 0, J), {
+    } = (0, f.A)(n.id, R.Fd), B = (0, x.VL)(n, r, U, !0), G = I.kt.useSetting(), F = (0, y.j)(), [H, V] = l.useState(!1), [W, q] = l.useState(O?.coverImage == null), Y = (0, o.bG)([b.Ay, T.default], () => b.Ay.isMember(O?.guildId, T.default.getCurrentUser()?.id), [O]), z = (0, o.bG)([b.Ay], () => O?.authorId != null ? b.Ay.getMember(O.guildId, O.authorId) : null), Q = (0, m.A)(z?.avatarDecoration != null ? z?.avatarDecoration : O?.user?.avatarDecoration), [K, J, X] = l.useMemo(() => [z?.colorString ?? "inherit", z?.colorStrings ?? null, z?.colorRoleId], [z]), Z = (0, C.gn)(z?.guildId, O?.authorId ?? void 0, J), {
         reducedMotion: $
     } = l.useContext(c.CZY), [ee, et] = l.useState(!1), en = l.useCallback(() => {
         V(!0)
@@ -60,7 +60,7 @@ function k(e) {
     }, [O, r, Y]);
     if (null == O) return null;
     let er = (0, v.F_)({
-            avatarDecoration: K,
+            avatarDecoration: Q,
             size: (0, h.Te)(c._3J.SIZE_40),
             canAnimate: ee
         }),
@@ -82,10 +82,10 @@ function k(e) {
                 className: a()(M.xn, {
                     [M.p6]: O.shouldSpoiler
                 }),
-                onContextMenu: G,
+                onContextMenu: B,
                 onError: () => q(!0)
             }) : (0, i.jsx)(p.A, {
-                src: !(F && (B || H)) && ed ? `${eo}?format=png` : eo,
+                src: !(F && (G || H)) && ed ? `${eo}?format=png` : eo,
                 backgroundSrc: `${eo}?format=png`,
                 alt: P.intl.string(P.t.rIbh8H),
                 aspectRatio: 16 / 9,
@@ -93,7 +93,7 @@ function k(e) {
                     [M.p6]: O.shouldSpoiler
                 }),
                 imageChildClassName: M.q_,
-                onContextMenu: G,
+                onContextMenu: B,
                 onError: () => q(!0)
             })), null != O.coverImageOverlayText && (0, i.jsx)(c.DUT, {
                 onClick: el,
@@ -129,7 +129,7 @@ function k(e) {
             }), (0, i.jsxs)("div", {
                 className: M._5,
                 children: [null != O.authorId && null != ea && (0, i.jsx)(E.A, {
-                    targetElementRef: D,
+                    targetElementRef: k,
                     userId: O.authorId,
                     guildId: O.guildId,
                     channelId: r.id,
@@ -143,7 +143,7 @@ function k(e) {
                         onMouseLeave: es,
                         children: (0, i.jsx)(c.euF, {
                             ...e,
-                            ref: D,
+                            ref: k,
                             size: c._3J.SIZE_40,
                             src: ea,
                             "aria-label": P.intl.string(P.t.KXz3XB),
@@ -175,11 +175,11 @@ function k(e) {
                             authorName: O.authorName,
                             authorNameHook: () => null == O.authorId ? (0, i.jsx)(c.V30, {
                                 name: O.authorName,
-                                colorString: Q,
+                                colorString: K,
                                 colorStrings: Z,
                                 className: M.fh
                             }) : (0, i.jsx)(E.A, {
-                                targetElementRef: k,
+                                targetElementRef: D,
                                 userId: O.authorId,
                                 guildId: O.guildId,
                                 channelId: r.id,
@@ -189,9 +189,9 @@ function k(e) {
                                 newAnalyticsLocations: [u.A.USERNAME],
                                 children: e => (0, i.jsx)(c.V30, {
                                     ...e,
-                                    ref: k,
+                                    ref: D,
                                     name: O.authorName,
-                                    colorString: Q,
+                                    colorString: K,
                                     colorStrings: Z,
                                     className: M.fh
                                 })

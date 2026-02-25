@@ -34,12 +34,12 @@ var i = n(627968),
     P = n(403362),
     M = n(218394),
     w = n(255345),
-    k = n(652215),
-    D = n(360469),
+    D = n(652215),
+    k = n(360469),
     O = n(768349),
     U = n(985018),
-    G = n(897251);
-let B = l.memo(e => {
+    B = n(897251);
+let G = l.memo(e => {
     let {
         start: t
     } = e, [n, i] = l.useState(0), r = (0, M.j)(), a = (0, s.bG)([u.A], () => u.A.useReducedMotion), d = !1 === r || a;
@@ -50,7 +50,7 @@ let B = l.memo(e => {
         }), () => e.stop()
     }, [d, t]), (0, b.f)(n)
 });
-B.displayName = "ActivityRuntimeCounter";
+G.displayName = "ActivityRuntimeCounter";
 let F = l.memo(function(e) {
     let t, {
             application: n,
@@ -76,7 +76,7 @@ let F = l.memo(function(e) {
         }), [F, n.id]),
         Y = V?.userIds,
         z = (0, s.yK)([N.default], () => Array.from(Y ?? []).map(e => N.default.getUser(e)).filter(P.Vq), [Y]),
-        K = (0, s.bG)([y.A], () => {
+        Q = (0, s.bG)([y.A], () => {
             if (null == Y) return null;
             for (let e of Y) {
                 let t = y.A.findActivity(e, e => e.application_id === n.id);
@@ -84,10 +84,10 @@ let F = l.memo(function(e) {
             }
             return null
         }, [n.id, Y]),
-        Q = K?.details,
+        K = Q?.details,
         J = l.useMemo(() => {
             let e = new T.Ay(n);
-            return null == e.embeddedActivityConfig && (e.embeddedActivityConfig = D.Gl), e
+            return null == e.embeddedActivityConfig && (e.embeddedActivityConfig = k.Gl), e
         }, [n]),
         X = (0, p.vG)({
             userId: H,
@@ -104,7 +104,7 @@ let F = l.memo(function(e) {
         ee = l.useId(),
         et = null != q && q.isLaunching && q.componentId === ee,
         en = async () => {
-            j.default.track(k.HAw.ACTIVITY_INSTANCE_EMBED_CLICKED, {
+            j.default.track(D.HAw.ACTIVITY_INSTANCE_EMBED_CLICKED, {
                 application_id: n.id,
                 channel_id: r,
                 channel_type: M?.type,
@@ -125,7 +125,7 @@ let F = l.memo(function(e) {
                 componentId: ee
             })
         }, ei = $.disabled ? U.intl.string(U.t.JBnc7N) : U.intl.string(U.t.cX9uLZ), el = (0, I.F)(J, () => {
-            j.default.track(k.HAw.ACTIVITY_INSTANCE_EMBED_CLICKED, {
+            j.default.track(D.HAw.ACTIVITY_INSTANCE_EMBED_CLICKED, {
                 application_id: n.id,
                 channel_id: r,
                 channel_type: M?.type,
@@ -138,9 +138,9 @@ let F = l.memo(function(e) {
         });
     $.disabled && (t = $.tooltip);
     let ea = z.length,
-        es = K?.timestamps?.start ?? K?.created_at,
+        es = Q?.timestamps?.start ?? Q?.created_at,
         eo = (0, C.y)({
-            activity: K,
+            activity: Q,
             activityUsersCount: ea
         }),
         ed = [{
@@ -156,18 +156,18 @@ let F = l.memo(function(e) {
         title: n.name,
         iconSrc: er,
         info: (0, i.jsx)("div", {
-            className: G.QR,
+            className: B.QR,
             children: Z ? (0, i.jsx)(d.Text, {
                 variant: "text-xs/medium",
                 color: "none",
                 children: ei
             }) : (0, i.jsxs)(i.Fragment, {
-                children: [null != Q && (0, i.jsxs)("div", {
-                    className: G.oL,
+                children: [null != K && (0, i.jsxs)("div", {
+                    className: B.oL,
                     children: [null != es && (0, i.jsxs)("div", {
-                        className: G.DT,
+                        className: B.DT,
                         children: [(0, i.jsx)("div", {
-                            className: G.y9,
+                            className: B.y9,
                             children: (0, i.jsx)(eo.Icon, {
                                 size: "xxs",
                                 color: "currentColor"
@@ -175,12 +175,12 @@ let F = l.memo(function(e) {
                         }), (0, i.jsx)(d.Text, {
                             variant: "text-xs/medium",
                             color: "none",
-                            children: (0, i.jsx)(B, {
+                            children: (0, i.jsx)(G, {
                                 start: es
                             })
                         })]
                     }), (0, i.jsxs)("div", {
-                        className: a()(G.DT, G.PK),
+                        className: a()(B.DT, B.PK),
                         children: [(0, i.jsx)("div", {
                             children: (0, i.jsx)(d.ueQ, {
                                 size: "xxs",
@@ -190,7 +190,7 @@ let F = l.memo(function(e) {
                             variant: "text-xs/medium",
                             color: "none",
                             lineClamp: 1,
-                            children: Q
+                            children: K
                         })]
                     })]
                 }), ea > 0 && (0, i.jsx)(C.$, {

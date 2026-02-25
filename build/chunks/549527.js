@@ -34,13 +34,13 @@ var i = n(627968),
     P = n(994500),
     M = n(309010),
     w = n(287809),
-    k = n(954571),
-    D = n(709634),
+    D = n(954571),
+    k = n(709634),
     O = n(652215),
     U = n(381941),
-    G = n(8185);
+    B = n(8185);
 
-function B(e) {
+function G(e) {
     let {
         message: t,
         snapshot: n,
@@ -56,22 +56,22 @@ function B(e) {
             channelId: e.id,
             baseChannelId: i,
             guildId: e.guild_id
-        }), (0, T.iN)(i), k.default.track(O.HAw.MODERATOR_REPORT_ORIGINAL_MESSAGE_LINK_CLICKED, {
+        }), (0, T.iN)(i), D.default.track(O.HAw.MODERATOR_REPORT_ORIGINAL_MESSAGE_LINK_CLICKED, {
             moderator_report_id: t.channel_id,
             destination_channel_id: i,
             destination_message_id: t.id
         }))
     }, [t]);
     return null == h ? null : (0, i.jsxs)(d.DUT, {
-        className: G.xQ,
+        className: B.xQ,
         onClick: p,
         "aria-label": h.accessibilityLabel,
         children: [null != h.originIconUrl ? (0, i.jsx)("img", {
-            className: G.yl,
+            className: B.yl,
             src: h.originIconUrl,
             alt: ""
         }) : null, (0, i.jsx)(r.EYj, {
-            className: G.PJ,
+            className: B.PJ,
             variant: "text-sm/medium",
             color: "none",
             children: `${h.originLabel}  •  ${h.timestampLabel}`
@@ -116,7 +116,7 @@ function F(e) {
         }
     }(t, r);
     return (0, i.jsx)(g.A, {
-        childrenExecutedCommand: (0, i.jsx)(D.A, {
+        childrenExecutedCommand: (0, i.jsx)(k.A, {
             reportingUserId: a,
             guildId: r.guild_id,
             channel: r,
@@ -146,7 +146,7 @@ function F(e) {
         }),
         disableInteraction: !0,
         compact: !1,
-        className: G.iU,
+        className: B.iU,
         author: o
     })
 }
@@ -186,9 +186,9 @@ function H(e) {
         }),
         C = (0, a.bG)([N.A], () => N.A.getChannel(t.channel_id));
     return null == C ? null : (0, i.jsx)("div", {
-        className: G.kL,
+        className: B.kL,
         children: (0, i.jsxs)("div", {
-            className: G.Qs,
+            className: B.Qs,
             children: [(0, i.jsx)(F, {
                 mergedMessageRecord: d,
                 content: A,
@@ -206,8 +206,8 @@ function H(e) {
                 isInteracting: !1,
                 isMessageSnapshot: !0,
                 renderThreadAccessory: !1,
-                className: G.Mf
-            }), (0, i.jsx)(B, {
+                className: B.Mf
+            }), (0, i.jsx)(G, {
                 message: t,
                 snapshot: n,
                 index: r

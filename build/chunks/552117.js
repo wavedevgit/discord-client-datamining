@@ -34,9 +34,9 @@ var i = n(627968),
     P = n(788868),
     M = n(985018),
     w = n(884795),
-    k = n(906121);
+    D = n(906121);
 
-function D(e) {
+function k(e) {
     T.default.track(R.HAw.PREMIUM_PROMOTION_OPENED, {
         location_page: null != e.guild_id ? R.liQ.GUILD_CHANNEL : R.liQ.DM_CHANNEL,
         location_section: R.JJy.STICKER_POPOUT
@@ -56,7 +56,7 @@ function O(e) {
         }), (0, i.jsxs)(p.A, {
             direction: p.A.Direction.VERTICAL,
             justify: p.A.Justify.CENTER,
-            className: k.bM,
+            className: D.bM,
             children: [(0, i.jsx)(u.Text, {
                 variant: "text-md/semibold",
                 children: (0, i.jsx)(o.A, {
@@ -146,7 +146,7 @@ let U = e => {
             })]
         })
     },
-    G = e => {
+    B = e => {
         let t, {
                 sticker: n,
                 channel: r,
@@ -156,9 +156,9 @@ let U = e => {
             [S, y] = l.useState(null),
             [N, L] = l.useState(!1),
             U = b.default.getCurrentUser(),
-            G = v.Ay.canUseCustomStickersEverywhere(U),
-            B = (0, s.bG)([I.A], () => I.A.getGuild(n.guild_id)),
-            F = null != B,
+            B = v.Ay.canUseCustomStickersEverywhere(U),
+            G = (0, s.bG)([I.A], () => I.A.getGuild(n.guild_id)),
+            F = null != G,
             [H, V] = l.useState(!1),
             [W, q] = l.useState(null),
             Y = l.useMemo(() => ({
@@ -171,17 +171,17 @@ let U = e => {
                 guild_id: r.getGuildId(),
                 ...(0, h.dI)(r)
             }),
-            K = {
-                stickerSourceGuild: B,
+            Q = {
+                stickerSourceGuild: G,
                 refreshPositionKey: C
             },
-            Q = l.useRef(K);
+            K = l.useRef(Q);
         l.useEffect(() => {
-            Q.current = K
+            K.current = Q
         }), l.useEffect(() => {
             let {
                 stickerSourceGuild: e
-            } = Q.current;
+            } = K.current;
             (async () => {
                 (null == e || e.features.has(R.GuildFeatures.DISCOVERABLE)) && y(await (0, A.A)(n.id)), L(!0)
             })()
@@ -190,16 +190,16 @@ let U = e => {
             X = null != S,
             Z = !1,
             $ = "Custom Sticker Popout";
-        G ? t = F ? J ? M.intl.string(M.t.fZ0DiG) : M.intl.string(M.t["1f6D9m"]) : X ? M.intl.string(M.t.yHmoR9) : M.intl.string(M.t.vZaScH) : F ? (t = J ? M.intl.string(M.t.jNphpt) : M.intl.string(M.t.lyD5ZW), Z = !0, $ = "Custom Sticker Popout (Upsell)") : X ? (t = M.intl.string(M.t.IuXYch), Z = !0, $ = "Custom Sticker Popout (Upsell)") : (t = M.intl.format(M.t.hGWuxU, {
+        B ? t = F ? J ? M.intl.string(M.t.fZ0DiG) : M.intl.string(M.t["1f6D9m"]) : X ? M.intl.string(M.t.yHmoR9) : M.intl.string(M.t.vZaScH) : F ? (t = J ? M.intl.string(M.t.jNphpt) : M.intl.string(M.t.lyD5ZW), Z = !0, $ = "Custom Sticker Popout (Upsell)") : X ? (t = M.intl.string(M.t.IuXYch), Z = !0, $ = "Custom Sticker Popout (Upsell)") : (t = M.intl.format(M.t.hGWuxU, {
             openPremiumSettings: () => {
-                D(r), o()
+                k(r), o()
             }
         }), $ = "Custom Sticker Popout (Soft Upsell)");
-        let ee = !Z && !F && X && G;
+        let ee = !Z && !F && X && B;
         if (l.useEffect(() => {
                 let {
                     refreshPositionKey: e
-                } = Q.current;
+                } = K.current;
                 e()
             }, [N, S]), (0, m.Ay)(() => {
                 T.default.track(R.HAw.OPEN_POPOUT, {
@@ -212,7 +212,7 @@ let U = e => {
         {
             let e;
             return (0, i.jsxs)(f.Uq, {
-                className: k.Bm,
+                className: D.Bm,
                 children: [(e = async () => {
                     if (null == S || F) return;
                     o();
@@ -221,12 +221,12 @@ let U = e => {
                         await _.A.joinGuild(e), _.A.transitionToGuildSync(e)
                     } catch {}
                 }, (0, i.jsxs)("div", {
-                    className: k.gH,
+                    className: D.gH,
                     children: [(0, i.jsx)(O, {
                         description: t,
                         sticker: n
                     }), Z && (0, i.jsx)(E.A, {
-                        className: k.lI,
+                        className: D.lI,
                         subscriptionTier: P.pe.TIER_2,
                         size: c.$n.Sizes.SMALL,
                         fullWidth: !0,
@@ -238,7 +238,7 @@ let U = e => {
                         premiumModalAnalyticsLocation: Y
                     }), ee && (0, i.jsx)("div", {
                         "data-button-hoisted-classname-wrapper": !0,
-                        className: k.lI,
+                        className: D.lI,
                         children: (0, i.jsx)(u.Button, {
                             variant: "primary",
                             size: "sm",
@@ -247,16 +247,16 @@ let U = e => {
                             onClick: e
                         })
                     })]
-                })), (null != B || null != S) && (() => {
+                })), (null != G || null != S) && (() => {
                     if (!X && !F) return;
                     let e = (S?.stickers ?? []).slice(0, 13).filter(e => e.id !== n.id).slice(0, 12),
-                        t = null != S ? g.GO.createFromDiscoverableGuild(S) : g.GO.createFromGuildRecord(B);
+                        t = null != S ? g.GO.createFromDiscoverableGuild(S) : g.GO.createFromGuildRecord(G);
                     return (0, i.jsxs)("div", {
-                        className: k.tl,
+                        className: D.tl,
                         children: [(0, i.jsx)(u.Text, {
                             variant: "text-sm/normal",
                             color: "text-subtle",
-                            className: k.YW,
+                            className: D.YW,
                             children: F ? M.intl.string(M.t.kx6pEG) : M.intl.string(M.t.pDE7Gb)
                         }), (0, i.jsx)(x.G7, {
                             expressionSourceGuild: t,
@@ -267,18 +267,18 @@ let U = e => {
                                 onClick: () => {
                                     C(), V(!H)
                                 },
-                                className: k.wK,
+                                className: D.wK,
                                 children: (0, i.jsxs)(p.A, {
                                     children: [(0, i.jsx)(u.Text, {
-                                        className: k.__invalid_showMoreEmojisLabel,
+                                        className: D.__invalid_showMoreEmojisLabel,
                                         variant: "text-xs/normal",
                                         color: "none",
                                         children: M.intl.string(M.t.vtH5hn)
                                     }), (0, i.jsx)(u.abt, {
                                         size: "md",
                                         color: "currentColor",
-                                        className: a()(k.ZB, {
-                                            [k.cP]: !H
+                                        className: a()(D.ZB, {
+                                            [D.cP]: !H
                                         })
                                     })]
                                 })
@@ -286,12 +286,12 @@ let U = e => {
                                 wrap: p.A.Wrap.WRAP,
                                 align: p.A.Align.START,
                                 justify: p.A.Justify.START,
-                                className: k.LX,
+                                className: D.LX,
                                 children: e.map(e => (0, i.jsx)(d.m, {
                                     text: e.name,
                                     ...f.Uk,
                                     children: (0, i.jsx)("div", {
-                                        className: a()(k.Th, {
+                                        className: a()(D.Th, {
                                             [w.vT]: null != W && W !== e.id
                                         }),
                                         onMouseEnter: () => {
@@ -318,7 +318,7 @@ let U = e => {
         }
     };
 
-function B(e) {
+function G(e) {
     let {
         channel: t,
         closePopout: n,
@@ -330,7 +330,7 @@ function B(e) {
             sticker: l,
             description: M.intl.format(M.t.hGWuxU, {
                 openPremiumSettings: () => {
-                    n(), D(t)
+                    n(), k(t)
                 }
             })
         })
@@ -348,12 +348,12 @@ let F = e => {
         closePopout: l,
         channel: n,
         refreshPositionKey: r
-    }) : null != a && (0, N.Xw)(a) ? (0, i.jsx)(G, {
+    }) : null != a && (0, N.Xw)(a) ? (0, i.jsx)(B, {
         sticker: a,
         channel: n,
         closePopout: l,
         refreshPositionKey: r
-    }) : s ? s && null == a ? (0, i.jsx)(B, {
+    }) : s ? s && null == a ? (0, i.jsx)(G, {
         channel: n,
         closePopout: l,
         sticker: t

@@ -39,22 +39,22 @@ let L = (0, s.animated)(c.abt),
             expansionSpring: P,
             isAnimating: M,
             isExpanded: w,
-            isInteracting: k,
-            contentPosition: D,
+            isInteracting: D,
+            contentPosition: k,
             toggleExpanded: O,
             sourceQuestContent: U
         } = e, {
-            ref: G,
-            height: B
+            ref: B,
+            height: G
         } = (0, u.Ay)(), [F, H] = l.useState(null), [V, W] = l.useState(null), q = (0, m.A)(e => {
             let t = e.target;
             H(t.offsetWidth), W(t.scrollWidth)
-        }), Y = (0, _.w)(q), z = (0, v.a3)(r), K = r === h.uF.QUESTS_EMBED, Q = (0, p.wT)(n, S.rE.QUESTS_CARD, r, U), J = n.userStatus?.completedAt != null, X = (0, A.Ut)(), Z = (0, g.S5)(n.config.expiresAt), $ = (0, g.S5)(n.config.rewardsConfig.rewardsExpireAt), ee = l.useMemo(() => null != n.config.cosponsorMetadata, [n]), et = e => {
+        }), Y = (0, _.w)(q), z = (0, v.a3)(r), Q = r === h.uF.QUESTS_EMBED, K = (0, p.wT)(n, S.rE.QUESTS_CARD, r, U), J = n.userStatus?.completedAt != null, X = (0, A.Ut)(), Z = (0, g.S5)(n.config.expiresAt), $ = (0, g.S5)(n.config.rewardsConfig.rewardsExpireAt), ee = l.useMemo(() => null != n.config.cosponsorMetadata, [n]), et = e => {
             e.stopPropagation(), e.currentTarget.blur(), O(), X({
                 questId: n.id,
                 questContent: r,
                 questContentCTA: w ? x.Cy.COLLAPSE : x.Cy.EXPAND,
-                questContentPosition: D,
+                questContentPosition: k,
                 sourceQuestContent: U
             })
         }, en = (0, i.jsx)(E.Ay, {
@@ -64,21 +64,21 @@ let L = (0, s.animated)(c.abt),
             quest: n,
             separatorSpacing: E.C8.MEDIUM,
             theme: y.NJ.DARK,
-            withGameTile: !K || null == n.config.cosponsorMetadata
+            withGameTile: !Q || null == n.config.cosponsorMetadata
         });
         return (0, i.jsxs)("div", {
             className: a()(j.nw, {
                 [j.fu]: z,
-                [j.Gg]: K,
+                [j.Gg]: Q,
                 [j.e5]: "xs" === R
             }),
             "aria-label": N.intl.string(N.t.dcl9MQ),
             style: {
-                height: z ? B : void 0
+                height: z ? G : void 0
             },
             children: [(0, i.jsx)(f.A, {
                 quest: n,
-                isInteracting: k,
+                isInteracting: D,
                 containerClassName: j.v7,
                 imageSize: {
                     width: 660,
@@ -90,7 +90,7 @@ let L = (0, s.animated)(c.abt),
                 "aria-expanded": w,
                 children: [(0, i.jsxs)(s.animated.div, {
                     className: a()(j.VW, {
-                        [j.eX]: K
+                        [j.eX]: Q
                     }),
                     style: {
                         y: z ? P.to({
@@ -129,17 +129,17 @@ let L = (0, s.animated)(c.abt),
                                     })]
                                 }), (0, i.jsx)(c.Text, {
                                     variant: "text-xs/medium",
-                                    children: Q
+                                    children: K
                                 })]
                             })]
                         })
                     }), (0, i.jsx)(s.animated.div, {
                         ref: e => {
-                            G.current = e
+                            B.current = e
                         },
                         className: a()(j.Yu, {
                             [j.fu]: z,
-                            [j.Gg]: K
+                            [j.Gg]: Q
                         }),
                         style: {
                             opacity: (0, T.a)(P.to({
@@ -153,7 +153,7 @@ let L = (0, s.animated)(c.abt),
                             className: j.uA,
                             children: [(0, i.jsxs)("div", {
                                 className: j._V,
-                                children: [en, K ? null : (0, i.jsx)(I.A, {
+                                children: [en, Q ? null : (0, i.jsx)(I.A, {
                                     color: "always-white"
                                 })]
                             }), (0, i.jsxs)("div", {
@@ -195,10 +195,10 @@ let L = (0, s.animated)(c.abt),
                     children: [(0, i.jsx)(C.C, {
                         questContent: r,
                         quest: n,
-                        questContentPosition: D,
+                        questContentPosition: k,
                         shouldShowDisclosure: !0,
                         hideLearnMore: z,
-                        showShareLink: !t && K,
+                        showShareLink: !t && Q,
                         sourceQuestContent: U,
                         children: e => (0, i.jsx)(s.animated.div, {
                             style: {

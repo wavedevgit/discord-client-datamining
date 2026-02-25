@@ -84,8 +84,8 @@ function v(e) {
         startAuthorization: P,
         accountLinkButtonRef: M,
         renderAccountLinkUpsell: w
-    } = e, k = (0, s.bG)([g.A], () => g.A.getMessages(a.id)), {
-        actions: D,
+    } = e, D = (0, s.bG)([g.A], () => g.A.getMessages(a.id)), {
+        actions: k,
         hasAccountLinkButton: O
     } = l.useMemo(() => {
         let e = [],
@@ -102,7 +102,7 @@ function v(e) {
                     })
                 }
             }] : null != b && (e = [b], i = !1), e.length > 0)
-            if (!(0, x.p)(t.id, k, n.id, j)) return {
+            if (!(0, x.p)(t.id, D, n.id, j)) return {
                 actions: [],
                 hasAccountLinkButton: !1
             };
@@ -122,17 +122,17 @@ function v(e) {
             actions: e,
             hasAccountLinkButton: l
         }
-    }, [p, h, b, k, j, n.id, t.id, R, P, L, M]), U = D.some(e => e.trackingArea === u.kY.CLOUD_PLAY);
+    }, [p, h, b, D, j, n.id, t.id, R, P, L, M]), U = k.some(e => e.trackingArea === u.kY.CLOUD_PLAY);
     (0, f.A)(U, L);
-    let G = D.length > 0,
-        B = l.useMemo(() => (0, i.jsx)(o.Text, {
+    let B = k.length > 0,
+        G = l.useMemo(() => (0, i.jsx)(o.Text, {
             variant: "text-xs/medium",
             className: I.h_,
             color: "none",
             lineClamp: 3,
-            children: (0, A.BE)(t, r, a, m, G)
-        }), [t, r, a, m, G]);
-    return 0 === D.length ? (0, i.jsx)(T, {
+            children: (0, A.BE)(t, r, a, m, B)
+        }), [t, r, a, m, B]);
+    return 0 === k.length ? (0, i.jsx)(T, {
         message: t,
         applicationName: r,
         iconSrc: y,
@@ -147,8 +147,8 @@ function v(e) {
             onClickBanner: S,
             bannerAspectRatio: c.u.ACTIVITY,
             iconSrc: y ?? void 0,
-            info: B,
-            actions: D,
+            info: G,
+            actions: k,
             primaryActionFirst: !0,
             onClickContent: S,
             trackingConfig: {

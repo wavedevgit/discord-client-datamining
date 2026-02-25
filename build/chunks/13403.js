@@ -36,18 +36,18 @@ var i = n(627968),
 function M(e) {
     var t, n;
     let M, w, {
-            analyticsLocations: k,
-            application: D,
+            analyticsLocations: D,
+            application: k,
             channel: O,
             currentUserId: U,
-            currentUserPresenceActivity: G,
-            hideParty: B,
+            currentUserPresenceActivity: B,
+            hideParty: G,
             message: F,
             onView: H,
             partyStatusElement: V,
             presenceActivity: W
         } = e,
-        q = (0, d.Ag)(D),
+        q = (0, d.Ag)(k),
         {
             iconSrc: Y,
             name: z
@@ -63,16 +63,16 @@ function M(e) {
                 }),
                 name: e.activity?.name_override ?? t.name
             }
-        }(F, D),
-        K = (0, N.I)({
+        }(F, k),
+        Q = (0, N.I)({
             messageId: F.id,
             presenceActivity: W,
-            application: D
+            application: k
         }) ?? void 0,
         {
-            openGameProfileModal: Q,
+            openGameProfileModal: K,
             launchableAppId: J
-        } = (t = D.id, n = F.author.id, M = (0, f.d)(t), w = (0, r.bG)([m.A, C.A], () => {
+        } = (t = k.id, n = F.author.id, M = (0, f.d)(t), w = (0, r.bG)([m.A, C.A], () => {
             let e = m.A.getApplication(t);
             return null != e ? C.A.getGameByApplication(e) : null
         }, [t]), {
@@ -86,8 +86,8 @@ function M(e) {
             launchableAppId: M
         }),
         X = (0, y.A)({
-            application: D,
-            analyticsLocations: k
+            application: k,
+            analyticsLocations: D
         }),
         Z = l.useMemo(() => {
             if (null != X) return {
@@ -97,8 +97,8 @@ function M(e) {
                 onClick: X
             }
         }, [X]),
-        $ = (0, p.F)(D),
-        ee = l.useMemo(() => null != Q ? Q : null != $ && q ? $ : void 0, [q, Q, $]),
+        $ = (0, p.F)(k),
+        ee = l.useMemo(() => null != K ? K : null != $ && q ? $ : void 0, [q, K, $]),
         et = c.A.useConfig({
             location: "RichPresenceGameActivityInviteEmbed"
         }),
@@ -106,9 +106,9 @@ function M(e) {
             canStartAuthorization: en,
             hasAlreadyLinked: ei,
             startAuthorization: el
-        } = (0, _.RD)(D),
+        } = (0, _.RD)(k),
         er = (0, u.z)(el, ei),
-        ea = !(0, v.A)(W, F, D.id),
+        ea = !(0, v.A)(W, F, k.id),
         es = (0, T.n$)(z, F.activity?.type, ea),
         eo = l.useRef(null),
         ed = (0, r.bG)([E.A], () => E.A.getMessages(O.id)),
@@ -126,11 +126,11 @@ function M(e) {
                             type: "dynamic",
                             component: o.Z86.ACCOUNT_LINK_DISPLAY,
                             props: {
-                                application: D
+                                application: k
                             }
                         },
                         title: P.intl.formatToPlainString(P.t["lo6H6+"], {
-                            gameName: D.name
+                            gameName: k.name
                         }),
                         body: P.intl.string(P.t.qYAzOp),
                         targetElementRef: eo,
@@ -146,7 +146,7 @@ function M(e) {
         };
     return ea ? (0, i.jsx)(j.A, {
         message: F,
-        application: D,
+        application: k,
         applicationName: z,
         channel: O,
         header: es,
@@ -154,19 +154,19 @@ function M(e) {
         launchableAppId: J,
         isEmbeddedApplication: q,
         tryWithGdnAction: Z,
-        staticBannerSrc: K,
+        staticBannerSrc: Q,
         onClickContent: ee,
         iconSrc: Y,
         onView: H,
         presenceActivity: W,
-        analyticsLocations: k,
+        analyticsLocations: D,
         showAuthButton: en && !ei && et.enabled,
         startAuthorization: er,
         accountLinkButtonRef: eo,
         renderAccountLinkUpsell: ec
     }) : (0, i.jsx)(L.A, {
         message: F,
-        application: D,
+        application: k,
         applicationName: z,
         channel: O,
         header: es,
@@ -174,15 +174,15 @@ function M(e) {
         launchableAppId: J,
         isEmbeddedApplication: q,
         tryWithGdnAction: Z,
-        staticBannerSrc: K,
+        staticBannerSrc: Q,
         onClickContent: ee,
         iconSrc: Y,
         onView: H,
         presenceActivity: W,
-        currentUserPresenceActivity: G,
-        hideParty: B,
+        currentUserPresenceActivity: B,
+        hideParty: G,
         partyStatusElement: V,
-        analyticsLocations: k,
+        analyticsLocations: D,
         showAuthButton: en && !ei && et.enabled,
         startAuthorization: er,
         accountLinkButtonRef: eo,

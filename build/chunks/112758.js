@@ -2,20 +2,20 @@
 n.d(t, {
     Am: () => O,
     Ck: () => F,
-    G8: () => B,
+    G8: () => G,
     Ge: () => P,
     H9: () => y,
     I: () => j,
     Jo: () => R,
     T0: () => N,
-    UY: () => D,
+    UY: () => k,
     U_: () => H,
     VL: () => w,
     Yq: () => M,
     m: () => S,
-    r4: () => k,
+    r4: () => D,
     ri: () => U,
-    yp: () => G
+    yp: () => B
 }), n(938796);
 var i = n(627968),
     l = n(64700),
@@ -143,7 +143,7 @@ function w(e, t, r, o) {
     }, [A, d, u, r, f, o])
 }
 
-function k(e, t) {
+function D(e, t) {
     return l.useCallback(n => {
         let i = p.default.getUser(e),
             l = _.A.getChannel(t);
@@ -151,7 +151,7 @@ function k(e, t) {
     }, [e, t])
 }
 
-function D(e, t, n) {
+function k(e, t, n) {
     return l.useCallback(i => {
         let l = p.default.getUser(e),
             r = _.A.getChannel(t);
@@ -182,7 +182,7 @@ function U(e, t) {
     }, [i, n])
 }
 
-function G(e) {
+function B(e) {
     let {
         groupId: t,
         message: n,
@@ -203,7 +203,7 @@ function G(e) {
     }
 }
 
-function B(e, t) {
+function G(e, t) {
     let [n, i] = l.useState(!1), [a, s] = l.useState(!1);
     return {
         handleFocus: l.useCallback(t => {

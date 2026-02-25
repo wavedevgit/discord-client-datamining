@@ -1,6 +1,6 @@
 /** chunk id: 762168, original params: e,t,r (module,exports,require) **/
 r.d(t, {
-    cs: () => x
+    cs: () => y
 });
 var o = r(627968),
     a = r(64700),
@@ -11,8 +11,8 @@ var o = r(627968),
     d = r(397927),
     _ = r(104473),
     c = r(341915),
-    u = r(73473),
-    p = r(717415),
+    p = r(73473),
+    u = r(717415),
     f = r(471535),
     b = r(652215);
 
@@ -26,7 +26,7 @@ function m() {
         } = e;
     return {
         userId: "123",
-        questId: C,
+        questId: g,
         enrolledAt: o,
         completedAt: r,
         claimedAt: a,
@@ -37,34 +37,36 @@ function m() {
         progress: {}
     }
 }
-let C = `playground-video-quest-${Date.now()}`;
+let g = `playground-video-quest-${Date.now()}`;
 
-function g(e) {
+function C(e) {
     let {
         quest: t,
         isPortrait: r,
         children: n,
         isFullscreenEnabled: i,
-        setIsFullscreenEnabled: s
-    } = e, l = a.useMemo(() => ({
+        useNewStyling: s,
+        setIsFullscreenEnabled: l
+    } = e, d = a.useMemo(() => ({
         quest: t,
         sourceQuestContent: c.uF.INTERNAL_PREVIEW_TOOL,
         videoSessionId: "playground-session",
         isPortrait: r,
         onClose: b.tEg,
         isFullscreenEnabled: i,
-        setIsFullscreenEnabled: s
-    }), [t, r, i, s]), d = a.useMemo(() => ({
+        setIsFullscreenEnabled: l,
+        useNewProgressBarStyling: s
+    }), [t, r, i, l, s]), _ = a.useMemo(() => ({
         questConfig: t.config
     }), [t.config]);
-    return (0, o.jsx)(u.R, {
+    return (0, o.jsx)(p.R, {
         questOrQuests: t,
         questContent: c.uF.VIDEO_MODAL,
         sourceQuestContent: c.uF.INTERNAL_PREVIEW_TOOL,
-        children: (e, t) => (0, o.jsx)(p.VideoQuestConfigContext.Provider, {
-            value: d,
-            children: (0, o.jsx)(p.VideoQuestModalContext.Provider, {
-                value: l,
+        children: (e, t) => (0, o.jsx)(u.VideoQuestConfigContext.Provider, {
+            value: _,
+            children: (0, o.jsx)(u.VideoQuestModalContext.Provider, {
+                value: d,
                 children: n
             })
         })
@@ -75,9 +77,10 @@ function v(e) {
     let {
         orientation: t,
         autoplay: r,
-        questCompleted: u,
-        videoUrl: p
-    } = e, v = "portrait" === t, [h, x] = a.useState(!1), y = function(e) {
+        questCompleted: p,
+        useNewStyling: u,
+        videoUrl: v
+    } = e, h = "portrait" === t, [y, S] = a.useState(!1), x = function(e) {
         let {
             url: t,
             width: r = 640,
@@ -100,15 +103,15 @@ function v(e) {
             }
         }
     }({
-        url: p,
-        width: v ? 360 : 640,
-        height: v ? 640 : 360,
-        videoTitle: v ? "Test Portrait Video" : "Test Landscape Video"
-    }), S = {
-        id: C,
+        url: v,
+        width: h ? 360 : 640,
+        height: h ? 640 : 360,
+        videoTitle: h ? "Test Portrait Video" : "Test Landscape Video"
+    }), T = {
+        id: g,
         preview: !0,
         config: {
-            id: C,
+            id: g,
             configVersion: 2,
             startsAt: "2024-01-01T00:00:00+00:00",
             expiresAt: "2030-01-01T00:00:00+00:00",
@@ -153,7 +156,7 @@ function v(e) {
             taskConfigV2: {
                 joinOperator: l.K.AND,
                 tasks: {
-                    [n.n.WATCH_VIDEO]: y
+                    [n.n.WATCH_VIDEO]: x
                 }
             },
             features: [],
@@ -167,36 +170,37 @@ function v(e) {
             enrolledAt: new Date().toISOString()
         }),
         targetedContent: [c.uF.QUEST_HOME_DESKTOP]
-    }, P = u ? {
-        ...S,
+    }, P = p ? {
+        ...T,
         userStatus: m({
-            enrolledAt: S.userStatus?.enrolledAt ?? null,
-            completedAt: S.userStatus?.enrolledAt ?? null,
-            streamProgressSeconds: y.target
+            enrolledAt: T.userStatus?.enrolledAt ?? null,
+            completedAt: T.userStatus?.enrolledAt ?? null,
+            streamProgressSeconds: x.target
         })
-    } : S;
+    } : T;
     return (0, o.jsx)("div", {
         style: {
-            width: v ? "400px" : "800px",
-            height: v ? "700px" : "500px",
+            width: h ? "400px" : "800px",
+            height: h ? "700px" : "500px",
             backgroundColor: "#1e1f22",
             borderRadius: "8px",
             overflow: "hidden",
             "--custom-footer-horizontal-padding": "20px"
         },
-        children: (0, o.jsx)(g, {
+        children: (0, o.jsx)(C, {
             quest: P,
-            isPortrait: v,
-            isFullscreenEnabled: h,
-            setIsFullscreenEnabled: x,
+            isPortrait: h,
+            isFullscreenEnabled: y,
+            setIsFullscreenEnabled: S,
+            useNewStyling: u,
             children: (0, o.jsx)(f.A, {
-                targetTimeSec: y.target,
+                targetTimeSec: x.target,
                 parentTransitionState: d.ip4.ENTERED,
                 onOptimisticProgressUpdate: b.tEg,
                 autoplay: r,
                 performanceClockStartTime: 0,
                 orientation: t,
-                videoUrlOverride: p
+                videoUrlOverride: v
             })
         })
     })
@@ -224,13 +228,18 @@ let h = {
             type: "boolean",
             defaultValue: !1
         },
+        useNewStyling: {
+            label: "Use New Styling",
+            type: "boolean",
+            defaultValue: !1
+        },
         videoUrl: {
             label: "Video URL",
             type: "text",
             defaultValue: _.kz
         }
     },
-    x = {
+    y = {
         title: "Video Player",
         stories: [{
             name: "Landscape Video (Quests)",

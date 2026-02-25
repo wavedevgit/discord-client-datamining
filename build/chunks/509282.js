@@ -159,8 +159,8 @@ function M(e) {
         initialSubscribeForGuild: x
     });
     if (!E || null == A || null == c) return null;
-    let k = c.type === S.Puh.SUBSCRIPTION,
-        D = !!k && (0, m.bg)(c.flags),
+    let D = c.type === S.Puh.SUBSCRIPTION,
+        k = !!D && (0, m.bg)(c.flags),
         O = () => {
             (0, o.mMO)(async () => {
                 let {
@@ -176,8 +176,8 @@ function M(e) {
         },
         U = () => {
             (0, o.mMO)(async () => {
-                let e = k ? (await Promise.resolve().then(n.bind(n, 168393))).SubscriptionDetailsModal : null,
-                    t = k ? null : (await Promise.resolve().then(n.bind(n, 963179))).ItemDetailsModal;
+                let e = D ? (await Promise.resolve().then(n.bind(n, 168393))).SubscriptionDetailsModal : null,
+                    t = D ? null : (await Promise.resolve().then(n.bind(n, 963179))).ItemDetailsModal;
                 return n => {
                     let l = () => {
                         n.onClose(), O()
@@ -187,7 +187,7 @@ function M(e) {
                         appId: A.id,
                         skuId: c.id,
                         guildId: x,
-                        subscriptionType: D ? "user" : "guild",
+                        subscriptionType: k ? "user" : "guild",
                         onClose: n.onClose,
                         onHeaderTitleClick: l
                     }) : null != t ? (0, i.jsx)(t, {
@@ -200,7 +200,7 @@ function M(e) {
                 }
             })
         },
-        G = k ? D ? (0, i.jsxs)(i.Fragment, {
+        B = D ? k ? (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(o.nys, {
                 size: "custom",
                 width: 12,
@@ -213,8 +213,8 @@ function M(e) {
                 height: 12
             }), " ", N.intl.string(N.t.NRC3ar)]
         }) : g?.description?.trim();
-    "" === G && (G = void 0);
-    let B = () => {
+    "" === B && (B = void 0);
+    let G = () => {
         C.default.track(S.HAw.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
             application_id: A.id,
             sku_id: c.id,
@@ -224,7 +224,7 @@ function M(e) {
     return (0, i.jsx)(w, {
         appName: A.name,
         title: c.name,
-        description: G,
+        description: B,
         link: `${location.protocol}//${location.host}${S.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(A.id,y.GlobalDiscoveryAppsSections.STORE)}`,
         onLinkCopy: () => {
             (0, b.K)(A.id, b.C.SKU_EMBED, r)
@@ -249,13 +249,13 @@ function M(e) {
                     })
                 },
                 text: N.intl.string(N.t.DXYfjO)
-            }), k ? null != _ ? (0, i.jsx)(v.rc, {
+            }), D ? null != _ ? (0, i.jsx)(v.rc, {
                 onClick: P,
                 appId: A.id,
-                subscriptionType: D ? "user" : "guild",
+                subscriptionType: k ? "user" : "guild",
                 skuId: c.id,
                 icon: o.U1X,
-                onHasClicked: B,
+                onHasClicked: G,
                 subscriptionPlan: _,
                 state: M
             }) : (0, i.jsx)(o.Button, {
@@ -266,7 +266,7 @@ function M(e) {
                 appId: A.id,
                 sku: c,
                 icon: o.U1X,
-                onHasClicked: B
+                onHasClicked: G
             })]
         })
     })

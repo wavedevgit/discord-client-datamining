@@ -75,7 +75,7 @@ function S(e) {
     } = (0, x._)(j), w = l.useMemo(() => R.map(e => {
         let t = p.default.getUser(e);
         return null != t ? t : f.mt
-    }), [R]), k = l.useMemo(() => (0, i.jsx)(v, {
+    }), [R]), D = l.useMemo(() => (0, i.jsx)(v, {
         partyMembers: w,
         partySize: P,
         maxPartySize: M,
@@ -88,7 +88,7 @@ function S(e) {
         hideParty: T,
         message: g,
         onView: S,
-        partyStatusElement: k,
+        partyStatusElement: D,
         presenceActivity: j,
         guildId: a.guild_id
     }) : g.activity?.type === I.xL.STREAM_REQUEST ? (0, i.jsx)(o.A, {
@@ -106,7 +106,7 @@ function S(e) {
         hideParty: T,
         message: g,
         onView: S,
-        partyStatusElement: k,
+        partyStatusElement: D,
         presenceActivity: j
     })
 }

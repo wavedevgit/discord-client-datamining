@@ -1,19 +1,19 @@
-/** chunk id: 311243, original params: e,t,s (module,exports,require) **/
-s.d(t, {
+/** chunk id: 311243, original params: e,t,l (module,exports,require) **/
+l.d(t, {
     A: () => c
 });
-var l = s(627968);
-s(64700);
-var n = s(503698),
-    a = s.n(n),
-    i = s(397927),
-    r = s(714510),
-    o = s(646764),
-    u = s(96373);
+var s = l(627968);
+l(64700);
+var n = l(503698),
+    a = l.n(n),
+    i = l(397927),
+    r = l(714510),
+    u = l(646764),
+    o = l(96373);
 let c = function(e) {
     let {
         className: t,
-        autoplay: s,
+        autoplay: l,
         quest: n,
         questContent: c,
         taskDetails: d,
@@ -28,17 +28,17 @@ let c = function(e) {
         sourceQuestContent: A,
         gameProfileSource: p
     });
-    return (0, l.jsxs)("div", {
-        className: a()(u.iE, t),
-        children: [(0, l.jsx)(o.A, {
-            autoplay: s,
-            className: u.Qq,
+    return (0, s.jsxs)("div", {
+        className: a()(o.iE, t),
+        children: [(0, s.jsx)(u.A, {
+            autoplay: l,
+            className: o.Qq,
             quest: n,
             questContent: c,
             sourceQuestContent: A
-        }), (0, l.jsx)("div", {
-            className: u.C,
-            children: (0, l.jsx)(i.Text, {
+        }), (0, s.jsx)("div", {
+            className: o.C,
+            children: (0, s.jsx)(i.Text, {
                 variant: "text-sm/normal",
                 color: "text-default",
                 children: x

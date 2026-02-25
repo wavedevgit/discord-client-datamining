@@ -71,8 +71,8 @@ function I(e) {
     let {
         primaryColor: R,
         secondaryColor: P
-    } = (0, h.A)(v ?? I), M = `linear-gradient(45deg, ${R}, ${P})`, w = (0, u.bG)([m.A], () => m.A.useReducedMotion), k = r.useRef(!1), D = (0, d.K)(e => {
-        !1 === k.current && e && (N?.onView?.(), (0, g.wV)({
+    } = (0, h.A)(v ?? I), M = `linear-gradient(45deg, ${R}, ${P})`, w = (0, u.bG)([m.A], () => m.A.useReducedMotion), D = r.useRef(!1), k = (0, d.K)(e => {
+        !1 === D.current && e && (N?.onView?.(), (0, g.wV)({
             appId: N.id,
             linkType: N.linkType,
             referrerId: N.referrerId,
@@ -80,8 +80,8 @@ function I(e) {
             guildId: N.guildId,
             channelId: N.channelId,
             messageId: N.messageId
-        }), k.current = !0)
-    }, void 0), O = null != I, U = null != b && !1 === w, G = O || U, B = 0 === T ? f.pv : f.$g, F = r.useRef(null), H = r.useCallback(() => {
+        }), D.current = !0)
+    }, void 0), O = null != I, U = null != b && !1 === w, B = O || U, G = 0 === T ? f.pv : f.$g, F = r.useRef(null), H = r.useCallback(() => {
         let e = F.current;
         null == e || ("hidden" === getComputedStyle(e).visibility ? e.pause() : e.play())
     }, []), V = r.useMemo(() => !!U && new URL(b).pathname.endsWith(".gif"), [U, b]), W = r.useMemo(() => {
@@ -108,11 +108,11 @@ function I(e) {
         }
     }, [L, N]);
     return (0, l.jsxs)("div", {
-        ref: D,
+        ref: k,
         className: f.E6,
-        children: [G && (0, l.jsxs)(E, {
+        children: [B && (0, l.jsxs)(E, {
             onClick: q,
-            className: s()(f.cy, B, {
+            className: s()(f.cy, G, {
                 [f.wk]: U
             }),
             children: [U && (V ? (0, l.jsx)("div", {

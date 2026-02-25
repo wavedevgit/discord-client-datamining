@@ -1,35 +1,35 @@
-/** chunk id: 191065, original params: e,t,s (module,exports,require) **/
-s.d(t, {
-    A: () => o
+/** chunk id: 191065, original params: e,t,l (module,exports,require) **/
+l.d(t, {
+    A: () => u
 });
-var l = s(627968),
-    n = s(64700),
-    a = s(827734),
-    i = s(397927),
-    r = s(838839);
-let o = n.forwardRef(function(e, t) {
+var s = l(627968),
+    n = l(64700),
+    a = l(827734),
+    i = l(397927),
+    r = l(838839);
+let u = n.forwardRef(function(e, t) {
     let {
-        isInventory: s,
+        isInventory: l,
         style: n,
-        children: o
+        children: u
     } = e;
-    return (0, l.jsxs)("div", {
+    return (0, s.jsxs)("div", {
         ref: t,
         className: r.Q,
         style: {
-            marginTop: 8 * !!s,
+            marginTop: 8 * !!l,
             ...n
         },
-        children: [(0, l.jsx)(i.mir, {
+        children: [(0, s.jsx)(i.mir, {
             size: "custom",
             className: r.G,
-            height: s ? 16 : 12,
-            width: s ? 16 : 12,
-            color: s ? a.A.colors.TEXT_MUTED.css : a.A.colors.WHITE.css
-        }), (0, l.jsx)(i.Text, {
-            color: s ? "text-muted" : "always-white",
-            variant: s ? "text-xs/normal" : "text-xxs/normal",
-            children: o
+            height: l ? 16 : 12,
+            width: l ? 16 : 12,
+            color: l ? a.A.colors.TEXT_MUTED.css : a.A.colors.WHITE.css
+        }), (0, s.jsx)(i.Text, {
+            color: l ? "text-muted" : "always-white",
+            variant: l ? "text-xs/normal" : "text-xxs/normal",
+            children: u
         })]
     })
 })

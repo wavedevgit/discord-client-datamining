@@ -1,8 +1,8 @@
-/** chunk id: 55738, original params: e,t,s (module,exports,require) **/
-s.d(t, {
-    Y: () => l
+/** chunk id: 55738, original params: e,t,l (module,exports,require) **/
+l.d(t, {
+    Y: () => s
 });
-let l = (0, s(945810).mj)({
+let s = (0, l(945810).mj)({
     name: "2025-12-earned-impression-api-call-experiment",
     kind: "user",
     defaultConfig: {

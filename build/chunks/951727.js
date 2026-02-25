@@ -124,32 +124,32 @@ function j(e, t) {
         canShowVoteCounts: P,
         canSubmitVote: M,
         expirationLabel: w = T.intl.string(T.t["e+J3JZ"]),
-        hasSelectedAnswer: k,
-        hasVoted: D,
+        hasSelectedAnswer: D,
+        hasVoted: k,
         isEditingVote: O,
         isExpired: U,
-        isInteractive: G,
-        reactions: B,
+        isInteractive: B,
+        reactions: G,
         selectedAnswerIds: F,
         submitting: H,
         tapShouldOpenVotersModal: V,
         showResults: W
-    } = j, q = (0, x.aw)(B), Y = T.intl.formatToPlainString(T.t.XRkuof, {
+    } = j, q = (0, x.aw)(G), Y = T.intl.formatToPlainString(T.t.XRkuof, {
         count: q
     }), z = Math.max(...v.map(e => {
-        let t = S(B, `${e.answer_id}`);
+        let t = S(G, `${e.answer_id}`);
         return t?.count_details?.vote ?? 0
-    })), K = v.map(e => {
+    })), Q = v.map(e => {
         let t, r = `${e.answer_id}`,
-            o = S(B, r),
+            o = S(G, r),
             d = o?.count_details?.vote ?? 0,
             c = 0 === q ? 0 : d / q,
             u = F.has(r),
             _ = d >= z && 0 !== d,
-            m = D && (o?.me_vote ?? !1),
+            m = k && (o?.me_vote ?? !1),
             g = (t = {
                 didSelfVote: m,
-                hasVoted: D,
+                hasVoted: k,
                 isExpired: U,
                 isSelected: u,
                 isLeader: _,
@@ -219,13 +219,13 @@ function j(e, t) {
                 count: d
             }))
         }
-    }), Q = (0, i.YW)({
+    }), K = (0, i.YW)({
         isExpired: U,
         canSubmitVote: M,
-        hasVoted: D,
+        hasVoted: k,
         isEditingVote: O,
         canRemoveVote: R,
-        isInteractive: G,
+        isInteractive: B,
         showResults: W
     }).with({
         isInteractive: !1
@@ -236,7 +236,7 @@ function j(e, t) {
     }, () => ({
         label: T.intl.string(T.t.JwkNU4),
         presentation: "button",
-        enabled: k,
+        enabled: D,
         type: "submit"
     })).with({
         canRemoveVote: !0
@@ -260,7 +260,7 @@ function j(e, t) {
         type: "submit"
     })), J = (0, g.isIOS)() ? T.intl.string(T.t["PVATM/"]) : T.intl.string(T.t.cHfFql), X = (0, i.YW)({
         isExpired: U,
-        isInteractive: G,
+        isInteractive: B,
         isEditingVote: O
     }).with({
         isInteractive: !1,
@@ -283,13 +283,13 @@ function j(e, t) {
         presentation: "text",
         enabled: !0,
         type: "showVoterDetails"
-    })), Z = !G || U || D || W ? void 0 : {
+    })), Z = !B || U || k || W ? void 0 : {
         label: T.intl.string(T.t["/KHAUF"]),
         presentation: "textButton",
         enabled: !0,
         type: "showVotes"
     }, $ = u.allow_multiselect, ee = (0, i.YW)({
-        isInteractive: G,
+        isInteractive: B,
         isExpired: U,
         canSelectMultipleAnswers: $
     }).with({
@@ -302,7 +302,7 @@ function j(e, t) {
     return {
         question: u.question,
         promptLabel: ee,
-        answers: K,
+        answers: Q,
         answersInteraction: (0, i.YW)({
             tapShouldOpenVotersModal: V,
             canTapAnswers: L,
@@ -323,13 +323,13 @@ function j(e, t) {
             layoutType: y
         }),
         containerStyle: "normal",
-        primaryAction: Q,
-        isInteractive: G,
+        primaryAction: K,
+        isInteractive: B,
         canTapAnswers: L,
         canSelectMultipleAnswers: $,
-        hasSelectedAnswer: k,
+        hasSelectedAnswer: D,
         canShowVoteCounts: P,
-        hasVoted: D,
+        hasVoted: k,
         isExpired: U,
         myAvatarUrl: b,
         secondaryAction: X,

@@ -3,10 +3,10 @@ n.d(t, {
     G: () => o
 });
 var r = n(141711),
-    i = n(118356),
-    s = n(740644),
-    l = n(497329);
-let a = new i.Vy("SimpleMuxWrapper");
+    l = n(118356),
+    i = n(740644),
+    a = n(497329);
+let s = new l.Vy("SimpleMuxWrapper");
 class o {
     isMonitoring = !1;
     videoElement;
@@ -14,34 +14,34 @@ class o {
     sessionId;
     hlsInstance;
     constructor(e) {
-        this.config = e, this.videoElement = e.videoElement, this.sessionId = l.C.generateSessionId(), this.hlsInstance = e.hlsInstance
+        this.config = e, this.videoElement = e.videoElement, this.sessionId = a.C.generateSessionId(), this.hlsInstance = e.hlsInstance
     }
     initialize() {
         let e = {
             debug: this.config.debug ?? !1,
             disableCookies: !0,
             respectDoNotTrack: !0,
-            data: s.H.mapDiscordToMuxMetadata(this.config, this.sessionId)
+            data: i.H.mapDiscordToMuxMetadata(this.config, this.sessionId)
         };
         null != this.hlsInstance && (e.hlsjs = this.hlsInstance, e.Hls = this.hlsInstance.constructor);
         try {
             r.A.monitor(this.videoElement, e), this.isMonitoring = !0
         } catch (e) {
-            a.error("Error creating Mux monitor", e), this.isMonitoring = !1
+            s.error("Error creating Mux monitor", e), this.isMonitoring = !1
         }
     }
     endSession() {
         if (this.isMonitoring) try {
             "function" == typeof r.A.destroyMonitor && r.A.destroyMonitor(this.videoElement), this.isMonitoring = !1
         } catch (e) {
-            a.error("Error ending Mux session", e)
+            s.error("Error ending Mux session", e)
         }
     }
     destroy() {
         if (this.isMonitoring) try {
             "function" == typeof r.A.destroyMonitor && r.A.destroyMonitor(this.videoElement), this.isMonitoring = !1
         } catch (e) {
-            a.error("Error destroying Mux monitor", e)
+            s.error("Error destroying Mux monitor", e)
         }
     }
     getSessionId() {

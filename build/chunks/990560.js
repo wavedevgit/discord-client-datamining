@@ -51,8 +51,8 @@ function N(e) {
             analyticsLocations: M
         } = (0, o.Ay)(),
         w = (0, r.bG)([p.A], () => j?.guild != null ? p.A.getGuild(j.guild.id) : null, [j]),
-        k = (0, r.bG)([h.default], () => h.default.getId()),
-        D = (0, r.bG)([c.Ay], () => c.Ay.getGuildScheduledEvent(P.guild_scheduled_event?.id), [P]),
+        D = (0, r.bG)([h.default], () => h.default.getId()),
+        k = (0, r.bG)([c.Ay], () => c.Ay.getGuildScheduledEvent(P.guild_scheduled_event?.id), [P]),
         O = () => {
             null != P.channel && a.Ay.transitionToInviteSync(P)
         },
@@ -67,28 +67,28 @@ function N(e) {
                 context: N("Invite Button Embed")
             })
         },
-        G = (0, i.jsx)(I.A, {
+        B = (0, i.jsx)(I.A, {
             onTransitionToInviteChannel: O,
             onAcceptInstantInvite: U,
-            currentUserId: k,
+            currentUserId: D,
             guild: w,
             invite: P,
             message: n
         });
     switch (P.state) {
         case y.elq.RESOLVING:
-            G = (0, i.jsx)(v.A, {});
+            B = (0, i.jsx)(v.A, {});
             break;
         case y.elq.EXPIRED:
         case y.elq.BANNED:
-            G = (0, i.jsx)(T.A, {
+            B = (0, i.jsx)(T.A, {
                 banned: P.state === y.elq.BANNED,
                 author: n.author,
                 channelId: n.channel_id
             });
             break;
         case y.elq.ERROR:
-            G = (0, i.jsx)(f.A, {
+            B = (0, i.jsx)(f.A, {
                 author: n.author,
                 inviteError: L
             });
@@ -96,16 +96,16 @@ function N(e) {
         default:
             switch ((0, _.On)(P)) {
                 case _.Xd.GROUP_DM:
-                    G = (0, i.jsx)(E.A, {
+                    B = (0, i.jsx)(E.A, {
                         onTransitionToInviteChannel: O,
                         onAcceptInstantInvite: U,
-                        currentUserId: k,
+                        currentUserId: D,
                         invite: P,
                         message: n
                     });
                     break;
                 case _.Xd.FRIEND:
-                    G = (0, i.jsx)(C.A, {
+                    B = (0, i.jsx)(C.A, {
                         invite: P,
                         message: n,
                         getAcceptInviteContext: N
@@ -113,10 +113,10 @@ function N(e) {
                     break;
                 default:
                     if ((0, _.G4)(P)) {
-                        G = (0, i.jsx)(S.A, {
+                        B = (0, i.jsx)(S.A, {
                             onTransitionToInviteChannel: O,
                             onAcceptInstantInvite: U,
-                            currentUserId: k,
+                            currentUserId: D,
                             message: n,
                             guild: w,
                             invite: P
@@ -124,8 +124,8 @@ function N(e) {
                         break
                     }
                     if ((0, _.ly)(P)) {
-                        G = (0, i.jsx)(u.Ay, {
-                            guildScheduledEvent: D,
+                        B = (0, i.jsx)(u.Ay, {
+                            guildScheduledEvent: k,
                             guild: P.guild,
                             channel: P.channel,
                             isMember: null != w,
@@ -135,13 +135,13 @@ function N(e) {
                         break
                     }
                     if ((0, _.oK)(P)) {
-                        G = (0, i.jsx)(x.A, {
+                        B = (0, i.jsx)(x.A, {
                             invite: P,
                             getAcceptInviteContext: N,
                             message: n
                         });
                         break
-                    }(0, d.v)(P) && (G = (0, i.jsx)(b.A, {
+                    }(0, d.v)(P) && (B = (0, i.jsx)(b.A, {
                         onTransitionToInviteChannel: O,
                         onAcceptInstantInvite: U,
                         isMemberOfGuild: null != w,
@@ -152,6 +152,6 @@ function N(e) {
     }
     return (0, i.jsx)(s.A, {
         section: y.JJy.INVITE_LINK,
-        children: G
+        children: B
     })
 }

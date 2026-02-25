@@ -34,9 +34,9 @@ var i = n(627968),
     P = n(652215),
     M = n(768349),
     w = n(985018),
-    k = n(62323);
+    D = n(62323);
 
-function D(e) {
+function k(e) {
     let {
         presenceActivity: t,
         remoteJoinPlatform: n
@@ -83,17 +83,17 @@ function D(e) {
     if (!(null != n || o.length > 0)) return null;
     let c = null != n ? (0, S.C)(n) : w.intl.string(w.t["4dGUP0"]);
     return (0, i.jsxs)("div", {
-        className: k.qr,
+        className: D.qr,
         children: [(0, i.jsx)("div", {
-            className: k.E6,
+            className: D.E6,
             children: o.map((e, t) => (0, i.jsx)("div", {
-                className: k.F2,
+                className: D.F2,
                 children: e
             }, t))
         }), (0, i.jsx)(d.Text, {
             variant: "text-sm/medium",
             color: "currentColor",
-            className: k.kB,
+            className: D.kB,
             children: c
         })]
     })
@@ -111,8 +111,8 @@ function O(e) {
         isEmbeddedApplication: L,
         tryWithGdnAction: O,
         staticBannerSrc: U,
-        onClickContent: G,
-        iconSrc: B,
+        onClickContent: B,
+        iconSrc: G,
         onView: F,
         presenceActivity: H,
         currentUserPresenceActivity: V,
@@ -120,11 +120,11 @@ function O(e) {
         partyStatusElement: q,
         analyticsLocations: Y,
         showAuthButton: z,
-        startAuthorization: K,
-        accountLinkButtonRef: Q,
+        startAuthorization: Q,
+        accountLinkButtonRef: K,
         renderAccountLinkUpsell: J
     } = e, X = H?.timestamps?.start ?? H?.created_at, Z = l.useMemo(() => null != X ? (0, i.jsxs)("div", {
-        className: k.Ym,
+        className: D.Ym,
         children: [(0, i.jsx)(d._xR, {
             size: "xxs",
             color: "currentColor"
@@ -144,12 +144,12 @@ function O(e) {
         }), w.intl.string(w.t.TsWCdW)]
     }) : null, [ee]), en = l.useMemo(() => (0, i.jsxs)(d.Text, {
         variant: "text-xs/normal",
-        className: k.dS,
+        className: D.dS,
         color: "none",
         lineClamp: 2,
         children: [$ ? (0, E.YC)(t, a, s, S, !1) : Z, $ ? null : et]
     }), [$, t, a, s, S, Z, et]), ei = l.useMemo(() => (0, i.jsxs)("div", {
-        className: k.pq,
+        className: D.pq,
         children: [en, W || $ ? null : q]
     }), [en, W, $, q]), el = (0, A.e)(n), {
         canJoin: er,
@@ -228,20 +228,20 @@ function O(e) {
             label: w.intl.string(w.t.lw71Nf),
             trackingArea: h.kY.CONNECT_ACCOUNT,
             onClick: () => {
-                K({
+                Q({
                     analyticsLocations: Y
                 })
             },
             icon: d.A5T,
             iconButton: !0,
-            buttonRef: Q
+            buttonRef: K
         }), i = !0)), {
             actions: l,
             hasAccountLinkButton: i
         }
-    }, [er, es, eo, ed, O, t.author.id, t.id, H, s.id, s.guild_id, Y, ea, S, ec, z, K, Q]), em = eu.some(e => e.trackingArea === h.kY.CLOUD_PLAY);
+    }, [er, es, eo, ed, O, t.author.id, t.id, H, s.id, s.guild_id, Y, ea, S, ec, z, Q, K]), em = eu.some(e => e.trackingArea === h.kY.CLOUD_PLAY);
     (0, R.A)(em, Y);
-    let eh = l.useMemo(() => ed ? null : (0, i.jsx)(D, {
+    let eh = l.useMemo(() => ed ? null : (0, i.jsx)(k, {
         presenceActivity: H,
         remoteJoinPlatform: ea
     }), [ed, H, ea]);
@@ -250,13 +250,13 @@ function O(e) {
             header: C,
             title: a,
             staticBannerSrc: U,
-            onClickBanner: G,
+            onClickBanner: B,
             bannerAspectRatio: m.u.ACTIVITY,
-            iconSrc: B ?? void 0,
+            iconSrc: G ?? void 0,
             info: ei,
             actions: eu,
             primaryActionFirst: !0,
-            onClickContent: G,
+            onClickContent: B,
             trackingConfig: {
                 id: n.id,
                 linkType: M.J.RICH_PRESENCE_INVITE,

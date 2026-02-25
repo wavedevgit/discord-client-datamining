@@ -40,18 +40,18 @@ function L(e) {
         M = !0 === e.showShareLink && (0, b.E0)(e.quest.config),
         {
             handleComplete: w,
-            handleProgress: k,
-            handleResetDismissibilityClick: D,
+            handleProgress: D,
+            handleResetDismissibilityClick: k,
             handleResetStatusClick: O,
             handleOverrideDeliveryClick: U
         } = (0, g.j$)(e.quest.id),
-        G = (0, g.do)({
+        B = (0, g.do)({
             quest: e.quest,
             content: e.questContent,
             ctaContent: x.Cy.CONTEXT_MENU_OPEN_GAME_LINK,
             sourceQuestContent: e.sourceQuestContent
         }),
-        B = (0, T.Lk)({
+        G = (0, T.Lk)({
             isShareable: M,
             questId: e.quest.id,
             trackingCtx: l.useMemo(() => ({
@@ -88,7 +88,7 @@ function L(e) {
             children: [(0, i.jsx)(a.Drp, {
                 id: "play-game",
                 label: P,
-                action: G,
+                action: B,
                 icon: a.We5,
                 leadingAccessory: {
                     type: "icon",
@@ -97,7 +97,7 @@ function L(e) {
             }), M && (0, i.jsx)(a.Drp, {
                 id: "share-link",
                 label: j.intl.string(j.t.RDE0Sc),
-                action: B,
+                action: G,
                 icon: a.TdU,
                 leadingAccessory: {
                     type: "icon",
@@ -156,7 +156,7 @@ function L(e) {
             children: [(0, i.jsx)(a.Drp, {
                 id: "dismiss",
                 label: j.intl.string(j.t.JF6W66),
-                action: D
+                action: k
             }), (0, i.jsx)(a.Drp, {
                 id: "enrollment",
                 label: j.intl.string(j.t.taqkwK),
@@ -167,7 +167,7 @@ function L(e) {
                 id: "progress",
                 label: j.intl.string(j.t.cKSLr4),
                 action: () => {
-                    k(.9 * Math.random() + .03)
+                    D(.9 * Math.random() + .03)
                 }
             }), (0, i.jsx)(a.Drp, {
                 id: "complete",

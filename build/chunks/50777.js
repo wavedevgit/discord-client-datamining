@@ -34,15 +34,15 @@ function j(e) {
         guildId: t,
         skuId: n,
         channel: j
-    } = e, L = (0, a.bG)([A.A], () => A.A.isFetchingForSKU(n)), R = (0, a.bG)([g.A], () => g.A.get(n)), P = R?.applicationId, M = (0, a.bG)([u.A], () => null != P && u.A.isFetchingApplication(P)), w = (0, a.bG)([u.A], () => null != P && u.A.didFetchingApplicationFail(P)), k = (0, m.h)(P), {
-        analyticsLocations: D
+    } = e, L = (0, a.bG)([A.A], () => A.A.isFetchingForSKU(n)), R = (0, a.bG)([g.A], () => g.A.get(n)), P = R?.applicationId, M = (0, a.bG)([u.A], () => null != P && u.A.isFetchingApplication(P)), w = (0, a.bG)([u.A], () => null != P && u.A.didFetchingApplicationFail(P)), D = (0, m.h)(P), {
+        analyticsLocations: k
     } = (0, c.Ay)(d.A.SLAYER_STOREFRONT_PRODUCT_DETAILS_EMBED);
     (0, h.pE)();
     let O = (0, a.bG)([p.default], () => j.isDM() && null != j.recipients && 0 !== j.recipients.length ? p.default.getUser(j.recipients[0]) : null),
         U = (0, a.bG)([E.A], () => null != n ? E.A.getNormalizedSKUEligibility(n) : void 0, [n]),
         {
-            primaryIconAsset: G,
-            primaryIconLabel: B
+            primaryIconAsset: B,
+            primaryIconLabel: G
         } = l.useMemo(() => (0, f.Cv)(R, P), [R, P]);
     l.useEffect(() => {
         null == t || null == n || A.A.isFetchingForSKU(n) || (0, C.qf)(t, n)
@@ -53,9 +53,9 @@ function j(e) {
                 applicationId: R.applicationId,
                 guildId: t,
                 isStorefront: !1,
-                analyticsLocations: D
+                analyticsLocations: k
             })
-        }, [n, R?.applicationId, t, D]),
+        }, [n, R?.applicationId, t, k]),
         H = l.useCallback(() => {
             null != R && U && (0, b.a)(R, {
                 isGift: !1
@@ -72,13 +72,13 @@ function j(e) {
                 analyticsLocations: [d.A.SLAYER_STOREFRONT_PRODUCT_DETAILS_EMBED_GIFT_BUTTON]
             })
         }, [R, O]),
-        W = null != P && null == k && !w;
-    return (L || M || W) && (null == R || null == k) ? (0, i.jsx)("div", {
+        W = null != P && null == D && !w;
+    return (L || M || W) && (null == R || null == D) ? (0, i.jsx)("div", {
         className: N.kL,
         children: (0, i.jsx)(o.y$y, {
             className: N.u1
         })
-    }) : null != R && null != k && (0, _.A)(k) && k.guildId === t ? (0, i.jsxs)("div", {
+    }) : null != R && null != D && (0, _.A)(D) && D.guildId === t ? (0, i.jsxs)("div", {
         className: N.kL,
         children: [(0, i.jsx)(v.A, {
             className: N.Nr,
@@ -87,16 +87,16 @@ function j(e) {
             guildId: t,
             variant: v.s.EMBEDDED,
             onClick: F,
-            analyticsLocations: D
+            analyticsLocations: k
         }), (0, i.jsxs)("div", {
             className: N.zH,
             children: [(0, i.jsxs)("div", {
                 className: N.lI,
                 children: [(0, i.jsxs)("div", {
                     className: N.PB,
-                    children: [null != G && (0, i.jsx)("img", {
-                        src: G.toString(),
-                        alt: B,
+                    children: [null != B && (0, i.jsx)("img", {
+                        src: B.toString(),
+                        alt: G,
                         className: N.ye
                     }), (0, i.jsx)(o.Text, {
                         variant: "text-md/medium",

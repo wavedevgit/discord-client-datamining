@@ -3,10 +3,10 @@ n.d(t, {
     A: () => g
 });
 var r = n(627968),
-    i = n(64700),
-    s = n(311907),
-    l = n(990078),
-    a = n(397927),
+    l = n(64700),
+    i = n(311907),
+    a = n(990078),
+    s = n(397927),
     o = n(775602),
     u = n(341915),
     c = n(890687),
@@ -15,8 +15,8 @@ var r = n(627968),
     p = n(646764),
     E = n(793683),
     f = n(717415),
-    v = n(985018),
-    h = n(437413);
+    h = n(985018),
+    v = n(437413);
 let x = async () => await n.e("40119").then(n.t.bind(n, 718698, 19));
 
 function g() {
@@ -24,16 +24,16 @@ function g() {
         quest: e,
         sourceQuestContent: t,
         onClose: n
-    } = i.useContext(f.VideoQuestModalContext), [g, S] = i.useState(!1), C = (0, s.bG)([o.A], () => o.A.useReducedMotion), A = i.useRef(e.userStatus?.completedAt), [_, b] = i.useState(!1), T = (0, d.mq)(e.config), {
+    } = l.useContext(f.VideoQuestModalContext), [g, S] = l.useState(!1), A = (0, i.bG)([o.A], () => o.A.useReducedMotion), C = l.useRef(e.userStatus?.completedAt), [_, b] = l.useState(!1), T = (0, d.mq)(e.config), {
         completedRatio: y,
         completedRatioDisplay: N
-    } = (0, c.O9)(e), D = e.userStatus?.completedAt != null, L = e.userStatus?.claimedAt != null, j = v.intl.formatToPlainString(D && !L ? v.t.NRp4K4 : v.t["12IWP2"], {
+    } = (0, c.O9)(e), D = e.userStatus?.completedAt != null, I = e.userStatus?.claimedAt != null, L = h.intl.formatToPlainString(D && !I ? h.t.NRp4K4 : h.t["12IWP2"], {
         rewardName: T
     });
-    i.useEffect(() => {
-        null == A.current && e.userStatus?.completedAt != null && b(!0), A.current = e.userStatus?.completedAt
+    l.useEffect(() => {
+        null == C.current && e.userStatus?.completedAt != null && b(!0), C.current = e.userStatus?.completedAt
     }, [e.userStatus?.completedAt]);
-    let I = (0, E.v)({
+    let j = (0, E.v)({
         quest: e,
         questContent: u.uF.QUEST_HOME_DESKTOP,
         sourceQuestContent: t,
@@ -41,29 +41,29 @@ function g() {
         shouldShowShopIfAlreadyClaimed: !1
     });
     return (0, r.jsxs)("div", {
-        className: h.Tr,
-        children: [D && (0, r.jsx)(a.akl, {
+        className: v.Tr,
+        children: [D && (0, r.jsx)(s.akl, {
             importData: x,
-            className: h.t_,
+            className: v.t_,
             loop: !1,
             autoplay: !1,
-            shouldAnimate: _ && !C
-        }), (0, r.jsx)(l.m, {
+            shouldAnimate: _ && !A
+        }), (0, r.jsx)(a.m, {
             position: "top",
-            text: j,
+            text: L,
             onTooltipShow: () => {
                 S(!0)
             },
             onTooltipHide: () => {
                 S(!1)
             },
-            children: (0, r.jsx)(a.DUT, {
-                className: h.md,
+            children: (0, r.jsx)(s.DUT, {
+                className: v.md,
                 style: D ? {
                     cursor: "pointer"
                 } : void 0,
                 onClick: e => {
-                    D && I(e)
+                    D && j(e)
                 },
                 children: (0, r.jsx)(m.A, {
                     size: 48,
