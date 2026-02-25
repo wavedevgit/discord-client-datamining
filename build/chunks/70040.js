@@ -159,7 +159,10 @@ let w = () => (0, a.bG)([m.A], () => m.A.isPreview) ? null : (0, i.jsx)(o.Button
     onClick: D
 });
 
-function B() {
+function B(e) {
+    let {
+        size: t
+    } = e;
     return (0, i.jsx)(g.Ay, {
         type: g.v0.SETTINGS,
         children: (0, i.jsxs)(U, {
@@ -178,7 +181,8 @@ function B() {
                     top: 24
                 },
                 children: (0, i.jsx)(g.Zg, {
-                    disabled: !1
+                    disabled: !1,
+                    size: t
                 })
             }), (0, i.jsx)(k, {})]
         })

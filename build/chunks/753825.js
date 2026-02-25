@@ -1,16 +1,16 @@
 /** chunk id: 753825, original params: e,t,l (module,exports,require) **/
 "use strict";
 l.d(t, {
-    A: () => i
+    A: () => s
 });
 var r = l(627968),
     a = l(397927),
     n = l(119039);
-let i = e => {
+let s = e => {
     let {
         backgroundImage: t,
         href: l,
-        ctaText: i
+        ctaText: s
     } = e;
     return (0, r.jsx)("div", {
         className: n.q,
@@ -20,7 +20,7 @@ let i = e => {
         children: (0, r.jsx)(a.Text, {
             variant: "text-lg/bold",
             color: "always-white",
-            children: i
+            children: s
         })
     })
 }

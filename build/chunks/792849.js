@@ -7,8 +7,8 @@ var r = l(627968);
 l(64700);
 var a = l(397927),
     n = l(261225),
-    i = l(970488);
-let s = e => {
+    s = l(970488);
+let i = e => {
         let {
             color: t,
             children: l
@@ -50,61 +50,61 @@ let s = e => {
                     },
                     children: (0, r.jsxs)(n.A, {
                         columns: t,
-                        children: [(0, r.jsx)(s, {
+                        children: [(0, r.jsx)(i, {
                             color: "red"
-                        }), (0, r.jsx)(i.A, {
+                        }), (0, r.jsx)(s.A, {
                             columns: l,
                             rows: o,
-                            children: (0, r.jsx)(s, {
+                            children: (0, r.jsx)(i, {
                                 color: "orange",
                                 children: (0, r.jsx)(a.Text, {
                                     variant: "text-lg/semibold",
                                     children: "GridItem"
                                 })
                             })
-                        }), (0, r.jsx)(s, {
+                        }), (0, r.jsx)(i, {
                             color: "yellow"
-                        }), (0, r.jsx)(s, {
+                        }), (0, r.jsx)(i, {
                             color: "green"
-                        }), (0, r.jsx)(s, {
+                        }), (0, r.jsx)(i, {
                             color: "blue"
-                        }), (0, r.jsx)(s, {
+                        }), (0, r.jsx)(i, {
                             color: "violet"
-                        }), (0, r.jsx)(s, {
+                        }), (0, r.jsx)(i, {
                             color: "red"
-                        }), (0, r.jsx)(s, {
+                        }), (0, r.jsx)(i, {
                             color: "orange"
-                        }), (0, r.jsx)(s, {
+                        }), (0, r.jsx)(i, {
                             color: "yellow"
-                        }), (0, r.jsx)(s, {
+                        }), (0, r.jsx)(i, {
                             color: "green"
-                        }), (0, r.jsx)(s, {
+                        }), (0, r.jsx)(i, {
                             color: "blue"
-                        }), (0, r.jsx)(s, {
+                        }), (0, r.jsx)(i, {
                             color: "violet"
-                        }), (0, r.jsx)(s, {
+                        }), (0, r.jsx)(i, {
                             color: "red"
-                        }), (0, r.jsx)(s, {
+                        }), (0, r.jsx)(i, {
                             color: "orange"
-                        }), (0, r.jsx)(s, {
+                        }), (0, r.jsx)(i, {
                             color: "yellow"
-                        }), (0, r.jsx)(s, {
+                        }), (0, r.jsx)(i, {
                             color: "green"
-                        }), (0, r.jsx)(s, {
+                        }), (0, r.jsx)(i, {
                             color: "blue"
-                        }), (0, r.jsx)(s, {
+                        }), (0, r.jsx)(i, {
                             color: "violet"
-                        }), (0, r.jsx)(s, {
+                        }), (0, r.jsx)(i, {
                             color: "red"
-                        }), (0, r.jsx)(s, {
+                        }), (0, r.jsx)(i, {
                             color: "orange"
-                        }), (0, r.jsx)(s, {
+                        }), (0, r.jsx)(i, {
                             color: "yellow"
-                        }), (0, r.jsx)(s, {
+                        }), (0, r.jsx)(i, {
                             color: "green"
-                        }), (0, r.jsx)(s, {
+                        }), (0, r.jsx)(i, {
                             color: "blue"
-                        }), (0, r.jsx)(s, {
+                        }), (0, r.jsx)(i, {
                             color: "violet"
                         })]
                     })

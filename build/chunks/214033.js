@@ -7,8 +7,8 @@ var r = l(627968);
 l(64700);
 var a = l(397927),
     n = l(206845),
-    i = l(604238),
-    s = l(261225),
+    s = l(604238),
+    i = l(261225),
     o = l(282203),
     d = l(985018);
 let c = {
@@ -17,7 +17,7 @@ let c = {
     component: e => {
         let {
             skuIds: t
-        } = e, l = (0, i.e)();
+        } = e, l = (0, s.e)();
         return (0, r.jsxs)("div", {
             children: [(0, r.jsx)(a.Heading, {
                 variant: "heading-lg/bold",
@@ -28,7 +28,7 @@ let c = {
             }), (0, r.jsx)(a.Text, {
                 variant: "text-md/semibold",
                 children: "This will be useful when wanting to get a dynamic list of sku ids from the server (like popular picks) and push them into a product grid"
-            }), (0, r.jsx)("br", {}), (0, r.jsx)(s.A, {
+            }), (0, r.jsx)("br", {}), (0, r.jsx)(i.A, {
                 columns: 3,
                 children: (0, r.jsx)(o.A, {
                     skuIds: t?.split(","),

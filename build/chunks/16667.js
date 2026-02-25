@@ -6,8 +6,8 @@ l.d(t, {
 var r = l(311907),
     a = l(73153);
 let n = {},
-    i = {},
-    s = new Set,
+    s = {},
+    i = new Set,
     o = {};
 class d extends r.Ay.Store {
     static displayName = "CollectiblesStore";
@@ -15,10 +15,10 @@ class d extends r.Ay.Store {
         return null != e ? n[e] : null
     }
     getProductForSku(e) {
-        return null != e ? i[e] : null
+        return null != e ? s[e] : null
     }
     isFetching(e) {
-        return null != e && s.has(e)
+        return null != e && i.has(e)
     }
     getApiError(e) {
         return null != e ? o[e] : null
@@ -29,7 +29,7 @@ let c = new d(a.h, {
         let {
             collectionId: t
         } = e;
-        s.add(t)
+        i.add(t)
     },
     COLLECTIBLES_COLLECTION_FETCH_SUCCESS: e => {
         let {
@@ -37,29 +37,29 @@ let c = new d(a.h, {
         } = e;
         n[t.id] = t, t.products?.forEach(e => {
             e.skus.forEach(t => {
-                i[t.id] = e, delete o[t.id], s.delete(t.id)
+                s[t.id] = e, delete o[t.id], i.delete(t.id)
             })
-        }), delete o[t.id], s.delete(t.id)
+        }), delete o[t.id], i.delete(t.id)
     },
     COLLECTIBLES_COLLECTION_FETCH_FAILURE: e => {
         let {
             collectionId: t,
             apiError: l
         } = e;
-        o[t] = l, s.delete(t)
+        o[t] = l, i.delete(t)
     },
     COLLECTIBLES_PRODUCT_FOR_SKU_FETCH: e => {
         let {
             skuId: t
         } = e;
-        s.add(t)
+        i.add(t)
     },
     COLLECTIBLES_PRODUCT_FOR_SKU_FETCH_SUCCESS: e => {
         let {
             product: t
         } = e;
         t.skuIds.forEach(e => {
-            i[e] = t, delete o[e], s.delete(e)
+            s[e] = t, delete o[e], i.delete(e)
         })
     },
     COLLECTIBLES_PRODUCT_FOR_SKU_FETCH_FAILURE: e => {
@@ -67,9 +67,9 @@ let c = new d(a.h, {
             skuId: t,
             apiError: l
         } = e;
-        o[t] = l, s.delete(t)
+        o[t] = l, i.delete(t)
     },
     LOGOUT: e => {
-        n = {}, i = {}, s = new Set, o = {}
+        n = {}, s = {}, i = new Set, o = {}
     }
 })

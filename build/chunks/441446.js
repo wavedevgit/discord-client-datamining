@@ -2,7 +2,7 @@
 "use strict";
 l.d(t, {
     Hq: () => d,
-    LB: () => m,
+    LB: () => h,
     MG: () => u,
     nB: () => o,
     wn: () => c
@@ -11,10 +11,10 @@ var r = l(627968);
 l(64700);
 var a = l(503698),
     n = l.n(a),
-    i = l(397927),
-    s = l(14503);
+    s = l(397927),
+    i = l(14503);
 let o = () => (0, r.jsx)("hr", {
-        className: s.ts
+        className: i.ts
     }),
     d = e => {
         let {
@@ -24,13 +24,13 @@ let o = () => (0, r.jsx)("hr", {
             className: d
         } = e;
         return (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsx)(o, {}), (0, r.jsx)(i.Text, {
+            children: [(0, r.jsx)(o, {}), (0, r.jsx)(s.Text, {
                 variant: "text-md/semibold",
-                className: s.cW,
+                className: i.cW,
                 children: t
             }), (0, r.jsx)("div", {
-                className: n()(s.kL, d, {
-                    [s.YG]: "vertical" === a
+                className: n()(i.kL, d, {
+                    [i.YG]: "vertical" === a
                 }),
                 children: l
             })]
@@ -41,15 +41,15 @@ let o = () => (0, r.jsx)("hr", {
             children: t
         } = e;
         return (0, r.jsx)("div", {
-            className: s.uW,
+            className: i.uW,
             children: t
         })
     },
     u = e => (0, r.jsx)("div", {
-        className: s.wO,
+        className: i.wO,
         children: e.children
     }),
-    m = e => (0, r.jsx)("fieldset", {
-        className: s.lI,
+    h = e => (0, r.jsx)("fieldset", {
+        className: i.lI,
         children: e.children
     })

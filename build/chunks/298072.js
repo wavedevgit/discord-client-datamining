@@ -7,17 +7,17 @@ l.d(t, {
 var r = l(942381),
     a = l(265690),
     n = l(312852),
-    i = l(623373);
-let s = (0, a.h)(() => ({
+    s = l(623373);
+let i = (0, a.h)(() => ({
         selectionStates: new Map
     }), r.x),
     o = e => {
         let t = (0, n.K)(e),
-            l = s(t => null != e && (0, i.B1)(e) ? t.selectionStates.get(e.storeListingId)?.selectedVariantIndex : null);
+            l = i(t => null != e && (0, s.B1)(e) ? t.selectionStates.get(e.storeListingId)?.selectedVariantIndex : null);
         return null != l ? Math.max(0, l) : t
     },
     d = (e, t) => {
-        s.setState(l => {
+        i.setState(l => {
             let r = l.selectionStates.get(e.storeListingId);
             return r?.selectedVariantIndex === t ? l : {
                 selectionStates: new Map(l.selectionStates).set(e.storeListingId, {

@@ -8,8 +8,8 @@ var r = l(627968);
 l(64700);
 var a = l(397927),
     n = l(41770),
-    i = l(785330);
-let s = {
+    s = l(785330);
+let i = {
         id: "dummy-show-of-skeletons",
         children: [{
             block: "ContainedHero",
@@ -88,7 +88,7 @@ let s = {
             }), (0, r.jsx)(a.Text, {
                 variant: "text-md/semibold",
                 children: "Here, the \"popular picks\" are actually a sub layout with the id 'dummy-popular-picks'"
-            }), (0, r.jsx)("br", {}), (0, r.jsx)("hr", {}), (0, r.jsx)("br", {}), (0, r.jsx)(i.Ay, {
+            }), (0, r.jsx)("br", {}), (0, r.jsx)("hr", {}), (0, r.jsx)("br", {}), (0, r.jsx)(s.Ay, {
                 layout: n.uG
             })]
         }),
@@ -104,8 +104,8 @@ let s = {
             }), (0, r.jsx)(a.Text, {
                 variant: "text-md/semibold",
                 children: "Here we use the `Skeleton` component to show the shop cards loading while the (dummy) Shop Cards SubLayout are resolving (it will never stop loading for demonstration purposes)"
-            }), (0, r.jsx)("br", {}), (0, r.jsx)("hr", {}), (0, r.jsx)("br", {}), (0, r.jsx)(i.Ay, {
-                layout: s
+            }), (0, r.jsx)("br", {}), (0, r.jsx)("hr", {}), (0, r.jsx)("br", {}), (0, r.jsx)(s.Ay, {
+                layout: i
             })]
         }),
         controls: {}

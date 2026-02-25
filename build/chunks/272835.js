@@ -6,8 +6,8 @@ l.d(t, {
 var r = l(627968),
     a = l(64700),
     n = l(735438),
-    i = l(397927),
-    s = l(252561),
+    s = l(397927),
+    i = l(252561),
     o = l(720462),
     d = l(488669);
 let c = [{
@@ -83,16 +83,16 @@ let c = [{
         name: "Interactive H Scroll",
         id: "interactive-h-scroll",
         component: () => {
-            let [e, t] = a.useState(15), [l, u] = a.useState(8), [m, h] = a.useState("xl"), [x, p] = a.useState(!0), b = a.useMemo(() => [...Array(e)].map((e, t) => (0, r.jsx)(i.DUT, {
+            let [e, t] = a.useState(15), [l, u] = a.useState(8), [h, m] = a.useState("xl"), [x, b] = a.useState(!0), p = a.useMemo(() => [...Array(e)].map((e, t) => (0, r.jsx)(s.DUT, {
                 className: d.j,
                 onClick: () => console.log(t),
-                children: (0, r.jsxs)(i.BJc, {
+                children: (0, r.jsxs)(s.BJc, {
                     direction: "vertical",
                     justify: "space-between",
                     align: "center",
                     children: [(0, r.jsx)("div", {
                         children: t
-                    }), t % 3 == 0 && (0, r.jsx)(i.Button, {
+                    }), t % 3 == 0 && (0, r.jsx)(s.Button, {
                         onClick: () => console.log(`clicked button ${t}`),
                         text: "Click Me"
                     })]
@@ -101,15 +101,15 @@ let c = [{
             return (0, r.jsxs)("div", {
                 children: [(0, r.jsx)(o.A, {
                     gap: l,
-                    edgeFade: m,
+                    edgeFade: h,
                     hideActionsWhenDisabled: x,
-                    children: b
-                }), (0, r.jsx)(s.nB, {}), (0, r.jsxs)(s.MG, {
-                    children: [(0, r.jsx)(i.Checkbox, {
+                    children: p
+                }), (0, r.jsx)(i.nB, {}), (0, r.jsxs)(i.MG, {
+                    children: [(0, r.jsx)(s.Checkbox, {
                         checked: x,
-                        onChange: () => p(!x),
+                        onChange: () => b(!x),
                         label: "Hide Actions When Disabled"
-                    }), (0, r.jsx)(i.ksK, {
+                    }), (0, r.jsx)(s.ksK, {
                         type: "number",
                         min: 0,
                         value: e.toString(),
@@ -118,8 +118,8 @@ let c = [{
                         },
                         label: "Children Count"
                     })]
-                }), (0, r.jsx)(s.MG, {
-                    children: (0, r.jsx)(i.l6P, {
+                }), (0, r.jsx)(i.MG, {
+                    children: (0, r.jsx)(s.l6P, {
                         value: l,
                         options: c,
                         onSelectionChange: u,
@@ -127,11 +127,11 @@ let c = [{
                         selectionMode: "single",
                         fullWidth: !0
                     })
-                }), (0, r.jsx)(s.MG, {
-                    children: (0, r.jsx)(i.l6P, {
-                        value: m,
+                }), (0, r.jsx)(i.MG, {
+                    children: (0, r.jsx)(s.l6P, {
+                        value: h,
                         options: c,
-                        onSelectionChange: h,
+                        onSelectionChange: m,
                         label: "Edge Fade Space",
                         selectionMode: "single",
                         fullWidth: !0

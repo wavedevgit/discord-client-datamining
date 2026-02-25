@@ -24,6 +24,6 @@ function A() {
     });
     return null != A && p ? (0, i.jsx)(d.A, {
         id: A.id,
-        width: 48
+        size: h.N8.SIZE_48
     }) : g
 }
