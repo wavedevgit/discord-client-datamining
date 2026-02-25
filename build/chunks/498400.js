@@ -34,8 +34,8 @@ var i = n(627968),
     P = n(234419),
     L = n(558533),
     D = n(788868),
-    G = n(652215),
-    M = n(916692);
+    M = n(652215),
+    G = n(916692);
 let U = function(e) {
     let {
         entrypoint: t = D.Mf.UserSettings
@@ -48,14 +48,14 @@ let U = function(e) {
         } = (0, g.Ay)(A.A.PREMIUM_MARKETING),
         k = (0, r.bG)([f.A], () => f.A.hasFetchedSubscriptions()),
         V = (0, r.bG)([I.A], () => I.A.hasFetchedPaymentSources),
-        w = (0, r.bG)([S.default], () => S.default.getCurrentUser()),
-        H = w?.id,
+        H = (0, r.bG)([S.default], () => S.default.getCurrentUser()),
+        w = H?.id,
         B = (0, P.V)(),
         Y = (0, y.O)(),
         F = (0, x.Y)(D.T7),
         [z, W] = s.useState(!0),
         K = s.useRef(0),
-        Z = (0, b.YE)(w, D.PremiumTypes.TIER_2),
+        Z = (0, b.YE)(H, D.PremiumTypes.TIER_2),
         q = (0, O.A)({
             location: "PremiumHomePage"
         }),
@@ -65,10 +65,10 @@ let U = function(e) {
     }, [X]), s.useEffect(() => {
         c.h.wait(async () => {
             let e = Date.now();
-            await Promise.all([d.hP(), d.$o(), (0, u.zS)(null, null, G.tF5.DISCOVERY)]), K.current = Date.now() - e, W(!1)
+            await Promise.all([d.hP(), d.$o(), (0, u.zS)(null, null, M.tF5.DISCOVERY)]), K.current = Date.now() - e, W(!1)
         })
     }, []), s.useEffect(() => {
-        z || N.default.track(G.HAw.PREMIUM_MARKETING_PAGE_VIEWED, {
+        z || N.default.track(M.HAw.PREMIUM_MARKETING_PAGE_VIEWED, {
             location_stack: a,
             load_duration_ms: K.current
         })
@@ -80,10 +80,10 @@ let U = function(e) {
         $ = Q ? (0, i.jsx)(_.A, {}) : n ? (0, i.jsx)(p.uK, {}) : J && Z ? (0, i.jsx)(g.f5, {
             value: U,
             children: (0, i.jsx)(R.A, {
-                userId: H
+                userId: w
             })
         }) : k && F && V ? null : (0, i.jsx)("div", {
-            className: l()(M.kL, M.Lq),
+            className: l()(G.kL, G.Lq),
             children: (0, i.jsx)(o.y$y, {})
         });
     return null != $ ? (0, i.jsxs)(i.Fragment, {

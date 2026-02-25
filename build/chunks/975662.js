@@ -34,13 +34,13 @@ var i, s = n(627968),
     P = n(322631),
     L = n(17307),
     D = n(788868),
-    G = n(652215),
-    M = n(49999),
+    M = n(652215),
+    G = n(49999),
     U = n(355097),
     k = n(985018),
     V = n(674547),
-    w = n(241015),
-    H = n(561852),
+    H = n(241015),
+    w = n(561852),
     B = n(522799),
     Y = n(795710),
     F = n(484813),
@@ -81,24 +81,24 @@ let eh = () => {
         analyticsLocations: e
     }), eN = () => {
         (0, C.openUserSettings)(p.X.SOUNDBOARD_CATEGORY, {
-            section: G.nc_.VOICE,
+            section: M.nc_.VOICE,
             subsection: U.MJ,
             analyticsLocations: e
         })
     }, eb = () => {
-        (0, x.pX)(G.BVt.COLLECTIBLES_SHOP)
+        (0, x.pX)(M.BVt.COLLECTIBLES_SHOP)
     }, ej = () => {
         let e = (0, E.Ci)("openCustomAppSettings"),
             t = (0, E.WJ)("openCustomAppSettings"),
             n = p.X.APPEARANCE_PANEL,
             i = U.kq.CUSTOM_APP_ICONS;
         e ? (n = p.X.DISPLAY_IN_APP_ICON_CATEGORY, i = void 0) : t && (n = p.X.APPEARANCE_IN_APP_ICON, i = void 0), (0, C.openUserSettings)(n, {
-            section: G.nc_.APPEARANCE,
+            section: M.nc_.APPEARANCE,
             scrollPosition: i
         })
     }, ev = a.useCallback(() => {
         (0, C.openUserSettings)(p.X.PROFILE_PANEL, {
-            section: G.nc_.PROFILE_CUSTOMIZATION,
+            section: M.nc_.PROFILE_CUSTOMIZATION,
             analyticsLocations: e
         }, () => (0, g.L)({
             analyticsLocations: e
@@ -113,7 +113,7 @@ let eh = () => {
             onCtaClick: () => {
                 let t = (0, E.Ci)("openClientThemes");
                 (0, C.openUserSettings)(t ? p.X.DISPLAY_THEME_CATEGORY : p.X.APPEARANCE_PANEL, {
-                    section: G.nc_.APPEARANCE,
+                    section: M.nc_.APPEARANCE,
                     analyticsLocations: e
                 })
             },
@@ -128,11 +128,11 @@ let eh = () => {
             pillText: k.intl.string(k.t.EYxi0o),
             onCtaClick: eC ? () => {
                 (0, C.openUserSettings)(p.X.CLIPS_PANEL, {
-                    section: G.nc_.CLIPS,
+                    section: M.nc_.CLIPS,
                     analyticsLocations: e
                 })
             } : () => {
-                window.open(N.A.getArticleURL(G.MVz.CLIPS), "_blank")
+                window.open(N.A.getArticleURL(M.MVz.CLIPS), "_blank")
             },
             perkImage: Z
         } : {
@@ -218,7 +218,7 @@ let eh = () => {
             descriptionCta: k.intl.string(k.t.jVcuVY),
             onCtaClick: eT ? void 0 : () => {
                 (0, C.openUserSettings)(p.X.PREMIUM_GUILD_SUBSCRIPTIONS_PANEL, {
-                    section: G.nc_.GUILD_BOOSTING,
+                    section: M.nc_.GUILD_BOOSTING,
                     analyticsLocations: e
                 })
             },
@@ -278,7 +278,7 @@ let eh = () => {
             name: "badge",
             title: k.intl.string(k.t.dcFfSJ),
             subtitle: k.intl.string(k.t["37MFFq"]),
-            perkImage: H,
+            perkImage: w,
             description: k.intl.string(k.t.T1IS4j)
         },
         greyBadge: {
@@ -352,7 +352,7 @@ let eh = () => {
             title: k.intl.string(k.t.tPY4o9),
             subtitle: k.intl.string(k.t.JY0grC),
             description: k.intl.format(k.t["2JqTF6"], {
-                helpdeskArticle: N.A.getArticleURL(G.MVz.REFERRAL_PROGRAM)
+                helpdeskArticle: N.A.getArticleURL(M.MVz.REFERRAL_PROGRAM)
             }),
             descriptionCta: k.intl.string(k.t.JST6jl),
             isPremiumGetCta: !eh || void 0,
@@ -372,13 +372,13 @@ let eh = () => {
             title: k.intl.string(k.t["57ngoo"]),
             subtitle: k.intl.string(k.t.piFFjd),
             description: k.intl.format(k.t.Pd7olh, {
-                learnMoreLink: N.A.getArticleURL(G.MVz.PERMADECOS)
+                learnMoreLink: N.A.getArticleURL(M.MVz.PERMADECOS)
             }),
             descriptionCta: ep ? k.intl.string(k.t.jVcuVY) : k.intl.string(k.t.JST6jl),
             isPremiumGetCta: !ep,
             onCtaClick: ep ? () => {
                 eI || (0, A.Dr)(r.M.PERMADECOS_NITRO_HOME_CARD_NEW_BADGE, {
-                    dismissAction: M.i.TAKE_ACTION
+                    dismissAction: G.i.TAKE_ACTION
                 }), ef()
             } : void 0,
             pillText: eI || !ep ? void 0 : k.intl.string(k.t.y2b7CA).toLocaleUpperCase(),
@@ -396,8 +396,8 @@ let eh = () => {
         },
         displayNameStyles: {
             name: "displayNameStyles",
-            title: k.intl.string(w.default.ABtBDQ),
-            subtitle: k.intl.string(w.default.jhmU5E),
+            title: k.intl.string(H.default.ABtBDQ),
+            subtitle: k.intl.string(H.default.jhmU5E),
             descriptionCta: k.intl.string(k.t.jVcuVY),
             onCtaClick: ev,
             dismissibleContentType: r.M.DISPLAY_NAME_STYLES_NITRO_HOME_TILE,

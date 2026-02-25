@@ -34,13 +34,13 @@ var i = n(627968),
     P = n(975571),
     L = n(427262),
     D = n(837921),
-    G = n(64313),
-    M = n(253932),
+    M = n(64313),
+    G = n(253932),
     U = n(780964),
     k = n(192501),
     V = n(840065),
-    w = n(531525),
-    H = n(652215),
+    H = n(531525),
+    w = n(652215),
     B = n(53516),
     Y = n(985018),
     F = n(949268),
@@ -49,7 +49,7 @@ let W = D.Ay.getEnableHardwareAcceleration() ? d.JsQ : d.euF;
 
 function K() {
     (0, V.openUserSettings)(U.X.PROFILE_PANEL, {
-        section: H.nc_.PROFILE_CUSTOMIZATION
+        section: w.nc_.PROFILE_CUSTOMIZATION
     })
 }
 
@@ -325,7 +325,7 @@ function J(e) {
                         (0, d.qfG)(e => (0, i.jsx)(R.default, {
                             ...e,
                             title: Y.intl.string(Y.t["3CTiKi"]),
-                            children: a.hasFlag(H.nhx.MFA_SMS) ? Y.intl.string(Y.t.jrhJyo) : void 0,
+                            children: a.hasFlag(w.nhx.MFA_SMS) ? Y.intl.string(Y.t.jrhJyo) : void 0,
                             actionText: Y.intl.string(Y.t.N86XcP),
                             handleSubmit: e => C.A.removePhone(e, C.d.USER_SETTINGS_UPDATE)
                         }))
@@ -364,7 +364,7 @@ function $(e) {
     } = e, n = (0, x.A)({
         id: t.id,
         label: Y.intl.string(Y.t["/AXYnE"])
-    }), a = M.Q_.useSetting(), l = s.useRef(null);
+    }), a = G.Q_.useSetting(), l = s.useRef(null);
     return a && y.p5 ? (0, i.jsx)(d.YNO, {
         targetElementRef: l,
         renderPopout: e => {
@@ -398,7 +398,7 @@ function ee(e) {
     let {
         className: t
     } = e, a = (0, g.b8)(), r = (0, g.yM)(), o = (0, g.Y2)(), c = !a || r, u = (0, A.W)(Y.intl.string(Y.t.KPGVWl), Y.intl.string(Y.t["9KiIz6"])), h = (0, A.W)(Y.intl.string(Y.t.yNGjyK), Y.intl.string(Y.t.DVywUB)), x = (0, A.W)(Y.intl.string(Y.t.UX0Ode), Y.intl.string(Y.t.lKDPGA)), p = s.useCallback(() => {
-        window.open(P.A.getArticleURL(H.MVz.TIGGER_PAWTECT_LEARN_MORE), "_blank")
+        window.open(P.A.getArticleURL(w.MVz.TIGGER_PAWTECT_LEARN_MORE), "_blank")
     }, []), E = s.useCallback(() => {
         (0, d.mMO)(async () => {
             let {
@@ -458,13 +458,13 @@ function ee(e) {
 function et(e) {
     let {
         currentUser: t
-    } = e, n = (0, b.Ay)(t.id), s = (0, N.A)(n), a = M.jP.useSetting(), l = (0, r.bG)([f.A], () => f.A.getErrors()), o = l?.avatar?.[0], {
+    } = e, n = (0, b.Ay)(t.id), s = (0, N.A)(n), a = G.jP.useSetting(), l = (0, r.bG)([f.A], () => f.A.getErrors()), o = l?.avatar?.[0], {
         avatarSrc: c,
         avatarDecorationSrc: _
     } = (0, j.A)({
         userId: t?.id,
         size: d._3J.SIZE_80
-    }), m = (0, I.A)(), A = (0, T.fk)(), g = (0, G.j)("UserSettingsAccountProfileCard");
+    }), m = (0, I.A)(), A = (0, T.fk)(), g = (0, M.j)("UserSettingsAccountProfileCard");
     return (0, i.jsxs)("div", {
         className: z.DM,
         children: [(0, i.jsx)(O.o, {
@@ -517,30 +517,30 @@ function et(e) {
             }) : null, (0, i.jsxs)("div", {
                 className: z.FL,
                 children: [(0, i.jsx)(S.x, {
-                    setting: w.H.ACCOUNT_DISPLAY_NAME,
+                    setting: H.H.ACCOUNT_DISPLAY_NAME,
                     children: (0, i.jsx)(q, {
                         className: z.mS,
                         user: t
                     })
                 }), (0, i.jsx)(S.x, {
-                    setting: w.H.ACCOUNT_USERNAME,
+                    setting: H.H.ACCOUNT_USERNAME,
                     children: (0, i.jsx)(Z, {
                         user: t
                     })
                 }), (0, i.jsx)(S.x, {
-                    setting: w.H.ACCOUNT_EMAIL,
+                    setting: H.H.ACCOUNT_EMAIL,
                     children: (0, i.jsx)(Q, {
                         className: z.Zr,
                         user: t
                     })
                 }), (0, i.jsx)(S.x, {
-                    setting: w.H.ACCOUNT_PHONE_NUMBER,
+                    setting: H.H.ACCOUNT_PHONE_NUMBER,
                     children: (0, i.jsx)(J, {
                         className: z.Zr,
                         user: t
                     })
                 }), (A || g) && (0, i.jsx)(S.x, {
-                    setting: w.H.ACCOUNT_AGE_GROUP,
+                    setting: H.H.ACCOUNT_AGE_GROUP,
                     children: (0, i.jsx)(ee, {
                         className: z.Zr
                     })

@@ -31,34 +31,34 @@ let N = s.memo(e => {
         dismissibleContentType: a,
         forceShadow: g,
         cardType: E
-    } = e, C = e?.onCtaClick, j = (0, c.bG)([u.A], () => u.A.useReducedMotion), [v, O] = s.useState(!1), [R, y] = s.useState(!1), P = E === p.cJ.CARD_CAROUSEL_FIRST_ROW || E === p.cJ.CARD_CAROUSEL_SECOND_ROW || E === p.cJ.CARD_CAROUSEL_THIRD_ROW, L = (0, x.A)(), [D, G] = (0, m.DP)(null != a && n ? [a] : []), {
-        easterEggLevel: M,
+    } = e, C = e?.onCtaClick, j = (0, c.bG)([u.A], () => u.A.useReducedMotion), [v, O] = s.useState(!1), [R, y] = s.useState(!1), P = E === p.cJ.CARD_CAROUSEL_FIRST_ROW || E === p.cJ.CARD_CAROUSEL_SECOND_ROW || E === p.cJ.CARD_CAROUSEL_THIRD_ROW, L = (0, x.A)(), [D, M] = (0, m.DP)(null != a && n ? [a] : []), {
+        easterEggLevel: G,
         isEasterEggTriggered: U,
         onHover: k,
         onUnhover: V
-    } = (0, h.A)(5), w = s.useMemo(() => (0, r.debounce)(() => {
+    } = (0, h.A)(5), H = s.useMemo(() => (0, r.debounce)(() => {
         A.default.track(T.HAw.PREMIUM_MARKETING_WHAT_IS_NEW_CARD_HOVERED, {
             card_type: (0, r.snakeCase)(t)
         })
-    }, 800), [t]), H = s.useMemo(() => (0, r.debounce)(() => {
+    }, 800), [t]), w = s.useMemo(() => (0, r.debounce)(() => {
         null != C && A.default.track(T.HAw.PERK_DISCOVERABILITY_CARD_CTA_CLICKED, {
             card_type: (0, r.snakeCase)(t),
             function_name: (0, r.snakeCase)(C.name)
         })
     }, 800), [t, C]);
     e = {
-        onMouseEnter: w,
+        onMouseEnter: H,
         ...e,
         onCtaClick: null != C ? () => {
-            C?.(), H()
+            C?.(), w()
         } : void 0
     };
     let B = D !== a || null == a || R;
     return (s.useEffect(() => {
         j && v && (y(!0), A.default.track(T.HAw.PREMIUM_MARKETING_PERK_CARD_FLIPPED, {
             card_type: t
-        }), null != a && G(S.i.TAKE_ACTION))
-    }, [j, v, a, t, G]), (0, _.A)({
+        }), null != a && M(S.i.TAKE_ACTION))
+    }, [j, v, a, t, M]), (0, _.A)({
         type: o.ImpressionTypes.VIEW,
         name: o.ImpressionNames.PERK_DISCOVERABILITY_CARD,
         properties: {
@@ -78,7 +78,7 @@ let N = s.memo(e => {
                 className: l()(f.Ci, {
                     [f.BX]: !U,
                     [f.yg]: U,
-                    [f.Ud]: U && 3 === M,
+                    [f.Ud]: U && 3 === G,
                     [f.VN]: j
                 }),
                 children: [(0, i.jsx)("div", {
@@ -125,7 +125,7 @@ let N = s.memo(e => {
                 onTransitionEnd: e => {
                     v && "transform" === e.propertyName && e.target.classList.contains(f.Ci) && (y(!0), A.default.track(T.HAw.PREMIUM_MARKETING_PERK_CARD_FLIPPED, {
                         card_type: t
-                    }), null != a && G(S.i.TAKE_ACTION))
+                    }), null != a && M(S.i.TAKE_ACTION))
                 },
                 children: [(0, i.jsx)("div", {
                     className: f.UF,

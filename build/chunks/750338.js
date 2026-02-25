@@ -52,13 +52,13 @@ let p = e => {
             size: O,
             backgroundVideoUrl: R,
             previewImageStyle: y = A.Tb.CONTAINED
-        } = e, P = (0, m.TM)(), L = s.useRef(null), D = s.useRef(0), G = (0, d.A)("(min-width: 1140px)"), M = y === A.Tb.OVERLAY && (O !== A.A0.LARGE || !G), U = O === A.A0.LARGE && G && y === A.Tb.OVERLAY, k = null != R && G && O === A.A0.LARGE, V = s.useMemo(() => (0, r.debounce)(() => {
+        } = e, P = (0, m.TM)(), L = s.useRef(null), D = s.useRef(0), M = (0, d.A)("(min-width: 1140px)"), G = y === A.Tb.OVERLAY && (O !== A.A0.LARGE || !M), U = O === A.A0.LARGE && M && y === A.Tb.OVERLAY, k = null != R && M && O === A.A0.LARGE, V = s.useMemo(() => (0, r.debounce)(() => {
             _.default.track(g.HAw.PREMIUM_WHATS_NEW_BOX_CTA_CLICKED, {
                 box_type: (0, r.snakeCase)(t)
             })
-        }, 800), [t]), w = () => {
+        }, 800), [t]), H = () => {
             null == L.current || N || (L.current.currentTime = D.current, L.current.play())
-        }, H = () => {
+        }, w = () => {
             null == L.current || N || (D.current = L.current.currentTime, L.current.pause())
         }, B = O === A.A0.LARGE ? "heading-xxl/bold" : "heading-xl/bold", Y = () => (0, i.jsxs)("div", {
             className: l()(x.textBox, x[`${O}`], U && x.overlayTextBox),
@@ -117,11 +117,11 @@ let p = e => {
         }), z = I % 2 != 0;
         return (0, i.jsxs)(c.hLv, {
             id: t,
-            className: l()(x.backgroundColor, x.boxContainer, x[`${O}`], x.gradientBackground, M && x.overlayImageMode, U && x.overlayMode),
-            onMouseEnter: w,
-            onFocus: w,
-            onBlur: H,
-            onMouseLeave: H,
+            className: l()(x.backgroundColor, x.boxContainer, x[`${O}`], x.gradientBackground, G && x.overlayImageMode, U && x.overlayMode),
+            onMouseEnter: H,
+            onFocus: H,
+            onBlur: w,
+            onMouseLeave: w,
             color: "purple",
             children: [k && (0, i.jsx)("div", {
                 className: x.backgroundVideoContainer,

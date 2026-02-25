@@ -36,13 +36,13 @@ var i = n(627968),
     P = n(975571),
     L = n(964404),
     D = n(253932),
-    G = n(780964),
-    M = n(397438),
+    M = n(780964),
+    G = n(397438),
     U = n(193658),
     k = n(790174),
     V = n(840065),
-    w = n(355097),
-    H = n(531525),
+    H = n(355097),
+    w = n(531525),
     B = n(652215),
     Y = n(823894),
     F = n(75804),
@@ -74,60 +74,60 @@ function ee(e) {
         children: (0, i.jsxs)(c.BJc, {
             gap: 16,
             children: [(0, i.jsx)(et, {}), (0, i.jsxs)(v.x, {
-                setting: H.H.ACCESSIBILITY_SATURATION,
+                setting: w.H.ACCESSIBILITY_SATURATION,
                 children: [(0, i.jsx)(es, {}), (0, i.jsx)(c.cGx, {})]
             }), (0, i.jsxs)(v.x, {
-                setting: H.H.ACCESSIBILITY_LINK_DECORATIONS,
+                setting: w.H.ACCESSIBILITY_LINK_DECORATIONS,
                 children: [(0, i.jsx)(ea, {}), (0, i.jsx)(c.cGx, {})]
             }), t ? (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)(v.x, {
-                    setting: H.H.ACCESSIBILITY_CUSTOM_CURSOR,
+                    setting: w.H.ACCESSIBILITY_CUSTOM_CURSOR,
                     children: (0, i.jsx)(el, {})
                 }), (0, i.jsx)(c.cGx, {})]
             }) : null, (0, i.jsxs)(v.x, {
-                setting: H.H.ACCESSIBILITY_ROLE_STYLE,
+                setting: w.H.ACCESSIBILITY_ROLE_STYLE,
                 children: [(0, i.jsx)(eo, {}), (0, i.jsx)(c.cGx, {})]
             }), s && (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)(er, {}), (0, i.jsx)(c.cGx, {
                     gap: 4
                 })]
             }), (0, i.jsxs)(v.x, {
-                setting: H.H.ACCESSIBILITY_DISPLAY_NAME_STYLES,
+                setting: w.H.ACCESSIBILITY_DISPLAY_NAME_STYLES,
                 children: [(0, i.jsx)(ec, {}), (0, i.jsx)(c.cGx, {})]
             }), (0, i.jsxs)(v.x, {
-                setting: H.H.ACCESSIBILITY_PROFILE_COLORS,
+                setting: w.H.ACCESSIBILITY_PROFILE_COLORS,
                 children: [(0, i.jsx)(ed, {}), (0, i.jsx)(c.cGx, {
                     gap: 4
                 })]
             }), (0, i.jsxs)(v.x, {
-                setting: H.H.ACCESSIBILITY_CONTRAST,
+                setting: w.H.ACCESSIBILITY_CONTRAST,
                 children: [(0, i.jsx)(eu, {}), (0, i.jsx)(c.cGx, {
                     gap: 4
                 })]
             }), (0, i.jsxs)(v.x, {
-                setting: H.H.ACCESSIBILITY_REDUCED_MOTION,
+                setting: w.H.ACCESSIBILITY_REDUCED_MOTION,
                 children: [(0, i.jsx)(e_, {}), (0, i.jsx)(c.cGx, {
                     gap: 4
                 })]
             }), (0, i.jsxs)(v.x, {
-                setting: H.H.ACCESSIBILITY_MESSAGES,
+                setting: w.H.ACCESSIBILITY_MESSAGES,
                 children: [(0, i.jsx)(eA, {}), (0, i.jsx)(c.cGx, {
                     gap: 4
                 })]
             }), n && (0, i.jsxs)(v.x, {
-                setting: H.H.ACCESSIBILITY_SWITCH_ICON,
+                setting: w.H.ACCESSIBILITY_SWITCH_ICON,
                 children: [(0, i.jsx)(ei, {}), (0, i.jsx)(c.cGx, {
                     gap: 4
                 })]
             }), (0, i.jsx)(ex, {}), (0, i.jsx)(v.x, {
-                setting: H.H.ACCESSIBILITY_APPEARANCE_UPSELL,
+                setting: w.H.ACCESSIBILITY_APPEARANCE_UPSELL,
                 children: (0, i.jsx)("div", {
                     className: K.oq,
                     children: (0, i.jsx)(c.Text, {
                         variant: "text-md/normal",
                         children: z.intl.format(z.t.DHpTjT, {
                             onAppearanceClick() {
-                                (0, V.openUserSettings)(G.X.APPEARANCE_PANEL, {
+                                (0, V.openUserSettings)(M.X.APPEARANCE_PANEL, {
                                     section: B.nc_.APPEARANCE
                                 })
                             }
@@ -246,7 +246,7 @@ function es() {
             onValueChange: J,
             onMarkerRender: e => 100 * e % 2 == 0 ? `${100*e}%` : void 0
         }), (0, i.jsx)(v.x, {
-            setting: H.H.ACCESSIBILITY_SATURATION_CUSTOM_COLOR,
+            setting: w.H.ACCESSIBILITY_SATURATION_CUSTOM_COLOR,
             children: (0, i.jsx)(c.dOG, {
                 label: z.intl.string(z.t.bQCodD),
                 description: z.intl.string(z.t.nlAOEW),
@@ -282,7 +282,7 @@ function el() {
 function er() {
     let e = (0, r.bG)([L.Ay], () => L.Ay.hdrDynamicRange);
     return (0, i.jsx)(v.x, {
-        setting: H.H.ACCESSIBILITY_HDR_DYNAMIC_RANGE,
+        setting: w.H.ACCESSIBILITY_HDR_DYNAMIC_RANGE,
         children: (0, i.jsx)(c.z6M, {
             label: z.intl.string(z.t.nemtgW),
             badge: "beta",
@@ -354,12 +354,12 @@ function ed() {
     return (0, i.jsx)(c.nVY, {
         label: z.intl.string(z.t.BT8Bmp),
         children: (0, i.jsx)(v.x, {
-            setting: H.H.ACCESSIBILITY_PROFILE_COLORS_SYNC_THEMES,
+            setting: w.H.ACCESSIBILITY_PROFILE_COLORS_SYNC_THEMES,
             children: (0, i.jsx)(c.dOG, {
                 label: z.intl.string(z.t["sSY+mD"]),
                 description: z.intl.format(z.t.u6UjrL, {
                     onThemeClick() {
-                        (0, V.openUserSettings)(G.X.APPEARANCE_PANEL, {
+                        (0, V.openUserSettings)(M.X.APPEARANCE_PANEL, {
                             section: B.nc_.APPEARANCE
                         })
                     }
@@ -386,10 +386,10 @@ function eu() {
     return (0, i.jsxs)(c.nVY, {
         label: z.intl.string(z.t["TYyfO/"]),
         children: [(0, i.jsx)(v.x, {
-            setting: H.H.ACCESSIBILITY_HIGH_CONTRAST,
+            setting: w.H.ACCESSIBILITY_HIGH_CONTRAST,
             children: (0, i.jsx)(en, {})
         }), (0, g.D)() ? (0, i.jsx)(v.x, {
-            setting: H.H.ACCESSIBILITY_CONTRAST_SYNC_FORCED_COLORS,
+            setting: w.H.ACCESSIBILITY_CONTRAST_SYNC_FORCED_COLORS,
             children: (0, i.jsx)(c.dOG, {
                 label: z.intl.string(z.t.cguiec),
                 description: l,
@@ -409,12 +409,12 @@ function e_() {
             systemPrefersReducedMotion: l,
             gifAutoPlayOverrideReason: o,
             animateEmojiOverrideReason: d
-        } = (0, r.cf)([m.A, M.A], () => ({
+        } = (0, r.cf)([m.A, G.A], () => ({
             systemPrefersReducedMotion: m.A.systemPrefersReducedMotion,
             rawPrefersReducedMotion: m.A.rawPrefersReducedMotion,
             useReducedMotion: m.A.useReducedMotion,
-            gifAutoPlayOverrideReason: M.A.getAppliedOverrideReasonKey("gifAutoPlay"),
-            animateEmojiOverrideReason: M.A.getAppliedOverrideReasonKey("animateEmoji")
+            gifAutoPlayOverrideReason: G.A.getAppliedOverrideReasonKey("gifAutoPlay"),
+            animateEmojiOverrideReason: G.A.getAppliedOverrideReasonKey("animateEmoji")
         })),
         u = s.useCallback(e => {
             (0, _.qz)(e ? "auto" : l)
@@ -435,14 +435,14 @@ function e_() {
                 checked: "auto" === a,
                 onChange: u
             }), (0, i.jsx)(v.x, {
-                setting: H.H.ACCESSIBILITY_REDUCED_MOTION_ENABLE,
+                setting: w.H.ACCESSIBILITY_REDUCED_MOTION_ENABLE,
                 children: (0, i.jsx)(c.dOG, {
                     label: z.intl.string(z.t.b3XBzg),
                     checked: n,
                     onChange: A
                 })
             }), (0, i.jsx)(v.x, {
-                setting: H.H.ACCESSIBILITY_REDUCED_MOTION_AUTO_PLAY_GIFS,
+                setting: w.H.ACCESSIBILITY_REDUCED_MOTION_AUTO_PLAY_GIFS,
                 children: (0, i.jsx)(c.dOG, {
                     label: z.intl.string(z.t.Iayoh5),
                     description: null != o ? (0, j.A)(o) : void 0,
@@ -450,7 +450,7 @@ function e_() {
                     onChange: D.kt.updateSetting
                 })
             }), (0, i.jsx)(v.x, {
-                setting: H.H.ACCESSIBILITY_REDUCED_MOTION_PLAY_ANIMATED_EMOJI,
+                setting: w.H.ACCESSIBILITY_REDUCED_MOTION_PLAY_ANIMATED_EMOJI,
                 children: (0, i.jsx)(c.dOG, {
                     label: z.intl.string(z.t.iIaOlc),
                     description: null != d ? (0, j.A)(d) : void 0,
@@ -458,7 +458,7 @@ function e_() {
                     onChange: D.Sf.updateSetting
                 })
             }), (0, i.jsx)(v.x, {
-                setting: H.H.ACCESSIBILITY_STICKERS,
+                setting: w.H.ACCESSIBILITY_STICKERS,
                 children: (0, i.jsx)(em, {})
             })]
         })
@@ -467,7 +467,7 @@ function e_() {
 
 function em() {
     let e = D.S0.useSetting(),
-        t = (0, r.bG)([M.A], () => M.A.getAppliedOverrideReasonKey("animateStickers")),
+        t = (0, r.bG)([G.A], () => G.A.getAppliedOverrideReasonKey("animateStickers")),
         n = s.useCallback(e => {
             D.S0.updateSetting(e)
         }, []);
@@ -494,19 +494,19 @@ function eA() {
     let e = (0, r.bG)([m.A], () => m.A.isSubmitButtonEnabled),
         t = D.D_.useSetting(),
         n = s.useRef(null);
-    return (0, U.A)(n, w.Yu.LEGACY_CHAT_INPUT), (0, i.jsx)("div", {
+    return (0, U.A)(n, H.Yu.LEGACY_CHAT_INPUT), (0, i.jsx)("div", {
         ref: n,
         children: (0, i.jsxs)(c.nVY, {
             label: z.intl.string(z.t.onqU6o),
             children: [(0, i.jsx)(v.x, {
-                setting: H.H.ACCESSIBILITY_MESSAGES_SEND_MESSAGE_BUTTON,
+                setting: w.H.ACCESSIBILITY_MESSAGES_SEND_MESSAGE_BUTTON,
                 children: (0, i.jsx)(c.dOG, {
                     label: z.intl.string(z.t["3Fztn5"]),
                     checked: e,
                     onChange: _.Xt
                 })
             }), (0, i.jsx)(v.x, {
-                setting: H.H.ACCESSIBILITY_MESSAGES_LEGACY_CHAT_INPUT,
+                setting: w.H.ACCESSIBILITY_MESSAGES_LEGACY_CHAT_INPUT,
                 children: (0, i.jsx)(c.dOG, {
                     label: z.intl.string(z.t.TZ2hZH),
                     description: z.intl.string(z.t.Q7wgHc),
@@ -573,11 +573,11 @@ function eh() {
 
 function ex() {
     return u.$j ? (0, i.jsx)(v.x, {
-        setting: H.H.ACCESSIBILITY_TEXT_TO_SPEECH,
+        setting: w.H.ACCESSIBILITY_TEXT_TO_SPEECH,
         children: (0, i.jsx)(c.nVY, {
             label: z.intl.string(z.t.VpSKeO),
             children: (0, i.jsx)(v.x, {
-                setting: H.H.ACCESSIBILITY_TEXT_TO_SPEECH_RATE,
+                setting: w.H.ACCESSIBILITY_TEXT_TO_SPEECH_RATE,
                 children: (0, i.jsx)(eg, {})
             })
         })

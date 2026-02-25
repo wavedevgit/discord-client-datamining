@@ -35,13 +35,13 @@ var i = n(627968),
     P = n(353171),
     L = n(735729),
     D = n(237984),
-    G = n(195043),
-    M = n(111162),
+    M = n(195043),
+    G = n(111162),
     U = n(274184),
     k = n(954571),
     V = n(661191),
-    w = n(837921),
-    H = n(544028),
+    H = n(837921),
+    w = n(544028),
     B = n(253932),
     Y = n(559248),
     F = n(740625),
@@ -259,7 +259,7 @@ class ei extends s.Component {
     };
     renderEmpty() {
         return (0, i.jsx)(g.ppr, {
-            theme: H.A.theme,
+            theme: w.A.theme,
             className: l()(J.eT, J.SX),
             children: (0, i.jsx)(g.SGT, {
                 children: "You have no build overrides configured."
@@ -339,7 +339,7 @@ class ei extends s.Component {
                 variant: "text-md/normal",
                 children: "Mobile build overrides must be generated using the desktop/web stable client for now!"
             }) : null;
-        return (0, i.jsx)(G.x, {
+        return (0, i.jsx)(M.x, {
             setting: K.H.DEVELOPER_OPTIONS_BUILD_OVERRIDE,
             children: (0, i.jsx)(g.nVY, {
                 children: (0, i.jsxs)(g.BJc, {
@@ -631,13 +631,13 @@ function ea() {
     }, (e, t) => t), []), {
         cssDebuggingEnabled: l,
         layoutDebuggingEnabled: r
-    } = (0, u.cf)([M.default], () => ({
-        cssDebuggingEnabled: M.default.cssDebuggingEnabled,
-        layoutDebuggingEnabled: M.default.layoutDebuggingEnabled
+    } = (0, u.cf)([G.default], () => ({
+        cssDebuggingEnabled: G.default.cssDebuggingEnabled,
+        layoutDebuggingEnabled: G.default.layoutDebuggingEnabled
     })), o = (0, R.A)("highlight_void_toggleables"), c = (0, R.A)("highlight_mana_components");
     return (0, i.jsxs)(g.nVY, {
         label: "Design Tools",
-        children: [(0, i.jsx)(G.x, {
+        children: [(0, i.jsx)(M.x, {
             setting: K.H.DEVELOPER_OPTIONS_CSS_DEBUGGING,
             children: (0, i.jsx)(g.dOG, {
                 label: "Enable CSS Debugging",
@@ -649,7 +649,7 @@ function ea() {
                     }), setTimeout(() => location.reload(), 500)
                 }
             })
-        }), (0, i.jsx)(G.x, {
+        }), (0, i.jsx)(M.x, {
             setting: K.H.DEVELOPER_OPTIONS_LAYOUT_DEBUGGING,
             children: (0, i.jsx)(g.dOG, {
                 label: "Enable Layout Debugging",
@@ -661,7 +661,7 @@ function ea() {
                     })
                 }
             })
-        }), (0, i.jsxs)(G.x, {
+        }), (0, i.jsxs)(M.x, {
             setting: K.H.DEVELOPER_OPTIONS_LAYOUT_DEBUGGING_OPTIONS,
             children: [(0, i.jsx)(g.Apm, {
                 label: "Horizontal Grid Spacing",
@@ -686,7 +686,7 @@ function ea() {
                 onMarkerRender: e => e % 4 == 0 ? `${e}` : void 0,
                 equidistant: !0
             })]
-        }), (0, i.jsx)(G.x, {
+        }), (0, i.jsx)(M.x, {
             setting: K.H.DEVELOPER_OPTIONS_HIGHLIGHT_MANA_COMPONENTS,
             children: (0, i.jsx)(g.dOG, {
                 label: "Highlight Mana Components",
@@ -694,7 +694,7 @@ function ea() {
                 checked: c,
                 onChange: e => (0, O.L)("highlight_mana_components", e)
             })
-        }), (0, i.jsx)(G.x, {
+        }), (0, i.jsx)(M.x, {
             setting: K.H.DEVELOPER_OPTIONS_HIGHLIGHT_VOID_TOGGLEABLES,
             children: (0, i.jsx)(g.dOG, {
                 label: "Highlight Void Toggleable Components",
@@ -716,19 +716,19 @@ function el() {
         disableAppCollectionsCache: l,
         preventPopoutClose: r,
         logKeyboardMismatches: o
-    } = (0, u.cf)([M.default], () => ({
-        isTracingRequests: M.default.isTracingRequests,
-        isForcedCanary: M.default.isForcedCanary,
-        isAxeEnabled: M.default.isAxeEnabled,
-        isSourceMapsEnabled: M.default.sourceMapsEnabled,
-        onlyShowPreviewAppCollections: M.default.onlyShowPreviewAppCollections,
-        disableAppCollectionsCache: M.default.disableAppCollectionsCache,
-        preventPopoutClose: M.default.preventPopoutClose,
-        logKeyboardMismatches: M.default.logKeyboardMismatches
+    } = (0, u.cf)([G.default], () => ({
+        isTracingRequests: G.default.isTracingRequests,
+        isForcedCanary: G.default.isForcedCanary,
+        isAxeEnabled: G.default.isAxeEnabled,
+        isSourceMapsEnabled: G.default.sourceMapsEnabled,
+        onlyShowPreviewAppCollections: G.default.onlyShowPreviewAppCollections,
+        disableAppCollectionsCache: G.default.disableAppCollectionsCache,
+        preventPopoutClose: G.default.preventPopoutClose,
+        logKeyboardMismatches: G.default.logKeyboardMismatches
     })), c = (0, u.bG)([v.Ay], () => v.Ay.get("idle_status_indicator")), d = (0, L.A)("go_back_to_regular_input"), _ = B.HZ.useSetting();
     return (0, i.jsxs)(g.nVY, {
         label: "Developer Flags",
-        children: [(0, i.jsx)(G.x, {
+        children: [(0, i.jsx)(M.x, {
             setting: K.H.DEVELOPER_OPTIONS_TRACING_REQUESTS,
             children: (0, i.jsx)(g.dOG, {
                 label: "Enable Tracing Requests",
@@ -738,7 +738,7 @@ function el() {
                     trace: e
                 })
             })
-        }), (0, i.jsx)(G.x, {
+        }), (0, i.jsx)(M.x, {
             setting: K.H.DEVELOPER_OPTIONS_FORCED_CANARY,
             children: (0, i.jsx)(g.dOG, {
                 label: "Enable Forced Canary",
@@ -748,7 +748,7 @@ function el() {
                     canary: e
                 })
             })
-        }), (0, i.jsx)(G.x, {
+        }), (0, i.jsx)(M.x, {
             setting: K.H.DEVELOPER_OPTIONS_ALWAYS_DELIVER,
             children: (0, i.jsx)(g.dOG, {
                 label: "Ads auto-targeting",
@@ -756,7 +756,7 @@ function el() {
                 checked: _,
                 onChange: e => B.HZ.updateSetting(e)
             })
-        }), (0, i.jsx)(G.x, {
+        }), (0, i.jsx)(M.x, {
             setting: K.H.DEVELOPER_OPTIONS_SOURCE_MAPS,
             children: (0, i.jsx)(g.dOG, {
                 label: "Enable source maps to be loaded on this client",
@@ -766,7 +766,7 @@ function el() {
                     sourceMapsEnabled: e
                 })
             })
-        }), (0, i.jsx)(G.x, {
+        }), (0, i.jsx)(M.x, {
             setting: K.H.DEVELOPER_OPTIONS_IDLE_STATUS_INDICATOR,
             children: (0, i.jsx)(g.dOG, {
                 label: "Enable idle status indicator",
@@ -774,7 +774,7 @@ function el() {
                 checked: c,
                 onChange: e => j.L("idle_status_indicator", e)
             })
-        }), (0, i.jsx)(G.x, {
+        }), (0, i.jsx)(M.x, {
             setting: K.H.DEVELOPER_OPTIONS_ACCESSIBILITY_AUDITING,
             children: (0, i.jsx)(g.dOG, {
                 label: "Enable Accessibility Auditing",
@@ -784,7 +784,7 @@ function el() {
                     axeEnabled: e
                 })
             })
-        }), (0, i.jsx)(G.x, {
+        }), (0, i.jsx)(M.x, {
             setting: K.H.DEVELOPER_OPTIONS_PREVENT_POPOUT_CLOSE,
             children: (0, i.jsx)(g.dOG, {
                 label: "Prevent Popouts From Closing Automatically",
@@ -794,7 +794,7 @@ function el() {
                     preventPopoutClose: e
                 })
             })
-        }), (0, i.jsx)(G.x, {
+        }), (0, i.jsx)(M.x, {
             setting: K.H.DEVELOPER_OPTIONS_LOG_KEYBOARD_MISMATCHES,
             children: (0, i.jsx)(g.dOG, {
                 label: "Enable Logging of Keyboard Mismatches",
@@ -804,7 +804,7 @@ function el() {
                     logKeyboardMismatches: e
                 })
             })
-        }), (0, i.jsx)(G.x, {
+        }), (0, i.jsx)(M.x, {
             setting: K.H.DEVELOPER_OPTIONS_PREVIEW_UNPUBLISHED_COLLECTIONS,
             children: (0, i.jsx)(g.dOG, {
                 label: "Preview unpublished application collections",
@@ -814,7 +814,7 @@ function el() {
                     onlyShowPreviewAppCollections: e
                 })
             })
-        }), (0, i.jsx)(G.x, {
+        }), (0, i.jsx)(M.x, {
             setting: K.H.DEVELOPER_OPTIONS_DISABLE_APP_COLLECTIONS_CACHE,
             children: (0, i.jsx)(g.dOG, {
                 label: "Disable application collections cache",
@@ -824,7 +824,7 @@ function el() {
                     disableAppCollectionsCache: e
                 })
             })
-        }), (0, i.jsx)(G.x, {
+        }), (0, i.jsx)(M.x, {
             setting: K.H.DEVELOPER_OPTIONS_DISABLE_ALIGN_CHAT_INPUT,
             children: (0, i.jsx)(g.dOG, {
                 label: "Disable aligning chat input to the bottom of the screen",
@@ -848,16 +848,16 @@ function er() {
         isLoggingGatewayEvents: e,
         isLoggingOverlayEvents: t,
         isLoggingAnalyticsEvents: n
-    } = (0, u.cf)([M.default], () => ({
-        isLoggingGatewayEvents: M.default.isLoggingGatewayEvents,
-        isLoggingOverlayEvents: M.default.isLoggingOverlayEvents,
-        isLoggingAnalyticsEvents: M.default.isLoggingAnalyticsEvents
+    } = (0, u.cf)([G.default], () => ({
+        isLoggingGatewayEvents: G.default.isLoggingGatewayEvents,
+        isLoggingOverlayEvents: G.default.isLoggingOverlayEvents,
+        isLoggingAnalyticsEvents: G.default.isLoggingAnalyticsEvents
     })), s = (0, u.bG)([v.Ay], () => v.Ay.get("analytics_debugger"));
-    return (0, i.jsx)(G.x, {
+    return (0, i.jsx)(M.x, {
         setting: K.H.DEVELOPER_OPTIONS_LOGGING_TAB,
         children: (0, i.jsxs)(g.nVY, {
             label: "Logging",
-            children: [(0, i.jsx)(G.x, {
+            children: [(0, i.jsx)(M.x, {
                 setting: K.H.DEVELOPER_OPTIONS_GATEWAY_EVENTS_TO_CONSOLE,
                 children: (0, i.jsx)(g.dOG, {
                     label: "Enable Logging of Gateway Events to Console",
@@ -867,7 +867,7 @@ function er() {
                         logGatewayEvents: e
                     })
                 })
-            }), (0, i.jsx)(G.x, {
+            }), (0, i.jsx)(M.x, {
                 setting: K.H.DEVELOPER_OPTIONS_OVERLAY_RPC_EVENTS_COMMANDS,
                 children: (0, i.jsx)(g.dOG, {
                     label: "Enable Logging of Overlay RPC Events & Commands",
@@ -877,7 +877,7 @@ function er() {
                         logOverlayEvents: e
                     })
                 })
-            }), (0, i.jsx)(G.x, {
+            }), (0, i.jsx)(M.x, {
                 setting: K.H.DEVELOPER_OPTIONS_ANALYTICS_EVENTS_LOGGING,
                 children: (0, i.jsx)(g.dOG, {
                     label: "Enable Logging of Analytics Events",
@@ -887,7 +887,7 @@ function er() {
                         logAnalyticsEvents: e
                     })
                 })
-            }), (0, i.jsx)(G.x, {
+            }), (0, i.jsx)(M.x, {
                 setting: K.H.DEVELOPER_OPTIONS_ANALYTICS_DEBUGGER_VIEW,
                 children: (0, i.jsx)(g.dOG, {
                     label: "Enable standard analytics debugger view",
@@ -909,14 +909,14 @@ function ec() {
     return e ? {} : (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)("div", {
             className: [X.NC, J.SX].join(" "),
-            children: [(0, i.jsx)(G.x, {
+            children: [(0, i.jsx)(M.x, {
                 setting: K.H.DEVELOPER_OPTIONS_OVERRIDE_OPEN_OVERLAY,
                 children: (0, i.jsx)(g.Button, {
                     variant: "primary",
                     text: "Open Overlay",
                     onClick: () => (0, D.o)()
                 })
-            }), (0, i.jsx)(G.x, {
+            }), (0, i.jsx)(M.x, {
                 setting: K.H.DEVELOPER_OPTIONS_RESET_SOCKET,
                 children: (0, i.jsx)(g.Button, {
                     variant: "primary",
@@ -925,7 +925,7 @@ function ec() {
                         y.A.getSocket().close(), y.A.getSocket().connect()
                     }
                 })
-            }), (0, i.jsx)(G.x, {
+            }), (0, i.jsx)(M.x, {
                 setting: K.H.DEVELOPER_OPTIONS_CLEAR_CACHES,
                 children: (0, i.jsx)(g.Button, {
                     variant: "primary",
@@ -939,14 +939,14 @@ function ec() {
                         })
                     }
                 })
-            }), (0, i.jsx)(G.x, {
+            }), (0, i.jsx)(M.x, {
                 setting: K.H.DEVELOPER_OPTIONS_SHOW_TOTP_SUCCESS,
                 children: (0, i.jsx)(g.Button, {
                     variant: "primary",
                     text: "Show TOTP Success",
                     onClick: () => (0, W.sy)(!0)
                 })
-            }), (0, i.jsx)(G.x, {
+            }), (0, i.jsx)(M.x, {
                 setting: K.H.DEVELOPER_OPTIONS_TRIGGER_SUSPICIOUS_SESSIONS,
                 children: (0, i.jsx)(g.Button, {
                     variant: "primary",
@@ -959,7 +959,7 @@ function ec() {
                     }
                 })
             })]
-        }), (0, i.jsx)(G.x, {
+        }), (0, i.jsx)(M.x, {
             setting: K.H.DEVELOPER_OPTIONS_CRASHES,
             children: (0, i.jsx)(g.nVY, {
                 label: "Crashes",
@@ -995,7 +995,7 @@ function ec() {
                             value: 4,
                             label: "Out of Memory"
                         }],
-                        onSelectionChange: e => null != e && w.Ay.crash(e)
+                        onSelectionChange: e => null != e && H.Ay.crash(e)
                     }), (0, i.jsx)(g.l6P, {
                         selectionMode: "single",
                         label: "Native JS crash",
@@ -1018,7 +1018,7 @@ function ec() {
                             value: d.qQ.MainProcess,
                             label: "Exception in main process"
                         }],
-                        onSelectionChange: e => null != e ? void w.Ay.triggerJSException(e) : void 0
+                        onSelectionChange: e => null != e ? void H.Ay.triggerJSException(e) : void 0
                     }), (0, i.jsx)(g.Button, {
                         variant: "primary",
                         text: "React Crash",
@@ -1037,7 +1037,7 @@ function ec() {
 function ed() {
     let e = (0, u.bG)([U.Ay], () => U.Ay.getSurveyOverride()),
         [t, n] = s.useState(e ?? "");
-    return (0, i.jsx)(G.x, {
+    return (0, i.jsx)(M.x, {
         setting: K.H.DEVELOPER_OPTIONS_SURVEY_OVERRIDE,
         children: (0, i.jsx)("form", {
             className: X.Nn,
@@ -1068,7 +1068,7 @@ function ed() {
 function eu() {
     let e = (0, u.bG)([f.A], () => f.A.overrideId()),
         [t, n] = s.useState(f.A.overrideId() ?? "");
-    return (0, i.jsx)(G.x, {
+    return (0, i.jsx)(M.x, {
         setting: K.H.DEVELOPER_OPTIONS_CHANGELOG_OVERRIDE,
         children: (0, i.jsxs)(g.nVY, {
             label: "Changelog",
@@ -1107,7 +1107,7 @@ function eu() {
 }
 
 function e_() {
-    return (0, i.jsx)(G.x, {
+    return (0, i.jsx)(M.x, {
         setting: K.H.DEVELOPER_OPTIONS_OVERRIDE_CLIENT_SIDE,
         children: (0, i.jsx)(g.nVY, {
             label: "Client-Side Overrides",

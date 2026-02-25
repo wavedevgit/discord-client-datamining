@@ -1,6 +1,6 @@
 /** chunk id: 196291, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => M
+    A: () => G
 });
 var i = n(627968),
     s = n(64700),
@@ -34,17 +34,17 @@ var i = n(627968),
     P = n(788868),
     L = n(355097),
     D = n(985018),
-    G = n(219501);
+    M = n(219501);
 
-function M(e) {
+function G(e) {
     let {
         user: t,
         isVisible: n,
-        shouldShow: M
+        shouldShow: G
     } = e, U = I.Ay.isPremium(t), k = I.Ay.canUseAnimatedAvatar(t), {
         pendingAvatar: V,
-        pendingThemeColors: w,
-        tryItOutThemeColors: H,
+        pendingThemeColors: H,
+        tryItOutThemeColors: w,
         tryItOutAvatar: B,
         tryItOutBanner: Y
     } = (0, a.cf)([C.A], () => {
@@ -66,7 +66,7 @@ function M(e) {
         newestAnalyticsLocation: Z,
         sourceAnalyticsLocations: q
     } = (0, c.Ay)(o.A.USER_SETTINGS_TRY_OUT_PREMIUM), X = e => {
-        e && ((0, r.zq)(B), (0, E.Zz)(H), (0, E.Dv)(Y), S.default.track(y.HAw.TRY_IT_OUT_PRESET_SELECTED, {
+        e && ((0, r.zq)(B), (0, E.Zz)(w), (0, E.Dv)(Y), S.default.track(y.HAw.TRY_IT_OUT_PRESET_SELECTED, {
             preset: F
         }))
     };
@@ -82,21 +82,21 @@ function M(e) {
     let Q = (0, u.V)()?.subscription_trial?.sku_id === P.pe.TIER_2,
         J = (0, d.O)(),
         $ = (0, A.U9)(J, P.pe.TIER_2);
-    return M ? (0, i.jsx)(c.f5, {
+    return G ? (0, i.jsx)(c.f5, {
         value: K,
         children: (0, i.jsxs)(j.A, {
             ref: W,
-            className: G.MT,
+            className: M.MT,
             type: j.i.PREMIUM,
             isShown: !0,
             hasBackground: !0,
             children: [(0, i.jsx)(f.A, {
-                layoutClassName: G.th,
+                layoutClassName: M.th,
                 profilePreviewTitle: (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)(l.tvc, {
                         size: "md",
                         color: "currentColor",
-                        className: G.PC
+                        className: M.PC
                     }), D.intl.string(D.t.gMlDNd)]
                 }),
                 profilePreview: (0, i.jsxs)(i.Fragment, {
@@ -108,35 +108,35 @@ function M(e) {
                     })]
                 }),
                 children: (0, i.jsxs)("div", {
-                    className: G.EN,
+                    className: M.EN,
                     children: [(0, i.jsxs)("div", {
                         children: [(0, i.jsx)(l.Heading, {
                             variant: "heading-xl/extrabold",
                             children: D.intl.string(D.t["2zGdAW"])
                         }), (0, i.jsx)(l.Text, {
-                            className: G.h_,
+                            className: M.h_,
                             variant: "text-sm/normal",
                             children: D.intl.string(D.t.xeEC20)
                         })]
                     }), (0, i.jsx)(O.A, {
-                        className: G.fz,
+                        className: M.fz,
                         user: t,
                         pendingAvatarSrc: (0, p.V7)({
                             userId: t.id,
                             image: B ?? V
                         }),
-                        pendingColors: H ?? w,
+                        pendingColors: w ?? H,
                         onThemeColorsChange: E.a,
                         showPremiumIcon: !1,
                         preventDisabled: !0
                     }), (0, i.jsx)(v.A, {
-                        className: G.fz,
+                        className: M.fz,
                         isTryItOut: !0,
                         showRemoveBannerButton: null != Y,
                         onBannerChange: E.xe,
                         showPremiumIcon: !1
                     }), !k && (0, i.jsx)(N.A, {
-                        className: G.fz,
+                        className: M.fz,
                         isTryItOut: !0,
                         onAvatarChange: E.e$,
                         showRemoveAvatarButton: !1,
@@ -144,7 +144,7 @@ function M(e) {
                         sectionTitle: D.intl.string(D.t.vtFfPX)
                     }), (0, i.jsx)(b.A, {
                         user: t,
-                        className: G.fz
+                        className: M.fz
                     }), !Q && (0, i.jsx)(l.Text, {
                         variant: "text-sm/normal",
                         children: D.intl.string(D.t["smo74/"])
@@ -152,7 +152,7 @@ function M(e) {
                 })
             }), !Q && (0, i.jsx)(g.d, {
                 onSubscribeModalClose: X,
-                className: G.Kv,
+                className: M.Kv,
                 showUpsell: !0,
                 text: D.intl.format(D.t.TmfgI2, {
                     onClick: () => {
@@ -168,7 +168,7 @@ function M(e) {
                 position: "inline"
             }), Q && (0, i.jsxs)("div", {
                 children: [(0, i.jsx)("div", {
-                    className: G.BU
+                    className: M.BU
                 }), (0, i.jsx)(h.Ay, {
                     type: P.e.CUSTOM_PROFILE_TRY_OUT_UPSELL,
                     subscriptionTier: P.pe.TIER_2

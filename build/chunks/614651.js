@@ -39,13 +39,13 @@ var i = n(627968),
     P = n(70040),
     L = n(961154),
     D = n(790174),
-    G = n(840065),
-    M = n(531525),
+    M = n(840065),
+    G = n(531525),
     U = n(652215),
     k = n(381941),
     V = n(985018),
-    w = n(239589),
-    H = n(522759);
+    H = n(239589),
+    w = n(522759);
 let B = {
         COZY: "cozy",
         COMPACT: "compact"
@@ -93,9 +93,9 @@ let B = {
         })]
     },
     K = () => (0, i.jsxs)("div", {
-        className: w.cF,
+        className: H.cF,
         children: [(0, i.jsxs)("div", {
-            className: w.ZT,
+            className: H.ZT,
             children: [(0, i.jsxs)(d.Text, {
                 variant: "text-md/medium",
                 children: [" ", V.intl.string(V.t["0EzVst"])]
@@ -108,14 +108,14 @@ let B = {
     }),
     Z = () => V.intl.format(V.t.Jae48E, {
         onClick: () => {
-            (0, G.openUserSettings)(y.X.SYNC_FORCED_COLORS, {
+            (0, M.openUserSettings)(y.X.SYNC_FORCED_COLORS, {
                 section: U.nc_.ACCESSIBILITY
             })
         }
     }),
     q = () => V.intl.format(V.t["5LEQdc"], {
         onAccessibilityClick: () => {
-            (0, G.openUserSettings)(y.X.ACCESSIBILITY_PANEL, {
+            (0, M.openUserSettings)(y.X.ACCESSIBILITY_PANEL, {
                 section: U.nc_.ACCESSIBILITY
             })
         }
@@ -137,7 +137,7 @@ let B = {
             A = (0, c.Mw)(a) ? u : _;
         return (0, i.jsx)(d.M1G, {
             children: (0, i.jsx)(d.ZpM, {
-                className: l()(w.VH, H.C2, e ? w.Me : void 0, `group-spacing-${null!=o?o:e?k.y5:k.ES}`),
+                className: l()(H.VH, w.C2, e ? H.Me : void 0, `group-spacing-${null!=o?o:e?k.y5:k.ES}`),
                 outline: !0,
                 "aria-hidden": !0,
                 children: A.map((t, n) => (0, i.jsx)(I.A, {
@@ -145,7 +145,7 @@ let B = {
                     message: t,
                     compact: e,
                     isGroupStart: n % 2 == 0,
-                    className: 0 === n ? w.Ck : void 0,
+                    className: 0 === n ? H.Ck : void 0,
                     hideSimpleEmbedContent: m
                 }, t.id))
             })
@@ -276,10 +276,10 @@ class Q extends s.Component {
         let {
             density: e
         } = this.props, t = (0, i.jsxs)(f.x, {
-            setting: M.H.APPEARANCE_THEME,
+            setting: G.H.APPEARANCE_THEME,
             children: [this.renderPreview(), this.renderTheme()]
         }), n = (0, i.jsx)(f.x, {
-            setting: M.H.APPEARANCE_ICON,
+            setting: G.H.APPEARANCE_ICON,
             children: (0, i.jsx)(L.yG, {})
         }), s = [{
             name: V.intl.string(V.t["7iegX4"]),
@@ -291,7 +291,7 @@ class Q extends s.Component {
             name: V.intl.string(V.t["4cuYHx"]),
             value: o.NS.COZY
         }], a = (0, i.jsxs)(f.x, {
-            setting: M.H.APPEARANCE_LIST_SPACING,
+            setting: G.H.APPEARANCE_LIST_SPACING,
             children: [(0, i.jsx)(d.z6M, {
                 label: V.intl.string(V.t["C/5V0A"]),
                 description: V.intl.string(V.t.QLZhYk),
@@ -301,10 +301,10 @@ class Q extends s.Component {
                 }),
                 value: e
             }), (0, i.jsx)(d.cGx, {
-                className: w.yF
+                className: H.yF
             })]
         }), l = (0, i.jsxs)(f.x, {
-            setting: M.H.APPEARANCE_MESSAGE_DISPLAY_COMPACT,
+            setting: G.H.APPEARANCE_MESSAGE_DISPLAY_COMPACT,
             children: [(0, i.jsxs)(d.nVY, {
                 label: V.intl.string(V.t["2ed/sA"]),
                 description: V.intl.string(V.t.u9N6Qh),
@@ -328,19 +328,19 @@ class Q extends s.Component {
                     onChange: e => this.handleDisplayCompactAvatarsChanged(!e)
                 }), this.renderMessageGroupSpacingSlider()]
             }), (0, i.jsx)(d.cGx, {
-                className: w.yF
+                className: H.yF
             })]
         }), r = (0, i.jsxs)(f.x, {
-            setting: M.H.APPEARANCE_SCALING_SPACING,
+            setting: G.H.APPEARANCE_SCALING_SPACING,
             children: [(0, i.jsxs)(d.nVY, {
                 label: V.intl.string(V.t["0Yh+ZX"]),
                 children: [this.renderFontScaleSlider(), this.renderZoomSlider()]
             }), (0, i.jsx)(d.cGx, {
-                className: w.yF
+                className: H.yF
             })]
         }), c = (0, i.jsx)(d.Text, {
             variant: "text-md/normal",
-            className: w.fK,
+            className: H.fK,
             children: (0, i.jsx)(q, {})
         });
         return (0, i.jsxs)(D.A, {

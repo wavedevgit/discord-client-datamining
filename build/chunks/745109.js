@@ -46,7 +46,7 @@ function R() {
         L = x.a.useField("hasSearchResults"),
         D = x.a.useField("searchResults");
 
-    function G(e) {
+    function M(e) {
         if (y !== e) {
             if (a) {
                 (0, I.fO)({
@@ -63,21 +63,21 @@ function R() {
             guildId: n?.id
         })
     }, [n?.id, R]);
-    let M = !0,
+    let G = !0,
         U = !0;
-    return L && 1 === D.length && (D.includes(j.H.PROFILE_SERVER_PROFILES) ? (G(b.Eq.GUILD), U = !1) : D.includes(j.H.PROFILE_USER_PROFILE) && (G(b.Eq.USER_PROFILE), M = !1)), (0, i.jsxs)(g.R, {
+    return L && 1 === D.length && (D.includes(j.H.PROFILE_SERVER_PROFILES) ? (M(b.Eq.GUILD), U = !1) : D.includes(j.H.PROFILE_USER_PROFILE) && (M(b.Eq.USER_PROFILE), G = !1)), (0, i.jsxs)(g.R, {
         header: v.intl.string(v.t["vi7f+q"]),
         children: [(0, i.jsxs)(o.VQ0, {
             className: O.$H,
             type: "top",
             look: "brand",
             selectedItem: y,
-            onItemSelect: G,
+            onItemSelect: M,
             children: [U || e ? (0, i.jsx)(o.VQ0.Item, {
                 className: O.YU,
                 id: b.Eq.USER_PROFILE,
                 children: v.intl.string(v.t["2p07FR"])
-            }, b.Eq.USER_PROFILE) : null, M || e ? (0, i.jsx)(o.VQ0.Item, {
+            }, b.Eq.USER_PROFILE) : null, G || e ? (0, i.jsx)(o.VQ0.Item, {
                 className: l()(O.YU, O.HY),
                 "aria-label": v.intl.string(v.t.kPHroX),
                 id: b.Eq.GUILD,

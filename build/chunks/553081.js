@@ -34,13 +34,13 @@ var i = n(627968),
     P = n(965591),
     L = n(495022),
     D = n(157839),
-    G = n(382694),
-    M = n(60508),
+    M = n(382694),
+    G = n(60508),
     U = n(821158),
     k = n(235365),
     V = n(994763),
-    w = n(788868),
-    H = n(652215),
+    H = n(788868),
+    w = n(652215),
     B = n(985018),
     Y = n(865047),
     F = n(288894);
@@ -87,7 +87,7 @@ let z = e => {
             } : {}
         }, [a.search]);
     (0, V.z)(Q ?? "", null != Q, $);
-    let [ee, et] = s.useState(!1), en = (0, N.p)(), ei = s.useRef(null), [es, ea] = s.useState(!1), [el, er] = s.useState(!1), eo = null != en && null != K && K.status === H.Dmq.CANCELED, ec = (0, j.iU)(w.gD.PREMIUM_MONTH_TIER_2, en, K), ed = !el && eo, {
+    let [ee, et] = s.useState(!1), en = (0, N.p)(), ei = s.useRef(null), [es, ea] = s.useState(!1), [el, er] = s.useState(!1), eo = null != en && null != K && K.status === w.Dmq.CANCELED, ec = (0, j.iU)(H.gD.PREMIUM_MONTH_TIER_2, en, K), ed = !el && eo, {
         analyticsLocations: eu
     } = (0, m.Ay)(_.A.PREMIUM_SUBSCRIBER_NITRO_HOME), [e_, em] = s.useState(!1), eA = (0, o.bG)([C.A], () => null != t ? C.A.getUserProfile(t) : null), eg = (0, f.A)({
         location: "PremiumSubscriberHome"
@@ -118,7 +118,7 @@ let z = e => {
                             userDiscountOffer: en,
                             discountedPrice: ec
                         })
-                    }), n && (0, i.jsx)(G.A, {
+                    }), n && (0, i.jsx)(M.A, {
                         glowingPerkId: J
                     }), !n && (0, i.jsx)(D.A, {
                         variant: v.cJ.WHATS_NEW,
@@ -142,15 +142,15 @@ let z = e => {
                         className: Y.Zy,
                         location: _.A.PREMIUM_MARKETING_GIFT_SECTION,
                         analyticsLocation: {
-                            page: H.liQ.NITRO_HOME,
-                            section: H.JJy.GIFT_BANNER
+                            page: w.liQ.NITRO_HOME,
+                            section: w.JJy.GIFT_BANNER
                         }
                     }), (0, i.jsx)("div", {
                         className: Y.hz
                     }), (0, i.jsx)(c.L, {
                         innerRef: W,
                         onChange: e => {
-                            e && !e_ && (I.default.track(H.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+                            e && !e_ && (I.default.track(w.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
                                 location_stack: eu
                             }), em(!0))
                         },
@@ -172,7 +172,7 @@ let z = e => {
                 churnDiscountOffer: en,
                 discountedPrice: ec
             })]
-        }), !n && (0, i.jsx)(M.A, {
+        }), !n && (0, i.jsx)(G.A, {
             isAllPerksVisible: es,
             setIsAllPerksVisible: ea,
             previousComponent: v.A2.HOME,

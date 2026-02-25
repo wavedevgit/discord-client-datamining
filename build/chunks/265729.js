@@ -1,6 +1,6 @@
 /** chunk id: 265729, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => M
+    A: () => G
 });
 var i = n(627968),
     s = n(64700),
@@ -35,7 +35,7 @@ var i = n(627968),
     L = n(985018),
     D = n(160239);
 
-function G(e) {
+function M(e) {
     let t, {
             outboundPromotion: n,
             code: a,
@@ -119,7 +119,7 @@ function G(e) {
         })]
     })
 }
-let M = function(e) {
+let G = function(e) {
     let {
         inOldSettings: t = !1
     } = e, n = (0, c.yK)([f.A], () => f.A.getGiftable()), [a, r] = o().partition(n, e => {
@@ -135,16 +135,16 @@ let M = function(e) {
     }, []);
     let {
         promotionsLoaded: E,
-        activeOutboundPromotions: M,
+        activeOutboundPromotions: G,
         claimedEndedOutboundPromotions: U,
         claimedOutboundPromotionCodeMap: k,
         addClaimedOutboundPromotionCode: V
-    } = (0, p.y7)(), w = M.length + U.length > 0, H = g.m.useExperiment({
+    } = (0, p.y7)(), H = G.length + U.length > 0, w = g.m.useExperiment({
         location: "EntitlementGifts"
     }, {
         autoTrackExposure: !1,
         disable: m
-    }).enabled && w;
+    }).enabled && H;
     return h && E ? (0, i.jsxs)(i.Fragment, {
         children: [function() {
             let e = r.find(e => e.giftCodeBatchId === P.FB && !e.consumed),
@@ -157,9 +157,9 @@ let M = function(e) {
                 }),
                 c = (0, i.jsx)(d.Heading, {
                     variant: "heading-md/semibold",
-                    children: w ? L.intl.string(L.t.wFsj3B) : void 0
+                    children: H ? L.intl.string(L.t.wFsj3B) : void 0
                 }),
-                u = H ? (0, i.jsxs)("div", {
+                u = w ? (0, i.jsxs)("div", {
                     className: D.uo,
                     children: [(0, i.jsx)(d.tvc, {
                         size: "md",
@@ -184,29 +184,29 @@ let M = function(e) {
                 }) : null;
             return (0, i.jsxs)("div", {
                 className: t ? D.sW : void 0,
-                children: [c, w ? (0, i.jsx)(d.cGx, {
+                children: [c, H ? (0, i.jsx)(d.cGx, {
                     className: D.yF
                 }) : null, (0, i.jsx)(T.A, {
                     className: D.Yj,
-                    isShown: H,
+                    isShown: w,
                     type: T.i.PREMIUM,
                     hasBackground: !0,
                     children: (0, i.jsxs)("div", {
                         className: l()({
-                            [D.sW]: !H
+                            [D.sW]: !w
                         }),
                         children: [u, U.map(e => {
                             let {
                                 code: t,
                                 promotion: n
                             } = e;
-                            return (0, i.jsx)(G, {
+                            return (0, i.jsx)(M, {
                                 outboundPromotion: n,
                                 code: t,
                                 addClaimedOutboundPromotionCode: V,
                                 disabled: !m
                             }, n.id)
-                        }), M.map(e => (0, i.jsx)(G, {
+                        }), G.map(e => (0, i.jsx)(M, {
                             outboundPromotion: e,
                             code: k[e.id],
                             addClaimedOutboundPromotionCode: V,

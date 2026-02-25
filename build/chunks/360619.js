@@ -1,7 +1,7 @@
 /** chunk id: 360619, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    AC: () => G,
-    Lu: () => M,
+    AC: () => M,
+    Lu: () => G,
     NI: () => k,
     PH: () => D
 }), n(560197), n(321073);
@@ -55,15 +55,15 @@ function D() {
         D = (0, x.Rv)({
             location: "settings"
         }),
-        G = (0, r.H)(),
-        M = (0, A.H)({
+        M = (0, r.H)(),
+        G = (0, A.H)({
             location: P.rE.USER_SETTINGS_SEARCH_GIFT_INVENTORY
         }),
         U = (0, s.bG)([T.A], () => T.A.hasLibraryApplication()),
         k = (0, s.bG)([E.default], () => E.default.hasTOTPEnabled()),
         V = j.Q_.useSetting(),
-        w = (0, c.A)(),
-        H = (0, d.A)() ?? !0,
+        H = (0, c.A)(),
+        w = (0, d.A)() ?? !0,
         B = (0, h.G)()?.length > 0,
         {
             hasBlockedUsers: Y,
@@ -91,23 +91,23 @@ function D() {
         isStaff: y,
         isInappropriateConversationWarningEnabled: L,
         isInapproprateConversationsDefaultOn: D,
-        paymentsBlocked: G,
-        isEligibleForQuests: M,
-        isStricterMessageRequestsEnabled: w,
+        paymentsBlocked: M,
+        isEligibleForQuests: G,
+        isStricterMessageRequestsEnabled: H,
         hasLibraryApplication: U,
         hasTOTPEnabled: k,
         developerMode: V,
-        isAdultUser: H,
+        isAdultUser: w,
         hasSecureFramesVerifiedUserIds: B,
         hasIgnoredUsers: F,
         hasBlockedUsers: Y,
         hasAgeGatedFeature: K,
         isChatMentionSuggestionsSettingEnabled: Z,
         isHDRAccessibilitySettingExperimentEnabled: q
-    }), [V, Y, F, U, B, k, n, H, M, D, L, C, y, w, a, G, R, t, e, K, Z, q])
+    }), [V, Y, F, U, B, k, n, w, G, D, L, C, y, H, a, M, R, t, e, K, Z, q])
 }
 
-function G(e) {
+function M(e) {
     let t = R.a.useField("searchResults"),
         n = D(),
         i = n[e],
@@ -154,7 +154,7 @@ function G(e) {
         } return l
 }
 
-function M() {
+function G() {
     let e = D(),
         {
             shouldMergeGameSettings: t

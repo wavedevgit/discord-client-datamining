@@ -34,13 +34,13 @@ var i, s, a, l = n(627968),
     P = n(743501),
     L = n(652700),
     D = n(282818),
-    G = n(965132),
-    M = n(576765),
+    M = n(965132),
+    G = n(576765),
     U = n(88433),
     k = n(206771),
     V = n(533234),
-    w = n(39508),
-    H = n(198962),
+    H = n(39508),
+    w = n(198962),
     B = n(636395),
     Y = n(871891),
     F = n(116427),
@@ -91,7 +91,7 @@ let el = () => {
         },
         referralProgram: {
             thumbnail: B.A,
-            assetUrl: a ? H.A : Y.A
+            assetUrl: a ? w.A : Y.A
         },
         showYourStyle: {
             thumbnail: z.A,
@@ -102,12 +102,12 @@ let el = () => {
             assetUrl: a ? K.A : q.A
         },
         emojis: {
-            thumbnail: M.A,
-            assetUrl: a ? G.A : U.A
+            thumbnail: G.A,
+            assetUrl: a ? M.A : U.A
         },
         noLimits: {
             thumbnail: V.A,
-            assetUrl: a ? k.A : w.A
+            assetUrl: a ? k.A : H.A
         },
         orbRewards: {
             thumbnail: Q.A,

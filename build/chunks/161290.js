@@ -45,12 +45,12 @@ function L() {
             pendingGlobalName: s,
             pendingBanner: L,
             pendingBio: D,
-            pendingPronouns: G,
-            pendingAccentColor: M,
+            pendingPronouns: M,
+            pendingAccentColor: G,
             pendingThemeColors: U,
             pendingLegacyUsernameDisabled: k,
             pendingPrimaryGuildId: V,
-            errors: w
+            errors: H
         } = (0, l.cf)([b.A], () => {
             let e = b.A.getPendingChanges(),
                 t = b.A.getErrors();
@@ -59,7 +59,7 @@ function L() {
                 errors: t
             }
         }),
-        H = (0, f.V7)({
+        w = (0, f.V7)({
             userId: e.id,
             image: n
         }),
@@ -69,8 +69,8 @@ function L() {
         z = (0, u.Ac)(L, t?.banner),
         W = (0, v.Ay)(e.id),
         K = W?.getLegacyUsername(),
-        Z = (w.global_name?.length ?? 0) > 0 ? w.global_name : B?.nick ?? [],
-        q = (w.bio?.length ?? 0) > 0 ? w.bio : B?.bio ?? [],
+        Z = (H.global_name?.length ?? 0) > 0 ? H.global_name : B?.nick ?? [],
+        q = (H.bio?.length ?? 0) > 0 ? H.bio : B?.bio ?? [],
         X = (0, d.b)();
     return (0, i.jsxs)("div", {
         className: P.Q,
@@ -83,14 +83,14 @@ function L() {
             user: e
         }), (0, i.jsx)(I.A, {
             sectionTitle: y.intl.string(y.t["+T3RI/"]),
-            errors: w.pronouns,
+            errors: H.pronouns,
             onPronounsChange: N.Oz,
-            pendingPronouns: G,
+            pendingPronouns: M,
             currentPronouns: t?.pronouns ?? ""
         }, "pronouns"), (0, i.jsx)(S.A, {}), (0, i.jsx)(A.A, {
             onAvatarChange: r.zq,
             showRemoveAvatarButton: F,
-            errors: w.avatar,
+            errors: H.avatar,
             sectionTitle: y.intl.string(y.t.lqaIxI),
             forcedDivider: !0
         }, "avatar"), (0, i.jsx)(m.A, {
@@ -104,12 +104,12 @@ function L() {
         }, "effect"), Y ? (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(p.A, {
                 showRemoveBannerButton: z,
-                errors: w.banner,
+                errors: H.banner,
                 onBannerChange: N.Iz,
                 forcedDivider: !0
             }, "banner"), (0, i.jsx)(T.A, {
                 user: e,
-                pendingAvatarSrc: H,
+                pendingAvatarSrc: w,
                 pendingColors: U,
                 onThemeColorsChange: N.Zz,
                 forcedDivider: !0
@@ -117,7 +117,7 @@ function L() {
         }) : (0, i.jsx)(E.A, {
             user: e,
             savedUserColor: t?.accentColor,
-            pendingColor: M,
+            pendingColor: G,
             setPendingAccentColor: N.XW
         }, "color"), (0, i.jsx)(_.A, {
             sectionTitle: y.intl.string(y.t.ZzAR2Y),

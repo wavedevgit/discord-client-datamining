@@ -1,6 +1,6 @@
 /** chunk id: 411121, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => G
+    A: () => M
 });
 var i = n(627968),
     s = n(64700),
@@ -269,7 +269,7 @@ class D extends s.PureComponent {
         })
     }
 }
-let G = c.Ay.connectStores([N.A, I.A, S.A, g.A, f.A, T.default], e => {
+let M = c.Ay.connectStores([N.A, I.A, S.A, g.A, f.A, T.default], e => {
     let {
         skuId: t,
         subscriptionPlanId: n,

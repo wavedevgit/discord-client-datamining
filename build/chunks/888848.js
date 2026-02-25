@@ -1,6 +1,6 @@
 /** chunk id: 888848, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => G,
+    A: () => M,
     G: () => D
 });
 var i, s = n(627968),
@@ -35,7 +35,7 @@ var i, s = n(627968),
     L = n(509940),
     D = ((i = {})[i.LOADING = 0] = "LOADING", i[i.DONE = 1] = "DONE", i[i.ERROR = 2] = "ERROR", i);
 
-function G(e) {
+function M(e) {
     let {
         subscription: t,
         navigateToSwitchPlan: n,
@@ -75,8 +75,8 @@ function G(e) {
             renewalPlan: e
         }
     }, [r, u, c, t]), {
-        data: G
-    } = (0, x.YY)(g), Y = a.useMemo(() => null != G ? (0, A.A)(G, 100) : null, [G]), F = v?.deleted ?? !1, z = null != v && (0, j.Se)(v), W = t.status === y.Dmq.PAST_DUE, {
+        data: M
+    } = (0, x.YY)(g), Y = a.useMemo(() => null != M ? (0, A.A)(M, 100) : null, [M]), F = v?.deleted ?? !1, z = null != v && (0, j.Se)(v), W = t.status === y.Dmq.PAST_DUE, {
         analyticsLocations: K
     } = (0, m.Ay)(), [Z, q] = (0, E.Kq)({
         subscriptionId: t.id,
@@ -99,7 +99,7 @@ function G(e) {
                     children: [(0, s.jsx)(d.Heading, {
                         variant: "heading-md/semibold",
                         lineClamp: 1,
-                        children: G?.name ?? P.intl.string(P.t["7kqy7W"])
+                        children: M?.name ?? P.intl.string(P.t["7kqy7W"])
                     }), (0, s.jsx)(d.Text, {
                         variant: "text-sm/medium",
                         color: "text-default",
@@ -109,9 +109,9 @@ function G(e) {
                 })]
             }), (0, s.jsx)("div", {
                 className: L.Pz,
-                children: null != G && null != C && null != v && !1 === X && (0, s.jsx)(w, {
+                children: null != M && null != C && null != v && !1 === X && (0, s.jsx)(H, {
                     subscription: t,
-                    app: G,
+                    app: M,
                     guild: b,
                     sku: v,
                     storeListing: C,
@@ -167,7 +167,7 @@ function G(e) {
                         size: "xs"
                     }), P.intl.string(P.t["6anEVv"])]
                 })
-            }), (0, s.jsx)(M, {
+            }), (0, s.jsx)(G, {
                 invoicePreview: Z,
                 subscriptionPlan: h
             }), (0, s.jsx)(k, {
@@ -184,14 +184,14 @@ function G(e) {
             loadingState: i,
             isDeleted: F,
             isCancelled: R
-        }), null != G && C?.benefits != null && C.benefits.length > 0 && (0, s.jsx)(H, {
-            appId: G.id,
+        }), null != M && C?.benefits != null && C.benefits.length > 0 && (0, s.jsx)(w, {
+            appId: M.id,
             listingBenefits: C.benefits
         })]
     })
 }
 
-function M(e) {
+function G(e) {
     let {
         subscriptionPlan: t,
         invoicePreview: n
@@ -293,7 +293,7 @@ function V(e) {
     })
 }
 
-function w(e) {
+function H(e) {
     let {
         app: t,
         storeListing: i,
@@ -370,7 +370,7 @@ function w(e) {
     })
 }
 
-function H(e) {
+function w(e) {
     let {
         appId: t,
         listingBenefits: n

@@ -34,8 +34,8 @@ var i = n(627968),
     P = n(472626),
     L = n(196093),
     D = n(979653),
-    G = n(255631),
-    M = n(193023);
+    M = n(255631),
+    G = n(193023);
 let U = () => {
         let e = (0, j._)();
         return (0, i.jsx)(v.ir, {
@@ -69,7 +69,7 @@ let U = () => {
                 className: P.dW,
                 children: y.intl.string(y.t.Ipxkog)
             });
-        t = n === R.PremiumTypes.TIER_0 ? (0, o.Mw)(a) ? L : D : (0, o.Mw)(a) ? G : M;
+        t = n === R.PremiumTypes.TIER_0 ? (0, o.Mw)(a) ? L : D : (0, o.Mw)(a) ? M : G;
         let l = (0, p.Dd)(n);
         return (0, i.jsx)("img", {
             src: t,
@@ -77,7 +77,7 @@ let U = () => {
             alt: l
         })
     },
-    w = e => {
+    H = e => {
         let {
             label: t,
             column1: n,
@@ -100,7 +100,7 @@ let U = () => {
             })]
         })
     },
-    H = e => {
+    w = e => {
         let {
             label: t,
             column1: n,
@@ -145,10 +145,10 @@ let U = () => {
                 headingOverride: j,
                 hidePill: L = !1,
                 selectedPlanColumnClassName: D,
-                selectedPlanTier: G = R.PremiumTypes.TIER_2
+                selectedPlanTier: M = R.PremiumTypes.TIER_2
             } = e,
             {
-                analyticsLocations: M
+                analyticsLocations: G
             } = (0, m.Ay)(_.A.PREMIUM_MARKETING_PLAN_COMPARISON),
             B = (0, r.bG)([x.A], () => x.A.hasFetchedSubscriptions()),
             Y = (0, g.Y)(R.T7),
@@ -236,9 +236,9 @@ let U = () => {
             className: P.ls,
             colorOptions: X === R.pe.TIER_0 ? z ? v.at.PREMIUM_TIER_0_GRADIENT_FILL : v.at.PREMIUM_TIER_0_WHITE_FILL : z ? Z ? v.at.PREMIUM_TIER_2_OLD_GRADIENT_FILL : v.at.PREMIUM_TIER_2_NEW_GRADIENT_FILL : v.at.PREMIUM_TIER_2_WHITE_FILL
         }) : el ? (0, i.jsx)(U, {}) : (0, i.jsx)(k, {});
-        let eo = X === R.pe.TIER_0 || Q === R.PremiumTypes.TIER_0 || G === R.PremiumTypes.TIER_0;
+        let eo = X === R.pe.TIER_0 || Q === R.PremiumTypes.TIER_0 || M === R.PremiumTypes.TIER_0;
         return (0, i.jsx)(m.f5, {
-            value: M,
+            value: G,
             children: (0, i.jsxs)("div", {
                 className: l()(P.zr, n),
                 "data-testid": "v2-marketing-page-comparison-table",
@@ -260,11 +260,11 @@ let U = () => {
                     }), (0, i.jsxs)("table", {
                         className: P.tp,
                         children: [(0, i.jsx)("thead", {
-                            children: (0, i.jsx)(w, {
+                            children: (0, i.jsx)(H, {
                                 ...er
                             })
                         }), (0, i.jsx)("tbody", {
-                            children: ea.map((e, t) => (0, s.createElement)(H, {
+                            children: ea.map((e, t) => (0, s.createElement)(w, {
                                 ...e,
                                 key: t
                             }))

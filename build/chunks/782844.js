@@ -34,9 +34,9 @@ var i, s = n(627968),
     P = n(531525),
     L = n(652215),
     D = n(985018),
-    G = n(221432);
+    M = n(221432);
 
-function M() {
+function G() {
     let e = (0, o.bG)([C.default], () => {
             let e = C.default.getCurrentUser();
             return r()(null != e, "SecuritySettingsTab: currentUser cannot be undefined"), e
@@ -59,7 +59,7 @@ function M() {
         }), (0, s.jsx)(A.x, {
             setting: P.H.ACCOUNT_PASSWORD_AND_AUTHENTICATION,
             children: (0, s.jsxs)(c.nVY, {
-                className: G.PN,
+                className: M.PN,
                 label: D.intl.string(D.t.pKSjEj),
                 children: [e.mfaEnabled ? (0, s.jsx)(j.A, {}) : null, (0, s.jsx)(A.x, {
                     setting: P.H.ACCOUNT_CHANGE_PASSWORD,
@@ -101,7 +101,7 @@ class k extends a.PureComponent {
             children: (0, s.jsx)(N.A, {
                 parentSetting: P.H.ACCOUNT,
                 settingsSection: L.nc_.ACCOUNT,
-                panelClassName: G.SZ,
+                panelClassName: M.SZ,
                 onTabChange: e => {
                     T.default.track(L.HAw.MY_ACCOUNT_PAGE_TAB_NAVIGATE, {
                         target_tab_name: e === P.H.ACCOUNT_SECURITY_TAB ? "SECURITY" : "STANDING"
@@ -110,7 +110,7 @@ class k extends a.PureComponent {
                 defaultTabIndex: "ACCOUNT_STANDING" === e ? 1 : void 0,
                 tabs: [{
                     title: D.intl.string(D.t.Am9YHi),
-                    component: M,
+                    component: G,
                     setting: P.H.ACCOUNT_SECURITY_TAB
                 }, {
                     title: D.intl.string(D.t["Vov/9o"]),

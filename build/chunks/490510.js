@@ -40,7 +40,7 @@ function D(e) {
     } = e;
     return t([A.Q_.MESSAGE, A.Q_.NAVIGATION, A.Q_.DND, A.Q_.CHAT, A.Q_.VOICE_AND_VIDEO, A.Q_.MISCELLANEOUS])
 }
-class G extends s.PureComponent {
+class M extends s.PureComponent {
     handleActionChanged = e => {
         u.A.setKeybind({
             ...this.props.keybind,
@@ -143,7 +143,7 @@ class G extends s.PureComponent {
         }) : void 0
     }
 }
-class M extends s.PureComponent {
+class G extends s.PureComponent {
     get keybindActionTypes() {
         let {
             overlaySupported: e,
@@ -268,7 +268,7 @@ class M extends s.PureComponent {
         u.A.addKeybind()
     };renderKeybinds(e) {
         return e.map((t, n) => (0, i.jsxs)(s.Fragment, {
-            children: [(0, i.jsx)(G, {
+            children: [(0, i.jsx)(M, {
                 keybind: t,
                 keybindDescriptions: this.keybindDescriptions,
                 keybindActionTypes: this.keybindActionTypes
@@ -387,7 +387,7 @@ function U() {
         n = (0, r.bG)([C.A], () => C.A.isSupported),
         a = (0, h.sw)(),
         l = (0, h.BW)();
-    return (0, i.jsx)(M, {
+    return (0, i.jsx)(G, {
         keybinds: e,
         canGoLive: t,
         overlaySupported: n,

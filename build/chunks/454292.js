@@ -1,6 +1,6 @@
 /** chunk id: 454292, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => w
+    A: () => H
 });
 var i = n(627968),
     s = n(64700),
@@ -303,7 +303,7 @@ function D(e) {
     })
 }
 
-function G(e) {
+function M(e) {
     let {
         updateSettings: t
     } = e;
@@ -332,7 +332,7 @@ function G(e) {
     })
 }
 
-function M(e) {
+function G(e) {
     let {
         onChangePage: t
     } = e;
@@ -404,7 +404,7 @@ function k(e) {
         children: [(0, i.jsx)(y, {
             settings: a,
             updateSettings: u
-        }), (0, i.jsx)(M, {
+        }), (0, i.jsx)(G, {
             onChangePage: t
         }), (0, i.jsx)(L, {
             settings: a,
@@ -415,14 +415,14 @@ function k(e) {
         }), (0, i.jsx)(P, {
             settings: a,
             updateSettings: u
-        }), (0, i.jsx)(G, {
+        }), (0, i.jsx)(M, {
             updateSettings: u
         })]
     })
 }
 let V = e => 0 === e ? u.f.LEFT : u.f.RIGHT;
 
-function w() {
+function H() {
     let [e, t] = s.useState(0), [n, a] = s.useState(V(e)), [r, o] = s.useState(!1), _ = (0, l.bG)([d.A], () => d.A.useReducedMotion), m = r && !_;
     return s.useEffect(() => {
         let t = setTimeout(() => {

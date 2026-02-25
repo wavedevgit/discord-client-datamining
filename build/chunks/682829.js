@@ -34,13 +34,13 @@ var i = n(627968),
     P = n(295405),
     L = n(166403),
     D = n(469778),
-    G = n(954571),
-    M = n(975571),
+    M = n(954571),
+    G = n(975571),
     U = n(927578),
     k = n(637073),
     V = n(887997),
-    w = n(177653),
-    H = n(159906),
+    H = n(177653),
+    w = n(159906),
     B = n(758400),
     Y = n(788868),
     F = n(652215),
@@ -74,7 +74,7 @@ function X() {
     }, []), (0, i.jsx)(o.nVY, {
         label: K.intl.string(K.t["2GKrvn"]),
         description: K.intl.string(K.t.kNEjGm),
-        children: null != e && U.Ay.hasAccountCredit(e) ? (0, i.jsx)(w.A, {
+        children: null != e && U.Ay.hasAccountCredit(e) ? (0, i.jsx)(H.A, {
             className: Z.fX,
             entitlements: e
         }) : (0, i.jsx)(q, {})
@@ -98,7 +98,7 @@ let J = function() {
         C = (0, r.bG)([L.A], () => L.A.hasFetchedSubscriptions()),
         D = (0, r.bG)([y.A], () => y.A.isBusy),
         U = (0, p.Y)(),
-        w = (0, r.bG)([O.A], () => O.A.getSubsection()),
+        H = (0, r.bG)([O.A], () => O.A.getSubsection()),
         q = (0, r.bG)([L.A], () => L.A.getActiveApplicationSubscriptions()?.length ?? 0),
         J = (0, r.bG)([L.A], () => Object.values(L.A.getSubscriptions() ?? {}).filter(e => e.type === F.rzx.GUILD).filter(e => e.status !== F.Dmq.ENDED).length),
         $ = (0, h.A)({
@@ -111,9 +111,9 @@ let J = function() {
         (0, m.zS)(), d.hP(), (0, u.CD)(), d.$o()
     }), function() {
         A.A.clearSubsection()
-    }), []), v.A.enabled) ? (0, i.jsx)(g.A, {}) : C && U ? w === z.nR ? (0, i.jsx)(S.A, {
+    }), []), v.A.enabled) ? (0, i.jsx)(g.A, {}) : C && U ? H === z.nR ? (0, i.jsx)(S.A, {
         onGoBack: () => A.A.clearSubsection()
-    }) : w === z.PZ ? (0, i.jsx)(f.A, {
+    }) : H === z.PZ ? (0, i.jsx)(f.A, {
         onGoBack: () => A.A.clearSubsection()
     }) : (0, i.jsx)("div", {
         className: Z.kL,
@@ -133,7 +133,7 @@ let J = function() {
                     variant: "text-md/normal",
                     className: Z.JU,
                     children: K.intl.format(K.t["7Zi06b"], {
-                        helpCenterLink: M.A.getArticleURL(F.MVz.FRACTIONAL_PREMIUM_ABOUT)
+                        helpCenterLink: G.A.getArticleURL(F.MVz.FRACTIONAL_PREMIUM_ABOUT)
                     })
                 }), (0, i.jsx)(V.A, {
                     className: Z.fX,
@@ -159,10 +159,10 @@ let J = function() {
                         (0, j.openUserSettings)(b.X.SUBSCRIPTIONS_PANEL, {
                             section: F.nc_.SUBSCRIPTIONS,
                             subsection: z.PZ
-                        }), G.default.track(F.HAw.PREMIUM_APPLICATION_SUBSCRIPTION_MANAGE_CTA_CLICKED)
+                        }), M.default.track(F.HAw.PREMIUM_APPLICATION_SUBSCRIPTION_MANAGE_CTA_CLICKED)
                     }
                 })]
-            }), (0, i.jsx)(Q, {}), null != t ? (0, i.jsx)(H.A, {
+            }), (0, i.jsx)(Q, {}), null != t ? (0, i.jsx)(w.A, {
                 subscription: t,
                 withOverheadSeparator: !1
             }) : null]

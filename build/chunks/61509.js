@@ -34,13 +34,13 @@ var i = n(627968),
     P = n(871123),
     L = n(510022),
     D = n(378058),
-    G = n(148355),
-    M = n(780964),
+    M = n(148355),
+    G = n(780964),
     U = n(12901),
     k = n(840065),
     V = n(202613),
-    w = n(317525),
-    H = n(71393),
+    H = n(317525),
+    w = n(71393),
     B = n(287809),
     Y = n(295405),
     F = n(97352),
@@ -132,7 +132,7 @@ function e_(e) {
         guildProductListingId: n
     } = e, a = (0, f.Qi)(t, n, {
         requireCurrentGuild: !1
-    }), l = (0, b.z)(a), r = (0, _.bG)([H.A], () => H.A.getGuild(t)), o = a?.role_id != null && a?.attachments_count === 0 ? ei.intl.string(ei.t.H11qcT) : l, c = s.useCallback(async () => {
+    }), l = (0, b.z)(a), r = (0, _.bG)([w.A], () => w.A.getGuild(t)), o = a?.role_id != null && a?.attachments_count === 0 ? ei.intl.string(ei.t.H11qcT) : l, c = s.useCallback(async () => {
         r?.features.has(ee.GuildFeatures.PRODUCTS_AVAILABLE_FOR_PURCHASE) ? await (0, O.A)(ee.BVt.GUILD_PRODUCT(t, n)) : await (0, O.A)(ee.BVt.CHANNEL(t)), (0, U.default)()
     }, [r, t, n]);
     return (0, i.jsxs)(i.Fragment, {
@@ -155,7 +155,7 @@ function em(e) {
         guildProductListingId: n
     } = e, s = (0, f.Qi)(t, n, {
         requireCurrentGuild: !1
-    }), a = (0, _.bG)([N.A], () => N.A.getGuildProductFetchState(n) === N.e.FETCHING), l = s?.role_id, r = (0, _.bG)([w.A], () => null != l ? w.A.getRole(t, l) : void 0, [t, l]), o = (0, v.A)({
+    }), a = (0, _.bG)([N.A], () => N.A.getGuildProductFetchState(n) === N.e.FETCHING), l = s?.role_id, r = (0, _.bG)([H.A], () => null != l ? H.A.getRole(t, l) : void 0, [t, l]), o = (0, v.A)({
         guildId: t,
         productId: n
     }), c = (s?.attachments?.length ?? 0) > 0, d = null != r;
@@ -483,7 +483,7 @@ class eA extends s.PureComponent {
                 children: (0, i.jsx)(A.$nd, {
                     variant: "primary",
                     text: ei.intl.string(ei.t["jcSP+g"]),
-                    onClick: () => (0, k.openUserSettings)(M.X.GIFT_PANEL, {
+                    onClick: () => (0, k.openUserSettings)(G.X.GIFT_PANEL, {
                         section: ee.nc_.INVENTORY
                     })
                 })
@@ -655,7 +655,7 @@ class eA extends s.PureComponent {
         } else if (null != _)
             if (t = a.isGuildProductPurchase && a.isSoftDeletedProduct ? ei.intl.string(ei.t.O7uLmw) : _.name, null != c) {
                 let t = (0, D.Id)(c);
-                e = (0, i.jsx)(G.A, {
+                e = (0, i.jsx)(M.A, {
                     disableAnimation: !u,
                     isInteracting: u,
                     sticker: t,
@@ -800,7 +800,7 @@ function eg(e) {
     s.useEffect(() => {
         d && null != c && (0, y.TA)(c)
     }, [c, d]);
-    let T = (0, _.bG)([H.A], () => H.A.getGuild(m?.guildId)),
+    let T = (0, _.bG)([w.A], () => w.A.getGuild(m?.guildId)),
         S = r ? m : void 0,
         I = t.subscription,
         f = (0, _.bG)([F.A], () => null != I && I.type !== ee.rzx.PREMIUM ? F.A.get(I.items[0].planId) : null),

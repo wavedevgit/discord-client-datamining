@@ -1,6 +1,6 @@
 /** chunk id: 949645, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => C
 }), n(667532);
 var i = n(310953),
     r = n(473529),
@@ -14,14 +14,14 @@ var i = n(310953),
     u = n(645959),
     A = n(403362),
     g = n(265422),
-    E = n(652215),
-    I = n(746080);
+    I = n(652215),
+    E = n(746080);
 let h = () => {
     let e = s.A.getMessageRequestsCount() > 0 || l.A.getSpamChannelsCount() > 0;
-    return [E.BVt.FRIENDS, (0, a.HF)("navigateToChannel") ? E.BVt.ICYMI : null, _.A.hasLibraryApplication() && !d.l_.getSetting() ? E.BVt.APPLICATION_LIBRARY : null, e ? E.BVt.MESSAGE_REQUESTS : null, E.BVt.APPLICATION_STORE, E.BVt.COLLECTIBLES_SHOP, d.dm.getSetting() ? E.BVt.FAMILY_CENTER : null, E.BVt.QUEST_HOME_V2].filter(A.Vq)
+    return [I.BVt.FRIENDS, (0, a.HF)("navigateToChannel") ? I.BVt.ICYMI : null, _.A.hasLibraryApplication() && !d.l_.getSetting() ? I.BVt.APPLICATION_LIBRARY : null, e ? I.BVt.MESSAGE_REQUESTS : null, I.BVt.APPLICATION_STORE, I.BVt.COLLECTIBLES_SHOP, d.dm.getSetting() ? I.BVt.FAMILY_CENTER : null, I.BVt.QUEST_HOME_V2].filter(A.Vq)
 };
 
-function p() {
+function C() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 1,
         t = o.A.getState().guildId;
     if (null == t) ! function(e) {
@@ -35,14 +35,14 @@ function p() {
         let _ = l[d];
         if (h().includes(_)) {
             let e;
-            e = c.A.getCurrentRoute(), _ === E.BVt.APPLICATION_STORE && null != e ? (0, g.a)(e) : (0, g.a)(_)
-        } else n = E.ME, (0, g.i)(n, _)
+            e = c.A.getCurrentRoute(), _ === I.BVt.APPLICATION_STORE && null != e ? (0, g.a)(e) : (0, g.a)(_)
+        } else n = I.ME, (0, g.i)(n, _)
     }(e);
     else {
         var n, a, s;
         let l, d;
         l = o.A.getState().channelId, d = (0, i.A)(t, {
             withCurrentVoiceChannel: !0
-        }).map(e => e.id), (0, r.K)(t) && d.unshift(I.VV.GUILD_HOME), n = (null != l ? d.indexOf(l) : -1) + e, a = d.length, s = d[n < 0 ? a - 1 : n >= a ? 0 : n], (0, g.i)(t, s)
+        }).map(e => e.id), (0, r.K)(t) && d.unshift(E.VV.GUILD_HOME), n = (null != l ? d.indexOf(l) : -1) + e, a = d.length, s = d[n < 0 ? a - 1 : n >= a ? 0 : n], (0, g.i)(t, s)
     }
 }

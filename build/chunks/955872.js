@@ -34,8 +34,8 @@ var i = n(627968),
     P = n(606532),
     L = n(161290),
     D = n(652215),
-    G = n(985018),
-    M = n(683380);
+    M = n(985018),
+    G = n(683380);
 
 function U() {
     let e = (0, r.bG)([O.default], () => {
@@ -53,11 +53,11 @@ function U() {
             ...N.A.getPendingChanges(),
             showNotice: N.A.showNotice()
         })),
-        w = (0, f.V7)({
+        H = (0, f.V7)({
             userId: e.id,
             image: a
         }),
-        H = (0, C.lw)({
+        w = (0, C.lw)({
             pendingValue: U,
             userValue: e?.collectibles?.nameplate
         }),
@@ -80,13 +80,13 @@ function U() {
                 onUpsellClick: P.A,
                 pendingBio: B,
                 ...V,
-                pendingAvatar: w
+                pendingAvatar: H
             }),
             nameplatePreview: (0, i.jsx)(x.A, {
                 user: e,
-                nameplate: H,
+                nameplate: w,
                 ...V,
-                className: null == H ? M.tJ : void 0,
+                className: null == w ? G.tJ : void 0,
                 isHighlighted: !0
             }),
             children: (0, i.jsx)(L.A, {})
@@ -104,9 +104,9 @@ function U() {
                 })
             })
         }), q && !k && (0, i.jsx)(p.d, {
-            className: M.EL,
+            className: G.EL,
             showUpsell: q && !W,
-            text: G.intl.format(G.t.TmfgI2, {
+            text: M.intl.format(M.t.TmfgI2, {
                 onClick: () => (0, E.K)({
                     analyticsSource: z
                 })
@@ -114,7 +114,7 @@ function U() {
             textVariant: "heading-md/medium",
             useUpdatedStyling: Z,
             button: Z ? (0, i.jsx)("div", {
-                className: M.Xl,
+                className: G.Xl,
                 children: (0, i.jsx)(c.Button, {
                     variant: "overlay-primary",
                     onClick: () => {
@@ -124,7 +124,7 @@ function U() {
                             behavior: "smooth"
                         })
                     },
-                    text: G.intl.string(G.t.uw9zI7),
+                    text: M.intl.string(M.t.uw9zI7),
                     icon: c.tvc
                 })
             }) : (0, i.jsx)(c.Button, {
@@ -136,7 +136,7 @@ function U() {
                         behavior: "smooth"
                     })
                 },
-                text: G.intl.string(G.t.uw9zI7),
+                text: M.intl.string(M.t.uw9zI7),
                 icon: c.tvc
             })
         })]

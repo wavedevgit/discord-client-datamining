@@ -42,13 +42,13 @@ let b = e => {
             analyticsLocations: P
         } = (0, _.Ay)(u.A.PREMIUM_SUBSCRIBER_NITRO_HOME),
         [L, D] = s.useState(!1),
-        G = (0, r.bG)([d.A], () => d.A.useReducedMotion),
-        M = (0, p.LQ)(),
+        M = (0, r.bG)([d.A], () => d.A.useReducedMotion),
+        G = (0, p.LQ)(),
         {
             fractionalState: U
         } = (0, m.A)(),
         k = (0, g.d)();
-    M ? (t = I.intl.string(I.t["+vt7w9"]), n = I.intl.string(I.t.LgHbnL)) : (t = I.intl.string(I.t.LgHbnL), n = I.intl.string(I.t["+vt7w9"]));
+    G ? (t = I.intl.string(I.t["+vt7w9"]), n = I.intl.string(I.t.LgHbnL)) : (t = I.intl.string(I.t.LgHbnL), n = I.intl.string(I.t["+vt7w9"]));
     let V = () => {
         b(!1), A.default.track(S.HAw.NITRO_HOME_NAVIGATION, {
             current_component: x.A2.SEE_ALL,
@@ -59,7 +59,7 @@ let b = e => {
     return (0, i.jsx)(c.GtU, {
         className: l()(f.NX, {
             [f.ho]: a,
-            [f.LM]: G
+            [f.LM]: M
         }),
         inert: !a,
         ref: O,
@@ -89,7 +89,7 @@ let b = e => {
                         cards: (0, p.vx)({
                             perksCards: y,
                             variant: x.cJ.CARD_CAROUSEL_FIRST_ROW,
-                            isPremiumSubscriber: M,
+                            isPremiumSubscriber: G,
                             hideCardsOnNarrowScreen: !0,
                             fractionalState: U,
                             isInReverseTrial: k
@@ -105,7 +105,7 @@ let b = e => {
                         cards: (0, p.vx)({
                             perksCards: y,
                             variant: x.cJ.CARD_CAROUSEL_SECOND_ROW,
-                            isPremiumSubscriber: M,
+                            isPremiumSubscriber: G,
                             hideCardsOnNarrowScreen: !0,
                             fractionalState: U,
                             isInReverseTrial: k
@@ -121,7 +121,7 @@ let b = e => {
                         cards: (0, p.vx)({
                             perksCards: y,
                             variant: x.cJ.CARD_CAROUSEL_THIRD_ROW,
-                            isPremiumSubscriber: M,
+                            isPremiumSubscriber: G,
                             hideCardsOnNarrowScreen: !0,
                             fractionalState: U,
                             isInReverseTrial: k

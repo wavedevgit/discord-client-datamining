@@ -1,6 +1,6 @@
 /** chunk id: 843685, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => M
+    A: () => G
 });
 var i = n(627968),
     s = n(64700),
@@ -178,7 +178,7 @@ let j = () => (0, i.jsx)("div", {
             })]
         })
     }),
-    G = e => {
+    M = e => {
         let {
             tier0MonthlyPrice: t,
             tier2MonthlyPrice: n,
@@ -207,7 +207,7 @@ let j = () => (0, i.jsx)("div", {
             })]
         })
     },
-    M = e => {
+    G = e => {
         let t, {
                 className: n,
                 hidePill: a = !1,
@@ -226,7 +226,7 @@ let j = () => (0, i.jsx)("div", {
             R = (0, p.N1)(C.gD.PREMIUM_MONTH_TIER_2),
             y = `${R}/${(0,g.FJ)(C.WT.MONTH)}`,
             L = (0, g.JM)(C.gD.PREMIUM_MONTH_TIER_0),
-            M = (0, g.JM)(C.gD.PREMIUM_MONTH_TIER_2),
+            G = (0, g.JM)(C.gD.PREMIUM_MONTH_TIER_2),
             U = (0, E.g)();
         if (!T || !I) return null;
         t = a ? null : null != f ? (0, i.jsx)(v, {}) : (0, i.jsx)(j, {});
@@ -252,9 +252,9 @@ let j = () => (0, i.jsx)("div", {
                     }), (0, i.jsxs)("table", {
                         className: S.tp,
                         children: [(0, i.jsx)(D, {}), (0, i.jsxs)("tbody", {
-                            children: [(0, i.jsx)(G, {
+                            children: [(0, i.jsx)(M, {
                                 tier0MonthlyPrice: L,
-                                tier2MonthlyPrice: M,
+                                tier2MonthlyPrice: G,
                                 shouldUseDiscountPrice: O,
                                 tier2DiscountedPriceString: y
                             }), U.map(e => (0, s.createElement)(P, {

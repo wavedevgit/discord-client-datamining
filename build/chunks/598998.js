@@ -1,6 +1,6 @@
 /** chunk id: 598998, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => H
+    A: () => w
 });
 var i = n(627968),
     s = n(64700),
@@ -34,19 +34,19 @@ var i = n(627968),
     P = n(985018),
     L = n(15830),
     D = n(998663),
-    G = n(817577),
-    M = n(714206),
+    M = n(817577),
+    G = n(714206),
     U = n(641836),
     k = n(288604),
     V = n(174872),
-    w = n(509442);
+    H = n(509442);
 
-function H() {
+function w() {
     let {
         analyticsLocations: e
     } = (0, d.Ay)(c.A.PREMIUM_MARKETING_PERK_CARD), t = (0, E.O9)(), a = p.A.useExperiment({
         location: "PremiumWhatsNewSection"
-    }).enabled, H = (0, s.useCallback)(() => {
+    }).enabled, w = (0, s.useCallback)(() => {
         (0, x.openUserSettings)(g.X.PROFILE_PANEL, {
             section: O.nc_.PROFILE_CUSTOMIZATION,
             analyticsLocations: e
@@ -86,7 +86,7 @@ function H() {
                 id: b.vc,
                 title: null != W ? P.intl.string(W.nameUnformattedNitro) : z ? P.intl.string(P.t.tx9Fvw) : "",
                 pillText: P.intl.string(P.t["jyYgZ+"]),
-                primaryAsset: null != q ? Z ? q.standard : q.ambientLarge : z ? M : null,
+                primaryAsset: null != q ? Z ? q.standard : q.ambientLarge : z ? G : null,
                 primaryAssetClassName: l()(L.pq, {
                     [L.n6]: Z
                 }),
@@ -111,7 +111,7 @@ function H() {
                     premiumGroupProductName: (0, v.DP)()
                 }),
                 pillText: P.intl.string(P.t.oW0eUd),
-                primaryAsset: G,
+                primaryAsset: M,
                 ctaText: P.intl.string(P.t.jVcuVY),
                 onCtaClick: () => {
                     (0, o.mMO)(async () => {
@@ -146,7 +146,7 @@ function H() {
                 id: b.vl,
                 title: P.intl.string(P.t.OLtTrt),
                 description: P.intl.string(P.t["di/pXR"]),
-                onCtaClick: H,
+                onCtaClick: w,
                 primaryAsset: U.A,
                 ctaText: P.intl.string(P.t.jVcuVY),
                 pillText: P.intl.string(P.t.y2b7CA)
@@ -156,7 +156,7 @@ function H() {
                 description: P.intl.formatToPlainString(P.t.WQazjs, {
                     themeCount: 20
                 }),
-                primaryAsset: w.A,
+                primaryAsset: H.A,
                 ctaText: P.intl.string(P.t.jVcuVY),
                 onCtaClick: () => {
                     (0, m.nf)(m.HP.CUSTOM_THEME)
@@ -182,5 +182,5 @@ function H() {
             d = (c = c.filter(e => null != e))[0].featured,
             u = d ? 5 : 6;
         return c.splice(+!!d, 0, s), c.length > u && c.splice(u, c.length - u), c
-    }, [W, q, Z, K, t, a, J, Q, e, H, Y, B, X, z])
+    }, [W, q, Z, K, t, a, J, Q, e, w, Y, B, X, z])
 }

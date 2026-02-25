@@ -13,28 +13,28 @@ var l = r(397927),
     d = r(878112),
     c = r(561769),
     m = r(347722),
-    x = r(758836),
-    p = r(985018);
-let g = t => {
+    A = r(758836),
+    x = r(985018);
+let p = t => {
         let {
             product: e,
             selectedVariantIndex: r,
             cardRef: u,
             onClick: o,
-            icon: g,
+            icon: p,
             prioritizedCurrency: h,
-            onClickAnalytics: C
-        } = t, A = (0, a.Mk)(), I = A?.tab, j = (0, s.uM)(), k = (0, m.X)(e, h), f = (0, c.ql)(e, n.A.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON, C);
-        return null != o || null != g ? (0, i.jsx)(l.K0, {
+            onClickAnalytics: g
+        } = t, C = (0, a.Mk)(), I = C?.tab, v = (0, s.uM)(), f = (0, m.X)(e, h), j = (0, c.ql)(e, n.A.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON, g);
+        return null != o || null != p ? (0, i.jsx)(l.K0, {
             variant: "primary",
-            "aria-label": p.intl.string(p.t.SKNnqq),
-            icon: g ?? l.bMW,
+            "aria-label": x.intl.string(x.t.SKNnqq),
+            icon: p ?? l.bMW,
             onClick: t => {
-                t.stopPropagation(), null != o ? o(e.skuId) : f(t)
+                t.stopPropagation(), null != o ? o(e.skuId) : j(t)
             }
-        }) : k ? (0, i.jsx)(s.R9, {
+        }) : f ? (0, i.jsx)(s.R9, {
             newValue: {
-                pageCategory: I === x.G2.HOME ? void 0 : j?.pageCategory
+                pageCategory: I === A.G2.HOME ? void 0 : v?.pageCategory
             },
             children: (0, i.jsx)(d.A, {
                 primary: !0,
@@ -55,9 +55,9 @@ let g = t => {
             onClickAnalytics: a
         } = t, d = (0, c.Vm)(e), m = (0, u.Q)(d);
         if (null == d) return null;
-        let x = (0, o.rb)(d, m);
-        return (0, i.jsx)(g, {
-            product: x,
+        let A = (0, o.rb)(d, m);
+        return (0, i.jsx)(p, {
+            product: A,
             cardRef: r,
             selectedVariantIndex: m,
             onClick: l,

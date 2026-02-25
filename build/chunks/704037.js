@@ -30,40 +30,40 @@ function h(e) {
 function A(e) {
     let {
         guildIds: t,
-        iconSize: n = 20
-    } = e, a = (0, l.bG)([c.A], () => c.A.getGuildId()), A = (0, l.yK)([o.A], () => t.map(e => o.A.getGuild(e)), [t]), p = (0, s.useMemo)(() => A.filter(e => null != e), [A]), {
-        visibleGuilds: g,
-        numTruncated: m
+        iconSize: n = 20,
+        prioritizeSelectedGuild: a = !1
+    } = e, A = (0, l.bG)([c.A], () => a ? c.A.getGuildId() : null, [a]), p = (0, l.yK)([o.A], () => t.map(e => o.A.getGuild(e)), [t]), g = (0, s.useMemo)(() => p.filter(e => null != e), [p]), {
+        visibleGuilds: m,
+        numTruncated: _
     } = (0, s.useMemo)(() => {
-        let e = [...p];
-        if (null != a) {
-            let t = p.findIndex(e => e.id === a); - 1 !== t && (e.splice(t, 1), e.unshift(p[t]))
+        let e = [...g];
+        if (null != A) {
+            let t = e.findIndex(e => e.id === A);
+            t > 0 && (e.splice(t, 1), e.unshift(g[t]))
         }
         return 4 === e.length ? {
             visibleGuilds: e,
-            numTruncated: 0,
-            visibleGuildsTooltip: e,
-            numTruncatedTooltipGuilds: 0
+            numTruncated: 0
         } : {
             visibleGuilds: e.slice(0, 3),
             numTruncated: e.length - 3
         }
-    }, [p, a]);
+    }, [g, A]);
     return (0, i.jsxs)("div", {
         className: u.WM,
-        children: [g.map(e => (0, i.jsx)(h, {
+        children: [m.map(e => (0, i.jsx)(h, {
             iconSize: n,
             children: (0, i.jsx)(d.$, {
                 guild: e,
                 size: n
             })
-        }, e.id)), m > 0 && (0, i.jsx)(h, {
+        }, e.id)), _ > 0 && (0, i.jsx)(h, {
             iconSize: n,
             children: (0, i.jsxs)(r.Text, {
                 className: u.br,
                 color: "text-subtle",
                 variant: "text-xxs/semibold",
-                children: ["+", m]
+                children: ["+", _]
             })
         })]
     })

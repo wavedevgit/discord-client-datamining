@@ -37,8 +37,8 @@ let O = s.memo(s.forwardRef((e, t) => {
         analyticsLocations: O
     } = (0, _.Ay)(u.A.PREMIUM_MARKETING_HERO_CTA), R = (0, T.N)(), y = (0, g.A)(), P = null != y, L = (0, o.bG)([d.A], () => d.A.useReducedMotion), {
         visibilityPercentageRef: D,
-        visibilityPercentage: G
-    } = (0, f.U)(!L), M = (0, o.bG)([m.A], () => m.A.affinities), U = !P && M.length > 0, k = (0, h.c)(r.C.MARKETING_PAGE_BANNER), V = null != k && "marketingPageBanner" === k.properties.properties.oneofKind, w = (0, A.ar)() && !V;
+        visibilityPercentage: M
+    } = (0, f.U)(!L), G = (0, o.bG)([m.A], () => m.A.affinities), U = !P && G.length > 0, k = (0, h.c)(r.C.MARKETING_PAGE_BANNER), V = null != k && "marketingPageBanner" === k.properties.properties.oneofKind, H = (0, A.ar)() && !V;
     return (0, i.jsx)(_.f5, {
         value: O,
         children: (0, i.jsx)("div", {
@@ -50,8 +50,8 @@ let O = s.memo(s.forwardRef((e, t) => {
                 children: (0, i.jsxs)("div", {
                     className: v.hQ,
                     children: [(0, i.jsx)(N.A, {
-                        containerVisibilityPercentage: G
-                    }), w && (0, i.jsx)("div", {
+                        containerVisibilityPercentage: M
+                    }), H && (0, i.jsx)("div", {
                         className: v.XN,
                         children: (0, i.jsx)(I.A, {
                             enablePremiumBrandRefresh: !0
@@ -81,14 +81,14 @@ let O = s.memo(s.forwardRef((e, t) => {
                                 enablePremiumBrandRefresh: !0
                             })
                         }), (0, i.jsxs)("div", {
-                            className: w ? v.es : v.UJ,
+                            className: H ? v.es : v.UJ,
                             children: [(0, i.jsx)(E.A, {
                                 size: "md",
-                                fullWidth: w,
+                                fullWidth: H,
                                 hasActivePromotion: !!a,
                                 subscriptionTier: V ? b.pe.NONE : s,
                                 buttonTextOverride: V ? j.intl.string(j.t["2pG5Ga"]) : void 0
-                            }), !w && (0, i.jsx)(p.A, {
+                            }), !H && (0, i.jsx)(p.A, {
                                 variant: "secondary",
                                 size: "md"
                             })]

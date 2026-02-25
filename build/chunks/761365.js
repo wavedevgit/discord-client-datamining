@@ -12,40 +12,41 @@ let u = l.memo(function(t) {
         user: e,
         nameplate: r,
         isHighlighted: l,
-        size: u = "default"
-    } = t, o = "small" === u ? 62 : 94, d = "small" === u ? 72 : 110;
+        showDefaultAvatar: u = !1,
+        size: o = "default"
+    } = t, d = "small" === o ? 62 : 94, c = "small" === o ? 72 : 110;
     return (0, i.jsx)("div", {
         className: a.Dz,
         children: (0, i.jsxs)("div", {
             className: a.ur,
             children: [(0, i.jsx)(n._, {
                 showStatus: !0,
-                width: o,
+                width: d,
                 opacity: .7,
-                size: u
+                size: o
             }), (0, i.jsx)(n._, {
                 showStatus: !0,
-                width: d,
+                width: c,
                 opacity: .85,
-                size: u
+                size: o
             }), (0, i.jsx)(s.A, {
                 user: e,
                 nameplate: r,
                 className: a.tZ,
                 isHighlighted: l,
-                showPlaceholderUser: !l,
+                showPlaceholderUser: !l || u,
                 showStatus: !0,
-                nameplatePreviewSize: "small" === u ? "small" : "default"
+                nameplatePreviewSize: "small" === o ? "small" : "default"
+            }), (0, i.jsx)(n._, {
+                showStatus: !0,
+                width: c,
+                opacity: .85,
+                size: o
             }), (0, i.jsx)(n._, {
                 showStatus: !0,
                 width: d,
-                opacity: .85,
-                size: u
-            }), (0, i.jsx)(n._, {
-                showStatus: !0,
-                width: o,
                 opacity: .7,
-                size: u
+                size: o
             })]
         })
     })

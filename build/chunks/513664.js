@@ -2,14 +2,14 @@
 n.d(t, {
     Ay: () => C,
     dd: () => E,
-    lD: () => b
+    lD: () => N
 });
 var i = n(627968),
     s = n(64700),
     a = n(873298),
     l = n(397927),
     r = n(334726),
-    o = n(546351),
+    o = n(365258),
     c = n(285058),
     d = n(195043),
     u = n(723702),
@@ -50,27 +50,22 @@ function C(e) {
     return (0, i.jsxs)(m.A, {
         className: t,
         title: h.intl.string(h.t.Cq98yL),
-        children: [(0, i.jsx)(N, {}), (0, i.jsx)(l.cGx, {
+        children: [(0, i.jsx)(f, {}), (0, i.jsx)(l.cGx, {
+            gap: 32
+        }), (0, i.jsx)(S, {}), (0, i.jsx)(l.cGx, {
             gap: 32
         }), (0, i.jsx)(I, {}), (0, i.jsx)(l.cGx, {
             gap: 32
-        }), (0, i.jsx)(f, {}), (0, i.jsx)(l.cGx, {
-            gap: 32
-        }), (0, i.jsx)(b, {})]
+        }), (0, i.jsx)(N, {})]
     })
 }
-let T = {
-    [a.Qd.ACTIVITY_STATUS_OFF]: () => h.intl.string(h.t.FzgQna).toLowerCase(),
-    [a.Qd.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS]: () => h.intl.string(h.t["1hvuGH"]).toLowerCase(),
-    [a.Qd.ACTIVITY_STATUS_ON]: () => h.intl.string(h.t.fQc5la).toLowerCase()
-};
 
-function S(e) {
+function T(e) {
     let t = _._Z.getSetting();
     if (_._Z.updateSetting(e), !(0, r.r)("UserSettingsActivityPrivacy")) return;
     let s = (0, o.g8)(t, e);
     if (null == s) return;
-    let a = T[e]?.() ?? "";
+    let a = (0, o.Xc)(e);
     (0, l.mMO)(async () => {
         let {
             default: e
@@ -84,7 +79,7 @@ function S(e) {
     })
 }
 
-function I() {
+function S() {
     let e = _._Z.useSetting(),
         t = (0, r.m)("UserSettingsActivityPrivacy"),
         n = s.useMemo(() => t ? [{
@@ -116,12 +111,12 @@ function I() {
             label: o,
             options: n,
             value: e,
-            onChange: S
+            onChange: T
         }), (0, i.jsx)(E, {})]
     })
 }
 
-function f() {
+function I() {
     let e = _.e.useSetting(),
         t = _.UM.useSetting();
     return (0, i.jsx)(d.x, {
@@ -145,7 +140,7 @@ function f() {
     })
 }
 
-function N() {
+function f() {
     let e = _.tz.useSetting(),
         t = u.isPlatformEmbedded ? h.intl.string(x.default.UQ9RHJ) : h.intl.string(h.t.oKqC4t);
     return (0, i.jsx)(d.x, {
@@ -165,7 +160,7 @@ function N() {
     })
 }
 
-function b() {
+function N() {
     return (0, i.jsx)(d.x, {
         setting: A.H.ACTIVITY_PRIVACY_TOS,
         children: (0, i.jsx)(l.ZpM, {

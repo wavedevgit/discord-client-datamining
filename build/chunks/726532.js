@@ -274,7 +274,7 @@ let T = () => (0, i.jsxs)(l.BJc, {
             })
         }, L = s.useMemo(() => !h.BE.includes(t.status) && I > 0, [t.status, I]), {
             title: D,
-            description: G
+            description: M
         } = (() => {
             switch (O) {
                 case x.Dmq.CANCELED:
@@ -318,7 +318,7 @@ let T = () => (0, i.jsxs)(l.BJc, {
                 className: C.wS,
                 children: [(0, i.jsx)(S, {
                     title: D,
-                    description: G,
+                    description: M,
                     button: c.ki(t) ? (0, i.jsx)(l.Button, {
                         variant: "expressive",
                         size: "md",

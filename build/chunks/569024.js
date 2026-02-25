@@ -35,15 +35,15 @@ var s = n(311907),
     P = n(652215);
 let L = new E.A("CacheStore"),
     D = !1,
-    G = !1,
-    M = "initializing",
+    M = !1,
+    G = "initializing",
     U = 0,
     k = !1,
     V = !1,
-    w = !1;
+    H = !1;
 
-function H(e) {
-    L.log("Clearing cache store"), U = Date.now(), a.w.remove(P.j_2), a.w.remove(P.CT4), a.w.remove(P.XYq), M = "no-cache", "CLEAR_CACHES" === e.type && e.preventWritingCachesAgainThisSession && (G = !0)
+function w(e) {
+    L.log("Clearing cache store"), U = Date.now(), a.w.remove(P.j_2), a.w.remove(P.CT4), a.w.remove(P.XYq), G = "no-cache", "CLEAR_CACHES" === e.type && e.preventWritingCachesAgainThisSession && (M = !0)
 }
 async function B(e, t, n) {
     let i = performance.now();
@@ -84,8 +84,8 @@ async function Y(e, t, n) {
         [
             [S, f], j, v, O, R, P, D
         ] = await Promise.all([d, u, _, x, p, E, T]),
-        G = performance.now() - c;
-    if (L.verbose(`cache loaded in ${G}ms (channel_history ${S}ms)`), null == f) return (0, y.A)("database:history_cache_null"), L.verbose("finished without dispatching CACHE_LOADED"), [!1, null, 0];
+        M = performance.now() - c;
+    if (L.verbose(`cache loaded in ${M}ms (channel_history ${S}ms)`), null == f) return (0, y.A)("database:history_cache_null"), L.verbose("finished without dispatching CACHE_LOADED"), [!1, null, 0];
     {
         let c = Object.fromEntries(f.members.map(e => [e.userId, e])),
             d = null != v.guildId && null != v.channels,
@@ -309,17 +309,17 @@ class q extends s.Ay.Store {
         return !D || k
     }
     getLazyCacheStatus() {
-        return D ? M : "no-cache"
+        return D ? G : "no-cache"
     }
     get lastWriteTime() {
         return U
     }
     canWriteCaches(e) {
-        return (0, j.wR)() ? G ? (L.log("Not writing cache because caches cleared"), !1) : !!e || !!w || (L.log("Not writing cache because never connected"), !1) : (L.log("Not writing cache because not authenticated"), !1)
+        return (0, j.wR)() ? M ? (L.log("Not writing cache because caches cleared"), !1) : !!e || !!H || (L.log("Not writing cache because never connected"), !1) : (L.log("Not writing cache because not authenticated"), !1)
     }
     async loadCacheAsync(e, t) {
         let n = (0, O.q)(t);
-        if ("initializing" !== M) {
+        if ("initializing" !== G) {
             (0, y.A)("cache:lazy_cache_not_initializing"), n(), setTimeout(() => C.A.getSocket()?.dispatcher?.unpauseDispatchQueue(), 0);
             return
         }
@@ -343,22 +343,22 @@ class q extends s.Ay.Store {
 }
 new q(l.h, D ? {
     CONNECTION_OPEN: function() {
-        return V = !0, w = !0, !1
+        return V = !0, H = !0, !1
     },
-    LOGOUT: H,
+    LOGOUT: w,
     CONNECTION_CLOSED: function() {
-        return V = !1, w = !0, !1
+        return V = !1, H = !0, !1
     },
     CACHE_LOADED: function() {
         k = !0
     },
     CACHE_LOADED_LAZY: function() {
-        k = !0, M = "cache-loaded"
+        k = !0, G = "cache-loaded"
     },
     CACHE_LOADED_LAZY_NO_CACHE: function() {
-        M = "no-cache"
+        G = "no-cache"
     },
-    CLEAR_CACHES: H,
+    CLEAR_CACHES: w,
     WRITE_CACHES: function() {
         L.verbose("Writing cache now"), U = Date.now(), k = !0, a.w.remove(P.j_2), a.w.remove(P.XYq), a.w.remove(P.CT4)
     }

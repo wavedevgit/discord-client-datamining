@@ -2,8 +2,8 @@
 n.d(t, {
     Ay: () => Y,
     T: () => B,
-    Wx: () => H,
-    cH: () => w
+    Wx: () => w,
+    cH: () => H
 }), n(321073);
 var i = n(627968),
     s = n(64700),
@@ -40,7 +40,7 @@ let L = r.Ay.connectStores([f.A], () => ({
     }))(d.ppr),
     D = (0, I.isWindows)();
 
-function G(e) {
+function M(e) {
     let {
         onClose: t
     } = e, n = (0, r.bG)([A.Ay], () => A.Ay.getCandidateGames()), [a, o] = s.useState(null), c = n.map(e => ({
@@ -79,7 +79,7 @@ function G(e) {
     })
 }
 
-function M(e) {
+function G(e) {
     let {
         rawGame: t,
         nowPlaying: a = !1,
@@ -93,9 +93,9 @@ function M(e) {
     } = (0, r.cf)([A.Ay], () => ({
         canToggleDetection: null == I || A.Ay.isDetectionEnabled(I),
         isCurrentGameDetectionEnabled: A.Ay.isDetectionEnabled(f)
-    })), P = (0, r.bG)([A.Ay], () => A.Ay.getVisibleGame()), [L, G] = s.useState(!1), U = s.useMemo(() => (0, p.n1)(f) ? S ? f.gameName : v.intl.formatToPlainString(v.t.G6BGdx, {
+    })), P = (0, r.bG)([A.Ay], () => A.Ay.getVisibleGame()), [L, M] = s.useState(!1), U = s.useMemo(() => (0, p.n1)(f) ? S ? f.gameName : v.intl.formatToPlainString(v.t.G6BGdx, {
         subgameName: f.gameName
-    }) : f.name, [f, S]), [k, V] = s.useState(U ?? "???"), w = l()(y.tR, {
+    }) : f.name, [f, S]), [k, V] = s.useState(U ?? "???"), H = l()(y.tR, {
         [O.LO]: !a,
         [O.Rw]: a,
         [O.FB]: null != f && a,
@@ -103,7 +103,7 @@ function M(e) {
         [O.fG]: null != x && x.length > 0
     });
 
-    function H() {
+    function w() {
         null != x && x.length > 0 && R ? (0, d.mMO)(async () => {
             let {
                 Modal: e
@@ -134,7 +134,7 @@ function M(e) {
         Y = null != I && I.id === P?.id || B || null != x && x.some(e => e.id === P?.id);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)("div", {
-            className: w,
+            className: H,
             children: [(0, i.jsxs)("div", {
                 className: l()(O.$K, y.Vd),
                 children: [f.verified && !g ? (0, i.jsxs)("div", {
@@ -196,7 +196,7 @@ function M(e) {
                             T.default.track(b.HAw.USER_SETTINGS_REPORT_INCORRECT_GAME_DETECTION, {
                                 application_id: e?.id,
                                 game_name: (0, p.n1)(f) ? f.gameName : f.name
-                            }), G(!0), (0, d.mMO)(async () => {
+                            }), M(!0), (0, d.mMO)(async () => {
                                 let {
                                     default: t
                                 } = await n.e("27495").then(n.bind(n, 651930));
@@ -240,7 +240,7 @@ function M(e) {
                         children: N ? (0, i.jsx)(d.DUT, {
                             "aria-label": v.intl.string(v.t.QmitzM),
                             className: O.ym,
-                            onClick: H,
+                            onClick: w,
                             children: t
                         }) : t
                     })
@@ -292,7 +292,7 @@ function M(e) {
         }), null != x && x.length > 0 && !a && (0, i.jsx)("div", {
             className: O.AQ,
             children: x.map((e, t) => (0, i.jsxs)(s.Fragment, {
-                children: [(0, i.jsx)(M, {
+                children: [(0, i.jsx)(G, {
                     rawGame: e,
                     isOverride: !1,
                     isSubgame: !0,
@@ -339,7 +339,7 @@ let V = (0, S.L_)(function() {
         for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
         return new Set(t.map(e => e.exePath))
     }),
-    w = () => {
+    H = () => {
         let e = (0, r.yK)([A.Ay], () => A.Ay.getGamesSeen(!1)),
             {
                 runningGame: t,
@@ -350,14 +350,14 @@ let V = (0, S.L_)(function() {
             }));
         s.useEffect(() => ((0, g.a2)(), g.e0), []);
         let a = s.useMemo(() => e.reduce((e, t) => ((0, p.n1)(t) && e.push(t), e), []), [e]);
-        return null != t ? (0, i.jsx)(M, {
+        return null != t ? (0, i.jsx)(G, {
             rawGame: t,
             isOverride: n.has(t.exePath),
             nowPlaying: !0,
             subgames: t.id === x.a7 ? a : void 0
         }, (0, A.Es)(t)) : (0, i.jsx)(U, {})
     },
-    H = () => {
+    w = () => {
         let e = s.useRef(null);
         return (0, i.jsxs)("div", {
             className: l()(O.ax, P.Gf),
@@ -369,7 +369,7 @@ let V = (0, S.L_)(function() {
                     let {
                         closePopout: t
                     } = e;
-                    return (0, i.jsx)(G, {
+                    return (0, i.jsx)(M, {
                         onClose: t
                     })
                 },
@@ -407,7 +407,7 @@ let V = (0, S.L_)(function() {
                 igdbLink: "https://www.igdb.com/about"
             }),
             children: (0, i.jsx)("div", {
-                children: l.map(e => (0, i.jsx)(M, {
+                children: l.map(e => (0, i.jsx)(G, {
                     rawGame: e,
                     isOverride: a.has(e.exePath),
                     subgames: e.id === x.a7 ? o : void 0
@@ -423,7 +423,7 @@ let V = (0, S.L_)(function() {
         return (0, i.jsxs)(N.A, {
             title: n ? v.intl.string(v.t.AVDyEj) : null,
             className: t,
-            children: [(0, i.jsx)(w, {}), (0, i.jsx)(H, {}), (0, i.jsx)(d.cGx, {
+            children: [(0, i.jsx)(H, {}), (0, i.jsx)(w, {}), (0, i.jsx)(d.cGx, {
                 gap: 20
             }), (0, i.jsx)(B, {})]
         })

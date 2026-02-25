@@ -1,6 +1,6 @@
 /** chunk id: 270887, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => E
+    A: () => I
 });
 var i = n(735438),
     r = n.n(i),
@@ -14,7 +14,7 @@ var i = n(735438),
     u = n(619921),
     A = n(265422),
     g = n(652215);
-let E = r().throttle(function() {
+let I = r().throttle(function() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 1,
         t = c.Ay.getFlattenedGuildIds(),
         n = function(e) {

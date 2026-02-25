@@ -1,6 +1,6 @@
 /** chunk id: 983511, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    default: () => M
+    default: () => G
 });
 var i = n(627968),
     s = n(64700),
@@ -113,7 +113,7 @@ function D(e) {
     }, [O]);
     let {
         premiumSubscriptionPlan: D,
-        premiumGuildPlan: G
+        premiumGuildPlan: M
     } = (0, o.cf)([S.A], () => {
         let e = S.A.get(t.planId);
         return {
@@ -121,23 +121,23 @@ function D(e) {
             premiumGuildPlan: null != e ? S.A.getForSkuAndInterval((0, N.mH)(v.pe.GUILD), e.interval, e.intervalCount) : null
         }
     }), {
-        analyticsLocations: M
+        analyticsLocations: G
     } = (0, m.Ay)(), [U] = (0, h.Kq)({
         subscriptionId: t.id,
         renewal: !0,
         currency: t.currency,
         paymentSourceId: t.paymentSourceId,
-        analyticsLocations: M,
+        analyticsLocations: G,
         analyticsLocation: _.A.GUILD_BOOST_SLOT_CANCELLATION_MODAL_CURRENT_INVOICE_PREVIEW
-    }), k = null != G ? (0, N.Om)(t, f[0]?.quantity ?? 0, G.id) : null, [V] = (0, h.Kq)({
+    }), k = null != M ? (0, N.Om)(t, f[0]?.quantity ?? 0, M.id) : null, [V] = (0, h.Kq)({
         subscriptionId: t.id,
         items: k,
         renewal: !0,
-        analyticsLocations: M,
+        analyticsLocations: G,
         analyticsLocation: _.A.GUILD_BOOST_SLOT_CANCELLATION_MODAL_RENEWAL_INVOICE_PREVIEW
     });
-    if (null == V || null == D || null == G || null == U) return (0, i.jsx)(c.y$y, {});
-    let w = t.items.some(e => {
+    if (null == V || null == D || null == M || null == U) return (0, i.jsx)(c.y$y, {});
+    let H = t.items.some(e => {
             let {
                 planId: t
             } = e;
@@ -148,13 +148,13 @@ function D(e) {
             } = e;
             return !v.pW.has(t)
         }) != null,
-        H = f.some(e => {
+        w = f.some(e => {
             let {
                 planId: t
             } = e;
             return v.pW.has(t)
         }),
-        B = w || H ? V.total - U.total : -U.total,
+        B = H || w ? V.total - U.total : -U.total,
         {
             interval: Y,
             intervalCount: F
@@ -207,7 +207,7 @@ function D(e) {
                 disabled: u,
                 onClick: async () => {
                     try {
-                        A(!0), I(null), await L(t, f, M, n), r()
+                        A(!0), I(null), await L(t, f, G, n), r()
                     } catch (e) {
                         I(R.intl.string(R.t["5mlOCW"])), A(!1)
                     }
@@ -219,7 +219,7 @@ function D(e) {
     })
 }
 
-function G(e) {
+function M(e) {
     let {
         premiumSubscription: t,
         fractionalPremiumInfo: n,
@@ -251,7 +251,7 @@ function G(e) {
     })
 }
 
-function M(e) {
+function G(e) {
     let t, {
         guildBoostSlot: n,
         transitionState: a,
@@ -297,7 +297,7 @@ function M(e) {
             });
             break;
         case 3:
-            t = (0, i.jsx)(G, {
+            t = (0, i.jsx)(M, {
                 premiumSubscription: r,
                 fractionalPremiumInfo: u,
                 onClose: l,

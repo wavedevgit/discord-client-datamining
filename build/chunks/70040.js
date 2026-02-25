@@ -2,7 +2,7 @@
 n.d(t, {
     Ix: () => V,
     J3: () => D,
-    Q3: () => H,
+    Q3: () => w,
     mx: () => B
 });
 var i = n(627968),
@@ -43,7 +43,7 @@ let D = () => {
     }), (0, h.nf)(h.HP.CLIENT_THEMES), (0, v.default)()
 };
 
-function G() {
+function M() {
     let e = (0, p.O)(),
         t = (0, T.U9)(e, y.pe.TIER_2) ? P.intl.formatToPlainString(P.t.bkQ4bH, {
             percent: e?.discount.amount
@@ -59,7 +59,7 @@ function G() {
     })
 }
 
-function M() {
+function G() {
     let e = (0, a.bG)([m.A], () => m.A.isPreview),
         t = (0, E.V)()?.subscription_trial?.sku_id === y.pe.TIER_2;
     return !e || t ? null : (0, i.jsxs)("div", {
@@ -68,7 +68,7 @@ function M() {
             variant: "secondary",
             text: P.intl.string(P.t["E+COuA"]),
             onClick: D
-        }), (0, i.jsx)(G, {})]
+        }), (0, i.jsx)(M, {})]
     })
 }
 
@@ -116,10 +116,10 @@ let V = () => {
             type: g.v0.SETTINGS,
             children: [(0, i.jsx)(g.Ay.Basic, {
                 className: L.a6
-            }), (0, i.jsx)(w, {}), (0, i.jsx)(A.A, {}), (0, i.jsxs)(U, {
+            }), (0, i.jsx)(H, {}), (0, i.jsx)(A.A, {}), (0, i.jsxs)(U, {
                 children: [(0, i.jsx)(g.Ay.Gradient, {
                     disabled: !1,
-                    renderCTAButtons: () => (0, i.jsx)(M, {})
+                    renderCTAButtons: () => (0, i.jsx)(G, {})
                 }), (0, i.jsx)(k, {})]
             })]
         }), !e && (0, i.jsx)(o.cGx, {
@@ -128,7 +128,7 @@ let V = () => {
     })
 };
 
-function w() {
+function H() {
     let e = (0, I.qo)(),
         {
             theme: t,
@@ -153,7 +153,7 @@ function w() {
         })]
     })
 }
-let H = () => (0, a.bG)([m.A], () => m.A.isPreview) ? null : (0, i.jsx)(o.Button, {
+let w = () => (0, a.bG)([m.A], () => m.A.isPreview) ? null : (0, i.jsx)(o.Button, {
     variant: "primary",
     text: P.intl.string(P.t.qYXrkX),
     onClick: D
@@ -165,7 +165,7 @@ function B() {
         children: (0, i.jsxs)(U, {
             children: [(0, i.jsx)(g.ew, {
                 isCoachmark: !1,
-                renderCTAButtons: () => (0, i.jsx)(M, {}),
+                renderCTAButtons: () => (0, i.jsx)(G, {}),
                 headingClassName: L.EK,
                 titleTextVariant: "text-md/semibold",
                 titleClassName: L.cI,

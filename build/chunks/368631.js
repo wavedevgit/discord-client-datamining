@@ -38,13 +38,13 @@ var i = n(627968),
     P = n(307600),
     L = n(723702),
     D = n(809465),
-    G = n(517235),
-    M = n(81107),
+    M = n(517235),
+    G = n(81107),
     U = n(805577),
     k = n(782844),
     V = n(513664),
-    w = n(69435),
-    H = n(614651),
+    H = n(69435),
+    w = n(614651),
     B = n(891912),
     Y = n(115980),
     F = n(75698),
@@ -122,13 +122,13 @@ let eh = () => [a.M.CLIENT_THEMES_SETTINGS_BADGE, a.M.DEKSTOP_CUSTOM_APP_ICON_BA
             isStricterMessageRequestsEnabled: eP,
             hasLibraryApplication: eL,
             hasTOTPEnabled: eD,
-            developerMode: eG,
-            isAdultUser: eM,
+            developerMode: eM,
+            isAdultUser: eG,
             hasSecureFramesVerifiedUserIds: eU,
             hasIgnoredUsers: ek,
             hasBlockedUsers: eV,
-            hasAgeGatedFeature: ew,
-            isChatMentionSuggestionsSettingEnabled: eH,
+            hasAgeGatedFeature: eH,
+            isChatMentionSuggestionsSettingEnabled: ew,
             isHDRAccessibilitySettingExperimentEnabled: eB
         } = e;
         return Object.freeze({
@@ -167,7 +167,7 @@ let eh = () => [a.M.CLIENT_THEMES_SETTINGS_BADGE, a.M.DEKSTOP_CUSTOM_APP_ICON_BA
                 searchableTitles: [eu.intl.string(eu.t["/52UYy"]), eu.intl.string(eu.t.sK0dmH), eu.intl.string(eu.t.XxRj7f), eu.intl.string(eu.t.yNGjyK), eu.intl.string(eu.t.KPGVWl)],
                 section: ed.nc_.ACCOUNT,
                 parent: ec.H.ACCOUNT_PROFILE,
-                predicate: () => ew
+                predicate: () => eH
             },
             [ec.H.ACCOUNT_USERNAME]: {
                 searchableTitles: [eu.intl.string(eu.t["+JkHPw"])],
@@ -482,7 +482,7 @@ let eh = () => [a.M.CLIENT_THEMES_SETTINGS_BADGE, a.M.DEKSTOP_CUSTOM_APP_ICON_BA
                 section: ed.nc_.CONTENT_AND_SOCIAL,
                 searchableTitles: [eu.intl.string(eu.t.qFsx5q)],
                 parent: ec.H.PRIVACY_AND_SAFETY_CONTENT_CATEGORY,
-                predicate: () => ev && !eM && !eO
+                predicate: () => ev && !eG && !eO
             },
             [ec.H.PRIVACY_ENCRYPTION_VERIFIED_DEVICES_V2]: {
                 section: ed.nc_.DATA_AND_PRIVACY,
@@ -578,7 +578,7 @@ let eh = () => [a.M.CLIENT_THEMES_SETTINGS_BADGE, a.M.DEKSTOP_CUSTOM_APP_ICON_BA
                 ariaLabel: eu.intl.string(eu.t.Ipxkog),
                 searchableTitles: [eu.intl.string(eu.t.Ipxkog)],
                 label: eu.intl.string(eu.t.Ipxkog),
-                element: G.A,
+                element: M.A,
                 className: eg.D
             },
             [ec.H.GUILD_BOOSTING]: {
@@ -663,7 +663,7 @@ let eh = () => [a.M.CLIENT_THEMES_SETTINGS_BADGE, a.M.DEKSTOP_CUSTOM_APP_ICON_BA
                 searchableTitles: [eu.intl.string(eu.t["iHH+ky"])],
                 label: eu.intl.string(eu.t["iHH+ky"]),
                 ariaLabel: eu.intl.string(eu.t["iHH+ky"]),
-                element: H.Ay,
+                element: w.Ay,
                 newIndicator: (0, i.jsx)(ex, {}),
                 newIndicatorDismissibleContentTypes: eh()
             },
@@ -960,7 +960,7 @@ let eh = () => [a.M.CLIENT_THEMES_SETTINGS_BADGE, a.M.DEKSTOP_CUSTOM_APP_ICON_BA
                 section: ed.nc_.TEXT,
                 searchableTitles: [eu.intl.string(eu.t.uXQ2xT)],
                 parent: ec.H.CHAT_TEXT_BOX,
-                predicate: () => eH
+                predicate: () => ew
             },
             [ec.H.KEYBINDS]: {
                 section: ed.nc_.KEYBINDS,
@@ -993,7 +993,7 @@ let eh = () => [a.M.CLIENT_THEMES_SETTINGS_BADGE, a.M.DEKSTOP_CUSTOM_APP_ICON_BA
                 searchableTitles: [eu.intl.string(eu.t["8/udY0"])],
                 label: eu.intl.string(eu.t["8/udY0"]),
                 ariaLabel: eu.intl.string(eu.t["8/udY0"]),
-                element: w.A
+                element: H.A
             },
             [ec.H.SETTINGS_ADVANCED_DEVELOPER_MODE]: {
                 section: ed.nc_.ADVANCED,
@@ -1017,7 +1017,7 @@ let eh = () => [a.M.CLIENT_THEMES_SETTINGS_BADGE, a.M.DEKSTOP_CUSTOM_APP_ICON_BA
                 section: ed.nc_.ADVANCED,
                 searchableTitles: [eu.intl.string(eu.t.erOqlh)],
                 parent: ec.H.SETTINGS_ADVANCED,
-                predicate: () => eG
+                predicate: () => eM
             },
             [ec.H.PRIVATE_BROWSING_PERK]: {
                 section: ed.nc_.PRIVATE_BROWSING,
@@ -1343,7 +1343,7 @@ let eh = () => [a.M.CLIENT_THEMES_SETTINGS_BADGE, a.M.DEKSTOP_CUSTOM_APP_ICON_BA
             },
             [ec.H.SOCIAL_LINKS]: {
                 section: _.Fq.CUSTOM,
-                element: M.A
+                element: G.A
             },
             [ec.H.CLIENT_DEBUG_INFO]: {
                 section: _.Fq.CUSTOM,
