@@ -27,37 +27,37 @@ function _(e) {
         isTrial: _,
         isNextDisabled: x = !1
     } = e, {
-        paymentSources: P,
-        selectedPlan: S
+        paymentSources: S,
+        selectedPlan: P
     } = (0, o.P5)(), {
-        isGift: T,
-        claimableRewards: I
+        isGift: I,
+        claimableRewards: T
     } = (0, a.Pv)();
-    s = s ?? P;
+    s = s ?? S;
     let {
         variant: g,
-        text: j,
-        onClick: A,
+        text: A,
+        onClick: j,
         disabled: f
     } = h({
         onStepChange: t,
-        selectedPlanId: n = n ?? S?.id,
-        isGift: T,
-        claimableRewards: I,
+        selectedPlanId: n = n ?? P?.id,
+        isGift: I,
+        claimableRewards: T,
         paymentSources: s,
         shouldRenderUpdatedPaymentModal: m,
         isTrial: _,
         isNextDisabled: x
     }), M = i.useMemo(() => null != n && c.includes(n) ? [{
         variant: g,
-        text: j,
-        onClick: A,
+        text: A,
+        onClick: j,
         disabled: f
     }] : [{
         variant: "primary",
         text: E.intl.string(E.t.XqMe3N),
         disabled: !0
-    }], [g, j, A, f, n, c]);
+    }], [g, A, j, f, n, c]);
     return (0, l.jsx)(r.H7u, {
         leading: d && null != u ? (0, l.jsx)(p.A, {
             onClick: u
@@ -77,15 +77,15 @@ let h = e => {
         isNextDisabled: _ = !1
     } = e, h = (0, s.bG)([d.A], () => d.A.getPremiumTypeSubscription()), {
         step: x,
-        selectedPlan: P
+        selectedPlan: S
     } = (0, o.P5)(), {
-        hasEntitlements: S
-    } = (0, m.X)(n, l), T = null != h && null != h.paymentSourceId || Object.keys(r).length > 0 || S && !p;
-    var I = a ? E.intl.string(E.t.PDTjLN) : E.intl.string(E.t.XqMe3N),
+        hasEntitlements: P
+    } = (0, m.X)(n, l), I = null != h && null != h.paymentSourceId || Object.keys(r).length > 0 || P && !p;
+    var T = a ? E.intl.string(E.t.PDTjLN) : E.intl.string(E.t.XqMe3N),
         g = u.pn.ADD_PAYMENT_STEPS;
-    return T && (g = u.pn.REVIEW), (0, c.px)(P, l, i) && x !== u.pn.SELECT_FREE_SKU && (g = u.pn.SELECT_FREE_SKU), {
+    return I && (g = u.pn.REVIEW), (0, c.px)(S, l, i) && x !== u.pn.SELECT_FREE_SKU && (g = u.pn.SELECT_FREE_SKU), {
         variant: "primary",
-        text: I,
+        text: T,
         onClick: () => t(g),
         disabled: _
     }

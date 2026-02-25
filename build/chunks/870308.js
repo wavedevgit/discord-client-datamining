@@ -24,6 +24,7 @@ let _ = () => {
                     title: () => t.title,
                     body: () => t.body,
                     assetIds: t.decorations,
+                    avatarDecorationSkuIds: t.avatarDecorationSkuIds,
                     entrypointBackgroundStyle: t.refTargetBackground?.style
                 } : {
                     title: () => "",

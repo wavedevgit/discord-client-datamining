@@ -38,7 +38,7 @@ var i = n(627968),
     G = n(714206),
     U = n(641836),
     k = n(288604),
-    V = n(174872),
+    V = n(893160),
     H = n(509442);
 
 function w() {
@@ -126,9 +126,7 @@ function w() {
             } : null, a ? {
                 id: "3p",
                 title: P.intl.string(P.t.m7PucM),
-                description: P.intl.formatToPlainString(P.t["43kZKL"], {
-                    days: J - Q.getDate() + 1
-                }),
+                description: P.intl.format(P.t.zh1X7u, {}),
                 subscriptionRequired: !0,
                 pillText: P.intl.string(P.t.oW0eUd),
                 caption: (0, i.jsx)("img", {
@@ -136,12 +134,12 @@ function w() {
                     alt: "SteelSeries"
                 }),
                 backgroundAssetUrl: V.A,
-                progress: (Q.getDate() - 1) / J,
+                progress: Q.getDate() / J,
                 ctaText: P.intl.string(P.t.w7s5Qr),
                 onCtaClick: () => (0, C.uE)({
                     analyticsLocations: e
                 }),
-                blurTint: "#0c1b55"
+                blurTint: "#2E213D"
             } : null, {
                 id: b.vl,
                 title: P.intl.string(P.t.OLtTrt),

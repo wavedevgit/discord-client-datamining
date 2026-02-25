@@ -190,7 +190,7 @@ let l = {
         flags: e.number().required().description("Public user flags"),
         bot: e.bool().required().description("If a bot user."),
         avatar_decoration_data: e.object({
-            asset: e.string().required(),
+            asset: e.string().allow(null),
             skuId: e.string(),
             expiresAt: e.number()
         }).allow(null).description("Details about avatar decoration"),

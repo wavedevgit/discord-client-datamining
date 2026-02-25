@@ -25,16 +25,16 @@ let c = e => {
             size: l,
             canAnimate: c
         });
-        return (0, r.jsx)("img", {
+        return null != e ? (0, r.jsx)("img", {
             src: e,
-            alt: ""
-        })
+            alt: m.label
+        }) : null
     }
     if (m.type === a.R.PROFILE_EFFECT) {
         let e = m.thumbnailPreviewSrc;
         return (0, r.jsx)("img", {
             src: e,
-            alt: ""
+            alt: m.accessibilityLabel
         })
     }
     if (m.type === a.R.NAMEPLATE) {

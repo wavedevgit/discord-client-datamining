@@ -28,12 +28,12 @@ function x(e) {
         setSelectedPlanId: _,
         priceOptions: h,
         defaultPlanId: x,
-        hasPaymentSources: S
+        hasPaymentSources: P
     } = (0, d.P5)(), {
-        isGift: T,
-        claimableRewards: I
-    } = (0, u.Pv)(), g = T && null != I && I.length > 0, j = (0, s.V)(n);
-    return (0, l.jsx)(P, {
+        isGift: I,
+        claimableRewards: T
+    } = (0, u.Pv)(), g = I && null != T && T.length > 0, A = (0, s.V)(n);
+    return (0, l.jsx)(S, {
         selectSku: e => (function(e) {
             let {
                 activeSubscription: t,
@@ -55,13 +55,13 @@ function x(e) {
                     isGift: s,
                     skuId: n
                 }),
-                P = (0, p.vT)({
+                S = (0, p.vT)({
                     isTrial: x,
                     isGift: s,
                     selectedSkuId: n,
                     startedPaymentFlowWithPaymentSources: u
                 });
-            _ !== c.pn.WHAT_YOU_LOSE && P && (_ = c.pn.REVIEW, a((0, p.xT)(n, t, d))), i(_, {
+            _ !== c.pn.WHAT_YOU_LOSE && S && (_ = c.pn.REVIEW, a((0, p.xT)(n, t, d))), i(_, {
                 analyticsDataOverride: {
                     sku_id: n
                 }
@@ -71,8 +71,8 @@ function x(e) {
             newSkuId: e,
             setSelectedSkuId: i,
             handleStepChange: t,
-            isGift: T,
-            userTrialOffer: j,
+            isGift: I,
+            userTrialOffer: A,
             startedPaymentFlowWithPaymentSources: a.current,
             setSelectedPlanId: _,
             defaultPlanId: x
@@ -92,16 +92,16 @@ function x(e) {
         })({
             setSelectedPlanId: _,
             handleStepChange: t,
-            hasPaymentSources: S,
+            hasPaymentSources: P,
             setSelectedSkuId: i
         }),
-        isGift: T,
+        isGift: I,
         priceOptions: h,
         showPromotionalGiftBanner: g
     })
 }
 
-function P(e) {
+function S(e) {
     let {
         selectSku: t,
         isGift: n,

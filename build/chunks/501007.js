@@ -39,8 +39,8 @@ var s = i(503698),
     L = i(349563),
     b = i(90526),
     w = i(300542),
-    H = i(4382),
-    S = i(284951),
+    S = i(4382),
+    H = i(284951),
     U = i(788868),
     O = i(838541),
     G = i(518582),
@@ -91,7 +91,7 @@ function z(e) {
             variant: "text-sm/bold",
             className: V.tier2ApplicationHomeSubheader,
             children: D.intl.string(G.default.ItfIa5)
-        }), H.PV.map((e, i) => {
+        }), S.PV.map((e, i) => {
             let {
                 Icon: r,
                 getText: s
@@ -110,7 +110,7 @@ function W(e) {
     let {
         isApplicationHome: t,
         enablePremiumBrandRefresh: i
-    } = e, r = t && !i ? S.I4 : S.fB;
+    } = e, r = t && !i ? H.I4 : H.fB;
     return (0, n.jsx)(n.Fragment, {
         children: r.map((e, r) => {
             let {
@@ -238,17 +238,17 @@ function Q(e) {
     } = e, m = (0, l.bG)([C.default], () => C.default.locale), u = (0, l.bG)([f.A], () => f.A.affinities), x = !s && i && !r && u.length > 0, g = 3 === t || 0 === t && s && o, p = (() => {
         switch (t) {
             case 3:
-                return S.z9;
+                return H.z9;
             case 1:
-                return S.ku;
+                return H.ku;
             case 2:
-                return S.Qi;
+                return H.Qi;
             case 4:
-                return H.ro;
+                return S.ro;
             case 5:
-                return H.xs;
+                return S.xs;
             default:
-                return S.Oc
+                return H.Oc
         }
     })();
     return (0, n.jsxs)(n.Fragment, {
@@ -350,7 +350,7 @@ function X(e) {
         isModal: x = !1,
         priceOptions: C,
         showPromotionalGiftBanner: h = !1
-    } = e, I = (0, l.bG)([p.A], () => p.A.getPremiumTypeSubscription()), f = (0, l.bG)([g.default], () => g.default.getCurrentUser()), P = (0, N.V)(), w = P?.subscription_trial?.sku_id, H = I?.hasActiveTrial ? f?.premiumType : null, S = (0, A.ar)(), G = (0, R.O)(), D = (0, A.k5)(), V = null != w || null != H ? U.Vk.PREMIUM_TRIAL : null != G || D ? U.Vk.PREMIUM_DISCOUNT : null, B = (0, j.cg)(), Z = !u && S, J = (0, v.A)()?.planSelection, z = J?.getBackgroundImageUrl?.(), W = J?.getCardImageUrl?.(), Y = (0, M._)(), K = (0, o.qB)((0, d.Ay)()), q = K ? y.at.PREMIUM_TIER_2_OLD_GRADIENT_FILL_LIGHT_MODE : y.at.PREMIUM_TIER_2_WHITE_FILL, $ = (0, y.rm)(D, H, G, P, w), X = Z && !K ? k.on : void 0;
+    } = e, I = (0, l.bG)([p.A], () => p.A.getPremiumTypeSubscription()), f = (0, l.bG)([g.default], () => g.default.getCurrentUser()), P = (0, N.V)(), w = P?.subscription_trial?.sku_id, S = I?.hasActiveTrial ? f?.premiumType : null, H = (0, A.ar)(), G = (0, R.O)(), D = (0, A.k5)(), V = null != w || null != S ? U.Vk.PREMIUM_TRIAL : null != G || D ? U.Vk.PREMIUM_DISCOUNT : null, B = (0, j.cg)(), Z = !u && H, J = (0, v.A)()?.planSelection, z = J?.getBackgroundImageUrl?.(), W = J?.getCardImageUrl?.(), Y = (0, M._)(), K = (0, o.qB)((0, d.Ay)()), q = K ? y.at.PREMIUM_TIER_2_OLD_GRADIENT_FILL_LIGHT_MODE : y.at.PREMIUM_TIER_2_WHITE_FILL, $ = (0, y.rm)(D, S, G, P, w), X = Z && !K ? k.on : void 0;
     return (0, n.jsxs)("div", {
         className: a()(k.Nr, k.hA, m, {
             [k.J5]: Z,

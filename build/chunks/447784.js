@@ -20,47 +20,47 @@ let x = e => {
     let t, n, {
             skuId: s,
             user: x,
-            claimed: P,
-            onSelect: S,
-            selectedSkuId: T
+            claimed: S,
+            onSelect: P,
+            selectedSkuId: I
         } = e,
-        [I, g] = i.useState(null),
-        j = i.useCallback(e => {
+        [T, g] = i.useState(null),
+        A = i.useCallback(e => {
             g(e)
         }, []),
-        A = i.useMemo(() => ({
-            current: I
-        }), [I]),
+        j = i.useMemo(() => ({
+            current: T
+        }), [T]),
         {
             isHoveringOrFocusing: f
-        } = (0, u.A)(A),
-        M = !P && f,
+        } = (0, u.A)(j),
+        M = !S && f,
         {
             product: R
         } = (0, d.q)(s);
     if (null == R) return null;
-    let C = R.items[0];
-    return null == C ? null : ((0, c.T)(C) ? (n = a.R.AVATAR_DECORATION, t = (0, l.jsx)(m.i, {
-        item: C,
+    let y = R.items[0];
+    return null == y ? null : ((0, c.T)(y) ? (n = a.R.AVATAR_DECORATION, t = (0, l.jsx)(m.i, {
+        item: y,
         user: x,
         isHighlighted: M,
         avatarSize: o._3J.SIZE_96
-    })) : (0, p.F)(C) && (n = a.R.NAMEPLATE, t = (0, l.jsx)(E.A, {
-        nameplate: C,
+    })) : (0, p.F)(y) && (n = a.R.NAMEPLATE, t = (0, l.jsx)(E.A, {
+        nameplate: y,
         user: x,
         isHighlighted: M,
         size: "small"
     })), (0, l.jsx)(o.vN3, {
         children: (0, l.jsxs)(o.sqX, {
-            ref: j,
+            ref: A,
             "aria-label": R.name ?? "",
             onClick: () => {
-                null == s || null == S || P || S(s)
+                null == s || null == P || S || P(s)
             },
             className: r()(h._x, {
-                [h.Vp]: !P,
+                [h.Vp]: !S,
                 [h.mr]: M,
-                [h.md]: T === s
+                [h.md]: I === s
             }),
             children: [(0, l.jsx)("div", {
                 className: r()(h.VH, {
@@ -70,10 +70,10 @@ let x = e => {
                 children: null != t ? (0, l.jsxs)(l.Fragment, {
                     children: [(0, l.jsx)("div", {
                         className: r()(h.i1, {
-                            [h.Sf]: P
+                            [h.Sf]: S
                         }),
                         children: t
-                    }), P && (0, l.jsx)(o.rOg, {
+                    }), S && (0, l.jsx)(o.rOg, {
                         size: "custom",
                         width: 48,
                         height: 48,
@@ -88,7 +88,7 @@ let x = e => {
                     children: R.name
                 }), (0, l.jsx)(o.Text, {
                     variant: "text-sm/normal",
-                    children: P ? _.intl.string(_.t["6cfuDj"]) : _.intl.string(_.t.QQsaCc)
+                    children: S ? _.intl.string(_.t["6cfuDj"]) : _.intl.string(_.t.QQsaCc)
                 })]
             })]
         })

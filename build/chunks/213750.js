@@ -19,7 +19,7 @@ var i = n(627968),
     g = n(775602),
     E = n(793574),
     I = n(688810),
-    f = n(920064),
+    f = n(580314),
     C = n(379848),
     T = n(7584),
     N = n(821589),
@@ -109,8 +109,13 @@ let w = e => {
         let {
             displayOptions: t,
             assetId: n,
-            reducedMotion: r = !1
-        } = e, l = null != n ? (0, f.A)(n, h._3J.SIZE_80, !r) : void 0, a = t.title(), s = t.body?.(), o = null == s || "" === s;
+            avatarDecorationSkuId: r,
+            reducedMotion: l = !1
+        } = e, a = null != n || null != r ? (0, f.A)({
+            legacyAssetId: n,
+            skuId: r,
+            canAnimate: !l
+        }) : null, s = t.title(), o = t.body?.(), d = null == o || "" === o;
         return (0, i.jsxs)("div", {
             className: M.shopMarketingTooltipContent,
             children: [(0, i.jsx)("div", {
@@ -118,19 +123,19 @@ let w = e => {
                 children: (0, i.jsx)(h.euF, {
                     className: M.avatar,
                     src: t.imageSrc,
-                    avatarDecoration: l,
+                    avatarDecoration: a,
                     size: h._3J.SIZE_80,
                     "aria-hidden": !0
                 })
             }), (0, i.jsxs)("div", {
                 className: M.shopMarketingTooltipText,
                 children: [(0, i.jsx)(h.Heading, {
-                    variant: o ? "heading-sm/medium" : "heading-sm/bold",
-                    children: a
-                }), !o && (0, i.jsx)(h.Text, {
+                    variant: d ? "heading-sm/medium" : "heading-sm/bold",
+                    children: s
+                }), !d && (0, i.jsx)(h.Text, {
                     variant: "text-xs/normal",
                     className: M.marketingBadgeTooltipContent,
-                    children: s
+                    children: o
                 })]
             })]
         })
@@ -147,32 +152,37 @@ let w = e => {
             } = e,
             o = (0, c.bG)([g.A], () => g.A.useReducedMotion),
             [d, u] = r.useState(0),
-            [_, m] = r.useState(!1),
+            [_, m] = r.useState(0),
             [E, I] = r.useState(!1),
-            f = r.useRef(null),
-            C = r.useRef(null),
-            T = (0, p.Ay)(),
-            S = (0, A.Mw)(T);
-        _ ? S ? (t = l.entryPointBackgroundAssets?.srcDarkHovered, n = l.entrypointBackgroundStyle?.hovered?.dark) : (t = l.entryPointBackgroundAssets?.srcLightHovered, n = l.entrypointBackgroundStyle?.hovered?.light) : S ? (t = l.entryPointBackgroundAssets?.srcDark, n = l.entrypointBackgroundStyle?.resting?.dark) : (t = l.entryPointBackgroundAssets?.srcLight, n = l.entrypointBackgroundStyle?.resting?.light);
-        let x = r.useCallback(e => {
-                l.assetIds.length > 0 && u(e => (e + 1) % l.assetIds.length), m(!0);
-                let t = () => {
-                    I(B(f))
+            [f, C] = r.useState(!1),
+            T = r.useRef(null),
+            S = r.useRef(null),
+            x = (0, p.Ay)(),
+            v = (0, A.Mw)(x);
+        E ? v ? (t = l.entryPointBackgroundAssets?.srcDarkHovered, n = l.entrypointBackgroundStyle?.hovered?.dark) : (t = l.entryPointBackgroundAssets?.srcLightHovered, n = l.entrypointBackgroundStyle?.hovered?.light) : v ? (t = l.entryPointBackgroundAssets?.srcDark, n = l.entrypointBackgroundStyle?.resting?.dark) : (t = l.entryPointBackgroundAssets?.srcLight, n = l.entrypointBackgroundStyle?.resting?.light);
+        let y = r.useCallback(e => {
+                let t = l.assetIds;
+                null != t && t.length > 0 && u(e => (e + 1) % t.length);
+                let n = l.avatarDecorationSkuIds;
+                null != n && n.length > 0 && m(e => (e + 1) % n.length), I(!0);
+                let i = () => {
+                    C(B(T))
                 };
-                t(), C.current = requestAnimationFrame(t), e?.()
-            }, [l.assetIds.length]),
-            v = r.useCallback(e => {
-                m(!1), I(!1), null != C.current && (cancelAnimationFrame(C.current), C.current = null), e?.()
+                i(), S.current = requestAnimationFrame(i), e?.()
+            }, [l.assetIds, l.avatarDecorationSkuIds]),
+            b = r.useCallback(e => {
+                I(!1), C(!1), null != S.current && (cancelAnimationFrame(S.current), S.current = null), e?.()
             }, []);
         r.useEffect(() => () => {
-            null != C.current && cancelAnimationFrame(C.current)
+            null != S.current && cancelAnimationFrame(S.current)
         }, []);
-        let y = l.title();
+        let O = l.title();
         return (0, i.jsx)(h.STz, {
             "data-migration-pending": !0,
             text: (0, i.jsx)(V, {
                 displayOptions: l,
-                assetId: l.assetIds[d],
+                assetId: l.assetIds?.[d],
+                avatarDecorationSkuId: l.avatarDecorationSkuIds?.[_],
                 reducedMotion: o
             }),
             tooltipClassName: M.marketingBadgeTooltip,
@@ -180,23 +190,23 @@ let w = e => {
             delay: 100,
             allowOverflow: !0,
             hideOnClick: !1,
-            "aria-label": "string" == typeof y ? y : D.intl.string(D.t.rSXaxY),
+            "aria-label": "string" == typeof O ? O : D.intl.string(D.t.rSXaxY),
             children: e => (0, i.jsxs)(G, {
                 className: null != l.entryPointClassName ? (0, N.t)(M, l.entryPointClassName) : void 0,
                 ...s,
                 icon: l.entryPointIcon,
                 ...e,
-                onMouseEnter: () => x(e.onMouseEnter),
-                onMouseLeave: () => v(e.onMouseLeave),
+                onMouseEnter: () => y(e.onMouseEnter),
+                onMouseLeave: () => b(e.onMouseLeave),
                 children: [(0, i.jsx)("div", {
-                    ref: f,
+                    ref: T,
                     className: M.marketingButtonBackgroundNew,
                     style: {
                         background: n
                     },
                     children: null != t && (0, i.jsx)("img", {
                         src: t,
-                        className: a()(M.marketingButtonBackgroundImage, E && M.marketingButtonBackgroundImageFaded),
+                        className: a()(M.marketingButtonBackgroundImage, f && M.marketingButtonBackgroundImageFaded),
                         alt: "",
                         "aria-hidden": !0
                     })

@@ -32,10 +32,10 @@ function E() {
         }) : void 0,
         x = (0, d.gc)(E);
     null != x && (x.backgroundSize = "cover, auto", x.backgroundPosition = "right center, 0% 0%");
-    let P = (0, d.x)(x, h);
+    let S = (0, d.x)(x, h);
     return null == e || null == t ? null : (0, l.jsxs)("div", {
         className: m.qD,
-        style: P,
+        style: S,
         children: [(0, l.jsx)("div", {
             className: m.my,
             children: (0, l.jsx)(c.A, {

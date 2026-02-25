@@ -5,8 +5,8 @@ r.d(t, {
 var s = r(627968),
     i = r(64700),
     n = r(503698),
-    a = r.n(n),
-    l = r(397927),
+    l = r.n(n),
+    a = r(397927),
     o = r(898461),
     c = r(483968),
     d = r(713517),
@@ -25,8 +25,8 @@ let p = () => 80,
             isSelected: n = !1,
             ...o
         } = e;
-        return (0, s.jsx)(l.DUT, {
-            className: a()(g.eA, n ? g.wH : void 0, r),
+        return (0, s.jsx)(a.DUT, {
+            className: l()(g.eA, n ? g.wH : void 0, r),
             ...o,
             onClick: i,
             children: t
@@ -37,8 +37,8 @@ let p = () => 80,
             user: t,
             avatarDecoration: r,
             innerRef: n,
-            section: a,
-            canUsePremiumCollectibles: l,
+            section: l,
+            canUsePremiumCollectibles: a,
             isSelected: o = !1,
             ...u
         } = e, m = i.useRef(null), {
@@ -55,15 +55,15 @@ let p = () => 80,
             innerRef: n ?? m,
             isSelected: o,
             ...u,
-            children: [(0, s.jsx)("img", {
+            children: [null != p && (0, s.jsx)("img", {
                 className: g.Pw,
                 src: p,
                 alt: r.label
             }), (0, s.jsx)(c.A, {
                 skuId: r.skuId,
-                canUsePremiumCollectibles: l,
-                isPurchaseSection: a === x.wn.PURCHASE,
-                isPremiumSection: a === x.wn.PREMIUM_PURCHASE
+                canUsePremiumCollectibles: a,
+                isPurchaseSection: l === x.wn.PURCHASE,
+                isPremiumSection: l === x.wn.PREMIUM_PURCHASE
             })]
         })
     },
@@ -73,10 +73,10 @@ let p = () => 80,
             guild: r,
             pendingAvatarDecoration: i,
             selectedAvatarDecorationRef: n,
-            onSelect: a,
+            onSelect: l,
             onOpenShop: c
         } = e, d = (0, x.Ay)(), A = u.Ay.canUseCollectibles(t);
-        return (0, s.jsx)(l.a0_, {
+        return (0, s.jsx)(a.a0_, {
             fade: !0,
             className: g.p_,
             columns: 3,
@@ -101,12 +101,12 @@ let p = () => 80,
                         ...p
                     },
                     isSelected: null === i,
-                    onSelect: () => a(null),
-                    children: [(0, s.jsx)(l.KTN, {
+                    onSelect: () => l(null),
+                    children: [(0, s.jsx)(a.KTN, {
                         size: "md",
                         color: "currentColor",
                         className: g.Kk
-                    }), (0, s.jsx)(l.Text, {
+                    }), (0, s.jsx)(a.Text, {
                         variant: "text-xs/normal",
                         color: "text-strong",
                         children: (0, m.uZ)(t, r) ? h.intl.string(h.t.CHf9iJ) : h.intl.string(h.t.PoWNfe)
@@ -115,13 +115,13 @@ let p = () => 80,
                 if (f === x.ZK) return (0, s.jsxs)(_, {
                     style: p,
                     onSelect: c,
-                    children: [(0, s.jsx)(l.U1X, {
+                    children: [(0, s.jsx)(a.U1X, {
                         size: "custom",
                         width: 23,
                         height: 23,
                         color: "currentColor",
                         className: g.sV
-                    }), (0, s.jsx)(l.Text, {
+                    }), (0, s.jsx)(a.Text, {
                         variant: "text-xs/normal",
                         color: "text-strong",
                         children: h.intl.string(h.t.pWG4ze)
@@ -139,7 +139,7 @@ let p = () => 80,
                         innerRef: e ? n : void 0,
                         canUsePremiumCollectibles: A,
                         isSelected: e,
-                        onSelect: () => a(f)
+                        onSelect: () => l(f)
                     }, j)
                 }
                 return null
@@ -154,7 +154,7 @@ let p = () => 80,
                         ...t,
                         position: "absolute"
                     },
-                    children: (0, s.jsx)(l.Heading, {
+                    children: (0, s.jsx)(a.Heading, {
                         variant: "heading-md/semibold",
                         children: r
                     })
