@@ -79,11 +79,11 @@ let T = e => {
                 sections: e
             }
         }, [k]),
-        F = l.useRef(L);
+        X = l.useRef(L);
     l.useEffect(() => {
-        L !== F.current && (F.current = L, I?.())
+        L !== X.current && (X.current = L, I?.())
     }, [L, I]);
-    let X = l.useCallback((e, n) => {
+    let F = l.useCallback((e, n) => {
             let {
                 showAppIcon: t
             } = n;
@@ -138,11 +138,11 @@ let T = e => {
             } = e;
             return (0, i.jsx)(d.rXV, {
                 label: b.intl.string(b.t.V0w2ap),
-                children: t.map(e => X(e, {
+                children: t.map(e => F(e, {
                     showAppIcon: !0
                 }))
             }, n.id)
-        }, [X]),
+        }, [F]),
         H = l.useCallback(e => {
             let {
                 section: n,
@@ -170,11 +170,11 @@ let T = e => {
                     type: "icon",
                     icon: r
                 } : void 0,
-                children: t.map(e => X(e, {
+                children: t.map(e => F(e, {
                     showAppIcon: !1
                 }))
             }, n.id)
-        }, [T, X]),
+        }, [T, F]),
         Y = (0, i.jsx)(d.aK1, {
             id: "command-search",
             control: (e, n) => (0, i.jsx)(d.VPO, {
@@ -202,7 +202,7 @@ let T = e => {
         });
         else if (w)
             if (P) n = (0, i.jsxs)(i.Fragment, {
-                children: [Y, (0, i.jsx)(d.bXX, {}), M.map(e => X(e, {
+                children: [Y, (0, i.jsx)(d.bXX, {}), M.map(e => F(e, {
                     showAppIcon: !0
                 }))]
             });
@@ -226,7 +226,7 @@ let T = e => {
                     })]
                 })
             }
-        else n = M.map(e => X(e, {
+        else n = M.map(e => F(e, {
             showAppIcon: !0
         }));
         null != O && O.length > 0 && (n = (0, i.jsxs)(i.Fragment, {
@@ -239,7 +239,6 @@ let T = e => {
     return (0, i.jsx)(d.Drp, {
         id: "apps",
         label: b.intl.string(b.t.PHjkRE),
-        icon: C ? d.k9F : void 0,
         leadingAccessory: C ? {
             type: "icon",
             icon: d.k9F

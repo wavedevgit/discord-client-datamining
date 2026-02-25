@@ -23,8 +23,8 @@ var i = n(627968),
     S = n(363398),
     _ = n(880457),
     b = n(840088),
-    v = n(276887),
-    I = n(345254),
+    I = n(276887),
+    v = n(345254),
     x = n(734495),
     j = n(483768),
     T = n(522333),
@@ -167,12 +167,13 @@ function W(e) {
             commandTargetId: t.id,
             channel: n,
             guildId: void 0,
-            onHeightUpdate: et
+            onHeightUpdate: et,
+            showIcon: !0
         }),
-        ev = (0, k.A)(t, n),
-        eI = (0, N.A)(t, n),
-        ex = (0, v.A)(t, n),
-        ej = (0, I.A)(t, n),
+        eI = (0, k.A)(t, n),
+        ev = (0, N.A)(t, n),
+        ex = (0, I.A)(t, n),
+        ej = (0, v.A)(t, n),
         eT = (0, F.A)(t, n),
         eD = (0, G.A)(t),
         eM = (0, h.A)(t),
@@ -234,7 +235,7 @@ function W(e) {
         }), (0, i.jsxs)(r.rXV, {
             children: [em, ep, ef, eh]
         }), (0, i.jsxs)(r.rXV, {
-            children: [ey, eE, eS, e_, eb, ev, eI, ex, ej, eT, eM, eC]
+            children: [ey, eE, eS, e_, eb, eI, ev, ex, ej, eT, eM, eC]
         }), (0, i.jsxs)(r.rXV, {
             children: [eN, eO, eR, ee && eG, ee && eL, ew]
         }), ed ? (0, i.jsxs)(i.Fragment, {

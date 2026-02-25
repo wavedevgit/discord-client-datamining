@@ -28,8 +28,8 @@ function S(e, t) {
         saveRule: _,
         errorMessage: b
     } = (0, u.S)(), {
-        createNewEditingRule: v
-    } = (0, u.U)(), [I, x] = l.useState(!1), [j, T] = (0, o.H6)(t), {
+        createNewEditingRule: I
+    } = (0, u.U)(), [v, x] = l.useState(!1), [j, T] = (0, o.H6)(t), {
         rulesByTriggerType: D,
         updateRule: M
     } = (0, o.wP)(t), C = l.useMemo(() => D[E] ?? [], [D]), N = 0 === C.length, O = n > C.length && !N;
@@ -43,7 +43,7 @@ function S(e, t) {
     }
     let L = () => {
             null != t && ((0, r.Z_)(), m.A.open(t, p.BEX.GUILD_AUTOMOD), setTimeout(() => {
-                v(t, E, {
+                I(t, E, {
                     triggerMetadata: {
                         keywordFilter: [e],
                         regexPatterns: [],
@@ -116,7 +116,7 @@ function S(e, t) {
             icon: a.lmn
         },
         onFocus: () => {
-            I || (x(!0), T())
+            v || (x(!0), T())
         },
         children: P
     })

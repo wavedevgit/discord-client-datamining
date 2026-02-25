@@ -23,18 +23,18 @@ var i = n(627968),
 function S(e) {
     let {
         analyticsLocations: t
-    } = (0, c.Ay)(), n = e.interactionMetadata?.authorizing_integration_owners[a.b.USER_INSTALL], S = e.interactionMetadata?.authorizing_integration_owners[a.b.GUILD_INSTALL], _ = e.interactionMetadata?.user.id, b = (0, r.bG)([y.default], () => y.default.getUser(n)), v = (0, r.bG)([h.A], () => h.A.getGuild(S)), I = f.A.getChannel(e.channel_id), x = I?.getGuildId(), j = (0, r.bG)([y.default], () => y.default.getUser(_));
+    } = (0, c.Ay)(), n = e.interactionMetadata?.authorizing_integration_owners[a.b.USER_INSTALL], S = e.interactionMetadata?.authorizing_integration_owners[a.b.GUILD_INSTALL], _ = e.interactionMetadata?.user.id, b = (0, r.bG)([y.default], () => y.default.getUser(n)), I = (0, r.bG)([h.A], () => h.A.getGuild(S)), v = f.A.getChannel(e.channel_id), x = v?.getGuildId(), j = (0, r.bG)([y.default], () => y.default.getUser(_));
     if (l.useEffect(() => {
             null == b && null != n && (0, o.wz)(n)
         }, [b, n]), !(0, u._)(e)) return null;
     null == j && (j = new p.A(e.interactionMetadata?.user));
     let T = null;
-    if (null != v) {
-        let t = (0, m.Iv)(v, 18, !0);
+    if (null != I) {
+        let t = (0, m.Iv)(I, 18, !0);
         T = (0, i.jsx)(s.Drp, {
             disabled: !0,
             iconLeft: () => (0, i.jsx)(g.A, {
-                guild: v,
+                guild: I,
                 size: g.A.Sizes.MINI
             }),
             leadingAccessory: null != t ? {
@@ -42,7 +42,7 @@ function S(e) {
                 src: t
             } : void 0,
             id: "integration-owner",
-            label: v.name,
+            label: I.name,
             subtext: E.intl.formatToPlainString(E.t.ShLXXB, {
                 application: e.author.username
             })

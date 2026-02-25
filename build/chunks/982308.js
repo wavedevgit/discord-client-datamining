@@ -1,6 +1,6 @@
 /** chunk id: 982308, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => v
+    A: () => I
 });
 var i = n(627968);
 n(64700);
@@ -60,7 +60,7 @@ function b(e) {
     })
 }
 
-function v(e, t) {
+function I(e, t) {
     let n = (0, d.D6)(t.guild_id).filter(e => !(e.useSpriteSheet && _.indexOf(e.uniqueName ?? "") >= 0) && !f.Ay.isEmojiPremiumLocked({
         emoji: e,
         channel: t,

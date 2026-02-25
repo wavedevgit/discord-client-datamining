@@ -42,8 +42,8 @@ var l = t(311907),
     k = t(243949),
     L = t(972432),
     B = t(77544),
-    F = t(652215),
-    X = t(985018);
+    X = t(652215),
+    F = t(985018);
 let W = (0, d.A)((0, s.A)(function(e) {
     let {
         user: n,
@@ -51,7 +51,7 @@ let W = (0, d.A)((0, s.A)(function(e) {
         context: s,
         showChatItems: d = !0,
         showMediaItems: u = !1,
-        showChannelCallItems: F = !1,
+        showChannelCallItems: X = !1,
         showModalItems: W = !0,
         onSelect: H,
         onHeightUpdate: Y,
@@ -96,7 +96,7 @@ let W = (0, d.A)((0, s.A)(function(e) {
         location: "GroupDMUserContextMenu"
     }), ep = (0, _.A)({
         id: n.id,
-        label: X.intl.string(X.t["/AXYnE"])
+        label: F.intl.string(F.t["/AXYnE"])
     }), e_ = (0, B.A)(n.id), eE = (0, g.A)(n.id), ef = (0, A.A)(t.id), eb = (0, E.A)(n), ex = (0, m.A)(n.id), eT = (0, h.A)(t.id, n.id), ev = (0, C.A)({
         commandType: o.kc.USER,
         commandTargetId: n.id,
@@ -108,7 +108,7 @@ let W = (0, d.A)((0, s.A)(function(e) {
         "data-menu-migrated": !0,
         navId: "user-context",
         onClose: a.Z_,
-        "aria-label": X.intl.string(X.t.liqwPJ),
+        "aria-label": F.intl.string(F.t.liqwPJ),
         onSelect: H,
         onInteraction: K,
         children: [!ej && (0, i.jsxs)(i.Fragment, {
@@ -122,7 +122,7 @@ let W = (0, d.A)((0, s.A)(function(e) {
                 children: [!eC && er, eI]
             }), (0, i.jsx)(r.rXV, {
                 children: W && ec
-            }), F && (0, i.jsxs)(r.rXV, {
+            }), X && (0, i.jsxs)(r.rXV, {
                 children: [eT, ef, eE]
             }), (0, i.jsxs)(r.rXV, {
                 children: [u && ea, u && es, u && ed, u && ex, ev, W && eo, eu, eh, eA, W && em, W && eg]
@@ -132,5 +132,5 @@ let W = (0, d.A)((0, s.A)(function(e) {
         })]
     })
 }, {
-    object: F.ZSU.CONTEXT_MENU
+    object: X.ZSU.CONTEXT_MENU
 }), [u.A.CONTEXT_MENU, u.A.GROUP_DM_USER_MENU])

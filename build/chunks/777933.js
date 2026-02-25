@@ -1,13 +1,13 @@
 /** chunk id: 777933, original params: t,e,n (module,exports,require) **/
 n.d(e, {
-    A: () => y
+    A: () => A
 }), n(321073);
 var a = n(627968);
 n(64700);
 var i = n(397927),
     l = n(803316),
-    r = n(207133),
-    o = n(155078),
+    o = n(207133),
+    r = n(155078),
     s = n(954571),
     c = n(307600),
     d = n(723702),
@@ -15,12 +15,12 @@ var i = n(397927),
     u = n(179581),
     E = n(652215),
     T = n(985018);
-let A = /^(tel|sms|mailto):([^?;]+)/;
+let y = /^(tel|sms|mailto):([^?;]+)/;
 
-function y(t, e, n, y) {
-    let g = (0, r.A)(n?.getChannelId());
-    if (!d.isPlatformEmbedded || null == t || "" === t || g || y?.shouldHideMediaOptions === !0 || !(0, l.fW)(t)) return null;
-    let h = (0, o.E)(t),
+function A(t, e, n, A) {
+    let g = (0, o.A)(n?.getChannelId());
+    if (!d.isPlatformEmbedded || null == t || "" === t || g || A?.shouldHideMediaOptions === !0 || !(0, l.fW)(t)) return null;
+    let h = (0, r.E)(t),
         _ = t => {
             s.default.track(E.HAw.CONTEXT_MENU_LINK_COPIED, {
                 hostname: h,
@@ -39,7 +39,7 @@ function y(t, e, n, y) {
             }, n)
         },
         f = [],
-        N = t.match(A);
+        N = t.match(y);
     if (null != N) {
         let t = T.intl.string("mailto" === N[1] ? T.t.ZYLVKo : T.t["3zozoR"]);
         f.push((0, a.jsx)(i.Drp, {
@@ -67,6 +67,10 @@ function y(t, e, n, y) {
     }, "copy-native-link"), ...f, (0, a.jsx)(i.Drp, {
         id: "open-native-link",
         label: T.intl.string(T.t.wuRE8M),
+        leadingAccessory: {
+            type: "icon",
+            icon: i.WxK
+        },
         trailingIndicator: {
             type: "icon",
             icon: i.I9m

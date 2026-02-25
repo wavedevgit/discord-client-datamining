@@ -1,7 +1,7 @@
 /** chunk id: 519222, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     $b: () => O,
-    DT: () => I,
+    DT: () => v,
     Io: () => N,
     Le: () => C,
     Nw: () => R,
@@ -13,7 +13,7 @@ n.d(t, {
     r7: () => w,
     rS: () => M,
     u_: () => T,
-    vc: () => v,
+    vc: () => I,
     wF: () => L
 }), n(627968), n(64700), n(397927);
 var i = n(687709),
@@ -38,12 +38,12 @@ var o = n(118517),
     _ = n(145530),
     b = n(652215);
 
-function v(e) {
+function I(e) {
     let t = e.getGuildId();
     null != t && s.A.open(t, b.BEX.ENGAGEMENT)
 }
 
-function I(e, t, n) {
+function v(e, t, n) {
     (0, p.C)(n.shiftKey ? `${t.channel_id}-${t.id}` : t.id)
 }
 

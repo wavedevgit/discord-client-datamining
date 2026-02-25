@@ -112,9 +112,7 @@ function W(e) {
         ef = e_ && null == eA,
         eM = e_ && null != eA,
         eR = ef && null == z && !!e_ && eg?.subscriptionPeriodEnd == null,
-        {
-            enabled: ey
-        } = (0, m.T0)({
+        ey = (0, m.D7)({
             location: "premium_payment_plan_select_step"
         }),
         eC = i.useMemo(() => ({

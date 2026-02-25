@@ -35,7 +35,7 @@ function b(e, t) {
         color: "default",
         id: l.id ?? l.optionallyDiverseSequence ?? l.name,
         label: `:${l.name}:`,
-        icon: e => (0, i.jsx)(v, {
+        icon: e => (0, i.jsx)(I, {
             ...e,
             reducedMotionEnabled: n.enabled,
             emoji: l
@@ -84,7 +84,7 @@ function b(e, t) {
     })
 }
 
-function v(e) {
+function I(e) {
     let {
         emoji: t,
         reducedMotionEnabled: n,
