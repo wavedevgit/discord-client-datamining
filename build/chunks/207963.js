@@ -124,9 +124,9 @@ function v(t, e, n) {
             state: n
         }), !!s(n)), [t.customId, e.id, s]);
     return (0, o.Ay)(() => {
-        d(n)
+        null == l && d(n)
     }), {
-        state: l,
+        state: l ?? n ?? null,
         executeStateUpdate: d,
         isDisabled: !1,
         visualState: C.BB.NORMAL,
