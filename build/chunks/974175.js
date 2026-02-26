@@ -1,6 +1,6 @@
 /** chunk id: 974175, original params: e,t,r (module,exports,require) **/
 r.d(t, {
-    R: () => b,
+    R: () => v,
     f8: () => u,
     q7: () => D
 }), r(321073), r(134528), r(947204);
@@ -178,7 +178,7 @@ function g(e) {
 function F(e) {
     return e.toFixed(2)
 }
-let b = {
+let v = {
         audioJitterBuffer: !0,
         audioJitterDelay: !0,
         audioJitterTarget: !0,
@@ -207,9 +207,10 @@ let b = {
         videoJitterBuffer: !0,
         videoJitterDelay: !0,
         videoJitterTarget: !0,
-        voiceActivityDetectorProcessTime: !0
+        voiceActivityDetectorProcessTime: !0,
+        consecutiveStaticColorFrames: !0
     },
-    v = {
+    C = {
         accelerateRate: y,
         audioDetected: A,
         audioLevel: function(e) {
@@ -283,7 +284,7 @@ let b = {
             return e < t.length ? t[e] : "Unknown"
         }
     },
-    C = {
+    b = {
         audioLevel: function(e) {
             return Math.max(f(e), -100) + 100
         }
@@ -307,7 +308,7 @@ function D(e) {
         label: t,
         value: r,
         section: a
-    } = e, i = v[t] ?? x, s = C[t], c = l.iA[t] && (Array.isArray(r) && r.length > 0 && "number" == typeof r[0].value ? (0, n.jsx)(o.A, {
+    } = e, i = C[t] ?? x, s = b[t], c = l.iA[t] && (Array.isArray(r) && r.length > 0 && "number" == typeof r[0].value ? (0, n.jsx)(o.A, {
         converter: s,
         dataPoints: r,
         width: 300,

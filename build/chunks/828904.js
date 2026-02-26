@@ -20,14 +20,14 @@ var n = r(627968),
     f = r(412780),
     g = r(287809),
     F = r(427262),
-    b = r(974175),
-    v = r(731854),
-    C = r(485921),
+    v = r(974175),
+    C = r(731854),
+    b = r(485921),
     x = r(522759);
 let E = {
-    [v.r8.NO_OVERRIDE]: "None",
-    [v.r8.LOW]: "Low Quality Stream",
-    [v.r8.HIGH]: "High Quality Stream"
+    [C.r8.NO_OVERRIDE]: "None",
+    [C.r8.LOW]: "Low Quality Stream",
+    [C.r8.HIGH]: "High Quality Stream"
 };
 
 function D(e) {
@@ -81,7 +81,7 @@ function S(e) {
                     return r !== n ? void 0 === r ? 1 : void 0 === n ? -1 : r - n : f.iA[e] !== f.iA[t] ? f.iA[e] ? 1 : -1 : e > t ? 1 : -1
                 })) {
                 let r = e[t];
-                b.R[t] || void 0 === r || o.push((0, n.jsx)(b.q7, {
+                v.R[t] || void 0 === r || o.push((0, n.jsx)(v.q7, {
                     section: a,
                     label: t,
                     value: r
@@ -90,7 +90,7 @@ function S(e) {
             return (0, n.jsxs)("div", {
                 className: x.C2,
                 children: ["video" === e.type && null != r && null != a && null != i && (null != (l = i.get(r, a, e.ssrc)) ? (0, n.jsx)("div", {
-                    className: s()(C.tN, x.C2),
+                    className: s()(b.tN, x.C2),
                     children: (0, n.jsx)(p.A, {
                         streamId: l,
                         videoComponent: y.Ay.getMediaEngine().Video,
@@ -111,7 +111,7 @@ function S(e) {
                     onSelectionChange: e => {
                         u.z0(S, r, e)
                     },
-                    options: Object.values(v.r8).map(e => ({
+                    options: Object.values(C.r8).map(e => ({
                         id: e,
                         value: e,
                         label: E[e]
@@ -131,7 +131,7 @@ function S(e) {
             look: "brand",
             selectedItem: k,
             onItemSelect: B,
-            className: C.$H,
+            className: b.$H,
             children: M
         }), U, H]
     })

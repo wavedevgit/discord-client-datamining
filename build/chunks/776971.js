@@ -40,10 +40,10 @@ function S(t) {
         [v, D] = a.useState(null),
         [O, U] = a.useState(!1),
         [V, $] = a.useState(0),
+        F = a.useRef(null),
         L = a.useRef(null),
-        j = a.useRef(null),
-        F = s === C.w_.FAMILY_CENTER,
-        P = (0, b.a9)() && !F,
+        j = s === C.w_.FAMILY_CENTER,
+        P = (0, b.a9)() && !j,
         {
             verifyAgreementButtonText: W,
             verifyGateDescription: Y,
@@ -88,8 +88,8 @@ function S(t) {
             M(t)
         }, [M]),
         te = a.useCallback(() => {
-            j.current?.focus()
-        }, [j]),
+            L.current?.focus()
+        }, [L]),
         tn = a.useCallback(() => {
             A.A.showAgeVerificationGetStartedModal({
                 entryPoint: _.q1.NSFW_AGE_GATE
@@ -112,7 +112,7 @@ function S(t) {
             onClick: Z,
             variant: "secondary"
         }, {
-            text: W ?? k.intl.string(k.t["5B+npG"]),
+            text: W ?? k.intl.string(k.t.FDSSia),
             onClick: tn
         }],
         trackingProps: {
@@ -122,7 +122,7 @@ function S(t) {
             impressionType: u.ImpressionTypes.MODAL
         },
         ...tl
-    }) : S?.nsfwAllowed === !1 && (H || z) && !F ? (0, l.jsx)(c.ExpressiveModal, {
+    }) : S?.nsfwAllowed === !1 && (H || z) && !j ? (0, l.jsx)(c.ExpressiveModal, {
         title: k.intl.string(z ? k.t["H0SG/g"] : k.t.NEabBa),
         subtitle: k.intl.format(z ? k.t["6++3cX"] : k.t["2kHZes"], {
             helpURL: y.A.getArticleURL(N.MVz.AGE_GATE)
@@ -186,7 +186,7 @@ function S(t) {
                 onPopulated: te,
                 error: v,
                 value: I,
-                ref: L,
+                ref: F,
                 autoFocus: !0
             })
         })

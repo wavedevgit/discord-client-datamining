@@ -20,7 +20,7 @@ let g = (0, a.E2)(d.X.ACCOUNT_PROFILE_SETTING, {
                 e = (0, r.fk)(),
                 i = (0, o.j)("AccountProfileSetting"),
                 n = (0, s.Y2)();
-            return (e || i) && (t.push(S.intl.string(S.t["/52UYy"])), t.push(S.intl.string(S.t.sK0dmH)), t.push(S.intl.string(S.t.XxRj7f)), t.push(S.intl.string(S.t.yNGjyK)), t.push(S.intl.string(S.t.KPGVWl)), n && (t.push(S.intl.string(E.default.FTawSP)), t.push(S.intl.string(E.default["bD//cU"])), t.push(S.intl.string(E.default.SH6Tcv)))), t
+            return (e || i) && (t.push(S.intl.string(S.t["/52UYy"])), t.push(S.intl.string(S.t.sK0dmH)), t.push(S.intl.string(S.t.XxRj7f)), t.push(S.intl.string(S.t.DVywUB)), t.push(S.intl.string(S.t["9KiIz6"])), n && (t.push(S.intl.string(E.default.FTawSP)), t.push(S.intl.string(E.default["bD//cU"])), t.push(S.intl.string(E.default.SH6Tcv)))), t
         },
         Component: function() {
             let t = (0, l.bG)([u.default], () => u.default.getCurrentUser());

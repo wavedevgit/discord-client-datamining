@@ -19,9 +19,9 @@ var n = r(627968),
     f = r(917592),
     g = r(828904),
     F = r(522278),
-    b = r(974175),
-    v = r(731854),
-    C = r(985018),
+    v = r(974175),
+    C = r(731854),
+    b = r(985018),
     x = r(485921),
     E = r(522759);
 class D extends a.PureComponent {
@@ -40,7 +40,7 @@ class D extends a.PureComponent {
                 hostname: a
             },
             l = s().map(i, (e, t) => {
-                if ("receiverReports" !== t && (!r || "localAddress" !== t)) return (0, n.jsx)(b.q7, {
+                if ("receiverReports" !== t && (!r || "localAddress" !== t)) return (0, n.jsx)(v.q7, {
                     label: t,
                     value: e
                 }, t)
@@ -85,7 +85,7 @@ class D extends a.PureComponent {
             className: x._8,
             children: [(0, n.jsx)(o.Heading, {
                 variant: "heading-md/medium",
-                children: C.intl.string(C.t.wU9IN2) + (null != t ? " - " + t : "")
+                children: b.intl.string(b.t.wU9IN2) + (null != t ? " - " + t : "")
             }), (0, g.C6)(l), 0 === p.length ? null : (0, n.jsx)(o.cGx, {
                 className: E.SX
             }), (0, g.C6)(p)]
@@ -96,7 +96,7 @@ let R = l.Ay.connectStores([c.Ay, u.A, h.A, p.A], e => {
     let {
         context: t,
         index: r
-    } = e, n = c.Ay.getAllStats(t)[r], a = t === v.x.STREAM ? Object.values(p.A.getRTCConnections()).find(e => e.getMediaEngineConnectionId() === n.mediaEngineConnectionId) : null, i = a?.hostname ?? "";
+    } = e, n = c.Ay.getAllStats(t)[r], a = t === C.x.STREAM ? Object.values(p.A.getRTCConnections()).find(e => e.getMediaEngineConnectionId() === n.mediaEngineConnectionId) : null, i = a?.hostname ?? "";
     return {
         hidePersonalInformation: h.A.hidePersonalInformation,
         transport: null != n ? n.transport : null,

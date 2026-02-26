@@ -19,9 +19,9 @@ var n = r(627968),
     f = r(383501),
     g = r(412780),
     F = r(287809),
-    b = r(427262),
-    v = r(817006),
-    C = r(121614),
+    v = r(427262),
+    C = r(817006),
+    b = r(121614),
     x = r(663272),
     E = r(820931),
     D = r(307414),
@@ -66,7 +66,7 @@ function P(e, t, r, a, i) {
         }), null != y && l.push({
             section: (0, g.Xi)(e, S.zWA.CAMERA, r),
             label: N.intl.string(N.t["2AGBWH"]),
-            element: v.A,
+            element: C.A,
             elementProps: {
                 context: e,
                 index: r,
@@ -92,7 +92,7 @@ function P(e, t, r, a, i) {
                                 className: I.my
                             }), (0, n.jsx)("span", {
                                 className: I.Xh,
-                                children: c ?? b.Ay.getName(u)
+                                children: c ?? v.Ay.getName(u)
                             })]
                         })
                     })
@@ -134,7 +134,7 @@ function k() {
     } = (0, l.bG)([g.Ay], () => ({
         defaultStats: g.Ay.getAllStats(j.x.DEFAULT),
         streamStats: g.Ay.getAllStats(j.x.STREAM)
-    }), [], l.My), r = (0, l.bG)([f.A, y.A], () => y.A.getChannel(f.A.getChannelId())), i = e.concat(t).find(e => null != e.screenshare)?.screenshare, s = t.find(e => null != e.clips)?.clips, m = (0, l.bG)([h.A], () => h.A.theme), A = (0, p.NC)(), F = (0, l.bG)([g.Ay], () => g.Ay.getSection()), b = function(e) {
+    }), [], l.My), r = (0, l.bG)([f.A, y.A], () => y.A.getChannel(f.A.getChannelId())), i = e.concat(t).find(e => null != e.screenshare)?.screenshare, s = t.find(e => null != e.clips)?.clips, m = (0, l.bG)([h.A], () => h.A.theme), A = (0, p.NC)(), F = (0, l.bG)([g.Ay], () => g.Ay.getSection()), v = function(e) {
         let {
             defaultStats: t,
             streamStats: r,
@@ -156,7 +156,7 @@ function k() {
         })), null != s && (h.push(y), h.push({
             section: S.zWA.CLIPS,
             label: N.intl.string(N.t.MKrFKE),
-            element: C.A,
+            element: b.A,
             elementProps: {
                 clips: s
             }
@@ -193,6 +193,6 @@ function k() {
         sidebarTheme: A,
         section: F,
         onSetSection: d.c4,
-        sections: b
+        sections: v
     })
 }

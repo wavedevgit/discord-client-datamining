@@ -164,7 +164,7 @@ let eh = () => [a.M.CLIENT_THEMES_SETTINGS_BADGE, a.M.DEKSTOP_CUSTOM_APP_ICON_BA
                 parent: ec.H.ACCOUNT_PROFILE
             },
             [ec.H.ACCOUNT_AGE_GROUP]: {
-                searchableTitles: [eu.intl.string(eu.t["/52UYy"]), eu.intl.string(eu.t.sK0dmH), eu.intl.string(eu.t.XxRj7f), eu.intl.string(eu.t.yNGjyK), eu.intl.string(eu.t.KPGVWl)],
+                searchableTitles: [eu.intl.string(eu.t["/52UYy"]), eu.intl.string(eu.t.sK0dmH), eu.intl.string(eu.t.XxRj7f), eu.intl.string(eu.t.DVywUB), eu.intl.string(eu.t["9KiIz6"])],
                 section: ed.nc_.ACCOUNT,
                 parent: ec.H.ACCOUNT_PROFILE,
                 predicate: () => eH
