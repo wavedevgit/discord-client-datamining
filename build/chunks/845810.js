@@ -1,5 +1,4 @@
-/** chunk id: 845810, original params: e,t,a (module,exports,require) **/
-"use strict";
+/** chunk id: 845810, original params: e,t,n (module,exports,require) **/
 e.exports = {
     vk: "clickable_a3e8db",
     r9: "disabled_a3e8db",

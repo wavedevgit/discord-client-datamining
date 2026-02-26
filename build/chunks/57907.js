@@ -1,47 +1,47 @@
 /** chunk id: 57907, original params: t,n,e (module,exports,require) **/
 e.d(n, {
-    A: () => h
+    A: () => A
 });
 var i = e(627968);
 e(64700);
-var a = e(989349),
-    l = e.n(a),
-    r = e(311907),
-    s = e(397927),
-    d = e(392567),
+var l = e(989349),
+    r = e.n(l),
+    a = e(311907),
+    d = e(397927),
+    s = e(392567),
     o = e(152007),
     u = e(867455),
     c = e(995102),
-    A = e(985018);
+    g = e(985018);
 
-function h(t) {
-    let [n, e, a] = (0, r.yK)([o.A], () => [o.A.isMuted(t.id), o.A.getMuteConfig(t.id), o.A.hasJoined(t.id)]), h = (0, d.M)(e);
+function A(t) {
+    let [n, e, l] = (0, a.yK)([o.A], () => [o.A.isMuted(t.id), o.A.getMuteConfig(t.id), o.A.hasJoined(t.id)]), A = (0, s.M)(e);
 
-    function f(n) {
+    function h(n) {
         u.A.setNotificationSettings(t, {
             muted: n
         })
     }
-    return a ? n ? (0, i.jsx)(s.Drp, {
+    return l ? n ? (0, i.jsx)(d.Drp, {
         id: "unmute-channel",
-        label: t.isForumPost() ? A.intl.string(A.t["0JQfsP"]) : A.intl.string(A.t["Cq/TzF"]),
-        subtext: h,
-        action: () => f(!1)
-    }) : (0, i.jsx)(s.Drp, {
+        label: t.isForumPost() ? g.intl.string(g.t["0JQfsP"]) : g.intl.string(g.t["Cq/TzF"]),
+        subtext: A,
+        action: () => h(!1)
+    }) : (0, i.jsx)(d.Drp, {
         id: "mute-channel",
-        label: t.isForumPost() ? A.intl.string(A.t["nP+Ykd"]) : A.intl.string(A.t.bUUd8q),
-        action: () => f(!0),
+        label: t.isForumPost() ? g.intl.string(g.t["nP+Ykd"]) : g.intl.string(g.t.bUUd8q),
+        action: () => h(!0),
         children: (0, c.gv)().map(n => {
             let {
                 value: e,
-                label: a
+                label: l
             } = n;
-            return (0, i.jsx)(s.Drp, {
+            return (0, i.jsx)(d.Drp, {
                 id: `${e}`,
-                label: a,
+                label: l,
                 action: () => {
                     let n;
-                    return n = e > 0 ? l()().add(e, "second").toISOString() : null, void u.A.setNotificationSettings(t, {
+                    return n = e > 0 ? r()().add(e, "second").toISOString() : null, void u.A.setNotificationSettings(t, {
                         muted: !0,
                         mute_config: {
                             selected_time_window: e,
@@ -51,9 +51,9 @@ function h(t) {
                 }
             }, e)
         })
-    }) : (0, i.jsx)(s.Drp, {
+    }) : (0, i.jsx)(d.Drp, {
         id: "mute-disabled",
-        label: t.isForumPost() ? A.intl.string(A.t["nP+Ykd"]) : A.intl.string(A.t.bUUd8q),
+        label: t.isForumPost() ? g.intl.string(g.t["nP+Ykd"]) : g.intl.string(g.t.bUUd8q),
         disabled: !0
     })
 }

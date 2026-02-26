@@ -1,45 +1,45 @@
 /** chunk id: 40389, original params: t,n,e (module,exports,require) **/
 e.d(n, {
-    A: () => p
+    A: () => m
 });
 var i = e(627968),
-    a = e(64700),
-    l = e(735438),
-    r = e.n(l),
-    s = e(311907),
-    d = e(397927),
+    l = e(64700),
+    r = e(735438),
+    a = e.n(r),
+    d = e(311907),
+    s = e(397927),
     o = e(367513),
     u = e(313961),
     c = e(721592),
-    A = e(406704),
-    h = e(977997),
-    f = e(262763),
-    g = e(985018);
+    g = e(406704),
+    A = e(977997),
+    h = e(262763),
+    b = e(985018);
 
-function p(t) {
-    let n = (0, A._M)(t),
-        e = (0, s.bG)([h.A], () => h.A.isInChannel(t.id)),
-        l = (0, s.bG)([h.A], () => !r().isEmpty(h.A.getVoiceStatesForChannel(t.id))),
+function m(t) {
+    let n = (0, g._M)(t),
+        e = (0, d.bG)([A.A], () => A.A.isInChannel(t.id)),
+        r = (0, d.bG)([A.A], () => !a().isEmpty(A.A.getVoiceStatesForChannel(t.id))),
         {
-            needSubscriptionToAccess: p
+            needSubscriptionToAccess: m
         } = (0, c.A)(t.id),
-        v = (0, s.bG)([u.A], () => u.A.getChatOpen(t.id)),
-        b = a.useCallback(() => {
-            f.A.handleVoiceConnect({
+        p = (0, d.bG)([u.A], () => u.A.getChatOpen(t.id)),
+        f = l.useCallback(() => {
+            h.A.handleVoiceConnect({
                 channel: t,
                 connected: e,
-                needSubscriptionToAccess: p,
+                needSubscriptionToAccess: m,
                 locked: !1
             })
-        }, [t, e, p]);
+        }, [t, e, m]);
     return e || !n ? null : (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(d.Drp, {
+        children: [(0, i.jsx)(s.Drp, {
             id: "join-thread-voice",
-            label: l ? g.intl.string(g.t["0D/6Rz"]) : g.intl.string(g.t.My50nf),
-            action: b
-        }), l && !v && (0, i.jsx)(d.Drp, {
+            label: r ? b.intl.string(b.t["0D/6Rz"]) : b.intl.string(b.t.My50nf),
+            action: f
+        }), r && !p && (0, i.jsx)(s.Drp, {
             id: "open-chat",
-            label: g.intl.string(g.t.ZXxLQg),
+            label: b.intl.string(b.t.ZXxLQg),
             action: () => {
                 o.A.updateChatOpen(t.id, !0)
             }

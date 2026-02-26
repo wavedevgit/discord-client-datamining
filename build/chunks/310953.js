@@ -19,7 +19,7 @@ function A(e) {
         withVoiceChannels: t = !1,
         withCurrentVoiceChannel: n = !1
     } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, i = arguments.length > 2 ? arguments[2] : void 0;
-    return I(e === u.Vc || e === c.YYv ? (0, s.g)() : a.A.getGuildWithoutChangingGuildActionRows(e).guildChannels, {
+    return E(e === u.Vc || e === c.YYv ? (0, s.g)() : a.A.getGuildWithoutChangingGuildActionRows(e).guildChannels, {
         currentVoiceChannelId: _.A.getVoiceChannelId(),
         selectedChannelId: _.A.getChannelId()
     }, {
@@ -39,7 +39,7 @@ function g(e, t, n) {
         currentVoiceChannelId: _.A.getVoiceChannelId(),
         selectedChannelId: _.A.getChannelId()
     }));
-    return (0, i.useMemo)(() => I(t, {
+    return (0, i.useMemo)(() => E(t, {
         currentVoiceChannelId: A,
         selectedChannelId: g
     }, {
@@ -48,7 +48,7 @@ function g(e, t, n) {
     }, l).map(e => e.id), [t, n, c, u])
 }
 
-function I(e, t) {
+function E(e, t) {
     let {
         currentVoiceChannelId: n,
         selectedChannelId: i

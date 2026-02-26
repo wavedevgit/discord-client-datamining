@@ -1,7 +1,7 @@
 /** chunk id: 93055, original params: e,n,t (module,exports,require) **/
 t.d(n, {
     Af: () => h,
-    CJ: () => v,
+    CJ: () => p,
     Fe: () => g,
     Rm: () => m,
     pe: () => f
@@ -13,21 +13,23 @@ t(734057);
 var l = t(808728),
     d = t(967198);
 t(661191);
-var s = t(181079),
-    c = t(924703),
-    u = t(781489),
+var c = t(181079),
+    s = t(616075),
+    u = t(924703),
     o = t(652215);
 
 function f(e) {
     let {
-        isEnabled: n,
-        hasStaffPrivileges: t
-    } = (0, u.e)("useCanFavoriteChannel"), r = (0, a.bG)([s.A], () => s.A.isFavorite(e.id)), i = e.isThread();
+        enabled: n,
+        hasHigherPrivileges: t
+    } = (0, s.e)({
+        location: "useCanFavoriteChannel"
+    }), r = (0, a.bG)([c.A], () => c.A.isFavorite(e.id)), i = e.isThread();
     return n && !__OVERLAY__ && !r && (!i || t)
 }
 
 function h(e) {
-    return (0, a.bG)([s.A], () => s.A.getFavorite(e))
+    return (0, a.bG)([c.A], () => c.A.getFavorite(e))
 }
 
 function m() {
@@ -41,8 +43,8 @@ function g() {
     return (0, a.bG)([d.A], () => d.A.getGuildId()) === o.YYv
 }
 
-function v() {
-    let e = (0, c.T)(),
+function p() {
+    let e = (0, u.T)(),
         n = r.useCallback(() => {}, [e]),
         t = r.useCallback(() => {}, [e]);
     return {

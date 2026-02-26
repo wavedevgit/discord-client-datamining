@@ -1,5 +1,4 @@
-/** chunk id: 975347, original params: e,t,a (module,exports,require) **/
-"use strict";
+/** chunk id: 975347, original params: e,t,n (module,exports,require) **/
 e.exports = {
     xP: "giftButton__82222",
     Nq: "innerGiftButton__82222",

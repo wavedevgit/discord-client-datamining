@@ -1,78 +1,77 @@
-/** chunk id: 972387, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    A: () => h
+/** chunk id: 972387, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    A: () => c
 });
-var i = n(73153),
-    s = n(846293),
-    l = n(159001),
-    r = n(960736),
-    a = n(253932),
-    o = n(954571),
-    c = n(4274),
-    d = n(115063),
-    u = n(652215);
-let h = {
+var n = i(73153),
+    l = i(846293),
+    r = i(159001),
+    d = i(960736),
+    a = i(253932),
+    o = i(954571),
+    u = i(4274),
+    s = i(115063),
+    _ = i(652215);
+let c = {
     acceptInvite(e) {
-        let t = s.Ay.getInviteContext("Desktop Invite Modal", e),
-            n = (0, r.tJ)(),
-            o = (0, r.Z1)(),
-            u = (0, r.N9)();
-        s.Ay.acceptInvite({
+        let t = l.Ay.getInviteContext("Desktop Invite Modal", e),
+            i = (0, d.tJ)(),
+            o = (0, d.Z1)(),
+            _ = (0, d.N9)();
+        l.Ay.acceptInvite({
             inviteKey: e.code,
             context: t,
             callback: e => {
-                null == e || null == e.guild || null == e.channel || __OVERLAY__ || s.Ay.transitionToInvite(e)
+                null == e || null == e.guild || null == e.channel || __OVERLAY__ || l.Ay.transitionToInvite(e)
             }
         }).then(() => {
             if (null != e.guild) {
                 if (o) {
                     if (a.$s.getSetting().includes(e.guild.id)) {
-                        let t = new Set((0, d.Tb)());
+                        let t = new Set((0, s.Tb)());
                         t.delete(e.guild.id), a.$s.updateSetting(Array.from(t))
                     }
                 } else {
-                    let t = new Set((0, d.Tb)());
+                    let t = new Set((0, s.Tb)());
                     t.add(e.guild?.id), a.$s.updateSetting(Array.from(t))
                 }
-                if (u) {
+                if (_) {
                     if (a.JG.getSetting().includes(e.guild.id)) {
-                        let t = new Set((0, d.Kk)());
+                        let t = new Set((0, s.Kk)());
                         t.delete(e.guild.id), a.JG.updateSetting(Array.from(t))
                     }
                 } else {
-                    let t = new Set((0, d.Kk)());
+                    let t = new Set((0, s.Kk)());
                     t.add(e.guild.id), a.JG.updateSetting(Array.from(t))
                 }
-                null != n && n.length > 0 && (0, l.GL)(e.guild.id, {
-                    nick: n
+                null != i && i.length > 0 && (0, r.GL)(e.guild.id, {
+                    nick: i
                 })
             }
             this.close()
         }, e => {
-            i.h.dispatch({
+            n.h.dispatch({
                 type: "INVITE_MODAL_ERROR",
-                message: (0, c.s)(e.code)
+                message: (0, u.s)(e.code)
             })
         })
     },
     close() {
-        let e = (0, r.p9)(),
-            t = (0, r.xD)();
-        if ((0, r.jJ)()) {
-            let n = (0, r.tJ)(),
-                i = (0, r.Z1)(),
-                s = (0, r.N9)(),
-                l = (0, r.qO)();
-            o.default.track(u.HAw.INVITE_ACCEPT_JOIN_SETTINGS_SET, {
+        let e = (0, d.p9)(),
+            t = (0, d.xD)();
+        if ((0, d.jJ)()) {
+            let i = (0, d.tJ)(),
+                n = (0, d.Z1)(),
+                l = (0, d.N9)(),
+                r = (0, d.qO)();
+            o.default.track(_.HAw.INVITE_ACCEPT_JOIN_SETTINGS_SET, {
                 invite_code: e,
                 guild_id: t,
-                nickname_present: null != n && n.length > 0,
-                dms_allowed: i,
-                activity_status_shown: s,
-                changed_from_default: l
+                nickname_present: null != i && i.length > 0,
+                dms_allowed: n,
+                activity_status_shown: l,
+                changed_from_default: r
             })
-        }(0, r.xP)(), i.h.dispatch({
+        }(0, d.xP)(), n.h.dispatch({
             type: "INVITE_MODAL_CLOSE"
         })
     }

@@ -1,6 +1,5 @@
-/** chunk id: 939041, original params: e,t,a (module,exports,require) **/
-"use strict";
-a.r(e.exports = {
+/** chunk id: 939041, original params: e,t,n (module,exports,require) **/
+n.r(e.exports = {
     actionsStreamPreview: "actionsStreamPreview__34f7d",
     actionsProfile: "actionsProfile__34f7d",
     actionsProfileV2: "actionsProfileV2__34f7d",

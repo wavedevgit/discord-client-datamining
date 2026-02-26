@@ -1,6 +1,6 @@
 /** chunk id: 395199, original params: t,n,e (module,exports,require) **/
 e.d(n, {
-    default: () => f
+    default: () => u
 });
 var i = e(627968),
     a = e(64700),
@@ -9,14 +9,14 @@ var i = e(627968),
     l = e(422258),
     s = e(985018);
 
-function f(t) {
+function u(t) {
     let {
         onClose: n,
         transitionState: e
-    } = t, [f, u] = a.useState("");
+    } = t, [u, f] = a.useState("");
     return (0, i.jsx)("form", {
         onSubmit: function(t) {
-            t.preventDefault(), (0, l.od)(f), n()
+            t.preventDefault(), (0, l.od)(u), n()
         },
         children: (0, i.jsx)(o.Modal, {
             title: s.intl.string(s.t["ISN+NM"]),
@@ -29,14 +29,14 @@ function f(t) {
                 variant: "primary",
                 type: "submit",
                 autoFocus: !1,
-                disabled: "" === f
+                disabled: "" === u
             }],
             transitionState: e,
             onClose: n,
             children: (0, i.jsx)(r.ksK, {
                 label: s.intl.string(s.t.OCAkGP),
-                value: f,
-                onChange: u,
+                value: u,
+                onChange: f,
                 maxLength: 100,
                 placeholder: s.intl.string(s.t.eTVbtx),
                 autoFocus: !0

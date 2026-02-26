@@ -4,35 +4,35 @@ e.d(n, {
 });
 var i = e(627968);
 e(64700);
-var a = e(311907),
-    l = e(397927),
-    r = e(152007),
-    s = e(867455),
-    d = e(607508),
+var l = e(311907),
+    r = e(397927),
+    a = e(152007),
+    d = e(867455),
+    s = e(607508),
     o = e(37411),
     u = e(985018);
 
 function c(t) {
-    let n = (0, d.X)(t);
-    return (0, a.bG)([r.A], () => r.A.hasJoined(t.id)) ? (0, i.jsx)(l.Drp, {
+    let n = (0, s.X)(t);
+    return (0, l.bG)([a.A], () => a.A.hasJoined(t.id)) ? (0, i.jsx)(r.Drp, {
         id: "thread-notifications",
         label: u.intl.string(u.t.h850Ss),
         children: (0, o.EU)().map(e => {
             let {
-                setting: a,
-                label: r
+                setting: l,
+                label: a
             } = e;
-            return (0, i.jsx)(l.iDA, {
+            return (0, i.jsx)(r.iDA, {
                 group: "thread-notifications",
-                id: `${a}`,
-                label: r,
-                action: () => s.A.setNotificationSettings(t, {
-                    flags: a
+                id: `${l}`,
+                label: a,
+                action: () => d.A.setNotificationSettings(t, {
+                    flags: l
                 }),
-                checked: a === n
-            }, a)
+                checked: l === n
+            }, l)
         })
-    }) : (0, i.jsx)(l.Drp, {
+    }) : (0, i.jsx)(r.Drp, {
         id: "notifications-disabled",
         label: u.intl.string(u.t.h850Ss),
         disabled: !0

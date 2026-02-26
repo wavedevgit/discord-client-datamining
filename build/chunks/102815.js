@@ -1,158 +1,175 @@
 /** chunk id: 102815, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    S: () => R
+    S: () => v
 });
 var r = n(627968),
     a = n(64700),
     l = n(503698),
     s = n.n(l),
     i = n(735438),
-    d = n(732955),
-    u = n(462887),
-    o = n(397927),
-    c = n(736653),
-    m = n(531260),
-    h = n(613566),
-    x = n(954571),
-    p = n(872725),
-    _ = n(857586),
-    f = n(788868),
-    g = n(652215),
-    N = n(985018),
-    b = n(355313);
-let R = e => {
+    d = n(110259),
+    u = n(732955),
+    o = n(462887),
+    c = n(397927),
+    m = n(736653),
+    h = n(139286),
+    p = n(531260),
+    x = n(914410),
+    _ = n(954571),
+    f = n(872725),
+    g = n(857586),
+    N = n(788868),
+    R = n(652215),
+    b = n(985018),
+    E = n(355313);
+let v = e => {
     let {
-        title: t,
-        description: n,
-        caption: l,
-        pillText: R,
-        primaryAsset: v,
-        primaryAssetClassName: A,
-        backgroundAssetUrl: C,
-        progress: T,
-        ctaText: j,
-        onCtaClick: y,
-        subscriptionRequired: P,
-        glowing: I,
-        progressGlowing: S = !1,
-        featured: O,
-        className: w,
-        blurTint: D
-    } = e, L = (0, c.DP)(), {
-        fractionalState: U
-    } = (0, m.A)(), M = a.useMemo(() => (0, i.debounce)(() => {
-        x.default.track(g.HAw.PREMIUM_MARKETING_WHAT_IS_NEW_CARD_HOVERED, {
-            card_type: (0, i.snakeCase)(t)
-        })
-    }, 800), [t]), B = a.useCallback(() => {
-        null != y && (y(), x.default.track(g.HAw.PERK_DISCOVERABILITY_CARD_CTA_CLICKED, {
-            card_type: (0, i.snakeCase)(t),
-            function_name: (0, i.snakeCase)(y.name)
-        }))
-    }, [y, t]), k = P && U === f.xc.FP_ONLY, G = !(0, i.isEmpty)(C), W = G && (0, u.q)(L), H = (0, o.rdh)(o.LU0.colors.BACKGROUND_BASE_LOW).hex(), V = k || !(0, i.isEmpty)(j);
-    return (0, r.jsx)(d.NPJ, {
-        theme: W ? g.NJ8.DARKER : void 0,
-        children: e => (0, r.jsxs)(p.A, {
-            onMouseEnter: M,
-            cardType: o.sl2.PRIMARY,
+        id: t,
+        title: n,
+        description: l,
+        caption: v,
+        pillText: C,
+        primaryAsset: T,
+        primaryAssetClassName: j,
+        backgroundAssetUrl: y,
+        progress: I,
+        ctaText: P,
+        onCtaClick: S,
+        subscriptionRequired: O,
+        glowing: D,
+        progressGlowing: w = !1,
+        featured: L,
+        className: U,
+        blurTint: M
+    } = e, B = (0, m.DP)(), {
+        fractionalState: k
+    } = (0, p.A)();
+    (0, h.A)({
+        type: d.ImpressionTypes.VIEW,
+        name: d.ImpressionNames.PERK_DISCOVERABILITY_CARD,
+        properties: {
+            name: t
+        }
+    });
+    let G = a.useMemo(() => (0, i.debounce)(() => {
+            _.default.track(R.HAw.PREMIUM_MARKETING_WHAT_IS_NEW_CARD_HOVERED, {
+                card_type: (0, i.snakeCase)(n)
+            })
+        }, 800), [n]),
+        W = a.useCallback(() => {
+            null != S && (S(), _.default.track(R.HAw.PERK_DISCOVERABILITY_CARD_CTA_CLICKED, {
+                card_type: (0, i.snakeCase)(n),
+                function_name: (0, i.snakeCase)(S.name)
+            }))
+        }, [S, n]),
+        H = O && k === N.xc.FP_ONLY,
+        V = !(0, i.isEmpty)(y),
+        Y = V && (0, o.q)(B),
+        F = (0, c.rdh)(c.LU0.colors.BACKGROUND_BASE_LOW).hex(),
+        K = H || !(0, i.isEmpty)(P);
+    return (0, r.jsx)(u.NPJ, {
+        theme: Y ? R.NJ8.DARKER : void 0,
+        children: e => (0, r.jsxs)(f.A, {
+            onMouseEnter: G,
+            cardType: c.sl2.PRIMARY,
             hueRotate: 25,
-            glowAmount: 5 * !!I,
-            blurAmount: 6 * !!I,
-            className: b.Ui,
-            cardClassName: s()(b.Nr, e, w, {
-                [b.j8]: O,
-                [b.Tn]: G
+            glowAmount: 5 * !!D,
+            blurAmount: 6 * !!D,
+            className: E.Ui,
+            cardClassName: s()(E.Nr, e, U, {
+                [E.j8]: L,
+                [E.Tn]: V
             }),
             cardStyle: {
-                backgroundImage: G ? `url(${C})` : void 0,
+                backgroundImage: V ? `url(${y})` : void 0,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 backgroundOrigin: "padding-box",
                 backgroundClip: "padding-box"
             },
-            children: [!(0, i.isEmpty)(R) && (0, r.jsx)(o.Text, {
+            children: [!(0, i.isEmpty)(C) && (0, r.jsx)(c.Text, {
                 variant: "text-xs/bold",
                 color: "badge-expressive-text-default",
-                className: b.Io,
-                children: R
+                className: E.Io,
+                children: C
             }), (0, r.jsxs)("div", {
-                className: b.qh,
-                children: [O && (0, r.jsx)("div", {
-                    className: b.gW,
+                className: E.qh,
+                children: [L && (0, r.jsx)("div", {
+                    className: E.gW,
                     "aria-hidden": "true",
-                    children: (0, r.jsx)(E, {
-                        asset: v,
-                        className: A
+                    children: (0, r.jsx)(A, {
+                        asset: T,
+                        className: j
                     })
-                }), (0, r.jsx)(E, {
-                    asset: v,
-                    className: A
+                }), (0, r.jsx)(A, {
+                    asset: T,
+                    className: j
                 })]
             }), (0, r.jsxs)("div", {
-                className: b.hQ,
+                className: E.hQ,
                 children: [(0, r.jsx)("div", {
-                    className: b.u_,
+                    className: E.u_,
                     style: {
-                        "--custom-tint-color": D ?? H
+                        "--custom-tint-color": M ?? F
                     },
                     "aria-hidden": !0
                 }), (0, r.jsxs)("div", {
-                    className: b.P_,
+                    className: E.P_,
                     tabIndex: 0,
-                    children: [k && (0, r.jsxs)("div", {
-                        className: b.d_,
-                        children: [(0, r.jsx)(o.tvc, {
+                    children: [H && (0, r.jsxs)("div", {
+                        className: E.d_,
+                        children: [(0, r.jsx)(c.tvc, {
                             size: "sm",
-                            color: o.LU0.colors.ICON_MUTED
-                        }), (0, r.jsx)(o.Text, {
+                            color: c.LU0.colors.ICON_MUTED
+                        }), (0, r.jsx)(c.Text, {
                             variant: "text-sm/normal",
                             color: "text-muted",
-                            children: N.intl.string(N.t.lHYDUu)
+                            children: b.intl.string(b.t.lHYDUu)
                         })]
-                    }), !(0, i.isEmpty)(l) && (0, r.jsx)("div", {
-                        className: b.OU,
-                        children: "string" == typeof l ? (0, r.jsx)(o.Text, {
+                    }), !(0, i.isEmpty)(v) && (0, r.jsx)("div", {
+                        className: E.OU,
+                        children: "string" == typeof v ? (0, r.jsx)(c.Text, {
                             variant: "text-sm/normal",
                             color: "text-muted",
-                            children: l
-                        }) : l
-                    }), (0, r.jsx)(o.Heading, {
+                            children: v
+                        }) : v
+                    }), (0, r.jsx)(c.Heading, {
                         variant: "heading-lg/semibold",
-                        children: t
-                    }), !(0, i.isEmpty)(n) && (0, r.jsxs)("div", {
-                        className: b.Wi,
-                        children: [(0, r.jsx)(o.Text, {
+                        children: n
+                    }), !(0, i.isEmpty)(l) && (0, r.jsxs)("div", {
+                        className: E.Wi,
+                        children: [(0, r.jsx)(c.Text, {
                             variant: "text-sm/normal",
                             color: "text-default",
-                            className: b.h_,
-                            children: n
-                        }), (0, r.jsx)(o.Text, {
+                            className: E.h_,
+                            children: l
+                        }), (0, r.jsx)(c.Text, {
                             variant: "text-sm/normal",
                             color: "text-default",
-                            className: b.XV,
+                            className: E.XV,
                             "aria-hidden": "true",
-                            children: n
+                            children: l
                         })]
-                    }), null != T && (0, r.jsx)("div", {
-                        className: b.oU,
-                        children: (0, r.jsx)(h.Ay, {
-                            variant: h.qP.BLUE,
-                            progress: (0, i.clamp)(T, 0, 1),
+                    }), null != I && (0, r.jsx)("div", {
+                        className: E.oU,
+                        children: (0, r.jsx)(x.Ay, {
+                            variant: x.qP.BLUE,
+                            progress: (0, i.clamp)(I, 0, 1),
                             maximum: 1,
-                            glowing: S
+                            glowing: w
                         })
-                    }), V && (0, r.jsx)("div", {
-                        className: b.Cj
+                    }), K && (0, r.jsx)("div", {
+                        className: E.Cj
                     })]
-                }), V && (0, r.jsxs)("div", {
-                    className: b.yk,
-                    children: [k && (0, r.jsx)(_.A, {
+                }), K && (0, r.jsxs)("div", {
+                    className: E.yk,
+                    children: [H && (0, r.jsx)(g.A, {
                         fullWidth: !0,
-                        defaultTextOverride: N.intl.string(N.t.sEAnVH)
-                    }), !k && (0, r.jsx)(d.$nd, {
-                        text: j,
-                        variant: !G && (0, u.q)(L) ? "primary" : "overlay-primary",
-                        onClick: B
+                        defaultTextOverride: b.intl.string(b.t.sEAnVH)
+                    }), !H && (0, r.jsx)(u.$nd, {
+                        text: P,
+                        variant: !V && (0, o.q)(B) ? "primary" : "overlay-primary",
+                        onClick: W
                     })]
                 })]
             })]
@@ -160,7 +177,7 @@ let R = e => {
     })
 };
 
-function E(e) {
+function A(e) {
     let {
         asset: t,
         className: n
@@ -168,7 +185,7 @@ function E(e) {
     return null == t || "" === t ? null : "string" == typeof t ? (0, r.jsx)("img", {
         src: t,
         alt: "",
-        className: s()(b.eq, n),
+        className: s()(E.eq, n),
         draggable: "false"
     }) : t
 }

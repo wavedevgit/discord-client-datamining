@@ -1,7 +1,7 @@
 /** chunk id: 194509, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => p,
-    U: () => x
+    A: () => x,
+    U: () => p
 });
 var r = n(627968);
 n(64700);
@@ -15,22 +15,22 @@ var a = n(503698),
     c = n(788868),
     m = n(985018),
     h = n(975347);
-let x = e => e === c.pe.TIER_0 ? m.intl.string(m.t.rk4Uu8) : m.intl.string(m.t.Ve9Ge6),
-    p = e => {
+let p = e => e === c.pe.TIER_0 ? m.intl.string(m.t.rk4Uu8) : m.intl.string(m.t.Ve9Ge6),
+    x = e => {
         let {
             className: t,
             textOptions: n,
             color: a,
             look: c,
             hideIcon: m,
-            subscriptionTier: p,
+            subscriptionTier: x,
             premiumModalAnalyticsLocation: _,
             giftMessage: f,
             onClick: g
-        } = e, N = (0, u.Ay)(), b = x(p);
+        } = e, N = (0, u.Ay)(), R = p(x);
         return (0, r.jsx)(o.A, {
             isGift: !0,
-            subscriptionTier: p,
+            subscriptionTier: x,
             premiumModalAnalyticsLocation: _,
             giftMessage: f,
             onClick: g,
@@ -51,7 +51,7 @@ let x = e => e === c.pe.TIER_0 ? m.intl.string(m.t.rk4Uu8) : m.intl.string(m.t.V
                         className: h.ez
                     }), (0, r.jsx)("span", {
                         className: l()(h._d, n?.textClassName),
-                        children: n?.textOverride ?? b
+                        children: n?.textOverride ?? R
                     })]
                 })
             }

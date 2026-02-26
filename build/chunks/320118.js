@@ -23,12 +23,12 @@ function u(e) {
         })),
         m = (0, i.q)(),
         h = (0, d.Q)(o, n),
-        x = (0, d.Y)(o, c, n);
+        p = (0, d.Y)(o, c, n);
     return {
         isEligible: n,
         isReady: u,
         passesGeneralUIInvariant: h,
-        passesProgressBarInvariant: x,
+        passesProgressBarInvariant: p,
         programReward: o,
         shouldFetch: m,
         totalDays: c

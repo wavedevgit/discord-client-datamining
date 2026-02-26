@@ -1,5 +1,4 @@
-/** chunk id: 268113, original params: e,t,n (module,exports,require) **/
-"use strict";
+/** chunk id: 268113, original params: e,t,_ (module,exports,require) **/
 e.exports = {
     kL: "container__6764b",
     kb: "left__6764b",

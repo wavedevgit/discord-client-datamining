@@ -1,5 +1,5 @@
-/** chunk id: 946974, original params: t,e,a (module,exports,require) **/
-a.d(e, {
+/** chunk id: 946974, original params: e,t,n (module,exports,require) **/
+n.d(t, {
     P: () => i
 });
 let i = "KEYBOARD_SHORTCUT_MODAL_KEY"

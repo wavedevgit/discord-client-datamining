@@ -1,5 +1,4 @@
-/** chunk id: 512147, original params: e,t,r (module,exports,require) **/
-"use strict";
+/** chunk id: 512147, original params: e,t,n (module,exports,require) **/
 e.exports = {
     q7: "arrowBounce__49676",
     wV: "updateIconForeground__49676",

@@ -1,75 +1,75 @@
-/** chunk id: 128450, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => m
+/** chunk id: 128450, original params: e,n,t (module,exports,require) **/
+t.d(n, {
+    A: () => h
 });
-var i = n(627968),
-    s = n(64700),
-    a = n(503698),
-    l = n.n(a),
-    r = n(397927),
-    o = n(453771),
-    c = n(450232),
-    d = n(212168),
-    u = n(189242);
+var r = t(627968),
+    i = t(64700),
+    a = t(503698),
+    l = t.n(a),
+    d = t(397927),
+    c = t(453771),
+    s = t(450232),
+    u = t(212168),
+    o = t(189242);
 
-function _(e) {
+function f(e) {
     let {
-        errors: t
+        errors: n
     } = e;
-    return (0, i.jsx)(i.Fragment, {
-        children: t.map((e, t) => (0, i.jsx)(r.Text, {
+    return (0, r.jsx)(r.Fragment, {
+        children: n.map((e, n) => (0, r.jsx)(d.Text, {
             variant: "text-xs/normal",
             color: "text-feedback-critical",
-            className: u.gJ,
+            className: o.gJ,
             children: e.replace(/[0-9.,]+ ?kb/g, e => {
-                let t = 1024 * parseInt(e, 10);
-                return isNaN(t) ? e : (0, o.Hb)(t)
+                let n = 1024 * parseInt(e, 10);
+                return isNaN(n) ? e : (0, c.Hb)(n)
             })
-        }, t))
+        }, n))
     })
 }
-let m = s.forwardRef(function(e, t) {
+let h = i.forwardRef(function(e, n) {
     let {
-        title: n,
-        titleIcon: s,
+        title: t,
+        titleIcon: i,
         titleId: a,
-        description: o,
-        children: m,
-        className: A,
+        description: c,
+        children: h,
+        className: m,
         errors: g,
-        disabled: h = !1,
-        hideDivider: x = !1,
-        showBorder: p = !1,
-        borderType: E,
-        hasBackground: C = !1,
-        forcedDivider: T = !1,
-        showPremiumIcon: S = !1
+        disabled: p = !1,
+        hideDivider: v = !1,
+        showBorder: x = !1,
+        borderType: _,
+        hasBackground: A = !1,
+        forcedDivider: b = !1,
+        showPremiumIcon: j = !1
     } = e;
-    return (0, i.jsx)("div", {
-        className: l()(u.fz, A, {
-            [u.r9]: h,
-            [u.Ai]: x,
-            [u.Ac]: p,
-            [u.Cx]: T
+    return (0, r.jsx)("div", {
+        className: l()(o.fz, m, {
+            [o.r9]: p,
+            [o.Ai]: v,
+            [o.Ac]: x,
+            [o.Cx]: b
         }),
-        ref: t,
-        children: (0, i.jsxs)(d.A, {
-            className: u.D6,
-            backgroundClassName: u.fr,
-            isShown: p,
-            type: E,
-            hasBackground: C,
-            children: [(0, i.jsxs)(r.zEo, {
-                className: u.DD,
+        ref: n,
+        children: (0, r.jsxs)(u.A, {
+            className: o.D6,
+            backgroundClassName: o.fr,
+            isShown: x,
+            type: _,
+            hasBackground: A,
+            children: [(0, r.jsxs)(d.zEo, {
+                className: o.DD,
                 id: a,
                 "data-migration-pending": !0,
-                children: [n, S && (0, i.jsx)(c.A, {}), s]
-            }), null != o ? (0, i.jsx)(r.ayl, {
-                type: r.ayl.Types.DESCRIPTION,
-                className: u.yV,
+                children: [t, j && (0, r.jsx)(s.A, {}), i]
+            }), null != c ? (0, r.jsx)(d.ayl, {
+                type: d.ayl.Types.DESCRIPTION,
+                className: o.yV,
                 "data-migration-pending": !0,
-                children: o
-            }) : null, m, null != g && (0, i.jsx)(_, {
+                children: c
+            }) : null, h, null != g && (0, r.jsx)(f, {
                 errors: g
             })]
         })

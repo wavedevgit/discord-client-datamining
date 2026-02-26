@@ -1,5 +1,4 @@
-/** chunk id: 298573, original params: e,t,r (module,exports,require) **/
-"use strict";
+/** chunk id: 298573, original params: e,t,n (module,exports,require) **/
 e.exports = {
     ZO: "channelHeader__06fb5",
     Kk: "icon__06fb5",

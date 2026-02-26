@@ -172,7 +172,7 @@ function es(e) {
         hideDms: t,
         scrollToTop: n,
         lurkingGuildIds: s
-    } = e, l = (0, N.A)(), r = (0, h.yK)([M.A, L.Ay], () => M.A.getGuildIds().filter(e => L.Ay.isCurrentUserGuest(e))), a = s.concat(r), {
+    } = e, l = (0, N.A)("TopSection"), r = (0, h.yK)([M.A, L.Ay], () => M.A.getGuildIds().filter(e => L.Ay.isCurrentUserGuest(e))), a = s.concat(r), {
         entrypoint: o
     } = (0, y.X8)({
         location: "GuildsBar"
@@ -230,7 +230,7 @@ function er(e) {
     } = (0, U.A)(), O = s.useRef(!1), [L] = s.useState(() => new p.Ep), M = s.useRef(null), V = s.useRef(null), {
         ref: B,
         ...H
-    } = (0, d.$y)(), F = (0, m.R7z)(), [W, z] = s.useState(!1), J = (0, m.rdh)(g.A.modules.guildbar.AVATAR_SIZE), Q = (0, m.rdh)(g.A.space.SPACE_XS), er = (0, N.A)(), {
+    } = (0, d.$y)(), F = (0, m.R7z)(), [W, z] = s.useState(!1), J = (0, m.rdh)(g.A.modules.guildbar.AVATAR_SIZE), Q = (0, m.rdh)(g.A.space.SPACE_XS), er = (0, N.A)("GuildsBar"), {
         pathname: ea
     } = (0, c.zy)(), {
         entrypoint: eo

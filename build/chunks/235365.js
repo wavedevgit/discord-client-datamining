@@ -14,8 +14,8 @@ var r = n(627968),
     c = n(954571),
     m = n(570627),
     h = n(128620),
-    x = n(652215),
-    p = n(723468),
+    p = n(652215),
+    x = n(723468),
     _ = n(985018),
     f = n(204593);
 let g = "orbs",
@@ -27,7 +27,7 @@ let g = "orbs",
             location: "PremiumTenureRewardsOrbsSection"
         }).enabled, {
             analyticsLocations: N
-        } = (0, u.Ay)(n), b = a.useRef(null), R = a.useRef(!1), {
+        } = (0, u.Ay)(n), R = a.useRef(null), b = a.useRef(!1), {
             passesGeneralUIInvariant: E,
             programReward: v
         } = (0, o.F)({
@@ -36,15 +36,15 @@ let g = "orbs",
         return E ? (0, r.jsx)(u.f5, {
             value: N,
             children: (0, r.jsx)(i.L, {
-                innerRef: b,
+                innerRef: R,
                 onChange: e => {
-                    e && !R.current && (R.current = !0, c.default.track(x.HAw.PREMIUM_TENURE_REWARDS_ORBS_SECTION_IMPRESSION, {
+                    e && !b.current && (b.current = !0, c.default.track(p.HAw.PREMIUM_TENURE_REWARDS_ORBS_SECTION_IMPRESSION, {
                         program_state: v?.program_current_state
                     }))
                 },
                 threshold: .5,
                 children: (0, r.jsxs)("div", {
-                    ref: b,
+                    ref: R,
                     id: g,
                     className: s()(f.uW, f.Uv, f.qr, t, {
                         [f.J4]: l
@@ -55,11 +55,11 @@ let g = "orbs",
                         style: {
                             textAlign: "start"
                         },
-                        children: _.intl.string(p.default.EdGvBM)
+                        children: _.intl.string(x.default.EdGvBM)
                     }), (0, r.jsx)(d.EYj, {
                         variant: l ? "text-md/medium" : "text-lg/normal",
                         className: s()(f.VA, f.dO),
-                        children: _.intl.string(p.default["2KoHRF"])
+                        children: _.intl.string(x.default["2KoHRF"])
                     }), (0, r.jsx)(h.A, {})]
                 })
             })

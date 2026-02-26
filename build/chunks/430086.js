@@ -2,7 +2,7 @@
 n.d(t, {
     Fv: () => A,
     GY: () => g,
-    M$: () => I,
+    M$: () => E,
     Oc: () => u,
     kF: () => c
 });
@@ -42,7 +42,7 @@ let c = {
         comboKeysBindGlobal: !0,
         action: () => ((0, a.OE)("keybind"), !1)
     },
-    I = {
+    E = {
         binds: (0, d.isMac)() || (0, d.isMacWeb)() ? ["mod+]"] : ["alt+right"],
         comboKeysBindGlobal: !0,
         action: () => ((0, a.Qb)("keybind"), !1)

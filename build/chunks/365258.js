@@ -1,12 +1,12 @@
 /** chunk id: 365258, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    AB: () => S,
+    AB: () => f,
     AI: () => u,
     Xc: () => C,
-    aM: () => E,
-    ae: () => m,
+    aM: () => I,
+    ae: () => S,
     g8: () => h,
-    gF: () => T,
+    gF: () => m,
     nm: () => g,
     vz: () => p
 });
@@ -33,14 +33,14 @@ function g(e) {
             return -1
     }
 }
-let I = new Map([
+let E = new Map([
     [r.KP.FRIENDS_AND_ALL_GUILDS, A.ACTIVITY_STATUS_OFF],
     [r.KP.FRIENDS_AND_SMALL_GUILDS, A.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS],
     [r.KP.FRIENDS_ONLY, A.ACTIVITY_STATUS_ON]
 ]);
 
-function E(e) {
-    return I.get(e) ?? A.ACTIVITY_STATUS_OFF
+function I(e) {
+    return E.get(e) ?? A.ACTIVITY_STATUS_OFF
 }
 
 function h(e, t) {
@@ -93,7 +93,7 @@ function p(e, t) {
     }
 }
 
-function m(e, t) {
+function S(e, t) {
     return {
         title: c.intl.string(e ? c.t.jRx1Aa : c.t.S0Y0bh),
         subtitle: c.intl.format(e ? c.t.Fs96LO : c.t.GcoYX8, {
@@ -104,11 +104,11 @@ function m(e, t) {
     }
 }
 
-function S(e) {
+function f(e) {
     return [...e].sort((e, t) => s.A.getScoreWithoutFetchingLatest(t) - s.A.getScoreWithoutFetchingLatest(e))
 }
 
-function T(e, t) {
+function m(e, t) {
     let n = (0, _.Kk)(),
         i = new Set(t);
     if ("restricting" === e) {

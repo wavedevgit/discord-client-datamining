@@ -4,32 +4,32 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var s = n(435371),
-    a = n(397927);
+var a = n(435371),
+    r = n(397927);
 
 function l(e) {
     let {
         value: t,
         onChange: n,
-        note: s,
+        note: a,
         title: l,
-        disabled: r
+        disabled: _
     } = e;
-    return (0, i.jsx)(a.dOG, {
+    return (0, i.jsx)(r.dOG, {
         checked: t,
         onChange: n,
-        disabled: r,
+        disabled: _,
         label: l,
-        description: s
+        description: a
     })
 }
 
-function r(e) {
+function _(e) {
     let {
         tooltipText: t,
         ...n
     } = e;
-    return (0, i.jsx)(s.m_, {
+    return (0, i.jsx)(a.m_, {
         text: t,
         asContainer: !0,
         align: "right",
@@ -44,7 +44,7 @@ function r(e) {
 }
 
 function o(e) {
-    return "tooltipText" in e && null != e.tooltipText ? (0, i.jsx)(r, {
+    return "tooltipText" in e && null != e.tooltipText ? (0, i.jsx)(_, {
         ...e
     }) : (0, i.jsx)(l, {
         ...e

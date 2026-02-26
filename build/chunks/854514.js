@@ -32,7 +32,7 @@ function y(e) {
     let {
         assetImage: t,
         assetVideo: n
-    } = e;
+    } = e, l = r.useMemo(() => (null != n ? (0, p.WV)(n.url) : null) ?? t.url, [n, t]);
     return null == n ? (0, i.jsxs)("div", {
         className: v.Tv,
         children: [(0, i.jsx)("div", {
@@ -72,11 +72,11 @@ function y(e) {
                     alt: n.altText,
                     className: v.LY,
                     asset: {
-                        url: t.url,
-                        mimetype: (0, p.vm)(t.url),
+                        url: l,
+                        mimetype: (0, p.vm)(l),
                         isAnimated: !1
                     },
-                    assetId: t.url
+                    assetId: l
                 },
                 videoAsset: {
                     alt: n.altText,

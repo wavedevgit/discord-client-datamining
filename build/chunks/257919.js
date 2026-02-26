@@ -1,5 +1,4 @@
-/** chunk id: 257919, original params: e,t,a (module,exports,require) **/
-"use strict";
+/** chunk id: 257919, original params: e,t,n (module,exports,require) **/
 e.exports = {
     N1: "headerContainer__4dd8e",
     TP: "headerEmpty__4dd8e",

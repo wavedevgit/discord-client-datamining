@@ -1,5 +1,4 @@
-/** chunk id: 301639, original params: e,t,a (module,exports,require) **/
-"use strict";
+/** chunk id: 301639, original params: e,t,n (module,exports,require) **/
 e.exports = {
     kL: "container__24a95",
     qq: "emojiContainer__24a95",

@@ -1,6 +1,6 @@
 /** chunk id: 44536, original params: e,n,t (module,exports,require) **/
 t.d(n, {
-    default: () => C
+    default: () => O
 });
 var r = t(627968);
 t(64700);
@@ -8,48 +8,48 @@ var i = t(397927),
     l = t(442433),
     a = t(358367),
     d = t(793574),
-    s = t(50268),
-    u = t(133238),
-    o = t(182061),
+    o = t(50268),
+    s = t(133238),
+    u = t(182061),
     c = t(886393),
     A = t(307623),
-    f = t(848977),
-    h = t(660273),
-    v = t(40389),
-    g = t(707792),
-    m = t(41402),
-    _ = t(990028),
-    b = t(271456),
-    p = t(200273),
+    h = t(848977),
+    f = t(660273),
+    _ = t(40389),
+    m = t(707792),
+    v = t(41402),
+    g = t(990028),
+    p = t(271456),
+    b = t(200273),
     j = t(565846),
     x = t(57907),
-    y = t(375500),
-    E = t(707653),
-    T = t(985018);
-let C = (0, a.A)(function(e) {
+    T = t(375500),
+    y = t(707653),
+    E = t(985018);
+let O = (0, a.A)(function(e) {
     let {
         channel: n,
         onSelect: t
-    } = e, a = (0, c.A)(n), d = (0, f.A)(n), C = (0, x.A)(n), O = (0, o.A)(n), M = (0, g.A)(n), R = (0, A.A)(n), G = (0, s.A)({
+    } = e, a = (0, c.A)(n), d = (0, h.A)(n), O = (0, x.A)(n), C = (0, u.A)(n), M = (0, m.A)(n), R = (0, A.A)(n), G = (0, o.A)({
         id: n.id,
-        label: T.intl.string(T.t.DQ797g)
-    }), D = (0, h.A)(n, "Context Menu"), N = (0, m.A)(n), S = (0, b.A)(n), U = (0, y.A)(n), L = (0, p.A)(n), w = (0, j.A)(n.id), P = (0, v.A)(n), V = (0, E.A)(n), F = (0, u.m)(n), I = (0, u.y)(n), X = (0, _.A)(n);
+        label: E.intl.string(E.t.DQ797g)
+    }), D = (0, f.A)(n, "Context Menu"), N = (0, v.A)(n), U = (0, p.A)(n), L = (0, T.A)(n), S = (0, b.A)(n), V = (0, j.A)(n.id), w = (0, _.A)(n), F = (0, y.A)(n), I = (0, s.m)(n), X = (0, s.y)(n), P = (0, g.A)(n);
     return (0, r.jsxs)(i.W1t, {
         "data-menu-migrated": !0,
         navId: "thread-context",
         onClose: l.Z_,
-        "aria-label": T.intl.string(T.t["1NBjqb"]),
+        "aria-label": E.intl.string(E.t["1NBjqb"]),
         onSelect: t,
         children: [(0, r.jsxs)(i.rXV, {
-            children: [d, F]
+            children: [d, I]
         }, "mark-as-read-or-favorite"), (0, r.jsxs)(i.rXV, {
-            children: [D, P, O, M, L, w, a]
+            children: [D, w, C, M, S, V, a]
         }, "thread-actions"), (0, r.jsxs)(i.rXV, {
-            children: [C, U]
+            children: [O, L]
         }, "notifications"), (0, r.jsxs)(i.rXV, {
-            children: [V, N, X, S, R]
+            children: [F, N, P, U, R]
         }, "admin-actions"), (0, r.jsx)(i.rXV, {
-            children: I
+            children: X
         }), (0, r.jsx)(i.rXV, {
             children: G
         }, "developer-actions")]

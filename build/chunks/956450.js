@@ -8,8 +8,8 @@ var S = I(397927),
     T = I(780964),
     C = I(840065),
     O = I(257110),
-    N = I(706069),
-    R = I(652215),
+    R = I(706069),
+    N = I(652215),
     e = I(531525),
     P = I(265626);
 let t = E => {
@@ -20,7 +20,7 @@ let t = E => {
         source: L
     } = E, D = (0, O.A)(), i = () => {
         I(), (0, C.openUserSettings)(T.X.ACCOUNT_PANEL, {
-            section: R.nc_.ACCOUNT,
+            section: N.nc_.ACCOUNT,
             subsection: e.H.PRIVACY_AND_SAFETY_STANDING
         })
     };
@@ -39,7 +39,7 @@ let t = E => {
         }), (0, A.jsx)(S.$mQ, {
             "data-migration-pending": !0,
             className: P.jE,
-            children: D ? (0, A.jsx)(S.y$y, {}) : (0, A.jsx)(N.A, {
+            children: D ? (0, A.jsx)(S.y$y, {}) : (0, A.jsx)(R.A, {
                 classificationId: t,
                 source: L,
                 onError: i,
