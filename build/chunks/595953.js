@@ -99,7 +99,7 @@ function N(t) {
                 emojiName: d,
                 className: c.Zg
             }), (0, n.jsx)(a.Text, {
-                variant: "text-xs/medium",
+                variant: "text-md/normal",
                 color: "text-strong",
                 className: c.dj,
                 children: null == e ? _.intl.string(_.t.PoWNfe) : i ? _.intl.format(_.t.B6HU6O, {
