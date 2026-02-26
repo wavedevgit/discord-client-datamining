@@ -75,6 +75,8 @@ let U = e => {
                         children: [(0, i.jsx)(l.PMB, {
                             onClick: () => S(O.i.UNKNOWN),
                             noticeType: U
+                        }), (0, i.jsx)("i", {
+                            className: D.TN
                         }), P.intl.string(P.t.lgwX26), (0, i.jsx)(l.Z_L, {
                             noticeType: U,
                             onClick: () => {
