@@ -1,19 +1,19 @@
-/** chunk id: 653793, original params: e,t,r (module,exports,require) **/
-r.d(t, {
+/** chunk id: 653793, original params: e,t,l (module,exports,require) **/
+l.d(t, {
     A: () => n
 });
-var l = r(627968),
-    d = r(503698),
-    c = r.n(d),
-    a = r(505295);
+var r = l(627968),
+    a = l(503698),
+    d = l.n(a),
+    c = l(505295);
 let n = e => {
     let {
         children: t,
-        overflowable: r = !1
+        overflowable: l = !1
     } = e;
-    return (0, l.jsx)("div", {
-        className: c()(a.N, {
-            [a.L]: r
+    return (0, r.jsx)("div", {
+        className: d()(c.N, {
+            [c.L]: l
         }),
         children: t
     })

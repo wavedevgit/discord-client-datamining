@@ -53,10 +53,10 @@ let k = {
                 id: e.id,
                 value: e,
                 label: e.name
-            })), [M, O] = n.useState(D.length > 0 ? D[0].value : null), [B, w] = n.useState(""), [V, L] = n.useState({
+            })), [M, O] = n.useState(D.length > 0 ? D[0].value : null), [B, V] = n.useState(""), [w, L] = n.useState({
                 plan_id: _.gD.PREMIUM_MONTH_TIER_2,
                 gift: "true"
-            }), G = "true" !== V.gift && null != k, [U, H] = n.useState(D.length > 0 ? D[0].value : null), {
+            }), G = "true" !== w.gift && null != k, [U, H] = n.useState(D.length > 0 ? D[0].value : null), {
                 analyticsLocations: $
             } = (0, x.Ay)(h.A.PAYMENT_FLOW_TEST_PAGE), [W, Y] = n.useState(""), [F, q] = n.useState(A.dJq), {
                 balance: K,
@@ -172,7 +172,7 @@ let k = {
                                     label: "Standalone: Trial Promotion Redemption",
                                     placeholder: "Promotion Code",
                                     value: B,
-                                    onChange: e => w(e)
+                                    onChange: e => V(e)
                                 }), (0, a.jsx)(o.m_, {
                                     text: "Need Promotion Code",
                                     shouldShow: B.length < 1,
@@ -190,7 +190,7 @@ let k = {
                             label: "Standalone: Gift/Subscription Purchase",
                             children: [(0, a.jsx)(c.l6P, {
                                 label: "Plan",
-                                value: V.plan_id,
+                                value: w.plan_id,
                                 options: [{
                                     id: "tier_2",
                                     value: _.gD.PREMIUM_MONTH_TIER_2,
@@ -214,7 +214,7 @@ let k = {
                                 fullWidth: !0
                             }), (0, a.jsx)(c.l6P, {
                                 label: "Type",
-                                value: V.gift,
+                                value: w.gift,
                                 options: [{
                                     id: "gift",
                                     value: "true",
@@ -242,7 +242,7 @@ let k = {
                                 disabled: G,
                                 onClick: () => {
                                     window.open(A.BVt.BILLING_PREMIUM_SUBSCRIBE + "?" + r.stringify({
-                                        ...V
+                                        ...w
                                     }))
                                 }
                             })

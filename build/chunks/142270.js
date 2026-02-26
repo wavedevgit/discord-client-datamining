@@ -49,7 +49,7 @@ let E = {
                 _ && M()
             }, [_, M]),
             B = (0, s.A)(null, O),
-            w = n.useMemo(() => (0, a.jsx)(x.b, {
+            V = n.useMemo(() => (0, a.jsx)(x.b, {
                 analyticsPage: v,
                 ctaText: l,
                 ctaOnClick: () => {
@@ -57,7 +57,7 @@ let E = {
                 },
                 linkText: S
             }), [v, l, S, M, r]),
-            V = n.useMemo(() => (0, a.jsx)(u.A, {
+            w = n.useMemo(() => (0, a.jsx)(u.A, {
                 targetElementRef: D,
                 shouldShow: _,
                 onRequestClose: M,
@@ -80,13 +80,13 @@ let E = {
                 },
                 onClick: M,
                 showNotificationBadge: t
-            }), P ? V : _ && (0, a.jsx)("div", {
+            }), P ? w : _ && (0, a.jsx)("div", {
                 className: i()(f.Ui, j, {
                     [f.R]: N,
                     [f.RK]: !N
                 }),
                 ref: B,
-                children: w
+                children: V
             })]
         })
     };

@@ -1,10 +1,10 @@
-/** chunk id: 264302, original params: e,t,r (module,exports,require) **/
-r.d(t, {
-    A: () => c
+/** chunk id: 264302, original params: e,t,l (module,exports,require) **/
+l.d(t, {
+    A: () => d
 });
-var l = r(627968);
-r(64700);
-var d = r(732955);
-let c = e => (0, l.jsx)(d.BJc, {
+var r = l(627968);
+l(64700);
+var a = l(732955);
+let d = e => (0, r.jsx)(a.BJc, {
     ...e
 })

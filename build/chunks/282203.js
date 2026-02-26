@@ -1,15 +1,15 @@
-/** chunk id: 282203, original params: e,t,r (module,exports,require) **/
-r.d(t, {
-    A: () => d
+/** chunk id: 282203, original params: e,t,l (module,exports,require) **/
+l.d(t, {
+    A: () => a
 });
-var l = r(627968);
-let d = e => {
+var r = l(627968);
+let a = e => {
     let {
         skuIds: t = [],
-        skuBlock: r,
-        componentMap: d
-    } = e, c = d[r];
-    return null == c ? null : t.map((e, t) => (0, l.jsx)(c, {
+        skuBlock: l,
+        componentMap: a
+    } = e, d = a[l];
+    return null == d ? null : t.map((e, t) => (0, r.jsx)(d, {
         skuId: e
     }, `${e}-${t}`))
 }

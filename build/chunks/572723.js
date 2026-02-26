@@ -15,8 +15,8 @@ var n = i(627968),
     h = i(521502),
     p = i(851023),
     x = i(349688),
-    f = i(914905),
-    v = i(176634),
+    v = i(914905),
+    f = i(176634),
     g = i(101555),
     b = i(386976),
     j = i(32523),
@@ -58,8 +58,8 @@ function L(e) {
             },
             rejectWithError: !0
         }).then(e => {
-            if (null != e.body && "a513c58ffaa2c16951542f33aea479369977a4a1" !== e.body.hash) {
-                let e = new Date("1772141253934"),
+            if (null != e.body && "b252405342e5a201391faaa7425358ed06b99c28" !== e.body.hash) {
+                let e = new Date("1772142000674"),
                     t = new Date,
                     i = (0, S.Tf)(t, e);
                 i.hours > 6 && ep(i.hours)
@@ -70,15 +70,15 @@ function L(e) {
             let e = _.default.getCurrentUser();
             return e?.isStaff() || e?.isStaffPersonal()
         }),
-        ef = (0, r.bG)([h.A], () => h.A.getCurrentBuildOverride().overrides?.discord_web),
+        ev = (0, r.bG)([h.A], () => h.A.getCurrentBuildOverride().overrides?.discord_web),
         {
-            overridesInfo: ev
+            overridesInfo: ef
         } = (0, j.hI)(),
         {
             overridesInfo: eg
         } = (0, b.op)(),
         eb = Object.entries({
-            ...ev,
+            ...ef,
             ...eg
         }).map(e => {
             let [t, {
@@ -105,7 +105,7 @@ function L(e) {
                 priority: D,
                 feature: e,
                 url: V,
-                buildOverride: ef?.id ?? null,
+                buildOverride: ev?.id ?? null,
                 experimentOverrides: eb
             }, !0 === U ? {
                 overridePlatformInformation: U,
@@ -138,7 +138,7 @@ function L(e) {
             behavior: "smooth",
             block: "end"
         })
-    }, [W]), (0, v.A)({
+    }, [W]), (0, f.A)({
         onPasteFiles: a.useCallback(e => {
             let t = Array.from(e).filter(e => e.type.startsWith("image/")).at(0);
             void 0 !== t && Y(e => e.some(e => e.filename === t.name && e.item.file?.size === t.size) ? e : [...e, new m.Ay({
@@ -172,7 +172,7 @@ function L(e) {
         children: (0, n.jsxs)("div", {
             children: [(0, n.jsxs)(d.BJc, {
                 gap: 8,
-                children: [null != ef && (0, n.jsxs)(d.wx6, {
+                children: [null != ev && (0, n.jsxs)(d.wx6, {
                     type: "critical",
                     children: [(0, n.jsx)(d.Heading, {
                         variant: "heading-md/medium",
@@ -181,11 +181,11 @@ function L(e) {
                         variant: "text-sm/normal",
                         children: E.intl.format(E.t["yY60+7"], {
                             buildOverrideHook: () => (0, n.jsx)("b", {
-                                children: ef?.id
+                                children: ev?.id
                             })
                         })
                     })]
-                }), null == ef && null != eh && (0, n.jsxs)(d.wx6, {
+                }), null == ev && null != eh && (0, n.jsxs)(d.wx6, {
                     type: "critical",
                     children: [(0, n.jsx)(d.Heading, {
                         variant: "heading-md/medium",
@@ -358,7 +358,7 @@ function L(e) {
                         children: W.length > 0 && W.map(e => (0, n.jsxs)("div", {
                             className: A.oh,
                             children: [(0, n.jsxs)("div", {
-                                children: [(0, n.jsx)(f.J, {
+                                children: [(0, n.jsx)(v.J, {
                                     size: x.L.SMALL,
                                     upload: e
                                 }), (0, n.jsx)("div", {

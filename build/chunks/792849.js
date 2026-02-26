@@ -34,8 +34,10 @@ let i = e => {
         component: e => {
             let {
                 columns: t,
-                gridItemColumns: l,
-                gridItemRows: o
+                perPage: l,
+                paginationPosition: o,
+                gridItemColumns: d,
+                gridItemRows: c
             } = e;
             return (0, r.jsxs)(r.Fragment, {
                 children: [(0, r.jsx)(a.Text, {
@@ -49,12 +51,14 @@ let i = e => {
                         marginTop: 24
                     },
                     children: (0, r.jsxs)(n.A, {
+                        perPage: l,
                         columns: t,
+                        paginationPosition: o,
                         children: [(0, r.jsx)(i, {
                             color: "red"
                         }), (0, r.jsx)(s.A, {
-                            columns: l,
-                            rows: o,
+                            columns: d,
+                            rows: c,
                             children: (0, r.jsx)(i, {
                                 color: "orange",
                                 children: (0, r.jsx)(a.Text, {
@@ -105,7 +109,11 @@ let i = e => {
                         }), (0, r.jsx)(i, {
                             color: "blue"
                         }), (0, r.jsx)(i, {
-                            color: "violet"
+                            color: "violet",
+                            children: (0, r.jsx)(a.Text, {
+                                variant: "text-lg/semibold",
+                                children: "Last Child"
+                            })
                         })]
                     })
                 })]
@@ -116,6 +124,23 @@ let i = e => {
                 label: "Columns",
                 type: "number",
                 defaultValue: 3
+            },
+            perPage: {
+                label: "Grid Items per Page (default, all)",
+                type: "number",
+                defaultValue: 3
+            },
+            paginationPosition: {
+                label: "Pagination Position",
+                type: "select",
+                defaultValue: "bottom",
+                options: [{
+                    label: "Top",
+                    value: "top"
+                }, {
+                    label: "Bottom",
+                    value: "bottom"
+                }]
             },
             gridItemColumns: {
                 label: "Grid Item Columns",

@@ -83,7 +83,7 @@ function w() {
     }, []);
     return (0, s.useMemo)(() => {
         let s = {
-                id: b.vc,
+                id: b.TENURE_BADGE_CARD_ID,
                 title: null != W ? P.intl.string(W.nameUnformattedNitro) : z ? P.intl.string(P.t.tx9Fvw) : "",
                 pillText: P.intl.string(P.t["jyYgZ+"]),
                 primaryAsset: null != q ? Z ? q.standard : q.ambientLarge : z ? G : null,
@@ -104,7 +104,7 @@ function w() {
                 })
             },
             c = [t ? {
-                id: b.Rt,
+                id: b.PREMIUM_GROUP_CARD_ID,
                 title: P.intl.string(y.default.YkvksF),
                 description: P.intl.formatToPlainString(y.default.JlyGQj, {
                     totalSeats: v.aw,
@@ -124,7 +124,7 @@ function w() {
                     })
                 }
             } : null, a ? {
-                id: "3p",
+                id: b.RECURRING_3P_PROMOTIONS_CARD_ID,
                 title: P.intl.string(P.t.m7PucM),
                 description: P.intl.format(P.t.zh1X7u, {}),
                 subscriptionRequired: !0,
@@ -141,7 +141,7 @@ function w() {
                 }),
                 blurTint: "#2E213D"
             } : null, {
-                id: b.vl,
+                id: b.DISPLAY_NAME_STYLES_CARD_ID,
                 title: P.intl.string(P.t.OLtTrt),
                 description: P.intl.string(P.t["di/pXR"]),
                 onCtaClick: w,
@@ -149,7 +149,7 @@ function w() {
                 ctaText: P.intl.string(P.t.jVcuVY),
                 pillText: P.intl.string(P.t.y2b7CA)
             }, {
-                id: b.kd,
+                id: b.CLIENT_THEMES_CARD_ID,
                 title: P.intl.string(P.t.acc6h6),
                 description: P.intl.formatToPlainString(P.t.WQazjs, {
                     themeCount: 20
@@ -160,7 +160,7 @@ function w() {
                     (0, m.nf)(m.HP.CUSTOM_THEME)
                 }
             }, {
-                id: b.BA,
+                id: b.PERMADECOS_CARD_ID,
                 title: P.intl.string(P.t.L14NZN),
                 description: P.intl.string(P.t.eCZkAI),
                 primaryAsset: (0, i.jsx)(r.u7P, {
@@ -170,7 +170,7 @@ function w() {
                 ctaText: P.intl.string(P.t.jVcuVY),
                 onCtaClick: B
             }, {
-                id: b.WL,
+                id: b.CUSTOM_APP_ICONS_CARD_ID,
                 title: P.intl.string(P.t.rkb1vA),
                 description: P.intl.string(P.t["1uPk1Z"]),
                 primaryAsset: k.A,
