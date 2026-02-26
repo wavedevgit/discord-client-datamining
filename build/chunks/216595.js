@@ -48,10 +48,10 @@ function p(e) {
     let {
         channel: t
     } = e, r = (0, o.bG)([E.A], () => E.A.getGuild(t.guild_id));
-    return null != r ? (0, s.jsx)(_.A, {
+    return null != r ? (0, s.jsx)(_.Ay, {
         className: f.Kk,
         guild: r,
-        size: _.A.Sizes.SMALLER,
+        size: _.Ay.Sizes.SMALLER,
         "aria-hidden": !0
     }) : t.isGroupDM() ? (0, s.jsx)(h.A, {
         channel: t,

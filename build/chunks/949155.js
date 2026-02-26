@@ -4,10 +4,10 @@ n.d(t, {
     B_: () => I,
     FC: () => A,
     Fk: () => j,
-    IK: () => T,
+    IK: () => y,
     PX: () => N,
     TZ: () => b,
-    ji: () => y,
+    ji: () => T,
     zN: () => C
 });
 var i = n(627968),
@@ -69,7 +69,7 @@ let A = 100,
         }) : null
     };
 
-function T(e) {
+function y(e) {
     let {
         invite: t,
         textClassName: n,
@@ -84,7 +84,7 @@ function T(e) {
     })
 }
 
-function y(e) {
+function T(e) {
     let {
         invite: t,
         showBigUserIcon: n

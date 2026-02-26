@@ -58,10 +58,10 @@ function x(e) {
         return null != t && e.unshift(t), e
     }, [v, x, t]), A = i.useCallback(e => {
         let n = e?.label === t?.label && e?.value === t?.value;
-        return null == e || "" === e.value || n ? null : (0, r.jsx)(s.A, {
+        return null == e || "" === e.value || n ? null : (0, r.jsx)(s.Ay, {
             className: p.c,
             guild: x[e.value],
-            size: s.A.Sizes.SMOL,
+            size: s.Ay.Sizes.SMOL,
             active: !0
         })
     }, [x, t]);

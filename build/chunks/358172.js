@@ -35,10 +35,10 @@ let p = function(e) {
         })
     }) : (0, i.jsxs)("div", {
         className: a()(t, x.bo),
-        children: [(0, i.jsx)(c.A, {
+        children: [(0, i.jsx)(c.Ay, {
             className: x.__invalid_guildIcon,
             guild: p,
-            size: c.A.Sizes.LARGER
+            size: c.Ay.Sizes.LARGER
         }), (0, i.jsxs)("div", {
             className: x.$g,
             children: [(0, i.jsx)(o.Text, {

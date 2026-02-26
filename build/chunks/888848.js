@@ -156,9 +156,9 @@ function M(e) {
                             children: P.intl.format(P.t["7ZD8p1"], {
                                 guildName: b.name
                             })
-                        }), (0, s.jsx)(p.A, {
+                        }), (0, s.jsx)(p.Ay, {
                             guild: b,
-                            size: p.A.Sizes.MINI
+                            size: p.Ay.Sizes.MINI
                         })]
                     })]
                 }) : (0, s.jsxs)("span", {

@@ -57,11 +57,11 @@ function A(e) {
     });
     return (0, i.jsxs)("div", {
         className: _.hz,
-        children: [(0, i.jsx)(c.A, {
+        children: [(0, i.jsx)(c.Ay, {
             className: _.al,
             iconSrc: s,
             guild: r,
-            size: c.A.Sizes.LARGE
+            size: c.Ay.Sizes.LARGE
         }), (0, i.jsxs)("div", {
             className: _.PY,
             children: [(0, i.jsx)(a.Heading, {

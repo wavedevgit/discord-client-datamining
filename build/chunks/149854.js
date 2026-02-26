@@ -1,6 +1,6 @@
 /** chunk id: 149854, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => g
 });
 var r = n(627968),
     l = n(64700),
@@ -15,36 +15,36 @@ var r = n(627968),
     m = n(744201),
     A = n(867060),
     _ = n(568065),
-    g = n(772574);
+    f = n(772574);
 
-function f(e) {
+function g(e) {
     let {
         guildId: t,
         powerup: n
-    } = e, [f, x] = l.useState(void 0);
-    (0, A.A)(f);
-    let [v, h] = l.useState(!1), j = (0, a.Ay)(t, n).type !== _.b_.INACTIVE, {
-        textColor: b
-    } = (0, m.A)(j), E = (0, o.M5)(t, "GuildPowerupPerkCard"), I = n.skuId === i.FB;
+    } = e, [g, x] = l.useState(void 0);
+    (0, A.A)(g);
+    let [v, h] = l.useState(!1), b = (0, a.Ay)(t, n).type !== _.b_.INACTIVE, {
+        textColor: j
+    } = (0, m.A)(b), E = (0, o.M5)(t, "GuildPowerupPerkCard"), I = n.skuId === i.FB;
     return (0, r.jsxs)(p.h, {
         onHover: e => h(e),
         guildId: t,
         powerup: n,
         badge: I && E ? "beta" : void 0,
         children: [(0, r.jsx)(c.l, {
-            className: g.Sl,
+            className: f.Sl,
             powerup: n,
             isHovering: v
         }), (0, r.jsx)(u.Ft, {
             title: n.title,
-            textColor: b,
+            textColor: j,
             footer: (0, r.jsx)(p.A, {
                 guildId: t,
                 powerup: n
             }),
             children: (0, r.jsx)(s.Text, {
-                className: g.h_,
-                color: b,
+                className: f.h_,
+                color: j,
                 variant: "text-sm/medium",
                 children: n.description
             })

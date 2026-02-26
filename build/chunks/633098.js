@@ -11,8 +11,8 @@ var i = n(627968),
     c = n(397927),
     d = n(775602),
     u = n(203982),
-    g = n(183555),
-    m = n(289173),
+    m = n(183555),
+    g = n(289173),
     x = n(958805),
     f = n(61881),
     p = n(384377),
@@ -26,10 +26,10 @@ function j(e) {
         className: t
     } = e, {
         trackUserProfileEditSaved: n
-    } = (0, g.NJ)(), [a, j] = l.useState(!1), v = (0, o.yK)([f.A], () => f.A.getSaveablePendingWidgets() ?? []), E = (0, o.yK)([f.A], () => f.A.getChangedWidgets()), T = (0, o.yK)([f.A], () => f.A.getRemovedWidgets()), b = (0, o.bG)([f.A], () => f.A.hasUnsavedChanges()), y = (0, o.bG)([f.A], () => f.A.canSaveChanges()), N = (0, o.bG)([f.A], () => f.A.isSubmitting), S = (0, o.bG)([d.A], () => d.A.useReducedMotion), C = (0, c.pnh)(b, {
+    } = (0, m.NJ)(), [a, j] = l.useState(!1), v = (0, o.yK)([f.A], () => f.A.getSaveablePendingWidgets() ?? []), E = (0, o.yK)([f.A], () => f.A.getChangedWidgets()), T = (0, o.yK)([f.A], () => f.A.getRemovedWidgets()), b = (0, o.bG)([f.A], () => f.A.hasUnsavedChanges()), y = (0, o.bG)([f.A], () => f.A.canSaveChanges()), N = (0, o.bG)([f.A], () => f.A.isSubmitting), C = (0, o.bG)([d.A], () => d.A.useReducedMotion), S = (0, c.pnh)(b, {
         from: {
             opacity: 0,
-            y: 80 * !S
+            y: 80 * !C
         },
         enter: {
             opacity: 1,
@@ -37,7 +37,7 @@ function j(e) {
         },
         leave: {
             opacity: 0,
-            y: 80 * !S
+            y: 80 * !C
         }
     });
     l.useEffect(() => {
@@ -65,7 +65,7 @@ function j(e) {
                         widgetEdited: e.type,
                         isWidgetRemoved: !1
                     };
-                    (0, m.fu)(e) && (t.gameIds = e.games.map(e => e.applicationId), t.tags = e.games.flatMap(e => e.tags ?? []).map(e => e.toString()), t.numCharactersCommentary = e.games.reduce((e, t) => e + (t.comment?.length ?? 0), 0)), n(t)
+                    (0, g.fu)(e) && (t.gameIds = e.games.map(e => e.applicationId), t.tags = e.games.flatMap(e => e.tags ?? []).map(e => e.toString()), t.numCharactersCommentary = e.games.reduce((e, t) => e + (t.comment?.length ?? 0), 0)), n(t)
                 }
                 for (let e of T) n({
                     widgetEdited: e.type,
@@ -76,7 +76,7 @@ function j(e) {
         R = l.useCallback(() => {
             x.A.clearPendingWidgets()
         }, []);
-    return C((e, n) => n ? (0, i.jsx)(r.animated.div, {
+    return S((e, n) => n ? (0, i.jsx)(r.animated.div, {
         className: t,
         style: e,
         children: (0, i.jsxs)("section", {

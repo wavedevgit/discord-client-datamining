@@ -31,9 +31,9 @@ function c(e) {
             })
         }), (0, i.jsx)("div", {
             className: d._C,
-            children: (0, i.jsx)(l.A, {
+            children: (0, i.jsx)(l.Ay, {
                 guild: c,
-                size: l.A.Sizes.XLARGE
+                size: l.Ay.Sizes.XLARGE
             })
         }), (0, i.jsx)(r.Heading, {
             variant: "heading-xl/semibold",

@@ -1,6 +1,6 @@
 /** chunk id: 657516, original params: t,e,l (module,exports,require) **/
 l.d(e, {
-    default: () => N
+    default: () => y
 });
 var n = l(627968),
     i = l(64700),
@@ -22,14 +22,14 @@ var n = l(627968),
     S = l(568065),
     f = l(985018),
     A = l(300440);
-let N = t => {
+let y = t => {
     let {
         guildBoostSlots: e,
         selectedGuild: l,
         locationSection: s,
-        intent: N,
-        transitionState: T,
-        onClose: y
+        intent: y,
+        transitionState: N,
+        onClose: T
     } = t, E = (0, C.D$)(m.A.boostSlots);
     r()(null != e || null != l, "Must either provide slots or an initial selected guild"), r()(!e?.some(t => t.isOnCooldown()), "If slots are provided, they must not be on cooldown");
     let b = [null == e ? "UNUSED_QUANTITY_SELECT" : null, null == l ? "GUILD_SELECT" : null, "CONFIRM", "SUCCESS"].filter(t => null != t),
@@ -45,7 +45,7 @@ let N = t => {
             return x.A.getGuild(e?.guildId)
         }).filter(t => null != t), [D]),
         F = i.useMemo(() => D?.[0]?.premiumGuildSubscription != null, [D]),
-        R = () => (y("SUCCESS" === L), h.default.track(v.HAw.MODAL_DISMISSED, {
+        R = () => (T("SUCCESS" === L), h.default.track(v.HAw.MODAL_DISMISSED, {
             type: v.JJy.PREMIUM_GUILD_SUBSCRIBE_MODAL,
             location_section: s
         }), Promise.resolve());
@@ -57,7 +57,7 @@ let N = t => {
     }, [s]);
     let O = {
         UNUSED_QUANTITY_SELECT: () => (r()(null != e || 0 !== E.length, "Cannot provide no slots if there are no other available slots"), (0, n.jsx)(a.Modal, {
-            transitionState: T,
+            transitionState: N,
             onClose: R,
             size: "md",
             title: f.intl.string(f.t["9FFrrT"]),
@@ -96,7 +96,7 @@ let N = t => {
             onSelectGuild: t => {
                 _(t), P("CONFIRM")
             },
-            transitionState: T,
+            transitionState: N,
             isTransfer: F,
             selectedSlotGuilds: B
         }),
@@ -120,14 +120,14 @@ let N = t => {
                                     id: e
                                 } = t;
                                 return e
-                            }), N === S.Pn.PERK), P("SUCCESS")
+                            }), y === S.Pn.PERK), P("SUCCESS")
                         } catch (t) {
                             G(!0)
                         }
                     }
                 }, o = F ? f.intl.string(f.t["PR0n//"]) : f.intl.string(f.t["7KP/fI"]);
             return (0, n.jsx)(a.Modal, {
-                transitionState: T,
+                transitionState: N,
                 onClose: R,
                 size: "md",
                 title: o,
@@ -174,7 +174,7 @@ let N = t => {
         SUCCESS() {
             let t = F ? f.intl.string(f.t["PR0n//"]) : f.intl.string(f.t["7KP/fI"]);
             return (0, n.jsx)(a.Modal, {
-                transitionState: T,
+                transitionState: N,
                 onClose: R,
                 size: "md",
                 title: t,

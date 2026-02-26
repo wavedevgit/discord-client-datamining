@@ -60,9 +60,9 @@ let _ = e => ({
                 leading: (e => {
                     if (null == e.value) return null;
                     let t = N[e.value];
-                    return null == t ? null : (0, l.jsx)(u.A, {
+                    return null == t ? null : (0, l.jsx)(u.Ay, {
                         guild: t,
-                        size: u.A.Sizes.SMALLER,
+                        size: u.Ay.Sizes.SMALLER,
                         active: !0
                     })
                 })(e),

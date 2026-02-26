@@ -67,10 +67,10 @@ function p(e) {
             children: u.intl.string(u.t.Eabu1z)
         }), (0, i.jsxs)("div", {
             className: h.bo,
-            children: [(0, i.jsx)(r.A, {
+            children: [(0, i.jsx)(r.Ay, {
                 guild: n,
                 active: !0,
-                size: r.A.Sizes.MEDIUM
+                size: r.Ay.Sizes.MEDIUM
             }), (0, i.jsxs)("div", {
                 className: h.bW,
                 children: [(0, i.jsxs)(s.Text, {

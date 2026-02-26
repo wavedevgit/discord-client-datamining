@@ -12,8 +12,8 @@ var l = n(503698),
     c = n(735321),
     d = n(451395),
     u = n(823016),
-    g = n(788593),
-    m = n(858808),
+    m = n(788593),
+    g = n(858808),
     x = n(685049),
     f = n(617086),
     p = n(985018),
@@ -73,18 +73,18 @@ function I(e) {
         isLoading: y
     } = (0, r.A)(t.applicationId), {
         registerDragHandleRef: N
-    } = (0, u.r)(), S = (0, f.A)(t.applicationId).length > 0, C = o.default.getCurrentUser(), k = C?.id === n, R = !I && k, {
+    } = (0, u.r)(), C = (0, f.A)(t.applicationId).length > 0, S = o.default.getCurrentUser(), k = S?.id === n, R = !I && k, {
         isDragging: w
     } = (0, s.V)(e => ({
         isDragging: e.isDragging()
-    })), O = () => (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(g.A, {
+    })), L = () => (0, i.jsxs)(i.Fragment, {
+        children: [(0, i.jsx)(m.A, {
             imageSrc: T,
             gameName: b,
             applicationId: t.applicationId,
             userId: n,
             disableInteraction: I,
-            className: a()(S ? _.kO : void 0, null == T || I ? void 0 : h.iL),
+            className: a()(C ? _.kO : void 0, null == T || I ? void 0 : h.iL),
             hideTooltip: w,
             coverRef: E
         }), R && (0, i.jsx)(d.jV, {
@@ -96,7 +96,7 @@ function I(e) {
             guildId: c,
             channelId: p,
             className: _.Ez
-        }), R && (0, i.jsx)(m.A, {
+        }), R && (0, i.jsx)(g.A, {
             game: t,
             widgetType: l,
             className: _.vS,
@@ -112,9 +112,9 @@ function I(e) {
         game: t,
         coverImageUrl: T,
         gameName: b,
-        children: O()
+        children: L()
     }) : (0, i.jsx)("div", {
         className: _.kL,
-        children: O()
+        children: L()
     })
 }

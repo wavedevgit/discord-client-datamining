@@ -28,8 +28,8 @@ var i = n(627968),
     S = n(442184),
     C = n(383302);
 n(829926);
-var T = n(491509),
-    y = n(895600),
+var y = n(491509),
+    T = n(895600),
     b = n(274303),
     R = n(942614),
     O = n(148864),
@@ -127,7 +127,7 @@ class ei extends s.PureComponent {
         V.default.track(Y.HAw.REGISTER_VIEWED, {
             location: null != t ? "Invite Register Page" : "Non-Invite Register Page",
             registration_source: this.registrationSource,
-            ...null != e ? (0, T.A)(e, !1, !1) : {}
+            ...null != e ? (0, y.A)(e, !1, !1) : {}
         }, {
             flush: !0
         }), null == this.props.consentRequired && p.A.getLocationMetadata(), (0, w.d)("register")
@@ -540,11 +540,11 @@ class ei extends s.PureComponent {
                 date_of_birth: C
             } = {}
         } = this.state, {
-            consentRequired: T,
-            authBoxClassName: y,
+            consentRequired: y,
+            authBoxClassName: T,
             hasLoggedInAccounts: b
         } = this.props, R = this.renderErrorMessage(), O = (0, i.jsx)(h.m, {
-            text: !d && T ? $.intl.string($.t.AY4IVA) : null,
+            text: !d && y ? $.intl.string($.t.AY4IVA) : null,
             children: (0, i.jsx)("div", {
                 className: ee.QX,
                 children: (0, i.jsx)(_.Button, {
@@ -684,7 +684,7 @@ class ei extends s.PureComponent {
         return t ? (0, i.jsx)(q.A, {
             onSubmit: this.handleSubmit,
             tag: "form",
-            className: l()(y, Z.Sy),
+            className: l()(T, Z.Sy),
             children: () => [B, (0, i.jsxs)("div", {
                 className: Z.Uu,
                 children: [(0, i.jsx)(v.hE, {
@@ -695,7 +695,7 @@ class ei extends s.PureComponent {
         }) : (0, i.jsxs)(v.Ay, {
             onSubmit: this.handleSubmit,
             tag: "form",
-            className: y,
+            className: T,
             children: [b ? (0, i.jsx)("div", {
                 className: Z.AX,
                 children: (0, i.jsx)(_.Button, {
@@ -718,7 +718,7 @@ class ei extends s.PureComponent {
             invite: s,
             guildTemplate: r
         } = this.props, l = null != s && null == s.guild && null == s.channel && null != s.inviter;
-        return null != s && t ? s.state === Y.elq.RESOLVING ? this.renderInviteResolving() : this.renderInvite() : null != r ? this.renderFull(() => (0, i.jsx)(y.A, {
+        return null != s && t ? s.state === Y.elq.RESOLVING ? this.renderInviteResolving() : this.renderInvite() : null != r ? this.renderFull(() => (0, i.jsx)(T.A, {
             guildTemplate: r
         }), !0) : null != n ? this.renderFull(() => (0, i.jsx)(z.A, {
             giftCode: n

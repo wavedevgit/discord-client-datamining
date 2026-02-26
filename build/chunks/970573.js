@@ -39,13 +39,13 @@ function S(e) {
         currentUser: g.default.getCurrentUser(),
         hidePrivateData: p.A.hidePersonalInformation,
         isAuthenticated: _.default.isAuthenticated()
-    })), j = new h.A(n), S = x && r?.id === j.id, C = n.tokenStatus === E.U.INVALID, T = l || j.hasUniqueUsername() ? null : `#${j.discriminator}`, y = null;
-    return S ? y = (0, s.jsx)(d.Text, {
+    })), j = new h.A(n), S = x && r?.id === j.id, C = n.tokenStatus === E.U.INVALID, y = l || j.hasUniqueUsername() ? null : `#${j.discriminator}`, T = null;
+    return S ? T = (0, s.jsx)(d.Text, {
         variant: "text-sm/semibold",
         className: v.dx,
         color: "text-feedback-positive",
         children: N.intl.string(N.t.seV8yt)
-    }) : C && (y = (0, s.jsx)(d.Text, {
+    }) : C && (T = (0, s.jsx)(d.Text, {
         variant: "text-sm/semibold",
         className: v.dx,
         color: "text-feedback-critical",
@@ -75,9 +75,9 @@ function S(e) {
                     }), (0, s.jsx)(d.Text, {
                         color: "text-default",
                         variant: "text-sm/normal",
-                        children: T
+                        children: y
                     })]
-                }), y]
+                }), T]
             }), (0, s.jsxs)("div", {
                 className: v.Xp,
                 children: [!S && (0, s.jsx)(d.Button, {

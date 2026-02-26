@@ -141,11 +141,11 @@ function G(e) {
         channel: t,
         gotoChannel: n
     } = e, s = (0, a.bG)([I.A], () => I.A.getGuild(t.guild_id));
-    return null == s ? null : (0, i.jsx)(x.A, {
+    return null == s ? null : (0, i.jsx)(x.Ay, {
         "aria-hidden": !0,
         className: j.$f,
         guild: s,
-        size: x.A.Sizes.MEDIUM,
+        size: x.Ay.Sizes.MEDIUM,
         active: !0,
         onClick: n,
         tabIndex: -1

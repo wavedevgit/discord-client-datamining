@@ -188,10 +188,11 @@ let X = e => {
             trialOffer: eo,
             isTabSelected: Z
         }), C = 4);
-        ep && (n = (0, i.jsx)(H.MA, {
-            isTabSelected: Z,
-            badgeCopy: Q.intl.string(Q.t.RDE0Sc),
-            offerExpiresAt: null
+        ep && (n = (0, i.jsx)(c.Exy, {
+            type: {
+                text: Q.intl.string(Q.t.RDE0Sc)
+            },
+            variant: "expressive"
         }), ez = () => {
             I.default.track(z.HAw.NITRO_TAB_VISITED, {
                 badge_decorator: C,

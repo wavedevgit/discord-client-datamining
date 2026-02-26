@@ -67,8 +67,8 @@ let C = s.memo(function(e) {
             homeHeaderScroll: 200 * (null != n)
         },
         v = (0, h.A2)(t.id),
-        G = (0, r.bG)([g.A], () => (0, x.K)(g.A, t)),
-        y = (0, c.Ay)();
+        y = (0, r.bG)([g.A], () => (0, x.K)(g.A, t)),
+        G = (0, c.Ay)();
     return (0, a.jsxs)("div", {
         className: j.wx,
         children: [(0, a.jsxs)("div", {
@@ -78,7 +78,7 @@ let C = s.memo(function(e) {
                     [j.KN]: !p
                 }),
                 style: {
-                    backgroundImage: `url(${p?C:"dark"===y?b:I})`
+                    backgroundImage: `url(${p?C:"dark"===G?b:I})`
                 }
             }), v && (0, a.jsx)(N, {
                 guild: t
@@ -87,10 +87,10 @@ let C = s.memo(function(e) {
             className: j.oB,
             children: (0, a.jsxs)("div", {
                 className: m,
-                children: [(0, a.jsx)(o.A, {
+                children: [(0, a.jsx)(o.Ay, {
                     className: j.nr,
                     guild: t,
-                    size: o.A.Sizes.XLARGE,
+                    size: o.Ay.Sizes.XLARGE,
                     active: !0
                 }), (0, a.jsx)(d.Fmo, {
                     children: (0, a.jsxs)("div", {
@@ -104,7 +104,7 @@ let C = s.memo(function(e) {
                             guild: t,
                             tooltipPosition: "bottom",
                             tooltipColor: d.STz.Colors.PRIMARY
-                        }), G && (0, a.jsx)("div", {
+                        }), y && (0, a.jsx)("div", {
                             "data-button-hoisted-classname-wrapper": !0,
                             className: j.ak,
                             children: (0, a.jsx)(d.Button, {

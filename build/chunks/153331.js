@@ -362,9 +362,9 @@ class J extends r.PureComponent {
             })
         }) : (0, l.jsxs)("div", {
             className: s()((0, H.A)(t) || (0, M.A)(t) ? V.detailsWrap : V.details, V.guildDetails),
-            children: [(0, l.jsx)(v.A, {
+            children: [(0, l.jsx)(v.Ay, {
                 guild: e,
-                size: v.A.Sizes.SMOL,
+                size: v.Ay.Sizes.SMOL,
                 className: V.guildIcon
             }), (0, l.jsx)(p._BQ, {
                 size: "xxs",

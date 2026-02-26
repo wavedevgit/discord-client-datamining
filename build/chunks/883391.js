@@ -109,10 +109,10 @@ class v extends r.PureComponent {
                 className: x.Qs,
                 children: [(0, i.jsxs)("div", {
                     className: x.pq,
-                    children: [(0, i.jsx)(p.A, {
+                    children: [(0, i.jsx)(p.Ay, {
                         guild: u,
                         active: !0,
-                        size: p.A.Sizes.LARGE,
+                        size: p.Ay.Sizes.LARGE,
                         className: x.$f
                     }), (0, i.jsxs)("div", {
                         className: x.aV,

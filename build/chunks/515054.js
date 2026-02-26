@@ -12,8 +12,8 @@ var i = n(627968),
     c = n(958805),
     d = n(61881),
     u = n(790417),
-    g = n(113763),
-    m = n(583246),
+    m = n(113763),
+    g = n(583246),
     x = n(463259),
     f = n(133583),
     p = n(518477),
@@ -52,12 +52,12 @@ function A(e) {
         guildId: s,
         channelId: r,
         onClose: o
-    }) : l === p.RP.MUTUAL_FRIENDS ? (0, i.jsx)(g.A, {
+    }) : l === p.RP.MUTUAL_FRIENDS ? (0, i.jsx)(m.A, {
         user: t,
         guildId: s,
         channelId: r,
         onClose: o
-    }) : l === p.RP.MUTUAL_GUILDS ? (0, i.jsx)(m.A, {
+    }) : l === p.RP.MUTUAL_GUILDS ? (0, i.jsx)(g.A, {
         user: t,
         onClose: o
     }) : l === p.RP.WIDGETS ? (0, i.jsx)(x.A, {
@@ -76,20 +76,20 @@ function I(e) {
         displayProfile: a,
         guildId: s,
         channelId: u,
-        items: g,
-        initialSection: m,
+        items: m,
+        initialSection: g,
         onClose: x
     } = e, {
         trackUserProfileAction: f
     } = (0, o.NJ)(), [{
         section: _,
         text: I
-    }, j] = l.useState(g.find(e => {
+    }, j] = l.useState(m.find(e => {
         let {
             section: t
         } = e;
-        return t === m
-    }) ?? g[0]);
+        return t === g
+    }) ?? m[0]);
     return (0, i.jsxs)("div", {
         className: h.kL,
         children: [(0, i.jsx)(r.HOs, {
@@ -105,9 +105,9 @@ function I(e) {
                     d.A.hasUnsavedChanges() && _ === p.RP.WIDGETS ? c.A.notifyUnsavedWidgets() : (f({
                         action: "PRESS_SECTION",
                         section: e
-                    }), j(t => g.find(t => t.section === e) ?? t))
+                    }), j(t => m.find(t => t.section === e) ?? t))
                 },
-                children: g.map(e => (0, i.jsx)(r.VQ0.Item, {
+                children: m.map(e => (0, i.jsx)(r.VQ0.Item, {
                     className: h.YU,
                     id: e.section,
                     "aria-label": e.text,

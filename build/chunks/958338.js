@@ -48,12 +48,12 @@ function d(e) {
         });
         t.length > 0 && n(t, e)
     }, [o, e, n, u]);
-    let g = i.useMemo(() => o.map(e => ({
+    let m = i.useMemo(() => o.map(e => ({
         applicationId: e
     })), [o]);
     return {
         applicationIds: o,
-        games: g,
+        games: m,
         onAddGame: d
     }
 }
@@ -65,10 +65,10 @@ function u(e, t) {
     i.useEffect(() => {
         !n && e && r.A.fetchSuggestedGames()
     }, [n, e]);
-    let g = n && !d;
+    let m = n && !d;
     i.useEffect(() => {
-        if (!g) return;
+        if (!m) return;
         let e = t.map(e => e.games).flat();
         a || u(s.suggestedGamesIds ?? [], s.suggestedWishlistGamesIds ?? [], e)
-    }, [g])
+    }, [m])
 }

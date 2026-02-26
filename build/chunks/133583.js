@@ -11,8 +11,8 @@ var i = n(627968),
     c = n(397927),
     d = n(793574),
     u = n(688810),
-    g = n(979286),
-    m = n(871123),
+    m = n(979286),
+    g = n(871123),
     x = n(690946),
     f = n(898616),
     p = n(44724),
@@ -27,20 +27,20 @@ var i = n(627968),
     b = n(128988),
     y = n(515054),
     N = n(203647),
-    S = n(383430),
-    C = n(300131),
+    C = n(383430),
+    S = n(300131),
     k = n(518477),
     R = n(188275),
     w = n(985018),
-    O = n(376721);
+    L = n(376721);
 
-function L(e) {
+function O(e) {
     let {
         isSocialLayerStorefrontEnabled: t,
         handleOpenShop: n,
         handleOpenGameShop: l
     } = e;
-    return t ? (0, i.jsx)(S.A, {
+    return t ? (0, i.jsx)(C.A, {
         title: w.intl.string(w.t["i/yzHs"]),
         handleOpenCollectiblesShop: n,
         handleOpenGameShop: l,
@@ -64,8 +64,8 @@ function P(e) {
         socialLayerStorefrontApplicationId: r
     } = e;
     return (0, i.jsxs)("div", {
-        className: O.$s,
-        children: [t ? (0, i.jsx)(S.A, {
+        className: L.$s,
+        children: [t ? (0, i.jsx)(C.A, {
             title: w.intl.string(w.t.SDUwM0),
             handleOpenCollectiblesShop: l,
             handleOpenGameShop: a,
@@ -76,7 +76,7 @@ function P(e) {
             icon: c.j96,
             text: w.intl.string(w.t.SDUwM0),
             onClick: l
-        }), (0, i.jsx)(C.A, {
+        }), (0, i.jsx)(S.A, {
             isOwner: !0,
             isWishlistPublic: n,
             onToggleVisibility: s
@@ -93,8 +93,8 @@ function D(e) {
         itemType: "WISHLIST_ITEM"
     });
     let {
-        wishlistId: S,
-        currentUser: C,
+        wishlistId: C,
+        currentUser: S,
         wishlistSettings: D
     } = (0, s.cf)([v.A, I.default], () => {
         let e = v.A.getFirstWishlistId(t.id);
@@ -107,7 +107,7 @@ function D(e) {
         analyticsLocations: G
     } = (0, u.Ay)(), {
         trackUserProfileWishlistAction: U
-    } = (0, j.NJ)(), M = C?.id === t.id, F = !1 === t.nsfwAllowed, W = R.XR, [H, B] = l.useState(!0);
+    } = (0, j.NJ)(), M = S?.id === t.id, F = !1 === t.nsfwAllowed, W = R.XR, [H, B] = l.useState(!0);
     l.useEffect(() => {
         D?.visibility != null && B(D.visibility === a.a.PUBLIC)
     }, [D?.visibility]);
@@ -115,16 +115,16 @@ function D(e) {
         wishlist: X,
         error: z
     } = (0, A.fw)({
-        wishlistId: S,
+        wishlistId: C,
         userId: t.id
     }), V = (0, f.A)({
         location: "user-profile-modal-v2-wishlist",
         wishlist: X,
         profileOwner: t,
-        currentUser: C
+        currentUser: S
     }), Y = (0, x.X)({
         location: "user-profile-modal-v2-wishlist"
-    }), K = V && Y, q = l.useCallback(e => {
+    }), K = M && V && Y, q = l.useCallback(e => {
         let {
             wishlistId: t,
             action: n,
@@ -136,37 +136,37 @@ function D(e) {
             productLines: i
         })
     }, [U]), J = (0, T.A)({
-        wishlistId: S,
+        wishlistId: C,
         onAction: q,
         productLines: X?.getProductLines() ?? null
     }), Q = l.useCallback(() => {
-        if (null == S) return;
+        if (null == C) return;
         let e = H ? a.a.PRIVATE : a.a.PUBLIC;
-        B(!H), _.A.updateWishlistVisibility(S, e), U({
-            wishlistId: S,
+        B(!H), _.A.updateWishlistVisibility(C, e), U({
+            wishlistId: C,
             action: H ? k.Mq.WISHLIST_TOGGLE_PRIVATE : k.Mq.WISHLIST_TOGGLE_PUBLIC,
             productLines: X?.getProductLines()
         })
-    }, [S, H, U, X]), Z = l.useCallback(() => {
-        (0, r.closeAllModals)(), (0, g.Cz)({
+    }, [C, H, U, X]), Z = l.useCallback(() => {
+        (0, r.closeAllModals)(), (0, m.Cz)({
             analyticsLocations: G,
             analyticsSource: d.A.USER_PROFILE_WISHLIST
         })
     }, [G]), $ = l.useCallback(() => {
         (0, p.X)({
-            guildId: (0, m.zf)()
+            guildId: (0, g.zf)()
         })
     }, []), ee = l.useCallback(() => {
         (0, r.closeAllModals)(), (0, p.default)({
-            guildId: (0, m.zf)()
+            guildId: (0, g.zf)()
         })
     }, []);
     return null != z ? null : null == X || 0 === X.items.length ? (0, i.jsxs)(y.K, {
         fade: !0,
         children: [(0, i.jsxs)("div", {
-            className: O.y7,
+            className: L.y7,
             children: [(0, i.jsxs)("div", {
-                className: O.q6,
+                className: L.q6,
                 children: [(0, i.jsx)(c.Heading, {
                     variant: "heading-md/medium",
                     color: "text-strong",
@@ -194,23 +194,21 @@ function D(e) {
                 })]
             })]
         }), K && (0, i.jsx)(h.A, {
-            user: t,
-            isOwner: M,
             wishlist: X,
             analyticsLocations: G,
-            className: O._E
+            className: L._E
         })]
     }) : (0, i.jsxs)(y.K, {
         scrollerRef: n,
-        className: O.XG,
+        className: L.XG,
         fade: !0,
         children: [(0, i.jsx)(b.A, {
             scrollerRef: n
         }), (0, i.jsxs)("div", {
             ref: J,
-            className: O.U1,
+            className: L.U1,
             children: [(0, i.jsxs)("div", {
-                className: O.Us,
+                className: L.Us,
                 children: [(0, i.jsx)(c.Text, {
                     variant: "text-xs/semibold",
                     color: "text-subtle",
@@ -253,7 +251,7 @@ function D(e) {
                 handleOpenGameShop: ee,
                 handleToggleWishlistVisibility: Q,
                 socialLayerStorefrontApplicationId: W
-            }) : (0, i.jsx)(L, {
+            }) : (0, i.jsx)(O, {
                 isSocialLayerStorefrontEnabled: V,
                 handleOpenShop: Z,
                 handleOpenGameShop: ee
@@ -263,11 +261,9 @@ function D(e) {
             profileOwner: t,
             isOwner: M
         }), K && (0, i.jsx)(h.A, {
-            user: t,
-            isOwner: M,
             wishlist: X,
             analyticsLocations: G,
-            className: O.HZ
+            className: L.HZ
         })]
     })
 }

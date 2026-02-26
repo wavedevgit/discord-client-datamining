@@ -25,8 +25,8 @@ var a = l(627968),
     C = l(283012),
     p = l(12446),
     v = l(913423),
-    G = l(652215),
-    y = l(746080),
+    y = l(652215),
+    G = l(746080),
     M = l(985018),
     E = l(313883),
     T = l(370808);
@@ -36,7 +36,7 @@ let L = I.O + 300 + 64,
             guild: n
         } = e;
         return (0, a.jsxs)(m.A, {
-            channelId: y.VV.GUILD_HOME,
+            channelId: G.VV.GUILD_HOME,
             guildId: n.id,
             className: i()(E.DD, E.Tp),
             innerClassname: E.vi,
@@ -55,16 +55,16 @@ function H(e) {
     let {
         guild: n,
         width: l
-    } = e, t = (0, r.bG)([g.Ay], () => g.Ay.getSection(y.VV.GUILD_HOME)), [m, M] = s.useState(!1), [H, R] = s.useState(G.da6), k = t === G.YvQ.SIDEBAR_CHAT, B = (0, d.R7z)(), S = (0, r.bG)([f.h], () => f.h.getSettings(n.id)), D = S?.welcomeMessage, U = (0, b.A)(n.id), V = !U && (S?.resourceChannels?.length ?? 0) === 0, O = (0, o.A)("(max-width: 1300px)"), z = l - G.MdR - H, K = k && z < L || O || V;
+    } = e, t = (0, r.bG)([g.Ay], () => g.Ay.getSection(G.VV.GUILD_HOME)), [m, M] = s.useState(!1), [H, R] = s.useState(y.da6), k = t === y.YvQ.SIDEBAR_CHAT, B = (0, d.R7z)(), S = (0, r.bG)([f.h], () => f.h.getSettings(n.id)), D = S?.welcomeMessage, U = (0, b.A)(n.id), V = !U && (S?.resourceChannels?.length ?? 0) === 0, O = (0, o.A)("(max-width: 1300px)"), z = l - y.MdR - H, K = k && z < L || O || V;
     return (s.useEffect(() => {
-        S === f.A ? (0, _.ag)(n.id) : null != S && A.default.track(G.HAw.SERVER_GUIDE_VIEWED, {
+        S === f.A ? (0, _.ag)(n.id) : null != S && A.default.track(y.HAw.SERVER_GUIDE_VIEWED, {
             ...(0, u.H$)(n.id),
             num_member_actions: S.newMemberActions?.length ?? 0,
             num_member_actions_completed: Object.keys(j.A.getCompletedActions(n.id) ?? {}).length,
             num_resource_channels: S.resourceChannels?.length ?? 0
         })
     }, [n.id, S]), s.useEffect(() => () => {
-        x.A.closeChannelSidebar(y.VV.GUILD_HOME)
+        x.A.closeChannelSidebar(G.VV.GUILD_HOME)
     }, []), s.useEffect(() => {
         V && S !== f.A && c.A.escapeToDefaultChannel(n.id)
     }, [n.id, V, S]), V) ? null : (0, a.jsxs)(a.Fragment, {

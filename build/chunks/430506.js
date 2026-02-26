@@ -159,9 +159,9 @@ function f(e) {
                             children: C.intl.string(E.default.eoLmk1)
                         })]
                     }) : (0, l.jsxs)(l.Fragment, {
-                        children: [null != w ? (0, l.jsx)(p.A, {
+                        children: [null != w ? (0, l.jsx)(p.Ay, {
                             guild: w,
-                            size: p.A.Sizes.SMOL,
+                            size: p.Ay.Sizes.SMOL,
                             className: x.iY
                         }) : (0, l.jsx)(r.RR9, {
                             color: i.A.colors.BLACK,

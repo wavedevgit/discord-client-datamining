@@ -24,9 +24,9 @@ let d = e => {
                 className: s.OA,
                 children: [(0, l.jsx)("div", {
                     className: s.$f,
-                    children: (0, l.jsx)(i.A, {
+                    children: (0, l.jsx)(i.Ay, {
                         guild: t,
-                        size: i.A.Sizes.LARGE
+                        size: i.Ay.Sizes.LARGE
                     })
                 }), (0, l.jsx)("div", {
                     children: (0, l.jsx)(a.Text, {

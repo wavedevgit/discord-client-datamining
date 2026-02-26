@@ -16,15 +16,15 @@ var r = n(627968),
     m = n(568065),
     A = n(652215),
     _ = n(136708),
-    g = n(985018),
-    f = n(870166),
+    f = n(985018),
+    g = n(870166),
     x = n(849630);
 
 function v(e, t) {
     let v = (0, c.A)(t) ?? !1,
         h = (0, s.bG)([u.A], () => u.A.getStateForGuild(t)?.allPowerups),
-        j = (0, s.bG)([u.A], () => u.A.getStateForGuild(t)?.unlockedPowerups),
-        b = (0, d.RA)(t, "usePowerupGroupConfig");
+        b = (0, s.bG)([u.A], () => u.A.getStateForGuild(t)?.unlockedPowerups),
+        j = (0, d.RA)(t, "usePowerupGroupConfig");
     return l.useMemo(() => {
         let l = e => "guildTagsBadgePacks" === e ? function(e) {
                 let {
@@ -33,8 +33,8 @@ function v(e, t) {
                     allPowerups: s,
                     unlockedPowerups: u,
                     isWaveTwoEnabled: d
-                } = e, c = g.intl.string(_.default.KC9HRW), v = g.intl.string(_.default.GJiSmP), h = s?.[i.SL], j = u?.[i.SL] != null, b = g.intl.string(_.default["/egwJA"]), E = j ? void 0 : g.intl.string(_.default.W6Vwn3), I = j ? void 0 : g.intl.string(_.default.lvk1Gc), S = j ? g.intl.string(_.default["9CfkLO"]) : g.intl.string(g.t["+7XY31"]), w = j ? "secondary" : "expressive", C = l ? () => {
-                    j ? a.A.open(t, A.BEX.TAG, A.JJy.GUILD_POWERUPS_OVERVIEW_CARD) : null != h && (0, p.A)(t, h), (0, o.s7G)()
+                } = e, c = f.intl.string(_.default.KC9HRW), v = f.intl.string(_.default.GJiSmP), h = s?.[i.SL], b = u?.[i.SL] != null, j = f.intl.string(_.default["/egwJA"]), E = b ? void 0 : f.intl.string(_.default.W6Vwn3), I = b ? void 0 : f.intl.string(_.default.lvk1Gc), w = b ? f.intl.string(_.default["9CfkLO"]) : f.intl.string(f.t["+7XY31"]), S = b ? "secondary" : "expressive", C = l ? () => {
+                    b ? a.A.open(t, A.BEX.TAG, A.JJy.GUILD_POWERUPS_OVERVIEW_CARD) : null != h && (0, p.A)(t, h), (0, o.s7G)()
                 } : void 0, N = d ? m.m_ : void 0;
                 return {
                     title: c,
@@ -48,15 +48,15 @@ function v(e, t) {
                             return n => (0, r.jsx)(i, {
                                 guildId: t,
                                 title: c,
-                                description: g.intl.string(_.default.BBRFRd),
+                                description: f.intl.string(_.default.BBRFRd),
                                 powerups: e,
                                 newPowerupSkuIdSet: N,
                                 forceStaticImages: d,
                                 footerInfoText: I,
-                                footerAction: l && null != C && null != S ? {
-                                    variant: w,
-                                    text: S,
-                                    icon: "expressive" === w ? o._Jp : void 0,
+                                footerAction: l && null != C && null != w ? {
+                                    variant: S,
+                                    text: w,
+                                    icon: "expressive" === S ? o._Jp : void 0,
                                     onClick: C
                                 } : void 0,
                                 ...n
@@ -65,13 +65,13 @@ function v(e, t) {
                             onCloseCallback: i?.onModalClose
                         })
                     },
-                    viewCta: b,
+                    viewCta: j,
                     viewCtaTooltip: E,
                     badge: d ? "new" : void 0,
                     newPowerupSkuIdSet: N,
                     image: {
                         staticUrl: x.A,
-                        animatedUrl: f.A
+                        animatedUrl: g.A
                     },
                     forceStaticImages: d
                 }
@@ -79,8 +79,8 @@ function v(e, t) {
                 guildId: t,
                 canUseBoosts: v,
                 allPowerups: h,
-                unlockedPowerups: j,
-                isWaveTwoEnabled: b
+                unlockedPowerups: b,
+                isWaveTwoEnabled: j
             }) : void 0,
             s = {};
         for (let t of e) {
@@ -88,7 +88,7 @@ function v(e, t) {
             null != e && (s[t] = e)
         }
         return s
-    }, [e, t, v, h, j, b])
+    }, [e, t, v, h, b, j])
 }
 
 function h(e, t) {

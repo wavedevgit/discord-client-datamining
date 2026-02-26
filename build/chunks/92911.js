@@ -240,8 +240,8 @@ let k = "WELCOME_CHANNEL",
                 className: M.i1,
                 children: [(0, i.jsxs)("div", {
                     className: M.eB,
-                    children: [(0, i.jsx)(j.A, {
-                        size: j.A.Sizes.LARGER,
+                    children: [(0, i.jsx)(j.Ay, {
+                        size: j.Ay.Sizes.LARGER,
                         className: M.Kk,
                         guild: t,
                         animate: !0,

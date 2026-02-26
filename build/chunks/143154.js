@@ -139,8 +139,8 @@ let T = e => {
                     width: 64,
                     height: 64,
                     className: v.$f,
-                    children: (0, i.jsx)(h.A, {
-                        size: h.A.Sizes.LARGER,
+                    children: (0, i.jsx)(h.Ay, {
+                        size: h.Ay.Sizes.LARGER,
                         guild: _,
                         active: !0,
                         animate: !0,

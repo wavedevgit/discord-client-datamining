@@ -1,20 +1,20 @@
 /** chunk id: 816709, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    A: () => a
+    A: () => r
 });
 var n = i(627968);
 i(64700);
 var l = i(9578),
     s = i(985018),
-    r = i(581259);
+    a = i(581259);
 
-function a(t) {
+function r(t) {
     let {
         termsOfServiceUrl: e,
         privacyPolicyUrl: i
     } = t;
     return null == e && null == i ? null : (0, n.jsxs)("span", {
-        className: r.Q,
+        className: a.Q,
         children: [null != e && (0, n.jsx)(l.A, {
             href: e,
             children: s.intl.string(s.t["8S0kcM"])

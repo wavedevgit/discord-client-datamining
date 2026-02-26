@@ -7,8 +7,8 @@ var n = i(627968);
 i(64700);
 var l = i(284009),
     s = i.n(l),
-    r = i(835245),
-    a = i(397927),
+    a = i(835245),
+    r = i(397927),
     u = i(339048),
     o = i(391048),
     c = i(636099),
@@ -37,13 +37,13 @@ function E(t) {
         showBenefitsFirst: g,
         onComplete: m,
         forcesTransitionToGuild: P
-    } = t, L = (0, r.A)(), O = !1;
-    (0, a.mMO)(async () => {
+    } = t, L = (0, a.A)(), O = !1;
+    (0, r.mMO)(async () => {
         let {
             PaymentContextProvider: t
-        } = await Promise.resolve().then(i.bind(i, 156312)), r = (await i.e("72752").then(i.bind(i, 97491))).default, {
-            getApplicationPaymentSteps: a
-        } = await i.e("50243").then(i.bind(i, 107854)), o = a({
+        } = await Promise.resolve().then(i.bind(i, 156312)), a = (await i.e("72752").then(i.bind(i, 97491))).default, {
+            getApplicationPaymentSteps: r
+        } = await i.e("50243").then(i.bind(i, 107854)), o = r({
             guildId: C,
             showBenefitsFirst: g
         });
@@ -55,7 +55,7 @@ function E(t) {
             skuIDs: [f],
             children: (0, n.jsx)(_.Qt, {
                 children: (0, n.jsx)(A.dX, {
-                    children: (0, n.jsx)(r, {
+                    children: (0, n.jsx)(a, {
                         ...i,
                         initialPlanId: e,
                         skuId: f,
@@ -101,18 +101,18 @@ async function C(t) {
         skuId: i,
         initialPlanId: n,
         analyticsLocationObject: l,
-        analyticsLocations: r,
-        renderHeader: a
+        analyticsLocations: a,
+        renderHeader: r
     } = t, u = S.A.get(i), o = p.A.getForSKU(i);
     s()(null != u, "Failed to find SKU");
     let c = (0, d.bg)(u.flags);
     s()(c, "Guild application subscriptions unsupported!"), await f(e, i), E({
         initialPlanId: n ?? o[0]?.id,
         activeSubscription: null,
-        analyticsLocations: r,
+        analyticsLocations: a,
         analyticsLocationObject: l,
         analyticsSubscriptionType: T.rzx.APPLICATION,
-        renderHeader: a,
+        renderHeader: r,
         planGroup: [],
         skuId: i,
         guildId: null,

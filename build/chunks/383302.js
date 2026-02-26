@@ -34,9 +34,9 @@ let c = e => {
                 mask: r.Ay.Masks.SQUIRCLE,
                 width: 40,
                 height: 40,
-                children: (0, i.jsx)(l.A, {
+                children: (0, i.jsx)(l.Ay, {
                     guild: c,
-                    size: l.A.Sizes.MEDIUM,
+                    size: l.Ay.Sizes.MEDIUM,
                     active: !0
                 })
             }), (0, i.jsxs)("div", {

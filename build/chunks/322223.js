@@ -50,10 +50,10 @@ function C(e) {
                 })
             })
         },
-        f = (0, i.jsx)(a.A, {
+        f = (0, i.jsx)(a.Ay, {
             className: O.$f,
             guild: D,
-            size: a.A.Sizes.MINI
+            size: a.Ay.Sizes.MINI
         }),
         k = (0, I.ql)(g, D.name);
     if (null != (g.dmsDisabledUntil ?? g.invitesDisabledUntil) && M) return (0, i.jsxs)(s.$Td, {

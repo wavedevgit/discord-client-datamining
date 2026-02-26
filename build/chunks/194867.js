@@ -19,41 +19,41 @@ function A(e) {
         guildId: t,
         group: n,
         powerups: A
-    } = e, [_, g] = l.useState(!1), f = (0, i.bG)([a.A], () => a.A.useReducedMotion), x = (0, p.A)(n, t), v = !f && _ ? x?.image?.animatedUrl : x?.image?.staticUrl, h = (0, u.A)({
+    } = e, [_, f] = l.useState(!1), g = (0, i.bG)([a.A], () => a.A.useReducedMotion), x = (0, p.A)(n, t), v = !g && _ ? x?.image?.animatedUrl : x?.image?.staticUrl, h = (0, u.A)({
         guildId: t,
         powerups: A
     }), {
-        textColor: j
+        textColor: b
     } = (0, c.A)(h?.isActive ?? !1);
     if (null == h || null == x) return null;
     let {
-        status: b,
+        status: j,
         cost: E,
         costDecorator: I
     } = h;
     return (0, r.jsxs)(d.NI, {
         label: x.title,
-        isActive: b?.type === "active",
-        isWarning: b?.type === "expiring",
+        isActive: j?.type === "active",
+        isWarning: j?.type === "expiring",
         badge: x.badge,
         onClick: () => x.openModal(A),
-        onMouseOver: () => g(!0),
-        onMouseLeave: () => g(!1),
+        onMouseOver: () => f(!0),
+        onMouseLeave: () => f(!1),
         children: [(0, r.jsx)("img", {
             alt: "",
             src: v,
             className: m.S
         }), (0, r.jsx)(d.Ft, {
             title: x.title,
-            textColor: j,
+            textColor: b,
             footer: (0, r.jsx)(d.$L, {
-                status: b,
+                status: j,
                 cost: E,
                 costDecorator: I
             }),
             children: (0, r.jsx)(o.Text, {
                 className: m.h,
-                color: j,
+                color: b,
                 variant: "text-sm/medium",
                 children: x.description
             })

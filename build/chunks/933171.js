@@ -62,11 +62,11 @@ function C(e) {
                     height: 58,
                     children: (0, n.jsx)("div", {
                         className: g.SA,
-                        children: (0, n.jsx)(c.A, {
+                        children: (0, n.jsx)(c.Ay, {
                             className: g.__invalid_icon,
                             iconSrc: j,
                             guild: v,
-                            size: c.A.Sizes.LARGE
+                            size: c.Ay.Sizes.LARGE
                         })
                     })
                 })

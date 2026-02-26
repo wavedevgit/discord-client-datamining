@@ -25,10 +25,10 @@ function p(e) {
         children: (0, i.jsx)(o.EpV, {
             color: "currentColor"
         })
-    }) : (0, i.jsx)(c.A, {
+    }) : (0, i.jsx)(c.Ay, {
         guild: s,
         animate: n,
-        size: c.A.Sizes.MINI,
+        size: c.Ay.Sizes.MINI,
         iconSize: l,
         lossless: !0,
         className: A.VL,

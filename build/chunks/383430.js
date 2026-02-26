@@ -16,8 +16,8 @@ function u(e) {
         title: t,
         handleOpenCollectiblesShop: n,
         handleOpenGameShop: u,
-        socialLayerStorefrontApplicationId: g
-    } = e, m = l.useRef(null), [x, f] = l.useState(!1), p = (0, s.h)(g), h = l.useMemo(() => null == p || p.id !== o.XR ? c.intl.string(c.t.apFNLU) : c.intl.string(c.t["kq/75v"]), [p]), _ = l.useMemo(() => null == p ? null : r.Ay.getApplicationIconURL({
+        socialLayerStorefrontApplicationId: m
+    } = e, g = l.useRef(null), [x, f] = l.useState(!1), p = (0, s.h)(m), h = l.useMemo(() => null == p || p.id !== o.XR ? c.intl.string(c.t.apFNLU) : c.intl.string(c.t["kq/75v"]), [p]), _ = l.useMemo(() => null == p ? null : r.Ay.getApplicationIconURL({
         id: p.id,
         icon: p.icon,
         size: 20
@@ -50,7 +50,7 @@ function u(e) {
         })]
     }), [n, u, h, A, I]);
     return (0, i.jsx)(a.YNO, {
-        targetElementRef: m,
+        targetElementRef: g,
         position: "bottom",
         onRequestOpen: () => f(!0),
         onRequestClose: () => f(!1),
@@ -68,7 +68,7 @@ function u(e) {
             })
         },
         children: e => (0, i.jsx)(a.Button, {
-            buttonRef: m,
+            buttonRef: g,
             variant: "secondary",
             size: "sm",
             icon: x ? a.PGe : a.abt,

@@ -130,15 +130,16 @@ let w = i.memo(function(e) {
             icon: z.icon,
             size: 32
         }) : null,
-        eu = er ?? eo ?? ed,
-        ec = ei ?? ea ?? void 0,
-        eg = null != z && null == z.icon ? (0, _.oN)(z.name) : null,
-        eh = null != eu && null != ec;
+        eu = W !== o.clD.OFFLINE ? W : void 0,
+        ec = er ?? eo ?? ed,
+        eg = ei ?? ea ?? void 0,
+        eh = null != z && null == z.icon ? (0, _.oN)(z.name) : null,
+        eA = null != ec && null != eg;
     null != n && (t = es ?? ei);
-    let eA = b.Ay.getUserTag(n, {
+    let ep = b.Ay.getUserTag(n, {
             decoration: "never"
         }),
-        ep = (0, l.jsx)(o.Button, {
+        eI = (0, l.jsx)(o.Button, {
             variant: "secondary",
             text: H ? R.intl.string(R.t.dVT149) : D ? R.intl.string(R.t.AWLVgR) : R.intl.string(R.t.jYnGPG),
             size: "sm",
@@ -146,30 +147,30 @@ let w = i.memo(function(e) {
             onClick: el,
             disabled: H
         }),
-        eI = Q && null != J.text,
-        em = Q && null != X && null != $,
-        ex = em || eI || null != n;
+        em = Q && null != J.text,
+        ex = Q && null != X && null != $,
+        ev = ex || em || null != n;
     return (0, l.jsxs)("div", {
         className: G.Og,
         children: [(0, l.jsxs)("div", {
             className: G.mQ,
-            children: [eh ? et ? (0, l.jsx)(p.A, {
+            children: [eA ? et ? (0, l.jsx)(p.A, {
                 size: o._3J.SIZE_32,
                 ringing: et,
-                src: eu,
+                src: ec,
                 className: G.hO
             }) : (0, l.jsx)(o.euF, {
-                src: eu,
-                "aria-label": ec,
+                src: ec,
+                "aria-label": eg,
                 size: o._3J.SIZE_32,
                 className: G.hO,
-                status: Q && null != n ? W : void 0,
+                status: Q && null != n ? eu : void 0,
                 isMobile: Q && null != n ? q : void 0
             }) : (0, l.jsx)(o.Text, {
                 variant: "text-md/medium",
                 className: G.q9,
                 "aria-hidden": !0,
-                children: eg
+                children: eh
             }), (0, l.jsxs)("div", {
                 className: a()(G.BT, {
                     [G.DF]: et
@@ -179,11 +180,11 @@ let w = i.memo(function(e) {
                     variant: "text-md/semibold",
                     lineClamp: 1,
                     children: [t, null != s ? (0, m.m1)(s, T.default, f.A, !0) : null]
-                }), ex && (0, l.jsxs)("div", {
+                }), ev && (0, l.jsxs)("div", {
                     className: a()(G.eq, {
                         [G.DF]: et
                     }),
-                    children: [em ? (0, l.jsx)(x.A, {
+                    children: [ex ? (0, l.jsx)(x.A, {
                         size: "custom",
                         color: en,
                         channel: X,
@@ -191,12 +192,12 @@ let w = i.memo(function(e) {
                     }) : null != Z ? (0, l.jsx)(g.A, {
                         icon: Z,
                         className: G.j8
-                    }) : null, em ? (0, l.jsx)(o.Text, {
+                    }) : null, ex ? (0, l.jsx)(o.Text, {
                         variant: "text-xs/medium",
                         color: "text-status-online",
                         lineClamp: 1,
                         children: $
-                    }) : eI ? (0, l.jsx)(o.Text, {
+                    }) : em ? (0, l.jsx)(o.Text, {
                         variant: "text-xs/medium",
                         color: "text-status-online",
                         lineClamp: 1,
@@ -205,7 +206,7 @@ let w = i.memo(function(e) {
                         variant: "text-xs/normal",
                         color: "text-muted",
                         lineClamp: 1,
-                        children: eA
+                        children: ep
                     }), (0, l.jsx)(o.Text, {
                         variant: "text-xs/normal",
                         color: "text-muted",
@@ -220,7 +221,7 @@ let w = i.memo(function(e) {
                 user: n,
                 channel: L,
                 location: "InviteRow"
-            }), ep]
+            }), eI]
         })]
     })
 }, (e, t) => e.user === t.user && e.channel === t.channel && e.shouldRenameButtonCTA === t.shouldRenameButtonCTA && e.guildId === t.guildId && e.inviteChannel?.id === t.inviteChannel?.id && e.inviteKey === t.inviteKey && e.ringingEnabled === t.ringingEnabled)

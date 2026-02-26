@@ -11,8 +11,8 @@ var i = n(627968),
     c = n(311907),
     d = n(397927),
     u = n(155718),
-    g = n(793574),
-    m = n(688810),
+    m = n(793574),
+    g = n(688810),
     x = n(362490),
     f = n(385771),
     p = n(789069),
@@ -27,13 +27,13 @@ var i = n(627968),
     b = n(731068),
     y = n(619517),
     N = n(339580),
-    S = n(961350),
-    C = n(760751),
+    C = n(961350),
+    S = n(760751),
     k = n(403362),
     R = n(183555),
     w = n(622543),
-    O = n(466853),
-    L = n(985018),
+    L = n(466853),
+    O = n(985018),
     P = n(935454);
 let D = /{{(.*?)}}/g,
     G = {
@@ -451,7 +451,7 @@ function J(e) {
             children: [e.showSuggestedForYou && (0, i.jsx)(d.Text, {
                 variant: "text-xs/medium",
                 color: "text-default",
-                children: L.intl.string(L.t.zMUr6Z)
+                children: O.intl.string(O.t.zMUr6Z)
             }), (0, i.jsx)(d.Heading, {
                 variant: "heading-sm/medium",
                 color: "text-default",
@@ -482,10 +482,10 @@ let Q = Object.assign(function(e) {
             cta: T,
             subtle: y = !1
         } = e,
-        D = (0, c.bG)([S.default], () => S.default.getId()) === v.id,
+        D = (0, c.bG)([C.default], () => C.default.getId()) === v.id,
         M = (0, h.h)(E.applicationId),
         F = M?.getIconURL(16),
-        W = (0, c.bG)([C.A], () => null != M ? C.A.getGameByApplication(M) : null),
+        W = (0, c.bG)([S.A], () => null != M ? S.A.getGameByApplication(M) : null),
         H = (0, A.A)({
             location: "UserProfileApplicationWidget",
             applicationId: W?.id,
@@ -501,7 +501,7 @@ let Q = Object.assign(function(e) {
         } = (0, x.RD)(M),
         {
             analyticsLocations: Q
-        } = (0, m.Ay)(g.A.USER_PROFILE_APPLICATION_WIDGET),
+        } = (0, g.Ay)(m.A.USER_PROFILE_APPLICATION_WIDGET),
         Z = l.useCallback(() => {
             z && (j({
                 action: "PRESS_APPLICATION_WIDGET_UNLINKED_CONNECT",
@@ -613,7 +613,7 @@ let Q = Object.assign(function(e) {
             hasData: null != r,
             components: I
         });
-    return null == el ? null : (0, i.jsxs)(O.A, {
+    return null == el ? null : (0, i.jsxs)(L.A, {
         ...e,
         userId: v.id,
         widget: E,
@@ -640,13 +640,13 @@ let Q = Object.assign(function(e) {
                 }), (0, i.jsx)(d.Text, {
                     variant: "text-sm/medium",
                     color: "text-subtle",
-                    children: L.intl.string(L.t.z5K4Uv)
+                    children: O.intl.string(O.t.z5K4Uv)
                 })]
             }), $ ? (0, i.jsx)(J, {
-                heading: L.intl.string(L.t.UDPRLO),
-                content: L.intl.string(L.t["OW/2al"]),
+                heading: O.intl.string(O.t.UDPRLO),
+                content: O.intl.string(O.t["OW/2al"]),
                 buttons: (0, i.jsx)(d.Button, {
-                    text: L.intl.string(L.t.S0W8Z5),
+                    text: O.intl.string(O.t.S0W8Z5),
                     onClick: Z
                 })
             }) : T]

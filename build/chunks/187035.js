@@ -27,8 +27,8 @@ var i = n(627968),
     j = n(129851),
     S = n(538796),
     C = n(229),
-    T = n(652215),
-    y = n(401755),
+    y = n(652215),
+    T = n(401755),
     b = n(771016),
     R = n(315290),
     O = n(396574),
@@ -38,7 +38,7 @@ var i = n(627968),
 d.Ay.initialize();
 class D extends s.PureComponent {
     componentDidMount() {
-        (0, E.d)("guildTemplate"), O.VP || v.A.launch("discord://" + T.BVt.GUILD_TEMPLATE(this.props.code), () => void 0)
+        (0, E.d)("guildTemplate"), O.VP || v.A.launch("discord://" + y.BVt.GUILD_TEMPLATE(this.props.code), () => void 0)
     }
     componentDidUpdate(e) {
         this.props.code !== e.code && g.A.resolveGuildTemplate(this.props.code)
@@ -96,7 +96,7 @@ class D extends s.PureComponent {
         let {
             guildTemplate: e
         } = this.props;
-        return (o()(null != e, "guild template must not be null"), e.state === y.QB.RESOLVING) ? (0, i.jsx)(u.Ay, {
+        return (o()(null != e, "guild template must not be null"), e.state === T.QB.RESOLVING) ? (0, i.jsx)(u.Ay, {
             className: w.sL,
             children: (0, i.jsx)(f.A, {
                 guildTemplate: e
@@ -121,12 +121,12 @@ class D extends s.PureComponent {
             location: r
         } = this.props;
         if (null == e) return this.renderSpinner(L.intl.string(L.t.ZTNur7));
-        if (t === T.fAW.OPEN) return this.renderAppOpened();
-        if (t === T.fAW.OPENING) return this.renderSpinner(L.intl.string(L.t["Z+hCVU"]));
+        if (t === y.fAW.OPEN) return this.renderAppOpened();
+        if (t === y.fAW.OPENING) return this.renderSpinner(L.intl.string(L.t["Z+hCVU"]));
         switch (e.state) {
-            case y.QB.RESOLVING:
+            case T.QB.RESOLVING:
                 return this.renderSpinner(L.intl.string(L.t["Z+hCVU"]));
-            case y.QB.RESOLVED:
+            case T.QB.RESOLVED:
                 if (n || !O.VP) return this.renderAuthenticatedOrDownload();
                 if (this.props.login) return (0, i.jsx)(j.A, {
                     guildTemplate: e,
@@ -141,7 +141,7 @@ class D extends s.PureComponent {
                         (0, A.C)(b.zY.ORGANIC_REGISTERED_GUILD_TEMPLATE), x.A.flowStart(R.do.ORGANIC_GUILD_TEMPLATES, R.ju.NUF_STARTED)
                     }
                 });
-            case y.QB.EXPIRED:
+            case T.QB.EXPIRED:
                 return this.renderInvalidGuildTemplate();
             default:
                 return null

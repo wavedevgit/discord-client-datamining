@@ -50,9 +50,9 @@ function u(e) {
                         className: d.qJ,
                         children: (0, i.jsx)("div", {
                             className: d.jg,
-                            children: (0, i.jsx)(c.A, {
+                            children: (0, i.jsx)(c.Ay, {
                                 guild: t,
-                                size: c.A.Sizes.SMOL,
+                                size: c.Ay.Sizes.SMOL,
                                 className: d.VL
                             })
                         })

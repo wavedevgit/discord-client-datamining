@@ -6,8 +6,8 @@ var n = i(627968);
 i(64700);
 var l = i(835245),
     s = i(397927),
-    r = i(391048),
-    a = i(636099),
+    a = i(391048),
+    r = i(636099),
     u = i(954571),
     o = i(652215);
 
@@ -58,7 +58,7 @@ function c(t) {
                 sku_id: c,
                 application_id: e,
                 location_stack: S
-            }), (0, r.ET)(), (0, a.z)(), d?.(T)
+            }), (0, a.ET)(), (0, r.z)(), d?.(T)
         },
         onCloseRequest: o.tEg
     })

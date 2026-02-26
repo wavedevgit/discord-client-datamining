@@ -24,9 +24,9 @@ function x(e) {
         children: [(0, i.jsx)(n.cwr, {
             children: (0, i.jsxs)("div", {
                 className: u.Qs,
-                children: [(0, i.jsx)(c.A, {
+                children: [(0, i.jsx)(c.Ay, {
                     guild: l,
-                    size: c.A.Sizes.XLARGE,
+                    size: c.Ay.Sizes.XLARGE,
                     active: !0
                 }), (0, i.jsx)(r.Heading, {
                     className: u.DD,

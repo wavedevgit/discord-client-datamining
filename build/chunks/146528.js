@@ -155,10 +155,10 @@ let G = e => {
                         handleStopPropagation: s
                     } = e;
                     return (0, i.jsxs)(i.Fragment, {
-                        children: [null != r && (0, i.jsx)(p.A, {
+                        children: [null != r && (0, i.jsx)(p.Ay, {
                             guild: r,
                             active: !0,
-                            size: p.A.Sizes.MEDIUM
+                            size: p.Ay.Sizes.MEDIUM
                         }), (0, i.jsxs)("div", {
                             className: M.if,
                             children: [(0, i.jsx)(d.Text, {

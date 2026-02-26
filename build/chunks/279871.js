@@ -30,10 +30,10 @@ function N(t) {
     return (0, a.jsxs)(d.DUT, {
         className: j._S,
         onClick: i,
-        children: [(0, a.jsx)(o.A, {
+        children: [(0, a.jsx)(o.Ay, {
             className: j.$f,
             guild: e,
-            size: o.A.Sizes.MEDIUM,
+            size: o.Ay.Sizes.MEDIUM,
             active: !0
         }), (0, a.jsxs)("div", {
             className: j.OA,

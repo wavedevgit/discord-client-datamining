@@ -30,8 +30,8 @@ var r = t(627968),
     U = t(576622),
     M = t(270574),
     L = t(915614),
-    R = t(946356),
-    y = t(939496),
+    y = t(946356),
+    R = t(939496),
     P = t(780964),
     b = t(840065),
     w = t(71393),
@@ -123,7 +123,7 @@ function ep(e) {
         ...s
     } = e, {
         theme: t
-    } = (0, y.E)(), a = (0, p.rdh)(p.LU0.colors.INTERACTIVE_TEXT_ACTIVE, t).hex();
+    } = (0, R.E)(), a = (0, p.rdh)(p.LU0.colors.INTERACTIVE_TEXT_ACTIVE, t).hex();
     return (0, r.jsx)(p.tvc, {
         size: "md",
         ...s,
@@ -140,7 +140,7 @@ function ej(e) {
         n = (0, v.Ay)(t.id),
         l = (0, u.bG)([_.A], () => _.A.useReducedMotion),
         o = a === Z.PremiumTypes.TIER_1;
-    return s = n?.premiumType === Z.PremiumTypes.TIER_2 ? (0, r.jsxs)(R.A, {
+    return s = n?.premiumType === Z.PremiumTypes.TIER_2 ? (0, r.jsxs)(y.A, {
         user: t,
         displayProfile: n,
         forceShowPremium: !0,
@@ -315,9 +315,9 @@ function e_(e) {
             className: $.Ht,
             children: (0, r.jsxs)("div", {
                 className: $.W5,
-                children: [(0, r.jsx)(h.A, {
+                children: [(0, r.jsx)(h.Ay, {
                     guild: l,
-                    size: h.A.Sizes.MEDIUM,
+                    size: h.Ay.Sizes.MEDIUM,
                     animate: !i,
                     className: $.Hc
                 }), (0, r.jsxs)("div", {

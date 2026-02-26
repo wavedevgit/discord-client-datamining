@@ -152,8 +152,8 @@ let S = t => {
         isModifyingSubscription: S,
         onConfirm: f,
         onCancel: A,
-        error: N
-    } = t, T = [{
+        error: y
+    } = t, N = [{
         variant: "secondary",
         text: h.intl.string(h.t["ETE/oC"]),
         onClick: A,
@@ -177,7 +177,7 @@ let S = t => {
                 blurb: s,
                 fromGuilds: m,
                 toGuild: C,
-                error: N,
+                error: y,
                 slotCount: u,
                 canceledCount: c
             }) : null != o ? (0, n.jsx)(p, {
@@ -185,12 +185,12 @@ let S = t => {
                 blurb: s,
                 guild: o,
                 warning: d,
-                error: N,
+                error: y,
                 slotCount: u,
                 canceledCount: c
             }) : null
         }), (0, n.jsx)(a.H7u, {
-            actions: T,
+            actions: N,
             actionsFullWidth: !1
         })]
     })

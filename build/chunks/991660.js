@@ -5,30 +5,33 @@ i.d(e, {
 var n = i(627968),
     l = i(64700),
     s = i(503698),
-    r = i.n(s),
-    a = i(158954),
+    a = i.n(s),
+    r = i(158954),
     u = i(88744);
 
 function o(t) {
     let {
         children: e,
         gradientClassName: i,
-        ...s
-    } = t, o = l.useRef(null), [c, d] = l.useState(!0), p = () => {
-        o.current?.isScrolledToBottom() === !0 ? d(!1) : d(!0)
-    };
+        onScroll: s,
+        ...o
+    } = t, c = l.useRef(null), [d, p] = l.useState(!0), S = l.useCallback(() => {
+        c.current?.isScrolledToBottom() === !0 ? p(!1) : p(!0)
+    }, [c]), I = l.useCallback(t => {
+        S(), null != s && s(t)
+    }, [S, s]);
     return (0, n.jsxs)(n.Fragment, {
-        children: [(0, n.jsx)(a.ChK, {
+        children: [(0, n.jsx)(r.ChK, {
             fade: !0,
-            ...s,
+            ...o,
             ref: t => {
-                null != t && (o.current = t, p())
+                null != t && (c.current = t, S())
             },
-            onScroll: p,
+            onScroll: I,
             children: e
         }), (0, n.jsx)("div", {
-            className: r()(u.D, i),
-            "data-shown": c
+            className: a()(u.D, i),
+            "data-shown": d
         })]
     })
 }

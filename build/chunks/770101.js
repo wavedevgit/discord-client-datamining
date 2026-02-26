@@ -66,10 +66,10 @@ function S(t) {
             onClick: () => {
                 s(t)
             },
-            children: [(0, n.jsx)(c.A, {
+            children: [(0, n.jsx)(c.Ay, {
                 className: p.Bq,
                 guild: t,
-                size: c.A.Sizes.SMALL
+                size: c.Ay.Sizes.SMALL
             }), (0, n.jsxs)("div", {
                 className: p.Vi,
                 children: [(0, n.jsx)(d.Text, {

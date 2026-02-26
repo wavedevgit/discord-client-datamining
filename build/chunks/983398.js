@@ -1,6 +1,6 @@
 /** chunk id: 983398, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => w
+    A: () => S
 });
 var r = n(627968),
     l = n(64700),
@@ -15,13 +15,13 @@ var r = n(627968),
     m = n(722523),
     A = n(634925),
     _ = n(744201),
-    g = n(867060),
-    f = n(568065),
+    f = n(867060),
+    g = n(568065),
     x = n(652215),
     v = n(508155),
     h = n(136708),
-    j = n(985018),
-    b = n(772574),
+    b = n(985018),
+    j = n(772574),
     E = n(956022);
 
 function I(e) {
@@ -30,14 +30,14 @@ function I(e) {
         nextActive: l,
         position: i
     } = e;
-    return t = n && !1 !== l ? f.z0.FULL : n && !1 === l ? f.z0.HALF : f.z0.NONE, (0, r.jsxs)("div", {
+    return t = n && !1 !== l ? g.z0.FULL : n && !1 === l ? g.z0.HALF : g.z0.NONE, (0, r.jsxs)("div", {
         className: E.progressContainer,
         children: [(0, r.jsx)("div", {
             className: s()(E.progress, E[i], E[t])
         }), (0, r.jsx)("div", {
-            className: s()(E.boostContainer, b.JD, {
+            className: s()(E.boostContainer, j.JD, {
                 [E.boostContainerActive]: n,
-                [b.vu]: n
+                [j.vu]: n
             }),
             children: (0, r.jsx)(u._Jp, {
                 size: "sm",
@@ -47,7 +47,7 @@ function I(e) {
     })
 }
 
-function S(e) {
+function w(e) {
     let {
         isActive: t,
         index: n
@@ -81,13 +81,13 @@ function S(e) {
             children: (0, r.jsx)(o.EYj, {
                 color: i,
                 variant: "text-sm/medium",
-                children: j.intl.string(h.default.nIj3LZ)
+                children: b.intl.string(h.default.nIj3LZ)
             })
         })]
     })
 }
 
-function w(e) {
+function S(e) {
     let t, {
             guildId: n,
             index: i,
@@ -96,13 +96,13 @@ function w(e) {
         } = e,
         a = (0, c.Ay)(n, s),
         u = (0, c.Ay)(n, o),
-        d = a.type !== f.b_.INACTIVE,
-        x = u.type !== f.b_.INACTIVE,
-        v = a.type === f.b_.TIER_OVERRIDE_ACTIVATED,
-        [h, j] = l.useState(void 0);
-    (0, g.A)(h), t = 0 === i ? f.At.START : null == o ? f.At.END : f.At.MIDDLE;
+        d = a.type !== g.b_.INACTIVE,
+        x = u.type !== g.b_.INACTIVE,
+        v = a.type === g.b_.TIER_OVERRIDE_ACTIVATED,
+        [h, b] = l.useState(void 0);
+    (0, f.A)(h), t = 0 === i ? g.At.START : null == o ? g.At.END : g.At.MIDDLE;
     let {
-        textColor: b
+        textColor: j
     } = (0, _.A)(d);
     return (0, r.jsxs)(A.h, {
         guildId: n,
@@ -114,13 +114,13 @@ function w(e) {
             nextActive: null != o ? x : void 0
         }), (0, r.jsx)(p.Ft, {
             title: s.title,
-            textColor: b,
+            textColor: j,
             footer: !v && (0, r.jsx)(A.A, {
                 className: E.footer,
                 guildId: n,
                 powerup: s
             }),
-            children: (0, r.jsx)(S, {
+            children: (0, r.jsx)(w, {
                 isActive: d,
                 index: i
             })
@@ -128,7 +128,7 @@ function w(e) {
             children: (0, r.jsx)(m.Ay, {
                 guildId: n,
                 powerup: s,
-                onError: j
+                onError: b
             })
         })]
     })

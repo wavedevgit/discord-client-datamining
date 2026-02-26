@@ -170,9 +170,9 @@ function C(n) {
             })
         }
         if (D) return (0, t.jsxs)(t.Fragment, {
-            children: [null != f && (0, t.jsx)(p.A, {
+            children: [null != f && (0, t.jsx)(p.Ay, {
                 guild: f,
-                size: p.A.Sizes.MINI
+                size: p.Ay.Sizes.MINI
             }), U.intl.string(U.t.l8ufqL)]
         })
     }, [S?.currentPeriodEnd, f, R, O, D, _]), $ = null != K ? (0, t.jsx)(u.Text, {

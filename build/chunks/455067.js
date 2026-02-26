@@ -26,10 +26,10 @@ function A(e) {
             className: m.Ov,
             children: [null != n && (0, i.jsxs)("div", {
                 className: m.yB,
-                children: [(0, i.jsx)(a.A, {
+                children: [(0, i.jsx)(a.Ay, {
                     guild: n,
                     active: !0,
-                    size: a.A.Sizes.SMOL,
+                    size: a.Ay.Sizes.SMOL,
                     className: m.$f
                 }), (0, i.jsx)(s.Heading, {
                     variant: "heading-sm/semibold",

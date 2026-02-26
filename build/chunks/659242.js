@@ -84,9 +84,9 @@ function G(e) {
     } = e, s = l.useCallback(e => {
         t?.(e), null != t && d?.(e)
     }, [t, d]), c = (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(u.A, {
+        children: [(0, i.jsx)(u.Ay, {
             guild: n,
-            size: u.A.Sizes.MINI,
+            size: u.Ay.Sizes.MINI,
             active: !0,
             className: r()(D.$f, D.Kk)
         }), (0, i.jsx)(_.A, {

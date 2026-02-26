@@ -218,8 +218,9 @@ function F(e) {
     if (null == c) return null;
     let el = M.Ay.getName(n),
         er = P.intl.string(P.t.jYnGPG),
-        ea = K && null != X.text,
-        eo = K && null != J && null != Q;
+        ea = W !== h.clD.OFFLINE ? W : void 0,
+        eo = K && null != X.text,
+        ec = K && null != J && null != Q;
     return (0, i.jsxs)(h.DUT, {
         innerRef: o,
         tag: "li",
@@ -235,7 +236,7 @@ function F(e) {
             size: h._3J.SIZE_24,
             src: ei,
             avatarDecoration: en,
-            status: K ? W : void 0,
+            status: K ? ea : void 0,
             isMobile: K ? Y : void 0,
             ...es
         }), (0, i.jsxs)("div", {
@@ -245,9 +246,9 @@ function F(e) {
                 className: w.UU,
                 lineClamp: 1,
                 children: el
-            }), (eo || ea) && (0, i.jsxs)("div", {
+            }), (ec || eo) && (0, i.jsxs)("div", {
                 className: w.J2,
-                children: [eo ? (0, i.jsx)(S.A, {
+                children: [ec ? (0, i.jsx)(S.A, {
                     size: "custom",
                     color: $,
                     channel: J,
@@ -259,7 +260,7 @@ function F(e) {
                     variant: "text-xs/medium",
                     color: "text-status-online",
                     lineClamp: 1,
-                    children: eo ? Q : X.text
+                    children: ec ? Q : X.text
                 })]
             })]
         }), "sending" === C && (0, i.jsx)("div", {

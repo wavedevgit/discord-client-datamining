@@ -27,8 +27,8 @@ var i = n(627968),
     j = n(818348),
     S = n(985018),
     C = n(239903),
-    T = n(522759);
-let y = n(906118),
+    y = n(522759);
+let T = n(906118),
     b = new g.A("LoginQRSocket");
 
 function R(e) {
@@ -37,8 +37,8 @@ function R(e) {
     } = e, [n, r] = s.useState(!1);
     return s.useEffect(() => {
         let e = new Image;
-        e.src = y, e.onload = () => r(!0), e.onerror = () => r(!0)
-    }, [y]), s.useEffect(() => {
+        e.src = T, e.onload = () => r(!0), e.onerror = () => r(!0)
+    }, [T]), s.useEffect(() => {
         n && o.ORC.announce(S.intl.string(S.t.j2p125))
     }, [n]), (0, i.jsx)("div", {
         className: C.Ac,
@@ -50,7 +50,7 @@ function R(e) {
             }), (0, i.jsx)("div", {
                 className: C.R6,
                 children: (0, i.jsx)("img", {
-                    src: y,
+                    src: T,
                     alt: ""
                 })
             })]
@@ -94,7 +94,7 @@ function L(e) {
                 children: [(0, i.jsx)(R, {
                     text: 1 === t.step ? `https://discord.com/ra/${t.fingerprint}` : ""
                 }), (0, i.jsx)(_.hE, {
-                    className: T.QB,
+                    className: y.QB,
                     children: S.intl.string(S.t.UPiHaL)
                 }), null != s ? (0, i.jsx)(O, {
                     children: s
@@ -130,7 +130,7 @@ function L(e) {
                     isMobile: !0,
                     status: j.cl.ONLINE
                 }), (0, i.jsx)(_.hE, {
-                    className: T.QB,
+                    className: y.QB,
                     children: S.intl.string(S.t.apGCUT)
                 }), (0, i.jsx)(_.tK, {
                     children: S.intl.format(S.t.Cbl5JK, {

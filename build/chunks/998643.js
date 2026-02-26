@@ -1,7 +1,7 @@
 /** chunk id: 998643, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.r(t), n.d(t, {
-    default: () => eT
+    default: () => ey
 });
 var i = n(627968),
     s = n(64700),
@@ -27,8 +27,8 @@ var i = n(627968),
     j = n(850381),
     S = n(21599),
     C = n(614986),
-    T = n(957622),
-    y = n(463347),
+    y = n(957622),
+    T = n(463347),
     b = n(210714),
     R = n(565287),
     O = n(961350),
@@ -81,7 +81,7 @@ let er = (0, G.A)(Y.A),
     eN = (0, G.A)(X.A),
     ev = (0, G.A)(Z.A),
     ej = (0, G.A)(g.A),
-    eS = (0, G.A)(T.A);
+    eS = (0, G.A)(y.A);
 class eC extends s.PureComponent {
     state = {
         splash: null,
@@ -326,12 +326,12 @@ class eC extends s.PureComponent {
                     ...e
                 })
             }), (0, i.jsx)(m.A, {
-                path: ei.BVt.CHANNELS_GAME_SHOP(y.pv.guildId(), ":pageIndex", ":skuId", ":slug?"),
+                path: ei.BVt.CHANNELS_GAME_SHOP(T.pv.guildId(), ":pageIndex", ":skuId", ":slug?"),
                 render: e => (0, i.jsx)(eI, {
                     ...e
                 })
             }), (0, i.jsx)(m.A, {
-                path: ei.BVt.CHANNEL(y.pv.guildId(), y.pv.channelId({
+                path: ei.BVt.CHANNEL(T.pv.guildId(), T.pv.channelId({
                     optional: !0
                 }), ":messageId?"),
                 render: e => (0, i.jsx)(ex, {
@@ -354,7 +354,7 @@ class eC extends s.PureComponent {
         })
     }
 }
-let eT = d.Ay.connectStores([O.default, w.A, L.A, I.A, N.A], e => {
+let ey = d.Ay.connectStores([O.default, w.A, L.A, I.A, N.A], e => {
     let {
         match: t,
         location: n

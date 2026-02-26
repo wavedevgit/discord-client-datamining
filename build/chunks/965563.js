@@ -37,10 +37,10 @@ function h() {
                 id: t.id,
                 label: t.name,
                 value: t.id,
-                leading: (0, i.jsx)(r.A, {
+                leading: (0, i.jsx)(r.Ay, {
                     className: A.cl,
                     guild: t,
-                    size: r.A.Sizes.SMALLER,
+                    size: r.Ay.Sizes.SMALLER,
                     active: !0
                 })
             }

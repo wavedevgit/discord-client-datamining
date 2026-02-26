@@ -73,7 +73,7 @@ let A = e => {
             onClick: i,
             size: j.applicationIcon,
             className: E
-        }) : null != l ? (0, n.jsx)(x.A, {
+        }) : null != l ? (0, n.jsx)(x.Ay, {
             onClick: i,
             active: !0,
             guild: l,

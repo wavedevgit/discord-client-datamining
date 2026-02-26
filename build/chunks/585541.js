@@ -25,9 +25,9 @@ function A(e) {
         setSlide: r,
         ready: A,
         token: E
-    } = e, [x, I] = s.useState(!1), [N, v] = s.useState(null), [j, S] = s.useState(null), [C, T] = s.useState(""), y = s.useRef(null);
+    } = e, [x, I] = s.useState(!1), [N, v] = s.useState(null), [j, S] = s.useState(null), [C, y] = s.useState(""), T = s.useRef(null);
     return s.useEffect(() => {
-        A && y.current?.focus()
+        A && T.current?.focus()
     }, [A]), (0, i.jsxs)("div", {
         children: [(0, i.jsx)(c._V, {
             src: null == j ? n(79418) : n(579656),
@@ -44,10 +44,10 @@ function A(e) {
                 name: "password",
                 type: "password",
                 label: g.intl.string(g.t["8dM4FO"]),
-                setRef: y,
+                setRef: T,
                 className: f.SX,
                 value: C,
-                onChange: T,
+                onChange: y,
                 error: N,
                 autoComplete: "new-password",
                 maxLength: 72,
@@ -79,7 +79,7 @@ function A(e) {
                                         email: n
                                     }
                                 } = e;
-                                T(""), t(n), r(_.k.SUCCESS)
+                                y(""), t(n), r(_.k.SUCCESS)
                             }).catch(e => {
                                 if (e instanceof Error) S(g.intl.formatToPlainString(g.t.aTVNes, {
                                     statusPageURL: p.qF7.STATUS
@@ -118,7 +118,7 @@ function A(e) {
                 variant: "secondary",
                 fullWidth: !0,
                 onClick: () => {
-                    T(""), r(_.k.START)
+                    y(""), r(_.k.START)
                 }
             })
         })]

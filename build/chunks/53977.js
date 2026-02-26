@@ -11,8 +11,8 @@ var i = n(627968),
     c = n(357541),
     d = n(814221),
     u = n(266713),
-    g = n(985018),
-    m = n(119575);
+    m = n(985018),
+    g = n(119575);
 
 function x() {
     let {
@@ -45,21 +45,21 @@ function x() {
                 applicationId: _.application.id
             }), x.current = !0)
         }, [h, e, _]), h) return (0, i.jsx)("div", {
-        className: m.L,
+        className: g.L,
         children: (0, i.jsx)(a.y$y, {})
     });
     if (null == _) return (0, i.jsx)(u.A, {});
     let I = (0, i.jsxs)(a.BJc, {
         gap: 4,
-        className: m.w,
+        className: g.w,
         children: [(0, i.jsx)(a.Heading, {
             variant: "heading-md/medium",
             color: "text-strong",
-            children: g.intl.string(g.t["oqalC+"])
+            children: m.intl.string(m.t["oqalC+"])
         }), (0, i.jsx)(a.Text, {
             variant: "text-sm/normal",
             color: "text-subtle",
-            children: g.intl.format(g.t.YnNFWa, {
+            children: m.intl.format(m.t.YnNFWa, {
                 applicationName: _.application.name
             })
         })]
@@ -89,7 +89,7 @@ function x() {
                     size: 128
                 }), I, (0, i.jsx)(a.Button, {
                     icon: a.j96,
-                    text: g.intl.string(g.t["lBG2s/"]),
+                    text: m.intl.string(m.t["lBG2s/"]),
                     size: "md",
                     color: "secondary",
                     onClick: A

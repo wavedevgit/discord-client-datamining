@@ -23,7 +23,7 @@ r.Ay.initialize();
 let E = e => {
     let {
         location: t
-    } = e, n = (0, r.bG)([g.default], () => g.default.isAuthenticated()), E = (0, r.bG)([u.A], () => u.A.hasLoadedExperiments), x = (0, _.Jp)("RSL - Landing Page"), [I, N] = s.useState(!1), [v, j] = s.useState(f.intl.string(f.t["9exy+V"])), [S, C] = s.useState(!0), T = e => {
+    } = e, n = (0, r.bG)([g.default], () => g.default.isAuthenticated()), E = (0, r.bG)([u.A], () => u.A.hasLoadedExperiments), x = (0, _.Jp)("RSL - Landing Page"), [I, N] = s.useState(!1), [v, j] = s.useState(f.intl.string(f.t["9exy+V"])), [S, C] = s.useState(!0), y = e => {
         switch (e) {
             case m.t02.INVALID_FORM_BODY:
             case m.t02.DSA_RSL_REPORT_NOT_FOUND:
@@ -52,9 +52,9 @@ let E = e => {
         let e = async e => {
             try {
                 let t = null != e ? await (0, h.q)(e) : void 0;
-                null != t ? j(f.intl.string(f.t.e6mZMt)) : T(t.body?.code)
+                null != t ? j(f.intl.string(f.t.e6mZMt)) : y(t.body?.code)
             } catch (e) {
-                T(e.body?.code)
+                y(e.body?.code)
             } finally {
                 N(!1)
             }

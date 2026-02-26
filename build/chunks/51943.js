@@ -53,7 +53,7 @@ function g(e) {
                 })
             })
         },
-        children: [(0, i.jsx)(d.A, {
+        children: [(0, i.jsx)(d.Ay, {
             tabIndex: -1,
             guild: g,
             showBadge: !0,
@@ -61,7 +61,7 @@ function g(e) {
             badgeStrokeColor: (0, a.Mw)(E) ? s.A.unsafe_rawColors.PRIMARY_600.css : s.A.unsafe_rawColors.WHITE.css,
             badgeTooltipColor: r.oMw.PRIMARY,
             badgeTooltipDelay: h.In,
-            size: d.A.Sizes.MEDIUM,
+            size: d.Ay.Sizes.MEDIUM,
             active: !0
         }), (0, i.jsxs)("div", {
             className: A.zH,

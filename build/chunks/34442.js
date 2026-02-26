@@ -12,13 +12,13 @@ var i = n(627968),
     c = n(735321),
     d = n(958338),
     u = n(985018),
-    g = n(748594);
+    m = n(748594);
 
-function m(e) {
+function g(e) {
     let {
         widgetType: t,
         widget: n,
-        onAddGame: m,
+        onAddGame: g,
         children: x,
         ...f
     } = e, p = l.useMemo(() => new Set(n.games.map(e => e.applicationId)), [n.games]), {
@@ -39,8 +39,8 @@ function m(e) {
             action: "GAME_ADDED",
             gameId: e,
             widgetEdited: t
-        }), E.includes(e) && T(e), m?.()
-    }, [t, h, m, E, T]), y = l.useMemo(() => {
+        }), E.includes(e) && T(e), g?.()
+    }, [t, h, g, E, T]), y = l.useMemo(() => {
         let e = new Map(j.map(e => [String(e.value), {
                 id: String(e.value),
                 value: String(e.value),
@@ -54,15 +54,15 @@ function m(e) {
         ...v,
         threshold: a.Ht.rankings.CONTAINS,
         keys: ["label"]
-    }), [v]), S = l.useCallback(e => "" === e.trim() ? y.length : (0, a.Ht)(y, e, N).length, [y, N]), C = l.useCallback(e => {
+    }), [v]), C = l.useCallback(e => "" === e.trim() ? y.length : (0, a.Ht)(y, e, N).length, [y, N]), S = l.useCallback(e => {
         let n = e.target.value;
         "" === _.trim() && "" !== n.trim() && h({
             action: "GAME_SEARCH_SESSION_STARTED",
             widgetEdited: t,
             numCharacters: n.trim().length,
-            numResults: S(n)
+            numResults: C(n)
         }), A(n), I.current = n
-    }, [_, h, t, S]);
+    }, [_, h, t, C]);
     return (0, i.jsx)(s.YNO, {
         ...f,
         onRequestOpen: () => {
@@ -76,7 +76,7 @@ function m(e) {
                 action: "GAME_SEARCH_SESSION_ENDED",
                 widgetEdited: t,
                 numCharacters: I.current.trim().length,
-                numResults: S(I.current)
+                numResults: C(I.current)
             })
         },
         renderPopout: e => {
@@ -84,7 +84,7 @@ function m(e) {
                 closePopout: t
             } = e;
             return (0, i.jsx)(s.lGe, {
-                className: g.C,
+                className: m.C,
                 "aria-label": u.intl.string(u.t.uqw8wK),
                 children: (0, i.jsxs)(s.iS7, {
                     selectionMode: "single",
@@ -99,7 +99,7 @@ function m(e) {
                         hideLabel: !0,
                         placeholder: u.intl.string(u.t["5h0QOP"]),
                         autoFocus: !0,
-                        onQueryChange: C
+                        onQueryChange: S
                     }), (0, i.jsx)(s.X2W, {
                         maxVisibleItems: 7
                     })]
@@ -115,7 +115,7 @@ function x(e) {
         disabled: t,
         ...n
     } = e, a = l.useRef(null);
-    return (0, i.jsx)(m, {
+    return (0, i.jsx)(g, {
         targetElementRef: a,
         position: "bottom",
         align: "center",
@@ -134,14 +134,14 @@ function x(e) {
 
 function f(e) {
     let t = l.useRef(null);
-    return (0, i.jsx)(m, {
+    return (0, i.jsx)(g, {
         targetElementRef: t,
         position: "right",
         align: "top",
         ...e,
         children: e => (0, i.jsx)(s.DUT, {
             innerRef: t,
-            className: g.c,
+            className: m.c,
             "aria-label": u.intl.string(u.t.SgTOtX),
             ...e,
             children: (0, i.jsx)(s.pa$, {

@@ -319,9 +319,9 @@ function V(e) {
                 direction: "left"
             }), (0, i.jsx)("div", {
                 ref: u,
-                children: (0, i.jsx)(m.A, {
+                children: (0, i.jsx)(m.Ay, {
                     guild: t,
-                    size: m.A.Sizes.SMALLER,
+                    size: m.Ay.Sizes.SMALLER,
                     className: D.gL,
                     active: !0
                 })

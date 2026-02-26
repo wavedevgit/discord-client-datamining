@@ -35,26 +35,26 @@ function _(e) {
         badge: u,
         className: A,
         onHover: _,
-        children: g
-    } = e, f = (0, o.A)(t), x = (0, a.Ay)(t, n), v = x.type !== m.b_.INACTIVE, h = x.sourceEntitlement?.ends_at != null, j = (0, s.A)(t, n, "GuildPowerupCard"), b = l.useRef(null), E = (0, p.A)(t, n), [I, S] = l.useState(!1), w = (0, i.K)(S, 1);
+        children: f
+    } = e, g = (0, o.A)(t), x = (0, a.Ay)(t, n), v = x.type !== m.b_.INACTIVE, h = x.sourceEntitlement?.ends_at != null, b = (0, s.A)(t, n, "GuildPowerupCard"), j = l.useRef(null), E = (0, p.A)(t, n), [I, w] = l.useState(!1), S = (0, i.K)(w, 1);
     return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(d.NI, {
             label: n.title,
             isActive: v,
             isWarning: h,
             badge: u,
-            canRollback: j,
+            canRollback: b,
             onClick: E,
             onMouseOver: () => _?.(!0),
             onMouseLeave: () => _?.(!1),
             className: A,
             ref: e => {
-                b.current = e, w.current = e
+                j.current = e, S.current = e
             },
-            children: g
-        }), !j && f && (0, r.jsx)(c.A, {
+            children: f
+        }), !b && g && (0, r.jsx)(c.A, {
             powerup: n,
-            targetRef: b,
+            targetRef: j,
             isCardVisible: I
         })]
     })

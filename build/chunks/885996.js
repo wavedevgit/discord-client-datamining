@@ -8,8 +8,8 @@ var n = i(627968);
 i(64700);
 var l = i(503698),
     s = i.n(l),
-    r = i(187322),
-    a = i(855522),
+    a = i(187322),
+    r = i(855522),
     u = i(158954),
     o = i(827734),
     c = i(159416),
@@ -29,7 +29,7 @@ function S(t) {
         subtitle: E,
         maxBenefits: f = p
     } = t;
-    return (0, n.jsx)(r.vN, {
+    return (0, n.jsx)(a.vN, {
         children: (0, n.jsxs)("div", {
             className: s()(c.kL, d.t),
             tabIndex: 0,
@@ -74,7 +74,7 @@ function S(t) {
                 children: (0, n.jsx)(u.EYj, {
                     color: "interactive-text-default",
                     variant: "text-sm/medium",
-                    children: a.A.Messages.STOREFRONT_BENEFITS_SUMMARY.format({
+                    children: r.A.Messages.STOREFRONT_BENEFITS_SUMMARY.format({
                         count: T
                     })
                 })
@@ -87,12 +87,12 @@ function S(t) {
                         children: [(0, n.jsx)(u.EYj, {
                             color: "text-default",
                             variant: "eyebrow",
-                            children: a.A.Messages.STOREFRONT_BENEFITS_TITLE
+                            children: r.A.Messages.STOREFRONT_BENEFITS_TITLE
                         }), _.length > f ? (0, n.jsxs)(n.Fragment, {
                             children: [_.slice(0, f), (0, n.jsx)(u.EYj, {
                                 variant: "text-md/semibold",
                                 color: "text-subtle",
-                                children: a.A.Messages.STOREFRONT_MORE_BENEFITS.format({
+                                children: r.A.Messages.STOREFRONT_MORE_BENEFITS.format({
                                     count: _.length - f
                                 })
                             })]

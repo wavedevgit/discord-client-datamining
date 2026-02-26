@@ -33,9 +33,9 @@ function S(e) {
         let t = (0, m.Iv)(I, 18, !0);
         T = (0, i.jsx)(s.Drp, {
             disabled: !0,
-            iconLeft: () => (0, i.jsx)(g.A, {
+            iconLeft: () => (0, i.jsx)(g.Ay, {
                 guild: I,
-                size: g.A.Sizes.MINI
+                size: g.Ay.Sizes.MINI
             }),
             leadingAccessory: null != t ? {
                 type: "image",

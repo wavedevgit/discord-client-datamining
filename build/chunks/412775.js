@@ -32,13 +32,13 @@ function v(e) {
         onClose: v
     } = e, {
         trackUserProfileAction: T
-    } = (0, u.NJ)(), E = (0, s.bG)([c.A], () => c.A.getGuildId()), C = (0, a.q)({
+    } = (0, u.NJ)(), E = (0, s.bG)([c.A], () => c.A.getGuildId()), y = (0, a.q)({
         userId: n.id
-    }), y = (0, s.bG)([o.A], () => o.A.hidePersonalInformation), L = (0, s.bG)([d.default], () => d.default.locale), S = (0, x.A)(n.id), O = (0, A.A)(n.id);
+    }), C = (0, s.bG)([o.A], () => o.A.hidePersonalInformation), L = (0, s.bG)([d.default], () => d.default.locale), S = (0, x.A)(n.id), O = (0, A.A)(n.id);
     return (0, i.jsxs)(l.IpV, {
         fade: !0,
         className: N.XG,
-        children: [t?.bio != null && t?.bio !== "" && !y && (0, i.jsx)(m.A, {
+        children: [t?.bio != null && t?.bio !== "" && !C && (0, i.jsx)(m.A, {
             userBio: t.bio,
             setLineClamp: !1
         }), t?.guildId != null && (0, i.jsx)(I.A, {
@@ -54,10 +54,10 @@ function v(e) {
             children: (0, i.jsx)(r.T, {
                 userId: n.id
             })
-        }), C.length > 0 && (0, i.jsx)(h.A, {
+        }), y.length > 0 && (0, i.jsx)(h.A, {
             heading: b.intl.string(b.t["Uv/eTx"]),
             children: (0, i.jsx)(p.A, {
-                applicationIds: C
+                applicationIds: y
             })
         }), (0, i.jsx)(h.A, {
             heading: b.intl.string(b.t.a6XYD9),

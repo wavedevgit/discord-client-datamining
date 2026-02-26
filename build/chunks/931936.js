@@ -1,6 +1,6 @@
 /** chunk id: 931936, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => f
 });
 var r = n(627968),
     l = n(158954),
@@ -28,11 +28,11 @@ function _(e) {
     })
 }
 
-function g(e) {
+function f(e) {
     let {
         guildId: t
-    } = e, n = (0, o.A)(t), g = (0, i.A)(t), f = (0, s.A)(t), x = (0, c.A)(g.shouldShow || f.shouldShow);
-    return n.shouldShow || g.shouldShow || f.shouldShow || x.shouldShow ? (0, r.jsxs)("div", {
+    } = e, n = (0, o.A)(t), f = (0, i.A)(t), g = (0, s.A)(t), x = (0, c.A)(f.shouldShow || g.shouldShow);
+    return n.shouldShow || f.shouldShow || g.shouldShow || x.shouldShow ? (0, r.jsxs)("div", {
         className: A.kL,
         children: [(0, r.jsx)(l.EYj, {
             variant: "eyebrow",
@@ -40,13 +40,13 @@ function g(e) {
             children: m.intl.string(p.default["3FRirU"])
         }), n.shouldShow && (0, r.jsx)(_, {
             text: n.text
-        }), g.shouldShow && (0, r.jsx)(d.A, {
+        }), f.shouldShow && (0, r.jsx)(d.A, {
             guildId: t,
-            powerupNames: g.expiringPowerupNames,
-            warnings: g.warnings
-        }), f.shouldShow && null != f.notificationConfig && (0, r.jsx)(u.A, {
-            notificationConfig: f.notificationConfig,
-            markAsDismissed: f.markAsDismissed
+            powerupNames: f.expiringPowerupNames,
+            warnings: f.warnings
+        }), g.shouldShow && null != g.notificationConfig && (0, r.jsx)(u.A, {
+            notificationConfig: g.notificationConfig,
+            markAsDismissed: g.markAsDismissed
         }), x.shouldShow && (0, r.jsx)(a.A, {
             markAsDismissed: x.markAsDismissed
         })]

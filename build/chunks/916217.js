@@ -26,8 +26,8 @@ var i = t(627968),
     v = t(518477),
     T = t(652215),
     E = t(996988),
-    C = t(985018),
-    y = t(200445),
+    y = t(985018),
+    C = t(200445),
     L = t(199385),
     S = t(735633);
 
@@ -65,7 +65,7 @@ function O(e) {
             children: (0, i.jsxs)(l.EOs, {
                 "data-migration-pending": !0,
                 transitionState: G,
-                className: y.zr,
+                className: C.zr,
                 hideShadow: !0,
                 "aria-labelledby": w,
                 parentComponent: "NonUserBotProfileModal",
@@ -73,7 +73,7 @@ function O(e) {
                     component: (0, i.jsx)(l.AC4, {
                         children: (0, i.jsx)(l.H, {
                             id: w,
-                            children: C.intl.format(C.t.KRe1Fk, {
+                            children: y.intl.format(y.t.KRe1Fk, {
                                 name: V
                             })
                         })
@@ -93,7 +93,7 @@ function O(e) {
                                 displayProfile: F,
                                 themeType: E.d.MODAL
                             }), (0, i.jsx)("div", {
-                                className: y.El,
+                                className: C.El,
                                 children: (0, i.jsx)(m.A, {
                                     user: n,
                                     displayProfile: F,
@@ -103,9 +103,9 @@ function O(e) {
                                 })
                             })]
                         }), (0, i.jsxs)("div", {
-                            className: y.rf,
+                            className: C.rf,
                             children: [(0, i.jsx)(g.A, {
-                                className: y.Xh,
+                                className: C.Xh,
                                 user: n,
                                 guildId: B,
                                 nickname: V,
@@ -126,10 +126,10 @@ function O(e) {
                                     children: (0, i.jsx)(l.VQ0.Item, {
                                         className: S.YU,
                                         id: v.RP.BOT_INFO,
-                                        "aria-label": C.intl.string(C.t.ZzAR2Y),
+                                        "aria-label": y.intl.string(y.t.ZzAR2Y),
                                         children: (0, i.jsx)(l.Text, {
                                             variant: "text-sm/normal",
-                                            children: C.intl.string(C.t.ZzAR2Y)
+                                            children: y.intl.string(y.t.ZzAR2Y)
                                         })
                                     }, v.RP.BOT_INFO)
                                 }), (0, i.jsxs)(l.IpV, {
@@ -140,7 +140,7 @@ function O(e) {
                                         userBio: F?.bio,
                                         setLineClamp: !1
                                     }), (0, i.jsx)(I.A, {
-                                        heading: C.intl.string(C.t["A//N4k"]),
+                                        heading: y.intl.string(y.t["A//N4k"]),
                                         children: (0, i.jsx)(h.A, {
                                             userId: n.id,
                                             guildId: B,

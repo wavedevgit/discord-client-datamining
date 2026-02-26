@@ -1,15 +1,15 @@
-/** chunk id: 430914, original params: e,t,i (module,exports,require) **/
-i.d(t, {
+/** chunk id: 430914, original params: e,t,n (module,exports,require) **/
+n.d(t, {
     Zs: () => f,
     uS: () => c
 });
-var n = i(311907),
-    l = i(600975),
-    r = i(428835),
-    d = i(961350),
-    a = i(994500),
-    o = i(652215);
-let u = (0, l.C)({
+var i = n(311907),
+    l = n(600975),
+    a = n(428835),
+    r = n(961350),
+    o = n(994500),
+    _ = n(652215);
+let d = (0, l.C)({
     kind: "user",
     id: "2025-11_invite_friend_members",
     label: "Show Friends in Server on Invite Modal",
@@ -37,9 +37,9 @@ let u = (0, l.C)({
 function s(e) {
     if (null == e) return !1;
     let t = e.features;
-    return Array.isArray(t) ? !t.includes(o.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED) : !(t instanceof Set) || !t.has(o.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED)
+    return Array.isArray(t) ? !t.includes(_.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED) : !(t instanceof Set) || !t.has(_.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED)
 }
-let _ = {
+let u = {
     showFriendsInServer: !1,
     showInviter: !1
 };
@@ -47,18 +47,18 @@ let _ = {
 function c(e) {
     let {
         guild: t,
-        ...i
-    } = e, l = (0, n.bG)([d.default], () => d.default.isAuthenticated()), o = (0, n.bG)([a.A], () => a.A.getFriendCount() > 0), c = s(t), f = l && o && c, A = (0, r.Dr)(u, {
-        ...i,
+        ...n
+    } = e, l = (0, i.bG)([r.default], () => r.default.isAuthenticated()), _ = (0, i.bG)([o.A], () => o.A.getFriendCount() > 0), c = s(t), f = l && _ && c, g = (0, a.Dr)(d, {
+        ...n,
         disable: !f
     });
-    return f ? A : _
+    return f ? g : u
 }
 
 function f(e) {
     let {
         guild: t,
-        ...i
-    } = e, n = d.default.isAuthenticated(), l = a.A.getFriendCount() > 0;
-    return n && l && s(t) ? (0, r.Kd)(u, i) : _
+        ...n
+    } = e, i = r.default.isAuthenticated(), l = o.A.getFriendCount() > 0;
+    return i && l && s(t) ? (0, a.Kd)(d, n) : u
 }

@@ -11,8 +11,8 @@ var i = n(627968),
     c = n(788593),
     d = n(742710),
     u = n(463259),
-    g = n(18983),
-    m = n(219016);
+    m = n(18983),
+    g = n(219016);
 
 function x(e) {
     let {
@@ -32,7 +32,7 @@ function x(e) {
             itemPreviewProps: a
         } = e;
         if ("WIDGET" === l && a?.widget != null) return (0, i.jsx)("div", {
-            className: m.dt,
+            className: g.dt,
             children: (0, i.jsx)(u.u, {
                 widget: a.widget,
                 user: t,
@@ -45,7 +45,7 @@ function x(e) {
                 gameName: l
             } = a;
             return (0, i.jsx)(c.A, {
-                className: m.XJ,
+                className: g.XJ,
                 imageSrc: e,
                 gameName: l,
                 applicationId: n,
@@ -59,7 +59,7 @@ function x(e) {
                 widgetType: n
             } = a;
             return (0, i.jsx)(d.A, {
-                className: m.xB,
+                className: g.xB,
                 user: t,
                 widgetType: n,
                 game: e,
@@ -71,8 +71,8 @@ function x(e) {
                 item: e
             } = a;
             return (0, i.jsx)("div", {
-                className: m.Xm,
-                children: (0, i.jsx)(g.A, {
+                className: g.Xm,
+                children: (0, i.jsx)(m.A, {
                     item: e,
                     profileOwner: t,
                     wishlistId: null,
@@ -108,7 +108,7 @@ function x(e) {
         y: 0
     }, E = f.x - j - 60 * !!h, T = f.y - v;
     return (0, i.jsx)("div", {
-        className: m.kL,
+        className: g.kL,
         style: {
             transform: `translate3d(${E}px, ${T}px, 0)`
         },

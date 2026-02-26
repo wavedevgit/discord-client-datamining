@@ -33,9 +33,9 @@ function N(e) {
     } = e, {
         live: T,
         recent: E,
-        stream: C
+        stream: y
     } = (0, u.A)(n.id), {
-        voiceChannel: y,
+        voiceChannel: C,
         voiceActivity: L
     } = (0, A.A)({
         userId: n.id,
@@ -43,7 +43,7 @@ function N(e) {
     }), S = (0, s.bG)([a.A], () => a.A.isFetchingUserOutbox(n.id)), O = n.id === t.id, P = (0, s.bG)([d.A, r.A], () => {
         let e = O ? d.A.getStatus() : r.A.getStatus(n.id);
         return e === l.clD.OFFLINE || e === l.clD.INVISIBLE
-    }), R = (0, s.bG)([o.A], () => o.A.getUserProfile(n.id)?.private === !0), M = T.length > 0 || null != C, G = !R && null == C && null == L && null != y, D = !P && (M || G), U = E.length > 0;
+    }), R = (0, s.bG)([o.A], () => o.A.getUserProfile(n.id)?.private === !0), M = T.length > 0 || null != y, G = !R && null == y && null == L && null != C, D = !P && (M || G), U = E.length > 0;
     return D || U || !S ? (0, i.jsxs)(l.IpV, {
         className: g.XG,
         fade: !0,
@@ -51,11 +51,11 @@ function N(e) {
             "aria-label": j.intl.string(j.t.J6STd9),
             children: (0, i.jsxs)("ul", {
                 className: g.Ci,
-                children: [null != C && (0, i.jsx)("li", {
+                children: [null != y && (0, i.jsx)("li", {
                     children: (0, i.jsx)(p.A, {
                         user: n,
                         currentUser: t,
-                        stream: C,
+                        stream: y,
                         onClose: v
                     })
                 }), T.map((e, s) => (0, i.jsx)("li", {
@@ -69,7 +69,7 @@ function N(e) {
                     children: (0, i.jsx)(f.A, {
                         user: n,
                         currentUser: t,
-                        voiceChannel: y,
+                        voiceChannel: C,
                         onClose: v
                     })
                 })]

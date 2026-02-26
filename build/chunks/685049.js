@@ -1,6 +1,6 @@
 /** chunk id: 685049, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    d: () => g,
+    d: () => m,
     o: () => u
 });
 var i = n(627968),
@@ -27,10 +27,10 @@ function u(e) {
     }) : null
 }
 
-function g(e) {
+function m(e) {
     var t, n, u;
-    let g, {
-            userId: m,
+    let m, {
+            userId: g,
             applicationId: x,
             guildId: f,
             channelId: p,
@@ -38,26 +38,26 @@ function g(e) {
         } = e,
         _ = (0, o.A)(x),
         A = _.length > 0,
-        I = (t = _, n = f, u = p, g = t.slice(0, 3).map(e => s.Ay.getName(n, u, e)), 1 === t.length ? c.intl.formatToPlainString(c.t.FURqTU, {
-            name: g[0]
+        I = (t = _, n = f, u = p, m = t.slice(0, 3).map(e => s.Ay.getName(n, u, e)), 1 === t.length ? c.intl.formatToPlainString(c.t.FURqTU, {
+            name: m[0]
         }) : 2 === t.length ? c.intl.formatToPlainString(c.t["08Usu/"], {
-            name1: g[0],
-            name2: g[1]
+            name1: m[0],
+            name2: m[1]
         }) : 3 === t.length ? c.intl.formatToPlainString(c.t.NTYHag, {
-            name1: g[0],
-            name2: g[1],
-            name3: g[2]
+            name1: m[0],
+            name2: m[1],
+            name3: m[2]
         }) : c.intl.formatToPlainString(c.t["i/5oAn"], {
-            name1: g[0],
-            name2: g[1],
-            name3: g[2],
+            name1: m[0],
+            name2: m[1],
+            name3: m[2],
             numPeople: t.length - 3
         })),
         j = (0, a.A)({
             location: "SocialProofButton",
             applicationId: x,
             source: l.Ob.UserProfile,
-            sourceUserId: m,
+            sourceUserId: g,
             trackEntryPointImpression: !0
         });
     return A && null != j ? (0, i.jsx)(r.H, {

@@ -22,7 +22,7 @@ function m(e) {
         username: m,
         roleColor: A,
         roleColorStrings: _
-    } = (0, a.U)(t), g = (0, u.gn)(t.guildId, t.userId, _ ?? null);
+    } = (0, a.U)(t), f = (0, u.gn)(t.guildId, t.userId, _ ?? null);
     return (0, r.jsxs)("div", {
         className: p.og,
         children: [(0, r.jsx)(s._Jp, {
@@ -45,7 +45,7 @@ function m(e) {
                         variant: "text-md/semibold",
                         name: m,
                         colorString: A ?? null,
-                        colorStrings: g
+                        colorStrings: f
                     })
                 }), c.intl.string(d.default.plwH8d)]
             })

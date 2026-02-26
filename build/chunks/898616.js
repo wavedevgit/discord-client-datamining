@@ -16,10 +16,10 @@ function u(e) {
         location: t,
         wishlist: n,
         profileOwner: u,
-        currentUser: g
-    } = e, m = (0, o.kt)({
+        currentUser: m
+    } = e, g = (0, o.kt)({
         location: t
-    }), x = u.id === g?.id, f = i.useMemo(() => n?.userId != null ? [n.userId] : [], [n]), p = (0, l.bG)([s.A], () => s.A.getGuild((0, r.zf)())), h = n?.items.some(e => (0, a.$)(e)) ?? !1, _ = (0, c.gT)({
+    }), x = u.id === m?.id, f = i.useMemo(() => n?.userId != null ? [n.userId] : [], [n]), p = (0, l.bG)([s.A], () => s.A.getGuild((0, r.zf)())), h = n?.items.some(e => (0, a.$)(e)) ?? !1, _ = (0, c.gT)({
         gameIds: d.sQ,
         userIds: f
     }), A = (0, c.K6)({
@@ -33,5 +33,5 @@ function u(e) {
     }), v = (0, c.ok)({
         gameIds: d.sQ
     });
-    return m && (h || _ || A || I || x && (null != p || j || v))
+    return g && (h || _ || A || I || x && (null != p || j || v))
 }

@@ -27,8 +27,8 @@ var i = n(627968),
     j = n(21599),
     S = n(942614),
     C = n(976860),
-    T = n(210714),
-    y = n(961350),
+    y = n(210714),
+    T = n(961350),
     b = n(650048),
     R = n(71393),
     O = n(299091),
@@ -65,16 +65,16 @@ class q extends s.PureComponent {
             isUnderage: e,
             login: t,
             inviteKey: n
-        } = this.props, i = y.default.getAnalyticsToken();
+        } = this.props, i = T.default.getAnalyticsToken();
         if (null != i && _.h.dispatch({
                 type: "SET_ANALYTICS_TOKEN",
                 analyticsToken: i,
-                userId: y.default.getId()
+                userId: T.default.getId()
             }), L.default.track(G.HAw.INVITE_VIEWED, {
                 invite_code: n
             }, {
                 flush: !0
-            }), (0, T.d)("invite"), !V.VP) {
+            }), (0, y.d)("invite"), !V.VP) {
             let e = this.getInviteKey();
             D.A.launch("discord://" + G.BVt.INVITE(e), () => void 0)
         }
@@ -98,7 +98,7 @@ class q extends s.PureComponent {
         });
         else if (t.state === G.elq.APP_NOT_OPENED) this.handleContinue();
         else if (this.getMode() === z && i !== e.authenticated && i) {
-            let e = y.default.getFingerprint();
+            let e = T.default.getFingerprint();
             if (null != e) {
                 let n = (0, d.d)(e);
                 L.default.track(G.HAw.INVITE_LOGIN_SUCCESSFUL, {
@@ -406,14 +406,14 @@ class q extends s.PureComponent {
         }
     }
 }
-let Y = c.Ay.connectStores([O.A, b.A, y.default, N.A, m.A], e => {
+let Y = c.Ay.connectStores([O.A, b.A, T.default, N.A, m.A], e => {
     let {
         inviteKey: t
     } = e;
     return {
         invite: O.A.getInvite(t) ?? {},
         nativeAppState: N.A.getState(t),
-        authenticated: y.default.isAuthenticated(),
+        authenticated: T.default.isAuthenticated(),
         defaultRoute: b.A.defaultRoute,
         isUnderage: m.A.isUnderageAnonymous()
     }

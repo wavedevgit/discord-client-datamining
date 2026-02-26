@@ -73,7 +73,7 @@ function b(e) {
         size: w
     })) : null != j ? (B = D ? (0, i.jsx)(c.Gg5, {
         size: w
-    }) : (0, i.jsx)(m.A, {
+    }) : (0, i.jsx)(m.Ay, {
         guild: j,
         size: U,
         active: !0,

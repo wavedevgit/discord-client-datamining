@@ -42,18 +42,18 @@ let E = r.createContext({
         onQueryClick: () => {},
         onRemovePendingAddition: () => {}
     }),
-    b = [];
+    y = [];
 
-function j(e) {
+function b(e) {
     let {
-        roles: t = b,
-        members: n = b,
-        users: l = b,
-        guilds: s = b
+        roles: t = y,
+        members: n = y,
+        users: l = y,
+        guilds: s = y
     } = e;
     return r.useMemo(() => [t.length, n.length, l.length, s.length], [t.length, n.length, l.length, s.length])
 }
-let v = e => {
+let j = e => {
     let {
         title: t
     } = e;
@@ -64,7 +64,7 @@ let v = e => {
     }, t)
 };
 
-function y(e) {
+function v(e) {
     let {
         id: t,
         sectionIndex: n,
@@ -76,11 +76,11 @@ function y(e) {
     } = e, g = (0, i.rm)(t), {
         selectedSection: S,
         selectedRow: T,
-        onSelectionChange: b,
-        pendingAdditions: j,
-        onRowClick: v,
-        isAtMaxPendingRows: y
-    } = r.useContext(E), p = u[s], O = f(p), C = p.disabled || O in j, M = p.disabled || !C && y;
+        onSelectionChange: y,
+        pendingAdditions: b,
+        onRowClick: j,
+        isAtMaxPendingRows: v
+    } = r.useContext(E), p = u[s], O = f(p), C = p.disabled || O in b, M = p.disabled || !C && v;
     return (0, r.createElement)(c.DUT, {
         ...g,
         id: t,
@@ -90,9 +90,9 @@ function y(e) {
             [R.A5]: S === n && T === s
         }),
         onClick: e => {
-            M || (e.preventDefault(), p.rowType !== w.T6.EMPTY_STATE && v(p))
+            M || (e.preventDefault(), p.rowType !== w.T6.EMPTY_STATE && j(p))
         },
-        onMouseEnter: () => b(n, s, !1),
+        onMouseEnter: () => y(n, s, !1),
         "aria-disabled": M,
         "aria-selected": C,
         "aria-setsize": u.length,
@@ -125,7 +125,7 @@ let p = e => {
         } = e, {
             roles: s
         } = r.useContext(E), i = s[t];
-        return null == i ? null : (0, l.jsxs)(y, {
+        return null == i ? null : (0, l.jsxs)(v, {
             id: `roles-row-${t}`,
             sectionIndex: w.oO.ROLES,
             rowIndex: t,
@@ -159,7 +159,7 @@ let p = e => {
         } = e, {
             members: n
         } = r.useContext(E), s = n[t];
-        return null == s ? null : (0, l.jsxs)(y, {
+        return null == s ? null : (0, l.jsxs)(v, {
             id: `members-row-${t}`,
             sectionIndex: w.oO.MEMBERS,
             rowIndex: t,
@@ -192,7 +192,7 @@ let p = e => {
         } = e, {
             users: s
         } = r.useContext(E), o = s[t];
-        return null == o ? null : (0, l.jsxs)(y, {
+        return null == o ? null : (0, l.jsxs)(v, {
             id: `users-row-${t}`,
             sectionIndex: w.oO.USERS,
             rowIndex: t,
@@ -222,17 +222,17 @@ let p = e => {
         } = e, {
             guilds: n
         } = r.useContext(E), s = n[t];
-        return null == s ? null : (0, l.jsxs)(y, {
+        return null == s ? null : (0, l.jsxs)(v, {
             id: `guilds-row-${t}`,
             sectionIndex: w.oO.GUILDS,
             rowIndex: t,
             rows: n,
             showCheckbox: !0,
             showRowLabel: !0,
-            children: [(0, l.jsx)(x.A, {
+            children: [(0, l.jsx)(x.Ay, {
                 guild: s.guild,
                 active: !0,
-                size: x.A.Sizes.SMALLER
+                size: x.Ay.Sizes.SMALLER
             }), (0, l.jsx)("div", {
                 className: R.xZ,
                 children: (0, l.jsx)(c.Text, {
@@ -254,10 +254,10 @@ let p = e => {
                 setQuery: o,
                 pendingAdditions: i,
                 setPendingAdditions: a,
-                roles: c = b,
-                members: u = b,
-                users: d = b,
-                guilds: x = b,
+                roles: c = y,
+                members: u = y,
+                users: d = y,
+                guilds: x = y,
                 getRichTag: h,
                 maxPendingRows: m
             } = e, g = r.useRef(null), [R, S] = r.useState({
@@ -291,7 +291,7 @@ let p = e => {
             r.useEffect(() => {
                 g.current?.focus()
             }, []);
-            let j = null != m && Object.keys(i).length >= m;
+            let b = null != m && Object.keys(i).length >= m;
             return (0, l.jsx)(E.Provider, {
                 value: {
                     searchRef: g,
@@ -302,7 +302,7 @@ let p = e => {
                     users: d,
                     guilds: x,
                     pendingAdditions: i,
-                    isAtMaxPendingRows: j,
+                    isAtMaxPendingRows: b,
                     onSelectionChange: function(e, t) {
                         let l = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2];
                         S(n => n.section === e && n.row === t ? n : {
@@ -367,10 +367,10 @@ let p = e => {
                 roles: g,
                 members: R,
                 users: f,
-                guilds: b
+                guilds: y
             } = r.useContext(E), {
-                keys: v,
-                tags: y
+                keys: j,
+                tags: v
             } = r.useMemo(() => {
                 let e = Object.keys(c),
                     t = e.map(e => c[e].display);
@@ -378,11 +378,11 @@ let p = e => {
                     keys: e,
                     tags: t
                 }
-            }, [c]), p = j({
+            }, [c]), p = b({
                 roles: g,
                 members: R,
                 users: f,
-                guilds: b
+                guilds: y
             });
             return (0, l.jsx)(m.A, {
                 ref: o,
@@ -392,9 +392,9 @@ let p = e => {
                 selectedRow: a,
                 onSelectionChange: d,
                 onSelect: h,
-                tags: y,
+                tags: v,
                 sections: p,
-                onRemoveTag: e => w(v[e]),
+                onRemoveTag: e => w(j[e]),
                 placeholder: t,
                 focusAfterReady: n,
                 isReady: s,
@@ -408,19 +408,19 @@ let p = e => {
             } = e;
             switch (t) {
                 case w.oO.ROLES:
-                    return (0, l.jsx)(v, {
+                    return (0, l.jsx)(j, {
                         title: g.intl.string(g.t["LPJmL/"])
                     });
                 case w.oO.MEMBERS:
-                    return (0, l.jsx)(v, {
+                    return (0, l.jsx)(j, {
                         title: g.intl.string(g.t["9Oq93m"])
                     });
                 case w.oO.USERS:
-                    return (0, l.jsx)(v, {
+                    return (0, l.jsx)(j, {
                         title: g.intl.string(g.t.nqDUBX)
                     });
                 case w.oO.GUILDS:
-                    return (0, l.jsx)(v, {
+                    return (0, l.jsx)(j, {
                         title: g.intl.string(g.t["7hB4kg"])
                     });
                 default:
@@ -452,5 +452,5 @@ let p = e => {
             }
             return null
         },
-        useSections: j
+        useSections: b
     }

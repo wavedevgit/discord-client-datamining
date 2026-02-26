@@ -69,7 +69,7 @@ function E(e) {
         children: (0, i.jsxs)("div", {
             className: g.wx,
             children: [(() => {
-                if ("guild" === n && null != S) return (0, i.jsx)(o.A, {
+                if ("guild" === n && null != S) return (0, i.jsx)(o.Ay, {
                     guild: S,
                     size: "Medium",
                     active: !1,

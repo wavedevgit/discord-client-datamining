@@ -28,8 +28,8 @@ var i = n(627968),
     j = n(720353),
     S = n(559568),
     C = n(274303),
-    T = n(13437),
-    y = n(557722),
+    y = n(13437),
+    T = n(557722),
     b = n(148864),
     R = n(146571),
     O = n(976860),
@@ -539,7 +539,7 @@ class X extends s.PureComponent {
                 dismissedChooseAccount: !0
             }))
         };
-        return (0, i.jsx)(T.A, {
+        return (0, i.jsx)(y.A, {
             onDismiss: e
         })
     }
@@ -612,7 +612,7 @@ class X extends s.PureComponent {
         try {
             let {
                 token: n
-            } = await y.A.verifyPhone(t, e, !1);
+            } = await T.A.verifyPhone(t, e, !1);
             await p.A.authorizeIPAddress(n), this.handleLogin()
         } catch (e) {
             null != e.body && null != e.body.message && this.setState({
@@ -630,7 +630,7 @@ class X extends s.PureComponent {
         try {
             let {
                 token: n
-            } = await y.A.verifyPhone(this.getFullLogin(), e, !1);
+            } = await T.A.verifyPhone(this.getFullLogin(), e, !1);
             t(K.BVt.RESET, {
                 search: (0, a.stringify)({
                     token: n,
@@ -697,7 +697,7 @@ class X extends s.PureComponent {
         }
     };
     handleResendCode = () => {
-        y.A.resendCode(this.getFullLogin())
+        T.A.resendCode(this.getFullLogin())
     };
     handleReset = e => {
         null != e && e.preventDefault(), p.A.loginReset(), this.setState({

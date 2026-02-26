@@ -66,7 +66,7 @@ function u(t) {
                 className: L.wx,
                 direction: o.A.Direction.VERTICAL,
                 separator: !1,
-                children: [null != U && (0, i.jsx)(p.A, {
+                children: [null != U && (0, i.jsx)(p.Ay, {
                     guild: U
                 }), (0, i.jsx)(s.Text, {
                     className: L.J5,

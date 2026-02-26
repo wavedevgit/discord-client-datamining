@@ -25,9 +25,9 @@ function j(e) {
     return (0, i.jsxs)(d.DUT, {
         className: C.y5,
         onClick: l,
-        children: [(0, i.jsx)(o.A, {
+        children: [(0, i.jsx)(o.Ay, {
             guild: t,
-            size: o.A.Sizes.MEDIUM,
+            size: o.Ay.Sizes.MEDIUM,
             active: !0
         }), (0, i.jsx)(d.Text, {
             className: C.J5,
@@ -47,9 +47,9 @@ function L(e) {
     } = e, a = (0, c.bG)([u.A], () => u.A.getDirectoryEntry(t, l.id)), n = s.useRef(null);
     return (0, i.jsxs)("div", {
         className: C._S,
-        children: [(0, i.jsx)(o.A, {
+        children: [(0, i.jsx)(o.Ay, {
             guild: l,
-            size: o.A.Sizes.MEDIUM,
+            size: o.Ay.Sizes.MEDIUM,
             active: !0
         }), (0, i.jsx)(d.Text, {
             className: C.J5,

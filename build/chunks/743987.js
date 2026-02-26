@@ -53,9 +53,9 @@ function x(e) {
             children: [(0, s.jsx)(a.m, {
                 text: h.name,
                 delay: E,
-                children: (0, s.jsx)(u.A, {
+                children: (0, s.jsx)(u.Ay, {
                     guild: h,
-                    size: u.A.Sizes.SMOL,
+                    size: u.Ay.Sizes.SMOL,
                     className: p.$f
                 })
             }), (0, s.jsx)(i.Text, {

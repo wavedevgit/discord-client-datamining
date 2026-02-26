@@ -7,8 +7,8 @@ i.d(e, {
 var n, l = i(627968);
 i(64700);
 var s = i(323125),
-    r = i(397927),
-    a = i(793574),
+    a = i(397927),
+    r = i(793574),
     u = i(688810),
     o = i(897100),
     c = i(638643),
@@ -26,10 +26,10 @@ function E(t) {
         onClick: i,
         onHasClicked: n,
         skuId: s,
-        subscriptionPlan: r,
-        icon: a,
+        subscriptionPlan: a,
+        icon: r,
         state: u = 0
-    } = t, o = null != r ? (0, S._J)(r) : null, c = 1 === u;
+    } = t, o = null != a ? (0, S._J)(a) : null, c = 1 === u;
     return 0 === u || c ? (0, l.jsx)(C, {
         appId: e,
         skuId: s,
@@ -37,7 +37,7 @@ function E(t) {
             i(t), n?.()
         },
         loading: c,
-        icon: a,
+        icon: r,
         text: null != o ? _.intl.formatToPlainString(_.t.i4T8vz, {
             rate: o
         }) : _.intl.string(_.t.uuzaAK)
@@ -65,10 +65,10 @@ function f(t) {
         onClick: i,
         onHasClicked: n,
         sku: s,
-        icon: r
+        icon: a
     } = t, {
         analyticsLocations: o
-    } = (0, u.Ay)(a.A.APP_STOREFRONT), d = (0, I.L)(s.id), p = s.type === A.Puh.DURABLE && d, {
+    } = (0, u.Ay)(r.A.APP_STOREFRONT), d = (0, I.L)(s.id), p = s.type === A.Puh.DURABLE && d, {
         price: T
     } = s;
     return null == T ? null : p ? (0, l.jsx)(N, {
@@ -88,7 +88,7 @@ function f(t) {
         text: _.intl.format(_.t.Xp5WTn, {
             price: (0, S.$g)(T.amount, T.currency)
         }),
-        icon: r
+        icon: a
     })
 }
 
@@ -97,10 +97,10 @@ function C(t) {
         appId: e,
         skuId: i,
         onClick: n,
-        ...a
+        ...r
     } = t, u = (0, o.A)();
-    return (0, l.jsx)(r.Button, {
-        ...a,
+    return (0, l.jsx)(a.Button, {
+        ...r,
         onClick: t => {
             if (p.default.track(A.HAw.STOREFRONT_PURCHASE_CLICKED, {
                     application_id: e,
@@ -121,7 +121,7 @@ function N(t) {
     let {
         text: e
     } = t;
-    return (0, l.jsx)(r.Button, {
+    return (0, l.jsx)(a.Button, {
         text: e,
         disabled: !0,
         variant: "primary"

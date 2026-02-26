@@ -8,14 +8,14 @@ i.d(e, {
 var n = i(73153),
     l = i(73825),
     s = i(337095),
-    r = i(652215);
+    a = i(652215);
 
-function a(t) {
+function r(t) {
     return {
         id: t.id,
-        type: r.Puh.SUBSCRIPTION,
+        type: a.Puh.SUBSCRIPTION,
         application_id: t.application_id,
-        product_line: r.EZt.APPLICATION,
+        product_line: a.EZt.APPLICATION,
         name: t.name,
         summary: "",
         description: t.description,
@@ -33,7 +33,7 @@ function a(t) {
 function u(t) {
     return {
         id: t.id,
-        sku: a(t),
+        sku: r(t),
         summary: t.description,
         description: t.description,
         benefits: t.store_listing_benefits ?? [],
@@ -45,7 +45,7 @@ function u(t) {
 function o(t) {
     for (let e of (n.h.dispatch({
             type: "SKUS_FETCH_SUCCESS",
-            skus: t.map(a)
+            skus: t.map(r)
         }), n.h.dispatch({
             type: "STORE_LISTINGS_FETCH_SUCCESS",
             storeListings: t.map(u)

@@ -19,7 +19,7 @@ function g(e, t) {
         case "groupDm":
             return 24 === e ? a._3J.SIZE_24 : a._3J.SIZE_40;
         case "guild":
-            return 24 === e ? o.A.Sizes.SMALLER : o.A.Sizes.MEDIUM;
+            return 24 === e ? o.Ay.Sizes.SMALLER : o.Ay.Sizes.MEDIUM;
         case "default":
             return 24 === e ? "sm" : "md";
         default:
@@ -53,7 +53,7 @@ let m = l.memo(function(e) {
         color: a.LU0.colors.INTERACTIVE_ICON_DEFAULT
     });
     {
-        if (null == t) return (0, s.jsx)(o.A, {
+        if (null == t) return (0, s.jsx)(o.Ay, {
             guild: i,
             size: g(h, "guild"),
             active: !0,

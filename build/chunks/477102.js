@@ -1185,7 +1185,7 @@ let b = {
     AcceptInviteModal: async () => {
         let {
             default: e
-        } = await Promise.all([n.e("83155"), n.e("66997")]).then(n.bind(n, 563038));
+        } = await Promise.all([n.e("83155"), n.e("67313")]).then(n.bind(n, 563038));
         return t => (0, a.jsx)(e, {
             ...t
         })

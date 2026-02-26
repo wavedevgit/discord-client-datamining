@@ -38,14 +38,14 @@ function x(t) {
             mask: I.Ay.Masks.AVATAR_DEFAULT,
             width: 40,
             height: 40,
-            children: (0, a.jsx)(E.A, {
+            children: (0, a.jsx)(E.Ay, {
                 className: S.$f,
                 iconSrc: n,
                 guild: (0, g.yF)({
                     ...e,
                     features: []
                 }),
-                size: E.A.Sizes.MEDIUM
+                size: E.Ay.Sizes.MEDIUM
             })
         }), (0, a.jsx)(d.Text, {
             className: S.J5,

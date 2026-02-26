@@ -105,10 +105,10 @@ class T extends r.Component {
         } = this.props;
         return (0, i.jsx)("div", {
             className: f._C,
-            children: (0, i.jsx)(A.A, {
+            children: (0, i.jsx)(A.Ay, {
                 tabIndex: -1,
                 guild: e,
-                size: A.A.Sizes.MINI,
+                size: A.Ay.Sizes.MINI,
                 className: f.$f
             })
         })

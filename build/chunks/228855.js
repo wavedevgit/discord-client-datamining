@@ -64,9 +64,9 @@ function f(e) {
                     className: T.bo,
                     children: (0, n.jsxs)("div", {
                         className: T.OA,
-                        children: [(0, n.jsx)(u.A, {
+                        children: [(0, n.jsx)(u.Ay, {
                             guild: g,
-                            size: u.A.Sizes.SMALL
+                            size: u.Ay.Sizes.SMALL
                         }), (0, n.jsx)(d.Text, {
                             className: T.J5,
                             variant: "text-md/semibold",

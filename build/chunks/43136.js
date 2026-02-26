@@ -123,9 +123,9 @@ function N(e) {
         children: [(0, i.jsxs)("div", {
             className: v.op,
             children: [(0, i.jsx)("div", {
-                children: (0, i.jsx)(_.A, {
+                children: (0, i.jsx)(_.Ay, {
                     guild: t,
-                    size: _.A.Sizes.LARGER,
+                    size: _.Ay.Sizes.LARGER,
                     iconSrc: null == t.icon || P ? (0, c.n)("server_products/storefront/default-guild-icon.jpg") : void 0
                 })
             }), (0, i.jsx)(o.hKd, {

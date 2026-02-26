@@ -1,7 +1,7 @@
 /** chunk id: 415043, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => u,
-    H: () => g
+    H: () => m
 });
 var i = n(627968);
 n(64700);
@@ -20,11 +20,11 @@ function u(e) {
         size: l = o._3J.SIZE_16,
         maxUsers: r = 4,
         ...u
-    } = e, g = (0, c.GV)();
+    } = e, m = (0, c.GV)();
     return (0, i.jsxs)("div", {
         className: a()(n, d.k),
         children: [(0, i.jsx)(s.I, {
-            "aria-labelledby": g,
+            "aria-labelledby": m,
             overflowCountClassName: d.j,
             size: l,
             maxUsers: r,
@@ -32,21 +32,21 @@ function u(e) {
         }), (0, i.jsx)(o.Text, {
             variant: "text-xs/normal",
             color: "text-subtle",
-            id: g,
+            id: m,
             children: t
         })]
     })
 }
 
-function g(e) {
+function m(e) {
     let {
         label: t,
         className: n,
         overflowCountClassName: l,
         size: c = o._3J.SIZE_16,
         maxUsers: u = 4,
-        onClick: g,
-        ...m
+        onClick: m,
+        ...g
     } = e;
     return (0, i.jsx)("div", {
         className: n,
@@ -55,14 +55,14 @@ function g(e) {
             asContainer: !0,
             ariaHidden: !0,
             children: (0, i.jsx)(o.DUT, {
-                onClick: g,
+                onClick: m,
                 "aria-label": t,
                 children: (0, i.jsx)(s.I, {
                     size: c,
                     maxUsers: u,
                     overflowCountClassName: a()(d.j, l),
                     "aria-hidden": !0,
-                    ...m
+                    ...g
                 })
             })
         })

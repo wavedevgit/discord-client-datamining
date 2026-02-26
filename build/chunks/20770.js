@@ -59,9 +59,9 @@ function E(e) {
                             children: "•"
                         }), (0, i.jsxs)("span", {
                             className: p.vP,
-                            children: [(0, i.jsx)(d.A, {
+                            children: [(0, i.jsx)(d.Ay, {
                                 guild: j,
-                                size: d.A.Sizes.SMOL
+                                size: d.Ay.Sizes.SMOL
                             }), (0, i.jsx)(l.Heading, {
                                 variant: "heading-md/semibold",
                                 color: "text-muted",

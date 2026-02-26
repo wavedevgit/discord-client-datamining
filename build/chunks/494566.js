@@ -621,9 +621,9 @@ function eh(e) {
                     className: ei.rK
                 }), (0, i.jsxs)("div", {
                     className: ei._C,
-                    children: [(0, i.jsx)(w.A, {
+                    children: [(0, i.jsx)(w.Ay, {
                         guild: n,
-                        size: w.A.Sizes.SMOL,
+                        size: w.Ay.Sizes.SMOL,
                         className: ei.$f
                     }), (0, i.jsx)(c.Text, {
                         tag: "div",

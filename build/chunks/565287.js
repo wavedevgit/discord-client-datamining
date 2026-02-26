@@ -45,15 +45,15 @@ let E = e => {
                 S || (await o.A.getLocationMetadata(), o.A.getExperiments())
             })()
         }, [S]);
-        let T = x.filter(e => e !== u.tY.MEDIA_TAKEDOWN),
-            y = x.includes(u.tY.MEDIA_TAKEDOWN),
-            b = T.length > 0,
-            R = b && y;
+        let y = x.filter(e => e !== u.tY.MEDIA_TAKEDOWN),
+            T = x.includes(u.tY.MEDIA_TAKEDOWN),
+            b = y.length > 0,
+            R = b && T;
         r.useEffect(() => {
-            !i && S && !R && (b ? v("dsa") : y && v("tida"))
-        }, [i, S, R, b, y]), r.useEffect(() => {
-            i || !S || b || y || n()
-        }, [i, S, b, y, n]);
+            !i && S && !R && (b ? v("dsa") : T && v("tida"))
+        }, [i, S, R, b, T]), r.useEffect(() => {
+            i || !S || b || T || n()
+        }, [i, S, b, T, n]);
         let O = r.useCallback(e => {
                 v(e)
             }, []),
@@ -101,7 +101,7 @@ let E = e => {
                         children: (0, s.jsx)(p.c, {
                             showBackButton: R,
                             onBack: R ? L : void 0,
-                            dsaCapabilities: T,
+                            dsaCapabilities: y,
                             renderFooter: k,
                             onClose: n,
                             onReopen: w

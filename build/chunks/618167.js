@@ -62,9 +62,9 @@ function v(t) {
         d || (0, m.Xd)(e.id)
     }, [d, e.id]), (0, n.jsxs)("div", {
         className: r()(g.gP, l),
-        children: [(0, n.jsx)(o.A, {
+        children: [(0, n.jsx)(o.Ay, {
             guild: e,
-            size: o.A.Sizes.LARGE
+            size: o.Ay.Sizes.LARGE
         }), (0, n.jsxs)("div", {
             className: g.EF,
             children: [(0, n.jsx)("div", {

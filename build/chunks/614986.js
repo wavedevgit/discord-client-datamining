@@ -27,11 +27,11 @@ var i = n(627968),
     j = n(172799),
     S = n(652215),
     C = n(985018),
-    T = n(480018);
+    y = n(480018);
 
-function y() {
+function T() {
     return (0, i.jsx)("div", {
-        className: T.$k,
+        className: y.$k,
         children: (0, i.jsx)(a.y$y, {})
     })
 }
@@ -94,10 +94,10 @@ function O(e) {
         let e = b(c);
         e !== h && _(e)
     }, [c, h]), (0, i.jsxs)(r.animated.div, {
-        className: T.qF,
+        className: y.qF,
         style: m,
         children: [(0, i.jsx)(r.animated.div, {
-            className: T.NS,
+            className: y.NS,
             style: m,
             children: (0, i.jsx)("section", {
                 ref: p,
@@ -114,7 +114,7 @@ function L(e) {
     } = e;
     return null != t && (0, I.Fk)(t) ? (0, i.jsx)(O, {
         startAnimHeightPx: 0,
-        innerStyle: () => T.ui,
+        innerStyle: () => y.ui,
         ...e,
         children: e => null == t ? null : 1 === e ? (0, i.jsx)(v.s, {
             invite: t
@@ -126,16 +126,16 @@ function w(e) {
     let {
         invite: t
     } = e, n = {
-        1: T._r,
-        2: T.Gm,
-        0: T.Kt
+        1: y._r,
+        2: y.Gm,
+        0: y.Kt
     };
     return (0, i.jsx)(O, {
         startAnimHeightPx: 200,
         innerStyle: e => n[e],
         ...e,
         children: n => (n => {
-            if (null == t) return (0, i.jsx)(y, {});
+            if (null == t) return (0, i.jsx)(T, {});
             switch (n) {
                 case 1:
                     return (0, i.jsx)(N.A, {
@@ -148,7 +148,7 @@ function w(e) {
                         invite: t
                     });
                 default:
-                    return (0, i.jsx)(y, {})
+                    return (0, i.jsx)(T, {})
             }
         })(n)
     })
@@ -170,9 +170,9 @@ function k(e) {
     }
     return (0, i.jsxs)(h.Ay, {
         theme: S.NJ8.DARK,
-        className: T.G3,
+        className: y.G3,
         style: r,
-        contentClassName: T.__,
+        contentClassName: y.__,
         children: [(0, i.jsx)(w, {
             ...e,
             onAcceptInvite: n

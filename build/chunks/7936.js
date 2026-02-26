@@ -19,7 +19,7 @@ var p = n(985018),
     g = n(641254),
     m = n(522759);
 let f = () => {
-    let [e, t] = s.useState(""), [r, f] = s.useState(""), [A, E] = s.useState(!1), [x, I] = s.useState(!1), [N, v] = s.useState(null), [j, S] = s.useState(null), C = (0, a.bG)([u.A], () => u.A.getCountryCode()), T = C.code.split(" ")[0], y = async () => {
+    let [e, t] = s.useState(""), [r, f] = s.useState(""), [A, E] = s.useState(!1), [x, I] = s.useState(!1), [N, v] = s.useState(null), [j, S] = s.useState(null), C = (0, a.bG)([u.A], () => u.A.getCountryCode()), y = C.code.split(" ")[0], T = async () => {
         try {
             await d.A.resendCode(e)
         } catch (e) {
@@ -30,7 +30,7 @@ let f = () => {
         try {
             let {
                 token: t
-            } = await d.A.verifyPhone(T + e, r);
+            } = await d.A.verifyPhone(y + e, r);
             v(null), S(null), I(!0), d.A.validatePhoneForSupport(t)
         } catch (e) {
             e.body.message ? (v(null), S(e.body.message)) : (v(e.body.phone), S(e.body.code))
@@ -60,7 +60,7 @@ let f = () => {
             children: [(0, i.jsx)(h.A, {
                 label: p.intl.string(p.t["eJnn0+"]),
                 alpha2: C.alpha2,
-                countryCode: T,
+                countryCode: y,
                 value: e,
                 autoComplete: "off",
                 spellCheck: "false",
@@ -76,7 +76,7 @@ let f = () => {
                 error: j
             }), (0, i.jsx)(o.QWc, {
                 text: p.intl.string(p.t["5b60gi"]),
-                onClick: y
+                onClick: T
             }), (0, i.jsx)("div", {
                 className: m.QX,
                 children: (0, i.jsx)(o.Button, {

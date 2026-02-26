@@ -42,21 +42,21 @@ let x = "mweb_handoff_nonce",
                 fingerprint: g
             })
         }, [g, e]);
-        let [T, y] = s.useState(null), b = s.useCallback(e => {
-            y(e), p.default.track(f.HAw.MOBILE_WEB_HANDOFF_FAILURE, {
+        let [y, T] = s.useState(null), b = s.useCallback(e => {
+            T(e), p.default.track(f.HAw.MOBILE_WEB_HANDOFF_FAILURE, {
                 reason: e,
                 fingerprint: (0, l.v)(C)
             }, {
                 fingerprint: C
             })
-        }, [y, C]), R = d.w.get(x);
-        if ("null" === n && null === T && b("deep_link_failed"), null != n && "null" !== n && null == R && null === T && b("nonce_missing"), s.useEffect(() => {
+        }, [T, C]), R = d.w.get(x);
+        if ("null" === n && null === y && b("deep_link_failed"), null != n && "null" !== n && null == R && null === y && b("nonce_missing"), s.useEffect(() => {
                 if (null != R) {
                     let e = d.w.get(I);
                     (null == e || Date.now() >= e) && (b("nonce_expired"), S())
                 }
             }, [R, b]), s.useEffect(() => {
-                null != n && "null" !== n && null != R && null == T && o.Bo.post({
+                null != n && "null" !== n && null != R && null == y && o.Bo.post({
                     url: f.Rsh.HANDOFF_EXCHANGE,
                     body: {
                         key: R,
@@ -77,11 +77,11 @@ let x = "mweb_handoff_nonce",
                 }).finally(() => {
                     S()
                 })
-            }, [n, R, T, C, b]), null == C) return null;
-        let O = null == T ? (0, i.jsxs)(i.Fragment, {
+            }, [n, R, y, C, b]), null == C) return null;
+        let O = null == y ? (0, i.jsxs)(i.Fragment, {
             children: [A.intl.string(A.t.uJ1JsY), (0, i.jsx)("br", {}), A.intl.string(A.t.GHVWAs)]
-        }) : j.has(T) ? A.intl.string(A.t.EPt55r) : v.has(T) ? A.intl.string(A.t.g87kTp) : void 0;
-        return null != T && j.has(T) ? (0, i.jsx)("div", {
+        }) : j.has(y) ? A.intl.string(A.t.EPt55r) : v.has(y) ? A.intl.string(A.t.g87kTp) : void 0;
+        return null != y && j.has(y) ? (0, i.jsx)("div", {
             className: E.Un,
             children: (0, i.jsx)(c.Text, {
                 color: "interactive-text-default",

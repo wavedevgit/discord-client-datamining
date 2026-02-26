@@ -21,10 +21,10 @@ function u(e) {
         title: o,
         subtitle: c,
         actionButtons: u = [],
-        className: m
+        className: g
     } = e;
     return (0, i.jsxs)("div", {
-        className: a()(d.U1, m),
+        className: a()(d.U1, g),
         children: [(0, i.jsxs)("div", {
             className: d.DD,
             children: [(0, i.jsx)(r.Heading, {
@@ -37,7 +37,7 @@ function u(e) {
                 color: "text-subtle",
                 children: c
             })]
-        }), (0, i.jsx)(g, {
+        }), (0, i.jsx)(m, {
             widget: l,
             actionButtons: u,
             disabledInteraction: s,
@@ -46,7 +46,7 @@ function u(e) {
     })
 }
 
-function g(e) {
+function m(e) {
     let {
         widget: t,
         actionButtons: n,

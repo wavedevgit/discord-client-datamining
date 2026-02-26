@@ -90,7 +90,7 @@ function S(e) {
             size: 16
         }), (0, i.jsxs)("div", {
             className: v.kS,
-            children: [(0, i.jsx)(h.A, {
+            children: [(0, i.jsx)(h.Ay, {
                 guild: n
             }), (0, i.jsxs)("ul", {
                 className: v.q6,

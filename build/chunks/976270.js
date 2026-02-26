@@ -27,8 +27,8 @@ var s = t(397927),
     v = t(982985),
     T = t(159218),
     E = t(240783),
-    C = t(371843),
-    y = t(518477),
+    y = t(371843),
+    C = t(518477),
     L = t(652215),
     S = t(996988),
     O = t(985018),
@@ -60,7 +60,7 @@ function R(e) {
         channelId: M,
         messageId: G,
         roleId: D
-    }), J = (0, C.A)(n), Z = (0, A.A)({
+    }), J = (0, y.A)(n), Z = (0, A.A)({
         user: n,
         guildId: H,
         channelId: M,
@@ -169,7 +169,7 @@ function R(e) {
                                     displayProfile: Y,
                                     guildId: H,
                                     items: J,
-                                    initialSection: k ?? y.RP.BOT_INFO,
+                                    initialSection: k ?? C.RP.BOT_INFO,
                                     onClose: w
                                 })]
                             })]

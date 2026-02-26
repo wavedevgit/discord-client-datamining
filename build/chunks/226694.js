@@ -162,11 +162,11 @@ let j = s.memo(function(e) {
                     height: 48,
                     children: (0, i.jsx)("div", {
                         className: S.SA,
-                        children: (0, i.jsx)(p.A, {
+                        children: (0, i.jsx)(p.Ay, {
                             className: S.rZ,
                             iconSrc: I,
                             guild: (0, C.xi)(t),
-                            size: p.A.Sizes.MEDIUM,
+                            size: p.Ay.Sizes.MEDIUM,
                             active: !0
                         })
                     })

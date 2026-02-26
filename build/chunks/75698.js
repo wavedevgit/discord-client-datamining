@@ -65,8 +65,8 @@ let V = e => {
         className: k.iA,
         children: [(0, i.jsxs)("div", {
             className: k.XX,
-            children: [(0, i.jsx)(S.A, {
-                size: S.A.Sizes.SMALL,
+            children: [(0, i.jsx)(S.Ay, {
+                size: S.Ay.Sizes.SMALL,
                 guild: n.guild,
                 className: k.$f
             }), (0, i.jsxs)("div", {

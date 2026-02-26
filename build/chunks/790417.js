@@ -12,8 +12,8 @@ var l = n(311907),
     c = n(461213),
     d = n(975571),
     u = n(146655),
-    g = n(489379),
-    m = n(837924),
+    m = n(489379),
+    g = n(837924),
     x = n(558628),
     f = n(842241),
     p = n(282797),
@@ -34,20 +34,20 @@ function T(e) {
         channelId: y,
         onClose: N
     } = e, {
-        live: S,
-        recent: C,
+        live: C,
+        recent: S,
         stream: k
     } = (0, u.A)(t.id), {
         voiceChannel: R,
         voiceActivity: w
-    } = (0, g.A)({
+    } = (0, m.A)({
         userId: t.id,
         guildId: b
-    }), O = (0, l.bG)([s.A], () => s.A.isFetchingUserOutbox(t.id)), L = t.id === n.id, P = (0, l.bG)([c.A, o.A], () => {
-        let e = L ? c.A.getStatus() : o.A.getStatus(t.id);
+    }), L = (0, l.bG)([s.A], () => s.A.isFetchingUserOutbox(t.id)), O = t.id === n.id, P = (0, l.bG)([c.A, o.A], () => {
+        let e = O ? c.A.getStatus() : o.A.getStatus(t.id);
         return e === a.clD.OFFLINE || e === a.clD.INVISIBLE
-    }), D = S.length > 0 || null != k, G = T?.private !== !0 && null == k && null == w && null != R, U = !P && (D || G), M = C.length > 0;
-    return U || M || !O ? U || M || O ? (0, i.jsxs)(A.K, {
+    }), D = C.length > 0 || null != k, G = T?.private !== !0 && null == k && null == w && null != R, U = !P && (D || G), M = S.length > 0;
+    return U || M || !L ? U || M || L ? (0, i.jsxs)(A.K, {
         className: E.XG,
         fade: !0,
         children: [U ? (0, i.jsx)(_.A, {
@@ -61,8 +61,8 @@ function T(e) {
                         stream: k,
                         onClose: N
                     })
-                }), S.map((e, l) => (0, i.jsx)("li", {
-                    children: (0, i.jsx)(m.A, {
+                }), C.map((e, l) => (0, i.jsx)("li", {
+                    children: (0, i.jsx)(g.A, {
                         user: t,
                         currentUser: n,
                         activity: e,
@@ -79,7 +79,7 @@ function T(e) {
             })
         }) : null, M ? (0, i.jsx)(_.A, {
             heading: v.intl.string(v.t.jzgEoL),
-            introText: L ? v.intl.format(v.t["4bk9Ak"], {
+            introText: O ? v.intl.format(v.t["4bk9Ak"], {
                 learnMoreHook: (e, t) => (0, i.jsx)(a.MzZ, {
                     href: d.A.getArticleURL(j.MVz.ACTIVITY_STATUS_SETTINGS),
                     children: e
@@ -88,7 +88,7 @@ function T(e) {
             scrollTargetId: I.bk.RECENT_ACTIVITY,
             children: (0, i.jsx)("ul", {
                 className: E.kR,
-                children: C.map(e => (0, i.jsx)("li", {
+                children: S.map(e => (0, i.jsx)("li", {
                     children: (0, i.jsx)(x.A, {
                         user: t,
                         entry: e,
@@ -97,7 +97,7 @@ function T(e) {
                 }, e.id))
             })
         }) : null]
-    }) : L ? (0, i.jsx)(h.qv, {
+    }) : O ? (0, i.jsx)(h.qv, {
         onClose: N
     }) : (0, i.jsx)(h.zf, {
         user: t,

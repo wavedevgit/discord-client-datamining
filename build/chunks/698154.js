@@ -80,12 +80,12 @@ function w(e) {
                 disabled: M[l] <= 0
             }
         }), [S, M]),
-        T = a.useCallback(e => null == e || "" === e.value ? null : (0, n.jsx)(d.A, {
+        T = a.useCallback(e => null == e || "" === e.value ? null : (0, n.jsx)(d.Ay, {
             className: s()(C.cl, {
                 [C.QJ]: e.disabled
             }),
             guild: S[e.value],
-            size: d.A.Sizes.SMOL,
+            size: d.Ay.Sizes.SMOL,
             active: !0
         }), [S]),
         k = a.useCallback(e => {

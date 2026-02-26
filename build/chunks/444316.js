@@ -1,46 +1,53 @@
-/** chunk id: 444316, original params: e,l,t (module,exports,require) **/
-t.d(l, {
-    A: () => d
+/** chunk id: 444316, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    A: () => m
 });
-var n = t(627968);
-t(64700);
-var i = t(417597),
-    s = t(397927),
-    a = t(966327),
-    r = t(287809),
-    c = t(985018),
-    u = t(290616);
+var l = i(627968);
+i(64700);
+var n = i(503698),
+    s = i.n(n),
+    a = i(417597),
+    r = i(397927),
+    d = i(966327),
+    c = i(287809),
+    o = i(985018),
+    u = i(290616);
 
-function d(e) {
+function m(e) {
     let {
-        friendMemberIds: l
-    } = e, t = (0, i.yK)([r.default], () => l.slice(0, 3).map(e => r.default.getUser(e)).filter(e => null != e));
-    if (0 === t.length) return null;
-    let d = t[0],
-        o = {
-            count: l.length - 1,
-            username: d.username,
-            username2: 2 === l.length && t.length >= 2 ? t[1].username : ""
+        friendMemberIds: t,
+        className: i,
+        avatarSize: n = r._3J.SIZE_16
+    } = e, m = (0, a.yK)([c.default], () => t.slice(0, 3).map(e => c.default.getUser(e)).filter(e => null != e));
+    if (0 === m.length) return null;
+    let x = m[0],
+        h = {
+            count: t.length - 1,
+            username: x.username,
+            username2: 2 === t.length && m.length >= 2 ? m[1].username : ""
         },
-        m = c.intl.format(c.t["5NHEPu"], o);
-    return (0, n.jsxs)("div", {
-        className: u.kL,
-        children: [(0, n.jsx)("div", {
+        _ = o.intl.format(o.t["5NHEPu"], h);
+    return (0, l.jsxs)("div", {
+        className: s()(u.kL, i),
+        children: [(0, l.jsx)("div", {
             className: u.yA,
-            children: t.map((e, l) => (0, n.jsx)("div", {
+            style: {
+                maxHeight: `${(0,r.FT9)(n)}px`
+            },
+            children: m.map((e, t) => (0, l.jsx)("div", {
                 className: u.R3,
                 style: {
-                    zIndex: t.length - l
+                    zIndex: m.length - t
                 },
-                children: (0, n.jsx)(a.A, {
+                children: (0, l.jsx)(d.A, {
                     user: e,
-                    size: s._3J.SIZE_16
+                    size: n
                 })
             }, e.id))
-        }), (0, n.jsx)(s.Text, {
-            variant: "text-sm/medium",
+        }), (0, l.jsx)(r.Text, {
+            variant: "text-sm/normal",
             color: "text-subtle",
-            children: m
+            children: _
         })]
     })
 }

@@ -25,8 +25,8 @@ var a = l(627968),
     C = l(531685),
     p = l(486020),
     v = l(225142),
-    G = l(248019),
-    y = l(639245),
+    y = l(248019),
+    G = l(639245),
     M = l(652215),
     E = l(985018),
     T = l(84942),
@@ -79,7 +79,7 @@ function H(e) {
 function R(e) {
     let {
         resource: n
-    } = e, l = (0, r.bG)([j.A], () => j.A.getChannel(n.channelId)), t = (0, r.bG)([I.A], () => I.A.getMessages(n.channelId)), u = (0, r.bG)([N.A], () => N.A.can(M.xBc.VIEW_CHANNEL, l)), m = t.first(), x = (0, G.A)(m), g = (0, o.yC)(m, !1), A = g?.length > 0 ? g[0] : null, f = null != l && null == t.first() && !t.loadingMore && !t.ready && !t.hasFetched && u;
+    } = e, l = (0, r.bG)([j.A], () => j.A.getChannel(n.channelId)), t = (0, r.bG)([I.A], () => I.A.getMessages(n.channelId)), u = (0, r.bG)([N.A], () => N.A.can(M.xBc.VIEW_CHANNEL, l)), m = t.first(), x = (0, y.A)(m), g = (0, o.yC)(m, !1), A = g?.length > 0 ? g[0] : null, f = null != l && null == t.first() && !t.loadingMore && !t.ready && !t.hasFetched && u;
     if (s.useEffect(() => {
             f && c.A.fetchMessages({
                 channelId: n.channelId,
@@ -147,7 +147,7 @@ function k(e) {
     let {
         guild: n,
         isNewMember: l
-    } = e, s = (0, y.A)(n.id);
+    } = e, s = (0, G.A)(n.id);
     return 0 === s.length ? l ? null : (0, a.jsxs)("div", {
         className: T.do,
         children: [(0, a.jsx)(d.Heading, {
