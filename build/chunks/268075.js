@@ -35,7 +35,7 @@ function m(e) {
             presenceCount: x,
             memberCount: g
         })
-    }, [n, t, g, x]), A = s.useMemo(() => {
+    }, [n, t, g, x]), p = s.useMemo(() => {
         let e = _?.emojis?.[0];
         return null != e ? {
             name: e.require_colons ? `:${e.name}:` : e.name,
@@ -48,7 +48,7 @@ function m(e) {
         sourceType: o.rV.GUILD,
         expressionSourceApplication: null,
         expressionSourceGuild: _,
-        node: A,
+        node: p,
         closePopout: u.tE,
         nonce: h.current,
         demoMode: !0

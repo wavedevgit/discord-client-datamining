@@ -1,18 +1,18 @@
-/** chunk id: 94264, original params: e,t,r (module,exports,require) **/
-r.d(t, {
+/** chunk id: 94264, original params: e,t,n (module,exports,require) **/
+n.d(t, {
     A: () => x
 });
-var n = r(627968);
-r(64700);
-var a = r(503698),
-    l = r.n(a),
-    s = r(892227),
-    i = r(827734),
-    d = r(732955),
-    u = r(613566),
-    o = r(649032),
-    c = r(320118),
-    m = r(417340);
+var r = n(627968);
+n(64700);
+var a = n(503698),
+    l = n.n(a),
+    s = n(892227),
+    i = n(827734),
+    d = n(732955),
+    u = n(613566),
+    o = n(649032),
+    c = n(320118),
+    m = n(417340);
 let h = {
         churning: {
             start: i.A.unsafe_rawColors.OPACITY_RED_80.css,
@@ -27,18 +27,18 @@ let h = {
         let {
             className: t
         } = e, {
-            passesProgressBarInvariant: r,
+            passesProgressBarInvariant: n,
             programReward: a,
             totalDays: i
         } = (0, c.F)();
-        if (!r || null == a || null == i) return null;
+        if (!n || null == a || null == i) return null;
         let x = (0, s.default)(new Date(a.next_reward_date), new Date),
             p = a.program_current_state === o.L.PREMIUM_CHURNING,
             _ = p ? h.churning.start : h.active.start,
             f = p ? h.churning.end : h.active.end;
-        return (0, n.jsxs)("div", {
+        return (0, r.jsxs)("div", {
             className: l()(m.k, t),
-            children: [(0, n.jsx)(u.Ay, {
+            children: [(0, r.jsx)(u.Ay, {
                 variant: u.qP.UNSET,
                 progress: i - x,
                 maximum: i,
@@ -48,11 +48,11 @@ let h = {
                         gradientEnd: f
                     }
                 }
-            }), p ? (0, n.jsx)(d.tvc, {
+            }), p ? (0, r.jsx)(d.tvc, {
                 size: "sm",
                 color: "currentColor",
                 className: m.K
-            }) : (0, n.jsx)(d.Cp8, {
+            }) : (0, r.jsx)(d.Cp8, {
                 size: "sm",
                 color: "currentColor",
                 className: m.K

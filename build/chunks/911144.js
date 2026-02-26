@@ -17,8 +17,8 @@ var i = n(627968),
     x = n(446291),
     h = n(342490),
     _ = n(695800),
-    A = n(533148),
-    p = n(652215),
+    p = n(533148),
+    A = n(652215),
     f = n(874864),
     j = n(985018),
     N = n(531532);
@@ -49,7 +49,7 @@ function b(e) {
         vanityURLUses: l,
         originalVanityURLCode: a,
         errorDetails: o
-    } = e, d = t?.features.has(p.GuildFeatures.VANITY_URL) === !0, c = s.useCallback(() => {
+    } = e, d = t?.features.has(A.GuildFeatures.VANITY_URL) === !0, c = s.useCallback(() => {
         (0, g.OH)("")
     }, []), u = s.useCallback(e => {
         (0, g.OH)(e)
@@ -72,7 +72,7 @@ function b(e) {
                     uses: l
                 })
             }) : null]
-        }), (0, i.jsx)(A.A, {
+        }), (0, i.jsx)(p.A, {
             value: n,
             onChange: u,
             error: m,
@@ -96,17 +96,17 @@ function T(e) {
         originalVanityURLCode: d,
         errorDetails: g
     } = e, {
-        analyticsLocations: A
+        analyticsLocations: p
     } = (0, o.Ay)(), j = (0, c.M5)(t.id, "GuildSettingsBoostPerks"), T = s.useCallback(e => {
         e.preventDefault(), e.stopPropagation(), j ? (m.A.close(), (0, u.A)(t.id, a.A.GUILD_POWERUPS_GUILD_SETTINGS_VANITY_URL, l.FB)) : (0, _.p_)({
             guild: t,
-            analyticsLocations: A,
-            analyticsSection: p.JJy.GUILD_SETTINGS_VANITY_URL,
-            analyticsObject: p.ZSU.BUTTON_CTA,
+            analyticsLocations: p,
+            analyticsSection: A.JJy.GUILD_SETTINGS_VANITY_URL,
+            analyticsObject: A.ZSU.BUTTON_CTA,
             perks: (0, f.DU)(),
-            targetPremiumGuildTier: p.TVA.TIER_3
+            targetPremiumGuildTier: A.TVA.TIER_3
         })
-    }, [A, t, j]);
+    }, [p, t, j]);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, x.d)(t) ? (0, i.jsx)(b, {
             guild: t,

@@ -1,7 +1,7 @@
 /** chunk id: 40160, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => p
+    A: () => A
 });
 var i = n(627968);
 n(64700);
@@ -18,18 +18,18 @@ var s = n(735438),
     x = n(600955),
     h = n(652215),
     _ = n(985018),
-    A = n(262052);
+    p = n(262052);
 
-function p(e) {
+function A(e) {
     let t, {
             guild: n
         } = e,
-        p = n.mfaLevel,
+        A = n.mfaLevel,
         f = (0, l.bG)([u.A], () => null != n && u.A.can(h.xBc.MANAGE_GUILD, n), [n]),
         j = (0, l.bG)([m.default], () => m.default.getCurrentUser()),
         N = (0, c.bM)(n, j),
         E = j?.mfaEnabled,
-        b = p === h.EkJ.ELEVATED,
+        b = A === h.EkJ.ELEVATED,
         T = N && E,
         C = (0, s.throttle)(async e => {
             T && await g.A.updateMFALevel({
@@ -45,9 +45,9 @@ function p(e) {
     }) : _.intl.string(_.t["9Ghu40"]));
     let I = n.features.has(h.GuildFeatures.DISCOVERABLE);
     return (0, i.jsxs)("div", {
-        className: A.ph,
+        className: p.ph,
         children: [(0, i.jsxs)("div", {
-            className: A.Ly,
+            className: p.Ly,
             children: [(0, i.jsx)(a.Heading, {
                 variant: "text-md/semibold",
                 color: "text-strong",
@@ -63,12 +63,12 @@ function p(e) {
                 checked: b,
                 disabled: !0,
                 onChange: C,
-                className: A.R0
+                className: p.R0
             })
         }) : (0, i.jsx)(x.A, {
             checked: b,
             onChange: C,
-            className: A.R0
+            className: p.R0
         })]
     })
 }

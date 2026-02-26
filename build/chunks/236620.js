@@ -27,7 +27,7 @@ function u(e) {
     }, {
         name: c.intl.string(c.t["6fQPhu"]),
         value: d.orn.ONLY_MENTIONS
-    }], [h]), A = s.useCallback(e => {
+    }], [h]), p = s.useCallback(e => {
         o.A.updateGuild({
             defaultMessageNotifications: e
         })
@@ -39,6 +39,6 @@ function u(e) {
         options: _,
         value: g,
         disabled: !x,
-        onChange: A
+        onChange: p
     })
 }

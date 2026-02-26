@@ -1,7 +1,7 @@
 /** chunk id: 199139, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => A,
+    A: () => p,
     h: () => b
 });
 var i = n(627968),
@@ -18,8 +18,8 @@ var i = n(627968),
     x = n(136708),
     h = n(985018),
     _ = n(152781);
-let A = -1,
-    p = (0, m.xI)(c.A.PREMIUM_GUILD_PROGRESS_BAR_PROGRESS_BAR_WIDTH),
+let p = -1,
+    A = (0, m.xI)(c.A.PREMIUM_GUILD_PROGRESS_BAR_PROGRESS_BAR_WIDTH),
     f = (0, m.xI)(c.A.PREMIUM_GUILD_PROGRESS_BAR_TIER_MARKER_SIZE),
     j = {
         tension: 140,
@@ -136,15 +136,15 @@ class E extends s.Component {
             x = this.getTierDisabled(e);
         s = g ? _.LR : x ? _.B2 : m ? _.E2 : c ? _.lZ : _.B2;
         let h = e.y - (g ? 0 : f / 2),
-            A = this.state.tierMarkerActive >= t,
-            p = !g && m && A,
+            p = this.state.tierMarkerActive >= t,
+            A = !g && m && p,
             j = this.getTierMarkerTooltipText(e);
         return (0, i.jsx)(u.c7X, {
             from: {
                 scale: 1
             },
             to: {
-                scale: p ? 1.625 : 1
+                scale: A ? 1.625 : 1
             },
             config: N,
             children: t => (0, i.jsx)(d.un, {
@@ -159,7 +159,7 @@ class E extends s.Component {
                         top: h,
                         transform: t.scale.interpolate(e => `scale(${e})`)
                     },
-                    children: p && (0, i.jsx)(u.A9s, {
+                    children: A && (0, i.jsx)(u.A9s, {
                         size: "md",
                         color: "currentColor",
                         className: _.zw
@@ -177,13 +177,13 @@ class E extends s.Component {
             children: [(0, i.jsx)("rect", {
                 x: "0",
                 y: "0",
-                width: p,
+                width: A,
                 height: e,
                 fill: "white"
             }), t.map(e => (0, i.jsx)("circle", {
-                cx: p / 2,
+                cx: A / 2,
                 cy: e.y,
-                r: p / 2,
+                r: A / 2,
                 fill: "black"
             }, e.key))]
         })
@@ -229,8 +229,8 @@ class E extends s.Component {
                 height: s
             },
             children: [(0, i.jsxs)("svg", {
-                viewBox: `0 0 ${p} ${s}`,
-                width: p,
+                viewBox: `0 0 ${A} ${s}`,
+                width: A,
                 height: s,
                 children: [this.renderProgressMask(s), this.renderProgressBar(s, n)]
             }), t.map((e, t) => this.renderTierMarker(e, t, n))]

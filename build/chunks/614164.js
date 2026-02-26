@@ -17,8 +17,8 @@ var i = n(627968),
     x = n(642133),
     h = n(636042),
     _ = n(396816),
-    A = n(785312),
-    p = n(158720),
+    p = n(785312),
+    A = n(158720),
     f = n(316506),
     j = n(927573),
     N = n(652215),
@@ -71,7 +71,7 @@ function S(e) {
     } = e, {
         headerHeight: S,
         headerRef: y
-    } = (0, A.A)(0), {
+    } = (0, p.A)(0), {
         scrolledToTop: R,
         handleScroll: O
     } = (0, f.u)(), G = (0, d.bG)([x.A], () => x.A.getRoleMemberCount(t.id)?.[n.id], [n.id, t.id]), L = (0, d.yK)([_.A], () => _.A.getEditedRoleConnectionConfigurationsMap().get(n.id) ?? []), D = L.length > 1 ? m.jO.OR : m.jO.AND, M = s.useMemo(() => D === m.jO.OR ? L.flat() : null != L && L.length > 0 ? L[0] : [], [D, L]), k = s.useMemo(() => new Set(M.map(e => e.connectionType)), [M]);
@@ -193,7 +193,7 @@ function S(e) {
                 }
                 return (0, i.jsx)("div", {
                     className: T.rr,
-                    children: Array.from(a.values()).map(e => (0, i.jsx)(p.A, {
+                    children: Array.from(a.values()).map(e => (0, i.jsx)(A.A, {
                         configurationItems: e,
                         onConfigurationChange: r,
                         locked: n,

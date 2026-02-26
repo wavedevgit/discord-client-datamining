@@ -1,7 +1,7 @@
 /** chunk id: 771935, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    H: () => p
+    H: () => A
 });
 var i = n(627968);
 n(64700);
@@ -18,14 +18,14 @@ var s = n(158954),
     x = n(989860),
     h = n(652215),
     _ = n(985018),
-    A = n(981681);
+    p = n(981681);
 
-function p() {
+function A() {
     let {
         analyticsLocations: e
     } = (0, a.Ay)(r.A.GUILD_SETTINGS_BOOST_PERKS_PAGE), t = (0, l.bG)([c.A], () => c.A.getProps().guild, []), {
         isGuildAdmin: n,
-        canManageGuild: p
+        canManageGuild: A
     } = (0, l.cf)([d.A], () => ({
         isGuildAdmin: null != t && d.A.can(h.xBc.ADMINISTRATOR, t),
         canManageGuild: null != t && d.A.can(h.xBc.MANAGE_GUILD, t)
@@ -33,40 +33,40 @@ function p() {
     return null == t ? null : (0, i.jsx)(a.f5, {
         value: e,
         children: (0, i.jsxs)("main", {
-            className: A.k,
+            className: p.k,
             children: [(0, i.jsx)(s.DZT, {
                 variant: "heading-lg/semibold",
                 color: "text-strong",
                 children: _.intl.string(_.t.UKgg5N)
             }), (0, i.jsx)(x.I, {
                 guildId: t?.id,
-                canManageGuild: p,
+                canManageGuild: A,
                 premiumProgressBarEnabled: t.premiumProgressBarEnabled
             }), (0, i.jsx)("div", {
-                className: A.y
+                className: p.y
             }), (0, i.jsx)(u.l, {
                 guild: t,
-                canManageGuild: p
+                canManageGuild: A
             }), (0, i.jsx)("div", {
-                className: A.y
+                className: p.y
             }), f ? (0, i.jsxs)(i.Fragment, {
                 children: [n && (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)(g.u, {
                         guild: t
                     }), (0, i.jsx)("div", {
-                        className: A.y
+                        className: p.y
                     })]
                 }), (0, i.jsx)(m.I, {
                     guild: t,
-                    canManageGuild: p
+                    canManageGuild: A
                 })]
             }) : (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)(m.I, {
                     guild: t,
-                    canManageGuild: p
+                    canManageGuild: A
                 }), n && (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)("div", {
-                        className: A.y
+                        className: p.y
                     }), (0, i.jsx)(g.u, {
                         guild: t
                     })]

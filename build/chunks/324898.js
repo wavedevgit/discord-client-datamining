@@ -1,8 +1,8 @@
 /** chunk id: 324898, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => p,
-    W: () => A
+    A: () => A,
+    W: () => p
 });
 var i = n(627968);
 n(64700);
@@ -20,14 +20,14 @@ var s = n(503698),
     h = n(985018),
     _ = n(262052);
 
-function A(e) {
+function p(e) {
     return x.dR.filter(t => e?.id !== g.Vc && m.Ib(t, e))
 }
 
-function p(e) {
+function A(e) {
     let {
         guild: t
-    } = e, s = (0, a.bG)([c.A], () => c.A.getEveryoneRole(t)), m = A(t), g = m.length > 0, p = x.dR.some(e => !u.A.can(e, t, null, {
+    } = e, s = (0, a.bG)([c.A], () => c.A.getEveryoneRole(t)), m = p(t), g = m.length > 0, A = x.dR.some(e => !u.A.can(e, t, null, {
         [s.id]: {
             ...s,
             permissions: r.TF(s.permissions, e)
@@ -62,7 +62,7 @@ function p(e) {
             "aria-label": h.intl.string(h.t.YQix8y)
         })]
     });
-    return g ? p ? (0, i.jsx)(o.m, {
+    return g ? A ? (0, i.jsx)(o.m, {
         text: h.intl.string(h.t["E5v/a/"]),
         children: (0, i.jsx)("div", {
             className: l()(_.ph, _.r9),

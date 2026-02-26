@@ -17,8 +17,8 @@ var i = n(627968),
     x = n(397927),
     h = n(808728),
     _ = n(975571),
-    A = n(661191),
-    p = n(997509),
+    p = n(661191),
+    A = n(997509),
     f = n(834720),
     j = n(652215),
     N = n(985018),
@@ -144,7 +144,7 @@ let C = e => {
             }),
             failingDescription: N.intl.formatToPlainString(N.t.jYwM1Y, {
                 minimumGuildAge: Math.ceil(C.minimumGuildAge / 7),
-                passDate: c()(A.default.extractTimestamp(a)).add(C.minimumGuildAge, "days").format("LL")
+                passDate: c()(p.default.extractTimestamp(a)).add(C.minimumGuildAge, "days").format("LL")
             }),
             checked: C?.age
         }, {
@@ -258,7 +258,7 @@ let C = e => {
             failingName: N.intl.string(N.t.awA3Pb),
             description: N.intl.string(N.t.QbBJ7R),
             failingDescription: N.intl.format(N.t.kBXInb, {
-                onClick: () => p.A.setSection(j.BEX.SAFETY, j.nd0.SAFETY_PERMISSIONS)
+                onClick: () => A.A.setSection(j.BEX.SAFETY, j.nd0.SAFETY_PERMISSIONS)
             }),
             checked: C?.protected
         }];

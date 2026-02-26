@@ -17,8 +17,8 @@ var i = n(627968),
     x = n(922975),
     h = n(996507),
     _ = n(963175),
-    A = n(652215),
-    p = n(985018),
+    p = n(652215),
+    A = n(985018),
     f = n(208239);
 
 function j(e) {
@@ -33,7 +33,7 @@ function j(e) {
     } = (0, h.A)(j), G = s.useMemo(() => t?.map(e => ({
         id: e.toString(),
         value: e,
-        label: (0, c.$g)(e, A.Yri.USD)
+        label: (0, c.$g)(e, p.Yri.USD)
     })) ?? [], [t]);
 
     function L(e, t) {
@@ -44,7 +44,7 @@ function j(e) {
         k = (0, a.GV)(),
         U = (0, a.GV)();
     return (0, i.jsx)(_.A, {
-        title: p.intl.string(p.t["iHU43+"]),
+        title: A.intl.string(A.t["iHU43+"]),
         intiallyExpanded: !0,
         children: (0, i.jsxs)(r.BJc, {
             gap: 24,
@@ -53,8 +53,8 @@ function j(e) {
                 children: [(0, i.jsx)("div", {
                     className: f.GI,
                     children: (0, i.jsx)(r.ksK, {
-                        label: p.intl.string(p.t["grbGJ+"]),
-                        placeholder: p.intl.string(p.t["So2/xP"]),
+                        label: A.intl.string(A.t["grbGJ+"]),
+                        placeholder: A.intl.string(A.t["So2/xP"]),
                         value: N,
                         onChange: E,
                         "aria-labelledby": M,
@@ -64,10 +64,10 @@ function j(e) {
                     className: f.GI,
                     children: (0, i.jsx)(r.l6P, {
                         selectionMode: "single",
-                        label: p.intl.string(p.t.Ibl4BR),
+                        label: A.intl.string(A.t.Ibl4BR),
                         options: G,
                         disabled: D || null == t,
-                        placeholder: p.intl.string(p.t["88XZDs"]),
+                        placeholder: A.intl.string(A.t["88XZDs"]),
                         value: b,
                         onSelectionChange: T,
                         maxOptionsVisible: 5,
@@ -75,8 +75,8 @@ function j(e) {
                     })
                 })]
             }), (0, i.jsx)(r.fs1, {
-                label: p.intl.string(p.t["1w2WcX"]),
-                placeholder: p.intl.string(p.t.p7Jr4K),
+                label: A.intl.string(A.t["1w2WcX"]),
+                placeholder: A.intl.string(A.t.p7Jr4K),
                 value: C,
                 autosize: !0,
                 onChange: I,
@@ -85,8 +85,8 @@ function j(e) {
             }), (0, i.jsxs)("div", {
                 className: f.r2,
                 children: [(0, i.jsx)(r.D0$, {
-                    label: p.intl.string(p.t.RUBM2q),
-                    description: p.intl.string(p.t["0iUofN"]),
+                    label: A.intl.string(A.t.RUBM2q),
+                    description: A.intl.string(A.t["0iUofN"]),
                     children: (0, i.jsx)(o.A, {
                         onChange: L,
                         "aria-label": R,

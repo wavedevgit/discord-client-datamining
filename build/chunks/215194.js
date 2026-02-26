@@ -17,8 +17,8 @@ var i = n(627968),
     x = n(997509),
     h = n(555337),
     _ = n(33888),
-    A = n(494492),
-    p = n(377337),
+    p = n(494492),
+    A = n(377337),
     f = n(249434),
     j = n(89145),
     N = n(913443),
@@ -96,12 +96,12 @@ let v = function() {
                     canManageGuild: R
                 }), (0, i.jsx)("div", {
                     className: I.yF
-                }), (0, i.jsx)(A.A, {
+                }), (0, i.jsx)(p.A, {
                     profile: y,
                     canManageGuild: R
                 }), (0, i.jsx)("div", {
                     className: I.yF
-                }), (0, i.jsx)(p.A, {
+                }), (0, i.jsx)(A.A, {
                     profile: y,
                     canManageGuild: R
                 }), (0, i.jsx)("div", {

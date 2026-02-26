@@ -22,8 +22,8 @@ let x = [],
             ...e,
             id: e.channelId
         })), [h]), {
-            handleDragStart: A,
-            handleDragReset: p,
+            handleDragStart: p,
+            handleDragReset: A,
             handleDragComplete: f
         } = (0, a.A)(_, d.WA), j = s.useCallback((e, n) => {
             let i = c.A.getSettings();
@@ -49,8 +49,8 @@ let x = [],
                 guildId: t,
                 resourceChannel: e,
                 index: n,
-                onDragStart: A,
-                onDragReset: p,
+                onDragStart: p,
+                onDragReset: A,
                 onDragComplete: f
             }, e.channelId)), h.length < o.CW && (0, i.jsxs)(r.DUT, {
                 className: g.Bw,

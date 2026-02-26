@@ -4,18 +4,18 @@ function n(e, t, l) {
     return `${e}:${t}:${n}`
 }
 l.d(t, {
-    _k: () => s,
-    nA: () => a
+    _k: () => a,
+    nA: () => s
 });
 let i = (0, l(353640).v)(e => ({
     entries: {},
-    setPreview(t, l, i, a) {
-        let s = n(t, l, i);
+    setPreview(t, l, i, s) {
+        let a = n(t, l, i);
         e(e => {
             let t = {
                     ...e.entries,
-                    [s]: {
-                        count: a,
+                    [a]: {
+                        count: s,
                         cachedAt: Date.now()
                     }
                 },
@@ -34,14 +34,14 @@ let i = (0, l(353640).v)(e => ({
     }
 }));
 
-function a(e, t, l, n) {
+function s(e, t, l, n) {
     i.getState().setPreview(e, t, l, n)
 }
 
-function s(e, t, l) {
+function a(e, t, l) {
     return i(i => {
-        let a = n(e, t, l),
-            s = i.entries[a];
-        return null != s && Date.now() - s.cachedAt < 864e5 ? s.count : null
+        let s = n(e, t, l),
+            a = i.entries[s];
+        return null != a && Date.now() - a.cachedAt < 864e5 ? a.count : null
     })
 }

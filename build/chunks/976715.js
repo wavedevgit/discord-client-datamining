@@ -4,11 +4,11 @@ l.d(t, {
 });
 var n = l(627968),
     i = l(64700),
-    a = l(827734),
-    s = l(421380),
+    s = l(827734),
+    a = l(421380),
     r = l(397927),
-    o = l(793574),
-    C = l(834409),
+    C = l(793574),
+    o = l(834409),
     d = l(903093),
     c = l(671576),
     u = l(449585),
@@ -32,12 +32,12 @@ function g(e) {
     }
 }
 
-function _(e) {
+function H(e) {
     let {
         onHandleEnableLockdown: t,
         onHandleReportFalseAlarm: l,
         incidentData: i
-    } = e, s = i.raidDetectedAt ?? i.dmSpamDetectedAt;
+    } = e, a = i.raidDetectedAt ?? i.dmSpamDetectedAt;
     return (0, n.jsxs)("div", {
         className: h.hD,
         children: [(0, n.jsxs)("div", {
@@ -45,7 +45,7 @@ function _(e) {
             children: [(0, n.jsx)(r.lmn, {
                 size: "md",
                 className: h.F_,
-                color: a.A.unsafe_rawColors.RED_345.css
+                color: s.A.unsafe_rawColors.RED_345.css
             }), (0, n.jsxs)("div", {
                 className: h.Tm,
                 children: [(0, n.jsx)(r.Heading, {
@@ -57,7 +57,7 @@ function _(e) {
                     className: h.Ng,
                     variant: "text-sm/medium",
                     children: x.intl.format(x.t["4QIIZl"], {
-                        dateTime: new Date(s ?? "").toLocaleString(x.intl.currentLocale, d.yc)
+                        dateTime: new Date(a ?? "").toLocaleString(x.intl.currentLocale, d.yc)
                     })
                 })]
             })]
@@ -78,7 +78,7 @@ function _(e) {
     })
 }
 
-function H(e) {
+function j(e) {
     let {
         onHandleEnableLockdown: t,
         incidentData: l,
@@ -91,7 +91,7 @@ function H(e) {
             children: [(0, n.jsx)(r.lmn, {
                 size: "md",
                 className: h.F_,
-                color: a.A.unsafe_rawColors.BRAND_360.css
+                color: s.A.unsafe_rawColors.BRAND_360.css
             }), (0, n.jsxs)("div", {
                 className: h.Tm,
                 children: [(0, n.jsx)(r.Heading, {
@@ -106,7 +106,7 @@ function H(e) {
                 })]
             })]
         }), (0, n.jsx)(r.Button, {
-            color: s.$n.Colors.BRAND,
+            color: a.$n.Colors.BRAND,
             onClick: t,
             text: x.intl.string(x.t.e1bMNf),
             size: "sm"
@@ -114,12 +114,12 @@ function H(e) {
     })
 }
 
-function p(e) {
+function _(e) {
     let {
         onHandleEnableLockdown: t,
         onHandleReportFalseAlarm: l,
         incidentData: i,
-        guildName: s
+        guildName: a
     } = e;
     return (0, n.jsxs)("div", {
         className: h.hD,
@@ -128,7 +128,7 @@ function p(e) {
             children: [(0, n.jsx)(r.lmn, {
                 size: "md",
                 className: h.F_,
-                color: a.A.unsafe_rawColors.BRAND_360.css
+                color: s.A.unsafe_rawColors.BRAND_360.css
             }), (0, n.jsxs)("div", {
                 className: h.Tm,
                 children: [(0, n.jsx)(r.Heading, {
@@ -139,7 +139,7 @@ function p(e) {
                 }), (0, n.jsx)(r.Text, {
                     className: h.Ng,
                     variant: "text-sm/medium",
-                    children: (0, d.ql)(i, s)
+                    children: (0, d.ql)(i, a)
                 })]
             })]
         }), (0, n.jsxs)("div", {
@@ -162,13 +162,13 @@ function f(e) {
     let {
         guild: t,
         incidentData: l,
-        isUnderLockdown: a,
-        isRaidDetected: s
+        isUnderLockdown: s,
+        isRaidDetected: a
     } = e, x = i.useCallback(() => {
         (0, r.mMO)(async () => {
             let e = {
-                source: C.Eo.MEMBER_SAFETY_PAGE,
-                location: o.A.MEMBER_SAFETY_PAGE,
+                source: o.Eo.MEMBER_SAFETY_PAGE,
+                location: C.A.MEMBER_SAFETY_PAGE,
                 alertType: (0, d.$5)(l)
             };
             return l => (0, n.jsx)(c.default, {
@@ -182,11 +182,11 @@ function f(e) {
         (0, u.is)(e, t.id)
     }, [t.id]), g = (() => {
         switch (!0) {
-            case s && a:
+            case a && s:
                 return 3;
-            case s:
-                return 1;
             case a:
+                return 1;
+            case s:
                 return 2;
             default:
                 return 0
@@ -195,19 +195,19 @@ function f(e) {
     if (null == t || null == l) return null;
     switch (g) {
         case 1:
-            return (0, n.jsx)(_, {
+            return (0, n.jsx)(H, {
                 onHandleEnableLockdown: x,
                 onHandleReportFalseAlarm: h,
                 incidentData: l
             });
         case 2:
-            return (0, n.jsx)(H, {
+            return (0, n.jsx)(j, {
                 onHandleEnableLockdown: x,
                 incidentData: l,
                 guildName: t.name
             });
         case 3:
-            return (0, n.jsx)(p, {
+            return (0, n.jsx)(_, {
                 onHandleEnableLockdown: x,
                 onHandleReportFalseAlarm: h,
                 incidentData: l,

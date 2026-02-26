@@ -17,8 +17,8 @@ var i = n(627968),
     x = n(803306),
     h = n(565645),
     _ = n(736653),
-    A = n(793574),
-    p = n(688810),
+    p = n(793574),
+    A = n(688810),
     f = n(509536),
     j = n(931991),
     N = n(796774),
@@ -46,8 +46,8 @@ function F() {
     let e = (0, d.bG)([D.A], () => D.A.getProps().guild),
         {
             analyticsLocations: t
-        } = (0, p.Ay)(A.A.GUILD_SETTINGS_SOUNDBOARD);
-    return null == e ? null : (0, i.jsx)(p.f5, {
+        } = (0, A.Ay)(p.A.GUILD_SETTINGS_SOUNDBOARD);
+    return null == e ? null : (0, i.jsx)(A.f5, {
         value: t,
         children: (0, i.jsxs)(g.BJc, {
             gap: 8,
@@ -171,7 +171,7 @@ function Y(e) {
     let x = s.useMemo(() => l.reduce((e, t) => (e[t.soundId] = new Audio((0, b.A)(t.soundId)), e), {}), [l]),
         h = 0 === l.length && !r;
 
-    function A(e) {
+    function p(e) {
         o.current?.pause();
         let t = x[e.soundId];
         null != t && (o.current = t, t.currentTime = 0, t.volume = (0, T.A)(e.volume), t.play())
@@ -179,7 +179,7 @@ function Y(e) {
     if (s.useEffect(() => () => {
             o.current?.pause()
         }, []), r) return (0, i.jsx)(g.y$y, {});
-    let p = B ? (0, i.jsx)(g.Button, {
+    let A = B ? (0, i.jsx)(g.Button, {
         variant: "primary",
         text: P.intl.string(P.t["/uNYPJ"]),
         onClick: function() {
@@ -204,7 +204,7 @@ function Y(e) {
                 children: P.intl.string(P.t.BohnsE)
             }), (0, i.jsx)("div", {
                 className: w.Uo,
-                children: !h && p
+                children: !h && A
             })]
         }), h ? (0, i.jsxs)(g.ppr, {
             theme: c,
@@ -218,7 +218,7 @@ function Y(e) {
                 note: P.intl.string(P.t.ZhoSBI),
                 noteClassName: w.BI,
                 children: P.intl.string(P.t.I6P1p7)
-            }), p]
+            }), A]
         }) : (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(g.cGx, {
                 className: w.yF
@@ -250,7 +250,7 @@ function Y(e) {
                     sound: e,
                     isPlaying: !1,
                     guild: t,
-                    onPlaySound: A
+                    onPlaySound: p
                 }, e.soundId))]
             })]
         })]
@@ -267,12 +267,12 @@ function K(e) {
         soundId: c,
         name: m,
         user: _,
-        userId: A,
+        userId: p,
         emojiId: f,
         emojiName: E
     } = t, {
         analyticsLocations: b
-    } = (0, p.Ay)(), T = (0, d.bG)([S.default], () => _ ?? S.default.getUser(A), [A, _]), {
+    } = (0, A.Ay)(), T = (0, d.bG)([S.default], () => _ ?? S.default.getUser(p), [p, _]), {
         canManageGuildExpression: v
     } = (0, j.nr)(o), y = s.useMemo(() => v(t), [t, v]), O = null != f || null != E, [G, D] = s.useState(!1), M = (0, C.v)(t, o.id);
     async function k() {
@@ -288,9 +288,9 @@ function K(e) {
     s.useEffect(() => {
         null == T && e();
         async function e() {
-            await (0, x.wz)(A)
+            await (0, x.wz)(p)
         }
-    }, [T, A]);
+    }, [T, p]);
     let U = s.useCallback(() => {
             null != T && (0, I.openUserProfileModal)({
                 userId: T.id,

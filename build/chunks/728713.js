@@ -17,8 +17,8 @@ var i = n(627968),
     x = n(964486),
     h = n(775602),
     _ = n(63104),
-    A = n(861197),
-    p = n(967144),
+    p = n(861197),
+    A = n(967144),
     f = n(34457),
     j = n(576705),
     N = n(792831),
@@ -41,7 +41,7 @@ function O(e) {
             onClick: g,
             currentPosition: x,
             onDragStart: h,
-            onDragReset: A,
+            onDragReset: p,
             onDragComplete: j,
             roleStyle: N
         } = e,
@@ -49,7 +49,7 @@ function O(e) {
         T = (0, f.Oy)(l),
         C = null == E && !T,
         I = l.tags?.guild_connections !== void 0,
-        S = (0, p.X_)(s.id, l, l.colorStrings),
+        S = (0, A.X_)(s.id, l, l.colorStrings),
         [, O] = (0, a.i)({
             type: R,
             item: () => (h(l.id), {
@@ -59,7 +59,7 @@ function O(e) {
             canDrag: () => C,
             end: (e, t) => {
                 let n = t.getDropResult();
-                null == n ? A() : j(n.roleId)
+                null == n ? p() : j(n.roleId)
             }
         }),
         [{
@@ -135,7 +135,7 @@ function G(e) {
         currentRoleId: n,
         setCurrentRoleId: l,
         setSelectedSection: a
-    } = e, o = (0, d.bG)([E.A], () => E.A.roles), m = (0, d.bG)([j.A], () => j.A.getHighestRole(t)), _ = (0, d.bG)([h.A], () => h.A.roleStyle), [p, f] = s.useState(o.length), {
+    } = e, o = (0, d.bG)([E.A], () => E.A.roles), m = (0, d.bG)([j.A], () => j.A.getHighestRole(t)), _ = (0, d.bG)([h.A], () => h.A.roleStyle), [A, f] = s.useState(o.length), {
         scrolledToTop: b,
         handleScroll: v
     } = (0, C.u)(), {
@@ -151,8 +151,8 @@ function G(e) {
     return (0, x.Ay)(() => {
         M(n)
     }), s.useEffect(() => {
-        o.length > p && M(n), o.length !== p && f(o.length)
-    }, [o.length, p, f, M, n]), (0, i.jsx)(A.Ay.Sidebar, {
+        o.length > A && M(n), o.length !== A && f(o.length)
+    }, [o.length, A, f, M, n]), (0, i.jsx)(p.Ay.Sidebar, {
         className: y.pz,
         children: (0, i.jsxs)("div", {
             className: y.kL,

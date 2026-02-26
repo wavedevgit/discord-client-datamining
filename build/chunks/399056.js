@@ -1,7 +1,7 @@
 /** chunk id: 399056, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => A
+    A: () => p
 });
 var i = n(627968),
     s = n(64700),
@@ -70,7 +70,7 @@ function _(e) {
         })]
     })
 }
-let A = function(e) {
+let p = function(e) {
     let {
         guildId: t
     } = e, n = (0, l.yK)([c.A], () => c.A.getSettings().newMemberActions ?? x), r = s.useCallback((e, t) => {
@@ -79,10 +79,10 @@ let A = function(e) {
         let r = n[e]?.channelId,
             a = i.channelId;
         null == r || null == c.A.getSettings() || (null == c.A.getPendingDataForChannel(a) && l && (0, d.Wh)(t, r, s), (0, d.A4)(r, i))
-    }, [n, t]), A = s.useCallback(e => {
+    }, [n, t]), p = s.useCallback(e => {
         let t = n[e]?.channelId;
         null != t && (0, d.sd)(t)
-    }, [n]), p = n.map(e => ({
+    }, [n]), A = n.map(e => ({
         ...e,
         id: e.channelId
     })), f = s.useCallback(e => {
@@ -91,7 +91,7 @@ let A = function(e) {
         handleDragStart: j,
         handleDragReset: N,
         handleDragComplete: E
-    } = (0, a.A)(p, f);
+    } = (0, a.A)(A, f);
     return (0, i.jsxs)("div", {
         className: g.uW,
         children: [n.map((e, n) => (0, i.jsx)(u.A, {
@@ -99,7 +99,7 @@ let A = function(e) {
             action: e,
             actionIndex: n,
             onChange: m,
-            onDelete: A,
+            onDelete: p,
             onDragStart: j,
             onDragReset: N,
             onDragComplete: E

@@ -45,7 +45,7 @@ function _(e) {
             children: x.intl.string(x.t["1ydhVp"])
         }), (0, i.jsx)(u.A, {
             guild: t
-        }), (0, i.jsx)(A, {
+        }), (0, i.jsx)(p, {
             guild: t,
             everyoneRole: n,
             filteredRoles: l,
@@ -56,7 +56,7 @@ function _(e) {
     })
 }
 
-function A(e) {
+function p(e) {
     let {
         guild: t,
         everyoneRole: n,
@@ -69,7 +69,7 @@ function A(e) {
         children: [(0, i.jsx)(c.A, {
             role: n,
             onClick: u
-        }), (0, i.jsx)(p, {
+        }), (0, i.jsx)(A, {
             guild: t,
             query: l,
             setQuery: o
@@ -104,7 +104,7 @@ function A(e) {
     })
 }
 
-function p(e) {
+function A(e) {
     let {
         guild: t,
         query: n,

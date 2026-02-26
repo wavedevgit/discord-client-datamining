@@ -1,7 +1,7 @@
 /** chunk id: 561108, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => A
+    A: () => p
 });
 var i = n(627968);
 n(64700);
@@ -19,7 +19,7 @@ var s = n(503698),
     h = n(985018),
     _ = n(291616);
 
-function A(e) {
+function p(e) {
     let {
         guild: t,
         scrollToQuestions: n
@@ -34,14 +34,14 @@ function A(e) {
             })
         }), (0, i.jsxs)("div", {
             className: _.o5,
-            children: [(0, i.jsx)(j, {}), 0 === l.length && (0, i.jsx)(p, {}), (0, i.jsx)(f, {
+            children: [(0, i.jsx)(j, {}), 0 === l.length && (0, i.jsx)(A, {}), (0, i.jsx)(f, {
                 channels: l
             })]
         })]
     })
 }
 
-function p() {
+function A() {
     return (0, i.jsxs)("div", {
         className: _.p$,
         children: [(0, i.jsx)("div", {

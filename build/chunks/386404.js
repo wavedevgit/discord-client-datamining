@@ -1,75 +1,68 @@
 /** chunk id: 386404, original params: e,t,l (module,exports,require) **/
 l.d(t, {
-    A: () => j
+    A: () => p
 });
 var n = l(627968),
     i = l(64700),
-    a = l(91871),
-    s = l.n(a),
-    r = l(111956),
-    o = l.n(r),
-    C = l(33851),
-    d = l.n(C),
-    c = l(417597),
-    u = l(397927),
-    m = l(57222),
-    x = l(504049),
-    h = l(266047),
-    g = l(221950),
-    _ = l(950072),
-    H = l(985018),
-    p = l(951792);
-let f = new Set;
+    s = l(91871),
+    a = l.n(s),
+    r = l(33851),
+    C = l.n(r),
+    o = l(311907),
+    d = l(417597),
+    c = l(397927),
+    u = l(775602),
+    m = l(676608),
+    x = l(34457),
+    h = l(317525),
+    g = l(504049),
+    H = l(266047),
+    j = l(221950),
+    _ = l(652215),
+    f = l(985018);
 
-function j(e) {
+function p(e) {
     let {
-        guildId: t
-    } = e, l = (0, x.hs)(t), a = (0, c.bG)([h.A], () => h.A.getSearchStateByGuildId(t), [t], d()), [r, C] = i.useState(a.selectedRoleIds), j = (0, m.H)(t, f, !0), b = i.useCallback(e => {
-        (0, g.Ld)(t, {
-            selectedRoleIds: e
-        }), l(e)
-    }, [t, l]), v = i.useMemo(() => o()(b, 300), [b]), A = i.useCallback(e => {
-        let t = new Set(e ?? []);
-        C(t), v(t)
-    }, [v]), N = i.useCallback(e => {
-        let {
-            record: l
-        } = e;
-        return {
-            id: l.id,
-            value: l.id,
-            label: l.name,
-            leading: (0, n.jsx)(_.C, {
-                role: l,
-                guildId: t
-            }, l.id)
-        }
-    }, [t]), L = i.useCallback((e, t) => {
-        let l = new Map(j.map(e => [e.record.id, e]));
-        return e.filter(e => {
-            let n = l.get(e.value);
-            if (null == n) return !1;
-            let {
-                record: i
-            } = n;
-            return s()(t.toLowerCase(), i.name.toLowerCase())
-        })
-    }, [j]);
-    return (0, n.jsx)("div", {
-        className: p.qm,
-        children: (0, n.jsx)(u.ZiE, {
-            label: H.intl.string(H.t.ZveC7e),
-            hideLabel: !0,
-            placeholder: H.intl.string(H.t.ZveC7e),
-            value: Array.from(r),
-            onSelectionChange: A,
-            options: j,
-            formatOption: N,
-            customMatchSorter: L,
-            selectionMode: "multiple",
-            autoFocus: !0,
-            closeOnSelect: !1,
-            shouldFocusWrap: !0
+        guildId: t,
+        onClose: l
+    } = e, s = (0, g.hs)(t), [r, p] = i.useState(""), b = (0, d.bG)([H.A], () => H.A.getSearchStateByGuildId(t), [t], C()), v = (0, d.bG)([u.A], () => u.A.roleStyle), A = (0, c.rdh)(c.LU0.unsafe_rawColors.PRIMARY_300).hex(), V = (0, m.jV)(t, null), L = (0, o.yK)([h.A], () => h.A.getSortedRoles(t).filter(e => !(0, x.Oy)(e)), [t]), N = i.useMemo(() => "" === r ? L : L.filter(e => a()(r.toLowerCase(), e.name.toLowerCase())), [L, r]), R = i.useCallback(e => {
+        let l = new Set(b.selectedRoleIds);
+        l.has(e) ? l.delete(e) : l.add(e), (0, j.Ld)(t, {
+            selectedRoleIds: l
+        }), s(l)
+    }, [t, b.selectedRoleIds, s]);
+    return (0, n.jsx)(c.W1t, {
+        "data-menu-migrated": !0,
+        navId: "member-safety-roles",
+        onClose: l,
+        "aria-label": f.intl.string(f.t.ZveC7e),
+        onSelect: _.tEg,
+        children: (0, n.jsxs)(c.rXV, {
+            children: [(0, n.jsx)(c.aK1, {
+                id: "members-table-role-search",
+                control: (e, t) => (0, n.jsx)(c.VPO, {
+                    ...e,
+                    query: r,
+                    onChange: p,
+                    ref: t,
+                    placeholder: f.intl.string(f.t.ZveC7e)
+                })
+            }), (0, n.jsx)(c.bXX, {}), N.map(e => {
+                let t = e.colorString ?? A,
+                    l = V && e.colorStrings?.primaryColor != null && e.colorStrings?.secondaryColor != null ? e.colorStrings : null;
+                return (0, n.jsx)(c.sLh, {
+                    id: `role-${e.id}`,
+                    label: e.name,
+                    leadingAccessory: {
+                        type: "roleDot",
+                        variant: "dot" === v ? "dot" : "circle",
+                        color: t,
+                        colors: l
+                    },
+                    checked: b.selectedRoleIds.has(e.id),
+                    action: () => R(e.id)
+                }, e.id)
+            })]
         })
     })
 }

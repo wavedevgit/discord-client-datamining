@@ -3,9 +3,9 @@ i.d(t, {
     A: () => u,
     a: () => m
 });
-var l = i(627968),
-    a = i(64700),
-    n = i(397927),
+var n = i(627968),
+    l = i(64700),
+    a = i(397927),
     s = i(256905),
     r = i(409626),
     c = i(985018),
@@ -16,7 +16,7 @@ function u(e) {
     let {
         detectedGame: t,
         trackAction: i
-    } = e, u = a.useRef(null), m = a.useMemo(() => {
+    } = e, u = l.useRef(null), m = l.useMemo(() => {
         let e = t.artwork.map(e => ({
             url: e,
             type: "IMAGE"
@@ -35,19 +35,19 @@ function u(e) {
             animate: !0
         })
     }
-    return 0 === m.length ? null : (0, l.jsxs)("div", {
-        children: [(0, l.jsx)(n.Heading, {
+    return 0 === m.length ? null : (0, n.jsxs)("div", {
+        children: [(0, n.jsx)(a.Heading, {
             className: o.bV,
             variant: "text-md/semibold",
             color: "text-strong",
             children: c.intl.string(c.t.bNdK5x)
-        }), (0, l.jsxs)("div", {
+        }), (0, n.jsxs)("div", {
             className: x ? d.DA : d.pZ,
-            children: [(0, l.jsx)(n.zCo, {
+            children: [(0, n.jsx)(a.zCo, {
                 ref: u,
                 className: d.ec,
                 orientation: "horizontal",
-                children: m.map((e, t) => (0, l.jsx)(n.DUT, {
+                children: m.map((e, t) => (0, n.jsx)(a.DUT, {
                     className: d.gw,
                     focusProps: {
                         offset: 4,
@@ -61,7 +61,7 @@ function u(e) {
                             location: "GameProfileMedia"
                         })
                     },
-                    children: (0, l.jsx)("img", {
+                    children: (0, n.jsx)("img", {
                         src: e.url,
                         className: d.Zm,
                         alt: c.intl.formatToPlainString(c.t.COYYrn, {
@@ -69,23 +69,23 @@ function u(e) {
                         })
                     })
                 }, t))
-            }), x && (0, l.jsxs)("div", {
+            }), x && (0, n.jsxs)("div", {
                 className: d.NA,
-                children: [(0, l.jsx)("div", {
+                children: [(0, n.jsx)("div", {
                     className: d.EJ
-                }), (0, l.jsx)(n.DUT, {
+                }), (0, n.jsx)(a.DUT, {
                     className: d.G9,
                     onClick: () => g(-1),
-                    children: (0, l.jsx)(n.rJJ, {
+                    children: (0, n.jsx)(a.rJJ, {
                         className: d.UE,
                         color: "currentColor"
                     })
-                }), (0, l.jsx)("div", {
+                }), (0, n.jsx)("div", {
                     className: d.Pj
-                }), (0, l.jsx)(n.DUT, {
+                }), (0, n.jsx)(a.DUT, {
                     className: d.G9,
                     onClick: () => g(1),
-                    children: (0, l.jsx)(n.EdP, {
+                    children: (0, n.jsx)(a.EdP, {
                         className: d.UE,
                         color: "currentColor"
                     })
@@ -99,7 +99,7 @@ function m(e) {
     let {
         detectedGame: t,
         trackAction: i
-    } = e, u = a.useRef(null), m = a.useMemo(() => {
+    } = e, u = l.useRef(null), m = l.useMemo(() => {
         let e = t.artwork.map(e => ({
             url: e,
             type: "IMAGE"
@@ -118,19 +118,19 @@ function m(e) {
             animate: !0
         })
     }
-    return 0 === m.length ? null : (0, l.jsxs)("div", {
-        children: [(0, l.jsx)(n.Heading, {
+    return 0 === m.length ? null : (0, n.jsxs)("div", {
+        children: [(0, n.jsx)(a.Heading, {
             className: o.bV,
             variant: "text-md/semibold",
             color: "text-strong",
             children: c.intl.string(c.t.bNdK5x)
-        }), (0, l.jsxs)("div", {
+        }), (0, n.jsxs)("div", {
             className: x ? d.DA : d.pZ,
-            children: [(0, l.jsx)(n.zCo, {
+            children: [(0, n.jsx)(a.zCo, {
                 ref: u,
                 className: d.ec,
                 orientation: "horizontal",
-                children: m.map((e, a) => (0, l.jsx)(n.DUT, {
+                children: m.map((e, l) => (0, n.jsx)(a.DUT, {
                     className: d.gw,
                     focusProps: {
                         offset: 4,
@@ -139,36 +139,36 @@ function m(e) {
                     onClick: () => {
                         i(r.Ws.ClickImage), (0, s.R)({
                             items: m,
-                            startingIndex: a,
+                            startingIndex: l,
                             shouldHideMediaOptions: !0,
                             location: "GameProfileMedia"
                         })
                     },
-                    children: (0, l.jsx)("img", {
+                    children: (0, n.jsx)("img", {
                         src: e.url,
                         className: d.Zm,
                         alt: c.intl.formatToPlainString(c.t.COYYrn, {
                             game: t.name
                         })
                     })
-                }, a))
-            }), x && (0, l.jsxs)("div", {
+                }, l))
+            }), x && (0, n.jsxs)("div", {
                 className: d.NA,
-                children: [(0, l.jsx)("div", {
+                children: [(0, n.jsx)("div", {
                     className: d.EJ
-                }), (0, l.jsx)(n.DUT, {
+                }), (0, n.jsx)(a.DUT, {
                     className: d.G9,
                     onClick: () => g(-1),
-                    children: (0, l.jsx)(n.rJJ, {
+                    children: (0, n.jsx)(a.rJJ, {
                         className: d.UE,
                         color: "currentColor"
                     })
-                }), (0, l.jsx)("div", {
+                }), (0, n.jsx)("div", {
                     className: d.Pj
-                }), (0, l.jsx)(n.DUT, {
+                }), (0, n.jsx)(a.DUT, {
                     className: d.G9,
                     onClick: () => g(1),
-                    children: (0, l.jsx)(n.EdP, {
+                    children: (0, n.jsx)(a.EdP, {
                         className: d.UE,
                         color: "currentColor"
                     })

@@ -17,8 +17,8 @@ var i = n(627968),
     x = n(994500),
     h = n(287809),
     _ = n(739455),
-    A = n(652215),
-    p = n(985018),
+    p = n(652215),
+    A = n(985018),
     f = n(819882);
 
 function j(e) {
@@ -58,7 +58,7 @@ function E() {
             color: "currentColor",
             className: f.IX
         }),
-        title: p.intl.string(p.t.d7YJMK),
+        title: A.intl.string(A.t.d7YJMK),
         className: f.fp
     })
 }
@@ -66,7 +66,7 @@ function E() {
 function b(e) {
     let {
         channelId: t
-    } = e, n = (0, _.fE)(t), s = (0, _.fE)(n?.parent_id ?? A.dJq);
+    } = e, n = (0, _.fE)(t), s = (0, _.fE)(n?.parent_id ?? p.dJq);
     if (null == n) return null;
     let l = (0, u.gU)(n),
         r = (0, c.m1)(n, h.default, x.A),
@@ -98,7 +98,7 @@ function C(e) {
         omitChannelIds: f,
         "aria-labelledby": N,
         onChange: E
-    } = e, b = p.intl.string(p.t.d7YJMK), C = (0, a.bG)([g.A], () => g.A.getCategories(l), [l]), I = (0, _.fE)(r ?? A.dJq), v = s.useMemo(() => {
+    } = e, b = A.intl.string(A.t.d7YJMK), C = (0, a.bG)([g.A], () => g.A.getCategories(l), [l]), I = (0, _.fE)(r ?? p.dJq), v = s.useMemo(() => {
         let e = [{
                 value: null,
                 label: b
@@ -119,7 +119,7 @@ function C(e) {
     }, [b, r, I, C, f, u]);
     return (0, i.jsx)(o.Pw, {
         label: t,
-        placeholder: p.intl.string(p.t.r2ptsz),
+        placeholder: A.intl.string(A.t.r2ptsz),
         options: v,
         select: function(e) {
             null == e ? (0, d.mMO)(async () => {

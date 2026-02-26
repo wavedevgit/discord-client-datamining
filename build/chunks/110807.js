@@ -24,8 +24,8 @@ function h(e) {
         canViewAuditLog: d,
         canManageRoles: h,
         canManageBans: _,
-        canAccessMembersPage: A,
-        canViewGuildAnalytics: p,
+        canAccessMembersPage: p,
+        canViewGuildAnalytics: A,
         isOwner: f,
         isGuildAdmin: j,
         canManageGuildExpressions: N
@@ -50,7 +50,7 @@ function h(e) {
     }), T.push({
         section: g,
         label: u.intl.string(u.t.m6lkGy)
-    }), T.push(m(c.BEX.EMOJI, b)), T.push(m(c.BEX.STICKERS, b)), T.push(m(c.BEX.SOUNDBOARD, b))), (n || h || A || j) && (T.push({
+    }), T.push(m(c.BEX.EMOJI, b)), T.push(m(c.BEX.STICKERS, b)), T.push(m(c.BEX.SOUNDBOARD, b))), (n || h || p || j) && (T.push({
         section: x
     }), T.push({
         section: g,
@@ -68,7 +68,7 @@ function h(e) {
         section: g,
         label: u.intl.string(u.t["5tbTdV"])
     }), T.push(m(c.BEX.SAFETY, b)), T.push(m(c.BEX.MODERATION, b)), T.push(m(c.BEX.AUDIT_LOG, b)), T.push(m(c.BEX.BANS, b)), T.push(m(c.BEX.GUILD_AUTOMOD, b)));
-    let I = t.features.has(c.GuildFeatures.COMMUNITY) && p,
+    let I = t.features.has(c.GuildFeatures.COMMUNITY) && A,
         v = E();
     return (n || I || v) && (T.push({
         section: x

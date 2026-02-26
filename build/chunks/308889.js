@@ -31,7 +31,7 @@ function g(e) {
         d.A.updateGuild({
             systemChannelFlags: i
         })
-    }, [t.systemChannelFlags]), h = s.useCallback(e => x(c.ogj.SUPPRESS_JOIN_NOTIFICATIONS, !e), [x]), _ = s.useCallback(e => x(c.ogj.SUPPRESS_PREMIUM_SUBSCRIPTIONS, !e), [x]), A = s.useCallback(e => x(c.ogj.SUPPRESS_GUILD_REMINDER_NOTIFICATIONS, !e), [x]), p = s.useCallback(e => x(c.ogj.SUPPRESS_JOIN_NOTIFICATION_REPLIES, !e), [x]), f = s.useCallback(e => x(c.ogj.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATIONS, !e), [x]), j = s.useCallback(e => x(c.ogj.SUPPRESS_CHANNEL_PROMPT_DEADCHAT, !e), [x]), N = s.useCallback(e => x(c.ogj.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATION_REPLIES, !e), [x]), E = t.systemChannelId ?? m, b = (0, o.g6)(t), T = b || (0, l.Lt)(t.systemChannelFlags, c.ogj.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATIONS), C = b || (0, l.Lt)(t.systemChannelFlags, c.ogj.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATION_REPLIES);
+    }, [t.systemChannelFlags]), h = s.useCallback(e => x(c.ogj.SUPPRESS_JOIN_NOTIFICATIONS, !e), [x]), _ = s.useCallback(e => x(c.ogj.SUPPRESS_PREMIUM_SUBSCRIPTIONS, !e), [x]), p = s.useCallback(e => x(c.ogj.SUPPRESS_GUILD_REMINDER_NOTIFICATIONS, !e), [x]), A = s.useCallback(e => x(c.ogj.SUPPRESS_JOIN_NOTIFICATION_REPLIES, !e), [x]), f = s.useCallback(e => x(c.ogj.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATIONS, !e), [x]), j = s.useCallback(e => x(c.ogj.SUPPRESS_CHANNEL_PROMPT_DEADCHAT, !e), [x]), N = s.useCallback(e => x(c.ogj.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATION_REPLIES, !e), [x]), E = t.systemChannelId ?? m, b = (0, o.g6)(t), T = b || (0, l.Lt)(t.systemChannelFlags, c.ogj.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATIONS), C = b || (0, l.Lt)(t.systemChannelFlags, c.ogj.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATION_REPLIES);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(r.dOG, {
             label: u.intl.string(u.t["+f0bXQ"]),
@@ -41,7 +41,7 @@ function g(e) {
         }), (0, i.jsx)(r.dOG, {
             label: u.intl.string(u.t["72k7jf"]),
             checked: !(0, l.Lt)(t.systemChannelFlags, c.ogj.SUPPRESS_JOIN_NOTIFICATION_REPLIES),
-            onChange: p,
+            onChange: A,
             disabled: !n || E === m
         }), (0, i.jsx)(r.dOG, {
             label: u.intl.string(u.t["2L8NCN"]),
@@ -51,7 +51,7 @@ function g(e) {
         }), (0, i.jsx)(r.dOG, {
             label: u.intl.string(u.t["NvnW+V"]),
             checked: !(0, l.Lt)(t.systemChannelFlags, c.ogj.SUPPRESS_GUILD_REMINDER_NOTIFICATIONS),
-            onChange: A,
+            onChange: p,
             disabled: !n || E === m
         }), T && (0, i.jsx)(r.dOG, {
             label: u.intl.string(u.t["54n19R"]),

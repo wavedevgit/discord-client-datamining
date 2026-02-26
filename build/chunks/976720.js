@@ -3,9 +3,9 @@ i.d(t, {
     A: () => u,
     Y: () => m
 });
-var l = i(627968),
-    a = i(64700),
-    n = i(158954),
+var n = i(627968),
+    l = i(64700),
+    a = i(158954),
     s = i(871123),
     r = i(44724),
     c = i(409626),
@@ -17,19 +17,19 @@ function u(e) {
         invite: t,
         trackClick: i,
         closeModal: u
-    } = e, m = a.useCallback(() => {
+    } = e, m = l.useCallback(() => {
         t?.guild != null && (0, r.X)({
             guildId: t.guild.id
         })
-    }, [t]), x = a.useCallback(() => {
+    }, [t]), x = l.useCallback(() => {
         t?.guild != null && ((0, r.default)({
             invite: t
         }), u(), i(c.Ws.GameShop))
     }, [u, t, i]);
-    return new Set(t?.guild?.features).has(o.GuildFeatures.SOCIAL_LAYER_STOREFRONT) ? (0, l.jsx)(n.$nd, {
+    return new Set(t?.guild?.features).has(o.GuildFeatures.SOCIAL_LAYER_STOREFRONT) ? (0, n.jsx)(a.$nd, {
         variant: "primary",
         text: t?.guild?.id === (0, s.zf)() ? d.intl.string(d.t.WTXyEQ) : d.intl.string(d.t.v8UpgE),
-        icon: n.U1X,
+        icon: a.U1X,
         onClick: x,
         onMouseDown: m,
         fullWidth: !0
@@ -41,19 +41,19 @@ function m(e) {
         invite: t,
         trackClick: i,
         closeModal: u
-    } = e, m = a.useCallback(() => {
+    } = e, m = l.useCallback(() => {
         t?.guild != null && (0, r.X)({
             guildId: t.guild.id
         })
-    }, [t]), x = a.useCallback(() => {
+    }, [t]), x = l.useCallback(() => {
         t?.guild != null && ((0, r.default)({
             invite: t
         }), u(), i(c.Ws.GameShop))
     }, [u, t, i]);
-    return new Set(t?.guild?.features).has(o.GuildFeatures.SOCIAL_LAYER_STOREFRONT) ? (0, l.jsx)(n.$nd, {
+    return new Set(t?.guild?.features).has(o.GuildFeatures.SOCIAL_LAYER_STOREFRONT) ? (0, n.jsx)(a.$nd, {
         variant: "primary",
         text: t?.guild?.id === (0, s.zf)() ? d.intl.string(d.t.WTXyEQ) : d.intl.string(d.t.v8UpgE),
-        icon: n.U1X,
+        icon: a.U1X,
         onClick: x,
         onMouseDown: m,
         fullWidth: !0

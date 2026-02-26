@@ -26,17 +26,17 @@ let x = (e, t, n, i) => (o.default.track(u.HAw.EMOJI_UPLOAD_FILE_SIZE_LIMIT_EXCE
             file: n,
             guildId: h,
             uploadId: _,
-            roles: A,
-            image: p,
+            roles: p,
+            image: A,
             hideErrorModal: f,
             analyticsLocation: j
         } = e, N = d.Ay.sanitizeEmojiName(n.name.split(".")[0]);
         if (d.Ay.isFileTooBig(n)) {
             if ("image/gif" === n.type || "image/webp" === n.type || "image/avif" === n.type) return x(n.name, n.size, h, _);
-            else if (null != p) {
+            else if (null != A) {
                 var E, b;
                 let e;
-                t = (0, i.h_)(p, 128, 128);
+                t = (0, i.h_)(A, 128, 128);
                 try {
                     e = d.Ay.isDataTooBig(t)
                 } catch (e) {
@@ -56,7 +56,7 @@ let x = (e, t, n, i) => (o.default.track(u.HAw.EMOJI_UPLOAD_FILE_SIZE_LIMIT_EXCE
                 guildId: h,
                 image: t,
                 name: N,
-                roles: A,
+                roles: p,
                 analyticsLocation: j
             });
             return o.default.track(u.HAw.EMOJI_UPLOAD_COMPLETED, {

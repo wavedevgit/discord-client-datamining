@@ -17,8 +17,8 @@ var i = n(627968),
     x = n(418448),
     h = n(561321),
     _ = n(82566),
-    A = n(652215),
-    p = n(985018),
+    p = n(652215),
+    A = n(985018),
     f = n(229334);
 
 function j(e) {
@@ -164,7 +164,7 @@ let N = s.memo(function() {
                                     variant: "text-xs/medium",
                                     className: f.qy,
                                     color: "text-brand",
-                                    children: p.intl.string(p.t.mPxmeE)
+                                    children: A.intl.string(A.t.mPxmeE)
                                 })]
                             }) : null]
                         })
@@ -176,9 +176,9 @@ let N = s.memo(function() {
                         }) : (0, i.jsx)(d.Button, {
                             size: "sm",
                             variant: "secondary",
-                            text: p.intl.string(p.t.zA9d1J),
+                            text: A.intl.string(A.t.zA9d1J),
                             icon: d.XAi,
-                            onClick: A.tEg
+                            onClick: p.tEg
                         })
                     })]
                 })

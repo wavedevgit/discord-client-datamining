@@ -17,8 +17,8 @@ var i = n(627968),
     x = n(342296),
     h = n(544028),
     _ = n(427157),
-    A = n(994500),
-    p = n(287809),
+    p = n(994500),
+    A = n(287809),
     f = n(147925),
     j = n(860689),
     N = n(427262),
@@ -168,7 +168,7 @@ let y = s.forwardRef((e, t) => {
                                         children: e
                                     }, t),
                                     count: s.count ?? "",
-                                    channel: null == s.channel || "string" == typeof s.channel ? s.channel : (0, g.m1)(s.channel, p.default, A.A, !0),
+                                    channel: null == s.channel || "string" == typeof s.channel ? s.channel : (0, g.m1)(s.channel, A.default, p.A, !0),
                                     channelHook: (e, t) => (0, i.jsx)("span", {
                                         onContextMenu: R,
                                         children: e

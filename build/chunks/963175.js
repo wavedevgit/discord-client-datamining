@@ -20,7 +20,7 @@ function g(e) {
         title: n,
         description: l,
         children: g
-    } = e, [x, h] = s.useState(t), _ = () => h(e => !e), A = (0, o.GV)();
+    } = e, [x, h] = s.useState(t), _ = () => h(e => !e), p = (0, o.GV)();
     return (0, i.jsxs)("div", {
         className: m.kL,
         children: [(0, i.jsx)(c.A, {
@@ -40,7 +40,7 @@ function g(e) {
                     }), (0, i.jsx)(a.DUT, {
                         onClick: s(_),
                         "aria-label": u.intl.string(u.t.e5eQOy),
-                        "aria-controls": A,
+                        "aria-controls": p,
                         "aria-expanded": x,
                         focusProps: {
                             ringTarget: t
@@ -53,7 +53,7 @@ function g(e) {
                 })
             }
         }), x && (0, i.jsxs)("div", {
-            id: A,
+            id: p,
             children: [null != l && (0, i.jsx)(a.Text, {
                 variant: "text-sm/normal",
                 className: m.h_,

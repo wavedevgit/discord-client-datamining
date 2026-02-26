@@ -2,26 +2,26 @@
 i.d(t, {
     A: () => c
 });
-var l = i(311907),
-    a = i(73153);
-let n = {},
+var n = i(311907),
+    l = i(73153);
+let a = {},
     s = {};
-class r extends l.Ay.Store {
+class r extends n.Ay.Store {
     static displayName = "GameProfileStore";
     getSimilarGames(e) {
-        return n[e]
+        return a[e]
     }
     getSimilarGamesError(e) {
         return s[e]
     }
 }
-let c = new r(a.h, {
+let c = new r(l.h, {
     GAME_PROFILE_GET_SIMILAR_GAMES_SUCCESS: function(e) {
         let {
             applicationId: t,
             games: i
         } = e;
-        n[t] = i
+        a[t] = i
     },
     GAME_PROFILE_GET_SIMILAR_GAMES_ERROR: function(e) {
         let {

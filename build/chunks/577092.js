@@ -17,8 +17,8 @@ var i = n(627968),
     x = n(212637),
     h = n(931991),
     _ = n(942975),
-    A = n(434564),
-    p = n(363487),
+    p = n(434564),
+    A = n(363487),
     f = n(954571),
     j = n(473145),
     N = n(740816),
@@ -99,7 +99,7 @@ let y = e => {
             guild: t
         } = e, l = (0, N.A)(t.id), {
             analyticsLocations: u
-        } = (0, m.Ay)(), f = (0, A.A)(t.id), G = t.features.has(C.GuildFeatures.MORE_STICKERS) ? C.TVA.TIER_3 : t.premiumTier, L = t.features.has(C.GuildFeatures.MORE_STICKERS) ? C.M2T[C.TVA.TIER_3] : f, D = (0, p.A)(t.id);
+        } = (0, m.Ay)(), f = (0, p.A)(t.id), G = t.features.has(C.GuildFeatures.MORE_STICKERS) ? C.TVA.TIER_3 : t.premiumTier, L = t.features.has(C.GuildFeatures.MORE_STICKERS) ? C.M2T[C.TVA.TIER_3] : f, D = (0, A.A)(t.id);
         if (s.useEffect(() => {
                 window.dispatchEvent(new Event("resize"))
             }, [l]), "success" !== l.status) return (0, i.jsx)(d.y$y, {});
@@ -142,8 +142,8 @@ let y = e => {
             renderTier: e => {
                 var s;
                 let l, m, {
-                        isAnimatedTo: A,
-                        onSetRef: p,
+                        isAnimatedTo: p,
+                        onSetRef: A,
                         tier: N,
                         tiers: b,
                         tierIndex: y
@@ -165,9 +165,9 @@ let y = e => {
                     X = B - w,
                     J = n(415358),
                     Z = F - H.length,
-                    Q = Y ? Math.min(5 - (H.length + 0) % 5, Z) : 0,
-                    q = [];
-                for (let e = 0; e < Q; e++) q.push((0, i.jsx)(R, {}, `placeholder-${e}`));
+                    q = Y ? Math.min(5 - (H.length + 0) % 5, Z) : 0,
+                    Q = [];
+                for (let e = 0; e < q; e++) Q.push((0, i.jsx)(R, {}, `placeholder-${e}`));
                 let $ = t.premiumTier < N.tier && f >= C.M2T[N.tier],
                     ee = v.intl.string(v.t.dtFw5c),
                     et = () => {
@@ -209,8 +209,8 @@ let y = e => {
                 })), (0, i.jsxs)(T.A, {
                     subscriptionCount: L,
                     tier: N,
-                    onSetRef: p,
-                    isAnimatedTo: A,
+                    onSetRef: A,
+                    isAnimatedTo: p,
                     hasBottomMargin: y !== b.length - 1,
                     withCardBody: !K,
                     headerButton: m,
@@ -222,7 +222,7 @@ let y = e => {
                             isDisabled: z,
                             sticker: e,
                             canManageSticker: U(e)
-                        }, e.id)), q]
+                        }, e.id)), Q]
                     }), !z && !Y && 0 === H.length && (0, i.jsx)("div", {
                         className: r()(S.Rm, S.MC),
                         children: (0, i.jsx)(d.Text, {

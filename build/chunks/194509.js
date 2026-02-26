@@ -1,25 +1,25 @@
-/** chunk id: 194509, original params: e,t,r (module,exports,require) **/
-r.d(t, {
+/** chunk id: 194509, original params: e,t,n (module,exports,require) **/
+n.d(t, {
     A: () => p,
     U: () => x
 });
-var n = r(627968);
-r(64700);
-var a = r(503698),
-    l = r.n(a),
-    s = r(582754),
-    i = r(421380),
-    d = r(397927),
-    u = r(736653),
-    o = r(783420),
-    c = r(788868),
-    m = r(985018),
-    h = r(975347);
+var r = n(627968);
+n(64700);
+var a = n(503698),
+    l = n.n(a),
+    s = n(582754),
+    i = n(421380),
+    d = n(397927),
+    u = n(736653),
+    o = n(783420),
+    c = n(788868),
+    m = n(985018),
+    h = n(975347);
 let x = e => e === c.pe.TIER_0 ? m.intl.string(m.t.rk4Uu8) : m.intl.string(m.t.Ve9Ge6),
     p = e => {
         let {
             className: t,
-            textOptions: r,
+            textOptions: n,
             color: a,
             look: c,
             hideIcon: m,
@@ -28,7 +28,7 @@ let x = e => e === c.pe.TIER_0 ? m.intl.string(m.t.rk4Uu8) : m.intl.string(m.t.V
             giftMessage: f,
             onClick: g
         } = e, N = (0, u.Ay)(), b = x(p);
-        return (0, n.jsx)(o.A, {
+        return (0, r.jsx)(o.A, {
             isGift: !0,
             subscriptionTier: p,
             premiumModalAnalyticsLocation: _,
@@ -38,20 +38,20 @@ let x = e => e === c.pe.TIER_0 ? m.intl.string(m.t.rk4Uu8) : m.intl.string(m.t.V
                 let {
                     onClick: u
                 } = e;
-                return (0, n.jsxs)(i.$n, {
+                return (0, r.jsxs)(i.$n, {
                     "data-migration-pending": !0,
                     innerClassName: h.Nq,
                     color: a ?? ((0, s.Mw)(N) ? i.XD.WHITE : i.XD.BRAND),
                     look: c ?? i.pR.OUTLINED,
                     className: l()(t, h.xP),
                     onClick: u,
-                    children: [!m && (0, n.jsx)(d.okO, {
+                    children: [!m && (0, r.jsx)(d.okO, {
                         size: "md",
                         color: "currentColor",
                         className: h.ez
-                    }), (0, n.jsx)("span", {
-                        className: l()(h._d, r?.textClassName),
-                        children: r?.textOverride ?? b
+                    }), (0, r.jsx)("span", {
+                        className: l()(h._d, n?.textClassName),
+                        children: n?.textOverride ?? b
                     })]
                 })
             }

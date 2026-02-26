@@ -1,7 +1,7 @@
 /** chunk id: 754513, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => A
+    A: () => p
 });
 var i = n(627968),
     s = n(64700),
@@ -41,7 +41,7 @@ function _(e) {
     })
 }
 
-function A(e) {
+function p(e) {
     let {
         rule: t,
         onChangeText: n,
@@ -50,8 +50,8 @@ function A(e) {
         patterns: a,
         valueError: o,
         errors: m,
-        validatePatternsChanged: A,
-        validateEditingValueChanged: p
+        validatePatternsChanged: p,
+        validateEditingValueChanged: A
     } = (0, c.A)(t, n), [f] = s.useState(() => ({
         tags: a,
         value: "",
@@ -72,10 +72,10 @@ function A(e) {
             erroringCharacterOffset: r
         }), e
     }, {}), [m, a]), N = s.useCallback(e => {
-        A(e, a)
-    }, [A, a]), E = s.useCallback(e => {
-        p(e)
-    }, [p]);
+        p(e, a)
+    }, [p, a]), E = s.useCallback(e => {
+        A(e)
+    }, [A]);
     return (0, i.jsxs)("div", {
         className: r()(x.Qn, l),
         children: [(0, i.jsx)(d.A, {

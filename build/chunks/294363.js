@@ -18,8 +18,8 @@ var i = n(627968),
     x = n(978956),
     h = n(615550),
     _ = n(419707),
-    A = n(734057),
-    p = n(808728),
+    p = n(734057),
+    A = n(808728),
     f = n(576705),
     j = n(994500),
     N = n(287809),
@@ -35,15 +35,15 @@ function v(e) {
         isExpanded: n,
         selectedChannelId: l,
         className: a
-    } = e, _ = (0, g.w)(t), p = (0, x.A)(t), [f, j] = s.useState(p), N = (0, o.bG)([A.A], () => A.A.getChannel(l), [l]), E = (0, u.Ay)(N), v = async () => {
+    } = e, _ = (0, g.w)(t), A = (0, x.A)(t), [f, j] = s.useState(A), N = (0, o.bG)([p.A], () => p.A.getChannel(l), [l]), E = (0, u.Ay)(N), v = async () => {
         j(!f);
         try {
-            await (0, m.jB)(t, !p);
+            await (0, m.jB)(t, !A);
             let e = l ?? t.safetyAlertsChannelId ?? null;
             if (null != e) {
                 let n = {
                     raid_alert_type: h.TF.JOIN_RAID,
-                    enabled: !p,
+                    enabled: !A,
                     raid_alert_channel_id: e,
                     guild_id: t.id,
                     channel_id: e
@@ -51,7 +51,7 @@ function v(e) {
                 (0, c.zV)(T.HAw.GUILD_RAID_ALERTS_SETUP, n)
             }
         } catch (e) {
-            (0, d.showToast)((0, d.createToast)(C.intl.string(C.t["46Rs3v"]), d.ToastType.FAILURE)), j(!p)
+            (0, d.showToast)((0, d.createToast)(C.intl.string(C.t["46Rs3v"]), d.ToastType.FAILURE)), j(!A)
         }
     };
     return (0, i.jsxs)("div", {
@@ -89,8 +89,8 @@ function S(e) {
         selectedChannelId: n,
         setSelectedChannelId: s,
         className: l
-    } = e, m = t.safetyAlertsChannelId ?? null, g = (0, o.yK)([p.Ay, N.default, j.A, f.A], () => {
-        let e = p.Ay.getChannels(t.id)[p.I6].filter(e => {
+    } = e, m = t.safetyAlertsChannelId ?? null, g = (0, o.yK)([A.Ay, N.default, j.A, f.A], () => {
+        let e = A.Ay.getChannels(t.id)[A.I6].filter(e => {
             let {
                 channel: t
             } = e;

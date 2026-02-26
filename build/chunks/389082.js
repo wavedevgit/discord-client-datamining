@@ -21,11 +21,11 @@ let _ = (0, m.Fe)({
     webpackId: 48736
 });
 
-function A(e) {
+function p(e) {
     return (0, a.OK)(e) > .25 ? o.A.unsafe_rawColors.WHITE.css : o.A.unsafe_rawColors.PRIMARY_530.css
 }
 
-function p(e) {
+function A(e) {
     let {
         value: t,
         onChange: n,
@@ -36,7 +36,7 @@ function p(e) {
         n(u)
     }
 
-    function p(e) {
+    function A(e) {
         n(e), m(e)
     }
     let f = t === g.TGz,
@@ -45,7 +45,7 @@ function p(e) {
             size: "custom",
             width: 32,
             height: 24,
-            color: A(t)
+            color: p(t)
         }),
         {
             ref: E,
@@ -124,7 +124,7 @@ function p(e) {
                 renderPopout: e => (0, i.jsx)(c.VNw, {
                     ...e,
                     value: t,
-                    onChange: p
+                    onChange: A
                 }),
                 children: e => (0, i.jsx)(c.DUT, {
                     ...e,
@@ -136,7 +136,7 @@ function p(e) {
                         className: h.cE,
                         width: 14,
                         height: 14,
-                        color: A(j)
+                        color: p(j)
                     })
                 })
             })]
@@ -154,7 +154,7 @@ function f(e) {
             ref: r,
             width: a
         } = (0, u.Ay)();
-    return t = null == a || a < 440 ? (0, i.jsx)(p, {
+    return t = null == a || a < 440 ? (0, i.jsx)(A, {
         value: n,
         onChange: s,
         disabled: l

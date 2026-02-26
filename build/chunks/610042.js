@@ -17,8 +17,8 @@ var i = n(627968),
     x = n(743981),
     h = n(814364),
     _ = n(985018),
-    A = n(917074),
-    p = n(265498);
+    p = n(917074),
+    A = n(265498);
 
 function f(e) {
     let {
@@ -45,18 +45,18 @@ function j(e) {
         selected: l = !1,
         onClick: d,
         radioProps: u
-    } = e, g = r()(p.Uh, {
-        [p.fT]: l,
-        [A.av]: n,
-        [A.WZ]: s
+    } = e, g = r()(A.Uh, {
+        [A.fT]: l,
+        [p.av]: n,
+        [p.WZ]: s
     }), f = (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(m.J, {
             badge: t.kind,
             width: x.Sl.SIZE_32,
             height: x.Sl.SIZE_32,
-            className: A.n2
+            className: p.n2
         }), n && !s && (0, i.jsx)("div", {
-            className: A.py,
+            className: p.py,
             children: (0, i.jsx)(a.LockIcon, {
                 size: "md"
             })
@@ -104,21 +104,21 @@ function N(e) {
         labelledBy: u
     }), b = !m && t.lockedBadges.length > 0;
     return (0, i.jsxs)("div", {
-        className: A.zr,
+        className: p.zr,
         children: [(0, i.jsx)(c.AC4, {
             id: N,
             children: _.intl.string(_.t["5AQGuZ"])
         }), (0, i.jsx)("div", {
             ...E,
             "aria-describedby": N,
-            className: p.p3,
+            className: A.p3,
             children: t.unlockedBadges.map(e => (0, i.jsx)(f, {
                 badge: e,
                 isSelected: e.kind === l,
                 onClick: () => o(e.kind)
             }, e.kind))
         }), m && (0, i.jsx)("ul", {
-            className: r()(p.p3, A.wA),
+            className: r()(A.p3, p.wA),
             children: t.lockedBadges.map(e => (0, i.jsx)("li", {
                 children: (0, i.jsx)(j, {
                     locked: !0,
@@ -127,16 +127,16 @@ function N(e) {
                 })
             }, e.kind))
         }), b && (0, i.jsxs)("div", {
-            className: A.WC,
+            className: p.WC,
             children: [(0, i.jsx)("div", {
-                className: p.p3,
+                className: A.p3,
                 children: t.lockedBadges.slice(0, 5).map(e => (0, i.jsx)(j, {
                     locked: !0,
                     preview: !0,
                     badge: e
                 }, e.kind))
             }), (0, i.jsxs)(c.DUT, {
-                className: r()(A.ZN, A.n7),
+                className: r()(p.ZN, p.n7),
                 onClick: () => x(!0),
                 children: [(0, i.jsx)(c.Text, {
                     variant: "text-sm/semibold",
@@ -148,21 +148,21 @@ function N(e) {
             })]
         }), m && (0, i.jsxs)(i.Fragment, {
             children: [null != n && (0, i.jsxs)("div", {
-                className: A.B7,
+                className: p.B7,
                 children: [(0, i.jsx)(c.Text, {
                     variant: "text-sm/normal",
                     color: "text-default",
-                    className: A.XY,
+                    className: p.XY,
                     children: _.intl.string(h.default.G3qiHu)
                 }), (0, i.jsx)("div", {
-                    className: A.WM,
+                    className: p.WM,
                     children: (0, i.jsx)(g.u, {
                         onClick: n,
                         size: "sm"
                     })
                 })]
             }), (0, i.jsxs)(c.DUT, {
-                className: A.eO,
+                className: p.eO,
                 onClick: () => x(!1),
                 children: [(0, i.jsx)(c.Text, {
                     variant: "text-sm/semibold",

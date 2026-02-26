@@ -93,8 +93,8 @@ function h(e) {
         onFocus: o,
         onRemove: h,
         isSelected: _,
-        isSelecting: A,
-        error: p,
+        isSelecting: p,
+        error: A,
         forceShowErrorTooltip: f
     } = e, j = s.useRef(null), N = s.useRef(null), [E, b] = s.useState(!1), {
         ref: T,
@@ -136,8 +136,8 @@ function h(e) {
                 [g.JN]: E,
                 [g.mV]: !E && !S,
                 [g.sp]: _,
-                [g.Pq]: A,
-                [g.bJ]: null != p && !E
+                [g.Pq]: p,
+                [g.bJ]: null != A && !E
             }),
             children: [(0, i.jsxs)(d.DUT, {
                 tag: "div",
@@ -147,14 +147,14 @@ function h(e) {
                 onMouseEnter: () => R(!0),
                 onMouseLeave: () => R(!1),
                 className: r()(g.nz, {
-                    [g.Pq]: A,
+                    [g.Pq]: p,
                     [g.JN]: E
                 }),
                 ref: N,
                 children: [(0, i.jsx)("input", {
                     className: r()(g.uS, {
                         [g.JN]: E,
-                        [g.Pq]: A
+                        [g.Pq]: p
                     }),
                     ref: j,
                     onChange: L,
@@ -168,7 +168,7 @@ function h(e) {
                     value: t,
                     isEditing: E,
                     isSelected: _,
-                    error: p,
+                    error: A,
                     forceShowErrorTooltip: y || E
                 })]
             }), !E && (0, i.jsx)(d.DUT, {

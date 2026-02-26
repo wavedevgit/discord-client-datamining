@@ -17,13 +17,13 @@ var i = n(627968),
     x = n(213733),
     h = n(652215),
     _ = n(985018),
-    A = n(875139);
-let p = {
+    p = n(875139);
+let A = {
         tension: 200,
         friction: 20
     },
     f = {
-        ...p,
+        ...A,
         clamp: !0
     };
 
@@ -37,8 +37,8 @@ function j(e) {
         n(2)
     }, g = 2 === t, x = 1 === t;
     if (!(!(l >= o) && l / o >= .8) || g) return null;
-    let h = x || g ? A.R : null,
-        p = x ? c.A.Stages.FLYING : c.A.Stages.HOVERING;
+    let h = x || g ? p.R : null,
+        A = x ? c.A.Stages.FLYING : c.A.Stages.HOVERING;
     return (0, i.jsx)(d.c7X, {
         from: {
             opacity: 0
@@ -49,24 +49,24 @@ function j(e) {
         config: f,
         shouldAnimate: "animate-always",
         children: e => (0, i.jsxs)(a.animated.div, {
-            className: A.Pc,
+            className: p.Pc,
             style: e,
             children: [(0, i.jsx)(c.A, {
-                className: A.a_,
-                stage: p,
+                className: p.a_,
+                stage: A,
                 onFlyingComplete: m
             }), (0, i.jsx)("div", {
-                className: r()(A.Sb, h),
+                className: r()(p.Sb, h),
                 children: _.intl.format(_.t.qV3Erl, {
                     numLeft: o - l
                 })
             }), (0, i.jsx)(d.DUT, {
                 onClick: u,
-                className: r()(A.dE, h),
+                className: r()(p.dE, h),
                 children: (0, i.jsx)(d.aXh, {
                     size: "md",
                     color: "currentColor",
-                    className: A.sz
+                    className: p.sz
                 })
             })]
         })
@@ -97,25 +97,25 @@ function N(e) {
         to: {
             unlockedTranslateY: 50 * (0 === f)
         },
-        config: p,
+        config: A,
         children: e => (0, i.jsx)("div", {
             className: r()({
-                [A.SJ]: !t,
-                [A.Xx]: l,
-                [A.Mq]: !l
+                [p.SJ]: !t,
+                [p.Xx]: l,
+                [p.Mq]: !l
             }, h),
             ref: _,
             children: (0, i.jsxs)("div", {
-                className: A.H3,
+                className: p.H3,
                 children: [(0, i.jsx)(x.A, {
                     tier: o.tier,
                     color: "currentColor",
-                    className: r()(A.w5, {
-                        [A.AU]: !l
+                    className: r()(p.w5, {
+                        [p.AU]: !l
                     })
                 }), (0, i.jsx)("div", {
-                    className: r()(A.TJ, {
-                        [A.bY]: l
+                    className: r()(p.TJ, {
+                        [p.bY]: l
                     }),
                     children: o.title
                 }), c ? (0, i.jsx)(b, {
@@ -141,13 +141,13 @@ function E(e) {
         isAnimatedTo: a,
         hasBottomMargin: c,
         headerButton: x = null,
-        withCardBody: p = !0,
+        withCardBody: A = !0,
         guildId: f,
         showHeaderLockStatus: j = !0
     } = e, E = (0, o.bG)([g.A], () => g.A.getGuild(f)?.premiumTier ?? h.TVA.NONE), b = h.M2T[l.tier], T = a && l.tier <= E, C = l.tier !== h.TVA.NONE && l.tier !== h.TVA.TIER_1;
     return (0, i.jsxs)("div", {
-        className: r()(A.Zm, {
-            [A.Ab]: c
+        className: r()(p.Zm, {
+            [p.Ab]: c
         }),
         children: [(0, i.jsx)(N, {
             subscriptionCount: n,
@@ -157,7 +157,7 @@ function E(e) {
             onSetRef: e => {
                 null != s && s(e, l)
             },
-            withCardBody: p,
+            withCardBody: A,
             guildId: f,
             hasBottomMargin: c,
             subscriptionsRequired: b,
@@ -165,36 +165,36 @@ function E(e) {
             isAnimatedTo: a
         }), (0, i.jsx)("div", {
             className: r()({
-                [A.J8]: p
+                [p.J8]: A
             }),
             children: null != t ? t : (0, i.jsxs)(i.Fragment, {
                 children: [C ? (0, i.jsx)("div", {
-                    className: A.p8,
+                    className: p.p8,
                     children: _.intl.string(_.t.oKzyRQ)
                 }) : null, null != l.perks && (0, i.jsx)("div", {
-                    className: A.md,
+                    className: p.md,
                     children: l.perks.map(e => ((e, t) => {
                         let {
                             Icon: n,
                             className: s
                         } = (0, u.a)(e.icon, t);
                         return (0, i.jsxs)("div", {
-                            className: A.d_,
+                            className: p.d_,
                             children: [(0, i.jsx)(m.A, {
                                 name: String(e.icon),
                                 icon: n,
-                                className: A.kf,
+                                className: p.kf,
                                 iconClassName: s
                             }), (0, i.jsxs)("div", {
-                                className: A.uL,
+                                className: p.uL,
                                 children: [(0, i.jsxs)("div", {
-                                    className: A.hY,
+                                    className: p.hY,
                                     children: [e.title, e.isNew ? (0, i.jsx)(d.LpS, {
-                                        className: A.Ad,
+                                        className: p.Ad,
                                         text: _.intl.string(_.t.y2b7CA)
                                     }) : null]
                                 }), (0, i.jsx)("div", {
-                                    className: A.jV,
+                                    className: p.jV,
                                     children: e.description
                                 })]
                             })]
@@ -226,7 +226,7 @@ let b = e => {
             style: {
                 transform: t
             },
-            className: A.mM,
+            className: p.mM,
             children: _.intl.string(_.t.dNGM0v)
         })
     },
@@ -244,7 +244,7 @@ let b = e => {
             }), (0, i.jsx)(d.XAi, {
                 size: "md",
                 color: "currentColor",
-                className: A.Qe
+                className: p.Qe
             })]
         })
     }

@@ -1,53 +1,53 @@
 /** chunk id: 466410, original params: e,n,t (module,exports,require) **/
 t.d(n, {
-    A: () => E
+    A: () => A
 });
 var i = t(627968);
 t(64700);
 var l = t(311907),
     a = t(397927),
     s = t(926919),
-    r = t(172272),
-    o = t(540999),
-    c = t(111162),
+    c = t(172272),
+    r = t(540999),
+    o = t(111162),
     d = t(253932),
     u = t(780964),
     g = t(840065),
     p = t(652215);
 
-function E() {
+function A() {
     let {
         layoutDebuggingEnabled: e,
         isDeveloper: n,
         isLoggingGatewayEvents: t,
-        isLoggingOverlayEvents: E,
-        isLoggingAnalyticsEvents: A,
+        isLoggingOverlayEvents: A,
+        isLoggingAnalyticsEvents: E,
         isTracingRequests: v,
         isForcedCanary: b,
         isAxeEnabled: h,
-        preventPopoutClose: y,
-        onlyShowPreviewAppCollections: S,
-        disableAppCollectionsCache: x
-    } = (0, l.cf)([c.default, o.A], () => ({
-        layoutDebuggingEnabled: c.default.layoutDebuggingEnabled,
-        isDeveloper: o.A.isDeveloper,
-        isLoggingGatewayEvents: c.default.isLoggingGatewayEvents,
-        isLoggingOverlayEvents: c.default.isLoggingOverlayEvents,
-        isLoggingAnalyticsEvents: c.default.isLoggingAnalyticsEvents,
-        isTracingRequests: c.default.isTracingRequests,
-        isForcedCanary: c.default.isForcedCanary,
-        isSourceMapsEnabled: c.default.sourceMapsEnabled,
-        isAxeEnabled: c.default.isAxeEnabled,
-        preventPopoutClose: c.default.preventPopoutClose,
-        onlyShowPreviewAppCollections: c.default.onlyShowPreviewAppCollections,
-        disableAppCollectionsCache: c.default.disableAppCollectionsCache
+        preventPopoutClose: S,
+        onlyShowPreviewAppCollections: y,
+        disableAppCollectionsCache: _
+    } = (0, l.cf)([o.default, r.A], () => ({
+        layoutDebuggingEnabled: o.default.layoutDebuggingEnabled,
+        isDeveloper: r.A.isDeveloper,
+        isLoggingGatewayEvents: o.default.isLoggingGatewayEvents,
+        isLoggingOverlayEvents: o.default.isLoggingOverlayEvents,
+        isLoggingAnalyticsEvents: o.default.isLoggingAnalyticsEvents,
+        isTracingRequests: o.default.isTracingRequests,
+        isForcedCanary: o.default.isForcedCanary,
+        isSourceMapsEnabled: o.default.sourceMapsEnabled,
+        isAxeEnabled: o.default.isAxeEnabled,
+        preventPopoutClose: o.default.preventPopoutClose,
+        onlyShowPreviewAppCollections: o.default.onlyShowPreviewAppCollections,
+        disableAppCollectionsCache: o.default.disableAppCollectionsCache
     })), {
-        horizontalSpacing: C,
-        verticalSpacing: O
-    } = (0, r.Or)(), {
-        setHorizontalSpacing: _,
+        horizontalSpacing: x,
+        verticalSpacing: C
+    } = (0, c.Or)(), {
+        setHorizontalSpacing: O,
         setVerticalSpacing: f
-    } = r.Or.getState(), I = d.HZ.useSetting();
+    } = c.Or.getState(), D = d.HZ.useSetting();
     return n ? [(0, i.jsxs)(a.Drp, {
         id: "overrides",
         label: "Overrides",
@@ -59,9 +59,9 @@ function E() {
         children: [(0, i.jsx)(a.sLh, {
             id: "always-deliver",
             label: "Always Deliver Ads",
-            checked: I,
+            checked: D,
             action: () => {
-                d.HZ.updateSetting(!I)
+                d.HZ.updateSetting(!D)
             }
         }, "always-deliver"), (0, i.jsx)(a.sLh, {
             id: "forced-canary",
@@ -75,19 +75,19 @@ function E() {
         }, "forced-canary"), (0, i.jsx)(a.sLh, {
             id: "preview-collections",
             label: "Preview Unpublished Collections",
-            checked: S,
+            checked: y,
             action: () => {
                 (0, s.x)({
-                    onlyShowPreviewAppCollections: !S
+                    onlyShowPreviewAppCollections: !y
                 })
             }
         }, "preview-collections"), (0, i.jsx)(a.sLh, {
             id: "disable-collections-cache",
             label: "Disable Collections Cache",
-            checked: x,
+            checked: _,
             action: () => {
                 (0, s.x)({
-                    disableAppCollectionsCache: !x
+                    disableAppCollectionsCache: !_
                 })
             }
         }, "disable-collections-cache")]
@@ -111,19 +111,19 @@ function E() {
         }, "gateway-events"), (0, i.jsx)(a.sLh, {
             id: "overlay-events",
             label: "Overlay RPC Events",
-            checked: E,
+            checked: A,
             action: () => {
                 (0, s.x)({
-                    logOverlayEvents: !E
+                    logOverlayEvents: !A
                 })
             }
         }, "overlay-events"), (0, i.jsx)(a.sLh, {
             id: "analytics-events",
             label: "Analytics Events",
-            checked: A,
+            checked: E,
             action: () => {
                 (0, s.x)({
-                    logAnalyticsEvents: !A
+                    logAnalyticsEvents: !E
                 })
             }
         }, "analytics-events"), (0, i.jsx)(a.sLh, {
@@ -138,10 +138,10 @@ function E() {
         }, "tracing-requests"), (0, i.jsx)(a.sLh, {
             id: "prevent-popout-close",
             label: "Prevent Popouts From Closing",
-            checked: y,
+            checked: S,
             action: () => {
                 (0, s.x)({
-                    preventPopoutClose: !y
+                    preventPopoutClose: !S
                 })
             }
         }, "prevent-popout-close")]
@@ -178,10 +178,10 @@ function E() {
                 control: (e, n) => (0, i.jsx)(a.i42, {
                     ...e,
                     ref: n,
-                    value: C,
+                    value: x,
                     minValue: 0,
-                    maxValue: r.YR,
-                    onChange: e => _(e),
+                    maxValue: c.YR,
+                    onChange: e => O(e),
                     renderValue: e => `${Math.round(e)}px`,
                     "aria-label": "Horizontal Spacing"
                 })
@@ -191,9 +191,9 @@ function E() {
                 control: (e, n) => (0, i.jsx)(a.i42, {
                     ...e,
                     ref: n,
-                    value: O,
+                    value: C,
                     minValue: 0,
-                    maxValue: r.YR,
+                    maxValue: c.YR,
                     onChange: e => f(e),
                     "aria-label": "Vertical Spacing",
                     renderValue: e => `${Math.round(e)}px`

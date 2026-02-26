@@ -1,7 +1,7 @@
 /** chunk id: 826292, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => p,
+    A: () => A,
     K: () => f
 });
 var i = n(627968);
@@ -19,9 +19,9 @@ var s = n(788373),
     x = n(542580),
     h = n(803378),
     _ = n(652215),
-    A = n(985018);
+    p = n(985018);
 
-function p(e) {
+function A(e) {
     let {
         refToScroller: t
     } = e, n = (0, l.bG)([m.A], () => m.A.getGuild()), {
@@ -65,15 +65,15 @@ function f() {
     } = (0, l.cf)([m.A], () => ({
         guild: m.A.getGuild(),
         submitting: m.A.isSubmitting()
-    })), n = (0, l.bG)([c.A], () => c.A.can(_.xBc.KICK_MEMBERS, e)), d = !1, p = null;
-    return n || g.default.editedIntegration?.expire_behavior !== s.F.KICK || (d = !0, p = (0, i.jsx)(a.Text, {
+    })), n = (0, l.bG)([c.A], () => c.A.can(_.xBc.KICK_MEMBERS, e)), d = !1, A = null;
+    return n || g.default.editedIntegration?.expire_behavior !== s.F.KICK || (d = !0, A = (0, i.jsx)(a.Text, {
         color: "text-feedback-critical",
         variant: "text-md/normal",
-        children: A.intl.string(A.t["mrO/ZQ"])
+        children: p.intl.string(p.t["mrO/ZQ"])
     })), (0, i.jsx)(r.A, {
         submitting: t,
         disabled: d,
-        errorMessage: p,
+        errorMessage: A,
         onReset: () => {
             o.A.init(), x.C8(), null != e && u.A.init(e.id)
         },

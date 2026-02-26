@@ -20,7 +20,7 @@ let g = function(e) {
         paginationCaretClassName: l,
         intervalBetweenAutomaticItemRotations: g,
         renderItem: x
-    } = e, h = s.useMemo(() => new a.IX, []), [_, A] = s.useState(c.f.LEFT), [p, f] = s.useState(0), [j, N] = s.useState(!1), [E, b] = s.useState(!1), T = s.useCallback((e, t) => {
+    } = e, h = s.useMemo(() => new a.IX, []), [_, p] = s.useState(c.f.LEFT), [A, f] = s.useState(0), [j, N] = s.useState(!1), [E, b] = s.useState(!1), T = s.useCallback((e, t) => {
         f(n => {
             let i = n + t;
             return i < 0 ? i = e.length - 1 : i > e.length - 1 && (i = 0), i
@@ -39,7 +39,7 @@ let g = function(e) {
         children: [(0, i.jsx)(o.DUT, {
             className: r()(m.Sx, l),
             onClick: I,
-            onMouseEnter: () => A(c.f.RIGHT),
+            onMouseEnter: () => p(c.f.RIGHT),
             ignoreKeyPress: E,
             children: (0, i.jsx)(d.A, {
                 direction: d.A.Directions.LEFT,
@@ -48,16 +48,16 @@ let g = function(e) {
                 "aria-label": u.intl.string(u.t.FAmEgm)
             })
         }), (0, i.jsx)(c.A, {
-            step: p,
+            step: A,
             direction: _,
             onAnimationStart: () => b(!0),
             onAnimationEnd: () => b(!1),
             className: r()(m.Dk, n),
-            children: x(t[p])
+            children: x(t[A])
         }), (0, i.jsx)(o.DUT, {
             className: r()(m.Sx, l),
             onClick: C,
-            onMouseEnter: () => A(c.f.LEFT),
+            onMouseEnter: () => p(c.f.LEFT),
             ignoreKeyPress: E,
             children: (0, i.jsx)(d.A, {
                 direction: d.A.Directions.RIGHT,

@@ -17,15 +17,15 @@ var i = n(627968),
     x = n(994870),
     h = n(400281),
     _ = n(652215),
-    A = n(705751),
-    p = n(650433);
+    p = n(705751),
+    A = n(650433);
 
 function f() {
     let e, t = (0, l.bG)([c.A], () => c.A.getGuild()),
         {
             application: n,
             loading: f
-        } = (0, o.A)(t?.id, A.S7.GUILD_ROLE_SUBSCRIPTIONS),
+        } = (0, o.A)(t?.id, p.S7.GUILD_ROLE_SUBSCRIPTIONS),
         j = s.useRef(null),
         N = (0, u.A)(t ?? void 0);
     s.useEffect(() => {
@@ -41,14 +41,14 @@ function f() {
         guild: t,
         application: n
     }), (0, i.jsx)("div", {
-        className: p.ed,
+        className: A.ed,
         children: (0, i.jsx)("div", {
-            className: p.V1,
+            className: A.V1,
             children: (0, i.jsx)(a.ArX, {
-                className: p.iL,
+                className: A.iL,
                 children: (0, i.jsx)("main", {
                     ref: j,
-                    className: p.z1,
+                    className: A.z1,
                     children: (0, i.jsx)(a.xpW, {
                         containerRef: j,
                         children: e

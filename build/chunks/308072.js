@@ -26,7 +26,7 @@ function m(e) {
         coverImageSize: 256
     }), h = (0, o.bG)([c.A], () => c.A.getDetectableGame(t)?.name ?? ""), _ = s.useCallback(() => {
         l?.(t)
-    }, [t, l]), A = s.useMemo(() => g ? null : null == x ? (0, i.jsx)("div", {
+    }, [t, l]), p = s.useMemo(() => g ? null : null == x ? (0, i.jsx)("div", {
         className: u.gP,
         children: (0, i.jsx)(a._7Z, {
             size: "lg"
@@ -54,7 +54,7 @@ function m(e) {
                 children: (0, i.jsx)(a.P7L, {
                     checked: n
                 })
-            }), A]
+            }), p]
         }), (0, i.jsx)(a.Text, {
             className: u.mO,
             variant: "text-xs/medium",

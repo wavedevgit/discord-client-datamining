@@ -1,10 +1,10 @@
 /** chunk id: 437553, original params: e,t,l (module,exports,require) **/
 l.d(t, {
-    A: () => a
+    A: () => s
 });
 var n = l(562465),
     i = l(652215);
-let a = {
+let s = {
     async updateEstimate(e) {
         let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 7,
             l = arguments.length > 2 ? arguments[2] : void 0;

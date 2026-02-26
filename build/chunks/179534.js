@@ -17,8 +17,8 @@ var i = n(627968),
     x = n(138298),
     h = n(657331),
     _ = n(761640),
-    A = n(71393),
-    p = n(266047),
+    p = n(71393),
+    A = n(266047),
     f = n(221950),
     j = n(735937),
     N = n(104685),
@@ -36,11 +36,11 @@ var i = n(627968),
 function G(e) {
     let {
         guildId: t
-    } = e, n = (0, a.bG)([A.A], () => A.A.getGuild(t)), {
+    } = e, n = (0, a.bG)([p.A], () => p.A.getGuild(t)), {
         analyticsLocations: l
     } = (0, c.Ay)(d.A.GUILD_SETTINGS_MEMBERS_PAGE), G = (0, u.q)(t), L = (0, a.bG)([_.Ay], () => _.Ay.getGuildSidebarState(t), [t]), D = s.useCallback(() => {
         x.A.closeGuildSidebar(t)
-    }, [t]), M = !1 == !!n?.features.has(S.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY), k = (0, a.bG)([p.A], () => p.A.getEstimatedMemberSearchCountByGuildId(t), [t]), U = s.useCallback(e => {
+    }, [t]), M = !1 == !!n?.features.has(S.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY), k = (0, a.bG)([A.A], () => A.A.getEstimatedMemberSearchCountByGuildId(t), [t]), U = s.useCallback(e => {
         null != e && (0, h.openUserProfileModal)({
             userId: e.userId,
             guildId: e.guildId,

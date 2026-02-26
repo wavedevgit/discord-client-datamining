@@ -1,18 +1,18 @@
-/** chunk id: 416654, original params: e,t,r (module,exports,require) **/
-r.d(t, {
+/** chunk id: 416654, original params: e,t,n (module,exports,require) **/
+n.d(t, {
     v: () => s
 });
-var n = r(311907),
-    a = r(439174),
-    l = r(622543);
+var r = n(311907),
+    a = n(439174),
+    l = n(622543);
 
 function s(e) {
-    return (0, n.bG)([l.A], () => {
-        let t, r = null != e ? l.A.getUserProfile(e) : null,
-            n = r?.premiumSince;
-        return null == r || null == n ? null : (r?.badges?.forEach(e => {
-            let r = (0, a.cZ)(e.id);
-            null != r && (t = r)
+    return (0, r.bG)([l.A], () => {
+        let t, n = null != e ? l.A.getUserProfile(e) : null,
+            r = n?.premiumSince;
+        return null == n || null == r ? null : (n?.badges?.forEach(e => {
+            let n = (0, a.cZ)(e.id);
+            null != n && (t = n)
         }), t)
     })
 }

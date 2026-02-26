@@ -17,8 +17,8 @@ var i = n(627968),
     x = n(975807),
     h = n(58149),
     _ = n(465932),
-    A = n(555337),
-    p = n(954571),
+    p = n(555337),
+    A = n(954571),
     f = n(300233),
     j = n(599941),
     N = n(652215),
@@ -34,16 +34,16 @@ let T = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
         } = e, l = (0, j.Tq)(t.id), {
             loading: a,
             updateSubscriptionsSettings: d
-        } = (0, j.KE)(), [A, f] = s.useState(t.features.has(N.GuildFeatures.CREATOR_STORE_PAGE)), [v, S] = s.useState(l?.store_page_primary_color ?? I), [y, R] = s.useState(l?.store_page_trailer_url), O = null == y || null != y.match(C), [G, L] = s.useState(l?.store_page_show_subscriber_count ?? !1), D = s.useRef(l?.store_page_slug).current, M = A !== t.features.has(N.GuildFeatures.CREATOR_STORE_PAGE) || l?.store_page_primary_color == null && v !== I || l?.store_page_primary_color != null && v !== l?.store_page_primary_color || y !== l?.store_page_trailer_url || null != G && G !== l?.store_page_show_subscriber_count, k = async () => {
+        } = (0, j.KE)(), [p, f] = s.useState(t.features.has(N.GuildFeatures.CREATOR_STORE_PAGE)), [v, S] = s.useState(l?.store_page_primary_color ?? I), [y, R] = s.useState(l?.store_page_trailer_url), O = null == y || null != y.match(C), [G, L] = s.useState(l?.store_page_show_subscriber_count ?? !1), D = s.useRef(l?.store_page_slug).current, M = p !== t.features.has(N.GuildFeatures.CREATOR_STORE_PAGE) || l?.store_page_primary_color == null && v !== I || l?.store_page_primary_color != null && v !== l?.store_page_primary_color || y !== l?.store_page_trailer_url || null != G && G !== l?.store_page_show_subscriber_count, k = async () => {
             o()(null != l, "Settings must be defined");
             let e = {};
-            A !== t.features.has(N.GuildFeatures.CREATOR_STORE_PAGE) && (e.store_page_enabled = A), (l?.store_page_primary_color == null && v !== I || l?.store_page_primary_color != null && v !== l?.store_page_primary_color) && (e.store_page_primary_color = v), y !== l?.store_page_trailer_url && (e.store_page_trailer_url = y), G !== l?.store_page_show_subscriber_count && (e.store_page_show_subscriber_count = G), Object.keys(e).length > 0 && (await d(t.id, e), "store_page_enabled" in e && p.default.track(N.HAw.GUILD_ROLE_SUBSCRIPTION_STORE_PAGE_TOGGLED, {
-                enabled: A,
+            p !== t.features.has(N.GuildFeatures.CREATOR_STORE_PAGE) && (e.store_page_enabled = p), (l?.store_page_primary_color == null && v !== I || l?.store_page_primary_color != null && v !== l?.store_page_primary_color) && (e.store_page_primary_color = v), y !== l?.store_page_trailer_url && (e.store_page_trailer_url = y), G !== l?.store_page_show_subscriber_count && (e.store_page_show_subscriber_count = G), Object.keys(e).length > 0 && (await d(t.id, e), "store_page_enabled" in e && A.default.track(N.HAw.GUILD_ROLE_SUBSCRIPTION_STORE_PAGE_TOGGLED, {
+                enabled: p,
                 ...(0, h.H$)(t.id)
             }))
         }, U = N.X7G.ROLE_SUBSCRIPTION_STORE_PAGE(D), P = null != y && y === l?.store_page_trailer_url, {
             shouldRestrictUpdatingCreatorMonetizationSettings: w
-        } = (0, _.nq)(t.id), B = w || !O, F = !A && !n;
+        } = (0, _.nq)(t.id), B = w || !O, F = !p && !n;
         return (0, i.jsxs)(m.BJc, {
             gap: 24,
             children: [(0, i.jsx)(m.Heading, {
@@ -53,7 +53,7 @@ let T = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
                 gap: 8,
                 children: [(0, i.jsx)(m.dOG, {
                     label: E.intl.string(E.t.lwvl1g),
-                    checked: A,
+                    checked: p,
                     disabled: w || F,
                     description: E.intl.string(E.t["uU/69/"]),
                     onChange: e => f(e)
@@ -141,7 +141,7 @@ let T = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
     };
 
 function S() {
-    let e = (0, d.bG)([A.A], () => A.A.getGuild()),
+    let e = (0, d.bG)([p.A], () => p.A.getGuild()),
         t = (0, f.X)(),
         n = (0, j.uP)(e?.id).some(e => e.published);
     return null != e && t ? (0, i.jsx)(v, {
@@ -151,7 +151,7 @@ function S() {
 }
 
 function y() {
-    let e = (0, d.bG)([A.A], () => A.A.getGuild());
+    let e = (0, d.bG)([p.A], () => p.A.getGuild());
     return (0, i.jsx)(f.H, {
         guildId: e?.id,
         refetchOnMount: !0,

@@ -1,11 +1,11 @@
 /** chunk id: 582942, original params: e,t,i (module,exports,require) **/
 i.d(t, {
-    A: () => b
+    A: () => I
 });
-var l = i(627968),
-    a = i(64700),
-    n = i(503698),
-    s = i.n(n),
+var n = i(627968),
+    l = i(64700),
+    a = i(503698),
+    s = i.n(a),
     r = i(735438),
     c = i.n(r),
     o = i(311907),
@@ -20,41 +20,41 @@ var l = i(627968),
     p = i(459746),
     v = i(225732),
     A = i(985018),
-    N = i(728528),
-    _ = i(470078);
-let I = e => {
+    _ = i(728528),
+    N = i(470078);
+let E = e => {
     let {
         game: t,
         onClose: i,
-        trackClick: a
-    } = e, n = (0, o.bG)([x.A], () => x.A.getApplication(t.applicationId));
-    return (0, l.jsx)(d.m, {
+        trackClick: l
+    } = e, a = (0, o.bG)([x.A], () => x.A.getApplication(t.applicationId));
+    return (0, n.jsx)(d.m, {
         asContainer: !0,
         text: t.name,
-        children: (0, l.jsx)(u.DUT, {
-            className: _.fS,
+        children: (0, n.jsx)(u.DUT, {
+            className: N.fS,
             onClick: async () => {
-                a(h.Ws.ClickSimilarGame, t.applicationId), (0, u.mMO)(() => Promise.resolve(e => (0, l.jsx)(v.default, {
+                l(h.Ws.ClickSimilarGame, t.applicationId), (0, u.mMO)(() => Promise.resolve(e => (0, n.jsx)(v.default, {
                     applicationId: t.applicationId,
                     source: h.Ob.SimilarGames,
                     ...e
                 }))), await new Promise(e => setTimeout(e, 10)), i()
             },
-            children: (0, l.jsx)(p.A, {
+            children: (0, n.jsx)(p.A, {
                 game: t,
-                application: n,
-                className: _.n1,
+                application: a,
+                className: N.n1,
                 size: p.w.SMALL
             })
         })
     })
 };
 
-function b(e) {
+function I(e) {
     let {
         applicationId: t,
         onClose: i,
-        trackAction: n,
+        trackAction: a,
         similarGames: r,
         similarGamesError: d
     } = e, x = (0, o.bG)([f.A, g.A], () => {
@@ -62,29 +62,29 @@ function b(e) {
             i = r.some(e => g.A.isFetching(e));
         return e || i
     }), h = (0, o.yK)([g.A], () => r.map(e => g.A.getGame(e)).filter(e => null != e).filter(e => (0, j.oS)(e.applicationId)).slice(0, 5));
-    return (a.useEffect(() => {
+    return (l.useEffect(() => {
         r.length > 0 && m.A.getDetectableGamesSupplemental([t, ...r])
-    }, [t, r]), x && null == d) ? (0, l.jsxs)("div", {
-        children: [(0, l.jsx)("div", {
-            className: s()(_.vM, N.bV)
-        }), (0, l.jsx)("div", {
-            className: s()(N.nM, N.iH),
-            children: c().range(0, 5).map(e => (0, l.jsx)("div", {
-                className: _.nn
+    }, [t, r]), x && null == d) ? (0, n.jsxs)("div", {
+        children: [(0, n.jsx)("div", {
+            className: s()(N.vM, _.bV)
+        }), (0, n.jsx)("div", {
+            className: s()(_.nM, _.iH),
+            children: c().range(0, 5).map(e => (0, n.jsx)("div", {
+                className: N.nn
             }, e))
         })]
-    }) : (x || 0 !== h.length) && null == d ? (0, l.jsxs)("div", {
-        children: [(0, l.jsx)(u.Heading, {
-            className: N.bV,
+    }) : (x || 0 !== h.length) && null == d ? (0, n.jsxs)("div", {
+        children: [(0, n.jsx)(u.Heading, {
+            className: _.bV,
             variant: "text-md/semibold",
             color: "text-strong",
             children: A.intl.string(A.t["6rLyQB"])
-        }), (0, l.jsx)("div", {
-            className: _.D$,
-            children: h.map(e => (0, l.jsx)(I, {
+        }), (0, n.jsx)("div", {
+            className: N.D$,
+            children: h.map(e => (0, n.jsx)(E, {
                 game: e,
                 onClose: i,
-                trackClick: n
+                trackClick: a
             }, e.applicationId))
         })]
     }) : null

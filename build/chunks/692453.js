@@ -1,7 +1,7 @@
 /** chunk id: 692453, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => p,
+    A: () => A,
     R: () => f
 });
 var i = n(627968),
@@ -18,12 +18,12 @@ var i = n(627968),
     x = n(652215),
     h = n(539916),
     _ = n(985018),
-    A = n(903083);
+    p = n(903083);
 
-function p(e) {
+function A(e) {
     let {
         saveOnClose: t
-    } = e, r = (0, l.bG)([c.A], () => c.A.getGuildId()), p = (0, l.bG)([m.A], () => m.A.getEditedConnections()), f = (0, l.bG)([m.A], () => m.A.isSubmitting()), j = s.useRef(r);
+    } = e, r = (0, l.bG)([c.A], () => c.A.getGuildId()), A = (0, l.bG)([m.A], () => m.A.getEditedConnections()), f = (0, l.bG)([m.A], () => m.A.isSubmitting()), j = s.useRef(r);
     s.useEffect(() => {
         j.current = r
     }, [r]), s.useEffect(() => {
@@ -44,10 +44,10 @@ function p(e) {
                 })
             })
         }, [r]),
-        E = s.useMemo(() => p.map(e => ({
+        E = s.useMemo(() => A.map(e => ({
             ...e,
             id: (0, h.Sq)(e)
-        })), [p]),
+        })), [A]),
         b = s.useCallback(e => {
             let t = e.map(e => {
                 let {
@@ -65,13 +65,13 @@ function p(e) {
             draggingId: v
         } = (0, o.A)(E, b);
     if (null == r) return null;
-    let S = p.length < h.pA;
+    let S = A.length < h.pA;
     return (0, i.jsx)("div", {
-        className: A.kL,
+        className: p.kL,
         children: (0, i.jsxs)("div", {
-            className: A.jx,
+            className: p.jx,
             children: [(0, i.jsxs)("div", {
-                className: A.G6,
+                className: p.G6,
                 children: [(0, i.jsx)(a.Heading, {
                     variant: "heading-lg/bold",
                     children: _.intl.string(_.t.Cl8F8H)
@@ -82,8 +82,8 @@ function p(e) {
                         linkedRolesUrl: d.A.getArticleURL(x.MVz.CONNECTION_DETAILS_ADMIN)
                     })
                 })]
-            }), p.length > 0 && (0, i.jsx)("div", {
-                className: A.eF,
+            }), A.length > 0 && (0, i.jsx)("div", {
+                className: p.eF,
                 children: E.map((e, t) => (0, i.jsx)(g.A, {
                     connection: e,
                     index: t,
@@ -93,7 +93,7 @@ function p(e) {
                     draggingId: v
                 }, e.id))
             }), (0, i.jsxs)("button", {
-                className: A.qG,
+                className: p.qG,
                 onClick: N,
                 disabled: !S || f,
                 type: "button",
@@ -133,11 +133,11 @@ function f() {
         onSaveText: _.intl.string(_.t["R3BPH+"]),
         disabled: s,
         errorMessage: s ? (0, i.jsx)("div", {
-            className: A.Tt,
+            className: p.Tt,
             children: (0, i.jsx)("ul", {
-                className: A.qr,
+                className: p.qr,
                 children: n.map((e, t) => (0, i.jsxs)("li", {
-                    className: A.Ff,
+                    className: p.Ff,
                     children: [(0, i.jsx)(a.EpV, {
                         size: "sm",
                         color: "currentColor"

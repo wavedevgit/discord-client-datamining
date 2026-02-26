@@ -31,13 +31,13 @@ function g() {
             };
             (0, a._C)(e.id, t)
         }, [e, g]),
-        A = s.useCallback(() => {
+        p = s.useCallback(() => {
             null != t && d.A.init(t)
         }, [t]);
     return (0, i.jsx)(r.A, {
         submitting: x,
         errorMessage: h,
         onSave: _,
-        onReset: A
+        onReset: p
     })
 }

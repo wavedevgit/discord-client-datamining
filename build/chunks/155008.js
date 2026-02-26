@@ -17,8 +17,8 @@ var i = n(627968),
     x = n(982832),
     h = n(660496),
     _ = n(88613),
-    A = n(807334),
-    p = n(5558),
+    p = n(807334),
+    A = n(5558),
     f = n(49999),
     j = n(985018),
     N = n(262052);
@@ -32,7 +32,7 @@ function E() {
                 dismissAction: f.i.AUTO
             })
         }, []), null == n) return null;
-    let b = (0, p.N)(n);
+    let b = (0, A.N)(n);
     switch (E) {
         case h.C.OVERVIEW:
             e = (0, i.jsx)(_.A, {
@@ -40,13 +40,13 @@ function E() {
             });
             break;
         case h.C.CAPTCHA_AND_RAID_PROTECTION:
-            e = (0, i.jsx)(A.A, {
+            e = (0, i.jsx)(p.A, {
                 title: j.intl.string(j.t["53eF5o"]),
                 settings: b[h.C.CAPTCHA_AND_RAID_PROTECTION]
             });
             break;
         case h.C.DM_AND_SPAM_PROTECTION:
-            e = (0, i.jsx)(A.A, {
+            e = (0, i.jsx)(p.A, {
                 title: j.intl.string(j.t.O0SfFy),
                 settings: b[h.C.DM_AND_SPAM_PROTECTION]
             });
@@ -57,7 +57,7 @@ function E() {
             });
             break;
         case h.C.PERMISSIONS:
-            e = (0, i.jsx)(A.A, {
+            e = (0, i.jsx)(p.A, {
                 title: j.intl.string(j.t.BXoNiT),
                 settings: b[h.C.PERMISSIONS]
             })

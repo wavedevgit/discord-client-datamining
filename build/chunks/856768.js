@@ -4,11 +4,11 @@ l.d(t, {
 });
 var n = l(627968),
     i = l(64700),
-    a = l(827734),
-    s = l(73939),
+    s = l(827734),
+    a = l(73939),
     r = l(36525),
-    o = l(421380),
-    C = l(397927),
+    C = l(421380),
+    o = l(397927),
     d = l(686956),
     c = l(58149),
     u = l(961350),
@@ -16,63 +16,63 @@ var n = l(627968),
     x = l(504049),
     h = l(134413),
     g = l(225671),
-    _ = l(652215),
-    H = l(985018),
-    p = l(404404);
+    H = l(652215),
+    j = l(985018),
+    _ = l(404404);
 
 function f(e) {
     let {
         guildId: t
     } = e, f = (0, h.vA)(t), {
-        selectedUserIds: j,
+        selectedUserIds: p,
         clearSelection: b
-    } = (0, g.A)(t), v = j.size > 0, A = (e, t, l, n) => {
+    } = (0, g.A)(t), v = p.size > 0, A = (e, t, l, n) => {
         d.A.startBulkBan(e, t, l, n)
-    }, N = i.useCallback(() => {
+    }, V = i.useCallback(() => {
         b()
     }, [b]), L = (0, n.jsxs)("span", {
-        className: p.zC,
-        children: [(0, n.jsx)(C.nys, {
+        className: _.zC,
+        children: [(0, n.jsx)(o.nys, {
             size: "custom",
             width: 24,
             height: 24,
-            color: (0, C.rdh)(a.A.unsafe_rawColors.PRIMARY_500).hex()
-        }), (0, n.jsx)(C.Text, {
+            color: (0, o.rdh)(s.A.unsafe_rawColors.PRIMARY_500).hex()
+        }), (0, n.jsx)(o.Text, {
             variant: "heading-md/bold",
             color: "text-default",
-            children: H.intl.format(H.t.TstoSZ, {
-                count: j.size
+            children: j.intl.format(j.t.TstoSZ, {
+                count: p.size
             })
-        }), (0, n.jsx)(C.QWc, {
-            text: H.intl.string(H.t.yW6ZdE),
-            onClick: N
+        }), (0, n.jsx)(o.QWc, {
+            text: j.intl.string(j.t.yW6ZdE),
+            onClick: V
         })]
-    }), V = (0, n.jsxs)("span", {
-        className: p.UD,
-        children: [(0, n.jsx)(C.wI0, {
+    }), N = (0, n.jsxs)("span", {
+        className: _.UD,
+        children: [(0, n.jsx)(o.wI0, {
             size: "custom",
             color: "currentColor",
             width: 20,
             height: 20
-        }), (0, n.jsx)(C.Text, {
+        }), (0, n.jsx)(o.Text, {
             variant: "text-sm/semibold",
             color: "currentColor",
-            children: H.intl.string(H.t["2a50fF"])
+            children: j.intl.string(j.t["2a50fF"])
         })]
     });
-    return f ? (0, n.jsx)(s.F, {
+    return f ? (0, n.jsx)(a.F, {
         component: "div",
-        className: p.n2,
-        children: v && (0, n.jsx)(C.FQk, {
+        className: _.n2,
+        children: v && (0, n.jsx)(o.FQk, {
             children: (0, n.jsx)(r.A, {
                 onSave: () => {
-                    m.default.track(_.HAw.BULK_MODERATION_ACTION_STARTED, {
+                    m.default.track(H.HAw.BULK_MODERATION_ACTION_STARTED, {
                         ...(0, c.H$)(t),
                         action_type: x.Nj.BAN,
-                        target_user_ids: [...j],
+                        target_user_ids: [...p],
                         mod_user_id: u.default.getId(),
                         location: "MemberSafetyPageActionNotice"
-                    }), (0, C.mMO)(async () => {
+                    }), (0, o.mMO)(async () => {
                         let {
                             default: e
                         } = await l.e("2504").then(l.bind(l, 333179));
@@ -80,13 +80,13 @@ function f(e) {
                             ...l,
                             guildId: t,
                             canBulkBan: f,
-                            userIds: j,
+                            userIds: p,
                             onBanMultiple: A
                         })
                     })
                 },
-                onSaveText: V,
-                onSaveButtonColor: o.XD.RED,
+                onSaveText: N,
+                onSaveButtonColor: C.XD.RED,
                 message: L
             })
         })

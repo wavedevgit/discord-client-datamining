@@ -17,8 +17,8 @@ var i = n(627968),
     x = n(203982),
     h = n(555337),
     _ = n(155008),
-    A = n(418448),
-    p = n(527678),
+    p = n(418448),
+    A = n(527678),
     f = n(923121),
     j = n(199940),
     N = n(107795),
@@ -97,7 +97,7 @@ function k(e) {
             [D.Q3]: M
         }),
         children: [!E && l !== T.Hy.LANDING && (0, i.jsx)(U, {
-            setOnboardingStep: p.e_,
+            setOnboardingStep: A.e_,
             page: l,
             homeSettingsEnabled: !0
         }), E && l !== T.Hy.LANDING && (0, i.jsx)("div", {
@@ -112,7 +112,7 @@ function k(e) {
                             intensity: u.n3
                         }), x._.dispatch(G.jej.EMPHASIZE_NOTICE);
                         return
-                    }(0, N.P3)(), (0, A.nx)(), (0, j.sk)(), (0, f.p2)(), (0, p.e_)(T.Hy.LANDING)
+                    }(0, N.P3)(), (0, p.nx)(), (0, j.sk)(), (0, f.p2)(), (0, A.e_)(T.Hy.LANDING)
                 },
                 children: [(0, i.jsx)(g.A, {
                     className: D.UE,

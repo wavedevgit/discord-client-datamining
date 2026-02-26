@@ -2,10 +2,10 @@
 i.d(t, {
     A: () => v
 });
-var l = i(627968),
-    a = i(64700),
-    n = i(503698),
-    s = i.n(n),
+var n = i(627968),
+    l = i(64700),
+    a = i(503698),
+    s = i.n(a),
     r = i(311907),
     c = i(397927),
     o = i(734057),
@@ -22,40 +22,40 @@ let v = e => {
     let {
         entry: t,
         onClose: i,
-        onReaction: n,
+        onReaction: a,
         onRequestOpen: v,
         disableActivityProfileLinks: A,
-        customCTA: N,
-        popoutClassname: _,
-        popoutPosition: I = "right"
-    } = e, b = a.useRef(null), E = (0, r.bG)([d.A, o.A], () => o.A.getChannel(d.A.getChannelId())), C = (0, r.bG)([u.default], () => u.default.getUser(t.author_id)), {
-        nick: T,
-        avatar: S
-    } = a.useMemo(() => {
-        let e = C?.getAvatarURL(E?.guild_id, 48, !1);
+        customCTA: _,
+        popoutClassname: N,
+        popoutPosition: E = "right"
+    } = e, I = l.useRef(null), C = (0, r.bG)([d.A, o.A], () => o.A.getChannel(d.A.getChannelId())), S = (0, r.bG)([u.default], () => u.default.getUser(t.author_id)), {
+        nick: b,
+        avatar: T
+    } = l.useMemo(() => {
+        let e = S?.getAvatarURL(C?.guild_id, 48, !1);
         return {
-            nick: m.Ay.getName(E?.guild_id, E?.id, C),
+            nick: m.Ay.getName(C?.guild_id, C?.id, S),
             avatar: e
         }
-    }, [C, E]);
-    return null == C ? null : (0, l.jsx)(c.YNO, {
-        targetElementRef: b,
-        position: I,
+    }, [S, C]);
+    return null == S ? null : (0, n.jsx)(c.YNO, {
+        targetElementRef: I,
+        position: E,
         renderPopout: e => {
             let {
-                closePopout: a,
+                closePopout: l,
                 updatePosition: s
             } = e;
-            return (0, l.jsx)("div", {
-                className: _,
-                children: (0, l.jsx)(x.Oo, {
+            return (0, n.jsx)("div", {
+                className: N,
+                children: (0, n.jsx)(x.Oo, {
                     entry: t,
-                    closePopout: a,
+                    closePopout: l,
                     updatePopoutPosition: s,
                     onReaction: () => {
-                        n?.(), i(), a()
+                        a?.(), i(), l()
                     },
-                    onUserPopoutClosed: () => a(),
+                    onUserPopoutClosed: () => l(),
                     disableGameProfileLinks: !0,
                     disableActivityProfileLinks: A
                 })
@@ -65,43 +65,43 @@ let v = e => {
         onRequestOpen: () => {
             v?.()
         },
-        children: e => (0, l.jsx)(c.DUT, {
-            innerRef: b,
+        children: e => (0, n.jsx)(c.DUT, {
+            innerRef: I,
             ...e,
             className: j.GA,
-            children: (0, l.jsx)(c.vN3, {
+            children: (0, n.jsx)(c.vN3, {
                 offset: {
                     top: 4,
                     bottom: 4,
                     left: 4,
                     right: 4
                 },
-                children: (0, l.jsxs)(l.Fragment, {
-                    children: [(0, l.jsx)("img", {
+                children: (0, n.jsxs)(n.Fragment, {
+                    children: [(0, n.jsx)("img", {
                         className: j.my,
-                        src: S,
+                        src: T,
                         alt: f.intl.formatToPlainString(f.t.IzVXxY, {
-                            userName: T
+                            userName: b
                         })
-                    }), (0, l.jsx)("div", {
+                    }), (0, n.jsx)("div", {
                         className: j.Su,
-                        children: (0, l.jsxs)("div", {
+                        children: (0, n.jsxs)("div", {
                             className: s()(p.fi, p.Kt),
-                            children: [(0, l.jsx)(c.Text, {
+                            children: [(0, n.jsx)(c.Text, {
                                 variant: "text-md/medium",
                                 color: "text-strong",
                                 lineClamp: 1,
-                                children: T
-                            }), (0, l.jsx)(h.mG, {
+                                children: b
+                            }), (0, n.jsx)(h.mG, {
                                 location: h.N5.APP_LAUNCHER,
-                                children: g.n.map((e, i) => (0, l.jsx)(e, {
+                                children: g.n.map((e, i) => (0, n.jsx)(e, {
                                     entry: t
                                 }, i))
                             })]
                         })
-                    }), null != N ? N : (0, l.jsx)("div", {
+                    }), null != _ ? _ : (0, n.jsx)("div", {
                         className: j.Br,
-                        children: (0, l.jsx)(c.W4J, {
+                        children: (0, n.jsx)(c.W4J, {
                             size: "sm"
                         })
                     })]

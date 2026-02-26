@@ -4,11 +4,11 @@ l.d(t, {
 });
 var n = l(627968),
     i = l(64700),
-    a = l(417597),
-    s = l(990078),
+    s = l(417597),
+    a = l(990078),
     r = l(397927),
-    o = l(233693),
-    C = l(343969),
+    C = l(233693),
+    o = l(343969),
     d = l(266047),
     c = l(221950),
     u = l(985018),
@@ -18,13 +18,13 @@ function x(e) {
     let {
         guildId: t,
         onPageChange: l
-    } = e, [x, h] = i.useTransition(), g = (0, a.bG)([d.A], () => d.A.getEstimatedMemberSearchCountByGuildId(t), [t]), _ = (0, a.cf)([d.A], () => d.A.getPaginationStateByGuildId(t), [t]), H = (0, C.Ms)(t), p = i.useMemo(() => o.MO.map(e => ({
+    } = e, [x, h] = i.useTransition(), g = (0, s.bG)([d.A], () => d.A.getEstimatedMemberSearchCountByGuildId(t), [t]), H = (0, s.cf)([d.A], () => d.A.getPaginationStateByGuildId(t), [t]), j = (0, o.Ms)(t), _ = i.useMemo(() => C.MO.map(e => ({
         id: e.toString(),
         value: e,
         label: Number(e).toLocaleString()
-    })), []), f = new Intl.NumberFormat(u.intl.currentLocale).format(g), j = u.intl.formatToPlainString(u.t["RNDnQ/"], {
-        count: H ? "..." : f
-    }), b = g > _.pageSize || H, v = g > o.MO["0"];
+    })), []), f = new Intl.NumberFormat(u.intl.currentLocale).format(g), p = u.intl.formatToPlainString(u.t["RNDnQ/"], {
+        count: j ? "..." : f
+    }), b = g > H.pageSize || j, v = g > C.MO["0"];
     return (0, n.jsxs)("div", {
         className: m.Ej,
         children: [(0, n.jsx)("div", {
@@ -36,26 +36,26 @@ function x(e) {
                     children: u.intl.string(u.t.jNwLu2)
                 }), (0, n.jsx)(r.l6P, {
                     selectionMode: "single",
-                    label: j,
+                    label: p,
                     hideLabel: !0,
-                    options: p,
-                    value: _.pageSize,
+                    options: _,
+                    value: H.pageSize,
                     onSelectionChange: e => {
                         h(() => {
                             (0, c.Cw)(t, {
-                                ..._,
+                                ...H,
                                 pageSize: e
                             })
                         })
                     }
-                }), (0, n.jsx)(s.m, {
+                }), (0, n.jsx)(a.m, {
                     text: u.intl.string(u.t.ZTNur7),
-                    shouldShow: H,
+                    shouldShow: j,
                     children: (0, n.jsx)(r.Text, {
                         variant: "text-md/normal",
                         color: "text-muted",
                         className: m.Qh,
-                        children: j
+                        children: p
                     })
                 })]
             }) : (0, n.jsx)(r.Text, {
@@ -70,21 +70,21 @@ function x(e) {
             children: b && (0, n.jsx)(r.mgR, {
                 className: m.JV,
                 totalCount: g,
-                pageSize: _.pageSize,
+                pageSize: H.pageSize,
                 disablePaginationGap: !0,
                 hideMaxPage: !0,
-                currentPage: _.currentPage,
+                currentPage: H.currentPage,
                 onPageChange: e => {
                     l?.(e), requestIdleCallback(() => {
                         h(() => {
                             (0, c.Cw)(t, {
-                                ..._,
+                                ...H,
                                 currentPage: e
                             })
                         })
                     })
                 },
-                maxVisiblePages: o.NB
+                maxVisiblePages: C.NB
             })
         })]
     })

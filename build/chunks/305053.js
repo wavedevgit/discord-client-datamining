@@ -17,8 +17,8 @@ var i = n(627968),
     x = n(826673),
     h = n(367727),
     _ = n(937161),
-    A = n(576705),
-    p = n(405269),
+    p = n(576705),
+    A = n(405269),
     f = n(997509),
     j = n(652215),
     N = n(49999),
@@ -43,7 +43,7 @@ function T(e) {
             guildId: t.id,
             location: "PermissionMigrationInfoBox"
         }),
-        u = (0, p.i$)(r()(j.X30), "LL");
+        u = (0, A.i$)(r()(j.X30), "LL");
     return l ? (0, i.jsxs)(a.EN, {
         className: b.oe,
         defaultExpanded: n,
@@ -144,7 +144,7 @@ function T(e) {
 function C(e) {
     let {
         guild: t
-    } = e, n = (0, u.bG)([A.A], () => A.A.can(j.xBc.ADMINISTRATOR, t)), l = t.features.has(j.GuildFeatures.PIN_PERMISSION_MIGRATION_COMPLETE), r = t.features.has(j.GuildFeatures.BYPASS_SLOWMODE_PERMISSION_MIGRATION_COMPLETE), [a, o] = s.useState(!0), [d, m] = s.useState(!0);
+    } = e, n = (0, u.bG)([p.A], () => p.A.can(j.xBc.ADMINISTRATOR, t)), l = t.features.has(j.GuildFeatures.PIN_PERMISSION_MIGRATION_COMPLETE), r = t.features.has(j.GuildFeatures.BYPASS_SLOWMODE_PERMISSION_MIGRATION_COMPLETE), [a, o] = s.useState(!0), [d, m] = s.useState(!0);
     return n ? (0, i.jsxs)("form", {
         className: b.Zd,
         children: [(0, i.jsxs)("fieldset", {

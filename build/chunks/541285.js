@@ -17,8 +17,8 @@ var i = n(627968),
     x = n(954571),
     h = n(558393),
     _ = n(488926),
-    A = n(636042),
-    p = n(526855),
+    p = n(636042),
+    A = n(526855),
     f = n(785312),
     j = n(316506),
     N = n(631103),
@@ -54,7 +54,7 @@ function v(e) {
             children: (0, i.jsx)(c.QWc, {
                 variant: "primary",
                 textVariant: "text-sm/semibold",
-                onClick: () => (0, A.Y_)(n.id),
+                onClick: () => (0, p.Y_)(n.id),
                 disabled: a.aI(n.permissions, _.x3) || h || l,
                 text: T.intl.string(T.t["UYq7+O"])
             })
@@ -71,7 +71,7 @@ function S(e) {
     } = e;
     if (0 === s.length) return (0, i.jsxs)("div", {
         className: C.pb,
-        children: [(0, i.jsx)(p.A, {
+        children: [(0, i.jsx)(A.A, {
             className: C.wV
         }), (0, i.jsx)(c.Text, {
             variant: "text-sm/normal",
@@ -100,7 +100,7 @@ function S(e) {
             locked: l,
             onChange: (e, t) => {
                 if ("string" == typeof t) throw Error("Unexpected string `allow`");
-                (0, A.Ul)(n.id, e, t)
+                (0, p.Ul)(n.id, e, t)
             },
             permissionRender: r,
             guildId: t.id
@@ -125,8 +125,8 @@ function y(e) {
         headerHeight: g,
         headerRef: _
     } = (0, f.A)(0), {
-        scrolledToTop: A,
-        handleScroll: p
+        scrolledToTop: p,
+        handleScroll: A
     } = (0, j.u)(), v = s.useRef(!1);
     return s.useEffect(() => {
         v.current || "" === d.trimStart() || (x.default.track(b.HAw.SEARCH_STARTED, {
@@ -137,12 +137,12 @@ function y(e) {
         style: {
             scrollPaddingTop: g
         },
-        onScroll: p,
+        onScroll: A,
         children: (0, i.jsxs)("div", {
             className: I.Q,
             children: [(0, i.jsxs)("div", {
                 className: r()(I.wx, I.ln, {
-                    [I.l6]: !A
+                    [I.l6]: !p
                 }),
                 ref: _,
                 children: [(0, i.jsx)(j.A, {

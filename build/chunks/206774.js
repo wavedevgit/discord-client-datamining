@@ -17,8 +17,8 @@ var i = n(627968),
     x = n(403362),
     h = n(642133),
     _ = n(555337),
-    A = n(396816),
-    p = n(856644),
+    p = n(396816),
+    A = n(856644),
     f = n(614164),
     j = n(28495),
     N = n(869568),
@@ -35,14 +35,14 @@ function v(e) {
             selectedSection: v,
             setSelectedSection: S
         } = e,
-        y = (0, a.bG)([A.A], () => A.A.guild, []);
+        y = (0, a.bG)([p.A], () => p.A.guild, []);
     r()(null != y, "guildId cannot be null here");
     let {
         role: R,
         permissionSearchQuery: O
-    } = (0, a.cf)([A.A], () => ({
-        role: A.A.getRole(n),
-        permissionSearchQuery: A.A.getPermissionSearchQuery()
+    } = (0, a.cf)([p.A], () => ({
+        role: p.A.getRole(n),
+        permissionSearchQuery: p.A.getPermissionSearchQuery()
     }), [n]);
     s.useEffect(() => {
         null == R && l(null)
@@ -62,7 +62,7 @@ function v(e) {
             let {
                 role: e,
                 editRoleId: t
-            } = U.current, n = (0, p.L9)(v), i = h.A.getRoleMemberCount(y.id)?.[t] ?? 0;
+            } = U.current, n = (0, A.L9)(v), i = h.A.getRoleMemberCount(y.id)?.[t] ?? 0;
             g.default.track(C.HAw.ROLE_PAGE_VIEWED, {
                 tab_opened: n,
                 is_everyone: (0, c.N8)(y.id, t),

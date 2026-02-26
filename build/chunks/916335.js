@@ -49,7 +49,8 @@ function N(t) {
 
 function O() {
     let t = E.hH.useSetting(),
-        e = l.useMemo(() => [N(_.intl.formatToPlainString(_.t.BknJRT, {}), [{
+        e = E.jW.useSetting(),
+        i = l.useMemo(() => [N(_.intl.formatToPlainString(_.t.BknJRT, {}), e ? [{
             emoji: {
                 id: null,
                 name: "\uD83E\uDD40",
@@ -69,17 +70,17 @@ function O() {
             count: 1,
             me_burst: !1,
             burst_count: 0
-        }]), N(_.intl.formatToPlainString(_.t["4rDfgM"], {}))], []),
-        i = (0, s.bG)([a.A], () => a.A.messageGroupSpacing);
+        }] : []), N(_.intl.formatToPlainString(_.t["4rDfgM"], {}))], [e]),
+        u = (0, s.bG)([a.A], () => a.A.messageGroupSpacing);
     return (0, n.jsx)(r.M1G, {
         children: (0, n.jsxs)("div", {
             className: c.VH,
             children: [(0, n.jsx)("div", {
                 className: c.DZ,
                 style: {
-                    gap: i
+                    gap: u
                 },
-                children: e.map(e => (0, n.jsx)(A.A, {
+                children: i.map(e => (0, n.jsx)(A.A, {
                     message: e,
                     channel: I,
                     compact: t,

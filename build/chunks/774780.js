@@ -17,8 +17,8 @@ var i = n(627968),
     x = n(268749),
     h = n(86933),
     _ = n(390715),
-    A = n(264349),
-    p = n(411335),
+    p = n(264349),
+    A = n(411335),
     f = n(652215),
     j = n(985018),
     N = n(130408);
@@ -59,7 +59,7 @@ function E(e) {
         })?.name ?? null : null != t ? m.i$[t].getDefaultRuleName() : null, [O]),
         M = s.useMemo(() => D(E?.id ?? null, E?.triggerType ?? null), [D, E]);
     s.useEffect(() => {
-        n(v, (0, A.cT)(M))
+        n(v, (0, p.cT)(M))
     }, [n, v, M]);
     let k = (0, m.ws)(I);
     return (0, i.jsxs)("div", {
@@ -101,7 +101,7 @@ function E(e) {
                         guildId: I,
                         triggerType: e,
                         rules: y[e] ?? [],
-                        initWithEdit: C === f.nd0.AUTOMOD_MENTION_SPAM && e === p.uh.MENTION_SPAM
+                        initWithEdit: C === f.nd0.AUTOMOD_MENTION_SPAM && e === A.uh.MENTION_SPAM
                     }, e))
                 })]
             }, t)

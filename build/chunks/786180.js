@@ -1,11 +1,11 @@
 /** chunk id: 786180, original params: e,t,l (module,exports,require) **/
 l.d(t, {
-    H: () => a
+    H: () => s
 });
 var n = l(311907),
     i = l(844944);
 
-function a(e) {
+function s(e) {
     let {
         guildId: t
     } = e;

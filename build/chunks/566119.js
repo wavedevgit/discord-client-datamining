@@ -1,5 +1,5 @@
-/** chunk id: 566119, original params: e,t,r (module,exports,require) **/
-r.d(t, {
+/** chunk id: 566119, original params: e,t,n (module,exports,require) **/
+n.d(t, {
     CC: () => i,
     Jv: () => u,
     RQ: () => m,
@@ -9,11 +9,11 @@ r.d(t, {
     o8: () => o,
     ue: () => d
 });
-var n = r(954571),
-    a = r(652215);
+var r = n(954571),
+    a = n(652215);
 
 function l(e, t) {
-    n.default.track(a.HAw.PREMIUM_TENURE_REWARDS_ORBS_CTA_CLICKED, {
+    r.default.track(a.HAw.PREMIUM_TENURE_REWARDS_ORBS_CTA_CLICKED, {
         cta_type: e,
         program_state: t
     })

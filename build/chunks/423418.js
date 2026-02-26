@@ -17,8 +17,8 @@ var i = n(627968),
     x = n(627011),
     h = n(911144),
     _ = n(652215),
-    A = n(985018),
-    p = n(289234);
+    p = n(985018),
+    A = n(289234);
 
 function f(e) {
     let {
@@ -45,17 +45,17 @@ function f(e) {
         children: [(0, i.jsxs)(r.Heading, {
             variant: "heading-md/medium",
             color: "text-strong",
-            className: p.D,
-            children: [A.intl.string(A.t["5XZKy/"]), (0, i.jsx)(x.rV, {
+            className: A.D,
+            children: [p.intl.string(p.t["5XZKy/"]), (0, i.jsx)(x.rV, {
                 guild: t
             })]
         }), (0, i.jsx)(r.Text, {
             variant: "text-sm/medium",
             color: "text-subtle",
-            className: p.h,
-            children: f ? A.intl.format(A.t["J/v84B"], {
+            className: A.h,
+            children: f ? p.intl.format(p.t["J/v84B"], {
                 helpCenterArticle: c.A.getArticleURL(_.MVz.GUILD_VANITY_URL)
-            }) : A.intl.format(A.t.koklFG, {
+            }) : p.intl.format(p.t.koklFG, {
                 helpCenterArticle: c.A.getArticleURL(_.MVz.GUILD_VANITY_URL)
             })
         }), (0, i.jsx)(h.C, {

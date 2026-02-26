@@ -17,8 +17,8 @@ var i = n(627968),
     x = n(111487),
     h = n(734057),
     _ = n(71393),
-    A = n(486020),
-    p = n(132514),
+    p = n(486020),
+    A = n(132514),
     f = n(985018),
     j = n(499323);
 let N = function(e) {
@@ -31,10 +31,10 @@ let N = function(e) {
         onDragStart: T,
         onDragComplete: C,
         onDragReset: I
-    } = e, v = (0, a.bG)([h.A], () => h.A.getChannel(l.channelId)), S = (0, a.bG)([_.A], () => _.A.getGuild(t)), y = (0, a.bG)([p.A], () => p.A.getPendingData()[l.channelId]), {
+    } = e, v = (0, a.bG)([h.A], () => h.A.getChannel(l.channelId)), S = (0, a.bG)([_.A], () => _.A.getGuild(t)), y = (0, a.bG)([A.A], () => A.A.getPendingData()[l.channelId]), {
         customEmoji: R,
         unicodeEmoji: O
-    } = (0, m.A)(l.emoji?.id, l.emoji?.name), G = null == l.emoji || null != R || null != O, L = A.Ay.getNewMemberActionIconURL({
+    } = (0, m.A)(l.emoji?.id, l.emoji?.name), G = null == l.emoji || null != R || null != O, L = p.Ay.getNewMemberActionIconURL({
         channelId: l.channelId,
         icon: l.icon
     }), D = null != y ? y.iconData : L, M = null;

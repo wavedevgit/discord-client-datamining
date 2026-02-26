@@ -17,8 +17,8 @@ var i = n(627968),
     x = n(203982),
     h = n(555337),
     _ = n(418448),
-    A = n(527678),
-    p = n(199940),
+    p = n(527678),
+    A = n(199940),
     f = n(132514),
     j = n(107795),
     N = n(655943),
@@ -101,7 +101,7 @@ function D(e) {
                 });
                 else if (L === b.Hy.HOME_SETTINGS) {
                     let e = f.A.getSettings();
-                    await (0, p.W5)(t.id, e)
+                    await (0, A.W5)(t.id, e)
                 }
             } catch {
                 return !1
@@ -113,17 +113,17 @@ function D(e) {
                 step: b.Hy[L],
                 back: !1,
                 skip: !M
-            }), (0, A.Ay)((0, b.ql)(L)), await X() && (0, A._k)(h, L)
+            }), (0, p.Ay)((0, b.ql)(L)), await X() && (0, p._k)(h, L)
         }, Z = async () => {
             g.default.track(R.HAw.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, {
                 ...(0, m.H$)(h),
                 step: b.Hy[L],
                 back: !0,
                 skip: !1
-            }), await X() && (0, A.kP)(h, L)
-        }, Q = null;
-    P && (L === b.Hy.SAFETY_CHECK ? Q = (0, i.jsx)(C.Et, {}) : L === b.Hy.DEFAULT_CHANNELS ? Q = (0, i.jsx)(C.hz, {}) : L === b.Hy.CUSTOMIZATION_QUESTIONS ? Q = (0, i.jsx)(C.yP, {}) : L === b.Hy.HOME_SETTINGS && (Q = (0, i.jsx)(C.QS, {})));
-    let q = (0, i.jsx)("div", {
+            }), await X() && (0, p.kP)(h, L)
+        }, q = null;
+    P && (L === b.Hy.SAFETY_CHECK ? q = (0, i.jsx)(C.Et, {}) : L === b.Hy.DEFAULT_CHANNELS ? q = (0, i.jsx)(C.hz, {}) : L === b.Hy.CUSTOMIZATION_QUESTIONS ? q = (0, i.jsx)(C.yP, {}) : L === b.Hy.HOME_SETTINGS && (q = (0, i.jsx)(C.QS, {})));
+    let Q = (0, i.jsx)("div", {
             className: P ? G.R : void 0,
             children: (0, i.jsx)(c.Button, {
                 size: "sm",
@@ -164,7 +164,7 @@ function D(e) {
                             alt: "wumpus"
                         }), (0, i.jsxs)("div", {
                             className: G.C0,
-                            children: [Q, (0, i.jsx)("div", {
+                            children: [q, (0, i.jsx)("div", {
                                 className: G.JM
                             })]
                         })]
@@ -172,7 +172,7 @@ function D(e) {
                         containerRef: B,
                         children: (0, i.jsxs)("div", {
                             className: G.o1,
-                            children: [q, (0, i.jsxs)("div", {
+                            children: [Q, (0, i.jsxs)("div", {
                                 className: G.K2,
                                 children: [U ? (0, i.jsx)(c.Text, {
                                     variant: "text-sm/normal",

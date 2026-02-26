@@ -6,33 +6,33 @@ var i = t(627968),
     l = t(397927),
     a = t(398590),
     s = t(790271),
-    r = t(944771),
-    o = t(3258),
-    c = t(652215);
+    c = t(944771),
+    r = t(3258),
+    o = t(652215);
 
 function d() {
     let e = (0, s.ni)("playground_menu"),
-        n = (0, r.useComponentPlaygroundConfigs)(e);
+        n = (0, c.useComponentPlaygroundConfigs)(e);
     if (!e) return null;
     let t = n.flatMap(e => e.collections);
     return (0, i.jsx)(l.Drp, {
         id: "playgrounds",
         label: "Playgrounds",
         action: () => {
-            o.PlaygroundStore.setState({
+            r.PlaygroundStore.setState({
                 selectedCollection: null,
                 selectedStory: null
-            }), (0, a.id)(c.zgK.COMPONENT_PLAYGROUND)
+            }), (0, a.id)(o.zgK.COMPONENT_PLAYGROUND)
         },
         children: (0, i.jsx)(l.rXV, {
             children: t.map(e => (0, i.jsx)(l.Drp, {
                 id: `${e.id}-playground`,
                 label: e.name,
                 action: () => {
-                    o.PlaygroundStore.setState({
+                    r.PlaygroundStore.setState({
                         selectedCollection: e.id,
                         selectedStory: null
-                    }), (0, a.id)(c.zgK.COMPONENT_PLAYGROUND)
+                    }), (0, a.id)(o.zgK.COMPONENT_PLAYGROUND)
                 }
             }, e.id))
         }, "design-systems")

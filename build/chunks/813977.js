@@ -7,14 +7,14 @@ t(64700);
 var l = t(311907),
     a = t(397927),
     s = t(827343),
-    r = t(430452),
-    o = t(723702),
-    c = t(652215),
+    c = t(430452),
+    r = t(723702),
+    o = t(652215),
     d = t(985018);
 
 function u(e) {
-    let n = !o.isPlatformEmbedded,
-        t = (0, l.bG)([r.Ay], () => r.Ay.getMode()),
+    let n = !r.isPlatformEmbedded,
+        t = (0, l.bG)([c.Ay], () => c.Ay.getMode()),
         u = (n, l) => (0, i.jsx)(a.iDA, {
             id: n,
             group: "input-modes",
@@ -24,5 +24,5 @@ function u(e) {
                 analyticsLocations: e
             })
         }, n);
-    return [u(c.TBI.VOICE_ACTIVITY, d.intl.string(d.t.cHCEOJ)), u(c.TBI.PUSH_TO_TALK, n ? d.intl.string(d.t["1AINrB"]) : d.intl.string(d.t.Q8gkVL))]
+    return [u(o.TBI.VOICE_ACTIVITY, d.intl.string(d.t.cHCEOJ)), u(o.TBI.PUSH_TO_TALK, n ? d.intl.string(d.t["1AINrB"]) : d.intl.string(d.t.Q8gkVL))]
 }
