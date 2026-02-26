@@ -16,7 +16,7 @@ let o = e => {
         ignoreCache: d = !1
     } = e, [c, u, h] = (0, a.yK)([i.A], () => [i.A.getProductForSku(t), i.A.isFetching(t), i.A.getApiError(t)]), m = (0, n.A)(l), x = (0, n.A)(o), b = (0, n.A)(d), p = !!t && !u && h?.status !== 404 && h?.status !== 429, g = null == c || l !== m || o !== x || d !== b;
     return (0, r.useEffect)(() => {
-        p && g && (0, s.x)({
+        p && g && (0, s.xM)({
             skuId: t,
             includePricing: l,
             includeUnpublished: o,

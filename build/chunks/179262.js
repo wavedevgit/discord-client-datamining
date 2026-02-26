@@ -17,7 +17,7 @@ let o = e => {
         ignoreCache: c = !1
     } = e, [u, h, m] = (0, a.yK)([i.A], () => [i.A.getCollection(t), i.A.isFetching(t), i.A.getApiError(t)]), x = (0, n.A)(l), b = (0, n.A)(o), p = (0, n.A)(d), g = (0, n.A)(c), f = !!t && !h && m?.status !== 404 && m?.status !== 429, j = null == u || l !== x || o !== b || d !== p || c !== g;
     return (0, r.useEffect)(() => {
-        f && j && (0, s.y)({
+        f && j && (0, s.yx)({
             collectionId: t,
             includeUnpublishedProducts: l,
             includeUnpublishedCollection: o,

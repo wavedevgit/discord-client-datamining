@@ -1,7 +1,7 @@
 /** chunk id: 296555, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    B: () => y,
-    G: () => S
+    B: () => S,
+    G: () => T
 });
 var a = n(627968),
     i = n(64700),
@@ -28,12 +28,7 @@ let h = i.createContext({
         label: "[none selected]",
         value: null
     },
-    g = {
-        id: "all",
-        label: "[preview all]",
-        value: null
-    },
-    _ = () => {
+    g = () => {
         (0, s.kBI)(r.k) ? (0, s.OoC)(r.k) : (0, s.mMO)(async () => {
             let {
                 ShopAssetsPreviewInstructionModal: e
@@ -46,7 +41,7 @@ let h = i.createContext({
             onCloseRequest: () => (0, s.OoC)(r.k)
         })
     },
-    f = () => {
+    _ = () => {
         (0, s.kBI)(r.g) ? (0, s.OoC)(r.g) : (0, s.mMO)(async () => {
             let {
                 ShopPFXPreviewInstructionModal: e
@@ -59,7 +54,7 @@ let h = i.createContext({
             onCloseRequest: () => (0, s.OoC)(r.g)
         })
     },
-    b = () => {
+    f = () => {
         let e = (0, l.pF)(),
             {
                 previewProfileEffectSkuId: t,
@@ -82,7 +77,7 @@ let h = i.createContext({
                 }), (0, a.jsx)(s.K0, {
                     variant: "icon-only",
                     size: "sm",
-                    onClick: f,
+                    onClick: _,
                     icon: s.cBN,
                     "aria-label": "Open PFX preview instructions"
                 })]
@@ -97,17 +92,17 @@ let h = i.createContext({
             })]
         })
     },
-    v = () => {
+    b = () => {
         let {
-            previewAvatarDecorationSkuId: e,
-            setPreviewAvatarDecorationSkuId: t
+            previewAvatarDecorationKey: e,
+            setPreviewAvatarDecorationKey: t
         } = (0, o.JE)(), {
             avatarDecorationAssets: n
-        } = (0, o.NE)(), l = i.useMemo(() => [g, ...n.map(e => ({
+        } = (0, o.NE)(), l = i.useMemo(() => n.map(e => ({
             id: e.name,
             label: e.name,
             value: e.name
-        }))], [n]);
+        })), [n]);
         return 0 === n.length ? null : (0, a.jsxs)("div", {
             className: m.kO,
             children: [(0, a.jsx)(s.hKd, {
@@ -122,7 +117,7 @@ let h = i.createContext({
             })]
         })
     },
-    j = e => {
+    v = e => {
         let {
             clearAssets: t,
             clearIgnoredFiles: n
@@ -168,7 +163,7 @@ let h = i.createContext({
             })]
         })
     },
-    C = e => {
+    j = e => {
         let {
             ignoredFiles: t,
             handleClearIgnoredFiles: n
@@ -198,7 +193,7 @@ let h = i.createContext({
             })]
         })
     },
-    A = () => {
+    C = () => {
         let {
             validateShopAssetPackage: e,
             reset: t,
@@ -293,7 +288,7 @@ let h = i.createContext({
             })]
         })
     },
-    T = () => {
+    A = () => {
         let {
             previewEnabled: e,
             setPreviewEnabled: t,
@@ -325,20 +320,20 @@ let h = i.createContext({
                 }), (0, a.jsx)(s.K0, {
                     variant: "icon-only",
                     size: "sm",
-                    onClick: _,
+                    onClick: g,
                     icon: s.cBN,
                     "aria-label": "Open preview instructions"
                 })]
-            }), (0, a.jsx)(b, {}), (0, a.jsx)(v, {}), (0, a.jsx)(j, {
+            }), (0, a.jsx)(f, {}), (0, a.jsx)(b, {}), (0, a.jsx)(v, {
                 clearAssets: r,
                 clearIgnoredFiles: d
-            }), (0, a.jsx)(C, {
+            }), (0, a.jsx)(j, {
                 ignoredFiles: l,
                 handleClearIgnoredFiles: d
             })]
         })
     },
-    S = () => {
+    T = () => {
         let [e, t] = i.useState("preview");
         return (0, a.jsxs)("div", {
             className: m.kL,
@@ -355,12 +350,12 @@ let h = i.createContext({
                 optionClassName: m.UK
             }), (0, a.jsx)(s.hKd, {
                 size: 8
-            }), "preview" === e && (0, a.jsx)(T, {}), "validate" === e && (0, a.jsx)(A, {}), (0, a.jsx)(s.hKd, {
+            }), "preview" === e && (0, a.jsx)(A, {}), "validate" === e && (0, a.jsx)(C, {}), (0, a.jsx)(s.hKd, {
                 size: 16
             })]
         })
     },
-    y = e => {
+    S = e => {
         let {
             children: t
         } = e, [n, s] = i.useState(() => () => {}), l = i.useMemo(() => ({

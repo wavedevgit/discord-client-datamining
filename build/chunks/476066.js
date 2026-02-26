@@ -105,25 +105,25 @@ let b = {
         }, [Z, ee, el, q]), l.useEffect(() => {
             en && W?.(et, el)
         }, [et, en, el, W]);
-        let [e2, e6] = l.useState(!1), e7 = l.useRef(null), e4 = l.useRef(0);
+        let [e2, e6] = l.useState(!1), e4 = l.useRef(null), e7 = l.useRef(0);
         l.useLayoutEffect(() => {
-            e4.current = performance.now()
+            e7.current = performance.now()
         }, []);
         let e9 = l.useCallback(() => {
-                null != e7.current && clearTimeout(e7.current), el !== u.Q6.PLAYING || (e7.current = setTimeout(() => {
+                null != e4.current && clearTimeout(e4.current), el !== u.Q6.PLAYING || (e4.current = setTimeout(() => {
                     el === u.Q6.PLAYING && e6(!0)
-                }, Math.max(0, 3e3 - (performance.now() - e4.current))))
+                }, Math.max(0, 3e3 - (performance.now() - e7.current))))
             }, [el]),
             e8 = () => {
-                e6(!1), e4.current = performance.now(), e9()
+                e6(!1), e7.current = performance.now(), e9()
             };
         l.useEffect(() => {
             if (el !== u.Q6.PLAYING) {
-                e6(!1), null != e7.current && clearTimeout(e7.current);
+                e6(!1), null != e4.current && clearTimeout(e4.current);
                 return
             }
             return e9(), () => {
-                null != e7.current && clearTimeout(e7.current)
+                null != e4.current && clearTimeout(e4.current)
             }
         }, [el, e9]);
         let e3 = !e2 && (eo || ea || el === u.Q6.ENDED),
@@ -244,7 +244,7 @@ let b = {
             "data-testid": "discord-web-video-player-container",
             tabIndex: -1,
             onMouseEnter: () => {
-                es(!0), e6(!1), e4.current = performance.now(), null != e7.current && clearTimeout(e7.current)
+                es(!0), e6(!1), e7.current = performance.now(), null != e4.current && clearTimeout(e4.current)
             },
             onMouseLeave: () => {
                 es(!1), e6(!1)
