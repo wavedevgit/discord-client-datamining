@@ -61,7 +61,8 @@ let k = t => {
                 return (0, i.jsx)(d.A, {
                     skuId: A.skuId,
                     isHighlighted: x,
-                    removeSetHeight: !0
+                    removeSetHeight: !0,
+                    hideBackground: !0
                 });
             case s.R.AVATAR_DECORATION:
                 return (0, i.jsx)(C.i, {

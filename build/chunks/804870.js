@@ -1,7 +1,7 @@
 /** chunk id: 804870, original params: e,t,i (module,exports,require) **/
 i.d(t, {
     Ay: () => w,
-    Zu: () => k,
+    Zu: () => P,
     uz: () => O
 });
 var r = i(627968),
@@ -32,7 +32,7 @@ var r = i(627968),
     j = i(985018),
     T = i(975462),
     C = i(476324);
-let P = e => {
+let k = e => {
     let {
         size: t = o._3J.SIZE_80
     } = e;
@@ -44,7 +44,7 @@ let P = e => {
     })
 };
 
-function k(e) {
+function P(e) {
     let {
         cardSize: t = U.Y.MEDIUM
     } = e, i = l.useRef(null), s = l.useRef(null);
@@ -62,7 +62,7 @@ function k(e) {
                 className: T.ho,
                 children: (0, r.jsx)("div", {
                     className: T._P,
-                    children: (0, r.jsx)(P, {
+                    children: (0, r.jsx)(k, {
                         size: o._3J.SIZE_80
                     })
                 })
@@ -115,8 +115,8 @@ function w(e) {
         source: s = x.uS.WISHLIST,
         giftingOrigin: n = p.vQ.USER_PROFILE_WISHLIST,
         heartColor: C = "red",
-        onWishlistItemClick: P,
-        cardSize: k = U.Y.MEDIUM,
+        onWishlistItemClick: k,
+        cardSize: P = U.Y.MEDIUM,
         analyticsLocations: O,
         isDragging: w = !1,
         ...y
@@ -150,7 +150,7 @@ function w(e) {
                 }
             }
             t || (0, M.closeUserProfileModal)(), (0, L.pX)(`${v.BVt.COLLECTIBLES_SHOP}#itemSkuId=${N.skuId}`)
-        } else P?.(), (0, f.A)({
+        } else k?.(), (0, f.A)({
             skuId: N.skuId,
             isGift: !0,
             giftingOrigin: n,
@@ -158,7 +158,7 @@ function w(e) {
             giftRecipient: t,
             variantsReturnStyle: a.g.VARIANTS_GROUP
         })
-    }, [b.pathname, N.skuId, Y, H, G, t, n, P]), J = k === U.Y.MEDIUM_SQUARE, q = l.useCallback(() => {
+    }, [b.pathname, N.skuId, Y, H, G, t, n, k]), J = P === U.Y.MEDIUM_SQUARE, q = l.useCallback(() => {
         if (!i || W && !J) return null;
         if (s === x.uS.WISHLIST) {
             let e = "white" === C ? T.e_ : T.Be;
@@ -201,9 +201,9 @@ function w(e) {
             item: N,
             profileOwner: t,
             isHighlighted: D && !w,
-            cardSize: k
+            cardSize: P
         })
-    }, [W, N, t, D, k, w]);
+    }, [W, N, t, D, P, w]);
     return (0, r.jsx)(U.A, {
         ...y,
         cardRef: F,
@@ -216,6 +216,6 @@ function w(e) {
         renderSourceIcon: q,
         giftingOrigin: n,
         source: s,
-        cardSize: k
+        cardSize: P
     })
 }

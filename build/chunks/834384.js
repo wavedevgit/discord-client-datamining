@@ -125,7 +125,7 @@ let L = t => {
             fullWidth: !0
         })
     },
-    U = t => {
+    B = t => {
         let {
             product: e,
             isClaimPremiumProductDisabled: r,
@@ -153,7 +153,7 @@ let L = t => {
             fullWidth: !0
         })
     },
-    B = t => {
+    U = t => {
         let {
             product: e,
             checkoutEligiblePrices: r,
@@ -265,7 +265,7 @@ let L = t => {
             isApplying: q,
             text: o
         });
-        if (y) return (0, i.jsx)(U, {
+        if (y) return (0, i.jsx)(B, {
             product: e,
             isClaimPremiumProductDisabled: X,
             isClaiming: M,
@@ -273,7 +273,7 @@ let L = t => {
             text: o,
             onClickAnalytics: c
         });
-        if (H && W) return (0, i.jsx)(B, {
+        if (H && W) return (0, i.jsx)(U, {
             product: e,
             checkoutEligiblePrices: F,
             analyticsLocations: G,

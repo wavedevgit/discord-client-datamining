@@ -1,6 +1,6 @@
 /** chunk id: 510273, original params: e,t,r (module,exports,require) **/
 r.r(t), r.d(t, {
-    default: () => k
+    default: () => S
 });
 var s = r(627968),
     i = r(64700),
@@ -18,8 +18,8 @@ var s = r(627968),
     p = r(245068),
     x = r(158216),
     j = r(985018),
-    y = r(848175),
-    v = r(743102),
+    v = r(848175),
+    y = r(743102),
     _ = r(497451),
     E = r(241988);
 let N = e => {
@@ -33,11 +33,12 @@ let N = e => {
         if (null == x) return null;
         let [N] = t.items;
         if (t.type === l.R.PROFILE_EFFECT) return (0, s.jsx)("div", {
-            className: y.NM,
+            className: v.NM,
             children: (0, s.jsx)(h.A, {
                 skuId: N.skuId,
                 delayProfileEffectIntro: i,
-                withScaleAnimation: i
+                withScaleAnimation: i,
+                removeSetHeight: !0
             })
         });
         if (t.type === l.R.AVATAR_DECORATION) return (0, s.jsx)(g.i, {
@@ -47,7 +48,7 @@ let N = e => {
             isHighlighted: !0
         });
         if (t.type === l.R.NAMEPLATE) return (0, s.jsx)("div", {
-            className: y.qF,
+            className: v.qF,
             children: (0, s.jsx)(u.A, {
                 nameplate: N,
                 user: x,
@@ -56,7 +57,7 @@ let N = e => {
             })
         });
         if (t.type === l.R.BUNDLE) return (0, s.jsx)("div", {
-            className: y.hT,
+            className: v.hT,
             children: (0, s.jsx)(p.X, {
                 product: t,
                 user: x,
@@ -74,7 +75,7 @@ let N = e => {
                     }
                 });
                 else return (0, s.jsx)("img", {
-                    src: v,
+                    src: y,
                     alt: j.intl.string(j.t.g5W1g8)
                 });
             return (0, s.jsx)(m.B, {
@@ -131,13 +132,13 @@ let N = e => {
         }, "animate-always");
         return (0, s.jsxs)(s.Fragment, {
             children: [(0, s.jsx)(a.animated.div, {
-                className: y.VH,
+                className: v.VH,
                 style: d,
                 children: (0, s.jsx)(N, {
                     ...e
                 })
             }), (0, s.jsx)(a.animated.div, {
-                className: y.VH,
+                className: v.VH,
                 style: t ? o : u,
                 children: (0, s.jsx)("img", {
                     src: r.getSrc(),
@@ -149,7 +150,7 @@ let N = e => {
         })
     };
 
-function k(e) {
+function S(e) {
     let t = (0, x.K9)(e.product.categorySkuId);
     return null != t ? (0, s.jsx)(A, {
         ...e,

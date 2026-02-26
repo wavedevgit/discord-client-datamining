@@ -45,8 +45,8 @@ var I = n(15285),
     z = n(899699),
     H = n(256415),
     W = n(531685),
-    K = n(927813),
-    B = n(723702),
+    B = n(927813),
+    K = n(723702),
     Y = n(837921),
     F = n(316501),
     Z = n(350535),
@@ -82,7 +82,7 @@ function ec(e) {
         })
     })
 }
-B.isPlatformEmbedded;
+K.isPlatformEmbedded;
 let eu = e => {
         let {
             keybind: t,
@@ -206,14 +206,14 @@ class ep extends l.Component {
                 game: d
             }), setTimeout(async () => {
                 await (0, F.pF)(), null != e ? _.A.overlayMounted(e) : _.A.overlayMounted()
-            }, 128), window.addEventListener("resize", this.handleWindowResize), i && window.addEventListener("contextmenu", ed, !1), B.isPlatformEmbedded) {
+            }, 128), window.addEventListener("resize", this.handleWindowResize), i && window.addEventListener("contextmenu", ed, !1), K.isPlatformEmbedded) {
             let e = (0, z.m)();
             if (null == e) return;
             void 0 !== e.setPerfInfoCallback && (e.setPerfInfoCallback(e => {
                 _.A.track(el.HAw.OVERLAY_PERF_INFO, e)
             }), e.broadcastCommand?.({
                 message: "set_perf_report_interval",
-                interval: 15 * K.A.Millis.MINUTE
+                interval: 15 * B.A.Millis.MINUTE
             })), Y.Ay.on("REQUEST_OPEN_EXTERNAL_URL", (e, t) => {
                 H.default.getDisableExternalLinkAlert() || t === k.A.getLastURL() ? Y.Ay.send("OPEN_EXTERNAL_URL", t) : (0, f.mMO)(async () => {
                     let {

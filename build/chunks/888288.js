@@ -44,8 +44,8 @@ var i = n(284009),
 let z = new r.Vy("LegacyOverlayNotificationsStore"),
     H = 5 * M.A.Millis.SECOND,
     W = 8 * M.A.Millis.SECOND,
-    K = 30 * M.A.Millis.SECOND,
-    B = Object.freeze({
+    B = 30 * M.A.Millis.SECOND,
+    K = Object.freeze({
         priority: 0,
         duration: H,
         expirationExternallyManaged: !1,
@@ -81,7 +81,7 @@ function X(e) {
 
 function Q(e, t) {
     let n = {
-        ...B,
+        ...K,
         ...t
     };
     if (2 !== n.priority && !L.default.isInstanceFocused()) return null;
@@ -199,7 +199,7 @@ let ee = new $(o.h, !__OVERLAY__ ? {} : {
                     expirationExternallyManaged: !0,
                     channelId: e.id
                 });
-                return null != r && F(r, !1, K), !0
+                return null != r && F(r, !1, B), !0
             }(i, n, l);
             if (!1 !== e) return e
         }

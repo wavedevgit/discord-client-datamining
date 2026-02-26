@@ -41,8 +41,8 @@ let E = l.memo(function(t) {
             onClickPrimaryCTA: S,
             onClickSecondaryCTA: V,
             onMouseEnter: w,
-            onMouseLeave: U,
-            onFocus: B,
+            onMouseLeave: B,
+            onFocus: U,
             onBlur: D,
             primaryCTAText: H,
             secondaryCTAIcon: W,
@@ -74,10 +74,10 @@ let E = l.memo(function(t) {
                 className: s()(z, _.ty, {
                     [_.yo]: tt
                 }),
-                onFocus: () => B?.(e.skuId),
+                onFocus: () => U?.(e.skuId),
                 onBlur: () => D?.(e.skuId),
                 onMouseEnter: () => w?.(e.skuId),
-                onMouseLeave: () => U?.(e.skuId),
+                onMouseLeave: () => B?.(e.skuId),
                 children: (0, i.jsxs)("div", {
                     className: _.qt,
                     children: [(0, i.jsx)("div", {

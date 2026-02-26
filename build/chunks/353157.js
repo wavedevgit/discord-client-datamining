@@ -26,7 +26,8 @@ function c(e) {
                 children: (0, r.jsx)(a.A, {
                     skuId: h.skuId,
                     isHighlighted: c,
-                    removeSetHeight: !0
+                    removeSetHeight: !0,
+                    hideBackground: !0
                 })
             });
         case l.R.AVATAR_DECORATION:
