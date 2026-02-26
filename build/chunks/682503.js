@@ -29,16 +29,16 @@ function b(e) {
         uploadType: E,
         showUpsellHeader: R,
         analyticsPage: y
-    } = e, [I, L] = i.useState(!1), j = (0, o.k34)(), {
-        analyticsLocations: w,
-        newestAnalyticsLocation: v
+    } = e, [I, j] = i.useState(!1), L = (0, o.k34)(), {
+        analyticsLocations: v,
+        newestAnalyticsLocation: w
     } = (0, d.Ay)(c.A.GIF_PICKER);
     async function P(e) {
         let t, {
             gifSrc: i
         } = e;
         if (null == i || I) return;
-        L(!0);
+        j(!0);
         let l = (0, h.s)(i),
             r = await fetch(l),
             c = await r.blob(),
@@ -74,22 +74,22 @@ function b(e) {
                 ...t
             })
         }, {
-            contextKey: j
+            contextKey: L
         })
     }
     i.useEffect(() => {
         A.default.track(g.HAw.OPEN_MODAL, {
             type: g.JJy.GIF_PICKER_AVATAR_OR_BANNER_MODAL,
-            location_stack: w,
+            location_stack: v,
             location: {
                 page: y
             }
         })
-    }, [w, y]);
+    }, [v, y]);
     let S = E === f.HL.AVATAR || E === f.HL.BANNER,
         $ = (0, p.b)(!S);
     return (0, n.jsx)(d.f5, {
-        value: w,
+        value: v,
         children: (0, n.jsxs)(r.dWK, {
             onClose: s,
             transitionState: t,
@@ -116,7 +116,7 @@ function b(e) {
                     className: N.u1
                 }), R && $ && (0, n.jsx)(_.A, {
                     uploadType: E,
-                    analyticsSource: v,
+                    analyticsSource: w,
                     showUpsell: !0,
                     className: N.Kt
                 })]
