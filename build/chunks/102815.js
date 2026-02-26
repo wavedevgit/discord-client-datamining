@@ -1,147 +1,158 @@
 /** chunk id: 102815, original params: e,t,r (module,exports,require) **/
 r.d(t, {
-    S: () => N
+    S: () => R
 });
-var n = r(627968);
-r(64700);
-var a = r(503698),
-    l = r.n(a),
-    s = r(735438),
-    i = r(732955),
-    d = r(462887),
-    u = r(397927),
-    o = r(736653),
-    c = r(531260),
-    m = r(613566),
-    h = r(872725),
-    x = r(857586),
-    p = r(788868),
-    f = r(652215),
-    g = r(985018),
-    _ = r(355313);
-let N = e => {
+var n = r(627968),
+    a = r(64700),
+    l = r(503698),
+    s = r.n(l),
+    i = r(735438),
+    d = r(732955),
+    u = r(462887),
+    o = r(397927),
+    c = r(736653),
+    m = r(531260),
+    h = r(613566),
+    x = r(954571),
+    p = r(872725),
+    _ = r(857586),
+    f = r(788868),
+    g = r(652215),
+    N = r(985018),
+    b = r(355313);
+let R = e => {
     let {
         title: t,
         description: r,
-        caption: a,
-        pillText: N,
-        primaryAsset: v,
-        primaryAssetClassName: R,
-        backgroundAssetUrl: E,
-        progress: A,
-        ctaText: C,
-        onCtaClick: T,
-        subscriptionRequired: j,
-        glowing: P,
-        progressGlowing: y = !1,
-        featured: S,
-        className: I,
-        blurTint: O
-    } = e, w = (0, o.DP)(), {
-        fractionalState: L
-    } = (0, c.A)(), D = j && L === p.xc.FP_ONLY, U = !(0, s.isEmpty)(E), B = U && (0, d.q)(w), M = (0, u.rdh)(u.LU0.colors.BACKGROUND_BASE_LOW).hex(), k = D || !(0, s.isEmpty)(C);
-    return (0, n.jsx)(i.NPJ, {
-        theme: B ? f.NJ8.DARKER : void 0,
-        children: e => (0, n.jsxs)(h.A, {
-            cardType: u.sl2.PRIMARY,
+        caption: l,
+        pillText: R,
+        primaryAsset: E,
+        primaryAssetClassName: A,
+        backgroundAssetUrl: C,
+        progress: T,
+        ctaText: j,
+        onCtaClick: P,
+        subscriptionRequired: I,
+        glowing: y,
+        progressGlowing: S = !1,
+        featured: O,
+        className: w,
+        blurTint: D
+    } = e, L = (0, c.DP)(), {
+        fractionalState: U
+    } = (0, m.A)(), M = a.useMemo(() => (0, i.debounce)(() => {
+        x.default.track(g.HAw.PREMIUM_MARKETING_WHAT_IS_NEW_CARD_HOVERED, {
+            card_type: (0, i.snakeCase)(t)
+        })
+    }, 800), [t]), B = a.useCallback(() => {
+        null != P && (P(), x.default.track(g.HAw.PERK_DISCOVERABILITY_CARD_CTA_CLICKED, {
+            card_type: (0, i.snakeCase)(t),
+            function_name: (0, i.snakeCase)(P.name)
+        }))
+    }, [P, t]), k = I && U === f.xc.FP_ONLY, G = !(0, i.isEmpty)(C), W = G && (0, u.q)(L), H = (0, o.rdh)(o.LU0.colors.BACKGROUND_BASE_LOW).hex(), V = k || !(0, i.isEmpty)(j);
+    return (0, n.jsx)(d.NPJ, {
+        theme: W ? g.NJ8.DARKER : void 0,
+        children: e => (0, n.jsxs)(p.A, {
+            onMouseEnter: M,
+            cardType: o.sl2.PRIMARY,
             hueRotate: 25,
-            glowAmount: 5 * !!P,
-            blurAmount: 6 * !!P,
-            className: _.Ui,
-            cardClassName: l()(_.Nr, e, I, {
-                [_.j8]: S,
-                [_.Tn]: U
+            glowAmount: 5 * !!y,
+            blurAmount: 6 * !!y,
+            className: b.Ui,
+            cardClassName: s()(b.Nr, e, w, {
+                [b.j8]: O,
+                [b.Tn]: G
             }),
             cardStyle: {
-                backgroundImage: U ? `url(${E})` : void 0,
+                backgroundImage: G ? `url(${C})` : void 0,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 backgroundOrigin: "padding-box",
                 backgroundClip: "padding-box"
             },
-            children: [!(0, s.isEmpty)(N) && (0, n.jsx)(u.Text, {
+            children: [!(0, i.isEmpty)(R) && (0, n.jsx)(o.Text, {
                 variant: "text-xs/bold",
                 color: "badge-expressive-text-default",
-                className: _.Io,
-                children: N
+                className: b.Io,
+                children: R
             }), (0, n.jsxs)("div", {
-                className: _.qh,
-                children: [S && (0, n.jsx)("div", {
-                    className: _.gW,
+                className: b.qh,
+                children: [O && (0, n.jsx)("div", {
+                    className: b.gW,
                     "aria-hidden": "true",
-                    children: (0, n.jsx)(b, {
-                        asset: v,
-                        className: R
+                    children: (0, n.jsx)(v, {
+                        asset: E,
+                        className: A
                     })
-                }), (0, n.jsx)(b, {
-                    asset: v,
-                    className: R
+                }), (0, n.jsx)(v, {
+                    asset: E,
+                    className: A
                 })]
             }), (0, n.jsxs)("div", {
-                className: _.hQ,
+                className: b.hQ,
                 children: [(0, n.jsx)("div", {
-                    className: _.u_,
+                    className: b.u_,
                     style: {
-                        "--custom-tint-color": O ?? M
+                        "--custom-tint-color": D ?? H
                     },
                     "aria-hidden": !0
                 }), (0, n.jsxs)("div", {
-                    className: _.P_,
+                    className: b.P_,
                     tabIndex: 0,
-                    children: [D && (0, n.jsxs)("div", {
-                        className: _.d_,
-                        children: [(0, n.jsx)(u.tvc, {
+                    children: [k && (0, n.jsxs)("div", {
+                        className: b.d_,
+                        children: [(0, n.jsx)(o.tvc, {
                             size: "sm",
-                            color: u.LU0.colors.ICON_MUTED
-                        }), (0, n.jsx)(u.Text, {
+                            color: o.LU0.colors.ICON_MUTED
+                        }), (0, n.jsx)(o.Text, {
                             variant: "text-sm/normal",
                             color: "text-muted",
-                            children: g.intl.string(g.t.lHYDUu)
+                            children: N.intl.string(N.t.lHYDUu)
                         })]
-                    }), !(0, s.isEmpty)(a) && (0, n.jsx)("div", {
-                        className: _.OU,
-                        children: "string" == typeof a ? (0, n.jsx)(u.Text, {
+                    }), !(0, i.isEmpty)(l) && (0, n.jsx)("div", {
+                        className: b.OU,
+                        children: "string" == typeof l ? (0, n.jsx)(o.Text, {
                             variant: "text-sm/normal",
                             color: "text-muted",
-                            children: a
-                        }) : a
-                    }), (0, n.jsx)(u.Heading, {
+                            children: l
+                        }) : l
+                    }), (0, n.jsx)(o.Heading, {
                         variant: "heading-lg/semibold",
                         children: t
-                    }), !(0, s.isEmpty)(r) && (0, n.jsxs)("div", {
-                        className: _.Wi,
-                        children: [(0, n.jsx)(u.Text, {
+                    }), !(0, i.isEmpty)(r) && (0, n.jsxs)("div", {
+                        className: b.Wi,
+                        children: [(0, n.jsx)(o.Text, {
                             variant: "text-sm/normal",
                             color: "text-default",
-                            className: _.h_,
+                            className: b.h_,
                             children: r
-                        }), (0, n.jsx)(u.Text, {
+                        }), (0, n.jsx)(o.Text, {
                             variant: "text-sm/normal",
                             color: "text-default",
-                            className: _.XV,
+                            className: b.XV,
                             "aria-hidden": "true",
                             children: r
                         })]
-                    }), null != A && (0, n.jsx)("div", {
-                        className: _.oU,
-                        children: (0, n.jsx)(m.Ay, {
-                            variant: m.qP.BLUE,
-                            progress: (0, s.clamp)(A, 0, 1),
+                    }), null != T && (0, n.jsx)("div", {
+                        className: b.oU,
+                        children: (0, n.jsx)(h.Ay, {
+                            variant: h.qP.BLUE,
+                            progress: (0, i.clamp)(T, 0, 1),
                             maximum: 1,
-                            glowing: y
+                            glowing: S
                         })
-                    }), k && (0, n.jsx)("div", {
-                        className: _.Cj
+                    }), V && (0, n.jsx)("div", {
+                        className: b.Cj
                     })]
-                }), k && (0, n.jsxs)("div", {
-                    className: _.yk,
-                    children: [D && (0, n.jsx)(x.A, {
+                }), V && (0, n.jsxs)("div", {
+                    className: b.yk,
+                    children: [k && (0, n.jsx)(_.A, {
                         fullWidth: !0,
-                        defaultTextOverride: g.intl.string(g.t.sEAnVH)
-                    }), !D && (0, n.jsx)(i.$nd, {
-                        text: C,
-                        variant: !U && (0, d.q)(w) ? "primary" : "overlay-primary",
-                        onClick: T
+                        defaultTextOverride: N.intl.string(N.t.sEAnVH)
+                    }), !k && (0, n.jsx)(d.$nd, {
+                        text: j,
+                        variant: !G && (0, u.q)(L) ? "primary" : "overlay-primary",
+                        onClick: B
                     })]
                 })]
             })]
@@ -149,7 +160,7 @@ let N = e => {
     })
 };
 
-function b(e) {
+function v(e) {
     let {
         asset: t,
         className: r
@@ -157,7 +168,7 @@ function b(e) {
     return null == t || "" === t ? null : "string" == typeof t ? (0, n.jsx)("img", {
         src: t,
         alt: "",
-        className: l()(_.eq, r),
+        className: s()(b.eq, r),
         draggable: "false"
     }) : t
 }

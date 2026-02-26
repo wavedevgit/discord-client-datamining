@@ -33,37 +33,39 @@ let h = {
             className: r,
             cardClassName: l,
             cardStyle: p = x,
-            cardType: f,
-            artboard: g = "BaseGlowRemapped",
-            fit: _ = "layout",
+            cardType: _,
+            artboard: f = "BaseGlowRemapped",
+            fit: g = "layout",
             glowAmount: N = 8,
             blurAmount: b = 30,
-            hueRotate: v = 0,
-            isReducedMotion: R
-        } = e, E = a.useRef(null), A = a.useRef(null), {
-            status: C,
-            buffer: T
-        } = (0, o.CE)(i.A), j = a.useContext(d.C), P = R ?? j.reducedMotion.enabled, y = {
+            hueRotate: R = 0,
+            isReducedMotion: v,
+            onMouseEnter: E
+        } = e, A = a.useRef(null), C = a.useRef(null), {
+            status: T,
+            buffer: j
+        } = (0, o.CE)(i.A), P = a.useContext(d.C), I = v ?? P.reducedMotion.enabled, y = {
             "--custom-glow-amount": `${N}px`,
             "--custom-blur-amount": `${b}px`,
-            "--custom-hue-rotate": `${v}deg`,
+            "--custom-hue-rotate": `${R}deg`,
             "--custom-glow-opacity": +(0 !== N)
         };
         return (0, n.jsxs)("div", {
-            ref: E,
+            ref: A,
             className: s()(m.k, r),
             style: y,
-            children: [C !== o.BW.Loading && (0, n.jsx)(u.w, {
-                buffer: T,
-                artboard: g,
+            onMouseEnter: E,
+            children: [T !== o.BW.Loading && (0, n.jsx)(u.w, {
+                buffer: j,
+                artboard: f,
                 artboardProperties: h,
-                eventTargetRef: E,
+                eventTargetRef: A,
                 className: m.Q,
-                ref: A,
-                fit: _,
-                withReducedMotion: P ? "halt" : "play"
+                ref: C,
+                fit: g,
+                withReducedMotion: I ? "halt" : "play"
             }), (0, n.jsx)(c.ZpM, {
-                type: f ?? c.sl2.CUSTOM,
+                type: _ ?? c.sl2.CUSTOM,
                 className: l,
                 style: p,
                 children: t

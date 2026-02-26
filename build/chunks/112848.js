@@ -3,10 +3,10 @@ r.d(t, {
     $F: () => N,
     Lh: () => p,
     Wo: () => x,
-    Xb: () => g,
-    bu: () => _,
+    Xb: () => f,
+    bu: () => g,
     p3: () => b,
-    rG: () => f
+    rG: () => _
 });
 var n, a = r(989349),
     l = r.n(a),
@@ -24,23 +24,23 @@ function p() {
     let e = (0, s.bG)([u.default], () => u.default.getCurrentUser());
     return (0, m.v)(e?.id) ?? null
 }
-let f = e => (0, s.bG)([d.A], () => {
+let _ = e => (0, s.bG)([d.A], () => {
     if (null == e) return null;
     let t = d.A.getUserProfile(e);
     return t?.premiumSince
 });
 
-function g() {
+function f() {
     let e = (0, s.bG)([u.default], () => u.default.getCurrentUser()),
         t = (0, c.YE)(e, h.PremiumTypes.TIER_2),
         r = (0, s.bG)([o.A], () => {
             let e = o.A.getPremiumSubscription();
             return null != e && t ? e.premiumSince : null
         }, [t]),
-        n = f(e?.id);
+        n = _(e?.id);
     return r ?? n
 }
-let _ = () => {
+let g = () => {
         let e = Object.values(h.VD),
             t = (0, s.bG)([u.default], () => u.default.getCurrentUser()),
             r = (0, s.bG)([o.A], () => o.A.getPremiumTypeSubscription());
@@ -61,7 +61,7 @@ let _ = () => {
             n = b(r?.id),
             a = (e = p(), t = (0, s.bG)([o.A], () => o.A.getPremiumTypeSubscription()), null == e || null == t || null == t.premiumSince ? null : (0, i.Xr)(e, t.premiumSince)),
             d = (() => {
-                let e = g(),
+                let e = f(),
                     t = Object.values(h.VD);
                 if (null == e || null == t) return null;
                 let r = l()().diff(e, "days"),

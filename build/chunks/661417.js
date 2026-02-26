@@ -1,6 +1,6 @@
 /** chunk id: 661417, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => E
+    A: () => f
 });
 var r = n(627968),
     l = n(64700),
@@ -14,21 +14,23 @@ var r = n(627968),
     m = n(717415),
     p = n(985018);
 
-function E(e) {
+function f(e) {
     let {
         floatRight: t
     } = e, {
         quest: n,
-        sourceQuestContent: E
-    } = l.useContext(m.VideoQuestModalContext), f = (0, u.go)(), h = (0, d.E0)(n.config), v = l.useCallback(() => {
+        sourceQuestContent: f
+    } = l.useContext(m.VideoQuestModalContext), E = (0, u.go)(), h = (0, d.E0)(n.config), v = l.useCallback(() => {
         h && ((0, c.Xm)(n.id, {
             content: s.uF.VIDEO_MODAL,
             ctaContent: o.Cy.COPY_QUEST_URL,
-            impressionId: f,
-            sourceQuestContent: E
+            impressionId: E,
+            sourceQuestContent: f
         }), (0, a.showToast)((0, a.createToast)(p.intl.string(p.t["+5kSoW"]), a.ToastType.SUCCESS)))
-    }, [f, h, n.id, E]);
+    }, [E, h, n.id, f]);
     return h ? (0, r.jsx)("div", {
+        "data-testid": "video-quest-share-btn",
+        "data-quest-id": n.id,
         style: {
             marginLeft: t ? "auto" : void 0
         },

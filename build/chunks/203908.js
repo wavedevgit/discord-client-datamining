@@ -26,7 +26,7 @@ function p(e) {
         targetSec: c
     } = e, {
         questConfig: p
-    } = r.useContext(s.VideoQuestConfigContext), E = r.useMemo(() => p.features.includes(o.Li.FULL_EPISODE_VIDEO_QUEST), [p.features]), [f, h] = r.useState(null), [v, x] = r.useState(null), g = r.useRef(null), [{
+    } = r.useContext(s.VideoQuestConfigContext), f = r.useMemo(() => p.features.includes(o.Li.FULL_EPISODE_VIDEO_QUEST), [p.features]), [E, h] = r.useState(null), [v, x] = r.useState(null), g = r.useRef(null), [{
         expansion: S
     }, A] = (0, l.zhh)(() => ({
         expansion: 0,
@@ -40,7 +40,7 @@ function p(e) {
         })) : A({
             expansion: 0
         }), h(e)
-    }, [A]), _ = r.useMemo(() => !E || null == n || null == t || isNaN(n) ? [] : [(e => {
+    }, [A]), b = r.useMemo(() => !f || null == n || null == t || isNaN(n) ? [] : [(e => {
         let {
             index: t,
             targetSec: n,
@@ -61,10 +61,10 @@ function p(e) {
         videoDuration: n,
         questConfig: p,
         timelineRect: t
-    })], [c, n, p, t, E]), b = r.useCallback(e => null != n && null != t && null != e && _.some(t => e >= t.leftPx - d - 4 * (f === t.index) && e <= t.rightPx + d + 4 * (f === t.index)), [_, n, t, f]);
+    })], [c, n, p, t, f]), _ = r.useCallback(e => null != n && null != t && null != e && b.some(t => e >= t.leftPx - d - 4 * (E === t.index) && e <= t.rightPx + d + 4 * (E === t.index)), [b, n, t, E]);
     return {
-        indicators: _,
-        isInExclusionZone: b,
+        indicators: b,
+        isInExclusionZone: _,
         setHoveredIndicatorIndex: C,
         expansionSpring: S,
         animatingIndicatorIndex: v

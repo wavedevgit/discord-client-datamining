@@ -13,8 +13,8 @@ var r = n(627968),
     d = n(341915),
     m = n(890687),
     p = n(590202),
-    E = n(971649),
-    f = n(717415),
+    f = n(971649),
+    E = n(717415),
     h = n(583235),
     v = n(985018),
     x = n(407481),
@@ -26,18 +26,18 @@ function S() {
         sourceQuestContent: t,
         isPortrait: n,
         onClose: i
-    } = l.useContext(f.VideoQuestModalContext), S = (0, E.go)(), A = (0, m.LS)(e), C = l.useRef(null), {
-        isHoveringOrFocusing: _
-    } = (0, u.A)(C), b = (0, h.H)({
+    } = l.useContext(E.VideoQuestModalContext), S = (0, f.go)(), A = (0, m.LS)(e), C = l.useRef(null), {
+        isHoveringOrFocusing: b
+    } = (0, u.A)(C), _ = (0, h.H)({
         quest: e,
         onClose: i,
         sourceQuestContent: t,
         impressionId: S
-    }), T = e.config.ctaConfig.subtitle, y = void 0 !== T && !(0, c.uJ)(T);
+    }), y = e.config.ctaConfig.subtitle, T = void 0 !== y && !(0, c.uJ)(y);
     return (0, r.jsx)(s.m_, {
         text: v.intl.string(v.t.EuHF34),
         children: (0, r.jsx)(o.DUT, {
-            onClick: () => b(d.uF.VIDEO_MODAL, p.Cy.OPEN_GAME_LINK),
+            onClick: () => _(d.uF.VIDEO_MODAL, p.Cy.OPEN_GAME_LINK),
             className: x._S,
             children: (0, r.jsxs)("div", {
                 className: a()(g.hA, x.t8, {
@@ -68,7 +68,7 @@ function S() {
                         }),
                         children: (0, r.jsx)(o.yr3, {
                             size: "xs",
-                            color: _ ? o.LU0.colors.ICON_STRONG.css : o.LU0.colors.ICON_MUTED.css
+                            color: b ? o.LU0.colors.ICON_STRONG.css : o.LU0.colors.ICON_MUTED.css
                         })
                     }), (0, r.jsx)(o.Heading, {
                         variant: "heading-sm/medium",
@@ -76,10 +76,10 @@ function S() {
                             [x.WV]: n,
                             [x.mq]: n
                         }),
-                        color: _ ? "text-strong" : "text-subtle",
+                        color: b ? "text-strong" : "text-subtle",
                         lineClamp: 1,
                         children: e.config.messages.gamePublisher
-                    }), y ? (0, r.jsxs)(r.Fragment, {
+                    }), T ? (0, r.jsxs)(r.Fragment, {
                         children: [(0, r.jsx)("div", {
                             "aria-hidden": "true",
                             className: a()(x.SC, {
@@ -91,8 +91,8 @@ function S() {
                             }),
                             variant: "heading-sm/medium",
                             lineClamp: n ? void 0 : 1,
-                            color: _ ? "text-strong" : "text-subtle",
-                            children: T
+                            color: b ? "text-strong" : "text-subtle",
+                            children: y
                         })]
                     }) : null]
                 })]

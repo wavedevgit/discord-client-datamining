@@ -23,12 +23,12 @@ let h = e => {
         override: c,
         glowing: m = !0,
         labelledBy: h
-    } = e, x = null != c && "unset" === i, p = (0, u.Ay)(), f = c?.[p] ?? c?.default, g = s.useMemo(() => (t - r) / (n - r) * 100, [t, r, n]), _ = t === r, N = {
+    } = e, x = null != c && "unset" === i, p = (0, u.Ay)(), _ = c?.[p] ?? c?.default, f = s.useMemo(() => (t - r) / (n - r) * 100, [t, r, n]), g = t === r, N = {
         ...x ? {
-            "--custom-background": f?.background,
-            "--custom-gradient-start": f?.gradientStart,
-            "--custom-gradient-end": f?.gradientEnd,
-            "--custom-gradient-glow": f?.gradientEnd
+            "--custom-background": _?.background,
+            "--custom-gradient-start": _?.gradientStart,
+            "--custom-gradient-end": _?.gradientEnd,
+            "--custom-gradient-glow": _?.gradientEnd
         } : {},
         ...!m && {
             "--custom-gradient-glow": "transparent"
@@ -39,10 +39,10 @@ let h = e => {
         style: N,
         children: (0, l.jsxs)("div", {
             className: d()(o.progress, {
-                [o.empty]: _
+                [o.empty]: g
             }),
             style: {
-                width: `${g}%`
+                width: `${f}%`
             },
             role: "meter",
             "aria-valuenow": t,
@@ -51,11 +51,11 @@ let h = e => {
             "aria-labelledby": h,
             children: [(0, l.jsx)("div", {
                 className: d()(o.glow, {
-                    [o.empty]: _
+                    [o.empty]: g
                 })
             }), (0, l.jsx)("div", {
                 className: d()(o.bar, o[i], {
-                    [o.empty]: _
+                    [o.empty]: g
                 })
             })]
         })

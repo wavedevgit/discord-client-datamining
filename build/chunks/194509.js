@@ -24,16 +24,16 @@ let x = e => e === c.pe.TIER_0 ? m.intl.string(m.t.rk4Uu8) : m.intl.string(m.t.V
             look: c,
             hideIcon: m,
             subscriptionTier: p,
-            premiumModalAnalyticsLocation: f,
-            giftMessage: g,
-            onClick: _
+            premiumModalAnalyticsLocation: _,
+            giftMessage: f,
+            onClick: g
         } = e, N = (0, u.Ay)(), b = x(p);
         return (0, n.jsx)(o.A, {
             isGift: !0,
             subscriptionTier: p,
-            premiumModalAnalyticsLocation: f,
-            giftMessage: g,
-            onClick: _,
+            premiumModalAnalyticsLocation: _,
+            giftMessage: f,
+            onClick: g,
             children: e => {
                 let {
                     onClick: u

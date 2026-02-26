@@ -313,7 +313,7 @@ let ew = (0, c.Fe)({
     },
     e1 = () => (0, i.jsx)(E.A, {}),
     e7 = () => (0, i.jsx)(I.A, {}),
-    e9 = () => function(e) {
+    e6 = () => function(e) {
         let {
             tab: t
         } = (0, s.parse)(e.location.search);
@@ -325,7 +325,7 @@ let ew = (0, c.Fe)({
         })
     };
 
-function e6() {
+function e9() {
     return (0, i.jsx)(eu.A, {
         topLevelRoute: !0
     })
@@ -609,7 +609,7 @@ function ti() {
                                     disableTrack: !0
                                 }), (0, i.jsx)(v.A, {
                                     path: eL.BVt.COLLECTIBLES_SHOP_WITH_TAB(":tab"),
-                                    render: e9(),
+                                    render: e6(),
                                     disableTrack: !0
                                 }), h && (0, i.jsx)(v.A, {
                                     path: eL.BVt.COLLECTIBLES_SHOP_LAYOUT(":layoutId"),
@@ -630,11 +630,11 @@ function ti() {
                                     disableTrack: !0
                                 }), (0, i.jsx)(v.A, {
                                     path: eL.BVt.COLLECTIBLES_SHOP,
-                                    render: e9(),
+                                    render: e6(),
                                     disableTrack: !0
                                 }), (0, i.jsx)(v.A, {
                                     path: eL.BVt.COLLECTIBLES_SHOP_PRODUCT_DETAIL(":skuId"),
-                                    render: e9(),
+                                    render: e6(),
                                     disableTrack: !0
                                 }), (0, i.jsx)(v.A, {
                                     path: eL.BVt.ICYMI,
@@ -690,7 +690,7 @@ function ti() {
                                     disableTrack: !0
                                 }), (0, i.jsx)(v.A, {
                                     path: eL.BVt.QUEST_HOME_V2,
-                                    render: e6,
+                                    render: e9,
                                     impressionName: d.ImpressionNames.QUEST_HOME,
                                     disableTrack: !0
                                 }), (0, i.jsx)(v.A, {

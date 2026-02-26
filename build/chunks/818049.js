@@ -13,8 +13,8 @@ var r = n(627968),
     d = n(245853),
     m = n(579473),
     p = n(590202),
-    E = n(971649),
-    f = n(651892),
+    f = n(971649),
+    E = n(651892),
     h = n(73473),
     v = n(717415),
     x = n(98197),
@@ -23,7 +23,7 @@ var r = n(627968),
     A = n(985018),
     C = n(221190);
 
-function _(e) {
+function b(e) {
     let {
         quest: t,
         sourceQuestContent: n
@@ -43,7 +43,7 @@ function _(e) {
     })
 }
 
-function b(e) {
+function _(e) {
     let {
         title: t,
         subtitle: n,
@@ -86,7 +86,7 @@ function b(e) {
     })
 }
 
-function T(e) {
+function y(e) {
     let {
         asset: t
     } = e;
@@ -97,7 +97,7 @@ function T(e) {
     })
 }
 
-function y(e) {
+function T(e) {
     let {
         quest: t,
         asset: n,
@@ -196,74 +196,71 @@ function I(e) {
 function L(e) {
     let {
         videoRef: t,
-        onExitFullScreen: n,
-        onTrackQuestVideoFullscreenChanged: i,
-        onTrackQuestContentClick: o,
-        orientation: h
+        onTrackQuestContentClick: n,
+        orientation: i
     } = e, {
-        onClose: x,
-        sourceQuestContent: D,
-        quest: I,
-        setIsFullscreenEnabled: L,
-        isFullscreenEnabled: j
-    } = l.useContext(v.VideoQuestModalContext), M = (0, E.go)(), w = (0, g.H)({
-        quest: I,
-        onClose: x,
-        sourceQuestContent: D,
-        impressionId: M
-    }), k = l.useCallback(e => {
-        if (j) {
+        onClose: o,
+        sourceQuestContent: h,
+        quest: x,
+        isFullscreenEnabled: D
+    } = l.useContext(v.VideoQuestModalContext), I = (0, f.go)(), L = (0, g.H)({
+        quest: x,
+        onClose: o,
+        sourceQuestContent: h,
+        impressionId: I
+    }), j = l.useCallback(e => {
+        if (D) {
             let e = (0, u.qf)(t.current?.parentNode, t.current);
-            null != e && (e.removeEventListener(u.Wb, n), (0, u.sP)(e), L(!1), i(!1))
+            null != e && (0, u.sP)(e)
         }
-        o(e, p.Cy.LEARN_MORE), w(e, p.Cy.OPEN_GAME_LINK)
-    }, [j, t, n, L, i, w, o]), {
-        title: R,
-        subtitle: P
+        n(e, p.Cy.LEARN_MORE), L(e, p.Cy.OPEN_GAME_LINK)
+    }, [D, t, L, n]), {
+        title: M,
+        subtitle: w
     } = {
-        title: (0, f.wr)(I),
-        subtitle: I.config.ctaConfig.subtitle ?? A.intl.string(A.t.mxaHfx)
+        title: (0, E.wr)(x),
+        subtitle: x.config.ctaConfig.subtitle ?? A.intl.string(A.t.mxaHfx)
     }, {
-        enabled: O
+        enabled: k
     } = d.uK.useConfig({
         location: S.rE.VIDEO_MODAL
-    }), Q = l.useMemo(() => (0, m.tW)(I, m.fY.VIDEO_PLAYER_THUMBNAIL, void 0, !1), [I]);
-    return O ? (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(T, {
-            asset: Q
+    }), R = l.useMemo(() => (0, m.tW)(x, m.fY.VIDEO_PLAYER_THUMBNAIL, void 0, !1), [x]);
+    return k ? (0, r.jsxs)(r.Fragment, {
+        children: [(0, r.jsx)(y, {
+            asset: R
         }), (0, r.jsx)("div", {
             className: C.MM,
             "data-testid": "discord-web-video-player-end-screen"
         }), (0, r.jsxs)("div", {
             className: a()(C.Pb, {
-                [C.II]: "portrait" === h
+                [C.II]: "portrait" === i
             }),
-            children: [(0, r.jsx)(y, {
-                quest: I,
-                asset: Q,
-                sourceQuestContent: D,
-                orientation: h
+            children: [(0, r.jsx)(T, {
+                quest: x,
+                asset: R,
+                sourceQuestContent: h,
+                orientation: i
             }), (0, r.jsx)(N, {
-                title: R,
-                subtitle: P,
-                ctaBtnLabel: I.config.ctaConfig.buttonLabel,
-                onCTAClick: () => k(c.uF.VIDEO_MODAL),
-                orientation: h
+                title: M,
+                subtitle: w,
+                ctaBtnLabel: x.config.ctaConfig.buttonLabel,
+                onCTAClick: () => j(c.uF.VIDEO_MODAL),
+                orientation: i
             })]
         })]
     }) : (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(_, {
-            quest: I,
-            sourceQuestContent: D
+        children: [(0, r.jsx)(b, {
+            quest: x,
+            sourceQuestContent: h
         }), (0, r.jsx)("div", {
             className: C.MT,
             "data-testid": "discord-web-video-player-end-screen"
-        }), (0, r.jsx)(b, {
-            title: R,
-            subtitle: P,
+        }), (0, r.jsx)(_, {
+            title: M,
+            subtitle: w,
             icon: s.KS6,
             className: C.mT,
-            onClick: () => k(c.uF.VIDEO_MODAL)
+            onClick: () => j(c.uF.VIDEO_MODAL)
         })]
     })
 }

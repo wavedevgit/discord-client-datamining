@@ -13,8 +13,8 @@ var r = n(627968),
     d = n(92246),
     m = n(453384),
     p = n(646764),
-    E = n(793683),
-    f = n(717415),
+    f = n(793683),
+    E = n(717415),
     h = n(985018),
     v = n(437413);
 let x = async () => await n.e("40119").then(n.t.bind(n, 718698, 19));
@@ -24,16 +24,16 @@ function g() {
         quest: e,
         sourceQuestContent: t,
         onClose: n
-    } = l.useContext(f.VideoQuestModalContext), [g, S] = l.useState(!1), A = (0, i.bG)([o.A], () => o.A.useReducedMotion), C = l.useRef(e.userStatus?.completedAt), [_, b] = l.useState(!1), T = (0, d.mq)(e.config), {
-        completedRatio: y,
+    } = l.useContext(E.VideoQuestModalContext), [g, S] = l.useState(!1), A = (0, i.bG)([o.A], () => o.A.useReducedMotion), C = l.useRef(e.userStatus?.completedAt), [b, _] = l.useState(!1), y = (0, d.mq)(e.config), {
+        completedRatio: T,
         completedRatioDisplay: N
     } = (0, c.O9)(e), D = e.userStatus?.completedAt != null, I = e.userStatus?.claimedAt != null, L = h.intl.formatToPlainString(D && !I ? h.t.NRp4K4 : h.t["12IWP2"], {
-        rewardName: T
+        rewardName: y
     });
     l.useEffect(() => {
-        null == C.current && e.userStatus?.completedAt != null && b(!0), C.current = e.userStatus?.completedAt
+        null == C.current && e.userStatus?.completedAt != null && _(!0), C.current = e.userStatus?.completedAt
     }, [e.userStatus?.completedAt]);
-    let j = (0, E.v)({
+    let j = (0, f.v)({
         quest: e,
         questContent: u.uF.QUEST_HOME_DESKTOP,
         sourceQuestContent: t,
@@ -47,7 +47,7 @@ function g() {
             className: v.t_,
             loop: !1,
             autoplay: !1,
-            shouldAnimate: _ && !A
+            shouldAnimate: b && !A
         }), (0, r.jsx)(a.m, {
             position: "top",
             text: L,
@@ -67,7 +67,7 @@ function g() {
                 },
                 children: (0, r.jsx)(m.A, {
                     size: 48,
-                    percentComplete: y,
+                    percentComplete: T,
                     percentCompleteText: g ? N : void 0,
                     percentCompleteTextVariant: "text-sm/medium",
                     children: (0, r.jsx)(p.A, {

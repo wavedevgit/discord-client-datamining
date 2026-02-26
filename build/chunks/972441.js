@@ -18,7 +18,7 @@ function u(e) {
         duration: d,
         onClick: m,
         percent: p
-    } = e, [E, f] = r.useState(null), [h, v] = r.useState(null), [x, g] = r.useState(!1), {
+    } = e, [f, E] = r.useState(null), [h, v] = r.useState(null), [x, g] = r.useState(!1), {
         i18n: S
     } = (0, l.G98)(), A = r.useMemo(() => {
         let e = {
@@ -26,22 +26,22 @@ function u(e) {
             "aria-label": "Progress Bar"
         };
         return null != p && "number" == typeof p && (e["aria-valuenow"] = p, e["aria-valuemin"] = 0, e["aria-valuemax"] = 100, e["aria-label"] = S.PERCENT_COMPLETE(Math.round(p))), e
-    }, [p, S]), C = r.useMemo(() => null == E || null == u ? null : (0, i.DX)(u, d, E), [E, u, d]), _ = (0, s.A)(e => {
-        f(e.contentRect)
-    }), b = (0, a.w)(_), T = e => {
-        null != b.current && v(e.clientX - b.current.getBoundingClientRect().left)
+    }, [p, S]), C = r.useMemo(() => null == f || null == u ? null : (0, i.DX)(u, d, f), [f, u, d]), b = (0, s.A)(e => {
+        E(e.contentRect)
+    }), _ = (0, a.w)(b), y = e => {
+        null != _.current && v(e.clientX - _.current.getBoundingClientRect().left)
     };
     return {
-        contRef: b,
-        boundingRect: E,
+        contRef: _,
+        boundingRect: f,
         handleMouseEnter: e => {
-            c && (g(!0), T(e))
+            c && (g(!0), y(e))
         },
         handleMouseLeave: e => {
             c && (g(!1), v(null))
         },
         handleMouseMove: e => {
-            c && x && T(e)
+            c && x && y(e)
         },
         handleKeyDown: r.useCallback(e => {
             let {

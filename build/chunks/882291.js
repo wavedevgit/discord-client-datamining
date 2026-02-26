@@ -13,8 +13,8 @@ var r = n(627968),
     d = n(972441),
     m = n(717415),
     p = n(961255),
-    E = n(261331),
-    f = n(203908),
+    f = n(261331),
+    E = n(203908),
     h = n(750813),
     v = n(23373);
 let x = {
@@ -32,10 +32,10 @@ function g(e) {
         interactionEnabled: S,
         isQuestCompleted: A,
         backgroundColor: C,
-        preloadedBuffers: _,
-        duration: b,
-        maxSeekableTime: T,
-        playerState: y,
+        preloadedBuffers: b,
+        duration: _,
+        maxSeekableTime: y,
+        playerState: T,
         onClick: N,
         onScrubBack: D,
         onScrubForward: I,
@@ -59,12 +59,12 @@ function g(e) {
     } = (0, d.A)({
         onScrubBack: D,
         onScrubForward: I,
-        maxSeekableTime: T,
+        maxSeekableTime: y,
         interactionEnabled: S,
-        duration: b,
+        duration: _,
         percent: i,
         onClick: N
-    }), Y = l.useMemo(() => null == U || null == R ? null : (0, o.rB)((0, o.hc)(U, R, b)), [U, R, b]), K = l.useMemo(() => {
+    }), Y = l.useMemo(() => null == U || null == R ? null : (0, o.rB)((0, o.hc)(U, R, _)), [U, R, _]), K = l.useMemo(() => {
         if (null != R) return (0, o.TO)(i, R)
     }, [i, R]), {
         currentPxSpring: H
@@ -72,16 +72,16 @@ function g(e) {
         currentPxSpring: K ?? 0,
         config: x
     }, g ? "animate-always" : "animate-never"), {
-        indicators: W,
-        isInExclusionZone: q,
+        indicators: q,
+        isInExclusionZone: W,
         setHoveredIndicatorIndex: z,
         animatingIndicatorIndex: X,
         expansionSpring: J
-    } = (0, f.Ay)({
+    } = (0, E.Ay)({
         timelineRect: R,
-        videoDuration: b,
+        videoDuration: _,
         targetSec: t
-    }), Z = l.useMemo(() => q(K), [K, q]), ee = l.useMemo(() => q(U), [U, q]), et = !A && w, en = R?.width != null && R?.width !== 0 ? R?.width : 1, er = l.useMemo(() => ((e, t) => {
+    }), Z = l.useMemo(() => W(K), [K, W]), ee = l.useMemo(() => W(U), [U, W]), et = !A && w, en = R?.width != null && R?.width !== 0 ? R?.width : 1, er = l.useMemo(() => ((e, t) => {
         let n = [{
             startPx: 0,
             endPx: t,
@@ -90,8 +90,8 @@ function g(e) {
         }];
         if (0 === e.length) return n;
         for (let r = 0; r < e.length; r++) {
-            let l = Math.max(0, e[r].leftPx - f.Ue),
-                i = Math.min(t, e[r].rightPx + f.Ue),
+            let l = Math.max(0, e[r].leftPx - E.Ue),
+                i = Math.min(t, e[r].rightPx + E.Ue),
                 a = n?.[n.length - 1];
             null != a && (a.endPx = l, a.rightIndicatorIndex = r);
             let s = null != a && a.endPx <= a.startPx,
@@ -104,7 +104,7 @@ function g(e) {
             })
         }
         return n
-    })(W, en), [W, en]);
+    })(q, en), [q, en]);
     return (0, r.jsx)("div", {
         className: v.jD,
         ref: k,
@@ -128,21 +128,21 @@ function g(e) {
                 className: v.G9,
                 ...$,
                 children: null != R && er.map((e, t) => (0, r.jsx)(c.A, {
-                    showGlow: y !== E.Q6.ENDED && null != K && K > e.startPx,
+                    showGlow: T !== f.Q6.ENDED && null != K && K > e.startPx,
                     segment: e,
                     currentPxSpring: H,
                     animatingIndex: X,
                     backgroundColor: C,
                     expansionSpring: J,
                     timelineWidth: en,
-                    preloadedBuffers: _,
+                    preloadedBuffers: b,
                     maxSeekableX: B,
                     interactionEnabled: S,
                     useNewStyles: w,
                     progressFillClassName: et ? h.QR : h.UA,
                     glowClassName: et ? h.Um : h.U5
                 }, t))
-            }), null != R && W.map((e, t) => {
+            }), null != R && q.map((e, t) => {
                 let n = X === e.index,
                     l = e.targetSec;
                 return (0, r.jsx)(p.A, {

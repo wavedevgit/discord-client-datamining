@@ -1,18 +1,19 @@
 /** chunk id: 169621, original params: e,t,r (module,exports,require) **/
 r.r(t), r.d(t, {
-    playgroundConfig: () => i,
-    videoQuestCollection: () => n
+    playgroundConfig: () => s,
+    videoQuestCollection: () => i
 });
 var o = r(397927),
-    a = r(104473);
-let n = {
+    a = r(104473),
+    n = r(758889);
+let i = {
         id: "video-quest",
         name: "Video Quest",
-        groups: [r(762168).cs, a.AZ],
+        groups: [r(762168).cs, n.Vy, a.AZ],
         tags: ["Video Quest", "Quests", "Video Player"],
         IconComponent: o.udU
     },
-    i = {
+    s = {
         playgroundBaseUrl: "video-quest",
-        collections: [n]
+        collections: [i]
     }
