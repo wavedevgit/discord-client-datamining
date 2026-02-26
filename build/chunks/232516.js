@@ -1,45 +1,45 @@
 /** chunk id: 232516, original params: e,t,i (module,exports,require) **/
 i.d(t, {
-    A: () => u
+    A: () => c
 });
 var n = i(627968);
 i(64700);
 var s = i(937008),
-    l = i(310250),
-    r = i(672525),
-    o = i(802246),
-    a = i(788868),
+    r = i(310250),
+    l = i(672525),
+    a = i(802246),
+    o = i(788868),
     d = i(329632);
-let u = function(e) {
+let c = function(e) {
     let {
         onSelectSku: t,
         priceOptions: i,
-        giftRecipient: u,
-        onWishlistItemClick: c
+        giftRecipient: c,
+        onWishlistItemClick: u
     } = e, {
         claimableRewards: m
-    } = (0, s.Pv)(), _ = null != m && m.length > 0, f = (0, l.T)("Select Gift Option");
+    } = (0, s.Pv)(), _ = null != m && m.length > 0, f = (0, r.T)("Select Gift Option");
     return (0, n.jsxs)("div", {
         className: d.H,
         children: [(0, n.jsxs)("div", {
             className: d.u,
-            children: [(0, n.jsx)(r.D3, {
-                onClick: () => t(a.pe.TIER_2),
+            children: [(0, n.jsx)(l.D3, {
+                onClick: () => t(o.pe.TIER_2),
                 isGift: !0,
                 priceOptions: i,
                 showPromotionalGiftBanner: _
-            }), (0, n.jsx)(r.Ls, {
-                onClick: () => t(a.pe.TIER_0),
+            }), (0, n.jsx)(l.Ls, {
+                onClick: () => t(o.pe.TIER_0),
                 isGift: !0,
                 priceOptions: i,
                 removeTopMargin: !0
             })]
-        }), f ? (0, n.jsx)(o.s, {
-            giftRecipient: u,
-            onWishlistItemClick: c
-        }) : (0, n.jsx)(o.A, {
-            giftRecipient: u,
-            onWishlistItemClick: c
+        }), f ? (0, n.jsx)(a.s, {
+            giftRecipient: c,
+            onWishlistItemClick: u
+        }) : (0, n.jsx)(a.A, {
+            giftRecipient: c,
+            onWishlistItemClick: u
         })]
     })
 }

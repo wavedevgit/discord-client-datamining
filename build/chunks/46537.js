@@ -1,37 +1,37 @@
-/** chunk id: 46537, original params: e,t,r (module,exports,require) **/
-r.d(t, {
-    Qc: () => h,
+/** chunk id: 46537, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    Qc: () => I,
     b7: () => S,
-    bc: () => I
+    bc: () => h
 });
-var i = r(64700),
-    l = r(311907),
-    s = r(576030),
-    n = r(287809),
-    u = r(403362),
-    a = r(427262),
-    d = r(594832),
-    o = r(652215),
-    c = r(985018);
+var r = i(64700),
+    l = i(311907),
+    s = i(576030),
+    n = i(287809),
+    u = i(403362),
+    a = i(427262),
+    d = i(594832),
+    o = i(652215),
+    c = i(985018);
 
-function h(e) {
+function I(e) {
     return null != e.title && null == e.body && null == e.renderIcon
 }
 
-function I(e, t) {
-    return i.useMemo(() => {
-        let r = e.map(e => {
+function h(e, t) {
+    return r.useMemo(() => {
+        let i = e.map(e => {
                 let {
                     item: t,
-                    source: r
+                    source: i
                 } = e;
                 return {
                     productLine: t.skuProductLine,
-                    source: r,
+                    source: i,
                     renderIcon: s.GM
                 }
             }),
-            i = a.Ay.getName(t),
+            r = a.Ay.getName(t),
             {
                 hasMultipleTypes: l,
                 hasMultipleSources: n
@@ -45,10 +45,10 @@ function I(e, t) {
                     hasMultipleTypes: e.some(e => e.productLine !== t.productLine),
                     hasMultipleSources: e.some(e => e.source !== t.source)
                 }
-            }(r);
-        return l || n ? r.map(e => !l && n ? {
+            }(i);
+        return l || n ? i.map(e => !l && n ? {
             title: e.source === d.uS.WISHLIST ? c.intl.formatToPlainString(c.t.p3RmJF, {
-                username: i
+                username: r
             }) : c.intl.string(c.t.Ig6VDH),
             renderIcon: e.productLine !== o.EZt.COLLECTIBLES ? e.renderIcon : void 0,
             shouldShow: !0
@@ -59,30 +59,30 @@ function I(e, t) {
         } : {
             title: e.productLine === o.EZt.SOCIAL_LAYER_GAME_ITEM ? c.intl.string(c.t["4yiU7x"]) : c.intl.string(c.t.HFhcqh),
             body: e.source === d.uS.WISHLIST ? c.intl.formatToPlainString(c.t.p3RmJF, {
-                username: i
+                username: r
             }) : c.intl.string(c.t.Ig6VDH),
             renderIcon: e.renderIcon,
             shouldShow: !0
-        }) : r.map(() => ({
+        }) : i.map(() => ({
             shouldShow: !1
         }))
     }, [e, t])
 }
 
 function S(e, t) {
-    let r = (0, l.yK)([n.default], () => e.map(e => n.default.getUser(e.gifterUserId)).filter(u.Vq), [e]),
-        d = i.useMemo(() => r.reduce((e, t) => (e[t.id] = t, e), {}), [r]);
-    return i.useMemo(() => {
-        let r = new Set(e.map(e => e.skuProductLine)).size > 1;
+    let i = (0, l.yK)([n.default], () => e.map(e => n.default.getUser(e.gifterUserId)).filter(u.Vq), [e]),
+        d = r.useMemo(() => i.reduce((e, t) => (e[t.id] = t, e), {}), [i]);
+    return r.useMemo(() => {
+        let i = new Set(e.map(e => e.skuProductLine)).size > 1;
         return e.map(e => {
-            let i = t && e.isOwned && null != e.gifterUserId && null != d[e.gifterUserId],
+            let r = t && e.isOwned && null != e.gifterUserId && null != d[e.gifterUserId],
                 l = null != e.gifterUserId && null != d[e.gifterUserId] ? a.Ay.getName(d[e.gifterUserId]) : null;
-            return r || i ? {
-                title: i ? c.intl.formatToPlainString(c.t.TL4ktE, {
+            return i || r ? {
+                title: r ? c.intl.formatToPlainString(c.t.TL4ktE, {
                     username: l
                 }) : e.skuProductLine === o.EZt.SOCIAL_LAYER_GAME_ITEM ? c.intl.string(c.t["4yiU7x"]) : c.intl.string(c.t.HFhcqh),
-                body: i ? e.skuName : void 0,
-                renderIcon: i ? s.uq : e.skuProductLine === o.EZt.SOCIAL_LAYER_GAME_ITEM ? s.GM : void 0,
+                body: r ? e.skuName : void 0,
+                renderIcon: r ? s.uq : e.skuProductLine === o.EZt.SOCIAL_LAYER_GAME_ITEM ? s.GM : void 0,
                 shouldShow: !0
             } : {
                 shouldShow: !1

@@ -27,13 +27,13 @@ var i = n(627968),
     T = n(357541),
     b = n(236599),
     y = n(192),
-    S = n(128988),
-    N = n(795755),
+    N = n(128988),
+    S = n(795755),
     C = n(53977),
     k = n(982599),
     R = n(515054),
-    O = n(266713),
-    w = n(985018),
+    w = n(266713),
+    O = n(985018),
     L = n(519653);
 
 function P(e) {
@@ -44,7 +44,7 @@ function P(e) {
     return t instanceof _.R ? (0, i.jsx)(E.A, {
         widget: t,
         ...n
-    }) : t instanceof A.Yy ? (0, i.jsx)(N.A, {
+    }) : t instanceof A.Yy ? (0, i.jsx)(S.A, {
         widget: t,
         ...n
     }) : null
@@ -56,10 +56,10 @@ function D() {
         children: [(0, i.jsx)(o.mir, {
             size: "xs"
         }), (0, i.jsx)(o.Text, {
-            "aria-label": w.intl.string(w.t["7blcz6"]),
+            "aria-label": O.intl.string(O.t["7blcz6"]),
             variant: "text-xs/normal",
             color: "text-muted",
-            children: w.intl.string(w.t["7blcz6"])
+            children: O.intl.string(O.t["7blcz6"])
         })]
     })
 }
@@ -113,7 +113,7 @@ function U(e) {
             s.current && (s.current = !1, a())
         }, [a])
     })(t.id, T);
-    let S = () => (0, i.jsxs)(i.Fragment, {
+    let N = () => (0, i.jsxs)(i.Fragment, {
         children: [o && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(b.A, {
                 className: L.cG
@@ -128,10 +128,10 @@ function U(e) {
     });
     if (j)
         if (m) return (0, i.jsx)(C.A, {});
-        else return (0, i.jsx)(O.A, {});
+        else return (0, i.jsx)(w.A, {});
     return o ? (0, i.jsx)(y.D, {
-        children: S()
-    }) : S()
+        children: N()
+    }) : N()
 }
 
 function M(e) {
@@ -150,7 +150,7 @@ function M(e) {
             [L.az]: r
         }),
         fade: !0,
-        children: [(0, i.jsx)(S.A, {
+        children: [(0, i.jsx)(N.A, {
             scrollerRef: a
         }), (0, i.jsx)(U, {
             user: t,

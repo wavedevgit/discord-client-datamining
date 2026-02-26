@@ -89,15 +89,15 @@ function E(e) {
         headerActionButtons: E,
         headerClassName: T,
         additionalManageWidgetMenuItems: b
-    } = e, y = (0, c.GV)(), S = (0, o.bG)([d.default], () => d.default.getId() === t), N = (0, p.g)(), {
+    } = e, y = (0, c.GV)(), N = (0, o.bG)([d.default], () => d.default.getId() === t), S = (0, p.g)(), {
         trackUserProfileAction: C
     } = (0, u.NJ)(), k = (0, x.A)({
         widget: n,
         onAction: C
-    }), R = N === n.type;
+    }), R = S === n.type;
     (0, m.A)(k, R);
-    let O = S && null != f && !a,
-        w = () => (0, i.jsxs)("div", {
+    let w = N && null != f && !a,
+        O = () => (0, i.jsxs)("div", {
             className: s()(j.kL, g),
             children: [(0, i.jsx)(_.A, {
                 userId: t,
@@ -115,11 +115,11 @@ function E(e) {
     return (0, i.jsx)("section", {
         ref: k,
         "aria-labelledby": y,
-        children: O ? (0, i.jsx)(v, {
+        children: w ? (0, i.jsx)(v, {
             index: f ?? 0,
             widget: n,
             additionalManageWidgetMenuItems: b,
-            children: w()
-        }) : w()
+            children: O()
+        }) : O()
     })
 }

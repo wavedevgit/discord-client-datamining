@@ -9,9 +9,9 @@ var i = n(311907),
     a = n(442433),
     d = n(734057),
     u = n(576705),
-    s = n(589051),
-    o = n(145567),
-    c = n(187667),
+    s = n(1193),
+    o = n(589051),
+    c = n(145567),
     A = n(34307),
     E = n(652215),
     f = n(822889),
@@ -20,18 +20,18 @@ var i = n(311907),
 function h(e, t) {
     let {
         hasChat: n
-    } = (0, s.M8)("useOverlayTextChatToggleMenuItem"), h = "DM_USER" === e.kind ? e.userId : null, v = (0, i.bG)([d.A], () => null != h ? d.A.getDMFromUserId(h) ?? null : null, [h]), I = "CHANNEL" === e.kind ? e.channel.id : v, N = (0, i.bG)([c.A], () => {
+    } = (0, o.M8)("useOverlayTextChatToggleMenuItem"), h = "DM_USER" === e.kind ? e.userId : null, v = (0, i.bG)([d.A], () => null != h ? d.A.getDMFromUserId(h) ?? null : null, [h]), I = "CHANNEL" === e.kind ? e.channel.id : v, N = (0, i.bG)([s.A], () => {
         if (null == I) return !1;
-        let [e] = c.A.getSessionEntries();
+        let [e] = s.A.getSessionEntries();
         for (let t of e)
             if (t.channelId === I) return !0;
-        return c.A.getSelectedChannelId() === I
+        return s.A.getSelectedChannelId() === I
     }, [I]), y = "CHANNEL" === e.kind ? e.channel : null, M = (0, i.bG)([u.A], () => !!(null == y || y.isDM() || y.isMultiUserDM() || y.isPrivate()) || u.A.can(E.xBc.READ_MESSAGE_HISTORY, y), [y]);
     return N && null != I ? (0, r.jsx)(l.Drp, {
         id: "close-chat",
         label: g.intl.string(f.default.ERApc4),
         action: () => {
-            (0, o.lu)({
+            (0, c.lu)({
                 channelId: I,
                 widgetType: t,
                 secondaryValue: "context_menu_close_chat"
@@ -43,9 +43,9 @@ function h(e, t) {
         action: () => {
             switch (e.kind) {
                 case "CHANNEL":
-                    (0, o.D$)({
+                    (0, c.D$)({
                         target: {
-                            kind: o.bB.CHANNEL,
+                            kind: c.bB.CHANNEL,
                             channelId: e.channel.id,
                             guildId: e.guildId,
                             messageId: null
@@ -64,9 +64,9 @@ function h(e, t) {
                         return
                     }(async () => {
                         try {
-                            await (0, o.D$)({
+                            await (0, c.D$)({
                                 target: {
-                                    kind: o.bB.DM_USER,
+                                    kind: c.bB.DM_USER,
                                     userId: e.userId,
                                     messageId: null,
                                     existingChannelId: v

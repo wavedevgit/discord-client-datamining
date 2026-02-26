@@ -26,13 +26,13 @@ var i = n(627968),
     T = n(61266),
     b = n(731068),
     y = n(619517),
-    S = n(339580),
-    N = n(961350),
+    N = n(339580),
+    S = n(961350),
     C = n(760751),
     k = n(403362),
     R = n(183555),
-    O = n(622543),
-    w = n(466853),
+    w = n(622543),
+    O = n(466853),
     L = n(985018),
     P = n(935454);
 let D = /{{(.*?)}}/g,
@@ -482,7 +482,7 @@ let Q = Object.assign(function(e) {
             cta: T,
             subtle: y = !1
         } = e,
-        D = (0, c.bG)([N.default], () => N.default.getId()) === v.id,
+        D = (0, c.bG)([S.default], () => S.default.getId()) === v.id,
         M = (0, h.h)(E.applicationId),
         F = M?.getIconURL(16),
         W = (0, c.bG)([C.A], () => null != M ? C.A.getGameByApplication(M) : null),
@@ -539,7 +539,7 @@ let Q = Object.assign(function(e) {
             isLoading: en,
             hasData: ei,
             components: el
-        } = (t = v.id, n = E.applicationId, a = (0, f.A)(), r = (0, c.bG)([S.A], () => S.A.getUserIdentityByApplication(t, n)), u = (0, c.bG)([O.A], () => O.A.getApplicationWidgetConfig(n)), p = (0, c.bG)([S.A, O.A], () => null == S.A.getUserIdentities(t) || null == O.A.applicationWidgetConfigs), I = l.useMemo(() => {
+        } = (t = v.id, n = E.applicationId, a = (0, f.A)(), r = (0, c.bG)([N.A], () => N.A.getUserIdentityByApplication(t, n)), u = (0, c.bG)([w.A], () => w.A.getApplicationWidgetConfig(n)), p = (0, c.bG)([N.A, w.A], () => null == N.A.getUserIdentities(t) || null == w.A.applicationWidgetConfigs), I = l.useMemo(() => {
             var e, t;
             if (null == u) return null;
             let n = G[u.widgetTemplateId];
@@ -613,7 +613,7 @@ let Q = Object.assign(function(e) {
             hasData: null != r,
             components: I
         });
-    return null == el ? null : (0, i.jsxs)(w.A, {
+    return null == el ? null : (0, i.jsxs)(O.A, {
         ...e,
         userId: v.id,
         widget: E,

@@ -26,10 +26,10 @@ function j(e) {
         className: t
     } = e, {
         trackUserProfileEditSaved: n
-    } = (0, g.NJ)(), [a, j] = l.useState(!1), v = (0, o.yK)([f.A], () => f.A.getSaveablePendingWidgets() ?? []), E = (0, o.yK)([f.A], () => f.A.getChangedWidgets()), T = (0, o.yK)([f.A], () => f.A.getRemovedWidgets()), b = (0, o.bG)([f.A], () => f.A.hasUnsavedChanges()), y = (0, o.bG)([f.A], () => f.A.canSaveChanges()), S = (0, o.bG)([f.A], () => f.A.isSubmitting), N = (0, o.bG)([d.A], () => d.A.useReducedMotion), C = (0, c.pnh)(b, {
+    } = (0, g.NJ)(), [a, j] = l.useState(!1), v = (0, o.yK)([f.A], () => f.A.getSaveablePendingWidgets() ?? []), E = (0, o.yK)([f.A], () => f.A.getChangedWidgets()), T = (0, o.yK)([f.A], () => f.A.getRemovedWidgets()), b = (0, o.bG)([f.A], () => f.A.hasUnsavedChanges()), y = (0, o.bG)([f.A], () => f.A.canSaveChanges()), N = (0, o.bG)([f.A], () => f.A.isSubmitting), S = (0, o.bG)([d.A], () => d.A.useReducedMotion), C = (0, c.pnh)(b, {
         from: {
             opacity: 0,
-            y: 80 * !N
+            y: 80 * !S
         },
         enter: {
             opacity: 1,
@@ -37,7 +37,7 @@ function j(e) {
         },
         leave: {
             opacity: 0,
-            y: 80 * !N
+            y: 80 * !S
         }
     });
     l.useEffect(() => {
@@ -96,14 +96,14 @@ function j(e) {
                     variant: "secondary",
                     text: A.intl.string(A.t.yBZMsQ),
                     onClick: R,
-                    disabled: !b || S
+                    disabled: !b || N
                 }), (0, i.jsx)(c.Button, {
                     size: "sm",
                     variant: "primary",
                     text: A.intl.string(A.t["R3BPH+"]),
                     onClick: k,
-                    loading: S,
-                    disabled: !y || !b || S
+                    loading: N,
+                    disabled: !y || !b || N
                 })]
             })]
         })

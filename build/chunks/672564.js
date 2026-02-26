@@ -27,8 +27,8 @@ var i = n(627968),
     T = n(699976),
     b = n(652215),
     y = n(788868),
-    S = n(518477),
-    N = n(985018),
+    N = n(518477),
+    S = n(985018),
     C = n(366096);
 let k = T.Z.SIZE_90;
 
@@ -47,7 +47,7 @@ function R(e) {
     } = (0, _.NJ)(), m = l.useCallback(() => {
         g({
             wishlistId: d,
-            action: S.Mq.WISHLIST_ITEM_CLICKED,
+            action: N.Mq.WISHLIST_ITEM_CLICKED,
             skuId: t.id,
             productLines: new Set([t.productLine])
         }), c()
@@ -64,7 +64,7 @@ function R(e) {
     })
 }
 
-function O(e) {
+function w(e) {
     let {
         sku: t,
         analyticsLocations: n,
@@ -79,10 +79,10 @@ function O(e) {
             f(!0);
             try {
                 await A.A.addSkuToWishlist(t.id, n), r?.({
-                    tabSection: S.RP.WISHLIST
+                    tabSection: N.RP.WISHLIST
                 })
             } catch (e) {
-                (0, u.showToast)((0, u.createToast)(N.intl.string(N.t.F8FvUy), u.ToastType.FAILURE)), u.ORC.announce(N.intl.string(N.t.F8FvUy))
+                (0, u.showToast)((0, u.createToast)(S.intl.string(S.t.F8FvUy), u.ToastType.FAILURE)), u.ORC.announce(S.intl.string(S.t.F8FvUy))
             } finally {
                 f(!1)
             }
@@ -91,7 +91,7 @@ function O(e) {
         [C.zW]: a || x
     }, c), [a, x, c]);
     return (0, i.jsx)(d.un, {
-        title: N.intl.string(N.t["8DkMEQ"]),
+        title: S.intl.string(S.t["8DkMEQ"]),
         body: t.name,
         asset: o,
         assetSize: I.Q8,
@@ -114,7 +114,7 @@ function O(e) {
     })
 }
 
-function w(e) {
+function O(e) {
     let {
         sku: t,
         analyticsLocations: n,
@@ -124,7 +124,7 @@ function w(e) {
     } = (0, m.Ay)(...n ?? [], g.A.SLAYER_STOREFRONT_WISHLIST_ITEM_CARD), o = l.useMemo(() => (0, i.jsx)(f.mW, {
         application: s
     }), [s]);
-    return (0, i.jsx)(O, {
+    return (0, i.jsx)(w, {
         sku: t,
         analyticsLocations: r,
         tooltipIcon: o,
@@ -133,7 +133,7 @@ function w(e) {
 }
 
 function L(e) {
-    return (0, i.jsx)(O, {
+    return (0, i.jsx)(w, {
         ...e
     })
 }
@@ -145,7 +145,7 @@ function P(e) {
     } = e, [a, s] = l.useState(!1);
     switch (t.productLine) {
         case b.EZt.SOCIAL_LAYER_GAME_ITEM:
-            return (0, i.jsx)(w, {
+            return (0, i.jsx)(O, {
                 sku: t,
                 isHoveringOrFocusing: a,
                 setIsHoveringOrFocusing: s,

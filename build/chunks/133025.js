@@ -1,23 +1,23 @@
 /** chunk id: 133025, original params: e,t,i (module,exports,require) **/
 i.d(t, {
-    A: () => a
+    A: () => o
 });
 var n = i(311907),
     s = i(73153);
 
-function l(e, t) {
+function r(e, t) {
     if (0 === e.length) throw Error("No user IDs provided");
     return [...e, ...t].join(",")
 }
-let r = {};
-class o extends n.Ay.Store {
+let l = {};
+class a extends n.Ay.Store {
     getRecommendations(e, t) {
-        if (0 !== e.length && 0 !== t.length) return r[l(e, t)]
+        if (0 !== e.length && 0 !== t.length) return l[r(e, t)]
     }
 }
-let a = new o(s.h, {
+let o = new a(s.h, {
     LOGOUT: function() {
-        r = {}
+        l = {}
     },
     WISHLIST_RECOMMENDATIONS_FETCH_START: function(e) {
         let {
@@ -25,9 +25,9 @@ let a = new o(s.h, {
             applicationIds: i
         } = e;
         if (0 === t.length || 0 === i.length) return !1;
-        let n = l(t, i);
-        r = {
-            ...r,
+        let n = r(t, i);
+        l = {
+            ...l,
             [n]: {
                 state: "loading"
             }
@@ -40,9 +40,9 @@ let a = new o(s.h, {
             data: n
         } = e;
         if (0 === t.length || 0 === i.length) return !1;
-        let s = l(t, i);
-        r = {
-            ...r,
+        let s = r(t, i);
+        l = {
+            ...l,
             [s]: {
                 state: "success",
                 data: n,
@@ -56,10 +56,10 @@ let a = new o(s.h, {
             applicationIds: i
         } = e;
         if (0 === t.length || 0 === i.length) return !1;
-        let n = l(t, i);
-        if (r[n]?.state === "success") return !1;
-        r = {
-            ...r,
+        let n = r(t, i);
+        if (l[n]?.state === "success") return !1;
+        l = {
+            ...l,
             [n]: {
                 state: "error",
                 fetchedAt: Date.now()

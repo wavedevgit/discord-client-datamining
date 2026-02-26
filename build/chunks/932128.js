@@ -14,9 +14,9 @@ var i = n(627968),
     h = n(287809),
     g = n(256415),
     m = n(810412),
-    p = n(129537),
-    A = n(412477),
-    x = n(187667),
+    p = n(1193),
+    A = n(129537),
+    x = n(412477),
     E = n(651813),
     f = n(320165),
     S = n(121914),
@@ -31,7 +31,7 @@ function w(e) {
     let {
         dragStart: t,
         dragging: n
-    } = e, [w, O] = (0, l.bG)([x.A], () => x.A.getSessionEntries()), _ = (0, l.bG)([x.A], () => x.A.getSelectedChannelId()), N = (0, l.bG)([x.A], () => x.A.getVoiceChatMinimized()), b = (0, l.bG)([o.A], () => null != _ ? o.A.getChannel(_) ?? null : null, [_]);
+    } = e, [w, O] = (0, l.bG)([p.A], () => p.A.getSessionEntries()), _ = (0, l.bG)([p.A], () => p.A.getSelectedChannelId()), N = (0, l.bG)([p.A], () => p.A.getVoiceChatMinimized()), b = (0, l.bG)([o.A], () => null != _ ? o.A.getChannel(_) ?? null : null, [_]);
     s.useEffect(() => {
         null == _ || null == b && (0, T.b)(_)
     }, [b, _]);
@@ -95,7 +95,7 @@ function w(e) {
             className: y.pz,
             "aria-label": j.intl.string(C.default["2yFtJ1"]),
             onMouseDown: e => {
-                0 === e.button && t(p.P.MOVE, e.clientX, e.clientY)
+                0 === e.button && t(A.P.MOVE, e.clientX, e.clientY)
             },
             children: (0, i.jsxs)(r.d_W, {
                 children: [null != M ? (0, i.jsxs)(i.Fragment, {
@@ -124,7 +124,7 @@ function w(e) {
                 selectedChannelId: _
             })]
         }) : null]
-    }) : (0, i.jsx)(A.g, {
+    }) : (0, i.jsx)(x.g, {
         emptyText: j.intl.string(C.default["xpv/t5"]),
         icon: r.oyn
     })

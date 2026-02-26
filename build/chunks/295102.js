@@ -5,21 +5,21 @@ n.d(t, {
 var i = n(627968),
     s = n(442433),
     l = n(383501),
-    r = n(589051),
-    a = n(547463),
-    o = n(620851),
-    d = n(646881),
-    u = n(97548),
-    c = n(324093),
-    h = n(897720),
-    g = n(888987),
-    m = n(218670),
-    p = n(932128),
-    A = n(479207),
-    x = n(393172),
-    E = n(968898),
-    f = n(196295),
-    S = n(187667);
+    r = n(1193),
+    a = n(589051),
+    o = n(547463),
+    d = n(620851),
+    u = n(646881),
+    c = n(97548),
+    h = n(324093),
+    g = n(897720),
+    m = n(888987),
+    p = n(218670),
+    A = n(932128),
+    x = n(479207),
+    E = n(393172),
+    f = n(968898),
+    S = n(196295);
 n(392164);
 var I = n(652215),
     T = n(985018);
@@ -34,7 +34,7 @@ let v = {
                 borderWidth: r,
                 showEmpty: a
             } = e;
-            return (0, h.cv)(t) ? (0, i.jsx)(A.A, {
+            return (0, g.cv)(t) ? (0, i.jsx)(x.A, {
                 id: t.id,
                 locked: n,
                 widget: t,
@@ -45,13 +45,13 @@ let v = {
                 borderWidth: r
             }) : null
         },
-        renderTitle: () => (0, i.jsx)(E.Pl, {
+        renderTitle: () => (0, i.jsx)(f.Pl, {
             children: T.intl.string(T.t.UPvOia)
         }),
         renderButtons: e => (0, i.jsxs)(i.Fragment, {
-            children: [(0, i.jsx)(E.CS, {
+            children: [(0, i.jsx)(f.CS, {
                 onClick: t => {
-                    (0, h.cv)(e) && (0, s.L3)(t, async () => {
+                    (0, g.cv)(e) && (0, s.L3)(t, async () => {
                         let {
                             default: t
                         } = await n.e("78238").then(n.bind(n, 440173));
@@ -61,12 +61,12 @@ let v = {
                         })
                     })
                 }
-            }), (0, i.jsx)(E.O0, {
+            }), (0, i.jsx)(f.O0, {
                 id: e.id,
                 pinned: e.pinned
             })]
         }),
-        resizeValidation: A.r
+        resizeValidation: x.r
     },
     [I.uss.VOICE_V3]: {
         renderWidget(e) {
@@ -76,7 +76,7 @@ let v = {
                 locked: s,
                 showEmpty: l
             } = e;
-            return (0, h.ZO)(t) ? (0, i.jsx)(x.Ay, {
+            return (0, g.ZO)(t) ? (0, i.jsx)(E.Ay, {
                 anchorLeft: n,
                 id: t.id,
                 locked: s,
@@ -87,11 +87,11 @@ let v = {
                 showEmpty: l
             }) : null
         },
-        renderTitle: () => (0, i.jsx)(E.Pl, {
+        renderTitle: () => (0, i.jsx)(f.Pl, {
             children: T.intl.string(T.t.nFv3Gb)
         }),
         renderButtons: e => (0, i.jsxs)(i.Fragment, {
-            children: [(0, i.jsx)(E.CS, {
+            children: [(0, i.jsx)(f.CS, {
                 onClick: e => {
                     (0, s.L3)(e, async () => {
                         let {
@@ -102,7 +102,7 @@ let v = {
                         })
                     })
                 }
-            }), (0, i.jsx)(E.O0, {
+            }), (0, i.jsx)(f.O0, {
                 id: e.id,
                 pinned: e.pinned
             })]
@@ -114,17 +114,17 @@ let v = {
                 widget: t,
                 locked: n
             } = e;
-            return (0, i.jsx)(o.A, {
+            return (0, i.jsx)(d.A, {
                 id: t.id,
                 locked: n,
                 pinned: t.pinned
             })
         },
-        renderTitle: () => (0, i.jsx)(E.Pl, {
+        renderTitle: () => (0, i.jsx)(f.Pl, {
             children: "Click Zone Tester"
         }),
         renderButtons: e => (0, i.jsxs)(i.Fragment, {
-            children: [(0, i.jsx)(E.CS, {
+            children: [(0, i.jsx)(f.CS, {
                 onClick: e => {
                     (0, s.L3)(e, async () => {
                         let {
@@ -135,7 +135,7 @@ let v = {
                         })
                     })
                 }
-            }), (0, i.jsx)(E.O0, {
+            }), (0, i.jsx)(f.O0, {
                 id: e.id,
                 pinned: e.pinned
             })]
@@ -148,17 +148,17 @@ let v = {
                 locked: n,
                 anchorLeft: s
             } = e;
-            return (0, i.jsx)(g.A, {
+            return (0, i.jsx)(m.A, {
                 id: t.id,
                 anchorLeft: s,
                 locked: n,
                 pinned: t.pinned
             })
         },
-        renderTitle: () => (0, i.jsx)(E.Pl, {
+        renderTitle: () => (0, i.jsx)(f.Pl, {
             children: "Overlay Performance"
         }),
-        renderButtons: e => (0, i.jsx)(E.O0, {
+        renderButtons: e => (0, i.jsx)(f.O0, {
             id: e.id,
             pinned: e.pinned
         })
@@ -174,9 +174,9 @@ let v = {
                 anchorLeft: a,
                 showEmpty: o,
                 padding: d,
-                borderWidth: c
+                borderWidth: u
             } = e;
-            return (0, h.dO)(t) ? (0, i.jsx)(u.A, {
+            return (0, g.dO)(t) ? (0, i.jsx)(c.A, {
                 id: t.id,
                 locked: n,
                 pinned: t.pinned,
@@ -189,18 +189,18 @@ let v = {
                 dragStart: l,
                 horizontal: t.meta.horizontal ?? !1,
                 padding: d,
-                borderWidth: c,
+                borderWidth: u,
                 showEmpty: o
             }) : null
         },
-        renderTitle: e => (0, i.jsx)(E.we, {
+        renderTitle: e => (0, i.jsx)(f.we, {
             widgetId: e.id,
             children: T.intl.string(T.t["386XRo"])
         }),
-        renderButtons: e => (0, h.dO)(e) ? (0, i.jsxs)(i.Fragment, {
-            children: [(0, i.jsx)(E.CS, {
+        renderButtons: e => (0, g.dO)(e) ? (0, i.jsxs)(i.Fragment, {
+            children: [(0, i.jsx)(f.CS, {
                 onClick: t => {
-                    (0, h.dO)(e) && (0, s.L3)(t, async () => {
+                    (0, g.dO)(e) && (0, s.L3)(t, async () => {
                         let {
                             default: t
                         } = await n.e("21289").then(n.bind(n, 543824));
@@ -210,22 +210,22 @@ let v = {
                         })
                     })
                 }
-            }), (0, i.jsx)(E.GQ, {
+            }), (0, i.jsx)(f.GQ, {
                 widgetId: e.id,
                 showAllStreams: e.meta.showAllStreams ?? !0
-            }), (0, i.jsx)(E.O0, {
+            }), (0, i.jsx)(f.O0, {
                 id: e.id,
                 pinned: e.pinned
             })]
         }) : null,
-        resizeValidation: c.OL
+        resizeValidation: h.OL
     },
     [I.uss.QUICK_ACTIONS]: {
         renderWidget(e) {
             let {
                 locked: t
             } = e;
-            return (0, i.jsx)(m.A, {
+            return (0, i.jsx)(p.A, {
                 locked: t
             })
         }
@@ -237,17 +237,17 @@ let v = {
                 showEmpty: n,
                 widget: s
             } = e;
-            return (0, i.jsx)(f.A, {
+            return (0, i.jsx)(S.A, {
                 pinned: s.pinned,
                 locked: t,
                 showEmpty: n
             })
         },
-        renderTitle: () => (0, i.jsx)(E.Pl, {
+        renderTitle: () => (0, i.jsx)(f.Pl, {
             children: T.intl.string(T.t.gnKWdS)
         }),
         renderButtons: e => (0, i.jsxs)(i.Fragment, {
-            children: [(0, i.jsx)(E.CS, {
+            children: [(0, i.jsx)(f.CS, {
                 onClick: e => {
                     (0, s.L3)(e, async () => {
                         let {
@@ -258,7 +258,7 @@ let v = {
                         })
                     })
                 }
-            }), (0, i.jsx)(E.O0, {
+            }), (0, i.jsx)(f.O0, {
                 id: e.id,
                 pinned: e.pinned
             })]
@@ -269,30 +269,30 @@ let v = {
             let {
                 locked: t
             } = e;
-            return (0, i.jsx)(a.Ay, {
+            return (0, i.jsx)(o.Ay, {
                 locked: t
             })
         },
-        renderTitle: () => (0, i.jsx)(E.Pl, {
+        renderTitle: () => (0, i.jsx)(f.Pl, {
             children: T.intl.string(T.t["6gwSFY"])
         }),
         renderButtons: () => null,
-        predicate: () => !(0, r.NI)("WidgetRenderConfig").hasFriendList
+        predicate: () => !(0, a.NI)("WidgetRenderConfig").hasFriendList
     },
     [I.uss.FRIENDS]: {
         renderWidget(e) {
             let {
                 locked: t
             } = e;
-            return (0, i.jsx)(d.A, {
+            return (0, i.jsx)(u.A, {
                 locked: t
             })
         },
-        renderTitle: () => (0, i.jsx)(E.Pl, {
+        renderTitle: () => (0, i.jsx)(f.Pl, {
             children: T.intl.string(T.t.TdEu5X)
         }),
         renderButtons: () => null,
-        predicate: () => (0, r.NI)("WidgetRenderConfig").hasFriendList
+        predicate: () => (0, a.NI)("WidgetRenderConfig").hasFriendList
     },
     [I.uss.TEXT_CHAT_V3]: {
         renderWidget(e) {
@@ -301,26 +301,26 @@ let v = {
                 dragStart: n,
                 dragging: s
             } = e;
-            return (0, i.jsx)(p.A, {
+            return (0, i.jsx)(A.A, {
                 locked: t,
                 dragStart: n,
                 dragging: s
             })
         },
-        renderTitle: () => (0, i.jsx)(E.Pl, {
+        renderTitle: () => (0, i.jsx)(f.Pl, {
             children: T.intl.string(T.t["/VQax8"])
         }),
         renderButtons: () => null,
-        predicate: () => (0, r.NI)("WidgetRenderConfig").hasChat,
+        predicate: () => (0, a.NI)("WidgetRenderConfig").hasChat,
         containerRenderGate: {
-            stores: [l.A, S.A],
+            stores: [l.A, r.A],
             shouldRender(e) {
                 let {
                     locked: t
                 } = e;
                 if (t) return !1;
                 let n = l.A.getChannelId() ?? null,
-                    [i] = S.A.getSessionEntries(),
+                    [i] = r.A.getSessionEntries(),
                     s = i.length > 0;
                 return null != n || s
             }
