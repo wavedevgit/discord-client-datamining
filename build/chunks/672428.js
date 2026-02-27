@@ -23,10 +23,10 @@ function c(e, l) {
                 d = u[n],
                 m = c[n],
                 b = h[n],
-                C = p[n],
-                g = !0 === l && d?.type === o.R.BUNDLE && 0 === d.items.length,
-                _ = null != b && null != C && r - C < 36e5;
-            null != d && !g || null != e && e.productLine !== s.EZt.COLLECTIBLES || m || _ || (0, i.Jp)(a, {
+                A = p[n],
+                C = !0 === l && d?.type === o.R.BUNDLE && 0 === d.items.length,
+                g = null != b && null != A && r - A < 36e5;
+            null != d && !C || null != e && e.productLine !== s.EZt.COLLECTIBLES || m || g || (0, i.Jp)(a, {
                 includeBundles: l
             })
         }

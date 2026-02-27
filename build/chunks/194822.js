@@ -25,9 +25,9 @@ let i = (0, n.m6)() ? {
     p = new Set(d),
     m = {},
     b = s,
-    C = new Set(c),
-    g = {};
-class _ extends r.Ay.Store {
+    A = new Set(c),
+    C = {};
+class g extends r.Ay.Store {
     static displayName = "CmsLayoutStore";
     getLayout(e, l) {
         return null == e || null == l ? null : h[e]?.[l] ?? null
@@ -42,13 +42,13 @@ class _ extends r.Ay.Store {
         return null == e || null == l ? null : b[e]?.[l] ?? null
     }
     isFetchingTemplate(e, l) {
-        return null != e && null != l && C.has(u(e, l))
+        return null != e && null != l && A.has(u(e, l))
     }
     getTemplateFetchError(e, l) {
-        return null == e || null == l ? null : g[u(e, l)] ?? null
+        return null == e || null == l ? null : C[u(e, l)] ?? null
     }
 }
-let k = new _(o.h, {
+let k = new g(o.h, {
     CMS_LAYOUT_FETCH: e => {
         let {
             tenantId: l,
@@ -76,7 +76,7 @@ let k = new _(o.h, {
             tenantId: l,
             templateId: t
         } = e;
-        C.add(u(l, t))
+        A.add(u(l, t))
     },
     CMS_TEMPLATE_FETCH_SUCCESS: e => {
         let {
@@ -84,7 +84,7 @@ let k = new _(o.h, {
             templateId: t,
             layout: r
         } = e;
-        (b[l] ??= {})[t] = r, delete g[u(l, t)], C.delete(u(l, t))
+        (b[l] ??= {})[t] = r, delete C[u(l, t)], A.delete(u(l, t))
     },
     CMS_TEMPLATE_FETCH_FAILURE: e => {
         let {
@@ -92,9 +92,9 @@ let k = new _(o.h, {
             templateId: t,
             apiError: r
         } = e;
-        g[u(l, t)] = r, C.delete(u(l, t))
+        C[u(l, t)] = r, A.delete(u(l, t))
     },
     LOGOUT: function() {
-        h = {}, p = new Set, m = {}, b = {}, C = new Set, g = {}
+        h = {}, p = new Set, m = {}, b = {}, A = new Set, C = {}
     }
 })

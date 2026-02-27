@@ -1,30 +1,31 @@
 /** chunk id: 528226, original params: e,l,t (module,exports,require) **/
 t.d(l, {
-    A: () => n
+    A: () => a
 });
 var r = t(627968);
 t(64700);
-var o = t(988064);
-let n = e => {
+var o = t(506456),
+    n = t(988064);
+let a = e => {
     let {
         bannerSrc: l,
         logoSrc: t,
-        backgroundColor: n,
-        children: a
-    } = e;
+        backgroundColor: a,
+        children: i
+    } = e, d = (0, o.A)(l), s = (0, o.A)(t);
     return (0, r.jsxs)("div", {
-        className: o.ZK,
+        className: n.ZK,
         style: {
-            backgroundImage: `url(${l})`,
-            backgroundColor: n
+            backgroundImage: `url(${d})`,
+            backgroundColor: a
         },
-        children: [null != t && (0, r.jsx)("img", {
-            src: t,
-            className: o.wm,
+        children: [null != s && (0, r.jsx)("img", {
+            src: s,
+            className: n.wm,
             alt: ""
-        }), null != a && (0, r.jsx)("div", {
-            className: o.Y_,
-            children: a
+        }), null != i && (0, r.jsx)("div", {
+            className: n.Y_,
+            children: i
         })]
     })
 }
