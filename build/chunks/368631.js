@@ -466,7 +466,7 @@ let ex = () => [a.M.CLIENT_THEMES_SETTINGS_BADGE, a.M.DEKSTOP_CUSTOM_APP_ICON_BA
             },
             [ed.H.PRIVACY_DATA_CLIPS]: {
                 section: eu.nc_.DATA_AND_PRIVACY,
-                searchableTitles: [e_.intl.string(e_.t.AGDDkH), e_.intl.string(e_.t.NWw7kY)],
+                searchableTitles: [e_.intl.string(e_.t.AGDDkH)],
                 parent: ed.H.PRIVACY_AND_SAFETY_DISCORD_DATA_USAGE_CATEGORY
             },
             [ed.H.PRIVACY_DATA_BASIC_SERVICE_V2]: {

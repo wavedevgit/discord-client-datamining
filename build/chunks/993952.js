@@ -29,7 +29,8 @@ function _(e) {
         appContext: r,
         exitFullScreen: o,
         analyticsLocation: d,
-        guildScheduledEvent: u
+        guildScheduledEvent: u,
+        source: h
     } = e;
     o?.(), (0, c.mMO)(async () => {
         let {
@@ -42,7 +43,7 @@ function _(e) {
             streamUserId: l,
             applicationId: a,
             analyticsLocation: d,
-            source: s.isGuildStageVoice() ? p.PE1.STAGE_CHANNEL : p.PE1.STREAM_INVITE,
+            source: h ?? (s.isGuildStageVoice() ? p.PE1.STAGE_CHANNEL : p.PE1.STREAM_INVITE),
             guildScheduledEvent: u
         })
     }, {
@@ -80,7 +81,8 @@ function f(e) {
                         appContext: f,
                         exitFullScreen: a,
                         analyticsLocation: x,
-                        guildScheduledEvent: S
+                        guildScheduledEvent: S,
+                        source: p.PE1.VOICE_CHANNEL_UI_INVITE_BUTTON
                     })
                 }
             })

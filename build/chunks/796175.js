@@ -1,210 +1,183 @@
 /** chunk id: 796175, original params: e,n,t (module,exports,require) **/
 t.d(n, {
-    default: () => F
+    default: () => X
 });
 var l = t(627968);
 t(64700);
 var i = t(311907),
-    r = t(397927),
-    a = t(827343),
+    a = t(397927),
+    r = t(827343),
     s = t(442433),
-    o = t(956793),
-    d = t(401843),
+    d = t(956793),
+    o = t(401843),
     c = t(820284),
     u = t(793574),
     A = t(688810),
-    g = t(810845),
-    h = t(854182),
+    h = t(810845),
+    g = t(854182),
     p = t(666328),
     f = t(74329),
     I = t(304006),
     m = t(479335),
-    x = t(845885),
-    b = t(274372),
-    C = t(915618),
-    j = t(572164),
-    v = t(399925),
-    S = t(643501),
-    y = t(670470),
-    E = t(972432),
-    V = t(471993),
-    G = t(616356),
-    T = t(961350),
-    w = t(734057),
-    _ = t(430452),
-    M = t(287809),
-    k = t(652896),
-    U = t(652215),
-    X = t(731854),
-    P = t(985018);
+    b = t(845885),
+    x = t(643501),
+    C = t(972432),
+    j = t(471993),
+    v = t(616356),
+    S = t(961350),
+    y = t(734057),
+    V = t(430452),
+    E = t(287809),
+    T = t(652896),
+    G = t(652215),
+    _ = t(731854),
+    w = t(985018);
 
-function z(e) {
-    return (0, i.bG)([G.A], () => {
-        let n = G.A.getActiveStreamForApplicationStream(e);
-        return null != n && (0, k._z)(n) === (0, k._z)(e)
+function M(e) {
+    return (0, i.bG)([v.A], () => {
+        let n = v.A.getActiveStreamForApplicationStream(e);
+        return null != n && (0, T._z)(n) === (0, T._z)(e)
     })
 }
 
-function F(e) {
-    let n, t, G, F, L, R, D, O, N, B, J, H, {
-            stream: Q,
-            analyticsContext: W,
-            appContext: Y,
-            exitFullscreen: Z,
-            onSelect: q,
-            onInteraction: K,
-            minimal: $ = !1
+function X(e) {
+    let n, t, v, X, k, P, L, U, F, R, z, D, {
+            stream: N,
+            analyticsContext: O,
+            appContext: B,
+            exitFullscreen: J,
+            onSelect: H,
+            onInteraction: Q,
+            minimal: W = !1
         } = e,
-        ee = (0, i.cf)([M.default], () => Q?.ownerId === M.default.getCurrentUser()?.id),
-        en = function(e) {
-            let n = z(e),
-                t = (0, C.A)(_.Ay),
-                a = (0, j.Et)(),
-                s = e.ownerId === T.default.getId(),
-                {
-                    enableViewerClipping: o,
-                    ignoreSenderPreference: d
-                } = y.A.useExperiment({
-                    location: "StreamContextMenu"
-                }, {
-                    autoTrackExposure: !1
-                }),
-                c = (0, i.bG)([b.A], () => b.A.getIsAtMaxSaveClipOperations()),
-                u = (0, i.bG)([b.A], () => b.A.isViewerClippingAllowedForUser(e.ownerId)) || d;
-            return t && o && n ? (0, l.jsx)(r.Drp, {
-                id: "clip-stream",
-                disabled: !a || !(s || u) || c,
-                label: P.intl.string(P.t.U4URzP),
-                action: () => s ? (0, v.l0)() : (0, v.yd)((0, k._z)(e))
-            }) : null
-        }(Q),
-        et = z(Q),
-        el = (n = z(Q), t = (0, E.A)(Q.ownerId, X.x.STREAM), n ? t : null),
-        ei = (F = (0, i.bG)([S.default], () => null != S.default.getRemoteSessionId()), L = (0, i.bG)([w.A], () => w.A.getChannel(Q.channelId), [Q.channelId]), R = z(Q), (G = (O = null != (D = M.default.getCurrentUser()) && Q.ownerId === D.id) ? P.intl.string(P.t.S5anIc) : R ? P.intl.string(P.t.q3O3J8) : P.intl.string(P.t["7Xq/nV"]), F || !O && R && L?.isGuildStageVoice()) ? null : (0, l.jsx)(r.Drp, {
+        Y = (0, i.cf)([E.default], () => N?.ownerId === E.default.getCurrentUser()?.id),
+        Z = M(N),
+        q = (n = M(N), t = (0, C.A)(N.ownerId, _.x.STREAM), n ? t : null),
+        K = (X = (0, i.bG)([x.default], () => null != x.default.getRemoteSessionId()), k = (0, i.bG)([y.A], () => y.A.getChannel(N.channelId), [N.channelId]), P = M(N), (v = (U = null != (L = E.default.getCurrentUser()) && N.ownerId === L.id) ? w.intl.string(w.t.S5anIc) : P ? w.intl.string(w.t.q3O3J8) : w.intl.string(w.t["7Xq/nV"]), X || !U && P && k?.isGuildStageVoice()) ? null : (0, l.jsx)(a.Drp, {
             id: "watch",
-            label: G,
-            action: R ? function() {
-                (0, d.vN)((0, k._z)(Q))
+            label: v,
+            action: P ? function() {
+                (0, o.vN)((0, T._z)(N))
             } : function() {
-                o.default.selectVoiceChannel(Q.channelId), (0, d.A9)(Q)
+                d.default.selectVoiceChannel(N.channelId), (0, o.A9)(N)
             },
-            icon: $ && R && r.GT3,
-            leadingAccessory: $ && R ? {
+            icon: W && P && a.GT3,
+            leadingAccessory: W && P ? {
                 type: "icon",
-                icon: r.GT3
+                icon: a.GT3
             } : void 0
         })),
-        er = (N = z(Q), B = (0, i.bG)([_.Ay], () => _.Ay.isLocalMute(Q.ownerId, X.x.STREAM)), H = null != (J = M.default.getCurrentUser()) && Q.ownerId === J.id, !N || H ? null : (0, l.jsx)(r.sLh, {
+        $ = (F = M(N), R = (0, i.bG)([V.Ay], () => V.Ay.isLocalMute(N.ownerId, _.x.STREAM)), D = null != (z = E.default.getCurrentUser()) && N.ownerId === z.id, !F || D ? null : (0, l.jsx)(a.sLh, {
             id: "mute",
-            label: P.intl.string(P.t.sWmtI6),
+            label: w.intl.string(w.t.sWmtI6),
             action: function() {
-                a.A.toggleLocalMute(Q.ownerId, X.x.STREAM)
+                r.A.toggleLocalMute(N.ownerId, _.x.STREAM)
             },
-            checked: B
+            checked: R
         })),
-        ea = function(e) {
-            let n = z(e),
-                t = e.ownerId === T.default.getId(),
-                s = _.Ay.supports(X.O5.SIDECHAIN_COMPRESSION),
-                o = (0, i.bG)([_.Ay], () => _.Ay.getSidechainCompression()),
-                d = (0, i.bG)([_.Ay], () => _.Ay.getSidechainCompressionStrength()),
+        ee = function(e) {
+            let n = M(e),
+                t = e.ownerId === S.default.getId(),
+                s = V.Ay.supports(_.O5.SIDECHAIN_COMPRESSION),
+                d = (0, i.bG)([V.Ay], () => V.Ay.getSidechainCompression()),
+                o = (0, i.bG)([V.Ay], () => V.Ay.getSidechainCompressionStrength()),
                 {
                     analyticsLocations: c
                 } = (0, A.Ay)();
-            return !t && n && s ? (0, l.jsxs)(r.rXV, {
-                children: [(0, l.jsx)(r.sLh, {
+            return !t && n && s ? (0, l.jsxs)(a.rXV, {
+                children: [(0, l.jsx)(a.sLh, {
                     id: "sidechain-compression",
-                    label: P.intl.string(P.t["/jwMtn"]),
-                    subtext: P.intl.string(P.t.zlA23F),
-                    action: () => a.A.setSidechainCompression(!o, {
+                    label: w.intl.string(w.t["/jwMtn"]),
+                    subtext: w.intl.string(w.t.zlA23F),
+                    action: () => r.A.setSidechainCompression(!d, {
                         analyticsLocations: c
                     }),
-                    checked: o
-                }), (0, l.jsx)(r.aK1, {
+                    checked: d
+                }), (0, l.jsx)(a.aK1, {
                     id: "sidechain-parameters",
-                    label: P.intl.string(P.t.fhEzfj),
-                    control: (e, n) => (0, l.jsx)(r.i42, {
+                    label: w.intl.string(w.t.fhEzfj),
+                    control: (e, n) => (0, l.jsx)(a.i42, {
                         ...e,
                         ref: n,
-                        value: d,
+                        value: o,
                         maxValue: 100,
-                        onChange: e => a.A.setSidechainCompressionStrength(e, {
+                        onChange: e => r.A.setSidechainCompressionStrength(e, {
                             analyticsLocations: c
                         }),
-                        "aria-label": P.intl.string(P.t.fhEzfj)
+                        "aria-label": w.intl.string(w.t.fhEzfj)
                     })
                 })]
             }) : null
-        }(Q),
-        es = (0, f.A)(Q, Y, Z),
-        eo = (0, p.A)(Q.channelId, Q.ownerId),
-        ed = (0, h.A)(Q.channelId),
-        ec = (0, g.A)(Q.channelId, (0, k._z)(Q)),
-        eu = (0, i.bG)([w.A], () => w.A.getChannel(Q.channelId), [Q.channelId]),
-        eA = (0, I.h)({
-            stream: Q,
-            channelId: Q.channelId
+        }(N),
+        en = (0, f.A)(N, B, J),
+        et = (0, p.A)(N.channelId, N.ownerId),
+        el = (0, g.A)(N.channelId),
+        ei = (0, h.A)(N.channelId, (0, T._z)(N)),
+        ea = (0, i.bG)([y.A], () => y.A.getChannel(N.channelId), [N.channelId]),
+        er = (0, I.h)({
+            stream: N,
+            channelId: N.channelId
         }),
-        eg = (0, m.u)({
-            userId: Q.ownerId,
-            channelId: Q.channelId,
-            guildId: Q.guildId,
-            minimal: $
+        es = (0, m.u)({
+            userId: N.ownerId,
+            channelId: N.channelId,
+            guildId: N.guildId,
+            minimal: W
         }),
         {
-            analyticsLocations: eh
+            analyticsLocations: ed
         } = (0, A.Ay)(u.A.STREAM_CONTEXT_MENU),
-        ep = (0, x.E)({
-            stream: Q,
-            handleGoLive: () => (0, V.A)(Q.guildId, Q.channelId, eh),
-            minimal: $,
-            appContext: Y
+        eo = (0, b.E)({
+            stream: N,
+            handleGoLive: () => (0, j.A)(N.guildId, N.channelId, ed),
+            minimal: W,
+            appContext: B
         });
-    return $ ? (0, l.jsx)(A.f5, {
-        value: eh,
-        children: (0, l.jsxs)(r.W1t, {
+    return W ? (0, l.jsx)(A.f5, {
+        value: ed,
+        children: (0, l.jsxs)(a.W1t, {
             "data-menu-migrated-auto": !0,
             navId: "stream-context",
             onClose: s.Z_,
-            "aria-label": P.intl.string(P.t.Gl3Q30),
+            "aria-label": w.intl.string(w.t.Gl3Q30),
             variant: "fixed",
-            onSelect: q,
-            onInteraction: K,
-            children: [(0, l.jsx)(r.rXV, {
-                children: ee ? ep : ei
-            }), (0, l.jsxs)(r.rXV, {
-                children: [er, el]
-            }), (0, l.jsx)(r.rXV, {
-                children: ec
-            }), ea, et ? (0, l.jsxs)(l.Fragment, {
-                children: [(0, l.jsx)(r.bXX, {}), (0, l.jsxs)(r.Drp, {
+            onSelect: H,
+            onInteraction: Q,
+            children: [(0, l.jsx)(a.rXV, {
+                children: Y ? eo : K
+            }), (0, l.jsxs)(a.rXV, {
+                children: [$, q]
+            }), (0, l.jsx)(a.rXV, {
+                children: ei
+            }), ee, Z ? (0, l.jsxs)(l.Fragment, {
+                children: [(0, l.jsx)(a.bXX, {}), (0, l.jsxs)(a.Drp, {
                     id: "more-options",
-                    label: P.intl.string(P.t.PdRCRg),
-                    children: [eo, eA, eg, es]
+                    label: w.intl.string(w.t.PdRCRg),
+                    children: [et, er, es, en]
                 })]
             }) : null]
         })
     }) : (0, l.jsx)(c.A, {
-        context: W,
-        object: U.ZSU.CONTEXT_MENU,
-        children: (0, l.jsxs)(r.W1t, {
+        context: O,
+        object: G.ZSU.CONTEXT_MENU,
+        children: (0, l.jsxs)(a.W1t, {
             "data-menu-migrated-auto": !0,
             navId: "stream-context",
             onClose: s.Z_,
-            "aria-label": P.intl.string(P.t.Gl3Q30),
+            "aria-label": w.intl.string(w.t.Gl3Q30),
             variant: "flexible",
-            onSelect: q,
-            onInteraction: K,
-            children: [(0, l.jsx)(r.rXV, {
+            onSelect: H,
+            onInteraction: Q,
+            children: [(0, l.jsx)(a.rXV, {
                 children: (0, l.jsxs)(l.Fragment, {
-                    children: [ei, en, er, eA, eg]
+                    children: [K, $, er, es]
                 })
-            }), (0, l.jsx)(r.rXV, {
-                children: el
-            }), (0, l.jsx)(r.rXV, {
-                children: ec
-            }), ea, (0, l.jsxs)(r.rXV, {
-                children: [eu?.isGuildStageVoice() ? null : ed, eo, et && es]
+            }), (0, l.jsx)(a.rXV, {
+                children: q
+            }), (0, l.jsx)(a.rXV, {
+                children: ei
+            }), ee, (0, l.jsxs)(a.rXV, {
+                children: [ea?.isGuildStageVoice() ? null : el, et, Z && en]
             })]
         })
     })

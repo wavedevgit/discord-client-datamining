@@ -124,7 +124,7 @@ let S = {
                             children: [(0, n.jsx)(i.DZT, {
                                 variant: "heading-xl/semibold",
                                 color: "always-white",
-                                children: A.intl.string(A.t["b3+OH1"])
+                                children: A.intl.string(A.t["z/QEIP"])
                             }), (0, n.jsx)(i.$nd, {
                                 variant: "overlay-primary",
                                 icon: i.I9m,

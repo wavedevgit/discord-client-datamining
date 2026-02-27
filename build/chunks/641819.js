@@ -32,7 +32,7 @@ function T(e) {
         setSelectedGiftingPromotionReward: g,
         selectedGiftingPromotionReward: A,
         claimableRewards: j
-    } = (0, _.Pv)(), f = (0, a.bG)([E.default], () => E.default.getCurrentUser()), M = (0, a.bG)([p.A], () => p.A.getGiftPromotionRewardSkuIds()), R = (0, c.U)(j, A), [y, C] = i.useState(R), [N, v] = i.useState(!1);
+    } = (0, _.Pv)(), f = (0, a.bG)([E.default], () => E.default.getCurrentUser()), M = (0, a.yK)([p.A], () => p.A.getGiftPromotionRewardSkuIds()), R = (0, c.U)(j, A), [y, C] = i.useState(R), [N, v] = i.useState(!1);
     i.useEffect(() => {
         N || null != A || null == R || (g(R), C(R))
     }, [R, N, A, g]), r()(null != n, "Expected plan to selected"), r()(null != s, "Expected selectedSkuId"), r()(null != T, "Step should be set");
