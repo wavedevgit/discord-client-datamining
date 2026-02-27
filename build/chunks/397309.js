@@ -4,8 +4,8 @@ s.d(t, {
 });
 var r = s(627968),
     l = s(64700),
-    a = s(503698),
-    n = s.n(a),
+    n = s(503698),
+    a = s.n(n),
     o = s(397927),
     i = s(938191),
     c = s(758836),
@@ -15,7 +15,7 @@ function d(e) {
     let {
         handleTransition: t,
         onClose: s
-    } = e, a = (0, i.yB)("CollectiblesIndexPageContextMenu"), d = l.useMemo(() => [{
+    } = e, n = (0, i.yB)("CollectiblesIndexPageContextMenu"), d = l.useMemo(() => [{
         label: u.intl.string(u.t.dRZYNE),
         value: c.G2.AVATAR_DECORATIONS
     }, {
@@ -32,14 +32,14 @@ function d(e) {
         value: c.G2.CATALOG
     }], []);
     return (0, r.jsx)("div", {
-        className: n()({
-            [i.jP]: a
+        className: a()({
+            [i.jP]: n
         }),
         children: (0, r.jsx)(o.W1t, {
             "data-menu-migrated": !0,
             navId: "collectibles-index-page-menu",
-            className: n()({
-                [i.jP]: a
+            className: a()({
+                [i.jP]: n
             }),
             onClose: s,
             "aria-label": u.intl.string(u.t.xFcotU),

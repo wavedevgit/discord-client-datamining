@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(311907),
-    r = n(397927),
-    a = n(688810),
+    a = n(397927),
+    r = n(688810),
     o = n(274372),
     c = n(572164),
     d = n(399925),
@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(709562),
     A = n(616356),
     p = n(961350),
-    g = n(313961),
-    m = n(384059),
+    m = n(313961),
+    g = n(384059),
     _ = n(806931),
     f = n(985018),
     x = n(342910);
@@ -26,7 +26,7 @@ function C(e) {
         channel: t
     } = e, {
         parentAnalyticsLocation: n
-    } = (0, a.Ay)(), C = (0, l.bG)([g.A], () => g.A.getSelectedParticipant(t.id)), E = C?.type === _.lp.STREAM, I = (0, l.bG)([A.A], () => E ? A.A.getActiveStreamForStreamKey(C.id) : null), {
+    } = (0, r.Ay)(), C = (0, l.bG)([m.A], () => m.A.getSelectedParticipant(t.id)), E = C?.type === _.lp.STREAM, I = (0, l.bG)([A.A], () => E ? A.A.getActiveStreamForStreamKey(C.id) : null), {
         ignoreSenderPreference: N
     } = u.A.useExperiment({
         location: "ActionBarClipsButton"
@@ -38,14 +38,14 @@ function C(e) {
     } = (0, l.cf)([o.A], () => ({
         viewerClippingAllowed: null != I && (o.A.isViewerClippingAllowedForUser(I.ownerId) || N),
         isAtMaxSavingClipOperations: o.A.getIsAtMaxSaveClipOperations()
-    })), T = (0, c.Et)(), y = I?.ownerId === p.default.getId(), v = !T || !(y || b) || S || null == C, j = s.useCallback(e => (0, i.jsx)(r.xpe, {
+    })), T = (0, c.Et)(), y = I?.ownerId === p.default.getId(), v = !T || !(y || b) || S || null == C, j = s.useCallback(e => (0, i.jsx)(a.xpe, {
         ...e,
         color: "currentColor"
     }), []);
     return (0, i.jsx)(h.A, {
         className: x.g,
         onClick: () => {
-            v || ((0, m.X)(n, m.O.CLIP), y ? (0, d.l0)() : (0, d.yd)(C.id))
+            v || ((0, g.X)(n, g.O.CLIP), y ? (0, d.l0)() : (0, d.yd)(C.id))
         },
         disabled: v,
         iconComponent: j,

@@ -8,8 +8,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(311907),
+    a = n.n(l),
+    r = n(311907),
     o = n(554146),
     c = n(990078),
     d = n(397927),
@@ -17,8 +17,8 @@ var i = n(627968),
     h = n(709066),
     A = n(47167),
     p = n(713654),
-    g = n(932001),
-    m = n(263063),
+    m = n(932001),
+    g = n(263063),
     _ = n(394953),
     f = n(976860),
     x = n(622543),
@@ -42,9 +42,9 @@ function G(e) {
     let {
         channel: t,
         children: n
-    } = e, s = (0, u.h)(t.linkedLobby?.application_id), [l, r] = (0, g.kn)([o.M.CHANNEL_LINKED_LOBBY_EDUCATION_TOOLTIP], void 0, !0);
+    } = e, s = (0, u.h)(t.linkedLobby?.application_id), [l, a] = (0, m.kn)([o.M.CHANNEL_LINKED_LOBBY_EDUCATION_TOOLTIP], void 0, !0);
     if (null == s) return null;
-    let a = b.Ay.getApplicationIconURL({
+    let r = b.Ay.getApplicationIconURL({
             id: s.id,
             icon: s.icon,
             size: 14
@@ -63,7 +63,7 @@ function G(e) {
                 })
             }), (0, i.jsx)(d.DUT, {
                 className: D.Q1,
-                onClick: () => r(L.i.USER_DISMISS),
+                onClick: () => a(L.i.USER_DISMISS),
                 children: (0, i.jsx)(d.PGe, {
                     className: D.U0,
                     color: "currentColor"
@@ -84,7 +84,7 @@ function G(e) {
                 color: "text-strong",
                 children: ["•", (0, i.jsx)("img", {
                     alt: "",
-                    src: a,
+                    src: r,
                     className: D.NB
                 }), s.name]
             })]
@@ -97,14 +97,14 @@ function U(e) {
         channel: t,
         channelName: n,
         parentChannel: l,
-        guild: a,
+        guild: r,
         inSidebar: o = !1,
         handleClick: c,
         handleContextMenu: u,
         handleParentClick: h,
-        handleParentContextMenu: g,
-        renderFollowButton: m
-    } = e, _ = (0, p.gU)(t, a), {
+        handleParentContextMenu: m,
+        renderFollowButton: g
+    } = e, _ = (0, p.gU)(t, r), {
         prefix: f,
         level: x
     } = function(e, t) {
@@ -138,7 +138,7 @@ function U(e) {
                     prefix: null, level: 1
                 }
         }
-    }(t.type, a), C = (0, i.jsxs)(i.Fragment, {
+    }(t.type, r), C = (0, i.jsxs)(i.Fragment, {
         children: [null != f ? (0, i.jsxs)(d.AC4, {
             children: [f, ":"]
         }) : null, " ", n]
@@ -178,7 +178,7 @@ function U(e) {
                     onContextMenu: u,
                     onClick: c,
                     children: C
-                }), null != m ? m() : null]
+                }), null != g ? g() : null]
             });
         case O.rbe.GUILD_VOICE:
             return (0, i.jsxs)(s.Fragment, {
@@ -203,13 +203,13 @@ function U(e) {
         case O.rbe.PRIVATE_THREAD:
             let I = null;
             if (!o && null != l) {
-                let e = (0, p.gU)(l, a);
+                let e = (0, p.gU)(l, r);
                 I = (0, i.jsxs)(s.Fragment, {
                     children: [k(e, M.intl.string(M.t.Pnajj0)), (0, i.jsx)(j.A.Title, {
                         level: x,
-                        onContextMenu: g,
+                        onContextMenu: m,
                         onClick: h,
-                        className: r()(D.rg, D.or),
+                        className: a()(D.rg, D.or),
                         children: (0, A.m1)(l, N.default, E.A)
                     }), (0, i.jsx)(j.A.Caret, {})]
                 })
@@ -220,14 +220,14 @@ function U(e) {
                     level: x,
                     onContextMenu: u,
                     onClick: c,
-                    className: r()({
+                    className: a()({
                         [D.or]: o
                     }),
                     children: C
                 })]
             });
         case O.rbe.GUILD_DIRECTORY:
-            let S = a?.features.has(O.GuildFeatures.HUB) ? M.intl.formatToPlainString(M.t.Dy2aht, {
+            let S = r?.features.has(O.GuildFeatures.HUB) ? M.intl.formatToPlainString(M.t.Dy2aht, {
                 guildName: n
             }) : n;
             return (0, i.jsxs)(s.Fragment, {
@@ -250,7 +250,7 @@ function U(e) {
 let P = e => {
     let {
         channel: t
-    } = e, n = (0, a.bG)([N.default], () => N.default.getCurrentUser()), l = (0, a.bG)([N.default], () => N.default.getUser(t.getRecipientId())), r = (0, a.bG)([x.A], () => null != l ? x.A.getUserProfile(l.id) : null), o = null != r && (r?.fetchEndedAt ?? 0) > 0;
+    } = e, n = (0, r.bG)([N.default], () => N.default.getCurrentUser()), l = (0, r.bG)([N.default], () => N.default.getUser(t.getRecipientId())), a = (0, r.bG)([x.A], () => null != l ? x.A.getUserProfile(l.id) : null), o = null != a && (a?.fetchEndedAt ?? 0) > 0;
     return (s.useEffect(() => {
         n?.isStaff() && null != l && !l.isStaff() && (0, C.A)(l.id, l.getAvatarURL(void 0, 80), {
             dispatchWait: !0,
@@ -259,7 +259,7 @@ let P = e => {
         })
     }, [n, l]), t.isDM() && n?.isStaff() && null != l) ? l.isStaff() ? (0, i.jsx)(h.A, {
         type: h.A.Types.STAFF_ONLY_DM
-    }) : o && !r.badges?.some(e => e.id.startsWith("staff")) ? (0, i.jsx)(h.A, {
+    }) : o && !a.badges?.some(e => e.id.startsWith("staff")) ? (0, i.jsx)(h.A, {
         type: h.A.Types.NOT_STAFF_WARNING
     }) : null : null
 };
@@ -304,8 +304,8 @@ function B(e) {
         guild: t,
         channel: n,
         caretPosition: l = "left"
-    } = e, r = (0, a.bG)([I.A], () => I.A.getGuildId()), o = (0, _.lI)(), u = s.useRef(null);
-    return (r === O.YYv || o) && null != t ? (0, i.jsx)(c.m, {
+    } = e, a = (0, r.bG)([I.A], () => I.A.getGuildId()), o = (0, _.lI)(), u = s.useRef(null);
+    return (a === O.YYv || o) && null != t ? (0, i.jsx)(c.m, {
         asContainer: !0,
         text: t.name,
         targetElementRef: u,
@@ -319,9 +319,9 @@ function B(e) {
                 direction: "left"
             }), (0, i.jsx)("div", {
                 ref: u,
-                children: (0, i.jsx)(m.Ay, {
+                children: (0, i.jsx)(g.Ay, {
                     guild: t,
-                    size: m.Ay.Sizes.SMALLER,
+                    size: g.Ay.Sizes.SMALLER,
                     className: D.gL,
                     active: !0
                 })

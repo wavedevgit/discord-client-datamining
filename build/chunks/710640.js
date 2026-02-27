@@ -1,8 +1,8 @@
 /** chunk id: 710640, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    fo: () => a,
-    uW: () => r,
+    fo: () => r,
+    uW: () => a,
     vr: () => c,
     z0: () => o
 });
@@ -16,11 +16,11 @@ function l(e, t) {
     }
 }
 
-function r() {
+function a() {
     return l(0, s.intl.string(s.t.uXA573))
 }
 
-function a() {
+function r() {
     return l(0, s.intl.string(s.t.kesTVT))
 }
 

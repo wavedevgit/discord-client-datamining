@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(110259),
-    r = n(121894),
-    a = n(311907),
+    a = n(121894),
+    r = n(311907),
     o = n(554146),
     c = n(933958),
     d = n(782091),
@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(313961),
     A = n(826673),
     p = n(855687),
-    g = n(267102),
-    m = n(733586),
+    m = n(267102),
+    g = n(733586),
     _ = n(530804),
     f = n(71393),
     x = n(576705),
@@ -38,26 +38,26 @@ function T(e) {
         inCall: R,
         totalNumberOfParticipants: O,
         popoutType: L
-    } = e, M = (0, g.Us)() === b.BRT.POPOUT, D = (0, a.bG)([f.A], () => f.A.getGuild(v.guild_id), [v.guild_id]), {
+    } = e, M = (0, m.Us)() === b.BRT.POPOUT, D = (0, r.bG)([f.A], () => f.A.getGuild(v.guild_id), [v.guild_id]), {
         dismissedActivityEntryPointTileChannel: G
-    } = (0, I.P)(), U = (0, a.bG)([h.A], () => h.A.getUserParticipantCount(v.id), [v]), P = (0, _.vp)(v.id, t), w = s.useCallback(() => {
-        (0, r.r)(() => {
+    } = (0, I.P)(), U = (0, r.bG)([h.A], () => h.A.getUserParticipantCount(v.id), [v]), P = (0, _.vp)(v.id, t), w = s.useCallback(() => {
+        (0, a.r)(() => {
             I.P.setState({
                 dismissedActivityEntryPointTileChannel: v.id
             })
         })
     }, [v.id]);
     s.useEffect(() => {
-        null != G && v.id !== G && (0, r.r)(() => {
+        null != G && v.id !== G && (0, a.r)(() => {
             I.P.setState({
                 dismissedActivityEntryPointTileChannel: null
             })
         })
     }, [v.id, G]);
-    let k = (0, a.bG)([x.A], () => v.isPrivate() || (0, p.K)(x.A, D, v), [D, v]),
+    let k = (0, r.bG)([x.A], () => v.isPrivate() || (0, p.K)(x.A, D, v), [D, v]),
         B = D?.afkChannelId === v.id,
         V = v.userLimit <= 0 || v.userLimit > 1,
-        H = (0, a.bG)([c.Ay], () => c.Ay.getEmbeddedActivitiesForChannel(v.id).length <= 0),
+        H = (0, r.bG)([c.Ay], () => c.Ay.getEmbeddedActivitiesForChannel(v.id).length <= 0),
         F = (0, A.JZ)(o.M.VC_TILE_ACTIVITIES_ENTRY_POINT),
         K = (0, d.et)(v.id) !== d.xy.CAN_LAUNCH,
         W = null != G && G === v.id,
@@ -104,7 +104,7 @@ function T(e) {
         userParticipantCount: U
     })));
     let z = s.useCallback(e => P[e]?.id ?? "empty-tile", [P]);
-    return (0, i.jsx)(m.A, {
+    return (0, i.jsx)(g.A, {
         className: j,
         keyExtractor: z,
         paddingTop: 64,

@@ -14,9 +14,9 @@ var n = l(989349),
 let E = {},
     _ = new Map,
     C = [],
-    f = [],
     S = [],
-    h = new Set,
+    h = [],
+    f = new Set,
     A = {},
     p = {},
     g = new Set;
@@ -36,24 +36,24 @@ function R(e) {
                 else {
                     let l = E[t];
                     if (null == l) return;
-                    l.start(Math.min(0x7fffffff, n), () => e(t))
+                    l.start(Math.min(u.mnr, n), () => e(t))
                 }
             }(l)
     }
 }
 
-function I(e) {
+function m(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
     if (t && !g.has(e.channel_id)) return !1;
     let l = (0, c.pF)(e) ? (0, c.e7)(e?.embeds != null ? e?.embeds[0].url : void 0) : (0, c.e7)(e.content);
     return 0 !== l.length && (l.forEach(e => {
-        C.includes(e) || S.includes(e) || (m({
+        C.includes(e) || h.includes(e) || (I({
             code: e
         }), o.h.wait(() => a.A.resolveGiftCode(e, !1, !0).catch(u.FXj)))
     }), !1)
 }
 
-function m(e) {
+function I(e) {
     let {
         code: t
     } = e;
@@ -64,7 +64,7 @@ function D(e) {
     let {
         message: t
     } = e;
-    return I(t, !0)
+    return m(t, !0)
 }
 
 function T(e) {
@@ -72,7 +72,7 @@ function T(e) {
         channelId: t,
         messages: l
     } = e;
-    g.add(t), l.forEach(e => I(e, !0))
+    g.add(t), l.forEach(e => m(e, !0))
 }
 
 function O(e) {
@@ -80,7 +80,7 @@ function O(e) {
         firstMessages: t
     } = e;
     if (null == t) return !1;
-    t?.forEach(e => I(e))
+    t?.forEach(e => m(e))
 }
 class G extends i.Ay.Store {
     static displayName = "GiftCodeStore";
@@ -98,13 +98,13 @@ class G extends i.Ay.Store {
         return C.includes(e)
     }
     getIsResolved(e) {
-        return S.includes(e)
+        return h.includes(e)
     }
     getIsAccepting(e) {
-        return f.includes(e)
+        return S.includes(e)
     }
     getUserGiftCodesFetchingForSKUAndPlan(e, t) {
-        return h.has((0, c.Kx)(e, t))
+        return f.has((0, c.Kx)(e, t))
     }
     getUserGiftCodesLoadedAtForSKUAndPlan(e, t) {
         return A[(0, c.Kx)(e, t)]
@@ -113,10 +113,10 @@ class G extends i.Ay.Store {
         return C
     }
     getResolvedCodes() {
-        return S
+        return h
     }
     getAcceptingCodes() {
-        return f
+        return S
     }
 }
 let x = new G(o.h, {
@@ -129,30 +129,30 @@ let x = new G(o.h, {
             } = e;
             return null != t && g.add(t), !1
         },
-        GIFT_CODE_RESOLVE: m,
+        GIFT_CODE_RESOLVE: I,
         GIFT_CODE_RESOLVE_SUCCESS: function(e) {
             let {
                 giftCode: t
             } = e;
-            return C = C.filter(e => e !== t.code), S.includes(t.code) || (S = [...S, t.code]), R(t)
+            return C = C.filter(e => e !== t.code), h.includes(t.code) || (h = [...h, t.code]), R(t)
         },
         GIFT_CODE_RESOLVE_FAILURE: function(e) {
             let {
                 code: t
             } = e;
-            C = C.filter(e => e !== t), S.includes(t) || (S = [...S, t])
+            C = C.filter(e => e !== t), h.includes(t) || (h = [...h, t])
         },
         GIFT_CODE_REDEEM: function(e) {
             let {
                 code: t
             } = e;
-            f.includes(t) || (f = [...f, t])
+            S.includes(t) || (S = [...S, t])
         },
         GIFT_CODE_REDEEM_SUCCESS: function(e) {
             let {
                 code: t
             } = e;
-            f = f.filter(e => e !== t);
+            S = S.filter(e => e !== t);
             let l = _.get(t);
             null != l && _.set(t, l.merge({
                 redeemed: !0,
@@ -164,7 +164,7 @@ let x = new G(o.h, {
                 code: t,
                 error: l
             } = e;
-            f = f.filter(e => e !== t);
+            S = S.filter(e => e !== t);
             let n = _.get(t);
             if (p[t] = l, null != n) switch (l.code) {
                 case u.t02.UNKNOWN_GIFT_CODE:
@@ -180,7 +180,7 @@ let x = new G(o.h, {
             } = e;
             _.delete(t);
             let l = E[t];
-            null != l && (l.stop(), delete E[t]), S.includes(t) || (S = [...S, t])
+            null != l && (l.stop(), delete E[t]), h.includes(t) || (h = [...h, t])
         },
         GIFT_CODE_CREATE_SUCCESS: function(e) {
             let {
@@ -193,7 +193,7 @@ let x = new G(o.h, {
                 skuId: t,
                 subscriptionPlanId: l
             } = e;
-            h.add((0, c.Kx)(t, l))
+            f.add((0, c.Kx)(t, l))
         },
         GIFT_CODES_FETCH_SUCCESS: function(e) {
             let {
@@ -203,14 +203,14 @@ let x = new G(o.h, {
             } = e;
             t.forEach(R);
             let r = (0, c.Kx)(l, n);
-            A[r] = Date.now(), h.delete(r)
+            A[r] = Date.now(), f.delete(r)
         },
         GIFT_CODES_FETCH_FAILURE: function(e) {
             let {
                 skuId: t,
                 subscriptionPlanId: l
             } = e;
-            h.delete((0, c.Kx)(t, l))
+            f.delete((0, c.Kx)(t, l))
         },
         MESSAGE_CREATE: D,
         MESSAGE_UPDATE: D,
@@ -221,7 +221,7 @@ let x = new G(o.h, {
             let {
                 messages: t
             } = e;
-            t.forEach(e => I(e))
+            t.forEach(e => m(e))
         },
         LOAD_PINNED_MESSAGES_SUCCESS: function(e) {
             let {
@@ -231,7 +231,7 @@ let x = new G(o.h, {
                 let {
                     message: t
                 } = e;
-                return I(t)
+                return m(t)
             })
         },
         SEARCH_MESSAGES_SUCCESS: function(e) {
@@ -243,7 +243,7 @@ let x = new G(o.h, {
                     messages: t
                 } = e;
                 t.forEach(e => {
-                    e.forEach(e => I(e))
+                    e.forEach(e => m(e))
                 })
             })
         },
@@ -264,7 +264,7 @@ let x = new G(o.h, {
                 let {
                     first_message: t
                 } = e;
-                return null != t && I(t)
+                return null != t && m(t)
             })
         }
     }),

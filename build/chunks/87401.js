@@ -6,29 +6,29 @@ n.d(t, {
 var i = n(311907),
     s = n(73153),
     l = n(988794);
-let r = {};
-class a extends i.Ay.PersistedStore {
+let a = {};
+class r extends i.Ay.PersistedStore {
     static displayName = "EventBannerStore";
     static persistKey = "EventBanner";
     initialize(e) {
-        null != e && (r = e.dismissedEventIds ?? {})
+        null != e && (a = e.dismissedEventIds ?? {})
     }
     isEventDismissed(e) {
-        return null != r[e]
+        return null != a[e]
     }
     getState() {
         return {
-            dismissedEventIds: r
+            dismissedEventIds: a
         }
     }
 }
-let o = new a(s.h, {
+let o = new r(s.h, {
     EVENT_BANNER_DISMISS: function(e) {
         let {
             eventId: t
         } = e;
-        r = {
-            ...r,
+        a = {
+            ...a,
             [t]: !0
         }
     },
@@ -36,20 +36,20 @@ let o = new a(s.h, {
         let {
             guildScheduledEvent: t
         } = e;
-        if (t.status !== l.XG.CANCELED && t.status !== l.XG.COMPLETED || null == r[t.id]) return !1;
+        if (t.status !== l.XG.CANCELED && t.status !== l.XG.COMPLETED || null == a[t.id]) return !1;
         let n = {
-            ...r
+            ...a
         };
-        delete n[t.id], r = n
+        delete n[t.id], a = n
     },
     GUILD_SCHEDULED_EVENT_DELETE: function(e) {
         let {
             guildScheduledEvent: t
         } = e;
-        if (null == r[t.id]) return !1;
+        if (null == a[t.id]) return !1;
         let n = {
-            ...r
+            ...a
         };
-        delete n[t.id], r = n
+        delete n[t.id], a = n
     }
 })

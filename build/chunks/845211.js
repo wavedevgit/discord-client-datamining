@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(311907),
-    r = n(73939),
-    a = n(397927),
+    a = n(73939),
+    r = n(397927),
     o = n(734057),
     c = n(131677),
     d = n(383501),
@@ -31,16 +31,16 @@ function A() {
                 channel: n
             }, n.id)
         }),
-        g = null == n && null != A ? e[A] : null;
-    return null != g && p.unshift((0, i.jsx)(u.A, {
-        channel: g
-    }, g.id)), (0, i.jsx)(a.BJc, {
+        m = null == n && null != A ? e[A] : null;
+    return null != m && p.unshift((0, i.jsx)(u.A, {
+        channel: m
+    }, m.id)), (0, i.jsx)(r.BJc, {
         id: "guild-list-unread-dms",
         role: "group",
         "aria-label": h.intl.string(h.t.YUU0RF),
         gap: "xs",
         hidden: p.length < 1,
-        children: (0, i.jsx)(r.F, {
+        children: (0, i.jsx)(a.F, {
             component: s.Fragment,
             children: p
         })

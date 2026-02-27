@@ -1,13 +1,13 @@
 /** chunk id: 96511, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => g
+    A: () => m
 });
 var i = n(284009),
     s = n.n(i),
     l = n(698441),
-    r = n(71393),
-    a = n(994500),
+    a = n(71393),
+    r = n(994500),
     o = n(287809),
     c = n(240248),
     d = n(427262),
@@ -31,11 +31,11 @@ function p(e) {
     })
 }
 
-function g(e) {
+function m(e) {
     let {
         item: t,
         renderApplication: n
-    } = e, i = t.other_user?.id ?? h.dJq, g = d.Ay.getName(o.default.getUser(t.other_user?.id)), m = t.applicationId;
+    } = e, i = t.other_user?.id ?? h.dJq, m = d.Ay.getName(o.default.getUser(t.other_user?.id)), g = t.applicationId;
     switch (t.type) {
         case u.Uo.FRIEND_REQUESTS_GROUPED:
             let _ = d.Ay.getName(o.default.getUser(t.other_users?.[0]?.id)),
@@ -50,13 +50,13 @@ function g(e) {
             let C = t.local_id?.split("_").pop() ?? "unknown";
             return `Update to build ${C} available!`;
         case u.hW.FRIEND_SUGGESTION_CREATED:
-            a.A.getRelationshipType(i), h.eA$.PENDING_OUTGOING;
+            r.A.getRelationshipType(i), h.eA$.PENDING_OUTGOING;
             break;
         case u.hW.GUILD_SCHEDULED_EVENT_STARTED:
             let E = t.guild_scheduled_event_id,
                 I = null != E ? l.Ay.getGuildScheduledEvent(E) : null,
                 N = I?.name,
-                b = r.A.getGuild(I?.guild_id)?.name,
+                b = a.A.getGuild(I?.guild_id)?.name,
                 S = (0, l.AZ)(I ?? void 0);
             return (0, c.uJ)(b) || (0, c.uJ)(N) || !S ? t.body ?? "" : A.intl.format(A.t.AyvfXR, {
                 event_name: N,
@@ -64,43 +64,43 @@ function g(e) {
             });
         case u.Uo.INCOMING_FRIEND_REQUESTS:
             return p({
-                username: g,
-                applicationId: m,
+                username: m,
+                applicationId: g,
                 renderApplication: n,
                 withApplication: A.t["9Dgf1L"],
                 withDefault: A.t.uIomXw
             });
         case u.Uo.INCOMING_FRIEND_REQUESTS_ACCEPTED:
             return p({
-                username: g,
-                applicationId: m,
+                username: m,
+                applicationId: g,
                 renderApplication: n,
                 withApplication: A.t.nnC1q9,
                 withDefault: A.t["5Uzkdp"]
             });
         case u.hW.FRIEND_REQUEST_ACCEPTED:
             return p({
-                username: g,
-                applicationId: m,
+                username: m,
+                applicationId: g,
                 renderApplication: n,
                 withApplication: A.t.jXlYiF,
                 withDefault: A.t.McYRBk
             });
         case u.Uo.INCOMING_GAME_FRIEND_REQUESTS_ACCEPTED:
-            return s()(null != m, `Expected application id for ${t.type}`), A.intl.format(A.t["BB/0vn"], {
-                username: g,
-                applicationName: () => n(m)
+            return s()(null != g, `Expected application id for ${t.type}`), A.intl.format(A.t["BB/0vn"], {
+                username: m,
+                applicationName: () => n(g)
             });
         case u.Uo.INCOMING_GAME_FRIEND_REQUESTS:
-            return s()(null != m, `Expected application id for ${t.type}`), A.intl.format(A.t["7cqOLI"], {
-                username: g,
-                applicationName: () => n(m)
+            return s()(null != g, `Expected application id for ${t.type}`), A.intl.format(A.t["7cqOLI"], {
+                username: m,
+                applicationName: () => n(g)
             });
         case u.hW.GAME_FRIEND_REQUEST_ACCEPTED:
-            if (null == m) return t.body;
+            if (null == g) return t.body;
             return A.intl.format(A.t.Wi64vN, {
-                username: g,
-                applicationName: () => n(m)
+                username: m,
+                applicationName: () => n(g)
             })
     }
     return t.body ?? ""

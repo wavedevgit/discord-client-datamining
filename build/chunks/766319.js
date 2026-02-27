@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(735438),
-    r = n(110259),
-    a = n(417597),
+    a = n(110259),
+    r = n(417597),
     o = n(397927),
     c = n(308368),
     d = n(139286),
@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(386467),
     A = n(760751),
     p = n(383501),
-    g = n(287809),
-    m = n(762370),
+    m = n(287809),
+    g = n(762370),
     _ = n(25528),
     f = n(652215),
     x = n(426127),
@@ -27,28 +27,28 @@ function I(e) {
     let t, {
             activity: n,
             channel: l,
-            userId: r
+            userId: a
         } = e,
         d = (0, u.YY)(n.application_id).data,
         [h, A] = s.useState(!1),
-        [g, m] = s.useState(0),
-        _ = (0, a.bG)([p.A], () => p.A.getChannelId() !== l.id);
+        [m, g] = s.useState(0),
+        _ = (0, r.bG)([p.A], () => p.A.getChannelId() !== l.id);
     async function I() {
-        m(1);
+        g(1);
         try {
             await c.A.sendActivityInvite({
                 type: f.xL.STREAM_REQUEST,
                 channelId: l.id,
                 activity: n,
-                content: `<@${r}>`,
+                content: `<@${a}>`,
                 location: "request to stream hover",
-                targetUserId: r
+                targetUserId: a
             })
         } catch (e) {
-            m(0);
+            g(0);
             return
         }
-        m(2)
+        g(2)
     }
     if (_ && (t = C.intl.string(x.default.qRXats)), n.type === f.$pd.PLAYING) {
         let e = d?.getIconURL(46);
@@ -75,11 +75,11 @@ function I(e) {
                     })]
                 })]
             }), (0, i.jsx)(o.Button, {
-                loading: 1 === g,
-                disabled: _ || 2 === g,
+                loading: 1 === m,
+                disabled: _ || 2 === m,
                 fullWidth: !0,
                 size: "sm",
-                text: 2 === g ? C.intl.string(x.default["8HU1M2"]) : C.intl.string(x.default.DKHhec),
+                text: 2 === m ? C.intl.string(x.default["8HU1M2"]) : C.intl.string(x.default.DKHhec),
                 onClick: I
             }), null != t && (0, i.jsx)(o.Text, {
                 className: E.H$,
@@ -95,15 +95,15 @@ function N(e) {
     let {
         userId: t,
         channel: n
-    } = e, o = (0, a.bG)([g.default], () => g.default.getUser(t)), c = (0, _.Ay)(t, n.guild_id), u = (0, m.A)(t, n.id), p = s.useMemo(() => l.uniqWith(c, (e, t) => {
+    } = e, o = (0, r.bG)([m.default], () => m.default.getUser(t)), c = (0, _.Ay)(t, n.guild_id), u = (0, g.A)(t, n.id), p = s.useMemo(() => l.uniqWith(c, (e, t) => {
         if (e.application_id === t.application_id) return !0;
         let n = A.A.searchGamesByName(e.name),
             i = new Set(A.A.searchGamesByName(t.name));
         return !!(n.length > 0 && n.length === i.size && n.every(e => i.has(e))) || e.name === t.name
     }), [c]), f = null == o || !u || 0 === p.length;
     return ((0, d.A)({
-        type: r.ImpressionTypes.POPOUT,
-        name: r.ImpressionNames.VOICE_USER_ACTIVITY_POPOUT,
+        type: a.ImpressionTypes.POPOUT,
+        name: a.ImpressionNames.VOICE_USER_ACTIVITY_POPOUT,
         properties: {}
     }, {
         disableTrack: f

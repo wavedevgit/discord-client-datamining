@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(397927),
-    r = n(323073),
-    a = n(58736),
+    a = n(323073),
+    r = n(58736),
     o = n(707539),
     c = n(617011),
     d = n(985018),
@@ -16,9 +16,9 @@ var i = n(627968),
 function h(e) {
     let {
         channel: t
-    } = e, [n, h] = s.useState(!1), A = s.useRef(null), p = (0, r.vL)(t), g = s.useCallback(() => {
+    } = e, [n, h] = s.useState(!1), A = s.useRef(null), p = (0, a.vL)(t), m = s.useCallback(() => {
         h(!1)
-    }, []), m = s.useCallback(() => {
+    }, []), g = s.useCallback(() => {
         n || (0, o.D3)("Popout"), h(!n)
     }, [n]);
     return (0, i.jsx)(l.YNO, {
@@ -28,13 +28,13 @@ function h(e) {
         align: "right",
         autoInvert: !1,
         shouldShow: n,
-        onRequestClose: g,
+        onRequestClose: m,
         renderPopout: function() {
             return (0, i.jsx)(l.lGe, {
                 children: (0, i.jsx)(c.A, {
                     className: u.T,
                     channel: t,
-                    onClose: g,
+                    onClose: m,
                     context: "popout"
                 })
             })
@@ -44,11 +44,11 @@ function h(e) {
             let {
                 isShown: n
             } = t;
-            return (0, i.jsx)(a.In, {
+            return (0, i.jsx)(r.In, {
                 ...e,
                 ref: A,
                 className: u.Kk,
-                onClick: m,
+                onClick: g,
                 icon: l.ysw,
                 "aria-label": d.intl.string(d.t.B2panI),
                 tooltip: n ? null : d.intl.string(d.t.B2panI),

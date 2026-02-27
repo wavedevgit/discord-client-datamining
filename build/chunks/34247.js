@@ -1,13 +1,13 @@
 /** chunk id: 34247, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => m
+    A: () => g
 });
 var i = n(627968),
     s = n(64700),
     l = n(696292),
-    r = n(397927),
-    a = n(533129),
+    a = n(397927),
+    r = n(533129),
     o = n(726845),
     c = n(837057),
     d = n(310419),
@@ -15,15 +15,15 @@ var i = n(627968),
     h = n(488995),
     A = n(324580),
     p = n(654487),
-    g = n(985018);
-let m = s.forwardRef(function(e, t) {
+    m = n(985018);
+let g = s.forwardRef(function(e, t) {
     let {
         selected: n,
-        onClick: m,
+        onClick: g,
         questId: _,
         className: f
     } = e, x = s.useCallback(() => {
-        (0, a.WL)({
+        (0, r.WL)({
             source: h.GlobalDiscoveryAnalyticsLocations.GUILDS_BAR_ICON
         });
         let e = void 0 !== _ ? h.GlobalDiscoveryTab.QUESTS : o.A.getField("selectedTab");
@@ -61,10 +61,10 @@ let m = s.forwardRef(function(e, t) {
         ref: t,
         className: f,
         onClick: () => {
-            x(), void 0 !== m && m()
+            x(), void 0 !== g && g()
         },
         selected: n,
-        tooltip: g.intl.string(g.t["4nEZLk"]),
-        icon: r.QGJ
+        tooltip: m.intl.string(m.t["4nEZLk"]),
+        icon: a.QGJ
     })
 })

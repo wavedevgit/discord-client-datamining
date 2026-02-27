@@ -8,15 +8,15 @@ var i = n(627968);
 n(64700);
 var s = n(116833),
     l = n(342494),
-    r = n(294726),
-    a = n(985018);
+    a = n(294726),
+    r = n(985018);
 
 function o(e) {
     let {
         title: t,
         body: n,
-        ctaText: r,
-        runningGameId: a,
+        ctaText: a,
+        runningGameId: r,
         targetElementRef: o,
         onClick: c,
         onClose: d
@@ -25,16 +25,16 @@ function o(e) {
         size: "lg",
         title: t,
         body: n,
-        graphic: null != a ? {
+        graphic: null != r ? {
             type: "dynamic",
             component: s.DynamicGraphicComponent.GAME_SERVER_GAME_INSTRUCTIONS_ASSET,
             props: {
-                gameId: a
+                gameId: r
             },
             aspectRatio: "6/4"
         } : void 0,
         actions: [{
-            text: r,
+            text: a,
             variant: "primary",
             onClick: c
         }],
@@ -51,11 +51,11 @@ function c(e) {
         ...n
     } = e;
     return (0, i.jsx)(o, {
-        title: a.intl.formatToPlainString(r.default.lKzVNu, {
+        title: r.intl.formatToPlainString(a.default.lKzVNu, {
             gameName: t
         }),
-        body: a.intl.string(r.default.qqjm8O),
-        ctaText: a.intl.string(r.default["eJg+Zm"]),
+        body: r.intl.string(a.default.qqjm8O),
+        ctaText: r.intl.string(a.default["eJg+Zm"]),
         ...n
     })
 }
@@ -66,11 +66,11 @@ function d(e) {
         ...n
     } = e;
     return (0, i.jsx)(o, {
-        title: a.intl.formatToPlainString(r.default.lwwiHE, {
+        title: r.intl.formatToPlainString(a.default.lwwiHE, {
             gameName: t
         }),
-        body: a.intl.string(r.default.B33GXN),
-        ctaText: a.intl.string(r.default["968/QC"]),
+        body: r.intl.string(a.default.B33GXN),
+        ctaText: r.intl.string(a.default["968/QC"]),
         ...n
     })
 }

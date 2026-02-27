@@ -7,7 +7,7 @@ var i = n(627968);
 n(64700);
 var s = n(442433);
 
-function l(e, t, l, r, a) {
+function l(e, t, l, a, r) {
     let o = l.getGuildId();
     return null != o ? (0, s.L3)(e, async () => {
         let {
@@ -18,9 +18,9 @@ function l(e, t, l, r, a) {
             user: t,
             channel: l,
             guildId: o,
-            onInteraction: e => a("GuildVoiceUserContextMenu", e)
+            onInteraction: e => r("GuildVoiceUserContextMenu", e)
         })
-    }, r) : (0, s.L3)(e, async () => {
+    }, a) : (0, s.L3)(e, async () => {
         let {
             default: e
         } = await n.e("43076").then(n.bind(n, 661455));
@@ -28,7 +28,7 @@ function l(e, t, l, r, a) {
             ...n,
             user: t,
             channel: l,
-            onInteraction: e => a("BaseVoiceUserContextMenu", e)
+            onInteraction: e => r("BaseVoiceUserContextMenu", e)
         })
-    }, r)
+    }, a)
 }

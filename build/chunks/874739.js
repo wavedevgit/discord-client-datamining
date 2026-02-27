@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(311907),
-    r = n(456412),
-    a = n(878549),
+    a = n(456412),
+    r = n(878549),
     o = n(313961),
     c = n(493387),
     d = n(235986),
@@ -15,17 +15,17 @@ var i = n(627968),
     h = n(203982),
     A = n(484191),
     p = n(665450),
-    g = n(526369),
-    m = n(699707),
+    m = n(526369),
+    g = n(699707),
     _ = n(713397),
     f = n(652215),
     x = n(806931),
     C = n(403264);
-let E = (0, r.A)(e => {
+let E = (0, a.A)(e => {
     let {
         participants: t,
         filteredParticipants: n,
-        selectedParticipant: r,
+        selectedParticipant: a,
         participantsVersion: E,
         layout: I,
         onSelectParticipant: N,
@@ -47,7 +47,7 @@ let E = (0, r.A)(e => {
     s.useEffect(() => {
         h._.dispatch(f.jej.REMEASURE_TARGET)
     }, [O, L, P.width, P.height]);
-    let w = s.useMemo(() => n.filter(e => e.type !== x.lp.ACTIVITY || !e.participants.some(e => (0, a.S)(e))), [n, E]),
+    let w = s.useMemo(() => n.filter(e => e.type !== x.lp.ACTIVITY || !e.participants.some(e => (0, r.S)(e))), [n, E]),
         k = (0, l.bG)([o.A], () => o.A.getVoiceParticipantsHidden(T.id), [T.id]);
     if (U?.channelId === T.id) return (0, i.jsx)(p.A, {
         height: L
@@ -69,7 +69,7 @@ let E = (0, r.A)(e => {
         participants: t,
         onContextMenu: b
     });
-    if (null == r) {
+    if (null == a) {
         if (0 === n.length) {
             let e = t.length > 0 && !k;
             return (0, i.jsx)(_.A, {
@@ -81,7 +81,7 @@ let E = (0, r.A)(e => {
             className: C.HA,
             justify: d.A.Justify.CENTER,
             align: d.A.Align.CENTER,
-            children: (0, i.jsx)(g.A, {
+            children: (0, i.jsx)(m.A, {
                 channel: T,
                 className: C.g9,
                 participants: w,
@@ -94,11 +94,11 @@ let E = (0, r.A)(e => {
             })
         })
     }
-    return (0, i.jsx)(m.A, {
+    return (0, i.jsx)(g.A, {
         onFullscreenParticipant: S,
         onContextMenuParticipant: b,
         onSelectParticipant: N,
-        selectedParticipant: r,
+        selectedParticipant: a,
         filteredParticipants: w,
         participants: t,
         popoutType: G,

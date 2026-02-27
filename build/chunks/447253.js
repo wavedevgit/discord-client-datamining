@@ -1,13 +1,13 @@
 /** chunk id: 447253, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => m
+    A: () => g
 });
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(311907),
+    a = n.n(l),
+    r = n(311907),
     o = n(397927),
     c = n(263063),
     d = n(71393),
@@ -19,9 +19,9 @@ function p(e) {
     let {
         guildId: t,
         animate: n
-    } = e, s = (0, a.bG)([d.A], () => d.A.getGuild(t), [t]), l = (0, o.rdh)(o.LU0.modules.guildbar.AVATAR_SIZE);
+    } = e, s = (0, r.bG)([d.A], () => d.A.getGuild(t), [t]), l = (0, o.rdh)(o.LU0.modules.guildbar.AVATAR_SIZE);
     return null == s ? (0, i.jsx)("div", {
-        className: r()(A.VL, A.zU),
+        className: a()(A.VL, A.zU),
         children: (0, i.jsx)(o.EpV, {
             color: "currentColor"
         })
@@ -36,14 +36,14 @@ function p(e) {
     })
 }
 
-function g(e) {
+function m(e) {
     let {
         folderNode: t,
         hovered: n,
         sorting: s
     } = e, {
         children: l
-    } = t, a = n && s, c = (0, i.jsx)("div", {
+    } = t, r = n && s, c = (0, i.jsx)("div", {
         className: A.hJ,
         children: (0, i.jsx)("div", {
             className: A.Eh,
@@ -64,25 +64,25 @@ function g(e) {
     });
     return (0, i.jsxs)("div", {
         "aria-hidden": !0,
-        className: r()({
-            [A.NG]: a,
-            [A.yd]: !a
+        className: a()({
+            [A.NG]: r,
+            [A.yd]: !r
         }),
-        children: [!a && c, d]
+        children: [!r && c, d]
     })
 }
 
-function m(e) {
+function g(e) {
     let {
         folderNode: t,
         expanded: n,
         sorting: l,
-        mediaState: r,
-        mentionCount: a = 0,
+        mediaState: a,
+        mentionCount: r = 0,
         isMentionLowImportance: c,
         tooltipName: d,
         folderGroupId: p,
-        folderButtonContent: m,
+        folderButtonContent: g,
         onClick: _,
         onContextMenu: f,
         onHoverChange: x,
@@ -97,7 +97,7 @@ function m(e) {
         l || T(!0), x?.(!0)
     }, [l, x]), v = s.useCallback(() => {
         l || T(!1), x?.(!1)
-    }, [l, x]), j = n || null == r ? null : (0, u.oi)(r), R = !n && a > 0 ? (0, u.wN)(a, c ? o.LU0.colors.BACKGROUND_MOD_STRONG.css : o.LU0.colors.BACKGROUND_FEEDBACK_NOTIFICATION.css) : null;
+    }, [l, x]), j = n || null == a ? null : (0, u.oi)(a), R = !n && r > 0 ? (0, u.wN)(r, c ? o.LU0.colors.BACKGROUND_MOD_STRONG.css : o.LU0.colors.BACKGROUND_FEEDBACK_NOTIFICATION.css) : null;
     return (0, i.jsx)(o.vN3, {
         children: (0, i.jsxs)(o.DUT, {
             className: A.H3,
@@ -119,7 +119,7 @@ function m(e) {
             children: [(0, i.jsx)(o.AC4, {
                 children: h.intl.formatToPlainString(h.t["90/DwM"], {
                     folderName: d,
-                    mentions: a
+                    mentions: r
                 })
             }), (0, i.jsx)(o.Qk9, {
                 "aria-hidden": !0,
@@ -127,14 +127,14 @@ function m(e) {
                 upperBadge: j,
                 lowerBadge: R,
                 lowerBadgeSize: {
-                    width: (0, o.o6S)(a)
+                    width: (0, o.o6S)(r)
                 },
                 children: (0, i.jsx)("div", {
                     className: A.vA,
-                    children: null != m ? (0, i.jsx)("div", {
+                    children: null != g ? (0, i.jsx)("div", {
                         className: A.hJ,
-                        children: m
-                    }) : (0, i.jsx)(g, {
+                        children: g
+                    }) : (0, i.jsx)(m, {
                         folderNode: t,
                         hovered: S,
                         sorting: l

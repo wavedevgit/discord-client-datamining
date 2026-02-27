@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(735438),
-    r = n.n(l),
-    a = n(311907),
+    a = n.n(l),
+    r = n(311907),
     o = n(397927),
     c = n(262763),
     d = n(753727),
@@ -15,14 +15,14 @@ var i = n(627968),
     h = n(406704),
     A = n(576705),
     p = n(977997),
-    g = n(203982),
-    m = n(58736),
+    m = n(203982),
+    g = n(58736),
     _ = n(652215),
     f = n(985018);
 let x = s.memo(function(e) {
     let {
         channel: t
-    } = e, n = (0, d.A)(), l = (0, a.bG)([p.A], () => p.A.isInChannel(t.id)), x = (0, a.bG)([p.A], () => !r().isEmpty(p.A.getVoiceStatesForChannel(t.id))), C = (0, a.bG)([A.A], () => A.A.can(_.xBc.CONNECT, t)), {
+    } = e, n = (0, d.A)(), l = (0, r.bG)([p.A], () => p.A.isInChannel(t.id)), x = (0, r.bG)([p.A], () => !a().isEmpty(p.A.getVoiceStatesForChannel(t.id))), C = (0, r.bG)([A.A], () => A.A.can(_.xBc.CONNECT, t)), {
         needSubscriptionToAccess: E
     } = (0, u.A)(t.id), I = (0, h.Id)(t), N = s.useCallback(() => {
         c.A.handleVoiceConnect({
@@ -32,14 +32,14 @@ let x = s.memo(function(e) {
             locked: !1
         })
     }, [t, l, E]);
-    return (s.useEffect(() => (g._.subscribe(_.jej.CALL_START, N), () => {
-        g._.unsubscribe(_.jej.CALL_START, N)
+    return (s.useEffect(() => (m._.subscribe(_.jej.CALL_START, N), () => {
+        m._.unsubscribe(_.jej.CALL_START, N)
     }), [N]), h.io.useExperiment({
         guildId: t.guild_id,
         location: "63250c_1"
     }, {
         autoTrackExposure: !1
-    }).enabled && !n && !l && C && I && t.isVocalThread()) ? (0, i.jsx)(m.Ay.Icon, {
+    }).enabled && !n && !l && C && I && t.isVocalThread()) ? (0, i.jsx)(g.Ay.Icon, {
         icon: o._jp,
         onClick: N,
         tooltip: x ? f.intl.string(f.t.fdEeb5) : f.intl.string(f.t.focH1t)

@@ -6,17 +6,17 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(735438),
-    o = n.n(a),
+    a = n.n(l),
+    r = n(735438),
+    o = n.n(r),
     c = n(311907),
     d = n(397927),
     u = n(730134),
     h = n(378570),
     A = n(863005),
     p = n(707539),
-    g = n(747926),
-    m = n(576705),
+    m = n(747926),
+    g = n(576705),
     _ = n(222823),
     f = n(287809),
     x = n(486020),
@@ -30,9 +30,9 @@ function S(e) {
     let {
         channel: t,
         isStandardGap: l = !1
-    } = e, a = (0, c.yK)([A.A, _.Ay, m.A], () => {
+    } = e, r = (0, c.yK)([A.A, _.Ay, g.A], () => {
         let e = A.A.getActiveJoinedRelevantThreadsForParent(t.guild_id, t.id);
-        return o()(A.A.getActiveJoinedThreadsForParent(t.guild_id, t.id)).values().map(e => e.channel).concat(o().values(A.A.getActiveUnjoinedThreadsForParent(t.guild_id, t.id))).filter(t => !(t.id in e) && m.A.can(E.xBc.VIEW_CHANNEL, t)).sort((e, t) => {
+        return o()(A.A.getActiveJoinedThreadsForParent(t.guild_id, t.id)).values().map(e => e.channel).concat(o().values(A.A.getActiveUnjoinedThreadsForParent(t.guild_id, t.id))).filter(t => !(t.id in e) && g.A.can(E.xBc.VIEW_CHANNEL, t)).sort((e, t) => {
             let n = _.Ay.lastMessageId(e.id),
                 i = _.Ay.lastMessageId(t.id);
             return C.default.compare(n, i)
@@ -41,7 +41,7 @@ function S(e) {
     return s.useEffect(() => {
         (0, p.TE)()
     }, []), (0, i.jsxs)("div", {
-        className: r()(b.SW, {
+        className: a()(b.SW, {
             [b.iA]: l
         }),
         children: [(0, i.jsx)(d.Text, {
@@ -49,7 +49,7 @@ function S(e) {
             variant: "text-xs/bold",
             color: "text-default",
             children: t.isForumLikeChannel() ? N.intl.string(N.t.ioVdO2) : N.intl.string(N.t.VNYs2v)
-        }), a.slice(0, t.isForumLikeChannel() ? a.length : u).map(e => (0, i.jsx)(T, {
+        }), r.slice(0, t.isForumLikeChannel() ? r.length : u).map(e => (0, i.jsx)(T, {
             thread: e
         }, e.id)).filter(e => s.isValidElement(e)).slice(0, u), (0, i.jsx)(d.DUT, {
             className: b.OS,
@@ -80,7 +80,7 @@ function T(e) {
     return (0, i.jsxs)(d.DUT, {
         className: b.nM,
         onClick: e => {
-            (0, g.JA)(t, t.isForumPost() ? e.shiftKey : !e.shiftKey, I.H9.POPOUT)
+            (0, m.JA)(t, t.isForumPost() ? e.shiftKey : !e.shiftKey, I.H9.POPOUT)
         },
         children: [null == n ? (0, i.jsx)("img", {
             className: b.my,

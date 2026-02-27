@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(575593),
+    a = n.n(l),
+    r = n(575593),
     o = n(635358),
     c = n(417597),
     d = n(554146),
@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(342494),
     A = n(435371),
     p = n(793574),
-    g = n(688810),
-    m = n(587895),
+    m = n(688810),
+    g = n(587895),
     _ = n(576030),
     f = n(932001),
     x = n(44120),
@@ -39,7 +39,7 @@ let G = s.forwardRef(function(e, t) {
     let {
         sku: n,
         wishlistOwner: l,
-        wishlistId: a,
+        wishlistId: r,
         style: o,
         tooltipTypeTitle: c,
         showTypeTooltip: d,
@@ -47,15 +47,15 @@ let G = s.forwardRef(function(e, t) {
         skuPreviewStyle: h,
         onClick: p
     } = e, {
-        trackUserProfileWishlistAction: g
-    } = (0, I.NJ)(), m = s.useCallback(() => {
-        g({
+        trackUserProfileWishlistAction: m
+    } = (0, I.NJ)(), g = s.useCallback(() => {
+        m({
             action: O.Mq.PRESS_WISHLIST_BREADCRUMB_CARD,
             skuId: n.id,
-            wishlistId: a,
+            wishlistId: r,
             productLines: new Set([n.productLine])
         }), p()
-    }, [n, a, p, g]), _ = s.useMemo(() => d ? c : L.intl.string(L.t.pLPjsb), [d, c]), f = s.useMemo(() => d ? L.intl.string(L.t.ilhtIa) : "", [d]);
+    }, [n, r, p, m]), _ = s.useMemo(() => d ? c : L.intl.string(L.t.pLPjsb), [d, c]), f = s.useMemo(() => d ? L.intl.string(L.t.ilhtIa) : "", [d]);
     return (0, i.jsx)("div", {
         className: M.kL,
         ref: t,
@@ -72,9 +72,9 @@ let G = s.forwardRef(function(e, t) {
                     sku: n,
                     user: l,
                     spec: T.Z.SIZE_90,
-                    cardStyle: r()(M.Nr, M.Q1, o),
-                    skuPreviewStyle: r()(M.ho, h),
-                    onClick: m
+                    cardStyle: a()(M.Nr, M.Q1, o),
+                    skuPreviewStyle: a()(M.ho, h),
+                    onClick: g
                 })
             })
         })
@@ -117,12 +117,12 @@ function P(e) {
         sku: t,
         wishlistOwner: n,
         index: l,
-        onViewWishlist: r,
-        analyticsLocations: a,
+        onViewWishlist: a,
+        analyticsLocations: r,
         ...o
-    } = e, h = (0, c.bG)([m.A], () => m.A.getApplication(t.applicationId)), {
+    } = e, h = (0, c.bG)([g.A], () => g.A.getApplication(t.applicationId)), {
         analyticsLocations: A
-    } = (0, g.Ay)(...a ?? [], p.A.SLAYER_STOREFRONT_BREADCRUMB_WISHLIST_ITEM_CARD_GIFT_BUTTON), x = (0, C.Jw)({
+    } = (0, m.Ay)(...r ?? [], p.A.SLAYER_STOREFRONT_BREADCRUMB_WISHLIST_ITEM_CARD_GIFT_BUTTON), x = (0, C.Jw)({
         location: "dm-side-panel-social-layer-storefront-wishlist-item-card"
     }), I = (0, u.useHasAnyModalOpen)(), b = (0, c.bG)([N.A], () => N.A.hasLayers()), [S, T] = (0, f.kn)(!x || 0 !== l || t.applicationId !== R.XR || I || b ? [] : [d.M.GAME_SHOP_WISHLIST_POPOVER], v.m.SIDEBAR, !0), y = s.useRef(null), O = s.useCallback(() => {
         T(v.i.USER_DISMISS), (0, E.a)(t, {
@@ -135,14 +135,14 @@ function P(e) {
     }, [T, t, n, A]), M = s.useCallback(() => {
         T(v.i.USER_DISMISS)
     }, [T]), D = s.useCallback(() => {
-        T(v.i.USER_DISMISS), r()
-    }, [r, T]);
+        T(v.i.USER_DISMISS), a()
+    }, [a, T]);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(G, {
             ref: y,
             sku: t,
             index: l,
-            onViewWishlist: r,
+            onViewWishlist: a,
             analyticsLocations: A,
             wishlistOwner: n,
             onClick: O,
@@ -177,12 +177,12 @@ function w(e) {
         })
     }, [t.id, n, l]), h = s.useMemo(() => {
         switch (t?.tenantMetadata?.collectibles?.type) {
-            case a.R.PROFILE_EFFECT:
+            case r.R.PROFILE_EFFECT:
                 return;
-            case a.R.AVATAR_DECORATION:
-                return r()(M.ML, M._P);
+            case r.R.AVATAR_DECORATION:
+                return a()(M.ML, M._P);
             default:
-                return r()(M.ML, M.ZY)
+                return a()(M.ML, M.ZY)
         }
     }, [t?.tenantMetadata?.collectibles?.type]);
     return (0, i.jsx)(G, {

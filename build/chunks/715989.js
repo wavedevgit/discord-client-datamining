@@ -1,12 +1,12 @@
 /** chunk id: 715989, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => r
+    A: () => a
 });
 var i = n(627968),
     s = n(837921),
     l = n(651761);
-let r = s.Ay.getEnableHardwareAcceleration() ? function() {
+let a = s.Ay.getEnableHardwareAcceleration() ? function() {
     return (0, i.jsx)("div", {
         children: (0, i.jsxs)("div", {
             className: l.pm,

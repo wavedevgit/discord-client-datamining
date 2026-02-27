@@ -7,8 +7,8 @@ var i = n(627968);
 n(64700);
 var s = n(311907),
     l = n(397927),
-    r = n(604681),
-    a = n(672385),
+    a = n(604681),
+    r = n(672385),
     o = n(950191),
     c = n(168015),
     d = n(761640),
@@ -20,17 +20,17 @@ function p(e) {
     let {
         channel: t,
         showCallOrActivityPanel: n
-    } = e, p = (0, s.bG)([d.Ay], () => d.Ay.getSection(t.id, t?.isDM())), g = (0, o.Ay)(t.getRecipientId()), m = (0, c.A)(), _ = p === h.YvQ.PROFILE && m;
+    } = e, p = (0, s.bG)([d.Ay], () => d.Ay.getSection(t.id, t?.isDM())), m = (0, o.Ay)(t.getRecipientId()), g = (0, c.A)(), _ = p === h.YvQ.PROFILE && g;
     return (0, i.jsx)(u.In, {
-        disabled: !m || n,
-        tooltip: !m || n ? A.intl.string(A.t.YneDgF) : _ ? A.intl.string(A.t.niD64e) : A.intl.string(A.t["+FAsHq"]),
+        disabled: !g || n,
+        tooltip: !g || n ? A.intl.string(A.t.YneDgF) : _ ? A.intl.string(A.t.niD64e) : A.intl.string(A.t["+FAsHq"]),
         icon: l.nRI,
         onClick: () => {
-            (0, a.am)({
-                displayProfile: g,
+            (0, r.am)({
+                displayProfile: m,
                 isProfileOpen: !_
-            }), r.A.toggleUserProfileSidebarSection()
+            }), a.A.toggleUserProfileSidebarSection()
         },
-        selected: _ && m && !n
+        selected: _ && g && !n
     })
 }

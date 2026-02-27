@@ -2,9 +2,9 @@
 i.d(e, {
     m: () => d
 });
-var a = i(627968);
+var n = i(627968);
 i(64700);
-var n = i(158954),
+var a = i(158954),
     s = i(397927),
     l = i(665711),
     r = i(41032),
@@ -20,35 +20,35 @@ function d(t) {
         onClose: _,
         hasAlreadyLinked: x,
         canStartAuthorization: m,
-        bodyText: f,
-        title: p
+        bodyText: p,
+        title: f
     } = t;
-    return (0, a.jsxs)(n.dWK, {
+    return (0, n.jsxs)(a.dWK, {
         transitionState: d,
         onClose: _,
-        children: [(0, a.jsx)(r.z, {
+        children: [(0, n.jsx)(r.z, {
             sku: e,
-            title: p
-        }), (0, a.jsxs)(n.cwr, {
-            children: [(0, a.jsxs)("div", {
+            title: f
+        }), (0, n.jsxs)(a.cwr, {
+            children: [(0, n.jsxs)("div", {
                 className: o.S3,
-                children: [(0, a.jsx)(s.Text, {
+                children: [(0, n.jsx)(s.Text, {
                     variant: "text-md/normal",
                     color: "text-subtle",
                     className: o.jJ,
-                    children: f
-                }), (0, a.jsx)(u, {
+                    children: p
+                }), (0, n.jsx)(u, {
                     isConnected: x,
                     application: i
                 })]
-            }), !m && !x && (0, a.jsx)(s.Text, {
+            }), !m && !x && (0, n.jsx)(s.Text, {
                 variant: "text-md/normal",
                 className: o.tl,
                 color: "text-feedback-warning",
                 children: c.intl.string(c.t.GDL8wb)
-            }), !x && (0, a.jsx)("div", {
+            }), !x && (0, n.jsx)("div", {
                 className: o.ZT,
-                children: (0, a.jsx)(s.Text, {
+                children: (0, n.jsx)(s.Text, {
                     variant: "text-xs/normal",
                     color: "text-subtle",
                     children: c.intl.formatToPlainString(c.t.TTj7ME, {
@@ -56,7 +56,7 @@ function d(t) {
                     })
                 })
             })]
-        }), (0, a.jsx)(n.H7u, {
+        }), (0, n.jsx)(a.H7u, {
             actions: [l],
             actionsFullWidth: !0
         })]
@@ -68,35 +68,35 @@ function u(t) {
         isConnected: e,
         application: i
     } = t;
-    return e ? (0, a.jsx)("div", {
+    return e ? (0, n.jsx)("div", {
         className: o.II,
-        children: (0, a.jsxs)("div", {
+        children: (0, n.jsxs)("div", {
             className: o.jf,
-            children: [(0, a.jsxs)("div", {
+            children: [(0, n.jsxs)("div", {
                 className: o.iN,
-                children: [(0, a.jsx)("div", {
+                children: [(0, n.jsx)("div", {
                     className: o.I8,
-                    children: (0, a.jsx)(n.Uzd, {
+                    children: (0, n.jsx)(a.Uzd, {
                         size: "xs",
                         color: "currentColor"
                     })
-                }), (0, a.jsx)(s.Text, {
+                }), (0, n.jsx)(s.Text, {
                     variant: "text-md/normal",
                     className: o.qS,
                     color: "text-subtle",
                     children: c.intl.string(c.t["LV+CXH"])
                 })]
-            }), (0, a.jsx)("div", {
+            }), (0, n.jsx)("div", {
                 className: o.vA,
-                children: (0, a.jsx)(l.W, {
+                children: (0, n.jsx)(l.W, {
                     application: i,
                     iconSize: 20
                 })
             })]
         })
-    }) : (0, a.jsx)(n.wx6, {
+    }) : (0, n.jsx)(a.wx6, {
         type: "warning",
-        children: (0, a.jsx)(s.Text, {
+        children: (0, n.jsx)(s.Text, {
             variant: "text-sm/medium",
             children: c.intl.string(c.t.Plv1Xk)
         })

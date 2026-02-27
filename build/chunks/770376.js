@@ -7,13 +7,13 @@ n.d(t, {
 var i = n(554146),
     s = n(506774),
     l = n(367727),
-    r = n(927813),
-    a = n(49999);
+    a = n(927813),
+    r = n(49999);
 let o = "doNotShowReorderModal";
 
 function c() {
     (0, l.uh)(i.M.CHANNEL_REORDER_MODAL_DISMISS_SETTING, {
-        dismissAction: a.i.USER_DISMISS
+        dismissAction: r.i.USER_DISMISS
     })
 }
 
@@ -22,7 +22,7 @@ function d() {
     let {
         isDismissed: e
     } = (0, l.FZ)(i.M.CHANNEL_REORDER_MODAL_DISMISS_SETTING, {
-        cooldownDurationMs: r.A.Millis.WEEK
+        cooldownDurationMs: a.A.Millis.WEEK
     });
     return !e
 }

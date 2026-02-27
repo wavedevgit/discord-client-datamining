@@ -1,6 +1,6 @@
 /** chunk id: 897288, original params: e,t,l (module,exports,require) **/
 l.d(t, {
-    A: () => S
+    A: () => h
 });
 var n = l(627968),
     r = l(64700),
@@ -14,15 +14,15 @@ var n = l(627968),
     E = l(7864),
     _ = l(652215),
     C = l(985018),
-    f = l(420206);
+    S = l(420206);
 
-function S(e) {
+function h(e) {
     let {
         guild: t,
         roles: l,
         className: i
-    } = e, S = r.useMemo(() => `invite-roles-${(0,o.A)()}`, []), h = (0, a.Ay)({
-        id: S,
+    } = e, h = r.useMemo(() => `invite-roles-${(0,o.A)()}`, []), f = (0, a.Ay)({
+        id: h,
         isEnabled: !0,
         scrollToStart: _.js$,
         scrollToEnd: _.js$,
@@ -34,7 +34,7 @@ function S(e) {
             numRoles: p
         });
     return (0, n.jsx)(d.hD, {
-        navigator: h,
+        navigator: f,
         children: (0, n.jsx)(d.PR, {
             children: e => {
                 let {
@@ -42,19 +42,19 @@ function S(e) {
                     ...r
                 } = e;
                 return (0, n.jsxs)("div", {
-                    className: s()(f.zr, i),
+                    className: s()(S.zr, i),
                     children: [(0, n.jsx)(c.Text, {
                         variant: "text-sm/semibold",
                         color: "text-default",
-                        className: f.Ed,
+                        className: S.Ed,
                         children: C.intl.string(C.t.stcSfI)
                     }), (0, n.jsx)("div", {
-                        className: f.Ei,
+                        className: S.Ei,
                         "aria-label": g,
                         ref: l,
                         ...r,
                         children: A.map(e => (0, n.jsx)(u.b_, {
-                            className: f.Yq,
+                            className: S.Yq,
                             role: e,
                             canRemove: !1,
                             onRemove: () => {},

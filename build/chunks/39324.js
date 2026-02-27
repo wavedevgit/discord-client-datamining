@@ -1,7 +1,7 @@
 /** chunk id: 39324, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => a
+    A: () => r
 });
 var i = n(353640),
     s = n(849077);
@@ -11,13 +11,13 @@ let l = {
         [s.Ur.YESTERDAY]: !0,
         [s.Ur.OLDER]: !0
     },
-    r = {
+    a = {
         [s.Ur.UNREAD]: !0,
         [s.Ur.TODAY]: !1,
         [s.Ur.YESTERDAY]: !1,
         [s.Ur.OLDER]: !1
     },
-    a = (0, i.v)((e, t) => ({
+    r = (0, i.v)((e, t) => ({
         messageCategoryOpenStates: l,
         getOpenState: e => t().messageCategoryOpenStates[e],
         toggleOpenState: t => {
@@ -30,7 +30,7 @@ let l = {
         },
         setOpenStateFromUnreads: t => {
             e({
-                messageCategoryOpenStates: t ? r : l
+                messageCategoryOpenStates: t ? a : l
             })
         }
     }))

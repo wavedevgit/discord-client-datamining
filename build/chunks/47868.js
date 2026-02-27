@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(732955),
+    a = n.n(l),
+    r = n(732955),
     o = n(397927),
     c = n(985018),
     d = n(67170);
@@ -21,18 +21,18 @@ function u(e) {
         description: h,
         userCount: A,
         onClick: p,
-        highlight: g,
-        onDismiss: m
+        highlight: m,
+        onDismiss: g
     } = e, _ = s.useCallback(e => {
-        e.stopPropagation(), m?.()
-    }, [m]);
+        e.stopPropagation(), g?.()
+    }, [g]);
     return (0, i.jsxs)(o.DUT, {
-        className: r()(d.kL, t, null != g && {
-            [d.U6]: g
+        className: a()(d.kL, t, null != m && {
+            [d.U6]: m
         }),
         onClick: p,
         children: [(0, i.jsx)("div", {
-            className: r()(d.Kk, n),
+            className: a()(d.Kk, n),
             children: l
         }), (0, i.jsxs)("div", {
             className: d.FS,
@@ -60,9 +60,9 @@ function u(e) {
                     })
                 })]
             }) : null]
-        }), null != m ? (0, i.jsx)("div", {
+        }), null != g ? (0, i.jsx)("div", {
             className: d.r,
-            children: (0, i.jsx)(a.JnF, {
+            children: (0, i.jsx)(r.JnF, {
                 size: "xs",
                 onClick: _
             })

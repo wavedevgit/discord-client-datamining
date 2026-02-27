@@ -14,8 +14,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(512750),
+    a = n.n(l),
+    r = n(512750),
     o = n(158954),
     c = n(311907),
     d = n(116833),
@@ -23,8 +23,8 @@ var i = n(627968),
     h = n(775602),
     A = n(793574),
     p = n(688810),
-    g = n(509536),
-    m = n(987144),
+    m = n(509536),
+    g = n(987144),
     _ = n(976860),
     f = n(71393),
     x = n(204017),
@@ -60,7 +60,7 @@ function H(e) {
     } = e;
     return (0, i.jsx)(Q, {
         asset: (0, i.jsx)(T.b, {
-            className: r()(P.Sl, P.SV)
+            className: a()(P.Sl, P.SV)
         }),
         title: U.intl.formatToPlainString(G.default["Zg/m9K"], {
             perkName: n.title
@@ -114,7 +114,7 @@ function K(e) {
         powerups: n,
         channelRowRef: s,
         markAsDismissed: l
-    } = e, a = (0, c.bG)([f.A], () => f.A.getGuild(t)?.name), {
+    } = e, r = (0, c.bG)([f.A], () => f.A.getGuild(t)?.name), {
         onActivate: o,
         isLoading: d,
         error: u
@@ -129,25 +129,25 @@ function K(e) {
         }) : U.intl.formatToPlainString(G.default.ZF8NT6, {
             perk: n[0].title
         }),
-        g = 1 === n.length;
+        m = 1 === n.length;
     return (0, i.jsx)(Q, {
         size: 1 === n.length ? "video" : "lg",
         asset: n.length > 1 ? (0, i.jsx)(T.b, {
-            className: r()(P.Sl, P.SV)
+            className: a()(P.Sl, P.SV)
         }) : (0, i.jsx)("img", {
             alt: "",
             src: h,
             className: P.Sl
         }),
         title: U.intl.formatToPlainString(G.default.LmpChE, {
-            guildName: a
+            guildName: r
         }),
         body: p,
         actions: [{
-            text: g ? U.intl.string(G.default.gSxlHf) : U.intl.string(U.t.RzWDqY),
+            text: m ? U.intl.string(G.default.gSxlHf) : U.intl.string(U.t.RzWDqY),
             variant: "primary",
             onClick: e => {
-                e.stopPropagation(), g ? o() : (0, S.A)(t, A.A.GUILD_POWERUPS_COACHMARK_PURCHASEABLE_PERKS)
+                e.stopPropagation(), m ? o() : (0, S.A)(t, A.A.GUILD_POWERUPS_COACHMARK_PURCHASEABLE_PERKS)
             },
             loading: d
         }],
@@ -162,8 +162,8 @@ function W(e) {
         powerups: n,
         channelRowRef: s,
         markAsDismissed: l
-    } = e, r = n.find(e => e.skuId === a.FB);
-    if (null != r) return (0, i.jsx)(Q, {
+    } = e, a = n.find(e => e.skuId === r.FB);
+    if (null != a) return (0, i.jsx)(Q, {
         targetElementRef: s,
         title: U.intl.string(G.default.Ygpx4Q),
         body: U.intl.string(G.default.mmNkUA),
@@ -173,7 +173,7 @@ function W(e) {
             text: U.intl.string(U.t.RzWDqY),
             variant: "primary",
             onClick: () => {
-                (0, S.A)(t, A.A.GUILD_POWERUPS_COACHMARK_NEW_PERK_AVAILABLE, r.skuId)
+                (0, S.A)(t, A.A.GUILD_POWERUPS_COACHMARK_NEW_PERK_AVAILABLE, a.skuId)
             }
         }],
         markAsDismissed: l
@@ -225,9 +225,9 @@ function Y(e) {
         markAsDismissed: s,
         channelRowRef: l
     } = e, {
-        available: r
+        available: a
     } = (0, N.A)(t), {
-        gameName: a,
+        gameName: r,
         gameName2: d
     } = (0, x.A)(), u = (0, c.bG)([h.A], () => h.A.useReducedMotion);
     return (0, i.jsx)(Q, {
@@ -241,10 +241,10 @@ function Y(e) {
         }),
         title: U.intl.string(n === E.o.GAME_SERVER_HOSTING_AVAILABLE ? D.default.wXLChx : D.default["8z8RpY"]),
         body: n === E.o.GAME_SERVER_HOSTING_AVAILABLE ? U.intl.formatToPlainString(D.default.sj2nIF, {
-            gameName: a,
+            gameName: r,
             gameName2: d
         }) : U.intl.format(D.default["IQ1E+d"], {
-            boostCount: r
+            boostCount: a
         }),
         actions: [{
             text: U.intl.string(U.t.RzWDqY),
@@ -290,8 +290,8 @@ function X(e) {
         channelRowRef: s
     } = e, {
         gameName: l,
-        gameName2: r
-    } = (0, x.A)(), a = (0, c.bG)([h.A], () => h.A.useReducedMotion);
+        gameName2: a
+    } = (0, x.A)(), r = (0, c.bG)([h.A], () => h.A.useReducedMotion);
     return (0, i.jsx)(Q, {
         size: "video",
         targetElementRef: s,
@@ -305,18 +305,18 @@ function X(e) {
             withReducedMotion: "halt",
             fit: "contain",
             className: P.Sl,
-            stateMachine: a ? "SM_Main_Int" : "SM_Auto"
+            stateMachine: r ? "SM_Main_Int" : "SM_Auto"
         }),
         title: U.intl.string(D.default.t3LNW1),
         body: U.intl.formatToPlainString(D.default.V9qFAU, {
             gameName: l,
-            gameName2: r
+            gameName2: a
         }),
         actions: [{
             text: U.intl.string(D.default.k0Y0BE),
             variant: "primary",
             onClick: () => {
-                n(M.i.TAKE_ACTION), (0, g.K)({
+                n(M.i.TAKE_ACTION), (0, m.K)({
                     guildId: t,
                     location: {
                         section: O.JJy.GUILD_HEADER,
@@ -335,10 +335,10 @@ function q(e) {
         guildId: t,
         powerup: n,
         channelRowRef: l,
-        markAsDismissed: r
+        markAsDismissed: a
     } = e, {
-        available: a
-    } = (0, N.A)(t), o = n.cost - a, c = (0, I.A)(n, !0), {
+        available: r
+    } = (0, N.A)(t), o = n.cost - r, c = (0, I.A)(n, !0), {
         analyticsLocations: d
     } = (0, p.Ay)(A.A.GUILD_POWERUPS_COACHMARK_BOOST_TO_UNLOCK), u = (0, b.A)(t), h = s.useRef(null);
     return (0, i.jsx)(Q, {
@@ -366,17 +366,17 @@ function q(e) {
                     page: O.liQ.GUILD_CHANNEL,
                     section: O.JJy.GUILD_HEADER
                 };
-                await (0, m.g)({
+                await (0, g.g)({
                     guild: e,
                     numberOfBoostsToAdd: o,
                     analyticsLocation: i,
                     analyticsLocations: d,
                     intent: n.type === R.o9.PERK ? R.Pn.PERK : void 0
-                }), r(M.i.TAKE_ACTION)
+                }), a(M.i.TAKE_ACTION)
             }
         }],
         targetElementRef: l,
-        markAsDismissed: r,
+        markAsDismissed: a,
         position: u ? "right" : "bottom",
         align: u ? "top" : "center",
         caretConfig: u ? {
@@ -392,11 +392,11 @@ function J(e) {
         guildId: t,
         featuredExpiringPowerup: n,
         channelRowRef: l,
-        markAsDismissed: r
-    } = e, a = (0, c.bG)([C.A], () => C.A.getStateForGuild(t)), {
+        markAsDismissed: a
+    } = e, r = (0, c.bG)([C.A], () => C.A.getStateForGuild(t)), {
         analyticsLocations: d
-    } = (0, p.Ay)(A.A.GUILD_POWERUPS_COACHMARK_EXPIRING_PERK), u = (0, b.A)(t), g = a?.allPowerups[n.skuId], _ = (0, I.A)(g, !0), x = s.useRef(null), E = (0, c.bG)([h.A], () => h.A.useReducedMotion);
-    if (null == g && !n.isGameServer) return null;
+    } = (0, p.Ay)(A.A.GUILD_POWERUPS_COACHMARK_EXPIRING_PERK), u = (0, b.A)(t), m = r?.allPowerups[n.skuId], _ = (0, I.A)(m, !0), x = s.useRef(null), E = (0, c.bG)([h.A], () => h.A.useReducedMotion);
+    if (null == m && !n.isGameServer) return null;
     let N = n.isGameServer ? U.intl.string(G.default["9L0pAN"]) : U.intl.formatToPlainString(G.default.gG8bI8, {
             perkName: n.name
         }),
@@ -412,8 +412,8 @@ function J(e) {
             fit: "contain",
             className: P.Sl,
             stateMachine: E ? "SM_Main_Int" : "SM_Auto"
-        }) : g?.type === R.o9.LEVEL ? (0, i.jsx)(y.n, {
-            powerup: g,
+        }) : m?.type === R.o9.LEVEL ? (0, i.jsx)(y.n, {
+            powerup: m,
             eventTargetRef: x,
             className: P.Lj
         }) : (0, i.jsx)("img", {
@@ -433,17 +433,17 @@ function J(e) {
                     page: O.liQ.GUILD_CHANNEL,
                     section: O.JJy.GUILD_HEADER
                 };
-                await (0, m.g)({
+                await (0, g.g)({
                     guild: e,
                     numberOfBoostsToAdd: n.numExpiringBoosts,
                     analyticsLocation: i,
                     analyticsLocations: d,
-                    intent: g?.type === R.o9.PERK || n.isGameServer ? R.Pn.PERK : void 0
-                }), r(M.i.TAKE_ACTION)
+                    intent: m?.type === R.o9.PERK || n.isGameServer ? R.Pn.PERK : void 0
+                }), a(M.i.TAKE_ACTION)
             }
         }],
         targetElementRef: l,
-        markAsDismissed: r,
+        markAsDismissed: a,
         position: u ? "right" : "bottom",
         align: u ? "top" : "center",
         caretConfig: u ? {
@@ -462,8 +462,8 @@ function Q(e) {
         position: n = "right",
         align: s = "top",
         alignmentStrategy: l = "edge",
-        markAsDismissed: r,
-        size: a = "lg",
+        markAsDismissed: a,
+        size: r = "lg",
         asset: o,
         ...c
     } = e;
@@ -476,12 +476,12 @@ function Q(e) {
                 asset: o
             }
         },
-        size: a,
+        size: r,
         shouldShow: !0,
         position: n,
         caretConfig: t,
         alignmentStrategy: l,
         align: s,
-        onRequestClose: () => r?.(M.i.USER_DISMISS)
+        onRequestClose: () => a?.(M.i.USER_DISMISS)
     })
 }

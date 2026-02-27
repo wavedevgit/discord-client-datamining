@@ -2,13 +2,13 @@
 "use strict";
 n.d(t, {
     e: () => p,
-    h: () => g
+    h: () => m
 });
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(97808),
+    a = n.n(l),
+    r = n(97808),
     o = n(397927),
     c = n(573435),
     d = n(398094),
@@ -20,12 +20,12 @@ function A(e) {
         children: t,
         size: n,
         onClick: l,
-        onMouseDown: a,
+        onMouseDown: r,
         onKeyDown: u,
         onContextMenu: A,
         onMouseEnter: p,
-        onMouseLeave: g,
-        className: m,
+        onMouseLeave: m,
+        className: g,
         ariaHidden: f,
         avatarDecoration: x,
         specs: C,
@@ -55,28 +55,28 @@ function A(e) {
                     s = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 0,
                     {
                         height: l,
-                        width: r,
-                        x: a,
+                        width: a,
+                        x: r,
                         y: o
                     } = function(e, t, n, i) {
                         let {
                             height: s,
                             width: l,
-                            x: r,
-                            y: a
+                            x: a,
+                            y: r
                         } = _(e, n, i), o = (t - e.size) / 2;
                         return {
                             width: l,
                             height: s,
-                            x: r + o,
-                            y: a + o
+                            x: a + o,
+                            y: r + o
                         }
                     }(e, t, n, s);
                 return (0, i.jsx)("rect", {
                     mask: `url(#${c.hW.SQUIRCLE})`,
                     height: l,
-                    width: r,
-                    x: a,
+                    width: a,
+                    x: r,
                     y: o,
                     rx: e.stroke,
                     fill: "black"
@@ -96,24 +96,24 @@ function A(e) {
             })
         })]
     });
-    return null != l || null != a ? (0, i.jsxs)(o.DUT, {
-        className: r()(h.iE, h.Wn, m),
+    return null != l || null != r ? (0, i.jsxs)(o.DUT, {
+        className: a()(h.iE, h.Wn, g),
         style: S,
         onClick: l,
         onContextMenu: A,
-        onMouseDown: a,
+        onMouseDown: r,
         onKeyDown: u,
         onMouseEnter: p ?? void 0,
-        onMouseLeave: g ?? void 0,
+        onMouseLeave: m ?? void 0,
         "aria-label": b ?? void 0,
         "aria-hidden": f,
         children: [t, v]
     }) : (0, i.jsxs)("div", {
-        className: r()(h.iE, m),
+        className: a()(h.iE, g),
         style: S,
         onContextMenu: A ?? void 0,
         onMouseEnter: p ?? void 0,
-        onMouseLeave: g ?? void 0,
+        onMouseLeave: m ?? void 0,
         role: "img",
         "aria-label": b ?? void 0,
         "aria-hidden": f,
@@ -129,7 +129,7 @@ function p(e) {
         "aria-label": o,
         imageClassName: d,
         cornerIconUrl: p,
-        cornerIconOffsetX: g = 0,
+        cornerIconOffsetX: m = 0,
         cornerIconOffsetY: f = 0
     } = e, x = (0, u.Kj)(n), C = x.size, E = (0, s.useId)();
     return (0, i.jsx)(A, {
@@ -138,10 +138,10 @@ function p(e) {
         ariaHidden: l,
         specs: x,
         children: (0, i.jsxs)("svg", {
-            width: C + g,
+            width: C + m,
             height: C + f,
-            viewBox: `0 0 ${C+g} ${C+f}`,
-            className: r()(h.dK, h.JW),
+            viewBox: `0 0 ${C+m} ${C+f}`,
+            className: a()(h.dK, h.JW),
             "aria-hidden": !0,
             children: [(0, i.jsxs)("mask", {
                 id: E,
@@ -154,31 +154,31 @@ function p(e) {
                     let {
                         height: s,
                         width: l,
-                        x: r,
-                        y: a
+                        x: a,
+                        y: r
                     } = _(e, t, n);
                     return (0, i.jsx)("rect", {
                         mask: `url(#${c.hW.SQUIRCLE})`,
                         height: s,
                         width: l,
-                        x: r,
-                        y: a,
+                        x: a,
+                        y: r,
                         fill: "black"
                     })
-                }(x, g, f)]
+                }(x, m, f)]
             }), (0, i.jsx)("foreignObject", {
                 x: 0,
                 y: 0,
                 width: x.size,
                 height: x.size,
                 mask: `url(#${E})`,
-                children: (0, i.jsx)(a.d9, {
+                children: (0, i.jsx)(r.d9, {
                     src: t,
                     className: d,
                     isSpeaking: !1
                 })
             }), null != p && (0, i.jsx)("foreignObject", {
-                ...m(x, g, f),
+                ...g(x, m, f),
                 mask: `url(#${c.hW.SQUIRCLE})`,
                 children: (0, i.jsx)("img", {
                     src: p,
@@ -191,29 +191,29 @@ function p(e) {
     })
 }
 
-function g(e) {
+function m(e) {
     let {
         src: t,
         size: n,
         "aria-hidden": l = !1,
-        "aria-label": a,
+        "aria-label": r,
         cornerIconUrl: o,
         cornerIconOffsetX: d = 0,
         cornerIconOffsetY: p = 0
-    } = e, g = (0, s.useId)(), f = (0, s.useId)(), x = (0, u.Kj)(n), C = x.size + d, E = x.size + p, I = _(x, d, p), N = m(x, d, p);
+    } = e, m = (0, s.useId)(), f = (0, s.useId)(), x = (0, u.Kj)(n), C = x.size + d, E = x.size + p, I = _(x, d, p), N = g(x, d, p);
     return (0, i.jsx)(A, {
         ...e,
-        ariaLabel: a,
+        ariaLabel: r,
         ariaHidden: l,
         specs: x,
         children: (0, i.jsxs)("svg", {
             width: C,
             height: E,
             viewBox: `0 0 ${C} ${E}`,
-            className: r()(h.dK, h.JW),
+            className: a()(h.dK, h.JW),
             "aria-hidden": !0,
             children: [(0, i.jsxs)("mask", {
-                id: g,
+                id: m,
                 children: [(0, i.jsx)("rect", {
                     x: 0,
                     y: 0,
@@ -240,7 +240,7 @@ function g(e) {
                 y: 0,
                 width: x.size,
                 height: x.size,
-                mask: `url(#${g})`,
+                mask: `url(#${m})`,
                 children: (0, i.jsx)("div", {
                     className: h.yA,
                     children: (0, i.jsx)("img", {
@@ -264,7 +264,7 @@ function g(e) {
     })
 }
 
-function m(e, t, n) {
+function g(e, t, n) {
     return {
         width: 16,
         height: 16,
@@ -274,7 +274,7 @@ function m(e, t, n) {
 }
 
 function _(e, t, n) {
-    let i = m(e, t, n),
+    let i = g(e, t, n),
         s = i.x - 2,
         l = i.y - 2;
     return {

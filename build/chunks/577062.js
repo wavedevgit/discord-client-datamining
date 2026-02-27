@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(397927),
-    r = n(688810),
-    a = n(980923),
+    a = n(688810),
+    r = n(980923),
     o = n(384059),
     c = n(277342),
     d = n(709562);
@@ -20,12 +20,12 @@ function u(e) {
         centerButton: h = !1,
         awaitingRemote: A,
         onMouseEnter: p,
-        onMouseLeave: g,
-        onClick: m,
+        onMouseLeave: m,
+        onClick: g,
         ..._
     } = e, {
         parentAnalyticsLocation: f
-    } = (0, r.Ay)(), x = t || n || u, C = h ? d.l : d.A, E = (0, a.A)(t, n, u, A), {
+    } = (0, a.Ay)(), x = t || n || u, C = h ? d.l : d.A, E = (0, r.A)(t, n, u, A), {
         events: I,
         play: N,
         Component: b
@@ -40,10 +40,10 @@ function u(e) {
             p?.(e), I.onMouseEnter()
         },
         onMouseLeave: e => {
-            g?.(e), I.onMouseLeave()
+            m?.(e), I.onMouseLeave()
         },
         onClick: e => {
-            m?.(e), (0, o.X)(f, o.O.MIC, t)
+            g?.(e), (0, o.X)(f, o.O.MIC, t)
         },
         ..._
     })

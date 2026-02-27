@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(990078),
+    a = n.n(l),
+    r = n(990078),
     o = n(397927),
     c = n(442433),
     d = n(717558),
@@ -15,22 +15,22 @@ var i = n(627968),
     h = n(480890),
     A = n(267102),
     p = n(342296),
-    g = n(636585),
-    m = n(486020),
+    m = n(636585),
+    g = n(486020),
     _ = n(787750);
 
 function f(e) {
     let {
         channel: t,
         speaker: l,
-        className: g
+        className: m
     } = e, f = s.useRef(null), {
         newestAnalyticsLocation: x
     } = (0, u.Ay)(), C = (0, A.Us)(), {
         reducedMotion: E
     } = s.useContext(o.CZY), I = (0, d.A)({
         userId: l.id
-    }), N = null != l.member ? (0, m.xT)(l.member) : null, b = e => {
+    }), N = null != l.member ? (0, g.xT)(l.member) : null, b = e => {
         (0, c.L3)(e, async () => {
             let {
                 default: e
@@ -55,7 +55,7 @@ function f(e) {
         guildId: t.guild_id,
         channelId: t.id,
         clickTrap: !0,
-        children: e => (0, i.jsx)(a.m, {
+        children: e => (0, i.jsx)(r.m, {
             targetElementRef: f,
             __unsupportedReactNodeAsText: l.userNick,
             position: "bottom",
@@ -69,7 +69,7 @@ function f(e) {
                 children: (0, i.jsx)(o.euF, {
                     src: N ?? l.user.getAvatarURL(t.guild_id, 24),
                     size: o._3J.SIZE_24,
-                    className: r()(_.my, g),
+                    className: a()(_.my, m),
                     "aria-label": l.userNick,
                     isSpeaking: I && !E.enabled
                 })
@@ -83,7 +83,7 @@ function x(e) {
         speakers: t,
         channel: n
     } = e;
-    return (0, i.jsx)(g.A, {
+    return (0, i.jsx)(m.A, {
         className: _.z,
         guildId: n.guild_id,
         users: t,
@@ -94,7 +94,7 @@ function x(e) {
             className: t
         }, s),
         renderMoreUsers: (e, t, n) => (0, i.jsx)("div", {
-            className: r()(_.$U, t),
+            className: a()(_.$U, t),
             children: e
         }, n)
     })

@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(435371),
+    a = n.n(l),
+    r = n(435371),
     o = n(732955),
     c = n(397927),
     d = n(470934),
@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(998418),
     A = n(220628),
     p = n(933337),
-    g = n(568065),
-    m = n(333354),
+    m = n(568065),
+    g = n(333354),
     _ = n(985018),
     f = n(294590);
 
@@ -37,33 +37,33 @@ function x(e) {
     } = (0, A.A)(t, n), {
         isLoading: y,
         error: v
-    } = (0, u.A)(t, n), j = (0, p.A)(t, n), R = (0, h.Ay)(t, n), O = R.type !== g.b_.INACTIVE, {
+    } = (0, u.A)(t, n), j = (0, p.A)(t, n), R = (0, h.Ay)(t, n), O = R.type !== m.b_.INACTIVE, {
         disabled: L,
         reason: M
     } = (0, d.A)(t, n, O), D = null != M ? {
         title: null,
         body: M
-    } : R.type === g.b_.LEVEL_ACTIVATED ? {
-        title: _.intl.string(m.default["9oYuvb"]),
-        body: _.intl.formatToPlainString(m.default.WRRYUT, {
+    } : R.type === m.b_.LEVEL_ACTIVATED ? {
+        title: _.intl.string(g.default["9oYuvb"]),
+        body: _.intl.formatToPlainString(g.default.WRRYUT, {
             perkName: R.sourcePowerup?.title ?? _.intl.string(_.t.BfF6ED)
         })
-    } : R.type === g.b_.POWERUP_ACTIVATED ? {
-        title: _.intl.string(m.default.TZsu1U),
-        body: _.intl.formatToPlainString(m.default["5HQUzD"], {
+    } : R.type === m.b_.POWERUP_ACTIVATED ? {
+        title: _.intl.string(g.default.TZsu1U),
+        body: _.intl.formatToPlainString(g.default["5HQUzD"], {
             boostCount: n.cost
         })
     } : null;
     return s.useEffect(() => {
         N?.(T ?? v)
-    }, [T, v, N]), (0, i.jsx)(a.un, {
+    }, [T, v, N]), (0, i.jsx)(r.un, {
         body: D?.body ?? "",
         title: D?.title ?? void 0,
         shouldShow: null != D,
         delay: 100,
-        "aria-label": null != M ? M : O ? _.intl.string(m.default.TZsu1U) : void 0,
+        "aria-label": null != M ? M : O ? _.intl.string(g.default.TZsu1U) : void 0,
         children: (0, i.jsx)("div", {
-            className: r()(f.zr, {
+            className: a()(f.zr, {
                 [f._o]: E,
                 [f.nB]: !E
             }, I),
@@ -77,19 +77,19 @@ function x(e) {
                         isActive: n,
                         compact: s,
                         iconSize: l
-                    } = e, r = l ?? "sm", a = n ? c.x8N : c._Jp;
+                    } = e, a = l ?? "sm", r = n ? c.x8N : c._Jp;
                     return s ? {
                         text: t.toString(),
-                        icon: a
+                        icon: r
                     } : {
-                        text: _.intl.format(n ? m.default.uzQpQd : m.default.ad2Mfj, {
+                        text: _.intl.format(n ? g.default.uzQpQd : g.default.ad2Mfj, {
                             boostCount: t,
                             dotHook: () => (0, i.jsx)("span", {
                                 className: f.Om,
                                 children: "•"
                             }),
-                            boostIconHook: () => (0, i.jsx)(a, {
-                                size: r,
+                            boostIconHook: () => (0, i.jsx)(r, {
+                                size: a,
                                 color: "currentColor",
                                 className: f.$J
                             })
@@ -103,7 +103,7 @@ function x(e) {
                 });
                 return (0, i.jsx)(o.$nd, {
                     variant: O ? "secondary" : "primary",
-                    "aria-label": _.intl.string(O ? m.default.TZsu1U : m.default.gSxlHf),
+                    "aria-label": _.intl.string(O ? g.default.TZsu1U : g.default.gSxlHf),
                     disabled: L,
                     onClick: e => {
                         e.stopPropagation(), O ? j() : b()

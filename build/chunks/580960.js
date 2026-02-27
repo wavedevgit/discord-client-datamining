@@ -7,8 +7,8 @@ var i = n(627968);
 n(64700);
 var s = n(397927),
     l = n(73153),
-    r = n(272355),
-    a = n(793574),
+    a = n(272355),
+    r = n(793574),
     o = n(532794),
     c = n(219271),
     d = n(287809),
@@ -16,9 +16,9 @@ var s = n(397927),
     h = n(927578),
     A = n(882442),
     p = n(869968),
-    g = n(694080),
-    m = n(70730);
-class _ extends r.A {
+    m = n(694080),
+    g = n(70730);
+class _ extends a.A {
     _premiumPaymentModalCloseResolve = null;
     _premiumPaymentModalCloseReject = null;
     _initialize() {
@@ -47,7 +47,7 @@ class _ extends r.A {
         let e = d.default.getCurrentUser();
         if (null != e && e.verified) {
             let t = (u.A.canFractionalPremiumUserUseOffer() || !(0, h.TW)(e)) && !u.A.isFetchingOffer();
-            await (0, g._D)("PremiumManager", t)
+            await (0, m._D)("PremiumManager", t)
         }
         l.h.dispatch({
             type: "PREMIUM_MARKETING_DATA_READY"
@@ -60,7 +60,7 @@ class _ extends r.A {
     _maybeFetchUserAffinities = () => {
         let {
             enabled: e
-        } = m.u.getConfig({
+        } = g.u.getConfig({
             location: "PremiumManager"
         });
         e && (0, c.u)()
@@ -68,7 +68,7 @@ class _ extends r.A {
     _handlePremiumPaymentModalOpen = e => {
         (0, o.A)({
             ...e,
-            analyticsLocations: [a.A.OVERLAY],
+            analyticsLocations: [r.A.OVERLAY],
             onClose: e => {
                 l.h.dispatch({
                     type: "PREMIUM_PAYMENT_MODAL_CLOSE",
@@ -102,8 +102,8 @@ class _ extends r.A {
             followupSKUInfo: i,
             analyticsObject: s
         } = e ?? {};
-        return new Promise((e, r) => {
-            this._premiumPaymentModalCloseResolve = e, this._premiumPaymentModalCloseReject = r, l.h.dispatch({
+        return new Promise((e, a) => {
+            this._premiumPaymentModalCloseResolve = e, this._premiumPaymentModalCloseReject = a, l.h.dispatch({
                 type: "PREMIUM_PAYMENT_MODAL_OPEN",
                 initialPlanId: t,
                 subscriptionTier: n,

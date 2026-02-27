@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(475539),
+    a = n.n(l),
+    r = n(475539),
     o = n(397927),
     c = n(475743),
     d = n(216418),
@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(961350),
     A = n(430452),
     p = n(203982),
-    g = n(220144),
-    m = n(175203),
+    m = n(220144),
+    g = n(175203),
     _ = n(306852),
     f = n(947580),
     x = n(163432),
@@ -59,14 +59,14 @@ function T(e) {
         Z = (0, c.A)($),
         ee = P === C.DUB.MINIMUM || P === C.DUB.NORMAL,
         et = !Q && (!ee || X),
-        en = (0, g.A)(et, 100),
+        en = (0, m.A)(et, 100),
         ei = ((0, c.A)(L.id) ?? L.id) !== L.id,
         es = 0;
     (X || $) && (es += 72), X && !$ && (et ? es += 48 : es += 8), $ && (es += .5 * S + 8);
     let el = s.useMemo(() => X && q ? G / (U - 2 * es) : J && null != V && V.width > 0 && V.height > 0 ? V.width / V.height : b, [J, V, X, G, U, es, q]),
-        er = U - 2 * es,
-        ea = X && q ? G : er * el,
-        eo = Math.floor(Math.min(G, ea) / el),
+        ea = U - 2 * es,
+        er = X && q ? G : ea * el,
+        eo = Math.floor(Math.min(G, er) / el),
         ec = U > G / el + 72 + S + 8;
     t = $ || X ? $ ? -16 : -8 : 40 + Math.max(0, 72 - (U - eo) / 2);
     let ed = Math.max(0, 72 - (U - eo) / 2);
@@ -84,7 +84,7 @@ function T(e) {
             value: +!!$,
             delay: ec || !$ ? 0 : 100,
             config: {
-                ...a.config.stiff,
+                ...r.config.stiff,
                 clamp: !0
             },
             onStart: () => z(!0),
@@ -96,28 +96,28 @@ function T(e) {
         ep = (0, o.zhh)({
             value: +!!$,
             config: {
-                ...a.config.stiff,
+                ...r.config.stiff,
                 clamp: !0
             }
         }, eh),
-        eg = (0, o.zhh)({
-            value: ea,
+        em = (0, o.zhh)({
+            value: er,
             config: {
-                ...a.config.stiff,
+                ...r.config.stiff,
                 clamp: !0
             }
         }, Z === $ && ep.value.idle && !en || ei || eu ? "animate-never" : "animate-always"),
-        em = (0, o.zhh)({
+        eg = (0, o.zhh)({
             value: t,
             config: {
-                ...a.config.stiff,
+                ...r.config.stiff,
                 clamp: !0
             }
         }, eh),
         e_ = (0, o.pnh)(L, {
             keys: e => e?.id,
             config: {
-                ...a.config.stiff,
+                ...r.config.stiff,
                 clamp: !0
             },
             initial: null,
@@ -140,20 +140,20 @@ function T(e) {
             participantTileWidth: eE
         } = (0, x.i4)(G, v);
     return (0, i.jsxs)("div", {
-        className: r()(N.zr, I.tR, D),
+        className: a()(N.zr, I.tR, D),
         children: [(0, i.jsxs)("div", {
             className: N.QX,
             style: {
                 opacity: J && K ? 0 : 1
             },
-            children: [(0, i.jsxs)(a.animated.div, {
+            children: [(0, i.jsxs)(r.animated.div, {
                 className: N.pc,
                 style: {
                     top: ep.value.to(e => -e * S / 2)
                 },
-                children: [(0, i.jsx)(a.animated.div, {
+                children: [(0, i.jsx)(r.animated.div, {
                     style: {
-                        width: eg.value
+                        width: em.value
                     },
                     className: N.tN,
                     children: (0, i.jsx)("div", {
@@ -163,14 +163,14 @@ function T(e) {
                         },
                         children: e_((e, t, s) => {
                             let {
-                                key: r
+                                key: a
                             } = s;
-                            return null != t ? (0, i.jsx)(a.animated.div, {
+                            return null != t ? (0, i.jsx)(r.animated.div, {
                                 className: I.qX,
                                 style: e,
-                                children: (0, i.jsx)(m.Ay, {
+                                children: (0, i.jsx)(g.Ay, {
                                     focused: !0,
-                                    noBorder: ea >= G || er >= U,
+                                    noBorder: er >= G || ea >= U,
                                     channel: O,
                                     className: I.JS,
                                     videoComponent: k,
@@ -184,15 +184,15 @@ function T(e) {
                                     popoutType: j,
                                     controlsBottom: ed
                                 })
-                            }, r) : null
+                            }, a) : null
                         })
                     })
-                }), et ? (0, i.jsx)(a.animated.div, {
-                    className: r()(N.$l, {
+                }), et ? (0, i.jsx)(r.animated.div, {
+                    className: a()(N.$l, {
                         [N.N7]: w
                     }),
                     style: {
-                        bottom: em.value
+                        bottom: eg.value
                     },
                     children: (0, i.jsx)(u.A, {
                         channelId: O.id,
@@ -200,7 +200,7 @@ function T(e) {
                         isVertical: !0
                     })
                 }) : null]
-            }), (0, i.jsx)(a.animated.div, {
+            }), (0, i.jsx)(r.animated.div, {
                 className: N.Vx,
                 style: {
                     translateY: eA.value.to(e => e * S / 2),

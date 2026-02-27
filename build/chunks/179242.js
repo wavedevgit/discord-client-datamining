@@ -7,8 +7,8 @@ var i = n(627968);
 n(64700);
 var s = n(163126),
     l = n(688810),
-    r = n(114212),
-    a = n(345942),
+    a = n(114212),
+    r = n(345942),
     o = n(183555),
     c = n(913453),
     d = n(229187),
@@ -16,8 +16,8 @@ var s = n(163126),
     h = n(21241),
     A = n(503062),
     p = n(51943),
-    g = n(946356),
-    m = n(359656),
+    m = n(946356),
+    g = n(359656),
     _ = n(985018),
     f = n(576968);
 
@@ -34,9 +34,9 @@ function x(e) {
         mutualFriends: N,
         mutualGuilds: b
     } = (0, c.A)(t), S = !t.bot && null != I && I > 0, T = null != b && b.length > 0;
-    return S || T ? (0, i.jsxs)(g.A.Overlay, {
+    return S || T ? (0, i.jsxs)(m.A.Overlay, {
         className: f.Lw,
-        children: [T && (0, i.jsx)(m.A, {
+        children: [T && (0, i.jsx)(g.A, {
             section: "MUTUAL_GUILDS",
             header: _.intl.string(_.t["4lTDZq"]),
             listClassName: f.p_,
@@ -49,12 +49,12 @@ function x(e) {
                     user: t,
                     guild: n,
                     nick: s,
-                    onSelect: () => (0, a.u)(n.id)
+                    onSelect: () => (0, r.u)(n.id)
                 }, n.id)
             })
         }), T && S && (0, i.jsx)(h.A, {
             className: f.yF
-        }), S && (0, i.jsx)(m.A, {
+        }), S && (0, i.jsx)(g.A, {
             section: "MUTUAL_FRIENDS",
             header: _.intl.string(_.t["0mTJ3j"]),
             listClassName: f.p_,
@@ -63,10 +63,10 @@ function x(e) {
                 length: I
             }).map((e, t) => (0, i.jsxs)("div", {
                 className: f.nC,
-                children: [(0, i.jsx)(r.FQ, {
+                children: [(0, i.jsx)(a.FQ, {
                     width: 40,
                     opacity: .08
-                }), (0, i.jsx)(r.FQ, {
+                }), (0, i.jsx)(a.FQ, {
                     width: 135,
                     opacity: .08
                 })]

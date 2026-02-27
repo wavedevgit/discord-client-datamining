@@ -7,8 +7,8 @@ var i = n(627968);
 n(64700);
 var s = n(793574),
     l = n(688810),
-    r = n(915618),
-    a = n(857253),
+    a = n(915618),
+    r = n(857253),
     o = n(670470),
     c = n(430452),
     d = n(699022),
@@ -20,20 +20,20 @@ function h(e) {
         showRightDivider: n = !1
     } = e, {
         analyticsLocations: h
-    } = (0, l.Ay)(s.A.VOICE_CONTROL_TRAY), A = (0, a.A)(), {
+    } = (0, l.Ay)(s.A.VOICE_CONTROL_TRAY), A = (0, r.A)(), {
         enableViewerClipping: p
     } = o.A.useExperiment({
         location: "VoiceEffectsActionBar"
     }, {
         autoTrackExposure: !1
-    }), g = (0, r.A)(c.Ay);
+    }), m = (0, a.A)(c.Ay);
     if (null == t || null != A) return null;
-    let m = p && g;
-    return m ? (0, i.jsxs)(l.f5, {
+    let g = p && m;
+    return g ? (0, i.jsxs)(l.f5, {
         value: h,
         children: [(0, i.jsx)("div", {
             className: u.w,
-            children: m && (0, i.jsx)(d.A, {
+            children: g && (0, i.jsx)(d.A, {
                 channel: t
             })
         }), n && (0, i.jsx)("div", {

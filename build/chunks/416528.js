@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(735438),
-    r = n.n(l),
-    a = n(311907),
+    a = n.n(l),
+    r = n(311907),
     o = n(990078),
     c = n(397927),
     d = n(793574),
@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(402216),
     A = n(689874),
     p = n(872363),
-    g = n(966597),
-    m = n(922281),
+    m = n(966597),
+    g = n(922281),
     _ = n(51082),
     f = n(275731),
     x = n(289552),
@@ -35,9 +35,9 @@ function R(e) {
     let {
         channelId: t,
         guildId: n
-    } = e, s = (0, a.yK)([b.A, S.A], () => {
+    } = e, s = (0, r.yK)([b.A, S.A], () => {
         let e = Date.now();
-        return r()(b.A.getSpeakers()).map(e => S.A.getParticipant(t, e)).filter(e => null != e && e.type === y.lp.USER && e.speaking && !(0, _.Ay)(e)).sortBy(t => -b.A.getSpeakingDuration(t.user.id, e)).slice(0, 3).value()
+        return a()(b.A.getSpeakers()).map(e => S.A.getParticipant(t, e)).filter(e => null != e && e.type === y.lp.USER && e.speaking && !(0, _.Ay)(e)).sortBy(t => -b.A.getSpeakingDuration(t.user.id, e)).slice(0, 3).value()
     });
     return 0 === s.length ? null : (0, i.jsx)("div", {
         className: j.$U,
@@ -61,19 +61,19 @@ function O(e) {
         channel: t,
         isChatOpen: n
     } = e, l = s.useRef(null), {
-        analyticsLocations: r
+        analyticsLocations: a
     } = (0, u.Ay)(d.A.VOICE_CHANNEL_HEADER), o = t.id, {
         voiceParticipantsHidden: _,
         selectedParticipant: N,
         userParticipantCount: b
-    } = (0, a.cf)([S.A], () => ({
+    } = (0, r.cf)([S.A], () => ({
         selectedParticipant: S.A.getSelectedParticipant(o),
         voiceParticipantsHidden: S.A.getVoiceParticipantsHidden(o),
         userParticipantCount: S.A.getUserParticipantCount(o)
     }), [o]), v = t.isGuildVoiceOrThread() && !n, {
         enabled: O,
         inInbox: L
-    } = g.A.useExperiment({
+    } = m.A.useExperiment({
         location: "ChannelCallHeaderToolbar"
     }), M = [];
     return _ && M.push((0, i.jsx)(R, {
@@ -115,14 +115,14 @@ function O(e) {
                 className: j.x6
             })
         }
-    }, "call-members-popout")), O && !L && M.push((0, i.jsx)(m.A, {
+    }, "call-members-popout")), O && !L && M.push((0, i.jsx)(g.A, {
         className: j.x6
     }, "for-later")), v && M.push((0, i.jsx)(E.V, {
         channelId: t.id,
         className: j.x6,
         disabled: n
     }, "chat-spacer")), (0, i.jsx)(u.f5, {
-        value: r,
+        value: a,
         children: M
     })
 }

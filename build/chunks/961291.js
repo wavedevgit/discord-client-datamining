@@ -10,8 +10,8 @@ n.d(t, {
 var i = n(827734),
     s = n(322387),
     l = n(286035),
-    r = n(289876),
-    a = n(31687),
+    a = n(289876),
+    r = n(31687),
     o = n(441955),
     c = n(271764),
     d = n(790018),
@@ -19,19 +19,19 @@ var i = n(827734),
     h = n(478772),
     A = n(846500),
     p = n(784297),
-    g = n(51213),
-    m = n(194066),
+    m = n(51213),
+    g = n(194066),
     _ = n(211643);
 let f = {
         MISSED_MESSAGES: p,
         FRIEND_REQUEST_REMINDER: u,
         SCHEDULED_GUILD_EVENT: c,
         TOP_MESSAGES: A,
-        NOTIFICATION_CENTER: a,
+        NOTIFICATION_CENTER: r,
         UPDATE_PROFILE: n(566213),
-        FIND_FRIENDS: r,
-        ADD_FRIEND: r,
-        FIRST_MESSAGE: m
+        FIND_FRIENDS: a,
+        ADD_FRIEND: a,
+        FIRST_MESSAGE: g
     },
     x = e => {
         switch (e.type) {
@@ -79,7 +79,7 @@ let f = {
                 };
             case s.hW.DM_FRIEND_NUDGE:
                 return {
-                    icon: g, color: i.A.colors.BACKGROUND_MOD_STRONG
+                    icon: m, color: i.A.colors.BACKGROUND_MOD_STRONG
                 };
             case s.Uo.INCOMING_FRIEND_REQUESTS:
             case s.Uo.INCOMING_FRIEND_REQUESTS_ACCEPTED:

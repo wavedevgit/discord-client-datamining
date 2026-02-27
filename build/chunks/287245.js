@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(397927),
+    a = n.n(l),
+    r = n(397927),
     o = n(73153),
     c = n(843472),
     d = n(355622),
@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(133343),
     A = n(609425),
     p = n(922301),
-    g = n(750112),
-    m = n(451909),
+    m = n(750112),
+    g = n(451909),
     _ = n(538355),
     f = n(854627),
     x = n(447404),
@@ -46,38 +46,38 @@ let T = e => {
             guildId: t.guild_id
         }), {
             avatarSrc: h,
-            avatarDecorationSrc: m
+            avatarDecorationSrc: g
         } = (0, f.A)({
             userId: c.id,
             guildId: t.guild_id,
             size: 48
         });
         return (0, i.jsxs)("div", {
-            className: r()(S.iU, {
+            className: a()(S.iU, {
                 [S.FD]: s,
                 [S.Tf]: l
             }),
             children: [(0, i.jsx)("div", {
-                children: (0, i.jsx)(a.euF, {
+                children: (0, i.jsx)(r.euF, {
                     src: h,
-                    avatarDecoration: m,
-                    size: a._3J.SIZE_24,
+                    avatarDecoration: g,
+                    size: r._3J.SIZE_24,
                     "aria-label": "User Avatar",
                     isTyping: !1
                 })
-            }), (0, i.jsx)(g.A, {
+            }), (0, i.jsx)(m.A, {
                 userName: d,
                 displayNameStyles: u,
                 effectDisplayType: p.G.STATIC,
                 loop: !0
             }), (0, i.jsxs)("div", {
                 className: S.fi,
-                children: [(0, i.jsx)(a.Text, {
+                children: [(0, i.jsx)(r.Text, {
                     variant: "text-md/normal",
                     className: S.Qs,
                     children: o.content
                 }), n.attachments.length > 0 && (0, i.jsx)("div", {
-                    className: r()(S.nM, S.rQ),
+                    className: a()(S.nM, S.rQ),
                     children: n.attachments.filter(e => !e.spoiler && e.content_type?.startsWith("image")).map(e => (0, i.jsx)("img", {
                         src: e.url,
                         width: 128,
@@ -93,7 +93,7 @@ let T = e => {
             channel: t,
             idle: n,
             showChat: l
-        } = e, A = s.useRef(new Set), [p, g] = s.useState([]), [_, f] = s.useState(0), I = s.useRef(null), b = s.useRef(!1), [y, v] = s.useState(!0), [j, R] = s.useState(""), [O, L] = s.useState((0, u.x7)(j));
+        } = e, A = s.useRef(new Set), [p, m] = s.useState([]), [_, f] = s.useState(0), I = s.useRef(null), b = s.useRef(!1), [y, v] = s.useState(!0), [j, R] = s.useState(""), [O, L] = s.useState((0, u.x7)(j));
         s.useEffect(() => {
             let e = A.current;
             return () => {
@@ -113,10 +113,10 @@ let T = e => {
             })
         }, [I]), s.useEffect(() => {
             let e = Date.now();
-            g(C.A.getMessages(t.id)._array.filter(t => t.timestamp.getTime() > e - 12e5).slice(-50))
+            m(C.A.getMessages(t.id)._array.filter(t => t.timestamp.getTime() > e - 12e5).slice(-50))
         }, [t]);
         let M = s.useCallback(e => {
-                g(t => {
+                m(t => {
                     if (!t.some(t => t.id === e.id)) {
                         let n = [...t, e];
                         return n.length > 50 && n.shift(), n
@@ -158,7 +158,7 @@ let T = e => {
             };
             return o.h.subscribe("MESSAGE_CREATE", e), () => o.h.unsubscribe("MESSAGE_CREATE", e)
         }, []), (0, i.jsxs)("div", {
-            className: r()(S.X2, {
+            className: a()(S.X2, {
                 [S.R]: !l
             }),
             onMouseEnter: () => b.current = !0,
@@ -171,11 +171,11 @@ let T = e => {
             },
             children: [(0, i.jsx)(x.A, {
                 children: (0, i.jsx)("div", {
-                    className: r()(S.TE, {
+                    className: a()(S.TE, {
                         [S.N7]: n
                     }),
-                    children: (0, i.jsx)(a.HOs, {
-                        className: r()(S.b6, {
+                    children: (0, i.jsx)(r.HOs, {
+                        className: a()(S.b6, {
                             [S.N7]: D && n
                         }),
                         ref: I,
@@ -187,7 +187,7 @@ let T = e => {
                     })
                 })
             }), (0, i.jsx)(h.Ay, {
-                className: r()(S.CQ, {
+                className: a()(S.CQ, {
                     [S.N7]: n && 0 === j.length
                 }),
                 innerClassName: S.hF,
@@ -212,7 +212,7 @@ let T = e => {
                         shouldClear: !1,
                         shouldRefocus: !1
                     };
-                    let s = m.Ay.parse(t, i);
+                    let s = g.Ay.parse(t, i);
                     try {
                         return await c.A.sendMessage(t.id, s, !0, {
                             location: "Haven"

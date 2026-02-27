@@ -7,8 +7,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(311907),
-    r = n(554146),
-    a = n(192308),
+    a = n(554146),
+    r = n(192308),
     o = n(342494),
     c = n(397927),
     d = n(793574),
@@ -16,8 +16,8 @@ var i = n(627968),
     h = n(576030),
     A = n(932001),
     p = n(957785),
-    g = n(186111),
-    m = n(916023),
+    m = n(186111),
+    g = n(916023),
     _ = n(533406),
     f = n(366523),
     x = n(188275),
@@ -65,9 +65,9 @@ function y(e) {
         onViewWishlist: n,
         onCardClick: o,
         ...c
-    } = e, d = s.useRef(null), u = (0, a.useHasAnyModalOpen)(), h = (0, l.bG)([g.A], () => g.A.hasLayers()), _ = (0, m.Jw)({
+    } = e, d = s.useRef(null), u = (0, r.useHasAnyModalOpen)(), h = (0, l.bG)([m.A], () => m.A.hasLayers()), _ = (0, g.Jw)({
         location: "wishlist-card"
-    }), [f, x] = (0, A.kn)(_ ? [r.M.GAME_SHOP_WISHLIST_POPOVER] : [], C.m.SIDEBAR, !0), E = s.useCallback(() => {
+    }), [f, x] = (0, A.kn)(_ ? [a.M.GAME_SHOP_WISHLIST_POPOVER] : [], C.m.SIDEBAR, !0), E = s.useCallback(() => {
         x(C.i.USER_DISMISS), o()
     }, [o, x]), I = s.useCallback(() => {
         x(C.i.USER_DISMISS)
@@ -79,7 +79,7 @@ function y(e) {
             ...c,
             onCardClick: E,
             ref: d
-        }), t && f === r.M.GAME_SHOP_WISHLIST_POPOVER && !u && !h && (0, i.jsx)(T, {
+        }), t && f === a.M.GAME_SHOP_WISHLIST_POPOVER && !u && !h && (0, i.jsx)(T, {
             targetElementRef: d,
             onRequestClose: I,
             onActionClick: N
@@ -92,8 +92,8 @@ function v(e, t) {
         index: n,
         moreCount: s,
         onViewWishlist: l,
-        isSingleCard: r = !1,
-        profileOwner: a,
+        isSingleCard: a = !1,
+        profileOwner: r,
         wishlistId: o,
         cardSize: c,
         analyticsLocations: u
@@ -108,7 +108,7 @@ function v(e, t) {
         onCardClick: () => {
             A ? l() : (0, _.a)(e.sku, {
                 isGift: !0,
-                giftRecipient: a,
+                giftRecipient: r,
                 giftingOrigin: E.vQ.USER_PROFILE_WISHLIST
             }, {
                 analyticsLocations: [...u, d.A.SLAYER_STOREFRONT_BREADCRUMB_WISHLIST_ITEM_CARD_GIFT_BUTTON]
@@ -124,7 +124,7 @@ function v(e, t) {
             shape: "custom"
         }),
         moreCount: s,
-        isSingleCard: r,
+        isSingleCard: a,
         wishlistId: o,
         showPopover: 0 === n && e.sku.applicationId === x.XR,
         onViewWishlist: l,
@@ -139,7 +139,7 @@ function j(e) {
         analyticsLocations: s,
         profileOwner: l
     } = e, {
-        data: r
+        data: a
     } = (0, u.YY)(t.sku.applicationId);
     return (0, i.jsxs)("div", {
         className: b.D5,
@@ -166,7 +166,7 @@ function j(e) {
                     variant: "text-xs/medium",
                     color: "text-default",
                     children: I.intl.format(I.t["CqpEC+"], {
-                        applicationName: r?.name
+                        applicationName: a?.name
                     })
                 })]
             })
@@ -179,18 +179,18 @@ function R(e, t) {
         profileOwner: n,
         analyticsLocations: s,
         wishlistId: l,
-        onViewWishlist: r
-    } = t, a = v(e, {
+        onViewWishlist: a
+    } = t, r = v(e, {
         index: 0,
         profileOwner: n,
         analyticsLocations: s,
-        onViewWishlist: r,
+        onViewWishlist: a,
         isSingleCard: !0,
         wishlistId: l
     });
     return (0, i.jsx)(j, {
         item: e,
-        card: a,
+        card: r,
         profileOwner: n,
         analyticsLocations: s
     })

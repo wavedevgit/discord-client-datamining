@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(735438),
+    a = n.n(l),
+    r = n(735438),
     o = n(835245),
     c = n(158954),
     d = n(311907),
@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(568598),
     A = n(313961),
     p = n(246356),
-    g = n(178213),
-    m = n(594832),
+    m = n(178213),
+    g = n(594832),
     _ = n(290863),
     f = n(954571),
     x = n(403362),
@@ -44,7 +44,7 @@ function L(e) {
     s.useEffect(() => {
         t || n()
     }, [n, t]);
-    let M = (0, g.G)("social_layer_storefront_gifting_mini_shelf"),
+    let M = (0, m.G)("social_layer_storefront_gifting_mini_shelf"),
         D = (0, d.bG)([u.A], () => u.A.getApplication(T.XR)),
         [G] = (0, d.bG)([A.A], () => null != L.id ? [A.A.getParticipants(L.id), A.A.getParticipantsVersion(L.id)] : [
             [], 0
@@ -62,7 +62,7 @@ function L(e) {
         }, [G, D]),
         P = s.useMemo(() => {
             let e = G.map(e => (0, v.Xw)(e) || (0, v.Ay)(e) ? e.user.id : null).filter(x.Vq);
-            return (0, a.uniq)([...U, ...e])
+            return (0, r.uniq)([...U, ...e])
         }, [G, U]),
         {
             state: w,
@@ -86,7 +86,7 @@ function L(e) {
                 let n = B[t.skuId]?.filter(t => t.reason === E.G.WISHLIST && e.has(t.userId)).map(e => e.userId).filter(x.Vq) ?? [];
                 return M ? (0, i.jsx)(N.A, {
                     sku: t.sku,
-                    source: n.length > 0 ? m.uS.WISHLIST : m.uS.POPULAR,
+                    source: n.length > 0 ? g.uS.WISHLIST : g.uS.POPULAR,
                     application: D,
                     guildId: L.guild_id,
                     channelId: L.id,
@@ -135,7 +135,7 @@ function L(e) {
                         })]
                     })
                 }), (0, i.jsx)("div", {
-                    className: r()(R.Xb, {
+                    className: a()(R.Xb, {
                         [R.Im]: M
                     }),
                     children: "loading" === w || 0 === k.length ? (0, i.jsx)(c.y$y, {

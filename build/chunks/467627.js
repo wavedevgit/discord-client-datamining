@@ -1,22 +1,22 @@
 /** chunk id: 467627, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => ea
+    A: () => er
 });
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(735438),
-    o = n.n(a),
+    a = n.n(l),
+    r = n(735438),
+    o = n.n(r),
     c = n(873263),
     d = n(837381),
     u = n(621466),
     h = n(311907),
     A = n(52133),
     p = n(451988),
-    g = n(827734),
-    m = n(397927),
+    m = n(827734),
+    g = n(397927),
     _ = n(951001),
     f = n(964486),
     x = n(260762),
@@ -119,14 +119,14 @@ class ei {
             iconTotalSize: i,
             badgeVisibleBuffer: s,
             heightBeforeGuilds: l,
-            bottomInset: r
-        } = this.sizes, a = this.scrollerRef.current;
-        if (null == a) return !1;
+            bottomInset: a
+        } = this.sizes, r = this.scrollerRef.current;
+        if (null == r) return !1;
         let o = n.findIndex(t => "string" == typeof t || null == t ? t === e : t.includes(e));
         if (o < 0) return !1;
         let c = i * o + l,
-            d = a.getScrollerState();
-        return !t && !!(c >= d.scrollTop) || !!t && !!(c + i + s <= d.scrollTop + d.offsetHeight - r)
+            d = r.getScrollerState();
+        return !t && !!(c >= d.scrollTop) || !!t && !!(c + i + s <= d.scrollTop + d.offsetHeight - a)
     };
     getVisibleGuildIds = () => {
         let e = this.scrollerRef.current;
@@ -138,8 +138,8 @@ class ei {
                 s = this.nodeRefs[i];
             if (null == s) return !1;
             let l = s.getBoundingClientRect(),
-                r = l.top - n;
-            return r + l.height > 0 && r < t
+                a = l.top - n;
+            return a + l.height > 0 && a < t
         }).map(e => {
             let {
                 id: t
@@ -172,13 +172,13 @@ function es(e) {
         hideDms: t,
         scrollToTop: n,
         lurkingGuildIds: s
-    } = e, l = (0, N.A)("TopSection"), r = (0, h.yK)([M.A, L.Ay], () => M.A.getGuildIds().filter(e => L.Ay.isCurrentUserGuest(e))), a = s.concat(r), {
+    } = e, l = (0, N.A)("TopSection"), a = (0, h.yK)([M.A, L.Ay], () => M.A.getGuildIds().filter(e => L.Ay.isCurrentUserGuest(e))), r = s.concat(a), {
         entrypoint: o
     } = (0, y.X8)({
         location: "GuildsBar"
     });
     return (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(W.C, {}), o === y.RK.SERVER_RAIL_TOP && (0, i.jsx)(v.A, {}), l ? (0, i.jsx)(b.A, {}) : null, !t && (0, i.jsx)(B.A, {}), a.map(e => (0, i.jsx)(Q.A, {
+        children: [(0, i.jsx)(W.C, {}), o === y.RK.SERVER_RAIL_TOP && (0, i.jsx)(v.A, {}), l ? (0, i.jsx)(b.A, {}) : null, !t && (0, i.jsx)(B.A, {}), r.map(e => (0, i.jsx)(Q.A, {
             guildId: e
         }, e)), (0, i.jsx)(J.A, {
             onActivate: n
@@ -192,34 +192,34 @@ function el(e) {
         disableAppDownload: n,
         isOverlay: s,
         renderTreeNode: l,
-        lurkingGuildIds: r
-    } = e, [a] = (0, h.yK)([D.Ay], () => {
+        lurkingGuildIds: a
+    } = e, [r] = (0, h.yK)([D.Ay], () => {
         let e = D.Ay.getGuildsTree();
         return [e, e.version]
-    }), o = a.getRoots(), c = (0, h.yK)([O.A], () => O.A.getGeoRestrictedGuilds()).map(e => (0, i.jsx)(F.A, {
+    }), o = r.getRoots(), c = (0, h.yK)([O.A], () => O.A.getGeoRestrictedGuilds()).map(e => (0, i.jsx)(F.A, {
         id: e.id,
         name: e.name,
         icon: e.icon
     }, e.id));
     return (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(m.BJc, {
+        children: [(0, i.jsx)(g.BJc, {
             role: "group",
             "aria-label": Z.intl.string(Z.t["7hB4kg"]),
             gap: "xs",
             children: o.map((e, t) => l(e, t, o.length))
         }), c, (0, i.jsx)(z.A, {}), s ? null : (0, i.jsx)(H.A, {
-            disableTooltip: r.length > 0,
+            disableTooltip: a.length > 0,
             lastTargetNode: o[o.length - 1]
         }), s ? null : t, n ? null : (0, i.jsx)(V.A, {})]
     })
 }
 
-function er(e) {
+function ea(e) {
     let {
         disableAppDownload: t = G.isPlatformEmbedded,
         isOverlay: n = !1,
         className: l,
-        themeOverride: a
+        themeOverride: r
     } = e, [o] = (0, h.yK)([D.Ay], () => {
         let e = D.Ay.getGuildsTree();
         return [e, e.version]
@@ -230,13 +230,13 @@ function er(e) {
     } = (0, U.A)(), O = s.useRef(!1), [L] = s.useState(() => new p.Ep), M = s.useRef(null), B = s.useRef(null), {
         ref: V,
         ...H
-    } = (0, d.$y)(), F = (0, m.R7z)(), [W, z] = s.useState(!1), J = (0, m.rdh)(g.A.modules.guildbar.AVATAR_SIZE), Q = (0, m.rdh)(g.A.space.SPACE_XS), er = (0, N.A)("GuildsBar"), {
-        pathname: ea
+    } = (0, d.$y)(), F = (0, g.R7z)(), [W, z] = s.useState(!1), J = (0, g.rdh)(m.A.modules.guildbar.AVATAR_SIZE), Q = (0, g.rdh)(m.A.space.SPACE_XS), ea = (0, N.A)("GuildsBar"), {
+        pathname: er
     } = (0, c.zy)(), {
         entrypoint: eo
     } = (0, y.X8)({
         location: "GuildsBar"
-    }), ec = +!!er + +(eo === y.RK.SERVER_RAIL_TOP), ed = s.useMemo(() => {
+    }), ec = +!!ea + +(eo === y.RK.SERVER_RAIL_TOP), ed = s.useMemo(() => {
         let e, t, n = (e = J + Q, {
             iconSize: J,
             iconTotalSize: e,
@@ -254,7 +254,7 @@ function er(e) {
     }), [ed]);
     let {
         analyticsLocations: eu
-    } = (0, E.Ay)(C.A.GUILDS_LIST), eh = en(ea);
+    } = (0, E.Ay)(C.A.GUILDS_LIST), eh = en(er);
     (0, f.u5)(() => {
         if (!O.current && 0 !== o.size) {
             if (!eh) {
@@ -316,17 +316,17 @@ function er(e) {
                     return null
             }
         }, [b, S, x, ed.setNodeRef]),
-        eg = (0, i.jsx)(K.A, {
+        em = (0, i.jsx)(K.A, {
             selected: eh,
             className: ee.ai
         }),
-        em = eo === y.RK.SERVER_RAIL_BOTTOM;
+        eg = eo === y.RK.SERVER_RAIL_BOTTOM;
     return (0, i.jsx)(E.f5, {
         value: eu,
-        children: (0, i.jsx)(m.NPJ, {
-            theme: a,
+        children: (0, i.jsx)(g.NPJ, {
+            theme: r,
             children: e => (0, i.jsxs)("nav", {
-                className: r()(ee.iE, l, e, {
+                className: a()(ee.iE, l, e, {
                     [ee.R]: _
                 }),
                 "aria-label": Z.intl.string(Z.t.PjnF2t),
@@ -344,8 +344,8 @@ function er(e) {
                     className: ee.B2,
                     children: (0, i.jsxs)("div", {
                         className: ee.qD,
-                        children: [(0, i.jsxs)(m.zCo, {
-                            className: r()({
+                        children: [(0, i.jsxs)(g.zCo, {
+                            className: a()({
                                 [ee.XG]: !0,
                                 [ee.qw]: W
                             }),
@@ -357,13 +357,13 @@ function er(e) {
                                 scrollToTop: eA,
                                 lurkingGuildIds: A
                             }), (0, i.jsx)(Y.A, {}), (0, i.jsx)(el, {
-                                guildDiscoveryButton: eg,
+                                guildDiscoveryButton: em,
                                 disableAppDownload: t,
                                 isOverlay: n,
                                 renderTreeNode: ep,
                                 lurkingGuildIds: A
                             })]
-                        }), em && (0, i.jsxs)("div", {
+                        }), eg && (0, i.jsxs)("div", {
                             children: [(0, i.jsx)(Y.A, {
                                 fullWidth: !0
                             }), (0, i.jsx)("div", {
@@ -377,9 +377,9 @@ function er(e) {
                     ref: B,
                     isVisible: ed.isItemVisible,
                     onJumpTo: ed.handleJumpToGuild,
-                    className: r()(ee.LZ, {
-                        [ee.CH]: !n && !em,
-                        [ee.c0]: !n && em
+                    className: a()(ee.LZ, {
+                        [ee.CH]: !n && !eg,
+                        [ee.c0]: !n && eg
                     }),
                     barClassName: ee.Sh
                 })]
@@ -387,11 +387,11 @@ function er(e) {
         })
     })
 }
-let ea = s.memo(function(e) {
+let er = s.memo(function(e) {
     let t = (0, x.A)("guildsnav");
     return (0, i.jsx)(d.hD, {
         navigator: t,
-        children: (0, i.jsx)(er, {
+        children: (0, i.jsx)(ea, {
             ...e
         })
     })

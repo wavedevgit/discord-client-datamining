@@ -1,11 +1,11 @@
 /** chunk id: 628979, original params: e,t,s (module,exports,require) **/
 s.d(t, {
-    A: () => A
+    A: () => m
 });
 var r = s(627968),
     l = s(64700),
-    a = s(503698),
-    n = s.n(a),
+    n = s(503698),
+    a = s.n(n),
     o = s(311907),
     i = s(397927),
     c = s(773669),
@@ -15,31 +15,31 @@ var r = s(627968),
     p = s(758836),
     E = s(652215),
     S = s(985018),
-    f = s(450331);
+    A = s(450331);
 
-function A(e) {
+function m(e) {
     let {
         handleTransition: t,
         selectedTab: s,
-        isNarrow: a,
-        hasText: A
+        isNarrow: n,
+        hasText: m
     } = e, {
         searchQuery: h,
-        onSetSearchQuery: m
+        onSetSearchQuery: f
     } = (0, b.v)(), [C, T] = l.useState(""), g = (0, d.uM)(), y = (0, o.bG)([c.default], () => c.default.locale), O = l.useRef(null), [L, x] = l.useState(!1);
     l.useEffect(() => {
         let e = setTimeout(() => {
-            m(C)
+            f(C)
         }, 250);
         return () => clearTimeout(e)
-    }, [C, m]), l.useEffect(() => {
+    }, [C, f]), l.useEffect(() => {
         T(h)
     }, [h]), l.useEffect(() => {
-        x(a && A)
-    }, [a, A]);
+        x(n && m)
+    }, [n, m]);
     let R = l.useCallback(e => {
-            "Enter" === e.key && m(C)
-        }, [C, m]),
+            "Enter" === e.key && f(C)
+        }, [C, f]),
         N = l.useCallback(e => {
             u.default.track(E.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
                 collectibles_shop_session_id: g?.sessionId,
@@ -58,14 +58,14 @@ function A(e) {
             s !== p.G2.CATALOG && t(p.G2.CATALOG), N(p.uY.SEARCH_BAR)
         }, [s, t, N]),
         I = l.useCallback(() => {
-            T(""), m(""), N(p.uY.SEARCH_BAR_CLEAR), a && x(!1)
-        }, [m, N, a]),
+            T(""), f(""), N(p.uY.SEARCH_BAR_CLEAR), n && x(!1)
+        }, [f, N, n]),
         _ = l.useCallback(() => {
-            a && "" === C && x(!1)
-        }, [a, C]),
-        j = a && !L,
+            n && "" === C && x(!1)
+        }, [n, C]),
+        j = n && !L,
         F = (0, r.jsx)(i.DUT, {
-            className: f.qc,
+            className: A.qc,
             onClick: v,
             children: (0, r.jsx)(i.$p$, {
                 size: "sm",
@@ -90,8 +90,8 @@ function A(e) {
         style: k,
         children: F
     }) : (0, r.jsx)("div", {
-        className: n()(f.ON, {
-            [f.Nz]: L
+        className: a()(A.ON, {
+            [A.Nz]: L
         }),
         style: k,
         children: (0, r.jsx)(i.DUT, {

@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(484030),
+    a = n.n(l),
+    r = n(484030),
     o = n(311907),
     c = n(873298),
     d = n(397927),
@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(688810),
     A = n(966597),
     p = n(85109),
-    g = n(44022),
-    m = n(566908),
+    m = n(44022),
+    g = n(566908),
     _ = n(594061),
     f = n(617617),
     x = n(203982),
@@ -81,7 +81,7 @@ function v(e) {
     let X = s.useCallback(e => {
             e.shiftKey || F()
         }, [F]),
-        q = (0, m.Sc)({
+        q = (0, g.Sc)({
             location: "ForYou"
         });
     return (0, i.jsx)(h.f5, {
@@ -99,7 +99,7 @@ function v(e) {
                     "aria-label": T.intl.string(T.t.GSmTKJ),
                     className: G,
                     children: (0, i.jsx)("div", {
-                        className: r()(y.k, {
+                        className: a()(y.k, {
                             [y.q]: q
                         }),
                         children: (0, i.jsx)(d.Fmo, {
@@ -111,9 +111,9 @@ function v(e) {
                             }),
                             children: k === c.Y2.FOR_YOU ? (0, i.jsx)(C.Ay, {}) : k === c.Y2.MENTIONS ? (0, i.jsx)(E.A, {
                                 onJump: X
-                            }) : W && Y && k === c.Y2.BOOKMARKS ? (0, i.jsx)(g.J, {
+                            }) : W && Y && k === c.Y2.BOOKMARKS ? (0, i.jsx)(m.J, {
                                 closePopout: F
-                            }) : k === c.Y2.SCHEDULED ? (0, i.jsx)(N.w, {}) : (0, i.jsx)(a.tH, {
+                            }) : k === c.Y2.SCHEDULED ? (0, i.jsx)(N.w, {}) : (0, i.jsx)(r.tH, {
                                 fallback: (0, i.jsx)(b.T, {}),
                                 children: (0, i.jsx)(b.Ay, {
                                     onJump: X,

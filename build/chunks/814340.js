@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(158954),
+    a = n.n(l),
+    r = n(158954),
     o = n(311907),
     c = n(990078),
     d = n(397927),
@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(390435),
     A = n(775121),
     p = n(629357),
-    g = n(599677),
-    m = n(12351),
+    m = n(599677),
+    g = n(12351),
     _ = n(915089),
     f = n(734057),
     x = n(458294),
@@ -420,7 +420,7 @@ class F extends s.PureComponent {
             selectedIndex: s
         } = this.props, {
             showScores: l
-        } = g.A.getCurrentConfig({
+        } = m.A.getCurrentConfig({
             location: "62f4be_1"
         }, {
             autoTrackExposure: !1
@@ -522,11 +522,11 @@ class F extends s.PureComponent {
         }
     };
     renderProtip() {
-        return (0, i.jsx)(m.A, {
-            className: r()(D.PP, {
+        return (0, i.jsx)(g.A, {
+            className: a()(D.PP, {
                 [D.ov]: this.state.query.length > 0
             }),
-            type: m.A.Types.INLINE,
+            type: g.A.Types.INLINE,
             children: M.intl.format(M.t.wukqXQ, {
                 userSymbolHook: (e, t) => H(t, p.AT.USER, M.intl.string(M.t.GQRCGn)),
                 textChannelSymbolHook: (e, t) => H(t, p.AT.TEXT_CHANNEL, M.intl.string(M.t.wrwhuZ)),
@@ -548,7 +548,7 @@ class F extends s.PureComponent {
         })
     }
     render() {
-        return (0, i.jsx)(a.dWK, {
+        return (0, i.jsx)(r.dWK, {
             "aria-label": M.intl.string(M.t.ZvKwYa),
             size: "lg",
             transitionState: this.props.transitionState,

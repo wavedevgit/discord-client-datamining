@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(311907),
-    r = n(456412),
-    a = n(313961),
+    a = n(456412),
+    r = n(313961),
     o = n(63995),
     c = n(113783),
     d = n(69407),
@@ -15,17 +15,17 @@ var i = n(627968),
     h = n(694257),
     A = n(927630),
     p = n(120017),
-    g = n(779271),
-    m = n(763793),
+    m = n(779271),
+    g = n(763793),
     _ = n(985018),
     f = n(827303);
 
 function x(e) {
     return e.type === d.wY.VOICE
 }
-let C = (0, r.A)(e => {
+let C = (0, a.A)(e => {
     let t, n, {
-            channel: r,
+            channel: a,
             width: C,
             onScroll: E,
             popoutType: I
@@ -34,15 +34,15 @@ let C = (0, r.A)(e => {
             selectedParticipantId: N,
             largeStream: b,
             chatOpen: S
-        } = (0, l.cf)([a.A], () => ({
-            selectedParticipantId: a.A.getSelectedParticipantId(r.id),
-            largeStream: a.A.getStageStreamSize(r.id),
-            chatOpen: a.A.getChatOpen(r.id)
-        }), [r.id]),
-        T = (0, c.uy)(r.id),
-        y = (0, c.zy)(r.id, d.ip.AUDIENCE),
-        v = (0, l.bG)([o.A], () => null != N ? o.A.getParticipant(r.id, N) : null),
-        j = (0, c.E5)(r.id, d.ip.SPEAKER),
+        } = (0, l.cf)([r.A], () => ({
+            selectedParticipantId: r.A.getSelectedParticipantId(a.id),
+            largeStream: r.A.getStageStreamSize(a.id),
+            chatOpen: r.A.getChatOpen(a.id)
+        }), [a.id]),
+        T = (0, c.uy)(a.id),
+        y = (0, c.zy)(a.id, d.ip.AUDIENCE),
+        v = (0, l.bG)([o.A], () => null != N ? o.A.getParticipant(a.id, N) : null),
+        j = (0, c.E5)(a.id, d.ip.SPEAKER),
         R = j.filter(x),
         O = null != j.find(e => e.type === d.wY.STREAM),
         L = Math.floor((C - 32) / 102),
@@ -52,13 +52,13 @@ let C = (0, r.A)(e => {
             [d.ip.AUDIENCE]: L,
             [d.ip.SELECTED]: 1
         },
-        G = (0, u.Uo)(r.id),
-        [U, P] = (0, u.RG)(r.id, D, G),
+        G = (0, u.Uo)(a.id),
+        [U, P] = (0, u.RG)(a.id, D, G),
         w = [Math.max(U[0] ?? 1, 1), Math.max(U[1] ?? 1, 1), U[2]],
         {
             speakerTileWidth: k,
             speakerTileHeight: B
-        } = (n = Math.floor((t = Math.floor(C / M - 8)) / m.i), {
+        } = (n = Math.floor((t = Math.floor(C / M - 8)) / g.i), {
             speakerTileWidth: t,
             speakerTileHeight: n
         }),
@@ -72,22 +72,22 @@ let C = (0, r.A)(e => {
             let {
                 section: t
             } = e;
-            return 1 === t ? 0 === T ? null : (0, i.jsx)(g.A, {
+            return 1 === t ? 0 === T ? null : (0, i.jsx)(m.A, {
                 participantCount: T,
                 label: _.intl.string(_.t.CduOkx),
                 className: f.wx,
                 onClick: () => K(!F),
                 collapsed: F,
                 speakers: R,
-                channel: r,
+                channel: a,
                 isStreamLive: O
-            }, `speaker-header-${t}`) : 2 === t ? 0 === y ? null : (0, i.jsx)(g.A, {
+            }, `speaker-header-${t}`) : 2 === t ? 0 === y ? null : (0, i.jsx)(m.A, {
                 participantCount: y,
                 label: _.intl.string(_.t["3foUu5"]),
                 className: f.wx,
                 onClick: () => Y(!W),
                 collapsed: W,
-                channel: r
+                channel: a
             }, `audience-header-${t}`) : null
         },
         sectionHeight: e => 48,
@@ -102,8 +102,8 @@ let C = (0, r.A)(e => {
                     if (0 === l.length || null == l[0]) return null;
                     return (0, i.jsx)("div", {
                         className: f.Od,
-                        children: (0, i.jsx)(m.A, {
-                            channel: r,
+                        children: (0, i.jsx)(g.A, {
+                            channel: a,
                             participant: l[0],
                             width: V,
                             popoutType: I
@@ -114,7 +114,7 @@ let C = (0, r.A)(e => {
                     return (0, i.jsx)(s.Fragment, {
                         children: (0, i.jsx)(p.A, {
                             tileWidth: k,
-                            channel: r,
+                            channel: a,
                             participants: l,
                             selectedParticipant: v,
                             popoutType: I
@@ -123,7 +123,7 @@ let C = (0, r.A)(e => {
                 case 2:
                     if (W) return null;
                     return (0, i.jsx)(h.A, {
-                        channel: r,
+                        channel: a,
                         participants: l,
                         maxTiles: L
                     }, `audience-${t}-${n}`);
@@ -131,7 +131,7 @@ let C = (0, r.A)(e => {
                     return null
             }
         },
-        rowHeight: e => null == P[e][0] ? 0 : 0 === e ? V / m.i + 8 : 1 === e ? F ? 0 : B : 98 * !W,
+        rowHeight: e => null == P[e][0] ? 0 : 0 === e ? V / g.i + 8 : 1 === e ? F ? 0 : B : 98 * !W,
         renderFooter: e => {
             let {
                 section: t

@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(311907),
+    a = n.n(l),
+    r = n(311907),
     o = n(397927),
     c = n(80682),
     d = n(845056),
@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(323073),
     A = n(643501),
     p = n(279250),
-    g = n(834757),
-    m = n(727353),
+    m = n(834757),
+    g = n(727353),
     _ = n(140547),
     f = n(636920),
     x = n(565688),
@@ -57,12 +57,12 @@ function P(e) {
         W = Array.from((0, u.Rz)(K).values()),
         Y = (0, C.W)(),
         z = (0, E.i)(e => e.showSelfActivity),
-        [X, q] = (0, a.yK)([b.A], () => [b.A.getStreamForUser(n.id, t.getGuildId()), b.A.getActiveStreamForUser(n.id, t.getGuildId())], [t, n.id]),
-        [J, Q] = (0, a.yK)([j.A, T.A, y.A, A.default], () => (0, p.eo)(t, j.A, T.A, y.A, A.default)),
-        $ = (0, a.bG)([S.default], () => S.default.getId()),
-        Z = (0, a.bG)([v.A], () => (0, g.nr)(X, v.A), [X]),
+        [X, q] = (0, r.yK)([b.A], () => [b.A.getStreamForUser(n.id, t.getGuildId()), b.A.getActiveStreamForUser(n.id, t.getGuildId())], [t, n.id]),
+        [J, Q] = (0, r.yK)([j.A, T.A, y.A, A.default], () => (0, p.eo)(t, j.A, T.A, y.A, A.default)),
+        $ = (0, r.bG)([S.default], () => S.default.getId()),
+        Z = (0, r.bG)([v.A], () => (0, m.nr)(X, v.A), [X]),
         ee = (0, d.m)(n, P ?? Z),
-        et = (0, a.bG)([R.Ay], () => R.Ay.getVoiceStatesForChannel(t).find(e => e.user.id === n.id) ?? null, [t, n.id]),
+        et = (0, r.bG)([R.Ay], () => R.Ay.getVoiceStatesForChannel(t).find(e => e.user.id === n.id) ?? null, [t, n.id]),
         en = s.useMemo(() => null != et ? [et] : [], [et]),
         {
             enableUserHoverActivities: ei
@@ -77,11 +77,11 @@ function P(e) {
             location: "VoiceUserActivities"
         }),
         el = (0, N.G)("voice_channel_activities"),
-        er = (0, x.m)({
+        ea = (0, x.m)({
             location: "voice_channel_activities"
         }),
-        ea = (0, h.r9)() && (0, h.UK)(t.id),
-        eo = null != X && !ea,
+        er = (0, h.r9)() && (0, h.UK)(t.id),
+        eo = null != X && !er,
         ec = ee.length + W.length > 0,
         ed = null != k,
         eu = n.id === S.default.getId() && !z,
@@ -103,7 +103,7 @@ function P(e) {
         if (!eh) return null
     }
     return (0, i.jsxs)(o.HOs, {
-        className: r()(U.kL, {
+        className: a()(U.kL, {
             [U.iA]: V,
             [U.XK]: el
         }),
@@ -117,7 +117,7 @@ function P(e) {
             className: U.AF,
             iconClassName: U.W9,
             textClassName: U.YJ
-        }) : null, null == X || null == w || ea ? null : (0, i.jsx)(m.P, {
+        }) : null, null == X || null == w || er ? null : (0, i.jsx)(g.P, {
             stream: X,
             activeStream: q,
             streamActivity: Z,
@@ -135,8 +135,8 @@ function P(e) {
             onAction: l,
             enableUserHoverActivities: ei
         }, e.application.id)), ee.map(e => {
-            let a = e.application_id;
-            return (null != Y && (a = Y), er && null != a && G.sQ.has(a)) ? (0, i.jsxs)(s.Fragment, {
+            let r = e.application_id;
+            return (null != Y && (r = Y), ea && null != r && G.sQ.has(r)) ? (0, i.jsxs)(s.Fragment, {
                 children: [(0, i.jsx)(M.A, {
                     presenceActivity: e,
                     channel: t,
@@ -144,10 +144,10 @@ function P(e) {
                     onAction: l,
                     enableUserHoverActivities: ei
                 }), (0, i.jsx)(I.A, {
-                    className: r()(U.L, {
+                    className: a()(U.L, {
                         [U.SW]: el
                     }),
-                    applicationId: a,
+                    applicationId: r,
                     rewardOfferNoticeClassName: U.Nh,
                     userIds: [n.id],
                     location: "voice_channel",

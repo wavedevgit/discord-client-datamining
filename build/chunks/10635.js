@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(158954),
-    r = n(397927),
-    a = n(736653),
+    a = n(397927),
+    r = n(736653),
     o = n(793574),
     c = n(688810),
     d = n(311016),
@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(182592),
     A = n(562153),
     p = n(183555),
-    g = n(672385),
-    m = n(950191),
+    m = n(672385),
+    g = n(950191),
     _ = n(657331),
     f = n(718019),
     x = n(31432),
@@ -37,7 +37,7 @@ function L(e) {
     let {
         user: t,
         channel: n
-    } = e, L = __OVERLAY__ || !(0, d.A)(t.id), M = (0, m.Ay)(t.id), D = (0, a.Ay)(), G = s.useRef(Date.now()), {
+    } = e, L = __OVERLAY__ || !(0, d.A)(t.id), M = (0, g.Ay)(t.id), D = (0, r.Ay)(), G = s.useRef(Date.now()), {
         analyticsLocations: U
     } = (0, c.Ay)(o.A.USER_PROFILE_SIDEBAR), P = (0, p.pb)({
         layout: "SIDEBAR",
@@ -120,9 +120,9 @@ function L(e) {
                     })]
                 }), !L && (0, i.jsx)("div", {
                     className: R.qr,
-                    children: (0, i.jsx)(r.DUT, {
+                    children: (0, i.jsx)(a.DUT, {
                         onClick: () => {
-                            V(), (0, g.Wn)({
+                            V(), (0, m.Wn)({
                                 action: "PRESS_VIEW_PROFILE",
                                 analyticsLocations: U,
                                 ...P

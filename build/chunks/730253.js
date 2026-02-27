@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(837381),
+    a = n.n(l),
+    r = n(837381),
     o = n(311907),
     c = n(397927),
     d = n(308528),
@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(933958),
     A = n(969151),
     p = n(941971),
-    g = n(900848),
-    m = n(65611),
+    m = n(900848),
+    g = n(65611),
     _ = n(855725),
     f = n(366811),
     x = n(616356),
@@ -41,7 +41,7 @@ let L = {
 };
 
 function M() {
-    let e, t, l, M, D, G, U, P, w, k, B, V, H = (0, a.Vd)("favorites"),
+    let e, t, l, M, D, G, U, P, w, k, B, V, H = (0, r.Vd)("favorites"),
         {
             favoriteAdded: F,
             clearFavoriteAdded: K
@@ -70,7 +70,7 @@ function M() {
                 location: t
             } = e, n = (0, A.H)(t);
             return null != n && null != X[n]
-        })), P = G.length > 0, w = !1, k = !1, B = !1, V = !1, t ? (w = !D, k = D, B = l, V = U) : (B = M, V = P), (0, m.oi)({
+        })), P = G.length > 0, w = !1, k = !1, B = !1, V = !1, t ? (w = !D, k = D, B = l, V = U) : (B = M, V = P), (0, g.oi)({
             audio: w,
             video: k,
             screenshare: B,
@@ -82,7 +82,7 @@ function M() {
         en = s.useCallback(() => {
             K()
         }, [K]);
-    return (0, i.jsxs)(g.c, {
+    return (0, i.jsxs)(m.c, {
         children: [(0, i.jsx)(p.A, {
             selected: Q,
             hovered: W,
@@ -123,7 +123,7 @@ function M() {
                             })
                         },
                         children: (0, i.jsx)("div", {
-                            className: r()(O.hN, {
+                            className: a()(O.hN, {
                                 [O.b1]: F
                             }),
                             children: (0, i.jsx)(c.Gg5, {

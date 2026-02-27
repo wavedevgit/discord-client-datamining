@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(311907),
     s = n(73153),
     l = n(71393),
-    r = n(522055),
-    a = n(645619),
+    a = n(522055),
+    r = n(645619),
     o = n(904629);
 let c = {};
 class d extends i.Ay.PersistedStore {
@@ -21,7 +21,7 @@ class d extends i.Ay.PersistedStore {
         return c
     }
     initialize(e) {
-        this.waitFor(r.A, a.A, l.A), null != e && (c = e)
+        this.waitFor(a.A, r.A, l.A), null != e && (c = e)
     }
     getNotificationStateForGuild(e) {
         return c[e]
@@ -31,7 +31,7 @@ let u = new d(s.h, {
     GUILD_POWERUPS_ACK_NOTIFICATION: function(e) {
         let {
             guildId: t
-        } = e, n = l.A.getGuild(t)?.premiumSubscriberCount ?? 0, i = a.A.getStateForGuild(t), s = r.A.getStateForGuild(t), d = (0, o.k)([...Object.values(i?.unlockedPowerups ?? {}), ...Object.values(s?.entitlements ?? {})]);
+        } = e, n = l.A.getGuild(t)?.premiumSubscriberCount ?? 0, i = r.A.getStateForGuild(t), s = a.A.getStateForGuild(t), d = (0, o.k)([...Object.values(i?.unlockedPowerups ?? {}), ...Object.values(s?.entitlements ?? {})]);
         c = {
             ...c,
             [t]: {

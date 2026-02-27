@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(533781),
-    r = n(265872),
-    a = n(688810),
+    a = n(265872),
+    r = n(688810),
     o = n(384059),
     c = n(421773),
     d = n(729081),
@@ -20,10 +20,10 @@ function p(e) {
         channel: t,
         themeable: n,
         whichPopoutIsOpen: p,
-        setWhichPopoutIsOpen: g
+        setWhichPopoutIsOpen: m
     } = e, {
-        parentAnalyticsLocation: m
-    } = (0, a.Ay)(), _ = s.useRef(null), {
+        parentAnalyticsLocation: g
+    } = (0, r.Ay)(), _ = s.useRef(null), {
         isHovered: f,
         setIsHovered: x,
         onMouseEnter: C,
@@ -40,18 +40,18 @@ function p(e) {
     }, [C, b]), y = s.useCallback(() => {
         null == p && (E(), S())
     }, [E, S, p]), v = s.useCallback(() => {
-        (0, o.X)(m, o.O.GIFTING), p === h.P.GIFTING ? (g?.(void 0), E()) : (null != p ? (N(), C()) : N(), g?.(h.P.GIFTING))
-    }, [C, E, m, N, g, p]);
-    return (0, i.jsx)(r.Y, {
+        (0, o.X)(g, o.O.GIFTING), p === h.P.GIFTING ? (m?.(void 0), E()) : (null != p ? (N(), C()) : N(), m?.(h.P.GIFTING))
+    }, [C, E, g, N, m, p]);
+    return (0, i.jsx)(a.Y, {
         targetElementRef: _,
         shouldShow: f && (p === h.P.GIFTING || null == p) || p === h.P.GIFTING,
-        animation: r.Y.Animation.FADE,
+        animation: a.Y.Animation.FADE,
         animationPosition: "top",
         position: "top",
         align: "center",
         spacing: 16,
         onRequestClose: () => {
-            x(!1), g?.(void 0)
+            x(!1), m?.(void 0)
         },
         renderPopout: e => {
             let {

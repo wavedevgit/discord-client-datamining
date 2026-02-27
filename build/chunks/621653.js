@@ -1,15 +1,16 @@
 /** chunk id: 621653, original params: e,t,s (module,exports,require) **/
 s.d(t, {
-    g: () => o
+    g: () => i
 }), s(321073);
 var r = s(64700),
     l = s(417597),
-    a = s(73153),
-    n = s(248352);
+    n = s(73153),
+    a = s(248352),
+    o = s(652215);
 
-function o() {
+function i() {
     let e = r.useRef(new Map),
-        t = (0, l.bG)([n.A], () => n.A.getUserDiscounts());
+        t = (0, l.bG)([a.A], () => a.A.getUserDiscounts());
     r.useEffect(() => {
         let s = e.current,
             r = Date.now(),
@@ -20,14 +21,14 @@ function o() {
             if (t <= 0) l.push(e.discountId);
             else {
                 let r = setTimeout(() => {
-                    a.h.dispatch({
+                    n.h.dispatch({
                         type: "COLLECTIBLES_USER_DISCOUNTS_EXPIRED",
                         discountIds: [e.discountId]
                     }), s.delete(e.discountId)
-                }, Math.min(0x7fffffff, t));
+                }, Math.min(o.mnr, t));
                 s.set(e.discountId, r)
             }
-        }), l.length > 0 && a.h.dispatch({
+        }), l.length > 0 && n.h.dispatch({
             type: "COLLECTIBLES_USER_DISCOUNTS_EXPIRED",
             discountIds: l
         }), () => {

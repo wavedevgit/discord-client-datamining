@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(311907),
-    r = n(573435),
-    a = n(427157),
+    a = n(573435),
+    r = n(427157),
     o = n(71393),
     c = n(961291),
     d = n(192849);
@@ -36,7 +36,7 @@ let u = e => {
             src: c.rr[(0, c.yI)(t.icon_name)]
         });
         else if (null != t.other_user) {
-            let e = t.other_user instanceof a.A ? t.other_user : new a.A(t.other_user),
+            let e = t.other_user instanceof r.A ? t.other_user : new r.A(t.other_user),
                 l = e.globalName ?? e.username;
             n = (0, i.jsx)("img", {
                 alt: l,
@@ -54,8 +54,8 @@ let u = e => {
         let A = (0, c.rS)(t.type);
         return (0, i.jsxs)("div", {
             className: d.kL,
-            children: [(0, i.jsx)(r.Ay, {
-                mask: null == A ? r.hW.AVATAR_DEFAULT : r.hW.AVATAR_STATUS_ROUND_16,
+            children: [(0, i.jsx)(a.Ay, {
+                mask: null == A ? a.hW.AVATAR_DEFAULT : a.hW.AVATAR_STATUS_ROUND_16,
                 width: 40,
                 height: 40,
                 rightOverhang: 3,

@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(735438),
-    r = n.n(l),
-    a = n(311907),
+    a = n.n(l),
+    r = n(311907),
     o = n(73153),
     c = n(442433),
     d = n(738876),
@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(332456),
     A = n(973854),
     p = n(47167),
-    g = n(698718),
-    m = n(355622),
+    m = n(698718),
+    g = n(355622),
     _ = n(58736),
     f = n(353428),
     x = n(378570),
@@ -37,10 +37,10 @@ function j(e) {
             baseChannelId: R,
             channelViewSource: O = "Split View"
         } = e,
-        L = (0, a.bG)([C.A], () => C.A.getChannel(j)),
-        M = (0, a.bG)([I.A], () => I.A.getGuild(L?.getGuildId())),
+        L = (0, r.bG)([C.A], () => C.A.getChannel(j)),
+        M = (0, r.bG)([I.A], () => I.A.getGuild(L?.getGuildId())),
         D = (0, p.Ay)(L);
-    t = L, l = (0, a.bG)([N.A], () => null != t && !r().isEmpty(N.A.getVoiceStatesForChannel(t.id))), s.useEffect(() => {
+    t = L, l = (0, r.bG)([N.A], () => null != t && !a().isEmpty(N.A.getVoiceStatesForChannel(t.id))), s.useEffect(() => {
         l && null != t && (o.h.dispatch({
             type: "SIDEBAR_CLOSE",
             baseChannelId: t.parent_id
@@ -94,10 +94,10 @@ function j(e) {
             })
         }), (0, i.jsx)("div", {
             className: v.T,
-            children: (0, i.jsx)(g.A, {
+            children: (0, i.jsx)(m.A, {
                 channel: L,
                 guild: M,
-                chatInputType: m.oU.SIDEBAR
+                chatInputType: g.oU.SIDEBAR
             }, j)
         })]
     })

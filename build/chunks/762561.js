@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(475539),
-    r = n(158954),
-    a = n(311907),
+    a = n(158954),
+    r = n(311907),
     o = n(397927),
     c = n(736653),
     d = n(793574),
@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(713517),
     A = n(182592),
     p = n(594832),
-    g = n(183555),
-    m = n(672385),
+    m = n(183555),
+    g = n(672385),
     _ = n(622543),
     f = n(950191),
     x = n(679492),
@@ -44,13 +44,13 @@ function k(e) {
     let {
         user: t,
         currentUser: n,
-        channel: m
+        channel: g
     } = e, k = __OVERLAY__, V = (0, f.Ay)(t.id), H = (0, c.Ay)(), F = s.useRef(Date.now()), {
         analyticsLocations: K
-    } = (0, u.Ay)(d.A.USER_PROFILE_SIDEBAR), W = (0, g.pb)({
+    } = (0, u.Ay)(d.A.USER_PROFILE_SIDEBAR), W = (0, m.pb)({
         layout: "SIDEBAR",
         userId: t.id,
-        channelId: m.id
+        channelId: g.id
     }), Y = s.useRef(null), {
         isHoveringOrFocusing: z,
         isHovering: X
@@ -68,7 +68,7 @@ function k(e) {
         })
     }, $ = V?.widgets != null && V.widgets.length > 0, {
         defaultWishlistId: Z
-    } = (0, a.cf)([_.A], () => ({
+    } = (0, r.cf)([_.A], () => ({
         defaultWishlistId: _.A.getFirstWishlistId(t.id)
     })), {
         wishlist: ee
@@ -78,7 +78,7 @@ function k(e) {
     }), et = s.useMemo(() => null == ee ? null : ee.items.filter(e => !e.isOwned), [ee]);
     return (0, i.jsx)(u.f5, {
         value: K,
-        children: (0, i.jsx)(g.of, {
+        children: (0, i.jsx)(m.of, {
             value: W,
             openedAt: F.current,
             fetchStartedAt: V?.fetchStartedAt,
@@ -96,7 +96,7 @@ function k(e) {
                     children: [null != q.interactionType && (0, i.jsx)(l.animated.div, {
                         style: J,
                         className: w.tB
-                    }), (0, i.jsxs)(r.d_W, {
+                    }), (0, i.jsxs)(a.d_W, {
                         children: [(0, i.jsxs)(v.A, {
                             children: [(0, i.jsx)(j.A, {
                                 user: t,
@@ -120,12 +120,12 @@ function k(e) {
                             }), (0, i.jsx)(E.A, {
                                 user: t,
                                 displayProfile: V,
-                                channelId: m.id,
+                                channelId: g.id,
                                 themeType: U.d.SIDEBAR,
                                 onOpenProfile: k ? void 0 : Q
                             }), (0, i.jsx)(O.A, {
                                 user: t,
-                                channelId: m.id,
+                                channelId: g.id,
                                 themeType: U.d.SIDEBAR,
                                 disableToolbar: t.bot
                             })]
@@ -133,7 +133,7 @@ function k(e) {
                             user: t,
                             currentUser: n,
                             displayProfile: V,
-                            channel: m,
+                            channel: g,
                             isHoveringOrFocusing: null == q.interactionType && z,
                             onOpenProfile: k ? void 0 : Q
                         }), $ && (0, i.jsx)("div", {
@@ -158,7 +158,7 @@ function k(e) {
                             })
                         }), (0, i.jsx)(M.A, {
                             user: t,
-                            channelId: m.id
+                            channelId: g.id
                         })]
                     }), !k && (0, i.jsx)(B, {
                         handleOpenProfile: Q,
@@ -178,14 +178,14 @@ let B = e => {
         handleOpenProfile: t,
         analyticsLocations: n,
         context: l
-    } = e, [r, a] = s.useState("interactive-text-default");
+    } = e, [a, r] = s.useState("interactive-text-default");
     return (0, i.jsx)("div", {
         className: w.qr,
         children: (0, i.jsx)(o.DUT, {
-            onMouseEnter: () => a("interactive-text-hover"),
-            onMouseLeave: () => a("interactive-text-default"),
+            onMouseEnter: () => r("interactive-text-hover"),
+            onMouseLeave: () => r("interactive-text-default"),
             onClick: () => {
-                t(), (0, m.Wn)({
+                t(), (0, g.Wn)({
                     action: "PRESS_VIEW_PROFILE",
                     analyticsLocations: n,
                     ...l
@@ -193,7 +193,7 @@ let B = e => {
             },
             className: w.wC,
             children: (0, i.jsx)(o.Text, {
-                color: r,
+                color: a,
                 variant: "text-sm/normal",
                 children: P.intl.string(P.t["+Xp3hq"])
             })

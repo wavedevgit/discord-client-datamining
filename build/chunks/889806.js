@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(311907),
+    a = n.n(l),
+    r = n(311907),
     o = n(397927),
     c = n(308528),
     d = n(442433),
@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(811024),
     A = n(685399),
     p = n(323073),
-    g = n(963027),
-    m = n(5932),
+    m = n(963027),
+    g = n(5932),
     _ = n(721592),
     f = n(454058),
     x = n(406704),
@@ -90,23 +90,23 @@ class P extends R.Ay {
             embeddedApps: s,
             channelIsContentGated: l
         } = this.props, {
-            shouldShowActivities: r
+            shouldShowActivities: a
         } = this.state;
         if (t.isModeratorReportChannel() || l) return null;
         let {
-            standardPopoverGap: a
+            standardPopoverGap: r
         } = (0, v.eP)({
             guildId: t.getGuildId() ?? void 0,
             location: "TextChannel"
         });
-        return null != s && s.length > 0 && r && !n ? (0, i.jsx)(M.A, {
+        return null != s && s.length > 0 && a && !n ? (0, i.jsx)(M.A, {
             onAction: this.handleActivitiesPopoutClose,
             channel: t,
-            isStandardGap: null != a
+            isStandardGap: null != r
         }) : (0, i.jsx)(j.A, {
             ...e,
             channel: this.props.channel,
-            isStandardGap: null != a
+            isStandardGap: null != r
         })
     };
     componentWillUnmount() {
@@ -181,7 +181,7 @@ class P extends R.Ay {
             selected: n,
             muted: s,
             unread: l,
-            hasActiveThreads: a,
+            hasActiveThreads: r,
             hasMoreActiveThreads: c,
             mentionCount: d,
             connectChannelDropTarget: u,
@@ -196,13 +196,13 @@ class P extends R.Ay {
             resolvedUnreadSetting: I,
             withGuildIcon: N,
             enableActivities: b
-        } = this.props, S = b && null != E && E.length > 0, T = (0, m.M)(x), {
+        } = this.props, S = b && null != E && E.length > 0, T = (0, g.M)(x), {
             standardPopoverGap: y
         } = (0, v.eP)({
             guildId: e.getGuildId() ?? void 0,
             location: "TextChannel"
         }), j = (0, i.jsx)("li", {
-            className: r()(this.getClassName(), {
+            className: a()(this.getClassName(), {
                 [U.r9]: this.isDisabled(),
                 [U.wH]: n
             }),
@@ -225,7 +225,7 @@ class P extends R.Ay {
                     muted: s,
                     unread: l,
                     mentionCount: d,
-                    hasActiveThreads: a,
+                    hasActiveThreads: r,
                     subtitle: T?.subtitle,
                     subtitleColor: T?.color,
                     onMouseDown: this.handleMouseDown,
@@ -235,7 +235,7 @@ class P extends R.Ay {
                     channelTypeOverride: C ? D.rbe.GUILD_TEXT : void 0,
                     resolvedUnreadSetting: I,
                     withGuildIcon: N,
-                    "aria-label": (0, g.Ay)({
+                    "aria-label": (0, m.Ay)({
                         channel: e,
                         unread: l,
                         mentionCount: d,
@@ -260,38 +260,38 @@ function k(e) {
         guild: n,
         disableSorting: s,
         isFavoriteCategory: l,
-        muted: r,
+        muted: a,
         selected: o
     } = e, {
         hasActiveThreads: c,
         hasMoreActiveThreads: d
-    } = (0, x.NR)(t), u = (0, a.cf)([S.Ay], () => ({
+    } = (0, x.NR)(t), u = (0, r.cf)([S.Ay], () => ({
         unread: S.Ay.hasUnread(t.id),
         ackMessageId: S.Ay.ackMessageId(t.id),
         isLowImportanceMention: S.Ay.getIsMentionLowImportance(t.id)
-    })), g = (0, a.bG)([T.Ay], () => T.Ay.resolveUnreadSetting(t)), m = (0, a.cf)([C.A, N.A], () => {
+    })), m = (0, r.bG)([T.Ay], () => T.Ay.resolveUnreadSetting(t)), g = (0, r.cf)([C.A, N.A], () => {
         let e = C.A.getChannel(t.parent_id);
         return {
             canManageChannel: N.A.can(D.xBc.MANAGE_CHANNELS, t),
             canReorderChannel: !0 !== s && (n.id === G.Vc || (null != e ? N.A.can(D.xBc.MANAGE_CHANNELS, e) : N.A.can(D.xBc.MANAGE_CHANNELS, n)))
         }
-    }), I = (0, a.bG)([f.A], () => f.A.shouldIndicateNewChannel(n.id, t.id)), {
+    }), I = (0, r.bG)([f.A], () => f.A.shouldIndicateNewChannel(n.id, t.id)), {
         needSubscriptionToAccess: y,
         isSubscriptionGated: v
-    } = (0, _.A)(t.id), j = (0, a.bG)([T.Ay], () => T.Ay.isFavorite(n.id, t.id)), R = (0, p.vL)(t), L = (0, h.Gp)(t.id), M = (0, O.A)({
+    } = (0, _.A)(t.id), j = (0, r.bG)([T.Ay], () => T.Ay.isFavorite(n.id, t.id)), R = (0, p.vL)(t), L = (0, h.Gp)(t.id), M = (0, O.A)({
         channel: t,
         isChannelCollapsed: !1,
         isChannelSelected: o,
         isSubscriptionGated: v,
         needSubscriptionToAccess: y,
         isNewChannel: I,
-        muted: r,
+        muted: a,
         enableActivities: L,
-        resolvedUnreadSetting: g
+        resolvedUnreadSetting: m
     }), U = (0, A.Ay)(t);
-    return (0, a.bG)([b.A, E.Ay], () => b.A.getChannelId() !== t.id && E.Ay.isCurrentUserGuest(t.getGuildId())) ? null : (0, i.jsx)(w, {
+    return (0, r.bG)([b.A, E.Ay], () => b.A.getChannelId() !== t.id && E.Ay.isCurrentUserGuest(t.getGuildId())) ? null : (0, i.jsx)(w, {
         ...u,
-        ...m,
+        ...g,
         ...e,
         hasActiveThreads: c,
         hasMoreActiveThreads: d,
@@ -302,7 +302,7 @@ function k(e) {
         channelIsContentGated: R,
         channelInfo: M,
         embeddedApps: U,
-        resolvedUnreadSetting: g,
+        resolvedUnreadSetting: m,
         hasChannelInfo: null != M,
         enableActivities: L
     })

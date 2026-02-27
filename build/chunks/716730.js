@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(735438),
-    r = n(311907),
-    a = n(397927),
+    a = n(311907),
+    r = n(397927),
     o = n(315502),
     c = n(709562),
     d = n(222823),
@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(234320),
     A = n(795816),
     p = n(933958),
-    g = n(5867),
-    m = n(652215),
+    m = n(5867),
+    g = n(652215),
     _ = n(985018),
     f = n(766924);
 
@@ -25,18 +25,18 @@ function x(e) {
         channelId: t,
         className: n,
         ...x
-    } = e, C = s.useRef(null), E = (0, r.bG)([p.Ay], () => p.Ay.getFocusedLayout() === g.E8.RESIZABLE), I = s.useCallback(() => {
-        let e = E ? g.E8.NO_CHAT : g.E8.RESIZABLE;
+    } = e, C = s.useRef(null), E = (0, a.bG)([p.Ay], () => p.Ay.getFocusedLayout() === m.E8.RESIZABLE), I = s.useCallback(() => {
+        let e = E ? m.E8.NO_CHAT : m.E8.RESIZABLE;
         (0, A.i5)(e)
     }, [E]), {
         unreadCount: N,
         mentionCount: b
     } = function(e) {
-        let t = (0, r.bG)([u.A], () => !(0, l.isEmpty)(u.A.getTypingUsers(e)), [e]),
+        let t = (0, a.bG)([u.A], () => !(0, l.isEmpty)(u.A.getTypingUsers(e)), [e]),
             {
                 unreadCount: n,
                 mentionCount: i
-            } = (0, r.cf)([d.Ay], () => ({
+            } = (0, a.cf)([d.Ay], () => ({
                 unreadCount: d.Ay.getUnreadCount(e),
                 mentionCount: d.Ay.getMentionCount(e)
             }), [e]);
@@ -49,7 +49,7 @@ function x(e) {
         C.current?.focus()
     }, []);
     (0, h.Vo)({
-        event: m.jej.FOCUS_CHAT_BUTTON,
+        event: g.jej.FOCUS_CHAT_BUTTON,
         handler: S
     });
     let T = E ? _.intl.string(_.t["5MstTl"]) : _.intl.string(_.t.kkKapG),
@@ -57,7 +57,7 @@ function x(e) {
     b > 0 && y.push(_.intl.formatToPlainString(_.t["3l1GOx"], {
         mentionCount: b
     })), N > 0 && y.push(_.intl.string(_.t.x5zAGZ));
-    let v = (0, r.bG)([p.Ay], () => p.Ay.getFocusedLayout()),
+    let v = (0, a.bG)([p.Ay], () => p.Ay.getFocusedLayout()),
         j = b > 0 ? b : N,
         R = j > 0;
     return (0, i.jsxs)("div", {
@@ -69,7 +69,7 @@ function x(e) {
             label: T,
             "aria-label": y.join(", "),
             tooltipPosition: "top",
-            iconComponent: v === g.E8.NO_CHAT ? a.jQp : a.g8p,
+            iconComponent: v === m.E8.NO_CHAT ? r.jQp : r.g8p,
             themeable: !0,
             className: n,
             ...x

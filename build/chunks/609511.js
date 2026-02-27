@@ -1,12 +1,12 @@
 /** chunk id: 609511, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => a
+    A: () => r
 });
 var i = n(311907),
     s = n(73153);
 let l = {};
-class r extends i.Ay.PersistedStore {
+class a extends i.Ay.PersistedStore {
     static displayName = "GuildPromptsStore";
     static persistKey = "GuildPromptsStore";
     initialize(e) {
@@ -23,7 +23,7 @@ class r extends i.Ay.PersistedStore {
         return l
     }
 }
-let a = new r(s.h, {
+let r = new a(s.h, {
     GUILD_PROMPT_VIEWED: function(e) {
         let {
             prompt: t,

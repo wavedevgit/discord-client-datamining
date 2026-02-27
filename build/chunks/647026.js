@@ -7,8 +7,8 @@ var i = n(627968);
 n(64700);
 var s = n(397927),
     l = n(792831),
-    r = n(226694),
-    a = n(985018),
+    a = n(226694),
+    r = n(985018),
     o = n(10544),
     c = n(898876),
     d = n(578576);
@@ -19,8 +19,8 @@ let u = e => {
         mostRecentQuery: h,
         handleClearSearch: A,
         handleSearchKeyPress: p,
-        handleCreateOrAddGuild: g,
-        searchResults: m,
+        handleCreateOrAddGuild: m,
+        searchResults: g,
         searchFetching: _
     } = e;
     if (_) t = (0, i.jsx)("div", {
@@ -29,15 +29,15 @@ let u = e => {
             className: o.u1
         })
     });
-    else if (0 === m.length) {
-        let e = null != g ? a.intl.format(a.t.qWFupn, {
+    else if (0 === g.length) {
+        let e = null != m ? r.intl.format(r.t.qWFupn, {
             addServerHook: function(e, t) {
                 return (0, i.jsx)(s.MzZ, {
-                    onClick: g,
+                    onClick: m,
                     children: e
                 }, t)
             }
-        }) : a.intl.string(a.t.vYyEnv);
+        }) : r.intl.string(r.t.vYyEnv);
         t = (0, i.jsxs)("div", {
             className: c.Je,
             children: [(0, i.jsx)("img", {
@@ -48,7 +48,7 @@ let u = e => {
                 variant: "heading-xl/semibold",
                 color: "text-strong",
                 className: c.gR,
-                children: a.intl.string(a.t["6HXiuE"])
+                children: r.intl.string(r.t["6HXiuE"])
             }), (0, i.jsx)(s.Text, {
                 variant: "text-md/normal",
                 color: "text-default",
@@ -58,7 +58,7 @@ let u = e => {
         })
     } else t = (0, i.jsx)("div", {
         className: o.vY,
-        children: m.map(e => (0, i.jsx)(r.A, {
+        children: g.map(e => (0, i.jsx)(a.A, {
             entry: e
         }, e.guildId))
     });
@@ -79,15 +79,15 @@ let u = e => {
                     }), (0, i.jsx)(s.Heading, {
                         variant: "heading-xl/semibold",
                         className: c.s7,
-                        children: a.intl.format(a.t.UkOHRd, {
-                            numResults: m.length,
+                        children: r.intl.format(r.t.UkOHRd, {
+                            numResults: g.length,
                             query: h
                         })
                     })]
                 }), (0, i.jsx)(s.IWV, {
                     query: n,
-                    "aria-label": a.intl.string(a.t.nL2wKD),
-                    placeholder: a.intl.string(a.t.nL2wKD),
+                    "aria-label": r.intl.string(r.t.nL2wKD),
+                    placeholder: r.intl.string(r.t.nL2wKD),
                     onChange: u,
                     onClear: A,
                     onKeyDown: p

@@ -1,6 +1,6 @@
 /** chunk id: 856686, original params: e,t,s (module,exports,require) **/
 s.d(t, {
-    S: () => a
+    S: () => n
 });
 var r = s(353640);
 let l = {
@@ -11,7 +11,7 @@ let l = {
         searchError: null,
         isFetchingResults: !1
     },
-    a = (0, r.v)(e => ({
+    n = (0, r.v)(e => ({
         ...l,
         onSetResponse: t => {
             let s = Math.floor(t.pageOffset / t.pageLimit) + 1;

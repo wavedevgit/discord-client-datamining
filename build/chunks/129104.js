@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(311907),
-    r = n(397927),
-    a = n(565645),
+    a = n(397927),
+    r = n(565645),
     o = n(375499),
     c = n(937773),
     d = n(961350),
@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(309010),
     A = n(559405),
     p = n(652215),
-    g = n(307731),
-    m = n(680930);
+    m = n(307731),
+    g = n(680930);
 
 function _(e) {
     let {
@@ -25,12 +25,12 @@ function _(e) {
         selectedDefaultStatus: _,
         setIsEmojiPickerOpen: f,
         defaultStatusVariant: x
-    } = e, C = s.useRef(null), E = (0, l.bG)([h.A, u.A], () => u.A.getChannel(h.A.getVoiceChannelId())), I = s.useCallback(() => null != t ? (0, i.jsx)(a.A, {
+    } = e, C = s.useRef(null), E = (0, l.bG)([h.A, u.A], () => u.A.getChannel(h.A.getVoiceChannelId())), I = s.useCallback(() => null != t ? (0, i.jsx)(r.A, {
         emojiId: t.id,
         emojiName: t.name,
         animated: !!t.animated
     }) : null != _ ? (0, i.jsx)(A.A, {
-        className: m.Kk,
+        className: g.Kk,
         userId: d.default.getId(),
         size: 20,
         hangStatusActivity: {
@@ -39,7 +39,7 @@ function _(e) {
         },
         fallbackVariant: x
     }) : null, [t, x, _]);
-    return (0, i.jsx)(r.YNO, {
+    return (0, i.jsx)(a.YNO, {
         targetElementRef: C,
         onRequestOpen: () => f(!0),
         onRequestClose: () => f(!1),
@@ -66,11 +66,11 @@ function _(e) {
                         animated: !1
                     }), s && t()
                 },
-                pickerIntention: g.b_.STATUS
+                pickerIntention: m.b_.STATUS
             })
         },
         position: "left",
-        animation: r.YNO.Animation.NONE,
+        animation: a.YNO.Animation.NONE,
         align: "top",
         children: (e, n) => {
             let {

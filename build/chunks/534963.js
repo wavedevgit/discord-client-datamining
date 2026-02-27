@@ -1,12 +1,12 @@
 /** chunk id: 534963, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => r
+    A: () => a
 });
 var i = n(562465),
     s = n(73153),
     l = n(652215);
-let r = {
+let a = {
     fetchRegions(e) {
         i.Bo.get({
             url: l.Rsh.REGIONS(e),

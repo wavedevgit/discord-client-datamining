@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(475539),
+    a = n.n(l),
+    r = n(475539),
     o = n(607399),
     c = n(311907),
     d = n(990078),
@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(454938),
     A = n(855687),
     p = n(731091),
-    g = n(544028),
-    m = n(253932),
+    m = n(544028),
+    g = n(253932),
     _ = n(576705),
     f = n(486020),
     x = n(885631),
@@ -35,21 +35,21 @@ function S(e) {
     } = e, {
         value: c
     } = n.springs;
-    return (0, i.jsx)(a.animated.div, {
+    return (0, i.jsx)(r.animated.div, {
         className: b.nI,
         style: {
             opacity: c,
             transform: c.to(e => `translateY(-${(1-e)*90}px)`)
         },
-        children: (0, i.jsx)(a.animated.div, {
-            className: r()(b._e, {
+        children: (0, i.jsx)(r.animated.div, {
+            className: a()(b._e, {
                 [b.fr]: o.Fr
             }),
             style: {
                 transform: c.to(e => `translateY(${(1-e)*90}px)`)
             },
             children: (0, i.jsx)("img", {
-                className: r()(b.Q, {
+                className: a()(b.Q, {
                     [b.fr]: o.Fr
                 }),
                 src: f.Ay.getGuildBannerURL({
@@ -93,9 +93,9 @@ function T(e) {
         })
     });
     return l ? (0, i.jsx)("div", {
-        className: r()(b.pS, b.W$),
+        className: a()(b.pS, b.W$),
         children: h
-    }) : (0, i.jsx)(a.animated.div, {
+    }) : (0, i.jsx)(r.animated.div, {
         className: b.pS,
         style: s ? {
             opacity: o
@@ -133,13 +133,13 @@ function R(e) {
     let {
         bannerVisible: t,
         guild: l,
-        onClick: r,
-        onContextMenu: a,
+        onClick: a,
+        onContextMenu: r,
         ariaControls: o,
         ariaExpanded: h,
-        children: g
-    } = e, m = (0, c.bG)([_.A], () => (0, A.K)(_.A, l)), f = s.useCallback(() => {
-        m ? (0, u.mMO)(async () => {
+        children: m
+    } = e, g = (0, c.bG)([_.A], () => (0, A.K)(_.A, l)), f = s.useCallback(() => {
+        g ? (0, u.mMO)(async () => {
             let {
                 default: e
             } = await Promise.all([n.e("43600"), n.e("52537")]).then(n.bind(n, 234355));
@@ -156,7 +156,7 @@ function R(e) {
                 ...t
             })
         })
-    }, [m, l]);
+    }, [g, l]);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)(u.DUT, {
             className: b.Vm,
@@ -165,8 +165,8 @@ function R(e) {
             }),
             "aria-controls": o,
             "aria-expanded": h,
-            onContextMenu: a,
-            onClick: r,
+            onContextMenu: r,
+            onClick: a,
             children: [(0, i.jsxs)("div", {
                 className: b.LO,
                 children: [(0, i.jsx)(C.A, {
@@ -177,7 +177,7 @@ function R(e) {
                 })]
             }), (0, i.jsx)("div", {
                 className: b.dx,
-                children: g
+                children: m
             })]
         }), !j.includes(l.id) && (0, i.jsx)(d.m, {
             text: N.intl.string(N.t.Sd8Ixw),
@@ -201,7 +201,7 @@ let O = s.memo(function(e) {
         ref: t,
         bannerVisible: n,
         controller: l,
-        className: a,
+        className: r,
         onClick: d,
         onContextMenu: A,
         onMouseDown: p,
@@ -215,7 +215,7 @@ let O = s.memo(function(e) {
         headerClassName: O,
         communityInfoVisible: M,
         hasSubheader: D
-    } = e, G = N.features.has(E.GuildFeatures.ANIMATED_BANNER), U = (0, h.A)(N), P = !U && (0, x.A)(N), w = !U && M, k = (0, f.VI)(y) && G && !_, [B, V] = s.useState(!1), H = s.useRef(!1), F = s.useRef(null), K = t ?? F, W = s.useRef(void 0), Y = m.kt.getSetting(), z = (0, c.bG)([g.A], () => g.A.theme);
+    } = e, G = N.features.has(E.GuildFeatures.ANIMATED_BANNER), U = (0, h.A)(N), P = !U && (0, x.A)(N), w = !U && M, k = (0, f.VI)(y) && G && !_, [B, V] = s.useState(!1), H = s.useRef(!1), F = s.useRef(null), K = t ?? F, W = s.useRef(void 0), Y = g.kt.getSetting(), z = (0, c.bG)([m.A], () => m.A.theme);
     s.useEffect(() => {
         if (k && n && !H.current && Y) return V(!0), W.current = setTimeout(() => {
             V(!1)
@@ -239,7 +239,7 @@ let O = s.memo(function(e) {
                 "data-has-banner": X(),
                 "data-banner-visible": n,
                 ref: K,
-                className: r()(a, {
+                className: a()(r, {
                     [b.kL]: !0,
                     [b.r9]: X(),
                     [b.Pi]: n,
@@ -249,11 +249,11 @@ let O = s.memo(function(e) {
                 onMouseDown: p,
                 onContextMenu: A,
                 children: [(0, i.jsxs)("header", {
-                    className: r()(b.wx, O, {
+                    className: a()(b.wx, O, {
                         [b.jD]: o.Fr
                     }),
                     children: [(0, i.jsx)("div", {
-                        className: r()(b.VW, b.Nk),
+                        className: a()(b.VW, b.Nk),
                         children: (0, i.jsx)(R, {
                             bannerVisible: n,
                             guild: N,
@@ -298,17 +298,17 @@ function L(e) {
         theme: n
     } = (0, u.wRf)(), s = t.springs.value;
     return (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(a.animated.div, {
+        children: [(0, i.jsx)(r.animated.div, {
             className: b.UL,
             style: {
                 opacity: s.to(e => .5 * e)
             }
-        }), (0, i.jsx)(a.animated.div, {
+        }), (0, i.jsx)(r.animated.div, {
             className: b.ze,
             style: {
                 opacity: s.to(e => e)
             }
-        }), (0, i.jsx)(a.animated.div, {
+        }), (0, i.jsx)(r.animated.div, {
             className: b.iI,
             style: {
                 opacity: s.to(e => (1 - e) * 6),

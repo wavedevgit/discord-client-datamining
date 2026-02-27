@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(475539),
+    a = n.n(l),
+    r = n(475539),
     o = n(110259),
     c = n(311907),
     d = n(435371),
@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(964486),
     A = n(793574),
     p = n(688810),
-    g = n(139286),
-    m = n(713517),
+    m = n(139286),
+    g = n(713517),
     _ = n(644836),
     f = n(71393),
     x = n(576705),
@@ -35,7 +35,7 @@ function y(e) {
     } = e, y = s.useRef(null), [v, j] = s.useState(!1), R = s.useRef(null), O = s.useRef(null), [L, M] = s.useState(0), {
         analyticsLocations: D
     } = (0, p.Ay)(A.A.VOICE_INVITE_SUGGESTIONS);
-    (0, g.A)({
+    (0, m.A)({
         name: o.ImpressionNames.VOICE_INVITE_SUGGESTIONS_ENTRYPOINT,
         type: o.ImpressionTypes.VIEW,
         properties: {
@@ -56,7 +56,7 @@ function y(e) {
         B = s.useRef(null),
         {
             isHoveringOrFocusing: V
-        } = (0, m.A)(G ? y : B),
+        } = (0, g.A)(G ? y : B),
         [H, F] = s.useState(!1),
         K = V || H,
         W = s.useCallback(function() {
@@ -142,12 +142,12 @@ function y(e) {
                 onClick: t,
                 ...n
             } = e;
-            return (0, i.jsx)(a.animated.div, {
+            return (0, i.jsx)(r.animated.div, {
                 className: b.lY,
                 style: z,
                 children: (0, i.jsx)(u.DUT, {
                     innerRef: y,
-                    className: r()({
+                    className: a()({
                         [b.vk]: !w
                     }, S.q7, S.L9, S.vk),
                     "aria-disabled": w,
@@ -155,14 +155,14 @@ function y(e) {
                     onClick: Y,
                     ...n,
                     children: (0, i.jsxs)("div", {
-                        className: r()(b.Qs, S.Qs),
+                        className: a()(b.Qs, S.Qs),
                         children: [(0, i.jsxs)("div", {
                             className: b.R4,
                             style: {
                                 "--custom-voice-invite-suggestions-timer-size": 24
                             },
                             children: [(0, i.jsxs)("svg", {
-                                className: r()(b.O1, {
+                                className: a()(b.O1, {
                                     [b.Ft]: K
                                 }),
                                 viewBox: "0 0 24 24",
@@ -179,7 +179,7 @@ function y(e) {
                                 width: 14,
                                 height: 14,
                                 color: "currentColor",
-                                className: r()(b.Hk, b.Kk)
+                                className: a()(b.Hk, b.Kk)
                             })]
                         }), (0, i.jsx)(d.m_, {
                             text: N.intl.string(N.t["EE+P0H"]),

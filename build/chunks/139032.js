@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(64700),
     s = n(512750),
     l = n(311907),
-    r = n(71393),
-    a = n(645619),
+    a = n(71393),
+    r = n(645619),
     o = n(832547),
     c = n(864310),
     d = n(568065),
@@ -36,11 +36,11 @@ let h = [{
 }];
 
 function A(e) {
-    let t = (0, l.bG)([a.A], () => a.A.getStateForGuild(e)),
+    let t = (0, l.bG)([r.A], () => r.A.getStateForGuild(e)),
         {
             available: n
         } = (0, c.A)(e),
-        s = (0, l.bG)([r.A], () => r.A.getGuild(e)?.features.has(u.GuildFeatures.PREMIUM_TIER_3_OVERRIDE) === !0),
+        s = (0, l.bG)([a.A], () => a.A.getGuild(e)?.features.has(u.GuildFeatures.PREMIUM_TIER_3_OVERRIDE) === !0),
         A = (0, o.M)("useBoostToUnlockFeaturedPowerup"),
         [p] = i.useState(() => Math.random());
     return i.useMemo(() => {
@@ -51,12 +51,12 @@ function A(e) {
         } = t, l = [];
         for (let t of h) {
             let {
-                skuId: r,
-                threshold: a
-            } = t, o = e[r];
-            if (null == o || s && d.o2.has(r) || null != i[r] || !o.dependencies.every(e => null != i[e])) continue;
+                skuId: a,
+                threshold: r
+            } = t, o = e[a];
+            if (null == o || s && d.o2.has(a) || null != i[a] || !o.dependencies.every(e => null != i[e])) continue;
             let c = o.cost - n;
-            c > 0 && c <= a && l.push(o)
+            c > 0 && c <= r && l.push(o)
         }
         if (l.length > 0) {
             let e = Math.floor(p * l.length);

@@ -7,8 +7,8 @@ n.d(t, {
 var i = n(627968),
     s = n(311907),
     l = n(397927),
-    r = n(253932),
-    a = n(780964),
+    a = n(253932),
+    r = n(780964),
     o = n(840065),
     c = n(711014),
     d = n(115063),
@@ -16,10 +16,10 @@ var i = n(627968),
     h = n(704037),
     A = n(652215),
     p = n(536482),
-    g = n(985018),
-    m = n(259533);
+    m = n(985018),
+    g = n(259533);
 let _ = () => {
-    (0, o.openUserSettings)(a.X.ACTIVITY_PRIVACY_PANEL, {
+    (0, o.openUserSettings)(r.X.ACTIVITY_PRIVACY_PANEL, {
         section: A.nc_.ACTIVITY_PRIVACY
     })
 };
@@ -30,10 +30,10 @@ function f(e) {
         onClick: n
     } = e;
     return (0, i.jsxs)(l.DUT, {
-        className: m.E1,
+        className: g.E1,
         onClick: n,
         children: [(0, i.jsx)("div", {
-            className: m.j3,
+            className: g.j3,
             children: t
         }), (0, i.jsx)(l._BQ, {
             color: l.LU0.colors.TEXT_SUBTLE,
@@ -45,16 +45,16 @@ function f(e) {
 function x(e) {
     let {
         onClosePopout: t
-    } = e, n = r.tz.useSetting(), a = (0, s.bG)([c.Ay], () => c.Ay.getFlattenedGuildIds()), o = (0, d.Kk)(), A = a.filter(e => !o.has(e)), m = (0, u.AB)(A);
-    return 0 === a.length ? null : (0, i.jsxs)(f, {
+    } = e, n = a.tz.useSetting(), r = (0, s.bG)([c.Ay], () => c.Ay.getFlattenedGuildIds()), o = (0, d.Kk)(), A = r.filter(e => !o.has(e)), g = (0, u.AB)(A);
+    return 0 === r.length ? null : (0, i.jsxs)(f, {
         onClick: () => {
             t(), _()
         },
         children: [(0, i.jsx)(l.Text, {
             variant: "text-sm/semibold",
-            children: g.intl.string(n ? p.default["3GrhnF"] : p.default["54ycKJ"])
+            children: m.intl.string(n ? p.default["3GrhnF"] : p.default["54ycKJ"])
         }), (0, i.jsx)(h.l, {
-            guildIds: m,
+            guildIds: g,
             prioritizeSelectedGuild: !0
         })]
     })

@@ -6,17 +6,17 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(812729),
-    o = n.n(a),
+    a = n.n(l),
+    r = n(812729),
+    o = n.n(r),
     c = n(735438),
     d = n(311907),
     u = n(554146),
     h = n(342494),
     A = n(397927),
     p = n(51183),
-    g = n(932001),
-    m = n(961350),
+    m = n(932001),
+    g = n(961350),
     _ = n(954571),
     f = n(69555),
     x = n(140547),
@@ -44,14 +44,14 @@ function P(e) {
         channel: t,
         setIsHangStatusInputFocused: n,
         setIsEmojiPickerOpen: l,
-        setPopoutRef: a
+        setPopoutRef: r
     } = e, P = s.useRef(null), w = (0, d.bG)([C.A], () => C.A.getCustomHangStatus()), k = (0, S.A)(), B = (0, d.bG)([C.A], () => C.A.getFavoritedStatuses()), {
         defaultStatusVariant: V,
         allowPermanentClear: H
     } = (0, x.$j)({
         guildId: t.guild_id,
         location: "HangStatusPicker"
-    }), F = (0, E.hy)(V), K = s.useRef(null), [W, Y] = s.useState(w?.status ?? ""), [z, X] = s.useState(w?.emoji ?? null), [q, J] = s.useState(!1), Q = (0, d.bG)([C.A], () => C.A.getCurrentHangStatus()), $ = F[Q], Z = B.length > 0, ee = null == W || "" === W.trim(), et = (0, b.A)(t), en = W.trim().length > 0 && W.trim() !== w?.status?.trim() || null != z && !o()(z, w?.emoji), [ei, es] = s.useState(!1), el = (0, d.bG)([C.A], () => C.A.getFavoritedStatuses().length >= C.x), er = W.length > 0 || null != z, [ea, eo] = (0, g.kn)([u.M.HANG_STATUS_POPOVER_NUX]);
+    }), F = (0, E.hy)(V), K = s.useRef(null), [W, Y] = s.useState(w?.status ?? ""), [z, X] = s.useState(w?.emoji ?? null), [q, J] = s.useState(!1), Q = (0, d.bG)([C.A], () => C.A.getCurrentHangStatus()), $ = F[Q], Z = B.length > 0, ee = null == W || "" === W.trim(), et = (0, b.A)(t), en = W.trim().length > 0 && W.trim() !== w?.status?.trim() || null != z && !o()(z, w?.emoji), [ei, es] = s.useState(!1), el = (0, d.bG)([C.A], () => C.A.getFavoritedStatuses().length >= C.x), ea = W.length > 0 || null != z, [er, eo] = (0, m.kn)([u.M.HANG_STATUS_POPOVER_NUX]);
     s.useEffect(() => {
         _.default.track(O.HAw.HANG_STATUS_PICKER_OPENED, {
             ...(0, I.A)(t.id),
@@ -63,8 +63,8 @@ function P(e) {
     }, [W, z, ei]), s.useEffect(() => {
         q || W !== (w?.status ?? "") && "" !== W.trim() ? n(!0) : n(!1)
     }, [W, w?.status, z, w?.emoji, n, q]), s.useEffect(() => {
-        a?.(K?.current)
-    }, [K, a]);
+        r?.(K?.current)
+    }, [K, r]);
     let ec = s.useCallback(e => {
             e !== Q && ((0, f.Iq)(e, !0), null != z && X(null), "" !== W.trim() && Y(""))
         }, [Q, z, W]),
@@ -110,18 +110,18 @@ function P(e) {
                 favorited: !e
             }))
         }, [t.id, el]),
-        eg = s.useCallback(() => {
+        em = s.useCallback(() => {
             n(!1)
         }, [n]),
-        em = s.useCallback(() => {
+        eg = s.useCallback(() => {
             n(!0)
         }, [n]),
         e_ = s.useCallback((e, t, n) => {
             let s = (0, N.A)(e),
                 l = s ? F[e] : null,
-                r = C.A.isFavorited(e),
-                a = s ? (0, i.jsx)(v.A, {
-                    userId: m.default.getId(),
+                a = C.A.isFavorited(e),
+                r = s ? (0, i.jsx)(v.A, {
+                    userId: g.default.getId(),
                     size: 20,
                     hangStatusActivity: {
                         type: O.$pd.HANG_STATUS,
@@ -136,12 +136,12 @@ function P(e) {
                 });
             return (0, i.jsx)(R.u, {
                 label: s ? l?.title ?? "" : e.status,
-                icon: a,
+                icon: r,
                 setStatus: () => {
                     s ? ec(e) : eu(e), J(!1)
                 },
-                isFavorited: r,
-                onFavoriteClick: () => ep(r, e)
+                isFavorited: a,
+                onFavoriteClick: () => ep(a, e)
             }, `${n}-${t}`)
         }, [V, eu, ec, F, ep]),
         ef = s.useCallback(() => {
@@ -155,12 +155,12 @@ function P(e) {
         role: "menu",
         id: "hang-status-picker",
         tabIndex: -1,
-        className: r()(G.menu, D.kL),
+        className: a()(G.menu, D.kL),
         children: [(0, i.jsx)(h.AM, {
             title: M.intl.string(M.t.waaIiO),
             body: M.intl.string(M.t.qDoPah),
             badge: "new",
-            shouldShow: ea === u.M.HANG_STATUS_POPOVER_NUX,
+            shouldShow: er === u.M.HANG_STATUS_POPOVER_NUX,
             graphic: {
                 type: "image",
                 src: U.A
@@ -169,7 +169,7 @@ function P(e) {
             onRequestClose: () => eo(L.i.DISMISS)
         }), (0, i.jsx)("div", {
             role: "group",
-            className: r()(G.groupLabel, D.wO),
+            className: a()(G.groupLabel, D.wO),
             children: (0, i.jsxs)("form", {
                 onSubmit: eh,
                 className: D.hF,
@@ -177,9 +177,9 @@ function P(e) {
                     className: D.bd,
                     children: [(0, i.jsx)(A.ksK, {
                         inputRef: P,
-                        value: q || er ? W : $?.title ?? "",
-                        onBlur: eg,
-                        onFocus: em,
+                        value: q || ea ? W : $?.title ?? "",
+                        onBlur: em,
+                        onFocus: eg,
                         onChange: ex,
                         placeholder: M.intl.string(M.t.KPop4s),
                         leading: {
@@ -187,7 +187,7 @@ function P(e) {
                             button: (0, i.jsx)(y.R, {
                                 customStatusEmoji: z,
                                 setCustomStatusEmoji: X,
-                                selectedDefaultStatus: q || er ? null : Q,
+                                selectedDefaultStatus: q || ea ? null : Q,
                                 defaultStatusVariant: V,
                                 setIsEmojiPickerOpen: l
                             })
@@ -218,7 +218,7 @@ function P(e) {
         }), (0, i.jsxs)(A.HOs, {
             fade: !0,
             role: "group",
-            className: r()(G.groupLabel, D.Os, D.XG),
+            className: a()(G.groupLabel, D.Os, D.XG),
             children: [(0, i.jsx)(j.k, {
                 guildId: t.guild_id,
                 onSetActivityStatus: ed
