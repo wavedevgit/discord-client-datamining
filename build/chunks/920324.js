@@ -1,31 +1,32 @@
 /** chunk id: 920324, original params: e,t,l (module,exports,require) **/
 "use strict";
 l.d(t, {
-    t: () => c
+    t: () => u
 });
 var r = l(627968),
     a = l(64700),
     n = l(179262),
-    i = l(41770),
-    s = l(148702),
-    o = l(785330),
-    d = l(652215);
-let c = {
+    i = l(561769),
+    s = l(41770),
+    o = l(148702),
+    d = l(785330),
+    c = l(652215);
+let u = {
     title: "Layout Builder",
     stories: [{
         name: "Layout Builder",
         id: "layout-builder",
         component: () => {
-            let [e, t] = a.useState(JSON.stringify(i.uG, null, 2)), [l, n] = a.useState(e);
+            let [e, t] = a.useState(JSON.stringify(s.uG, null, 2)), [l, n] = a.useState(e);
             return a.useEffect(() => {
                 try {
-                    (0, o.F2)(JSON.parse(e)) && n(e)
+                    (0, d.F2)(JSON.parse(e)) && n(e)
                 } catch {}
             }, [e]), (0, r.jsxs)("div", {
-                children: [(0, r.jsx)(s.A, {
+                children: [(0, r.jsx)(o.A, {
                     value: e,
                     onChange: e => t(e)
-                }), (0, r.jsx)("hr", {}), (0, r.jsx)(o.Ay, {
+                }), (0, r.jsx)("hr", {}), (0, r.jsx)(d.Ay, {
                     layout: JSON.parse(l)
                 })]
             })
@@ -69,7 +70,7 @@ let c = {
             }, [l?.styles?.backgroundColors, l?.catalogBannerUrl, l?.products]);
             return i ? (0, r.jsx)("div", {
                 children: "Loading..."
-            }) : (0, r.jsx)(o.Ay, {
+            }) : (0, r.jsx)(d.Ay, {
                 layout: s
             })
         },
@@ -81,6 +82,104 @@ let c = {
             }
         }
     }, {
+        name: "Orb Home (sample)",
+        id: "orb-home",
+        component: () => {
+            let e = {
+                id: "orb-home",
+                children: [{
+                    block: "Section",
+                    children: [{
+                        block: "Section",
+                        verticalMargin: 256,
+                        children: []
+                    }, {
+                        block: "Stack",
+                        direction: "horizontal",
+                        justify: "space-between",
+                        children: [{
+                            block: "Stack",
+                            direction: "vertical",
+                            children: [{
+                                block: "Heading",
+                                variant: "heading-xxl/bold",
+                                content: "Introducing Discord Orbs"
+                            }, {
+                                block: "Text",
+                                variant: "text-lg/normal",
+                                content: "Reward your play. Earn through Quests. Spend in the Shop"
+                            }]
+                        }, {
+                            block: "Button",
+                            href: "",
+                            ctaText: "Go to Quest Home"
+                        }]
+                    }, {
+                        block: "Section",
+                        verticalMargin: 64,
+                        children: []
+                    }, {
+                        block: "Section",
+                        children: [{
+                            block: "Grid",
+                            columns: 4,
+                            children: [{
+                                block: "SkuList",
+                                skuBlock: "ShopProductCard",
+                                skuIds: ["1333912750274904064", "1342211853484429445", "1427463138634109025", "1427463138634109026", "1427463138634109027", "1332505467980873728", "1427463138634109028", "1351351503339913256", "1427463138646954035", "1427463138646954036"]
+                            }]
+                        }]
+                    }, {
+                        block: "Section",
+                        children: [{
+                            block: "ContainedHero",
+                            bannerSrc: "https://cdn.discordapp.com/assets/content/1a68031e600ecb954fd6ea9d28ab0c0544457623f7a2c0f2b9137569c32800e8",
+                            backgroundColor: "black"
+                        }]
+                    }, {
+                        block: "Section",
+                        children: [{
+                            block: "SubTemplate",
+                            tenantId: c.FYj,
+                            templateId: "popular-picks"
+                        }]
+                    }]
+                }]
+            };
+            return (0, r.jsxs)("div", {
+                style: {
+                    position: "relative"
+                },
+                children: [(0, r.jsx)("div", {
+                    style: {
+                        position: "absolute",
+                        width: "100%",
+                        height: "100%",
+                        opacity: .4,
+                        top: -168,
+                        left: 0,
+                        right: 0,
+                        backgroundImage: "url('https://cdn.discordapp.com/assets/content/8f774ab3b8482a9fd205e8b7285cc372448c4893d8fe9b50d37ddb70c922240d')",
+                        backgroundSize: "contain",
+                        backgroundRepeat: "no-repeat"
+                    }
+                }), (0, r.jsx)(i.v3.Provider, {
+                    value: {
+                        prioritizedCurrency: i.Hi.ORBS
+                    },
+                    children: (0, r.jsx)("div", {
+                        style: {
+                            position: "relative"
+                        },
+                        children: (0, r.jsx)(d.Ay, {
+                            layout: e
+                        })
+                    })
+                })]
+            })
+        },
+        controls: {}
+    }, {
         name: "Remote Layouts",
         id: "remote-layouts",
         component: e => {
@@ -88,7 +187,7 @@ let c = {
                 layoutId: t,
                 tenantId: l
             } = e;
-            return (0, r.jsx)(o.Qs, {
+            return (0, r.jsx)(d.Qs, {
                 layoutId: t,
                 tenantId: l
             })
@@ -102,7 +201,7 @@ let c = {
             tenantId: {
                 label: "Tenant Id",
                 type: "text",
-                defaultValue: d.FYj
+                defaultValue: c.FYj
             }
         }
     }, {
@@ -113,7 +212,7 @@ let c = {
                 templateId: t,
                 tenantId: l
             } = e;
-            return (0, r.jsx)(o.Z_, {
+            return (0, r.jsx)(d.Z_, {
                 templateId: t,
                 tenantId: l
             })
@@ -127,7 +226,7 @@ let c = {
             tenantId: {
                 label: "Tenant Id",
                 type: "text",
-                defaultValue: d.FYj
+                defaultValue: c.FYj
             }
         }
     }]

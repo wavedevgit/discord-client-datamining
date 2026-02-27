@@ -46,8 +46,8 @@ let P = +C.A.Millis.DAY,
     Y = {},
     q = 0,
     W = !1,
-    K = !1,
     z = !1,
+    K = !1,
     $ = null,
     Q = null,
     X = 0,
@@ -194,7 +194,7 @@ function em(e) {
         t.add(e.content.id), V[a.id] = a, null != b.A.getReadTimestamp(a.id) ? l.push(a) : r.push(a)
     }), Z = eA(Z, r, y.Mm.ACTIVITY, 5), J = eA(J, l, y.Mm.ACTIVITY, 5), eh()), null != k.load_id && M !== k.load_id && (S.k.trackFeedLoaded({
         newTrackingProps: k,
-        hasNewContent: K,
+        hasNewContent: z,
         unreadFeedItems: Z,
         readFeedItems: J,
         homeSessionId: "gravity"
@@ -254,11 +254,11 @@ function eN(e) {
         channelId: t
     } = e, n = [], i = [];
     Z.forEach((e, r) => {
-        (r > ee || !z) && e.type === y.Mm.MESSAGE && e.data.channel_id === t ? n.push(e) : i.push(e)
+        (r > ee || !K) && e.type === y.Mm.MESSAGE && e.data.channel_id === t ? n.push(e) : i.push(e)
     });
-    let r = K,
+    let r = z,
         [l, a] = ep(U);
-    if (G = eg(l, t), K = z ? r && G.length >= y.$P : r && ec(i, U), 0 === n.length && r === K) return !1;
+    if (G = eg(l, t), z = K ? r && G.length >= y.$P : r && ec(i, U), 0 === n.length && r === z) return !1;
     0 !== n.length && (Z = i, J = [...J, ...n])
 }
 class eS extends r.Ay.PersistedStore {
@@ -319,7 +319,7 @@ class eS extends r.Ay.PersistedStore {
         return F
     }
     hasNewContent() {
-        return K
+        return z
     }
     getCurrentStatusAttachments(e) {
         return null == $ || $[0] !== e ? [] : $[1]
@@ -331,7 +331,7 @@ class eS extends r.Ay.PersistedStore {
         return 5 === X
     }
     hasOpened() {
-        return z
+        return K
     }
     getDiscoverableGuilds() {
         return et
@@ -377,7 +377,7 @@ class eS extends r.Ay.PersistedStore {
 }
 let ex = new eS(l.h, {
     LOGOUT: function() {
-        D = [], U = [], G = [], V = {}, k = {}, B = {}, H = {}, M = null, F = {}, Y = {}, q = 0, W = !1, K = !1, z = !1, Z = [], J = [], ee = 0, w = 0, en = 0, ei = !0, er = !1, el = new Set, Q = null, ea = !1, es = !1, $ = null, eo = 0
+        D = [], U = [], G = [], V = {}, k = {}, B = {}, H = {}, M = null, F = {}, Y = {}, q = 0, W = !1, z = !1, K = !1, Z = [], J = [], ee = 0, w = 0, en = 0, ei = !0, er = !1, el = new Set, Q = null, ea = !1, es = !1, $ = null, eo = 0
     },
     LOAD_ICYMI_FROM_NOTIFICATION: function(e) {
         let {
@@ -435,18 +435,18 @@ let ex = new eS(l.h, {
             feed_item_ids: U.map(e => e.id)
         };
         let [a, s] = ep(U);
-        if (G = eg(a), !z || 0 === q || r) q = 0, !ea && ec(a, U) ? (K = !0, W = !0) : K = !1, em({
+        if (G = eg(a), !K || 0 === q || r) q = 0, !ea && ec(a, U) ? (z = !0, W = !0) : z = !1, em({
             newUnread: a,
             newRead: s
         });
         else {
             q > 0 && (Q = null);
             let e = G.length > y.$P;
-            l || (K = e), e && ((0, O.kx)([...a, ...s], 0, y.w5), a.length + s.length === 0 && (es = !0))
+            l || (z = e), e && ((0, O.kx)([...a, ...s], 0, y.w5), a.length + s.length === 0 && (es = !0))
         }
         S.k.trackFeedLoaded({
             newTrackingProps: k,
-            hasNewContent: K,
+            hasNewContent: z,
             unreadFeedItems: a,
             readFeedItems: s,
             homeSessionId: ea ? "foreground_load" : "background_load"
@@ -566,10 +566,10 @@ let ex = new eS(l.h, {
     },
     RELOAD_ICYMI: function() {
         if (0 === U.length) return !1;
-        em(), K = !1
+        em(), z = !1
     },
     ICYMI_TAB_OPENED: function() {
-        z = !0, w = Date.now(), W && (W = !1, K = !1), X < 5 && X++
+        K = !0, w = Date.now(), W && (W = !1, z = !1), X < 5 && X++
     },
     ICYMI_FEEDBACK_GIVEN: function() {
         X = 6

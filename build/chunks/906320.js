@@ -445,12 +445,12 @@ let W = () => (0, i.jsx)(V, {
         tooltip: w.intl.string(w.t.YGm6SZ),
         onClick: () => g.U()
     }),
-    K = () => (0, i.jsx)(V, {
+    z = () => (0, i.jsx)(V, {
         icon: _.E$n,
         tooltip: w.intl.string(w.t.TVAd5J),
         onClick: () => g.v7()
     }),
-    z = e => {
+    K = e => {
         let {
             item: t
         } = e;
@@ -502,9 +502,9 @@ let W = () => (0, i.jsx)(V, {
                 libraryApplication: e.libraryApplication,
                 size: "sm",
                 source: M.ThZ.APPLICATION_LIBRARY_UPDATES
-            }) : null : null != e.state ? e.state.type !== M.WTw.UP_TO_DATE && (n = e.index > 0 ? (0, i.jsx)(z, {
+            }) : null : null != e.state ? e.state.type !== M.WTw.UP_TO_DATE && (n = e.index > 0 ? (0, i.jsx)(K, {
                 item: e
-            }) : null != t && t.paused ? (0, i.jsx)(W, {}) : (0, i.jsx)(K, {
+            }) : null != t && t.paused ? (0, i.jsx)(W, {}) : (0, i.jsx)(z, {
                 item: e
             }), r = (0, i.jsx)($, {
                 item: e

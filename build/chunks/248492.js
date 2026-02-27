@@ -1,11 +1,11 @@
 /** chunk id: 248492, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => A
 });
 var l = n(627968),
     a = n(64700),
-    i = n(311907),
-    r = n(692617),
+    r = n(311907),
+    i = n(692617),
     s = n(397927),
     d = n(824552),
     o = n(573435),
@@ -16,18 +16,18 @@ var l = n(627968),
     x = n(985018),
     p = n(449154),
     g = n(532406);
-let h = e => {
+let A = e => {
     let {
         entry: t
     } = e, {
         name: n
-    } = t, h = (0, i.bG)([_.default], () => _.default.getNewestTokenForApplication(t.id)), A = t.getIconURL(40) ?? g, b = (0, c.A)({
+    } = t, A = (0, r.bG)([_.default], () => _.default.getNewestTokenForApplication(t.id)), h = t.getIconURL(40) ?? g, b = (0, c.A)({
         application: t
     }), v = a.useRef(!1);
     a.useEffect(() => {
         v.current || (d.A.fetch(), v.current = !0)
     }, []);
-    let f = null != h ? m.default.extractTimestamp(h.id) : void 0;
+    let f = null != A ? m.default.extractTimestamp(A.id) : void 0;
     return (0, l.jsxs)("div", {
         className: p.kL,
         children: [(0, l.jsx)(s.Heading, {
@@ -44,7 +44,7 @@ let h = e => {
                     height: 40,
                     className: p.VE,
                     children: (0, l.jsx)("img", {
-                        src: A,
+                        src: h,
                         alt: "",
                         className: p.Z2
                     })
@@ -59,7 +59,7 @@ let h = e => {
                             color: "text-default",
                             variant: "text-md/normal",
                             children: (0, u.A)(b.length)
-                        }), (0, l.jsx)(r.A, {
+                        }), (0, l.jsx)(i.A, {
                             className: p.uM,
                             guilds: b,
                             maxGuilds: 6

@@ -4,8 +4,8 @@ n.d(t, {
 });
 var l = n(627968),
     a = n(64700),
-    i = n(311907),
-    r = n(397927),
+    r = n(311907),
+    i = n(397927),
     s = n(964486),
     d = n(58149),
     o = n(632738),
@@ -16,24 +16,24 @@ var l = n(627968),
     x = n(369053),
     p = n(652215),
     g = n(985018),
-    h = n(71561);
+    A = n(71561);
 
-function A(e) {
+function h(e) {
     let {
         title: t,
         description: n,
-        onButtonClick: i,
-        trackSettingsUpsellsAction: r
+        onButtonClick: r,
+        trackSettingsUpsellsAction: i
     } = e, [d, c] = a.useState(!1);
     return (0, s.Ay)(() => {
-        r(x.lJ.SETTINGS_UPSELLS_VIEWED)
+        i(x.lJ.SETTINGS_UPSELLS_VIEWED)
     }), (0, l.jsx)(o.PQ, {
         title: t,
         description: n,
         buttonText: d ? g.intl.string(g.t["h+WsPb"]) : g.intl.string(g.t.A8t4Nf),
         buttonDisabled: d,
         onButtonPress: () => {
-            i(), c(!0), r(x.lJ.SETTINGS_UPSELLS_APPLY_CLICKED)
+            r(), c(!0), i(x.lJ.SETTINGS_UPSELLS_APPLY_CLICKED)
         }
     })
 }
@@ -46,29 +46,29 @@ function b(e) {
         reportId: s,
         reportType: o,
         reportSubType: b
-    } = e, v = (0, i.bG)([_.A], () => _.A.getChannel(n)), f = (0, m.MR)(t, v?.type), T = (0, x.Mw)(o, b, s);
+    } = e, v = (0, r.bG)([_.A], () => _.A.getChannel(n)), f = (0, m.MR)(t, v?.type), T = (0, x.Mw)(o, b, s);
     return 0 === f.length ? null : (0, l.jsxs)("div", {
-        className: h.kL,
-        children: [(0, l.jsx)(r.Heading, {
+        className: A.kL,
+        children: [(0, l.jsx)(i.Heading, {
             variant: "text-sm/semibold",
-            className: h.wx,
+            className: A.wx,
             children: g.intl.string(g.t["1yxTIJ"])
         }), (0, l.jsx)("div", {
-            className: h.uk,
+            className: A.uk,
             children: f.map((e, n) => {
                 let {
                     getTitle: a,
-                    getDescription: i,
-                    onApply: r
+                    getDescription: r,
+                    onApply: i
                 } = e;
-                return (0, l.jsx)(A, {
+                return (0, l.jsx)(h, {
                     title: a(),
-                    description: i(),
-                    onButtonClick: r,
+                    description: r(),
+                    onButtonClick: i,
                     trackSettingsUpsellsAction: T(t[n])
                 }, n)
             })
-        }), (0, l.jsx)(r.QWc, {
+        }), (0, l.jsx)(i.QWc, {
             text: g.intl.string(g.t.olebGx),
             onClick: () => {
                 (0, u.openUserSettings)(c.X.CONTENT_AND_SOCIAL_PANEL, {

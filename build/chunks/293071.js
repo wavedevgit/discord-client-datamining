@@ -1,30 +1,30 @@
-/** chunk id: 293071, original params: e,n,t (module,exports,require) **/
-t.r(n), t.d(n, {
-    default: () => c
+/** chunk id: 293071, original params: e,t,n (module,exports,require) **/
+n.r(t), n.d(t, {
+    default: () => o
 });
-var i = t(627968);
-t(64700);
-var s = t(215530),
-    l = t(976270),
-    a = t(916217),
-    r = t(417021),
-    d = t(239606);
+var i = n(627968);
+n(64700);
+var s = n(215530),
+    l = n(976270),
+    r = n(916217),
+    a = n(417021),
+    d = n(239606);
 
-function c(e) {
+function o(e) {
     let {
-        hideRestrictedProfile: n,
-        ...t
+        hideRestrictedProfile: t,
+        ...n
     } = e, {
-        user: c
-    } = t, [o, u] = (0, s.A)(c.id);
-    return o && !n ? (0, i.jsx)(r.A, {
+        user: o
+    } = n, [c, u] = (0, s.A)(o.id);
+    return c && !t ? (0, i.jsx)(a.A, {
         onHide: u,
-        ...t
-    }) : c.isNonUserBot() ? (0, i.jsx)(a.A, {
-        ...t
-    }) : c.bot ? (0, i.jsx)(l.A, {
-        ...t
+        ...n
+    }) : o.isNonUserBot() ? (0, i.jsx)(r.A, {
+        ...n
+    }) : o.bot ? (0, i.jsx)(l.A, {
+        ...n
     }) : (0, i.jsx)(d.A, {
-        ...t
+        ...n
     })
 }

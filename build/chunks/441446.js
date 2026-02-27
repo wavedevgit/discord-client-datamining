@@ -1,35 +1,36 @@
 /** chunk id: 441446, original params: e,t,l (module,exports,require) **/
+"use strict";
 l.d(t, {
-    Hq: () => u,
-    LB: () => p,
-    MG: () => d,
+    Hq: () => d,
+    LB: () => h,
+    MG: () => u,
     nB: () => o,
     wn: () => c
 });
-var a = l(627968);
+var r = l(627968);
 l(64700);
-var n = l(503698),
-    r = l.n(n),
+var a = l(503698),
+    n = l.n(a),
     i = l(397927),
     s = l(798233);
-let o = () => (0, a.jsx)("hr", {
+let o = () => (0, r.jsx)("hr", {
         className: s.ts
     }),
-    u = e => {
+    d = e => {
         let {
             label: t,
             children: l,
-            direction: n = "horizontal",
-            className: u
+            direction: a = "horizontal",
+            className: d
         } = e;
-        return (0, a.jsxs)(a.Fragment, {
-            children: [(0, a.jsx)(o, {}), (0, a.jsx)(i.Text, {
+        return (0, r.jsxs)(r.Fragment, {
+            children: [(0, r.jsx)(o, {}), (0, r.jsx)(i.Text, {
                 variant: "text-md/semibold",
                 className: s.cW,
                 children: t
-            }), (0, a.jsx)("div", {
-                className: r()(s.kL, u, {
-                    [s.YG]: "vertical" === n
+            }), (0, r.jsx)("div", {
+                className: n()(s.kL, d, {
+                    [s.YG]: "vertical" === a
                 }),
                 children: l
             })]
@@ -39,16 +40,16 @@ let o = () => (0, a.jsx)("hr", {
         let {
             children: t
         } = e;
-        return (0, a.jsx)("div", {
+        return (0, r.jsx)("div", {
             className: s.uW,
             children: t
         })
     },
-    d = e => (0, a.jsx)("div", {
+    u = e => (0, r.jsx)("div", {
         className: s.wO,
         children: e.children
     }),
-    p = e => (0, a.jsx)("fieldset", {
+    h = e => (0, r.jsx)("fieldset", {
         className: s.lI,
         children: e.children
     })

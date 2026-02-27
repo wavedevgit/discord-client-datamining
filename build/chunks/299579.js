@@ -84,7 +84,7 @@ function O(e) {
     }, [P, o, t, L, j, N]);
     let q = r.useCallback(e => n(e, L), [n, L]),
         W = r.useMemo(() => h ? [o.length, 0] : [o.length], [o.length, h]),
-        K = r.useCallback((e, n, r) => {
+        z = r.useCallback((e, n, r) => {
             switch (e) {
                 case 0:
                     return (0, i.jsxs)("div", {
@@ -114,7 +114,7 @@ function O(e) {
                     }, r)
             }
         }, [R, M, t]),
-        z = r.useCallback(e => {
+        K = r.useCallback(e => {
             switch (e) {
                 case 0:
                     let t = M ? 16 : 68;
@@ -208,8 +208,8 @@ function O(e) {
             itemGutter: 16,
             padding: ee,
             renderItem: Z,
-            renderSection: K,
-            getSectionHeight: z,
+            renderSection: z,
+            getSectionHeight: K,
             getItemKey: $,
             getItemHeight: Q,
             chunkSize: 24,

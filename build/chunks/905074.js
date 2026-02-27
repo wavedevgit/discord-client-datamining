@@ -1,11 +1,11 @@
 /** chunk id: 905074, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => A
+    A: () => h
 }), n(323874), n(14289), n(35956);
 var l = n(627968),
     a = n(64700),
-    i = n(397927),
-    r = n(46054),
+    r = n(397927),
+    i = n(46054),
     s = n(403362),
     d = n(861662),
     o = n(985018),
@@ -34,7 +34,7 @@ function g(e) {
         }
     }(e)
 }
-let h = e => {
+let A = e => {
         let {
             data: {
                 title: t,
@@ -43,56 +43,56 @@ let h = e => {
                 message_link_title: _,
                 message_link_placeholder: m
             },
-            onChange: h,
-            initialContentUrl: A,
+            onChange: A,
+            initialContentUrl: h,
             initialMessageUrl: b,
             isRequired: v
-        } = e, f = a.useMemo(() => r.A.reactParserFor({
-            ...r.A.defaultRules,
+        } = e, f = a.useMemo(() => i.A.reactParserFor({
+            ...i.A.defaultRules,
             link: d.B
-        }), []), [T, j] = a.useState(""), [C, I] = a.useState(""), [N, S] = a.useState(null), [k, y] = a.useState(null), [E, M] = a.useState(!1);
+        }), []), [T, C] = a.useState(""), [j, I] = a.useState(""), [N, S] = a.useState(null), [k, y] = a.useState(null), [E, M] = a.useState(!1);
         a.useEffect(() => {
-            j(A?.value ?? ""), I(b?.value ?? ""), A?.value != null && "" !== A.value && M(g(A.value))
-        }, [A, b]);
+            C(h?.value ?? ""), I(b?.value ?? ""), h?.value != null && "" !== h.value && M(g(h.value))
+        }, [h, b]);
         let R = a.useCallback(e => {
-                if (j(e), "" === e) {
-                    S(null), M(!1), I(""), y(null), h({
+                if (C(e), "" === e) {
+                    S(null), M(!1), I(""), y(null), A({
                         value: e,
                         isValid: !1
                     });
                     return
                 }
                 if (!p(e)) {
-                    S(o.intl.string(o.t["24xrGb"])), M(!1), I(""), y(null), h({
+                    S(o.intl.string(o.t["24xrGb"])), M(!1), I(""), y(null), A({
                         value: e,
                         isValid: !1
                     });
                     return
                 }
                 let t = g(e);
-                M(t), S(null), t ? "" === C ? h({
+                M(t), S(null), t ? "" === j ? A({
                     value: e,
                     isValid: !1
-                }) : x.test(C) ? h({
+                }) : x.test(j) ? A({
                     value: e,
                     isValid: !0
                 }, {
-                    value: C,
+                    value: j,
                     isValid: !0
-                }) : h({
+                }) : A({
                     value: e,
                     isValid: !1
                 }, {
-                    value: C,
+                    value: j,
                     isValid: !1
-                }) : (I(""), y(null), h({
+                }) : (I(""), y(null), A({
                     value: e,
                     isValid: !0
                 }))
-            }, [h, C]),
-            w = a.useCallback(e => {
+            }, [A, j]),
+            O = a.useCallback(e => {
                 if (I(e), "" === e || !x.test(e)) {
-                    y(o.intl.string(o.t["24xrGb"])), h({
+                    y(o.intl.string(o.t["24xrGb"])), A({
                         value: T,
                         isValid: !1
                     }, {
@@ -101,29 +101,29 @@ let h = e => {
                     });
                     return
                 }
-                y(null), h({
+                y(null), A({
                     value: T,
                     isValid: !0
                 }, {
                     value: e,
                     isValid: !0
                 })
-            }, [h, T]);
+            }, [A, T]);
         return (0, l.jsxs)("div", {
-            children: [(0, l.jsxs)(i.BJc, {
+            children: [(0, l.jsxs)(r.BJc, {
                 gap: 16,
                 children: [(0, l.jsxs)("div", {
                     className: u.QB,
                     children: [null != t && (0, l.jsx)("div", {
                         className: u.QB,
-                        children: (0, l.jsxs)(i.Text, {
+                        children: (0, l.jsxs)(r.Text, {
                             variant: "text-sm/bold",
                             children: [t, v && (0, l.jsx)("span", {
                                 className: c.m,
                                 children: "*"
                             })]
                         })
-                    }), (0, l.jsx)(i.ksK, {
+                    }), (0, l.jsx)(r.ksK, {
                         onChange: R,
                         value: T,
                         error: N,
@@ -134,39 +134,39 @@ let h = e => {
                     className: u.QB,
                     children: [(0, l.jsx)("div", {
                         className: u.QB,
-                        children: (0, l.jsxs)(i.Text, {
+                        children: (0, l.jsxs)(r.Text, {
                             variant: "text-sm/bold",
                             children: [_, v && (0, l.jsx)("span", {
                                 className: c.m,
                                 children: "*"
                             })]
                         })
-                    }), (0, l.jsx)(i.ksK, {
-                        onChange: w,
-                        value: C,
+                    }), (0, l.jsx)(r.ksK, {
+                        onChange: O,
+                        value: j,
                         error: k,
                         placeholder: m
                     })]
                 })]
-            }), null != n && (0, l.jsx)(i.Text, {
+            }), null != n && (0, l.jsx)(r.Text, {
                 variant: "text-xs/normal",
                 children: f(n)
             })]
         })
     },
-    A = e => {
+    h = e => {
         let {
             element: t,
             onChange: n,
-            state: i
-        } = e, r = t.name, s = `${t.name}_message_link`, d = a.useCallback((e, t) => {
-            null != t ? n(r, e.value, e.isValid && t.isValid, s, t.value) : n(r, e.value, e.isValid, s, void 0)
-        }, [n, r, s]);
-        return (0, l.jsx)(h, {
+            state: r
+        } = e, i = t.name, s = `${t.name}_message_link`, d = a.useCallback((e, t) => {
+            null != t ? n(i, e.value, e.isValid && t.isValid, s, t.value) : n(i, e.value, e.isValid, s, void 0)
+        }, [n, i, s]);
+        return (0, l.jsx)(A, {
             data: t.data,
             onChange: d,
-            initialContentUrl: i?.[r],
-            initialMessageUrl: i?.[s],
+            initialContentUrl: r?.[i],
+            initialMessageUrl: r?.[s],
             isRequired: t.should_submit_data
         })
     }

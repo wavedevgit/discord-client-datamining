@@ -45,8 +45,8 @@ var i, r = n(627968),
     Y = n(594262),
     q = n(378570),
     W = n(345942),
-    K = n(804980),
-    z = n(260509),
+    z = n(804980),
+    K = n(260509),
     $ = n(961350),
     Q = n(734057),
     X = n(287809),
@@ -339,7 +339,7 @@ ef.Header = eI, ef.Body = e => {
         partySize: i,
         members: a,
         onChannelContextMenu: o
-    } = e, d = l.useRef(null), c = (0, R.Ay)(n, !0), u = (0, z.Iv)(t, 32), A = (0, z.Rb)(t);
+    } = e, d = l.useRef(null), c = (0, R.Ay)(n, !0), u = (0, K.Iv)(t, 32), A = (0, K.Rb)(t);
     return (0, r.jsx)(eu, {
         children: (0, r.jsxs)("div", {
             className: ea.iO,
@@ -691,7 +691,7 @@ ef.Header = eI, ef.Body = e => {
                 className: ea.pV
             }) : null, (0, r.jsxs)("div", {
                 className: ea.d4,
-                children: [(0, r.jsx)(K.LN, {
+                children: [(0, r.jsx)(z.LN, {
                     users: u,
                     guildId: i,
                     channelId: n.id

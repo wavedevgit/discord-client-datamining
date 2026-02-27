@@ -16,7 +16,7 @@ n.d(t, {
     px: () => W,
     qG: () => V,
     sq: () => Q,
-    uM: () => z
+    uM: () => K
 }), n(321073), n(938796), n(735438);
 var i = n(567243),
     r = n(179771),
@@ -205,7 +205,7 @@ function W(e, t, n) {
     return e === O.xL.JOIN && null != t && null != t.id && null != n.join
 }
 
-function K(e) {
+function z(e) {
     return l.Bo.get({
         url: O.Rsh.APPLICATION_RPC(e),
         oldFormErrors: !0,
@@ -222,7 +222,7 @@ function K(e) {
         }, "Invalid Client ID")
     })
 }
-async function z(e, t, n) {
+async function K(e, t, n) {
     let i = d.A.getApplication(t);
     if ("string" == typeof n)
         if (e.transport === b.z4.POST_MESSAGE) {
@@ -231,11 +231,11 @@ async function z(e, t, n) {
                 closeCode: O.YI$.INVALID_ORIGIN
             }, "Invalid Origin")
         } else {
-            let e = await K(t);
+            let e = await z(t);
             if (i = A.Ay.createFromServer(e), !U(n, e.rpc_origins)) throw new v.A({
                 closeCode: O.YI$.INVALID_ORIGIN
             }, "Invalid Origin")
-        } null == i && (i = A.Ay.createFromServer(await K(t)));
+        } null == i && (i = A.Ay.createFromServer(await z(t)));
     let {
         id: r,
         name: l,

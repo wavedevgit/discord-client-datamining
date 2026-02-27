@@ -1,40 +1,39 @@
-/** chunk id: 532197, original params: e,t,r (module,exports,require) **/
-"use strict";
-r.d(t, {
-    A: () => _
+/** chunk id: 532197, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    A: () => A
 });
-var n = r(627968),
-    a = r(64700),
-    s = r(503698),
-    l = r.n(s),
-    i = r(397927),
-    c = r(262633);
+var i = n(627968),
+    s = n(64700),
+    l = n(503698),
+    r = n.n(l),
+    a = n(397927),
+    d = n(262633);
 let o = {
         UP: "up",
         RIGHT: "right",
         DOWN: "down",
         LEFT: "left"
     },
-    u = {
+    c = {
         [o.UP]: "",
-        [o.RIGHT]: c.pG,
-        [o.DOWN]: c.TR,
-        [o.LEFT]: c.kb
+        [o.RIGHT]: d.pG,
+        [o.DOWN]: d.TR,
+        [o.LEFT]: d.kb
     };
-class d extends a.PureComponent {
+class u extends s.PureComponent {
     static Directions = o;
     render() {
         let {
             direction: e,
             className: t
         } = this.props;
-        return (0, n.jsx)(i.z$m, {
+        return (0, i.jsx)(a.z$m, {
             size: "md",
             color: "currentColor",
-            className: l()(t, {
-                [u[e]]: !0
+            className: r()(t, {
+                [c[e]]: !0
             })
         })
     }
 }
-let _ = d
+let A = u

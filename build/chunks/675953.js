@@ -1,4 +1,5 @@
-/** chunk id: 675953, original params: e,t,r (module,exports,require) **/
+/** chunk id: 675953, original params: e,t,l (module,exports,require) **/
+"use strict";
 e.exports = {
     Os: "nameplatePlaceholderUserRow_e75aa6",
     yf: "nameplatePlaceholderAvatar_e75aa6",

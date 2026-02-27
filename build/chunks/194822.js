@@ -1,6 +1,6 @@
 /** chunk id: 194822, original params: e,t,l (module,exports,require) **/
 l.d(t, {
-    A: () => f
+    A: () => A
 });
 var r = l(311907),
     a = l(73153),
@@ -27,7 +27,7 @@ let n = (0, d.m6)() ? {
     k = s,
     b = new Set(u),
     S = {};
-class A extends r.Ay.Store {
+class f extends r.Ay.Store {
     static displayName = "CmsLayoutStore";
     getLayout(e, t) {
         return null == e || null == t ? null : h[e]?.[t] ?? null
@@ -48,7 +48,7 @@ class A extends r.Ay.Store {
         return null == e || null == t ? null : S[i(e, t)] ?? null
     }
 }
-let f = new A(a.h, {
+let A = new f(a.h, {
     CMS_LAYOUT_FETCH: e => {
         let {
             tenantId: t,

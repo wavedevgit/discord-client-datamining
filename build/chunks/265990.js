@@ -121,39 +121,39 @@ let M = function(e) {
             ...G,
             [P]: ""
         })
-    }, [G, P]), W = r.useMemo(() => P === y.m3P.PENDING && (s.filter(y.m3P.SPAM).length > 0 || s.filter(y.m3P.PENDING_IGNORED).length > 0), [s, P]), K = r.useMemo(() => s.filter(P, G[P]), [s, G, P]), z = P === y.m3P.PENDING, $ = r.useMemo(() => {
-        if (!z) return R;
+    }, [G, P]), W = r.useMemo(() => P === y.m3P.PENDING && (s.filter(y.m3P.SPAM).length > 0 || s.filter(y.m3P.PENDING_IGNORED).length > 0), [s, P]), z = r.useMemo(() => s.filter(P, G[P]), [s, G, P]), K = P === y.m3P.PENDING, $ = r.useMemo(() => {
+        if (!K) return R;
         let e = [];
-        return K.forEach(t => {
+        return z.forEach(t => {
             let {
                 applicationId: n
             } = t;
             null != n && e.push(n)
         }), e
-    }, [z, K]);
-    (0, A.A)($, z);
-    let Q = r.useMemo(() => P === y.m3P.ALL && V && K.some(e => e.giftIntentType === b.np.FRIEND_ANNIVERSARY) ? K.filter(e => e.giftIntentType === b.np.FRIEND_ANNIVERSARY).length : 0, [K, P, V]),
+    }, [K, z]);
+    (0, A.A)($, K);
+    let Q = r.useMemo(() => P === y.m3P.ALL && V && z.some(e => e.giftIntentType === b.np.FRIEND_ANNIVERSARY) ? z.filter(e => e.giftIntentType === b.np.FRIEND_ANNIVERSARY).length : 0, [z, P, V]),
         X = r.useMemo(() => {
             switch (P) {
                 case y.m3P.PENDING:
                     let e = [],
                         t = [];
-                    return K.forEach(n => {
+                    return z.forEach(n => {
                         n.type === y.eA$.PENDING_INCOMING ? e.push(n) : n.type === y.eA$.PENDING_OUTGOING && t.push(n)
                     }), [e, t];
                 case y.m3P.ALL:
-                    if (!(V && K.some(e => e.giftIntentType === b.np.FRIEND_ANNIVERSARY))) return [K];
+                    if (!(V && z.some(e => e.giftIntentType === b.np.FRIEND_ANNIVERSARY))) return [z];
                     {
                         let e = [];
-                        return K.forEach(t => {
+                        return z.forEach(t => {
                             t.giftIntentType === b.np.FRIEND_ANNIVERSARY && e.push(t)
-                        }), e.sort((e, t) => p.A.compareByDmProbability(e.userId, t.userId)), [B ? e : e.slice(0, m.ZD), K]
+                        }), e.sort((e, t) => p.A.compareByDmProbability(e.userId, t.userId)), [B ? e : e.slice(0, m.ZD), z]
                     }
                 default:
-                    return [K]
+                    return [z]
             }
-        }, [K, P, B, V]),
-        Z = r.useMemo(() => K.filter(e => e.type === y.eA$.PENDING_INCOMING).length, [K]),
+        }, [z, P, B, V]),
+        Z = r.useMemo(() => z.filter(e => e.type === y.eA$.PENDING_INCOMING).length, [z]),
         J = P === y.m3P.PENDING && Z > 0 && Z >= 5,
         ee = r.useCallback(e => {
             e.stopPropagation(), o.A.confirmClearPendingRelationships(Z)
@@ -230,12 +230,12 @@ let M = function(e) {
             P === y.m3P.ALL && (0, _.Ad)()
         }, [P]), r.useEffect(() => {
             H(!1)
-        }, [P, Q]), 0 === K.length && "" === G[P]) return (0, i.jsx)(D, {
+        }, [P, Q]), 0 === z.length && "" === G[P]) return (0, i.jsx)(D, {
         section: P,
         showSpamCta: W
     });
     let er = "" !== G[P],
-        el = 0 === K.length && er;
+        el = 0 === z.length && er;
     return (0, i.jsx)(u.f5, {
         value: n,
         children: (0, i.jsxs)(d.A, {

@@ -1,31 +1,31 @@
-/** chunk id: 661492, original params: e,t,n (module,exports,require) **/
+/** chunk id: 661492, original params: e,t,l (module,exports,require) **/
 "use strict";
-n.d(t, {
-    q: () => r,
-    x: () => a
+l.d(t, {
+    q: () => s,
+    x: () => i
 });
-var i = n(575593),
-    s = n(993408),
-    l = n(985018);
+var r = l(575593),
+    a = l(993408),
+    n = l(985018);
 
-function a(e) {
+function i(e) {
     let t = e.skuName;
-    if (null != e.bundleItems && e.bundleItems.length > 0) return l.intl.formatToPlainString(l.t["/l2CAE"], {
+    if (null != e.bundleItems && e.bundleItems.length > 0) return n.intl.formatToPlainString(n.t["/l2CAE"], {
         itemName: t
     });
-    let n = e.collectiblesItem;
-    if (null == n) return t;
-    switch (n.type) {
-        case i.R.AVATAR_DECORATION:
-            return l.intl.formatToPlainString(l.t.IQQYef, {
+    let l = e.collectiblesItem;
+    if (null == l) return t;
+    switch (l.type) {
+        case r.R.AVATAR_DECORATION:
+            return n.intl.formatToPlainString(n.t.IQQYef, {
                 itemName: t
             });
-        case i.R.PROFILE_EFFECT:
-            return l.intl.formatToPlainString(l.t["x/MGWy"], {
+        case r.R.PROFILE_EFFECT:
+            return n.intl.formatToPlainString(n.t["x/MGWy"], {
                 itemName: t
             });
-        case i.R.NAMEPLATE:
-            return l.intl.formatToPlainString(l.t.eVNt6E, {
+        case r.R.NAMEPLATE:
+            return n.intl.formatToPlainString(n.t.eVNt6E, {
                 itemName: t
             });
         default:
@@ -33,6 +33,6 @@ function a(e) {
     }
 }
 
-function r(e) {
-    return !(0, s.G0)(e) && e.type !== i.R.EXTERNAL_SKU
+function s(e) {
+    return !(0, a.G0)(e) && e.type !== r.R.EXTERNAL_SKU
 }

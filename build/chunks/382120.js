@@ -1,39 +1,39 @@
-/** chunk id: 382120, original params: e,n,t (module,exports,require) **/
-t.d(n, {
+/** chunk id: 382120, original params: e,t,n (module,exports,require) **/
+n.d(t, {
     A: () => A
 });
-var i = t(627968);
-t(64700);
-var s = t(158954),
-    l = t(311907),
-    a = t(397927),
-    r = t(973925),
-    d = t(622543),
-    c = t(985018),
-    o = t(437102);
+var i = n(627968);
+n(64700);
+var s = n(158954),
+    l = n(311907),
+    r = n(397927),
+    a = n(973925),
+    d = n(622543),
+    o = n(985018),
+    c = n(437102);
 
 function u(e) {
     let {
-        icon: n,
-        title: t,
+        icon: t,
+        title: n,
         description: s
     } = e;
     return (0, i.jsxs)("div", {
-        className: o.nM,
+        className: c.nM,
         children: [(0, i.jsx)("div", {
-            className: o.aL,
-            children: (0, i.jsx)(n, {
+            className: c.aL,
+            children: (0, i.jsx)(t, {
                 size: "custom",
                 width: 20,
                 height: 20,
                 color: "currentColor"
             })
         }), (0, i.jsxs)("div", {
-            className: o.qg,
-            children: [(0, i.jsx)(a.Heading, {
+            className: c.qg,
+            children: [(0, i.jsx)(r.Heading, {
                 variant: "text-xs/semibold",
-                children: t
-            }), (0, i.jsx)(a.Text, {
+                children: n
+            }), (0, i.jsx)(r.Text, {
                 variant: "text-sm/normal",
                 children: s
             })]
@@ -43,30 +43,30 @@ function u(e) {
 
 function A(e) {
     let {
-        user: n
-    } = e, t = (0, l.bG)([d.A], () => d.A.getUserProfile(n.id)?.application), {
+        user: t
+    } = e, n = (0, l.bG)([d.A], () => d.A.getUserProfile(t.id)?.application), {
         hasMessageContent: A,
         hasGuildPresences: x,
-        hasGuildMembers: m
-    } = (0, r.Z)(t);
+        hasGuildMembers: _
+    } = (0, a.Z)(n);
     return (0, i.jsxs)(s.IpV, {
         fade: !0,
-        className: o.XG,
+        className: c.XG,
         children: [A && (0, i.jsx)(u, {
-            icon: a.oyn,
-            title: c.intl.string(c.t["7Tmhfu"]),
-            description: c.intl.string(c.t.eu5x7z)
+            icon: r.oyn,
+            title: o.intl.string(o.t["7Tmhfu"]),
+            description: o.intl.string(o.t.eu5x7z)
         }), x && (0, i.jsx)(u, {
-            icon: a._xR,
-            title: c.intl.string(c.t.awYSsM),
-            description: c.intl.string(c.t.TpsXoC)
-        }), m && (0, i.jsx)(u, {
-            icon: a.nFg,
-            title: c.intl.string(c.t.WuKeSJ),
-            description: c.intl.string(c.t.wOBmtV)
-        }), (0, i.jsx)(a.Text, {
+            icon: r._xR,
+            title: o.intl.string(o.t.awYSsM),
+            description: o.intl.string(o.t.TpsXoC)
+        }), _ && (0, i.jsx)(u, {
+            icon: r.nFg,
+            title: o.intl.string(o.t.WuKeSJ),
+            description: o.intl.string(o.t.wOBmtV)
+        }), (0, i.jsx)(r.Text, {
             variant: "text-xs/normal",
-            children: c.intl.format(c.t.b6nqk0, {
+            children: o.intl.format(o.t.b6nqk0, {
                 helpCenterUrl: "https://support.discord.com/hc/articles/7933951485975"
             })
         })]

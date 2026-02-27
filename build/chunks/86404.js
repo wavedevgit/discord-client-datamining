@@ -1,64 +1,64 @@
-/** chunk id: 86404, original params: e,n,t (module,exports,require) **/
-t.d(n, {
-    A: () => _
+/** chunk id: 86404, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    A: () => m
 });
-var i = t(627968),
-    s = t(64700),
-    l = t(397927),
-    a = t(163126),
-    r = t(688810),
-    d = t(183555),
-    c = t(913453),
-    o = t(229187),
-    u = t(657331),
-    A = t(503062),
-    x = t(985018),
-    m = t(781425);
+var i = n(627968),
+    s = n(64700),
+    l = n(397927),
+    r = n(163126),
+    a = n(688810),
+    d = n(183555),
+    o = n(913453),
+    c = n(229187),
+    u = n(657331),
+    A = n(503062),
+    x = n(985018),
+    _ = n(781425);
 
-function _(e) {
+function m(e) {
     let {
-        user: n,
-        guildId: t,
-        channelId: _,
+        user: t,
+        guildId: n,
+        channelId: m,
         onClose: p
     } = e, {
         mutualFriends: f
-    } = (0, c.A)(n), {
+    } = (0, o.A)(t), {
         analyticsLocations: h
-    } = (0, r.Ay)(), {
+    } = (0, a.Ay)(), {
         context: I,
-        trackUserProfileAction: j
-    } = (0, d.NJ)(), g = (0, a.A)();
+        trackUserProfileAction: g
+    } = (0, d.NJ)(), j = (0, r.A)();
     return s.useEffect(() => {
-        (0, o.A)(n.id, g)
-    }, [n.id, g]), (0, i.jsx)(l.IpV, {
-        className: m.DK,
+        (0, c.A)(t.id, j)
+    }, [t.id, j]), (0, i.jsx)(l.IpV, {
+        className: _.DK,
         fade: !0,
         children: null == f ? (0, i.jsx)("div", {
-            className: m.Ie,
+            className: _.Ie,
             children: (0, i.jsx)(l.y$y, {})
         }) : 0 === f.length ? (0, i.jsxs)("div", {
-            className: m.Ie,
+            className: _.Ie,
             children: [(0, i.jsx)("div", {
-                className: m.on
+                className: _.on
             }), (0, i.jsx)("div", {
-                className: m.BI,
+                className: _.BI,
                 children: x.intl.string(x.t["/5p4gx"])
             })]
         }) : f.map(e => {
             let {
-                key: n,
+                key: t,
                 user: s,
                 status: l
             } = e;
             return (0, i.jsx)(A.A, {
                 user: s,
                 status: l,
-                guildId: t,
-                channelId: _,
+                guildId: n,
+                channelId: m,
                 onSelect: () => {
                     var e;
-                    p?.(), j({
+                    p?.(), g({
                         action: "PRESS_MUTUAL_FRIEND"
                     }), e = s.id, (0, u.openUserProfileModal)({
                         ...I,
@@ -66,7 +66,7 @@ function _(e) {
                         sourceAnalyticsLocations: h
                     })
                 }
-            }, n)
+            }, t)
         })
     })
 }

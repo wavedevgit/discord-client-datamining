@@ -4,8 +4,8 @@ n.d(t, {
 });
 var l = n(627968),
     a = n(64700),
-    i = n(314116),
-    r = n(58149),
+    r = n(314116),
+    i = n(58149),
     s = n(997509),
     d = n(632738),
     o = n(71393),
@@ -20,7 +20,7 @@ let _ = e => {
         m(!p)
     }, [p]);
     let g = a.useCallback(() => {
-        m(!0), r.Ay.trackWithMetadata(c.HAw.IAR_LEAVE_GUILD_BUTTON_CLICKED, {
+        m(!0), i.Ay.trackWithMetadata(c.HAw.IAR_LEAVE_GUILD_BUTTON_CLICKED, {
             guild_id: t,
             report_id: n
         }), s.A.leaveGuild(t)
@@ -34,7 +34,7 @@ let _ = e => {
         buttonDisabled: _,
         buttonVariant: "critical-primary",
         onButtonPress: () => {
-            (0, i.A)({
+            (0, r.A)({
                 title: u.intl.formatToPlainString(u.t["1GX6P/"], {
                     name: x.name
                 }),
