@@ -4,13 +4,13 @@ r.d(e, {
     z: () => l
 });
 var s = r(887525),
-    n = r(128377),
-    i = r(875565),
+    i = r(128377),
+    n = r(875565),
     o = r(75109);
 class a {
     constructor(t, e) {
         let r, s;
-        r = t || new n.H, s = e || new n.H, this._stack = [{
+        r = t || new i.H, s = e || new i.H, this._stack = [{
             scope: r
         }], this._isolationScope = s
     }
@@ -21,7 +21,7 @@ class a {
         } catch (t) {
             throw this._popScope(), t
         }
-        return (0, i.Qg)(e) ? e.then(t => (this._popScope(), t), t => {
+        return (0, n.Qg)(e) ? e.then(t => (this._popScope(), t), t => {
             throw this._popScope(), t
         }) : (this._popScope(), e)
     }

@@ -4,10 +4,10 @@ r.d(e, {
     h: () => function t(e, r, s = 2) {
         if (!r || "object" != typeof r || s <= 0) return r;
         if (e && r && 0 === Object.keys(r).length) return e;
-        let n = {
+        let i = {
             ...e
         };
-        for (let e in r) Object.prototype.hasOwnProperty.call(r, e) && (n[e] = t(n[e], r[e], s - 1));
-        return n
+        for (let e in r) Object.prototype.hasOwnProperty.call(r, e) && (i[e] = t(i[e], r[e], s - 1));
+        return i
     }
 })

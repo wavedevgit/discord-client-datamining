@@ -2,15 +2,15 @@
 "use strict";
 r.d(e, {
     f: () => o,
-    r: () => i
+    r: () => n
 });
 var s = r(690094);
-let n = "_sentrySpan";
+let i = "_sentrySpan";
 
-function i(t, e) {
-    e ? (0, s.my)(t, n, e) : delete t[n]
+function n(t, e) {
+    e ? (0, s.my)(t, i, e) : delete t[i]
 }
 
 function o(t) {
-    return t[n]
+    return t[i]
 }

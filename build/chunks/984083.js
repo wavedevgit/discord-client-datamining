@@ -4,8 +4,8 @@ r.d(e, {
     Z: () => o
 });
 var s = r(630449),
-    n = r(272469),
-    i = r(83220);
+    i = r(272469),
+    n = r(83220);
 
 function o(t, e) {
     let r = (0, s.KU)(),
@@ -17,9 +17,9 @@ function o(t, e) {
     } = r.getOptions();
     if (c <= 0) return;
     let u = {
-            timestamp: (0, i.lu)(),
+            timestamp: (0, n.lu)(),
             ...t
         },
-        h = a ? (0, n.pq)(() => a(u, e)) : u;
+        h = a ? (0, i.pq)(() => a(u, e)) : u;
     null !== h && (r.emit && r.emit("beforeAddBreadcrumb", h, e), o.addBreadcrumb(h, c))
 }

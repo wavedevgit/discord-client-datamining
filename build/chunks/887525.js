@@ -2,15 +2,15 @@
 "use strict";
 r.d(e, {
     q: () => o,
-    r: () => i
+    r: () => n
 });
 var s = r(128377),
-    n = r(978862);
+    i = r(978862);
 
-function i() {
-    return (0, n.B)("defaultCurrentScope", () => new s.H)
+function n() {
+    return (0, i.B)("defaultCurrentScope", () => new s.H)
 }
 
 function o() {
-    return (0, n.B)("defaultIsolationScope", () => new s.H)
+    return (0, i.B)("defaultIsolationScope", () => new s.H)
 }

@@ -1,19 +1,19 @@
 /** chunk id: 83220, original params: t,e,r (module,exports,require) **/
 "use strict";
 r.d(e, {
-    lu: () => n,
-    zf: () => i
+    lu: () => i,
+    zf: () => n
 });
 var s = r(978862);
 
-function n() {
+function i() {
     return Date.now() / 1e3
 }
-let i = function() {
+let n = function() {
     let {
         performance: t
     } = s.O;
-    if (!t || !t.now) return n;
+    if (!t || !t.now) return i;
     let e = Date.now() - t.now(),
         r = void 0 == t.timeOrigin ? e : t.timeOrigin;
     return () => (r + t.now()) / 1e3
@@ -25,8 +25,8 @@ let i = function() {
     if (!t || !t.now) return;
     let e = t.now(),
         r = Date.now(),
-        n = t.timeOrigin ? Math.abs(t.timeOrigin + e - r) : 36e5,
-        i = t.timing && t.timing.navigationStart,
-        o = "number" == typeof i ? Math.abs(i + e - r) : 36e5;
-    if ((n < 36e5 || o < 36e5) && n <= o) return t.timeOrigin
+        i = t.timeOrigin ? Math.abs(t.timeOrigin + e - r) : 36e5,
+        n = t.timing && t.timing.navigationStart,
+        o = "number" == typeof n ? Math.abs(n + e - r) : 36e5;
+    if ((i < 36e5 || o < 36e5) && i <= o) return t.timeOrigin
 })()
