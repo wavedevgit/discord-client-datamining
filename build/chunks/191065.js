@@ -2,31 +2,31 @@
 l.d(t, {
     A: () => u
 });
-var s = l(627968),
-    n = l(64700),
+var n = l(627968),
+    s = l(64700),
     a = l(827734),
     i = l(397927),
     r = l(170985);
-let u = n.forwardRef(function(e, t) {
+let u = s.forwardRef(function(e, t) {
     let {
         isInventory: l,
-        style: n,
+        style: s,
         children: u
     } = e;
-    return (0, s.jsxs)("div", {
+    return (0, n.jsxs)("div", {
         ref: t,
         className: r.Q,
         style: {
             marginTop: 8 * !!l,
-            ...n
+            ...s
         },
-        children: [(0, s.jsx)(i.mir, {
+        children: [(0, n.jsx)(i.mir, {
             size: "custom",
             className: r.G,
             height: l ? 16 : 12,
             width: l ? 16 : 12,
             color: l ? a.A.colors.TEXT_MUTED.css : a.A.colors.WHITE.css
-        }), (0, s.jsx)(i.Text, {
+        }), (0, n.jsx)(i.Text, {
             color: l ? "text-muted" : "always-white",
             variant: l ? "text-xs/normal" : "text-xxs/normal",
             children: u

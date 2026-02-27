@@ -19,8 +19,8 @@ function c(e) {
         dmsAllowed: u,
         showActivity: m,
         setNickname: x,
-        setDmsAllowed: h,
-        setShowActivity: _
+        setDmsAllowed: _,
+        setShowActivity: h
     } = (0, s.lD)(), g = t.is_nickname_changeable;
     return (0, l.jsxs)(n.W1t, {
         navId: "accept-invite-modal-settings-menu",
@@ -37,12 +37,12 @@ function c(e) {
         }) : null, (0, l.jsx)(n.fPC, {
             id: "accept-invite-modal-settings-dms",
             label: d.intl.string(d.t["/2ed37"]),
-            action: h,
+            action: _,
             checked: u
         }), c ? (0, l.jsx)(n.fPC, {
             id: "accept-invite-modal-settings-activity",
             label: d.intl.string(d.t.bN4m1G),
-            action: _,
+            action: h,
             checked: m
         }) : null]
     })

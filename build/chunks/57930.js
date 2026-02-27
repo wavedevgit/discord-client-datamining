@@ -17,18 +17,18 @@ function x(e) {
     let {
         guild: t,
         outline: i
-    } = e, s = (0, r.A)("(max-width: 600px), (max-height: 600px)") ? c.DN.LARGER : c.DN.XLARGE, x = c.iu[s], h = c.s[s], _ = n.useMemo(() => u.Ay.getGuildIconURL({
+    } = e, s = (0, r.A)("(max-width: 600px), (max-height: 600px)") ? c.DN.LARGER : c.DN.XLARGE, x = c.iu[s], _ = c.s[s], h = n.useMemo(() => u.Ay.getGuildIconURL({
         id: t.id,
         icon: t.icon,
         size: x
-    }), [t.icon, t.id, x]), g = (0, o.Rb)(t), A = null != _ ? (0, l.jsx)("img", {
-        src: _,
+    }), [t.icon, t.id, x]), g = (0, o.Rb)(t), A = null != h ? (0, l.jsx)("img", {
+        src: h,
         alt: "",
         className: m.OV
     }) : (0, l.jsx)("div", {
         className: m.ef,
         style: {
-            fontSize: h[g.length] ?? h[h.length - 1]
+            fontSize: _[g.length] ?? _[_.length - 1]
         },
         children: g
     });

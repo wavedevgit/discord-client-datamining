@@ -2,10 +2,10 @@
 l.d(t, {
     A: () => c
 });
-var s = l(627968);
+var n = l(627968);
 l(64700);
-var n = l(503698),
-    a = l.n(n),
+var s = l(503698),
+    a = l.n(s),
     i = l(397927),
     r = l(714510),
     u = l(646764),
@@ -14,31 +14,31 @@ let c = function(e) {
     let {
         className: t,
         autoplay: l,
-        quest: n,
+        quest: s,
         questContent: c,
         taskDetails: d,
         location: m,
         sourceQuestContent: A,
         gameProfileSource: p
     } = e, x = (0, r.mU)({
-        quest: n,
+        quest: s,
         taskDetails: d,
         location: m,
         questContent: c,
         sourceQuestContent: A,
         gameProfileSource: p
     });
-    return (0, s.jsxs)("div", {
+    return (0, n.jsxs)("div", {
         className: a()(o.iE, t),
-        children: [(0, s.jsx)(u.A, {
+        children: [(0, n.jsx)(u.A, {
             autoplay: l,
             className: o.Qq,
-            quest: n,
+            quest: s,
             questContent: c,
             sourceQuestContent: A
-        }), (0, s.jsx)("div", {
+        }), (0, n.jsx)("div", {
             className: o.C,
-            children: (0, s.jsx)(i.Text, {
+            children: (0, n.jsx)(i.Text, {
                 variant: "text-sm/normal",
                 color: "text-default",
                 children: x

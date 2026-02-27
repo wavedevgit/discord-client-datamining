@@ -30,5 +30,6 @@ e.exports = {
     XD: "activityStatusText__972a0",
     G$: "decorator__972a0",
     dm: "dm__972a0",
-    KQ: "waveButton__972a0"
+    KQ: "waveButton__972a0",
+    lU: "channelNameMeasurement__972a0"
 }

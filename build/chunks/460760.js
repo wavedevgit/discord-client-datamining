@@ -4,7 +4,7 @@ i.d(t, {
     MA: () => g,
     Mu: () => d,
     Oh: () => p,
-    Ok: () => h,
+    Ok: () => _,
     Tz: () => j,
     ZH: () => m,
     ax: () => o,
@@ -12,7 +12,7 @@ i.d(t, {
     nA: () => E,
     r8: () => x,
     uh: () => A,
-    xN: () => _
+    xN: () => h
 });
 var l = i(562465),
     n = i(73153),
@@ -54,7 +54,7 @@ async function c(e) {
             url: r.Rsh.GUILD_DISCOVERY_METADATA(e),
             oldFormErrors: !0,
             rejectWithError: !0
-        })).body, h = {
+        })).body, _ = {
             primaryCategoryId: t,
             secondaryCategoryIds: i,
             keywords: s,
@@ -69,8 +69,8 @@ async function c(e) {
         return n.h.dispatch({
             type: "GUILD_UPDATE_DISCOVERY_METADATA_FROM_SERVER",
             guildId: e,
-            metadata: h
-        }), h
+            metadata: _
+        }), _
     } catch (e) {
         n.h.dispatch({
             type: "GUILD_DISCOVERY_METADATA_FETCH_FAIL"
@@ -119,7 +119,7 @@ function x(e, t) {
     })
 }
 
-function h(e, t) {
+function _(e, t) {
     n.h.dispatch({
         type: "GUILD_UPDATE_DISCOVERY_METADATA",
         guildId: e,
@@ -127,7 +127,7 @@ function h(e, t) {
     })
 }
 
-function _(e, t) {
+function h(e, t) {
     n.h.dispatch({
         type: "GUILD_UPDATE_DISCOVERY_METADATA",
         guildId: e,
@@ -166,15 +166,15 @@ async function p(e) {
     try {
         let {
             primary_category_id: e,
-            category_ids: h,
-            keywords: _,
+            category_ids: _,
+            keywords: h,
             emoji_discoverability_enabled: g,
             partner_actioned_timestamp: A,
             partner_application_timestamp: p,
             is_published: E,
             reasons_to_join: j,
-            social_links: v,
-            about: I
+            social_links: I,
+            about: v
         } = (await l.Bo.patch({
             url: r.Rsh.GUILD_DISCOVERY_METADATA(t),
             body: {
@@ -196,15 +196,15 @@ async function p(e) {
             guildId: t,
             metadata: {
                 primaryCategoryId: e,
-                secondaryCategoryIds: h,
-                keywords: _,
+                secondaryCategoryIds: _,
+                keywords: h,
                 emojiDiscoverabilityEnabled: g,
                 partnerActionedTimestamp: A,
                 partnerApplicationTimestamp: p,
                 isPublished: E,
                 reasonsToJoin: j,
-                socialLinks: v,
-                about: I
+                socialLinks: I,
+                about: v
             }
         })
     } catch (e) {

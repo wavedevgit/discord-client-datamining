@@ -13,8 +13,8 @@ var l = i(627968),
     u = i(960736),
     m = i(398884),
     x = i(287809),
-    h = i(954571),
-    _ = i(162284),
+    _ = i(954571),
+    h = i(162284),
     g = i(652215),
     A = i(985018),
     p = i(492171);
@@ -25,65 +25,66 @@ function E(e) {
         guild: i,
         className: E
     } = e, j = (0, s.bG)([x.default], () => x.default.getCurrentUser()), {
-        submitting: v
-    } = (0, s.bG)([c.A], () => c.A.getProps()), I = n.useCallback(() => {
+        submitting: I,
+        error: v
+    } = (0, s.cf)([c.A], () => c.A.getProps()), f = n.useCallback(() => {
         d.A.acceptInvite(t)
-    }, [t]), T = (0, u.uE)(), f = "" !== T ? A.intl.format(A.t["9sWQNT"], {
+    }, [t]), T = (0, u.uE)(), N = "" !== T ? A.intl.format(A.t["9sWQNT"], {
         usernameHook: (e, t) => (0, l.jsx)("span", {
             children: T
         }, t)
-    }) : A.intl.string(A.t["e/6Ogt"]), N = n.useRef(null), [C, y] = n.useState(!1), D = n.useCallback(() => {
-        C || h.default.track(g.HAw.INVITE_ACCEPT_JOIN_SETTINGS_EXPANDED, {
+    }) : A.intl.string(A.t["e/6Ogt"]), C = n.useRef(null), [y, D] = n.useState(!1), S = n.useCallback(() => {
+        y || _.default.track(g.HAw.INVITE_ACCEPT_JOIN_SETTINGS_EXPANDED, {
             guild_id: i.id,
             invite_code: t.code,
             location: "accept_invite_modal_redesign"
-        }), y(!C)
-    }, [i.id, t.code, C]), S = (0, m.Sn)(), L = (0, s.bG)([c.A], () => c.A.getProps().error);
+        }), D(!y)
+    }, [i.id, t.code, y]), L = (0, m.Sn)();
     return (0, l.jsxs)("div", {
         className: E,
-        children: [null != L ? (0, l.jsx)("div", {
+        children: [null != v ? (0, l.jsx)("div", {
             className: p.Un,
             children: (0, l.jsx)(a.wx6, {
                 type: "critical",
-                children: L
+                children: v
             })
-        }) : null, S ? (0, l.jsx)(o.A, {
+        }) : null, L ? (0, l.jsx)(o.A, {
             className: p.sX
         }) : null, (0, l.jsxs)(a.ButtonGroup, {
             fullWidthContainer: !0,
             fullWidth: !0,
             direction: "horizontal",
             children: [(0, l.jsx)(a.Button, {
-                onClick: I,
-                loading: v,
+                onClick: f,
+                loading: I,
                 variant: "primary",
-                disabled: S,
-                text: S ? A.intl.string(A.t.ZNCziL) : f,
-                icon: S || null == j ? void 0 : () => (0, l.jsx)(r.A, {
+                disabled: L,
+                text: L ? A.intl.string(A.t.ZNCziL) : N,
+                icon: L || null == j ? void 0 : () => (0, l.jsx)(r.A, {
                     "aria-hidden": !0,
                     size: a._3J.SIZE_16,
                     user: j
                 })
-            }), S ? null : (0, l.jsx)(a.YNO, {
-                targetElementRef: N,
+            }), L ? null : (0, l.jsx)(a.YNO, {
+                targetElementRef: C,
                 animation: a.YNO.Animation.NONE,
                 position: "top",
                 align: "right",
-                shouldShow: C,
+                shouldShow: y,
                 autoInvert: !1,
-                onRequestClose: () => y(!1),
-                renderPopout: e => (0, l.jsx)(_.A, {
+                onRequestClose: () => D(!1),
+                renderPopout: e => (0, l.jsx)(h.A, {
                     invite: t,
                     ...e
                 }),
                 children: e => (0, l.jsx)("div", {
-                    ref: N,
+                    ref: C,
                     children: (0, l.jsx)(a.K0, {
                         ...e,
                         icon: a.Zes,
                         "aria-label": A.intl.string(A.t["3D5yo/"]),
                         variant: "secondary",
-                        onClick: D
+                        onClick: S
                     })
                 })
             })]

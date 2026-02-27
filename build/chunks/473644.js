@@ -13,8 +13,8 @@ var l = i(627968),
     u = i(773669),
     m = i(473145),
     x = i(661191),
-    h = i(652215),
-    _ = i(985018),
+    _ = i(652215),
+    h = i(985018),
     g = i(492171);
 
 function A(e) {
@@ -22,11 +22,11 @@ function A(e) {
         guild: t,
         invite: i,
         discoveryGuild: A
-    } = e, p = i.approximate_presence_count ?? 0, E = i.approximate_member_count ?? 0, j = (0, s.bG)([u.default], () => u.default.locale), v = (0, o.P)(x.default.extractTimestamp(t.id), j), I = (0, s.bG)([d.A], () => A?.primary_category_id != null ? d.A.getCategoryName(A.primary_category_id) : null), T = t.premiumTier ?? h.TVA.NONE, f = T !== h.TVA.NONE, N = t.preferredLocale ?? A?.preferred_locale ?? null, C = n.useMemo(() => {
-        if ("en-US" === N) return _.intl.string(_.t.LQLMGP);
-        let e = (0, _.getAvailableLocales)().find(e => e.value === N);
-        return null != e ? _.intl.string(e.localizedName) : N
-    }, [N]), y = null != N && "" !== N, D = null != I, S = y || D || f, L = D || f;
+    } = e, p = i.approximate_presence_count ?? 0, E = i.approximate_member_count ?? 0, j = (0, s.bG)([u.default], () => u.default.locale), I = (0, o.P)(x.default.extractTimestamp(t.id), j), v = (0, s.bG)([d.A], () => A?.primary_category_id != null ? d.A.getCategoryName(A.primary_category_id) : null), f = t.premiumTier ?? _.TVA.NONE, T = f !== _.TVA.NONE, N = t.preferredLocale ?? A?.preferred_locale ?? null, C = n.useMemo(() => {
+        if ("en-US" === N) return h.intl.string(h.t.LQLMGP);
+        let e = (0, h.getAvailableLocales)().find(e => e.value === N);
+        return null != e ? h.intl.string(e.localizedName) : N
+    }, [N]), y = null != N && "" !== N, D = null != v, S = y || D || T, L = D || T;
     return (0, l.jsxs)("div", {
         className: g.hn,
         children: [(0, l.jsxs)("div", {
@@ -52,13 +52,13 @@ function A(e) {
             })
         }), (0, l.jsxs)("div", {
             className: g.ov,
-            children: [null != v && (0, l.jsxs)(l.Fragment, {
+            children: [null != I && (0, l.jsxs)(l.Fragment, {
                 children: [(0, l.jsx)(a.Text, {
                     tag: "span",
                     variant: "text-sm/normal",
                     color: "text-subtle",
-                    children: _.intl.format(_.t.zb2Q56, {
-                        createdAtDate: v
+                    children: h.intl.format(h.t.zb2Q56, {
+                        createdAtDate: I
                     })
                 }), S && (0, l.jsx)("span", {
                     className: g.LO,
@@ -79,16 +79,16 @@ function A(e) {
                     tag: "span",
                     variant: "text-sm/normal",
                     color: "text-subtle",
-                    children: I
-                }), f && (0, l.jsx)("span", {
+                    children: v
+                }), T && (0, l.jsx)("span", {
                     className: g.LO,
                     "aria-hidden": !0
                 })]
-            }), f && (0, l.jsx)(a.Text, {
+            }), T && (0, l.jsx)(a.Text, {
                 tag: "span",
                 variant: "text-sm/normal",
                 color: "text-subtle",
-                children: (0, m.gb)(T)
+                children: (0, m.gb)(f)
             })]
         })]
     })

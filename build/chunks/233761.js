@@ -13,8 +13,8 @@ var l = i(627968),
     u = i(772366),
     m = i(954571),
     x = i(652215),
-    h = i(788868),
-    _ = i(985018),
+    _ = i(788868),
+    h = i(985018),
     g = i(929252);
 
 function A(e) {
@@ -26,7 +26,7 @@ function A(e) {
     } = (0, c.Ay)(d.A.PREMIUM_UPSELL_TOOLTIP);
     return n.useEffect(() => {
         m.default.track(x.HAw.PREMIUM_UPSELL_VIEWED, {
-            type: h.e.GUILD_CAP_INLINE_INVITE_MODAL,
+            type: _.e.GUILD_CAP_INLINE_INVITE_MODAL,
             location: {
                 page: x.liQ.NATIVE_INVITE_MODAL
             },
@@ -50,10 +50,10 @@ function A(e) {
             color: o.k0.PREMIUM_TIER_2
         }), (0, l.jsx)("span", {
             className: g.Cq,
-            children: _.intl.string(_.t["4/W4Pz"])
+            children: h.intl.string(h.t["4/W4Pz"])
         }), (0, l.jsx)("span", {
             className: g.MY,
-            children: _.intl.string(_.t.b6KOkI)
+            children: h.intl.string(h.t.b6KOkI)
         })]
     })
 }

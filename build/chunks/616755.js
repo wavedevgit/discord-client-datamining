@@ -1,6 +1,6 @@
 /** chunk id: 616755, original params: e,t,i (module,exports,require) **/
 i.d(t, {
-    A: () => I
+    A: () => v
 });
 var l = i(627968),
     n = i(64700),
@@ -13,8 +13,8 @@ var l = i(627968),
     u = i(444316),
     m = i(460760),
     x = i(954571),
-    h = i(54959),
-    _ = i(473644),
+    _ = i(54959),
+    h = i(473644),
     g = i(57930),
     A = i(450382),
     p = i(652215),
@@ -27,7 +27,7 @@ function j(e) {
         splashURL: s,
         friendMemberIds: r,
         discoveryGuild: c
-    } = e, o = null != r && r.length > 0, [m, j] = n.useState(!1), v = n.useCallback(e => {
+    } = e, o = null != r && r.length > 0, [m, j] = n.useState(!1), I = n.useCallback(e => {
         j(e), x.default.track(p.HAw.INVITE_ACCEPT_DETAILS_VIEWED, {
             guild_id: i.id,
             invite_code: t.code,
@@ -54,7 +54,7 @@ function j(e) {
                     outline: !0
                 }), (0, l.jsxs)("div", {
                     className: E.X$,
-                    children: [(0, l.jsx)(_.A, {
+                    children: [(0, l.jsx)(h.A, {
                         guild: i,
                         invite: t,
                         discoveryGuild: c
@@ -68,11 +68,11 @@ function j(e) {
                     guild: i,
                     discoveryGuild: c,
                     expanded: m,
-                    setExpanded: v,
+                    setExpanded: I,
                     scrollableSectionClassName: E.kw
                 })]
             })]
-        }), (0, l.jsx)(h.A, {
+        }), (0, l.jsx)(_.A, {
             invite: t,
             guild: i,
             className: E.i
@@ -80,7 +80,7 @@ function j(e) {
     })
 }
 
-function v(e) {
+function I(e) {
     let {
         invite: t,
         guild: i,
@@ -103,7 +103,7 @@ function v(e) {
                 guild: i
             }), (0, l.jsxs)("div", {
                 className: E.X$,
-                children: [(0, l.jsx)(_.A, {
+                children: [(0, l.jsx)(h.A, {
                     guild: i,
                     invite: t,
                     discoveryGuild: a
@@ -120,7 +120,7 @@ function v(e) {
                     discoveryGuild: a,
                     scrollableSectionClassName: E.r_
                 })
-            }), (0, l.jsx)(h.A, {
+            }), (0, l.jsx)(_.A, {
                 invite: t,
                 guild: i,
                 className: E.pU
@@ -129,7 +129,7 @@ function v(e) {
     })
 }
 
-function I(e) {
+function v(e) {
     let {
         guild: t,
         invite: i,
@@ -137,22 +137,22 @@ function I(e) {
         transitionState: a,
         headerId: u,
         channel: x,
-        onClose: h
+        onClose: _
     } = e;
     n.useEffect(() => {
         (0, m.Mu)()
     }, []);
     let {
-        treatment: _
+        treatment: h
     } = o.z.useConfig({
         location: "AcceptInviteModalRedesign"
-    }), g = (0, c.A)("(max-width: 600px)"), A = "v1" === _ || g, p = n.useMemo(() => A ? j : v, [A]);
+    }), g = (0, c.A)("(max-width: 600px)"), A = "v1" === h || g, p = n.useMemo(() => A ? j : I, [A]);
     return (0, l.jsx)(d.dWK, {
         size: A ? "md" : "xxl",
         "aria-labelledby": u,
         "aria-label": t?.name ?? x?.name ?? "",
         transitionState: a,
-        onClose: () => (h(), Promise.resolve()),
+        onClose: () => (_(), Promise.resolve()),
         trackingProps: {
             impression: {
                 impressionName: r.ImpressionNames.INVITE_ACCEPT,
