@@ -63,12 +63,12 @@ function O(e) {
             onMouseEnter: q,
             onMouseLeave: W
         }
-    } = (0, d.E)(), z = r.useCallback(() => {
+    } = (0, d.E)(), K = r.useCallback(() => {
         j || M(!D)
     }, [j, D]);
     return (0, C.Vo)({
         event: x.jej.TOGGLE_SOUNDBOARD,
-        handler: z
+        handler: K
     }), (0, i.jsx)(m.f5, {
         value: V,
         children: (0, i.jsx)(c.m, {

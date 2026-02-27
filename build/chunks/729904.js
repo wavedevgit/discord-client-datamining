@@ -1,14 +1,14 @@
-/** chunk id: 729904, original params: e,t,i (module,exports,require) **/
-i.d(t, {
-    A: () => g
-}), i(667532);
-var n = i(311907),
-    r = i(73153),
-    l = i(463347),
-    a = i(824865),
-    s = i(334465),
-    o = i(545167),
-    c = i(652215);
+/** chunk id: 729904, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    A: () => _
+}), n(667532);
+var i = n(311907),
+    r = n(73153),
+    l = n(463347),
+    s = n(824865),
+    a = n(334465),
+    o = n(545167),
+    c = n(652215);
 let d = [c.BVt.CHANNEL_THREAD_VIEW(l.pv.guildId(), l.pv.channelId({
         optional: !0
     }), ":threadId", ":messageId?"), c.BVt.CHANNEL(l.pv.guildId(), l.pv.channelId({
@@ -20,7 +20,7 @@ let d = [c.BVt.CHANNEL_THREAD_VIEW(l.pv.guildId(), l.pv.channelId({
     h = 0,
     C = !!(null != window && "navigation" in window) && (window.navigation.canGoBack ?? !1),
     E = !!(null != window && "navigation" in window) && (window.navigation.canGoForward ?? !1);
-class A extends n.Ay.Store {
+class A extends i.Ay.Store {
     static displayName = "BackForwardNavStore";
     initialize() {
         u = [], h = 0
@@ -29,12 +29,12 @@ class A extends n.Ay.Store {
         return u
     }
     get canGoBack() {
-        return (0, o.vY)({
+        return (0, o.v)({
             location: "canGoBackForward"
         }) ? h < u.length - 1 : C
     }
     get canGoForward() {
-        return (0, o.vY)({
+        return (0, o.v)({
             location: "canGoBackForward"
         }) ? h > 0 : E
     }
@@ -45,50 +45,50 @@ class A extends n.Ay.Store {
         return this.canGoForward ? u[h - 1] : null
     }
 }
-let g = new A(r.h, {
+let _ = new A(r.h, {
     ROUTE_CHANGED: function(e) {
         let {
             location: t,
-            action: i
+            action: n
         } = e;
-        if ("navigation" in window && (C = window.navigation.canGoBack ?? !1, E = window.navigation.canGoForward ?? !1), "POP" === i) {
+        if ("navigation" in window && (C = window.navigation.canGoBack ?? !1, E = window.navigation.canGoForward ?? !1), "POP" === n) {
             let e = u.findIndex(e => e.path === t.pathname);
             if (-1 !== e) {
                 h = e;
                 return
             }
         }
-        if (t.source === a.A.USER_NAVIGATED_BACK) {
+        if (t.source === s.A.USER_NAVIGATED_BACK) {
             h < u.length - 1 && h++;
             return
         }
-        if (t.source === a.A.USER_NAVIGATED_FORWARD) {
+        if (t.source === s.A.USER_NAVIGATED_FORWARD) {
             h > 0 && h--;
             return
         }
         let {
-            pathname: n
-        } = t, r = (0, s.B)(n, d);
+            pathname: i
+        } = t, r = (0, a.B)(i, d);
         if (null != r) {
-            if ("REPLACE" === i && u.length > 0) {
+            if ("REPLACE" === n && u.length > 0) {
                 u[h] = {
-                    path: n,
+                    path: i,
                     params: r.params
                 };
                 return
             }
             if (u.length > 0) {
-                if (n === u[h].path) return;
-                let e = u.findIndex(e => e.path === n); - 1 !== e && (u.splice(e, 1), h >= e && (h -= 1))
+                if (i === u[h].path) return;
+                let e = u.findIndex(e => e.path === i); - 1 !== e && (u.splice(e, 1), h >= e && (h -= 1))
             }
             for (h > 0 && function(e, t) {
                     if (t < 0 || t >= e.length) throw RangeError("index out of bounds");
-                    let i = 0,
-                        n = t;
-                    for (; i < n;)[e[i], e[n]] = [e[n], e[i]], i++, n--
+                    let n = 0,
+                        i = t;
+                    for (; n < i;)[e[n], e[i]] = [e[i], e[n]], n++, i--
                 }(u, h), h = 0; u.length > 20;) u.pop();
             u.unshift({
-                path: n,
+                path: i,
                 params: r.params
             })
         }

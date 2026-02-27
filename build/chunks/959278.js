@@ -46,8 +46,8 @@ var i = n(627968),
     Y = n(140354),
     q = n(551036),
     W = n(46533),
-    z = n(467627),
-    K = n(379610),
+    K = n(467627),
+    z = n(379610),
     $ = n(920113),
     Q = n(164956),
     X = n(209700),
@@ -151,7 +151,7 @@ let ew = (0, c.Fe)({
         name: "GameServerPage",
         renderLoader: eU
     }),
-    ez = e => {
+    eK = e => {
         let {
             match: t
         } = e, n = (0, N.o)(), r = (0, A.bG)([ef.A, eS.A], () => {
@@ -260,7 +260,7 @@ let ew = (0, c.Fe)({
         }
         return (0, i.jsx)(b.A, {})
     },
-    eK = r.memo(function() {
+    ez = r.memo(function() {
         let {
             guildId: e,
             channelId: t
@@ -276,7 +276,7 @@ let ew = (0, c.Fe)({
             guildId: e
         }, e) : (0, i.jsx)(ed.A, {})
     }),
-    e$ = e => (0, i.jsx)(ez, {
+    e$ = e => (0, i.jsx)(eK, {
         ...e
     }),
     eQ = () => (0, i.jsx)(k.A, {}),
@@ -309,7 +309,7 @@ let ew = (0, c.Fe)({
         let {
             match: t
         } = e;
-        return (0, eE.pX)(eL.BVt.ME), (0, K.A)(t.params.inviteCode), null
+        return (0, eE.pX)(eL.BVt.ME), (0, z.A)(t.params.inviteCode), null
     },
     e1 = () => (0, i.jsx)(E.A, {}),
     e7 = () => (0, i.jsx)(I.A, {}),
@@ -514,13 +514,13 @@ function tn(e) {
                 [eM.R]: d,
                 [eM.WG]: s
             }),
-            children: [o && (0, i.jsx)(z.A, {
+            children: [o && (0, i.jsx)(K.A, {
                 className: eM.Pl,
                 themeOverride: n
             }), !s && (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)("div", {
                     ...x,
-                    children: (0, i.jsx)(eK, {})
+                    children: (0, i.jsx)(ez, {})
                 }), (0, i.jsx)(_.DUT, {
                     onClick: S,
                     "aria-label": "Resize Sidebar",

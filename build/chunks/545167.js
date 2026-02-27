@@ -1,52 +1,10 @@
-/** chunk id: 545167, original params: e,t,i (module,exports,require) **/
-i.d(t, {
-    pz: () => s,
-    vY: () => c
+/** chunk id: 545167, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    v: () => s
 });
-var n = i(600975),
-    r = i(945810),
-    l = i(723702);
-let a = (0, n.C)({
-    kind: "user",
-    id: "2025-08_back_forward",
-    label: "Back Forward",
-    defaultConfig: {
-        backForwardButtons: !1,
-        titlebarHoverHighlight: !1,
-        titlebarIconSize: "refresh_sm",
-        guildTitleIconSize: "xs",
-        guildIconSize: "Mini"
-    },
-    treatments: [{
-        id: 1,
-        label: "Back/forward buttons - 18px titlebar icons",
-        config: {
-            backForwardButtons: !0,
-            titlebarHoverHighlight: !0,
-            titlebarIconSize: "sm",
-            guildTitleIconSize: "sm",
-            guildIconSize: "Smol"
-        }
-    }, {
-        id: 2,
-        label: "Back/forward buttons - 20px titlebar icons",
-        config: {
-            backForwardButtons: !0,
-            titlebarHoverHighlight: !0,
-            titlebarIconSize: "refresh_sm",
-            guildTitleIconSize: "refresh_sm",
-            guildIconSize: "Mini"
-        }
-    }]
-});
-
-function s(e) {
-    return a.useExperiment(e, {
-        autoTrackExposure: !0,
-        disable: !(0, l.isDesktop)()
-    })
-}
-let o = (0, r.mj)({
+var i = n(945810),
+    r = n(723702);
+let l = (0, i.mj)({
     name: "2026-02-bf-browser",
     kind: "user",
     defaultConfig: {
@@ -59,10 +17,10 @@ let o = (0, r.mj)({
     }
 });
 
-function c(e) {
-    if (!(0, l.isDesktop)()) return !1;
+function s(e) {
+    if (!(0, r.isDesktop)()) return !1;
     let {
         allowEnhancedNav: t
-    } = o.getConfig(e);
+    } = l.getConfig(e);
     return t
 }

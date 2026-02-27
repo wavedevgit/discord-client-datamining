@@ -109,9 +109,9 @@ let O = Math.ceil(Math.sqrt(115200)),
                 glowSpring: 1,
                 delay: 700
             }), H.handleOnboardingPopoutRender()
-        }, [B, k, H]), [W, z] = r.useState(-1), K = r.useCallback(e => {
-            z(e.contentRect.width)
-        }, []), $ = (0, p.w)(K, [], {
+        }, [B, k, H]), [W, K] = r.useState(-1), z = r.useCallback(e => {
+            K(e.contentRect.width)
+        }, []), $ = (0, p.w)(z, [], {
             fireOnMount: !0
         }), Q = !D && P, X = !D && R, Z = D && w?.questHomeEntrypoint?.tooltipTitle != null, {
             inlineCssProperties: J,

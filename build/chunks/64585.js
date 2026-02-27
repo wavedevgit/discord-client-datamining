@@ -1,22 +1,22 @@
-/** chunk id: 64585, original params: e,t,i (module,exports,require) **/
-i.d(t, {
+/** chunk id: 64585, original params: e,t,n (module,exports,require) **/
+n.d(t, {
     A: () => R
-}), i(321073);
-var n = i(73153),
-    r = i(272355),
-    l = i(400492),
-    a = i(312671),
-    s = i(961350),
-    o = i(383501),
-    c = i(309010),
-    d = i(741961),
-    u = i(3137),
-    h = i(559908),
-    C = i(652215);
-let E = (0, l.aN)("poggermode_applause", a.A.getSoundpack()),
+}), n(321073);
+var i = n(73153),
+    r = n(272355),
+    l = n(400492),
+    s = n(312671),
+    a = n(961350),
+    o = n(383501),
+    c = n(309010),
+    d = n(741961),
+    u = n(3137),
+    h = n(559908),
+    C = n(652215);
+let E = (0, l.aN)("poggermode_applause", s.A.getSoundpack()),
     A = !1,
-    g = !1,
-    _ = [],
+    _ = !1,
+    g = [],
     p = null,
     m = () => {
         E.stop(), A = !1
@@ -27,25 +27,25 @@ let E = (0, l.aN)("poggermode_applause", a.A.getSoundpack()),
         return !!e && !!t && null != c.A.getChannelId()
     },
     O = () => {
-        if (0 === _.length || !L() || g) return;
-        g = !0;
-        let [e, t] = _[_.length - 1];
+        if (0 === g.length || !L() || _) return;
+        _ = !0;
+        let [e, t] = g[g.length - 1];
         (0, l.Ak)(e, t), p = setTimeout(f, 1e3)
     },
     f = () => {
-        _.pop(), g = !1, O()
+        g.pop(), _ = !1, O()
     },
-    I = function(e) {
+    T = function(e) {
         let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 1,
-            i = o.A.isConnected();
-        _.push([e, t * (i ? .1 : 1)]), O()
+            n = o.A.isConnected();
+        g.push([e, t * (n ? .1 : 1)]), O()
     };
-class T extends r.A {
+class I extends r.A {
     _initialize() {
-        h.Ay.addChangeListener(this.startAudio), n.h.subscribe("RTC_CONNECTION_STATE", this.setVolume), n.h.subscribe("TYPING_STOP", this.stopAudio), n.h.subscribe("TYPING_STOP_LOCAL", this.stopAudio), n.h.subscribe("CHANNEL_SELECT", this.stopAudio), n.h.subscribe("POGGERMODE_SETTINGS_UPDATE", this.stopAudio)
+        h.Ay.addChangeListener(this.startAudio), i.h.subscribe("RTC_CONNECTION_STATE", this.setVolume), i.h.subscribe("TYPING_STOP", this.stopAudio), i.h.subscribe("TYPING_STOP_LOCAL", this.stopAudio), i.h.subscribe("CHANNEL_SELECT", this.stopAudio), i.h.subscribe("POGGERMODE_SETTINGS_UPDATE", this.stopAudio)
     }
     _terminate() {
-        h.Ay.removeChangeListener(this.startAudio), n.h.unsubscribe("RTC_CONNECTION_STATE", this.setVolume), n.h.unsubscribe("TYPING_STOP", this.stopAudio), n.h.unsubscribe("TYPING_STOP_LOCAL", this.stopAudio), n.h.unsubscribe("CHANNEL_SELECT", this.stopAudio), n.h.unsubscribe("POGGERMODE_SETTINGS_UPDATE", this.stopAudio), clearTimeout(p)
+        h.Ay.removeChangeListener(this.startAudio), i.h.unsubscribe("RTC_CONNECTION_STATE", this.setVolume), i.h.unsubscribe("TYPING_STOP", this.stopAudio), i.h.unsubscribe("TYPING_STOP_LOCAL", this.stopAudio), i.h.unsubscribe("CHANNEL_SELECT", this.stopAudio), i.h.unsubscribe("POGGERMODE_SETTINGS_UPDATE", this.stopAudio), clearTimeout(p)
     }
     setVolume(e) {
         let {
@@ -57,7 +57,7 @@ class T extends r.A {
         let {
             userId: t
         } = e;
-        s.default.getId() === t && m()
+        a.default.getId() === t && m()
     }
     stopAudio() {
         m()
@@ -66,14 +66,14 @@ class T extends r.A {
         if (!L()) return;
         let e = c.A.getChannelId();
         if (null == e) return;
-        let t = s.default.getId(),
-            i = d.A.isTyping(e, t),
-            n = h.Ay.getUserCombo(t, e),
-            r = n?.multiplier ?? 1;
-        i && r >= 7 ? A || (E.loop(), A = !0) : m()
+        let t = a.default.getId(),
+            n = d.A.isTyping(e, t),
+            i = h.Ay.getUserCombo(t, e),
+            r = i?.multiplier ?? 1;
+        n && r >= 7 ? A || (E.loop(), A = !0) : m()
     }
     playAchievementUnlockSound() {
-        L() && I("poggermode_achievement_unlock")
+        L() && T("poggermode_achievement_unlock")
     }
 }
-let R = new T
+let R = new I

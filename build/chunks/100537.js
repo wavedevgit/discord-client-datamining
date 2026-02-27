@@ -81,13 +81,13 @@ function M(e) {
         }
     }, [t.applicationId, l]);
     let W = H.width / Math.max(H.height, 1) < R.B5,
-        z = 0,
         K = 0,
+        z = 0,
         $ = (0, h.A)(n?.id);
     if (!$) {
         let e = H.width,
             t = H.height;
-        W ? ((t = H.width / R.B5) > H.height && (e = (t = H.height) * R.B5), K = (H.height - t) / 2) : ((e = Math.min(H.height * R.B5, H.width)) > H.width && (t = (e = H.width) / R.B5), z = (H.width - e) / 2)
+        W ? ((t = H.width / R.B5) > H.height && (e = (t = H.height) * R.B5), z = (H.height - t) / 2) : ((e = Math.min(H.height * R.B5, H.width)) > H.width && (t = (e = H.width) / R.B5), K = (H.width - e) / 2)
     }(0, f.ns)(t.applicationId);
     let Q = R.E8.NO_CHAT,
         X = (0, m.G)();
@@ -111,10 +111,10 @@ function M(e) {
                         [j.kK]: $
                     }),
                     style: {
-                        paddingLeft: z,
-                        paddingRight: z,
-                        paddingTop: K,
-                        paddingBottom: K
+                        paddingLeft: K,
+                        paddingRight: K,
+                        paddingTop: z,
+                        paddingBottom: z
                     },
                     ref: B,
                     children: (0, i.jsx)(y.A, {

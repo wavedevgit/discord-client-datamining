@@ -46,8 +46,8 @@ var i = n(627968),
     Y = n(371794),
     q = n(970672),
     W = n(109495),
-    z = n(179389),
-    K = n(893638),
+    K = n(179389),
+    z = n(893638),
     $ = n(283508),
     Q = n(852860),
     X = n(363994),
@@ -397,7 +397,7 @@ class ed extends r.PureComponent {
         })
     }
     renderFeatures(e) {
-        return (0, i.jsx)(K.A, {
+        return (0, i.jsx)(z.A, {
             sku: e
         })
     }
@@ -419,7 +419,7 @@ class ed extends r.PureComponent {
                 children: es.intl.format(es.t.tluX4B, {
                     name: n.name
                 })
-            }), (0, i.jsx)(E.A, {}), (0, i.jsx)(z.A, {
+            }), (0, i.jsx)(E.A, {}), (0, i.jsx)(K.A, {
                 applicationId: e.id,
                 blurb: t.summary,
                 description: l,

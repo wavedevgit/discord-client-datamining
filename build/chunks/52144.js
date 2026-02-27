@@ -1,6 +1,6 @@
 /** chunk id: 52144, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => I
 });
 var i = n(627968),
     r = n(64700),
@@ -11,69 +11,62 @@ var i = n(627968),
     d = n(435371),
     c = n(397927),
     u = n(573435),
-    A = n(545167),
-    h = n(851580),
-    _ = n(222823),
-    m = n(287809),
-    p = n(371911),
-    g = n(790782),
-    E = n(985018),
-    I = n(656678);
+    A = n(851580),
+    h = n(222823),
+    _ = n(287809),
+    m = n(371911),
+    p = n(790782),
+    g = n(985018),
+    E = n(656678);
 
-function f(e) {
+function I(e) {
     let {
         onOpen: t,
         onClose: n,
         "data-jump-section": l
-    } = e, f = (0, s.bG)([m.default], () => m.default.getCurrentUser()), C = r.useRef(null), T = (0, s.bG)([_.Ay], () => f?.id != null && _.Ay.getMentionCount(f.id, g.P.NOTIFICATION_CENTER) > 0), {
-        titlebarIconSize: N,
-        titlebarHoverHighlight: S
-    } = (0, A.pz)({
-        location: "RecentsButton"
-    }), x = "sm" === N ? "refresh_sm" : "md", v = r.useMemo(() => (0, i.jsx)(c.K$s, {
-        size: x,
-        color: "currentColor"
-    }), [x]);
-    return (0, i.jsx)(p.C, {
-        targetElementRef: C,
+    } = e, I = (0, s.bG)([_.default], () => _.default.getCurrentUser()), f = r.useRef(null), C = (0, s.bG)([h.Ay], () => I?.id != null && h.Ay.getMentionCount(I.id, p.P.NOTIFICATION_CENTER) > 0);
+    return (0, i.jsx)(m.C, {
+        targetElementRef: f,
         onOpen: t,
         onClose: n,
         badgeState: {
-            badgeForYou: T
+            badgeForYou: C
         },
         popoutPosition: "bottom",
         popoutAlign: "right",
         children: (e, t, n, r) => (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(d.m_, {
-                targetElementRef: C,
+                targetElementRef: f,
                 shouldShow: !t,
-                text: E.intl.string(E.t.GSmTKJ),
+                text: g.intl.string(g.t.GSmTKJ),
                 children: (0, i.jsx)(c.DUT, {
                     ...n,
                     tag: "div",
-                    innerRef: C,
+                    innerRef: f,
                     onClick: e,
                     "data-jump-section": l,
-                    "aria-label": E.intl.string(E.t.GSmTKJ),
-                    className: a()(I.vk, {
-                        [I.l9]: S
-                    }),
-                    children: T || r ? (0, i.jsxs)(i.Fragment, {
+                    "aria-label": g.intl.string(g.t.GSmTKJ),
+                    className: a()(E.vk, E.l9),
+                    children: C || r ? (0, i.jsxs)(i.Fragment, {
                         children: [(0, i.jsx)(u.Ay, {
                             mask: u.Ay.Masks.HEADER_BAR_BADGE_BOTTOM,
-                            height: o.E[x],
-                            width: o.E[x],
-                            children: v
-                        }), (0, i.jsx)("span", {
-                            className: a()(I.qS, {
-                                [I.mf]: "refresh_sm" === x
+                            height: o.E.refresh_sm,
+                            width: o.E.refresh_sm,
+                            children: (0, i.jsx)(c.K$s, {
+                                size: "refresh_sm",
+                                color: "currentColor"
                             })
+                        }), (0, i.jsx)("span", {
+                            className: E.qS
                         })]
-                    }) : v
+                    }) : (0, i.jsx)(c.K$s, {
+                        size: "refresh_sm",
+                        color: "currentColor"
+                    })
                 })
-            }), (0, i.jsx)(h.v, {
+            }), (0, i.jsx)(A.v, {
                 location: "inbox-button",
-                targetElementRef: C
+                targetElementRef: f
             })]
         })
     })

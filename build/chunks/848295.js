@@ -93,14 +93,14 @@ function L(e) {
     } = e, {
         onClose: B,
         transitionState: H
-    } = b, F = (0, g.GV)(), Y = U.length % 2 == 0, q = (0, d.bG)([h.A], () => h.A.useReducedMotion), [W, z] = r.useState(Date.now()), [K, $] = r.useState(0), [Q, X] = r.useState(0), [Z, J] = r.useState(!1), [ee, et] = r.useState(!0), en = r.useRef(W), ei = r.useRef(K), er = r.useRef(Q), el = r.useRef(Z), ea = r.useRef(ee), [es, eo] = r.useState(y), ed = r.useRef(!1);
+    } = b, F = (0, g.GV)(), Y = U.length % 2 == 0, q = (0, d.bG)([h.A], () => h.A.useReducedMotion), [W, K] = r.useState(Date.now()), [z, $] = r.useState(0), [Q, X] = r.useState(0), [Z, J] = r.useState(!1), [ee, et] = r.useState(!0), en = r.useRef(W), ei = r.useRef(z), er = r.useRef(Q), el = r.useRef(Z), ea = r.useRef(ee), [es, eo] = r.useState(y), ed = r.useRef(!1);
 
     function ec() {
         let e = Date.now(),
             t = e - en.current,
             n = ei.current,
             i = er.current;
-        return el.current && ($(n += t), ea.current || X(i += t)), z(e), [n, i]
+        return el.current && ($(n += t), ea.current || X(i += t)), K(e), [n, i]
     }
     return (0, _.A)({
         type: s.ImpressionTypes.MODAL,
@@ -137,8 +137,8 @@ function L(e) {
             URL.revokeObjectURL(e.src)
         })
     }, [es]), r.useEffect(() => {
-        en.current = W, ei.current = K, er.current = Q, el.current = Z, ea.current = ee
-    }, [W, K, Q, Z, ee]), r.useEffect(() => () => {
+        en.current = W, ei.current = z, er.current = Q, el.current = Z, ea.current = ee
+    }, [W, z, Q, Z, ee]), r.useEffect(() => () => {
         if ("video" === L.type || "embed" === L.type) {
             let [e, t] = ec();
             C.default.track(N.HAw.CHANGE_LOG_VIDEO_PLAYED, {
@@ -191,7 +191,7 @@ function L(e) {
                     onPlay: e => {
                         C.default.track(N.HAw.CHANGE_LOG_VIDEO_INTERACTED, {
                             change_log_id: G
-                        }), z(Date.now()), J(!0), et(e.currentTarget.muted)
+                        }), K(Date.now()), J(!0), et(e.currentTarget.muted)
                     },
                     onEnded: e => {
                         ec(), et(e.currentTarget.muted), J(!1)

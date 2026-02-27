@@ -1,19 +1,19 @@
-/** chunk id: 963169, original params: e,t,i (module,exports,require) **/
-i.d(t, {
+/** chunk id: 963169, original params: e,t,n (module,exports,require) **/
+n.d(t, {
     MS: () => d,
     OE: () => u,
     Qb: () => h
 });
-var n = i(73153),
-    r = i(824865),
-    l = i(976860),
-    a = i(954571),
-    s = i(545167),
-    o = i(729904),
-    c = i(652215);
+var i = n(73153),
+    r = n(824865),
+    l = n(976860),
+    s = n(954571),
+    a = n(545167),
+    o = n(729904),
+    c = n(652215);
 
 function d(e, t) {
-    n.h.dispatch({
+    i.h.dispatch({
         type: "ROUTE_CHANGED",
         location: e,
         action: t
@@ -22,10 +22,10 @@ function d(e, t) {
 
 function u(e) {
     if (!(0, l.TX)()) return;
-    if (a.default.track(c.HAw.APP_BACK_FORWARD_NAVIGATED, {
+    if (s.default.track(c.HAw.APP_BACK_FORWARD_NAVIGATED, {
             nav_direction: -1,
             nav_trigger: e
-        }), !(0, s.vY)({
+        }), !(0, a.v)({
             location: "navigatingBackForward"
         })) return void(0, l.aX)();
     let t = o.A.backDestination;
@@ -36,10 +36,10 @@ function u(e) {
 
 function h(e) {
     if (!(0, l.TX)()) return;
-    if (a.default.track(c.HAw.APP_BACK_FORWARD_NAVIGATED, {
+    if (s.default.track(c.HAw.APP_BACK_FORWARD_NAVIGATED, {
             nav_direction: 1,
             nav_trigger: e
-        }), !(0, s.vY)({
+        }), !(0, a.v)({
             location: "navigatingBackForward"
         })) return void(0, l.sY)();
     let t = o.A.forwardDestination;

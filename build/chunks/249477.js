@@ -46,8 +46,8 @@ var i = n(627968),
     Y = n(383501),
     q = n(309010),
     W = n(967198),
-    z = n(461213),
-    K = n(543465),
+    K = n(461213),
+    z = n(543465),
     $ = n(287809),
     Q = n(619921),
     X = n(595623),
@@ -92,7 +92,7 @@ async function ei(e) {
         overlay_method: P.Ue[l] ?? (__OVERLAY__ ? P.Ue[P.Ue.Hook] : null),
         activity_status_enabled: U.tz.getSetting(),
         activity_status_shared_guilds: a,
-        current_user_status: z.A.getStatus(),
+        current_user_status: K.A.getStatus(),
         game_detection_enabled: (0, S.Xr)(t),
         executable_path: p,
         voice_channel_id: s,
@@ -221,7 +221,7 @@ class er extends r.PureComponent {
                 game_platform: et.yTV.DESKTOP,
                 distributor: u.distributor,
                 detection_method: "verified_non_game_application",
-                current_user_status: z.A.getStatus(),
+                current_user_status: K.A.getStatus(),
                 executable_path: (0, N.Ic)(u.exePath),
                 voice_channel_id: t,
                 voice_channel_type: i,
@@ -282,7 +282,7 @@ class er extends r.PureComponent {
 }
 
 function el() {
-    let [e, t] = (0, o.yK)([q.A], () => [q.A.getVoiceChannelId(), q.A.getChannelId()], []), n = (0, o.bG)([G.A], () => G.A.getChannel(t), [t]), l = (0, o.bG)([f.A], () => n?.id != null && f.A.getChatOpen(n.id), [n]), a = n?.nsfw, s = (0, o.bG)([G.A], () => G.A.getChannel(e), [e]), d = (0, o.bG)([W.A], () => W.A.getGuildId(), []), c = (0, o.bG)([B.A], () => B.A.getGuild(d), [d]), u = (0, o.bG)([$.default], () => $.default.getCurrentUser(), []), E = (0, o.bG)([V.Ay], () => null != u && null != d && (V.Ay.getMember(d, u.id)?.isPending ?? !1), [u, d]), I = (0, o.bG)([X.Ay], () => X.Ay.getState().section, []), C = (0, o.bG)([Q.A], () => Q.A.getHomeLink(), []), T = (0, o.bG)([x.A], () => x.A.isConnected(), []), [N, b] = (0, o.yK)([H.Ay], () => [H.Ay.isVideoEnabled(), H.Ay.isScreenSharing()], []), R = (0, o.bG)([z.A], () => z.A.getPrimaryActivity(), []), {
+    let [e, t] = (0, o.yK)([q.A], () => [q.A.getVoiceChannelId(), q.A.getChannelId()], []), n = (0, o.bG)([G.A], () => G.A.getChannel(t), [t]), l = (0, o.bG)([f.A], () => n?.id != null && f.A.getChatOpen(n.id), [n]), a = n?.nsfw, s = (0, o.bG)([G.A], () => G.A.getChannel(e), [e]), d = (0, o.bG)([W.A], () => W.A.getGuildId(), []), c = (0, o.bG)([B.A], () => B.A.getGuild(d), [d]), u = (0, o.bG)([$.default], () => $.default.getCurrentUser(), []), E = (0, o.bG)([V.Ay], () => null != u && null != d && (V.Ay.getMember(d, u.id)?.isPending ?? !1), [u, d]), I = (0, o.bG)([X.Ay], () => X.Ay.getState().section, []), C = (0, o.bG)([Q.A], () => Q.A.getHomeLink(), []), T = (0, o.bG)([x.A], () => x.A.isConnected(), []), [N, b] = (0, o.yK)([H.Ay], () => [H.Ay.isVideoEnabled(), H.Ay.isScreenSharing()], []), R = (0, o.bG)([K.A], () => K.A.getPrimaryActivity(), []), {
         currentGame: P,
         currentNonGame: j
     } = (0, o.cf)([S.Ay], () => ({
@@ -356,7 +356,7 @@ function el() {
                         premium_progress_bar_enabled: null != n && (0, y.$k)(n, {
                             location: "guild-view"
                         }),
-                        viewing_all_channels: !K.Ay.isOptInEnabled(o),
+                        viewing_all_channels: !z.Ay.isOptInEnabled(o),
                         num_recent_channels: O.A.recentsChannelCount(o)
                     };
                 (0, h.zV)(et.HAw.GUILD_VIEWED, i), (0, m.k)(et.HAw.GUILD_VIEWED_CLICKSTREAM, {
