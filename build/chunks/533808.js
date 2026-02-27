@@ -21,7 +21,7 @@ var i = n(627968),
     E = n(849918),
     C = n(219887),
     T = n(985018),
-    S = n(233364);
+    S = n(670566);
 let I = "isDefault";
 class f extends s.PureComponent {
     static defaultProps = {

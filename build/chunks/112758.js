@@ -126,7 +126,7 @@ function w(e, t, r, o) {
         }), (0, s.L3)(e, async () => {
             let {
                 default: e
-            } = await Promise.all([n.e("3795"), n.e("3183"), n.e("10566"), n.e("24202"), n.e("73368"), n.e("5873"), n.e("1636"), n.e("51092")]).then(n.bind(n, 547983));
+            } = await Promise.all([n.e("3795"), n.e("3183"), n.e("53890"), n.e("24202"), n.e("73368"), n.e("5873"), n.e("1636"), n.e("79652")]).then(n.bind(n, 547983));
             return n => (0, i.jsx)(e, {
                 ...n,
                 message: a,

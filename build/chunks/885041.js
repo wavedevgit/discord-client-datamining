@@ -24,7 +24,7 @@ var i = n(627968),
     T = n(315206),
     N = n(844358),
     S = n(828430),
-    x = n(857365),
+    x = n(79746),
     v = n(861638),
     y = n(793574),
     b = n(114716),
@@ -47,7 +47,7 @@ var i = n(627968),
     q = n(257402),
     W = n(216954),
     K = n(735831),
-    z = n(136334),
+    z = n(913953),
     $ = n(142120),
     Q = n(507263),
     X = n(998345),
@@ -110,9 +110,9 @@ var i = n(627968),
     e0 = n(147964),
     e1 = n(237631),
     e7 = n(194871),
-    e9 = n(856588),
-    e6 = n(612181),
-    e5 = n(723702),
+    e6 = n(856588),
+    e5 = n(612181),
+    e9 = n(723702),
     e2 = n(837921),
     e3 = n(715671),
     e4 = n(652215),
@@ -121,7 +121,7 @@ var i = n(627968),
     tt = n(613057);
 n(115036), n(943577), n(131319), n(794383), n(845618), n(712687), n(328968), n(67480), n(874486), n(162605), n(2866), n(628965), n(752319), n(836602), n(555337), n(863036), n(291731), n(176360), n(972937), n(279061), n(750128), n(921955);
 let tn = !1;
-(0, v.as)(), s.Ay.initialize(), eb.A.loadServer(), e5.isPlatformEmbedded && (e2.Ay.on("USER_SETTINGS_OPEN", (e, t) => {
+(0, v.as)(), s.Ay.initialize(), eb.A.loadServer(), e9.isPlatformEmbedded && (e2.Ay.on("USER_SETTINGS_OPEN", (e, t) => {
     (0, eF.openUserSettings)()
 }), e2.Ay.on("LAUNCH_APPLICATION", (e, t) => {
     let n = eX.A.getActiveLibraryApplication(t);
@@ -245,7 +245,7 @@ function td(e) {
 let tc = [{
     path: [e4.BVt.ACTIVITY_DETAILS(":applicationId")],
     render: function(e) {
-        return (0, e6.wR)() || eW.default.getLoginStatus() === e4.aUe.LOGGING_IN || !eW.default.allowLogoutRedirect() ? ta(e) : (0, i.jsx)(N.A, {
+        return (0, e5.wR)() || eW.default.getLoginStatus() === e4.aUe.LOGGING_IN || !eW.default.allowLogoutRedirect() ? ta(e) : (0, i.jsx)(N.A, {
             applicationId: e.match.params.applicationId
         })
     }
@@ -387,7 +387,7 @@ let tc = [{
             (0, o.mMO)(async () => {
                 let {
                     default: e
-                } = await Promise.all([n.e("64992"), n.e("6356")]).then(n.bind(n, 401539));
+                } = await Promise.all([n.e("64992"), n.e("67208")]).then(n.bind(n, 401539));
                 return t => (0, i.jsx)(e, {
                     ...t,
                     guildId: r
@@ -517,7 +517,7 @@ class th extends r.PureComponent {
     historyUnlisten = () => {};
     rewriterUnlisten = () => {};
     componentDidMount() {
-        e2.Ay.setZoomFactor(g.A.zoom), eb.A.init(), O.A.initialize(), eg.A.initialize(), q.A.initialize(), eq.A.initialize(), W.A.initialize(), ef.A.initialize(), G.A.initialize(), ea.A.initialize(), E.A.init(), z.A.init(), K.A.init(), eu.A.initialize(), S.A.initialize(), B.A.initialize(), eC.A.initialize(), T.Ay.initialize(), H.Ay.initialize(), eY.A.initialize(), ei.Ay.initialize(), ep.A.initialize(), C.A.initialize(), er.A.init(), P.A.init(), e9.A.init(), f.A.initialize(), ew.A.init(), e1.A.init(), ek.A.init(), eP.A.initialize(), ej.A.initialize(), eG.A.initialize(), eB.A.init(), V.A.initialize(), I.A.initialize(), eR.A.initialize(), e_.A.initialize(), eh.A.initialize(), em.A.initialize(), j.A.initialize(), D.A.initialize(), Y.A.initialize(), el.A.initialize(), es.A.initialize(), eT.A.initialize(), eE.A.initialize(), U.A.initialize(), R.A.initialize(), x.A.initialize(), this.rewriterUnlisten = eN.A.addRouteRewriter(this.ensureChannelMatchesGuild), this.historyUnlisten = eN.A.addRouteChangeListener(this.handleHistoryChange)
+        e2.Ay.setZoomFactor(g.A.zoom), eb.A.init(), O.A.initialize(), eg.A.initialize(), q.A.initialize(), eq.A.initialize(), W.A.initialize(), ef.A.initialize(), G.A.initialize(), ea.A.initialize(), E.A.init(), z.A.init(), K.A.init(), eu.A.initialize(), S.A.initialize(), B.A.initialize(), eC.A.initialize(), T.Ay.initialize(), H.Ay.initialize(), eY.A.initialize(), ei.Ay.initialize(), ep.A.initialize(), C.A.initialize(), er.A.init(), P.A.init(), e6.A.init(), f.A.initialize(), ew.A.init(), e1.A.init(), ek.A.init(), eP.A.initialize(), ej.A.initialize(), eG.A.initialize(), eB.A.init(), V.A.initialize(), I.A.initialize(), eR.A.initialize(), e_.A.initialize(), eh.A.initialize(), em.A.initialize(), j.A.initialize(), D.A.initialize(), Y.A.initialize(), el.A.initialize(), es.A.initialize(), eT.A.initialize(), eE.A.initialize(), U.A.initialize(), R.A.initialize(), x.A.initialize(), this.rewriterUnlisten = eN.A.addRouteRewriter(this.ensureChannelMatchesGuild), this.historyUnlisten = eN.A.addRouteChangeListener(this.handleHistoryChange)
     }
     componentWillUnmount() {
         eb.A.terminate(), eq.A.terminate(), ef.A.terminate(), eg.A.terminate(), O.A.terminate(), T.Ay.terminate(), H.Ay.terminate(), eY.A.terminate(), C.A.terminate(), eC.A.terminate(), ep.A.terminate(), eG.A.terminate(), f.A.terminate(), V.A.terminate(), es.A.terminate(), I.A.terminate(), eT.A.terminate(), eR.A.terminate(), e_.A.terminate(), eh.A.terminate(), em.A.terminate(), j.A.terminate(), D.A.terminate(), eE.A.terminate(), U.A.terminate(), F.A.terminate(), R.A.terminate(), x.A.terminate(), Y.A.terminate(), el.A.terminate(), this.historyUnlisten(), this.rewriterUnlisten()

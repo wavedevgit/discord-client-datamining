@@ -1,43 +1,43 @@
-/** chunk id: 355971, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => m
+/** chunk id: 355971, original params: e,a,t (module,exports,require) **/
+t.d(a, {
+    A: () => u
 });
-var a = n(627968);
-n(64700);
-var r = n(317097),
-    i = n(311907),
-    s = n(827734),
-    l = n(990078),
-    c = n(397927),
-    o = n(775602),
-    d = n(496885),
-    u = n(985018);
+var n = t(627968);
+t(64700);
+var i = t(317097),
+    o = t(311907),
+    r = t(827734),
+    c = t(990078),
+    l = t(397927),
+    s = t(775602),
+    _ = t(496885),
+    d = t(985018);
 
-function m(e) {
-    let t, {
-            color: n,
-            size: m,
-            forcedIconColor: p,
-            className: _,
-            iconClassName: h,
-            tooltipText: x
+function u(e) {
+    let a, {
+            color: t,
+            size: u,
+            forcedIconColor: m,
+            className: p,
+            iconClassName: f,
+            tooltipText: A
         } = e,
-        [g, f] = (0, i.yK)([o.A], () => [o.A.desaturateUserColors, o.A.saturation]),
-        v = (0, c.rdh)(s.A.unsafe_rawColors.PRIMARY_300).hex(),
-        A = (0, r.LX)(n ?? v),
-        C = (0, r.$k)(A, !1, g ? f : null);
-    return t = null != p ? p : .3 > (0, r.OK)(A) ? s.A.unsafe_rawColors.PRIMARY_630.css : s.A.unsafe_rawColors.WHITE.css, (0, a.jsx)(l.m, {
-        text: null != x ? x : u.intl.string(u.t.T3PvV4),
-        children: (0, a.jsx)(d.A, {
-            className: _,
-            color: C,
-            size: m,
-            children: (0, a.jsx)(c.Uzd, {
+        [I, g] = (0, o.yK)([s.A], () => [s.A.desaturateUserColors, s.A.saturation]),
+        C = (0, l.rdh)(r.A.unsafe_rawColors.PRIMARY_300).hex(),
+        h = (0, i.LX)(t ?? C),
+        T = (0, i.$k)(h, !1, I ? g : null);
+    return a = null != m ? m : .3 > (0, i.OK)(h) ? r.A.unsafe_rawColors.PRIMARY_630.css : r.A.unsafe_rawColors.WHITE.css, (0, n.jsx)(c.m, {
+        text: null != A ? A : d.intl.string(d.t.T3PvV4),
+        children: (0, n.jsx)(_.A, {
+            className: p,
+            color: T,
+            size: u,
+            children: (0, n.jsx)(l.Uzd, {
                 size: "custom",
-                color: t,
-                height: m,
-                width: m,
-                className: h
+                color: a,
+                height: u,
+                width: u,
+                className: f
             })
         })
     })

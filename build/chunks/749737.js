@@ -50,9 +50,9 @@ var i = n(627968),
     K = n(531525),
     Z = n(652215),
     q = n(986238),
-    X = n(22999),
-    Q = n(436833),
-    J = n(522759);
+    X = n(254441),
+    Q = n(506823),
+    J = n(473169);
 let $ = ["discord_web", "discord_marketing", "discord_developers", "discord_ios", "discord_android"],
     ee = [{
         id: "branch",

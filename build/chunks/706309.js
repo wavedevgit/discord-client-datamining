@@ -7,8 +7,8 @@ var r = l(627968);
 l(64700);
 var a = l(397927),
     n = l(18769),
-    s = l(653793),
-    i = l(673277),
+    i = l(653793),
+    s = l(673277),
     o = l(118713);
 let d = () => (0, r.jsx)("div", {
         style: {
@@ -44,7 +44,7 @@ let d = () => (0, r.jsx)("div", {
             }), (0, r.jsx)(a.Text, {
                 variant: "text-md/normal",
                 children: "The carousel will pause slidding when the mouse hovers it, and resume on mouse leave."
-            }), (0, r.jsx)(i.A, {
+            }), (0, r.jsx)(s.A, {
                 children: (0, r.jsxs)(o.A, {
                     ...e,
                     children: [(0, r.jsx)("div", {
@@ -79,11 +79,11 @@ let d = () => (0, r.jsx)("div", {
                         children: (0, r.jsx)(c, {})
                     })]
                 })
-            }), (0, r.jsxs)(i.A, {
+            }), (0, r.jsxs)(s.A, {
                 children: [(0, r.jsx)(a.Text, {
                     variant: "text-md/normal",
                     children: "Here is an example of what a carousel inside of a card might look like for showing off different products"
-                }), (0, r.jsx)("br", {}), (0, r.jsx)(s.A, {
+                }), (0, r.jsx)("br", {}), (0, r.jsx)(i.A, {
                     children: (0, r.jsx)("div", {
                         style: {
                             background: "white",
@@ -100,7 +100,7 @@ let d = () => (0, r.jsx)("div", {
                         })
                     })
                 })]
-            }), (0, r.jsxs)(i.A, {
+            }), (0, r.jsxs)(s.A, {
                 children: [(0, r.jsx)(a.Text, {
                     variant: "text-md/normal",
                     children: "And here is an example of a FeaturedBlock Carousel"

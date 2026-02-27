@@ -1,55 +1,55 @@
-/** chunk id: 93055, original params: e,n,t (module,exports,require) **/
-t.d(n, {
-    Af: () => h,
+/** chunk id: 93055, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    Af: () => E,
     CJ: () => p,
-    Fe: () => g,
-    Rm: () => m,
-    pe: () => f
-}), t(321073);
-var r = t(64700),
-    i = t(478437),
-    a = t(311907);
-t(734057);
-var l = t(808728),
-    d = t(967198);
-t(661191);
-var c = t(181079),
-    s = t(616075),
-    u = t(924703),
-    o = t(652215);
+    Fe: () => h,
+    Rm: () => f,
+    pe: () => A
+}), n(321073);
+var i = n(64700),
+    r = n(478437),
+    l = n(311907);
+n(734057);
+var a = n(808728),
+    o = n(967198);
+n(661191);
+var s = n(181079),
+    d = n(616075),
+    u = n(924703),
+    c = n(652215);
 
-function f(e) {
+function A(e) {
     let {
-        enabled: n,
-        hasHigherPrivileges: t
-    } = (0, s.e)({
+        enabled: t,
+        hasHigherPrivileges: n
+    } = (0, d.e)({
         location: "useCanFavoriteChannel"
-    }), r = (0, a.bG)([c.A], () => c.A.isFavorite(e.id)), i = e.isThread();
-    return n && !__OVERLAY__ && !r && (!i || t)
+    }), i = (0, l.bG)([s.A], () => s.A.isFavorite(e.id)), r = e.isThread();
+    return t && !__OVERLAY__ && !i && (!r || n)
 }
 
-function h(e) {
-    return (0, a.bG)([c.A], () => c.A.getFavorite(e))
+function E(e) {
+    return (0, l.bG)([s.A], () => s.A.getFavorite(e))
 }
 
-function m() {
-    return (0, a.bG)([l.Ay], () => l.Ay.getChannels(o.YYv))[i.r.GUILD_CATEGORY].map(e => ({
+function f() {
+    return (0, l.bG)([a.Ay], () => a.Ay.getChannels(c.YYv))[r.r.GUILD_CATEGORY].map(e => ({
         id: "null" === e.channel.id ? null : e.channel.id,
         name: e.channel.name
     }))
 }
 
-function g() {
-    return (0, a.bG)([d.A], () => d.A.getGuildId()) === o.YYv
+function h() {
+    return (0, l.bG)([o.A], () => o.A.getGuildId()) === c.YYv
 }
 
 function p() {
     let e = (0, u.T)(),
-        n = r.useCallback(() => {}, [e]),
-        t = r.useCallback(() => {}, [e]);
+        t = i.useCallback(() => {}, [e]),
+        n = i.useCallback(() => {}, [e]);
     return {
         favoriteAdded: e.favoriteAdded,
-        notifyFavoriteAdded: n,
-        clearFavoriteAdded: t
+        notifyFavoriteAdded: t,
+        clearFavoriteAdded: n
     }
 }

@@ -1,84 +1,84 @@
-/** chunk id: 422230, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    l: () => y
+/** chunk id: 422230, original params: t,e,n (module,exports,require) **/
+n.d(e, {
+    l: () => T
 });
 var a = n(627968),
     i = n(64700),
     s = n(732955),
     l = n(890138),
     r = n(793574),
-    o = n(688810),
-    d = n(22007),
-    c = n(857586),
+    d = n(688810),
+    c = n(22007),
+    o = n(857586),
     u = n(757036),
-    m = n(780964),
-    h = n(840065),
-    x = n(954571),
-    p = n(156186),
-    g = n(602450),
-    _ = n(967370),
-    f = n(144605),
-    b = n(557571),
-    v = n(652215),
-    j = n(788868),
-    C = n(215765),
-    A = n(985018),
-    T = n(695670),
-    S = n(446115);
-let y = e => {
+    h = n(780964),
+    _ = n(840065),
+    b = n(954571),
+    m = n(156186),
+    x = n(602450),
+    E = n(967370),
+    L = n(144605),
+    C = n(557571),
+    I = n(652215),
+    p = n(788868),
+    A = n(895431),
+    N = n(985018),
+    f = n(405040),
+    k = n(446115);
+let T = t => {
     let {
-        onClose: t
-    } = e, n = (0, u.L)(), {
-        installationStatus: y,
-        perkAvailableToUser: E,
-        isSupportedPrivateBrowsingPerkPlatform: N,
-        isWeb: I,
-        connectionStatus: k
-    } = (0, b.lV)(), R = (0, _.lM)("private_browsing_perk_settings_page"), O = (0, i.useCallback)(() => {
-        (0, d.A)(v.BVt.NITRO_HOME), t()
-    }, [t]), w = (0, i.useCallback)(() => {
-        (0, h.openUserSettings)(m.X.PRIVATE_BROWSING_PANEL, {
-            section: v.nc_.PRIVATE_BROWSING
+        onClose: e
+    } = t, n = (0, u.L)(), {
+        installationStatus: T,
+        perkAvailableToUser: g,
+        isSupportedPrivateBrowsingPerkPlatform: S,
+        isWeb: v,
+        connectionStatus: D
+    } = (0, C.lV)(), R = (0, E.lM)("private_browsing_perk_settings_page"), j = (0, i.useCallback)(() => {
+        (0, c.A)(I.BVt.NITRO_HOME), e()
+    }, [e]), O = (0, i.useCallback)(() => {
+        (0, _.openUserSettings)(h.X.PRIVATE_BROWSING_PANEL, {
+            section: I.nc_.PRIVATE_BROWSING
         })
-    }, []), D = [g.l7.CONNECTED].includes(k), M = N && R && ![g.Lk.ZERO_TRUST, g.Lk.ERROR].includes(y) && !I && (!n || E), P = (0, i.useMemo)(() => {
-        switch (k) {
-            case g.l7.CONNECTED:
-                return A.intl.string(C.default.FBu3XJ);
-            case g.l7.INITIALIZING:
-                return A.intl.string(C.default["00vkCU"]);
+    }, []), K = [x.l7.CONNECTED].includes(D), M = S && R && ![x.Lk.ZERO_TRUST, x.Lk.ERROR].includes(T) && !v && (!n || g), P = (0, i.useMemo)(() => {
+        switch (D) {
+            case x.l7.CONNECTED:
+                return N.intl.string(A.default.FBu3XJ);
+            case x.l7.INITIALIZING:
+                return N.intl.string(A.default["00vkCU"]);
             default:
-                return A.intl.string(C.default["A70/wR"])
+                return N.intl.string(A.default["A70/wR"])
         }
-    }, [k]), L = (0, i.useMemo)(() => {
-        if (!E) return A.intl.string(C.default.KN6HOb);
-        switch (y) {
-            case g.Lk.INSTALLED:
-            case g.Lk.EXISTING_INSTALLATION:
+    }, [D]), w = (0, i.useMemo)(() => {
+        if (!g) return N.intl.string(A.default.KN6HOb);
+        switch (T) {
+            case x.Lk.INSTALLED:
+            case x.Lk.EXISTING_INSTALLATION:
                 return P;
             default:
-                return A.intl.string(C.default.KN6HOb)
+                return N.intl.string(A.default.KN6HOb)
         }
-    }, [y, E, P]), U = (0, i.useMemo)(() => {
-        if (!E) return (0, a.jsx)(s.EYj, {
+    }, [T, g, P]), U = (0, i.useMemo)(() => {
+        if (!g) return (0, a.jsx)(s.EYj, {
             variant: "text-sm/normal",
             color: "text-subtle",
-            children: A.intl.format(C.default.UDPKcX, {
-                helpdeskArticle: p.V
+            children: N.intl.format(A.default.UDPKcX, {
+                helpdeskArticle: m.V
             })
         });
-        switch (y) {
-            case g.Lk.INSTALLED:
-            case g.Lk.EXISTING_INSTALLATION:
+        switch (T) {
+            case x.Lk.INSTALLED:
+            case x.Lk.EXISTING_INSTALLATION:
                 return (0, a.jsx)(s.EYj, {
                     variant: "text-sm/normal",
                     color: "text-subtle",
-                    children: D ? A.intl.format(C.default.zwW10o, {
+                    children: K ? N.intl.format(A.default.zwW10o, {
                         onClick: () => {
-                            (0, l.u)(v.HAw.NITRO_PRIVACY_UPSELL_PERKS_CLICKED, {}), O()
+                            (0, l.u)(I.HAw.NITRO_PRIVACY_UPSELL_PERKS_CLICKED, {}), j()
                         }
-                    }) : A.intl.format(C.default.D4hu0v, {
+                    }) : N.intl.format(A.default.D4hu0v, {
                         onClick: () => {
-                            (0, l.u)(v.HAw.NITRO_PRIVACY_UPSELL_SETTINGS_CLICKED, {}), w()
+                            (0, l.u)(I.HAw.NITRO_PRIVACY_UPSELL_SETTINGS_CLICKED, {}), O()
                         }
                     })
                 });
@@ -86,50 +86,50 @@ let y = e => {
                 return (0, a.jsx)(s.EYj, {
                     variant: "text-sm/normal",
                     color: "text-subtle",
-                    children: A.intl.format(C.default.D4hu0v, {
+                    children: N.intl.format(A.default.D4hu0v, {
                         onClick: () => {
-                            (0, l.u)(v.HAw.NITRO_PRIVACY_UPSELL_SETTINGS_CLICKED, {}), w()
+                            (0, l.u)(I.HAw.NITRO_PRIVACY_UPSELL_SETTINGS_CLICKED, {}), O()
                         }
                     })
                 })
         }
-    }, [y, E, D, w, O]), {
-        analyticsLocations: B
-    } = (0, o.Ay)(r.A.MASKED_LINK);
+    }, [T, g, K, O, j]), {
+        analyticsLocations: H
+    } = (0, d.Ay)(r.A.MASKED_LINK);
     return ((0, i.useEffect)(() => {
-        M && x.default.track(v.HAw.PREMIUM_UPSELL_VIEWED, {
-            type: j.e.PRIVACY_PERK_EXIT_MODAL,
-            location_stack: B
+        M && b.default.track(I.HAw.PREMIUM_UPSELL_VIEWED, {
+            type: p.e.PRIVACY_PERK_EXIT_MODAL,
+            location_stack: H
         })
-    }, [B, M]), M) ? (0, a.jsxs)("div", {
-        className: T.kL,
-        children: [(0, a.jsx)(f.q, {
-            className: T.aZ
+    }, [H, M]), M) ? (0, a.jsxs)("div", {
+        className: f.kL,
+        children: [(0, a.jsx)(L.q, {
+            className: f.aZ
         }), (0, a.jsxs)("div", {
-            className: T.hQ,
-            children: [E && (0, a.jsx)(s.hLv, {
-                className: T.h4,
+            className: f.hQ,
+            children: [g && (0, a.jsx)(s.hLv, {
+                className: f.h4,
                 offsetBottom: -5,
                 color: "nitro-pink",
                 children: (0, a.jsx)("div", {
-                    className: T.ZS,
+                    className: f.ZS,
                     children: (0, a.jsx)("img", {
-                        src: S,
-                        className: T.KD,
+                        src: k,
+                        className: f.KD,
                         alt: "Private Browsing Perk"
                     })
                 })
             }), (0, a.jsxs)("div", {
-                className: T.zH,
+                className: f.zH,
                 children: [(0, a.jsx)(s.DZT, {
                     variant: "heading-md/semibold",
-                    children: L
+                    children: w
                 }), U]
-            }), !E && (0, a.jsx)("div", {
-                className: T.OQ,
-                children: (0, a.jsx)(c.A, {
-                    buttonTextOverride: A.intl.string(A.t["8x0jKT"]),
-                    subscriptionTier: j.pe.TIER_2,
+            }), !g && (0, a.jsx)("div", {
+                className: f.OQ,
+                children: (0, a.jsx)(o.A, {
+                    buttonTextOverride: N.intl.string(N.t["8x0jKT"]),
+                    subscriptionTier: p.pe.TIER_2,
                     size: "sm",
                     premiumModalAnalyticsLocation: {
                         page: r.A.MASKED_LINK

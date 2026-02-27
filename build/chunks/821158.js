@@ -10,7 +10,7 @@ var s = n(421380),
     r = n(322631),
     o = n(652215),
     c = n(985018),
-    d = n(865047);
+    d = n(520089);
 let u = e => {
     let {
         setIsAllPerksVisible: t,

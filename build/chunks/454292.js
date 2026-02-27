@@ -22,7 +22,7 @@ var i = n(627968),
     C = n(224964),
     T = n(31408),
     S = n(985018),
-    I = n(988288);
+    I = n(829054);
 let f = {
         enabled: !0,
         combosEnabled: !0,

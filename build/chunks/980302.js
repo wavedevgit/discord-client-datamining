@@ -9,7 +9,7 @@ var l = a(134402),
     r = a(489569),
     n = a(137540),
     o = a(818348),
-    c = a(146606);
+    c = a(705492);
 let d = o.sE.MAIN_NAVIGATION_MENU;
 
 function _(e) {

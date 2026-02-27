@@ -8,7 +8,7 @@ var i = n(627968),
     a = n.n(s),
     r = n(284009),
     o = n.n(r),
-    c = n(442215),
+    c = n(475539),
     d = n(835245),
     u = n(311907),
     h = n(827734),
@@ -49,8 +49,8 @@ var i = n(627968),
 n(827669), n(294920);
 var Y = n(478644),
     q = n(985018),
-    J = n(204794),
-    $ = n(178588);
+    J = n(401376),
+    $ = n(111314);
 
 function Z(e, t, n) {
     let i = e.startsWith("attachment://"),
@@ -205,9 +205,9 @@ let X = l.memo(l.forwardRef(function(e, t) {
         shouldHideExpressionPicker: e0,
         handleOuterClick: e1
     } = (0, V.MD)(v, eT, y.id), e2 = (0, V.BX)(s), {
-        currentAutocompleteType: e7,
-        handleAutocompleteVisibilityChange: e3
-    } = (0, V.uW)(v, y.id), e5 = (0, V.NO)(eT), e9 = (0, V.Vu)(eB, v, eT), e6 = (0, V.C)({
+        currentAutocompleteType: e3,
+        handleAutocompleteVisibilityChange: e7
+    } = (0, V.uW)(v, y.id), e5 = (0, V.NO)(eT), e6 = (0, V.Vu)(eB, v, eT), e9 = (0, V.C)({
         editorRef: eT,
         disabled: eR,
         textValue: s,
@@ -332,7 +332,7 @@ let X = l.memo(l.forwardRef(function(e, t) {
                                         spellcheckEnabled: ew,
                                         canOnlyUseTextCommands: !1,
                                         isEditorIdle: e2,
-                                        currentAutocompleteType: e7,
+                                        currentAutocompleteType: e3,
                                         "aria-labelledby": ed
                                     })
                                 })
@@ -431,7 +431,7 @@ let X = l.memo(l.forwardRef(function(e, t) {
                     editorRef: eT,
                     onSendMessage: eB,
                     onSendSticker: () => {},
-                    onVisibilityChange: e3,
+                    onVisibilityChange: e7,
                     editorHeight: eq,
                     setValue: (e, t) => k?.(null, e, t),
                     position: eh
@@ -439,9 +439,9 @@ let X = l.memo(l.forwardRef(function(e, t) {
             }), e0 ? null : (0, i.jsx)(b.A, {
                 positionTargetRef: eS,
                 type: v,
-                onSelectGIF: e9,
+                onSelectGIF: e6,
                 onSelectEmoji: e5,
-                onSelectSticker: e6,
+                onSelectSticker: e9,
                 channel: y,
                 closeOnModalOuterClick: eA,
                 parentModalKey: eg,

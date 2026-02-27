@@ -4,7 +4,7 @@ a.d(l, {
 });
 var t = a(627968),
     o = a(397927),
-    n = a(585741);
+    n = a(267475);
 let i = {
     title: "Forms",
     stories: [{

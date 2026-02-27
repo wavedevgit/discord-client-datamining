@@ -12,7 +12,7 @@ var s = a(627968),
     d = a(464261),
     _ = a(818348),
     N = a(563853),
-    A = a(446871);
+    A = a(510057);
 let u = _.sE.MAIN_NAVIGATION_MENU;
 
 function I(e) {

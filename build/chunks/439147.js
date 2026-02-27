@@ -1,34 +1,34 @@
-/** chunk id: 439147, original params: e,t,n (module,exports,require) **/
-n.d(t, {
+/** chunk id: 439147, original params: e,t,l (module,exports,require) **/
+l.d(t, {
     A: () => A
 });
-var i = n(562465),
-    l = n(626584),
-    r = n(152007),
-    a = n(867455),
-    s = n(734057),
-    o = n(320501),
-    c = n(222823),
-    _ = n(287809),
-    E = n(661191),
-    d = n(652215);
-let u = new l.A("markUnread");
+var i = l(562465),
+    n = l(626584),
+    r = l(152007),
+    s = l(867455),
+    u = l(734057),
+    a = l(320501),
+    o = l(222823),
+    d = l(287809),
+    c = l(661191),
+    S = l(652215);
+let _ = new n.A("markUnread");
 async function A(e, t) {
-    let n = _.default.getCurrentUser();
-    if (null == n) return;
-    let l = o.A.getMessages(e),
-        A = l.toArray().filter(e => 0 > E.default.compare(e.id, t)).sort((e, t) => E.default.compare(e.id, t.id)).reverse()[0],
-        T = null == A ? E.default.atPreviousMillisecond(t) : A.id,
+    let l = d.default.getCurrentUser();
+    if (null == l) return;
+    let n = a.A.getMessages(e),
+        A = n.toArray().filter(e => 0 > c.default.compare(e.id, t)).sort((e, t) => c.default.compare(e.id, t.id)).reverse()[0],
+        p = null == A ? c.default.atPreviousMillisecond(t) : A.id,
         I = 0;
-    l.forAll(e => {
-        E.default.compare(e.id, T) > 0 && (0, c.Wm)(e, n) && I++
+    n.forAll(e => {
+        c.default.compare(e.id, p) > 0 && (0, o.Wm)(e, l) && I++
     });
-    let N = s.A.getChannel(e);
-    null != N && N.isThread() && (N.isArchivedThread() && await a.A.unarchiveThread(N, !1), r.A.hasJoined(e) || await a.A.joinThread(N, "Mark Unread")), u.log("Marking unread", {
+    let h = u.A.getChannel(e);
+    null != h && h.isThread() && (h.isArchivedThread() && await s.A.unarchiveThread(h, !1), r.A.hasJoined(e) || await s.A.joinThread(h, "Mark Unread")), _.log("Marking unread", {
         channelId: e,
         messageId: t
     }), i.Bo.post({
-        url: d.Rsh.MESSAGE_ACK(e, T),
+        url: S.Rsh.MESSAGE_ACK(e, p),
         body: {
             manual: !0,
             mention_count: I

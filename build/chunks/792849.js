@@ -7,8 +7,8 @@ var r = l(627968);
 l(64700);
 var a = l(397927),
     n = l(261225),
-    s = l(970488);
-let i = e => {
+    i = l(970488);
+let s = e => {
         let {
             color: t,
             children: l
@@ -54,61 +54,61 @@ let i = e => {
                         perPage: l,
                         columns: t,
                         paginationPosition: o,
-                        children: [(0, r.jsx)(i, {
+                        children: [(0, r.jsx)(s, {
                             color: "red"
-                        }), (0, r.jsx)(s.A, {
+                        }), (0, r.jsx)(i.A, {
                             columns: d,
                             rows: c,
-                            children: (0, r.jsx)(i, {
+                            children: (0, r.jsx)(s, {
                                 color: "orange",
                                 children: (0, r.jsx)(a.Text, {
                                     variant: "text-lg/semibold",
                                     children: "GridItem"
                                 })
                             })
-                        }), (0, r.jsx)(i, {
+                        }), (0, r.jsx)(s, {
                             color: "yellow"
-                        }), (0, r.jsx)(i, {
+                        }), (0, r.jsx)(s, {
                             color: "green"
-                        }), (0, r.jsx)(i, {
+                        }), (0, r.jsx)(s, {
                             color: "blue"
-                        }), (0, r.jsx)(i, {
+                        }), (0, r.jsx)(s, {
                             color: "violet"
-                        }), (0, r.jsx)(i, {
+                        }), (0, r.jsx)(s, {
                             color: "red"
-                        }), (0, r.jsx)(i, {
+                        }), (0, r.jsx)(s, {
                             color: "orange"
-                        }), (0, r.jsx)(i, {
+                        }), (0, r.jsx)(s, {
                             color: "yellow"
-                        }), (0, r.jsx)(i, {
+                        }), (0, r.jsx)(s, {
                             color: "green"
-                        }), (0, r.jsx)(i, {
+                        }), (0, r.jsx)(s, {
                             color: "blue"
-                        }), (0, r.jsx)(i, {
+                        }), (0, r.jsx)(s, {
                             color: "violet"
-                        }), (0, r.jsx)(i, {
+                        }), (0, r.jsx)(s, {
                             color: "red"
-                        }), (0, r.jsx)(i, {
+                        }), (0, r.jsx)(s, {
                             color: "orange"
-                        }), (0, r.jsx)(i, {
+                        }), (0, r.jsx)(s, {
                             color: "yellow"
-                        }), (0, r.jsx)(i, {
+                        }), (0, r.jsx)(s, {
                             color: "green"
-                        }), (0, r.jsx)(i, {
+                        }), (0, r.jsx)(s, {
                             color: "blue"
-                        }), (0, r.jsx)(i, {
+                        }), (0, r.jsx)(s, {
                             color: "violet"
-                        }), (0, r.jsx)(i, {
+                        }), (0, r.jsx)(s, {
                             color: "red"
-                        }), (0, r.jsx)(i, {
+                        }), (0, r.jsx)(s, {
                             color: "orange"
-                        }), (0, r.jsx)(i, {
+                        }), (0, r.jsx)(s, {
                             color: "yellow"
-                        }), (0, r.jsx)(i, {
+                        }), (0, r.jsx)(s, {
                             color: "green"
-                        }), (0, r.jsx)(i, {
+                        }), (0, r.jsx)(s, {
                             color: "blue"
-                        }), (0, r.jsx)(i, {
+                        }), (0, r.jsx)(s, {
                             color: "violet",
                             children: (0, r.jsx)(a.Text, {
                                 variant: "text-lg/semibold",

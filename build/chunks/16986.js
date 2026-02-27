@@ -24,7 +24,7 @@ var i = n(627968),
     S = n(652215),
     I = n(788868),
     f = n(985018),
-    N = n(525736);
+    N = n(665606);
 
 function b() {
     let e = E.ML.useSetting(),

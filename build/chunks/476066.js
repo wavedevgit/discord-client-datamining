@@ -6,7 +6,7 @@ var r = n(627968),
     l = n(64700),
     i = n(503698),
     a = n.n(i),
-    s = n(442215),
+    s = n(475539),
     o = n(311907),
     u = n(876230),
     c = n(397927),
@@ -21,7 +21,7 @@ var r = n(627968),
     g = n(60907),
     S = n(267956),
     A = n(838541),
-    C = n(221190);
+    C = n(681636);
 let b = {
         tension: 250,
         friction: 5,
@@ -105,28 +105,28 @@ let b = {
         }, [Z, ee, el, q]), l.useEffect(() => {
             en && W?.(et, el)
         }, [et, en, el, W]);
-        let [e2, e6] = l.useState(!1), e7 = l.useRef(null), e4 = l.useRef(0);
+        let [e6, e7] = l.useState(!1), e2 = l.useRef(null), e4 = l.useRef(0);
         l.useLayoutEffect(() => {
             e4.current = performance.now()
         }, []);
         let e9 = l.useCallback(() => {
-                null != e7.current && clearTimeout(e7.current), el !== u.Q6.PLAYING || (e7.current = setTimeout(() => {
-                    el === u.Q6.PLAYING && e6(!0)
+                null != e2.current && clearTimeout(e2.current), el !== u.Q6.PLAYING || (e2.current = setTimeout(() => {
+                    el === u.Q6.PLAYING && e7(!0)
                 }, Math.max(0, 3e3 - (performance.now() - e4.current))))
             }, [el]),
             e8 = () => {
-                e6(!1), e4.current = performance.now(), e9()
+                e7(!1), e4.current = performance.now(), e9()
             };
         l.useEffect(() => {
             if (el !== u.Q6.PLAYING) {
-                e6(!1), null != e7.current && clearTimeout(e7.current);
+                e7(!1), null != e2.current && clearTimeout(e2.current);
                 return
             }
             return e9(), () => {
-                null != e7.current && clearTimeout(e7.current)
+                null != e2.current && clearTimeout(e2.current)
             }
         }, [el, e9]);
-        let e3 = !e2 && (eo || ea || el === u.Q6.ENDED),
+        let e3 = !e6 && (eo || ea || el === u.Q6.ENDED),
             e5 = l.useCallback(() => {
                 let e = (0, f.qf)(eF.current?.parentNode, eF.current);
                 null == e || (0, f._U)(e) || (e.removeEventListener(f.Wb, e5), eU(!1), B?.(!1), eZ(u.oA.MD))
@@ -244,10 +244,10 @@ let b = {
             "data-testid": "discord-web-video-player-container",
             tabIndex: -1,
             onMouseEnter: () => {
-                es(!0), e6(!1), e4.current = performance.now(), null != e7.current && clearTimeout(e7.current)
+                es(!0), e7(!1), e4.current = performance.now(), null != e2.current && clearTimeout(e2.current)
             },
             onMouseLeave: () => {
-                es(!1), e6(!1)
+                es(!1), e7(!1)
             },
             onMouseMove: e8,
             onKeyDown: e8,

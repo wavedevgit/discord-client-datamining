@@ -43,7 +43,7 @@ var i = n(627968),
     B = n(386467),
     H = n(490358),
     F = n(961973),
-    Y = n(917973),
+    Y = n(140354),
     q = n(551036),
     W = n(46533),
     K = n(467627),
@@ -88,7 +88,7 @@ var i = n(627968),
     eP = n(758836),
     ej = n(539916),
     eD = n(613057),
-    eM = n(913022);
+    eM = n(933460);
 let ew = (0, c.Fe)({
         createPromise: () => Promise.resolve().then(n.bind(n, 500831)),
         webpackId: 500831
@@ -313,7 +313,7 @@ let ew = (0, c.Fe)({
     },
     e1 = () => (0, i.jsx)(E.A, {}),
     e7 = () => (0, i.jsx)(I.A, {}),
-    e9 = () => function(e) {
+    e6 = () => function(e) {
         let {
             tab: t
         } = (0, s.parse)(e.location.search);
@@ -325,12 +325,12 @@ let ew = (0, c.Fe)({
         })
     };
 
-function e6() {
+function e5() {
     return (0, i.jsx)(eu.A, {
         topLevelRoute: !0
     })
 }
-let e5 = e => (0, i.jsx)(x.A, {
+let e9 = e => (0, i.jsx)(x.A, {
         ...e
     }),
     e2 = () => (0, i.jsx)(es.A, {}),
@@ -587,7 +587,7 @@ function ti() {
                                     })
                                 }), (0, i.jsx)(v.A, {
                                     path: eL.BVt.ACTIVITY_DETAILS(":applicationId"),
-                                    render: e5,
+                                    render: e9,
                                     impressionName: d.ImpressionNames.ACTIVITY_DETAILS,
                                     impressionProperties: e => {
                                         let {
@@ -609,7 +609,7 @@ function ti() {
                                     disableTrack: !0
                                 }), (0, i.jsx)(v.A, {
                                     path: eL.BVt.COLLECTIBLES_SHOP_WITH_TAB(":tab"),
-                                    render: e9(),
+                                    render: e6(),
                                     disableTrack: !0
                                 }), h && (0, i.jsx)(v.A, {
                                     path: eL.BVt.COLLECTIBLES_SHOP_LAYOUT(":layoutId"),
@@ -630,11 +630,11 @@ function ti() {
                                     disableTrack: !0
                                 }), (0, i.jsx)(v.A, {
                                     path: eL.BVt.COLLECTIBLES_SHOP,
-                                    render: e9(),
+                                    render: e6(),
                                     disableTrack: !0
                                 }), (0, i.jsx)(v.A, {
                                     path: eL.BVt.COLLECTIBLES_SHOP_PRODUCT_DETAIL(":skuId"),
-                                    render: e9(),
+                                    render: e6(),
                                     disableTrack: !0
                                 }), (0, i.jsx)(v.A, {
                                     path: eL.BVt.ICYMI,
@@ -690,7 +690,7 @@ function ti() {
                                     disableTrack: !0
                                 }), (0, i.jsx)(v.A, {
                                     path: eL.BVt.QUEST_HOME_V2,
-                                    render: e6,
+                                    render: e5,
                                     impressionName: d.ImpressionNames.QUEST_HOME,
                                     disableTrack: !0
                                 }), (0, i.jsx)(v.A, {

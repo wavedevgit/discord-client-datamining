@@ -1,115 +1,116 @@
 /** chunk id: 177366, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    XU: () => C,
-    Yr: () => A,
-    k0: () => N
+    XU: () => A,
+    Yr: () => C,
+    k0: () => b
 });
-var a = n(64700),
-    r = n(873263),
-    i = n(311907),
-    s = n(775602),
-    l = n(793574),
-    c = n(688810),
-    o = n(590180),
+var s = n(64700),
+    l = n(873263),
+    r = n(311907),
+    a = n(775602),
+    i = n(793574),
+    o = n(688810),
+    c = n(590180),
     d = n(870216),
     u = n(298072),
-    m = n(238184),
-    p = n(572595),
-    _ = n(159439),
+    g = n(238184),
+    _ = n(572595),
+    m = n(159439),
     h = n(57020),
-    x = n(652215);
-let g = "#itemSkuId=",
-    f = RegExp(`^${g}(\\d+)$`),
-    v = [x.BVt.COLLECTIBLES_SHOP],
-    A = e => {
-        let t = (0, r.zy)();
-        a.useEffect(() => {
-            if (null != e && v.includes(t.pathname)) return () => {
-                window.location.hash.startsWith(g) && window.location.replace("#")
+    p = n(652215);
+let f = "#itemSkuId=",
+    x = RegExp(`^${f}(\\d+)$`),
+    E = [p.BVt.COLLECTIBLES_SHOP],
+    C = e => {
+        let t = (0, l.zy)();
+        s.useEffect(() => {
+            if (null != e && E.includes(t.pathname)) return () => {
+                window.location.hash.startsWith(f) && window.location.replace("#")
             }
         }, [e, t.pathname])
     },
-    C = () => {
-        let e = (0, _.U)(),
-            t = a.useRef(null),
-            n = (0, r.zy)(),
-            s = n.pathname === x.BVt.COLLECTIBLES_SHOP ? l.A.HOME_PAGE_SHOP_TAB : l.A.COLLECTIBLES_SHOP,
+    A = () => {
+        let e = (0, m.U)(),
+            t = s.useRef(null),
+            n = (0, l.zy)(),
+            a = n.pathname === p.BVt.COLLECTIBLES_SHOP ? i.A.HOME_PAGE_SHOP_TAB : i.A.COLLECTIBLES_SHOP,
             {
-                analyticsLocations: g
-            } = (0, c.Ay)(s),
-            v = (0, m.A)();
-        a.useEffect(() => {
-            let e = f.exec(n.hash);
+                analyticsLocations: f
+            } = (0, o.Ay)(a),
+            E = (0, g.A)();
+        s.useEffect(() => {
+            let e = x.exec(n.hash);
             null != e ? t.current = e[1] : t.current = null
-        }, [v, n.hash]);
-        let A = (0, i.bG)([d.A], () => d.A.initialProductSkuId);
-        a.useEffect(() => {
+        }, [E, n.hash]);
+        let C = (0, r.bG)([d.A], () => d.A.initialProductSkuId);
+        s.useEffect(() => {
             if (e) return;
             let n = null;
-            if (null != A ? n = A : null != t.current && (n = t.current), null != n) {
+            if (null != C ? n = C : null != t.current && (n = t.current), null != n) {
                 let e = setTimeout(() => {
                     (e => {
                         let {
                             productSkuId: t,
                             analyticsLocations: n,
-                            analyticsSource: a,
-                            tab: r
-                        } = e, i = o.A.getProduct(t), s = o.A.getCategoryForProduct(t);
-                        if (null != i && null != s) {
-                            let e = i,
-                                l = (0, h.A)({
-                                    product: i
+                            analyticsSource: s,
+                            tab: l
+                        } = e, r = c.A.getProduct(t), a = c.A.getCategoryForProduct(t);
+                        if (null != r && null != a) {
+                            let e = r,
+                                i = (0, h.A)({
+                                    product: r
                                 }),
-                                c = document.getElementById(`shop-item-${e.skuId}`);
-                            if (c !== document.activeElement && c?.focus(), null != i.variantGroupStoreListingId) {
-                                let n = o.A.getProductByStoreListingId(i.variantGroupStoreListingId);
+                                o = document.getElementById(`shop-item-${e.skuId}`);
+                            if (o !== document.activeElement && o?.focus(), null != r.variantGroupStoreListingId) {
+                                let n = c.A.getProductByStoreListingId(r.variantGroupStoreListingId);
                                 if (null != n) {
                                     e = n;
-                                    let a = n.variants?.findIndex(e => e.skuId === t);
-                                    null != a && a > -1 && (0, u.n)(n, a)
+                                    let s = n.variants?.findIndex(e => e.skuId === t);
+                                    null != s && s > -1 && (0, u.n)(n, s)
                                 }
-                            }(0, p.t)({
+                            }(0, _.t)({
                                 product: e,
-                                category: s,
-                                analyticsSource: a,
+                                category: a,
+                                analyticsSource: s,
                                 analyticsLocations: n,
-                                tab: r,
-                                shouldCheckoutWithOrbs: l
+                                tab: l,
+                                shouldCheckoutWithOrbs: i
                             })
                         }
                     })({
                         productSkuId: n,
-                        analyticsLocations: g,
-                        analyticsSource: s,
-                        tab: v
+                        analyticsLocations: f,
+                        analyticsSource: a,
+                        tab: E
                     })
                 }, 250);
                 return () => clearTimeout(e)
             }
-        }, [g, s, e, A, v])
+        }, [f, a, e, C, E])
     },
-    N = e => {
-        let t = a.useRef({}),
-            n = (0, i.bG)([s.A], () => s.A.useReducedMotion),
-            r = (0, i.bG)([o.A], () => o.A.isFetchingCategories),
-            [l, c] = a.useState(null),
-            d = a.useCallback((e, n) => {
+    b = e => {
+        let t = s.useRef({}),
+            n = (0, r.bG)([a.A], () => a.A.useReducedMotion),
+            l = (0, r.bG)([c.A], () => c.A.isFetchingCategories),
+            [i, o] = s.useState(null),
+            d = s.useCallback((e, n) => {
                 t.current[e] = n
             }, []),
-            u = a.useCallback(a => {
-                r ? c(a) : setTimeout(() => {
-                    let r = t.current[a];
-                    null != r && e?.scrollIntoViewNode({
-                        node: r,
+            u = s.useCallback(s => {
+                l ? o(s) : setTimeout(() => {
+                    let l = t.current[s];
+                    null != l && e?.scrollIntoViewNode({
+                        node: l,
                         padding: 48,
                         animate: !n,
                         shouldScrollToStart: !0
                     })
                 }, 100)
-            }, [e, n, r, c]);
-        return a.useEffect(() => {
-            r || null == l || (u(l), c(null))
-        }, [r, u, l, c]), {
+            }, [e, n, l, o]);
+        return s.useEffect(() => {
+            l || null == i || (u(i), o(null))
+        }, [l, u, i, o]), {
             setCategoryRef: d,
             handleScrollToCategory: u
         }

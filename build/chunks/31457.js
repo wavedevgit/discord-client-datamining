@@ -1,115 +1,115 @@
-/** chunk id: 31457, original params: e,a,t (module,exports,require) **/
-t.d(a, {
-    ZK: () => x,
+/** chunk id: 31457, original params: e,t,l (module,exports,require) **/
+l.d(t, {
+    ZK: () => u,
     _H: () => d,
-    cS: () => c,
-    fu: () => u
+    cS: () => o,
+    fu: () => c
 });
-var n = t(627968);
-t(64700);
-var r = t(503698),
-    s = t.n(r),
-    l = t(827734),
-    o = t(397927),
-    i = t(654255);
+var n = l(627968);
+l(64700);
+var i = l(503698),
+    s = l.n(i),
+    a = l(827734),
+    r = l(397927),
+    C = l(230397);
 
-function c(e) {
+function o(e) {
     let {
-        title: a,
-        children: t
+        title: t,
+        children: l
     } = e;
     return (0, n.jsxs)("div", {
-        className: i.A9,
-        children: [(0, n.jsx)(o.Text, {
-            className: i.HN,
+        className: C.A9,
+        children: [(0, n.jsx)(r.Text, {
+            className: C.HN,
             variant: "text-md/normal",
             color: "text-strong",
-            children: a
-        }), t]
+            children: t
+        }), l]
     })
 }
 
 function d(e) {
     let {
-        title: a,
-        children: t
+        title: t,
+        children: l
     } = e;
     return (0, n.jsxs)("div", {
-        className: i.y,
-        children: [(0, n.jsx)(o.Text, {
-            className: i.HN,
+        className: C.y,
+        children: [(0, n.jsx)(r.Text, {
+            className: C.HN,
             variant: "text-sm/medium",
             color: "text-muted",
-            children: a
-        }), t]
+            children: t
+        }), l]
+    })
+}
+
+function c(e) {
+    let {
+        icon: t,
+        text: l,
+        meetsRequirement: i
+    } = e;
+    return (0, n.jsxs)("div", {
+        className: C.xP,
+        children: [(0, n.jsx)(t, {
+            className: C.jt,
+            height: 16,
+            width: 16,
+            size: "custom",
+            color: "currentColor"
+        }), (0, n.jsx)(r.Text, {
+            className: C.Pg,
+            variant: "text-sm/medium",
+            children: l
+        }), i ? (0, n.jsx)(r.yr3, {
+            size: "sm",
+            color: "currentColor",
+            className: C.Fl,
+            secondaryColor: a.A.colors.WHITE.css
+        }) : (0, n.jsx)(r.aXh, {
+            size: "sm",
+            color: "currentColor",
+            className: C.Yk,
+            secondaryColor: a.A.colors.WHITE.css
+        })]
     })
 }
 
 function u(e) {
     let {
-        icon: a,
-        text: t,
-        meetsRequirement: r
-    } = e;
-    return (0, n.jsxs)("div", {
-        className: i.xP,
-        children: [(0, n.jsx)(a, {
-            className: i.jt,
-            height: 16,
-            width: 16,
-            size: "custom",
-            color: "currentColor"
-        }), (0, n.jsx)(o.Text, {
-            className: i.Pg,
-            variant: "text-sm/medium",
-            children: t
-        }), r ? (0, n.jsx)(o.yr3, {
-            size: "sm",
-            color: "currentColor",
-            className: i.Fl,
-            secondaryColor: l.A.colors.WHITE.css
-        }) : (0, n.jsx)(o.aXh, {
-            size: "sm",
-            color: "currentColor",
-            className: i.Yk,
-            secondaryColor: l.A.colors.WHITE.css
-        })]
-    })
-}
-
-function x(e) {
-    let {
-        icon: a,
-        text: t,
-        footnote: r,
-        meetsRequirement: c,
+        icon: t,
+        text: l,
+        footnote: i,
+        meetsRequirement: o,
         children: d,
-        className: u
+        className: c
     } = e;
     return (0, n.jsxs)(n.Fragment, {
         children: [(0, n.jsxs)("div", {
-            className: s()(i.xP, u),
-            children: [(0, n.jsx)(a, {
-                className: i.jt,
+            className: s()(C.xP, c),
+            children: [(0, n.jsx)(t, {
+                className: C.jt,
                 height: 20,
                 width: 20,
                 size: "custom",
                 color: "currentColor"
-            }), (0, n.jsx)(o.Text, {
-                className: i.Pg,
+            }), (0, n.jsx)(r.Text, {
+                className: C.Pg,
                 variant: "text-md/normal",
-                children: t
-            }), c ? (0, n.jsx)(o.yr3, {
+                children: l
+            }), o ? (0, n.jsx)(r.yr3, {
                 size: "md",
                 color: "currentColor",
-                className: i.Fl,
-                secondaryColor: l.A.colors.WHITE.css
+                className: C.Fl,
+                secondaryColor: a.A.colors.WHITE.css
             }) : d]
-        }), null != r && (0, n.jsx)(o.Text, {
+        }), null != i && (0, n.jsx)(r.Text, {
             color: "text-default",
-            className: i.xA,
+            className: C.xA,
             variant: "text-xs/normal",
-            children: r
+            children: i
         })]
     })
 }

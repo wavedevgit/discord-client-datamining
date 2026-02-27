@@ -1,34 +1,35 @@
-/** chunk id: 98207, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => r
+/** chunk id: 98207, original params: e,t,s (module,exports,require) **/
+"use strict";
+s.d(t, {
+    A: () => a
 });
-var i = n(562465),
-    s = n(73153),
-    a = n(670492),
-    l = n(652215);
-let r = {
+var r = s(562465),
+    n = s(73153),
+    i = s(670492),
+    o = s(652215);
+let a = {
     enable(e) {
         let {
             code: t,
-            secret: n
+            secret: s
         } = e;
-        return i.Bo.post({
-            url: l.Rsh.MFA_TOTP_ENABLE,
+        return r.Bo.post({
+            url: o.Rsh.MFA_TOTP_ENABLE,
             body: {
                 code: t,
-                secret: n
+                secret: s
             },
             oldFormErrors: !0,
             rejectWithError: !1
-        }).then(e => s.h.dispatch({
+        }).then(e => n.h.dispatch({
             type: "MFA_ENABLE_SUCCESS",
             token: e.body.token,
             codes: e.body.backup_codes
         }))
     },
     disable() {
-        i.Bo.post({
-            url: l.Rsh.MFA_TOTP_DISABLE,
+        r.Bo.post({
+            url: o.Rsh.MFA_TOTP_DISABLE,
             oldFormErrors: !0,
             rejectWithError: !1
         }).then(e => {
@@ -37,49 +38,49 @@ let r = {
                     token: t
                 }
             } = e;
-            return s.h.dispatch({
+            return n.h.dispatch({
                 type: "MFA_DISABLE_SUCCESS",
                 token: t
             })
         })
     },
-    enableSMS: () => (s.h.dispatch({
+    enableSMS: () => (n.h.dispatch({
         type: "MFA_SMS_TOGGLE"
-    }), i.Bo.post({
-        url: l.Rsh.MFA_SMS_ENABLE,
+    }), r.Bo.post({
+        url: o.Rsh.MFA_SMS_ENABLE,
         oldFormErrors: !0,
         rejectWithError: !1
-    }).then(e => (s.h.dispatch({
+    }).then(e => (n.h.dispatch({
         type: "MFA_SMS_TOGGLE_COMPLETE"
     }), e), e => {
-        throw s.h.dispatch({
+        throw n.h.dispatch({
             type: "MFA_SMS_TOGGLE_COMPLETE"
         }), e
     })),
-    disableSMS: e => (s.h.dispatch({
+    disableSMS: e => (n.h.dispatch({
         type: "MFA_SMS_TOGGLE"
-    }), i.Bo.post({
-        url: l.Rsh.MFA_SMS_DISABLE,
+    }), r.Bo.post({
+        url: o.Rsh.MFA_SMS_DISABLE,
         body: {
             password: e
         },
         oldFormErrors: !0,
         rejectWithError: !1
-    }).then(e => (s.h.dispatch({
+    }).then(e => (n.h.dispatch({
         type: "MFA_SMS_TOGGLE_COMPLETE"
     }), e), e => {
-        throw s.h.dispatch({
+        throw n.h.dispatch({
             type: "MFA_SMS_TOGGLE_COMPLETE"
         }), e
     })),
-    sendMFABackupCodesVerificationKeyEmail: e => i.Bo.post({
-        url: l.Rsh.MFA_SEND_VERIFICATION_KEY,
+    sendMFABackupCodesVerificationKeyEmail: e => r.Bo.post({
+        url: o.Rsh.MFA_SEND_VERIFICATION_KEY,
         body: {
             password: e
         },
         oldFormErrors: !0,
         rejectWithError: !1
-    }).then(e => s.h.dispatch({
+    }).then(e => n.h.dispatch({
         type: "MFA_SEND_VERIFICATION_KEY",
         nonces: {
             viewNonce: e.body.nonce,
@@ -90,19 +91,19 @@ let r = {
     }),
     confirmViewBackupCodes(e, t) {
         let {
-            viewNonce: n,
-            regenerateNonce: r
-        } = a.A.getNonces();
-        return i.Bo.post({
-            url: l.Rsh.MFA_CODES_VERIFICATION,
+            viewNonce: s,
+            regenerateNonce: a
+        } = i.A.getNonces();
+        return r.Bo.post({
+            url: o.Rsh.MFA_CODES_VERIFICATION,
             body: {
                 key: e,
-                nonce: t ? r : n,
+                nonce: t ? a : s,
                 regenerate: t
             },
             oldFormErrors: !0,
             rejectWithError: !1
-        }).then(t => s.h.dispatch({
+        }).then(t => n.h.dispatch({
             type: "MFA_VIEW_BACKUP_CODES",
             codes: t.body.backup_codes,
             key: e
@@ -111,7 +112,7 @@ let r = {
         })
     },
     clearBackupCodes() {
-        s.h.dispatch({
+        n.h.dispatch({
             type: "MFA_CLEAR_BACKUP_CODES"
         })
     }

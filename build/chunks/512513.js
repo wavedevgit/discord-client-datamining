@@ -1,12 +1,12 @@
-/** chunk id: 512513, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    z: () => s
+/** chunk id: 512513, original params: t,e,a (module,exports,require) **/
+a.d(e, {
+    z: () => r
 });
-var i = n(397927),
-    r = n(809092),
-    a = n(946974);
-let s = {
+var i = a(397927),
+    s = a(809092),
+    n = a(946974);
+let r = {
     binds: ["mod+/", "mod+shift+/"],
     comboKeysBindGlobal: !0,
-    action: () => ((0, i.kBI)(a.P) ? r.j() : r.W(), !1)
+    action: () => ((0, i.kBI)(n.P) ? s.j() : s.W(), !1)
 }

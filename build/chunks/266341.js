@@ -1,6 +1,10 @@
 /** chunk id: 266341, original params: e,_,r (module,exports,require) **/
 r.r(e.exports = {
     grid: "grid__1b670",
+    pagination: "pagination__1b670",
+    pageNumbers: "pageNumbers__1b670",
+    page: "page__1b670",
+    active: "active__1b670",
     columns1: "columns1__1b670",
     columns2: "columns2__1b670",
     columns3: "columns3__1b670",

@@ -1,5 +1,4 @@
-/** chunk id: 45119, original params: e,t,n (module,exports,require) **/
-"use strict";
+/** chunk id: 45119, original params: e,t,a (module,exports,require) **/
 e.exports = {
     Ix: "channel__972a0",
     Ij: "fullWidth__972a0",
@@ -30,6 +29,5 @@ e.exports = {
     XD: "activityStatusText__972a0",
     G$: "decorator__972a0",
     dm: "dm__972a0",
-    KQ: "waveButton__972a0",
-    BD: "waveSticker__972a0"
+    KQ: "waveButton__972a0"
 }

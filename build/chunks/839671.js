@@ -1,7 +1,7 @@
 /** chunk id: 839671, original params: e,t,i (module,exports,require) **/
 i.d(t, {
     A: () => f,
-    R: () => p
+    R: () => v
 });
 var n = i(627968);
 i(64700);
@@ -12,8 +12,8 @@ var l = i(503698),
     c = i(397927),
     o = i(409626),
     d = i(985018),
-    u = i(728528),
-    m = i(612617);
+    u = i(851822),
+    m = i(307291);
 let x = [s.V.OFFICIAL, s.V.TWITTER, s.V.YOUTUBE];
 
 function g(e) {
@@ -118,7 +118,7 @@ function j(e) {
     })
 }
 
-function p(e) {
+function v(e) {
     let {
         detectedGame: t,
         trackClick: i

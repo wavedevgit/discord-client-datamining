@@ -7,8 +7,8 @@ var r = l(627968);
 l(64700);
 var a = l(397927),
     n = l(261225),
-    s = l(673277),
-    i = l(458306),
+    i = l(673277),
+    s = l(458306),
     o = l(753825);
 let d = {
     name: "FeaturedProduct",
@@ -17,11 +17,11 @@ let d = {
         children: [(0, r.jsx)(a.Text, {
             variant: "text-lg/semibold",
             children: "PLACEHOLDER"
-        }), (0, r.jsx)(s.A, {
+        }), (0, r.jsx)(i.A, {
             children: (0, r.jsx)(o.A, {
                 ...e
             })
-        }), (0, r.jsxs)(s.A, {
+        }), (0, r.jsxs)(i.A, {
             children: [(0, r.jsx)(a.Text, {
                 variant: "text-lg/semibold",
                 children: "Grid (3):"
@@ -41,11 +41,11 @@ let d = {
                     ...e
                 })]
             })]
-        }), (0, r.jsxs)(s.A, {
+        }), (0, r.jsxs)(i.A, {
             children: [(0, r.jsx)(a.Text, {
                 variant: "text-lg/semibold",
                 children: "Stack:"
-            }), (0, r.jsxs)(i.Kp, {
+            }), (0, r.jsxs)(s.Kp, {
                 direction: "horizontal",
                 children: [(0, r.jsx)(o.A, {
                     ...e

@@ -6,9 +6,9 @@ l.d(t, {
 var r = l(627968),
     a = l(64700),
     n = l(503698),
-    s = l.n(n),
-    i = l(752238),
-    o = l(230686);
+    i = l.n(n),
+    s = l(752238),
+    o = l(781992);
 
 function d(e) {
     let {
@@ -16,8 +16,8 @@ function d(e) {
         onChange: l
     } = e, n = "json", d = a.useRef(null), [c, u] = a.useState("");
     return a.useEffect(() => {
-        if (null != t && i.default.hasLanguage(n)) {
-            let e = i.default.highlight(n, t, !0);
+        if (null != t && s.default.hasLanguage(n)) {
+            let e = s.default.highlight(n, t, !0);
             null != e ? u(e.value + "\n") : u(t + "\n")
         } else u(t + "\n")
     }, [t, n]), (0, r.jsxs)("div", {
@@ -26,7 +26,7 @@ function d(e) {
             className: o.c5,
             "aria-hidden": "true",
             children: (0, r.jsx)("code", {
-                className: s()("hljs", n),
+                className: i()("hljs", n),
                 dangerouslySetInnerHTML: {
                     __html: c ?? ""
                 }
@@ -53,13 +53,13 @@ function d(e) {
                         let e = t.lastIndexOf("\n", a - 1) + 1,
                             r = t.indexOf("\n", a),
                             n = t.substring(e, -1 === r ? t.length : r),
-                            s = 0;
+                            i = 0;
                         for (let e = 0; e < Math.min(2, n.length); e++)
-                            if (" " === n[e]) s++;
+                            if (" " === n[e]) i++;
                             else break;
-                        s > 0 && (l(t.substring(0, e) + t.substring(e + s)), setTimeout(() => {
+                        i > 0 && (l(t.substring(0, e) + t.substring(e + i)), setTimeout(() => {
                             if (null != d.current) {
-                                let t = Math.max(e, a - s);
+                                let t = Math.max(e, a - i);
                                 d.current.selectionStart = d.current.selectionEnd = t
                             }
                         }, 0))

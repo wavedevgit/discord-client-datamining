@@ -8,14 +8,14 @@ var a = n(64700),
     r = n(849841);
 
 function o(e, t) {
-    let [n, o] = a.useState(!1), c = a.useCallback(async () => {
+    let [n, o] = a.useState(!1), l = a.useCallback(async () => {
         null != e && (o(!0), await (0, i.m)(e, !0), o(!1)), t?.()
-    }, [e, t]), s = (0, r.A)(e);
+    }, [e, t]), c = (0, r.A)(e);
     return {
         isAdopting: n,
-        onAdoptTag: c,
+        onAdoptTag: l,
         onEditProfile: a.useCallback(() => {
-            t?.(), s()
-        }, [s, t])
+            t?.(), c()
+        }, [c, t])
     }
 }

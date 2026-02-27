@@ -16,7 +16,7 @@ var s = n(417597),
     h = n(427262),
     A = n(742589),
     p = n(985018),
-    g = n(370808);
+    g = n(638990);
 
 function m(e) {
     let t = e.channel.getRecipientId(),

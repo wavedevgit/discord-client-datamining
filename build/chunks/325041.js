@@ -1,8 +1,8 @@
 /** chunk id: 325041, original params: e (module,exports,require) **/
-e.exports = function(e, n, t) {
-    var i = -1,
-        l = e.length;
-    n < 0 && (n = -n > l ? 0 : l + n), (t = t > l ? l : t) < 0 && (t += l), l = n > t ? 0 : t - n >>> 0, n >>>= 0;
-    for (var r = Array(l); ++i < l;) r[i] = e[i + n];
+e.exports = function(e, t, n) {
+    var a = -1,
+        i = e.length;
+    t < 0 && (t = -t > i ? 0 : i + t), (n = n > i ? i : n) < 0 && (n += i), i = t > n ? 0 : n - t >>> 0, t >>>= 0;
+    for (var r = Array(i); ++a < i;) r[a] = e[a + t];
     return r
 }

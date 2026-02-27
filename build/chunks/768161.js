@@ -18,7 +18,7 @@ var n = l(627968),
     y = l(99696),
     f = l(818348),
     m = l(985018),
-    b = l(762623);
+    b = l(615305);
 let S = i.A.filter(t => s.M.EU_COUNTRIES.has(t.alpha2)).map(t => ({
     id: t.alpha2,
     value: t.alpha2,

@@ -1,13 +1,13 @@
 /** chunk id: 151119, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    S: () => n
+    S: () => r
 });
 var s = i(311907),
-    _ = i(349435),
+    n = i(349435),
     l = i(338510);
 
-function n(t) {
+function r(t) {
     let e = (0, l.u)(t),
-        i = (0, s.bG)([_.Ay], () => _.Ay.hasShownInitialTooltipForChannel(t));
+        i = (0, s.bG)([n.Ay], () => n.Ay.hasShownInitialTooltipForChannel(t));
     return null != e && !i
 }

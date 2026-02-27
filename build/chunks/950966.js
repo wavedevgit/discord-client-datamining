@@ -1,13 +1,13 @@
 /** chunk id: 950966, original params: e,t,l (module,exports,require) **/
 "use strict";
 l.d(t, {
-    Z: () => i
+    Z: () => s
 });
 var r = l(627968);
 l(64700);
 var a = l(397927),
     n = l(264302);
-let s = e => {
+let i = e => {
         let {
             color: t,
             children: l
@@ -25,7 +25,7 @@ let s = e => {
             })
         })
     },
-    i = {
+    s = {
         name: "Stack",
         id: "cms-stack",
         component: e => (0, r.jsxs)(r.Fragment, {
@@ -39,13 +39,13 @@ let s = e => {
                 },
                 children: (0, r.jsxs)(n.A, {
                     ...e,
-                    children: [(0, r.jsx)(s, {
+                    children: [(0, r.jsx)(i, {
                         color: "#5865F2",
                         children: "Item 1"
-                    }), (0, r.jsx)(s, {
+                    }), (0, r.jsx)(i, {
                         color: "#57F287",
                         children: "Item 2"
-                    }), (0, r.jsx)(s, {
+                    }), (0, r.jsx)(i, {
                         color: "#FEE75C",
                         children: "Item 3"
                     })]
@@ -61,13 +61,13 @@ let s = e => {
                 children: (0, r.jsxs)(n.A, {
                     ...e,
                     direction: "horizontal",
-                    children: [(0, r.jsx)(s, {
+                    children: [(0, r.jsx)(i, {
                         color: "#5865F2",
                         children: "Item 1"
-                    }), (0, r.jsx)(s, {
+                    }), (0, r.jsx)(i, {
                         color: "#57F287",
                         children: "Item 2"
-                    }), (0, r.jsx)(s, {
+                    }), (0, r.jsx)(i, {
                         color: "#FEE75C",
                         children: "Item 3"
                     })]
@@ -83,13 +83,13 @@ let s = e => {
                 children: (0, r.jsxs)(n.A, {
                     ...e,
                     direction: "vertical",
-                    children: [(0, r.jsx)(s, {
+                    children: [(0, r.jsx)(i, {
                         color: "#5865F2",
                         children: "Item 1"
-                    }), (0, r.jsx)(s, {
+                    }), (0, r.jsx)(i, {
                         color: "#57F287",
                         children: "Item 2"
-                    }), (0, r.jsx)(s, {
+                    }), (0, r.jsx)(i, {
                         color: "#FEE75C",
                         children: "Item 3"
                     })]

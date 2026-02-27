@@ -6,8 +6,8 @@ l.d(t, {
 var r = l(627968),
     a = l(64700),
     n = l(151645),
-    s = l(751304),
-    i = l(561769);
+    i = l(751304),
+    s = l(561769);
 let o = e => {
     let {
         skuId: t
@@ -17,11 +17,11 @@ let o = e => {
         skuId: t,
         includePricing: !0
     }), o = a.useMemo(() => l?.toLegacyRecord(), [l]);
-    return null == o ? null : (0, r.jsx)(i.v3.Provider, {
+    return null == o ? null : (0, r.jsx)(s.v3.Provider, {
         value: {
             productOverride: o
         },
-        children: (0, r.jsx)(s.A, {
+        children: (0, r.jsx)(i.A, {
             skuId: t
         })
     })

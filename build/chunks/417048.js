@@ -1,31 +1,30 @@
-/** chunk id: 417048, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    X: () => r
+/** chunk id: 417048, original params: e,_,n (module,exports,require) **/
+n.d(_, {
+    X: () => o
 });
-var i = n(627968);
+var a = n(627968);
 n(64700);
-var s = n(397927),
-    l = n(803100);
-let r = e => {
+var t = n(397927),
+    i = n(82170);
+let o = e => {
     let {
-        title: t,
+        title: _,
         subtitle: n,
-        icon: r
+        icon: o
     } = e;
-    return (0, i.jsxs)("div", {
-        className: l.iE,
-        children: [null != r && (0, i.jsx)(r, {
+    return (0, a.jsxs)("div", {
+        className: i.iE,
+        children: [null != o && (0, a.jsx)(o, {
             size: "xs",
             color: "currentColor",
-            className: l.Kk
-        }), (0, i.jsx)(s.Text, {
+            className: i.Kk
+        }), (0, a.jsx)(t.Text, {
             variant: "text-md/normal",
-            className: l.DD,
-            children: t
-        }), null != n && "" !== n ? (0, i.jsx)(s.Text, {
+            className: i.DD,
+            children: _
+        }), null != n && "" !== n ? (0, a.jsx)(t.Text, {
             variant: "text-xs/semibold",
-            className: l.VA,
+            className: i.VA,
             children: n
         }) : null]
     })

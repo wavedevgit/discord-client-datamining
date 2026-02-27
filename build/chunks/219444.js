@@ -1,11 +1,11 @@
 /** chunk id: 219444, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     $k: () => o,
-    Vf: () => s
+    Vf: () => a
 });
-var a = n(600975),
+var i = n(600975),
     l = n(652215);
-let r = (0, a.C)({
+let r = (0, i.C)({
     kind: "guild",
     id: "2023-03_guild_media_channel",
     label: "Media Channel",
@@ -21,7 +21,7 @@ let r = (0, a.C)({
     }]
 });
 
-function s(e) {
+function a(e) {
     let {
         enabled: t
     } = r.useExperiment({
@@ -32,7 +32,7 @@ function s(e) {
     });
     return e?.id != null && t
 }
-let i = (0, a.C)({
+let s = (0, i.C)({
     kind: "user",
     id: "2023-04_guild_media_channel_post_preview_embed_users",
     label: "Guild Role Subscription Users",
@@ -51,7 +51,7 @@ let i = (0, a.C)({
 function o() {
     let {
         enabledForUser: e
-    } = i.useExperiment({
+    } = s.useExperiment({
         location: "96e84c_2"
     }, {
         autoTrackExposure: !0

@@ -8,7 +8,7 @@ var n = i(397927),
     s = i(9578),
     a = i(573648),
     r = i(652215),
-    d = i(306989);
+    d = i(492171);
 let c = {
     [r.fg2.TWITCH]: n.aWO,
     [r.fg2.YOUTUBE]: n.CiD,

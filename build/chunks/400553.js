@@ -13,9 +13,9 @@ var s = n(417597),
     d = n(254847),
     u = n(773349),
     _ = n(994987),
-    m = n(870236),
+    m = n(842130),
     A = n(985018),
-    g = n(511527);
+    g = n(721757);
 let h = () => {
     let e = (0, s.bG)([r.A], () => r.A.getTopUserActivities()),
         t = (0, s.bG)([r.A], () => r.A.getTopGuildActivities());

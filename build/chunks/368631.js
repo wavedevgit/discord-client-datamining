@@ -70,10 +70,10 @@ var i = n(627968),
     ed = n(531525),
     eu = n(652215),
     e_ = n(985018),
-    em = n(241015),
-    eA = n(870236),
-    eg = n(215765),
-    eh = n(487631);
+    em = n(927961),
+    eA = n(842130),
+    eg = n(895431),
+    eh = n(945213);
 let ex = () => [a.M.CLIENT_THEMES_SETTINGS_BADGE, a.M.DEKSTOP_CUSTOM_APP_ICON_BADGE, a.M.CLIENT_THEMES_APPEARANCE_SETTINGS_NEW_BADGE],
     ep = () => {
         let e = ex(),

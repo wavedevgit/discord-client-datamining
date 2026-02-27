@@ -35,7 +35,7 @@ async function I(t) {
         (0, l.mMO)(async () => {
             let {
                 GuildSubscriptionSelectionModal: t
-            } = await Promise.all([i.e("8555"), i.e("30476")]).then(i.bind(i, 621524));
+            } = await Promise.all([i.e("8555"), i.e("30476")]).then(i.bind(i, 399143));
             return i => (0, n.jsx)(t, {
                 transitionState: i.transitionState,
                 onClose: i.onClose,

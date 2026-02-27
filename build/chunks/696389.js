@@ -1,4 +1,4 @@
-/** chunk id: 696389, original params: e,i,t (module,exports,require) **/
+/** chunk id: 696389, original params: e,t,n (module,exports,require) **/
 e.exports = {
     SW: "pricePerInterval_fd0764",
     q9: "price_fd0764",

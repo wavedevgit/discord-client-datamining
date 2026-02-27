@@ -1,13 +1,13 @@
 /** chunk id: 749394, original params: e,t,l (module,exports,require) **/
 "use strict";
 l.d(t, {
-    A: () => i
+    A: () => s
 });
 var r = l(440745),
     a = l.n(r),
     n = l(317097),
-    s = l(315069);
-class i extends s.A {
+    i = l(315069);
+class s extends i.A {
     backgroundColors;
     buttonColors;
     confettiColors;
@@ -20,7 +20,7 @@ class i extends s.A {
             button_colors: l,
             confetti_colors: r
         } = e;
-        return new i({
+        return new s({
             backgroundColors: t.map(e => a()((0, n.Hl)(e))),
             buttonColors: l.map(e => a()((0, n.Hl)(e))),
             confettiColors: r.map(e => a()((0, n.Hl)(e)))

@@ -1,6 +1,6 @@
 /** chunk id: 582942, original params: e,t,i (module,exports,require) **/
 i.d(t, {
-    A: () => I
+    A: () => E
 });
 var n = i(627968),
     l = i(64700),
@@ -17,12 +17,12 @@ var n = i(627968),
     h = i(409626),
     f = i(422069),
     j = i(611656),
-    p = i(459746),
-    v = i(225732),
+    v = i(459746),
+    p = i(225732),
     A = i(985018),
-    _ = i(728528),
-    N = i(470078);
-let E = e => {
+    I = i(851822),
+    _ = i(799864);
+let N = e => {
     let {
         game: t,
         onClose: i,
@@ -32,25 +32,25 @@ let E = e => {
         asContainer: !0,
         text: t.name,
         children: (0, n.jsx)(u.DUT, {
-            className: N.fS,
+            className: _.fS,
             onClick: async () => {
-                l(h.Ws.ClickSimilarGame, t.applicationId), (0, u.mMO)(() => Promise.resolve(e => (0, n.jsx)(v.default, {
+                l(h.Ws.ClickSimilarGame, t.applicationId), (0, u.mMO)(() => Promise.resolve(e => (0, n.jsx)(p.default, {
                     applicationId: t.applicationId,
                     source: h.Ob.SimilarGames,
                     ...e
                 }))), await new Promise(e => setTimeout(e, 10)), i()
             },
-            children: (0, n.jsx)(p.A, {
+            children: (0, n.jsx)(v.A, {
                 game: t,
                 application: a,
-                className: N.n1,
-                size: p.w.SMALL
+                className: _.n1,
+                size: v.w.SMALL
             })
         })
     })
 };
 
-function I(e) {
+function E(e) {
     let {
         applicationId: t,
         onClose: i,
@@ -66,22 +66,22 @@ function I(e) {
         r.length > 0 && m.A.getDetectableGamesSupplemental([t, ...r])
     }, [t, r]), x && null == d) ? (0, n.jsxs)("div", {
         children: [(0, n.jsx)("div", {
-            className: s()(N.vM, _.bV)
+            className: s()(_.vM, I.bV)
         }), (0, n.jsx)("div", {
-            className: s()(_.nM, _.iH),
+            className: s()(I.nM, I.iH),
             children: c().range(0, 5).map(e => (0, n.jsx)("div", {
-                className: N.nn
+                className: _.nn
             }, e))
         })]
     }) : (x || 0 !== h.length) && null == d ? (0, n.jsxs)("div", {
         children: [(0, n.jsx)(u.Heading, {
-            className: _.bV,
+            className: I.bV,
             variant: "text-md/semibold",
             color: "text-strong",
             children: A.intl.string(A.t["6rLyQB"])
         }), (0, n.jsx)("div", {
-            className: N.D$,
-            children: h.map(e => (0, n.jsx)(E, {
+            className: _.D$,
+            children: h.map(e => (0, n.jsx)(N, {
                 game: e,
                 onClose: i,
                 trackClick: a

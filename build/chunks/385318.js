@@ -1,107 +1,107 @@
-/** chunk id: 385318, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    default: () => N
+/** chunk id: 385318, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    default: () => E
 });
-var i = n(627968);
-n(64700);
-var l = n(110259),
-    s = n(311907),
-    a = n(205693),
-    r = n(397927),
-    o = n(827343),
-    c = n(820284),
-    d = n(688810),
-    u = n(139286),
-    h = n(48435),
-    m = n(813977),
-    A = n(485873),
-    g = n(24933),
-    p = n(964592),
-    f = n(430452),
-    _ = n(723702),
-    E = n(819027),
-    x = n(652215),
-    C = n(509381),
-    S = n(731854),
-    I = n(985018),
-    T = n(345206);
+var n = i(627968);
+i(64700);
+var l = i(110259),
+    s = i(311907),
+    d = i(205693),
+    a = i(397927),
+    o = i(827343),
+    r = i(820284),
+    c = i(688810),
+    A = i(139286),
+    T = i(48435),
+    I = i(813977),
+    u = i(485873),
+    p = i(24933),
+    b = i(964592),
+    m = i(430452),
+    _ = i(723702),
+    g = i(819027),
+    h = i(652215),
+    U = i(509381),
+    v = i(731854),
+    f = i(985018),
+    O = i(220636);
 
-function N(e) {
+function E(e) {
     let {
         onClose: t,
-        renderOutputDevices: n = !1,
-        renderInputDevices: N = !1,
-        renderInputProfiles: b = !1,
-        renderInputModes: y = !1,
-        renderInputVolume: v = !1,
-        renderOutputVolume: j = !1,
-        renderDeafen: R = !1,
-        minimal: M = !1,
-        onSelect: D,
-        appContext: O,
+        renderOutputDevices: i = !1,
+        renderInputDevices: E = !1,
+        renderInputProfiles: S = !1,
+        renderInputModes: x = !1,
+        renderInputVolume: y = !1,
+        renderOutputVolume: C = !1,
+        renderDeafen: D = !1,
+        minimal: V = !1,
+        onSelect: j,
+        appContext: k,
         onInteraction: L
     } = e, {
-        analyticsLocations: P
-    } = (0, d.Ay)();
-    (0, u.A)({
+        analyticsLocations: M
+    } = (0, c.Ay)();
+    (0, A.A)({
         type: l.ImpressionTypes.MENU,
         name: l.ImpressionNames.AUDIO_DEVICE_MENU,
         properties: {
-            location_stack: P
+            location_stack: M
         }
     });
-    let k = (0, E.A)(O),
-        w = (0, h.H)({
-            deviceType: S.oh.AUDIO_INPUT,
-            analyticsLocations: P,
-            asSubmenu: M
+    let N = (0, g.A)(k),
+        P = (0, T.H)({
+            deviceType: v.oh.AUDIO_INPUT,
+            analyticsLocations: M,
+            asSubmenu: V
         }),
-        U = (0, h.H)({
-            deviceType: S.oh.AUDIO_OUTPUT,
-            analyticsLocations: P,
-            asSubmenu: M
+        B = (0, T.H)({
+            deviceType: v.oh.AUDIO_OUTPUT,
+            analyticsLocations: M,
+            asSubmenu: V
         }),
-        G = (0, s.bG)([f.Ay], () => f.Ay.getActiveInputProfile()),
-        F = (0, g.A)(P),
-        H = (0, m.A)(P),
-        B = (0, A.A)(P),
-        V = (0, p.A)(P),
-        K = a.x.DEFAULT,
-        W = f.Ay.isSelfDeaf(K),
-        z = (0, s.bG)([f.Ay], () => f.Ay.getMode()),
-        Y = z === x.TBI.VOICE_ACTIVITY ? x.TBI.PUSH_TO_TALK : x.TBI.VOICE_ACTIVITY;
-    return (0, i.jsx)(c.A, {
-        object: x.ZSU.CONTEXT_MENU,
-        children: (0, i.jsxs)(r.W1t, {
+        H = (0, s.bG)([m.Ay], () => m.Ay.getActiveInputProfile()),
+        X = (0, p.A)(M),
+        K = (0, I.A)(M),
+        w = (0, u.A)(M),
+        G = (0, b.A)(M),
+        Y = d.x.DEFAULT,
+        F = m.Ay.isSelfDeaf(Y),
+        Q = (0, s.bG)([m.Ay], () => m.Ay.getMode()),
+        R = Q === h.TBI.VOICE_ACTIVITY ? h.TBI.PUSH_TO_TALK : h.TBI.VOICE_ACTIVITY;
+    return (0, n.jsx)(r.A, {
+        object: h.ZSU.CONTEXT_MENU,
+        children: (0, n.jsxs)(a.W1t, {
             "data-menu-migrated": !0,
-            onSelect: D,
+            onSelect: j,
             onInteraction: L,
-            className: T.MK,
+            className: O.MK,
             onClose: t,
             navId: "audio-device-context",
             variant: "fixed",
-            "aria-label": I.intl.string(I.t.ZR1Ss6),
-            children: [N && w, n && U, b && F, !M && y && G !== C.m.STUDIO ? (0, i.jsx)(r.rXV, {
-                label: I.intl.string(I.t["pS+K2L"]),
-                children: H
-            }) : null, (0, i.jsxs)(r.rXV, {
-                children: [v ? B : null, j ? V : null, M ? (0, i.jsx)(r.bXX, {}) : null, M && R ? (0, i.jsx)(r.sLh, {
+            "aria-label": f.intl.string(f.t.ZR1Ss6),
+            children: [E && P, i && B, S && X, !V && x && H !== U.m.STUDIO ? (0, n.jsx)(a.rXV, {
+                label: f.intl.string(f.t["pS+K2L"]),
+                children: K
+            }) : null, (0, n.jsxs)(a.rXV, {
+                children: [y ? w : null, C ? G : null, V ? (0, n.jsx)(a.bXX, {}) : null, V && D ? (0, n.jsx)(a.sLh, {
                     id: "deafen",
-                    label: I.intl.string(I.t.wjcRFX),
+                    label: f.intl.string(f.t.wjcRFX),
                     action: () => o.A.toggleSelfDeaf({
-                        context: K,
+                        context: Y,
                         location: "AudioDeviceMenu"
                     }),
-                    checked: W
-                }, "self-deafen") : null, M && N && _.isPlatformEmbedded ? (0, i.jsx)(r.sLh, {
-                    checked: z === x.TBI.PUSH_TO_TALK,
+                    checked: F
+                }, "self-deafen") : null, V && E && _.isPlatformEmbedded ? (0, n.jsx)(a.sLh, {
+                    checked: Q === h.TBI.PUSH_TO_TALK,
                     id: "input-mode",
-                    label: I.intl.string(I.t.Q8gkVL),
-                    action: () => o.A.setMode(Y, void 0, void 0, {
-                        analyticsLocations: P
+                    label: f.intl.string(f.t.Q8gkVL),
+                    action: () => o.A.setMode(R, void 0, void 0, {
+                        analyticsLocations: M
                     }),
-                    disabled: G === C.m.STUDIO
-                }) : null, k]
+                    disabled: H === U.m.STUDIO
+                }) : null, N]
             })]
         })
     })

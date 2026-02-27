@@ -6,8 +6,8 @@ l.d(t, {
 var r = l(627968),
     a = l(64700),
     n = l(179262),
-    s = l(41770),
-    i = l(148702),
+    i = l(41770),
+    s = l(148702),
     o = l(785330),
     d = l(652215);
 let c = {
@@ -16,13 +16,13 @@ let c = {
         name: "Layout Builder",
         id: "layout-builder",
         component: () => {
-            let [e, t] = a.useState(JSON.stringify(s.uG, null, 2)), [l, n] = a.useState(e);
+            let [e, t] = a.useState(JSON.stringify(i.uG, null, 2)), [l, n] = a.useState(e);
             return a.useEffect(() => {
                 try {
                     (0, o.F2)(JSON.parse(e)) && n(e)
                 } catch {}
             }, [e]), (0, r.jsxs)("div", {
-                children: [(0, r.jsx)(i.A, {
+                children: [(0, r.jsx)(s.A, {
                     value: e,
                     onChange: e => t(e)
                 }), (0, r.jsx)("hr", {}), (0, r.jsx)(o.Ay, {
@@ -39,11 +39,11 @@ let c = {
                 collectionId: t
             } = e, {
                 collection: l,
-                isFetching: s
+                isFetching: i
             } = (0, n.A)({
                 collectionId: t,
                 includePricing: !0
-            }), i = a.useMemo(() => {
+            }), s = a.useMemo(() => {
                 let e = l?.styles?.backgroundColors?.[0];
                 return {
                     id: "shop-index-page",
@@ -67,10 +67,10 @@ let c = {
                     }]
                 }
             }, [l?.styles?.backgroundColors, l?.catalogBannerUrl, l?.products]);
-            return s ? (0, r.jsx)("div", {
+            return i ? (0, r.jsx)("div", {
                 children: "Loading..."
             }) : (0, r.jsx)(o.Ay, {
-                layout: i
+                layout: s
             })
         },
         controls: {

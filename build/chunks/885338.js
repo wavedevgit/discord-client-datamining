@@ -15,7 +15,7 @@ var r = l(627968),
     f = l(950198),
     h = l(652215),
     g = l(985018),
-    p = l(246882);
+    p = l(201736);
 let j = "https://dis.gd/Amazon-Music-Connection",
     v = null != window.opener;
 

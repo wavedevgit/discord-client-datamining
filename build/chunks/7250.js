@@ -3,12 +3,12 @@
 n.d(t, {
     j: () => s
 });
-var l = n(317097);
+var i = n(317097);
 
 function s(e) {
     let {
         backgroundColor: t,
         colors: n
-    } = e, [s, i] = n, r = "string" == typeof t ? (0, l.LX)(t) : t, a = "string" == typeof s ? (0, l.LX)(s) : s, o = "string" == typeof i ? (0, l.LX)(i) : i;
-    return (0, l.bJ)(r, a) > (0, l.bJ)(r, o) ? s : i
+    } = e, [s, r] = n, l = "string" == typeof t ? (0, i.LX)(t) : t, a = "string" == typeof s ? (0, i.LX)(s) : s, o = "string" == typeof r ? (0, i.LX)(r) : r;
+    return (0, i.bJ)(l, a) > (0, i.bJ)(l, o) ? s : r
 }

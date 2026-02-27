@@ -25,7 +25,7 @@ function d(e) {
             (0, l.mMO)(async () => {
                 let {
                     default: t
-                } = await Promise.all([i.e("68587"), i.e("51354"), i.e("342"), i.e("19572")]).then(i.bind(i, 21653));
+                } = await Promise.all([i.e("68587"), i.e("51354"), i.e("342"), i.e("62106")]).then(i.bind(i, 21653));
                 return i => (0, n.jsx)(t, {
                     ...i,
                     guildId: e

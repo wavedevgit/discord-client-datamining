@@ -7,7 +7,7 @@ n(64700);
 var s = n(397927),
     r = n(235986),
     i = n(985018),
-    a = n(594671);
+    a = n(288661);
 let o = {
     SlideContent: function(e) {
         let {

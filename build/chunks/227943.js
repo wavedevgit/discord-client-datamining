@@ -6,8 +6,8 @@ l.d(t, {
 var r = l(627968),
     a = l(397927),
     n = l(18769),
-    s = l(954644),
-    i = l(261225),
+    i = l(954644),
+    s = l(261225),
     o = l(673277),
     d = l(700263);
 let c = {
@@ -40,18 +40,18 @@ let c = {
             variant: "text-lg/normal",
             children: "Here we have a Grid with three Skeleton children that are wrapping three ShopProductCard to simulate a shop loading state"
         }), (0, r.jsx)(o.A, {
-            children: (0, r.jsxs)(i.A, {
+            children: (0, r.jsxs)(s.A, {
                 columns: 3,
                 children: [(0, r.jsx)(d.A, {
-                    children: (0, r.jsx)(s.A, {
+                    children: (0, r.jsx)(i.A, {
                         skuId: "1458472704192811088"
                     })
                 }), (0, r.jsx)(d.A, {
-                    children: (0, r.jsx)(s.A, {
+                    children: (0, r.jsx)(i.A, {
                         skuId: "1458472704192811088"
                     })
                 }), (0, r.jsx)(d.A, {
-                    children: (0, r.jsx)(s.A, {
+                    children: (0, r.jsx)(i.A, {
                         skuId: "1458472704192811088"
                     })
                 })]
@@ -60,7 +60,7 @@ let c = {
             variant: "text-lg/normal",
             children: "Here we have a Grid with two Skeleton children that are wrapping two FeaturedCollection to simulate a shop loading state"
         }), (0, r.jsx)(o.A, {
-            children: (0, r.jsxs)(i.A, {
+            children: (0, r.jsxs)(s.A, {
                 columns: 2,
                 children: [(0, r.jsx)(d.A, {
                     children: (0, r.jsx)(n.A, {

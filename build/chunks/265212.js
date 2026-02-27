@@ -1,12 +1,12 @@
 /** chunk id: 265212, original params: e,t,l (module,exports,require) **/
 "use strict";
 l.d(t, {
-    A: () => s
+    A: () => i
 });
 var r = l(749394),
     a = l(719986),
     n = l(19945);
-class s {
+class i {
     id;
     applicationId;
     name;
@@ -55,18 +55,18 @@ class s {
             collection: {
                 application_id: t,
                 created_at: l,
-                updated_at: i,
+                updated_at: s,
                 tenant_metadata: o,
                 ...d
             },
             products: c
         } = e;
-        return new s({
+        return new i({
             ...d,
             applicationId: t,
             products: c.map(e => n.A.fromServer(e)),
             createdAt: new Date(l),
-            updatedAt: new Date(i),
+            updatedAt: new Date(s),
             styles: null != o.collectibles.styles ? r.A.fromServer(o.collectibles.styles) : void 0,
             bannerTextColor: o.collectibles.banner_text_color,
             heroRanking: o.collectibles.hero_ranking,

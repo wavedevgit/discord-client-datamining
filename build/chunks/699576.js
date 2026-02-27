@@ -1,53 +1,53 @@
-/** chunk id: 699576, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => C
+/** chunk id: 699576, original params: t,e,n (module,exports,require) **/
+n.d(e, {
+    A: () => g
 });
-var a = n(627968),
-    l = n(64700),
-    s = n(503698),
-    i = n.n(s),
-    r = n(311907),
-    c = n(287809),
-    o = n(927578),
-    u = n(202639),
+var i = n(627968),
+    a = n(64700),
+    o = n(503698),
+    r = n.n(o),
+    s = n(311907),
+    l = n(287809),
+    A = n(927578),
+    c = n(202639),
     d = n(688796),
-    A = n(652215),
-    g = n(339984),
-    h = n(985018),
-    f = n(946556);
+    _ = n(652215),
+    u = n(339984),
+    L = n(985018),
+    m = n(719154);
 
-function C(e) {
+function g(t) {
     let {
-        uploadType: t,
+        uploadType: e,
         analyticsSource: n,
-        className: s,
-        ...C
-    } = e, m = l.useCallback(() => {
+        className: o,
+        ...g
+    } = t, E = a.useCallback(() => {
         (0, d.G)({
-            uploadType: t,
+            uploadType: e,
             analyticsSource: n
         })
-    }, [t, n]), E = (0, r.bG)([c.default], () => c.default.getCurrentUser()), x = o.Ay.canUseAnimatedAvatar(E), p = l.useMemo(() => {
-        switch (t) {
-            case g.HL.AVATAR:
-                return h.intl.format(h.t["pvw/HH"], {
-                    onClick: m
+    }, [e, n]), N = (0, s.bG)([l.default], () => l.default.getCurrentUser()), R = A.Ay.canUseAnimatedAvatar(N), C = a.useMemo(() => {
+        switch (e) {
+            case u.HL.AVATAR:
+                return L.intl.format(L.t["pvw/HH"], {
+                    onClick: E
                 });
-            case g.HL.BANNER:
-                return h.intl.format(h.t.aCrz1e, {
-                    onClick: m
+            case u.HL.BANNER:
+                return L.intl.format(L.t.aCrz1e, {
+                    onClick: E
                 });
             default:
                 return ""
         }
-    }, [t, m]);
-    return t !== g.HL.AVATAR && t !== g.HL.BANNER || t === g.HL.AVATAR && x ? null : (0, a.jsx)(u.d, {
-        text: p,
-        button: h.intl.string(h.t.BmJkbd),
+    }, [e, E]);
+    return e !== u.HL.AVATAR && e !== u.HL.BANNER || e === u.HL.AVATAR && R ? null : (0, i.jsx)(c.d, {
+        text: C,
+        button: L.intl.string(L.t.BmJkbd),
         buttonAnalyticsObject: {
-            section: A.JJy.USER_PROFILE
+            section: _.JJy.USER_PROFILE
         },
-        className: i()(f.k, s),
-        ...C
+        className: r()(m.k, o),
+        ...g
     })
 }

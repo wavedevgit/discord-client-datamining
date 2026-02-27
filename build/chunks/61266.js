@@ -1,34 +1,35 @@
 /** chunk id: 61266, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => p
+    A: () => g
 });
-var r = n(627968),
-    i = n(64700),
-    a = n(503698),
-    o = n.n(a),
+var a = n(627968),
+    r = n(64700),
+    i = n(503698),
+    s = n.n(i),
     l = n(46054),
-    _ = n(465364),
-    s = n(207963),
-    c = n(647901),
+    o = n(465364),
+    c = n(207963),
+    u = n(647901),
     d = n(560438),
-    u = n(914362),
-    m = n(830412);
+    _ = n(483496),
+    m = n(206314);
 
-function p(e) {
+function g(e) {
     let t, {
             content: n,
-            className: a
+            className: i
         } = e,
-        p = (t = (0, s.jc)(), (0, i.useMemo)(() => {
+        g = (t = (0, c.jc)(), (0, r.useMemo)(() => {
             let e;
-            return null === t ? null : (e = null != t.message ? (0, _.ko)(t.message, d.l) : (0, _.Le)({
+            return null === t ? null : (e = null != t.message ? (0, o.ko)(t.message, d.l) : (0, o.Le)({
                 channelId: t.channelId,
                 renderOptions: d.l
             }), l.A.parse(n, !0, e))
         }, [n, t])),
-        f = (0, c.X)();
-    return (0, r.jsx)("div", {
-        className: o()(a, m.PT, u.T, f.className),
-        children: p
+        p = (0, u.X)();
+    return (0, a.jsx)("div", {
+        className: s()(i, m.PT, _.T, p.className),
+        children: g
     })
 }

@@ -1,17 +1,17 @@
-/** chunk id: 809092, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    W: () => r,
-    j: () => a
+/** chunk id: 809092, original params: t,e,a (module,exports,require) **/
+a.d(e, {
+    W: () => s,
+    j: () => n
 });
-var i = n(73153);
+var i = a(73153);
 
-function r() {
+function s() {
     i.h.dispatch({
         type: "SHOW_KEYBOARD_SHORTCUTS"
     })
 }
 
-function a() {
+function n() {
     i.h.dispatch({
         type: "HIDE_KEYBOARD_SHORTCUTS"
     })

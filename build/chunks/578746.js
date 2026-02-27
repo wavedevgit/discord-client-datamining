@@ -1,11 +1,12 @@
 /** chunk id: 578746, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
     Ay: () => o
 });
 var i = n(627968);
 n(64700);
 var s = n(435371),
-    a = n(397927);
+    r = n(397927);
 
 function l(e) {
     let {
@@ -13,18 +14,18 @@ function l(e) {
         onChange: n,
         note: s,
         title: l,
-        disabled: r
+        disabled: a
     } = e;
-    return (0, i.jsx)(a.dOG, {
+    return (0, i.jsx)(r.dOG, {
         checked: t,
         onChange: n,
-        disabled: r,
+        disabled: a,
         label: l,
         description: s
     })
 }
 
-function r(e) {
+function a(e) {
     let {
         tooltipText: t,
         ...n
@@ -44,7 +45,7 @@ function r(e) {
 }
 
 function o(e) {
-    return "tooltipText" in e && null != e.tooltipText ? (0, i.jsx)(r, {
+    return "tooltipText" in e && null != e.tooltipText ? (0, i.jsx)(a, {
         ...e
     }) : (0, i.jsx)(l, {
         ...e

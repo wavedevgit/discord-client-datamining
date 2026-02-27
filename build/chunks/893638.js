@@ -13,7 +13,7 @@ var i = n(627968),
     u = n(69175),
     A = n(652215),
     h = n(985018),
-    _ = n(998809);
+    _ = n(388756);
 let m = [{
         feature: A.x0t.SINGLE_PLAYER,
         getText: () => h.intl.string(h.t["V+/FjO"]),

@@ -31,8 +31,8 @@ var l = n(627968),
     y = n(746080),
     O = n(650583),
     T = n(985018),
-    L = n(597129),
-    R = n(830412);
+    L = n(282627),
+    R = n(206314);
 let D = new Set([w.rbe.GUILD_FORUM, w.rbe.GUILD_MEDIA]),
     H = new Set([w.rbe.GUILD_VOICE, w.rbe.GUILD_STAGE_VOICE]);
 

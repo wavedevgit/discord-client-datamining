@@ -1,41 +1,41 @@
 /** chunk id: 485394, original params: e,n,t (module,exports,require) **/
 t.d(n, {
-    Ay: () => h,
-    K7: () => f
+    Ay: () => b,
+    K7: () => p
 });
-var i = t(311907),
-    l = t(855687),
-    d = t(446600),
-    r = t(734057),
-    s = t(808728),
-    a = t(71393),
+var a = t(311907),
+    i = t(855687),
+    r = t(446600),
+    o = t(734057),
+    l = t(808728),
+    s = t(71393),
     c = t(576705),
-    o = t(488926),
-    u = t(698441),
-    _ = t(988794),
-    g = t(652215);
+    _ = t(488926),
+    d = t(698441),
+    u = t(988794),
+    h = t(652215);
 
-function f(e) {
-    let [n, t, i, f] = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [s.Ay, r.A, a.A, d.A];
-    if ((0, u.AZ)(e)) return !1;
+function p(e) {
+    let [n, t, a, p] = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [l.Ay, o.A, s.A, r.A];
+    if ((0, d.AZ)(e)) return !1;
     let {
-        guild_id: h,
-        channel_id: x
-    } = e, m = e.entity_type === _.Ps.EXTERNAL ? n.getDefaultChannel(e.guild_id) : t.getChannel(x), v = i.getGuild(h), p = f.getStageInstanceByChannel(x);
-    return !!(0, l.K)(c.A, v, m, p) && null != m && function(e) {
-        let [n] = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [r.A], {
+        guild_id: b,
+        channel_id: m
+    } = e, x = e.entity_type === u.Ps.EXTERNAL ? n.getDefaultChannel(e.guild_id) : t.getChannel(m), C = a.getGuild(b), g = p.getStageInstanceByChannel(m);
+    return !!(0, i.K)(c.A, C, x, g) && null != x && function(e) {
+        let [n] = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [o.A], {
             entityType: t,
-            channelId: i
+            channelId: a
         } = "entity_type" in e ? {
             entityType: e.entity_type,
             channelId: e.channel_id
         } : e;
-        if (t === _.Ps.EXTERNAL) return !0;
-        let l = n.getChannel(i);
-        return null != l && o.MJ(g.xBc.VIEW_CHANNEL, l)
+        if (t === u.Ps.EXTERNAL) return !0;
+        let i = n.getChannel(a);
+        return null != i && _.MJ(h.xBc.VIEW_CHANNEL, i)
     }(e, [t])
 }
 
-function h(e) {
-    return (0, i.bG)([s.Ay, r.A, a.A, d.A], () => f(e, [s.Ay, r.A, a.A, d.A]), [e])
+function b(e) {
+    return (0, a.bG)([l.Ay, o.A, s.A, r.A], () => p(e, [l.Ay, o.A, s.A, r.A]), [e])
 }
