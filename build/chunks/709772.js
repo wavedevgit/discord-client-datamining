@@ -1,30 +1,30 @@
-/** chunk id: 709772, original params: e,t,l (module,exports,require) **/
+/** chunk id: 709772, original params: e,t,a (module,exports,require) **/
 "use strict";
-l.d(t, {
-    a: () => s
+a.d(t, {
+    a: () => i
 });
-var r = l(627968);
-l(64700);
-var a = l(342393),
-    n = l(71532),
-    i = l(714126);
-let s = e => {
+var l = a(627968);
+a(64700);
+var r = a(342393),
+    n = a(71532),
+    s = a(714126);
+let i = e => {
     let {
         errorLabel: t,
-        children: l,
-        elementOptions: s
+        children: a,
+        elementOptions: i
     } = e, o = Date.now();
-    return (0, r.jsx)(i.W, {
+    return (0, l.jsx)(s.W, {
         label: t,
-        children: (0, r.jsx)(a.Elements, {
+        children: (0, l.jsx)(r.Elements, {
             stripe: (0, n.Cv)(),
             options: {
                 mode: "setup",
                 currency: "usd",
                 setup_future_usage: "off_session",
-                ...s
+                ...i
             },
-            children: l
+            children: a
         })
     }, o)
 }

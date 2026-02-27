@@ -1,17 +1,17 @@
-/** chunk id: 377890, original params: e,t,l (module,exports,require) **/
-l.d(t, {
-    A: () => d
+/** chunk id: 377890, original params: e,l,t (module,exports,require) **/
+t.d(l, {
+    A: () => n
 });
-var r = l(627968);
-l(64700);
-var a = l(397927);
-let d = e => {
+var r = t(627968);
+t(64700);
+var o = t(397927);
+let n = e => {
     let {
-        content: t,
-        ...l
+        content: l,
+        ...t
     } = e;
-    return (0, r.jsx)(a.Heading, {
-        ...l,
-        children: t
+    return (0, r.jsx)(o.Heading, {
+        ...t,
+        children: l
     })
 }

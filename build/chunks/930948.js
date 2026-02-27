@@ -1,28 +1,27 @@
-/** chunk id: 930948, original params: e,t,l (module,exports,require) **/
-"use strict";
-l.d(t, {
-    A: () => o
+/** chunk id: 930948, original params: e,l,t (module,exports,require) **/
+t.d(l, {
+    A: () => d
 });
-var r = l(627968),
-    a = l(64700),
-    n = l(151645),
-    i = l(751304),
-    s = l(561769);
-let o = e => {
+var r = t(627968),
+    o = t(64700),
+    n = t(565235),
+    a = t(751304),
+    i = t(561769);
+let d = e => {
     let {
-        skuId: t
+        productId: l
     } = e, {
-        product: l
+        product: t
     } = (0, n.A)({
-        skuId: t,
+        productId: l,
         includePricing: !0
-    }), o = a.useMemo(() => l?.toLegacyRecord(), [l]);
-    return null == o ? null : (0, r.jsx)(s.v3.Provider, {
+    }), d = o.useMemo(() => t?.toLegacyRecord(), [t]);
+    return null == d ? null : (0, r.jsx)(i.v3.Provider, {
         value: {
-            productOverride: o
+            productOverride: d
         },
-        children: (0, r.jsx)(i.A, {
-            skuId: t
+        children: (0, r.jsx)(a.A, {
+            skuId: d.skuId
         })
     })
 }

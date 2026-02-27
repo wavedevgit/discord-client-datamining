@@ -1,65 +1,67 @@
-/** chunk id: 604238, original params: e,t,l (module,exports,require) **/
-l.d(t, {
-    E: () => y,
-    e: () => v
+/** chunk id: 604238, original params: e,l,t (module,exports,require) **/
+t.d(l, {
+    E: () => A,
+    e: () => f
 });
-var r = l(64700),
-    a = l(735438),
-    d = l(528226),
-    c = l(653793),
-    n = l(118713),
-    o = l(261225),
-    s = l(970488),
-    u = l(720462),
-    i = l(673277),
-    h = l(700263),
-    m = l(304973),
-    p = l(18769),
-    k = l(458306),
-    b = l(282203),
-    S = l(22519),
-    f = l(607795),
-    A = l(954644),
-    C = l(634791);
-let y = {
-        ContainedHero: d.A,
+var r = t(64700),
+    o = t(735438),
+    n = t(528226),
+    a = t(653793),
+    i = t(118713),
+    d = t(261225),
+    c = t(970488),
+    s = t(720462),
+    u = t(673277),
+    h = t(700263),
+    m = t(304973),
+    p = t(18769),
+    b = t(458306),
+    C = t(282203),
+    _ = t(22519),
+    k = t(607795),
+    g = t(954644),
+    S = t(930948),
+    y = t(634791);
+let A = {
+        ContainedHero: n.A,
         BasicHero: e => {
             let {
-                bannerSrc: t
+                bannerSrc: l
             } = e;
             return null
         },
         PromotionalHero: () => null,
-        InteractiveHScroll: u.A,
-        Carousel: n.A,
-        Grid: o.A,
-        GridItem: s.A,
-        Section: i.A,
-        Card: c.A,
+        InteractiveHScroll: s.A,
+        Carousel: i.A,
+        Grid: d.A,
+        GridItem: c.A,
+        Section: u.A,
+        Card: a.A,
         Skeleton: h.A,
         FeaturedChip: m.A,
         FeaturedCollection: p.A,
         FeaturedProduct: () => null,
-        ShopProductCard: A.A,
-        SkuList: b.A,
-        SubLayout: S.A,
-        SubTemplate: f.A,
-        Button: k.ar,
-        Heading: k.Oo,
-        Stack: k.Kp,
-        Text: k.t,
-        Any1: C.A,
-        Any2: C.A,
-        Any3: C.A
+        ShopProductCard: g.A,
+        StorefrontProductCard: S.A,
+        SkuList: C.A,
+        SubLayout: _.A,
+        SubTemplate: k.A,
+        Button: b.ar,
+        Heading: b.Oo,
+        Stack: b.Kp,
+        Text: b.t,
+        Any1: y.A,
+        Any2: y.A,
+        Any3: y.A
     },
-    v = function() {
+    f = function() {
         let {
             overrides: e
         } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
         return r.useMemo(() => {
-            let t = (0, a.cloneDeep)(y);
+            let l = (0, o.cloneDeep)(A);
             if (null != e)
-                for (let [l, r] of Object.entries(e)) null != r && (t[l] = r);
-            return t
+                for (let [t, r] of Object.entries(e)) null != r && (l[t] = r);
+            return l
         }, [e])
     }

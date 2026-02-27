@@ -1,24 +1,24 @@
-/** chunk id: 856535, original params: e,t,l (module,exports,require) **/
-l.d(t, {
-    A: () => o
+/** chunk id: 856535, original params: e,l,t (module,exports,require) **/
+t.d(l, {
+    A: () => d
 });
-var r = l(64700),
-    a = l(311907),
-    d = l(49463),
-    c = l(409013),
-    n = l(194822);
-let o = (e, t) => {
-    let l = (0, a.bG)([d.A], () => d.A.hasLoadedExperiments),
-        [o, s, u] = (0, a.yK)([n.A], () => [n.A.getLayout(e, t), n.A.isFetchingLayout(e, t), n.A.getFetchError(e, t)]),
-        i = null == o && null != t && l && !s && null == u;
+var r = t(64700),
+    o = t(311907),
+    n = t(49463),
+    a = t(409013),
+    i = t(194822);
+let d = (e, l) => {
+    let t = (0, o.bG)([n.A], () => n.A.hasLoadedExperiments),
+        [d, c, s] = (0, o.yK)([i.A], () => [i.A.getLayout(e, l), i.A.isFetchingLayout(e, l), i.A.getFetchError(e, l)]),
+        u = null == d && null != l && t && !c && null == s;
     return r.useEffect(() => {
-        i && (0, c.v)({
+        u && (0, a.v)({
             tenantId: e,
-            layoutId: t
+            layoutId: l
         }).catch(() => {})
-    }, [i, e, t]), {
-        layout: o,
-        loading: s,
-        error: u
+    }, [u, e, l]), {
+        layout: d,
+        loading: c,
+        error: s
     }
 }

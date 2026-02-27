@@ -1,87 +1,87 @@
-/** chunk id: 409013, original params: e,t,l (module,exports,require) **/
-l.d(t, {
+/** chunk id: 409013, original params: e,l,t (module,exports,require) **/
+t.d(l, {
     J: () => h,
-    v: () => i
+    v: () => u
 });
-var r = l(735438),
-    a = l(562465),
-    d = l(73153),
-    c = l(198982),
-    n = l(194822),
-    o = l(652215);
-let s = ["request_params"],
-    u = e => (0, r.isObject)(e) ? (0, r.isArray)(e) ? e.map(u) : (0, r.reduce)(e, (e, t, l) => {
-        let a = (0, r.camelCase)(l);
-        return s.includes(l) ? {
+var r = t(735438),
+    o = t(562465),
+    n = t(73153),
+    a = t(198982),
+    i = t(194822),
+    d = t(652215);
+let c = ["request_params"],
+    s = e => (0, r.isObject)(e) ? (0, r.isArray)(e) ? e.map(s) : (0, r.reduce)(e, (e, l, t) => {
+        let o = (0, r.camelCase)(t);
+        return c.includes(t) ? {
             ...e,
-            [a]: t
+            [o]: l
         } : {
             ...e,
-            [a]: u(t)
+            [o]: s(l)
         }
     }, {}) : e,
-    i = async e => {
+    u = async e => {
         let {
-            tenantId: t,
-            layoutId: l,
+            tenantId: l,
+            layoutId: t,
             abortSignal: r
         } = e;
-        if (!n.A.isFetchingLayout(t, l)) try {
-            d.h.dispatch({
+        if (!i.A.isFetchingLayout(l, t)) try {
+            n.h.dispatch({
                 type: "CMS_LAYOUT_FETCH",
-                tenantId: t,
-                layoutId: l
+                tenantId: l,
+                layoutId: t
             });
-            let e = await a.Bo.get({
-                url: o.Rsh.CMS_LAYOUT(t, l),
+            let e = await o.Bo.get({
+                url: d.Rsh.CMS_LAYOUT(l, t),
                 rejectWithError: !0,
                 signal: r
             });
-            d.h.dispatch({
+            n.h.dispatch({
                 type: "CMS_LAYOUT_FETCH_SUCCESS",
-                tenantId: t,
-                layout: u(e.body)
+                tenantId: l,
+                layout: s(e.body)
             })
         } catch (r) {
-            let e = new c.LG(r);
-            throw d.h.dispatch({
+            let e = new a.LG(r);
+            throw n.h.dispatch({
                 type: "CMS_LAYOUT_FETCH_FAILURE",
-                tenantId: t,
-                layoutId: l,
+                tenantId: l,
+                layoutId: t,
                 apiError: e
             }), e
         }
     }, h = async e => {
         let {
-            tenantId: t,
-            templateId: l,
+            tenantId: l,
+            templateId: t,
             abortSignal: r,
-            requestParams: s
+            requestParams: c
         } = e;
-        if (!n.A.isFetchingTemplate(t, l)) try {
-            d.h.dispatch({
+        if (!i.A.isFetchingTemplate(l, t)) try {
+            n.h.dispatch({
                 type: "CMS_TEMPLATE_FETCH",
-                tenantId: t,
-                templateId: l
+                tenantId: l,
+                templateId: t
             });
-            let e = await a.Bo.get({
-                url: o.Rsh.CMS_TEMPLATE(t, l),
+            let e = await o.Bo.get({
+                url: d.Rsh.CMS_TEMPLATE(l, t),
                 rejectWithError: !0,
                 signal: r,
-                query: s
+                query: c
             });
-            d.h.dispatch({
+            n.h.dispatch({
                 type: "CMS_TEMPLATE_FETCH_SUCCESS",
-                tenantId: t,
-                templateId: l,
-                layout: u(e.body)
+                tenantId: l,
+                templateId: t,
+                layout: s(e.body)
             })
         } catch (r) {
-            let e = new c.LG(r);
-            throw d.h.dispatch({
+            let e = new a.LG(r);
+            throw n.h.dispatch({
                 type: "CMS_TEMPLATE_FETCH_FAILURE",
-                tenantId: t,
-                templateId: l,
+                tenantId: l,
+                templateId: t,
                 apiError: e
             }), e
         }

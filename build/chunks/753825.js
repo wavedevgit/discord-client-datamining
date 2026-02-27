@@ -1,26 +1,26 @@
-/** chunk id: 753825, original params: e,t,l (module,exports,require) **/
+/** chunk id: 753825, original params: e,t,a (module,exports,require) **/
 "use strict";
-l.d(t, {
-    A: () => i
+a.d(t, {
+    A: () => s
 });
-var r = l(627968),
-    a = l(397927),
-    n = l(709710);
-let i = e => {
+var l = a(627968),
+    r = a(397927),
+    n = a(709710);
+let s = e => {
     let {
         backgroundImage: t,
-        href: l,
-        ctaText: i
+        href: a,
+        ctaText: s
     } = e;
-    return (0, r.jsx)("div", {
+    return (0, l.jsx)("div", {
         className: n.q,
         style: {
             backgroundImage: `url(${t})`
         },
-        children: (0, r.jsx)(a.Text, {
+        children: (0, l.jsx)(r.Text, {
             variant: "text-lg/bold",
             color: "always-white",
-            children: i
+            children: s
         })
     })
 }

@@ -1,29 +1,29 @@
-/** chunk id: 506273, original params: e,t,l (module,exports,require) **/
+/** chunk id: 506273, original params: e,t,a (module,exports,require) **/
 "use strict";
-l.d(t, {
+a.d(t, {
     P: () => n
 });
-var r = l(627968);
-l(64700);
-var a = l(930948);
+var l = a(627968);
+a(64700);
+var r = a(930948);
 let n = {
     name: "StorefrontProductCard",
     id: "storefront-product-card",
     component: e => {
         let {
-            skuId: t
+            productId: t
         } = e;
-        return (0, r.jsx)("div", {
-            children: (0, r.jsx)(a.A, {
-                skuId: t
+        return (0, l.jsx)("div", {
+            children: (0, l.jsx)(r.A, {
+                productId: t
             })
         })
     },
     controls: {
-        skuId: {
-            label: "SKU Id",
+        productId: {
+            label: "Product ID",
             type: "text",
-            defaultValue: "1458472704192811088"
+            defaultValue: "1466978489608441989"
         }
     }
 }

@@ -1,11 +1,11 @@
-/** chunk id: 556810, original params: e,t,l (module,exports,require) **/
+/** chunk id: 556810, original params: e,t,a (module,exports,require) **/
 "use strict";
-l.d(t, {
+a.d(t, {
     l: () => n
 });
-var r = l(627968);
-l(64700);
-var a = l(954644);
+var l = a(627968);
+a(64700);
+var r = a(954644);
 let n = {
     name: "ShopProductCard",
     id: "shopProduct-card",
@@ -13,8 +13,8 @@ let n = {
         let {
             skuId: t
         } = e;
-        return (0, r.jsx)("div", {
-            children: (0, r.jsx)(a.A, {
+        return (0, l.jsx)("div", {
+            children: (0, l.jsx)(r.A, {
                 skuId: t
             })
         })

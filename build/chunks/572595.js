@@ -1,15 +1,15 @@
-/** chunk id: 572595, original params: e,t,l (module,exports,require) **/
+/** chunk id: 572595, original params: e,t,a (module,exports,require) **/
 "use strict";
-l.d(t, {
+a.d(t, {
     M: () => d,
     t: () => o
 });
-var r = l(627968);
-l(64700);
-var a = l(397927),
-    n = l(4227),
-    i = l(466459);
-let s = "collectibles shop product details modal",
+var l = a(627968);
+a(64700);
+var r = a(397927),
+    n = a(4227),
+    s = a(466459);
+let i = "collectibles shop product details modal",
     o = e => {
         let {
             product: t,
@@ -17,32 +17,32 @@ let s = "collectibles shop product details modal",
             shouldCheckoutWithOrbs: d,
             analyticsSource: c,
             analyticsLocations: u,
-            returnRef: h,
-            tab: m
+            returnRef: x,
+            tab: h
         } = e;
         if (t.isCategoryReward) {
             let {
                 isPurchased: e
-            } = (0, i.o)(n.A, t);
+            } = (0, s.o)(n.A, t);
             if (!e) return
-        }(0, a.mMO)(async () => {
+        }(0, r.mMO)(async () => {
             let {
                 default: e
-            } = await Promise.all([l.e("8555"), l.e("28936"), l.e("68859"), l.e("40396"), l.e("13088"), l.e("48330"), l.e("92414"), l.e("94857"), l.e("48840"), l.e("49559"), l.e("37372"), l.e("99970"), l.e("95095"), l.e("41595"), l.e("93612"), l.e("16289")]).then(l.bind(l, 929400));
-            return l => (0, r.jsx)(e, {
-                ...l,
+            } = await Promise.all([a.e("8555"), a.e("28936"), a.e("68859"), a.e("40396"), a.e("13088"), a.e("48330"), a.e("92414"), a.e("94857"), a.e("48840"), a.e("49559"), a.e("37372"), a.e("99970"), a.e("95095"), a.e("41595"), a.e("93612"), a.e("16289")]).then(a.bind(a, 929400));
+            return a => (0, l.jsx)(e, {
+                ...a,
                 product: t,
                 category: o,
                 shouldCheckoutWithOrbs: d,
                 analyticsSource: c,
                 analyticsLocations: u,
-                returnRef: h,
-                tab: m
+                returnRef: x,
+                tab: h
             })
         }, {
-            modalKey: s
+            modalKey: i
         })
     },
     d = () => {
-        (0, a.OoC)(s)
+        (0, r.OoC)(i)
     }

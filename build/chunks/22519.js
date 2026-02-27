@@ -1,28 +1,28 @@
-/** chunk id: 22519, original params: e,t,l (module,exports,require) **/
-l.d(t, {
-    A: () => c
+/** chunk id: 22519, original params: e,l,t (module,exports,require) **/
+t.d(l, {
+    A: () => a
 });
-var r = l(627968),
-    a = l(856535),
-    d = l(785330);
-let c = e => {
+var r = t(627968),
+    o = t(856535),
+    n = t(785330);
+let a = e => {
     let {
-        layoutId: t,
-        tenantId: l,
-        skeleton: c,
-        componentMap: n
+        layoutId: l,
+        tenantId: t,
+        skeleton: a,
+        componentMap: i
     } = e, {
-        layout: o,
-        loading: s
-    } = (0, a.A)(l, t);
-    return s && null != c ? (0, r.jsx)(d.Ay, {
-        overrides: n,
+        layout: d,
+        loading: c
+    } = (0, o.A)(t, l);
+    return c && null != a ? (0, r.jsx)(n.Ay, {
+        overrides: i,
         layout: {
             id: "skeleton",
-            children: c
+            children: a
         }
-    }) : null == o ? null : (0, r.jsx)(d.Ay, {
-        layout: o,
-        overrides: n
+    }) : null == d ? null : (0, r.jsx)(n.Ay, {
+        layout: d,
+        overrides: i
     })
 }

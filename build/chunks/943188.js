@@ -1,84 +1,84 @@
-/** chunk id: 943188, original params: e,t,l (module,exports,require) **/
+/** chunk id: 943188, original params: e,t,a (module,exports,require) **/
 "use strict";
-l.d(t, {
-    d: () => s
+a.d(t, {
+    d: () => i
 });
-var r = l(627968);
-l(64700);
-var a = l(397927),
-    n = l(673277);
-let i = () => (0, r.jsx)("div", {
+var l = a(627968);
+a(64700);
+var r = a(397927),
+    n = a(673277);
+let s = () => (0, l.jsx)("div", {
         style: {
             background: "rgba(255, 255, 255, 0.6)",
             height: 120
         }
     }),
-    s = {
+    i = {
         name: "Section",
         id: "section",
         component: e => {
             let {
                 verticalMargin: t,
-                padding: l
+                padding: a
             } = e;
-            return (0, r.jsxs)(r.Fragment, {
-                children: [(0, r.jsx)(a.Text, {
+            return (0, l.jsxs)(l.Fragment, {
+                children: [(0, l.jsx)(r.Text, {
                     variant: "text-lg/semibold",
                     children: "Section is used to space out sections of the page. It takes a vertical margin to apply margin above and below, as well as padding to inset its children."
-                }), (0, r.jsxs)("div", {
-                    children: [(0, r.jsx)("div", {
+                }), (0, l.jsxs)("div", {
+                    children: [(0, l.jsx)("div", {
                         style: {
                             background: "red"
                         },
-                        children: (0, r.jsx)(n.A, {
+                        children: (0, l.jsx)(n.A, {
                             verticalMargin: t,
-                            padding: l,
-                            children: (0, r.jsx)(i, {})
+                            padding: a,
+                            children: (0, l.jsx)(s, {})
                         })
-                    }), (0, r.jsx)("div", {
+                    }), (0, l.jsx)("div", {
                         style: {
                             background: "orange"
                         },
-                        children: (0, r.jsx)(n.A, {
+                        children: (0, l.jsx)(n.A, {
                             verticalMargin: t,
-                            padding: l,
-                            children: (0, r.jsx)(i, {})
+                            padding: a,
+                            children: (0, l.jsx)(s, {})
                         })
-                    }), (0, r.jsx)("div", {
+                    }), (0, l.jsx)("div", {
                         style: {
                             background: "yellow"
                         },
-                        children: (0, r.jsx)(n.A, {
+                        children: (0, l.jsx)(n.A, {
                             verticalMargin: t,
-                            padding: l,
-                            children: (0, r.jsx)(i, {})
+                            padding: a,
+                            children: (0, l.jsx)(s, {})
                         })
-                    }), (0, r.jsx)("div", {
+                    }), (0, l.jsx)("div", {
                         style: {
                             background: "green"
                         },
-                        children: (0, r.jsx)(n.A, {
+                        children: (0, l.jsx)(n.A, {
                             verticalMargin: t,
-                            padding: l,
-                            children: (0, r.jsx)(i, {})
+                            padding: a,
+                            children: (0, l.jsx)(s, {})
                         })
-                    }), (0, r.jsx)("div", {
+                    }), (0, l.jsx)("div", {
                         style: {
                             background: "blue"
                         },
-                        children: (0, r.jsx)(n.A, {
+                        children: (0, l.jsx)(n.A, {
                             verticalMargin: t,
-                            padding: l,
-                            children: (0, r.jsx)(i, {})
+                            padding: a,
+                            children: (0, l.jsx)(s, {})
                         })
-                    }), (0, r.jsx)("div", {
+                    }), (0, l.jsx)("div", {
                         style: {
                             background: "violet"
                         },
-                        children: (0, r.jsx)(n.A, {
+                        children: (0, l.jsx)(n.A, {
                             verticalMargin: t,
-                            padding: l,
-                            children: (0, r.jsx)(i, {})
+                            padding: a,
+                            children: (0, l.jsx)(s, {})
                         })
                     })]
                 })]

@@ -1,24 +1,24 @@
-/** chunk id: 136301, original params: e,t,l (module,exports,require) **/
+/** chunk id: 136301, original params: e,t,a (module,exports,require) **/
 "use strict";
-l.d(t, {
-    o: () => s
+a.d(t, {
+    o: () => i
 });
-var r = l(627968),
-    a = l(397927),
-    n = l(673277),
-    i = l(634791);
-let s = {
+var l = a(627968),
+    r = a(397927),
+    n = a(673277),
+    s = a(634791);
+let i = {
     name: "The Any Block",
     id: "any",
-    component: () => (0, r.jsxs)("div", {
-        children: [(0, r.jsx)(a.Text, {
+    component: () => (0, l.jsxs)("div", {
+        children: [(0, l.jsx)(r.Text, {
             variant: "text-md/semibold",
             children: "The Any component is used to allow injecting super-bespoke components into a layout without defining a new block type."
-        }), (0, r.jsx)(a.Text, {
+        }), (0, l.jsx)(r.Text, {
             variant: "text-md/semibold",
             children: "It's ONLY use is to be overriden by another block in `useComponentRegistry`"
-        }), (0, r.jsx)(n.A, {
-            children: (0, r.jsx)(i.A, {})
+        }), (0, l.jsx)(n.A, {
+            children: (0, l.jsx)(s.A, {})
         })]
     }),
     controls: {}

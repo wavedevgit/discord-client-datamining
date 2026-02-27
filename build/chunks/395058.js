@@ -1,22 +1,22 @@
-/** chunk id: 395058, original params: e,t,l (module,exports,require) **/
+/** chunk id: 395058, original params: e,t,a (module,exports,require) **/
 "use strict";
-l.r(t), l.d(t, {
+a.r(t), a.d(t, {
     cmsCollection: () => u,
-    cmsConfig: () => h
+    cmsConfig: () => x
 });
-var r = l(814904),
-    a = l(363040),
-    n = l(799200),
-    i = l(920324),
-    s = l(876333),
-    o = l(653006),
-    d = l(251301),
-    c = l(436174);
+var l = a(814904),
+    r = a(363040),
+    n = a(799200),
+    s = a(920324),
+    i = a(876333),
+    o = a(653006),
+    d = a(251301),
+    c = a(436174);
 let u = {
         id: "cms",
         name: "CMS",
-        groups: [i.t, s.F, a.z, n.U, r.D, o.K, d.j, c.Y]
+        groups: [s.t, i.F, r.z, n.U, l.D, o.K, d.j, c.Y]
     },
-    h = {
+    x = {
         collections: [u]
     }

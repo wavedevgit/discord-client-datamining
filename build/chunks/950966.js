@@ -1,95 +1,95 @@
-/** chunk id: 950966, original params: e,t,l (module,exports,require) **/
+/** chunk id: 950966, original params: e,t,a (module,exports,require) **/
 "use strict";
-l.d(t, {
-    Z: () => s
+a.d(t, {
+    Z: () => i
 });
-var r = l(627968);
-l(64700);
-var a = l(397927),
-    n = l(264302);
-let i = e => {
+var l = a(627968);
+a(64700);
+var r = a(397927),
+    n = a(264302);
+let s = e => {
         let {
             color: t,
-            children: l
+            children: a
         } = e;
-        return (0, r.jsx)(a.ZpM, {
+        return (0, l.jsx)(r.ZpM, {
             style: {
                 backgroundColor: t,
                 padding: "16px",
                 minWidth: "100px",
                 minHeight: "100px"
             },
-            children: (0, r.jsx)(a.Text, {
+            children: (0, l.jsx)(r.Text, {
                 variant: "text-md/semibold",
-                children: l
+                children: a
             })
         })
     },
-    s = {
+    i = {
         name: "Stack",
         id: "cms-stack",
-        component: e => (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsx)(a.Text, {
+        component: e => (0, l.jsxs)(l.Fragment, {
+            children: [(0, l.jsx)(r.Text, {
                 variant: "text-lg/semibold",
                 children: "Stack component for CMS layouts."
-            }), (0, r.jsx)("div", {
+            }), (0, l.jsx)("div", {
                 style: {
                     border: "1px dashed #ccc",
                     padding: "16px"
                 },
-                children: (0, r.jsxs)(n.A, {
+                children: (0, l.jsxs)(n.A, {
                     ...e,
-                    children: [(0, r.jsx)(i, {
+                    children: [(0, l.jsx)(s, {
                         color: "#5865F2",
                         children: "Item 1"
-                    }), (0, r.jsx)(i, {
+                    }), (0, l.jsx)(s, {
                         color: "#57F287",
                         children: "Item 2"
-                    }), (0, r.jsx)(i, {
+                    }), (0, l.jsx)(s, {
                         color: "#FEE75C",
                         children: "Item 3"
                     })]
                 })
-            }), (0, r.jsx)("hr", {}), (0, r.jsx)(a.Text, {
+            }), (0, l.jsx)("hr", {}), (0, l.jsx)(r.Text, {
                 variant: "text-md/semibold",
                 children: "Horizontal Stack"
-            }), (0, r.jsx)("div", {
+            }), (0, l.jsx)("div", {
                 style: {
                     border: "1px dashed #ccc",
                     padding: "16px"
                 },
-                children: (0, r.jsxs)(n.A, {
+                children: (0, l.jsxs)(n.A, {
                     ...e,
                     direction: "horizontal",
-                    children: [(0, r.jsx)(i, {
+                    children: [(0, l.jsx)(s, {
                         color: "#5865F2",
                         children: "Item 1"
-                    }), (0, r.jsx)(i, {
+                    }), (0, l.jsx)(s, {
                         color: "#57F287",
                         children: "Item 2"
-                    }), (0, r.jsx)(i, {
+                    }), (0, l.jsx)(s, {
                         color: "#FEE75C",
                         children: "Item 3"
                     })]
                 })
-            }), (0, r.jsx)(a.Text, {
+            }), (0, l.jsx)(r.Text, {
                 variant: "text-md/semibold",
                 children: "Vertical Stack"
-            }), (0, r.jsx)("div", {
+            }), (0, l.jsx)("div", {
                 style: {
                     border: "1px dashed #ccc",
                     padding: "16px"
                 },
-                children: (0, r.jsxs)(n.A, {
+                children: (0, l.jsxs)(n.A, {
                     ...e,
                     direction: "vertical",
-                    children: [(0, r.jsx)(i, {
+                    children: [(0, l.jsx)(s, {
                         color: "#5865F2",
                         children: "Item 1"
-                    }), (0, r.jsx)(i, {
+                    }), (0, l.jsx)(s, {
                         color: "#57F287",
                         children: "Item 2"
-                    }), (0, r.jsx)(i, {
+                    }), (0, l.jsx)(s, {
                         color: "#FEE75C",
                         children: "Item 3"
                     })]

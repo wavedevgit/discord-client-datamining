@@ -1,13 +1,13 @@
-/** chunk id: 41770, original params: e,t,l (module,exports,require) **/
-l.d(t, {
+/** chunk id: 41770, original params: e,l,t (module,exports,require) **/
+t.d(l, {
     C8: () => r,
-    Ej: () => n,
-    Ot: () => d,
-    oP: () => c,
-    uG: () => a
+    Ej: () => i,
+    Ot: () => n,
+    oP: () => a,
+    uG: () => o
 });
 let r = "dummy-tenant",
-    a = {
+    o = {
         id: "dummy-shop-home",
         children: [{
             block: "ContainedHero",
@@ -55,7 +55,7 @@ let r = "dummy-tenant",
             templateId: "dummy-popular-picks"
         }]
     },
-    d = {
+    n = {
         id: "dummy-popular-picks",
         children: [{
             block: "Section",
@@ -177,7 +177,7 @@ let r = "dummy-tenant",
             }]
         }]
     },
-    c = {
+    a = {
         id: "dummy-orb-shelf",
         children: [{
             block: "Section",
@@ -220,7 +220,7 @@ let r = "dummy-tenant",
             }]
         }]
     },
-    n = {
+    i = {
         id: "dummy-sku-list",
         children: [{
             block: "SkuList",

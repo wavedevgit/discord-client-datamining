@@ -1,19 +1,19 @@
-/** chunk id: 792849, original params: e,t,l (module,exports,require) **/
+/** chunk id: 792849, original params: e,t,a (module,exports,require) **/
 "use strict";
-l.d(t, {
+a.d(t, {
     g: () => o
 });
-var r = l(627968);
-l(64700);
-var a = l(397927),
-    n = l(261225),
-    i = l(970488);
-let s = e => {
+var l = a(627968);
+a(64700);
+var r = a(397927),
+    n = a(261225),
+    s = a(970488);
+let i = e => {
         let {
             color: t,
-            children: l
+            children: a
         } = e;
-        return (0, r.jsx)("div", {
+        return (0, l.jsx)("div", {
             style: {
                 background: t,
                 minHeight: 120,
@@ -25,7 +25,7 @@ let s = e => {
                 color: "white",
                 fontWeight: "bold"
             },
-            children: l
+            children: a
         })
     },
     o = {
@@ -34,83 +34,83 @@ let s = e => {
         component: e => {
             let {
                 columns: t,
-                perPage: l,
+                perPage: a,
                 paginationPosition: o,
                 gridItemColumns: d,
                 gridItemRows: c
             } = e;
-            return (0, r.jsxs)(r.Fragment, {
-                children: [(0, r.jsx)(a.Text, {
+            return (0, l.jsxs)(l.Fragment, {
+                children: [(0, l.jsx)(r.Text, {
                     variant: "text-lg/semibold",
                     children: "Grid is used to create a responsive grid layout. It takes a columns prop to define the number of columns (1-6). The grid automatically becomes responsive on smaller screens."
-                }), (0, r.jsx)("br", {}), (0, r.jsx)(a.Text, {
+                }), (0, l.jsx)("br", {}), (0, l.jsx)(r.Text, {
                     variant: "text-lg/semibold",
                     children: "GridItem is (optionally) used to set the size of a grid itme in the grid."
-                }), (0, r.jsx)("div", {
+                }), (0, l.jsx)("div", {
                     style: {
                         marginTop: 24
                     },
-                    children: (0, r.jsxs)(n.A, {
-                        perPage: l,
+                    children: (0, l.jsxs)(n.A, {
+                        perPage: a,
                         columns: t,
                         paginationPosition: o,
-                        children: [(0, r.jsx)(s, {
+                        children: [(0, l.jsx)(i, {
                             color: "red"
-                        }), (0, r.jsx)(i.A, {
+                        }), (0, l.jsx)(s.A, {
                             columns: d,
                             rows: c,
-                            children: (0, r.jsx)(s, {
+                            children: (0, l.jsx)(i, {
                                 color: "orange",
-                                children: (0, r.jsx)(a.Text, {
+                                children: (0, l.jsx)(r.Text, {
                                     variant: "text-lg/semibold",
                                     children: "GridItem"
                                 })
                             })
-                        }), (0, r.jsx)(s, {
+                        }), (0, l.jsx)(i, {
                             color: "yellow"
-                        }), (0, r.jsx)(s, {
+                        }), (0, l.jsx)(i, {
                             color: "green"
-                        }), (0, r.jsx)(s, {
+                        }), (0, l.jsx)(i, {
                             color: "blue"
-                        }), (0, r.jsx)(s, {
+                        }), (0, l.jsx)(i, {
                             color: "violet"
-                        }), (0, r.jsx)(s, {
+                        }), (0, l.jsx)(i, {
                             color: "red"
-                        }), (0, r.jsx)(s, {
+                        }), (0, l.jsx)(i, {
                             color: "orange"
-                        }), (0, r.jsx)(s, {
+                        }), (0, l.jsx)(i, {
                             color: "yellow"
-                        }), (0, r.jsx)(s, {
+                        }), (0, l.jsx)(i, {
                             color: "green"
-                        }), (0, r.jsx)(s, {
+                        }), (0, l.jsx)(i, {
                             color: "blue"
-                        }), (0, r.jsx)(s, {
+                        }), (0, l.jsx)(i, {
                             color: "violet"
-                        }), (0, r.jsx)(s, {
+                        }), (0, l.jsx)(i, {
                             color: "red"
-                        }), (0, r.jsx)(s, {
+                        }), (0, l.jsx)(i, {
                             color: "orange"
-                        }), (0, r.jsx)(s, {
+                        }), (0, l.jsx)(i, {
                             color: "yellow"
-                        }), (0, r.jsx)(s, {
+                        }), (0, l.jsx)(i, {
                             color: "green"
-                        }), (0, r.jsx)(s, {
+                        }), (0, l.jsx)(i, {
                             color: "blue"
-                        }), (0, r.jsx)(s, {
+                        }), (0, l.jsx)(i, {
                             color: "violet"
-                        }), (0, r.jsx)(s, {
+                        }), (0, l.jsx)(i, {
                             color: "red"
-                        }), (0, r.jsx)(s, {
+                        }), (0, l.jsx)(i, {
                             color: "orange"
-                        }), (0, r.jsx)(s, {
+                        }), (0, l.jsx)(i, {
                             color: "yellow"
-                        }), (0, r.jsx)(s, {
+                        }), (0, l.jsx)(i, {
                             color: "green"
-                        }), (0, r.jsx)(s, {
+                        }), (0, l.jsx)(i, {
                             color: "blue"
-                        }), (0, r.jsx)(s, {
+                        }), (0, l.jsx)(i, {
                             color: "violet",
-                            children: (0, r.jsx)(a.Text, {
+                            children: (0, l.jsx)(r.Text, {
                                 variant: "text-lg/semibold",
                                 children: "Last Child"
                             })

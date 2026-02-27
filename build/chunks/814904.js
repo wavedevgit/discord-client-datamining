@@ -1,13 +1,13 @@
-/** chunk id: 814904, original params: e,t,l (module,exports,require) **/
+/** chunk id: 814904, original params: e,t,a (module,exports,require) **/
 "use strict";
-l.d(t, {
-    D: () => s
+a.d(t, {
+    D: () => i
 });
-var r = l(627968);
-l(64700);
-var a = l(720462),
-    n = l(528226);
-let i = () => (0, r.jsx)("div", {
+var l = a(627968);
+a(64700);
+var r = a(720462),
+    n = a(528226);
+let s = () => (0, l.jsx)("div", {
         style: {
             height: 250,
             width: 250,
@@ -15,7 +15,7 @@ let i = () => (0, r.jsx)("div", {
             borderRadius: 6
         }
     }),
-    s = {
+    i = {
         title: "Contained Hero",
         stories: [{
             name: "ContainedHero",
@@ -23,17 +23,17 @@ let i = () => (0, r.jsx)("div", {
             component: e => {
                 let {
                     containerHeight: t,
-                    showChildren: l,
-                    ...s
+                    showChildren: a,
+                    ...i
                 } = e;
-                return (0, r.jsx)("div", {
+                return (0, l.jsx)("div", {
                     style: {
-                        height: l ? void 0 : t
+                        height: a ? void 0 : t
                     },
-                    children: (0, r.jsx)(n.A, {
-                        ...s,
-                        children: l ? (0, r.jsxs)(a.A, {
-                            children: [(0, r.jsx)(i, {}), (0, r.jsx)(i, {}), (0, r.jsx)(i, {}), (0, r.jsx)(i, {}), (0, r.jsx)(i, {}), (0, r.jsx)(i, {}), (0, r.jsx)(i, {}), (0, r.jsx)(i, {}), (0, r.jsx)(i, {}), (0, r.jsx)(i, {})]
+                    children: (0, l.jsx)(n.A, {
+                        ...i,
+                        children: a ? (0, l.jsxs)(r.A, {
+                            children: [(0, l.jsx)(s, {}), (0, l.jsx)(s, {}), (0, l.jsx)(s, {}), (0, l.jsx)(s, {}), (0, l.jsx)(s, {}), (0, l.jsx)(s, {}), (0, l.jsx)(s, {}), (0, l.jsx)(s, {}), (0, l.jsx)(s, {}), (0, l.jsx)(s, {})]
                         }) : null
                     })
                 })

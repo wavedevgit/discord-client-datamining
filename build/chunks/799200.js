@@ -1,12 +1,12 @@
-/** chunk id: 799200, original params: e,t,l (module,exports,require) **/
+/** chunk id: 799200, original params: e,t,a (module,exports,require) **/
 "use strict";
-l.d(t, {
-    U: () => i
+a.d(t, {
+    U: () => s
 });
-var r = l(221997),
-    a = l(480773),
-    n = l(966739);
-let i = {
+var l = a(221997),
+    r = a(480773),
+    n = a(966739);
+let s = {
     title: "Featured Blocks",
-    stories: [r.Q, a.u, n.V]
+    stories: [l.Q, r.u, n.V]
 }

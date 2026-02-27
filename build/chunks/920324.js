@@ -1,33 +1,33 @@
-/** chunk id: 920324, original params: e,t,l (module,exports,require) **/
+/** chunk id: 920324, original params: e,t,a (module,exports,require) **/
 "use strict";
-l.d(t, {
+a.d(t, {
     t: () => u
 });
-var r = l(627968),
-    a = l(64700),
-    n = l(179262),
-    i = l(561769),
-    s = l(41770),
-    o = l(148702),
-    d = l(785330),
-    c = l(652215);
+var l = a(627968),
+    r = a(64700),
+    n = a(179262),
+    s = a(561769),
+    i = a(41770),
+    o = a(148702),
+    d = a(785330),
+    c = a(652215);
 let u = {
     title: "Layout Builder",
     stories: [{
         name: "Layout Builder",
         id: "layout-builder",
         component: () => {
-            let [e, t] = a.useState(JSON.stringify(s.uG, null, 2)), [l, n] = a.useState(e);
-            return a.useEffect(() => {
+            let [e, t] = r.useState(JSON.stringify(i.uG, null, 2)), [a, n] = r.useState(e);
+            return r.useEffect(() => {
                 try {
                     (0, d.F2)(JSON.parse(e)) && n(e)
                 } catch {}
-            }, [e]), (0, r.jsxs)("div", {
-                children: [(0, r.jsx)(o.A, {
+            }, [e]), (0, l.jsxs)("div", {
+                children: [(0, l.jsx)(o.A, {
                     value: e,
                     onChange: e => t(e)
-                }), (0, r.jsx)("hr", {}), (0, r.jsx)(d.Ay, {
-                    layout: JSON.parse(l)
+                }), (0, l.jsx)("hr", {}), (0, l.jsx)(d.Ay, {
+                    layout: JSON.parse(a)
                 })]
             })
         },
@@ -39,20 +39,20 @@ let u = {
             let {
                 collectionId: t
             } = e, {
-                collection: l,
-                isFetching: i
+                collection: a,
+                isFetching: s
             } = (0, n.A)({
                 collectionId: t,
                 includePricing: !0
-            }), s = a.useMemo(() => {
-                let e = l?.styles?.backgroundColors?.[0];
+            }), i = r.useMemo(() => {
+                let e = a?.styles?.backgroundColors?.[0];
                 return {
                     id: "shop-index-page",
                     children: [{
                         block: "Section",
                         children: [{
                             block: "ContainedHero",
-                            bannerSrc: l?.catalogBannerUrl ?? "",
+                            bannerSrc: a?.catalogBannerUrl ?? "",
                             backgroundColor: e?.toHexString() ?? "red"
                         }]
                     }, {
@@ -60,18 +60,18 @@ let u = {
                         children: [{
                             block: "Grid",
                             columns: 3,
-                            children: l?.products.map(e => ({
+                            children: a?.products.map(e => ({
                                 block: "ShopProductCard",
                                 skuId: e.skuIds[0]
                             })) ?? []
                         }]
                     }]
                 }
-            }, [l?.styles?.backgroundColors, l?.catalogBannerUrl, l?.products]);
-            return i ? (0, r.jsx)("div", {
+            }, [a?.styles?.backgroundColors, a?.catalogBannerUrl, a?.products]);
+            return s ? (0, l.jsx)("div", {
                 children: "Loading..."
-            }) : (0, r.jsx)(d.Ay, {
-                layout: s
+            }) : (0, l.jsx)(d.Ay, {
+                layout: i
             })
         },
         controls: {
@@ -146,11 +146,11 @@ let u = {
                     }]
                 }]
             };
-            return (0, r.jsxs)("div", {
+            return (0, l.jsxs)("div", {
                 style: {
                     position: "relative"
                 },
-                children: [(0, r.jsx)("div", {
+                children: [(0, l.jsx)("div", {
                     style: {
                         position: "absolute",
                         width: "100%",
@@ -163,15 +163,15 @@ let u = {
                         backgroundSize: "contain",
                         backgroundRepeat: "no-repeat"
                     }
-                }), (0, r.jsx)(i.v3.Provider, {
+                }), (0, l.jsx)(s.v3.Provider, {
                     value: {
-                        prioritizedCurrency: i.Hi.ORBS
+                        prioritizedCurrency: s.Hi.ORBS
                     },
-                    children: (0, r.jsx)("div", {
+                    children: (0, l.jsx)("div", {
                         style: {
                             position: "relative"
                         },
-                        children: (0, r.jsx)(d.Ay, {
+                        children: (0, l.jsx)(d.Ay, {
                             layout: e
                         })
                     })
@@ -185,11 +185,11 @@ let u = {
         component: e => {
             let {
                 layoutId: t,
-                tenantId: l
+                tenantId: a
             } = e;
-            return (0, r.jsx)(d.Qs, {
+            return (0, l.jsx)(d.Qs, {
                 layoutId: t,
-                tenantId: l
+                tenantId: a
             })
         },
         controls: {
@@ -210,11 +210,11 @@ let u = {
         component: e => {
             let {
                 templateId: t,
-                tenantId: l
+                tenantId: a
             } = e;
-            return (0, r.jsx)(d.Z_, {
+            return (0, l.jsx)(d.Z_, {
                 templateId: t,
-                tenantId: l
+                tenantId: a
             })
         },
         controls: {

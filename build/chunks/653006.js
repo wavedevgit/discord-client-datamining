@@ -1,11 +1,11 @@
-/** chunk id: 653006, original params: e,t,l (module,exports,require) **/
+/** chunk id: 653006, original params: e,t,a (module,exports,require) **/
 "use strict";
-l.d(t, {
+a.d(t, {
     K: () => n
 });
-var r = l(214033),
-    a = l(715185);
+var l = a(214033),
+    r = a(715185);
 let n = {
     title: "Recursive",
-    stories: [r.t, a.M, a.H]
+    stories: [l.t, r.M, r.H]
 }

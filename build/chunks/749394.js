@@ -1,13 +1,12 @@
-/** chunk id: 749394, original params: e,t,l (module,exports,require) **/
-"use strict";
-l.d(t, {
-    A: () => s
+/** chunk id: 749394, original params: e,l,t (module,exports,require) **/
+t.d(l, {
+    A: () => i
 });
-var r = l(440745),
-    a = l.n(r),
-    n = l(317097),
-    i = l(315069);
-class s extends i.A {
+var r = t(440745),
+    o = t.n(r),
+    n = t(317097),
+    a = t(315069);
+class i extends a.A {
     backgroundColors;
     buttonColors;
     confettiColors;
@@ -16,14 +15,14 @@ class s extends i.A {
     }
     static fromServer(e) {
         let {
-            background_colors: t,
-            button_colors: l,
+            background_colors: l,
+            button_colors: t,
             confetti_colors: r
         } = e;
-        return new s({
-            backgroundColors: t.map(e => a()((0, n.Hl)(e))),
-            buttonColors: l.map(e => a()((0, n.Hl)(e))),
-            confettiColors: r.map(e => a()((0, n.Hl)(e)))
+        return new i({
+            backgroundColors: l.map(e => o()((0, n.Hl)(e))),
+            buttonColors: t.map(e => o()((0, n.Hl)(e))),
+            confettiColors: r.map(e => o()((0, n.Hl)(e)))
         })
     }
 }
