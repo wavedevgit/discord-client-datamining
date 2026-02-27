@@ -1,6 +1,6 @@
 /** chunk id: 904854, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => E
+    A: () => f
 });
 var i = n(627968),
     l = n(64700),
@@ -14,12 +14,12 @@ var i = n(627968),
     m = n(447215),
     _ = n(888675),
     A = n(502197),
-    h = n(985018),
-    f = n(443300);
+    E = n(985018),
+    h = n(443300);
 
-function E(e) {
+function f(e) {
     var t;
-    let n, E, g, p, x, C, {
+    let n, f, g, p, x, C, {
             message: I,
             channel: T,
             compact: N
@@ -33,7 +33,7 @@ function E(e) {
             channelId: T.id,
             guildId: T.guild_id,
             messageId: I.id
-        }), E = (0, m.P)({
+        }), f = (0, m.P)({
             user: M[0],
             channelId: T.id,
             guildId: T.guild_id,
@@ -43,15 +43,15 @@ function E(e) {
             channelId: T.id,
             guildId: T.guild_id,
             messageId: I.id
-        }), p = (0, u.Ay)(I), x = (0, u.d8)(M[0], T), C = (0, u.d8)(M[1], T), null == S ? h.intl.format(h.t["eX6e/3"], {
+        }), p = (0, u.Ay)(I), x = (0, u.d8)(M[0], T), C = (0, u.d8)(M[1], T), null == S ? E.intl.format(E.t["eX6e/3"], {
             username: p.nick,
             usernameHook: n(p)
-        }) : h.intl.format(h.t.YUbgR8, {
+        }) : E.intl.format(E.t.YUbgR8, {
             userCount: M.length + 1,
             username: p.nick,
             usernameHook: n(p),
             username2: x.nick,
-            username2Hook: E(x),
+            username2Hook: f(x),
             username3: C.nick,
             username3Hook: g(C),
             otherCount: M.length - 1,
@@ -62,7 +62,7 @@ function E(e) {
             size: "md",
             color: s.LU0.colors.STATUS_POSITIVE
         }),
-        iconContainerClassName: f.z,
+        iconContainerClassName: h.z,
         timestamp: I.timestamp,
         compact: N,
         children: j

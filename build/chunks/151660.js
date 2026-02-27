@@ -14,9 +14,9 @@ var i = n(627968),
     m = n(148355),
     _ = n(954571),
     A = n(203982),
-    h = n(420208),
-    f = n(652215),
-    E = n(985018),
+    E = n(420208),
+    h = n(652215),
+    f = n(985018),
     g = n(173990);
 
 function p(e) {
@@ -45,21 +45,21 @@ function p(e) {
                     className: r()({
                         [g.o]: p
                     }),
-                    children: "" !== t.content ? t.content : E.intl.string(E.t.wnn1Dc)
+                    children: "" !== t.content ? t.content : f.intl.string(f.t.wnn1Dc)
                 })
             })
         }), (0, i.jsxs)(o.ButtonGroup, {
             children: [(0, i.jsx)(o.Button, {
                 variant: "secondary",
-                text: E.intl.string(E.t.ASZTf3),
+                text: f.intl.string(f.t.ASZTf3),
                 icon: o.XGR,
                 onClick: () => {
-                    _.default.track(f.HAw.CHANNEL_PROMPT_ACTION_CLICKED, {
+                    _.default.track(h.HAw.CHANNEL_PROMPT_ACTION_CLICKED, {
                         message_id: t.id,
                         channel_id: a.id,
                         guild_id: a.guild_id,
                         action_type: "upload_file"
-                    }), A._.dispatch(f.jej.UPLOAD_FILE, {
+                    }), A._.dispatch(h.jej.UPLOAD_FILE, {
                         channelId: a.id
                     }), (0, d.Yf)({
                         message: t,
@@ -69,19 +69,19 @@ function p(e) {
                 }
             }), (0, i.jsx)(o.Button, {
                 variant: "secondary",
-                text: E.intl.string(E.t.gbrrAz),
+                text: f.intl.string(f.t.gbrrAz),
                 icon: null != C ? {
                     type: "sticker",
                     asset: C,
                     component: m.A
                 } : o.nm2,
                 onClick: () => {
-                    _.default.track(f.HAw.CHANNEL_PROMPT_ACTION_CLICKED, {
+                    _.default.track(h.HAw.CHANNEL_PROMPT_ACTION_CLICKED, {
                         message_id: t.id,
                         channel_id: a.id,
                         guild_id: a.guild_id,
                         action_type: "sticker"
-                    }), (0, h.Q)(t.id, a)
+                    }), (0, E.Q)(t.id, a)
                 }
             })]
         })]

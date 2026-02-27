@@ -1,10 +1,10 @@
 /** chunk id: 727949, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     GQ: () => A,
-    NF: () => E,
-    QG: () => f,
+    NF: () => f,
+    QG: () => h,
     Tp: () => p,
-    ZR: () => h,
+    ZR: () => E,
     ne: () => g
 });
 var i = n(311907),
@@ -29,11 +29,11 @@ function A(e) {
         numMinutes: Math.floor(60 * t)
     })
 }
-let h = () => (0, a.k8)(l.M.REFERRAL_PROGRAM_NITRO_TAB_BADGE),
-    f = () => {
+let E = () => (0, a.k8)(l.M.REFERRAL_PROGRAM_NITRO_TAB_BADGE),
+    h = () => {
         (0, a.Dr)(l.M.REFERRAL_PROGRAM_NITRO_TAB_BADGE)
     },
-    E = e => {
+    f = e => {
         let {
             trialOffer: t
         } = e;

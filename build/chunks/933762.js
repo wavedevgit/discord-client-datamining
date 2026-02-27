@@ -20,10 +20,10 @@ function u(e) {
         onClickThread: m,
         onClickViewThreads: _,
         onContextMenuThread: A
-    } = e, h = (0, s.Ay)(t), f = u(h), E = (0, l.bG)([r.A], () => r.A.getChannel(t.messageReference?.channel_id)), g = c.intl.format(c.t.cZ9Uf2, {
-        actorName: h.nick,
-        actorHook: f,
-        threadName: E?.name ?? t.content,
+    } = e, E = (0, s.Ay)(t), h = u(E), f = (0, l.bG)([r.A], () => r.A.getChannel(t.messageReference?.channel_id)), g = c.intl.format(c.t.cZ9Uf2, {
+        actorName: E.nick,
+        actorHook: h,
+        threadName: f?.name ?? t.content,
         threadOnClick: {
             onClick: m,
             onContextMenu: A

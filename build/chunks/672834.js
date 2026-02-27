@@ -14,9 +14,9 @@ var i = n(627968),
     m = n(151660),
     _ = n(626584),
     A = n(659859),
-    h = n(785823),
-    f = n(509536),
-    E = n(615179),
+    E = n(785823),
+    h = n(509536),
+    f = n(615179),
     g = n(120120),
     p = n(379114),
     x = n(698441),
@@ -68,9 +68,9 @@ var i = n(627968),
     em = n(541171),
     e_ = n(229673),
     eA = n(494086),
-    eh = n(734771),
-    ef = n(753073),
-    eE = n(640289),
+    eE = n(734771),
+    eh = n(753073),
+    ef = n(640289),
     eg = n(293657),
     ep = n(269802),
     ex = n(576471),
@@ -96,7 +96,7 @@ function ey(e) {
     } = t, {
         guild_id: o
     } = n, c = t.getChannelId(), d = (0, a.bG)([w.A], () => w.A.getGuild(o), [o]), u = l.useCallback(() => {
-        null != d && (0, f.K)({
+        null != d && (0, h.K)({
             guildId: d.id,
             location: {
                 section: ej.JJy.CHANNEL_TEXT_AREA,
@@ -199,14 +199,14 @@ let eD = Object.freeze({
                 targetUser: o,
                 actorUsernameHook: c,
                 targetUsernameHook: d
-            }) : null != o && o.id !== r.id ? (0, i.jsx)(eh.A, {
+            }) : null != o && o.id !== r.id ? (0, i.jsx)(eE.A, {
                 message: t,
                 channel: n,
                 compact: l,
                 usernameHook: c,
                 otherUser: o,
                 otherUsernameHook: d
-            }) : (0, i.jsx)(eh.A, {
+            }) : (0, i.jsx)(eE.A, {
                 message: t,
                 channel: n,
                 usernameHook: c
@@ -220,7 +220,7 @@ let eD = Object.freeze({
             } = e, {
                 id: s,
                 author: o
-            } = t, d = P.default.getId(), u = t.getChannelId(), m = (0, a.bG)([k.A], () => k.A.isCallActive(u, s), [u, s]), _ = (0, a.bG)([z.A], () => z.A.getVoiceState(ej.ME, d)), A = !m && null != t.call && !t.call.participants.includes(d), h = m && (null == _ || _.channelId !== u), f = l.useCallback(() => c.default.selectVoiceChannel(u), [u]), E = (0, $.P)({
+            } = t, d = P.default.getId(), u = t.getChannelId(), m = (0, a.bG)([k.A], () => k.A.isCallActive(u, s), [u, s]), _ = (0, a.bG)([z.A], () => z.A.getVoiceState(ej.ME, d)), A = !m && null != t.call && !t.call.participants.includes(d), E = m && (null == _ || _.channelId !== u), h = l.useCallback(() => c.default.selectVoiceChannel(u), [u]), f = (0, $.P)({
                 user: o,
                 channelId: u,
                 guildId: r.guild_id,
@@ -231,9 +231,9 @@ let eD = Object.freeze({
                 compact: n,
                 message: t,
                 missed: A,
-                joinable: h,
-                usernameHook: E,
-                onClickJoinCall: f
+                joinable: E,
+                usernameHook: f,
+                onClickJoinCall: h
             })
         },
         [ej.lAJ.CHANNEL_NAME_CHANGE]: function(e) {
@@ -359,12 +359,12 @@ let eD = Object.freeze({
                     id: o
                 },
                 messageReference: c
-            } = t, u = t.getChannelId(), m = (0, a.bG)([H.A], () => H.A.findActivity(o, e => e.type === ej.$pd.PLAYING), [o]), _ = (0, a.bG)([G.A], () => null != c ? G.A.getChannel(c.channel_id) : null, [c]), A = c?.guild_id, h = (0, $.P)({
+            } = t, u = t.getChannelId(), m = (0, a.bG)([H.A], () => H.A.findActivity(o, e => e.type === ej.$pd.PLAYING), [o]), _ = (0, a.bG)([G.A], () => null != c ? G.A.getChannel(c.channel_id) : null, [c]), A = c?.guild_id, E = (0, $.P)({
                 user: s,
                 channelId: u,
                 guildId: r.guild_id,
                 messageId: t.id
-            }), f = l.useCallback(() => {
+            }), h = l.useCallback(() => {
                 null != _ && null != A && (0, d.Nl)({
                     streamType: eO.U4.GUILD,
                     ownerId: o,
@@ -377,8 +377,8 @@ let eD = Object.freeze({
                 compact: n,
                 channel: _,
                 playingActivity: m,
-                onJoinStream: f,
-                usernameHook: h
+                onJoinStream: h,
+                usernameHook: E
             }) : null
         },
         [ej.lAJ.GUILD_DISCOVERY_DISQUALIFIED]: function(e) {
@@ -453,7 +453,7 @@ let eD = Object.freeze({
                 compact: n,
                 channel: l
             } = e;
-            return (0, h.ER)(t) ? (0, i.jsx)(ee.A, {
+            return (0, E.ER)(t) ? (0, i.jsx)(ee.A, {
                 message: t,
                 compact: n,
                 channel: l
@@ -543,7 +543,7 @@ let eD = Object.freeze({
                 guildId: n.guild_id,
                 messageId: t.id
             });
-            return (0, i.jsx)(ef.A, {
+            return (0, i.jsx)(eh.A, {
                 message: t,
                 compact: l,
                 usernameHook: a
@@ -578,7 +578,7 @@ let eD = Object.freeze({
                 messageId: t.id
             }), c = (0, a.bG)([F.A], () => F.A.can(ej.xBc.MUTE_MEMBERS, n)), d = (0, a.bG)([b.A], () => b.A.getParticipant(n.id, t.author.id)), u = new Date(Q.default.extractTimestamp(t.id)).toISOString() === new Date(d?.voiceState?.requestToSpeakTimestamp ?? 0).toISOString(), m = c && d?.rtsState === y.zF.REQUESTED_TO_SPEAK && u;
             return (0, i.jsxs)(i.Fragment, {
-                children: [(0, i.jsx)(eE.A, {
+                children: [(0, i.jsx)(ef.A, {
                     message: t,
                     compact: l,
                     usernameHook: s
@@ -686,9 +686,9 @@ let eD = Object.freeze({
                 compact: l
             })
         },
-        [ej.lAJ.GUILD_JOIN_REQUEST_ACCEPT_NOTIFICATION]: E.Z_,
-        [ej.lAJ.GUILD_JOIN_REQUEST_REJECT_NOTIFICATION]: E.QN,
-        [ej.lAJ.GUILD_JOIN_REQUEST_WITHDRAWN_NOTIFICATION]: E.ez,
+        [ej.lAJ.GUILD_JOIN_REQUEST_ACCEPT_NOTIFICATION]: f.Z_,
+        [ej.lAJ.GUILD_JOIN_REQUEST_REJECT_NOTIFICATION]: f.QN,
+        [ej.lAJ.GUILD_JOIN_REQUEST_WITHDRAWN_NOTIFICATION]: f.ez,
         [ej.lAJ.HD_STREAMING_UPGRADED]: void 0,
         [ej.lAJ.EMOJI_ADDED]: function(e) {
             let {

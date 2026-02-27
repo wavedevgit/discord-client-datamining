@@ -13,9 +13,9 @@ var i, l = n(627968),
     m = n(397927),
     _ = n(21161),
     A = n(513609),
-    h = n(928830),
-    f = n(567771),
-    E = n(780964),
+    E = n(928830),
+    h = n(567771),
+    f = n(780964),
     g = n(840065),
     p = n(473145),
     x = n(763754),
@@ -130,7 +130,7 @@ function k(e) {
         onClick: n,
         position: i,
         size: r
-    } = e, d = a.useRef(null), [u, A] = a.useState(null), [h] = a.useState(i ?? function() {
+    } = e, d = a.useRef(null), [u, A] = a.useState(null), [E] = a.useState(i ?? function() {
         switch (Math.floor(Math.random() * Object.keys(R).length)) {
             case 0:
                 return "TOP_LEFT";
@@ -142,9 +142,9 @@ function k(e) {
                 return "BOTTOM_RIGHT"
         }
     }()), {
-        createMultipleConfettiAt: f,
-        confettiCanvas: E
-    } = a.useContext(_.x), [g, p] = a.useState(null), x = (0, o.f9)(E, g), C = function(e, t) {
+        createMultipleConfettiAt: h,
+        confettiCanvas: f
+    } = a.useContext(_.x), [g, p] = a.useState(null), x = (0, o.f9)(f, g), C = function(e, t) {
         if (null == e) return "enter";
         switch (e) {
             case "enter":
@@ -159,7 +159,7 @@ function k(e) {
             case "exit":
                 return "enter"
         }
-    }(u, h), I = v.includes(h), T = I && "exit" === u, j = a.useCallback(e => {
+    }(u, E), I = v.includes(E), T = I && "exit" === u, j = a.useCallback(e => {
         A(e)
     }, []), k = a.useCallback(() => {
         "exit" === u && t?.()
@@ -170,7 +170,7 @@ function k(e) {
         if ("confetti" === u) {
             let {
                 confettiVelocityDirection: e
-            } = O[h], t = function(e, t) {
+            } = O[E], t = function(e, t) {
                 let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : M,
                     i = e?.getBoundingClientRect();
                 if (null == i) return {
@@ -182,8 +182,8 @@ function k(e) {
                     x: i.left + l.x,
                     y: i.top + l.y
                 }
-            }(d.current, h, r);
-            f(t.x, t.y, {
+            }(d.current, E, r);
+            h(t.x, t.y, {
                 velocity: {
                     type: "static-random",
                     minValue: {
@@ -197,9 +197,9 @@ function k(e) {
                 }
             })
         }
-    }, [f, h, u, r]), a.useEffect(() => {
+    }, [h, E, u, r]), a.useEffect(() => {
         if (I && "leaf_fall" === u) {
-            let e = O[h].leafRotationDirection;
+            let e = O[E].leafRotationDirection;
             x.createConfetti({
                 id: `${b}-${(0,c.A)()}`,
                 position: {
@@ -215,7 +215,7 @@ function k(e) {
                             x: n.left + i.leafPosition.x,
                             y: n.top + i.leafPosition.y
                         }
-                    }(d.current, h)
+                    }(d.current, E)
                 },
                 size: {
                     type: "static",
@@ -245,10 +245,10 @@ function k(e) {
                     }
                 }
             }, {
-                sprite: "TOP_LEFT" === h ? L : D
+                sprite: "TOP_LEFT" === E ? L : D
             })
         }
-    }, [I, x, h, u]), (0, l.jsxs)(l.Fragment, {
+    }, [I, x, E, u]), (0, l.jsxs)(l.Fragment, {
         children: [(0, l.jsx)(o.K_, {
             ref: p,
             sprites: U,
@@ -258,10 +258,10 @@ function k(e) {
         }), (0, l.jsx)(m.DUT, {
             onClick: n,
             className: s()(N.FT, {
-                [N.FZ]: "TOP_LEFT" === h,
-                [N.S]: "TOP_RIGHT" === h,
-                [N.Re]: "BOTTOM_LEFT" === h,
-                [N._t]: "BOTTOM_RIGHT" === h
+                [N.FZ]: "TOP_LEFT" === E,
+                [N.S]: "TOP_RIGHT" === E,
+                [N.Re]: "BOTTOM_LEFT" === E,
+                [N._t]: "BOTTOM_RIGHT" === E
             }),
             children: (0, l.jsx)(m.tvC, {
                 animationRef: G,
@@ -298,7 +298,7 @@ function G(e) {
             }
             return null
         }(n),
-        d = (0, f.A)(n),
+        d = (0, h.A)(n),
         {
             createMultipleConfettiAt: u,
             addClickListener: S
@@ -342,9 +342,9 @@ function G(e) {
             v(!1)
         }, []),
         P = a.useCallback(() => {
-            (0, h.O9)({
+            (0, E.O9)({
                 settingsVisible: !0
-            }), (0, g.openUserSettings)(E.X.POGGERMODE_PANEL, {
+            }), (0, g.openUserSettings)(f.X.POGGERMODE_PANEL, {
                 section: I.nc_.POGGERMODE
             }), v(!1)
         }, []),

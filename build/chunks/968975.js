@@ -111,9 +111,8 @@ function T(e) {
         wishlistOwner: n,
         wishlistId: y,
         analyticsLocations: R,
-        onViewWishlist: T,
-        showTypeTooltip: U
-    }, e.skuId)) : null, [R, L, T, n, U, G, y]), [H, F] = (0, c.RF)(l.M.SLAYER_STOREFRONT_ORBS_REWARD_WISHLIST_UPSELL, (0, o.c)(l.M.SLAYER_STOREFRONT_ORBS_REWARD_WISHLIST_UPSELL), void 0, !0), K = H !== l.M.SLAYER_STOREFRONT_ORBS_REWARD_WISHLIST_UPSELL;
+        onViewWishlist: T
+    }, e.skuId)) : null, [R, L, T, n, G, y]), [H, F] = (0, c.RF)(l.M.SLAYER_STOREFRONT_ORBS_REWARD_WISHLIST_UPSELL, (0, o.c)(l.M.SLAYER_STOREFRONT_ORBS_REWARD_WISHLIST_UPSELL), void 0, !0), K = H !== l.M.SLAYER_STOREFRONT_ORBS_REWARD_WISHLIST_UPSELL;
     if (0 === P.length) return null;
     let W = P;
     return null != w && ((0, p.L)(w) ? W = (0, C.z)(w, {

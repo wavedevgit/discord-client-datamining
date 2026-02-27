@@ -23,7 +23,7 @@ let _ = {
         [l.l.REPORT_TO_MOD_CLOSED_REPORT]: () => u.default.UE81zV
     };
 
-function h(e) {
+function E(e) {
     let {
         type: t
     } = e, n = null;
@@ -49,7 +49,7 @@ function h(e) {
     }) : null
 }
 
-function f(e) {
+function h(e) {
     let {
         message: t,
         channel: n,
@@ -58,26 +58,26 @@ function f(e) {
         author: r,
         mentions: u,
         type: A
-    } = t, f = (0, s.Ay)(t), E = t.getChannelId(), g = (0, a.bG)([d.default], () => d.default.getUser(u[0]), [u]), p = (0, s.m2)(r, n), x = (0, o.P)({
+    } = t, h = (0, s.Ay)(t), f = t.getChannelId(), g = (0, a.bG)([d.default], () => d.default.getUser(u[0]), [u]), p = (0, s.m2)(r, n), x = (0, o.P)({
         user: r,
-        channelId: E,
+        channelId: f,
         guildId: n.guild_id,
         messageId: t.id
     })(p), C = (0, s.d8)(g, n), I = (0, o.P)({
         user: g,
-        channelId: E,
+        channelId: f,
         guildId: n.guild_id,
         messageId: t.id
     })(C), T = _[A] ?? null;
     if (null == T) return null;
     let N = m.intl.format(T(), {
-        actorName: f.nick,
+        actorName: h.nick,
         actorHook: x,
         targetName: C?.nick,
         targetHook: I
     });
     return (0, i.jsx)(c.A, {
-        iconNode: (0, i.jsx)(h, {
+        iconNode: (0, i.jsx)(E, {
             type: A
         }),
         timestamp: t.timestamp,
@@ -86,7 +86,7 @@ function f(e) {
     })
 }
 
-function E(e) {
+function f(e) {
     let {
         message: t,
         channel: n,
@@ -94,19 +94,19 @@ function E(e) {
     } = e, {
         author: a,
         type: r
-    } = t, d = (0, s.Ay)(t), u = t.getChannelId(), _ = (0, s.m2)(a, n), f = (0, o.P)({
+    } = t, d = (0, s.Ay)(t), u = t.getChannelId(), _ = (0, s.m2)(a, n), h = (0, o.P)({
         user: a,
         channelId: u,
         guildId: n.guild_id,
         messageId: t.id
-    })(_), E = A[r] ?? null;
-    if (null == E) return null;
-    let g = m.intl.format(E(), {
+    })(_), f = A[r] ?? null;
+    if (null == f) return null;
+    let g = m.intl.format(f(), {
         actorName: d.nick,
-        actorHook: f
+        actorHook: h
     });
     return (0, i.jsx)(c.A, {
-        iconNode: (0, i.jsx)(h, {
+        iconNode: (0, i.jsx)(E, {
             type: r
         }),
         timestamp: t.timestamp,
@@ -123,11 +123,11 @@ function g(e) {
     } = e, {
         type: r
     } = t;
-    return r === l.l.REPORT_TO_MOD_BAN_USER || r === l.l.REPORT_TO_MOD_KICK_USER || r === l.l.REPORT_TO_MOD_TIMEOUT_USER ? (0, i.jsx)(f, {
+    return r === l.l.REPORT_TO_MOD_BAN_USER || r === l.l.REPORT_TO_MOD_KICK_USER || r === l.l.REPORT_TO_MOD_TIMEOUT_USER ? (0, i.jsx)(h, {
         message: t,
         channel: n,
         compact: a
-    }) : (0, i.jsx)(E, {
+    }) : (0, i.jsx)(f, {
         message: t,
         channel: n,
         compact: a

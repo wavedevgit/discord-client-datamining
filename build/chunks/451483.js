@@ -52,13 +52,13 @@ function u(e) {
         content: r,
         timestamp: u,
         messageReference: m
-    } = l, _ = (0, s.Ay)(l), A = t(_), h = (r ?? "").split(" ").slice(0, -1).join(" "), f = c.intl.format(c.t["47CZc2"], {
+    } = l, _ = (0, s.Ay)(l), A = t(_), E = (r ?? "").split(" ").slice(0, -1).join(" "), h = c.intl.format(c.t["47CZc2"], {
         username: _.nick,
         usernameHook: A,
         webhookName: r,
         webhookNameHook: (e, t) => (0, i.jsx)(d, {
             messageReference: m,
-            guildName: h,
+            guildName: E,
             children: e
         }, t)
     });
@@ -66,6 +66,6 @@ function u(e) {
         icon: n(394803),
         timestamp: u,
         compact: a,
-        children: f
+        children: h
     })
 }

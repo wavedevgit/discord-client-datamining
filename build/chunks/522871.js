@@ -19,22 +19,22 @@ function u(e) {
     } = e, m = (0, r.bG)([s.A], () => {
         let e = s.A.getGuild(n.guild_id);
         return e?.features.has(d.GuildFeatures.COMMUNITY) ?? !1
-    }, [n.guild_id]), _ = t.messageReference?.guild_id != null && null != t.webhookId && t.hasFlag(d.pr7.IS_CROSSPOST) && null != n.guild_id, A = n.type === a.r.GUILD_ANNOUNCEMENT && m, h = !t.hasFlag(d.pr7.EPHEMERAL) && (_ || A), f = _ && null != t.messageReference ? t.messageReference.message_id : t.id, E = _ && null != t.messageReference ? t.messageReference.channel_id : n.id, g = _ && t.messageReference?.guild_id != null ? t.messageReference.guild_id : n.guild_id, p = i.useCallback(e => {
+    }, [n.guild_id]), _ = t.messageReference?.guild_id != null && null != t.webhookId && t.hasFlag(d.pr7.IS_CROSSPOST) && null != n.guild_id, A = n.type === a.r.GUILD_ANNOUNCEMENT && m, E = !t.hasFlag(d.pr7.EPHEMERAL) && (_ || A), h = _ && null != t.messageReference ? t.messageReference.message_id : t.id, f = _ && null != t.messageReference ? t.messageReference.channel_id : n.id, g = _ && t.messageReference?.guild_id != null ? t.messageReference.guild_id : n.guild_id, p = i.useCallback(e => {
         e ? c.A.handleMessageBecameVisible({
             type: c.K.ANNOUNCEMENT,
-            messageId: f,
+            messageId: h,
             channelId: n.id,
             guildId: n.guild_id,
-            sourceChannelId: E,
+            sourceChannelId: f,
             sourceGuildId: g
-        }) : c.A.handleMessageLostVisibility(f, c.K.ANNOUNCEMENT)
-    }, [f, n.id, n.guild_id, E, g]), x = o.A.useExperiment({
+        }) : c.A.handleMessageLostVisibility(h, c.K.ANNOUNCEMENT)
+    }, [h, n.id, n.guild_id, f, g]), x = o.A.useExperiment({
         location: "836a4b_1"
     }, {
-        disable: !h || !u,
+        disable: !E || !u,
         autoTrackExposure: !0
     }).enabled, C = (0, l.K)(p, 0, x);
     return i.useEffect(() => () => {
-        c.A.handleMessageLostVisibility(f, c.K.ANNOUNCEMENT)
-    }, [f]), C
+        c.A.handleMessageLostVisibility(h, c.K.ANNOUNCEMENT)
+    }, [h]), C
 }

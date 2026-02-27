@@ -1,6 +1,6 @@
 /** chunk id: 877923, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => E
 });
 var i = n(627968),
     l = n(64700),
@@ -15,12 +15,12 @@ var i = n(627968),
     _ = n(652215),
     A = n(731875);
 
-function h(e) {
+function E(e) {
     let {
         giftIntentType: t,
         recipientUser: n,
-        channel: h
-    } = e, f = (0, a.bG)([o.A], () => o.A.useReducedMotion), E = l.useRef(null), {
+        channel: E
+    } = e, h = (0, a.bG)([o.A], () => o.A.useReducedMotion), f = l.useRef(null), {
         createMultipleConfettiAt: g
     } = l.useContext(c.x), p = l.useCallback(e => ({
         size: {
@@ -41,8 +41,8 @@ function h(e) {
         }
     }), []);
     return l.useEffect(() => {
-        if (f) return;
-        let e = E.current;
+        if (h) return;
+        let e = f.current;
         if (null == e) return;
         let t = null,
             n = new IntersectionObserver(i => {
@@ -60,17 +60,17 @@ function h(e) {
         return n.observe(e), () => {
             n.disconnect(), t?.cancel()
         }
-    }, [g, E, f, p]), (0, i.jsx)(m.A, {
+    }, [g, f, h, p]), (0, i.jsx)(m.A, {
         contentClassName: A.o9,
         iconContainerClassName: A.zc,
         iconNode: (0, i.jsx)(s.XFE, {
             colorClass: A.Kk
         }),
         children: (0, i.jsx)(d.A, {
-            innerRef: E,
+            innerRef: f,
             giftIntentType: t,
             recipientUser: n,
-            analyticsPage: (0, u.DJ)(h),
+            analyticsPage: (0, u.DJ)(E),
             analyticsSection: _.JJy.CHANNEL
         })
     })

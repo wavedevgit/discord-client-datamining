@@ -78,8 +78,7 @@ let T = l.memo(function(e) {
             wishlistOwner: a,
             wishlistId: c,
             isDragging: u,
-            dragHandle: T,
-            tooltipConfig: d
+            dragHandle: T
         });
         let e = (0, i.jsx)(I.A, {
                 item: t,

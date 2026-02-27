@@ -27,14 +27,14 @@ function c(e) {
             messageId: n,
             flash: !0
         })
-    }, h = {
+    }, E = {
         iconNode: (0, i.jsx)(l.tsw, {
             size: "sm",
             color: "currentColor"
         })
     };
     return (0, i.jsx)(s.A, {
-        ...h,
+        ...E,
         timestamp: t.timestamp,
         compact: d,
         children: null != t.messageReference ? null == c ? o.intl.format(o.t.lD5tup, {

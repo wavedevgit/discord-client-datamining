@@ -14,9 +14,9 @@ var i = n(627968),
     m = n(990078),
     _ = n(397927),
     A = n(956793),
-    h = n(775602),
-    f = n(709066),
-    E = n(845625),
+    E = n(775602),
+    h = n(709066),
+    f = n(845625),
     g = n(785823),
     p = n(449585),
     x = n(137207),
@@ -109,19 +109,19 @@ function W(e) {
 
 function Q(e) {
     switch (e) {
-        case E.G.DELETE_USER_MESSAGE:
+        case f.G.DELETE_USER_MESSAGE:
             return (0, i.jsx)(_.ucK, {
                 size: "xs",
                 color: "currentColor",
                 className: V.yr
             });
-        case E.G.SET_COMPLETED:
+        case f.G.SET_COMPLETED:
             return (0, i.jsx)(_.A9s, {
                 size: "xs",
                 color: "currentColor",
                 className: r()(V.yr, V.r0)
             });
-        case E.G.SUBMIT_FEEDBACK:
+        case f.G.SUBMIT_FEEDBACK:
             return (0, i.jsx)(_.iFK, {
                 size: "xs",
                 color: "currentColor",
@@ -146,17 +146,17 @@ function Y(e) {
                 a = `${i} ${l.fromNow()}`;
             try {
                 switch (parseInt(e.actionType)) {
-                    case E.G.DELETE_USER_MESSAGE:
+                    case f.G.DELETE_USER_MESSAGE:
                         return B.intl.formatToPlainString(B.t.BtKE9h, {
                             userName: i,
                             timestamp: l.fromNow()
                         });
-                    case E.G.SET_COMPLETED:
+                    case f.G.SET_COMPLETED:
                         return B.intl.formatToPlainString(B.t.dyo9US, {
                             userName: i,
                             timestamp: l.fromNow()
                         });
-                    case E.G.SUBMIT_FEEDBACK:
+                    case f.G.SUBMIT_FEEDBACK:
                         return B.intl.formatToPlainString(B.t["C9/kIO"], {
                             userName: i,
                             timestamp: l.fromNow()
@@ -211,7 +211,7 @@ let X = l.memo(function(e) {
         }, c),
         m = S.default.getUser(s),
         A = z(n, l),
-        h = J(l, m, S.default.getCurrentUser());
+        E = J(l, m, S.default.getCurrentUser());
     if (null != m) {
         let e = (0, j.FT)(m, l),
             i = (0, y.tO)({
@@ -221,7 +221,7 @@ let X = l.memo(function(e) {
                 guildId: l?.guild_id,
                 compact: r,
                 ...A
-            }, h);
+            }, E);
         t = () => i
     }
     return (0, i.jsx)(_.Text, {
@@ -259,7 +259,7 @@ function q(e) {
         isFocused: v,
         handleFocus: j,
         handleBlur: O
-    } = (0, D.G8)(S), L = (0, d.bG)([h.A], () => h.A.keyboardModeEnabled), U = (0, d.bG)([N.A], () => N.A.can(w.xBc.MANAGE_MESSAGES, s), [s]), {
+    } = (0, D.G8)(S), L = (0, d.bG)([E.A], () => E.A.keyboardModeEnabled), U = (0, d.bG)([N.A], () => N.A.can(w.xBc.MANAGE_MESSAGES, s), [s]), {
         ruleName: G,
         embedChannel: J,
         decisionId: Q,
@@ -286,8 +286,8 @@ function q(e) {
             messageId: a.id
         }), (0, I.iN)(e))
     }, [a, J]), em = l.useCallback(() => {
-        (0, x.E5)(a.id, s, E.G.DELETE_USER_MESSAGE)
-    }, [s, a.id]), e_ = (0, H.getFriendlyDurationString)(Number(et)), eA = null != en, eh = U && null != ee && (null == ei || !ei.actions.hasOwnProperty(E.G.DELETE_USER_MESSAGE)), ef = a.embeds.length > 0 ? a.embeds[0].fields.find(e => "channel_id" === e.rawName)?.rawValue : null, eE = null != ef;
+        (0, x.E5)(a.id, s, f.G.DELETE_USER_MESSAGE)
+    }, [s, a.id]), e_ = (0, H.getFriendlyDurationString)(Number(et)), eA = null != en, eE = U && null != ee && (null == ei || !ei.actions.hasOwnProperty(f.G.DELETE_USER_MESSAGE)), eh = a.embeds.length > 0 ? a.embeds[0].fields.find(e => "channel_id" === e.rawName)?.rawValue : null, ef = null != eh;
     return (0, i.jsx)("div", {
         onMouseEnter: m,
         onMouseLeave: T,
@@ -318,7 +318,7 @@ function q(e) {
                             tag: "span",
                             className: V.Xh,
                             children: B.intl.string(B.t.hG1StD)
-                        }), (0, i.jsx)(f.A, {
+                        }), (0, i.jsx)(h.A, {
                             type: F.nu.SYSTEM_DM,
                             className: V.Al
                         }), (0, i.jsx)(X, {
@@ -430,13 +430,13 @@ function q(e) {
                                     eo.onContextMenuModerateUser?.(e)
                                 }
                             })]
-                        }), eE ? (0, i.jsxs)(i.Fragment, {
+                        }), ef ? (0, i.jsxs)(i.Fragment, {
                             children: [(0, i.jsx)("div", {
                                 className: V.Om
                             }), (0, i.jsx)("div", {
                                 className: V.AX,
                                 children: (0, i.jsx)(_.QWc, {
-                                    onClick: () => eu(ef),
+                                    onClick: () => eu(eh),
                                     variant: "primary",
                                     size: "sm",
                                     textVariant: "text-xs/normal",
@@ -454,7 +454,7 @@ function q(e) {
                                 textVariant: "text-xs/normal",
                                 text: B.intl.string(B.t["94JbM3"])
                             })
-                        }), eh ? (0, i.jsxs)(i.Fragment, {
+                        }), eE ? (0, i.jsxs)(i.Fragment, {
                             children: [(0, i.jsx)("div", {
                                 className: V.Om
                             }), (0, i.jsx)("div", {

@@ -73,7 +73,7 @@ function O() {
         }] : []), N(_.intl.formatToPlainString(_.t["4rDfgM"], {}))], [e]),
         u = (0, s.bG)([a.A], () => a.A.messageGroupSpacing);
     return (0, n.jsx)(r.M1G, {
-        children: (0, n.jsxs)("div", {
+        children: (0, n.jsxs)(r.IpV, {
             className: c.VH,
             children: [(0, n.jsx)("div", {
                 className: c.DZ,

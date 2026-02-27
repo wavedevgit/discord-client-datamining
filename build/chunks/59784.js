@@ -1,6 +1,6 @@
 /** chunk id: 59784, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => E
+    A: () => f
 });
 var i = n(448761),
     l = n(311907),
@@ -21,10 +21,10 @@ function A(e) {
     let {
         messages: t
     } = e;
-    return t.map(e => h(e)).some(Boolean)
+    return t.map(e => E(e)).some(Boolean)
 }
 
-function h(e) {
+function E(e) {
     if (e.type !== i.l.PREMIUM_GROUP_INVITE) return !1;
     let t = e.content;
     if (null == t || "" === t || !r.default.isProbablyAValidSnowflake(t)) return !1;
@@ -35,7 +35,7 @@ function h(e) {
         errorStatus: null
     }), a.h.wait(() => (0, s.el)(t).catch(c.FXj)), !0)
 }
-class f extends l.Ay.Store {
+class h extends l.Ay.Store {
     static displayName = "PremiumGroupInviteStore";
     getInvite(e) {
         return d.get(e) ?? null
@@ -60,7 +60,7 @@ class f extends l.Ay.Store {
         return m
     }
 }
-let E = new f(a.h, {
+let f = new h(a.h, {
     PREMIUM_GROUP_INVITES_FETCH_START: function() {
         m = !0
     },
@@ -211,7 +211,7 @@ let E = new f(a.h, {
         let {
             message: t
         } = e;
-        return h(t)
+        return E(t)
     },
     LOCAL_MESSAGES_LOADED: A,
     LOAD_MESSAGES_SUCCESS: A,

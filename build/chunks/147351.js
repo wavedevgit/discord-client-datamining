@@ -14,9 +14,9 @@ var i = n(627968),
     m = n(576705),
     _ = n(287809),
     A = n(954571),
-    h = n(661191),
-    f = n(460350),
-    E = n(652215),
+    E = n(661191),
+    h = n(460350),
+    f = n(652215),
     g = n(48447);
 
 function p(e) {
@@ -24,7 +24,7 @@ function p(e) {
         assets: t,
         currentUser: n,
         message: i
-    } = e, l = (h.default.extractTimestamp(n.id) + h.default.extractTimestamp(i.id)) % t.length;
+    } = e, l = (E.default.extractTimestamp(n.id) + E.default.extractTimestamp(i.id)) % t.length;
     return t[l]
 }
 
@@ -37,18 +37,18 @@ function x(e) {
         stickers: u,
         event: m,
         eventProperties: _
-    } = e, h = l.useMemo(() => p({
+    } = e, E = l.useMemo(() => p({
         assets: u,
         currentUser: t,
         message: a
-    }), [u, t, a]), E = l.useMemo(() => p({
+    }), [u, t, a]), f = l.useMemo(() => p({
         assets: d,
         currentUser: t,
         message: a
     }), [d, t, a]), g = l.useCallback(async () => {
         let {
             valid: e
-        } = await (0, f.i)({
+        } = await (0, h.i)({
             type: o.oU.FORM,
             content: "",
             channel: n
@@ -68,7 +68,7 @@ function x(e) {
         }({
             channel: n,
             message: a,
-            sticker: h
+            sticker: E
         }), function(e) {
             let {
                 sticker: t,
@@ -80,18 +80,18 @@ function x(e) {
                 sticker_id: t.id
             })
         }({
-            sticker: h,
+            sticker: E,
             event: m,
             eventProperties: _
         }))
-    }, [n, a, h, m, _]);
+    }, [n, a, E, m, _]);
     return (0, i.jsx)(r.$nd, {
         icon: {
             type: "sticker",
-            asset: h,
+            asset: E,
             component: c.A
         },
-        text: E,
+        text: f,
         onClick: g,
         variant: "secondary"
     })
@@ -115,7 +115,7 @@ function C(e) {
             let e = t.guild_id;
             if (null == i || null == e) return !1;
             let l = (0, d.UJ)(t),
-                a = m.A.can(E.xBc.SEND_MESSAGES, t),
+                a = m.A.can(f.xBc.SEND_MESSAGES, t),
                 r = u.Ay.getMember(e, i.id)?.isPending,
                 s = n.author.bot;
             return a && !l && !r && !s

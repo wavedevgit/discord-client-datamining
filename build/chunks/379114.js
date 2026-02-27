@@ -14,9 +14,9 @@ var i = n(627968),
     m = n(942075),
     _ = n(292548),
     A = n(817533),
-    h = n(652215),
-    f = n(746080),
-    E = n(985018),
+    E = n(652215),
+    h = n(746080),
+    f = n(985018),
     g = n(424288);
 
 function p(e) {
@@ -30,7 +30,7 @@ function p(e) {
             className: g._X,
             color: "status-positive-text",
             variant: "heading-xl/medium",
-            children: E.intl.format(E.t.MLKSln, {
+            children: f.intl.format(f.t.MLKSln, {
                 username: t,
                 usernameHook: (e, t) => (0, i.jsx)(a.Text, {
                     tag: "span",
@@ -53,7 +53,7 @@ function x(e) {
     return (0, i.jsxs)("div", {
         className: g.pG,
         role: "img",
-        "aria-label": E.intl.formatToPlainString(E.t["utf8+W"], {
+        "aria-label": f.intl.formatToPlainString(f.t["utf8+W"], {
             username: l
         }),
         children: [(0, i.jsx)(A.A, {
@@ -71,7 +71,7 @@ function C(e) {
         channel: t,
         message: a,
         compact: A
-    } = e, E = (0, o.Ay)(a), g = function(e) {
+    } = e, f = (0, o.Ay)(a), g = function(e) {
         let {
             author: t,
             channel: n,
@@ -84,7 +84,7 @@ function C(e) {
         })(t), {
             analyticsLocations: d
         } = (0, s.Ay)(r.A.GUILD_ROLE_SUBSCRIPTION_PURCHASE_SYSTEM_MESSAGE), _ = i.roleSubscriptionData, A = l.useCallback(() => {
-            (0, u.pX)(h.BVt.CHANNEL(a, f.VV.ROLE_SUBSCRIPTIONS), {
+            (0, u.pX)(E.BVt.CHANNEL(a, h.VV.ROLE_SUBSCRIPTIONS), {
                 sourceLocationStack: d
             }), _?.role_subscription_listing_id != null && (0, m.xH)(a, n.id, i.id, _.role_subscription_listing_id)
         }, [a, n, i, _, d]);
@@ -98,7 +98,7 @@ function C(e) {
     }({
         channel: t,
         message: a,
-        author: E
+        author: f
     }), p = a.roleSubscriptionData?.total_months_subscribed != null && a.roleSubscriptionData?.total_months_subscribed <= 1;
     return null == g ? null : (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(d.A, {
@@ -109,7 +109,7 @@ function C(e) {
         }), p && (0, i.jsx)(x, {
             guildId: t.guild_id,
             user: a.author,
-            username: E.nick
+            username: f.nick
         }), (0, i.jsx)(_.A, {
             channel: t,
             message: a

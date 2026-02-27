@@ -14,9 +14,9 @@ var i = n(627968),
     m = n(688810),
     _ = n(888675),
     A = n(532794),
-    h = n(287809),
-    f = n(166403),
-    E = n(954571),
+    E = n(287809),
+    h = n(166403),
+    f = n(954571),
     g = n(405269),
     p = n(975571),
     x = n(927578),
@@ -45,11 +45,11 @@ class y extends l.Component {
         super(e), this.trialOffer = e.trialOffer, this.referralsSent = e.referralsSent, this.currentUser = e.currentUser, this.recipientHasNitro = e.recipientHasNitro, this.trialEndsAt = e.trialEndsAt, this.analyticsLocations = e.analyticsLocations, this.compact = !0 === e.compact, this.offerExpired = (0, R.P)(this.trialOffer), this.isSender = this.currentUser.id === this.trialOffer.referrer_id
     }
     getSystemMessageHeader() {
-        let e = h.default.getUser(this.trialOffer.user_id);
+        let e = E.default.getUser(this.trialOffer.user_id);
         if (this.isSender) return j.intl.format(j.t["4/EMxl"], {
             receiver: e?.username
         });
-        let t = h.default.getUser(this.trialOffer.referrer_id),
+        let t = E.default.getUser(this.trialOffer.referrer_id),
             n = t?.username !== void 0 ? t.username : "";
         return j.intl.format(j.t.yisueA, {
             sender: n,
@@ -57,9 +57,9 @@ class y extends l.Component {
         })
     }
     getTitleText() {
-        let e = h.default.getUser(this.trialOffer.user_id),
+        let e = E.default.getUser(this.trialOffer.user_id),
             t = null != e ? e.username : "???",
-            n = h.default.getUser(this.trialOffer.referrer_id),
+            n = E.default.getUser(this.trialOffer.referrer_id),
             i = null != n ? n.username : "???";
         return this.recipientHasNitro && void 0 === this.trialOffer.redeemed_at ? j.intl.formatToPlainString(j.t["Mptau/"], {
             username: t
@@ -123,9 +123,9 @@ class y extends l.Component {
     }
     render() {
         let e = () => {
-                let e = h.default.getUser(this.trialOffer.user_id),
+                let e = E.default.getUser(this.trialOffer.user_id),
                     t = null != e ? e.username : "???",
-                    n = h.default.getUser(this.trialOffer.referrer_id),
+                    n = E.default.getUser(this.trialOffer.referrer_id),
                     i = null != n ? n.username : "???";
                 if (this.isSender)
                     if (this.recipientHasNitro && void 0 === this.trialOffer.redeemed_at) return {
@@ -175,7 +175,7 @@ class y extends l.Component {
                         analyticsLocations: t,
                         startingScreen: l
                     } = e;
-                    E.default.track(M.HAw.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
+                    f.default.track(M.HAw.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
                         location_stack: t
                     }), (0, c.mMO)(async () => {
                         let {
@@ -253,7 +253,7 @@ function L(e) {
         trialOffer: n ? C.A.getRelevantUserTrialOffer(t) : null,
         isResolving: !!n && C.A.isResolving(t),
         referralsSent: C.A.getRecipientStatus()
-    }), [n, t]), _ = h.default.getCurrentUser(), A = (0, o.bG)([h.default], () => null != a && (0, x.TW)(void 0 !== _ && a.user_id === _.id ? _ : h.default.getUser(a.user_id))), E = (0, o.bG)([f.A], () => A ? f.A.getPremiumTypeSubscription()?.trialEndsAt : null), {
+    }), [n, t]), _ = E.default.getCurrentUser(), A = (0, o.bG)([E.default], () => null != a && (0, x.TW)(void 0 !== _ && a.user_id === _.id ? _ : E.default.getUser(a.user_id))), f = (0, o.bG)([h.A], () => A ? h.A.getPremiumTypeSubscription()?.trialEndsAt : null), {
         analyticsLocations: g
     } = (0, m.Ay)(u.A.SHARE_NITRO_EMBED);
     return r ? (0, i.jsx)(d.Wb, {
@@ -263,7 +263,7 @@ function L(e) {
         referralsSent: c,
         currentUser: _,
         recipientHasNitro: A,
-        trialEndsAt: E,
+        trialEndsAt: f,
         analyticsLocations: g,
         compact: l
     }) : (0, i.jsx)("div", {

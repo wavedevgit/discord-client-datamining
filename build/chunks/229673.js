@@ -20,10 +20,10 @@ function A(e) {
         message: t,
         channel: n,
         author: A,
-        compact: h
+        compact: E
     } = e, {
-        nick: f
-    } = (0, o.d8)(A, n), E = (0, c.P)({
+        nick: h
+    } = (0, o.d8)(A, n), f = (0, c.P)({
         user: A,
         channelId: n.id,
         guildId: void 0,
@@ -31,8 +31,8 @@ function A(e) {
     })(), g = (0, a.h)(t.applicationId);
     if (null == g) return null;
     let p = m.intl.format(m.t.m7Lwas, {
-        username: f,
-        usernameHook: E,
+        username: h,
+        usernameHook: f,
         gameName: g.name,
         gameIconHook: e => (0, i.jsxs)("span", {
             className: _.Y_,
@@ -48,7 +48,7 @@ function A(e) {
         iconNode: (0, i.jsx)(l.GameControllerIcon, {
             size: "sm"
         }),
-        compact: h,
+        compact: E,
         contentClassName: _.Qs,
         children: (0, i.jsx)("div", {
             children: p

@@ -1,6 +1,6 @@
 /** chunk id: 394388, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => I
+    A: () => N
 });
 var i = n(627968);
 n(64700);
@@ -11,16 +11,18 @@ var l = n(311907),
     o = n(793574),
     c = n(509536),
     d = n(881635),
-    u = n(71393),
-    m = n(888675),
-    _ = n(652215),
-    A = n(985018),
-    h = n(333354),
-    f = n(468406),
-    E = n(274993),
-    g = n(218924);
+    u = n(363487),
+    m = n(828162),
+    _ = n(71393),
+    A = n(888675),
+    E = n(652215),
+    h = n(985018),
+    f = n(333354),
+    g = n(468406),
+    p = n(274993),
+    x = n(218924);
 
-function p(e) {
+function C(e) {
     let {
         title: t,
         body: n,
@@ -28,22 +30,26 @@ function p(e) {
         analyticsLocations: o
     } = e, c = (0, l.bG)([s.A], () => s.A.useReducedMotion);
     return (0, i.jsxs)("div", {
-        className: f.kL,
+        className: g.kL,
         children: [(0, i.jsx)("div", {
-            className: f.ZS,
+            className: g.ZS,
             children: (0, i.jsx)("img", {
-                className: f.Sl,
-                src: c ? g.A : E.A,
+                className: g.Sl,
+                src: c ? x.A : p.A,
                 alt: "Boost gem"
             })
         }), (0, i.jsxs)("div", {
-            className: f.Qs,
+            className: g.Qs,
             children: [(0, i.jsx)(a.Heading, {
                 variant: "heading-md/semibold",
+                style: {
+                    marginTop: 0,
+                    marginBottom: "var(--space-4)"
+                },
                 children: t
             }), (0, i.jsx)(a.Text, {
                 color: "text-muted",
-                className: f.rf,
+                className: g.rf,
                 variant: "text-sm/medium",
                 children: n
             })]
@@ -52,30 +58,30 @@ function p(e) {
                 guild: r,
                 analyticsLocations: o,
                 analyticsLocation: {
-                    page: _.liQ.GUILD_CHANNEL,
-                    section: _.JJy.CHANNEL_TEXT_AREA
+                    page: E.liQ.GUILD_CHANNEL,
+                    section: E.JJy.CHANNEL_TEXT_AREA
                 }
             })
         })]
     })
 }
 
-function x(e) {
+function I(e) {
     let {
         guild: t
-    } = e;
-    return (0, i.jsx)(p, {
-        title: A.intl.string(h.default.qGDEON),
-        body: A.intl.format(h.default["s+HTdX"], {
+    } = e, n = (0, u.A)(t.id);
+    return (0, i.jsx)(C, {
+        title: h.intl.string(f.default.qGDEON),
+        body: h.intl.format(f.default["s+HTdX"], {
             viewAllPerks: e => (0, i.jsx)(a.DUT, {
                 tag: "a",
                 role: "link",
                 onClick: () => {
-                    (0, c.K)({
+                    n ? (0, m.A)(t.id, o.A.GUILD_BOOSTING_FIRST_TIME_BOOSTER_UPSELL) : (0, c.K)({
                         guildId: t.id,
                         location: {
-                            section: _.JJy.CHANNEL_TEXT_AREA,
-                            object: _.ZSU.BOOST_ANNOUNCEMENT_UPSELL
+                            section: E.JJy.CHANNEL_TEXT_AREA,
+                            object: E.ZSU.BOOST_ANNOUNCEMENT_UPSELL
                         }
                     })
                 },
@@ -87,30 +93,30 @@ function x(e) {
     })
 }
 
-function C(e) {
+function T(e) {
     let {
         boostingPrompt: t,
         guild: n
     } = e;
-    return t.guildBoostUpsellType === r.Mk.FIRST_BOOSTER ? (0, i.jsx)(x, {
+    return t.guildBoostUpsellType === r.Mk.FIRST_BOOSTER ? (0, i.jsx)(I, {
         guild: n
     }) : null
 }
 
-function I(e) {
+function N(e) {
     let {
         boostingPrompt: t,
         channel: n,
         compact: r
-    } = e, s = n.guild_id, o = (0, l.bG)([u.A], () => u.A.getGuild(s), [s]);
-    return null == o ? null : (0, i.jsx)(m.A, {
-        contentClassName: f.FG,
-        iconContainerClassName: f.zc,
+    } = e, s = n.guild_id, o = (0, l.bG)([_.A], () => _.A.getGuild(s), [s]);
+    return null == o ? null : (0, i.jsx)(A.A, {
+        contentClassName: g.FG,
+        iconContainerClassName: g.zc,
         iconNode: (0, i.jsx)(a.XFE, {
-            colorClass: f.Kk
+            colorClass: g.Kk
         }),
         compact: r,
-        children: (0, i.jsx)(C, {
+        children: (0, i.jsx)(T, {
             boostingPrompt: t,
             guild: o
         })

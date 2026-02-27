@@ -15,9 +15,9 @@ var l = n(311907),
     m = n(95701),
     _ = n(734057),
     A = n(71393),
-    h = n(994500),
-    f = n(287809),
-    E = n(147036),
+    E = n(994500),
+    h = n(287809),
+    f = n(147036),
     g = n(449054),
     p = n(652215);
 
@@ -28,7 +28,7 @@ function x(e) {
         beforeTransition: x,
         className: C,
         openChatWithoutConnecting: I
-    } = e, T = (0, l.bG)([f.default, h.A], () => null == t ? "" : (0, c.m1)(t, f.default, h.A), [t]);
+    } = e, T = (0, l.bG)([h.default, E.A], () => null == t ? "" : (0, c.m1)(t, h.default, E.A), [t]);
     return (0, i.jsx)(a.m, {
         "data-pending-richtooltip-migration": !0,
         __unsupportedReactNodeAsText: T,
@@ -55,7 +55,7 @@ function x(e) {
                     }(0, u.pX)(p.BVt.CHANNEL(e, t))
                 }(t?.guild_id, t?.id, I))
             },
-            iconType: (0, E.QG)(t),
+            iconType: (0, f.QG)(t),
             children: T
         })
     })

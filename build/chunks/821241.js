@@ -1,6 +1,6 @@
 /** chunk id: 821241, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => E
+    A: () => f
 });
 var i = n(627968);
 n(64700);
@@ -15,16 +15,16 @@ var l = n(503698),
     m = n(809115),
     _ = n(888675),
     A = n(705751),
-    h = n(985018),
-    f = n(234054);
+    E = n(985018),
+    h = n(234054);
 
-function E(e) {
+function f(e) {
     let {
         message: t,
         compact: n,
         usernameHook: l,
-        channel: E
-    } = e, g = (0, r.bG)([c.A], () => c.A.getGuild(E.guild_id)), p = (0, d.Ay)(t), x = l(p), {
+        channel: f
+    } = e, g = (0, r.bG)([c.A], () => c.A.getGuild(f.guild_id)), p = (0, d.Ay)(t), x = l(p), {
         avatarSrc: C,
         eventHandlers: {
             onMouseEnter: I,
@@ -35,44 +35,44 @@ function E(e) {
         onMouseEnter: I,
         onMouseLeave: T,
         children: (0, i.jsx)(_.A, {
-            className: a()(f.rs, {
-                [f.oE]: n
+            className: a()(h.rs, {
+                [h.oE]: n
             }),
             iconNode: n ? null : (0, i.jsx)(m.l, {
                 src: C
             }),
-            iconContainerClassName: f.zc,
+            iconContainerClassName: h.zc,
             compact: n,
             children: (0, i.jsxs)("div", {
-                className: a()(f.Qs, {
-                    [f.oE]: n
+                className: a()(h.Qs, {
+                    [h.oE]: n
                 }),
                 children: [(0, i.jsx)(u.ix, {
                     message: t,
-                    messageClassname: f.he,
-                    className: a()(f.QV, f.he, {
-                        [f.oE]: n
+                    messageClassname: h.he,
+                    className: a()(h.QV, h.he, {
+                        [h.oE]: n
                     }),
                     username: (0, i.jsxs)("div", {
-                        className: f.he,
+                        className: h.he,
                         children: [(0, i.jsx)(s.Text, {
                             variant: "text-md/normal",
                             color: "text-brand",
                             tag: "span",
-                            className: f.Xh,
-                            children: h.intl.string(h.t.hG1StD)
+                            className: h.Xh,
+                            children: E.intl.string(E.t.hG1StD)
                         }), (0, i.jsx)(o.A, {
                             type: A.nu.SYSTEM_DM,
-                            className: f.Al
+                            className: h.Al
                         })]
                     }),
                     compact: n,
                     showTimestamp: !0
                 }), (0, i.jsx)("div", {
-                    className: a()(f.__invalid_messageContent, {
-                        [f.oE]: n
+                    className: a()(h.__invalid_messageContent, {
+                        [h.oE]: n
                     }),
-                    children: h.intl.format(h.t.W0UBI3, {
+                    children: E.intl.format(E.t.W0UBI3, {
                         username: p.nick,
                         usernameHook: x,
                         guildName: g?.name ?? ""
