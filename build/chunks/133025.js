@@ -9,15 +9,15 @@ function r(e, t) {
     if (0 === e.length) throw Error("No user IDs provided");
     return [...e, ...t].join(",")
 }
-let l = {};
-class a extends n.Ay.Store {
+let a = {};
+class l extends n.Ay.Store {
     getRecommendations(e, t) {
-        if (0 !== e.length && 0 !== t.length) return l[r(e, t)]
+        if (0 !== e.length && 0 !== t.length) return a[r(e, t)]
     }
 }
-let o = new a(s.h, {
+let o = new l(s.h, {
     LOGOUT: function() {
-        l = {}
+        a = {}
     },
     WISHLIST_RECOMMENDATIONS_FETCH_START: function(e) {
         let {
@@ -26,8 +26,8 @@ let o = new a(s.h, {
         } = e;
         if (0 === t.length || 0 === i.length) return !1;
         let n = r(t, i);
-        l = {
-            ...l,
+        a = {
+            ...a,
             [n]: {
                 state: "loading"
             }
@@ -41,8 +41,8 @@ let o = new a(s.h, {
         } = e;
         if (0 === t.length || 0 === i.length) return !1;
         let s = r(t, i);
-        l = {
-            ...l,
+        a = {
+            ...a,
             [s]: {
                 state: "success",
                 data: n,
@@ -57,9 +57,9 @@ let o = new a(s.h, {
         } = e;
         if (0 === t.length || 0 === i.length) return !1;
         let n = r(t, i);
-        if (l[n]?.state === "success") return !1;
-        l = {
-            ...l,
+        if (a[n]?.state === "success") return !1;
+        a = {
+            ...a,
             [n]: {
                 state: "error",
                 fetchedAt: Date.now()

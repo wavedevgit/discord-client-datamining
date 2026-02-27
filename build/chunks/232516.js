@@ -6,8 +6,8 @@ var n = i(627968);
 i(64700);
 var s = i(937008),
     r = i(310250),
-    l = i(672525),
-    a = i(802246),
+    a = i(672525),
+    l = i(802246),
     o = i(788868),
     d = i(751690);
 let c = function(e) {
@@ -23,21 +23,21 @@ let c = function(e) {
         className: d.H,
         children: [(0, n.jsxs)("div", {
             className: d.u,
-            children: [(0, n.jsx)(l.D3, {
+            children: [(0, n.jsx)(a.D3, {
                 onClick: () => t(o.pe.TIER_2),
                 isGift: !0,
                 priceOptions: i,
                 showPromotionalGiftBanner: _
-            }), (0, n.jsx)(l.Ls, {
+            }), (0, n.jsx)(a.Ls, {
                 onClick: () => t(o.pe.TIER_0),
                 isGift: !0,
                 priceOptions: i,
                 removeTopMargin: !0
             })]
-        }), f ? (0, n.jsx)(a.s, {
+        }), f ? (0, n.jsx)(l.s, {
             giftRecipient: c,
             onWishlistItemClick: u
-        }) : (0, n.jsx)(a.A, {
+        }) : (0, n.jsx)(l.A, {
             giftRecipient: c,
             onWishlistItemClick: u
         })]

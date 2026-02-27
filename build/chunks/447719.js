@@ -1,12 +1,12 @@
 /** chunk id: 447719, original params: e,t,i (module,exports,require) **/
 i.d(t, {
-    K: () => a,
-    a: () => l
+    K: () => l,
+    a: () => a
 });
 var n = i(594832),
     s = i(721932),
     r = i(985018);
-let l = {
+let a = {
     FULL_WISHLIST: {
         title: r.intl.string(r.t["7lZ31J"]),
         getSubtitle: e => r.intl.formatToPlainString(r.t.BjEX38, {
@@ -37,7 +37,7 @@ let l = {
     }
 };
 
-function a(e) {
+function l(e) {
     let {
         totalUnownedWishlistItemCount: t,
         wishlistInDmLength: i,

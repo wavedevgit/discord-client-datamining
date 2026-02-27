@@ -5,8 +5,8 @@ i.d(t, {
 var n = i(627968),
     s = i(64700),
     r = i(397927),
-    l = i(937008),
-    a = i(156312),
+    a = i(937008),
+    l = i(156312),
     o = i(532794),
     d = i(232516),
     c = i(788868),
@@ -18,14 +18,14 @@ function f(e) {
     let {
         giftRecipient: t,
         onClose: i,
-        transitionState: l,
+        transitionState: a,
         analyticsLocations: f,
         analyticsLocation: h,
         analyticsObject: p,
         giftMessage: I
     } = e, {
         priceOptions: g
-    } = (0, a.P5)(), S = s.useCallback(e => {
+    } = (0, l.P5)(), S = s.useCallback(e => {
         (0, o.A)({
             isGift: !0,
             giftRecipient: t,
@@ -43,7 +43,7 @@ function f(e) {
         }), i()
     }, [t, f, h, p, I, i]);
     return (0, n.jsxs)(r.EOs, {
-        transitionState: l,
+        transitionState: a,
         size: r.rIJ.DYNAMIC,
         className: _.jT,
         parentComponent: "GiftOptionSelectModal",
@@ -85,12 +85,12 @@ function h(e) {
         analyticsObject: d,
         giftMessage: u
     } = e;
-    return (0, n.jsx)(a.PaymentContextProvider, {
+    return (0, n.jsx)(l.PaymentContextProvider, {
         activeSubscription: null,
         stepConfigs: [],
         skuIDs: c.T7,
         isGift: !0,
-        children: (0, n.jsx)(l.dX, {
+        children: (0, n.jsx)(a.dX, {
             isGift: !0,
             giftRecipient: t,
             giftingOrigin: c.vQ.DM_CHANNEL,
