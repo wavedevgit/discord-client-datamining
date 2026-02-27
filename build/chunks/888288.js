@@ -38,8 +38,8 @@ var i = n(284009),
     M = n(927813),
     k = n(9302),
     P = n(157257),
-    G = n(652215),
-    U = n(672396),
+    U = n(652215),
+    G = n(672396),
     V = n(985018);
 let z = new r.Vy("LegacyOverlayNotificationsStore"),
     H = 5 * M.A.Millis.SECOND,
@@ -51,31 +51,31 @@ let z = new r.Vy("LegacyOverlayNotificationsStore"),
         expirationExternallyManaged: !1,
         type: 0
     }),
-    Y = [],
-    F = (e, t, n) => {
-        let i = t ? G.yFH.TIMED_OUT : G.yFH.DISMISSED;
+    F = [],
+    Y = (e, t, n) => {
+        let i = t ? U.yFH.TIMED_OUT : U.yFH.DISMISSED;
         return setTimeout(() => d.A.updateNotificationStatus(e, i), null != n ? n : H)
     };
 
 function Z(e) {
-    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : G.yFH.DISMISSED;
+    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : U.yFH.DISMISSED;
     if (null == e) return !1;
-    let n = Y.findIndex(t => t.id === e);
+    let n = F.findIndex(t => t.id === e);
     if (-1 === n) return !1;
-    let i = Y[n];
-    clearTimeout(i.timerId), Y = [...Y], t === G.yFH.DISMISSED ? Y.splice(n, 1) : Y[n] = {
+    let i = F[n];
+    clearTimeout(i.timerId), F = [...F], t === U.yFH.DISMISSED ? F.splice(n, 1) : F[n] = {
         ...i,
         status: t
     }
 }
 
 function J(e) {
-    let t = Y.length;
-    return (Y = Y.filter(t => 1 !== t.type || t.channelId !== e)).length !== t
+    let t = F.length;
+    return (F = F.filter(t => 1 !== t.type || t.channelId !== e)).length !== t
 }
 
 function X(e) {
-    let t = Y.find(t => 2 === t.type && t.channelId === e);
+    let t = F.find(t => 2 === t.type && t.channelId === e);
     return null != t ? t.id : null
 }
 
@@ -88,13 +88,13 @@ function Q(e, t) {
     let i = (0, l.A)(),
         s = {
             id: i,
-            status: G.yFH.ACTIVE,
-            timerId: F(i, n.expirationExternallyManaged, n.duration),
+            status: U.yFH.ACTIVE,
+            timerId: Y(i, n.expirationExternallyManaged, n.duration),
             props: e,
             ...n
         },
-        a = (Y = [...Y]).findIndex(e => e.priority <= n.priority);
-    return -1 === a ? Y.push(s) : Y.splice(a, 0, s), Y.length > 10 && clearTimeout(Y.pop().timerId), i
+        a = (F = [...F]).findIndex(e => e.priority <= n.priority);
+    return -1 === a ? F.push(s) : F.splice(a, 0, s), F.length > 10 && clearTimeout(F.pop().timerId), i
 }
 
 function q(e) {
@@ -108,8 +108,8 @@ function q(e) {
     if (null == s || !s.isRingable() || "GUILD_RING_START" === e.type && !S.A.getCurrentConfig({
             guildId: e.guildId,
             location: "OverlayStartRinging"
-        }).enabled || b.A.getStatus() === G.clD.DND || v.NO.getSetting()) return !1;
-    let l = Y.find(e => 1 === e.type && e.channelId === t && e.messageType === G.lAJ.CALL);
+        }).enabled || b.A.getStatus() === U.clD.DND || v.NO.getSetting()) return !1;
+    let l = F.find(e => 1 === e.type && e.channelId === t && e.messageType === U.lAJ.CALL);
     null != l && Z(l.id), Q((0, p.A)(s), {
         priority: 1,
         expirationExternallyManaged: !0,
@@ -123,7 +123,7 @@ class $ extends a.Ay.Store {
         this.waitFor(C.default, I.A, _.A, N.A, w.default, x.default, P.A, y.A, L.default, T.A, O.A, b.A, j.A, D.default)
     }
     getNotifications() {
-        return Y
+        return F
     }
 }
 let ee = new $(o.h, !__OVERLAY__ ? {} : {
@@ -148,10 +148,10 @@ let ee = new $(o.h, !__OVERLAY__ ? {} : {
             }), null == n) return;
         let i = function(e) {
             switch (e.type) {
-                case U.Jr.GO_LIVE_VOICE:
-                case U.Jr.GO_LIVE_NON_VOICE:
+                case G.Jr.GO_LIVE_VOICE:
+                case G.Jr.GO_LIVE_NON_VOICE:
                     return (0, h.A)(e);
-                case U.Jr.NEWS:
+                case G.Jr.NEWS:
                 default:
                     return (0, g.A)(e)
             }
@@ -166,9 +166,9 @@ let ee = new $(o.h, !__OVERLAY__ ? {} : {
             locked: t
         } = e;
         if (t) return !1;
-        Y = Y.map(e => e.status === G.yFH.ACTIVE ? (clearTimeout(e.timerId), {
+        F = F.map(e => e.status === U.yFH.ACTIVE ? (clearTimeout(e.timerId), {
             ...e,
-            timerId: F(e.id, e.expirationExternallyManaged)
+            timerId: Y(e.id, e.expirationExternallyManaged)
         }) : e)
     },
     MESSAGE_CREATE: function(e) {
@@ -177,7 +177,7 @@ let ee = new $(o.h, !__OVERLAY__ ? {} : {
             message: n
         } = e, i = I.A.getChannel(t), l = D.default.getUser(n.author?.id);
         if (null == i || null == l) return !1;
-        if (n.activity?.type === G.xL.JOIN || n.activity?.type === G.xL.JOIN_REQUEST) {
+        if (n.activity?.type === U.xL.JOIN || n.activity?.type === U.xL.JOIN_REQUEST) {
             if (!(0, E.lx)(n, t, !0, !0)) return !1;
             let e = function(e, t, n) {
                 let i, l;
@@ -185,11 +185,11 @@ let ee = new $(o.h, !__OVERLAY__ ? {} : {
                 let a = P.A.getGame();
                 if (null == a) return !1;
                 switch (t.activity.type) {
-                    case G.xL.JOIN:
+                    case U.xL.JOIN:
                         if (null == (i = T.A.getApplicationActivity(n.id, a.id)) || null == i.party || i.party.id !== t.activity.party_id) return !1;
                         l = (0, c.A)(e, t, n, a, i);
                         break;
-                    case G.xL.JOIN_REQUEST:
+                    case U.xL.JOIN_REQUEST:
                         if (null == (i = b.A.getApplicationActivity(a.id)) || null == i.party || i.party.id !== t.activity.party_id) return !1;
                         l = (0, A.A)(e, n, a, i)
                 }
@@ -199,11 +199,11 @@ let ee = new $(o.h, !__OVERLAY__ ? {} : {
                     expirationExternallyManaged: !0,
                     channelId: e.id
                 });
-                return null != r && F(r, !1, B), !0
+                return null != r && Y(r, !1, B), !0
             }(i, n, l);
             if (!1 !== e) return e
         }
-        if ((!L.default.isInstanceLocked() || L.default.isPinned(G.uss.TEXT)) && t === O.A.getChannelId() || y.A.isNotificationDisabled(U.KS.TextChat) || j.A.disableNotifications || !(0, E.lx)(n, t)) return !1;
+        if ((!L.default.isInstanceLocked() || L.default.isPinned(U.uss.TEXT)) && t === O.A.getChannelId() || y.A.isNotificationDisabled(G.KS.TextChat) || j.A.disableNotifications || !(0, E.lx)(n, t)) return !1;
         let a = !N.A.isSoundDisabled(R.cH);
         Q((0, f.A)(i, n, l, a), {
             type: 1,
@@ -251,7 +251,7 @@ let ee = new $(o.h, !__OVERLAY__ ? {} : {
                 applicationId: s
             } = e,
             l = P.A.getGame();
-        return null != l && l.id === s && (n === G.xL.JOIN && (t = (0, u.A)(i, l)), null != t && void Q(t, {
+        return null != l && l.id === s && (n === U.xL.JOIN && (t = (0, u.A)(i, l)), null != t && void Q(t, {
             priority: 2,
             type: 0
         }))

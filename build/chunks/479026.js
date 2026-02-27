@@ -1,7 +1,7 @@
 /** chunk id: 479026, original params: e,t,l (module,exports,require) **/
 l.d(t, {
-    T: () => S,
-    _: () => g
+    T: () => g,
+    _: () => S
 });
 var r = l(635358),
     i = l(793574),
@@ -16,15 +16,15 @@ var r = l(635358),
     I = l(657331),
     f = l(901123);
 
-function g(e) {
+function S(e) {
     let {
         isOwner: t,
         isItemOwned: l,
         onWishlistItemClick: d,
         profileOwner: c,
         sku: h,
-        analyticsLocations: g,
-        giftingOrigin: S
+        analyticsLocations: S,
+        giftingOrigin: g
     } = e, m = location.pathname.startsWith(f.BV.COLLECTIBLES_SHOP);
     if (t || l) {
         let e = !t && l;
@@ -38,7 +38,7 @@ function g(e) {
                     shouldCheckoutWithOrbs: (0, u.A)({
                         product: t
                     }),
-                    analyticsLocations: g,
+                    analyticsLocations: S,
                     analyticsSource: i.A.USER_PROFILE_WISHLIST,
                     returnRef: void 0,
                     tab: void 0
@@ -50,14 +50,14 @@ function g(e) {
     } else d?.(), (0, a.A)({
         skuId: h.id,
         isGift: !0,
-        giftingOrigin: S,
-        analyticsLocations: g,
+        giftingOrigin: g,
+        analyticsLocations: S,
         giftRecipient: c,
         variantsReturnStyle: r.g.VARIANTS_GROUP
     })
 }
 
-function S(e) {
+function g(e) {
     let {
         isOwner: t,
         giftingOrigin: l,

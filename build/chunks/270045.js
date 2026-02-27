@@ -45,13 +45,13 @@ function L(e) {
             handleResetStatusClick: O,
             handleOverrideDeliveryClick: U
         } = (0, g.j$)(e.quest.id),
-        B = (0, g.do)({
+        G = (0, g.do)({
             quest: e.quest,
             content: e.questContent,
             ctaContent: x.Cy.CONTEXT_MENU_OPEN_GAME_LINK,
             sourceQuestContent: e.sourceQuestContent
         }),
-        G = (0, T.Lk)({
+        B = (0, T.Lk)({
             isShareable: M,
             questId: e.quest.id,
             trackingCtx: l.useMemo(() => ({
@@ -88,7 +88,7 @@ function L(e) {
             children: [(0, i.jsx)(a.Drp, {
                 id: "play-game",
                 label: P,
-                action: B,
+                action: G,
                 icon: a.We5,
                 leadingAccessory: {
                     type: "icon",
@@ -97,7 +97,7 @@ function L(e) {
             }), M && (0, i.jsx)(a.Drp, {
                 id: "share-link",
                 label: j.intl.string(j.t.RDE0Sc),
-                action: G,
+                action: B,
                 icon: a.TdU,
                 leadingAccessory: {
                     type: "icon",

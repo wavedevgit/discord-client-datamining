@@ -38,8 +38,8 @@ var i = n(627968),
     k = n(615396),
     O = n(427262),
     U = n(295843),
-    B = n(652215),
-    G = n(788868),
+    G = n(652215),
+    B = n(788868),
     F = n(985018),
     H = n(300937);
 
@@ -69,7 +69,7 @@ class W extends l.PureComponent {
     }
     handleViewInventory() {
         (0, S.openUserSettings)(v.X.GIFT_PANEL, {
-            section: B.nc_.INVENTORY
+            section: G.nc_.INVENTORY
         })
     }
     renderMedia = () => (0, i.jsx)("div", {
@@ -105,21 +105,21 @@ class q extends l.Component {
         } = this.props;
         return {
             ...e,
-            section: B.JJy.GIFT_CODE_EMBED
+            section: G.JJy.GIFT_CODE_EMBED
         }
     }
     handleViewLibrary = e => {
         let {
             libraryApplication: t
         } = this.props;
-        e.preventDefault(), null != t && t.isHidden() ? (0, I.pX)(B.BVt.APPLICATION_LIBRARY_SETTINGS) : (0, I.pX)(B.BVt.APPLICATION_LIBRARY, {
+        e.preventDefault(), null != t && t.isHidden() ? (0, I.pX)(G.BVt.APPLICATION_LIBRARY_SETTINGS) : (0, I.pX)(G.BVt.APPLICATION_LIBRARY, {
             state: {
                 applicationId: null != t ? t.id : void 0
             }
         })
     };handleVerificationClick = e => {
         e.stopPropagation(), e.preventDefault(), (0, S.openUserSettings)(v.X.ACCOUNT_PANEL, {
-            section: B.nc_.ACCOUNT
+            section: G.nc_.ACCOUNT
         })
     };handleAccept = e => {
         let {
@@ -129,14 +129,14 @@ class q extends l.Component {
             type: l,
             giftInfo: r
         } = this.props;
-        e.preventDefault(), e.stopPropagation(), M.default.track(B.HAw.OPEN_MODAL, {
+        e.preventDefault(), e.stopPropagation(), M.default.track(G.HAw.OPEN_MODAL, {
             type: "gift_accept",
             location: {
                 ...this.analyticsLocation,
-                object: B.ZSU.BUTTON_CTA
+                object: G.ZSU.BUTTON_CTA
             }
         });
-        let a = l !== B.lAJ.CUSTOM_GIFT ? void 0 : i;
+        let a = l !== G.lAJ.CUSTOM_GIFT ? void 0 : i;
         (0, C.h)({
             processedCode: n,
             channelContext: t,
@@ -156,12 +156,12 @@ class q extends l.Component {
             isStorefront: !1,
             analyticsLocations: [p.A.GIFT_CODE_EMBED]
         })) : null != t && t.isSubscription && (e.preventDefault(), (0, S.openUserSettings)(v.X.NITRO_PANEL, {
-            section: B.nc_.PREMIUM
+            section: G.nc_.PREMIUM
         }))
     };handleClaimPromotion = e => {
         e.stopPropagation(), e.preventDefault();
         let t = this.props.giftCode?.code;
-        null != t && window.open(B.BVt.BILLING_PROMOTION_REDEMPTION(t))
+        null != t && window.open(G.BVt.BILLING_PROMOTION_REDEMPTION(t))
     };renderActions(e) {
         let {
             libraryApplication: t
@@ -215,7 +215,7 @@ class q extends l.Component {
         let {
             type: e
         } = this.props;
-        return e === B.lAJ.CUSTOM_GIFT
+        return e === G.lAJ.CUSTOM_GIFT
     }
     renderTitle(e) {
         let {
@@ -275,14 +275,14 @@ class q extends l.Component {
         if (e.isSubscription) {
             if (null == r) return F.intl.string(F.t.ZTNur7);
             if (null != l) {
-                let e = r.interval === G.WT.MONTH ? F.t["/RDIEA"] : F.t["3CX6Ev"];
+                let e = r.interval === B.WT.MONTH ? F.t["/RDIEA"] : F.t["3CX6Ev"];
                 return F.intl.format(e, {
                     username: O.Ay.getUserTag(l),
                     skuName: s,
                     intervalCount: r.intervalCount
                 })
             }
-            let e = r.interval === G.WT.MONTH ? F.t["2O4lo5"] : F.t["+XjmsR"];
+            let e = r.interval === B.WT.MONTH ? F.t["2O4lo5"] : F.t["+XjmsR"];
             return F.intl.format(e, {
                 skuName: s,
                 intervalCount: r.intervalCount
@@ -297,7 +297,7 @@ class q extends l.Component {
             width: t
         } = this.props;
         if (null == e || null == e.giftStyle) return null;
-        let n = G.Wx.includes(e.giftStyle),
+        let n = B.Wx.includes(e.giftStyle),
             l = a()(H.gB, {
                 [H.El]: n,
                 [H.by]: t >= _.Tm
@@ -337,7 +337,7 @@ class q extends l.Component {
         return (0, i.jsx)(U.k, {
             skuId: e.skuId,
             onEmbedClick: this.handleEmbedClick,
-            analyticsSection: B.JJy.GIFT_CODE_EMBED,
+            analyticsSection: G.JJy.GIFT_CODE_EMBED,
             renderCustomActions: () => this.renderActions(e),
             renderCustomTitle: () => this.renderTitle(e),
             renderCustomTagline: () => this.renderBody(e),
@@ -355,7 +355,7 @@ class q extends l.Component {
         if (null != e && null != e.promotion) return (0, i.jsx)(U.k, {
             skuId: e.skuId,
             onEmbedClick: this.handleClaimPromotion,
-            analyticsSection: B.JJy.GIFT_CODE_EMBED,
+            analyticsSection: G.JJy.GIFT_CODE_EMBED,
             renderCustomActions: () => this.renderPromotionActions(),
             renderCustomTitle: () => F.intl.string(F.t.X4p5uH),
             renderCustomTagline: () => F.intl.string(F.t.VIuwD7),

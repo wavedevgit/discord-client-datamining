@@ -39,16 +39,16 @@ var I = n(15285),
     M = n(309010),
     k = n(70142),
     P = n(157257),
-    G = n(712687),
-    U = n(532624),
+    U = n(712687),
+    G = n(532624),
     V = n(242286),
     z = n(899699),
     H = n(256415),
     W = n(531685),
     B = n(927813),
     K = n(723702),
-    Y = n(837921),
-    F = n(316501),
+    F = n(837921),
+    Y = n(316501),
     Z = n(350535),
     J = n(9302),
     X = n(41984),
@@ -139,7 +139,7 @@ class ep extends l.Component {
         x.A.setLayout(t ? E.dY : E.CJ), t && x.A.enable()
     }
     handleLock() {
-        (0, f.ueM)() || G.A.isOpen() || _.A.setInputLocked(!0, (0, J.getPID)())
+        (0, f.ueM)() || U.A.isOpen() || _.A.setInputLocked(!0, (0, J.getPID)())
     }
     handleDeactivate() {
         _.A.deactivateAllRegions()
@@ -205,7 +205,7 @@ class ep extends l.Component {
                 type: es.Jr.GO_LIVE_NON_VOICE,
                 game: d
             }), setTimeout(async () => {
-                await (0, F.pF)(), null != e ? _.A.overlayMounted(e) : _.A.overlayMounted()
+                await (0, Y.pF)(), null != e ? _.A.overlayMounted(e) : _.A.overlayMounted()
             }, 128), window.addEventListener("resize", this.handleWindowResize), i && window.addEventListener("contextmenu", ed, !1), K.isPlatformEmbedded) {
             let e = (0, z.m)();
             if (null == e) return;
@@ -214,8 +214,8 @@ class ep extends l.Component {
             }), e.broadcastCommand?.({
                 message: "set_perf_report_interval",
                 interval: 15 * B.A.Millis.MINUTE
-            })), Y.Ay.on("REQUEST_OPEN_EXTERNAL_URL", (e, t) => {
-                H.default.getDisableExternalLinkAlert() || t === k.A.getLastURL() ? Y.Ay.send("OPEN_EXTERNAL_URL", t) : (0, f.mMO)(async () => {
+            })), F.Ay.on("REQUEST_OPEN_EXTERNAL_URL", (e, t) => {
+                H.default.getDisableExternalLinkAlert() || t === k.A.getLastURL() ? F.Ay.send("OPEN_EXTERNAL_URL", t) : (0, f.mMO)(async () => {
                     let {
                         default: e
                     } = await n.e("30582").then(n.bind(n, 613429));
@@ -314,7 +314,7 @@ function eA() {
         incompatibleApp: H.default.incompatibleApp,
         activeRegions: H.default.getActiveRegions(),
         isPreviewingInGame: H.default.isPreviewingInGame()
-    })), r = (0, A.bG)([W.A], () => W.A.windowSize()), o = (0, A.bG)([U.Ay], () => U.Ay.getOverlayKeybind()), d = (0, A.bG)([M.A], () => M.A.getVoiceChannelId()), c = (0, A.bG)([D.A], () => D.A.getChannel(d)), u = (0, A.bG)([R.A], () => null != c ? R.A.getGuild(c.guild_id) : null), h = (0, A.bG)([I.Ay, P.A], () => (0, T.A)(I.Ay, P.A)), p = (0, A.bG)([L.Ay], () => (0, N.A)(L.Ay)), f = (0, A.bG)([j.A], () => null != j.A.getCurrentUserActiveStream()), {
+    })), r = (0, A.bG)([W.A], () => W.A.windowSize()), o = (0, A.bG)([G.Ay], () => G.Ay.getOverlayKeybind()), d = (0, A.bG)([M.A], () => M.A.getVoiceChannelId()), c = (0, A.bG)([D.A], () => D.A.getChannel(d)), u = (0, A.bG)([R.A], () => null != c ? R.A.getGuild(c.guild_id) : null), h = (0, A.bG)([I.Ay, P.A], () => (0, T.A)(I.Ay, P.A)), p = (0, A.bG)([L.Ay], () => (0, N.A)(L.Ay)), f = (0, A.bG)([j.A], () => null != j.A.getCurrentUserActiveStream()), {
         analyticsLocations: g
     } = (0, S.Ay)(v.A.OVERLAY);
     return l.useEffect(() => {

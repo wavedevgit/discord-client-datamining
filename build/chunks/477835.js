@@ -60,8 +60,8 @@ function O(e) {
         Component: F,
         play: Y,
         events: {
-            onMouseEnter: q,
-            onMouseLeave: W
+            onMouseEnter: W,
+            onMouseLeave: q
         }
     } = (0, d.E)(), K = r.useCallback(() => {
         j || M(!D)
@@ -113,10 +113,10 @@ function O(e) {
                             null != G && G !== o.M.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && k(v.i.UNKNOWN), M(!D), Y(), (0, p.X)(B, p.O.SOUNDBOARD)
                         },
                         onMouseEnter: e => {
-                            l.onMouseEnter?.(e), q()
+                            l.onMouseEnter?.(e), W()
                         },
                         onMouseLeave: e => {
-                            l.onMouseLeave?.(e), W()
+                            l.onMouseLeave?.(e), q()
                         },
                         onContextMenu: H,
                         fullWidth: !0,

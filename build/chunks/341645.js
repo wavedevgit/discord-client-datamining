@@ -38,8 +38,8 @@ var i = n(627968),
     k = n(360469),
     O = n(768349),
     U = n(985018),
-    B = n(356053);
-let G = l.memo(e => {
+    G = n(356053);
+let B = l.memo(e => {
     let {
         start: t
     } = e, [n, i] = l.useState(0), r = (0, M.j)(), a = (0, s.bG)([u.A], () => u.A.useReducedMotion), d = !1 === r || a;
@@ -50,7 +50,7 @@ let G = l.memo(e => {
         }), () => e.stop()
     }, [d, t]), (0, b.f)(n)
 });
-G.displayName = "ActivityRuntimeCounter";
+B.displayName = "ActivityRuntimeCounter";
 let F = l.memo(function(e) {
     let t, {
             application: n,
@@ -156,18 +156,18 @@ let F = l.memo(function(e) {
         title: n.name,
         iconSrc: er,
         info: (0, i.jsx)("div", {
-            className: B.QR,
+            className: G.QR,
             children: Z ? (0, i.jsx)(d.Text, {
                 variant: "text-xs/medium",
                 color: "none",
                 children: ei
             }) : (0, i.jsxs)(i.Fragment, {
                 children: [null != K && (0, i.jsxs)("div", {
-                    className: B.oL,
+                    className: G.oL,
                     children: [null != es && (0, i.jsxs)("div", {
-                        className: B.DT,
+                        className: G.DT,
                         children: [(0, i.jsx)("div", {
-                            className: B.y9,
+                            className: G.y9,
                             children: (0, i.jsx)(eo.Icon, {
                                 size: "xxs",
                                 color: "currentColor"
@@ -175,12 +175,12 @@ let F = l.memo(function(e) {
                         }), (0, i.jsx)(d.Text, {
                             variant: "text-xs/medium",
                             color: "none",
-                            children: (0, i.jsx)(G, {
+                            children: (0, i.jsx)(B, {
                                 start: es
                             })
                         })]
                     }), (0, i.jsxs)("div", {
-                        className: a()(B.DT, B.PK),
+                        className: a()(G.DT, G.PK),
                         children: [(0, i.jsx)("div", {
                             children: (0, i.jsx)(d.ueQ, {
                                 size: "xxs",

@@ -38,16 +38,16 @@ var i = n(627968),
     M = n(31717),
     k = n(517019),
     P = n(71393),
-    G = n(320501),
-    U = n(309010),
+    U = n(320501),
+    G = n(309010),
     V = n(967198),
     z = n(287809),
     H = n(532624),
     W = n(256415),
     B = n(203982),
     K = n(460350),
-    Y = n(350535),
-    F = n(401955),
+    F = n(350535),
+    Y = n(401955),
     Z = n(799808),
     J = n(683484),
     X = n(855790),
@@ -92,7 +92,7 @@ class ei extends s.Component {
             e.preventDefault();
             let {
                 channel: t
-            } = this.props, n = G.A.getLastEditableMessage(t.id);
+            } = this.props, n = U.A.getLastEditableMessage(t.id);
             null != n && p.A.startEditMessageRecord(t.id, n)
         }
     };
@@ -387,7 +387,7 @@ class es extends s.PureComponent {
             u = n && (c || s),
             h = n && s,
             p = n && c && !s,
-            A = (0, F.A)(r);
+            A = (0, Y.A)(r);
         return (0, i.jsx)(X.Ay, {
             className: a()(A, {
                 [et.yw]: !n,
@@ -447,7 +447,7 @@ function el(e) {
     let {
         contained: t = !1,
         ...n
-    } = e, s = (0, d.bG)([V.A], () => V.A.getGuildId()), l = (0, d.bG)([U.A], () => U.A.getChannelId(s)), a = (0, d.bG)([L.A], () => L.A.getChannel(l)), r = (0, d.bG)([H.Ay], () => H.Ay.getOverlayChatKeybind()), o = null != r ? (0, Y.dI)(r.shortcut, !0) : "]", [c, u, h] = (0, d.yK)([W.default], () => [W.default.getTextWidgetOpacity(), W.default.getActiveRegions(), !t && W.default.isPreviewingInGame()]), p = (0, d.bG)([P.A], () => P.A.getGuild(s)), A = (0, d.bG)([k.A], () => null != s && k.A.didAgree(s)), f = null != a && a.isPrivate() ? a.getRecipientId() : null, g = (0, d.bG)([R.A], () => null != l ? R.A.getPendingReply(l) : void 0), E = (0, d.bG)([z.default], () => null != f ? z.default.getUser(f) : null), {
+    } = e, s = (0, d.bG)([V.A], () => V.A.getGuildId()), l = (0, d.bG)([G.A], () => G.A.getChannelId(s)), a = (0, d.bG)([L.A], () => L.A.getChannel(l)), r = (0, d.bG)([H.Ay], () => H.Ay.getOverlayChatKeybind()), o = null != r ? (0, F.dI)(r.shortcut, !0) : "]", [c, u, h] = (0, d.yK)([W.default], () => [W.default.getTextWidgetOpacity(), W.default.getActiveRegions(), !t && W.default.isPreviewingInGame()]), p = (0, d.bG)([P.A], () => P.A.getGuild(s)), A = (0, d.bG)([k.A], () => null != s && k.A.didAgree(s)), f = null != a && a.isPrivate() ? a.getRecipientId() : null, g = (0, d.bG)([R.A], () => null != l ? R.A.getPendingReply(l) : void 0), E = (0, d.bG)([z.default], () => null != f ? z.default.getUser(f) : null), {
         placeholder: x
     } = (0, _.A)({
         channel: a

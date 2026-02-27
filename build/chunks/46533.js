@@ -44,8 +44,8 @@ var i = n(627968),
     H = n(919638),
     F = n(808728),
     Y = n(71393),
-    q = n(186111),
-    W = n(576705),
+    W = n(186111),
+    q = n(576705),
     K = n(584569),
     z = n(383501),
     $ = n(287809),
@@ -406,7 +406,7 @@ function eA(e) {
         guildId: t,
         hideSelectedChannel: n,
         selectedChannelId: l
-    } = e, d = (0, s.bG)([Y.A], () => Y.A.getGuild(t)), c = (0, C.A)(t), A = (0, s.bG)([B.A], () => B.A.getGuildDimensions(t).scrollTo), h = (0, s.bG)([z.A], () => z.A.getChannelId()), v = (0, s.bG)([W.A], () => W.A.can(ei.xBc.MANAGE_GUILD, d)), O = (0, s.bG)([H.A], () => H.A.isUnavailable(t)), U = (0, s.bG)([$.default], () => $.default.getCurrentUser()), {
+    } = e, d = (0, s.bG)([Y.A], () => Y.A.getGuild(t)), c = (0, C.A)(t), A = (0, s.bG)([B.A], () => B.A.getGuildDimensions(t).scrollTo), h = (0, s.bG)([z.A], () => z.A.getChannelId()), v = (0, s.bG)([q.A], () => q.A.can(ei.xBc.MANAGE_GUILD, d)), O = (0, s.bG)([H.A], () => H.A.isUnavailable(t)), U = (0, s.bG)([$.default], () => $.default.getCurrentUser()), {
         enableStudyGroup: G
     } = (0, b.y)(d), F = (0, E.Ay)(e => e.currentlyShown.has(o.M.NAGBAR_NOTICE_CONNECT_PLAYSTATION)), [X, Z] = r.useState(!F), J = (0, _.A)(t), {
         analyticsLocations: ee
@@ -414,7 +414,7 @@ function eA(e) {
     r.useEffect(() => {
         t !== J && Z(!F)
     }, [t, J, F]);
-    let [et, en] = (0, E.Ay)(e => [er.cA.some(t => e.currentlyShown.has(t.dismissibleContentType)), e.currentlyShownGroup.has(el.m.GUILD_HEADER_TOOLTIPS)], a.x), ea = (0, g.A)(d), es = (0, u.red)(u.DXt), eo = (0, s.bG)([q.A], () => q.A.hasLayers()), ec = (0, L.xr)(e => e.fullScreenLayers.length > 0), eA = (0, s.bG)([k.A], () => k.A.shouldShow(ed)), eh = (0, x.A)(t), e_ = d?.features.has(ei.GuildFeatures.HUB) === !0, em = v && d?.features.has(ei.GuildFeatures.DISCOVERABLE) === !0, ep = (0, s.bG)([y.A, q.A], () => null != d && null != U && v && !q.A.hasLayers() && y.A.shouldShowGuildTemplateDirtyTooltip(t)), eg = (0, s.bG)([V.A], () => V.A.getChannel(l)), {
+    let [et, en] = (0, E.Ay)(e => [er.cA.some(t => e.currentlyShown.has(t.dismissibleContentType)), e.currentlyShownGroup.has(el.m.GUILD_HEADER_TOOLTIPS)], a.x), ea = (0, g.A)(d), es = (0, u.red)(u.DXt), eo = (0, s.bG)([W.A], () => W.A.hasLayers()), ec = (0, L.xr)(e => e.fullScreenLayers.length > 0), eA = (0, s.bG)([k.A], () => k.A.shouldShow(ed)), eh = (0, x.A)(t), e_ = d?.features.has(ei.GuildFeatures.HUB) === !0, em = v && d?.features.has(ei.GuildFeatures.DISCOVERABLE) === !0, ep = (0, s.bG)([y.A, W.A], () => null != d && null != U && v && !W.A.hasLayers() && y.A.shouldShowGuildTemplateDirtyTooltip(t)), eg = (0, s.bG)([V.A], () => V.A.getChannel(l)), {
         isPopoutOpen: eE
     } = (0, T.S)(), eI = d?.features.has(ei.GuildFeatures.COMMUNITY) ?? !1, ef = Q.Ay.isNewUser(U), eC = X && !ef;
     (0, N.A)(d);

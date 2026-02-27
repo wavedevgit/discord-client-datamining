@@ -200,7 +200,7 @@ function M(e) {
                 }
             })
         },
-        B = D ? k ? (0, i.jsxs)(i.Fragment, {
+        G = D ? k ? (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(o.nys, {
                 size: "custom",
                 width: 12,
@@ -213,8 +213,8 @@ function M(e) {
                 height: 12
             }), " ", N.intl.string(N.t.NRC3ar)]
         }) : g?.description?.trim();
-    "" === B && (B = void 0);
-    let G = () => {
+    "" === G && (G = void 0);
+    let B = () => {
         C.default.track(S.HAw.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
             application_id: A.id,
             sku_id: c.id,
@@ -224,7 +224,7 @@ function M(e) {
     return (0, i.jsx)(w, {
         appName: A.name,
         title: c.name,
-        description: B,
+        description: G,
         link: `${location.protocol}//${location.host}${S.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(A.id,y.GlobalDiscoveryAppsSections.STORE)}`,
         onLinkCopy: () => {
             (0, b.K)(A.id, b.C.SKU_EMBED, r)
@@ -255,7 +255,7 @@ function M(e) {
                 subscriptionType: k ? "user" : "guild",
                 skuId: c.id,
                 icon: o.U1X,
-                onHasClicked: G,
+                onHasClicked: B,
                 subscriptionPlan: _,
                 state: M
             }) : (0, i.jsx)(o.Button, {
@@ -266,7 +266,7 @@ function M(e) {
                 appId: A.id,
                 sku: c,
                 icon: o.U1X,
-                onHasClicked: G
+                onHasClicked: B
             })]
         })
     })

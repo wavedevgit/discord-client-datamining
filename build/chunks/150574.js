@@ -36,7 +36,7 @@ let b = (0, r.memo)(function(e) {
     } = (0, A.Ay)(), G = (0, h.Ay)(), k = (0, I.S5)(t.userStatus?.claimedAt, {
         month: "numeric",
         day: "numeric"
-    }), V = t.userStatus?.claimedTier ?? 0, B = t.config.rewards[V], H = B?.type === o.l.FRACTIONAL_PREMIUM, F = B?.type === o.l.COLLECTIBLE, Y = B?.type === o.l.VIRTUAL_CURRENCY, q = B?.collectibleProduct?.items?.[0], W = q?.type === s.R.AVATAR_DECORATION ? q : null;
+    }), V = t.userStatus?.claimedTier ?? 0, B = t.config.rewards[V], H = B?.type === o.l.FRACTIONAL_PREMIUM, F = B?.type === o.l.COLLECTIBLE, Y = B?.type === o.l.VIRTUAL_CURRENCY, W = B?.collectibleProduct?.items?.[0], q = W?.type === s.R.AVATAR_DECORATION ? W : null;
     (0, A.i4)(P, e => {
         let {
             height: t
@@ -83,14 +83,14 @@ let b = (0, r.memo)(function(e) {
             className: a()(y.kL, {
                 [y.yo]: n
             }),
-            children: [null != M && F && null != W && (0, i.jsx)("div", {
+            children: [null != M && F && null != q && (0, i.jsx)("div", {
                 ref: D,
                 className: y.FX,
                 style: {
                     top: b
                 },
                 children: (0, i.jsx)(_.A, {
-                    avatarDecorationOverride: W,
+                    avatarDecorationOverride: q,
                     user: M,
                     guildId: null,
                     animateOnHover: !n

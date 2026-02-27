@@ -51,8 +51,8 @@ function T(e) {
         children: (0, a.Wf)(T, S, t)
     }), {
         analyticsLocations: U
-    } = (0, o.Ay)(y, s.A.REQUEST_TO_STREAM_INVITE_EMBED), B = b.intl.string(I.default["5+172e"]), G = !1;
-    return k ? (B = b.intl.string(I.default.u4QmWl), G = !0) : null != w ? (B = b.intl.string(I.default.P0wwmM), G = !0) : D !== S.id ? (B = b.intl.string(I.default.qRXats), G = !0) : null == M && (B = b.intl.string(I.default["43zohO"]), G = !0), (0, i.jsx)(d.h, {
+    } = (0, o.Ay)(y, s.A.REQUEST_TO_STREAM_INVITE_EMBED), G = b.intl.string(I.default["5+172e"]), B = !1;
+    return k ? (G = b.intl.string(I.default.u4QmWl), B = !0) : null != w ? (G = b.intl.string(I.default.P0wwmM), B = !0) : D !== S.id ? (G = b.intl.string(I.default.qRXats), B = !0) : null == M && (G = b.intl.string(I.default["43zohO"]), B = !0), (0, i.jsx)(d.h, {
         header: b.intl.string(I.default.nAyuPp),
         title: v.name,
         staticBannerSrc: j,
@@ -61,9 +61,9 @@ function T(e) {
         iconSrc: P ?? void 0,
         info: O,
         actions: T.author.id === t ? [] : [{
-            label: B,
+            label: G,
             trackingArea: c.kY.STREAM,
-            disabled: G,
+            disabled: B,
             onClick: () => {
                 null != M && ((0, x.isWindows)() ? (0, m.A)(M.pid) : (0, r.mMO)(async () => {
                     let {

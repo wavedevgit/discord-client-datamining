@@ -109,9 +109,9 @@ function U(e) {
                 })
             }
         })) : null != X && e.push(X), e
-    }, [T, X, K, t.id, Q, z, H, V, F, q, r, O, U, b]), $ = T ? (0, i.jsx)(G, {
+    }, [T, X, K, t.id, Q, z, H, V, F, q, r, O, U, b]), $ = T ? (0, i.jsx)(B, {
         app: t
-    }) : (0, i.jsx)(B, {
+    }) : (0, i.jsx)(G, {
         app: t
     });
     return (0, i.jsx)(j.h, {
@@ -137,7 +137,7 @@ function U(e) {
     })
 }
 
-function B(e) {
+function G(e) {
     let {
         app: t
     } = e, n = (0, y.Ie)({
@@ -174,7 +174,7 @@ function B(e) {
     })
 }
 
-function G(e) {
+function B(e) {
     let {
         app: t
     } = e, {

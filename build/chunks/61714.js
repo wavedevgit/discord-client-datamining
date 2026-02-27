@@ -38,16 +38,16 @@ var i = n(627968),
     M = n(760751),
     k = n(430452),
     P = n(309010),
-    G = n(485296),
-    U = n(157257),
+    U = n(485296),
+    G = n(157257),
     V = n(607567),
     z = n(256415),
     H = n(996439),
     W = n(427262),
     B = n(9302),
     K = n(31284),
-    Y = n(799808),
-    F = n(855790),
+    F = n(799808),
+    Y = n(855790),
     Z = n(652215),
     J = n(731854),
     X = n(985018),
@@ -70,7 +70,7 @@ function q(e) {
     } = e, m = (0, r.bG)([k.Ay], () => k.Ay.isLocalMute(l.id)), E = (0, r.bG)([w.A], () => w.A.getCurrentUserActiveStream()), x = (0, r.yK)([w.A], () => null != E ? w.A.getViewerIds(E) : []), y = (0, g.A)({
         userId: l.id,
         context: A
-    }), v = (0, r.bG)([G.A], () => G.A.isPrioritySpeaker(l.id, A)), S = (0, r.bG)([w.A], () => null != w.A.getStreamForUser(l.id, f)), C = s.useMemo(() => null != E && E.ownerId !== l.id && x.includes(l.id), [E, l.id, x]);
+    }), v = (0, r.bG)([U.A], () => U.A.isPrioritySpeaker(l.id, A)), S = (0, r.bG)([w.A], () => null != w.A.getStreamForUser(l.id, f)), C = s.useMemo(() => null != E && E.ownerId !== l.id && x.includes(l.id), [E, l.id, x]);
     if (c === Z.f5z.ONLY_WHILE_SPEAKING && n && !y) return null;
     let {
         mute: I,
@@ -201,7 +201,7 @@ class $ extends s.PureComponent {
                 context: e
             }, a.id)
         });
-        return (0, i.jsx)(F.Ay.Body, {
+        return (0, i.jsx)(Y.Ay.Body, {
             className: a()({
                 [c.A.VOICE_WIDGET_TOP_MARGIN]: l,
                 [Q.mn]: l
@@ -218,11 +218,11 @@ class $ extends s.PureComponent {
             title: t,
             isPreviewingInGame: n
         } = this.props;
-        return (0, i.jsxs)(F.Ay.Bar, {
+        return (0, i.jsxs)(Y.Ay.Bar, {
             className: a()(Q.bl, {
                 [Q.VH]: n
             }),
-            children: [(0, i.jsxs)(F.Ay.Content, {
+            children: [(0, i.jsxs)(Y.Ay.Content, {
                 dynamicSize: !0,
                 className: a()(Q.Qs, {
                     [Q.R]: n
@@ -247,13 +247,13 @@ class $ extends s.PureComponent {
                     className: Q.DD,
                     children: t
                 })]
-            }), n ? null : (0, i.jsx)(F.Ay.Icon, {
+            }), n ? null : (0, i.jsx)(Y.Ay.Icon, {
                 icon: u.Zes,
                 label: X.intl.string(X.t.NiTd0e),
                 onClick: this.handleOpenVoiceSettings,
                 tooltipPosition: "left",
                 size: 18
-            }), n ? null : (0, i.jsx)(F.Ay.Icon, {
+            }), n ? null : (0, i.jsx)(Y.Ay.Icon, {
                 icon: e ? u.hl9 : u.qgw,
                 label: e ? X.intl.string(X.t.cSu80j) : X.intl.string(X.t.cM8Vnm),
                 onClick: this.handlePin,
@@ -279,12 +279,12 @@ class $ extends s.PureComponent {
             sanitizedTitle: h,
             title: p
         } = (0, S.A)(r);
-        return (0, i.jsx)(F.Ay.Bar, {
+        return (0, i.jsx)(Y.Ay.Bar, {
             className: a()(Q.Wm, {
                 [Q.R]: n,
                 [Q.CW]: !t
             }),
-            children: (0, i.jsxs)(F.Ay.Content, {
+            children: (0, i.jsxs)(Y.Ay.Content, {
                 className: Q.Vb,
                 dynamicSize: !0,
                 children: [(0, i.jsxs)("div", {
@@ -342,10 +342,10 @@ class $ extends s.PureComponent {
         })
     }
     componentDidMount() {
-        (0, Y.j_)(this.props, this.shouldDisplay())
+        (0, F.j_)(this.props, this.shouldDisplay())
     }
     componentDidUpdate(e) {
-        (0, Y.Mw)(e, this.props, this.shouldDisplay)
+        (0, F.Mw)(e, this.props, this.shouldDisplay)
     }
     shouldDisplay() {
         let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : this.props,
@@ -369,7 +369,7 @@ class $ extends s.PureComponent {
         } = this.props;
         if (null == r || null == e || !this.shouldDisplay()) return null;
         let o = Z.UVF.UNPINNED;
-        return s && (o = Z.UVF.PINNED), l && (o = Z.UVF.IN_GAME_PREVIEW), n && (o = Z.UVF.IN_GAME), (0, i.jsxs)(F.Ay, {
+        return s && (o = Z.UVF.PINNED), l && (o = Z.UVF.IN_GAME_PREVIEW), n && (o = Z.UVF.IN_GAME), (0, i.jsxs)(Y.Ay, {
             type: o,
             width: 380,
             children: [n ? null : this.renderHeader(), this.renderVoiceUsers(), this.renderStreamerSettings(), n ? null : (0, i.jsx)(K.A, {
@@ -401,13 +401,13 @@ function ee(e) {
             return e
         }(),
         l = (0, r.bG)([w.A], () => w.A.getStreamerActiveStreamMetadata()),
-        a = (0, r.bG)([x.Ay, U.A, M.A], () => {
-            let e = (0, I.A)(x.Ay, U.A);
+        a = (0, r.bG)([x.Ay, G.A, M.A], () => {
+            let e = (0, I.A)(x.Ay, G.A);
             return null != e ? M.A.findGame(e)?.id : null
         }),
         o = (0, _.h)(a),
-        d = (0, r.cf)([x.Ay, U.A, w.A, z.default], () => {
-            let e = (0, I.A)(x.Ay, U.A),
+        d = (0, r.cf)([x.Ay, G.A, w.A, z.default], () => {
+            let e = (0, I.A)(x.Ay, G.A),
                 t = w.A.getCurrentUserActiveStream();
             return {
                 displayUserMode: z.default.getDisplayUserMode(),

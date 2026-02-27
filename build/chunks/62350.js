@@ -152,7 +152,7 @@ function U(e) {
         } = (0, p.Ay)(h.A.INVITE_EMBED),
         O = (0, d.yK)([m.Ay], () => null != P ? m.Ay.getEmbeddedActivitiesForChannel(P.id).filter(e => e.applicationId === A.id).flatMap(e => Array.from(e.userIds)) : [], [P, A.id]),
         U = (0, d.yK)([S.default], () => O.map(e => S.default.getUser(e)).filter(e => null != e), [O]),
-        G = l.useCallback(() => {
+        B = l.useCallback(() => {
             (0, _.he)({
                 invite: r,
                 action: "accept",
@@ -174,7 +174,7 @@ function U(e) {
     let V = H && !D || H && I;
     return (D || (n = w.intl.string(w.t.hHGrWz)), null == r.code || "" === r.code || null == C) ? null : (0, i.jsx)(p.f5, {
         value: k,
-        children: (0, i.jsx)(B, {
+        children: (0, i.jsx)(G, {
             app: C,
             activityUsers: U,
             isMember: H,
@@ -188,13 +188,13 @@ function U(e) {
             buttonLabel: t,
             disabled: V,
             disabledReason: n,
-            handleAcceptInvite: G,
+            handleAcceptInvite: B,
             onView: x
         })
     })
 }
 
-function B(e) {
+function G(e) {
     let {
         app: t,
         activityUsers: n,

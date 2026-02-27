@@ -40,8 +40,8 @@ var i = n(627968),
     k = n(870136),
     O = n(33525),
     U = n(484724),
-    B = n(71755),
-    G = n(178879),
+    G = n(71755),
+    B = n(178879),
     F = n(118331),
     H = n(520586),
     V = n(857071),
@@ -94,8 +94,8 @@ var i = n(627968),
     ek = n(564107),
     eO = n(763899),
     eU = n(652176),
-    eB = n(382807),
-    eG = n(394839),
+    eG = n(382807),
+    eB = n(394839),
     eF = n(96782),
     eH = n(573163),
     eV = n(861986),
@@ -215,7 +215,7 @@ class e$ extends l.Component {
                 message: e,
                 getAcceptInviteContext: this.getAcceptInviteContext
             }, l) : null;
-            if (n === v.I.TEMPLATE) return (0, i.jsx)(B.A, {
+            if (n === v.I.TEMPLATE) return (0, i.jsx)(G.A, {
                 code: l
             }, l);
             if (n === v.I.EVENT) return (0, i.jsx)(U.A, {
@@ -394,7 +394,7 @@ class e$ extends l.Component {
                 });
             return d in h && g && (o.onClick = h[d], o.handlePreloadImage = p[d]), o
         });
-        return (0, i.jsx)(eG.A, {
+        return (0, i.jsx)(eB.A, {
             items: f
         })
     }
@@ -460,7 +460,7 @@ class e$ extends l.Component {
             hasBailedAst: n
         } = this.props;
         return 0 === e.embeds.length || !t || n ? null : e.embeds.map((t, n) => {
-            if (eq.z.has(t.type) || (0, ef.p6)(t) || (0, G.f)(t) && !(0, F.d)(e) || (0, ef.V)(t) || (0, ef.G8)(t)) return null;
+            if (eq.z.has(t.type) || (0, ef.p6)(t) || (0, B.f)(t) && !(0, F.d)(e) || (0, ef.V)(t) || (0, ef.G8)(t)) return null;
             let l = {
                 renderImageComponent: eU.LL,
                 renderVideoComponent: eU.$o,
@@ -616,7 +616,7 @@ class e$ extends l.Component {
     }
     renderInteractionPremiumUpsell(e) {
         let t = e.applicationId;
-        return e.type !== s.l.INTERACTION_PREMIUM_UPSELL || null == t ? null : (0, i.jsx)(eB.A, {
+        return e.type !== s.l.INTERACTION_PREMIUM_UPSELL || null == t ? null : (0, i.jsx)(eG.A, {
             applicationId: t,
             guildId: this.props.channel.guild_id
         })

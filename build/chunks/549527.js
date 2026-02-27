@@ -38,9 +38,9 @@ var i = n(627968),
     k = n(709634),
     O = n(652215),
     U = n(381941),
-    B = n(618231);
+    G = n(618231);
 
-function G(e) {
+function B(e) {
     let {
         message: t,
         snapshot: n,
@@ -63,15 +63,15 @@ function G(e) {
         }))
     }, [t]);
     return null == h ? null : (0, i.jsxs)(d.DUT, {
-        className: B.xQ,
+        className: G.xQ,
         onClick: p,
         "aria-label": h.accessibilityLabel,
         children: [null != h.originIconUrl ? (0, i.jsx)("img", {
-            className: B.yl,
+            className: G.yl,
             src: h.originIconUrl,
             alt: ""
         }) : null, (0, i.jsx)(r.EYj, {
-            className: B.PJ,
+            className: G.PJ,
             variant: "text-sm/medium",
             color: "none",
             children: `${h.originLabel}  •  ${h.timestampLabel}`
@@ -146,7 +146,7 @@ function F(e) {
         }),
         disableInteraction: !0,
         compact: !1,
-        className: B.iU,
+        className: G.iU,
         author: o
     })
 }
@@ -186,9 +186,9 @@ function H(e) {
         }),
         C = (0, a.bG)([N.A], () => N.A.getChannel(t.channel_id));
     return null == C ? null : (0, i.jsx)("div", {
-        className: B.kL,
+        className: G.kL,
         children: (0, i.jsxs)("div", {
-            className: B.Qs,
+            className: G.Qs,
             children: [(0, i.jsx)(F, {
                 mergedMessageRecord: d,
                 content: A,
@@ -206,8 +206,8 @@ function H(e) {
                 isInteracting: !1,
                 isMessageSnapshot: !0,
                 renderThreadAccessory: !1,
-                className: B.Mf
-            }), (0, i.jsx)(G, {
+                className: G.Mf
+            }), (0, i.jsx)(B, {
                 message: t,
                 snapshot: n,
                 index: r

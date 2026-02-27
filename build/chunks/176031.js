@@ -45,8 +45,8 @@ var i = n(627968),
     H = n(275759),
     F = n(717807),
     Y = n(385327),
-    q = n(727949),
-    W = n(466336),
+    W = n(727949),
+    q = n(466336),
     K = n(615003),
     z = n(442802),
     $ = n(67173),
@@ -310,7 +310,7 @@ let eS = r.memo(function(e) {
         selectedChannelId: _,
         path: m
     } = e, g = r.useRef(null), I = r.useRef(null), f = r.useRef(null), C = r.useRef(null), N = (0, P.c)("PrivateChannels"), S = null;
-    return d ? S = (0, i.jsx)(W.V, {
+    return d ? S = (0, i.jsx)(q.V, {
         targetElementRef: C
     }) : u && (S = (0, i.jsx)(F.A, {
         targetElementRef: C
@@ -416,7 +416,7 @@ function ev() {
         _ = (0, K.P)({
             selected: null == h ? r : h.startsWith(eo.BVt.APPLICATION_STORE)
         }),
-        m = (0, q.Tp)(),
+        m = (0, W.Tp)(),
         p = (0, u.bG)([k.A], () => k.A.getReminderStateId()),
         g = (0, Y.c7)(),
         E = [],

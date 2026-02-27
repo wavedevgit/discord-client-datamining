@@ -128,20 +128,20 @@ function j(e, t) {
         hasVoted: k,
         isEditingVote: O,
         isExpired: U,
-        isInteractive: B,
-        reactions: G,
+        isInteractive: G,
+        reactions: B,
         selectedAnswerIds: F,
         submitting: H,
         tapShouldOpenVotersModal: V,
         showResults: W
-    } = j, q = (0, x.aw)(G), Y = T.intl.formatToPlainString(T.t.XRkuof, {
+    } = j, q = (0, x.aw)(B), Y = T.intl.formatToPlainString(T.t.XRkuof, {
         count: q
     }), z = Math.max(...v.map(e => {
-        let t = S(G, `${e.answer_id}`);
+        let t = S(B, `${e.answer_id}`);
         return t?.count_details?.vote ?? 0
     })), Q = v.map(e => {
         let t, r = `${e.answer_id}`,
-            o = S(G, r),
+            o = S(B, r),
             d = o?.count_details?.vote ?? 0,
             c = 0 === q ? 0 : d / q,
             u = F.has(r),
@@ -225,7 +225,7 @@ function j(e, t) {
         hasVoted: k,
         isEditingVote: O,
         canRemoveVote: R,
-        isInteractive: B,
+        isInteractive: G,
         showResults: W
     }).with({
         isInteractive: !1
@@ -260,7 +260,7 @@ function j(e, t) {
         type: "submit"
     })), J = (0, g.isIOS)() ? T.intl.string(T.t["PVATM/"]) : T.intl.string(T.t.cHfFql), X = (0, i.YW)({
         isExpired: U,
-        isInteractive: B,
+        isInteractive: G,
         isEditingVote: O
     }).with({
         isInteractive: !1,
@@ -283,13 +283,13 @@ function j(e, t) {
         presentation: "text",
         enabled: !0,
         type: "showVoterDetails"
-    })), Z = !B || U || k || W ? void 0 : {
+    })), Z = !G || U || k || W ? void 0 : {
         label: T.intl.string(T.t["/KHAUF"]),
         presentation: "textButton",
         enabled: !0,
         type: "showVotes"
     }, $ = u.allow_multiselect, ee = (0, i.YW)({
-        isInteractive: B,
+        isInteractive: G,
         isExpired: U,
         canSelectMultipleAnswers: $
     }).with({
@@ -324,7 +324,7 @@ function j(e, t) {
         }),
         containerStyle: "normal",
         primaryAction: K,
-        isInteractive: B,
+        isInteractive: G,
         canTapAnswers: L,
         canSelectMultipleAnswers: $,
         hasSelectedAnswer: D,

@@ -196,7 +196,7 @@ function P(e) {
             channelId: t
         } = e;
         return t
-    }), b = (0, a.bG)([N.A], () => N.A.getVoiceChannelId()), j = (0, a.bG)([S.A], () => S.A.getGuildVersion(t)), D = (0, a.bG)([g.A], () => g.A.version), w = (0, a.bG)([y.default], () => y.default.getGuildChangeSentinel(t)), L = (0, o.a1)(n?.id), M = (0, d.vj)(n?.id), P = n?.features.has(R.GuildFeatures.COMMUNITY) ?? !1, G = (0, a.bG)([I.A], () => I.A.getChannelId()), U = (0, a.bG)([C.A], () => C.A.desyncedVoiceStatesCount);
+    }), b = (0, a.bG)([N.A], () => N.A.getVoiceChannelId()), j = (0, a.bG)([S.A], () => S.A.getGuildVersion(t)), D = (0, a.bG)([g.A], () => g.A.version), w = (0, a.bG)([y.default], () => y.default.getGuildChangeSentinel(t)), L = (0, o.a1)(n?.id), M = (0, d.vj)(n?.id), P = n?.features.has(R.GuildFeatures.COMMUNITY) ?? !1, U = (0, a.bG)([I.A], () => I.A.getChannelId()), G = (0, a.bG)([C.A], () => C.A.desyncedVoiceStatesCount);
     return (0, i.jsx)(k, {
         guildId: t,
         guild: n,
@@ -207,8 +207,8 @@ function P(e) {
         selectedChannelId: A,
         selectedVoiceChannelId: b,
         voiceStates: u,
-        rtcConnectedChannelId: G,
-        rtcDesyncedVoiceStatesCount: U,
+        rtcConnectedChannelId: U,
+        rtcDesyncedVoiceStatesCount: G,
         collapsedChannels: h,
         collapseMuted: c,
         guildReadStateSentinel: w,

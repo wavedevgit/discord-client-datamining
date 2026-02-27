@@ -44,8 +44,8 @@ let L = (0, s.animated)(c.abt),
             toggleExpanded: O,
             sourceQuestContent: U
         } = e, {
-            ref: B,
-            height: G
+            ref: G,
+            height: B
         } = (0, u.Ay)(), [F, H] = l.useState(null), [V, W] = l.useState(null), q = (0, m.A)(e => {
             let t = e.target;
             H(t.offsetWidth), W(t.scrollWidth)
@@ -74,7 +74,7 @@ let L = (0, s.animated)(c.abt),
             }),
             "aria-label": N.intl.string(N.t.dcl9MQ),
             style: {
-                height: z ? G : void 0
+                height: z ? B : void 0
             },
             children: [(0, i.jsx)(f.A, {
                 quest: n,
@@ -135,7 +135,7 @@ let L = (0, s.animated)(c.abt),
                         })
                     }), (0, i.jsx)(s.animated.div, {
                         ref: e => {
-                            B.current = e
+                            G.current = e
                         },
                         className: a()(j.Yu, {
                             [j.fu]: z,

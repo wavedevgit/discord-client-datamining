@@ -146,7 +146,7 @@ let U = e => {
             })]
         })
     },
-    B = e => {
+    G = e => {
         let t, {
                 sticker: n,
                 channel: r,
@@ -156,9 +156,9 @@ let U = e => {
             [S, y] = l.useState(null),
             [N, L] = l.useState(!1),
             U = b.default.getCurrentUser(),
-            B = v.Ay.canUseCustomStickersEverywhere(U),
-            G = (0, s.bG)([I.A], () => I.A.getGuild(n.guild_id)),
-            F = null != G,
+            G = v.Ay.canUseCustomStickersEverywhere(U),
+            B = (0, s.bG)([I.A], () => I.A.getGuild(n.guild_id)),
+            F = null != B,
             [H, V] = l.useState(!1),
             [W, q] = l.useState(null),
             Y = l.useMemo(() => ({
@@ -172,7 +172,7 @@ let U = e => {
                 ...(0, h.dI)(r)
             }),
             Q = {
-                stickerSourceGuild: G,
+                stickerSourceGuild: B,
                 refreshPositionKey: C
             },
             K = l.useRef(Q);
@@ -190,12 +190,12 @@ let U = e => {
             X = null != S,
             Z = !1,
             $ = "Custom Sticker Popout";
-        B ? t = F ? J ? M.intl.string(M.t.fZ0DiG) : M.intl.string(M.t["1f6D9m"]) : X ? M.intl.string(M.t.yHmoR9) : M.intl.string(M.t.vZaScH) : F ? (t = J ? M.intl.string(M.t.jNphpt) : M.intl.string(M.t.lyD5ZW), Z = !0, $ = "Custom Sticker Popout (Upsell)") : X ? (t = M.intl.string(M.t.IuXYch), Z = !0, $ = "Custom Sticker Popout (Upsell)") : (t = M.intl.format(M.t.hGWuxU, {
+        G ? t = F ? J ? M.intl.string(M.t.fZ0DiG) : M.intl.string(M.t["1f6D9m"]) : X ? M.intl.string(M.t.yHmoR9) : M.intl.string(M.t.vZaScH) : F ? (t = J ? M.intl.string(M.t.jNphpt) : M.intl.string(M.t.lyD5ZW), Z = !0, $ = "Custom Sticker Popout (Upsell)") : X ? (t = M.intl.string(M.t.IuXYch), Z = !0, $ = "Custom Sticker Popout (Upsell)") : (t = M.intl.format(M.t.hGWuxU, {
             openPremiumSettings: () => {
                 k(r), o()
             }
         }), $ = "Custom Sticker Popout (Soft Upsell)");
-        let ee = !Z && !F && X && B;
+        let ee = !Z && !F && X && G;
         if (l.useEffect(() => {
                 let {
                     refreshPositionKey: e
@@ -247,10 +247,10 @@ let U = e => {
                             onClick: e
                         })
                     })]
-                })), (null != G || null != S) && (() => {
+                })), (null != B || null != S) && (() => {
                     if (!X && !F) return;
                     let e = (S?.stickers ?? []).slice(0, 13).filter(e => e.id !== n.id).slice(0, 12),
-                        t = null != S ? g.GO.createFromDiscoverableGuild(S) : g.GO.createFromGuildRecord(G);
+                        t = null != S ? g.GO.createFromDiscoverableGuild(S) : g.GO.createFromGuildRecord(B);
                     return (0, i.jsxs)("div", {
                         className: D.tl,
                         children: [(0, i.jsx)(u.Text, {
@@ -318,7 +318,7 @@ let U = e => {
         }
     };
 
-function G(e) {
+function B(e) {
     let {
         channel: t,
         closePopout: n,
@@ -348,12 +348,12 @@ let F = e => {
         closePopout: l,
         channel: n,
         refreshPositionKey: r
-    }) : null != a && (0, N.Xw)(a) ? (0, i.jsx)(B, {
+    }) : null != a && (0, N.Xw)(a) ? (0, i.jsx)(G, {
         sticker: a,
         channel: n,
         closePopout: l,
         refreshPositionKey: r
-    }) : s ? s && null == a ? (0, i.jsx)(G, {
+    }) : s ? s && null == a ? (0, i.jsx)(B, {
         channel: n,
         closePopout: l,
         sticker: t

@@ -58,23 +58,23 @@ function b(e) {
                 invite_message_id: T.id
             }, R)
         }, [n, T, R, P, v, S]),
-        B = null != b;
+        G = null != b;
     if (null == b) {
         if (null == n.guild) return (0, i.jsx)(x.A, {});
         b = (0, g.DY)(n.guild)
     }
-    let G = null != n.channel ? (0, m.OY)(n.channel) : null,
+    let B = null != n.channel ? (0, m.OY)(n.channel) : null,
         F = A.Ay.getName(D),
-        H = P || !M && B,
+        H = P || !M && G,
         V = E.intl.string(E.t.I6JG46),
         W = "active";
-    B && !M ? (t = k ? E.intl.string(E.t.oBLoZJ) : E.intl.formatToPlainString(E.t["0QJmA+"], {
+    G && !M ? (t = k ? E.intl.string(E.t.oBLoZJ) : E.intl.formatToPlainString(E.t["0QJmA+"], {
         name: F
     }), V = E.intl.string(E.t.Wdi5E1)) : (W = "active", P && (V = E.intl.string(E.t.Q1W99y), W = "secondary"), t = k ? E.intl.string(E.t["4hyaHu"]) : E.intl.formatToPlainString(E.t.QmlLEq, {
         name: F
     }));
-    let q = N === b.id && null != G ? (0, i.jsx)(_.A.Channel, {
-        channel: G
+    let q = N === b.id && null != B ? (0, i.jsx)(_.A.Channel, {
+        channel: B
     }) : E.intl.formatToPlainString(E.t.u0vaDE, {
         guildName: b.name
     });
@@ -86,10 +86,10 @@ function b(e) {
                 className: I.iH,
                 children: [(0, i.jsx)(_.A.Icon, {
                     guild: b,
-                    onClick: B && M ? U : void 0
+                    onClick: G && M ? U : void 0
                 }), (0, i.jsx)(_.A.Info, {
                     title: t,
-                    onClick: B && M ? U : void 0,
+                    onClick: G && M ? U : void 0,
                     children: q
                 })]
             }), (0, i.jsx)(s.$nd, {

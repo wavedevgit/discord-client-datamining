@@ -124,14 +124,14 @@ function v(e) {
         }
     }, [p, h, b, D, j, n.id, t.id, R, P, L, M]), U = k.some(e => e.trackingArea === u.kY.CLOUD_PLAY);
     (0, f.A)(U, L);
-    let B = k.length > 0,
-        G = l.useMemo(() => (0, i.jsx)(o.Text, {
+    let G = k.length > 0,
+        B = l.useMemo(() => (0, i.jsx)(o.Text, {
             variant: "text-xs/medium",
             className: I.h_,
             color: "none",
             lineClamp: 3,
-            children: (0, A.BE)(t, r, a, m, B)
-        }), [t, r, a, m, B]);
+            children: (0, A.BE)(t, r, a, m, G)
+        }), [t, r, a, m, G]);
     return 0 === k.length ? (0, i.jsx)(T, {
         message: t,
         applicationName: r,
@@ -147,7 +147,7 @@ function v(e) {
             onClickBanner: S,
             bannerAspectRatio: c.u.ACTIVITY,
             iconSrc: y ?? void 0,
-            info: G,
+            info: B,
             actions: k,
             primaryActionFirst: !0,
             onClickContent: S,

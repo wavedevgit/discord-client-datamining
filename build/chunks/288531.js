@@ -99,11 +99,11 @@ let w = e => {
         isAnimating: k,
         contentPosition: O,
         sourceQuestContent: U
-    } = e, B = (0, A.In)(t), G = (0, A.S5)(t.userStatus?.completedAt, {
+    } = e, G = (0, A.In)(t), B = (0, A.S5)(t.userStatus?.completedAt, {
         year: "numeric",
         month: "long",
         day: "numeric"
-    }), F = B >= A.F3.ACCEPTED, H = B >= A.F3.COMPLETED, V = D || k, W = (0, g.wT)(t, N.rE.QUESTS_CARD, n, U), q = (0, x.Ut)(), Y = (0, A.fc)(t), z = (0, g.mU)({
+    }), F = G >= A.F3.ACCEPTED, H = G >= A.F3.COMPLETED, V = D || k, W = (0, g.wT)(t, N.rE.QUESTS_CARD, n, U), q = (0, x.Ut)(), Y = (0, A.fc)(t), z = (0, g.mU)({
         quest: t,
         taskDetails: Y,
         location: N.rE.QUESTS_CARD,
@@ -205,7 +205,7 @@ let w = e => {
                         locale: X,
                         isQuestExpired: w,
                         collectibleQuestRewardDescription: z,
-                        formattedCompletionDate: G
+                        formattedCompletionDate: B
                     })
                 })]
             }), Q ? (0, i.jsxs)(d.ButtonGroup, {
@@ -249,7 +249,7 @@ let w = e => {
                     analyticsCtxQuestContentPosition: O
                 }) : (0, i.jsx)(M, {
                     quest: t,
-                    progressState: B,
+                    progressState: G,
                     questContent: n,
                     sourceQuestContent: U
                 }))]

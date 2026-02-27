@@ -67,7 +67,7 @@ function N(e) {
                 context: N("Invite Button Embed")
             })
         },
-        B = (0, i.jsx)(I.A, {
+        G = (0, i.jsx)(I.A, {
             onTransitionToInviteChannel: O,
             onAcceptInstantInvite: U,
             currentUserId: D,
@@ -77,18 +77,18 @@ function N(e) {
         });
     switch (P.state) {
         case y.elq.RESOLVING:
-            B = (0, i.jsx)(v.A, {});
+            G = (0, i.jsx)(v.A, {});
             break;
         case y.elq.EXPIRED:
         case y.elq.BANNED:
-            B = (0, i.jsx)(T.A, {
+            G = (0, i.jsx)(T.A, {
                 banned: P.state === y.elq.BANNED,
                 author: n.author,
                 channelId: n.channel_id
             });
             break;
         case y.elq.ERROR:
-            B = (0, i.jsx)(f.A, {
+            G = (0, i.jsx)(f.A, {
                 author: n.author,
                 inviteError: L
             });
@@ -96,7 +96,7 @@ function N(e) {
         default:
             switch ((0, _.On)(P)) {
                 case _.Xd.GROUP_DM:
-                    B = (0, i.jsx)(E.A, {
+                    G = (0, i.jsx)(E.A, {
                         onTransitionToInviteChannel: O,
                         onAcceptInstantInvite: U,
                         currentUserId: D,
@@ -105,7 +105,7 @@ function N(e) {
                     });
                     break;
                 case _.Xd.FRIEND:
-                    B = (0, i.jsx)(C.A, {
+                    G = (0, i.jsx)(C.A, {
                         invite: P,
                         message: n,
                         getAcceptInviteContext: N
@@ -113,7 +113,7 @@ function N(e) {
                     break;
                 default:
                     if ((0, _.G4)(P)) {
-                        B = (0, i.jsx)(S.A, {
+                        G = (0, i.jsx)(S.A, {
                             onTransitionToInviteChannel: O,
                             onAcceptInstantInvite: U,
                             currentUserId: D,
@@ -124,7 +124,7 @@ function N(e) {
                         break
                     }
                     if ((0, _.ly)(P)) {
-                        B = (0, i.jsx)(u.Ay, {
+                        G = (0, i.jsx)(u.Ay, {
                             guildScheduledEvent: k,
                             guild: P.guild,
                             channel: P.channel,
@@ -135,13 +135,13 @@ function N(e) {
                         break
                     }
                     if ((0, _.oK)(P)) {
-                        B = (0, i.jsx)(x.A, {
+                        G = (0, i.jsx)(x.A, {
                             invite: P,
                             getAcceptInviteContext: N,
                             message: n
                         });
                         break
-                    }(0, d.v)(P) && (B = (0, i.jsx)(b.A, {
+                    }(0, d.v)(P) && (G = (0, i.jsx)(b.A, {
                         onTransitionToInviteChannel: O,
                         onAcceptInstantInvite: U,
                         isMemberOfGuild: null != w,
@@ -152,6 +152,6 @@ function N(e) {
     }
     return (0, i.jsx)(s.A, {
         section: y.JJy.INVITE_LINK,
-        children: B
+        children: G
     })
 }

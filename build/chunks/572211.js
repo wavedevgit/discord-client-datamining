@@ -81,7 +81,7 @@ function I(e) {
             channelId: N.channelId,
             messageId: N.messageId
         }), D.current = !0)
-    }, void 0), O = null != I, U = null != b && !1 === w, B = O || U, G = 0 === T ? f.pv : f.$g, F = r.useRef(null), H = r.useCallback(() => {
+    }, void 0), O = null != I, U = null != b && !1 === w, G = O || U, B = 0 === T ? f.pv : f.$g, F = r.useRef(null), H = r.useCallback(() => {
         let e = F.current;
         null == e || ("hidden" === getComputedStyle(e).visibility ? e.pause() : e.play())
     }, []), V = r.useMemo(() => !!U && new URL(b).pathname.endsWith(".gif"), [U, b]), W = r.useMemo(() => {
@@ -110,9 +110,9 @@ function I(e) {
     return (0, l.jsxs)("div", {
         ref: k,
         className: f.E6,
-        children: [B && (0, l.jsxs)(E, {
+        children: [G && (0, l.jsxs)(E, {
             onClick: q,
-            className: s()(f.cy, G, {
+            className: s()(f.cy, B, {
                 [f.wk]: U
             }),
             children: [U && (V ? (0, l.jsx)("div", {

@@ -199,7 +199,7 @@ async function U(e) {
         })
     }
 }
-async function B(e) {
+async function G(e) {
     let {
         channelId: t,
         messageId: n
@@ -219,7 +219,7 @@ async function B(e) {
         messageId: n
     }))
 }
-async function G(e) {
+async function B(e) {
     let {
         channelId: t,
         messageId: n,
@@ -233,7 +233,7 @@ async function G(e) {
             });
             break;
         case "remove":
-            await B({
+            await G({
                 channelId: t,
                 messageId: n
             });
@@ -366,7 +366,7 @@ let F = {
     },
     handlePollSubmitVote: U,
     handleUpdateVoteEditingState: D,
-    handlePollActionTapped: G,
+    handlePollActionTapped: B,
     createPoll: async function(e) {
         let {
             channel: t,

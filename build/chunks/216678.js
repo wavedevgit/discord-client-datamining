@@ -1,6 +1,6 @@
 /** chunk id: 216678, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    A: () => c
+    A: () => d
 });
 var n = i(627968);
 i(64700);
@@ -8,20 +8,21 @@ var l = i(835245),
     s = i(397927),
     a = i(391048),
     r = i(636099),
-    u = i(954571),
-    o = i(652215);
+    u = i(608805),
+    o = i(954571),
+    c = i(652215);
 
-function c(t) {
+function d(t) {
     let {
         applicationId: e,
-        skuId: c,
-        onClose: d,
-        onComplete: p,
-        analyticsLocations: S,
-        analyticsLocationObject: I,
-        contextKey: A,
-        isGift: _ = !1
-    } = t, T = !1, E = (0, l.A)();
+        skuId: d,
+        onClose: p,
+        onComplete: S,
+        analyticsLocations: I,
+        analyticsLocationObject: A,
+        contextKey: _,
+        isGift: T = !1
+    } = t, E = !1, f = (0, l.A)();
     (0, s.mMO)(async () => {
         let {
             default: t
@@ -33,33 +34,39 @@ function c(t) {
             } = i;
             return (0, n.jsx)(t, {
                 ...s,
-                loadId: E,
+                loadId: f,
                 applicationId: e,
-                skuId: c,
-                analyticsLocations: S,
-                analyticsLocationObject: I,
-                isGift: _,
+                skuId: d,
+                analyticsLocations: I,
+                analyticsLocationObject: A,
+                isGift: T,
                 onClose: t => {
-                    l(), d?.(t)
+                    l(), p?.(t)
                 },
                 onComplete: t => {
-                    T = !0, p?.(t)
+                    E = !0, S?.(t)
                 }
             })
         }
     }, {
-        contextKey: A,
+        contextKey: _,
         onCloseCallback: () => {
-            T || u.default.track(o.HAw.PAYMENT_FLOW_CANCELED, {
-                load_id: E,
-                payment_type: o.frM[o.VVm.ONE_TIME],
-                location: I,
-                is_gift: _,
-                sku_id: c,
-                application_id: e,
-                location_stack: S
-            }), (0, a.ET)(), (0, r.z)(), d?.(T)
+            if (!E) {
+                let t = (0, u.q1)({
+                    location: "StandardOneTimePaymentModal"
+                });
+                o.default.track(c.HAw.PAYMENT_FLOW_CANCELED, {
+                    load_id: f,
+                    payment_type: c.frM[c.VVm.ONE_TIME],
+                    location: A,
+                    is_gift: T,
+                    sku_id: d,
+                    application_id: e,
+                    location_stack: I,
+                    checkout_design: t ? u.rS.UNIFIED : u.rS.LEGACY
+                })
+            }(0, a.ET)(), (0, r.z)(), p?.(E)
         },
-        onCloseRequest: o.tEg
+        onCloseRequest: c.tEg
     })
 }

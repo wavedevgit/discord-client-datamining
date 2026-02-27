@@ -116,12 +116,12 @@ let M = function(e) {
             ...G,
             [P]: e
         })
-    }, [G, P]), q = r.useCallback(() => {
+    }, [G, P]), W = r.useCallback(() => {
         k({
             ...G,
             [P]: ""
         })
-    }, [G, P]), W = r.useMemo(() => P === y.m3P.PENDING && (s.filter(y.m3P.SPAM).length > 0 || s.filter(y.m3P.PENDING_IGNORED).length > 0), [s, P]), K = r.useMemo(() => s.filter(P, G[P]), [s, G, P]), z = P === y.m3P.PENDING, $ = r.useMemo(() => {
+    }, [G, P]), q = r.useMemo(() => P === y.m3P.PENDING && (s.filter(y.m3P.SPAM).length > 0 || s.filter(y.m3P.PENDING_IGNORED).length > 0), [s, P]), K = r.useMemo(() => s.filter(P, G[P]), [s, G, P]), z = P === y.m3P.PENDING, $ = r.useMemo(() => {
         if (!z) return R;
         let e = [];
         return K.forEach(t => {
@@ -232,7 +232,7 @@ let M = function(e) {
             H(!1)
         }, [P, Q]), 0 === K.length && "" === G[P]) return (0, i.jsx)(D, {
         section: P,
-        showSpamCta: W
+        showSpamCta: q
     });
     let er = "" !== G[P],
         el = 0 === K.length && er;
@@ -245,7 +245,7 @@ let M = function(e) {
                 children: (0, i.jsx)(a.IWV, {
                     query: G[P],
                     onChange: Y,
-                    onClear: q
+                    onClear: W
                 })
             }), (0, i.jsx)(N.A, {
                 rows: X,
@@ -255,7 +255,7 @@ let M = function(e) {
                 isVirtualizedList: w >= 64,
                 hasSearchQuery: er,
                 renderSectionFooter: ei,
-                footer: W && !el ? (0, i.jsx)("div", {
+                footer: q && !el ? (0, i.jsx)("div", {
                     className: L.RE,
                     children: (0, i.jsx)(a.QWc, {
                         text: O.intl.string(O.t.R40bU2),

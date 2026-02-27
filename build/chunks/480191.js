@@ -42,7 +42,7 @@ function D(e) {
         channel: r
     } = e, D = l.useRef(null), k = l.useRef(null), O = (0, j.D)(t, n), {
         setPopout: U
-    } = (0, f.A)(n.id, R.Fd), B = (0, x.VL)(n, r, U, !0), G = I.kt.useSetting(), F = (0, y.j)(), [H, V] = l.useState(!1), [W, q] = l.useState(O?.coverImage == null), Y = (0, o.bG)([b.Ay, T.default], () => b.Ay.isMember(O?.guildId, T.default.getCurrentUser()?.id), [O]), z = (0, o.bG)([b.Ay], () => O?.authorId != null ? b.Ay.getMember(O.guildId, O.authorId) : null), Q = (0, m.A)(z?.avatarDecoration != null ? z?.avatarDecoration : O?.user?.avatarDecoration), [K, J, X] = l.useMemo(() => [z?.colorString ?? "inherit", z?.colorStrings ?? null, z?.colorRoleId], [z]), Z = (0, C.gn)(z?.guildId, O?.authorId ?? void 0, J), {
+    } = (0, f.A)(n.id, R.Fd), G = (0, x.VL)(n, r, U, !0), B = I.kt.useSetting(), F = (0, y.j)(), [H, V] = l.useState(!1), [W, q] = l.useState(O?.coverImage == null), Y = (0, o.bG)([b.Ay, T.default], () => b.Ay.isMember(O?.guildId, T.default.getCurrentUser()?.id), [O]), z = (0, o.bG)([b.Ay], () => O?.authorId != null ? b.Ay.getMember(O.guildId, O.authorId) : null), Q = (0, m.A)(z?.avatarDecoration != null ? z?.avatarDecoration : O?.user?.avatarDecoration), [K, J, X] = l.useMemo(() => [z?.colorString ?? "inherit", z?.colorStrings ?? null, z?.colorRoleId], [z]), Z = (0, C.gn)(z?.guildId, O?.authorId ?? void 0, J), {
         reducedMotion: $
     } = l.useContext(c.CZY), [ee, et] = l.useState(!1), en = l.useCallback(() => {
         V(!0)
@@ -82,10 +82,10 @@ function D(e) {
                 className: a()(M.xn, {
                     [M.p6]: O.shouldSpoiler
                 }),
-                onContextMenu: B,
+                onContextMenu: G,
                 onError: () => q(!0)
             }) : (0, i.jsx)(p.A, {
-                src: !(F && (G || H)) && ed ? `${eo}?format=png` : eo,
+                src: !(F && (B || H)) && ed ? `${eo}?format=png` : eo,
                 backgroundSrc: `${eo}?format=png`,
                 alt: P.intl.string(P.t.rIbh8H),
                 aspectRatio: 16 / 9,
@@ -93,7 +93,7 @@ function D(e) {
                     [M.p6]: O.shouldSpoiler
                 }),
                 imageChildClassName: M.q_,
-                onContextMenu: B,
+                onContextMenu: G,
                 onError: () => q(!0)
             })), null != O.coverImageOverlayText && (0, i.jsx)(c.DUT, {
                 onClick: el,

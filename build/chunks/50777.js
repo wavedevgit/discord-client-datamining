@@ -41,8 +41,8 @@ function j(e) {
     let O = (0, a.bG)([p.default], () => j.isDM() && null != j.recipients && 0 !== j.recipients.length ? p.default.getUser(j.recipients[0]) : null),
         U = (0, a.bG)([E.A], () => null != n ? E.A.getNormalizedSKUEligibility(n) : void 0, [n]),
         {
-            primaryIconAsset: B,
-            primaryIconLabel: G
+            primaryIconAsset: G,
+            primaryIconLabel: B
         } = l.useMemo(() => (0, f.Cv)(R, P), [R, P]);
     l.useEffect(() => {
         null == t || null == n || A.A.isFetchingForSKU(n) || (0, C.qf)(t, n)
@@ -94,9 +94,9 @@ function j(e) {
                 className: N.lI,
                 children: [(0, i.jsxs)("div", {
                     className: N.PB,
-                    children: [null != B && (0, i.jsx)("img", {
-                        src: B.toString(),
-                        alt: G,
+                    children: [null != G && (0, i.jsx)("img", {
+                        src: G.toString(),
+                        alt: B,
                         className: N.ye
                     }), (0, i.jsx)(o.Text, {
                         variant: "text-md/medium",

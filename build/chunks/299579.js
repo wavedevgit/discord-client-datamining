@@ -82,8 +82,8 @@ function O(e) {
             categoryId: L
         })
     }, [P, o, t, L, j, N]);
-    let q = r.useCallback(e => n(e, L), [n, L]),
-        W = r.useMemo(() => h ? [o.length, 0] : [o.length], [o.length, h]),
+    let W = r.useCallback(e => n(e, L), [n, L]),
+        q = r.useMemo(() => h ? [o.length, 0] : [o.length], [o.length, h]),
         K = r.useCallback((e, n, r) => {
             switch (e) {
                 case 0:
@@ -161,11 +161,11 @@ function O(e) {
                     children: (0, i.jsx)(T.Ay, {
                         guildId: e,
                         onClick: async e => await X(e, t, L, y),
-                        onView: e => q(e)
+                        onView: e => W(e)
                     })
                 }, r)
             }
-        }, [o, X, q, L]);
+        }, [o, X, W, L]);
     r.useEffect(() => {
         let e = B.current;
         return () => {
@@ -203,7 +203,7 @@ function O(e) {
         children: (0, i.jsx)(d.a0_, {
             ref: B,
             className: S.kf,
-            sections: W,
+            sections: q,
             columns: G,
             itemGutter: 16,
             padding: ee,

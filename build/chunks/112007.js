@@ -42,8 +42,8 @@ function v(e) {
         } = L,
         O = L.state === I.elq.ACCEPTING,
         U = null != w ? (0, A.OY)(w) : null,
-        B = null != j,
-        G = null != U,
+        G = null != j,
+        B = null != U,
         F = null != U && U.isGuildStageVoice(),
         H = (0, a.Lt)(L.flags ?? 0, r.Q.IS_GUEST_INVITE),
         V = U?.isGuildVoiceOrThread() ?? !1,
@@ -61,13 +61,13 @@ function v(e) {
         }, [q, Y]),
         $ = l.useCallback(() => {
             let e = "noop";
-            B ? (y(), e = "transition") : (N(), e = "accept"), (0, c.he)({
+            G ? (y(), e = "transition") : (N(), e = "accept"), (0, c.he)({
                 invite: L,
                 action: e,
                 inviter_id: R.author.id,
                 invite_message_id: R.id
             }, Y)
-        }, [L, R, Y, B, y, N]);
+        }, [L, R, Y, G, y, N]);
     if (null == j) {
         if (null == L.guild) return (0, i.jsx)(E.A, {});
         (j = f.DY(L.guild)).premiumTier = L.guild.premium_tier ?? I.TVA.NONE
@@ -124,7 +124,7 @@ function v(e) {
     })) : null != D && D >= 5 || null != k && k > 0 ? t = (0, i.jsx)(g.A.Data, {
         members: D,
         membersOnline: k
-    }) : G && (t = (0, i.jsx)(g.A.Channel, {
+    }) : B && (t = (0, i.jsx)(g.A.Channel, {
         channel: U,
         guild: j
     })), (0, i.jsxs)(g.A, {
@@ -151,7 +151,7 @@ function v(e) {
                     variant: "active",
                     fullWidth: V,
                     disabled: !X,
-                    text: V ? F ? b.intl.string(b.t["7vb2cc"]) : b.intl.string(b.t.gpqgah) : B ? b.intl.string(b.t.cEnaWx) : b.intl.string(b.t.XpeFYr)
+                    text: V ? F ? b.intl.string(b.t["7vb2cc"]) : b.intl.string(b.t.gpqgah) : G ? b.intl.string(b.t.cEnaWx) : b.intl.string(b.t.XpeFYr)
                 })
             })]
         }), j.features.has(I.GuildFeatures.HUB) && (0, i.jsxs)(i.Fragment, {

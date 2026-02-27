@@ -2,7 +2,7 @@
 n.d(t, {
     Am: () => O,
     Ck: () => F,
-    G8: () => G,
+    G8: () => B,
     Ge: () => P,
     H9: () => y,
     I: () => j,
@@ -15,7 +15,7 @@ n.d(t, {
     m: () => S,
     r4: () => D,
     ri: () => U,
-    yp: () => B
+    yp: () => G
 }), n(938796);
 var i = n(627968),
     l = n(64700),
@@ -182,7 +182,7 @@ function U(e, t) {
     }, [i, n])
 }
 
-function B(e) {
+function G(e) {
     let {
         groupId: t,
         message: n,
@@ -203,7 +203,7 @@ function B(e) {
     }
 }
 
-function G(e, t) {
+function B(e, t) {
     let [n, i] = l.useState(!1), [a, s] = l.useState(!1);
     return {
         handleFocus: l.useCallback(t => {
