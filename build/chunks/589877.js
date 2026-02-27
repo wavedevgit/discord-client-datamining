@@ -50,7 +50,7 @@ function E(e) {
             else if (t === N.fAW.OPEN_FAIL) {
                 let e = new URLSearchParams;
                 e.set(u.L1.TAB, u.NC.PREVIEW_TOOL), e.set(u.L1.QUEST_ID, i), (0, h.bG)({
-                    pathname: N.BVt.QUEST_HOME_V2,
+                    pathname: N.BVt.QUEST_HOME,
                     search: `?${e.toString()}`
                 })
             }

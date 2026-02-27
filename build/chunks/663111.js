@@ -92,7 +92,7 @@ function b(e) {
         size: w
     })) : b.pathname.startsWith(N.BVt.FAMILY_CENTER) ? (t = x.intl.string(v.default.RZqaJn), B = (0, i.jsx)(c.nFg, {
         size: w
-    })) : b.pathname.startsWith(N.BVt.QUEST_HOME_V2) && (t = x.intl.string(x.t.JALI2K), B = (0, i.jsx)(c.r2v, {
+    })) : b.pathname.startsWith(N.BVt.QUEST_HOME) && (t = x.intl.string(x.t.JALI2K), B = (0, i.jsx)(c.r2v, {
         size: w
     }));
     let H = r.useCallback(e => {

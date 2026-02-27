@@ -174,18 +174,18 @@ let G = {
                 case D.XK.QUEST_HOME:
                     if (null != i) {
                         let e = new URLSearchParams;
-                        null != i.sort && e.set(T.L1.SORT, i.sort), null != i.filter && e.set(T.L1.FILTER, i.filter), null != i.tab && e.set(T.L1.TAB, i.tab), (0, N.pX)(M.BVt.QUEST_HOME_V2, {
+                        null != i.sort && e.set(T.L1.SORT, i.sort), null != i.filter && e.set(T.L1.FILTER, i.filter), null != i.tab && e.set(T.L1.TAB, i.tab), (0, N.pX)(M.BVt.QUEST_HOME, {
                             hash: i.questId,
                             search: `?${e.toString()}`
                         }), U(i.fingerprint, (0, D.OE)(t))
-                    } else(0, N.pX)(M.BVt.QUEST_HOME_V2);
+                    } else(0, N.pX)(M.BVt.QUEST_HOME);
                     break;
                 case D.XK.QUEST_PREVIEW_TOOL:
                     if ((0, C.U)({
                             location: w.rE.QUEST_PREVIEW_TOOL_2
                         }) && null != i) {
                         let e = new URLSearchParams;
-                        e.set(T.L1.TAB, T.NC.PREVIEW_TOOL), null != i.questId && e.set(T.L1.QUEST_ID, i.questId), (0, N.pX)(M.BVt.QUEST_HOME_V2, {
+                        e.set(T.L1.TAB, T.NC.PREVIEW_TOOL), null != i.questId && e.set(T.L1.QUEST_ID, i.questId), (0, N.pX)(M.BVt.QUEST_HOME, {
                             search: `?${e.toString()}`
                         }), U(i.fingerprint, (0, D.OE)(t))
                     }

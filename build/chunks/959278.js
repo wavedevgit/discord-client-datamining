@@ -689,7 +689,7 @@ function ti() {
                                     impressionName: d.ImpressionNames.QUEST_HOME,
                                     disableTrack: !0
                                 }), (0, i.jsx)(v.A, {
-                                    path: eL.BVt.QUEST_HOME_V2,
+                                    path: eL.BVt.QUEST_HOME,
                                     render: e5,
                                     impressionName: d.ImpressionNames.QUEST_HOME,
                                     disableTrack: !0

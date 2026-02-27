@@ -250,7 +250,7 @@ let eI = function(e) {
             })
         }, []);
     r.useEffect(() => {
-        (0, h.I)(er.BVt.QUEST_HOME_V2)
+        (0, h.I)(er.BVt.QUEST_HOME)
     }, []), r.useEffect(() => {
         N.g.trigger()
     }, []);

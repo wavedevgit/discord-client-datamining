@@ -25,7 +25,7 @@ let s = Object.freeze({
             });
             let n = new URLSearchParams;
             n.set(l.L1.TAB, t);
-            let r = `${a.BVt.QUEST_HOME_V2}?${n.toString()}`;
+            let r = `${a.BVt.QUEST_HOME}?${n.toString()}`;
             (0, i.pX)(r.toString())
         }
     }))

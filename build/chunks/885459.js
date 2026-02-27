@@ -36,7 +36,7 @@ let p = function(e) {
         }, [e, a]), r.useEffect(() => {
             if (null == n || m(a) === n) return;
             let e = new URLSearchParams;
-            e.set(c.L1.TAB, c.NC.PREVIEW_TOOL), e.set(c.L1.QUEST_ID, n), t.push(`${_.BVt.QUEST_HOME_V2}?${e.toString()}`)
+            e.set(c.L1.TAB, c.NC.PREVIEW_TOOL), e.set(c.L1.QUEST_ID, n), t.push(`${_.BVt.QUEST_HOME}?${e.toString()}`)
         }, [n, t, a]), {
             questId: n,
             setQuestId: i

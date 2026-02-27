@@ -17,7 +17,7 @@ function c(e) {
         onRequestClose: c,
         targetElementRef: u
     } = e, A = r.useCallback(() => {
-        t(), (0, a.pX)(s.BVt.QUEST_HOME_V2)
+        t(), (0, a.pX)(s.BVt.QUEST_HOME)
     }, [t]);
     return r.useEffect(() => {
         n()

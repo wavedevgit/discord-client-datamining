@@ -379,7 +379,7 @@ let eS = r.memo(function(e) {
             }, "discord-shop"), h ? (0, i.jsx)(ef, {
                 selected: null != l && l.startsWith(eo.BVt.FAMILY_CENTER) || null != m && m.startsWith(eo.BVt.FAMILY_CENTER)
             }, "family-center") : null, (0, i.jsx)($.A, {
-                selected: null == m ? null != l && l.startsWith(eo.BVt.QUEST_HOME_V2) : m === eo.BVt.QUEST_HOME_V2
+                selected: null == m ? null != l && l.startsWith(eo.BVt.QUEST_HOME) : m === eo.BVt.QUEST_HOME
             }, "quests"), (0, i.jsx)(ex, {}, "section-divider-top"), (0, i.jsx)(R.A, {}, "frequent-friends")]
         })]
     })
