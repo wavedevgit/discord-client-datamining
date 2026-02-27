@@ -7,5 +7,6 @@ e.exports = {
     Xb: "wishlistItemsContainer_faf161",
     Im: "wishlistItemsContainerSkuPreview_faf161",
     Lq: "loading_faf161",
-    RL: "contextContainer_faf161"
+    RL: "contextContainer_faf161",
+    Ij: "rewardOfferNotice_faf161"
 }

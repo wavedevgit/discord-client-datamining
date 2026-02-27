@@ -419,8 +419,8 @@ let w = e => {
                 requestAnimationFrame(() => setTimeout(e, 100))
             }
         })
-    }), [G]), V = (0, C.GV)(), B = (0, o.Ay)({
-        id: `private-channels-${V}`,
+    }), [G]), B = (0, C.GV)(), V = (0, o.Ay)({
+        id: `private-channels-${B}`,
         isEnabled: L,
         scrollToStart: w,
         scrollToEnd: k,
@@ -430,7 +430,7 @@ let w = e => {
     return (0, i.jsx)(m.f5, {
         value: b,
         children: (0, i.jsx)(a.hD, {
-            navigator: B,
+            navigator: V,
             children: (0, i.jsx)(P, {
                 ...e,
                 density: t,

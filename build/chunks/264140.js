@@ -41,8 +41,8 @@ var f = n(483270),
     P = n(274146),
     w = n(826673),
     k = n(713842),
-    V = n(91242),
-    B = n(857253),
+    B = n(91242),
+    V = n(857253),
     H = n(872363),
     F = n(211059),
     K = n(547015),
@@ -95,8 +95,8 @@ var f = n(483270),
     eP = n(734057),
     ew = n(31717),
     ek = n(919638),
-    eV = n(71393),
-    eB = n(290863),
+    eB = n(71393),
+    eV = n(290863),
     eH = n(383501),
     eF = n(309010),
     eK = n(967198),
@@ -778,13 +778,13 @@ let tn = (0, C.A)(tt),
     ti = s.memo(function(e) {
         let {
             providedChannel: t
-        } = e, [n, l] = s.useState(null), r = (0, h.bG)([eF.A], () => eF.A.getChannelId()), a = (0, h.bG)([eF.A], () => eF.A.getVoiceChannelId()), o = (0, h.bG)([eP.A], () => t ?? eP.A.getChannel(r), [r, t]), c = (0, h.bG)([eP.A], () => eP.A.getChannel(a), [a]), g = o?.parent_id, _ = (0, h.bG)([eP.A], () => eP.A.getChannel(g), [g]), f = (0, h.bG)([eV.A], () => eV.A.getGuild(o?.guild_id), [o]), {
+        } = e, [n, l] = s.useState(null), r = (0, h.bG)([eF.A], () => eF.A.getChannelId()), a = (0, h.bG)([eF.A], () => eF.A.getVoiceChannelId()), o = (0, h.bG)([eP.A], () => t ?? eP.A.getChannel(r), [r, t]), c = (0, h.bG)([eP.A], () => eP.A.getChannel(a), [a]), g = o?.parent_id, _ = (0, h.bG)([eP.A], () => eP.A.getChannel(g), [g]), f = (0, h.bG)([eB.A], () => eB.A.getGuild(o?.guild_id), [o]), {
             needSubscriptionToAccess: x
         } = (0, z.A)(o?.id ?? void 0), C = (0, h.bG)([R.A], () => {
             let e = null != r ? R.A.getParticipants(r) : [],
                 t = null != r ? R.A.getActivityParticipants(r) : [];
             return e.length - t.length > 0
-        }, [r]), b = (0, B.A)(), v = (0, h.bG)([eF.A], () => (b?.channelId ?? eF.A.getVoiceChannelId()) === o?.id), O = (0, h.bG)([N.Ay], () => null != o ? N.Ay.getSelfEmbeddedActivityForChannel(o.id) : null, [o]), L = (0, h.bG)([eH.A], () => eH.A.isConnected()), M = (0, I.A)(L), D = L && !1 === M;
+        }, [r]), b = (0, V.A)(), v = (0, h.bG)([eF.A], () => (b?.channelId ?? eF.A.getVoiceChannelId()) === o?.id), O = (0, h.bG)([N.Ay], () => null != o ? N.Ay.getSelfEmbeddedActivityForChannel(o.id) : null, [o]), L = (0, h.bG)([eH.A], () => eH.A.isConnected()), M = (0, I.A)(L), D = L && !1 === M;
         s.useEffect(() => {
             v && D && null != O && null != o && m.A.selectParticipant(o.id, (0, j.Qt)({
                 applicationId: O.applicationId,
@@ -797,7 +797,7 @@ let tn = (0, C.A)(tt),
             k = (0, h.bG)([eY.A], () => null != o && o.isVocalThread() && !d().isEmpty(eY.A.getVoiceStatesForChannel(o.id)), [o]),
             H = null != o && o.isPrivate() && !P && C,
             F = o?.isGuildVocal() || H || k,
-            K = (0, h.bG)([V.A], () => V.A.getFrameLayoutMode() === e2.y.FOCUSED),
+            K = (0, h.bG)([B.A], () => B.A.getFrameLayoutMode() === e2.y.FOCUSED),
             {
                 welcomeModalChannelId: W
             } = (0, u.zy)(),
@@ -883,7 +883,7 @@ let tn = (0, C.A)(tt),
             showActivityPanel: P,
             showFramePanel: K,
             channelIsContentGated: $,
-            isMobile: (0, h.bG)([eB.A], () => o?.type === e1.rbe.DM && eB.A.isMobileOnline(o.getRecipientId()), [o]),
+            isMobile: (0, h.bG)([eV.A], () => o?.type === e1.rbe.DM && eV.A.isMobileOnline(o.getRecipientId()), [o]),
             isUnavailable: (0, h.bG)([ek.A], () => o?.guild_id != null && ek.A.isUnavailable(o.guild_id), [o]),
             showRealNameModal: Z,
             showWelcomeModal: !X && ee,

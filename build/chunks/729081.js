@@ -67,7 +67,7 @@ function L(e) {
         {
             state: w,
             recommendations: k,
-            skuIdToUserIdsReasons: V
+            skuIdToUserIdsReasons: B
         } = (0, I.A)({
             applicationId: T.XR,
             numWishlistItems: I.o,
@@ -75,15 +75,15 @@ function L(e) {
             location: "Social Layer Gifting Mini Shelf",
             includeWishlists: !0
         }),
-        B = s.useMemo(() => {
+        V = s.useMemo(() => {
             let e = new Set(P),
                 {
                     hasWishlist: t,
                     hasPopular: n
-                } = (0, C.wH)(k, V, e),
+                } = (0, C.wH)(k, B, e),
                 s = t && n;
             return k.map(t => {
-                let n = V[t.skuId]?.filter(t => t.reason === E.G.WISHLIST && e.has(t.userId)).map(e => e.userId).filter(x.Vq) ?? [];
+                let n = B[t.skuId]?.filter(t => t.reason === E.G.WISHLIST && e.has(t.userId)).map(e => e.userId).filter(x.Vq) ?? [];
                 return M ? (0, i.jsx)(N.A, {
                     sku: t.sku,
                     source: n.length > 0 ? m.uS.WISHLIST : m.uS.POPULAR,
@@ -103,7 +103,7 @@ function L(e) {
                     contextContainerClassName: R.RL
                 }, t.skuId)
             })
-        }, [L.guild_id, L.id, k, V, P, M, D]);
+        }, [L.guild_id, L.id, k, B, P, M, D]);
     return s.useEffect(() => {
         0 !== k.length && f.default.track(y.HAw.COMMERCE_SHOP_VC_GIFT_BUTTON_VIEWED, {
             guild_id: L.guild_id,
@@ -118,9 +118,9 @@ function L(e) {
                 className: R.kL,
                 onMouseEnter: l,
                 onMouseLeave: o,
-                children: [(0, i.jsxs)("div", {
+                children: [(0, i.jsx)("div", {
                     className: R.wx,
-                    children: [(0, i.jsxs)("div", {
+                    children: (0, i.jsxs)("div", {
                         children: [(0, i.jsx)(c.DZT, {
                             className: R.DD,
                             variant: "text-lg/bold",
@@ -133,18 +133,17 @@ function L(e) {
                                 applicationName: D?.name ?? j.intl.string(j.t["/1hhto"])
                             })
                         })]
-                    }), (0, i.jsx)("div", {
-                        children: (0, i.jsx)(S.A, {
-                            location: "social_layer_gifting_mini_shelf"
-                        })
-                    })]
+                    })
                 }), (0, i.jsx)("div", {
                     className: r()(R.Xb, {
                         [R.Im]: M
                     }),
                     children: "loading" === w || 0 === k.length ? (0, i.jsx)(c.y$y, {
                         className: R.Lq
-                    }) : B
+                    }) : V
+                }), (0, i.jsx)(S.A, {
+                    location: "social_layer_gifting_mini_shelf",
+                    className: R.Ij
                 })]
             })
         })

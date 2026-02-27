@@ -1,4 +1,5 @@
 /** chunk id: 151000, original params: e,t,n (module,exports,require) **/
+"use strict";
 e.exports = {
     ob: "backgroundIconOptionIcon__53965",
     to: "backgroundOptions__53965",

@@ -38,8 +38,8 @@ var i = n(284009),
     R = n(945886),
     N = n(71393),
     L = n(576705),
-    b = n(222823),
-    T = n(309010),
+    T = n(222823),
+    b = n(309010),
     G = n(543465),
     O = n(977997),
     D = n(607567),
@@ -75,7 +75,7 @@ class X {
             i = t.getCategoryFromSection(t.recentsSectionNumber);
         for (let e in i.channels) {
             let t = i.channels[e];
-            if (2 === t.renderLevel && t.record.isGuildVocal() && null == n.channels[t.id] && r().some(O.A.getVoiceStatesForChannel(t.id)) && b.Ay.getMentionCount(t.id) > 0) return !0
+            if (2 === t.renderLevel && t.record.isGuildVocal() && null == n.channels[t.id] && r().some(O.A.getVoiceStatesForChannel(t.id)) && T.Ay.getMentionCount(t.id) > 0) return !0
         }
         return !1
     }
@@ -168,8 +168,8 @@ class Z {
     }
     get initializationData() {
         return {
-            selectedChannel: m.A.getChannel(T.A.getChannelId()),
-            selectedVoiceChannelId: T.A.getVoiceChannelId(),
+            selectedChannel: m.A.getChannel(b.A.getChannelId()),
+            selectedVoiceChannelId: b.A.getVoiceChannelId(),
             activeJoinedRelevantThreads: E.A.getActiveJoinedRelevantThreadsForGuild(this.id),
             activeJoinedUnreadThreads: E.A.getActiveJoinedUnreadThreadsForGuild(this.id)
         }
@@ -599,7 +599,7 @@ class ea {
         return this.category.getFirstVoiceChannel() === this
     }
     get lastMessageTimestamp() {
-        return Math.max(b.Ay.lastMessageTimestamp(this.id), ...this.threadIds.map(b.Ay.lastMessageTimestamp))
+        return Math.max(T.Ay.lastMessageTimestamp(this.id), ...this.threadIds.map(T.Ay.lastMessageTimestamp))
     }
     updateChannel(e, t) {
         let n = !1;
@@ -646,13 +646,13 @@ class ed extends ea {
         return this.id !== a.moderatorReportChannelId || a.moderatorReportChannelEnabled ? a.optInEnabled && a.hideResourceChannels && this.record.hasFlag(x.lx.IS_GUILD_RESOURCE_CHANNEL) ? {
             renderLevel: d ? 4 : 1,
             threadIds: c
-        } : !a.optInEnabled || a.optedInChannels.has(this.id) || null != l && a.optedInChannels.has(l) ? d || h || !r().isEmpty(c) || b.Ay.getMentionCount(this.id) > 0 ? {
+        } : !a.optInEnabled || a.optedInChannels.has(this.id) || null != l && a.optedInChannels.has(l) ? d || h || !r().isEmpty(c) || T.Ay.getMentionCount(this.id) > 0 ? {
             renderLevel: 4,
             threadIds: c
         } : a.hideMutedChannels && a.mutedChannelIds.has(this.id) ? {
             renderLevel: 2,
             threadIds: c
-        } : this.category.isCollapsed && (a.mutedChannelIds.has(this.id) || null != l && a.mutedChannelIds.has(l) || this.record.isGuildVocal() || this.record.type === P.rbe.GUILD_STORE || (0, v.ig)(this.record.type) && !b.Ay.hasUnread(this.record.id)) ? {
+        } : this.category.isCollapsed && (a.mutedChannelIds.has(this.id) || null != l && a.mutedChannelIds.has(l) || this.record.isGuildVocal() || this.record.type === P.rbe.GUILD_STORE || (0, v.ig)(this.record.type) && !T.Ay.hasUnread(this.record.id)) ? {
             renderLevel: 3,
             threadIds: c
         } : {
@@ -759,7 +759,7 @@ function eg(e, t, n, i, s) {
         a = null != n && n.isThread() && n.parent_id === e.id;
     if (v.wE.has(e.type)) {
         let e = r().sortBy(Object.values(t), e => -e.joinTimestamp).map(e => e.channel.id);
-        return l ? e : a ? (n.id in t || e.unshift(n.id), e) : s ? e.filter(e => !_.A.isMuted(e) || b.Ay.getMentionCount(e) > 0) : e
+        return l ? e : a ? (n.id in t || e.unshift(n.id), e) : s ? e.filter(e => !_.A.isMuted(e) || T.Ay.getMentionCount(e) > 0) : e
     }
     return []
 }
@@ -773,9 +773,9 @@ function ep(e, t) {
         selectedChannel: n,
         activeJoinedRelevantThreads: i
     } = t;
-    if (b.Ay.getMentionCount(e.id) > 0) return !0;
+    if (T.Ay.getMentionCount(e.id) > 0) return !0;
     for (let t in i[e.id])
-        if (b.Ay.getMentionCount(t) > 0) return !0;
+        if (T.Ay.getMentionCount(t) > 0) return !0;
     if (null != n && (n.id === e.id || n.isThread() && n.parent_id === e.id)) return !0;
     let s = y.A.getNewChannelIds(e.category.guild.id);
     if (s.size > Y);
@@ -795,12 +795,12 @@ function eI(e, t, n) {
         let i = r().some(O.A.getVoiceStatesForChannel(t.id));
         if (n && i) return !1
     }
-    if (null != i && (i.id === t.id || i.isThread() && i.parent_id === t.id) || b.Ay.getMentionCount(t.id) > 0) return !0;
+    if (null != i && (i.id === t.id || i.isThread() && i.parent_id === t.id) || T.Ay.getMentionCount(t.id) > 0) return !0;
     for (let e in s[t.id])
-        if (b.Ay.getMentionCount(e) > 0 || b.Ay.hasUnread(e) || b.Ay.hasRecentlyVisitedAndRead(e)) return !0;
+        if (T.Ay.getMentionCount(e) > 0 || T.Ay.hasUnread(e) || T.Ay.hasRecentlyVisitedAndRead(e)) return !0;
     if (e.mutedChannelIds.has(t.id) || null != t.parent_id && e.mutedChannelIds.has(t.parent_id)) return !1;
     let l = y.A.getNewChannelIds(e.id),
         a = Array.from(l).sort((e, t) => V.default.compare(t, e));
-    return !!(l.has(t.id) && a.indexOf(t.id) < Y || b.Ay.hasRecentlyVisitedAndRead(t.id))
+    return !!(l.has(t.id) && a.indexOf(t.id) < Y || T.Ay.hasRecentlyVisitedAndRead(t.id))
 }
 let eS = new Set(Object.values(B.n))

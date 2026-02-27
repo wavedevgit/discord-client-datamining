@@ -40,8 +40,8 @@ var i = n(627968),
     P = n(834942),
     w = n(576705),
     k = n(222823),
-    V = n(543465),
-    B = n(977997),
+    B = n(543465),
+    V = n(977997),
     H = n(147036),
     F = n(644836),
     K = n(338234),
@@ -152,7 +152,7 @@ class et extends W.Ay {
         let {
             channel: e
         } = this.props;
-        return (0, H.Pd)(e, B.A, U.A)
+        return (0, H.Pd)(e, V.A, U.A)
     }
     getModeClass() {
         let {
@@ -428,7 +428,7 @@ function ei(e) {
     } = e, d = (0, a.cf)([k.Ay], () => ({
         unread: k.Ay.hasUnread(n.id),
         mentionCount: k.Ay.getMentionCount(n.id)
-    })), u = (0, a.bG)([V.Ay], () => V.Ay.resolveUnreadSetting(n)), h = (0, a.cf)([G.A, P.A, w.A], () => {
+    })), u = (0, a.bG)([B.Ay], () => B.Ay.resolveUnreadSetting(n)), h = (0, a.cf)([G.A, P.A, w.A], () => {
         let e = G.A.getChannel(n.parent_id),
             i = P.A.getCheck(n.guild_id);
         return {
@@ -439,10 +439,10 @@ function ei(e) {
             bypassLimit: w.A.can(Q.xBc.MOVE_MEMBERS, n),
             unverifiedAccount: !i.canChat
         }
-    }), A = (0, a.bG)([B.A], () => B.A.hasVideo(n.id)), p = (0, g.Ay)(n), m = (0, E.Ay)(n), x = (0, v.Qs)(n.id), C = (0, a.bG)([f.A], () => null != f.A.getStartTime(n), [n]), {
+    }), A = (0, a.bG)([V.A], () => V.A.hasVideo(n.id)), p = (0, g.Ay)(n), m = (0, E.Ay)(n), x = (0, v.Qs)(n.id), C = (0, a.bG)([f.A], () => null != f.A.getStartTime(n), [n]), {
         isSubscriptionGated: I,
         needSubscriptionToAccess: N
-    } = (0, y.A)(n.id), S = (0, b.A)(), T = (0, a.bG)([V.Ay], () => V.Ay.isFavorite(t.id, n.id)), j = e.connected || S?.channelId === n.id, {
+    } = (0, y.A)(n.id), S = (0, b.A)(), T = (0, a.bG)([B.Ay], () => B.Ay.isFavorite(t.id, n.id)), j = e.connected || S?.channelId === n.id, {
         enableHangStatus: L,
         showEmptyChannelTopic: M
     } = (0, R.$j)({

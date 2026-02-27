@@ -105,21 +105,21 @@ let N = e => {
                 })
             })
         } : void 0, [w, N.name, N.id, t.id, b]),
-        V = e => {
+        B = e => {
             0 !== M.trim().length && e.key === E.dh.ENTER && (u.Se(t.id, M), d.default.track(C.HAw.GUILD_DIRECTORY_SEARCH, {
                 directory_channel_id: t.id,
                 directory_guild_id: N.id
             }))
         },
-        B = () => {
+        V = () => {
             D(""), u.BA(t.id)
         };
     return G ? (0, i.jsx)(f.A, {
         searchQuery: M,
         setSearchQuery: D,
         mostRecentQuery: R,
-        handleSearchKeyPress: V,
-        handleClearSearch: B,
+        handleSearchKeyPress: B,
+        handleClearSearch: V,
         handleCreateOrAddGuild: k,
         searchResults: L,
         searchFetching: O
@@ -138,8 +138,8 @@ let N = e => {
         channel: t,
         searchQuery: M,
         setSearchQuery: D,
-        handleSearchKeyPress: V,
-        handleClearSearch: B,
+        handleSearchKeyPress: B,
+        handleClearSearch: V,
         handleCreateOrAddGuild: k,
         currentCategoryId: b,
         handleSelectCategory: e => {

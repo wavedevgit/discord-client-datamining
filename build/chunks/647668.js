@@ -69,8 +69,8 @@ function k(e) {
     })
 }
 
-function V(e) {
-    let t, n, l, a, d, g, m, _, f, x, C, E, I, U, V, B, H, F, K, W, {
+function B(e) {
+    let t, n, l, a, d, g, m, _, f, x, C, E, I, U, B, V, H, F, K, W, {
             guild: Y
         } = e,
         z = Y.id,
@@ -121,13 +121,13 @@ function V(e) {
         }, [t, g]), E = (0, c.yK)([M.default], () => {
             let e = C.map(e => M.default.getUser(e));
             return (0, p.aw)(e)
-        }, [C]), I = (0, c.yK)([M.default], () => x.map(e => M.default.getUser(e)), [x]), U = m.filter(e => !x.includes(e.id) && !C.includes(e.id)), V = (0, p.aw)(U), B = I.filter(e => null != e && !C.includes(e.id)), H = (0, c.bG)([y.A], () => y.A.getUserAffinitiesMap(), []), F = s.useMemo(() => (0, v.L)(V, H, "GuildTooltip - nonBlockedUsers"), [V, H]), K = s.useMemo(() => (0, v.L)(_, H, "GuildTooltip - stageSpeakers"), [_, H]), W = s.useMemo(() => (0, v.L)(B, H, "GuildTooltip - streamUsers"), [B, H]), {
+        }, [C]), I = (0, c.yK)([M.default], () => x.map(e => M.default.getUser(e)), [x]), U = m.filter(e => !x.includes(e.id) && !C.includes(e.id)), B = (0, p.aw)(U), V = I.filter(e => null != e && !C.includes(e.id)), H = (0, c.bG)([y.A], () => y.A.getUserAffinitiesMap(), []), F = s.useMemo(() => (0, v.L)(B, H, "GuildTooltip - nonBlockedUsers"), [B, H]), K = s.useMemo(() => (0, v.L)(_, H, "GuildTooltip - stageSpeakers"), [_, H]), W = s.useMemo(() => (0, v.L)(V, H, "GuildTooltip - streamUsers"), [V, H]), {
             voiceUsersToShow: F,
             stageSpeakers: K,
             numStageListeners: f,
             streamUsersToShow: W,
             embeddedActivitiesUsers: s.useMemo(() => (0, v.L)(E, H, "GuildTooltip - embeddedActivitiesUsers"), [E, H]),
-            hasActivity: _.length > 0 || U.length > 0 || B.length > 0 || E.length > 0
+            hasActivity: _.length > 0 || U.length > 0 || V.length > 0 || E.length > 0
         }),
         Z = w(u.HKD, X, z),
         ee = 0 === q.length ? null : (0, i.jsxs)("div", {
@@ -172,7 +172,7 @@ function V(e) {
     })
 }
 
-function B(e) {
+function V(e) {
     let {
         guildJoinRequestStatus: t
     } = e;
@@ -198,9 +198,9 @@ function B(e) {
 function H(e) {
     let {
         guild: t
-    } = e, n = (0, g.A)(t), s = (0, x.a)(t), l = null != s ? (0, i.jsx)(B, {
+    } = e, n = (0, g.A)(t), s = (0, x.a)(t), l = null != s ? (0, i.jsx)(V, {
         guildJoinRequestStatus: s
-    }) : null, a = (0, i.jsx)(V, {
+    }) : null, a = (0, i.jsx)(B, {
         guild: t
     }), o = (0, c.bG)([E.A], () => E.A.isViewingRoles(t.id)), d = (0, C.Ig)(t);
     return (0, i.jsxs)(i.Fragment, {

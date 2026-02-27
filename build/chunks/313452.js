@@ -116,12 +116,12 @@ function D(e) {
         w = (0, h.A)(D, P),
         {
             entrypoint: k,
-            notificationCenterVariant: V
+            notificationCenterVariant: B
         } = (0, f.X8)({
             location: "NotificationsInboxSidebarList"
         }),
         {
-            isLoading: B,
+            isLoading: V,
             isLoadingComplete: H,
             hasLoadedEver: F
         } = (0, d.cf)([E.A], () => ({
@@ -129,7 +129,7 @@ function D(e) {
             isLoadingComplete: E.A.isLoadingComplete,
             hasLoadedEver: E.A.hasLoadedEver
         })),
-        K = !F && B,
+        K = !F && V,
         {
             messageCategoryOpenStates: W,
             toggleOpenState: Y
@@ -195,7 +195,7 @@ function D(e) {
             })), e
         }, [n, l]),
         J = 0 === n.length && 0 === l.length && H,
-        Q = 0 === n.length && 0 === l.length && !F && B,
+        Q = 0 === n.length && 0 === l.length && !F && V,
         $ = s.useMemo(() => {
             let e = [];
             return Q ? e.push(A()) : J ? e.push((0, i.jsx)(M, {}, "empty-state")) : G ? (e.push(...l.map(e => p([e], !0))), e.push(...n.map(e => p([e], !1)))) : o().each(L, t => {
@@ -219,7 +219,7 @@ function D(e) {
     s.useEffect(() => {
         Q || et(0 === q.UNREAD.length)
     }, [q, Q, et]);
-    let en = (n.length > 0 || l.length > 0) && null != a && B;
+    let en = (n.length > 0 || l.length > 0) && null != a && V;
     ! function(e) {
         let {
             loadingInitial: t,
@@ -240,8 +240,8 @@ function D(e) {
         return null == t ? 0 : Math.max(0, Math.ceil(t.offsetHeight / 64) - e)
     }, [W, q]);
     s.useEffect(() => {
-        Q || B || 0 >= ei() || (!ee || z) && a?.(S.VA.FILL_SCROLLER)
-    }, [ei, a, Q, B, ee, z]);
+        Q || V || 0 >= ei() || (!ee || z) && a?.(S.VA.FILL_SCROLLER)
+    }, [ei, a, Q, V, ee, z]);
     let es = s.useMemo(() => {
         let e = Math.min(Math.max(2, ei()), 20);
         return (0, i.jsx)(b.A, {
@@ -250,7 +250,7 @@ function D(e) {
         })
     }, [ei]);
     return (0, x.Hi)({
-        notificationCenterVariant: V,
+        notificationCenterVariant: B,
         entrypoint: k,
         messages: n,
         unreadMessages: l,

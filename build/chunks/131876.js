@@ -26,7 +26,7 @@ class o extends a.A {
         (0, r.kBI)(s) || (0, r.mMO)(async () => {
             let {
                 default: e
-            } = await n.e("95198").then(n.bind(n, 58829));
+            } = await n.e("72817").then(n.bind(n, 58829));
             return n => (0, i.jsx)(e, {
                 onComplete: t,
                 excludedPlatformTypes: l,

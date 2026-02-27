@@ -32,10 +32,10 @@ function T(e) {
         setSelectedGiftingPromotionReward: g,
         selectedGiftingPromotionReward: A,
         claimableRewards: j
-    } = (0, _.Pv)(), f = (0, a.bG)([E.default], () => E.default.getCurrentUser()), M = (0, a.bG)([p.A], () => p.A.getGiftPromotionRewardSkuIds()), R = (0, c.U)(j, A), [y, C] = i.useState(R), [v, N] = i.useState(!1);
+    } = (0, _.Pv)(), f = (0, a.bG)([E.default], () => E.default.getCurrentUser()), M = (0, a.bG)([p.A], () => p.A.getGiftPromotionRewardSkuIds()), R = (0, c.U)(j, A), [y, C] = i.useState(R), [N, v] = i.useState(!1);
     i.useEffect(() => {
-        v || null != A || null == R || (g(R), C(R))
-    }, [R, v, A, g]), r()(null != n, "Expected plan to selected"), r()(null != s, "Expected selectedSkuId"), r()(null != T, "Step should be set");
+        N || null != A || null == R || (g(R), C(R))
+    }, [R, N, A, g]), r()(null != n, "Expected plan to selected"), r()(null != s, "Expected selectedSkuId"), r()(null != T, "Step should be set");
     let O = i.useMemo(() => null != y && (j ?? []).includes(y), [y, j]),
         b = i.useMemo(() => 0 === M.length || null == y || !O, [M, y, O]);
     i.useEffect(() => {
@@ -46,7 +46,7 @@ function T(e) {
         null != y && O && M.includes(y) || null == y || (C(void 0), g(void 0))
     }, [M, O, y, g]);
     let k = e => {
-            g(e), C(e), N(!0)
+            g(e), C(e), v(!0)
         },
         w = M.map(e => (0, l.jsx)(d.k, {
             skuId: e,

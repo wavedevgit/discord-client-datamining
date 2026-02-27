@@ -40,8 +40,8 @@ var i = n(627968),
     P = n(68437),
     w = n(166444),
     k = n(588224),
-    V = n(652215),
-    B = n(349828),
+    B = n(652215),
+    V = n(349828),
     H = n(985018),
     F = n(728444),
     K = n(834201);
@@ -125,7 +125,7 @@ class W extends U.Ay {
             voiceStates: s,
             collapsed: t,
             tabIndex: n,
-            location: V.ThZ.GUILD_CHANNEL_LIST,
+            location: B.ThZ.GUILD_CHANNEL_LIST,
             numAudience: l
         })
     }
@@ -269,11 +269,11 @@ function z(e) {
         let e = v.A.getChannel(n.parent_id),
             i = R.A.getCheck(n.guild_id);
         return {
-            canManageChannel: null != t && O.A.can(V.xBc.MANAGE_CHANNELS, n),
-            canReorderChannel: !0 !== s && (t.id === B.Vc || (null != e ? O.A.can(V.xBc.MANAGE_CHANNELS, e) : O.A.can(V.xBc.MANAGE_CHANNELS, t))),
-            canMoveMembers: O.A.can(V.xBc.MOVE_MEMBERS, n),
-            locked: !O.A.can(V.xBc.CONNECT, n),
-            bypassLimit: O.A.can(V.xBc.MOVE_MEMBERS, n),
+            canManageChannel: null != t && O.A.can(B.xBc.MANAGE_CHANNELS, n),
+            canReorderChannel: !0 !== s && (t.id === V.Vc || (null != e ? O.A.can(B.xBc.MANAGE_CHANNELS, e) : O.A.can(B.xBc.MANAGE_CHANNELS, t))),
+            canMoveMembers: O.A.can(B.xBc.MOVE_MEMBERS, n),
+            locked: !O.A.can(B.xBc.CONNECT, n),
+            bypassLimit: O.A.can(B.xBc.MOVE_MEMBERS, n),
             unverifiedAccount: !i.canChat
         }
     }), h = (0, a.bG)([y.A], () => y.A.isCollapsed(n.parent_id)), A = (0, T.Ay)(n.id), p = (0, a.bG)([b.A], () => b.A.getStageInstanceByChannel(n.id), [n.id]), g = (0, I.zy)(n.id, N.ip.AUDIENCE), {
@@ -286,7 +286,7 @@ function z(e) {
         voiceStates: o,
         isSubscriptionGated: m,
         needSubscriptionToAccess: _,
-        enableConnectedUserLimit: C || n.userLimit > 0 && n.userLimit < V.RCc
+        enableConnectedUserLimit: C || n.userLimit > 0 && n.userLimit < B.RCc
     }), j = e.connected && null == E;
     return (0, i.jsx)(Y, {
         categoryCollapsed: h,

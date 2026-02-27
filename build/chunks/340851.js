@@ -42,8 +42,8 @@ var i = n(627968),
     P = n(338234),
     w = n(376696),
     k = n(544105),
-    V = n(502075),
-    B = n(985018),
+    B = n(502075),
+    V = n(985018),
     H = n(861379);
 
 function F(e) {
@@ -64,7 +64,7 @@ function K(e) {
     let {
         numAudience: t,
         collapsed: n
-    } = e, s = n ? t : B.intl.formatToPlainString(B.t["+v2pN2"], {
+    } = e, s = n ? t : V.intl.formatToPlainString(V.t["+v2pN2"], {
         count: t
     });
     return (0, i.jsxs)("div", {
@@ -132,9 +132,9 @@ let W = (0, p.J)(function(e) {
     } = (0, U.FS)({
         guildId: p.guild_id,
         location: "VoiceUser"
-    }), eN = s.useRef(null), [eb, eS] = s.useState(!1), eT = s.useRef(null), [ey, ev] = s.useState(!1), [ej, eR] = s.useState(!1), [eO, eL] = s.useState(!1), [eM, eD] = s.useState(!1), eG = ej || eM || eO, eU = ey || eG, eP = ex?.session_id != null, ew = (0, a.bG)([R.A], () => R.A.hasVoiceDareForUserId(l.id), [l.id]), ek = (0, j.Uk)("VoiceUser") && ew, eV = () => {
+    }), eN = s.useRef(null), [eb, eS] = s.useState(!1), eT = s.useRef(null), [ey, ev] = s.useState(!1), [ej, eR] = s.useState(!1), [eO, eL] = s.useState(!1), [eM, eD] = s.useState(!1), eG = ej || eM || eO, eU = ey || eG, eP = ex?.session_id != null, ew = (0, a.bG)([R.A], () => R.A.hasVoiceDareForUserId(l.id), [l.id]), ek = (0, j.Uk)("VoiceUser") && ew, eB = () => {
         eS(!eb)
-    }, eB = (e, t) => {
+    }, eV = (e, t) => {
         let n = new Set(["system:click_outside", "user:escape", "user:explicit"]);
         null != t && n.has(t) && (eO && eL(!1), ej && eR(!1)), eH()
     }, eH = () => {
@@ -151,7 +151,7 @@ let W = (0, p.J)(function(e) {
         eW = () => {
             if (!(ei && (0, E.eo)(p, G.A, L.A, M.A, f.default)[0])) return;
             let e = {
-                streamType: V.U4.GUILD,
+                streamType: B.U4.GUILD,
                 ownerId: l.id,
                 channelId: p.id,
                 guildId: p.guild_id
@@ -244,7 +244,7 @@ let W = (0, p.J)(function(e) {
                             }),
                             disabled: eA && !n,
                             selected: eb,
-                            onClick: n ? void 0 : eV,
+                            onClick: n ? void 0 : eB,
                             onDoubleClick: eW,
                             onContextMenu: eY,
                             guildId: p.guild_id,
@@ -255,7 +255,7 @@ let W = (0, p.J)(function(e) {
                             showHangStatus: eC
                         };
                     if (eA) return (0, i.jsx)(o.m, {
-                        text: (0, x.A)(eu) ?? B.intl.string(B.t.IyYqqY),
+                        text: (0, x.A)(eu) ?? V.intl.string(V.t.IyYqqY),
                         children: (0, i.jsx)(v.Ay, {
                             ref: eN,
                             ...s
@@ -274,7 +274,7 @@ let W = (0, p.J)(function(e) {
                         position: "right",
                         renderPopout: a,
                         shouldShow: (ec || eC && eG && (!eE || em)) && !eb,
-                        onRequestClose: eB,
+                        onRequestClose: eV,
                         align: eC && eU && !em && !eE ? "center" : void 0,
                         spacing: eI ?? (eC && eU && (!eE || em) ? 8 : 0),
                         children: () => (0, i.jsx)(v.Ay, {

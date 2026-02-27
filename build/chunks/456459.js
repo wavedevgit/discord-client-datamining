@@ -23,19 +23,19 @@ let x = () => {
         confettiCanvas: x,
         churnUserDiscountOffer: h,
         discountedPrice: P
-    } = (0, c.X)(), y = (0, r.useRef)(null), [C, v] = (0, r.useState)(!1), E = (0, a.bG)([s.A], () => s.A.useReducedMotion);
+    } = (0, c.X)(), C = (0, r.useRef)(null), [y, v] = (0, r.useState)(!1), E = (0, a.bG)([s.A], () => s.A.useReducedMotion);
     if ((0, r.useEffect)(() => {
-            null !== y.current && null !== P && v(!0)
-        }, [y, P]), null === h) return null;
-    let D = i === d.PremiumTypes.TIER_2;
+            null !== C.current && null !== P && v(!0)
+        }, [C, P]), null === h) return null;
+    let j = i === d.PremiumTypes.TIER_2;
     return (0, n.jsxs)("div", {
-        ref: y,
+        ref: C,
         children: [(0, n.jsx)(l.ExpressiveModal, {
             graphic: {
                 type: "image",
-                src: D ? p.A : g
+                src: j ? p.A : g
             },
-            gradientColor: D ? "nitro-pink" : "nitro-green",
+            gradientColor: j ? "nitro-pink" : "nitro-green",
             transitionState: t,
             title: m.intl.string(m.t.PZSyRk),
             onClose: async () => e(),
@@ -46,8 +46,8 @@ let x = () => {
                     userDiscountOffer: h
                 })
             })
-        }), !E && C && (0, n.jsx)(u.A, {
-            confettiTarget: y.current,
+        }), !E && y && (0, n.jsx)(u.A, {
+            confettiTarget: C.current,
             confettiCanvas: x,
             confettiVelocityMultiplier: .75
         })]

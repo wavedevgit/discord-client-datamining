@@ -45,8 +45,8 @@ function L(e) {
         channelId: n.id
     }), w = s.useRef(null), {
         isHoveringOrFocusing: k,
-        isHovering: V
-    } = (0, u.A)(w), B = () => {
+        isHovering: B
+    } = (0, u.A)(w), V = () => {
         (0, _.openUserProfileModal)({
             sourceAnalyticsLocations: U,
             hideRestrictedProfile: !0,
@@ -84,7 +84,7 @@ function L(e) {
                             displayProfile: M,
                             channelId: n.id,
                             themeType: v.d.SIDEBAR,
-                            onOpenProfile: L ? void 0 : B
+                            onOpenProfile: L ? void 0 : V
                         })]
                     }), (0, i.jsxs)("div", {
                         className: O.rf,
@@ -93,7 +93,7 @@ function L(e) {
                             guildId: n.guild_id,
                             nickname: A.Ay.getName(null, n.id, t),
                             pronouns: M?.pronouns,
-                            onOpenProfile: L ? void 0 : B,
+                            onOpenProfile: L ? void 0 : V,
                             tags: (0, i.jsx)(x.A, {
                                 displayProfile: M,
                                 themeType: v.d.SIDEBAR
@@ -122,7 +122,7 @@ function L(e) {
                     className: R.qr,
                     children: (0, i.jsx)(r.DUT, {
                         onClick: () => {
-                            B(), (0, g.Wn)({
+                            V(), (0, g.Wn)({
                                 action: "PRESS_VIEW_PROFILE",
                                 analyticsLocations: U,
                                 ...P
@@ -133,7 +133,7 @@ function L(e) {
                     })
                 }), M?.profileEffect != null && (0, i.jsx)(h.A, {
                     skuId: M?.profileEffect?.skuId,
-                    isHovering: V
+                    isHovering: B
                 })]
             })
         })

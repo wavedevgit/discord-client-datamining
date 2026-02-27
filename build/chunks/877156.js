@@ -31,29 +31,29 @@ function g(e) {
     } = (0, u.Ay)(), f = a._3J.SIZE_32, {
         product: M,
         isFetching: R
-    } = (0, c.q)(t), [y, C] = i.useState(!1), v = M?.items[0], {
-        isNameplateReward: N,
+    } = (0, c.q)(t), [y, C] = i.useState(!1), N = M?.items[0], {
+        isNameplateReward: v,
         nameplateData: O,
         rewardAvatarDecorationSrc: b
-    } = i.useMemo(() => null == v ? {
+    } = i.useMemo(() => null == N ? {
         isNameplateReward: !1,
         nameplateData: null,
         rewardAvatarDecorationSrc: null
-    } : (0, m.F)(v) ? {
+    } : (0, m.F)(N) ? {
         isNameplateReward: !0,
         nameplateData: {
-            skuId: v.skuId,
-            src: v.asset,
-            palette: (0, _.H6)(v.palette ?? "sky"),
-            imgAlt: v.label
+            skuId: N.skuId,
+            src: N.asset,
+            palette: (0, _.H6)(N.palette ?? "sky"),
+            imgAlt: N.label
         },
         rewardAvatarDecorationSrc: null
-    } : (0, p.T)(v) ? {
+    } : (0, p.T)(N) ? {
         isNameplateReward: !1,
         nameplateData: null,
         rewardAvatarDecorationSrc: (0, d.A)({
-            legacyAssetId: v.asset,
-            skuId: v.skuId,
+            legacyAssetId: N.asset,
+            skuId: N.skuId,
             size: f,
             canAnimate: !A
         })
@@ -61,12 +61,12 @@ function g(e) {
         isNameplateReward: !1,
         nameplateData: null,
         rewardAvatarDecorationSrc: null
-    }, [v, f, A]);
+    }, [N, f, A]);
     return (0, l.jsx)(S.UX, {
         children: (0, l.jsx)(r.jlY, {
             children: (0, l.jsxs)("div", {
                 className: T.W,
-                children: [N && null != O ? (0, l.jsx)("div", {
+                children: [v && null != O ? (0, l.jsx)("div", {
                     className: T.D,
                     onMouseEnter: () => C(!0),
                     onMouseLeave: () => C(!1),

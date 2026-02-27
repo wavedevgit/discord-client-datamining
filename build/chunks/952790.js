@@ -215,10 +215,10 @@ let O = s.memo(function(e) {
         headerClassName: O,
         communityInfoVisible: M,
         hasSubheader: D
-    } = e, G = N.features.has(E.GuildFeatures.ANIMATED_BANNER), U = (0, h.A)(N), P = !U && (0, x.A)(N), w = !U && M, k = (0, f.VI)(y) && G && !_, [V, B] = s.useState(!1), H = s.useRef(!1), F = s.useRef(null), K = t ?? F, W = s.useRef(void 0), Y = m.kt.getSetting(), z = (0, c.bG)([g.A], () => g.A.theme);
+    } = e, G = N.features.has(E.GuildFeatures.ANIMATED_BANNER), U = (0, h.A)(N), P = !U && (0, x.A)(N), w = !U && M, k = (0, f.VI)(y) && G && !_, [B, V] = s.useState(!1), H = s.useRef(!1), F = s.useRef(null), K = t ?? F, W = s.useRef(void 0), Y = m.kt.getSetting(), z = (0, c.bG)([g.A], () => g.A.theme);
     s.useEffect(() => {
-        if (k && n && !H.current && Y) return B(!0), W.current = setTimeout(() => {
-            B(!1)
+        if (k && n && !H.current && Y) return V(!0), W.current = setTimeout(() => {
+            V(!1)
         }, 5e3), () => {
             clearTimeout(W.current)
         }
@@ -273,16 +273,16 @@ let O = s.memo(function(e) {
                     guild: N,
                     controller: l,
                     guildBanner: y,
-                    animate: V
+                    animate: B
                 }) : null, (0, i.jsx)(L, {
                     controller: l
                 })]
             }), k && X() ? (0, i.jsx)("div", {
                 className: b.rt,
                 onMouseEnter: () => {
-                    B(!0), clearTimeout(W.current)
+                    V(!0), clearTimeout(W.current)
                 },
-                onMouseLeave: () => B(!1),
+                onMouseLeave: () => V(!1),
                 style: {
                     height: v
                 }

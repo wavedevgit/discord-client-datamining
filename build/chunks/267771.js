@@ -1,19 +1,20 @@
-/** chunk id: 267771, original params: e,t,i (module,exports,require) **/
-i.d(t, {
-    A: () => a
+/** chunk id: 267771, original params: e,t,n (module,exports,require) **/
+"use strict";
+n.d(t, {
+    A: () => r
 });
-var r = i(64700),
-    s = i(568065),
-    n = i(652215);
+var i = n(64700),
+    s = n(568065),
+    l = n(652215);
 
-function a(e) {
-    return (0, r.useMemo)(() => {
+function r(e) {
+    return (0, i.useMemo)(() => {
         if (null == e) return 0;
-        let t = e?.features.has(n.GuildFeatures.PREMIUM_TIER_3_OVERRIDE) === !0 ? 0 : n.M2T[n.TVA.TIER_3],
-            i = Object.values(s.sy),
-            r = Object.values(s.YV);
-        return i.concat(r).forEach(i => {
-            null == i.includedInLevel && (i.isEnabled?.(e.id) ?? !0) && (t += i.boostPrice)
+        let t = e?.features.has(l.GuildFeatures.PREMIUM_TIER_3_OVERRIDE) === !0 ? 0 : l.M2T[l.TVA.TIER_3],
+            n = Object.values(s.sy),
+            i = Object.values(s.YV);
+        return n.concat(i).forEach(n => {
+            null == n.includedInLevel && (n.isEnabled?.(e.id) ?? !0) && (t += n.boostPrice)
         }), t
     }, [e])
 }

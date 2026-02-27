@@ -63,8 +63,8 @@ let P = s.memo(function(e) {
         route: P,
         guild: w,
         animatable: k,
-        selected: V = !1,
-        unread: B = !1,
+        selected: B = !1,
+        unread: V = !1,
         mediaState: H,
         unavailable: F = !1,
         badge: K = 0,
@@ -150,7 +150,7 @@ let P = s.memo(function(e) {
     let ey = (0, i.jsx)(T.A, {
             guild: w,
             show: eA,
-            active: V,
+            active: B,
             onAnimationStart: function() {
                 eh(eA)
             },
@@ -171,13 +171,13 @@ let P = s.memo(function(e) {
             onContextMenu: eC,
             onKeyDown: eE,
             icon: (0, C.Iv)(w, 2 * eT, ed && k, !0),
-            selected: V || ed,
+            selected: B || ed,
             ...ea,
             "aria-setsize": $,
             "aria-posinset": Z,
-            "aria-selected": V
+            "aria-selected": B
         }) : (0, i.jsx)(A.Qk9, {
-            selected: V,
+            selected: B,
             children: (0, i.jsx)("div", {
                 ref: z ? e => {
                     er(e)
@@ -197,11 +197,11 @@ let P = s.memo(function(e) {
                     onContextMenu: eC,
                     onKeyDown: eE,
                     icon: (0, C.Iv)(w, 2 * eT, ed && k, !0),
-                    selected: V || ed,
+                    selected: B || ed,
                     ...ea,
                     "aria-setsize": $,
                     "aria-posinset": Z,
-                    "aria-selected": V
+                    "aria-selected": B
                 })
             })
         }),
@@ -221,7 +221,7 @@ let P = s.memo(function(e) {
             className: r()(D.rN, {
                 [D.p9]: X,
                 [D.oR]: eA,
-                [D.wH]: eA || V
+                [D.wH]: eA || B
             }),
             children: (0, i.jsx)(A.Qk9, {
                 selected: !0,
@@ -237,11 +237,11 @@ let P = s.memo(function(e) {
             className: r()(D.rN, {
                 [D.p9]: X,
                 [D.oR]: eA,
-                [D.wH]: eA || V
+                [D.wH]: eA || B
             }),
             "data-drop-hovering": eA,
             children: (0, i.jsx)(A.Qk9, {
-                selected: V,
+                selected: B,
                 upperBadge: en,
                 lowerBadge: ei,
                 lowerBadgeSize: es,
@@ -252,8 +252,8 @@ let P = s.memo(function(e) {
         ref: eS,
         children: [(0, i.jsx)(S.A, {
             hovered: !el && ed,
-            selected: !el && V,
-            unread: !el && B,
+            selected: !el && B,
+            unread: !el && V,
             className: D.Io
         }), (0, i.jsx)(v.A, {
             guild: w,

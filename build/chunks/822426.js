@@ -50,7 +50,7 @@ function E(e) {
             }), (0, l.jsx)(r.Button, {
                 variant: "secondary",
                 onClick: n,
-                text: m.intl.string(m.t.h9tkAK)
+                text: m.intl.string(m.t.rzVN6j)
             })]
         }),
         onClose: n,

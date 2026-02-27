@@ -55,8 +55,8 @@ function T(e) {
         })
     }, [v.id, G]);
     let k = (0, a.bG)([x.A], () => v.isPrivate() || (0, p.K)(x.A, D, v), [D, v]),
-        V = D?.afkChannelId === v.id,
-        B = v.userLimit <= 0 || v.userLimit > 1,
+        B = D?.afkChannelId === v.id,
+        V = v.userLimit <= 0 || v.userLimit > 1,
         H = (0, a.bG)([c.Ay], () => c.Ay.getEmbeddedActivitiesForChannel(v.id).length <= 0),
         F = (0, A.JZ)(o.M.VC_TILE_ACTIVITIES_ENTRY_POINT),
         K = (0, d.et)(v.id) !== d.xy.CAN_LAUNCH,
@@ -78,12 +78,12 @@ function T(e) {
         properties: {
             total_participants: O,
             can_invite: k,
-            is_afk_channel: V,
+            is_afk_channel: B,
             channel_user_limit: v.userLimit
         }
     }, {
         trackOnInitialLoad: !0
-    }, []), null != D && !V && (!(U >= 2) || !H || K || F || W ? B && 1 === U && k && (H && !K ? Y.push(e => (0, i.jsx)(C.y, {
+    }, []), null != D && !B && (!(U >= 2) || !H || K || F || W ? V && 1 === U && k && (H && !K ? Y.push(e => (0, i.jsx)(C.y, {
         channel: v,
         guild: D,
         width: e,

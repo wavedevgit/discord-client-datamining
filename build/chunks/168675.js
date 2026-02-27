@@ -40,8 +40,8 @@ var i = n(627968),
     P = n(393309),
     w = n(474078),
     k = n(747926),
-    V = n(965601),
-    B = n(55294),
+    B = n(965601),
+    V = n(55294),
     H = n(652215),
     F = n(985018),
     K = n(770587),
@@ -166,7 +166,7 @@ function q(e) {
             isGeneratingAI: N,
             enableAIFeatures: b,
             getThreadNameInputAccessory: y
-        } = (0, V.C)({
+        } = (0, B.C)({
             parentChannel: n,
             parentMessageId: l,
             updateThreadSettings: _,
@@ -187,7 +187,7 @@ function q(e) {
                 textAreaState: r,
                 location: a,
                 enableAIFeatures: o
-            } = e, [c, d] = s.useState(null), [u, h] = s.useState(null), [A, p] = s.useState(!1), g = (0, B.A)({
+            } = e, [c, d] = s.useState(null), [u, h] = s.useState(null), [A, p] = s.useState(!1), g = (0, V.A)({
                 parentChannel: t,
                 parentMessageId: n,
                 threadSettings: i,

@@ -41,8 +41,8 @@ var i = n(627968),
     P = n(33324),
     w = n(823142),
     k = n(884452),
-    V = n(137089),
-    B = n(506792),
+    B = n(137089),
+    V = n(506792),
     H = n(724591),
     F = n(573956),
     K = n(141515),
@@ -278,7 +278,7 @@ class eo extends s.PureComponent {
             optInEnabled: l,
             guildChannelsVersion: r
         } = this.props;
-        return (0, V.fz)({
+        return (0, B.fz)({
             sectionIndex: e,
             guildChannels: t,
             guildChannelsVersion: r,
@@ -435,7 +435,7 @@ class eo extends s.PureComponent {
                         selected: a === es.VV.CHANNEL_BROWSER || a === es.VV.CUSTOMIZE_COMMUNITY
                     }, en.n.CHANNELS_AND_ROLES);
                 case en.n.GUILD_DIRECTORY:
-                    return (0, i.jsx)(B.A, {
+                    return (0, i.jsx)(V.A, {
                         guild: l,
                         selectedChannelId: a,
                         disableManageChannels: h
@@ -564,7 +564,7 @@ class eo extends s.PureComponent {
             optInEnabled: o,
             guildId: c
         } = this.props;
-        return (0, i.jsx)(V.Ay, {
+        return (0, i.jsx)(B.Ay, {
             guildId: c,
             guildChannels: n,
             guildChannelsVersion: s,
@@ -573,7 +573,7 @@ class eo extends s.PureComponent {
             selectedChannelId: r,
             selectedVoiceChannelId: a,
             optInEnabled: o
-        }, (0, V.tt)(t, n, o))
+        }, (0, B.tt)(t, n, o))
     };
     renderTopUnread() {
         let {

@@ -45,7 +45,7 @@ function k(e) {
         user: t,
         currentUser: n,
         channel: m
-    } = e, k = __OVERLAY__, B = (0, f.Ay)(t.id), H = (0, c.Ay)(), F = s.useRef(Date.now()), {
+    } = e, k = __OVERLAY__, V = (0, f.Ay)(t.id), H = (0, c.Ay)(), F = s.useRef(Date.now()), {
         analyticsLocations: K
     } = (0, u.Ay)(d.A.USER_PROFILE_SIDEBAR), W = (0, g.pb)({
         layout: "SIDEBAR",
@@ -66,7 +66,7 @@ function k(e) {
             ...W,
             ...e
         })
-    }, $ = B?.widgets != null && B.widgets.length > 0, {
+    }, $ = V?.widgets != null && V.widgets.length > 0, {
         defaultWishlistId: Z
     } = (0, a.cf)([_.A], () => ({
         defaultWishlistId: _.A.getFirstWishlistId(t.id)
@@ -81,18 +81,18 @@ function k(e) {
         children: (0, i.jsx)(g.of, {
             value: W,
             openedAt: F.current,
-            fetchStartedAt: B?.fetchStartedAt,
-            fetchEndedAt: B?.fetchEndedAt,
-            isLoaded: B?.isLoaded,
+            fetchStartedAt: V?.fetchStartedAt,
+            fetchEndedAt: V?.fetchEndedAt,
+            isLoaded: V?.isLoaded,
             children: (0, i.jsx)(x.Hl, {
                 value: q,
                 children: (0, i.jsxs)(T.A, {
                     ref: Y,
                     user: t,
-                    displayProfile: B,
+                    displayProfile: V,
                     themeType: U.d.SIDEBAR,
                     themeOverride: H,
-                    privateBanner: B?.private === !0 ? (0, i.jsx)(b.A, {}) : void 0,
+                    privateBanner: V?.private === !0 ? (0, i.jsx)(b.A, {}) : void 0,
                     children: [null != q.interactionType && (0, i.jsx)(l.animated.div, {
                         style: J,
                         className: w.tB
@@ -110,7 +110,7 @@ function k(e) {
                             className: w.wx,
                             children: [(0, i.jsx)(I.A, {
                                 user: t,
-                                displayProfile: B,
+                                displayProfile: V,
                                 themeType: U.d.SIDEBAR,
                                 animateOnHoverOrFocusOnly: !z,
                                 className: w.vK
@@ -119,7 +119,7 @@ function k(e) {
                                 className: w.oR
                             }), (0, i.jsx)(E.A, {
                                 user: t,
-                                displayProfile: B,
+                                displayProfile: V,
                                 channelId: m.id,
                                 themeType: U.d.SIDEBAR,
                                 onOpenProfile: k ? void 0 : Q
@@ -132,7 +132,7 @@ function k(e) {
                         }), (0, i.jsx)(L.A, {
                             user: t,
                             currentUser: n,
-                            displayProfile: B,
+                            displayProfile: V,
                             channel: m,
                             isHoveringOrFocusing: null == q.interactionType && z,
                             onOpenProfile: k ? void 0 : Q
@@ -140,7 +140,7 @@ function k(e) {
                             className: w.sJ,
                             children: (0, i.jsx)(S.A, {
                                 user: t,
-                                widgets: B.widgets,
+                                widgets: V.widgets,
                                 onOpenUserProfileModal: Q
                             })
                         }), null != et && et.length > 0 && (0, i.jsx)("div", {
@@ -160,12 +160,12 @@ function k(e) {
                             user: t,
                             channelId: m.id
                         })]
-                    }), !k && (0, i.jsx)(V, {
+                    }), !k && (0, i.jsx)(B, {
                         handleOpenProfile: Q,
                         analyticsLocations: K,
                         context: W
-                    }), B?.profileEffect != null && (0, i.jsx)(A.A, {
-                        skuId: B?.profileEffect?.skuId,
+                    }), V?.profileEffect != null && (0, i.jsx)(A.A, {
+                        skuId: V?.profileEffect?.skuId,
                         isHovering: X
                     })]
                 })
@@ -173,7 +173,7 @@ function k(e) {
         })
     })
 }
-let V = e => {
+let B = e => {
     let {
         handleOpenProfile: t,
         analyticsLocations: n,

@@ -41,9 +41,9 @@ function y(e) {
         onMouseLeave: U
     } = (0, E.A)(200, 300), P = (0, u.b)({
         surface: c.YI.VOICE_LAUNCHER
-    }), w = (0, l.bG)([d.Ay], () => null != d.Ay.getSelfEmbeddedActivityForLocation(d.Ay.getConnectedActivityLocation())), k = !L, V = s.useCallback(e => {
+    }), w = (0, l.bG)([d.Ay], () => null != d.Ay.getSelfEmbeddedActivityForLocation(d.Ay.getConnectedActivityLocation())), k = !L, B = s.useCallback(e => {
         "focus" !== e.type && G()
-    }, [G]), B = (0, C.Us)() === b.BRT.POPOUT, {
+    }, [G]), V = (0, C.Us)() === b.BRT.POPOUT, {
         parentAnalyticsLocation: H,
         newestAnalyticsLocation: F
     } = (0, m.Ay)(), K = s.useCallback(() => {
@@ -54,10 +54,10 @@ function y(e) {
             } : {
                 type: "contextless"
             },
-            openInPopout: B,
+            openInPopout: V,
             analyticsLocation: F
         })
-    }, [t, B, F, H]), W = [];
+    }, [t, V, F, H]), W = [];
     L || W.push(r.M.ACTIVITIES_MINI_SHELF_SPARKLES), (0, A.A)(t.id) && !L && W.push(r.M.ACTIVITY_GDM_ROCKET_SPARKLE), L || W.push(r.M.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP);
     let Y = s.useRef(!1),
         z = s.useRef(null);
@@ -120,7 +120,7 @@ function y(e) {
                                         onClick: () => {
                                             K(), (s === r.M.ACTIVITIES_MINI_SHELF_SPARKLES || s === r.M.ACTIVITY_GDM_ROCKET_SPARKLE || s === r.M.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_1_SPARKLES || s === r.M.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_2_SPARKLES || s === r.M.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP) && l(S.i.TAKE_ACTION), t === r.M.ACTIVITIES_VOICE_LAUNCHER_BADGE && n(S.i.TAKE_ACTION)
                                         },
-                                        onMouseEnter: V,
+                                        onMouseEnter: B,
                                         onMouseLeave: U
                                     })
                                 })

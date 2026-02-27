@@ -89,7 +89,7 @@ function D() {
         },
         actions: [{
             variant: "secondary",
-            text: E.intl.string(E.t.h9tkAK),
+            text: E.intl.string(E.t.rzVN6j),
             onClick: t
         }, {
             variant: "primary",
@@ -120,24 +120,24 @@ function T() {
     } = (0, p.X)(), [u, d] = a.useState(!1), [m, D] = a.useState(!1);
     if (null == r) return void _(C.g.PAUSE_SELECT);
     let T = null,
-        h = [f.Dmq.PAST_DUE, f.Dmq.PAUSED].includes(o.status) ? o.currentPeriodStart : o.currentPeriodEnd,
-        y = i()(h).add(r, "days").toDate();
+        y = [f.Dmq.PAST_DUE, f.Dmq.PAUSED].includes(o.status) ? o.currentPeriodStart : o.currentPeriodEnd,
+        h = i()(y).add(r, "days").toDate();
     switch (o.status) {
         case f.Dmq.PAST_DUE:
             T = E.intl.format(E.t["xaS18/"], {
                 pauseDuration: r,
-                resumeDate: y
+                resumeDate: h
             });
             break;
         case f.Dmq.PAUSED:
             T = E.intl.format(E.t.Vur3Fc, {
-                resumeDate: y
+                resumeDate: h
             });
             break;
         default:
             T = E.intl.format(E.t.W85vFA, {
-                pauseDate: h,
-                resumeDate: y,
+                pauseDate: y,
+                resumeDate: h,
                 pauseDuration: r
             })
     }
@@ -145,7 +145,7 @@ function T() {
         title: E.intl.string(E.t.AnMG5x),
         transitionState: e,
         actions: [{
-            text: E.intl.string(E.t.h9tkAK),
+            text: E.intl.string(E.t.rzVN6j),
             variant: "primary",
             onClick: t
         }, {

@@ -47,7 +47,7 @@ let k = s.memo(function e(t) {
             className: D,
             onContextMenu: P,
             onClick: k,
-            disableInteraction: B = !1,
+            disableInteraction: V = !1,
             hasThread: H,
             treatSpam: F
         } = t,
@@ -92,7 +92,7 @@ let k = s.memo(function e(t) {
         message: W.message,
         channel: Y,
         hasThread: !1
-    }) : (m.A.isBlockedForMessage(l) ? n = U.t["+FcYM/"] : m.A.isIgnoredForMessage(l) ? n = U.t["VFWjc+"] : (0, C.kf)(l) && F && (n = U.t.xfkfTK), void 0 !== n) ? (0, i.jsx)(V, {
+    }) : (m.A.isBlockedForMessage(l) ? n = U.t["+FcYM/"] : m.A.isIgnoredForMessage(l) ? n = U.t["VFWjc+"] : (0, C.kf)(l) && F && (n = U.t.xfkfTK), void 0 !== n) ? (0, i.jsx)(B, {
         className: D,
         compact: o,
         count: 1,
@@ -101,7 +101,7 @@ let k = s.memo(function e(t) {
         compact: o,
         className: r()(D, {
             [w.M1]: (0, x.ec)(l),
-            [w.XN]: B,
+            [w.XN]: V,
             [w._A]: t.isGroupStart
         }),
         childrenRepliedMessage: (0, M.A)(l, s, K, W, o),
@@ -149,7 +149,7 @@ let k = s.memo(function e(t) {
     })
 });
 
-function V(e) {
+function B(e) {
     let {
         className: t,
         count: n,

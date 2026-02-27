@@ -23,7 +23,7 @@ function A(e) {
         location: l
     } = e, t = (0, _.n)({
         location: l
-    }), c = (0, g.A)(), [A, h] = (0, d.RF)(t ? a.M.GAME_SHOP_ORBS_REWARD_BANNER : null, (0, o.c)(a.M.GAME_SHOP_ORBS_REWARD_BANNER), void 0, !0), m = A !== a.M.GAME_SHOP_ORBS_REWARD_BANNER;
+    }), c = (0, g.B)(), [A, h] = (0, d.RF)(t ? a.M.GAME_SHOP_ORBS_REWARD_BANNER : null, (0, o.c)(a.M.GAME_SHOP_ORBS_REWARD_BANNER), void 0, !0), m = A !== a.M.GAME_SHOP_ORBS_REWARD_BANNER;
     return (s.useEffect(() => {
         t && (0, u.Xw)()
     }, [t]), !t || m) ? null : (0, n.jsxs)(r.$Td, {

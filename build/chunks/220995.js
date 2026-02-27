@@ -53,12 +53,12 @@ function y(e) {
         }),
         P = (0, c.bG)([f.A], () => f.A.getGuild(t.guild_id)),
         [w, k] = s.useState(!1),
-        V = s.useRef(null),
+        B = s.useRef(null),
         {
-            isHoveringOrFocusing: B
-        } = (0, m.A)(G ? y : V),
+            isHoveringOrFocusing: V
+        } = (0, m.A)(G ? y : B),
         [H, F] = s.useState(!1),
-        K = B || H,
+        K = V || H,
         W = s.useCallback(function() {
             let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "unknown";
             C.default.track(I.HAw.VOICE_INVITE_SUGGESTIONS_ENTRYPOINT_CLOSED, {
@@ -190,7 +190,7 @@ function y(e) {
                                 lineClamp: 1,
                                 children: N.intl.string(N.t["EE+P0H"])
                             })
-                        }), B ? (0, i.jsx)(u.DUT, {
+                        }), V ? (0, i.jsx)(u.DUT, {
                             className: b.VN,
                             onClick: e => {
                                 e.stopPropagation(), q("user_explicit")

@@ -40,9 +40,9 @@ var i = n(627968),
     P = n(652215),
     w = n(228160),
     k = n(985018),
-    V = n(471135);
+    B = n(471135);
 
-function B(e) {
+function V(e) {
     let {
         message: t,
         channel: n,
@@ -68,14 +68,14 @@ function B(e) {
         compact: !0,
         isRepliedMessage: !0
     }), O = (0, i.jsx)("div", {
-        className: V.Ys,
+        className: B.Ys,
         inert: !0,
         children: (0, i.jsx)(I.A, {
             channel: n,
             message: t,
             hideGuildTag: !0,
             hideSystemTag: !0,
-            className: V.Xh
+            className: B.Xh
         })
     });
     return (0, s.useEffect)(() => {
@@ -85,9 +85,9 @@ function B(e) {
         children: (0, i.jsxs)("div", {
             onMouseLeave: b.onMouseLeave,
             onMouseEnter: b.onMouseEnter,
-            className: V.zC,
+            className: B.zC,
             children: [o && !a && (0, i.jsx)("div", {
-                className: V.Zm
+                className: B.Zm
             }), (0, i.jsx)(u.BJc, {
                 align: "start",
                 style: {
@@ -123,9 +123,9 @@ function B(e) {
                         justifyContent: "space-between"
                     },
                     children: [T ? (0, i.jsxs)("div", {
-                        className: V.ZR,
+                        className: B.ZR,
                         children: [(0, i.jsx)("div", {
-                            className: V.Xh,
+                            className: B.Xh,
                             style: {
                                 color: C ?? void 0
                             },
@@ -139,7 +139,7 @@ function B(e) {
                             style: {
                                 color: C ?? void 0
                             },
-                            className: V.Xh,
+                            className: B.Xh,
                             children: _.name
                         })
                     }), (0, i.jsxs)(u.BJc, {
@@ -154,7 +154,7 @@ function B(e) {
                             channel: n,
                             isUnread: o
                         }), t.mentioned && o ? (0, i.jsx)(u.hVq, {
-                            className: V.WK,
+                            className: B.WK,
                             count: 1
                         }) : (0, i.jsx)(F, {
                             message: t
@@ -165,19 +165,19 @@ function B(e) {
                     align: "center",
                     gap: 4,
                     inert: !0,
-                    className: r()(V.HA, {
-                        [V.gy]: o,
-                        [V.wH]: a
+                    className: r()(B.HA, {
+                        [B.gy]: o,
+                        [B.wH]: a
                     }),
                     children: [null !== A && (0, i.jsx)(A, {
                         size: "xxs",
-                        className: V.p4
+                        className: B.p4
                     }), (0, i.jsxs)(u.Text, {
                         variant: "text-sm/medium",
                         lineClamp: 1,
-                        className: r()(V.HA, {
-                            [V.gy]: o,
-                            [V.wH]: a
+                        className: r()(B.HA, {
+                            [B.gy]: o,
+                            [B.wH]: a
                         }),
                         children: [m, !T && ` \xb7 ${x}`]
                     })]
@@ -216,7 +216,7 @@ function H(e) {
             size: A.DN.SIZE_16
         }), (0, i.jsx)(u.Text, {
             variant: "text-sm/medium",
-            className: V.gD,
+            className: B.gD,
             children: k.intl.formatToPlainString(w.default.NzUuLD, {
                 count: t.length
             })
@@ -230,7 +230,7 @@ function F(e) {
     } = e, n = (0, b.jb)(t.timestamp.getTime());
     return (0, i.jsx)(C.A, {
         timestamp: t.timestamp,
-        className: V.vE,
+        className: B.vE,
         isEdited: t.isEdited(),
         isInline: !0,
         children: n
@@ -284,15 +284,15 @@ function K(e) {
                 content: a,
                 message: t,
                 compact: !1,
-                className: r()(V.iU, {
-                    [V.gy]: n,
-                    [V.wH]: l
+                className: r()(B.iU, {
+                    [B.gy]: n,
+                    [B.wH]: l
                 })
             })), s && (I = (0, i.jsx)("div", {
-                className: r()(V.iU, {
-                    [V.gy]: n,
-                    [V.wH]: l,
-                    [V.QP]: E
+                className: r()(B.iU, {
+                    [B.gy]: n,
+                    [B.wH]: l,
+                    [B.QP]: E
                 }),
                 children: I
             })), {
@@ -313,11 +313,11 @@ function K(e) {
         inert: !0,
         children: [null != c && (0, i.jsx)(c, {
             size: "xxs",
-            className: V.p4
+            className: B.p4
         }), (0, i.jsx)(u.Text, {
             variant: "text-sm/normal",
             lineClamp: 1,
-            className: V.iU,
+            className: B.iU,
             children: o
         })]
     })
@@ -345,9 +345,9 @@ let W = (0, s.memo)(function(e) {
     }), f = s.useMemo(() => `${d?.author.username}: ${g?.name}`, [d?.author.username, g?.name]), x = l?.map(e => e.message).filter(e => null != e) ?? [];
     return null == d || null == g ? null : (0, i.jsx)(u.sqX, {
         "aria-label": f,
-        className: r()(V.FJ, {
-            [V.wH]: d.id === p.messageId,
-            [V.Yj]: m
+        className: r()(B.FJ, {
+            [B.wH]: d.id === p.messageId,
+            [B.Yj]: m
         }),
         onClick: () => {
             L.A.inboxItemClick({
@@ -375,7 +375,7 @@ let W = (0, s.memo)(function(e) {
                 disableClickTrap: !0
             })
         },
-        children: (0, i.jsx)(B, {
+        children: (0, i.jsx)(V, {
             message: d,
             channel: g,
             isSelected: d.id === p.messageId,

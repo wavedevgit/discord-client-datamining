@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
     EP: () => w,
-    i$: () => V,
+    i$: () => B,
     zF: () => U
 });
 var i = n(627968),
@@ -299,7 +299,7 @@ function k(e, t) {
     })
 }
 
-function V(e) {
+function B(e) {
     let {
         guild: t,
         channel: n,

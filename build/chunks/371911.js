@@ -45,14 +45,14 @@ function v(e) {
             analyticsLocations: U
         } = (0, h.Ay)(u.A.NOTIFICATION_CENTER),
         [P, w] = s.useState(!1),
-        [k, V] = [(0, o.bG)([f.A], () => f.A.settings.inbox?.currentTab ?? c.Y2.UNREADS), s.useCallback(e => {
+        [k, B] = [(0, o.bG)([f.A], () => f.A.settings.inbox?.currentTab ?? c.Y2.UNREADS), s.useCallback(e => {
             _.wc.updateAsync("inbox", t => {
                 if (t.currentTab === e) return !1;
                 t.currentTab = e
             }, _.Sb.FREQUENT_USER_ACTION)
         }, [])],
         {
-            showTutorial: B,
+            showTutorial: V,
             setSeenTutorial: H
         } = (t = (0, o.bG)([f.A], () => f.A.settings.inbox?.viewedTutorial ?? !1), n = s.useCallback(() => {
             _.wc.updateAsync("inbox", e => {
@@ -76,7 +76,7 @@ function v(e) {
         location: "RecentsPopout"
     }), z = (0, o.bG)([p.A], () => p.A.hasOverdueReminder(), []) && W && Y;
     s.useEffect(() => {
-        k !== c.Y2.BOOKMARKS || W || Y || V(c.Y2.MENTIONS), k === c.Y2.GAME_INVITES && V(c.Y2.MENTIONS)
+        k !== c.Y2.BOOKMARKS || W || Y || B(c.Y2.MENTIONS), k === c.Y2.GAME_INVITES && B(c.Y2.MENTIONS)
     });
     let X = s.useCallback(e => {
             e.shiftKey || F()
@@ -105,7 +105,7 @@ function v(e) {
                         children: (0, i.jsx)(d.Fmo, {
                             component: (0, i.jsx)(I.A, {
                                 tab: k,
-                                setTab: V,
+                                setTab: B,
                                 badgeState: R,
                                 closePopout: F
                             }),
@@ -117,7 +117,7 @@ function v(e) {
                                 fallback: (0, i.jsx)(b.T, {}),
                                 children: (0, i.jsx)(b.Ay, {
                                     onJump: X,
-                                    showTutorial: B,
+                                    showTutorial: V,
                                     setSeenTutorial: H,
                                     closePopout: F
                                 })

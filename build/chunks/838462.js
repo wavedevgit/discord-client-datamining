@@ -29,8 +29,8 @@ var l = n(627968),
     R = n(877156),
     y = n(216641),
     C = n(921925),
-    v = n(652215),
-    N = n(49999);
+    N = n(652215),
+    v = n(49999);
 
 function O(e) {
     let t, {
@@ -49,8 +49,8 @@ function O(e) {
             selectedPlan: H,
             selectedSkuId: B,
             step: W,
-            updatedSubscription: K,
-            startingPremiumSubscriptionPlanIdRef: z,
+            updatedSubscription: z,
+            startingPremiumSubscriptionPlanIdRef: K,
             startingFractionalPremiumEndsAtRef: V,
             isPremiumGroupPurchase: Z
         } = (0, j.P5)(),
@@ -81,17 +81,17 @@ function O(e) {
         s(), b?.()
     }, [s, b]);
     (0, p.Ay)(() => {
-        Z && P.default.track(v.HAw.PREMIUM_GROUP_PURCHASE_CONFIRMATION_VIEWED, {
-            has_updated_subscription: null != K,
-            has_any_premium_group: K?.hasAnyPremiumGroup ?? !1,
-            subscription_id: K?.id
+        Z && P.default.track(N.HAw.PREMIUM_GROUP_PURCHASE_CONFIRMATION_VIEWED, {
+            has_updated_subscription: null != z,
+            has_any_premium_group: z?.hasAnyPremiumGroup ?? !1,
+            subscription_id: z?.id
         })
     }), i.useEffect(() => {
         function e() {
             if (Z)
-                if (null != K && K.hasAnyPremiumGroup) {
-                    P.default.track(v.HAw.PREMIUM_GROUP_PURCHASE_FRIEND_SELECTOR_OPENED, {
-                        subscription_id: K.id
+                if (null != z && z.hasAnyPremiumGroup) {
+                    P.default.track(N.HAw.PREMIUM_GROUP_PURCHASE_FRIEND_SELECTOR_OPENED, {
+                        subscription_id: z.id
                     });
                     let e = (0, a.uniqueId)("premium-group-purchase-flow-modal");
                     (0, c.mMO)(async () => {
@@ -100,47 +100,47 @@ function O(e) {
                         } = await n.e("73987").then(n.bind(n, 773486));
                         return t => (0, l.jsx)(e, {
                             ...t,
-                            subscription: K,
+                            subscription: z,
                             isFromPurchaseFlow: !0,
                             onClose: async () => {
-                                I._.dispatch(v.jej.PREMIUM_GROUP_PURCHASE_FLOW_COMPLETED), await t.onClose()
+                                I._.dispatch(N.jej.PREMIUM_GROUP_PURCHASE_FLOW_COMPLETED), await t.onClose()
                             }
                         })
                     }, {
                         onCloseRequest: () => {
-                            I._.dispatch(v.jej.PREMIUM_GROUP_PURCHASE_FLOW_COMPLETED), (0, c.OoC)(e)
+                            I._.dispatch(N.jej.PREMIUM_GROUP_PURCHASE_FLOW_COMPLETED), (0, c.OoC)(e)
                         },
                         modalKey: e
                     })
-                } else P.default.track(v.HAw.PREMIUM_GROUP_PURCHASE_FRIEND_SELECTOR_SKIPPED, {
-                    has_updated_subscription: null != K,
-                    has_any_premium_group: K?.hasAnyPremiumGroup ?? !1
-                }), I._.dispatch(v.jej.PREMIUM_GROUP_PURCHASE_FLOW_COMPLETED)
+                } else P.default.track(N.HAw.PREMIUM_GROUP_PURCHASE_FRIEND_SELECTOR_SKIPPED, {
+                    has_updated_subscription: null != z,
+                    has_any_premium_group: z?.hasAnyPremiumGroup ?? !1
+                }), I._.dispatch(N.jej.PREMIUM_GROUP_PURCHASE_FLOW_COMPLETED)
         }
-        return I._.subscribe(v.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED, e), () => {
-            I._.unsubscribe(v.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED, e)
+        return I._.subscribe(N.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED, e), () => {
+            I._.unsubscribe(N.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED, e)
         }
-    }, [Z, K]), i.useEffect(() => {
+    }, [Z, z]), i.useEffect(() => {
         !q || null == Y || null == X || Q || J || (0, T.Ik)(Y) || $({
             onSubscriptionConfirmation: b
         })
     }, [$, q, Y, X, Q, J, b]), i.useEffect(() => {
         el && null != er && (0, E.$l)(d.M.GIFTING_PROMOTION_REMINDER, (0, h.p)(), {
-            dismissAction: N.i.INDIRECT_ACTION
+            dismissAction: v.i.INDIRECT_ACTION
         })
     }, [er, el]);
     let ed = null != D ? S.Rs.DEEPLINK_TO_DESKTOP_APP : void 0;
-    if (null != k) t = k(H, eu, K);
+    if (null != k) t = k(H, eu, z);
     else if (q) t = (0, l.jsx)(S.fw, {
         planId: H.id,
         onClose: eu
     });
     else {
-        let e = z.current === H.id ? {
+        let e = K.current === H.id ? {
             postSuccessGuild: w
         } : {
             followupSKUInfo: U,
-            startingPremiumSubscriptionPlanId: z.current,
+            startingPremiumSubscriptionPlanId: K.current,
             isDowngrade: null != L && (0, g.vT)(L, H.id, O)
         };
         t = (0, l.jsx)(S.Ay, {

@@ -42,10 +42,10 @@ let N = e => {
         let [y, v] = s.useState(.65), [j, R] = s.useState(.65), [O, L] = s.useState(.65), [M, D] = s.useState({
             x: 0,
             y: 0
-        }), [G, U] = s.useState(!1), [P, w] = s.useState(0), [k, V] = s.useState({
+        }), [G, U] = s.useState(!1), [P, w] = s.useState(0), [k, B] = s.useState({
             x: 0,
             y: 0
-        }), [B, H] = s.useState({
+        }), [V, H] = s.useState({
             x: 0,
             y: 0
         }), [F, K] = s.useState(!1), W = s.useRef(null), [Y, z] = s.useState(null), X = (0, d.w)(e => {
@@ -53,7 +53,7 @@ let N = e => {
                 contentRect: t,
                 target: n
             } = e, i = n.getBoundingClientRect(), s = t.width, l = t.height, r = s / g.i.width * 1.5, a = l / g.i.height * 1.5, o = s / g.i.width * 1.1, c = l / g.i.height * 1.1;
-            V({
+            B({
                 x: s / 2 + i.x,
                 y: l / 2 + i.y
             });

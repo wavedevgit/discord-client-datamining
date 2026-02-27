@@ -88,19 +88,19 @@ let y = s.memo(function(e) {
                 ...w
             } = (0, a.rm)(l.id),
             k = s.useRef(null),
-            V = s.useRef(null),
-            B = (0, i.jsxs)("li", {
+            B = s.useRef(null),
+            V = (0, i.jsxs)("li", {
                 className: t,
                 "data-dnd-name": l.name,
                 children: [(0, i.jsx)(h.vN3, {
                     focusTarget: k,
-                    ringTarget: V,
+                    ringTarget: B,
                     offset: {
                         left: 4,
                         right: 4
                     },
                     children: (0, i.jsxs)("div", {
-                        ref: V,
+                        ref: B,
                         className: r()(S.Ki, S.iE, {
                             [S.yZ]: O,
                             [S.SU]: R,
@@ -152,7 +152,7 @@ let y = s.memo(function(e) {
                     })
                 }), j]
             });
-        return null != g && null != u ? g(u(B)) : B
+        return null != g && null != u ? g(u(V)) : V
     }),
     v = (0, g.a)(y),
     j = s.memo(function(e) {

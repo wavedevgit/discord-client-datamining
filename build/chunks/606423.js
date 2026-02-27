@@ -1,6 +1,6 @@
 /** chunk id: 606423, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    Z: () => D
+    Z: () => j
 }), i(321073);
 var n = i(627968),
     r = i(64700),
@@ -18,8 +18,8 @@ var n = i(627968),
     x = i(473702),
     h = i(916974),
     P = i(88001),
-    y = i(519412),
-    C = i(985018),
+    C = i(519412),
+    y = i(985018),
     v = i(426771);
 let E = t => {
         let {
@@ -32,7 +32,7 @@ let E = t => {
             })
         })
     },
-    D = () => {
+    j = () => {
         let {
             transitionState: t,
             onClose: e,
@@ -40,16 +40,16 @@ let E = t => {
             setStep: l,
             churnUserDiscountOffer: p,
             isFetchingChurnDiscountOffer: v,
-            planId: D
-        } = (0, h.X)(), j = (0, u.bG)([d.default], () => {
+            planId: j
+        } = (0, h.X)(), D = (0, u.bG)([d.default], () => {
             let t = d.default.getCurrentUser();
             return a()(null != t, "ProfileItem: currentUser cannot be undefined"), t
         });
         r.useEffect(() => {
-            (0, c.A)(j.id, j.getAvatarURL(null, 80))
-        }, [j]);
+            (0, c.A)(D.id, D.getAvatarURL(null, 80))
+        }, [D]);
         let _ = (0, f.A)(),
-            A = "US" === _.ipCountryCode && "CA" === _.ipSubdivisionCode;
+            S = "US" === _.ipCountryCode && "CA" === _.ipSubdivisionCode;
         if (v) return (0, n.jsx)(s.Modal, {
             transitionState: t,
             title: "",
@@ -58,36 +58,36 @@ let E = t => {
                 e()
             }
         });
-        let S = (0, m.Zb)(D),
-            T = S ? C.intl.string(y.default.z2vO3h) : C.intl.string(C.t.PWq8TL),
-            N = S ? C.intl.formatToPlainString(y.default.stVlc6, {
+        let A = (0, m.Zb)(j),
+            N = A ? y.intl.string(C.default.z2vO3h) : y.intl.string(y.t.PWq8TL),
+            T = A ? y.intl.formatToPlainString(C.default.stVlc6, {
                 cooldownMonths: P.wl
-            }) : C.intl.string(C.t.SOC4ML),
+            }) : y.intl.string(y.t.SOC4ML),
             M = [];
         return null != p ? M.push({
-            text: C.intl.string(C.t.zrCzVB),
+            text: y.intl.string(y.t.zrCzVB),
             onClick: () => l(x.g.CONFIRM_DISCOUNT),
             variant: "secondary",
             icon: o.tvc
         }) : M.push({
-            text: C.intl.string(C.t.h9tkAK),
+            text: y.intl.string(y.t.rzVN6j),
             onClick: () => e(),
             variant: "secondary"
         }), M.push({
-            text: A ? C.intl.string(C.t.PfnxqD) : C.intl.string(C.t["3PatSz"]),
+            text: S ? y.intl.string(y.t.PfnxqD) : y.intl.string(y.t["3PatSz"]),
             onClick: () => l(x.g.CONFIRM),
             variant: "primary"
         }), (0, n.jsx)(s.Modal, {
             transitionState: t,
-            title: T,
-            subtitle: N,
+            title: N,
+            subtitle: T,
             actions: M,
             preview: null !== p && (0, n.jsx)(E, {
                 churnUserDiscountOffer: p
             }),
             onClose: async () => e(),
             children: (0, n.jsx)(g.l, {
-                currentUser: j,
+                currentUser: D,
                 premiumType: i,
                 onClose: e,
                 isDowngrade: !1,

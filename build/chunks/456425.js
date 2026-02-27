@@ -1,7 +1,7 @@
 /** chunk id: 456425, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    $: () => V
+    $: () => B
 });
 var i = n(627968),
     s = n(64700),
@@ -198,7 +198,7 @@ let k = s.memo(function(e) {
             })]
         })
     }),
-    V = s.memo(function(e) {
+    B = s.memo(function(e) {
         let {
             items: t
         } = e, n = g.ns.useSetting();

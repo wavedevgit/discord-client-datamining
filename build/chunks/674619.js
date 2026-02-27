@@ -31,8 +31,8 @@ var l = n(627968),
     R = n(639289),
     y = n(838462),
     C = n(641819),
-    v = n(800471),
-    N = n(939665),
+    N = n(800471),
+    v = n(939665),
     O = n(957489),
     b = n(822426),
     k = n(169801),
@@ -58,8 +58,8 @@ function G(e) {
         onSubscriptionConfirmation: M,
         renderPurchaseConfirmation: y,
         postSuccessGuild: C,
-        followupSKUInfo: v,
-        renderHeader: N,
+        followupSKUInfo: N,
+        renderHeader: v,
         applicationId: O,
         guildId: b,
         referralTrialOfferId: k,
@@ -76,12 +76,12 @@ function G(e) {
     let {
         step: B,
         selectedSkuId: W,
-        purchaseState: K
+        purchaseState: z
     } = (0, S.P5)(), {
-        isGift: z,
+        isGift: K,
         giftMessage: V,
         giftRecipient: Z
-    } = (0, x.Pv)(), q = z && (0, h.Ik)(Z) && B === P.pn.PLAN_SELECT, Y = (0, p.T)(z, W), X = K === T.h.PURCHASING;
+    } = (0, x.Pv)(), q = K && (0, h.Ik)(Z) && B === P.pn.PLAN_SELECT, Y = (0, p.T)(K, W), X = z === T.h.PURCHASING;
     return (0, l.jsx)(R.A, {
         isConfirmationStep: B === P.pn.CONFIRM && null == F && null == y,
         isEligibleForWowMoment: Y,
@@ -99,7 +99,7 @@ function G(e) {
             subscriptionTier: m,
             onClose: _,
             trialId: I,
-            isGift: z,
+            isGift: K,
             trialFooterMessageOverride: A,
             reviewWarningMessage: j,
             planGroup: U.LE,
@@ -107,8 +107,8 @@ function G(e) {
             onSubscriptionConfirmation: M,
             renderPurchaseConfirmation: y,
             postSuccessGuild: C,
-            followupSKUInfo: v,
-            renderHeader: N,
+            followupSKUInfo: N,
+            renderHeader: v,
             applicationId: O,
             guildId: b,
             referralTrialOfferId: k,
@@ -138,7 +138,7 @@ function F(e) {
         isGift: o,
         skuId: r,
         referralTrialOfferId: i
-    }), p = (0, v.lp)(d), m = (0, c.px)(a, o, u);
+    }), p = (0, N.lp)(d), m = (0, c.px)(a, o, u);
     return (0, l.jsx)(A.x, {
         ...e,
         breadcrumbSteps: L,
@@ -181,12 +181,12 @@ let H = function() {
             }
         }, {
             key: P.pn.PLAN_SELECT,
-            renderStep: e => (0, l.jsx)(N.Z, {
+            renderStep: e => (0, l.jsx)(v.Z, {
                 ...e
             }),
             options: {
                 renderHeader: !0,
-                useBreadcrumbLabel: e => (0, v.lp)(e) ? null : D.intl.string(D.t["r+SebU"]),
+                useBreadcrumbLabel: e => (0, N.lp)(e) ? null : D.intl.string(D.t["r+SebU"]),
                 sectionHeaderText: () => D.intl.string(D.t.UKbp1N)
             }
         }, {
@@ -196,7 +196,7 @@ let H = function() {
             }),
             options: {
                 renderHeader: !0,
-                useBreadcrumbLabel: e => (0, v.lp)(e) ? null : D.intl.string(D.t.Sb6wI1)
+                useBreadcrumbLabel: e => (0, N.lp)(e) ? null : D.intl.string(D.t.Sb6wI1)
             }
         }, {
             key: P.pn.AWAITING_PURCHASE_TOKEN_AUTH,
@@ -211,7 +211,7 @@ let H = function() {
             }),
             options: {
                 renderHeader: !0,
-                useBreadcrumbLabel: e => (0, v.lp)(e) ? D.intl.string(D.t.UKbp1N) : D.intl.string(D.t.QBnNHq)
+                useBreadcrumbLabel: e => (0, N.lp)(e) ? D.intl.string(D.t.UKbp1N) : D.intl.string(D.t.QBnNHq)
             }
         }, {
             key: P.pn.CONFIRM,

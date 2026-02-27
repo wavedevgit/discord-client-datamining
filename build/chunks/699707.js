@@ -46,9 +46,9 @@ function T(e) {
             idle: w
         } = e,
         k = A.Ay.getVideoComponent(),
-        V = h.default.getId(),
-        [B, H] = s.useState(null),
-        F = (0, c.A)(B),
+        B = h.default.getId(),
+        [V, H] = s.useState(null),
+        F = (0, c.A)(V),
         [K, W] = s.useState(!0),
         [Y, z] = s.useState(!1),
         X = L.type === E.lp.ACTIVITY,
@@ -63,7 +63,7 @@ function T(e) {
         ei = ((0, c.A)(L.id) ?? L.id) !== L.id,
         es = 0;
     (X || $) && (es += 72), X && !$ && (et ? es += 48 : es += 8), $ && (es += .5 * S + 8);
-    let el = s.useMemo(() => X && q ? G / (U - 2 * es) : J && null != B && B.width > 0 && B.height > 0 ? B.width / B.height : b, [J, B, X, G, U, es, q]),
+    let el = s.useMemo(() => X && q ? G / (U - 2 * es) : J && null != V && V.width > 0 && V.height > 0 ? V.width / V.height : b, [J, V, X, G, U, es, q]),
         er = U - 2 * es,
         ea = X && q ? G : er * el,
         eo = Math.floor(Math.min(G, ea) / el),
@@ -134,7 +134,7 @@ function T(e) {
         ef = s.useCallback(e => {
             H(e), W(!1)
         }, []),
-        ex = $ ? [] : (0, f.Cf)(y, L, V),
+        ex = $ ? [] : (0, f.Cf)(y, L, B),
         {
             visibleParticipants: eC,
             participantTileWidth: eE

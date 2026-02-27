@@ -42,8 +42,8 @@ var i = n(627968),
     P = n(394412),
     w = n(267102),
     k = n(526292),
-    V = n(396495),
-    B = n(478564),
+    B = n(396495),
+    V = n(478564),
     H = n(123973),
     F = n(447404),
     K = n(246356),
@@ -114,7 +114,7 @@ function eN(e) {
                         visibleContent: t,
                         markAsDismissed: n
                     } = e;
-                    if (t === u.M.TRIAL_NUX_STREAM_COACH_MARK) return b(!0), (0, i.jsx)(V.b, {
+                    if (t === u.M.TRIAL_NUX_STREAM_COACH_MARK) return b(!0), (0, i.jsx)(B.b, {
                         buttonRef: _,
                         dismissed: !1,
                         onDismiss: () => {
@@ -393,7 +393,7 @@ let ev = function(e) {
         canGoLive: D
     } = (0, d.cf)([ei.Ay], () => ({
         canGoLive: (0, M.A)(ei.Ay)
-    })), G = (0, O.A)(), U = (0, d.bG)([R.default], () => null != R.default.getAwaitingRemoteSessionInfo()), k = null != G, V = (0, d.bG)([es.A], () => (G?.channelId ?? es.A.getVoiceChannelId()) === t.id), F = (0, B.A)({
+    })), G = (0, O.A)(), U = (0, d.bG)([R.default], () => null != R.default.getAwaitingRemoteSessionInfo()), k = null != G, B = (0, d.bG)([es.A], () => (G?.channelId ?? es.A.getVoiceChannelId()) === t.id), F = (0, V.A)({
         channelId: t.id,
         location: "center-control-tray"
     }), W = (0, d.bG)([f.Ay], () => f.Ay.getCurrentEmbeddedActivity()), {
@@ -418,7 +418,7 @@ let ev = function(e) {
             appContext: eA
         })))
     } : void 0;
-    return V ? (0, i.jsx)(E.f5, {
+    return B ? (0, i.jsx)(E.f5, {
         value: X,
         children: (0, i.jsxs)(_.A, {
             section: ef.JJy.VOICE_CONTROL_TRAY,

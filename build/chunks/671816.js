@@ -1,4 +1,5 @@
-/** chunk id: 671816, original params: t,e,i (module,exports,require) **/
-t.exports = {
+/** chunk id: 671816, original params: e,t,n (module,exports,require) **/
+"use strict";
+e.exports = {
     t: "hoverCard_fdda30"
 }
