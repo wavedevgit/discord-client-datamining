@@ -135,8 +135,8 @@ function P(e) {
             onAction: l,
             enableUserHoverActivities: ei
         }, e.application.id)), ee.map(e => {
-            let r = e.application_id;
-            return (null != Y && (r = Y), er && null != r && G.sQ.has(r)) ? (0, i.jsxs)(s.Fragment, {
+            let a = e.application_id;
+            return (null != Y && (a = Y), er && null != a && G.sQ.has(a)) ? (0, i.jsxs)(s.Fragment, {
                 children: [(0, i.jsx)(M.A, {
                     presenceActivity: e,
                     channel: t,
@@ -144,7 +144,10 @@ function P(e) {
                     onAction: l,
                     enableUserHoverActivities: ei
                 }), (0, i.jsx)(I.A, {
-                    applicationId: r,
+                    className: r()({
+                        [U.SW]: el
+                    }),
+                    applicationId: a,
                     userIds: [n.id],
                     location: "voice_channel",
                     guildId: t.guild_id,
