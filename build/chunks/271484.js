@@ -4,76 +4,76 @@ n.d(t, {
     g: () => v
 });
 var r = n(627968),
-    l = n(64700),
-    i = n(512750),
+    i = n(64700),
+    l = n(512750),
     s = n(311907),
-    o = n(397927),
-    a = n(997509),
-    u = n(645619),
-    d = n(128069),
+    a = n(397927),
+    o = n(997509),
+    d = n(645619),
+    u = n(128069),
     c = n(363487),
-    p = n(915667),
-    m = n(568065),
-    A = n(652215),
-    _ = n(333354),
-    f = n(985018),
-    g = n(870166),
-    x = n(849630);
+    m = n(915667),
+    p = n(568065),
+    _ = n(652215),
+    x = n(333354),
+    A = n(985018),
+    f = n(870166),
+    g = n(849630);
 
 function v(e, t) {
     let v = (0, c.A)(t) ?? !1,
-        h = (0, s.bG)([u.A], () => u.A.getStateForGuild(t)?.allPowerups),
-        b = (0, s.bG)([u.A], () => u.A.getStateForGuild(t)?.unlockedPowerups),
-        j = (0, d.RA)(t, "usePowerupGroupConfig");
-    return l.useMemo(() => {
-        let l = e => "guildTagsBadgePacks" === e ? function(e) {
+        h = (0, s.bG)([d.A], () => d.A.getStateForGuild(t)?.allPowerups),
+        b = (0, s.bG)([d.A], () => d.A.getStateForGuild(t)?.unlockedPowerups),
+        j = (0, u.RA)(t, "usePowerupGroupConfig");
+    return i.useMemo(() => {
+        let i = e => "guildTagsBadgePacks" === e ? function(e) {
                 let {
                     guildId: t,
-                    canUseBoosts: l,
+                    canUseBoosts: i,
                     allPowerups: s,
-                    unlockedPowerups: u,
-                    isWaveTwoEnabled: d
-                } = e, c = f.intl.string(_.default.KC9HRW), v = f.intl.string(_.default.GJiSmP), h = s?.[i.SL], b = u?.[i.SL] != null, j = f.intl.string(_.default["/egwJA"]), E = b ? void 0 : f.intl.string(_.default.W6Vwn3), I = b ? void 0 : f.intl.string(_.default.lvk1Gc), w = b ? f.intl.string(_.default["9CfkLO"]) : f.intl.string(f.t["+7XY31"]), S = b ? "secondary" : "expressive", C = l ? () => {
-                    b ? a.A.open(t, A.BEX.TAG, A.JJy.GUILD_POWERUPS_OVERVIEW_CARD) : null != h && (0, p.A)(t, h), (0, o.s7G)()
-                } : void 0, N = d ? m.m_ : void 0;
+                    unlockedPowerups: d,
+                    isWaveTwoEnabled: u
+                } = e, c = A.intl.string(x.default.KC9HRW), v = A.intl.string(x.default.GJiSmP), h = s?.[l.SL], b = d?.[l.SL] != null, j = A.intl.string(x.default["/egwJA"]), E = b ? void 0 : A.intl.string(x.default.W6Vwn3), I = b ? void 0 : A.intl.string(x.default.lvk1Gc), C = b ? A.intl.string(x.default["9CfkLO"]) : A.intl.string(A.t["+7XY31"]), S = b ? "secondary" : "expressive", w = i ? () => {
+                    b ? o.A.open(t, _.BEX.TAG, _.JJy.GUILD_POWERUPS_OVERVIEW_CARD) : null != h && (0, m.A)(t, h), (0, a.s7G)()
+                } : void 0, N = u ? p.m_ : void 0;
                 return {
                     title: c,
                     description: v,
                     openModal: function(e) {
-                        let i = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-                        (0, o.mMO)(async () => {
+                        let l = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
+                        (0, a.mMO)(async () => {
                             let {
-                                default: i
+                                default: l
                             } = await n.e("56065").then(n.bind(n, 534904));
-                            return n => (0, r.jsx)(i, {
+                            return n => (0, r.jsx)(l, {
                                 guildId: t,
                                 title: c,
-                                description: f.intl.string(_.default.BBRFRd),
+                                description: A.intl.string(x.default.BBRFRd),
                                 powerups: e,
                                 newPowerupSkuIdSet: N,
-                                forceStaticImages: d,
+                                forceStaticImages: u,
                                 footerInfoText: I,
-                                footerAction: l && null != C && null != w ? {
+                                footerAction: i && null != w && null != C ? {
                                     variant: S,
-                                    text: w,
-                                    icon: "expressive" === S ? o._Jp : void 0,
-                                    onClick: C
+                                    text: C,
+                                    icon: "expressive" === S ? a._Jp : void 0,
+                                    onClick: w
                                 } : void 0,
                                 ...n
                             })
                         }, {
-                            onCloseCallback: i?.onModalClose
+                            onCloseCallback: l?.onModalClose
                         })
                     },
                     viewCta: j,
                     viewCtaTooltip: E,
-                    badge: d ? "new" : void 0,
+                    badge: u ? "new" : void 0,
                     newPowerupSkuIdSet: N,
                     image: {
-                        staticUrl: x.A,
-                        animatedUrl: g.A
+                        staticUrl: g.A,
+                        animatedUrl: f.A
                     },
-                    forceStaticImages: d
+                    forceStaticImages: u
                 }
             }({
                 guildId: t,
@@ -84,7 +84,7 @@ function v(e, t) {
             }) : void 0,
             s = {};
         for (let t of e) {
-            let e = l(t);
+            let e = i(t);
             null != e && (s[t] = e)
         }
         return s

@@ -1,54 +1,62 @@
 /** chunk id: 931936, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => h
 });
 var r = n(627968),
-    l = n(158954),
-    i = n(630117),
-    s = n(613943),
-    o = n(71478),
-    a = n(636086),
-    u = n(180185),
-    d = n(629721),
-    c = n(269032),
-    p = n(333354),
-    m = n(985018),
-    A = n(181978);
+    i = n(158954),
+    l = n(554146),
+    s = n(932001),
+    a = n(630117),
+    o = n(613943),
+    d = n(71478),
+    u = n(182859),
+    c = n(636086),
+    m = n(180185),
+    p = n(629721),
+    _ = n(269032),
+    x = n(49999),
+    A = n(333354),
+    f = n(985018),
+    g = n(181978);
 
-function _(e) {
+function v(e) {
     let {
         text: t
     } = e;
     return (0, r.jsx)("div", {
-        className: A.ac,
-        children: (0, r.jsx)(l.EYj, {
+        className: g.ac,
+        children: (0, r.jsx)(i.EYj, {
             variant: "text-sm/medium",
             children: t
         })
     })
 }
 
-function f(e) {
+function h(e) {
     let {
-        guildId: t
-    } = e, n = (0, o.A)(t), f = (0, i.A)(t), g = (0, s.A)(t), x = (0, c.A)(f.shouldShow || g.shouldShow);
-    return n.shouldShow || f.shouldShow || g.shouldShow || x.shouldShow ? (0, r.jsxs)("div", {
-        className: A.kL,
-        children: [(0, r.jsx)(l.EYj, {
+        guildId: t,
+        showVideoCard: n = !1
+    } = e, h = (0, d.A)(t), b = (0, a.A)(t), j = (0, o.A)(t), E = n ? [l.M.GUILD_POWERUPS_OVERVIEW_SIDEBAR_VIDEO_CARD] : [], [I, C] = (0, s.kn)(E), S = I === l.M.GUILD_POWERUPS_OVERVIEW_SIDEBAR_VIDEO_CARD, w = (0, _.A)(b.shouldShow || j.shouldShow || S);
+    return h.shouldShow || b.shouldShow || j.shouldShow || w.shouldShow || S ? (0, r.jsxs)("div", {
+        className: g.kL,
+        children: [(0, r.jsx)(i.EYj, {
             variant: "eyebrow",
             color: "text-subtle",
-            children: m.intl.string(p.default["3FRirU"])
-        }), n.shouldShow && (0, r.jsx)(_, {
-            text: n.text
-        }), f.shouldShow && (0, r.jsx)(d.A, {
+            children: f.intl.string(A.default["3FRirU"])
+        }), h.shouldShow && (0, r.jsx)(v, {
+            text: h.text
+        }), b.shouldShow && (0, r.jsx)(p.A, {
             guildId: t,
-            powerupNames: f.expiringPowerupNames,
-            warnings: f.warnings
-        }), g.shouldShow && null != g.notificationConfig && (0, r.jsx)(u.A, {
-            notificationConfig: g.notificationConfig,
-            markAsDismissed: g.markAsDismissed
-        }), x.shouldShow && (0, r.jsx)(a.A, {
-            markAsDismissed: x.markAsDismissed
+            powerupNames: b.expiringPowerupNames,
+            warnings: b.warnings
+        }), j.shouldShow && null != j.notificationConfig && (0, r.jsx)(m.A, {
+            notificationConfig: j.notificationConfig,
+            markAsDismissed: j.markAsDismissed
+        }), w.shouldShow && (0, r.jsx)(c.A, {
+            markAsDismissed: w.markAsDismissed
+        }), S && (0, r.jsx)(u.A, {
+            guildId: t,
+            onDismiss: () => C(x.i.USER_DISMISS)
         })]
     }) : null
 }

@@ -24,7 +24,7 @@ let h = function(e) {
         let {
             launchInGameActivity: l
         } = (0, a.zW)(e);
-        return (0, o.BS)(e) ? () => {
+        return (0, o.K$)(e) ? () => {
             (0, u.Fy)(e)
         } : (0, o.IO)(e) ? () => {
             (0, u.d5)({
@@ -37,7 +37,7 @@ let h = function(e) {
             l()
         } : null
     }(t, h, p, l.o.VIDEO.has(n) ? s.Cy.WATCH_VIDEO : (0, d.vA)(t) ? s.Cy.START_QUEST : s.Cy.ACCEPT_QUEST), f = (0, u.Oz)(t), C = function(e, t, n) {
-        if ((0, o.BS)(t)) return m.intl.string(m.t.IsH2Sp);
+        if ((0, o.K$)(t)) return m.intl.string(m.t.IsH2Sp);
         if ((0, o.IO)(t)) return (0, c.WM)(n);
         if ((0, d.vA)(t)) return t.config.features.includes(_.Li.START_QUEST_CTA) ? (0, o.vl)(t) ? t.config.features.includes(_.Li.CLOUD_GAMING_ACTIVITY) ? m.intl.string(m.t["+qoymD"]) : m.intl.string(m.t["Ie9++s"]) : m.intl.string(m.t["hRIVy+"]) : m.intl.string(m.t.l7E81v);
         return m.intl.string(m.t["9KoPyB"])

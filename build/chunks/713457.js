@@ -225,7 +225,7 @@ function G(e) {
         isClaiming: m.A.isClaimingReward(t.id) || m.A.isFetchingRewardCode(t.id),
         isEnrolling: m.A.isEnrolling(t.id),
         isQuestEnrollmentBlocked: null != m.A.questEnrollmentBlockedUntil
-    })), Q = t.userStatus?.enrolledAt != null, Y = t.userStatus?.completedAt != null, J = Y && t.userStatus?.claimedAt == null, X = (0, A.if)(t), Z = !(0, A.Ic)(t), ee = (0, f.In)(t), et = (0, S.IO)(t), en = (0, S.BS)(t), ea = (0, S.Cr)(t), ei = (0, f.fc)(t), [es, el, er] = (0, f.Qo)(t, ei), eo = Z && ee === f.F3.ACCEPTED, ed = eo && es === h.X0.SELECT, ec = eo && !ed && el.length > 1, eu = p.t.useConfig({
+    })), Q = t.userStatus?.enrolledAt != null, Y = t.userStatus?.completedAt != null, J = Y && t.userStatus?.claimedAt == null, X = (0, A.if)(t), Z = !(0, A.Ic)(t), ee = (0, f.In)(t), et = (0, S.IO)(t), en = (0, S.K$)(t), ea = (0, S.Cr)(t), ei = (0, f.fc)(t), [es, el, er] = (0, f.Qo)(t, ei), eo = Z && ee === f.F3.ACCEPTED, ed = eo && es === h.X0.SELECT, ec = eo && !ed && el.length > 1, eu = p.t.useConfig({
         location: R.rE.QUEST_HOME_DESKTOP
     }), em = (0, I.Pd)(t), eh = i.useCallback(e => {
         er(e), e === R.fO.DESKTOP && g([])

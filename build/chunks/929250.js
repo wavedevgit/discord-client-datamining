@@ -1,9 +1,9 @@
-/** chunk id: 953382, original params: e,t,n (module,exports,require) **/
+/** chunk id: 929250, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    q: () => i
+    h: () => i
 });
 let r = (0, n(250105).Ay)({
-    name: "2026-02-boost-tab-expressive-cta",
+    name: "2026-02-boosting-sidebar-video",
     kind: "user",
     defaultConfig: {
         enabled: !1

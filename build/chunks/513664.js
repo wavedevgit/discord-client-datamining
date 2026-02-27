@@ -81,7 +81,7 @@ function T(e) {
 
 function S() {
     let e = _._Z.useSetting(),
-        t = (0, r.m)("UserSettingsActivityPrivacy"),
+        t = (0, r.i)("UserSettingsActivityPrivacy"),
         n = s.useMemo(() => t ? [{
             value: a.Qd.ACTIVITY_STATUS_OFF,
             name: h.intl.string(h.t.FzgQna),

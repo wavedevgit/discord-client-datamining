@@ -1,40 +1,40 @@
 /** chunk id: 629721, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => u
+    A: () => d
 });
 var r = n(627968);
 n(64700);
-var l = n(934551),
-    i = n(158954),
+var i = n(934551),
+    l = n(158954),
     s = n(827734),
-    o = n(371028),
-    a = n(37725);
+    a = n(371028),
+    o = n(37725);
 
-function u(e) {
+function d(e) {
     let {
         guildId: t,
         powerupNames: n,
-        warnings: u
+        warnings: d
     } = e, {
-        shouldShow: d,
+        shouldShow: u,
         title: c,
-        description: p
-    } = (0, o.A)(t, n);
-    return d ? (0, r.jsxs)("div", {
-        className: a.kL,
-        children: [(0, r.jsx)(l.CircleErrorIcon, {
+        description: m
+    } = (0, a.A)(t, n);
+    return u ? (0, r.jsxs)("div", {
+        className: o.kL,
+        children: [(0, r.jsx)(i.CircleErrorIcon, {
             color: s.A.colors.TEXT_FEEDBACK_WARNING,
-            className: a.Kk
-        }), (0, r.jsx)(i.EYj, {
+            className: o.Kk
+        }), (0, r.jsx)(l.EYj, {
             variant: "text-md/semibold",
             color: "text-feedback-warning",
             children: c
-        }), (0, r.jsxs)(i.EYj, {
+        }), (0, r.jsxs)(l.EYj, {
             variant: "text-sm/medium",
-            children: [p, u?.map((e, t) => (0, r.jsx)(i.EYj, {
+            children: [m, d?.map((e, t) => (0, r.jsx)(l.EYj, {
                 variant: "text-sm/medium",
                 color: "text-feedback-warning",
-                className: a.$e,
+                className: o.$e,
                 children: e
             }, `warning-${t}`))]
         })]

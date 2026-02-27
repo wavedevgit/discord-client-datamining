@@ -53,7 +53,7 @@ let A = function(e) {
         let {
             launchInGameActivity: n
         } = (0, c.zW)(t);
-        if ((0, _.BS)(t)) return () => {
+        if ((0, _.K$)(t)) return () => {
             (0, m.Fy)(t)
         };
         switch (e) {

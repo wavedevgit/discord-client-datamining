@@ -1,42 +1,42 @@
 /** chunk id: 180185, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => d
+    A: () => u
 });
 var r = n(627968);
 n(64700);
-var l = n(934551),
-    i = n(158954),
+var i = n(934551),
+    l = n(158954),
     s = n(827734),
-    o = n(49999),
-    a = n(985018),
-    u = n(538409);
+    a = n(49999),
+    o = n(985018),
+    d = n(538409);
 
-function d(e) {
+function u(e) {
     let {
         notificationConfig: t,
         markAsDismissed: n
     } = e;
     return (0, r.jsxs)("div", {
-        className: u.kL,
+        className: d.kL,
         children: [(0, r.jsx)("div", {
-            className: u.VN,
-            children: (0, r.jsx)(i.K0, {
+            className: d.VN,
+            children: (0, r.jsx)(l.K0, {
                 variant: "icon-only",
                 size: "md",
-                "aria-label": a.intl.string(a.t.cpT0Cq),
+                "aria-label": o.intl.string(o.t.cpT0Cq),
                 onClick: () => {
-                    n(o.i.USER_DISMISS)
+                    n(a.i.USER_DISMISS)
                 },
-                icon: l.XLargeIcon
+                icon: i.XLargeIcon
             })
-        }), (0, r.jsx)(l.CircleErrorIcon, {
+        }), (0, r.jsx)(i.CircleErrorIcon, {
             color: s.A.colors.TEXT_FEEDBACK_WARNING,
-            className: u.Kk
-        }), (0, r.jsx)(i.EYj, {
+            className: d.Kk
+        }), (0, r.jsx)(l.EYj, {
             variant: "text-md/semibold",
             color: "text-feedback-warning",
             children: t.title
-        }), (0, r.jsx)(i.EYj, {
+        }), (0, r.jsx)(l.EYj, {
             variant: "text-sm/medium",
             children: t.description
         })]
