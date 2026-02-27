@@ -8,8 +8,8 @@ let n = {},
     a = {},
     i = {},
     d = new Set,
-    c = {};
-class s extends r.Ay.Store {
+    s = {};
+class c extends r.Ay.Store {
     static displayName = "CollectiblesStore";
     getCollection(e) {
         return null != e ? n[e] : null
@@ -28,10 +28,10 @@ class s extends r.Ay.Store {
         return null != e && d.has(e)
     }
     getApiError(e) {
-        return null != e ? c[e] : null
+        return null != e ? s[e] : null
     }
 }
-let u = new s(o.h, {
+let u = new c(o.h, {
     COLLECTIBLES_COLLECTION_FETCH: e => {
         let {
             collectionId: l
@@ -48,9 +48,9 @@ let u = new s(o.h, {
         } = e;
         l.products?.forEach(e => {
             e.skus.forEach(e => {
-                i[e.id] = e, delete c[e.id], d.delete(e.id)
-            }), a[e.id] = e, delete c[e.id], d.delete(e.id)
-        }), n[l.id] = l, delete c[l.id], d.delete(l.id)
+                i[e.id] = e, delete s[e.id], d.delete(e.id)
+            }), a[e.id] = e, delete s[e.id], d.delete(e.id)
+        }), n[l.id] = l, delete s[l.id], d.delete(l.id)
     },
     COLLECTIBLES_COLLECTION_FETCH_FAILURE: e => {
         let {
@@ -61,7 +61,7 @@ let u = new s(o.h, {
             e.skuIds.forEach(e => {
                 d.delete(e)
             }), d.delete(e.id)
-        }), c[l] = t, d.delete(l)
+        }), s[l] = t, d.delete(l)
     },
     COLLECTIBLES_PRODUCT_WITH_SKUS_FETCH: e => {
         let {
@@ -76,8 +76,8 @@ let u = new s(o.h, {
             product: l
         } = e;
         l.skus.forEach(e => {
-            i[e.id] = e, delete c[e.id], d.delete(e.id)
-        }), a[l.id] = l, d.delete(l.id), delete c[l.id]
+            i[e.id] = e, delete s[e.id], d.delete(e.id)
+        }), a[l.id] = l, d.delete(l.id), delete s[l.id]
     },
     COLLECTIBLES_PRODUCT_WITH_SKUS_FETCH_FAILURE: e => {
         let {
@@ -86,7 +86,7 @@ let u = new s(o.h, {
         } = e, r = a[l];
         r?.skuIds.forEach(e => {
             d.delete(e)
-        }), c[l] = t, d.delete(l)
+        }), s[l] = t, d.delete(l)
     },
     COLLECTIBLES_PRODUCT_FOR_SKU_FETCH: e => {
         let {
@@ -101,8 +101,8 @@ let u = new s(o.h, {
             product: l
         } = e;
         l.skus.forEach(e => {
-            i[e.id] = e, delete c[e.id], d.delete(e.id)
-        }), a[l.id] = l, delete c[l.id], d.delete(l.id)
+            i[e.id] = e, delete s[e.id], d.delete(e.id)
+        }), a[l.id] = l, delete s[l.id], d.delete(l.id)
     },
     COLLECTIBLES_PRODUCT_FOR_SKU_FETCH_FAILURE: e => {
         let {
@@ -111,9 +111,9 @@ let u = new s(o.h, {
         } = e, r = i[l], o = r?.productId != null ? a[r.productId] : null;
         o?.skuIds.forEach(e => {
             d.delete(e)
-        }), c[l] = t, d.delete(l)
+        }), s[l] = t, d.delete(l)
     },
     LOGOUT: e => {
-        n = {}, a = {}, i = {}, d = new Set, c = {}
+        n = {}, a = {}, i = {}, d = new Set, s = {}
     }
 })

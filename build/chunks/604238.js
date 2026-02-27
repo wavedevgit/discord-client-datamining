@@ -1,6 +1,6 @@
 /** chunk id: 604238, original params: e,l,t (module,exports,require) **/
 t.d(l, {
-    E: () => A,
+    E: () => y,
     e: () => f
 });
 var r = t(64700),
@@ -9,20 +9,20 @@ var r = t(64700),
     a = t(653793),
     i = t(118713),
     d = t(261225),
-    c = t(970488),
-    s = t(720462),
+    s = t(970488),
+    c = t(720462),
     u = t(673277),
     h = t(700263),
-    m = t(304973),
-    p = t(18769),
+    p = t(304973),
+    m = t(18769),
     b = t(458306),
     C = t(282203),
     _ = t(22519),
-    k = t(607795),
-    g = t(954644),
-    S = t(930948),
-    y = t(634791);
-let A = {
+    g = t(607795),
+    A = t(954644),
+    k = t(930948),
+    S = t(634791);
+let y = {
         ContainedHero: n.A,
         BasicHero: e => {
             let {
@@ -31,35 +31,35 @@ let A = {
             return null
         },
         PromotionalHero: () => null,
-        InteractiveHScroll: s.A,
+        InteractiveHScroll: c.A,
         Carousel: i.A,
         Grid: d.A,
-        GridItem: c.A,
+        GridItem: s.A,
         Section: u.A,
         Card: a.A,
         Skeleton: h.A,
-        FeaturedChip: m.A,
-        FeaturedCollection: p.A,
+        FeaturedChip: p.A,
+        FeaturedCollection: m.A,
         FeaturedProduct: () => null,
-        ShopProductCard: g.A,
-        StorefrontProductCard: S.A,
+        ShopProductCard: A.A,
+        StorefrontProductCard: k.A,
         SkuList: C.A,
         SubLayout: _.A,
-        SubTemplate: k.A,
+        SubTemplate: g.A,
         Button: b.ar,
         Heading: b.Oo,
         Stack: b.Kp,
         Text: b.t,
-        Any1: y.A,
-        Any2: y.A,
-        Any3: y.A
+        Any1: S.A,
+        Any2: S.A,
+        Any3: S.A
     },
     f = function() {
         let {
             overrides: e
         } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
         return r.useMemo(() => {
-            let l = (0, o.cloneDeep)(A);
+            let l = (0, o.cloneDeep)(y);
             if (null != e)
                 for (let [t, r] of Object.entries(e)) null != r && (l[t] = r);
             return l

@@ -38,13 +38,13 @@ function N(e) {
         location: "collectibles_shop_header_bar"
     }), {
         searchQuery: R
-    } = (0, A.v)(), j = l.useRef(null), [G, I] = l.useState(!1);
-    (0, u.g)(j, l.useCallback(e => {
+    } = (0, A.v)(), G = l.useRef(null), [j, I] = l.useState(!1);
+    (0, u.g)(G, l.useCallback(e => {
         I(e.contentRect.width < 800)
     }, []));
     let _ = l.useMemo(() => [{
             tab: g.G2.HOME,
-            label: x.intl.string(x.t.ijDDwz)
+            label: x.intl.string(x.t["xNiB/O"])
         }, {
             tab: g.G2.CATALOG,
             label: x.intl.string(x.t.Ah5sJo),
@@ -76,7 +76,7 @@ function N(e) {
     return (0, r.jsx)(c.NPJ, {
         theme: n,
         children: e => (0, r.jsx)("div", {
-            ref: j,
+            ref: G,
             children: (0, r.jsxs)(b.A, {
                 disableDoubleClick: !0,
                 className: a()(e, L.jr),
@@ -84,7 +84,7 @@ function N(e) {
                 children: [(0, r.jsx)(c.DUT, {
                     className: L.sU,
                     onClick: () => s(g.G2.HOME),
-                    "aria-label": x.intl.string(x.t.pWG4ze) + " home",
+                    "aria-label": x.intl.string(x.t.pWG4ze),
                     children: (0, r.jsx)(c.U1X, {
                         size: "md",
                         color: c.LU0.colors.TEXT_DEFAULT
@@ -98,7 +98,7 @@ function N(e) {
                     children: [(0, r.jsx)(C.A, {
                         handleTransition: s,
                         selectedTab: t,
-                        isNarrow: G,
+                        isNarrow: j,
                         hasText: "" !== R
                     }), (0, r.jsx)(c.DUT, {
                         className: L.ij,

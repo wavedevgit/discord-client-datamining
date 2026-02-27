@@ -32,8 +32,8 @@ function g(e) {
             onComplete: A,
             variantsReturnStyle: C
         } = e,
-        I = !1,
-        S = (0, r.A)(),
+        S = !1,
+        I = (0, r.A)(),
         T = j ? "gift-payment-modal" : "payment-modal",
         w = u.default.getCurrentUser();
     w?.verified ? (s.h.wait(() => {
@@ -41,7 +41,7 @@ function g(e) {
             type: "PAYMENT_MODAL_OPEN"
         })
     }), f({
-        loadId: S,
+        loadId: I,
         skuId: d,
         analyticsLocations: h,
         onStepChange: e => {
@@ -55,15 +55,15 @@ function g(e) {
         onClose: k,
         onCloseCallback: () => {
             (0, m.S)({
-                checkoutSucceeded: I
-            }), I || x.default.track(b.HAw.PAYMENT_FLOW_CANCELED, {
-                load_id: S,
+                checkoutSucceeded: S
+            }), S || x.default.track(b.HAw.PAYMENT_FLOW_CANCELED, {
+                load_id: I,
                 payment_type: b.frM[b.VVm.ONE_TIME],
                 location: g,
                 is_gift: j,
                 sku_id: d,
                 location_stack: h
-            }), (0, i.ET)(), (0, o.z)(), k?.(I), I && (0, c.gB)({
+            }), (0, i.ET)(), (0, o.z)(), k?.(S), S && (0, c.gB)({
                 variantsReturnStyle: C
             })
         },
@@ -71,7 +71,7 @@ function g(e) {
             null != t && p.has(t) && (0, n.OoC)(T)
         },
         onComplete: () => {
-            I = !0, A?.()
+            S = !0, A?.()
         }
     })) : (0, n.mMO)(async () => {
         let {

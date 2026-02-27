@@ -32,7 +32,7 @@ let g = {
         return (0, s.jsx)(i.DUT, {
             className: a()(u.nagBar, p),
             onClick: n,
-            "aria-label": d.intl.string(d.t.zMqLH9),
+            "aria-label": d.intl.string(d.t["wjws+K"]),
             children: (0, s.jsxs)("div", {
                 className: u.content,
                 children: [(0, s.jsx)(i.Text, {

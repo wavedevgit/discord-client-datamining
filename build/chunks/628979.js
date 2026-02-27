@@ -54,10 +54,10 @@ function m(e) {
         R = l.useCallback(() => {
             s !== p.G2.CATALOG && t(p.G2.CATALOG), v(p.uY.SEARCH_ICON), L(!0), setTimeout(() => O.current?.focus())
         }, [s, t, v]),
-        j = l.useCallback(() => {
+        G = l.useCallback(() => {
             s !== p.G2.CATALOG && t(p.G2.CATALOG), v(p.uY.SEARCH_BAR)
         }, [s, t, v]),
-        G = l.useCallback(() => {
+        j = l.useCallback(() => {
             T(""), A(""), v(p.uY.SEARCH_BAR_CLEAR), n && L(!1)
         }, [A, v, n]),
         I = l.useCallback(() => {
@@ -78,7 +78,7 @@ function m(e) {
             onKeyDown: N,
             query: C,
             onChange: T,
-            onClear: G,
+            onClear: j,
             onBlur: I,
             placeholder: "en-US" === y ? S.intl.string(S.t.arz34K) : S.intl.string(S.t["hIt/Nm"])
         }),
@@ -101,7 +101,7 @@ function m(e) {
         }), (0, r.jsx)(i.DUT, {
             className: $,
             style: k,
-            onClick: j,
+            onClick: G,
             ignoreKeyPress: !0,
             children: F
         })]
@@ -110,7 +110,7 @@ function m(e) {
         style: k,
         children: (0, r.jsx)(i.DUT, {
             ignoreKeyPress: !0,
-            onClick: j,
+            onClick: G,
             children: F
         })
     })

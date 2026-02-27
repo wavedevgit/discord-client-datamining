@@ -1,7 +1,7 @@
 /** chunk id: 602823, original params: e,l,t (module,exports,require) **/
 t.d(l, {
     RV: () => u,
-    yx: () => s
+    yx: () => c
 });
 var r = t(73153),
     o = t(198982),
@@ -9,13 +9,13 @@ var r = t(73153),
     a = t(16667),
     i = t(265212),
     d = t(19945),
-    c = t(652215);
-async function s(e) {
+    s = t(652215);
+async function c(e) {
     let {
         collectionId: l,
         includeUnpublishedProducts: t = !1,
         includeUnpublishedCollection: d = !1,
-        includePricing: s = !1,
+        includePricing: c = !1,
         ignoreCache: u = !1
     } = e;
     if (!l || a.A.isFetching(l)) return;
@@ -26,12 +26,12 @@ async function s(e) {
             collectionId: l
         });
         let e = await (0, n.aP)({
-            url: c.Rsh.COLLECTION_PUBLISHED_LISTINGS_SKU(l),
+            url: s.Rsh.COLLECTION_PUBLISHED_LISTINGS_SKU(l),
             query: {
                 collection_id: l,
                 include_unpublished_products: t,
                 include_unpublished_collection: d,
-                include_pricing: s,
+                include_pricing: c,
                 ignore_cache: u
             },
             rejectWithError: !0
@@ -54,7 +54,7 @@ async function u(e) {
         productId: l,
         includePricing: t = !1,
         includeUnpublished: i = !1,
-        ignoreCache: s = !1
+        ignoreCache: c = !1
     } = e;
     if (!l || a.A.isFetching(l)) return;
     let u = a.A.getApiError(l);
@@ -64,11 +64,11 @@ async function u(e) {
             productId: l
         });
         let e = await (0, n.aP)({
-            url: c.Rsh.PRODUCT_WITH_SKUS(l),
+            url: s.Rsh.PRODUCT_WITH_SKUS(l),
             query: {
                 include_pricing: t,
                 include_unpublished: i,
-                ignore_cache: s
+                ignore_cache: c
             },
             rejectWithError: !0
         });

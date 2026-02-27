@@ -1,6 +1,6 @@
 /** chunk id: 19945, original params: e,l,t (module,exports,require) **/
 t.d(l, {
-    A: () => s
+    A: () => c
 });
 var r = t(575593),
     o = t(731935),
@@ -8,8 +8,8 @@ var r = t(575593),
     a = t(474012),
     i = t(986630),
     d = t(758836),
-    c = t(652215);
-class s {
+    s = t(652215);
+class c {
     id;
     skuIds;
     name;
@@ -32,7 +32,7 @@ class s {
             tenant_metadata: i,
             ...d
         } = e;
-        return new s({
+        return new c({
             ...d,
             skuIds: l,
             options: t.map(e => ({
@@ -53,7 +53,7 @@ class s {
         let t = this.skus.length > 1 ? r.R.VARIANTS_GROUP : l.type,
             {
                 items: o,
-                item: s
+                item: c
             } = (0, a.T)(e) ?? {};
         return new i.A({
             storeListingId: e.id,
@@ -63,8 +63,8 @@ class s {
             unpublishedAt: void 0,
             styles: void 0,
             type: t,
-            premiumType: l.premiumType === c.oA2 ? null : l.premiumType,
-            items: o ?? [s].filter(e => null != e),
+            premiumType: l.premiumType === s.oA2 ? null : l.premiumType,
+            items: o ?? [c].filter(e => null != e),
             categorySkuId: l.categorySkuId ?? "",
             isCategoryReward: d.MS.some(l => {
                 let {
@@ -92,7 +92,7 @@ class s {
                     unpublishedAt: void 0,
                     styles: void 0,
                     type: t.type,
-                    premiumType: t.premiumType === c.oA2 ? null : t.premiumType,
+                    premiumType: t.premiumType === s.oA2 ? null : t.premiumType,
                     items: r ?? [o].filter(e => null != e),
                     categorySkuId: t.categorySkuId ?? "",
                     isCategoryReward: d.MS.some(e => {
@@ -103,8 +103,8 @@ class s {
                     }),
                     prices: l.prices,
                     googleSkuIds: {
-                        [c.lid.MOBILE]: "",
-                        [c.lid.MOBILE_PREMIUM_TIER_2]: ""
+                        [s.lid.MOBILE]: "",
+                        [s.lid.MOBILE_PREMIUM_TIER_2]: ""
                     },
                     eligibleOffers: void 0,
                     variants: void 0,
@@ -112,15 +112,15 @@ class s {
                 })
             }).filter(e => null != e) : void 0,
             googleSkuIds: {
-                [c.lid.MOBILE]: "",
-                [c.lid.MOBILE_PREMIUM_TIER_2]: ""
+                [s.lid.MOBILE]: "",
+                [s.lid.MOBILE_PREMIUM_TIER_2]: ""
             },
             eligibleOffers: void 0,
             bundledProducts: e.bundledSkus?.map(e => {
                 let l = e.tenantMetadata?.collectibles;
                 return null == l ? null : new n.A({
                     type: l.type,
-                    premiumType: l.premiumType === c.oA2 ? null : l.premiumType,
+                    premiumType: l.premiumType === s.oA2 ? null : l.premiumType,
                     name: e.name,
                     skuId: e.id,
                     summary: e.summary,

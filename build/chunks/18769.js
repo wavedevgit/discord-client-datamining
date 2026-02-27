@@ -12,7 +12,7 @@ let i = e => {
         logoSrc: t,
         supplementalImage: i,
         href: d,
-        ctaText: c
+        ctaText: s
     } = e;
     return (0, r.jsxs)("div", {
         className: a.rJ,
@@ -30,7 +30,7 @@ let i = e => {
                         src: t,
                         alt: ""
                     }), (0, r.jsx)(o.$nd, {
-                        text: c,
+                        text: s,
                         variant: "overlay-primary"
                     })]
                 })

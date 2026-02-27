@@ -16,8 +16,11 @@ let c = {
     id: "skulist",
     component: e => {
         let {
-            skuIds: t
-        } = e, a = (0, s.e)();
+            skuIds: t,
+            sortPurchased: a,
+            eagerLoad: c,
+            showSkeleton: u
+        } = e, x = (0, s.e)();
         return (0, l.jsxs)("div", {
             children: [(0, l.jsx)(r.Heading, {
                 variant: "heading-lg/bold",
@@ -33,7 +36,10 @@ let c = {
                 children: (0, l.jsx)(o.A, {
                     skuIds: t?.split(","),
                     skuBlock: "ShopProductCard",
-                    componentMap: a
+                    sortPurchased: a,
+                    eagerLoad: c,
+                    showSkeleton: u,
+                    componentMap: x
                 })
             }), (0, l.jsx)("hr", {}), (0, l.jsx)(r.Text, {
                 variant: "text-md/bold",
@@ -109,6 +115,21 @@ let c = {
             label: "SKU Ids",
             type: "text",
             defaultValue: "1458472704192811088,1458479739110166560,1458472704524156959"
+        },
+        sortPurchased: {
+            label: "Sort Purchased to Back",
+            type: "boolean",
+            defaultValue: !1
+        },
+        eagerLoad: {
+            label: "Eager Load",
+            type: "boolean",
+            defaultValue: !1
+        },
+        showSkeleton: {
+            label: "Show Skeleton",
+            type: "boolean",
+            defaultValue: !1
         }
     }
 }

@@ -13,9 +13,9 @@ let a = e => {
         componentMap: i
     } = e, {
         layout: d,
-        loading: c
+        loading: s
     } = (0, o.A)(t, l);
-    return c && null != a ? (0, r.jsx)(n.Ay, {
+    return s && null != a ? (0, r.jsx)(n.Ay, {
         overrides: i,
         layout: {
             id: "skeleton",

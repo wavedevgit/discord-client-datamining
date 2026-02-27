@@ -52,7 +52,7 @@ function f(e) {
                 questId: l
             }
         })) : t === p.fAW.OPEN_FAIL && (0, h.bG)({
-            pathname: p.BVt.QUEST_HOME,
+            pathname: p.BVt.QUEST_HOME_V2,
             hash: l
         }))
     }, [t, l]);
