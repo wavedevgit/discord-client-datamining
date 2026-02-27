@@ -30,7 +30,7 @@ let C = e => {
             renderLinkComponent: p.bU
         })
     },
-    v = e => {
+    b = e => {
         let {
             containerClassName: t,
             className: a,
@@ -41,7 +41,7 @@ let C = e => {
             className: l()(a, t)
         })
     },
-    b = {
+    v = {
         width: 1280,
         height: 720
     },
@@ -62,7 +62,7 @@ let C = e => {
         } = e;
         if (s.type === g.geh.YOUTUBE_VIDEO) t = {
             url: (0, g.PE$)(s.youtubeVideoId),
-            ...b
+            ...v
         }, a = {
             url: `${(0,g.uJ2)(s.youtubeVideoId)}?${j}`,
             ...f
@@ -99,7 +99,7 @@ let C = e => {
                 autoMute: m,
                 onMute: h,
                 autoPlay: x,
-                renderImageComponent: v,
+                renderImageComponent: b,
                 renderVideoComponent: C,
                 renderLinkComponent: p.bU
             })

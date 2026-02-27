@@ -684,7 +684,7 @@ function ti() {
                                     impressionName: d.ImpressionNames.GLOBAL_DISCOVERY_APPS,
                                     disableTrack: !0
                                 }), (0, i.jsx)(v.A, {
-                                    path: eL.BVt.QUEST_HOME,
+                                    path: eL.BVt.QUEST_HOME_DEPRECATED,
                                     render: eQ,
                                     impressionName: d.ImpressionNames.QUEST_HOME,
                                     disableTrack: !0

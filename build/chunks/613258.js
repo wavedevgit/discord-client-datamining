@@ -1,26 +1,26 @@
-/** chunk id: 613258, original params: e,t,n (module,exports,require) **/
+/** chunk id: 613258, original params: e,t,s (module,exports,require) **/
 "use strict";
-n.d(t, {
+s.d(t, {
     A: () => p
 });
-var s = n(627968),
-    l = n(64700),
-    r = n(503698),
-    a = n.n(r),
-    i = n(575593),
-    o = n(770178),
-    c = n(590180),
-    d = n(929283),
-    u = n(758836),
-    g = n(289920);
+var n = s(627968),
+    l = s(64700),
+    r = s(503698),
+    a = s.n(r),
+    i = s(575593),
+    o = s(770178),
+    c = s(590180),
+    d = s(929283),
+    u = s(758836),
+    g = s(289920);
 let _ = ["1212569433839636530", "1144308439720394944", "1228251144065777765", "1343751620965564426", "1157407831348228141", "1197344326133502032", "1232071712695386162", "1144046002110738634", "1271174324375519273", "1237653964582031400", "1217625794382401577", "1462116613871636542", "1458472704469499965", "1447654091072344195", "1432550258839392376", "1409898407849365565", "1404558257065824347"],
     m = e => {
         let {
             config: t,
-            baseLeft: n,
+            baseLeft: s,
             transitioning: l
-        } = e, r = window.innerHeight, a = c.A.getProduct(t.skuId), o = a?.items[0], u = a?.type, _ = n + t.horizontalJitter;
-        return (0, s.jsx)("div", {
+        } = e, r = window.innerHeight, a = c.A.getProduct(t.skuId), o = a?.items[0], u = a?.type, _ = s + t.horizontalJitter;
+        return (0, n.jsx)("div", {
             className: g.LY,
             style: {
                 top: l ? -r - 384 : t.top,
@@ -31,7 +31,7 @@ let _ = ["1212569433839636530", "1144308439720394944", "1228251144065777765", "1
                 transitionDelay: t.transitionDelay,
                 transitionDuration: t.transitionDuration
             },
-            children: null != o && u === i.R.AVATAR_DECORATION && (0, s.jsx)(d.i, {
+            children: null != o && u === i.R.AVATAR_DECORATION && (0, n.jsx)(d.i, {
                 item: o
             })
         })
@@ -39,7 +39,7 @@ let _ = ["1212569433839636530", "1144308439720394944", "1228251144065777765", "1
     h = e => {
         let {
             peaking: t,
-            transitioning: n,
+            transitioning: s,
             parentWidth: r
         } = e, [i, o] = l.useState(!1), [c, d] = l.useState([]), [h] = l.useState(() => [..._].sort(() => Math.random() - .5).map(e => ({
             skuId: e,
@@ -56,14 +56,14 @@ let _ = ["1212569433839636530", "1144308439720394944", "1228251144065777765", "1
                     t = r / e;
                 d(Array.from({
                     length: e
-                }, (e, n) => ({
-                    config: h[n % h.length],
-                    baseLeft: n * t
+                }, (e, s) => ({
+                    config: h[s % h.length],
+                    baseLeft: s * t
                 })))
             }
         }, [r, h]), l.useEffect(() => {
-            n && setTimeout(() => o(!0), u.H1)
-        }, [n]), (0, s.jsx)("div", {
+            s && setTimeout(() => o(!0), u.H1)
+        }, [s]), (0, n.jsx)("div", {
             className: a()(g.rA, {
                 [g.Kb]: t,
                 [g.pp]: i
@@ -73,10 +73,10 @@ let _ = ["1212569433839636530", "1144308439720394944", "1228251144065777765", "1
                     config: l,
                     baseLeft: r
                 } = e;
-                return (0, s.jsx)(m, {
+                return (0, n.jsx)(m, {
                     config: l,
                     baseLeft: r,
-                    transitioning: n
+                    transitioning: s
                 }, l.skuId + t)
             })
         })
@@ -84,16 +84,16 @@ let _ = ["1212569433839636530", "1144308439720394944", "1228251144065777765", "1
     p = e => {
         let {
             peaking: t,
-            transitioning: n
+            transitioning: s
         } = e, r = l.useRef(null), [a, i] = l.useState(0), c = l.useCallback(() => {
             null != r.current && i(r.current.offsetWidth)
         }, []);
-        return (0, o.g)(r, c), (0, s.jsx)("div", {
+        return (0, o.g)(r, c), (0, n.jsx)("div", {
             ref: r,
             className: g.eL,
-            children: (0, s.jsx)(h, {
+            children: (0, n.jsx)(h, {
                 peaking: t,
-                transitioning: n,
+                transitioning: s,
                 parentWidth: a
             })
         })

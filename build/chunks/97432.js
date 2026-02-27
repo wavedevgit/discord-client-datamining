@@ -23,13 +23,13 @@ let _ = function(e) {
         g.current?.scrollTo({
             to: 0
         })
-    }, []), A = (0, s.bG)([u.A], () => u.A.getCategories()), C = i.useMemo(() => A.find(e => e.id === t), [A, t]), v = i.useMemo(() => null != C ? (0, d.C)(C) : "", [C]);
+    }, []), A = (0, s.bG)([u.A], () => u.A.getCategories()), C = i.useMemo(() => A.find(e => e.id === t), [A, t]), b = i.useMemo(() => null != C ? (0, d.C)(C) : "", [C]);
     return (0, n.jsxs)(c.A, {
         onScroll: _,
         ref: g,
         children: [(0, n.jsx)(r.A, {
             title: C?.name ?? "",
-            description: v,
+            description: b,
             children: (0, n.jsx)(l.A, {})
         }), (0, n.jsx)(o.A, {
             children: null == C ? (0, n.jsx)("div", {

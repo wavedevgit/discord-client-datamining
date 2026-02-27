@@ -25,7 +25,7 @@ let d = t => `${t.toFixed(0)}px`,
         },
         onValueRender: d,
         onMarkerRender: d,
-        setValue: t => {
+        asValueChanges: t => {
             switch (t) {
                 case 0:
                 case 4:

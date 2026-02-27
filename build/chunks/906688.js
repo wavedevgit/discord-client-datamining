@@ -29,17 +29,17 @@ function C(e) {
         size: r = a._3J.SIZE_40
     } = e, C = (0, s.Ay)(), E = (0, c.vM)(t);
     if (null == E) return null;
-    let g = (0, a.KjH)(r),
+    let A = (0, a.KjH)(r),
         {
-            name: A,
+            name: g,
             rarity: _
         } = E,
         {
             color: p
         } = (0, c.ag)(_),
         m = (0, l.Mw)(C) ? u : h,
-        L = (g.size - g.offset - 2 * g.stroke) * .8,
-        O = g.size - g.stroke,
+        L = (A.size - A.offset - 2 * A.stroke) * .8,
+        O = A.size - A.stroke,
         f = {
             width: .4 * L,
             height: .4 * L
@@ -47,8 +47,8 @@ function C(e) {
         I = {
             width: f.width + 1,
             height: f.height + 1,
-            right: g.stroke + 1,
-            bottom: g.stroke + 1,
+            right: A.stroke + 1,
+            bottom: A.stroke + 1,
             padding: 0
         };
     return (0, n.jsxs)("div", {
@@ -56,9 +56,9 @@ function C(e) {
         style: {
             width: O,
             height: O,
-            padding: g.stroke
+            padding: A.stroke
         },
-        "aria-label": `${A()??""}`,
+        "aria-label": `${g()??""}`,
         children: [(0, n.jsx)("div", {
             className: d.r5,
             children: (0, n.jsx)(a.OR, {

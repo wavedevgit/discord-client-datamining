@@ -1,6 +1,6 @@
 /** chunk id: 194822, original params: e,l,t (module,exports,require) **/
 t.d(l, {
-    A: () => A
+    A: () => k
 });
 var r = t(311907),
     o = t(73153),
@@ -26,8 +26,8 @@ let i = (0, n.m6)() ? {
     m = {},
     b = s,
     C = new Set(c),
-    _ = {};
-class g extends r.Ay.Store {
+    g = {};
+class _ extends r.Ay.Store {
     static displayName = "CmsLayoutStore";
     getLayout(e, l) {
         return null == e || null == l ? null : h[e]?.[l] ?? null
@@ -45,10 +45,10 @@ class g extends r.Ay.Store {
         return null != e && null != l && C.has(u(e, l))
     }
     getTemplateFetchError(e, l) {
-        return null == e || null == l ? null : _[u(e, l)] ?? null
+        return null == e || null == l ? null : g[u(e, l)] ?? null
     }
 }
-let A = new g(o.h, {
+let k = new _(o.h, {
     CMS_LAYOUT_FETCH: e => {
         let {
             tenantId: l,
@@ -84,7 +84,7 @@ let A = new g(o.h, {
             templateId: t,
             layout: r
         } = e;
-        (b[l] ??= {})[t] = r, delete _[u(l, t)], C.delete(u(l, t))
+        (b[l] ??= {})[t] = r, delete g[u(l, t)], C.delete(u(l, t))
     },
     CMS_TEMPLATE_FETCH_FAILURE: e => {
         let {
@@ -92,9 +92,9 @@ let A = new g(o.h, {
             templateId: t,
             apiError: r
         } = e;
-        _[u(l, t)] = r, C.delete(u(l, t))
+        g[u(l, t)] = r, C.delete(u(l, t))
     },
     LOGOUT: function() {
-        h = {}, p = new Set, m = {}, b = {}, C = new Set, _ = {}
+        h = {}, p = new Set, m = {}, b = {}, C = new Set, g = {}
     }
 })

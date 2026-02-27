@@ -1,22 +1,22 @@
-/** chunk id: 633026, original params: e,t,n (module,exports,require) **/
+/** chunk id: 633026, original params: e,t,s (module,exports,require) **/
 "use strict";
-n.d(t, {
+s.d(t, {
     A: () => f
 });
-var s = n(627968);
-n(64700);
-var l = n(503698),
-    r = n.n(l),
-    a = n(172218),
-    i = n(651162),
-    o = n(311907),
-    c = n(397927),
-    d = n(287809),
-    u = n(993408),
-    g = n(212407),
-    _ = n(815280),
-    m = n(695413),
-    h = n(201073);
+var n = s(627968);
+s(64700);
+var l = s(503698),
+    r = s.n(l),
+    a = s(172218),
+    i = s(651162),
+    o = s(311907),
+    c = s(397927),
+    d = s(287809),
+    u = s(993408),
+    g = s(212407),
+    _ = s(815280),
+    m = s(695413),
+    h = s(201073);
 (0, u.$b)(90);
 let p = {
         rankedSkuIds: [],
@@ -31,7 +31,7 @@ let p = {
     f = e => {
         let {
             isLoading: t = !1,
-            heroBlock: n,
+            heroBlock: s,
             tab: l,
             onVisibilityChange: i
         } = e, u = (0, a.K)(e => {
@@ -42,57 +42,57 @@ let p = {
             heroLogo: C,
             heroBannerStatic: A,
             heroBannerAnimated: b
-        } = (0, g.Kk)(n), S = x?.responsive ?? !1, v = x?.backgroundStyle;
-        return null != f && (t || n !== p) ? (0, s.jsxs)("div", {
+        } = (0, g.Kk)(s), S = x?.responsive ?? !1, v = x?.backgroundStyle;
+        return null != f && (t || s !== p) ? (0, n.jsxs)("div", {
             ref: u,
             className: h.os,
-            children: [(0, s.jsx)("div", {
+            children: [(0, n.jsx)("div", {
                 className: r()(h.vK, {
                     [h.no]: S
                 }),
                 style: null != v ? {
                     background: v
                 } : void 0,
-                children: null != A && (0, s.jsx)(_.A, {
+                children: null != A && (0, n.jsx)(_.A, {
                     bannerStatic: A,
                     bannerAnimated: b,
                     isResponsive: S
                 })
-            }), (0, s.jsxs)("div", {
+            }), (0, n.jsxs)("div", {
                 className: h.xX,
-                children: [(0, s.jsx)("div", {
+                children: [(0, n.jsx)("div", {
                     className: r()(h.bC, {
                         [h.no]: S
                     }),
-                    children: t ? (0, s.jsx)("div", {
+                    children: t ? (0, n.jsx)("div", {
                         className: h.Hw
-                    }) : (0, s.jsx)("div", {
+                    }) : (0, n.jsx)("div", {
                         className: h.Hw,
-                        children: (0, s.jsxs)("div", {
+                        children: (0, n.jsxs)("div", {
                             className: h.Wq,
-                            children: [null != C && (0, s.jsx)("img", {
+                            children: [null != C && (0, n.jsx)("img", {
                                 className: h.rm,
                                 src: C,
-                                alt: n.name,
+                                alt: s.name,
                                 style: E?.toDesktopStyles()
-                            }), null != n.title && (0, s.jsx)(c.Heading, {
+                            }), null != s.title && (0, n.jsx)(c.Heading, {
                                 variant: "heading-xxl/bold",
                                 className: h.DD,
                                 color: "text-strong",
-                                children: n.title
-                            }), "" !== n.summary && (0, s.jsx)(c.Text, {
+                                children: s.title
+                            }), "" !== s.summary && (0, n.jsx)(c.Text, {
                                 variant: "text-md/normal",
                                 className: h.Tm,
-                                style: null != n.bannerTextColor ? {
-                                    color: n.bannerTextColor
+                                style: null != s.bannerTextColor ? {
+                                    color: s.bannerTextColor
                                 } : void 0,
-                                children: n.summary
+                                children: s.summary
                             })]
                         })
                     })
-                }), (0, s.jsx)(m.A, {
+                }), (0, n.jsx)(m.A, {
                     isBlockLoading: t,
-                    heroBlock: n,
+                    heroBlock: s,
                     tab: l
                 })]
             })]

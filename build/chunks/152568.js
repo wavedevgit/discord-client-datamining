@@ -1,34 +1,34 @@
-/** chunk id: 152568, original params: e,t,n (module,exports,require) **/
+/** chunk id: 152568, original params: e,t,s (module,exports,require) **/
 "use strict";
-n.d(t, {
+s.d(t, {
     A: () => L
 });
-var s = n(627968),
-    l = n(64700),
-    r = n(503698),
-    a = n.n(r),
-    i = n(554146),
-    o = n(230109),
-    c = n(397927),
-    d = n(367727),
-    u = n(976860),
-    g = n(44724),
-    _ = n(954571),
-    m = n(975571),
-    h = n(440938),
-    p = n(590180),
-    f = n(597783),
-    x = n(212407),
-    E = n(758836),
-    C = n(652215),
-    A = n(49999),
-    b = n(818348),
-    S = n(985018),
-    v = n(201073);
+var n = s(627968),
+    l = s(64700),
+    r = s(503698),
+    a = s.n(r),
+    i = s(554146),
+    o = s(230109),
+    c = s(397927),
+    d = s(367727),
+    u = s(976860),
+    g = s(44724),
+    _ = s(954571),
+    m = s(975571),
+    h = s(440938),
+    p = s(590180),
+    f = s(597783),
+    x = s(212407),
+    E = s(758836),
+    C = s(652215),
+    A = s(49999),
+    b = s(818348),
+    S = s(985018),
+    v = s(201073);
 let L = e => {
     let {
         wideBannerBlock: t,
-        tab: n
+        tab: s
     } = e, r = p.A.getCategoryByStoreListingId(t.categoryStoreListingId), L = l.useRef(null), I = l.useRef(null), [j, k] = l.useState(), [T, O] = l.useState(!1);
     l.useEffect(() => {
         let e = I.current;
@@ -48,7 +48,7 @@ let L = e => {
         {
             bannerURL: B
         } = (0, x.w$)(t),
-        M = n === E.G2.ORBS,
+        M = s === E.G2.ORBS,
         P = null != t.ctaRoute && "" !== t.ctaRoute,
         D = !0 !== t.disableCta && (null != t.ctaText && "" !== t.ctaText || P),
         H = null != t.logoURL && "" !== t.logoURL,
@@ -64,14 +64,14 @@ let L = e => {
             _.default.track(C.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
                 collectibles_shop_session_id: R?.sessionId,
                 sku_id: N,
-                page_type: n,
+                page_type: s,
                 page_section: R?.pageSection,
                 page_category: R?.pageCategory,
                 tile_type: "WIDE_BANNER",
                 tile_position: String(R?.tilePosition),
                 cta_name: e
             })
-        }, [R, N, n]),
+        }, [R, N, s]),
         G = l.useCallback(function() {
             let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null;
             if (U(e), null != t.ctaRoute && "" !== t.ctaRoute) {
@@ -80,10 +80,10 @@ let L = e => {
                     let t = e.match(/\/channels\/([0-9]+)\/game-shop\/([0-9]+)/);
                     if (null != t) {
                         let e = t[1],
-                            n = parseInt(t[2], 10);
+                            s = parseInt(t[2], 10);
                         (0, g.default)({
                             guildId: e,
-                            pageIndex: n
+                            pageIndex: s
                         })
                     }
                 } else(0, u.pX)(e)
@@ -94,24 +94,24 @@ let L = e => {
             [v._1]: M,
             [v.vb]: P
         }),
-        V = (0, s.jsxs)(s.Fragment, {
-            children: [t.isDismissible && (0, s.jsx)("div", {
+        V = (0, n.jsxs)(n.Fragment, {
+            children: [t.isDismissible && (0, n.jsx)("div", {
                 className: v.Mh,
-                children: (0, s.jsx)(c.JnF, {
+                children: (0, n.jsx)(c.JnF, {
                     size: "sm",
                     onClick: e => {
                         e.stopPropagation(), w()
                     },
                     "aria-label": S.intl.string(S.t.WAI6xu)
                 })
-            }), (0, s.jsx)("div", {
+            }), (0, n.jsx)("div", {
                 className: a()(v.zK, {
                     [v._1]: M
                 }),
                 style: null != j ? {
                     height: `${j}px`
                 } : void 0,
-                children: (0, s.jsx)("img", {
+                children: (0, n.jsx)("img", {
                     ref: I,
                     src: B,
                     alt: t.title,
@@ -119,23 +119,23 @@ let L = e => {
                         [v.d5]: M
                     })
                 })
-            }), (0, s.jsx)("div", {
+            }), (0, n.jsx)("div", {
                 className: a()(v.Ep, {
                     [v.Qq]: D
                 }),
                 style: {
                     maxHeight: null != j ? `${j}px` : "auto"
                 },
-                children: (0, s.jsxs)("div", {
+                children: (0, n.jsxs)("div", {
                     className: v.E8,
-                    children: [(0, s.jsx)(c.Heading, {
+                    children: [(0, n.jsx)(c.Heading, {
                         style: {
                             color: t.bannerTextColor ?? "var(--text-strong)"
                         },
                         className: M ? v.O2 : void 0,
                         variant: "heading-xl/bold",
                         children: t.title
-                    }), (0, s.jsx)(c.Text, {
+                    }), (0, n.jsx)(c.Text, {
                         style: {
                             color: "var(--text-muted)"
                         },
@@ -144,15 +144,15 @@ let L = e => {
                         children: M ? S.intl.format(S.t.SFFP7K, {
                             helpdeskArticle: m.A.getArticleURL(C.MVz.VIRTUAL_CURRENCY_LEARN_MORE)
                         }) : t.body
-                    }), D && (0, s.jsxs)("div", {
+                    }), D && (0, n.jsxs)("div", {
                         className: v.nP,
-                        children: [(0, s.jsx)(c.Button, {
+                        children: [(0, n.jsx)(c.Button, {
                             variant: "overlay-primary",
                             onClick: e => {
                                 e.stopPropagation(), G(t.ctaText ?? S.intl.string(S.t.jVcuVY))
                             },
                             text: t.ctaText ?? S.intl.string(S.t.jVcuVY)
-                        }), H && (0, s.jsx)("img", {
+                        }), H && (0, n.jsx)("img", {
                             src: t.logoURL,
                             alt: "",
                             className: v.bU
@@ -161,18 +161,18 @@ let L = e => {
                 })
             })]
         });
-    return (0, s.jsx)(c.NPJ, {
+    return (0, n.jsx)(c.NPJ, {
         theme: M ? void 0 : b.NJ.DARK,
-        children: e => (0, s.jsx)(o.L, {
+        children: e => (0, n.jsx)(o.L, {
             innerRef: L,
             onChange: y,
             threshold: 0,
-            children: P ? (0, s.jsx)(c.DUT, {
+            children: P ? (0, n.jsx)(c.DUT, {
                 innerRef: L,
                 onClick: () => G(null),
                 className: a()(e, F),
                 children: V
-            }) : (0, s.jsx)("div", {
+            }) : (0, n.jsx)("div", {
                 ref: L,
                 className: a()(e, F),
                 children: V

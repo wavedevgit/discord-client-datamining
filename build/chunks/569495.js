@@ -19,8 +19,8 @@ var n = a(627968),
     x = a(611010),
     A = a(287809),
     C = a(954571),
-    v = a(957565),
-    b = a(692848),
+    b = a(957565),
+    v = a(692848),
     f = a(412461),
     j = a(310419),
     I = a(652215),
@@ -69,7 +69,7 @@ function R(e) {
             canInstall: p
         } = (t = l, a = (0, f.DB)(), s = i.useCallback(() => {
             let e = j.h.getField("guildId") ?? void 0;
-            (0, b.o)({
+            (0, v.o)({
                 applicationId: t.id,
                 customInstallUrl: t.custom_install_url,
                 installParams: t.install_params,
@@ -89,7 +89,7 @@ function R(e) {
                 if ((0, f.TR)(I.HAw.APP_DIRECTORY_INSTALL_CLICKED, {
                         application_id: t.id
                     }), (r.Fr || r.v1) && null == t.custom_install_url) {
-                    let e = (0, b.Z)({
+                    let e = (0, v.Z)({
                         applicationId: t.id,
                         customInstallUrl: t.custom_install_url,
                         installParams: t.install_params,
@@ -165,14 +165,14 @@ let P = i.forwardRef(function(e, t) {
         let e;
         (0, f.TR)(I.HAw.APP_DIRECTORY_APPLICATION_LINK_COPIED, {
             application_id: a.id
-        }), (0, v.C)((e = a.id, `${location.protocol}//${location.host}${I.BVt.GLOBAL_DISCOVERY_APPS_PROFILE(e)}`), () => (0, c.showToast)((0, c.createToast)(E.intl.string(E.t["L/PwZf"]), c.ToastType.SUCCESS)))
+        }), (0, b.C)((e = a.id, `${location.protocol}//${location.host}${I.BVt.GLOBAL_DISCOVERY_APPS_PROFILE(e)}`), () => (0, c.showToast)((0, c.createToast)(E.intl.string(E.t["L/PwZf"]), c.ToastType.SUCCESS)))
     }, [a.id]), C = i.useCallback(() => {
         let e = x.Ay.createFromServer(a);
         (0, _.r3)({
             application: e,
             entrypoint: "app_directory"
         })
-    }, [a]), b = (0, p.A)({
+    }, [a]), v = (0, p.A)({
         id: a.id,
         label: E.intl.string(E.t["FfCL+6"]),
         onSuccess: () => (0, c.showToast)((0, c.createToast)(E.intl.string(E.t.eNjAah), c.ToastType.SUCCESS))
@@ -204,10 +204,10 @@ let P = i.forwardRef(function(e, t) {
                 },
                 action: C
             })
-        }), null != b ? (0, n.jsx)(c.rXV, {
-            children: b
+        }), null != v ? (0, n.jsx)(c.rXV, {
+            children: v
         }) : null]
-    }), [b, C, m]), {
+    }), [v, C, m]), {
         onClickLaunchActivity: N,
         isSubmitting: P
     } = function(e, t) {
@@ -261,7 +261,7 @@ let P = i.forwardRef(function(e, t) {
                 size: s,
                 contentWidth: "normal",
                 variant: O
-            }), v.p5 ? (0, n.jsx)(c.K0, {
+            }), b.p5 ? (0, n.jsx)(c.K0, {
                 variant: "secondary",
                 size: s,
                 icon: c.qYV,
@@ -284,7 +284,7 @@ let P = i.forwardRef(function(e, t) {
                 contentWidth: "small",
                 variant: O
             }), (0, n.jsx)(T, {
-                renderDropdown: e => j(v.p5, e),
+                renderDropdown: e => j(b.p5, e),
                 size: s
             })]
         }), (0, n.jsxs)("div", {
@@ -300,7 +300,7 @@ let P = i.forwardRef(function(e, t) {
                 contentWidth: "icon",
                 variant: O
             }), (0, n.jsx)(T, {
-                renderDropdown: e => j(v.p5, e),
+                renderDropdown: e => j(b.p5, e),
                 size: s
             })]
         })]

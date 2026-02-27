@@ -191,7 +191,7 @@ function eE(e) {
 let eI = function(e) {
     let {
         topLevelRoute: t
-    } = e, n = (0, s.zy)(), l = (0, s.W6)(), _ = r.useMemo(() => (0, R.B)(n.pathname, er.BVt.QUEST_HOME)?.isExact === !0, [n.pathname]), C = (0, c.bG)([E.A], () => E.A.getState("quests")), {
+    } = e, n = (0, s.zy)(), l = (0, s.W6)(), _ = r.useMemo(() => (0, R.B)(n.pathname, er.BVt.QUEST_HOME_DEPRECATED)?.isExact === !0, [n.pathname]), C = (0, c.bG)([E.A], () => E.A.getState("quests")), {
         selectedTab: v,
         onSelectTab: L,
         tabs: M
@@ -391,13 +391,13 @@ let eI = function(e) {
                         selectedTabId: v,
                         handleTransition: e_,
                         tabs: M,
-                        icon: A.r2v,
-                        children: (0, i.jsx)(D.SS, {
+                        endContent: (0, i.jsx)(D.SS, {
                             analyticsPage: er.liQ.GLOBAL_DISCOVERY_QUESTS,
                             cardAlignment: D.cP.END,
                             ctaText: es.intl.string(es.t["J+vlIR"]),
                             ctaOnClick: eu
-                        })
+                        }),
+                        icon: A.r2v
                     })
                 }) : (0, i.jsx)(eE, {
                     renderBanner: () => (0, i.jsxs)(x.A, {

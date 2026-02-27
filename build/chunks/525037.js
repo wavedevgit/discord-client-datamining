@@ -8,5 +8,6 @@ e.exports = {
     wH: "selected__354ec",
     iV: "tabWithMenuContainer__354ec",
     hP: "tabWithChevron__354ec",
-    OS: "more__354ec"
+    OS: "more__354ec",
+    Ad: "newBadge__354ec"
 }

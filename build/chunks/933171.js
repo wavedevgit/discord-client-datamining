@@ -25,14 +25,14 @@ function C(e) {
         guild: t,
         className: a,
         onClick: i
-    } = e, C = (0, r.Ay)(), v = (0, m.dangerouslyConstructGuildRecordFromUntypedObject)({
+    } = e, C = (0, r.Ay)(), b = (0, m.dangerouslyConstructGuildRecordFromUntypedObject)({
         name: t.name,
         icon: t.icon
-    }), b = h.Ay.getGuildDiscoverySplashURL({
+    }), v = h.Ay.getGuildDiscoverySplashURL({
         id: t.id,
         splash: t.discovery_splash,
         size: 192 * (0, u.mZ)()
-    }), f = null != b ? b : function(e) {
+    }), f = null != v ? v : function(e) {
         switch (e) {
             case p.NJ8.DARK:
                 return x;
@@ -65,7 +65,7 @@ function C(e) {
                         children: (0, n.jsx)(c.Ay, {
                             className: g.__invalid_icon,
                             iconSrc: j,
-                            guild: v,
+                            guild: b,
                             size: c.Ay.Sizes.LARGE
                         })
                     })

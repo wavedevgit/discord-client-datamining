@@ -1,33 +1,33 @@
-/** chunk id: 573455, original params: e,t,n (module,exports,require) **/
+/** chunk id: 573455, original params: e,t,s (module,exports,require) **/
 "use strict";
-n.d(t, {
+s.d(t, {
     A: () => m
 });
-var s = n(627968);
-n(64700);
-var l = n(503698),
-    r = n.n(l),
-    a = n(424918),
-    i = n(440938),
-    o = n(993408),
-    c = n(196231),
-    d = n(985018),
-    u = n(201073);
+var n = s(627968);
+s(64700);
+var l = s(503698),
+    r = s.n(l),
+    a = s(424918),
+    i = s(440938),
+    o = s(993408),
+    c = s(196231),
+    d = s(985018),
+    u = s(201073);
 let g = e => {
         let {
             handleTransition: t,
-            featuredBlockRecord: n
+            featuredBlockRecord: s
         } = e;
-        return (0, s.jsx)("div", {
+        return (0, n.jsx)("div", {
             className: r()(u.n9, u.YB),
-            children: n?.subblocks.map((e, n) => e.type === a.u.CATEGORY ? (0, s.jsx)(i.R9, {
+            children: s?.subblocks.map((e, s) => e.type === a.u.CATEGORY ? (0, n.jsx)(i.R9, {
                 newValue: {
                     categoryPosition: 1,
                     pageCategory: e.name,
                     pageSection: "featured_block",
-                    tilePosition: n
+                    tilePosition: s
                 },
-                children: (0, s.jsx)(c.S, {
+                children: (0, n.jsx)(c.S, {
                     subblock: e,
                     badgeText: (0, o.HF)(e.unpublishedAt) ? d.intl.string(d.t["h/uBCR"]) : void 0,
                     handleTransition: t
@@ -38,24 +38,24 @@ let g = e => {
     _ = e => {
         let {
             handleTransition: t,
-            categories: n
+            categories: s
         } = e;
-        if (null == n || n.length < 2) return null;
-        let [l, a] = n;
-        return (0, s.jsx)("div", {
+        if (null == s || s.length < 2) return null;
+        let [l, a] = s;
+        return (0, n.jsx)("div", {
             className: r()(u.n9, u.YB),
-            children: (0, s.jsxs)(i.R9, {
+            children: (0, n.jsxs)(i.R9, {
                 newValue: {
                     categoryPosition: 1,
                     pageCategory: null != l ? l.name : a?.name,
                     pageSection: "featured_block",
                     tilePosition: +(null == l)
                 },
-                children: [null != l && (0, s.jsx)(c.S, {
+                children: [null != l && (0, n.jsx)(c.S, {
                     category: l,
                     badgeText: (0, o.HF)(l.unpublishedAt) ? d.intl.string(d.t["h/uBCR"]) : void 0,
                     handleTransition: t
-                }), null != a && (0, s.jsx)(c.S, {
+                }), null != a && (0, n.jsx)(c.S, {
                     category: a,
                     badgeText: (0, o.HF)(a.unpublishedAt) ? d.intl.string(d.t["h/uBCR"]) : void 0,
                     handleTransition: t
@@ -66,30 +66,30 @@ let g = e => {
     m = e => {
         let {
             isLoading: t,
-            handleTransition: n,
+            handleTransition: s,
             categories: l,
             featuredBlockRecord: a
         } = e;
-        return t ? (0, s.jsxs)("div", {
+        return t ? (0, n.jsxs)("div", {
             className: r()(u.n9, u.YB),
-            children: [(0, s.jsx)("div", {
+            children: [(0, n.jsx)("div", {
                 className: r()(u.Jn, u.oT),
-                children: (0, s.jsx)("div", {
+                children: (0, n.jsx)("div", {
                     className: u.uy
                 })
-            }), (0, s.jsx)("div", {
+            }), (0, n.jsx)("div", {
                 className: r()(u.Jn, u.oT),
-                children: (0, s.jsx)("div", {
+                children: (0, n.jsx)("div", {
                     className: u.uy
                 })
             })]
-        }) : null != a ? (0, s.jsx)(g, {
+        }) : null != a ? (0, n.jsx)(g, {
             featuredBlockRecord: a,
-            handleTransition: n,
+            handleTransition: s,
             isLoading: !1
-        }) : (0, s.jsx)(_, {
+        }) : (0, n.jsx)(_, {
             categories: l,
-            handleTransition: n,
+            handleTransition: s,
             isLoading: !1
         })
     }

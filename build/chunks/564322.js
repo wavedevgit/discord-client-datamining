@@ -1,26 +1,26 @@
-/** chunk id: 564322, original params: e,t,n (module,exports,require) **/
+/** chunk id: 564322, original params: e,t,s (module,exports,require) **/
 "use strict";
-n.d(t, {
+s.d(t, {
     X: () => d
 });
-var s = n(64700),
-    l = n(59520),
-    r = n(440938),
-    a = n(790297),
-    i = n(954571),
-    o = n(652215);
-let c = (e, t, n, s) => {
+var n = s(64700),
+    l = s(59520),
+    r = s(440938),
+    a = s(790297),
+    i = s(954571),
+    o = s(652215);
+let c = (e, t, s, n) => {
         let {
             scrollTop: l = 0,
             scrollOffset: r = 0,
             scrollHeight: a = 0,
             scrollWidth: o = 0
-        } = s;
+        } = n;
         if (a > 0) {
-            let s = (l + r) / a;
-            s > 0 && i.default.track(e, {
-                scroll_visible_percent: s,
-                source: n,
+            let n = (l + r) / a;
+            n > 0 && i.default.track(e, {
+                scroll_visible_percent: n,
+                source: s,
                 page_height: Math.round(a),
                 page_width: Math.round(o),
                 page_session_id: t
@@ -29,21 +29,21 @@ let c = (e, t, n, s) => {
     },
     d = (e, t) => {
         let {
-            analyticsSource: n
+            analyticsSource: s
         } = (0, a.lC)(t), i = (0, l.I)(c, 5e3, [], {
             trailing: !0
         }), d = (0, r.uM)(), u = d?.sessionId;
         return {
-            handleScroll: s.useCallback(() => {
+            handleScroll: n.useCallback(() => {
                 if (null != e.current) {
                     let t = e.current.getScrollerNode();
-                    null != t && i(o.HAw.COLLECTIBLES_SHOP_SCROLLED, null != u ? u : "", n, {
+                    null != t && i(o.HAw.COLLECTIBLES_SHOP_SCROLLED, null != u ? u : "", s, {
                         scrollTop: t.scrollTop,
                         scrollOffset: t.offsetHeight,
                         scrollHeight: t.scrollHeight,
                         scrollWidth: t.scrollWidth
                     })
                 }
-            }, [i, n, u, e])
+            }, [i, s, u, e])
         }
     }

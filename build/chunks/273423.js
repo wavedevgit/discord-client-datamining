@@ -1,6 +1,6 @@
 /** chunk id: 273423, original params: e,t,a (module,exports,require) **/
 a.d(t, {
-    A: () => b,
+    A: () => v,
     I: () => A
 }), a(321073);
 var n, i = a(627968),
@@ -22,12 +22,12 @@ let C = {
         [A.SMALL]: x.Ps,
         [A.LARGE]: x.XY
     },
-    v = {
+    b = {
         [A.SMALL]: x.Bx,
         [A.LARGE]: x.J3
     };
 
-function b(e) {
+function v(e) {
     let {
         application: t,
         mutualGuilds: a,
@@ -35,7 +35,7 @@ function b(e) {
         className: l,
         textVariant: d = "text-sm/normal",
         compact: _,
-        guildIconSize: b = A.LARGE,
+        guildIconSize: v = A.LARGE,
         guildsClassName: f,
         children: j
     } = e, I = (0, o.bG)([m.default], () => m.default.locale), E = new Intl.ListFormat(I), S = t.directory_entry?.guild_count ?? 0, N = a?.length ?? 0, y = Math.max(0, S - N), {
@@ -77,14 +77,14 @@ function b(e) {
                             n = p.Ay.getGuildIconURL({
                                 id: e.id,
                                 icon: e.icon,
-                                size: b,
+                                size: v,
                                 canAnimate: !1
                             }),
                             l = (0, i.jsx)(c.m, {
                                 text: e.name,
                                 position: "top",
                                 children: (0, i.jsx)("img", {
-                                    className: r()(x.Kk, v[b]),
+                                    className: r()(x.Kk, b[v]),
                                     src: n,
                                     alt: ""
                                 })
@@ -93,8 +93,8 @@ function b(e) {
                             children: l
                         }, e.id) : (0, i.jsx)(h.Ay, {
                             className: x.SA,
-                            height: b,
-                            width: b,
+                            height: v,
+                            width: v,
                             mask: h.Ay.Masks.VOICE_USER_SUMMARY_ITEM,
                             children: l
                         }, e.id)
@@ -104,15 +104,15 @@ function b(e) {
                         }),
                         position: "top",
                         children: (0, i.jsxs)("div", {
-                            className: r()(x.S_, C[b]),
+                            className: r()(x.S_, C[v]),
                             children: ["+", L]
                         })
                     }) : null]
                 }) : (0, i.jsx)(u.RR9, {
                     size: "custom",
                     color: "currentColor",
-                    width: b,
-                    height: b,
+                    width: v,
+                    height: v,
                     className: x.DE
                 })
             }), null != P ? (0, i.jsx)(u.Text, {

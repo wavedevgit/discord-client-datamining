@@ -1,6 +1,6 @@
 /** chunk id: 729904, original params: e,t,i (module,exports,require) **/
 i.d(t, {
-    A: () => A
+    A: () => g
 }), i(667532);
 var n = i(311907),
     r = i(73153),
@@ -15,12 +15,12 @@ let d = [c.BVt.CHANNEL_THREAD_VIEW(l.pv.guildId(), l.pv.channelId({
         optional: !0
     }), ":messageId?"), c.BVt.VOICE_CHAT_CHANNEL_PARTIAL(l.pv.guildId(), l.pv.channelId({
         optional: !0
-    }), ":messageId?"), c.BVt.CHANNELS_GAME_SHOP(l.pv.guildId(), ":pageIndex", ":skuId?", ":slug?"), c.BVt.FRIENDS, c.BVt.ME, c.BVt.MESSAGE_REQUESTS, c.BVt.GUILD_DISCOVERY, c.BVt.APPLICATION_STORE, c.BVt.COLLECTIBLES_SHOP, c.BVt.USERS(":userId"), c.BVt.GUILD_DISCOVERY, c.BVt.GLOBAL_DISCOVERY, c.BVt.QUEST_HOME, c.BVt.QUEST_HOME_V2, c.BVt.GLOBAL_DISCOVERY_SERVERS, c.BVt.GLOBAL_DISCOVERY_APPS],
+    }), ":messageId?"), c.BVt.CHANNELS_GAME_SHOP(l.pv.guildId(), ":pageIndex", ":skuId?", ":slug?"), c.BVt.FRIENDS, c.BVt.ME, c.BVt.MESSAGE_REQUESTS, c.BVt.GUILD_DISCOVERY, c.BVt.APPLICATION_STORE, c.BVt.COLLECTIBLES_SHOP, c.BVt.USERS(":userId"), c.BVt.GUILD_DISCOVERY, c.BVt.GLOBAL_DISCOVERY, c.BVt.QUEST_HOME_DEPRECATED, c.BVt.QUEST_HOME_V2, c.BVt.GLOBAL_DISCOVERY_SERVERS, c.BVt.GLOBAL_DISCOVERY_APPS],
     u = [],
     h = 0,
     C = !!(null != window && "navigation" in window) && (window.navigation.canGoBack ?? !1),
     E = !!(null != window && "navigation" in window) && (window.navigation.canGoForward ?? !1);
-class g extends n.Ay.Store {
+class A extends n.Ay.Store {
     static displayName = "BackForwardNavStore";
     initialize() {
         u = [], h = 0
@@ -45,7 +45,7 @@ class g extends n.Ay.Store {
         return this.canGoForward ? u[h - 1] : null
     }
 }
-let A = new g(r.h, {
+let g = new A(r.h, {
     ROUTE_CHANGED: function(e) {
         let {
             location: t,

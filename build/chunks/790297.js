@@ -1,25 +1,25 @@
-/** chunk id: 790297, original params: e,t,n (module,exports,require) **/
+/** chunk id: 790297, original params: e,t,s (module,exports,require) **/
 "use strict";
-n.d(t, {
+s.d(t, {
     N0: () => h,
     lC: () => _,
     uS: () => m
 });
-var s = n(64700),
-    l = n(311907),
-    r = n(793574),
-    a = n(688810),
-    i = n(954571),
-    o = n(927578),
-    c = n(870216),
-    d = n(758836),
-    u = n(652215),
-    g = n(788868);
+var n = s(64700),
+    l = s(311907),
+    r = s(793574),
+    a = s(688810),
+    i = s(954571),
+    o = s(927578),
+    c = s(870216),
+    d = s(758836),
+    u = s(652215),
+    g = s(788868);
 let _ = e => {
         let {
             analyticsSource: t,
-            analyticsLocations: n
-        } = (0, l.cf)([c.A], () => c.A.getAnalytics()), s = (e => {
+            analyticsLocations: s
+        } = (0, l.cf)([c.A], () => c.A.getAnalytics()), n = (e => {
             switch (e) {
                 case d.G2.ORBS:
                     return r.A.COLLECTIBLES_SHOP_ORBS_TAB;
@@ -40,41 +40,41 @@ let _ = e => {
         })(e), {
             analyticsLocations: i,
             newestAnalyticsLocation: o
-        } = (0, a.Ay)([...n, r.A.COLLECTIBLES_SHOP, s]);
+        } = (0, a.Ay)([...s, r.A.COLLECTIBLES_SHOP, n]);
         return {
             analyticsSource: t,
             analyticsLocations: i,
             newestAnalyticsLocation: o,
-            currentTabLocation: s
+            currentTabLocation: n
         }
     },
-    m = (e, t, n, l, r) => {
+    m = (e, t, s, l, r) => {
         let {
             analyticsLocations: a,
             analyticsSource: o,
             currentTabLocation: c,
             newestAnalyticsLocation: g
         } = _(t);
-        s.useEffect(() => {
+        n.useEffect(() => {
             if (l !== d.Pf.VISIBLE || g !== c) return;
-            let s = t === d.G2.CATALOG ? r : o;
+            let n = t === d.G2.CATALOG ? r : o;
             i.default.track(u.HAw.COLLECTIBLES_SHOP_VIEWED, {
                 location_stack: a,
-                source: s,
+                source: n,
                 page_session_id: e,
                 page_type: t === d.G2.CATALOG ? "full" : t,
-                category: t === d.G2.HOME ? void 0 : n
+                category: t === d.G2.HOME ? void 0 : s
             })
-        }, [a, e, t, n, c, l, r, o, g])
+        }, [a, e, t, s, c, l, r, o, g])
     },
     h = (e, t) => {
         let {
-            analyticsLocations: n
+            analyticsLocations: s
         } = _(e);
-        s.useEffect(() => {
+        n.useEffect(() => {
             null == t || o.Ay.canUseCollectibles(t) || i.default.track(u.HAw.PREMIUM_UPSELL_VIEWED, {
                 type: g.e.COLLECTIBLES_SHOP,
-                location_stack: n
+                location_stack: s
             })
-        }, [n, t])
+        }, [s, t])
     }

@@ -1,18 +1,18 @@
-/** chunk id: 854818, original params: e,t,n (module,exports,require) **/
+/** chunk id: 854818, original params: e,t,s (module,exports,require) **/
 "use strict";
-n.d(t, {
+s.d(t, {
     e: () => d
-}), n(321073);
-var s = n(627968);
-n(64700);
-var l = n(503698),
-    r = n.n(l),
-    a = n(397927),
-    i = n(496431),
-    o = n(985018),
-    c = n(487604);
+}), s(321073);
+var n = s(627968);
+s(64700);
+var l = s(503698),
+    r = s.n(l),
+    a = s(397927),
+    i = s(496431),
+    o = s(985018),
+    c = s(487604);
 let d = e => {
-    let t, n, {
+    let t, s, {
             endDate: l,
             size: d = "md",
             className: u,
@@ -24,25 +24,25 @@ let d = e => {
             minutes: h,
             seconds: p
         } = (0, i.A)(l),
-        f = (n = [(t = e => `${e.toString().padStart(2,"0")}`)(_), t(m), t(h)], g && n.push(t(p)), n.join(":"));
-    return (0, s.jsxs)("div", {
+        f = (s = [(t = e => `${e.toString().padStart(2,"0")}`)(_), t(m), t(h)], g && s.push(t(p)), s.join(":"));
+    return (0, n.jsxs)("div", {
         className: r()(c.kL, u),
         role: "timer",
-        children: [f.split("").map((e, t) => ":" === e ? (0, s.jsx)(a.Text, {
+        children: [f.split("").map((e, t) => ":" === e ? (0, n.jsx)(a.Text, {
             color: "none",
             variant: "md" === d ? "heading-lg/extrabold" : "heading-xxl/extrabold",
             className: c.eC,
             "aria-hidden": !0,
             tag: "div",
             children: e
-        }, t) : (0, s.jsx)(a.Text, {
+        }, t) : (0, n.jsx)(a.Text, {
             color: "always-white",
             variant: "md" === d ? "heading-md/bold" : "heading-xl/bold",
             className: c.ai,
             "aria-hidden": !0,
             tag: "div",
             children: e
-        }, t)), (0, s.jsx)(a.AC4, {
+        }, t)), (0, n.jsx)(a.AC4, {
             children: o.intl.format(o.t.j6IyVe, {
                 days: _,
                 hours: m,

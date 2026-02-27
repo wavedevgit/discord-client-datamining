@@ -1,6 +1,6 @@
-/** chunk id: 165530, original params: e,t,n (module,exports,require) **/
+/** chunk id: 165530, original params: e,t,s (module,exports,require) **/
 "use strict";
-n.d(t, {
-    A: () => s
+s.d(t, {
+    A: () => n
 });
-let s = "https://cdn.discordapp.com/assets/content/0b8a43491ba8f130b2d07df54fb2b7582d7eb21af11491a58db2d440bb1a2c87.webm"
+let n = "https://cdn.discordapp.com/assets/content/0b8a43491ba8f130b2d07df54fb2b7582d7eb21af11491a58db2d440bb1a2c87.webm"

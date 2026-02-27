@@ -1,6 +1,6 @@
 /** chunk id: 710016, original params: e,t,a (module,exports,require) **/
 a.d(t, {
-    A: () => v
+    A: () => b
 }), a(321073);
 var n = a(627968),
     i = a(64700),
@@ -87,7 +87,7 @@ class C extends i.Component {
         })
     }
 }
-class v extends i.Component {
+class b extends i.Component {
     static defaultProps = {
         startWith: 0
     };

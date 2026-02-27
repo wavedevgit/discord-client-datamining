@@ -1,19 +1,19 @@
-/** chunk id: 521000, original params: e,t,n (module,exports,require) **/
+/** chunk id: 521000, original params: e,t,s (module,exports,require) **/
 "use strict";
-n.d(t, {
+s.d(t, {
     VA: () => r
 });
-var s = n(627968);
-n(64700);
+var n = s(627968);
+s(64700);
 let l = e => {
         let {
             clientX: t,
-            clientY: n,
-            currentTarget: s
+            clientY: s,
+            currentTarget: n
         } = e;
-        s.style.pointerEvents = "none";
-        let l = document.elementFromPoint(t, n);
-        return s.style.pointerEvents = "auto", {
+        n.style.pointerEvents = "none";
+        let l = document.elementFromPoint(t, s);
+        return n.style.pointerEvents = "auto", {
             elementBelow: l,
             button: l?.closest("button") ?? null
         }
@@ -21,17 +21,17 @@ let l = e => {
     r = e => {
         let {
             isCustomCursorEnabled: t,
-            className: n,
+            className: s,
             riveEventTargetRef: r
         } = e, a = e => {
             let {
-                button: n
-            } = l(e), s = e.currentTarget;
-            t ? s.style.cursor = null != n ? "var(--custom-cursor-pointer)" : "var(--custom-cursor)" : s.style.cursor = null != n ? "pointer" : "default"
+                button: s
+            } = l(e), n = e.currentTarget;
+            t ? n.style.cursor = null != s ? "var(--custom-cursor-pointer)" : "var(--custom-cursor)" : n.style.cursor = null != s ? "pointer" : "default"
         };
-        return (0, s.jsx)("div", {
+        return (0, n.jsx)("div", {
             ref: r,
-            className: n,
+            className: s,
             onMouseMove: a,
             onMouseDown: e => {
                 let {

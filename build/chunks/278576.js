@@ -1,20 +1,20 @@
-/** chunk id: 278576, original params: e,t,n (module,exports,require) **/
+/** chunk id: 278576, original params: e,t,s (module,exports,require) **/
 "use strict";
-n.d(t, {
+s.d(t, {
     tR: () => o
-}), n(323874), n(14289), n(35956);
-var s = n(64700),
-    l = n(873263),
-    r = n(976860),
-    a = n(840065),
-    i = n(652215);
+}), s(323874), s(14289), s(35956);
+var n = s(64700),
+    l = s(873263),
+    r = s(976860),
+    a = s(840065),
+    i = s(652215);
 
 function o() {
     let {
         search: e
-    } = (0, l.zy)(), t = (0, l.g)(), n = s.useMemo(() => new URLSearchParams(e), [e]).get("source"), o = null != n ? parseInt(n, 10) : null;
+    } = (0, l.zy)(), t = (0, l.g)(), s = n.useMemo(() => new URLSearchParams(e), [e]).get("source"), o = null != s ? parseInt(s, 10) : null;
     return {
-        onClose: s.useCallback(() => {
+        onClose: n.useCallback(() => {
             if (0 === o) {
                 (0, r.aX)(), (0, a.openUserSettings)();
                 return

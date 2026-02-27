@@ -1,43 +1,43 @@
-/** chunk id: 761218, original params: e,t,n (module,exports,require) **/
+/** chunk id: 761218, original params: e,t,s (module,exports,require) **/
 "use strict";
-n.d(t, {
+s.d(t, {
     A: () => v
 });
-var s = n(627968),
-    l = n(64700),
-    r = n(989349),
-    a = n.n(r),
-    i = n(158954),
-    o = n(311907),
-    c = n(230109),
-    d = n(688810),
-    u = n(733391),
-    g = n(439303),
-    _ = n(44724),
-    m = n(317560),
-    h = n(183802),
-    p = n(67480),
-    f = n(954571),
-    x = n(440938),
-    E = n(652215),
-    C = n(188275),
-    A = n(985018),
-    b = n(27112);
+var n = s(627968),
+    l = s(64700),
+    r = s(989349),
+    a = s.n(r),
+    i = s(158954),
+    o = s(311907),
+    c = s(230109),
+    d = s(688810),
+    u = s(733391),
+    g = s(439303),
+    _ = s(44724),
+    m = s(317560),
+    h = s(183802),
+    p = s(67480),
+    f = s(954571),
+    x = s(440938),
+    E = s(652215),
+    C = s(188275),
+    A = s(985018),
+    b = s(27112);
 let S = {
         pageSection: "marvel-rivals-promotional-banner"
     },
     v = e => {
         let {
             onDismiss: t,
-            skuIds: n,
+            skuIds: s,
             endTime: r,
             tab: v
-        } = e, L = (0, o.bG)([p.A], () => n.every(e => null != p.A.get(e)), [n]), I = (0, x.uM)(), {
+        } = e, L = (0, o.bG)([p.A], () => s.every(e => null != p.A.get(e)), [s]), I = (0, x.uM)(), {
             analyticsLocations: j
         } = (0, d.Ay)(), k = l.useRef(null), T = l.useRef(!1), O = l.useRef(null);
         l.useEffect(() => {
-            for (let e of n)(0, u.qf)(C.Kf, e)
-        }, [n]);
+            for (let e of s)(0, u.qf)(C.Kf, e)
+        }, [s]);
         let N = l.useMemo(() => {
                 let e = a()(),
                     t = Math.max(a()(r).diff(e, "days"), 1);
@@ -93,39 +93,39 @@ let S = {
             }, [I?.sessionId, I?.pageCategory, I?.pageSection, v]);
         return (l.useEffect(() => () => {
             null !== O.current && (clearTimeout(O.current), O.current = null)
-        }, []), L) ? (0, s.jsx)(c.L, {
+        }, []), L) ? (0, n.jsx)(c.L, {
             innerRef: k,
             onChange: D,
             threshold: 0,
-            children: (0, s.jsx)("div", {
+            children: (0, n.jsx)("div", {
                 ref: k,
                 className: b.YB,
-                children: (0, s.jsxs)("div", {
+                children: (0, n.jsxs)("div", {
                     className: b.kL,
-                    children: [(0, s.jsx)("div", {
+                    children: [(0, n.jsx)("div", {
                         className: b.b,
-                        children: (0, s.jsx)(i.JnF, {
+                        children: (0, n.jsx)(i.JnF, {
                             size: "sm",
                             variant: "icon-only",
                             onClick: P
                         })
-                    }), (0, s.jsxs)("div", {
+                    }), (0, n.jsxs)("div", {
                         className: b.xf,
-                        children: [null != N && (0, s.jsx)("div", {
+                        children: [null != N && (0, n.jsx)("div", {
                             className: b.qw,
-                            children: (0, s.jsx)(i.Exy, {
+                            children: (0, n.jsx)(i.Exy, {
                                 type: {
                                     text: `${A.intl.string(A.t.yYEZGi)} (${N})`
                                 },
                                 variant: "brand"
                             })
-                        }), (0, s.jsxs)("div", {
+                        }), (0, n.jsxs)("div", {
                             className: b.B5,
-                            children: [(0, s.jsx)(i.DZT, {
+                            children: [(0, n.jsx)(i.DZT, {
                                 variant: "heading-xl/semibold",
                                 color: "always-white",
                                 children: A.intl.string(A.t["b3+OH1"])
-                            }), (0, s.jsx)(i.$nd, {
+                            }), (0, n.jsx)(i.$nd, {
                                 variant: "overlay-primary",
                                 icon: i.I9m,
                                 iconPosition: "end",
@@ -134,11 +134,11 @@ let S = {
                                 onClick: B
                             })]
                         })]
-                    }), (0, s.jsx)(g.E9, {
+                    }), (0, n.jsx)(g.E9, {
                         newValue: S,
-                        children: (0, s.jsx)("div", {
+                        children: (0, n.jsx)("div", {
                             className: b.$2,
-                            children: n.map((e, t) => (0, s.jsx)(h.A, {
+                            children: s.map((e, t) => (0, n.jsx)(h.A, {
                                 skuId: e,
                                 applicationId: C.XR,
                                 guildId: C.Kf,

@@ -50,7 +50,7 @@ function A(e) {
             src: p,
             className: l()(_._e, _.IH),
             muted: !0
-        }), (0, n.jsx)(v, {
+        }), (0, n.jsx)(b, {
             isHovered: a,
             url: p,
             isVideo: !0
@@ -59,7 +59,7 @@ function A(e) {
         isHovered: a,
         url: g,
         animatedUrl: x
-    }) : (0, n.jsx)(b, {
+    }) : (0, n.jsx)(v, {
         iconURL: o
     })
 }
@@ -78,7 +78,7 @@ function C(e) {
                 [_.Kc]: r
             }),
             onLoad: () => o(!0)
-        }), null != s ? (0, n.jsx)(v, {
+        }), null != s ? (0, n.jsx)(b, {
             isHovered: t,
             url: s,
             isVideo: !1
@@ -86,7 +86,7 @@ function C(e) {
     })
 }
 
-function v(e) {
+function b(e) {
     let {
         isHovered: t,
         url: a,
@@ -116,7 +116,7 @@ function v(e) {
     }) : null
 }
 
-function b(e) {
+function v(e) {
     let {
         iconURL: t
     } = e, {
@@ -139,7 +139,7 @@ let f = function(e) {
         iconURL: s
     } = e, l = (0, r.bG)([o.A], () => o.A.useReducedMotion), [c, d] = i.useState(!1), h = i.useCallback(() => {
         d(!0)
-    }, []), p = i.useCallback(() => d(!1), []), v = (0, u.Ag)(t), f = t.bot, {
+    }, []), p = i.useCallback(() => d(!1), []), b = (0, u.Ag)(t), f = t.bot, {
         botBannerUrl: j,
         botBannerUrlAnimated: I
     } = i.useMemo(() => f?.id == null || f?.banner == null ? {} : {
@@ -165,7 +165,7 @@ let f = function(e) {
         onFocus: h,
         onMouseLeave: p,
         onBlur: p,
-        children: "card" === a && v ? (0, n.jsx)(A, {
+        children: "card" === a && b ? (0, n.jsx)(A, {
             application: t,
             isHovered: c,
             botBannerUrl: null == j ? void 0 : j,
@@ -174,7 +174,7 @@ let f = function(e) {
             isHovered: c,
             url: j,
             animatedUrl: I
-        }) : (0, n.jsx)(b, {
+        }) : (0, n.jsx)(v, {
             iconURL: s
         })
     })

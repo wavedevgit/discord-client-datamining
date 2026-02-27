@@ -1,6 +1,6 @@
 /** chunk id: 64585, original params: e,t,i (module,exports,require) **/
 i.d(t, {
-    A: () => S
+    A: () => R
 }), i(321073);
 var n = i(73153),
     r = i(272355),
@@ -14,12 +14,12 @@ var n = i(73153),
     h = i(559908),
     C = i(652215);
 let E = (0, l.aN)("poggermode_applause", a.A.getSoundpack()),
-    g = !1,
     A = !1,
+    g = !1,
     _ = [],
     p = null,
     m = () => {
-        E.stop(), g = !1
+        E.stop(), A = !1
     },
     L = () => {
         let e = u.A.isEnabled(),
@@ -27,13 +27,13 @@ let E = (0, l.aN)("poggermode_applause", a.A.getSoundpack()),
         return !!e && !!t && null != c.A.getChannelId()
     },
     O = () => {
-        if (0 === _.length || !L() || A) return;
-        A = !0;
+        if (0 === _.length || !L() || g) return;
+        g = !0;
         let [e, t] = _[_.length - 1];
         (0, l.Ak)(e, t), p = setTimeout(f, 1e3)
     },
     f = () => {
-        _.pop(), A = !1, O()
+        _.pop(), g = !1, O()
     },
     I = function(e) {
         let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 1,
@@ -70,10 +70,10 @@ class T extends r.A {
             i = d.A.isTyping(e, t),
             n = h.Ay.getUserCombo(t, e),
             r = n?.multiplier ?? 1;
-        i && r >= 7 ? g || (E.loop(), g = !0) : m()
+        i && r >= 7 ? A || (E.loop(), A = !0) : m()
     }
     playAchievementUnlockSound() {
         L() && I("poggermode_achievement_unlock")
     }
 }
-let S = new T
+let R = new T

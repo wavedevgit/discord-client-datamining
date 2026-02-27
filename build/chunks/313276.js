@@ -1,18 +1,18 @@
-/** chunk id: 313276, original params: e,t,n (module,exports,require) **/
+/** chunk id: 313276, original params: e,t,s (module,exports,require) **/
 "use strict";
-n.d(t, {
+s.d(t, {
     A: () => o
 });
-var s = n(64700),
-    l = n(155999),
-    r = n.n(l),
-    a = n(311907),
-    i = n(590180);
+var n = s(64700),
+    l = s(155999),
+    r = s.n(l),
+    a = s(311907),
+    i = s(590180);
 
 function o() {
     let e = (0, a.bG)([i.A], () => i.A.products);
-    return (0, s.useCallback)(t => r()(t.map(t => {
-        let n = e.get(t);
-        return null != n && null != n.variantGroupStoreListingId ? i.A.getProductByStoreListingId(n.variantGroupStoreListingId) : n
+    return (0, n.useCallback)(t => r()(t.map(t => {
+        let s = e.get(t);
+        return null != s && null != s.variantGroupStoreListingId ? i.A.getProductByStoreListingId(s.variantGroupStoreListingId) : s
     }).filter(e => null != e), "storeListingId"), [e])
 }

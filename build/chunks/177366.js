@@ -1,30 +1,30 @@
-/** chunk id: 177366, original params: e,t,n (module,exports,require) **/
+/** chunk id: 177366, original params: e,t,s (module,exports,require) **/
 "use strict";
-n.d(t, {
+s.d(t, {
     XU: () => A,
     Yr: () => C,
     k0: () => b
 });
-var s = n(64700),
-    l = n(873263),
-    r = n(311907),
-    a = n(775602),
-    i = n(793574),
-    o = n(688810),
-    c = n(590180),
-    d = n(870216),
-    u = n(298072),
-    g = n(238184),
-    _ = n(572595),
-    m = n(159439),
-    h = n(57020),
-    p = n(652215);
+var n = s(64700),
+    l = s(873263),
+    r = s(311907),
+    a = s(775602),
+    i = s(793574),
+    o = s(688810),
+    c = s(590180),
+    d = s(870216),
+    u = s(298072),
+    g = s(238184),
+    _ = s(572595),
+    m = s(159439),
+    h = s(57020),
+    p = s(652215);
 let f = "#itemSkuId=",
     x = RegExp(`^${f}(\\d+)$`),
     E = [p.BVt.COLLECTIBLES_SHOP],
     C = e => {
         let t = (0, l.zy)();
-        s.useEffect(() => {
+        n.useEffect(() => {
             if (null != e && E.includes(t.pathname)) return () => {
                 window.location.hash.startsWith(f) && window.location.replace("#")
             }
@@ -32,28 +32,28 @@ let f = "#itemSkuId=",
     },
     A = () => {
         let e = (0, m.U)(),
-            t = s.useRef(null),
-            n = (0, l.zy)(),
-            a = n.pathname === p.BVt.COLLECTIBLES_SHOP ? i.A.HOME_PAGE_SHOP_TAB : i.A.COLLECTIBLES_SHOP,
+            t = n.useRef(null),
+            s = (0, l.zy)(),
+            a = s.pathname === p.BVt.COLLECTIBLES_SHOP ? i.A.HOME_PAGE_SHOP_TAB : i.A.COLLECTIBLES_SHOP,
             {
                 analyticsLocations: f
             } = (0, o.Ay)(a),
             E = (0, g.A)();
-        s.useEffect(() => {
-            let e = x.exec(n.hash);
+        n.useEffect(() => {
+            let e = x.exec(s.hash);
             null != e ? t.current = e[1] : t.current = null
-        }, [E, n.hash]);
+        }, [E, s.hash]);
         let C = (0, r.bG)([d.A], () => d.A.initialProductSkuId);
-        s.useEffect(() => {
+        n.useEffect(() => {
             if (e) return;
-            let n = null;
-            if (null != C ? n = C : null != t.current && (n = t.current), null != n) {
+            let s = null;
+            if (null != C ? s = C : null != t.current && (s = t.current), null != s) {
                 let e = setTimeout(() => {
                     (e => {
                         let {
                             productSkuId: t,
-                            analyticsLocations: n,
-                            analyticsSource: s,
+                            analyticsLocations: s,
+                            analyticsSource: n,
                             tab: l
                         } = e, r = c.A.getProduct(t), a = c.A.getCategoryForProduct(t);
                         if (null != r && null != a) {
@@ -63,23 +63,23 @@ let f = "#itemSkuId=",
                                 }),
                                 o = document.getElementById(`shop-item-${e.skuId}`);
                             if (o !== document.activeElement && o?.focus(), null != r.variantGroupStoreListingId) {
-                                let n = c.A.getProductByStoreListingId(r.variantGroupStoreListingId);
-                                if (null != n) {
-                                    e = n;
-                                    let s = n.variants?.findIndex(e => e.skuId === t);
-                                    null != s && s > -1 && (0, u.n)(n, s)
+                                let s = c.A.getProductByStoreListingId(r.variantGroupStoreListingId);
+                                if (null != s) {
+                                    e = s;
+                                    let n = s.variants?.findIndex(e => e.skuId === t);
+                                    null != n && n > -1 && (0, u.n)(s, n)
                                 }
                             }(0, _.t)({
                                 product: e,
                                 category: a,
-                                analyticsSource: s,
-                                analyticsLocations: n,
+                                analyticsSource: n,
+                                analyticsLocations: s,
                                 tab: l,
                                 shouldCheckoutWithOrbs: i
                             })
                         }
                     })({
-                        productSkuId: n,
+                        productSkuId: s,
                         analyticsLocations: f,
                         analyticsSource: a,
                         tab: E
@@ -90,25 +90,25 @@ let f = "#itemSkuId=",
         }, [f, a, e, C, E])
     },
     b = e => {
-        let t = s.useRef({}),
-            n = (0, r.bG)([a.A], () => a.A.useReducedMotion),
+        let t = n.useRef({}),
+            s = (0, r.bG)([a.A], () => a.A.useReducedMotion),
             l = (0, r.bG)([c.A], () => c.A.isFetchingCategories),
-            [i, o] = s.useState(null),
-            d = s.useCallback((e, n) => {
-                t.current[e] = n
+            [i, o] = n.useState(null),
+            d = n.useCallback((e, s) => {
+                t.current[e] = s
             }, []),
-            u = s.useCallback(s => {
-                l ? o(s) : setTimeout(() => {
-                    let l = t.current[s];
+            u = n.useCallback(n => {
+                l ? o(n) : setTimeout(() => {
+                    let l = t.current[n];
                     null != l && e?.scrollIntoViewNode({
                         node: l,
                         padding: 48,
-                        animate: !n,
+                        animate: !s,
                         shouldScrollToStart: !0
                     })
                 }, 100)
-            }, [e, n, l, o]);
-        return s.useEffect(() => {
+            }, [e, s, l, o]);
+        return n.useEffect(() => {
             l || null == i || (u(i), o(null))
         }, [l, u, i, o]), {
             setCategoryRef: d,

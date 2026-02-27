@@ -19,8 +19,8 @@ var n = a(627968),
     x = a(656106),
     A = a(241837),
     C = a(116219),
-    v = a(475356),
-    b = a(489253),
+    b = a(475356),
+    v = a(489253),
     f = a(247165),
     j = a(435220),
     I = a(652215),
@@ -141,14 +141,14 @@ let N = function(e) {
                                 onTabSelect: z,
                                 selectedTab: O
                             })
-                        }), Y, (0, n.jsx)(b.A, {
+                        }), Y, (0, n.jsx)(v.A, {
                             applicationId: t,
                             fetchState: U,
                             similarApplications: V,
                             onSelectApplication: M,
                             similarLoadId: w?.loadId
                         })]
-                    }), X && (0, n.jsx)(v.A, {
+                    }), X && (0, n.jsx)(b.A, {
                         className: S.pz,
                         application: L,
                         view: "side"

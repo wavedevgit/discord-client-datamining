@@ -1,6 +1,6 @@
 /** chunk id: 247165, original params: e,t,a (module,exports,require) **/
 a.d(t, {
-    A: () => b
+    A: () => v
 }), a(938796);
 var n = a(627968),
     i = a(64700),
@@ -19,14 +19,14 @@ var n = a(627968),
     x = a(435220),
     A = a(652215),
     C = a(985018),
-    v = a(70345);
+    b = a(70345);
 
-function b(e) {
+function v(e) {
     let {
         application: t
     } = e;
     return (0, n.jsxs)("div", {
-        className: v.ZM,
+        className: b.ZM,
         children: [(0, n.jsx)(f, {
             application: t
         }), (0, n.jsx)(I, {
@@ -43,14 +43,14 @@ function f(e) {
         otps: i
     } = (0, d.C)(t.id);
     return (0, n.jsxs)("div", {
-        className: v.ZM,
+        className: b.ZM,
         children: [a.length > 0 && (0, n.jsxs)("div", {
-            className: v.dD,
+            className: b.dD,
             children: [(0, n.jsx)(h.A, {
                 subscriptions: a,
                 color: "text-strong"
             }), (0, n.jsx)("div", {
-                className: v.ZE,
+                className: b.ZE,
                 children: a.map(e => {
                     let a = (0, m.bg)(e.skuFlags) ? "user" : "guild";
                     return (0, n.jsx)(u.B4, {
@@ -62,13 +62,13 @@ function f(e) {
                 })
             })]
         }), i.length > 0 && (0, n.jsxs)("div", {
-            className: v.dD,
+            className: b.dD,
             children: [(0, n.jsx)(s.DZT, {
                 variant: "heading-lg/semibold",
                 color: "text-strong",
                 children: C.intl.string(C.t.yUGTs8)
             }), (0, n.jsx)("div", {
-                className: v.ZE,
+                className: b.ZE,
                 children: i.map(e => (0, n.jsx)(u.B8, {
                     skuId: e.skuId,
                     appId: t.id,
@@ -150,7 +150,7 @@ function I(e) {
         children: e
     });
     return (0, n.jsx)("div", {
-        className: v.V6,
+        className: b.V6,
         children: (0, n.jsx)(s.EYj, {
             color: "text-strong",
             variant: "text-sm/normal",

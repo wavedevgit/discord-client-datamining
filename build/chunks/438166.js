@@ -1,24 +1,24 @@
-/** chunk id: 438166, original params: e,t,n (module,exports,require) **/
+/** chunk id: 438166, original params: e,t,s (module,exports,require) **/
 "use strict";
-n.d(t, {
+s.d(t, {
     A: () => i
 });
-var s = n(627968),
-    l = n(397927),
-    r = n(985018),
-    a = n(620312);
+var n = s(627968),
+    l = s(397927),
+    r = s(985018),
+    a = s(620312);
 
 function i() {
-    return (0, s.jsxs)("div", {
+    return (0, n.jsxs)("div", {
         className: a.k,
-        children: [(0, s.jsx)("img", {
+        children: [(0, n.jsx)("img", {
             src: "https://cdn.discordapp.com/assets/content/a72233587aaf964fc327663677974641a235719ad6445da58f931094cb799f66.png",
             alt: r.intl.string(r.t.oezC3x),
             className: a._
-        }), (0, s.jsx)(l.Heading, {
+        }), (0, n.jsx)(l.Heading, {
             variant: "heading-xl/semibold",
             children: r.intl.string(r.t.oezC3x)
-        }), (0, s.jsx)(l.Text, {
+        }), (0, n.jsx)(l.Text, {
             variant: "text-md/medium",
             children: r.intl.string(r.t["Tc/Ndl"])
         })]

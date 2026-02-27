@@ -1,24 +1,24 @@
-/** chunk id: 120286, original params: e,t,n (module,exports,require) **/
+/** chunk id: 120286, original params: e,t,s (module,exports,require) **/
 "use strict";
-n.d(t, {
+s.d(t, {
     k: () => _
 });
-var s = n(627968),
-    l = n(64700),
-    r = n(503698),
-    a = n.n(r),
-    i = n(397927),
-    o = n(496431),
-    c = n(854818),
-    d = n(985018),
-    u = n(587496);
+var n = s(627968),
+    l = s(64700),
+    r = s(503698),
+    a = s.n(r),
+    i = s(397927),
+    o = s(496431),
+    c = s(854818),
+    d = s(985018),
+    u = s(587496);
 let g = {
         pink: "pinkCountdown"
     },
     _ = l.memo(function(e) {
         let {
             message: t,
-            onClick: n,
+            onClick: s,
             countdownEndDate: r,
             variant: _
         } = e, m = l.useMemo(() => {
@@ -29,18 +29,18 @@ let g = {
         if (null != m && Object.values(h).every(e => 0 === e)) return null;
         let p = null != _ ? u[_] : void 0,
             f = null != _ ? u[g[_]] : void 0;
-        return (0, s.jsx)(i.DUT, {
+        return (0, n.jsx)(i.DUT, {
             className: a()(u.nagBar, p),
-            onClick: n,
+            onClick: s,
             "aria-label": d.intl.string(d.t["wjws+K"]),
-            children: (0, s.jsxs)("div", {
+            children: (0, n.jsxs)("div", {
                 className: u.content,
-                children: [(0, s.jsx)(i.Text, {
+                children: [(0, n.jsx)(i.Text, {
                     variant: "text-md/medium",
                     color: "always-white",
                     className: u.message,
                     children: t
-                }), null != m && (0, s.jsx)(c.e, {
+                }), null != m && (0, n.jsx)(c.e, {
                     endDate: m,
                     size: "md",
                     className: f,

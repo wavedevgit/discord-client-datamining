@@ -19,8 +19,8 @@ var n = a(627968),
     x = a(961350),
     A = a(287809),
     C = a(954571),
-    v = a(354138),
-    b = a(416730),
+    b = a(354138),
+    v = a(416730),
     f = a(212534),
     j = a(38181),
     I = a(767599),
@@ -157,9 +157,9 @@ let H = function() {
             })
         }
     }, [et, ee, ea?.id]), i.useEffect(() => {
-        v.bW()
+        b.bW()
     }, []), i.useEffect(() => {
-        P && v.wD()
+        P && b.wD()
     }, [P]), i.useEffect(() => y.tS.setState({
         lastItem: f
     }), [f]);
@@ -173,7 +173,7 @@ let H = function() {
         } = (0, S.v)({
             initialQuery: Y ?? ""
         }),
-        ec = b.A.useField("searchBarState"),
+        ec = v.A.useField("searchBarState"),
         {
             onTabsAvailableWidthChange: ed,
             onCollapsedSearchBarClick: eu,
@@ -182,7 +182,7 @@ let H = function() {
             isSearchBarVisible: !0,
             isSearchBarEmpty: "" === es.trim(),
             searchBarState: ec,
-            setSearchBarState: e => b.A.setState({
+            setSearchBarState: e => v.A.setState({
                 searchBarState: e
             })
         }),

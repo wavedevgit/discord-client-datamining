@@ -1,29 +1,29 @@
-/** chunk id: 685533, original params: e,t,n (module,exports,require) **/
+/** chunk id: 685533, original params: e,t,s (module,exports,require) **/
 "use strict";
-n.d(t, {
+s.d(t, {
     A: () => L
 });
-var s = n(627968),
-    l = n(64700),
-    r = n(503698),
-    a = n.n(r),
-    i = n(417597),
-    o = n(397927),
-    c = n(287809),
-    d = n(954571),
-    u = n(440938),
-    g = n(590180),
-    _ = n(511265),
-    m = n(365491),
-    h = n(856686),
-    p = n(100057),
-    f = n(751304),
-    x = n(561769),
-    E = n(484469),
-    C = n(998694),
-    A = n(438166),
-    b = n(652215),
-    S = n(695865);
+var n = s(627968),
+    l = s(64700),
+    r = s(503698),
+    a = s.n(r),
+    i = s(417597),
+    o = s(397927),
+    c = s(287809),
+    d = s(954571),
+    u = s(440938),
+    g = s(590180),
+    _ = s(511265),
+    m = s(365491),
+    h = s(856686),
+    p = s(100057),
+    f = s(751304),
+    x = s(561769),
+    E = s(484469),
+    C = s(998694),
+    A = s(438166),
+    b = s(652215),
+    S = s(695865);
 let v = {
     flattenProductVariants: !0
 };
@@ -31,7 +31,7 @@ let v = {
 function L(e) {
     let {
         isFetchingCategories: t,
-        scrollerRef: n,
+        scrollerRef: s,
         tab: r
     } = e, L = (0, u.uM)(), I = L?.sessionId ?? "", {
         noCache: j,
@@ -42,10 +42,10 @@ function L(e) {
         totalCount: y,
         isFetchingResults: R
     } = (0, h.S)(), B = (0, i.yK)([g.A], () => g.A.getProductsBySkus(O)), M = l.useCallback(() => {
-        n?.current?.scrollToTop({
+        s?.current?.scrollToTop({
             animate: !0
         })
-    }, [n]), P = O?.join("");
+    }, [s]), P = O?.join("");
     l.useEffect(() => {
         M()
     }, [P, M]);
@@ -89,31 +89,31 @@ function L(e) {
             page_type: "catalog"
         }), G((e - 1) * F)
     }, [L, F, G]);
-    return (0, s.jsxs)(x.v3.Provider, {
+    return (0, n.jsxs)(x.v3.Provider, {
         value: v,
-        children: [(0, s.jsxs)("div", {
+        children: [(0, n.jsxs)("div", {
             className: a()({
                 [S.oE]: z
             }),
-            children: [z && (0, s.jsx)(A.A, {}), (0, s.jsxs)("div", {
+            children: [z && (0, n.jsx)(A.A, {}), (0, n.jsxs)("div", {
                 className: a()(S.ZE, {
                     [S.Kp]: V
                 }),
                 ref: w,
-                children: [W && [...Array(F)].map((e, t) => (0, s.jsx)(E.A, {}, t)), !W && H.map((e, t) => null == g.A.getCategory(e.categorySkuId) ? null : (0, s.jsx)(u.R9, {
+                children: [W && [...Array(F)].map((e, t) => (0, n.jsx)(E.A, {}, t)), !W && H.map((e, t) => null == g.A.getCategory(e.categorySkuId) ? null : (0, n.jsx)(u.R9, {
                     newValue: {
                         tilePosition: t
                     },
-                    children: (0, s.jsx)(f.A, {
+                    children: (0, n.jsx)(f.A, {
                         skuId: e.skuId,
                         onClickAnalytics: (0, x.UU)(e, r, L)
                     }, e.skuId)
                 }, e.skuId))]
             })]
-        }), y > F && (0, s.jsx)("div", {
+        }), y > F && (0, n.jsx)("div", {
             className: S.Ej,
-            children: (0, s.jsx)("div", {
-                children: (0, s.jsx)(o.mgR, {
+            children: (0, n.jsx)("div", {
+                children: (0, n.jsx)(o.mgR, {
                     currentPage: N,
                     totalCount: y,
                     pageSize: F,

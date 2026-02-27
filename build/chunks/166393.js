@@ -19,8 +19,8 @@ var n = a(627968),
     x = a(412461),
     A = a(867333),
     C = a(487953),
-    v = a(111737),
-    b = a(652215),
+    b = a(111737),
+    v = a(652215),
     f = a(789113);
 let j = c.K.APPLICATION_DIRECTORY;
 
@@ -37,7 +37,7 @@ function I(e) {
             e && s(!0)
         });
         return i.useEffect(() => {
-            n && (0, x.TR)(b.HAw.APP_DIRECTORY_COLLECTION_VIEWED, {
+            n && (0, x.TR)(v.HAw.APP_DIRECTORY_COLLECTION_VIEWED, {
                 collection_id: t,
                 collection_position: a
             })
@@ -46,7 +46,7 @@ function I(e) {
         collectionId: t.id,
         index: a
     }), c = i.useCallback((e, n) => {
-        (0, x.TR)(b.HAw.APP_DIRECTORY_COLLECTION_ITEM_CLICKED, {
+        (0, x.TR)(v.HAw.APP_DIRECTORY_COLLECTION_ITEM_CLICKED, {
             collection_id: t.id,
             item_position: n,
             collection_position: a,
@@ -91,7 +91,7 @@ let E = function(e) {
     let r = i.useMemo(() => l?.filter(e => e.type !== u.Y.GALLERY), [l]);
     return s === g.e.ERROR ? (0, n.jsx)("div", {
         className: f.Un,
-        children: (0, n.jsx)(v.A, {
+        children: (0, n.jsx)(b.A, {
             className: f.z3
         })
     }) : (0, n.jsx)(A.A, {

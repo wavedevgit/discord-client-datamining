@@ -105,19 +105,19 @@ function p(e) {
         lastVisibleIndex: x,
         onItemLayout: A,
         overflowItemsRef: C,
-        itemWidthsRef: v
+        itemWidthsRef: b
     } = (0, r.Wv)({
         items: s,
         itemGapPx: 20,
         maxLines: 1,
         containerWidth: p
-    }), b = i.useMemo(() => s.slice(0, x + 1), [x, s]), f = i.useMemo(() => s.slice(x + 1), [x, s]), j = i.useRef(null), I = i.useCallback(e => {
+    }), v = i.useMemo(() => s.slice(0, x + 1), [x, s]), f = i.useMemo(() => s.slice(x + 1), [x, s]), j = i.useRef(null), I = i.useCallback(e => {
         let t = e.contentRect.width;
         if (null == t || g.current === t) return;
         _(t), g.current = t;
-        let a = t - v.current.reduce((e, t, a) => e + t + 20 * (0 !== a));
+        let a = t - b.current.reduce((e, t, a) => e + t + 20 * (0 !== a));
         u?.(a)
-    }, [v, u]);
+    }, [b, u]);
     (0, c.g)(j, I);
     let E = 0 !== p;
     return (0, n.jsxs)("div", {
@@ -151,7 +151,7 @@ function p(e) {
             selectedItem: a,
             onItemSelect: d,
             className: h.vR,
-            children: [b.map(e => (0, n.jsx)(o.VQ0.Item, {
+            children: [v.map(e => (0, n.jsx)(o.VQ0.Item, {
                 id: e.id,
                 look: "brand",
                 "aria-label": e.label,

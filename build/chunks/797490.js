@@ -1,9 +1,9 @@
-/** chunk id: 797490, original params: e,t,n (module,exports,require) **/
+/** chunk id: 797490, original params: e,t,s (module,exports,require) **/
 "use strict";
-n.d(t, {
+s.d(t, {
     $: () => l
 });
-let s = (0, n(945810).mj)({
+let n = (0, s(945810).mj)({
         name: "2026-01-valentines-day-drop",
         kind: "user",
         defaultConfig: {
@@ -21,6 +21,6 @@ let s = (0, n(945810).mj)({
             }
         }
     }),
-    l = e => s.useConfig({
+    l = e => n.useConfig({
         location: e
     }).enabled

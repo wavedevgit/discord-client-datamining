@@ -19,9 +19,9 @@ let m = function(e) {
         showCategory: m = !1
     } = e, p = i.useRef(null), _ = t.categories?.[0], [g, x] = i.useState(!1), A = i.useCallback(e => {
         e && x(!0)
-    }, []), C = (0, r.NO)(t), v = i.useCallback(() => {
+    }, []), C = (0, r.NO)(t), b = i.useCallback(() => {
         a(t.id)
-    }, [a, t.id]), b = i.useMemo(() => g ? c.Ay.getApplicationIconURL({
+    }, [a, t.id]), v = i.useMemo(() => g ? c.Ay.getApplicationIconURL({
         id: t.id,
         icon: t.icon,
         size: 48
@@ -35,7 +35,7 @@ let m = function(e) {
             className: h.kL,
             children: (0, n.jsxs)(o.A, {
                 className: h.Nr,
-                onClick: v,
+                onClick: b,
                 onContextMenu: () => {},
                 "aria-label": u.intl.string(u.t.np1Wru),
                 children: [(0, n.jsxs)("div", {
@@ -49,7 +49,7 @@ let m = function(e) {
                         children: g ? (0, n.jsx)(d.A, {
                             application: t,
                             bannerType: "card",
-                            iconURL: b
+                            iconURL: v
                         }) : null
                     }), (0, n.jsx)("div", {
                         className: h.H,
@@ -57,7 +57,7 @@ let m = function(e) {
                             height: 28
                         },
                         children: g ? (0, n.jsx)("img", {
-                            src: b,
+                            src: v,
                             alt: "",
                             className: h.my,
                             height: 48,

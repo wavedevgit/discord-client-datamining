@@ -1,6 +1,6 @@
 /** chunk id: 323933, original params: e,t,a (module,exports,require) **/
 a.d(t, {
-    A: () => v
+    A: () => b
 });
 var n = a(627968),
     i = a(64700),
@@ -181,9 +181,9 @@ class C extends i.PureComponent {
             includeHitboxPadding: _,
             style: x,
             aspectRatio: C,
-            children: v
+            children: b
         } = this.props, {
-            visibleIndex: b
+            visibleIndex: v
         } = this.state;
         return (0, n.jsxs)("div", {
             className: g.zr,
@@ -198,17 +198,17 @@ class C extends i.PureComponent {
                     },
                     children: (0, n.jsx)(h.A, {
                         className: l()(g.Dk, i),
-                        step: b,
+                        step: v,
                         direction: this.getCurrentDirection(),
                         springSettings: s,
                         fadeInOut: r,
-                        children: t(e[b], b)
+                        children: t(e[v], v)
                     })
                 }), e.length > 1 && (0, n.jsx)(A, {
                     className: l()(o, p ? g.S$ : g.X$),
                     arrowClassName: c,
                     includeHitboxPadding: _,
-                    current: b,
+                    current: v,
                     count: e.length,
                     onChangePage: t => this.changeItem(e, t),
                     onSetItem: this.handleSetItem,
@@ -217,8 +217,8 @@ class C extends i.PureComponent {
                     paginationDotClassName: u,
                     paginationDotSelectedClassName: m
                 })]
-            }), null != v && v({
-                step: b,
+            }), null != b && b({
+                step: v,
                 direction: this.getCurrentDirection()
             })]
         })
@@ -249,4 +249,4 @@ class C extends i.PureComponent {
         return i?.(n[t], e, t, a)
     }
 }
-let v = C
+let b = C

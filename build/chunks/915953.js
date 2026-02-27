@@ -20,34 +20,35 @@ function r(e) {
         useSubtitle: _,
         useHintText: m,
         useDisabled: A,
-        onValueRender: g,
-        asValueChanges: h,
-        markers: x,
-        onMarkerRender: p,
-        stickToMarkers: E,
-        fieldLayout: C
-    } = t, [T] = s.useState(() => r()), S = u(), I = _?.(), f = m?.(), N = A?.(), b = d?.();
+        useExternalValue: g,
+        onValueRender: h,
+        asValueChanges: x,
+        markers: p,
+        onMarkerRender: E,
+        stickToMarkers: C,
+        fieldLayout: T
+    } = t, [S] = s.useState(() => r()), I = g?.(), f = u(), N = _?.(), b = m?.(), j = A?.(), v = d?.();
     return (0, i.jsxs)(l.L, {
         children: [(0, i.jsx)(a.Apm, {
-            label: S,
-            description: I,
-            disabled: N,
-            initialValue: T,
+            label: f,
+            description: N,
+            disabled: j,
+            initialValue: I ?? S,
             minValue: o,
             maxValue: c,
-            defaultValue: b,
-            onValueRender: g,
-            asValueChanges: h,
+            defaultValue: v,
+            onValueRender: h,
+            asValueChanges: x,
             onValueChange: n,
             orientation: "horizontal",
-            markers: x,
-            onMarkerRender: p,
-            stickToMarkers: E,
-            layout: C
-        }), null != f && (0, i.jsx)(a.Text, {
+            markers: p,
+            onMarkerRender: E,
+            stickToMarkers: C,
+            layout: T
+        }), null != b && (0, i.jsx)(a.Text, {
             variant: "text-xs/normal",
             color: "text-muted",
-            children: f
+            children: b
         })]
     })
 }

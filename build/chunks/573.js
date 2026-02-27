@@ -1,6 +1,6 @@
 /** chunk id: 573, original params: e,t,a (module,exports,require) **/
 a.d(t, {
-    A: () => b
+    A: () => v
 });
 var n = a(627968),
     i = a(64700),
@@ -19,16 +19,16 @@ var n = a(627968),
     x = a(435220),
     A = a(652215),
     C = a(689917);
-let v = {
+let b = {
         results: [],
         totalPages: 0,
         loadId: ""
     },
-    b = function(e) {
+    v = function(e) {
         let {
             categoryId: t,
             onSelectApplication: a,
-            resetScroll: b
+            resetScroll: v
         } = e, [f, j] = i.useState(1), I = i.useCallback(e => {
             j(e)
         }, []);
@@ -47,8 +47,8 @@ let v = {
                 pageSize: x.PAGE_SIZE,
                 categoryId: t
             })),
-            N = (0, l.cf)([u.A], () => u.A.getSearchResults(E) ?? v),
-            y = (0, o.A)(N) ?? v,
+            N = (0, l.cf)([u.A], () => u.A.getSearchResults(E) ?? b),
+            y = (0, o.A)(N) ?? b,
             {
                 results: T,
                 totalPages: R,
@@ -78,12 +78,12 @@ let v = {
                 })
             }, []);
         i.useEffect(() => {
-            b(), D({
+            v(), D({
                 page: f,
                 activeCategoryId: t,
                 onSuccessCallback: () => {}
             })
-        }, [t, b, D, f]);
+        }, [t, v, D, f]);
         let O = i.useCallback((e, t) => {
             (0, h.TR)(A.HAw.APP_DIRECTORY_SEARCH_RESULT_CLICKED, {
                 current_page: g.ev.SEARCH,

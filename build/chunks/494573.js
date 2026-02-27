@@ -1,11 +1,11 @@
 /** chunk id: 494573, original params: e,t,s (module,exports,require) **/
 s.d(t, {
-    A: () => O
+    A: () => y
 });
 var r = s(627968),
     l = s(64700),
-    n = s(503698),
-    a = s.n(n),
+    a = s(503698),
+    n = s.n(a),
     o = s(3666),
     i = s(397927),
     c = s(770178),
@@ -16,56 +16,55 @@ var r = s(627968),
     E = s(397309),
     S = s(190294),
     f = s(758836),
-    m = s(985018),
-    h = s(78716),
-    A = s(525037);
+    A = s(985018),
+    h = s(525037);
 
-function C(e) {
+function m(e) {
     let {
         tab: t,
         label: s,
         selected: l,
-        handleTransition: n,
+        handleTransition: a,
         hasSubmenu: o,
         showNewBadge: c
     } = e;
-    return o ? (0, r.jsx)(T, {
+    return o ? (0, r.jsx)(C, {
         tab: t,
         label: s,
         selected: l,
-        handleTransition: n
+        handleTransition: a
     }) : (0, r.jsxs)(b.A.Title, {
-        onClick: () => n(t),
-        wrapperClassName: A.Vn,
-        className: a()(A.Mf, {
-            [A.wH]: l
+        onClick: () => a(t),
+        wrapperClassName: h.Vn,
+        className: n()(h.Mf, {
+            [h.wH]: l
         }),
         children: [s, c && (0, r.jsx)(i.LpS, {
-            text: m.intl.string(m.t.y2b7CA),
+            text: A.intl.string(A.t.y2b7CA),
             className: h.Ad
         })]
     })
 }
 
-function T(e) {
+function C(e) {
     let {
         tab: t,
         label: s,
-        selected: n,
+        selected: a,
         handleTransition: o
     } = e, c = l.useRef(null), S = l.useRef(!1), {
         isHovered: f,
-        setIsHovered: m,
-        onMouseEnter: h,
+        setIsHovered: A,
+        onMouseEnter: m,
         onMouseLeave: C,
         cancelTimers: T
     } = (0, p.A)(100, 100), g = e => {
-        ("Enter" === e.key || " " === e.key) && (e.preventDefault(), T(), m(!0), S.current = d.A.keyboardModeEnabled)
+        ("Enter" === e.key || " " === e.key) && (e.preventDefault(), T(), A(!0), S.current = d.A.keyboardModeEnabled)
     }, y = l.useCallback(() => {
-        S.current = d.A.keyboardModeEnabled, h()
-    }, [h]);
+        S.current = d.A.keyboardModeEnabled, m()
+    }, [m]);
     return (0, r.jsx)("div", {
-        className: A.iV,
+        className: h.iV,
         onMouseEnter: y,
         onMouseLeave: C,
         children: (0, r.jsx)(i.YNO, {
@@ -74,17 +73,17 @@ function T(e) {
             position: "bottom",
             align: "left",
             onRequestOpen: () => {
-                T(), m(!0), S.current = d.A.keyboardModeEnabled
+                T(), A(!0), S.current = d.A.keyboardModeEnabled
             },
             onRequestClose: () => {
-                S.current && !d.A.keyboardModeEnabled && (0, u.uS)(), m(!1), c.current?.focus()
+                S.current && !d.A.keyboardModeEnabled && (0, u.uS)(), A(!1), c.current?.focus()
             },
             renderPopout: e => {
                 let {
                     closePopout: t
                 } = e;
                 return (0, r.jsx)("div", {
-                    onMouseEnter: h,
+                    onMouseEnter: m,
                     onMouseLeave: C,
                     children: (0, r.jsx)(E.A, {
                         handleTransition: o,
@@ -101,12 +100,12 @@ function T(e) {
                     ref: c,
                     onClick: () => o(t),
                     onKeyDown: g,
-                    wrapperClassName: A.Vn,
-                    className: a()(A.Mf, {
-                        [A.wH]: n
+                    wrapperClassName: h.Vn,
+                    className: n()(h.Mf, {
+                        [h.wH]: a
                     }),
                     children: (0, r.jsxs)("span", {
-                        className: A.hP,
+                        className: h.hP,
                         children: [s, (0, r.jsx)(d, {
                             size: "sm",
                             color: "currentColor"
@@ -118,25 +117,25 @@ function T(e) {
     })
 }
 
-function g(e) {
+function T(e) {
     let {
         onTabSelect: t,
         tabs: s,
-        selectedTab: n,
+        selectedTab: a,
         selected: o
     } = e, c = l.useRef(null), E = l.useRef(!1), {
         isHovered: f,
-        setIsHovered: h,
+        setIsHovered: m,
         onMouseEnter: C,
         onMouseLeave: T,
         cancelTimers: g
     } = (0, p.A)(100, 100), y = e => {
-        ("Enter" === e.key || " " === e.key) && (e.preventDefault(), g(), h(!0), E.current = d.A.keyboardModeEnabled)
+        ("Enter" === e.key || " " === e.key) && (e.preventDefault(), g(), m(!0), E.current = d.A.keyboardModeEnabled)
     }, O = l.useCallback(() => {
         E.current = d.A.keyboardModeEnabled, C()
     }, [C]);
     return (0, r.jsx)("div", {
-        className: A.iV,
+        className: h.iV,
         onMouseEnter: O,
         onMouseLeave: T,
         children: (0, r.jsx)(i.YNO, {
@@ -145,10 +144,10 @@ function g(e) {
             position: "bottom",
             align: "left",
             onRequestOpen: () => {
-                g(), h(!0), E.current = d.A.keyboardModeEnabled
+                g(), m(!0), E.current = d.A.keyboardModeEnabled
             },
             onRequestClose: () => {
-                E.current && !d.A.keyboardModeEnabled && (0, u.uS)(), h(!1), c.current?.focus()
+                E.current && !d.A.keyboardModeEnabled && (0, u.uS)(), m(!1), c.current?.focus()
             },
             renderPopout: e => {
                 let {
@@ -158,7 +157,7 @@ function g(e) {
                     onMouseEnter: C,
                     onMouseLeave: T,
                     children: (0, r.jsx)(S.A, {
-                        selectedTab: n,
+                        selectedTab: a,
                         onClose: l,
                         tabs: s,
                         onTabSelect: t
@@ -173,14 +172,14 @@ function g(e) {
                     ...e,
                     ref: c,
                     onKeyDown: y,
-                    wrapperClassName: A.Vn,
-                    className: a()(A.Mf, A.OS, {
-                        [A.wH]: o
+                    wrapperClassName: h.Vn,
+                    className: n()(h.Mf, h.OS, {
+                        [h.wH]: o
                     }),
-                    "aria-label": m.intl.string(m.t["UKOtz+"]),
+                    "aria-label": A.intl.string(A.t["UKOtz+"]),
                     children: (0, r.jsxs)("span", {
-                        className: A.hP,
-                        children: [m.intl.string(m.t["UKOtz+"]), (0, r.jsx)(l, {
+                        className: h.hP,
+                        children: [A.intl.string(A.t["UKOtz+"]), (0, r.jsx)(l, {
                             size: "xs"
                         })]
                     })
@@ -190,69 +189,69 @@ function g(e) {
     })
 }
 
-function y(e, t, s) {
+function g(e, t, s) {
     return e === s || (t.hasSubmenu ?? !1) && (0, f.dF)(s) && e === f.G2.CATALOG
 }
 
-function O(e) {
+function y(e) {
     let {
         className: t,
         selectedTab: s,
-        tabs: n,
+        tabs: a,
         onTabSelect: i
     } = e, [u, d] = l.useState(0), b = l.useRef(u), {
         lastVisibleIndex: p,
         onItemLayout: E,
         overflowItemsRef: S
     } = (0, o.Wv)({
-        items: n,
+        items: a,
         itemGapPx: 24,
         maxLines: 1,
         containerWidth: u
-    }), f = l.useMemo(() => n.slice(0, p + 1), [p, n]), m = l.useMemo(() => n.slice(p + 1), [p, n]), h = l.useRef(null), T = l.useCallback(e => {
+    }), f = l.useMemo(() => a.slice(0, p + 1), [p, a]), A = l.useMemo(() => a.slice(p + 1), [p, a]), C = l.useRef(null), y = l.useCallback(e => {
         let t = e.contentRect.width;
         null != t && b.current !== t && (d(t), b.current = t)
     }, []);
-    (0, c.g)(h, T);
+    (0, c.g)(C, y);
     let O = 0 !== u,
-        x = m.some(e => y(e.tab, e, s));
+        L = A.some(e => g(e.tab, e, s));
     return (0, r.jsxs)("div", {
-        className: a()(A.kL, t),
-        ref: h,
+        className: n()(h.kL, t),
+        ref: C,
         children: [(0, r.jsxs)("div", {
-            className: A.Kk,
-            children: [n.map((e, t) => (0, r.jsx)(o.Ae, {
+            className: h.Kk,
+            children: [a.map((e, t) => (0, r.jsx)(o.Ae, {
                 index: t,
                 onItemLayout: E,
-                children: (0, r.jsx)(C, {
+                children: (0, r.jsx)(m, {
                     tab: e.tab,
                     label: e.label,
-                    selected: y(e.tab, e, s),
+                    selected: g(e.tab, e, s),
                     handleTransition: i,
                     hasSubmenu: e.hasSubmenu ?? !1
                 })
             }, e.tab)), (0, r.jsx)("div", {
                 ref: S,
-                children: (0, r.jsx)(g, {
-                    tabs: m,
+                children: (0, r.jsx)(T, {
+                    tabs: A,
                     onTabSelect: i,
                     selectedTab: s,
-                    selected: x
+                    selected: L
                 })
             })]
         }), O && (0, r.jsxs)("div", {
-            className: A.vR,
-            children: [f.map(e => (0, r.jsx)(C, {
+            className: h.vR,
+            children: [f.map(e => (0, r.jsx)(m, {
                 tab: e.tab,
                 label: e.label,
-                selected: y(e.tab, e, s),
+                selected: g(e.tab, e, s),
                 handleTransition: i,
                 hasSubmenu: e.hasSubmenu ?? !1
-            }, e.tab)), 0 !== m.length ? (0, r.jsx)(g, {
-                tabs: m,
+            }, e.tab)), 0 !== A.length ? (0, r.jsx)(T, {
+                tabs: A,
                 onTabSelect: i,
                 selectedTab: s,
-                selected: x
+                selected: L
             }) : null]
         })]
     })

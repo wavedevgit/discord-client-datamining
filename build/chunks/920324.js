@@ -132,9 +132,25 @@ let u = {
                     }, {
                         block: "Section",
                         children: [{
-                            block: "ContainedHero",
-                            bannerSrc: "https://cdn.discordapp.com/assets/content/1a68031e600ecb954fd6ea9d28ab0c0544457623f7a2c0f2b9137569c32800e8",
-                            backgroundColor: "black"
+                            block: "BackgroundImage",
+                            backgroundImage: "https://cdn.discordapp.com/assets/content/1a68031e600ecb954fd6ea9d28ab0c0544457623f7a2c0f2b9137569c32800e8",
+                            children: [{
+                                block: "Grid",
+                                columns: 2,
+                                children: [{
+                                    block: "Stack",
+                                    direction: "vertical",
+                                    children: [{
+                                        block: "Heading",
+                                        variant: "heading-xxl/bold",
+                                        content: "What can I get with orbs?"
+                                    }, {
+                                        block: "Text",
+                                        variant: "text-md/normal",
+                                        content: "Spend Orbs on exclusives or grab your favorites from the shop"
+                                    }]
+                                }]
+                            }]
                         }]
                     }, {
                         block: "Section",

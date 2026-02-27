@@ -1,26 +1,26 @@
-/** chunk id: 392183, original params: e,t,n (module,exports,require) **/
+/** chunk id: 392183, original params: e,t,s (module,exports,require) **/
 "use strict";
-n.d(t, {
+s.d(t, {
     A: () => d
 });
-var s = n(627968);
-n(64700);
-var l = n(503698),
-    r = n.n(l),
-    a = n(484469),
-    i = n(68763),
-    o = n(157884),
-    c = n(564951);
-let d = () => (0, s.jsx)("div", {
+var n = s(627968);
+s(64700);
+var l = s(503698),
+    r = s.n(l),
+    a = s(484469),
+    i = s(68763),
+    o = s(157884),
+    c = s(564951);
+let d = () => (0, n.jsx)("div", {
     className: c.A,
     children: Array.from({
         length: 3
-    }).map((e, t) => (0, s.jsxs)("div", {
+    }).map((e, t) => (0, n.jsxs)("div", {
         className: o.vY,
-        children: [(0, s.jsx)("div", {
+        children: [(0, n.jsx)("div", {
             className: r()(i.sW, c.s)
         }), Array.from({
             length: 12
-        }, (e, t) => (0, s.jsx)(a.A, {}, t))]
+        }, (e, t) => (0, n.jsx)(a.A, {}, t))]
     }, t))
 })

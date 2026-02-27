@@ -19,8 +19,8 @@ var n = a(627968),
     x = a(38181),
     A = a(651753),
     C = a(767599),
-    v = a(412461),
-    b = a(867333),
+    b = a(412461),
+    v = a(867333),
     f = a(487953),
     j = a(310419),
     I = a(656106),
@@ -48,7 +48,7 @@ function R(e) {
             categoryId: Number(e.get("category_id")) ?? N.GLOBAL_DISCOVERY_APPS_FEATURED_CATEGORY_ID
         }
     }, [P.search]), G = (0, o.bG)([x.A], () => x.A.getCategories()), U = i.useMemo(() => G?.find(e => e.id === M), [G, M]), w = i.useCallback(e => {
-        (0, v.TR)(y.HAw.APP_DIRECTORY_SEARCHED, {
+        (0, b.TR)(y.HAw.APP_DIRECTORY_SEARCHED, {
             search_term: O,
             num_results: e,
             current_page: j.ev.SEARCH,
@@ -110,7 +110,7 @@ function R(e) {
             page: e
         })
     }, [M, O]), X = i.useCallback(e => {
-        (0, v.TR)(y.HAw.APP_DIRECTORY_CATEGORY_CLICKED, {
+        (0, b.TR)(y.HAw.APP_DIRECTORY_CATEGORY_CLICKED, {
             category: e.name,
             category_id: e.id,
             current_page: j.ev.SEARCH
@@ -119,7 +119,7 @@ function R(e) {
             categoryId: e.id
         })
     }, [O]), W = i.useCallback((e, a) => {
-        (0, v.TR)(y.HAw.APP_DIRECTORY_SEARCH_RESULT_CLICKED, {
+        (0, b.TR)(y.HAw.APP_DIRECTORY_SEARCH_RESULT_CLICKED, {
             current_page: j.ev.SEARCH,
             application_id: e,
             load_id: Y?.loadId,
@@ -146,7 +146,7 @@ function R(e) {
                                 selectedCategoryId: M,
                                 onSelectCategory: X
                             })
-                        }), (0, n.jsx)(b.A, {
+                        }), (0, n.jsx)(v.A, {
                             loading: V === g.e.FETCHING,
                             children: V === g.e.FETCHED && (null == Y || Y?.results.length === 0) ? (0, n.jsx)(S.A, {
                                 selectedCategoryId: M ?? K.id,

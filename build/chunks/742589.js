@@ -1,7 +1,7 @@
 /** chunk id: 742589, original params: e,t,i (module,exports,require) **/
 i.d(t, {
     A: () => m,
-    I: () => g
+    I: () => A
 });
 var n = i(627968);
 i(64700);
@@ -16,14 +16,14 @@ var r = i(607399),
     h = i(58736),
     C = i(746080),
     E = i(892513);
-async function g(e) {
+async function A(e) {
     if (!e && (0, d.isMac)() && d.isPlatformEmbedded) {
         let e = await window.DiscordNative.remoteApp.getDefaultDoubleClickAction?.() ?? "Maximize";
         "Minimize" === e ? u.Ay.minimize() : "Maximize" === e && u.Ay.maximize()
     }
 }
 
-function A(e) {
+function g(e) {
     let {
         children: t,
         className: i,
@@ -31,7 +31,7 @@ function A(e) {
         guildId: a,
         innerClassname: d,
         transparent: u = !1,
-        hidden: A = !1,
+        hidden: g = !1,
         toolbar: _,
         mobileToolbar: p,
         "aria-label": m,
@@ -40,9 +40,9 @@ function A(e) {
         role: f,
         hideSearch: I,
         showDivider: T,
-        disableDoubleClick: S
+        disableDoubleClick: R
     } = e, {
-        enabled: R,
+        enabled: S,
         inInbox: v
     } = s.A.useExperiment({
         location: "HeaderBar"
@@ -58,12 +58,12 @@ function A(e) {
                     guildId: a,
                     channelId: l,
                     className: E.$P
-                }, a ?? l) : null, T && (0, n.jsx)(h.Ay.Divider, {}), R && !v ? (0, n.jsx)(o.A, {}) : null]
+                }, a ?? l) : null, T && (0, n.jsx)(h.Ay.Divider, {}), S && !v ? (0, n.jsx)(o.A, {}) : null]
             })
         }(),
         transparent: u,
-        hidden: A,
-        onDoubleClick: () => g(S),
+        hidden: g,
+        onDoubleClick: () => A(R),
         "aria-label": m,
         "aria-labelledby": L,
         role: f,
@@ -83,7 +83,7 @@ function _(e) {
     } = e;
     return (0, n.jsx)(h.Ay, {
         className: i,
-        onDoubleClick: () => g(s),
+        onDoubleClick: () => A(s),
         "aria-label": r,
         "aria-labelledby": l,
         role: a,
@@ -100,7 +100,7 @@ function p(e) {
     } = (0, a.Ay)(l.A.HEADER_BAR);
     return (0, n.jsx)(a.f5, {
         value: r,
-        children: t ? (0, n.jsx)(A, {
+        children: t ? (0, n.jsx)(g, {
             ...i,
             className: i.className
         }) : (0, n.jsx)(_, {

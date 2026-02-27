@@ -90,19 +90,19 @@ function x(e) {
         lastVisibleIndex: x,
         onItemLayout: A,
         overflowItemsRef: C,
-        itemWidthsRef: v
+        itemWidthsRef: b
     } = (0, r.Wv)({
         items: s,
         itemGapPx: 24,
         maxLines: 1,
         containerWidth: u
-    }), b = i.useMemo(() => s.slice(0, x + 1), [x, s]), f = i.useMemo(() => s.slice(x + 1), [x, s]), j = i.useRef(null), I = i.useCallback(e => {
+    }), v = i.useMemo(() => s.slice(0, x + 1), [x, s]), f = i.useMemo(() => s.slice(x + 1), [x, s]), j = i.useRef(null), I = i.useCallback(e => {
         let t = e.contentRect.width;
         if (null == t || m.current === t) return;
         h(t), m.current = t;
-        let a = t - v.current.reduce((e, t, a) => e + t + 24 * (0 !== a));
+        let a = t - b.current.reduce((e, t, a) => e + t + 24 * (0 !== a));
         d?.(a)
-    }, [v, d]);
+    }, [b, d]);
     (0, c.g)(j, I);
     let E = 0 !== u,
         S = f.some(e => e.id === a);
@@ -131,7 +131,7 @@ function x(e) {
             })]
         }), E && (0, n.jsxs)("div", {
             className: p.vR,
-            children: [b.map(e => (0, n.jsx)(_, {
+            children: [v.map(e => (0, n.jsx)(_, {
                 id: e.id,
                 label: e.label,
                 selected: a === e.id,

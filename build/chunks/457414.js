@@ -1,46 +1,46 @@
-/** chunk id: 457414, original params: e,t,n (module,exports,require) **/
+/** chunk id: 457414, original params: e,t,s (module,exports,require) **/
 "use strict";
-n.d(t, {
+s.d(t, {
     A: () => u
 });
-var s = n(627968);
-n(64700);
-var l = n(172218),
-    r = n(397927),
-    a = n(854818),
-    i = n(212407),
-    o = n(815280),
-    c = n(985018),
-    d = n(922868);
+var n = s(627968);
+s(64700);
+var l = s(172218),
+    r = s(397927),
+    a = s(854818),
+    i = s(212407),
+    o = s(815280),
+    c = s(985018),
+    d = s(922868);
 let u = e => {
     let {
         immersiveBannerBlock: t,
-        onVisibilityChange: n
+        onVisibilityChange: s
     } = e, u = (0, l.K)(e => {
-        n?.(e)
-    }, .33, null != n), {
+        s?.(e)
+    }, .33, null != s), {
         bannerUrl: g,
         bannerAnimatedUrl: _
     } = (0, i.qY)(t), m = null != t.textColor ? {
         color: t.textColor
     } : void 0, h = null != t.body && "" !== t.body, p = null != t.helpCenterUrl && "" !== t.helpCenterUrl;
-    return (0, s.jsxs)("div", {
+    return (0, n.jsxs)("div", {
         ref: u,
         className: d.BX,
-        children: [(0, s.jsx)("div", {
+        children: [(0, n.jsx)("div", {
             className: d.vK,
-            children: null != g && (0, s.jsx)(o.A, {
+            children: null != g && (0, n.jsx)(o.A, {
                 bannerStatic: g,
                 bannerAnimated: _
             })
-        }), (0, s.jsx)("div", {
+        }), (0, n.jsx)("div", {
             className: d.HQ,
-            children: (0, s.jsxs)("div", {
+            children: (0, n.jsxs)("div", {
                 className: d.Yn,
-                children: [null != t.endTime ? (0, s.jsx)(a.e, {
+                children: [null != t.endTime ? (0, n.jsx)(a.e, {
                     endDate: t.endTime,
                     size: "lg"
-                }) : null, (0, s.jsx)(r.Heading, {
+                }) : null, (0, n.jsx)(r.Heading, {
                     variant: "heading-xxl/bold",
                     className: d.DD,
                     color: "text-strong",
@@ -48,12 +48,12 @@ let u = e => {
                         ...m
                     },
                     children: t.title
-                }), h || p ? (0, s.jsxs)(r.Text, {
+                }), h || p ? (0, n.jsxs)(r.Text, {
                     variant: "text-md/medium",
                     style: {
                         ...m
                     },
-                    children: [h && t.body, h && p && " ", p && (0, s.jsx)(r.MzZ, {
+                    children: [h && t.body, h && p && " ", p && (0, n.jsx)(r.MzZ, {
                         href: t.helpCenterUrl,
                         className: d.CU,
                         style: {
