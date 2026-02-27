@@ -10,15 +10,15 @@ var s = i(627968),
     d = i(71393),
     c = i(967198),
     u = i(743790),
-    m = i(960016);
+    o = i(960016);
 
-function o(e) {
+function m(e) {
     let {
         children: t,
         iconSize: i
     } = e;
     return (0, s.jsx)(r.Ay, {
-        className: m.Iu,
+        className: o.Iu,
         mask: r.Ay.Masks.SQUIRCLE,
         width: i + 5,
         height: i + 5,
@@ -49,17 +49,17 @@ function x(e) {
         }
     }, [j, x]);
     return (0, s.jsxs)("div", {
-        className: m.WM,
-        children: [f.map(e => (0, s.jsx)(o, {
+        className: o.WM,
+        children: [f.map(e => (0, s.jsx)(m, {
             iconSize: i,
             children: (0, s.jsx)(u.$, {
                 guild: e,
                 size: i
             })
-        }, e.id)), I > 0 && (0, s.jsx)(o, {
+        }, e.id)), I > 0 && (0, s.jsx)(m, {
             iconSize: i,
             children: (0, s.jsxs)(a.Text, {
-                className: m.br,
+                className: o.br,
                 color: "text-subtle",
                 variant: "text-xxs/semibold",
                 children: ["+", I]

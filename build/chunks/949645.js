@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(310953),
     r = n(473529),
     a = n(335934),
-    s = n(380335),
-    l = n(157550),
+    l = n(380335),
+    s = n(157550),
     o = n(366811),
     d = n(253932),
     _ = n(189081),
@@ -14,11 +14,11 @@ var i = n(310953),
     u = n(645959),
     A = n(403362),
     g = n(265422),
-    E = n(652215),
-    I = n(746080);
+    I = n(652215),
+    E = n(746080);
 let h = () => {
-    let e = s.A.getMessageRequestsCount() > 0 || l.A.getSpamChannelsCount() > 0;
-    return [E.BVt.FRIENDS, (0, a.HF)("navigateToChannel") ? E.BVt.ICYMI : null, _.A.hasLibraryApplication() && !d.l_.getSetting() ? E.BVt.APPLICATION_LIBRARY : null, e ? E.BVt.MESSAGE_REQUESTS : null, E.BVt.APPLICATION_STORE, E.BVt.COLLECTIBLES_SHOP, d.dm.getSetting() ? E.BVt.FAMILY_CENTER : null, E.BVt.QUEST_HOME_V2].filter(A.Vq)
+    let e = l.A.getMessageRequestsCount() > 0 || s.A.getSpamChannelsCount() > 0;
+    return [I.BVt.FRIENDS, (0, a.HF)("navigateToChannel") ? I.BVt.ICYMI : null, _.A.hasLibraryApplication() && !d.l_.getSetting() ? I.BVt.APPLICATION_LIBRARY : null, e ? I.BVt.MESSAGE_REQUESTS : null, I.BVt.APPLICATION_STORE, I.BVt.COLLECTIBLES_SHOP, d.dm.getSetting() ? I.BVt.FAMILY_CENTER : null, I.BVt.QUEST_HOME_V2].filter(A.Vq)
 };
 
 function C() {
@@ -30,19 +30,19 @@ function C() {
             channelId: i,
             path: r,
             basePath: a
-        } = o.A.getState(), s = u.default.getPrivateChannelIds(), l = __OVERLAY__ ? s : [...h(), ...s], d = (null == i ? (t = r ?? a, h().findIndex(e => t.startsWith(e))) : null != i ? l.indexOf(i) : 0) + e;
-        d >= l.length ? d = 0 : d < 0 && (d = l.length - 1);
-        let _ = l[d];
+        } = o.A.getState(), l = u.default.getPrivateChannelIds(), s = __OVERLAY__ ? l : [...h(), ...l], d = (null == i ? (t = r ?? a, h().findIndex(e => t.startsWith(e))) : null != i ? s.indexOf(i) : 0) + e;
+        d >= s.length ? d = 0 : d < 0 && (d = s.length - 1);
+        let _ = s[d];
         if (h().includes(_)) {
             let e;
-            e = c.A.getCurrentRoute(), _ === E.BVt.APPLICATION_STORE && null != e ? (0, g.a)(e) : (0, g.a)(_)
-        } else n = E.ME, (0, g.i)(n, _)
+            e = c.A.getCurrentRoute(), _ === I.BVt.APPLICATION_STORE && null != e ? (0, g.a)(e) : (0, g.a)(_)
+        } else n = I.ME, (0, g.i)(n, _)
     }(e);
     else {
-        var n, a, s;
-        let l, d;
-        l = o.A.getState().channelId, d = (0, i.A)(t, {
+        var n, a, l;
+        let s, d;
+        s = o.A.getState().channelId, d = (0, i.A)(t, {
             withCurrentVoiceChannel: !0
-        }).map(e => e.id), (0, r.K)(t) && d.unshift(I.VV.GUILD_HOME), n = (null != l ? d.indexOf(l) : -1) + e, a = d.length, s = d[n < 0 ? a - 1 : n >= a ? 0 : n], (0, g.i)(t, s)
+        }).map(e => e.id), (0, r.K)(t) && d.unshift(E.VV.GUILD_HOME), n = (null != s ? d.indexOf(s) : -1) + e, a = d.length, l = d[n < 0 ? a - 1 : n >= a ? 0 : n], (0, g.i)(t, l)
     }
 }

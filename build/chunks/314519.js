@@ -1,11 +1,11 @@
 /** chunk id: 314519, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    s: () => s
+    s: () => l
 });
 var i = n(843472),
     r = n(222823),
     a = n(309010);
-let s = {
+let l = {
     binds: ["shift+pageup"],
     comboKeysBindGlobal: !0,
     action() {

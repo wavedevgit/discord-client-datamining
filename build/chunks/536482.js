@@ -1,6 +1,6 @@
 /** chunk id: 536482, original params: e,t,n (module,exports,require) **/
 n.r(t), n.d(t, {
-    default: () => s,
+    default: () => l,
     messagesLoader: () => r
 });
 let {
@@ -39,4 +39,4 @@ let {
     "en-US": () => n.e("16904").then(n.bind(n, 167163))
 }, "en-US"), {
     makeMessagesProxy: a
-} = n(932433), s = a(r)
+} = n(932433), l = a(r)
