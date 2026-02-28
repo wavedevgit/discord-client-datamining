@@ -40,8 +40,8 @@ var i = n(627968),
     P = n(652896),
     w = n(279250),
     k = n(418126),
-    B = n(266626),
-    V = n(267102),
+    V = n(266626),
+    B = n(267102),
     H = n(574172),
     F = n(869146),
     K = n(976860),
@@ -100,13 +100,13 @@ let ek = {
         [eU.DUB.FULL_SCREEN]: ew.iy,
         [eU.DUB.HAVEN]: ew.VT
     },
-    eB = {
+    eV = {
         [eU.BRT.POPOUT]: ew.SW,
         [eU.BRT.APP]: null,
         [eU.BRT.OVERLAY]: null,
         [eU.BRT.CALL_TILE_POPOUT]: null
     };
-class eV extends s.PureComponent {
+class eB extends s.PureComponent {
     _prevLayout = eU.DUB.MINIMUM;
     _wrapperRef = s.createRef();
     _callContainerRef = s.createRef();
@@ -639,7 +639,7 @@ class eV extends s.PureComponent {
             resizedHeight: u
         } = this.state, h = s === eU._Of.VIDEO, p = e !== eU.DUB.HAVEN && e !== eU.DUB.NO_CHAT && e !== eU.DUB.FULL_SCREEN && null != c, m = eU.NJ8.MIDNIGHT;
         return (0, i.jsxs)("div", {
-            className: a()(ew.iE, ek[e], eB[r], {
+            className: a()(ew.iE, ek[e], eV[r], {
                 [ew.XW]: this.popoutOpen && !this.inPopout && e !== eU.DUB.NO_CHAT && t.isPrivate(),
                 [ew.Ki]: h,
                 [ew.vc]: l
@@ -700,7 +700,7 @@ let eH = function(e) {
         ref: g
     } = (0, E.Ay)(), {
         ref: _
-    } = (0, E.Ay)(), f = (0, V.Us)(), N = (0, U.A)(), S = (0, d.bG)([ep.A], () => (N?.channelId ?? ep.A.getVoiceChannelId()) === t.id), {
+    } = (0, E.Ay)(), f = (0, B.Us)(), N = (0, U.A)(), S = (0, d.bG)([ep.A], () => (N?.channelId ?? ep.A.getVoiceChannelId()) === t.id), {
         participants: v,
         filteredParticipants: R,
         participantsVersion: L,
@@ -761,7 +761,7 @@ let eH = function(e) {
         ex = T.Ay.getEmbeddedActivitiesForChannel(t.id),
         {
             enabled: eC
-        } = B.s.useConfig({
+        } = V.s.useConfig({
             location: "ChannelCall"
         }),
         eE = (0, eb.T)({
@@ -785,7 +785,7 @@ let eH = function(e) {
             page: eU.liQ.CHANNEL_CALL,
             children: (0, i.jsx)(ey.qh, {
                 children: (0, i.jsxs)(eL.CB, {
-                    children: [(0, i.jsx)(eV, {
+                    children: [(0, i.jsx)(eB, {
                         channel: t,
                         guild: z,
                         hasConnectPermission: $,

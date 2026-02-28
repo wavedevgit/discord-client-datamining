@@ -41,7 +41,7 @@ let L = {
 };
 
 function M() {
-    let e, t, l, M, D, G, U, P, w, k, B, V, H = (0, r.Vd)("favorites"),
+    let e, t, l, M, D, G, U, P, w, k, V, B, H = (0, r.Vd)("favorites"),
         {
             favoriteAdded: F,
             clearFavoriteAdded: K
@@ -70,13 +70,13 @@ function M() {
                 location: t
             } = e, n = (0, A.H)(t);
             return null != n && null != X[n]
-        })), P = G.length > 0, w = !1, k = !1, B = !1, V = !1, t ? (w = !D, k = D, B = l, V = U) : (B = M, V = P), (0, g.oi)({
+        })), P = G.length > 0, w = !1, k = !1, V = !1, B = !1, t ? (w = !D, k = D, V = l, B = U) : (V = M, B = P), (0, g.oi)({
             audio: w,
             video: k,
-            screenshare: B,
+            screenshare: V,
             liveStage: !1,
             isCurrentUserConnected: t,
-            activity: V
+            activity: B
         })),
         et = $ > 0 ? (0, _.w)($) : null,
         en = s.useCallback(() => {

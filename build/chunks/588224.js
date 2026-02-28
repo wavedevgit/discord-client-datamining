@@ -1,7 +1,7 @@
 /** chunk id: 588224, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => V
+    A: () => B
 }), n(667532), n(321073);
 var i = n(627968),
     s = n(64700),
@@ -50,7 +50,7 @@ let k = s.memo(e => {
     } = e, f = s.id, x = (0, r.bG)([T.default], () => T.default.getId() === f, [f]), [b, j, R] = (0, r.yK)([v.Ay], () => x ? [!v.Ay.isSupported() || v.Ay.isSelfMute() || v.Ay.isSelfMutedTemporarily(), v.Ay.isSelfDeaf(), !1] : [!v.Ay.isSupported() || v.Ay.isLocalMute(f), !1, v.Ay.isLocalVideoDisabled(f)], [x, f]), w = (0, r.bG)([L.A], () => L.A.isPrioritySpeaker(f)), k = (0, c.A)({
         userId: f,
         checkSoundSharing: !0
-    }), B = (0, r.bG)([y.Ay], () => y.Ay.isGuestOrLurker(l.guild_id, f)), V = (0, r.bG)([A.A], () => A.A.getGuildRingingUsers(l.id).has(f)), H = (0, r.bG)([d.Ay], () => d.Ay.getEmbeddedActivitiesForChannel(l.id).find(e => {
+    }), V = (0, r.bG)([y.Ay], () => y.Ay.isGuestOrLurker(l.guild_id, f)), B = (0, r.bG)([A.A], () => A.A.getGuildRingingUsers(l.id).has(f)), H = (0, r.bG)([d.Ay], () => d.Ay.getEmbeddedActivitiesForChannel(l.id).find(e => {
         let {
             userIds: t
         } = e;
@@ -75,7 +75,7 @@ let k = s.memo(e => {
         children: (0, i.jsx)(G.Ay, {
             ...e,
             nick: o ?? q,
-            canDrag: e.canDrag && !B,
+            canDrag: e.canDrag && !V,
             disconnected: et,
             otherClientSessionType: X?.clientInfo?.os,
             voicePlatform: J,
@@ -84,12 +84,12 @@ let k = s.memo(e => {
             mute: t || b,
             deaf: n || j,
             speaking: k,
-            ringing: V,
+            ringing: B,
             priority: w,
             embeddedApplication: F[0],
             isStreaming: null != Y && Y.channelId === l.id,
             isWatching: null != z && z.state !== U.XYD.ENDED,
-            isGuest: B,
+            isGuest: V,
             isSelf: x,
             requestToStreamActivity: ei ? K : void 0,
             application: es && K?.session_id != null ? W : void 0,
@@ -99,8 +99,8 @@ let k = s.memo(e => {
     })
 });
 k.displayName = "ConnectedVoiceUser";
-let B = [],
-    V = function(e) {
+let V = [],
+    B = function(e) {
         let {
             allowPreviews: t = !0,
             allowDragging: n = !0,
@@ -115,19 +115,19 @@ let B = [],
             className: C,
             children: E,
             isThread: I = !1
-        } = e, [S, y] = s.useState(null), [v, O] = s.useState(!1), L = s.useRef(null), M = (0, N.$n)(l.id, c ?? B), {
+        } = e, [S, y] = s.useState(null), [v, O] = s.useState(!1), L = s.useRef(null), M = (0, N.$n)(l.id, c ?? V), {
             shouldShow: D,
             dismiss: P
         } = (0, x.Z)(l, {
             collapsed: d
-        }), V = s.useRef(new o.J_(50, () => {
+        }), B = s.useRef(new o.J_(50, () => {
             y(L.current), L.current = null
         })), H = s.useRef(new o.J_(175, () => {
             y(null)
         })), F = s.useCallback(e => {
-            t && (O(!0), H.current.cancel(), L.current = e, V.current.delay())
+            t && (O(!0), H.current.cancel(), L.current = e, B.current.delay())
         }, [t]), K = s.useCallback(e => {
-            t && (V.current.cancel(), L.current = null, O(!1), H.current.delay())
+            t && (B.current.cancel(), L.current = null, O(!1), H.current.delay())
         }, [t]), W = (0, r.yK)([R.A], () => {
             if (d) return [];
             let e = new Set;

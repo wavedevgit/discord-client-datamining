@@ -91,16 +91,16 @@ function U(e) {
         audienceCount: p,
         channel: t,
         speakerCount: A
-    }, B = s.useRef(k);
+    }, V = s.useRef(k);
     s.useEffect(() => {
-        B.current = k
+        V.current = k
     }), s.useEffect(() => {
         let {
             canModerate: e,
             audienceCount: t,
             channel: n,
             speakerCount: i
-        } = B.current;
+        } = V.current;
         j && N.default.track(O.HAw.BOOSTING_UPSELL_VIEWED, {
             guild_id: n.guild_id,
             type: L.e.VIDEO_STAGE_LIMIT,
@@ -108,7 +108,7 @@ function U(e) {
             listener_count: i + t
         })
     }, [j]);
-    let V = (0, i.jsx)(c.NPJ, {
+    let B = (0, i.jsx)(c.NPJ, {
         theme: O.NJ8.DARK,
         children: e => (0, i.jsxs)(f.Ay, {
             toolbar: (0, i.jsx)(G, {
@@ -158,7 +158,7 @@ function U(e) {
         })
     });
     return j ? (0, i.jsxs)("div", {
-        children: [V, (0, i.jsxs)("div", {
+        children: [B, (0, i.jsxs)("div", {
             className: D.bp,
             children: [(0, i.jsx)(P, {}), (0, i.jsxs)("div", {
                 className: D.Qq,
@@ -205,7 +205,7 @@ function U(e) {
                 })
             })]
         })]
-    }) : V
+    }) : B
 }
 
 function P() {

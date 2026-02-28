@@ -101,11 +101,11 @@ function T(e) {
             singleItem: i,
             productLines: s
         }
-    }, [t, n, R, T, y, v, G, U, M]), B = (0, f.A)({
+    }, [t, n, R, T, y, v, G, U, M]), V = (0, f.A)({
         wishlistId: y ?? null,
         onAction: D,
         productLines: k
-    }), V = (0, s.useMemo)(() => L ? G.map((e, t) => null == e.sku ? null : (0, i.jsx)(g.A, {
+    }), B = (0, s.useMemo)(() => L ? G.map((e, t) => null == e.sku ? null : (0, i.jsx)(g.A, {
         sku: e.sku,
         index: t,
         wishlistOwner: n,
@@ -126,7 +126,7 @@ function T(e) {
         wishlistId: y,
         onViewWishlist: T
     }))), (0, i.jsxs)(x.A.Overlay, {
-        ref: B,
+        ref: V,
         className: S.kL,
         children: [(0, i.jsxs)("div", {
             className: S.wx,
@@ -141,7 +141,7 @@ function T(e) {
             })]
         }), (0, i.jsx)("div", {
             className: S.vY,
-            children: L ? V : W
+            children: L ? B : W
         }), !K && k.has(I.EZt.SOCIAL_LAYER_GAME_ITEM) && (0, i.jsx)(u.A, {
             location: "user_profile_sidebar_wishlist_breadcrumb",
             className: S.EK,

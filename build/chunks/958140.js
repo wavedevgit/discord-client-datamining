@@ -45,17 +45,17 @@ function P(e) {
         setIsHangStatusInputFocused: n,
         setIsEmojiPickerOpen: l,
         setPopoutRef: r
-    } = e, P = s.useRef(null), w = (0, d.bG)([C.A], () => C.A.getCustomHangStatus()), k = (0, S.A)(), B = (0, d.bG)([C.A], () => C.A.getFavoritedStatuses()), {
-        defaultStatusVariant: V,
+    } = e, P = s.useRef(null), w = (0, d.bG)([C.A], () => C.A.getCustomHangStatus()), k = (0, S.A)(), V = (0, d.bG)([C.A], () => C.A.getFavoritedStatuses()), {
+        defaultStatusVariant: B,
         allowPermanentClear: H
     } = (0, x.$j)({
         guildId: t.guild_id,
         location: "HangStatusPicker"
-    }), F = (0, E.hy)(V), K = s.useRef(null), [W, Y] = s.useState(w?.status ?? ""), [z, X] = s.useState(w?.emoji ?? null), [q, J] = s.useState(!1), Q = (0, d.bG)([C.A], () => C.A.getCurrentHangStatus()), $ = F[Q], Z = B.length > 0, ee = null == W || "" === W.trim(), et = (0, b.A)(t), en = W.trim().length > 0 && W.trim() !== w?.status?.trim() || null != z && !o()(z, w?.emoji), [ei, es] = s.useState(!1), el = (0, d.bG)([C.A], () => C.A.getFavoritedStatuses().length >= C.x), ea = W.length > 0 || null != z, [er, eo] = (0, m.kn)([u.M.HANG_STATUS_POPOVER_NUX]);
+    }), F = (0, E.hy)(B), K = s.useRef(null), [W, Y] = s.useState(w?.status ?? ""), [z, X] = s.useState(w?.emoji ?? null), [q, J] = s.useState(!1), Q = (0, d.bG)([C.A], () => C.A.getCurrentHangStatus()), $ = F[Q], Z = V.length > 0, ee = null == W || "" === W.trim(), et = (0, b.A)(t), en = W.trim().length > 0 && W.trim() !== w?.status?.trim() || null != z && !o()(z, w?.emoji), [ei, es] = s.useState(!1), el = (0, d.bG)([C.A], () => C.A.getFavoritedStatuses().length >= C.x), ea = W.length > 0 || null != z, [er, eo] = (0, m.kn)([u.M.HANG_STATUS_POPOVER_NUX]);
     s.useEffect(() => {
         _.default.track(O.HAw.HANG_STATUS_PICKER_OPENED, {
             ...(0, I.A)(t.id),
-            num_favorites: B.length,
+            num_favorites: V.length,
             num_recents: k.length
         })
     }, []), s.useEffect(() => {
@@ -127,7 +127,7 @@ function P(e) {
                         type: O.$pd.HANG_STATUS,
                         state: e
                     },
-                    fallbackVariant: V,
+                    fallbackVariant: B,
                     className: D.Kk
                 }) : null != e.emoji && (0, i.jsx)(p.A, {
                     emoji: e.emoji,
@@ -143,7 +143,7 @@ function P(e) {
                 isFavorited: a,
                 onFavoriteClick: () => ep(a, e)
             }, `${n}-${t}`)
-        }, [V, eu, ec, F, ep]),
+        }, [B, eu, ec, F, ep]),
         ef = s.useCallback(() => {
             (0, f.eK)(!0, H), X(null), Y(""), J(!1)
         }, [H]),
@@ -188,7 +188,7 @@ function P(e) {
                                 customStatusEmoji: z,
                                 setCustomStatusEmoji: X,
                                 selectedDefaultStatus: q || ea ? null : Q,
-                                defaultStatusVariant: V,
+                                defaultStatusVariant: B,
                                 setIsEmojiPickerOpen: l
                             })
                         },
@@ -232,7 +232,7 @@ function P(e) {
                     }), (0, i.jsx)(A.Gg5, {
                         size: "xxs"
                     })]
-                }), B.map((e, t) => e_(e, t, "favorite"))]
+                }), V.map((e, t) => e_(e, t, "favorite"))]
             }), k.length > 0 && Z && (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)("div", {
                     role: "separator",

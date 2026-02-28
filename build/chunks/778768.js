@@ -40,8 +40,8 @@ var i = n(627968),
     P = n(985018),
     w = n(357694),
     k = n(248789),
-    B = n(165180);
-let V = "VoiceInviteSuggestionsPopover";
+    V = n(165180);
+let B = "VoiceInviteSuggestionsPopover";
 
 function H(e) {
     let {
@@ -142,7 +142,7 @@ function F(e) {
     } = (0, y.A)({
         user: n,
         channel: t,
-        location: V
+        location: B
     }), {
         showActivityStatus: K
     } = D.o.useExperiment({
@@ -184,7 +184,7 @@ function F(e) {
             if (null == e) {
                 if (!O.A.can(U.xBc.CREATE_INSTANT_INVITE, t)) return null;
                 try {
-                    await A.Ay.createInvite(t.id, {}, V)
+                    await A.Ay.createInvite(t.id, {}, B)
                 } catch (e) {
                     return null
                 }
@@ -198,7 +198,7 @@ function F(e) {
             type: p.F.USER,
             user: n,
             inviteKey: i,
-            location: V,
+            location: B,
             inviteAnalyticsMetadata: {
                 source: U.PE1.VOICE_INVITE_SUGGESTIONS
             }
@@ -285,7 +285,7 @@ function F(e) {
         }), l && !H && (0, i.jsx)(u.m_, {
             text: G,
             children: (0, i.jsx)(h.DUT, {
-                className: a()(w.D9, B.button, B.secondary, {
+                className: a()(w.D9, V.button, V.secondary, {
                     [w.r9]: k
                 }),
                 onClick: ee,

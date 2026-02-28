@@ -1,18 +1,18 @@
-/** chunk id: 94264, original params: e,t,r (module,exports,require) **/
-r.d(t, {
+/** chunk id: 94264, original params: e,t,n (module,exports,require) **/
+n.d(t, {
     A: () => R
 });
-var n = r(627968);
-r(64700);
-var a = r(503698),
-    l = r.n(a),
-    s = r(892227),
-    i = r(827734),
-    d = r(732955),
-    u = r(914410),
-    o = r(649032),
-    c = r(320118),
-    m = r(837902);
+var r = n(627968);
+n(64700);
+var a = n(503698),
+    s = n.n(a),
+    l = n(892227),
+    i = n(827734),
+    d = n(732955),
+    u = n(914410),
+    o = n(649032),
+    c = n(320118),
+    m = n(837902);
 let _ = {
         churning: {
             start: i.A.unsafe_rawColors.OPACITY_RED_80.css,
@@ -27,32 +27,32 @@ let _ = {
         let {
             className: t
         } = e, {
-            passesProgressBarInvariant: r,
+            passesProgressBarInvariant: n,
             programReward: a,
             totalDays: i
         } = (0, c.F)();
-        if (!r || null == a || null == i) return null;
-        let R = (0, s.default)(new Date(a.next_reward_date), new Date),
-            p = a.program_current_state === o.L.PREMIUM_CHURNING,
-            h = p ? _.churning.start : _.active.start,
-            A = p ? _.churning.end : _.active.end;
-        return (0, n.jsxs)("div", {
-            className: l()(m.k, t),
-            children: [(0, n.jsx)(u.Ay, {
+        if (!n || null == a || null == i) return null;
+        let R = (0, l.default)(new Date(a.next_reward_date), new Date),
+            h = a.program_current_state === o.L.PREMIUM_CHURNING,
+            p = h ? _.churning.start : _.active.start,
+            x = h ? _.churning.end : _.active.end;
+        return (0, r.jsxs)("div", {
+            className: s()(m.k, t),
+            children: [(0, r.jsx)(u.Ay, {
                 variant: u.qP.UNSET,
                 progress: i - R,
                 maximum: i,
                 override: {
                     default: {
-                        gradientStart: h,
-                        gradientEnd: A
+                        gradientStart: p,
+                        gradientEnd: x
                     }
                 }
-            }), p ? (0, n.jsx)(d.tvc, {
+            }), h ? (0, r.jsx)(d.tvc, {
                 size: "sm",
                 color: "currentColor",
                 className: m.K
-            }) : (0, n.jsx)(d.Cp8, {
+            }) : (0, r.jsx)(d.Cp8, {
                 size: "sm",
                 color: "currentColor",
                 className: m.K

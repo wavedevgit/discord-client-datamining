@@ -1,17 +1,17 @@
-/** chunk id: 552736, original params: e,t,n (module,exports,require) **/
-n.d(t, {
+/** chunk id: 552736, original params: e,t,r (module,exports,require) **/
+r.d(t, {
     A: () => o
 });
-var i = n(64700),
-    s = n(607399),
-    r = n(437852),
-    l = n(657515);
+var a = r(64700),
+    n = r(607399),
+    _ = r(437852),
+    i = r(657515);
 
 function o() {
     let {
         enabled: e
-    } = r.Ay.useConfig({
+    } = _.Ay.useConfig({
         location: "useGiftingPromotionConfig"
     });
-    return i.useMemo(() => s.Fr || s.v1 ? null : e ? l.zH : null, [e])
+    return a.useMemo(() => n.Fr || n.v1 ? null : e ? i.zH : null, [e])
 }

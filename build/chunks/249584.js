@@ -48,8 +48,8 @@ var i = n(627968),
     P = n(7946),
     w = n(108432),
     k = n(581665),
-    B = n(392438),
-    V = n(20874);
+    V = n(392438),
+    B = n(20874);
 
 function H(e) {
     let {
@@ -168,7 +168,7 @@ function W(e) {
         title: U.intl.string(G.default.Ygpx4Q),
         body: U.intl.string(G.default.mmNkUA),
         size: "video",
-        asset: V.A,
+        asset: B.A,
         actions: [{
             text: U.intl.string(U.t.RzWDqY),
             variant: "primary",
@@ -185,7 +185,7 @@ function W(e) {
         body: U.intl.string(G.default.TUilLj),
         asset: (0, i.jsx)("img", {
             alt: "",
-            src: B.A,
+            src: V.A,
             className: P.Sl
         }),
         actions: [{

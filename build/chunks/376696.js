@@ -46,8 +46,8 @@ function P(e) {
         excludeActivity: P,
         onWatchStream: w,
         hangStatusActivity: k,
-        renderSelfHangStatus: B,
-        isStandardGap: V = !1
+        renderSelfHangStatus: V,
+        isStandardGap: B = !1
     } = e, H = s.useMemo(() => ({
         [t.guild_id]: [n.id]
     }), [t.guild_id, n.id]);
@@ -94,7 +94,7 @@ function P(e) {
             })
         }, [eh, t.id, n.id]), !eh && !eu) return null;
     if (eu) {
-        if (es) return B({
+        if (es) return V({
             position: "right",
             nudge: 0,
             closePopout: () => {},
@@ -104,7 +104,7 @@ function P(e) {
     }
     return (0, i.jsxs)(o.HOs, {
         className: a()(U.kL, {
-            [U.iA]: V,
+            [U.iA]: B,
             [U.XK]: el
         }),
         children: [ed && es && null != k ? (0, i.jsx)(f.Z, {

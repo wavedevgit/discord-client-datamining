@@ -40,8 +40,8 @@ var i = n(627968),
     P = n(404355),
     w = n(577062),
     k = n(970636),
-    B = n(961350),
-    V = n(430452),
+    V = n(961350),
+    B = n(430452),
     H = n(576705),
     F = n(309010),
     K = n(287809),
@@ -160,7 +160,7 @@ function ep(e) {
         canManageGuildEvent: c
     } = (0, T.nr)(t), d = (0, l.bG)([J.A], () => J.A.getStageInstanceByChannel(t.id), [t.id]), u = (0, l.bG)([I.Ay], () => I.Ay.getGuildScheduledEvent(d?.guild_scheduled_event_id)), {
         suppress: p
-    } = (0, R.A)(t), m = B.default.getId(), [g] = (0, ea.A)(t), _ = q.Ay.isModerator(m, t.id), C = (0, z.Ni)(t.id), E = c(u), {
+    } = (0, R.A)(t), m = V.default.getId(), [g] = (0, ea.A)(t), _ = q.Ay.isModerator(m, t.id), C = (0, z.Ni)(t.id), E = c(u), {
         parentAnalyticsLocation: N
     } = (0, A.Ay)(), b = s.useRef(null), y = () => (function(e) {
         let {
@@ -286,7 +286,7 @@ let e_ = s.memo(function(e) {
     } = (0, y.A)(), I = (0, j.A)(t), {
         limit: N,
         reachedLimit: b
-    } = (0, v.A)(t), S = (0, l.bG)([K.default], () => K.default.getCurrentUser()), T = (0, l.bG)([V.Ay], () => (0, E.A)(V.Ay)), D = (0, l.bG)([F.A], () => F.A.getVoiceChannelId() === t.id, [t.id]), U = (0, l.bG)([p.A], () => p.A.getStreamParticipants(t.id)[0], [t.id]), P = (0, Q.qT)(t.id), B = N > 0, H = b && !P || null != U && U.user.id !== S?.id, W = (0, x.s)("AudioDeviceMenu", n, {
+    } = (0, v.A)(t), S = (0, l.bG)([K.default], () => K.default.getCurrentUser()), T = (0, l.bG)([B.Ay], () => (0, E.A)(B.Ay)), D = (0, l.bG)([F.A], () => F.A.getVoiceChannelId() === t.id, [t.id]), U = (0, l.bG)([p.A], () => p.A.getStreamParticipants(t.id)[0], [t.id]), P = (0, Q.qT)(t.id), V = N > 0, H = b && !P || null != U && U.user.id !== S?.id, W = (0, x.s)("AudioDeviceMenu", n, {
         entrypoint: er.GK.CARET
     }), Y = s.useRef(null), X = s.useRef(null);
     if (null == S) return null;
@@ -377,10 +377,10 @@ let e_ = s.memo(function(e) {
                         awaitingRemote: u
                     })
                 }
-            }), B && q]
+            }), V && q]
         }) : null, (0, i.jsxs)("div", {
             className: ec.qi,
-            children: [D && !a && B ? (0, i.jsx)(O.rP, {
+            children: [D && !a && V ? (0, i.jsx)(O.rP, {
                 channel: t,
                 currentUser: S,
                 exitFullScreen: () => null,

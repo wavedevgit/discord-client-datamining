@@ -1,61 +1,61 @@
-/** chunk id: 914410, original params: e,t,r (module,exports,require) **/
-r.d(t, {
+/** chunk id: 914410, original params: e,t,n (module,exports,require) **/
+n.d(t, {
     Ay: () => _,
     fh: () => m,
     qP: () => c
 });
-var n, a, l = r(627968),
-    s = r(64700),
-    i = r(503698),
-    d = r.n(i);
-r(284009);
-var u = r(736653),
-    o = r(875808),
-    c = ((n = {}).UNSET = "unset", n.BLUE = "blue", n.ORANGE = "orange", n),
+var r, a, s = n(627968),
+    l = n(64700),
+    i = n(503698),
+    d = n.n(i);
+n(284009);
+var u = n(736653),
+    o = n(875808),
+    c = ((r = {}).UNSET = "unset", r.BLUE = "blue", r.ORANGE = "orange", r),
     m = ((a = {}).LIGHT = "light", a.MEDIUM = "medium", a);
 let _ = e => {
     let {
         progress: t,
-        minimum: r = 0,
-        maximum: n = 100,
+        minimum: n = 0,
+        maximum: r = 100,
         weight: a = "light",
         variant: i,
         override: c,
         glowing: m = !0,
         labelledBy: _
-    } = e, R = null != c && "unset" === i, p = (0, u.Ay)(), h = c?.[p] ?? c?.default, A = s.useMemo(() => (t - r) / (n - r) * 100, [t, r, n]), E = t === r, x = {
+    } = e, R = null != c && "unset" === i, h = (0, u.Ay)(), p = c?.[h] ?? c?.default, x = l.useMemo(() => (t - n) / (r - n) * 100, [t, n, r]), A = t === n, E = {
         ...R ? {
-            "--custom-background": h?.background,
-            "--custom-gradient-start": h?.gradientStart,
-            "--custom-gradient-end": h?.gradientEnd,
-            "--custom-gradient-glow": h?.gradientEnd
+            "--custom-background": p?.background,
+            "--custom-gradient-start": p?.gradientStart,
+            "--custom-gradient-end": p?.gradientEnd,
+            "--custom-gradient-glow": p?.gradientEnd
         } : {},
         ...!m && {
             "--custom-gradient-glow": "transparent"
         }
     };
-    return (0, l.jsx)("div", {
+    return (0, s.jsx)("div", {
         className: d()(o.progressContainer, o[a], o[i]),
-        style: x,
-        children: (0, l.jsxs)("div", {
+        style: E,
+        children: (0, s.jsxs)("div", {
             className: d()(o.progress, {
-                [o.empty]: E
+                [o.empty]: A
             }),
             style: {
-                width: `${A}%`
+                width: `${x}%`
             },
             role: "meter",
             "aria-valuenow": t,
-            "aria-valuemin": r,
-            "aria-valuemax": n,
+            "aria-valuemin": n,
+            "aria-valuemax": r,
             "aria-labelledby": _,
-            children: [(0, l.jsx)("div", {
+            children: [(0, s.jsx)("div", {
                 className: d()(o.glow, {
-                    [o.empty]: E
+                    [o.empty]: A
                 })
-            }), (0, l.jsx)("div", {
+            }), (0, s.jsx)("div", {
                 className: d()(o.bar, o[i], {
-                    [o.empty]: E
+                    [o.empty]: A
                 })
             })]
         })

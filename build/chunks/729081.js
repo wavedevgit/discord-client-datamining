@@ -67,7 +67,7 @@ function L(e) {
         {
             state: w,
             recommendations: k,
-            skuIdToUserIdsReasons: B
+            skuIdToUserIdsReasons: V
         } = (0, I.A)({
             applicationId: T.XR,
             numWishlistItems: I.o,
@@ -75,15 +75,15 @@ function L(e) {
             location: "Social Layer Gifting Mini Shelf",
             includeWishlists: !0
         }),
-        V = s.useMemo(() => {
+        B = s.useMemo(() => {
             let e = new Set(P),
                 {
                     hasWishlist: t,
                     hasPopular: n
-                } = (0, C.wH)(k, B, e),
+                } = (0, C.wH)(k, V, e),
                 s = t && n;
             return k.map(t => {
-                let n = B[t.skuId]?.filter(t => t.reason === E.G.WISHLIST && e.has(t.userId)).map(e => e.userId).filter(x.Vq) ?? [];
+                let n = V[t.skuId]?.filter(t => t.reason === E.G.WISHLIST && e.has(t.userId)).map(e => e.userId).filter(x.Vq) ?? [];
                 return M ? (0, i.jsx)(N.A, {
                     sku: t.sku,
                     source: n.length > 0 ? g.uS.WISHLIST : g.uS.POPULAR,
@@ -103,7 +103,7 @@ function L(e) {
                     contextContainerClassName: R.RL
                 }, t.skuId)
             })
-        }, [L.guild_id, L.id, k, B, P, M, D]);
+        }, [L.guild_id, L.id, k, V, P, M, D]);
     return s.useEffect(() => {
         0 !== k.length && f.default.track(y.HAw.COMMERCE_SHOP_VC_GIFT_BUTTON_VIEWED, {
             guild_id: L.guild_id,
@@ -140,7 +140,7 @@ function L(e) {
                     }),
                     children: "loading" === w || 0 === k.length ? (0, i.jsx)(c.y$y, {
                         className: R.Lq
-                    }) : V
+                    }) : B
                 }), (0, i.jsx)(S.A, {
                     location: "social_layer_gifting_mini_shelf",
                     className: R.Ij

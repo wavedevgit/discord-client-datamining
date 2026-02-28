@@ -40,8 +40,8 @@ var i = n(627968),
     P = n(16961),
     w = n(716730),
     k = n(5867),
-    B = n(652215),
-    V = n(985018),
+    V = n(652215),
+    B = n(985018),
     H = n(907585);
 let F = D.DN.SIZE_32,
     K = {
@@ -136,7 +136,7 @@ function W(e) {
         }, e.id)
     };
     return (0, i.jsx)(d.NPJ, {
-        theme: B.NJ8.DARK,
+        theme: V.NJ8.DARK,
         children: e => (0, i.jsxs)("div", {
             className: a()(H.iE, K[Z], e),
             ref: $,
@@ -182,7 +182,7 @@ function W(e) {
                                 channelId: eh
                             }), (0, i.jsx)(f.l, {
                                 isTrayButton: !0,
-                                label: V.intl.string(V.t.brPQ5U),
+                                label: B.intl.string(B.t.brPQ5U),
                                 onClick: Q,
                                 iconComponent: d.gR,
                                 themeable: !0
@@ -199,7 +199,7 @@ function W(e) {
                     }), eg ? (0, i.jsx)(C.A, {
                         popoutOpen: !1,
                         onOpenPopout: () => {
-                            (0, p.zV)(B.HAw.ACTIVITY_POPOUT_POP_OUT_BUTTON_CLICKED), (0, G.A)({
+                            (0, p.zV)(V.HAw.ACTIVITY_POPOUT_POP_OUT_BUTTON_CLICKED), (0, G.A)({
                                 onConfirm: async () => {
                                     W?.id != null && null != z && await (0, y.od)(W.id, z), (0, y.jp)()
                                 }
@@ -213,12 +213,12 @@ function W(e) {
                 maxHeight: t,
                 resizableNode: $,
                 onResize: e => {
-                    S._.dispatch(B.jej.MANUAL_IFRAME_RESIZING, {
+                    S._.dispatch(V.jej.MANUAL_IFRAME_RESIZING, {
                         resizing: !0
                     }), en(e)
                 },
                 onResizeEnd: e => {
-                    S._.dispatch(B.jej.MANUAL_IFRAME_RESIZING, {
+                    S._.dispatch(V.jej.MANUAL_IFRAME_RESIZING, {
                         resizing: !1
                     }), ei(e)
                 }

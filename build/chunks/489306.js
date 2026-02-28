@@ -98,9 +98,9 @@ function R(e) {
                 U = (0, I.A)(e),
                 [P, w] = (0, E.ww)(null != t && !T && !G && null != U, e),
                 k = P === a.M.BOOST_TO_UNLOCK_COACHMARK,
-                B = (0, N.A)(e),
-                [V, H] = (0, E.W2)(null != t && !T && !G && !k && null != B, e),
-                F = V === a.M.EXPIRING_POWERUP_COACHMARK,
+                V = (0, N.A)(e),
+                [B, H] = (0, E.W2)(null != t && !T && !G && !k && null != V, e),
+                F = B === a.M.EXPIRING_POWERUP_COACHMARK,
                 K = i.useMemo(() => {
                     if (null == t || T || G || k || F) return;
                     let n = function(e, t) {
@@ -187,9 +187,9 @@ function R(e) {
                         powerup: U,
                         markAsDismissed: w
                     };
-                    if (F && null != B) return {
+                    if (F && null != V) return {
                         type: _.o.EXPIRING_PERK,
-                        featuredExpiringPowerup: B,
+                        featuredExpiringPowerup: V,
                         markAsDismissed: H
                     };
                     if (W === a.M.GUILD_POWERUP_NOTIFICATION && null != K) return {
@@ -199,7 +199,7 @@ function R(e) {
                         }
                     }
                 }
-            }, [t, T, C, K, W, Y, G, D, L, k, U, w, F, B, H])
+            }, [t, T, C, K, W, Y, G, D, L, k, U, w, F, V, H])
         }(e, n ?? void 0);
     if (null !== n && (null != p || j || null != R)) return {
         indicator: p,

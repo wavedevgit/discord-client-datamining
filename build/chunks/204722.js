@@ -1,7 +1,7 @@
 /** chunk id: 204722, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    W: () => V,
+    W: () => B,
     f: () => H
 });
 var i = n(627968),
@@ -41,9 +41,9 @@ var i = n(627968),
     P = n(49999),
     w = n(985018),
     k = n(294726),
-    B = n(275540);
+    V = n(275540);
 
-function V(e, t, n) {
+function B(e, t, n) {
     return null != e && (null != n ? n.applicationId === e.id : null != t && (t.application_id === e.id || e.linkedGames?.some(e => e.id === t.application_id)) && t.type === U.$pd.PLAYING && (0, p.A)(t, U.jUm.JOIN))
 }
 let H = s.memo(function(e) {
@@ -69,7 +69,7 @@ let H = s.memo(function(e) {
         } = e, {
             parentAnalyticsLocation: et,
             analyticsLocations: en
-        } = (0, g.Ay)(), ei = (0, v.A)(z, "rtc-activity-panel"), es = V(z, Y, R), {
+        } = (0, g.Ay)(), ei = (0, v.A)(z, "rtc-activity-panel"), es = B(z, Y, R), {
             enabled: el
         } = S._.useConfig({
             location: "activity-panel"
@@ -188,7 +188,7 @@ let H = s.memo(function(e) {
                 }, n = u.Fzq, s = null != j ? w.intl.formatToPlainString(w.t.AB5gTy, {
                     game: j.name
                 }) : w.intl.string(w.t.FeUKeA)) : (e = !0, t = null, n = u.Fzq, null != p && (0, O.gV)(p.type) && (s = w.intl.string(w.t.uQn9B8))), (0, i.jsx)("div", {
-                    className: B.IF,
+                    className: V.IF,
                     children: (0, i.jsx)(G.A, {
                         tooltipText: s,
                         disabled: e,
@@ -241,7 +241,7 @@ let H = s.memo(function(e) {
                 }
             });
         return null == eT && null == ey && null == ev && null == ej && null == eO && null == eb && null == eS ? null : (0, i.jsxs)("div", {
-            className: B.o1,
+            className: V.o1,
             children: [eb ?? eO ?? ey, eS, eT, ev ?? ej ?? eR, eL]
         })
     }),
@@ -275,11 +275,11 @@ function K(e) {
     }, [o, n]);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)("div", {
-            className: B.IF,
+            className: V.IF,
             children: [(0, i.jsx)("div", {
-                className: B.uD,
+                className: V.uD,
                 children: (0, i.jsx)("div", {
-                    className: B.Z9
+                    className: V.Z9
                 })
             }), (0, i.jsx)(G.A, {
                 ref: a,

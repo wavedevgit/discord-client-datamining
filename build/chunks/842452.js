@@ -45,8 +45,8 @@ let v = (0, g.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
                 draggable: P = !1,
                 sorting: w = !1,
                 onDragStart: k,
-                onDragEnd: B,
-                onExpandCollapse: V,
+                onDragEnd: V,
+                onExpandCollapse: B,
                 onContextMenu: H,
                 renderChildNode: F,
                 folderButtonSize: K,
@@ -75,7 +75,7 @@ let v = (0, g.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
                 nodeId: u.id
             }),
             end() {
-                B?.(), (0, A.um)(m.Ay.getCompatibleGuildFolders())
+                V?.(), (0, A.um)(m.Ay.getCompatibleGuildFolders())
             },
             collect: e => ({
                 dragging: e.isDragging()
@@ -83,8 +83,8 @@ let v = (0, g.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
         }), el = s.useCallback(e => {
             ee(e)
         }, []), ea = s.useCallback(e => {
-            ("ArrowRight" === e.key && !O || "ArrowLeft" === e.key && O) && V()
-        }, [V, O]), er = null != q && "" !== q ? q : null != U && "" !== U ? U : S.intl.string(S.t.xV9hVh), eo = (0, c.Vd)(`${X}`), ec = `folder-items-${X}`, ed = (t = J.length, n = (0, h.rdh)(h.LU0.modules.guildbar.FOLDER_SIZE), l = (0, h.rdh)(h.LU0.modules.guildbar.AVATAR_SIZE), t * (l + (o = (0, h.rdh)(h.LU0.space.SPACE_XS))) - o + (o - (n - l) / 2) + (0, h.rdh)(h.LU0.space.SPACE_4)), eu = (0, h.pnh)(!ei && O, {
+            ("ArrowRight" === e.key && !O || "ArrowLeft" === e.key && O) && B()
+        }, [B, O]), er = null != q && "" !== q ? q : null != U && "" !== U ? U : S.intl.string(S.t.xV9hVh), eo = (0, c.Vd)(`${X}`), ec = `folder-items-${X}`, ed = (t = J.length, n = (0, h.rdh)(h.LU0.modules.guildbar.FOLDER_SIZE), l = (0, h.rdh)(h.LU0.modules.guildbar.AVATAR_SIZE), t * (l + (o = (0, h.rdh)(h.LU0.space.SPACE_XS))) - o + (o - (n - l) / 2) + (0, h.rdh)(h.LU0.space.SPACE_4)), eu = (0, h.pnh)(!ei && O, {
             from: {
                 height: 0
             },
@@ -129,7 +129,7 @@ let v = (0, g.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
                         isMentionLowImportance: D,
                         tooltipName: er,
                         folderGroupId: ec,
-                        onClick: V,
+                        onClick: B,
                         onContextMenu: H,
                         onHoverChange: $,
                         onKeyDown: ea,

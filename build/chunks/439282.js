@@ -74,10 +74,10 @@ function P(e) {
                 }
             }), Object.values(e)
         }, [P], r.My),
-        B = (0, m.m)({
+        V = (0, m.m)({
             location: "voice_channel_activities"
         }),
-        V = (0, f.G)("voice_channel_activities"),
+        B = (0, f.G)("voice_channel_activities"),
         H = k.length + O.length > 0;
     return (s.useEffect(() => {
         H && S.default.track(L.HAw.OPEN_POPOUT, {
@@ -88,7 +88,7 @@ function P(e) {
         className: a()(G.kL, {
             [G.iA]: j
         }, {
-            [G.XK]: V
+            [G.XK]: B
         }),
         children: [(0, i.jsx)(w, {
             channel: l,
@@ -106,7 +106,7 @@ function P(e) {
                 members: n,
                 activity: r
             } = e, o = r.application_id;
-            return (null != U && (o = U), B && null != o && M.sQ.has(o)) ? (0, i.jsxs)(s.Fragment, {
+            return (null != U && (o = U), V && null != o && M.sQ.has(o)) ? (0, i.jsxs)(s.Fragment, {
                 children: [(0, i.jsx)(v.A, {
                     presenceActivity: r,
                     channel: l,
@@ -114,7 +114,7 @@ function P(e) {
                     onAction: C
                 }), (0, i.jsx)(_.A, {
                     className: a()(G.L, {
-                        [G.SW]: V
+                        [G.SW]: B
                     }),
                     rewardOfferNoticeClassName: G.Nh,
                     applicationId: o,
@@ -142,7 +142,7 @@ function P(e) {
                             (0, o.mMO)(async () => {
                                 let {
                                     default: e
-                                } = await Promise.all([n.e("62175"), n.e("2292"), n.e("67231"), n.e("62733"), n.e("83518"), n.e("57009"), n.e("34749"), n.e("12664"), n.e("44667"), n.e("55090"), n.e("7803"), n.e("84704"), n.e("67646"), n.e("77374"), n.e("7525"), n.e("47065")]).then(n.bind(n, 585265));
+                                } = await Promise.all([n.e("62175"), n.e("2292"), n.e("67231"), n.e("62733"), n.e("83518"), n.e("24771"), n.e("34749"), n.e("12664"), n.e("44667"), n.e("55090"), n.e("7803"), n.e("84704"), n.e("67646"), n.e("77374"), n.e("7525"), n.e("47065")]).then(n.bind(n, 585265));
                                 return t => (0, i.jsx)(e, {
                                     ...t,
                                     guild: p

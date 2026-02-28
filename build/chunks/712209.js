@@ -2,8 +2,8 @@
 "use strict";
 n.d(t, {
     Ay: () => X,
-    mJ: () => B,
-    sz: () => V,
+    mJ: () => V,
+    sz: () => B,
     xB: () => k
 }), n(321073);
 var i, s, l = n(64700),
@@ -41,8 +41,8 @@ var i, s, l = n(64700),
     P = n(652215),
     w = n(37411),
     k = ((i = {})[i.Favorite = 0] = "Favorite", i[i.PrivateChannel = 1] = "PrivateChannel", i[i.HighImportanceMentioned = 2] = "HighImportanceMentioned", i[i.LowImportanceMentioned = 3] = "LowImportanceMentioned", i[i.AllMessagesNotifications = 4] = "AllMessagesNotifications", i[i.GuildChannel = 5] = "GuildChannel", i[i.OldChannel = 6] = "OldChannel", i[i.NoNotifications = 7] = "NoNotifications", i[i.ReallyOldChannel = 8] = "ReallyOldChannel", i),
-    B = ((s = {}).Loading = "loading", s.Loaded = "loaded", s.Done = "done", s);
-let V = 25;
+    V = ((s = {}).Loading = "loading", s.Loaded = "loaded", s.Done = "done", s);
+let B = 25;
 class H extends a.EventEmitter {
     state;
     scrollerRef;
@@ -268,7 +268,7 @@ function F(e, t) {
     if (s.length === e.messages.length && s.every((t, n) => e.messages[n] === t) && n) return e;
     let l = null != i.getAfter(e.oldestReadMessageId) || s[0]?.id === e.oldestUnreadMessageId,
         a = s[s.length - 1],
-        r = U.default.compare(a?.id, e.newestUnreadMessageId) >= 0 || s.length >= V;
+        r = U.default.compare(a?.id, e.newestUnreadMessageId) >= 0 || s.length >= B;
     return {
         ...e,
         messages: s,

@@ -57,12 +57,12 @@ let C = (0, a.A)(e => {
         w = [Math.max(U[0] ?? 1, 1), Math.max(U[1] ?? 1, 1), U[2]],
         {
             speakerTileWidth: k,
-            speakerTileHeight: B
+            speakerTileHeight: V
         } = (n = Math.floor((t = Math.floor(C / M - 8)) / g.i), {
             speakerTileWidth: t,
             speakerTileHeight: n
         }),
-        V = b ? C - 32 : Math.min(C - 64, 3 * k + 8),
+        B = b ? C - 32 : Math.min(C - 64, 3 * k + 8),
         H = e => e === U.length - 1 || 0 === y && 1 === e,
         [F, K] = s.useState(!1),
         [W, Y] = s.useState(!1);
@@ -105,7 +105,7 @@ let C = (0, a.A)(e => {
                         children: (0, i.jsx)(g.A, {
                             channel: a,
                             participant: l[0],
-                            width: V,
+                            width: B,
                             popoutType: I
                         })
                     }, "selected-participant");
@@ -131,7 +131,7 @@ let C = (0, a.A)(e => {
                     return null
             }
         },
-        rowHeight: e => null == P[e][0] ? 0 : 0 === e ? V / g.i + 8 : 1 === e ? F ? 0 : B : 98 * !W,
+        rowHeight: e => null == P[e][0] ? 0 : 0 === e ? B / g.i + 8 : 1 === e ? F ? 0 : V : 98 * !W,
         renderFooter: e => {
             let {
                 section: t

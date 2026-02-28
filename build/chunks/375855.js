@@ -97,14 +97,14 @@ function T(e) {
         }),
         {
             isMuted: k,
-            muteConfig: B
+            muteConfig: V
         } = (0, r.cf)([x.Ay], () => ({
             isMuted: x.Ay.isChannelMuted(null, L),
             muteConfig: x.Ay.getChannelMuteConfig(null, L)
         }), [L]);
     return (0, i.jsxs)(i.Fragment, {
         children: [U, P, w, k ? (0, i.jsx)(S, {
-            muteConfig: B,
+            muteConfig: V,
             className: a()(N.LM, {
                 [N.Sx]: null != U || null != P
             })

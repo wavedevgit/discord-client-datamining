@@ -115,7 +115,7 @@ let R = s.memo(function(e) {
         (0, p.JA)(t, !e.shiftKey, b.H9.CHANNEL_LIST)
     }, [t]), k = s.useCallback(() => {
         u.A.preload(t.guild_id, t.id)
-    }, [t.guild_id, t.id]), B = s.useCallback(e => {
+    }, [t.guild_id, t.id]), V = s.useCallback(e => {
         let s = m.A.getChannel(t.id);
         null != s && (0, h.L3)(e, async () => {
             let {
@@ -126,7 +126,7 @@ let R = s.memo(function(e) {
                 channel: s
             })
         })
-    }, [t.id]), V = null == L ? 0 : L.length, {
+    }, [t.id]), B = null == L ? 0 : L.length, {
         role: H,
         ...F
     } = (0, r.rm)(t.id), K = s.useRef(null), W = G > 0 ? S.intl.formatToPlainString(S.t["ZL7+I6"], {
@@ -166,7 +166,7 @@ let R = s.memo(function(e) {
                     [y.lY]: O
                 }),
                 onMouseDown: k,
-                onContextMenu: B,
+                onContextMenu: V,
                 children: [!D || P || l ? null : (0, i.jsx)("div", {
                     className: a()(y.gy, y.WS)
                 }), (0, i.jsx)(d.DUT, {
@@ -186,8 +186,8 @@ let R = s.memo(function(e) {
                             children: t.name
                         }), (0, i.jsxs)("div", {
                             className: y.Y_,
-                            children: [V > 0 && t.userLimit > 0 ? (0, i.jsx)(C.A, {
-                                userCount: V,
+                            children: [B > 0 && t.userLimit > 0 ? (0, i.jsx)(C.A, {
+                                userCount: B,
                                 video: M,
                                 channel: t
                             }) : null, (0, x.A)(G) ? (0, i.jsx)(E.A, {

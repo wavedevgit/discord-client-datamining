@@ -37,7 +37,10 @@ async function d(e) {
             s[e.id] = e
         }), t.forEach(e => {
             s[e.id] = e
-        }), Object.values(s)),
+        }), Object.values(s)).map(e => ({
+            ...e,
+            icon: e.icon?.split(",")[1] ? e.icon : void 0
+        })),
         v = [];
     return f.includes(i.fS.CAMERA) && (v = Object.entries(h).filter(e => {
         let [t, s] = e;

@@ -21,27 +21,27 @@ let m = e => {
         showGradient: _,
         confirmationFooter: p,
         color: N,
-        ...T
-    } = e, g = (0, i.Ay)(), {
-        buttonText: x,
+        ...x
+    } = e, T = (0, i.Ay)(), {
+        buttonText: g,
         marketingSubscriptionTierSkuId: A
     } = (0, d.s)({
         hasActivePromotion: m,
         subscriptionTier: n,
         useShorterCTA: E,
         isPersistentCTA: o
-    }), b = (0, s.V)(), h = b?.subscription_trial, f = null != h && A === h.sku_id, j = N ?? ((0, a.Mw)(g) ? l.XD.BRAND_INVERTED : l.XD.BRAND);
+    }), h = (0, s.V)(), f = h?.subscription_trial, b = null != f && A === f.sku_id, M = N ?? ((0, a.Mw)(T) ? l.XD.BRAND_INVERTED : l.XD.BRAND);
     return (0, r.jsx)(u.A, {
-        color: j,
+        color: M,
         textOptions: {
-            textOverride: x,
-            textClassName: f ? c.A : void 0,
+            textOverride: g,
+            textClassName: b ? c.A : void 0,
             ...t
         },
         onlyShineOnHover: !0,
         subscriptionTier: A,
         showGradient: _,
         confirmationFooter: p,
-        ...T
+        ...x
     })
 }

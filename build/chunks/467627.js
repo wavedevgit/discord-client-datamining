@@ -40,8 +40,8 @@ var i = n(627968),
     P = n(263715),
     w = n(987344),
     k = n(750448),
-    B = n(845211),
-    V = n(941604),
+    V = n(845211),
+    B = n(941604),
     H = n(246884),
     F = n(497140),
     K = n(34247),
@@ -178,7 +178,7 @@ function es(e) {
         location: "GuildsBar"
     });
     return (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(W.C, {}), o === y.RK.SERVER_RAIL_TOP && (0, i.jsx)(v.A, {}), l ? (0, i.jsx)(b.A, {}) : null, !t && (0, i.jsx)(B.A, {}), r.map(e => (0, i.jsx)(Q.A, {
+        children: [(0, i.jsx)(W.C, {}), o === y.RK.SERVER_RAIL_TOP && (0, i.jsx)(v.A, {}), l ? (0, i.jsx)(b.A, {}) : null, !t && (0, i.jsx)(V.A, {}), r.map(e => (0, i.jsx)(Q.A, {
             guildId: e
         }, e)), (0, i.jsx)(J.A, {
             onActivate: n
@@ -210,7 +210,7 @@ function el(e) {
         }), c, (0, i.jsx)(z.A, {}), s ? null : (0, i.jsx)(H.A, {
             disableTooltip: a.length > 0,
             lastTargetNode: o[o.length - 1]
-        }), s ? null : t, n ? null : (0, i.jsx)(V.A, {})]
+        }), s ? null : t, n ? null : (0, i.jsx)(B.A, {})]
     })
 }
 
@@ -227,8 +227,8 @@ function ea(e) {
         isSorting: x,
         startSorting: b,
         stopSorting: S
-    } = (0, U.A)(), O = s.useRef(!1), [L] = s.useState(() => new p.Ep), M = s.useRef(null), B = s.useRef(null), {
-        ref: V,
+    } = (0, U.A)(), O = s.useRef(!1), [L] = s.useState(() => new p.Ep), M = s.useRef(null), V = s.useRef(null), {
+        ref: B,
         ...H
     } = (0, d.$y)(), F = (0, g.R7z)(), [W, z] = s.useState(!1), J = (0, g.rdh)(m.A.modules.guildbar.AVATAR_SIZE), Q = (0, g.rdh)(m.A.space.SPACE_XS), ea = (0, N.A)("GuildsBar"), {
         pathname: er
@@ -246,7 +246,7 @@ function ea(e) {
             bottomInset: 16
         });
         return new ei(o, z, $.tEg, () => {
-            M.current?.calculateState(), B.current?.calculateState()
+            M.current?.calculateState(), V.current?.calculateState()
         }, n)
     }, [J, Q, o, ec]);
     s.useEffect(() => (ed.setResizeObserver(), () => {
@@ -337,7 +337,7 @@ function ea(e) {
                     className: ee.Xl,
                     barClassName: ee.Sh
                 }), (0, i.jsx)("ul", {
-                    ref: V,
+                    ref: B,
                     ...H,
                     ...F,
                     role: "tree",
@@ -374,7 +374,7 @@ function ea(e) {
                     })
                 }), (0, i.jsx)(k.A, {
                     reverse: !0,
-                    ref: B,
+                    ref: V,
                     isVisible: ed.isItemVisible,
                     onJumpTo: ed.handleJumpToGuild,
                     className: a()(ee.LZ, {

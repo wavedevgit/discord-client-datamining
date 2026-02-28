@@ -49,7 +49,7 @@ function O(e) {
         originApplicationId: d.A.getOriginApplicationId(t.id)
     })), P = (0, r.fi)(t.id), w = (0, o.q)({
         userId: t.id
-    }), k = (0, l.bG)([u.A], () => u.A.hidePersonalInformation), B = (0, l.bG)([A.A], () => A.A.getUserProfile(t.id)?.application);
+    }), k = (0, l.bG)([u.A], () => u.A.hidePersonalInformation), V = (0, l.bG)([A.A], () => A.A.getUserProfile(t.id)?.application);
     return (0, i.jsxs)("div", {
         className: R.rf,
         children: [(0, i.jsx)(_.A, {
@@ -111,9 +111,9 @@ function O(e) {
                     isHoveringOrFocusing: M,
                     animateOnHoverOrFocusOnly: !0
                 })
-            }), B?.popularApplicationCommandIds != null && (0, i.jsx)(p.A, {
-                applicationId: B.id,
-                commandIds: B.popularApplicationCommandIds,
+            }), V?.popularApplicationCommandIds != null && (0, i.jsx)(p.A, {
+                applicationId: V.id,
+                commandIds: V.popularApplicationCommandIds,
                 channel: L
             }), w.length > 0 && (0, i.jsx)(I.A, {
                 heading: j.intl.string(j.t["Uv/eTx"]),

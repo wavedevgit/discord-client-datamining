@@ -184,8 +184,8 @@ function k(e) {
         })]
     })
 }
-let B = [],
-    V = s.memo(function(e) {
+let V = [],
+    B = s.memo(function(e) {
         let {
             searchContext: t,
             search: n,
@@ -209,10 +209,10 @@ let B = [],
         s.useEffect(() => (g._.subscribe(L.jej.SEARCH_RESULTS_CLOSE, P), () => {
             g._.unsubscribe(L.jej.SEARCH_RESULTS_CLOSE, P)
         }), [P]);
-        let V = s.useRef(n.showBlockedResults);
+        let B = s.useRef(n.showBlockedResults);
         s.useEffect(() => {
-            if (V.current !== n.showBlockedResults) {
-                V.current = n.showBlockedResults;
+            if (B.current !== n.showBlockedResults) {
+                B.current = n.showBlockedResults;
                 let e = U.current;
                 null != e && e.scrollToBottom()
             }
@@ -291,16 +291,16 @@ let B = [],
             Q = W && J >= K,
             $ = K + 1,
             Z = (0, r.yK)([T.A], () => {
-                if (0 !== n.offset) return B;
+                if (0 !== n.offset) return V;
                 let e = u.length;
-                if (e < 10) return B;
+                if (e < 10) return V;
                 let i = 0;
                 if (u.forEach(e => {
                         (e.author.bot || null != e.webhookId) && i++
-                    }), i / e < .75) return B;
+                    }), i / e < .75) return V;
                 let s = (0, f.bS)(t),
                     l = T.A.getSearchResultsQueryString(s);
-                return (0, f._o)(l ?? "").some(e => e.type === L.LWr.FILTER_AUTHOR_TYPE) ? B : [o.M.SEARCH_AUTHOR_TYPE_SEARCH_RESULTS_HINT]
+                return (0, f._o)(l ?? "").some(e => e.type === L.LWr.FILTER_AUTHOR_TYPE) ? V : [o.M.SEARCH_AUTHOR_TYPE_SEARCH_RESULTS_HINT]
             }),
             [ee, et] = (0, h.kn)(Z),
             en = ee === o.M.SEARCH_AUTHOR_TYPE_SEARCH_RESULTS_HINT,
@@ -418,7 +418,7 @@ function H(e) {
         return T.A.getSearchResultsQuery(e)
     }), v = t.type === L.I4_.FAVORITES, j = s.useCallback(e => E.A.setShowBlockedResults(t, e), [t]), R = s.useDeferredValue(h), O = s.useDeferredValue(c), D = s.useDeferredValue(d);
     return (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(V, {
+        children: [(0, i.jsx)(B, {
             searchContext: t,
             search: O,
             searchRequestAnalyticsId: D,

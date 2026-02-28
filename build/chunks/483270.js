@@ -40,13 +40,13 @@ var i = n(627968),
     P = n(488926),
     w = n(427262),
     k = n(837921),
-    B = n(110574),
-    V = n(652215),
+    V = n(110574),
+    B = n(652215),
     H = n(985018),
     F = n(767952),
     K = n(701939);
 let W = k.Ay.getEnableHardwareAcceleration(),
-    Y = 44 + B.b,
+    Y = 44 + V.b,
     z = s.memo(function(e) {
         let {
             channel: t,
@@ -69,9 +69,9 @@ let W = k.Ay.getEnableHardwareAcceleration(),
             if (null == _) return;
             let e = `@${w.Ay.getUserTag(_,{decoration:"never"})}`,
                 n = `<@${_.id}>`;
-            U._.dispatch(V.jej.TEXTAREA_FOCUS, {
+            U._.dispatch(B.jej.TEXTAREA_FOCUS, {
                 channelId: t.id
-            }), U._.dispatchToLastSubscribed(V.jej.INSERT_TEXT, {
+            }), U._.dispatchToLastSubscribed(B.jej.INSERT_TEXT, {
                 plainText: e,
                 rawText: n
             }), m.A.startTyping(t.id)
@@ -79,8 +79,8 @@ let W = k.Ay.getEnableHardwareAcceleration(),
             e.stopPropagation(), (0, C.K)({
                 guildId: t.guild_id,
                 location: {
-                    section: V.JJy.THREAD_MEMBER_LIST,
-                    object: V.ZSU.BOOST_GEM_ICON
+                    section: B.JJy.THREAD_MEMBER_LIST,
+                    object: B.ZSU.BOOST_GEM_ICON
                 }
             })
         }, [t.guild_id]), z = (0, I.r)({
@@ -105,7 +105,7 @@ let W = k.Ay.getEnableHardwareAcceleration(),
                     onMouseDown: s,
                     ...l
                 } = e;
-                return (0, i.jsx)(B.A, {
+                return (0, i.jsx)(V.A, {
                     ref: o,
                     onContextMenu: F,
                     shouldAnimateStatus: W,
@@ -151,7 +151,7 @@ let W = k.Ay.getEnableHardwareAcceleration(),
             guildId: l,
             size: 16
         });
-        return t === V.clD.UNKNOWN ? (0, i.jsx)("div", {
+        return t === B.clD.UNKNOWN ? (0, i.jsx)("div", {
             className: K.lL,
             children: (0, i.jsx)("div", {
                 className: K.k1
@@ -175,7 +175,7 @@ let W = k.Ay.getEnableHardwareAcceleration(),
         let {
             channel: t
         } = e;
-        return t.type === V.rbe.PRIVATE_THREAD ? (0, i.jsxs)(i.Fragment, {
+        return t.type === B.rbe.PRIVATE_THREAD ? (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)("div", {
                 className: F.yF
             }), (0, i.jsxs)(A.Text, {
@@ -252,7 +252,7 @@ function J(e) {
         }),
         v = 0 === N.length || N.every(e => 0 === e.userIds.length);
     if (s.useEffect(() => {
-            G.default.track(V.HAw.MEMBER_LIST_VIEWED, {
+            G.default.track(B.HAw.MEMBER_LIST_VIEWED, {
                 channel_id: x.id,
                 channel_type: x.type,
                 guild_id: x.guild_id
@@ -301,7 +301,7 @@ function J(e) {
                                 guildOwnerId: R
                             }, s[n])
                         },
-                        footerHeight: e => 80 * (N[e] === S && x.type === V.rbe.PRIVATE_THREAD),
+                        footerHeight: e => 80 * (N[e] === S && x.type === B.rbe.PRIVATE_THREAD),
                         renderFooter: e => N[e.section] === S ? (0, i.jsx)(q, {
                             channel: x
                         }, "footer") : null,

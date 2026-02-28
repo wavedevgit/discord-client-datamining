@@ -42,7 +42,7 @@ var s = n(503698),
     w = n(597217),
     k = n(206314);
 
-function B(e) {
+function V(e) {
     let {
         focusedParticipant: t,
         channel: n
@@ -58,7 +58,7 @@ function B(e) {
     })
 }
 
-function V(e) {
+function B(e) {
     let {
         user: t,
         channel: n,
@@ -101,7 +101,7 @@ function H(e) {
             variant: "text-md/normal",
             color: "none",
             children: (0, d.A)(n.name)
-        }), a && (0, i.jsx)(B, {
+        }), a && (0, i.jsx)(V, {
             channel: l,
             focusedParticipant: s
         })]
@@ -112,12 +112,12 @@ function H(e) {
         t = (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(x.Ay.Divider, {
                 className: w.yF
-            }), (0, i.jsx)(V, {
+            }), (0, i.jsx)(B, {
                 user: e,
                 channel: l,
                 stream: n,
                 color: a ? "text-strong" : "none"
-            }), a && (0, i.jsx)(B, {
+            }), a && (0, i.jsx)(V, {
                 channel: l,
                 focusedParticipant: s
             })]
@@ -150,7 +150,7 @@ function F(e) {
     let v = (0, a.bG)([h.A], () => h.A.getChannelStatus(t)),
         L = t.isGuildVoice() && d && null != v && v.length > 0,
         G = (0, R.Ay)(t),
-        B = L ? (0, i.jsx)(r.m, {
+        V = L ? (0, i.jsx)(r.m, {
             asContainer: !0,
             text: P.intl.string(P.t.Mgpxiw),
             delay: 500,
@@ -190,7 +190,7 @@ function F(e) {
                 })]
             })
         }) : null,
-        V = (0, S.bG)({
+        B = (0, S.bG)({
             channelId: t.id
         });
     return (0, i.jsxs)("div", {
@@ -203,7 +203,7 @@ function F(e) {
                 className: l()(e, w.jr),
                 innerClassName: w.gi,
                 toolbarClassName: w.KE,
-                childrenBottom: B,
+                childrenBottom: V,
                 toolbar: (0, i.jsx)(O.A, {
                     channel: t,
                     appContext: c,
@@ -217,7 +217,7 @@ function F(e) {
                         children: [null != I ? (0, i.jsx)(x.Ay.ChannelIcon, {
                             icon: I,
                             "aria-label": y
-                        }) : null, f, V && (0, i.jsx)(r.m, {
+                        }) : null, f, B && (0, i.jsx)(r.m, {
                             text: P.intl.string(P.t.QyZ4Td),
                             children: (0, i.jsx)(o.m5V, {
                                 size: "xs",

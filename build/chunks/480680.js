@@ -193,11 +193,11 @@ function P(e) {
                 size: 8
             }), (0, i.jsx)(R.A, {
                 className: D.cl,
-                renderMessageGroup: V,
+                renderMessageGroup: B,
                 messages: l === O.Io.BOOKMARKS ? F : K,
                 unreadMessages: l === O.Io.BOOKMARKS ? [] : W,
                 listName: "notifications-inbox",
-                renderLoadingState: B,
+                renderLoadingState: V,
                 ignoreGrouping: l === O.Io.BOOKMARKS,
                 loadMore: j
             })]
@@ -222,11 +222,11 @@ function k(e, t, n) {
     }), [e, t, n])
 }
 
-function B() {
+function V() {
     return (0, i.jsx)(v.A, {})
 }
 
-function V(e, t) {
+function B(e, t) {
     return (0, i.jsx)(j.A, {
         message: e[0],
         groupedMessages: e.slice(1),

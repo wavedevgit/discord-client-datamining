@@ -46,9 +46,9 @@ function b(e) {
     } = (0, f.A)(t), G = (0, l.bG)([x.Ay], () => x.Ay.isDeaf()), U = M || D || G, P = (0, m.VE)({
         isSoundboardButtonDisabled: U
     }), [w, k] = (0, A.DP)(P), {
-        analyticsLocations: B
+        analyticsLocations: V
     } = (0, d.Ay)(), {
-        isHovered: V,
+        isHovered: B,
         setIsHovered: H,
         onMouseEnter: F,
         onMouseLeave: K
@@ -61,7 +61,7 @@ function b(e) {
             } = await n.e("51111").then(n.bind(n, 323002));
             return t => (0, i.jsx)(e, {
                 guildId: L,
-                sourceAnalyticsLocations: B,
+                sourceAnalyticsLocations: V,
                 ...t,
                 onInteraction: (0, h.s)("SoundboardContextMenu", y)
             })
@@ -74,7 +74,7 @@ function b(e) {
     let z = s.useRef(null);
     return (0, i.jsx)(o.Y, {
         targetElementRef: z,
-        shouldShow: V && (S === I.P.SOUNDBOARD || null == S) || S === I.P.SOUNDBOARD,
+        shouldShow: B && (S === I.P.SOUNDBOARD || null == S) || S === I.P.SOUNDBOARD,
         animation: o.Y.Animation.FADE,
         animationPosition: "top",
         position: "top",
@@ -119,8 +119,8 @@ function b(e) {
             onMouseLeave: () => {
                 null == S && (K(), O())
             },
-            isActive: V || S === I.P.SOUNDBOARD,
-            color: V || S === I.P.SOUNDBOARD ? "primaryDark" : void 0
+            isActive: B || S === I.P.SOUNDBOARD,
+            color: B || S === I.P.SOUNDBOARD ? "primaryDark" : void 0
         })
     })
 }

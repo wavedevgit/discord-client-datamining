@@ -43,10 +43,10 @@ function v(e) {
         isNewChannel: D,
         muted: G,
         resolvedUnreadSetting: U
-    } = e, P = (0, s.bG)([g.Ay], () => g.Ay.getMentionCount(t.id)), w = (0, s.bG)([g.Ay], () => g.Ay.getIsMentionLowImportance(t.id)), k = (0, r.Ay)(t), B = (0, s.bG)([m.A], () => !m.A.can(S.xBc.CONNECT, t)), V = (0, o.H)(t), H = (0, s.bG)([_.A], () => _.A.hasVideo(t.id)), F = (0, h.qT)(t.id) && t.isGuildStageVoice(), K = (0, E.Ay)({
+    } = e, P = (0, s.bG)([g.Ay], () => g.Ay.getMentionCount(t.id)), w = (0, s.bG)([g.Ay], () => g.Ay.getIsMentionLowImportance(t.id)), k = (0, r.Ay)(t), V = (0, s.bG)([m.A], () => !m.A.can(S.xBc.CONNECT, t)), B = (0, o.H)(t), H = (0, s.bG)([_.A], () => _.A.hasVideo(t.id)), F = (0, h.qT)(t.id) && t.isGuildStageVoice(), K = (0, E.Ay)({
         channel: t,
-        locked: B,
-        video: (H || F) && null == V,
+        locked: V,
+        video: (H || F) && null == B,
         selected: n
     }), W = (0, s.bG)([A.A], () => A.A.getNewThreadCount(t.guild_id, t.id)), Y = (0, d.ed)(t.guild_id, t.id), z = (0, s.bG)([p.A], () => p.A.getGuild(t.guild_id)?.features.has(S.GuildFeatures.COMMUNITY) ?? !1);
     if ((0, C.A)(P)) return (0, i.jsx)(b.A, {
@@ -80,10 +80,10 @@ function v(e) {
     }) : v && (0, f.t)(j) && z ? (0, i.jsx)(a.LpS, {
         text: y.intl.string(y.t.dI3q4h),
         color: l.A.unsafe_rawColors.RED_400.css
-    }) : null != V ? (0, i.jsx)(c.z, {
+    }) : null != B ? (0, i.jsx)(c.z, {
         textColor: "text-feedback-positive",
         entry: {
-            start: V
+            start: B
         }
     }) : null != O && O && (0, x.X)(k) ? (0, i.jsx)(I.A, {
         embeddedApps: k,

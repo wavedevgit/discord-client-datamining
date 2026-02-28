@@ -91,7 +91,7 @@ let P = o.Ay.connectStores([I.Ay, f.A], e => {
             unread: x.default.hasUnread(t.id)
         }
     })(R.OS),
-    B = o.Ay.connectStores([I.Ay, E.A], e => {
+    V = o.Ay.connectStores([I.Ay, E.A], e => {
         let {
             channel: t
         } = e, n = null, i = E.A.getState().statuses;
@@ -100,7 +100,7 @@ let P = o.Ay.connectStores([I.Ay, f.A], e => {
             status: n
         }
     })(R.nG),
-    V = o.Ay.connectStores([f.A, I.Ay, E.A], e => {
+    B = o.Ay.connectStores([f.A, I.Ay, E.A], e => {
         let {
             user: t
         } = e, n = f.A.getDMFromUserId(t.id);
@@ -464,7 +464,7 @@ class F extends s.PureComponent {
                     score: l ? n.score : void 0
                 }, `${n.type}-${n.record.id}`);
             case p.rD.USER:
-                return (0, i.jsx)(V, {
+                return (0, i.jsx)(B, {
                     id: this.getRowId(t),
                     focused: s >= 0 && t === s,
                     onClick: () => this.selectResult(n),
@@ -476,7 +476,7 @@ class F extends s.PureComponent {
                     score: l ? n.score : void 0
                 }, `${n.type}-${n.record.id}`);
             case p.rD.GROUP_DM:
-                return (0, i.jsx)(B, {
+                return (0, i.jsx)(V, {
                     id: this.getRowId(t),
                     focused: s >= 0 && t === s,
                     onClick: () => this.selectResult(n),

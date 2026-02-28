@@ -44,13 +44,13 @@ let L = s.memo(function(e) {
     }, [t.id]);
     let w = (0, r.bG)([f.A], () => f.A.getAnnouncement(t.id)),
         k = w?.state === "success" ? w.announcement : void 0,
-        [B, V] = (0, A.x_)(o.M.GAME_SHOP_NEW_BADGE, t.id, k?.id ?? ""),
-        H = B === o.M.GAME_SHOP_NEW_BADGE && null != k,
+        [V, B] = (0, A.x_)(o.M.GAME_SHOP_NEW_BADGE, t.id, k?.id ?? ""),
+        H = V === o.M.GAME_SHOP_NEW_BADGE && null != k,
         F = null == w || "loading" === w.state || H || t.id !== (0, g.zf)() || !P,
         [K, W] = (0, A.RF)(F ? null : o.M.SLAYER_STOREFRONT_ORBS_REWARDS_ANNOUNCEMENT, 1),
         Y = K === o.M.SLAYER_STOREFRONT_ORBS_REWARDS_ANNOUNCEMENT,
         z = H || Y,
-        X = s.useMemo(() => H ? V : W, [H, V, W]);
+        X = s.useMemo(() => H ? B : W, [H, B, W]);
     s.useEffect(() => {
         l && z && X(j.i.INDIRECT_ACTION)
     }, [X, l, z]);

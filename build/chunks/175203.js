@@ -41,8 +41,8 @@ var i = n(627968),
     P = n(461782),
     w = n(614518),
     k = n(706787),
-    B = n(961350),
-    V = n(760751),
+    V = n(961350),
+    B = n(760751),
     H = n(111162),
     F = n(430452),
     K = n(290863),
@@ -102,7 +102,7 @@ let eh = [er.lp.ACTIVITY],
             eT = U.Q_.useSetting(),
             ey = (0, c.bG)([H.default], () => H.default.isStreamInfoOverlayEnabled),
             [ev, ej] = s.useState(!1),
-            eR = (0, c.bG)([B.default], () => B.default.getId()),
+            eR = (0, c.bG)([V.default], () => V.default.getId()),
             eO = u.type === er.lp.ACTIVITY ? null : u.user,
             eL = eO?.id ?? null,
             [eM] = (0, _.A)(u.type === er.lp.ACTIVITY ? [u.applicationId] : []),
@@ -114,8 +114,8 @@ let eh = [er.lp.ACTIVITY],
                 ringing: ew,
                 hasVideo: ek
             } = (0, el.A)(u, eR),
-            eB = (0, c.bG)([G.A], () => null !== eL && G.A.isUserPlayingSounds(eL), [eL]),
-            eV = (t = eR, n = u, l = z.getGuildId(), r = n.type !== er.lp.ACTIVITY ? n.user.id : n.applicationId, o = (0, c.cf)([Y.A], () => {
+            eV = (0, c.bG)([G.A], () => null !== eL && G.A.isUserPlayingSounds(eL), [eL]),
+            eB = (t = eR, n = u, l = z.getGuildId(), r = n.type !== er.lp.ACTIVITY ? n.user.id : n.applicationId, o = (0, c.cf)([Y.A], () => {
                 let e = Y.A.getVoiceState(l, r);
                 return {
                     muted: e?.mute ?? !1,
@@ -152,7 +152,7 @@ let eh = [er.lp.ACTIVITY],
                 autoTrackExposure: !1
             }),
             eY = (0, c.bG)([K.A], () => eW && null != eL ? K.A.findActivity(eL, e => null != e.application_id && e.type === ea.$pd.PLAYING) : null, [eW, eL]),
-            ez = (0, c.bG)([V.A], () => eY?.application_id != null ? V.A.getDetectableGame(eY.application_id) : null),
+            ez = (0, c.bG)([B.A], () => eY?.application_id != null ? B.A.getDetectableGame(eY.application_id) : null),
             eX = (0, c.bG)([g.A], () => null != ez && eY?.application_id != null ? g.A.getApplication(eY?.application_id) : void 0),
             eq = (0, D.UF)({
                 userId: eL,
@@ -329,7 +329,7 @@ let eh = [er.lp.ACTIVITY],
                                     participantId: u.id,
                                     participantType: u.type,
                                     hasVideo: ek ?? !1,
-                                    ...eV,
+                                    ...eB,
                                     idle: eN,
                                     platform: eK,
                                     title: (0, $.A)(z, u),
@@ -351,9 +351,9 @@ let eh = [er.lp.ACTIVITY],
                                     streamId: u.type === er.lp.STREAM ? u.streamId : null
                                 }), J && !es ? (0, i.jsx)("div", {
                                     className: a()(eu.PQ, {
-                                        [eu.pU]: !ep && (eB || null != eF)
+                                        [eu.pU]: !ep && (eV || null != eF)
                                     }),
-                                    style: ep || eB ? void 0 : e5
+                                    style: ep || eV ? void 0 : e5
                                 }) : null]
                             })
                         }), eT && ey && ev && (0, i.jsx)(Z.A, {
@@ -477,8 +477,8 @@ let e_ = s.memo(e => {
         serverDeafened: P,
         hasVideo: w,
         hideAudioIcon: k,
-        onToggleMute: B,
-        popoutType: V,
+        onToggleMute: V,
+        popoutType: B,
         paused: H,
         controlsBottom: K,
         streamId: W
@@ -523,7 +523,7 @@ let e_ = s.memo(e => {
     return A && E === er.lp.STREAM && ei.push((0, i.jsx)(j.A, {
         streamId: W,
         paused: H
-    }, "zoom-controls")), A ? V === C.N.CALL_TILE && (ei.push((0, i.jsx)(eg, {
+    }, "zoom-controls")), A ? B === C.N.CALL_TILE && (ei.push((0, i.jsx)(eg, {
         channelId: y.id,
         participantId: x,
         hideWhenInactive: !1,
@@ -545,7 +545,7 @@ let e_ = s.memo(e => {
         hideWhenInactive: !$,
         idle: t
     }, "options")), ee && ei.push((0, i.jsx)(em, {
-        onClick: B,
+        onClick: V,
         tooltipText: G ? ed.intl.string(ed.t.YqAjXy) : ed.intl.string(ed.t.w4m945),
         icon: G ? h._RO : h.HKD,
         hideWhenInactive: !G && !$,
