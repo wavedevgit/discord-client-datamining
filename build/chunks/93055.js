@@ -14,7 +14,7 @@ var a = n(808728),
     o = n(967198);
 n(661191);
 var s = n(181079),
-    d = n(616075),
+    d = n(379587),
     u = n(924703),
     c = n(652215);
 
@@ -22,7 +22,7 @@ function A(e) {
     let {
         enabled: t,
         hasHigherPrivileges: n
-    } = (0, d.e)({
+    } = (0, d.m)({
         location: "useCanFavoriteChannel"
     }), i = (0, l.bG)([s.A], () => s.A.isFavorite(e.id)), r = e.isThread();
     return t && !__OVERLAY__ && !i && (!r || n)

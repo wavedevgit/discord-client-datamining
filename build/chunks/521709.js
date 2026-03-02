@@ -15,7 +15,7 @@ var i = r(311907),
 let p = (0, s.A)(function(e) {
     let {
         onSelect: t
-    } = e, r = (0, i.bG)([o.A], () => o.A.favoriteServerMuted);
+    } = e, r = (0, i.bG)([o.A], () => o.A.favoriteGuildMuted);
     return (0, n.jsx)(c.W1t, {
         "data-menu-migrated": !0,
         navId: "favorite-server-context",
@@ -26,7 +26,7 @@ let p = (0, s.A)(function(e) {
             children: (0, n.jsx)(c.sLh, {
                 id: "mute-server",
                 label: u.intl.string(u.t.vRzp7P),
-                action: () => (0, d.p0)(),
+                action: () => (0, d.zE)(),
                 checked: r
             })
         })

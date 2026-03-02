@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(735438),
     r = n.n(i),
     a = n(181079),
-    l = n(957300),
-    s = n(616075),
+    l = n(379587),
+    s = n(957300),
     o = n(832275),
     d = n(366811),
     _ = n(309010),
@@ -18,11 +18,11 @@ var i = n(735438),
 let E = r().throttle(function() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 1,
         t = c.Ay.getFlattenedGuildIds(),
-        n = l.E.getState().isPreviewMode,
+        n = s.E.getState().isPreviewMode,
         {
             enabled: i,
             hasHigherPrivileges: r
-        } = s.w.getConfig({
+        } = l.o.getConfig({
             location: "navigateToServer"
         }),
         E = function(e) {

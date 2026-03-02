@@ -48,11 +48,11 @@ function M() {
         } = (0, S.CJ)(),
         [W, Y] = s.useState(!1),
         {
-            favoriteServerMuted: z,
+            favoriteGuildMuted: z,
             favoriteChannels: X
         } = (0, o.cf)([b.A], () => ({
             favoriteChannels: b.A.getFavoriteChannels(),
-            favoriteServerMuted: b.A.favoriteServerMuted
+            favoriteGuildMuted: b.A.favoriteGuildMuted
         })),
         q = (0, o.bG)([E.A], () => E.A.getChannelId(j.YYv)),
         J = (0, o.bG)([C.A], () => C.A.getChannel(q)),

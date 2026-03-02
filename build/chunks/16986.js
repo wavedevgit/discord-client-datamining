@@ -10,7 +10,7 @@ var i = n(627968),
     o = n(688810),
     c = n(181079),
     d = n(422258),
-    u = n(616075),
+    u = n(379587),
     _ = n(46054),
     m = n(753806),
     A = n(145331),
@@ -42,10 +42,10 @@ function b() {
         M = E.Hu.useSetting(),
         {
             enabled: G
-        } = (0, u.e)({
+        } = (0, u.m)({
             location: "UserSettingsTextImages"
         }),
-        U = (0, a.bG)([c.A], () => c.A.favoriteServerEnabled),
+        U = (0, a.bG)([c.A], () => c.A.favoriteGuildEnabled),
         k = (0, a.bG)([h.default], () => {
             let e = h.default.getCurrentUser();
             return null == e || !p.Ay.isPremiumExactly(e, I.PremiumTypes.TIER_2)
@@ -216,7 +216,7 @@ function b() {
                             checked: U,
                             description: f.intl.string(N.default.IF7iE0),
                             disabled: k,
-                            onChange: d.Qh,
+                            onChange: d.tV,
                             label: f.intl.string(N.default["0h2CcM"])
                         })
                     })

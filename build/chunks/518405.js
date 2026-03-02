@@ -15,10 +15,10 @@ var n = i(311907),
 let S = (0, r.zD)(o.X.CHAT_FAVORITES_TOGGLE, {
     useTitle: () => A.intl.string(T.default["0h2CcM"]),
     useSubtitle: () => A.intl.string(T.default.IF7iE0),
-    useValue: () => (0, n.bG)([l.A], () => l.A.favoriteServerEnabled),
+    useValue: () => (0, n.bG)([l.A], () => l.A.favoriteGuildEnabled),
     useDisabled: () => (0, n.bG)([a.default], () => {
         let t = a.default.getCurrentUser();
         return null == t || !u.Ay.isPremiumExactly(t, d.PremiumTypes.TIER_2)
     }),
-    setValue: s.Qh
+    setValue: s.tV
 })

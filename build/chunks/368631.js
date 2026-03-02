@@ -22,7 +22,7 @@ var i = n(627968),
     h = n(212031),
     x = n(652525),
     p = n(932001),
-    E = n(616075),
+    E = n(379587),
     C = n(3137),
     T = n(454292),
     S = n(704591),
@@ -936,7 +936,7 @@ let ex = () => [a.M.CLIENT_THEMES_SETTINGS_BADGE, a.M.DEKSTOP_CUSTOM_APP_ICON_BA
                 section: eu.nc_.TEXT,
                 searchableTitles: [e_.intl.string(e_.t.k8fFjp)],
                 parent: ed.H.CHAT,
-                predicate: () => E.w.getConfig({
+                predicate: () => E.o.getConfig({
                     location: "SettingsRendererConfig"
                 }).enabled
             },
@@ -944,7 +944,7 @@ let ex = () => [a.M.CLIENT_THEMES_SETTINGS_BADGE, a.M.DEKSTOP_CUSTOM_APP_ICON_BA
                 section: eu.nc_.TEXT,
                 searchableTitles: [e_.intl.string(e_.t.k8fFjp)],
                 parent: ed.H.CHAT_FAVORITES,
-                predicate: () => E.w.getConfig({
+                predicate: () => E.o.getConfig({
                     location: "SettingsRendererConfig"
                 }).enabled
             },
