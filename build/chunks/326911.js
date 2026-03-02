@@ -52,7 +52,8 @@ class h extends s.Component {
         try {
             if (this.props.acceptGiftCardRedemption) try {
                 await (0, c.Qp)(n), (0, c.HF)({
-                    initialCode: n
+                    initialCode: n,
+                    withRedemptionSuccessModal: !0
                 }), this.setState({
                     codeInput: ""
                 });

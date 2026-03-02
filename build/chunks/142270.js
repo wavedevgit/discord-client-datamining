@@ -35,7 +35,7 @@ let E = {
             className: T
         } = e, {
             balance: C
-        } = (0, m.W)(), P = (0, d.DK)(c.W.NITRO, "BalanceWidgetMenu"), [R, A] = n.useState(h.k.DEFAULT), [_, I] = n.useState(!1), [N, k] = n.useState(!1), D = n.useRef(null);
+        } = (0, m.W)(), R = (0, d.DK)(c.W.NITRO, "BalanceWidgetMenu"), [P, A] = n.useState(h.k.DEFAULT), [_, I] = n.useState(!1), [N, k] = n.useState(!1), D = n.useRef(null);
         (0, o.j)(!_);
         let M = n.useCallback(() => {
                 let e = !_;
@@ -49,7 +49,7 @@ let E = {
                 _ && M()
             }, [_, M]),
             B = (0, s.A)(null, O),
-            V = n.useMemo(() => (0, a.jsx)(x.b, {
+            w = n.useMemo(() => (0, a.jsx)(x.b, {
                 analyticsPage: v,
                 ctaText: l,
                 ctaOnClick: () => {
@@ -57,7 +57,7 @@ let E = {
                 },
                 linkText: S
             }), [v, l, S, M, r]),
-            w = n.useMemo(() => (0, a.jsx)(u.A, {
+            V = n.useMemo(() => (0, a.jsx)(u.A, {
                 targetElementRef: D,
                 shouldShow: _,
                 onRequestClose: M,
@@ -74,19 +74,19 @@ let E = {
             children: [(0, a.jsx)(b.J, {
                 pillRef: D,
                 balance: C,
-                balanceWidgetMode: R,
+                balanceWidgetMode: P,
                 onMouseDown: e => {
                     e.stopPropagation()
                 },
                 onClick: M,
                 showNotificationBadge: t
-            }), P ? w : _ && (0, a.jsx)("div", {
+            }), R ? V : _ && (0, a.jsx)("div", {
                 className: i()(f.Ui, j, {
                     [f.R]: N,
                     [f.RK]: !N
                 }),
                 ref: B,
-                children: V
+                children: w
             })]
         })
     };

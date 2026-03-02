@@ -25,8 +25,8 @@ var a = l(627968),
     j = l(788868),
     T = l(652215),
     C = l(901123),
-    P = l(49370),
-    R = l(985018),
+    R = l(49370),
+    P = l(985018),
     A = l(125634),
     _ = l(268920),
     I = l(633217),
@@ -81,7 +81,7 @@ function B(e) {
         location: "PremiumTenureRewardsOrbsBalancePopover"
     }), _ = (0, o.bG)([g.default], () => g.default.getCurrentUser()), {
         balance: I
-    } = (0, b.W)(), B = !(0, f.ki)(_), V = n.useMemo(() => {
+    } = (0, b.W)(), B = !(0, f.ki)(_), w = n.useMemo(() => {
         let e = (0, f.YE)(_, j.PremiumTypes.TIER_2);
         if (!S || B) return null;
         if (e && null != C) {
@@ -90,7 +90,7 @@ function B(e) {
                 children: [(0, a.jsx)(d.EYj, {
                     variant: "text-xs/normal",
                     color: "text-default",
-                    children: R.intl.format(P.default["AvL/At"], {
+                    children: P.intl.format(R.default["AvL/At"], {
                         days: Math.max(1, e),
                         deepLinkToNitroOrbs: D
                     })
@@ -98,7 +98,7 @@ function B(e) {
             })
         }
         return null
-    }, [_, B, C, S]), w = (I ?? 0) >= 4100;
+    }, [_, B, C, S]), V = (I ?? 0) >= 4100;
     return (0, a.jsx)(u.x, {
         targetElementRef: t,
         shouldShow: l,
@@ -108,10 +108,10 @@ function B(e) {
         modal: !0,
         closeOnClickOutside: !0,
         children: (0, a.jsx)(d.NPJ, {
-            theme: w ? T.NJ8.DARKER : void 0,
+            theme: V ? T.NJ8.DARKER : void 0,
             children: e => (0, a.jsxs)("div", {
                 className: i()(e, A.j),
-                children: [w && (0, a.jsx)(m.A, {
+                children: [V && (0, a.jsx)(m.A, {
                     autoPlay: !v,
                     loop: !v,
                     muted: !0,
@@ -136,9 +136,9 @@ function B(e) {
                                 }), (0, a.jsx)(d.EYj, {
                                     variant: "text-xs/normal",
                                     color: "text-muted",
-                                    children: R.intl.string(P.default.KclK9z)
+                                    children: P.intl.string(R.default.KclK9z)
                                 })]
-                            }), V]
+                            }), w]
                         }), (0, a.jsx)(d.$nd, {
                             text: x,
                             variant: "primary",
@@ -149,9 +149,9 @@ function B(e) {
                             variant: "text-xs/normal",
                             color: B ? "text-default" : "text-muted",
                             className: A.CU,
-                            children: B ? R.intl.format(P.default.juvXqj, {
+                            children: B ? P.intl.format(R.default.juvXqj, {
                                 deepLinkToNitroOrbs: M
-                            }) : R.intl.format(P.default.fhAVek, {
+                            }) : P.intl.format(R.default.fhAVek, {
                                 helpdeskArticle: O
                             })
                         })]

@@ -154,11 +154,11 @@ let y = [{
                 }, [v, S]);
                 let {
                     isLoadedForPremiumSKUs: C,
-                    selectedPlan: P
+                    selectedPlan: R
                 } = (0, d.n1)({
                     subscriptionPlanId: S
                 });
-                return !m && null != b && C && E && null != P ? (0, a.jsxs)("div", {
+                return !m && null != b && C && E && null != R ? (0, a.jsxs)("div", {
                     className: g.Cd,
                     children: [(0, a.jsx)(d.dL, {
                         stepConfigs: y,
@@ -174,7 +174,7 @@ let y = [{
                         onClose: o,
                         onComplete: u,
                         paymentContextOverrides: {
-                            selectedPlan: P,
+                            selectedPlan: R,
                             setSelectedPlanId: j
                         }
                     }), (0, a.jsx)(f, {})]

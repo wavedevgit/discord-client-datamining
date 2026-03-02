@@ -77,12 +77,12 @@ let p = {
             emerald: c.Ac.PREMIUM_TENURE_36_MONTH,
             ruby: c.Ac.PREMIUM_TENURE_60_MONTH,
             opal: c.Ac.PREMIUM_TENURE_72_MONTH
-        })[h], [h]), P = null != C ? (0, u.I)(C).standard : null, R = n.useMemo(() => {
+        })[h], [h]), R = null != C ? (0, u.I)(C).standard : null, P = n.useMemo(() => {
             if (null == C) return "";
             let e = c.VD[C];
             return (d.intl.string(d.t.lG6a5x) + " " + d.intl.string(e.nameUnformatted)).toLocaleUpperCase()
         }, [C]), A = n.useMemo(() => {
-            if (!r || null == P) return;
+            if (!r || null == R) return;
             let e = x ? {
                 progressCircleText: b,
                 progressCirclePercent: g,
@@ -93,12 +93,12 @@ let p = {
                 component: i.DynamicGraphicComponent.BADGE_IMAGE_WITH_PROGRESS_CIRCLE,
                 aspectRatio: "6/4",
                 props: {
-                    src: P,
-                    alt: R,
+                    src: R,
+                    alt: P,
                     ...e
                 }
             }
-        }, [r, P, R, x, b, g, y]), _ = {
+        }, [r, R, P, x, b, g, y]), _ = {
             title: t,
             body: l,
             graphic: A,

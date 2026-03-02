@@ -25,8 +25,8 @@ var a = l(627968),
     j = l(194509),
     T = l(761705),
     C = l(448362),
-    P = l(71393),
-    R = l(166403),
+    R = l(71393),
+    P = l(166403),
     A = l(652215),
     _ = l(788868),
     I = l(749226);
@@ -49,16 +49,16 @@ let k = {
         name: "Checkout Test Panel",
         id: "checkout-test-panel",
         component: () => {
-            let [e, t] = n.useState(_.pe.TIER_2), [l, f] = n.useState(null), E = (0, s.yK)([P.A], () => P.A.getGuildsArray()), [k] = (0, s.yK)([R.A], () => [R.A.getPremiumSubscription()]), D = E.map(e => ({
+            let [e, t] = n.useState(_.pe.TIER_2), [l, f] = n.useState(null), E = (0, s.yK)([R.A], () => R.A.getGuildsArray()), [k] = (0, s.yK)([P.A], () => [P.A.getPremiumSubscription()]), D = E.map(e => ({
                 id: e.id,
                 value: e,
                 label: e.name
-            })), [M, O] = n.useState(D.length > 0 ? D[0].value : null), [B, V] = n.useState(""), [w, L] = n.useState({
+            })), [M, O] = n.useState(D.length > 0 ? D[0].value : null), [B, w] = n.useState(""), [V, L] = n.useState({
                 plan_id: _.gD.PREMIUM_MONTH_TIER_2,
                 gift: "true"
-            }), G = "true" !== w.gift && null != k, [U, H] = n.useState(D.length > 0 ? D[0].value : null), {
+            }), G = "true" !== V.gift && null != k, [U, H] = n.useState(D.length > 0 ? D[0].value : null), {
                 analyticsLocations: $
-            } = (0, x.Ay)(h.A.PAYMENT_FLOW_TEST_PAGE), [W, Y] = n.useState(""), [F, q] = n.useState(A.dJq), {
+            } = (0, x.Ay)(h.A.PAYMENT_FLOW_TEST_PAGE), [Y, W] = n.useState(""), [F, q] = n.useState(A.dJq), {
                 balance: K,
                 isFetching: z,
                 error: J
@@ -172,7 +172,7 @@ let k = {
                                     label: "Standalone: Trial Promotion Redemption",
                                     placeholder: "Promotion Code",
                                     value: B,
-                                    onChange: e => V(e)
+                                    onChange: e => w(e)
                                 }), (0, a.jsx)(o.m_, {
                                     text: "Need Promotion Code",
                                     shouldShow: B.length < 1,
@@ -190,7 +190,7 @@ let k = {
                             label: "Standalone: Gift/Subscription Purchase",
                             children: [(0, a.jsx)(c.l6P, {
                                 label: "Plan",
-                                value: w.plan_id,
+                                value: V.plan_id,
                                 options: [{
                                     id: "tier_2",
                                     value: _.gD.PREMIUM_MONTH_TIER_2,
@@ -214,7 +214,7 @@ let k = {
                                 fullWidth: !0
                             }), (0, a.jsx)(c.l6P, {
                                 label: "Type",
-                                value: w.gift,
+                                value: V.gift,
                                 options: [{
                                     id: "gift",
                                     value: "true",
@@ -242,7 +242,7 @@ let k = {
                                 disabled: G,
                                 onClick: () => {
                                     window.open(A.BVt.BILLING_PREMIUM_SUBSCRIBE + "?" + r.stringify({
-                                        ...w
+                                        ...V
                                     }))
                                 }
                             })
@@ -310,8 +310,8 @@ let k = {
                                 children: [(0, a.jsx)(c.ksK, {
                                     label: "Application Id",
                                     placeholder: "Application Id",
-                                    value: W,
-                                    onChange: Y
+                                    value: Y,
+                                    onChange: W
                                 }), (0, a.jsx)(c.ksK, {
                                     label: "Sku Id",
                                     placeholder: "Sku Id",
@@ -322,7 +322,7 @@ let k = {
                                 variant: "primary",
                                 text: "Open App Subs Modal for Activity",
                                 onClick: () => (0, m.j)({
-                                    applicationId: W,
+                                    applicationId: Y,
                                     skuId: F,
                                     openPremiumPaymentModal: () => !0,
                                     analyticsLocations: [],

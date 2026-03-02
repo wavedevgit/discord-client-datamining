@@ -29,10 +29,10 @@ let p = () => (0, a.jsx)("img", {
             disabled: g,
             isInModalOverlay: y,
             className: f
-        } = e, [E, v] = (0, n.useState)(!1), S = (0, n.useMemo)(() => m === o.k.SELECTED ? d.wH : E ? d.mr : d.Ay, [m, E]), [j, T] = (0, n.useState)(!1), [C, P] = (0, n.useState)(!1), [R, A] = (0, n.useState)(2700), _ = null === r;
+        } = e, [E, v] = (0, n.useState)(!1), S = (0, n.useMemo)(() => m === o.k.SELECTED ? d.wH : E ? d.mr : d.Ay, [m, E]), [j, T] = (0, n.useState)(!1), [C, R] = (0, n.useState)(!1), [P, A] = (0, n.useState)(2700), _ = null === r;
         (0, n.useEffect)(() => {
             _ && !j && (T(!0), setTimeout(() => {
-                P(!0)
+                R(!0)
             }, 500))
         }, [_, T, j]), (0, n.useEffect)(() => {
             C && !_ && T(!1)
@@ -75,7 +75,7 @@ let p = () => (0, a.jsx)("img", {
                     value: N,
                     onValueChange: B,
                     onValueReached: O,
-                    targetTotalCounterTime: R,
+                    targetTotalCounterTime: P,
                     className: I ? d.F : void 0
                 }), h && (0, a.jsx)(p, {})]
             })

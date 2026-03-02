@@ -45,7 +45,7 @@ async function j(e, t) {
 }
 
 function T() {
-    let [e, t] = n.useState(!1), [l, i] = n.useState(!1), [d, b] = n.useState(null), [T, C] = n.useState(null), [P, R] = n.useState(E.defaultValue), [A, _] = n.useState(null), I = (0, r.bG)([m.A], () => m.A.paymentSources), N = (0, r.bG)([m.A], () => m.A.hasFetchedPaymentSources), k = (0, r.bG)([m.A], () => m.A.defaultPaymentSourceId);
+    let [e, t] = n.useState(!1), [l, i] = n.useState(!1), [d, b] = n.useState(null), [T, C] = n.useState(null), [R, P] = n.useState(E.defaultValue), [A, _] = n.useState(null), I = (0, r.bG)([m.A], () => m.A.paymentSources), N = (0, r.bG)([m.A], () => m.A.hasFetchedPaymentSources), k = (0, r.bG)([m.A], () => m.A.defaultPaymentSourceId);
     n.useEffect(() => {
         N || (0, u.$o)()
     }, [N]), n.useEffect(() => {
@@ -88,10 +88,10 @@ Payment source changed.`)
         }), [I]),
         O = async () => {
             if (null == A || "" === A) return void b("Please select a payment source first.");
-            if (null == P || "" === P || P === g.dJq) return void b("Please select a SKU ID.");
+            if (null == R || "" === R || R === g.dJq) return void b("Please select a SKU ID.");
             t(!0), b(null), C(null);
             try {
-                let e = await (0, c.Aj)(P, A, "US", !1, {
+                let e = await (0, c.Aj)(R, A, "US", !1, {
                     gift_style: null,
                     recipient_id: void 0,
                     custom_message: void 0,
@@ -240,8 +240,8 @@ Error: ${t}`)
                     },
                     children: (0, a.jsx)(o.l6P, {
                         selectionMode: "single",
-                        value: P,
-                        onSelectionChange: R,
+                        value: R,
+                        onSelectionChange: P,
                         options: E.options,
                         formatOption: e => {
                             let {
@@ -290,7 +290,7 @@ Error: ${t}`)
                     size: "sm",
                     text: e ? "Creating Order..." : "Create Order",
                     onClick: O,
-                    disabled: e || null == A || "" === A || null == P || "" === P || P === g.dJq
+                    disabled: e || null == A || "" === A || null == R || "" === R || R === g.dJq
                 }), (0, a.jsx)(s.$nd, {
                     variant: "secondary",
                     size: "sm",

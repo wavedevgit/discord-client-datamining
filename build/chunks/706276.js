@@ -18,7 +18,7 @@ let x = () => {
         let [e, t] = n.useState(m.PremiumTypes.TIER_0), [l, x] = n.useState(s.g.WHAT_YOU_LOSE), [g, y] = n.useState(null), [f, E] = n.useState(m.gD.PREMIUM_MONTH_TIER_0), [v, S] = n.useState([]), [j, T] = n.useState(() => {
             let e = new Date;
             return e.setMonth(e.getMonth() + 1), e
-        }), [C, P] = n.useState(null), [R, A] = n.useState(!1), [_, I] = n.useState(!1), [N, k] = n.useState(!1);
+        }), [C, R] = n.useState(null), [P, A] = n.useState(!1), [_, I] = n.useState(!1), [N, k] = n.useState(!1);
         (0, n.useEffect)(() => {
             (0, i.zS)()
         }, []), (0, n.useEffect)(() => {
@@ -65,7 +65,7 @@ let x = () => {
                     }]), E(m.gD.PREMIUM_MONTH_TIER_2)
             }
         }, [e]), (0, n.useEffect)(() => {
-            [s.g.CONFIRM_DISCOUNT, s.g.DISCOUNT_APPLIED].includes(l) && null === g && y(b()), l === s.g.PREVIEW && null === C && P(new u.A({
+            [s.g.CONFIRM_DISCOUNT, s.g.DISCOUNT_APPLIED].includes(l) && null === g && y(b()), l === s.g.PREVIEW && null === C && R(new u.A({
                 id: "",
                 invoiceItems: [{
                     id: "",
@@ -89,7 +89,7 @@ let x = () => {
                 subscriptionPeriodStart: new Date,
                 subscriptionPeriodEnd: j,
                 status: d.lT7.PAID
-            })), l !== s.g.PREVIEW && null !== C && P(null)
+            })), l !== s.g.PREVIEW && null !== C && R(null)
         }, [l, g, j, f, C]);
         let D = n.useCallback(async () => {
             k(!0), await (0, r.mMO)(async () => t => (0, a.jsx)(c.m, {
@@ -105,7 +105,7 @@ let x = () => {
                     intervalType: m.WT.MONTH,
                     intervalCount: 1
                 },
-                errorOnCancel: R,
+                errorOnCancel: P,
                 errorOnRedeem: _,
                 setActiveStep: e => {
                     x(e), t.onClose()
@@ -134,7 +134,7 @@ let x = () => {
                     pauseReason: p.qf.UNKNOWN
                 }
             }))
-        }, [e, g, f, C, R, _, l, j]);
+        }, [e, g, f, C, P, _, l, j]);
         return (0, n.useEffect)(() => {
             N && D()
         }, [l, N, D]), (0, a.jsxs)(o.LB, {
@@ -229,9 +229,9 @@ let x = () => {
                 })
             }), (0, a.jsx)(o.MG, {
                 children: (0, a.jsx)(r.Checkbox, {
-                    checked: R,
+                    checked: P,
                     onChange: () => {
-                        A(!R)
+                        A(!P)
                     },
                     label: "Error on Cancel"
                 })

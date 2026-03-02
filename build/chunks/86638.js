@@ -57,7 +57,7 @@ function y(e) {
     let {
         trackUserProfileWishlistAction: C
     } = (0, m.NJ)(), k = l.useCallback(() => {
-        null != t.sku && (C({
+        null != t.sku && null != A && (C({
             wishlistId: A,
             action: E.Mq.WISHLIST_ITEM_CLICKED,
             skuId: t.sku.id,
@@ -102,7 +102,7 @@ function y(e) {
                     isHoveringOrFocusing: u
                 })]
             })
-        }), R, n.id === a.id && (0, i.jsx)(p.A, {
+        }), R, n.id === a.id && null != A && (0, i.jsx)(p.A, {
             wishlistId: A,
             sku: t.sku,
             spec: b,
@@ -121,7 +121,7 @@ function N(e) {
         currentUser: s,
         analyticsLocations: r,
         ...o
-    } = e, c = (0, u.h)(t.sku?.applicationId), d = l.useMemo(() => () => {
+    } = e, c = (0, u.h)(t.sku?.applicationId), d = l.useCallback(() => {
         if (null == t.sku) return;
         let e = a.id === s.id;
         (0, A.T)({

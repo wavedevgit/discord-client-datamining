@@ -60,8 +60,8 @@ let y = new c.A("PaymentElement.web.stories"),
         }), {
             elementsOptions: T,
             isLoading: C,
-            setupError: P,
-            customPaymentMethodIdsToSourceTypes: R
+            setupError: R,
+            customPaymentMethodIdsToSourceTypes: P
         } = (0, o.p)({
             onSetupError: e => {
                 y.info("Stripe Payment Element options setup error: ", e)
@@ -74,7 +74,7 @@ let y = new c.A("PaymentElement.web.stories"),
                 tabBackgroundColor: m
             }
         });
-        return C || null != P || null == v ? (0, a.jsx)(u.eR, {}) : (0, a.jsxs)("div", {
+        return C || null != R || null == v ? (0, a.jsx)(u.eR, {}) : (0, a.jsxs)("div", {
             children: [(0, a.jsx)("div", {
                 style: {
                     marginBottom: 16
@@ -107,12 +107,12 @@ let y = new c.A("PaymentElement.web.stories"),
                                 className: g.R,
                                 children: (0, a.jsx)(u.Wf, {
                                     ...S,
-                                    customPaymentMethodIdsToSourceTypes: R,
+                                    customPaymentMethodIdsToSourceTypes: P,
                                     step: d.pn.PAYMENT_ELEMENT
                                 })
                             }) : (0, a.jsx)(u.Wf, {
                                 ...S,
-                                customPaymentMethodIdsToSourceTypes: R,
+                                customPaymentMethodIdsToSourceTypes: P,
                                 step: d.pn.PAYMENT_ELEMENT
                             }), ("joined-payment-address-elements" === E || "stripe-address-element" === E) && (0, a.jsx)(u.KS, {
                                 ...j,

@@ -238,12 +238,16 @@ class I extends s.PureComponent {
             hideDivider: 0 === h.length || I === h.length - 1,
             isForSubscription: e.id === d,
             locale: a,
-            onRedeemClick: () => (0, u.HF)()
+            onRedeemClick: () => (0, u.HF)({
+                withRedemptionSuccessModal: !0
+            })
         }, e.id)) : (0, i.jsx)(S, {
             hideDivider: 0 === h.length || I === h.length - 1,
             isForSubscription: !1,
             locale: a,
-            onRedeemClick: () => (0, u.HF)()
+            onRedeemClick: () => (0, u.HF)({
+                withRedemptionSuccessModal: !0
+            })
         }), (0, i.jsxs)(i.Fragment, {
             children: [t ? (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsxs)(o.Heading, {
