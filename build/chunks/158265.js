@@ -1,6 +1,6 @@
 /** chunk id: 158265, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => C
+    A: () => A
 });
 var a = n(627968),
     i = n(64700),
@@ -21,20 +21,20 @@ var a = n(627968),
     b = n(851110),
     v = n(307725),
     j = n(231901);
-let C = e => {
+let A = e => {
     let {
         overlayRef: t,
         progressBarRef: n,
         isHovered: s
     } = e, {
-        quest: C,
-        isExpanded: A
+        quest: A,
+        isExpanded: C
     } = i.useContext(g.T), {
         expansionSpring: T
     } = i.useContext(p.PW), {
-        completionSpring: S,
-        startCompletionAnimation: y
-    } = (0, _.R)(), E = C.userStatus?.completedAt != null, N = i.useRef(!1), I = (0, c.bG)([m.A], () => m.A.useReducedMotion), k = i.useRef(null), R = (0, c.bG)([h.A], () => h.A.hasLayers()), O = (0, u.A)(R), [w, D] = i.useState(null), [M, P] = i.useState(null), L = i.useRef(new r.OH({
+        completionSpring: y,
+        startCompletionAnimation: S
+    } = (0, _.R)(), E = A.userStatus?.completedAt != null, N = i.useRef(!1), I = (0, c.bG)([m.A], () => m.A.useReducedMotion), k = i.useRef(null), R = (0, c.bG)([h.A], () => h.A.hasLayers()), O = (0, u.A)(R), [w, D] = i.useState(null), [M, P] = i.useState(null), L = i.useRef(new r.OH({
         gravity: 0,
         wind: 0
     })), U = (0, r.f9)(w, M), B = i.useMemo(() => [f.r3], []), G = i.useCallback(() => {
@@ -90,30 +90,30 @@ let C = e => {
                 }
             }), 100)
         }
-    }, [n, k, U, I]), F = (0, u.A)(A);
+    }, [n, k, U, I]), F = (0, u.A)(C);
     return (i.useEffect(() => {
-        E && A && !F && (y(), G())
-    }, [A, E, y, G, F]), i.useEffect(() => {
+        E && C && !F && (S(), G())
+    }, [C, E, S, G, F]), i.useEffect(() => {
         E && !R && O && setTimeout(() => {
-            y(), G()
+            S(), G()
         }, 200)
-    }, [E, O, R, y, G]), i.useEffect(() => {
-        U.isReady && (!N.current && E && (y(), G()), N.current = E)
-    }, [E, N, G, y, U]), i.useEffect(() => {
-        s && E && (y(), G())
-    }, [s, E, y, G]), I) ? null : (0, a.jsxs)("div", {
+    }, [E, O, R, S, G]), i.useEffect(() => {
+        U.isReady && (!N.current && E && (S(), G()), N.current = E)
+    }, [E, N, G, S, U]), i.useEffect(() => {
+        s && E && (S(), G())
+    }, [s, E, S, G]), I) ? null : (0, a.jsxs)("div", {
         className: v.iE,
         "aria-hidden": "true",
         ref: k,
         children: [(0, a.jsx)(d.animated.div, {
             className: v.Tp,
             style: {
-                opacity: (0, x.a)(S)
+                opacity: (0, x.a)(y)
             }
         }), (0, a.jsx)(d.animated.div, {
             className: l()(v.sJ, v.ix),
             style: {
-                opacity: (0, x.a)(S)
+                opacity: (0, x.a)(y)
             }
         }), (0, a.jsxs)(d.animated.div, {
             className: v.KG,
@@ -136,7 +136,7 @@ let C = e => {
             }), null != t.current && (0, o.createPortal)((0, a.jsx)(d.animated.div, {
                 className: l()(v.sJ, v.d7),
                 style: {
-                    opacity: (0, x.a)(S)
+                    opacity: (0, x.a)(y)
                 }
             }), t.current)]
         })]

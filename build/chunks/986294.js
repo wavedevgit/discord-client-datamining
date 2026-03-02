@@ -21,11 +21,11 @@ var a = n(627968),
     b = n(692969),
     v = n(760751),
     j = n(403362),
-    C = n(603047),
-    A = n(435738),
+    A = n(603047),
+    C = n(435738),
     T = n(99753),
-    S = n(868068),
-    y = n(476398),
+    y = n(868068),
+    S = n(476398),
     E = n(405311),
     N = n(424994),
     I = n(750100),
@@ -93,7 +93,7 @@ function w() {
     var e;
     let t, n = (0, u.bG)([T.A], () => T.A.getFeed(N.X1.GLOBAL_FEED)),
         s = (0, u.bG)([T.A], () => T.A.getDebugImpressionCappingDisabled()),
-        l = (0, u.bG)([A.A], () => A.A.getDebugFastImpressionCappingEnabled()),
+        l = (0, u.bG)([C.A], () => C.A.getDebugFastImpressionCappingEnabled()),
         r = (e = n?.entries?.map(e => e.content), Object.keys(t = o().groupBy(e, e => e.content_type)).map(e => {
             let n = t[e];
             return {
@@ -118,7 +118,7 @@ function w() {
             return t
         }),
         U = (0, g.A)(L).filter(j.Vq),
-        B = (0, u.bG)([C.A], () => C.A.getFakeGameToShow());
+        B = (0, u.bG)([A.A], () => A.A.getFakeGameToShow());
     return (0, a.jsx)("div", {
         className: k.nd,
         children: (0, a.jsxs)(h.IpV, {
@@ -186,7 +186,7 @@ function w() {
                         })
                     }
                 })]
-            }), !1, (0, a.jsx)(y.A, {}), (0, a.jsxs)(h.BJc, {
+            }), !1, (0, a.jsx)(S.A, {}), (0, a.jsxs)(h.BJc, {
                 gap: 8,
                 children: [(0, a.jsx)(h.Text, {
                     variant: "text-md/semibold",
@@ -213,7 +213,7 @@ function w() {
                     children: "Activity Sharing"
                 }), (0, a.jsx)(h.l6P, {
                     label: "Force show game",
-                    options: S.K.map(e => ({
+                    options: y.K.map(e => ({
                         label: e,
                         value: e,
                         id: e

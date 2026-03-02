@@ -21,11 +21,11 @@ var a = n(627968),
     b = n(253932),
     v = n(559248),
     j = n(179690),
-    C = n(309010),
-    A = n(837921),
+    A = n(309010),
+    C = n(837921),
     T = n(652215),
-    S = n(327337),
-    y = n(431804),
+    y = n(327337),
+    S = n(431804),
     E = n(229988),
     N = n(473169);
 
@@ -47,7 +47,7 @@ function k() {
                 size: "sm",
                 text: "Launch Vibing Wumpus",
                 onClick: () => (0, f.A)({
-                    source: y.y.KEYBIND
+                    source: S.y.KEYBIND
                 })
             })
         }), (0, a.jsx)("div", {
@@ -58,7 +58,7 @@ function k() {
                 text: "Launch Safety Tools Modal",
                 onClick: () => {
                     let e;
-                    return e = C.A.getChannelId() ?? "21154681615024128", void(0, c.mMO)(async () => {
+                    return e = A.A.getChannelId() ?? "21154681615024128", void(0, c.mMO)(async () => {
                         let {
                             default: t
                         } = await Promise.all([n.e("45033"), n.e("46717"), n.e("54105")]).then(n.bind(n, 788099));
@@ -70,7 +70,7 @@ function k() {
                             ...n
                         })
                     }, {
-                        modalKey: S.V
+                        modalKey: y.V
                     })
                 }
             })
@@ -187,7 +187,7 @@ function k() {
                     value: 4,
                     id: "out_of_memory"
                 }],
-                onSelectionChange: e => null != e && A.Ay.crash(e)
+                onSelectionChange: e => null != e && C.Ay.crash(e)
             }), (0, a.jsx)(c.l6P, {
                 label: "Trigger JS crash",
                 hideLabel: !0,
@@ -210,7 +210,7 @@ function k() {
                     value: r.qQ.MainProcess,
                     id: "exception_in_main_process"
                 }],
-                onSelectionChange: e => null != e ? void A.Ay.triggerJSException(e) : void 0
+                onSelectionChange: e => null != e ? void C.Ay.triggerJSException(e) : void 0
             }), (0, a.jsx)(c.Button, {
                 variant: "primary",
                 size: "sm",

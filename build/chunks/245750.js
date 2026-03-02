@@ -24,18 +24,18 @@ function _(e) {
             onContextMenu: b,
             dismissibleContents: v,
             iconForeground: j,
-            nameplate: C
+            nameplate: A
         } = e,
-        A = i.useRef(null),
-        [T, S] = i.useState(!1);
+        C = i.useRef(null),
+        [T, y] = i.useState(!1);
     (0, s.Ay)(() => {
-        let e = () => S(!0);
+        let e = () => y(!0);
         return m._.subscribe(x.jej.PREMIUM_GROUP_PURCHASE_FLOW_COMPLETED, e), () => {
             m._.unsubscribe(x.jej.PREMIUM_GROUP_PURCHASE_FLOW_COMPLETED, e)
         }
     });
-    let y = i.useCallback(() => {
-        S(!1), f()
+    let S = i.useCallback(() => {
+        y(!1), f()
     }, [f]);
     t = null != _ ? g.intl.formatToPlainString(g.t.Gzh6ZP, {
         webBuildOverride: _.id
@@ -44,10 +44,10 @@ function _(e) {
         N = (0, r.w)();
     return E = null != _ ? o.Hnu : N.Component, (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)(h.A, {
-            ref: A,
+            ref: C,
             tooltipText: t,
             tooltipPositionKey: n,
-            onClick: y,
+            onClick: S,
             onContextMenu: b,
             "aria-label": g.intl.string(g.t.cduTBL),
             icon: (0, a.jsx)(E, {
@@ -56,11 +56,11 @@ function _(e) {
                 className: j
             }),
             ...N.events,
-            plated: null != C
+            plated: null != A
         }), (0, a.jsx)(c.V, {
-            targetElementRef: A,
+            targetElementRef: C,
             shouldShow: T,
-            onDismiss: () => S(!1)
+            onDismiss: () => y(!1)
         }), !T && (0, a.jsx)(d.Ay, {
             contentTypes: v,
             groupName: p.m.ACCOUNT_NAME_ZONE,
@@ -70,7 +70,7 @@ function _(e) {
                     markAsDismissed: n
                 } = e;
                 if (t === l.M.NITRO_PRIVACY_PERK_BETA_COACHMARK) return (0, a.jsx)(u.y, {
-                    targetElementRef: A,
+                    targetElementRef: C,
                     markAsDismissed: n
                 })
             }

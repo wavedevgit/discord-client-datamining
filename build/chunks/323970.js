@@ -1,6 +1,6 @@
 /** chunk id: 323970, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => y
+    A: () => S
 });
 var a = n(582754),
     i = n(736653),
@@ -21,8 +21,8 @@ var a = n(582754),
     b = n(673554),
     v = n(719401),
     j = n(128640),
-    C = n(146925),
-    A = n(789996);
+    A = n(146925),
+    C = n(789996);
 let T = {
         [r.Ac.PREMIUM_TENURE_1_MONTH]: {
             dark: " #D76C1F, #F79C53",
@@ -57,7 +57,7 @@ let T = {
             light: " #6881D4, #956CB8, #5491A0"
         }
     },
-    S = {
+    y = {
         [r.Ac.PREMIUM_TENURE_1_MONTH]: {
             dark: o.A,
             light: g.A
@@ -84,20 +84,20 @@ let T = {
         },
         [r.Ac.PREMIUM_TENURE_60_MONTH]: {
             dark: x.A,
-            light: C.A
+            light: A.A
         },
         [r.Ac.PREMIUM_TENURE_72_MONTH]: {
             dark: p.A,
-            light: A.A
+            light: C.A
         }
     };
 
-function y() {
+function S() {
     let e = (0, l.A)(),
         t = (0, a.Mw)((0, i.Ay)());
     if (!e) return null;
     let n = T[e],
-        o = S[e],
+        o = y[e],
         d = {
             currentBadge: (0, s.e0)(e),
             currentBadgeTextGradient: t ? n?.dark : n?.light,

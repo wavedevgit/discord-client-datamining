@@ -25,7 +25,7 @@ function b() {
         removeToolsCache: b
     } = (0, u.DE)(), {
         setImgCache: T
-    } = (0, u.TW)(), S = (0, i.useCallback)(e => {
+    } = (0, u.TW)(), y = (0, i.useCallback)(e => {
         let t = x[e];
         null != t ? c({
             previewToolKey: t.url,
@@ -37,7 +37,7 @@ function b() {
             ...t,
             previewToolKey: e
         })
-    }, [x]), y = (0, i.useCallback)(e => {
+    }, [x]), S = (0, i.useCallback)(e => {
         c(t => null == t ? null : {
             ...t,
             palette: e
@@ -70,7 +70,7 @@ function b() {
                 children: [e && (0, a.jsx)(d.Ix, {}), n && (0, a.jsx)(p.A, {
                     selected: r?.palette?.name,
                     onSelect: e => {
-                        r?.previewToolKey != null && g(r.previewToolKey, r.previewToolKey, e), y(e)
+                        r?.previewToolKey != null && g(r.previewToolKey, r.previewToolKey, e), S(e)
                     }
                 })]
             })]
@@ -101,18 +101,18 @@ function b() {
                         } = e;
                         return (0, a.jsx)(j, {
                             src: t,
-                            onSetStatic: S,
+                            onSetStatic: y,
                             removeAsset: E
                         }, t)
                     })
-                }), (0, a.jsx)(A, {
+                }), (0, a.jsx)(C, {
                     label: "gradient override",
-                    onChange: e => y({
+                    onChange: e => S({
                         name: m.AK,
                         darkBackground: e,
                         lightBackground: e
                     })
-                }), (0, a.jsx)(C, {
+                }), (0, a.jsx)(A, {
                     label: "set",
                     onClick: () => {}
                 })]
@@ -160,12 +160,12 @@ function v(e) {
             }), (0, a.jsx)(l.Text, {
                 variant: "text-sm/semibold",
                 children: "DMs"
-            }), (0, a.jsx)(S, {
+            }), (0, a.jsx)(y, {
                 nameplate: t
             }), (0, a.jsx)(l.Text, {
                 variant: "text-sm/semibold",
                 children: "RTC"
-            }), (0, a.jsx)(y, {
+            }), (0, a.jsx)(S, {
                 nameplate: t
             }), (0, a.jsx)("div", {
                 className: f.Di,
@@ -208,7 +208,7 @@ function j(e) {
     })
 }
 
-function C(e) {
+function A(e) {
     let {
         label: t,
         onClick: n
@@ -228,7 +228,7 @@ function C(e) {
     })
 }
 
-function A(e) {
+function C(e) {
     let {
         label: t,
         onChange: n
@@ -284,7 +284,7 @@ function T(e) {
     })
 }
 
-function S(e) {
+function y(e) {
     let {
         nameplate: t
     } = e;
@@ -314,7 +314,7 @@ function S(e) {
     })
 }
 
-function y(e) {
+function S(e) {
     let {
         nameplate: t
     } = e;

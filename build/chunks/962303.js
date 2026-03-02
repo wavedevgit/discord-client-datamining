@@ -27,9 +27,9 @@ function j(e) {
         n = (0, i.bG)([c.A], () => c.A.hidePersonalInformation),
         j = (0, i.bG)([o.A], () => (0, l.Mw)(o.A.theme)),
         {
-            multiAccountUsers: C
+            multiAccountUsers: A
         } = (0, g.K)(),
-        A = C.map(i => {
+        C = A.map(i => {
             let l = new d.A(i),
                 o = l.id === t?.id,
                 c = i.tokenStatus === p.U.INVALID,
@@ -87,7 +87,7 @@ function j(e) {
                 }
             }, l.id)
         });
-    return A.push((0, a.jsxs)(a.Fragment, {
+    return C.push((0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)(r.bXX, {}), (0, a.jsx)(r.Drp, {
             id: "manage-accounts",
             label: b.intl.string(b.t.WbFpq4),
@@ -95,5 +95,5 @@ function j(e) {
                 e?.(), (0, _.A)()
             }
         })]
-    })), A
+    })), C
 }

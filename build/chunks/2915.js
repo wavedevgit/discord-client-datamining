@@ -78,18 +78,18 @@ let _ = {
 
 function v() {
     let [e, t] = i.useState(!1), [n, s] = i.useState(r.j.PREMIUM_TIER_2_1_HOUR), [u, _] = i.useState([]), [v, j] = i.useState([]), {
-        refreshEntitlementList: C,
-        grantFractionalPremium: A,
+        refreshEntitlementList: A,
+        grantFractionalPremium: C,
         deleteFractionalPremium: T,
-        triggerNextEntitlementFulfillment: S,
-        entitlements: y,
+        triggerNextEntitlementFulfillment: y,
+        entitlements: S,
         loading: E
     } = (0, m.o)();
     return i.useEffect(() => {
-        C()
-    }, [C]), i.useEffect(() => {
-        _(y.filter(e => null != e.endsAt && e.endsAt > new Date && e.type === h.zF_.FRACTIONAL_REDEMPTION)), j(y.filter(e => Object.values(r.j).includes(e.skuId) && null == e.startsAt))
-    }, [y]), (0, a.jsx)(d.IpV, {
+        A()
+    }, [A]), i.useEffect(() => {
+        _(S.filter(e => null != e.endsAt && e.endsAt > new Date && e.type === h.zF_.FRACTIONAL_REDEMPTION)), j(S.filter(e => Object.values(r.j).includes(e.skuId) && null == e.startsAt))
+    }, [S]), (0, a.jsx)(d.IpV, {
         className: g.nd,
         children: (0, a.jsxs)("div", {
             className: p.l$,
@@ -147,7 +147,7 @@ function v() {
                 }), (0, a.jsx)(d.Button, {
                     variant: "primary",
                     text: "Grant Fractional Nitro",
-                    onClick: () => A(n)
+                    onClick: () => C(n)
                 })]
             }), (0, a.jsxs)("section", {
                 className: x.uW,
@@ -169,7 +169,7 @@ function v() {
                             size: o.$n.Sizes.TINY,
                             color: o.$n.Colors.PRIMARY,
                             look: o.$n.Looks.OUTLINED,
-                            onClick: () => S(),
+                            onClick: () => y(),
                             children: "Run fulfillment"
                         }), (0, a.jsx)(o.$n, {
                             disabled: E,
@@ -182,7 +182,7 @@ function v() {
                             disabled: E,
                             look: o.$n.Looks.BLANK,
                             size: o.$n.Sizes.ICON,
-                            onClick: C,
+                            onClick: A,
                             children: (0, a.jsx)("span", {
                                 title: "Refresh",
                                 children: (0, a.jsx)(d.fNY, {

@@ -27,19 +27,19 @@ let b = i.forwardRef(function(e, t) {
     } = i.useContext(u.PW), {
         quest: v,
         taskDetails: j,
-        isExpanded: C,
-        isExpansionAnimationComplete: A
-    } = i.useContext(x.T), T = v.userStatus?.completedAt != null, S = (0, d.I3)(v), y = i.useRef(null), E = v.userStatus?.enrolledAt != null, N = null != S ? S.percentComplete : j.percentComplete, [I, k] = i.useState(!1);
+        isExpanded: A,
+        isExpansionAnimationComplete: C
+    } = i.useContext(x.T), T = v.userStatus?.completedAt != null, y = (0, d.I3)(v), S = i.useRef(null), E = v.userStatus?.enrolledAt != null, N = null != y ? y.percentComplete : j.percentComplete, [I, k] = i.useState(!1);
     return (0, a.jsxs)(a.Fragment, {
         children: [T && (0, a.jsx)(h.A, {
             overlayRef: s,
-            progressBarRef: y,
+            progressBarRef: S,
             isHovered: I
         }), (0, a.jsx)(r.animated.div, {
             ref: t,
-            "aria-hidden": C && A,
+            "aria-hidden": A && C,
             className: l()(n, f.hR, {
-                [f.Ag]: C,
+                [f.Ag]: A,
                 [f.s]: E
             }),
             style: {
@@ -59,7 +59,7 @@ let b = i.forwardRef(function(e, t) {
                     })]
                 }), E ? (0, a.jsx)(p.A, {
                     contentLocation: "collapsed",
-                    progressBarRef: y,
+                    progressBarRef: S,
                     isExpanded: !1,
                     percentComplete: N
                 }) : null, T && (0, a.jsx)(m.f, {

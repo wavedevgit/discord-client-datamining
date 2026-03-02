@@ -21,15 +21,15 @@ var a = n(627968),
     b = n(967954),
     v = n(538064),
     j = n(708403),
-    C = n(260880),
-    A = n(303054),
+    A = n(260880),
+    C = n(303054),
     T = n(231643),
-    S = n(985018),
-    y = n(76584),
+    y = n(985018),
+    S = n(76584),
     E = n(661251);
 let N = [{
     key: "event",
-    cellClassName: y.Hz,
+    cellClassName: S.Hz,
     render(e) {
         let {
             event: t
@@ -38,7 +38,7 @@ let N = [{
     }
 }, {
     key: "location",
-    cellClassName: y.QN,
+    cellClassName: S.QN,
     render(e) {
         let {
             properties: t
@@ -52,7 +52,7 @@ function I(e) {
         children: t
     } = e;
     return (0, a.jsx)(u.IpV, {
-        className: y._D,
+        className: S._D,
         children: (0, a.jsx)("dl", {
             children: t
         })
@@ -71,15 +71,15 @@ function k(e) {
             return () => clearTimeout(e)
         }
     }, [l]), (0, a.jsxs)("div", {
-        className: y.fY,
+        className: S.fY,
         children: [(0, a.jsx)("dt", {
-            className: y.m2,
+            className: S.m2,
             children: t
         }), (0, a.jsx)("dd", {
             children: n
         }), (0, a.jsx)(u.DUT, {
             tag: "span",
-            className: y.nH,
+            className: S.nH,
             onClick: () => (0, _.C)(JSON.stringify(s), () => r(!0)),
             children: l ? (0, a.jsx)(u.Uzd, {
                 color: "currentColor",
@@ -110,15 +110,15 @@ let R = new Set(["client_performance_cpu", "client_performance_memory"]),
             return (0, a.jsxs)("div", {
                 "data-mtctest-ignore": "true",
                 children: [(0, a.jsxs)(h.Ay, {
-                    className: l()(E.jr, y.nZ),
+                    className: l()(E.jr, S.nZ),
                     children: [(0, a.jsx)(h.Ay.Icon, {
                         icon: u.Uy2,
                         tooltip: t
                     }), (0, a.jsxs)(h.Ay.Title, {
-                        wrapperClassName: y.qd,
+                        wrapperClassName: S.qd,
                         children: [t, (0, a.jsx)(u.DUT, {
                             tag: "span",
-                            className: y.KE,
+                            className: S.KE,
                             onClick: () => (0, _.C)(t),
                             children: (0, a.jsx)(u.TdU, {
                                 color: "currentColor",
@@ -143,7 +143,7 @@ let R = new Set(["client_performance_cpu", "client_performance_memory"]),
                         onClick: r
                     })]
                 }), (0, a.jsxs)(j.OA, {
-                    className: y.ZK,
+                    className: S.ZK,
                     children: [(0, a.jsx)(j.mA, {
                         name: "Timestamp (local)",
                         copyValue: i.toISOString(),
@@ -193,7 +193,7 @@ let R = new Set(["client_performance_cpu", "client_performance_memory"]),
                                 children: null != i ? (0, a.jsx)("code", {
                                     children: JSON.stringify(i)
                                 }) : (0, a.jsx)("code", {
-                                    className: y.HO,
+                                    className: S.HO,
                                     children: "null"
                                 })
                             }, n), null !== s && null !== s.average && (0, a.jsx)(k, {
@@ -274,30 +274,30 @@ function M() {
         }, []);
     return (0, a.jsxs)("div", {
         ref: e,
-        className: l()(E.nd, y.nd),
+        className: l()(E.nd, S.nd),
         children: [(0, a.jsxs)("div", {
-            className: y.rh,
+            className: S.rh,
             children: [(0, a.jsx)(c.$n, {
-                className: y.Q$,
+                className: S.Q$,
                 look: c.$n.Looks.BLANK,
                 size: c.$n.Sizes.ICON,
                 onClick: v.eY,
                 children: (0, a.jsx)("span", {
-                    title: S.intl.string(S.t.VkKicb),
+                    title: y.intl.string(y.t.VkKicb),
                     children: (0, a.jsx)(u.ucK, {
                         size: "md",
                         color: "currentColor",
-                        "aria-label": S.intl.string(S.t.VkKicb)
+                        "aria-label": y.intl.string(y.t.VkKicb)
                     })
                 })
             }), (0, a.jsx)("div", {
-                className: y.Bi
+                className: S.Bi
             }), (0, a.jsx)("div", {
-                className: y.uW,
+                className: S.uW,
                 children: Object.entries(w).map(e => {
                     let [t, n] = e;
                     return (0, a.jsx)(u.DUT, {
-                        className: l()(y.pb, r.includes(t) && y.bx),
+                        className: l()(S.pb, r.includes(t) && S.bx),
                         onClick: () => {
                             o(e => e.includes(t) ? e.filter(e => e !== t) : [...e, t])
                         },
@@ -306,7 +306,7 @@ function M() {
                 })
             })]
         }), (0, a.jsx)("div", {
-            className: y.rh,
+            className: S.rh,
             children: (0, a.jsx)(u.IWV, {
                 size: "sm",
                 query: t,
@@ -314,13 +314,13 @@ function M() {
                 onClear: () => n(""),
                 placeholder: "Search by event name"
             })
-        }), (0, a.jsx)(A.A, {
+        }), (0, a.jsx)(C.A, {
             columns: N,
             data: g,
             selectedRowKey: _,
             onClickRow: e => f(e.key)
-        }), null != j && (0, a.jsxs)(C.A, {
-            className: y.rf,
+        }), null != j && (0, a.jsxs)(A.A, {
+            className: S.rf,
             minHeight: 100,
             initialHeight: null != e.current ? e.current.clientHeight / 2 : 300,
             children: [(0, a.jsx)(I, {}), k({

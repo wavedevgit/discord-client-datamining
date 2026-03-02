@@ -1,6 +1,6 @@
 /** chunk id: 226513, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => C
+    A: () => A
 });
 var a = n(627968),
     i = n(64700),
@@ -22,16 +22,16 @@ var a = n(627968),
     v = n(368149),
     j = n(631121);
 
-function C(e) {
+function A(e) {
     let {
         selfDeaf: t,
         serverDeaf: n,
         awaitingRemote: s,
-        onClick: C,
-        iconForeground: A,
+        onClick: A,
+        iconForeground: C,
         nameplate: T,
-        shouldShowOutputDeviceChangedTooltip: S,
-        dismissTooltips: y
+        shouldShowOutputDeviceChangedTooltip: y,
+        dismissTooltips: S
     } = e, E = t || n, {
         Component: N,
         play: I,
@@ -52,7 +52,7 @@ function C(e) {
                 let {
                     closePopout: t
                 } = e;
-                return y(), (0, a.jsx)(m.f5, {
+                return S(), (0, a.jsx)(m.f5, {
                     value: M,
                     children: (0, a.jsx)(x.A, {
                         onInteraction: (0, p.s)("AudioDeviceMenu", u.A.ACCOUNT),
@@ -89,13 +89,13 @@ function C(e) {
                             width: 20,
                             height: 20,
                             color: E ? o.A.colors.ICON_VOICE_MUTED : "currentColor",
-                            className: A
+                            className: C
                         }),
                         iconForeground: E ? j.o : void 0,
                         innerClassName: l()({
                             [j.T]: n
                         }),
-                        onClick: C,
+                        onClick: A,
                         onContextMenu: i,
                         onMouseEnter: k,
                         onMouseLeave: R,
@@ -119,16 +119,16 @@ function C(e) {
                         onContextMenu: i,
                         plated: null != T,
                         redGlow: E,
-                        tooltipType: S ? "green_void_do_not_use" : void 0,
-                        tooltipForceOpen: S,
-                        tooltipPositionKey: S ? b.intl.formatToPlainString(b.t["f+DDY/"], {
+                        tooltipType: y ? "green_void_do_not_use" : void 0,
+                        tooltipForceOpen: y,
+                        tooltipPositionKey: y ? b.intl.formatToPlainString(b.t["f+DDY/"], {
                             outputDeviceName: w
                         }) : void 0,
                         tooltipShouldShow: !d,
-                        tooltipText: S ? b.intl.format(b.t["f+DDY/"], {
+                        tooltipText: y ? b.intl.format(b.t["f+DDY/"], {
                             outputDeviceName: w
                         }) : b.intl.string(b.t.aA4Vce),
-                        "aria-label": S ? b.intl.formatToPlainString(b.t["f+DDY/"], {
+                        "aria-label": y ? b.intl.formatToPlainString(b.t["f+DDY/"], {
                             outputDeviceName: w
                         }) : b.intl.string(b.t.aA4Vce)
                     })]

@@ -22,11 +22,11 @@ var x = n(173628),
     b = n(568834),
     v = n(19767),
     j = n(866001),
-    C = n(855936),
-    A = n(489967),
+    A = n(855936),
+    C = n(489967),
     T = n(2915),
-    S = n(986789),
-    y = n(821306),
+    y = n(986789),
+    S = n(821306),
     E = n(226936),
     N = n(27126),
     I = n(498336),
@@ -120,7 +120,7 @@ function eu() {
             name: "E2EE",
             group: eo.fu.DEVELOPMENT,
             tags: ["secure frames", "encryption"],
-            render: () => (0, a.jsx)(C.A, {})
+            render: () => (0, a.jsx)(A.A, {})
         }), e.push({
             id: "performance",
             name: "Performance",
@@ -137,7 +137,7 @@ function eu() {
             name: "Feedback",
             group: eo.fu.USERS,
             tags: ["surveys"],
-            render: () => (0, a.jsx)(A.A, {})
+            render: () => (0, a.jsx)(C.A, {})
         }), e.push({
             id: "overlay",
             name: "Overlay v3",
@@ -206,7 +206,7 @@ function eu() {
             id: "overlays",
             name: "Dev Overlays",
             group: eo.fu.DEVELOPMENT,
-            render: () => (0, a.jsx)(y.A, {
+            render: () => (0, a.jsx)(S.A, {
                 devSettingsCategory: h.xW.OVERLAYS
             })
         }), e.push({
@@ -219,7 +219,7 @@ function eu() {
             id: "reporting",
             name: "Reporting",
             group: eo.fu.EXPERIMENTS,
-            render: () => (0, a.jsx)(y.A, {
+            render: () => (0, a.jsx)(S.A, {
                 devSettingsCategory: h.xW.REPORTING
             })
         }), e.push({
@@ -340,7 +340,7 @@ function eu() {
             id: "game_server",
             name: "Game Server",
             group: eo.fu.BOOSTING,
-            render: () => (0, a.jsx)(S.A, {})
+            render: () => (0, a.jsx)(y.A, {})
         }), e.push({
             id: "language",
             name: "Language",

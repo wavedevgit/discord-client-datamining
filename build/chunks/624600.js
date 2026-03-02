@@ -65,7 +65,8 @@ let u = e => {
             }), (0, r.jsx)(s.animated.div, {
                 className: a()(o.TN, x),
                 style: {
-                    transform: D
+                    transform: D,
+                    opacity: _.to(e => e <= 0 ? 0 : 1)
                 }
             })]
         }), h && (0, r.jsx)(s.animated.div, {

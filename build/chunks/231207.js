@@ -21,11 +21,11 @@ var a = n(627968),
     b = n(300233),
     v = n(599941),
     j = n(250253),
-    C = n(44120),
-    A = n(532794),
+    A = n(44120),
+    C = n(532794),
     T = n(216678),
-    S = n(194509),
-    y = n(761705),
+    y = n(194509),
+    S = n(761705),
     E = n(448362),
     N = n(71393),
     I = n(166403),
@@ -59,11 +59,11 @@ let D = function() {
         balance: Y,
         isFetching: J,
         error: X
-    } = (0, y.W)(), {
+    } = (0, S.W)(), {
         isSubmitting: Z,
         responseMessage: ee,
         redeemVirtualCurrency: et
-    } = (0, y.Q)(), [en, ea] = i.useState(k.dJq), [ei, es] = i.useState(""), [el, er] = i.useState(k.dJq), [eo, ed] = i.useState(k.dJq);
+    } = (0, S.Q)(), [en, ea] = i.useState(k.dJq), [ei, es] = i.useState(""), [el, er] = i.useState(k.dJq), [eo, ed] = i.useState(k.dJq);
     return (0, a.jsx)(g.f5, {
         value: K,
         children: (0, a.jsx)(u.IpV, {
@@ -98,7 +98,7 @@ let D = function() {
                         onSelectionChange: e => t(e),
                         selectionMode: "single",
                         fullWidth: !0
-                    }), (0, a.jsx)(S.A, {
+                    }), (0, a.jsx)(y.A, {
                         subscriptionTier: e,
                         premiumModalAnalyticsLocation: {},
                         color: c.XD.PRIMARY,
@@ -134,7 +134,7 @@ let D = function() {
                     }), (0, a.jsx)(u.Button, {
                         variant: "primary",
                         text: "Select Plan",
-                        onClick: () => (0, A.A)({
+                        onClick: () => (0, C.A)({
                             subscriptionTier: n,
                             analyticsLocations: K
                         })
@@ -370,7 +370,7 @@ let D = function() {
                     }), (0, a.jsx)(u.Button, {
                         variant: "primary",
                         text: "Open Collectibles Payment Modal for SKU",
-                        onClick: () => (0, C.A)({
+                        onClick: () => (0, A.A)({
                             skuId: eo,
                             analyticsLocations: K,
                             variantsReturnStyle: r.g.VARIANTS_GROUP

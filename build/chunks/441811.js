@@ -26,7 +26,7 @@ function b(e) {
         children: o
     } = e, {
         analyticsLocations: b
-    } = (0, r.Ay)(), v = (0, i.useRef)(null), j = (0, s.bG)([u.A], () => u.A.isFocused()), C = (0, i.useCallback)(() => {
+    } = (0, r.Ay)(), v = (0, i.useRef)(null), j = (0, s.bG)([u.A], () => u.A.isFocused()), A = (0, i.useCallback)(() => {
         t(x.i.TAKE_ACTION), (0, c.openUserSettings)(d.X.PROFILE_PANEL, {
             section: h.nc_.PROFILE_CUSTOMIZATION,
             analyticsLocations: b
@@ -35,7 +35,7 @@ function b(e) {
                 analyticsLocations: b
             })
         })
-    }, [t, b]), A = (0, i.useCallback)(() => {
+    }, [t, b]), C = (0, i.useCallback)(() => {
         t(x.i.USER_DISMISS)
     }, [t]);
     return (0, i.useEffect)(() => {
@@ -44,7 +44,7 @@ function b(e) {
         children: [o, (0, a.jsx)(l.A, {
             targetElementRef: n,
             shouldShow: !0,
-            onRequestClose: A,
+            onRequestClose: C,
             align: "right",
             position: "top",
             caretConfig: {
@@ -64,7 +64,7 @@ function b(e) {
             actions: [{
                 text: g.intl.string(g.t.uw9zI7),
                 variant: "primary",
-                onClick: C
+                onClick: A
             }]
         })]
     })

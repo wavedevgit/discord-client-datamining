@@ -1,6 +1,6 @@
 /** chunk id: 163679, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => C
+    A: () => A
 });
 var a = n(627968),
     i = n(64700),
@@ -40,11 +40,11 @@ function j(e) {
         })]
     })
 }
-let C = function(e) {
+let A = function(e) {
     let {
         onClose: t
-    } = e, [n, u] = i.useState(null), [x, p] = i.useState(!0), [C, A] = i.useState(null), [T, S] = i.useState(!1), y = i.useCallback(async () => {
-        p(!0), A(null);
+    } = e, [n, u] = i.useState(null), [x, p] = i.useState(!0), [A, C] = i.useState(null), [T, y] = i.useState(!1), S = i.useCallback(async () => {
+        p(!0), C(null);
         try {
             let e = await (0, c.$R)();
             if (null == e) return void t();
@@ -64,29 +64,29 @@ let C = function(e) {
                 }
             })
         } catch {
-            A(f.intl.string(_.default["/f++3g"]))
+            C(f.intl.string(_.default["/f++3g"]))
         } finally {
             p(!1)
         }
     }, [t]), E = i.useCallback(async e => {
         if (null !== n) {
-            S(!0);
+            y(!0);
             try {
                 let t = {
                     task_id: n.task_id,
                     flow_id: n.flow_context.flow_id,
                     data: e
                 };
-                await (0, c.Rt)(t), y()
+                await (0, c.Rt)(t), S()
             } catch (e) {
-                A(f.intl.string(_.default["+QRSxc"]))
+                C(f.intl.string(_.default["+QRSxc"]))
             } finally {
-                S(!1)
+                y(!1)
             }
         }
-    }, [n, y]);
+    }, [n, S]);
     (0, l.Ay)(() => {
-        y()
+        S()
     });
     let N = i.useMemo(() => n?.task_type === m.wP.AGE_VERIFICATION, [n]);
     return (0, a.jsxs)("div", {
@@ -115,7 +115,7 @@ let C = function(e) {
                     direction: "horizontal",
                     justify: "start",
                     className: b.rf,
-                    children: [null !== C && (0, a.jsxs)(s.BJc, {
+                    children: [null !== A && (0, a.jsxs)(s.BJc, {
                         direction: "vertical",
                         justify: "space-between",
                         align: "center",
@@ -147,11 +147,11 @@ let C = function(e) {
                                 fullWidth: !0,
                                 text: f.intl.string(f.t["7NqTJn"]),
                                 onClick: () => {
-                                    y()
+                                    S()
                                 }
                             })]
                         })]
-                    }), null === C && null != n && (0, a.jsx)(j, {
+                    }), null === A && null != n && (0, a.jsx)(j, {
                         task: n,
                         handleSubmit: E,
                         disabled: T

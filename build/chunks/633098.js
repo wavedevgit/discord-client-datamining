@@ -26,10 +26,10 @@ function j(e) {
         className: t
     } = e, {
         trackUserProfileEditSaved: n
-    } = (0, m.NJ)(), [a, j] = l.useState(!1), v = (0, o.yK)([f.A], () => f.A.getSaveablePendingWidgets() ?? []), E = (0, o.yK)([f.A], () => f.A.getChangedWidgets()), T = (0, o.yK)([f.A], () => f.A.getRemovedWidgets()), b = (0, o.bG)([f.A], () => f.A.hasUnsavedChanges()), y = (0, o.bG)([f.A], () => f.A.canSaveChanges()), N = (0, o.bG)([f.A], () => f.A.isSubmitting), C = (0, o.bG)([d.A], () => d.A.useReducedMotion), S = (0, c.pnh)(b, {
+    } = (0, m.NJ)(), [a, j] = l.useState(!1), v = (0, o.yK)([f.A], () => f.A.getSaveablePendingWidgets() ?? []), E = (0, o.yK)([f.A], () => f.A.getChangedWidgets()), T = (0, o.yK)([f.A], () => f.A.getRemovedWidgets()), b = (0, o.bG)([f.A], () => f.A.hasUnsavedChanges()), y = (0, o.bG)([f.A], () => f.A.canSaveChanges()), N = (0, o.bG)([f.A], () => f.A.isSubmitting), S = (0, o.bG)([d.A], () => d.A.useReducedMotion), C = (0, c.pnh)(b, {
         from: {
             opacity: 0,
-            y: 80 * !C
+            y: 80 * !S
         },
         enter: {
             opacity: 1,
@@ -37,7 +37,7 @@ function j(e) {
         },
         leave: {
             opacity: 0,
-            y: 80 * !C
+            y: 80 * !S
         }
     });
     l.useEffect(() => {
@@ -76,7 +76,7 @@ function j(e) {
         R = l.useCallback(() => {
             x.A.clearPendingWidgets()
         }, []);
-    return S((e, n) => n ? (0, i.jsx)(r.animated.div, {
+    return C((e, n) => n ? (0, i.jsx)(r.animated.div, {
         className: t,
         style: e,
         children: (0, i.jsxs)("section", {

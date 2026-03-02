@@ -84,7 +84,7 @@ function N(e) {
     })
 }
 
-function C(e) {
+function S(e) {
     let {
         user: t,
         guildId: n,
@@ -99,7 +99,7 @@ function C(e) {
     })
 }
 
-function S(e) {
+function C(e) {
     let {
         text: t,
         className: n
@@ -126,12 +126,12 @@ function k(e) {
             size: "xxs",
             color: r.LU0.colors.ICON_MUTED,
             className: b.Ls
-        }), (0, i.jsx)(C, {
+        }), (0, i.jsx)(S, {
             user: n,
             guildId: l,
             channelId: a,
             id: s
-        }), (0, i.jsx)(S, {
+        }), (0, i.jsx)(C, {
             text: t
         })]
     })
@@ -196,12 +196,12 @@ function R(e) {
             size: "xxs",
             color: r.LU0.colors.ICON_MUTED,
             className: b.Ls
-        }), (0, i.jsx)(C, {
+        }), (0, i.jsx)(S, {
             user: n,
             guildId: a,
             channelId: c,
             id: g
-        }), (0, i.jsx)(S, {
+        }), (0, i.jsx)(C, {
             text: t ?? T,
             className: s()(b.qC, !y && b.qf)
         }), (0, i.jsx)(r.DUT, {
@@ -230,26 +230,26 @@ function w(e) {
         coverRef: x,
         className: E
     } = e, {
-        applicationId: C,
-        comment: S,
+        applicationId: S,
+        comment: C,
         tags: w
     } = a, {
-        coverImageUrl: L,
-        gameName: O,
+        coverImageUrl: O,
+        gameName: L,
         isLoading: P
-    } = (0, c.A)(C), D = {
+    } = (0, c.A)(S), D = {
         variant: "heading-sm/medium",
         color: "text-default"
-    }, G = m.default.getCurrentUser(), U = G?.id === t.id, M = 1 === (0, f.cv)(o), F = !d && U, W = F && (0, f.y9)(o), H = F && !M, {
+    }, G = m.default.getCurrentUser(), M = G?.id === t.id, U = 1 === (0, f.cv)(o), F = !d && M, W = F && (0, f.y9)(o), H = F && !U, {
         registerDragHandleRef: B
     } = (0, h.r)();
     if (P) return (0, i.jsx)(A.E, {});
     let X = () => (0, i.jsx)(_.A, {
             coverRef: x,
-            className: null == L || d ? void 0 : T.iL,
-            imageSrc: L,
-            gameName: O,
-            applicationId: C,
+            className: null == O || d ? void 0 : T.iL,
+            imageSrc: O,
+            gameName: L,
+            applicationId: S,
             userId: t.id,
             disableInteraction: d,
             hideTooltip: !0
@@ -266,38 +266,38 @@ function w(e) {
                 className: b.zH,
                 children: [d ? (0, i.jsx)(r.Heading, {
                     ...D,
-                    children: O
+                    children: L
                 }) : (0, i.jsx)(N, {
-                    applicationId: C,
+                    applicationId: S,
                     userId: t.id,
-                    gameName: O,
+                    gameName: L,
                     ...D
                 }), W ? (0, i.jsx)(R, {
-                    text: S,
+                    text: C,
                     user: t,
                     guildId: n,
                     channelId: l,
                     widgetType: o,
-                    applicationId: C
+                    applicationId: S
                 }) : (0, i.jsx)(k, {
-                    text: S,
+                    text: C,
                     user: t,
                     guildId: n,
                     channelId: l
                 }), (0, i.jsx)(I.A, {
                     tags: w,
-                    isCurrentUser: U,
+                    isCurrentUser: M,
                     widgetType: o,
-                    applicationId: C,
+                    applicationId: S,
                     disableInteraction: d,
                     className: b._A
                 }), !d && (0, i.jsx)(v.o, {
                     className: b.Ez,
-                    applicationId: C,
+                    applicationId: S,
                     guildId: n,
                     channelId: l
                 })]
-            }), !d && U && (0, i.jsx)(j.A, {
+            }), !d && M && (0, i.jsx)(j.A, {
                 game: a,
                 widgetType: o,
                 className: b.vS,

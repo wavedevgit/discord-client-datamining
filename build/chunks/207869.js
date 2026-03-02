@@ -21,11 +21,11 @@ var a = n(627968),
     b = n(814793),
     v = n(753386),
     j = n(201805),
-    C = n(545986),
-    A = n(194267),
+    A = n(545986),
+    C = n(194267),
     T = n(963713),
-    S = n(758836),
-    y = n(985018),
+    y = n(758836),
+    S = n(985018),
     E = n(703653);
 
 function N(e) {
@@ -39,7 +39,7 @@ function N(e) {
         fullWidth: !0,
         onClick: () => {
             let e = t.userStatus?.enrolledAt == null ? h.Cy.ACCEPT_QUEST : h.Cy.WATCH_VIDEO;
-            (0, C.d5)({
+            (0, A.d5)({
                 quest: t,
                 questContent: c.uF.QUEST_BAR_V2,
                 sourceQuestContent: n,
@@ -83,7 +83,7 @@ let I = e => {
                 sourceQuestContent: n
             }),
             size: "sm",
-            text: y.intl.string(y.t.csptqV)
+            text: S.intl.string(S.t.csptqV)
         })
     },
     R = e => {
@@ -97,7 +97,7 @@ let I = e => {
         return (0, b.vA)(t) ? (0, a.jsx)(s.$nd, {
             fullWidth: !0,
             variant: "primary",
-            icon: (0, C.Oz)(t),
+            icon: (0, A.Oz)(t),
             onClick: i,
             size: "sm",
             text: n
@@ -114,7 +114,7 @@ let I = e => {
         } = e, {
             applications: d
         } = i;
-        return (0, a.jsx)(A.A, {
+        return (0, a.jsx)(C.A, {
             quest: t,
             sourceQuestContent: n,
             applications: d ?? [],
@@ -125,7 +125,7 @@ let I = e => {
                 variant: "secondary",
                 fullWidth: !0,
                 size: "sm",
-                text: y.intl.string(y.t["93PTEs"]),
+                text: S.intl.string(S.t["93PTEs"]),
                 ...e
             })
         })
@@ -144,7 +144,7 @@ let I = e => {
             sourceQuestContent: m
         }), p = i.useCallback(e => {
             r?.(e), (0, _.ks)(t.config) && t.userStatus?.claimedAt != null ? (0, d.Cz)({
-                tab: S.G2.ORBS,
+                tab: y.G2.ORBS,
                 analyticsLocations: [],
                 analyticsSource: o.A.QUEST_HOME_PAGE
             }) : x()
@@ -152,7 +152,7 @@ let I = e => {
         return (0, a.jsx)(s.$nd, {
             fullWidth: !0,
             onClick: p,
-            text: n ?? y.intl.string(y.t.cfY4PE),
+            text: n ?? S.intl.string(S.t.cfY4PE),
             ...h,
             size: h.size === l.$n.Sizes.MEDIUM ? "md" : "sm"
         })
@@ -206,7 +206,7 @@ function M(e) {
         ref: t,
         children: [e.showBackButton && (0, a.jsx)(s.K0, {
             size: "sm",
-            "aria-label": y.intl.string(y.t["13/7kX"]),
+            "aria-label": S.intl.string(S.t["13/7kX"]),
             onClick: e.onBack,
             icon: r.n2b,
             variant: "secondary"

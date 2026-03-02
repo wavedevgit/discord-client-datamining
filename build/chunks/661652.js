@@ -1,6 +1,6 @@
 /** chunk id: 661652, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => S
+    A: () => y
 });
 var a = n(627968),
     i = n(64700),
@@ -21,8 +21,8 @@ var a = n(627968),
     b = n(253932),
     v = n(546183),
     j = n(157257),
-    C = n(661251),
-    A = n(508474);
+    A = n(661251),
+    C = n(508474);
 let T = [{
     id: "unset",
     label: "Unset",
@@ -41,16 +41,16 @@ let T = [{
     value: o.fL.SLAYER_SDK_RECEIVE_IN_GAME_DMS_NONE
 }];
 
-function S() {
+function y() {
     var e;
     let t, n, s = i.useRef(null),
         {
             analyticsLocations: o
         } = (0, m.Ay)(u.A.DEV_TOOLS),
-        S = b.TA.useSetting(),
-        [y, E] = i.useState(""),
+        y = b.TA.useSetting(),
+        [S, E] = i.useState(""),
         N = (0, r.bG)([_.Ay, j.A], () => (0, f.A)(_.Ay, j.A)),
-        I = (0, g.h)(y),
+        I = (0, g.h)(S),
         k = (0, r.yK)([p.A], () => I?.linkedGames?.map(e => p.A.getApplication(e.id)).filter(e => null != e) ?? []),
         R = (0, x.RD)(I, {
             allowedFlows: [x._M.RPC]
@@ -70,28 +70,28 @@ function S() {
         });
     return (0, a.jsxs)("div", {
         ref: s,
-        className: l()(C.nd, A.n),
+        className: l()(A.nd, C.n),
         children: [(0, a.jsxs)("div", {
-            className: A.k,
+            className: C.k,
             children: [(0, a.jsx)(d.Heading, {
                 variant: "heading-lg/normal",
                 children: "Settings"
             }), (0, a.jsx)(d.l6P, {
                 label: "Receive DMs In Game",
                 options: T,
-                value: S,
+                value: y,
                 onSelectionChange: b.TA.updateSetting,
                 selectionMode: "single",
                 fullWidth: !0
             })]
         }), (0, a.jsxs)("div", {
-            className: A.k,
+            className: C.k,
             children: [(0, a.jsx)(d.Heading, {
                 variant: "heading-lg/normal",
                 children: "Application"
             }), (0, a.jsx)(d.ksK, {
                 label: "Application ID",
-                value: y,
+                value: S,
                 onChange: E
             }), null != N && null != N.id ? (0, a.jsx)(d.Button, {
                 onClick: () => E(N.id),
@@ -105,7 +105,7 @@ function S() {
                 children: ["Linked Games:", " ", k.length > 0 ? k.map(e => (0, h.t)(I)?.id === e.id ? `${e.name}*` : e.name).join(", ") : "N/A"]
             })]
         }), (0, a.jsxs)("div", {
-            className: A.k,
+            className: C.k,
             children: [(0, a.jsx)(d.Heading, {
                 variant: "heading-lg/normal",
                 children: "Authorization"

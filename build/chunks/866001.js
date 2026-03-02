@@ -21,11 +21,11 @@ var a = n(627968),
     b = n(957565),
     v = n(405269),
     j = n(231545),
-    C = n(708403),
-    A = n(260880),
+    A = n(708403),
+    C = n(260880),
     T = n(303054),
-    S = n(231643),
-    y = n(652215),
+    y = n(231643),
+    S = n(652215),
     E = n(84113),
     N = n(661251);
 
@@ -69,22 +69,22 @@ function R(e) {
 let O = [{
     id: "action",
     name: "Action",
-    group: S.fu.NONE,
+    group: y.fu.NONE,
     render(e) {
         let {
             actionLog: t
         } = e, n = c()(t.createdAt);
         return (0, a.jsxs)(a.Fragment, {
-            children: [(0, a.jsxs)(C.OA, {
+            children: [(0, a.jsxs)(A.OA, {
                 className: E.mP,
-                children: [(0, a.jsx)(C.mA, {
+                children: [(0, a.jsx)(A.mA, {
                     name: "Created at",
                     children: (0, a.jsx)("time", {
                         dateTime: t.createdAt?.toISOString(),
                         title: (0, v.i$)(n, "LLLL"),
                         children: (0, v.mk)(n)
                     })
-                }), (0, a.jsxs)(C.mA, {
+                }), (0, a.jsxs)(A.mA, {
                     name: "Total Time",
                     children: [I(t.totalTime), " ms"]
                 })]
@@ -99,7 +99,7 @@ let O = [{
 }, {
     id: "traces",
     name: "Store Handlers",
-    group: S.fu.NONE,
+    group: y.fu.NONE,
     render(e) {
         let {
             actionLog: t
@@ -121,7 +121,7 @@ function w(e) {
                 className: E.ik
             }), "Error"]
         }),
-        group: S.fu.NONE,
+        group: y.fu.NONE,
         render(e) {
             let {
                 actionLog: t
@@ -149,10 +149,10 @@ function w(e) {
     }] : O, [t]), {
         TabBar: r,
         renderSelectedTab: o
-    } = (0, S.Ay)({
+    } = (0, y.Ay)({
         tabs: s
     }, [s]);
-    return (0, a.jsxs)(A.A, {
+    return (0, a.jsxs)(C.A, {
         className: E.rf,
         minHeight: 100,
         initialHeight: n,
@@ -172,7 +172,7 @@ function w(e) {
                     var e;
                     let n = JSON.stringify(Object.keys(e = t.action).reduce((t, n) => {
                         var a;
-                        return t[n] = (a = e[n], y.AKn.test(a) ? "REDACTED" : a), t
+                        return t[n] = (a = e[n], S.AKn.test(a) ? "REDACTED" : a), t
                     }, {}), null, 2);
                     (0, b.C)(n, () => (0, h.showToast)({
                         id: "copy-action-log-name",
@@ -255,25 +255,25 @@ function P() {
             p(e)
         }, []);
     (0, _.RT)(t, g ? d : r, j, M);
-    let C = i.useCallback(e => {
+    let A = i.useCallback(e => {
             c(r), f(e)
         }, [r]),
-        A = t.trim().length > 0,
-        S = i.useMemo(() => A ? m : g ? d : r, [r, m, A, g, d]),
-        y = g ? "Enable Event Tracking" : "Pause Event Tracking";
+        C = t.trim().length > 0,
+        y = i.useMemo(() => C ? m : g ? d : r, [r, m, C, g, d]),
+        S = g ? "Enable Event Tracking" : "Pause Event Tracking";
     return (0, a.jsxs)("div", {
         ref: e,
         className: l()(N.nd, E.nd),
         children: [(0, a.jsxs)("div", {
             className: E.KE,
             children: [(0, a.jsx)(u.m, {
-                text: y,
+                text: S,
                 children: (0, a.jsx)(h.K0, {
                     size: "sm",
                     variant: g ? "primary" : "active",
                     icon: g ? h.udU : h.E$n,
-                    "aria-label": y,
-                    onClick: () => C(!g)
+                    "aria-label": S,
+                    onClick: () => A(!g)
                 })
             }), (0, a.jsx)(h.IWV, {
                 size: "sm",
@@ -284,7 +284,7 @@ function P() {
             })]
         }), (0, a.jsx)(T.A, {
             columns: D,
-            data: S,
+            data: y,
             selectedRowKey: b?.id.toString(),
             onClickRow: e => v(e.actionLog)
         }), null != b && (0, a.jsx)(w, {

@@ -1,6 +1,6 @@
 /** chunk id: 86638, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => S
+    A: () => C
 });
 var i = n(627968),
     l = n(64700),
@@ -41,7 +41,7 @@ function y(e) {
         wishlistId: A,
         analyticsLocations: I,
         isItemOwned: j
-    } = e, v = l.useRef(null), y = l.useRef(g), [N, C] = l.useState(!1);
+    } = e, v = l.useRef(null), y = l.useRef(g), [N, S] = l.useState(!1);
     l.useEffect(() => {
         y.current = g
     }, [g]), l.useEffect(() => {
@@ -55,21 +55,21 @@ function y(e) {
         }
     }, []);
     let {
-        trackUserProfileWishlistAction: S
+        trackUserProfileWishlistAction: C
     } = (0, m.NJ)(), k = l.useCallback(() => {
-        null != t.sku && (S({
+        null != t.sku && (C({
             wishlistId: A,
             action: E.Mq.WISHLIST_ITEM_CLICKED,
             skuId: t.sku.id,
             productLines: new Set([t.sku.productLine])
         }), x())
-    }, [x, t.sku, A, S]), R = null != c ? (0, i.jsx)("div", {
+    }, [x, t.sku, A, C]), R = null != c ? (0, i.jsx)("div", {
         ref: v,
         className: T.BU,
         children: c
     }) : null, {
         label: w,
-        icon: L
+        icon: O
     } = (0, _.hB)({
         sku: t.sku,
         wishlistOwner: n,
@@ -97,7 +97,7 @@ function y(e) {
                     onClick: k,
                     isHoveringOrFocusing: u,
                     label: w,
-                    icon: L
+                    icon: O
                 }), j && (0, i.jsx)(h.gS, {
                     isHoveringOrFocusing: u
                 })]
@@ -108,7 +108,7 @@ function y(e) {
             spec: b,
             analyticsLocations: I,
             isHoveringOrFocusing: u,
-            onHoverOrFocusChange: C
+            onHoverOrFocusChange: S
         })]
     })
 }
@@ -145,7 +145,7 @@ function N(e) {
     })
 }
 
-function C(e) {
+function S(e) {
     let {
         item: t,
         wishlistOwner: n,
@@ -182,7 +182,7 @@ function C(e) {
     })
 }
 
-function S(e) {
+function C(e) {
     let {
         item: t,
         wishlistOwner: n,
@@ -207,7 +207,7 @@ function S(e) {
                 ...r
             });
         case j.EZt.COLLECTIBLES:
-            return (0, i.jsx)(C, {
+            return (0, i.jsx)(S, {
                 item: t,
                 analyticsLocations: u,
                 isHoveringOrFocusing: f,

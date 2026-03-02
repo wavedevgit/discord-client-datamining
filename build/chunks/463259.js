@@ -1,6 +1,6 @@
 /** chunk id: 463259, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => M,
+    A: () => U,
     u: () => P
 });
 var i = n(627968),
@@ -28,13 +28,13 @@ var i = n(627968),
     b = n(236599),
     y = n(192),
     N = n(128988),
-    C = n(795755),
-    S = n(53977),
+    S = n(795755),
+    C = n(53977),
     k = n(982599),
     R = n(515054),
     w = n(266713),
-    L = n(985018),
-    O = n(368379);
+    O = n(985018),
+    L = n(368379);
 
 function P(e) {
     let {
@@ -44,7 +44,7 @@ function P(e) {
     return t instanceof _.R ? (0, i.jsx)(E.A, {
         widget: t,
         ...n
-    }) : t instanceof A.Yy ? (0, i.jsx)(C.A, {
+    }) : t instanceof A.Yy ? (0, i.jsx)(S.A, {
         widget: t,
         ...n
     }) : null
@@ -52,14 +52,14 @@ function P(e) {
 
 function D() {
     return (0, i.jsxs)("div", {
-        className: O.mJ,
+        className: L.mJ,
         children: [(0, i.jsx)(o.mir, {
             size: "xs"
         }), (0, i.jsx)(o.Text, {
-            "aria-label": L.intl.string(L.t["7blcz6"]),
+            "aria-label": O.intl.string(O.t["7blcz6"]),
             variant: "text-xs/normal",
             color: "text-muted",
-            children: L.intl.string(L.t["7blcz6"])
+            children: O.intl.string(O.t["7blcz6"])
         })]
     })
 }
@@ -89,7 +89,7 @@ function G() {
     })
 }
 
-function U(e) {
+function M(e) {
     let {
         user: t,
         guildId: n,
@@ -116,7 +116,7 @@ function U(e) {
     let N = () => (0, i.jsxs)(i.Fragment, {
         children: [o && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(b.A, {
-                className: O.cG
+                className: L.cG
             }), u && (0, i.jsx)(D, {}), g && (0, i.jsx)(G, {})]
         }), s.map((e, l) => (0, i.jsx)(P, {
             widget: e,
@@ -127,14 +127,14 @@ function U(e) {
         }, e.getUniqueKey()))]
     });
     if (j)
-        if (g) return (0, i.jsx)(S.A, {});
+        if (g) return (0, i.jsx)(C.A, {});
         else return (0, i.jsx)(w.A, {});
     return o ? (0, i.jsx)(y.D, {
         children: N()
     }) : N()
 }
 
-function M(e) {
+function U(e) {
     let {
         user: t,
         ...n
@@ -146,13 +146,13 @@ function M(e) {
     return (0, i.jsxs)(R.K, {
         "data-scroller": !0,
         scrollerRef: a,
-        className: s()(O.XG, {
-            [O.az]: r
+        className: s()(L.XG, {
+            [L.az]: r
         }),
         fade: !0,
         children: [(0, i.jsx)(N.A, {
             scrollerRef: a
-        }), (0, i.jsx)(U, {
+        }), (0, i.jsx)(M, {
             user: t,
             ...n
         })]

@@ -21,11 +21,11 @@ var a = n(627968),
     b = n(590202),
     v = n(710969),
     j = n(792620),
-    C = n(814793),
-    A = n(988436),
+    A = n(814793),
+    C = n(988436),
     T = n(918338),
-    S = n(270045),
-    y = n(57718),
+    y = n(270045),
+    S = n(57718),
     E = n(398025),
     N = n(545986),
     I = n(516226),
@@ -84,7 +84,7 @@ function L(e) {
         opacity: +!!_,
         height: _ ? c : 0,
         config: O.N
-    }), v = 0 === p ? u.EpV : u.mir, j = u.LU0.unsafe_rawColors.RED_345.css, C = 0 === p ? j : l ? u.LU0.colors.TEXT_DEFAULT : u.LU0.colors.WHITE;
+    }), v = 0 === p ? u.EpV : u.mir, j = u.LU0.unsafe_rawColors.RED_345.css, A = 0 === p ? j : l ? u.LU0.colors.TEXT_DEFAULT : u.LU0.colors.WHITE;
     return (0, a.jsx)(r.animated.div, {
         style: {
             height: b.height,
@@ -97,7 +97,7 @@ function L(e) {
                 className: M.M5,
                 children: [(0, a.jsx)(v, {
                     size: "xs",
-                    color: C
+                    color: A
                 }), (0, a.jsx)(u.Text, {
                     variant: "text-xs/medium",
                     color: l ? "text-muted" : "always-white",
@@ -105,7 +105,7 @@ function L(e) {
                 })]
             }), 0 === p && (0, a.jsx)(u.QWc, {
                 text: D.intl.string(D.t["yKJi+/"]),
-                onClick: () => (0, A.i)({
+                onClick: () => (0, C.i)({
                     quest: t,
                     errorHints: n,
                     sourceQuestContent: o
@@ -124,7 +124,7 @@ function U(e) {
         errorHints: s,
         warningHints: r,
         isVisibleInViewport: m,
-        onCtxMenuClose: A,
+        onCtxMenuClose: C,
         onCtxMenuOpen: E,
         onCtxMenuSelect: O,
         sourceQuestContent: U
@@ -140,7 +140,7 @@ function U(e) {
             sourceQuestContent: U,
             sourceQuestContentCTA: b.Cy.QUEST_HOME_TILE_HEADER_WATCH_VIDEO
         })
-    }, [B, t, U]), Y = (0, o.bG)([p.A], () => p.A.getQuestHomeHeroConfig()), J = i.useMemo(() => null != Y && (0, C.I0)(Y, t.id), [Y, t.id]), X = _.wK.useConfig({
+    }, [B, t, U]), Y = (0, o.bG)([p.A], () => p.A.getQuestHomeHeroConfig()), J = i.useMemo(() => null != Y && (0, A.I0)(Y, t.id), [Y, t.id]), X = _.wK.useConfig({
         location: R.rE.QUESTS_CARD
     }), Z = X.enabled && X.variant === _.dF.NEXT_TO_CONTEXT_MENU_CTA, ee = (0, f.do)({
         quest: t,
@@ -207,9 +207,9 @@ function U(e) {
                                 className: M.A9
                             })
                         })
-                    }), (0, a.jsx)(S.C, {
+                    }), (0, a.jsx)(y.C, {
                         onOpen: E,
-                        onClose: A,
+                        onClose: C,
                         onSelect: O,
                         questContent: g.uF.QUEST_HOME_DESKTOP,
                         quest: t,
@@ -233,11 +233,11 @@ function U(e) {
                     width: 100,
                     height: 30,
                     className: M.Iu,
-                    children: (0, a.jsx)(y.Ay, {
+                    children: (0, a.jsx)(S.Ay, {
                         className: M.Iu,
                         logotypeClassName: M.ND,
                         quest: t,
-                        separatorSpacing: y.C8.MEDIUM,
+                        separatorSpacing: S.C8.MEDIUM,
                         withGameTile: !1,
                         onLoadComplete: $
                     })

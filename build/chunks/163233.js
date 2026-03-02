@@ -21,15 +21,15 @@ var a = n(627968),
     b = n(961350),
     v = n(403362),
     j = n(49999),
-    C = n(518477),
-    A = n(985018);
+    A = n(518477),
+    C = n(985018);
 
 function T(e) {
     let {
         targetElementRef: t,
         onClose: n
-    } = e, [T, S] = i.useState(!1), {
-        trackUserProfileEditAction: y
+    } = e, [T, y] = i.useState(!1), {
+        trackUserProfileEditAction: S
     } = (0, h.NJ)(), E = (0, s.bG)([b.default], () => b.default.getId()), N = function() {
         let e, t, n = (0, s.bG)([b.default], () => b.default.getId()),
             a = (0, g.A)(n),
@@ -83,7 +83,7 @@ function T(e) {
             let o = "linked" === r.type,
                 d = () => (0, _.openUserProfileModal)({
                     userId: E,
-                    tabSection: C.RP.WIDGETS
+                    tabSection: A.RP.WIDGETS
                 }).then(() => {
                     s(j.i.TAKE_ACTION), n()
                 });
@@ -95,31 +95,31 @@ function T(e) {
                     type: "image",
                     src: r.config.editProfileUpsellImage
                 } : void 0,
-                title: A.intl.format(A.t.TXDztH, {
+                title: C.intl.format(C.t.TXDztH, {
                     applicationName: r.application.name
                 }),
-                body: o ? A.intl.string(A.t["63Kso0"]) : A.intl.string(A.t.HwXoeC),
+                body: o ? C.intl.string(C.t["63Kso0"]) : C.intl.string(C.t.HwXoeC),
                 onRequestClose: () => s(j.i.USER_DISMISS),
                 actions: [o ? {
-                    text: A.intl.string(A.t.VSLDly),
+                    text: C.intl.string(C.t.VSLDly),
                     onClick: () => {
-                        S(!0), d().then(() => {
+                        y(!0), d().then(() => {
                             let e;
                             return e = new x.R({
                                 applicationId: r.application.id
-                            }), void((0, p.Y5)(e), y({
+                            }), void((0, p.Y5)(e), S({
                                 action: "WIDGET_ADDED",
                                 ...e.getProfileEditAnalyticsOptions()
-                            }), (0, f.XA)(C.jM.WIDGET_ADDED))
-                        }).finally(() => S(!1))
+                            }), (0, f.XA)(A.jM.WIDGET_ADDED))
+                        }).finally(() => y(!1))
                     },
                     loading: T
                 } : {
-                    text: A.intl.string(A.t["DSJi3+"]),
+                    text: C.intl.string(C.t["DSJi3+"]),
                     onClick: () => {
                         r.authFlow.initiate({
                             onConfirm: () => {
-                                S(!0), d().finally(() => S(!1))
+                                y(!0), d().finally(() => y(!1))
                             },
                             analyticsLocations: I
                         })

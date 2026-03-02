@@ -1,9 +1,9 @@
 /** chunk id: 850730, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     DB: () => N,
-    ZL: () => y,
+    ZL: () => S,
     ln: () => E,
-    t0: () => S
+    t0: () => y
 });
 var a = n(64700),
     i = n(873298),
@@ -24,13 +24,13 @@ var a = n(64700),
     b = n(652215),
     v = n(385803),
     j = n(381941);
-let C = [b.NJ8.DARK, b.NJ8.LIGHT, b.NJ8.DARKER, b.NJ8.MIDNIGHT],
-    A = [i.NS.COMPACT, i.NS.COZY, i.NS.DEFAULT];
+let A = [b.NJ8.DARK, b.NJ8.LIGHT, b.NJ8.DARKER, b.NJ8.MIDNIGHT],
+    C = [i.NS.COMPACT, i.NS.COZY, i.NS.DEFAULT];
 
 function T(e) {
     return e[Math.floor(Math.random() * e.length)]
 }
-async function S() {
+async function y() {
     let e, t = (e = _.default.getCurrentUser(), f.Ay.canUseClientThemes(e) ? Object.keys(v.ag).map(e => Number(e)) : []),
         n = t.length > 0 && Math.random() > .7;
     try {
@@ -47,7 +47,7 @@ async function S() {
                 customUserThemeSettings: void 0
             }, g.Sb.INFREQUENT_USER_ACTION)
         } else {
-            let e = T(C);
+            let e = T(A);
             await l.u_({
                 theme: e,
                 backgroundGradientPresetId: void 0,
@@ -56,7 +56,7 @@ async function S() {
         }
     } catch (e) {}
 }
-async function y() {
+async function S() {
     let e = d.A.purchases,
         t = (0, c.x9)(e),
         n = (0, c.$W)(e),
@@ -83,7 +83,7 @@ function E() {
         (0, r.XS)(e);
         let t = T(j.qh);
         (0, r.AC)(t);
-        let n = T(A);
+        let n = T(C);
         p.Xi.updateSetting(n)
     } catch (e) {}
 }
@@ -99,21 +99,21 @@ function N() {
             b = t.backgroundGradientPresetId,
             v = e?.avatarDecoration?.skuId,
             j = e?.collectibles?.nameplate?.skuId,
-            C = null != v ? a.find(e => e.skuId === v) ?? null : null,
-            A = null != j ? i.find(e => e.skuId === j) ?? null : null,
+            A = null != v ? a.find(e => e.skuId === v) ?? null : null,
+            C = null != j ? i.find(e => e.skuId === j) ?? null : null,
             T = o.A.fontSize,
-            S = o.A.messageGroupSpacing,
-            y = p.Xi.getSetting();
+            y = o.A.messageGroupSpacing,
+            S = p.Xi.getSetting();
         return () => {
             try {
                 l.u_({
                     theme: f,
                     backgroundGradientPresetId: b ?? void 0,
                     customUserThemeSettings: void 0
-                }, g.Sb.INFREQUENT_USER_ACTION), (0, u.Dx)(C), (0, u.pX)(A);
+                }, g.Sb.INFREQUENT_USER_ACTION), (0, u.Dx)(A), (0, u.pX)(C);
                 let e = h.A.getPendingChanges(),
                     t = (0, m.Sk)(e);
-                (0, s._L)(t).finally(s.pZ), (0, r.XS)(T), (0, r.AC)(S), p.Xi.updateSetting(y)
+                (0, s._L)(t).finally(s.pZ), (0, r.XS)(T), (0, r.AC)(y), p.Xi.updateSetting(S)
             } catch (e) {}
         }
     }, [])

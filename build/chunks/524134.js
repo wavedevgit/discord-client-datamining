@@ -1,6 +1,6 @@
 /** chunk id: 524134, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => S
+    A: () => y
 });
 var a = n(627968),
     i = n(64700),
@@ -21,26 +21,26 @@ var a = n(627968),
     b = n(446868),
     v = n(683589),
     j = n(87404),
-    C = n(652215),
-    A = n(53516),
+    A = n(652215),
+    C = n(53516),
     T = n(985018);
 
-function S() {
+function y() {
     let {
         action: e,
         theme: t
     } = (0, l.cf)([f.A, _.A], () => ({
         action: f.A.getAction(),
         theme: _.A.theme
-    })), S = b.A.getVerificationTypes(e), [y, E] = i.useState(0), N = (0, m.A)(S);
+    })), y = b.A.getVerificationTypes(e), [S, E] = i.useState(0), N = (0, m.A)(y);
     (0, x.A)({
         type: s.ImpressionTypes.MODAL,
         name: s.ImpressionNames.USER_ACTION_REQUIRED,
         properties: {
-            verification_type: S[0],
-            verification_types: S
+            verification_type: y[0],
+            verification_types: y
         }
-    }, {}, [S.toString()]);
+    }, {}, [y.toString()]);
     let I = () => {
         (0, u.Cw)(), (0, o.mMO)(async () => {
             let {
@@ -57,7 +57,7 @@ function S() {
     return i.useEffect(() => (h.A.disable(), () => {
         h.A.enable()
     }), []), i.useEffect(() => {
-        N?.[0] === C.Fz7.PHONE && S?.[0] === C.Fz7.EMAIL && (0, o.mMO)(async () => {
+        N?.[0] === A.Fz7.PHONE && y?.[0] === A.Fz7.EMAIL && (0, o.mMO)(async () => {
             let {
                 default: e
             } = await n.e("10919").then(n.bind(n, 556506));
@@ -72,12 +72,12 @@ function S() {
             Layer: p.Ay,
             onCloseCallback: I
         })
-    }, [S, N]), (0, a.jsx)(v.A, {
-        types: S,
-        captchaKey: y,
+    }, [y, N]), (0, a.jsx)(v.A, {
+        types: y,
+        captchaKey: S,
         onCaptchaVerify: e => {
             r.Bo.post({
-                url: C.Rsh.CAPTCHA,
+                url: A.Rsh.CAPTCHA,
                 body: {
                     captcha_key: e
                 },
@@ -89,7 +89,7 @@ function S() {
         },
         theme: t,
         onClick: e => {
-            e === C.Fz7.EMAIL_OR_PHONE || e === C.Fz7.EMAIL || e === C.Fz7.REVERIFY_EMAIL ? I() : (0, o.mMO)(async () => {
+            e === A.Fz7.EMAIL_OR_PHONE || e === A.Fz7.EMAIL || e === A.Fz7.REVERIFY_EMAIL ? I() : (0, o.mMO)(async () => {
                 let {
                     default: e
                 } = await Promise.resolve().then(n.bind(n, 615715));
@@ -99,7 +99,7 @@ function S() {
                     ...t
                 })
             }, {
-                modalKey: A.V,
+                modalKey: C.V,
                 Layer: p.Ay
             })
         },

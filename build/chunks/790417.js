@@ -34,8 +34,8 @@ function T(e) {
         channelId: y,
         onClose: N
     } = e, {
-        live: C,
-        recent: S,
+        live: S,
+        recent: C,
         stream: k
     } = (0, u.A)(t.id), {
         voiceChannel: R,
@@ -43,14 +43,14 @@ function T(e) {
     } = (0, m.A)({
         userId: t.id,
         guildId: b
-    }), L = (0, l.bG)([s.A], () => s.A.isFetchingUserOutbox(t.id)), O = t.id === n.id, P = (0, l.bG)([c.A, o.A], () => {
-        let e = O ? c.A.getStatus() : o.A.getStatus(t.id);
+    }), O = (0, l.bG)([s.A], () => s.A.isFetchingUserOutbox(t.id)), L = t.id === n.id, P = (0, l.bG)([c.A, o.A], () => {
+        let e = L ? c.A.getStatus() : o.A.getStatus(t.id);
         return e === a.clD.OFFLINE || e === a.clD.INVISIBLE
-    }), D = C.length > 0 || null != k, G = T?.private !== !0 && null == k && null == w && null != R, U = !P && (D || G), M = S.length > 0;
-    return U || M || !L ? U || M || L ? (0, i.jsxs)(A.K, {
+    }), D = S.length > 0 || null != k, G = T?.private !== !0 && null == k && null == w && null != R, M = !P && (D || G), U = C.length > 0;
+    return M || U || !O ? M || U || O ? (0, i.jsxs)(A.K, {
         className: E.XG,
         fade: !0,
-        children: [U ? (0, i.jsx)(_.A, {
+        children: [M ? (0, i.jsx)(_.A, {
             heading: v.intl.string(v.t.J6STd9),
             children: (0, i.jsxs)("ul", {
                 className: E.kR,
@@ -61,7 +61,7 @@ function T(e) {
                         stream: k,
                         onClose: N
                     })
-                }), C.map((e, l) => (0, i.jsx)("li", {
+                }), S.map((e, l) => (0, i.jsx)("li", {
                     children: (0, i.jsx)(g.A, {
                         user: t,
                         currentUser: n,
@@ -77,9 +77,9 @@ function T(e) {
                     })
                 })]
             })
-        }) : null, M ? (0, i.jsx)(_.A, {
+        }) : null, U ? (0, i.jsx)(_.A, {
             heading: v.intl.string(v.t.jzgEoL),
-            introText: O ? v.intl.format(v.t["4bk9Ak"], {
+            introText: L ? v.intl.format(v.t["4bk9Ak"], {
                 learnMoreHook: (e, t) => (0, i.jsx)(a.MzZ, {
                     href: d.A.getArticleURL(j.MVz.ACTIVITY_STATUS_SETTINGS),
                     children: e
@@ -88,7 +88,7 @@ function T(e) {
             scrollTargetId: I.bk.RECENT_ACTIVITY,
             children: (0, i.jsx)("ul", {
                 className: E.kR,
-                children: S.map(e => (0, i.jsx)("li", {
+                children: C.map(e => (0, i.jsx)("li", {
                     children: (0, i.jsx)(x.A, {
                         user: t,
                         entry: e,
@@ -97,7 +97,7 @@ function T(e) {
                 }, e.id))
             })
         }) : null]
-    }) : O ? (0, i.jsx)(h.qv, {
+    }) : L ? (0, i.jsx)(h.qv, {
         onClose: N
     }) : (0, i.jsx)(h.zf, {
         user: t,

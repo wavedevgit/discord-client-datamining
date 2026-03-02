@@ -22,22 +22,22 @@ var a = n(627968),
     b = n(971649),
     v = n(901406),
     j = n(792620),
-    C = n(73473),
-    A = n(201805),
+    A = n(73473),
+    C = n(201805),
     T = n(818348),
-    S = n(985018),
-    y = n(868566);
+    y = n(985018),
+    S = n(868566);
 
 function E(e) {
     let {
         quest: t,
         errorHints: n,
         transitionState: s,
-        onClose: C,
+        onClose: A,
         sourceQuestContent: E
-    } = e, [I, k] = (0, i.useState)(n), R = (0, p.UX)(), O = (0, _.Ut)(), w = (0, b.vU)()?.getId(), D = (0, o.bG)([m.A], () => m.A.useReducedMotion), M = (0, A.Xf)({
+    } = e, [I, k] = (0, i.useState)(n), R = (0, p.UX)(), O = (0, _.Ut)(), w = (0, b.vU)()?.getId(), D = (0, o.bG)([m.A], () => m.A.useReducedMotion), M = (0, C.Xf)({
         useReducedMotion: D,
-        className: y.Zf
+        className: S.Zf
     }), P = I.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), L = (0, j.YL)(t), U = (0, o.bG)([h.A], () => h.A.getState().theme), B = (0, c.Mw)(U) ? T.NJ.DARK : T.NJ.LIGHT, {
         startConsoleQuest: G,
         startingConsoleQuest: F
@@ -57,12 +57,12 @@ function E(e) {
     });
     return (0, a.jsx)(r.Modal, {
         transitionState: s,
-        onClose: C,
-        title: S.intl.string(S.t.W5lmKt),
+        onClose: A,
+        title: y.intl.string(y.t.W5lmKt),
         subtitle: R.message,
         actions: [{
             variant: "secondary",
-            onClick: () => void(C(), (0, v.b6)({
+            onClick: () => void(A(), (0, v.b6)({
                 quest: t
             }, {
                 content: x.uF.CONNECTIONS_MODAL,
@@ -70,59 +70,59 @@ function E(e) {
                 impressionId: w,
                 sourceQuestContent: E
             })),
-            text: S.intl.string(S.t["qiS+xj"])
+            text: y.intl.string(y.t["qiS+xj"])
         }, {
             variant: "primary",
-            onClick: () => C(),
-            text: S.intl.string(S.t.cpT0Cq)
+            onClick: () => A(),
+            text: y.intl.string(y.t.cpT0Cq)
         }],
         children: (0, a.jsxs)(a.Fragment, {
             children: [(0, a.jsxs)("div", {
-                className: y.$Q,
+                className: S.$Q,
                 children: [(0, a.jsx)(u.Text, {
                     variant: "eyebrow",
                     color: "text-default",
-                    children: S.intl.string(S.t["+/hZM/"])
+                    children: y.intl.string(y.t["+/hZM/"])
                 }), (0, a.jsxs)(u.DUT, {
-                    className: l()(y.Tm, {
-                        [y.r9]: F
+                    className: l()(S.Tm, {
+                        [S.r9]: F
                     }),
                     onClick: G,
                     children: [M.render(), (0, a.jsx)(u.Text, {
                         variant: "text-sm/medium",
                         color: "currentColor",
-                        className: y.Zf,
-                        children: S.intl.string(S.t.wzzjk9)
+                        className: S.Zf,
+                        children: y.intl.string(y.t.wzzjk9)
                     })]
                 })]
             }), (0, a.jsxs)("div", {
-                className: y.ei,
+                className: S.ei,
                 children: [(0, a.jsx)(N, {
                     icon: (0, a.jsx)(u.kN9, {
                         size: "sm"
                     }),
-                    text: S.intl.string(S.t.br3uIi)
+                    text: y.intl.string(y.t.br3uIi)
                 }), (0, a.jsx)(N, {
                     icon: (0, a.jsx)(u._xR, {
                         size: "sm"
                     }),
-                    text: S.intl.string(S.t.XF4wuA),
+                    text: y.intl.string(y.t.XF4wuA),
                     errors: L ? void 0 : P.map(e => e.message),
                     gameTile: L ? (0, a.jsx)(d.m, {
                         "aria-label": t.config.messages.gameTitle,
                         __unsupportedReactNodeAsText: (0, a.jsxs)("div", {
-                            className: y.YL,
+                            className: S.YL,
                             children: [(0, a.jsx)(u.Text, {
                                 variant: "text-sm/medium",
                                 children: t.config.messages.gameTitle
                             }), (0, a.jsx)(u.Text, {
                                 variant: "text-xs/normal",
                                 color: "text-muted",
-                                children: S.intl.string(S.t.STpNEC)
+                                children: y.intl.string(y.t.STpNEC)
                             })]
                         }),
                         children: (0, a.jsx)("img", {
-                            className: y.rC,
+                            className: S.rC,
                             alt: t.config.messages.gameTitle,
                             src: (0, g.tW)(t, g.fY.GAME_TILE, B).url
                         })
@@ -141,37 +141,37 @@ function N(e) {
         gameTile: s
     } = e, r = i.length > 0, o = r ? u.esW : u.QtE;
     return (0, a.jsxs)("div", {
-        className: y.dJ,
+        className: S.dJ,
         children: [(0, a.jsxs)("div", {
-            className: l()(y.w_, {
-                [y.qu]: r
+            className: l()(S.w_, {
+                [S.qu]: r
             }),
             children: [(0, a.jsxs)("div", {
-                className: y.d3,
+                className: S.d3,
                 children: [t, (0, a.jsx)(u.Text, {
                     variant: "text-sm/medium",
                     color: "text-default",
                     children: n
                 })]
             }), (0, a.jsxs)("div", {
-                className: y.d3,
+                className: S.d3,
                 children: [s, (0, a.jsx)(o, {
                     color: "currentColor",
                     size: "sm",
                     className: l()({
-                        [y.kX]: !r,
-                        [y.z3]: r
+                        [S.kX]: !r,
+                        [S.z3]: r
                     })
                 })]
             })]
         }), (0, a.jsx)("div", {
-            className: y.Tt,
+            className: S.Tt,
             children: i.map(e => (0, a.jsxs)("div", {
-                className: y.Ff,
+                className: S.Ff,
                 children: [(0, a.jsx)(u.id, {
                     size: "sm",
                     color: "currentColor",
-                    className: y.z3
+                    className: S.z3
                 }), (0, a.jsx)(u.Text, {
                     variant: "text-xs/medium",
                     color: "text-muted",
@@ -188,7 +188,7 @@ function I(e) {
             default: t
         } = await Promise.resolve().then(n.bind(n, 988436));
         return function(n) {
-            return (0, a.jsx)(C.R, {
+            return (0, a.jsx)(A.R, {
                 overrideVisibility: !0,
                 questOrQuests: e.quest,
                 questContent: x.uF.CONNECTIONS_MODAL,

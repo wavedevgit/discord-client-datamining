@@ -1,6 +1,6 @@
 /** chunk id: 228053, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => C
+    A: () => S
 });
 var i = n(627968),
     l = n(64700),
@@ -84,7 +84,7 @@ function N(e) {
     })
 }
 
-function C(e) {
+function S(e) {
     let {
         wishlist: t,
         handleOpenUserProfileModal: n,

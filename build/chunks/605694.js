@@ -27,13 +27,13 @@ var i = n(627968),
     b = n(731068),
     y = n(619517),
     N = n(339580),
-    C = n(961350),
-    S = n(760751),
+    S = n(961350),
+    C = n(760751),
     k = n(403362),
     R = n(183555),
     w = n(622543),
-    L = n(466853),
-    O = n(985018),
+    O = n(466853),
+    L = n(985018),
     P = n(442716);
 let D = /{{(.*?)}}/g,
     G = {
@@ -223,7 +223,7 @@ let D = /{{(.*?)}}/g,
         }]
     };
 
-function U(e) {
+function M(e) {
     let {
         component: t
     } = e;
@@ -243,8 +243,8 @@ function U(e) {
             });
         case "FIELD":
             return (0, i.jsx)(B, {
-                value: M(t.value),
-                name: M(t.name)
+                value: U(t.value),
+                name: U(t.name)
             });
         case "TEXT":
             return (0, i.jsx)(X, {
@@ -261,14 +261,14 @@ function U(e) {
     }
 }
 
-function M(e, t) {
-    return (0, i.jsx)(U, {
+function U(e, t) {
+    return (0, i.jsx)(M, {
         component: e
     }, t)
 }
 
 function F(e) {
-    return e.map((e, t) => M(e, t))
+    return e.map((e, t) => U(e, t))
 }
 
 function W(e) {
@@ -451,7 +451,7 @@ function J(e) {
             children: [e.showSuggestedForYou && (0, i.jsx)(d.Text, {
                 variant: "text-xs/medium",
                 color: "text-default",
-                children: O.intl.string(O.t.zMUr6Z)
+                children: L.intl.string(L.t.zMUr6Z)
             }), (0, i.jsx)(d.Heading, {
                 variant: "heading-sm/medium",
                 color: "text-default",
@@ -482,10 +482,10 @@ let Q = Object.assign(function(e) {
             cta: T,
             subtle: y = !1
         } = e,
-        D = (0, c.bG)([C.default], () => C.default.getId()) === v.id,
-        M = (0, h.h)(E.applicationId),
-        F = M?.getIconURL(16),
-        W = (0, c.bG)([S.A], () => null != M ? S.A.getGameByApplication(M) : null),
+        D = (0, c.bG)([S.default], () => S.default.getId()) === v.id,
+        U = (0, h.h)(E.applicationId),
+        F = U?.getIconURL(16),
+        W = (0, c.bG)([C.A], () => null != U ? C.A.getGameByApplication(U) : null),
         H = (0, A.A)({
             location: "UserProfileApplicationWidget",
             applicationId: W?.id,
@@ -498,7 +498,7 @@ let Q = Object.assign(function(e) {
             hasAlreadyLinked: X,
             canStartAuthorization: z,
             startAuthorization: V
-        } = (0, x.RD)(M),
+        } = (0, x.RD)(U),
         {
             analyticsLocations: Q
         } = (0, g.Ay)(m.A.USER_PROFILE_APPLICATION_WIDGET),
@@ -522,7 +522,7 @@ let Q = Object.assign(function(e) {
                 className: P.qP
             }), (0, i.jsx)(d.Text, {
                 variant: "text-sm/medium",
-                children: M?.name != null ? M.name : (0, i.jsx)("div", {
+                children: U?.name != null ? U.name : (0, i.jsx)("div", {
                     className: P.jC
                 })
             })]
@@ -613,7 +613,7 @@ let Q = Object.assign(function(e) {
             hasData: null != r,
             components: I
         });
-    return null == el ? null : (0, i.jsxs)(L.A, {
+    return null == el ? null : (0, i.jsxs)(O.A, {
         ...e,
         userId: v.id,
         widget: E,
@@ -628,7 +628,7 @@ let Q = Object.assign(function(e) {
         }) : null,
         children: [(0, i.jsx)(q, {
             widget: E,
-            children: (0, i.jsx)(U, {
+            children: (0, i.jsx)(M, {
                 component: el
             })
         }), D && (0, i.jsxs)("div", {
@@ -640,13 +640,13 @@ let Q = Object.assign(function(e) {
                 }), (0, i.jsx)(d.Text, {
                     variant: "text-sm/medium",
                     color: "text-subtle",
-                    children: O.intl.string(O.t.z5K4Uv)
+                    children: L.intl.string(L.t.z5K4Uv)
                 })]
             }), $ ? (0, i.jsx)(J, {
-                heading: O.intl.string(O.t.UDPRLO),
-                content: O.intl.string(O.t["OW/2al"]),
+                heading: L.intl.string(L.t.UDPRLO),
+                content: L.intl.string(L.t["OW/2al"]),
                 buttons: (0, i.jsx)(d.Button, {
-                    text: O.intl.string(O.t.S0W8Z5),
+                    text: L.intl.string(L.t.S0W8Z5),
                     onClick: Z
                 })
             }) : T]

@@ -1,6 +1,6 @@
 /** chunk id: 912878, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => y
+    A: () => S
 });
 var a = n(627968),
     i = n(64700),
@@ -21,8 +21,8 @@ var a = n(627968),
     b = n(263834),
     v = n(865116),
     j = n(716371),
-    C = n(701940),
-    A = n(661251);
+    A = n(701940),
+    C = n(661251);
 
 function T() {
     let e = (0, d.yK)([f.default], () => f.default.getSortedChannels()[1]),
@@ -53,7 +53,7 @@ function T() {
         }, [s]),
         b = !!s?.isPrivate() && (0, o.Lt)(s.recipientFlags ?? 0, r.o.DISMISSED_IN_GAME_MESSAGE_NUX);
     return (0, a.jsxs)("div", {
-        className: C.gs,
+        className: A.gs,
         children: [(0, a.jsx)(c.ZiE, {
             label: "In-Game NUX Message for DMs",
             selectionMode: "single",
@@ -71,7 +71,7 @@ function T() {
     })
 }
 
-function S() {
+function y() {
     let e = i.useCallback(() => {
         u.A.openPrivateChannel({
             recipientIds: [j.K]
@@ -85,7 +85,7 @@ function S() {
     })
 }
 
-function y() {
+function S() {
     let e = (0, d.bG)([v.Ay], () => v.Ay.allByCategory(v.xW.MESSAGING), [], d.My).map(e => {
         let [t, n, {
             label: i
@@ -98,11 +98,11 @@ function y() {
         }, t)
     });
     return (0, a.jsxs)("div", {
-        className: l()(A.nd, C.nd),
+        className: l()(C.nd, A.nd),
         children: [e, (0, a.jsx)("div", {
-            className: C.yF
+            className: A.yF
         }), (0, a.jsx)(T, {}), (0, a.jsx)("div", {
-            className: C.yF
-        }), (0, a.jsx)(S, {})]
+            className: A.yF
+        }), (0, a.jsx)(y, {})]
     })
 }

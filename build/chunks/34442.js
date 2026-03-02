@@ -54,15 +54,15 @@ function g(e) {
         ...v,
         threshold: a.Ht.rankings.CONTAINS,
         keys: ["label"]
-    }), [v]), C = l.useCallback(e => "" === e.trim() ? y.length : (0, a.Ht)(y, e, N).length, [y, N]), S = l.useCallback(e => {
+    }), [v]), S = l.useCallback(e => "" === e.trim() ? y.length : (0, a.Ht)(y, e, N).length, [y, N]), C = l.useCallback(e => {
         let n = e.target.value;
         "" === _.trim() && "" !== n.trim() && h({
             action: "GAME_SEARCH_SESSION_STARTED",
             widgetEdited: t,
             numCharacters: n.trim().length,
-            numResults: C(n)
+            numResults: S(n)
         }), A(n), I.current = n
-    }, [_, h, t, C]);
+    }, [_, h, t, S]);
     return (0, i.jsx)(s.YNO, {
         ...f,
         onRequestOpen: () => {
@@ -76,7 +76,7 @@ function g(e) {
                 action: "GAME_SEARCH_SESSION_ENDED",
                 widgetEdited: t,
                 numCharacters: I.current.trim().length,
-                numResults: C(I.current)
+                numResults: S(I.current)
             })
         },
         renderPopout: e => {
@@ -99,7 +99,7 @@ function g(e) {
                         hideLabel: !0,
                         placeholder: u.intl.string(u.t["5h0QOP"]),
                         autoFocus: !0,
-                        onQueryChange: S
+                        onQueryChange: C
                     }), (0, i.jsx)(s.X2W, {
                         maxVisibleItems: 7
                     })]

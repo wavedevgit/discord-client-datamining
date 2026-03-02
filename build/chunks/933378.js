@@ -21,14 +21,14 @@ var a = n(627968),
     b = n(792620),
     v = n(814793),
     j = n(201805),
-    C = n(495242),
-    A = n(52093),
+    A = n(495242),
+    C = n(52093),
     T = n(985018),
-    S = n(883476);
+    y = n(883476);
 
-function y(e) {
+function S(e) {
     return (0, a.jsx)(d.Text, {
-        className: S.eW,
+        className: y.eW,
         color: "text-muted",
         variant: "text-xxs/normal",
         children: e.children
@@ -41,8 +41,8 @@ function E(e) {
         useReducedMotion: n
     } = e, s = (0, m.J)(), o = (0, j.H1)(t.id, h.uF.QUEST_BAR_V2, h.uF.QUEST_BAR_V2), c = (0, j.Xf)({
         useReducedMotion: n
-    }), b = (0, p.Ut)(), C = (0, _.go)(), {
-        errorHints: A,
+    }), b = (0, p.Ut)(), A = (0, _.go)(), {
+        errorHints: C,
         startingConsoleQuest: E,
         startConsoleQuest: N
     } = (0, x.Wj)({
@@ -60,7 +60,7 @@ function E(e) {
         header: I,
         renderBody: k
     } = i.useMemo(() => {
-        let e = A.length > 0,
+        let e = C.length > 0,
             n = t.config.messages.gameTitle;
         return {
             header: e ? (0, v.ui)(t) ? T.intl.string(T.t.N33EuL) : T.intl.formatToPlainString(T.t["28Ql27"], {
@@ -69,12 +69,12 @@ function E(e) {
                 gameTitle: n
             }),
             renderBody: e ? () => (0, a.jsx)(a.Fragment, {
-                children: A.map((e, n) => {
+                children: C.map((e, n) => {
                     if (e.type === r._.EXPIRED_CREDENTIAL && s) {
                         let i = u.A.getAccount(e.connected_account_id, e.connected_account_type),
                             s = (0, f.IG)(e),
                             l = (0, f.$J)(e);
-                        return (0, a.jsx)(y, {
+                        return (0, a.jsx)(S, {
                             children: T.intl.format(s, {
                                 account_name: i?.name,
                                 onClick: () => {
@@ -84,19 +84,19 @@ function E(e) {
                                     }, {
                                         content: h.uF.QUEST_BAR,
                                         ctaContent: g.Cy.DEFIBRILLATOR_RECONNECT_CONSOLE,
-                                        impressionId: C,
+                                        impressionId: A,
                                         sourceQuestContent: h.uF.QUEST_BAR_V2
                                     })
                                 }
                             })
                         }, n)
                     }
-                    return (0, a.jsx)(y, {
+                    return (0, a.jsx)(S, {
                         children: e.message
                     }, n)
                 })
             }) : () => (0, a.jsx)(d.Text, {
-                className: S.eW,
+                className: y.eW,
                 color: "text-muted",
                 variant: "text-xxs/normal",
                 children: (0, v.ui)(t) ? T.intl.string(T.t.bUyEZZ) : T.intl.format(T.t.GXqvC1, {
@@ -104,32 +104,32 @@ function E(e) {
                 })
             })
         }
-    }, [A, t, s, C]);
+    }, [C, t, s, A]);
     return (0, a.jsxs)("div", {
-        className: S.XK,
+        className: y.XK,
         children: [(0, a.jsxs)("div", {
-            className: S.oK,
+            className: y.oK,
             children: [(0, a.jsx)(d.EpV, {
                 size: "custom",
                 color: "currentColor",
-                className: 0 === A.length ? S.pH : S.JA,
+                className: 0 === C.length ? y.pH : y.JA,
                 width: 16,
                 height: 16
             }), (0, a.jsx)(d.Text, {
                 variant: "text-xs/medium",
                 children: I
             }), (0, a.jsx)(d.DUT, {
-                className: l()(S.w, {
-                    [S.r9]: E
+                className: l()(y.w, {
+                    [y.r9]: E
                 }),
                 onClick: () => N(),
                 children: c.render()
             })]
         }), (0, a.jsxs)("div", {
             className: l()({
-                [S.Iu]: E
+                [y.Iu]: E
             }),
-            children: [k(), 0 === A.length ? null : (0, a.jsx)(y, {
+            children: [k(), 0 === C.length ? null : (0, a.jsx)(S, {
                 children: o
             })]
         })]
@@ -151,21 +151,21 @@ let N = function(e) {
             o = t.userStatus?.completedAt != null;
         return {
             steps: [{
-                renderContent: () => (0, a.jsx)(C.Z, {
+                renderContent: () => (0, a.jsx)(A.Z, {
                     ...l,
                     quest: t,
                     sourceQuestContent: h.uF.QUEST_BAR_V2
                 }),
                 isComplete: e || i || o
             }, {
-                renderContent: () => (0, a.jsx)(A.L5, {
+                renderContent: () => (0, a.jsx)(C.L5, {
                     children: (0, v.ui)(t) ? T.intl.string(T.t["5tXqFe"]) : T.intl.formatToPlainString(T.t["+8JB6Y"], {
                         gameTitle: s
                     })
                 }),
                 isComplete: i || o
             }, {
-                renderContent: () => (0, a.jsx)(A.L5, {
+                renderContent: () => (0, a.jsx)(C.L5, {
                     children: T.intl.formatToPlainString(T.t.HhfrYS, {
                         numMinutes: n.targetMinutes
                     })
@@ -177,7 +177,7 @@ let N = function(e) {
             isQuestComplete: o
         }
     }, [l, r.length, t, n.targetMinutes]);
-    return (0, a.jsx)(A.Ay, {
+    return (0, a.jsx)(C.Ay, {
         heading: T.intl.string(T.t.UPWlJu),
         steps: d,
         children: u && !m && !p && (0, a.jsx)(E, {

@@ -38,16 +38,16 @@ function u(e) {
     } = e, g = null != n, _ = (0, r.rE)({
         action: t,
         onClick: n
-    }), [f, b] = i.useState(!1), v = i.useRef(null), j = p ?? v, C = null != x, A = C && g, T = {
+    }), [f, b] = i.useState(!1), v = i.useRef(null), j = p ?? v, A = null != x, C = A && g, T = {
         offset: {
             top: -8,
             left: -8,
             right: -8,
             bottom: -8
         }
-    }, S = i.useCallback(() => {
+    }, y = i.useCallback(() => {
         b(!0)
-    }, []), y = i.useCallback(() => {
+    }, []), S = i.useCallback(() => {
         b(!1)
     }, []), E = () => (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)("div", {
@@ -73,7 +73,7 @@ function u(e) {
         })]
     }), N = e => {
         let t;
-        return t = A ? (0, a.jsxs)(a.Fragment, {
+        return t = C ? (0, a.jsxs)(a.Fragment, {
             children: [(0, a.jsx)(l.DUT, {
                 className: d.ef,
                 onClick: _,
@@ -88,17 +88,17 @@ function u(e) {
                 className: d.ap,
                 "aria-label": o.intl.string(o.t.PdRCRg),
                 ...e,
-                onClick: S,
+                onClick: y,
                 focusProps: T,
                 children: (0, a.jsx)(s.ChevronSmallRightIcon, {
                     size: "xs",
                     color: "currentColor"
                 })
             })]
-        }) : C ? (0, a.jsxs)(l.DUT, {
+        }) : A ? (0, a.jsxs)(l.DUT, {
             className: d.ef,
             ...e,
-            onClick: S,
+            onClick: y,
             focusProps: T,
             children: [E(), (0, a.jsx)("div", {
                 className: d.ap,
@@ -118,16 +118,16 @@ function u(e) {
             children: t
         })
     };
-    return C ? (0, a.jsx)("li", {
+    return A ? (0, a.jsx)("li", {
         className: d.j$,
-        onMouseEnter: S,
-        onMouseLeave: y,
+        onMouseEnter: y,
+        onMouseLeave: S,
         children: (0, a.jsx)(l.YNO, {
             targetElementRef: j,
             spacing: 0,
             renderPopout: x,
             shouldShow: f,
-            onRequestClose: y,
+            onRequestClose: S,
             children: N
         })
     }) : (0, a.jsx)("li", {

@@ -28,12 +28,12 @@ function f() {
         b = (0, i.bG)([d.A], () => d.A.purchases),
         v = (0, c.x9)(b),
         j = (0, c.$W)(b),
-        C = e?.avatarDecoration?.skuId,
-        A = e?.collectibles?.nameplate?.skuId,
-        T = null != C ? v.find(e => e.skuId === C) ?? null : null,
-        S = null != A ? j.find(e => e.skuId === A) ?? null : null,
-        y = (0, i.bG)([o.A], () => o.A.getProduct(T?.skuId)),
-        E = (0, i.bG)([o.A], () => o.A.getProduct(S?.skuId)),
+        A = e?.avatarDecoration?.skuId,
+        C = e?.collectibles?.nameplate?.skuId,
+        T = null != A ? v.find(e => e.skuId === A) ?? null : null,
+        y = null != C ? j.find(e => e.skuId === C) ?? null : null,
+        S = (0, i.bG)([o.A], () => o.A.getProduct(T?.skuId)),
+        E = (0, i.bG)([o.A], () => o.A.getProduct(y?.skuId)),
         N = (0, i.bG)([r.A], () => r.A.fontSize),
         I = (0, i.bG)([r.A], () => r.A.messageGroupSpacing),
         k = h.Xi.useSetting();
@@ -74,7 +74,7 @@ function f() {
                 children: ["Client Theme ID:", " ", null != f ? g.ag[f]?.getName() : "None"]
             }), (0, a.jsxs)(l.Text, {
                 variant: "text-md/normal",
-                children: ["Avatar Decoration: ", y?.name ?? "None"]
+                children: ["Avatar Decoration: ", S?.name ?? "None"]
             }), (0, a.jsxs)(l.Text, {
                 variant: "text-md/normal",
                 children: ["Nameplate: ", E?.name ?? "None"]

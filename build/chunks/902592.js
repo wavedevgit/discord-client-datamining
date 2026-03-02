@@ -1,7 +1,7 @@
 /** chunk id: 902592, original params: e,t,n (module,exports,require) **/
 n.r(t), n.d(t, {
     default: () => k,
-    openDevToolsPopout: () => y
+    openDevToolsPopout: () => S
 });
 var a = n(627968),
     i = n(64700),
@@ -22,11 +22,11 @@ var a = n(627968),
     b = n(641616),
     v = n(231643),
     j = n(652215),
-    C = n(985018),
-    A = n(346858),
+    A = n(985018),
+    C = n(346858),
     T = n(661251);
 
-function S(e) {
+function y(e) {
     let {
         resizableNode: t,
         onResize: n,
@@ -40,11 +40,11 @@ function S(e) {
     });
     return (0, a.jsx)("div", {
         onMouseDown: s,
-        className: A.Di
+        className: C.Di
     })
 }
 
-function y() {
+function S() {
     (0, x.open)(j.MLl.DEVTOOLS_POPOUT, () => (0, a.jsx)(h.A, {
         windowKey: j.MLl.DEVTOOLS_POPOUT,
         title: "DevTools",
@@ -88,10 +88,10 @@ function E(e) {
                 children: [(0, a.jsx)(m.Ay.Icon, {
                     icon: d.tfB,
                     tooltip: "Pop Out",
-                    onClick: y
+                    onClick: S
                 }), (0, a.jsx)(m.Ay.Icon, {
                     icon: d.PGe,
-                    tooltip: C.intl.string(C.t.cpT0Cq),
+                    tooltip: A.intl.string(A.t.cpT0Cq),
                     onClick: g.pf
                 })]
             }),
@@ -102,7 +102,7 @@ function E(e) {
                 children: "DevTools"
             })]
         }), (0, a.jsx)(i, {}), s(), (0, a.jsx)(f.jY, {
-            className: A.n7
+            className: C.n7
         })]
     })
 }
@@ -118,18 +118,18 @@ function N() {
         null === n && null !== t && s(t)
     }, [t, n]), null === n) ? null : (0, a.jsxs)("div", {
         ref: e,
-        className: A.kL,
+        className: C.kL,
         style: {
             minWidth: _.q,
             width: n
         },
         "data-app-right-panel": !0,
-        children: [(0, a.jsx)(S, {
+        children: [(0, a.jsx)(y, {
             resizableNode: e,
             onResize: s,
             onResizeEnd: l
         }), (0, a.jsx)("div", {
-            className: A.wp,
+            className: C.wp,
             children: (0, a.jsx)(E, {})
         })]
     })
@@ -137,17 +137,17 @@ function N() {
 
 function I() {
     return (0, o.bG)([_.A], () => _.A.displayTools) ? (0, a.jsx)("div", {
-        className: l()(A.kL, A.PQ),
+        className: l()(C.kL, C.PQ),
         children: (0, a.jsx)("div", {
-            className: A.wp,
+            className: C.wp,
             children: (0, a.jsx)(E, {})
         })
     }) : (0, a.jsx)("div", {
-        className: A.kL,
+        className: C.kL,
         children: (0, a.jsx)(d.DUT, {
             onClick: g.pf,
             children: (0, a.jsxs)(m.Ay, {
-                className: l()(T.jr, A.J$),
+                className: l()(T.jr, C.J$),
                 toolbar: (0, a.jsx)(p.A, {
                     direction: p.A.Directions.UP
                 }),
@@ -168,7 +168,7 @@ function k(e) {
         isPopout: n = !1
     } = e;
     return t ? (0, a.jsx)(I, {}) : n ? (0, a.jsx)("div", {
-        className: A.jC,
+        className: C.jC,
         children: (0, a.jsx)(E, {
             isPopout: !0
         })

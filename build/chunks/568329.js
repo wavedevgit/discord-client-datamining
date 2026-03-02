@@ -50,9 +50,9 @@ let d = i.createContext({
             v.current !== t && (h(), v.current = t)
         }, [h]);
         (0, r.i4)(f, j);
-        let C = _.get(c)?.current,
-            A = null;
-        return null == C ? A = null : m && null != g ? A = (0, a.jsxs)(a.Fragment, {
+        let A = _.get(c)?.current,
+            C = null;
+        return null == A ? C = null : m && null != g ? C = (0, a.jsxs)(a.Fragment, {
             children: ["collapsed" === u && (0, s.createPortal)((0, a.jsx)(l.animated.div, {
                 style: {
                     position: "absolute",
@@ -62,7 +62,7 @@ let d = i.createContext({
                     }))
                 },
                 children: n(b)
-            }), C), "expanded" === u && (0, s.createPortal)((0, a.jsx)(l.animated.div, {
+            }), A), "expanded" === u && (0, s.createPortal)((0, a.jsx)(l.animated.div, {
                 style: {
                     position: "absolute",
                     opacity: (0, o.a)(g.to({
@@ -71,13 +71,13 @@ let d = i.createContext({
                     }))
                 },
                 children: n(b)
-            }), C)]
-        }) : "collapsed" === u && (A = (0, s.createPortal)(n(b), C)), (0, a.jsxs)("div", {
+            }), A)]
+        }) : "collapsed" === u && (C = (0, s.createPortal)(n(b), A)), (0, a.jsxs)("div", {
             style: {
-                opacity: +(null == A && "collapsed" === u || null == C)
+                opacity: +(null == C && "collapsed" === u || null == A)
             },
             ref: t,
-            children: [n(f), A]
+            children: [n(f), C]
         })
     }),
     u = e => {

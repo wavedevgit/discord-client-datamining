@@ -29,8 +29,8 @@ function v(e) {
         rowIndex: m,
         impressionRef: v,
         sourceQuestContent: j
-    } = e, [C, A] = i.useState(!1), [T, S] = i.useState([]), y = (0, o.aC)(t), E = i.useMemo(() => (0, u.vv)(t), [t]), N = (0, d.u0)(), I = i.useCallback(() => {
-        A(!0), N({
+    } = e, [A, C] = i.useState(!1), [T, y] = i.useState([]), S = (0, o.aC)(t), E = i.useMemo(() => (0, u.vv)(t), [t]), N = (0, d.u0)(), I = i.useCallback(() => {
+        C(!0), N({
             questId: t.id,
             event: f.HAw.QUEST_HOVER,
             properties: {
@@ -41,7 +41,7 @@ function v(e) {
             sourceQuestContent: j
         }), E && (0, h.l9)()
     }, [N, t.id, s, E, j, r]), k = i.useCallback(() => {
-        A(!1), N({
+        C(!1), N({
             questId: t.id,
             event: f.HAw.QUEST_HOVER_OFF,
             properties: {
@@ -79,18 +79,18 @@ function v(e) {
         onBlur: k,
         children: [(0, a.jsx)(g.A, {
             quest: t,
-            isHovering: C,
+            isHovering: A,
             errorHints: T,
-            warningHints: y,
+            warningHints: S,
             isVisibleInViewport: w,
             sourceQuestContent: j
         }), (0, a.jsx)(_.A, {
             quest: t,
             questContent: s,
-            isHovering: C,
+            isHovering: A,
             contentPosition: r,
             rowIndex: m,
-            onReceiveErrorHints: S,
+            onReceiveErrorHints: y,
             isVisibleInViewport: w,
             sourceQuestContent: j
         })]

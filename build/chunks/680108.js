@@ -57,14 +57,14 @@ function j() {
         profileEffects: e,
         upsertConfig: t,
         clearAll: n
-    } = (0, p.wu)(), [s, j] = i.useState(), C = i.useRef(null), A = (0, o.yK)([x.A], () => x.A.getAllProfileEffects());
+    } = (0, p.wu)(), [s, j] = i.useState(), A = i.useRef(null), C = (0, o.yK)([x.A], () => x.A.getAllProfileEffects());
     (0, m.A)();
-    let [T, S] = i.useState(""), y = i.useMemo(() => "" === T ? A : A.filter(e => {
+    let [T, y] = i.useState(""), S = i.useMemo(() => "" === T ? C : C.filter(e => {
         let t = T.toLowerCase(),
             n = e.config.title?.toLowerCase() ?? "",
             a = e.config.description?.toLowerCase() ?? "";
         return n.includes(t) || a.includes(t)
-    }), [T, A]), E = i.useCallback((e, n) => {
+    }), [T, C]), E = i.useCallback((e, n) => {
         if (null == n || !e.type.startsWith("text/")) return (0, h.Ni)(b);
         let [a, i] = n.split(",");
         if (!a.includes("text/plain")) return (0, h.Ni)(b);
@@ -113,7 +113,7 @@ function j() {
                         color: "always-white",
                         children: "Import Shared Config"
                     }), (0, a.jsx)(u.A, {
-                        ref: C,
+                        ref: A,
                         onChange: N,
                         multiple: !1
                     })]
@@ -138,11 +138,11 @@ function j() {
                 }), (0, a.jsx)(d.ksK, {
                     value: T,
                     onChange: e => {
-                        S(e)
+                        y(e)
                     }
                 }), (0, a.jsx)("div", {
                     className: f.xm,
-                    children: y.map(e => (0, a.jsx)(d.DUT, {
+                    children: S.map(e => (0, a.jsx)(d.DUT, {
                         className: f.S5,
                         style: {
                             backgroundImage: `url(${e.config.thumbnailPreviewSrc})`

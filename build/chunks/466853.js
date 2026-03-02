@@ -89,15 +89,15 @@ function E(e) {
         headerActionButtons: E,
         headerClassName: T,
         additionalManageWidgetMenuItems: b
-    } = e, y = (0, c.GV)(), N = (0, o.bG)([d.default], () => d.default.getId() === t), C = (0, p.g)(), {
-        trackUserProfileAction: S
+    } = e, y = (0, c.GV)(), N = (0, o.bG)([d.default], () => d.default.getId() === t), S = (0, p.g)(), {
+        trackUserProfileAction: C
     } = (0, u.NJ)(), k = (0, x.A)({
         widget: n,
-        onAction: S
-    }), R = C === n.type;
+        onAction: C
+    }), R = S === n.type;
     (0, g.A)(k, R);
     let w = N && null != f && !a,
-        L = () => (0, i.jsxs)("div", {
+        O = () => (0, i.jsxs)("div", {
             className: s()(j.kL, m),
             children: [(0, i.jsx)(_.A, {
                 userId: t,
@@ -119,7 +119,7 @@ function E(e) {
             index: f ?? 0,
             widget: n,
             additionalManageWidgetMenuItems: b,
-            children: L()
-        }) : L()
+            children: O()
+        }) : O()
     })
 }

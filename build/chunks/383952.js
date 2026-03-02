@@ -21,11 +21,11 @@ var a = n(627968),
     b = n(480890),
     v = n(74848),
     j = n(77735),
-    C = n(340913),
-    A = n(277342),
+    A = n(340913),
+    C = n(277342),
     T = n(430452),
-    S = n(383501),
-    y = n(350535),
+    y = n(383501),
+    S = n(350535),
     E = n(42473),
     N = n(731854),
     I = n(985018),
@@ -54,13 +54,13 @@ function D(e) {
         } = e,
         {
             showPTTIconIndicator: $
-        } = C.A.useConfig({
+        } = A.A.useConfig({
             location: "MicrophoneButton"
         }),
         q = (0, o.bG)([T.Ay], () => T.Ay.getMode() === N.TB.PUSH_TO_TALK),
         Q = (0, o.bG)([T.Ay], () => T.Ay.getSettings().modeOptions.shortcut),
         Y = (0, o.bG)([p.A], () => p.A.getIsTutorialActive(g.v.MUTE_TUTORIAL)),
-        J = (0, o.bG)([S.A], () => null != S.A.getChannelId()),
+        J = (0, o.bG)([y.A], () => null != y.A.getChannelId()),
         {
             name: X
         } = (0, v.x5)(N.oh.AUDIO_INPUT),
@@ -71,7 +71,7 @@ function D(e) {
         }),
         ee = i.useRef(null),
         et = n || D || s,
-        en = (0, A.q)(et),
+        en = (0, C.q)(et),
         {
             analyticsLocations: ea
         } = (0, h.Ay)(m.A.AUDIO_INPUT_BUTTON),
@@ -90,7 +90,7 @@ function D(e) {
     } : H || V ? {
         tooltipType: "green_void_do_not_use",
         tooltipText: I.intl.format(I.t.c1qUOQ, {
-            keybind: y.dI(Q).toLocaleUpperCase()
+            keybind: S.dI(Q).toLocaleUpperCase()
         }),
         tooltipForceOpen: !0
     } : {

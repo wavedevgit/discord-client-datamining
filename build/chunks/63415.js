@@ -1,6 +1,6 @@
 /** chunk id: 63415, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    p: () => C
+    p: () => A
 });
 var a = n(627968),
     i = n(64700),
@@ -129,8 +129,8 @@ let j = e => {
             })]
         })
     },
-    C = () => {
-        let [e, t] = i.useState(-1), [n, r] = i.useState(-1), [C, A] = i.useState(!1), [T, S] = i.useState(5e3), [y, E] = i.useState(!1), N = i.useRef(null), I = (0, l.bG)([f.default], () => f.default.getCurrentUser()), k = (0, x.L)(), [R] = i.useState(() => (0, p.YQ)({
+    A = () => {
+        let [e, t] = i.useState(-1), [n, r] = i.useState(-1), [A, C] = i.useState(!1), [T, y] = i.useState(5e3), [S, E] = i.useState(!1), N = i.useRef(null), I = (0, l.bG)([f.default], () => f.default.getCurrentUser()), k = (0, x.L)(), [R] = i.useState(() => (0, p.YQ)({
             finishSetup: async () => !0,
             perkAvailableToUser: k
         })), {
@@ -163,9 +163,9 @@ let j = e => {
         let q = i.useCallback(async () => (clearTimeout(e), M(m.l7.DISCONNECTED), !0), [e, M]),
             Q = i.useCallback(() => new Promise((e, t) => {
                 w(m.Lk.INSTALLING), r(setTimeout(() => {
-                    C ? t(Error("Installation failed")) : e()
+                    A ? t(Error("Installation failed")) : e()
                 }, T))
-            }), [C, T, w, r]);
+            }), [A, T, w, r]);
         return (i.useEffect(() => {
             F && O !== m.Lk.UNKNOWN && w(m.Lk.UNKNOWN)
         }, [F, w, O]), i.useEffect(() => {
@@ -311,14 +311,14 @@ let j = e => {
                                 width: "45px"
                             },
                             children: (0, a.jsx)(o.dOG, {
-                                onChange: () => A(!C),
-                                checked: C
+                                onChange: () => C(!A),
+                                checked: A
                             })
                         })]
                     }), (0, a.jsx)(g.MG, {
                         children: (0, a.jsx)(d.l6P, {
                             label: "Install time",
-                            onSelectionChange: S,
+                            onSelectionChange: y,
                             value: T,
                             options: [{
                                 id: "1second",
@@ -366,7 +366,7 @@ let j = e => {
                         onClick: () => {
                             E(!0)
                         }
-                    }), y && (0, a.jsx)(c.default, {
+                    }), S && (0, a.jsx)(c.default, {
                         url: "https://www.discord.com",
                         trustUrl: () => !1,
                         onCancel: () => E(!1),

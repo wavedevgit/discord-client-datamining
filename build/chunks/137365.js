@@ -1,12 +1,12 @@
 /** chunk id: 137365, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    D7: () => S,
+    D7: () => y,
     Md: () => v,
     _S: () => T,
-    a1: () => A,
-    g_: () => y,
+    a1: () => C,
+    g_: () => S,
     h2: () => E,
-    it: () => C,
+    it: () => A,
     pD: () => j
 }), n(321073);
 var a = n(450827),
@@ -92,7 +92,7 @@ function j() {
     }), f.info("END Logging DM Channels\n")
 }
 
-function C() {
+function A() {
     let e = m.A.getFriendIDs();
     f.info("START Discord Friends"), e.forEach(e => {
         let t = h.default.getUser(e);
@@ -105,7 +105,7 @@ function C() {
     }), f.info("END Discord Friends\n")
 }
 
-function A() {
+function C() {
     let e = o.A.getFrequentlyWithoutFetchingLatest(),
         t = [],
         n = [],
@@ -157,7 +157,7 @@ function T() {
         f.info(`frecency score: ${o.A.getScoreWithoutFetchingLatest(e.record.id)}`), b()
     }), f.info("END Quick Switcher State\n")
 }
-async function S() {
+async function y() {
     f.info("START User Search Worker State");
     let e = await a.A.requestDebugState();
     null == e ? f.info("Unable to get debug state from User Search Worker") : (Object.entries(JSON.parse(e.users)).forEach(e => {
@@ -168,7 +168,7 @@ async function S() {
         }), b()
     }), f.info("END User Search Worker State\n"))
 }
-async function y() {
+async function S() {
     let e = await a.A.requestDebugState();
     if (null == e) throw Error("Unable to get debug state from User Search Worker");
     let t = JSON.parse(e.users),

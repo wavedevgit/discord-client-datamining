@@ -22,11 +22,11 @@ var a = n(627968),
     b = n(397244),
     v = n(729551),
     j = n(755039),
-    C = n(29160),
-    A = n(793574),
+    A = n(29160),
+    C = n(793574),
     T = n(688810),
-    S = n(325445),
-    y = n(954921),
+    y = n(325445),
+    S = n(954921),
     E = n(521502),
     N = n(380610),
     I = n(313961),
@@ -76,11 +76,11 @@ var a = n(627968),
     eb = n(536194),
     ev = n(427262),
     ej = n(837921),
-    eC = n(994314),
-    eA = n(485599),
+    eA = n(994314),
+    eC = n(485599),
     eT = n(809991),
-    eS = n(226513),
-    ey = n(383952),
+    ey = n(226513),
+    eS = n(383952),
     eE = n(245750),
     eN = n(652215),
     eI = n(654487),
@@ -109,11 +109,11 @@ function eU(e) {
         "data-jump-section": _
     } = e, b = i.useRef(null), v = t ?? b, j = (0, ep.F_)({
         avatarDecoration: g,
-        size: (0, y.Te)(h._3J.SIZE_32)
-    }), C = (0, M.A)(), {
-        updateOpenPopoutRef: A,
+        size: (0, S.Te)(h._3J.SIZE_32)
+    }), A = (0, M.A)(), {
+        updateOpenPopoutRef: C,
         highlightBadge: T,
-        setHighlightBadge: S
+        setHighlightBadge: y
     } = function() {
         let e = i.useRef(null),
             t = i.useCallback(t => {
@@ -174,10 +174,10 @@ function eU(e) {
             fixed: !0,
             ignoreModalClicks: !0,
             onRequestClose: () => {
-                u(), S(void 0)
+                u(), y(void 0)
             },
             children: e => {
-                A(e);
+                C(e);
                 let {
                     onMouseEnter: t,
                     onMouseDown: i,
@@ -216,7 +216,7 @@ function eU(e) {
                         "aria-hidden": !0
                     }), (0, a.jsx)("div", {
                         className: eO.oM,
-                        children: m(C)
+                        children: m(A)
                     })]
                 })
             }
@@ -259,14 +259,14 @@ class eB extends i.PureComponent {
             suppress: t,
             selfMute: n
         } = this.props;
-        (0, R.A)(e, t, eN.JJy.ACCOUNT_PANEL), (0, O.X)(A.A.ACCOUNT, O.O.MIC, n)
+        (0, R.A)(e, t, eN.JJy.ACCOUNT_PANEL), (0, O.X)(C.A.ACCOUNT, O.O.MIC, n)
     };
     handleToggleSelfDeaf = () => {
         let {
             serverDeaf: e,
             selfDeaf: t
         } = this.props;
-        (0, k.A)(e, eN.JJy.ACCOUNT_PANEL), (0, O.X)(A.A.ACCOUNT, O.O.DEAFEN, !t)
+        (0, k.A)(e, eN.JJy.ACCOUNT_PANEL), (0, O.X)(C.A.ACCOUNT, O.O.DEAFEN, !t)
     };
     handleOpenAccountSettings = () => {
         this.dismissTooltips(), ec.A.isConnected() ? (0, Z.openUserSettings)(J.X.VOICE_AND_VIDEO_PANEL, {
@@ -285,11 +285,11 @@ class eB extends i.PureComponent {
                 ...n,
                 user: t,
                 webBuildOverride: this.props.webBuildOverride,
-                onInteraction: (0, w.s)("UserSettingsCogContextMenu", A.A.ACCOUNT)
+                onInteraction: (0, w.s)("UserSettingsCogContextMenu", C.A.ACCOUNT)
             })
         })
     };
-    audioOnInteractionHandler = (0, w.s)("AudioDeviceMenu", A.A.ACCOUNT);
+    audioOnInteractionHandler = (0, w.s)("AudioDeviceMenu", C.A.ACCOUNT);
     handleInputAudioContextMenu = (e, t) => {
         this.dismissTooltips(), (0, x.L3)(e, async () => {
             let {
@@ -438,7 +438,7 @@ class eB extends i.PureComponent {
                 status: s,
                 applicationStream: n,
                 voiceChannel: r
-            })) return (0, a.jsxs)(C.A, {
+            })) return (0, a.jsxs)(A.A, {
             hoverText: l,
             forceHover: e,
             children: [(0, a.jsx)(h.AC4, {
@@ -458,7 +458,7 @@ class eB extends i.PureComponent {
             } = e;
             return t === eN.$pd.CUSTOM_STATUS
         });
-        return null != o ? (0, a.jsxs)(C.A, {
+        return null != o ? (0, a.jsxs)(A.A, {
             hoverText: l,
             forceHover: e,
             children: [(0, a.jsx)(h.AC4, {
@@ -468,7 +468,7 @@ class eB extends i.PureComponent {
                 emojiClassName: eO.Zg,
                 className: eO.WO
             })]
-        }) : null != s && s !== eN.clD.UNKNOWN && i.hasUniqueUsername() ? (0, a.jsx)(C.A, {
+        }) : null != s && s !== eN.clD.UNKNOWN && i.hasUniqueUsername() ? (0, a.jsx)(A.A, {
             hoverText: l,
             forceHover: e,
             children: (0, a.jsx)(j.A, {
@@ -484,7 +484,7 @@ class eB extends i.PureComponent {
         return null == t ? null : (0, a.jsxs)(a.Fragment, {
             children: [(0, a.jsx)("div", {
                 className: eO.eW,
-                children: (0, a.jsx)(eA.A, {
+                children: (0, a.jsx)(eC.A, {
                     className: l()({
                         [eO.e8]: null != e
                     }),
@@ -498,7 +498,7 @@ class eB extends i.PureComponent {
                 })
             }), (0, a.jsx)("div", {
                 className: eO.XP,
-                children: (0, a.jsx)(eC.A, {
+                children: (0, a.jsx)(eA.A, {
                     children: this.renderStatus()
                 })
             })]
@@ -588,15 +588,15 @@ function eG(e) {
         dismissibleContents: b,
         nameplate: v,
         accountContainerRef: j,
-        deviceChangedTooltipType: C,
-        shouldShowPTTJoinTooltip: A = !1,
+        deviceChangedTooltipType: A,
+        shouldShowPTTJoinTooltip: C = !1,
         dismissTooltips: T,
-        speaking: S
-    } = e, y = (0, W.K)(v);
+        speaking: y
+    } = e, S = (0, W.K)(v);
     return (0, a.jsxs)("div", {
         className: eO.Uo,
-        style: y,
-        children: [(0, a.jsx)(ey.A, {
+        style: S,
+        children: [(0, a.jsx)(eS.A, {
             accountContainerRef: j,
             selfMute: n,
             serverMute: s,
@@ -609,12 +609,12 @@ function eG(e) {
             iconForeground: null != v ? eO.t4 : void 0,
             nameplate: v,
             shouldShowSpeakingWhileMutedTooltip: o,
-            shouldShowInputDeviceChangedTooltip: !o && "input" === C,
+            shouldShowInputDeviceChangedTooltip: !o && "input" === A,
             shouldShowSpeakingWhilePTTTooltip: d,
-            shouldShowPTTJoinTooltip: A,
+            shouldShowPTTJoinTooltip: C,
             dismissTooltips: T,
-            speaking: S
-        }), (0, a.jsx)(eS.A, {
+            speaking: y
+        }), (0, a.jsx)(ey.A, {
             selfDeaf: t,
             serverDeaf: l,
             onClick: h,
@@ -622,7 +622,7 @@ function eG(e) {
             awaitingRemote: i,
             iconForeground: null != v ? eO.t4 : void 0,
             nameplate: v,
-            shouldShowOutputDeviceChangedTooltip: "output" === C,
+            shouldShowOutputDeviceChangedTooltip: "output" === A,
             dismissTooltips: T
         }), (0, a.jsx)(eE.A, {
             webBuildOverride: c,
@@ -697,20 +697,20 @@ function eV() {
             selfDeaf: v,
             deaf: j
         } = (0, ee.A)(p),
-        C = (0, c.bG)([E.A], () => (0, N.kK)() ? E.A.getCurrentBuildOverride().overrides?.discord_web : null),
-        y = (0, c.bG)([ed.Ay], () => ed.Ay.getSpeakingWhileMuted()),
+        A = (0, c.bG)([E.A], () => (0, N.kK)() ? E.A.getCurrentBuildOverride().overrides?.discord_web : null),
+        S = (0, c.bG)([ed.Ay], () => ed.Ay.getSpeakingWhileMuted()),
         k = (0, c.bG)([I.A], () => I.A.isFullscreenInContext()),
         R = (0, c.bG)([eo.A], () => eo.A.hasLayers()),
         O = (0, h.red)(h.DXt) || R || eb.P.isDisallowPopupsSet() || k,
         w = (0, c.bG)([U.default], () => null != U.default.getAwaitingRemoteSessionInfo()),
         D = (0, c.bG)([eu.A], () => eu.A.getGuildId()),
         M = e?.avatarDecoration,
-        P = (0, S.A)(M),
+        P = (0, y.A)(M),
         L = ev.Ay.useName(e) ?? "",
         B = (0, z.lM)("Account"),
         {
             analyticsLocations: G
-        } = (0, T.Ay)(A.A.ACCOUNT),
+        } = (0, T.Ay)(C.A.ACCOUNT),
         F = (0, V.r)({
             user: e,
             guildId: void 0
@@ -766,12 +766,12 @@ function eV() {
             serverMute: _,
             speaking: d,
             voiceDb: m,
-            speakingWhileMuted: y,
+            speakingWhileMuted: S,
             speakingWhilePTTInactive: eg,
             status: l,
             streaming: s,
             suppress: b,
-            webBuildOverride: C,
+            webBuildOverride: A,
             awaitingRemote: w,
             nameplate: F,
             selectedGuildId: D,

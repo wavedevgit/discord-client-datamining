@@ -27,16 +27,16 @@ function f(e) {
     } = e, f = m.A.useIsEligible(), b = (0, r.JZ)(t), v = null != n, j = null != u ? {
         color: u
     } : void 0, {
-        analyticsLocations: C
-    } = (0, l.Ay)(s.A.HOLIDAY_COACHMARK), A = e => {
+        analyticsLocations: A
+    } = (0, l.Ay)(s.A.HOLIDAY_COACHMARK), C = e => {
         (0, r.Dr)(t, {
             dismissAction: e
         })
     }, T = () => {
         (0, c.openUserSettings)(d.X.NOTIFICATIONS_PANEL, {
             section: x.nc_.NOTIFICATIONS,
-            analyticsLocations: C
-        }), A(p.i.TAKE_ACTION)
+            analyticsLocations: A
+        }), C(p.i.TAKE_ACTION)
     };
     return f && !b ? (0, a.jsx)(o.Ay, {
         children: (0, a.jsxs)("div", {
@@ -77,7 +77,7 @@ function f(e) {
                     })]
                 }), (0, a.jsx)(i.DUT, {
                     className: _.l2,
-                    onClick: () => A(p.i.USER_DISMISS),
+                    onClick: () => C(p.i.USER_DISMISS),
                     children: (0, a.jsx)(i.PGe, {
                         color: "currentColor",
                         size: "xs"

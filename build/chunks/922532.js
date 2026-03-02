@@ -21,15 +21,15 @@ function o(e) {
         onQuestBarFocus: x
     } = e, p = a.useRef(-1), g = a.useRef(!1), [_, f] = a.useState(!1), [b, v] = a.useState(!1), j = a.useCallback(() => {
         f(!0)
-    }, []), C = a.useCallback(() => {
+    }, []), A = a.useCallback(() => {
         f(!1), g.current || c || o(!1)
-    }, [c, o]), A = a.useCallback(() => {
+    }, [c, o]), C = a.useCallback(() => {
         f(!1), c || o(!1), g.current = !1
     }, [c, o]), T = a.useCallback(() => {
         v(!0)
-    }, []), S = a.useCallback(() => {
+    }, []), y = a.useCallback(() => {
         v(!1), o(!1)
-    }, [o]), y = a.useCallback(function() {
+    }, [o]), S = a.useCallback(function() {
         let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
         if (x(), n) return;
         let {
@@ -37,8 +37,8 @@ function o(e) {
         } = e;
         t ? p.current = window.setTimeout(d, 75) : d()
     }, [d, n, x]), E = a.useCallback(() => {
-        y()
-    }, [y]), N = a.useCallback(() => {
+        S()
+    }, [S]), N = a.useCallback(() => {
         window.clearTimeout(p.current), _ || b || g.current || o(!1)
     }, [_, b, o]), I = a.useCallback(() => {
         (0, s.av)({
@@ -51,10 +51,10 @@ function o(e) {
             },
             shouldExtendSession: !0,
             sourceQuestContent: i.uF.QUEST_BAR_V2
-        }), g.current = !0, y({
+        }), g.current = !0, S({
             withDelay: !0
         })
-    }, [y, h, t.id]), k = a.useCallback(() => {
+    }, [S, h, t.id]), k = a.useCallback(() => {
         (0, s.av)({
             questId: t.id,
             event: r.HAw.QUEST_HOVER_OFF,
@@ -76,11 +76,11 @@ function o(e) {
         ctxMenuOpen: _,
         gameSheetOpen: b,
         handleCtxMenuOpened: j,
-        handleCtxMenuClosed: C,
-        handleCtxMenuSelection: A,
+        handleCtxMenuClosed: A,
+        handleCtxMenuSelection: C,
         handleGameSheetOpened: T,
-        handleGameSheetClosed: S,
-        handleFocus: y,
+        handleGameSheetClosed: y,
+        handleFocus: S,
         handleFocusWithoutDelay: E,
         handleBlur: N,
         handleMouseEnter: I,
