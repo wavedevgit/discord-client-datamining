@@ -6,8 +6,8 @@ a.d(t, {
 var l = a(627968),
     r = a(64700),
     n = a(397927),
-    s = a(179262),
-    i = a(561769),
+    s = a(561769),
+    i = a(32585),
     o = a(41770),
     d = a(53566),
     c = a(148702),
@@ -45,10 +45,10 @@ let b = {
             } = e, {
                 collection: a,
                 isFetching: n
-            } = (0, s.A)({
+            } = (0, i.A)({
                 collectionId: t,
                 includePricing: !0
-            }), i = r.useMemo(() => {
+            }), s = r.useMemo(() => {
                 let e = a?.styles?.backgroundColors?.[0];
                 return {
                     id: "shop-index-page",
@@ -77,7 +77,7 @@ let b = {
             return n ? (0, l.jsx)("div", {
                 children: "Loading..."
             }) : (0, l.jsx)(u.Ay, {
-                layout: i
+                layout: s
             })
         },
         controls: {
@@ -190,9 +190,9 @@ let b = {
                         backgroundSize: "contain",
                         backgroundRepeat: "no-repeat"
                     }
-                }), (0, l.jsx)(i.v3.Provider, {
+                }), (0, l.jsx)(s.v3.Provider, {
                     value: {
-                        prioritizedCurrency: i.Hi.ORBS
+                        prioritizedCurrency: s.Hi.ORBS
                     },
                     children: (0, l.jsx)("div", {
                         style: {

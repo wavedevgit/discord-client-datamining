@@ -6,14 +6,14 @@ n.d(t, {
     Gc: () => B,
     IR: () => F,
     LP: () => H,
-    SK: () => W,
+    SK: () => q,
     SN: () => G,
     Ub: () => Z,
     Yj: () => k,
     e2: () => $,
     hk: () => w,
     lG: () => J,
-    px: () => q,
+    px: () => W,
     qG: () => V,
     sq: () => Q,
     uM: () => z
@@ -190,7 +190,7 @@ function Y(e, t, n) {
     return (null != i ? i.application_id : e.getApplicationId()) === t || n.indexOf(r.F.MESSAGES_READ) > -1
 }
 
-function W(e) {
+function q(e) {
     switch (e) {
         case O.S7L.RTC_CONNECTED:
         case O.S7L.RTC_CONNECTING:
@@ -201,7 +201,7 @@ function W(e) {
     }
 }
 
-function q(e, t, n) {
+function W(e, t, n) {
     return e === O.xL.JOIN && null != t && null != t.id && null != n.join
 }
 

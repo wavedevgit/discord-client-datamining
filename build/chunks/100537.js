@@ -55,7 +55,7 @@ function M(e) {
             applicationId: t.applicationId,
             layoutMode: O.y.PIP
         })
-    }, [t.applicationId]), W = r.useCallback(() => {
+    }, [t.applicationId]), q = r.useCallback(() => {
         v.A.stopFrame({
             applicationId: t.applicationId
         })
@@ -80,14 +80,14 @@ function M(e) {
             document.removeEventListener("mousedown", e)
         }
     }, [t.applicationId, l]);
-    let q = H.width / Math.max(H.height, 1) < R.B5,
+    let W = H.width / Math.max(H.height, 1) < R.B5,
         K = 0,
         z = 0,
         $ = (0, h.A)(n?.id);
     if (!$) {
         let e = H.width,
             t = H.height;
-        q ? ((t = H.width / R.B5) > H.height && (e = (t = H.height) * R.B5), z = (H.height - t) / 2) : ((e = Math.min(H.height * R.B5, H.width)) > H.width && (t = (e = H.width) / R.B5), K = (H.width - e) / 2)
+        W ? ((t = H.width / R.B5) > H.height && (e = (t = H.height) * R.B5), z = (H.height - t) / 2) : ((e = Math.min(H.height * R.B5, H.width)) > H.width && (t = (e = H.width) / R.B5), K = (H.width - e) / 2)
     }(0, f.ns)(t.applicationId);
     let Q = R.E8.NO_CHAT,
         X = (0, m.G)();
@@ -148,7 +148,7 @@ function M(e) {
                     }), (0, i.jsx)(T.l, {
                         isTrayButton: !1,
                         label: P.intl.string(P.t["R/FK4A"]),
-                        onClick: W,
+                        onClick: q,
                         iconComponent: c.oLl,
                         color: "disconnect"
                     })]

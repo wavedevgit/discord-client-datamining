@@ -1,9 +1,9 @@
 /** chunk id: 41770, original params: e,l,t (module,exports,require) **/
 t.d(l, {
     C8: () => r,
-    Ej: () => i,
+    Ej: () => a,
     Ot: () => n,
-    oP: () => a,
+    oP: () => i,
     uG: () => o
 });
 let r = "dummy-tenant",
@@ -193,7 +193,7 @@ let r = "dummy-tenant",
             }]
         }]
     },
-    a = {
+    i = {
         id: "dummy-orb-shelf",
         children: [{
             block: "Section",
@@ -236,7 +236,7 @@ let r = "dummy-tenant",
             }]
         }]
     },
-    i = {
+    a = {
         id: "dummy-sku-list",
         children: [{
             block: "SkuList",

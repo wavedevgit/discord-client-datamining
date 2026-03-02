@@ -1,6 +1,6 @@
 /** chunk id: 823162, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => q
+    A: () => W
 }), n(667532);
 var i = n(989349),
     r = n.n(i),
@@ -144,14 +144,14 @@ function Y() {
     I.Ay.isSelfDeaf() && s._X()
 }
 
-function W(e) {
+function q(e) {
     let {
         channelId: t
     } = e, n = y.A.currentMessage;
     null != n && n.channelId !== t && (0, v.pr)()
 }
-let q = {
+let W = {
     init() {
-        l.h.subscribe("SPEAK_TEXT", k), l.h.subscribe("SPEAK_MESSAGE", B), l.h.subscribe("STOP_SPEAKING", V), l.h.subscribe("MESSAGE_CREATE", H), l.h.subscribe("MESSAGE_DELETE", F), l.h.subscribe("AUDIO_TOGGLE_SELF_DEAF", Y), l.h.subscribe("CHANNEL_SELECT", W), l.h.subscribe("USER_SETTINGS_PROTO_UPDATE", w), (0, a.I)(w)
+        l.h.subscribe("SPEAK_TEXT", k), l.h.subscribe("SPEAK_MESSAGE", B), l.h.subscribe("STOP_SPEAKING", V), l.h.subscribe("MESSAGE_CREATE", H), l.h.subscribe("MESSAGE_DELETE", F), l.h.subscribe("AUDIO_TOGGLE_SELF_DEAF", Y), l.h.subscribe("CHANNEL_SELECT", q), l.h.subscribe("USER_SETTINGS_PROTO_UPDATE", w), (0, a.I)(w)
     }
 }

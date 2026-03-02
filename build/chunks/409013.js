@@ -6,8 +6,8 @@ t.d(l, {
 var r = t(735438),
     o = t(562465),
     n = t(73153),
-    a = t(198982),
-    i = t(194822),
+    i = t(198982),
+    a = t(194822),
     d = t(652215);
 let s = ["request_params"],
     c = e => (0, r.isObject)(e) ? (0, r.isArray)(e) ? e.map(c) : (0, r.reduce)(e, (e, l, t) => {
@@ -26,7 +26,7 @@ let s = ["request_params"],
             layoutId: t,
             abortSignal: r
         } = e;
-        if (!i.A.isFetchingLayout(l, t)) try {
+        if (!a.A.isFetchingLayout(l, t)) try {
             n.h.dispatch({
                 type: "CMS_LAYOUT_FETCH",
                 tenantId: l,
@@ -43,7 +43,7 @@ let s = ["request_params"],
                 layout: c(e.body)
             })
         } catch (r) {
-            let e = new a.LG(r);
+            let e = new i.LG(r);
             throw n.h.dispatch({
                 type: "CMS_LAYOUT_FETCH_FAILURE",
                 tenantId: l,
@@ -58,7 +58,7 @@ let s = ["request_params"],
             abortSignal: r,
             requestParams: s
         } = e;
-        if (!i.A.isFetchingTemplate(l, t)) try {
+        if (!a.A.isFetchingTemplate(l, t)) try {
             n.h.dispatch({
                 type: "CMS_TEMPLATE_FETCH",
                 tenantId: l,
@@ -77,7 +77,7 @@ let s = ["request_params"],
                 layout: c(e.body)
             })
         } catch (r) {
-            let e = new a.LG(r);
+            let e = new i.LG(r);
             throw n.h.dispatch({
                 type: "CMS_TEMPLATE_FETCH_FAILURE",
                 tenantId: l,

@@ -44,8 +44,8 @@ let P = +C.A.Millis.DAY,
     H = {},
     F = {},
     Y = {},
-    W = 0,
-    q = !1,
+    q = 0,
+    W = !1,
     K = !1,
     z = !1,
     $ = null,
@@ -125,7 +125,7 @@ function e_() {
 
 function em(e) {
     let t, n, r, l, d;
-    if (U.length > 0 && (D = U, U = [], G = []), W++, null != e) Z = e.newUnread, J = e.newRead;
+    if (U.length > 0 && (D = U, U = [], G = []), q++, null != e) Z = e.newUnread, J = e.newRead;
     else {
         let [e, t] = ep(D);
         Z = e, J = t
@@ -270,7 +270,7 @@ class eS extends r.Ay.PersistedStore {
         }), F = e.customGuildScores ?? {}, Y = e.customChannelScoresByGuild ?? {}, X = e.numOpens ?? 0, w = e.lastOpened ?? 0, en = e.lastJoinedRecommendedGuild ?? 0, ed = e.lastTakenICYMISurvey ?? 0)
     }
     getVersion() {
-        return W
+        return q
     }
     getDehydratedItems() {
         return D
@@ -377,7 +377,7 @@ class eS extends r.Ay.PersistedStore {
 }
 let ex = new eS(l.h, {
     LOGOUT: function() {
-        D = [], U = [], G = [], V = {}, k = {}, B = {}, H = {}, M = null, F = {}, Y = {}, W = 0, q = !1, K = !1, z = !1, Z = [], J = [], ee = 0, w = 0, en = 0, ei = !0, er = !1, el = new Set, Q = null, ea = !1, es = !1, $ = null, eo = 0
+        D = [], U = [], G = [], V = {}, k = {}, B = {}, H = {}, M = null, F = {}, Y = {}, q = 0, W = !1, K = !1, z = !1, Z = [], J = [], ee = 0, w = 0, en = 0, ei = !0, er = !1, el = new Set, Q = null, ea = !1, es = !1, $ = null, eo = 0
     },
     LOAD_ICYMI_FROM_NOTIFICATION: function(e) {
         let {
@@ -435,12 +435,12 @@ let ex = new eS(l.h, {
             feed_item_ids: U.map(e => e.id)
         };
         let [a, s] = ep(U);
-        if (G = eg(a), !z || 0 === W || r) W = 0, !ea && ec(a, U) ? (K = !0, q = !0) : K = !1, em({
+        if (G = eg(a), !z || 0 === q || r) q = 0, !ea && ec(a, U) ? (K = !0, W = !0) : K = !1, em({
             newUnread: a,
             newRead: s
         });
         else {
-            W > 0 && (Q = null);
+            q > 0 && (Q = null);
             let e = G.length > y.$P;
             l || (K = e), e && ((0, O.kx)([...a, ...s], 0, y.w5), a.length + s.length === 0 && (es = !0))
         }
@@ -569,7 +569,7 @@ let ex = new eS(l.h, {
         em(), K = !1
     },
     ICYMI_TAB_OPENED: function() {
-        z = !0, w = Date.now(), q && (q = !1, K = !1), X < 5 && X++
+        z = !0, w = Date.now(), W && (W = !1, K = !1), X < 5 && X++
     },
     ICYMI_FEEDBACK_GIVEN: function() {
         X = 6

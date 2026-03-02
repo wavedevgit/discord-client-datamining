@@ -5,8 +5,8 @@ t.d(l, {
 var r = t(627968),
     o = t(64700),
     n = t(503698),
-    a = t.n(n),
-    i = t(713517),
+    i = t.n(n),
+    a = t(713517),
     d = t(949317);
 let s = e => {
         let {
@@ -14,7 +14,7 @@ let s = e => {
             children: t
         } = e;
         return (0, r.jsx)("div", {
-            className: a()(d.child, d[l]),
+            className: i()(d.child, d[l]),
             children: t
         })
     },
@@ -23,12 +23,12 @@ let s = e => {
             children: l,
             paused: t = !1,
             slideDuration: n = 5e3
-        } = e, [a, c] = o.useState(0), u = o.useRef(null), h = (0, i.M)(u), p = o.useRef(void 0), m = o.useMemo(() => o.Children.map(l, e => o.isValidElement(e) ? null != e && "object" == typeof e && e.$$typeof === Symbol.for("react.portal") ? e : o.cloneElement(e, {
+        } = e, [i, c] = o.useState(0), u = o.useRef(null), h = (0, a.M)(u), p = o.useRef(void 0), m = o.useMemo(() => o.Children.map(l, e => o.isValidElement(e) ? null != e && "object" == typeof e && e.$$typeof === Symbol.for("react.portal") ? e : o.cloneElement(e, {
             tabIndex: -1
         }) : e), [l]);
         o.useEffect(() => {
-            Array.isArray(m) ? c(a >= m?.length ? Math.max(m?.length - 1, 0) : a) : c(0)
-        }, [m, a]);
+            Array.isArray(m) ? c(i >= m?.length ? Math.max(m?.length - 1, 0) : i) : c(0)
+        }, [m, i]);
         let b = t || h;
         return (o.useEffect(() => {
             if (b) {
@@ -51,9 +51,9 @@ let s = e => {
                 className: d.children,
                 children: m?.map((e, l) => {
                     var t, o, n;
-                    let i = (t = l, o = a, n = m.length, t === o ? "center" : t < o ? o === n - 1 && 0 === t ? "right" : "left" : 0 === o && t === n - 1 ? "left" : "right");
+                    let a = (t = l, o = i, n = m.length, t === o ? "center" : t < o ? o === n - 1 && 0 === t ? "right" : "left" : 0 === o && t === n - 1 ? "left" : "right");
                     return (0, r.jsx)(s, {
-                        position: i,
+                        position: a,
                         children: e
                     }, l)
                 })

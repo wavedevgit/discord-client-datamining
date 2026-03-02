@@ -5,8 +5,8 @@ t.d(l, {
 var r = t(627968),
     o = t(158954),
     n = t(53566),
-    a = t(506456),
-    i = t(653793),
+    i = t(506456),
+    a = t(653793),
     d = t(524025);
 let s = e => {
     let {
@@ -15,10 +15,10 @@ let s = e => {
         supplementalImage: s,
         href: c,
         ctaText: u
-    } = e, h = (0, a.A)(l.src), p = (0, a.A)(t?.src), m = (0, a.A)(s?.src), b = (0, n.S)(u ?? "");
+    } = e, h = (0, i.A)(l.src), p = (0, i.A)(t?.src), m = (0, i.A)(s?.src), b = (0, n.S)(u ?? "");
     return (0, r.jsxs)("div", {
         className: d.rJ,
-        children: [(0, r.jsx)(i.A, {
+        children: [(0, r.jsx)(a.A, {
             overflowable: !0,
             children: (0, r.jsx)("div", {
                 className: d.rf,

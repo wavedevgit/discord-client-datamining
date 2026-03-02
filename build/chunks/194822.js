@@ -1,33 +1,33 @@
 /** chunk id: 194822, original params: e,l,t (module,exports,require) **/
 t.d(l, {
-    A: () => A
+    A: () => g
 });
 var r = t(311907),
     o = t(73153),
     n = t(403362),
-    a = t(41770);
-let i = (0, n.m6)() ? {
-        [a.C8]: {
-            "dummy-shop-home": a.uG,
-            "dummy-orb-shelf": a.oP,
-            "dummy-sku-list": a.Ej
+    i = t(41770);
+let a = (0, n.m6)() ? {
+        [i.C8]: {
+            "dummy-shop-home": i.uG,
+            "dummy-orb-shelf": i.oP,
+            "dummy-sku-list": i.Ej
         }
     } : {},
     d = (0, n.m6)() ? ["dummy-skeleton"] : [],
     s = (0, n.m6)() ? {
-        [a.C8]: {
-            "dummy-popular-picks": a.Ot
+        [i.C8]: {
+            "dummy-popular-picks": i.Ot
         }
     } : {},
     c = (0, n.m6)() ? ["dummy-skeleton-template"] : [],
     u = (e, l) => `${e}/${l}`,
-    h = i,
+    h = a,
     p = new Set(d),
     m = {},
     b = s,
     _ = new Set(c),
-    C = {};
-class S extends r.Ay.Store {
+    S = {};
+class A extends r.Ay.Store {
     static displayName = "CmsLayoutStore";
     getLayout(e, l) {
         return null == e || null == l ? null : h[e]?.[l] ?? null
@@ -45,10 +45,10 @@ class S extends r.Ay.Store {
         return null != e && null != l && _.has(u(e, l))
     }
     getTemplateFetchError(e, l) {
-        return null == e || null == l ? null : C[u(e, l)] ?? null
+        return null == e || null == l ? null : S[u(e, l)] ?? null
     }
 }
-let A = new S(o.h, {
+let g = new A(o.h, {
     CMS_LAYOUT_FETCH: e => {
         let {
             tenantId: l,
@@ -84,7 +84,7 @@ let A = new S(o.h, {
             templateId: t,
             layout: r
         } = e;
-        (b[l] ??= {})[t] = r, delete C[u(l, t)], _.delete(u(l, t))
+        (b[l] ??= {})[t] = r, delete S[u(l, t)], _.delete(u(l, t))
     },
     CMS_TEMPLATE_FETCH_FAILURE: e => {
         let {
@@ -92,9 +92,9 @@ let A = new S(o.h, {
             templateId: t,
             apiError: r
         } = e;
-        C[u(l, t)] = r, _.delete(u(l, t))
+        S[u(l, t)] = r, _.delete(u(l, t))
     },
     LOGOUT: function() {
-        h = {}, p = new Set, m = {}, b = {}, _ = new Set, C = {}
+        h = {}, p = new Set, m = {}, b = {}, _ = new Set, S = {}
     }
 })

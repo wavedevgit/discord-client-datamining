@@ -1,19 +1,19 @@
 /** chunk id: 646092, original params: e,l,t (module,exports,require) **/
 t.d(l, {
-    A: () => i
+    A: () => a
 });
 var r = t(627968),
     o = t(397927),
     n = t(976860),
-    a = t(53566);
-let i = e => {
+    i = t(53566);
+let a = e => {
     let {
         href: l,
         ctaText: t,
-        variant: i = "secondary"
-    } = e, d = (0, a.S)(t);
+        variant: a = "secondary"
+    } = e, d = (0, i.S)(t);
     return (0, r.jsx)(o.Button, {
-        variant: i,
+        variant: a,
         text: d,
         onClick: () => {
             (0, n.pX)(l)

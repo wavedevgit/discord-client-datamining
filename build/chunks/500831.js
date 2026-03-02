@@ -65,8 +65,8 @@ let G = (0, l.v)(() => ({
         }, []);
         let F = (0, y.NC)(),
             Y = (0, s.bG)([j.A, x.A], () => (0, M._U)()),
-            W = (0, a.xl)(),
-            q = function(e) {
+            q = (0, a.xl)(),
+            W = function(e) {
                 let {
                     showBackForwardButtons: t,
                     showNotificationsInbox: n,
@@ -74,7 +74,7 @@ let G = (0, l.v)(() => ({
                 } = e;
                 return r.useMemo(() => t ? "BACK_FORWARD_NAVIGATION" : n ? "NOTIFICATIONS_INBOX" : i ? "RECENTS" : "HELP", [t, n, i])
             }({
-                showBackForwardButtons: W,
+                showBackForwardButtons: q,
                 showNotificationsInbox: V,
                 showRecentsButton: B
             });
@@ -84,10 +84,10 @@ let G = (0, l.v)(() => ({
                 children: t => (0, i.jsx)(w.cq, {
                     className: t,
                     leading: (0, i.jsxs)(i.Fragment, {
-                        children: [W && (0, i.jsx)(_.A, {
-                            firstElementFocusJumpSectionProps: "BACK_FORWARD_NAVIGATION" === q ? e : void 0
+                        children: [q && (0, i.jsx)(_.A, {
+                            firstElementFocusJumpSectionProps: "BACK_FORWARD_NAVIGATION" === W ? e : void 0
                         }), V && (0, i.jsx)(S.A, {
-                            focusSectionProps: "NOTIFICATIONS_INBOX" === q ? e : void 0
+                            focusSectionProps: "NOTIFICATIONS_INBOX" === W ? e : void 0
                         })]
                     }),
                     title: (0, i.jsx)(T.M, {}),
@@ -100,13 +100,13 @@ let G = (0, l.v)(() => ({
                             canShowReminder: !0,
                             className: U.x
                         }), B && (0, i.jsx)(v.A, {
-                            ..."RECENTS" === q ? e : {},
+                            ..."RECENTS" === W ? e : {},
                             className: U.x
                         }), n ? (0, i.jsx)(f.w, {
-                            focusSectionProps: "HELP" === q ? e : void 0,
+                            focusSectionProps: "HELP" === W ? e : void 0,
                             className: U.x
                         }) : (0, i.jsx)(I.A, {
-                            focusSectionProps: "HELP" === q ? e : void 0,
+                            focusSectionProps: "HELP" === W ? e : void 0,
                             className: U.x
                         }), l ? (0, i.jsx)(E.R, {
                             className: U.x

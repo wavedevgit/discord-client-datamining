@@ -241,7 +241,7 @@ function Y(e) {
     })
 }
 
-function W(e) {
+function q(e) {
     let {
         guildEvent: t
     } = e, n = (0, D.oF)(t);
@@ -259,13 +259,13 @@ function W(e) {
             height: 16,
             className: V.uE
         }),
-        children: (0, r.jsx)(q, {
+        children: (0, r.jsx)(W, {
             guildEvent: t
         })
     })
 }
 
-function q(e) {
+function W(e) {
     let {
         guildEvent: t
     } = e, n = l.useCallback(() => {
@@ -408,7 +408,7 @@ let X = l.memo(function(e) {
     })) : l.entity_type === U.Ps.STAGE_INSTANCE && _ ? u = (0, r.jsx)(z, {
         stageInstance: s,
         channel: i
-    }) : l.entity_type === U.Ps.EXTERNAL ? u = (0, r.jsx)(W, {
+    }) : l.entity_type === U.Ps.EXTERNAL ? u = (0, r.jsx)(q, {
         guildEvent: l
     }) : l.entity_type === U.Ps.VOICE && null != i && (u = (0, r.jsx)(H, {
         guildEvent: l,
