@@ -12,7 +12,7 @@ let a = e => {
         logoSrc: t,
         backgroundColor: a,
         children: i
-    } = e, d = (0, o.A)(l), s = (0, o.A)(t);
+    } = e, d = (0, o.A)(l.src), s = (0, o.A)(t?.src);
     return (0, r.jsxs)("div", {
         className: n.ZK,
         style: {
@@ -21,8 +21,8 @@ let a = e => {
         },
         children: [null != s && (0, r.jsx)("img", {
             src: s,
-            className: n.wm,
-            alt: ""
+            alt: t?.alt ?? "",
+            className: n.wm
         }), null != i && (0, r.jsx)("div", {
             className: n.Y_,
             children: i

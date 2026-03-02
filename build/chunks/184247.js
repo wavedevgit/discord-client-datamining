@@ -13,29 +13,36 @@ var r = a(397927),
 let d = {
     name: "BackgroundImage",
     id: "background-image",
-    component: e => (0, l.jsxs)("div", {
-        children: [(0, l.jsx)(r.Text, {
-            variant: "text-lg/semibold",
-            children: "Background Image just takes children and displays them in with a background image behind them, and some padding to add inset"
-        }), (0, l.jsx)(o.A, {
-            ...e,
-            children: (0, l.jsx)(i.A, {
-                children: (0, l.jsx)(s.A, {
-                    columns: 2,
-                    children: (0, l.jsxs)(n.Kp, {
-                        direction: "vertical",
-                        children: [(0, l.jsx)(r.Heading, {
-                            variant: "heading-xxl/bold",
-                            children: "What can I get with orbs?"
-                        }), (0, l.jsx)(r.Text, {
-                            variant: "text-md/normal",
-                            children: "Spend Orbs on exclusives or grab your favorites from the shop"
-                        })]
+    component: e => {
+        let {
+            backgroundImage: t
+        } = e;
+        return (0, l.jsxs)("div", {
+            children: [(0, l.jsx)(r.Text, {
+                variant: "text-lg/semibold",
+                children: "Background Image just takes children and displays them in with a background image behind them, and some padding to add inset"
+            }), (0, l.jsx)(o.A, {
+                backgroundImage: {
+                    src: t
+                },
+                children: (0, l.jsx)(i.A, {
+                    children: (0, l.jsx)(s.A, {
+                        columns: 2,
+                        children: (0, l.jsxs)(n.Kp, {
+                            direction: "vertical",
+                            children: [(0, l.jsx)(r.Heading, {
+                                variant: "heading-xxl/bold",
+                                children: "What can I get with orbs?"
+                            }), (0, l.jsx)(r.Text, {
+                                variant: "text-md/normal",
+                                children: "Spend Orbs on exclusives or grab your favorites from the shop"
+                            })]
+                        })
                     })
                 })
-            })
-        })]
-    }),
+            })]
+        })
+    },
     controls: {
         backgroundImage: {
             label: "Background Image",

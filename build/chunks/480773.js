@@ -16,15 +16,31 @@ let d = {
     component: e => {
         let {
             columns: t,
-            ...a
-        } = e;
+            backgroundImage: a,
+            logoSrc: d,
+            supplementalImage: c,
+            ctaText: u,
+            href: x
+        } = e, h = {
+            backgroundImage: {
+                src: a
+            },
+            logoSrc: {
+                src: d
+            },
+            supplementalImage: {
+                src: c
+            },
+            ctaText: u,
+            href: x
+        };
         return (0, l.jsxs)("div", {
             children: [(0, l.jsx)(r.Text, {
                 variant: "text-lg/semibold",
                 children: "Featured Collection will take up the full width of the parent, so it is best suited for CmsStack or Grid parents"
             }), (0, l.jsx)(s.A, {
                 children: (0, l.jsx)(o.A, {
-                    ...a
+                    ...h
                 })
             }), (0, l.jsxs)(s.A, {
                 children: [(0, l.jsxs)(r.Text, {
@@ -33,9 +49,9 @@ let d = {
                 }), (0, l.jsxs)(n.A, {
                     columns: t,
                     children: [(0, l.jsx)(o.A, {
-                        ...a
+                        ...h
                     }), (0, l.jsx)(o.A, {
-                        ...a
+                        ...h
                     })]
                 })]
             }), (0, l.jsxs)(s.A, {
@@ -45,13 +61,13 @@ let d = {
                 }), (0, l.jsxs)(i.Kp, {
                     direction: "horizontal",
                     children: [(0, l.jsx)(o.A, {
-                        ...a
+                        ...h
                     }), (0, l.jsx)(o.A, {
-                        ...a
+                        ...h
                     }), (0, l.jsx)(o.A, {
-                        ...a
+                        ...h
                     }), (0, l.jsx)(o.A, {
-                        ...a
+                        ...h
                     })]
                 })]
             })]

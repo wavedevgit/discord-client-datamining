@@ -742,13 +742,11 @@ let eD = Object.freeze({
         [ej.lAJ.GUILD_BOOST_UPSELL]: function(e) {
             let {
                 message: t,
-                channel: n,
-                compact: l
+                channel: n
             } = e;
             return null == t.boostingPrompt ? null : (0, i.jsx)(eo.A, {
                 boostingPrompt: t.boostingPrompt,
-                channel: n,
-                compact: l
+                channel: n
             })
         },
         67: function(e) {

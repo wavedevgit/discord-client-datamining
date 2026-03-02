@@ -12,7 +12,7 @@ let d = e => {
         backgroundImage: l,
         href: t,
         ctaText: d
-    } = e, s = (0, n.A)(l);
+    } = e, s = (0, n.A)(l.src);
     return (0, r.jsx)(a.A, {
         children: (0, r.jsx)("div", {
             className: i.j,

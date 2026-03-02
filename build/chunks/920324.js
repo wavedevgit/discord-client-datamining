@@ -52,7 +52,9 @@ let u = {
                         block: "Section",
                         children: [{
                             block: "ContainedHero",
-                            bannerSrc: a?.catalogBannerUrl ?? "",
+                            bannerSrc: {
+                                src: a?.catalogBannerUrl ?? ""
+                            },
                             backgroundColor: e?.toHexString() ?? "red"
                         }]
                     }, {
@@ -136,7 +138,9 @@ let u = {
                         block: "Section",
                         children: [{
                             block: "BackgroundImage",
-                            backgroundImage: "https://cdn.discordapp.com/assets/content/1a68031e600ecb954fd6ea9d28ab0c0544457623f7a2c0f2b9137569c32800e8",
+                            backgroundImage: {
+                                src: "https://cdn.discordapp.com/assets/content/1a68031e600ecb954fd6ea9d28ab0c0544457623f7a2c0f2b9137569c32800e8"
+                            },
                             children: [{
                                 block: "Grid",
                                 columns: 2,
@@ -260,8 +264,10 @@ let u = {
                 children: [{
                     block: "BackgroundImage",
                     backgroundImage: {
-                        light: t,
-                        dark: a
+                        src: {
+                            light: t,
+                            dark: a
+                        }
                     },
                     children: [{
                         block: "Stack",

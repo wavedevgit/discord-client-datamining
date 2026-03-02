@@ -14,7 +14,7 @@ let d = e => {
         supplementalImage: d,
         href: s,
         ctaText: c
-    } = e, u = (0, n.A)(l), h = (0, n.A)(t), p = (0, n.A)(d);
+    } = e, u = (0, n.A)(l.src), h = (0, n.A)(t?.src), p = (0, n.A)(d?.src);
     return (0, r.jsxs)("div", {
         className: i.rJ,
         children: [(0, r.jsx)(a.A, {
@@ -29,7 +29,7 @@ let d = e => {
                     children: [(0, r.jsx)("div", {}), (0, r.jsx)("img", {
                         className: i.wm,
                         src: h,
-                        alt: ""
+                        alt: t?.alt ?? ""
                     }), (0, r.jsx)(o.$nd, {
                         text: c,
                         variant: "overlay-primary"
@@ -39,7 +39,7 @@ let d = e => {
         }), null != p && (0, r.jsx)("img", {
             className: i.hP,
             src: p,
-            alt: ""
+            alt: d?.alt ?? ""
         })]
     })
 }

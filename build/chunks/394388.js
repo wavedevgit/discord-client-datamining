@@ -106,19 +106,17 @@ function T(e) {
 function N(e) {
     let {
         boostingPrompt: t,
-        channel: n,
-        compact: r
-    } = e, s = n.guild_id, o = (0, l.bG)([_.A], () => _.A.getGuild(s), [s]);
-    return null == o ? null : (0, i.jsx)(A.A, {
+        channel: n
+    } = e, r = n.guild_id, s = (0, l.bG)([_.A], () => _.A.getGuild(r), [r]);
+    return null == s ? null : (0, i.jsx)(A.A, {
         contentClassName: g.FG,
         iconContainerClassName: g.zc,
         iconNode: (0, i.jsx)(a.XFE, {
             colorClass: g.Kk
         }),
-        compact: r,
         children: (0, i.jsx)(T, {
             boostingPrompt: t,
-            guild: o
+            guild: s
         })
     })
 }

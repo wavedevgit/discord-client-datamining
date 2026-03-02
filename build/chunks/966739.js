@@ -13,52 +13,63 @@ var r = a(397927),
 let d = {
     name: "FeaturedProduct",
     id: "featured-product",
-    component: e => (0, l.jsxs)("div", {
-        children: [(0, l.jsx)(r.Text, {
-            variant: "text-lg/semibold",
-            children: "PLACEHOLDER"
-        }), (0, l.jsx)(s.A, {
-            children: (0, l.jsx)(o.A, {
-                ...e
-            })
-        }), (0, l.jsxs)(s.A, {
+    component: e => {
+        let {
+            backgroundImage: t,
+            ...a
+        } = e, d = {
+            backgroundImage: {
+                src: t
+            },
+            ...a
+        };
+        return (0, l.jsxs)("div", {
             children: [(0, l.jsx)(r.Text, {
                 variant: "text-lg/semibold",
-                children: "Grid (3):"
-            }), (0, l.jsxs)(n.A, {
-                columns: 3,
-                children: [(0, l.jsx)(o.A, {
-                    ...e
-                }), (0, l.jsx)(o.A, {
-                    ...e
-                }), (0, l.jsx)(o.A, {
-                    ...e
-                }), (0, l.jsx)(o.A, {
-                    ...e
-                }), (0, l.jsx)(o.A, {
-                    ...e
-                }), (0, l.jsx)(o.A, {
-                    ...e
+                children: "PLACEHOLDER"
+            }), (0, l.jsx)(s.A, {
+                children: (0, l.jsx)(o.A, {
+                    ...d
+                })
+            }), (0, l.jsxs)(s.A, {
+                children: [(0, l.jsx)(r.Text, {
+                    variant: "text-lg/semibold",
+                    children: "Grid (3):"
+                }), (0, l.jsxs)(n.A, {
+                    columns: 3,
+                    children: [(0, l.jsx)(o.A, {
+                        ...d
+                    }), (0, l.jsx)(o.A, {
+                        ...d
+                    }), (0, l.jsx)(o.A, {
+                        ...d
+                    }), (0, l.jsx)(o.A, {
+                        ...d
+                    }), (0, l.jsx)(o.A, {
+                        ...d
+                    }), (0, l.jsx)(o.A, {
+                        ...d
+                    })]
+                })]
+            }), (0, l.jsxs)(s.A, {
+                children: [(0, l.jsx)(r.Text, {
+                    variant: "text-lg/semibold",
+                    children: "Stack:"
+                }), (0, l.jsxs)(i.Kp, {
+                    direction: "horizontal",
+                    children: [(0, l.jsx)(o.A, {
+                        ...d
+                    }), (0, l.jsx)(o.A, {
+                        ...d
+                    }), (0, l.jsx)(o.A, {
+                        ...d
+                    }), (0, l.jsx)(o.A, {
+                        ...d
+                    })]
                 })]
             })]
-        }), (0, l.jsxs)(s.A, {
-            children: [(0, l.jsx)(r.Text, {
-                variant: "text-lg/semibold",
-                children: "Stack:"
-            }), (0, l.jsxs)(i.Kp, {
-                direction: "horizontal",
-                children: [(0, l.jsx)(o.A, {
-                    ...e
-                }), (0, l.jsx)(o.A, {
-                    ...e
-                }), (0, l.jsx)(o.A, {
-                    ...e
-                }), (0, l.jsx)(o.A, {
-                    ...e
-                })]
-            })]
-        })]
-    }),
+        })
+    },
     controls: {
         backgroundImage: {
             label: "Background Image",

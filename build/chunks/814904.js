@@ -24,14 +24,22 @@ let s = () => (0, l.jsx)("div", {
                 let {
                     containerHeight: t,
                     showChildren: a,
-                    ...i
+                    bannerSrc: i,
+                    logoSrc: o,
+                    backgroundColor: d
                 } = e;
                 return (0, l.jsx)("div", {
                     style: {
                         height: a ? void 0 : t
                     },
                     children: (0, l.jsx)(n.A, {
-                        ...i,
+                        bannerSrc: {
+                            src: i
+                        },
+                        logoSrc: {
+                            src: o
+                        },
+                        backgroundColor: d,
                         children: a ? (0, l.jsxs)(r.A, {
                             children: [(0, l.jsx)(s, {}), (0, l.jsx)(s, {}), (0, l.jsx)(s, {}), (0, l.jsx)(s, {}), (0, l.jsx)(s, {}), (0, l.jsx)(s, {}), (0, l.jsx)(s, {}), (0, l.jsx)(s, {}), (0, l.jsx)(s, {}), (0, l.jsx)(s, {})]
                         }) : null
