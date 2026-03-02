@@ -24,8 +24,8 @@ var n = i(627968),
     A = i(18983),
     b = i(798048),
     x = i(834796),
-    T = i(178213),
-    w = i(594832),
+    w = i(178213),
+    T = i(594832),
     j = i(996353),
     O = i(631784),
     L = i(872472),
@@ -68,7 +68,7 @@ function D(e) {
 function Q(e) {
     let {
         wishlistInDmLength: t
-    } = e, i = (0, T.G)("wishlist_banner_loading_grid");
+    } = e, i = (0, w.G)("wishlist_banner_loading_grid");
     return (0, n.jsxs)(n.Fragment, {
         children: [(0, n.jsx)(u.AC4, {
             children: G.intl.string(G.t.pfChQr)
@@ -143,7 +143,7 @@ function z(e) {
         totalUnownedWishlistItems: g,
         includedSources: S,
         wishlistInDmLength: C
-    } = e, x = (0, T.G)("wishlist_banner"), j = s.useMemo(() => [...t, r].filter(e => null != e), [t, r]), O = (0, o.bG)([E.A, v.A], () => v.A.getChannel(E.A.getChannelId()));
+    } = e, x = (0, w.G)("wishlist_banner"), j = s.useMemo(() => [...t, r].filter(e => null != e), [t, r]), O = (0, o.bG)([E.A, v.A], () => v.A.getChannel(E.A.getChannelId()));
     return (0, n.jsx)("ul", {
         className: a()(F.Md, {
             [F.e6]: x
@@ -200,16 +200,16 @@ function z(e) {
                             text: r.title,
                             position: "top",
                             asContainer: !0,
-                            delay: w.Zh,
+                            delay: T.Zh,
                             children: a
                         }) : (0, n.jsx)(d.u, {
                             title: r.title,
                             body: r.body ?? "",
                             asset: r.renderIcon?.(i),
-                            assetSize: w.Q8,
+                            assetSize: T.Q8,
                             position: "top",
                             asContainer: !0,
-                            delay: w.Zh,
+                            delay: T.Zh,
                             children: a
                         }) : a
                     })({
@@ -238,7 +238,7 @@ function K(e) {
         defaultWishlistId: f
     } = e, {
         analyticsLocations: h
-    } = (0, _.Ay)(m.A.WISHLIST_BANNER), S = (0, T.G)("wishlist_banner"), C = (0, w.KQ)(S), {
+    } = (0, _.Ay)(m.A.WISHLIST_BANNER), S = (0, w.G)("wishlist_banner"), C = (0, T.KQ)(S), {
         theme: A,
         primaryColor: b,
         secondaryColor: x
@@ -337,7 +337,7 @@ function X(e) {
     let {
         giftRecipient: t,
         onWishlistItemClick: i
-    } = e, r = (0, T.G)("wishlist_banner_new_recommendations"), a = (0, h.Ay)(t?.id), {
+    } = e, r = (0, w.G)("wishlist_banner_new_recommendations"), a = (0, h.Ay)(t?.id), {
         wishlistAndRecommendations: l,
         totalUnownedWishlistItemCount: o,
         skusToUserAndReason: d,
@@ -345,12 +345,12 @@ function X(e) {
         defaultWishlistId: u
     } = (0, O.r)({
         userId: t.id,
-        numItems: (0, w.KQ)(r),
-        source: w.B5.USER_PROFILE,
+        numItems: (0, T.KQ)(r),
+        source: T.B5.USER_PROFILE,
         location: "Wishlist Banner New Recommendations"
     }), m = s.useMemo(() => l.map(e => ({
         item: e.productLine === B.EZt.COLLECTIBLES ? L.A.fromSKU(e) : k.A.fromSKU(e),
-        source: null != d[e.id] && d[e.id][t.id] === R.j.WISHLIST ? w.uS.WISHLIST : w.uS.POPULAR
+        source: null != d[e.id] && d[e.id][t.id] === R.j.WISHLIST ? T.uS.WISHLIST : T.uS.POPULAR
     })).filter(e => {
         let {
             item: t
@@ -371,14 +371,14 @@ let q = function(e) {
     let {
         giftRecipient: t,
         onWishlistItemClick: i
-    } = e, s = (0, T.G)("wishlist_banner"), r = (0, h.Ay)(t?.id), {
+    } = e, s = (0, w.G)("wishlist_banner"), r = (0, h.Ay)(t?.id), {
         displayItems: a,
         totalUnownedWishlistItemCount: l,
         fetchState: o,
         defaultWishlistId: d
     } = (0, j.A)({
         user: t,
-        numItems: (0, w.KQ)(s),
+        numItems: (0, T.KQ)(s),
         location: "Wishlist Banner"
     });
     return (0, n.jsx)(K, {

@@ -1,7 +1,7 @@
 /** chunk id: 604238, original params: e,l,t (module,exports,require) **/
 t.d(l, {
     E: () => f,
-    e: () => I
+    e: () => E
 });
 var r = t(64700),
     o = t(735438),
@@ -16,12 +16,12 @@ var r = t(64700),
     p = t(700263),
     m = t(304973),
     b = t(18769),
-    A = t(458306),
+    _ = t(458306),
     C = t(282203),
-    g = t(22519),
-    k = t(607795),
-    _ = t(954644),
-    S = t(930948),
+    S = t(22519),
+    A = t(607795),
+    g = t(954644),
+    k = t(930948),
     y = t(634791);
 let f = {
         ContainedHero: n.A,
@@ -43,20 +43,20 @@ let f = {
         FeaturedChip: m.A,
         FeaturedCollection: b.A,
         FeaturedProduct: () => null,
-        ShopProductCard: _.A,
-        StorefrontProductCard: S.A,
+        ShopProductCard: g.A,
+        StorefrontProductCard: k.A,
         SkuList: C.A,
-        SubLayout: g.A,
-        SubTemplate: k.A,
-        Button: A.ar,
-        Heading: A.Oo,
-        Stack: A.Kp,
-        Text: A.t,
+        SubLayout: S.A,
+        SubTemplate: A.A,
+        Button: _.ar,
+        Heading: _.Oo,
+        Stack: _.Kp,
+        Text: _.t,
         Any1: y.A,
         Any2: y.A,
         Any3: y.A
     },
-    I = function() {
+    E = function() {
         let {
             overrides: e
         } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};

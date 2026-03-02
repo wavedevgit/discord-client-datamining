@@ -1,76 +1,79 @@
-/** chunk id: 113273, original params: t,e,n (module,exports,require) **/
-n.d(e, {
-    default: () => N
+/** chunk id: 113273, original params: t,n,e (module,exports,require) **/
+e.d(n, {
+    default: () => d
 });
-var s = n(627968),
-    i = n(64700),
-    o = n(158954),
-    a = n(116833),
-    u = n(829219),
-    r = n(341915),
-    E = n(714510),
-    T = n(890687),
-    c = n(590202),
-    C = n(73473),
-    _ = n(654487),
-    l = n(985018);
+var s = e(627968),
+    i = e(64700),
+    o = e(158954),
+    a = e(311907),
+    r = e(116833),
+    u = e(829219),
+    E = e(859703),
+    T = e(341915),
+    c = e(714510),
+    C = e(890687),
+    l = e(590202),
+    _ = e(73473),
+    L = e(654487),
+    N = e(985018);
 
-function L(t) {
+function A(t) {
     let {
-        transitionState: e,
-        onClose: n,
-        quest: C
-    } = t, L = (0, T.fc)(C), N = (0, E.mU)({
-        quest: C,
-        taskDetails: L,
-        location: _.rE.QUEST_ACTIVITY_UNENROLLED_MODAL,
-        questContent: r.uF.QUEST_ACTIVITY_UNENROLLED_MODAL,
-        sourceQuestContent: r.uF.QUEST_ACTIVITY_UNENROLLED_MODAL
-    }), U = i.useCallback(async () => {
-        await (0, u.Oy)(C.id, {
-            questContent: r.uF.QUEST_ACTIVITY_UNENROLLED_MODAL,
-            questContentCTA: c.Cy.START_QUEST,
-            sourceQuestContent: r.uF.QUEST_ACTIVITY_UNENROLLED_MODAL
-        }), n()
-    }, [C.id, n]), A = i.useCallback(() => ((0, u.Zb)(C.id), n()), [C.id, n]);
+        transitionState: n,
+        onClose: e,
+        quest: _
+    } = t, A = (0, C.fc)(_), d = (0, c.mU)({
+        quest: _,
+        taskDetails: A,
+        location: L.rE.QUEST_ACTIVITY_UNENROLLED_MODAL,
+        questContent: T.uF.QUEST_ACTIVITY_UNENROLLED_MODAL,
+        sourceQuestContent: T.uF.QUEST_ACTIVITY_UNENROLLED_MODAL
+    }), U = (0, a.bG)([E.A], () => E.A.isEnrolling(_.id)), I = i.useCallback(async () => {
+        await (0, u.Oy)(_.id, {
+            questContent: T.uF.QUEST_ACTIVITY_UNENROLLED_MODAL,
+            questContentCTA: l.Cy.START_QUEST,
+            sourceQuestContent: T.uF.QUEST_ACTIVITY_UNENROLLED_MODAL
+        }), e()
+    }, [_.id, e]), O = i.useCallback(() => ((0, u.Zb)(_.id), e()), [_.id, e]);
     return (0, s.jsx)(o.ExpressiveModal, {
-        transitionState: e,
-        onClose: A,
+        transitionState: n,
+        onClose: O,
         graphic: {
             type: "dynamic",
-            component: a.DynamicGraphicComponent.QUEST_ACTIVITY_UNENROLLED,
+            component: r.DynamicGraphicComponent.QUEST_ACTIVITY_UNENROLLED,
             props: {
-                quest: C
+                quest: _
             }
         },
         gradientColor: "blue",
-        title: l.intl.string(l.t.IrNgN4),
-        subtitle: `${l.intl.format(l.t.V3NSJx,{questName:C.config.messages.questName})} ${N}`,
+        title: N.intl.string(N.t.IrNgN4),
+        subtitle: `${N.intl.format(N.t.V3NSJx,{questName:_.config.messages.questName})} ${d}`,
         actions: [{
-            text: l.intl.string(l.t["5Wxrcd"]),
+            text: N.intl.string(N.t["5Wxrcd"]),
             variant: "secondary",
-            onClick: A
+            onClick: O
         }, {
-            text: l.intl.string(l.t.l7E81v),
+            text: N.intl.string(N.t.l7E81v),
             variant: "primary",
-            onClick: U
+            onClick: I,
+            loading: U
         }]
     })
 }
 
-function N(t) {
+function d(t) {
     let {
-        quest: e,
-        transitionState: n,
+        quest: n,
+        transitionState: e,
         onClose: i
     } = t;
-    return (0, s.jsx)(C.R, {
-        questOrQuests: e,
-        questContent: r.uF.QUEST_ACTIVITY_UNENROLLED_MODAL,
-        sourceQuestContent: r.uF.QUEST_ACTIVITY_UNENROLLED_MODAL,
-        children: () => (0, s.jsx)(L, {
-            quest: e,
-            transitionState: n,
+    return (0, s.jsx)(_.R, {
+        questOrQuests: n,
+        questContent: T.uF.QUEST_ACTIVITY_UNENROLLED_MODAL,
+        sourceQuestContent: T.uF.QUEST_ACTIVITY_UNENROLLED_MODAL,
+        children: () => (0, s.jsx)(A, {
+            quest: n,
+            transitionState: e,
             onClose: i
         })
     })

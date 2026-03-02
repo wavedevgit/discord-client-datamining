@@ -1,32 +1,36 @@
 /** chunk id: 920324, original params: e,t,a (module,exports,require) **/
 "use strict";
 a.d(t, {
-    t: () => u
+    t: () => b
 });
 var l = a(627968),
     r = a(64700),
-    n = a(179262),
-    s = a(561769),
-    i = a(41770),
-    o = a(148702),
-    d = a(785330),
-    c = a(652215);
-let u = {
+    n = a(397927),
+    s = a(179262),
+    i = a(561769),
+    o = a(41770),
+    d = a(53566),
+    c = a(148702),
+    u = a(785330),
+    x = a(652215),
+    h = a(985018),
+    m = a(70603);
+let b = {
     title: "Layout Builder",
     stories: [{
         name: "Layout Builder",
         id: "layout-builder",
         component: () => {
-            let [e, t] = r.useState(JSON.stringify(i.uG, null, 2)), [a, n] = r.useState(e);
+            let [e, t] = r.useState(JSON.stringify(o.uG, null, 2)), [a, n] = r.useState(e);
             return r.useEffect(() => {
                 try {
-                    (0, d.F2)(JSON.parse(e)) && n(e)
+                    (0, u.F2)(JSON.parse(e)) && n(e)
                 } catch {}
             }, [e]), (0, l.jsxs)("div", {
-                children: [(0, l.jsx)(o.A, {
+                children: [(0, l.jsx)(c.A, {
                     value: e,
                     onChange: e => t(e)
-                }), (0, l.jsx)("hr", {}), (0, l.jsx)(d.Ay, {
+                }), (0, l.jsx)("hr", {}), (0, l.jsx)(u.Ay, {
                     layout: JSON.parse(a)
                 })]
             })
@@ -40,8 +44,8 @@ let u = {
                 collectionId: t
             } = e, {
                 collection: a,
-                isFetching: s
-            } = (0, n.A)({
+                isFetching: n
+            } = (0, s.A)({
                 collectionId: t,
                 includePricing: !0
             }), i = r.useMemo(() => {
@@ -70,9 +74,9 @@ let u = {
                     }]
                 }
             }, [a?.styles?.backgroundColors, a?.catalogBannerUrl, a?.products]);
-            return s ? (0, l.jsx)("div", {
+            return n ? (0, l.jsx)("div", {
                 children: "Loading..."
-            }) : (0, l.jsx)(d.Ay, {
+            }) : (0, l.jsx)(u.Ay, {
                 layout: i
             })
         },
@@ -163,7 +167,7 @@ let u = {
                         block: "Section",
                         children: [{
                             block: "SubTemplate",
-                            tenantId: c.FYj,
+                            tenantId: x.FYj,
                             templateId: "popular-picks"
                         }]
                     }]
@@ -186,15 +190,15 @@ let u = {
                         backgroundSize: "contain",
                         backgroundRepeat: "no-repeat"
                     }
-                }), (0, l.jsx)(s.v3.Provider, {
+                }), (0, l.jsx)(i.v3.Provider, {
                     value: {
-                        prioritizedCurrency: s.Hi.ORBS
+                        prioritizedCurrency: i.Hi.ORBS
                     },
                     children: (0, l.jsx)("div", {
                         style: {
                             position: "relative"
                         },
-                        children: (0, l.jsx)(d.Ay, {
+                        children: (0, l.jsx)(u.Ay, {
                             layout: e
                         })
                     })
@@ -210,7 +214,7 @@ let u = {
                 layoutId: t,
                 tenantId: a
             } = e;
-            return (0, l.jsx)(d.Qs, {
+            return (0, l.jsx)(u.Qs, {
                 layoutId: t,
                 tenantId: a
             })
@@ -224,7 +228,7 @@ let u = {
             tenantId: {
                 label: "Tenant Id",
                 type: "text",
-                defaultValue: c.FYj
+                defaultValue: x.FYj
             }
         }
     }, {
@@ -235,7 +239,7 @@ let u = {
                 templateId: t,
                 tenantId: a
             } = e;
-            return (0, l.jsx)(d.Z_, {
+            return (0, l.jsx)(u.Z_, {
                 templateId: t,
                 tenantId: a
             })
@@ -249,7 +253,7 @@ let u = {
             tenantId: {
                 label: "Tenant Id",
                 type: "text",
-                defaultValue: c.FYj
+                defaultValue: x.FYj
             }
         }
     }, {
@@ -288,7 +292,7 @@ let u = {
                     }]
                 }]
             };
-            return (0, l.jsx)(d.Ay, {
+            return (0, l.jsx)(u.Ay, {
                 layout: r
             })
         },
@@ -302,6 +306,38 @@ let u = {
                 label: "Dark Asset URL",
                 type: "text",
                 defaultValue: "https://cdn.discordapp.com/assets/content/1a68031e600ecb954fd6ea9d28ab0c0544457623f7a2c0f2b9137569c32800e8"
+            }
+        }
+    }, {
+        name: "CMS String",
+        id: "cms-string",
+        component: e => {
+            let {
+                text: t
+            } = e;
+            (0, h.useSyncMessages)(m.c);
+            let a = (0, d.S)(t);
+            return (0, l.jsxs)("div", {
+                children: [(0, l.jsxs)(n.Text, {
+                    variant: "text-lg/bold",
+                    children: ["Any registered string key can be used to reference client-side international strings", " "]
+                }), (0, l.jsx)(n.Text, {
+                    variant: "text-md/normal",
+                    children: "Strings are registered in `useCmsString.tsx`"
+                }), (0, l.jsx)("br", {}), (0, l.jsx)("hr", {}), (0, l.jsx)("br", {}), (0, l.jsxs)(n.Text, {
+                    variant: "text-md/semibold",
+                    children: ["Received: ", t]
+                }), (0, l.jsxs)(n.Text, {
+                    variant: "text-md/semibold",
+                    children: ["Resolved: ", a]
+                })]
+            })
+        },
+        controls: {
+            text: {
+                label: "Text",
+                type: "text",
+                defaultValue: "COLLECTIBLES_SHOP_THE_COLLECTION"
             }
         }
     }]
