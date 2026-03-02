@@ -21,16 +21,16 @@ function h(e) {
         maxUses: A,
         temporary: p,
         onToggleTemporary: I,
-        onSelectMaxAge: m,
-        onSelectMaxUses: x,
+        onSelectMaxAge: x,
+        onSelectMaxUses: m,
         isGuestInviteCreationToggleEnabled: v,
         inviteFlags: S,
         onSetInviteFlags: y,
         isRoleAssignmentEnabled: E,
         assignableRoles: f,
-        selectedRoleIds: T,
-        onToggleRole: C
-    } = e, _ = o.Ay.getMaxAgeOptionByValue(h), b = g.find(e => e.value === A), N = i.useMemo(() => f.map(e => ({
+        selectedRoleIds: _,
+        onToggleRole: T
+    } = e, C = o.Ay.getMaxAgeOptionByValue(h), N = g.find(e => e.value === A), b = i.useMemo(() => f.map(e => ({
         id: e.id,
         value: e.id,
         label: e.name,
@@ -41,12 +41,12 @@ function h(e) {
             tooltip: !1
         })
     })), [f]), M = i.useCallback(e => {
-        let t = Array.from(T),
+        let t = Array.from(_),
             n = e ?? [],
             l = n.find(e => !t.includes(e)),
             i = t.find(e => !n.includes(e));
-        null != l ? C(l) : null != i && C(i)
-    }, [T, C]);
+        null != l ? T(l) : null != i && T(i)
+    }, [_, T]);
     return (0, l.jsxs)("div", {
         className: c.z1,
         children: [(0, l.jsx)(r.ZiE, {
@@ -63,8 +63,8 @@ function h(e) {
                     label: n
                 }
             },
-            value: _?.value ?? n[0].value,
-            onSelectionChange: m,
+            value: C?.value ?? n[0].value,
+            onSelectionChange: x,
             selectionMode: "single"
         }), (0, l.jsx)(r.ZiE, {
             label: u.intl.string(u.t.jDqWHW),
@@ -80,14 +80,14 @@ function h(e) {
                     label: n
                 }
             },
-            value: b?.value,
-            onSelectionChange: x,
+            value: N?.value,
+            onSelectionChange: m,
             selectionMode: "single"
         }), E && f.length > 0 && (0, l.jsx)(r.ZiE, {
             label: u.intl.string(u.t.rPYJxL),
             placeholder: u.intl.string(u.t["/djIh7"]),
-            options: N,
-            value: Array.from(T),
+            options: b,
+            value: Array.from(_),
             onSelectionChange: M,
             selectionMode: "multiple",
             closeOnSelect: !1,
@@ -97,7 +97,7 @@ function h(e) {
             onChange: e => I(e),
             description: u.intl.string(u.t.UN5IRX),
             label: u.intl.string(u.t["wE+9dr"]),
-            disabled: T.size > 0
+            disabled: _.size > 0
         }), v && (0, l.jsx)(r.dOG, {
             checked: (0, a.Lt)(S, s.Q.IS_GUEST_INVITE),
             onChange: e => y((0, a.lA)(S, s.Q.IS_GUEST_INVITE, e)),

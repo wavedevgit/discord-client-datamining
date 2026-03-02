@@ -1,7 +1,7 @@
 /** chunk id: 535820, original params: e,t,n (module,exports,require) **/
 let l, i, s, a, r, o;
 n.d(t, {
-    A: () => b
+    A: () => N
 });
 var d = n(311907),
     u = n(73153),
@@ -11,8 +11,8 @@ var d = n(311907),
     A = n(735547),
     p = n(734057),
     I = n(576705),
-    m = n(994500),
-    x = n(652215),
+    x = n(994500),
+    m = n(652215),
     v = n(172799);
 let S = new Set,
     y = [],
@@ -24,15 +24,15 @@ let S = new Set,
         numChannels: 0
     };
 
-function T(e) {
+function _(e) {
     let t = new Set,
-        n = a?.type === x.rbe.GUILD_VOICE,
+        n = a?.type === m.rbe.GUILD_VOICE,
         l = null;
     null == s || o === v.yV.EMBEDDED_APPLICATION || n || (l = s.id);
     let i = (0, A.oW)(S, l);
-    for (let e of (null == i || m.A.isBlockedOrIgnored(i.id) || t.add(i.id), g.A.getUserAffinities())) t.add(e.otherUserId);
+    for (let e of (null == i || x.A.isBlockedOrIgnored(i.id) || t.add(i.id), g.A.getUserAffinities())) t.add(e.otherUserId);
     let r = new Set;
-    return o === v.yV.EMBEDDED_APPLICATION && c.A.getChannelHistory().map(e => p.A.getChannel(e)).filter(h.Vq).filter(e => e.type === x.rbe.GUILD_TEXT).filter(e => I.A.can(x.xBc.SEND_MESSAGES, e)).slice(0, 3).forEach(e => r.add(e.id)), (0, A.Us)({
+    return o === v.yV.EMBEDDED_APPLICATION && c.A.getChannelHistory().map(e => p.A.getChannel(e)).filter(h.Vq).filter(e => e.type === m.rbe.GUILD_TEXT).filter(e => I.A.can(m.xBc.SEND_MESSAGES, e)).slice(0, 3).forEach(e => r.add(e.id)), (0, A.Us)({
         query: e,
         omitUserIds: S,
         suggestedUserIds: t,
@@ -43,17 +43,17 @@ function T(e) {
     })
 }
 
-function C(e) {
+function T(e) {
     y = e, E = new Map, e.forEach((e, t) => {
         E.set(e, {
             index: t
         })
     })
 }
-class _ extends d.Ay.Store {
+class C extends d.Ay.Store {
     static displayName = "InviteSuggestionsStore";
     initialize() {
-        this.waitFor(p.A, I.A, c.A, m.A, g.A)
+        this.waitFor(p.A, I.A, c.A, x.A, g.A)
     }
     getInviteSuggestionRows() {
         return y
@@ -76,7 +76,7 @@ class _ extends d.Ay.Store {
         }
     }
 }
-let b = new _(u.h, {
+let N = new C(u.h, {
     LOAD_INVITE_SUGGESTIONS: function(e) {
         let {
             omitUserIds: t,
@@ -85,7 +85,7 @@ let b = new _(u.h, {
             applicationId: u,
             inviteTargetType: c
         } = e;
-        s = null != d ? n : null, a = d, r = u, o = c, S = new Set([...t, ...m.A.getBlockedOrIgnoredIDs(), ...(0, A.Uo)({
+        s = null != d ? n : null, a = d, r = u, o = c, S = new Set([...t, ...x.A.getBlockedOrIgnoredIDs(), ...(0, A.Uo)({
             channel: a,
             applicationId: r,
             inviteTargetType: c
@@ -93,8 +93,8 @@ let b = new _(u.h, {
         let {
             rows: g,
             counts: h
-        } = T("");
-        C(g), f = h, l = y.length
+        } = _("");
+        T(g), f = h, l = y.length
     },
     INVITE_SUGGESTIONS_SEARCH: function(e) {
         let {
@@ -103,7 +103,7 @@ let b = new _(u.h, {
         i = "" !== t;
         let {
             rows: n
-        } = T(t);
-        n.sort((e, t) => null != e.score && null != t.score ? e.score - t.score : 0), C(n)
+        } = _(t);
+        n.sort((e, t) => null != e.score && null != t.score ? e.score - t.score : 0), T(n)
     }
 })

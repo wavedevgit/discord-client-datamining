@@ -20,15 +20,15 @@ function c(e) {
         icon: A,
         iconColor: p,
         tooltipText: I,
-        disabled: m,
-        shouldHideButton: x,
+        disabled: x,
+        shouldHideButton: m,
         onClick: v
     } = (0, d.A)({
         user: t,
         channel: n,
         location: c
     });
-    return !g || x ? null : (0, l.jsx)(s.m_, {
+    return !g || m ? null : (0, l.jsx)(s.m_, {
         text: I,
         children: (0, l.jsx)("div", {
             children: (0, l.jsx)(a.K0, {
@@ -42,7 +42,7 @@ function c(e) {
                 }),
                 size: "sm",
                 onClick: v,
-                disabled: m
+                disabled: x
             })
         })
     })

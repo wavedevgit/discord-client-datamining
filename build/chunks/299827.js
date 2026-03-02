@@ -37,7 +37,7 @@ function g(e) {
             tag: "span",
             children: e
         })
-    }), []), m = n instanceof a.A ? n.code !== d.t02.TOO_MANY_INVITES ? n.getAnyErrorMessage() : o.A.can(d.xBc.MANAGE_GUILD, t) ? u.intl.format(u.t["H/RUY1"], {
+    }), []), x = n instanceof a.A ? n.code !== d.t02.TOO_MANY_INVITES ? n.getAnyErrorMessage() : o.A.can(d.xBc.MANAGE_GUILD, t) ? u.intl.format(u.t["H/RUY1"], {
         inviteListHook: p,
         inviteHelpHook: I
     }) : u.intl.string(u.t["/FxH6G"]) : "message" in n ? n.message : u.intl.string(u.t.eAn6z2);
@@ -45,6 +45,6 @@ function g(e) {
         className: c.gJ,
         variant: "text-xs/normal",
         color: "text-feedback-critical",
-        children: m
+        children: x
     })
 }

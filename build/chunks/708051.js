@@ -17,8 +17,8 @@ var l = n(627968),
     A = n(735547),
     p = n(299827),
     I = n(172799),
-    m = n(652215),
-    x = n(985018),
+    x = n(652215),
+    m = n(985018),
     v = n(912579);
 let S = r.Ay.connectStores([g.A], () => ({
         hideValue: g.A.hideInstantInvites
@@ -32,7 +32,7 @@ let S = r.Ay.connectStores([g.A], () => ({
         } = e;
         return (0, l.jsx)(u.A, {
             value: t,
-            hideMessage: i ? x.intl.string(x.t["6HzNgZ"]) : null,
+            hideMessage: i ? m.intl.string(m.t["6HzNgZ"]) : null,
             buttonColor: o.$n.Colors.BRAND,
             onCopy: s,
             autoFocus: n,
@@ -50,11 +50,11 @@ let S = r.Ay.connectStores([g.A], () => ({
             setInviteFlags: y,
             copyValue: E,
             changePage: f,
-            inviteChannel: T,
-            source: C,
-            code: _,
-            guildScheduledEvent: b,
-            disabled: N,
+            inviteChannel: _,
+            source: T,
+            code: C,
+            guildScheduledEvent: N,
+            disabled: b,
             application: M
         } = e, {
             maxAge: j,
@@ -63,40 +63,40 @@ let S = r.Ay.connectStores([g.A], () => ({
             showVanityURL: V,
             flags: U
         } = u, w = i.useCallback(() => {
-            h.default.track(m.HAw.COPY_INSTANT_INVITE, {
+            h.default.track(x.HAw.COPY_INSTANT_INVITE, {
                 server: c.A.getGuildId(),
-                channel: T?.id,
-                channel_type: T?.type,
-                location: C,
-                code: _,
-                guild_scheduled_event_id: b?.id,
+                channel: _?.id,
+                channel_type: _?.type,
+                location: T,
+                code: C,
+                guild_scheduled_event_id: N?.id,
                 application_id: M?.id
             })
-        }, [M?.id, T, C, _, b]);
+        }, [M?.id, _, T, C, N]);
         return (0, l.jsxs)(d.BJc, {
             gap: 16,
             children: [(0, l.jsx)(S, {
                 value: E,
                 autoFocus: r,
                 onCopy: w,
-                disabled: N
+                disabled: b
             }), g && (0, l.jsx)(d.dOG, {
                 checked: (0, a.Lt)(U, s.Q.IS_APPLICATION_BYPASS),
                 onChange: e => y((0, a.lA)(U, s.Q.IS_APPLICATION_BYPASS, e)),
-                disabled: N,
-                label: x.intl.string(x.t["1i1bUl"]),
-                description: x.intl.string(x.t["jvd/LF"])
+                disabled: b,
+                label: m.intl.string(m.t["1i1bUl"]),
+                description: m.intl.string(m.t["jvd/LF"])
             }), n || V ? null : (0, l.jsxs)(d.Text, {
                 variant: "text-xs/normal",
                 className: v.PJ,
                 children: [(0, A.Be)(j, R), " ", r ? (0, l.jsx)(d.MzZ, {
                     onClick: () => f(I.QR.SETTINGS),
-                    children: x.intl.string(x.t["VNe8P/"])
+                    children: m.intl.string(m.t["VNe8P/"])
                 }) : null]
             }), !n && r && V ? (0, l.jsxs)(d.Text, {
                 variant: "text-xs/normal",
                 className: v.PJ,
-                children: [x.intl.string(x.t["0M2U95"]), " "]
+                children: [m.intl.string(m.t["0M2U95"]), " "]
             }) : null, null != G ? (0, l.jsx)(p.X, {
                 guild: t,
                 error: G,

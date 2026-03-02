@@ -20,15 +20,15 @@ let r = e => {
         onClose: A,
         transitionState: p,
         isRoleAssignmentEnabled: I,
-        assignableRoles: m,
-        onToggleRole: x
+        assignableRoles: x,
+        onToggleRole: m
     } = e, {
         maxAgeOptions: v,
         maxAge: S,
         maxUses: y,
         temporary: E,
         flags: f,
-        roleIds: T
+        roleIds: _
     } = n;
     return (0, l.jsx)(i.Modal, {
         transitionState: p,
@@ -58,9 +58,9 @@ let r = e => {
             onSetInviteFlags: h,
             inviteFlags: f,
             isRoleAssignmentEnabled: I,
-            assignableRoles: m,
-            selectedRoleIds: T,
-            onToggleRole: x
+            assignableRoles: x,
+            selectedRoleIds: _,
+            onToggleRole: m
         })
     })
 }
