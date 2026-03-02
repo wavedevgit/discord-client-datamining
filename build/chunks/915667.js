@@ -11,15 +11,16 @@ var s = n(397927),
 function a(e, t) {
     (0, s.mMO)(async () => {
         switch (t.type) {
-            case l.o9.LEVEL:
+            case l.o9.LEVEL: {
                 let {
                     default: s
-                } = await n.e("96914").then(n.bind(n, 391209));
+                } = await n.e("54508").then(n.bind(n, 278087));
                 return n => (0, i.jsx)(s, {
                     guildId: e,
                     powerup: t,
                     ...n
-                });
+                })
+            }
             case l.o9.PERK: {
                 let {
                     default: s

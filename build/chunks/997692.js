@@ -1,76 +1,83 @@
 /** chunk id: 997692, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    C: () => c,
-    D: () => d
+    C: () => h,
+    D: () => A
 });
 var i = n(627968);
 n(64700);
-var s = n(116833),
-    l = n(342494),
-    a = n(294726),
-    r = n(985018);
+var s = n(311907),
+    l = n(116833),
+    a = n(342494),
+    r = n(522055),
+    o = n(294726),
+    c = n(985018),
+    d = n(66883);
 
-function o(e) {
+function u(e) {
     let {
         title: t,
         body: n,
-        ctaText: a,
-        runningGameId: r,
-        targetElementRef: o,
-        onClick: c,
-        onClose: d
-    } = e;
-    return (0, i.jsx)(l.AM, {
+        ctaText: o,
+        runningGameId: c,
+        targetElementRef: u,
+        onClick: h,
+        onClose: A
+    } = e, p = (0, s.bG)([r.A], () => null != c && r.A.getGlobalCatalogGame(c)?.can_market === !0, [c]);
+    return (0, i.jsx)(a.AM, {
         size: "lg",
         title: t,
         body: n,
-        graphic: null != r ? {
+        graphic: p && null != c ? {
             type: "dynamic",
-            component: s.DynamicGraphicComponent.GAME_SERVER_GAME_INSTRUCTIONS_ASSET,
+            component: l.DynamicGraphicComponent.GAME_SERVER_GAME_INSTRUCTIONS_ASSET,
             props: {
-                gameId: r
+                gameId: c
             },
             aspectRatio: "6/4"
-        } : void 0,
+        } : {
+            type: "image",
+            src: d.A,
+            aspectRatio: "6/4"
+        },
         actions: [{
-            text: a,
+            text: o,
             variant: "primary",
-            onClick: c
+            onClick: h
         }],
-        targetElementRef: o,
+        targetElementRef: u,
         shouldShow: !0,
         position: "top",
-        onRequestClose: d
+        onRequestClose: A
     })
 }
 
-function c(e) {
+function h(e) {
     let {
         gameName: t,
         ...n
     } = e;
-    return (0, i.jsx)(o, {
-        title: r.intl.formatToPlainString(a.default.lKzVNu, {
+    return (0, i.jsx)(u, {
+        title: c.intl.formatToPlainString(o.default.lKzVNu, {
             gameName: t
         }),
-        body: r.intl.string(a.default.qqjm8O),
-        ctaText: r.intl.string(a.default["eJg+Zm"]),
+        body: c.intl.string(o.default.qqjm8O),
+        ctaText: c.intl.string(o.default["eJg+Zm"]),
         ...n
     })
 }
 
-function d(e) {
+function A(e) {
     let {
         gameName: t,
         ...n
     } = e;
-    return (0, i.jsx)(o, {
-        title: r.intl.formatToPlainString(a.default.lwwiHE, {
+    return (0, i.jsx)(u, {
+        title: c.intl.formatToPlainString(o.default.lwwiHE, {
             gameName: t
         }),
-        body: r.intl.string(a.default.B33GXN),
-        ctaText: r.intl.string(a.default["968/QC"]),
+        body: c.intl.string(o.default.B33GXN),
+        ctaText: c.intl.string(o.default["968/QC"]),
         ...n
     })
 }

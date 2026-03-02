@@ -23,8 +23,8 @@ var n = i(627968),
     T = i(58149),
     E = i(404374),
     x = i(572680),
-    I = i(508675),
-    N = i(770335),
+    N = i(508675),
+    I = i(770335),
     v = i(891734),
     j = i(624793),
     R = i(731383),
@@ -34,8 +34,8 @@ var n = i(627968),
     y = i(465794),
     _ = i(32605),
     O = i(649963),
-    M = i(815807),
-    L = i(112753),
+    L = i(815807),
+    M = i(112753),
     P = i(253932),
     U = i(734057),
     w = i(71393),
@@ -48,8 +48,8 @@ var n = i(627968),
     z = i(900210),
     $ = i(505527),
     W = i(450707),
-    F = i(767143),
-    X = i(652176),
+    X = i(767143),
+    F = i(652176),
     J = i(802116),
     K = i(211180),
     Z = i(803203),
@@ -63,7 +63,7 @@ var n = i(627968),
 let el = 12;
 
 function ea(e, t, i) {
-    (0, p.qfG)(e => (0, n.jsx)(L.default, {
+    (0, p.qfG)(e => (0, n.jsx)(M.default, {
         ...e,
         message: t,
         selectedReaction: i
@@ -141,7 +141,7 @@ class er extends l.PureComponent {
             analytics: {
                 type: q.e.BURST_REACTION_UPSELL,
                 page: o?.getGuildId() != null ? Q.liQ.GUILD_CHANNEL : Q.liQ.DM_CHANNEL,
-                section: null != o ? (0, M.sn)(o) : void 0,
+                section: null != o ? (0, L.sn)(o) : void 0,
                 object: Q.ZSU.EMOJI_REACTION_UPSELL
             }
         }) : a ? this.handleShowVerificationGate() : n || (this.isMe() ? (0, O.et)({
@@ -376,7 +376,7 @@ class er extends l.PureComponent {
             type: q.e.BURST_REACTION_UPSELL,
             location: {
                 page: l?.getGuildId() != null ? Q.liQ.GUILD_CHANNEL : Q.liQ.DM_CHANNEL,
-                section: (0, M.sn)(l),
+                section: (0, L.sn)(l),
                 object: Q.ZSU.EMOJI_REACTION_TOOLTIP_UPSELL
             }
         })
@@ -394,8 +394,8 @@ class er extends l.PureComponent {
                 isPendingMember: A,
                 className: T,
                 useChatFontScaling: E,
-                message: I,
-                hideEmoji: N,
+                message: N,
+                hideEmoji: I,
                 animationStartPosition: v,
                 emojiSize: j
             } = this.props,
@@ -412,7 +412,7 @@ class er extends l.PureComponent {
                 }],
                 opacity: this.opacity
             },
-            L = r ? l : i;
+            M = r ? l : i;
         if (r && null != a) {
             let {
                 accentColor: i,
@@ -443,7 +443,7 @@ class er extends l.PureComponent {
                     className: s()(_.reaction, T, {
                         [_.reactionMe]: this.isMe(),
                         [_.reactionReadOnly]: h && !m && !A,
-                        [_.shakeReaction]: N && null == v
+                        [_.shakeReaction]: I && null == v
                     }),
                     style: O,
                     children: (0, n.jsx)(p.YNO, {
@@ -456,7 +456,7 @@ class er extends l.PureComponent {
                             className: _.reactionInner,
                             onClick: this.handleClick,
                             "aria-disabled": h,
-                            "aria-label": (0, M.mb)(this.isMe(), L, u, r),
+                            "aria-label": (0, L.mb)(this.isMe(), M, u, r),
                             "aria-pressed": this.isMe(),
                             children: [(0, n.jsx)("div", {
                                 className: s()({
@@ -468,22 +468,22 @@ class er extends l.PureComponent {
                             }), (0, n.jsxs)("div", {
                                 children: [r ? (0, n.jsxs)(n.Fragment, {
                                     children: [U && (0, n.jsx)(x.A, {
-                                        messageId: I.id,
+                                        messageId: N.id,
                                         emoji: u,
                                         startPosition: v,
                                         targetPosition: P
                                     }), w && (0, n.jsx)(Z.A, {
                                         count: l,
                                         emoji: u,
-                                        channelId: I.getChannelId(),
-                                        messageId: I.id,
+                                        channelId: N.getChannelId(),
+                                        messageId: N.id,
                                         useChatFontScaling: E,
                                         color: t,
                                         emojiSize: K.x.NORMAL
                                     })]
                                 }) : null, (0, n.jsx)(g.A, {
                                     className: s()({
-                                        [_.hideEmoji]: N
+                                        [_.hideEmoji]: I
                                     }),
                                     emojiId: u.id,
                                     emojiName: u.name,
@@ -492,11 +492,11 @@ class er extends l.PureComponent {
                                 })]
                             }), o ? null : (0, n.jsx)(f.A, {
                                 className: _.reactionCount,
-                                value: L,
+                                value: M,
                                 color: e,
                                 digitWidth: el
                             }), (0, n.jsx)(b.A, {
-                                count: L,
+                                count: M,
                                 reactionRef: S
                             })]
                         })
@@ -547,12 +547,12 @@ let eo = l.memo(e => {
         return d ? null == i ? null : (0, n.jsxs)(n.Fragment, {
             children: [(0, n.jsx)("div", {
                 className: ee.h2,
-                children: (0, n.jsx)(F.G7, {
+                children: (0, n.jsx)(X.G7, {
                     expressionSourceGuild: i,
                     hasJoinedExpressionSourceGuild: l,
                     isDisplayingJoinGuildButtonInPopout: s.type === W.u.JOIN_GUILD
                 })
-            }), c && (0, n.jsx)(F.mG, {
+            }), c && (0, n.jsx)(X.mG, {
                 emojiId: t,
                 expressionSourceGuild: i,
                 hasJoinedEmojiSourceGuild: l,
@@ -575,10 +575,10 @@ let eo = l.memo(e => {
             } = e,
             {
                 joinedEmojiSourceGuild: u
-            } = (0, h.cf)([I.Ay, w.A], () => {
-                let e = I.Ay.getCustomEmojiById(i);
+            } = (0, h.cf)([N.Ay, w.A], () => {
+                let e = N.Ay.getCustomEmojiById(i);
                 return {
-                    joinedEmojiSourceGuild: e?.type === N.i.GUILD ? w.A.getGuild(e?.guildId) : void 0
+                    joinedEmojiSourceGuild: e?.type === I.i.GUILD ? w.A.getGuild(e?.guildId) : void 0
                 }
             }),
             [d, c] = l.useState(void 0),
@@ -592,7 +592,7 @@ let eo = l.memo(e => {
             y = G.A.getGuildId(),
             _ = null != y && (y === d?.id || y === u?.id),
             O = D.default.getCurrentUser(),
-            M = (0, W.O)({
+            L = (0, W.O)({
                 sourceType: A,
                 expressionSourceApplication: m ?? null,
                 isPremium: H.Ay.isPremium(O),
@@ -618,15 +618,15 @@ let eo = l.memo(e => {
                     v(!1), C(!0), a()
                 })()
             }, [i, T, R, a]), S) return null;
-        let L = T && (void 0 !== d || void 0 !== m);
+        let M = T && (void 0 !== d || void 0 !== m);
         return (0, n.jsxs)("div", {
-            children: [L ? (0, n.jsxs)(n.Fragment, {
+            children: [M ? (0, n.jsxs)(n.Fragment, {
                 children: [(0, n.jsx)("div", {
                     className: ee.Hw
-                }), null != M.emojiDescription && M.type !== W.u.UNAVAILABLE && (0, n.jsx)(p.Text, {
+                }), null != L.emojiDescription && L.type !== W.u.UNAVAILABLE && (0, n.jsx)(p.Text, {
                     variant: "text-sm/normal",
-                    "aria-label": M.type,
-                    children: M.emojiDescription
+                    "aria-label": L.type,
+                    children: L.emojiDescription
                 })]
             }) : (t = Y.intl.string(Y.t["Igv+LS"]), (0, n.jsxs)(p.DUT, {
                 onClick: () => {
@@ -645,14 +645,14 @@ let eo = l.memo(e => {
                         [ee.Kk]: !T
                     })
                 })]
-            })), x ? (0, n.jsx)(X.Y0, {
+            })), x ? (0, n.jsx)(F.Y0, {
                 className: ee.eF
-            }) : L && (0, n.jsx)(eu, {
+            }) : M && (0, n.jsx)(eu, {
                 emojiId: i,
                 expressionSourceGuild: d,
                 hasJoinedExpressionSourceGuild: S,
                 onClose: r,
-                popoutData: M,
+                popoutData: L,
                 currentGuildId: y,
                 nonce: o
             })]

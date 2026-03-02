@@ -1,54 +1,54 @@
-/** chunk id: 220763, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    default: () => u
+/** chunk id: 220763, original params: t,e,n (module,exports,require) **/
+n.d(e, {
+    default: () => L
 });
-var i = n(627968);
+var a = n(627968);
 n(64700);
-var a = n(87719),
-    s = n(414345),
-    l = n(244975),
+var i = n(87719),
+    r = n(414345),
+    s = n(244975),
     o = n(788868),
-    r = n(652215),
-    c = n(985018),
+    c = n(652215),
+    l = n(985018),
     d = n(736975);
 
-function u(e) {
+function L(t) {
     let {
-        channel: t,
+        channel: e,
         onClose: n,
-        ...u
-    } = e, p = c.intl.format(c.t.AVVUse, {
+        ...L
+    } = t, u = l.intl.format(l.t.AVVUse, {
         onLearnMore: function() {
-            n(), (0, a.e)()
+            n(), (0, i.e)()
         }
     });
-    return (0, s.g)({
+    return (0, r.g1)({
         location: "PremiumMessageLengthUpsell"
-    }) ? (0, i.jsx)(l.F, {
-        title: c.intl.string(c.t.SeL3ec),
-        subtitle: p,
+    }) ? (0, a.jsx)(s.F, {
+        title: l.intl.string(l.t.SeL3ec),
+        subtitle: u,
         graphic: {
             src: d.A,
             type: "image"
         },
-        secondaryCTA: c.intl.string(c.t["13/7kX"]),
+        secondaryCTA: l.intl.string(l.t["13/7kX"]),
         onSecondaryClick: n,
         onClose: n,
-        ...u
-    }) : (0, i.jsx)(l.A, {
+        ...L
+    }) : (0, a.jsx)(s.A, {
         artURL: d.A,
         type: o.e.MESSAGE_LENGTH_UPSELL,
-        title: c.intl.string(c.t.SeL3ec),
-        body: p,
-        glowUp: p,
+        title: l.intl.string(l.t.SeL3ec),
+        body: u,
+        glowUp: u,
         analyticsSource: {
-            page: t?.getGuildId() != null ? r.liQ.GUILD_CHANNEL : t?.isGroupDM() || t?.isPrivate() ? r.liQ.DM_CHANNEL : null
+            page: e?.getGuildId() != null ? c.liQ.GUILD_CHANNEL : e?.isGroupDM() || e?.isPrivate() ? c.liQ.DM_CHANNEL : null
         },
         analyticsLocation: {
-            section: r.JJy.MESSAGE_LENGTH_UPSELL_MODAL,
-            object: r.ZSU.BUTTON_CTA
+            section: c.JJy.MESSAGE_LENGTH_UPSELL_MODAL,
+            object: c.ZSU.BUTTON_CTA
         },
         onClose: n,
-        ...u
+        ...L
     })
 }

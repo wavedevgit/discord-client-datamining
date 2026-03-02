@@ -1,7 +1,7 @@
 /** chunk id: 518960, original params: e,t,i (module,exports,require) **/
 i.d(t, {
     R: () => v,
-    V: () => N
+    V: () => I
 });
 var n = i(367513),
     l = i(843472),
@@ -21,9 +21,9 @@ var n = i(367513),
     T = i(652215),
     E = i(381941),
     x = i(788868),
-    I = i(985018);
+    N = i(985018);
 
-function N(e, t, i) {
+function I(e, t, i) {
     let n = m.default.getCurrentUser(),
         l = e.guild_id,
         a = g.o2(l),
@@ -46,15 +46,15 @@ function N(e, t, i) {
             post_compression_file_sizes: i,
             post_compression_aggregate_file_size: t
         }), (0, s.openUploadError)({
-            title: I.intl.string(I.t["/tGlcj"]),
+            title: N.intl.string(N.t["/tGlcj"]),
             help: (0, f.WQ)(n, l),
             showPremiumUpsell: !(0, A.YE)(n, x.PremiumTypes.TIER_2),
             fileSize: c
         });
         return
     }(0, s.openUploadError)({
-        title: I.intl.string(I.t["/tGlcj"]),
-        help: I.intl.formatToPlainString(I.t.tUOJdH, {
+        title: N.intl.string(N.t["/tGlcj"]),
+        help: N.intl.formatToPlainString(N.t.tUOJdH, {
             maxSize: g.Hb(g.bB())
         })
     })
@@ -74,11 +74,11 @@ async function v(e, t, i) {
             originalContentType: e.type,
             preCompressionSize: e.size
         }));
-    if (await Promise.resolve(), (0, f.fJ)(v, x)) return void N(t, v);
+    if (await Promise.resolve(), (0, f.fJ)(v, x)) return void I(t, v);
     if (h.A.getUploadCount(t.id, i) + v.length > T.XgB) {
         (0, s.openUploadError)({
-            title: I.intl.string(I.t.wOr6hB),
-            help: I.intl.formatToPlainString(I.t["qqyp/e"], {
+            title: N.intl.string(N.t.wOr6hB),
+            help: N.intl.formatToPlainString(N.t["qqyp/e"], {
                 limit: T.XgB
             })
         }), p.default.track(T.HAw.UPLOAD_FILE_LIMIT_ERROR, {

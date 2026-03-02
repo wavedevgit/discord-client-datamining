@@ -15,9 +15,9 @@ var l = n(311907),
     m = n(828162),
     _ = n(71393),
     A = n(888675),
-    E = n(652215),
-    h = n(985018),
-    f = n(333354),
+    f = n(652215),
+    E = n(985018),
+    h = n(333354),
     g = n(468406),
     p = n(274993),
     x = n(218924);
@@ -58,8 +58,8 @@ function C(e) {
                 guild: r,
                 analyticsLocations: o,
                 analyticsLocation: {
-                    page: E.liQ.GUILD_CHANNEL,
-                    section: E.JJy.CHANNEL_TEXT_AREA
+                    page: f.liQ.GUILD_CHANNEL,
+                    section: f.JJy.CHANNEL_TEXT_AREA
                 }
             })
         })]
@@ -71,8 +71,8 @@ function I(e) {
         guild: t
     } = e, n = (0, u.A)(t.id);
     return (0, i.jsx)(C, {
-        title: h.intl.string(f.default.qGDEON),
-        body: h.intl.format(f.default["s+HTdX"], {
+        title: E.intl.string(h.default.qGDEON),
+        body: E.intl.format(h.default["s+HTdX"], {
             viewAllPerks: e => (0, i.jsx)(a.DUT, {
                 tag: "a",
                 role: "link",
@@ -80,8 +80,8 @@ function I(e) {
                     n ? (0, m.A)(t.id, o.A.GUILD_BOOSTING_FIRST_TIME_BOOSTER_UPSELL) : (0, c.K)({
                         guildId: t.id,
                         location: {
-                            section: E.JJy.CHANNEL_TEXT_AREA,
-                            object: E.ZSU.BOOST_ANNOUNCEMENT_UPSELL
+                            section: f.JJy.CHANNEL_TEXT_AREA,
+                            object: f.ZSU.BOOST_ANNOUNCEMENT_UPSELL
                         }
                     })
                 },

@@ -64,7 +64,7 @@ function R(t) {
         pendingAvatarSrc: n === m.HL.AVATAR ? a : void 0,
         isPreview: !0
     }), v = n === m.HL.AVATAR || n === m.HL.BANNER, T = null != a, y = (0, d.u)(n === m.HL.AVATAR ? u.e.ANIMATED_AVATAR_MODAL_UPSELL : u.e.ANIMATED_BANNER_MODAL_UPSELL), b = (0, d.A)(n === m.HL.AVATAR ? u.e.ANIMATED_AVATAR_MODAL_UPSELL : u.e.ANIMATED_BANNER_MODAL_UPSELL);
-    return v ? (0, c.g)({
+    return v ? (0, c.g1)({
         location: "getReducedMotionImageUrl"
     }) ? (0, i.jsx)(_.F, {
         title: n === m.HL.AVATAR ? g.intl.string(g.t.X7tO60) : g.intl.string(g.t.zXPa2C),

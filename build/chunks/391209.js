@@ -1,74 +1,74 @@
-/** chunk id: 391209, original params: e,t,a (module,exports,require) **/
-a.d(t, {
-    default: () => k
+/** chunk id: 391209, original params: e,t,r (module,exports,require) **/
+r.d(t, {
+    A: () => f
 });
-var s = a(627968),
-    r = a(64700),
-    n = a(503698),
-    o = a.n(n),
-    c = a(397927),
-    i = a(503852),
-    l = a(363487),
-    d = a(998418),
-    u = a(193157),
-    m = a(439156),
-    _ = a(568065),
-    b = a(985018),
-    p = a(750845),
-    I = a(107836);
+var a = r(627968),
+    s = r(64700),
+    n = r(503698),
+    o = r.n(n),
+    i = r(397927),
+    c = r(503852),
+    l = r(363487),
+    d = r(998418),
+    u = r(193157),
+    p = r(439156),
+    _ = r(568065),
+    m = r(985018),
+    I = r(750845),
+    b = r(107836);
 
-function k(e) {
+function f(e) {
     let {
         guildId: t,
-        powerup: a,
+        powerup: r,
         onClose: n,
-        ...k
-    } = e, [f, T] = r.useState(void 0), N = (0, d.Ay)(t, a), E = N.type === _.b_.TIER_OVERRIDE_ACTIVATED, x = (0, l.A)(t), A = null == N.sourceEntitlement || !x;
-    return (0, i.Z)(t, a, i.q.DETAIL), (0, s.jsxs)(c.EOs, {
+        ...f
+    } = e, [k, x] = s.useState(void 0), T = (0, d.Ay)(t, r), v = T.type === _.b_.TIER_OVERRIDE_ACTIVATED, A = (0, l.A)(t), E = null == T.sourceEntitlement || !A;
+    return (0, c.Z)(t, r, c.q.DETAIL), (0, a.jsxs)(i.EOs, {
         "data-migration-pending": !0,
-        className: p.yl,
-        size: c.rIJ.DYNAMIC,
-        ...k,
+        className: I.yl,
+        size: i.rIJ.DYNAMIC,
+        ...f,
         parentComponent: "GuildPowerupLevelModal",
-        children: [(0, s.jsxs)(c.$mQ, {
+        children: [(0, a.jsxs)(i.$mQ, {
             "data-migration-pending": !0,
-            className: p._F,
+            className: I._F,
             scrollbarType: "none",
-            children: [(0, s.jsx)("img", {
+            children: [(0, a.jsx)("img", {
                 alt: "",
-                src: I,
-                className: p.v5
-            }), (0, s.jsxs)("div", {
-                className: p.hQ,
-                children: [(0, s.jsx)(c.Heading, {
+                src: b,
+                className: I.v5
+            }), (0, a.jsxs)("div", {
+                className: I.hQ,
+                children: [(0, a.jsx)(i.Heading, {
                     variant: "heading-xl/extrabold",
-                    children: a.title
-                }), (0, s.jsx)(u.A, {
-                    powerup: a
-                }), null != f && (0, s.jsx)(c.Text, {
+                    children: r.title
+                }), (0, a.jsx)(u.A, {
+                    powerup: r
+                }), null != k && (0, a.jsx)(i.Text, {
                     color: "text-feedback-critical",
                     variant: "text-sm/semibold",
-                    children: f
-                }), (0, s.jsxs)("div", {
-                    className: o()(p.qr, {
-                        [p.r9]: A
+                    children: k
+                }), (0, a.jsxs)("div", {
+                    className: o()(I.qr, {
+                        [I.r9]: E
                     }),
-                    children: [!E && x && (0, s.jsx)(m.A, {
+                    children: [!v && A && (0, a.jsx)(p.A, {
                         guildId: t,
-                        powerup: a,
-                        onError: T,
+                        powerup: r,
+                        onError: x,
                         grow: !1,
-                        compact: !A
-                    }), (0, s.jsx)(c.Button, {
-                        variant: A ? "secondary" : "primary",
+                        compact: !E
+                    }), (0, a.jsx)(i.Button, {
+                        variant: E ? "secondary" : "primary",
                         onClick: n,
-                        text: b.intl.string(b.t.cpT0Cq)
+                        text: m.intl.string(m.t.cpT0Cq)
                     })]
                 })]
             })]
-        }), (0, s.jsx)(c.s_y, {
+        }), (0, a.jsx)(i.s_y, {
             "data-migration-pending": !0,
-            className: p.VN,
+            className: I.VN,
             onClick: n
         })]
     })

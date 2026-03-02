@@ -38,7 +38,7 @@ function p(t) {
             location_object: r.ZSU.NAVIGATION_LINK
         }), n(), (0, e.pX)(r.BVt.APPLICATION_STORE)
     }
-    return (0, a.g)({
+    return (0, a.g1)({
         location: "PremiumForLaterUpsell"
     }) ? (0, i.jsx)(o.F, {
         title: _.intl.string(_.t.w4DRbZ),

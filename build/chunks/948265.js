@@ -1,58 +1,58 @@
-/** chunk id: 948265, original params: e,n,t (module,exports,require) **/
-t.d(n, {
+/** chunk id: 948265, original params: t,e,n (module,exports,require) **/
+n.d(e, {
     default: () => d
 });
-var a = t(627968);
-t(64700);
-var o = t(87719),
-    i = t(414345),
-    l = t(377108),
-    r = t(244975),
-    c = t(652215),
-    s = t(985018);
+var a = n(627968);
+n(64700);
+var o = n(87719),
+    r = n(414345),
+    i = n(377108),
+    c = n(244975),
+    s = n(652215),
+    l = n(985018);
 
-function d(e) {
+function d(t) {
     let {
-        premiumUpsellType: n,
-        title: t,
+        premiumUpsellType: e,
+        title: n,
         body: d,
         glowUp: u,
-        analyticsSource: p,
-        onClose: h,
-        onSecondaryClick: C,
-        ...b
-    } = e, y = (0, l.u)(n), g = (0, l.A)(n);
-    return (0, i.g)({
+        analyticsSource: C,
+        onClose: T,
+        onSecondaryClick: p,
+        ...h
+    } = t, U = (0, i.u)(e), A = (0, i.A)(e);
+    return (0, r.g1)({
         location: "PremiumProfileDecorationUpsell"
-    }) ? (0, a.jsx)(r.F, {
-        title: t,
+    }) ? (0, a.jsx)(c.F, {
+        title: n,
         subtitle: d,
-        graphic: g,
+        graphic: A,
         onSecondaryClick: () => {
-            C(), (0, o.x)(h)
+            p(), (0, o.x)(T)
         },
-        secondaryCTA: s.intl.string(s.t.PcTCB7),
-        onClose: h,
+        secondaryCTA: l.intl.string(l.t.PcTCB7),
+        onClose: T,
         showEnhancedUpsell: !0
-    }) : (0, a.jsx)(r.A, {
-        artURL: y,
-        type: n,
-        title: t,
+    }) : (0, a.jsx)(c.A, {
+        artURL: U,
+        type: e,
+        title: n,
         body: d,
         glowUp: u,
         onSecondaryClick: () => {
-            C(), (0, o.x)(h)
+            p(), (0, o.x)(T)
         },
-        secondaryCTA: s.intl.string(s.t.PcTCB7),
-        onClose: h,
+        secondaryCTA: l.intl.string(l.t.PcTCB7),
+        onClose: T,
         enableArtBoxShadow: !1,
-        analyticsSource: p,
+        analyticsSource: C,
         analyticsLocation: {
-            section: c.JJy.USER_PROFILE,
-            object: c.ZSU.BUTTON_CTA
+            section: s.JJy.USER_PROFILE,
+            object: s.ZSU.BUTTON_CTA
         },
         hideBackButton: !0,
         showEnhancedUpsell: !0,
-        ...b
+        ...h
     })
 }

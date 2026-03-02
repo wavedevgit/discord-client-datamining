@@ -24,10 +24,8 @@ function E(e) {
         className: E
     } = e, I = (0, h.A)(c.Ay), {
         showClipsHeaderEntrypoint: f
-    } = u.L_.useExperiment({
+    } = u.L_.useConfig({
         location: "ClipsButton"
-    }, {
-        autoTrackExposure: !1
     }), {
         hasNewClips: C,
         lastClipsSession: T,

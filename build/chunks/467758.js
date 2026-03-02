@@ -15,10 +15,8 @@ let A = (0, l.zZ)(s.X.CLIPS_AUTOMATIC_CLIPPING_CATEGORY, {
     usePredicate: () => {
         let {
             enableAdvancedSignals: t
-        } = n.L_.useExperiment({
+        } = n.L_.useConfig({
             location: "ClipsAutomaticClippingCategory"
-        }, {
-            autoTrackExposure: !1
         });
         return t
     },

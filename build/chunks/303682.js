@@ -14,9 +14,9 @@ var i, l = n(627968),
     m = n(718213),
     _ = n(793574),
     A = n(688810),
-    E = n(954571),
-    h = n(975571),
-    f = n(427262),
+    f = n(954571),
+    E = n(975571),
+    h = n(427262),
     g = n(326084),
     p = n(851746),
     x = n(761546),
@@ -29,7 +29,7 @@ let R = e => {
         let {
             onClose: t,
             onShare: n
-        } = e, i = (0, c.bG)([p.A], () => p.A.getReferralsRemaining()), r = (0, c.bG)([p.A], () => p.A.getHasEligibleFriends()), [u, _] = a.useState(new Map), [A, E] = a.useState(""), g = (0, m.A)(A, 400), {
+        } = e, i = (0, c.bG)([p.A], () => p.A.getReferralsRemaining()), r = (0, c.bG)([p.A], () => p.A.getHasEligibleFriends()), [u, _] = a.useState(new Map), [A, f] = a.useState(""), g = (0, m.A)(A, 400), {
             eligibleUsers: I,
             fetchUsers: R,
             hasError: v,
@@ -51,7 +51,7 @@ let R = e => {
             size: "sm",
             title: N.intl.string(N.t["2YigPp"]),
             subtitle: N.intl.format(N.t.OOCbz8, {
-                helpdeskArticle: h.A.getArticleURL(T.MVz.REFERRAL_PROGRAM)
+                helpdeskArticle: E.A.getArticleURL(T.MVz.REFERRAL_PROGRAM)
             }),
             onClose: t,
             actions: []
@@ -68,7 +68,7 @@ let R = e => {
                 formatOption: e => ({
                     id: e.id,
                     value: e,
-                    label: f.Ay.getName(e)
+                    label: h.Ay.getName(e)
                 }),
                 onSelectionChange: e => {
                     let t = Array.isArray(e) ? e : [e],
@@ -82,7 +82,7 @@ let R = e => {
                     children: (0, l.jsx)(d.a32, {
                         placeholder: 0 === u.size ? N.intl.string(N.t.Kd5RaI) : "",
                         onQueryChange: e => {
-                            E(e.target.value)
+                            f(e.target.value)
                         }
                     })
                 })
@@ -146,8 +146,8 @@ let R = e => {
             } = e,
             r = (0, c.bG)([p.A], () => p.A.getRecipientStatus()),
             [m, _] = a.useState(new Map),
-            [A, E] = a.useState(new Map),
-            [h, f] = a.useState(!1);
+            [A, f] = a.useState(new Map),
+            [E, h] = a.useState(!1);
         return a.useEffect(() => {
             (async () => {
                 let e = new Map;
@@ -170,12 +170,12 @@ let R = e => {
                 className: s()(S.qr, S.h0),
                 children: (0, l.jsx)(d.Button, {
                     variant: "primary",
-                    disabled: 0 === A.size || h,
+                    disabled: 0 === A.size || E,
                     text: t,
                     size: "md",
                     fullWidth: !0,
                     onClick: async () => {
-                        f(!0), await i([...A.values()]), f(!1)
+                        h(!0), await i([...A.values()]), h(!1)
                     }
                 })
             })),
@@ -184,7 +184,7 @@ let R = e => {
                 isUserSelected: e => A.has(e.id),
                 isUserDisabled: e => e.referralStatus === g.aK.REDEEMED,
                 onSelectionChange: (e, t) => {
-                    E(n => {
+                    f(n => {
                         let i = new Map(n);
                         return t ? i.set(e.id, e) : i.delete(e.id), i
                     })
@@ -200,8 +200,8 @@ let j = e => {
         startingScreen: n = 1
     } = e, i = (0, c.bG)([p.A], () => p.A.getReferralsRemaining()), [r, s] = a.useState(n), [o, u] = a.useState([]), {
         analyticsLocations: m
-    } = (0, A.Ay)([_.A.PREMIUM_MARKETING_REFERALL_PROGRAM_SHARE_MODAL]), h = async e => {
-        E.default.track(T.HAw.REFERRAL_PROGRAM_SHARE_CTA_CLICKED, {
+    } = (0, A.Ay)([_.A.PREMIUM_MARKETING_REFERALL_PROGRAM_SHARE_MODAL]), E = async e => {
+        f.default.track(T.HAw.REFERRAL_PROGRAM_SHARE_CTA_CLICKED, {
             location_stack: m
         });
         let t = await (0, g.xm)(Object.values(e).map(e => e.id));
@@ -216,9 +216,9 @@ let j = e => {
         onClose: t
     }) : 1 === r ? (0, l.jsx)(R, {
         onClose: t,
-        onShare: h
+        onShare: E
     }) : 3 === r ? (0, l.jsx)(v, {
         onClose: t,
-        onShare: h
+        onShare: E
     }) : void 0
 }

@@ -37,7 +37,7 @@ function b(t) {
             requireConfirm: !0
         }), o._.dispatchToLastSubscribed(p.jej.CLEAR_TEXT)
     }
-    return (0, r.g)({
+    return (0, r.g1)({
         location: "PremiumMessageLengthRoadblockUpsell"
     }) ? (0, i.jsx)(d.F, {
         title: u.intl.string(u.t.TZT3sJ),

@@ -1,62 +1,62 @@
 /** chunk id: 309326, original params: e,t,a (module,exports,require) **/
 a.d(t, {
-    a: () => i
+    a: () => o
 });
-var s = a(503698),
-    r = a.n(s),
-    n = a(397927),
-    o = a(473145),
-    c = a(946084);
+var r = a(503698),
+    n = a.n(r),
+    s = a(397927),
+    i = a(473145),
+    l = a(946084);
 
-function i(e, t) {
+function o(e, t) {
     if (t) return {
-        Icon: n.A9s,
-        className: c.YR
+        Icon: s.A9s,
+        className: l.YR
     };
     switch (e) {
-        case o.TP.EMOJI:
+        case i.TP.EMOJI:
             return {
-                Icon: n.nm2, className: r()(c.Kk, c.Zg)
+                Icon: s.nm2, className: n()(l.Kk, l.Zg)
             };
-        case o.TP.AUDIO:
+        case i.TP.AUDIO:
             return {
-                Icon: n.LoC, className: r()(c.Kk, c.z7)
+                Icon: s.LoC, className: n()(l.Kk, l.z7)
             };
-        case o.TP.ANIMATED:
+        case i.TP.ANIMATED:
             return {
-                Icon: n.Osp, className: r()(c.Kk, c.CS)
+                Icon: s.Osp, className: n()(l.Kk, l.CS)
             };
-        case o.TP.CUSTOMIZATION:
+        case i.TP.CUSTOMIZATION:
             return {
-                Icon: n.sYc, className: r()(c.Kk, c.wk)
+                Icon: s.sYc, className: n()(l.Kk, l.wk)
             };
-        case o.TP.UPLOAD:
+        case i.TP.UPLOAD:
             return {
-                Icon: n.JMY, className: r()(c.Kk, c.Se)
+                Icon: s.JMY, className: n()(l.Kk, l.Se)
             };
-        case o.TP.VANITY:
+        case i.TP.VANITY:
             return {
-                Icon: n.Gg5, className: r()(c.Kk, c.w4)
+                Icon: s.Gg5, className: n()(l.Kk, l.w4)
             };
-        case o.TP.STREAM:
+        case i.TP.STREAM:
             return {
-                Icon: n.Fzq, className: r()(c.Kk, c.Td)
+                Icon: s.Fzq, className: n()(l.Kk, l.Td)
             };
-        case o.TP.STICKER:
+        case i.TP.STICKER:
             return {
-                Icon: n.tEP, className: r()(c.Kk, c.yI)
+                Icon: s.tEP, className: n()(l.Kk, l.yI)
             };
-        case o.TP.CUSTOM_ROLE_ICON:
+        case i.TP.CUSTOM_ROLE_ICON:
             return {
-                Icon: n.iTF, className: r()(c.Kk, c.ru)
+                Icon: s.iTF, className: n()(l.Kk, l.ru)
             };
-        case o.TP.STAGE_VIDEO:
+        case i.TP.STAGE_VIDEO:
             return {
-                Icon: n.qux, className: r()(c.Kk, c.dw)
+                Icon: s.qux, className: n()(l.Kk, l.dw)
             };
-        case o.TP.SOUNDBOARD:
+        case i.TP.SOUNDBOARD:
             return {
-                Icon: n.JMI, className: r()(c.Kk, c.CC)
+                Icon: s.JMI, className: n()(l.Kk, l.CC)
             }
     }
     throw Error(`Unexpected perk icon ${e}`)

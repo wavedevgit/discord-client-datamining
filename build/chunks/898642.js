@@ -1,40 +1,37 @@
 /** chunk id: 898642, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => _
 });
 var i = n(627968);
 n(64700);
 var r = n(311907),
     l = n(827734),
     a = n(397927),
-    s = n(773669),
-    o = n(287809),
-    d = n(954571),
-    c = n(975571),
-    u = n(427262),
-    A = n(58736),
-    h = n(652215),
-    _ = n(985018);
-let m = new Set(["ko", "ja"]);
+    s = n(287809),
+    o = n(954571),
+    d = n(975571),
+    c = n(427262),
+    u = n(58736),
+    A = n(652215),
+    h = n(985018);
 
-function p(e) {
+function _(e) {
     let {
         className: t,
         focusSectionProps: n
-    } = e, p = (0, r.bG)([o.default], () => o.default.getCurrentUser()), g = (0, r.bG)([s.default], () => s.default.locale), E = (0, u.mv)(p);
+    } = e, _ = (0, r.bG)([s.default], () => s.default.getCurrentUser()), m = (0, c.mv)(_);
     return (0, i.jsx)(a.MzZ, {
-        href: c.C,
+        href: d.C,
         target: "_blank",
         tabIndex: -1,
-        children: (0, i.jsx)(A.In, {
-            color: E ? l.A.unsafe_rawColors.GREEN_360.css : "currentColor",
+        children: (0, i.jsx)(u.In, {
+            color: m ? l.A.unsafe_rawColors.GREEN_360.css : "currentColor",
             className: t,
-            onClick: () => d.default.track(h.HAw.HELP_CLICKED, {
-                highlighted: E
+            onClick: () => o.default.track(A.HAw.HELP_CLICKED, {
+                highlighted: m
             }),
             icon: a.cBN,
-            tooltipPosition: m.has(g) ? "left" : void 0,
-            tooltip: _.intl.string(_.t["cqEoj/"]),
+            tooltip: h.intl.string(h.t["cqEoj/"]),
             ...n
         })
     })

@@ -14,9 +14,9 @@ var i = n(627968),
     m = n(397927),
     _ = n(155718),
     A = n(811024),
-    E = n(795816),
-    h = n(793574),
-    f = n(688810),
+    f = n(795816),
+    E = n(793574),
+    h = n(688810),
     g = n(735991),
     p = n(975412),
     x = n(168186),
@@ -66,9 +66,9 @@ function P(e, t, n, l, a, s) {
         isInteractionUserBlocked: u,
         isInteractionUserIgnored: _,
         showAvatarPopout: A,
-        showTargetAvatarPopout: E,
-        onClickAvatar: h,
-        onUserContextMenu: f,
+        showTargetAvatarPopout: f,
+        onClickAvatar: E,
+        onUserContextMenu: h,
         onClickTargetAvatar: g,
         onTargetUserContextMenu: p,
         onPopoutRequestClose: x
@@ -111,11 +111,11 @@ function P(e, t, n, l, a, s) {
             user: t,
             guildId: d.guild_id,
             guildAvatar: C,
-            onClick: 1 === n ? g : h,
-            onContextMenu: 1 === n ? p : f,
+            onClick: 1 === n ? g : E,
+            onContextMenu: 1 === n ? p : h,
             ref: s
         }),
-        T = 1 === n ? E : A;
+        T = 1 === n ? f : A;
     return null != a && null != T && null != s ? (0, i.jsx)(m.YNO, {
         targetElementRef: s,
         renderPopout: a,
@@ -166,7 +166,7 @@ function w(e) {
         {
             analyticsLocations: s,
             newestAnalyticsLocation: c
-        } = (0, f.Ay)(h.A.EXECUTED_COMMAND),
+        } = (0, h.Ay)(E.A.EXECUTED_COMMAND),
         S = (0, u.bG)([N.default], () => N.default.getCurrentUser()),
         j = l.useRef(null),
         U = l.useRef(null),
@@ -191,18 +191,18 @@ function w(e) {
         z = (0, M.d8)(n.interaction?.user, a),
         J = (0, M.d8)(B, a),
         K = l.useMemo(() => e.compact ? (0, b.A)((0, v.i$)(d()(), "LT")) : null, [e.compact]),
-        W = (0, A.Gp)(a.id),
-        Q = n.interaction;
-    if (null == Q || null == z) return null;
-    let Y = () => {
-        let t = P(e, Q.user, 0, z, e => w(e, Q.user, [h.A.AVATAR]), j),
-            n = k(e, Q.user, 0, z, e => w(e, Q.user));
+        Y = (0, A.Gp)(a.id),
+        W = n.interaction;
+    if (null == W || null == z) return null;
+    let Q = () => {
+        let t = P(e, W.user, 0, z, e => w(e, W.user, [E.A.AVATAR]), j),
+            n = k(e, W.user, 0, z, e => w(e, W.user));
         return (0, i.jsxs)(l.Fragment, {
             children: [t, n]
         }, "user")
     };
     if (n?.activityInstance === null || (0, C.V)(n)) t = L.intl.format(L.t["rg7U+C"], {
-        userHook: Y,
+        userHook: Q,
         commandHook: () => {
             let t = function(e, t, n) {
                 let {
@@ -281,7 +281,7 @@ function w(e) {
     }) : null != B && (t = (0, i.jsxs)(i.Fragment, {
         children: [t, (0, i.jsx)(G, {}), (0, i.jsx)(() => {
             if (null == B) return null;
-            let t = P(e, B, 1, J, e => w(e, B, [h.A.AVATAR]), j),
+            let t = P(e, B, 1, J, e => w(e, B, [E.A.AVATAR]), j),
                 n = k(e, B, 1, J, e => w(e, B));
             return (0, i.jsxs)(l.Fragment, {
                 children: [t, n]
@@ -299,12 +299,12 @@ function w(e) {
                 },
                 openInPopout: !1,
                 analyticsLocation: c
-            }), (0, E.LV)({
+            }), (0, f.LV)({
                 guildId: a.guild_id
             })
         };
-        t = W ? L.intl.format(L.t.kfV8WM, {
-            userHook: Y,
+        t = Y ? L.intl.format(L.t.kfV8WM, {
+            userHook: Q,
             activityHook: () => (0, i.jsx)(m.DUT, {
                 tag: "span",
                 onClick: e,
@@ -314,10 +314,10 @@ function w(e) {
                 })
             })
         }) : L.intl.format(L.t["6FeSyT"], {
-            userHook: Y
+            userHook: Q
         })
     }
-    return (0, i.jsx)(f.f5, {
+    return (0, i.jsx)(h.f5, {
         value: s,
         children: (0, i.jsx)("div", {
             className: r()(D.JZ, D.NB, D.JE, K),

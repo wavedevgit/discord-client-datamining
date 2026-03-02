@@ -25,8 +25,8 @@ function E(e) {
         channelId: i,
         guildId: E,
         messageId: x,
-        stopPropagation: I = !1,
-        ariaLabel: N,
+        stopPropagation: N = !1,
+        ariaLabel: I,
         enableDisplayNameStyles: v = !1
     } = e, j = l.useRef(null), {
         analyticsLocations: R
@@ -55,7 +55,7 @@ function E(e) {
                     colorString: e?.colorString ?? null,
                     roleName: e?.colorRoleName,
                     colorStrings: d ? o : null,
-                    "aria-label": N,
+                    "aria-label": I,
                     className: b
                 });
                 {
@@ -64,7 +64,7 @@ function E(e) {
                         ...null != t ? t : {},
                         ref: j,
                         onContextMenu: y,
-                        "aria-label": N,
+                        "aria-label": I,
                         children: (0, n.jsx)(h.A, {
                             userName: (0, r.Oer)(l) ?? "",
                             displayNameStyles: S,
@@ -92,12 +92,12 @@ function E(e) {
                     } = e;
                     return m({
                         onClick: e => {
-                            I && null != e && e.stopPropagation(), i(e)
+                            N && null != e && e.stopPropagation(), i(e)
                         },
                         ...n
                     }, t)
                 }
             }) : m(void 0, void 0)
         }, s)
-    }, [R, t, i, E, x, y, I, N, C, b, _?.animate, S, v])
+    }, [R, t, i, E, x, y, N, I, C, b, _?.animate, S, v])
 }

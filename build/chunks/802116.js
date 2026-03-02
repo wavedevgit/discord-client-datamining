@@ -52,66 +52,66 @@ function m(e, t) {
     if (0 === T.length) return "";
     let E = f ? h.burst : h.standard,
         x = Math.max(0, ((f ? A?.burst_count : A?.count) ?? 0) - T.length),
-        I = (0, a.b3)(t);
+        N = (0, a.b3)(t);
     if (1 === T.length)
         if (!(x > 0)) return c.intl.formatToPlainString(E.reactionTooltip1, {
             a: T[0],
-            emojiName: I
+            emojiName: N
         });
         else if (null != n) return c.intl.format(E.reactionTooltip1NInteractive, {
         a: T[0],
         n: x,
-        emojiName: I,
+        emojiName: N,
         onClick: n
     });
     else return c.intl.formatToPlainString(E.reactionTooltip1N, {
         a: T[0],
         n: x,
-        emojiName: I
+        emojiName: N
     });
     if (2 === T.length)
         if (!(x > 0)) return c.intl.formatToPlainString(E.reactionTooltip2, {
             a: T[0],
             b: T[1],
-            emojiName: I
+            emojiName: N
         });
         else if (null != n) return c.intl.format(E.reactionTooltip2NInteractive, {
         a: T[0],
         b: T[1],
         n: x,
-        emojiName: I,
+        emojiName: N,
         onClick: n
     });
     else return c.intl.formatToPlainString(E.reactionTooltip2N, {
         a: T[0],
         b: T[1],
         n: x,
-        emojiName: I
+        emojiName: N
     });
     return 3 !== T.length ? null != n ? c.intl.format(E.reactionTooltipNInteractive, {
         n: x,
-        emojiName: I,
+        emojiName: N,
         onClick: n
     }) : c.intl.formatToPlainString(E.reactionTooltipN, {
         n: x,
-        emojiName: I
+        emojiName: N
     }) : x > 0 ? null != n ? c.intl.format(E.reactionTooltip3NInteractive, {
         a: T[0],
         b: T[1],
         c: T[2],
         n: x,
-        emojiName: I,
+        emojiName: N,
         onClick: n
     }) : c.intl.formatToPlainString(E.reactionTooltip3N, {
         a: T[0],
         b: T[1],
         c: T[2],
         n: x,
-        emojiName: I
+        emojiName: N
     }) : c.intl.formatToPlainString(E.reactionTooltip3, {
         a: T[0],
         b: T[1],
         c: T[2],
-        emojiName: I
+        emojiName: N
     })
 }

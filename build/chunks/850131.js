@@ -14,9 +14,9 @@ var i = n(627968),
     m = n(763754),
     _ = n(447215),
     A = n(888675),
-    E = n(533567),
-    h = n(306417),
-    f = n(412136),
+    f = n(533567),
+    E = n(306417),
+    h = n(412136),
     g = n(985018),
     p = n(782635);
 
@@ -84,7 +84,7 @@ function I(e) {
                         className: p.Dq,
                         scaleFontToUserSetting: !0,
                         children: r
-                    }), (0, i.jsx)(h.Vx, {
+                    }), (0, i.jsx)(E.Vx, {
                         size: 16,
                         className: p.To,
                         isVictor: !0,
@@ -166,7 +166,7 @@ function N(e) {
         channel: n,
         compact: a,
         disableInteraction: r = !1
-    } = e, o = t.embeds[0], u = l.useMemo(() => (0, E.A)(o), [o]), h = (0, s.EJ)(u?.questionText ?? "", f.TU), x = (0, m.Ay)(t), C = (0, _.P)({
+    } = e, o = t.embeds[0], u = l.useMemo(() => (0, f.A)(o), [o]), E = (0, s.EJ)(u?.questionText ?? "", h.TU), x = (0, m.Ay)(t), C = (0, _.P)({
         user: t.author,
         channelId: n.id,
         guildId: n.guild_id,
@@ -189,7 +189,7 @@ function N(e) {
             children: g.intl.format(g.t.VJcK41, {
                 username: x.nick,
                 usernameHook: C(x),
-                title: h,
+                title: E,
                 titleOnClick: N
             })
         }), (0, i.jsx)(T, {

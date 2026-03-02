@@ -43,7 +43,7 @@ function g(t) {
     }, {
         analyticsLocations: k
     } = (0, i.Ay)(e);
-    return (0, l.g)({
+    return (0, l.g1)({
         location: "PremiumGuildCapUpsell"
     }) ? (0, a.jsx)(c.F, {
         title: C.intl.string(C.t["CoNXB+"]),

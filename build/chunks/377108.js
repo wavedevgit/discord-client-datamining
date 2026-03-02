@@ -54,7 +54,7 @@ function k(e) {
                 return c === f.NJ.DARK ? F.A : J.A
         }
     }(e, d) : function(e, c) {
-        if ((0, n.g)({
+        if ((0, n.g1)({
                 location: "getAnimatedImageUrl"
             })) switch (e) {
             case b.e.ANIMATED_AVATAR_MODAL_UPSELL:

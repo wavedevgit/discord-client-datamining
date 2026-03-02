@@ -24,10 +24,10 @@ let A = l.memo(function(e) {
         color: T,
         count: E,
         emojiSize: x
-    } = e, I = (0, a.bG)([d.A], () => d.A.getEffectForEmojiId(t, i, A)), N = l.useMemo(() => (0, m.eT)(A, T, t, {
-        key: I,
+    } = e, N = (0, a.bG)([d.A], () => d.A.getEffectForEmojiId(t, i, A)), I = l.useMemo(() => (0, m.eT)(A, T, t, {
+        key: N,
         messageId: i
-    }), [T, I, A, t, i]), [v, j] = l.useState(!1), R = (0, a.bG)([r.A], () => r.A.useReducedMotion), C = u.Sf.useSetting(), S = l.useCallback(() => {
+    }), [T, N, A, t, i]), [v, j] = l.useState(!1), R = (0, a.bG)([r.A], () => r.A.useReducedMotion), C = u.Sf.useSetting(), S = l.useCallback(() => {
         s.h.dispatch({
             type: "BURST_REACTION_EFFECT_CLEAR",
             channelId: t,
@@ -52,9 +52,9 @@ let A = l.memo(function(e) {
         return () => {
             clearInterval(n)
         }
-    }, [C, t, E, A, A.name, v, i, R]), null == I) ? null : (0, n.jsx)(h.A, {
+    }, [C, t, E, A, A.name, v, i, R]), null == N) ? null : (0, n.jsx)(h.A, {
         className: (f ? g : p).effect,
-        effect: N,
+        effect: I,
         onComplete: S,
         emojiSize: x
     })

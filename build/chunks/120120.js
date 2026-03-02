@@ -1,6 +1,6 @@
 /** chunk id: 120120, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => E
 });
 var i = n(627968);
 n(64700);
@@ -16,7 +16,7 @@ var l = n(417597),
     _ = n(985018),
     A = n(221110);
 
-function E(e) {
+function f(e) {
     let {
         guildId: t,
         user: n,
@@ -53,7 +53,7 @@ function E(e) {
     })
 }
 
-function h(e) {
+function E(e) {
     let {
         channel: t,
         message: l,
@@ -77,7 +77,7 @@ function h(e) {
             timestamp: l.timestamp,
             compact: a,
             children: A
-        }), (0, i.jsx)(E, {
+        }), (0, i.jsx)(f, {
             username: r.nick,
             guildId: t.guild_id,
             user: l.author

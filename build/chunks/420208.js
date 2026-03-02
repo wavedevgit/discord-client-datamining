@@ -14,10 +14,10 @@ var i = n(843472),
     m = n(690521),
     _ = n(661191),
     A = n(652215),
-    E = n(307731),
-    h = n(381941);
+    f = n(307731),
+    E = n(381941);
 
-function f(e) {
+function h(e) {
     let t = d.A.getGuild(e);
     return null != t && (t.nsfwLevel === A.ftr.DEFAULT || t.nsfwLevel === A.ftr.SAFE)
 }
@@ -27,7 +27,7 @@ async function g(e, t) {
     let A = u.default.getCurrentUser();
     if (null == A) return;
     await (0, s.YB)();
-    let g = Array.from(o.A.getAllGuildStickers().values()).flat().filter(e => f(e.guild_id) && (0, r.G7)(e, A, t)).sort((e, t) => -_.default.compare(e.id, t.id));
+    let g = Array.from(o.A.getAllGuildStickers().values()).flat().filter(e => h(e.guild_id) && (0, r.G7)(e, A, t)).sort((e, t) => -_.default.compare(e.id, t.id));
     if (g.length > 5) {
         let n = [g[Math.floor(Math.pow(Math.random(), 2) * g.length)].id];
         i.A.sendStickers(t.id, n, "", {
@@ -36,20 +36,20 @@ async function g(e, t) {
                 channel_id: t.id,
                 message_id: e
             },
-            location: h.Hx.CHANNEL_PROMPT
+            location: E.Hx.CHANNEL_PROMPT
         });
         return
     }
-    let p = d.A.getGuildIds().filter(f).map(e => l.Ay.getUsableGuildEmoji(e)).flat().filter(e => null == m.Ay.getEmojiUnavailableReason({
+    let p = d.A.getGuildIds().filter(h).map(e => l.Ay.getUsableGuildEmoji(e)).flat().filter(e => null == m.Ay.getEmojiUnavailableReason({
         emoji: e,
         channel: t,
         guildId: n,
-        intention: E.b_.CHAT
+        intention: f.b_.CHAT
     })).sort((e, t) => -_.default.compare(e.id, t.id));
     if (p.length > 10) {
         let n = p[Math.floor(Math.pow(Math.random(), 2) * p.length)];
         i.A.sendMessage(t.id, a.Ay.parse(t, (0, m.N)(n)), !1, {
-            location: h.Hx.CHANNEL_PROMPT,
+            location: E.Hx.CHANNEL_PROMPT,
             messageReference: {
                 guild_id: t.getGuildId() ?? void 0,
                 channel_id: t.id,
@@ -66,6 +66,6 @@ async function g(e, t) {
             channel_id: t.id,
             message_id: e
         },
-        location: h.Hx.CHANNEL_PROMPT
+        location: E.Hx.CHANNEL_PROMPT
     })
 }

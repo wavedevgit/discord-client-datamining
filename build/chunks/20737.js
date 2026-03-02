@@ -46,10 +46,8 @@ let w = l.memo(function(e) {
         canOnlyUseTextCommands: F
     } = e, H = (0, _.Us)(), B = l.useRef(null), V = l.useRef(null), K = (0, r.bG)([b.A], () => b.A.getActivities()), W = (0, A.Et)(), z = (0, r.bG)([m.A], () => m.A.getLastClipsSession()), Y = (0, r.yK)([m.A], () => m.A.getNewClipIds()), q = (0, r.bG)([I.Ay], () => null == I.Ay.getCurrentSidebarChannelId(s.id)), {
         showClipsHeaderEntrypoint: J
-    } = h.L_.useExperiment({
+    } = h.L_.useConfig({
         location: "ChannelAttachButton"
-    }, {
-        autoTrackExposure: !1
     }), {
         onShareClick: $
     } = (0, p.A)(s.id), Z = (0, r.bG)([f.HP], () => f.HP.hasHotspot(f._2.CLIPS_CHANNEL_ATTACH_REMINDER)), X = (0, o.red)(e => (0, o.fDT)(e, L.nm)), Q = (0, r.bG)([T.A], () => T.A.hasLayers()), ee = (0, r.bG)([m.A], () => m.A.hasClips()), [et, en] = l.useState(null), ei = (0, h.sw)() && (W || ee), el = s.isPrivate(), es = (0, r.bG)([N.A], () => el || N.A.can(O.xBc.ATTACH_FILES, s) && N.A.can(O.xBc.SEND_MESSAGES, s)), ea = (0, d.A)(z);

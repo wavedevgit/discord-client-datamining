@@ -1,5 +1,5 @@
-/** chunk id: 210402, original params: e,t,n (module,exports,require) **/
-n.d(t, {
+/** chunk id: 210402, original params: t,e,n (module,exports,require) **/
+n.d(e, {
     default: () => u
 });
 var a = n(627968);
@@ -13,46 +13,46 @@ var i = n(87719),
     d = n(451067),
     p = n(196436);
 
-function u(e) {
+function u(t) {
     let {
-        onClose: t,
+        onClose: e,
         analyticsSource: n,
         onLearnMore: u,
-        ...b
-    } = e, g = o.pe.TIER_2, f = l.intl.format(l.t.hDMlqD, {
+        ...C
+    } = t, _ = o.pe.TIER_2, A = l.intl.format(l.t.hDMlqD, {
         onLearnMore: function() {
-            u?.(), t(), (0, i.e)()
+            u?.(), e(), (0, i.e)()
         }
     });
-    return (0, r.g)({
+    return (0, r.g1)({
         location: "PremiumVideoBackgroundsUpsell"
     }) ? (0, a.jsx)(s.F, {
         title: l.intl.string(l.t.fHqiDW),
-        subtitle: f,
+        subtitle: A,
         graphic: {
             src: p.A,
             type: "image"
         },
-        onSecondaryClick: t,
+        onSecondaryClick: e,
         secondaryCTA: l.intl.string(l.t["13/7kX"]),
-        onClose: t,
+        onClose: e,
         showEnhancedUpsell: !0,
-        subscriptionTier: g,
-        ...b
+        subscriptionTier: _,
+        ...C
     }) : (0, a.jsx)(s.A, {
         artURL: p.A,
         artContainerClassName: d.z,
         type: o.e.VIDEO_BACKGROUNDS_MODAL,
         title: l.intl.string(l.t.fHqiDW),
-        body: f,
-        glowUp: f,
+        body: A,
+        glowUp: A,
         analyticsSource: n,
         analyticsLocation: {
             page: c.liQ.PREMIUM_UPSELL_MODAL_VIDEO_BACKGROUNDS,
             object: c.ZSU.BUTTON_CTA
         },
-        onClose: t,
-        subscriptionTier: g,
-        ...b
+        onClose: e,
+        subscriptionTier: _,
+        ...C
     })
 }

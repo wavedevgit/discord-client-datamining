@@ -2,33 +2,33 @@
 a.d(t, {
     A: () => d
 });
-var s = a(627968);
+var r = a(627968);
 a(64700);
-var r = a(503698),
-    n = a.n(r),
-    o = a(158954),
-    c = a(309326),
-    i = a(337322),
-    l = a(260905);
+var n = a(503698),
+    s = a.n(n),
+    i = a(158954),
+    l = a(309326),
+    o = a(337322),
+    c = a(260905);
 
 function d(e) {
     let {
         powerup: t
-    } = e, a = (0, i.A)(t);
-    return (0, s.jsx)("div", {
-        className: l.I1,
+    } = e, a = (0, o.A)(t);
+    return (0, r.jsx)("div", {
+        className: c.I1,
         children: a.map(e => {
             let {
                 Icon: t,
                 className: a
-            } = (0, c.a)(e.perkIcon, !1);
-            return (0, s.jsxs)("div", {
-                className: l.Ab,
-                children: [(0, s.jsx)(t, {
+            } = (0, l.a)(e.perkIcon, !1);
+            return (0, r.jsxs)("div", {
+                className: c.Ab,
+                children: [(0, r.jsx)(t, {
                     color: "currentColor",
-                    className: n()(l.kf, a)
-                }), (0, s.jsx)(o.EYj, {
-                    className: l.uL,
+                    className: s()(c.kf, a)
+                }), (0, r.jsx)(i.EYj, {
+                    className: c.uL,
                     color: "text-default",
                     variant: "text-sm/medium",
                     children: e.description

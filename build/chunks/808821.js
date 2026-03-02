@@ -14,9 +14,9 @@ var i = n(627968),
     m = n(320501),
     _ = n(998218),
     A = n(888675),
-    E = n(652215),
-    h = n(985018),
-    f = n(633232);
+    f = n(652215),
+    E = n(985018),
+    h = n(633232);
 
 function g(e) {
     let {
@@ -52,7 +52,7 @@ function g(e) {
         })
     }, [I, g, t.messageReference, N]);
     if (null == p || null == x && null == C || null == I || T) return null;
-    let R = p.attachments.find(e => (0, a.Lt)(e.flags ?? 0, E.sbO.IS_CLIP)),
+    let R = p.attachments.find(e => (0, a.Lt)(e.flags ?? 0, f.sbO.IS_CLIP)),
         v = null;
     if (R?.proxy_url != null) {
         let e = _.A.toURLSafe(R.proxy_url);
@@ -67,17 +67,17 @@ function g(e) {
         timestamp: t.timestamp,
         compact: n,
         additionalContent: (0, i.jsxs)("div", {
-            className: f.i,
+            className: h.i,
             children: [(0, i.jsx)(d.A, {
                 thumbnails: M,
                 variant: "stacked"
             }), (0, i.jsx)(s.$nd, {
                 size: "sm",
                 onClick: S,
-                text: h.intl.string(h.t["5qb8EX"]),
+                text: E.intl.string(E.t["5qb8EX"]),
                 icon: o.W4J
             })]
         }),
-        children: h.intl.string(h.t.ThhsNG)
+        children: E.intl.string(E.t.ThhsNG)
     })
 }

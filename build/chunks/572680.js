@@ -24,7 +24,7 @@ function T(e) {
         emoji: i,
         startPosition: T,
         targetPosition: E
-    } = e, [x, I] = l.useState(0), [N, v] = l.useState(0), [j, R] = l.useState(null), {
+    } = e, [x, N] = l.useState(0), [I, v] = l.useState(0), [j, R] = l.useState(null), {
         confettiCanvas: C
     } = l.useContext(d.x), S = (0, a.f9)(C, j), b = l.useMemo(() => [{
         src: null == i.id ? p.Ay.getURL(i.name) : m.Ay.getEmojiURL({
@@ -50,7 +50,7 @@ function T(e) {
             } = e;
             v(t)
         }
-    }), M = (0, o.zhh)({
+    }), L = (0, o.zhh)({
         from: {
             x: T.x,
             scale: 1,
@@ -72,21 +72,21 @@ function T(e) {
             let {
                 x: t
             } = e;
-            I(t)
+            N(t)
         }
     });
     return l.useEffect(() => {
-        x > 0 && N > 0 && S.createConfetti({
+        x > 0 && I > 0 && S.createConfetti({
             ...g.Mw,
             position: {
                 type: "static",
                 value: {
                     x: x,
-                    y: N
+                    y: I
                 }
             }
         })
-    }, [S, x, N]), (0, n.jsxs)(n.Fragment, {
+    }, [S, x, I]), (0, n.jsxs)(n.Fragment, {
         children: [(0, n.jsx)(a.K_, {
             ref: R,
             sprites: b,
@@ -101,8 +101,8 @@ function T(e) {
                 className: A.qq,
                 children: (0, n.jsx)(s.animated.div, {
                     style: {
-                        ...M,
-                        opacity: M.opacity
+                        ...L,
+                        opacity: L.opacity
                     },
                     children: (0, n.jsx)(u.A, {
                         className: A.Zg,

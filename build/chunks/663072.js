@@ -31,7 +31,7 @@ function h(t) {
             location_object: d.ZSU.NAVIGATION_LINK
         }), (0, l.pX)(d.BVt.APPLICATION_STORE)
     }
-    return (0, i.g)({
+    return (0, i.g1)({
         location: "VoiceFiltersUpsell"
     }) ? (0, n.jsx)(r.F, {
         title: C.intl.string(C.t.YqknLn),

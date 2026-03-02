@@ -62,7 +62,7 @@ function W(e) {
         discountAmount: o,
         premiumType: c
     } = e;
-    if (!0 === (0, y.g)({
+    if (!0 === (0, y.g1)({
             location: "PremiumBanner"
         })) {
         let e;
@@ -151,7 +151,7 @@ function K(e) {
         discountAmount: o,
         premiumType: c
     } = e;
-    if (!0 === (0, y.g)({
+    if (!0 === (0, y.g1)({
             location: "PremiumBanner"
         })) {
         let e;
@@ -439,7 +439,7 @@ let X = function(e) {
             let {
                 status: e
             } = t;
-            if (!0 === (0, y.g)({
+            if (!0 === (0, y.g1)({
                     location: "renderButtons"
                 })) {
                 if (t.isPurchasedExternally) {
@@ -544,7 +544,7 @@ let X = function(e) {
             function n() {
                 let e = f.Ay.isSwitchingPlansDisabled(t),
                     n = f.Ay.getSwitchingPlansDisabledMessage(t);
-                if (!0 === (0, y.g)({
+                if (!0 === (0, y.g1)({
                         location: "renderButtons"
                     })) {
                     if ($) return (0, i.jsx)("div", {

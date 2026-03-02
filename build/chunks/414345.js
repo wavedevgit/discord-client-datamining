@@ -1,28 +1,32 @@
-/** chunk id: 414345, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    g: () => i
+/** chunk id: 414345, original params: t,e,n (module,exports,require) **/
+n.d(e, {
+    g1: () => i
 });
 let a = (0, n(250105).Ay)({
     kind: "user",
     name: "2026-02-premium-brand-refresh-2026",
     defaultConfig: {
-        enabled: !1
+        treatment: "CONTROL"
     },
     variations: {
         0: {
-            enabled: !1
+            treatment: "CONTROL"
         },
         1: {
-            enabled: !0
+            treatment: "UPDATE_ALL"
+        },
+        2: {
+            treatment: "EXCLUDE_TRY_IT_OUT"
         }
     }
 });
 
-function i(e) {
+function i(t) {
     let {
-        location: t
-    } = e;
-    return a.getConfig({
-        location: t
-    }).enabled
+        location: e,
+        onPremiumTryItOutProfile: n = !1
+    } = t, i = a.getConfig({
+        location: e
+    }).treatment;
+    return !0 === n ? "UPDATE_ALL" === i : "CONTROL" !== i
 }

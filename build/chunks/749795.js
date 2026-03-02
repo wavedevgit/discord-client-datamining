@@ -1,6 +1,6 @@
 /** chunk id: 749795, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => E
+    A: () => f
 });
 var i = n(627968);
 n(64700);
@@ -16,13 +16,13 @@ var l = n(503698),
     _ = n(985018),
     A = n(234054);
 
-function E(e) {
+function f(e) {
     let {
         message: t,
         compact: n,
         usernameHook: l
-    } = e, E = (0, o.Ay)(t), h = l(E), {
-        avatarSrc: f,
+    } = e, f = (0, o.Ay)(t), E = l(f), {
+        avatarSrc: h,
         eventHandlers: {
             onMouseEnter: g,
             onMouseLeave: p
@@ -36,7 +36,7 @@ function E(e) {
                 [A.oE]: n
             }),
             iconNode: n ? null : (0, i.jsx)(d.l, {
-                src: f
+                src: h
             }),
             iconContainerClassName: A.zc,
             compact: n,
@@ -70,8 +70,8 @@ function E(e) {
                         [A.oE]: n
                     }),
                     children: _.intl.format(_.t.qntXNQ, {
-                        username: E.nick,
-                        usernameHook: h
+                        username: f.nick,
+                        usernameHook: E
                     })
                 })]
             })

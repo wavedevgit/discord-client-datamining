@@ -14,18 +14,18 @@ let d = e => {
         searchQuery: t,
         selectedUsers: n,
         limit: l
-    } = e, d = (0, r.bG)([c.A], () => c.A.getRecipientStatus()), u = (0, r.bG)([c.A], () => c.A.getReferralsRemaining()), [m, _] = i.useState(0), [A, E] = i.useState([]), [h, f] = i.useState(!1), [g, p] = i.useState(!1), [x, C] = i.useState(new Map);
+    } = e, d = (0, r.bG)([c.A], () => c.A.getRecipientStatus()), u = (0, r.bG)([c.A], () => c.A.getReferralsRemaining()), [m, _] = i.useState(0), [A, f] = i.useState([]), [E, h] = i.useState(!1), [g, p] = i.useState(!1), [x, C] = i.useState(new Map);
     a()(null != u, "Referrals remaining should not be null");
     let I = async (e, i) => {
-        if (!h && !g && null != e && 0 !== u) try {
-            f(!0);
+        if (!E && !g && null != e && 0 !== u) try {
+            h(!0);
             let l = [...x.values()];
             for (let [e, t] of d)
                 if (t === o.aK.PENDING && !x.has(e)) {
                     let t = await (0, s.wz)(e);
                     l.push(t)
                 } let a = await (0, o.P7)(e, t, i);
-            E(t => {
+            f(t => {
                 let i = a.users.filter(e => !n.has(e.id));
                 return (l = l.filter(e => !n.has(e.id)), 0 === e) ? [...n.values(), ...l.values(), ...i] : [...t, ...i]
             }), C(e => {
@@ -36,7 +36,7 @@ let d = e => {
         } catch (e) {
             p(!0)
         } finally {
-            f(!1)
+            h(!1)
         }
     }, T = {
         limit: l,
@@ -47,7 +47,7 @@ let d = e => {
                 if (n === o.aK.PENDING && !x.has(t)) {
                     let n = await (0, s.wz)(t);
                     e.set(n.id, n)
-                } C(e), E(Array.from(e.values()))
+                } C(e), f(Array.from(e.values()))
         }
     }, N = i.useRef(T);
     return i.useEffect(() => {
@@ -63,7 +63,7 @@ let d = e => {
         eligibleUsers: A,
         fetchUsers: () => I(m, l),
         hasError: g,
-        isFetching: h,
+        isFetching: E,
         resendUsers: x
     }
 }

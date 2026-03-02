@@ -22,23 +22,23 @@ let f = e => {
         guild: n,
         closePopout: A,
         ctaRef: f
-    } = e, T = (0, d.GV)(), [E, x] = a.useState(!1), I = (0, s.bG)([h.A], () => h.A.isLurking(n.id), [n.id]);
+    } = e, T = (0, d.GV)(), [E, x] = a.useState(!1), N = (0, s.bG)([h.A], () => h.A.isLurking(n.id), [n.id]);
     a.useEffect(() => {
-        E && !I && A()
-    }, [E, I, A]);
-    let N = null,
+        E && !N && A()
+    }, [E, N, A]);
+    let I = null,
         v = p.intl.string(p.t.d7b1p6);
     switch (t) {
         case 0:
-            N = p.intl.string(p.t.Xiwf1Q);
+            I = p.intl.string(p.t.Xiwf1Q);
             break;
         case 1:
-            N = p.intl.string(p.t.GXvlU9);
+            I = p.intl.string(p.t.GXvlU9);
             break;
         default:
             return (0, c.xb)(t)
     }
-    if (null == N) return null;
+    if (null == I) return null;
     let j = async () => {
         x(!0);
         try {
@@ -61,7 +61,7 @@ let f = e => {
             children: [(0, l.jsx)(o.Heading, {
                 variant: "heading-md/semibold",
                 id: T,
-                children: N
+                children: I
             }), (0, l.jsx)(o.Text, {
                 color: "text-default",
                 variant: "text-sm/normal",

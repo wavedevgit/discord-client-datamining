@@ -14,9 +14,9 @@ var i = n(627968),
     m = n(21119),
     _ = n(287809),
     A = n(954571),
-    E = n(242874),
-    h = n(275759),
-    f = n(979474),
+    f = n(242874),
+    E = n(275759),
+    h = n(979474),
     g = n(51501),
     p = n(788868),
     x = n(652215),
@@ -77,9 +77,9 @@ function v(e) {
         innerRef: M
     } = e, j = (0, r.bG)([_.default], () => _.default.getCurrentUser()), {
         analyticsLocations: O
-    } = (0, d.Ay)(c.A.PREMIUM_GIFT_INTENT_CARD), b = (0, r.bG)([h.Ay], () => h.Ay.getFriendAnniversaryYears(N.id)), y = (0, g.$)(t), {
+    } = (0, d.Ay)(c.A.PREMIUM_GIFT_INTENT_CARD), b = (0, r.bG)([E.Ay], () => E.Ay.getFriendAnniversaryYears(N.id)), y = (0, g.$)(t), {
         openGiftModal: L
-    } = (0, f.$)({
+    } = (0, h.$)({
         giftRecipient: N,
         analyticsLocations: O,
         analyticsLocation: y.chat,
@@ -97,11 +97,11 @@ function v(e) {
             type: a.ImpressionTypes.VIEW,
             properties: {
                 gift_intent_type: t,
-                num_friend_anniversaries: h.Ay.getFriendAnniversaries().length
+                num_friend_anniversaries: E.Ay.getFriendAnniversaries().length
             }
         })
     }, [t]);
-    let D = () => t === p.np.FRIEND_ANNIVERSARY ? I.intl.string(I.t.ilhtIa) : (0, E.yE)(t);
+    let D = () => t === p.np.FRIEND_ANNIVERSARY ? I.intl.string(I.t.ilhtIa) : (0, f.yE)(t);
     return (0, i.jsx)("div", {
         ref: M,
         className: T.Qs,
@@ -127,7 +127,7 @@ function v(e) {
                         variant: "text-md/medium",
                         color: "text-strong",
                         lineClamp: 3,
-                        children: t === p.np.FRIEND_ANNIVERSARY ? I.intl.string(I.t.CeQIwZ) : (0, E.yE)(t)
+                        children: t === p.np.FRIEND_ANNIVERSARY ? I.intl.string(I.t.CeQIwZ) : (0, f.yE)(t)
                     }), (0, i.jsxs)("div", {
                         className: T.jA,
                         children: [(0, i.jsx)(s.$yI, {
@@ -139,7 +139,7 @@ function v(e) {
                             lineClamp: 1,
                             children: t === p.np.FRIEND_ANNIVERSARY ? I.intl.formatToPlainString(I.t.PpG27s, {
                                 numberOfYears: b
-                            }) : (0, E.yE)(t)
+                            }) : (0, f.yE)(t)
                         })]
                     })]
                 })]

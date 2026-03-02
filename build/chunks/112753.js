@@ -20,8 +20,8 @@ var n = i(627968),
     T = i(775602),
     E = i(793574),
     x = i(688810),
-    I = i(235986),
-    N = i(7584),
+    N = i(235986),
+    I = i(7584),
     v = i(478840),
     j = i(969043),
     R = i(386467),
@@ -31,8 +31,8 @@ var n = i(627968),
     y = i(406704),
     _ = i(454719),
     O = i(657331),
-    M = i(544028),
-    L = i(961350),
+    L = i(544028),
+    M = i(961350),
     P = i(734057),
     U = i(696451),
     w = i(956703),
@@ -45,8 +45,8 @@ var n = i(627968),
     z = i(562153),
     $ = i(661191),
     W = i(841549),
-    F = i(649963),
-    X = i(815807),
+    X = i(649963),
+    F = i(815807),
     J = i(926588),
     K = i(652215),
     Z = i(985018),
@@ -54,7 +54,7 @@ var n = i(627968),
     q = i(473169);
 
 function Y(e) {
-    return null == e.id ? N.Ay.convertSurrogateToName(e.name) : `:${e.name}:`
+    return null == e.id ? I.Ay.convertSurrogateToName(e.name) : `:${e.name}:`
 }
 let ee = e => {
         let {
@@ -183,7 +183,7 @@ function ei(e) {
         clickToProfileEnabled: c
     } = e, {
         analyticsLocations: m
-    } = (0, x.Ay)(E.A.MESSAGE_REACTIONS), g = (0, d.bG)([L.default], () => L.default.getId()), T = (0, d.bG)([V.default], () => V.default.getUser(i.id), [i]), N = (0, y.Id)(a), v = (0, d.bG)([G.A], () => G.A.can(K.xBc.MANAGE_MESSAGES, a) && N) || g === i.id, j = (0, d.bG)([U.Ay, P.A, D.A], () => z.Ay.getName(r, a.id, i));
+    } = (0, x.Ay)(E.A.MESSAGE_REACTIONS), g = (0, d.bG)([M.default], () => M.default.getId()), T = (0, d.bG)([V.default], () => V.default.getUser(i.id), [i]), I = (0, y.Id)(a), v = (0, d.bG)([G.A], () => G.A.can(K.xBc.MANAGE_MESSAGES, a) && I) || g === i.id, j = (0, d.bG)([U.Ay, P.A, D.A], () => z.Ay.getName(r, a.id, i));
     async function R() {
         await (0, _.A)(i.id, i.getAvatarURL(r ?? void 0, 80), {
             guildId: r ?? void 0,
@@ -198,27 +198,27 @@ function ei(e) {
     }
 
     function S() {
-        F.et({
+        X.et({
             channelId: a.id,
             messageId: l.id,
             emoji: t,
-            location: F.qN.MESSAGE,
+            location: X.qN.MESSAGE,
             userId: i.id,
             options: {
                 burst: o === C.v.BURST
             }
         }), u?.()
     }
-    return c ? (0, n.jsxs)(I.A, {
+    return c ? (0, n.jsxs)(N.A, {
         className: Q.Px,
-        align: I.A.Align.CENTER,
+        align: N.A.Align.CENTER,
         children: [(0, n.jsx)(p.DUT, {
             className: Q.Z7,
             onClick: R,
             onContextMenu: e => (0, W.wQ)(e, i, a),
-            children: (0, n.jsxs)(I.A, {
-                align: I.A.Align.CENTER,
-                children: [(0, n.jsx)(I.A.Child, {
+            children: (0, n.jsxs)(N.A, {
+                align: N.A.Align.CENTER,
+                children: [(0, n.jsx)(N.A.Child, {
                     wrap: !0,
                     grow: 0,
                     shrink: 0,
@@ -228,7 +228,7 @@ function ei(e) {
                         user: T ?? i,
                         size: p._3J.SIZE_32
                     })
-                }), (0, n.jsxs)(I.A.Child, {
+                }), (0, n.jsxs)(N.A.Child, {
                     className: Q.Bi,
                     children: [(0, n.jsx)(p.Text, {
                         tag: "strong",
@@ -257,13 +257,13 @@ function ei(e) {
                 variant: "icon-only"
             })
         })]
-    }) : (0, n.jsxs)(I.A, {
+    }) : (0, n.jsxs)(N.A, {
         className: Q.Px,
         onContextMenu: e => (0, W.wQ)(e, i, a),
-        align: I.A.Align.CENTER,
+        align: N.A.Align.CENTER,
         tabIndex: 0,
         "aria-label": i.username,
-        children: [(0, n.jsx)(I.A.Child, {
+        children: [(0, n.jsx)(N.A.Child, {
             wrap: !0,
             grow: 0,
             shrink: 0,
@@ -272,7 +272,7 @@ function ei(e) {
                 user: T ?? i,
                 size: p._3J.SIZE_32
             })
-        }), (0, n.jsxs)(I.A.Child, {
+        }), (0, n.jsxs)(N.A.Child, {
             className: Q.Bi,
             children: [(0, n.jsx)(p.Text, {
                 tag: "strong",
@@ -334,7 +334,7 @@ class en extends l.PureComponent {
         } = this.state;
         this.setState({
             loadingMore: !0
-        }), F.ao({
+        }), X.ao({
             channelId: e.getChannelId(),
             messageId: e.id,
             emoji: t.emoji,
@@ -462,7 +462,7 @@ function ea(e) {
         return l.useEffect(() => {
             null != n && null == i.find(e => {
                 let t = null != e.me_vote ? C.v.VOTE : e.burst_count > 0 ? C.v.BURST : C.v.NORMAL,
-                    i = (0, X.i6)(e.emoji, n.emoji),
+                    i = (0, F.i6)(e.emoji, n.emoji),
                     l = t === n.reactionType;
                 return i && l
             }) && a(t)
@@ -470,10 +470,10 @@ function ea(e) {
     }(i, null != f ? {
         emoji: f.emoji,
         reactionType: f.burst_count > 0 ? C.v.BURST : C.v.NORMAL
-    } : null, A), I = l.useMemo(() => null == E ? null : g.find(e => (0, X.i6)(e.emoji, E.emoji)) ?? null, [g, E]), N = (0, d.bG)([T.A], () => T.A.saturation), S = (0, d.bG)([M.A], () => (0, m.Mw)(M.A.theme));
+    } : null, A), N = l.useMemo(() => null == E ? null : g.find(e => (0, F.i6)(e.emoji, E.emoji)) ?? null, [g, E]), I = (0, d.bG)([T.A], () => T.A.saturation), S = (0, d.bG)([L.A], () => (0, m.Mw)(L.A.theme));
     if (l.useEffect(() => {
-            (0 === g.length || null == E && null == I) && setImmediate(a)
-        }, [a, g.length, I, E]), null == E || null == I) return (0, n.jsx)(p.y$y, {});
+            (0 === g.length || null == E && null == N) && setImmediate(a)
+        }, [a, g.length, N, E]), null == E || null == N) return (0, n.jsx)(p.y$y, {});
     if (null == o) throw Error("MessageReactions.render: Message does not have a channelId");
     return (0, n.jsx)(R.A.Provider, {
         value: u ?? void 0,
@@ -499,12 +499,12 @@ function ea(e) {
                             reactionType: t ? C.v.BURST : C.v.NORMAL,
                             emoji: e.emoji,
                             count: t ? e.burst_count : e.count,
-                            colors: null != e.burst_colors ? (0, v.V)(e.burst_colors, N, S) : void 0
+                            colors: null != e.burst_colors ? (0, v.V)(e.burst_colors, I, S) : void 0
                         }, `${t?"burst-":"normal-"}${e.emoji.id??""}:${e.emoji.name}`)
                     })
                 }), (0, n.jsx)(el, {
                     message: t,
-                    reaction: I,
+                    reaction: N,
                     guildId: u,
                     channel: o,
                     reactionType: E.reactionType,

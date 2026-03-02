@@ -1,7 +1,7 @@
 /** chunk id: 302291, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     R: () => A,
-    d: () => E
+    d: () => f
 });
 var i = n(627968),
     l = n(64700),
@@ -53,7 +53,7 @@ function A(e) {
         channelId: l.id,
         guildId: l.guild_id,
         messageId: t.id
-    }), E = _(l, t);
+    }), f = _(l, t);
     return (0, i.jsx)(o.A, {
         icon: n(394803),
         timestamp: t.timestamp,
@@ -62,12 +62,12 @@ function A(e) {
             application: d,
             username: c.nick,
             usernameHook: A(c),
-            applicationNameHook: null != d ? E(d) : m.tEg
+            applicationNameHook: null != d ? f(d) : m.tEg
         })
     })
 }
 
-function E(e) {
+function f(e) {
     let {
         message: t,
         channel: l,
@@ -77,7 +77,7 @@ function E(e) {
         channelId: l.id,
         guildId: l.guild_id,
         messageId: t.id
-    }), E = _(l, t);
+    }), f = _(l, t);
     return (0, i.jsx)(o.A, {
         icon: n(884797),
         timestamp: t.timestamp,
@@ -86,7 +86,7 @@ function E(e) {
             application: d,
             username: c.nick,
             usernameHook: A(c),
-            applicationNameHook: null != d ? E(d) : m.tEg
+            applicationNameHook: null != d ? f(d) : m.tEg
         })
     })
 }

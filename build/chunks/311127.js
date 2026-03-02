@@ -14,9 +14,9 @@ var i = n(627968),
     m = n(317525),
     _ = n(71393),
     A = n(287809),
-    E = n(488926),
-    h = n(661191),
-    f = n(529942),
+    f = n(488926),
+    E = n(661191),
+    h = n(529942),
     g = n(164956),
     p = n(209700),
     x = n(652215),
@@ -33,7 +33,7 @@ function T(e) {
         impersonateType: g.A.getImpersonateType(t),
         viewingRoles: g.A.getViewingRoles(t)
     })), j = v === p._.SERVER_SHOP, O = (0, s.bG)([u.Ay], () => null != n ? u.Ay.getTrueMember(t, n.id) : null), b = null != T ? S[(0, c.af)(T)] : null, [y, L] = l.useState(() => {
-        let e = null == M ? [] : h.default.keys(M);
+        let e = null == M ? [] : E.default.keys(M);
         return null != b && e.push(b.id), e
     }), D = l.useRef(T);
     l.useEffect(() => {
@@ -43,14 +43,14 @@ function T(e) {
             for (let t of y) {
                 let n = S[t];
                 null != n && (e[t] = n)
-            }(0, f.IA)(t.id, {
+            }(0, h.IA)(t.id, {
                 type: v,
                 roles: e
             })
         }
     }, [y, v, S]);
     let U = null != T && null != n && null != O ? R.find(e => O.roles.includes(e.id)) : void 0,
-        P = l.useMemo(() => null != T && null != n ? R.filter(e => !(0, d.Oy)(e)).filter(e => !j || e.tags?.subscription_listing_id != null).filter(e => U?.id === e.id || E.wO(T, n.id, U, e)) : [], [T, n, j, U, R]),
+        P = l.useMemo(() => null != T && null != n ? R.filter(e => !(0, d.Oy)(e)).filter(e => !j || e.tags?.subscription_listing_id != null).filter(e => U?.id === e.id || f.wO(T, n.id, U, e)) : [], [T, n, j, U, R]),
         k = l.useMemo(() => {
             let e = Array.from(P).map(e => ({
                 leading: N(e),
@@ -72,7 +72,7 @@ function T(e) {
     return (O.roles.forEach(e => {
         let t = S[e];
         null != t && (G[t.id] = t)
-    }), a.zy(E.aH({
+    }), a.zy(f.aH({
         forceRoles: G,
         context: T
     }), a.kg(x.xBc.MANAGE_GUILD, x.xBc.MANAGE_ROLES)) || (0, c.bM)(T, n)) ? (0, i.jsx)("div", {
