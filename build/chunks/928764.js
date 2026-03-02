@@ -87,7 +87,7 @@ function V(e) {
     } = e, {
         ref: I,
         width: T
-    } = (0, m.Ay)(), [b, U] = l.useState(3), [V, K] = l.useState(!n), [W, z] = (0, A.A)(!1, 2e3), Y = (0, r.bG)([R.A], () => R.A.getChannel(t), [t]), {
+    } = (0, m.Ay)(), [b, U] = l.useState(3), [V, K] = l.useState(!n), [z, W] = (0, A.A)(!1, 2e3), Y = (0, r.bG)([R.A], () => R.A.getChannel(t), [t]), {
         firstMessage: q
     } = (0, L.OA)(Y), J = (0, r.bG)([v.A], () => v.A.hasJoined(t)), {
         disableReactionUpdates: $,
@@ -123,7 +123,7 @@ function V(e) {
                 location: {
                     section: k.JJy.CHANNEL_HEADER
                 }
-            }), (0, D.C)((0, M.af)(Y, et), () => z(!0))
+            }), (0, D.C)((0, M.af)(Y, et), () => W(!0))
         },
         ec = J ? d.A9s : d.XFE;
     return (0, i.jsxs)(i.Fragment, {
@@ -198,7 +198,7 @@ function V(e) {
                     })
                 }), (0, i.jsx)(c.m, {
                     text: w.intl.string(w.t.WqhZss),
-                    children: W ? (0, i.jsx)(d.Button, {
+                    children: z ? (0, i.jsx)(d.Button, {
                         icon: d.A9s,
                         size: "sm",
                         variant: "secondary",

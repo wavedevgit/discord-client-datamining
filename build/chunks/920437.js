@@ -1,6 +1,6 @@
 /** chunk id: 920437, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => W
+    A: () => z
 });
 var i = n(627968),
     l = n(64700),
@@ -301,7 +301,7 @@ class K extends l.PureComponent {
     }
 }
 
-function W(e) {
+function z(e) {
     let {
         channel: t,
         children: n

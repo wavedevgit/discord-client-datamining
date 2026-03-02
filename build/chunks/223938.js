@@ -44,8 +44,8 @@ var i = n(627968),
     B = n(147025),
     V = n(133343),
     K = n(851023),
-    W = n(171593),
-    z = n(652215);
+    z = n(171593),
+    W = n(652215);
 n(827669), n(294920);
 var Y = n(478644),
     q = n(985018),
@@ -187,8 +187,8 @@ let X = l.memo(l.forwardRef(function(e, t) {
         handleSubmit: eV
     } = (0, V.Zx)(eH, v, eT, eb, y.id), {
         autocompleteRef: eK,
-        handleMaybeShowAutocomplete: eW,
-        handleHideAutocomplete: ez
+        handleMaybeShowAutocomplete: ez,
+        handleHideAutocomplete: eW
     } = (0, V.v7)(), eY = l.useCallback(() => eb?.current?.hide(), []), {
         editorHeight: eq,
         handleResize: eJ
@@ -311,7 +311,7 @@ let X = l.memo(l.forwardRef(function(e, t) {
                                         channel: y,
                                         type: F.oU.CREATE_ANNOUNCEMENT_POST,
                                         canPasteFiles: eM,
-                                        uploadPromptCharacterCount: z.CS1,
+                                        uploadPromptCharacterCount: W.CS1,
                                         maxCharacterCount: er ?? eP,
                                         allowNewLines: !0,
                                         "aria-describedby": ec,
@@ -325,8 +325,8 @@ let X = l.memo(l.forwardRef(function(e, t) {
                                         onEnter: eZ,
                                         onMoveSelection: eX,
                                         onSelectionChanged: eF,
-                                        onMaybeShowAutocomplete: eW,
-                                        onHideAutocomplete: ez,
+                                        onMaybeShowAutocomplete: ez,
+                                        onHideAutocomplete: eW,
                                         promptToUpload: el,
                                         fontSize: ek,
                                         spellcheckEnabled: ew,
@@ -339,7 +339,7 @@ let X = l.memo(l.forwardRef(function(e, t) {
                             })]
                         }), (0, i.jsx)("div", {
                             className: J.KK,
-                            children: (0, i.jsx)(W.A, {
+                            children: (0, i.jsx)(z.A, {
                                 channelId: y.id,
                                 type: v,
                                 canAttachFiles: eM,
@@ -462,8 +462,8 @@ function Q(e) {
         "data-menu-migrated": !0,
         "aria-label": q.intl.string(q.t["9WnJyo"]),
         navId: "send-announcement-options",
-        onClose: z.tEg,
-        onSelect: z.tEg,
+        onClose: W.tEg,
+        onSelect: W.tEg,
         children: [(0, i.jsx)(A.sLh, {
             id: "create-thread",
             label: q.intl.string(q.t.rBIGBL),

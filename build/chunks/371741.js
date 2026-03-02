@@ -46,8 +46,8 @@ var i = n(627968),
     B = n(162792),
     V = n(675722),
     K = n(381941),
-    W = n(652215),
-    z = n(985018),
+    z = n(652215),
+    W = n(985018),
     Y = n(119907);
 
 function q(e, t, n) {
@@ -64,14 +64,14 @@ function J(e) {
         compact: s = !1,
         className: r
     } = e;
-    o()(n.type === W.lAJ.THREAD_STARTER_MESSAGE, "Message must be a thread starter message");
+    o()(n.type === z.lAJ.THREAD_STARTER_MESSAGE, "Message must be a thread starter message");
     let {
         ...u
     } = (0, c.rm)(e.id ?? ""), h = (0, d.bG)([f.A], () => f.A.getMessageByReference(l)), {
         popouts: m,
         setPopout: A
     } = (0, O.A)(n.id, K.Fd), g = (0, y.Ay)(n), p = (0, R.fF)(n), _ = (0, R.ZD)(n);
-    return n.type === W.lAJ.THREAD_STARTER_MESSAGE && null != h && h.state === f.a.LOADED ? (0, i.jsx)($, {
+    return n.type === z.lAJ.THREAD_STARTER_MESSAGE && null != h && h.state === f.a.LOADED ? (0, i.jsx)($, {
         ...e,
         viewingChannelId: n.channel_id,
         message: h.message,
@@ -117,7 +117,7 @@ function $(e) {
         className: p,
         groupId: x,
         viewingChannelId: S
-    } = e, I = n.type === W.lAJ.REPLY ? n.messageReference : void 0, {
+    } = e, I = n.type === z.lAJ.REPLY ? n.messageReference : void 0, {
         onFocus: N,
         ...v
     } = (0, c.rm)(e.id ?? ""), {
@@ -159,8 +159,8 @@ function $(e) {
         children: [(0, i.jsx)(u.DUT, {
             className: Y.lA,
             onClick: eg,
-            "aria-label": z.intl.string(z.t.k5WiPf),
-            children: z.intl.string(z.t.k5WiPf)
+            "aria-label": W.intl.string(W.t.k5WiPf),
+            children: W.intl.string(W.t.k5WiPf)
         }), (0, i.jsx)(j.A, {
             ...v,
             id: t,
@@ -171,14 +171,14 @@ function $(e) {
                 [Y.mK]: n.mentioned,
                 [Y.M1]: (0, T.ec)(n),
                 [Y.H4]: (0, b.A)(n),
-                [Y._A]: n.id === x || n.type === W.lAJ.REPLY,
+                [Y._A]: n.id === x || n.type === z.lAJ.REPLY,
                 [Y.wH]: el
             }),
             zalgo: !0,
             onKeyDown: ed,
             onFocus: w,
             onBlur: U,
-            childrenRepliedMessage: n.type === W.lAJ.REPLY && (0, B.A)({
+            childrenRepliedMessage: n.type === z.lAJ.REPLY && (0, B.A)({
                 ...e,
                 setPopout: J,
                 referencedUsernameProfile: H.referencedUsernameProfile,
@@ -234,8 +234,8 @@ let Z = l.memo(function(e) {
         groupId: X,
         renderContentOnly: Q
     } = e;
-    o()(r.type !== W.lAJ.THREAD_STARTER_MESSAGE, "Message must not be a thread starter message");
-    let ee = W.sl8.has(r.type) ? r.messageReference : void 0,
+    o()(r.type !== z.lAJ.THREAD_STARTER_MESSAGE, "Message must not be a thread starter message");
+    let ee = z.sl8.has(r.type) ? r.messageReference : void 0,
         {
             onFocus: et,
             ...en
@@ -276,7 +276,7 @@ let Z = l.memo(function(e) {
         eS = (0, d.bG)([h.A], () => h.A.keyboardModeEnabled),
         eI = er || eC || eS && eg,
         eT = eI || eA,
-        eN = (0, d.bG)([x.A], () => r.hasFlag(W.pr7.HAS_THREAD) && x.A.getChannel(I.default.castMessageIdAsChannelId(r.id))),
+        eN = (0, d.bG)([x.A], () => r.hasFlag(z.pr7.HAS_THREAD) && x.A.getChannel(I.default.castMessageIdAsChannelId(r.id))),
         eb = r.isFirstMessageInForumPost(N),
         ey = (0, g.S)((r.editedTimestamp ?? r.timestamp).valueOf()),
         ev = (0, d.bG)([C.A], () => C.A.isDeveloper),
@@ -313,7 +313,7 @@ let Z = l.memo(function(e) {
         }),
         eH = l.useRef(window),
         eB = null != eG;
-    n = r.type === W.lAJ.CUSTOM_GIFT ? "" : !eC && eB ? (0, w.A)(e, ej) : (0, F.A)(e, ej, eC);
+    n = r.type === z.lAJ.CUSTOM_GIFT ? "" : !eC && eB ? (0, w.A)(e, ej) : (0, F.A)(e, ej, eC);
     let eV = r.id === X,
         eK = (0, i.jsx)(u.vN3, {
             offset: {
@@ -327,7 +327,7 @@ let Z = l.memo(function(e) {
                 children: (0, i.jsx)(j.A, {
                     ...en,
                     "aria-setsize": -1,
-                    "aria-roledescription": z.intl.string(z.t.BAB0yK),
+                    "aria-roledescription": W.intl.string(W.t.BAB0yK),
                     "aria-labelledby": ew,
                     "aria-describedby": eU,
                     onFocus: eE,
@@ -342,16 +342,16 @@ let Z = l.memo(function(e) {
                         [Y.HJ]: !J,
                         [Y.mK]: r.mentioned,
                         [Y.M1]: (0, T.ec)(r),
-                        [Y.SH]: r.type === W.lAJ.NITRO_NOTIFICATION,
+                        [Y.SH]: r.type === z.lAJ.NITRO_NOTIFICATION,
                         [Y.H4]: (0, b.A)(r),
-                        [Y._A]: !Q && (eV || r.type === W.lAJ.REPLY),
+                        [Y._A]: !Q && (eV || r.type === z.lAJ.REPLY),
                         [Y.wH]: eI,
                         [Y.$n]: eL?.message.id === r.id,
-                        [Y.$w]: r.isCommandType() && r.state === W.cmJ.SENDING,
+                        [Y.$w]: r.isCommandType() && r.state === z.cmJ.SENDING,
                         [Y.DX]: eB
                     }),
                     zalgo: !eC,
-                    childrenRepliedMessage: Q || r.type !== W.lAJ.REPLY ? void 0 : (0, B.A)({
+                    childrenRepliedMessage: Q || r.type !== z.lAJ.REPLY ? void 0 : (0, B.A)({
                         ...e,
                         setPopout: eo,
                         referencedUsernameProfile: ea.referencedUsernameProfile,
@@ -377,7 +377,7 @@ let Z = l.memo(function(e) {
                         handleContextMenu: ec,
                         isInteracting: eT,
                         isAutomodBlockedMessage: eB,
-                        forceAddReactions: r.type === W.lAJ.EMOJI_ADDED
+                        forceAddReactions: r.type === z.lAJ.EMOJI_ADDED
                     }),
                     childrenButtons: em || ep ? (0, U.A)({
                         buttonProps: e,
@@ -390,9 +390,9 @@ let Z = l.memo(function(e) {
                     childrenMessageContent: n,
                     onMouseMove: eu,
                     onMouseLeave: eh,
-                    hasThread: !Q && r.hasFlag(W.pr7.HAS_THREAD) && null != eN,
+                    hasThread: !Q && r.hasFlag(z.pr7.HAS_THREAD) && null != eN,
                     isSystemMessage: (0, b.A)(r),
-                    hasReply: r.type === W.lAJ.REPLY,
+                    hasReply: r.type === z.lAJ.REPLY,
                     messageRef: e => {
                         eF.current = e, eH.current = e?.ownerDocument?.defaultView ?? window
                     },

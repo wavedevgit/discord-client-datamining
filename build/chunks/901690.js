@@ -42,7 +42,7 @@ let p = l.memo(function(e) {
         wrapperRef: j,
         doZoom: R,
         clampPanOffset: M
-    } = l.useContext(m.e9), [D, O] = l.useState(null), [L, P] = l.useState(null), [k, w] = l.useState(0), [U, G] = l.useState(null), [F, H] = l.useState(null), [B, V] = l.useState(!1), K = l.useRef(new r.Ep), W = l.useRef(new r.Ep), z = l.useRef(null), Y = T > E, q = l.useCallback(e => {
+    } = l.useContext(m.e9), [D, O] = l.useState(null), [L, P] = l.useState(null), [k, w] = l.useState(0), [U, G] = l.useState(null), [F, H] = l.useState(null), [B, V] = l.useState(!1), K = l.useRef(new r.Ep), z = l.useRef(new r.Ep), W = l.useRef(null), Y = T > E, q = l.useCallback(e => {
         e.width > 0 && e.height > 0 && v(e.width / e.height), s?.(e)
     }, [s, v]), J = l.useCallback(e => {
         if (null == j.current) return m.qd;
@@ -92,9 +92,9 @@ let p = l.memo(function(e) {
             height: n
         } = e;
         if (!Y || null == t || null == n) return;
-        let i = z.current;
+        let i = W.current;
         if (null == i) {
-            z.current = {
+            W.current = {
                 width: t,
                 height: n
             };
@@ -113,14 +113,14 @@ let p = l.memo(function(e) {
                 x: (0 !== i ? e.x / i : 0) * r,
                 y: (0 !== a ? e.y / a : 0) * o
             })
-        }), z.current = {
+        }), W.current = {
             width: t,
             height: n
-        }, W.current.start(100, () => {
+        }, z.current.start(100, () => {
             V(!1)
         }))
     }, [M, Y, T, I]), [Y, T]), (0, c.l0)(() => {
-        K.current.stop(), W.current.stop()
+        K.current.stop(), z.current.stop()
     }), l.useEffect(() => {
         null != n && (0, u.c)(n, void 0, _ && Y ? T : 1)
     }, [_, Y, n, T]);

@@ -44,8 +44,8 @@ var i = n(627968),
     B = n(652215),
     V = n(985018),
     K = n(478186);
-let W = (0, r.animated)(d.fKU),
-    z = l.memo(function(e) {
+let z = (0, r.animated)(d.fKU),
+    W = l.memo(function(e) {
         var t;
         let n, s, r, {
                 className: h,
@@ -66,7 +66,7 @@ let W = (0, r.animated)(d.fKU),
                 showingQuarantineBanner: L,
                 hideSummaries: P = !1,
                 jumpBarClassName: U,
-                typingGradient: z
+                typingGradient: W
             } = e,
             [Y, q] = l.useState(N.A.isAtBottom(f.id) ?? !1),
             J = (0, k.I)(S, R),
@@ -152,13 +152,13 @@ let W = (0, r.animated)(d.fKU),
                 let e = I.A.settings.appearance?.clientThemeSettings;
                 return e?.backgroundGradientPresetId != null || e?.customUserThemeSettings != null
             }),
-            eh = l.useMemo(() => z ? Y ? K.gA : K.ru : K.Zd, [z, Y]),
-            em = l.useMemo(() => z ? Y ? K.cz : K.XF : K.U6, [z, Y]);
+            eh = l.useMemo(() => W ? Y ? K.gA : K.ru : K.Zd, [W, Y]),
+            em = l.useMemo(() => W ? Y ? K.cz : K.XF : K.U6, [W, Y]);
         return (0, i.jsxs)(o.hD, {
             navigator: ee,
             children: [null != ea && ea, (0, i.jsxs)("div", {
                 className: a()(K.Og, h, `group-spacing-${g}`),
-                children: [null == ea && ei, (0, i.jsxs)(W, {
+                children: [null == ea && ei, (0, i.jsxs)(z, {
                     ref: ed,
                     customTheme: !0,
                     className: a()(p, K.XG, eu ? em : void 0),
@@ -303,7 +303,7 @@ let W = (0, r.animated)(d.fKU),
         return (0, i.jsx)(x.Bs.Provider, {
             value: (0, L.A)(k, u),
             children: (0, i.jsx)(U.t, {
-                children: (0, i.jsx)(z, {
+                children: (0, i.jsx)(W, {
                     ...d,
                     messageGroupSpacing: I,
                     showNewMessagesBar: !0,

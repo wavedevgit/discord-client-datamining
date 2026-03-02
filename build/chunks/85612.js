@@ -49,10 +49,10 @@ function F(e) {
     } = e, [H, B] = l.useState(""), {
         analyticsLocations: V,
         newestAnalyticsLocation: K
-    } = (0, m.Ay)(h.A.VOICE_FILTER_POPOUT), W = l.useRef(null), z = (0, u.A)({
+    } = (0, m.Ay)(h.A.VOICE_FILTER_POPOUT), z = l.useRef(null), W = (0, u.A)({
         minDimension: 400,
         maxDimension: 600,
-        resizableDomNodeRef: W,
+        resizableDomNodeRef: z,
         onElementResize: (e, t) => {},
         onElementResizeEnd: e => {},
         orientation: u.R.VERTICAL_TOP
@@ -106,7 +106,7 @@ function F(e) {
     return (0, i.jsx)(m.f5, {
         value: V,
         children: (0, i.jsxs)("div", {
-            ref: W,
+            ref: z,
             className: a()(G.ZO, {
                 [G.U]: n,
                 [G.Fd]: !ea
@@ -116,7 +116,7 @@ function F(e) {
             },
             children: [ea && (0, i.jsx)("div", {
                 className: G.Di,
-                onMouseDown: z,
+                onMouseDown: W,
                 children: (0, i.jsx)("div", {
                     className: G.YC
                 })

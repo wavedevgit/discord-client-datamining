@@ -60,7 +60,7 @@ let x = l.memo(function(e) {
             "--custom-zoom-minimap-width": `${e}px`,
             "--custom-zoom-minimap-height": "120px"
         }
-    }, [O]), W = l.useCallback(e => {
+    }, [O]), z = l.useCallback(e => {
         if (null == F.current || null == L.current) return;
         let t = F.current.getBoundingClientRect(),
             n = L.current.clientWidth,
@@ -71,17 +71,17 @@ let x = l.memo(function(e) {
             x: (.5 - l / t.width) * n * T,
             y: (.5 - s / t.height) * i * T
         }))
-    }, [w, T, L, k]), z = l.useCallback(e => {
-        E(e) && (e.preventDefault(), e.stopPropagation(), G(!0), W({
+    }, [w, T, L, k]), W = l.useCallback(e => {
+        E(e) && (e.preventDefault(), e.stopPropagation(), G(!0), z({
             x: e.clientX,
             y: e.clientY
         }))
-    }, [W]), Y = l.useCallback(e => {
-        U && (e.preventDefault(), e.stopPropagation(), W({
+    }, [z]), Y = l.useCallback(e => {
+        U && (e.preventDefault(), e.stopPropagation(), z({
             x: e.clientX,
             y: e.clientY
         }))
-    }, [U, W]), q = l.useCallback(e => {
+    }, [U, z]), q = l.useCallback(e => {
         !U || E(e) || (e.preventDefault(), e.stopPropagation(), G(!1))
     }, [U]), J = m.Ay.getVideoComponent(), $ = l.useMemo(() => {
         let e = null != L.current ? L.current.clientWidth : 1,
@@ -123,7 +123,7 @@ let x = l.memo(function(e) {
                 ref: F,
                 className: f.Wc,
                 style: K,
-                onMouseDown: z,
+                onMouseDown: W,
                 onMouseMove: Y,
                 onMouseUp: q,
                 children: [(0, i.jsx)(J, {

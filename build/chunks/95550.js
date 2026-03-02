@@ -46,8 +46,8 @@ var i = n(627968),
     B = n(287809),
     V = n(954571),
     K = n(957565),
-    W = n(203982),
-    z = n(403362),
+    z = n(203982),
+    W = n(403362),
     Y = n(695184),
     q = n(661191),
     J = n(427262),
@@ -112,7 +112,7 @@ let es = (0, b.Ld)(),
                 children: ei.intl.string(ei.t.cjE7wH)
             }),
             ...l,
-            children: s.filter(z.Vq).sort((e, t) => {
+            children: s.filter(W.Vq).sort((e, t) => {
                 let n = e.lastMessageId ?? e.id,
                     i = t.lastMessageId ?? t.id;
                 return q.default.compare(i, n)
@@ -157,12 +157,12 @@ class eo extends l.PureComponent {
             type: this._getAnalyticsEntryPoint().entryPointType,
             source: this._getAnalyticsEntryPoint().entryPointSource,
             is_friend: !this.isNotFriends()
-        }), W._.subscribe(et.jej.SCROLL_PAGE_UP, this.scrollPageUp), W._.subscribe(et.jej.SCROLL_PAGE_DOWN, this.scrollPageDown), setTimeout(() => {
+        }), z._.subscribe(et.jej.SCROLL_PAGE_UP, this.scrollPageUp), z._.subscribe(et.jej.SCROLL_PAGE_DOWN, this.scrollPageDown), setTimeout(() => {
             this.forceFocus()
         }, 0)
     }
     componentWillUnmount() {
-        W._.unsubscribe(et.jej.SCROLL_PAGE_UP, this.scrollPageUp), W._.unsubscribe(et.jej.SCROLL_PAGE_DOWN, this.scrollPageDown), null != this.copyTimeout && clearTimeout(this.copyTimeout), h.h.wait(() => f.A.close())
+        z._.unsubscribe(et.jej.SCROLL_PAGE_UP, this.scrollPageUp), z._.unsubscribe(et.jej.SCROLL_PAGE_DOWN, this.scrollPageDown), null != this.copyTimeout && clearTimeout(this.copyTimeout), h.h.wait(() => f.A.close())
     }
     scrollPageUp = () => {
         this.scrollerRef.current?.scrollPageUp({
@@ -986,8 +986,8 @@ function eu(e) {
     })), {
         modalKey: s
     }), [t, s]), o = l.useCallback(() => a ? (0, u.OoC)(s) : r(), [a, s, r]);
-    return l.useEffect(() => (n && W._.subscribe(et.jej.TOGGLE_DM_CREATE, o), () => {
-        W._.unsubscribe(et.jej.TOGGLE_DM_CREATE, o)
+    return l.useEffect(() => (n && z._.subscribe(et.jej.TOGGLE_DM_CREATE, o), () => {
+        z._.unsubscribe(et.jej.TOGGLE_DM_CREATE, o)
     }), [n, o]), (0, x.Ay)(() => {
         (0, M.u)()
     }), {

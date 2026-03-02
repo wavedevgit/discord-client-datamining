@@ -1,4 +1,4 @@
-/** chunk id: 958237, original params: e,i,t (module,exports,require) **/
+/** chunk id: 958237, original params: e,t,i (module,exports,require) **/
 e.exports = {
     jE: "modalContent__19a29",
     CE: "tabBarWrapper__19a29",

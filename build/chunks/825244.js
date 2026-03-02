@@ -89,8 +89,8 @@ function D(e) {
             guildPersonalized: K
         } = (0, A.lF)(P),
         {
-            handleInvite: W,
-            handleMessage: z,
+            handleInvite: z,
+            handleMessage: W,
             handlePersonalize: Y,
             handleDownload: q,
             handleAddApplication: J
@@ -216,7 +216,7 @@ function D(e) {
             iconUrl: d.zNk,
             header: j.intl.string(j.t.q9n0Ta),
             completed: B,
-            onClick: W
+            onClick: z
         })
     }, "invite")), G && en.push((0, i.jsx)(r.A.div, {
         className: R.cW,
@@ -238,7 +238,7 @@ function D(e) {
             iconUrl: d.Tj_,
             header: j.intl.string(j.t["SoP7+l"]),
             completed: V,
-            onClick: z
+            onClick: W
         })
     }, "message")), (0, T.isWeb)() && en.push((0, i.jsx)(r.A.div, {
         className: R.cW,

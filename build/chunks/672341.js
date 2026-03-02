@@ -44,8 +44,8 @@ var i = n(627968),
     B = n(66149),
     V = n(922529),
     K = n(652176),
-    W = n(540385),
-    z = n(613907),
+    z = n(540385),
+    W = n(613907),
     Y = n(829444),
     q = n(626360),
     J = n(381941),
@@ -211,7 +211,7 @@ function et(e) {
         let {
             useReducedMotion: e
         } = c.A;
-        (e && eh() || !e) && eb.unshift((0, i.jsx)(W.Ay, {
+        (e && eh() || !e) && eb.unshift((0, i.jsx)(z.Ay, {
             compact: en,
             ...ea
         }, "has-more"))
@@ -219,10 +219,10 @@ function et(e) {
     if (m.hasMoreBefore && null == er || eb.unshift((0, i.jsx)(A.A, {
             channel: l,
             showingBanner: eo
-        }, "empty-message")), m.hasMoreAfter && eb.push((0, i.jsx)(W.Ay, {
+        }, "empty-message")), m.hasMoreAfter && eb.push((0, i.jsx)(z.Ay, {
             compact: en,
             ...ea
-        }, "has-more-after")), !eo && em && eh() && eb.push((0, i.jsx)(z.A, {
+        }, "has-more-after")), !eo && em && eh() && eb.push((0, i.jsx)(W.A, {
             channel: l
         })), F > 0 && et && eh()) {
         let e, n, s = j.Ay.getOldestUnreadTimestamp(l.id),
