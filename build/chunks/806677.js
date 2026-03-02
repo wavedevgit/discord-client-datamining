@@ -190,7 +190,7 @@ function U(e) {
         isLoading: _,
         totalUnownedWishlistItems: p,
         analyticsLocations: m
-    } = e, h = (0, k.G)("gift_selection_modal_wishlist_section"), I = (0, N.tx)(i), C = G.intl.formatToPlainString(G.t.dIDKgi, {
+    } = e, h = (0, k.G)("gift_selection_modal_wishlist_section"), I = (0, N.tx)(i), C = G.intl.formatToPlainString(p >= 12 ? G.t.Y2RFOQ : G.t.dIDKgi, {
         username: I
     }), {
         analyticsLocations: g
