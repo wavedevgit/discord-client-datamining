@@ -1,6 +1,6 @@
 /** chunk id: 63415, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    p: () => A
+    p: () => C
 });
 var a = n(627968),
     i = n(64700),
@@ -129,8 +129,8 @@ let j = e => {
             })]
         })
     },
-    A = () => {
-        let [e, t] = i.useState(-1), [n, r] = i.useState(-1), [A, C] = i.useState(!1), [T, y] = i.useState(5e3), [S, E] = i.useState(!1), N = i.useRef(null), I = (0, l.bG)([f.default], () => f.default.getCurrentUser()), k = (0, x.L)(), [R] = i.useState(() => (0, p.YQ)({
+    C = () => {
+        let [e, t] = i.useState(-1), [n, r] = i.useState(-1), [C, A] = i.useState(!1), [T, y] = i.useState(5e3), [S, E] = i.useState(!1), N = i.useRef(null), I = (0, l.bG)([f.default], () => f.default.getCurrentUser()), k = (0, x.L)(), [R] = i.useState(() => (0, p.YQ)({
             finishSetup: async () => !0,
             perkAvailableToUser: k
         })), {
@@ -163,9 +163,9 @@ let j = e => {
         let q = i.useCallback(async () => (clearTimeout(e), M(m.l7.DISCONNECTED), !0), [e, M]),
             Q = i.useCallback(() => new Promise((e, t) => {
                 w(m.Lk.INSTALLING), r(setTimeout(() => {
-                    A ? t(Error("Installation failed")) : e()
+                    C ? t(Error("Installation failed")) : e()
                 }, T))
-            }), [A, T, w, r]);
+            }), [C, T, w, r]);
         return (i.useEffect(() => {
             F && O !== m.Lk.UNKNOWN && w(m.Lk.UNKNOWN)
         }, [F, w, O]), i.useEffect(() => {
@@ -311,8 +311,8 @@ let j = e => {
                                 width: "45px"
                             },
                             children: (0, a.jsx)(o.dOG, {
-                                onChange: () => C(!A),
-                                checked: A
+                                onChange: () => A(!C),
+                                checked: C
                             })
                         })]
                     }), (0, a.jsx)(g.MG, {

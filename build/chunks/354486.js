@@ -1,7 +1,7 @@
 /** chunk id: 354486, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => C,
-    l: () => A
+    A: () => A,
+    l: () => C
 });
 var a = n(627968),
     i = n(64700),
@@ -23,7 +23,7 @@ let b = h.A.Millis.HOUR,
     v = h.A.Millis.DAY,
     j = 4 * h.A.Millis.DAY;
 
-function A() {
+function C() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
         {
             shouldShow: t = !0
@@ -34,13 +34,13 @@ function A() {
         h = c._6.useSetting(),
         _ = h?.value != null ? Number(h.value) : null,
         f = c.CY.useSetting(),
-        A = d === g.cl.DND && null != _ && n - _ > v && "0" === f,
+        C = d === g.cl.DND && null != _ && n - _ > v && "0" === f,
         {
-            enabled: C
+            enabled: A
         } = (0, x.k)({
             location: "useDoNotDisturbReminderPopoverDismissibleContent",
-            autoTrackExposure: A,
-            disable: !A
+            autoTrackExposure: C,
+            disable: !C
         });
     return i.useEffect(() => {
         if (d === g.cl.DND) {
@@ -48,13 +48,13 @@ function A() {
             let e = setInterval(() => a(Date.now()), b);
             return () => clearInterval(e)
         }
-    }, [d]), (0, o.Wl)(C && !r && t ? l.M.DO_NOT_DISTURB_REMINDER_POPOVER : null, {
+    }, [d]), (0, o.Wl)(A && !r && t ? l.M.DO_NOT_DISTURB_REMINDER_POPOVER : null, {
         cooldownDurationMs: j,
         numTimesToRecur: 2
     }, p.m.ACCOUNT_NAME_ZONE, !0)
 }
 
-function C(e) {
+function A(e) {
     let {
         targetElementRef: t,
         onDismiss: n,

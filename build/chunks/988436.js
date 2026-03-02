@@ -22,8 +22,8 @@ var a = n(627968),
     b = n(971649),
     v = n(901406),
     j = n(792620),
-    A = n(73473),
-    C = n(201805),
+    C = n(73473),
+    A = n(201805),
     T = n(818348),
     y = n(985018),
     S = n(868566);
@@ -33,9 +33,9 @@ function E(e) {
         quest: t,
         errorHints: n,
         transitionState: s,
-        onClose: A,
+        onClose: C,
         sourceQuestContent: E
-    } = e, [I, k] = (0, i.useState)(n), R = (0, p.UX)(), O = (0, _.Ut)(), w = (0, b.vU)()?.getId(), D = (0, o.bG)([m.A], () => m.A.useReducedMotion), M = (0, C.Xf)({
+    } = e, [I, k] = (0, i.useState)(n), R = (0, p.UX)(), O = (0, _.Ut)(), w = (0, b.vU)()?.getId(), D = (0, o.bG)([m.A], () => m.A.useReducedMotion), M = (0, A.Xf)({
         useReducedMotion: D,
         className: S.Zf
     }), P = I.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), L = (0, j.YL)(t), U = (0, o.bG)([h.A], () => h.A.getState().theme), B = (0, c.Mw)(U) ? T.NJ.DARK : T.NJ.LIGHT, {
@@ -57,12 +57,12 @@ function E(e) {
     });
     return (0, a.jsx)(r.Modal, {
         transitionState: s,
-        onClose: A,
+        onClose: C,
         title: y.intl.string(y.t.W5lmKt),
         subtitle: R.message,
         actions: [{
             variant: "secondary",
-            onClick: () => void(A(), (0, v.b6)({
+            onClick: () => void(C(), (0, v.b6)({
                 quest: t
             }, {
                 content: x.uF.CONNECTIONS_MODAL,
@@ -73,7 +73,7 @@ function E(e) {
             text: y.intl.string(y.t["qiS+xj"])
         }, {
             variant: "primary",
-            onClick: () => A(),
+            onClick: () => C(),
             text: y.intl.string(y.t.cpT0Cq)
         }],
         children: (0, a.jsxs)(a.Fragment, {
@@ -188,7 +188,7 @@ function I(e) {
             default: t
         } = await Promise.resolve().then(n.bind(n, 988436));
         return function(n) {
-            return (0, a.jsx)(A.R, {
+            return (0, a.jsx)(C.R, {
                 overrideVisibility: !0,
                 questOrQuests: e.quest,
                 questContent: x.uF.CONNECTIONS_MODAL,

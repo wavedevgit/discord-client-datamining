@@ -21,8 +21,8 @@ var a = n(582754),
     b = n(673554),
     v = n(719401),
     j = n(128640),
-    A = n(146925),
-    C = n(789996);
+    C = n(146925),
+    A = n(789996);
 let T = {
         [r.Ac.PREMIUM_TENURE_1_MONTH]: {
             dark: " #D76C1F, #F79C53",
@@ -84,11 +84,11 @@ let T = {
         },
         [r.Ac.PREMIUM_TENURE_60_MONTH]: {
             dark: x.A,
-            light: A.A
+            light: C.A
         },
         [r.Ac.PREMIUM_TENURE_72_MONTH]: {
             dark: p.A,
-            light: C.A
+            light: A.A
         }
     };
 

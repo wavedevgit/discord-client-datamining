@@ -3,10 +3,10 @@ n.d(t, {
     D7: () => y,
     Md: () => v,
     _S: () => T,
-    a1: () => C,
+    a1: () => A,
     g_: () => S,
     h2: () => E,
-    it: () => A,
+    it: () => C,
     pD: () => j
 }), n(321073);
 var a = n(450827),
@@ -92,7 +92,7 @@ function j() {
     }), f.info("END Logging DM Channels\n")
 }
 
-function A() {
+function C() {
     let e = m.A.getFriendIDs();
     f.info("START Discord Friends"), e.forEach(e => {
         let t = h.default.getUser(e);
@@ -105,7 +105,7 @@ function A() {
     }), f.info("END Discord Friends\n")
 }
 
-function C() {
+function A() {
     let e = o.A.getFrequentlyWithoutFetchingLatest(),
         t = [],
         n = [],

@@ -21,8 +21,8 @@ var a = n(627968),
     b = n(480890),
     v = n(74848),
     j = n(77735),
-    A = n(340913),
-    C = n(277342),
+    C = n(340913),
+    A = n(277342),
     T = n(430452),
     y = n(383501),
     S = n(350535),
@@ -54,7 +54,7 @@ function D(e) {
         } = e,
         {
             showPTTIconIndicator: $
-        } = A.A.useConfig({
+        } = C.A.useConfig({
             location: "MicrophoneButton"
         }),
         q = (0, o.bG)([T.Ay], () => T.Ay.getMode() === N.TB.PUSH_TO_TALK),
@@ -71,7 +71,7 @@ function D(e) {
         }),
         ee = i.useRef(null),
         et = n || D || s,
-        en = (0, C.q)(et),
+        en = (0, A.q)(et),
         {
             analyticsLocations: ea
         } = (0, h.Ay)(m.A.AUDIO_INPUT_BUTTON),

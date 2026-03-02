@@ -40,13 +40,13 @@ function b() {
         b = (0, l.bG)([u.Ay], () => u.Ay.getHighestAffinityFriendAnniversaries()),
         v = (0, l.bG)([u.Ay], () => u.Ay.getHighAffinityFriendAnniversaries()),
         j = (0, l.bG)([u.Ay], () => u.Ay.getProfilePopoutGiftIntentsDismissMap()),
-        A = (0, l.bG)([x.A], () => {
+        C = (0, l.bG)([x.A], () => {
             let e = x.A.settings.userContent?.recurringDismissibleContentStates[r.M.GIFT_INTENT_MESSAGE]?.lastDismissedAtMs;
             if (null == e || "0" === e) return null;
             let t = Number(e);
             return Number.isNaN(t) ? null : t
         }),
-        C = e => {
+        A = e => {
             d.h.dispatch({
                 type: "DEV_TOOLS_SET_FRIEND_ANNIVERSARY_COUNT",
                 total: e
@@ -110,14 +110,14 @@ function b() {
                         }],
                         value: e,
                         onSelectionChange: e => {
-                            C(e)
+                            A(e)
                         }
                     }), (0, a.jsx)(o.Button, {
                         size: "sm",
                         variant: "secondary",
                         text: "Clear",
                         onClick: () => {
-                            C(null)
+                            A(null)
                         }
                     })]
                 })
@@ -206,7 +206,7 @@ function b() {
                         })]
                     }), (0, a.jsx)(o.Text, {
                         variant: "text-xs/normal",
-                        children: null != A ? `Dismissed at: ${f(A)}` : "Not dismissed"
+                        children: null != C ? `Dismissed at: ${f(C)}` : "Not dismissed"
                     })]
                 })
             }), (0, a.jsx)("div", {

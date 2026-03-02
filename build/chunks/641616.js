@@ -22,8 +22,8 @@ var x = n(173628),
     b = n(568834),
     v = n(19767),
     j = n(866001),
-    A = n(855936),
-    C = n(489967),
+    C = n(855936),
+    A = n(489967),
     T = n(2915),
     y = n(986789),
     S = n(821306),
@@ -120,7 +120,7 @@ function eu() {
             name: "E2EE",
             group: eo.fu.DEVELOPMENT,
             tags: ["secure frames", "encryption"],
-            render: () => (0, a.jsx)(A.A, {})
+            render: () => (0, a.jsx)(C.A, {})
         }), e.push({
             id: "performance",
             name: "Performance",
@@ -137,7 +137,7 @@ function eu() {
             name: "Feedback",
             group: eo.fu.USERS,
             tags: ["surveys"],
-            render: () => (0, a.jsx)(C.A, {})
+            render: () => (0, a.jsx)(A.A, {})
         }), e.push({
             id: "overlay",
             name: "Overlay v3",

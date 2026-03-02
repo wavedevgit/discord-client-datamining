@@ -27,7 +27,7 @@ let b = e => {
         quest: v
     } = i.useContext(p.T), {
         expansionSpring: j
-    } = i.useContext(x.PW), A = s ? -4 : 6;
+    } = i.useContext(x.PW), C = s ? -4 : 6;
     return (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)(r.animated.div, {
             className: f.tE,
@@ -67,7 +67,7 @@ let b = e => {
                     output: [0, -48]
                 }), j.to({
                     range: [0, 1],
-                    output: [0, A]
+                    output: [0, C]
                 })], (e, t) => `translate(${e}px, ${t}px)`)
             },
             children: [(0, a.jsx)("div", {

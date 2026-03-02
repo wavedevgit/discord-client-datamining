@@ -78,16 +78,16 @@ let _ = {
 
 function v() {
     let [e, t] = i.useState(!1), [n, s] = i.useState(r.j.PREMIUM_TIER_2_1_HOUR), [u, _] = i.useState([]), [v, j] = i.useState([]), {
-        refreshEntitlementList: A,
-        grantFractionalPremium: C,
+        refreshEntitlementList: C,
+        grantFractionalPremium: A,
         deleteFractionalPremium: T,
         triggerNextEntitlementFulfillment: y,
         entitlements: S,
         loading: E
     } = (0, m.o)();
     return i.useEffect(() => {
-        A()
-    }, [A]), i.useEffect(() => {
+        C()
+    }, [C]), i.useEffect(() => {
         _(S.filter(e => null != e.endsAt && e.endsAt > new Date && e.type === h.zF_.FRACTIONAL_REDEMPTION)), j(S.filter(e => Object.values(r.j).includes(e.skuId) && null == e.startsAt))
     }, [S]), (0, a.jsx)(d.IpV, {
         className: g.nd,
@@ -147,7 +147,7 @@ function v() {
                 }), (0, a.jsx)(d.Button, {
                     variant: "primary",
                     text: "Grant Fractional Nitro",
-                    onClick: () => C(n)
+                    onClick: () => A(n)
                 })]
             }), (0, a.jsxs)("section", {
                 className: x.uW,
@@ -182,7 +182,7 @@ function v() {
                             disabled: E,
                             look: o.$n.Looks.BLANK,
                             size: o.$n.Sizes.ICON,
-                            onClick: A,
+                            onClick: C,
                             children: (0, a.jsx)("span", {
                                 title: "Refresh",
                                 children: (0, a.jsx)(d.fNY, {

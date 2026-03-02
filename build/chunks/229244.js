@@ -21,8 +21,8 @@ var a = n(627968),
     b = n(164203),
     v = n(127219),
     j = n(438038),
-    A = n(439075),
-    C = n(223344),
+    C = n(439075),
+    A = n(223344),
     T = n(589939),
     y = n(443960),
     S = n(899860),
@@ -499,12 +499,12 @@ function G() {
                 style: {
                     marginBottom: 0
                 },
-                children: [(0, a.jsx)(C.A, {
+                children: [(0, a.jsx)(A.A, {
                     title: "Primary",
                     colorKey: "primary",
                     onChange: J,
                     value: t.config.colors.primary
-                }), (0, a.jsx)(C.A, {
+                }), (0, a.jsx)(A.A, {
                     title: "Secondary",
                     colorKey: "secondary",
                     onChange: J,
@@ -621,7 +621,7 @@ function G() {
                     isPreview: !0,
                     source: "preview",
                     questId: "0",
-                    children: (0, a.jsx)(A.A, {
+                    children: (0, a.jsx)(C.A, {
                         quest: t,
                         className: w.d,
                         questContent: h.uF.QUEST_HOME_DESKTOP,

@@ -21,8 +21,8 @@ var a = n(627968),
     b = n(300233),
     v = n(599941),
     j = n(250253),
-    A = n(44120),
-    C = n(532794),
+    C = n(44120),
+    A = n(532794),
     T = n(216678),
     y = n(194509),
     S = n(761705),
@@ -134,7 +134,7 @@ let D = function() {
                     }), (0, a.jsx)(u.Button, {
                         variant: "primary",
                         text: "Select Plan",
-                        onClick: () => (0, C.A)({
+                        onClick: () => (0, A.A)({
                             subscriptionTier: n,
                             analyticsLocations: K
                         })
@@ -370,7 +370,7 @@ let D = function() {
                     }), (0, a.jsx)(u.Button, {
                         variant: "primary",
                         text: "Open Collectibles Payment Modal for SKU",
-                        onClick: () => (0, A.A)({
+                        onClick: () => (0, C.A)({
                             skuId: eo,
                             analyticsLocations: K,
                             variantsReturnStyle: r.g.VARIANTS_GROUP

@@ -49,10 +49,10 @@ function v() {
         i = (0, r.bG)([u.A], () => u.A.getGuild(t)),
         v = (0, r.bG)([m.A], () => m.A.computePermissions(n)),
         j = (0, r.bG)([m.A], () => m.A.computePermissions(i)),
-        A = (0, d.Ay)(n, !0),
-        C = null != n ? (0, g.mW)(n, !1) : null,
+        C = (0, d.Ay)(n, !0),
+        A = null != n ? (0, g.mW)(n, !1) : null,
         T = null != i ? p.A.getGuildPermissionSpecMap(i) : null,
-        y = Object.values(C ?? {}).map(e => {
+        y = Object.values(A ?? {}).map(e => {
             let {
                 title: t,
                 flag: n
@@ -80,7 +80,7 @@ function v() {
                 className: _.uW,
                 children: [(0, a.jsx)(o.Heading, {
                     variant: "heading-md/semibold",
-                    children: null != A ? `Permissions in ${A}` : "No channel selected"
+                    children: null != C ? `Permissions in ${C}` : "No channel selected"
                 }), y]
             }), (0, a.jsxs)("section", {
                 className: _.uW,

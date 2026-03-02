@@ -21,8 +21,8 @@ var a = n(627968),
     b = n(446868),
     v = n(683589),
     j = n(87404),
-    A = n(652215),
-    C = n(53516),
+    C = n(652215),
+    A = n(53516),
     T = n(985018);
 
 function y() {
@@ -57,7 +57,7 @@ function y() {
     return i.useEffect(() => (h.A.disable(), () => {
         h.A.enable()
     }), []), i.useEffect(() => {
-        N?.[0] === A.Fz7.PHONE && y?.[0] === A.Fz7.EMAIL && (0, o.mMO)(async () => {
+        N?.[0] === C.Fz7.PHONE && y?.[0] === C.Fz7.EMAIL && (0, o.mMO)(async () => {
             let {
                 default: e
             } = await n.e("10919").then(n.bind(n, 556506));
@@ -77,7 +77,7 @@ function y() {
         captchaKey: S,
         onCaptchaVerify: e => {
             r.Bo.post({
-                url: A.Rsh.CAPTCHA,
+                url: C.Rsh.CAPTCHA,
                 body: {
                     captcha_key: e
                 },
@@ -89,7 +89,7 @@ function y() {
         },
         theme: t,
         onClick: e => {
-            e === A.Fz7.EMAIL_OR_PHONE || e === A.Fz7.EMAIL || e === A.Fz7.REVERIFY_EMAIL ? I() : (0, o.mMO)(async () => {
+            e === C.Fz7.EMAIL_OR_PHONE || e === C.Fz7.EMAIL || e === C.Fz7.REVERIFY_EMAIL ? I() : (0, o.mMO)(async () => {
                 let {
                     default: e
                 } = await Promise.resolve().then(n.bind(n, 615715));
@@ -99,7 +99,7 @@ function y() {
                     ...t
                 })
             }, {
-                modalKey: C.V,
+                modalKey: A.V,
                 Layer: p.Ay
             })
         },

@@ -22,8 +22,8 @@ var a = n(627968),
     v = n(152515);
 n(272111);
 var j = n(985018),
-    A = n(116224);
-let C = (0, r.animated)(x.Ay),
+    C = n(116224);
+let A = (0, r.animated)(x.Ay),
     T = e => {
         let {
             withUnfurlTimeout: t,
@@ -53,13 +53,13 @@ let C = (0, r.animated)(x.Ay),
             })
         }, [x, k]), w = N && I, D = (0, a.jsx)(o.DUT, {
             onClick: O,
-            className: l()(A.vk, {
-                [A.wm]: w
+            className: l()(C.vk, {
+                [C.wm]: w
             }),
-            children: (0, a.jsx)(C, {
+            children: (0, a.jsx)(A, {
                 quest: k,
                 withGameTile: !1,
-                logotypeClassName: A.Iu,
+                logotypeClassName: C.Iu,
                 logotypeStyle: {
                     height: 24,
                     maxWidth: 92,
@@ -71,8 +71,8 @@ let C = (0, r.animated)(x.Ay),
             })
         });
         return (0, a.jsxs)(r.animated.div, {
-            className: l()(A.iE, A.Ht, {
-                [A.tT]: w
+            className: l()(C.iE, C.Ht, {
+                [C.tT]: w
             }),
             style: {
                 transform: (0, r.to)([T.to({
@@ -81,7 +81,7 @@ let C = (0, r.animated)(x.Ay),
                 })], e => `translateY(${e}px)`)
             },
             children: [(0, a.jsx)(r.animated.div, {
-                className: A.Tu,
+                className: C.Tu,
                 style: {
                     opacity: (0, p.a)(T.to({
                         range: [0, 1],
@@ -92,7 +92,7 @@ let C = (0, r.animated)(x.Ay),
                 isFullyExpanded: w,
                 partnerBranding: D
             }), (0, a.jsxs)(r.animated.div, {
-                className: A.P0,
+                className: C.P0,
                 style: {
                     opacity: (0, p.a)(T.to({
                         range: [0, 1],
@@ -100,7 +100,7 @@ let C = (0, r.animated)(x.Ay),
                     }))
                 },
                 children: [(0, a.jsxs)(o.DUT, {
-                    className: A.y8,
+                    className: C.y8,
                     onClick: R,
                     children: [(0, a.jsx)(o.Text, {
                         color: "always-white",
@@ -108,10 +108,10 @@ let C = (0, r.animated)(x.Ay),
                         children: j.intl.string(j.t.o6FLcF)
                     }), (0, a.jsx)(o.cBN, {
                         color: o.LU0.colors.WHITE,
-                        className: A.P$
+                        className: C.P$
                     })]
                 }), t ? (0, a.jsx)("div", {
-                    className: A.uJ,
+                    className: C.uJ,
                     children: (0, a.jsx)(v.n, {
                         timeoutDurationInMilliseconds: n,
                         onTimeoutComplete: s
@@ -127,12 +127,12 @@ let C = (0, r.animated)(x.Ay),
                     sourceQuestContent: d.uF.QUEST_BAR_V2,
                     children: e => (0, a.jsx)(o.DUT, {
                         ...e,
-                        className: l()(A.uJ, A.rb),
+                        className: l()(C.uJ, C.rb),
                         "aria-label": j.intl.string(j.t.DEoVWZ),
                         children: (0, a.jsx)(o.jNK, {
                             size: "md",
                             color: "currentColor",
-                            className: l()(A.Bx, A.ON)
+                            className: l()(C.Bx, C.ON)
                         })
                     })
                 })]

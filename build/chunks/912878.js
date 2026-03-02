@@ -21,8 +21,8 @@ var a = n(627968),
     b = n(263834),
     v = n(865116),
     j = n(716371),
-    A = n(701940),
-    C = n(661251);
+    C = n(701940),
+    A = n(661251);
 
 function T() {
     let e = (0, d.yK)([f.default], () => f.default.getSortedChannels()[1]),
@@ -53,7 +53,7 @@ function T() {
         }, [s]),
         b = !!s?.isPrivate() && (0, o.Lt)(s.recipientFlags ?? 0, r.o.DISMISSED_IN_GAME_MESSAGE_NUX);
     return (0, a.jsxs)("div", {
-        className: A.gs,
+        className: C.gs,
         children: [(0, a.jsx)(c.ZiE, {
             label: "In-Game NUX Message for DMs",
             selectionMode: "single",
@@ -98,11 +98,11 @@ function S() {
         }, t)
     });
     return (0, a.jsxs)("div", {
-        className: l()(C.nd, A.nd),
+        className: l()(A.nd, C.nd),
         children: [e, (0, a.jsx)("div", {
-            className: A.yF
+            className: C.yF
         }), (0, a.jsx)(T, {}), (0, a.jsx)("div", {
-            className: A.yF
+            className: C.yF
         }), (0, a.jsx)(y, {})]
     })
 }

@@ -21,8 +21,8 @@ var a = n(627968),
     b = n(692969),
     v = n(760751),
     j = n(403362),
-    A = n(603047),
-    C = n(435738),
+    C = n(603047),
+    A = n(435738),
     T = n(99753),
     y = n(868068),
     S = n(476398),
@@ -93,7 +93,7 @@ function w() {
     var e;
     let t, n = (0, u.bG)([T.A], () => T.A.getFeed(N.X1.GLOBAL_FEED)),
         s = (0, u.bG)([T.A], () => T.A.getDebugImpressionCappingDisabled()),
-        l = (0, u.bG)([C.A], () => C.A.getDebugFastImpressionCappingEnabled()),
+        l = (0, u.bG)([A.A], () => A.A.getDebugFastImpressionCappingEnabled()),
         r = (e = n?.entries?.map(e => e.content), Object.keys(t = o().groupBy(e, e => e.content_type)).map(e => {
             let n = t[e];
             return {
@@ -118,7 +118,7 @@ function w() {
             return t
         }),
         U = (0, g.A)(L).filter(j.Vq),
-        B = (0, u.bG)([A.A], () => A.A.getFakeGameToShow());
+        B = (0, u.bG)([C.A], () => C.A.getFakeGameToShow());
     return (0, a.jsx)("div", {
         className: k.nd,
         children: (0, a.jsxs)(h.IpV, {

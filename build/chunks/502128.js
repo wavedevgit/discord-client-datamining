@@ -99,10 +99,10 @@ function _() {
             let [n] = t, a = c.A.getChannel(n);
             e[n] = a ?? null
         }), e
-    }), A = (0, l.cf)([c.A], () => t.reduce((e, t) => {
+    }), C = (0, l.cf)([c.A], () => t.reduce((e, t) => {
         let n = c.A.getChannel(t);
         return e[t] = n ?? null, e
-    }, {})), C = (0, l.bG)([u.A], () => u.A.getInboxMessages()), T = (0, l.bG)([u.A], () => u.A.getDevOverrides().navOnClick);
+    }, {})), A = (0, l.bG)([u.A], () => u.A.getInboxMessages()), T = (0, l.bG)([u.A], () => u.A.getDevOverrides().navOnClick);
     return (0, a.jsx)("div", {
         className: x.nd,
         children: (0, a.jsxs)(r.IpV, {
@@ -112,7 +112,7 @@ function _() {
                     variant: "heading-lg/semibold",
                     children: "Inbox"
                 }), (0, a.jsxs)("div", {
-                    children: ["Inbox Message Count: ", C.length]
+                    children: ["Inbox Message Count: ", A.length]
                 })]
             }), (0, a.jsxs)("div", {
                 children: [(0, a.jsx)(r.Heading, {
@@ -147,7 +147,7 @@ function _() {
                     children: ["Unread Channel Count: ", t.length]
                 }), (0, a.jsx)(d.A, {
                     columns: p,
-                    data: Object.entries(A).map(e => {
+                    data: Object.entries(C).map(e => {
                         let [t, n] = e;
                         return {
                             key: t,

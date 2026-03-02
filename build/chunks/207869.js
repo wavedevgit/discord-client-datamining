@@ -21,8 +21,8 @@ var a = n(627968),
     b = n(814793),
     v = n(753386),
     j = n(201805),
-    A = n(545986),
-    C = n(194267),
+    C = n(545986),
+    A = n(194267),
     T = n(963713),
     y = n(758836),
     S = n(985018),
@@ -39,7 +39,7 @@ function N(e) {
         fullWidth: !0,
         onClick: () => {
             let e = t.userStatus?.enrolledAt == null ? h.Cy.ACCEPT_QUEST : h.Cy.WATCH_VIDEO;
-            (0, A.d5)({
+            (0, C.d5)({
                 quest: t,
                 questContent: c.uF.QUEST_BAR_V2,
                 sourceQuestContent: n,
@@ -97,7 +97,7 @@ let I = e => {
         return (0, b.vA)(t) ? (0, a.jsx)(s.$nd, {
             fullWidth: !0,
             variant: "primary",
-            icon: (0, A.Oz)(t),
+            icon: (0, C.Oz)(t),
             onClick: i,
             size: "sm",
             text: n
@@ -114,7 +114,7 @@ let I = e => {
         } = e, {
             applications: d
         } = i;
-        return (0, a.jsx)(C.A, {
+        return (0, a.jsx)(A.A, {
             quest: t,
             sourceQuestContent: n,
             applications: d ?? [],

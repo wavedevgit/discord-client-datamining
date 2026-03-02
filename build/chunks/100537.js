@@ -71,7 +71,7 @@ function M(e) {
         return e.observe(B.current), () => e.disconnect()
     }, []), r.useEffect(() => {
         let e = e => {
-            null == V.current || V.current.contains(e.target) || l || v.A.updateFrameLayoutMode({
+            null == V.current || (0, c.HG$)(V.current, e.target) || l || v.A.updateFrameLayoutMode({
                 applicationId: t.applicationId,
                 layoutMode: O.y.PIP
             })

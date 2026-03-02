@@ -1,6 +1,6 @@
 /** chunk id: 163679, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => A
+    A: () => C
 });
 var a = n(627968),
     i = n(64700),
@@ -40,11 +40,11 @@ function j(e) {
         })]
     })
 }
-let A = function(e) {
+let C = function(e) {
     let {
         onClose: t
-    } = e, [n, u] = i.useState(null), [x, p] = i.useState(!0), [A, C] = i.useState(null), [T, y] = i.useState(!1), S = i.useCallback(async () => {
-        p(!0), C(null);
+    } = e, [n, u] = i.useState(null), [x, p] = i.useState(!0), [C, A] = i.useState(null), [T, y] = i.useState(!1), S = i.useCallback(async () => {
+        p(!0), A(null);
         try {
             let e = await (0, c.$R)();
             if (null == e) return void t();
@@ -64,7 +64,7 @@ let A = function(e) {
                 }
             })
         } catch {
-            C(f.intl.string(_.default["/f++3g"]))
+            A(f.intl.string(_.default["/f++3g"]))
         } finally {
             p(!1)
         }
@@ -79,7 +79,7 @@ let A = function(e) {
                 };
                 await (0, c.Rt)(t), S()
             } catch (e) {
-                C(f.intl.string(_.default["+QRSxc"]))
+                A(f.intl.string(_.default["+QRSxc"]))
             } finally {
                 y(!1)
             }
@@ -115,7 +115,7 @@ let A = function(e) {
                     direction: "horizontal",
                     justify: "start",
                     className: b.rf,
-                    children: [null !== A && (0, a.jsxs)(s.BJc, {
+                    children: [null !== C && (0, a.jsxs)(s.BJc, {
                         direction: "vertical",
                         justify: "space-between",
                         align: "center",
@@ -151,7 +151,7 @@ let A = function(e) {
                                 }
                             })]
                         })]
-                    }), null === A && null != n && (0, a.jsx)(j, {
+                    }), null === C && null != n && (0, a.jsx)(j, {
                         task: n,
                         handleSubmit: E,
                         disabled: T
