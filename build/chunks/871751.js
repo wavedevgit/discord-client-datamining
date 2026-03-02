@@ -1001,7 +1001,10 @@ class B extends s.PureComponent {
             maxMediaWidth: i,
             maxMediaHeight: a
         } = this.state;
-        if (!this.usesJustifiedAutoStyle()) return;
+        if (!this.usesJustifiedAutoStyle()) return {
+            justifySelf: "start",
+            alignSelf: "start"
+        };
         let d = e ? void 0 : this.getMaxWidth(!1);
         if (void 0 === d && void 0 === t && s !== k.Auw.RICH) {
             let e = l ?? r;
