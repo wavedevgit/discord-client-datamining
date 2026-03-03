@@ -9,14 +9,14 @@ var r = n(627968),
     a = n(793574),
     o = n(688810),
     c = n(979286),
-    u = n(993408),
-    d = n(821701),
+    d = n(993408),
+    u = n(821701),
     m = n(841702),
     p = n(571827),
     g = n(465794),
     x = n(919395),
-    A = n(287809),
-    f = n(954571),
+    f = n(287809),
+    A = n(954571),
     h = n(927578),
     _ = n(725550),
     E = n(307560),
@@ -34,29 +34,29 @@ function P(e) {
         onClose: a,
         onOpenShop: o,
         disableApplyButton: c,
-        canUsePremiumCollectibles: d,
+        canUsePremiumCollectibles: u,
         selectedProfileEffect: m
-    } = e, x = null != i ? (0, u.gA)(i) : (0, u.G0)(n);
+    } = e, x = null != i ? (0, d.gA)(i) : (0, d.G0)(n);
     return (0, r.jsx)(r.Fragment, {
         children: (0, r.jsxs)(l.jlY, {
             "data-migration-pending": !0,
             className: I.Hx,
-            children: [null != i && (d || !x) || null === m ? (0, r.jsx)(l.Button, {
+            children: [null != i && (u || !x) || null === m ? (0, r.jsx)(l.Button, {
                 variant: "primary",
                 text: j.intl.string(j.t.Jh8fJz),
                 onClick: s,
                 disabled: c
-            }) : null == i && (d || !x) ? (0, r.jsx)(l.Button, {
+            }) : null == i && (u || !x) ? (0, r.jsx)(l.Button, {
                 variant: "primary",
                 text: j.intl.string(j.t.fYfGgK),
                 onClick: () => o(m?.skuId)
             }) : (0, r.jsx)(g.A, {
                 subscriptionTier: C.pe.TIER_2,
-                showGradient: !d,
+                showGradient: !u,
                 textOptions: {
-                    textOverride: h.Ay.isPremium(t) ? j.intl.string(j.t.KXLX7l) : d ? j.intl.string(j.t.mr4K7D) : j.intl.string(j.t.pj0XBN)
+                    textOverride: h.Ay.isPremium(t) ? j.intl.string(j.t.KXLX7l) : u ? j.intl.string(j.t.mr4K7D) : j.intl.string(j.t.pj0XBN)
                 }
-            }), !d && x ? (0, r.jsx)(p.A, {
+            }), !u && x ? (0, r.jsx)(p.A, {
                 itemType: i?.type ?? n?.type,
                 onClose: a
             }) : (0, r.jsx)(l.Button, {
@@ -77,13 +77,13 @@ function v(e) {
         initialSelectedProfileEffect: m,
         currentSavedEffect: p,
         analyticsLocations: g,
-        onClose: A
+        onClose: f
     } = e, {
-        pendingProfileEffect: f
+        pendingProfileEffect: A
     } = (0, x.nZ)(n?.id), [y, C] = i.useMemo(() => {
-        let e = (0, u.sz)(s, o);
+        let e = (0, d.sz)(s, o);
         return [e.purchased, e.shopPreviews]
-    }, [s, o]), [v, T] = i.useState(() => null != m ? m : void 0 !== f ? f : null == p ? null : p ?? null), b = i.useMemo(() => y.find(e => {
+    }, [s, o]), [v, T] = i.useState(() => null != m ? m : void 0 !== A ? A : null == p ? null : p ?? null), b = i.useMemo(() => y.find(e => {
         let {
             skuId: t
         } = e;
@@ -96,15 +96,15 @@ function v(e) {
     }) ?? null, [v, y, C]), {
         product: S,
         purchase: N
-    } = (0, d.A)(b?.skuId), k = i.useRef(null), O = h.Ay.canUseCollectibles(t), R = void 0 === f ? v?.skuId === p?.skuId : v?.skuId === f?.skuId, U = i.useCallback(e => {
+    } = (0, u.A)(b?.skuId), k = i.useRef(null), O = h.Ay.canUseCollectibles(t), R = void 0 === A ? v?.skuId === p?.skuId : v?.skuId === A?.skuId, U = i.useCallback(e => {
         T(e)
     }, [T]), L = i.useCallback(e => {
-        A(), (0, c.Cz)({
+        f(), (0, c.Cz)({
             analyticsLocations: g,
             analyticsSource: a.A.EDIT_PROFILE_EFFECT_MODAL,
             initialProductSkuId: e
         })
-    }, [g, A]);
+    }, [g, f]);
     return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)(l.rQ0, {
             "data-migration-pending": !0,
@@ -116,7 +116,7 @@ function v(e) {
             }), (0, r.jsx)(l.s_y, {
                 "data-migration-pending": !0,
                 className: I.iT,
-                onClick: A
+                onClick: f
             })]
         }), (0, r.jsxs)(l.$mQ, {
             "data-migration-pending": !0,
@@ -138,9 +138,9 @@ function v(e) {
         }), (0, r.jsx)(P, {
             user: t,
             onApply: () => {
-                (0, x.mZ)(v, n?.id), A()
+                (0, x.mZ)(v, n?.id), f()
             },
-            onClose: A,
+            onClose: f,
             onOpenShop: L,
             product: S,
             purchase: N,
@@ -156,20 +156,20 @@ function T(e) {
         transitionState: t,
         analyticsLocations: n,
         initialSelectedEffect: c,
-        guild: u,
-        onClose: d
+        guild: d,
+        onClose: u
     } = e, {
         isFetching: p,
         categories: g,
         purchases: h
-    } = (0, m.Ay)(), _ = (0, s.bG)([A.default], () => A.default.getCurrentUser()), {
+    } = (0, m.Ay)(), _ = (0, s.bG)([f.default], () => f.default.getCurrentUser()), {
         analyticsLocations: E
     } = (0, o.Ay)(n, a.A.EDIT_PROFILE_EFFECT_MODAL), C = (0, x.N2)({
         user: _,
-        guildId: u?.id
+        guildId: d?.id
     });
     return i.useEffect(() => {
-        f.default.track(y.HAw.OPEN_MODAL, {
+        A.default.track(y.HAw.OPEN_MODAL, {
             type: y.JJy.PROFILE_EFFECT_CUSTOMIZATION,
             location_stack: E
         })
@@ -186,12 +186,12 @@ function T(e) {
                 type: l.y$y.Type.SPINNING_CIRCLE
             }) : (0, r.jsx)(v, {
                 user: _,
-                guild: u,
+                guild: d,
                 categories: g,
                 purchases: h,
                 initialSelectedProfileEffect: c,
                 currentSavedEffect: C,
-                onClose: d,
+                onClose: u,
                 analyticsLocations: E
             })
         })

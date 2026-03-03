@@ -1,6 +1,6 @@
 /** chunk id: 571827, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => d
+    A: () => u
 });
 var r = n(627968);
 n(64700);
@@ -10,23 +10,23 @@ var i = n(575593),
     a = n(404374),
     o = n(788868),
     c = n(985018),
-    u = n(682655);
+    d = n(682655);
 
-function d(e) {
+function u(e) {
     let {
         itemType: t,
-        onClose: d
+        onClose: u
     } = e, {
         newestAnalyticsLocation: m
     } = (0, l.Ay)(), p = t === i.R.AVATAR_DECORATION ? o.e.AVATAR_DECORATION_MODAL_UPSELL : t === i.R.PROFILE_EFFECT ? o.e.PROFILE_EFFECT_MODAL_UPSELL : t === i.R.NAMEPLATE ? o.e.NAMEPLATE_MODAL_UPSELL : null;
     return null == p ? null : (0, r.jsxs)("div", {
-        className: u.hc,
+        className: d.hc,
         children: [(0, r.jsx)(s.tvc, {
-            className: u.ax,
+            className: d.ax,
             size: "md",
             color: a.k0.PREMIUM_TIER_2
         }), (0, r.jsx)(s.Text, {
-            className: u.cf,
+            className: d.cf,
             variant: "text-md/medium",
             children: p === o.e.AVATAR_DECORATION_MODAL_UPSELL ? c.intl.format(c.t["aFR/EI"], {
                 onClick: () => {
@@ -40,7 +40,7 @@ function d(e) {
                             body: c.intl.string(c.t["5XvsdZ"]),
                             glowUp: c.intl.string(c.t["5XvsdZ"]),
                             analyticsSource: m,
-                            onSecondaryClick: d,
+                            onSecondaryClick: u,
                             ...t
                         })
                     })
@@ -57,7 +57,7 @@ function d(e) {
                             body: c.intl.string(c.t["Hza+Bu"]),
                             glowUp: c.intl.string(c.t["Hza+Bu"]),
                             analyticsSource: m,
-                            onSecondaryClick: d,
+                            onSecondaryClick: u,
                             ...t
                         })
                     })
@@ -74,7 +74,7 @@ function d(e) {
                             body: c.intl.string(c.t["0/QPxO"]),
                             glowUp: c.intl.string(c.t["0/QPxO"]),
                             analyticsSource: m,
-                            onSecondaryClick: d,
+                            onSecondaryClick: u,
                             ...t
                         })
                     })

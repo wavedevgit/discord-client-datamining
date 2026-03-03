@@ -28,12 +28,12 @@ function y(e) {
         granularity: g = "day",
         hourCycle: V,
         hideTimeZone: C = !1,
-        ...S
+        ...j
     } = e, {
-        i18n: j
+        i18n: S
     } = (0, v.G9)(), {
         fieldProps: k
-    } = (0, p.n)(S), {
+    } = (0, p.n)(j), {
         disabled: w,
         errorMessage: T,
         required: M = !1
@@ -43,9 +43,9 @@ function y(e) {
         refs: I,
         floatingStyles: A,
         isOpen: L,
-        setIsOpen: B,
+        setIsOpen: N,
         context: O,
-        getFloatingProps: N,
+        getFloatingProps: B,
         getReferenceProps: E
     } = (0, c.u)({
         matchReferenceWidth: !1,
@@ -68,7 +68,7 @@ function y(e) {
         },
         duration: 100
     }), z = e => {
-        a?.(e), B(!1)
+        a?.(e), N(!1)
     };
     return (0, t.jsx)(p.D, {
         ...k,
@@ -104,15 +104,15 @@ function y(e) {
                         })
                     }), (0, t.jsx)(d.$, {
                         className: h.B7,
-                        onClick: () => B(!L),
-                        "aria-label": j.DATE_INPUT_OPEN_CALENDAR_LABEL,
+                        onClick: () => N(!L),
+                        "aria-label": S.DATE_INPUT_OPEN_CALENDAR_LABEL,
                         children: (0, t.jsx)(m.CalendarIcon, {
                             size: "sm",
                             color: "currentColor"
                         })
                     })]
                 }), L && R && (0, t.jsx)("div", {
-                    ...N(),
+                    ...B(),
                     ref: I.setFloating,
                     style: A,
                     className: h.oO,

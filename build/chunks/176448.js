@@ -2,8 +2,8 @@
 n.d(t, {
     Ay: () => p,
     ZK: () => m,
-    dP: () => d,
-    wn: () => u
+    dP: () => u,
+    wn: () => d
 }), n(321073);
 var r, i = n(64700),
     s = n(417597),
@@ -11,8 +11,8 @@ var r, i = n(64700),
     a = n(4227),
     o = n(993408),
     c = n(985018),
-    u = ((r = {}).PURCHASE = "purchase", r.PREMIUM_PURCHASE = "premium_purchase", r.PREVIEW = "preview", r);
-let d = {
+    d = ((r = {}).PURCHASE = "purchase", r.PREMIUM_PURCHASE = "premium_purchase", r.PREVIEW = "preview", r);
+let u = {
         skuId: "None"
     },
     m = {
@@ -32,7 +32,7 @@ let d = {
             });
             return [{
                 section: "purchase",
-                items: [d, m, ...r.purchase],
+                items: [u, m, ...r.purchase],
                 height: 12,
                 header: c.intl.string(c.t["9x1v/p"])
             }, {

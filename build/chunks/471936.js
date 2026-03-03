@@ -68,9 +68,9 @@ function v(e) {
         customErrorNotice: d,
         errorNoticeType: u,
         ...c
-    } = e, [b, v] = o.useState("intro"), [h, y] = o.useState(!1), [f, g] = o.useState(!1), [V, C] = o.useState(!1), [S, j] = o.useState(null), k = o.useCallback(async () => {
-        if (j(null), l > 0 && await new Promise(e => setTimeout(e, 1e3 * l)), r && alert("onNext callback fired"), a) {
-            if ("" !== d.trim()) return j({
+    } = e, [b, v] = o.useState("intro"), [h, y] = o.useState(!1), [f, g] = o.useState(!1), [V, C] = o.useState(!1), [j, S] = o.useState(null), k = o.useCallback(async () => {
+        if (S(null), l > 0 && await new Promise(e => setTimeout(e, 1e3 * l)), r && alert("onNext callback fired"), a) {
+            if ("" !== d.trim()) return S({
                 message: d,
                 type: u
             }), !1;
@@ -78,8 +78,8 @@ function v(e) {
         }
         return !0
     }, [l, a, r, d, u]), w = o.useCallback(async () => {
-        if (j(null), l > 0 && await new Promise(e => setTimeout(e, 1e3 * l)), s && alert("onComplete callback fired"), n) {
-            if ("" !== d.trim()) throw j({
+        if (S(null), l > 0 && await new Promise(e => setTimeout(e, 1e3 * l)), s && alert("onComplete callback fired"), n) {
+            if ("" !== d.trim()) throw S({
                 message: d,
                 type: u
             }), Error("Custom error");
@@ -90,9 +90,9 @@ function v(e) {
         modalProps: {
             title: "Verify radness",
             subtitle: "To verify your radness, we need to ask you a few deep and personal questions.",
-            notice: null != S ? {
-                message: S.message,
-                type: S.type
+            notice: null != j ? {
+                message: j.message,
+                type: j.type
             } : void 0
         },
         body: (0, t.jsx)(p, {}),
@@ -105,9 +105,9 @@ function v(e) {
         modalProps: {
             title: "Safety first",
             subtitle: "Before we get started verifying your radness, we need to make sure you're safe and sound.",
-            notice: null != S ? {
-                message: S.message,
-                type: S.type
+            notice: null != j ? {
+                message: j.message,
+                type: j.type
             } : V ? {
                 message: "Great job, helmets are important for protecting your brain!",
                 type: "warning"
@@ -124,9 +124,9 @@ function v(e) {
         modalProps: {
             title: "Enter passcode",
             subtitle: "Enter your passcode to complete the radness verification process.",
-            notice: null != S ? {
-                message: S.message,
-                type: S.type
+            notice: null != j ? {
+                message: j.message,
+                type: j.type
             } : void 0
         },
         body: (0, t.jsx)(x, {

@@ -28,9 +28,9 @@ let b = {
                 showMinMax: h
             } = e, [y, f] = o.useState((0, n.Ec)((0, n.Xj)())), [g, V] = o.useState(""), C = o.useCallback(e => {
                 f(e), V("")
-            }, []), S = o.useCallback(() => {
-                f(null)
             }, []), j = o.useCallback(() => {
+                f(null)
+            }, []), S = o.useCallback(() => {
                 f((0, n.Ec)((0, n.Xj)()))
             }, []), k = o.useCallback(() => {
                 "day" === m ? f((0, i._U)("2024-12-25")) : f((0, i.DP)("2024-12-25T15:30"))
@@ -66,13 +66,13 @@ let b = {
                         variant: "secondary",
                         size: "sm",
                         text: "Clear",
-                        onClick: S,
+                        onClick: j,
                         disabled: b
                     }), (0, t.jsx)(u.$nd, {
                         variant: "secondary",
                         size: "sm",
                         text: "Set Today",
-                        onClick: j,
+                        onClick: S,
                         disabled: b
                     }), (0, t.jsx)(u.$nd, {
                         variant: "secondary",

@@ -9,8 +9,8 @@ var r = n(627968),
     a = n(590180),
     o = n(4227),
     c = n(993408),
-    u = n(985018),
-    d = n(616198);
+    d = n(985018),
+    u = n(616198);
 let m = e => {
     let {
         skuId: t,
@@ -23,13 +23,13 @@ let m = e => {
         return null != n ? (0, c.gA)(n) : (0, c.G0)(e)
     });
     return m || p && n ? null : g ? (0, r.jsx)(l.JIr, {
-        className: d.Ad,
+        className: u.Ad,
         text: (0, r.jsxs)("div", {
-            className: d.rm,
+            className: u.rm,
             children: [(0, r.jsx)(l.XAi, {
                 size: "xxs",
                 color: "currentColor"
-            }), u.intl.string(u.t.y2b7CA)]
+            }), d.intl.string(d.t.y2b7CA)]
         })
     }) : (0, r.jsx)(l.fkz, {
         icon: x ? () => (0, r.jsx)(l.tvc, {
@@ -42,6 +42,6 @@ let m = e => {
             color: "currentColor"
         }),
         color: s.A.colors.BACKGROUND_MOD_STRONG.css,
-        className: d.bG
+        className: u.bG
     })
 }

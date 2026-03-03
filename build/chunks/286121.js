@@ -29,7 +29,7 @@ let r = {
                 showLoading: y,
                 showTrailingIndicator: f,
                 dangerItemColor: g
-            } = e, [V, C] = o.useState(!0), [S, j] = o.useState(!1), [k, w] = o.useState("text"), [T, M] = o.useState("cozy"), [D, I] = o.useState(!0), A = o.useRef(null);
+            } = e, [V, C] = o.useState(!0), [j, S] = o.useState(!1), [k, w] = o.useState("text"), [T, M] = o.useState("cozy"), [D, I] = o.useState(!0), A = o.useRef(null);
             return (0, t.jsxs)("div", {
                 className: s.k,
                 children: [!D && (0, t.jsx)(n.$nd, {
@@ -149,8 +149,8 @@ let r = {
                                 }), (0, t.jsx)(i.sLh, {
                                     id: "mute",
                                     label: "Mute Channel",
-                                    checked: S,
-                                    action: () => j(!S)
+                                    checked: j,
+                                    action: () => S(!j)
                                 })]
                             }), c && (0, t.jsxs)(t.Fragment, {
                                 children: [(0, t.jsx)(i.bXX, {}), (0, t.jsx)(i.fPC, {
