@@ -30,18 +30,30 @@ let d = e => {
             children: [(0, i.jsxs)(r.DUT, {
                 className: o.b,
                 onClick: n,
-                children: [(0, i.jsx)(r.Text, {
-                    variant: "text-md/medium",
-                    children: a.intl.string(a.t["AszWL/"])
+                children: [(0, i.jsxs)("div", {
+                    children: [(0, i.jsx)(r.Text, {
+                        variant: "text-md/medium",
+                        children: a.intl.string(a.t["AszWL/"])
+                    }), (0, i.jsx)(r.Text, {
+                        variant: "text-sm/normal",
+                        color: "text-muted",
+                        children: a.intl.string(a.t["0Jikui"])
+                    })]
                 }), (0, i.jsx)(r.uhT, {
                     size: "sm"
                 })]
             }), (0, i.jsxs)(r.DUT, {
                 className: o.b,
                 onClick: d,
-                children: [(0, i.jsx)(r.Text, {
-                    variant: "text-md/medium",
-                    children: a.intl.string(a.t.jMSjZL)
+                children: [(0, i.jsxs)("div", {
+                    children: [(0, i.jsx)(r.Text, {
+                        variant: "text-md/medium",
+                        children: a.intl.string(a.t.jMSjZL)
+                    }), (0, i.jsx)(r.Text, {
+                        variant: "text-sm/normal",
+                        color: "text-muted",
+                        children: a.intl.string(a.t.qEaUPS)
+                    })]
                 }), (0, i.jsx)(r.uhT, {
                     size: "sm"
                 })]

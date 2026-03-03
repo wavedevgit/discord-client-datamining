@@ -1,7 +1,7 @@
 /** chunk id: 126912, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => E
+    A: () => x
 });
 var i = n(627968),
     s = n(64700),
@@ -158,6 +158,6 @@ class A extends s.PureComponent {
         return e ? this.renderBusy() : t ? this.renderSuccess() : this.renderError()
     }
 }
-let E = l.Ay.connectStores([_.A], () => ({
+let x = l.Ay.connectStores([_.A], () => ({
     defaultRoute: _.A.defaultRoute
 }))(A)

@@ -1,7 +1,7 @@
 /** chunk id: 187035, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => B
+    A: () => U
 });
 var i = n(627968),
     s = n(64700),
@@ -19,16 +19,16 @@ var i = n(627968),
     m = n(895600),
     f = n(768397),
     A = n(942614),
-    E = n(210714),
-    x = n(894778),
+    x = n(210714),
+    E = n(894778),
     I = n(961350),
-    N = n(650048),
-    v = n(877062),
+    v = n(650048),
+    N = n(877062),
     j = n(129851),
     S = n(538796),
     C = n(229),
-    y = n(652215),
-    T = n(401755),
+    T = n(652215),
+    y = n(401755),
     b = n(771016),
     R = n(315290),
     O = n(396574),
@@ -38,7 +38,7 @@ var i = n(627968),
 d.Ay.initialize();
 class D extends s.PureComponent {
     componentDidMount() {
-        (0, E.d)("guildTemplate"), O.VP || v.A.launch("discord://" + y.BVt.GUILD_TEMPLATE(this.props.code), () => void 0)
+        (0, x.d)("guildTemplate"), O.VP || N.A.launch("discord://" + T.BVt.GUILD_TEMPLATE(this.props.code), () => void 0)
     }
     componentDidUpdate(e) {
         this.props.code !== e.code && g.A.resolveGuildTemplate(this.props.code)
@@ -96,12 +96,12 @@ class D extends s.PureComponent {
         let {
             guildTemplate: e
         } = this.props;
-        return (o()(null != e, "guild template must not be null"), e.state === T.QB.RESOLVING) ? (0, i.jsx)(u.Ay, {
+        return (o()(null != e, "guild template must not be null"), e.state === y.QB.RESOLVING) ? (0, i.jsx)(u.Ay, {
             className: w.sL,
             children: (0, i.jsx)(f.A, {
                 guildTemplate: e
             })
-        }) : (0, i.jsx)(U, {
+        }) : (0, i.jsx)(B, {
             guildTemplate: e
         })
     }
@@ -121,12 +121,12 @@ class D extends s.PureComponent {
             location: r
         } = this.props;
         if (null == e) return this.renderSpinner(L.intl.string(L.t.ZTNur7));
-        if (t === y.fAW.OPEN) return this.renderAppOpened();
-        if (t === y.fAW.OPENING) return this.renderSpinner(L.intl.string(L.t["Z+hCVU"]));
+        if (t === T.fAW.OPEN) return this.renderAppOpened();
+        if (t === T.fAW.OPENING) return this.renderSpinner(L.intl.string(L.t["Z+hCVU"]));
         switch (e.state) {
-            case T.QB.RESOLVING:
+            case y.QB.RESOLVING:
                 return this.renderSpinner(L.intl.string(L.t["Z+hCVU"]));
-            case T.QB.RESOLVED:
+            case y.QB.RESOLVED:
                 if (n || !O.VP) return this.renderAuthenticatedOrDownload();
                 if (this.props.login) return (0, i.jsx)(j.A, {
                     guildTemplate: e,
@@ -138,10 +138,10 @@ class D extends s.PureComponent {
                     transitionTo: s,
                     location: r,
                     onRegister: () => {
-                        (0, A.C)(b.zY.ORGANIC_REGISTERED_GUILD_TEMPLATE), x.A.flowStart(R.do.ORGANIC_GUILD_TEMPLATES, R.ju.NUF_STARTED)
+                        (0, A.C)(b.zY.ORGANIC_REGISTERED_GUILD_TEMPLATE), E.A.flowStart(R.do.ORGANIC_GUILD_TEMPLATES, R.ju.NUF_STARTED)
                     }
                 });
-            case T.QB.EXPIRED:
+            case y.QB.EXPIRED:
                 return this.renderInvalidGuildTemplate();
             default:
                 return null
@@ -149,12 +149,12 @@ class D extends s.PureComponent {
     }
 }
 
-function B(e) {
+function U(e) {
     let t = {
         guildTemplate: (0, d.bG)([_.A], () => _.A.getGuildTemplate(e.code)),
         nativeAppState: (0, d.bG)([h.A], () => h.A.getState(e.code)),
         authenticated: (0, d.bG)([I.default], () => I.default.isAuthenticated()),
-        defaultRoute: (0, d.bG)([N.A], () => N.A.defaultRoute)
+        defaultRoute: (0, d.bG)([v.A], () => v.A.defaultRoute)
     };
     return (0, i.jsx)(D, {
         ...e,
@@ -162,14 +162,14 @@ function B(e) {
     })
 }
 
-function U(e) {
+function B(e) {
     let {
         guildTemplate: t
     } = e, {
         form: n,
         handleSubmit: s
     } = (0, p.A)(t, !1);
-    x.A.flowStep(R.do.ORGANIC_GUILD_TEMPLATES, R.jC.GUILD_CREATE);
+    E.A.flowStep(R.do.ORGANIC_GUILD_TEMPLATES, R.jC.GUILD_CREATE);
     let r = (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(u.hE, {
             className: w.wx,

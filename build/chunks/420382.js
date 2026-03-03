@@ -25,7 +25,7 @@ function A(e) {
         transitionTo: r = _.pX
     } = e, [a, A] = s.useState("submitting");
 
-    function E() {
+    function x() {
         return "Android" === l().os.family || "iOS" === l().os.family ? null : (0, i.jsx)(o.Button, {
             text: m.intl.string(m.t.dKhVQN),
             fullWidth: !0,
@@ -55,7 +55,7 @@ function A(e) {
         }), (0, i.jsx)(h.tK, {
             className: f.C2,
             children: m.intl.string(m.t.i3ehMr)
-        }), E()]
+        }), x()]
     }) : "succeeded" === a ? (0, i.jsxs)(h.Ay, {
         children: [(0, i.jsx)("img", {
             alt: "",
@@ -67,7 +67,7 @@ function A(e) {
         }), (0, i.jsx)(h.tK, {
             className: f.C2,
             children: m.intl.string(m.t["Elv+qt"])
-        }), E()]
+        }), x()]
     }) : (0, i.jsxs)(h.Ay, {
         children: [(0, i.jsx)(h.CK, {}), (0, i.jsx)(h.hE, {
             children: m.intl.string(m.t["9exy+V"])

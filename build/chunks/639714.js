@@ -1,15 +1,15 @@
 /** chunk id: 639714, original params: e,t,i (module,exports,require) **/
 i.d(t, {
     A: () => A,
-    o: () => I
+    o: () => E
 });
 var n = i(627968),
     l = i(64700),
     a = i(503698),
     s = i.n(a),
     r = i(505779),
-    c = i(311907),
-    o = i(397927),
+    o = i(311907),
+    c = i(397927),
     d = i(73153),
     u = i(714991),
     m = i(970163),
@@ -27,7 +27,7 @@ function A(e) {
         trackClick: i,
         onInviteResolved: a,
         closeModal: A
-    } = e, [I, _] = l.useState(), N = (0, c.bG)([x.A], () => I?.guild?.id != null && x.A.isMember(I?.guild?.id)), E = l.useMemo(() => t.websites?.find(e => {
+    } = e, [E, I] = l.useState(), _ = (0, o.bG)([x.A], () => E?.guild?.id != null && x.A.isMember(E?.guild?.id)), N = l.useMemo(() => t.websites?.find(e => {
         let {
             category: t
         } = e;
@@ -37,104 +37,21 @@ function A(e) {
             let e = async e => {
                 let t = e.split("/").pop();
                 if (null != t) {
-                    if (null != I && I.code.toLowerCase() === t.toLowerCase()) return;
+                    if (null != E && E.code.toLowerCase() === t.toLowerCase()) return;
                     let e = await (0, m.A)(t);
-                    !0 !== e.banned && (_(e.invite), null != e.invite && a?.(e.invite))
+                    !0 !== e.banned && (I(e.invite), null != e.invite && a?.(e.invite))
                 }
             };
-            null != E && e(E.url)
-        }, [E, a, I]), null == I || null == I.guild || !I.guild.features.includes(f.GuildFeatures.VERIFIED)) return null;
-    let S = g.Ay.getGuildIconURL({
-        id: I.guild.id,
-        icon: I.guild.icon,
-        size: 32
-    });
-    return (0, n.jsxs)("div", {
-        className: v.fi,
-        children: [(0, n.jsx)(o.Heading, {
-            className: v.bV,
-            variant: "text-xs/semibold",
-            color: "text-default",
-            children: j.intl.string(j.t.kBDZSL)
-        }), (0, n.jsxs)("div", {
-            className: s()(v.nM, v.mX),
-            children: [(0, n.jsx)("img", {
-                className: p.$f,
-                src: S,
-                alt: j.intl.formatToPlainString(j.t.xm6W9D, {
-                    guildName: I.guild.name
-                })
-            }), (0, n.jsxs)("div", {
-                className: p.U5,
-                children: [(0, n.jsxs)("div", {
-                    className: p.YS,
-                    children: [(0, n.jsx)(o.Text, {
-                        variant: "text-sm/semibold",
-                        children: I.guild.name
-                    }), (0, n.jsx)(u.A, {
-                        guild: I.guild,
-                        size: 16
-                    })]
-                }), null != I.approximate_member_count && (0, n.jsx)(o.Text, {
-                    variant: "text-xxs/normal",
-                    color: "text-muted",
-                    children: j.intl.format(j.t.zRl6XR, {
-                        count: I.approximate_member_count
-                    })
-                })]
-            })]
-        }), (0, n.jsx)(o.Button, {
-            variant: "secondary",
-            text: N ? j.intl.string(j.t.cEnaWx) : j.intl.string(j.t.XpeFYr),
-            onClick: () => {
-                A(), i(h.Ws.JoinOfficialServer), d.h.dispatch({
-                    type: "INVITE_MODAL_OPEN",
-                    invite: I,
-                    code: I.code,
-                    context: f.BRT.APP
-                })
-            },
-            fullWidth: !0
-        })]
-    })
-}
-
-function I(e) {
-    let {
-        detectedGame: t,
-        trackClick: i,
-        onInviteResolved: a,
-        closeModal: A
-    } = e, [I, _] = l.useState(), N = l.useRef(null), E = l.useRef(a);
-    l.useEffect(() => {
-        E.current = a
-    }, [a]);
-    let S = (0, c.bG)([x.A], () => I?.guild?.id != null && x.A.isMember(I?.guild?.id)),
-        T = l.useMemo(() => t.websites?.find(e => {
-            let {
-                category: t
-            } = e;
-            return t === r.V.DISCORD
-        }), [t.websites]);
-    if (l.useEffect(() => {
-            let e = async e => {
-                let t = e.split("/").pop();
-                if (null != t) {
-                    if (N.current?.toLowerCase() === t.toLowerCase()) return;
-                    let e = await (0, m.A)(t);
-                    !0 !== e.banned && (N.current = t, _(e.invite), null != e.invite && E.current?.(e.invite))
-                }
-            };
-            null != T && e(T.url)
-        }, [T]), null == I || null == I.guild || !I.guild.features.includes(f.GuildFeatures.VERIFIED)) return null;
+            null != N && e(N.url)
+        }, [N, a, E]), null == E || null == E.guild || !E.guild.features.includes(f.GuildFeatures.VERIFIED)) return null;
     let C = g.Ay.getGuildIconURL({
-        id: I.guild.id,
-        icon: I.guild.icon,
+        id: E.guild.id,
+        icon: E.guild.icon,
         size: 32
     });
     return (0, n.jsxs)("div", {
         className: v.fi,
-        children: [(0, n.jsx)(o.Heading, {
+        children: [(0, n.jsx)(c.Heading, {
             className: v.bV,
             variant: "text-xs/semibold",
             color: "text-default",
@@ -145,35 +62,118 @@ function I(e) {
                 className: p.$f,
                 src: C,
                 alt: j.intl.formatToPlainString(j.t.xm6W9D, {
-                    guildName: I.guild.name
+                    guildName: E.guild.name
                 })
             }), (0, n.jsxs)("div", {
                 className: p.U5,
                 children: [(0, n.jsxs)("div", {
                     className: p.YS,
-                    children: [(0, n.jsx)(o.Text, {
+                    children: [(0, n.jsx)(c.Text, {
                         variant: "text-sm/semibold",
-                        children: I.guild.name
+                        children: E.guild.name
                     }), (0, n.jsx)(u.A, {
-                        guild: I.guild,
+                        guild: E.guild,
                         size: 16
                     })]
-                }), null != I.approximate_member_count && (0, n.jsx)(o.Text, {
+                }), null != E.approximate_member_count && (0, n.jsx)(c.Text, {
                     variant: "text-xxs/normal",
                     color: "text-muted",
                     children: j.intl.format(j.t.zRl6XR, {
-                        count: I.approximate_member_count
+                        count: E.approximate_member_count
                     })
                 })]
             })]
-        }), (0, n.jsx)(o.Button, {
+        }), (0, n.jsx)(c.Button, {
             variant: "secondary",
-            text: S ? j.intl.string(j.t.cEnaWx) : j.intl.string(j.t.XpeFYr),
+            text: _ ? j.intl.string(j.t.cEnaWx) : j.intl.string(j.t.XpeFYr),
             onClick: () => {
                 A(), i(h.Ws.JoinOfficialServer), d.h.dispatch({
                     type: "INVITE_MODAL_OPEN",
-                    invite: I,
-                    code: I.code,
+                    invite: E,
+                    code: E.code,
+                    context: f.BRT.APP
+                })
+            },
+            fullWidth: !0
+        })]
+    })
+}
+
+function E(e) {
+    let {
+        detectedGame: t,
+        trackClick: i,
+        onInviteResolved: a,
+        closeModal: A
+    } = e, [E, I] = l.useState(), _ = l.useRef(null), N = l.useRef(a);
+    l.useEffect(() => {
+        N.current = a
+    }, [a]);
+    let C = (0, o.bG)([x.A], () => E?.guild?.id != null && x.A.isMember(E?.guild?.id)),
+        T = l.useMemo(() => t.websites?.find(e => {
+            let {
+                category: t
+            } = e;
+            return t === r.V.DISCORD
+        }), [t.websites]);
+    if (l.useEffect(() => {
+            let e = async e => {
+                let t = e.split("/").pop();
+                if (null != t) {
+                    if (_.current?.toLowerCase() === t.toLowerCase()) return;
+                    let e = await (0, m.A)(t);
+                    !0 !== e.banned && (_.current = t, I(e.invite), null != e.invite && N.current?.(e.invite))
+                }
+            };
+            null != T && e(T.url)
+        }, [T]), null == E || null == E.guild || !E.guild.features.includes(f.GuildFeatures.VERIFIED)) return null;
+    let S = g.Ay.getGuildIconURL({
+        id: E.guild.id,
+        icon: E.guild.icon,
+        size: 32
+    });
+    return (0, n.jsxs)("div", {
+        className: v.fi,
+        children: [(0, n.jsx)(c.Heading, {
+            className: v.bV,
+            variant: "text-xs/semibold",
+            color: "text-default",
+            children: j.intl.string(j.t.kBDZSL)
+        }), (0, n.jsxs)("div", {
+            className: s()(v.nM, v.mX),
+            children: [(0, n.jsx)("img", {
+                className: p.$f,
+                src: S,
+                alt: j.intl.formatToPlainString(j.t.xm6W9D, {
+                    guildName: E.guild.name
+                })
+            }), (0, n.jsxs)("div", {
+                className: p.U5,
+                children: [(0, n.jsxs)("div", {
+                    className: p.YS,
+                    children: [(0, n.jsx)(c.Text, {
+                        variant: "text-sm/semibold",
+                        children: E.guild.name
+                    }), (0, n.jsx)(u.A, {
+                        guild: E.guild,
+                        size: 16
+                    })]
+                }), null != E.approximate_member_count && (0, n.jsx)(c.Text, {
+                    variant: "text-xxs/normal",
+                    color: "text-muted",
+                    children: j.intl.format(j.t.zRl6XR, {
+                        count: E.approximate_member_count
+                    })
+                })]
+            })]
+        }), (0, n.jsx)(c.Button, {
+            variant: "secondary",
+            text: C ? j.intl.string(j.t.cEnaWx) : j.intl.string(j.t.XpeFYr),
+            onClick: () => {
+                A(), i(h.Ws.JoinOfficialServer), d.h.dispatch({
+                    type: "INVITE_MODAL_OPEN",
+                    invite: E,
+                    code: E.code,
                     context: f.BRT.APP
                 })
             },

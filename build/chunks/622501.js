@@ -1,6 +1,6 @@
 /** chunk id: 622501, original params: e,n,t (module,exports,require) **/
 t.d(n, {
-    A: () => M
+    A: () => T
 });
 var l = t(627968),
     i = t(64700),
@@ -25,7 +25,7 @@ var l = t(627968),
     f = t(985018),
     x = t(993605);
 
-function T(e) {
+function M(e) {
     let {
         shouldUpsellFromNoneTier: n
     } = e, t = (0, a.bG)([E.default], () => E.default.locale);
@@ -61,7 +61,7 @@ function T(e) {
     })
 }
 
-function M(e) {
+function T(e) {
     let {
         premiumSubscriptionPlan: n,
         onClose: t,
@@ -70,11 +70,11 @@ function M(e) {
         onSubscriptionConfirmation: S,
         analyticsLocation: E,
         analyticsSourceLocation: P,
-        priceOptions: M
+        priceOptions: T
     } = e, {
         analyticsLocations: N,
         sourceAnalyticsLocations: h
-    } = (0, p.Ay)(u.A.GUILD_BOOSTING_PREMIUM_UPSELL), C = null == n || null == n.premiumSubscriptionType, L = b.Ay.getPrice(y.gD.PREMIUM_MONTH_TIER_2, !1, !1, M), R = (0, g.$g)(L.amount, L.currency), j = (0, d.V)(), D = j?.trial_id, k = j?.subscription_trial?.sku_id === y.pe.TIER_2;
+    } = (0, p.Ay)(u.A.GUILD_BOOSTING_PREMIUM_UPSELL), C = null == n || null == n.premiumSubscriptionType, L = b.Ay.getPrice(y.gD.PREMIUM_MONTH_TIER_2, !1, !1, T), R = (0, g.$g)(L.amount, L.currency), j = (0, d.V)(), D = j?.trial_id, k = j?.subscription_trial?.sku_id === y.pe.TIER_2;
     return i.useEffect(() => {
         A.default.track(I.HAw.PREMIUM_UPSELL_VIEWED, {
             type: y.e.GUILD_PREMIUM_UPSELL_MODAL,
@@ -97,7 +97,7 @@ function M(e) {
                 children: null != D ? f.intl.string(f.t.AoSzEr) : f.intl.format(f.t["7vePZb"], {
                     monthlyPrice: R
                 })
-            }), (0, l.jsx)(T, {
+            }), (0, l.jsx)(M, {
                 shouldUpsellFromNoneTier: C
             })]
         }), (0, l.jsx)(o.jlY, {

@@ -20,10 +20,10 @@ let A = e => {
     let {
         application: t,
         reportId: n
-    } = e, [A, h] = a.useState(!1), [b, v] = a.useState(!1), f = (0, i.bG)([x.A, u.A], () => u.A.getChannel(x.A.getChannelId())?.guild_id), [T, C] = a.useState(null);
+    } = e, [A, h] = a.useState(!1), [b, v] = a.useState(!1), f = (0, i.bG)([x.A, u.A], () => u.A.getChannel(x.A.getChannelId())?.guild_id), [C, T] = a.useState(null);
     a.useEffect(() => {
-        null != T && (h(!0), v(!0))
-    }, [T]), a.useEffect(() => {
+        null != C && (h(!0), v(!0))
+    }, [C]), a.useEffect(() => {
         if (null == f) return;
         let e = !1;
         return (async () => {
@@ -33,7 +33,7 @@ let A = e => {
             } catch {}
             if (e || null == n) return;
             let l = n.find(e => e.application?.id === t.id);
-            null != l && C(l)
+            null != l && T(l)
         })(), () => {
             e = !0
         }
@@ -43,13 +43,13 @@ let A = e => {
                 guild_id: f,
                 application_id: t.id,
                 report_id: n
-            }), null != f && null != T && o.A.disableIntegration(f, T.id).catch(() => {
+            }), null != f && null != C && o.A.disableIntegration(f, C.id).catch(() => {
                 r.A.show({
                     title: g.intl.string(g.t.wYqMmI),
                     body: g.intl.string(g.t.A4Mnst)
                 })
             })
-        }, [t.id, f, T, n]),
+        }, [t.id, f, C, n]),
         j = (0, i.bG)([m.A, _.A], () => {
             let e = _.A.getGuild(f);
             if (null == e) return !1;

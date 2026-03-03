@@ -7,8 +7,8 @@ var n = i(627968),
     a = i(503698),
     s = i.n(a),
     r = i(158954),
-    c = i(397927),
-    o = i(760459),
+    o = i(397927),
+    c = i(760459),
     d = i(985018),
     u = i(851822),
     m = i(491510);
@@ -39,7 +39,7 @@ function x(e) {
                 }),
                 children: (0, n.jsx)("div", {
                     className: u.fi,
-                    children: v.map(e => (0, n.jsx)(o.A, {
+                    children: v.map(e => (0, n.jsx)(c.A, {
                         entry: e,
                         viewId: i,
                         onClose: x,
@@ -47,14 +47,14 @@ function x(e) {
                         source: g
                     }, e.id))
                 })
-            }), h && !f && (0, n.jsxs)(c.DUT, {
+            }), h && !f && (0, n.jsxs)(o.DUT, {
                 className: m.ND,
                 onClick: () => j(!0),
                 children: [(0, n.jsx)(r.EYj, {
                     variant: "text-xs/semibold",
                     color: "interactive-text-default",
                     children: d.intl.string(d.t.yohc6E)
-                }), (0, n.jsx)(c.abt, {
+                }), (0, n.jsx)(o.abt, {
                     size: "xs"
                 })]
             })]

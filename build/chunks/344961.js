@@ -19,16 +19,16 @@ var i = n(627968),
     m = n(293731),
     f = n(961350),
     A = n(203982),
-    E = n(723702),
-    x = n(337905),
+    x = n(723702),
+    E = n(337905),
     I = n(427262),
-    N = n(837921),
-    v = n(652215),
+    v = n(837921),
+    N = n(652215),
     j = n(818348),
     S = n(985018),
     C = n(947089),
-    y = n(473169);
-let T = n(906118),
+    T = n(473169);
+let y = n(906118),
     b = new g.A("LoginQRSocket");
 
 function R(e) {
@@ -37,8 +37,8 @@ function R(e) {
     } = e, [n, r] = s.useState(!1);
     return s.useEffect(() => {
         let e = new Image;
-        e.src = T, e.onload = () => r(!0), e.onerror = () => r(!0)
-    }, [T]), s.useEffect(() => {
+        e.src = y, e.onload = () => r(!0), e.onerror = () => r(!0)
+    }, [y]), s.useEffect(() => {
         n && o.ORC.announce(S.intl.string(S.t.j2p125))
     }, [n]), (0, i.jsx)("div", {
         className: C.Ac,
@@ -50,7 +50,7 @@ function R(e) {
             }), (0, i.jsx)("div", {
                 className: C.R6,
                 children: (0, i.jsx)("img", {
-                    src: T,
+                    src: y,
                     alt: ""
                 })
             })]
@@ -94,7 +94,7 @@ function L(e) {
                 children: [(0, i.jsx)(R, {
                     text: 1 === t.step ? `https://discord.com/ra/${t.fingerprint}` : ""
                 }), (0, i.jsx)(_.hE, {
-                    className: y.QB,
+                    className: T.QB,
                     children: S.intl.string(S.t.UPiHaL)
                 }), null != s ? (0, i.jsx)(O, {
                     children: s
@@ -108,7 +108,7 @@ function L(e) {
                         textVariant: "text-sm/normal",
                         onClick: () => {
                             let e;
-                            return e = E.isPlatformEmbedded && N.Ay.supportsFeature(v.BYE.WEBAUTHN) ? N.Ay.webAuthnAuthenticate : m.J, void d.A.authenticatePasswordless({
+                            return e = x.isPlatformEmbedded && v.Ay.supportsFeature(N.BYE.WEBAUTHN) ? v.Ay.webAuthnAuthenticate : m.J, void d.A.authenticatePasswordless({
                                 authenticateFunc: e,
                                 conditionalMediationAbortController: r
                             }).catch(() => {})
@@ -130,7 +130,7 @@ function L(e) {
                     isMobile: !0,
                     status: j.cl.ONLINE
                 }), (0, i.jsx)(_.hE, {
-                    className: y.QB,
+                    className: T.QB,
                     children: S.intl.string(S.t.apGCUT)
                 }), (0, i.jsx)(_.tK, {
                     children: S.intl.format(S.t.Cbl5JK, {
@@ -206,7 +206,7 @@ function w(e) {
                 switch (r.op) {
                     case "nonce_proof": {
                         let e = r.encrypted_nonce,
-                            t = await (0, x.lU)(h(), e);
+                            t = await (0, E.lU)(h(), e);
                         s("computed nonce proof"), i.send(JSON.stringify({
                             op: "nonce_proof",
                             nonce: t
@@ -214,8 +214,8 @@ function w(e) {
                         return
                     }
                     case "pending_remote_init": {
-                        p.succeed(), A._.dispatch(v.jej.WAVE_EMPHASIZE);
-                        let e = await (0, x.Fs)(h());
+                        p.succeed(), A._.dispatch(N.jej.WAVE_EMPHASIZE);
+                        let e = await (0, E.Fs)(h());
                         if (e !== r.fingerprint) throw Error(`bad fingerprint ${e} !== ${r.fingerprint}`);
                         s("handshake complete awaiting remote auth."), o({
                             step: 1,
@@ -232,29 +232,29 @@ function w(e) {
                         return
                     }
                     case "pending_ticket": {
-                        A._.dispatch(v.jej.WAVE_EMPHASIZE), s("remote auth handshake started, awaiting ticket/cancel.");
+                        A._.dispatch(N.jej.WAVE_EMPHASIZE), s("remote auth handshake started, awaiting ticket/cancel.");
                         let e = r.encrypted_user_payload;
                         o({
                             step: 3,
-                            user: await (0, x.n7)(h(), e)
+                            user: await (0, E.n7)(h(), e)
                         });
                         return
                     }
                     case "pending_finish": {
-                        A._.dispatch(v.jej.WAVE_EMPHASIZE), s("remote auth handshake started, awaiting finish/cancel.");
+                        A._.dispatch(N.jej.WAVE_EMPHASIZE), s("remote auth handshake started, awaiting finish/cancel.");
                         let e = r.encrypted_user_payload;
                         o({
                             step: 2,
-                            user: await (0, x.n7)(h(), e)
+                            user: await (0, E.n7)(h(), e)
                         });
                         return
                     }
                     case "finish": {
-                        A._.dispatch(v.jej.WAVE_EMPHASIZE), s("remote auth handshake finished.");
+                        A._.dispatch(N.jej.WAVE_EMPHASIZE), s("remote auth handshake finished.");
                         let t = r.encrypted_token;
                         o({
                             step: 5
-                        }), e(await (0, x.S4)(h(), t), await (0, x.Fs)(h()));
+                        }), e(await (0, E.S4)(h(), t), await (0, E.Fs)(h()));
                         return
                     }
                     case "cancel":
@@ -272,8 +272,8 @@ function w(e) {
                         u = !0
                 }
             }, i.onopen = async () => {
-                r = await (0, x.T8)(), l = await (0, x.Jn)(r);
-                let e = await (0, x.Fs)(r);
+                r = await (0, E.T8)(), l = await (0, E.Jn)(r);
+                let e = await (0, E.Fs)(r);
                 s(`connected, handshaking with fingerprint: ${e}`), i.send(JSON.stringify({
                     op: "init",
                     encoded_public_key: l
@@ -305,7 +305,7 @@ function w(e) {
     }(c.step);
     return s.useEffect(() => {
         4 === c.step && null != c.ticket && a.Bo.post({
-            url: v.Rsh.REMOTE_AUTH_LOGIN,
+            url: N.Rsh.REMOTE_AUTH_LOGIN,
             body: {
                 ticket: c.ticket
             },
@@ -313,8 +313,8 @@ function w(e) {
             rejectWithError: !0
         }).then(async e => {
             if (null != _) try {
-                let n = await (0, x.S4)(_, e.body.encrypted_token),
-                    i = await (0, x.Fs)(_);
+                let n = await (0, E.S4)(_, e.body.encrypted_token),
+                    i = await (0, E.Fs)(_);
                 t(n, i)
             } catch (e) {
                 g()

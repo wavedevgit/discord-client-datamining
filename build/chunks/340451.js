@@ -38,12 +38,12 @@ function f(e) {
             }
         })()
     });
-    let E = s.useCallback(() => {
+    let x = s.useCallback(() => {
             n(p.BVt.LOGIN, {
                 source: "verify_email"
             })
         }, [n]),
-        x = s.useCallback(() => {
+        E = s.useCallback(() => {
             _.default.track(p.HAw.VERIFY_ACCOUNT_APP_OPENED, {
                 verifying_user_id: A.current
             }), (0, u.A)("verify_email")
@@ -52,11 +52,11 @@ function f(e) {
         title: g.intl.string(g.t["PCgG3+"]),
         subtitle: g.intl.string(g.t.tQpeA3),
         buttonText: g.intl.string(g.t.dKhVQN),
-        onButtonClick: E
+        onButtonClick: x
     }) : "succeeded" === r ? (0, i.jsx)(c.A, {
         title: g.intl.string(g.t["dAfGb+"]),
         buttonText: g.intl.string(g.t["uJWIj/"]),
-        onButtonClick: x,
+        onButtonClick: E,
         image: (0, i.jsx)(l.bqQ, {
             alt: g.intl.string(g.t["dAfGb+"])
         })

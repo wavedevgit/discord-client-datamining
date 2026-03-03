@@ -1,7 +1,7 @@
 /** chunk id: 998643, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.r(t), n.d(t, {
-    default: () => ey
+    default: () => eT
 });
 var i = n(627968),
     s = n(64700),
@@ -19,16 +19,16 @@ var i = n(627968),
     m = n(549711),
     f = n(829691),
     A = n(212640),
-    E = n(409934),
-    x = n(7936),
+    x = n(409934),
+    E = n(7936),
     I = n(49463),
-    N = n(122906),
-    v = n(121623),
+    v = n(122906),
+    N = n(121623),
     j = n(850381),
     S = n(21599),
     C = n(614986),
-    y = n(957622),
-    T = n(463347),
+    T = n(957622),
+    y = n(463347),
     b = n(210714),
     R = n(565287),
     O = n(961350),
@@ -36,8 +36,8 @@ var i = n(627968),
     w = n(299091),
     k = n(954571),
     D = n(139675),
-    B = n(612181),
-    U = n(486020),
+    U = n(612181),
+    B = n(486020),
     P = n(952072),
     G = n(765624),
     F = n(603647),
@@ -71,17 +71,17 @@ let er = (0, G.A)(Y.A),
     eh = (0, G.A)(et.A),
     e_ = (0, G.A)(M.A),
     ep = (0, G.A)(en.A),
-    eg = (0, G.A)(x.A),
+    eg = (0, G.A)(E.A),
     em = (0, G.A)(ee.A),
     ef = (0, G.A)(W.A),
-    eA = (0, G.A)(E.A),
-    eE = (0, G.A)(j.A),
-    ex = (0, G.A)(V.A),
+    eA = (0, G.A)(x.A),
+    ex = (0, G.A)(j.A),
+    eE = (0, G.A)(V.A),
     eI = (0, G.A)(H.A),
-    eN = (0, G.A)(X.A),
-    ev = (0, G.A)(Z.A),
+    ev = (0, G.A)(X.A),
+    eN = (0, G.A)(Z.A),
     ej = (0, G.A)(g.A),
-    eS = (0, G.A)(y.A);
+    eS = (0, G.A)(T.A);
 class eC extends s.PureComponent {
     state = {
         splash: null,
@@ -97,13 +97,13 @@ class eC extends s.PureComponent {
         } = t, l = (0, r.parse)(i.search).redirect_to ?? null;
         (null == l || "" === l || l.startsWith(ei.BVt.ME) || !(0, o.e)(l) && !(0, A.RZ)(l)) && (l = null);
         let a = null;
-        if (null == n) a = (0, B.u8)(l);
+        if (null == n) a = (0, U.u8)(l);
         else if (n?.state === ei.elq.RESOLVED) {
             let {
                 guild: e,
                 target_application: t
             } = n;
-            null != t ? null != s && (a = (0, D.uD)(t.id, s, 1024)) : null != e && "string" == typeof e.splash && (a = U.Ay.getGuildSplashURL({
+            null != t ? null != s && (a = (0, D.uD)(t.id, s, 1024)) : null != e && "string" == typeof e.splash && (a = B.Ay.getGuildSplashURL({
                 id: e.id,
                 splash: e.splash
             }))
@@ -167,7 +167,7 @@ class eC extends s.PureComponent {
             load_time: P.A.getTimeSinceNavigationStart()
         }, {
             flush: !0
-        }), v.A.resolveGuildTemplate(e), v.A.openNativeAppModal(e))
+        }), N.A.resolveGuildTemplate(e), N.A.openNativeAppModal(e))
     }
     resolveGiftCode() {
         let {
@@ -274,7 +274,7 @@ class eC extends s.PureComponent {
                 })
             }), (0, i.jsx)(m.A, {
                 path: ei.BVt.VERIFY_HUB_EMAIL,
-                render: e => (0, i.jsx)(eE, {
+                render: e => (0, i.jsx)(ex, {
                     ...e
                 })
             }), (0, i.jsx)(m.A, {
@@ -322,19 +322,19 @@ class eC extends s.PureComponent {
                 })
             }), (0, i.jsx)(m.A, {
                 path: ei.BVt.PICK_GUILD_SETTINGS(":section?", ":subsection?"),
-                render: e => (0, i.jsx)(eN, {
+                render: e => (0, i.jsx)(ev, {
                     ...e
                 })
             }), (0, i.jsx)(m.A, {
-                path: ei.BVt.CHANNELS_GAME_SHOP(T.pv.guildId(), ":pageIndex", ":skuId", ":slug?"),
+                path: ei.BVt.CHANNELS_GAME_SHOP(y.pv.guildId(), ":pageIndex", ":skuId", ":slug?"),
                 render: e => (0, i.jsx)(eI, {
                     ...e
                 })
             }), (0, i.jsx)(m.A, {
-                path: ei.BVt.CHANNEL(T.pv.guildId(), T.pv.channelId({
+                path: ei.BVt.CHANNEL(y.pv.guildId(), y.pv.channelId({
                     optional: !0
                 }), ":messageId?"),
-                render: e => (0, i.jsx)(ex, {
+                render: e => (0, i.jsx)(eE, {
                     ...e
                 })
             }), (0, i.jsx)(m.A, {
@@ -342,7 +342,7 @@ class eC extends s.PureComponent {
                 render: () => (0, i.jsx)(R.Kz, {})
             }), (0, i.jsx)(m.A, {
                 path: ei.BVt.REPORT_SECOND_LOOK,
-                render: e => (0, i.jsx)(ev, {
+                render: e => (0, i.jsx)(eN, {
                     ...e
                 })
             }), (0, i.jsx)(m.A, {
@@ -354,7 +354,7 @@ class eC extends s.PureComponent {
         })
     }
 }
-let ey = d.Ay.connectStores([O.default, w.A, L.A, I.A, N.A], e => {
+let eT = d.Ay.connectStores([O.default, w.A, L.A, I.A, v.A], e => {
     let {
         match: t,
         location: n
@@ -366,7 +366,7 @@ let ey = d.Ay.connectStores([O.default, w.A, L.A, I.A, N.A], e => {
         guildTemplateCode: l,
         gift: null != r ? L.A.get(r) : null,
         invite: null != s ? w.A.getInvite(s) : null,
-        guildTemplate: null != l ? N.A.getGuildTemplate(l) : null,
+        guildTemplate: null != l ? v.A.getGuildTemplate(l) : null,
         hasLoadedExperiments: I.A.hasLoadedExperiments
     }
 })(eC)

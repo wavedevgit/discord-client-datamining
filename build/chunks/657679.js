@@ -20,7 +20,11 @@ let s = e => {
                 title: u,
                 options: _
             } = t.data,
-            m = a.useCallback(e => {
+            m = a.useMemo(() => _.map(e => ({
+                ...e,
+                id: e.id ?? e.value
+            })), [_]),
+            x = a.useCallback(e => {
                 null != e && (d(e), n(e))
             }, [n]);
         return (0, l.jsx)("div", {
@@ -29,8 +33,8 @@ let s = e => {
                 label: u,
                 value: o,
                 required: t.should_submit_data,
-                onSelectionChange: m,
-                options: _,
+                onSelectionChange: x,
+                options: m,
                 selectionMode: "single",
                 fullWidth: !0
             })

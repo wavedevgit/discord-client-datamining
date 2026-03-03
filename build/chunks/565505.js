@@ -1,7 +1,7 @@
 /** chunk id: 565505, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => x
+    A: () => E
 });
 var i = n(627968),
     s = n(64700),
@@ -20,7 +20,7 @@ var i = n(627968),
     f = n(985018),
     A = n(473169);
 
-function E(e, t, n) {
+function x(e, t, n) {
     e.preventDefault(), _.default.track(g.HAw.GUILD_TEMPLATE_APP_OPENED, {
         guild_template_code: t,
         guild_template_name: n.name,
@@ -32,7 +32,7 @@ function E(e, t, n) {
     d.A.openMobileApp(n.state === m.QB.RESOLVED ? t : void 0, s)
 }
 
-function x(e) {
+function E(e) {
     let {
         code: t
     } = e, n = (0, r.bG)([o.A], () => o.A.getGuildTemplate(t));
@@ -49,13 +49,13 @@ function x(e) {
             children: (0, i.jsx)(l.Button, {
                 text: f.intl.string(f.t["a3Gl+e"]),
                 fullWidth: !0,
-                onClick: e => E(e, t, n)
+                onClick: e => x(e, t, n)
             })
         })]
     }) : (0, i.jsx)(p.A, {
         text: f.intl.string(f.t["e/rZ2n"]),
         buttonCta: f.intl.string(f.t.HAvYn0),
-        onClick: e => E(e, t, n)
+        onClick: e => x(e, t, n)
     })
 }
 r.Ay.initialize()

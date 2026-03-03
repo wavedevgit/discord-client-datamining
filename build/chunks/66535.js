@@ -25,7 +25,7 @@ let b = e => {
         content: f
     } = (0, m.A)(v, {
         hideSimpleEmbedContent: !1
-    }), T = x.hH.useSetting(), C = a.useCallback(() => {
+    }), C = x.hH.useSetting(), T = a.useCallback(() => {
         let {
             leadingIcon: e,
             trailingIcon: n
@@ -39,10 +39,10 @@ let b = e => {
             children: [e, (0, l.jsx)(c.Ay, {
                 message: t,
                 content: f,
-                compact: T
+                compact: C
             }), n]
         })
-    }, [t, f, T]);
+    }, [t, f, C]);
     return null == b ? null : (0, l.jsxs)("div", {
         className: h.kL,
         children: [(0, l.jsx)(r.Heading, {
@@ -52,7 +52,7 @@ let b = e => {
         }), (0, l.jsx)(r.HOs, {
             className: h.PI,
             children: (0, l.jsx)(d.A, {
-                childrenMessageContent: C(),
+                childrenMessageContent: T(),
                 childrenHeader: (0, l.jsx)(u.Ay, {
                     message: t,
                     channel: b,

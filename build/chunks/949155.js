@@ -4,10 +4,10 @@ n.d(t, {
     B_: () => I,
     FC: () => A,
     Fk: () => j,
-    IK: () => y,
-    PX: () => N,
+    IK: () => T,
+    PX: () => v,
     TZ: () => b,
-    ji: () => T,
+    ji: () => y,
     zN: () => C
 });
 var i = n(627968),
@@ -26,17 +26,17 @@ var i = n(627968),
     m = n(985018),
     f = n(779715);
 let A = 100,
-    E = e => {
+    x = e => {
         let t = {
             onlineCount: e.approximate_presence_count ?? 0,
             memberCount: e.approximate_member_count ?? 0
         };
         return 0 === t.memberCount && 0 === t.memberCount ? null : t
     },
-    x = e => e.target_type === _.yV.STREAM && null != e.target_user,
+    E = e => e.target_type === _.yV.STREAM && null != e.target_user,
     I = e => e.channel?.type === p.rbe.GROUP_DM,
-    N = e => null == e.channel && null == e.guild && null != e.inviter,
-    v = e => e.state === p.elq.ACCEPTED,
+    v = e => null == e.channel && null == e.guild && null != e.inviter,
+    N = e => e.state === p.elq.ACCEPTED,
     j = e => {
         let {
             guild_scheduled_event: t
@@ -45,7 +45,7 @@ let A = 100,
     },
     S = e => {
         let t;
-        return !j(e) && (!!N(e) || null != e.inviter && !v(e) && (t = E(e), !((t?.memberCount ?? 0) > A)))
+        return !j(e) && (!!v(e) || null != e.inviter && !N(e) && (t = x(e), !((t?.memberCount ?? 0) > A)))
     },
     C = e => {
         let {
@@ -69,12 +69,12 @@ let A = 100,
         }) : null
     };
 
-function y(e) {
+function T(e) {
     let {
         invite: t,
         textClassName: n,
         className: s
-    } = e, r = E(t);
+    } = e, r = x(t);
     return null == r || S(t) || t?.guild?.id === g.TA ? null : (0, i.jsx)(o.R1, {
         className: l()(f.He, s),
         online: r.onlineCount,
@@ -84,16 +84,16 @@ function y(e) {
     })
 }
 
-function T(e) {
+function y(e) {
     let {
         invite: t,
         showBigUserIcon: n
-    } = e, r = s.useMemo(() => n ? null : x(t) && null != t.target_user ? u.Ay.getUserAvatarURL(t.target_user) : S(t) && null != t.inviter ? u.Ay.getUserAvatarURL(t.inviter) : null, [t, n]), l = m.intl.string(m.t["3rE1P8"]);
+    } = e, r = s.useMemo(() => n ? null : E(t) && null != t.target_user ? u.Ay.getUserAvatarURL(t.target_user) : S(t) && null != t.inviter ? u.Ay.getUserAvatarURL(t.inviter) : null, [t, n]), l = m.intl.string(m.t["3rE1P8"]);
     return I(t) ? l = t.channel?.name != null && t.inviter?.username != null ? m.intl.format(m.t.Lu4h18, {
         username: t.inviter.username
-    }) : m.intl.string(m.t.OsdY8B) : x(t) && null != t.target_user ? l = m.intl.formatToPlainString(m.t.x2L32Q, {
+    }) : m.intl.string(m.t.OsdY8B) : E(t) && null != t.target_user ? l = m.intl.formatToPlainString(m.t.x2L32Q, {
         username: t.target_user.username
-    }) : v(t) ? l = m.intl.string(m.t["FDsl+J"]) : S(t) && null != t.inviter && (l = m.intl.format(m.t.spU2mI, {
+    }) : N(t) ? l = m.intl.string(m.t["FDsl+J"]) : S(t) && null != t.inviter && (l = m.intl.format(m.t.spU2mI, {
         username: h.Ay.getFormattedName(t.inviter)
     })), (0, i.jsxs)("div", {
         className: f.JB,

@@ -50,12 +50,12 @@ let A = e => {
         } = e, f = a.useMemo(() => r.A.reactParserFor({
             ...r.A.defaultRules,
             link: o.B
-        }), []), [T, C] = a.useState(""), [I, j] = a.useState(""), [S, N] = a.useState(null), [k, y] = a.useState(null), [E, M] = a.useState(!1);
+        }), []), [C, T] = a.useState(""), [I, j] = a.useState(""), [S, N] = a.useState(null), [k, y] = a.useState(null), [E, M] = a.useState(!1);
         a.useEffect(() => {
-            C(h?.value ?? ""), j(b?.value ?? ""), h?.value != null && "" !== h.value && M(g(h.value))
+            T(h?.value ?? ""), j(b?.value ?? ""), h?.value != null && "" !== h.value && M(g(h.value))
         }, [h, b]);
         let O = a.useCallback(e => {
-                if (C(e), "" === e) {
+                if (T(e), "" === e) {
                     N(null), M(!1), j(""), y(null), A({
                         value: e,
                         isValid: !1
@@ -93,7 +93,7 @@ let A = e => {
             R = a.useCallback(e => {
                 if (j(e), "" === e || !x.test(e)) {
                     y(d.intl.string(d.t["24xrGb"])), A({
-                        value: T,
+                        value: C,
                         isValid: !1
                     }, {
                         value: e,
@@ -102,13 +102,13 @@ let A = e => {
                     return
                 }
                 y(null), A({
-                    value: T,
+                    value: C,
                     isValid: !0
                 }, {
                     value: e,
                     isValid: !0
                 })
-            }, [A, T]);
+            }, [A, C]);
         return (0, l.jsxs)("div", {
             children: [(0, l.jsxs)(i.BJc, {
                 gap: 16,
@@ -125,7 +125,7 @@ let A = e => {
                         })
                     }), (0, l.jsx)(i.ksK, {
                         onChange: O,
-                        value: T,
+                        value: C,
                         error: S,
                         placeholder: s,
                         autoFocus: !0

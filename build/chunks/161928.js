@@ -19,11 +19,11 @@ var i = n(627968),
     m = n(67480),
     f = n(615396),
     A = n(652215),
-    E = n(788868),
-    x = n(985018),
+    x = n(788868),
+    E = n(985018),
     I = n(440526),
-    N = n(20976),
-    v = n(473169);
+    v = n(20976),
+    N = n(473169);
 let j = a.Ay.connectStores([m.A, d.A, g.A, p.default], e => {
     let {
         giftCode: t
@@ -44,10 +44,10 @@ let j = a.Ay.connectStores([m.A, d.A, g.A, p.default], e => {
         sku: a,
         application: d,
         subscriptionPlan: p
-    } = e, g = null == r ? x.intl.string(x.t.lTGZAl) : x.intl.formatToPlainString(x.t.TjWdPc, {
+    } = e, g = null == r ? E.intl.string(E.t.lTGZAl) : E.intl.formatToPlainString(E.t.TjWdPc, {
         username: r.username
     }), m = a.name;
-    return null != p && (m = x.intl.formatToPlainString(p.interval === E.WT.MONTH ? x.t.CTpcCZ : x.t["rgPWG/"], {
+    return null != p && (m = E.intl.formatToPlainString(p.interval === x.WT.MONTH ? E.t.CTpcCZ : E.t["rgPWG/"], {
         skuName: a.name,
         intervalCount: p.intervalCount
     })), (0, i.jsxs)(s.Fragment, {
@@ -58,10 +58,10 @@ let j = a.Ay.connectStores([m.A, d.A, g.A, p.default], e => {
         }) : (0, i.jsx)(c.eu, {
             src: null != r ? r.getAvatarURL(void 0, 100) : null,
             size: o._3J.DEPRECATED_SIZE_100,
-            className: v.SX
+            className: N.SX
         }), null != t ? (0, i.jsxs)(s.Fragment, {
             children: [(0, i.jsx)(c.tK, {
-                children: x.intl.string(x.t.mDFGFj)
+                children: E.intl.string(E.t.mDFGFj)
             }), (0, i.jsx)(c.hE, {
                 children: t
             })]
@@ -69,7 +69,7 @@ let j = a.Ay.connectStores([m.A, d.A, g.A, p.default], e => {
             children: [(0, i.jsx)(c.tK, {
                 children: g
             }), (0, i.jsxs)(c.hE, {
-                className: l()(v.Ot, N.tR),
+                className: l()(N.Ot, v.tR),
                 children: [a.productLine !== A.EZt.COLLECTIBLES && (0, i.jsx)(u.A, {
                     size: u.M.MEDIUM,
                     className: I.I,

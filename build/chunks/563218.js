@@ -46,7 +46,7 @@ function b(e) {
         reportId: s,
         reportType: d,
         reportSubType: b
-    } = e, v = (0, i.bG)([_.A], () => _.A.getChannel(n)), f = (0, m.MR)(t, v?.type), T = (0, x.Mw)(d, b, s);
+    } = e, v = (0, i.bG)([_.A], () => _.A.getChannel(n)), f = (0, m.MR)(t, v?.type), C = (0, x.Mw)(d, b, s);
     return 0 === f.length ? null : (0, l.jsxs)("div", {
         className: A.kL,
         children: [(0, l.jsx)(r.Heading, {
@@ -65,7 +65,7 @@ function b(e) {
                     title: a(),
                     description: i(),
                     onButtonClick: r,
-                    trackSettingsUpsellsAction: T(t[n])
+                    trackSettingsUpsellsAction: C(t[n])
                 }, n)
             })
         }), (0, l.jsx)(r.QWc, {

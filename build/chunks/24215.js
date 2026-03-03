@@ -64,26 +64,26 @@ let A = () => {
             showActivity: d,
             setNickname: p,
             setDmsAllowed: A,
-            setShowActivity: E,
-            guildId: x,
+            setShowActivity: x,
+            guildId: E,
             inviteCode: I
         } = (0, u.lD)(),
-        N = l.A.getProps().invite?.is_nickname_changeable,
-        v = s.useCallback(() => {
+        v = l.A.getProps().invite?.is_nickname_changeable,
+        N = s.useCallback(() => {
             c.default.track(h.HAw.INVITE_ACCEPT_JOIN_SETTINGS_EXPANDED, {
-                guild_id: x,
+                guild_id: E,
                 invite_code: I
             })
-        }, [x, I]);
+        }, [E, I]);
     return (0, i.jsxs)(a.A, {
         icon: (0, i.jsx)(r.Zes, {
             size: "refresh_sm"
         }),
         title: _.intl.string(_.t["A5wHQ/"]),
         subtitle: _.intl.string(_.t.UKCSEd),
-        onOpen: v,
-        maxHeight: N ? 220 : 130,
-        children: [N && (0, i.jsxs)(i.Fragment, {
+        onOpen: N,
+        maxHeight: v ? 220 : 130,
+        children: [v && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(m, {
                 label: _.intl.string(_.t.me1lRk),
                 children: (0, i.jsx)(r.ksK, {
@@ -100,7 +100,7 @@ let A = () => {
         }), (0, i.jsx)(g, {}), e && (0, i.jsx)(f, {
             label: _.intl.string(_.t.bN4m1G),
             checked: d,
-            onChange: E
+            onChange: x
         })]
     })
 }

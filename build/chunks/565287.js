@@ -1,7 +1,7 @@
 /** chunk id: 565287, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    Kz: () => x,
+    Kz: () => E,
     rP: () => A
 });
 var i, s = n(627968),
@@ -20,11 +20,11 @@ var i, s = n(627968),
     f = n(136643);
 l.Ay.initialize();
 var A = ((i = {}).SELECTION = "selection", i.DSA = "dsa", i.TIDA = "tida", i);
-let E = e => {
+let x = e => {
         let {
             transitionState: t,
             onClose: n
-        } = e, [i, A] = r.useState(!0), [x, I] = r.useState([]), [N, v] = r.useState("selection"), j = (0, l.bG)([_.default], () => _.default.isAuthenticated()), S = (0, l.bG)([c.A], () => c.A.hasLoadedExperiments), C = r.useCallback(() => {
+        } = e, [i, A] = r.useState(!0), [E, I] = r.useState([]), [v, N] = r.useState("selection"), j = (0, l.bG)([_.default], () => _.default.isAuthenticated()), S = (0, l.bG)([c.A], () => c.A.hasLoadedExperiments), C = r.useCallback(() => {
             (0, h.OY)().then(e => {
                 let {
                     body: {
@@ -45,23 +45,23 @@ let E = e => {
                 S || (await o.A.getLocationMetadata(), o.A.getExperiments())
             })()
         }, [S]);
-        let y = x.filter(e => e !== u.tY.MEDIA_TAKEDOWN),
-            T = x.includes(u.tY.MEDIA_TAKEDOWN),
-            b = y.length > 0,
-            R = b && T;
+        let T = E.filter(e => e !== u.tY.MEDIA_TAKEDOWN),
+            y = E.includes(u.tY.MEDIA_TAKEDOWN),
+            b = T.length > 0,
+            R = b && y;
         r.useEffect(() => {
-            !i && S && !R && (b ? v("dsa") : T && v("tida"))
-        }, [i, S, R, b, T]), r.useEffect(() => {
-            i || !S || b || T || n()
-        }, [i, S, b, T, n]);
+            !i && S && !R && (b ? N("dsa") : y && N("tida"))
+        }, [i, S, R, b, y]), r.useEffect(() => {
+            i || !S || b || y || n()
+        }, [i, S, b, y, n]);
         let O = r.useCallback(e => {
-                v(e)
+                N(e)
             }, []),
             L = r.useCallback(() => {
-                v("selection")
+                N("selection")
             }, []),
             w = r.useCallback(() => {
-                (0, a.mMO)(() => Promise.resolve(e => (0, s.jsx)(E, {
+                (0, a.mMO)(() => Promise.resolve(e => (0, s.jsx)(x, {
                     ...e
                 })), {
                     dismissable: !1
@@ -89,7 +89,7 @@ let E = e => {
                     children: (0, s.jsx)(a.y$y, {})
                 }) : (0, s.jsxs)(a.tN_, {
                     width: "100%",
-                    activeSlide: N,
+                    activeSlide: v,
                     centered: !1,
                     children: [(0, s.jsx)(a.q7S, {
                         id: "selection",
@@ -101,7 +101,7 @@ let E = e => {
                         children: (0, s.jsx)(p.c, {
                             showBackButton: R,
                             onBack: R ? L : void 0,
-                            dsaCapabilities: y,
+                            dsaCapabilities: T,
                             renderFooter: k,
                             onClose: n,
                             onReopen: w
@@ -120,8 +120,8 @@ let E = e => {
             })
         })
     },
-    x = () => (r.useEffect(() => {
-        (0, a.mMO)(() => Promise.resolve(e => (0, s.jsx)(E, {
+    E = () => (r.useEffect(() => {
+        (0, a.mMO)(() => Promise.resolve(e => (0, s.jsx)(x, {
             ...e
         })), {
             dismissable: !1

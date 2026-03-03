@@ -23,27 +23,27 @@ function c(e) {
         defaultExpanded: p = !1,
         onOpen: g,
         maxHeight: m
-    } = e, [f, A] = s.useState(p), E = s.useRef(null), [x, I] = s.useState(null), N = void 0 !== h, v = N ? h : f;
+    } = e, [f, A] = s.useState(p), x = s.useRef(null), [E, I] = s.useState(null), v = void 0 !== h, N = v ? h : f;
     s.useEffect(() => {
-        v && null != E.current && I(E.current.scrollHeight)
-    }, [v, c]);
+        N && null != x.current && I(x.current.scrollHeight)
+    }, [N, c]);
     let j = s.useCallback(() => {
-            let e = !v;
-            N || A(e), _?.(e), e && null != g && g()
-        }, [v, N, _, g]),
+            let e = !N;
+            v || A(e), _?.(e), e && null != g && g()
+        }, [N, v, _, g]),
         S = s.useMemo(() => {
-            if (v) {
+            if (N) {
                 if (null != m) return {
                     maxHeight: "number" == typeof m ? `${m}px` : m
                 };
-                if (null != x) return {
-                    maxHeight: `${x}px`
+                if (null != E) return {
+                    maxHeight: `${E}px`
                 }
             }
-        }, [m, v, x]);
+        }, [m, N, E]);
     return (0, i.jsxs)("div", {
         className: l()(d.Yt, u, {
-            [d.Sg]: v
+            [d.Sg]: N
         }),
         children: [(0, i.jsxs)(a.DUT, {
             className: d.wx,
@@ -64,7 +64,7 @@ function c(e) {
                 })]
             }), (0, i.jsx)("div", {
                 className: l()(d.OW, {
-                    [d.Sg]: v
+                    [d.Sg]: N
                 }),
                 children: (0, i.jsx)(o.A, {
                     width: 20,
@@ -73,9 +73,9 @@ function c(e) {
                 })
             })]
         }), (0, i.jsx)("div", {
-            ref: E,
+            ref: x,
             className: l()(d.Qs, {
-                [d.Sg]: v
+                [d.Sg]: N
             }),
             style: S,
             children: c

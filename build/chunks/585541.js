@@ -24,10 +24,10 @@ function A(e) {
         setOriginalEmail: t,
         setSlide: r,
         ready: A,
-        token: E
-    } = e, [x, I] = s.useState(!1), [N, v] = s.useState(null), [j, S] = s.useState(null), [C, y] = s.useState(""), T = s.useRef(null);
+        token: x
+    } = e, [E, I] = s.useState(!1), [v, N] = s.useState(null), [j, S] = s.useState(null), [C, T] = s.useState(""), y = s.useRef(null);
     return s.useEffect(() => {
-        A && T.current?.focus()
+        A && y.current?.focus()
     }, [A]), (0, i.jsxs)("div", {
         children: [(0, i.jsx)(c._V, {
             src: null == j ? n(79418) : n(579656),
@@ -44,11 +44,11 @@ function A(e) {
                 name: "password",
                 type: "password",
                 label: g.intl.string(g.t["8dM4FO"]),
-                setRef: T,
+                setRef: y,
                 className: f.SX,
                 value: C,
-                onChange: y,
-                error: N,
+                onChange: T,
+                error: v,
                 autoComplete: "new-password",
                 maxLength: 72,
                 placeholder: g.intl.string(g.t["yY/PXY"])
@@ -58,15 +58,15 @@ function A(e) {
                     text: g.intl.string(g.t.ezv91b),
                     fullWidth: !0,
                     onClick: () => {
-                        if (!x) {
+                        if (!E) {
                             if (0 === C.length) {
-                                v(g.intl.string(g.t.R98xD5)), u._.dispatch(p.jej.WAVE_EMPHASIZE);
+                                N(g.intl.string(g.t.R98xD5)), u._.dispatch(p.jej.WAVE_EMPHASIZE);
                                 return
                             }
-                            return null != j && S(null), null != N && v(null), t(""), I(!0), h.A.post({
+                            return null != j && S(null), null != v && N(null), t(""), I(!0), h.A.post({
                                 url: p.Rsh.ACCOUNT_REVERT,
                                 body: {
-                                    token: E,
+                                    token: x,
                                     password: C
                                 },
                                 trackedActionData: {
@@ -79,14 +79,14 @@ function A(e) {
                                         email: n
                                     }
                                 } = e;
-                                y(""), t(n), r(_.k.SUCCESS)
+                                T(""), t(n), r(_.k.SUCCESS)
                             }).catch(e => {
                                 if (e instanceof Error) S(g.intl.formatToPlainString(g.t.aTVNes, {
                                     statusPageURL: p.qF7.STATUS
                                 }));
                                 else {
                                     let t = new d.A(e);
-                                    t.hasFieldErrors() ? v(t.getAnyErrorMessage()) : S((function(e) {
+                                    t.hasFieldErrors() ? N(t.getAnyErrorMessage()) : S((function(e) {
                                         switch (e) {
                                             case p.t02.ACCOUNT_REVERT_INVALID_TOKEN:
                                                 return g.intl.string(g.t["11zzGR"]);
@@ -107,8 +107,8 @@ function A(e) {
                             })
                         }
                     },
-                    loading: x,
-                    disabled: x
+                    loading: E,
+                    disabled: E
                 })
             })]
         }), (0, i.jsx)("div", {
@@ -118,7 +118,7 @@ function A(e) {
                 variant: "secondary",
                 fullWidth: !0,
                 onClick: () => {
-                    y(""), r(_.k.START)
+                    T(""), r(_.k.START)
                 }
             })
         })]

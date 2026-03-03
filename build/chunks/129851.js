@@ -20,16 +20,16 @@ var i = n(627968),
     m = n(351671),
     f = n(15552),
     A = n(212640),
-    E = n(854378),
-    x = n(952116),
+    x = n(854378),
+    E = n(952116),
     I = n(235986),
-    N = n(491509),
-    v = n(895600),
+    v = n(491509),
+    N = n(895600),
     j = n(720353),
     S = n(559568),
     C = n(274303),
-    y = n(13437),
-    T = n(557722),
+    T = n(13437),
+    y = n(557722),
     b = n(148864),
     R = n(146571),
     O = n(976860),
@@ -37,8 +37,8 @@ var i = n(627968),
     w = n(210714),
     k = n(933924),
     D = n(961350),
-    B = n(115036),
-    U = n(650048),
+    U = n(115036),
+    B = n(650048),
     P = n(954571),
     G = n(203982),
     F = n(723702),
@@ -53,7 +53,7 @@ var i = n(627968),
     Y = n(473169);
 
 function J() {
-    return (0, i.jsx)(E.Ay, {
+    return (0, i.jsx)(x.Ay, {
         children: (0, i.jsx)(h.y$y, {})
     })
 }
@@ -103,7 +103,7 @@ class X extends s.PureComponent {
             location: null != i ? "Invite Login Page" : "Non-Invite Login Page",
             login_source: this.loginSource,
             authenticated: t,
-            ...null != n ? (0, N.A)(n, !1, !1) : {},
+            ...null != n ? (0, v.A)(n, !1, !1) : {},
             source: (0, O.PR)()
         }, {
             flush: !0
@@ -226,12 +226,12 @@ class X extends s.PureComponent {
         let {
             authBoxClassName: e
         } = this.props;
-        return (0, i.jsxs)(E.Ay, {
+        return (0, i.jsxs)(x.Ay, {
             className: e,
-            children: [(0, i.jsx)(E.CK, {}), (0, i.jsx)(E.hE, {
+            children: [(0, i.jsx)(x.CK, {}), (0, i.jsx)(x.hE, {
                 className: Y.QB,
                 children: Q.intl.string(Q.t.S6RMNA)
-            }), (0, i.jsx)(E.tK, {
+            }), (0, i.jsx)(x.tK, {
                 children: Q.intl.string(Q.t.YZiJbh)
             })]
         })
@@ -240,19 +240,19 @@ class X extends s.PureComponent {
         let {
             authBoxClassName: e
         } = this.props, t = this.props.loginStatus === K.aUe.ACCOUNT_DISABLED, n = t ? Q.intl.string(Q.t["j3rC+U"]) : Q.intl.string(Q.t.ZFWofo), s = t ? Q.intl.string(Q.t["6eNTWe"]) : Q.intl.string(Q.t["pCBti+"]);
-        return (0, i.jsx)(E.Ay, {
+        return (0, i.jsx)(x.Ay, {
             tag: "form",
             onSubmit: this.handleReset,
             className: e,
             children: (0, i.jsxs)(h.Fmo, {
-                component: (0, i.jsx)(E.hE, {
+                component: (0, i.jsx)(x.hE, {
                     className: Y.QB,
                     children: n
                 }),
-                children: [(0, i.jsx)(E.tK, {
+                children: [(0, i.jsx)(x.tK, {
                     className: Y.SX,
                     children: s
-                }), (0, i.jsxs)(E.eB, {
+                }), (0, i.jsxs)(x.eB, {
                     children: [(0, i.jsx)(h.Button, {
                         text: Q.intl.string(Q.t.JhDw5o),
                         fullWidth: !0,
@@ -272,9 +272,9 @@ class X extends s.PureComponent {
             authBoxClassName: e,
             country: t
         } = this.props;
-        return (0, i.jsxs)(E.Ay, {
+        return (0, i.jsxs)(x.Ay, {
             className: e,
-            children: [(0, i.jsx)(V.M, {}), (0, i.jsxs)(E.eB, {
+            children: [(0, i.jsx)(V.M, {}), (0, i.jsxs)(x.eB, {
                 className: Y.QX,
                 children: [(0, i.jsx)(R.A, {
                     className: Y.SX,
@@ -293,7 +293,7 @@ class X extends s.PureComponent {
                     value: this.state.login,
                     autoFocus: !0,
                     required: !0
-                }), (0, i.jsx)(E.pd, {
+                }), (0, i.jsx)(x.pd, {
                     className: Y.SX,
                     label: Q.intl.string(Q.t["CIGa+7"]),
                     onChange: e => this.setState({
@@ -347,10 +347,10 @@ class X extends s.PureComponent {
             giftCode: s
         }) : (0, i.jsxs)("div", {
             className: q.wx,
-            children: [(0, i.jsx)(E.hE, {
+            children: [(0, i.jsx)(x.hE, {
                 className: Y.QB,
                 children: Q.intl.string(Q.t["7fNJgA"])
-            }, "title"), !1 === (0, F.isAndroidWeb)() ? (0, i.jsx)(E.tK, {
+            }, "title"), !1 === (0, F.isAndroidWeb)() ? (0, i.jsx)(x.tK, {
                 children: Q.intl.string(Q.t.euS7r4)
             }, "subtitle") : null]
         }), (0, i.jsxs)(I.A, {
@@ -372,7 +372,7 @@ class X extends s.PureComponent {
                         icon: h.n2b
                     })
                 }), t, (0, i.jsx)(h.Fmo, {
-                    children: (0, i.jsxs)(E.eB, {
+                    children: (0, i.jsxs)(x.eB, {
                         className: Y.QX,
                         children: [(0, i.jsx)(R.A, {
                             alpha2: a.alpha2,
@@ -392,7 +392,7 @@ class X extends s.PureComponent {
                             value: this.state.login,
                             autoFocus: !c && !o && !d,
                             required: !0
-                        }), (0, i.jsx)(E.pd, {
+                        }), (0, i.jsx)(x.pd, {
                             label: Q.intl.string(Q.t["CIGa+7"]),
                             error: this.renderError("password"),
                             onChange: e => this.setState({
@@ -452,7 +452,7 @@ class X extends s.PureComponent {
         } = this.props;
         return (0, i.jsxs)("div", {
             className: q.__invalid_pageContainer,
-            children: [(0, i.jsx)(E.Ay, {
+            children: [(0, i.jsx)(x.Ay, {
                 onSubmit: this.handleLogin,
                 tag: "form",
                 className: e,
@@ -466,7 +466,7 @@ class X extends s.PureComponent {
             onSubmit: this.handleLogin,
             tag: "form",
             className: l()(this.props.authBoxClassName, q.Sy),
-            children: () => [(0, i.jsx)(v.A, {
+            children: () => [(0, i.jsx)(N.A, {
                 guildTemplate: e
             }, "template"), this.renderDefaultForm(!1)]
         })
@@ -476,7 +476,7 @@ class X extends s.PureComponent {
             ticket: this.props.mfaTicket,
             methods: this.props.mfaMethods
         };
-        return (0, i.jsx)(E.Ay, {
+        return (0, i.jsx)(x.Ay, {
             style: {
                 padding: 0
             },
@@ -498,10 +498,10 @@ class X extends s.PureComponent {
         } = this.props, {
             phoneVerifyError: t
         } = this.state;
-        return (0, i.jsx)(E.Ay, {
+        return (0, i.jsx)(x.Ay, {
             tag: "form",
             className: e,
-            children: (0, i.jsx)(x.A, {
+            children: (0, i.jsx)(E.A, {
                 title: Q.intl.string(Q.t.w55Oco),
                 subtitle: Q.intl.format(Q.t.CfRZBj, {
                     onResendClick: this.handleResendCode
@@ -518,10 +518,10 @@ class X extends s.PureComponent {
         } = this.props, {
             phoneVerifyError: t
         } = this.state;
-        return (0, i.jsx)(E.Ay, {
+        return (0, i.jsx)(x.Ay, {
             tag: "form",
             className: e,
-            children: (0, i.jsx)(x.A, {
+            children: (0, i.jsx)(E.A, {
                 title: Q.intl.string(Q.t["+xqy3d"]),
                 subtitle: Q.intl.format(Q.t.ef4uZ7, {
                     onResendClick: this.handleResendCode
@@ -539,7 +539,7 @@ class X extends s.PureComponent {
                 dismissedChooseAccount: !0
             }))
         };
-        return (0, i.jsx)(y.A, {
+        return (0, i.jsx)(T.A, {
             onDismiss: e
         })
     }
@@ -612,7 +612,7 @@ class X extends s.PureComponent {
         try {
             let {
                 token: n
-            } = await T.A.verifyPhone(t, e, !1);
+            } = await y.A.verifyPhone(t, e, !1);
             await p.A.authorizeIPAddress(n), this.handleLogin()
         } catch (e) {
             null != e.body && null != e.body.message && this.setState({
@@ -630,7 +630,7 @@ class X extends s.PureComponent {
         try {
             let {
                 token: n
-            } = await T.A.verifyPhone(this.getFullLogin(), e, !1);
+            } = await y.A.verifyPhone(this.getFullLogin(), e, !1);
             t(K.BVt.RESET, {
                 search: (0, a.stringify)({
                     token: n,
@@ -697,7 +697,7 @@ class X extends s.PureComponent {
         }
     };
     handleResendCode = () => {
-        T.A.resendCode(this.getFullLogin())
+        y.A.resendCode(this.getFullLogin())
     };
     handleReset = e => {
         null != e && e.preventDefault(), p.A.loginReset(), this.setState({
@@ -737,14 +737,14 @@ class X extends s.PureComponent {
 }
 let $ = function(e) {
     (0, L.K)();
-    let t = (0, c.cf)([B.A, U.A, D.default, C.A, b.A], () => ({
+    let t = (0, c.cf)([U.A, B.A, D.default, C.A, b.A], () => ({
         authenticated: D.default.isAuthenticated(),
-        handoffAvailable: B.A.isHandoffAvailable(),
-        user: B.A.user,
+        handoffAvailable: U.A.isHandoffAvailable(),
+        user: U.A.user,
         loginStatus: D.default.getLoginStatus(),
         mfaTicket: D.default.getMFATicket(),
         mfaMethods: D.default.getMFAMethods(),
-        defaultRoute: U.A.defaultRoute,
+        defaultRoute: B.A.defaultRoute,
         country: b.A.getCountryCode(),
         hasLoggedInAccounts: C.A.getHasLoggedInAccounts()
     }));

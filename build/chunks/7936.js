@@ -19,23 +19,23 @@ var p = n(985018),
     g = n(20976),
     m = n(473169);
 let f = () => {
-    let [e, t] = s.useState(""), [r, f] = s.useState(""), [A, E] = s.useState(!1), [x, I] = s.useState(!1), [N, v] = s.useState(null), [j, S] = s.useState(null), C = (0, a.bG)([u.A], () => u.A.getCountryCode()), y = C.code.split(" ")[0], T = async () => {
+    let [e, t] = s.useState(""), [r, f] = s.useState(""), [A, x] = s.useState(!1), [E, I] = s.useState(!1), [v, N] = s.useState(null), [j, S] = s.useState(null), C = (0, a.bG)([u.A], () => u.A.getCountryCode()), T = C.code.split(" ")[0], y = async () => {
         try {
             await d.A.resendCode(e)
         } catch (e) {
             S(e.body.message)
         }
     }, b = async () => {
-        E(!0);
+        x(!0);
         try {
             let {
                 token: t
-            } = await d.A.verifyPhone(y + e, r);
-            v(null), S(null), I(!0), d.A.validatePhoneForSupport(t)
+            } = await d.A.verifyPhone(T + e, r);
+            N(null), S(null), I(!0), d.A.validatePhoneForSupport(t)
         } catch (e) {
-            e.body.message ? (v(null), S(e.body.message)) : (v(e.body.phone), S(e.body.code))
+            e.body.message ? (N(null), S(e.body.message)) : (N(e.body.phone), S(e.body.code))
         } finally {
-            E(!1)
+            x(!1)
         }
     }, R = (0, i.jsxs)(_.Ay, {
         children: [(0, i.jsx)(_._V, {
@@ -49,7 +49,7 @@ let f = () => {
             })]
         })]
     });
-    return x ? R : (0, i.jsxs)(_.Ay, {
+    return E ? R : (0, i.jsxs)(_.Ay, {
         children: [(0, i.jsx)(_.hE, {
             children: p.intl.string(p.t.o4JNrO)
         }), (0, i.jsx)(_.tK, {
@@ -60,13 +60,13 @@ let f = () => {
             children: [(0, i.jsx)(h.A, {
                 label: p.intl.string(p.t["eJnn0+"]),
                 alpha2: C.alpha2,
-                countryCode: y,
+                countryCode: T,
                 value: e,
                 autoComplete: "off",
                 spellCheck: "false",
                 onChange: t,
                 forceMode: c.Pd.PHONE,
-                error: N
+                error: v
             }), (0, i.jsx)(_.pd, {
                 className: m.QX,
                 label: p.intl.string(p.t.OdzNbm),
@@ -76,7 +76,7 @@ let f = () => {
                 error: j
             }), (0, i.jsx)(o.QWc, {
                 text: p.intl.string(p.t["5b60gi"]),
-                onClick: T
+                onClick: y
             }), (0, i.jsx)("div", {
                 className: m.QX,
                 children: (0, i.jsx)(o.Button, {

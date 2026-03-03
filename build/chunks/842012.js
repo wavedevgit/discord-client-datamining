@@ -20,8 +20,8 @@ let g = e => {
         user: t,
         channelId: n,
         reportId: g
-    } = e, A = c.A.getDMFromUserId(t.id), h = (0, i.bG)([c.A], () => c.A.getChannel(n), [n]), b = a.useMemo(() => _.Ay.getName(h?.guild_id, h?.id, t), [h, t]), v = (0, i.bG)([u.Ay], () => null == A ? null : u.Ay.isChannelMuted(null, A)), [f, T] = a.useState(v ?? !1), C = a.useCallback(() => {
-        null != A && (T(!0), s.Ay.trackWithMetadata(x.HAw.IAR_MUTE_USER_BUTTON_CLICKED, {
+    } = e, A = c.A.getDMFromUserId(t.id), h = (0, i.bG)([c.A], () => c.A.getChannel(n), [n]), b = a.useMemo(() => _.Ay.getName(h?.guild_id, h?.id, t), [h, t]), v = (0, i.bG)([u.Ay], () => null == A ? null : u.Ay.isChannelMuted(null, A)), [f, C] = a.useState(v ?? !1), T = a.useCallback(() => {
+        null != A && (C(!0), s.Ay.trackWithMetadata(x.HAw.IAR_MUTE_USER_BUTTON_CLICKED, {
             other_user_id: t.id,
             report_id: g
         }), r.A.updateChannelOverrideSettings(null, A, {
@@ -35,6 +35,6 @@ let g = e => {
         description: p.intl.string(p.t["yM/+AJ"]),
         buttonText: f ? p.intl.string(p.t.E8x4Nj) : p.intl.string(p.t.HITUcR),
         buttonDisabled: f,
-        onButtonPress: C
+        onButtonPress: T
     })
 }

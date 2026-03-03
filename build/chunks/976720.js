@@ -8,8 +8,8 @@ var n = i(627968),
     a = i(158954),
     s = i(871123),
     r = i(44724),
-    c = i(409626),
-    o = i(652215),
+    o = i(409626),
+    c = i(652215),
     d = i(985018);
 
 function u(e) {
@@ -24,9 +24,9 @@ function u(e) {
     }, [t]), x = l.useCallback(() => {
         t?.guild != null && ((0, r.default)({
             invite: t
-        }), u(), i(c.Ws.GameShop))
+        }), u(), i(o.Ws.GameShop))
     }, [u, t, i]);
-    return new Set(t?.guild?.features).has(o.GuildFeatures.SOCIAL_LAYER_STOREFRONT) ? (0, n.jsx)(a.$nd, {
+    return new Set(t?.guild?.features).has(c.GuildFeatures.SOCIAL_LAYER_STOREFRONT) ? (0, n.jsx)(a.$nd, {
         variant: "primary",
         text: t?.guild?.id === (0, s.zf)() ? d.intl.string(d.t.WTXyEQ) : d.intl.string(d.t.v8UpgE),
         icon: a.U1X,
@@ -48,9 +48,9 @@ function m(e) {
     }, [t]), x = l.useCallback(() => {
         t?.guild != null && ((0, r.default)({
             invite: t
-        }), u(), i(c.Ws.GameShop))
+        }), u(), i(o.Ws.GameShop))
     }, [u, t, i]);
-    return new Set(t?.guild?.features).has(o.GuildFeatures.SOCIAL_LAYER_STOREFRONT) ? (0, n.jsx)(a.$nd, {
+    return new Set(t?.guild?.features).has(c.GuildFeatures.SOCIAL_LAYER_STOREFRONT) ? (0, n.jsx)(a.$nd, {
         variant: "primary",
         text: t?.guild?.id === (0, s.zf)() ? d.intl.string(d.t.WTXyEQ) : d.intl.string(d.t.v8UpgE),
         icon: a.U1X,
