@@ -27,20 +27,20 @@ function p(e) {
     } = e, {
         questConfig: p
     } = r.useContext(a.VideoQuestConfigContext), f = r.useMemo(() => p.features.includes(o.Li.FULL_EPISODE_VIDEO_QUEST), [p.features]), [E, h] = r.useState(null), [v, x] = r.useState(null), g = r.useRef(null), [{
-        expansion: S
-    }, A] = (0, l.zhh)(() => ({
+        expansion: A
+    }, S] = (0, l.zhh)(() => ({
         expansion: 0,
         config: u,
         onRest: () => {
             null == g.current && x(null)
         }
     })), C = r.useCallback(e => {
-        g.current = e, null != e ? (x(e), A({
+        g.current = e, null != e ? (x(e), S({
             expansion: 4
-        })) : A({
+        })) : S({
             expansion: 0
         }), h(e)
-    }, [A]), _ = r.useMemo(() => !f || null == n || null == t || isNaN(n) ? [] : [(e => {
+    }, [S]), _ = r.useMemo(() => !f || null == n || null == t || isNaN(n) ? [] : [(e => {
         let {
             index: t,
             targetSec: n,
@@ -66,7 +66,7 @@ function p(e) {
         indicators: _,
         isInExclusionZone: b,
         setHoveredIndicatorIndex: C,
-        expansionSpring: S,
+        expansionSpring: A,
         animatingIndicatorIndex: v
     }
 }

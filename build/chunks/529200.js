@@ -64,7 +64,13 @@ let A = e => {
             className: v
         } = e, N = (0, u.Ay)(s) ?? "", p = h.kt.useSetting();
         if (d) return (0, n.jsx)("div", {
-            className: j.guildIconExpired
+            className: j.guildIconExpired,
+            children: (0, n.jsx)(r.u6c, {
+                size: "custom",
+                width: 26,
+                height: 26,
+                color: "currentColor"
+            })
         });
         let A = null == l || null != l.icon,
             E = a()((0, g.t)(j, "guildIcon", A ? "Image" : "", null != i ? "Joined" : ""), v);

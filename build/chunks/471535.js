@@ -19,8 +19,8 @@ var r = n(627968),
     v = n(544180),
     x = n(475815),
     g = n(829219),
-    S = n(341915),
-    A = n(405670),
+    A = n(341915),
+    S = n(405670),
     C = n(943849),
     _ = n(991484),
     b = n(579473),
@@ -65,7 +65,7 @@ function $(e) {
         isFullscreenEnabled: J,
         setIsFullscreenEnabled: Z,
         useNewProgressBarStyling: ee
-    } = l.useContext(L.VideoQuestModalContext), et = (0, A.Kr)(e => e.transcriptEnabled), en = (0, A.Kr)(e => e.setTranscriptEnabled), er = (0, A.Kr)(e => e.captionEnabled), el = (0, A.Kr)(e => e.setCaptionEnabled), {
+    } = l.useContext(L.VideoQuestModalContext), et = (0, S.Kr)(e => e.transcriptEnabled), en = (0, S.Kr)(e => e.setTranscriptEnabled), er = (0, S.Kr)(e => e.captionEnabled), el = (0, S.Kr)(e => e.setCaptionEnabled), {
         focused: ei,
         focusedChanged: es
     } = (0, h.A7)(), {
@@ -74,7 +74,7 @@ function $(e) {
         targetRef: eu
     } = (0, h.O7)(), [ec, ed] = l.useState(!0 === i ? w.Q6.PLAYING : w.Q6.PAUSED), [em, ep] = l.useState(!1), [ef, eE] = l.useState(!1), eh = (0, T.Yh)(q), [ev, ex] = l.useState(eh.percentComplete), eg = l.useCallback(e => {
         eV(null), ex(e)
-    }, []), [eS, eA] = l.useState(!1), [eC, e_] = l.useState(!0), [eb, ey] = l.useState(!1), [eT, eN] = l.useState([]), [eD, eR] = l.useState(v.A.getEffectiveConnectionSpeed()), [eL, eI] = l.useState(0), [eM, ej] = l.useState(0), [ew, ek] = l.useState(!1), [eO, eP] = l.useState(!1), [eQ, eV] = l.useState(null), eU = l.useRef(!0), eB = l.useRef(null), eF = l.useRef(null), eG = (0, A.Kr)(e => e.videoProgress[q.id] ?? A.yc, u.x), e$ = (0, A.Kr)(e => e.setVideoProgress), eY = (0, A.Kr)(e => e.muted), eK = (0, A.Kr)(e => e.volume), eH = (0, c.bG)([f.A], () => f.A.useReducedMotion), eW = (0, l.useRef)(null), eq = (0, l.useRef)(null), ez = l.useRef(!0), eX = q.userStatus?.completedAt != null, eJ = l.useMemo(() => q.config.features.includes(V.Li.FULL_EPISODE_VIDEO_QUEST), [q.config.features]), eZ = l.useRef(!1), [e0, e1] = l.useState(null), [e6, e2] = l.useState(!1), [e7, e4] = l.useState(!1), [e9, e8] = l.useState(!1), [e3, e5] = l.useState(null), te = eX ? eW.current?.duration ?? 0 : Math.max(eG.maxTimestampSec, eh.progressSeconds), tt = l.useMemo(() => (0, C.L)({
+    }, []), [eA, eS] = l.useState(!1), [eC, e_] = l.useState(!0), [eb, ey] = l.useState(!1), [eT, eN] = l.useState([]), [eD, eR] = l.useState(v.A.getEffectiveConnectionSpeed()), [eL, eI] = l.useState(0), [eM, ej] = l.useState(0), [ew, ek] = l.useState(!1), [eO, eP] = l.useState(!1), [eQ, eV] = l.useState(null), eU = l.useRef(!0), eB = l.useRef(null), eF = l.useRef(null), eG = (0, S.Kr)(e => e.videoProgress[q.id] ?? S.yc, u.x), e$ = (0, S.Kr)(e => e.setVideoProgress), eY = (0, S.Kr)(e => e.muted), eK = (0, S.Kr)(e => e.volume), eH = (0, c.bG)([f.A], () => f.A.useReducedMotion), eW = (0, l.useRef)(null), eq = (0, l.useRef)(null), ez = l.useRef(!0), eX = q.userStatus?.completedAt != null, eJ = l.useMemo(() => q.config.features.includes(V.Li.FULL_EPISODE_VIDEO_QUEST), [q.config.features]), eZ = l.useRef(!1), [e0, e1] = l.useState(null), [e6, e2] = l.useState(!1), [e7, e4] = l.useState(!1), [e9, e8] = l.useState(!1), [e3, e5] = l.useState(null), te = eX ? eW.current?.duration ?? 0 : Math.max(eG.maxTimestampSec, eh.progressSeconds), tt = l.useMemo(() => (0, C.L)({
         quest: q,
         location: V.rE.VIDEO_MODAL
     }), [q]), tn = (0, d.g)(eX, eG, eh.progressSeconds), [tr, tl] = l.useState(w.oA.MD), ti = {
@@ -100,8 +100,8 @@ function $(e) {
         trackQuestVideoBufferingStarted: tv,
         trackQuestVideoBufferingEnded: tx,
         trackWatchTimeAnalytics: tg,
-        trackQuestVideoTimeToFirstFrame: tS,
-        trackQuestVideoFullscreenChanged: tA,
+        trackQuestVideoTimeToFirstFrame: tA,
+        trackQuestVideoFullscreenChanged: tS,
         trackQuestVideoError: tC,
         trackQuestVideoVolumeChanged: t_
     } = (0, P.A)({
@@ -163,9 +163,9 @@ function $(e) {
         eX || q.userStatus?.enrolledAt == null || (tt.info(`[QV] sendServerProgressUpdate: ${e}`), (0, N.zv)(q, e)), tm()
     }, [eX, q, tt, tm]);
     l.useEffect(() => {
-        $ !== m.ip4.HIDDEN && $ !== m.ip4.EXITING && $ !== m.ip4.EXITED && (null == $ || !eo || ea || eX) && (!es || ei || eX) || null == eW.current || ec !== w.Q6.PLAYING || (tt.info(`[QV] | Pausing video | playerState: ${ec}, parentTransitionState: ${$}, visible: ${ea}, focused: ${ei}, isQuestCompleted: ${eX}`), tD(w.Q6.PAUSED), eX ? eJ && e1(S.Yg.ANOTHER_MODAL_OPENED) : e1(S.Yg.LOST_FOCUS))
+        $ !== m.ip4.HIDDEN && $ !== m.ip4.EXITING && $ !== m.ip4.EXITED && (null == $ || !eo || ea || eX) && (!es || ei || eX) || null == eW.current || ec !== w.Q6.PLAYING || (tt.info(`[QV] | Pausing video | playerState: ${ec}, parentTransitionState: ${$}, visible: ${ea}, focused: ${ei}, isQuestCompleted: ${eX}`), tD(w.Q6.PAUSED), eX ? eJ && e1(A.Yg.ANOTHER_MODAL_OPENED) : e1(A.Yg.LOST_FOCUS))
     }, [$, ei, es, ea, eo, ec, eX, tD, tR, tt, eJ]), l.useEffect(() => {
-        e0 === S.Yg.ANOTHER_MODAL_OPENED && $ === m.ip4.ENTERED && ec === w.Q6.PAUSED && eJ && ei && (tt.info("[QV] | Resuming full episode video after modal re-entered"), tD(w.Q6.PLAYING))
+        e0 === A.Yg.ANOTHER_MODAL_OPENED && $ === m.ip4.ENTERED && ec === w.Q6.PAUSED && eJ && ei && (tt.info("[QV] | Resuming full episode video after modal re-entered"), tD(w.Q6.PLAYING))
     }, [$, ec, tt, tD, e0, eJ, ei]);
     let [tL, tI] = l.useState(!1), tM = l.useRef(null), tj = l.useRef(performance.now()), tw = l.useCallback(() => {
         null != tM.current && clearTimeout(tM.current), ec !== w.Q6.PLAYING || (tM.current = setTimeout(() => {
@@ -187,17 +187,17 @@ function $(e) {
         tP = l.useCallback(() => {
             tt.info("[QV] | handleFullScreenExit");
             let e = (0, x.qf)(eW.current?.parentNode, eW.current);
-            null == e || (0, x._U)(e) || (e.removeEventListener(x.Wb, tP), Z(!1), tA(!1), tl(w.oA.MD))
-        }, [Z, tt, tA]),
+            null == e || (0, x._U)(e) || (e.removeEventListener(x.Wb, tP), Z(!1), tS(!1), tl(w.oA.MD))
+        }, [Z, tt, tS]),
         tQ = () => {
             if (null == eW.current) return;
             let e = Math.max(eW.current.currentTime - 10, 0);
-            tt.info(`[QV] | handleSeekBackIncrement | newTime: ${e}`), tU(e), ec === w.Q6.ENDED && tD(w.Q6.PAUSED), th(S.uF.VIDEO_MODAL, y.Cy.SEEK_BACKWARD)
+            tt.info(`[QV] | handleSeekBackIncrement | newTime: ${e}`), tU(e), ec === w.Q6.ENDED && tD(w.Q6.PAUSED), th(A.uF.VIDEO_MODAL, y.Cy.SEEK_BACKWARD)
         },
         tV = () => {
             if (null == eW.current || !t6) return;
             let e = Math.min(eW.current.currentTime + 10, te);
-            tt.info(`[QV] | handleSeekForwardIncrement | newTime: ${e}`), tU(e), ec !== w.Q6.ENDED && e >= eW.current.duration && tD(w.Q6.ENDED), th(S.uF.VIDEO_MODAL, y.Cy.SEEK_FORWARD)
+            tt.info(`[QV] | handleSeekForwardIncrement | newTime: ${e}`), tU(e), ec !== w.Q6.ENDED && e >= eW.current.duration && tD(w.Q6.ENDED), th(A.uF.VIDEO_MODAL, y.Cy.SEEK_FORWARD)
         };
     l.useEffect(() => {
         let e = eW.current;
@@ -207,7 +207,7 @@ function $(e) {
         }
     }, [tP]);
     let tU = l.useCallback(e => {
-        null != eW.current && (tt.info(`[QV] | seekTimeline | timeSec: ${e}`), eV(e / (eW.current.duration ?? 1) * 100), tN(), eA(!0), e4(!1), eW.current.currentTime = e, e$(q.id, e, eW.current.duration))
+        null != eW.current && (tt.info(`[QV] | seekTimeline | timeSec: ${e}`), eV(e / (eW.current.duration ?? 1) * 100), tN(), eS(!0), e4(!1), eW.current.currentTime = e, e$(q.id, e, eW.current.duration))
     }, [eW, e$, q.id, tN, tt]);
     l.useEffect(() => {
         let e = eW.current;
@@ -229,7 +229,7 @@ function $(e) {
                     tU(0), tD(w.Q6.PLAYING);
                     break;
                 case w.Q6.PLAYING:
-                    tD(w.Q6.PAUSED), e1(S.Yg.PAUSE_BUTTON);
+                    tD(w.Q6.PAUSED), e1(A.Yg.PAUSE_BUTTON);
                     break;
                 default:
                     tD(w.Q6.PLAYING)
@@ -268,12 +268,12 @@ function $(e) {
         tt.info(`[QV] | handleCanPlay: playerState: ${ec}`), null != eW.current && ec === w.Q6.PLAYING && (tt.info("[QV] | handleCanPlay: did NOT early return"), eC && (tt.info(`[QV] | handleCanPlay: loadingFirstChunk: ${eC}`), e_(!1)), eb && (tt.info(`[QV] | handleCanPlay: waitingForChunk: ${eb}`), tx(null != eF.current ? performance.now() - eF.current : null), ey(!1)), tt.info("[QV] | handleCanPlay: updating player state to playing"), tD(w.Q6.PLAYING))
     };
     l.useEffect(() => {
-        if (!eS) return;
+        if (!eA) return;
         let e = setTimeout(() => {
-            eA(!1)
+            eS(!1)
         }, 1e3);
         return () => clearTimeout(e)
-    }, [eS]);
+    }, [eA]);
     let [{
         controlBarAnimSpring: tW
     }, tq] = (0, m.zhh)(() => ({
@@ -378,7 +378,7 @@ function $(e) {
                 onPlaying: () => {
                     if (!eU.current) return;
                     let e = performance.now() - Y;
-                    tt.info(`[QV] | ⏰ Video FCP: ${e}ms`), tS(e), eU.current = !1
+                    tt.info(`[QV] | ⏰ Video FCP: ${e}ms`), tA(e), eU.current = !1
                 },
                 onWaiting: e => {
                     eF.current = performance.now(), tt.info(`[QV] | handleWaitingForData: bufferingStartTime: ${eF.current}`), tv(), ey(!0)
@@ -479,7 +479,7 @@ function $(e) {
                     children: (0, r.jsx)(j.y, {
                         quest: q,
                         onClose: () => {
-                            en(!1), th(S.uF.VIDEO_MODAL, y.Cy.TRANSCRIPT_DISABLE)
+                            en(!1), th(A.uF.VIDEO_MODAL, y.Cy.TRANSCRIPT_DISABLE)
                         }
                     })
                 })]
@@ -537,7 +537,7 @@ function $(e) {
                     },
                     children: (0, r.jsx)(M.A, {
                         percent: null != eQ ? eQ : ev,
-                        animate: !0 !== ez.current && !eS,
+                        animate: !0 !== ez.current && !eA,
                         interactionEnabled: t9,
                         playerState: ec,
                         preloadedBuffers: tO ? eT : void 0,
@@ -584,16 +584,16 @@ function $(e) {
                         size: tr,
                         handlePlaybackBtnClick: tB,
                         handleTranscriptBtnClick: () => {
-                            en(!et), th(S.uF.VIDEO_MODAL, et ? y.Cy.TRANSCRIPT_DISABLE : y.Cy.TRANSCRIPT_ENABLE)
+                            en(!et), th(A.uF.VIDEO_MODAL, et ? y.Cy.TRANSCRIPT_DISABLE : y.Cy.TRANSCRIPT_ENABLE)
                         },
                         handleCaptionBtnClick: () => {
-                            el(!er), th(S.uF.VIDEO_MODAL, er ? y.Cy.CLOSED_CAPTIONING_DISABLE : y.Cy.CLOSED_CAPTIONING_ENABLE)
+                            el(!er), th(A.uF.VIDEO_MODAL, er ? y.Cy.CLOSED_CAPTIONING_DISABLE : y.Cy.CLOSED_CAPTIONING_ENABLE)
                         },
                         handleFullScreenBtnClick: () => {
                             let e = !J;
                             tt.info(`[QV] | handleFullScreenButtonClick | shouldBeEnabled: ${e}`);
                             let t = (0, x.qf)(eW.current?.parentNode, eW.current);
-                            e && null != t ? ((0, x.tl)(t), t.addEventListener(x.Wb, tP), tA(!0), tl(w.oA.LG)) : e || null == t || (t.removeEventListener(x.Wb, tP), tA(!1), (0, x.sP)(t), tl(w.oA.MD)), Z(e)
+                            e && null != t ? ((0, x.tl)(t), t.addEventListener(x.Wb, tP), tS(!0), tl(w.oA.LG)) : e || null == t || (t.removeEventListener(x.Wb, tP), tS(!1), (0, x.sP)(t), tl(w.oA.MD)), Z(e)
                         },
                         handleSeekBackBtnClick: tQ,
                         handleSeekForwardBtnClick: tV,

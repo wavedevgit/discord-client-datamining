@@ -4,8 +4,8 @@ i.d(t, {
 });
 var l = i(627968),
     n = i(64700),
-    s = i(503698),
-    a = i.n(s),
+    a = i(503698),
+    s = i.n(a),
     r = i(397927),
     d = i(793574),
     c = i(688810),
@@ -22,7 +22,7 @@ function A(e) {
         className: t
     } = e, {
         analyticsLocations: i,
-        sourceAnalyticsLocations: s
+        sourceAnalyticsLocations: a
     } = (0, c.Ay)(d.A.PREMIUM_UPSELL_TOOLTIP);
     return n.useEffect(() => {
         m.default.track(x.HAw.PREMIUM_UPSELL_VIEWED, {
@@ -30,9 +30,9 @@ function A(e) {
             location: {
                 page: x.liQ.NATIVE_INVITE_MODAL
             },
-            location_stack: s
+            location_stack: a
         })
-    }, [s]), (0, l.jsxs)(r.DUT, {
+    }, [a]), (0, l.jsxs)(r.DUT, {
         onClick: () => (0, u.A)({
             analyticsSource: {
                 page: x.ThZ.EXTERNAL_INVITE_LINK_MODAL
@@ -43,7 +43,7 @@ function A(e) {
             },
             analyticsLocations: i
         }),
-        className: a()(g.fA, t),
+        className: s()(g.fA, t),
         children: [(0, l.jsx)(r.tvc, {
             size: "md",
             className: g.Y2,

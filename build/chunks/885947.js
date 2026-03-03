@@ -1,6 +1,6 @@
 /** chunk id: 885947, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => S
+    A: () => A
 });
 var r = n(627968),
     l = n(64700),
@@ -20,19 +20,19 @@ var r = n(627968),
     x = n(438655),
     g = n(681636);
 
-function S() {
+function A() {
     let {
         quest: e,
         sourceQuestContent: t,
         isPortrait: n,
         onClose: i
-    } = l.useContext(E.VideoQuestModalContext), S = (0, f.go)(), A = (0, m.LS)(e), C = l.useRef(null), {
+    } = l.useContext(E.VideoQuestModalContext), A = (0, f.go)(), S = (0, m.LS)(e), C = l.useRef(null), {
         isHoveringOrFocusing: _
     } = (0, u.A)(C), b = (0, h.H)({
         quest: e,
         onClose: i,
         sourceQuestContent: t,
-        impressionId: S
+        impressionId: A
     }), y = e.config.ctaConfig.subtitle, T = void 0 !== y && !(0, c.uJ)(y);
     return (0, r.jsx)(a.m_, {
         text: v.intl.string(v.t.EuHF34),
@@ -41,7 +41,7 @@ function S() {
             className: x._S,
             children: (0, r.jsxs)("div", {
                 className: s()(g.hA, x.t8, {
-                    [x.Mc]: A
+                    [x.Mc]: S
                 }),
                 ref: C,
                 children: [(0, r.jsx)("div", {

@@ -35,8 +35,8 @@ var i, l = n(627968),
     M = n(44724),
     w = n(486318),
     D = n(345938),
-    k = n(533406),
-    O = n(366523),
+    O = n(533406),
+    k = n(366523),
     U = n(300182),
     G = n(620999),
     B = n(696028),
@@ -239,7 +239,7 @@ function Z(e) {
                     trackCardClick: e_,
                     analyticsLocations: et,
                     analyticsContext: ee
-                }), null != ev ? ea ? (0, l.jsx)(O.A, {
+                }), null != ev ? ea ? (0, l.jsx)(k.A, {
                     containerClassName: Y.Vl,
                     foregroundImageClassName: Y.wP,
                     cardImage: ev,
@@ -311,7 +311,7 @@ function Z(e) {
                                 variant: "primary",
                                 onMouseDown: eC,
                                 onClick: e => {
-                                    e.stopPropagation(), e_(H.bB.BUY_BUTTON), (0, k.a)(D, {
+                                    e.stopPropagation(), e_(H.bB.BUY_BUTTON), (0, O.a)(D, {
                                         isGift: !1
                                     }, {
                                         analyticsLocations: [...et, x.A.SLAYER_STOREFRONT_CARD_PURCHASE_BUTTON],
@@ -334,7 +334,7 @@ function Z(e) {
                                 })
                             }), (0, l.jsx)(U.A, {
                                 onGift: e => {
-                                    e.stopPropagation(), e_(H.bB.GIFT_BUTTON), (0, k.a)(D, {
+                                    e.stopPropagation(), e_(H.bB.GIFT_BUTTON), (0, O.a)(D, {
                                         isGift: !0
                                     }, {
                                         analyticsLocations: [...et, x.A.SLAYER_STOREFRONT_CARD_GIFT_BUTTON]

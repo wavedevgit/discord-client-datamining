@@ -8,8 +8,8 @@ var i = n(311907),
     a = n(428835),
     r = n(961350),
     o = n(994500),
-    _ = n(652215);
-let d = (0, l.C)({
+    d = n(652215);
+let _ = (0, l.C)({
     kind: "user",
     id: "2025-11_invite_friend_members",
     label: "Show Friends in Server on Invite Modal",
@@ -37,7 +37,7 @@ let d = (0, l.C)({
 function s(e) {
     if (null == e) return !1;
     let t = e.features;
-    return Array.isArray(t) ? !t.includes(_.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED) : !(t instanceof Set) || !t.has(_.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED)
+    return Array.isArray(t) ? !t.includes(d.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED) : !(t instanceof Set) || !t.has(d.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED)
 }
 let u = {
     showFriendsInServer: !1,
@@ -48,7 +48,7 @@ function c(e) {
     let {
         guild: t,
         ...n
-    } = e, l = (0, i.bG)([r.default], () => r.default.isAuthenticated()), _ = (0, i.bG)([o.A], () => o.A.getFriendCount() > 0), c = s(t), f = l && _ && c, g = (0, a.Dr)(d, {
+    } = e, l = (0, i.bG)([r.default], () => r.default.isAuthenticated()), d = (0, i.bG)([o.A], () => o.A.getFriendCount() > 0), c = s(t), f = l && d && c, g = (0, a.Dr)(_, {
         ...n,
         disable: !f
     });
@@ -60,5 +60,5 @@ function f(e) {
         guild: t,
         ...n
     } = e, i = r.default.isAuthenticated(), l = o.A.getFriendCount() > 0;
-    return i && l && s(t) ? (0, a.Kd)(d, n) : u
+    return i && l && s(t) ? (0, a.Kd)(_, n) : u
 }

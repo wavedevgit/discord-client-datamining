@@ -24,7 +24,7 @@ function g() {
         quest: e,
         sourceQuestContent: t,
         onClose: n
-    } = l.useContext(E.VideoQuestModalContext), [g, S] = l.useState(!1), A = (0, i.bG)([o.A], () => o.A.useReducedMotion), C = l.useRef(e.userStatus?.completedAt), [_, b] = l.useState(!1), y = (0, d.mq)(e.config), {
+    } = l.useContext(E.VideoQuestModalContext), [g, A] = l.useState(!1), S = (0, i.bG)([o.A], () => o.A.useReducedMotion), C = l.useRef(e.userStatus?.completedAt), [_, b] = l.useState(!1), y = (0, d.mq)(e.config), {
         completedRatio: T,
         completedRatioDisplay: N
     } = (0, c.O9)(e), D = e.userStatus?.completedAt != null, R = e.userStatus?.claimedAt != null, L = h.intl.formatToPlainString(D && !R ? h.t.NRp4K4 : h.t["12IWP2"], {
@@ -47,15 +47,15 @@ function g() {
             className: v.t_,
             loop: !1,
             autoplay: !1,
-            shouldAnimate: _ && !A
+            shouldAnimate: _ && !S
         }), (0, r.jsx)(s.m, {
             position: "top",
             text: L,
             onTooltipShow: () => {
-                S(!0)
+                A(!0)
             },
             onTooltipHide: () => {
-                S(!1)
+                A(!1)
             },
             children: (0, r.jsx)(a.DUT, {
                 className: v.md,

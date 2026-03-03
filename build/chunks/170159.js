@@ -151,10 +151,7 @@ class L extends s.PureComponent {
             transitionTo: t
         } = this.props;
         return (0, i.jsxs)(p.Ay, {
-            children: [(0, i.jsx)(p._V, {
-                src: n(428721),
-                className: O.QB
-            }), (0, i.jsx)(p.hE, {
+            children: [(0, i.jsx)(p.hE, {
                 className: l()(O.Ot, O.QB),
                 children: R.intl.string(R.t.KPowgn)
             }), (0, i.jsx)(p.tK, {

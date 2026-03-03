@@ -35,8 +35,8 @@ var i = n(627968),
     M = n(954571),
     w = n(45938),
     D = n(927578),
-    k = n(615396),
-    O = n(427262),
+    O = n(615396),
+    k = n(427262),
     U = n(295843),
     G = n(652215),
     B = n(788868),
@@ -72,11 +72,7 @@ class W extends l.PureComponent {
             section: G.nc_.INVENTORY
         })
     }
-    renderMedia = () => (0, i.jsx)("div", {
-        className: a()(H.oK, {
-            [H.ok]: this.isHorizontal
-        })
-    });renderTitle = () => this.props.isSelfGift ? F.intl.string(F.t.mT9B49) : F.intl.string(F.t.Vo5yHw);renderActions = () => this.props.isSelfGift ? (0, i.jsx)(u.Button, {
+    renderTitle = () => this.props.isSelfGift ? F.intl.string(F.t.mT9B49) : F.intl.string(F.t.Vo5yHw);renderActions = () => this.props.isSelfGift ? (0, i.jsx)(u.Button, {
         variant: "primary",
         size: "sm",
         text: F.intl.string(F.t["jcSP+g"]),
@@ -91,7 +87,6 @@ class W extends l.PureComponent {
             isHorizontal: this.isHorizontal,
             renderTitle: this.renderTitle,
             renderTagline: this.renderTagline,
-            renderMedia: this.renderMedia,
             renderActions: this.renderActions
         })
     }
@@ -224,7 +219,7 @@ class q extends l.Component {
             sku: i
         } = this.props;
         return this.isCustomGiftMessage() && !n ? F.intl.formatToPlainString(F.t.t1SOId, {
-            recipientDisplayName: O.Ay.getName(t)
+            recipientDisplayName: k.Ay.getName(t)
         }) : null == i ? null : e.isSubscription ? n ? F.intl.string(F.t["2PJ1NP"]) : F.intl.string(F.t.hrnGng) : n ? F.intl.string(F.t.QLEMld) : F.intl.string(F.t.W4DBcy)
     }
     renderBody(e) {
@@ -258,11 +253,11 @@ class q extends l.Component {
         });
         if (e.isExistingPremiumSubscriptionDisallowed) return F.intl.string(F.t.UCIU9y);
         if (e.hasMultipleCopies) return null != l ? e.isSubscription ? F.intl.format(F.t.l3VxgG, {
-            username: O.Ay.getUserTag(l),
+            username: k.Ay.getUserTag(l),
             maxUses: e.maxUses,
             skuName: s
         }) : F.intl.format(F.t["9cYrw5"], {
-            username: O.Ay.getUserTag(l),
+            username: k.Ay.getUserTag(l),
             totalCopies: e.maxUses,
             skuName: s
         }) : e.isSubscription ? F.intl.formatToPlainString(F.t.svrO3W, {
@@ -277,7 +272,7 @@ class q extends l.Component {
             if (null != l) {
                 let e = r.interval === B.WT.MONTH ? F.t["/RDIEA"] : F.t["3CX6Ev"];
                 return F.intl.format(e, {
-                    username: O.Ay.getUserTag(l),
+                    username: k.Ay.getUserTag(l),
                     skuName: s,
                     intervalCount: r.intervalCount
                 })
@@ -289,7 +284,7 @@ class q extends l.Component {
             })
         }
         return null != l ? F.intl.format(F.t["3HsdQ/"], {
-            username: O.Ay.getUserTag(l)
+            username: k.Ay.getUserTag(l)
         }) : F.intl.string(F.t.Jdnjjj)
     }
     renderCustomGiftBox = e => {
@@ -386,7 +381,7 @@ let Y = (0, h.A)((0, m.A)(q)),
         } = (0, d.cf)([N.A], () => ({
             giftCode: N.A.get(t),
             resolved: N.A.getIsResolved(t)
-        })), a = (0, d.bG)([L.default], () => null != l && null != l.userId ? L.default.getUser(l.userId) : null), s = (0, d.bG)([R.A], () => null != l ? R.A.get(l.skuId) : null), o = (0, d.bG)([j.A], () => null != s && l?.entitlementBranches != null ? w.YI(l.entitlementBranches, s, j.A) : null), c = (0, g.h)(s?.applicationId), u = (0, k.zz)(l?.subscriptionPlanId), _ = (0, d.bG)([y.default], () => null != l ? y.default.getId() === l.userId : y.default.getId() === n.id);
+        })), a = (0, d.bG)([L.default], () => null != l && null != l.userId ? L.default.getUser(l.userId) : null), s = (0, d.bG)([R.A], () => null != l ? R.A.get(l.skuId) : null), o = (0, d.bG)([j.A], () => null != s && l?.entitlementBranches != null ? w.YI(l.entitlementBranches, s, j.A) : null), c = (0, g.h)(s?.applicationId), u = (0, O.zz)(l?.subscriptionPlanId), _ = (0, d.bG)([y.default], () => null != l ? y.default.getId() === l.userId : y.default.getId() === n.id);
         return (0, i.jsx)(Y, {
             ...e,
             skuApplication: c,

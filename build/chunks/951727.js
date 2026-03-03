@@ -125,8 +125,8 @@ function j(e, t) {
         canSubmitVote: M,
         expirationLabel: w = T.intl.string(T.t["e+J3JZ"]),
         hasSelectedAnswer: D,
-        hasVoted: k,
-        isEditingVote: O,
+        hasVoted: O,
+        isEditingVote: k,
         isExpired: U,
         isInteractive: G,
         reactions: B,
@@ -146,10 +146,10 @@ function j(e, t) {
             c = 0 === q ? 0 : d / q,
             u = F.has(r),
             _ = d >= z && 0 !== d,
-            m = k && (o?.me_vote ?? !1),
+            m = O && (o?.me_vote ?? !1),
             g = (t = {
                 didSelfVote: m,
-                hasVoted: k,
+                hasVoted: O,
                 isExpired: U,
                 isSelected: u,
                 isLeader: _,
@@ -222,8 +222,8 @@ function j(e, t) {
     }), K = (0, i.YW)({
         isExpired: U,
         canSubmitVote: M,
-        hasVoted: k,
-        isEditingVote: O,
+        hasVoted: O,
+        isEditingVote: k,
         canRemoveVote: R,
         isInteractive: G,
         showResults: W
@@ -261,7 +261,7 @@ function j(e, t) {
     })), J = (0, g.isIOS)() ? T.intl.string(T.t["PVATM/"]) : T.intl.string(T.t.cHfFql), X = (0, i.YW)({
         isExpired: U,
         isInteractive: G,
-        isEditingVote: O
+        isEditingVote: k
     }).with({
         isInteractive: !1,
         isExpired: !1
@@ -283,7 +283,7 @@ function j(e, t) {
         presentation: "text",
         enabled: !0,
         type: "showVoterDetails"
-    })), Z = !G || U || k || W ? void 0 : {
+    })), Z = !G || U || O || W ? void 0 : {
         label: T.intl.string(T.t["/KHAUF"]),
         presentation: "textButton",
         enabled: !0,
@@ -329,7 +329,7 @@ function j(e, t) {
         canSelectMultipleAnswers: $,
         hasSelectedAnswer: D,
         canShowVoteCounts: P,
-        hasVoted: k,
+        hasVoted: O,
         isExpired: U,
         myAvatarUrl: b,
         secondaryAction: X,

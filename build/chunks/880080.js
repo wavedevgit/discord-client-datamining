@@ -1,6 +1,6 @@
 /** chunk id: 880080, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => S
+    A: () => A
 });
 var r = n(627968),
     l = n(64700),
@@ -20,13 +20,13 @@ var r = n(627968),
     x = n(985018),
     g = n(681636);
 
-function S(e) {
+function A(e) {
     let {
         videoRef: t,
         playerState: n,
         animSpring: i,
-        visible: S,
-        seekForwardEnabled: A,
+        visible: A,
+        seekForwardEnabled: S,
         hideCaptionBtn: C,
         hideTranscriptBtn: _,
         orientation: b,
@@ -105,7 +105,7 @@ function S(e) {
             children: [(0, r.jsx)(f.Ey, {
                 iconComponent: el,
                 animationTime: i,
-                visible: S,
+                visible: A,
                 ariaLabel: ei,
                 tooltipLabel: ei,
                 shortcut: v.TJ.PLAYBACK,
@@ -117,7 +117,7 @@ function S(e) {
                 children: [(0, r.jsx)(f.Ey, {
                     iconComponent: p.qN,
                     animationTime: i,
-                    visible: S,
+                    visible: A,
                     onClick: L,
                     ariaLabel: x.intl.string(x.t.r9s3Uv),
                     tooltipLabel: x.intl.string(x.t.r9s3Uv),
@@ -127,12 +127,12 @@ function S(e) {
                 }), (0, r.jsx)(f.Ey, {
                     iconComponent: p.i7,
                     animationTime: i,
-                    visible: S,
+                    visible: A,
                     onClick: I,
-                    disabled: !A,
-                    ariaLabel: A ? x.intl.string(x.t.zWDcNP) : x.intl.string(x.t.xXh3yw),
-                    tooltipLabel: A ? x.intl.string(x.t.zWDcNP) : x.intl.string(x.t.xXh3yw),
-                    tooltipDelayMs: A ? f.do : 0,
+                    disabled: !S,
+                    ariaLabel: S ? x.intl.string(x.t.zWDcNP) : x.intl.string(x.t.xXh3yw),
+                    tooltipLabel: S ? x.intl.string(x.t.zWDcNP) : x.intl.string(x.t.xXh3yw),
+                    tooltipDelayMs: S ? f.do : 0,
                     shortcut: v.TJ.SEEK_FORWARD,
                     buttonSize: f.AU[y],
                     "data-testid": "discord-web-video-player-seek-forward-btn"
@@ -144,7 +144,7 @@ function S(e) {
                 opacity: (0, a.to)([i.to({
                     range: [0, 1],
                     output: [0, 1]
-                })], e => `${S?e:Math.pow(e,8)}`)
+                })], e => `${A?e:Math.pow(e,8)}`)
             },
             children: [(0, r.jsxs)("div", {
                 onMouseEnter: ee,
@@ -156,7 +156,7 @@ function S(e) {
                 children: [(0, r.jsx)(f.Ey, {
                     iconComponent: er,
                     animationTime: i,
-                    visible: S,
+                    visible: A,
                     onClick: Z,
                     ariaLabel: x.intl.string(x.t["eIl+AK"]),
                     tooltipLabel: x.intl.string(x.t["eIl+AK"]),
@@ -170,7 +170,7 @@ function S(e) {
                         opacity: (0, a.to)([q.to({
                             range: [0, 1],
                             output: [0, 1]
-                        })], e => `${S?e:Math.pow(e,8)}`),
+                        })], e => `${A?e:Math.pow(e,8)}`),
                         width: (0, a.to)([q.to({
                             range: [0, 1],
                             output: [0, 100]
@@ -204,7 +204,7 @@ function S(e) {
             children: [!_ && (0, r.jsx)(f.Ey, {
                 iconComponent: d.ueQ,
                 animationTime: i,
-                visible: S,
+                visible: A,
                 onClick: N,
                 active: V && n !== v.Q6.ENDED,
                 disabled: n === v.Q6.ENDED,
@@ -215,7 +215,7 @@ function S(e) {
             }), !C && (0, r.jsx)(f.Ey, {
                 iconComponent: p.IT,
                 animationTime: i,
-                visible: S,
+                visible: A,
                 active: U,
                 onClick: D,
                 ariaLabel: x.intl.string(x.t.bDSZO1),
@@ -226,7 +226,7 @@ function S(e) {
             }), (0, r.jsx)(f.Ey, {
                 iconComponent: w ? d.z7w : d.TM1,
                 animationTime: i,
-                visible: S,
+                visible: A,
                 onClick: R,
                 ariaLabel: x.intl.string(x.t.vKZT5t),
                 tooltipLabel: x.intl.string(x.t.vKZT5t),

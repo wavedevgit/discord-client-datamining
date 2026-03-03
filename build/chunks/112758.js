@@ -1,6 +1,6 @@
 /** chunk id: 112758, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    Am: () => O,
+    Am: () => k,
     Ck: () => F,
     G8: () => B,
     Ge: () => P,
@@ -8,7 +8,7 @@ n.d(t, {
     I: () => j,
     Jo: () => R,
     T0: () => N,
-    UY: () => k,
+    UY: () => O,
     U_: () => H,
     VL: () => w,
     Yq: () => M,
@@ -151,7 +151,7 @@ function D(e, t) {
     }, [e, t])
 }
 
-function k(e, t, n) {
+function O(e, t, n) {
     return l.useCallback(i => {
         let l = p.default.getUser(e),
             r = _.A.getChannel(t);
@@ -163,7 +163,7 @@ function k(e, t, n) {
     }, [e, t, n])
 }
 
-function O(e, t) {
+function k(e, t) {
     return l.useCallback(n => {
         let i = p.default.getUser(e),
             l = _.A.getChannel(t);

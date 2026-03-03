@@ -22,7 +22,7 @@ function d(e, t, n, u) {
         isAnimated: !0
     } : null != v ? (0, a.tW)(d, v, void 0, !1) : null, [d, v, u]), g = () => {
         null != f.current && 8e5 !== f.current.config.minAutoBitrate && (f.current.config.minAutoBitrate = 8e5)
-    }, S = r.useCallback(() => {
+    }, A = r.useCallback(() => {
         null != f.current && (f.current.config.minAutoBitrate = 8e5)
     }, []);
     return r.useEffect(() => {
@@ -42,6 +42,6 @@ function d(e, t, n, u) {
         videoAssetType: v,
         videoAsset: x,
         hlsRef: f,
-        onFirstChunkLoaded: S
+        onFirstChunkLoaded: A
     }
 }

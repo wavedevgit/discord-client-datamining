@@ -37,8 +37,8 @@ var i = n(627968),
     M = n(643612),
     w = n(613760),
     D = n(229527),
-    k = n(870136),
-    O = n(33525),
+    O = n(870136),
+    k = n(33525),
     U = n(484724),
     G = n(71755),
     B = n(178879),
@@ -91,8 +91,8 @@ var i = n(627968),
     eM = n(990560),
     ew = n(266620),
     eD = n(860227),
-    ek = n(564107),
-    eO = n(763899),
+    eO = n(564107),
+    ek = n(763899),
     eU = n(652176),
     eG = n(382807),
     eB = n(394839),
@@ -242,7 +242,7 @@ class e$ extends l.Component {
                     customId: n,
                     linkId: a
                 }, l)
-            } else if (n === v.I.GUILD_PRODUCT) return (0, i.jsx)(O.A, {
+            } else if (n === v.I.GUILD_PRODUCT) return (0, i.jsx)(k.A, {
                 code: l
             }, l);
             else if (n === v.I.SERVER_SHOP) return (0, i.jsx)(S.A, {
@@ -488,7 +488,7 @@ class e$ extends l.Component {
             disableComponentInteractivity: r,
             onMediaItemContextMenu: a
         } = this.props;
-        return (0, i.jsx)(ek.N, {
+        return (0, i.jsx)(eO.N, {
             gifAutoPlay: t,
             getGifFavButton: eZ,
             getOnMediaItemContextMenu: null == a ? void 0 : e => t => {
@@ -507,7 +507,7 @@ class e$ extends l.Component {
         let {
             channel: t
         } = this.props;
-        return (0, i.jsx)(eO.A, {
+        return (0, i.jsx)(ek.A, {
             channel: t,
             message: e,
             hideParty: !1
@@ -717,7 +717,7 @@ function e0(e) {
     } = (0, d.cf)([eh.A], () => ({
         canAddNewReactions: h && eh.A.can(eY.xBc.ADD_REACTIONS, t),
         canManageMessages: eh.A.can(eY.xBc.MANAGE_MESSAGES, t)
-    }), [h, t]), f = (0, D.ix)(t.guild_id), [, C] = (0, k.c)(t.guild_id), E = (0, es.Id)(t), I = (a === n.author.id || x) && n.author.id !== eY.oIV && !1 !== l && !(0, o.Lt)(n.flags, eY.pr7.EPHEMERAL) && E && (0, eS.A)(n) >= 1, b = a === n.author.id && E && !r, T = n.author.id === a, v = n.isFirstMessageInForumPost(t), S = (0, eN.A)({
+    }), [h, t]), f = (0, D.ix)(t.guild_id), [, C] = (0, O.c)(t.guild_id), E = (0, es.Id)(t), I = (a === n.author.id || x) && n.author.id !== eY.oIV && !1 !== l && !(0, o.Lt)(n.flags, eY.pr7.EPHEMERAL) && E && (0, eS.A)(n) >= 1, b = a === n.author.id && E && !r, T = n.author.id === a, v = n.isFirstMessageInForumPost(t), S = (0, eN.A)({
         channel: t,
         canChat: h,
         renderReactions: _,
@@ -726,7 +726,7 @@ function e0(e) {
         communicationDisabled: C,
         isActiveChannelOrUnarchivableThread: E,
         isAutomodQuarantined: f
-    }), N = (0, W.S)((n.editedTimestamp ?? n.timestamp).valueOf()), L = (0, Q.A)(t?.id), R = (0, X.A)(n), P = (0, j.P)(n), M = (0, ev.z)(t), w = (0, eI._f)(n.id, n.channel_id), O = (0, y._R)();
+    }), N = (0, W.S)((n.editedTimestamp ?? n.timestamp).valueOf()), L = (0, Q.A)(t?.id), R = (0, X.A)(n), P = (0, j.P)(n), M = (0, ev.z)(t), w = (0, eI._f)(n.id, n.channel_id), k = (0, y._R)();
     return (0, i.jsx)(e$, {
         canSuppressEmbeds: I,
         canDeleteAttachments: b,
@@ -749,7 +749,7 @@ function e0(e) {
         shouldHideMediaOptions: L,
         enabledContentHarmTypeFlags: P,
         ctaButtonType: w,
-        shouldAgeVerify: O
+        shouldAgeVerify: k
     })
 }
 let e1 = e => {

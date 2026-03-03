@@ -21,8 +21,8 @@ var r = n(627968),
     v = n(245853),
     x = n(890687),
     g = n(971649),
-    S = n(792620),
-    A = n(753386),
+    A = n(792620),
+    S = n(753386),
     C = n(73473),
     _ = n(922623),
     b = n(60040),
@@ -58,9 +58,9 @@ function k(e) {
         impressionRef: f,
         parentModalOpenStartClockTime: E,
         sourceQuestContent: h
-    } = e, C = (0, S.Yh)(i), w = (0, x.LS)(i), k = (0, g.go)(), [O, P] = l.useState(C.progressSeconds), [Q, V] = l.useState(142), [U, B] = l.useState(!1), F = i.config.taskConfigV2?.tasks?.[u.n.WATCH_VIDEO];
+    } = e, C = (0, A.Yh)(i), w = (0, x.LS)(i), k = (0, g.go)(), [O, P] = l.useState(C.progressSeconds), [Q, V] = l.useState(142), [U, B] = l.useState(!1), F = i.config.taskConfigV2?.tasks?.[u.n.WATCH_VIDEO];
     o()(null != F, "VideoQuestModal: videoTask must not be null");
-    let G = (0, A.eG)(F),
+    let G = (0, S.eG)(F),
         $ = "portrait" === G,
         Y = (0, p.A)(e => {
             V(e.target.offsetHeight)

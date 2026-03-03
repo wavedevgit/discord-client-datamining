@@ -103,19 +103,19 @@ function D(e) {
     }))
 }
 
-function k(e) {
+function O(e) {
     let {
         channelId: t,
         messageId: n
     } = e, i = T.A.getMessage(t, n);
     return null == i ? [] : i.reactions.flatMap(e => !0 === e.me_vote ? e.emoji.name : [])
 }
-async function O(e) {
+async function k(e) {
     let {
         channelId: t,
         messageId: n,
         answerIds: i
-    } = e, l = k({
+    } = e, l = O({
         channelId: t,
         messageId: n
     }), r = a().difference(l, i), s = a().difference(i, l), d = C.default.getId(), u = [...r.map(e => ({
@@ -163,7 +163,7 @@ async function U(e) {
     });
     let r = (0, N.xt)(t, n);
     l()(null != r, "Must not be able to vote without existing state!");
-    let a = k({
+    let a = O({
         channelId: t,
         messageId: n
     });
@@ -173,7 +173,7 @@ async function U(e) {
             ...e,
             submitting: !0,
             editing: !1
-        })), await O({
+        })), await k({
             channelId: t,
             messageId: n,
             answerIds: e
@@ -186,7 +186,7 @@ async function U(e) {
         u.A.show({
             title: R.intl.string(R.t.iufib1),
             body: e.getAnyErrorMessage?.() ?? e.message ?? R.intl.string(R.t.eAn6z2)
-        }), await O({
+        }), await k({
             channelId: t,
             messageId: n,
             answerIds: a

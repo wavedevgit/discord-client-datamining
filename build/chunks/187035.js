@@ -71,10 +71,7 @@ class D extends s.PureComponent {
     }
     renderInvalidGuildTemplate() {
         return (0, i.jsxs)(u.Ay, {
-            children: [(0, i.jsx)(u._V, {
-                src: n(428721),
-                className: k.QB
-            }), (0, i.jsx)(u.hE, {
+            children: [(0, i.jsx)(u.hE, {
                 className: l()(k.Ot, k.QB),
                 children: L.intl.string(L.t.C7ZRNw)
             }), (0, i.jsx)(u.tK, {

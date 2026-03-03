@@ -29,8 +29,8 @@ function E(e) {
         playerState: v,
         preloadedBuffers: x,
         duration: g,
-        maxSeekableTime: S,
-        onClick: A,
+        maxSeekableTime: A,
+        onClick: S,
         onScrubBack: C,
         onScrubForward: _,
         "data-testid": b
@@ -49,11 +49,11 @@ function E(e) {
     } = (0, m.A)({
         onScrubBack: C,
         onScrubForward: _,
-        maxSeekableTime: S,
+        maxSeekableTime: A,
         interactionEnabled: E,
         duration: g,
         percent: n,
-        onClick: A
+        onClick: S
     }), O = l.useMemo(() => null == I || null == T ? null : (0, u.rB)((0, u.hc)(I, T, g)), [I, T, g]), P = l.useMemo(() => {
         if (null != T) return (0, u.TO)(n, T)
     }, [n, T]), [{

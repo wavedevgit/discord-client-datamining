@@ -1,11 +1,11 @@
 /** chunk id: 54959, original params: e,t,i (module,exports,require) **/
 i.d(t, {
-    A: () => E
+    A: () => p
 });
 var l = i(627968),
     n = i(64700),
-    s = i(311907),
-    a = i(397927),
+    a = i(311907),
+    s = i(397927),
     r = i(966327),
     d = i(972387),
     c = i(539895),
@@ -17,21 +17,21 @@ var l = i(627968),
     h = i(162284),
     g = i(652215),
     A = i(985018),
-    p = i(492171);
+    E = i(492171);
 
-function E(e) {
+function p(e) {
     let {
         invite: t,
         guild: i,
-        className: E
-    } = e, j = (0, s.bG)([x.default], () => x.default.getCurrentUser()), {
+        className: p
+    } = e, j = (0, a.bG)([x.default], () => x.default.getCurrentUser()), {
         submitting: I,
         error: v
-    } = (0, s.cf)([c.A], () => c.A.getProps()), f = n.useCallback(() => {
+    } = (0, a.cf)([c.A], () => c.A.getProps()), T = n.useCallback(() => {
         d.A.acceptInvite(t)
-    }, [t]), T = (0, u.uE)(), N = "" !== T ? A.intl.format(A.t["9sWQNT"], {
+    }, [t]), f = (0, u.uE)(), N = "" !== f ? A.intl.format(A.t["9sWQNT"], {
         usernameHook: (e, t) => (0, l.jsx)("span", {
-            children: T
+            children: f
         }, t)
     }) : A.intl.string(A.t["e/6Ogt"]), C = n.useRef(null), [y, D] = n.useState(!1), S = n.useCallback(() => {
         y || _.default.track(g.HAw.INVITE_ACCEPT_JOIN_SETTINGS_EXPANDED, {
@@ -41,33 +41,33 @@ function E(e) {
         }), D(!y)
     }, [i.id, t.code, y]), L = (0, m.Sn)();
     return (0, l.jsxs)("div", {
-        className: E,
+        className: p,
         children: [null != v ? (0, l.jsx)("div", {
-            className: p.Un,
-            children: (0, l.jsx)(a.wx6, {
+            className: E.Un,
+            children: (0, l.jsx)(s.wx6, {
                 type: "critical",
                 children: v
             })
         }) : null, L ? (0, l.jsx)(o.A, {
-            className: p.sX
-        }) : null, (0, l.jsxs)(a.ButtonGroup, {
+            className: E.sX
+        }) : null, (0, l.jsxs)(s.ButtonGroup, {
             fullWidthContainer: !0,
             fullWidth: !0,
             direction: "horizontal",
-            children: [(0, l.jsx)(a.Button, {
-                onClick: f,
+            children: [(0, l.jsx)(s.Button, {
+                onClick: T,
                 loading: I,
                 variant: "primary",
                 disabled: L,
                 text: L ? A.intl.string(A.t.ZNCziL) : N,
                 icon: L || null == j ? void 0 : () => (0, l.jsx)(r.A, {
                     "aria-hidden": !0,
-                    size: a._3J.SIZE_16,
+                    size: s._3J.SIZE_16,
                     user: j
                 })
-            }), L ? null : (0, l.jsx)(a.YNO, {
+            }), L ? null : (0, l.jsx)(s.YNO, {
                 targetElementRef: C,
-                animation: a.YNO.Animation.NONE,
+                animation: s.YNO.Animation.NONE,
                 position: "top",
                 align: "right",
                 shouldShow: y,
@@ -79,9 +79,9 @@ function E(e) {
                 }),
                 children: e => (0, l.jsx)("div", {
                     ref: C,
-                    children: (0, l.jsx)(a.K0, {
+                    children: (0, l.jsx)(s.K0, {
                         ...e,
-                        icon: a.Zes,
+                        icon: s.Zes,
                         "aria-label": A.intl.string(A.t["3D5yo/"]),
                         variant: "secondary",
                         onClick: S

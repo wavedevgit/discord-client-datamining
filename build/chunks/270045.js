@@ -41,8 +41,8 @@ function L(e) {
         {
             handleComplete: w,
             handleProgress: D,
-            handleResetDismissibilityClick: k,
-            handleResetStatusClick: O,
+            handleResetDismissibilityClick: O,
+            handleResetStatusClick: k,
             handleOverrideDeliveryClick: U
         } = (0, g.j$)(e.quest.id),
         G = (0, g.do)({
@@ -156,12 +156,12 @@ function L(e) {
             children: [(0, i.jsx)(a.Drp, {
                 id: "dismiss",
                 label: j.intl.string(j.t.JF6W66),
-                action: k
+                action: O
             }), (0, i.jsx)(a.Drp, {
                 id: "enrollment",
                 label: j.intl.string(j.t.taqkwK),
                 action: () => {
-                    O(), H()
+                    k(), H()
                 }
             }), (0, i.jsx)(a.Drp, {
                 id: "progress",

@@ -1,8 +1,8 @@
 /** chunk id: 406385, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     AU: () => x,
-    Ey: () => A,
-    QF: () => S,
+    Ey: () => S,
+    QF: () => A,
     do: () => h,
     eC: () => v
 });
@@ -43,7 +43,7 @@ let E = "-:--",
         [u.n4.LG]: "lg"
     };
 
-function S(e) {
+function A(e) {
     let {
         current: t,
         duration: n
@@ -66,7 +66,7 @@ function S(e) {
         })]
     })
 }
-let A = l.forwardRef(function(e, t) {
+let S = l.forwardRef(function(e, t) {
     let {
         iconComponent: n,
         animationTime: l,
@@ -76,13 +76,13 @@ let A = l.forwardRef(function(e, t) {
         disabled: E,
         tooltipLabel: v,
         tooltipDelayMs: x = h,
-        shortcut: S,
-        onClick: A,
+        shortcut: A,
+        onClick: S,
         buttonSize: C = u.n4.MD,
         "data-testid": _
     } = e, b = e => (0, r.jsx)(m.DUT, {
         ...e,
-        onClick: !0 === E ? void 0 : A,
+        onClick: !0 === E ? void 0 : S,
         className: s()(f.K5, {
             [f.Iy]: E
         }),
@@ -114,7 +114,7 @@ let A = l.forwardRef(function(e, t) {
     });
     return null != v && i ? (0, r.jsx)(d.m_, {
         text: v,
-        keyboardShortcut: "" !== (S ?? "").trim() ? S : void 0,
+        keyboardShortcut: "" !== (A ?? "").trim() ? A : void 0,
         delay: x,
         children: b()
     }) : b()

@@ -19,8 +19,8 @@ var r = n(627968),
     v = n(274604),
     x = n(79423),
     g = n(60907),
-    S = n(267956),
-    A = n(662903),
+    A = n(267956),
+    S = n(662903),
     C = n(838541),
     _ = n(681636);
 let b = {
@@ -69,7 +69,7 @@ let b = {
             targetRef: el
         } = (0, g.O7)(), [ei, es] = l.useState(T ? u.Q6.PLAYING : u.Q6.PAUSED), [ea, eo] = l.useState(!1), [eu, ec] = l.useState(!1), [ed, em] = l.useState(0), [ep, ef] = l.useState(null), eE = l.useCallback(e => {
             ef(null), em(e)
-        }, []), [eh, ev] = l.useState(!1), [ex, eg] = l.useState(!0), [eS, eA] = l.useState(!1), [eC, e_] = l.useState([]), [eb, ey] = l.useState(!1), [eT, eN] = l.useState(!1), eD = l.useRef(!0), eR = l.useRef(null), eL = l.useRef(null), eI = l.useRef(0);
+        }, []), [eh, ev] = l.useState(!1), [ex, eg] = l.useState(!0), [eA, eS] = l.useState(!1), [eC, e_] = l.useState([]), [eb, ey] = l.useState(!1), [eT, eN] = l.useState(!1), eD = l.useRef(!0), eR = l.useRef(null), eL = l.useRef(null), eI = l.useRef(0);
         l.useLayoutEffect(() => {
             eI.current = performance.now()
         }, []);
@@ -77,7 +77,7 @@ let b = {
             k?.(e)
         }, [k]), {
             isHlsActive: eq
-        } = (0, A.A)(eG, {
+        } = (0, S.A)(eG, {
             src: Z,
             initialTimeSec: M,
             onError: eW
@@ -197,9 +197,9 @@ let b = {
         }, [tu]);
         let tc = e => {
             if (null != eG.current && ei === u.Q6.PLAYING) {
-                if (ex && eg(!1), eS) {
+                if (ex && eg(!1), eA) {
                     let e = null != eL.current ? performance.now() - eL.current : null;
-                    W?.(e), eA(!1)
+                    W?.(e), eS(!1)
                 }
                 e7(u.Q6.PLAYING, "buffering_recovery")
             }
@@ -285,7 +285,7 @@ let b = {
                         null != eG.current && (j?.(eG.current.currentTime, eG.current.duration), eE(eG.current.currentTime / eG.current.duration * 100))
                     },
                     onEnded: e => {
-                        e7(u.Q6.ENDED, "playback_complete"), eA(!1), w?.()
+                        e7(u.Q6.ENDED, "playback_complete"), eS(!1), w?.()
                     },
                     onLoadedData: e => {
                         if (ex) {
@@ -306,7 +306,7 @@ let b = {
                         K?.(t), eD.current = !1
                     },
                     onWaiting: e => {
-                        eL.current = performance.now(), H?.(), eA(!0)
+                        eL.current = performance.now(), H?.(), eS(!0)
                     },
                     onProgress: e => {
                         if (null == eG.current) return;
@@ -346,13 +346,13 @@ let b = {
                         src: Z,
                         type: "video/mp4"
                     })]
-                }), (ex || eS) && ei === u.Q6.PLAYING && null != Z && (0, r.jsx)("span", {
+                }), (ex || eA) && ei === u.Q6.PLAYING && null != Z && (0, r.jsx)("span", {
                     className: _.S,
                     "data-testid": "discord-web-video-player-loading-spinner",
                     children: (0, r.jsx)(c.y$y, {
                         type: c.y$y.Type.WANDERING_CUBES
                     })
-                }), (0, r.jsx)(S.A, {
+                }), (0, r.jsx)(A.A, {
                     hasVideoAsset: null != Z,
                     playerState: ei,
                     pauseReason: eK

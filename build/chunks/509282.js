@@ -160,8 +160,8 @@ function M(e) {
     });
     if (!E || null == A || null == c) return null;
     let D = c.type === S.Puh.SUBSCRIPTION,
-        k = !!D && (0, m.bg)(c.flags),
-        O = () => {
+        O = !!D && (0, m.bg)(c.flags),
+        k = () => {
             (0, o.mMO)(async () => {
                 let {
                     default: e
@@ -180,14 +180,14 @@ function M(e) {
                     t = D ? null : (await Promise.resolve().then(n.bind(n, 963179))).ItemDetailsModal;
                 return n => {
                     let l = () => {
-                        n.onClose(), O()
+                        n.onClose(), k()
                     };
                     return null != e && null != d ? (0, i.jsx)(e, {
                         transitionState: n.transitionState,
                         appId: A.id,
                         skuId: c.id,
                         guildId: x,
-                        subscriptionType: k ? "user" : "guild",
+                        subscriptionType: O ? "user" : "guild",
                         onClose: n.onClose,
                         onHeaderTitleClick: l
                     }) : null != t ? (0, i.jsx)(t, {
@@ -200,7 +200,7 @@ function M(e) {
                 }
             })
         },
-        G = D ? k ? (0, i.jsxs)(i.Fragment, {
+        G = D ? O ? (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(o.nys, {
                 size: "custom",
                 width: 12,
@@ -231,7 +231,7 @@ function M(e) {
         },
         iconSrc: f,
         onIconClick: () => {
-            O(), C.default.track(S.HAw.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
+            k(), C.default.track(S.HAw.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
                 application_id: A.id,
                 sku_id: c.id,
                 area: "app_icon"
@@ -252,7 +252,7 @@ function M(e) {
             }), D ? null != _ ? (0, i.jsx)(v.rc, {
                 onClick: P,
                 appId: A.id,
-                subscriptionType: k ? "user" : "guild",
+                subscriptionType: O ? "user" : "guild",
                 skuId: c.id,
                 icon: o.U1X,
                 onHasClicked: B,

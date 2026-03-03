@@ -47,19 +47,19 @@ function T(e) {
         if (t === v.id) return !0;
         let n = p.A.getGameByApplication(v);
         return null != n && t === n.id
-    })), w = (0, l.bG)([h.A], () => h.A.getCurrentUserActiveStream()), D = (0, l.bG)([g.A], () => g.A.getChannelId()), k = f.default.extractTimestamp(T.id) + C.M < Date.now(), O = (0, i.jsx)(i.Fragment, {
+    })), w = (0, l.bG)([h.A], () => h.A.getCurrentUserActiveStream()), D = (0, l.bG)([g.A], () => g.A.getChannelId()), O = f.default.extractTimestamp(T.id) + C.M < Date.now(), k = (0, i.jsx)(i.Fragment, {
         children: (0, a.Wf)(T, S, t)
     }), {
         analyticsLocations: U
     } = (0, o.Ay)(y, s.A.REQUEST_TO_STREAM_INVITE_EMBED), G = b.intl.string(I.default["5+172e"]), B = !1;
-    return k ? (G = b.intl.string(I.default.u4QmWl), B = !0) : null != w ? (G = b.intl.string(I.default.P0wwmM), B = !0) : D !== S.id ? (G = b.intl.string(I.default.qRXats), B = !0) : null == M && (G = b.intl.string(I.default["43zohO"]), B = !0), (0, i.jsx)(d.h, {
+    return O ? (G = b.intl.string(I.default.u4QmWl), B = !0) : null != w ? (G = b.intl.string(I.default.P0wwmM), B = !0) : D !== S.id ? (G = b.intl.string(I.default.qRXats), B = !0) : null == M && (G = b.intl.string(I.default["43zohO"]), B = !0), (0, i.jsx)(d.h, {
         header: b.intl.string(I.default.nAyuPp),
         title: v.name,
         staticBannerSrc: j,
         videoBannerSrc: L,
         bannerAspectRatio: R,
         iconSrc: P ?? void 0,
-        info: O,
+        info: k,
         actions: T.author.id === t ? [] : [{
             label: G,
             trackingArea: c.kY.STREAM,
@@ -83,7 +83,7 @@ function T(e) {
             channelId: S.id,
             messageId: T.id,
             onView: N,
-            isDeadEnd: k
+            isDeadEnd: O
         }
     })
 }

@@ -80,12 +80,12 @@ function A(e) {
             clearInterval(e)
         }
     }, [t, d]);
-    let G = R;
-    null != L && "" !== L && (G = N.intl.formatToPlainString(N.t.tXbu7I, {
+    let w = R;
+    null != L && "" !== L && (w = N.intl.formatToPlainString(N.t.tXbu7I, {
         start: R,
         end: L
     }));
-    let w = s.useMemo(() => l === h.XG.CANCELED || k?.is_canceled ? 5 : l === h.XG.ACTIVE ? 3 : h.lV.has(l) ? 4 : b ? 2 : +!!D, [l, k?.is_canceled, b, D]),
+    let G = s.useMemo(() => l === h.XG.CANCELED || k?.is_canceled ? 5 : l === h.XG.ACTIVE ? 3 : h.lV.has(l) ? 4 : b ? 2 : +!!D, [l, k?.is_canceled, b, D]),
         z = function(e, t, l, s, i) {
             switch (e) {
                 case 1:
@@ -108,7 +108,7 @@ function A(e) {
                 default:
                     return t
             }
-        }(w, G, A, L, P),
+        }(G, w, A, L, P),
         {
             Icon: U,
             iconColor: O,
@@ -147,13 +147,13 @@ function A(e) {
                 tooltipText: t
             }
         })({
-            timeStatus: w,
+            timeStatus: G,
             textBrand: S,
             textPositive: y,
             textDanger: _,
             endDateTimeString: L,
             startDateTimeString: R
-        }), [w, S, y, _, L, R]),
+        }), [G, S, y, _, L, R]),
         Y = null;
     if (null != C) {
         let e = (0, x.X7)(C);

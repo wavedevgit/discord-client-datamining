@@ -96,14 +96,14 @@ let w = e => {
         isFocused: I,
         isQuestExpired: w,
         isExpanded: D,
-        isAnimating: k,
-        contentPosition: O,
+        isAnimating: O,
+        contentPosition: k,
         sourceQuestContent: U
     } = e, G = (0, A.In)(t), B = (0, A.S5)(t.userStatus?.completedAt, {
         year: "numeric",
         month: "long",
         day: "numeric"
-    }), F = G >= A.F3.ACCEPTED, H = G >= A.F3.COMPLETED, V = D || k, W = (0, g.wT)(t, N.rE.QUESTS_CARD, n, U), q = (0, x.Ut)(), Y = (0, A.fc)(t), z = (0, g.mU)({
+    }), F = G >= A.F3.ACCEPTED, H = G >= A.F3.COMPLETED, V = D || O, W = (0, g.wT)(t, N.rE.QUESTS_CARD, n, U), q = (0, x.Ut)(), Y = (0, A.fc)(t), z = (0, g.mU)({
         quest: t,
         taskDetails: Y,
         location: N.rE.QUESTS_CARD,
@@ -144,7 +144,7 @@ let w = e => {
                         learnMoreStyle: "text",
                         quest: t,
                         questContent: n,
-                        questContentPosition: O,
+                        questContentPosition: k,
                         sourceQuestContent: U
                     })]
                 })
@@ -235,7 +235,7 @@ let w = e => {
                         }), q({
                             questId: t.id,
                             questContent: n,
-                            questContentPosition: O,
+                            questContentPosition: k,
                             questContentCTA: f.Cy.LEARN_MORE,
                             sourceQuestContent: U
                         })
@@ -246,7 +246,7 @@ let w = e => {
                     surface: T.V3.QUEST_EMBED,
                     analyticsCtxQuestContent: n,
                     analyticsCtxSourceQuestContent: U,
-                    analyticsCtxQuestContentPosition: O
+                    analyticsCtxQuestContentPosition: k
                 }) : (0, i.jsx)(M, {
                     quest: t,
                     progressState: G,

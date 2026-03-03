@@ -1,10 +1,10 @@
 /** chunk id: 960736, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     N9: () => S,
-    Z1: () => A,
+    Z1: () => p,
     dR: () => s,
-    jJ: () => p,
-    lD: () => d,
+    jJ: () => A,
+    lD: () => _,
     p9: () => f,
     qO: () => c,
     tJ: () => I,
@@ -21,11 +21,11 @@ let o = {
     dmsAllowed: !a.Zt.getSetting()
 };
 
-function _(e) {
+function d(e) {
     let t = a._Z.getSetting();
     return t !== l.Qd.ACTIVITY_STATUS_ON && (t !== l.Qd.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS || null == e || !(e > 200))
 }
-let d = (0, i.v)(e => ({
+let _ = (0, i.v)(e => ({
         nickname: o.nickname,
         dmsAllowed: o.dmsAllowed,
         showActivity: !0,
@@ -62,14 +62,14 @@ let d = (0, i.v)(e => ({
             guildSize: t,
             inviteCode: n,
             guildId: i,
-            showActivity: _(t),
+            showActivity: d(t),
             dmsAllowed: !a.Zt.getSetting(),
             touched: !1
         })),
         reset: () => e(e => ({
             nickname: o.nickname,
             dmsAllowed: o.dmsAllowed,
-            showActivity: _(e.guildSize),
+            showActivity: d(e.guildSize),
             inviteCode: void 0,
             guildId: void 0,
             guildSize: e.guildSize,
@@ -77,25 +77,25 @@ let d = (0, i.v)(e => ({
         }))
     })),
     s = (e, t, n) => {
-        d.getState().initialize(e, t, n)
+        _.getState().initialize(e, t, n)
     },
     u = () => {
-        d.getState().reset()
+        _.getState().reset()
     },
     c = () => {
-        let e = d.getState();
-        return e.nickname !== o.nickname || e.dmsAllowed !== o.dmsAllowed || e.showActivity !== _(e.guildSize)
+        let e = _.getState();
+        return e.nickname !== o.nickname || e.dmsAllowed !== o.dmsAllowed || e.showActivity !== d(e.guildSize)
     },
-    f = () => d.getState().inviteCode,
-    g = () => d.getState().guildId,
-    p = () => d.getState().touched,
-    A = () => d.getState().dmsAllowed,
-    I = () => d.getState().nickname,
-    S = () => d.getState().showActivity,
+    f = () => _.getState().inviteCode,
+    g = () => _.getState().guildId,
+    A = () => _.getState().touched,
+    p = () => _.getState().dmsAllowed,
+    I = () => _.getState().nickname,
+    S = () => _.getState().showActivity,
     v = () => {
         let {
             nickname: e
-        } = d();
+        } = _();
         if (null != e && "" !== e.trim()) return e;
         let t = r.default.getCurrentUser();
         return t?.globalName ?? t?.username ?? ""

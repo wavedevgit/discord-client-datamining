@@ -222,10 +222,7 @@ class q extends s.PureComponent {
     renderInvalidInvite() {
         let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
         return (0, i.jsxs)(x.Ay, {
-            children: [(0, i.jsx)(x._V, {
-                src: n(428721),
-                className: H.QB
-            }), (0, i.jsx)(x.hE, {
+            children: [(0, i.jsx)(x.hE, {
                 className: l()(H.Ot, H.QB),
                 children: W.intl.string(W.t.kux01N)
             }), (0, i.jsx)(x.tK, {

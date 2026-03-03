@@ -35,10 +35,10 @@ function j(e) {
         skuId: n,
         channel: j
     } = e, L = (0, a.bG)([A.A], () => A.A.isFetchingForSKU(n)), R = (0, a.bG)([g.A], () => g.A.get(n)), P = R?.applicationId, M = (0, a.bG)([u.A], () => null != P && u.A.isFetchingApplication(P)), w = (0, a.bG)([u.A], () => null != P && u.A.didFetchingApplicationFail(P)), D = (0, m.h)(P), {
-        analyticsLocations: k
+        analyticsLocations: O
     } = (0, c.Ay)(d.A.SLAYER_STOREFRONT_PRODUCT_DETAILS_EMBED);
     (0, h.pE)();
-    let O = (0, a.bG)([p.default], () => j.isDM() && null != j.recipients && 0 !== j.recipients.length ? p.default.getUser(j.recipients[0]) : null),
+    let k = (0, a.bG)([p.default], () => j.isDM() && null != j.recipients && 0 !== j.recipients.length ? p.default.getUser(j.recipients[0]) : null),
         U = (0, a.bG)([E.A], () => null != n ? E.A.getNormalizedSKUEligibility(n) : void 0, [n]),
         {
             primaryIconAsset: G,
@@ -53,9 +53,9 @@ function j(e) {
                 applicationId: R.applicationId,
                 guildId: t,
                 isStorefront: !1,
-                analyticsLocations: k
+                analyticsLocations: O
             })
-        }, [n, R?.applicationId, t, k]),
+        }, [n, R?.applicationId, t, O]),
         H = l.useCallback(() => {
             null != R && U && (0, b.a)(R, {
                 isGift: !1
@@ -67,11 +67,11 @@ function j(e) {
         V = l.useCallback(() => {
             null != R && (0, b.a)(R, {
                 isGift: !0,
-                giftRecipient: O ?? void 0
+                giftRecipient: k ?? void 0
             }, {
                 analyticsLocations: [d.A.SLAYER_STOREFRONT_PRODUCT_DETAILS_EMBED_GIFT_BUTTON]
             })
-        }, [R, O]),
+        }, [R, k]),
         W = null != P && null == D && !w;
     return (L || M || W) && (null == R || null == D) ? (0, i.jsx)("div", {
         className: N.kL,
@@ -87,7 +87,7 @@ function j(e) {
             guildId: t,
             variant: v.s.EMBEDDED,
             onClick: F,
-            analyticsLocations: k
+            analyticsLocations: O
         }), (0, i.jsxs)("div", {
             className: N.zH,
             children: [(0, i.jsxs)("div", {

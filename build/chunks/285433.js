@@ -40,8 +40,8 @@ let L = (0, s.animated)(c.abt),
             isAnimating: M,
             isExpanded: w,
             isInteracting: D,
-            contentPosition: k,
-            toggleExpanded: O,
+            contentPosition: O,
+            toggleExpanded: k,
             sourceQuestContent: U
         } = e, {
             ref: G,
@@ -50,11 +50,11 @@ let L = (0, s.animated)(c.abt),
             let t = e.target;
             H(t.offsetWidth), W(t.scrollWidth)
         }), Y = (0, _.w)(q), z = (0, v.a3)(r), Q = r === h.uF.QUESTS_EMBED, K = (0, p.wT)(n, S.rE.QUESTS_CARD, r, U), J = n.userStatus?.completedAt != null, X = (0, A.Ut)(), Z = (0, g.S5)(n.config.expiresAt), $ = (0, g.S5)(n.config.rewardsConfig.rewardsExpireAt), ee = l.useMemo(() => null != n.config.cosponsorMetadata, [n]), et = e => {
-            e.stopPropagation(), e.currentTarget.blur(), O(), X({
+            e.stopPropagation(), e.currentTarget.blur(), k(), X({
                 questId: n.id,
                 questContent: r,
                 questContentCTA: w ? x.Cy.COLLAPSE : x.Cy.EXPAND,
-                questContentPosition: k,
+                questContentPosition: O,
                 sourceQuestContent: U
             })
         }, en = (0, i.jsx)(E.Ay, {
@@ -195,7 +195,7 @@ let L = (0, s.animated)(c.abt),
                     children: [(0, i.jsx)(C.C, {
                         questContent: r,
                         quest: n,
-                        questContentPosition: k,
+                        questContentPosition: O,
                         shouldShowDisclosure: !0,
                         hideLearnMore: z,
                         showShareLink: !t && Q,

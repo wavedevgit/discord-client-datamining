@@ -21,7 +21,7 @@ let o = e => {
         className: r()(s.Vs, {
             [s.ZQ]: c
         }, d),
-        children: [(0, i.jsx)("div", {
+        children: [null != o && (0, i.jsx)("div", {
             className: r()(s.$_, {
                 [s.rO]: c
             }),

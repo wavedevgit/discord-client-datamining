@@ -5,8 +5,8 @@ i.d(t, {
 var l = i(627968);
 i(64700);
 var n = i(397927),
-    s = i(960736),
-    a = i(253932),
+    a = i(960736),
+    s = i(253932),
     r = i(652215),
     d = i(985018);
 
@@ -14,14 +14,14 @@ function c(e) {
     let {
         invite: t,
         closePopout: i
-    } = e, c = a.tz.useSetting(), {
+    } = e, c = s.tz.useSetting(), {
         nickname: o,
         dmsAllowed: u,
         showActivity: m,
         setNickname: x,
         setDmsAllowed: _,
         setShowActivity: h
-    } = (0, s.lD)(), g = t.is_nickname_changeable;
+    } = (0, a.lD)(), g = t.is_nickname_changeable;
     return (0, l.jsxs)(n.W1t, {
         navId: "accept-invite-modal-settings-menu",
         onClose: i,

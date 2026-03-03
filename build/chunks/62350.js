@@ -36,7 +36,7 @@ var i = n(627968),
     w = n(985018),
     D = n(320160);
 
-function k(e) {
+function O(e) {
     let {
         members: t,
         membersOnline: n,
@@ -72,7 +72,7 @@ function k(e) {
     })
 }
 
-function O(e) {
+function k(e) {
     let {
         channel: t,
         guild: n,
@@ -148,22 +148,22 @@ function U(e) {
         P = b.A.getChannel(r.channel?.id),
         D = (0, d.bG)([v.A], () => null != P && v.A.can(R.xBc.USE_EMBEDDED_ACTIVITIES, P), [P]),
         {
-            analyticsLocations: k
+            analyticsLocations: O
         } = (0, p.Ay)(h.A.INVITE_EMBED),
-        O = (0, d.yK)([m.Ay], () => null != P ? m.Ay.getEmbeddedActivitiesForChannel(P.id).filter(e => e.applicationId === A.id).flatMap(e => Array.from(e.userIds)) : [], [P, A.id]),
-        U = (0, d.yK)([S.default], () => O.map(e => S.default.getUser(e)).filter(e => null != e), [O]),
+        k = (0, d.yK)([m.Ay], () => null != P ? m.Ay.getEmbeddedActivitiesForChannel(P.id).filter(e => e.applicationId === A.id).flatMap(e => Array.from(e.userIds)) : [], [P, A.id]),
+        U = (0, d.yK)([S.default], () => k.map(e => S.default.getUser(e)).filter(e => null != e), [k]),
         B = l.useCallback(() => {
             (0, _.he)({
                 invite: r,
                 action: "accept",
                 inviter_id: a.author.id,
                 invite_message_id: a.id
-            }, k), _.Ay.acceptInviteAndTransitionToInviteChannel({
+            }, O), _.Ay.acceptInviteAndTransitionToInviteChannel({
                 inviteKey: r.code,
                 context: s("Invite Button Embed"),
-                analyticsLocations: k
+                analyticsLocations: O
             })
-        }, [r, a, k, s]),
+        }, [r, a, O, s]),
         F = r.state === R.elq.ACCEPTING,
         H = null != f;
     if (null == f) {
@@ -173,7 +173,7 @@ function U(e) {
     t = H ? I ? w.intl.string(w.t.DPfdsq) : N ? w.intl.string(w.t.sqe0hj) : w.intl.string(w.t.RscU7I) : w.intl.string(w.t["2BP08E"]);
     let V = H && !D || H && I;
     return (D || (n = w.intl.string(w.t.hHGrWz)), null == r.code || "" === r.code || null == C) ? null : (0, i.jsx)(p.f5, {
-        value: k,
+        value: O,
         children: (0, i.jsx)(G, {
             app: C,
             activityUsers: U,
@@ -234,7 +234,7 @@ function G(e) {
         onClickBanner: S,
         info: (0, i.jsxs)("div", {
             className: D.QR,
-            children: [(0, i.jsx)(O, {
+            children: [(0, i.jsx)(k, {
                 channel: a,
                 guild: s,
                 hasEnded: !u,
@@ -245,7 +245,7 @@ function G(e) {
                 activityText: w.intl.formatToPlainString(w.t.yJj035, {
                     count: j
                 })
-            }) : (0, i.jsx)(k, {
+            }) : (0, i.jsx)(O, {
                 members: d,
                 membersOnline: c,
                 textColor: "none"

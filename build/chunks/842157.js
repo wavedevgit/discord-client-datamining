@@ -1,6 +1,6 @@
 /** chunk id: 842157, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => O
+    A: () => k
 }), n(321073);
 var i = n(627968),
     l = n(64700),
@@ -36,7 +36,7 @@ var i = n(627968),
     w = n(985018),
     D = n(609653);
 
-function k(e) {
+function O(e) {
     let {
         presenceActivity: t,
         remoteJoinPlatform: n
@@ -99,7 +99,7 @@ function k(e) {
     })
 }
 
-function O(e) {
+function k(e) {
     let {
         message: t,
         application: n,
@@ -109,7 +109,7 @@ function O(e) {
         currentUserId: S,
         launchableAppId: j,
         isEmbeddedApplication: L,
-        tryWithGdnAction: O,
+        tryWithGdnAction: k,
         staticBannerSrc: U,
         onClickContent: G,
         iconSrc: B,
@@ -222,7 +222,7 @@ function O(e) {
             trackingArea: h.kY.PLAY,
             onClick: () => {},
             disabled: !0
-        } : null != O && (e = O, n = !1);
+        } : null != k && (e = k, n = !1);
         let l = [];
         return null != e && (l.push(e), z && n && (l.push({
             label: w.intl.string(w.t.lw71Nf),
@@ -239,9 +239,9 @@ function O(e) {
             actions: l,
             hasAccountLinkButton: i
         }
-    }, [er, es, eo, ed, O, t.author.id, t.id, H, s.id, s.guild_id, Y, ea, S, ec, z, Q, K]), em = eu.some(e => e.trackingArea === h.kY.CLOUD_PLAY);
+    }, [er, es, eo, ed, k, t.author.id, t.id, H, s.id, s.guild_id, Y, ea, S, ec, z, Q, K]), em = eu.some(e => e.trackingArea === h.kY.CLOUD_PLAY);
     (0, R.A)(em, Y);
-    let eh = l.useMemo(() => ed ? null : (0, i.jsx)(k, {
+    let eh = l.useMemo(() => ed ? null : (0, i.jsx)(O, {
         presenceActivity: H,
         remoteJoinPlatform: ea
     }), [ed, H, ea]);

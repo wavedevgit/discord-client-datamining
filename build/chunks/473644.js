@@ -4,8 +4,8 @@ i.d(t, {
 });
 var l = i(627968),
     n = i(64700),
-    s = i(311907),
-    a = i(397927),
+    a = i(311907),
+    s = i(397927),
     r = i(854378),
     d = i(997590),
     c = i(714991),
@@ -22,16 +22,16 @@ function A(e) {
         guild: t,
         invite: i,
         discoveryGuild: A
-    } = e, p = i.approximate_presence_count ?? 0, E = i.approximate_member_count ?? 0, j = (0, s.bG)([u.default], () => u.default.locale), I = (0, o.P)(x.default.extractTimestamp(t.id), j), v = (0, s.bG)([d.A], () => A?.primary_category_id != null ? d.A.getCategoryName(A.primary_category_id) : null), f = t.premiumTier ?? _.TVA.NONE, T = f !== _.TVA.NONE, N = t.preferredLocale ?? A?.preferred_locale ?? null, C = n.useMemo(() => {
+    } = e, E = i.approximate_presence_count ?? 0, p = i.approximate_member_count ?? 0, j = (0, a.bG)([u.default], () => u.default.locale), I = (0, o.P)(x.default.extractTimestamp(t.id), j), v = (0, a.bG)([d.A], () => A?.primary_category_id != null ? d.A.getCategoryName(A.primary_category_id) : null), T = t.premiumTier ?? _.TVA.NONE, f = T !== _.TVA.NONE, N = t.preferredLocale ?? A?.preferred_locale ?? null, C = n.useMemo(() => {
         if ("en-US" === N) return h.intl.string(h.t.LQLMGP);
         let e = (0, h.getAvailableLocales)().find(e => e.value === N);
         return null != e ? h.intl.string(e.localizedName) : N
-    }, [N]), y = null != N && "" !== N, D = null != v, S = y || D || T, L = D || T;
+    }, [N]), y = null != N && "" !== N, D = null != v, S = y || D || f, L = D || f;
     return (0, l.jsxs)("div", {
         className: g.hn,
         children: [(0, l.jsxs)("div", {
             className: g.S7,
-            children: [(0, l.jsx)(a.Text, {
+            children: [(0, l.jsx)(s.Text, {
                 tag: "span",
                 variant: "heading-xl/semibold",
                 color: "text-strong",
@@ -42,9 +42,9 @@ function A(e) {
             })]
         }), (0, l.jsx)(r.R1, {
             className: g.He,
-            online: p,
-            total: E,
-            renderText: e => (0, l.jsx)(a.Text, {
+            online: E,
+            total: p,
+            renderText: e => (0, l.jsx)(s.Text, {
                 tag: "span",
                 variant: "text-sm/normal",
                 color: "text-subtle",
@@ -53,7 +53,7 @@ function A(e) {
         }), (0, l.jsxs)("div", {
             className: g.ov,
             children: [null != I && (0, l.jsxs)(l.Fragment, {
-                children: [(0, l.jsx)(a.Text, {
+                children: [(0, l.jsx)(s.Text, {
                     tag: "span",
                     variant: "text-sm/normal",
                     color: "text-subtle",
@@ -65,7 +65,7 @@ function A(e) {
                     "aria-hidden": !0
                 })]
             }), y && (0, l.jsxs)(l.Fragment, {
-                children: [(0, l.jsx)(a.Text, {
+                children: [(0, l.jsx)(s.Text, {
                     tag: "span",
                     variant: "text-sm/normal",
                     color: "text-subtle",
@@ -75,20 +75,20 @@ function A(e) {
                     "aria-hidden": !0
                 })]
             }), D && (0, l.jsxs)(l.Fragment, {
-                children: [(0, l.jsx)(a.Text, {
+                children: [(0, l.jsx)(s.Text, {
                     tag: "span",
                     variant: "text-sm/normal",
                     color: "text-subtle",
                     children: v
-                }), T && (0, l.jsx)("span", {
+                }), f && (0, l.jsx)("span", {
                     className: g.LO,
                     "aria-hidden": !0
                 })]
-            }), T && (0, l.jsx)(a.Text, {
+            }), f && (0, l.jsx)(s.Text, {
                 tag: "span",
                 variant: "text-sm/normal",
                 color: "text-subtle",
-                children: (0, m.gb)(f)
+                children: (0, m.gb)(T)
             })]
         })]
     })

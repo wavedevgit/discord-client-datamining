@@ -38,9 +38,9 @@ function v(e) {
         {
             channel: w,
             approximate_member_count: D,
-            approximate_presence_count: k
+            approximate_presence_count: O
         } = L,
-        O = L.state === I.elq.ACCEPTING,
+        k = L.state === I.elq.ACCEPTING,
         U = null != w ? (0, A.OY)(w) : null,
         G = null != j,
         B = null != U,
@@ -121,9 +121,9 @@ function v(e) {
                 isBannerVisible: !1
             })
         })]
-    })) : null != D && D >= 5 || null != k && k > 0 ? t = (0, i.jsx)(g.A.Data, {
+    })) : null != D && D >= 5 || null != O && O > 0 ? t = (0, i.jsx)(g.A.Data, {
         members: D,
-        membersOnline: k
+        membersOnline: O
     }) : B && (t = (0, i.jsx)(g.A.Channel, {
         channel: U,
         guild: j
@@ -147,7 +147,7 @@ function v(e) {
                 className: T.UD,
                 children: (0, i.jsx)(d.Button, {
                     onClick: $,
-                    loading: O,
+                    loading: k,
                     variant: "active",
                     fullWidth: V,
                     disabled: !X,

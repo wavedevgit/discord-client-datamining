@@ -36,14 +36,14 @@ var i = n(627968),
     w = n(986785),
     D = n(767419);
 
-function k(e) {
+function O(e) {
     T.default.track(R.HAw.PREMIUM_PROMOTION_OPENED, {
         location_page: null != e.guild_id ? R.liQ.GUILD_CHANNEL : R.liQ.DM_CHANNEL,
         location_section: R.JJy.STICKER_POPOUT
     }), (0, C.e)()
 }
 
-function O(e) {
+function k(e) {
     let {
         sticker: t,
         description: n
@@ -192,7 +192,7 @@ let U = e => {
             $ = "Custom Sticker Popout";
         G ? t = F ? J ? M.intl.string(M.t.fZ0DiG) : M.intl.string(M.t["1f6D9m"]) : X ? M.intl.string(M.t.yHmoR9) : M.intl.string(M.t.vZaScH) : F ? (t = J ? M.intl.string(M.t.jNphpt) : M.intl.string(M.t.lyD5ZW), Z = !0, $ = "Custom Sticker Popout (Upsell)") : X ? (t = M.intl.string(M.t.IuXYch), Z = !0, $ = "Custom Sticker Popout (Upsell)") : (t = M.intl.format(M.t.hGWuxU, {
             openPremiumSettings: () => {
-                k(r), o()
+                O(r), o()
             }
         }), $ = "Custom Sticker Popout (Soft Upsell)");
         let ee = !Z && !F && X && G;
@@ -222,7 +222,7 @@ let U = e => {
                     } catch {}
                 }, (0, i.jsxs)("div", {
                     className: D.gH,
-                    children: [(0, i.jsx)(O, {
+                    children: [(0, i.jsx)(k, {
                         description: t,
                         sticker: n
                     }), Z && (0, i.jsx)(E.A, {
@@ -326,11 +326,11 @@ function B(e) {
     } = e;
     return (0, i.jsx)(f.Uq, {
         className: w.Bm,
-        children: (0, i.jsx)(O, {
+        children: (0, i.jsx)(k, {
             sticker: l,
             description: M.intl.format(M.t.hGWuxU, {
                 openPremiumSettings: () => {
-                    n(), k(t)
+                    n(), O(t)
                 }
             })
         })

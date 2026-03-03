@@ -19,8 +19,8 @@ var r = n(627968),
     v = n(717415),
     x = n(98197),
     g = n(583235),
-    S = n(654487),
-    A = n(985018),
+    A = n(654487),
+    S = n(985018),
     C = n(681636);
 
 function _(e) {
@@ -219,11 +219,11 @@ function L(e) {
         subtitle: j
     } = {
         title: (0, E.wr)(x),
-        subtitle: x.config.ctaConfig.subtitle ?? A.intl.string(A.t.mxaHfx)
+        subtitle: x.config.ctaConfig.subtitle ?? S.intl.string(S.t.mxaHfx)
     }, {
         enabled: w
     } = d.uK.useConfig({
-        location: S.rE.VIDEO_MODAL
+        location: A.rE.VIDEO_MODAL
     }), k = l.useMemo(() => (0, m.tW)(x, m.fY.VIDEO_PLAYER_THUMBNAIL, void 0, !1), [x]);
     return w ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(y, {

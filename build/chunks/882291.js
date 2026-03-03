@@ -29,8 +29,8 @@ function g(e) {
         isFullyVisible: n,
         percent: i,
         animate: g,
-        interactionEnabled: S,
-        isQuestCompleted: A,
+        interactionEnabled: A,
+        isQuestCompleted: S,
         backgroundColor: C,
         preloadedBuffers: _,
         duration: b,
@@ -60,7 +60,7 @@ function g(e) {
         onScrubBack: D,
         onScrubForward: R,
         maxSeekableTime: y,
-        interactionEnabled: S,
+        interactionEnabled: A,
         duration: b,
         percent: i,
         onClick: N
@@ -81,7 +81,7 @@ function g(e) {
         timelineRect: k,
         videoDuration: b,
         targetSec: t
-    }), Z = l.useMemo(() => q(K), [K, q]), ee = l.useMemo(() => q(U), [U, q]), et = !A && j, en = k?.width != null && k?.width !== 0 ? k?.width : 1, er = l.useMemo(() => ((e, t) => {
+    }), Z = l.useMemo(() => q(K), [K, q]), ee = l.useMemo(() => q(U), [U, q]), et = !S && j, en = k?.width != null && k?.width !== 0 ? k?.width : 1, er = l.useMemo(() => ((e, t) => {
         let n = [{
             startPx: 0,
             endPx: t,
@@ -115,7 +115,7 @@ function g(e) {
         },
         children: (0, r.jsxs)(u.DUT, {
             className: s()(v.KF, {
-                [v.uc]: S
+                [v.uc]: A
             }),
             ignoreKeyPress: !0,
             onClick: G,
@@ -123,7 +123,7 @@ function g(e) {
             onMouseLeave: P,
             onMouseMove: Q,
             onKeyDown: V,
-            tabIndex: S ? void 0 : -1,
+            tabIndex: A ? void 0 : -1,
             children: [(0, r.jsx)("div", {
                 className: v.G9,
                 ...$,
@@ -137,7 +137,7 @@ function g(e) {
                     timelineWidth: en,
                     preloadedBuffers: _,
                     maxSeekableX: B,
-                    interactionEnabled: S,
+                    interactionEnabled: A,
                     useNewStyles: j,
                     progressFillClassName: et ? h.QR : h.UA,
                     glowClassName: et ? h.Um : h.U5
@@ -164,7 +164,7 @@ function g(e) {
                     left: null != U ? `${U}px` : "auto"
                 },
                 children: Y
-            }), F && S && null != K && !Z && (0, r.jsx)(a.animated.div, {
+            }), F && A && null != K && !Z && (0, r.jsx)(a.animated.div, {
                 className: v.Ub,
                 style: {
                     left: H.to(e => `${e}px`)
