@@ -7,7 +7,7 @@ var r = n(627968),
     i = n(503698),
     a = n.n(i),
     s = n(771253),
-    o = n(475539),
+    o = n(523436),
     u = n(942381),
     c = n(311907),
     d = n(645577),
@@ -74,7 +74,7 @@ function $(e) {
         targetRef: eu
     } = (0, h.O7)(), [ec, ed] = l.useState(!0 === i ? k.Q6.PLAYING : k.Q6.PAUSED), [em, ep] = l.useState(!1), [ef, eE] = l.useState(!1), eh = (0, T.Yh)(W), [ev, ex] = l.useState(eh.percentComplete), eg = l.useCallback(e => {
         eV(null), ex(e)
-    }, []), [eS, eA] = l.useState(!1), [eC, eb] = l.useState(!0), [e_, ey] = l.useState(!1), [eT, eN] = l.useState([]), [eD, eI] = l.useState(v.A.getEffectiveConnectionSpeed()), [eL, ej] = l.useState(0), [eM, ew] = l.useState(0), [ek, eR] = l.useState(!1), [eP, eO] = l.useState(!1), [eQ, eV] = l.useState(null), eU = l.useRef(!0), eB = l.useRef(null), eF = l.useRef(null), eG = (0, A.Kr)(e => e.videoProgress[W.id] ?? A.yc, u.x), e$ = (0, A.Kr)(e => e.setVideoProgress), eY = (0, A.Kr)(e => e.muted), eK = (0, A.Kr)(e => e.volume), eH = (0, c.bG)([f.A], () => f.A.useReducedMotion), eq = (0, l.useRef)(null), eW = (0, l.useRef)(null), ez = l.useRef(!0), eX = W.userStatus?.completedAt != null, eJ = l.useMemo(() => W.config.features.includes(V.Li.FULL_EPISODE_VIDEO_QUEST), [W.config.features]), eZ = l.useRef(!1), [e0, e1] = l.useState(null), [e6, e7] = l.useState(!1), [e2, e4] = l.useState(!1), [e9, e8] = l.useState(!1), [e3, e5] = l.useState(null), te = eX ? eq.current?.duration ?? 0 : Math.max(eG.maxTimestampSec, eh.progressSeconds), tt = l.useMemo(() => (0, C.L)({
+    }, []), [eS, eA] = l.useState(!1), [eC, eb] = l.useState(!0), [e_, ey] = l.useState(!1), [eT, eN] = l.useState([]), [eD, eI] = l.useState(v.A.getEffectiveConnectionSpeed()), [eL, ej] = l.useState(0), [eM, ew] = l.useState(0), [ek, eR] = l.useState(!1), [eP, eO] = l.useState(!1), [eQ, eV] = l.useState(null), eU = l.useRef(!0), eB = l.useRef(null), eF = l.useRef(null), eG = (0, A.Kr)(e => e.videoProgress[W.id] ?? A.yc, u.x), e$ = (0, A.Kr)(e => e.setVideoProgress), eY = (0, A.Kr)(e => e.muted), eK = (0, A.Kr)(e => e.volume), eH = (0, c.bG)([f.A], () => f.A.useReducedMotion), eq = (0, l.useRef)(null), eW = (0, l.useRef)(null), ez = l.useRef(!0), eX = W.userStatus?.completedAt != null, eJ = l.useMemo(() => W.config.features.includes(V.Li.FULL_EPISODE_VIDEO_QUEST), [W.config.features]), eZ = l.useRef(!1), [e0, e1] = l.useState(null), [e6, e2] = l.useState(!1), [e7, e4] = l.useState(!1), [e9, e8] = l.useState(!1), [e3, e5] = l.useState(null), te = eX ? eq.current?.duration ?? 0 : Math.max(eG.maxTimestampSec, eh.progressSeconds), tt = l.useMemo(() => (0, C.L)({
         quest: W,
         location: V.rE.VIDEO_MODAL
     }), [W]), tn = (0, d.g)(eX, eG, eh.progressSeconds), [tr, tl] = l.useState(k.oA.MD), ti = {
@@ -137,7 +137,7 @@ function $(e) {
             getCurrentVideoTime: tT,
             isPlaying: ec === k.Q6.PLAYING,
             isMetadataLoaded: e6,
-            isInitialSeekComplete: e2,
+            isInitialSeekComplete: e7,
             onAnalytics: tg,
             emitIntervalMs: 4e3,
             minSegmentDurationMs: 2e3
@@ -310,8 +310,8 @@ function $(e) {
         t0 = l.useMemo(() => (0, _.tW)(W, _.fY.VIDEO_PLAYER_THUMBNAIL, void 0, !1), [W]),
         t1 = l.useMemo(() => (0, _.tW)(W, _.fY.VIDEO_PLAYER_CAPTION, void 0, !1), [W]),
         t6 = eX || eG.maxTimestampSec >= (eq.current?.currentTime ?? 0) + 1,
-        t7 = l.useMemo(() => null === (0, _.tW)(W, _.fY.VIDEO_PLAYER_TRANSCRIPT, void 0, !1), [W]),
-        t2 = ee ? 20 : 12,
+        t2 = l.useMemo(() => null === (0, _.tW)(W, _.fY.VIDEO_PLAYER_TRANSCRIPT, void 0, !1), [W]),
+        t7 = ee ? 20 : 12,
         t4 = 20 * !!ee,
         t9 = eX && eP;
     return (0, r.jsx)(m.DUT, {
@@ -370,7 +370,7 @@ function $(e) {
                     tt.info(`[QV] | handleLoadedData: loadingFirstChunk: ${eC}`), eC && (td(null != eB.current ? performance.now() - eB.current : null), eb(!1), tu())
                 },
                 onLoadedMetadata: e => {
-                    null != eq.current && (tt.info(`[QV] | handleLoadedMetadata | videoAssetId: ${ts}`), e7(!0), ts !== _.fY.VIDEO_PLAYER_VIDEO_HLS && tU(tn), eY ? eq.current.volume = 0 : eq.current.volume = eK)
+                    null != eq.current && (tt.info(`[QV] | handleLoadedMetadata | videoAssetId: ${ts}`), e2(!0), ts !== _.fY.VIDEO_PLAYER_VIDEO_HLS && tU(tn), eY ? eq.current.volume = 0 : eq.current.volume = eK)
                 },
                 onLoadStart: () => {
                     eB.current = performance.now(), tc(eD), tt.info(`[QV] | handleLoadStart | loadingStartTime: ${eB.current}`)
@@ -560,7 +560,7 @@ function $(e) {
                         paddingTop: (0, o.to)([tq.to({
                             range: [0, 1],
                             output: [0, 1]
-                        })], e => `${e*e*t2}px`),
+                        })], e => `${e*e*t7}px`),
                         paddingBottom: (0, o.to)([tq.to({
                             range: [0, 1],
                             output: [0, 1]
@@ -580,7 +580,7 @@ function $(e) {
                         visible: tP,
                         seekForwardEnabled: t6,
                         hideCaptionBtn: null == t1,
-                        hideTranscriptBtn: t7,
+                        hideTranscriptBtn: t2,
                         size: tr,
                         handlePlaybackBtnClick: tB,
                         handleTranscriptBtnClick: () => {

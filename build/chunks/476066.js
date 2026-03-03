@@ -6,7 +6,7 @@ var r = n(627968),
     l = n(64700),
     i = n(503698),
     a = n.n(i),
-    s = n(475539),
+    s = n(523436),
     o = n(311907),
     u = n(876230),
     c = n(397927),
@@ -105,25 +105,25 @@ let b = {
         }, [Z, ee, el, q]), l.useEffect(() => {
             en && W?.(et, el)
         }, [et, en, el, W]);
-        let [e6, e7] = l.useState(!1), e2 = l.useRef(null), e4 = l.useRef(0);
+        let [e6, e2] = l.useState(!1), e7 = l.useRef(null), e4 = l.useRef(0);
         l.useLayoutEffect(() => {
             e4.current = performance.now()
         }, []);
         let e9 = l.useCallback(() => {
-                null != e2.current && clearTimeout(e2.current), el !== u.Q6.PLAYING || (e2.current = setTimeout(() => {
-                    el === u.Q6.PLAYING && e7(!0)
+                null != e7.current && clearTimeout(e7.current), el !== u.Q6.PLAYING || (e7.current = setTimeout(() => {
+                    el === u.Q6.PLAYING && e2(!0)
                 }, Math.max(0, 3e3 - (performance.now() - e4.current))))
             }, [el]),
             e8 = () => {
-                e7(!1), e4.current = performance.now(), e9()
+                e2(!1), e4.current = performance.now(), e9()
             };
         l.useEffect(() => {
             if (el !== u.Q6.PLAYING) {
-                e7(!1), null != e2.current && clearTimeout(e2.current);
+                e2(!1), null != e7.current && clearTimeout(e7.current);
                 return
             }
             return e9(), () => {
-                null != e2.current && clearTimeout(e2.current)
+                null != e7.current && clearTimeout(e7.current)
             }
         }, [el, e9]);
         let e3 = !e6 && (eo || ea || el === u.Q6.ENDED),
@@ -244,10 +244,10 @@ let b = {
             "data-testid": "discord-web-video-player-container",
             tabIndex: -1,
             onMouseEnter: () => {
-                es(!0), e7(!1), e4.current = performance.now(), null != e2.current && clearTimeout(e2.current)
+                es(!0), e2(!1), e4.current = performance.now(), null != e7.current && clearTimeout(e7.current)
             },
             onMouseLeave: () => {
-                es(!1), e7(!1)
+                es(!1), e2(!1)
             },
             onMouseMove: e8,
             onKeyDown: e8,
