@@ -48,7 +48,7 @@ let B = l.memo(e => {
         return e.start(d ? 15 * R.A.Millis.SECOND : R.A.Millis.SECOND, () => {
             i((new Date().getTime() - t) / R.A.Millis.SECOND)
         }), () => e.stop()
-    }, [d, t]), (0, b.f)(n)
+    }, [d, t]), (0, b.fU)(n)
 });
 B.displayName = "ActivityRuntimeCounter";
 let F = l.memo(function(e) {

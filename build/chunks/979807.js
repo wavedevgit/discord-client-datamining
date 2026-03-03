@@ -1,21 +1,21 @@
-/** chunk id: 979807, original params: n,t,i (module,exports,require) **/
-i.d(t, {
+/** chunk id: 979807, original params: n,t,e (module,exports,require) **/
+e.d(t, {
     A: () => u
 });
-var e = i(627968);
-i(64700);
-var l = i(311907),
-    r = i(397927),
-    a = i(394953),
-    d = i(976860),
-    c = i(967198),
-    s = i(652215),
-    o = i(985018);
+var i = e(627968);
+e(64700);
+var l = e(311907),
+    r = e(397927),
+    a = e(394953),
+    d = e(976860),
+    c = e(967198),
+    s = e(652215),
+    o = e(985018);
 
 function u(n) {
     let t = (0, l.bG)([c.A], () => c.A.getGuildId()),
-        i = (0, a.lI)();
-    return __OVERLAY__ || t !== s.YYv && !i ? null : (0, e.jsx)(r.Drp, {
+        e = (0, a.lI)();
+    return __OVERLAY__ || t !== s.YYv && !e ? null : (0, i.jsx)(r.Drp, {
         id: "go-to-original-guild",
         label: o.intl.string(o.t.WYj55Y),
         action: function() {

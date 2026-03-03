@@ -84,7 +84,7 @@ let _ = s.memo(function(e) {
             });
         case c.HP:
             return (0, i.jsx)(d.P4, {
-                name: A.intl.string(A.t.k8fFjp)
+                name: A.intl.string(A.t.mlPMCy)
             });
         case m.recentsSectionNumber:
             return (0, i.jsx)(d.P4, {

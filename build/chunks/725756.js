@@ -1,68 +1,68 @@
-/** chunk id: 725756, original params: n,t,e (module,exports,require) **/
-e.d(t, {
-    default: () => O
+/** chunk id: 725756, original params: n,e,t (module,exports,require) **/
+t.d(e, {
+    default: () => N
 });
-var i = e(627968);
-e(64700);
-var r = e(397927),
-    l = e(442433),
-    a = e(358367),
-    d = e(793574),
-    s = e(50268),
-    c = e(515610),
-    A = e(849867),
-    o = e(795144),
-    u = e(769591),
-    g = e(134725),
-    h = e(23724),
-    _ = e(477190),
-    p = e(307623),
-    b = e(317910),
-    y = e(848977),
-    C = e(995102),
-    f = e(288104),
-    j = e(661504),
-    v = e(969128),
-    x = e(90509),
-    E = e(985018);
+var i = t(627968);
+t(64700);
+var r = t(397927),
+    l = t(442433),
+    a = t(358367),
+    d = t(793574),
+    s = t(50268),
+    c = t(515610),
+    A = t(849867),
+    o = t(795144),
+    u = t(769591),
+    h = t(134725),
+    g = t(23724),
+    _ = t(477190),
+    p = t(307623),
+    b = t(317910),
+    y = t(848977),
+    C = t(995102),
+    f = t(288104),
+    j = t(661504),
+    v = t(969128),
+    x = t(90509),
+    E = t(985018);
 
 function G(n) {
     let {
-        channel: t,
-        onSelect: e
-    } = n, a = (0, y.A)(t), d = (0, C.Ay)(t), c = (0, f.A)(t), _ = (0, h.A)(t), p = (0, g.A)(t), b = (0, o.A)(t), v = (0, A.A)(t), G = (0, x.A)(t), N = (0, s.A)({
-        id: t.id,
+        channel: e,
+        onSelect: t
+    } = n, a = (0, y.A)(e), d = (0, C.Ay)(e), c = (0, f.A)(e), _ = (0, g.A)(e), p = (0, h.A)(e), b = (0, o.A)(e), v = (0, A.A)(e), G = (0, x.A)(e), O = (0, s.A)({
+        id: e.id,
         label: E.intl.string(E.t["2visC6"])
-    }), O = (0, u.os)("ChannelCategoryFavoritesMenu"), T = (0, j.Ay)(t);
+    }), N = (0, u.os)("ChannelCategoryFavoritesMenu"), T = (0, j.Ay)(e);
     return (0, i.jsxs)(r.W1t, {
         "data-menu-migrated": !0,
         navId: "channel-context",
         onClose: l.Z_,
         "aria-label": E.intl.string(E.t.Xm41aV),
-        onSelect: e,
+        onSelect: t,
         children: [(0, i.jsxs)(r.rXV, {
             children: [a, v, b]
         }), (0, i.jsxs)(r.rXV, {
-            children: [d, O ? T : c]
+            children: [d, N ? T : c]
         }), (0, i.jsxs)(r.rXV, {
             children: [_, p]
         }), (0, i.jsx)(r.rXV, {
             children: G
         }), (0, i.jsx)(r.rXV, {
-            children: N
+            children: O
         })]
     })
 }
 
-function N(n) {
+function O(n) {
     let {
-        channel: t,
-        guild: e,
+        channel: e,
+        guild: t,
         onSelect: a
-    } = n, d = (0, y.A)(t), c = (0, C.Ay)(t), A = (0, f.A)(t), x = (0, h.A)(t), G = (0, g.A)(t), N = (0, b.A)(t), O = (0, o.A)(t), T = (0, _.A)(t, e), M = (0, p.A)(t), m = (0, s.A)({
-        id: t.id,
+    } = n, d = (0, y.A)(e), c = (0, C.Ay)(e), A = (0, f.A)(e), x = (0, g.A)(e), G = (0, h.A)(e), O = (0, b.A)(e), N = (0, o.A)(e), T = (0, _.A)(e, t), M = (0, p.A)(e), m = (0, s.A)({
+        id: e.id,
         label: E.intl.string(E.t["2visC6"])
-    }), U = (0, v.A)(t), L = (0, u.os)("ChannelCategoryNormalMenu"), D = (0, j.Ay)(t);
+    }), U = (0, v.A)(e), L = (0, u.os)("ChannelCategoryNormalMenu"), D = (0, j.Ay)(e);
     return (0, i.jsxs)(r.W1t, {
         "data-menu-migrated-auto": !0,
         navId: "channel-context",
@@ -76,16 +76,16 @@ function N(n) {
         }, "channel-actions"), (0, i.jsxs)(r.rXV, {
             children: [c, L ? D : A]
         }, "notifications"), (0, i.jsxs)(r.rXV, {
-            children: [N, O, T, M]
+            children: [O, N, T, M]
         }, "admin-actions"), (0, i.jsx)(r.rXV, {
             children: m
         }, "developer-actions")]
     })
 }
-let O = (0, a.A)(function(n) {
+let N = (0, a.A)(function(n) {
     return (0, c.A)() ? (0, i.jsx)(G, {
         ...n
-    }) : (0, i.jsx)(N, {
+    }) : (0, i.jsx)(O, {
         ...n
     })
 }, [d.A.CONTEXT_MENU, d.A.CHANNEL_CATEGORY_MENU])

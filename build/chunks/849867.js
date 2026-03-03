@@ -1,12 +1,12 @@
-/** chunk id: 849867, original params: n,t,e (module,exports,require) **/
-e.d(t, {
+/** chunk id: 849867, original params: n,e,t (module,exports,require) **/
+t.d(e, {
     A: () => a
-}), e(627968), e(64700);
-var i = e(311907),
-    r = (e(397927), e(967198)),
-    l = e(652215);
+}), t(627968), t(64700);
+var i = t(311907),
+    r = (t(397927), t(967198)),
+    l = t(652215);
 
 function a(n) {
     return (0, i.bG)([r.A], () => r.A.getGuildId()), n.type, l.rbe.GUILD_CATEGORY, __OVERLAY__ || l.YYv, null
 }
-e(985018)
+t(985018)

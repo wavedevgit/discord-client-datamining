@@ -16,8 +16,8 @@ var r = t(397927),
     E = t(995102),
     g = t(288104),
     y = t(661504),
-    N = t(969128),
-    _ = t(50268),
+    _ = t(969128),
+    N = t(50268),
     h = t(769591),
     p = t(914853),
     v = t(708653),
@@ -36,10 +36,10 @@ let C = (0, d.A)((0, a.A)(function(e) {
         kind: "CHANNEL",
         channel: n,
         guildId: t.id
-    }, a), T = (0, c.A)(n, t), b = (0, N.A)(n), S = (0, E.Ay)(n), x = (0, g.A)(n), U = (0, _.A)({
+    }, a), T = (0, c.A)(n, t), b = (0, _.A)(n), S = (0, E.Ay)(n), x = (0, g.A)(n), O = (0, N.A)({
         id: n.id,
         label: D.intl.string(D.t.gFHI3k)
-    }), O = (0, s.A)(n), R = (0, y.Ay)(n), L = (0, h.os)("OverlayChannelListTextChannelContextMenu");
+    }), U = (0, s.A)(n), R = (0, y.Ay)(n), L = (0, h.os)("OverlayChannelListTextChannelContextMenu");
     return (0, i.jsxs)(r.W1t, {
         navId: "overlay-channel-context",
         onClose: l.Z_,
@@ -52,9 +52,9 @@ let C = (0, d.A)((0, a.A)(function(e) {
         }, "channel-actions"), (0, i.jsxs)(r.rXV, {
             children: [S, L ? R : x]
         }, "notifications"), (0, i.jsx)(r.rXV, {
-            children: O
-        }, "activity"), (0, i.jsx)(r.rXV, {
             children: U
+        }, "activity"), (0, i.jsx)(r.rXV, {
+            children: O
         }, "developer-actions")]
     })
 }, {

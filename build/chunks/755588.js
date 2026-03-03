@@ -43,7 +43,7 @@ let F = i.memo(function(e) {
         return () => n.clearInterval(e)
     }, [n]);
     let s = Math.max(0, (l - t) / 1e3);
-    return (0, m.f)(s)
+    return (0, m.fU)(s)
 });
 F.displayName = "OverlayElapsedTime";
 let L = i.memo(function() {
@@ -54,7 +54,7 @@ let L = i.memo(function() {
         return () => e.clearInterval(t)
     }, [e]);
     let l = (0, a.bG)([T.A], () => T.A.getDuration() ?? 0, [t]) ?? 0;
-    return (0, m.f)(l / 1e3)
+    return (0, m.fU)(l / 1e3)
 });
 
 function b(e) {
