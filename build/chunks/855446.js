@@ -35,8 +35,8 @@ function I(e) {
         commandOrigin: I
     } = e, {
         onActivityItemSelected: N,
-        imageBackground: b,
-        activityAction: S,
+        imageBackground: S,
+        activityAction: b,
         labelType: T
     } = (0, h.Ay)({
         context: t,
@@ -47,11 +47,11 @@ function I(e) {
         embeddedActivitiesManager: m.A,
         assetNames: x,
         commandOrigin: I
-    }), [y, v] = l.useState(!1), j = l.useCallback(() => {
-        v(!0)
-    }, [v]), R = l.useCallback(() => {
-        v(!1)
-    }, [v]), O = l.useMemo(() => (0, s.jsx)("div", {
+    }), [v, y] = l.useState(!1), j = l.useCallback(() => {
+        y(!0)
+    }, [y]), R = l.useCallback(() => {
+        y(!1)
+    }, [y]), O = l.useMemo(() => (0, s.jsx)("div", {
         className: f.Gz,
         children: (0, s.jsx)("div", {
             className: f.fC,
@@ -60,7 +60,7 @@ function I(e) {
             })
         })
     }), [T]), L = l.useMemo(() => {
-        switch (S) {
+        switch (b) {
             case h.o6.JOIN:
                 return (0, s.jsx)("div", {
                     className: f.m9,
@@ -89,7 +89,7 @@ function I(e) {
             default:
                 return null
         }
-    }, [S]);
+    }, [b]);
     return (0, s.jsx)(d.DUT, {
         onClick: N,
         onFocus: j,
@@ -103,7 +103,7 @@ function I(e) {
                 value: 0
             },
             to: {
-                value: +!!y
+                value: +!!v
             },
             children: e => {
                 let {
@@ -124,7 +124,7 @@ function I(e) {
                                 transform: t.to([0, 1], [1, 1.05]).to(e => `scale(${e})`)
                             },
                             children: [(0, s.jsx)(A.A, {
-                                imageBackground: b,
+                                imageBackground: S,
                                 applicationName: n.application.name,
                                 imageClassName: f.jj,
                                 imageNotFoundClassName: f.v_

@@ -12,8 +12,8 @@ var a = n(397927),
     l = n(287809),
     A = n(87719),
     c = n(414345),
-    d = n(377108),
-    _ = n(244975),
+    _ = n(377108),
+    d = n(244975),
     u = n(788868),
     L = n(652215),
     m = n(339984),
@@ -57,16 +57,16 @@ function R(t) {
         ...C
     } = t, f = (0, r.Ay)(e.id), {
         primaryColor: x,
-        secondaryColor: p
+        secondaryColor: v
     } = (0, s.A)({
         user: e,
         displayProfile: f,
         pendingAvatarSrc: n === m.HL.AVATAR ? a : void 0,
         isPreview: !0
-    }), v = n === m.HL.AVATAR || n === m.HL.BANNER, T = null != a, y = (0, d.u)(n === m.HL.AVATAR ? u.e.ANIMATED_AVATAR_MODAL_UPSELL : u.e.ANIMATED_BANNER_MODAL_UPSELL), b = (0, d.A)(n === m.HL.AVATAR ? u.e.ANIMATED_AVATAR_MODAL_UPSELL : u.e.ANIMATED_BANNER_MODAL_UPSELL);
-    return v ? (0, c.g1)({
+    }), p = n === m.HL.AVATAR || n === m.HL.BANNER, T = null != a, y = (0, _.u)(n === m.HL.AVATAR ? u.e.ANIMATED_AVATAR_MODAL_UPSELL : u.e.ANIMATED_BANNER_MODAL_UPSELL), b = (0, _.A)(n === m.HL.AVATAR ? u.e.ANIMATED_AVATAR_MODAL_UPSELL : u.e.ANIMATED_BANNER_MODAL_UPSELL);
+    return p ? (0, c.g1)({
         location: "getReducedMotionImageUrl"
-    }) ? (0, i.jsx)(_.F, {
+    }) ? (0, i.jsx)(d.F, {
         title: n === m.HL.AVATAR ? g.intl.string(g.t.X7tO60) : g.intl.string(g.t.zXPa2C),
         subtitle: n === m.HL.AVATAR ? g.intl.string(g.t.ifCRdB) : g.intl.string(g.t.yQAnf4),
         graphic: b,
@@ -74,9 +74,8 @@ function R(t) {
             R?.(), (0, A.x)(l)
         },
         secondaryCTA: g.intl.string(g.t.PcTCB7),
-        onClose: l,
-        showEnhancedUpsell: !0
-    }) : (0, i.jsx)(_.A, {
+        onClose: l
+    }) : (0, i.jsx)(d.A, {
         artURL: T ? void 0 : y,
         modalClassName: T ? E.yl : void 0,
         modalContentClassName: T ? E.jE : void 0,
@@ -103,7 +102,7 @@ function R(t) {
                 disabledInputs: !0,
                 pendingAvatar: n === m.HL.AVATAR ? a : void 0,
                 pendingBanner: n === m.HL.BANNER ? a : void 0,
-                pendingThemeColors: [x, p],
+                pendingThemeColors: [x, v],
                 hideExampleButton: !0
             })
         }) : void 0,

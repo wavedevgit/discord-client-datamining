@@ -62,7 +62,7 @@ function N(e) {
     })
 }
 
-function b(e) {
+function S(e) {
     let {
         channel: t,
         message: n,
@@ -124,7 +124,7 @@ function b(e) {
         })
     })
 }
-let S = {
+let b = {
     [f.kR.ACK]: {
         type: "standard",
         Icon: r.A9s,
@@ -239,7 +239,7 @@ function T(e) {
         justify: "center",
         className: E.o1,
         children: o.map(e => {
-            let t = S[e];
+            let t = b[e];
             switch (t.type) {
                 case "standard":
                     return (0, i.jsx)(N, {
@@ -248,7 +248,7 @@ function T(e) {
                         message: n
                     }, e);
                 case "menu":
-                    return (0, i.jsx)(b, {
+                    return (0, i.jsx)(S, {
                         ...t,
                         actionType: e,
                         channel: l,

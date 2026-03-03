@@ -1,7 +1,7 @@
 /** chunk id: 318162, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => b
+    A: () => S
 });
 var i = n(627968),
     s = n(64700),
@@ -25,29 +25,29 @@ var i = n(627968),
     I = n(226632),
     N = n(724693);
 
-function b(e) {
+function S(e) {
     let {
         user: t,
         channel: n,
-        onHide: b
-    } = e, S = (0, m.Ay)(t.id), T = (0, o.Ay)(), y = (0, a.bG)([u.A], () => u.A.isBlocked(t.id)), {
-        analyticsLocations: v
-    } = (0, d.Ay)(y ? c.A.BLOCKED_PROFILE_PANEL : c.A.IGNORED_PROFILE_PANEL), j = (0, A.pb)({
+        onHide: S
+    } = e, b = (0, m.Ay)(t.id), T = (0, o.Ay)(), v = (0, a.bG)([u.A], () => u.A.isBlocked(t.id)), {
+        analyticsLocations: y
+    } = (0, d.Ay)(v ? c.A.BLOCKED_PROFILE_PANEL : c.A.IGNORED_PROFILE_PANEL), j = (0, A.pb)({
         layout: "SIDEBAR",
         userId: t.id,
         channelId: n.id
     }), R = s.useRef(null);
     return (0, i.jsx)(d.f5, {
-        value: v,
+        value: y,
         children: (0, i.jsx)(A.of, {
             value: j,
-            fetchStartedAt: S?.fetchStartedAt,
-            fetchEndedAt: S?.fetchEndedAt,
-            isLoaded: S?.isLoaded,
+            fetchStartedAt: b?.fetchStartedAt,
+            fetchEndedAt: b?.fetchEndedAt,
+            isLoaded: b?.isLoaded,
             children: (0, i.jsx)(_.A, {
                 ref: R,
                 user: t,
-                displayProfile: S,
+                displayProfile: b,
                 themeType: C.d.SIDEBAR,
                 themeOverride: T,
                 children: (0, i.jsx)(l.d_W, {
@@ -69,27 +69,27 @@ function b(e) {
                                     children: E.intl.string(E.t.b33pLD)
                                 }), (0, i.jsx)(r.Text, {
                                     variant: "text-sm/medium",
-                                    children: E.intl.format(y ? E.t["8F+WNz"] : E.t["/cZp5s"], {
+                                    children: E.intl.format(v ? E.t["8F+WNz"] : E.t["/cZp5s"], {
                                         username: h.Ay.getName(n.guild_id, n.id, t)
                                     })
                                 })]
                             }), (0, i.jsxs)(r.BJc, {
                                 align: "center",
                                 children: [(0, i.jsx)(x.A, {
-                                    isBlocked: y,
+                                    isBlocked: v,
                                     onClick: () => {
-                                        b(), (0, p.Wn)({
-                                            action: y ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
-                                            analyticsLocations: v,
+                                        S(), (0, p.Wn)({
+                                            action: v ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
+                                            analyticsLocations: y,
                                             ...j
                                         })
                                     }
                                 }), (0, i.jsx)(f.A, {
                                     userId: t.id,
                                     onClick: () => {
-                                        b(), (0, p.Wn)({
+                                        S(), (0, p.Wn)({
                                             action: "DONT_SHOW_AGAIN_IGNORED_PROFILE",
-                                            analyticsLocations: v,
+                                            analyticsLocations: y,
                                             ...j
                                         })
                                     }

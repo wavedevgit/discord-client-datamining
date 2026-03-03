@@ -24,11 +24,11 @@ var i = n(627968),
     E = n(139286),
     I = n(47167),
     N = n(713517),
-    b = n(854627),
-    S = n(10862),
+    S = n(854627),
+    b = n(10862),
     T = n(164891),
-    y = n(135635),
-    v = n(696451),
+    v = n(135635),
+    y = n(696451),
     j = n(71393),
     R = n(958590),
     O = n(576705),
@@ -130,7 +130,7 @@ function F(e) {
         channel: t,
         user: n,
         ringingEnabled: l
-    } = e, r = t.guild_id, o = s.useRef(null), c = (0, d.bG)([v.Ay], () => v.Ay.getMember(r, n.id), [r, n.id]), {
+    } = e, r = t.guild_id, o = s.useRef(null), c = (0, d.bG)([y.Ay], () => y.Ay.getMember(r, n.id), [r, n.id]), {
         isHoveringOrFocusing: x
     } = (0, N.A)(o), [C, E] = s.useState(null), {
         icon: T,
@@ -139,7 +139,7 @@ function F(e) {
         disabled: k,
         shouldHideButton: H,
         onClick: F
-    } = (0, y.A)({
+    } = (0, v.A)({
         user: n,
         channel: t,
         location: B
@@ -159,8 +159,8 @@ function F(e) {
         isMobileOnline: L.A.isMobileOnline(n.id),
         activities: L.A.getActivities(n.id, r)
     }), [n.id, r]), {
-        activityStatusText: X,
-        activityStatusIcon: q
+        activityStatusText: q,
+        activityStatusIcon: X
     } = s.useMemo(() => {
         if (!K) return {
             activityStatusText: {},
@@ -209,7 +209,7 @@ function F(e) {
         avatarDecorationSrc: en,
         avatarSrc: ei,
         eventHandlers: es
-    } = (0, b.A)({
+    } = (0, S.A)({
         userId: n.id,
         size: h._3J.SIZE_24,
         animateOnHover: !x,
@@ -219,7 +219,7 @@ function F(e) {
     let el = M.Ay.getName(n),
         ea = P.intl.string(P.t.jYnGPG),
         er = W !== h.clD.OFFLINE ? W : void 0,
-        eo = K && null != X.text,
+        eo = K && null != q.text,
         ec = K && null != J && null != Q;
     return (0, i.jsxs)(h.DUT, {
         innerRef: o,
@@ -248,19 +248,19 @@ function F(e) {
                 children: el
             }), (ec || eo) && (0, i.jsxs)("div", {
                 className: w.J2,
-                children: [ec ? (0, i.jsx)(S.A, {
+                children: [ec ? (0, i.jsx)(b.A, {
                     size: "custom",
                     color: $,
                     channel: J,
                     className: w.RI
-                }) : null != q ? (0, i.jsx)(_.A, {
-                    icon: q,
+                }) : null != X ? (0, i.jsx)(_.A, {
+                    icon: X,
                     className: w.RI
                 }) : null, (0, i.jsx)(h.Text, {
                     variant: "text-xs/medium",
                     color: "text-status-online",
                     lineClamp: 1,
-                    children: ec ? Q : X.text
+                    children: ec ? Q : q.text
                 })]
             })]
         }), "sending" === C && (0, i.jsx)("div", {

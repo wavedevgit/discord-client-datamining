@@ -24,11 +24,11 @@ var i = n(627968),
     E = n(775946),
     I = n(588224),
     N = n(652215),
-    b = n(37411),
-    S = n(985018),
+    S = n(37411),
+    b = n(985018),
     T = n(728444),
-    y = n(811094),
-    v = n(316945);
+    v = n(811094),
+    y = n(316945);
 
 function j(e) {
     let {
@@ -36,10 +36,10 @@ function j(e) {
         withGuildIcon: n,
         inverted: s
     } = e, l = {
-        className: a()(v.GI, {
-            [v.a7]: n
+        className: a()(y.GI, {
+            [y.a7]: n
         }, {
-            [v.BJ]: s
+            [y.BJ]: s
         }),
         style: t
     }, {
@@ -100,7 +100,7 @@ let R = s.memo(function(e) {
     let {
         thread: t,
         isSelectedChannel: l,
-        isSelectedVoice: v,
+        isSelectedVoice: y,
         isLast: R,
         withGuildIcon: O
     } = e, L = (0, o.bG)([f.Ay], () => f.Ay.getVoiceStatesForChannel(t), [t]), M = (0, o.bG)([_.A], () => _.A.hasVideo(t.id)), {
@@ -112,7 +112,7 @@ let R = s.memo(function(e) {
         mentionCount: g.Ay.getMentionCount(t.id),
         isMentionLowImportance: g.Ay.getIsMentionLowImportance(t.id)
     })), P = (0, o.bG)([A.A], () => A.A.isMuted(t.id)), w = s.useCallback(e => {
-        (0, p.JA)(t, !e.shiftKey, b.H9.CHANNEL_LIST)
+        (0, p.JA)(t, !e.shiftKey, S.H9.CHANNEL_LIST)
     }, [t]), k = s.useCallback(() => {
         u.A.preload(t.guild_id, t.id)
     }, [t.guild_id, t.id]), V = s.useCallback(e => {
@@ -129,12 +129,12 @@ let R = s.memo(function(e) {
     }, [t.id]), B = null == L ? 0 : L.length, {
         role: H,
         ...F
-    } = (0, r.rm)(t.id), K = s.useRef(null), W = G > 0 ? S.intl.formatToPlainString(S.t["ZL7+I6"], {
+    } = (0, r.rm)(t.id), K = s.useRef(null), W = G > 0 ? b.intl.formatToPlainString(b.t["ZL7+I6"], {
         channelName: t.name,
         mentionCount: G
-    }) : D ? S.intl.formatToPlainString(S.t.YlVvmc, {
+    }) : D ? b.intl.formatToPlainString(b.t.YlVvmc, {
         channelName: t.name
-    }) : S.intl.formatToPlainString(S.t["0nZpiF"], {
+    }) : b.intl.formatToPlainString(b.t["0nZpiF"], {
         channelName: t.name
     });
     return (0, i.jsxs)("li", {
@@ -159,33 +159,33 @@ let R = s.memo(function(e) {
                 right: 4
             },
             children: (0, i.jsxs)("div", {
-                className: a()(T.Ki, y.iE, y.ZS, {
-                    [y.J1]: l,
-                    [y.F4]: !l && P,
-                    [y.V2]: !P && !l && D,
-                    [y.lY]: O
+                className: a()(T.Ki, v.iE, v.ZS, {
+                    [v.J1]: l,
+                    [v.F4]: !l && P,
+                    [v.V2]: !P && !l && D,
+                    [v.lY]: O
                 }),
                 onMouseDown: k,
                 onContextMenu: V,
                 children: [!D || P || l ? null : (0, i.jsx)("div", {
-                    className: a()(y.gy, y.WS)
+                    className: a()(v.gy, v.WS)
                 }), (0, i.jsx)(d.DUT, {
                     ...F,
                     innerRef: K,
-                    className: y.nf,
+                    className: v.nf,
                     onClick: w,
                     "aria-label": W,
                     focusProps: {
                         enabled: !1
                     },
                     children: (0, i.jsxs)("div", {
-                        className: a()(y.Y5, y.__invalid_threadMainContent),
+                        className: a()(v.Y5, v.__invalid_threadMainContent),
                         children: [(0, i.jsx)(c.A, {
-                            className: y.UU,
+                            className: v.UU,
                             "aria-hidden": !0,
                             children: t.name
                         }), (0, i.jsxs)("div", {
-                            className: y.Y_,
+                            className: v.Y_,
                             children: [B > 0 && t.userLimit > 0 ? (0, i.jsx)(C.A, {
                                 userCount: B,
                                 video: M,
@@ -200,7 +200,7 @@ let R = s.memo(function(e) {
             })
         }), (0, i.jsx)(I.A, {
             channel: t,
-            collapsed: !v && 1 !== L.length,
+            collapsed: !y && 1 !== L.length,
             collapsedMax: 6,
             voiceStates: L,
             location: N.ThZ.GUILD_CHANNEL_LIST,

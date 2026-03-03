@@ -24,11 +24,11 @@ var i = n(627968),
     E = n(194871),
     I = n(966846),
     N = n(674378),
-    b = n(87941),
-    S = n(941971),
+    S = n(87941),
+    b = n(941971),
     T = n(900848),
-    y = n(550591),
-    v = n(65611),
+    v = n(550591),
+    y = n(65611),
     j = n(652215),
     R = n(788868),
     O = n(235079),
@@ -54,7 +54,7 @@ function G(e) {
         badge: a,
         link: u,
         showProgressBadge: A
-    } = e, [p, _] = s.useState(!1), [f, x] = s.useState(!1), [C, E] = s.useState(null), [I, N] = s.useState(0), b = (0, l.Vd)("home"), R = (0, h.fy)().activePanel === h.HP.APP_ICON, G = () => {
+    } = e, [p, _] = s.useState(!1), [f, x] = s.useState(!1), [C, E] = s.useState(null), [I, N] = s.useState(0), S = (0, l.Vd)("home"), R = (0, h.fy)().activePanel === h.HP.APP_ICON, G = () => {
         E(null), N(0), clearTimeout(C)
     };
     if (null == n) return null;
@@ -68,7 +68,7 @@ function G(e) {
     let w = t || p || R,
         k = (0, i.jsx)(o.Qk9, {
             selected: !0,
-            lowerBadge: a > 0 ? (0, v.wN)(a) : null,
+            lowerBadge: a > 0 ? (0, y.wN)(a) : null,
             upperBadge: P,
             lowerBadgeSize: {
                 width: (0, o.o6S)(a)
@@ -89,7 +89,7 @@ function G(e) {
                 ariaLabel: L.intl.string(L.t.YUU0RF),
                 "aria-owns": "guild-list-unread-dms",
                 "aria-selected": t,
-                ...b,
+                ...S,
                 to: {
                     pathname: u,
                     state: {
@@ -110,11 +110,11 @@ function G(e) {
             tutorialId: "friends-list",
             position: "right",
             children: (0, i.jsxs)(T.c, {
-                children: [(0, i.jsx)(S.A, {
+                children: [(0, i.jsx)(b.A, {
                     selected: t,
                     hovered: p,
                     className: M.Io
-                }), (0, i.jsx)(y.A, {
+                }), (0, i.jsx)(v.A, {
                     hideOnClick: !0,
                     text: U,
                     selected: t,
@@ -126,7 +126,7 @@ function G(e) {
 }
 
 function U() {
-    let e = (0, b.q)(),
+    let e = (0, S.q)(),
         t = (0, a.bG)([I.A, E.A], () => {
             let e = (0, c.v)(I.A.activeItems, E.A),
                 {
@@ -150,9 +150,9 @@ function U() {
         h = (0, a.bG)([f.default], () => f.default.getCurrentUser()),
         m = (0, A.W)(),
         g = n + d + m,
-        S = g === d && d > 0 && n + m === 0,
+        b = g === d && d > 0 && n + m === 0,
         T = C.A.getHomeLink();
-    return S && (T = j.BVt.APPLICATION_STORE), (0, i.jsx)(G, {
+    return b && (T = j.BVt.APPLICATION_STORE), (0, i.jsx)(G, {
         selected: e,
         user: h,
         selectedChannelId: _.A.getChannelId(j.ME),

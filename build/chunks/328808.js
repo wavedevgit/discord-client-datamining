@@ -24,8 +24,8 @@ var i = n(627968),
     E = n(58736),
     I = n(253932),
     N = n(977997),
-    b = n(747926),
-    S = n(985018);
+    S = n(747926),
+    b = n(985018);
 
 function T(e) {
     let {
@@ -35,7 +35,7 @@ function T(e) {
     function r() {
         l(e => !e)
     }
-    let c = S.intl.string(S.t["UKOtz+"]);
+    let c = b.intl.string(b.t["UKOtz+"]);
     return (0, i.jsx)(o.YNO, {
         targetElementRef: a,
         shouldShow: n,
@@ -45,7 +45,7 @@ function T(e) {
         autoInvert: !1,
         onRequestClose: () => l(!1),
         renderPopout: function(e) {
-            return (0, i.jsx)(y, {
+            return (0, i.jsx)(v, {
                 ...e,
                 channel: t
             })
@@ -67,35 +67,35 @@ function T(e) {
     })
 }
 
-function y(e) {
+function v(e) {
     let {
         channel: t,
         closePopout: n,
         onSelect: s
-    } = e, l = (0, c.A)(t), E = (0, p.A)(t), T = (0, f.A)(t.id), y = (0, _.A)(t), v = (0, C.A)({
+    } = e, l = (0, c.A)(t), E = (0, p.A)(t), T = (0, f.A)(t.id), v = (0, _.A)(t), y = (0, C.A)({
         id: t.id,
-        label: S.intl.string(S.t.DQ797g)
+        label: b.intl.string(b.t.DQ797g)
     }), j = (0, d.A)(t), R = (0, u.A)(t), O = (0, h.A)(t, "Toolbar Overflow"), L = (0, m.A)(t), M = (0, A.A)(t), D = (0, x.A)(t), G = (0, g.A)(t), U = I.SY.useSetting(), P = (0, r.bG)([N.A], () => !a().isEmpty(N.A.getVoiceStatesForChannel(t.id)));
     return (0, i.jsxs)(o.W1t, {
         "data-menu-migrated": !0,
         navId: "thread-context",
         onClose: n,
-        "aria-label": S.intl.string(S.t["1NBjqb"]),
+        "aria-label": b.intl.string(b.t["1NBjqb"]),
         onSelect: s,
         children: [(0, i.jsxs)(o.rXV, {
             children: [O, M]
         }), (0, i.jsxs)(o.rXV, {
-            children: [y, L, T, U && !P ? (0, i.jsx)(o.Drp, {
+            children: [v, L, T, U && !P ? (0, i.jsx)(o.Drp, {
                 id: "open",
-                label: S.intl.string(S.t.bX7EaG),
+                label: b.intl.string(b.t.bX7EaG),
                 action: function() {
-                    (0, b.JA)(t)
+                    (0, S.JA)(t)
                 }
             }) : null, G]
         }), (0, i.jsxs)(o.rXV, {
             children: [D, l, E, R]
         }), (0, i.jsxs)(o.rXV, {
-            children: [j, v]
+            children: [j, y]
         })]
     })
 }

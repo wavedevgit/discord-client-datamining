@@ -29,7 +29,7 @@ function _(e) {
     let N = () => {
             null != x && (0, p.A)(x) ? (0, h.Py)(x, _) : n()
         },
-        b = () => {
+        S = () => {
             A.A.endEvent(f.id, f.guild_id)
         };
     return E ? (0, i.jsx)(a.YNO, {
@@ -48,7 +48,7 @@ function _(e) {
                     children: (0, i.jsx)(a.Drp, {
                         id: "end-voice-event",
                         color: "danger",
-                        action: b,
+                        action: S,
                         label: g.intl.string(g.t.qaYzPA),
                         leadingAccessory: {
                             type: "icon",

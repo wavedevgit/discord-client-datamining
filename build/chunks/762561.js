@@ -24,11 +24,11 @@ var i = n(627968),
     E = n(718019),
     I = n(915614),
     N = n(439053),
-    b = n(312381),
-    S = n(379654),
+    S = n(312381),
+    b = n(379654),
     T = n(946356),
-    y = n(490752),
-    v = n(587168),
+    v = n(490752),
+    y = n(587168),
     j = n(193738),
     R = n(853397),
     O = n(159218),
@@ -53,9 +53,9 @@ function k(e) {
         channelId: g.id
     }), Y = s.useRef(null), {
         isHoveringOrFocusing: z,
-        isHovering: X
-    } = (0, h.A)(Y), q = (0, x.fC)(), J = (0, o.zhh)({
-        opacity: +(null != q.interactionType),
+        isHovering: q
+    } = (0, h.A)(Y), X = (0, x.fC)(), J = (0, o.zhh)({
+        opacity: +(null != X.interactionType),
         config: {
             duration: 150
         }
@@ -85,23 +85,23 @@ function k(e) {
             fetchEndedAt: B?.fetchEndedAt,
             isLoaded: B?.isLoaded,
             children: (0, i.jsx)(x.Hl, {
-                value: q,
+                value: X,
                 children: (0, i.jsxs)(T.A, {
                     ref: Y,
                     user: t,
                     displayProfile: B,
                     themeType: U.d.SIDEBAR,
                     themeOverride: H,
-                    privateBanner: B?.private === !0 ? (0, i.jsx)(b.A, {}) : void 0,
-                    children: [null != q.interactionType && (0, i.jsx)(l.animated.div, {
+                    privateBanner: B?.private === !0 ? (0, i.jsx)(S.A, {}) : void 0,
+                    children: [null != X.interactionType && (0, i.jsx)(l.animated.div, {
                         style: J,
                         className: w.tB
                     }), (0, i.jsxs)(a.d_W, {
-                        children: [(0, i.jsxs)(v.A, {
+                        children: [(0, i.jsxs)(y.A, {
                             children: [(0, i.jsx)(j.A, {
                                 user: t,
                                 themeType: U.d.SIDEBAR
-                            }), t.bot ? (0, i.jsx)(y.A, {
+                            }), t.bot ? (0, i.jsx)(v.A, {
                                 user: t
                             }) : (0, i.jsx)(R.yo, {
                                 user: t
@@ -134,11 +134,11 @@ function k(e) {
                             currentUser: n,
                             displayProfile: B,
                             channel: g,
-                            isHoveringOrFocusing: null == q.interactionType && z,
+                            isHoveringOrFocusing: null == X.interactionType && z,
                             onOpenProfile: k ? void 0 : Q
                         }), $ && (0, i.jsx)("div", {
                             className: w.sJ,
-                            children: (0, i.jsx)(S.A, {
+                            children: (0, i.jsx)(b.A, {
                                 user: t,
                                 widgets: B.widgets,
                                 onOpenUserProfileModal: Q
@@ -166,7 +166,7 @@ function k(e) {
                         context: W
                     }), B?.profileEffect != null && (0, i.jsx)(A.A, {
                         skuId: B?.profileEffect?.skuId,
-                        isHovering: X
+                        isHovering: q
                     })]
                 })
             })

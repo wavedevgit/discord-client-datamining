@@ -1,7 +1,7 @@
 /** chunk id: 287245, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => y
+    A: () => v
 });
 var i = n(627968),
     s = n(64700),
@@ -24,8 +24,8 @@ var i = n(627968),
     E = n(203982),
     I = n(427262),
     N = n(652215),
-    b = n(985018),
-    S = n(65309);
+    S = n(985018),
+    b = n(65309);
 let T = e => {
         let {
             channel: t,
@@ -53,9 +53,9 @@ let T = e => {
             size: 48
         });
         return (0, i.jsxs)("div", {
-            className: a()(S.iU, {
-                [S.FD]: s,
-                [S.Tf]: l
+            className: a()(b.iU, {
+                [b.FD]: s,
+                [b.Tf]: l
             }),
             children: [(0, i.jsx)("div", {
                 children: (0, i.jsx)(r.euF, {
@@ -71,37 +71,37 @@ let T = e => {
                 effectDisplayType: p.G.STATIC,
                 loop: !0
             }), (0, i.jsxs)("div", {
-                className: S.fi,
+                className: b.fi,
                 children: [(0, i.jsx)(r.Text, {
                     variant: "text-md/normal",
-                    className: S.Qs,
+                    className: b.Qs,
                     children: o.content
                 }), n.attachments.length > 0 && (0, i.jsx)("div", {
-                    className: a()(S.nM, S.rQ),
+                    className: a()(b.nM, b.rQ),
                     children: n.attachments.filter(e => !e.spoiler && e.content_type?.startsWith("image")).map(e => (0, i.jsx)("img", {
                         src: e.url,
                         width: 128,
-                        className: S.oh,
-                        alt: b.intl.string(b.t.X4IxWL)
+                        className: b.oh,
+                        alt: S.intl.string(S.t.X4IxWL)
                     }, e.id))
                 })]
             })]
         })
     },
-    y = e => {
+    v = e => {
         let {
             channel: t,
             idle: n,
             showChat: l
-        } = e, A = s.useRef(new Set), [p, m] = s.useState([]), [_, f] = s.useState(0), I = s.useRef(null), b = s.useRef(!1), [y, v] = s.useState(!0), [j, R] = s.useState(""), [O, L] = s.useState((0, u.x7)(j));
+        } = e, A = s.useRef(new Set), [p, m] = s.useState([]), [_, f] = s.useState(0), I = s.useRef(null), S = s.useRef(!1), [v, y] = s.useState(!0), [j, R] = s.useState(""), [O, L] = s.useState((0, u.x7)(j));
         s.useEffect(() => {
             let e = A.current;
             return () => {
                 e.size > 0 && [...e].forEach(e => clearTimeout(e))
             }
         }, []), s.useEffect(() => {
-            let e = () => v(!0),
-                t = () => v(!1);
+            let e = () => y(!0),
+                t = () => y(!1);
             return E._.subscribe(N.jej.TEXTAREA_FOCUS, e), E._.subscribe(N.jej.TEXTAREA_BLUR, t), () => {
                 E._.unsubscribe(N.jej.TEXTAREA_FOCUS, e), E._.unsubscribe(N.jej.TEXTAREA_BLUR, t)
             }
@@ -158,11 +158,11 @@ let T = e => {
             };
             return o.h.subscribe("MESSAGE_CREATE", e), () => o.h.unsubscribe("MESSAGE_CREATE", e)
         }, []), (0, i.jsxs)("div", {
-            className: a()(S.X2, {
-                [S.R]: !l
+            className: a()(b.X2, {
+                [b.R]: !l
             }),
-            onMouseEnter: () => b.current = !0,
-            onMouseLeave: () => b.current = !1,
+            onMouseEnter: () => S.current = !0,
+            onMouseLeave: () => S.current = !1,
             onWheel: e => {
                 e.preventDefault(), e.stopPropagation()
             },
@@ -171,12 +171,12 @@ let T = e => {
             },
             children: [(0, i.jsx)(x.A, {
                 children: (0, i.jsx)("div", {
-                    className: a()(S.TE, {
-                        [S.N7]: n
+                    className: a()(b.TE, {
+                        [b.N7]: n
                     }),
                     children: (0, i.jsx)(r.HOs, {
-                        className: a()(S.b6, {
-                            [S.N7]: D && n
+                        className: a()(b.b6, {
+                            [b.N7]: D && n
                         }),
                         ref: I,
                         children: p.map(e => (0, i.jsx)(T, {
@@ -187,18 +187,18 @@ let T = e => {
                     })
                 })
             }), (0, i.jsx)(h.Ay, {
-                className: a()(S.CQ, {
-                    [S.N7]: n && 0 === j.length
+                className: a()(b.CQ, {
+                    [b.N7]: n && 0 === j.length
                 }),
-                innerClassName: S.hF,
+                innerClassName: b.hF,
                 type: d.oU.HAVEN,
                 channel: t,
                 textValue: j,
                 richValue: O,
                 placeholder: "Send message",
-                onFocus: () => v(!0),
-                onBlur: () => v(!1),
-                focused: y,
+                onFocus: () => y(!0),
+                onBlur: () => y(!1),
+                focused: v,
                 disabled: !l,
                 showValueWhenDisabled: !0,
                 onChange: (e, t, n) => {

@@ -32,14 +32,14 @@ function p(e) {
         Component: I,
         play: N,
         events: {
-            onMouseEnter: b,
-            onMouseLeave: S
+            onMouseEnter: S,
+            onMouseLeave: b
         }
     } = (0, l.T)(), T = s.useCallback(e => {
-        "focus" !== e.type && (C(), b())
-    }, [C, b]), y = s.useCallback(() => {
-        null == p && (E(), S())
-    }, [E, S, p]), v = s.useCallback(() => {
+        "focus" !== e.type && (C(), S())
+    }, [C, S]), v = s.useCallback(() => {
+        null == p && (E(), b())
+    }, [E, b, p]), y = s.useCallback(() => {
         (0, o.X)(g, o.O.GIFTING), p === h.P.GIFTING ? (m?.(void 0), E()) : (null != p ? (N(), C()) : N(), m?.(h.P.GIFTING))
     }, [C, E, g, N, m, p]);
     return (0, i.jsx)(a.Y, {
@@ -71,9 +71,9 @@ function p(e) {
             themeable: n,
             "aria-label": A.intl.string(A.t.PEjaCx),
             iconComponent: I,
-            onClick: v,
+            onClick: y,
             onMouseEnter: T,
-            onMouseLeave: y,
+            onMouseLeave: v,
             isActive: f || p === h.P.GIFTING,
             color: f || p === h.P.GIFTING ? "primaryDark" : void 0
         })

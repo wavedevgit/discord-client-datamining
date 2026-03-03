@@ -24,11 +24,11 @@ var i = n(627968),
     E = n(812299),
     I = n(943220),
     N = n(538355),
-    b = n(995273),
-    S = n(854627),
+    S = n(995273),
+    b = n(854627),
     T = n(95701),
-    y = n(260509),
-    v = n(734057),
+    v = n(260509),
+    y = n(734057),
     j = n(256587),
     R = n(71393),
     O = n(851109),
@@ -55,13 +55,13 @@ function B(e) {
         colorString: C
     } = (0, f.Ay)(t), {
         avatarSrc: N,
-        eventHandlers: b
-    } = (0, S.A)({
+        eventHandlers: S
+    } = (0, b.A)({
         userId: t.author.id,
         size: u._3J.SIZE_32,
         guildId: _?.id,
         animateOnHover: !0
-    }), T = n.type !== P.rbe.GUILD_ANNOUNCEMENT || null == _, v = (0, E.y)({
+    }), T = n.type !== P.rbe.GUILD_ANNOUNCEMENT || null == _, y = (0, E.y)({
         channel: n,
         message: t,
         user: t.author,
@@ -83,8 +83,8 @@ function B(e) {
     }, [_, t.author.id]), (0, i.jsx)(u.vN3, {
         ...l,
         children: (0, i.jsxs)("div", {
-            onMouseLeave: b.onMouseLeave,
-            onMouseEnter: b.onMouseEnter,
+            onMouseLeave: S.onMouseLeave,
+            onMouseEnter: S.onMouseEnter,
             className: V.zC,
             children: [o && !r && (0, i.jsx)("div", {
                 className: V.Zm
@@ -98,12 +98,12 @@ function B(e) {
                     "aria-label": "User Avatar",
                     src: N,
                     size: u._3J.SIZE_32,
-                    cornerIconUrl: null != _ ? (0, y.Iv)(_, 24) : void 0,
+                    cornerIconUrl: null != _ ? (0, v.Iv)(_, 24) : void 0,
                     cornerIconOffsetX: 4,
                     cornerIconOffsetY: 3
                 }) : (0, i.jsx)(U.h, {
                     "aria-label": "Guild Icon",
-                    src: (0, y.Iv)(_, 32),
+                    src: (0, v.Iv)(_, 32),
                     size: u._3J.SIZE_32,
                     cornerIconUrl: t.author.getAvatarURL(_.id, 24),
                     cornerIconOffsetX: 4,
@@ -132,7 +132,7 @@ function B(e) {
                             children: (0, i.jsx)(d.A, {
                                 children: O
                             })
-                        }), v]
+                        }), y]
                     }) : (0, i.jsx)(d.A, {
                         children: (0, i.jsx)(u.Heading, {
                             variant: "text-md/semibold",
@@ -227,7 +227,7 @@ function H(e) {
 function F(e) {
     let {
         message: t
-    } = e, n = (0, b.jb)(t.timestamp.getTime());
+    } = e, n = (0, S.jb)(t.timestamp.getTime());
     return (0, i.jsx)(C.A, {
         timestamp: t.timestamp,
         className: V.vE,
@@ -329,9 +329,9 @@ let W = (0, s.memo)(function(e) {
         isUnread: r
     } = e, d = t.message, A = (0, M.op)(), {
         params: p
-    } = (0, o.W5)(), m = (0, c.bG)([v.A], () => {
+    } = (0, o.W5)(), m = (0, c.bG)([y.A], () => {
         if (null == d) return null;
-        let e = v.A.getChannel(t.channelId);
+        let e = y.A.getChannel(t.channelId);
         return null != e ? e : new T.jb({
             id: t.channelId,
             guild_id: t.guildId,

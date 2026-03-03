@@ -24,11 +24,11 @@ var i = n(627968),
     E = n(287809),
     I = n(954571),
     N = n(203982),
-    b = n(398219),
-    S = n(427262),
+    S = n(398219),
+    b = n(427262),
     T = n(837921),
-    y = n(652215),
-    v = n(985018),
+    v = n(652215),
+    y = n(985018),
     j = n(701939);
 let R = [],
     O = T.Ay.getEnableHardwareAcceleration();
@@ -39,7 +39,7 @@ function L(e) {
         channel: r,
         status: u,
         activities: h
-    } = e, A = (0, a.bG)([C.A], () => null != C.A.getTypingUsers(r.id)[t.id]), m = (0, a.bG)([E.default], () => E.default.getCurrentUser()), I = (0, a.bG)([f.A], () => f.A.isMobileOnline(t.id)), b = (0, a.bG)([x.A], () => x.A.getNickname(t.id)), T = (0, p.A)(t.id), j = s.useRef(null), R = e => {
+    } = e, A = (0, a.bG)([C.A], () => null != C.A.getTypingUsers(r.id)[t.id]), m = (0, a.bG)([E.default], () => E.default.getCurrentUser()), I = (0, a.bG)([f.A], () => f.A.isMobileOnline(t.id)), S = (0, a.bG)([x.A], () => x.A.getNickname(t.id)), T = (0, p.A)(t.id), j = s.useRef(null), R = e => {
         (0, o.L3)(e, async () => {
             let {
                 default: e
@@ -51,11 +51,11 @@ function L(e) {
             })
         })
     }, L = () => {
-        let e = `@${S.Ay.getUserTag(t,{decoration:"never"})}`,
+        let e = `@${b.Ay.getUserTag(t,{decoration:"never"})}`,
             n = `<@${t.id}>`;
-        N._.dispatch(y.jej.TEXTAREA_FOCUS, {
+        N._.dispatch(v.jej.TEXTAREA_FOCUS, {
             channelId: r.id
-        }), N._.dispatchToLastSubscribed(y.jej.INSERT_TEXT, {
+        }), N._.dispatchToLastSubscribed(v.jej.INSERT_TEXT, {
             plainText: e,
             rawText: n
         }), c.A.startTyping(r.id)
@@ -82,7 +82,7 @@ function L(e) {
                 user: t,
                 currentUser: m,
                 isOwner: t.id === r.ownerId,
-                ownerTooltipText: v.intl.string(v.t["MRXZ+x"]),
+                ownerTooltipText: y.intl.string(y.t["MRXZ+x"]),
                 shouldAnimateStatus: O,
                 isTyping: A,
                 status: u,
@@ -92,7 +92,7 @@ function L(e) {
                 onContextMenu: R,
                 selected: D,
                 isMobile: I,
-                nick: b,
+                nick: S,
                 nameplate: M,
                 onClick: e => {
                     e.shiftKey ? L?.() : G(e => !e)
@@ -124,13 +124,13 @@ function D(e) {
     } = (0, h.Ay)(u.A.MEMBER_LIST), {
         listItems: c
     } = (0, a.bG)([x.A, E.default, f.A], () => {
-        let e = (0, b.F)(t.recipients, E.default),
+        let e = (0, S.F)(t.recipients, E.default),
             n = {};
         for (let t of e) x.A.isFriend(t.id) || t.id === E.default.getCurrentUser()?.id ? n[t.id] = {
-            status: f.A.getStatus(t.id) ?? y.clD.OFFLINE,
+            status: f.A.getStatus(t.id) ?? v.clD.OFFLINE,
             activities: f.A.getActivities(t.id) ?? R
         } : n[t.id] = {
-            status: y.clD.OFFLINE,
+            status: v.clD.OFFLINE,
             activities: R
         };
         let i = [];
@@ -147,7 +147,7 @@ function D(e) {
         }
     }, [t], M);
     s.useEffect(() => {
-        I.default.track(y.HAw.MEMBER_LIST_VIEWED, {
+        I.default.track(v.HAw.MEMBER_LIST_VIEWED, {
             channel_id: t.id,
             channel_type: t.type,
             guild_id: t.guild_id
@@ -165,7 +165,7 @@ function D(e) {
                     fade: !0,
                     children: [(0, i.jsxs)(m.A, {
                         className: j.lL,
-                        children: [`${v.intl.string(v.t["9Oq93m"])}—${c.length} `, d && (0, i.jsx)(A.A, {
+                        children: [`${y.intl.string(y.t["9Oq93m"])}—${c.length} `, d && (0, i.jsx)(A.A, {
                             type: A.A.Types.STAFF_ONLY_DM
                         })]
                     }), c.map(e => (0, i.jsx)(L, {

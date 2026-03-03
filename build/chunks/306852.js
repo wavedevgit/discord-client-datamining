@@ -33,17 +33,17 @@ function x(e) {
         return [e, s.useCallback(e => {
             o.w.set(f, e), t(e)
         }, [])]
-    }(), b = s.useRef(null), S = null == x.getGuildId() ? 70 : 50, T = (0, r.bG)([h.A], () => h.A.pipWidth(m.R8.CAMERA_PREVIEW)), y = C.length, v = T * y + 8 * (y - 1), j = s.useMemo(() => ({
-        minWidth: m.mn[m.R8.CAMERA_PREVIEW] * y + 8 * (y - 1),
-        maxWidth: m.cF[m.R8.CAMERA_PREVIEW] * y + 8 * (y - 1)
-    }), [y]);
+    }(), S = s.useRef(null), b = null == x.getGuildId() ? 70 : 50, T = (0, r.bG)([h.A], () => h.A.pipWidth(m.R8.CAMERA_PREVIEW)), v = C.length, y = T * v + 8 * (v - 1), j = s.useMemo(() => ({
+        minWidth: m.mn[m.R8.CAMERA_PREVIEW] * v + 8 * (v - 1),
+        maxWidth: m.cF[m.R8.CAMERA_PREVIEW] * v + 8 * (v - 1)
+    }), [v]);
     s.useLayoutEffect(() => {
-        b.current?.ensureIsInPosition()
+        S.current?.ensureIsInPosition()
     }, [C.length]);
     let R = s.useCallback(e => {
-            let t = 0 === y ? e : (e - 8 * (y - 1)) / y;
+            let t = 0 === v ? e : (e - 8 * (v - 1)) / v;
             c.EB(t, m.R8.CAMERA_PREVIEW)
-        }, [y]),
+        }, [v]),
         O = s.useCallback((e, t) => {
             N(t)
         }, [N]);
@@ -52,13 +52,13 @@ function x(e) {
         children: (0, i.jsx)(u.S, {
             position: I,
             id: 0,
-            width: v,
-            ref: b,
+            width: y,
+            ref: S,
             onMove: O,
             onResize: R,
             maxX: t,
             maxY: l,
-            edgeOffsetTop: S,
+            edgeOffsetTop: b,
             edgeOffsetBottom: 70,
             edgeOffsetLeft: 16,
             edgeOffsetRight: 16,

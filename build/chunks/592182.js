@@ -17,15 +17,15 @@ var l = n(503698),
     m = n(159426),
     h = n(25528),
     g = n(655724),
-    f = n(82149),
-    E = n(734057),
+    E = n(82149),
+    f = n(734057),
     C = n(287809),
     S = n(977997),
     T = n(90644),
     v = n(61330),
     y = n(153331),
-    x = n(33852),
-    N = n(834425),
+    N = n(33852),
+    x = n(834425),
     _ = n(284525),
     I = n(730430),
     j = n(443493),
@@ -33,8 +33,8 @@ var l = n(503698),
     U = n(329151),
     L = n(738080),
     R = n(648246),
-    D = n(305637),
-    O = n(652215),
+    O = n(305637),
+    D = n(652215),
     M = n(620452);
 let b = (0, u.A)(t => {
     let {
@@ -52,39 +52,39 @@ let b = (0, u.A)(t => {
     } = t, W = (0, o.bG)([C.default], () => {
         let t = C.default.getCurrentUser();
         return s()(null != t, "UserActivityActions: currentUser cannot be undefined"), t
-    }), k = w === y.O.STREAM_PREVIEW || null != a, B = (0, T.A)(e), Y = B || k ? A.A.Direction.HORIZONTAL : A.A.Direction.VERTICAL, z = e?.type === O.$pd.HANG_STATUS, J = (0, o.bG)([S.A, E.A], () => z ? E.A.getChannel(S.A.getVoiceStateForUser(l.id)?.channelId) : null), $ = (0, o.bG)([E.A], () => null != H ? E.A.getChannel(H) : null, [H]), {
-        enableUserHoverActivities: Z
+    }), k = w === y.O.STREAM_PREVIEW || null != a, Y = (0, T.A)(e), B = Y || k ? A.A.Direction.HORIZONTAL : A.A.Direction.VERTICAL, z = e?.type === D.$pd.HANG_STATUS, J = (0, o.bG)([S.A, f.A], () => z ? f.A.getChannel(S.A.getVoiceStateForUser(l.id)?.channelId) : null), $ = (0, o.bG)([f.A], () => null != H ? f.A.getChannel(H) : null, [H]), {
+        enableUserHoverActivities: K
     } = (0, p.fC)({
         guildId: b ?? $?.guild_id,
         location: "UserActivityActions"
     }), {
-        enableRequestToStream: K
+        enableRequestToStream: Z
     } = m.m.useExperiment({
         guildId: b ?? $?.guild_id,
         location: "UserActivityActions"
     }, {
         autoTrackExposure: !1
-    }), q = null != $ && Z && K && (0, h.F9)(e), X = Y === A.A.Direction.VERTICAL;
+    }), q = null != $ && K && Z && (0, h.F9)(e), X = B === A.A.Direction.VERTICAL;
     return (0, i.jsx)(A.A, {
         grow: 0,
         align: A.A.Align.STRETCH,
-        direction: Y,
+        direction: B,
         wrap: X ? A.A.Wrap.WRAP : A.A.Wrap.NO_WRAP,
         className: r()(u, M.jx, X ? M.Vd : M.xM),
         children: (() => {
-            if ((0, v.A)(e)) return (0, i.jsx)(x.A, {
-                platform: c.A.get(O.fg2.XBOX),
+            if ((0, v.A)(e)) return (0, i.jsx)(N.A, {
+                platform: c.A.get(D.fg2.XBOX),
                 variant: F,
                 onAction: V,
                 icon: d.YWd
             });
-            if (e?.platform === O.yTV.PS4 || e?.platform === O.yTV.PS5) return (0, i.jsx)(x.A, {
+            if (e?.platform === D.yTV.PS4 || e?.platform === D.yTV.PS5) return (0, i.jsx)(N.A, {
                 variant: F,
-                platform: c.A.get(O.fg2.PLAYSTATION),
+                platform: c.A.get(D.fg2.PLAYSTATION),
                 onAction: V,
                 icon: d.Xj
             });
-            if (B) {
+            if (Y) {
                 let t = (0, i.jsx)(L.A, {
                         activity: e,
                         user: l,
@@ -105,8 +105,8 @@ let b = (0, u.A)(t => {
                     children: [n, t]
                 })
             }
-            if ((0, f.Cy)(e)) {
-                let t = (0, f.UW)(e);
+            if ((0, E.Cy)(e)) {
+                let t = (0, E.UW)(e);
                 return null == t ? null : (0, i.jsx)(j.A, {
                     guildId: t.guildId,
                     channelId: t.channelId,
@@ -114,7 +114,7 @@ let b = (0, u.A)(t => {
                     onAction: V
                 })
             }
-            return k ? (0, i.jsx)(D.A, {
+            return k ? (0, i.jsx)(O.A, {
                 isCurrentUser: W.id === l.id,
                 applicationStream: a,
                 onAction: V
@@ -143,7 +143,7 @@ let b = (0, u.A)(t => {
                     user: l,
                     variant: q ? "secondary" : F,
                     onAction: V
-                }), (0, i.jsx)(N.A, {
+                }), (0, i.jsx)(x.A, {
                     user: l,
                     activity: e,
                     variant: q ? "secondary" : F,

@@ -27,16 +27,16 @@ function f(e) {
         subtitle: f,
         onClick: x,
         showEmptyChannelTopic: C
-    } = e, E = (0, r.bG)([u.A], () => u.A.getChannelStatus(t)), I = null != E && E.length > 0, N = (0, d.Ay)(t, !0), b = null != f && f.length > 0;
+    } = e, E = (0, r.bG)([u.A], () => u.A.getChannelStatus(t)), I = null != E && E.length > 0, N = (0, d.Ay)(t, !0), S = null != f && f.length > 0;
     if (s.useEffect(() => {
             I && A.default.track(p.HAw.VOICE_CHANNEL_TOPIC_VIEWED, {
                 channel_id: t.id,
                 guild_id: t.guild_id
             })
         }, [I, t.id, t.guild_id]), null == t.guild_id) return null;
-    let S = a()(g.Ui, n && N ? g.BI : null);
+    let b = a()(g.Ui, n && N ? g.BI : null);
     return I ? (0, i.jsx)(c.DUT, {
-        className: S,
+        className: b,
         onClick: N ? x : void 0,
         children: (0, i.jsx)(c.Text, {
             variant: "text-xs/medium",
@@ -47,8 +47,8 @@ function f(e) {
                 })
             })
         })
-    }) : n && N && (!b || l) && C ? (0, i.jsxs)(c.DUT, {
-        className: S,
+    }) : n && N && (!S || l) && C ? (0, i.jsxs)(c.DUT, {
+        className: b,
         onClick: x,
         children: [(0, i.jsx)(c.Text, {
             variant: "text-xs/medium",
@@ -59,7 +59,7 @@ function f(e) {
             className: g.rD,
             size: "xxs"
         })]
-    }) : b ? (0, i.jsx)(o.A, {
+    }) : S ? (0, i.jsx)(o.A, {
         children: f
     }) : null
 }

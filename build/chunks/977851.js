@@ -1,7 +1,7 @@
 /** chunk id: 977851, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    V: () => b
+    V: () => S
 }), n(321073);
 var i = n(627968),
     s = n(64700),
@@ -60,7 +60,7 @@ function N(e) {
     })
 }
 
-function b(e) {
+function S(e) {
     let t, {
             channelId: n,
             className: l,
@@ -69,16 +69,16 @@ function b(e) {
             inPopout: p,
             showRequestToSpeakSidebar: m,
             toggleRequestToSpeakSidebar: f,
-            ...b
+            ...S
         } = e,
         {
-            parentAnalyticsLocation: S
+            parentAnalyticsLocation: b
         } = (0, d.Ay)(),
         {
             disabled: T
-        } = b,
-        y = s.useRef(null),
-        v = (0, o.bG)([u.A], () => u.A.getChatOpen(n), [n]),
+        } = S,
+        v = s.useRef(null),
+        y = (0, o.bG)([u.A], () => u.A.getChatOpen(n), [n]),
         {
             isShowing: j,
             unreadCount: R,
@@ -104,8 +104,8 @@ function b(e) {
             }
         }(n),
         L = s.useCallback(() => {
-            (0, h.X)(S, h.O.CHAT, !v), A?.(), !v && m && f?.(), c.A.updateChatOpen(n, !v, "toggle chat button")
-        }, [n, v, A, m, f, S]),
+            (0, h.X)(b, h.O.CHAT, !y), A?.(), !y && m && f?.(), c.A.updateChatOpen(n, !y, "toggle chat button")
+        }, [n, y, A, m, f, b]),
         M = s.useCallback(e => {
             let {
                 className: t
@@ -116,7 +116,7 @@ function b(e) {
             })
         }, [n]),
         D = s.useCallback(() => {
-            y.current?.focus()
+            v.current?.focus()
         }, []);
     (0, g.Vo)({
         event: C.jej.FOCUS_CHAT_BUTTON,
@@ -136,11 +136,11 @@ function b(e) {
             clearTimeout(e)
         }
     }, [G]);
-    let w = [t = p && T ? E.intl.string(E.t.DPgc5h) : v ? E.intl.string(E.t.nthdxB) : E.intl.string(E.t["5KxXrK"])];
+    let w = [t = p && T ? E.intl.string(E.t.DPgc5h) : y ? E.intl.string(E.t.nthdxB) : E.intl.string(E.t["5KxXrK"])];
     return O > 0 && w.push(E.intl.formatToPlainString(E.t["3l1GOx"], {
         mentionCount: O
     })), R > 0 && w.push(E.intl.string(E.t.x5zAGZ)), (0, i.jsx)(x.A, {
-        buttonRef: y,
+        buttonRef: v,
         onClick: L,
         label: t,
         "aria-label": w.join(", "),
@@ -150,6 +150,6 @@ function b(e) {
             [r]: j
         }),
         forceTooltipOpen: G,
-        ...b
+        ...S
     })
 }

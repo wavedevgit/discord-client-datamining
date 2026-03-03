@@ -1,19 +1,19 @@
 /** chunk id: 989299, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    I: () => d,
-    O: () => A
+    I: () => A,
+    O: () => d
 });
 var a = n(562465),
     l = n(397927),
-    s = n(73153),
-    i = n(157559),
+    i = n(73153),
+    s = n(157559),
     r = n(198982),
     c = n(218727),
     o = n(652215),
     u = n(985018);
-async function d() {
+async function A() {
     if (c.A.shouldFetch) {
-        s.h.dispatch({
+        i.h.dispatch({
             type: "RECENT_AVATARS_FETCH_START"
         });
         try {
@@ -21,7 +21,7 @@ async function d() {
                 url: o.Rsh.RECENT_AVATARS,
                 rejectWithError: !0
             });
-            s.h.dispatch({
+            i.h.dispatch({
                 type: "RECENT_AVATARS_FETCH_SUCCESS",
                 avatars: e.body.avatars.map(e => {
                     let {
@@ -35,24 +35,24 @@ async function d() {
                 })
             })
         } catch (e) {
-            s.h.dispatch({
+            i.h.dispatch({
                 type: "RECENT_AVATARS_FETCH_FAILURE",
                 error: new r.LG(e)
             })
         }
     }
 }
-async function A(e) {
+async function d(e) {
     try {
         await a.Bo.del({
             url: o.Rsh.RECENT_AVATARS_DELETE(e),
             rejectWithError: !0
-        }), await s.h.dispatch({
+        }), await i.h.dispatch({
             type: "RECENT_AVATAR_DELETE",
             avatarId: e
         }), l.ORC.announce(u.intl.string(u.t.YJPieI))
     } catch (e) {
-        i.A.show({
+        s.A.show({
             title: u.intl.string(u.t.iufib1),
             body: u.intl.string(u.t["/ZNT+0"])
         })

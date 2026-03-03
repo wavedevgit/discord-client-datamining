@@ -24,11 +24,11 @@ var i = n(627968),
     E = n(389996),
     I = n(743987),
     N = n(900179),
-    b = n(946356),
-    S = n(810396),
+    S = n(946356),
+    b = n(810396),
     T = n(35241),
-    y = n(587168),
-    v = n(996988),
+    v = n(587168),
+    y = n(996988),
     j = n(985018),
     R = n(743789),
     O = n(673721);
@@ -61,14 +61,14 @@ function L(e) {
             fetchStartedAt: M?.fetchStartedAt,
             fetchEndedAt: M?.fetchEndedAt,
             isLoaded: M?.isLoaded,
-            children: (0, i.jsxs)(b.A, {
+            children: (0, i.jsxs)(S.A, {
                 ref: w,
                 user: t,
                 displayProfile: M,
-                themeType: v.d.SIDEBAR,
+                themeType: y.d.SIDEBAR,
                 themeOverride: D,
                 children: [(0, i.jsxs)(l.d_W, {
-                    children: [(0, i.jsx)(y.A, {
+                    children: [(0, i.jsx)(v.A, {
                         children: (0, i.jsx)(T.A, {
                             user: t
                         })
@@ -77,18 +77,18 @@ function L(e) {
                         children: [(0, i.jsx)(C.A, {
                             user: t,
                             displayProfile: M,
-                            themeType: v.d.SIDEBAR,
+                            themeType: y.d.SIDEBAR,
                             animateOnHoverOrFocusOnly: !k
                         }), (0, i.jsx)(f.A, {
                             user: t,
                             displayProfile: M,
                             channelId: n.id,
-                            themeType: v.d.SIDEBAR,
+                            themeType: y.d.SIDEBAR,
                             onOpenProfile: L ? void 0 : B
                         })]
                     }), (0, i.jsxs)("div", {
                         className: O.rf,
-                        children: [(0, i.jsx)(S.A, {
+                        children: [(0, i.jsx)(b.A, {
                             user: t,
                             guildId: n.guild_id,
                             nickname: A.Ay.getName(null, n.id, t),
@@ -96,9 +96,9 @@ function L(e) {
                             onOpenProfile: L ? void 0 : B,
                             tags: (0, i.jsx)(x.A, {
                                 displayProfile: M,
-                                themeType: v.d.SIDEBAR
+                                themeType: y.d.SIDEBAR
                             })
-                        }), (0, i.jsxs)(b.A.Overlay, {
+                        }), (0, i.jsxs)(S.A.Overlay, {
                             className: O.Lw,
                             children: [(0, i.jsx)(N.A, {
                                 heading: j.intl.string(j.t.ZzAR2Y),

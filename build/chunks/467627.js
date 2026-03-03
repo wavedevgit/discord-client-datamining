@@ -24,11 +24,11 @@ var i = n(627968),
     E = n(688810),
     I = n(313961),
     N = n(832275),
-    b = n(730253),
-    S = n(633965),
+    S = n(730253),
+    b = n(633965),
     T = n(857071),
-    y = n(851109),
-    v = n(397938),
+    v = n(851109),
+    y = n(397938),
     j = n(366811),
     R = n(72314),
     O = n(543897),
@@ -48,8 +48,8 @@ var i = n(627968),
     W = n(850729),
     Y = n(521872),
     z = n(827975),
-    X = n(369915),
-    q = n(232879),
+    q = n(369915),
+    X = n(232879),
     J = n(181800),
     Q = n(343170),
     $ = n(652215),
@@ -71,7 +71,7 @@ class ei {
     timeout = new p.Ep;
     observer;
     constructor(e, t, n, i, s) {
-        this.guildsTree = e, this.setScrolling = t, this.setIsScrolledToBottom = n, this.onScroll = i, this.sizes = s, (0, S.u9)(this.getVisibleGuildIds)
+        this.guildsTree = e, this.setScrolling = t, this.setIsScrolledToBottom = n, this.onScroll = i, this.sizes = s, (0, b.u9)(this.getVisibleGuildIds)
     }
     setResizeObserver = () => {
         let e = this.scrollerRef.current?.getScrollerNode();
@@ -174,11 +174,11 @@ function es(e) {
         lurkingGuildIds: s
     } = e, l = (0, N.A)("TopSection"), a = (0, h.yK)([M.A, L.Ay], () => M.A.getGuildIds().filter(e => L.Ay.isCurrentUserGuest(e))), r = s.concat(a), {
         entrypoint: o
-    } = (0, y.X8)({
+    } = (0, v.X8)({
         location: "GuildsBar"
     });
     return (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(W.C, {}), o === y.RK.SERVER_RAIL_TOP && (0, i.jsx)(v.A, {}), l ? (0, i.jsx)(b.A, {}) : null, !t && (0, i.jsx)(V.A, {}), r.map(e => (0, i.jsx)(Q.A, {
+        children: [(0, i.jsx)(W.C, {}), o === v.RK.SERVER_RAIL_TOP && (0, i.jsx)(y.A, {}), l ? (0, i.jsx)(S.A, {}) : null, !t && (0, i.jsx)(V.A, {}), r.map(e => (0, i.jsx)(Q.A, {
             guildId: e
         }, e)), (0, i.jsx)(J.A, {
             onActivate: n
@@ -225,8 +225,8 @@ function ea(e) {
         return [e, e.version]
     }), u = (0, h.bG)([T.A], () => T.A.lurkingGuildIds()), A = s.useMemo(() => n ? [] : u, [u, n]), _ = (0, h.bG)([I.A], () => I.A.isFullscreenInContext()), {
         isSorting: x,
-        startSorting: b,
-        stopSorting: S
+        startSorting: S,
+        stopSorting: b
     } = (0, U.A)(), O = s.useRef(!1), [L] = s.useState(() => new p.Ep), M = s.useRef(null), V = s.useRef(null), {
         ref: B,
         ...H
@@ -234,9 +234,9 @@ function ea(e) {
         pathname: er
     } = (0, c.zy)(), {
         entrypoint: eo
-    } = (0, y.X8)({
+    } = (0, v.X8)({
         location: "GuildsBar"
-    }), ec = +!!ea + +(eo === y.RK.SERVER_RAIL_TOP), ed = s.useMemo(() => {
+    }), ec = +!!ea + +(eo === v.RK.SERVER_RAIL_TOP), ed = s.useMemo(() => {
         let e, t, n = (e = J + Q, {
             iconSize: J,
             iconTotalSize: e,
@@ -290,37 +290,37 @@ function ea(e) {
     let ep = s.useCallback(function e(t, n, s) {
             switch (t.type) {
                 case P.PJ.FOLDER:
-                    return (0, i.jsx)(X.A, {
+                    return (0, i.jsx)(q.A, {
                         folderNode: t,
                         setNodeRef: ed.setNodeRef,
                         draggable: !0,
                         sorting: x,
-                        onDragStart: b,
-                        onDragEnd: S,
+                        onDragStart: S,
+                        onDragEnd: b,
                         renderChildNode: e,
                         "aria-setsize": s,
                         "aria-posinset": void 0 !== n ? n + 1 : void 0
                     }, t.id);
                 case P.PJ.GUILD:
-                    return (0, i.jsx)(q.A, {
+                    return (0, i.jsx)(X.A, {
                         guildNode: t,
                         setRef: ed.setNodeRef,
                         draggable: !0,
                         sorting: x,
-                        onDragStart: b,
-                        onDragEnd: S,
+                        onDragStart: S,
+                        onDragEnd: b,
                         "aria-setsize": s,
                         "aria-posinset": void 0 !== n ? n + 1 : void 0
                     }, t.id);
                 default:
                     return null
             }
-        }, [b, S, x, ed.setNodeRef]),
+        }, [S, b, x, ed.setNodeRef]),
         em = (0, i.jsx)(K.A, {
             selected: eh,
             className: ee.ai
         }),
-        eg = eo === y.RK.SERVER_RAIL_BOTTOM;
+        eg = eo === v.RK.SERVER_RAIL_BOTTOM;
     return (0, i.jsx)(E.f5, {
         value: eu,
         children: (0, i.jsx)(g.NPJ, {
@@ -368,7 +368,7 @@ function ea(e) {
                                 fullWidth: !0
                             }), (0, i.jsx)("div", {
                                 className: ee.JU,
-                                children: (0, i.jsx)(v.A, {})
+                                children: (0, i.jsx)(y.A, {})
                             })]
                         })]
                     })

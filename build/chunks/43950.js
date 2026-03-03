@@ -1,7 +1,7 @@
 /** chunk id: 43950, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => v,
+    A: () => y,
     z: () => j
 });
 var i = n(627968),
@@ -71,7 +71,7 @@ function N(e) {
     })) : _
 }
 
-function b(e) {
+function S(e) {
     let {
         activity: t,
         embeddedApp: n,
@@ -97,7 +97,7 @@ function b(e) {
     })
 }
 
-function S(e) {
+function b(e) {
     let {
         activity: t,
         user: n,
@@ -127,7 +127,7 @@ function T(e) {
     })
 }
 
-function y(e) {
+function v(e) {
     let {
         activity: t
     } = e;
@@ -149,7 +149,7 @@ function y(e) {
     })
 }
 
-function v(e) {
+function y(e) {
     let {
         activity: t,
         embeddedApp: n,
@@ -163,7 +163,7 @@ function v(e) {
     null != n ? g = Array.from(n.embeddedActivity.userIds) : (0, d.A)(t) && null != c && (g = c.map(e => e.user.id));
     let x = (0, r.yK)([p.default], () => g.map(e => p.default.getUser(e)).filter(_.Vq)),
         C = null != n || (0, d.A)(t),
-        v = s.useMemo(() => {
+        y = s.useMemo(() => {
             let e = new Map;
             return C && null != c && c.forEach(t => {
                 let n = t.member;
@@ -181,11 +181,11 @@ function v(e) {
                 onOpenSpotifyAlbum: m
             }), (0, i.jsxs)("div", {
                 className: E.X0,
-                children: [(0, i.jsx)(b, {
+                children: [(0, i.jsx)(S, {
                     activity: t,
                     embeddedApp: n,
                     onOpenSpotifyTrack: u
-                }), (0, i.jsx)(S, {
+                }), (0, i.jsx)(b, {
                     activity: t,
                     user: l,
                     onOpenSpotifyArtist: A
@@ -199,7 +199,7 @@ function v(e) {
                     max: 7,
                     renderUser: e => {
                         if (null == e || e === h.mt) return null;
-                        let t = v.get(e.id),
+                        let t = y.get(e.id),
                             n = t?.nick ?? f.Ay.getName(e);
                         return (0, i.jsx)(o.m, {
                             asContainer: !0,
@@ -214,7 +214,7 @@ function v(e) {
                     }
                 })]
             })]
-        }), (0, i.jsx)(y, {
+        }), (0, i.jsx)(v, {
             activity: t
         })]
     }) : null
@@ -251,12 +251,12 @@ function j(e) {
                 compact: !0
             }), (0, i.jsxs)("div", {
                 className: E.Be,
-                children: [(0, i.jsx)(b, {
+                children: [(0, i.jsx)(S, {
                     activity: t,
                     embeddedApp: n,
                     onOpenSpotifyTrack: l,
                     compact: !0
-                }), (0, i.jsx)(S, {
+                }), (0, i.jsx)(b, {
                     activity: t,
                     user: s,
                     onOpenSpotifyArtist: a,
@@ -265,7 +265,7 @@ function j(e) {
                     activity: t
                 })]
             })]
-        }), (0, i.jsx)(y, {
+        }), (0, i.jsx)(v, {
             activity: t
         })]
     })

@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
     A: () => j,
-    s: () => y
+    s: () => v
 });
 var i = n(627968),
     s = n(64700),
@@ -25,41 +25,41 @@ var i = n(627968),
     E = n(352123),
     I = n(682557),
     N = n(652215),
-    b = n(985018),
-    S = n(856528),
+    S = n(985018),
+    b = n(856528),
     T = n(166382);
-let y = s.memo(function(e) {
+let v = s.memo(function(e) {
     let {
         onClick: t
     } = e;
     return (0, i.jsxs)(c.DUT, {
         onClick: t,
-        className: S.Eo,
+        className: b.Eo,
         children: [(0, i.jsx)("img", {
             alt: "",
             src: T
         }), (0, i.jsx)(c.Text, {
             variant: "text-sm/semibold",
             color: "text-strong",
-            className: S.Kk,
-            children: b.intl.string(b.t.H9jxS1)
+            className: b.Kk,
+            children: S.intl.string(S.t.H9jxS1)
         })]
     })
 });
 
-function v(e) {
+function y(e) {
     let {
         entry: t
     } = e, [l, r] = s.useState(!1), d = s.useRef(null), {
         canEdit: u
     } = (0, E.A)(t);
     return (0, i.jsx)("div", {
-        className: a()(S.fc, {
-            [S.QX]: l
+        className: a()(b.fc, {
+            [b.QX]: l
         }),
         children: (0, i.jsxs)(A.Ay, {
             children: [u ? (0, i.jsx)(o.m, {
-                text: b.intl.string(b.t.XnuOvN),
+                text: S.intl.string(S.t.XnuOvN),
                 children: (0, i.jsx)(A.$n, {
                     onClick: () => {
                         (0, c.mMO)(async () => {
@@ -72,11 +72,11 @@ function v(e) {
                             })
                         })
                     },
-                    "aria-label": b.intl.string(b.t.XnuOvN),
+                    "aria-label": S.intl.string(S.t.XnuOvN),
                     children: (0, i.jsx)(c.R2l, {
                         size: "xs",
                         color: "currentColor",
-                        className: S.IQ
+                        className: b.IQ
                     })
                 })
             }) : null, (0, i.jsx)(I.A, {
@@ -91,18 +91,18 @@ function v(e) {
                         ...n
                     } = e;
                     return (0, i.jsx)(o.m, {
-                        text: b.intl.string(b.t["UKOtz+"]),
+                        text: S.intl.string(S.t["UKOtz+"]),
                         children: (0, i.jsx)(A.$n, {
                             ...n,
                             onClick: e => {
                                 t(e)
                             },
                             ref: d,
-                            "aria-label": b.intl.string(b.t["UKOtz+"]),
+                            "aria-label": S.intl.string(S.t["UKOtz+"]),
                             children: (0, i.jsx)(c.jNK, {
                                 size: "md",
                                 color: "currentColor",
-                                className: S.IQ
+                                className: b.IQ
                             })
                         })
                     })
@@ -131,9 +131,9 @@ let j = s.memo(function(e) {
         id: t.guildId,
         icon: t.icon,
         size: 40
-    }) ?? void 0, T = b.intl.string(b.t.VJlc0S);
-    return o && (T = b.intl.string(b.t.cqWE2Z)), (0, i.jsxs)("div", {
-        className: S.Nr,
+    }) ?? void 0, T = S.intl.string(S.t.VJlc0S);
+    return o && (T = S.intl.string(S.t.cqWE2Z)), (0, i.jsxs)("div", {
+        className: b.Nr,
         onContextMenu: e => {
             (0, d.L3)(e, async () => {
                 let {
@@ -146,24 +146,24 @@ let j = s.memo(function(e) {
             })
         },
         children: [(0, i.jsxs)("div", {
-            className: S.MY,
+            className: b.MY,
             children: [(0, i.jsx)("div", {
-                className: S.Yi,
+                className: b.Yi,
                 children: null != E && (0, i.jsx)("img", {
                     src: E,
                     alt: "",
-                    className: S.j0
+                    className: b.j0
                 })
             }), (0, i.jsx)("div", {
-                className: S.$f,
+                className: b.$f,
                 children: (0, i.jsx)(h.Ay, {
                     mask: h.Ay.Masks.SQUIRCLE,
                     width: 48,
                     height: 48,
                     children: (0, i.jsx)("div", {
-                        className: S.SA,
+                        className: b.SA,
                         children: (0, i.jsx)(p.Ay, {
-                            className: S.rZ,
+                            className: b.rZ,
                             iconSrc: I,
                             guild: (0, C.xi)(t),
                             size: p.Ay.Sizes.MEDIUM,
@@ -173,50 +173,50 @@ let j = s.memo(function(e) {
                 })
             })]
         }), (0, i.jsxs)("div", {
-            className: S.OA,
+            className: b.OA,
             children: [(0, i.jsxs)("div", {
-                className: S.DD,
+                className: b.DD,
                 children: [(0, i.jsx)(m.A, {
-                    className: S.n2,
+                    className: b.n2,
                     guild: t
                 }), (0, i.jsx)(c.Text, {
-                    className: S.J5,
+                    className: b.J5,
                     variant: "heading-md/semibold",
                     color: "text-strong",
                     children: t.name
                 })]
             }), (0, i.jsx)(c.Text, {
-                className: S.h_,
+                className: b.h_,
                 variant: "text-sm/normal",
                 color: "text-default",
                 children: t.description
             }), (0, i.jsxs)("div", {
-                className: S.Fj,
+                className: b.Fj,
                 children: [null != t.approximatePresenceCount && (0, i.jsxs)("div", {
-                    className: S.Kl,
+                    className: b.Kl,
                     children: [(0, i.jsx)("div", {
-                        className: S.JX
+                        className: b.JX
                     }), (0, i.jsx)(c.Text, {
                         variant: "text-xs/normal",
                         color: "text-default",
-                        children: b.intl.format(b.t["LC+S+m"], {
+                        children: S.intl.format(S.t["LC+S+m"], {
                             membersOnline: t.approximatePresenceCount
                         })
                     })]
                 }), null != t.approximateMemberCount && (0, i.jsxs)("div", {
-                    className: S.Kl,
+                    className: b.Kl,
                     children: [(0, i.jsx)("div", {
-                        className: S.Li
+                        className: b.Li
                     }), (0, i.jsx)(c.Text, {
                         variant: "text-xs/normal",
                         color: "text-default",
-                        children: b.intl.format(b.t.zRl6XR, {
+                        children: S.intl.format(S.t.zRl6XR, {
                             count: t.approximateMemberCount
                         })
                     })]
                 })]
             }), (0, i.jsx)("div", {
-                className: S.PD,
+                className: b.PD,
                 children: (0, i.jsx)(c.Button, {
                     loading: l,
                     variant: o ? "secondary" : "active",
@@ -225,7 +225,7 @@ let j = s.memo(function(e) {
                     fullWidth: !0
                 })
             })]
-        }), (0, i.jsx)(v, {
+        }), (0, i.jsx)(y, {
             entry: t
         })]
     })

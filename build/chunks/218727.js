@@ -4,13 +4,13 @@ n.d(t, {
 });
 var a = n(311907),
     l = n(73153);
-let s = () => ({
+let i = () => ({
         isFetching: !1,
         lastFetchedAt: null,
         error: null
     }),
-    i = [],
-    r = s();
+    s = [],
+    r = i();
 class c extends a.Ay.Store {
     static displayName = "RecentAvatarsStore";
     get isFetching() {
@@ -23,7 +23,7 @@ class c extends a.Ay.Store {
         return Date.now() - (r.lastFetchedAt ?? 0) > 3e5 && !r.isFetching
     }
     getAvatars() {
-        return i
+        return s
     }
 }
 let o = new c(l.h, {
@@ -34,7 +34,7 @@ let o = new c(l.h, {
         let {
             avatars: t
         } = e;
-        i = t, r.isFetching = !1, r.lastFetchedAt = Date.now()
+        s = t, r.isFetching = !1, r.lastFetchedAt = Date.now()
     },
     RECENT_AVATARS_FETCH_FAILURE: function(e) {
         let {
@@ -49,9 +49,9 @@ let o = new c(l.h, {
         let {
             avatarId: t
         } = e;
-        i = i.filter(e => e.id !== t)
+        s = s.filter(e => e.id !== t)
     },
     LOGOUT: function() {
-        i = [], r = s()
+        s = [], r = i()
     }
 })

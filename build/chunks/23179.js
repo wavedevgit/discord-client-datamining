@@ -24,11 +24,11 @@ var i = n(627968),
     E = n(616252),
     I = n(753806),
     N = n(775427),
-    b = n(969715),
-    S = n(477654),
+    S = n(969715),
+    b = n(477654),
     T = n(65600),
-    y = n(145331),
-    v = n(976966),
+    v = n(145331),
+    y = n(976966),
     j = n(159083),
     R = n(229374),
     O = n(310420),
@@ -56,12 +56,12 @@ class U extends s.Component {
                 null != e.content && "" !== e.content && (n++, /https?:\/\/[^\s]+/.test(e.content) && l++), null != e.embeds && e.embeds.length > 0 && s++, null != e.attachments && e.attachments.length > 0 && i++
             });
             let a = (0, f.bS)(e.props.searchContext);
-            0 === n ? (0, y.oK)({
+            0 === n ? (0, v.oK)({
                 searchContext: e.props.searchContext,
                 searchRequestAnalyticsId: e.props.searchRequestAnalyticsId,
                 searchQueryString: I.A.getSearchInputText(e.props.searchContext),
                 searchQuery: T.A.getSearchResultsQuery(a)
-            }) : (0, y.H9)({
+            }) : (0, v.H9)({
                 searchContext: e.props.searchContext,
                 searchRequestAnalyticsId: e.props.searchRequestAnalyticsId,
                 prevSearchRequestAnalyticsId: t !== e.props.searchRequestAnalyticsId ? t : null,
@@ -198,7 +198,7 @@ let V = [],
             dismissFeedbackEntrypoint: x,
             onSearchModeChange: E,
             onPageChange: N,
-            searchMode: b,
+            searchMode: S,
             onBlockedResultsClick: j,
             searchResultsQuery: R,
             isFavoritesSearch: O,
@@ -231,7 +231,7 @@ let V = [],
                 paginationTotalCount: F,
                 paginationMaxIndex: K,
                 isPaginationTotalCountLimited: W
-            } = (0, S.o)({
+            } = (0, b.o)({
                 totalResults: n.totalResults,
                 isSearching: n.isSearching
             }),
@@ -250,13 +250,13 @@ let V = [],
                 }
             }, [W, K]),
             z = s.useCallback(e => {
-                e === b || n.isSearching || ((0, y.L6)({
+                e === S || n.isSearching || ((0, v.L6)({
                     searchContext: t,
                     searchRequestAnalyticsId: a,
                     mode: e
                 }), E(e))
-            }, [E, n.isSearching, t, b, a]),
-            X = s.useCallback((e, i) => {
+            }, [E, n.isSearching, t, S, a]),
+            q = s.useCallback((e, i) => {
                 let s = m.A.getChannel(e.channel_id),
                     l = null != s ? s.getGuildId() : null,
                     r = (0, f.bS)(t),
@@ -264,7 +264,7 @@ let V = [],
                         offset: o,
                         totalResults: c
                     } = n;
-                (0, y.i4)({
+                (0, v.i4)({
                     searchContext: t,
                     searchRequestAnalyticsId: a,
                     guildId: l,
@@ -280,8 +280,8 @@ let V = [],
                     searchQuery: T.A.getSearchResultsQuery(r)
                 })
             }, [n, t, a, u]),
-            q = s.useCallback(e => {
-                (0, y.kq)({
+            X = s.useCallback(e => {
+                (0, v.kq)({
                     searchContext: t,
                     searchRequestAnalyticsId: a,
                     newPageIndex: e
@@ -312,9 +312,9 @@ let V = [],
         return (0, i.jsxs)("section", {
             className: G.zt,
             "aria-label": D.intl.string(D.t["zkoeq/"]),
-            children: [(0, i.jsx)(v.A, {
+            children: [(0, i.jsx)(y.A, {
                 searchContext: t,
-                searchMode: b,
+                searchMode: S,
                 onSearchModeChange: z,
                 totalResults: n.totalResults,
                 isSearching: n.isSearching,
@@ -343,9 +343,9 @@ let V = [],
                     search: n,
                     searchContext: t,
                     renderEmbeds: l,
-                    onClick: X,
+                    onClick: q,
                     onScrollTo: H,
-                    onPageChange: q,
+                    onPageChange: X,
                     paginationTotalCount: W ? F : void 0,
                     renderPageWrapper: Y,
                     onBlockedResultsClick: j,
@@ -394,7 +394,7 @@ function H(e) {
         renderedMessages: h,
         ignoreCount: m,
         blockCount: g
-    } = (0, b.A)({
+    } = (0, S.A)({
         searchContext: t
     }), C = (0, r.bG)([T.A], () => T.A.getSearchMode(o) ?? L.BBH.NEWEST), N = s.useCallback(e => {
         if (c.isSearching) return;
@@ -405,7 +405,7 @@ function H(e) {
             searchQueryString: n,
             offset: 0
         })
-    }, [c.isSearching, t]), S = s.useCallback(e => {
+    }, [c.isSearching, t]), b = s.useCallback(e => {
         if (c.isSearching) return;
         let n = I.A.getSearchInputText(t);
         null != n && I.A.fetchMessages({
@@ -413,10 +413,10 @@ function H(e) {
             searchQueryString: n,
             offset: e * L.T_y
         })
-    }, [c.isSearching, t]), y = (0, r.bG)([T.A], () => {
+    }, [c.isSearching, t]), v = (0, r.bG)([T.A], () => {
         let e = (0, f.bS)(t);
         return T.A.getSearchResultsQuery(e)
-    }), v = t.type === L.I4_.FAVORITES, j = s.useCallback(e => E.A.setShowBlockedResults(t, e), [t]), R = s.useDeferredValue(h), O = s.useDeferredValue(c), D = s.useDeferredValue(d);
+    }), y = t.type === L.I4_.FAVORITES, j = s.useCallback(e => E.A.setShowBlockedResults(t, e), [t]), R = s.useDeferredValue(h), O = s.useDeferredValue(c), D = s.useDeferredValue(d);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(B, {
             searchContext: t,
@@ -428,12 +428,12 @@ function H(e) {
             renderEmbeds: p.rs.useSetting(),
             isFeedbackVisible: l,
             dismissFeedbackEntrypoint: a,
-            onPageChange: S,
+            onPageChange: b,
             onSearchModeChange: N,
             searchMode: C,
             onBlockedResultsClick: j,
-            searchResultsQuery: y,
-            isFavoritesSearch: v,
+            searchResultsQuery: v,
+            isFavoritesSearch: y,
             selectedChannelId: n
         }), (0, i.jsx)(U, {
             searchContext: t,

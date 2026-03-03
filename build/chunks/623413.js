@@ -28,7 +28,7 @@ let E = function(e) {
         hasConnectPermission: E
     } = e, I = (0, h.H)(n.guild_id), N = s.useCallback(() => {
         I ? (0, u.Ze)(n.guild_id, () => r.default.selectVoiceChannel(n.id)) : r.default.selectVoiceChannel(n.id)
-    }, [n.id, n.guild_id, I]), b = t.filter(e => e.type === g.wY.VOICE), S = (0, d.Ay)(n), T = 4 === b.length ? 2 : 3, y = (0, l.yK)([o.A], () => b.map(e => o.A.getParticipant(n.id, e.id)).filter(m.Vq), [n.id, b]);
+    }, [n.id, n.guild_id, I]), S = t.filter(e => e.type === g.wY.VOICE), b = (0, d.Ay)(n), T = 4 === S.length ? 2 : 3, v = (0, l.yK)([o.A], () => S.map(e => o.A.getParticipant(n.id, e.id)).filter(m.Vq), [n.id, S]);
     return (0, i.jsxs)("div", {
         className: C.kL,
         children: [(0, i.jsx)(p.A, {}), (0, i.jsx)("div", {
@@ -36,7 +36,7 @@ let E = function(e) {
             style: {
                 maxWidth: 168 * T
             },
-            children: y.slice(0, 5).map(e => (0, i.jsx)(A.Ay, {
+            children: v.slice(0, 5).map(e => (0, i.jsx)(A.Ay, {
                 participant: e,
                 channel: n,
                 className: C.Vs,
@@ -48,14 +48,14 @@ let E = function(e) {
         }), (0, i.jsx)(a.Heading, {
             className: C.HA,
             variant: "heading-xxl/normal",
-            children: S
+            children: b
         }), (0, i.jsx)("div", {
             className: C.Nu,
             children: (0, i.jsx)(a.Text, {
                 tag: "div",
                 color: "text-default",
                 variant: "heading-lg/normal",
-                children: (0, _.DO)(n, b)
+                children: (0, _.DO)(n, S)
             })
         }), (0, i.jsxs)("div", {
             className: C.UD,

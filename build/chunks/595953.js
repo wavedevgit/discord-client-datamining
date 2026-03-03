@@ -38,7 +38,7 @@ function I(t) {
             return (0, n.jsx)(a.lGe, {
                 children: (0, n.jsx)(E.A, {
                     suppressPlaySound: !0,
-                    shouldShowUpsell: !1,
+                    shouldShowLockedSounds: !1,
                     guildId: null,
                     channel: null,
                     onClose: e,

@@ -24,11 +24,11 @@ var i = n(627968),
     E = n(186111),
     I = n(430452),
     N = n(994500),
-    b = n(287809),
-    S = n(977997),
+    S = n(287809),
+    b = n(977997),
     T = n(203982),
-    y = n(58736),
-    v = n(652215),
+    v = n(58736),
+    y = n(652215),
     j = n(360469),
     R = n(49999),
     O = n(731854),
@@ -36,10 +36,10 @@ var i = n(627968),
 class M extends s.PureComponent {
     iconRef = s.createRef();
     componentDidMount() {
-        T._.subscribe(v.jej.CALL_START, this.handleVoiceClick)
+        T._.subscribe(y.jej.CALL_START, this.handleVoiceClick)
     }
     componentWillUnmount() {
-        T._.unsubscribe(v.jej.CALL_START, this.handleVoiceClick)
+        T._.unsubscribe(y.jej.CALL_START, this.handleVoiceClick)
     }
     renderVideoCallButton() {
         let e, {
@@ -51,11 +51,11 @@ class M extends s.PureComponent {
             mode: r,
             isProvisional: c
         } = this.props;
-        if (t || n && r === v._Of.VOICE) return null;
+        if (t || n && r === y._Of.VOICE) return null;
         let d = a.isManaged(),
             u = null,
             h = !1;
-        return c ? (h = !0, u = L.intl.string(L.t.izMR7o)) : I.Ay.supports(O.O5.VIDEO) ? l ? (u = L.intl.string(L.t.PHzjvX), h = !0) : n && r === v._Of.VIDEO ? (e = this.handleJoinVideoCall, u = d ? L.intl.string(L.t.S0W8Z5) : L.intl.string(L.t.W68MhH)) : (e = this.handleStartVideoCall, u = d ? L.intl.string(L.t.S0W8Z5) : L.intl.string(L.t.oCqlGG)) : (h = !0, e = this.handleBrowserNotSupported, u = L.intl.string(L.t.UVpg3U)), (0, i.jsx)(y.Ay.Icon, {
+        return c ? (h = !0, u = L.intl.string(L.t.izMR7o)) : I.Ay.supports(O.O5.VIDEO) ? l ? (u = L.intl.string(L.t.PHzjvX), h = !0) : n && r === y._Of.VIDEO ? (e = this.handleJoinVideoCall, u = d ? L.intl.string(L.t.S0W8Z5) : L.intl.string(L.t.W68MhH)) : (e = this.handleStartVideoCall, u = d ? L.intl.string(L.t.S0W8Z5) : L.intl.string(L.t.oCqlGG)) : (h = !0, e = this.handleBrowserNotSupported, u = L.intl.string(L.t.UVpg3U)), (0, i.jsx)(v.Ay.Icon, {
             icon: o.npA,
             onClick: e,
             disabled: h || s,
@@ -76,7 +76,7 @@ class M extends s.PureComponent {
         let h = c.isManaged(),
             A = !1;
         u ? (A = !0, e = L.intl.string(L.t.izMR7o)) : s ? (e = h ? L.intl.string(L.t.LW2Ghr) : L.intl.string(L.t.rF7lN5), A = !0) : l ? (e = L.intl.string(L.t.PHzjvX), A = !0) : e = n ? h ? L.intl.string(L.t.S0W8Z5) : L.intl.string(L.t.fdEeb5) : h ? L.intl.string(L.t.S0W8Z5) : L.intl.string(L.t.focH1t);
-        let p = (0, i.jsx)(y.Ay.Icon, {
+        let p = (0, i.jsx)(v.Ay.Icon, {
             ref: this.iconRef,
             icon: o._jp,
             onClick: this.handleVoiceClick,
@@ -153,7 +153,7 @@ class M extends s.PureComponent {
 function D(e) {
     let {
         channel: t
-    } = e, n = (0, g.A)(), s = (0, l.bG)([A.A], () => A.A.getMode(t.id)), r = (0, l.bG)([S.A], () => S.A.isInChannel(t.id)), o = (0, l.bG)([u.A], () => u.A.useReducedMotion), {
+    } = e, n = (0, g.A)(), s = (0, l.bG)([A.A], () => A.A.getMode(t.id)), r = (0, l.bG)([b.A], () => b.A.isInChannel(t.id)), o = (0, l.bG)([u.A], () => u.A.useReducedMotion), {
         callActive: c,
         callUnavailable: d
     } = (0, l.cf)([C.A], () => ({
@@ -163,10 +163,10 @@ function D(e) {
         notFriend: m,
         isBlocked: f
     } = (0, l.cf)([N.A], () => ({
-        notFriend: t.type === v.rbe.DM && null != p && !N.A.isFriend(p),
-        isBlocked: t.type === v.rbe.DM && null != p && N.A.isBlocked(p)
-    })), x = (0, l.bG)([b.default], () => b.default.getUser(p)), I = (0, _.Us)(), T = [], y = (0, h.A)(t.id), j = (0, l.bG)([E.A], () => E.A.hasLayers());
-    return (y && !j && T.push(a.M.ACTIVITY_GDM_CALL_TOOLTIP), n || x?.bot) ? null : (0, i.jsx)(M, {
+        notFriend: t.type === y.rbe.DM && null != p && !N.A.isFriend(p),
+        isBlocked: t.type === y.rbe.DM && null != p && N.A.isBlocked(p)
+    })), x = (0, l.bG)([S.default], () => S.default.getUser(p)), I = (0, _.Us)(), T = [], v = (0, h.A)(t.id), j = (0, l.bG)([E.A], () => E.A.hasLayers());
+    return (v && !j && T.push(a.M.ACTIVITY_GDM_CALL_TOOLTIP), n || x?.bot) ? null : (0, i.jsx)(M, {
         channel: t,
         mode: s,
         inCall: r,

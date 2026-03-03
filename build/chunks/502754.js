@@ -27,9 +27,9 @@ let N = {
         left: 4,
         right: -12
     },
-    b = [C.lAJ.THREAD_CREATED];
+    S = [C.lAJ.THREAD_CREATED];
 
-function S(e) {
+function b(e) {
     let {
         channel: t,
         message: n,
@@ -39,7 +39,7 @@ function S(e) {
         gotoChannel: d
     } = e, u = (0, r.rm)(n.id ?? ""), h = s.useCallback(e => {
         "ArrowLeft" === e.key && document.querySelector(`[data-recents-channel="${t.id}"]`)?.focus()
-    }, [t.id]), p = b.includes(n.type);
+    }, [t.id]), p = S.includes(n.type);
     return (0, i.jsx)(o.vN3, {
         offset: N,
         children: (0, i.jsxs)("div", {
@@ -75,7 +75,7 @@ function T(e) {
         location: "20e3b0_1"
     }, {
         autoTrackExposure: !1
-    }), r = p.hH.useSetting(), A = (0, u.iJ)(n), f = !1, N = 0 === t.messages.length || a()(t.messages[0].timestamp).isSame(a()(), "day"), b = g.default.getUser(m.default.getId())?.hasFlag(C.nhx.SPAMMER) ?? !1, T = [];
+    }), r = p.hH.useSetting(), A = (0, u.iJ)(n), f = !1, N = 0 === t.messages.length || a()(t.messages[0].timestamp).isSame(a()(), "day"), S = g.default.getUser(m.default.getId())?.hasFlag(C.nhx.SPAMMER) ?? !1, T = [];
     if (!t.collapsed) {
         let e = null,
             c = null,
@@ -89,12 +89,12 @@ function T(e) {
                 }, n)), e = a()(t.timestamp)
             }
             let o = null == c || (0, d.A)(n, c, t);
-            c = t, f = f || (0, u.kf)(t), T.push((0, i.jsx)(S, {
+            c = t, f = f || (0, u.kf)(t), T.push((0, i.jsx)(b, {
                 channel: n,
                 message: t,
                 compact: r,
                 isGroupStart: o,
-                treatSpam: !b && l && (0, u.kf)(t) && A,
+                treatSpam: !S && l && (0, u.kf)(t) && A,
                 gotoChannel: s
             }, t.id))
         }), t.messages.length >= x.sz && T.push((0, i.jsx)("div", {

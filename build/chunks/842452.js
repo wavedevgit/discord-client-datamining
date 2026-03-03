@@ -24,11 +24,11 @@ var i = n(627968),
     E = n(107385),
     I = n(900848),
     N = n(550591),
-    b = n(114329),
-    S = n(985018),
+    S = n(114329),
+    b = n(985018),
     T = n(211170),
-    y = n(837021);
-let v = (0, g.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
+    v = n(837021);
+let y = (0, g.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
     j = (0, o.animated)(h.BJc),
     R = s.memo(function(e) {
         var t;
@@ -55,8 +55,8 @@ let v = (0, g.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
                 "aria-posinset": z
             } = e,
             {
-                id: X,
-                name: q,
+                id: q,
+                name: X,
                 children: J
             } = u,
             [Q, $] = s.useState(!1),
@@ -84,7 +84,7 @@ let v = (0, g.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
             ee(e)
         }, []), ea = s.useCallback(e => {
             ("ArrowRight" === e.key && !O || "ArrowLeft" === e.key && O) && B()
-        }, [B, O]), er = null != q && "" !== q ? q : null != U && "" !== U ? U : S.intl.string(S.t.xV9hVh), eo = (0, c.Vd)(`${X}`), ec = `folder-items-${X}`, ed = (t = J.length, n = (0, h.rdh)(h.LU0.modules.guildbar.FOLDER_SIZE), l = (0, h.rdh)(h.LU0.modules.guildbar.AVATAR_SIZE), t * (l + (o = (0, h.rdh)(h.LU0.space.SPACE_XS))) - o + (o - (n - l) / 2) + (0, h.rdh)(h.LU0.space.SPACE_4)), eu = (0, h.pnh)(!ei && O, {
+        }, [B, O]), er = null != X && "" !== X ? X : null != U && "" !== U ? U : b.intl.string(b.t.xV9hVh), eo = (0, c.Vd)(`${q}`), ec = `folder-items-${q}`, ed = (t = J.length, n = (0, h.rdh)(h.LU0.modules.guildbar.FOLDER_SIZE), l = (0, h.rdh)(h.LU0.modules.guildbar.AVATAR_SIZE), t * (l + (o = (0, h.rdh)(h.LU0.space.SPACE_XS))) - o + (o - (n - l) / 2) + (0, h.rdh)(h.LU0.space.SPACE_4)), eu = (0, h.pnh)(!ei && O, {
             from: {
                 height: 0
             },
@@ -95,15 +95,15 @@ let v = (0, g.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
                 height: 0
             },
             config: {
-                duration: v
+                duration: y
             }
-        }), eh = s.useCallback(e => g?.(X, e), [g, X]), eA = (0, i.jsxs)(I.c, {
+        }), eh = s.useCallback(e => g?.(q, e), [g, q]), eA = (0, i.jsxs)(I.c, {
             children: [(0, i.jsx)(f.A, {
                 disabled: ei || O,
                 hovered: Q,
                 selected: R,
                 unread: G,
-                className: y.Io
+                className: v.Io
             }), (0, i.jsx)(N.A, {
                 text: er,
                 disabled: w,
@@ -115,7 +115,7 @@ let v = (0, g.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
                     } : void 0,
                     className: a()(T.MJ, {
                         [T.L0]: "icon" === K || en,
-                        [y.oR]: !ei && Z && !O
+                        [v.oR]: !ei && Z && !O
                     }),
                     "data-dnd-name": er,
                     children: ei ? (0, i.jsx)(E.A, {
@@ -144,7 +144,7 @@ let v = (0, g.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
                 targetNode: u,
                 onDragOverChanged: el
             }) : null]
-        }), ep = null != u.color ? u.color : b.DO, em = ep === b.DO ? void 0 : (0, d.Hl)(ep);
+        }), ep = null != u.color ? u.color : S.DO, em = ep === S.DO ? void 0 : (0, d.Hl)(ep);
         return (0, i.jsxs)("div", {
             ref: eh,
             className: a()(T.qc, {

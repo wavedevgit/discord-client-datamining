@@ -1,7 +1,7 @@
 /** chunk id: 712209, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    Ay: () => X,
+    Ay: () => q,
     mJ: () => V,
     sz: () => B,
     xB: () => k
@@ -25,11 +25,11 @@ var i, s, l = n(64700),
     E = n(152007),
     I = n(607508),
     N = n(594061),
-    b = n(617617),
-    S = n(95701),
+    S = n(617617),
+    b = n(95701),
     T = n(734057),
-    y = n(808728),
-    v = n(71393),
+    v = n(808728),
+    y = n(71393),
     j = n(320501),
     R = n(576705),
     O = n(222823),
@@ -282,7 +282,7 @@ function K() {
     var e;
     let t, n = function() {
             let e = {},
-                t = b.A.settings.guilds?.guilds ?? {};
+                t = S.A.settings.guilds?.guilds ?? {};
             for (let n in t)
                 for (let i in t[n].channels) {
                     let s = T.A.getChannel(i);
@@ -292,7 +292,7 @@ function K() {
         }(),
         i = (e = n, t = [], T.A.getSortedPrivateChannels().forEach(n => W(e, t, null, n.id)), L.Ay.getFlattenedGuildIds().forEach(n => {
             if (null == n) return;
-            let i = y.Ay.getSelectableChannelIds(n),
+            let i = v.Ay.getSelectableChannelIds(n),
                 s = x.A.getActiveJoinedUnreadThreadsForGuild(n);
             i.forEach(i => {
                 W(e, t, n, i);
@@ -315,14 +315,14 @@ function K() {
 function W(e, t, n, i) {
     if (null == i) return;
     let s = T.A.getChannel(i);
-    if (null == s || !S.Le.has(s.type) && M.Ay.isGuildOrCategoryOrChannelMuted(n, s.id)) return;
+    if (null == s || !b.Le.has(s.type) && M.Ay.isGuildOrCategoryOrChannelMuted(n, s.id)) return;
     if (s.isPrivate()) {
         if (0 === O.Ay.getMentionCount(i)) return
     } else if (!(0, f.Y)(s) && 0 === O.Ay.getMentionCount(i)) return;
     if (!s.isPrivate() && !R.A.can(P.xBc.READ_MESSAGE_HISTORY, s) || (0, m.qR)(s)) return;
     let l = O.Ay.ackMessageId(i);
     if (null == l) {
-        let e = v.A.getGuild(s.guild_id);
+        let e = y.A.getGuild(s.guild_id);
         if (null == e || null == e.joinedAt) return;
         l = U.default.fromTimestamp(e.joinedAt.getTime())
     }
@@ -380,7 +380,7 @@ function W(e, t, n, i) {
 let Y = 2 * D.A.Millis.DAY,
     z = 10 * D.A.Millis.DAY;
 
-function X(e) {
+function q(e) {
     let [t, n] = l.useState(() => new H(K(), e)), [i, s] = l.useState(!1), a = l.useRef(Date.now()), [r, o] = l.useState(() => K());
     l.useEffect(() => {
         let e = e => o(e);

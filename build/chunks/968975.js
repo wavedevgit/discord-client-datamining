@@ -24,16 +24,16 @@ var i = n(627968),
     E = n(524380),
     I = n(652215),
     N = n(49999),
-    b = n(985018),
-    S = n(250783);
+    S = n(985018),
+    b = n(250783);
 
 function T(e) {
     let {
         unownedWishlistItems: t = [],
         profileOwner: n,
         onClick: T,
-        wishlistId: y,
-        cardSize: v,
+        wishlistId: v,
+        cardSize: y,
         title: j
     } = e, {
         analyticsLocations: R
@@ -82,18 +82,18 @@ function T(e) {
                 profileOwner: n,
                 analyticsLocations: R,
                 onViewWishlist: T,
-                wishlistId: y,
+                wishlistId: v,
                 showTypeTooltip: U,
-                cardSize: v
+                cardSize: y
             }))) : (0, m.$)(l) && (s.add(l.skuProductLine), e.push((0, h.Z)(l, {
                 index: i,
                 moreCount: a ? t.length - M + 1 : void 0,
                 profileOwner: n,
                 analyticsLocations: R,
                 onViewWishlist: T,
-                wishlistId: y,
+                wishlistId: v,
                 showTypeTooltip: U,
-                cardSize: v
+                cardSize: y
             })))
         }
         return 1 === G.length && (i = G[0]), {
@@ -101,50 +101,50 @@ function T(e) {
             singleItem: i,
             productLines: s
         }
-    }, [t, n, R, T, y, v, G, U, M]), V = (0, f.A)({
-        wishlistId: y ?? null,
+    }, [t, n, R, T, v, y, G, U, M]), V = (0, f.A)({
+        wishlistId: v ?? null,
         onAction: D,
         productLines: k
     }), B = (0, s.useMemo)(() => L ? G.map((e, t) => null == e.sku ? null : (0, i.jsx)(g.A, {
         sku: e.sku,
         index: t,
         wishlistOwner: n,
-        wishlistId: y,
+        wishlistId: v,
         analyticsLocations: R,
         onViewWishlist: T
-    }, e.skuId)) : null, [R, L, T, n, G, y]), [H, F] = (0, c.RF)(l.M.SLAYER_STOREFRONT_ORBS_REWARD_WISHLIST_UPSELL, (0, o.c)(l.M.SLAYER_STOREFRONT_ORBS_REWARD_WISHLIST_UPSELL), void 0, !0), K = H !== l.M.SLAYER_STOREFRONT_ORBS_REWARD_WISHLIST_UPSELL;
+    }, e.skuId)) : null, [R, L, T, n, G, v]), [H, F] = (0, c.RF)(l.M.SLAYER_STOREFRONT_ORBS_REWARD_WISHLIST_UPSELL, (0, o.c)(l.M.SLAYER_STOREFRONT_ORBS_REWARD_WISHLIST_UPSELL), void 0, !0), K = H !== l.M.SLAYER_STOREFRONT_ORBS_REWARD_WISHLIST_UPSELL;
     if (0 === P.length) return null;
     let W = P;
     return null != w && ((0, p.L)(w) ? W = (0, C.z)(w, {
         profileOwner: n,
         analyticsLocations: R,
-        wishlistId: y,
+        wishlistId: v,
         onViewWishlist: T
     }) : (0, m.$)(w) && (W = (0, h.A)(w, {
         profileOwner: n,
         analyticsLocations: R,
-        wishlistId: y,
+        wishlistId: v,
         onViewWishlist: T
     }))), (0, i.jsxs)(x.A.Overlay, {
         ref: V,
-        className: S.kL,
+        className: b.kL,
         children: [(0, i.jsxs)("div", {
-            className: S.wx,
+            className: b.wx,
             children: [(0, i.jsx)(a.Text, {
                 variant: "text-sm/medium",
-                children: j ?? b.intl.string(b.t["7lZ31J"])
+                children: j ?? S.intl.string(S.t["7lZ31J"])
             }), L && (0, i.jsx)(a.QWc, {
                 variant: "secondary",
                 textVariant: "text-sm/medium",
                 onClick: T,
-                text: b.intl.string(b.t.y6PSA3)
+                text: S.intl.string(S.t.y6PSA3)
             })]
         }), (0, i.jsx)("div", {
-            className: S.vY,
+            className: b.vY,
             children: L ? B : W
         }), !K && k.has(I.EZt.SOCIAL_LAYER_GAME_ITEM) && (0, i.jsx)(u.A, {
             location: "user_profile_sidebar_wishlist_breadcrumb",
-            className: S.EK,
+            className: b.EK,
             onDismiss: () => F(N.i.USER_DISMISS)
         })]
     })

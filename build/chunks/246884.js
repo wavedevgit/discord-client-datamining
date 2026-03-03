@@ -1,7 +1,7 @@
 /** chunk id: 246884, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => b
+    A: () => S
 });
 var i = n(627968),
     s = n(64700),
@@ -46,13 +46,13 @@ function N(e) {
     })
 }
 
-function b(e) {
+function S(e) {
     let {
         disableTooltip: t,
         lastTargetNode: n
-    } = e, r = (0, l.yK)([p.A], () => p.A.getGuildsArray()), b = (0, l.bG)([m.default], () => m.default.getCurrentUser()), S = s.useMemo(() => r.some(e => (0, A.bM)(e, b)), [r, b]), T = (0, a.red)(e => (0, a.fDT)(e, x.fc)), {
-        analyticsLocations: y
-    } = (0, o.Ay)(), v = (0, i.jsx)(_.A, {
+    } = e, r = (0, l.yK)([p.A], () => p.A.getGuildsArray()), S = (0, l.bG)([m.default], () => m.default.getCurrentUser()), b = s.useMemo(() => r.some(e => (0, A.bM)(e, S)), [r, S]), T = (0, a.red)(e => (0, a.fDT)(e, x.fc)), {
+        analyticsLocations: v
+    } = (0, o.Ay)(), y = (0, i.jsx)(_.A, {
         showPill: !1,
         id: "create-join-button",
         onClick: () => {
@@ -64,7 +64,7 @@ function b(e) {
                     page: f.ThZ.CREATE_JOIN_GUILD_MODAL,
                     section: f.JJy.GUILD_CAP_UPSELL_MODAL
                 },
-                analyticsLocations: y
+                analyticsLocations: v
             }) : c.A.openCreateGuildModal({
                 location: "Guild List"
             })
@@ -74,13 +74,13 @@ function b(e) {
         tooltip: C.intl.string(C.t.l5WIbf),
         icon: a.U1e
     });
-    return t ? v : (0, i.jsx)("div", {
+    return t ? y : (0, i.jsx)("div", {
         className: E.Uq,
         children: (0, i.jsxs)(h.A, {
-            tutorialId: S ? "create-more-servers" : "create-first-server",
+            tutorialId: b ? "create-more-servers" : "create-first-server",
             inlineSpecs: I,
             position: "right",
-            children: [v, null != n && (0, i.jsx)(g.Ay, {
+            children: [y, null != n && (0, i.jsx)(g.Ay, {
                 name: C.intl.string(C.t["45xjM5"]),
                 targetNode: n,
                 below: !0,

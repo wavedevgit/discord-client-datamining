@@ -3,7 +3,7 @@
 n.d(t, {
     Ay: () => T,
     NH: () => j,
-    T: () => v
+    T: () => y
 });
 var i = n(627968),
     s = n(64700),
@@ -26,13 +26,13 @@ var i = n(627968),
     E = n(792967),
     I = n(712209),
     N = n(652215),
-    b = n(985018),
-    S = n(852570);
+    S = n(985018),
+    b = n(852570);
 
 function T(e) {
     var t, n, l, r, x, T;
     let {
-        onJump: v,
+        onJump: y,
         showTutorial: j,
         setSeenTutorial: R,
         closePopout: O
@@ -89,8 +89,8 @@ function T(e) {
     let k = (0, m.A)("unreads", L);
     return 0 === U.length ? (0, i.jsx)(C.A, {
         Icon: u.K$s,
-        header: b.intl.string(b.t["6XMM+D"]),
-        tip: o().os?.family === "OS X" ? b.intl.string(b.t.w9uDOW) : b.intl.string(b.t.BiUJC6)
+        header: S.intl.string(S.t["6XMM+D"]),
+        tip: o().os?.family === "OS X" ? S.intl.string(S.t.w9uDOW) : S.intl.string(S.t.BiUJC6)
     }) : (0, i.jsx)(c.hD, {
         navigator: k,
         children: (0, i.jsx)(c.PR, {
@@ -105,11 +105,11 @@ function T(e) {
                     },
                     ...n,
                     onScroll: G === I.mJ.Done ? void 0 : P,
-                    className: a()(S.XG, `group-spacing-${w}`),
-                    children: [j ? (0, i.jsx)(y, {
+                    className: a()(b.XG, `group-spacing-${w}`),
+                    children: [j ? (0, i.jsx)(v, {
                         setSeenTutorial: R
-                    }) : null, (0, E.A)(U, D, v), G === I.mJ.Done ? null : (0, i.jsx)(u.y$y, {
-                        className: S.u1
+                    }) : null, (0, E.A)(U, D, y), G === I.mJ.Done ? null : (0, i.jsx)(u.y$y, {
+                        className: b.u1
                     })]
                 })
             }
@@ -117,34 +117,34 @@ function T(e) {
     })
 }
 
-function y(e) {
+function v(e) {
     let {
         setSeenTutorial: t
     } = e;
     return (0, i.jsxs)("div", {
-        className: S.d$,
+        className: b.d$,
         children: [(0, i.jsx)("div", {
-            className: S.cm,
+            className: b.cm,
             children: (0, i.jsx)(u.K$s, {
                 size: "md",
                 color: "currentColor"
             })
         }), (0, i.jsxs)("div", {
             children: [(0, i.jsx)(u.Heading, {
-                className: S.__invalid_tutorialHeader,
+                className: b.__invalid_tutorialHeader,
                 variant: "heading-md/semibold",
-                children: b.intl.string(b.t.vZPktJ)
+                children: S.intl.string(S.t.vZPktJ)
             }), (0, i.jsx)(u.Text, {
                 color: "text-default",
                 variant: "text-sm/normal",
-                children: b.intl.string(b.t.vWkIII)
+                children: S.intl.string(S.t.vWkIII)
             }), (0, i.jsx)("div", {
                 "data-button-hoisted-classname-wrapper": !0,
-                className: S.dh,
+                className: b.dh,
                 children: (0, i.jsx)(u.Button, {
                     variant: "primary",
                     size: "sm",
-                    text: b.intl.string(b.t["+IrDzN"]),
+                    text: S.intl.string(S.t["+IrDzN"]),
                     onClick: t
                 })
             })]
@@ -152,12 +152,12 @@ function y(e) {
     })
 }
 
-function v() {
+function y() {
     return (0, i.jsx)(C.A, {
         Icon: u.K$s,
         disableStars: !0,
-        header: b.intl.string(b.t["KG/ynf"]),
-        tip: b.intl.string(b.t.cvcKzX)
+        header: S.intl.string(S.t["KG/ynf"]),
+        tip: S.intl.string(S.t.cvcKzX)
     })
 }
 let j = () => (0, i.jsx)(x.A, {

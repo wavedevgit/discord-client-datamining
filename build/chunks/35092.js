@@ -24,11 +24,11 @@ var i = n(627968),
     E = n(146423),
     I = n(699976),
     N = n(652215),
-    b = n(49999),
-    S = n(788868),
+    S = n(49999),
+    b = n(788868),
     T = n(188275),
-    y = n(518477),
-    v = n(985018),
+    v = n(518477),
+    y = n(985018),
     j = n(556786),
     R = n(585048);
 let O = s.forwardRef(function(e, t) {
@@ -43,7 +43,7 @@ let O = s.forwardRef(function(e, t) {
         trackUserProfileWishlistAction: u
     } = (0, x.NJ)(), h = s.useCallback(() => {
         u({
-            action: y.Mq.PRESS_WISHLIST_BREADCRUMB_CARD,
+            action: v.Mq.PRESS_WISHLIST_BREADCRUMB_CARD,
             skuId: n.id,
             wishlistId: r,
             productLines: new Set([n.productLine])
@@ -81,13 +81,13 @@ function L(e) {
         align: "center",
         onRequestClose: n,
         actions: [{
-            text: v.intl.string(v.t.uB4Gax),
+            text: y.intl.string(y.t.uB4Gax),
             variant: "primary",
             onClick: s
         }],
         targetElementRef: t,
-        title: v.intl.string(v.t.qh9t5c),
-        body: v.intl.string(v.t.iM6fxV),
+        title: y.intl.string(y.t.qh9t5c),
+        body: y.intl.string(y.t.iM6fxV),
         graphic: {
             type: "image",
             src: R.A
@@ -107,31 +107,31 @@ function M(e) {
         analyticsLocations: h
     } = (0, p.Ay)(...r ?? [], A.A.SLAYER_STOREFRONT_BREADCRUMB_WISHLIST_ITEM_CARD_GIFT_BUTTON), g = (0, _.Jw)({
         location: "dm-side-panel-social-layer-storefront-wishlist-item-card"
-    }), x = (0, u.useHasAnyModalOpen)(), E = (0, c.bG)([C.A], () => C.A.hasLayers()), [I, N] = (0, m.kn)(!g || 0 !== l || t.applicationId !== T.XR || x || E ? [] : [d.M.GAME_SHOP_WISHLIST_POPOVER], b.m.SIDEBAR, !0), y = s.useRef(null), v = s.useCallback(() => {
-        N(b.i.USER_DISMISS), (0, f.a)(t, {
+    }), x = (0, u.useHasAnyModalOpen)(), E = (0, c.bG)([C.A], () => C.A.hasLayers()), [I, N] = (0, m.kn)(!g || 0 !== l || t.applicationId !== T.XR || x || E ? [] : [d.M.GAME_SHOP_WISHLIST_POPOVER], S.m.SIDEBAR, !0), v = s.useRef(null), y = s.useCallback(() => {
+        N(S.i.USER_DISMISS), (0, f.a)(t, {
             isGift: !0,
             giftRecipient: n,
-            giftingOrigin: S.vQ.USER_PROFILE_WISHLIST
+            giftingOrigin: b.vQ.USER_PROFILE_WISHLIST
         }, {
             analyticsLocations: h
         })
     }, [N, t, n, h]), j = s.useCallback(() => {
-        N(b.i.USER_DISMISS)
+        N(S.i.USER_DISMISS)
     }, [N]), R = s.useCallback(() => {
-        N(b.i.USER_DISMISS), a()
+        N(S.i.USER_DISMISS), a()
     }, [a, N]);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(O, {
-            ref: y,
+            ref: v,
             sku: t,
             index: l,
             onViewWishlist: a,
             analyticsLocations: h,
             wishlistOwner: n,
-            onClick: v,
+            onClick: y,
             ...o
         }), I === d.M.GAME_SHOP_WISHLIST_POPOVER && (0, i.jsx)(L, {
-            targetElementRef: y,
+            targetElementRef: v,
             onRequestClose: j,
             onActionClick: R
         })]
@@ -148,7 +148,7 @@ function D(e) {
         (0, g.A)({
             skuId: t.id,
             isGift: !0,
-            giftingOrigin: S.vQ.USER_PROFILE_WISHLIST,
+            giftingOrigin: b.vQ.USER_PROFILE_WISHLIST,
             analyticsLocations: l ?? [],
             giftRecipient: n,
             variantsReturnStyle: o.g.VARIANTS_GROUP

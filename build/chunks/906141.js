@@ -24,11 +24,11 @@ var i = n(627968),
     E = n(143413),
     I = n(763754),
     N = n(467073),
-    b = n(491182),
-    S = n(860227),
+    S = n(491182),
+    b = n(860227),
     T = n(756369),
-    y = n(538355),
-    v = n(522871),
+    v = n(538355),
+    y = n(522871),
     j = n(715628),
     R = n(752636),
     O = n(675722),
@@ -55,8 +55,8 @@ let k = s.memo(function e(t) {
         W = (0, r.bG)([A.A], () => A.A.getMessageByReference(K)),
         Y = (0, r.bG)([m.A], () => l.type === G.lAJ.THREAD_STARTER_MESSAGE && W.state === A.a.LOADED ? m.A.getChannel(W.message.channel_id) : null),
         z = p.X6.useSetting(),
-        X = p.hD.useSetting(),
-        q = p.rs.useSetting(),
+        q = p.hD.useSetting(),
+        X = p.rs.useSetting(),
         J = p.kt.useSetting(),
         Q = (0, d.S)((l.editedTimestamp ?? l.timestamp).valueOf()),
         $ = (0, u.A)(s?.id),
@@ -67,8 +67,8 @@ let k = s.memo(function e(t) {
             content: ee,
             hasSpoilerEmbeds: et,
             hasBailedAst: en
-        } = (0, y.A)(l, {
-            hideSimpleEmbedContent: X && q,
+        } = (0, v.A)(l, {
+            hideSimpleEmbedContent: q && X,
             allowList: Q,
             allowHeading: Q,
             allowLinks: !0,
@@ -78,7 +78,7 @@ let k = s.memo(function e(t) {
         es = (0, r.bG)([m.A], () => l.hasFlag(G.pr7.HAS_THREAD) && m.A.getChannel(_.default.castMessageIdAsChannelId(l.id))),
         el = l.type === G.lAJ.THREAD_STARTER_MESSAGE && W.state === A.a.LOADED && null != Y,
         ea = !el && void 0 === n,
-        er = (0, v.A)({
+        er = (0, y.A)({
             message: l,
             channel: s,
             enabled: ea
@@ -86,7 +86,7 @@ let k = s.memo(function e(t) {
         eo = (0, c.P)(l),
         ec = (0, f._f)(l.id, l.channel_id),
         ed = (0, h.A)(l),
-        eu = (0, S.fF)(l);
+        eu = (0, b.fF)(l);
     return el ? (0, i.jsx)(e, {
         ...t,
         message: W.message,
@@ -97,7 +97,7 @@ let k = s.memo(function e(t) {
         compact: o,
         count: 1,
         collapsedReason: n
-    }) : (0, i.jsx)(b.A, {
+    }) : (0, i.jsx)(S.A, {
         compact: o,
         className: a()(D, {
             [w.M1]: (0, x.ec)(l),
@@ -124,8 +124,8 @@ let k = s.memo(function e(t) {
             disableReactionUpdates: !1,
             renderThreadAccessory: H,
             inlineAttachmentMedia: z,
-            inlineEmbedMedia: X,
-            renderEmbeds: q,
+            inlineEmbedMedia: q,
+            renderEmbeds: X,
             gifAutoPlay: J,
             poll: ed,
             showListsAndHeaders: Q,
@@ -156,7 +156,7 @@ function V(e) {
         compact: s,
         collapsedReason: l
     } = e;
-    return (0, i.jsx)(b.A, {
+    return (0, i.jsx)(S.A, {
         className: t,
         compact: s,
         role: "group",

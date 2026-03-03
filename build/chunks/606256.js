@@ -28,15 +28,15 @@ let A = s.forwardRef(function(e, t) {
         className: E,
         "aria-label": I,
         children: N,
-        onMouseEnter: b,
-        onMouseLeave: S,
+        onMouseEnter: S,
+        onMouseLeave: b,
         onMouseDown: T
-    } = e, y = (0, r.Vd)(n), [v, j] = s.useState(!1), R = "string" == typeof g && null == I ? g : I;
+    } = e, v = (0, r.Vd)(n), [y, j] = s.useState(!1), R = "string" == typeof g && null == I ? g : I;
     return (0, i.jsxs)(d.c, {
         children: [C ? (0, i.jsx)("div", {
             className: h.Io,
             children: (0, i.jsx)(c.A, {
-                hovered: v,
+                hovered: y,
                 selected: m
             })
         }) : null, (0, i.jsx)(u.A, {
@@ -50,14 +50,14 @@ let A = s.forwardRef(function(e, t) {
                 children: (0, i.jsx)(o.DUT, {
                     innerRef: t,
                     onMouseEnter: () => {
-                        b?.(), j(!0)
+                        S?.(), j(!0)
                     },
                     onMouseLeave: () => {
-                        S?.(), j(!1)
+                        b?.(), j(!1)
                     },
                     onMouseDown: T,
                     className: a()(h.oZ, E, {
-                        [h.wH]: m || v
+                        [h.wH]: m || y
                     }),
                     onClick: l,
                     "aria-label": R,
@@ -66,7 +66,7 @@ let A = s.forwardRef(function(e, t) {
                     focusProps: {
                         enabled: !1
                     },
-                    ...y,
+                    ...v,
                     children: null != p && (0, i.jsx)(p, {
                         className: h.sF,
                         color: "currentColor"

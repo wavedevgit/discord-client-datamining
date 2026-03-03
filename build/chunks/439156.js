@@ -31,12 +31,12 @@ function x(e) {
         className: I,
         onError: N
     } = e, {
-        onActivate: b,
-        isLoading: S,
+        onActivate: S,
+        isLoading: b,
         error: T
     } = (0, A.A)(t, n), {
-        isLoading: y,
-        error: v
+        isLoading: v,
+        error: y
     } = (0, u.A)(t, n), j = (0, p.A)(t, n), R = (0, h.Ay)(t, n), O = R.type !== m.b_.INACTIVE, {
         disabled: L,
         reason: M
@@ -55,8 +55,8 @@ function x(e) {
         })
     } : null;
     return s.useEffect(() => {
-        N?.(T ?? v)
-    }, [T, v, N]), (0, i.jsx)(r.un, {
+        N?.(T ?? y)
+    }, [T, y, N]), (0, i.jsx)(r.un, {
         body: D?.body ?? "",
         title: D?.title ?? void 0,
         shouldShow: null != D,
@@ -106,9 +106,9 @@ function x(e) {
                     "aria-label": _.intl.string(O ? g.default.TZsu1U : g.default.gSxlHf),
                     disabled: L,
                     onClick: e => {
-                        e.stopPropagation(), O ? j() : b()
+                        e.stopPropagation(), O ? j() : S()
                     },
-                    loading: S || y,
+                    loading: b || v,
                     fullWidth: E,
                     size: C ?? (l ? "md" : void 0),
                     text: e,

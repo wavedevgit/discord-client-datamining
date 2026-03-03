@@ -24,11 +24,11 @@ var i = n(627968),
     E = n(290863),
     I = n(849736),
     N = n(113783),
-    b = n(925931),
-    S = n(105530),
+    S = n(925931),
+    b = n(105530),
     T = n(699970),
-    y = n(345687),
-    v = n(818348),
+    v = n(345687),
+    y = n(818348),
     j = n(985018),
     R = n(684205);
 let O = s.memo(function(e) {
@@ -69,15 +69,15 @@ let O = s.memo(function(e) {
         o()(null != N, "Channel cannot be guildless");
         let {
             isMobile: T,
-            status: y
+            status: v
         } = (0, c.cf)([E.A], () => ({
             isMobile: E.A.isMobileOnline(l.user.id),
             status: E.A.getStatus(l.user.id, N)
-        })), v = (0, c.bG)([x.Ay], () => x.Ay.getMember(N, l.user.id)), O = (0, _.gn)(t.guild_id, v?.userId, v?.colorStrings ?? null), L = s.useMemo(() => ({
+        })), y = (0, c.bG)([x.Ay], () => x.Ay.getMember(N, l.user.id)), O = (0, _.gn)(t.guild_id, y?.userId, y?.colorStrings ?? null), L = s.useMemo(() => ({
             [N]: [l.user.id]
         }), [N, l.user.id]);
         (0, m.E)(L, "RequestToSpeakSidebar");
-        let M = l.rtsState === S.zF.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK,
+        let M = l.rtsState === b.zF.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK,
             D = e => {
                 (0, h.L3)(e, async () => {
                     let {
@@ -112,18 +112,18 @@ let O = s.memo(function(e) {
                         className: R.RB,
                         user: l.user,
                         isMobile: T,
-                        status: y
+                        status: v
                     }), (0, i.jsxs)("div", {
                         className: R.kH,
                         children: [(0, i.jsx)(u.gyj, {
                             name: l.userNick,
-                            colorString: v?.colorString ?? null,
+                            colorString: y?.colorString ?? null,
                             colorStrings: O,
                             className: R.F8
                         }), (0, i.jsx)(u.Text, {
                             variant: "text-xs/normal",
                             color: "text-default",
-                            children: (0, b.g)(l)
+                            children: (0, S.g)(l)
                         })]
                     })]
                 })
@@ -169,7 +169,7 @@ let O = s.memo(function(e) {
     D = s.memo(function() {
         return (0, i.jsxs)("div", {
             className: R.y7,
-            children: [(0, i.jsx)(y.A, {}), (0, i.jsx)(u.Text, {
+            children: [(0, i.jsx)(v.A, {}), (0, i.jsx)(u.Text, {
                 className: R.vo,
                 variant: "text-lg/semibold",
                 color: "text-strong",
@@ -188,7 +188,7 @@ function G(e) {
         channel: t,
         toggleRequestToSpeakSidebar: n,
         chatOpen: s
-    } = e, l = (0, N.J2)(t.id), r = [+!!(0, c.bG)([C.A], () => C.A.can(v.xB.MANAGE_CHANNELS, t) || C.A.can(v.xB.MANAGE_ROLES, t)), Math.max(1, l.length)];
+    } = e, l = (0, N.J2)(t.id), r = [+!!(0, c.bG)([C.A], () => C.A.can(y.xB.MANAGE_CHANNELS, t) || C.A.can(y.xB.MANAGE_ROLES, t)), Math.max(1, l.length)];
     return (0, i.jsxs)("div", {
         className: a()(R.kL, {
             [R.X_]: s

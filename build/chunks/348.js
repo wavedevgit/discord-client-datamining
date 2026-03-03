@@ -1,11 +1,11 @@
 /** chunk id: 348, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    b: () => s
+    b: () => i
 });
 var a = n(311907),
     l = n(218727);
 
-function s() {
+function i() {
     return (0, a.cf)([l.A], () => ({
         avatars: l.A.getAvatars(),
         loading: l.A.isFetching,

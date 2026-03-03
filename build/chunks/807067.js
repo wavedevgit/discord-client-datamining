@@ -24,11 +24,11 @@ var i = n(627968),
     E = n(246356),
     I = n(111162),
     N = n(954571),
-    b = n(795816),
-    S = n(887700),
+    S = n(795816),
+    b = n(887700),
     T = n(855446),
-    y = n(652215),
-    v = n(985018),
+    v = n(652215),
+    y = n(985018),
     j = n(176187);
 let R = r.K.APP_LAUNCHER_IN_VOICE_BANNER,
     O = `vc-activities-${(0,l.A)()}`;
@@ -63,7 +63,7 @@ function L(e) {
             return null == e ? null : e.type === o.L.APPLICATION_BANNER ? e : null
         }, [C?.application_directory_collection_items]),
         {
-            trackItemImpressionRef: b
+            trackItemImpressionRef: S
         } = (0, p.A)({
             applicationId: N?.application.id ?? "",
             applicationFlags: N?.application.flags,
@@ -78,7 +78,7 @@ function L(e) {
         containerWidth: 584
     })), (0, i.jsxs)(d.DUT, {
         className: j.V8,
-        innerRef: b,
+        innerRef: S,
         onClick: () => {
             h(), (0, m.A)({
                 context: {
@@ -116,7 +116,7 @@ let M = s.forwardRef(function(e, t) {
         guild_id: f
     } = l;
     s.useEffect(() => {
-        N.default.track(y.HAw.ACTIVITIES_CENTER_CONTROL_TRAY_BUTTON_HOVERED, {
+        N.default.track(v.HAw.ACTIVITIES_CENTER_CONTROL_TRAY_BUTTON_HOVERED, {
             channel_id: _,
             guild_id: f
         })
@@ -128,12 +128,12 @@ let M = s.forwardRef(function(e, t) {
             analyticsLocations: I,
             newestAnalyticsLocation: R
         } = (0, h.Ay)(u.A.ACTIVITIES_MINI_SHELF),
-        M = x === y.BRT.POPOUT,
-        D = (n = l.getGuildId(), (0, S.A)({
+        M = x === v.BRT.POPOUT,
+        D = (n = l.getGuildId(), (0, b.A)({
             guildId: n
         }).slice(0, 5));
     s.useEffect(() => {
-        let e = setTimeout(() => b.LK(), 1e3);
+        let e = setTimeout(() => S.LK(), 1e3);
         return () => clearTimeout(e)
     }, []);
     let G = s.useCallback(() => {
@@ -149,7 +149,7 @@ let M = s.forwardRef(function(e, t) {
             }), c(), A()
         }, [l, R, A, c, M]),
         U = s.useCallback(e => {
-            o(), N.default.track(y.HAw.ACTIVITIES_MINI_SHELF_HOVERED, {
+            o(), N.default.track(v.HAw.ACTIVITIES_MINI_SHELF_HOVERED, {
                 channel_id: l.id,
                 guild_id: l.getGuildId()
             })
@@ -166,7 +166,7 @@ let M = s.forwardRef(function(e, t) {
                     children: (0, i.jsx)(d.AC4, {
                         children: (0, i.jsx)(d.H, {
                             id: O,
-                            children: v.intl.string(v.t["2lnYtB"])
+                            children: y.intl.string(y.t["2lnYtB"])
                         })
                     })
                 }), (0, i.jsxs)("div", {
@@ -183,14 +183,14 @@ let M = s.forwardRef(function(e, t) {
                                 color: "var(--interactive-text-active)"
                             }), (0, i.jsx)(d.Text, {
                                 variant: "eyebrow",
-                                children: v.intl.string(v.t.f3Cz25)
+                                children: y.intl.string(y.t.f3Cz25)
                             })]
                         }), (0, i.jsxs)(d.DUT, {
                             className: j.hc,
                             onClick: G,
                             children: [(0, i.jsx)(d.Text, {
                                 variant: "eyebrow",
-                                children: v.intl.string(v.t["K8+z4S"])
+                                children: y.intl.string(y.t["K8+z4S"])
                             }), (0, i.jsx)(d._BQ, {
                                 size: "custom",
                                 width: 12,

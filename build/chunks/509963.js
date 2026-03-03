@@ -1,7 +1,7 @@
 /** chunk id: 509963, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => y,
+    A: () => v,
     v: () => T
 }), n(321073);
 var i = n(627968),
@@ -77,7 +77,7 @@ let N = {
         })
     }
 };
-class b extends s.PureComponent {
+class S extends s.PureComponent {
     renderProgressBody = (e, t) => {
         let {
             state: n,
@@ -123,7 +123,7 @@ class b extends s.PureComponent {
         return null != e ? e : E.intl.string(E.t.cw57ar)
     }
 }
-class S extends s.PureComponent {
+class b extends s.PureComponent {
     static defaultProps = {
         strokeSize: h.a3E.StrokeSizes.MEDIUM
     };
@@ -157,7 +157,7 @@ class S extends s.PureComponent {
             firstState: t,
             isPaused: n
         } = this.props;
-        return null == e || null == t ? E.intl.string(E.t.cw57ar) : (0, i.jsx)(b, {
+        return null == e || null == t ? E.intl.string(E.t.cw57ar) : (0, i.jsx)(S, {
             application: e,
             state: t,
             isPaused: n
@@ -206,7 +206,7 @@ function T(e, t) {
         return null != l && e.push(l), e
     }, [])
 }
-let y = o.Ay.connectStores([_.A, g.A, A.A], () => {
+let v = o.Ay.connectStores([_.A, g.A, A.A], () => {
     let e = _.A.activeItems,
         t = T(e, g.A),
         {
@@ -226,10 +226,10 @@ let y = o.Ay.connectStores([_.A, g.A, A.A], () => {
     } = e;
     return t ? (0, i.jsx)(d.F, {
         component: s.Fragment,
-        children: n.percent > 0 && n.percent < 100 ? (0, i.jsx)(S, {
+        children: n.percent > 0 && n.percent < 100 ? (0, i.jsx)(b, {
             ...n
         }) : null
-    }) : (0, i.jsx)(S, {
+    }) : (0, i.jsx)(b, {
         ...n
     })
 })

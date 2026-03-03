@@ -24,11 +24,11 @@ var i = n(627968),
     E = n(94484),
     I = n(849134),
     N = n(203548),
-    b = n(186111),
-    S = n(371794),
+    S = n(186111),
+    b = n(371794),
     T = n(998218),
-    y = n(652793),
-    v = n(652215),
+    v = n(652793),
+    y = n(652215),
     j = n(49999),
     R = n(985018),
     O = n(811094);
@@ -36,7 +36,7 @@ let L = s.memo(function(e) {
     let {
         guild: t,
         selected: l
-    } = e, L = s.useRef(null), M = s.useRef(null), D = (0, d.useHasAnyModalOpen)(), G = (0, r.bG)([b.A], () => b.A.hasLayers()), U = (0, p.xr)(e => e.fullScreenLayers.length > 0), P = (0, x.n)({
+    } = e, L = s.useRef(null), M = s.useRef(null), D = (0, d.useHasAnyModalOpen)(), G = (0, r.bG)([S.A], () => S.A.hasLayers()), U = (0, p.xr)(e => e.fullScreenLayers.length > 0), P = (0, x.n)({
         location: "GameShopChannelRow"
     });
     s.useEffect(() => {
@@ -50,15 +50,15 @@ let L = s.memo(function(e) {
         [K, W] = (0, A.RF)(F ? null : o.M.SLAYER_STOREFRONT_ORBS_REWARDS_ANNOUNCEMENT, 1),
         Y = K === o.M.SLAYER_STOREFRONT_ORBS_REWARDS_ANNOUNCEMENT,
         z = H || Y,
-        X = s.useMemo(() => H ? B : W, [H, B, W]);
+        q = s.useMemo(() => H ? B : W, [H, B, W]);
     s.useEffect(() => {
-        l && z && X(j.i.INDIRECT_ACTION)
-    }, [X, l, z]);
-    let q = s.useCallback(() => {
-            X(j.i.TAKE_ACTION);
+        l && z && q(j.i.INDIRECT_ACTION)
+    }, [q, l, z]);
+    let X = s.useCallback(() => {
+            q(j.i.TAKE_ACTION);
             let e = f.A.getStorefrontState(t.id)?.activePage ?? 0;
-            (0, m.pX)(v.BVt.CHANNELS_GAME_SHOP(t.id, e))
-        }, [t.id, X]),
+            (0, m.pX)(y.BVt.CHANNELS_GAME_SHOP(t.id, e))
+        }, [t.id, q]),
         J = s.useCallback(() => {
             (0, C.X)({
                 guildId: t.id,
@@ -66,8 +66,8 @@ let L = s.memo(function(e) {
             })
         }, [t.id, H]),
         Q = s.useCallback(() => {
-            X(j.i.USER_DISMISS)
-        }, [X]),
+            q(j.i.USER_DISMISS)
+        }, [q]),
         $ = s.useCallback(e => {
             null != t && (0, h.L3)(e, async () => {
                 let {
@@ -82,7 +82,7 @@ let L = s.memo(function(e) {
         Z = s.useCallback(() => {
             L.current?.onMouseEnter(null, 500)
         }, [L]),
-        ee = s.useCallback((e, n, s, r) => (0, i.jsx)(y.G, {
+        ee = s.useCallback((e, n, s, r) => (0, i.jsx)(v.G, {
             innerClassName: e,
             ref: M,
             id: `game-shop-${t.id}`,
@@ -100,7 +100,7 @@ let L = s.memo(function(e) {
             }),
             selected: l,
             onMouseDown: J,
-            onClick: q,
+            onClick: X,
             onContextMenu: $,
             trailing: (0, i.jsxs)(i.Fragment, {
                 children: [H && (0, i.jsx)(u.LpS, {
@@ -108,18 +108,18 @@ let L = s.memo(function(e) {
                     color: c.A.colors.BACKGROUND_BRAND.css
                 }), r]
             })
-        }), [t.id, l, J, q, $, H]),
+        }), [t.id, l, J, X, $, H]),
         et = s.useMemo(() => {
             if (null == k) return;
-            let e = null != k.assetId ? T.A.toURLSafe((0, S.YE)(k.applicationId, k.assetId, 128, "webp")) : void 0,
-                t = null != k.backgroundImageAssetId ? T.A.toURLSafe((0, S.YE)(k.applicationId, k.backgroundImageAssetId, 128, "webp")) : void 0;
+            let e = null != k.assetId ? T.A.toURLSafe((0, b.YE)(k.applicationId, k.assetId, 128, "webp")) : void 0,
+                t = null != k.backgroundImageAssetId ? T.A.toURLSafe((0, b.YE)(k.applicationId, k.backgroundImageAssetId, 128, "webp")) : void 0;
             if (null != e) return {
                 imageUrl: e,
                 backgroundImageUrl: t
             }
         }, [k]),
         en = s.useCallback(() => H ? (0, i.jsx)(I.A, {
-            onActionClick: q,
+            onActionClick: X,
             onActionMouseDown: J,
             onRender: Z,
             onRequestClose: Q,
@@ -130,13 +130,13 @@ let L = s.memo(function(e) {
                 applicationName: k.applicationName
             })
         }) : Y ? (0, i.jsx)(E.A, {
-            onActionClick: q,
+            onActionClick: X,
             onActionMouseDown: J,
             onRender: Z,
             onRequestClose: Q,
             targetElementRef: M,
             applicationName: R.intl.string(R.t.Uu8hke)
-        }) : null, [H, k, q, J, Z, Q, et, Y]);
+        }) : null, [H, k, X, J, Z, Q, et, Y]);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(N.A, {
             ref: L,

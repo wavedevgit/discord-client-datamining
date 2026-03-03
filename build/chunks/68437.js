@@ -1,7 +1,7 @@
 /** chunk id: 68437, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => v
+    A: () => y
 });
 var i = n(627968);
 n(64700);
@@ -25,16 +25,16 @@ var s = n(311907),
     E = n(246084),
     I = n(436133),
     N = n(884415),
-    b = n(775946),
-    S = n(652215),
+    S = n(775946),
+    b = n(652215),
     T = n(790782),
-    y = n(985018);
+    v = n(985018);
 
-function v(e) {
+function y(e) {
     let {
         channel: t,
         isChannelSelected: n,
-        isChannelCollapsed: v,
+        isChannelCollapsed: y,
         voiceStates: j,
         enableConnectedUserLimit: R,
         enableActivities: O,
@@ -43,13 +43,13 @@ function v(e) {
         isNewChannel: D,
         muted: G,
         resolvedUnreadSetting: U
-    } = e, P = (0, s.bG)([g.Ay], () => g.Ay.getMentionCount(t.id)), w = (0, s.bG)([g.Ay], () => g.Ay.getIsMentionLowImportance(t.id)), k = (0, r.Ay)(t), V = (0, s.bG)([m.A], () => !m.A.can(S.xBc.CONNECT, t)), B = (0, o.H)(t), H = (0, s.bG)([_.A], () => _.A.hasVideo(t.id)), F = (0, h.qT)(t.id) && t.isGuildStageVoice(), K = (0, E.Ay)({
+    } = e, P = (0, s.bG)([g.Ay], () => g.Ay.getMentionCount(t.id)), w = (0, s.bG)([g.Ay], () => g.Ay.getIsMentionLowImportance(t.id)), k = (0, r.Ay)(t), V = (0, s.bG)([m.A], () => !m.A.can(b.xBc.CONNECT, t)), B = (0, o.H)(t), H = (0, s.bG)([_.A], () => _.A.hasVideo(t.id)), F = (0, h.qT)(t.id) && t.isGuildStageVoice(), K = (0, E.Ay)({
         channel: t,
         locked: V,
         video: (H || F) && null == B,
         selected: n
-    }), W = (0, s.bG)([A.A], () => A.A.getNewThreadCount(t.guild_id, t.id)), Y = (0, d.ed)(t.guild_id, t.id), z = (0, s.bG)([p.A], () => p.A.getGuild(t.guild_id)?.features.has(S.GuildFeatures.COMMUNITY) ?? !1);
-    if ((0, C.A)(P)) return (0, i.jsx)(b.A, {
+    }), W = (0, s.bG)([A.A], () => A.A.getNewThreadCount(t.guild_id, t.id)), Y = (0, d.ed)(t.guild_id, t.id), z = (0, s.bG)([p.A], () => p.A.getGuild(t.guild_id)?.features.has(b.GuildFeatures.COMMUNITY) ?? !1);
+    if ((0, C.A)(P)) return (0, i.jsx)(S.A, {
         mentionsCount: P,
         isMentionLowImportance: w
     });
@@ -57,13 +57,13 @@ function v(e) {
         locked: M
     });
     if (D) return (0, i.jsx)(a.LpS, {
-        text: y.intl.string(y.t.y2b7CA),
+        text: v.intl.string(v.t.y2b7CA),
         color: l.A.colors.BADGE_BACKGROUND_BRAND.css
     });
     if (!G && U === T.e.ALL_MESSAGES && t.isForumLikeChannel() && null != W && W > 0) return (0, i.jsx)(a.Text, {
         variant: "text-xs/semibold",
         color: "text-brand",
-        children: y.intl.format(y.t.GkAbqY, {
+        children: v.intl.format(v.t.GkAbqY, {
             count: (0, a.Gub)(W)
         })
     });
@@ -72,13 +72,13 @@ function v(e) {
         color: "text-muted",
         children: (0, a.Gub)(Y)
     });
-    let X = j?.length ?? 0;
+    let q = j?.length ?? 0;
     return null != R && R && K ? (0, i.jsx)(N.A, {
-        userCount: X,
+        userCount: q,
         video: H || F,
         channel: t
-    }) : v && (0, f.t)(j) && z ? (0, i.jsx)(a.LpS, {
-        text: y.intl.string(y.t.dI3q4h),
+    }) : y && (0, f.t)(j) && z ? (0, i.jsx)(a.LpS, {
+        text: v.intl.string(v.t.dI3q4h),
         color: l.A.unsafe_rawColors.RED_400.css
     }) : null != B ? (0, i.jsx)(c.z, {
         textColor: "text-feedback-positive",

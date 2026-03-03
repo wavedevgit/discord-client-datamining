@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
     u5: () => N,
-    zd: () => b
+    zd: () => S
 });
 var i, s = n(627968),
     l = n(64700),
@@ -165,7 +165,7 @@ function I(e) {
 }
 var N = ((i = {})[i.ActivityNux = 0] = "ActivityNux", i[i.StatusNux = 1] = "StatusNux", i[i.ActivityAndStatusNux = 2] = "ActivityAndStatusNux", i[i.Activity = 3] = "Activity", i[i.Status = 4] = "Status", i[i.ActivityAndStatus = 5] = "ActivityAndStatus", i);
 
-function b(e) {
+function S(e) {
     let {
         showPopout: t,
         popoutState: n,
@@ -263,7 +263,7 @@ function b(e) {
         })
     }
     let {
-        children: b
+        children: S
     } = x;
     return (0, s.jsx)(o.YNO, {
         targetElementRef: f,
@@ -275,7 +275,7 @@ function b(e) {
             let {
                 closePopout: t
             } = e;
-            return (0, s.jsx)(b, {
+            return (0, s.jsx)(S, {
                 closePopout: t
             })
         },

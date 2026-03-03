@@ -29,11 +29,11 @@ let E = (0, a.A)(e => {
         participantsVersion: E,
         layout: I,
         onSelectParticipant: N,
-        onContextMenuParticipant: b,
-        onFullscreenParticipant: S,
+        onContextMenuParticipant: S,
+        onFullscreenParticipant: b,
         channel: T,
-        hasConnectPermission: y,
-        className: v,
+        hasConnectPermission: v,
+        className: y,
         inCall: j,
         showParticipants: R = !0,
         width: O,
@@ -55,7 +55,7 @@ let E = (0, a.A)(e => {
     if (T?.isGuildVocalOrThread() && !j) return (0, i.jsx)(A.A, {
         channel: T,
         participants: t,
-        hasConnectPermission: y
+        hasConnectPermission: v
     });
     if (n = j ? n : t, I === f.DUB.HAVEN) return (0, i.jsx)(u.A, {
         participants: n,
@@ -67,7 +67,7 @@ let E = (0, a.A)(e => {
         width: O,
         className: C.Er,
         participants: t,
-        onContextMenu: b
+        onContextMenu: S
     });
     if (null == a) {
         if (0 === n.length) {
@@ -87,22 +87,22 @@ let E = (0, a.A)(e => {
                 participants: w,
                 totalNumberOfParticipants: t.length,
                 onClick: N,
-                onDoubleClick: S,
-                onContextMenu: b,
+                onDoubleClick: b,
+                onContextMenu: S,
                 inCall: j,
                 popoutType: G
             })
         })
     }
     return (0, i.jsx)(g.A, {
-        onFullscreenParticipant: S,
-        onContextMenuParticipant: b,
+        onFullscreenParticipant: b,
+        onContextMenuParticipant: S,
         onSelectParticipant: N,
         selectedParticipant: a,
         filteredParticipants: w,
         participants: t,
         popoutType: G,
-        className: v,
+        className: y,
         idle: M,
         height: L,
         width: O,

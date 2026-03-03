@@ -24,11 +24,11 @@ var i = n(627968),
     E = n(734057),
     I = n(696451),
     N = n(309010),
-    b = n(287809),
-    S = n(203982),
+    S = n(287809),
+    b = n(203982),
     T = n(427262),
-    y = n(795816),
-    v = n(933958),
+    v = n(795816),
+    y = n(933958),
     j = n(685399),
     R = n(216418),
     O = n(969151),
@@ -54,9 +54,9 @@ function W(e) {
         maxHeight: t,
         connectedLocation: n,
         renderExternalHeader: l
-    } = e, W = (0, L.A)(), Y = (0, r.yK)([v.Ay], () => v.Ay.getEmbeddedActivitiesForLocation(n), [n]), z = (0, O.H)(n), X = (0, r.bG)([E.A], () => E.A.getChannel(z)), q = (0, j.IQ)(Y), J = (0, j.Rz)(q), Q = s.useCallback(() => {
-        (0, y.gk)(k.Gd.PIP)
-    }, []), $ = s.useRef(null), Z = (0, r.bG)([v.Ay], () => v.Ay.getFocusedLayout()), ee = Z !== k.E8.NO_CHAT, [et, en] = s.useState(_.Ay.activityPanelHeight ?? t ?? null), ei = s.useCallback(e => {
+    } = e, W = (0, L.A)(), Y = (0, r.yK)([y.Ay], () => y.Ay.getEmbeddedActivitiesForLocation(n), [n]), z = (0, O.H)(n), q = (0, r.bG)([E.A], () => E.A.getChannel(z)), X = (0, j.IQ)(Y), J = (0, j.Rz)(X), Q = s.useCallback(() => {
+        (0, v.gk)(k.Gd.PIP)
+    }, []), $ = s.useRef(null), Z = (0, r.bG)([y.Ay], () => y.Ay.getFocusedLayout()), ee = Z !== k.E8.NO_CHAT, [et, en] = s.useState(_.Ay.activityPanelHeight ?? t ?? null), ei = s.useCallback(e => {
         u.Ay.updatedUnsyncedSettings({
             activityPanelHeight: e
         })
@@ -85,7 +85,7 @@ function W(e) {
     }
     let eu = J.get(W?.id ?? ""),
         eh = (0, r.bG)([N.A], () => N.A.getChannelId()),
-        eA = (0, r.yK)([I.Ay], () => null == X ? [] : Array.from(eu?.embeddedActivity.userIds ?? []).map(e => I.Ay.getMember(X.guild_id, e)), [eu, X]),
+        eA = (0, r.yK)([I.Ay], () => null == q ? [] : Array.from(eu?.embeddedActivity.userIds ?? []).map(e => I.Ay.getMember(q.guild_id, e)), [eu, q]),
         ep = s.useMemo(() => {
             let e = new Map;
             return eA.forEach(t => {
@@ -119,7 +119,7 @@ function W(e) {
         eg = (0, P.G)();
     if ((0, g.ns)(W?.id), null == W) return null;
     let e_ = [];
-    null != eu && (e_ = Array.from(eu.embeddedActivity.userIds).map(e => b.default.getUser(e)).filter(e => null != e && void 0 !== e));
+    null != eu && (e_ = Array.from(eu.embeddedActivity.userIds).map(e => S.default.getUser(e)).filter(e => null != e && void 0 !== e));
     let ef = e => {
         if (null == e || void 0 === e || e === D.mt) return null;
         let t = ep.get(e.id),
@@ -129,7 +129,7 @@ function W(e) {
             text: n,
             position: "bottom",
             children: (0, i.jsx)("img", {
-                src: e.getAvatarURL(X?.guild_id, F),
+                src: e.getAvatarURL(q?.guild_id, F),
                 alt: n,
                 className: H.my
             }, e.id)
@@ -201,7 +201,7 @@ function W(e) {
                         onOpenPopout: () => {
                             (0, p.zV)(V.HAw.ACTIVITY_POPOUT_POP_OUT_BUTTON_CLICKED), (0, G.A)({
                                 onConfirm: async () => {
-                                    W?.id != null && null != z && await (0, y.od)(W.id, z), (0, y.jp)()
+                                    W?.id != null && null != z && await (0, v.od)(W.id, z), (0, v.jp)()
                                 }
                             })
                         },
@@ -213,12 +213,12 @@ function W(e) {
                 maxHeight: t,
                 resizableNode: $,
                 onResize: e => {
-                    S._.dispatch(V.jej.MANUAL_IFRAME_RESIZING, {
+                    b._.dispatch(V.jej.MANUAL_IFRAME_RESIZING, {
                         resizing: !0
                     }), en(e)
                 },
                 onResizeEnd: e => {
-                    S._.dispatch(V.jej.MANUAL_IFRAME_RESIZING, {
+                    b._.dispatch(V.jej.MANUAL_IFRAME_RESIZING, {
                         resizing: !1
                     }), ei(e)
                 }

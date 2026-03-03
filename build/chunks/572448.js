@@ -25,11 +25,11 @@ var s = n(503698),
     E = n(734057),
     I = n(71393),
     N = n(290863),
-    b = n(222823),
-    S = n(287809),
+    S = n(222823),
+    b = n(287809),
     T = n(147925),
-    y = n(652215),
-    v = n(985018),
+    v = n(652215),
+    y = n(985018),
     j = n(386590);
 let R = {
     top: 8,
@@ -45,13 +45,13 @@ function O(e) {
         getNumUnreadChannels: s
     } = e;
     return (0, i.jsx)(c.m_, {
-        text: v.intl.string(v.t.iTcuma),
+        text: y.intl.string(y.t.iTcuma),
         children: (0, i.jsx)(d.DUT, {
             className: l()(j.cS, {
                 [j.yZ]: t?.collapsed
             }),
             onClick: function() {
-                null != t && null != n && (n(t), (0, p.zV)(y.HAw.INBOX_CHANNEL_COLLAPSED, {
+                null != t && null != n && (n(t), (0, p.zV)(v.HAw.INBOX_CHANNEL_COLLAPSED, {
                     channel_id: t.channelId,
                     guild_id: t.guildId,
                     num_unread_channels_remaining: s?.() ?? 0,
@@ -123,7 +123,7 @@ function D(e) {
     let {
         channel: t,
         gotoChannel: n
-    } = e, s = (0, r.bG)([S.default], () => t.isDM() ? S.default.getUser(t.getRecipientId()) : null), l = null == s ? (0, m.Y)(t) : s.getAvatarURL(void 0, 40);
+    } = e, s = (0, r.bG)([b.default], () => t.isDM() ? b.default.getUser(t.getRecipientId()) : null), l = null == s ? (0, m.Y)(t) : s.getAvatarURL(void 0, 40);
     return (0, i.jsx)(d.DUT, {
         onClick: n,
         tabIndex: -1,
@@ -157,7 +157,7 @@ function U(e) {
         channel: t,
         gotoChannel: n,
         mentionCount: s
-    } = e, a = (0, r.bG)([I.A], () => I.A.getGuild(t.guild_id)), c = (0, r.bG)([E.A], () => E.A.getChannel(t.parent_id)), u = (0, r.bG)([b.Ay], () => b.Ay.getIsMentionLowImportance(t.id)), h = (0, _.gU)(t, a), A = (0, g.Ay)(t, !1), p = null == c ? a?.name : `${a?.name} › ${c.name}`, m = t.isMultiUserDM() ? v.intl.formatToPlainString(v.t.CxSA5N, {
+    } = e, a = (0, r.bG)([I.A], () => I.A.getGuild(t.guild_id)), c = (0, r.bG)([E.A], () => E.A.getChannel(t.parent_id)), u = (0, r.bG)([S.Ay], () => S.Ay.getIsMentionLowImportance(t.id)), h = (0, _.gU)(t, a), A = (0, g.Ay)(t, !1), p = null == c ? a?.name : `${a?.name} › ${c.name}`, m = t.isMultiUserDM() ? y.intl.formatToPlainString(y.t.CxSA5N, {
         members: t.recipients.length + 1
     }) : t.isPrivate() ? (0, i.jsx)(P, {
         channel: t
@@ -208,8 +208,8 @@ function P(e) {
         status: s,
         activities: l,
         applicationStream: a
-    } = (0, r.cf)([S.default, N.A, C.A], () => {
-        let e = S.default.getUser(t.getRecipientId());
+    } = (0, r.cf)([b.default, N.A, C.A], () => {
+        let e = b.default.getUser(t.getRecipientId());
         return {
             user: e,
             status: null != e ? N.A.getStatus(e.id) : null,

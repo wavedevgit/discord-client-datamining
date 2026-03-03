@@ -16,8 +16,8 @@ var i = n(627968),
     m = n(290863),
     h = n(977997),
     g = n(954571),
-    f = n(279250),
-    E = n(834757),
+    E = n(279250),
+    f = n(834757),
     C = n(727353),
     S = n(652215),
     T = n(945354);
@@ -80,10 +80,10 @@ function y(t) {
         user: e,
         channel: n,
         ...r
-    } = t, [a, g] = (0, s.yK)([h.A, A.A, p.A, d.default], () => (0, f.eo)(n, h.A, A.A, p.A, d.default)), C = (0, s.bG)([u.A], () => u.A.getStreamForUser(e.id, n.getGuildId())), S = (0, s.bG)([u.A], () => u.A.getActiveStreamForApplicationStream(C)), T = (0, s.bG)([c.default], () => c.default.getId()), y = (0, E.AO)(C), x = (0, s.bG)([m.A], () => (0, E.nr)(C, m.A)), N = l.useMemo(() => ({
+    } = t, [a, g] = (0, s.yK)([h.A, A.A, p.A, d.default], () => (0, E.eo)(n, h.A, A.A, p.A, d.default)), C = (0, s.bG)([u.A], () => u.A.getStreamForUser(e.id, n.getGuildId())), S = (0, s.bG)([u.A], () => u.A.getActiveStreamForApplicationStream(C)), T = (0, s.bG)([c.default], () => c.default.getId()), y = (0, f.AO)(C), N = (0, s.bG)([m.A], () => (0, f.nr)(C, m.A)), x = l.useMemo(() => ({
         [n.guild_id]: [e.id]
     }), [n.guild_id, e.id]);
-    return (0, o.E)(N, "StreamPreviewPopout"), (0, i.jsx)(v, {
+    return (0, o.E)(x, "StreamPreviewPopout"), (0, i.jsx)(v, {
         ...r,
         canWatch: a,
         unavailableReason: g,
@@ -92,7 +92,7 @@ function y(t) {
         stream: C,
         activeStream: S,
         currentUserId: T,
-        activity: x,
+        activity: N,
         channel: n
     })
 }

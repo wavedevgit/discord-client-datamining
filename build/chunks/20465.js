@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
     A: () => R,
-    R: () => v
+    R: () => y
 });
 var i = n(627968),
     s = n(64700),
@@ -25,11 +25,11 @@ var i = n(627968),
     E = n(994500),
     I = n(486020),
     N = n(927813),
-    b = n(403362),
-    S = n(652215),
+    S = n(403362),
+    b = n(652215),
     T = n(838541),
-    y = n(279633);
-let v = 10 * N.A.Millis.SECOND;
+    v = n(279633);
+let y = 10 * N.A.Millis.SECOND;
 
 function j(e) {
     let {
@@ -46,25 +46,25 @@ function j(e) {
             messageId: t.id,
             flash: !0
         }))
-    }, [t.channel_id, t.id]), b = null != t.content && "" !== t.content ? (0, m.Ay)(t, {
+    }, [t.channel_id, t.id]), S = null != t.content && "" !== t.content ? (0, m.Ay)(t, {
         isInteracting: u
     }).content : null, {
-        contentPlaceholder: S,
-        renderedContent: v,
+        contentPlaceholder: b,
+        renderedContent: y,
         trailingIcon: j,
         leadingIcon: R
-    } = (0, _.o)(t, b, n, l, y.BK, {
-        trailingIconClass: y.sl,
-        leadingIconClass: y.aG,
+    } = (0, _.o)(t, S, n, l, v.BK, {
+        trailingIconClass: v.sl,
+        leadingIconClass: v.aG,
         iconSize: T.eJ
     }), O = (0, f.o6)(t), L = O.length > 0 ? O.map(e => (0, i.jsx)(x.A, {
-        className: y.yI,
+        className: v.yI,
         size: 128,
         sticker: e,
         isInteracting: u
     }, e.id)) : null;
     return (0, i.jsxs)(d.DUT, {
-        className: y.oR,
+        className: v.oR,
         onMouseEnter: () => {
             C(!0)
         },
@@ -73,11 +73,11 @@ function j(e) {
         },
         onClick: N,
         children: [(0, i.jsxs)("div", {
-            className: a()(y.kn, {
-                [y.mK]: t.mentioned
+            className: a()(v.kn, {
+                [v.mK]: t.mentioned
             }),
-            children: [null != L ? null : R, v ?? L ?? (0, i.jsx)("span", {
-                children: S
+            children: [null != L ? null : R, y ?? L ?? (0, i.jsx)("span", {
+                children: b
             }), null != L ? null : j]
         }), (0, i.jsx)("img", {
             alt: "",
@@ -86,7 +86,7 @@ function j(e) {
                 userId: t.author.id,
                 avatar: r.guildMemberAvatar
             }) : t.author.getAvatarURL(o, 32),
-            className: y.my
+            className: v.my
         })]
     })
 }
@@ -114,7 +114,7 @@ function R(e) {
                     message: i,
                     optimistic: s
                 } = e;
-                n !== t || i.type === S.lAJ.STAGE_START || i.type === S.lAJ.STAGE_END || i.type === S.lAJ.STAGE_TOPIC || i.type === S.lAJ.STAGE_SPEAKER || i.type === S.lAJ.STAGE_RAISE_HAND || s || (clearTimeout(A.current), A.current = setTimeout(p, l), r(e => [...e, i.id]))
+                n !== t || i.type === b.lAJ.STAGE_START || i.type === b.lAJ.STAGE_END || i.type === b.lAJ.STAGE_TOPIC || i.type === b.lAJ.STAGE_SPEAKER || i.type === b.lAJ.STAGE_RAISE_HAND || s || (clearTimeout(A.current), A.current = setTimeout(p, l), r(e => [...e, i.id]))
             }
             return u.h.subscribe("MESSAGE_CREATE", e), () => {
                 u.h.unsubscribe("MESSAGE_CREATE", e)
@@ -130,13 +130,13 @@ function R(e) {
         let m = h.current ?? a;
         return {
             toastsHidden: o,
-            toastMessages: (0, c.yK)([C.A], () => m.map(e => C.A.getMessage(t, e)), [t, m]).filter(b.Vq)
+            toastMessages: (0, c.yK)([C.A], () => m.map(e => C.A.getMessage(t, e)), [t, m]).filter(S.Vq)
         }
     }({
         channelId: t,
         isFrozen: l,
         count: 3,
-        lingerMs: v
+        lingerMs: y
     }), m = s.useRef({}), [g, _] = s.useState({}), f = s.useCallback((e, t) => {
         null == t ? delete m.current[e] : m.current[e] = t
     }, []), x = s.useRef(g);
@@ -190,7 +190,7 @@ function R(e) {
             }
         });
     return (0, i.jsx)(d.NPJ, {
-        theme: S.NJ8.DARK,
+        theme: b.NJ8.DARK,
         children: e => (0, i.jsx)("div", {
             className: a()(n, e),
             onMouseEnter: () => {
@@ -201,7 +201,7 @@ function R(e) {
             },
             children: I((e, t) => (0, i.jsx)(o.animated.div, {
                 ref: e => f(t.message.id, null != e ? e.offsetHeight : null),
-                className: y.T_,
+                className: v.T_,
                 style: e,
                 children: (0, i.jsx)(j, {
                     message: t.message

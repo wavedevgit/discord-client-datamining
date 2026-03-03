@@ -10,8 +10,8 @@ var i = n(627968),
     l = n(688810),
     A = n(465794),
     c = n(721127),
-    d = n(287809),
-    _ = n(954571),
+    _ = n(287809),
+    d = n(954571),
     u = n(927578),
     L = n(652215),
     m = n(339984),
@@ -23,16 +23,16 @@ function R(t) {
     let {
         analyticsSection: e,
         type: n
-    } = t, R = (0, o.bG)([d.default], () => d.default.getCurrentUser()), C = u.Ay.canUseAnimatedAvatar(R), f = u.Ay.canUsePremiumProfileCustomization(R), x = n === m.HL.BANNER && f || n === m.HL.AVATAR && C, {
-        sourceAnalyticsLocations: p
+    } = t, R = (0, o.bG)([_.default], () => _.default.getCurrentUser()), C = u.Ay.canUseAnimatedAvatar(R), f = u.Ay.canUsePremiumProfileCustomization(R), x = n === m.HL.BANNER && f || n === m.HL.AVATAR && C, {
+        sourceAnalyticsLocations: v
     } = (0, l.Ay)(s.A.PREMIUM_PREVIEW_UPSELL_HEADER);
     if (a.useEffect(() => {
-            x || _.default.track(L.HAw.PREMIUM_UPSELL_VIEWED, {
+            x || d.default.track(L.HAw.PREMIUM_UPSELL_VIEWED, {
                 type: e,
-                location_stack: p
+                location_stack: v
             })
-        }, [x, e, p]), x) return null;
-    let v = (0, i.jsx)(A.A, {
+        }, [x, e, v]), x) return null;
+    let p = (0, i.jsx)(A.A, {
         className: N.__invalid_getNitroLink,
         size: r.$n.Sizes.SMALL,
         look: r.$n.Looks.LINK,
@@ -52,6 +52,6 @@ function R(t) {
         reducedRightPadding: !0,
         className: N.C,
         text: E.intl.format(E.t.Og803x, {}),
-        button: v
+        button: p
     })
 }

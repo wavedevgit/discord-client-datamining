@@ -24,11 +24,11 @@ var i = n(627968),
     E = n(383233),
     I = n(734057),
     N = n(287809),
-    b = n(403362),
-    S = n(572448),
+    S = n(403362),
+    b = n(572448),
     T = n(963702),
-    y = n(652215),
-    v = n(985018),
+    v = n(652215),
+    y = n(985018),
     j = n(693853);
 let R = {
     offset: {
@@ -53,8 +53,8 @@ function L() {
         className: j.k$
     }) : 0 === t.length ? (0, i.jsx)(T.A, {
         Icon: h.O4,
-        header: v.intl.string(v.t.aJQZfZ),
-        tip: v.intl.string(v.t.rCN4pN)
+        header: y.intl.string(y.t.aJQZfZ),
+        tip: y.intl.string(y.t.rCN4pN)
     }) : (0, i.jsx)(c.hD, {
         navigator: a,
         children: (0, i.jsx)(c.PR, {
@@ -95,9 +95,9 @@ function M(e) {
             }] = e;
             return (0, i.jsxs)("div", {
                 className: j.WG,
-                children: [(0, i.jsx)(S.A, {
+                children: [(0, i.jsx)(b.A, {
                     channel: n,
-                    gotoChannel: () => (0, m.pX)(y.BVt.CHANNEL(n.getGuildId(), n.id)),
+                    gotoChannel: () => (0, m.pX)(v.BVt.CHANNEL(n.getGuildId(), n.id)),
                     children: null
                 }), s.map(e => {
                     let t = l.has(e.scheduledMessageId);
@@ -129,30 +129,30 @@ let D = s.memo(function(e) {
         switch (e) {
             case f.A.SCHEDULED:
                 return {
-                    isError: !1, stateMessage: v.intl.string(v.t.Fn6Odn)
+                    isError: !1, stateMessage: y.intl.string(y.t.Fn6Odn)
                 };
             case f.A.ERROR_CHANNEL_NOT_FOUND:
                 return {
-                    isError: !0, stateMessage: v.intl.string(v.t.v5O2dK)
+                    isError: !0, stateMessage: y.intl.string(y.t.v5O2dK)
                 };
             case f.A.ERROR_USER_NOT_FOUND:
                 return {
-                    isError: !0, stateMessage: v.intl.string(v.t.j8uIfG)
+                    isError: !0, stateMessage: y.intl.string(y.t.j8uIfG)
                 };
             case f.A.ERROR_USER_CANNOT_USE_SCHEDULED_MESSAGES:
                 return {
-                    isError: !0, stateMessage: v.intl.string(v.t["w6zHX/"])
+                    isError: !0, stateMessage: y.intl.string(y.t["w6zHX/"])
                 };
             case f.A.ERROR_SEND_FAILED:
                 return {
-                    isError: !0, stateMessage: v.intl.string(v.t.pflV7z)
+                    isError: !0, stateMessage: y.intl.string(y.t.pflV7z)
                 };
             case f.A.ERROR_SCHEDULED_MESSAGES_DISABLED:
                 return {
-                    isError: !0, stateMessage: v.intl.string(v.t.j8uIfG)
+                    isError: !0, stateMessage: y.intl.string(y.t.j8uIfG)
                 };
             default:
-                (0, b.xb)(e)
+                (0, S.xb)(e)
         }
     }(t.state), A = s.useCallback(() => {
         (0, g.mk)(t.scheduledMessageId).then(() => {
@@ -193,11 +193,11 @@ let D = s.memo(function(e) {
                         icon: h.O4,
                         onClick: m,
                         variant: "icon-only",
-                        "aria-label": v.intl.string(v.t.SBcdAN)
+                        "aria-label": y.intl.string(y.t.SBcdAN)
                     }), (0, i.jsx)(d.K0, {
                         icon: h.aXh,
                         onClick: A,
-                        "aria-label": v.intl.string(v.t.O3sL8F),
+                        "aria-label": y.intl.string(y.t.O3sL8F),
                         variant: "icon-only"
                     })]
                 })]

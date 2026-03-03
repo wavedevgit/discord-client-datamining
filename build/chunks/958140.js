@@ -24,11 +24,11 @@ var i = n(627968),
     E = n(886019),
     I = n(806246),
     N = n(60821),
-    b = n(391786),
-    S = n(50122),
+    S = n(391786),
+    b = n(50122),
     T = n(132970),
-    y = n(129104),
-    v = n(559405),
+    v = n(129104),
+    y = n(559405),
     j = n(272997),
     R = n(266069);
 n(708455);
@@ -45,13 +45,13 @@ function P(e) {
         setIsHangStatusInputFocused: n,
         setIsEmojiPickerOpen: l,
         setPopoutRef: r
-    } = e, P = s.useRef(null), w = (0, d.bG)([C.A], () => C.A.getCustomHangStatus()), k = (0, S.A)(), V = (0, d.bG)([C.A], () => C.A.getFavoritedStatuses()), {
+    } = e, P = s.useRef(null), w = (0, d.bG)([C.A], () => C.A.getCustomHangStatus()), k = (0, b.A)(), V = (0, d.bG)([C.A], () => C.A.getFavoritedStatuses()), {
         defaultStatusVariant: B,
         allowPermanentClear: H
     } = (0, x.$j)({
         guildId: t.guild_id,
         location: "HangStatusPicker"
-    }), F = (0, E.hy)(B), K = s.useRef(null), [W, Y] = s.useState(w?.status ?? ""), [z, X] = s.useState(w?.emoji ?? null), [q, J] = s.useState(!1), Q = (0, d.bG)([C.A], () => C.A.getCurrentHangStatus()), $ = F[Q], Z = V.length > 0, ee = null == W || "" === W.trim(), et = (0, b.A)(t), en = W.trim().length > 0 && W.trim() !== w?.status?.trim() || null != z && !o()(z, w?.emoji), [ei, es] = s.useState(!1), el = (0, d.bG)([C.A], () => C.A.getFavoritedStatuses().length >= C.x), ea = W.length > 0 || null != z, [er, eo] = (0, m.kn)([u.M.HANG_STATUS_POPOVER_NUX]);
+    }), F = (0, E.hy)(B), K = s.useRef(null), [W, Y] = s.useState(w?.status ?? ""), [z, q] = s.useState(w?.emoji ?? null), [X, J] = s.useState(!1), Q = (0, d.bG)([C.A], () => C.A.getCurrentHangStatus()), $ = F[Q], Z = V.length > 0, ee = null == W || "" === W.trim(), et = (0, S.A)(t), en = W.trim().length > 0 && W.trim() !== w?.status?.trim() || null != z && !o()(z, w?.emoji), [ei, es] = s.useState(!1), el = (0, d.bG)([C.A], () => C.A.getFavoritedStatuses().length >= C.x), ea = W.length > 0 || null != z, [er, eo] = (0, m.kn)([u.M.HANG_STATUS_POPOVER_NUX]);
     s.useEffect(() => {
         _.default.track(O.HAw.HANG_STATUS_PICKER_OPENED, {
             ...(0, I.A)(t.id),
@@ -61,22 +61,22 @@ function P(e) {
     }, []), s.useEffect(() => {
         W.trim().length > 0 && ei && es(!1), null == z && ei && es(!1)
     }, [W, z, ei]), s.useEffect(() => {
-        q || W !== (w?.status ?? "") && "" !== W.trim() ? n(!0) : n(!1)
-    }, [W, w?.status, z, w?.emoji, n, q]), s.useEffect(() => {
+        X || W !== (w?.status ?? "") && "" !== W.trim() ? n(!0) : n(!1)
+    }, [W, w?.status, z, w?.emoji, n, X]), s.useEffect(() => {
         r?.(K?.current)
     }, [K, r]);
     let ec = s.useCallback(e => {
-            e !== Q && ((0, f.Iq)(e, !0), null != z && X(null), "" !== W.trim() && Y(""))
+            e !== Q && ((0, f.Iq)(e, !0), null != z && q(null), "" !== W.trim() && Y(""))
         }, [Q, z, W]),
         ed = s.useCallback(() => {
-            X(null), Y(""), J(!1)
+            q(null), Y(""), J(!1)
         }, []),
         eu = s.useCallback(e => {
             let {
                 emoji: t,
                 status: n
             } = e;
-            o()(t, w?.emoji) && n === w?.status || ((0, f.hS)(e.status, e.emoji, !0), X(e.emoji), Y(e.status))
+            o()(t, w?.emoji) && n === w?.status || ((0, f.hS)(e.status, e.emoji, !0), q(e.emoji), Y(e.status))
         }, [w?.emoji, w?.status]),
         eh = s.useCallback(e => {
             e?.preventDefault?.(), null != z && 0 === W.trim().length && es(!0), ee || (eu({
@@ -101,7 +101,7 @@ function P(e) {
                         name: e?.optionallyDiverseSequence ?? "",
                         animated: !1
                     }, 1 === et.length)) break; while (null == e || e?.name == null || o()(z, n));
-            null != n && e?.name != null && (X(n), Y(e.name), J(!0), P.current?.focus(), _.default.track(O.HAw.HANG_STATUS_RANDOMIZER_CLICKED, (0, I.A)(t.id)))
+            null != n && e?.name != null && (q(n), Y(e.name), J(!0), P.current?.focus(), _.default.track(O.HAw.HANG_STATUS_RANDOMIZER_CLICKED, (0, I.A)(t.id)))
         }, [et, z, t.id]),
         ep = s.useCallback((e, n) => {
             let i = (0, N.A)(n);
@@ -120,7 +120,7 @@ function P(e) {
             let s = (0, N.A)(e),
                 l = s ? F[e] : null,
                 a = C.A.isFavorited(e),
-                r = s ? (0, i.jsx)(v.A, {
+                r = s ? (0, i.jsx)(y.A, {
                     userId: g.default.getId(),
                     size: 20,
                     hangStatusActivity: {
@@ -145,7 +145,7 @@ function P(e) {
             }, `${n}-${t}`)
         }, [B, eu, ec, F, ep]),
         ef = s.useCallback(() => {
-            (0, f.eK)(!0, H), X(null), Y(""), J(!1)
+            (0, f.eK)(!0, H), q(null), Y(""), J(!1)
         }, [H]),
         ex = s.useCallback(e => {
             J(!0), Y(e.substring(0, 60))
@@ -177,17 +177,17 @@ function P(e) {
                     className: D.bd,
                     children: [(0, i.jsx)(A.ksK, {
                         inputRef: P,
-                        value: q || ea ? W : $?.title ?? "",
+                        value: X || ea ? W : $?.title ?? "",
                         onBlur: em,
                         onFocus: eg,
                         onChange: ex,
                         placeholder: M.intl.string(M.t.KPop4s),
                         leading: {
                             type: "emoji",
-                            button: (0, i.jsx)(y.R, {
+                            button: (0, i.jsx)(v.R, {
                                 customStatusEmoji: z,
-                                setCustomStatusEmoji: X,
-                                selectedDefaultStatus: q || ea ? null : Q,
+                                setCustomStatusEmoji: q,
+                                selectedDefaultStatus: X || ea ? null : Q,
                                 defaultStatusVariant: B,
                                 setIsEmojiPickerOpen: l
                             })

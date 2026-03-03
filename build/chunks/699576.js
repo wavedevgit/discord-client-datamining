@@ -10,8 +10,8 @@ var i = n(627968),
     l = n(287809),
     A = n(927578),
     c = n(202639),
-    d = n(688796),
-    _ = n(652215),
+    _ = n(688796),
+    d = n(652215),
     u = n(339984),
     L = n(985018),
     m = n(719154);
@@ -23,7 +23,7 @@ function g(t) {
         className: o,
         ...g
     } = t, E = a.useCallback(() => {
-        (0, d.G)({
+        (0, _.G)({
             uploadType: e,
             analyticsSource: n
         })
@@ -45,7 +45,7 @@ function g(t) {
         text: C,
         button: L.intl.string(L.t.BmJkbd),
         buttonAnalyticsObject: {
-            section: _.JJy.USER_PROFILE
+            section: d.JJy.USER_PROFILE
         },
         className: r()(m.k, o),
         ...g

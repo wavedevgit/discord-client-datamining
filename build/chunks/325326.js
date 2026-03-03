@@ -32,7 +32,7 @@ let h = () => {
             items: E,
             hasMore: I,
             cursor: N,
-            errored: b
+            errored: S
         } = (0, s.cf)([c.A], () => ({
             initialized: c.A.initialized,
             loading: c.A.loading,
@@ -41,7 +41,7 @@ let h = () => {
             cursor: c.A.cursor,
             errored: c.A.errored
         })), {
-            roleFilter: S,
+            roleFilter: b,
             everyoneFilter: T
         } = (0, s.cf)([r.Ay], () => ({
             everyoneFilter: r.Ay.everyoneFilter,
@@ -50,40 +50,40 @@ let h = () => {
         i.useEffect(() => ((0, o.BZ)(!0), () => (0, o.BZ)(!1)), []), i.useEffect(() => {
             x && t && (0, l.d_)(u.P.NOTIFICATION_CENTER)
         }, [t, x]);
-        let y = (0, a.A)();
+        let v = (0, a.A)();
         i.useEffect(() => () => {
-            h ? !y() && (b || E.length > 100) && (0, o.S3)() : n && E.length > 100 && (0, o.S3)()
-        }, [n, E, h, y, b]), i.useEffect(() => {
+            h ? !v() && (S || E.length > 100) && (0, o.S3)() : n && E.length > 100 && (0, o.S3)()
+        }, [n, E, h, v, S]), i.useEffect(() => {
             let e = m && t;
             (!x || e) && (0, o.ni)({
                 limit: p ?? (A ? 8 : 20),
                 with_mentions: A,
-                roles_filter: S,
+                roles_filter: b,
                 everyone_filter: T
             })
-        }, [x, m, t, A, S, T, p]);
-        let v = i.useCallback(async e => {
-            !g.current && x && I && null != N && (e || !b) && (g.current = !0, f(!0), await (0, o.ni)({
+        }, [x, m, t, A, b, T, p]);
+        let y = i.useCallback(async e => {
+            !g.current && x && I && null != N && (e || !S) && (g.current = !0, f(!0), await (0, o.ni)({
                 after: N,
                 with_mentions: A,
-                roles_filter: S,
+                roles_filter: b,
                 everyone_filter: T,
                 limit: A ? 8 : 20
             }, () => {
                 g.current = !1
             }), f(!1))
-        }, [x, I, N, b, A, S, T]);
+        }, [x, I, N, S, A, b, T]);
         return {
             initialized: x,
             loading: C,
             items: E,
             hasMore: I,
-            loadMore: v,
+            loadMore: y,
             loadingMore: _,
             setReadNotifItemToAcked: e => {
                 e.acked || (e.acked = !0)
             },
-            errored: b
+            errored: S
         }
     })({
         isFocused: !0,

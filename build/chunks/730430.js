@@ -22,15 +22,15 @@ function p(t) {
         onAction: m,
         userId: h,
         ...g
-    } = t, f = (0, l.bG)([d.A], () => d.A.getChannelId() === p.id);
+    } = t, E = (0, l.bG)([d.A], () => d.A.getChannelId() === p.id);
     return (0, i.jsx)(r.Button, {
-        text: f ? A.intl.string(A.t.BXxdl7) : A.intl.string(A.t["9C444m"]),
+        text: E ? A.intl.string(A.t.BXxdl7) : A.intl.string(A.t["9C444m"]),
         onClick: () => {
             m?.(), a.default.selectVoiceChannel(p.id), (0, o.iN)(p.id), u.default.track(c.HAw.HANG_STATUS_CTA_CLICKED, {
                 source: "UserProfilePopout",
                 ...(0, s.A)(p.id),
                 other_user_id: h,
-                cta_type: f ? "open" : "join"
+                cta_type: E ? "open" : "join"
             })
         },
         variant: e,

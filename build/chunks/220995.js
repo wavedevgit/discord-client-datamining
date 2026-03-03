@@ -1,7 +1,7 @@
 /** chunk id: 220995, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    p: () => y
+    p: () => v
 });
 var i = n(627968),
     s = n(64700),
@@ -24,15 +24,15 @@ var i = n(627968),
     E = n(778768),
     I = n(652215),
     N = n(985018),
-    b = n(430023),
-    S = n(77615);
+    S = n(430023),
+    b = n(77615);
 let T = e => 1 - Math.pow(1 - e, 4);
 
-function y(e) {
+function v(e) {
     let {
         channel: t,
         onClose: l
-    } = e, y = s.useRef(null), [v, j] = s.useState(!1), R = s.useRef(null), O = s.useRef(null), [L, M] = s.useState(0), {
+    } = e, v = s.useRef(null), [y, j] = s.useState(!1), R = s.useRef(null), O = s.useRef(null), [L, M] = s.useState(0), {
         analyticsLocations: D
     } = (0, p.Ay)(A.A.VOICE_INVITE_SUGGESTIONS);
     (0, m.A)({
@@ -56,7 +56,7 @@ function y(e) {
         V = s.useRef(null),
         {
             isHoveringOrFocusing: B
-        } = (0, g.A)(G ? y : V),
+        } = (0, g.A)(G ? v : V),
         [H, F] = s.useState(!1),
         K = B || H,
         W = s.useCallback(function() {
@@ -81,7 +81,7 @@ function y(e) {
                 })
             })
         }, [P, t]),
-        [z, X] = (0, u.zhh)(() => ({
+        [z, q] = (0, u.zhh)(() => ({
             from: {
                 height: "0px"
             },
@@ -94,17 +94,17 @@ function y(e) {
                 clamp: !0
             }
         })),
-        q = s.useCallback(e => {
-            k(!0), X({
+        X = s.useCallback(e => {
+            k(!0), q({
                 to: {
                     height: "0px"
                 },
                 onRest: () => W(e)
             })
-        }, [X, W]),
-        J = s.useCallback(() => (null != R.current && clearTimeout(R.current), R.current = setTimeout(() => q("timeout"), 1e4), M(e => e + 1), () => {
+        }, [q, W]),
+        J = s.useCallback(() => (null != R.current && clearTimeout(R.current), R.current = setTimeout(() => X("timeout"), 1e4), M(e => e + 1), () => {
             null != R.current && clearTimeout(R.current)
-        }), [q]),
+        }), [X]),
         Q = s.useCallback(() => (null != O.current && clearTimeout(O.current), O.current = setTimeout(() => {
             j(!1)
         }, 150), () => {
@@ -124,8 +124,8 @@ function y(e) {
             j(!1), F(!1)
         }, []);
     return G ? (0, i.jsx)(u.YNO, {
-        targetElementRef: y,
-        shouldShow: v,
+        targetElementRef: v,
+        shouldShow: y,
         position: "right",
         align: "top",
         spacing: U ?? 8,
@@ -143,68 +143,68 @@ function y(e) {
                 ...n
             } = e;
             return (0, i.jsx)(r.animated.div, {
-                className: b.lY,
+                className: S.lY,
                 style: z,
                 children: (0, i.jsx)(u.DUT, {
-                    innerRef: y,
+                    innerRef: v,
                     className: a()({
-                        [b.vk]: !w
-                    }, S.q7, S.L9, S.vk),
+                        [S.vk]: !w
+                    }, b.q7, b.L9, b.vk),
                     "aria-disabled": w,
                     "aria-label": N.intl.string(N.t.F3qiJr),
                     onClick: Y,
                     ...n,
                     children: (0, i.jsxs)("div", {
-                        className: a()(b.Qs, S.Qs),
+                        className: a()(S.Qs, b.Qs),
                         children: [(0, i.jsxs)("div", {
-                            className: b.R4,
+                            className: S.R4,
                             style: {
                                 "--custom-voice-invite-suggestions-timer-size": 24
                             },
                             children: [(0, i.jsxs)("svg", {
-                                className: a()(b.O1, {
-                                    [b.Ft]: K
+                                className: a()(S.O1, {
+                                    [S.Ft]: K
                                 }),
                                 viewBox: "0 0 24 24",
                                 style: {
                                     "--custom-voice-invite-suggestions-timer-duration": 1e4
                                 },
                                 children: [(0, i.jsx)("circle", {
-                                    className: b.qB
+                                    className: S.qB
                                 }), (0, i.jsx)("circle", {
-                                    className: b.hN
+                                    className: S.hN
                                 })]
                             }, `voice-invite-suggestions-timer-${L}`), (0, i.jsx)(u.Rvf, {
                                 size: "custom",
                                 width: 14,
                                 height: 14,
                                 color: "currentColor",
-                                className: a()(b.Hk, b.Kk)
+                                className: a()(S.Hk, S.Kk)
                             })]
                         }), (0, i.jsx)(d.m_, {
                             text: N.intl.string(N.t["EE+P0H"]),
                             overflowOnly: !0,
                             children: (0, i.jsx)(u.Text, {
                                 variant: "text-sm/medium",
-                                className: b.Pf,
+                                className: S.Pf,
                                 lineClamp: 1,
                                 children: N.intl.string(N.t["EE+P0H"])
                             })
                         }), B ? (0, i.jsx)(u.DUT, {
-                            className: b.VN,
+                            className: S.VN,
                             onClick: e => {
-                                e.stopPropagation(), q("user_explicit")
+                                e.stopPropagation(), X("user_explicit")
                             },
                             "aria-label": N.intl.string(N.t.cpT0Cq),
                             children: (0, i.jsx)(u.PGe, {
                                 size: "xs",
                                 color: "currentColor",
-                                className: b.Kk
+                                className: S.Kk
                             })
                         }) : (0, i.jsx)(u._BQ, {
                             size: "xs",
                             color: "currentColor",
-                            className: b.Kk
+                            className: S.Kk
                         })]
                     })
                 })

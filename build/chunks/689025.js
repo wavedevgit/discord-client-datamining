@@ -24,11 +24,11 @@ var i = n(627968),
     E = n(323443),
     I = n(113783),
     N = n(69407),
-    b = n(446600),
-    S = n(96566),
+    S = n(446600),
+    b = n(96566),
     T = n(175452),
-    y = n(924985),
-    v = n(734057),
+    v = n(924985),
+    y = n(734057),
     j = n(71393),
     R = n(834942),
     O = n(576705),
@@ -201,7 +201,7 @@ class W extends U.Ay {
             isFavoriteSuggestion: E
         } = this.props, {
             shouldShowGuildVerificationPopout: I
-        } = this.state, N = this.getVoiceStatesCount(), b = (0, i.jsxs)("li", {
+        } = this.state, N = this.getVoiceStatesCount(), S = (0, i.jsxs)("li", {
             className: a()(this.getModeClass(), {
                 [F.r9]: this.isDisabled()
             }),
@@ -249,7 +249,7 @@ class W extends U.Ay {
                 })
             }), this.renderVoiceUsers()]
         });
-        return A && (b = o(b)), h && (b = l(r(b))), b
+        return A && (S = o(S)), h && (S = l(r(S))), S
     }
 }
 let Y = (0, A.a)((0, p.F)(W));
@@ -265,8 +265,8 @@ function z(e) {
     } = e, c = (0, r.cf)([L.Ay], () => ({
         unread: L.Ay.hasUnread(n.id),
         mentionCount: L.Ay.getMentionCount(n.id)
-    })), d = (0, r.bG)([M.Ay], () => M.Ay.resolveUnreadSetting(n)), u = (0, r.cf)([v.A, R.A, O.A], () => {
-        let e = v.A.getChannel(n.parent_id),
+    })), d = (0, r.bG)([M.Ay], () => M.Ay.resolveUnreadSetting(n)), u = (0, r.cf)([y.A, R.A, O.A], () => {
+        let e = y.A.getChannel(n.parent_id),
             i = R.A.getCheck(n.guild_id);
         return {
             canManageChannel: null != t && O.A.can(V.xBc.MANAGE_CHANNELS, n),
@@ -276,10 +276,10 @@ function z(e) {
             bypassLimit: O.A.can(V.xBc.MOVE_MEMBERS, n),
             unverifiedAccount: !i.canChat
         }
-    }), h = (0, r.bG)([y.A], () => y.A.isCollapsed(n.parent_id)), A = (0, T.Ay)(n.id), p = (0, r.bG)([b.A], () => b.A.getStageInstanceByChannel(n.id), [n.id]), m = (0, I.zy)(n.id, N.ip.AUDIENCE), {
+    }), h = (0, r.bG)([v.A], () => v.A.isCollapsed(n.parent_id)), A = (0, T.Ay)(n.id), p = (0, r.bG)([S.A], () => S.A.getStageInstanceByChannel(n.id), [n.id]), m = (0, I.zy)(n.id, N.ip.AUDIENCE), {
         isSubscriptionGated: g,
         needSubscriptionToAccess: _
-    } = (0, f.A)(n.id), x = (0, r.bG)([M.Ay], () => M.Ay.isFavorite(t.id, n.id)), C = (0, S.xn)(n.id), E = (0, P.A)({
+    } = (0, f.A)(n.id), x = (0, r.bG)([M.Ay], () => M.Ay.isFavorite(t.id, n.id)), C = (0, b.xn)(n.id), E = (0, P.A)({
         channel: n,
         isChannelSelected: !1,
         isChannelCollapsed: a,

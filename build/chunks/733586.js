@@ -42,7 +42,7 @@ function h(e) {
         tileStyle: E,
         tileWidth: I,
         rows: N,
-        columns: b
+        columns: S
     } = s.useMemo(() => (function(e, t, n) {
         var i, s, l;
         let a, r, o, h, {
@@ -68,23 +68,23 @@ function h(e) {
             rows: A,
             columns: p
         }
-    })(f, x, C), [f, x, C]), S = b + 1, T = S * I + (S - 1) * 8 <= g, y = Math.floor(I / c) + 8, v = Math.max(0, C - y * N) / 2;
+    })(f, x, C), [f, x, C]), b = S + 1, T = b * I + (b - 1) * 8 <= g, v = Math.floor(I / c) + 8, y = Math.max(0, C - v * N) / 2;
     return (0, i.jsx)(r.A, {
         fade: !0,
         className: t,
-        listPadding: [h + v, 0, A + v - 8, 8],
+        listPadding: [h + y, 0, A + y - 8, 8],
         renderRow: function(e) {
-            let t = e * b;
+            let t = e * S;
             return (0, i.jsx)("div", {
                 className: o.nM,
-                children: n?.slice(t, t + b)?.map((e, n) => {
+                children: n?.slice(t, t + S)?.map((e, n) => {
                     let s = t + n;
                     return (0, i.jsx)("div", {
                         style: E,
                         className: a()(o.Vs, {
                             [o.E3]: T,
-                            [o.k4]: s >= (N - 1) * b,
-                            [o.Kk]: (s + 1) % b == 0 || s === f - 1
+                            [o.k4]: s >= (N - 1) * S,
+                            [o.Kk]: (s + 1) % S == 0 || s === f - 1
                         }),
                         children: (0, i.jsx)("div", {
                             className: o.eP,
@@ -96,7 +96,7 @@ function h(e) {
         },
         rowCount: N,
         rowCountBySection: [N],
-        rowHeight: y,
+        rowHeight: v,
         onResize: m
     })
 }

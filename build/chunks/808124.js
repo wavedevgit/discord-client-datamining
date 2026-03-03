@@ -1,7 +1,7 @@
 /** chunk id: 808124, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => b
+    A: () => S
 });
 var i = n(627968),
     s = n(64700),
@@ -29,17 +29,17 @@ let N = e => {
             idle: n,
             className: l,
             participants: r
-        } = e, h = (0, p.A)(t.id), [A, N] = s.useState(!1), b = s.useCallback(e => {
+        } = e, h = (0, p.A)(t.id), [A, N] = s.useState(!1), S = s.useCallback(e => {
             u.Ay.update(t.id, {
                 seat: e
             })
-        }, [t.id]), [S, T] = (0, c.V)("haven-show-chat", !1);
+        }, [t.id]), [b, T] = (0, c.V)("haven-show-chat", !1);
         s.useEffect(() => {
             setTimeout(() => {
                 N(!0)
             }, 2500)
         }, []);
-        let [y, v] = s.useState(.65), [j, R] = s.useState(.65), [O, L] = s.useState(.65), [M, D] = s.useState({
+        let [v, y] = s.useState(.65), [j, R] = s.useState(.65), [O, L] = s.useState(.65), [M, D] = s.useState({
             x: 0,
             y: 0
         }), [G, U] = s.useState(!1), [P, w] = s.useState(0), [k, V] = s.useState({
@@ -48,7 +48,7 @@ let N = e => {
         }), [B, H] = s.useState({
             x: 0,
             y: 0
-        }), [F, K] = s.useState(!1), W = s.useRef(null), [Y, z] = s.useState(null), X = (0, d.w)(e => {
+        }), [F, K] = s.useState(!1), W = s.useRef(null), [Y, z] = s.useState(null), q = (0, d.w)(e => {
             let {
                 contentRect: t,
                 target: n
@@ -58,16 +58,16 @@ let N = e => {
                 y: l / 2 + i.y
             });
             let d = Math.max(a, r);
-            if (v(Math.max(o, c)), L(d), null != W.current) {
+            if (y(Math.max(o, c)), L(d), null != W.current) {
                 let e = W.current.getBoundingClientRect();
                 z({
                     x: e.left - i.left,
                     y: e.top - i.top
                 })
             }
-        }), q = s.useCallback(e => {
-            let t = Math.max(e, y),
-                n = X.current?.getBoundingClientRect();
+        }), X = s.useCallback(e => {
+            let t = Math.max(e, v),
+                n = q.current?.getBoundingClientRect();
             if (null == n) return;
             let i = {
                     x: 1156,
@@ -85,12 +85,12 @@ let N = e => {
                 x: c,
                 y: d
             })
-        }, [X, y]);
+        }, [q, v]);
         s.useEffect(() => {
-            q(O)
-        }, [O, q]);
+            X(O)
+        }, [O, X]);
         let J = s.useCallback(e => {
-            let t = X.current?.getBoundingClientRect();
+            let t = q.current?.getBoundingClientRect();
             if (null == t) return;
             let n = t.height / j,
                 i = t.width / j,
@@ -103,20 +103,20 @@ let N = e => {
                 r = s.y - n < -1536,
                 o = s.x - i < -2180;
             r || l || a || o || D(e)
-        }, [X, j]);
+        }, [q, j]);
         return (0, i.jsx)(o.vN3, {
             children: (0, i.jsxs)("div", {
-                ref: X,
+                ref: q,
                 className: a()(I.km, l),
                 onClick: () => {
                     w(0)
                 },
                 onMouseDown: () => U(Date.now()),
                 onMouseUp: e => {
-                    if (null != X.current) {
+                    if (null != q.current) {
                         if (P < 2) {
                             let n = Date.now(),
-                                i = X.current.getBoundingClientRect(),
+                                i = q.current.getBoundingClientRect(),
                                 s = {
                                     x: (e.pageX - i.x - M.x) / j,
                                     y: (e.pageY - i.y - M.y) / j
@@ -149,7 +149,7 @@ let N = e => {
                         channel: t,
                         idle: n,
                         skipNewUserEducation: !A,
-                        onSeatClick: b
+                        onSeatClick: S
                     })
                 }), (0, i.jsxs)("div", {
                     className: a()(I.nM, I.vf),
@@ -171,16 +171,16 @@ let N = e => {
                         }), (0, i.jsx)(o.K0, {
                             variant: "icon-only",
                             "aria-label": E.intl.string(C.default.O7EDNk),
-                            icon: S ? o._mZ : o.oyn,
+                            icon: b ? o._mZ : o.oyn,
                             disabled: n,
                             onClick: e => {
-                                e.preventDefault(), e.stopPropagation(), T(!S)
+                                e.preventDefault(), e.stopPropagation(), T(!b)
                             }
                         })]
                     }), (0, i.jsx)(g.A, {
                         channel: t,
                         idle: n,
-                        showChat: S ?? !1
+                        showChat: b ?? !1
                     }), (0, i.jsxs)("div", {
                         className: a()(I.nM, {
                             [I.R]: n
@@ -191,7 +191,7 @@ let N = e => {
                             icon: o.V0_,
                             disabled: n,
                             onClick: e => {
-                                e.preventDefault(), e.stopPropagation(), q(j - .05)
+                                e.preventDefault(), e.stopPropagation(), X(j - .05)
                             }
                         }), (0, i.jsx)(o.K0, {
                             variant: "icon-only",
@@ -199,7 +199,7 @@ let N = e => {
                             icon: o.r1u,
                             disabled: n,
                             onClick: e => {
-                                e.preventDefault(), e.stopPropagation(), q(j + .05)
+                                e.preventDefault(), e.stopPropagation(), X(j + .05)
                             }
                         })]
                     })]
@@ -229,7 +229,7 @@ let N = e => {
             })
         })
     },
-    b = e => {
+    S = e => {
         let t = h.s.useConfig({
                 location: "Haven"
             }).enabled,

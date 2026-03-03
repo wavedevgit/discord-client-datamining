@@ -24,16 +24,16 @@ var i = n(627968),
     E = n(806931),
     I = n(403264),
     N = n(542411);
-let b = 16 / 9,
-    S = 8 + x.Vp;
+let S = 16 / 9,
+    b = 8 + x.Vp;
 
 function T(e) {
     let t, {
             onSelectParticipant: n,
             onContextMenuParticipant: l,
             onFullscreenParticipant: T,
-            participants: y,
-            filteredParticipants: v,
+            participants: v,
+            filteredParticipants: y,
             popoutType: j,
             inCall: R,
             channel: O,
@@ -51,24 +51,24 @@ function T(e) {
         F = (0, c.A)(B),
         [K, W] = s.useState(!0),
         [Y, z] = s.useState(!1),
-        X = L.type === E.lp.ACTIVITY,
-        q = (0, d.A)(X ? L.applicationId : void 0),
-        J = !X && null != L.streamId,
-        Q = U <= 2 * S + 144,
+        q = L.type === E.lp.ACTIVITY,
+        X = (0, d.A)(q ? L.applicationId : void 0),
+        J = !q && null != L.streamId,
+        Q = U <= 2 * b + 144,
         $ = M && !Q,
         Z = (0, c.A)($),
         ee = P === C.DUB.MINIMUM || P === C.DUB.NORMAL,
-        et = !Q && (!ee || X),
+        et = !Q && (!ee || q),
         en = (0, m.A)(et, 100),
         ei = ((0, c.A)(L.id) ?? L.id) !== L.id,
         es = 0;
-    (X || $) && (es += 72), X && !$ && (et ? es += 48 : es += 8), $ && (es += .5 * S + 8);
-    let el = s.useMemo(() => X && q ? G / (U - 2 * es) : J && null != B && B.width > 0 && B.height > 0 ? B.width / B.height : b, [J, B, X, G, U, es, q]),
+    (q || $) && (es += 72), q && !$ && (et ? es += 48 : es += 8), $ && (es += .5 * b + 8);
+    let el = s.useMemo(() => q && X ? G / (U - 2 * es) : J && null != B && B.width > 0 && B.height > 0 ? B.width / B.height : S, [J, B, q, G, U, es, X]),
         ea = U - 2 * es,
-        er = X && q ? G : ea * el,
+        er = q && X ? G : ea * el,
         eo = Math.floor(Math.min(G, er) / el),
-        ec = U > G / el + 72 + S + 8;
-    t = $ || X ? $ ? -16 : -8 : 40 + Math.max(0, 72 - (U - eo) / 2);
+        ec = U > G / el + 72 + b + 8;
+    t = $ || q ? $ ? -16 : -8 : 40 + Math.max(0, 72 - (U - eo) / 2);
     let ed = Math.max(0, 72 - (U - eo) / 2);
     s.useEffect(() => {
         let e = setTimeout(() => {
@@ -134,11 +134,11 @@ function T(e) {
         ef = s.useCallback(e => {
             H(e), W(!1)
         }, []),
-        ex = $ ? [] : (0, f.Cf)(y, L, V),
+        ex = $ ? [] : (0, f.Cf)(v, L, V),
         {
             visibleParticipants: eC,
             participantTileWidth: eE
-        } = (0, x.i4)(G, v);
+        } = (0, x.i4)(G, y);
     return (0, i.jsxs)("div", {
         className: a()(N.zr, I.tR, D),
         children: [(0, i.jsxs)("div", {
@@ -149,7 +149,7 @@ function T(e) {
             children: [(0, i.jsxs)(r.animated.div, {
                 className: N.pc,
                 style: {
-                    top: ep.value.to(e => -e * S / 2)
+                    top: ep.value.to(e => -e * b / 2)
                 },
                 children: [(0, i.jsx)(r.animated.div, {
                     style: {
@@ -203,7 +203,7 @@ function T(e) {
             }), (0, i.jsx)(r.animated.div, {
                 className: N.Vx,
                 style: {
-                    translateY: eA.value.to(e => e * S / 2),
+                    translateY: eA.value.to(e => e * b / 2),
                     opacity: eA.value,
                     visibility: eA.value.to(e => 0 === e ? "hidden" : "visible")
                 },

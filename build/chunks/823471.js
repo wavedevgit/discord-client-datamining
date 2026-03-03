@@ -24,12 +24,12 @@ var i = n(627968),
     E = n(378570),
     I = n(203982),
     N = n(170428),
-    b = n(933057),
-    S = n(747926),
+    S = n(933057),
+    b = n(747926),
     T = n(652215),
-    y = n(985018);
+    v = n(985018);
 
-function v(e) {
+function y(e) {
     let {
         channel: t
     } = e, [n, a] = s.useState(!1), r = s.useRef(null);
@@ -37,7 +37,7 @@ function v(e) {
     function o() {
         a(e => !e)
     }
-    let c = y.intl.string(y.t["UKOtz+"]);
+    let c = v.intl.string(v.t["UKOtz+"]);
     return (0, i.jsx)(l.YNO, {
         targetElementRef: r,
         shouldShow: n,
@@ -74,9 +74,9 @@ function j(e) {
         channel: t,
         closePopout: n,
         onSelect: s
-    } = e, x = (0, c.A)(t, "Sidebar Overflow"), C = (0, u.A)(t), N = (0, m.A)(t), b = (0, g.A)(t), S = (0, a.A)(t), v = (0, d.A)(t), j = (0, p.A)(t.id), R = (0, A.A)(t), O = (0, o.A)(t), L = (0, r.A)(t), M = (0, f.A)({
+    } = e, x = (0, c.A)(t, "Sidebar Overflow"), C = (0, u.A)(t), N = (0, m.A)(t), S = (0, g.A)(t), b = (0, a.A)(t), y = (0, d.A)(t), j = (0, p.A)(t.id), R = (0, A.A)(t), O = (0, o.A)(t), L = (0, r.A)(t), M = (0, f.A)({
         id: t.id,
-        label: y.intl.string(y.t.DQ797g)
+        label: v.intl.string(v.t.DQ797g)
     }), D = (0, _.A)(t), G = (0, h.A)(t);
 
     function U() {
@@ -86,22 +86,22 @@ function j(e) {
         "data-menu-migrated": !0,
         navId: "thread-context",
         onClose: n,
-        "aria-label": y.intl.string(y.t["1NBjqb"]),
+        "aria-label": v.intl.string(v.t["1NBjqb"]),
         onSelect: s,
         children: [(0, i.jsxs)(l.rXV, {
             children: [x, (0, i.jsx)(l.Drp, {
                 id: "open",
-                label: y.intl.string(y.t.IxVmZi),
+                label: v.intl.string(v.t.IxVmZi),
                 action: U
             })]
         }), (0, i.jsxs)(l.rXV, {
-            children: [N, b]
+            children: [N, S]
         }), (0, i.jsxs)(l.rXV, {
             children: [R, C, j, G]
         }), (0, i.jsxs)(l.rXV, {
             children: [(0, i.jsx)(l.Drp, {
                 id: "search",
-                label: y.intl.string(y.t["5h0QOP"]),
+                label: v.intl.string(v.t["5h0QOP"]),
                 icon: l.tfB,
                 trailingIndicator: {
                     type: "icon",
@@ -116,7 +116,7 @@ function j(e) {
                 }
             }), (0, i.jsx)(l.Drp, {
                 id: "pins",
-                label: y.intl.string(y.t["2BSH7n"]),
+                label: v.intl.string(v.t["2BSH7n"]),
                 icon: l.tfB,
                 trailingIndicator: {
                     type: "icon",
@@ -127,7 +127,7 @@ function j(e) {
                 }
             })]
         }), (0, i.jsxs)(l.rXV, {
-            children: [D, S, v, O]
+            children: [D, b, y, O]
         }), (0, i.jsxs)(l.rXV, {
             children: [L, M]
         })]
@@ -140,16 +140,16 @@ function R(e) {
         baseChannelId: n
     } = e;
     return (0, i.jsxs)(i.Fragment, {
-        children: [t.isForumPost() ? null : (0, i.jsx)(b.A, {
+        children: [t.isForumPost() ? null : (0, i.jsx)(S.A, {
             channel: t
         }), t.isModeratorReportChannel() ? (0, i.jsx)(N.A, {
             channel: t
-        }) : null, (0, i.jsx)(v, {
+        }) : null, (0, i.jsx)(y, {
             channel: t
         }), (0, i.jsx)(C.Ay.Icon, {
             icon: l.PGe,
-            tooltip: y.intl.string(y.t.cpT0Cq),
-            onClick: () => (0, S.xu)((0, x.j)(t), n ?? t.parent_id)
+            tooltip: v.intl.string(v.t.cpT0Cq),
+            onClick: () => (0, b.xu)((0, x.j)(t), n ?? t.parent_id)
         })]
     })
 }

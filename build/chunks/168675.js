@@ -24,11 +24,11 @@ var i = n(627968),
     E = n(915089),
     I = n(314307),
     N = n(58736),
-    b = n(636922),
-    S = n(931664),
+    S = n(636922),
+    b = n(931664),
     T = n(631576),
-    y = n(253932),
-    v = n(734057),
+    v = n(253932),
+    y = n(734057),
     j = n(31717),
     R = n(320501),
     O = n(576705),
@@ -53,7 +53,7 @@ function z(e) {
         parentChannelId: t,
         parentMessageId: n,
         location: s
-    } = e, l = (0, r.bG)([v.A], () => v.A.getChannel(t)), {
+    } = e, l = (0, r.bG)([y.A], () => y.A.getChannel(t)), {
         analyticsLocations: a
     } = (0, g.Ay)(m.A.CREATE_THREAD);
     return null == l ? null : (0, i.jsx)(g.f5, {
@@ -65,9 +65,9 @@ function z(e) {
                 children: [(0, i.jsx)(A.A, {
                     channel: l,
                     draftType: j.C.FirstThreadMessage
-                }), (0, i.jsx)(X, {
-                    parentChannelId: t
                 }), (0, i.jsx)(q, {
+                    parentChannelId: t
+                }), (0, i.jsx)(X, {
                     parentChannel: l,
                     parentMessageId: n,
                     location: s
@@ -77,7 +77,7 @@ function z(e) {
     })
 }
 
-function X(e) {
+function q(e) {
     let {
         parentChannelId: t
     } = e, n = s.useCallback(() => {
@@ -111,7 +111,7 @@ function X(e) {
     })
 }
 
-function q(e) {
+function X(e) {
     let t, {
             parentChannel: n,
             parentMessageId: l,
@@ -164,8 +164,8 @@ function q(e) {
         E = (0, P.EN)(n),
         {
             isGeneratingAI: N,
-            enableAIFeatures: b,
-            getThreadNameInputAccessory: y
+            enableAIFeatures: S,
+            getThreadNameInputAccessory: v
         } = (0, V.C)({
             parentChannel: n,
             parentMessageId: l,
@@ -174,7 +174,7 @@ function q(e) {
             textAreaState: x
         }),
         {
-            nameError: v,
+            nameError: y,
             messageError: R,
             submit: O,
             submitting: G
@@ -204,7 +204,7 @@ function q(e) {
                         shouldClear: !1,
                         shouldRefocus: !1
                     };
-                    p(!0), null == e && (e = a.textValue), e = e.trim(), (null == s || 0 === s.length) && (s = S.A.getStickerPreview(t.id, Y.drafts.type)?.map(e => e.id)), (null == l || 0 === l.length) && (l = L.A.getUploads(t.id, j.C.FirstThreadMessage));
+                    p(!0), null == e && (e = a.textValue), e = e.trim(), (null == s || 0 === s.length) && (s = b.A.getStickerPreview(t.id, Y.drafts.type)?.map(e => e.id)), (null == l || 0 === l.length) && (l = L.A.getUploads(t.id, j.C.FirstThreadMessage));
                     let r = i.name ?? "",
                         c = (o || null == n) && 0 === r.length,
                         u = "" === e && (null == s || 0 === s.length) && 0 === l.length;
@@ -247,7 +247,7 @@ function q(e) {
             privateThreadMode: E,
             textAreaState: x,
             location: d,
-            enableAIFeatures: b
+            enableAIFeatures: S
         }),
         w = (0, P.Iy)(m, E) ? o.tn0 : o.ysw;
     return (0, i.jsx)("div", {
@@ -279,11 +279,11 @@ function q(e) {
                                     parentMessageId: l,
                                     threadSettings: m,
                                     updateThreadSettings: _,
-                                    error: v,
+                                    error: y,
                                     disabled: G,
                                     isGeneratingAI: N,
-                                    enableAIFeatures: b,
-                                    getThreadNameInputAccessory: y
+                                    enableAIFeatures: S,
+                                    getThreadNameInputAccessory: v
                                 }), n.type === H.rbe.GUILD_TEXT ? (0, i.jsx)(J, {
                                     startedFromMessage: null != l,
                                     threadSettings: m,
@@ -439,8 +439,8 @@ function Z(e) {
     let {
         parentChannel: t,
         parentMessageId: n
-    } = e, s = (0, r.bG)([R.A], () => null == n ? null : R.A.getMessage(t.id, n)), l = y.hH.useSetting();
-    return null != s ? (0, i.jsx)(b.A, {
+    } = e, s = (0, r.bG)([R.A], () => null == n ? null : R.A.getMessage(t.id, n)), l = v.hH.useSetting();
+    return null != s ? (0, i.jsx)(S.A, {
         className: K.IL,
         message: s,
         channel: t,

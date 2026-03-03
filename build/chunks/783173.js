@@ -5,8 +5,8 @@ n.d(t, {
 var a = n(627968);
 n(64700);
 var l = n(503698),
-    s = n.n(l),
-    i = n(397927),
+    i = n.n(l),
+    s = n(397927),
     r = n(595535),
     c = n(48369);
 
@@ -14,12 +14,12 @@ function o(e) {
     let {
         className: t,
         size: n = r.q
-    } = e, l = (0, i.FT9)(n);
+    } = e, l = (0, s.FT9)(n);
     return (0, a.jsx)("svg", {
         width: l,
         height: l,
         viewBox: `0 0 ${l} ${l}`,
-        className: s()(c.R, t),
+        className: i()(c.R, t),
         "aria-hidden": !0,
         children: (0, a.jsx)("path", {
             fillRule: "evenodd",

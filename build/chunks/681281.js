@@ -25,11 +25,11 @@ var s = n(503698),
     E = n(353428),
     I = n(267102),
     N = n(46054),
-    b = n(164203),
-    S = n(665691),
+    S = n(164203),
+    b = n(665691),
     T = n(123973),
-    y = n(241756),
-    v = n(447404),
+    v = n(241756),
+    y = n(447404),
     j = n(313961),
     R = n(532622),
     O = n(416528),
@@ -47,7 +47,7 @@ function V(e) {
         focusedParticipant: t,
         channel: n
     } = e, s = (0, I.Us)(), l = (0, a.bG)([j.A], () => j.A.getLayout(n.id, s));
-    return (0, i.jsx)(v.A, {
+    return (0, i.jsx)(y.A, {
         children: (0, i.jsx)(L.A, {
             participant: t,
             maxVisibleUsers: 5,
@@ -64,7 +64,7 @@ function B(e) {
         channel: n,
         stream: s,
         color: l
-    } = e, a = (0, y.A)(n, t, s);
+    } = e, a = (0, v.A)(n, t, s);
     return null == t || null == s ? null : (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(c.A, {
             className: w.my,
@@ -145,10 +145,10 @@ function F(e) {
     } = (0, a.cf)([j.A], () => ({
         focusedParticipant: j.A.getSelectedParticipant(t.id),
         participantsOpen: j.A.getParticipantsOpen(t.id)
-    }), [t.id]), f = (0, A.Ay)(t), I = (0, p.gU)(t), [T] = (0, u.A)(_?.type === D.lp.ACTIVITY ? [_.applicationId] : []), y = P.intl.string(P.t.BVZqJl);
-    t.isDM() ? y = P.intl.string(P.t.jN2DfZ) : t.isGroupDM() && (y = P.intl.string(P.t["e5y+gm"]));
-    let v = (0, a.bG)([h.A], () => h.A.getChannelStatus(t)),
-        L = t.isGuildVoice() && d && null != v && v.length > 0,
+    }), [t.id]), f = (0, A.Ay)(t), I = (0, p.gU)(t), [T] = (0, u.A)(_?.type === D.lp.ACTIVITY ? [_.applicationId] : []), v = P.intl.string(P.t.BVZqJl);
+    t.isDM() ? v = P.intl.string(P.t.jN2DfZ) : t.isGroupDM() && (v = P.intl.string(P.t["e5y+gm"]));
+    let y = (0, a.bG)([h.A], () => h.A.getChannelStatus(t)),
+        L = t.isGuildVoice() && d && null != y && y.length > 0,
         G = (0, R.Ay)(t),
         V = L ? (0, i.jsx)(r.m, {
             asContainer: !0,
@@ -178,7 +178,7 @@ function F(e) {
                     className: l()(w.Gh, k.PT, {
                         [w.BI]: G
                     }),
-                    children: N.A.parseVoiceChannelStatus(v, !0, {
+                    children: N.A.parseVoiceChannelStatus(y, !0, {
                         channelId: t.id
                     })
                 }), G && (0, i.jsx)(o.R2l, {
@@ -190,7 +190,7 @@ function F(e) {
                 })]
             })
         }) : null,
-        B = (0, S.bG)({
+        B = (0, b.bG)({
             channelId: t.id
         });
     return (0, i.jsxs)("div", {
@@ -216,7 +216,7 @@ function F(e) {
                     children: (0, i.jsxs)(i.Fragment, {
                         children: [null != I ? (0, i.jsx)(x.Ay.ChannelIcon, {
                             icon: I,
-                            "aria-label": y
+                            "aria-label": v
                         }) : null, f, B && (0, i.jsx)(r.m, {
                             text: P.intl.string(P.t.QyZ4Td),
                             children: (0, i.jsx)(o.m5V, {
@@ -236,7 +236,7 @@ function F(e) {
                     channel: t
                 })]
             })
-        }), (0, i.jsx)(b.A, {
+        }), (0, i.jsx)(S.A, {
             channelId: t.id
         })]
     })

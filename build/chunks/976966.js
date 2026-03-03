@@ -35,7 +35,7 @@ function N(e) {
         documentsIndexed: A,
         selectedChannelId: _
     } = e, N = (0, g.H)(t), {
-        totalFilters: S
+        totalFilters: b
     } = (0, f.vj)(N, t), T = s.useMemo(() => {
         if (t.type === x.I4_.DMS) {
             let e = (0, p.Zf)(N),
@@ -45,15 +45,15 @@ function N(e) {
             }) : E.intl.string(E.t.tc619d)
         }
         return null
-    }, [t.type, N]), [y, v] = s.useState(null), O = s.useMemo(() => h ? [] : [r.M.CROSS_DM_SEARCH_SETTING_EDUCATION_POPOVER], [h]), [L, M] = (0, u.kn)(O), D = L === r.M.CROSS_DM_SEARCH_SETTING_EDUCATION_POPOVER, G = s.useCallback(e => {
-        null != e && D && M(C.i.USER_DISMISS), v(e)
-    }, [D, M, v]), U = s.useCallback(e => {
+    }, [t.type, N]), [v, y] = s.useState(null), O = s.useMemo(() => h ? [] : [r.M.CROSS_DM_SEARCH_SETTING_EDUCATION_POPOVER], [h]), [L, M] = (0, u.kn)(O), D = L === r.M.CROSS_DM_SEARCH_SETTING_EDUCATION_POPOVER, G = s.useCallback(e => {
+        null != e && D && M(C.i.USER_DISMISS), y(e)
+    }, [D, M, y]), U = s.useCallback(e => {
         M("user:explicit" === e ? C.i.USER_DISMISS : C.i.AUTO_DISMISS)
     }, [M]), P = s.useCallback(() => {
         G(null), m.A.openSearchFiltersModal(t)
-    }, [G, t]), w = s.useMemo(() => S > 0 ? E.intl.format(E.t.uaR4sI, {
-        filterCount: S
-    }) : E.intl.string(E.t.UdhTtk), [S]), k = t.type === x.I4_.DMS || t.type === x.I4_.CHANNEL;
+    }, [G, t]), w = s.useMemo(() => b > 0 ? E.intl.format(E.t.uaR4sI, {
+        filterCount: b
+    }) : E.intl.string(E.t.UdhTtk), [b]), k = t.type === x.I4_.DMS || t.type === x.I4_.CHANNEL;
     return (0, i.jsxs)("header", {
         className: a()(I.wL, {
             [I.g$]: null != T
@@ -61,7 +61,7 @@ function N(e) {
         children: [(0, i.jsx)("div", {
             className: I.TN,
             role: "status",
-            children: (0, i.jsx)(b, {
+            children: (0, i.jsx)(S, {
                 totalResults: o,
                 subtitle: T,
                 isIndexing: c,
@@ -79,12 +79,12 @@ function N(e) {
             }), (0, i.jsx)(R, {
                 searchMode: n,
                 onSearchModeChange: l,
-                isPopoutOpen: "sort" === y,
+                isPopoutOpen: "sort" === v,
                 setOpenPopout: G
             }), k && (0, i.jsx)(j, {
                 searchContext: t,
                 selectedChannelId: _,
-                isPopoutOpen: "settings" === y,
+                isPopoutOpen: "settings" === v,
                 setOpenPopout: G,
                 isPopoverVisible: D,
                 onPopoverRequestClose: U
@@ -93,7 +93,7 @@ function N(e) {
     })
 }
 
-function b(e) {
+function S(e) {
     let {
         totalResults: t,
         subtitle: n,
@@ -103,13 +103,13 @@ function b(e) {
     } = e;
     return l ? (0, i.jsx)(T, {
         documentsIndexed: a
-    }) : s ? (0, i.jsx)(y, {}) : (0, i.jsx)(v, {
+    }) : s ? (0, i.jsx)(v, {}) : (0, i.jsx)(y, {
         totalResults: t,
         subtitle: n
     })
 }
 
-function S() {
+function b() {
     return (0, i.jsx)("div", {
         className: I.zp,
         children: (0, i.jsx)(d.y$y, {
@@ -139,22 +139,22 @@ function T(e) {
                     href: A.A.getArticleURL(x.MVz.SEARCH_INDEXING),
                     children: E.intl.string(E.t["G3EA+4"])
                 })
-            }), (0, i.jsx)(S, {})]
+            }), (0, i.jsx)(b, {})]
         })
     })
 }
 
-function y() {
+function v() {
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(d.Text, {
             variant: "text-md/medium",
             color: "text-default",
             children: E.intl.string(E.t.uixzLf)
-        }), (0, i.jsx)(S, {})]
+        }), (0, i.jsx)(b, {})]
     })
 }
 
-function v(e) {
+function y(e) {
     let {
         totalResults: t,
         subtitle: n

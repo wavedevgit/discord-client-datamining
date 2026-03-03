@@ -25,11 +25,11 @@ let E = s.memo(function(e) {
     let {
         guildId: t,
         selected: n
-    } = e, E = (0, r.useHasAnyModalOpen)(), I = (0, l.bG)([A.A], () => A.A.hasLayers()), N = (0, u.xr)(e => e.fullScreenLayers.length > 0), [b, S] = (0, c.ww)([a.M.GAME_SERVER_HOSTING_NEW_BADGE], t), T = b === a.M.GAME_SERVER_HOSTING_NEW_BADGE, [y, v] = (0, c.ww)(E || I || N || !T ? [] : [a.M.GAME_SERVER_HOSTING_NEW_COACHMARK], t), j = s.useCallback(e => {
-        S(e), v(e)
-    }, [S, v]), R = s.useCallback(() => {
+    } = e, E = (0, r.useHasAnyModalOpen)(), I = (0, l.bG)([A.A], () => A.A.hasLayers()), N = (0, u.xr)(e => e.fullScreenLayers.length > 0), [S, b] = (0, c.ww)([a.M.GAME_SERVER_HOSTING_NEW_BADGE], t), T = S === a.M.GAME_SERVER_HOSTING_NEW_BADGE, [v, y] = (0, c.ww)(E || I || N || !T ? [] : [a.M.GAME_SERVER_HOSTING_NEW_COACHMARK], t), j = s.useCallback(e => {
+        b(e), y(e)
+    }, [b, y]), R = s.useCallback(() => {
         j(_.i.USER_DISMISS), (0, h.pX)(m.BVt.CHANNEL(t, g.VV.GAME_SERVERS))
-    }, [t, j]), O = s.useRef(null), L = y === a.M.GAME_SERVER_HOSTING_NEW_COACHMARK, M = s.useCallback(() => (0, i.jsx)(p.mn, {
+    }, [t, j]), O = s.useRef(null), L = v === a.M.GAME_SERVER_HOSTING_NEW_COACHMARK, M = s.useCallback(() => (0, i.jsx)(p.mn, {
         channelRowRef: O,
         guildId: t,
         markAsDismissed: j

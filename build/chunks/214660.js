@@ -30,13 +30,13 @@ let x = e => {
         notEmailVerified: E,
         notPhoneVerified: I,
         newAccount: N,
-        newMember: b
-    } = (0, l.bG)([h.A], () => h.A.getCheck(i), [i]), S = 0 === t ? g.intl.string(g.t["6zY8BI"]) : null, T = null, y = null;
-    return (0 === t && (C ? (T = g.intl.string(g.t.IRxUlG), y = g.intl.string(g.t.fiNVin)) : I ? (T = g.intl.string(g.t.vW8iUF), y = g.intl.string(g.t["50gfOv"])) : E ? (T = g.intl.string(g.t.vdSOpz), y = g.intl.string(g.t.lm1UKt)) : b ? (T = g.intl.formatToPlainString(g.t.v1ktYb, {
+        newMember: S
+    } = (0, l.bG)([h.A], () => h.A.getCheck(i), [i]), b = 0 === t ? g.intl.string(g.t["6zY8BI"]) : null, T = null, v = null;
+    return (0 === t && (C ? (T = g.intl.string(g.t.IRxUlG), v = g.intl.string(g.t.fiNVin)) : I ? (T = g.intl.string(g.t.vW8iUF), v = g.intl.string(g.t["50gfOv"])) : E ? (T = g.intl.string(g.t.vdSOpz), v = g.intl.string(g.t.lm1UKt)) : S ? (T = g.intl.formatToPlainString(g.t.v1ktYb, {
         min: p.$8o.MEMBER_AGE
-    }), y = g.intl.string(g.t.BddRzS)) : N && (T = g.intl.formatToPlainString(g.t.sncw41, {
+    }), v = g.intl.string(g.t.BddRzS)) : N && (T = g.intl.formatToPlainString(g.t.sncw41, {
         min: p.$8o.ACCOUNT_AGE
-    }), y = g.intl.string(g.t.BddRzS))), null == S || null == T) ? null : (0, s.jsxs)(r.lGe, {
+    }), v = g.intl.string(g.t.BddRzS))), null == b || null == T) ? null : (0, s.jsxs)(r.lGe, {
         className: _.kL,
         "aria-labelledby": x,
         children: [(0, s.jsx)("img", {
@@ -48,19 +48,19 @@ let x = e => {
             children: [(0, s.jsx)(r.Heading, {
                 variant: "heading-md/semibold",
                 id: x,
-                children: S
+                children: b
             }), (0, s.jsx)(r.Text, {
                 color: "text-default",
                 variant: "text-sm/normal",
                 children: T
             }), (0, s.jsxs)("div", {
                 className: _.UD,
-                children: [null != y ? (0, s.jsx)("div", {
+                children: [null != v ? (0, s.jsx)("div", {
                     "data-button-hoisted-classname-wrapper": !0,
                     className: _.FS,
                     children: (0, s.jsx)(r.Button, {
                         variant: "primary",
-                        text: y,
+                        text: v,
                         onClick: () => {
                             C ? c.R() : I ? (0, r.mMO)(async () => {
                                 let {

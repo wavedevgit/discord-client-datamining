@@ -32,21 +32,21 @@ let C = (0, a.A)(e => {
         } = e,
         {
             selectedParticipantId: N,
-            largeStream: b,
-            chatOpen: S
+            largeStream: S,
+            chatOpen: b
         } = (0, l.cf)([r.A], () => ({
             selectedParticipantId: r.A.getSelectedParticipantId(a.id),
             largeStream: r.A.getStageStreamSize(a.id),
             chatOpen: r.A.getChatOpen(a.id)
         }), [a.id]),
         T = (0, c.uy)(a.id),
-        y = (0, c.zy)(a.id, d.ip.AUDIENCE),
-        v = (0, l.bG)([o.A], () => null != N ? o.A.getParticipant(a.id, N) : null),
+        v = (0, c.zy)(a.id, d.ip.AUDIENCE),
+        y = (0, l.bG)([o.A], () => null != N ? o.A.getParticipant(a.id, N) : null),
         j = (0, c.E5)(a.id, d.ip.SPEAKER),
         R = j.filter(x),
         O = null != j.find(e => e.type === d.wY.STREAM),
         L = Math.floor((C - 32) / 102),
-        M = C < 424 ? 1 : C < 624 ? 2 : C < 824 || S ? 3 : 4,
+        M = C < 424 ? 1 : C < 624 ? 2 : C < 824 || b ? 3 : 4,
         D = {
             [d.ip.SPEAKER]: M,
             [d.ip.AUDIENCE]: L,
@@ -62,8 +62,8 @@ let C = (0, a.A)(e => {
             speakerTileWidth: t,
             speakerTileHeight: n
         }),
-        B = b ? C - 32 : Math.min(C - 64, 3 * k + 8),
-        H = e => e === U.length - 1 || 0 === y && 1 === e,
+        B = S ? C - 32 : Math.min(C - 64, 3 * k + 8),
+        H = e => e === U.length - 1 || 0 === v && 1 === e,
         [F, K] = s.useState(!1),
         [W, Y] = s.useState(!1);
     return (0, i.jsx)(A.A, {
@@ -81,8 +81,8 @@ let C = (0, a.A)(e => {
                 speakers: R,
                 channel: a,
                 isStreamLive: O
-            }, `speaker-header-${t}`) : 2 === t ? 0 === y ? null : (0, i.jsx)(m.A, {
-                participantCount: y,
+            }, `speaker-header-${t}`) : 2 === t ? 0 === v ? null : (0, i.jsx)(m.A, {
+                participantCount: v,
                 label: _.intl.string(_.t["3foUu5"]),
                 className: f.wx,
                 onClick: () => Y(!W),
@@ -116,7 +116,7 @@ let C = (0, a.A)(e => {
                             tileWidth: k,
                             channel: a,
                             participants: l,
-                            selectedParticipant: v,
+                            selectedParticipant: y,
                             popoutType: I
                         })
                     }, `speakers-${t}-${n}`);

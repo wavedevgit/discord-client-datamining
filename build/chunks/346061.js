@@ -32,14 +32,14 @@ function A(e) {
         cornerIconUrl: E,
         cornerIconOffsetX: I,
         cornerIconOffsetY: N,
-        ariaLabel: b
-    } = e, S = {
+        ariaLabel: S
+    } = e, b = {
         width: (0, o.FT9)(n),
         height: (0, o.FT9)(n)
-    }, T = (0, s.useId)(), y = C.size * d.Xq, v = null != x && (0, i.jsxs)("svg", {
-        width: y,
-        height: y,
-        viewBox: `0 0 ${y} ${y}`,
+    }, T = (0, s.useId)(), v = C.size * d.Xq, y = null != x && (0, i.jsxs)("svg", {
+        width: v,
+        height: v,
+        viewBox: `0 0 ${v} ${v}`,
         className: h.DX,
         "aria-hidden": !0,
         children: [(0, i.jsxs)("mask", {
@@ -47,8 +47,8 @@ function A(e) {
             children: [(0, i.jsx)("rect", {
                 x: 0,
                 y: 0,
-                width: y,
-                height: y,
+                width: v,
+                height: v,
                 fill: "white"
             }), null != E && function(e, t) {
                 let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 0,
@@ -81,12 +81,12 @@ function A(e) {
                     rx: e.stroke,
                     fill: "black"
                 })
-            }(C, y, I, N)]
+            }(C, v, I, N)]
         }), (0, i.jsx)("foreignObject", {
             x: 0,
             y: 0,
-            width: y,
-            height: y,
+            width: v,
+            height: v,
             mask: `url(#${T})`,
             children: (0, i.jsx)("img", {
                 className: h.M,
@@ -98,26 +98,26 @@ function A(e) {
     });
     return null != l || null != r ? (0, i.jsxs)(o.DUT, {
         className: a()(h.iE, h.Wn, g),
-        style: S,
+        style: b,
         onClick: l,
         onContextMenu: A,
         onMouseDown: r,
         onKeyDown: u,
         onMouseEnter: p ?? void 0,
         onMouseLeave: m ?? void 0,
-        "aria-label": b ?? void 0,
+        "aria-label": S ?? void 0,
         "aria-hidden": f,
-        children: [t, v]
+        children: [t, y]
     }) : (0, i.jsxs)("div", {
         className: a()(h.iE, g),
-        style: S,
+        style: b,
         onContextMenu: A ?? void 0,
         onMouseEnter: p ?? void 0,
         onMouseLeave: m ?? void 0,
         role: "img",
-        "aria-label": b ?? void 0,
+        "aria-label": S ?? void 0,
         "aria-hidden": f,
-        children: [t, v]
+        children: [t, y]
     })
 }
 

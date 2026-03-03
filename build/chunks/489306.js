@@ -25,11 +25,11 @@ var i = n(64700),
     E = n(229548),
     I = n(139032),
     N = n(52260),
-    b = n(294384),
-    S = n(864310),
+    S = n(294384),
+    b = n(864310),
     T = n(553103),
-    y = n(568065),
-    v = n(652215),
+    v = n(568065),
+    y = n(652215),
     j = n(49999);
 
 function R(e) {
@@ -39,7 +39,7 @@ function R(e) {
             indicator: p,
             showUnread: j
         } = function(e, t, n) {
-            let s = (0, S.A)(e).available,
+            let s = (0, b.A)(e).available,
                 {
                     shouldShow: o
                 } = (0, T.A)(e, "useGuildPowerupsNotificationIndicator"),
@@ -76,20 +76,20 @@ function R(e) {
                 T = g === a.M.GUILD_POWERUP_PERKS_COACHMARK,
                 {
                     available: j
-                } = (0, S.A)(e),
-                R = (0, l.bG)([c.A], () => c.A.getGuild(e)?.features.has(v.GuildFeatures.GAME_SERVERS) ?? !1),
+                } = (0, b.A)(e),
+                R = (0, l.bG)([c.A], () => c.A.getGuild(e)?.features.has(y.GuildFeatures.GAME_SERVERS) ?? !1),
                 O = (0, l.bG)([A.A], () => A.A.getLowestGameCostForGuild(e)),
-                L = (n = (0, x.gz)(e, "GuildPowerupsChannelRow"), r = (0, h.C$)(e, "GuildPowerupsChannelRow"), p = (0, f.RA)(e, "GuildPowerupsChannelRow"), m = (0, l.bG)([c.A], () => c.A.getGuild(e)?.features.has(v.GuildFeatures.GAME_SERVERS)), i.useMemo(() => {
-                    if (p && !Array.from(y.r9[y.q.GUILD_TAG_BADGE_PACKS_WAVE_TWO]).some(e => t?.unlockedPowerups?.[e] != null)) return y.q.GUILD_TAG_BADGE_PACKS_WAVE_TWO;
-                    if (r && !m) return y.q.GAME_SERVER_HOSTING;
-                    if (!Array.from(y.r9[y.q.GUILD_TAG_BADGE_PACKS_WAVE_ONE]).some(e => t?.unlockedPowerups?.[e] != null)) return y.q.GUILD_TAG_BADGE_PACKS_WAVE_ONE;
+                L = (n = (0, x.gz)(e, "GuildPowerupsChannelRow"), r = (0, h.C$)(e, "GuildPowerupsChannelRow"), p = (0, f.RA)(e, "GuildPowerupsChannelRow"), m = (0, l.bG)([c.A], () => c.A.getGuild(e)?.features.has(y.GuildFeatures.GAME_SERVERS)), i.useMemo(() => {
+                    if (p && !Array.from(v.r9[v.q.GUILD_TAG_BADGE_PACKS_WAVE_TWO]).some(e => t?.unlockedPowerups?.[e] != null)) return v.q.GUILD_TAG_BADGE_PACKS_WAVE_TWO;
+                    if (r && !m) return v.q.GAME_SERVER_HOSTING;
+                    if (!Array.from(v.r9[v.q.GUILD_TAG_BADGE_PACKS_WAVE_ONE]).some(e => t?.unlockedPowerups?.[e] != null)) return v.q.GUILD_TAG_BADGE_PACKS_WAVE_ONE;
                     if (n) {
                         let n = s.FB,
-                            i = y.wr[n],
+                            i = v.wr[n],
                             l = t?.unlockedPowerups?.[n] != null;
-                        if (null == i && !l) return y.q.VANITY_URL;
+                        if (null == i && !l) return v.q.VANITY_URL;
                         let a = (0, u.P7)(e);
-                        if (null != a && null != i && a < i && !l) return y.q.VANITY_URL
+                        if (null != a && null != i && a < i && !l) return v.q.VANITY_URL
                     }
                     return 0
                 }, [n, e, t, r, m, p])),
@@ -105,14 +105,14 @@ function R(e) {
                     if (null == t || T || G || k || F) return;
                     let n = function(e, t) {
                         let n = u.fi.find(e => {
-                            let n = y.a8[e],
+                            let n = v.a8[e],
                                 i = null != n ? t.unlockedPowerups[n] : void 0;
-                            return null != i && i.user_id !== y.mB
+                            return null != i && i.user_id !== v.mB
                         });
                         if (null == n) return;
-                        let i = y.On[n];
+                        let i = v.On[n];
                         if (null == i || (0, o.zs)(i, e)) return;
-                        let s = y.a8[n],
+                        let s = v.a8[n],
                             l = null != s ? t.allPowerups[s] : void 0;
                         if (null != l) return {
                             type: _.o.LEVEL_REACHED,
@@ -124,14 +124,14 @@ function R(e) {
                     }(e, t);
                     if (null != n) return n;
                     let i = function(e, t, n) {
-                        let i = c.A.getGuild(e)?.premiumTier ?? v.TVA.NONE,
-                            s = Array.from(y.oN.values()).flatMap(s => s.length <= 0 || s.some(e => {
+                        let i = c.A.getGuild(e)?.premiumTier ?? y.TVA.NONE,
+                            s = Array.from(v.oN.values()).flatMap(s => s.length <= 0 || s.some(e => {
                                 if (null != t.unlockedPowerups[e]) return !0;
-                                let n = y.wr[e];
+                                let n = v.wr[e];
                                 return null != n && !!(i >= n)
                             }) ? [] : s.map(i => {
                                 let s = t.allPowerups[i];
-                                return null == s || n < s.cost || !s.dependencies.every(e => null != t.unlockedPowerups[e]) || (0, b.t)(e, s, "maybeGetPerkPurchaseablePopoutDCF") ? null : s
+                                return null == s || n < s.cost || !s.dependencies.every(e => null != t.unlockedPowerups[e]) || (0, S.t)(e, s, "maybeGetPerkPurchaseablePopoutDCF") ? null : s
                             })).filter(d.Vq);
                         if (0 !== s.length) {
                             if (1 === s.length && !(0, o.zs)(a.V.GUILD_POWERUP_SINGLE_SKU_PURCHASE_COACHMARK, e)) return {
@@ -169,11 +169,11 @@ function R(e) {
                         markAsDismissed: C
                     };
                     if (G) {
-                        if (L === y.q.GAME_SERVER_HOSTING) return {
+                        if (L === v.q.GAME_SERVER_HOSTING) return {
                             type: _.o.GAME_SERVER_HOSTING_AVAILABLE,
                             markAsDismissed: D
                         };
-                        let e = y.r9[L],
+                        let e = v.r9[L],
                             n = Object.values(t.allPowerups).filter(t => e.has(t.skuId));
                         if (0 === n.length) return;
                         return {
@@ -218,9 +218,9 @@ function O(e) {
         n?.popout?.type != null && e.has(n.popout.type) || n?.popout?.markAsDismissed(j.i.AUTO_DISMISS)
     }, [n]), i.useEffect(() => {
         null != t && u.fi.forEach(n => {
-            let i = y.a8[n];
+            let i = v.a8[n];
             if (null == i || null == t.unlockedPowerups[i]) return;
-            let s = y.On[n];
+            let s = v.On[n];
             null != s && (0, o._$)(s, e, !1, j.i.AUTO_DISMISS)
         })
     }, [e, t])

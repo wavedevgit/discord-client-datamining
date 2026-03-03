@@ -74,9 +74,9 @@ function x(e) {
         mode: E,
         mentionCount: I,
         targetChannelId: N
-    } = "bottom" === t ? A : x, b = E === p.k.HIDDEN, S = (0, c.zhh)({
+    } = "bottom" === t ? A : x, S = E === p.k.HIDDEN, b = (0, c.zhh)({
         to: {
-            transform: b ? "bottom" === t ? "translateY(180%)" : "translateY(-180%)" : "translateY(0%)"
+            transform: S ? "bottom" === t ? "translateY(180%)" : "translateY(-180%)" : "translateY(0%)"
         },
         config: _
     }, C ? "respect-motion-settings" : "animate-never"), T = s.useCallback(e => {
@@ -89,8 +89,8 @@ function x(e) {
         }),
         children: (0, i.jsx)(r.animated.div, {
             className: g.pK,
-            style: S,
-            "aria-hidden": b,
+            style: b,
+            "aria-hidden": S,
             children: E === p.k.HIDDEN ? (0, i.jsx)("div", {
                 className: a()(g.M0, g.Te)
             }) : E === p.k.UNREAD ? (0, i.jsxs)(c.DUT, {

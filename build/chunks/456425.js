@@ -24,11 +24,11 @@ var i = n(627968),
     E = n(245205),
     I = n(322387),
     N = n(995273),
-    b = n(96511),
-    S = n(160098),
+    S = n(96511),
+    b = n(160098),
     T = n(429604),
-    y = n(9905),
-    v = n(717607),
+    v = n(9905),
+    y = n(717607),
     j = n(457404),
     R = n(652215),
     O = n(985018),
@@ -140,26 +140,26 @@ let k = s.memo(function(e) {
                 })
             }
         }, [t, d, o]), m = null;
-        t.type === I.Uo.INCOMING_FRIEND_REQUESTS && null != t.other_user ? m = (0, i.jsx)(v.A, {
+        t.type === I.Uo.INCOMING_FRIEND_REQUESTS && null != t.other_user ? m = (0, i.jsx)(y.A, {
             userId: t.other_user.id
-        }) : t.type === I.Uo.INCOMING_GAME_FRIEND_REQUESTS && null != t.other_user && (m = (0, i.jsx)(v.A, {
+        }) : t.type === I.Uo.INCOMING_GAME_FRIEND_REQUESTS && null != t.other_user && (m = (0, i.jsx)(y.A, {
             userId: t.other_user.id,
             applicationId: t.applicationId
         }));
         let g = null != t.local_id,
-            _ = (0, b.A)({
+            _ = (0, S.A)({
                 item: t,
                 renderApplication: e => (0, i.jsx)(w, {
                     applicationId: e
                 })
             }),
             {
-                emoji_id: S,
+                emoji_id: b,
                 emoji_name: O
             } = t,
-            M = null != S || null != O ? (0, i.jsx)(r.A, {
+            M = null != b || null != O ? (0, i.jsx)(r.A, {
                 className: L.Zg,
-                emojiId: S,
+                emojiId: b,
                 emojiName: O
             }) : null;
         return (0, i.jsxs)("div", {
@@ -173,7 +173,7 @@ let k = s.memo(function(e) {
                 onClick: A,
                 children: [d ? null : (0, i.jsx)("div", {
                     className: L.gy
-                }), (0, i.jsx)(y.J, {
+                }), (0, i.jsx)(v.J, {
                     item: t
                 }), (0, i.jsxs)("div", {
                     className: L.rf,
@@ -202,7 +202,7 @@ let k = s.memo(function(e) {
         let {
             items: t
         } = e, n = m.ns.useSetting();
-        return (0, S.q)(t), (0, i.jsx)(i.Fragment, {
+        return (0, b.q)(t), (0, i.jsx)(i.Fragment, {
             children: t.map(e => (0, i.jsx)(k, {
                 item: e,
                 ackedBeforeId: n

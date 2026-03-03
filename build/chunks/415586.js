@@ -24,11 +24,11 @@ var i = n(627968),
     E = n(31717),
     I = n(71393),
     N = n(977997),
-    b = n(823471),
-    S = n(37411),
+    S = n(823471),
+    b = n(37411),
     T = n(652215),
-    y = n(985018),
-    v = n(266920);
+    v = n(985018),
+    y = n(266920);
 
 function j(e) {
     var t;
@@ -45,7 +45,7 @@ function j(e) {
             type: "SIDEBAR_CLOSE",
             baseChannelId: t.parent_id
         }), (0, x.N9)(t, {
-            source: S.H9.VOICE_AUTO_OPEN
+            source: b.H9.VOICE_AUTO_OPEN
         }))
     }, [l, t]);
     let G = s.useRef(!1);
@@ -61,7 +61,7 @@ function j(e) {
                 channelId: L.id
             })
         }, [L, O]), null == L || null == M) return null;
-    let U = (0, i.jsx)(b.A, {
+    let U = (0, i.jsx)(S.A, {
         channel: L,
         baseChannelId: R
     });
@@ -71,7 +71,7 @@ function j(e) {
             draftType: E.C.ChannelMessage
         }), (0, i.jsx)(_.Ay, {
             toolbar: U,
-            "aria-label": y.intl.string(y.t.Pwe8tN),
+            "aria-label": v.intl.string(v.t.Pwe8tN),
             children: (0, f.zF)({
                 channel: L,
                 channelName: D,
@@ -93,7 +93,7 @@ function j(e) {
                 }
             })
         }), (0, i.jsx)("div", {
-            className: v.T,
+            className: y.T,
             children: (0, i.jsx)(m.A, {
                 channel: L,
                 guild: M,

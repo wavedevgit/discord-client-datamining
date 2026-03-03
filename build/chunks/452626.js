@@ -23,7 +23,7 @@ function s(t) {
         tooltip: m,
         loading: h,
         disabled: g,
-        onClick: f
+        onClick: E
     } = (0, a._B)(e, n, s);
     return (0, i.jsx)(l.m, {
         text: m,
@@ -34,7 +34,7 @@ function s(t) {
             text: p,
             fullWidth: u,
             onClick: () => {
-                c?.(), f()
+                c?.(), E()
             },
             disabled: g,
             loading: h,

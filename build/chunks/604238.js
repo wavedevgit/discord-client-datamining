@@ -1,7 +1,7 @@
 /** chunk id: 604238, original params: e,l,t (module,exports,require) **/
 t.d(l, {
-    E: () => y,
-    e: () => E
+    E: () => E,
+    e: () => y
 });
 var r = t(64700),
     o = t(735438),
@@ -18,12 +18,12 @@ var r = t(64700),
     _ = t(18769),
     b = t(458306),
     S = t(282203),
-    C = t(22519),
-    T = t(607795),
+    T = t(22519),
+    C = t(607795),
     A = t(954644),
     g = t(930948),
     k = t(634791);
-let y = {
+let E = {
         ContainedHero: n.A,
         BasicHero: e => {
             let {
@@ -46,8 +46,8 @@ let y = {
         ShopProductCard: A.A,
         StorefrontProductCard: g.A,
         SkuList: S.A,
-        SubLayout: C.A,
-        SubTemplate: T.A,
+        SubLayout: T.A,
+        SubTemplate: C.A,
         Button: b.ar,
         Heading: b.Oo,
         Stack: b.Kp,
@@ -56,12 +56,12 @@ let y = {
         Any2: k.A,
         Any3: k.A
     },
-    E = function() {
+    y = function() {
         let {
             overrides: e
         } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
         return r.useMemo(() => {
-            let l = (0, o.cloneDeep)(y);
+            let l = (0, o.cloneDeep)(E);
             if (null != e)
                 for (let [t, r] of Object.entries(e)) null != r && (l[t] = r);
             return l

@@ -92,10 +92,10 @@ function g(e) {
             ...I
         },
         "aria-setsize": N,
-        "aria-posinset": b
-    } = e, [S, T] = s.useState(!1), y = s.useCallback(() => {
+        "aria-posinset": S
+    } = e, [b, T] = s.useState(!1), v = s.useCallback(() => {
         l || T(!0), x?.(!0)
-    }, [l, x]), v = s.useCallback(() => {
+    }, [l, x]), y = s.useCallback(() => {
         l || T(!1), x?.(!1)
     }, [l, x]), j = n || null == a ? null : (0, u.oi)(a), R = !n && r > 0 ? (0, u.wN)(r, c ? o.LU0.colors.BACKGROUND_MOD_STRONG.css : o.LU0.colors.BACKGROUND_FEEDBACK_NOTIFICATION.css) : null;
     return (0, i.jsx)(o.vN3, {
@@ -103,8 +103,8 @@ function g(e) {
             className: A.H3,
             onClick: _,
             onContextMenu: f,
-            onMouseEnter: y,
-            onMouseLeave: v,
+            onMouseEnter: v,
+            onMouseLeave: y,
             onKeyDown: C,
             onFocus: E,
             focusProps: {
@@ -113,7 +113,7 @@ function g(e) {
             ...I,
             role: "treeitem",
             "aria-setsize": N,
-            "aria-posinset": b,
+            "aria-posinset": S,
             "aria-expanded": n,
             "aria-owns": p,
             children: [(0, i.jsx)(o.AC4, {
@@ -136,7 +136,7 @@ function g(e) {
                         children: g
                     }) : (0, i.jsx)(m, {
                         folderNode: t,
-                        hovered: S,
+                        hovered: b,
                         sorting: l
                     })
                 })

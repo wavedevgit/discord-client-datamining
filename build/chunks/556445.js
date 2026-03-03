@@ -23,8 +23,8 @@ function o(t) {
     } = t, {
         tooltip: h,
         loading: g,
-        disabled: f,
-        onClick: E
+        disabled: E,
+        onClick: f
     } = (0, s.J$)(e, n, u, a.Ay.getNickname(d, o, n));
     return (0, i.jsx)(l.m, {
         text: h,
@@ -33,9 +33,9 @@ function o(t) {
             size: c,
             variant: A,
             onClick: () => {
-                p?.(), E()
+                p?.(), f()
             },
-            disabled: f,
+            disabled: E,
             loading: g,
             "aria-label": h ?? e.name,
             ...m

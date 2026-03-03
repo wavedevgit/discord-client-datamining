@@ -11,8 +11,8 @@ var a = n(311907),
     l = n(631305),
     A = n(71393),
     c = n(967198),
-    d = n(652215),
-    _ = n(874864),
+    _ = n(652215),
+    d = n(874864),
     u = n(985018),
     L = n(234518);
 
@@ -25,7 +25,7 @@ function m(t) {
     } = t, E = (0, a.bG)([c.A], () => c.A.getGuildId()), N = (0, a.bG)([A.A], () => A.A.getGuild(E)), {
         analyticsLocations: R
     } = (0, r.Ay)();
-    return null == N || N.features.has(d.GuildFeatures.ANIMATED_BANNER) || !m && N.features.has(d.GuildFeatures.BANNER) ? null : (0, i.jsxs)("div", {
+    return null == N || N.features.has(_.GuildFeatures.ANIMATED_BANNER) || !m && N.features.has(_.GuildFeatures.BANNER) ? null : (0, i.jsxs)("div", {
         className: L.kL,
         children: [(0, i.jsx)(o._Jp, {
             color: o.LU0.unsafe_rawColors.GUILD_BOOSTING_PINK,
@@ -43,7 +43,7 @@ function m(t) {
                     let t = {
                         section: e,
                         page: n,
-                        object: d.ZSU.UPSELL_HEADER
+                        object: _.ZSU.UPSELL_HEADER
                     };
                     null != g ? (0, s._)({
                         analyticsLocations: R,
@@ -55,7 +55,7 @@ function m(t) {
                         analyticsLocations: R,
                         analyticsSourceLocation: t,
                         guild: N,
-                        perks: m ? (0, _.Pf)() : (0, _.QR)()
+                        perks: m ? (0, d.Pf)() : (0, d.QR)()
                     })
                 },
                 textVariant: "text-sm/semibold"

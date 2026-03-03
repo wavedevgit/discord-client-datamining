@@ -5,8 +5,8 @@ s.d(e, {
 var n = s(627968);
 s(64700);
 var a = s(523527),
-    l = s(976860),
-    o = s(954571),
+    o = s(976860),
+    l = s(954571),
     i = s(414345),
     r = s(244975),
     c = s(788868),
@@ -26,10 +26,10 @@ function h(t) {
     });
 
     function g() {
-        (0, a.A)(), e(), o.default.track(d.HAw.PREMIUM_PROMOTION_OPENED, {
+        (0, a.A)(), e(), l.default.track(d.HAw.PREMIUM_PROMOTION_OPENED, {
             location_section: d.JJy.VOICE_FILTERS_UPSELL_MODAL,
             location_object: d.ZSU.NAVIGATION_LINK
-        }), (0, l.pX)(d.BVt.APPLICATION_STORE)
+        }), (0, o.pX)(d.BVt.APPLICATION_STORE)
     }
     return (0, i.g1)({
         location: "VoiceFiltersUpsell"
@@ -43,7 +43,6 @@ function h(t) {
         secondaryCTA: C.intl.string(C.t.ZnqyZ2),
         onSecondaryClick: g,
         onClose: e,
-        showEnhancedUpsell: !0,
         showBetaBadge: !0,
         ...h
     }) : (0, n.jsx)(r.A, {

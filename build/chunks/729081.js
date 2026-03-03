@@ -24,11 +24,11 @@ var i = n(627968),
     E = n(79871),
     I = n(592356),
     N = n(568751),
-    b = n(620406),
-    S = n(84511),
+    S = n(620406),
+    b = n(84511),
     T = n(188275),
-    y = n(652215),
-    v = n(806931),
+    v = n(652215),
+    y = n(806931),
     j = n(985018),
     R = n(877409);
 let O = `vc-gifting-${(0,o.A)()}`;
@@ -52,7 +52,7 @@ function L(e) {
         U = (0, d.yK)([_.A], () => {
             let e = new Set;
             for (let t of G)
-                if ((0, v.Xw)(t) || (0, v.Ay)(t)) {
+                if ((0, y.Xw)(t) || (0, y.Ay)(t)) {
                     for (let n of _.A.getActivities(t.user.id))
                         if (n.application_id === D?.id || D?.linkedGames?.some(e => e.id === n.application_id) === !0) {
                             e.add(t.user.id);
@@ -61,7 +61,7 @@ function L(e) {
                 } return Array.from(e).sort()
         }, [G, D]),
         P = s.useMemo(() => {
-            let e = G.map(e => (0, v.Xw)(e) || (0, v.Ay)(e) ? e.user.id : null).filter(x.Vq);
+            let e = G.map(e => (0, y.Xw)(e) || (0, y.Ay)(e) ? e.user.id : null).filter(x.Vq);
             return (0, r.uniq)([...U, ...e])
         }, [G, U]),
         {
@@ -93,8 +93,8 @@ function L(e) {
                     showIcons: s,
                     userIdsForGifting: P,
                     userIdsForRecommendation: n
-                }, t.skuId) : (0, i.jsx)(b.A, {
-                    variant: n.length > 0 ? b.$.WISHLIST : b.$.POPULAR,
+                }, t.skuId) : (0, i.jsx)(S.A, {
+                    variant: n.length > 0 ? S.$.WISHLIST : S.$.POPULAR,
                     wishlistItem: t,
                     userIdsForRecommendation: n,
                     userIdsForGifting: P,
@@ -105,7 +105,7 @@ function L(e) {
             })
         }, [L.guild_id, L.id, k, V, P, M, D]);
     return s.useEffect(() => {
-        0 !== k.length && f.default.track(y.HAw.COMMERCE_SHOP_VC_GIFT_BUTTON_VIEWED, {
+        0 !== k.length && f.default.track(v.HAw.COMMERCE_SHOP_VC_GIFT_BUTTON_VIEWED, {
             guild_id: L.guild_id,
             channel_id: L.id,
             sku_ids: k.map(e => e.skuId)
@@ -141,7 +141,7 @@ function L(e) {
                     children: "loading" === w || 0 === k.length ? (0, i.jsx)(c.y$y, {
                         className: R.Lq
                     }) : B
-                }), (0, i.jsx)(S.A, {
+                }), (0, i.jsx)(b.A, {
                     location: "social_layer_gifting_mini_shelf",
                     className: R.Ij
                 })]

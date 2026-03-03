@@ -1,7 +1,7 @@
 /** chunk id: 33324, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => b
+    A: () => S
 }), n(321073);
 var i = n(417597),
     s = n(554146),
@@ -25,16 +25,16 @@ var i = n(417597),
     I = n(281405),
     N = n(652215);
 
-function b(e) {
+function S(e) {
     let t = (0, m.A)(e.id),
         n = (0, o.W)(e.id),
-        b = (0, p.vz)(e.id),
-        S = (0, l.r)(e),
+        S = (0, p.vz)(e.id),
+        b = (0, l.r)(e),
         T = (0, C.jz)(e),
-        y = (0, E.kt)({
+        v = (0, E.kt)({
             location: "guild-action-rows"
         }),
-        v = (0, h.d)(e.id),
+        y = (0, h.d)(e.id),
         j = (0, i.bG)([d.h], () => d.h.getNewMemberActions(e.id), [e.id]),
         R = (0, A.A)(e.id),
         O = (0, u.jY)(e.id),
@@ -52,5 +52,5 @@ function b(e) {
         H = (0, r.ws)(e, {
             location: "guild-action-rows"
         });
-    return D && M.push(I.n.GUILD_HUB_HEADER_OPTIONS), !O && v && R && null != j && j.length > 0 ? M.push(I.n.GUILD_NEW_MEMBER_ACTIONS_PROGRESS_BAR) : H && M.push(I.n.GUILD_PREMIUM_PROGRESS_BAR), !D && v && M.push(I.n.GUILD_HOME), t && M.push(I.n.GUILD_SCHEDULED_EVENTS), !D && G && M.push(I.n.CHANNELS_AND_ROLES), b && M.push(I.n.GUILD_ROLE_SUBSCRIPTIONS), S && M.push(I.n.GUILD_SHOP), T && y && M.push(I.n.GUILD_GAME_SHOP), (L && (G || U) || n && e.features.has(N.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL)) && M.push(I.n.GUILD_MOD_DASH_MEMBER_SAFETY), P && M.push(I.n.GUILD_BOOSTS), w && (k ? M.push(I.n.GAME_SERVERS) : null != B && M.push(I.n.GAME_SERVERS_EMPTY)), M
+    return D && M.push(I.n.GUILD_HUB_HEADER_OPTIONS), !O && y && R && null != j && j.length > 0 ? M.push(I.n.GUILD_NEW_MEMBER_ACTIONS_PROGRESS_BAR) : H && M.push(I.n.GUILD_PREMIUM_PROGRESS_BAR), !D && y && M.push(I.n.GUILD_HOME), t && M.push(I.n.GUILD_SCHEDULED_EVENTS), !D && G && M.push(I.n.CHANNELS_AND_ROLES), S && M.push(I.n.GUILD_ROLE_SUBSCRIPTIONS), b && M.push(I.n.GUILD_SHOP), T && v && M.push(I.n.GUILD_GAME_SHOP), (L && (G || U) || n && e.features.has(N.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL)) && M.push(I.n.GUILD_MOD_DASH_MEMBER_SAFETY), P && M.push(I.n.GUILD_BOOSTS), w && (k ? M.push(I.n.GAME_SERVERS) : null != B && M.push(I.n.GAME_SERVERS_EMPTY)), M
 }
