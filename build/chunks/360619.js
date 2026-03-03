@@ -1,9 +1,9 @@
 /** chunk id: 360619, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    AC: () => M,
-    Lu: () => G,
-    NI: () => k,
-    PH: () => D
+    AC: () => D,
+    Lu: () => M,
+    NI: () => U,
+    PH: () => L
 }), n(560197), n(321073);
 var i = n(64700),
     s = n(311907),
@@ -28,88 +28,85 @@ var i = n(64700),
     I = n(628965),
     f = n(287809),
     N = n(80422),
-    b = n(64313),
-    j = n(253932),
-    v = n(368631),
-    O = n(682262),
-    R = n(987281),
-    y = n(531525),
-    P = n(654487),
-    L = n(985018);
+    b = n(253932),
+    j = n(368631),
+    v = n(682262),
+    O = n(987281),
+    R = n(531525),
+    y = n(654487),
+    P = n(985018);
 
-function D() {
+function L() {
     let e = (0, m.IO)().length,
         t = (0, _.l)(),
         n = (0, s.bG)([I.A], () => I.A.getSearchParams()),
         a = (0, u.VT)(),
-        C = (0, O.b_)(),
+        C = (0, v.b_)(),
         {
-            shouldMergeGameSettings: R
+            shouldMergeGameSettings: O
         } = N.X.useExperiment({
             location: "settings"
         }),
-        y = f.default.getCurrentUser()?.isStaff() ?? !1,
-        L = (0, p.Lc)({
+        R = f.default.getCurrentUser()?.isStaff() ?? !1,
+        P = (0, p.Lc)({
             location: "settings"
         }),
-        D = (0, x.Rv)({
+        L = (0, x.Rv)({
             location: "settings"
         }),
-        M = (0, r.H)(),
-        G = (0, A.H)({
-            location: P.rE.USER_SETTINGS_SEARCH_GIFT_INVENTORY
+        D = (0, r.H)(),
+        M = (0, A.H)({
+            location: y.rE.USER_SETTINGS_SEARCH_GIFT_INVENTORY
         }),
-        U = (0, s.bG)([T.A], () => T.A.hasLibraryApplication()),
-        k = (0, s.bG)([E.default], () => E.default.hasTOTPEnabled()),
-        V = j.Q_.useSetting(),
-        H = (0, c.A)(),
-        w = (0, d.A)() ?? !0,
-        B = (0, h.G)()?.length > 0,
+        G = (0, s.bG)([T.A], () => T.A.hasLibraryApplication()),
+        U = (0, s.bG)([E.default], () => E.default.hasTOTPEnabled()),
+        k = b.Q_.useSetting(),
+        V = (0, c.A)(),
+        H = (0, d.A)() ?? !0,
+        w = (0, h.G)()?.length > 0,
         {
-            hasBlockedUsers: Y,
-            hasIgnoredUsers: F
+            hasBlockedUsers: B,
+            hasIgnoredUsers: Y
         } = (0, s.cf)([S.A], () => ({
             hasBlockedUsers: S.A.getBlockedIDs().length > 0,
             hasIgnoredUsers: S.A.getIgnoredIDs().length > 0
         })),
-        z = (0, g.fk)(),
-        W = (0, b.j)("SettingRendererUtils"),
-        K = z || W,
+        F = (0, g.fk)(),
         {
-            enabled: Z
+            enabled: z
         } = (0, o.us)("useGenerateUserSettingsSections", {
             autoTrackExposure: !1
         }),
-        q = (0, l.i)("useGenerateUserSettingsSections");
-    return i.useMemo(() => (0, v.zj)({
+        W = (0, l.i)("useGenerateUserSettingsSections");
+    return i.useMemo(() => (0, j.zj)({
         unseenGiftCount: e,
         showPrepaidPaymentPastDueWarning: t,
         searchParams: n,
         numOfPendingFamilyRequests: a,
         isOverlaySupported: C,
-        shouldMergeGameSettings: R,
-        isStaff: y,
-        isInappropriateConversationWarningEnabled: L,
-        isInapproprateConversationsDefaultOn: D,
-        paymentsBlocked: M,
-        isEligibleForQuests: G,
-        isStricterMessageRequestsEnabled: H,
-        hasLibraryApplication: U,
-        hasTOTPEnabled: k,
-        developerMode: V,
-        isAdultUser: w,
-        hasSecureFramesVerifiedUserIds: B,
-        hasIgnoredUsers: F,
-        hasBlockedUsers: Y,
-        hasAgeGatedFeature: K,
-        isChatMentionSuggestionsSettingEnabled: Z,
-        isHDRAccessibilitySettingExperimentEnabled: q
-    }), [V, Y, F, U, B, k, n, w, G, D, L, C, y, H, a, M, R, t, e, K, Z, q])
+        shouldMergeGameSettings: O,
+        isStaff: R,
+        isInappropriateConversationWarningEnabled: P,
+        isInapproprateConversationsDefaultOn: L,
+        paymentsBlocked: D,
+        isEligibleForQuests: M,
+        isStricterMessageRequestsEnabled: V,
+        hasLibraryApplication: G,
+        hasTOTPEnabled: U,
+        developerMode: k,
+        isAdultUser: H,
+        hasSecureFramesVerifiedUserIds: w,
+        hasIgnoredUsers: Y,
+        hasBlockedUsers: B,
+        hasAgeGatedFeature: F,
+        isChatMentionSuggestionsSettingEnabled: z,
+        isHDRAccessibilitySettingExperimentEnabled: W
+    }), [k, B, Y, G, w, U, n, H, M, L, P, C, R, V, a, D, O, t, e, F, z, W])
 }
 
-function M(e) {
-    let t = R.a.useField("searchResults"),
-        n = D(),
+function D(e) {
+    let t = O.a.useField("searchResults"),
+        n = L(),
         i = n[e],
         s = Object.fromEntries(Object.entries(n).filter(e => {
             let [t, n] = e;
@@ -154,8 +151,8 @@ function M(e) {
         } return l
 }
 
-function G() {
-    let e = D(),
+function M() {
+    let e = L(),
         {
             shouldMergeGameSettings: t
         } = N.X.useExperiment({
@@ -165,33 +162,33 @@ function G() {
             let {
                 shouldMergeGameSettings: t
             } = e, n = C.A.isDeveloper, i = [{
-                header: L.intl.string(L.t.cduTBL),
-                settings: [y.H.ACCOUNT, y.H.GAMES, y.H.PROFILE_CUSTOMIZATION, y.H.CONTENT_SOCIAL, y.H.DATA_PRIVACY, y.H.PRIVACY_FAMILY_CENTER, y.H.AUTHORIZED_APPS, y.H.SESSIONS, y.H.CONNECTIONS, y.H.PRIVATE_BROWSING_PERK]
+                header: P.intl.string(P.t.cduTBL),
+                settings: [R.H.ACCOUNT, R.H.GAMES, R.H.PROFILE_CUSTOMIZATION, R.H.CONTENT_SOCIAL, R.H.DATA_PRIVACY, R.H.PRIVACY_FAMILY_CENTER, R.H.AUTHORIZED_APPS, R.H.SESSIONS, R.H.CONNECTIONS, R.H.PRIVATE_BROWSING_PERK]
             }, {
-                header: L.intl.string(L.t["4uOdGr"]),
+                header: P.intl.string(P.t["4uOdGr"]),
                 divider: !0,
-                settings: [y.H.PREMIUM, y.H.GUILD_BOOSTING, y.H.SUBSCRIPTIONS, y.H.GIFT_INVENTORY, y.H.BILLING]
+                settings: [R.H.PREMIUM, R.H.GUILD_BOOSTING, R.H.SUBSCRIPTIONS, R.H.GIFT_INVENTORY, R.H.BILLING]
             }, {
-                header: L.intl.string(L.t.f2n1TP),
+                header: P.intl.string(P.t.f2n1TP),
                 divider: !0,
-                settings: [y.H.APPEARANCE, y.H.ACCESSIBILITY, y.H.POGGERMODE, y.H.CHAT, y.H.KEYBINDS, y.H.LANGUAGE, y.H.WINDOW_SETTINGS, y.H.LINUX_SETTINGS, y.H.SETTINGS_ADVANCED]
+                settings: [R.H.APPEARANCE, R.H.ACCESSIBILITY, R.H.POGGERMODE, R.H.CHAT, R.H.KEYBINDS, R.H.LANGUAGE, R.H.WINDOW_SETTINGS, R.H.LINUX_SETTINGS, R.H.SETTINGS_ADVANCED]
             }, {
                 divider: !0,
-                settings: [y.H.CHANGELOG, y.H.MERCHANDISE]
+                settings: [R.H.CHANGELOG, R.H.MERCHANDISE]
             }, {
                 header: "Developer Only",
                 divider: !0,
-                settings: n ? [y.H.EXPERIMENTS, y.H.DEVELOPER_OPTIONS] : []
+                settings: n ? [R.H.EXPERIMENTS, R.H.DEVELOPER_OPTIONS] : []
             }, {
                 divider: !0,
-                settings: [y.H.LOGOUT]
+                settings: [R.H.LOGOUT]
             }, {
                 divider: !0,
-                settings: [y.H.SOCIAL_LINKS, y.H.CLIENT_DEBUG_INFO]
+                settings: [R.H.SOCIAL_LINKS, R.H.CLIENT_DEBUG_INFO]
             }], s = {
-                header: L.intl.string(L.t.SmHCFf),
+                header: P.intl.string(P.t.SmHCFf),
                 divider: !0,
-                settings: [y.H.ACTIVITY_PRIVACY, y.H.REGISTERED_GAMES, y.H.OVERLAY]
+                settings: [R.H.ACTIVITY_PRIVACY, R.H.REGISTERED_GAMES, R.H.OVERLAY]
             };
             return t ? i : i.toSpliced(3, 0, s)
         })({
@@ -200,7 +197,7 @@ function G() {
     return i.useMemo(() => {
         var t, i;
         let s, l, r;
-        return s = [], l = U(e), t = e, i = new Set(Array.from((void 0) ?? []).filter(e => l.has(e))), r = new Map, null != i && i.forEach(e => {
+        return s = [], l = G(e), t = e, i = new Set(Array.from((void 0) ?? []).filter(e => l.has(e))), r = new Map, null != i && i.forEach(e => {
             let n = t[e].parent;
             for (; null != n && null != t[n].parent;) n = t[n].parent;
             if (null != n) {
@@ -223,15 +220,15 @@ function G() {
     }, [n, e])
 }
 
-function U(e) {
+function G(e) {
     return new Map(Object.entries(e).filter(e => {
         let [t, n] = e;
         return null != n.searchableTitles && (null == n.predicate || n.predicate()) && (null == n.unsearchable || !1 === n.unsearchable)
     }))
 }
 
-function k(e) {
-    return Array.from(U(e).entries()).map(e => {
+function U(e) {
+    return Array.from(G(e).entries()).map(e => {
         let [t, n] = e;
         return [t, n.searchableTitles]
     })
