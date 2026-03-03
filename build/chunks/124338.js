@@ -5,8 +5,8 @@ t.d(l, {
 var r = t(311907),
     o = t(73153);
 let n = {},
-    i = {},
     a = {},
+    i = {},
     d = {},
     c = new Set,
     s = {};
@@ -16,14 +16,14 @@ class u extends r.Ay.Store {
         return null != e ? n[e] : null
     }
     getProduct(e) {
-        return null != e ? i[e] : null
+        return null != e ? a[e] : null
     }
     getProductBySkuId(e) {
-        let l = null != e ? a[e] : null;
-        return l?.productId != null ? i[l.productId] : null
+        let l = null != e ? i[e] : null;
+        return l?.productId != null ? a[l.productId] : null
     }
     getSku(e) {
-        return null != e ? a[e] : null
+        return null != e ? i[e] : null
     }
     getSkuPrices(e) {
         return null != e ? d[e] : null
@@ -52,8 +52,8 @@ let h = new u(o.h, {
         } = e;
         l.products?.forEach(e => {
             e.skus.forEach(e => {
-                a[e.id] = e, delete s[e.id], c.delete(e.id)
-            }), i[e.id] = e, delete s[e.id], c.delete(e.id)
+                i[e.id] = e, delete s[e.id], c.delete(e.id)
+            }), a[e.id] = e, delete s[e.id], c.delete(e.id)
         }), n[l.id] = l, delete s[l.id], c.delete(l.id)
     },
     STOREFRONT_COLLECTION_WITH_PRODUCTS_FETCH_FAILURE: e => {
@@ -70,7 +70,7 @@ let h = new u(o.h, {
     STOREFRONT_PRODUCT_WITH_SKUS_FETCH: e => {
         let {
             productId: l
-        } = e, t = i[l];
+        } = e, t = a[l];
         t?.skuIds.forEach(e => {
             c.add(e)
         }), c.add(l)
@@ -80,14 +80,14 @@ let h = new u(o.h, {
             product: l
         } = e;
         l.skus.forEach(e => {
-            a[e.id] = e, delete s[e.id], c.delete(e.id)
-        }), i[l.id] = l, c.delete(l.id), delete s[l.id]
+            i[e.id] = e, delete s[e.id], c.delete(e.id)
+        }), a[l.id] = l, c.delete(l.id), delete s[l.id]
     },
     STOREFRONT_PRODUCT_WITH_SKUS_FETCH_FAILURE: e => {
         let {
             productId: l,
             apiError: t
-        } = e, r = i[l];
+        } = e, r = a[l];
         r?.skuIds.forEach(e => {
             c.delete(e)
         }), s[l] = t, c.delete(l)
@@ -95,7 +95,7 @@ let h = new u(o.h, {
     STOREFRONT_PRODUCT_BY_SKU_ID_FETCH: e => {
         let {
             skuId: l
-        } = e, t = a[l], r = t?.productId != null ? i[t.productId] : null;
+        } = e, t = i[l], r = t?.productId != null ? a[t.productId] : null;
         r?.skuIds.forEach(e => {
             c.add(e)
         }), null != r && c.add(r.id), c.add(l)
@@ -105,14 +105,14 @@ let h = new u(o.h, {
             product: l
         } = e;
         l.skus.forEach(e => {
-            a[e.id] = e, delete s[e.id], c.delete(e.id)
-        }), i[l.id] = l, delete s[l.id], c.delete(l.id)
+            i[e.id] = e, delete s[e.id], c.delete(e.id)
+        }), a[l.id] = l, delete s[l.id], c.delete(l.id)
     },
     STOREFRONT_PRODUCT_BY_SKU_ID_FETCH_FAILURE: e => {
         let {
             skuId: l,
             apiError: t
-        } = e, r = a[l], o = r?.productId != null ? i[r.productId] : null;
+        } = e, r = i[l], o = r?.productId != null ? a[r.productId] : null;
         o?.skuIds.forEach(e => {
             c.delete(e)
         }), null != o && c.delete(o.id), s[l] = t, c.delete(l)
@@ -122,8 +122,8 @@ let h = new u(o.h, {
             skuIds: l
         } = e;
         l.forEach(e => {
-            let l = a[e],
-                t = l?.productId != null ? i[l.productId] : null;
+            let l = i[e],
+                t = l?.productId != null ? a[l.productId] : null;
             t?.skuIds.forEach(e => {
                 c.add(e)
             }), null != t && c.add(t.id), c.add(e)
@@ -135,8 +135,8 @@ let h = new u(o.h, {
         } = e;
         l.forEach(e => {
             e.skus.forEach(e => {
-                a[e.id] = e, delete s[e.id], c.delete(e.id)
-            }), i[e.id] = e, delete s[e.id], c.delete(e.id)
+                i[e.id] = e, delete s[e.id], c.delete(e.id)
+            }), a[e.id] = e, delete s[e.id], c.delete(e.id)
         })
     },
     STOREFRONT_PRODUCTS_BY_SKU_IDS_FETCH_FAILURE: e => {
@@ -145,8 +145,8 @@ let h = new u(o.h, {
             apiError: t
         } = e;
         l.forEach(e => {
-            let l = a[e],
-                r = l?.productId != null ? i[l.productId] : null;
+            let l = i[e],
+                r = l?.productId != null ? a[l.productId] : null;
             r?.skuIds.forEach(e => {
                 c.delete(e)
             }), null != r && c.delete(r.id), s[e] = t, c.delete(e)
@@ -179,6 +179,6 @@ let h = new u(o.h, {
         })
     },
     LOGOUT: e => {
-        n = {}, i = {}, a = {}, d = {}, c = new Set, s = {}
+        n = {}, a = {}, i = {}, d = {}, c = new Set, s = {}
     }
 })

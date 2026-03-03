@@ -5,23 +5,23 @@ t.d(l, {
 var r = t(311907),
     o = t(73153),
     n = t(403362),
-    i = t(41770);
-let a = (0, n.m6)() ? {
-        [i.C8]: {
-            "dummy-shop-home": i.uG,
-            "dummy-orb-shelf": i.oP,
-            "dummy-sku-list": i.Ej
+    a = t(41770);
+let i = (0, n.m6)() ? {
+        [a.C8]: {
+            "dummy-shop-home": a.uG,
+            "dummy-orb-shelf": a.oP,
+            "dummy-sku-list": a.Ej
         }
     } : {},
     d = (0, n.m6)() ? ["dummy-skeleton"] : [],
     c = (0, n.m6)() ? {
-        [i.C8]: {
-            "dummy-popular-picks": i.Ot
+        [a.C8]: {
+            "dummy-popular-picks": a.Ot
         }
     } : {},
     s = (0, n.m6)() ? ["dummy-skeleton-template"] : [],
     u = (e, l) => `${e}/${l}`,
-    h = a,
+    h = i,
     p = new Set(d),
     m = {},
     _ = c,

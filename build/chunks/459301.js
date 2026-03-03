@@ -30,8 +30,8 @@ var n = i(627968),
     y = i(623375),
     P = i(652215),
     v = i(788868),
-    G = i(985018),
-    f = i(895431),
+    f = i(985018),
+    G = i(895431),
     V = i(458017),
     h = i(120499),
     U = i(684399),
@@ -103,7 +103,7 @@ let X = () => {
         if (!u) return (0, n.jsxs)("div", {
             className: V._u,
             children: [(0, n.jsx)(S.A, {
-                buttonTextOverride: G.intl.string(G.t["8x0jKT"]),
+                buttonTextOverride: f.intl.string(f.t["8x0jKT"]),
                 subscriptionTier: v.pe.TIER_2,
                 fullWidth: !0,
                 size: "sm",
@@ -115,7 +115,7 @@ let X = () => {
                 }
             }), (0, n.jsx)(a.$nd, {
                 variant: "secondary",
-                text: G.intl.string(G.t.ZnqyZ2),
+                text: f.intl.string(f.t.ZnqyZ2),
                 size: "sm",
                 onClick: () => {
                     (0, D.default)(), (0, O.pX)(P.BVt.APPLICATION_STORE), d.current = !0
@@ -140,7 +140,7 @@ let X = () => {
                             is_enable_warp: !0
                         }), i(g.Lk.READY_FOR_LICENSE), d.current = !0
                     },
-                    text: G.intl.string(f.default.J09UWz)
+                    text: f.intl.string(G.default.J09UWz)
                 });
             case g.Lk.INSTALLING:
             case g.Lk.READY_FOR_LICENSE:

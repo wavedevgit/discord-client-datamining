@@ -1,11 +1,11 @@
 /** chunk id: 631467, original params: e,l,t (module,exports,require) **/
 t.d(l, {
-    A: () => i
+    A: () => a
 });
 var r = t(749394),
     o = t(719986),
     n = t(507832);
-class i {
+class a {
     id;
     applicationId;
     name;
@@ -56,7 +56,7 @@ class i {
             collection: {
                 application_id: l,
                 created_at: t,
-                updated_at: a,
+                updated_at: i,
                 unpublished_at: d,
                 unpublish_settings: c,
                 tenant_metadata: s,
@@ -64,12 +64,12 @@ class i {
             },
             products: h
         } = e;
-        return new i({
+        return new a({
             ...u,
             applicationId: l,
             products: h.map(e => n.A.fromServer(e)),
             createdAt: new Date(t),
-            updatedAt: new Date(a),
+            updatedAt: new Date(i),
             unpublishedAt: null != d ? new Date(d) : void 0,
             willUnpublishAt: c?.will_unpublish_at != null ? new Date(c.will_unpublish_at) : void 0,
             styles: null != s.collectibles.styles ? r.A.fromServer(s.collectibles.styles) : void 0,

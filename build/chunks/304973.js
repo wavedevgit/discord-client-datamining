@@ -1,29 +1,33 @@
 /** chunk id: 304973, original params: e,l,t (module,exports,require) **/
 t.d(l, {
-    A: () => c
+    A: () => s
 });
 var r = t(627968),
     o = t(397927),
-    n = t(53566),
+    n = t(976860),
+    a = t(53566),
     i = t(506456),
-    a = t(653793),
-    d = t(494213);
-let c = e => {
+    d = t(653793),
+    c = t(494213);
+let s = e => {
     let {
         backgroundImage: l,
         href: t,
-        ctaText: c
-    } = e, s = (0, i.A)(l.src), u = (0, n.S)(c);
-    return (0, r.jsx)(a.A, {
-        children: (0, r.jsx)("div", {
-            className: d.j,
+        ctaText: s
+    } = e, u = (0, i.A)(l.src), h = (0, a.S)(s);
+    return (0, r.jsx)(d.A, {
+        children: (0, r.jsx)(o.DUT, {
+            className: c.j,
             style: {
-                backgroundImage: `url(${s})`
+                backgroundImage: `url(${u})`
+            },
+            onClick: () => {
+                (0, n.pX)(t)
             },
             children: (0, r.jsx)(o.Text, {
                 variant: "text-lg/bold",
                 color: "always-white",
-                children: u
+                children: h
             })
         })
     })

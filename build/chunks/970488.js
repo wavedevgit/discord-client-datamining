@@ -1,16 +1,16 @@
 /** chunk id: 970488, original params: e,l,t (module,exports,require) **/
 t.d(l, {
-    A: () => i
+    A: () => a
 });
 var r = t(627968),
     o = t(261225),
     n = t(266341);
-let i = e => {
+let a = e => {
     let {
         children: l,
         columns: t = 1,
-        rows: i = 1
-    } = e, a = Math.max(1, Math.min(o.M, Math.floor(t))), d = Math.max(1, Math.min(o.M, Math.floor(i))), c = n[`gridItemColumns${a}`], s = n[`gridItemRows${d}`];
+        rows: a = 1
+    } = e, i = Math.max(1, Math.min(o.M, Math.floor(t))), d = Math.max(1, Math.min(o.M, Math.floor(a))), c = n[`gridItemColumns${i}`], s = n[`gridItemRows${d}`];
     return (0, r.jsx)("div", {
         className: `${n.gridItem} ${c} ${s}`,
         children: l

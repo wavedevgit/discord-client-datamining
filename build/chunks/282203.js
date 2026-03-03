@@ -5,19 +5,19 @@ t.d(l, {
 var r = t(627968),
     o = t(64700),
     n = t(841702),
-    i = t(672428);
-let a = e => {
+    a = t(672428);
+let i = e => {
         let {
             skuIds: l = [],
             skuBlock: t = "ShopProductCard",
-            sortPurchased: a = !1,
+            sortPurchased: i = !1,
             showSkeleton: d = !1,
             componentMap: c
-        } = e, s = (0, i.D)(l, !0), {
+        } = e, s = (0, a.D)(l, !0), {
             purchases: u,
             isFetching: h
-        } = (0, n.b5)(), p = (0, o.useMemo)(() => a ? [...l].sort((e, l) => (null != u.get(e)) - (null != u.get(l))) : l, [l, a, u]), m = c[t], _ = c.Skeleton;
-        return null == m ? null : (s || a && h) && d ? l.map((e, l) => null != _ ? (0, r.jsx)(_, {
+        } = (0, n.b5)(), p = (0, o.useMemo)(() => i ? [...l].sort((e, l) => (null != u.get(e)) - (null != u.get(l))) : l, [l, i, u]), m = c[t], _ = c.Skeleton;
+        return null == m ? null : (s || i && h) && d ? l.map((e, l) => null != _ ? (0, r.jsx)(_, {
             children: (0, r.jsx)(m, {
                 skuId: e,
                 productId: e
@@ -33,14 +33,14 @@ let a = e => {
             skuBlock: t = "ShopProductCard",
             sortPurchased: o = !1,
             eagerLoad: n = !1,
-            showSkeleton: i = !1,
+            showSkeleton: a = !1,
             componentMap: d
         } = e;
-        if (n || o) return (0, r.jsx)(a, {
+        if (n || o) return (0, r.jsx)(i, {
             skuIds: l,
             skuBlock: t,
             sortPurchased: o,
-            showSkeleton: i,
+            showSkeleton: a,
             componentMap: d
         });
         let c = d[t];

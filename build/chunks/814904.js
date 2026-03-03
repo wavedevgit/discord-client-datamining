@@ -26,7 +26,8 @@ let s = () => (0, l.jsx)("div", {
                     showChildren: a,
                     bannerSrc: i,
                     logoSrc: o,
-                    backgroundColor: d
+                    href: d,
+                    backgroundColor: c
                 } = e;
                 return (0, l.jsx)("div", {
                     style: {
@@ -39,7 +40,8 @@ let s = () => (0, l.jsx)("div", {
                         logoSrc: {
                             src: o
                         },
-                        backgroundColor: d,
+                        href: d,
+                        backgroundColor: c,
                         children: a ? (0, l.jsxs)(r.A, {
                             children: [(0, l.jsx)(s, {}), (0, l.jsx)(s, {}), (0, l.jsx)(s, {}), (0, l.jsx)(s, {}), (0, l.jsx)(s, {}), (0, l.jsx)(s, {}), (0, l.jsx)(s, {}), (0, l.jsx)(s, {}), (0, l.jsx)(s, {}), (0, l.jsx)(s, {})]
                         }) : null
@@ -61,6 +63,11 @@ let s = () => (0, l.jsx)("div", {
                     label: "Background Color",
                     type: "text",
                     defaultValue: "#171D55"
+                },
+                href: {
+                    label: "Href",
+                    type: "text",
+                    defaultValue: "/shop?tab=catalog"
                 },
                 containerHeight: {
                     label: "Container Height",

@@ -5,8 +5,8 @@ t.d(l, {
 var r = t(575593),
     o = t(696444),
     n = t(474012),
-    i = t(986630),
-    a = t(260811),
+    a = t(986630),
+    i = t(260811),
     d = t(652215),
     c = t(758836);
 class s {
@@ -29,7 +29,7 @@ class s {
             created_at: r,
             updated_at: o,
             skus: n,
-            tenant_metadata: i,
+            tenant_metadata: a,
             ...d
         } = e;
         return new s({
@@ -41,8 +41,8 @@ class s {
             })),
             createdAt: new Date(r),
             updatedAt: new Date(o),
-            skus: n.map(e => a.A.createFromServer(e)),
-            primaryCollectionId: i.collectibles.primary_collection_id
+            skus: n.map(e => i.A.createFromServer(e)),
+            primaryCollectionId: a.collectibles.primary_collection_id
         })
     }
     toCollectiblesProduct() {
@@ -52,10 +52,10 @@ class s {
         if (null == l) return;
         let t = this.skus.length > 1 ? r.R.VARIANTS_GROUP : l.type,
             {
-                items: a,
+                items: i,
                 item: s
             } = (0, n.T)(e) ?? {};
-        return new i.A({
+        return new a.A({
             storeListingId: e.id,
             skuId: e.id,
             name: this.name,
@@ -64,7 +64,7 @@ class s {
             styles: void 0,
             type: t,
             premiumType: l.premiumType === d.oA2 ? null : l.premiumType,
-            items: a ?? [s].filter(e => null != e),
+            items: i ?? [s].filter(e => null != e),
             categorySkuId: l.categorySkuId ?? "",
             isCategoryReward: c.MS.some(l => {
                 let {
@@ -79,11 +79,11 @@ class s {
                 let {
                     items: r,
                     item: o
-                } = (0, n.T)(l) ?? {}, [a] = l.selectedOptions;
-                return new i.x({
+                } = (0, n.T)(l) ?? {}, [i] = l.selectedOptions;
+                return new a.x({
                     baseVariantName: this.name,
                     baseVariantSkuId: e.id,
-                    variantLabel: a?.optionValue ?? "",
+                    variantLabel: i?.optionValue ?? "",
                     variantValue: t.optionSelectorDisplayValue ?? "",
                     storeListingId: l.id,
                     skuId: l.id,

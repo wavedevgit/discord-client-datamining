@@ -1,46 +1,46 @@
 /** chunk id: 18769, original params: e,l,t (module,exports,require) **/
 t.d(l, {
-    A: () => c
+    A: () => d
 });
 var r = t(627968),
-    o = t(158954),
-    n = t(53566),
-    i = t(506456),
-    a = t(653793),
-    d = t(524025);
-let c = e => {
+    o = t(506456),
+    n = t(653793),
+    a = t(458306),
+    i = t(524025);
+let d = e => {
     let {
         backgroundImage: l,
         logoSrc: t,
-        supplementalImage: c,
-        href: s,
-        ctaText: u
-    } = e, h = (0, i.A)(l.src), p = (0, i.A)(t?.src), m = (0, i.A)(c?.src), _ = (0, n.S)(u ?? "");
+        supplementalImage: d,
+        href: c,
+        ctaText: s
+    } = e, u = (0, o.A)(l.src), h = (0, o.A)(t?.src), p = (0, o.A)(d?.src);
     return (0, r.jsxs)("div", {
-        className: d.rJ,
-        children: [(0, r.jsx)(a.A, {
+        className: i.rJ,
+        children: [(0, r.jsx)(n.A, {
             overflowable: !0,
             children: (0, r.jsx)("div", {
-                className: d.rf,
+                className: i.rf,
                 style: {
-                    backgroundImage: `url(${h})`
+                    backgroundImage: `url(${u})`
                 },
                 children: (0, r.jsxs)("div", {
-                    className: d.kb,
+                    className: i.kb,
                     children: [(0, r.jsx)("div", {}), (0, r.jsx)("img", {
-                        className: d.wm,
-                        src: p,
+                        className: i.wm,
+                        src: h,
                         alt: t?.alt ?? ""
-                    }), (0, r.jsx)(o.$nd, {
-                        text: _,
-                        variant: "overlay-primary"
+                    }), null != s && (0, r.jsx)(a.ar, {
+                        ctaText: s,
+                        variant: "overlay-primary",
+                        href: c
                     })]
                 })
             })
-        }), null != m && (0, r.jsx)("img", {
-            className: d.hP,
-            src: m,
-            alt: c?.alt ?? ""
+        }), null != p && (0, r.jsx)("img", {
+            className: i.hP,
+            src: p,
+            alt: d?.alt ?? ""
         })]
     })
 }

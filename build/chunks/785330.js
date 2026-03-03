@@ -8,8 +8,8 @@ t.d(l, {
 var r = t(627968),
     o = t(64700),
     n = t(835245),
-    i = t(204990),
-    a = t(604238),
+    a = t(204990),
+    i = t(604238),
     d = t(856535),
     c = t(55391);
 
@@ -18,7 +18,7 @@ function s(e, l) {
         if ("string" == typeof l) return l;
         let {
             block: o,
-            ...a
+            ...i
         } = l, d = t[o];
         if (null == d) return null;
         let c = (() => {
@@ -28,10 +28,10 @@ function s(e, l) {
                 }
                 return null
             })(),
-            s = i.E.has(o) ? {
-                ...a,
+            s = a.E.has(o) ? {
+                ...i,
                 componentMap: t
-            } : a;
+            } : i;
         return (0, r.jsx)(d, {
             ...s,
             children: c
@@ -40,7 +40,7 @@ function s(e, l) {
 }
 
 function u(e) {
-    let l = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : a.E;
+    let l = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : i.E;
     try {
         return s(e, l), !0
     } catch (e) {
@@ -51,7 +51,7 @@ let h = e => {
         let {
             layout: l,
             overrides: t
-        } = e, r = (0, a.e)({
+        } = e, r = (0, i.e)({
             overrides: t
         });
         return o.useMemo(() => s(l, r), [l, r])
@@ -76,10 +76,10 @@ let h = e => {
             overrides: o,
             requestParams: n
         } = e, {
-            layout: i
+            layout: a
         } = (0, c.A)(t, l, n);
-        return null == i ? null : (0, r.jsx)(h, {
-            layout: i,
+        return null == a ? null : (0, r.jsx)(h, {
+            layout: a,
             overrides: o
         })
     },
