@@ -9,9 +9,9 @@ var o = r(627968),
     s = r(523436),
     l = r(397927),
     d = r(398025),
-    _ = r(419367),
+    c = r(419367),
     u = r(638322);
-let c = "var(--background-mod-strong)",
+let _ = "var(--background-mod-strong)",
     p = a.forwardRef((e, t) => {
         let {
             percentComplete: r,
@@ -33,7 +33,7 @@ let c = "var(--background-mod-strong)",
             progressTextAnimation: T
         } = (0, l.zhh)({
             progressTextAnimation: +(null != f && 1 !== r),
-            config: _.N
+            config: c.N
         });
         return (0, o.jsxs)("div", {
             className: u.A7,
@@ -71,7 +71,7 @@ let c = "var(--background-mod-strong)",
                     r: v,
                     cx: C,
                     cy: C,
-                    stroke: c
+                    stroke: _
                 }), (0, o.jsx)("circle", {
                     className: u.qB,
                     strokeWidth: g,
@@ -79,7 +79,7 @@ let c = "var(--background-mod-strong)",
                     r: v,
                     cx: C,
                     cy: C,
-                    stroke: c
+                    stroke: _
                 }), (0, o.jsx)("circle", {
                     className: u.qB,
                     strokeWidth: g,

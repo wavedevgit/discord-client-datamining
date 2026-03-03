@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(627968),
     l = n(64700),
     i = n(503698),
-    a = n.n(i),
-    s = n(435371),
+    s = n.n(i),
+    a = n(435371),
     o = n(397927),
     u = n(713517),
     c = n(240248),
@@ -27,20 +27,20 @@ function S() {
         isPortrait: n,
         onClose: i
     } = l.useContext(E.VideoQuestModalContext), S = (0, f.go)(), A = (0, m.LS)(e), C = l.useRef(null), {
-        isHoveringOrFocusing: b
-    } = (0, u.A)(C), _ = (0, h.H)({
+        isHoveringOrFocusing: _
+    } = (0, u.A)(C), b = (0, h.H)({
         quest: e,
         onClose: i,
         sourceQuestContent: t,
         impressionId: S
     }), y = e.config.ctaConfig.subtitle, T = void 0 !== y && !(0, c.uJ)(y);
-    return (0, r.jsx)(s.m_, {
+    return (0, r.jsx)(a.m_, {
         text: v.intl.string(v.t.EuHF34),
         children: (0, r.jsx)(o.DUT, {
-            onClick: () => _(d.uF.VIDEO_MODAL, p.Cy.OPEN_GAME_LINK),
+            onClick: () => b(d.uF.VIDEO_MODAL, p.Cy.OPEN_GAME_LINK),
             className: x._S,
             children: (0, r.jsxs)("div", {
-                className: a()(g.hA, x.t8, {
+                className: s()(g.hA, x.t8, {
                     [x.Mc]: A
                 }),
                 ref: C,
@@ -49,7 +49,7 @@ function S() {
                     children: (0, r.jsx)(o.Heading, {
                         variant: "heading-md/medium",
                         color: "text-strong",
-                        className: a()(x.xw, {
+                        className: s()(x.xw, {
                             [x._L]: n
                         }),
                         lineClamp: n ? void 0 : 1,
@@ -58,40 +58,40 @@ function S() {
                         })
                     })
                 }), (0, r.jsxs)("div", {
-                    className: a()(x.sB, {
+                    className: s()(x.sB, {
                         [x.fi]: n
                     }),
                     children: [(0, r.jsx)("div", {
-                        className: a()(x.PV, {
+                        className: s()(x.PV, {
                             [x.WV]: n,
                             [x.mq]: n
                         }),
                         children: (0, r.jsx)(o.yr3, {
                             size: "xs",
-                            color: b ? o.LU0.colors.ICON_STRONG.css : o.LU0.colors.ICON_MUTED.css
+                            color: _ ? o.LU0.colors.ICON_STRONG.css : o.LU0.colors.ICON_MUTED.css
                         })
                     }), (0, r.jsx)(o.Heading, {
                         variant: "heading-sm/medium",
-                        className: a()(x.PV, {
+                        className: s()(x.PV, {
                             [x.WV]: n,
                             [x.mq]: n
                         }),
-                        color: b ? "text-strong" : "text-subtle",
+                        color: _ ? "text-strong" : "text-subtle",
                         lineClamp: 1,
                         children: e.config.messages.gamePublisher
                     }), T ? (0, r.jsxs)(r.Fragment, {
                         children: [(0, r.jsx)("div", {
                             "aria-hidden": "true",
-                            className: a()(x.SC, {
+                            className: s()(x.SC, {
                                 [x.b2]: n
                             })
                         }), (0, r.jsx)(o.Heading, {
-                            className: a()(x.xw, {
+                            className: s()(x.xw, {
                                 [x._L]: n
                             }),
                             variant: "heading-sm/medium",
                             lineClamp: n ? void 0 : 1,
-                            color: b ? "text-strong" : "text-subtle",
+                            color: _ ? "text-strong" : "text-subtle",
                             children: y
                         })]
                     }) : null]

@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(627968),
     l = n(64700),
     i = n(311907),
-    a = n(827734),
-    s = n(990078),
+    s = n(827734),
+    a = n(990078),
     o = n(397927),
     u = n(775602),
     c = n(341915),
@@ -28,7 +28,7 @@ function h() {
         onCloseModal: n,
         shouldShowShopIfAlreadyClaimed: !0
     }), S = e.userStatus?.claimedAt != null ? x ? E.intl.string(E.t.WYchde) : E.intl.string(E.t.vTgCWx) : E.intl.string(E.t.cfY4PE), A = e.userStatus?.completedAt == null ? h ? E.intl.string(E.t.NJ6Bnm) : E.intl.string(E.t.USNO1K) : void 0;
-    return (0, r.jsx)(s.m, {
+    return (0, r.jsx)(a.m, {
         text: A,
         children: (0, r.jsx)("div", {
             children: (0, r.jsx)(o.Button, {
@@ -42,7 +42,7 @@ function h() {
                             withReducedMotion: "play",
                             dataBinding: {
                                 locked: e.userStatus?.completedAt === null,
-                                fill: a.A.colors.ICON_STRONG,
+                                fill: s.A.colors.ICON_STRONG,
                                 reducedMotion: t
                             }
                         }

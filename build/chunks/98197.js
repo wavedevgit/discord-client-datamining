@@ -1,14 +1,14 @@
 /** chunk id: 98197, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => s
+    A: () => a
 });
 var r = n(627968);
 n(64700);
 var l = n(503698),
     i = n.n(l),
-    a = n(681636);
+    s = n(681636);
 
-function s(e) {
+function a(e) {
     let {
         className: t,
         color: n
@@ -19,7 +19,7 @@ function s(e) {
         height: "40",
         viewBox: "0 0 2 40",
         fill: "none",
-        className: i()(a.SU, t),
+        className: i()(s.SU, t),
         children: (0, r.jsx)("path", {
             d: "M1 0V40",
             stroke: n,

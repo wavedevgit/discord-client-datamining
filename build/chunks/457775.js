@@ -5,14 +5,14 @@ n.d(t, {
 var r = n(846293),
     l = n(167189),
     i = n(833291),
-    a = n(299091),
-    s = n(711014),
+    s = n(299091),
+    a = n(711014),
     o = n(998218);
 async function u(e) {
     try {
         let t = (0, i.br)(e);
         if (null == t || t.type !== l.I.INVITE) return !1;
-        let n = a.A.getInvite(t.code);
+        let n = s.A.getInvite(t.code);
         if (null == n) {
             let {
                 invite: e
@@ -20,7 +20,7 @@ async function u(e) {
             n = e
         }
         if (null == n) return !1;
-        let o = s.Ay.getFlattenedGuildIds(),
+        let o = a.Ay.getFlattenedGuildIds(),
             u = n?.guild?.id;
         return null != u && o.includes(u)
     } catch (e) {

@@ -1,40 +1,40 @@
 /** chunk id: 274604, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    X: () => s
+    X: () => a
 });
 var r = n(627968),
     l = n(64700),
     i = n(397927),
-    a = n(681636);
+    s = n(681636);
 
-function s(e) {
+function a(e) {
     let {
         text: t,
         isLoading: n = !1,
-        onClose: s
+        onClose: a
     } = e, o = l.useMemo(() => (t ?? "").split("\n").map(e => e.trim()).filter(e => e.length > 0), [t]);
     return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)("div", {
-            className: a.Mm,
+            className: s.Mm,
             children: [(0, r.jsx)(i.Heading, {
                 variant: "heading-md/semibold",
                 color: "currentColor",
                 children: "Transcript"
             }), (0, r.jsx)(i.DUT, {
-                onClick: s,
-                className: a.GI,
+                onClick: a,
+                className: s.GI,
                 children: (0, r.jsx)(i.PGe, {
                     color: "currentColor"
                 })
             })]
         }), (0, r.jsx)(i.vN3, {
             children: (0, r.jsx)(i.ArX, {
-                className: a.j5,
+                className: s.j5,
                 fade: !0,
                 children: (0, r.jsx)("div", {
-                    className: a.FN,
+                    className: s.FN,
                     children: n ? (0, r.jsx)("div", {
-                        className: a.Cw,
+                        className: s.Cw,
                         children: (0, r.jsx)(i.y$y, {
                             type: i.y$y.Type.WANDERING_CUBES
                         })

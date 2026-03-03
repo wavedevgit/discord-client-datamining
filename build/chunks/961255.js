@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(627968),
     l = n(64700),
     i = n(503698),
-    a = n.n(i),
-    s = n(523436),
+    s = n.n(i),
+    a = n(523436),
     o = n(397927),
     u = n(892358),
     c = n(341915),
@@ -30,33 +30,33 @@ let E = {
             onMouseLeave: A
         } = e, {
             label: C,
-            targetSec: b,
-            leftPx: _,
+            targetSec: _,
+            leftPx: b,
             rightPx: y,
             index: T
         } = n, {
             completedRatio: N
-        } = (0, d.O9)(h), [D, I] = l.useState(!1), L = _ - p.Ue, j = t >= L ? Math.min(1, (t - L) / (y - L)) : 0, M = 0 === T && N < 1, {
-            fill: w
+        } = (0, d.O9)(h), [D, R] = l.useState(!1), L = b - p.Ue, I = t >= L ? Math.min(1, (t - L) / (y - L)) : 0, M = 0 === T && N < 1, {
+            fill: j
         } = (0, o.zhh)({
-            fill: 100 * j,
+            fill: 100 * I,
             config: E,
             onRest: () => {
-                j <= 0 && I(!1)
+                I <= 0 && R(!1)
             },
             onStart: () => {
-                I(!0)
+                R(!0)
             }
         });
-        return (0, r.jsxs)(s.animated.div, {
-            className: a()(f.ck, {
+        return (0, r.jsxs)(a.animated.div, {
+            className: s()(f.ck, {
                 [f.a]: M && D,
                 [f.C9]: !M && D
             }),
             style: {
-                left: i ? x.to(e => _ - e) : _,
+                left: i ? x.to(e => b - e) : b,
                 "--custom-indicator-size": i ? x.to(e => `${p.lS+2*e}px`) : `${p.lS}px`,
-                "--custom-indicator-fill": w.to(e => e)
+                "--custom-indicator-fill": j.to(e => e)
             },
             children: [(0, r.jsx)(o.DUT, {
                 className: f.E6,
@@ -75,11 +75,11 @@ let E = {
             }), (0, r.jsxs)("div", {
                 className: f.Ru,
                 role: "tooltip",
-                "aria-label": null != C ? `${(0,u.rB)(b)} - ${C}` : (0, u.rB)(b),
+                "aria-label": null != C ? `${(0,u.rB)(_)} - ${C}` : (0, u.rB)(_),
                 children: [(0, r.jsx)(o.Text, {
                     variant: "text-xs/normal",
                     color: "always-white",
-                    children: (0, u.rB)(b)
+                    children: (0, u.rB)(_)
                 }), null != C && (0, r.jsxs)(r.Fragment, {
                     children: [(0, r.jsx)("span", {
                         className: f.AE,

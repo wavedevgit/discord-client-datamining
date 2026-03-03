@@ -59,7 +59,7 @@ let l = {
         seekForwardRestricted: {
             label: "Restrict Seek Forward",
             type: "boolean",
-            defaultValue: !0
+            defaultValue: !1
         },
         videoUrl: {
             label: "Video URL",
@@ -89,6 +89,21 @@ let l = {
                 orientation: {
                     ...l.orientation,
                     defaultValue: "portrait"
+                }
+            }
+        }, {
+            name: "HLS Video (Generic)",
+            id: "hls-video-generic",
+            component: s,
+            controls: {
+                ...l,
+                orientation: {
+                    ...l.orientation,
+                    defaultValue: "landscape"
+                },
+                videoUrl: {
+                    ...l.videoUrl,
+                    defaultValue: "https://cdn.discordapp.com/assets/quests/1276640451235156082/transcoded_akuma_trailer.m3u8"
                 }
             }
         }]

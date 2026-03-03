@@ -1,15 +1,15 @@
 /** chunk id: 717415, original params: e,t,n (module,exports,require) **/
 n.r(t), n.d(t, {
-    VideoQuestConfigContext: () => k,
-    VideoQuestModalContext: () => w,
-    default: () => P
+    VideoQuestConfigContext: () => w,
+    VideoQuestModalContext: () => j,
+    default: () => O
 });
 var r = n(627968),
     l = n(64700),
     i = n(503698),
-    a = n.n(i),
-    s = n(284009),
-    o = n.n(s),
+    s = n.n(i),
+    a = n(284009),
+    o = n.n(a),
     u = n(412703),
     c = n(311907),
     d = n(397927),
@@ -24,17 +24,17 @@ var r = n(627968),
     S = n(792620),
     A = n(753386),
     C = n(73473),
-    b = n(922623),
-    _ = n(60040),
+    _ = n(922623),
+    b = n(60040),
     y = n(885947),
     T = n(440891),
     N = n(471535),
     D = n(583235),
-    I = n(654487),
+    R = n(654487),
     L = n(985018),
-    j = n(438655),
+    I = n(438655),
     M = n(681636);
-let w = l.createContext({
+let j = l.createContext({
         quest: null,
         sourceQuestContent: null,
         videoSessionId: "",
@@ -44,21 +44,21 @@ let w = l.createContext({
         onClose: () => {},
         setIsFullscreenEnabled: () => {}
     }),
-    k = l.createContext({
+    w = l.createContext({
         questConfig: null
     });
 
-function R(e) {
+function k(e) {
     let {
         transitionState: t,
         onClose: n,
         quest: i,
-        autoplay: s,
+        autoplay: a,
         videoSessionId: c,
         impressionRef: f,
         parentModalOpenStartClockTime: E,
         sourceQuestContent: h
-    } = e, C = (0, S.Yh)(i), k = (0, x.LS)(i), R = (0, g.go)(), [P, O] = l.useState(C.progressSeconds), [Q, V] = l.useState(142), [U, B] = l.useState(!1), F = i.config.taskConfigV2?.tasks?.[u.n.WATCH_VIDEO];
+    } = e, C = (0, S.Yh)(i), w = (0, x.LS)(i), k = (0, g.go)(), [O, P] = l.useState(C.progressSeconds), [Q, V] = l.useState(142), [U, B] = l.useState(!1), F = i.config.taskConfigV2?.tasks?.[u.n.WATCH_VIDEO];
     o()(null != F, "VideoQuestModal: videoTask must not be null");
     let G = (0, A.eG)(F),
         $ = "portrait" === G,
@@ -66,18 +66,18 @@ function R(e) {
             V(e.target.offsetHeight)
         }),
         K = (0, m.w)(Y),
-        H = i.config.features.includes(I.Li.FULL_EPISODE_VIDEO_QUEST),
+        H = i.config.features.includes(R.Li.FULL_EPISODE_VIDEO_QUEST),
         {
-            enabled: q
+            enabled: W
         } = v.jS.useConfig({
-            location: I.rE.VIDEO_MODAL
+            location: R.rE.VIDEO_MODAL
         }),
-        W = q || H,
+        q = W || H,
         z = (0, D.H)({
             quest: i,
             onClose: n,
             sourceQuestContent: h,
-            impressionId: R
+            impressionId: k
         }),
         X = l.useMemo(() => ({
             quest: i,
@@ -86,10 +86,10 @@ function R(e) {
             isPortrait: $,
             onClose: n,
             isFullscreenEnabled: U,
-            useNewProgressBarStyling: W,
+            useNewProgressBarStyling: q,
             setIsFullscreenEnabled: B
-        }), [i, h, c, $, n, U, W, B]);
-    return (0, r.jsx)(w.Provider, {
+        }), [i, h, c, $, n, U, q, B]);
+    return (0, r.jsx)(j.Provider, {
         value: X,
         children: (0, r.jsx)("div", {
             style: $ ? {
@@ -99,12 +99,12 @@ function R(e) {
                 "data-migration-pending": !0,
                 transitionState: t,
                 size: d.rIJ.DYNAMIC,
-                className: a()(M.CR, {
+                className: s()(M.CR, {
                     [M.VX]: "landscape" === G,
                     [M.Zy]: "portrait" === G
                 }),
                 parentComponent: "Modal",
-                children: [!W && (0, r.jsx)("div", {
+                children: [!q && (0, r.jsx)("div", {
                     className: M.z6,
                     children: (0, r.jsx)(d.K0, {
                         variant: "icon-only",
@@ -123,43 +123,43 @@ function R(e) {
                     children: (0, r.jsx)("div", {
                         className: M.S3,
                         style: {
-                            "--custom-footer-horizontal-padding": `${W?20:16}px`
+                            "--custom-footer-horizontal-padding": `${q?20:16}px`
                         },
                         children: (0, r.jsxs)("div", {
                             className: M.jE,
                             children: [(0, r.jsx)(N.A, {
                                 targetTimeSec: F.target,
                                 parentTransitionState: t,
-                                onOptimisticProgressUpdate: O,
-                                autoplay: s,
+                                onOptimisticProgressUpdate: P,
+                                autoplay: a,
                                 performanceClockStartTime: E,
                                 orientation: G
                             }), $ ? (0, r.jsxs)("div", {
                                 ref: K,
-                                className: j.uh,
+                                className: I.uh,
                                 children: [(0, r.jsxs)("div", {
-                                    className: j.Df,
-                                    children: [k ? null : (0, r.jsx)(T.A, {}), (0, r.jsx)(y.A, {})]
+                                    className: I.Df,
+                                    children: [w ? null : (0, r.jsx)(T.A, {}), (0, r.jsx)(y.A, {})]
                                 }), (0, r.jsxs)("div", {
-                                    className: j.eX,
+                                    className: I.eX,
                                     children: [(0, r.jsx)("div", {
-                                        className: j.uP,
+                                        className: I.uP,
                                         children: (0, r.jsx)("div", {
-                                            className: j.ne,
-                                            children: (0, r.jsx)(_.A, {})
+                                            className: I.ne,
+                                            children: (0, r.jsx)(b.A, {})
                                         })
-                                    }), (0, r.jsx)(b.A, {
+                                    }), (0, r.jsx)(_.A, {
                                         handlePrimaryCtaClick: z
                                     })]
                                 })]
                             }) : (0, r.jsxs)("div", {
-                                className: j.nR,
+                                className: I.nR,
                                 children: [(0, r.jsxs)("div", {
-                                    className: j.uu,
-                                    children: [k ? null : (0, r.jsx)(T.A, {}), (0, r.jsx)(y.A, {})]
+                                    className: I.uu,
+                                    children: [w ? null : (0, r.jsx)(T.A, {}), (0, r.jsx)(y.A, {})]
                                 }), (0, r.jsxs)("div", {
-                                    className: j.NY,
-                                    children: [(0, r.jsx)(_.A, {}), (0, r.jsx)(b.A, {
+                                    className: I.NY,
+                                    children: [(0, r.jsx)(b.A, {}), (0, r.jsx)(_.A, {
                                         handlePrimaryCtaClick: z
                                     })]
                                 })]
@@ -172,27 +172,27 @@ function R(e) {
     })
 }
 
-function P(e) {
+function O(e) {
     let {
         questId: t,
         overrideQuest: n,
         autoplay: i,
-        openStartClockTime: a,
-        ...s
+        openStartClockTime: s,
+        ...a
     } = e, o = (0, c.bG)([E.A], () => E.A.getQuest(t)), u = (0, c.bG)([E.A], () => E.A.getQuestConfig(t)), d = n ?? o, m = null != n ? n.config : u, p = l.useMemo(() => null != m ? {
         questConfig: m
     } : null, [m]);
-    return null != d && null != m && null != p ? (0, r.jsx)(k.Provider, {
+    return null != d && null != m && null != p ? (0, r.jsx)(w.Provider, {
         value: p,
         children: (0, r.jsx)(C.R, {
             questOrQuests: d,
             questContent: h.uF.VIDEO_MODAL,
             minViewTimeSeconds: f.bq,
             trackGuildAndChannelMetadata: !0,
-            sourceQuestContent: s.sourceQuestContent,
-            children: e => (0, r.jsx)(R, {
-                ...s,
-                parentModalOpenStartClockTime: a,
+            sourceQuestContent: a.sourceQuestContent,
+            children: e => (0, r.jsx)(k, {
+                ...a,
+                parentModalOpenStartClockTime: s,
                 impressionRef: e,
                 quest: d,
                 autoplay: i

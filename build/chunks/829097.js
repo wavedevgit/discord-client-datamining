@@ -1,6 +1,6 @@
 /** chunk id: 829097, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    _: () => a
+    _: () => s
 });
 var r = n(945810),
     l = n(332628);
@@ -20,7 +20,7 @@ let i = (0, r.mj)({
     }
 });
 
-function a(e) {
+function s(e) {
     let {
         location: t
     } = e, {

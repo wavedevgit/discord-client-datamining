@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(627968),
     l = n(64700),
     i = n(397927),
-    a = n(829219),
-    s = n(405670),
+    s = n(829219),
+    a = n(405670),
     o = n(579473),
     u = n(681636);
 
@@ -14,12 +14,12 @@ function c(e) {
     let {
         quest: t,
         onClose: n
-    } = e, c = (0, s.Kr)(e => e.transcript);
+    } = e, c = (0, a.Kr)(e => e.transcript);
     l.useEffect(() => {
         let e = (0, o.tW)(t, o.fY.VIDEO_PLAYER_TRANSCRIPT, void 0, !1);
-        (null == c || c.questId !== t.id || c.fetchStatus === s.Lx.NONE || c.fetchStatus === s.Lx.SUCCESS && e?.url !== c.url) && (0, a.qY)(t)
+        (null == c || c.questId !== t.id || c.fetchStatus === a.Lx.NONE || c.fetchStatus === a.Lx.SUCCESS && e?.url !== c.url) && (0, s.qY)(t)
     }, [c, t]);
-    let d = c?.questId === t.id && c?.fetchStatus === s.Lx.SUCCESS ? c.text ?? "" : "",
+    let d = c?.questId === t.id && c?.fetchStatus === a.Lx.SUCCESS ? c.text ?? "" : "",
         m = l.useMemo(() => d.split("\n").map(e => e.trim()).filter(e => e.length > 0), [d]);
     return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)("div", {
@@ -41,7 +41,7 @@ function c(e) {
                 fade: !0,
                 children: (0, r.jsx)("div", {
                     className: u.FN,
-                    children: c?.fetchStatus === s.Lx.FETCHING ? (0, r.jsx)("div", {
+                    children: c?.fetchStatus === a.Lx.FETCHING ? (0, r.jsx)("div", {
                         className: u.Cw,
                         children: (0, r.jsx)(i.y$y, {
                             type: i.y$y.Type.WANDERING_CUBES

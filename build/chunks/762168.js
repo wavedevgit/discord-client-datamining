@@ -14,9 +14,9 @@ var o = r(627968),
     s = r(267548),
     l = r(668824),
     d = r(397927),
-    _ = r(104473),
+    c = r(104473),
     u = r(341915),
-    c = r(73473),
+    _ = r(73473),
     p = r(717415),
     f = r(471535),
     b = r(652215);
@@ -108,7 +108,7 @@ function v(e) {
             },
             assets: {
                 hero: "",
-                heroVideo: _.kz,
+                heroVideo: c.kz,
                 questBarHero: "",
                 questBarHeroVideo: null,
                 questBarHeroBlurhash: null,
@@ -152,15 +152,15 @@ function S(e) {
         isFullscreenEnabled: i,
         setIsFullscreenEnabled: l,
         useNewProgressBarStyling: s
-    }), [t, r, i, l, s]), _ = a.useMemo(() => ({
+    }), [t, r, i, l, s]), c = a.useMemo(() => ({
         questConfig: t.config
     }), [t.config]);
-    return (0, o.jsx)(c.R, {
+    return (0, o.jsx)(_.R, {
         questOrQuests: t,
         questContent: u.uF.VIDEO_MODAL,
         sourceQuestContent: u.uF.INTERNAL_PREVIEW_TOOL,
         children: (e, t) => (0, o.jsx)(p.VideoQuestConfigContext.Provider, {
-            value: _,
+            value: c,
             children: (0, o.jsx)(p.VideoQuestModalContext.Provider, {
                 value: d,
                 children: n
@@ -176,17 +176,17 @@ function h(e) {
         questCompleted: n,
         useNewStyling: i,
         videoUrl: s
-    } = e, l = "portrait" === t, [_, u] = a.useState(!1), c = m({
+    } = e, l = "portrait" === t, [c, u] = a.useState(!1), _ = m({
         url: s,
         width: l ? 360 : 640,
         height: l ? 640 : 360,
         videoTitle: l ? "Test Portrait Video" : "Test Landscape Video"
-    }), p = v(c), C = n ? {
+    }), p = v(_), C = n ? {
         ...p,
         userStatus: g({
             enrolledAt: p.userStatus?.enrolledAt ?? null,
             completedAt: p.userStatus?.enrolledAt ?? null,
-            streamProgressSeconds: c.target
+            streamProgressSeconds: _.target
         })
     } : p;
     return (0, o.jsx)("div", {
@@ -202,11 +202,11 @@ function h(e) {
         children: (0, o.jsx)(S, {
             quest: C,
             isPortrait: l,
-            isFullscreenEnabled: _,
+            isFullscreenEnabled: c,
             setIsFullscreenEnabled: u,
             useNewStyling: i,
             children: (0, o.jsx)(f.A, {
-                targetTimeSec: c.target,
+                targetTimeSec: _.target,
                 parentTransitionState: d.ip4.ENTERED,
                 onOptimisticProgressUpdate: b.tEg,
                 autoplay: r,
@@ -248,7 +248,7 @@ let x = {
         videoUrl: {
             label: "Video URL",
             type: "text",
-            defaultValue: _.kz
+            defaultValue: c.kz
         }
     },
     T = {

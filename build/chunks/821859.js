@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(627968),
     l = n(64700),
     i = n(503698),
-    a = n.n(i),
-    s = n(523436),
+    s = n.n(i),
+    a = n(523436),
     o = n(876230),
     u = n(61491),
     c = n(397927),
@@ -32,29 +32,29 @@ function E(e) {
         maxSeekableTime: S,
         onClick: A,
         onScrubBack: C,
-        onScrubForward: b,
-        "data-testid": _
+        onScrubForward: _,
+        "data-testid": b
     } = e, {
         contRef: y,
         boundingRect: T,
         handleMouseEnter: N,
         handleMouseLeave: D,
-        handleMouseMove: I,
+        handleMouseMove: R,
         handleKeyDown: L,
-        hoveredAtX: j,
+        hoveredAtX: I,
         maxSeekableX: M,
-        isHovering: w,
-        handleClick: k,
-        ariaProps: R
+        isHovering: j,
+        handleClick: w,
+        ariaProps: k
     } = (0, m.A)({
         onScrubBack: C,
-        onScrubForward: b,
+        onScrubForward: _,
         maxSeekableTime: S,
         interactionEnabled: E,
         duration: g,
         percent: n,
         onClick: A
-    }), P = l.useMemo(() => null == j || null == T ? null : (0, u.rB)((0, u.hc)(j, T, g)), [j, T, g]), O = l.useMemo(() => {
+    }), O = l.useMemo(() => null == I || null == T ? null : (0, u.rB)((0, u.hc)(I, T, g)), [I, T, g]), P = l.useMemo(() => {
         if (null != T) return (0, u.TO)(n, T)
     }, [n, T]), [{
         currentPxSpring: Q
@@ -64,10 +64,10 @@ function E(e) {
     }));
     l.useEffect(() => {
         V({
-            currentPxSpring: O ?? 0,
+            currentPxSpring: P ?? 0,
             immediate: !i
         })
-    }, [O, i, V]);
+    }, [P, i, V]);
     let U = T?.width != null && T?.width !== 0 ? T?.width : 1,
         B = l.useMemo(() => [{
             startPx: 0,
@@ -78,25 +78,25 @@ function E(e) {
     return (0, r.jsx)("div", {
         className: p.jD,
         ref: y,
-        "data-testid": _,
+        "data-testid": b,
         style: {
             "--custom-timeline-height": "4px",
             "--custom-initial-timeline-height": "4px"
         },
         children: (0, r.jsxs)(c.DUT, {
-            className: a()(p.KF, {
+            className: s()(p.KF, {
                 [p.uc]: E
             }),
             ignoreKeyPress: !0,
-            onClick: k,
+            onClick: w,
             onMouseEnter: N,
             onMouseLeave: D,
-            onMouseMove: I,
+            onMouseMove: R,
             onKeyDown: L,
             tabIndex: E ? void 0 : -1,
             children: [(0, r.jsx)("div", {
                 className: p.G9,
-                ...R,
+                ...k,
                 children: null != T && B.map((e, t) => (0, r.jsx)(d.A, {
                     segment: e,
                     currentPxSpring: Q,
@@ -110,15 +110,15 @@ function E(e) {
                     glowClassName: p.pN,
                     showGlow: v !== o.Q6.ENDED
                 }, t))
-            }), w && null != P && t && (0, r.jsx)(c.Text, {
+            }), j && null != O && t && (0, r.jsx)(c.Text, {
                 className: p.Ey,
                 variant: "text-xs/normal",
                 color: "always-white",
                 style: {
-                    left: null != j ? `${j}px` : "auto"
+                    left: null != I ? `${I}px` : "auto"
                 },
-                children: P
-            }), w && E && null != O && (0, r.jsx)(s.animated.div, {
+                children: O
+            }), j && E && null != P && (0, r.jsx)(a.animated.div, {
                 className: p.Ub,
                 style: {
                     left: Q.to(e => `${e}px`)

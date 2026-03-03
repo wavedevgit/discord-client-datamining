@@ -15,31 +15,31 @@ function l(e) {
         autoplay: r,
         questCompleted: l,
         videoUrl: d
-    } = e, _ = "portrait" === t, u = (0, i.DX)({
+    } = e, c = "portrait" === t, u = (0, i.DX)({
         url: d,
-        width: _ ? 360 : 640,
-        height: _ ? 640 : 360,
-        videoTitle: _ ? "Test Portrait Video" : "Test Landscape Video"
-    }), c = (0, i.ec)(u), p = l ? {
-        ...c,
+        width: c ? 360 : 640,
+        height: c ? 640 : 360,
+        videoTitle: c ? "Test Portrait Video" : "Test Landscape Video"
+    }), _ = (0, i.ec)(u), p = l ? {
+        ..._,
         userStatus: (0, i.kK)({
-            enrolledAt: c.userStatus?.enrolledAt ?? null,
-            completedAt: c.userStatus?.enrolledAt ?? null,
+            enrolledAt: _.userStatus?.enrolledAt ?? null,
+            completedAt: _.userStatus?.enrolledAt ?? null,
             streamProgressSeconds: u.target
         })
-    } : c;
+    } : _;
     return (0, o.jsx)("div", {
         style: {
-            width: _ ? "400px" : "100%",
-            maxWidth: _ ? void 0 : "800px",
-            height: _ ? "700px" : "500px",
+            width: c ? "400px" : "100%",
+            maxWidth: c ? void 0 : "800px",
+            height: c ? "700px" : "500px",
             backgroundColor: "#1e1f22",
             borderRadius: "8px",
             overflow: "hidden"
         },
         children: (0, o.jsx)(i.sn, {
             quest: p,
-            isPortrait: _,
+            isPortrait: c,
             children: (0, o.jsx)(n.A, {
                 targetTimeSec: u.target,
                 parentTransitionState: a.ip4.ENTERED,

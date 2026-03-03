@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(627968),
     l = n(64700),
     i = n(311907),
-    a = n(990078),
-    s = n(397927),
+    s = n(990078),
+    a = n(397927),
     o = n(775602),
     u = n(341915),
     c = n(890687),
@@ -24,16 +24,16 @@ function g() {
         quest: e,
         sourceQuestContent: t,
         onClose: n
-    } = l.useContext(E.VideoQuestModalContext), [g, S] = l.useState(!1), A = (0, i.bG)([o.A], () => o.A.useReducedMotion), C = l.useRef(e.userStatus?.completedAt), [b, _] = l.useState(!1), y = (0, d.mq)(e.config), {
+    } = l.useContext(E.VideoQuestModalContext), [g, S] = l.useState(!1), A = (0, i.bG)([o.A], () => o.A.useReducedMotion), C = l.useRef(e.userStatus?.completedAt), [_, b] = l.useState(!1), y = (0, d.mq)(e.config), {
         completedRatio: T,
         completedRatioDisplay: N
-    } = (0, c.O9)(e), D = e.userStatus?.completedAt != null, I = e.userStatus?.claimedAt != null, L = h.intl.formatToPlainString(D && !I ? h.t.NRp4K4 : h.t["12IWP2"], {
+    } = (0, c.O9)(e), D = e.userStatus?.completedAt != null, R = e.userStatus?.claimedAt != null, L = h.intl.formatToPlainString(D && !R ? h.t.NRp4K4 : h.t["12IWP2"], {
         rewardName: y
     });
     l.useEffect(() => {
-        null == C.current && e.userStatus?.completedAt != null && _(!0), C.current = e.userStatus?.completedAt
+        null == C.current && e.userStatus?.completedAt != null && b(!0), C.current = e.userStatus?.completedAt
     }, [e.userStatus?.completedAt]);
-    let j = (0, f.v)({
+    let I = (0, f.v)({
         quest: e,
         questContent: u.uF.QUEST_HOME_DESKTOP,
         sourceQuestContent: t,
@@ -42,13 +42,13 @@ function g() {
     });
     return (0, r.jsxs)("div", {
         className: v.Tr,
-        children: [D && (0, r.jsx)(s.akl, {
+        children: [D && (0, r.jsx)(a.akl, {
             importData: x,
             className: v.t_,
             loop: !1,
             autoplay: !1,
-            shouldAnimate: b && !A
-        }), (0, r.jsx)(a.m, {
+            shouldAnimate: _ && !A
+        }), (0, r.jsx)(s.m, {
             position: "top",
             text: L,
             onTooltipShow: () => {
@@ -57,13 +57,13 @@ function g() {
             onTooltipHide: () => {
                 S(!1)
             },
-            children: (0, r.jsx)(s.DUT, {
+            children: (0, r.jsx)(a.DUT, {
                 className: v.md,
                 style: D ? {
                     cursor: "pointer"
                 } : void 0,
                 onClick: e => {
-                    D && j(e)
+                    D && I(e)
                 },
                 children: (0, r.jsx)(m.A, {
                     size: 48,

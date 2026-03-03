@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(627968),
     l = n(64700),
     i = n(503698),
-    a = n.n(i),
-    s = n(158954),
+    s = n.n(i),
+    a = n(158954),
     o = n(827734),
     u = n(475815),
     c = n(341915),
@@ -23,7 +23,7 @@ var r = n(627968),
     A = n(985018),
     C = n(681636);
 
-function b(e) {
+function _(e) {
     let {
         quest: t,
         sourceQuestContent: n
@@ -43,7 +43,7 @@ function b(e) {
     })
 }
 
-function _(e) {
+function b(e) {
     let {
         title: t,
         subtitle: n,
@@ -55,8 +55,8 @@ function _(e) {
     }, p = () => {
         d(!1)
     };
-    return (0, r.jsx)(s.DUT, {
-        className: a()(C.Mr, C.iM, u),
+    return (0, r.jsx)(a.DUT, {
+        className: s()(C.Mr, C.iM, u),
         onMouseEnter: m,
         onMouseLeave: p,
         onFocus: m,
@@ -66,11 +66,11 @@ function _(e) {
             className: C.ee,
             children: [(0, r.jsxs)("div", {
                 className: C.XU,
-                children: [(0, r.jsx)(s.DZT, {
+                children: [(0, r.jsx)(a.DZT, {
                     variant: "heading-md/semibold",
                     className: C.Zr,
                     children: t
-                }), (0, r.jsx)(s.DZT, {
+                }), (0, r.jsx)(a.DZT, {
                     variant: "heading-sm/normal",
                     className: C.Hk,
                     children: n
@@ -114,7 +114,7 @@ function T(e) {
             },
             src: n.url,
             alt: "Video thumbnail",
-            className: a()(C.C, {
+            className: s()(C.C, {
                 [C.TW]: "portrait" === i
             })
         })
@@ -130,15 +130,15 @@ function N(e) {
         orientation: o
     } = e;
     return (0, r.jsxs)("div", {
-        className: a()(C.pP, {
+        className: s()(C.pP, {
             [C.iC]: "portrait" === o
         }),
         children: [(0, r.jsx)(D, {
             title: n,
             subtitle: l
-        }), (0, r.jsx)(I, {
+        }), (0, r.jsx)(R, {
             label: t,
-            icon: s.KS6,
+            icon: a.KS6,
             onClick: i
         })]
     })
@@ -151,11 +151,11 @@ function D(e) {
     } = e;
     return (0, r.jsxs)("div", {
         className: C.PH,
-        children: [(0, r.jsx)(s.DZT, {
+        children: [(0, r.jsx)(a.DZT, {
             variant: "heading-md/semibold",
             className: C.m5,
             children: t
-        }), (0, r.jsx)(s.DZT, {
+        }), (0, r.jsx)(a.DZT, {
             variant: "heading-sm/normal",
             className: C.s$,
             children: n
@@ -163,7 +163,7 @@ function D(e) {
     })
 }
 
-function I(e) {
+function R(e) {
     let {
         label: t,
         icon: n,
@@ -174,14 +174,14 @@ function I(e) {
     }, p = () => {
         d(!1)
     };
-    return (0, r.jsxs)(s.DUT, {
-        className: a()(C.uU, C.iM, u),
+    return (0, r.jsxs)(a.DUT, {
+        className: s()(C.uU, C.iM, u),
         onMouseEnter: m,
         onMouseLeave: p,
         onFocus: m,
         onBlur: p,
         onClick: i,
-        children: [(0, r.jsx)(s.DZT, {
+        children: [(0, r.jsx)(a.DZT, {
             variant: "heading-md/semibold",
             className: C.ce,
             children: t
@@ -203,12 +203,12 @@ function L(e) {
         sourceQuestContent: h,
         quest: x,
         isFullscreenEnabled: D
-    } = l.useContext(v.VideoQuestModalContext), I = (0, f.go)(), L = (0, g.H)({
+    } = l.useContext(v.VideoQuestModalContext), R = (0, f.go)(), L = (0, g.H)({
         quest: x,
         onClose: o,
         sourceQuestContent: h,
-        impressionId: I
-    }), j = l.useCallback(e => {
+        impressionId: R
+    }), I = l.useCallback(e => {
         if (D) {
             let e = (0, u.qf)(t.current?.parentNode, t.current);
             null != e && (0, u.sP)(e)
@@ -216,51 +216,51 @@ function L(e) {
         n(e, p.Cy.LEARN_MORE), L(e, p.Cy.OPEN_GAME_LINK)
     }, [D, t, L, n]), {
         title: M,
-        subtitle: w
+        subtitle: j
     } = {
         title: (0, E.wr)(x),
         subtitle: x.config.ctaConfig.subtitle ?? A.intl.string(A.t.mxaHfx)
     }, {
-        enabled: k
+        enabled: w
     } = d.uK.useConfig({
         location: S.rE.VIDEO_MODAL
-    }), R = l.useMemo(() => (0, m.tW)(x, m.fY.VIDEO_PLAYER_THUMBNAIL, void 0, !1), [x]);
-    return k ? (0, r.jsxs)(r.Fragment, {
+    }), k = l.useMemo(() => (0, m.tW)(x, m.fY.VIDEO_PLAYER_THUMBNAIL, void 0, !1), [x]);
+    return w ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(y, {
-            asset: R
+            asset: k
         }), (0, r.jsx)("div", {
             className: C.MM,
             "data-testid": "discord-web-video-player-end-screen"
         }), (0, r.jsxs)("div", {
-            className: a()(C.Pb, {
+            className: s()(C.Pb, {
                 [C.II]: "portrait" === i
             }),
             children: [(0, r.jsx)(T, {
                 quest: x,
-                asset: R,
+                asset: k,
                 sourceQuestContent: h,
                 orientation: i
             }), (0, r.jsx)(N, {
                 title: M,
-                subtitle: w,
+                subtitle: j,
                 ctaBtnLabel: x.config.ctaConfig.buttonLabel,
-                onCTAClick: () => j(c.uF.VIDEO_MODAL),
+                onCTAClick: () => I(c.uF.VIDEO_MODAL),
                 orientation: i
             })]
         })]
     }) : (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(b, {
+        children: [(0, r.jsx)(_, {
             quest: x,
             sourceQuestContent: h
         }), (0, r.jsx)("div", {
             className: C.MT,
             "data-testid": "discord-web-video-player-end-screen"
-        }), (0, r.jsx)(_, {
+        }), (0, r.jsx)(b, {
             title: M,
-            subtitle: w,
-            icon: s.KS6,
+            subtitle: j,
+            icon: a.KS6,
             className: C.mT,
-            onClick: () => j(c.uF.VIDEO_MODAL)
+            onClick: () => I(c.uF.VIDEO_MODAL)
         })]
     })
 }

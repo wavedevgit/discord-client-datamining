@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(141711),
     l = n(118356),
     i = n(740644),
-    a = n(497329);
-let s = new l.Vy("SimpleMuxWrapper");
+    s = n(497329);
+let a = new l.Vy("SimpleMuxWrapper");
 class o {
     isMonitoring = !1;
     videoElement;
@@ -14,7 +14,7 @@ class o {
     sessionId;
     hlsInstance;
     constructor(e) {
-        this.config = e, this.videoElement = e.videoElement, this.sessionId = a.C.generateSessionId(), this.hlsInstance = e.hlsInstance
+        this.config = e, this.videoElement = e.videoElement, this.sessionId = s.C.generateSessionId(), this.hlsInstance = e.hlsInstance
     }
     initialize() {
         let e = {
@@ -27,21 +27,21 @@ class o {
         try {
             r.A.monitor(this.videoElement, e), this.isMonitoring = !0
         } catch (e) {
-            s.error("Error creating Mux monitor", e), this.isMonitoring = !1
+            a.error("Error creating Mux monitor", e), this.isMonitoring = !1
         }
     }
     endSession() {
         if (this.isMonitoring) try {
             "function" == typeof r.A.destroyMonitor && r.A.destroyMonitor(this.videoElement), this.isMonitoring = !1
         } catch (e) {
-            s.error("Error ending Mux session", e)
+            a.error("Error ending Mux session", e)
         }
     }
     destroy() {
         if (this.isMonitoring) try {
             "function" == typeof r.A.destroyMonitor && r.A.destroyMonitor(this.videoElement), this.isMonitoring = !1
         } catch (e) {
-            s.error("Error destroying Mux monitor", e)
+            a.error("Error destroying Mux monitor", e)
         }
     }
     getSessionId() {
