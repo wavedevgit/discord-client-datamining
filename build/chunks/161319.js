@@ -243,19 +243,20 @@ let v = {
     L = e => e.promotionType === E.pt.THIRD_PARTY_OUTBOUND_RECURRING ? e.partnerId?.toLowerCase() ?? null : e.outboundTitle.toLowerCase(),
     D = e => {
         let t, n, s, {
-                onClose: r
+                transitionState: r,
+                onClose: o
             } = e,
             {
-                promotionsLoaded: o,
-                claimedOutboundPromotionCodeMap: d
+                promotionsLoaded: d,
+                claimedOutboundPromotionCodeMap: m
             } = (0, x.y7)(),
-            m = (0, l.yK)([p.A], () => p.A.outboundRecurringPromotions),
-            E = (0, l.bG)([c.default], () => c.default.getCurrentUser()),
-            C = !1 === _.Ay.isPremiumExactly(E, S.PremiumTypes.TIER_2),
-            T = E?.isFractionalPremiumWithNoStandardSub(),
-            b = null == E || C || T;
-        if (!1 === o) return (0, i.jsx)(a.y$y, {});
-        let j = (e => {
+            E = (0, l.yK)([p.A], () => p.A.outboundRecurringPromotions),
+            C = (0, l.bG)([c.default], () => c.default.getCurrentUser()),
+            T = !1 === _.Ay.isPremiumExactly(C, S.PremiumTypes.TIER_2),
+            b = C?.isFractionalPremiumWithNoStandardSub(),
+            j = null == C || T || b;
+        if (!1 === d) return (0, i.jsx)(a.y$y, {});
+        let O = (e => {
             let {
                 promotions: t,
                 codesByPromotion: n
@@ -286,8 +287,8 @@ let v = {
                 i[t].push(a)
             }), i
         })({
-            promotions: m,
-            codesByPromotion: d
+            promotions: E,
+            codesByPromotion: m
         });
         return (0, i.jsx)(a.Modal, {
             title: f.intl.string(f.t["7ioAjs"]),
@@ -296,22 +297,22 @@ let v = {
             }),
             actions: [],
             preview: (() => {
-                if (!0 === b) return (0, i.jsx)(A.A, {
+                if (!0 === j) return (0, i.jsx)(A.A, {
                     subscriptionTier: S.pe.TIER_2,
                     fullWidth: !0,
                     onClick: () => {
-                        r()
+                        o()
                     },
                     onSubscribeModalClose: e => {
                         if (e) return h.Ay.fetchActivePromotions()
                     }
                 })
             })(),
-            transitionState: a.ip4.ENTERED,
-            onClose: r,
+            transitionState: r,
+            onClose: o,
             children: (n = new Date((t = new Date(new Date().toLocaleString("en-US", {
                 timeZone: "America/New_York"
-            }))).getFullYear(), t.getMonth() + 1, 0).getDate(), s = t.getDate() / n * 100, b ? (0, i.jsx)(R, {}) : (0, i.jsxs)("div", {
+            }))).getFullYear(), t.getMonth() + 1, 0).getDate(), s = t.getDate() / n * 100, j ? (0, i.jsx)(R, {}) : (0, i.jsxs)("div", {
                 className: N.kL,
                 children: [(0, i.jsx)("div", {
                     className: N.Ps,
@@ -329,7 +330,7 @@ let v = {
                     })
                 }), (0, i.jsx)("div", {
                     className: N.kR,
-                    children: Object.entries(j).sort((e, t) => {
+                    children: Object.entries(O).sort((e, t) => {
                         let [n] = e, [i] = t;
                         return i.localeCompare(n)
                     }).map(e => {

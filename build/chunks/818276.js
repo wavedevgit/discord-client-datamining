@@ -27,8 +27,8 @@ let b = i.forwardRef(function(e, t) {
     } = i.useContext(u.PW), {
         quest: v,
         taskDetails: j,
-        isExpanded: C,
-        isExpansionAnimationComplete: A
+        isExpanded: A,
+        isExpansionAnimationComplete: C
     } = i.useContext(x.T), T = v.userStatus?.completedAt != null, y = (0, d.I3)(v), S = i.useRef(null), E = v.userStatus?.enrolledAt != null, N = null != y ? y.percentComplete : j.percentComplete, [I, k] = i.useState(!1);
     return (0, a.jsxs)(a.Fragment, {
         children: [T && (0, a.jsx)(h.A, {
@@ -37,9 +37,9 @@ let b = i.forwardRef(function(e, t) {
             isHovered: I
         }), (0, a.jsx)(r.animated.div, {
             ref: t,
-            "aria-hidden": C && A,
+            "aria-hidden": A && C,
             className: l()(n, f.hR, {
-                [f.Ag]: C,
+                [f.Ag]: A,
                 [f.s]: E
             }),
             style: {

@@ -1,32 +1,32 @@
 /** chunk id: 883471, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => o
+    A: () => d
 });
 var l = n(627968);
 n(64700);
 var a = n(397927),
-    r = n(263063),
-    i = n(71393),
+    i = n(263063),
+    r = n(71393),
     s = n(985018),
-    d = n(75271);
-let o = e => {
+    o = n(75271);
+let d = e => {
     let {
         stageInstance: t
-    } = e, n = i.A.getGuild(t.guild_id);
+    } = e, n = r.A.getGuild(t.guild_id);
     return null == n ? null : (0, l.jsxs)("div", {
-        className: d.kL,
+        className: o.kL,
         children: [(0, l.jsx)(a.Heading, {
-            className: d.wx,
+            className: o.wx,
             variant: "heading-sm/semibold",
             children: s.intl.string(s.t.InbJ8x)
         }), (0, l.jsxs)("div", {
-            className: d.bo,
+            className: o.bo,
             children: [(0, l.jsxs)("div", {
-                className: d.OA,
-                children: [(0, l.jsx)(r.Ay, {
+                className: o.OA,
+                children: [(0, l.jsx)(i.Ay, {
                     guild: n,
-                    size: r.Ay.Sizes.MINI,
-                    className: d.$f
+                    size: i.Ay.Sizes.MINI,
+                    className: o.$f
                 }), (0, l.jsx)(a.Text, {
                     color: "text-default",
                     variant: "text-sm/normal",

@@ -4,11 +4,11 @@ n.d(t, {
 });
 var l = n(627968),
     a = n(64700),
-    r = n(843472),
-    i = n(58149),
+    i = n(843472),
+    r = n(58149),
     s = n(632738),
-    d = n(734057),
-    o = n(576705),
+    o = n(734057),
+    d = n(576705),
     c = n(652215),
     u = n(985018);
 let _ = e => {
@@ -16,12 +16,12 @@ let _ = e => {
         message: t,
         reportId: n
     } = e, [_, m] = a.useState(!1), x = a.useCallback(() => {
-        m(!0), i.Ay.trackWithMetadata(c.HAw.IAR_DELETE_MESSAGE_BUTTON_CLICKED, {
+        m(!0), r.Ay.trackWithMetadata(c.HAw.IAR_DELETE_MESSAGE_BUTTON_CLICKED, {
             report_id: n
-        }), r.A.deleteMessage(t.getChannelId(), t.id)
+        }), i.A.deleteMessage(t.getChannelId(), t.id)
     }, [t, n]), p = a.useMemo(() => {
-        let e = d.A.getChannel(t.getChannelId());
-        return null != e && e.type !== c.rbe.DM && e.type !== c.rbe.GROUP_DM && o.A.canWithPartialContext(c.xBc.MANAGE_MESSAGES, {
+        let e = o.A.getChannel(t.getChannelId());
+        return null != e && e.type !== c.rbe.DM && e.type !== c.rbe.GROUP_DM && d.A.canWithPartialContext(c.xBc.MANAGE_MESSAGES, {
             channelId: e.id
         })
     }, [t]);

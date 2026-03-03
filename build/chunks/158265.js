@@ -1,6 +1,6 @@
 /** chunk id: 158265, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => C
+    A: () => A
 });
 var a = n(627968),
     i = n(64700),
@@ -21,20 +21,20 @@ var a = n(627968),
     b = n(851110),
     v = n(307725),
     j = n(231901);
-let C = e => {
+let A = e => {
     let {
         overlayRef: t,
         progressBarRef: n,
         isHovered: s
     } = e, {
-        quest: C,
-        isExpanded: A
+        quest: A,
+        isExpanded: C
     } = i.useContext(g.T), {
         expansionSpring: T
     } = i.useContext(p.PW), {
         completionSpring: y,
         startCompletionAnimation: S
-    } = (0, _.R)(), E = C.userStatus?.completedAt != null, N = i.useRef(!1), I = (0, c.bG)([m.A], () => m.A.useReducedMotion), k = i.useRef(null), R = (0, c.bG)([h.A], () => h.A.hasLayers()), O = (0, u.A)(R), [w, D] = i.useState(null), [M, P] = i.useState(null), L = i.useRef(new r.OH({
+    } = (0, _.R)(), E = A.userStatus?.completedAt != null, N = i.useRef(!1), I = (0, c.bG)([m.A], () => m.A.useReducedMotion), k = i.useRef(null), R = (0, c.bG)([h.A], () => h.A.hasLayers()), O = (0, u.A)(R), [w, D] = i.useState(null), [M, P] = i.useState(null), L = i.useRef(new r.OH({
         gravity: 0,
         wind: 0
     })), U = (0, r.f9)(w, M), B = i.useMemo(() => [f.r3], []), G = i.useCallback(() => {
@@ -90,10 +90,10 @@ let C = e => {
                 }
             }), 100)
         }
-    }, [n, k, U, I]), F = (0, u.A)(A);
+    }, [n, k, U, I]), F = (0, u.A)(C);
     return (i.useEffect(() => {
-        E && A && !F && (S(), G())
-    }, [A, E, S, G, F]), i.useEffect(() => {
+        E && C && !F && (S(), G())
+    }, [C, E, S, G, F]), i.useEffect(() => {
         E && !R && O && setTimeout(() => {
             S(), G()
         }, 200)

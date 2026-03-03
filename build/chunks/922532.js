@@ -21,9 +21,9 @@ function o(e) {
         onQuestBarFocus: x
     } = e, p = a.useRef(-1), g = a.useRef(!1), [_, f] = a.useState(!1), [b, v] = a.useState(!1), j = a.useCallback(() => {
         f(!0)
-    }, []), C = a.useCallback(() => {
+    }, []), A = a.useCallback(() => {
         f(!1), g.current || c || o(!1)
-    }, [c, o]), A = a.useCallback(() => {
+    }, [c, o]), C = a.useCallback(() => {
         f(!1), c || o(!1), g.current = !1
     }, [c, o]), T = a.useCallback(() => {
         v(!0)
@@ -76,8 +76,8 @@ function o(e) {
         ctxMenuOpen: _,
         gameSheetOpen: b,
         handleCtxMenuOpened: j,
-        handleCtxMenuClosed: C,
-        handleCtxMenuSelection: A,
+        handleCtxMenuClosed: A,
+        handleCtxMenuSelection: C,
         handleGameSheetOpened: T,
         handleGameSheetClosed: y,
         handleFocus: S,

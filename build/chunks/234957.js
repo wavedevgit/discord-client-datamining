@@ -20,12 +20,12 @@ let _ = l.memo(function(e) {
         compact: _ = !1
     } = e, A = m.state === s.a.LOADED ? m.message : void 0, f = r.m.useExperiment({
         location: "repliedMessage"
-    }).enabled, E = l.useMemo(() => A?.content != null && "" !== A.content ? (0, c.Ay)(A, {
+    }).enabled, h = l.useMemo(() => A?.content != null && "" !== A.content ? (0, c.Ay)(A, {
         formatInline: !0,
         allowGameMentions: f
     }).content : null, [A, f]), {
-        isReplyAuthorBlocked: h,
-        isReplyAuthorIgnored: g
+        isReplyAuthorBlocked: g,
+        isReplyAuthorIgnored: E
     } = (0, a.cf)([o.A], () => ({
         isReplyAuthorBlocked: null != A && o.A.isBlockedForMessage(A),
         isReplyAuthorIgnored: null != A && o.A.isIgnoredForMessage(A)
@@ -36,10 +36,10 @@ let _ = l.memo(function(e) {
         baseMessage: t,
         channel: n,
         referencedMessage: m,
-        content: E,
+        content: h,
         compact: _,
-        isReplyAuthorBlocked: h,
-        isReplyAuthorIgnored: g,
+        isReplyAuthorBlocked: g,
+        isReplyAuthorIgnored: E,
         isReplySpineClickable: !1,
         showReplySpine: !0
     })

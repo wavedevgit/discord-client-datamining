@@ -97,7 +97,7 @@ function v(e) {
 function j() {
     let {
         name: e
-    } = (0, x.x5)(g.oh.AUDIO_INPUT), [t, n] = i.useState(!1), [s, l] = i.useState([]), b = (0, r.bG)([p.Ay], () => p.Ay.getKrispSuppressionLevel()), [j, C] = i.useState(null), A = i.useRef(null), T = i.useRef(null), [y, S] = i.useState(.5), {
+    } = (0, x.x5)(g.oh.AUDIO_INPUT), [t, n] = i.useState(!1), [s, l] = i.useState([]), b = (0, r.bG)([p.Ay], () => p.Ay.getKrispSuppressionLevel()), [j, A] = i.useState(null), C = i.useRef(null), T = i.useRef(null), [y, S] = i.useState(.5), {
         krispModels: E,
         krispModelOverride: N,
         inputMode: I,
@@ -126,7 +126,7 @@ function j() {
         noiseCancellationEnableStats: p.Ay.getKrispEnableStats(),
         vadDuringPreProcess: p.Ay.getModeOptions().vadDuringPreProcess
     })), G = D ? "KRISP" : M ? "STANDARD" : "NONE", F = (0, m.v)(), V = i.useCallback(() => {
-        A.current?.stop(), A.current = null, C(null)
+        C.current?.stop(), C.current = null, A(null)
     }, []);
 
     function W() {
@@ -136,7 +136,7 @@ function j() {
     function H(e) {
         if (t && W(), V(), null == F) return;
         let n = F.createBufferSource();
-        n.buffer = e.audioBuffer, T.current = F.createGain(), T.current.gain.value = y, n.connect(T.current), T.current.connect(F.destination), n.loop = !0, n.start(), A.current = n, C(e)
+        n.buffer = e.audioBuffer, T.current = F.createGain(), T.current.gain.value = y, n.connect(T.current), T.current.connect(F.destination), n.loop = !0, n.start(), C.current = n, A(e)
     }
     i.useEffect(() => {
         V()

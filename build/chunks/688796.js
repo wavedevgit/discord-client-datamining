@@ -74,7 +74,8 @@ function R(t) {
             R?.(), (0, A.x)(l)
         },
         secondaryCTA: g.intl.string(g.t.PcTCB7),
-        onClose: l
+        onClose: l,
+        ...C
     }) : (0, i.jsx)(d.A, {
         artURL: T ? void 0 : y,
         modalClassName: T ? E.yl : void 0,

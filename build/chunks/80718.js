@@ -4,11 +4,11 @@ n.d(t, {
 });
 var l = n(627968),
     a = n(64700),
-    r = n(311907),
-    i = n(824552),
+    i = n(311907),
+    r = n(824552),
     s = n(933958),
-    d = n(869003),
-    o = n(58149),
+    o = n(869003),
+    d = n(58149),
     c = n(632738),
     u = n(546183),
     _ = n(652215),
@@ -17,23 +17,23 @@ let x = e => {
     let {
         application: t,
         reportId: n
-    } = e, [x, p] = a.useState(!1), g = (0, r.bG)([u.default], () => u.default.getNewestTokenForApplication(t.id));
+    } = e, [x, p] = a.useState(!1), g = (0, i.bG)([u.default], () => u.default.getNewestTokenForApplication(t.id));
     a.useEffect(() => {
         null != g && p(!0)
     }, [g]);
     let A = a.useRef(!1);
     a.useEffect(() => {
-        A.current || (i.A.fetch(), A.current = !0)
+        A.current || (r.A.fetch(), A.current = !0)
     }, []);
-    let h = (0, r.bG)([s.Ay], () => s.Ay.getSelfEmbeddedActivities()),
+    let h = (0, i.bG)([s.Ay], () => s.Ay.getSelfEmbeddedActivities()),
         b = a.useCallback(() => {
-            if (p(!1), o.Ay.trackWithMetadata(_.HAw.IAR_DEAUTHORIZE_APP_BUTTON_CLICKED, {
+            if (p(!1), d.Ay.trackWithMetadata(_.HAw.IAR_DEAUTHORIZE_APP_BUTTON_CLICKED, {
                     application_id: t.id,
                     report_id: n
                 }), null == g) return;
-            i.A.delete(g.id);
+            r.A.delete(g.id);
             let e = h.get(t.id);
-            null != e && d.A.leaveActivity({
+            null != e && o.A.leaveActivity({
                 location: e.location,
                 applicationId: t.id,
                 showFeedback: !1

@@ -21,8 +21,8 @@ var a = n(627968),
     b = n(18437),
     v = n(590202),
     j = n(971649),
-    C = n(651892),
-    A = n(710969),
+    A = n(651892),
+    C = n(710969),
     T = n(901406),
     y = n(792620),
     S = n(814793),
@@ -89,7 +89,7 @@ function L(e) {
         sourceQuestContent: n
     } = e, a = (0, j.go)();
     return {
-        externalLinkCta: (0, C.wr)(t),
+        externalLinkCta: (0, A.wr)(t),
         handleOpenExternalLink: i.useCallback(() => {
             (0, T.pu)(t, {
                 content: h.uF.QUEST_HOME_DESKTOP,
@@ -225,7 +225,7 @@ function G(e) {
         isClaiming: m.A.isClaimingReward(t.id) || m.A.isFetchingRewardCode(t.id),
         isEnrolling: m.A.isEnrolling(t.id),
         isQuestEnrollmentBlocked: null != m.A.questEnrollmentBlockedUntil
-    })), Q = t.userStatus?.enrolledAt != null, Y = t.userStatus?.completedAt != null, J = Y && t.userStatus?.claimedAt == null, X = (0, A.if)(t), Z = !(0, A.Ic)(t), ee = (0, f.In)(t), et = (0, y.IO)(t), en = (0, y.K$)(t), ea = (0, y.Cr)(t), ei = (0, f.fc)(t), [es, el, er] = (0, f.Qo)(t, ei), eo = Z && ee === f.F3.ACCEPTED, ed = eo && es === h.X0.SELECT, ec = eo && !ed && el.length > 1, eu = p.t.useConfig({
+    })), Q = t.userStatus?.enrolledAt != null, Y = t.userStatus?.completedAt != null, J = Y && t.userStatus?.claimedAt == null, X = (0, C.if)(t), Z = !(0, C.Ic)(t), ee = (0, f.In)(t), et = (0, y.IO)(t), en = (0, y.K$)(t), ea = (0, y.Cr)(t), ei = (0, f.fc)(t), [es, el, er] = (0, f.Qo)(t, ei), eo = Z && ee === f.F3.ACCEPTED, ed = eo && es === h.X0.SELECT, ec = eo && !ed && el.length > 1, eu = p.t.useConfig({
         location: R.rE.QUEST_HOME_DESKTOP
     }), em = (0, I.Pd)(t), eh = i.useCallback(e => {
         er(e), e === R.fO.DESKTOP && g([])
@@ -270,11 +270,11 @@ function G(e) {
         content: n,
         ctaContent: v.Cy.CONTEXT_MENU_OPEN_GAME_LINK_EXP_TREATMENT_ONE,
         sourceQuestContent: L
-    }), eC = x.wK.useConfig({
+    }), eA = x.wK.useConfig({
         location: R.rE.QUESTS_CARD
-    }), eA = eC.enabled && eC.variant === x.dF.NEXT_TO_PRIMARY_CTA, eT = null;
-    if (eA) {
-        let e = (0, C.wr)(t);
+    }), eC = eA.enabled && eA.variant === x.dF.NEXT_TO_PRIMARY_CTA, eT = null;
+    if (eC) {
+        let e = (0, A.wr)(t);
         eT = (0, a.jsx)(r.$nd, {
             variant: "secondary",
             text: e,

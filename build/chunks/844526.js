@@ -60,7 +60,7 @@ function j(e) {
         n(f.i.USER_DISMISS)
     }, [n]), v = g.VD[t], j = b.intl.formatToPlainString(b.t.ewkaVR, {
         timeMilestone: (0, h.T)(v.id, v.tenureReqNumMonths)?.toLocaleLowerCase()
-    }), C = [{
+    }), A = [{
         text: b.intl.string(b.t.RzWDqY),
         variant: "primary",
         onClick: u
@@ -80,6 +80,6 @@ function j(e) {
         size: "lg",
         title: b.intl.string(b.t.VoDxsV),
         body: j,
-        actions: C
+        actions: A
     })
 }

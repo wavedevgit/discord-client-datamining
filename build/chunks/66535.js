@@ -4,11 +4,11 @@ n.d(t, {
 });
 var l = n(627968),
     a = n(64700),
-    r = n(311907),
-    i = n(397927),
+    i = n(311907),
+    r = n(397927),
     s = n(387408),
-    d = n(763754),
-    o = n(491182),
+    o = n(763754),
+    d = n(491182),
     c = n(291812),
     u = n(643204),
     _ = n(448368),
@@ -21,7 +21,7 @@ var l = n(627968),
 let b = e => {
     let {
         message: t
-    } = e, n = (0, d.Ay)(t), b = (0, r.bG)([p.A], () => p.A.getChannel(t.channel_id)), v = a.useMemo(() => (0, s.A)(t), [t]), {
+    } = e, n = (0, o.Ay)(t), b = (0, i.bG)([p.A], () => p.A.getChannel(t.channel_id)), v = a.useMemo(() => (0, s.A)(t), [t]), {
         content: f
     } = (0, m.A)(v, {
         hideSimpleEmbedContent: !1
@@ -45,13 +45,13 @@ let b = e => {
     }, [t, f, T]);
     return null == b ? null : (0, l.jsxs)("div", {
         className: h.kL,
-        children: [(0, l.jsx)(i.Heading, {
+        children: [(0, l.jsx)(r.Heading, {
             className: h.wx,
             variant: "heading-sm/semibold",
             children: A.intl.string(A.t.iouM3a)
-        }), (0, l.jsx)(i.HOs, {
+        }), (0, l.jsx)(r.HOs, {
             className: h.PI,
-            children: (0, l.jsx)(o.A, {
+            children: (0, l.jsx)(d.A, {
                 childrenMessageContent: C(),
                 childrenHeader: (0, l.jsx)(u.Ay, {
                     message: t,

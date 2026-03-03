@@ -33,7 +33,7 @@ var i = {
     "./zh-TW.png": "23880"
 };
 
-function r(e) {
+function s(e) {
     return n(l(e))
 }
 
@@ -44,6 +44,6 @@ function l(e) {
     }
     return i[e]
 }
-r.keys = function() {
+s.keys = function() {
     return Object.keys(i)
-}, r.resolve = l, e.exports = r, r.id = 579832
+}, s.resolve = l, e.exports = s, s.id = 579832

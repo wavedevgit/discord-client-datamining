@@ -4,11 +4,11 @@ n.d(t, {
 });
 var l = n(627968),
     a = n(64700),
-    r = n(311907),
-    i = n(49229),
+    i = n(311907),
+    r = n(49229),
     s = n(58149),
-    d = n(662502),
-    o = n(632738),
+    o = n(662502),
+    d = n(632738),
     c = n(734057),
     u = n(994500),
     _ = n(562153),
@@ -20,17 +20,17 @@ let p = e => {
         channelId: n,
         reportId: p,
         reportType: g
-    } = e, A = (0, r.bG)([u.A], () => u.A.isBlocked(t.id), [t.id]), h = (0, r.bG)([c.A], () => c.A.getChannel(n), [n]), b = a.useMemo(() => _.Ay.getName(h?.guild_id, h?.id, t), [h, t]), v = a.useCallback(() => {
+    } = e, A = (0, i.bG)([u.A], () => u.A.isBlocked(t.id), [t.id]), h = (0, i.bG)([c.A], () => c.A.getChannel(n), [n]), b = a.useMemo(() => _.Ay.getName(h?.guild_id, h?.id, t), [h, t]), v = a.useCallback(() => {
         s.Ay.trackWithMetadata(m.HAw.IAR_BLOCK_USER_BUTTON_CLICKED, {
             other_user_id: t.id,
             report_id: p
-        }), i.A.blockUser(t.id, {
+        }), r.A.blockUser(t.id, {
             location: "ReportMenuBlockUser-iOS"
         }).then(() => {
-            d.A.showBlockSuccessToast(t.id, n)
+            o.A.showBlockSuccessToast(t.id, n)
         })
     }, [t, p, n]);
-    return (0, l.jsx)(o.PQ, {
+    return (0, l.jsx)(d.PQ, {
         title: x.intl.formatToPlainString(x.t["Q1o/f3"], {
             username: b
         }),

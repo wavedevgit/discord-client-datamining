@@ -15,9 +15,9 @@ var i = n(627968),
     _ = n(287809),
     A = n(954571),
     f = n(242874),
-    E = n(275759),
-    h = n(979474),
-    g = n(51501),
+    h = n(275759),
+    g = n(979474),
+    E = n(51501),
     p = n(788868),
     x = n(652215),
     C = n(778712),
@@ -77,9 +77,9 @@ function v(e) {
         innerRef: M
     } = e, j = (0, r.bG)([_.default], () => _.default.getCurrentUser()), {
         analyticsLocations: O
-    } = (0, d.Ay)(c.A.PREMIUM_GIFT_INTENT_CARD), b = (0, r.bG)([E.Ay], () => E.Ay.getFriendAnniversaryYears(N.id)), y = (0, g.$)(t), {
+    } = (0, d.Ay)(c.A.PREMIUM_GIFT_INTENT_CARD), b = (0, r.bG)([h.Ay], () => h.Ay.getFriendAnniversaryYears(N.id)), y = (0, E.$)(t), {
         openGiftModal: L
-    } = (0, h.$)({
+    } = (0, g.$)({
         giftRecipient: N,
         analyticsLocations: O,
         analyticsLocation: y.chat,
@@ -97,7 +97,7 @@ function v(e) {
             type: a.ImpressionTypes.VIEW,
             properties: {
                 gift_intent_type: t,
-                num_friend_anniversaries: E.Ay.getFriendAnniversaries().length
+                num_friend_anniversaries: h.Ay.getFriendAnniversaries().length
             }
         })
     }, [t]);

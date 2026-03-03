@@ -11,28 +11,29 @@ var e = n(627968),
 
 function c(t) {
     let {
-        onClose: i,
-        graphic: n
-    } = t, c = a.default.getCurrentUser();
+        transitionState: i,
+        onClose: n,
+        graphic: c
+    } = t, d = a.default.getCurrentUser();
     return (0, e.jsx)(r.ExpressiveModal, {
-        transitionState: r.ip4.ENTERED,
+        transitionState: i,
         title: o.intl.string(o.t.L4Wg3B),
         subtitle: o.intl.string(o.t.SXb73A),
-        graphic: n,
-        onClose: i,
+        graphic: c,
+        onClose: n,
         actions: [{
             text: o.intl.string(o.t.TxBQzD),
             onClick: () => {
-                null != c && (0, s.openUserProfileModal)({
-                    userId: c.id,
+                null != d && (0, s.openUserProfileModal)({
+                    userId: d.id,
                     tabSection: l.RP.WISHLIST
-                }), i()
+                }), n()
             },
             variant: "secondary"
         }, {
             variant: "primary",
             text: o.intl.string(o.t.tM4PUv),
-            onClick: i
+            onClick: n
         }]
     })
 }

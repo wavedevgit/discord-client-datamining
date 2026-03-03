@@ -1,6 +1,6 @@
 /** chunk id: 263758, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => C
+    A: () => A
 });
 var a = n(627968),
     i = n(64700),
@@ -64,17 +64,17 @@ let v = async () => (await o.Bo.get({
     value: _.gD.PREMIUM_GROUP_MONTH
 }];
 
-function C() {
+function A() {
     let e = (0, r.bG)([x.A], () => x.A.getPremiumTypeSubscription()),
         t = (0, r.bG)([h.default], () => h.default.getCurrentUser()),
         [n, s] = i.useState("511651880837840896"),
         [m, _] = i.useState([]),
-        [C, A] = i.useState(!1),
+        [A, C] = i.useState(!1),
         T = i.useCallback(async () => {
             try {
-                A(!0), await (0, c.hP)(), await (0, u.eO)(t.id), _(await v())
+                C(!0), await (0, c.hP)(), await (0, u.eO)(t.id), _(await v())
             } finally {
-                A(!1)
+                C(!1)
             }
         }, [t]);
     i.useEffect(() => {
@@ -110,7 +110,7 @@ function C() {
                     icon: d.fNY,
                     size: "sm",
                     variant: "icon-only",
-                    disabled: C,
+                    disabled: A,
                     onClick: T
                 })]
             }), (0, a.jsx)("section", {

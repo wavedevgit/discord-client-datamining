@@ -25,11 +25,11 @@ function g(e) {
         nick: _,
         onSelect: m
     } = e, {
-        theme: E,
-        themeType: x
+        theme: x,
+        themeType: E
     } = (0, u.E)(), y = t.hasAvatarForGuild(g.id);
     return (0, i.jsxs)(r.DUT, {
-        focusProps: x === p.d.MODAL_V2 ? {
+        focusProps: E === p.d.MODAL_V2 ? {
             offset: {
                 top: 4,
                 right: 4,
@@ -58,7 +58,7 @@ function g(e) {
             guild: g,
             showBadge: !0,
             className: null != g.icon ? A.Kk : A.lN,
-            badgeStrokeColor: (0, a.Mw)(E) ? s.A.unsafe_rawColors.PRIMARY_600.css : s.A.unsafe_rawColors.WHITE.css,
+            badgeStrokeColor: (0, a.Mw)(x) ? s.A.unsafe_rawColors.PRIMARY_600.css : s.A.unsafe_rawColors.WHITE.css,
             badgeTooltipColor: r.oMw.PRIMARY,
             badgeTooltipDelay: h.In,
             size: d.Ay.Sizes.MEDIUM,

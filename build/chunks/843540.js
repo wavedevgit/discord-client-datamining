@@ -4,20 +4,20 @@ n.d(t, {
 });
 var l = n(873298),
     a = n(632119),
-    r = n(17372),
-    i = n(985018);
+    i = n(17372),
+    r = n(985018);
 let s = {
-    getTitle: () => i.intl.string(i.t["Gtck/t"]),
-    getDisabledTitle: () => i.intl.string(i.t.E6UmXa),
-    getDescription: () => i.intl.string(i.t.jcRSp6),
-    eligibleReportSubtypes: [r.TS.SUB_CSAM, r.TS.SUB_LOLI, r.TS.SUB_NCP, r.TS.SUB_SEXUALLY_DEGRADING_CONTENT, r.TS.SUB_UNSOLICITED_PORN],
+    getTitle: () => r.intl.string(r.t["Gtck/t"]),
+    getDisabledTitle: () => r.intl.string(r.t.E6UmXa),
+    getDescription: () => r.intl.string(r.t.jcRSp6),
+    eligibleReportSubtypes: [i.TS.SUB_CSAM, i.TS.SUB_LOLI, i.TS.SUB_NCP, i.TS.SUB_SEXUALLY_DEGRADING_CONTENT, i.TS.SUB_UNSOLICITED_PORN],
     onApply: () => (0, a.Jz)(function() {
         let {
             explicitContentGuilds: e,
             explicitContentFriendDm: t,
             explicitContentNonFriendDm: n
-        } = (0, a.C$)(), r = {};
-        return e === l.TO.SHOW && (r.explicitContentGuilds = l.TO.BLUR), t === l.TO.SHOW && (r.explicitContentFriendDm = l.TO.BLUR), n === l.TO.SHOW && (r.explicitContentNonFriendDm = l.TO.BLUR), r
+        } = (0, a.C$)(), i = {};
+        return e === l.TO.SHOW && (i.explicitContentGuilds = l.TO.BLUR), t === l.TO.SHOW && (i.explicitContentFriendDm = l.TO.BLUR), n === l.TO.SHOW && (i.explicitContentNonFriendDm = l.TO.BLUR), i
     }()),
     predicate: () => {
         let {

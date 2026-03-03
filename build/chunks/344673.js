@@ -21,8 +21,8 @@ var a = n(627968),
     b = n(708403),
     v = n(260880),
     j = n(303054),
-    C = n(231643),
-    A = n(985018),
+    A = n(231643),
+    C = n(985018),
     T = n(76584),
     y = n(661251);
 let S = [{
@@ -56,7 +56,7 @@ let S = [{
     E = [{
         id: "details",
         name: "Details",
-        group: C.fu.NONE,
+        group: A.fu.NONE,
         render: e => {
             let {
                 loggedTrigger: {
@@ -137,7 +137,7 @@ function N() {
     let [e, t] = i.useState(""), n = i.useRef(null), s = (0, u.yK)([_.A], () => _.A.loggedTriggers), r = i.useMemo(() => s.filter(t => 0 === e.length || o()(e, t.experimentId)).sort((e, t) => t.timestamp.getTime() - e.timestamp.getTime()), [s, e]), [d, c] = i.useState(void 0), p = r.find(e => e.key === d), {
         TabBar: g,
         renderSelectedTab: b
-    } = (0, C.Ay)({
+    } = (0, A.Ay)({
         tabs: E
     }, []), N = (0, u.bG)([_.A], () => _.A.trackTriggers), I = i.useCallback(e => {
         x.h.dispatch({
@@ -168,7 +168,7 @@ function N() {
             }), (0, a.jsx)(h.K0, {
                 size: "sm",
                 variant: "icon-only",
-                "aria-label": A.intl.string(A.t.VkKicb),
+                "aria-label": C.intl.string(C.t.VkKicb),
                 icon: h.ucK,
                 onClick: f.eY
             })]

@@ -727,24 +727,38 @@ let b = {
             default: e,
             SelectFriendsModalScreens: t
         } = await Promise.resolve().then(n.bind(n, 303682));
-        return n => (0, a.jsx)(e, {
-            onClose: async () => {
-                console.log("SelectFriendsModal: Closed"), await n.onClose()
-            },
-            startingScreen: t.SELECT_FRIENDS
-        })
+        return n => {
+            let {
+                onClose: i,
+                ...s
+            } = n;
+            return (0, a.jsx)(e, {
+                onClose: async () => {
+                    console.log("SelectFriendsModal: Closed"), await i()
+                },
+                startingScreen: t.SELECT_FRIENDS,
+                ...s
+            })
+        }
     },
     SelectFriendsModalReminder: async () => {
         let {
             default: e,
             SelectFriendsModalScreens: t
         } = await Promise.resolve().then(n.bind(n, 303682));
-        return n => (0, a.jsx)(e, {
-            onClose: async () => {
-                console.log("SelectFriendsModalReminder: Closed"), await n.onClose()
-            },
-            startingScreen: t.REMINDER
-        })
+        return n => {
+            let {
+                onClose: i,
+                ...s
+            } = n;
+            return (0, a.jsx)(e, {
+                onClose: async () => {
+                    console.log("SelectFriendsModalReminder: Closed"), await i()
+                },
+                startingScreen: t.REMINDER,
+                ...s
+            })
+        }
     },
     AddFavoriteChannelModal: async () => {
         let {

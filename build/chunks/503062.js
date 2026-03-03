@@ -19,8 +19,8 @@ var i = n(627968),
     g = n(652215),
     _ = n(996988),
     m = n(794904);
-let E = a._3J.SIZE_40,
-    x = (0, a.FT9)(E);
+let x = a._3J.SIZE_40,
+    E = (0, a.FT9)(x);
 
 function y(e) {
     let {
@@ -74,9 +74,9 @@ function y(e) {
             })
         },
         children: [(0, i.jsx)(a.euF, {
-            src: t.getAvatarURL(v, x),
+            src: t.getAvatarURL(v, E),
             "aria-label": t.username,
-            size: E,
+            size: x,
             status: T ? g.clD.UNKNOWN : y,
             statusBackdropColor: T ? void 0 : (0, a.C$5)(I),
             isMobile: b,

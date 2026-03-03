@@ -15,9 +15,9 @@ var i = n(627968),
     _ = n(287809),
     A = n(954571),
     f = n(661191),
-    E = n(460350),
-    h = n(652215),
-    g = n(48447);
+    h = n(460350),
+    g = n(652215),
+    E = n(48447);
 
 function p(e) {
     let {
@@ -41,14 +41,14 @@ function x(e) {
         assets: u,
         currentUser: t,
         message: a
-    }), [u, t, a]), h = l.useMemo(() => p({
+    }), [u, t, a]), g = l.useMemo(() => p({
         assets: d,
         currentUser: t,
         message: a
-    }), [d, t, a]), g = l.useCallback(async () => {
+    }), [d, t, a]), E = l.useCallback(async () => {
         let {
             valid: e
-        } = await (0, E.i)({
+        } = await (0, h.i)({
             type: o.oU.FORM,
             content: "",
             channel: n
@@ -91,8 +91,8 @@ function x(e) {
             asset: f,
             component: c.A
         },
-        text: h,
-        onClick: g,
+        text: g,
+        onClick: E,
         variant: "secondary"
     })
 }
@@ -115,7 +115,7 @@ function C(e) {
             let e = t.guild_id;
             if (null == i || null == e) return !1;
             let l = (0, d.UJ)(t),
-                a = m.A.can(h.xBc.SEND_MESSAGES, t),
+                a = m.A.can(g.xBc.SEND_MESSAGES, t),
                 r = u.Ay.getMember(e, i.id)?.isPending,
                 s = n.author.bot;
             return a && !l && !r && !s
@@ -126,7 +126,7 @@ function C(e) {
         currentUser: c
     });
     return null != c && A ? (0, i.jsx)("div", {
-        className: g.S,
+        className: E.S,
         children: (0, i.jsx)(x, {
             currentUser: c,
             channel: t,

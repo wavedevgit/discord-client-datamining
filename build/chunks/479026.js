@@ -1,89 +1,115 @@
 /** chunk id: 479026, original params: e,t,l (module,exports,require) **/
 l.d(t, {
-    T: () => g,
-    _: () => S
+    TN: () => R,
+    _X: () => f,
+    ez: () => E
 });
-var r = l(635358),
-    i = l(793574),
-    n = l(590180),
-    s = l(572595),
-    u = l(57020),
-    a = l(44120),
-    o = l(976860),
-    d = l(44724),
-    c = l(317560),
-    h = l(533406),
-    I = l(657331),
-    f = l(901123);
+var i = l(64700),
+    r = l(635358),
+    n = l(793574),
+    a = l(590180),
+    s = l(315949),
+    u = l(572595),
+    d = l(57020),
+    o = l(44120),
+    c = l(976860),
+    h = l(44724),
+    A = l(317560),
+    I = l(533406),
+    g = l(657331),
+    S = l(901123);
 
-function S(e) {
+function f(e) {
     let {
         isOwner: t,
         isItemOwned: l,
-        onWishlistItemClick: d,
-        profileOwner: c,
+        onWishlistItemClick: i,
+        profileOwner: s,
         sku: h,
-        analyticsLocations: S,
-        giftingOrigin: g
-    } = e, m = location.pathname.startsWith(f.BV.COLLECTIBLES_SHOP);
+        analyticsLocations: A,
+        giftingOrigin: I
+    } = e, f = location.pathname.startsWith(S.BV.COLLECTIBLES_SHOP);
     if (t || l) {
         let e = !t && l;
-        if (m) {
-            let t = n.A.getProduct(h.id),
-                l = n.A.getCategoryForProduct(h.id);
+        if (f) {
+            let t = a.A.getProduct(h.id),
+                l = a.A.getCategoryForProduct(h.id);
             if (null != t && null != l) {
-                e || (0, I.closeUserProfileModal)(), (0, s.t)({
+                e || (0, g.closeUserProfileModal)(), (0, u.t)({
                     product: t,
                     category: l,
-                    shouldCheckoutWithOrbs: (0, u.A)({
+                    shouldCheckoutWithOrbs: (0, d.A)({
                         product: t
                     }),
-                    analyticsLocations: S,
-                    analyticsSource: i.A.USER_PROFILE_WISHLIST,
+                    analyticsLocations: A,
+                    analyticsSource: n.A.USER_PROFILE_WISHLIST,
                     returnRef: void 0,
                     tab: void 0
                 });
                 return
             }
         }
-        e || (0, I.closeUserProfileModal)(), (0, o.pX)(`${f.BV.COLLECTIBLES_SHOP}#itemSkuId=${h.id}`)
-    } else d?.(), (0, a.A)({
+        e || (0, g.closeUserProfileModal)(), (0, c.pX)(`${S.BV.COLLECTIBLES_SHOP}#itemSkuId=${h.id}`)
+    } else i?.(), (0, o.A)({
         skuId: h.id,
         isGift: !0,
-        giftingOrigin: g,
-        analyticsLocations: S,
-        giftRecipient: c,
+        giftingOrigin: I,
+        analyticsLocations: A,
+        giftRecipient: s,
         variantsReturnStyle: r.g.VARIANTS_GROUP
     })
 }
 
-function g(e) {
+function R(e) {
     let {
         isOwner: t,
         giftingOrigin: l,
-        profileOwner: r,
-        isItemOwned: n,
-        application: s,
-        sku: u,
-        analyticsLocations: a,
-        additionalUserIds: o
+        profileOwner: i,
+        isItemOwned: r,
+        application: a,
+        sku: s,
+        analyticsLocations: u,
+        additionalUserIds: d
     } = e;
-    t || n ? s?.guildId != null && (t ? ((0, I.closeUserProfileModal)(), (0, d.default)({
-        guildId: s.guildId,
-        skuId: u.id,
-        slug: u.slug
-    })) : (0, c.R)({
-        skuId: u.id,
-        applicationId: s.id,
-        guildId: s.guildId,
+    t || r ? a?.guildId != null && (t ? ((0, g.closeUserProfileModal)(), (0, h.default)({
+        guildId: a.guildId,
+        skuId: s.id,
+        slug: s.slug
+    })) : (0, A.R)({
+        skuId: s.id,
+        applicationId: a.id,
+        guildId: a.guildId,
         isStorefront: !1,
-        analyticsLocations: a
-    })) : (0, h.a)(u, {
+        analyticsLocations: u
+    })) : (0, I.a)(s, {
         isGift: !0,
-        giftRecipient: r,
-        additionalUserIds: o,
+        giftRecipient: i,
+        additionalUserIds: d,
         giftingOrigin: l
     }, {
-        analyticsLocations: [...a, i.A.SLAYER_STOREFRONT_WISHLIST_ITEM_CARD_GIFT_BUTTON]
+        analyticsLocations: [...u, n.A.SLAYER_STOREFRONT_WISHLIST_ITEM_CARD_GIFT_BUTTON]
     })
+}
+
+function E(e) {
+    let {
+        sku: t,
+        analyticsLocations: l,
+        analyticsSource: r = n.A.USER_PROFILE_WISHLIST
+    } = e;
+    return (0, s.A)(), i.useCallback(() => {
+        let e = a.A.getProduct(t.id),
+            i = a.A.getCategoryForProduct(t.id);
+        null == e || null == i ? (0, c.pX)(`${S.BV.COLLECTIBLES_SHOP}#itemSkuId=${t.id}`) : (0, u.t)({
+            product: e,
+            category: i,
+            shouldCheckoutWithOrbs: (0, d.A)({
+                product: e
+            }),
+            analyticsLocations: l ?? [],
+            analyticsSource: r,
+            returnRef: void 0,
+            tab: void 0
+        })
+    }, [l, r, t.id])
 }

@@ -22,8 +22,8 @@ var a = n(627968),
     b = n(241124),
     v = n(73473),
     j = n(201805),
-    C = n(545986),
-    A = n(139210),
+    A = n(545986),
+    C = n(139210),
     T = n(568329),
     y = n(818276),
     S = n(742860),
@@ -134,11 +134,11 @@ function B(e) {
         impressionRef: W
     });
     let ej = i.useRef(null),
-        eC = i.useRef(null),
         eA = i.useRef(null),
+        eC = i.useRef(null),
         eT = (0, _.fc)(t);
     if (i.useEffect(() => {
-            H && (0, C.l9)()
+            H && (0, A.l9)()
         }, [H]), !x || !J && ei && !Y || Q) return Q ? c.log("Not rendered due to asset error") : x || c.log("Not rendered due to ineligibility"), null;
     let ey = 70 + 78 * !!q;
     return (0, a.jsx)(v.R, {
@@ -179,7 +179,7 @@ function B(e) {
                         isExpanded: ee,
                         children: (0, a.jsx)(T.oK, {
                             expandedContentRef: ej,
-                            collapsedContentRef: eC,
+                            collapsedContentRef: eA,
                             expansionSpring: es,
                             children: (0, a.jsxs)(N.C, {
                                 quest: t,
@@ -193,23 +193,23 @@ function B(e) {
                                 onGameSheetClose: eg,
                                 collapsedHeight: ey,
                                 children: [(0, a.jsx)(y.A, {
-                                    ref: eC,
+                                    ref: eA,
                                     className: P.Qs,
-                                    overlayRef: eA
+                                    overlayRef: eC
                                 }, q ? "collapsed-with-rewards" : "collapsed-without-rewards"), (0, a.jsx)(S.A, {
                                     className: P.Qs,
-                                    overlayRef: eA,
+                                    overlayRef: eC,
                                     ref: ej,
                                     isUnfurl: ed,
                                     children: (0, a.jsxs)(a.Fragment, {
-                                        children: [(0, a.jsx)(k.A, {}), !z && (0, a.jsx)(A.A, {
+                                        children: [(0, a.jsx)(k.A, {}), !z && (0, a.jsx)(C.A, {
                                             unfurlTimeoutDurationInMilliseconds: s,
                                             withUnfurlTimeout: ec,
                                             onUnfurlTimeoutComplete: eu
                                         })]
                                     })
                                 }), (0, a.jsx)("div", {
-                                    ref: eA,
+                                    ref: eC,
                                     className: P.Lw
                                 })]
                             })

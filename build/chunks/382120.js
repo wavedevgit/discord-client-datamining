@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(158954),
     l = n(311907),
-    r = n(397927),
-    a = n(973925),
+    a = n(397927),
+    r = n(973925),
     d = n(622543),
     o = n(985018),
     c = n(437102);
@@ -30,10 +30,10 @@ function u(e) {
             })
         }), (0, i.jsxs)("div", {
             className: c.qg,
-            children: [(0, i.jsx)(r.Heading, {
+            children: [(0, i.jsx)(a.Heading, {
                 variant: "text-xs/semibold",
                 children: n
-            }), (0, i.jsx)(r.Text, {
+            }), (0, i.jsx)(a.Text, {
                 variant: "text-sm/normal",
                 children: s
             })]
@@ -46,25 +46,25 @@ function A(e) {
         user: t
     } = e, n = (0, l.bG)([d.A], () => d.A.getUserProfile(t.id)?.application), {
         hasMessageContent: A,
-        hasGuildPresences: x,
-        hasGuildMembers: _
-    } = (0, a.Z)(n);
+        hasGuildPresences: _,
+        hasGuildMembers: x
+    } = (0, r.Z)(n);
     return (0, i.jsxs)(s.IpV, {
         fade: !0,
         className: c.XG,
         children: [A && (0, i.jsx)(u, {
-            icon: r.oyn,
+            icon: a.oyn,
             title: o.intl.string(o.t["7Tmhfu"]),
             description: o.intl.string(o.t.eu5x7z)
-        }), x && (0, i.jsx)(u, {
-            icon: r._xR,
+        }), _ && (0, i.jsx)(u, {
+            icon: a._xR,
             title: o.intl.string(o.t.awYSsM),
             description: o.intl.string(o.t.TpsXoC)
-        }), _ && (0, i.jsx)(u, {
-            icon: r.nFg,
+        }), x && (0, i.jsx)(u, {
+            icon: a.nFg,
             title: o.intl.string(o.t.WuKeSJ),
             description: o.intl.string(o.t.wOBmtV)
-        }), (0, i.jsx)(r.Text, {
+        }), (0, i.jsx)(a.Text, {
             variant: "text-xs/normal",
             children: o.intl.format(o.t.b6nqk0, {
                 helpCenterUrl: "https://support.discord.com/hc/articles/7933951485975"

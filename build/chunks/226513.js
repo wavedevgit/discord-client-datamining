@@ -1,6 +1,6 @@
 /** chunk id: 226513, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => C
+    A: () => A
 });
 var a = n(627968),
     i = n(64700),
@@ -22,13 +22,13 @@ var a = n(627968),
     v = n(368149),
     j = n(631121);
 
-function C(e) {
+function A(e) {
     let {
         selfDeaf: t,
         serverDeaf: n,
         awaitingRemote: s,
-        onClick: C,
-        iconForeground: A,
+        onClick: A,
+        iconForeground: C,
         nameplate: T,
         shouldShowOutputDeviceChangedTooltip: y,
         dismissTooltips: S
@@ -89,13 +89,13 @@ function C(e) {
                             width: 20,
                             height: 20,
                             color: E ? o.A.colors.ICON_VOICE_MUTED : "currentColor",
-                            className: A
+                            className: C
                         }),
                         iconForeground: E ? j.o : void 0,
                         innerClassName: l()({
                             [j.T]: n
                         }),
-                        onClick: C,
+                        onClick: A,
                         onContextMenu: i,
                         onMouseEnter: k,
                         onMouseLeave: R,

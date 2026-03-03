@@ -19,10 +19,10 @@ var i = n(627968),
     g = n(131575),
     _ = n(799808),
     m = n(407195),
-    E = n(61714),
-    x = n(652215);
+    x = n(61714),
+    E = n(652215);
 let y = {
-    [x.uss.TEXT](e) {
+    [E.uss.TEXT](e) {
         let {
             dragging: t,
             locked: n,
@@ -38,7 +38,7 @@ let y = {
             className: a
         })
     },
-    [x.uss.GUILDS](e) {
+    [E.uss.GUILDS](e) {
         let {
             locked: t,
             dragStart: n,
@@ -50,7 +50,7 @@ let y = {
             className: s
         })
     },
-    [x.uss.VOICE](e) {
+    [E.uss.VOICE](e) {
         let {
             id: t,
             anchor: n,
@@ -58,16 +58,16 @@ let y = {
             locked: l,
             pinned: a
         } = e;
-        return (0, i.jsx)(E.A, {
+        return (0, i.jsx)(x.A, {
             anchor: n,
             id: t,
             locked: l,
             pinned: a,
-            widget: x.uss.VOICE,
+            widget: E.uss.VOICE,
             isPreviewingInGame: s
         })
     },
-    [x.uss.GUILDS_TEXT](e) {
+    [E.uss.GUILDS_TEXT](e) {
         let {
             dragging: t,
             locked: n,
@@ -89,7 +89,7 @@ class v extends s.PureComponent {
         dragging: !1
     };
     componentDidUpdate(e) {
-        this.props.locked && !e.locked && null != this.state.lastLayoutUpdate && (r.A.track(x.HAw.OVERLAY_LAYOUT_UPDATED, this.state.lastLayoutUpdate), this.setState({
+        this.props.locked && !e.locked && null != this.state.lastLayoutUpdate && (r.A.track(E.HAw.OVERLAY_LAYOUT_UPDATED, this.state.lastLayoutUpdate), this.setState({
             lastLayoutUpdate: null
         }))
     }
@@ -188,8 +188,8 @@ class v extends s.PureComponent {
             minSize: A
         } = e, f = (0, p.fd)(u, n), g = (0, p.Nv)(h, n), {
             resizeX: m,
-            resizeY: E,
-            dragAnywhere: x
+            resizeY: x,
+            dragAnywhere: E
         } = t, y = (0, _.AE)({
             locked: s,
             isPreviewingInGame: l,
@@ -208,11 +208,11 @@ class v extends s.PureComponent {
             minSize: A,
             hidden: !y,
             resizeX: m,
-            resizeY: E,
+            resizeY: x,
             style: {
                 zIndex: c
             },
-            dragAnywhere: x,
+            dragAnywhere: E,
             active: !s || a,
             onUpdate: this.handleUpdate,
             onClick: this.handleFocus,
@@ -231,7 +231,7 @@ let S = l.Ay.connectStores([c.A, u.default], e => {
         widgetConfig: null != n ? c.A.getWidgetConfig(n.type) : null,
         locked: u.default.isInstanceLocked(),
         isPreviewingInGame: u.default.isPreviewingInGame(),
-        isActiveRegion: null != n && n.type === x.uss.TEXT && i.has(x.ajI.TEXT_WIDGET)
+        isActiveRegion: null != n && n.type === E.uss.TEXT && i.has(E.ajI.TEXT_WIDGET)
     }
 })(v);
 

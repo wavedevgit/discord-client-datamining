@@ -1,24 +1,24 @@
 /** chunk id: 371843, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => a
+    A: () => r
 });
 var i = n(913453),
     s = n(186272),
     l = n(518477),
-    r = n(985018);
+    a = n(985018);
 
-function a(e) {
+function r(e) {
     let {
         mutualGuilds: t
     } = (0, i.A)(e), n = t?.length;
     return [{
         section: l.RP.BOT_INFO,
-        text: r.intl.string(r.t.ZzAR2Y)
+        text: a.intl.string(a.t.ZzAR2Y)
     }, {
         section: l.RP.MUTUAL_GUILDS,
         text: (0, s.A)(n)
     }, {
         section: l.RP.BOT_DATA_ACCESS,
-        text: r.intl.string(r.t.WstFb0)
+        text: a.intl.string(a.t.WstFb0)
     }]
 }

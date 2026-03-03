@@ -1,11 +1,11 @@
 /** chunk id: 727949, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     GQ: () => A,
-    NF: () => h,
-    QG: () => E,
+    NF: () => g,
+    QG: () => h,
     Tp: () => p,
     ZR: () => f,
-    ne: () => g
+    ne: () => E
 });
 var i = n(311907),
     l = n(554146),
@@ -30,10 +30,10 @@ function A(e) {
     })
 }
 let f = () => (0, a.k8)(l.M.REFERRAL_PROGRAM_NITRO_TAB_BADGE),
-    E = () => {
+    h = () => {
         (0, a.Dr)(l.M.REFERRAL_PROGRAM_NITRO_TAB_BADGE)
     },
-    h = e => {
+    g = e => {
         let {
             trialOffer: t
         } = e;
@@ -44,7 +44,7 @@ let f = () => (0, a.k8)(l.M.REFERRAL_PROGRAM_NITRO_TAB_BADGE),
             a = new Date;
         return n && i && a >= l
     },
-    g = e => {
+    E = e => {
         null != e ? (0, r.qr)(l.M.REFERRAL_PROGRAM_POPOVER_V2, e, {
             dismissAction: m.i.INDIRECT_ACTION
         }) : (0, a.Dr)(l.M.REFERRAL_PROGRAM_POPOVER)

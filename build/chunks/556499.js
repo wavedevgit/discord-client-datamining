@@ -21,7 +21,7 @@ var a = n(627968),
     b = n(788868),
     v = n(815907),
     j = n(935391);
-let C = {
+let A = {
         [_.Dmq.UNPAID]: "Unpaid",
         [_.Dmq.ACTIVE]: "Active",
         [_.Dmq.PAST_DUE]: "Past Due",
@@ -32,7 +32,7 @@ let C = {
         [_.Dmq.PAUSED]: "Paused",
         [_.Dmq.PAUSE_PENDING]: "Pause Pending"
     },
-    A = {
+    C = {
         [f.qf.UNKNOWN]: "Unknown",
         [f.qf.ADMIN]: "Admin",
         [f.qf.USER]: "User",
@@ -212,7 +212,7 @@ function S(e) {
             isDisabled: !1
         }, {
             id: "status",
-            label: `Status: ${(null==t&&(t=s.status),t in C)?C[t]:`Unknown status ${t}`}`,
+            label: `Status: ${(null==t&&(t=s.status),t in A)?A[t]:`Unknown status ${t}`}`,
             isDisabled: !1
         }], F = s.hasActiveTrial, V = s.metadata?.active_discount_id != null;
     return F && G.push({
@@ -229,7 +229,7 @@ function S(e) {
         isDisabled: !1
     }), s.status === _.Dmq.PAUSED && G.push({
         id: "pause-reason",
-        label: `Pause Reason: ${s.pauseReason in A?A[s.pauseReason]:`Unknown pause reason ${s.pauseReason}`}`,
+        label: `Pause Reason: ${s.pauseReason in C?C[s.pauseReason]:`Unknown pause reason ${s.pauseReason}`}`,
         isDisabled: !1
     }), (0, a.jsx)("div", {
         className: l()(v.Nr, L ? v.Qf : v.C1),

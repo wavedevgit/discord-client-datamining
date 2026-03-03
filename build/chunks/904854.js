@@ -1,6 +1,6 @@
 /** chunk id: 904854, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => g
 });
 var i = n(627968),
     l = n(64700),
@@ -15,11 +15,11 @@ var i = n(627968),
     _ = n(888675),
     A = n(502197),
     f = n(985018),
-    E = n(443300);
+    h = n(443300);
 
-function h(e) {
+function g(e) {
     var t;
-    let n, h, g, p, x, C, {
+    let n, g, E, p, x, C, {
             message: I,
             channel: T,
             compact: N
@@ -33,12 +33,12 @@ function h(e) {
             channelId: T.id,
             guildId: T.guild_id,
             messageId: I.id
-        }), h = (0, m.P)({
+        }), g = (0, m.P)({
             user: M[0],
             channelId: T.id,
             guildId: T.guild_id,
             messageId: I.id
-        }), g = (0, m.P)({
+        }), E = (0, m.P)({
             user: M[1],
             channelId: T.id,
             guildId: T.guild_id,
@@ -51,9 +51,9 @@ function h(e) {
             username: p.nick,
             usernameHook: n(p),
             username2: x.nick,
-            username2Hook: h(x),
+            username2Hook: g(x),
             username3: C.nick,
-            username3Hook: g(C),
+            username3Hook: E(C),
             otherCount: M.length - 1,
             duration: S
         }));
@@ -62,7 +62,7 @@ function h(e) {
             size: "md",
             color: s.LU0.colors.STATUS_POSITIVE
         }),
-        iconContainerClassName: E.z,
+        iconContainerClassName: h.z,
         timestamp: I.timestamp,
         compact: N,
         children: j

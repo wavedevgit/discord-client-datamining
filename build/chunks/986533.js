@@ -1,6 +1,6 @@
 /** chunk id: 986533, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => E
+    A: () => h
 });
 var i = n(627968);
 n(64700);
@@ -17,13 +17,13 @@ var l = n(503698),
     A = n(985018),
     f = n(234054);
 
-function E(e) {
+function h(e) {
     let {
         message: t,
         compact: n,
         usernameHook: l
-    } = e, E = (0, o.Ay)(t), h = l(E), {
-        avatarSrc: g,
+    } = e, h = (0, o.Ay)(t), g = l(h), {
+        avatarSrc: E,
         eventHandlers: {
             onMouseEnter: p,
             onMouseLeave: x
@@ -43,7 +43,7 @@ function E(e) {
                 [f.oE]: n
             }),
             iconNode: n ? null : (0, i.jsx)(d.l, {
-                src: g
+                src: E
             }),
             iconContainerClassName: f.zc,
             compact: n,
@@ -77,12 +77,12 @@ function E(e) {
                         [f.oE]: n
                     }),
                     children: t.type === m.lAJ.GUILD_INCIDENT_ALERT_MODE_ENABLED ? A.intl.format(A.t["+m8eD7"], {
-                        username: E.nick,
-                        usernameHook: h,
+                        username: h.nick,
+                        usernameHook: g,
                         time: C
                     }) : A.intl.format(A.t["BHeke+"], {
-                        username: E.nick,
-                        usernameHook: h
+                        username: h.nick,
+                        usernameHook: g
                     })
                 })]
             })

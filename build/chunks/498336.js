@@ -21,11 +21,11 @@ var a = n(627968),
     b = n(71393),
     v = n(967198),
     j = n(642020),
-    C = n(652215),
-    A = n(45298);
+    A = n(652215),
+    C = n(45298);
 async function T(e, t, n) {
     await r.Bo.patch({
-        url: C.Rsh.APPLIED_BOOST_MODIFY_END_DATE,
+        url: A.Rsh.APPLIED_BOOST_MODIFY_END_DATE,
         body: {
             applied_boost_ids: t.map(e => e.id),
             ends_at: n ? null : s()().add(1, "day")
@@ -35,7 +35,7 @@ async function T(e, t, n) {
 }
 async function y(e) {
     await r.Bo.post({
-        url: C.Rsh.SEND_POWERUPS_SYSTEM_MESSAGE(e),
+        url: A.Rsh.SEND_POWERUPS_SYSTEM_MESSAGE(e),
         rejectWithError: !0
     })
 }
@@ -46,18 +46,18 @@ function S() {
         n = (0, l.yK)([_.A], () => [...j.DX, ...j.gh].filter(t => null != e && (0, h.zs)(t, e))),
         i = (0, l.yK)([f.A], () => null != e ? f.A.getAppliedGuildBoostsForGuild(e) ?? [] : []);
     if (null != e) return (0, a.jsxs)(d.IpV, {
-        className: A.kL,
+        className: C.kL,
         children: [(0, a.jsx)("div", {
-            className: A.uW,
+            className: C.uW,
             children: (0, a.jsx)(d.Heading, {
                 variant: "heading-md/normal",
                 children: `Current guild: ${t}`
             })
         }), (0, a.jsxs)("div", {
-            className: A.uW,
+            className: C.uW,
             children: [(0, a.jsx)(d.Text, {
                 variant: "eyebrow",
-                className: A.wx,
+                className: C.wx,
                 children: "Reset Notification Indicators"
             }), (0, a.jsx)(d.Button, {
                 variant: "primary",
@@ -67,10 +67,10 @@ function S() {
                 }
             })]
         }), (0, a.jsxs)("div", {
-            className: A.uW,
+            className: C.uW,
             children: [(0, a.jsx)(d.Text, {
                 variant: "eyebrow",
-                className: A.wx,
+                className: C.wx,
                 children: "Reset Progress Bar State"
             }), (0, a.jsx)(d.Button, {
                 variant: "primary",
@@ -78,7 +78,7 @@ function S() {
                 onClick: m.O
             })]
         }), (0, a.jsxs)("div", {
-            className: A.uW,
+            className: C.uW,
             children: [(0, a.jsx)(d.Text, {
                 variant: "eyebrow",
                 children: "Set Warning State"
@@ -98,20 +98,20 @@ function S() {
                 })]
             })]
         }), (0, a.jsxs)("div", {
-            className: A.uW,
+            className: C.uW,
             children: [(0, a.jsx)(d.Text, {
                 variant: "eyebrow",
-                className: A.wx,
+                className: C.wx,
                 children: "Reset User Level DCs"
             }), (0, a.jsx)(d.BJc, {
                 gap: 16,
                 children: j.tB.map(e => (0, a.jsx)(u.A, {
-                    className: A.z6,
+                    className: C.z6,
                     content: o.M[e]
                 }, o.M[e]))
             })]
         }), (0, a.jsx)("div", {
-            className: A.uW,
+            className: C.uW,
             children: (0, a.jsx)(d.nVY, {
                 label: "Reset Guild Level DCs",
                 children: j.DX.map(t => (0, a.jsx)(d.dOG, {
@@ -123,7 +123,7 @@ function S() {
                 }, t))
             })
         }), (0, a.jsx)("div", {
-            className: A.uW,
+            className: C.uW,
             children: (0, a.jsx)(d.nVY, {
                 label: "Reset Server Tag Guild Level DCs",
                 children: j.gh.map(t => (0, a.jsx)(d.dOG, {
@@ -135,20 +135,20 @@ function S() {
                 }, t))
             })
         }), (0, a.jsxs)("div", {
-            className: A.uW,
+            className: C.uW,
             children: [(0, a.jsx)(d.Text, {
                 variant: "eyebrow",
-                className: A.wx,
+                className: C.wx,
                 children: "Reset Powerup Rollback DCs"
             }), j.cC.map(e => (0, a.jsx)(u.A, {
-                className: A.z6,
+                className: C.z6,
                 content: o.M[e]
             }, o.M[e]))]
         }), (0, a.jsxs)("div", {
-            className: A.uW,
+            className: C.uW,
             children: [(0, a.jsx)(d.Text, {
                 variant: "eyebrow",
-                className: A.wx,
+                className: C.wx,
                 children: "Send Powerups System Message"
             }), (0, a.jsx)(d.Button, {
                 variant: "primary",

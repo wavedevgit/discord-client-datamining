@@ -19,7 +19,7 @@ function m(e) {
         usernameHook: n,
         compact: m,
         isForumPost: _
-    } = e, A = (0, c.Ay)(t), f = n(A), E = (0, l.bG)([o.A], () => o.A.getChannel(t.channel_id)?.isGroupDM() ?? !1);
+    } = e, A = (0, c.Ay)(t), f = n(A), h = (0, l.bG)([o.A], () => o.A.getChannel(t.channel_id)?.isGroupDM() ?? !1);
     return (0, i.jsx)(d.A, {
         compact: m,
         iconNode: (0, i.jsx)(a.R2l, {
@@ -27,7 +27,7 @@ function m(e) {
             color: "currentColor"
         }),
         timestamp: t.timestamp,
-        children: E ? u.intl.format("" === t.content ? u.t.AI1ZZr : u.t.geP3rU, {
+        children: h ? u.intl.format("" === t.content ? u.t.AI1ZZr : u.t.geP3rU, {
             username: A.nick,
             usernameHook: f,
             channelName: (0, i.jsx)(a.Text, {

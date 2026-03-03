@@ -1,6 +1,6 @@
 /** chunk id: 282224, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => E
 });
 var i = n(627968);
 n(64700);
@@ -49,7 +49,7 @@ function f(e) {
     }) : null
 }
 
-function E(e) {
+function h(e) {
     let {
         message: t,
         channel: n,
@@ -58,20 +58,20 @@ function E(e) {
         author: r,
         mentions: u,
         type: A
-    } = t, E = (0, s.Ay)(t), h = t.getChannelId(), g = (0, a.bG)([d.default], () => d.default.getUser(u[0]), [u]), p = (0, s.m2)(r, n), x = (0, o.P)({
+    } = t, h = (0, s.Ay)(t), g = t.getChannelId(), E = (0, a.bG)([d.default], () => d.default.getUser(u[0]), [u]), p = (0, s.m2)(r, n), x = (0, o.P)({
         user: r,
-        channelId: h,
+        channelId: g,
         guildId: n.guild_id,
         messageId: t.id
-    })(p), C = (0, s.d8)(g, n), I = (0, o.P)({
-        user: g,
-        channelId: h,
+    })(p), C = (0, s.d8)(E, n), I = (0, o.P)({
+        user: E,
+        channelId: g,
         guildId: n.guild_id,
         messageId: t.id
     })(C), T = _[A] ?? null;
     if (null == T) return null;
     let N = m.intl.format(T(), {
-        actorName: E.nick,
+        actorName: h.nick,
         actorHook: x,
         targetName: C?.nick,
         targetHook: I
@@ -86,7 +86,7 @@ function E(e) {
     })
 }
 
-function h(e) {
+function g(e) {
     let {
         message: t,
         channel: n,
@@ -94,16 +94,16 @@ function h(e) {
     } = e, {
         author: a,
         type: r
-    } = t, d = (0, s.Ay)(t), u = t.getChannelId(), _ = (0, s.m2)(a, n), E = (0, o.P)({
+    } = t, d = (0, s.Ay)(t), u = t.getChannelId(), _ = (0, s.m2)(a, n), h = (0, o.P)({
         user: a,
         channelId: u,
         guildId: n.guild_id,
         messageId: t.id
-    })(_), h = A[r] ?? null;
-    if (null == h) return null;
-    let g = m.intl.format(h(), {
+    })(_), g = A[r] ?? null;
+    if (null == g) return null;
+    let E = m.intl.format(g(), {
         actorName: d.nick,
-        actorHook: E
+        actorHook: h
     });
     return (0, i.jsx)(c.A, {
         iconNode: (0, i.jsx)(f, {
@@ -111,11 +111,11 @@ function h(e) {
         }),
         timestamp: t.timestamp,
         compact: l,
-        children: g
+        children: E
     })
 }
 
-function g(e) {
+function E(e) {
     let {
         message: t,
         channel: n,
@@ -123,11 +123,11 @@ function g(e) {
     } = e, {
         type: r
     } = t;
-    return r === l.l.REPORT_TO_MOD_BAN_USER || r === l.l.REPORT_TO_MOD_KICK_USER || r === l.l.REPORT_TO_MOD_TIMEOUT_USER ? (0, i.jsx)(E, {
+    return r === l.l.REPORT_TO_MOD_BAN_USER || r === l.l.REPORT_TO_MOD_KICK_USER || r === l.l.REPORT_TO_MOD_TIMEOUT_USER ? (0, i.jsx)(h, {
         message: t,
         channel: n,
         compact: a
-    }) : (0, i.jsx)(h, {
+    }) : (0, i.jsx)(g, {
         message: t,
         channel: n,
         compact: a

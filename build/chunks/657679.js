@@ -1,19 +1,19 @@
 /** chunk id: 657679, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => d
+    A: () => o
 });
 var l = n(627968),
     a = n(64700),
-    r = n(397927),
-    i = n(473169);
+    i = n(397927),
+    r = n(473169);
 let s = e => {
         let {
             element: t,
             onChange: n,
             initialOption: s
-        } = e, [d, o] = a.useState("");
+        } = e, [o, d] = a.useState("");
         a.useEffect(() => {
-            o(s ?? "")
+            d(s ?? "")
         }, [s]);
         let c = t.name,
             {
@@ -21,13 +21,13 @@ let s = e => {
                 options: _
             } = t.data,
             m = a.useCallback(e => {
-                null != e && (o(e), n(e))
+                null != e && (d(e), n(e))
             }, [n]);
         return (0, l.jsx)("div", {
-            className: i.QB,
-            children: (0, l.jsx)(r.l6P, {
+            className: r.QB,
+            children: (0, l.jsx)(i.l6P, {
                 label: u,
-                value: d,
+                value: o,
                 required: t.should_submit_data,
                 onSelectionChange: m,
                 options: _,
@@ -36,12 +36,12 @@ let s = e => {
             })
         }, c)
     },
-    d = e => {
+    o = e => {
         let {
             elements: t,
             onChange: n,
             state: a
-        } = e, r = t.map(e => {
+        } = e, i = t.map(e => {
             let t = e.name;
             return (0, l.jsx)(s, {
                 element: e,
@@ -50,6 +50,6 @@ let s = e => {
             }, t)
         });
         return (0, l.jsx)("div", {
-            children: r
+            children: i
         })
     }

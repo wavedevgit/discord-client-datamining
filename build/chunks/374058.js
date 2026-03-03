@@ -21,8 +21,8 @@ var a = n(627968),
     b = n(967954),
     v = n(538064),
     j = n(708403),
-    C = n(260880),
-    A = n(303054),
+    A = n(260880),
+    C = n(303054),
     T = n(231643),
     y = n(985018),
     S = n(76584),
@@ -314,12 +314,12 @@ function M() {
                 onClear: () => n(""),
                 placeholder: "Search by event name"
             })
-        }), (0, a.jsx)(A.A, {
+        }), (0, a.jsx)(C.A, {
             columns: N,
             data: g,
             selectedRowKey: _,
             onClickRow: e => f(e.key)
-        }), null != j && (0, a.jsxs)(C.A, {
+        }), null != j && (0, a.jsxs)(A.A, {
             className: S.rf,
             minHeight: 100,
             initialHeight: null != e.current ? e.current.clientHeight / 2 : 300,

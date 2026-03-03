@@ -1,7 +1,7 @@
 /** chunk id: 941023, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => x
+    A: () => E
 });
 var i = n(64700),
     s = n(735438),
@@ -63,14 +63,14 @@ function m(e, t) {
                     } = e;
                     return t
                 })
-            }), n = e, E || (n.setClickZoneCallback((e, t, n) => {
+            }), n = e, x || (n.setClickZoneCallback((e, t, n) => {
                 let i = _.get(e);
                 null != i && (f || (A.x = t, A.y = n), i.instance.click())
-            }), E = !0)
+            }), x = !0)
         }
 }
-let E = !1;
-class x extends i.PureComponent {
+let x = !1;
+class E extends i.PureComponent {
     static defaultProps = {
         observe: !0,
         observeInterval: 1e3

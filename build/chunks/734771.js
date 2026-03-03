@@ -20,13 +20,13 @@ function s(e) {
         _ = (0, l.Ay)(s),
         A = _.nick,
         f = o(_),
-        E = (0, l.d8)(c, m);
-    if (null != E && null != d) {
-        let e = d(E);
+        h = (0, l.d8)(c, m);
+    if (null != h && null != d) {
+        let e = d(h);
         t = r.intl.format(r.t.L2FyVq, {
             username: A,
             usernameHook: f,
-            otherUsername: E.nick,
+            otherUsername: h.nick,
             otherUsernameHook: e
         })
     } else t = r.intl.format(r.t["5v2xa8"], {

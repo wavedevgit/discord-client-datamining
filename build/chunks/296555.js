@@ -193,7 +193,7 @@ let h = i.createContext({
             })]
         })
     },
-    C = () => {
+    A = () => {
         let {
             validateShopAssetPackage: e,
             reset: t,
@@ -288,7 +288,7 @@ let h = i.createContext({
             })]
         })
     },
-    A = () => {
+    C = () => {
         let {
             previewEnabled: e,
             setPreviewEnabled: t,
@@ -350,7 +350,7 @@ let h = i.createContext({
                 optionClassName: m.UK
             }), (0, a.jsx)(s.hKd, {
                 size: 8
-            }), "preview" === e && (0, a.jsx)(A, {}), "validate" === e && (0, a.jsx)(C, {}), (0, a.jsx)(s.hKd, {
+            }), "preview" === e && (0, a.jsx)(C, {}), "validate" === e && (0, a.jsx)(A, {}), (0, a.jsx)(s.hKd, {
                 size: 16
             })]
         })

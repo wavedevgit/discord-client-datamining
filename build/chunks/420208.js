@@ -1,6 +1,6 @@
 /** chunk id: 420208, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    Q: () => g
+    Q: () => E
 });
 var i = n(843472),
     l = n(508675),
@@ -15,32 +15,32 @@ var i = n(843472),
     _ = n(661191),
     A = n(652215),
     f = n(307731),
-    E = n(381941);
+    h = n(381941);
 
-function h(e) {
+function g(e) {
     let t = d.A.getGuild(e);
     return null != t && (t.nsfwLevel === A.ftr.DEFAULT || t.nsfwLevel === A.ftr.SAFE)
 }
-async function g(e, t) {
+async function E(e, t) {
     let n = t.getGuildId();
     if (null == n || null == d.A.getGuild(n)) return;
     let A = u.default.getCurrentUser();
     if (null == A) return;
     await (0, s.YB)();
-    let g = Array.from(o.A.getAllGuildStickers().values()).flat().filter(e => h(e.guild_id) && (0, r.G7)(e, A, t)).sort((e, t) => -_.default.compare(e.id, t.id));
-    if (g.length > 5) {
-        let n = [g[Math.floor(Math.pow(Math.random(), 2) * g.length)].id];
+    let E = Array.from(o.A.getAllGuildStickers().values()).flat().filter(e => g(e.guild_id) && (0, r.G7)(e, A, t)).sort((e, t) => -_.default.compare(e.id, t.id));
+    if (E.length > 5) {
+        let n = [E[Math.floor(Math.pow(Math.random(), 2) * E.length)].id];
         i.A.sendStickers(t.id, n, "", {
             messageReference: {
                 guild_id: t.getGuildId() ?? void 0,
                 channel_id: t.id,
                 message_id: e
             },
-            location: E.Hx.CHANNEL_PROMPT
+            location: h.Hx.CHANNEL_PROMPT
         });
         return
     }
-    let p = d.A.getGuildIds().filter(h).map(e => l.Ay.getUsableGuildEmoji(e)).flat().filter(e => null == m.Ay.getEmojiUnavailableReason({
+    let p = d.A.getGuildIds().filter(g).map(e => l.Ay.getUsableGuildEmoji(e)).flat().filter(e => null == m.Ay.getEmojiUnavailableReason({
         emoji: e,
         channel: t,
         guildId: n,
@@ -49,7 +49,7 @@ async function g(e, t) {
     if (p.length > 10) {
         let n = p[Math.floor(Math.pow(Math.random(), 2) * p.length)];
         i.A.sendMessage(t.id, a.Ay.parse(t, (0, m.N)(n)), !1, {
-            location: E.Hx.CHANNEL_PROMPT,
+            location: h.Hx.CHANNEL_PROMPT,
             messageReference: {
                 guild_id: t.getGuildId() ?? void 0,
                 channel_id: t.id,
@@ -66,6 +66,6 @@ async function g(e, t) {
             channel_id: t.id,
             message_id: e
         },
-        location: E.Hx.CHANNEL_PROMPT
+        location: h.Hx.CHANNEL_PROMPT
     })
 }

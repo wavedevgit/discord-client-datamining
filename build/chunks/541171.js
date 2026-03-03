@@ -18,13 +18,13 @@ function c(e) {
         onJoinStream: d,
         usernameHook: u,
         compact: m
-    } = e, _ = (0, r.Ay)(t), A = t.call?.duration, f = u(_), E = o.intl.format(o.t.FKXvaI, {
+    } = e, _ = (0, r.Ay)(t), A = t.call?.duration, f = u(_), h = o.intl.format(o.t.FKXvaI, {
         username: _.nick,
         activityName: null != c ? c.name : "unknown",
         onJoinStream: d,
         usernameHook: f
     });
-    return null != A && (E = o.intl.format(o.t.NEFxtd, {
+    return null != A && (h = o.intl.format(o.t.NEFxtd, {
         username: _.nick,
         duration: A.humanize(),
         channelName: n.name,
@@ -40,6 +40,6 @@ function c(e) {
         }),
         timestamp: t.timestamp,
         compact: m,
-        children: E
+        children: h
     })
 }

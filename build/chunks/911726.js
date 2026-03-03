@@ -14,9 +14,9 @@ var i, l = n(627968),
     _ = n(21161),
     A = n(513609),
     f = n(928830),
-    E = n(567771),
-    h = n(780964),
-    g = n(840065),
+    h = n(567771),
+    g = n(780964),
+    E = n(840065),
     p = n(473145),
     x = n(763754),
     C = n(888675),
@@ -142,9 +142,9 @@ function k(e) {
                 return "BOTTOM_RIGHT"
         }
     }()), {
-        createMultipleConfettiAt: E,
-        confettiCanvas: h
-    } = a.useContext(_.x), [g, p] = a.useState(null), x = (0, o.f9)(h, g), C = function(e, t) {
+        createMultipleConfettiAt: h,
+        confettiCanvas: g
+    } = a.useContext(_.x), [E, p] = a.useState(null), x = (0, o.f9)(g, E), C = function(e, t) {
         if (null == e) return "enter";
         switch (e) {
             case "enter":
@@ -183,7 +183,7 @@ function k(e) {
                     y: i.top + l.y
                 }
             }(d.current, f, r);
-            E(t.x, t.y, {
+            h(t.x, t.y, {
                 velocity: {
                     type: "static-random",
                     minValue: {
@@ -197,7 +197,7 @@ function k(e) {
                 }
             })
         }
-    }, [E, f, u, r]), a.useEffect(() => {
+    }, [h, f, u, r]), a.useEffect(() => {
         if (I && "leaf_fall" === u) {
             let e = O[f].leafRotationDirection;
             x.createConfetti({
@@ -298,7 +298,7 @@ function G(e) {
             }
             return null
         }(n),
-        d = (0, E.A)(n),
+        d = (0, h.A)(n),
         {
             createMultipleConfettiAt: u,
             addClickListener: S
@@ -344,7 +344,7 @@ function G(e) {
         P = a.useCallback(() => {
             (0, f.O9)({
                 settingsVisible: !0
-            }), (0, g.openUserSettings)(h.X.POGGERMODE_PANEL, {
+            }), (0, E.openUserSettings)(g.X.POGGERMODE_PANEL, {
                 section: I.nc_.POGGERMODE
             }), v(!1)
         }, []),

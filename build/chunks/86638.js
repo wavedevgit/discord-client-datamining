@@ -124,7 +124,7 @@ function N(e) {
     } = e, c = (0, u.h)(t.sku?.applicationId), d = l.useCallback(() => {
         if (null == t.sku) return;
         let e = a.id === s.id;
-        (0, A.T)({
+        (0, A.TN)({
             isOwner: e,
             giftingOrigin: v.vQ.USER_PROFILE_WISHLIST,
             profileOwner: a,
@@ -159,7 +159,7 @@ function S(e) {
     }, [t.sku]), m = l.useMemo(() => () => {
         if (null == t.sku) return;
         let e = n.id === o.id;
-        (0, A._)({
+        (0, A._X)({
             isOwner: e,
             isItemOwned: a,
             onWishlistItemClick: void 0,

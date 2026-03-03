@@ -16,9 +16,9 @@ var l = n(311907),
     _ = n(71393),
     A = n(888675),
     f = n(652215),
-    E = n(985018),
-    h = n(333354),
-    g = n(468406),
+    h = n(985018),
+    g = n(333354),
+    E = n(468406),
     p = n(274993),
     x = n(218924);
 
@@ -30,16 +30,16 @@ function C(e) {
         analyticsLocations: o
     } = e, c = (0, l.bG)([s.A], () => s.A.useReducedMotion);
     return (0, i.jsxs)("div", {
-        className: g.kL,
+        className: E.kL,
         children: [(0, i.jsx)("div", {
-            className: g.ZS,
+            className: E.ZS,
             children: (0, i.jsx)("img", {
-                className: g.Sl,
+                className: E.Sl,
                 src: c ? x.A : p.A,
                 alt: "Boost gem"
             })
         }), (0, i.jsxs)("div", {
-            className: g.Qs,
+            className: E.Qs,
             children: [(0, i.jsx)(a.Heading, {
                 variant: "heading-md/semibold",
                 style: {
@@ -49,7 +49,7 @@ function C(e) {
                 children: t
             }), (0, i.jsx)(a.Text, {
                 color: "text-muted",
-                className: g.rf,
+                className: E.rf,
                 variant: "text-sm/medium",
                 children: n
             })]
@@ -71,8 +71,8 @@ function I(e) {
         guild: t
     } = e, n = (0, u.A)(t.id);
     return (0, i.jsx)(C, {
-        title: E.intl.string(h.default.qGDEON),
-        body: E.intl.format(h.default["s+HTdX"], {
+        title: h.intl.string(g.default.qGDEON),
+        body: h.intl.format(g.default["s+HTdX"], {
             viewAllPerks: e => (0, i.jsx)(a.DUT, {
                 tag: "a",
                 role: "link",
@@ -109,10 +109,10 @@ function N(e) {
         channel: n
     } = e, r = n.guild_id, s = (0, l.bG)([_.A], () => _.A.getGuild(r), [r]);
     return null == s ? null : (0, i.jsx)(A.A, {
-        contentClassName: g.FG,
-        iconContainerClassName: g.zc,
+        contentClassName: E.FG,
+        iconContainerClassName: E.zc,
         iconNode: (0, i.jsx)(a.XFE, {
-            colorClass: g.Kk
+            colorClass: E.Kk
         }),
         children: (0, i.jsx)(T, {
             boostingPrompt: t,

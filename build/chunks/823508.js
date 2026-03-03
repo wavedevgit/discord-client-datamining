@@ -1,19 +1,20 @@
-/** chunk id: 823508, original params: t,e,n (module,exports,require) **/
-n.d(e, {
-    A: () => s
+/** chunk id: 823508, original params: e,t,n (module,exports,require) **/
+"use strict";
+n.d(t, {
+    A: () => o
 });
-var l = n(397927),
-    i = n(267102),
-    r = n(70456),
+var i = n(397927),
+    s = n(267102),
+    l = n(70456),
     a = n(652215);
-let d = "guild-event-modal",
-    s = () => {
-        let t = (0, i.Us)() === a.BRT.POPOUT ? l.KX8 : l.SYi;
+let r = "guild-event-modal",
+    o = () => {
+        let e = (0, s.Us)() === a.BRT.POPOUT ? i.KX8 : i.SYi;
         return {
-            modalKey: d,
-            contextKey: t,
+            modalKey: r,
+            contextKey: e,
             onCloseRequest: () => {
-                r.N.getState().canCloseModal && (0, l.OoC)(d, t)
+                l.N.getState().canCloseModal && (0, i.OoC)(r, e)
             }
         }
     }

@@ -24,9 +24,9 @@ function _(e) {
             onContextMenu: b,
             dismissibleContents: v,
             iconForeground: j,
-            nameplate: C
+            nameplate: A
         } = e,
-        A = i.useRef(null),
+        C = i.useRef(null),
         [T, y] = i.useState(!1);
     (0, s.Ay)(() => {
         let e = () => y(!0);
@@ -44,7 +44,7 @@ function _(e) {
         N = (0, r.w)();
     return E = null != _ ? o.Hnu : N.Component, (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)(h.A, {
-            ref: A,
+            ref: C,
             tooltipText: t,
             tooltipPositionKey: n,
             onClick: S,
@@ -56,9 +56,9 @@ function _(e) {
                 className: j
             }),
             ...N.events,
-            plated: null != C
+            plated: null != A
         }), (0, a.jsx)(c.V, {
-            targetElementRef: A,
+            targetElementRef: C,
             shouldShow: T,
             onDismiss: () => y(!1)
         }), !T && (0, a.jsx)(d.Ay, {
@@ -70,7 +70,7 @@ function _(e) {
                     markAsDismissed: n
                 } = e;
                 if (t === l.M.NITRO_PRIVACY_PERK_BETA_COACHMARK) return (0, a.jsx)(u.y, {
-                    targetElementRef: A,
+                    targetElementRef: C,
                     markAsDismissed: n
                 })
             }

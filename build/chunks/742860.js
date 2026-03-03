@@ -21,8 +21,8 @@ var a = n(627968),
     b = n(341915),
     v = n(405670),
     j = n(245853),
-    C = n(440007),
-    A = n(33621),
+    A = n(440007),
+    C = n(33621),
     T = n(714510),
     y = n(890687),
     S = n(579473),
@@ -159,7 +159,7 @@ function et(e) {
         quest: c
     }), B = i.useMemo(() => (0, S.tW)(c, S.fY.HERO_IMAGE), [c]), G = i.useMemo(() => null == B ? {} : {
         backgroundImage: `url(${B.url})`
-    }, [B]), F = (0, h.Ay)(), V = (0, u.Mw)(F), H = A.t.useConfig({
+    }, [B]), F = (0, h.Ay)(), V = (0, u.Mw)(F), H = C.t.useConfig({
         location: q.rE.QUESTS_BAR
     }), K = (0, T.mU)({
         quest: c,
@@ -173,7 +173,7 @@ function et(e) {
         gameProfileSource: g.Ob.QuestBar
     }), z = (0, D.Pd)(c), {
         primaryCtaButtonVariant: $
-    } = (0, C.Op)(), Q = (0, y.do)({
+    } = (0, A.Op)(), Q = (0, y.do)({
         quest: c,
         content: b.uF.QUEST_BAR_V2,
         ctaContent: E.Cy.CONTEXT_MENU_OPEN_GAME_LINK_EXP_TREATMENT_ONE,
@@ -284,14 +284,14 @@ function en(e) {
         expansionSpring: c
     } = i.useContext(U.PW), u = s.userStatus?.completedAt != null, m = d.percentComplete > 0, h = (0, y.Vn)(s), [x, p, g] = (0, y.Qo)(s, d), _ = i.useRef(null), f = i.useRef(null), v = (0, y.RR)({
         quest: s
-    }), j = (0, k.vv)(s), C = (0, y.I3)(s), A = i.useCallback(() => {
+    }), j = (0, k.vv)(s), A = (0, y.I3)(s), C = i.useCallback(() => {
         (0, L.d5)({
             quest: s,
             questContent: b.uF.QUEST_BAR_V2,
             sourceQuestContent: b.uF.QUEST_BAR_V2,
             sourceQuestContentCTA: E.Cy.QUEST_BAR_VIDEO_QUEST_PREVIEW
         })
-    }, [s]), T = null != C ? C.percentComplete : d.percentComplete;
+    }, [s]), T = null != A ? A.percentComplete : d.percentComplete;
     return (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)(r.animated.div, {
             className: l()(J.tv, J.ag),
@@ -332,7 +332,7 @@ function en(e) {
                 })).exhaustive()
             }), (0, a.jsxs)(V.T, {
                 children: [j && (0, a.jsx)(Z, {
-                    onClick: A
+                    onClick: C
                 }), (0, a.jsx)(B.f, {
                     awaitingConsoleConnections: v,
                     hasMadeProgress: m,

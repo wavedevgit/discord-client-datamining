@@ -1,7 +1,7 @@
 /** chunk id: 355052, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => k
+    A: () => M
 }), n(142703);
 var i = n(627968),
     s = n(64700),
@@ -19,8 +19,8 @@ var i = n(627968),
     g = n(831062),
     _ = n(471024),
     m = n(976860),
-    E = n(144400),
-    x = n(927813),
+    x = n(144400),
+    E = n(927813),
     y = n(9302),
     v = n(777334),
     S = n(41984),
@@ -30,7 +30,7 @@ var i = n(627968),
     T = n(652215),
     O = n(985018),
     b = n(748498);
-let j = 10 * x.A.Millis.SECOND,
+let j = 10 * E.A.Millis.SECOND,
     D = new h.Vy("LegacyOverlayErrorBoundary");
 
 function R() {
@@ -109,7 +109,7 @@ class w extends s.PureComponent {
                     onClick: e => e.stopPropagation(),
                     children: [(0, i.jsx)(_.Ay, {
                         expand: !0,
-                        icon: (0, i.jsx)(E.A, {
+                        icon: (0, i.jsx)(x.A, {
                             width: 40,
                             height: 40,
                             className: b.Lo
@@ -147,7 +147,7 @@ let L = o().throttle(() => {
 }, 100, {
     trailing: !1
 });
-class M extends s.PureComponent {
+class k extends s.PureComponent {
     state = {
         error: null,
         info: null
@@ -206,4 +206,4 @@ class M extends s.PureComponent {
         })
     }
 }
-let k = M
+let M = k

@@ -15,12 +15,12 @@ var i = n(311907),
 let _ = {},
     A = 0,
     f = {},
-    E = {},
-    h = e => {
+    h = {},
+    g = e => {
         null != _[e] && delete _[e], A++
     };
 
-function g(e) {
+function E(e) {
     let t, n, {
         messageData: i,
         errorResponseBody: l
@@ -39,14 +39,14 @@ function p(e) {
         messages: n
     } = e, i = s.A.getChannel(t)?.getGuildId();
     if (null == i) return !1;
-    let l = E[i],
+    let l = h[i],
         a = n.reduce((e, t) => t.type === m.lAJ.AUTO_MODERATION_ACTION && t.embeds?.some(e => {
             let {
                 type: t
             } = e;
             return t === m.Auw.AUTO_MODERATION_NOTIFICATION
         }) ? null == e || -1 === c.default.compare(e, t.id) ? t.id : void 0 : e, l);
-    return null != a && E[i] !== a && (E[i] = a, !0)
+    return null != a && h[i] !== a && (h[i] = a, !0)
 }
 class x extends i.Ay.PersistedStore {
     static displayName = "GuildAutomodMessageStore";
@@ -58,7 +58,7 @@ class x extends i.Ay.PersistedStore {
         return {
             automodFailedMessages: _,
             mentionRaidDetectionByGuild: f,
-            lastIncidentAlertMessage: E
+            lastIncidentAlertMessage: h
         }
     }
     getMessage(e) {
@@ -71,7 +71,7 @@ class x extends i.Ay.PersistedStore {
         return f[e] ?? null
     }
     getLastIncidentAlertMessage(e) {
-        return E[e] ?? null
+        return h[e] ?? null
     }
 }
 let C = new x(l.h, {
@@ -87,15 +87,15 @@ let C = new x(l.h, {
         } = e;
         if (null == t || n.type !== m.lAJ.AUTO_MODERATION_ACTION) return !1;
         let i = (0, r.rh)(n);
-        return !!(0, u.ER)(i) && !!(0, u.de)(i) && (E[t] = i.id, !0)
+        return !!(0, u.ER)(i) && !!(0, u.de)(i) && (h[t] = i.id, !0)
     },
-    MESSAGE_SEND_FAILED_AUTOMOD: g,
-    MESSAGE_EDIT_FAILED_AUTOMOD: g,
+    MESSAGE_SEND_FAILED_AUTOMOD: E,
+    MESSAGE_EDIT_FAILED_AUTOMOD: E,
     REMOVE_AUTOMOD_MESSAGE_NOTICE: function(e) {
         let {
             messageId: t
         } = e;
-        return h(t), !0
+        return g(t), !0
     },
     MESSAGE_END_EDIT: function(e) {
         let {
@@ -104,7 +104,7 @@ let C = new x(l.h, {
         if (t?.body == null || t.body.code === m.t02.AUTOMOD_MESSAGE_BLOCKED) return !1;
         let n = t.body.id;
         if (null == n) return !1;
-        h(n)
+        g(n)
     },
     AUTO_MODERATION_MENTION_RAID_DETECTION: function(e) {
         let {

@@ -32,7 +32,8 @@ function d(t) {
             p(), (0, o.x)(T)
         },
         secondaryCTA: l.intl.string(l.t.PcTCB7),
-        onClose: T
+        onClose: T,
+        ...h
     }) : (0, a.jsx)(c.A, {
         artURL: A,
         type: e,

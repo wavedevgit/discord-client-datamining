@@ -21,8 +21,8 @@ var a = n(627968),
     b = n(235986),
     v = n(15285),
     j = n(742589),
-    C = n(41984),
-    A = n(181435),
+    A = n(41984),
+    C = n(181435),
     T = n(435736),
     y = n(833551),
     S = n(515183),
@@ -305,7 +305,7 @@ let es = i.memo(function(e) {
 });
 
 function el() {
-    let e = (0, c.bG)([N.A], () => N.A.hasRenderDebugMode(C.x7.TrackFocusPIDs)),
+    let e = (0, c.bG)([N.A], () => N.A.hasRenderDebugMode(A.x7.TrackFocusPIDs)),
         t = (0, c.yK)([y.default], () => y.default.getDevToolsFocusedPidsWithTimestamp());
     return (0, a.jsxs)("div", {
         className: Y.st,
@@ -313,7 +313,7 @@ function el() {
             className: Y.Iv,
             children: [(0, a.jsx)(h.dOG, {
                 checked: e,
-                onChange: () => void g.A.setRenderDebugMode(!N.A.hasRenderDebugMode(C.x7.TrackFocusPIDs), C.x7.TrackFocusPIDs),
+                onChange: () => void g.A.setRenderDebugMode(!N.A.hasRenderDebugMode(A.x7.TrackFocusPIDs), A.x7.TrackFocusPIDs),
                 label: "Track Focus Pids"
             }), (0, a.jsx)(h.DUT, {
                 className: Y.LL,
@@ -334,11 +334,11 @@ function el() {
                 return (0, a.jsx)(i.Fragment, {
                     children: (0, a.jsx)(u.m_, {
                         position: "left",
-                        text: s === C.su.TRACK_FOCUS ? "Tracked Focus Event" : "Clear Focus Event",
+                        text: s === A.su.TRACK_FOCUS ? "Tracked Focus Event" : "Clear Focus Event",
                         children: (0, a.jsx)("div", {
                             children: (0, a.jsxs)(h.Text, {
                                 variant: "text-sm/medium",
-                                color: s === C.su.TRACK_FOCUS ? "text-default" : "text-feedback-critical",
+                                color: s === A.su.TRACK_FOCUS ? "text-default" : "text-feedback-critical",
                                 children: [(0, a.jsx)(es, {
                                     pid: n,
                                     tag: "span"
@@ -468,31 +468,31 @@ let er = i.memo(function(e) {
         })
     }),
     ec = [{
-        mode: C.x7.ClickZones,
+        mode: A.x7.ClickZones,
         label: "Click Zone Debug Mode",
         tooltip: "Enables a red border around click zones to help with debugging."
     }, {
-        mode: C.x7.WidgetAreas,
+        mode: A.x7.WidgetAreas,
         label: "Render Debug Mode",
         tooltip: "Enables a border around any widgets that are rendered on screen that are pinned (even if they are hidden). Blue = pinned widgets, Gray = unpinned widgets"
     }, {
-        mode: C.x7.WindowContainer,
+        mode: A.x7.WindowContainer,
         label: "Window Container Debug Mode",
         tooltip: "Enables a border the overlay window"
     }, {
-        mode: C.x7.DisabledGPUBoost,
+        mode: A.x7.DisabledGPUBoost,
         label: "Disable GPU Boost",
         tooltip: "Disables GPU Boost, which can help with performance when games compete for GPU resources."
     }, {
-        mode: C.x7.ForceGPUBoost,
+        mode: A.x7.ForceGPUBoost,
         label: "Force GPU Boost",
         tooltip: "Forces GPU Boost, which can help with performance when games compete for GPU resources."
     }, {
-        mode: C.x7.OverlayRafManagerForceEnabled,
+        mode: A.x7.OverlayRafManagerForceEnabled,
         label: "Overlay SmartRAF",
         tooltip: "Creates a widget that has a clickzone inside of it, which will show/hide every few seconds."
     }, {
-        mode: C.x7.LegacyOverlayLogging,
+        mode: A.x7.LegacyOverlayLogging,
         label: "Legacy Overlay Logging",
         tooltip: "Enables legacy overlay logging, which will forward all legacy logging to the main apps console."
     }],
@@ -506,15 +506,15 @@ let er = i.memo(function(e) {
         }, []), (0, a.jsx)("div", {
             className: Y.st,
             children: ec.map(r => {
-                let o = r.mode === C.x7.OverlayRafManagerForceEnabled ? `${r.label} (${I.A.getLastRAFCallbackReason()})` : r.label,
-                    d = () => r.mode === C.x7.ClickZones ? null != e : r.mode === C.x7.WidgetAreas ? null != n : l.has(r.mode);
+                let o = r.mode === A.x7.OverlayRafManagerForceEnabled ? `${r.label} (${I.A.getLastRAFCallbackReason()})` : r.label,
+                    d = () => r.mode === A.x7.ClickZones ? null != e : r.mode === A.x7.WidgetAreas ? null != n : l.has(r.mode);
                 return (0, a.jsx)(i.Fragment, {
                     children: (0, a.jsx)(h.dOG, {
                         checked: d(),
                         onChange: () => {
                             var e;
                             let n = d();
-                            r.mode === C.x7.ClickZones && t(), r.mode === C.x7.WidgetAreas && s(), e = r.mode, g.A.setRenderDebugMode(!n, e)
+                            r.mode === A.x7.ClickZones && t(), r.mode === A.x7.WidgetAreas && s(), e = r.mode, g.A.setRenderDebugMode(!n, e)
                         },
                         label: o,
                         description: r.tooltip
@@ -570,21 +570,21 @@ let er = i.memo(function(e) {
         let e = (0, c.bG)([y.default], () => y.default.getForcedRenderMode()),
             [t, n] = i.useState(e),
             s = [{
-                label: C.V6.UNSET,
-                value: C.V6.UNSET,
-                id: C.V6.UNSET
+                label: A.V6.UNSET,
+                value: A.V6.UNSET,
+                id: A.V6.UNSET
             }, {
-                label: C.V6.IN_PROCESS_V2,
-                value: C.V6.IN_PROCESS_V2,
-                id: C.V6.IN_PROCESS_V2
+                label: A.V6.IN_PROCESS_V2,
+                value: A.V6.IN_PROCESS_V2,
+                id: A.V6.IN_PROCESS_V2
             }, {
-                label: C.V6.OUT_OF_PROCESS_V3,
-                value: C.V6.OUT_OF_PROCESS_V3,
-                id: C.V6.OUT_OF_PROCESS_V3
+                label: A.V6.OUT_OF_PROCESS_V3,
+                value: A.V6.OUT_OF_PROCESS_V3,
+                id: A.V6.OUT_OF_PROCESS_V3
             }, {
-                label: C.V6.OUT_OF_PROCESS_V3_LIMITED_INTERACTION,
-                value: C.V6.OUT_OF_PROCESS_V3_LIMITED_INTERACTION,
-                id: C.V6.OUT_OF_PROCESS_V3_LIMITED_INTERACTION
+                label: A.V6.OUT_OF_PROCESS_V3_LIMITED_INTERACTION,
+                value: A.V6.OUT_OF_PROCESS_V3_LIMITED_INTERACTION,
+                id: A.V6.OUT_OF_PROCESS_V3_LIMITED_INTERACTION
             }].map(t => ({
                 ...t,
                 label: `${t.label} ${e===t.value?"(current)":""}`
@@ -657,37 +657,37 @@ function ex(e) {
 let ep = {
     native: {
         label: "Native",
-        filter: e => e.type === A.ON.NativeLegacy || e.type === A.ON.NativeOOP
+        filter: e => e.type === C.ON.NativeLegacy || e.type === C.ON.NativeOOP
     },
     render: {
         label: "Render",
-        filter: e => e.type === A.ON.Renderer
+        filter: e => e.type === C.ON.Renderer
     },
     flux: {
         label: "Flux",
-        filter: e => e.type === A.ON.Flux
+        filter: e => e.type === C.ON.Flux
     },
     client: {
         label: "Client",
-        filter: e => e.type === A.ON.OOPModule || e.type === A.ON.LegacyModule
+        filter: e => e.type === C.ON.OOPModule || e.type === C.ON.LegacyModule
     }
 };
 
 function eg(e) {
-    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : A.QJ.Info;
-    if (t === A.QJ.Error) return "var(--text-feedback-critical)";
+    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : C.QJ.Info;
+    if (t === C.QJ.Error) return "var(--text-feedback-critical)";
     switch (e) {
-        case A.ON.NativeLegacy:
+        case C.ON.NativeLegacy:
             return "var(--yellow-500)";
-        case A.ON.NativeOOP:
+        case C.ON.NativeOOP:
             return "var(--green-500)";
-        case A.ON.Flux:
+        case C.ON.Flux:
             return "var(--brand-400)";
-        case A.ON.Renderer:
+        case C.ON.Renderer:
             return "var(--brand-500)";
-        case A.ON.LegacyModule:
+        case C.ON.LegacyModule:
             return "var(--yellow-300)";
-        case A.ON.OOPModule:
+        case C.ON.OOPModule:
             return "var(--green-300)";
         default:
             return "var(--gray-400)"
@@ -727,11 +727,11 @@ let e_ = [{
                 variant: "text-md/normal",
                 color: function(e) {
                     switch (e) {
-                        case A.QJ.Info:
+                        case C.QJ.Info:
                             return "text-strong";
-                        case A.QJ.Warning:
+                        case C.QJ.Warning:
                             return "text-feedback-warning";
-                        case A.QJ.Error:
+                        case C.QJ.Error:
                             return "text-feedback-critical";
                         default:
                             return "text-subtle"
@@ -758,16 +758,16 @@ let e_ = [{
 
 function ef(e) {
     switch (e) {
-        case A.ON.NativeLegacy:
+        case C.ON.NativeLegacy:
             return h.WxK;
-        case A.ON.NativeOOP:
+        case C.ON.NativeOOP:
             return h.qXB;
-        case A.ON.Renderer:
-        case A.ON.Flux:
+        case C.ON.Renderer:
+        case C.ON.Flux:
             return h.vH5;
-        case A.ON.LegacyModule:
+        case C.ON.LegacyModule:
             return h.kN9;
-        case A.ON.OOPModule:
+        case C.ON.OOPModule:
             return h.ofK;
         default:
             return h.kN9
@@ -779,7 +779,7 @@ function eb(e) {
 }
 let ev = ["__webpack_require__", "fn"],
     ej = ["web.js", "web.js.map"],
-    eC = [{
+    eA = [{
         id: "details",
         name: "Details",
         group: z.fu.NONE,
@@ -897,7 +897,7 @@ let ev = ["__webpack_require__", "fn"],
             })
         }
     }],
-    eA = {
+    eC = {
         searchType: k.n.REGEX,
         searchStringGenerator: e => {
             let {
@@ -915,11 +915,11 @@ function eT() {
     let {
         ref: e,
         height: t
-    } = (0, f.Ay)(), n = (0, c.bG)([N.A], () => N.A.isModuleLoggingEnabled()), [s, r] = i.useState(n), [o, d] = i.useState(!1), [u, m] = i.useState(null), [x, p] = i.useState(Object.keys(ep)), [_, b] = (0, c.bG)([N.A], () => N.A.getOverlayLoggingBreadcrumbs(), [], G.D), [v, j] = i.useState(null), C = v ?? _, A = null != v ? -1 : b;
+    } = (0, f.Ay)(), n = (0, c.bG)([N.A], () => N.A.isModuleLoggingEnabled()), [s, r] = i.useState(n), [o, d] = i.useState(!1), [u, m] = i.useState(null), [x, p] = i.useState(Object.keys(ep)), [_, b] = (0, c.bG)([N.A], () => N.A.getOverlayLoggingBreadcrumbs(), [], G.D), [v, j] = i.useState(null), A = v ?? _, C = null != v ? -1 : b;
     i.useEffect(() => {
-        0 !== A && (o ? m(C.reduce((e, t) => "game_tracking_starting" === t.name ? Math.max(e, t.timestamp) : e, 0)) : m(null))
-    }, [o, C, A]);
-    let [T, y] = i.useState(""), S = i.useMemo(() => 0 === A ? [] : C.filter(e => {
+        0 !== C && (o ? m(A.reduce((e, t) => "game_tracking_starting" === t.name ? Math.max(e, t.timestamp) : e, 0)) : m(null))
+    }, [o, A, C]);
+    let [T, y] = i.useState(""), S = i.useMemo(() => 0 === C ? [] : A.filter(e => {
         if (o && null != u && e.timestamp < u) return !1;
         for (let t of x) {
             let {
@@ -928,14 +928,14 @@ function eT() {
             if (n(e)) return !0
         }
         return !1
-    }), [C, x, u, o, A]), [E, I] = i.useState(S), [k, O] = i.useState(null), w = i.useMemo(() => C.find(e => e.key === k), [C, k]), D = i.useCallback(e => {
+    }), [A, x, u, o, C]), [E, I] = i.useState(S), [k, O] = i.useState(null), w = i.useMemo(() => A.find(e => e.key === k), [A, k]), D = i.useCallback(e => {
         I(e)
     }, []), {
         renderSelectedTab: M
     } = (0, z.Ay)({
-        tabs: eC
+        tabs: eA
     }, []);
-    (0, R.RT)(T, S, D, eA, [C]);
+    (0, R.RT)(T, S, D, eC, [A]);
     let P = i.useCallback(e => {
             r(e), g.A.setModuleLogging(e)
         }, []),

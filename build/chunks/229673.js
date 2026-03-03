@@ -22,22 +22,22 @@ function A(e) {
         author: A,
         compact: f
     } = e, {
-        nick: E
-    } = (0, o.d8)(A, n), h = (0, c.P)({
+        nick: h
+    } = (0, o.d8)(A, n), g = (0, c.P)({
         user: A,
         channelId: n.id,
         guildId: void 0,
         messageId: void 0
-    })(), g = (0, a.h)(t.applicationId);
-    if (null == g) return null;
+    })(), E = (0, a.h)(t.applicationId);
+    if (null == E) return null;
     let p = m.intl.format(m.t.m7Lwas, {
-        username: E,
-        usernameHook: h,
-        gameName: g.name,
+        username: h,
+        usernameHook: g,
+        gameName: E.name,
         gameIconHook: e => (0, i.jsxs)("span", {
             className: _.Y_,
             children: [(0, i.jsx)(r.A, {
-                game: g,
+                game: E,
                 size: r.M.XXSMALL,
                 className: _.p4
             }), " ", e]

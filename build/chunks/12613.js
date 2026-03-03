@@ -5,21 +5,21 @@ n.d(t, {
 var l = n(627968);
 n(64700);
 var a = n(158954),
-    r = n(746305);
-let i = e => {
+    i = n(746305);
+let r = e => {
         let {
             onChange: t,
             label: n,
-            subtitle: i,
+            subtitle: r,
             selected: s
         } = e;
         return (0, l.jsx)("div", {
-            className: r.y,
+            className: i.y,
             children: (0, l.jsx)(a.Sc0, {
                 checked: s,
                 onChange: t,
                 label: n,
-                description: i
+                description: r
             })
         })
     },
@@ -31,16 +31,16 @@ let i = e => {
         } = e;
         if (t?.type !== "checkbox") return null;
         let {
-            data: r
+            data: i
         } = t;
         return (0, l.jsx)("div", {
-            children: r.map((e, t) => {
-                let [r, s, d] = e;
-                return (0, l.jsx)(i, {
-                    onChange: () => a(r, s),
-                    selected: r in n,
+            children: i.map((e, t) => {
+                let [i, s, o] = e;
+                return (0, l.jsx)(r, {
+                    onChange: () => a(i, s),
+                    selected: i in n,
                     label: s,
-                    subtitle: d
+                    subtitle: o
                 }, `${t}+button`)
             })
         })

@@ -1,7 +1,7 @@
 /** chunk id: 674168, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    m: () => x
+    m: () => E
 });
 var i = n(627968);
 n(64700);
@@ -20,34 +20,34 @@ var s = n(311907),
     g = n(788868),
     _ = n(355097),
     m = n(985018),
-    E = n(956790);
+    x = n(956790);
 
-function x(e) {
+function E(e) {
     var t;
     let {
         onClose: n,
-        markAsDismissed: x
+        markAsDismissed: E
     } = e, y = (0, s.bG)([h.default], () => h.default.getCurrentUser()), v = (t = y?.premiumType) === g.PremiumTypes.TIER_2 ? m.intl.string(m.t.jqO5Qn) : null == t ? m.intl.string(m.t.f2qjw5) : m.intl.string(m.t.SblICW), S = p.Ay.canUseCustomCallSounds(y);
     return (0, i.jsxs)(d.A, {
         isShown: !0,
         type: d.i.PREMIUM,
-        className: E.ne,
-        backgroundClassName: E.u4,
-        children: [null != x ? (0, i.jsx)(r.DUT, {
-            className: E.VN,
-            onClick: () => x?.(f.i.DISMISS),
+        className: x.ne,
+        backgroundClassName: x.u4,
+        children: [null != E ? (0, i.jsx)(r.DUT, {
+            className: x.VN,
+            onClick: () => E?.(f.i.DISMISS),
             "aria-label": m.intl.string(m.t.cpT0Cq),
             children: (0, i.jsx)(r.PGe, {
                 size: "xs",
                 color: "currentColor",
-                className: E.ut
+                className: x.ut
             })
         }) : null, (0, i.jsxs)("div", {
-            className: E.ex,
+            className: x.ex,
             children: [(0, i.jsx)(r.tvc, {
                 size: "sm",
                 color: "currentColor",
-                className: E.ax
+                className: x.ax
             }), (0, i.jsx)(r.Heading, {
                 variant: "heading-sm/bold",
                 children: m.intl.string(m.t.dTbAxx)
@@ -60,7 +60,7 @@ function x(e) {
                 (0, u.openUserSettings)(c.X.SOUNDBOARD_CATEGORY, {
                     section: A.nc_.VOICE,
                     subsection: _.MJ
-                }), n?.(), x?.(f.i.PRIMARY)
+                }), n?.(), E?.(f.i.PRIMARY)
             },
             text: m.intl.string(m.t.RzWDqY),
             fullWidth: !0
@@ -74,7 +74,7 @@ function x(e) {
                 object: A.ZSU.BUTTON_CTA
             },
             color: a.$n.Colors.GREEN,
-            onSubscribeModalClose: () => x?.(f.i.PRIMARY)
+            onSubscribeModalClose: () => E?.(f.i.PRIMARY)
         })]
     })
 }

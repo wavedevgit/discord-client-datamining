@@ -1,16 +1,17 @@
-/** chunk id: 133025, original params: e,t,i (module,exports,require) **/
-i.d(t, {
+/** chunk id: 133025, original params: e,t,n (module,exports,require) **/
+"use strict";
+n.d(t, {
     A: () => o
 });
-var n = i(311907),
-    s = i(73153);
+var i = n(311907),
+    s = n(73153);
 
 function r(e, t) {
     if (0 === e.length) throw Error("No user IDs provided");
     return [...e, ...t].join(",")
 }
 let a = {};
-class l extends n.Ay.Store {
+class l extends i.Ay.Store {
     getRecommendations(e, t) {
         if (0 !== e.length && 0 !== t.length) return a[r(e, t)]
     }
@@ -22,13 +23,13 @@ let o = new l(s.h, {
     WISHLIST_RECOMMENDATIONS_FETCH_START: function(e) {
         let {
             userIds: t,
-            applicationIds: i
+            applicationIds: n
         } = e;
-        if (0 === t.length || 0 === i.length) return !1;
-        let n = r(t, i);
+        if (0 === t.length || 0 === n.length) return !1;
+        let i = r(t, n);
         a = {
             ...a,
-            [n]: {
+            [i]: {
                 state: "loading"
             }
         }
@@ -36,16 +37,16 @@ let o = new l(s.h, {
     WISHLIST_RECOMMENDATIONS_FETCH_SUCCESS: function(e) {
         let {
             userIds: t,
-            applicationIds: i,
-            data: n
+            applicationIds: n,
+            data: i
         } = e;
-        if (0 === t.length || 0 === i.length) return !1;
-        let s = r(t, i);
+        if (0 === t.length || 0 === n.length) return !1;
+        let s = r(t, n);
         a = {
             ...a,
             [s]: {
                 state: "success",
-                data: n,
+                data: i,
                 fetchedAt: Date.now()
             }
         }
@@ -53,14 +54,14 @@ let o = new l(s.h, {
     WISHLIST_RECOMMENDATIONS_FETCH_FAILURE: function(e) {
         let {
             userIds: t,
-            applicationIds: i
+            applicationIds: n
         } = e;
-        if (0 === t.length || 0 === i.length) return !1;
-        let n = r(t, i);
-        if (a[n]?.state === "success") return !1;
+        if (0 === t.length || 0 === n.length) return !1;
+        let i = r(t, n);
+        if (a[i]?.state === "success") return !1;
         a = {
             ...a,
-            [n]: {
+            [i]: {
                 state: "error",
                 fetchedAt: Date.now()
             }

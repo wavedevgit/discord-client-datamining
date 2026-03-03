@@ -21,8 +21,8 @@ var a = n(627968),
     b = n(646764),
     v = n(398025),
     j = n(516226),
-    C = n(720875),
-    A = n(713457),
+    A = n(720875),
+    C = n(713457),
     T = n(419367),
     y = n(985018),
     S = n(196240);
@@ -96,7 +96,7 @@ function N(e) {
                 maxHeight: V.to([0, 1], [104, (B ?? 0) + 12])
             },
             className: S.z,
-            children: [(0, a.jsx)(C.A, {
+            children: [(0, a.jsx)(A.A, {
                 showPlaceholder: !R,
                 width: 80,
                 height: 80,
@@ -160,7 +160,7 @@ function N(e) {
                 },
                 className: S.hS
             })]
-        }), (0, a.jsx)(A.A, {
+        }), (0, a.jsx)(C.A, {
             quest: t,
             questContent: n,
             contentPosition: N,

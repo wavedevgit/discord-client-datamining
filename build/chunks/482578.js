@@ -1,17 +1,17 @@
 /** chunk id: 482578, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => o
+    A: () => d
 });
 var l = n(627968),
     a = n(64700),
-    r = n(397927),
-    i = n(235986),
+    i = n(397927),
+    r = n(235986),
     s = n(985018),
-    d = n(641131);
-let o = e => {
+    o = n(641131);
+let d = e => {
     let t, {
             button: n,
-            submitting: o,
+            submitting: d,
             disableNext: c,
             onClick: u,
             canNavigateBack: _,
@@ -26,22 +26,22 @@ let o = e => {
             (n?.type === "submit" || n?.type === "done") && p.current?.focus()
         }, [n?.type]), !h) return null;
     let b = s.intl.string(s.t.i4jeWR);
-    return n?.type === "submit" ? (t = "critical-primary", b = x ? s.intl.string(d.default.ZUyreS) : s.intl.string(s.t["G+vU89"])) : n?.type === "next" ? b = s.intl.string(s.t.PDTjLN) : n?.type === "cancel" && (b = s.intl.string(s.t["ETE/oC"]), t = "secondary"), (0, l.jsx)(r.jlY, {
+    return n?.type === "submit" ? (t = "critical-primary", b = x ? s.intl.string(o.default.ZUyreS) : s.intl.string(s.t["G+vU89"])) : n?.type === "next" ? b = s.intl.string(s.t.PDTjLN) : n?.type === "cancel" && (b = s.intl.string(s.t["ETE/oC"]), t = "secondary"), (0, l.jsx)(i.jlY, {
         "data-migration-pending": !0,
-        direction: i.A.Direction.HORIZONTAL,
-        children: (0, l.jsxs)(r.ButtonGroup, {
+        direction: r.A.Direction.HORIZONTAL,
+        children: (0, l.jsxs)(i.ButtonGroup, {
             fullWidth: !0,
-            children: [A && (0, l.jsx)(r.Button, {
+            children: [A && (0, l.jsx)(i.Button, {
                 onClick: m,
                 variant: "secondary",
-                disabled: o,
+                disabled: d,
                 text: s.intl.string(s.t["13/7kX"])
-            }), g && (0, l.jsx)(r.Button, {
+            }), g && (0, l.jsx)(i.Button, {
                 onClick: () => {
                     null != n && u(n)
                 },
                 variant: t,
-                disabled: o || c,
+                disabled: d || c,
                 buttonRef: p,
                 text: b
             })]

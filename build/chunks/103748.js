@@ -21,12 +21,12 @@ var a = n(627968),
     b = n(553622),
     v = n(727220),
     j = n(445292);
-let C = {
+let A = {
         [_.qH.THUMBNAIL]: null,
         [_.qH.STATIC]: null,
         [_.qH.REDUCED_MOTION]: null
     },
-    A = "debug",
+    C = "debug",
     T = "reduced-motion-preview-modal",
     y = e => {
         let {
@@ -125,12 +125,12 @@ let C = {
             effect: t
         } = e, {
             upsertConfig: n
-        } = (0, g.wu)(), s = (0, o.bG)([p.default], () => p.default.getCurrentUser()), [d, j] = i.useState(!0), T = i.useRef({}), [y, E] = i.useState(!1), [N, I] = i.useState(!1), [k, R] = i.useState(8), [O, w] = i.useState([]), [D, M] = i.useState(C), P = i.useRef([]), [L, U] = i.useState(t.name), B = L.toLowerCase().replace(/\s+/g, "_"), G = i.useMemo(() => ({
-            id: A,
-            skuId: A,
-            title: A,
-            description: A,
-            accessibilityLabel: A,
+        } = (0, g.wu)(), s = (0, o.bG)([p.default], () => p.default.getCurrentUser()), [d, j] = i.useState(!0), T = i.useRef({}), [y, E] = i.useState(!1), [N, I] = i.useState(!1), [k, R] = i.useState(8), [O, w] = i.useState([]), [D, M] = i.useState(A), P = i.useRef([]), [L, U] = i.useState(t.name), B = L.toLowerCase().replace(/\s+/g, "_"), G = i.useMemo(() => ({
+            id: C,
+            skuId: C,
+            title: C,
+            description: C,
+            accessibilityLabel: C,
             reducedMotionSrc: "",
             thumbnailPreviewSrc: "",
             effects: O,
@@ -456,7 +456,7 @@ let C = {
                             variant: "critical-secondary",
                             text: "Clear Assets",
                             onClick: () => {
-                                w([]), M(C)
+                                w([]), M(A)
                             }
                         })
                     }), O.map((e, t) => (0, a.jsxs)("div", {

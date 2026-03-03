@@ -1,14 +1,14 @@
 /** chunk id: 503985, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => d
+    A: () => o
 });
 var l = n(627968);
 n(64700);
 var a = n(397927),
-    r = n(730134),
-    i = n(985018),
+    i = n(730134),
+    r = n(985018),
     s = n(388889);
-let d = e => {
+let o = e => {
     let {
         user: t
     } = e;
@@ -17,12 +17,12 @@ let d = e => {
         children: [(0, l.jsx)(a.Heading, {
             className: s.wx,
             variant: "heading-sm/semibold",
-            children: i.intl.string(i.t.Rsth7z)
+            children: r.intl.string(r.t.Rsth7z)
         }), (0, l.jsx)("div", {
             className: s.f1,
             children: (0, l.jsxs)("div", {
                 className: s.eF,
-                children: [(0, l.jsx)(r.A, {
+                children: [(0, l.jsx)(i.A, {
                     className: s.Hk,
                     user: t,
                     size: a._3J.SIZE_40

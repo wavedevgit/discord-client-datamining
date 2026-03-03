@@ -15,9 +15,9 @@ var i = n(627968),
     _ = n(71393),
     A = n(287809),
     f = n(488926),
-    E = n(661191),
-    h = n(529942),
-    g = n(164956),
+    h = n(661191),
+    g = n(529942),
+    E = n(164956),
     p = n(209700),
     x = n(652215),
     C = n(985018),
@@ -29,11 +29,11 @@ function T(e) {
     } = e, n = (0, s.bG)([A.default], () => A.default.getCurrentUser()), T = (0, s.bG)([_.A], () => _.A.getGuild(t)), S = (0, s.bG)([m.A], () => m.A.getRolesSnapshot(t)), R = (0, s.bG)([m.A], () => m.A.getSortedRoles(t)), {
         impersonateType: v,
         viewingRoles: M
-    } = (0, s.cf)([g.A], () => ({
-        impersonateType: g.A.getImpersonateType(t),
-        viewingRoles: g.A.getViewingRoles(t)
+    } = (0, s.cf)([E.A], () => ({
+        impersonateType: E.A.getImpersonateType(t),
+        viewingRoles: E.A.getViewingRoles(t)
     })), j = v === p._.SERVER_SHOP, O = (0, s.bG)([u.Ay], () => null != n ? u.Ay.getTrueMember(t, n.id) : null), b = null != T ? S[(0, c.af)(T)] : null, [y, L] = l.useState(() => {
-        let e = null == M ? [] : E.default.keys(M);
+        let e = null == M ? [] : h.default.keys(M);
         return null != b && e.push(b.id), e
     }), D = l.useRef(T);
     l.useEffect(() => {
@@ -43,7 +43,7 @@ function T(e) {
             for (let t of y) {
                 let n = S[t];
                 null != n && (e[t] = n)
-            }(0, h.IA)(t.id, {
+            }(0, g.IA)(t.id, {
                 type: v,
                 roles: e
             })
