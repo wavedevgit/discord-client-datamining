@@ -1,7 +1,7 @@
 /** chunk id: 685533, original params: e,t,s (module,exports,require) **/
 "use strict";
 s.d(t, {
-    A: () => L
+    A: () => I
 });
 var n = s(627968),
     l = s(64700),
@@ -12,8 +12,8 @@ var n = s(627968),
     c = s(287809),
     d = s(954571),
     u = s(440938),
-    g = s(590180),
-    _ = s(511265),
+    _ = s(590180),
+    g = s(511265),
     m = s(365491),
     h = s(856686),
     p = s(100057),
@@ -21,19 +21,19 @@ var n = s(627968),
     x = s(561769),
     E = s(484469),
     C = s(998694),
-    A = s(438166),
-    b = s(652215),
+    b = s(438166),
+    A = s(652215),
     S = s(695865);
 let v = {
     flattenProductVariants: !0
 };
 
-function L(e) {
+function I(e) {
     let {
         isFetchingCategories: t,
         scrollerRef: s,
         tab: r
-    } = e, L = (0, u.uM)(), I = L?.sessionId ?? "", {
+    } = e, I = (0, u.uM)(), L = I?.sessionId ?? "", {
         noCache: j,
         includeUnpublished: k
     } = (0, C.A)(), T = (0, i.bG)([c.default], () => c.default.getCurrentUser()), {
@@ -41,7 +41,7 @@ function L(e) {
         currentPage: N,
         totalCount: y,
         isFetchingResults: R
-    } = (0, h.S)(), B = (0, i.yK)([g.A], () => g.A.getProductsBySkus(O)), M = l.useCallback(() => {
+    } = (0, h.S)(), B = (0, i.yK)([_.A], () => _.A.getProductsBySkus(O)), M = l.useCallback(() => {
         s?.current?.scrollToTop({
             animate: !0
         })
@@ -49,18 +49,18 @@ function L(e) {
     l.useEffect(() => {
         M()
     }, [P, M]);
-    let D = (0, _.p)(),
-        H = l.useMemo(() => D(B), [D, B]);
+    let D = (0, g.p)(),
+        w = l.useMemo(() => D(B), [D, B]);
     l.useEffect(() => {
         t || (0, p.z)({
-            sessionId: I,
+            sessionId: L,
             checkpoint: p.t.SHOP_RENDERED,
             tab: r,
             unpublishedCategoriesShown: k,
             cacheDisabled: j
         })
-    }, [I, k, j, t, r]);
-    let w = l.useRef(null),
+    }, [L, k, j, t, r]);
+    let H = l.useRef(null),
         {
             setQueryPageSize: U,
             setQueryPageOffset: G,
@@ -69,44 +69,44 @@ function L(e) {
         [V, K] = l.useState(!1),
         W = t || R || null == T;
     l.useEffect(() => {
-        W ? K(!1) : H.length > 0 && K(!0)
-    }, [W, H.length]);
-    let z = F > 0 && !W && 0 === H.length;
+        W ? K(!1) : w.length > 0 && K(!0)
+    }, [W, w.length]);
+    let z = F > 0 && !W && 0 === w.length;
     l.useEffect(() => {
         let e = new ResizeObserver(() => {
-            null == w.current || U(Math.floor(5 * getComputedStyle(w.current).gridTemplateColumns.split(/\s+/).length))
+            null == H.current || U(Math.floor(5 * getComputedStyle(H.current).gridTemplateColumns.split(/\s+/).length))
         });
-        if (null != w.current) return e.observe(w.current), () => e.disconnect()
+        if (null != H.current) return e.observe(H.current), () => e.disconnect()
     }, [U]);
     let Y = l.useCallback(e => {
-        d.default.track(b.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-            collectibles_shop_session_id: L?.sessionId,
-            page_section: L?.pageSection,
-            page_category: L?.pageCategory,
+        d.default.track(A.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+            collectibles_shop_session_id: I?.sessionId,
+            page_section: I?.pageSection,
+            page_category: I?.pageCategory,
             page_index: e,
             page_size: F,
             cta_name: `filter results page ${e}`,
             page_type: "catalog"
         }), G((e - 1) * F)
-    }, [L, F, G]);
+    }, [I, F, G]);
     return (0, n.jsxs)(x.v3.Provider, {
         value: v,
         children: [(0, n.jsxs)("div", {
             className: a()({
                 [S.oE]: z
             }),
-            children: [z && (0, n.jsx)(A.A, {}), (0, n.jsxs)("div", {
+            children: [z && (0, n.jsx)(b.A, {}), (0, n.jsxs)("div", {
                 className: a()(S.ZE, {
                     [S.Kp]: V
                 }),
-                ref: w,
-                children: [W && [...Array(F)].map((e, t) => (0, n.jsx)(E.A, {}, t)), !W && H.map((e, t) => null == g.A.getCategory(e.categorySkuId) ? null : (0, n.jsx)(u.R9, {
+                ref: H,
+                children: [W && [...Array(F)].map((e, t) => (0, n.jsx)(E.A, {}, t)), !W && w.map((e, t) => null == _.A.getCategory(e.categorySkuId) ? null : (0, n.jsx)(u.R9, {
                     newValue: {
                         tilePosition: t
                     },
                     children: (0, n.jsx)(f.A, {
                         skuId: e.skuId,
-                        onClickAnalytics: (0, x.UU)(e, r, L)
+                        onClickAnalytics: (0, x.UU)(e, r, I)
                     }, e.skuId)
                 }, e.skuId))]
             })]

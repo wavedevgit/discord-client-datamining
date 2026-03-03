@@ -111,8 +111,8 @@ var i = n(627968),
     e1 = n(237631),
     e7 = n(194871),
     e6 = n(856588),
-    e5 = n(612181),
-    e9 = n(723702),
+    e9 = n(612181),
+    e5 = n(723702),
     e2 = n(837921),
     e3 = n(715671),
     e4 = n(652215),
@@ -121,7 +121,7 @@ var i = n(627968),
     tt = n(613057);
 n(115036), n(943577), n(131319), n(794383), n(845618), n(712687), n(328968), n(67480), n(874486), n(162605), n(2866), n(628965), n(752319), n(836602), n(555337), n(863036), n(291731), n(176360), n(972937), n(279061), n(750128), n(921955);
 let tn = !1;
-(0, v.as)(), s.Ay.initialize(), eb.A.loadServer(), e9.isPlatformEmbedded && (e2.Ay.on("USER_SETTINGS_OPEN", (e, t) => {
+(0, v.as)(), s.Ay.initialize(), eb.A.loadServer(), e5.isPlatformEmbedded && (e2.Ay.on("USER_SETTINGS_OPEN", (e, t) => {
     (0, eF.openUserSettings)()
 }), e2.Ay.on("LAUNCH_APPLICATION", (e, t) => {
     let n = eX.A.getActiveLibraryApplication(t);
@@ -245,7 +245,7 @@ function td(e) {
 let tc = [{
     path: [e4.BVt.ACTIVITY_DETAILS(":applicationId")],
     render: function(e) {
-        return (0, e5.wR)() || eW.default.getLoginStatus() === e4.aUe.LOGGING_IN || !eW.default.allowLogoutRedirect() ? ta(e) : (0, i.jsx)(N.A, {
+        return (0, e9.wR)() || eW.default.getLoginStatus() === e4.aUe.LOGGING_IN || !eW.default.allowLogoutRedirect() ? ta(e) : (0, i.jsx)(N.A, {
             applicationId: e.match.params.applicationId
         })
     }

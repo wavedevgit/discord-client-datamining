@@ -13,8 +13,8 @@ var l = s(503698),
     c = s(397927),
     d = s(287809),
     u = s(993408),
-    g = s(212407),
-    _ = s(815280),
+    _ = s(212407),
+    g = s(815280),
     m = s(695413),
     h = s(201073);
 (0, u.$b)(90);
@@ -40,9 +40,9 @@ let p = {
             bannerDisplayConfig: x,
             logoDisplayConfig: E,
             heroLogo: C,
-            heroBannerStatic: A,
-            heroBannerAnimated: b
-        } = (0, g.Kk)(s), S = x?.responsive ?? !1, v = x?.backgroundStyle;
+            heroBannerStatic: b,
+            heroBannerAnimated: A
+        } = (0, _.Kk)(s), S = x?.responsive ?? !1, v = x?.backgroundStyle;
         return null != f && (t || s !== p) ? (0, n.jsxs)("div", {
             ref: u,
             className: h.os,
@@ -53,9 +53,9 @@ let p = {
                 style: null != v ? {
                     background: v
                 } : void 0,
-                children: null != A && (0, n.jsx)(_.A, {
-                    bannerStatic: A,
-                    bannerAnimated: b,
+                children: null != b && (0, n.jsx)(g.A, {
+                    bannerStatic: b,
+                    bannerAnimated: A,
                     isResponsive: S
                 })
             }), (0, n.jsxs)("div", {

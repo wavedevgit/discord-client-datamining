@@ -12,8 +12,8 @@ var n = s(627968),
     c = s(954571),
     d = s(440938),
     u = s(365491),
-    g = s(549367),
-    _ = s(976742),
+    _ = s(549367),
+    g = s(976742),
     m = s(177366),
     h = s(212602),
     p = s(662166),
@@ -21,8 +21,8 @@ var n = s(627968),
     x = s(685533),
     E = s(773591),
     C = s(758836),
-    A = s(652215),
-    b = s(985018),
+    b = s(652215),
+    A = s(985018),
     S = s(356365);
 
 function v(e) {
@@ -36,10 +36,10 @@ function v(e) {
     (0, u.S)();
     let d = l.useRef(null),
         {
-            handleScroll: g
+            handleScroll: _
         } = (0, o.X)(d, t),
         {
-            setCategoryRef: _,
+            setCategoryRef: g,
             handleScrollToCategory: h
         } = (0, m.k0)(d.current),
         [f, x] = l.useState(a),
@@ -60,15 +60,15 @@ function v(e) {
             children: [(0, n.jsx)(i.GtU, {
                 className: S.OW,
                 ref: d,
-                onScroll: g,
-                children: (0, n.jsx)(L, {
+                onScroll: _,
+                children: (0, n.jsx)(I, {
                     isSmallScreen: E,
                     filterBarOpen: f,
                     setFilterBarOpen: x,
                     tab: t,
                     scrollerRef: d,
                     categories: s,
-                    setCategoryRef: _,
+                    setCategoryRef: g,
                     initialCategoryId: r
                 })
             }), f && !E && (0, n.jsx)("div", {
@@ -80,7 +80,7 @@ function v(e) {
         })
     })
 }
-let L = e => {
+let I = e => {
     let {
         isSmallScreen: t,
         filterBarOpen: s,
@@ -88,13 +88,13 @@ let L = e => {
         tab: o,
         scrollerRef: m,
         categories: v,
-        setCategoryRef: L,
-        initialCategoryId: I
+        setCategoryRef: I,
+        initialCategoryId: L
     } = e, j = l.useRef(null), k = (0, u.v)(e => e.hasDefaultFilters()), T = (0, d.uM)(), {
         handlePageChange: O,
         currentPage: N
     } = (0, f.Z)(m), y = l.useCallback(e => {
-        c.default.track(A.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+        c.default.track(b.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
             collectibles_shop_session_id: T?.sessionId,
             page_section: T?.pageSection,
             page_category: T?.pageCategory,
@@ -108,7 +108,7 @@ let L = e => {
         if (!t || !s) return;
         let e = e => {
             let t = e.target;
-            null === j.current || null === R.current || j.current.contains(t) || R.current.contains(t) || (c.default.track(A.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+            null === j.current || null === R.current || j.current.contains(t) || R.current.contains(t) || (c.default.track(b.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
                 collectibles_shop_session_id: T?.sessionId,
                 page_section: T?.pageSection,
                 page_category: T?.pageCategory,
@@ -127,7 +127,7 @@ let L = e => {
                 className: S.ne,
                 children: [(0, n.jsx)("div", {
                     className: S.lQ,
-                    children: (0, n.jsx)(g.A, {})
+                    children: (0, n.jsx)(_.A, {})
                 }), (0, n.jsxs)("div", {
                     className: a()(S.wR, {
                         [S.Im]: t
@@ -136,14 +136,14 @@ let L = e => {
                         className: S.Ul,
                         children: [(0, n.jsx)(i.Text, {
                             variant: "text-md/semibold",
-                            children: b.intl.string(b.t.uaX705)
+                            children: A.intl.string(A.t.uaX705)
                         }), (0, n.jsx)(h.A, {})]
                     }), (0, n.jsx)("div", {
                         ref: R,
                         children: (0, n.jsx)(i.Button, {
                             onClick: () => {
                                 let e = !s;
-                                c.default.track(A.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+                                c.default.track(b.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
                                     collectibles_shop_session_id: T?.sessionId,
                                     page_section: T?.pageSection,
                                     page_category: T?.pageCategory,
@@ -154,7 +154,7 @@ let L = e => {
                                 }), r(e)
                             },
                             variant: "secondary",
-                            text: b.intl.string(s ? b.t.fYtm6f : b.t["TeTYE+"]),
+                            text: A.intl.string(s ? A.t.fYtm6f : A.t["TeTYE+"]),
                             icon: i.RgP,
                             iconPosition: "end"
                         })
@@ -174,12 +174,12 @@ let L = e => {
                 newValue: {
                     pageIndex: N
                 },
-                children: (0, n.jsx)(_.A, {
+                children: (0, n.jsx)(g.A, {
                     categories: v,
-                    setCategoryRef: L,
+                    setCategoryRef: I,
                     currentPage: N,
                     handlePageChange: y,
-                    initialCategoryId: I
+                    initialCategoryId: L
                 })
             }) : (0, n.jsx)(x.A, {
                 scrollerRef: m,

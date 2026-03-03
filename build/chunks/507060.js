@@ -32,7 +32,7 @@ let T = (0, _.Fe)({
         name: "ChannelSettings"
     }),
     S = (0, _.Fe)({
-        createPromise: () => Promise.all([n.e("63757"), n.e("59275")]).then(n.bind(n, 737630)),
+        createPromise: () => Promise.all([n.e("69839"), n.e("63757"), n.e("59275")]).then(n.bind(n, 737630)),
         webpackId: 737630,
         name: "CollectiblesShop"
     }),

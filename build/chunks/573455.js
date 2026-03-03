@@ -13,7 +13,7 @@ var l = s(503698),
     c = s(196231),
     d = s(985018),
     u = s(201073);
-let g = e => {
+let _ = e => {
         let {
             handleTransition: t,
             featuredBlockRecord: s
@@ -35,7 +35,7 @@ let g = e => {
             }, e.categoryStoreListingId) : null)
         })
     },
-    _ = e => {
+    g = e => {
         let {
             handleTransition: t,
             categories: s
@@ -83,11 +83,11 @@ let g = e => {
                     className: u.uy
                 })
             })]
-        }) : null != a ? (0, n.jsx)(g, {
+        }) : null != a ? (0, n.jsx)(_, {
             featuredBlockRecord: a,
             handleTransition: s,
             isLoading: !1
-        }) : (0, n.jsx)(_, {
+        }) : (0, n.jsx)(g, {
             categories: l,
             handleTransition: s,
             isLoading: !1

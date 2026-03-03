@@ -1,7 +1,7 @@
 /** chunk id: 152568, original params: e,t,s (module,exports,require) **/
 "use strict";
 s.d(t, {
-    A: () => L
+    A: () => I
 });
 var n = s(627968),
     l = s(64700),
@@ -12,8 +12,8 @@ var n = s(627968),
     c = s(397927),
     d = s(367727),
     u = s(976860),
-    g = s(44724),
-    _ = s(954571),
+    _ = s(44724),
+    g = s(954571),
     m = s(975571),
     h = s(440938),
     p = s(590180),
@@ -21,17 +21,17 @@ var n = s(627968),
     x = s(212407),
     E = s(758836),
     C = s(652215),
-    A = s(49999),
-    b = s(818348),
+    b = s(49999),
+    A = s(818348),
     S = s(985018),
     v = s(201073);
-let L = e => {
+let I = e => {
     let {
         wideBannerBlock: t,
         tab: s
-    } = e, r = p.A.getCategoryByStoreListingId(t.categoryStoreListingId), L = l.useRef(null), I = l.useRef(null), [j, k] = l.useState(), [T, O] = l.useState(!1);
+    } = e, r = p.A.getCategoryByStoreListingId(t.categoryStoreListingId), I = l.useRef(null), L = l.useRef(null), [j, k] = l.useState(), [T, O] = l.useState(!1);
     l.useEffect(() => {
-        let e = I.current;
+        let e = L.current;
         if (null == e) return;
         let t = () => {
             e.naturalWidth > 0 && e.naturalHeight > 0 && k(1080 * (e.naturalHeight / e.naturalWidth))
@@ -51,17 +51,17 @@ let L = e => {
         M = s === E.G2.ORBS,
         P = null != t.ctaRoute && "" !== t.ctaRoute,
         D = !0 !== t.disableCta && (null != t.ctaText && "" !== t.ctaText || P),
-        H = null != t.logoURL && "" !== t.logoURL,
-        w = l.useCallback(() => {
+        w = null != t.logoURL && "" !== t.logoURL,
+        H = l.useCallback(() => {
             if (O(!0), t.isDismissible) {
                 let e = t.dismissibleContentVersion ?? 0;
                 (0, d.$l)(i.M.COLLECTIBLES_SHOP_WIDE_BANNER, e, {
-                    dismissAction: A.i.USER_DISMISS
+                    dismissAction: b.i.USER_DISMISS
                 })
             }
         }, [t.isDismissible, t.dismissibleContentVersion]),
         U = l.useCallback(e => {
-            _.default.track(C.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+            g.default.track(C.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
                 collectibles_shop_session_id: R?.sessionId,
                 sku_id: N,
                 page_type: s,
@@ -81,7 +81,7 @@ let L = e => {
                     if (null != t) {
                         let e = t[1],
                             s = parseInt(t[2], 10);
-                        (0, g.default)({
+                        (0, _.default)({
                             guildId: e,
                             pageIndex: s
                         })
@@ -100,7 +100,7 @@ let L = e => {
                 children: (0, n.jsx)(c.JnF, {
                     size: "sm",
                     onClick: e => {
-                        e.stopPropagation(), w()
+                        e.stopPropagation(), H()
                     },
                     "aria-label": S.intl.string(S.t.WAI6xu)
                 })
@@ -112,7 +112,7 @@ let L = e => {
                     height: `${j}px`
                 } : void 0,
                 children: (0, n.jsx)("img", {
-                    ref: I,
+                    ref: L,
                     src: B,
                     alt: t.title,
                     className: a()(v.LN, {
@@ -152,7 +152,7 @@ let L = e => {
                                 e.stopPropagation(), G(t.ctaText ?? S.intl.string(S.t.jVcuVY))
                             },
                             text: t.ctaText ?? S.intl.string(S.t.jVcuVY)
-                        }), H && (0, n.jsx)("img", {
+                        }), w && (0, n.jsx)("img", {
                             src: t.logoURL,
                             alt: "",
                             className: v.bU
@@ -162,18 +162,18 @@ let L = e => {
             })]
         });
     return (0, n.jsx)(c.NPJ, {
-        theme: M ? void 0 : b.NJ.DARK,
+        theme: M ? void 0 : A.NJ.DARK,
         children: e => (0, n.jsx)(o.L, {
-            innerRef: L,
+            innerRef: I,
             onChange: y,
             threshold: 0,
             children: P ? (0, n.jsx)(c.DUT, {
-                innerRef: L,
+                innerRef: I,
                 onClick: () => G(null),
                 className: a()(e, F),
                 children: V
             }) : (0, n.jsx)("div", {
-                ref: L,
+                ref: I,
                 className: a()(e, F),
                 children: V
             })

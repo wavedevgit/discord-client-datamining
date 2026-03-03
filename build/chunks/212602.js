@@ -12,8 +12,8 @@ var n = s(627968),
     c = s(397927),
     d = s(954571),
     u = s(440938),
-    g = s(365491),
-    _ = s(938191),
+    _ = s(365491),
+    g = s(938191),
     m = s(758836),
     h = s(652215),
     p = s(985018),
@@ -23,7 +23,7 @@ let x = () => {
         sort: e,
         onSetSort: t,
         hasRelevanceFilters: s
-    } = (0, g.v)(), r = (0, u.uM)(), x = (0, _.yB)("CollectiblesSortSelect"), E = s(), C = l.useMemo(() => m.QB.filter(e => e.sortType !== o.$.RELEVANCE || E), [E]), A = l.useCallback(e => {
+    } = (0, _.v)(), r = (0, u.uM)(), x = (0, g.yB)("CollectiblesSortSelect"), E = s(), C = l.useMemo(() => m.QB.filter(e => e.sortType !== o.$.RELEVANCE || E), [E]), b = l.useCallback(e => {
         let {
             sortType: t,
             sortDirection: s
@@ -49,7 +49,7 @@ let x = () => {
             value: "popularity",
             id: "popularity"
         }
-    }, []), b = l.useCallback(e => ({
+    }, []), A = l.useCallback(e => ({
         recent: {
             sortType: o.$.RECENCY,
             sortDirection: i.A.DESC
@@ -71,7 +71,7 @@ let x = () => {
             sortDirection: i.A.DESC
         }
     })[e], []), S = l.useCallback(e => {
-        let s = A(b(e));
+        let s = b(A(e));
         d.default.track(h.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
             collectibles_shop_session_id: r?.sessionId,
             page_section: r?.pageSection,
@@ -80,16 +80,16 @@ let x = () => {
             page_size: r?.pageSize,
             cta_name: `sort by ${s.label.toLowerCase()}`,
             page_type: "catalog"
-        }), t(b(e))
-    }, [r, A, b, t]), v = A(e);
+        }), t(A(e))
+    }, [r, b, A, t]), v = b(e);
     return (0, n.jsx)("div", {
         className: a()(f.k, {
-            [_.jP]: x
+            [g.jP]: x
         }),
         children: (0, n.jsx)(c.l6P, {
             label: p.intl.string(p.t.uaX705),
             hideLabel: !0,
-            options: C.map(A),
+            options: C.map(b),
             onSelectionChange: S,
             value: v.value,
             selectionMode: "single",

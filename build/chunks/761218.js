@@ -12,8 +12,8 @@ var n = s(627968),
     c = s(230109),
     d = s(688810),
     u = s(733391),
-    g = s(439303),
-    _ = s(44724),
+    _ = s(439303),
+    g = s(44724),
     m = s(317560),
     h = s(183802),
     p = s(67480),
@@ -21,8 +21,8 @@ var n = s(627968),
     x = s(440938),
     E = s(652215),
     C = s(188275),
-    A = s(985018),
-    b = s(27112);
+    b = s(985018),
+    A = s(27112);
 let S = {
         pageSection: "marvel-rivals-promotional-banner"
     },
@@ -32,7 +32,7 @@ let S = {
             skuIds: s,
             endTime: r,
             tab: v
-        } = e, L = (0, o.bG)([p.A], () => s.every(e => null != p.A.get(e)), [s]), I = (0, x.uM)(), {
+        } = e, I = (0, o.bG)([p.A], () => s.every(e => null != p.A.get(e)), [s]), L = (0, x.uM)(), {
             analyticsLocations: j
         } = (0, d.Ay)(), k = l.useRef(null), T = l.useRef(!1), O = l.useRef(null);
         l.useEffect(() => {
@@ -41,30 +41,30 @@ let S = {
         let N = l.useMemo(() => {
                 let e = a()(),
                     t = Math.max(a()(r).diff(e, "days"), 1);
-                return A.intl.formatToPlainString(A.t.BXpdIg, {
+                return b.intl.formatToPlainString(b.t.BXpdIg, {
                     days: t
                 })
             }, [r]),
             y = l.useCallback((e, t) => {
                 f.default.track(E.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-                    collectibles_shop_session_id: I?.sessionId,
+                    collectibles_shop_session_id: L?.sessionId,
                     page_type: v,
-                    page_category: I?.pageCategory,
-                    page_section: I?.pageSection,
+                    page_category: L?.pageCategory,
+                    page_section: L?.pageSection,
                     tile_type: "MARVEL_RIVALS_PROMOTIONAL_BANNER",
                     cta_name: e,
                     ...null != t ? {
                         sku_id: t
                     } : void 0
                 })
-            }, [I?.sessionId, I?.pageCategory, I?.pageSection, v]),
+            }, [L?.sessionId, L?.pageCategory, L?.pageSection, v]),
             R = l.useCallback(() => {
-                (0, _.X)({
+                (0, g.X)({
                     guildId: C.Kf
                 })
             }, []),
             B = l.useCallback(() => {
-                y("go_to_game_shop"), (0, _.default)({
+                y("go_to_game_shop"), (0, g.default)({
                     guildId: C.Kf
                 })
             }, [y]),
@@ -83,61 +83,61 @@ let S = {
             D = l.useCallback(e => {
                 T.current || (e ? null === O.current && (O.current = setTimeout(() => {
                     T.current = !0, O.current = null, f.default.track(E.HAw.COLLECTIBLES_TILE_IMPRESSION, {
-                        collectibles_shop_session_id: I?.sessionId,
+                        collectibles_shop_session_id: L?.sessionId,
                         page_type: v,
-                        page_category: I?.pageCategory,
-                        page_section: I?.pageSection,
+                        page_category: L?.pageCategory,
+                        page_section: L?.pageSection,
                         type: "marvel_rivals_promotional_banner"
                     })
                 }, 1e3)) : null !== O.current && (clearTimeout(O.current), O.current = null))
-            }, [I?.sessionId, I?.pageCategory, I?.pageSection, v]);
+            }, [L?.sessionId, L?.pageCategory, L?.pageSection, v]);
         return (l.useEffect(() => () => {
             null !== O.current && (clearTimeout(O.current), O.current = null)
-        }, []), L) ? (0, n.jsx)(c.L, {
+        }, []), I) ? (0, n.jsx)(c.L, {
             innerRef: k,
             onChange: D,
             threshold: 0,
             children: (0, n.jsx)("div", {
                 ref: k,
-                className: b.YB,
+                className: A.YB,
                 children: (0, n.jsxs)("div", {
-                    className: b.kL,
+                    className: A.kL,
                     children: [(0, n.jsx)("div", {
-                        className: b.b,
+                        className: A.b,
                         children: (0, n.jsx)(i.JnF, {
                             size: "sm",
                             variant: "icon-only",
                             onClick: P
                         })
                     }), (0, n.jsxs)("div", {
-                        className: b.xf,
+                        className: A.xf,
                         children: [null != N && (0, n.jsx)("div", {
-                            className: b.qw,
+                            className: A.qw,
                             children: (0, n.jsx)(i.Exy, {
                                 type: {
-                                    text: `${A.intl.string(A.t.yYEZGi)} (${N})`
+                                    text: `${b.intl.string(b.t.yYEZGi)} (${N})`
                                 },
                                 variant: "brand"
                             })
                         }), (0, n.jsxs)("div", {
-                            className: b.B5,
+                            className: A.B5,
                             children: [(0, n.jsx)(i.DZT, {
                                 variant: "heading-xl/semibold",
                                 color: "always-white",
-                                children: A.intl.string(A.t["z/QEIP"])
+                                children: b.intl.string(b.t["z/QEIP"])
                             }), (0, n.jsx)(i.$nd, {
                                 variant: "overlay-primary",
                                 icon: i.I9m,
                                 iconPosition: "end",
-                                text: A.intl.string(A.t["kq/75v"]),
+                                text: b.intl.string(b.t["kq/75v"]),
                                 onMouseDown: R,
                                 onClick: B
                             })]
                         })]
-                    }), (0, n.jsx)(g.E9, {
+                    }), (0, n.jsx)(_.E9, {
                         newValue: S,
                         children: (0, n.jsx)("div", {
-                            className: b.$2,
+                            className: A.$2,
                             children: s.map((e, t) => (0, n.jsx)(h.A, {
                                 skuId: e,
                                 applicationId: C.XR,

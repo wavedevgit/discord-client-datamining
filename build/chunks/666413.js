@@ -1,7 +1,7 @@
 /** chunk id: 666413, original params: e,t,s (module,exports,require) **/
 "use strict";
 s.d(t, {
-    S: () => _
+    S: () => g
 });
 var n = s(627968),
     l = s(64700),
@@ -12,8 +12,8 @@ var n = s(627968),
     c = s(946015),
     d = s(397927),
     u = s(854818),
-    g = s(410885);
-let _ = l.memo(function(e) {
+    _ = s(410885);
+let g = l.memo(function(e) {
     let {
         countdownTimerBlock: t,
         isVisible: s
@@ -26,7 +26,7 @@ let _ = l.memo(function(e) {
         }
     });
     return (0, n.jsxs)(i.animated.div, {
-        className: a()([g.lP, o.Fr && g.yJ]),
+        className: a()([_.lP, o.Fr && _.yJ]),
         role: "status",
         style: {
             ...l,
@@ -40,14 +40,14 @@ let _ = l.memo(function(e) {
             direction: c.s.Direction.VERTICAL,
             children: [(0, n.jsx)(d.Text, {
                 variant: "text-md/medium",
-                className: g.Wx,
+                className: _.Wx,
                 style: null != t.textColor && "" !== t.textColor ? {
                     color: t.textColor
                 } : void 0,
                 children: t.title
             }), null != t.body && "" !== t.body && (0, n.jsx)(d.Text, {
                 variant: "text-sm/medium",
-                className: g.w9,
+                className: _.w9,
                 style: null != t.textColor && "" !== t.textColor ? {
                     color: t.textColor
                 } : void 0,

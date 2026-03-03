@@ -12,19 +12,19 @@ var n = s(627968),
     c = s(590180),
     d = s(929283),
     u = s(758836),
-    g = s(289920);
-let _ = ["1212569433839636530", "1144308439720394944", "1228251144065777765", "1343751620965564426", "1157407831348228141", "1197344326133502032", "1232071712695386162", "1144046002110738634", "1271174324375519273", "1237653964582031400", "1217625794382401577", "1462116613871636542", "1458472704469499965", "1447654091072344195", "1432550258839392376", "1409898407849365565", "1404558257065824347"],
+    _ = s(289920);
+let g = ["1212569433839636530", "1144308439720394944", "1228251144065777765", "1343751620965564426", "1157407831348228141", "1197344326133502032", "1232071712695386162", "1144046002110738634", "1271174324375519273", "1237653964582031400", "1217625794382401577", "1462116613871636542", "1458472704469499965", "1447654091072344195", "1432550258839392376", "1409898407849365565", "1404558257065824347"],
     m = e => {
         let {
             config: t,
             baseLeft: s,
             transitioning: l
-        } = e, r = window.innerHeight, a = c.A.getProduct(t.skuId), o = a?.items[0], u = a?.type, _ = s + t.horizontalJitter;
+        } = e, r = window.innerHeight, a = c.A.getProduct(t.skuId), o = a?.items[0], u = a?.type, g = s + t.horizontalJitter;
         return (0, n.jsx)("div", {
-            className: g.LY,
+            className: _.LY,
             style: {
                 top: l ? -r - 384 : t.top,
-                left: l ? _ + t.transitionOffsetLeft : _,
+                left: l ? g + t.transitionOffsetLeft : g,
                 transform: `rotate(${t.rotation}deg)`,
                 height: 160,
                 width: 160,
@@ -41,7 +41,7 @@ let _ = ["1212569433839636530", "1144308439720394944", "1228251144065777765", "1
             peaking: t,
             transitioning: s,
             parentWidth: r
-        } = e, [i, o] = l.useState(!1), [c, d] = l.useState([]), [h] = l.useState(() => [..._].sort(() => Math.random() - .5).map(e => ({
+        } = e, [i, o] = l.useState(!1), [c, d] = l.useState([]), [h] = l.useState(() => [...g].sort(() => Math.random() - .5).map(e => ({
             skuId: e,
             top: 0 + 48 * Math.random(),
             rotation: -32 + 64 * Math.random(),
@@ -64,9 +64,9 @@ let _ = ["1212569433839636530", "1144308439720394944", "1228251144065777765", "1
         }, [r, h]), l.useEffect(() => {
             s && setTimeout(() => o(!0), u.H1)
         }, [s]), (0, n.jsx)("div", {
-            className: a()(g.rA, {
-                [g.Kb]: t,
-                [g.pp]: i
+            className: a()(_.rA, {
+                [_.Kb]: t,
+                [_.pp]: i
             }),
             children: c.map((e, t) => {
                 let {
@@ -90,7 +90,7 @@ let _ = ["1212569433839636530", "1144308439720394944", "1228251144065777765", "1
         }, []);
         return (0, o.g)(r, c), (0, n.jsx)("div", {
             ref: r,
-            className: g.eL,
+            className: _.eL,
             children: (0, n.jsx)(h, {
                 peaking: t,
                 transitioning: s,

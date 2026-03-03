@@ -12,8 +12,8 @@ var n = s(627968),
     c = s(590180),
     d = s(597783),
     u = s(212407),
-    g = s(652215),
-    _ = s(985018),
+    _ = s(652215),
+    g = s(985018),
     m = s(201073);
 let h = e => {
     let t, {
@@ -28,16 +28,16 @@ let h = e => {
             handleCardVisibilityChange: E
         } = (0, d.Z)(x, "home", "marketing featured block"),
         C = (0, u.s4)(s, h),
-        A = l.useRef(null),
-        b = h?.bodyText,
+        b = l.useRef(null),
+        A = h?.bodyText,
         S = (0, o.uM)();
     return (0, n.jsx)(r.L, {
-        innerRef: A,
+        innerRef: b,
         onChange: E,
         threshold: 0,
         children: (0, n.jsxs)(a.DUT, {
             className: m.oT,
-            innerRef: A,
+            innerRef: b,
             style: {
                 ...null != C && {
                     backgroundImage: `url(${C})`
@@ -49,7 +49,7 @@ let h = e => {
                     categorySkuId: x,
                     isInternalShopDeeplink: !0,
                     isOrbsExclusive: s?.isOrbsExclusive
-                }), i.default.track(g.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+                }), i.default.track(_.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
                     collectibles_shop_session_id: S?.sessionId,
                     sku_id: x,
                     page_type: "home",
@@ -66,27 +66,27 @@ let h = e => {
                 className: m.pv
             }), (0, n.jsx)("div", {
                 className: m.Gh,
-                children: null != b && (0, n.jsx)(a.Heading, {
+                children: null != A && (0, n.jsx)(a.Heading, {
                     lineClamp: 4,
                     className: m.BN,
                     style: {
                         color: h?.bannerTextColor ?? "white"
                     },
                     variant: "heading-md/medium",
-                    children: b
+                    children: A
                 })
             }), (0, n.jsx)("div", {
                 className: m.b2,
                 children: (0, n.jsx)(a.Button, {
                     variant: "overlay-primary",
-                    text: _.intl.string(_.t.jVcuVY),
+                    text: g.intl.string(g.t.jVcuVY),
                     onClick: e => {
                         f({
                             sourceButton: "shop marketing take me there button",
                             categorySkuId: x,
                             isInternalShopDeeplink: !0,
                             isOrbsExclusive: s?.isOrbsExclusive
-                        }), e.stopPropagation(), i.default.track(g.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+                        }), e.stopPropagation(), i.default.track(_.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
                             collectibles_shop_session_id: S?.sessionId,
                             sku_id: x,
                             page_type: "home",

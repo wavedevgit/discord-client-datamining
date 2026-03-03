@@ -12,8 +12,8 @@ var n = s(627968),
     c = s(775602),
     d = s(607470),
     u = s(531685),
-    g = s(993408),
-    _ = s(203312),
+    _ = s(993408),
+    g = s(203312),
     m = s(212407),
     h = s(985018),
     p = s(68763);
@@ -22,7 +22,7 @@ function f(e) {
     let {
         category: t
     } = e, s = (0, i.bG)([c.A], () => c.A.useReducedMotion), r = (0, i.bG)([u.A], () => u.A.isFocused()), {
-        catalogBannerStatic: g,
+        catalogBannerStatic: _,
         catalogBannerAnimated: f,
         catalogBannerRive: x
     } = (0, m.MV)(t), E = l.useRef(null), C = null != x;
@@ -44,7 +44,7 @@ function f(e) {
         }) : (0, n.jsxs)(n.Fragment, {
             children: [(0, n.jsx)("img", {
                 className: p.ze,
-                src: g,
+                src: _,
                 alt: t.name
             }), null != f && !s && r && (0, n.jsx)(d.A, {
                 src: f,
@@ -52,10 +52,10 @@ function f(e) {
                 autoPlay: !0,
                 loop: !0
             })]
-        }), (0, n.jsx)(_.A, {
+        }), (0, n.jsx)(g.A, {
             category: t,
             className: p.v0,
             daysRemainingText: h.t["8gsP5M"]
         })]
     })
-}(0, g.$b)(90)
+}(0, _.$b)(90)

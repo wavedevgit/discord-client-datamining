@@ -12,8 +12,8 @@ var n = s(627968),
     c = s(313276),
     d = s(206077),
     u = s(751304),
-    g = s(561769),
-    _ = s(484469),
+    _ = s(561769),
+    g = s(484469),
     m = s(758836),
     h = s(201073);
 let p = e => (0, n.jsx)("div", {
@@ -36,10 +36,10 @@ let p = e => (0, n.jsx)("div", {
             totalCards: r
         } = e, o = (0, a.uM)();
         if (t) return (0, n.jsx)(n.Fragment, {
-            children: [...Array(r ?? 4)].map((e, t) => (0, n.jsx)(_.A, {}, t))
+            children: [...Array(r ?? 4)].map((e, t) => (0, n.jsx)(g.A, {}, t))
         });
         let c = null != r ? s.slice(0, r) : s;
-        return (0, n.jsx)(g.v3.Provider, {
+        return (0, n.jsx)(_.v3.Provider, {
             value: {
                 flattenProductVariants: !1
             },
@@ -53,8 +53,8 @@ let p = e => (0, n.jsx)("div", {
                     },
                     children: (0, n.jsx)(u.A, {
                         skuId: e?.skuId,
-                        prioritizedCurrency: l === m.G2.ORBS ? g.Hi.ORBS : void 0,
-                        onClickAnalytics: (0, g.UU)(e, l, o)
+                        prioritizedCurrency: l === m.G2.ORBS ? _.Hi.ORBS : void 0,
+                        onClickAnalytics: (0, _.UU)(e, l, o)
                     }, e.skuId)
                 }, e.skuId)
             })
@@ -64,30 +64,30 @@ let p = e => (0, n.jsx)("div", {
         let t, s, r, {
                 heroBlockRecord: a,
                 layout: u,
-                tab: g,
-                isBlockLoading: _ = !1
+                tab: _,
+                isBlockLoading: g = !1
             } = e,
             {
                 products: m
-            } = (t = (0, c.A)(), s = l.useMemo(() => _ ? [] : t(a.rankedSkuIds), [_, t, a.rankedSkuIds]), r = (0, o.p)()(s), {
+            } = (t = (0, c.A)(), s = l.useMemo(() => g ? [] : t(a.rankedSkuIds), [g, t, a.rankedSkuIds]), r = (0, o.p)()(s), {
                 products: (0, d.X)(r)
             }),
-            h = l.useMemo(() => !_ && 0 !== a.rankedSkuIds.length && !(m.length > 0) && a.rankedSkuIds.every(e => i.A.getProduct(e)?.variantGroupStoreListingId != null), [_, a.rankedSkuIds, m.length]),
-            x = _ || h;
+            h = l.useMemo(() => !g && 0 !== a.rankedSkuIds.length && !(m.length > 0) && a.rankedSkuIds.every(e => i.A.getProduct(e)?.variantGroupStoreListingId != null), [g, a.rankedSkuIds, m.length]),
+            x = g || h;
         switch (u) {
             case "feed":
                 return (0, n.jsx)(p, {
                     heroBlockRecord: a,
                     isLoading: x,
                     products: m,
-                    tab: g
+                    tab: _
                 });
             case "hscroll":
                 return (0, n.jsx)(f, {
                     heroBlockRecord: a,
                     isLoading: x,
                     products: m,
-                    tab: g
+                    tab: _
                 })
         }
     }

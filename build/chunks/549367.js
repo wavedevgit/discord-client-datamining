@@ -18,7 +18,7 @@ function d() {
     } = (0, i.v)(e => e), {
         totalCount: s,
         isFetchingResults: d
-    } = (0, o.S)(), u = (0, i.v)(e => e.hasFilters()), g = l.useCallback(() => {
+    } = (0, o.S)(), u = (0, i.v)(e => e.hasFilters()), _ = l.useCallback(() => {
         if (!u) return "";
         if (d) return c.intl.string(c.t["/FaMSE"]);
         if ("" !== t) {
@@ -42,6 +42,6 @@ function d() {
     }, [e, s, u, t, d]);
     return (0, n.jsx)(a.Heading, {
         variant: "heading-lg/semibold",
-        children: g()
+        children: _()
     })
 }

@@ -16,15 +16,15 @@ let d = e => {
             endDate: l,
             size: d = "md",
             className: u,
-            showSeconds: g = !1
+            showSeconds: _ = !1
         } = e,
         {
-            days: _,
+            days: g,
             hours: m,
             minutes: h,
             seconds: p
         } = (0, i.A)(l),
-        f = (s = [(t = e => `${e.toString().padStart(2,"0")}`)(_), t(m), t(h)], g && s.push(t(p)), s.join(":"));
+        f = (s = [(t = e => `${e.toString().padStart(2,"0")}`)(g), t(m), t(h)], _ && s.push(t(p)), s.join(":"));
     return (0, n.jsxs)("div", {
         className: r()(c.kL, u),
         role: "timer",
@@ -44,7 +44,7 @@ let d = e => {
             children: e
         }, t)), (0, n.jsx)(a.AC4, {
             children: o.intl.format(o.t.j6IyVe, {
-                days: _,
+                days: g,
                 hours: m,
                 minutes: h
             })

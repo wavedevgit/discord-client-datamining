@@ -19,8 +19,8 @@ let u = e => {
     } = e, u = (0, l.K)(e => {
         s?.(e)
     }, .33, null != s), {
-        bannerUrl: g,
-        bannerAnimatedUrl: _
+        bannerUrl: _,
+        bannerAnimatedUrl: g
     } = (0, i.qY)(t), m = null != t.textColor ? {
         color: t.textColor
     } : void 0, h = null != t.body && "" !== t.body, p = null != t.helpCenterUrl && "" !== t.helpCenterUrl;
@@ -29,9 +29,9 @@ let u = e => {
         className: d.BX,
         children: [(0, n.jsx)("div", {
             className: d.vK,
-            children: null != g && (0, n.jsx)(o.A, {
-                bannerStatic: g,
-                bannerAnimated: _
+            children: null != _ && (0, n.jsx)(o.A, {
+                bannerStatic: _,
+                bannerAnimated: g
             })
         }), (0, n.jsx)("div", {
             className: d.HQ,

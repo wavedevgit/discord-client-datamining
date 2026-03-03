@@ -12,8 +12,8 @@ var n = s(627968),
     c = s(590180),
     d = s(4227),
     u = s(856686),
-    g = s(429876),
-    _ = s(599062),
+    _ = s(429876),
+    g = s(599062),
     m = s(998694),
     h = s(231209),
     p = s(781724),
@@ -29,11 +29,11 @@ function E(e) {
         updateAnalyticsState: c,
         refreshCategories: d
     } = e, m = C();
-    A(m);
+    b(m);
     let E = (0, r.bG)([a.A], () => a.A.useReducedMotion),
-        [b, S] = l.useState(void 0),
-        [v, L] = l.useState(!0),
-        I = l.useMemo(() => s.filter(e => !f.MS.some(t => {
+        [A, S] = l.useState(void 0),
+        [v, I] = l.useState(!0),
+        L = l.useMemo(() => s.filter(e => !f.MS.some(t => {
             let {
                 categorySkuId: s
             } = t;
@@ -50,31 +50,31 @@ function E(e) {
             c(t, s);
             let a = n && !E,
                 o = r ? f.G2.ORBS : f.G2.CATALOG;
-            S(s), L(!l), i(o, a)
+            S(s), I(!l), i(o, a)
         }, [E, i, c]),
         {
             searchError: k
         } = (0, u.S)();
-    return null != k ? (0, n.jsx)(p.A, {}) : null != m ? (0, n.jsx)(_.h, {
+    return null != k ? (0, n.jsx)(p.A, {}) : null != m ? (0, n.jsx)(g.h, {
         onRetry: d,
         errorMessage: m,
-        errorOrigin: _.A.SHOP_PAGE
+        errorOrigin: g.A.SHOP_PAGE
     }) : x.includes(t) ? (0, n.jsx)(h.A, {
         handleTransition: j,
         tab: t,
         transitionState: o
-    }) : (0, n.jsx)(g.A, {
+    }) : (0, n.jsx)(_.A, {
         tab: t,
-        categories: I,
-        initialCategoryId: b,
+        categories: L,
+        initialCategoryId: A,
         showFilterInitially: v,
         onUnmount: () => {
-            S(void 0), L(!0)
+            S(void 0), I(!0)
         }
     })
 }
 let C = () => (0, r.bG)([c.A, d.A], () => null != c.A.error ? `shop load fetch categories error: ${c.A.error.message}` : null != d.A.claimError ? `shop load claim error: ${d.A.claimError.message}` : null != d.A.fetchError ? `shop load fetch purchase error: ${d.A.fetchError.message}` : void 0),
-    A = e => {
+    b = e => {
         let t = (0, r.bG)([i.default], () => i.default.getCurrentUser()),
             {
                 noCache: s,

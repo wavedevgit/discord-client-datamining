@@ -1,9 +1,9 @@
 /** chunk id: 177366, original params: e,t,s (module,exports,require) **/
 "use strict";
 s.d(t, {
-    XU: () => A,
+    XU: () => b,
     Yr: () => C,
-    k0: () => b
+    k0: () => A
 });
 var n = s(64700),
     l = s(873263),
@@ -14,8 +14,8 @@ var n = s(64700),
     c = s(590180),
     d = s(870216),
     u = s(298072),
-    g = s(238184),
-    _ = s(572595),
+    _ = s(238184),
+    g = s(572595),
     m = s(159439),
     h = s(57020),
     p = s(652215);
@@ -30,7 +30,7 @@ let f = "#itemSkuId=",
             }
         }, [e, t.pathname])
     },
-    A = () => {
+    b = () => {
         let e = (0, m.U)(),
             t = n.useRef(null),
             s = (0, l.zy)(),
@@ -38,7 +38,7 @@ let f = "#itemSkuId=",
             {
                 analyticsLocations: f
             } = (0, o.Ay)(a),
-            E = (0, g.A)();
+            E = (0, _.A)();
         n.useEffect(() => {
             let e = x.exec(s.hash);
             null != e ? t.current = e[1] : t.current = null
@@ -69,7 +69,7 @@ let f = "#itemSkuId=",
                                     let n = s.variants?.findIndex(e => e.skuId === t);
                                     null != n && n > -1 && (0, u.n)(s, n)
                                 }
-                            }(0, _.t)({
+                            }(0, g.t)({
                                 product: e,
                                 category: a,
                                 analyticsSource: n,
@@ -89,7 +89,7 @@ let f = "#itemSkuId=",
             }
         }, [f, a, e, C, E])
     },
-    b = e => {
+    A = e => {
         let t = n.useRef({}),
             s = (0, r.bG)([a.A], () => a.A.useReducedMotion),
             l = (0, r.bG)([c.A], () => c.A.isFetchingCategories),

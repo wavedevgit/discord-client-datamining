@@ -1,7 +1,7 @@
 /** chunk id: 511265, original params: e,t,s (module,exports,require) **/
 "use strict";
 s.d(t, {
-    p: () => g
+    p: () => _
 });
 var n = s(64700),
     l = s(417597),
@@ -12,7 +12,7 @@ var n = s(64700),
     c = s(623373),
     d = s(660653),
     u = s(466459);
-let g = () => {
+let _ = () => {
     let e = (0, l.bG)([r.default], () => r.default.getCurrentUser()),
         t = null != e && a.Ay.canUseCollectibles(e);
     return (0, n.useCallback)(e => null == e || 0 === e.length ? e : e.filter(e => {

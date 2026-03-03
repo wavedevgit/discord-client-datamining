@@ -1,7 +1,7 @@
 /** chunk id: 120286, original params: e,t,s (module,exports,require) **/
 "use strict";
 s.d(t, {
-    k: () => _
+    k: () => g
 });
 var n = s(627968),
     l = s(64700),
@@ -12,23 +12,23 @@ var n = s(627968),
     c = s(854818),
     d = s(985018),
     u = s(587496);
-let g = {
+let _ = {
         pink: "pinkCountdown"
     },
-    _ = l.memo(function(e) {
+    g = l.memo(function(e) {
         let {
             message: t,
             onClick: s,
             countdownEndDate: r,
-            variant: _
+            variant: g
         } = e, m = l.useMemo(() => {
             if (null == r) return null;
             let e = r instanceof Date ? r : new Date(r);
             return isNaN(e.getTime()) ? null : e
         }, [r]), h = (0, o.A)(m ?? 0, 1e3, void 0, null == m);
         if (null != m && Object.values(h).every(e => 0 === e)) return null;
-        let p = null != _ ? u[_] : void 0,
-            f = null != _ ? u[g[_]] : void 0;
+        let p = null != g ? u[g] : void 0,
+            f = null != g ? u[_[g]] : void 0;
         return (0, n.jsx)(i.DUT, {
             className: a()(u.nagBar, p),
             onClick: s,

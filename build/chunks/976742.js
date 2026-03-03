@@ -12,8 +12,8 @@ var n = s(627968),
     c = s(440938),
     d = s(511265),
     u = s(206077),
-    g = s(100057),
-    _ = s(903403),
+    _ = s(100057),
+    g = s(903403),
     m = s(392183),
     h = s(751304),
     p = s(561769),
@@ -22,7 +22,7 @@ var n = s(627968),
     E = s(758836),
     C = s(157884);
 
-function A(e) {
+function b(e) {
     let {
         category: t
     } = e, s = (0, a.bG)([o.default], () => o.default.getCurrentUser()), l = (0, u.X)(t.products), r = (0, d.p)()(l), i = (0, c.uM)();
@@ -41,7 +41,7 @@ function A(e) {
     })
 }
 
-function b(e) {
+function A(e) {
     let {
         category: t
     } = e, [s, a] = l.useState(!1), i = (0, r.K)(e => {
@@ -50,9 +50,9 @@ function b(e) {
     return (0, n.jsxs)("div", {
         className: C.EF,
         ref: i,
-        children: [(0, n.jsx)(_.A, {
+        children: [(0, n.jsx)(g.A, {
             category: t
-        }), (0, n.jsx)(A, {
+        }), (0, n.jsx)(b, {
             category: t
         })]
     })
@@ -65,47 +65,47 @@ function S(e) {
         currentPage: r,
         handlePageChange: a,
         initialCategoryId: o
-    } = e, d = (0, c.uM)(), u = (0, f.U)(), _ = d?.sessionId ?? "", {
+    } = e, d = (0, c.uM)(), u = (0, f.U)(), g = d?.sessionId ?? "", {
         noCache: h,
         includeUnpublished: p
-    } = (0, x.A)(), A = l.useMemo(() => t.filter(e => null == e.unpublishedAt || e.unpublishedAt > new Date).filter(e => {
+    } = (0, x.A)(), b = l.useMemo(() => t.filter(e => null == e.unpublishedAt || e.unpublishedAt > new Date).filter(e => {
         let {
             products: t
         } = e;
         return t.length > 0
     }), [t]), S = l.useRef(void 0);
     l.useEffect(() => {
-        if (null == o || 0 === A.length) {
+        if (null == o || 0 === b.length) {
             S.current = void 0;
             return
         }
         if (o === S.current) return;
-        let e = A.findIndex(e => e.skuId === o);
+        let e = b.findIndex(e => e.skuId === o);
         if (-1 === e) return;
         let t = Math.floor(e / E.l5) + 1;
         t !== r && a(t), S.current = o
-    }, [o, A, a, r]);
+    }, [o, b, a, r]);
     let v = l.useMemo(() => {
         let e = (r - 1) * E.l5;
-        return A.slice(e, e + E.l5)
-    }, [A, r]);
+        return b.slice(e, e + E.l5)
+    }, [b, r]);
     return (l.useEffect(() => {
-        (0, g.z)({
-            sessionId: _,
-            checkpoint: g.t.SHOP_MOUNTED,
+        (0, _.z)({
+            sessionId: g,
+            checkpoint: _.t.SHOP_MOUNTED,
             tab: E.G2.CATALOG,
             unpublishedCategoriesShown: p,
             cacheDisabled: h
         })
     }, []), l.useEffect(() => {
-        u || 0 === v.length || (0, g.z)({
-            sessionId: _,
-            checkpoint: g.t.SHOP_RENDERED,
+        u || 0 === v.length || (0, _.z)({
+            sessionId: g,
+            checkpoint: _.t.SHOP_RENDERED,
             tab: E.G2.CATALOG,
             unpublishedCategoriesShown: p,
             cacheDisabled: h
         })
-    }, [_, p, h, u, v.length]), u) ? (0, n.jsx)(m.A, {}) : (0, n.jsxs)("div", {
+    }, [g, p, h, u, v.length]), u) ? (0, n.jsx)(m.A, {}) : (0, n.jsxs)("div", {
         className: C.LZ,
         children: [v.map((e, t) => (0, n.jsx)("div", {
             ref: t => s(e.skuId, t),
@@ -113,7 +113,7 @@ function S(e) {
                 newValue: {
                     categoryPosition: t
                 },
-                children: (0, n.jsx)(b, {
+                children: (0, n.jsx)(A, {
                     category: e
                 })
             })
@@ -121,7 +121,7 @@ function S(e) {
             className: C.Ej,
             children: (0, n.jsx)(i.mgR, {
                 currentPage: r,
-                totalCount: A.length,
+                totalCount: b.length,
                 pageSize: E.l5,
                 onPageChange: a,
                 disablePaginationGap: !0
