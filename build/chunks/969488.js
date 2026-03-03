@@ -17,8 +17,8 @@ var l = n(627968),
     x = n(775602),
     g = n(355622),
     f = n(851023),
-    p = n(349688),
-    _ = n(915089),
+    _ = n(349688),
+    p = n(915089),
     j = n(607470),
     b = n(703007),
     v = n(218152),
@@ -31,7 +31,7 @@ let y = [{
         name: "Media Post Thumbnail",
         extensions: ["jpg", "jpeg", "png", "gif", "webp"]
     }],
-    E = (0, _.Ld)();
+    E = (0, p.Ld)();
 
 function I(e) {
     let {
@@ -71,19 +71,19 @@ let R = e => {
         return {
             textAreaState: t
         }
-    }, d.x), r = (0, c.bG)([x.A], () => x.A.keyboardModeEnabled), _ = (0, T.A)(t, s.textValue?.trim()), j = i.useMemo(() => _.find(e => e.isThumbnail), [_]), A = null != _ && _.length > 0, R = i.useMemo(() => {
-        let e = _?.length > 1 ? 1.15 : 1;
+    }, d.x), r = (0, c.bG)([x.A], () => x.A.keyboardModeEnabled), p = (0, T.A)(t, s.textValue?.trim()), j = i.useMemo(() => p.find(e => e.isThumbnail), [p]), A = null != p && p.length > 0, R = i.useMemo(() => {
+        let e = p?.length > 1 ? 1.15 : 1;
         return {
             width: 153 * e,
             height: 86 * e
         }
-    }, [_]), M = i.useCallback(e => {
+    }, [p]), M = i.useCallback(e => {
         null != j && h.A.remove(t.id, j.id, g.oU.CREATE_FORUM_POST.drafts.type), (0, C.R)(e.currentTarget.files, t, g.oU.CREATE_FORUM_POST.drafts.type, {
             requireConfirm: !0,
             isThumbnail: !0,
             origin: "file_picker"
         }), e.currentTarget.value = null
-    }, [t, j]), k = e => {
+    }, [t, j]), w = e => {
         e.stopPropagation(), j?.upload != null && (0, m.mMO)(async () => {
             let e = j.upload;
             o()(null != e, "upload should not be null");
@@ -110,7 +110,7 @@ let R = e => {
                 disableSpoiler: !0
             })
         })
-    }, w = (0, l.jsx)(b.A, {
+    }, k = (0, l.jsx)(b.A, {
         color: u.XD.CUSTOM,
         className: S.zL,
         innerClassName: S.Nr,
@@ -122,12 +122,12 @@ let R = e => {
         "aria-label": A ? N.intl.string(N.t.MxJI3f) : N.intl.string(N.t.Cbiofa),
         children: A ? (0, l.jsxs)(l.Fragment, {
             children: [(0, l.jsx)(I, {
-                mediaAttachments: _,
+                mediaAttachments: p,
                 containerWidth: R.width,
                 containerHeight: R.height
             }), (0, l.jsxs)("div", {
                 className: a()(S.On, {
-                    [S.bP]: _?.length > 2
+                    [S.bP]: p?.length > 2
                 }),
                 children: [(0, l.jsx)(m.Text, {
                     variant: "text-xs/medium",
@@ -156,12 +156,12 @@ let R = e => {
     return (0, l.jsx)("div", {
         className: S.iT,
         style: R,
-        children: null != j ? (0, l.jsx)(p.A, {
+        children: null != j ? (0, l.jsx)(_.A, {
             actions: (0, l.jsxs)(l.Fragment, {
                 children: [(0, l.jsx)(f.A, {
                     className: S.XI,
                     tooltip: N.intl.string(N.t.Y8ujqr),
-                    onClick: k,
+                    onClick: w,
                     children: (0, l.jsx)(m.R2l, {
                         size: "xs",
                         color: "currentColor"
@@ -180,11 +180,11 @@ let R = e => {
             draftType: g.oU.CREATE_FORUM_POST.drafts.type,
             id: j.id,
             channelId: t.id,
-            handleEditModal: k,
+            handleEditModal: w,
             keyboardModeEnabled: r,
-            size: p.L.SMALL,
+            size: _.L.SMALL,
             className: S.Xc,
-            children: w
-        }) : w
+            children: k
+        }) : k
     })
 }

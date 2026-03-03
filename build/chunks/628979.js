@@ -1,11 +1,11 @@
 /** chunk id: 628979, original params: e,t,s (module,exports,require) **/
 s.d(t, {
-    A: () => m
+    A: () => A
 });
 var r = s(627968),
     l = s(64700),
-    n = s(503698),
-    a = s.n(n),
+    a = s(503698),
+    n = s.n(a),
     o = s(311907),
     i = s(397927),
     c = s(773669),
@@ -15,16 +15,16 @@ var r = s(627968),
     p = s(758836),
     E = s(652215),
     S = s(985018),
-    A = s(450331);
+    h = s(450331);
 
-function m(e) {
+function A(e) {
     let {
         handleTransition: t,
         selectedTab: s,
-        isNarrow: n,
-        hasText: m
+        isNarrow: a,
+        hasText: A
     } = e, {
-        searchQuery: h,
+        searchQuery: m,
         onSetSearchQuery: f
     } = (0, b.v)(), [C, T] = l.useState(""), g = (0, d.uM)(), y = (0, o.bG)([c.default], () => c.default.locale), O = l.useRef(null), [L, x] = l.useState(!1);
     l.useEffect(() => {
@@ -33,10 +33,10 @@ function m(e) {
         }, 250);
         return () => clearTimeout(e)
     }, [C, f]), l.useEffect(() => {
-        T(h)
-    }, [h]), l.useEffect(() => {
-        x(n && m)
-    }, [n, m]);
+        T(m)
+    }, [m]), l.useEffect(() => {
+        x(a && A)
+    }, [a, A]);
     let R = l.useCallback(e => {
             "Enter" === e.key && f(C)
         }, [C, f]),
@@ -58,14 +58,14 @@ function m(e) {
             s !== p.G2.CATALOG && t(p.G2.CATALOG), N(p.uY.SEARCH_BAR)
         }, [s, t, N]),
         I = l.useCallback(() => {
-            T(""), f(""), N(p.uY.SEARCH_BAR_CLEAR), n && x(!1)
-        }, [f, N, n]),
+            T(""), f(""), N(p.uY.SEARCH_BAR_CLEAR), a && x(!1)
+        }, [f, N, a]),
         _ = l.useCallback(() => {
-            n && "" === C && x(!1)
-        }, [n, C]),
-        j = n && !L,
+            a && "" === C && x(!1)
+        }, [a, C]),
+        j = a && !L,
         F = (0, r.jsx)(i.DUT, {
-            className: A.qc,
+            className: h.qc,
             onClick: v,
             children: (0, r.jsx)(i.$p$, {
                 size: "sm",
@@ -90,8 +90,8 @@ function m(e) {
         style: k,
         children: F
     }) : (0, r.jsx)("div", {
-        className: a()(A.ON, {
-            [A.Nz]: L
+        className: n()(h.ON, {
+            [h.Nz]: L
         }),
         style: k,
         children: (0, r.jsx)(i.DUT, {

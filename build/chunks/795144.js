@@ -1,31 +1,32 @@
-/** chunk id: 795144, original params: n,e,t (module,exports,require) **/
-t.d(e, {
+/** chunk id: 795144, original params: n,t,e (module,exports,require) **/
+e.d(t, {
     A: () => c
 });
-var i = t(627968);
-t(64700);
-var r = t(311907),
-    l = t(397927),
-    a = t(967198),
-    d = t(652215),
-    s = t(985018);
+var i = e(627968);
+e(64700);
+var r = e(311907),
+    l = e(397927),
+    a = e(967198),
+    s = e(652215),
+    d = e(985018);
 
 function c(n) {
-    let e = (0, r.bG)([a.A], () => a.A.getGuildId());
-    return n.type, d.rbe.GUILD_CATEGORY, __OVERLAY__ || e !== d.YYv ? null : (0, i.jsx)(l.Drp, {
+    let t = (0, r.bG)([a.A], () => a.A.getGuildId()),
+        c = n.type === s.rbe.GUILD_CATEGORY;
+    return __OVERLAY__ || t !== s.YYv ? null : (0, i.jsx)(l.Drp, {
         id: "set-channel-nickname",
-        label: s.intl.string(s.t.dilOF6),
+        label: c ? d.intl.string(d.t.xXYKiP) : d.intl.string(d.t.dilOF6),
         action: function() {
             (0, l.mMO)(async () => {
                 let {
-                    default: e
-                } = await t.e("83504").then(t.bind(t, 872243));
-                return t => (0, i.jsx)(e, {
-                    ...t,
+                    default: t
+                } = await e.e("83504").then(e.bind(e, 872243));
+                return e => (0, i.jsx)(t, {
+                    ...e,
                     channelId: n.id,
-                    heading: s.intl.string(s.t.dilOF6),
-                    formTitle: s.intl.string(s.t["621LJD"]),
-                    allowReset: !0
+                    heading: c ? d.intl.string(d.t.xXYKiP) : d.intl.string(d.t.dilOF6),
+                    formTitle: c ? d.intl.string(d.t.OCAkGP) : d.intl.string(d.t["621LJD"]),
+                    allowReset: !1
                 })
             })
         }

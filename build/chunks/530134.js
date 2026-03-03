@@ -19,7 +19,7 @@ let m = i.memo(i.forwardRef(function(e, t) {
         className: m,
         onClick: h,
         channel: x
-    } = e, [g, f, p] = (0, d.RQ)(e => [e.activeView, e.activeViewType, e.activeChannelId], r.x), _ = i.useCallback(() => {
+    } = e, [g, f, _] = (0, d.RQ)(e => [e.activeView, e.activeViewType, e.activeChannelId], r.x), p = i.useCallback(() => {
         (0, d.ed)(s, x.id), h?.()
     }, [s, h, x.id]);
     return n ? null : (0, l.jsx)("div", {
@@ -27,8 +27,8 @@ let m = i.memo(i.forwardRef(function(e, t) {
         ref: t,
         children: (0, l.jsx)(o.A, {
             className: a()(u.Z8, m),
-            onClick: _,
-            active: (g === c.kx.GIF || g === c.kx.EMOJI || g === c.kx.STICKER) && f === s && p === x.id,
+            onClick: p,
+            active: (g === c.kx.GIF || g === c.kx.EMOJI || g === c.kx.STICKER) && f === s && _ === x.id,
             tabIndex: 0,
             focusProps: {
                 offset: {

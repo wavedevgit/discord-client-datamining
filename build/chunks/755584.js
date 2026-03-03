@@ -3,8 +3,8 @@
 a.d(t, {
     A: () => p
 });
-var r = a(110259),
-    n = a(933681),
+var n = a(110259),
+    r = a(933681),
     i = a(73153),
     o = a(568185),
     s = a(543465),
@@ -22,8 +22,8 @@ let p = {
             permissionOverwrites: f = [],
             bitrate: m,
             userLimit: h,
-            parentId: C,
-            skuId: g,
+            parentId: g,
+            skuId: C,
             branchId: b
         } = e;
         i.h.dispatch({
@@ -36,17 +36,17 @@ let p = {
             name: p,
             permission_overwrites: f
         };
-        if (null != m && m !== d.gp3 && (y.bitrate = m), null != h && h > 0 && (y.user_limit = h), null != C && (y.parent_id = C), a === d.rbe.GUILD_STORE) {
-            if (null == g) throw Error("Unexpected missing SKU");
-            y.sku_id = g, y.branch_id = b
+        if (null != m && m !== d.gp3 && (y.bitrate = m), null != h && h > 0 && (y.user_limit = h), null != g && (y.parent_id = g), a === d.rbe.GUILD_STORE) {
+            if (null == C) throw Error("Unexpected missing SKU");
+            y.sku_id = C, y.branch_id = b
         }
         return c.A.post({
             url: d.Rsh.GUILD_CHANNELS(t),
             body: y,
             oldFormErrors: !0,
             trackedActionData: {
-                event: r.NetworkActionNames.CHANNEL_CREATE,
-                properties: e => (0, n.e0)({
+                event: n.NetworkActionNames.CHANNEL_CREATE,
+                properties: e => (0, r.e0)({
                     is_private: f.length > 0,
                     channel_id: e?.body?.id,
                     channel_type: e?.body?.type
@@ -71,8 +71,8 @@ let p = {
         },
         oldFormErrors: !0,
         trackedActionData: {
-            event: r.NetworkActionNames.CHANNEL_CREATE,
-            properties: e => (0, n.e0)({
+            event: n.NetworkActionNames.CHANNEL_CREATE,
+            properties: e => (0, r.e0)({
                 is_private: !0,
                 channel_id: e?.body?.id,
                 channel_type: e?.body?.type

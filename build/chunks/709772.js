@@ -3,9 +3,9 @@
 a.d(t, {
     a: () => s
 });
-var r = a(627968);
+var n = a(627968);
 a(64700);
-var n = a(342393),
+var r = a(342393),
     i = a(71532),
     o = a(714126);
 let s = e => {
@@ -14,9 +14,9 @@ let s = e => {
         children: a,
         elementOptions: s
     } = e, l = Date.now();
-    return (0, r.jsx)(o.W, {
+    return (0, n.jsx)(o.W, {
         label: t,
-        children: (0, r.jsx)(n.Elements, {
+        children: (0, n.jsx)(r.Elements, {
             stripe: (0, i.Cv)(),
             options: {
                 mode: "setup",

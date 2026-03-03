@@ -25,8 +25,8 @@ function x(e) {
         layoutType: g,
         tagSetting: f
     } = (0, d.R)(t.id), {
-        showResolvedFlags: p,
-        setShowResolvedFlags: _
+        showResolvedFlags: _,
+        setShowResolvedFlags: p
     } = (0, o.T)(t.id), j = (0, d.p)(), b = t.isMediaChannel(), v = e => {
         (0, c.Cd)({
             guildId: t.guild_id,
@@ -71,8 +71,8 @@ function x(e) {
                 children: (0, l.jsx)(r.sLh, {
                     id: "resolved-flags-none",
                     label: u.intl.string(u.t.XJuakA),
-                    action: () => _(!p),
-                    checked: p
+                    action: () => p(!_),
+                    checked: _
                 })
             }), t.isMediaChannel() || t.isModeratorReportChannel() ? null : (0, l.jsxs)(r.rXV, {
                 label: u.intl.string(u.t.mFMDSq),

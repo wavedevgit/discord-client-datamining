@@ -4,8 +4,8 @@ s.d(t, {
 });
 var r = s(627968),
     l = s(64700),
-    n = s(696292),
-    a = s(311907),
+    a = s(696292),
+    n = s(311907),
     o = s(397927),
     i = s(770178),
     c = s(742589),
@@ -15,9 +15,9 @@ var r = s(627968),
     p = s(151252),
     E = s(142270),
     S = s(287809),
-    A = s(365491),
-    m = s(628979),
-    h = s(494573),
+    h = s(365491),
+    A = s(628979),
+    m = s(494573),
     f = s(758836),
     C = s(652215);
 s(801416);
@@ -29,13 +29,13 @@ function O(e) {
     let {
         selectedTab: t,
         handleTransition: s
-    } = e, O = (0, a.bG)([S.default], () => S.default.getCurrentUser()), {
+    } = e, O = (0, n.bG)([S.default], () => S.default.getCurrentUser()), {
         enabled: L
     } = (0, p.Z)({
         location: "collectibles_shop_header_bar"
     }), {
         searchQuery: x
-    } = (0, A.v)(), R = l.useRef(null), [N, v] = l.useState(!1);
+    } = (0, h.v)(), R = l.useRef(null), [N, v] = l.useState(!1);
     (0, i.g)(R, l.useCallback(e => {
         v(e.contentRect.width < 800)
     }, []));
@@ -57,7 +57,7 @@ function O(e) {
                 sectionType: C.JJy.ORBS_BALANCE_MENU,
                 ctaObject: C.ZSU.CTA_TO_QUEST_HOME
             }), (0, u.navigateToQuestHome)({
-                fromContent: n.u.ORBS_BALANCE_MENU
+                fromContent: a.u.ORBS_BALANCE_MENU
             })
         }, [I]),
         j = l.useCallback(() => {
@@ -76,7 +76,7 @@ function O(e) {
             disableDoubleClick: !0,
             className: y.jr,
             toolbar: (0, r.jsxs)(r.Fragment, {
-                children: [(0, r.jsx)(m.A, {
+                children: [(0, r.jsx)(A.A, {
                     handleTransition: s,
                     selectedTab: t,
                     isNarrow: N,
@@ -96,6 +96,8 @@ function O(e) {
                     ctaOnClick: _
                 })]
             }),
+            hideForLater: !0,
+            hideSearch: !0,
             children: [(0, r.jsx)(o.DUT, {
                 className: y.sU,
                 onClick: () => s(f.G2.HOME),
@@ -104,7 +106,7 @@ function O(e) {
                     size: "md",
                     color: o.LU0.colors.TEXT_DEFAULT
                 })
-            }), (0, r.jsx)(h.A, {
+            }), (0, r.jsx)(m.A, {
                 tabs: G,
                 selectedTab: t,
                 onTabSelect: F

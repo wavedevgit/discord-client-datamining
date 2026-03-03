@@ -1,7 +1,7 @@
 /** chunk id: 302487, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => k,
+    A: () => w,
     h: () => P
 });
 var l = n(627968),
@@ -18,8 +18,8 @@ var l = n(627968),
     x = n(817363),
     g = n(775602),
     f = n(355622),
-    p = n(349688),
-    _ = n(914905),
+    _ = n(349688),
+    p = n(914905),
     j = n(734057),
     b = n(31717),
     v = n(522602),
@@ -50,7 +50,7 @@ let S = {
         inline: "nearest"
     };
 
-function k(e) {
+function w(e) {
     let {
         channelId: t,
         onClick: n,
@@ -90,7 +90,7 @@ function k(e) {
     })
 }
 
-function w(e) {
+function k(e) {
     let {
         channelId: t,
         closePopout: n
@@ -133,13 +133,13 @@ function w(e) {
                             className: N.p8,
                             ref: n,
                             ...i,
-                            children: [b.map(e => (0, l.jsx)(_.A, {
+                            children: [b.map(e => (0, l.jsx)(p.A, {
                                 channelId: t,
                                 draftType: f.oU.CREATE_FORUM_POST.drafts.type,
                                 upload: e,
                                 keyboardModeEnabled: j,
                                 hideFileName: !0,
-                                size: p.L.SMALL
+                                size: _.L.SMALL
                             }, e.id)), (0, l.jsx)(L, {
                                 channelId: t,
                                 setFileInputOpen: a
@@ -160,7 +160,7 @@ function L(e) {
         ...(0, d.rm)("upload-button"),
         tabIndex: 0
     };
-    return (0, l.jsx)(k, {
+    return (0, l.jsx)(w, {
         channelId: t,
         onClick: () => {
             n(!0)
@@ -213,17 +213,17 @@ function P(e) {
                 })
             },
             onMouseEnter: c,
-            children: [(0, l.jsx)(_.J, {
+            children: [(0, l.jsx)(p.J, {
                 upload: r[0],
-                size: p.L.SMALL
+                size: _.L.SMALL
             }), (0, l.jsx)("div", {
                 className: N.qS,
                 children: o
             })]
-        }) : (0, l.jsx)(k, {
+        }) : (0, l.jsx)(w, {
             onMouseEnter: c,
             channelId: t
-        }), n && (0, l.jsx)(w, {
+        }), n && (0, l.jsx)(k, {
             channelId: t,
             closePopout: u
         })]

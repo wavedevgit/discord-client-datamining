@@ -8,8 +8,8 @@ var l = e(397927),
     r = e(442433),
     a = e(847767),
     d = e(358367),
-    u = e(468389),
-    s = e(793574),
+    s = e(468389),
+    u = e(793574),
     o = e(50268),
     c = e(133238),
     A = e(795144),
@@ -25,10 +25,10 @@ let O = (0, d.A)((0, a.A)(function(t) {
         channel: n,
         selected: a,
         onSelect: d
-    } = t, _ = n.isOwner(h.default.getId()), O = (0, b.A)(n), p = (0, m.Ay)(n), C = (0, f.A)(n, a), y = (0, o.A)({
+    } = t, _ = n.isOwner(h.default.getId()), O = (0, b.A)(n), p = (0, m.Ay)(n), C = (0, f.A)(n, a), x = (0, o.A)({
         id: n.id,
         label: v.intl.string(v.t.gFHI3k)
-    }), G = (0, u.A)(n), x = (0, c.m)(n), j = (0, c.y)(n), T = (0, A.A)(n), M = _ ? (0, i.jsx)(l.Drp, {
+    }), y = (0, s.A)(n), G = (0, c.m)(n), j = (0, c.y)(n), T = (0, A.A)(n), M = _ ? (0, i.jsx)(l.Drp, {
         id: "instant-invites",
         label: v.intl.string(v.t.ngRFjZ),
         action: () => (0, l.mMO)(async () => {
@@ -48,23 +48,23 @@ let O = (0, d.A)((0, a.A)(function(t) {
         onClose: r.Z_,
         onSelect: d,
         children: [(0, i.jsxs)(l.rXV, {
-            children: [O, x, T]
+            children: [O, G, T]
         }), (0, i.jsxs)(l.rXV, {
             children: [M, (0, i.jsx)(l.Drp, {
                 id: "edit-gdm",
                 label: v.intl.string(v.t["5Q9+/L"]),
-                action: () => (0, g.U)(n.id, s.A.GROUP_DM_CONTEXT_MENU)
+                action: () => (0, g.U)(n.id, u.A.GROUP_DM_CONTEXT_MENU)
             })]
         }), (0, i.jsx)(l.rXV, {
-            children: G
+            children: y
         }), (0, i.jsx)(l.rXV, {
             children: p
         }), (0, i.jsxs)(l.rXV, {
             children: [j, C]
         }), (0, i.jsx)(l.rXV, {
-            children: y
+            children: x
         })]
     })
 }, {
     object: _.ZSU.CONTEXT_MENU
-}), [s.A.CONTEXT_MENU, s.A.GROUP_DM_MENU])
+}), [u.A.CONTEXT_MENU, u.A.GROUP_DM_MENU])

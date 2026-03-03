@@ -17,8 +17,8 @@ var l = n(627968),
     x = n(919577),
     g = n(892110),
     f = n(251766),
-    p = n(997509),
-    _ = n(71393),
+    _ = n(997509),
+    p = n(71393),
     j = n(975571),
     b = n(305182),
     v = n(652215),
@@ -125,29 +125,29 @@ function I(e) {
 let R = e => {
     let {
         channel: t
-    } = e, n = (0, u.Ay)(), s = (0, d.Mw)(n), m = (0, o.bG)([_.A], () => _.A.getGuild(t.guild_id)), R = (0, o.bG)([h.A], () => h.A.hasHidden(t.id)), M = (0, f.e)({
+    } = e, n = (0, u.Ay)(), s = (0, d.Mw)(n), m = (0, o.bG)([p.A], () => p.A.getGuild(t.guild_id)), R = (0, o.bG)([h.A], () => h.A.hasHidden(t.id)), M = (0, f.e)({
         guildId: t.guild_id,
         channelId: t.id
     }), {
-        transitions: k,
-        setVisible: w
+        transitions: w,
+        setVisible: k
     } = (0, b.V)(), L = i.useCallback(() => {
-        w(!1), x.A.hideAdminOnboarding(t.id, !0)
-    }, [t, w]);
+        k(!1), x.A.hideAdminOnboarding(t.id, !0)
+    }, [t, k]);
     i.useEffect(() => {
-        (0, g.l)(t.id) || w(!R)
-    }, [t, w, R]);
+        (0, g.l)(t.id) || k(!R)
+    }, [t, k, R]);
     let P = i.useMemo(() => [A.intl.string(A.t["8pEGAw"]), A.intl.string(A.t.jwfgDd), A.intl.string(A.t.mPKs27), A.intl.string(A.t.StRbvG)], []),
         D = i.useMemo(() => [A.intl.string(A.t["m/b58M"]), A.intl.string(A.t.MuJSKw), A.intl.string(A.t["d/Wqvu"]), A.intl.string(A.t.GJklAw)], []),
         O = () => {
-            p.A.open(t.guild_id, v.BEX.ROLE_SUBSCRIPTIONS)
+            _.A.open(t.guild_id, v.BEX.ROLE_SUBSCRIPTIONS)
         },
         F = m?.features.has(v.GuildFeatures.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE) ? A.intl.string(A.t.n0q7sI) : A.intl.string(A.t.QoYdie),
         U = (m?.features.has(v.GuildFeatures.CREATOR_MONETIZABLE) || m?.features.has(v.GuildFeatures.CREATOR_MONETIZABLE_PROVISIONAL)) ?? !1,
         G = U ? A.intl.string(A.t["G/7ciZ"]) : A.intl.string(A.t.IFOiit),
         z = U ? A.intl.string(A.t.GjgQO1) : A.intl.string(A.t.E7AO6t);
     return (0, l.jsx)(l.Fragment, {
-        children: k((e, t) => t ? (0, l.jsxs)(r.animated.div, {
+        children: w((e, t) => t ? (0, l.jsxs)(r.animated.div, {
             style: e,
             className: C.kL,
             children: [(0, l.jsxs)("div", {

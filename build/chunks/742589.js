@@ -39,11 +39,12 @@ function _(e) {
         scrollable: O,
         role: f,
         hideSearch: T,
-        showDivider: I,
-        disableDoubleClick: R
+        hideForLater: I,
+        showDivider: R,
+        disableDoubleClick: v
     } = e, {
-        enabled: v,
-        inInbox: N
+        enabled: N,
+        inInbox: S
     } = a.A.useExperiment({
         location: "HeaderBar"
     });
@@ -58,12 +59,12 @@ function _(e) {
                     guildId: s,
                     channelId: l,
                     className: E.$P
-                }, s ?? l) : null, I && (0, i.jsx)(h.Ay.Divider, {}), v && !N ? (0, i.jsx)(o.A, {}) : null]
+                }, s ?? l) : null, R && (0, i.jsx)(h.Ay.Divider, {}), I || !N || S ? null : (0, i.jsx)(o.A, {})]
             })
         }(),
         transparent: u,
         hidden: _,
-        onDoubleClick: () => A(R),
+        onDoubleClick: () => A(v),
         "aria-label": m,
         "aria-labelledby": L,
         role: f,

@@ -5,8 +5,8 @@ t.d(i, {
 var n = t(627968);
 t(64700);
 var r = t(937008),
-    a = t(310250),
-    s = t(672525),
+    s = t(310250),
+    a = t(672525),
     l = t(802246),
     o = t(788868),
     d = t(751690);
@@ -18,17 +18,17 @@ let c = function(e) {
         onWishlistItemClick: _
     } = e, {
         claimableRewards: u
-    } = (0, r.Pv)(), m = null != u && u.length > 0, p = (0, a.T)("Select Gift Option");
+    } = (0, r.Pv)(), m = null != u && u.length > 0, p = (0, s.T)("Select Gift Option");
     return (0, n.jsxs)("div", {
         className: d.H,
         children: [(0, n.jsxs)("div", {
             className: d.u,
-            children: [(0, n.jsx)(s.D3, {
+            children: [(0, n.jsx)(a.D3, {
                 onClick: () => i(o.pe.TIER_2),
                 isGift: !0,
                 priceOptions: t,
                 showPromotionalGiftBanner: m
-            }), (0, n.jsx)(s.Ls, {
+            }), (0, n.jsx)(a.Ls, {
                 onClick: () => i(o.pe.TIER_0),
                 isGift: !0,
                 priceOptions: t,

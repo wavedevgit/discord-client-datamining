@@ -21,7 +21,7 @@ function x(e) {
         guildId: x,
         tagFilter: g,
         channel: f
-    } = e, p = (0, d.S4)(f), _ = (0, r.AI)(f), j = f.isMediaChannel(), b = i.useCallback(() => {
+    } = e, _ = (0, d.S4)(f), p = (0, r.AI)(f), j = f.isMediaChannel(), b = i.useCallback(() => {
         (0, c.zd)(), (0, a.mMO)(async () => {
             let {
                 default: e
@@ -31,7 +31,7 @@ function x(e) {
                 guildId: x
             })
         })
-    }, [x]), v = g.size > 0, A = _ || p, C = !v && p && !j, T = i.useCallback(() => C ? b() : _ ? void o._.dispatch(u.jej.FOCUS_COMPOSER_TITLE) : (0, u.FXj)(), [b, C, _]);
+    }, [x]), v = g.size > 0, A = p || _, C = !v && _ && !j, T = i.useCallback(() => C ? b() : p ? void o._.dispatch(u.jej.FOCUS_COMPOSER_TITLE) : (0, u.FXj)(), [b, C, p]);
     return (0, l.jsxs)("div", {
         className: h.k,
         children: [(0, l.jsx)(a.Heading, {

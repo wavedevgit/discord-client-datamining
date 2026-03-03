@@ -1,7 +1,7 @@
 /** chunk id: 696583, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => _
+    A: () => p
 });
 var l = n(627968),
     i = n(64700),
@@ -17,12 +17,12 @@ var l = n(627968),
     x = n(652215),
     g = n(985018),
     f = n(40211),
-    p = n(206314);
-let _ = i.memo(function(e) {
+    _ = n(206314);
+let p = i.memo(function(e) {
     let {
         channel: t,
         onChange: s
-    } = e, _ = (0, h.ST)(), {
+    } = e, p = (0, h.ST)(), {
         guidelinesOpen: j
     } = (0, h.kU)(e => {
         let {
@@ -77,7 +77,7 @@ let _ = i.memo(function(e) {
                     "aria-label": g.intl.string(g.t.cpT0Cq),
                     className: f.vk,
                     onClick: () => {
-                        _.getState().setGuidelinesOpen(!1)
+                        p.getState().setGuidelinesOpen(!1)
                     },
                     children: (0, l.jsx)(d.PGe, {
                         size: "xs",
@@ -93,7 +93,7 @@ let _ = i.memo(function(e) {
                     style: {
                         maxHeight: 220
                     },
-                    className: a()(f.I4, p.PT),
+                    className: a()(f.I4, _.PT),
                     children: (0, l.jsx)("div", {
                         ref: C,
                         children: u.A.parseForumPostGuidelines(t.topic, !0, {

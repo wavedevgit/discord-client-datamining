@@ -17,8 +17,8 @@ var l = n(627968),
     x = n(990078),
     g = n(397927),
     f = n(147192),
-    p = n(765671),
-    _ = n(104171),
+    _ = n(765671),
+    p = n(104171),
     j = n(935649),
     b = n(847599),
     v = n(114166),
@@ -32,8 +32,8 @@ var l = n(627968),
     I = n(710948),
     R = n(218152),
     M = n(52933),
-    k = n(504261),
-    w = n(505234),
+    w = n(504261),
+    k = n(505234),
     L = n(387408),
     P = n(77350),
     D = n(294520),
@@ -73,7 +73,7 @@ let eo = i.memo(function(e) {
         channel: c,
         isOpen: x,
         messageCount: f,
-        content: _,
+        content: p,
         firstMessage: j,
         media: b
     } = function(e) {
@@ -142,7 +142,7 @@ let eo = i.memo(function(e) {
         {
             ref: A,
             height: C
-        } = (0, p.Ay)(),
+        } = (0, _.Ay)(),
         T = (0, R.kU)(e => e.setCardHeight, u.x);
     i.useEffect(() => {
         null != C && T(t, C)
@@ -153,7 +153,7 @@ let eo = i.memo(function(e) {
         {
             handleLeftClick: I,
             handleRightClick: M
-        } = (0, w.A)({
+        } = (0, k.A)({
             facepileRef: E,
             goToThread: n,
             channel: c
@@ -167,7 +167,7 @@ let eo = i.memo(function(e) {
             isFocused: F,
             handleFocus: G,
             handleBlur: z
-        } = (0, k.A)(D);
+        } = (0, w.A)(D);
     return (0, l.jsxs)("div", {
         ref: A,
         "data-item-id": t,
@@ -198,10 +198,10 @@ let eo = i.memo(function(e) {
                     children: [(0, l.jsx)(ed, {
                         channel: c,
                         firstMessage: j,
-                        content: _,
+                        content: p,
                         hasMediaAttachment: null != b,
                         originalAuthor: v
-                    }), j?.blocked || null == b ? null : (0, l.jsx)(ep, {
+                    }), j?.blocked || null == b ? null : (0, l.jsx)(e_, {
                         channel: c,
                         firstMedia: b
                     })]
@@ -263,7 +263,7 @@ let ec = i.memo(function(e) {
         leadingIconClass: ea.aG,
         trailingIconClass: ea.sl,
         iconSize: el.eJ
-    }), p = null != f ? (0, l.jsx)(g.Text, {
+    }), _ = null != f ? (0, l.jsx)(g.Text, {
         variant: "text-md/normal",
         children: f
     }) : s ? null : (0, l.jsx)(g.Text, {
@@ -289,7 +289,7 @@ let ec = i.memo(function(e) {
                 message: t
             }), (0, l.jsx)(g.M1G, {
                 className: ea.JY,
-                children: p
+                children: _
             })]
         })]
     })
@@ -448,7 +448,7 @@ function eg(e) {
     } = e, s = (0, N.$I)(t, n);
     return (0, l.jsx)("div", {
         ref: i,
-        children: (0, l.jsx)(_.Ay, {
+        children: (0, l.jsx)(p.Ay, {
             className: ea.__invalid_facepile,
             showDefaultAvatarsForNullUsers: !0,
             guildId: t.guild_id,
@@ -475,16 +475,16 @@ function ef(e) {
         {
             src: x,
             width: f,
-            height: p,
-            alt: _
+            height: _,
+            alt: p
         } = i;
-    return (p > f ? n = 72 : t = 72, o) ? (0, l.jsx)("div", {
-        "aria-label": m ?? _ ?? ei.intl.string(ei.t.hqwnc2),
+    return (_ > f ? n = 72 : t = 72, o) ? (0, l.jsx)("div", {
+        "aria-label": m ?? p ?? ei.intl.string(ei.t.hqwnc2),
         className: a()(ea.iT, ea.nh),
         style: {
             maxWidth: t,
             maxHeight: n,
-            height: p,
+            height: _,
             width: f
         }
     }) : x.startsWith("data:") ? (0, l.jsx)(g._V3, {
@@ -492,8 +492,8 @@ function ef(e) {
         maxHeight: t,
         maxWidth: n,
         width: f,
-        height: p,
-        alt: null != _ && s ? m : _,
+        height: _,
+        alt: null != p && s ? m : p,
         className: ea.iT,
         imageClassName: a()({
             [ea.cd]: s,
@@ -504,8 +504,8 @@ function ef(e) {
         maxHeight: t,
         maxWidth: n,
         width: f,
-        height: p,
-        alt: null != _ && s ? m : _,
+        height: _,
+        alt: null != p && s ? m : p,
         autoPlay: u,
         animated: c && !s && d,
         srcIsAnimated: i.srcIsAnimated,
@@ -517,7 +517,7 @@ function ef(e) {
     })
 }
 
-function ep(e) {
+function e_(e) {
     let {
         channel: t,
         firstMedia: n

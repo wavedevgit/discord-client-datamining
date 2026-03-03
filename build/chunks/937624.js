@@ -1,19 +1,19 @@
-/** chunk id: 937624, original params: n,e,t (module,exports,require) **/
-t.d(e, {
+/** chunk id: 937624, original params: n,t,e (module,exports,require) **/
+e.d(t, {
     P: () => s
 });
-var i = t(311907),
-    r = t(287809),
-    l = t(349435),
-    a = t(617641),
-    d = t(452082);
+var i = e(311907),
+    r = e(287809),
+    l = e(349435),
+    a = e(617641),
+    d = e(452082);
 let s = n => {
-    let e = (0, a.Lc)({
+    let t = (0, a.Lc)({
             location: "context-menu-item"
         }),
-        t = (0, i.bG)([r.default], () => r.default.getCurrentUser()),
+        e = (0, i.bG)([r.default], () => r.default.getCurrentUser()),
         s = (0, d.j)(n.id, "context-menu-item");
-    return t?.isStaff() === !0 && e && n.isDM() ? {
+    return e?.isStaff() === !0 && t && n.isDM() ? {
         isTier1: s?.type === l._j.INAPPROPRIATE_CONVERSATION_TIER_1,
         isTier2: s?.type === l._j.INAPPROPRIATE_CONVERSATION_TIER_2
     } : null

@@ -4,8 +4,8 @@ t.d(i, {
 });
 var n = t(627968),
     r = t(64700),
-    a = t(397927),
-    s = t(937008),
+    s = t(397927),
+    a = t(937008),
     l = t(156312),
     o = t(532794),
     d = t(232516),
@@ -18,7 +18,7 @@ function p(e) {
     let {
         giftRecipient: i,
         onClose: t,
-        transitionState: s,
+        transitionState: a,
         analyticsLocations: p,
         analyticsLocation: f,
         analyticsObject: h,
@@ -42,27 +42,27 @@ function p(e) {
             giftMessage: g
         }), t()
     }, [i, p, f, h, g, t]);
-    return (0, n.jsxs)(a.EOs, {
-        transitionState: s,
-        size: a.rIJ.DYNAMIC,
+    return (0, n.jsxs)(s.EOs, {
+        transitionState: a,
+        size: s.rIJ.DYNAMIC,
         className: m.jT,
         parentComponent: "GiftOptionSelectModal",
         "data-migration-pending": !0,
-        children: [(0, n.jsx)(a.rQ0, {
+        children: [(0, n.jsx)(s.rQ0, {
             className: m.Hc,
             "data-migration-pending": !0,
-            children: (0, n.jsxs)(a.BJc, {
+            children: (0, n.jsxs)(s.BJc, {
                 direction: "horizontal",
                 justify: "space-between",
-                children: [(0, n.jsx)(a.Heading, {
+                children: [(0, n.jsx)(s.Heading, {
                     variant: "heading-md/semibold",
                     children: u.intl.string(u.t["wg/30i"])
-                }), (0, n.jsx)(a.s_y, {
+                }), (0, n.jsx)(s.s_y, {
                     onClick: t,
                     "data-migration-pending": !0
                 })]
             })
-        }), (0, n.jsx)(a.$mQ, {
+        }), (0, n.jsx)(s.$mQ, {
             className: m.S3,
             "data-migration-pending": !0,
             children: (0, n.jsx)(d.A, {
@@ -80,7 +80,7 @@ function f(e) {
         giftRecipient: i,
         onClose: t,
         transitionState: r,
-        analyticsLocations: a,
+        analyticsLocations: s,
         analyticsLocation: o,
         analyticsObject: d,
         giftMessage: _
@@ -90,7 +90,7 @@ function f(e) {
         stepConfigs: [],
         skuIDs: c.T7,
         isGift: !0,
-        children: (0, n.jsx)(s.dX, {
+        children: (0, n.jsx)(a.dX, {
             isGift: !0,
             giftRecipient: i,
             giftingOrigin: c.vQ.DM_CHANNEL,
@@ -98,7 +98,7 @@ function f(e) {
                 giftRecipient: i,
                 onClose: t,
                 transitionState: r,
-                analyticsLocations: a,
+                analyticsLocations: s,
                 analyticsLocation: o,
                 analyticsObject: d,
                 giftMessage: _

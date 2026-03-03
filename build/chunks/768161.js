@@ -1,6 +1,6 @@
 /** chunk id: 768161, original params: t,e,l (module,exports,require) **/
 l.d(e, {
-    default: () => S
+    default: () => I
 });
 var n = l(627968),
     a = l(64700),
@@ -9,29 +9,31 @@ var n = l(627968),
     r = l(311907),
     u = l(732955),
     o = l(397927),
-    c = l(384904),
-    d = l(500380),
+    d = l(384904),
+    c = l(500380),
     h = l(518977),
-    p = l(615405),
-    C = l(295405),
-    g = l(99696),
-    y = l(818348),
+    C = l(615405),
+    p = l(295405),
+    g = l(954571),
+    f = l(99696),
+    y = l(652215),
+    E = l(818348),
     m = l(985018),
-    f = l(615305);
+    _ = l(615305);
 let b = i.A.filter(t => s.M.EU_COUNTRIES.has(t.alpha2)).map(t => ({
     id: t.alpha2,
     value: t.alpha2,
     label: (0, h.Gw)(t.alpha2),
     leading: (0, n.jsx)("img", {
         alt: "",
-        src: (0, d.t)(t.alpha2),
+        src: (0, c.t)(t.alpha2),
         style: {
             height: 18
         }
     })
 }));
 
-function x(t) {
+function A(t) {
     let {
         codeInput: e,
         isEU: l,
@@ -40,15 +42,15 @@ function x(t) {
         redemptionError: s,
         onCodeInputChange: r,
         onPostalCodeChange: u,
-        onBillingCountryChange: c
+        onBillingCountryChange: d
     } = t;
     return (0, n.jsxs)("div", {
-        className: f.Cl,
+        className: _.Cl,
         children: [null != s && (0, n.jsx)(o.wx6, {
             type: "critical",
             children: s
         }), (0, n.jsx)("span", {
-            className: f.ZY,
+            className: _.ZY,
             children: (0, n.jsx)(o.ksK, {
                 label: m.intl.string(m.t["3Ujv7z"]),
                 type: "text",
@@ -62,7 +64,7 @@ function x(t) {
             label: m.intl.string(m.t.eDdrAD),
             placeholder: m.intl.string(m.t.eDdrAD),
             value: i,
-            onSelectionChange: c,
+            onSelectionChange: d,
             options: b
         }) : (0, n.jsx)(o.ksK, {
             label: m.intl.string(m.t.mfpJ9m),
@@ -75,93 +77,107 @@ function x(t) {
     })
 }
 
-function S(t) {
+function I(t) {
     let {
         transitionState: e,
         onClose: l,
         onComplete: i,
         initialCode: o = "",
-        withRedemptionSuccessModal: b = !1
-    } = t, [S, E] = a.useState(o), [v, j] = a.useState(!1), [k, A] = a.useState(""), [I, _] = a.useState(null), [U, N] = a.useState(null), [M, w] = a.useState(null), [T, P] = a.useState(!1), {
-        savedPostalCode: z,
-        savedCountry: D,
-        hasFetchedPaymentSources: F,
-        ipCountryCode: O
-    } = (0, r.cf)([C.A, p.A], () => {
-        let t = C.A.defaultPaymentSource;
+        withRedemptionSuccessModal: b = !1,
+        source: I,
+        loadId: x
+    } = t, [S, k] = a.useState(o), [T, v] = a.useState(!1), [j, D] = a.useState(""), [M, N] = a.useState(null), [R, U] = a.useState(null), [w, P] = a.useState(null), [F, O] = a.useState(!1), {
+        savedPostalCode: L,
+        savedCountry: z,
+        hasFetchedPaymentSources: G,
+        ipCountryCode: H
+    } = (0, r.cf)([p.A, C.A], () => {
+        let t = p.A.defaultPaymentSource;
         return {
             savedPostalCode: t?.billingAddress.postalCode ?? null,
             savedCountry: t?.billingAddress.country ?? null,
-            hasFetchedPaymentSources: C.A.hasFetchedPaymentSources,
-            ipCountryCode: p.A.ipCountryCode ?? null
+            hasFetchedPaymentSources: p.A.hasFetchedPaymentSources,
+            ipCountryCode: C.A.ipCountryCode ?? null
         }
     });
     a.useEffect(() => {
-        F || (0, c.$o)(), (0, g.IK)().then(w), (0, c.xe)()
-    }, [F]);
-    let R = M?.country ?? null;
+        G || (0, d.$o)(), (0, f.IK)().then(P), (0, d.xe)()
+    }, [G]), a.useEffect(() => {
+        g.default.track(y.HAw.GIFT_CARD_REDEMPTION_START, {
+            source: I,
+            load_id: x
+        })
+    }, [I, x]);
+    let W = w?.country ?? null;
     a.useEffect(() => {
-        "" === k && null != z && A(z)
-    }, [z, k]), a.useEffect(() => {
-        let t = M?.country ?? null;
-        null != t ? P(s.M.EU_COUNTRIES.has(t)) : null != D ? P(s.M.EU_COUNTRIES.has(D)) : null != O ? P(s.M.EU_COUNTRIES.has(O)) : P(!1)
-    }, [O, D, M]);
-    let L = m.intl.string(m.t.ToslbL),
-        W = a.useMemo(() => {
-            if (null != R) return {
-                text: (0, h.Gw)(R),
+        "" === j && null != L && D(L)
+    }, [L, j]), a.useEffect(() => {
+        let t = w?.country ?? null;
+        null != t ? O(s.M.EU_COUNTRIES.has(t)) : null != z ? O(s.M.EU_COUNTRIES.has(z)) : null != H ? O(s.M.EU_COUNTRIES.has(H)) : O(!1)
+    }, [H, z, w]);
+    let B = m.intl.string(m.t.ToslbL),
+        K = a.useMemo(() => {
+            if (null != W) return {
+                text: (0, h.Gw)(W),
                 leadingIcon: () => (0, n.jsx)("img", {
                     alt: "",
-                    src: (0, d.t)(R),
-                    className: f.IM
+                    src: (0, c.t)(W),
+                    className: _.IM
                 })
             }
-        }, [R]),
-        B = a.useCallback(t => {
-            E(t), N(null)
+        }, [W]),
+        Y = a.useCallback(t => {
+            k(t), U(null)
         }, []),
-        K = a.useCallback(async () => {
+        Z = a.useCallback(async () => {
             let t = S.trim();
-            if ("" === t) return void N(m.intl.string(m.t.j8734b));
-            if (T && null == I) return void N(m.intl.string(m.t["+bm+zE"]));
-            j(!0), N(null);
+            if ("" === t) return void U(m.intl.string(m.t.j8734b));
+            if (F && null == M) return void U(m.intl.string(m.t["+bm+zE"]));
+            v(!0), U(null);
             try {
-                let e = await (0, g.Ng)(t, T ? void 0 : k.trim());
-                i?.(), l(), b && (0, g.cV)({
+                let e = await (0, f.Ng)(t, F ? void 0 : j.trim());
+                i?.(), l(), g.default.track(y.HAw.GIFT_CARD_REDEMPTION_COMPLETED, {
+                    source: I,
+                    load_id: x
+                }), b && (0, f.cV)({
                     amountRedeemed: e.amount,
-                    currencyCode: e.currency
-                }), (0, c.$o)().then(t => {
-                    let e = (t?.body ?? []).find(t => t.type === y.he.TDS_WALLET);
-                    null != e && (0, c.YP)(e.id)
+                    currencyCode: e.currency,
+                    loadId: x
+                }), (0, d.$o)().then(t => {
+                    let e = (t?.body ?? []).find(t => t.type === E.he.TDS_WALLET);
+                    null != e && (0, d.YP)(e.id)
                 })
             } catch (e) {
                 let t = e?.body;
-                N(t?.errors?.postal_code != null || t?.postal_code != null ? m.intl.string(m.t.e2zhgU) : m.intl.string(m.t.OBnXjv));
+                U(t?.errors?.postal_code != null || t?.postal_code != null ? m.intl.string(m.t.e2zhgU) : m.intl.string(m.t.OBnXjv)), g.default.track(y.HAw.GIFT_CARD_REDEMPTION_FAILED, {
+                    source: I,
+                    load_id: x
+                });
                 return
             } finally {
-                j(!1)
+                v(!1)
             }
-        }, [S, T, I, k, i, l, b]),
-        Y = a.useCallback(t => {
-            A(t), N(null)
+        }, [S, F, M, j, i, l, b, I, x]),
+        V = a.useCallback(t => {
+            D(t), U(null)
         }, []),
-        Z = a.useCallback(t => {
-            _(t), N(null)
+        X = a.useCallback(t => {
+            N(t), U(null)
         }, []);
     return (0, n.jsx)(u.aFV, {
         transitionState: e,
         onClose: l,
-        title: L,
-        subtitle: W,
-        input: (0, n.jsx)(x, {
+        title: B,
+        subtitle: K,
+        input: (0, n.jsx)(A, {
             codeInput: S,
-            isEU: T,
-            postalCodeInput: k,
-            selectedBillingCountry: I,
-            redemptionError: U,
-            onCodeInputChange: B,
-            onPostalCodeChange: Y,
-            onBillingCountryChange: Z
+            isEU: F,
+            postalCodeInput: j,
+            selectedBillingCountry: M,
+            redemptionError: R,
+            onCodeInputChange: Y,
+            onPostalCodeChange: V,
+            onBillingCountryChange: X
         }),
         actions: [{
             variant: "secondary",
@@ -172,8 +188,8 @@ function S(t) {
             variant: "primary",
             size: "md",
             text: m.intl.string(m.t.H2hHyf),
-            loading: v,
-            onClick: K
+            loading: T,
+            onClick: Z
         }]
     })
 }

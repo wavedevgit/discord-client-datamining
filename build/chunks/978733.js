@@ -17,8 +17,8 @@ var l = n(627968),
     x = n(397927),
     g = n(435183),
     f = n(417454),
-    p = n(964486),
-    _ = n(148719),
+    _ = n(964486),
+    p = n(148719),
     j = n(504842),
     b = n(376708),
     v = n(207336),
@@ -32,8 +32,8 @@ var l = n(627968),
     I = n(661191),
     R = n(947094),
     M = n(919577),
-    k = n(387255),
-    w = n(422844),
+    w = n(387255),
+    k = n(422844),
     L = n(435470),
     P = n(853742),
     D = n(892110),
@@ -152,7 +152,7 @@ let q = e => {
             }, c.x),
             {
                 tagFilter: Y
-            } = (0, w.R)(f.id),
+            } = (0, k.R)(f.id),
             Z = (0, m.bG)([N.A], () => N.A.getGuild(f.getGuildId())),
             ee = (0, L.S4)(f),
             {
@@ -207,15 +207,15 @@ let q = e => {
                         guild: c,
                         channel: h,
                         hasAnyThread: f,
-                        handleHide: p
+                        handleHide: _
                     } = e,
                     [j, b] = i.useState(!1),
                     v = (0, D.l)(h.id),
                     A = (0, m.bG)([R.A], () => R.A.hasHidden(h.id)),
                     N = (s = c?.id, a = (0, m.bG)([T.A], () => null != s ? T.A.getSortedRoles(s) : void 0), i.useMemo(() => {
-                        let e, t, i, s, r, o, d, m, p = new K,
+                        let e, t, i, s, r, o, d, m, _ = new K,
                             j = h?.isMediaChannel() === !0;
-                        return null == c || null == h || j || null == a || p.addStep((e = (0, _.A)(h) ? u.kg(G.xBc.VIEW_CHANNEL, G.xBc.SEND_MESSAGES) : G.xBc.SEND_MESSAGES, i = (t = null != c ? (0, k.N)(a, h, e).filter(e => h.permissionOverwrites.hasOwnProperty(e.id) || (0, C.Oy)(e)) : []).length > 0, s = t.some(e => (0, C.Oy)(e)), {
+                        return null == c || null == h || j || null == a || _.addStep((e = (0, p.A)(h) ? u.kg(G.xBc.VIEW_CHANNEL, G.xBc.SEND_MESSAGES) : G.xBc.SEND_MESSAGES, i = (t = null != c ? (0, w.N)(a, h, e).filter(e => h.permissionOverwrites.hasOwnProperty(e.id) || (0, C.Oy)(e)) : []).length > 0, s = t.some(e => (0, C.Oy)(e)), {
                             name: z.intl.string(z.t["/Ax2gs"]),
                             description: z.intl.string(z.t.gAIOfg),
                             isDone: i && s,
@@ -242,14 +242,14 @@ let q = e => {
                                     onCloseCallback: () => b(!1)
                                 })
                             }
-                        })), j || p.addStep((r = null != h.topic && h.topic.length > 0, {
+                        })), j || _.addStep((r = null != h.topic && h.topic.length > 0, {
                             name: z.intl.string(z.t.UgJu1e),
                             description: z.intl.string(z.t["3C6/G1"]),
                             clickHandler: () => {
                                 W(U._G.GUIDELINES), g.Ay.open(h.id, void 0, G.b7d.TOPIC)
                             },
                             isDone: r
-                        })), p.addStep((o = null != h.availableTags && h.availableTags.length > 0, {
+                        })), _.addStep((o = null != h.availableTags && h.availableTags.length > 0, {
                             name: z.intl.string(z.t.xiBFCi),
                             description: z.intl.string(z.t.wCv4Oz),
                             clickHandler: () => {
@@ -265,7 +265,7 @@ let q = e => {
                                 })
                             },
                             isDone: o
-                        })), p.addStep((d = null != h.defaultReactionEmoji, {
+                        })), _.addStep((d = null != h.defaultReactionEmoji, {
                             name: z.intl.string(z.t.QlyC9s),
                             description: z.intl.string(z.t["+50LJg"]),
                             clickHandler: () => {
@@ -280,7 +280,7 @@ let q = e => {
                                 })
                             },
                             isDone: d
-                        })), p.addStep((m = c?.id, {
+                        })), _.addStep((m = c?.id, {
                             name: z.intl.string(z.t["6A0O64"]),
                             description: j ? z.intl.string(z.t["8hI5vr"]) : z.intl.format(z.t.ysxcAw, {
                                 onClick: e => {
@@ -299,13 +299,13 @@ let q = e => {
                                 W(U._G.CREATE_POST), y._.dispatch(G.jej.FOCUS_COMPOSER_TITLE)
                             },
                             isDone: f
-                        })), p
+                        })), _
                     }, [h, c, a, f, b])),
                     S = N.isAllDone(),
                     M = v || A || (t = h.id, r = I.default.extractTimestamp(t), !o()().isBefore(o()(r).add(o().duration(15, "days"))));
                 return d = i.useRef(0), i.useEffect(() => (j || !S || M ? clearTimeout(d.current) : d.current = setTimeout(() => {
-                    p()
-                }, 60 * E.A.Millis.SECOND), () => clearTimeout(d.current)), [S, M, p, j]), {
+                    _()
+                }, 60 * E.A.Millis.SECOND), () => clearTimeout(d.current)), [S, M, _, j]), {
                     onboardingSteps: N,
                     isHidden: A,
                     isDismissed: v,
@@ -321,7 +321,7 @@ let q = e => {
             eu = (0, F.ST)(),
             em = f.isMediaChannel(),
             eh = e => eu.getState().setOnboardingExpanded(e);
-        return ((0, p.Ay)(() => {
+        return ((0, _.Ay)(() => {
             ed && ec && es()
         }), (e => {
             let {
@@ -344,7 +344,7 @@ let q = e => {
             channel: f
         }), i.useEffect(() => {
             er || en(!eo)
-        }, [er, en, eo]), (0, p.Ay)(() => {
+        }, [er, en, eo]), (0, _.Ay)(() => {
             s && ec || eh(!0)
         }), null == Z) ? null : (0, b.Fo)(f) ? r || 0 !== Y.size ? Y.size > 0 ? null : (0, l.jsx)(v.A, {
             guild: Z

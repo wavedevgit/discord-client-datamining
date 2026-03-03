@@ -205,7 +205,7 @@ function X(e) {
                         shouldRefocus: !1
                     };
                     p(!0), null == e && (e = a.textValue), e = e.trim(), (null == s || 0 === s.length) && (s = b.A.getStickerPreview(t.id, Y.drafts.type)?.map(e => e.id)), (null == l || 0 === l.length) && (l = L.A.getUploads(t.id, j.C.FirstThreadMessage));
-                    let r = i.name ?? "",
+                    let r = (i.name ?? "").trim(),
                         c = (o || null == n) && 0 === r.length,
                         u = "" === e && (null == s || 0 === s.length) && 0 === l.length;
                     if (d(c ? (0, U.uW)() : null), h(u ? (0, U.fo)() : null), c || u) return p(!1), {
@@ -228,7 +228,7 @@ function X(e) {
                     try {
                         await m(e, s, l)
                     } catch (e) {
-                        return e.body?.code === H.t02.AUTOMOD_TITLE_BLOCKED && d((0, U.z0)(e.body, t)), p(!1), {
+                        return e.body?.code === H.t02.AUTOMOD_TITLE_BLOCKED ? d((0, U.z0)(e.body, t)) : e.body?.code === H.t02.INVALID_FORM_BODY && e.body?.errors?.name != null && d((0, U.T4)()), p(!1), {
                             shouldClear: !1,
                             shouldRefocus: !0
                         }

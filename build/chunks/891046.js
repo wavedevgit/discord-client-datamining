@@ -17,8 +17,8 @@ var l = n(627968),
     x = n(930125),
     g = n(282108),
     f = n(77350),
-    p = n(294520),
-    _ = n(863439),
+    _ = n(294520),
+    p = n(863439),
     j = n(291812),
     b = n(652176),
     v = n(253932),
@@ -32,8 +32,8 @@ var l = n(627968),
     I = n(710948),
     R = n(835369),
     M = n(414368),
-    k = n(715493),
-    w = n(313880),
+    w = n(715493),
+    k = n(313880),
     L = n(52933),
     P = n(848551),
     D = n(505234),
@@ -77,7 +77,7 @@ function H(e) {
         gridCoords: x,
         gridSectionBoundaries: g,
         observePostVisibilityAnalytics: f
-    } = e, p = n.id, _ = i.useRef(null), j = (0, o.bG)([A.Ay], () => A.Ay.getCurrentSidebarChannelId(n.parent_id) === n.id), {
+    } = e, _ = n.id, p = i.useRef(null), j = (0, o.bG)([A.Ay], () => A.Ay.getCurrentSidebarChannelId(n.parent_id) === n.id), {
         firstMessage: b,
         loaded: v
     } = (0, y.OA)(n), {
@@ -87,15 +87,15 @@ function H(e) {
         hasUnreads: N
     } = (0, S.X5)(n), E = i.useRef(null), {
         handleLeftClick: I,
-        handleRightClick: k
+        handleRightClick: w
     } = (0, D.A)({
         facepileRef: E,
         goToThread: s,
         channel: n
     });
     i.useEffect(() => {
-        f?.(_.current, p)
-    }, [f, p]);
+        f?.(p.current, _)
+    }, [f, _]);
     let L = (0, S.Mw)(n, r.T.CREATION_DATE, O.EG.POSTED_DURATION_AGO),
         F = (0, R.hf)(n),
         {
@@ -109,10 +109,10 @@ function H(e) {
             boundaries: g
         });
     return (0, l.jsxs)("li", {
-        ref: _,
+        ref: p,
         onClick: I,
         onFocus: z,
-        onContextMenu: k,
+        onContextMenu: w,
         className: a()(G.kL, m, {
             [G.nT]: j
         }),
@@ -122,9 +122,9 @@ function H(e) {
         children: [(0, l.jsx)(c.DUT, {
             onClick: I,
             focusProps: {
-                ringTarget: _
+                ringTarget: p
             },
-            onContextMenu: k,
+            onContextMenu: w,
             "aria-label": U.intl.formatToPlainString(U.t.pgYN6c, {
                 title: n.name,
                 count: C
@@ -137,7 +137,7 @@ function H(e) {
                 className: G.Y6,
                 children: [(0, l.jsxs)("div", {
                     className: G.wO,
-                    children: [(0, l.jsx)(w.A, {
+                    children: [(0, l.jsx)(k.A, {
                         channel: n,
                         message: b
                     }), (0, l.jsx)(c.Text, {
@@ -232,7 +232,7 @@ function V(e) {
         noStyleAndInteraction: !1
     }), {
         hasUnreads: c
-    } = (0, S.X5)(t), u = (0, o.bG)([T.A], () => T.A.can(F.xBc.MANAGE_MESSAGES, t)), m = v.kt.useSetting(), h = v.gs.useSetting(), x = (0, _.A)(h, u), g = (0, E.no)(n, r, !1), f = t.isMediaPost(), [p, j] = (0, M.tm)(a.width - 2 * M.IZ, f ? M.PL.SIXTEEN_BY_NINE : M.PL.THREE_BY_TWO);
+    } = (0, S.X5)(t), u = (0, o.bG)([T.A], () => T.A.can(F.xBc.MANAGE_MESSAGES, t)), m = v.kt.useSetting(), h = v.gs.useSetting(), x = (0, p.A)(h, u), g = (0, E.no)(n, r, !1), f = t.isMediaPost(), [_, j] = (0, M.tm)(a.width - 2 * M.IZ, f ? M.PL.SIXTEEN_BY_NINE : M.PL.THREE_BY_TWO);
     return n?.blocked || null == (s ?? d) ? (0, l.jsx)(X, {
         channel: t,
         firstMessage: n,
@@ -243,7 +243,7 @@ function V(e) {
         children: [(0, l.jsx)($, {
             mediaAttachments: g,
             globalSpoilerRenderSetting: x,
-            containerWidth: p,
+            containerWidth: _,
             containerHeight: j,
             canAutoPlay: m,
             shouldMaintainAspectRatio: f
@@ -329,16 +329,16 @@ let K = e => e.preventDefault(),
         } = e, {
             containsVideo: u,
             containsGif: m
-        } = i.useMemo(() => (0, E.$2)(t), [t]), _ = i.useMemo(() => t.slice(k.xA, k.lV), [t]), j = (0, k.eX)({
-            numAttachments: _.length,
+        } = i.useMemo(() => (0, E.$2)(t), [t]), p = i.useMemo(() => t.slice(w.xA, w.lV), [t]), j = (0, w.eX)({
+            numAttachments: p.length,
             containerWidth: s,
             containerHeight: r
-        }), b = (0, k.p2)({
+        }), b = (0, w.p2)({
             imageContainerStyles: j,
             containerWidth: s,
             containerHeight: r
-        }), v = (0, g.O8)(x.v.GUILD), A = i.useMemo(() => _.map((e, t) => {
-            let [i, s] = (0, p.K6)(e, !n, v), r = (0, p.rx)(s), x = {
+        }), v = (0, g.O8)(x.v.GUILD), A = i.useMemo(() => p.map((e, t) => {
+            let [i, s] = (0, _.K6)(e, !n, v), r = (0, _.rx)(s), x = {
                 ...b[t],
                 src: e.src,
                 width: e.width,
@@ -346,13 +346,13 @@ let K = e => e.preventDefault(),
                 alt: null != e.alt && i ? r : e.alt,
                 onClick: K,
                 shouldRenderAccessory: !m && !u
-            }, g = (0, f.ge)(e.src) ? `${e.src}?format=png` : e.src, _ = o && !i ? e.src : g;
+            }, g = (0, f.ge)(e.src) ? `${e.src}?format=png` : e.src, p = o && !i ? e.src : g;
             return (0, l.jsxs)("div", {
                 className: G.UV,
                 style: j[t],
                 children: [d ? (0, l.jsx)(h.A, {
                     ...x,
-                    src: _,
+                    src: p,
                     backgroundSrc: g,
                     aspectRatio: x.maxWidth / x.maxHeight,
                     alt: x.alt ?? "",
@@ -382,7 +382,7 @@ let K = e => e.preventDefault(),
                     })
                 })]
             }, e.src)
-        }), [o, m, u, n, j, b, _, d, v]);
+        }), [o, m, u, n, j, b, p, d, v]);
         return (0, l.jsxs)("div", {
             className: G.pV,
             style: {
@@ -404,8 +404,8 @@ let K = e => e.preventDefault(),
                     color: "currentColor",
                     className: G.cU
                 })]
-            }), t.length > k.Mm && (0, l.jsx)(J, {
-                text: (t.length - k.Mm).toString(),
+            }), t.length > w.Mm && (0, l.jsx)(J, {
+                text: (t.length - w.Mm).toString(),
                 icon: c.xfq,
                 pillClassName: G.v3,
                 iconClassName: G.In,

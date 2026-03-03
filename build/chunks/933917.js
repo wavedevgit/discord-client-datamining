@@ -17,8 +17,8 @@ var l = n(627968),
     x = n(209932),
     g = n(967198),
     f = n(954571),
-    p = n(964901),
-    _ = n(652215),
+    _ = n(964901),
+    p = n(652215),
     j = n(851110);
 n(980504);
 var b = n(641131),
@@ -36,7 +36,7 @@ function C(e) {
         emojiName: n?.emojiName,
         soundName: n?.name
     }), h = i.useCallback(() => {
-        f.default.track(_.HAw.MODERATOR_QUEUE_ACTION, {
+        f.default.track(p.HAw.MODERATOR_QUEUE_ACTION, {
             guild_id: g.A.getGuildId(),
             action: "airhorn"
         }), null != s && s()
@@ -67,11 +67,11 @@ function T(e) {
     } = i.useContext(m.x), d = (0, r.bG)([u.A], () => u.A.useReducedMotion), {
         isPlaying: g,
         playSound: f
-    } = (0, p.E)(a);
+    } = (0, _.E)(a);
     (0, c.Ay)(() => {
         (0, h.E7)()
     });
-    let _ = i.useCallback(async () => {
+    let p = i.useCallback(async () => {
         if (await f() && (s.current?.addAnimation(), !d && t?.current != null)) {
             let e = t.current.getBoundingClientRect(),
                 n = {
@@ -98,7 +98,7 @@ function T(e) {
     }, [f, o, d, t]);
     return void 0 === a ? null : (0, l.jsx)(C, {
         sound: a,
-        playSound: _,
+        playSound: p,
         isPlaying: g,
         text: n
     })

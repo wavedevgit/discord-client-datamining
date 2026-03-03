@@ -16,7 +16,7 @@ function u(e, t) {
         {
             needSubscriptionToAccess: u
         } = (0, d.A)(i?.id);
-    if (null == i || u) return null;
+    if (null == i || u || i.isObfuscated()) return null;
     let m = i.isGuildVocal();
     return {
         navigateToChannel: () => {

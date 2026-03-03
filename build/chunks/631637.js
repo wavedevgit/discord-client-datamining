@@ -1,23 +1,23 @@
-/** chunk id: 631637, original params: n,e,t (module,exports,require) **/
-t.d(e, {
+/** chunk id: 631637, original params: n,t,e (module,exports,require) **/
+e.d(t, {
     A: () => A
 });
-var i = t(627968);
-t(64700);
-var r = t(311907),
-    l = t(397927),
-    a = t(717187),
-    d = t(884569),
-    s = t(846577),
-    u = t(695192),
-    c = t(87746),
-    o = t(287809);
+var i = e(627968);
+e(64700);
+var r = e(311907),
+    l = e(397927),
+    a = e(717187),
+    d = e(884569),
+    s = e(846577),
+    u = e(695192),
+    c = e(87746),
+    o = e(287809);
 
 function A(n) {
     let {
-        channel: e
-    } = n, t = (0, r.bG)([o.default], () => o.default.getCurrentUser()), A = (0, s.P)(e), h = (0, a.y)(e), _ = (0, c.Q)(e), f = (0, u.m)(e), g = (0, d.B)(e);
-    return t?.isStaff() !== !0 ? null : (0, i.jsxs)(l.Drp, {
+        channel: t
+    } = n, e = (0, r.bG)([o.default], () => o.default.getCurrentUser()), A = (0, s.P)(t), h = (0, a.y)(t), _ = (0, c.Q)(t), f = (0, u.m)(t), g = (0, d.B)(t);
+    return e?.isStaff() !== !0 ? null : (0, i.jsxs)(l.Drp, {
         id: "dev tools",
         label: "Dev Tools",
         children: [(0, i.jsx)(l.rXV, {

@@ -239,14 +239,16 @@ class I extends s.PureComponent {
             isForSubscription: e.id === d,
             locale: a,
             onRedeemClick: () => (0, u.HF)({
-                withRedemptionSuccessModal: !0
+                withRedemptionSuccessModal: !0,
+                source: "desktop_billing_page"
             })
         }, e.id)) : (0, i.jsx)(S, {
             hideDivider: 0 === h.length || I === h.length - 1,
             isForSubscription: !1,
             locale: a,
             onRedeemClick: () => (0, u.HF)({
-                withRedemptionSuccessModal: !0
+                withRedemptionSuccessModal: !0,
+                source: "desktop_billing_page"
             })
         }), (0, i.jsxs)(i.Fragment, {
             children: [t ? (0, i.jsxs)(i.Fragment, {
