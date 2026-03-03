@@ -3,14 +3,14 @@ n.d(t, {
     A: () => l
 });
 var a = n(311907),
-    i = n(760751),
-    s = n(486020);
+    s = n(760751),
+    i = n(486020);
 
 function l(e, t) {
-    let n = (0, a.bG)([i.A], () => i.A.getDetectableGame(e ?? ""));
+    let n = (0, a.bG)([s.A], () => s.A.getDetectableGame(e ?? ""));
     if (null == n) return;
     let l = "cover" === t ? n.cover_image_hash : n.icon;
-    return s.Ay.getApplicationIconURL({
+    return i.Ay.getApplicationIconURL({
         id: n.id,
         icon: l,
         keepAspectRatio: !0

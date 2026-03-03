@@ -9,8 +9,8 @@ var r = t(64700),
     a = t(194822);
 let d = (e, l) => {
     let t = (0, o.bG)([n.A], () => n.A.hasLoadedExperiments),
-        [d, s, c] = (0, o.yK)([a.A], () => [a.A.getLayout(e, l), a.A.isFetchingLayout(e, l), a.A.getFetchError(e, l)]),
-        u = null == d && null != l && t && !s && null == c;
+        [d, c, s] = (0, o.yK)([a.A], () => [a.A.getLayout(e, l), a.A.isFetchingLayout(e, l), a.A.getFetchError(e, l)]),
+        u = null == d && null != l && t && !c && null == s;
     return r.useEffect(() => {
         u && (0, i.v)({
             tenantId: e,
@@ -18,7 +18,7 @@ let d = (e, l) => {
         }).catch(() => {})
     }, [u, e, l]), {
         layout: d,
-        loading: s,
-        error: c
+        loading: c,
+        error: s
     }
 }

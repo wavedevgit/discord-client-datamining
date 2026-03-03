@@ -1,6 +1,6 @@
 /** chunk id: 194822, original params: e,l,t (module,exports,require) **/
 t.d(l, {
-    A: () => g
+    A: () => T
 });
 var r = t(311907),
     o = t(73153),
@@ -14,20 +14,20 @@ let a = (0, n.m6)() ? {
         }
     } : {},
     d = (0, n.m6)() ? ["dummy-skeleton"] : [],
-    s = (0, n.m6)() ? {
+    c = (0, n.m6)() ? {
         [i.C8]: {
             "dummy-popular-picks": i.Ot
         }
     } : {},
-    c = (0, n.m6)() ? ["dummy-skeleton-template"] : [],
+    s = (0, n.m6)() ? ["dummy-skeleton-template"] : [],
     u = (e, l) => `${e}/${l}`,
     h = a,
     p = new Set(d),
     m = {},
-    b = s,
-    _ = new Set(c),
+    _ = c,
+    b = new Set(s),
     S = {};
-class A extends r.Ay.Store {
+class C extends r.Ay.Store {
     static displayName = "CmsLayoutStore";
     getLayout(e, l) {
         return null == e || null == l ? null : h[e]?.[l] ?? null
@@ -39,16 +39,16 @@ class A extends r.Ay.Store {
         return null == e || null == l ? null : m[u(e, l)] ?? null
     }
     getTemplateLayout(e, l) {
-        return null == e || null == l ? null : b[e]?.[l] ?? null
+        return null == e || null == l ? null : _[e]?.[l] ?? null
     }
     isFetchingTemplate(e, l) {
-        return null != e && null != l && _.has(u(e, l))
+        return null != e && null != l && b.has(u(e, l))
     }
     getTemplateFetchError(e, l) {
         return null == e || null == l ? null : S[u(e, l)] ?? null
     }
 }
-let g = new A(o.h, {
+let T = new C(o.h, {
     CMS_LAYOUT_FETCH: e => {
         let {
             tenantId: l,
@@ -76,7 +76,7 @@ let g = new A(o.h, {
             tenantId: l,
             templateId: t
         } = e;
-        _.add(u(l, t))
+        b.add(u(l, t))
     },
     CMS_TEMPLATE_FETCH_SUCCESS: e => {
         let {
@@ -84,7 +84,7 @@ let g = new A(o.h, {
             templateId: t,
             layout: r
         } = e;
-        (b[l] ??= {})[t] = r, delete S[u(l, t)], _.delete(u(l, t))
+        (_[l] ??= {})[t] = r, delete S[u(l, t)], b.delete(u(l, t))
     },
     CMS_TEMPLATE_FETCH_FAILURE: e => {
         let {
@@ -92,9 +92,9 @@ let g = new A(o.h, {
             templateId: t,
             apiError: r
         } = e;
-        S[u(l, t)] = r, _.delete(u(l, t))
+        S[u(l, t)] = r, b.delete(u(l, t))
     },
     LOGOUT: function() {
-        h = {}, p = new Set, m = {}, b = {}, _ = new Set, S = {}
+        h = {}, p = new Set, m = {}, _ = {}, b = new Set, S = {}
     }
 })

@@ -1,7 +1,7 @@
 /** chunk id: 604238, original params: e,l,t (module,exports,require) **/
 t.d(l, {
     E: () => y,
-    e: () => f
+    e: () => E
 });
 var r = t(64700),
     o = t(735438),
@@ -9,20 +9,20 @@ var r = t(64700),
     i = t(427941),
     a = t(653793),
     d = t(118713),
-    s = t(261225),
-    c = t(970488),
+    c = t(261225),
+    s = t(970488),
     u = t(720462),
     h = t(673277),
     p = t(700263),
     m = t(304973),
-    b = t(18769),
-    _ = t(458306),
+    _ = t(18769),
+    b = t(458306),
     S = t(282203),
-    A = t(22519),
-    g = t(607795),
-    C = t(954644),
-    k = t(930948),
-    T = t(634791);
+    C = t(22519),
+    T = t(607795),
+    A = t(954644),
+    g = t(930948),
+    k = t(634791);
 let y = {
         ContainedHero: n.A,
         BasicHero: e => {
@@ -34,29 +34,29 @@ let y = {
         PromotionalHero: () => null,
         InteractiveHScroll: u.A,
         Carousel: d.A,
-        Grid: s.A,
-        GridItem: c.A,
+        Grid: c.A,
+        GridItem: s.A,
         Section: h.A,
         Card: a.A,
         BackgroundImage: i.A,
         Skeleton: p.A,
         FeaturedChip: m.A,
-        FeaturedCollection: b.A,
+        FeaturedCollection: _.A,
         FeaturedProduct: () => null,
-        ShopProductCard: C.A,
-        StorefrontProductCard: k.A,
+        ShopProductCard: A.A,
+        StorefrontProductCard: g.A,
         SkuList: S.A,
-        SubLayout: A.A,
-        SubTemplate: g.A,
-        Button: _.ar,
-        Heading: _.Oo,
-        Stack: _.Kp,
-        Text: _.t,
-        Any1: T.A,
-        Any2: T.A,
-        Any3: T.A
+        SubLayout: C.A,
+        SubTemplate: T.A,
+        Button: b.ar,
+        Heading: b.Oo,
+        Stack: b.Kp,
+        Text: b.t,
+        Any1: k.A,
+        Any2: k.A,
+        Any3: k.A
     },
-    f = function() {
+    E = function() {
         let {
             overrides: e
         } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};

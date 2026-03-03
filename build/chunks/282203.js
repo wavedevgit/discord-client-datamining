@@ -12,12 +12,12 @@ let a = e => {
             skuBlock: t = "ShopProductCard",
             sortPurchased: a = !1,
             showSkeleton: d = !1,
-            componentMap: s
-        } = e, c = (0, i.D)(l, !0), {
+            componentMap: c
+        } = e, s = (0, i.D)(l, !0), {
             purchases: u,
             isFetching: h
-        } = (0, n.b5)(), p = (0, o.useMemo)(() => a ? [...l].sort((e, l) => (null != u.get(e)) - (null != u.get(l))) : l, [l, a, u]), m = s[t], b = s.Skeleton;
-        return null == m ? null : (c || a && h) && d ? l.map((e, l) => null != b ? (0, r.jsx)(b, {
+        } = (0, n.b5)(), p = (0, o.useMemo)(() => a ? [...l].sort((e, l) => (null != u.get(e)) - (null != u.get(l))) : l, [l, a, u]), m = c[t], _ = c.Skeleton;
+        return null == m ? null : (s || a && h) && d ? l.map((e, l) => null != _ ? (0, r.jsx)(_, {
             children: (0, r.jsx)(m, {
                 skuId: e,
                 productId: e
@@ -43,8 +43,8 @@ let a = e => {
             showSkeleton: i,
             componentMap: d
         });
-        let s = d[t];
-        return null == s ? null : l.map((e, l) => (0, r.jsx)(s, {
+        let c = d[t];
+        return null == c ? null : l.map((e, l) => (0, r.jsx)(c, {
             skuId: e,
             productId: e
         }, `${e}-${l}`))

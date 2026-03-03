@@ -1,6 +1,6 @@
 /** chunk id: 18769, original params: e,l,t (module,exports,require) **/
 t.d(l, {
-    A: () => s
+    A: () => c
 });
 var r = t(627968),
     o = t(158954),
@@ -8,14 +8,14 @@ var r = t(627968),
     i = t(506456),
     a = t(653793),
     d = t(524025);
-let s = e => {
+let c = e => {
     let {
         backgroundImage: l,
         logoSrc: t,
-        supplementalImage: s,
-        href: c,
+        supplementalImage: c,
+        href: s,
         ctaText: u
-    } = e, h = (0, i.A)(l.src), p = (0, i.A)(t?.src), m = (0, i.A)(s?.src), b = (0, n.S)(u ?? "");
+    } = e, h = (0, i.A)(l.src), p = (0, i.A)(t?.src), m = (0, i.A)(c?.src), _ = (0, n.S)(u ?? "");
     return (0, r.jsxs)("div", {
         className: d.rJ,
         children: [(0, r.jsx)(a.A, {
@@ -32,7 +32,7 @@ let s = e => {
                         src: p,
                         alt: t?.alt ?? ""
                     }), (0, r.jsx)(o.$nd, {
-                        text: b,
+                        text: _,
                         variant: "overlay-primary"
                     })]
                 })
@@ -40,7 +40,7 @@ let s = e => {
         }), null != m && (0, r.jsx)("img", {
             className: d.hP,
             src: m,
-            alt: s?.alt ?? ""
+            alt: c?.alt ?? ""
         })]
     })
 }

@@ -10,9 +10,9 @@ let i = e => {
         children: l,
         columns: t = 1,
         rows: i = 1
-    } = e, a = Math.max(1, Math.min(o.M, Math.floor(t))), d = Math.max(1, Math.min(o.M, Math.floor(i))), s = n[`gridItemColumns${a}`], c = n[`gridItemRows${d}`];
+    } = e, a = Math.max(1, Math.min(o.M, Math.floor(t))), d = Math.max(1, Math.min(o.M, Math.floor(i))), c = n[`gridItemColumns${a}`], s = n[`gridItemRows${d}`];
     return (0, r.jsx)("div", {
-        className: `${n.gridItem} ${s} ${c}`,
+        className: `${n.gridItem} ${c} ${s}`,
         children: l
     })
 }

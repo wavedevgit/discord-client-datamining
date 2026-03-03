@@ -36,7 +36,11 @@ function v(e) {
         location: C.rE.QUEST_ACTIVITY_HEADER,
         questContent: h.uF.RUNNING_ACTIVITY,
         sourceQuestContent: h.uF.RUNNING_ACTIVITY
-    }), [A, p] = r.useState(!1), I = r.useRef(null), v = r.useRef(null), [y, b] = (0, d.kn)([s.M.QUEST_ACTIVITY_HEADER_INTRO], void 0, !0), O = r.useCallback(() => {
+    }), [A, p] = r.useState(!1), I = r.useRef(null), v = r.useRef(null), [y, b] = (0, d.kn)([s.M.QUEST_ACTIVITY_HEADER_INTRO], void 0, !0), {
+        completedRatio: O,
+        completedRatioDisplay: L,
+        percentComplete: R
+    } = (0, m.O9)(t, !0), P = r.useCallback(() => {
         c.A.updateFrameLayoutMode({
             applicationId: n,
             layoutMode: N.y.PIP
@@ -66,7 +70,8 @@ function v(e) {
                     return (0, i.jsx)(E.A, {
                         quest: t,
                         questDescription: u,
-                        minimizeFrame: O,
+                        completedRatio: O,
+                        minimizeFrame: P,
                         onClose: n
                     })
                 },
@@ -83,6 +88,33 @@ function v(e) {
                         size: "sm"
                     })
                 })
+            }), (0, i.jsxs)("div", {
+                className: x.L$,
+                children: [(0, i.jsx)(l.EYj, {
+                    variant: "text-sm/semibold",
+                    color: "text-strong",
+                    children: L
+                }), (0, i.jsxs)("div", {
+                    className: x.hr,
+                    children: [(0, i.jsx)("div", {
+                        className: x.SX,
+                        style: {
+                            width: `${R}%`
+                        }
+                    }), (0, i.jsxs)("div", {
+                        className: x.tu,
+                        style: {
+                            width: `${R}%`
+                        },
+                        children: [(0, i.jsx)("div", {
+                            className: x.SZ
+                        }), (0, i.jsx)("div", {
+                            className: x.SZ
+                        }), (0, i.jsx)("div", {
+                            className: x.SZ
+                        })]
+                    })]
+                })]
             })]
         }), null != y && (0, i.jsx)(g.A, {
             onDismiss: () => b(T.i.USER_DISMISS),

@@ -1,26 +1,30 @@
 /** chunk id: 397400, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    Ai: () => x,
-    Jh: () => v,
-    SX: () => m,
+    Ai: () => g,
+    ET: () => x,
+    Jh: () => m,
+    SX: () => h,
     ed: () => _,
-    f7: () => p,
+    f7: () => f,
     ft: () => u,
-    oT: () => f,
-    tR: () => g,
-    wN: () => o
+    gU: () => E,
+    oT: () => p,
+    pK: () => C,
+    tR: () => A,
+    wN: () => d
 });
-var a = n(64700),
-    i = n(390544),
-    s = n(311907),
-    l = n(954571),
+var i = n(64700),
+    s = n(390544),
+    l = n(311907),
+    a = n(954571),
     r = n(363487),
-    d = n(522055),
+    o = n(522055),
     c = n(652215);
 
-function o(e, t, n) {
-    a.useEffect(() => {
-        l.default.track(c.HAw.OPEN_MODAL, {
+function d(e, t, n) {
+    i.useEffect(() => {
+        a.default.track(c.HAw.OPEN_MODAL, {
             type: "game_servers_perk_clicked",
             guild_id: e,
             location: n,
@@ -30,17 +34,17 @@ function o(e, t, n) {
 }
 
 function u(e, t) {
-    a.useEffect(() => {
-        l.default.track(c.HAw.GAME_SERVER_GAME_SELECT_OPENED, {
+    i.useEffect(() => {
+        a.default.track(c.HAw.GAME_SERVER_GAME_SELECT_OPENED, {
             guild_id: e,
             type: t
         })
     }, [e, t])
 }
 
-function m(e, t, n) {
-    a.useEffect(() => {
-        l.default.track(c.HAw.GAME_SERVER_SETTINGS_OPENED, {
+function h(e, t, n) {
+    i.useEffect(() => {
+        a.default.track(c.HAw.GAME_SERVER_SETTINGS_OPENED, {
             guild_id: e,
             game_server_id: t,
             type: n
@@ -48,78 +52,111 @@ function m(e, t, n) {
     }, [e, t, n])
 }
 
-function g(e) {
+function A(e) {
     let t = (0, r.A)(e),
-        n = (0, s.bG)([d.A], () => d.A.getStateForGuild(e)),
-        o = a.useRef(!1);
-    a.useEffect(() => {
+        n = (0, l.bG)([o.A], () => o.A.getStateForGuild(e)),
+        d = i.useRef(!1);
+    i.useEffect(() => {
         if (n?.instances == null) return;
-        let a = Object.values(n.instances).length,
-            s = Object.values(n.instances).filter(e => e.status === i.M.ONLINE).length;
-        o.current || (o.current = !0, l.default.track(c.HAw.IMPRESSION_GAME_SERVERS_TAB_VIEWED, {
+        let i = Object.values(n.instances).length,
+            l = Object.values(n.instances).filter(e => e.status === s.M.ONLINE).length;
+        d.current || (d.current = !0, a.default.track(c.HAw.IMPRESSION_GAME_SERVERS_TAB_VIEWED, {
             guild_id: e,
             is_admin: t,
-            num_game_servers: a,
-            num_game_servers_online: s,
-            num_game_servers_offline: a - s
+            num_game_servers: i,
+            num_game_servers_online: l,
+            num_game_servers_offline: i - l
         }))
     }, [e, t, n?.instances])
 }
 
-function f(e, t, n, a) {
-    l.default.track(c.HAw.GAME_SERVER_GAME_CLICKED, {
+function p(e, t, n, i) {
+    a.default.track(c.HAw.GAME_SERVER_GAME_CLICKED, {
         guild_id: e,
         product_id: t,
         product_name: n,
-        location: a
+        location: i
     })
 }
 
-function v(e) {
+function m(e) {
     let {
         guildId: t,
         productId: n,
-        productName: a,
-        skuId: i,
-        planName: s,
+        productName: i,
+        skuId: s,
+        planName: l,
         planCost: r,
-        previousPlanCost: d,
-        region: o,
+        previousPlanCost: o,
+        region: d,
         type: u
     } = e;
-    l.default.track(c.HAw.GAME_SERVER_SKU_SELECTED, {
+    a.default.track(c.HAw.GAME_SERVER_SKU_SELECTED, {
         guild_id: t,
         product_id: n,
-        product_name: a,
-        sku_id: i,
-        plan_name: s,
+        product_name: i,
+        sku_id: s,
+        plan_name: l,
         plan_cost: r,
-        previous_plan_cost: d,
-        region: o,
+        previous_plan_cost: o,
+        region: d,
         type: u
     })
 }
 
-function x(e, t, n, a) {
-    l.default.track(c.HAw.GAME_SERVER_JOIN_CLICKED, {
+function g(e, t, n, i) {
+    a.default.track(c.HAw.GAME_SERVER_JOIN_CLICKED, {
         guild_id: e,
         game_id: t,
         game_name: n,
-        game_server_id: a
+        game_server_id: i
     })
 }
 
 function _(e, t, n) {
-    l.default.track(c.HAw.GAME_SERVER_COPY_IP_CLICKED, {
+    a.default.track(c.HAw.GAME_SERVER_COPY_IP_CLICKED, {
         guild_id: e,
         game_server_id: t,
         location: n
     })
 }
 
-function p(e, t) {
-    l.default.track(c.HAw.GAME_SERVER_VIEW_GAME_PANEL_CLICKED, {
+function f(e, t) {
+    a.default.track(c.HAw.GAME_SERVER_VIEW_GAME_PANEL_CLICKED, {
         guild_id: e,
         game_server_id: t
+    })
+}
+
+function x(e) {
+    let {
+        gameApplicationId: t,
+        buttonVariant: n
+    } = e;
+    a.default.track(c.HAw.IMPRESSION_GAME_SERVER_ACTIVITY_BUTTON, {
+        game_application_id: t ?? null,
+        button_variant: n
+    })
+}
+
+function C(e) {
+    let {
+        gameApplicationId: t,
+        buttonVariant: n
+    } = e;
+    a.default.track(c.HAw.GAME_SERVER_ACTIVITY_BUTTON_CLICKED, {
+        game_application_id: t ?? null,
+        button_variant: n
+    })
+}
+
+function E(e) {
+    let {
+        guildId: t,
+        gameApplicationId: n
+    } = e;
+    a.default.track(c.HAw.GAME_SERVER_ACTIVITY_BUTTON_GUILD_SELECTED, {
+        guild_id: t,
+        game_application_id: n ?? null
     })
 }

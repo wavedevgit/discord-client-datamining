@@ -4,52 +4,52 @@ n.d(t, {
 });
 var a = n(627968);
 n(64700);
-var i = n(503698),
-    s = n.n(i),
+var s = n(503698),
+    i = n.n(s),
     l = n(397927),
     r = n(397400),
     d = n(225180),
-    c = n(294726),
-    o = n(985018),
+    o = n(294726),
+    c = n(985018),
     u = n(667760);
 
 function m(e) {
     let {
         className: t,
         guildId: n,
-        game: i,
+        game: s,
         onClick: m,
-        imageClassName: g,
-        titleClassName: f,
+        imageClassName: x,
+        titleClassName: g,
         disabled: v = !1,
-        location: x
-    } = e, _ = (0, d.A)(i.gameId, "cover");
+        location: f
+    } = e, j = (0, d.A)(s.gameId, "cover");
     return (0, a.jsxs)(l.DUT, {
         "aria-disabled": v,
-        className: s()(u.LO, {
+        className: i()(u.LO, {
             [u.r9]: v
         }, t),
         onClick: v ? void 0 : () => {
-            (0, r.oT)(n, i.id, i.name, x), m(i)
+            (0, r.oT)(n, s.id, s.name, f), m(s)
         },
         children: [(0, a.jsxs)("div", {
-            className: s()(u.Rf, g),
+            className: i()(u.Rf, x),
             children: [(0, a.jsx)("img", {
                 className: u.Sl,
                 alt: "",
-                src: _ ?? ""
+                src: j ?? ""
             }), (0, a.jsx)("div", {
                 className: u.Gj
             }), (0, a.jsx)("div", {
                 className: u.Uf
             })]
         }), (0, a.jsxs)("div", {
-            className: s()(u.FS, f),
+            className: i()(u.FS, g),
             children: [(0, a.jsx)(l.Heading, {
                 variant: "heading-sm/semibold",
                 lineClamp: 1,
-                title: i.name,
-                children: i.name
+                title: s.name,
+                children: s.name
             }), (0, a.jsxs)("div", {
                 className: u.PW,
                 children: [(0, a.jsx)(l._Jp, {
@@ -57,8 +57,8 @@ function m(e) {
                     color: l.LU0.unsafe_rawColors.GUILD_BOOSTING_PINK
                 }), (0, a.jsx)(l.Text, {
                     variant: "text-sm/medium",
-                    children: o.intl.formatToPlainString(i.plans.length > 1 ? c.default["G/aTXi"] : c.default.r9pa9K, {
-                        boostCount: i.baseCost
+                    children: c.intl.formatToPlainString(s.plans.length > 1 ? o.default["G/aTXi"] : o.default.r9pa9K, {
+                        boostCount: s.baseCost
                     })
                 })]
             })]

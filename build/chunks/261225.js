@@ -9,8 +9,8 @@ var r = t(627968),
     i = t.n(n),
     a = t(732955),
     d = t(770178),
-    s = t(458306),
-    c = t(266341);
+    c = t(458306),
+    s = t(266341);
 let u = 6,
     h = e => {
         let {
@@ -19,8 +19,8 @@ let u = 6,
             setPage: o
         } = e;
         return (0, r.jsx)("div", {
-            className: i()(c.page, {
-                [c.active]: t
+            className: i()(s.page, {
+                [s.active]: t
             }),
             children: (0, r.jsx)(a.QWc, {
                 role: "button",
@@ -63,8 +63,8 @@ let u = 6,
                 active: l === e,
                 setPage: n
             }, e) : (0, r.jsx)("div", {
-                className: c.page,
-                children: (0, r.jsx)(s.t, {
+                className: s.page,
+                children: (0, r.jsx)(c.t, {
                     variant: "text-md/bold",
                     content: "..."
                 })
@@ -72,8 +72,8 @@ let u = 6,
         }, [l, t, n, i]);
         return (0, r.jsx)("div", {
             ref: p,
-            className: c.pagination,
-            children: (0, r.jsxs)(s.Kp, {
+            className: s.pagination,
+            children: (0, r.jsxs)(c.Kp, {
                 direction: "horizontal",
                 justify: "center",
                 align: "center",
@@ -85,8 +85,8 @@ let u = 6,
                         n(l - 1)
                     }
                 }), (0, r.jsx)("div", {
-                    className: c.pageNumbers,
-                    children: (0, r.jsx)(s.Kp, {
+                    className: s.pageNumbers,
+                    children: (0, r.jsx)(c.Kp, {
                         direction: "horizontal",
                         justify: "center",
                         align: "center",
@@ -109,20 +109,20 @@ let u = 6,
             perPage: t,
             paginationPosition: n = "bottom",
             children: a
-        } = e, d = Math.max(1, Math.min(u, Math.floor(l))), [s, h] = o.useState(0), [m, b] = o.useState(t), [_, S] = o.useState(o.Children.count(a)), A = o.Children.count(a), g = null == t || t < 1 ? 0 : Math.ceil(A / t), C = null != t && t > 0, k = C && g > 1;
-        (m !== t || _ !== A) && (b(t), S(A), h(0));
-        let T = o.useMemo(() => C ? o.Children.toArray(a).slice(t * s, t * (s + 1)) : a, [s, t, a, C]);
+        } = e, d = Math.max(1, Math.min(u, Math.floor(l))), [c, h] = o.useState(0), [m, _] = o.useState(t), [b, S] = o.useState(o.Children.count(a)), C = o.Children.count(a), T = null == t || t < 1 ? 0 : Math.ceil(C / t), A = null != t && t > 0, g = A && T > 1;
+        (m !== t || b !== C) && (_(t), S(C), h(0));
+        let k = o.useMemo(() => A ? o.Children.toArray(a).slice(t * c, t * (c + 1)) : a, [c, t, a, A]);
         return (0, r.jsxs)(r.Fragment, {
-            children: [k && "top" === n && (0, r.jsx)(p, {
-                page: s,
-                pages: g,
+            children: [g && "top" === n && (0, r.jsx)(p, {
+                page: c,
+                pages: T,
                 setPage: h
             }), (0, r.jsx)("div", {
-                className: i()(c.grid, c[`columns${d}`]),
-                children: T
-            }), k && "bottom" === n && (0, r.jsx)(p, {
-                page: s,
-                pages: g,
+                className: i()(s.grid, s[`columns${d}`]),
+                children: k
+            }), g && "bottom" === n && (0, r.jsx)(p, {
+                page: c,
+                pages: T,
                 setPage: h
             })]
         })

@@ -1,18 +1,18 @@
 /** chunk id: 165655, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    T: () => s
+    T: () => i
 });
 var a = n(627968),
-    i = n(583087);
+    s = n(583087);
 
-function s(e) {
+function i(e) {
     let {
         imageUrl: t
     } = e;
     return (0, a.jsx)("div", {
-        className: i.k,
+        className: s.k,
         children: (0, a.jsx)("div", {
-            className: i.d,
+            className: s.d,
             style: {
                 backgroundImage: `url(${t})`
             }

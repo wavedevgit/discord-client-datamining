@@ -20,8 +20,8 @@ function x(e) {
         user: t,
         currentUser: i,
         guildId: x,
-        channelId: g,
-        displayProfile: p,
+        channelId: p,
+        displayProfile: g,
         relationshipType: h,
         onClose: I
     } = e, {
@@ -29,8 +29,8 @@ function x(e) {
     } = (0, s.Ay)(), j = (0, a.A)({
         user: t,
         guildId: x,
-        channelId: g,
-        displayProfile: p,
+        channelId: p,
+        displayProfile: g,
         onClose: I
     }), {
         gameFriends: v,

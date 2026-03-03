@@ -12,15 +12,15 @@ let i = e => {
         logoSrc: t,
         backgroundColor: i,
         children: a
-    } = e, d = (0, o.A)(l.src), s = (0, o.A)(t?.src);
+    } = e, d = (0, o.A)(l.src), c = (0, o.A)(t?.src);
     return (0, r.jsxs)("div", {
         className: n.ZK,
         style: {
             backgroundImage: `url(${d})`,
             backgroundColor: i
         },
-        children: [null != s && (0, r.jsx)("img", {
-            src: s,
+        children: [null != c && (0, r.jsx)("img", {
+            src: c,
             alt: t?.alt ?? "",
             className: n.wm
         }), null != a && (0, r.jsx)("div", {

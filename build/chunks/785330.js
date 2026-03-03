@@ -1,6 +1,6 @@
 /** chunk id: 785330, original params: e,l,t (module,exports,require) **/
 t.d(l, {
-    Ay: () => b,
+    Ay: () => _,
     F2: () => u,
     Qs: () => p,
     Z_: () => m
@@ -11,9 +11,9 @@ var r = t(627968),
     i = t(204990),
     a = t(604238),
     d = t(856535),
-    s = t(55391);
+    c = t(55391);
 
-function c(e, l) {
+function s(e, l) {
     return e.children.map(e => (function e(l, t) {
         if ("string" == typeof l) return l;
         let {
@@ -21,20 +21,20 @@ function c(e, l) {
             ...a
         } = l, d = t[o];
         if (null == d) return null;
-        let s = (() => {
+        let c = (() => {
                 if ("children" in l) {
                     if (!Array.isArray(l.children) && null != l.children) return e(l.children, t);
                     if (null != l.children && l.children.length > 0) return l.children.map(l => e(l, t))
                 }
                 return null
             })(),
-            c = i.E.has(o) ? {
+            s = i.E.has(o) ? {
                 ...a,
                 componentMap: t
             } : a;
         return (0, r.jsx)(d, {
-            ...c,
-            children: s
+            ...s,
+            children: c
         }, (0, n.A)())
     })(e, l))
 }
@@ -42,7 +42,7 @@ function c(e, l) {
 function u(e) {
     let l = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : a.E;
     try {
-        return c(e, l), !0
+        return s(e, l), !0
     } catch (e) {
         return !1
     }
@@ -54,7 +54,7 @@ let h = e => {
         } = e, r = (0, a.e)({
             overrides: t
         });
-        return o.useMemo(() => c(l, r), [l, r])
+        return o.useMemo(() => s(l, r), [l, r])
     },
     p = e => {
         let {
@@ -77,10 +77,10 @@ let h = e => {
             requestParams: n
         } = e, {
             layout: i
-        } = (0, s.A)(t, l, n);
+        } = (0, c.A)(t, l, n);
         return null == i ? null : (0, r.jsx)(h, {
             layout: i,
             overrides: o
         })
     },
-    b = h
+    _ = h

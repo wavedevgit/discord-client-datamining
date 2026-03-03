@@ -9,15 +9,15 @@ var r = t(735438),
     i = t(198982),
     a = t(194822),
     d = t(652215);
-let s = ["request_params"],
-    c = e => (0, r.isObject)(e) ? (0, r.isArray)(e) ? e.map(c) : (0, r.reduce)(e, (e, l, t) => {
+let c = ["request_params"],
+    s = e => (0, r.isObject)(e) ? (0, r.isArray)(e) ? e.map(s) : (0, r.reduce)(e, (e, l, t) => {
         let o = (0, r.camelCase)(t);
-        return s.includes(t) ? {
+        return c.includes(t) ? {
             ...e,
             [o]: l
         } : {
             ...e,
-            [o]: c(l)
+            [o]: s(l)
         }
     }, {}) : e,
     u = async e => {
@@ -40,7 +40,7 @@ let s = ["request_params"],
             n.h.dispatch({
                 type: "CMS_LAYOUT_FETCH_SUCCESS",
                 tenantId: l,
-                layout: c(e.body)
+                layout: s(e.body)
             })
         } catch (r) {
             let e = new i.LG(r);
@@ -56,7 +56,7 @@ let s = ["request_params"],
             tenantId: l,
             templateId: t,
             abortSignal: r,
-            requestParams: s
+            requestParams: c
         } = e;
         if (!a.A.isFetchingTemplate(l, t)) try {
             n.h.dispatch({
@@ -68,13 +68,13 @@ let s = ["request_params"],
                 url: d.Rsh.CMS_TEMPLATE(l, t),
                 rejectWithError: !0,
                 signal: r,
-                query: s
+                query: c
             });
             n.h.dispatch({
                 type: "CMS_TEMPLATE_FETCH_SUCCESS",
                 tenantId: l,
                 templateId: t,
-                layout: c(e.body)
+                layout: s(e.body)
             })
         } catch (r) {
             let e = new i.LG(r);

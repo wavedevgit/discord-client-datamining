@@ -1,82 +1,82 @@
 /** chunk id: 27023, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    bv: () => h,
-    mf: () => N
+    bv: () => S,
+    mf: () => I
 });
 var a = n(627968),
-    i = n(64700),
-    s = n(311907),
+    s = n(64700),
+    i = n(311907),
     l = n(688810),
     r = n(987144),
     d = n(71393),
-    c = n(786300),
-    o = n(403362),
+    o = n(786300),
+    c = n(403362),
     u = n(942975),
     m = n(864310),
-    g = n(665171),
-    f = n(397400),
+    x = n(665171),
+    g = n(397400),
     v = n(522055),
-    x = n(494316),
-    _ = n(568065),
+    f = n(494316),
+    j = n(568065),
     p = n(800007),
-    j = n(294726),
-    b = n(985018);
-let [A, h] = (0, c.A)();
+    b = n(294726),
+    h = n(985018);
+let [N, S] = (0, o.A)();
 
-function S(e) {
+function A(e) {
     return e?.plans[Math.ceil((e?.plans.length - 1) / 2)]?.id
 }
 
-function N(e) {
+function I(e) {
     let t, n, {
-        guildId: c,
-        initialGameServerInstance: h,
-        initialGameServerGame: N,
-        stepConfig: E = p.ZN,
-        children: I,
-        onClose: k,
-        analyticsLocation: T
+        guildId: o,
+        initialGameServerInstance: S,
+        initialGameServerGame: I,
+        stepConfig: k = p.ZN,
+        children: T,
+        onClose: C,
+        analyticsLocation: y
     } = e;
-    i.useEffect(() => {
-        (0, g.z9)(c), (0, u.Xd)(c, !0), null == h && (0, g.cq)(c)
-    }, [c, h]);
-    let C = (0, s.bG)([v.A], () => v.A.getStateForGuild(c)),
-        G = (0, s.bG)([d.A], () => d.A.getGuild(c)),
+    s.useEffect(() => {
+        (0, x.z9)(o), (0, u.Xd)(o, !0), null == S && (0, x.cq)(o)
+    }, [o, S]);
+    let _ = (0, i.bG)([v.A], () => v.A.getStateForGuild(o)),
+        G = (0, i.bG)([d.A], () => d.A.getGuild(o)),
         {
-            analyticsLocations: y
-        } = (0, l.Ay)(T),
-        [P, L] = i.useState(E.initialStep ?? Object.keys(E.steps)[0]),
+            analyticsLocations: P
+        } = (0, l.Ay)(y),
+        [U, L] = s.useState(k.initialStep ?? Object.keys(k.steps)[0]),
         {
-            available: R
-        } = (0, m.A)(c),
-        O = E.steps[P],
-        [w, U] = i.useState(N?.id);
-    i.useEffect(() => {
-        if (null != w || h?.entitlementId == null) return;
-        let e = C?.entitlements?.[h.entitlementId]?.sku?.product_id;
-        null != e && U(e)
-    }, [C?.entitlements, h?.entitlementId, w]);
-    let [M, D] = i.useState(void 0), H = i.useMemo(() => {
-        if (null != w) return Object.values(C?.catalog ?? {}).find(e => e.id === w)
-    }, [C?.catalog, w]), [V, B] = i.useState(h), [z, K] = i.useState(S(N) ?? h?.planId), W = (t = (0, s.bG)([v.A], () => v.A.getStateForGuild(c)?.entitlements), n = H?.plans.find(e => e.id === z)?.cost ?? 0, null == V ? n : n - (t?.[V.entitlementId]?.sku?.tenant_metadata?.guild_monetization?.game_server?.boost_price ?? 0)), q = i.useCallback(e => {
-        B(e);
-        let t = C?.entitlements?.[e?.entitlementId ?? ""]?.sku?.product_id;
-        null != t && U(t), K(e?.planId), Y(e?.name ?? ""), Q(e?.regionId ?? "")
-    }, [C?.entitlements]), J = i.useCallback((e, t) => {
-        q(void 0), U(e?.id), K(t ?? S(e))
-    }, [q]), [$, F] = i.useState(), [X, Y] = i.useState(h?.name ?? ""), [Z, Q] = i.useState(h?.regionId ?? ""), [ee, et] = i.useState(!1), en = i.useRef(!1), ea = i.useCallback(() => {
-        if (D(void 0), null == G || null == H || "" === X || "" === Z || null == z) return;
-        let e = H.plans.find(e => e.id === z);
-        (0, f.Jh)({
+            available: O
+        } = (0, m.A)(o),
+        w = k.steps[U],
+        [E, z] = s.useState(I?.id);
+    s.useEffect(() => {
+        if (null != E || S?.entitlementId == null) return;
+        let e = _?.entitlements?.[S.entitlementId]?.sku?.product_id;
+        null != e && z(e)
+    }, [_?.entitlements, S?.entitlementId, E]);
+    let [B, D] = s.useState(void 0), H = s.useMemo(() => {
+        if (null != E) return Object.values(_?.catalog ?? {}).find(e => e.id === E)
+    }, [_?.catalog, E]), [M, R] = s.useState(S), [q, W] = s.useState(A(I) ?? S?.planId), $ = (t = (0, i.bG)([v.A], () => v.A.getStateForGuild(o)?.entitlements), n = H?.plans.find(e => e.id === q)?.cost ?? 0, null == M ? n : n - (t?.[M.entitlementId]?.sku?.tenant_metadata?.guild_monetization?.game_server?.boost_price ?? 0)), F = s.useCallback(e => {
+        R(e);
+        let t = _?.entitlements?.[e?.entitlementId ?? ""]?.sku?.product_id;
+        null != t && z(t), W(e?.planId), Y(e?.name ?? ""), Q(e?.regionId ?? "")
+    }, [_?.entitlements]), J = s.useCallback((e, t) => {
+        F(void 0), z(e?.id), W(t ?? A(e))
+    }, [F]), [K, V] = s.useState(), [X, Y] = s.useState(S?.name ?? ""), [Z, Q] = s.useState(S?.regionId ?? ""), [ee, et] = s.useState(!1), en = s.useRef(!1), ea = s.useCallback(() => {
+        if (D(void 0), null == G || null == H || "" === X || "" === Z || null == q) return;
+        let e = H.plans.find(e => e.id === q);
+        (0, g.Jh)({
             guildId: G.id,
             productId: H.id,
             productName: H.name,
-            skuId: z,
+            skuId: q,
             planName: e?.name ?? "",
             planCost: e?.cost ?? 0,
-            previousPlanCost: null == V ? 0 : (e?.cost ?? 0) + W,
+            previousPlanCost: null == M ? 0 : (e?.cost ?? 0) + $,
             region: Z,
-            type: null == V ? "create" : "edit"
+            type: null == M ? "create" : "edit"
         });
         let t = () => {
             if (en.current) return;
@@ -84,20 +84,20 @@ function N(e) {
             let e = new Promise(e => {
                 setTimeout(() => e(void 0), p.PH)
             });
-            Promise.all([null != V ? (0, g.pj)(G.id, V.entitlementId, z, X) : (0, g.jL)(G.id, z, X, Z), e]).then(() => {
-                k(), V?.planId !== z && (0, x.A)(G.id, H, null == V ? "created" : "updated")
+            Promise.all([null != M ? (0, x.pj)(G.id, M.entitlementId, q, X) : (0, x.jL)(G.id, q, X, Z), e]).then(() => {
+                C(), M?.planId !== q && (0, f.A)(G.id, H, null == M ? "created" : "updated")
             }).catch(e => {
-                D(e.body?.message ?? b.intl.string(j.default.gvNWWr)), en.current = !1
+                D(e.body?.message ?? h.intl.string(b.default.gvNWWr)), en.current = !1
             }).finally(() => {
                 et(!1)
             })
         };
-        R < W ? (0, r.g)({
-            analyticsLocation: T,
-            numberOfBoostsToAdd: W - R,
-            analyticsLocations: y,
+        O < $ ? (0, r.g)({
+            analyticsLocation: y,
+            numberOfBoostsToAdd: $ - O,
+            analyticsLocations: P,
             guild: G,
-            intent: _.Pn.PERK,
+            intent: j.Pn.PERK,
             onLoading: e => {
                 et(e)
             },
@@ -108,10 +108,10 @@ function N(e) {
                 e && t()
             }
         }) : t()
-    }, [y, G, R, z, T, H, X, Z, k, W, V]), ei = i.useCallback(e => {
+    }, [P, G, O, q, y, H, X, Z, C, $, M]), es = s.useCallback(e => {
         switch (e.type) {
             case "close":
-                k();
+                C();
                 break;
             case "go-to-step":
                 L(e.step);
@@ -119,38 +119,38 @@ function N(e) {
             case "save":
                 ea()
         }
-    }, [k, ea]), es = i.useCallback(() => {
-        null != O && ei(O.onBack)
-    }, [O, ei]), el = i.useCallback(() => {
-        null != O && ei(O.onNext)
-    }, [O, ei]), er = i.useMemo(() => new Set(Object.values(C?.catalog ?? {}).map(e => e.provider).filter(o.Vq)), [C?.catalog]);
-    return (0, a.jsx)(A.Provider, {
+    }, [C, ea]), ei = s.useCallback(() => {
+        null != w && es(w.onBack)
+    }, [w, es]), el = s.useCallback(() => {
+        null != w && es(w.onNext)
+    }, [w, es]), er = s.useMemo(() => new Set(Object.values(_?.catalog ?? {}).map(e => e.provider).filter(c.Vq)), [_?.catalog]);
+    return (0, a.jsx)(N.Provider, {
         value: {
-            guildId: c,
-            step: P,
-            stepAction: O,
+            guildId: o,
+            step: U,
+            stepAction: w,
             stepLoading: ee,
-            onBack: es,
+            onBack: ei,
             onNext: el,
-            gameServerGames: C?.catalog ?? {},
-            instances: Object.values(C?.instances ?? {}),
+            gameServerGames: _?.catalog ?? {},
+            instances: Object.values(_?.instances ?? {}),
             currentGame: H,
             setCurrentGame: J,
-            gameServerInstance: V,
-            setGameServerInstance: q,
+            gameServerInstance: M,
+            setGameServerInstance: F,
             name: X,
             setName: Y,
             regionId: Z,
             setRegionId: Q,
-            planCost: W,
-            planId: z,
-            setPlanId: K,
-            footerNode: $,
-            setFooterNode: F,
-            availableBoostCount: R,
-            error: M,
+            planCost: $,
+            planId: q,
+            setPlanId: W,
+            footerNode: K,
+            setFooterNode: V,
+            availableBoostCount: O,
+            error: B,
             gameProvider: er.size > 0 ? Array.from(er)[0] : null
         },
-        children: I
+        children: T
     })
 }

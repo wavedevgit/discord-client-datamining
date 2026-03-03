@@ -13,17 +13,17 @@ let i = e => {
         requestParams: a,
         componentMap: d
     } = e, {
-        layout: s,
-        loading: c
+        layout: c,
+        loading: s
     } = (0, o.A)(t, l, a);
-    return c && null != i ? (0, r.jsx)(n.Ay, {
+    return s && null != i ? (0, r.jsx)(n.Ay, {
         overrides: d,
         layout: {
             id: "skeleton",
             children: i
         }
-    }) : null == s ? null : (0, r.jsx)(n.Ay, {
-        layout: s,
+    }) : null == c ? null : (0, r.jsx)(n.Ay, {
+        layout: c,
         overrides: d
     })
 }
