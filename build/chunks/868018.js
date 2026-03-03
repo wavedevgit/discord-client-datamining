@@ -1,6 +1,6 @@
 /** chunk id: 868018, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    O: () => _
+    O: () => c
 });
 var n = i(627968),
     l = i(311907),
@@ -70,6 +70,6 @@ let E = {
         },
         destinationKey: A.X.ACTIVITY_PRIVACY_PANEL
     }),
-    _ = (0, r.gN)(A.X.PROFILE_PRIVACY_RELATED_SETTINGS, {
+    c = (0, r.gN)(A.X.PROFILE_PRIVACY_RELATED_SETTINGS, {
         buildLayout: () => [g]
     })

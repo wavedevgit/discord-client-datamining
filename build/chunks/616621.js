@@ -1,38 +1,43 @@
-/** chunk id: 616621, original params: e,n,t (module,exports,require) **/
-t.d(n, {
-    A: () => d
+/** chunk id: 616621, original params: e,i,n (module,exports,require) **/
+n.d(i, {
+    A: () => c
 });
-var i = t(627968),
-    l = t(397927),
-    a = t(398590),
-    s = t(790271),
-    c = t(944771),
-    r = t(3258),
-    o = t(652215);
+var l = n(627968),
+    r = n(397927),
+    t = n(398590),
+    d = n(790271),
+    o = n(944771),
+    a = n(3258),
+    s = n(652215);
 
-function d() {
-    let e = (0, s.ni)("playground_menu"),
-        n = (0, c.useComponentPlaygroundConfigs)(e);
-    if (!e) return null;
-    let t = n.flatMap(e => e.collections);
-    return (0, i.jsx)(l.Drp, {
+function c() {
+    let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
+        i = (0, d.ni)("playground_menu"),
+        n = (0, o.useComponentPlaygroundConfigs)(i);
+    if (!i) return null;
+    let c = n.flatMap(e => e.collections);
+    return (0, l.jsx)(r.Drp, {
         id: "playgrounds",
         label: "Playgrounds",
+        leadingAccessory: e ? {
+            type: "icon",
+            icon: r.RgP
+        } : void 0,
         action: () => {
-            r.PlaygroundStore.setState({
+            a.PlaygroundStore.setState({
                 selectedCollection: null,
                 selectedStory: null
-            }), (0, a.id)(o.zgK.COMPONENT_PLAYGROUND)
+            }), (0, t.id)(s.zgK.COMPONENT_PLAYGROUND)
         },
-        children: (0, i.jsx)(l.rXV, {
-            children: t.map(e => (0, i.jsx)(l.Drp, {
+        children: (0, l.jsx)(r.rXV, {
+            children: c.map(e => (0, l.jsx)(r.Drp, {
                 id: `${e.id}-playground`,
                 label: e.name,
                 action: () => {
-                    r.PlaygroundStore.setState({
+                    a.PlaygroundStore.setState({
                         selectedCollection: e.id,
                         selectedStory: null
-                    }), (0, a.id)(o.zgK.COMPONENT_PLAYGROUND)
+                    }), (0, t.id)(s.zgK.COMPONENT_PLAYGROUND)
                 }
             }, e.id))
         }, "design-systems")

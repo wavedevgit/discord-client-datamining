@@ -1,0 +1,16 @@
+.overrideSubtextContainer__09819 {
+    height: 1lh;
+    position: relative;
+    width: 100%
+}
+
+.overrideSubtext__09819 {
+    inset: 0;
+    min-width: 0;
+    overflow: hidden;
+    position: absolute;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+/*# sourceMappingURL=17bc256a9796945f.css.map*/

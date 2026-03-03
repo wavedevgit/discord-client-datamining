@@ -7,8 +7,8 @@ n(64700);
 var a = n(397927),
     i = n(688810),
     l = n(474397),
-    u = n(780964),
-    s = n(840065),
+    s = n(780964),
+    u = n(840065),
     o = n(652215),
     c = n(355097),
     d = n(985018);
@@ -21,7 +21,7 @@ function m(e) {
         id: "voice-settings",
         label: d.intl.string(d.t.NiTd0e),
         action: () => {
-            (0, s.openUserSettings)(u.X.VOICE_AND_VIDEO_PANEL, {
+            (0, u.openUserSettings)(s.X.VOICE_AND_VIDEO_PANEL, {
                 section: o.nc_.VOICE,
                 subsection: c.V5,
                 analyticsLocations: t,

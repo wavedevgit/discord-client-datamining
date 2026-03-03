@@ -1,6 +1,6 @@
 /** chunk id: 299752, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    C: () => _
+    C: () => c
 });
 var n = i(627968),
     l = i(158954),
@@ -15,7 +15,7 @@ var n = i(627968),
     S = i(652215),
     E = i(985018),
     g = i(755087);
-let _ = (0, u.E2)(d.X.VOICE_PUSH_TO_TALK_KEYBIND_SETTING, {
+let c = (0, u.E2)(d.X.VOICE_PUSH_TO_TALK_KEYBIND_SETTING, {
     useSearchTerms: () => [E.intl.string(E.t["pS+K2L"]), E.intl.string(E.t.nuFtHH)],
     usePredicate: T.P,
     Component: function() {

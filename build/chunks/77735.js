@@ -3,15 +3,15 @@ i.d(t, {
     _: () => l,
     d: () => a
 });
-var s = i(509381);
-let n = [s.m.VOICE_ISOLATION, s.m.STUDIO, s.m.CUSTOM];
+var n = i(509381);
+let s = [n.m.VOICE_ISOLATION, n.m.STUDIO, n.m.CUSTOM];
 
 function l(e) {
     let {
         location: t
     } = e;
     return {
-        enabledInputProfiles: n
+        enabledInputProfiles: s
     }
 }
 
@@ -20,6 +20,6 @@ function a(e) {
         location: t
     } = e;
     return {
-        enabledInputProfiles: n
+        enabledInputProfiles: s
     }
 }

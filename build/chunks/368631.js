@@ -43,8 +43,8 @@ var i = n(627968),
     U = n(81107),
     k = n(805577),
     V = n(782844),
-    H = n(513664),
-    w = n(69435),
+    w = n(513664),
+    H = n(69435),
     B = n(614651),
     Y = n(891912),
     F = n(115980),
@@ -127,8 +127,8 @@ let ex = () => [a.M.CLIENT_THEMES_SETTINGS_BADGE, a.M.DEKSTOP_CUSTOM_APP_ICON_BA
             isAdultUser: eU,
             hasSecureFramesVerifiedUserIds: ek,
             hasIgnoredUsers: eV,
-            hasBlockedUsers: eH,
-            hasAgeGatedFeature: ew,
+            hasBlockedUsers: ew,
+            hasAgeGatedFeature: eH,
             isChatMentionSuggestionsSettingEnabled: eB,
             isHDRAccessibilitySettingExperimentEnabled: eY
         } = e;
@@ -168,7 +168,7 @@ let ex = () => [a.M.CLIENT_THEMES_SETTINGS_BADGE, a.M.DEKSTOP_CUSTOM_APP_ICON_BA
                 searchableTitles: [e_.intl.string(e_.t["/52UYy"]), e_.intl.string(e_.t.sK0dmH), e_.intl.string(e_.t.XxRj7f), e_.intl.string(e_.t.DVywUB), e_.intl.string(e_.t["9KiIz6"])],
                 section: eu.nc_.ACCOUNT,
                 parent: ed.H.ACCOUNT_PROFILE,
-                predicate: () => ew
+                predicate: () => eH
             },
             [ed.H.ACCOUNT_USERNAME]: {
                 searchableTitles: [e_.intl.string(e_.t["+JkHPw"])],
@@ -556,7 +556,7 @@ let ex = () => [a.M.CLIENT_THEMES_SETTINGS_BADGE, a.M.DEKSTOP_CUSTOM_APP_ICON_BA
                 parent: ed.H.PRIVACY_AND_SAFETY_FRIEND_REQUESTS_CATEGORY,
                 label: e_.intl.string(e_.t["3wRort"]),
                 element: ec.Ay,
-                predicate: () => eV || eH
+                predicate: () => eV || ew
             },
             [ed.H.BLOCKED_USERS]: {
                 section: eu.nc_.CONTENT_AND_SOCIAL,
@@ -564,7 +564,7 @@ let ex = () => [a.M.CLIENT_THEMES_SETTINGS_BADGE, a.M.DEKSTOP_CUSTOM_APP_ICON_BA
                 label: e_.intl.string(e_.t.PFOUKW),
                 searchableTitles: [e_.intl.string(e_.t.PFOUKW)],
                 element: ec.LP,
-                predicate: () => eH
+                predicate: () => ew
             },
             [ed.H.IGNORED_USERS]: {
                 section: eu.nc_.CONTENT_AND_SOCIAL,
@@ -1010,7 +1010,7 @@ let ex = () => [a.M.CLIENT_THEMES_SETTINGS_BADGE, a.M.DEKSTOP_CUSTOM_APP_ICON_BA
                 searchableTitles: [e_.intl.string(e_.t["8/udY0"])],
                 label: e_.intl.string(e_.t["8/udY0"]),
                 ariaLabel: e_.intl.string(e_.t["8/udY0"]),
-                element: w.A
+                element: H.A
             },
             [ed.H.SETTINGS_ADVANCED_DEVELOPER_MODE]: {
                 section: eu.nc_.ADVANCED,
@@ -1049,7 +1049,7 @@ let ex = () => [a.M.CLIENT_THEMES_SETTINGS_BADGE, a.M.DEKSTOP_CUSTOM_APP_ICON_BA
                 searchableTitles: [e_.intl.string(e_.t.Cq98yL)],
                 label: e_.intl.string(e_.t.Cq98yL),
                 ariaLabel: e_.intl.string(e_.t.Cq98yL),
-                element: H.Ay,
+                element: w.Ay,
                 predicate: () => !ej
             },
             [ed.H.ACTIVITY_PRIVACY_STATUS]: {

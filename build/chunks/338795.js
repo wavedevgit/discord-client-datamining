@@ -15,8 +15,8 @@ var n = i(934551),
     S = i(828797),
     E = i(611478),
     g = i(402089),
-    _ = i(281225),
-    c = i(531525),
+    c = i(281225),
+    _ = i(531525),
     I = i(652215),
     C = i(985018);
 let N = (0, r.dT)(d.X.ACCOUNT_STANDING_TAB, {
@@ -26,7 +26,7 @@ let N = (0, r.dT)(d.X.ACCOUNT_STANDING_TAB, {
                 target_tab_name: T.D.STANDING
             })
         },
-        buildLayout: () => [_.Q]
+        buildLayout: () => [c.Q]
     }),
     O = (0, r.dT)(d.X.ACCOUNT_SECURITY_TAB, {
         getTitle: () => C.intl.string(C.t.Am9YHi),
@@ -55,7 +55,7 @@ let N = (0, r.dT)(d.X.ACCOUNT_STANDING_TAB, {
     }),
     D = (0, r.i4)(d.X.ACCOUNT_SIDEBAR_ITEM, {
         useTitle: () => C.intl.string(C.t["JAIM/m"]),
-        getLegacySearchKey: () => (0, A.WJ)("AccountPanel") ? void 0 : c.H.ACCOUNT,
+        getLegacySearchKey: () => (0, A.WJ)("AccountPanel") ? void 0 : _.H.ACCOUNT,
         icon: n.UserIcon,
         buildLayout: () => (0, A.WJ)("AccountPanel") ? [L] : [b]
     })

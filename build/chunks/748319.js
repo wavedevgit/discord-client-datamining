@@ -280,12 +280,11 @@ class eB extends i.PureComponent {
         null != t && (0, x.L3)(e, async () => {
             let {
                 default: e
-            } = await n.e("95153").then(n.bind(n, 50120));
-            return n => (0, a.jsx)(e, {
-                ...n,
-                user: t,
-                webBuildOverride: this.props.webBuildOverride,
-                onInteraction: (0, w.s)("UserSettingsCogContextMenu", C.A.ACCOUNT)
+            } = await n.e("50143").then(n.bind(n, 92962));
+            return t => (0, a.jsx)(e, {
+                ...t,
+                onClose: x.Z_,
+                onInteraction: (0, w.s)("UserSettingsMenu", C.A.ACCOUNT)
             })
         })
     };

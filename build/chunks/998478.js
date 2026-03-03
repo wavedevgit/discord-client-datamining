@@ -15,14 +15,14 @@ var n = i(419954),
     S = i(268272),
     E = i(832688),
     g = i(334219),
-    _ = i(540576),
-    c = i(773140),
+    c = i(540576),
+    _ = i(773140),
     I = i(836799),
     C = i(985018);
 let N = (0, n.WI)(s.X.APP_SECTION, {
     useTitle: () => C.intl.string(C.t.f2n1TP),
     buildLayout: function() {
         let t = (0, r.Ci)("AppSection_buildLayout");
-        return [t ? c.q : null, t ? null : o.yj, t ? A.S : null, a.wC, t ? null : c.q, g.z, t ? null : d.g, T.$, S.w, t ? null : I.$, t ? null : E.a, t ? null : _.i, t ? null : u._].filter(l.Vq)
+        return [t ? _.q : null, t ? null : o.yj, t ? A.S : null, a.wC, t ? null : _.q, g.z, t ? null : d.g, T.$, S.w, t ? null : I.$, t ? null : E.a, t ? null : c.i, t ? null : u._].filter(l.Vq)
     }
 })

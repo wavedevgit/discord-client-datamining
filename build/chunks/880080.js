@@ -55,7 +55,7 @@ function S(e) {
     })), X = l.useRef(null), J = l.useCallback(e => {
         null != t.current && (e !== t.current.volume && (t.current.volume = e), e !== G && $(e))
     }, [t, G]), Z = l.useCallback(() => {
-        null != t.current && (0 === G ? (J(k), Q(!1), j(k)) : (O(G), J(0), Q(!0), j(0)))
+        null != t.current && (0 === G ? (Q(!1), 0 === k ? (O(p.$J), J(p.$J), j(p.$J)) : (J(k), j(k))) : (O(G), J(0), Q(!0), j(0)))
     }, [t, G, J, k, Q, O, j]), ee = () => {
         K(!0)
     }, et = () => {
@@ -178,12 +178,12 @@ function S(e) {
                     },
                     children: (0, r.jsx)(c.A, {
                         mini: !0,
-                        initialValue: G,
+                        value: G,
                         keyboardStep: .1,
                         minValue: 0,
                         maxValue: 1,
                         onValueChange: e => {
-                            J(e), O(e), j(e), H && (W(!1), M(!1)), P && e > 0 && Q(!1)
+                            J(e), O(e), j(e), H && (W(!1), M(!1)), P && e > 0 ? Q(!1) : P || 0 !== e || Q(!0)
                         },
                         asValueChanges: e => {
                             J(e), H || (W(!0), M(!0))

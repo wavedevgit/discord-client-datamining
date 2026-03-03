@@ -1,6 +1,6 @@
 /** chunk id: 830001, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    f: () => p
+    f: () => m
 });
 var n = i(627968),
     l = i(934551),
@@ -15,8 +15,8 @@ var n = i(627968),
     S = i(933297),
     E = i(836602),
     g = i(854627),
-    _ = i(287809),
-    c = i(780964),
+    c = i(287809),
+    _ = i(780964),
     I = i(358776),
     C = i(368631),
     N = i(633817),
@@ -24,7 +24,7 @@ var n = i(627968),
     L = i(652215),
     b = i(985018),
     D = i(722125);
-let R = (0, T.t_)(c.X.PROFILE_PANEL, {
+let p = (0, T.t_)(_.X.PROFILE_PANEL, {
         usePredicate: () => !(0, I.dk)("LegacyProfilePanel"),
         useTitle: () => b.intl.string(b.t["vi7f+q"]),
         notice: {
@@ -37,7 +37,7 @@ let R = (0, T.t_)(c.X.PROFILE_PANEL, {
         StronglyDiscouragedCustomComponent: A.A,
         buildLayout: () => []
     }),
-    m = (0, T.t_)(c.X.PROFILE_PANEL, {
+    R = (0, T.t_)(_.X.PROFILE_PANEL, {
         usePredicate: () => (0, I.dk)("ProfilePanel"),
         useTitle: () => b.intl.string(b.t["vi7f+q"]),
         notice: {
@@ -49,12 +49,27 @@ let R = (0, T.t_)(c.X.PROFILE_PANEL, {
         }),
         buildLayout: () => [N.I]
     }),
-    p = (0, T.i4)(c.X.PROFILE_SIDEBAR_ITEM, {
+    m = (0, T.i4)(_.X.PROFILE_SIDEBAR_ITEM, {
         useTitle: () => b.intl.string(b.t["vi7f+q"]),
         getLegacySearchKey: () => (0, I.WJ)("ProfilePanel") ? void 0 : O.H.PROFILE_CUSTOMIZATION,
-        icon: l.UserIcon,
+        icon: function() {
+            let t = (0, s.bG)([c.default], () => c.default.getCurrentUser()),
+                {
+                    avatarSrc: e,
+                    avatarDecorationSrc: i
+                } = (0, g.A)({
+                    userId: t?.id,
+                    size: r._3J.SIZE_48
+                });
+            return (0, n.jsx)(r.euF, {
+                src: e,
+                avatarDecoration: i,
+                size: r._3J.SIZE_20,
+                "aria-hidden": !0
+            })
+        },
         StronglyDiscouragedCustomComponent: () => {
-            let t = (0, s.bG)([_.default], () => _.default.getCurrentUser()),
+            let t = (0, s.bG)([c.default], () => c.default.getCurrentUser()),
                 {
                     avatarSrc: e,
                     avatarDecorationSrc: i
@@ -95,5 +110,5 @@ let R = (0, T.t_)(c.X.PROFILE_PANEL, {
             type: S.Si.BADGE_NEW,
             getDismissibleContentTypes: C.Jn
         },
-        buildLayout: () => (0, I.WJ)("ProfilePanel") ? [m] : [R]
+        buildLayout: () => (0, I.WJ)("ProfilePanel") ? [R] : [p]
     })

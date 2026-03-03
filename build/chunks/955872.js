@@ -56,11 +56,11 @@ function G() {
             userId: e.id,
             image: a
         }),
-        H = (0, C.lw)({
+        w = (0, C.lw)({
             pendingValue: G,
             userValue: e?.collectibles?.nameplate
         }),
-        w = (0, b.A)() && null != n ? h.Ay.parse(void 0, n).content : n,
+        H = (0, b.A)() && null != n ? h.Ay.parse(void 0, n).content : n,
         B = R.Ay.canUsePremiumProfileCustomization(e),
         {
             analyticsLocations: Y,
@@ -75,15 +75,15 @@ function G() {
                 user: e,
                 canUsePremiumCustomization: B,
                 onUpsellClick: y.A,
-                pendingBio: w,
+                pendingBio: H,
                 ...k,
                 pendingAvatar: V
             }),
             nameplatePreview: (0, i.jsx)(x.A, {
                 user: e,
-                nameplate: H,
+                nameplate: w,
                 ...k,
-                className: null == H ? M.tJ : void 0,
+                className: null == w ? M.tJ : void 0,
                 isHighlighted: !0
             }),
             children: (0, i.jsx)(P.A, {})

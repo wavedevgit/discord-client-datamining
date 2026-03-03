@@ -19,14 +19,14 @@ let E = (0, s.zZ)(a.X.CONNECTIONS_ADD_CONNECTIONS_CATEGORY, {
     g = (0, s.zZ)(a.X.CONNECTIONS_CONNECTED_ACCOUNTS_CATEGORY, {
         buildLayout: () => [A.W]
     }),
-    _ = (0, s.t_)(a.X.CONNECTIONS_PANEL, {
+    c = (0, s.t_)(a.X.CONNECTIONS_PANEL, {
         usePredicate: () => !(0, u.dk)("LegacyConnectionsPanel"),
         useTitle: () => S.intl.string(S.t["3fe7U5"]),
         hideInStreamerMode: !0,
         StronglyDiscouragedCustomComponent: o.Ay,
         buildLayout: () => []
     }),
-    c = (0, s.t_)(a.X.CONNECTIONS_PANEL, {
+    _ = (0, s.t_)(a.X.CONNECTIONS_PANEL, {
         usePredicate: () => (0, u.dk)("ConnectionsPanel"),
         useTitle: () => S.intl.string(S.t["3fe7U5"]),
         hideInStreamerMode: !0,
@@ -40,5 +40,5 @@ let E = (0, s.zZ)(a.X.CONNECTIONS_ADD_CONNECTIONS_CATEGORY, {
             type: r.Si.BADGE_NEW,
             getDismissibleContentTypes: () => [l.M.NEW_CRUNCHYROLL_CONNECTION]
         },
-        buildLayout: () => (0, u.WJ)("ConnectionsPanel") ? [c] : [_]
+        buildLayout: () => (0, u.WJ)("ConnectionsPanel") ? [_] : [c]
     })

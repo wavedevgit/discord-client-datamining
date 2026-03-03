@@ -15,8 +15,8 @@ var n = i(627968),
     S = i(857586),
     E = i(757036),
     g = i(602450),
-    _ = i(144605),
-    c = i(927766),
+    c = i(144605),
+    _ = i(927766),
     I = i(557571),
     C = i(18640),
     N = i(236698),
@@ -24,16 +24,16 @@ var n = i(627968),
     L = i(392943),
     b = i(954571),
     D = i(12901),
-    R = i(715999),
-    m = i(934370),
-    p = i(450987),
+    p = i(715999),
+    R = i(934370),
+    m = i(450987),
     y = i(623375),
-    P = i(652215),
-    v = i(788868),
-    G = i(985018),
-    f = i(895431),
-    V = i(458017),
-    h = i(120499),
+    v = i(652215),
+    P = i(788868),
+    f = i(985018),
+    G = i(895431),
+    h = i(458017),
+    V = i(120499),
     U = i(684399),
     M = i(446115);
 let X = () => {
@@ -42,45 +42,45 @@ let X = () => {
                 analyticsLocations: e
             } = (0, T.Ay)(A.A.CF_WARP_SETTINGS);
         return (0, l.useEffect)(() => {
-            b.default.track(P.HAw.PREMIUM_UPSELL_VIEWED, {
-                type: v.e.PRIVACY_PERK_SETTINGS,
+            b.default.track(v.HAw.PREMIUM_UPSELL_VIEWED, {
+                type: P.e.PRIVACY_PERK_SETTINGS,
                 location_stack: e
             })
         }, [e]), (0, n.jsxs)("div", {
-            className: V.V1,
+            className: h.V1,
             children: [(0, n.jsxs)(r.hLv, {
                 color: "pink",
                 children: [(0, n.jsx)("div", {
-                    className: V.N1,
+                    className: h.N1,
                     children: (0, n.jsxs)("div", {
-                        className: V.wx,
+                        className: h.wx,
                         children: [(0, n.jsxs)("div", {
-                            className: V.QF,
+                            className: h.QF,
                             children: [(0, n.jsx)(L.A, {
                                 color: t ? "black" : "white"
                             }), (0, n.jsx)("div", {
-                                className: V.zN
+                                className: h.zN
                             }), (0, n.jsx)("img", {
-                                src: t ? U : h,
+                                src: t ? U : V,
                                 alt: "Cloudflare",
                                 width: 103,
                                 height: 15
                             })]
-                        }), (0, n.jsx)(_.q, {})]
+                        }), (0, n.jsx)(c.q, {})]
                     })
                 }), (0, n.jsxs)("div", {
-                    className: V.hQ,
+                    className: h.hQ,
                     children: [(0, n.jsx)("img", {
                         src: M,
                         width: "100",
                         alt: "Private browsing perk logo"
                     }), (0, n.jsxs)("div", {
-                        className: V.Qs,
-                        children: [(0, n.jsx)(m.F, {}), (0, n.jsx)(R.q, {})]
+                        className: h.Qs,
+                        children: [(0, n.jsx)(R.F, {}), (0, n.jsx)(p.q, {})]
                     }), (0, n.jsx)("div", {
-                        className: V.yP
+                        className: h.yP
                     }), (0, n.jsx)("div", {
-                        className: V.OQ,
+                        className: h.OQ,
                         children: (0, n.jsx)(x, {})
                     })]
                 })]
@@ -95,16 +95,16 @@ let X = () => {
         } = (0, I.lV)(), u = (0, E.L)(), d = (0, l.useRef)(!1);
         if ((0, l.useEffect)(() => () => {
                 d.current || N.Ay.fireSurveyAction(u ? s.w.WARP_VPN_SETTINGS_BOUNCE_NITRO : s.w.WARP_VPN_SETTINGS_BOUNCE_NON_NITRO)
-            }, [d, u]), e) return (0, n.jsx)(c.X, {
+            }, [d, u]), e) return (0, n.jsx)(_.X, {
             onClick: () => {
                 d.current = !0
             }
         });
         if (!u) return (0, n.jsxs)("div", {
-            className: V._u,
+            className: h._u,
             children: [(0, n.jsx)(S.A, {
-                buttonTextOverride: G.intl.string(G.t["8x0jKT"]),
-                subscriptionTier: v.pe.TIER_2,
+                buttonTextOverride: f.intl.string(f.t["8x0jKT"]),
+                subscriptionTier: P.pe.TIER_2,
                 fullWidth: !0,
                 size: "sm",
                 premiumModalAnalyticsLocation: {
@@ -115,17 +115,17 @@ let X = () => {
                 }
             }), (0, n.jsx)(a.$nd, {
                 variant: "secondary",
-                text: G.intl.string(G.t.ZnqyZ2),
+                text: f.intl.string(f.t.ZnqyZ2),
                 size: "sm",
                 onClick: () => {
-                    (0, D.default)(), (0, O.pX)(P.BVt.APPLICATION_STORE), d.current = !0
+                    (0, D.default)(), (0, O.pX)(v.BVt.APPLICATION_STORE), d.current = !0
                 }
             })]
         });
         switch (t) {
             case g.Lk.ERROR:
             case g.Lk.NOT_INSTALLED:
-                return (0, n.jsx)(p.y, {
+                return (0, n.jsx)(m.y, {
                     onClick: () => d.current = !0
                 });
             case g.Lk.INSTALLED:
@@ -136,18 +136,18 @@ let X = () => {
                 return (0, n.jsx)(a.$nd, {
                     variant: "primary",
                     onClick: () => {
-                        (0, o.u)(P.HAw.NITRO_WARP_CTA_CLICKED, {
+                        (0, o.u)(v.HAw.NITRO_WARP_CTA_CLICKED, {
                             is_enable_warp: !0
                         }), i(g.Lk.READY_FOR_LICENSE), d.current = !0
                     },
-                    text: G.intl.string(f.default.J09UWz)
+                    text: f.intl.string(G.default.J09UWz)
                 });
             case g.Lk.INSTALLING:
             case g.Lk.READY_FOR_LICENSE:
             case g.Lk.WAITING_FOR_TERMS:
             case g.Lk.INSTALLING_TIMEOUT:
                 return (0, n.jsx)("div", {
-                    className: V.u1,
+                    className: h.u1,
                     children: (0, n.jsx)(r.y$y, {
                         type: r.tVU.SPINNING_CIRCLE
                     })

@@ -15,20 +15,20 @@ var n = i(627968),
     S = i(264474),
     E = i(531525),
     g = i(985018),
-    _ = i(842130);
-let c = (0, o.t_)(A.X.FAMILY_CENTER_PANEL, {
+    c = i(842130);
+let _ = (0, o.t_)(A.X.FAMILY_CENTER_PANEL, {
         usePredicate: () => !(0, T.dk)("LegacyFamilyCenterPanel"),
-        useTitle: () => g.intl.string(_.default.RZqaJn),
+        useTitle: () => g.intl.string(c.default.RZqaJn),
         StronglyDiscouragedCustomComponent: u.p,
         buildLayout: () => []
     }),
     I = (0, o.t_)(A.X.FAMILY_CENTER_PANEL, {
         usePredicate: () => (0, T.dk)("FamilyCenterPanel"),
-        useTitle: () => g.intl.string(_.default.RZqaJn),
+        useTitle: () => g.intl.string(c.default.RZqaJn),
         buildLayout: () => [S.g]
     }),
     C = (0, o.i4)(A.X.FAMILY_CENTER_SIDEBAR_ITEM, {
-        useTitle: () => g.intl.string(_.default.RZqaJn),
+        useTitle: () => g.intl.string(c.default.RZqaJn),
         getLegacySearchKey: () => (0, T.WJ)("FamilyCenterPanel") ? void 0 : E.H.PRIVACY_FAMILY_CENTER,
         icon: l.GroupIcon,
         trailing: {
@@ -43,5 +43,5 @@ let c = (0, o.t_)(A.X.FAMILY_CENTER_PANEL, {
                 }) : null
             }
         },
-        buildLayout: () => (0, T.WJ)("FamilyCenterPanel") ? [I] : [c]
+        buildLayout: () => (0, T.WJ)("FamilyCenterPanel") ? [I] : [_]
     })

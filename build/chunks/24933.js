@@ -7,21 +7,21 @@ n(64700);
 var a = n(311907),
     i = n(397927),
     l = n(827343),
-    u = n(430452),
-    s = n(77735),
+    s = n(430452),
+    u = n(77735),
     o = n(509381),
     c = n(985018);
 
 function d(e) {
     let {
         enabledInputProfiles: t
-    } = (0, s.d)({
+    } = (0, u.d)({
         location: "useInputProfileItems"
     }), n = {
         [o.m.VOICE_ISOLATION]: c.intl.string(c.t.cjPbpT),
         [o.m.STUDIO]: c.intl.string(c.t.VZPR0R),
         [o.m.CUSTOM]: c.intl.string(c.t["N/PQjv"])
-    }, d = (0, a.bG)([u.Ay], () => u.Ay.getActiveInputProfile()), m = t.map(t => (0, r.jsx)(i.iDA, {
+    }, d = (0, a.bG)([s.Ay], () => s.Ay.getActiveInputProfile()), m = t.map(t => (0, r.jsx)(i.iDA, {
         id: t,
         group: "input-profiles",
         label: n[t],

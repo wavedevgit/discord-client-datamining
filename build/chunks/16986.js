@@ -53,7 +53,7 @@ function b() {
         {
             analyticsLocations: V
         } = (0, o.Ay)(r.A.TEXT_AND_IMAGES),
-        H = s.useCallback(e => {
+        w = s.useCallback(e => {
             let t = 1 === e;
             t ? m.A.cleanUpPrivateChannelSearchState() : m.A.cleanUpSearchState({
                 type: S.I4_.DMS
@@ -247,7 +247,7 @@ function b() {
                             name: f.intl.string(f.t.MwlEGN),
                             value: 1
                         }],
-                        onChange: H,
+                        onChange: w,
                         value: +!!M
                     })
                 })]

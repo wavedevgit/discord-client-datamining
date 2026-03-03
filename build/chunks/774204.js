@@ -15,10 +15,10 @@ var n = i(627968),
     S = i(430452),
     E = i(287809),
     g = i(780964),
-    _ = i(652215),
-    c = i(985018);
+    c = i(652215),
+    _ = i(985018);
 let I = (0, a.E2)(g.X.CAMERA_BACKGROUND_SETTING, {
-    useSearchTerms: () => [c.intl.string(c.t.lZTUPs)],
+    useSearchTerms: () => [_.intl.string(_.t.lZTUPs)],
     usePredicate: A.A,
     Component: function() {
         let t = (0, r.p)(),
@@ -33,7 +33,7 @@ let I = (0, a.E2)(g.X.CAMERA_BACKGROUND_SETTING, {
             onSelectBackgroundOption: i => {
                 e.current = !0, g.current = i, A(i), (0, d.gB)(i, {
                     location: t.location
-                }).catch(_.tEg)
+                }).catch(c.tEg)
             },
             currentDeviceId: i
         })

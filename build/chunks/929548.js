@@ -15,8 +15,8 @@ var n = i(627968),
     S = i(839214),
     E = i(98919),
     g = i(487329),
-    _ = i(419954),
-    c = i(430452),
+    c = i(419954),
+    _ = i(430452),
     I = i(353835),
     C = i(780964),
     N = i(652215),
@@ -31,7 +31,7 @@ async function D() {
     T.A.fileManager.showItemInFolder(t)
 }
 
-function R(t) {
+function p(t) {
     (0, u.A)({
         title: L.intl.string(L.t["7UXEF2"]),
         subtitle: L.intl.string(L.t.IYPrRl),
@@ -39,7 +39,7 @@ function R(t) {
         onConfirm: () => A.A.setDebugLogging(t)
     })
 }
-async function m(t) {
+async function R(t) {
     let {
         onUploadStart: e,
         onUploadFinish: i
@@ -47,7 +47,7 @@ async function m(t) {
     e?.();
     try {
         let t, e;
-        await c.Ay.getMediaEngine().writeAudioDebugState(), await I.A.submitLiveCrashReport({
+        await _.Ay.getMediaEngine().writeAudioDebugState(), await I.A.submitLiveCrashReport({
             message: {
                 message: "User Live Dump"
             }
@@ -88,8 +88,8 @@ async function m(t) {
         i?.()
     }
 }
-async function p() {
-    await m({
+async function m() {
+    await R({
         onUploadStart: () => b.setState({
             isUploading: !0
         }),
@@ -99,14 +99,14 @@ async function p() {
         })
     })
 }
-let y = (0, _.E2)(C.X.VOICE_AND_VIDEO_DEBUG_LOGGING, {
+let y = (0, c.E2)(C.X.VOICE_AND_VIDEO_DEBUG_LOGGING, {
     useSearchTerms: () => [L.intl.string(L.t["726JHL"]), L.intl.string(L.t.EbwFfR), L.intl.string(L.t.nuPtYi)],
     usePredicate: function() {
-        let t = (0, r.bG)([c.Ay], () => c.Ay.supports(O.O5.DEBUG_LOGGING));
+        let t = (0, r.bG)([_.Ay], () => _.Ay.supports(O.O5.DEBUG_LOGGING));
         return s.Av && t && null != T.A.fileManager.readLogFiles
     },
     Component: function() {
-        let t = (0, r.bG)([c.Ay], () => c.Ay.getDebugLogging()),
+        let t = (0, r.bG)([_.Ay], () => _.Ay.getDebugLogging()),
             e = b.useField("isUploading"),
             i = b.useField("isDisabled"),
             s = l.useId();
@@ -122,7 +122,7 @@ let y = (0, _.E2)(C.X.VOICE_AND_VIDEO_DEBUG_LOGGING, {
                     label: L.intl.string(L.t["726JHL"]),
                     description: L.intl.string(L.t["/7ak9Q"]),
                     checked: t,
-                    onChange: R
+                    onChange: p
                 }), (0, n.jsx)("div", {
                     role: "group",
                     "aria-labelledby": s,
@@ -130,7 +130,7 @@ let y = (0, _.E2)(C.X.VOICE_AND_VIDEO_DEBUG_LOGGING, {
                         children: [(0, n.jsx)(d.Button, {
                             variant: "secondary",
                             text: L.intl.string(L.t.EbwFfR),
-                            onClick: p,
+                            onClick: m,
                             loading: e,
                             disabled: i,
                             "aria-label": L.intl.string(L.t.aY1OH2)

@@ -40,9 +40,9 @@ let L = new E.A("CacheStore"),
     U = 0,
     k = !1,
     V = !1,
-    H = !1;
+    w = !1;
 
-function w(e) {
+function H(e) {
     L.log("Clearing cache store"), U = Date.now(), a.w.remove(P.j_2), a.w.remove(P.CT4), a.w.remove(P.XYq), G = "no-cache", "CLEAR_CACHES" === e.type && e.preventWritingCachesAgainThisSession && (M = !0)
 }
 async function B(e, t, n) {
@@ -315,7 +315,7 @@ class q extends s.Ay.Store {
         return U
     }
     canWriteCaches(e) {
-        return (0, j.wR)() ? M ? (L.log("Not writing cache because caches cleared"), !1) : !!e || !!H || (L.log("Not writing cache because never connected"), !1) : (L.log("Not writing cache because not authenticated"), !1)
+        return (0, j.wR)() ? M ? (L.log("Not writing cache because caches cleared"), !1) : !!e || !!w || (L.log("Not writing cache because never connected"), !1) : (L.log("Not writing cache because not authenticated"), !1)
     }
     async loadCacheAsync(e, t) {
         let n = (0, O.q)(t);
@@ -343,11 +343,11 @@ class q extends s.Ay.Store {
 }
 new q(l.h, D ? {
     CONNECTION_OPEN: function() {
-        return V = !0, H = !0, !1
+        return V = !0, w = !0, !1
     },
-    LOGOUT: w,
+    LOGOUT: H,
     CONNECTION_CLOSED: function() {
-        return V = !1, H = !0, !1
+        return V = !1, w = !0, !1
     },
     CACHE_LOADED: function() {
         k = !0
@@ -358,7 +358,7 @@ new q(l.h, D ? {
     CACHE_LOADED_LAZY_NO_CACHE: function() {
         G = "no-cache"
     },
-    CLEAR_CACHES: w,
+    CLEAR_CACHES: H,
     WRITE_CACHES: function() {
         L.verbose("Writing cache now"), U = Date.now(), k = !0, a.w.remove(P.j_2), a.w.remove(P.XYq), a.w.remove(P.CT4)
     }

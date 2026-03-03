@@ -15,8 +15,8 @@ var n = i(627968),
     S = i(486020),
     E = i(253932),
     g = i(652215),
-    _ = i(985018),
-    c = i(317911);
+    c = i(985018),
+    _ = i(317911);
 let I = new T.nA({
         id: "1337",
         guild_id: "1337",
@@ -50,7 +50,7 @@ function N(t) {
 function O() {
     let t = E.hH.useSetting(),
         e = E.jW.useSetting(),
-        i = l.useMemo(() => [N(_.intl.formatToPlainString(_.t.BknJRT, {}), e ? [{
+        i = l.useMemo(() => [N(c.intl.formatToPlainString(c.t.BknJRT, {}), e ? [{
             emoji: {
                 id: null,
                 name: "\uD83E\uDD40",
@@ -70,13 +70,13 @@ function O() {
             count: 1,
             me_burst: !1,
             burst_count: 0
-        }] : []), N(_.intl.formatToPlainString(_.t["4rDfgM"], {}))], [e]),
+        }] : []), N(c.intl.formatToPlainString(c.t["4rDfgM"], {}))], [e]),
         u = (0, s.bG)([a.A], () => a.A.messageGroupSpacing);
     return (0, n.jsx)(r.M1G, {
         children: (0, n.jsxs)(r.IpV, {
-            className: c.VH,
+            className: _.VH,
             children: [(0, n.jsx)("div", {
-                className: c.DZ,
+                className: _.DZ,
                 style: {
                     gap: u
                 },
@@ -90,7 +90,7 @@ function O() {
                     }
                 }, e.id))
             }), (0, n.jsxs)("div", {
-                className: c.HD,
+                className: _.HD,
                 children: [C.map(t => {
                     let {
                         status: e,
@@ -105,7 +105,7 @@ function O() {
                         "aria-hidden": !0
                     }, e)
                 }), (0, n.jsx)(r.Button, {
-                    text: _.intl.string(_.t["2RHHgz"]),
+                    text: c.intl.string(c.t["2RHHgz"]),
                     size: "sm",
                     variant: "primary"
                 })]

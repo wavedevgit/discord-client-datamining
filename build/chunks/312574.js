@@ -15,12 +15,12 @@ var n = i(934551),
     S = i(879545),
     E = i(531525),
     g = i(985018);
-let _ = (0, l.t_)(s.X.OVERLAY_PANEL, {
+let c = (0, l.t_)(s.X.OVERLAY_PANEL, {
         usePredicate: () => (0, r.dk)("OverlayPanel"),
         useTitle: () => g.intl.string(g.t["9cb1Uz"]),
         buildLayout: () => [T.I, o.u, d.X, S.D, A.h]
     }),
-    c = (0, l.t_)(s.X.OVERLAY_PANEL, {
+    _ = (0, l.t_)(s.X.OVERLAY_PANEL, {
         usePredicate: () => !(0, r.dk)("OverlayPanel"),
         useTitle: () => g.intl.string(g.t["9cb1Uz"]),
         StronglyDiscouragedCustomComponent: a.Ay,
@@ -31,5 +31,5 @@ let _ = (0, l.t_)(s.X.OVERLAY_PANEL, {
         icon: n.WindowTopOutlineIcon,
         usePredicate: u.b_,
         getLegacySearchKey: () => (0, r.WJ)("OverlayPanel") ? void 0 : E.H.OVERLAY,
-        buildLayout: () => (0, r.WJ)("OverlayPanel") ? [_] : [c]
+        buildLayout: () => (0, r.WJ)("OverlayPanel") ? [c] : [_]
     })

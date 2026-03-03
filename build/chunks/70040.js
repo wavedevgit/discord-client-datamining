@@ -2,7 +2,7 @@
 n.d(t, {
     Ix: () => V,
     J3: () => D,
-    Q3: () => w,
+    Q3: () => H,
     mx: () => B
 });
 var i = n(627968),
@@ -116,7 +116,7 @@ let V = () => {
             type: g.v0.SETTINGS,
             children: [(0, i.jsx)(g.Ay.Basic, {
                 className: L.a6
-            }), (0, i.jsx)(H, {}), (0, i.jsx)(A.A, {}), (0, i.jsxs)(U, {
+            }), (0, i.jsx)(w, {}), (0, i.jsx)(A.A, {}), (0, i.jsxs)(U, {
                 children: [(0, i.jsx)(g.Ay.Gradient, {
                     disabled: !1,
                     renderCTAButtons: () => (0, i.jsx)(G, {})
@@ -128,7 +128,7 @@ let V = () => {
     })
 };
 
-function H() {
+function w() {
     let e = (0, I.qo)(),
         {
             theme: t,
@@ -153,7 +153,7 @@ function H() {
         })]
     })
 }
-let w = () => (0, a.bG)([m.A], () => m.A.isPreview) ? null : (0, i.jsx)(o.Button, {
+let H = () => (0, a.bG)([m.A], () => m.A.isPreview) ? null : (0, i.jsx)(o.Button, {
     variant: "primary",
     text: P.intl.string(P.t.qYXrkX),
     onClick: D

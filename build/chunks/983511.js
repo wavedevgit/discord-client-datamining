@@ -137,7 +137,7 @@ function D(e) {
         analyticsLocation: _.A.GUILD_BOOST_SLOT_CANCELLATION_MODAL_RENEWAL_INVOICE_PREVIEW
     });
     if (null == V || null == D || null == M || null == U) return (0, i.jsx)(c.y$y, {});
-    let H = t.items.some(e => {
+    let w = t.items.some(e => {
             let {
                 planId: t
             } = e;
@@ -148,13 +148,13 @@ function D(e) {
             } = e;
             return !v.pW.has(t)
         }) != null,
-        w = f.some(e => {
+        H = f.some(e => {
             let {
                 planId: t
             } = e;
             return v.pW.has(t)
         }),
-        B = H || w ? V.total - U.total : -U.total,
+        B = w || H ? V.total - U.total : -U.total,
         {
             interval: Y,
             intervalCount: F

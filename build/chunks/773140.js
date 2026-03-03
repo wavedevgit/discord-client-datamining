@@ -6,21 +6,23 @@ var n = i(934551),
     l = i(419954),
     s = i(430452),
     r = i(780964),
-    a = i(573858),
-    u = i(490107),
-    o = i(945928),
-    d = i(108804),
-    A = i(198987),
-    T = i(315943),
-    S = i(475061),
-    E = i(985018);
-let g = (0, l.t_)(r.X.VOICE_AND_VIDEO_PANEL, {
-        useTitle: () => E.intl.string(E.t.B1fFpf),
-        buildLayout: () => [S.p, o.Q, a.i, T.H, A.t, d.U, u.r]
+    a = i(235661),
+    u = i(573858),
+    o = i(490107),
+    d = i(945928),
+    A = i(108804),
+    T = i(198987),
+    S = i(315943),
+    E = i(475061),
+    g = i(985018);
+let c = (0, l.t_)(r.X.VOICE_AND_VIDEO_PANEL, {
+        useTitle: () => g.intl.string(g.t.B1fFpf),
+        buildLayout: () => [E.p, d.Q, u.i, S.H, T.t, A.U, o.r]
     }),
     _ = (0, l.i4)(r.X.VOICE_AND_VIDEO_SIDEBAR_ITEM, {
-        useTitle: () => E.intl.string(E.t.B1fFpf),
+        useTitle: () => g.intl.string(g.t.B1fFpf),
         usePredicate: () => s.Ay.isSupported(),
         icon: n.MicrophoneIcon,
-        buildLayout: () => [g]
+        useMenu: a.A,
+        buildLayout: () => [c]
     })

@@ -1,6 +1,6 @@
 /** chunk id: 334219, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    z: () => _
+    z: () => c
 });
 var n = i(627968),
     l = i(311907),
@@ -24,7 +24,7 @@ let E = (0, a.t_)(u.X.POGGERMODE_PANEL, {
         useTitle: () => T.intl.string(T.t.AtCukI),
         buildLayout: () => [d.c]
     }),
-    _ = (0, a.i4)(u.X.POGGERMODE_SIDEBAR_ITEM, {
+    c = (0, a.i4)(u.X.POGGERMODE_SIDEBAR_ITEM, {
         useTitle: () => T.intl.string(T.t.AtCukI),
         getLegacySearchKey: () => (0, o.WJ)("PoggermodePanel") ? void 0 : A.H.POGGERMODE,
         icon: () => (0, n.jsx)("img", {

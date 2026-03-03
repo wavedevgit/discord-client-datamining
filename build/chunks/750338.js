@@ -53,7 +53,7 @@ let E = e => {
             size: R,
             backgroundVideoUrl: y,
             previewImageStyle: P = g.Tb.CONTAINED
-        } = e, L = (0, A.TM)(), D = s.useRef(null), M = s.useRef(0), G = s.useRef(null), U = s.useRef(!1), k = (0, u.A)("(min-width: 1140px)"), V = P === g.Tb.OVERLAY && (R !== g.A0.LARGE || !k), H = R === g.A0.LARGE && k && P === g.Tb.OVERLAY, w = null != y && k && R === g.A0.LARGE, B = s.useMemo(() => (0, r.debounce)(() => {
+        } = e, L = (0, A.TM)(), D = s.useRef(null), M = s.useRef(0), G = s.useRef(null), U = s.useRef(!1), k = (0, u.A)("(min-width: 1140px)"), V = P === g.Tb.OVERLAY && (R !== g.A0.LARGE || !k), w = R === g.A0.LARGE && k && P === g.Tb.OVERLAY, H = null != y && k && R === g.A0.LARGE, B = s.useMemo(() => (0, r.debounce)(() => {
             m.default.track(h.HAw.PREMIUM_WHATS_NEW_BOX_CTA_CLICKED, {
                 box_type: (0, r.snakeCase)(t)
             })
@@ -62,7 +62,7 @@ let E = e => {
         }, F = () => {
             null == D.current || b || (M.current = D.current.currentTime, D.current.pause())
         }, z = R === g.A0.LARGE ? "heading-xxl/bold" : "heading-xl/bold", W = () => (0, i.jsxs)("div", {
-            className: l()(p.textBox, p[`${R}`], H && p.overlayTextBox),
+            className: l()(p.textBox, p[`${R}`], w && p.overlayTextBox),
             children: [(0, i.jsxs)("div", {
                 children: [null == v ? null : "gradient" === O ? (0, i.jsx)("div", {
                     className: p.badgeContainer,
@@ -106,7 +106,7 @@ let E = e => {
                 muted: !0,
                 poster: T,
                 loop: !0,
-                className: l()(H ? p.overlayImage : p.boxVideo, {
+                className: l()(w ? p.overlayImage : p.boxVideo, {
                     [N]: null != N
                 }),
                 ref: D,
@@ -127,13 +127,13 @@ let E = e => {
             children: (0, i.jsxs)(d.hLv, {
                 ref: G,
                 id: t,
-                className: l()(p.backgroundColor, p.boxContainer, p[`${R}`], p.gradientBackground, V && p.overlayImageMode, H && p.overlayMode),
+                className: l()(p.backgroundColor, p.boxContainer, p[`${R}`], p.gradientBackground, V && p.overlayImageMode, w && p.overlayMode),
                 onMouseEnter: Y,
                 onFocus: Y,
                 onBlur: F,
                 onMouseLeave: F,
                 color: "purple",
-                children: [w && (0, i.jsx)("div", {
+                children: [H && (0, i.jsx)("div", {
                     className: p.backgroundVideoContainer,
                     children: (0, i.jsx)(_.A, {
                         muted: !0,

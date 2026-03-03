@@ -1,6 +1,6 @@
 /** chunk id: 657733, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    v: () => _
+    v: () => c
 });
 var n = i(934551),
     l = i(419954),
@@ -22,7 +22,7 @@ let E = (0, l.t_)(s.X.DATA_AND_PRIVACY_PANEL, {
         useTitle: () => S.intl.string(S.t.OAuOHD),
         buildLayout: () => [o.u, d.w, u.w, A.d]
     }),
-    _ = (0, l.i4)(s.X.DATA_AND_PRIVACY_SIDEBAR_ITEM, {
+    c = (0, l.i4)(s.X.DATA_AND_PRIVACY_SIDEBAR_ITEM, {
         useTitle: () => S.intl.string(S.t.OAuOHD),
         icon: n.ShieldLockIcon,
         getLegacySearchKey: () => (0, r.WJ)("DataAndPrivacyPanel") ? void 0 : T.H.DATA_PRIVACY,

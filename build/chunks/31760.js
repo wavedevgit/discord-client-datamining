@@ -16,8 +16,8 @@ var n = i(627968),
     S = i(151098),
     E = i(716005),
     g = i(144010),
-    _ = i(175631),
-    c = i(430443),
+    c = i(175631),
+    _ = i(430443),
     I = i(997442),
     C = i(985018);
 
@@ -60,7 +60,7 @@ function N(t) {
 }
 let O = (0, r.zZ)(u.X.DEV_OVERRIDES, {
     useTitle: () => "Overrides",
-    buildLayout: () => [c.U, I.l, A.B, T.q, E.g, o.Y, _.s, S.t, g.T, d.s],
+    buildLayout: () => [_.U, I.l, A.B, T.q, E.g, o.Y, c.s, S.t, g.T, d.s],
     useInlineNotice: () => ({
         type: a.lT.INLINE_NOTICE,
         noticeType: "info",

@@ -1,6 +1,6 @@
 /** chunk id: 120929, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    T0: () => _
+    T0: () => c
 });
 var n = i(934551),
     l = i(419954),
@@ -24,7 +24,7 @@ let E = (0, l.t_)(s.X.ACTIVITY_PRIVACY_PANEL, {
         usePredicate: () => (0, r.dk)("ActivityPrivacyPanel"),
         buildLayout: () => [u.o, o.L, d.b, A.w]
     }),
-    _ = (0, l.i4)(s.X.ACTIVITY_PRIVACY_SIDEBAR_ITEM, {
+    c = (0, l.i4)(s.X.ACTIVITY_PRIVACY_SIDEBAR_ITEM, {
         useTitle: () => S.intl.string(S.t.Cq98yL),
         getLegacySearchKey: () => (0, r.WJ)("ActivityPrivacyPanel") ? void 0 : T.H.ACTIVITY_PRIVACY,
         icon: n.UserPlatformIcon,

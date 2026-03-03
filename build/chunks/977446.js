@@ -101,8 +101,8 @@ function D() {
             }))
         }, [i]),
         V = (0, T.A)(),
-        H = (0, a.useMemo)(() => V.map(e => e?.id), [V]),
-        w = (0, a.useMemo)(() => [{
+        w = (0, a.useMemo)(() => V.map(e => e?.id), [V]),
+        H = (0, a.useMemo)(() => [{
             id: C.SERVER_BOOSTS_CARD_ID,
             title: f.intl.formatToPlainString(f.t.pWySes, {
                 boostCount: 2,
@@ -269,5 +269,5 @@ function D() {
             }),
             categories: ["vip"]
         }], [e, n, P, L, D, M, G, U, k]);
-    return (0, a.useMemo)(() => w.filter(e => null != e && !H.includes(e.id)), [w, H])
+    return (0, a.useMemo)(() => H.filter(e => null != e && !w.includes(e.id)), [H, w])
 }

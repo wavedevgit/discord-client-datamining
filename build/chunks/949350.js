@@ -15,10 +15,10 @@ var n = i(934551),
     S = i(709747),
     E = i(531525),
     g = i(985018);
-let _ = (0, s.zZ)(a.X.GIFT_INVENTORY_CATEGORY, {
+let c = (0, s.zZ)(a.X.GIFT_INVENTORY_CATEGORY, {
         buildLayout: () => [d.V, T.E, A.R, S.Y]
     }),
-    c = (0, s.t_)(a.X.GIFT_PANEL, {
+    _ = (0, s.t_)(a.X.GIFT_PANEL, {
         usePredicate: () => !(0, u.dk)("LegacyGiftPanel"),
         useTitle: () => g.intl.string(g.t["jcSP+g"]),
         StronglyDiscouragedCustomComponent: o.Ay,
@@ -27,7 +27,7 @@ let _ = (0, s.zZ)(a.X.GIFT_INVENTORY_CATEGORY, {
     I = (0, s.t_)(a.X.GIFT_PANEL, {
         usePredicate: () => (0, u.dk)("GiftPanel"),
         useTitle: () => g.intl.string(g.t["jcSP+g"]),
-        buildLayout: () => [_]
+        buildLayout: () => [c]
     }),
     C = (0, s.i4)(a.X.GIFT_SIDEBAR_ITEM, {
         useTitle: () => g.intl.string(g.t["jcSP+g"]),
@@ -37,5 +37,5 @@ let _ = (0, s.zZ)(a.X.GIFT_INVENTORY_CATEGORY, {
             type: r.Si.BADGE_COUNT,
             useCount: () => (0, l.IO)().length
         },
-        buildLayout: () => (0, u.WJ)("GiftPanel") ? [I] : [c]
+        buildLayout: () => (0, u.WJ)("GiftPanel") ? [I] : [_]
     })

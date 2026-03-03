@@ -1,6 +1,6 @@
 /** chunk id: 591203, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    L: () => R
+    L: () => p
 });
 var n = i(627968),
     l = i(64700),
@@ -15,8 +15,8 @@ var n = i(627968),
     S = i(209932),
     E = i(536432),
     g = i(984813),
-    _ = i(595953),
-    c = i(975571),
+    c = i(595953),
+    _ = i(975571),
     I = i(780964),
     C = i(617617),
     N = i(652215);
@@ -61,7 +61,7 @@ function D(t) {
         })]
     })
 }
-let R = (0, A.E2)(I.X.ENTRANCE_SOUNDS_SETTING, {
+let p = (0, A.E2)(I.X.ENTRANCE_SOUNDS_SETTING, {
     useSearchTerms: () => [O.intl.string(O.t.nzUc3B)],
     Component: function() {
         let {
@@ -74,7 +74,7 @@ let R = (0, A.E2)(I.X.ENTRANCE_SOUNDS_SETTING, {
         }, [C, t]), l.useEffect(() => {
             (0, T.E7)()
         }, []);
-        let R = l.useCallback((t, e) => {
+        let p = l.useCallback((t, e) => {
             let {
                 inDropdown: i
             } = e;
@@ -85,7 +85,7 @@ let R = (0, A.E2)(I.X.ENTRANCE_SOUNDS_SETTING, {
         return (0, n.jsxs)(r.nVY, {
             label: O.intl.string(O.t.nzUc3B),
             description: O.intl.format(O.t.u9RWmv, {
-                helpdeskArticle: c.A.getArticleURL(N.MVz.SOUNDBOARD)
+                helpdeskArticle: _.A.getArticleURL(N.MVz.SOUNDBOARD)
             }),
             children: [(0, n.jsx)(o.A, {
                 guildId: e,
@@ -97,7 +97,7 @@ let R = (0, A.E2)(I.X.ENTRANCE_SOUNDS_SETTING, {
                 onChange: t => {
                     i(null == t ? "0" : t.id)
                 },
-                renderOptionSuffix: R,
+                renderOptionSuffix: p,
                 hideDivider: !0
             }), (0, n.jsxs)(d.A, {
                 title: O.intl.format(O.t.I2TsYN, {
@@ -107,7 +107,7 @@ let R = (0, A.E2)(I.X.ENTRANCE_SOUNDS_SETTING, {
                         className: L.ax
                     })
                 }),
-                children: [(0, n.jsx)(_.A, {
+                children: [(0, n.jsx)(c.A, {
                     sound: A,
                     isGlobal: I,
                     onSelect: i => {

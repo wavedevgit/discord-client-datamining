@@ -77,7 +77,7 @@ let U = () => {
             alt: l
         })
     },
-    H = e => {
+    w = e => {
         let {
             label: t,
             column1: n,
@@ -100,7 +100,7 @@ let U = () => {
             })]
         })
     },
-    w = e => {
+    H = e => {
         let {
             label: t,
             column1: n,
@@ -260,11 +260,11 @@ let U = () => {
                     }), (0, i.jsxs)("table", {
                         className: P.tp,
                         children: [(0, i.jsx)("thead", {
-                            children: (0, i.jsx)(H, {
+                            children: (0, i.jsx)(w, {
                                 ...er
                             })
                         }), (0, i.jsx)("tbody", {
-                            children: ea.map((e, t) => (0, s.createElement)(w, {
+                            children: ea.map((e, t) => (0, s.createElement)(H, {
                                 ...e,
                                 key: t
                             }))

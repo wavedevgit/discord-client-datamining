@@ -16,7 +16,7 @@ var n = i(64700),
     S = i(766761),
     E = i(531525),
     g = i(985018);
-let _ = (0, a.zZ)(o.X.SESSIONS_CATEGORY, {
+let c = (0, a.zZ)(o.X.SESSIONS_CATEGORY, {
         buildLayout: () => [T.I, S.A],
         initialize: () => ((0, r.GY)(), () => {
             (0, r.ZQ)()
@@ -28,7 +28,7 @@ let _ = (0, a.zZ)(o.X.SESSIONS_CATEGORY, {
             }), [])
         }
     }),
-    c = (0, a.t_)(o.X.SESSIONS_PANEL, {
+    _ = (0, a.t_)(o.X.SESSIONS_PANEL, {
         usePredicate: () => !(0, d.dk)("LegacySessionsPanel"),
         useTitle: () => g.intl.string(g.t["+1h0k/"]),
         hideInStreamerMode: !0,
@@ -39,7 +39,7 @@ let _ = (0, a.zZ)(o.X.SESSIONS_CATEGORY, {
         usePredicate: () => (0, d.dk)("SessionsPanel"),
         useTitle: () => (0, d._A)("SessionsPanel") ? g.intl.string(g.t.mEndXM) : g.intl.string(g.t["+1h0k/"]),
         hideInStreamerMode: !0,
-        buildLayout: () => [_]
+        buildLayout: () => [c]
     }),
     C = (0, a.i4)(o.X.SESSIONS_SIDEBAR_ITEM, {
         useTitle: () => g.intl.string(g.t["+1h0k/"]),
@@ -49,6 +49,6 @@ let _ = (0, a.zZ)(o.X.SESSIONS_CATEGORY, {
             type: u.Si.BADGE_NEW,
             getDismissibleContentTypes: () => [s.M.AUTH_SESSIONS_NEW]
         },
-        buildLayout: () => (0, d.WJ)("SessionsPanel") ? [I] : [c],
+        buildLayout: () => (0, d.WJ)("SessionsPanel") ? [I] : [_],
         usePredicate: () => !(0, d._A)("SessionsPanel")
     })

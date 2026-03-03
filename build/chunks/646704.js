@@ -15,12 +15,12 @@ var n = i(627968),
     S = i(616415),
     E = i(531525),
     g = i(985018);
-let _ = (0, o.t_)(A.X.SUBSCRIPTIONS_PANEL, {
+let c = (0, o.t_)(A.X.SUBSCRIPTIONS_PANEL, {
         useTitle: () => g.intl.string(g.t.trSpHX),
         StronglyDiscouragedCustomComponent: u.A,
         buildLayout: () => []
     }),
-    c = (0, o.t_)(A.X.SUBSCRIPTIONS_PANEL, {
+    _ = (0, o.t_)(A.X.SUBSCRIPTIONS_PANEL, {
         useTitle: () => g.intl.string(g.t.trSpHX),
         buildLayout: () => [S.J]
     }),
@@ -35,5 +35,5 @@ let _ = (0, o.t_)(A.X.SUBSCRIPTIONS_PANEL, {
                 color: r.A.unsafe_rawColors.YELLOW_300
             }) : null
         },
-        buildLayout: () => (0, T.WJ)("SubscriptionsPanel") ? [c] : [_]
+        buildLayout: () => (0, T.WJ)("SubscriptionsPanel") ? [_] : [c]
     })

@@ -39,8 +39,8 @@ var i = n(627968),
     U = n(994763),
     k = n(788868),
     V = n(652215),
-    H = n(985018),
-    w = n(520089),
+    w = n(985018),
+    H = n(520089),
     B = n(288894);
 let Y = e => {
     let {
@@ -93,14 +93,14 @@ let Y = e => {
     });
     return null != em && (W || null != K) ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)(d.GtU, {
-            className: l()(w.xW, {
-                [w.J4]: n
+            className: l()(H.xW, {
+                [H.J4]: n
             }),
             ref: Y,
             children: [(0, i.jsx)(d.hLv, {
                 color: "nitro-pink",
-                className: l()(w.kL, w.Gd, {
-                    [w.fv]: !eA
+                className: l()(H.kL, H.Gd, {
+                    [H.fv]: !eA
                 }),
                 offsetBottom: .8 * !!n,
                 children: (0, i.jsxs)(m.f5, {
@@ -112,7 +112,7 @@ let Y = e => {
                         active: !0,
                         children: (0, i.jsx)(O.A, {
                             buttonVisibilityRef: en,
-                            className: w.v1,
+                            className: H.v1,
                             enablePremiumBrandRefresh: eA,
                             userDiscountOffer: et,
                             discountedPrice: eo
@@ -121,7 +121,7 @@ let Y = e => {
                         glowingPerkId: X
                     }), !n && (0, i.jsx)(P.A, {
                         variant: b.cJ.WHATS_NEW,
-                        className: w.Iw,
+                        className: H.Iw,
                         noBackground: !0,
                         leftAlignHeaders: !0
                     }), null != K && Z && (0, i.jsx)(G.A, {
@@ -129,7 +129,7 @@ let Y = e => {
                     }), n && (0, i.jsx)(y.A, {
                         glowingPerkId: X
                     }), !n && (0, i.jsx)(P.A, {
-                        className: w.xU,
+                        className: H.xU,
                         variant: b.cJ.PERKS_DISCOVERABILITY,
                         noBackground: !0,
                         leftAlignHeaders: !0,
@@ -138,14 +138,14 @@ let Y = e => {
                             previousComponent: b.A2.HOME
                         })
                     }), (0, i.jsx)(v.A, {
-                        className: w.Zy,
+                        className: H.Zy,
                         location: _.A.PREMIUM_MARKETING_GIFT_SECTION,
                         analyticsLocation: {
                             page: V.liQ.NITRO_HOME,
                             section: V.JJy.GIFT_BANNER
                         }
                     }), (0, i.jsx)("div", {
-                        className: w.hz
+                        className: H.hz
                     }), (0, i.jsx)(c.L, {
                         innerRef: F,
                         onChange: e => {
@@ -155,14 +155,14 @@ let Y = e => {
                         },
                         children: (0, i.jsx)("div", {
                             ref: F,
-                            className: w._Z
+                            className: H._Z
                         })
                     }), (0, i.jsx)("img", {
                         src: B,
-                        className: w.Kw,
+                        className: H.Kw,
                         width: 112,
                         height: 85,
-                        alt: H.intl.string(H.t.X4IxWL)
+                        alt: w.intl.string(w.t.X4IxWL)
                     })]
                 })
             }), er && null != eo && (0, i.jsx)(R.A, {
@@ -178,7 +178,7 @@ let Y = e => {
             enablePremiumBrandRefresh: eA
         })]
     }) : (0, i.jsx)("div", {
-        className: l()(w.kL, w.Lq),
+        className: l()(H.kL, H.Lq),
         children: (0, i.jsx)(d.y$y, {})
     })
 }

@@ -15,10 +15,10 @@ var n = i(627968),
     S = i(532624),
     E = i(780964),
     g = i(652215),
-    _ = i(985018),
-    c = i(280973);
+    c = i(985018),
+    _ = i(280973);
 let I = (0, T.E2)(E.X.CLIPS_SCREENSHOT_KEYBIND, {
-    useSearchTerms: () => [_.intl.string(_.t["0U/hj7"]), _.intl.string(_.t["5zxkdo"])],
+    useSearchTerms: () => [c.intl.string(c.t["0U/hj7"]), c.intl.string(c.t["5zxkdo"])],
     usePredicate: A.BW,
     Component: () => {
         let t = (0, a.bG)([S.Ay], () => S.Ay.getKeybindForAction(g.hCu.SAVE_CLIP, !0)),
@@ -31,11 +31,11 @@ let I = (0, T.E2)(E.X.CLIPS_SCREENSHOT_KEYBIND, {
             })
         }, [e]);
         return (0, n.jsx)(u.D0$, {
-            label: _.intl.string(_.t["0U/hj7"]),
-            description: _.intl.string(_.t["5zxkdo"]),
+            label: c.intl.string(c.t["0U/hj7"]),
+            description: c.intl.string(c.t["5zxkdo"]),
             layout: "horizontal",
             children: (0, n.jsx)("div", {
-                className: c.g,
+                className: _.g,
                 children: (0, n.jsx)(d.A, {
                     defaultValue: e.shortcut,
                     onChange: i

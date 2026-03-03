@@ -15,10 +15,10 @@ var n = i(627968),
     S = i(780964),
     E = i(652215),
     g = i(635917),
-    _ = i(788868),
-    c = i(985018);
+    c = i(788868),
+    _ = i(985018);
 let I = (0, A.E2)(S.X.DISPLAY_IN_APP_ICON, {
-    useSearchTerms: () => [c.intl.string(c.t.gnwxvT)],
+    useSearchTerms: () => [_.intl.string(_.t.gnwxvT)],
     Component: function() {
         let t = (0, d.GV)(),
             {
@@ -31,7 +31,7 @@ let I = (0, A.E2)(S.X.DISPLAY_IN_APP_ICON, {
             A = (0, r.bG)([u.A], () => u.A.isUpsellPreview);
         return (0, l.Ay)(() => {
             A && T.default.track(E.HAw.PREMIUM_UPSELL_VIEWED, {
-                type: _.e.APP_ICON_UPSELL,
+                type: c.e.APP_ICON_UPSELL,
                 location_stack: [a.A.USER_SETTINGS]
             })
         }), (0, n.jsx)("div", {
